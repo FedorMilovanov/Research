@@ -1,0 +1,77 @@
+00_START_HERE/ARTICLE_ROADMAP.md
+00_START_HERE/CASE_VERIFICATION_REGISTER.md
+00_START_HERE/FINAL_TAXONOMY.md
+00_START_HERE/NEXT_CHAT_PROMPT.md
+00_START_HERE/PACKAGE_TREE.txt
+00_START_HERE/README_START_HERE.md
+00_START_HERE/SOURCE_PROTOCOL.md
+01_ORIGINAL_ARTICLE/extracted_index.html
+01_ORIGINAL_ARTICLE/original_article_latest_uploaded.zip
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_1.md
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_2.md
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_3.md
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_4.md
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_5.md
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_6.md
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_7.md
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_8.md
+02_RESEARCH_BY_VERSION/v0_foundation_methodology/research_obratnaya_storona_kafedry_v0_9.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_0_lawson_azurdia_cases.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_1_lawson_source_pack.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_2_hidden_sin_cases.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_3_restoration_disqualification.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_4_case_taxonomy_quick_restoration.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_5_permanent_disqualification.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_6_permanent_disqualification_matrix.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_7_allowed_to_resign.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_8_source_pack_allowed_to_resign.md
+02_RESEARCH_BY_VERSION/v1_cases_restoration_disqualification/research_obratnaya_storona_kafedry_v1_9_historical_patterns.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_0_early_church_source_pack.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_1_biblical_archetypes.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_2_medieval_reformation_patterns.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_3_taxonomy_savonarola.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_4_recoverable_servants.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_5_taxonomy_deepening.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_6_taxonomy_correction.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_7_russian_taxonomy_terms.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_8_deep_taxonomy_web.md
+02_RESEARCH_BY_VERSION/v2_history_taxonomy_categories/research_obratnaya_storona_kafedry_v2_9_false_teacher_matrix.md
+02_RESEARCH_BY_VERSION/v3_case_atlas_verification/research_obratnaya_storona_kafedry_v3_0_case_atlas.md
+02_RESEARCH_BY_VERSION/v3_case_atlas_verification/research_obratnaya_storona_kafedry_v3_1_case_verification.md
+03_APPENDICES/append_v05.md
+03_APPENDICES/append_v06.md
+04_COMBINED/ALL_RESEARCH_COMBINED.md
+04_COMBINED/MANIFEST.csv
+
+[UPDATE v2026-06-25K] No new files. Existing research files deepened with Puritan diagnostic layer.
+
+2026-06-25L: Case verification micro-batch appended to existing register, v3 atlas/verification, combined research, manifest. No new files.
+
+UPDATE 2026-06-25M: no new files; strict case-verification gate appended to CASE_VERIFICATION_REGISTER, ALL_RESEARCH_COMBINED, MANIFEST.
+
+UPDATE 2026-06-25N: no new files; Art Azurdia partial source closure appended to existing verification files.
+
+Update v2026-06-25O: Art Azurdia narrowed to exact-use only; no new files added.
+
+# v2026-06-25P strict case verification layer appended to existing research/case files; file count unchanged.
+
+
+[v2026-06-25Q] Updated existing files only: strict modern case verification pass; no new files.
+
+UPDATE v2026-06-25R: case verification strict batch added into existing files; no new files created; public/limited/hold classifications tightened.
+
+# v2026-06-25S: strict case verification layer appended inside existing files; no new files added.
+
+
+UPDATE v2026-06-25T: existing files deepened only; no new files added; case verification triage tightened.
+
+[UPDATE v2026-06-25U]
+No new files added. Existing files deepened with MacDonald / Lawson / Patrick / Perry Noble verification notes.
+
+
+UPDATE v2026-06-25V: no new files; case verification status tightened in existing files.
+
+UPDATE v2026-06-25W: no new files; strict HOLD/LIMITED case verification pass added to existing verification files.
+
+
+UPDATE v2026-06-25X: No new files. Appended strict case verification layer to CASE_VERIFICATION_REGISTER, v3_0, v3_1, README, and ALL_RESEARCH_COMBINED.
