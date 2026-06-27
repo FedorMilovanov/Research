@@ -7157,3 +7157,52 @@ Allowed (Level B, peer-reviewed, quote-ready):
 Not allowed:
 
 > Naming any of the ~40–41 persons indexed in the agent's reports without reading the specific report and the operator's справка, since the index entries are unverified denunciations, not proven facts.
+
+---
+
+## v125f — The 1940s bridge: ECB in the Great Patriotic War (research article, text layer)
+
+The 1940s — the chronological gap between the early-Soviet conscience documents (Shilov 1919, Moscow community 1923, v125b) and the 1959–1965 split (v125c) — is now covered by a Level B research article with a full text layer: *«Евангельские христиане-баптисты в Великой Отечественной Войне»* (8 pp, footnoted, citing I. G. Ermolov).
+
+**Source:** `Баптисты_в_Великой_Отечественной_Войне.pdf` (Sinichkin TG export). Proof status: `text_layer_extracted` — quote-ready pending visual masthead check.
+
+### The «godless decade» before the war (1929–1941)
+
+The article quantifies the devastation that frames everything that follows:
+
+- The **1929 law** banned any religious activity outside prayer buildings and forbade youth, women's, social and children's work; publishing houses and religious schools closed; all missionary work prohibited. (Cross-links the 18.05.1929 chronology milestone, v125.)
+- **Art. 58-10 and 58-11** of the Criminal Code — «суровое наказание за использование религиозных предрасстудков масс с целью свержения советского строя»; belonging to a religious organisation was treated as espionage / foreign-agent activity from the late 1920s.
+- The **Union of Militant Godless** ≈ 5 million members; hundreds of thousands of believers hit by dekulakization/deportation under **Order 0047**.
+- **Result:** by the start of the Great Patriotic War, in the USSR within its 1939 borders, **only four ECB churches remained officially open**. The surviving believers were on an illegal footing.
+
+### The occupation revival (1941–1943)
+
+Quote-ready findings (with Ermolov footnotes):
+
+- «к осени 1941 г. молитвенные дома Евангельских Христиан и Баптистов открылись в каждом из оккупированных районов Орловской области» — i.e. occupation authorities permitted prayer houses to reopen in the first months of occupation.
+- Concrete case: a large Baptist church in **Bryansk-Vostochnyi** (ul. Slesarnaya 20), presbyters **M. Fil'chenkov** and **M. Pitsurenko**; services 3×/week (Wed/Sat 13:00, Sun 09:00), ~2.5 hours each.
+- **Believers vs. occupants:** not simple collaboration. At the Klintsy okrug burgomasters' meeting (Orel oblast), **18.05.1942**, the Krasno-Gorskii raion burgomaster reported «вреда от местной общины „евангелистов" больше, чем от советских партизан» — evangelical believers forbade villagers to sow kolkhoz land; reprisal: confiscation of household plots and forced labour.
+
+### The post-war institutional seed (1944–1949)
+
+The article's most consequential long-arc claim:
+
+> The secret instructions of the **Council for Religious Cults (Совет по делам религиозных культов), developed in 1944–1949** — i.e. immediately after the war — «на каком-то глубинном инстинктивном подсознании продолжают следовать» the churches «до сих пор, спустя семь десятилетий», even though the USSR, the Stalin-era oversight organs and the уполномоченные institute are all gone.
+
+This is the institutional seed of the post-war **ВСЕХБ legalization** (the 1945 Братский Вестник №2, locally held, v125) and of the regulatory regime the 1961 Initiative Group eventually broke with. The `Братский Вестник 1945 №2` (44 pp, page_count_verified) is the print-face of that 1944–1949 settlement.
+
+### How this bridges the dossier
+
+- **Upstream:** connects to the 1919/1923 conscience documents (the 1929 law is what made the Shilov-type exemption impossible to sustain).
+- **Downstream:** the 1944–1949 Council instructions + the legalized-but-controlled ВСЕХБ are precisely what the 1961 Initiative Group charged the ВСЕХБ with betraying («уничтожил божественные принципы устроения церкви», v125c). The 1959–1965 split is now anchored at both ends.
+- The article's footnotes (Ermolov) name the next archive target: the occupation-period documentation of ECB revival.
+
+### Writing rule
+
+Allowed (Level B, quote-ready):
+
+> By the start of the Great Patriotic War only four ECB churches remained officially open in the USSR (1939 borders); under occupation, prayer houses reopened widely from autumn 1941, yet believers also obstructed occupants (e.g. the Krasno-Gorskii 18.05.1942 report), and the post-war Council for Religious Cults secret instructions of 1944–1949 shaped the controlled ВСЕХБ settlement that the 1961 Initiative Group later rejected.
+
+Not allowed:
+
+> Presenting the «four churches» figure or the Order 0047 impact without flagging the article as the single source, or quoting Ermolov's sub-sources before they are independently located.

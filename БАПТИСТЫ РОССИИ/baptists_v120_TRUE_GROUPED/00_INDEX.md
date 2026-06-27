@@ -114,3 +114,23 @@ A full export of the Telegram channel «Синичкин рассказывае�
 - **Key distinction:** the Sinichkin *Братский Листок* (1906–1910) is the pre-revolutionary supplement to *Христианин* — **not** the Soviet CCECB samizdat (1965–2000) tracked in the Toronto corpus.
 - **Resolved open targets:** P. V. Pavlov «Политические требования баптистов» (Slovo Istiny 1917 №1) — text extracted; Sinichkin Voronin article — text extracted; Baptist/EC unity congress protocols — local files acquired.
 - **No `quote_card_verified` rows added.** Scanned issues need OCR; typed documents are queued for quote-cards. See `groups/03_PERIODICAL_CORPUS.md` (v125 section) and `groups/06_DATA_AND_PROOF_LEDGERS.md`.
+
+
+## v125 consolidated changelog (Sinichkin TG export — full session)
+
+The v125 pass mined the Sinichkin channel export in six sub-passes. All changes live in the grouped files + CSV ledgers (no new MD files, per ARCHIVE_RULES). Consolidated map:
+
+| Pass | Group file | What was added | Proof lift |
+|---|---|---|---|
+| v125 | 03, 02, 06 | 98 periodical issues `page_count_verified`; 1402-event chronology; ledger pass | catalog → page_count |
+| v125b | 04, 03, 02 | Shilov→Lenin 1919 & Moscow 1923 conscience docs (quotes); 1423-entry bibliography; Voronin origins node | → text_extracted (quote-ready) |
+| v125c | 04 | Initiative Group / СЦ ЕХБ formation chronology 1961–1988 | Level-C navigation |
+| v125d | 04, 02 | Belyakova 2022 KGB/«Топси» academic anchor; Pashkov confession 1880; Kuteinikova 1911 eyewitness | Level A/B quote-ready |
+| v125e | 02 | Krathaya Zapiska to MVD 8.01.1905 (four-streams origins thesis) | Level A foundational |
+| v125f | 02, 04 | Leader coverage index (12 figures); ECB in WWII (1940s bridge) | Level B/C navigation |
+
+**Resolved open archive targets:** Pavlov «Политические требования баптистов» (Slovo Istiny 1917 №1); Sinichkin Voronin article; Baptist/EC unity congress protocols.
+
+**Ledger deltas:** PROOF_STATUS_LEDGER 199→297; MASTER_CORPUS_LEDGER 5→11; SOURCE_ANCHORS 195→205; NEXT_MICROBATCH 21→28 (2 resolved).
+
+**Status honesty:** no `quote_card_verified` claims without text layer + visual check. Scanned periodicals (98 issues) remain at `page_count_verified_scan_no_ocr`; OCR is the main blocker for the next pass (no tesseract in the working environment).
