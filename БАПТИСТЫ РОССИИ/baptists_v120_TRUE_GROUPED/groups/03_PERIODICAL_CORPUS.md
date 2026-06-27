@@ -13395,3 +13395,51 @@ Allowed now:
 Not allowed yet:
 
 > "В №14 1913 года было сказано..." unless the issue is opened and checked.
+
+
+---
+
+## v121 — top-text source queue for books / encyclopedias / academic controls
+
+**Reason for this addition:** the series already has deep periodical and samizdat ledgers. v121 adds a compact top-text queue so that major reference, academic, confessional and archive sources are not lost in chat or scattered into new files. This is a queue for integration, not a claim that the texts are quote-ready.
+
+### Classification used here
+
+| class | examples | allowed use now | forbidden use now |
+|---|---|---|---|
+| `reference_synthesis` | Pravenc biographies | cross-check dates, roles, bibliographies | direct quote without attribution / treating Orthodox encyclopedia as neutral Baptist memory |
+| `academic_control` | Sinichkin, CyberLeninka, dissertations | framing, bibliography, research questions | exact article quote before PDF/page check |
+| `confessional_memory_or_index` | RusBaptist/Stunda, RSEHB pages | route to texts, internal memory, corpus map | treating index as primary evidence |
+| `published_primary_or_memoir` | Pavlov, Prokhanov, documents reprinted on hubs | target for page-card extraction | quoting from unstable HTML without facsimile/page control |
+| `archive_finding_aid` | Wardin AR 915, Keston/Baylor aids | request planning and scope mapping | claims about unseen folder contents |
+
+### P0 / P1 top queue
+
+| priority | source | URL | status | why it matters |
+|---|---|---|---|---|
+| P0 | A. Sinichkin, `К вопросу о крещении первого русского баптиста` | `http://almanah.bogomysliye.com/article/view/133829` | `article_card_seen; pdf_available; page_check_needed` | Directly tests the Kura/Voronin date and document basis. |
+| P0 | Pravenc, `ВОРОНИН` | `https://www.pravenc.ru/text/155268.html` | `reference_article_seen` | Confirms standard outside-reference formulation: Voronin, Kura, 20 Aug. 1867, Tiflis chain. |
+| P0 | Pravenc, `МАЗАЕВ` | `https://www.pravenc.ru/text/2561218.html` | `reference_article_seen` | Forces Mazaev into leadership / press / funding / BWA / union-renaming frame. |
+| P0 | J. H. Rushbrooke, `Vasili Pavlov: A Russian Baptist Pioneer` | `https://biblicalstudies.org.uk/pdf/bq/06-8_361.pdf` | `pdf_title_seen_partial; OCR_noisy` | International Baptist memory of Pavlov; must be page-checked before quote. |
+| P0 | RusBaptist/Stunda `История` index | `http://rusbaptist.stunda.org/03.htm` | `confessional_index_seen` | Routes to Pavlov, Prokhanov, Savinsky, ВСЕХБ history, military question, OGPU/Savin. |
+| P0 | RusBaptist/Stunda `История ЕХБ в СССР` PDF | `http://rusbaptist.stunda.org/zips/historyofecb.pdf` | `pdf_target_from_index` | Major ВСЕХБ historical synthesis; needs local page cards before quotation. |
+| P0 | Prokhanov, `В котле России` | `http://www.rusbaptist.stunda.org/prokhanov.htm` | `target_from_index` | Prokhanov autobiographical / ВСЕХ self-memory corridor. |
+| P0 | SBHLA Wardin AR 915 | `https://sbhla.org/wp-content/uploads/915.pdf` | `archive_finding_aid_seen` | 53 linear ft., 121 boxes; major foreign archive map for Russian Baptist leaders and sectarian studies. |
+| P1 | University of Pretoria dissertation on early Russian evangelicals / Kargel | `https://repository.up.ac.za/server/api/core/bitstreams/6eac0460-18cf-4884-b8fe-8a4bc4174335/content` | `pdf_text_seen_partial` | Multi-origin frame: Stundists, Baptists, Pashkovites, Mennonite Brethren, Evangelical Christians, Molokans. |
+| P1 | RSEHB `Наша история` | `https://baptist.org.ru/about/our-histoty` | `search_result_seen; fetch_failed_in_tool` | Official memory page appears in search; needs browser/manual capture because automated fetch returned not-found. |
+
+### Integration rules for periodical chapters
+
+1. If a top text mentions a periodical (`Баптист`, `Христианин`, `Беседа`, `Слово Истины`, `Братский вестник`), the claim must be routed back to issue-level ledgers before article prose.
+2. If a top text is a biography, use it to define a `source corridor`; do not create a standalone bio-note unless it becomes a publication-ready chapter.
+3. If a top text is an archive finding aid, create archive request targets in the ledger, not narrative claims.
+4. `quote_ready` remains zero unless local scan/PDF + OCR + visual page check exists.
+5. The early `Братский листок` / late-Soviet `BRATSKII LISTOK` split remains mandatory; top-text indexes must not blur this.
+
+### Compact source-to-ledger mapping
+
+- `Воронин / Кура`: `groups/02_HISTORY_NARRATIVE.md`, source anchors only; no periodical issue until a specific article/facsimile is used.
+- `Мазаев / Баптист`: `groups/03_PERIODICAL_CORPUS.md` + future issue-card rows for `Баптист` 1907–1909 / 1912 / 1917–1918.
+- `Павлов`: `groups/02_HISTORY_NARRATIVE.md` for biography; `groups/03_PERIODICAL_CORPUS.md` for `Правда о баптистах` / periodical references; source anchor for Rushbrooke.
+- `Проханов`: keep in the ВСЕХ / `Христианин` / `Утренняя звезда` / hymnody family, not as generic Baptist Union voice.
+- `Wardin AR 915`: `groups/06_DATA_AND_PROOF_LEDGERS.md` and `SOURCE_ANCHORS.csv`; use for box/folder request planning.

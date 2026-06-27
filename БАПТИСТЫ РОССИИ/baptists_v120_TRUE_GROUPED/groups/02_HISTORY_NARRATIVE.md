@@ -634,3 +634,118 @@ public_context:
 - Но рядом должны стоять дети, молодёжь, воскресные школы, семьи, женщины Совета родственников, письма из тюрем.
 
 Так хронология становится не таблицей дат, а картой давления и верности.
+
+
+---
+
+## v121 — triangulation layer for origins / leaders / top texts (no new files)
+
+**Purpose.** v121 does not open a new mini-file series. It adds a source-triangulation layer for the already existing historical narrative: `Воронин / Кура`, `Мазаев / Союз русских баптистов`, `Павлов / ранняя миссия и письменное самосвидетельство`, `Проханов / ВСЕХ и печатно-песенный контур`, plus the archive corridors needed to verify them.
+
+### Current source-status rule for this block
+
+| status label | meaning in this v121 block | can it be quoted as final text? |
+|---|---|---|
+| `reference_article_seen` | encyclopedia/reference article opened and content-level claims identified | only as reference synthesis, with attribution |
+| `academic_article_card_seen` | article page/abstract/bibliography seen | no long quote until PDF/page check |
+| `pdf_text_seen_partial` | PDF text or title/pages were parsed by tooling | no exact quote until local page visual check |
+| `archive_finding_aid_seen` | finding aid confirms collection scope | no content claim about a document inside a folder |
+| `confessional_index_seen` | church/confessional index gives a source corridor | use as navigation / memory layer, not final proof |
+
+### VORONIN / KURA — safe synthesis after v121
+
+The existing line remains correct: **20 August 1867 / Kura / N. I. Voronin** is a formal-symbolic date, not the entire origin story. v121 strengthens the wording by separating three layers:
+
+1. `date-symbol`: Pravenc states that Nikita Isaevich Voronin, born 1840 and died 1905, is treated as the first Russian Baptist and that the day of his baptism, **20 Aug. 1867**, is customarily counted as the date of the emergence of Russian Baptism.
+2. `event-chain`: the same reference article places the event in Tiflis/Kura and names the chain: Molokan background → Ya. D. Delyakov/Kani Yagub → M. K. Kalweit → baptism in the Kura → early Tiflis community.
+3. `research-problem`: A. Sinichkin's article `К вопросу о крещении первого русского баптиста` is specifically about the documents behind this event; it is therefore a P0 control text before the series uses the Kura scene as more than a commemorative date.
+
+**Safe wording:**
+
+> 20 августа 1867 года можно держать как точку кристаллизации русскоязычного баптизма: крещение Воронина в Куре стало удобной датой отсчёта, но сам процесс включал молоканскую среду, кавказский контакт, немецко-баптистское посредничество и последующее общинное оформление.
+
+**Do not write yet:**
+
+> “Русский баптизм начался внезапно в одну ночь на Куре.”
+
+Why: it erases Molokan, Stundist, German Baptist, Pashkovite and printed-source contexts already present in the series.
+
+### MAZAEV — not only “rich benefactor”
+
+Pravenc's Mazaev article is useful because it forces a multi-role reading:
+
+- one of the founders of the Union of Russian Baptists in 1884;
+- repeatedly elected chairman / head figure in 1888–1917 windows;
+- creator and first editor of `Баптист` in several publication periods;
+- financial supporter of mission, literature, `Баптист`, and even Prokhanov's `Беседа`;
+- representative of the Russian Baptist Union at the 1905 Baptist World Congress;
+- supporter of the Baptist / Evangelical Christian rapprochement and the name formula `евангельские христиане-баптисты`.
+
+**Narrative correction:** Mazaev must be written as an institutional builder and press actor, not only as a wealthy patron. His money matters, but only inside a chain of chairmanship, publishing, congress diplomacy, missionary support and post-1905 public expansion.
+
+**Open issue:** the violent home-defence episode in 1917, the later church discipline, and restoration must be handled with exact attribution and moral nuance. It is not usable as a polemical anecdote until checked against Mazaev family memoirs and Baptist periodical context.
+
+### PAVLOV — source corridor, not finished quote-card
+
+The Rushbrooke PDF has been identified as: J. H. Rushbrooke, `Vasili Pavlov: A Russian Baptist Pioneer`, *Baptist Quarterly* 6.8 (October 1933), pp. 361–367. The tool saw title-level PDF text but not enough clean OCR for quotation.
+
+Therefore Pavlov currently sits at:
+
+```text
+pdf_title_seen / bibliographic_record_seen → page_OCR_and_visual_check_needed
+```
+
+This source should be triangulated with:
+
+- Pavlov's `Правда о баптистах` on the RusBaptist/Stunda history index;
+- Baptist periodical references to Pavlov already mined in `groups/03_PERIODICAL_CORPUS.md`;
+- RSEHB / denominational biography rows already in the source ledger;
+- archive leads such as SBHLA / Wardin and AR 881 where relevant.
+
+**Safe wording:** Pavlov can be framed as a bridge figure between early Tiflis/Kura origins, exile/persecution memory, doctrinal self-explanation and international Baptist memory. Exact claims from Rushbrooke still need page-level cards.
+
+### PROKHANOV / ВСЕХ — keep boundary with Baptist Union
+
+The RusBaptist/Stunda history page confirms a major corridor for Prokhanov through `В котле России` and for broader ВСЕХ/ЕХ-Б history. This is a navigation/source hub, not a single neutral authority. It should be used to route:
+
+- Prokhanov autobiography / ВСЕХ memory;
+- `История евангельских христиан-баптистов в СССР`;
+- documents on the military question;
+- 1961 split documents and Council-of-Churches material;
+- Savin / OGPU material already integrated in `groups/04_SAMIZDAT_PERSECUTION.md`.
+
+**Boundary rule:** Prokhanov's evangelical line, the Baptist Union line, later ВСЕХБ, and СЦ ЕХБ must remain distinguishable even when they later overlap under the EХБ umbrella.
+
+### v121 source table — top texts now anchored
+
+| source | type | v121 status | narrative use | next proof gate |
+|---|---|---|---|---|
+| Pravenc — `ВОРОНИН` | reference / outside encyclopedia | `reference_article_seen` | date-symbol, Kura chain, early Tiflis community | compare with Sinichkin PDF and early memoir/periodical evidence |
+| Pravenc — `МАЗАЕВ` | reference / outside encyclopedia | `reference_article_seen` | Union leadership, press, mission funding, BWA 1905 | check Mazaev memoirs + `Баптист` issue evidence |
+| Sinichkin — `К вопросу о крещении первого русского баптиста` | academic/confessional historical article | `article_card_seen` | document-control for Kura/Voronin event | download PDF, page-count, extract cited documents |
+| Rushbrooke — `Vasili Pavlov` | international Baptist historical article | `pdf_title_seen_partial` | Pavlov as remembered by international Baptist scholarship | local PDF page images + OCR + page references |
+| RusBaptist/Stunda — `История` index | confessional archive hub | `index_seen` | routes to Pavlov, Prokhanov, Савинский, ВСЕХБ history, split documents | per-text source cards; never quote the index as if it were the document |
+| SBHLA Wardin AR 915 | archive finding aid | `finding_aid_seen` | foreign archive map for Russian Baptists / leaders / sectarian studies | box/folder request map; no document claims until accessed |
+| University of Pretoria Kargel dissertation | academic dissertation | `pdf_text_seen_partial` | multi-origin evangelical background; Kargel / hermeneutics / 1874–1929 frame | page-specific extraction before citation |
+
+### Immediate next research actions
+
+1. Download/open Sinichkin PDF and create page-level notes only inside existing group files / CSV ledgers.
+2. For Rushbrooke, locally count pages and extract title/page cards; do not quote from the noisy parsed text.
+3. Build a compact `Воронин-Мазаев-Павлов-Проханов` triangulation in the narrative rather than new biography files.
+4. Use Wardin AR 915 as a request map, not as evidence for claims inside boxes.
+5. Keep `Кура 1867` as a symbolic node plus research problem, not as a mythic single-origin shortcut.
+
+
+### v121.1 — temporary PDF acquisition check: Sinichkin and Rushbrooke
+
+A follow-up technical check moved two v121 targets one rung upward, but still **not** to quote-ready.
+
+| source | old status | new status | what was gained | still forbidden |
+|---|---|---|---|---|
+| A. Sinichkin, `К вопросу о крещении первого русского баптиста` | `article_card_seen; pdf_available` | `pdf_route_verified_temp_downloaded; page_counted_14; raw_text_seen` | real OJS PDF route was discovered: `/article/download/133829/130289/288060`; PDF page count = 14; raw text extraction confirms the article starts on p. 152 and gives the Kura/Voronin problem as its subject | no direct quotation until visual page check and quote-card |
+| J. H. Rushbrooke, `Vasili Pavlov: A Russian Baptist Pioneer` | `pdf_title_seen_partial` | `pdf_downloaded_temp; page_counted_8; raw_text_seen` | PDF has 8 pages including the Theology-on-the-Web cover; article text begins with *The Baptist Quarterly* pagination 361 and frames Pavlov as an early Russian Baptist pioneer connected with Voronin/Tiflis | no direct quotation until visual page check |
+
+**Important interpretive gain:** Sinichkin complicates the inherited Kura story by pushing attention to documentary witnesses and Molokan-background actors; Rushbrooke independently shows that the international Baptist memory already linked Pavlov, Voronin, Tiflis, Kalweit and the 1867 date. These two sources should be used as a controlled pair: one checks the origin-event documentation; the other checks how the early Russian Baptist story circulated internationally.
+
+**Status discipline:** `raw_text_seen` is not `quote_checked`. The next agent must create visual page cards before extracting exact words for publication.

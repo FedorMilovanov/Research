@@ -3662,3 +3662,50 @@ Added 11 proof-ledger rows for BRATSKII LISTOK:
 - 3 rows are `item_designation_verified` (`1967 no.1`, `1967 no.2`, `1967 no.3`).
 
 No quote-ready rows were added.
+
+
+---
+
+## v121 ledger delta — top-text triangulation without file sprawl
+
+v121 adds a top-text/source-triangulation layer for origin and leadership synthesis. It does **not** create new issue-level MD files and does **not** promote any item to `quote_ready`.
+
+### New anchor types in this pass
+
+| object | status | source level | next gate |
+|---|---|---|---|
+| Pravenc `ВОРОНИН` | `reference_article_seen` | reference / outside encyclopedia | compare against Sinichkin PDF + early documents |
+| Pravenc `МАЗАЕВ` | `reference_article_seen` | reference / outside encyclopedia | compare against Mazaev memoirs + `Баптист` issue evidence |
+| Sinichkin `К вопросу о крещении первого русского баптиста` | `article_card_seen_pdf_available` | academic/confessional article | download PDF, count pages, extract cited document chain |
+| Rushbrooke `Vasili Pavlov` | `pdf_title_seen_partial` | international Baptist historical article | local page OCR + visual check |
+| RusBaptist/Stunda history index | `confessional_index_seen` | index / source hub | convert individual texts to source cards |
+| RSEHB `Наша история` | `search_result_seen_fetch_failed` | official church memory target | manual browser capture / stable page route |
+| SBHLA Wardin AR 915 | `archive_finding_aid_seen` | archive finding aid | box/folder request plan |
+| Pretoria Kargel dissertation | `pdf_text_seen_partial` | academic dissertation | page-specific extraction |
+
+### Proof discipline
+
+No row in v121 has `quote_checked`, `quote_card_verified` or `article_ready`. These are source anchors and microbatch targets only. For exact quotations the next agent must create page-level proof from local files/scans and visual checks.
+
+### Added / updated CSVs
+
+- `data/SOURCE_ANCHORS.csv` receives v121 anchor rows for the top-text queue.
+- `data/NEXT_MICROBATCH.csv` receives compact P0/P1 tasks for source triangulation.
+
+### Recommended next microbatch
+
+1. Sinichkin PDF: download → page count → bibliography extraction → compare with Pravenc Voronin.
+2. Rushbrooke PDF: local page images → OCR → page references for Pavlov.
+3. `Баптист` / Mazaev: locate Mazaev editor/funding/leadership evidence in `Баптист` issues before narrative expansion.
+4. Wardin AR 915: identify boxes/folders for Voronin, Pavlov, Mazaev, Prokhanov, Kargel, Council of Churches / relatives.
+5. RSEHB `Наша история`: manually capture the official page because automated fetch returned not-found despite search visibility.
+
+
+### v121.1 proof delta — PDF routes verified, still no quote-ready
+
+| source_id | status after v121.1 | pages | proof note | next gate |
+|---|---|---:|---|---|
+| `v121_sinichkin_kura_baptism` | `pdf_route_verified_temp_downloaded_raw_text_seen` | 14 | OJS viewer led to real PDF route `/article/download/133829/130289/288060`; raw text extraction seen. | visual page check; bibliography/document extraction; quote-card only after visual check |
+| `v121_rushbrooke_pavlov` | `pdf_downloaded_temp_page_counted_raw_text_seen` | 8 incl. cover | PDF downloaded from BiblicalStudies/Theology-on-the-Web; article pagination visible as 361–367 in raw text. | visual page check for pp. 361–367; exact page-card before citation |
+
+This delta deliberately does not touch `PROOF_STATUS_LEDGER.csv` because these are top-text/source-proof objects rather than periodical issue rows. The authoritative machine-readable update is in `data/SOURCE_ANCHORS.csv` and `data/NEXT_MICROBATCH.csv`.
