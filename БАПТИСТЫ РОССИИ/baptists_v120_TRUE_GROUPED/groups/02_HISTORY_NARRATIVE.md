@@ -832,3 +832,45 @@ and a specific 1912 issue: the private agreement of **D. I. Mazaev, I. S. Prokha
 **Safe after v123:** write that the unity conflict had at least three layers: institutional cooperation, different visions of mission/society, and concrete church-discipline questions about reception of members between unions.
 
 **Still blocked:** exact claims from `Утренняя звезда` 1917/1920 or the Vladikavkaz agreement require scans or reliable page images.
+
+
+---
+
+## v124 — Baptist-side critique of Prokhanov's Russian Evangelical Union: A. M. Mazaev target
+
+v124 adds a new caution to the Mazaev/Prokhanov boundary. Search results and encyclopedia snippets point to a sharp Baptist-side critique of the **Russian Evangelical Union** in `Баптист` **1909 №11**, attributed not to D. I. Mazaev but to **A. M. Mazaev**.
+
+### Why this matters
+
+The series must not flatten the conflict into a vague “Mazaev vs Prokhanov” slogan. There are at least three different Mazaev-related layers:
+
+1. **D. I. Mazaev** — chairman / editor / institutional Baptist leader.
+2. **G. I. Mazaev** — memoir source target (`Воспоминания`, Kyiv, 1992), not yet accessed.
+3. **A. M. Mazaev** — Baptist-side polemical voice against the Russian Evangelical Union, target: `Баптист` 1909 №11.
+
+The search-snippet text says A. M. Mazaev called the Russian Evangelical Union an “ужасный союз” and argued that Baptist, Orthodox and broad evangelical-union membership could not simply coexist because they rested on different platforms. This is **not** yet a quote-ready claim: the actual `Баптист` 1909 №11 page has not been opened and visually checked.
+
+### Safe narrative use after v124
+
+Allowed:
+
+> Baptist resistance to Prokhanov's broad Russian Evangelical Union was not only personal rivalry. A Baptist-side polemical target exists in `Баптист` 1909 №11, attributed to A. M. Mazaev, and must be verified issue/page before quotation.
+
+Not allowed:
+
+> “D. I. Mazaev wrote ‘ужасный союз’...”
+
+until the issue is opened and author/page are verified. Current evidence points to **A. M. Mazaev**, not D. I. Mazaev.
+
+### 1917 political identity targets from Potapova 2019
+
+N. Potapova's 2019 article on Evangelical Christians and Baptists in 1917–1922 adds concrete confessional-press targets for the political-identity layer:
+
+- `Баптист. 1917. №1. Июль. С. 15` — D. I. Mazaev's greeting telegram to the chairman of the State Duma after the February Revolution.
+- `Утренняя звезда. 1917. 24 марта. №1. С. 1` — `Освобождение России`.
+- `Утренняя звезда. 1917. 24 марта. №1. С. 2` and pp. 2–4 — `Новая власть от Бога`; `Евангельские христиане и народное правительство`.
+- `Утренняя звезда. 1917. 24 марта. №1. С. 6–8` — Christian-democratic party / `Воскресение` materials.
+- `Слово истины. 1917. Май. №1. С. 1–4` — Baptist political/revolutionary statements including P. V. Pavlov's `Политические требования баптистов`.
+- `Гость. 1917. Май. №5. С. 65–68` — report on the All-Russian Baptist congress in Vladikavkaz.
+
+These are not new narrative claims yet. They are exact periodical proof targets.

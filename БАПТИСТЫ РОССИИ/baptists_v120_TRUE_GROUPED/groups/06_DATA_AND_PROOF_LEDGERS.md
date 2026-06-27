@@ -3731,3 +3731,14 @@ No `PROOF_STATUS_LEDGER.csv` row is added, because these are top-text/source-con
 | `v122_potapova_unity_article` | `academic_article_seen` | `academic_article_seen_with_exact_periodical_targets` | exact target `Утренняя звезда 1920 №1 Jan p.3`; additional 1917 targets from monograph snippets; Vladikavkaz 1912 agreement target sharpened | acquire scans/pages; do not quote secondary snippet as primary |
 
 No new periodical issue row is added to `PROOF_STATUS_LEDGER.csv` because the 1917/1920 `Утренняя звезда` issues are not yet opened. The proper current status is `secondary_citation_seen`, held in `SOURCE_ANCHORS.csv` and `NEXT_MICROBATCH.csv`.
+
+
+### v124 proof delta — exact Baptist/UZ/Slovo Istiny/Gost targets added
+
+| source_id | status | proof gained | still missing |
+|---|---|---|---|
+| `v124_baptist_1909_11_am_mazaev_res_target` | `search_snippet_seen` | identifies `Баптист` 1909 №11 as target for A. M. Mazaev critique of Russian Evangelical Union | issue scan/page/author verification |
+| `v124_potapova_1917_1922_press_article` | `academic_article_seen` | Potapova 2019 gives exact periodical citations for 1917 revolutionary identity: `Баптист`, `Утренняя звезда`, `Слово истины`, `Гость` | primary issue/page proof |
+| `v124_1917_press_targets` | `periodical_targets_from_academic_citation` | concrete P0/P1 targets for 1917 periodical acquisition | files/OCR/visual quote-cards |
+
+No `quote_ready` rows are added. These are target rows, not closed evidence cards.

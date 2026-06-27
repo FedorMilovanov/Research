@@ -13509,3 +13509,33 @@ Allowed:
 Not allowed:
 
 > Directly quoting the 1920 `Утренняя звезда` wording until `1920 №1`, p. 3 is opened and visually checked.
+
+
+---
+
+## v124 — exact 1909/1917 periodical targets: Russian Evangelical Union and revolutionary identity
+
+v124 adds a stronger periodical queue for two connected questions: Baptist resistance to Prokhanov's Russian Evangelical Union and the political/religious identity shift in 1917.
+
+### A. Russian Evangelical Union / Baptist critique
+
+| priority | title | target | current status | warning |
+|---|---|---|---|---|
+| P0 | `Баптист` | 1909 №11, A. M. Mazaev on Russian Evangelical Union | `search_snippet_seen / encyclopedia_snippet_seen` | do not quote until issue/page opened; do not misattribute to D. I. Mazaev |
+
+The snippet tradition quotes a severe critique of the Russian Evangelical Union: the Baptist polemic objects to simultaneous membership in Baptist/Orthodox and broad evangelical-union frameworks and contrasts the platforms of each. This is exactly the kind of claim that must be routed to the periodical proof ladder: `issue_row_seen → file_url_seen → download_ok → page_counted → visual_page_checked → quote_card_verified`.
+
+### B. 1917 revolutionary identity targets from Potapova 2019
+
+| priority | corpus | exact target | why it matters | current status |
+|---|---|---|---|---|
+| P0 | `Баптист` | 1917 №1, July, p. 15 | D. I. Mazaev greeting telegram after February Revolution | `academic_citation_seen` |
+| P0 | `Утренняя звезда` | 1917 №1, 24 March, p. 1, `Освобождение России` | Evangelical-Christian response to revolution/freedom | `academic_citation_seen` |
+| P0 | `Утренняя звезда` | 1917 №1, 24 March, p. 2 and pp. 2–4 | `Новая власть от Бога`; `Евангельские христиане и народное правительство` | `academic_citation_seen` |
+| P1 | `Утренняя звезда` | 1917 №1, 24 March, pp. 6–8 | Christian-democratic party `Воскресение` materials | `academic_citation_seen` |
+| P0 | `Слово истины` | 1917 №1, May, pp. 1–4 | Baptist revolutionary/political statements; P. V. Pavlov `Политические требования баптистов` | `academic_citation_seen` |
+| P1 | `Гость` | 1917 №5, May, pp. 65–68 | Vladikavkaz Baptist congress report | `academic_citation_seen` |
+
+### Writing rule
+
+Use these rows to drive acquisition/OCR, not to write final quotes. Potapova 2019 is a strong academic map of confessional press, but the series still needs the underlying issues before publication-level quotation.
