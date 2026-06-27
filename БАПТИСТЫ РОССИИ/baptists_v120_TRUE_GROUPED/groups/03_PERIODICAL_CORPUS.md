@@ -13478,3 +13478,34 @@ Not allowed yet:
 3. Locate 1912 Vladikavkaz meeting / agreement text.
 4. Find A. P. Nagirnyak, `Дей Иванович Мазаев`, in `140 лет российскому баптизму`, pp. 152–171.
 5. Find `Мазаев Г. И. Воспоминания` (К., 1992) or reliable library record; do not rely on snippets.
+
+
+---
+
+## v123 — exact periodical targets for Baptist / Evangelical Christian unity
+
+v123 tightens the periodical queue created in v122. The unity question now has concrete issue/page targets rather than a generic “find unity documents” task.
+
+### Exact targets now known
+
+| priority | periodical/document | exact target | current proof status | next action |
+|---|---|---|---|---|
+| P0 | `Утренняя звезда` | `1920 №1`, January, p. 3, item: `6-й Всероссийский съезд евангельских христиан` | `secondary_citation_seen` via Potapova/CyberLeninka | locate scan/PDF; verify p.3 visually; extract passage about 1909 proposal and negative replies |
+| P0 | `Утренняя звезда` | 7 April 1917, p. 2, item: `О единстве` | `monograph_snippet_seen` | locate issue; visual check p.2 |
+| P1 | `Утренняя звезда` | 7 April 1917, p. 1, item: `О съезде евангельских христиан` | `monograph_snippet_seen` | locate issue; visual check p.1 |
+| P0 | Vladikavkaz 1912 agreement | private agreement of D. I. Mazaev, I. S. Prokhanov and others | `secondary_snippet_seen` | find text in congress materials, monograph, archive or periodical report |
+| P1 | Nagirnyak | `Дей Иванович Мазаев`, in `140 лет российскому баптизму`, pp. 152–171 | `bibliographic_citation_seen` | locate pages; compare Mazaev/Prokhanov interpretation |
+
+### Why this belongs in periodical corpus
+
+The Baptist/Evangelical Christian unity question is not only a biography problem. It is a **periodical and congress-document problem**: newspapers and congress protocols carried the argument, remembered earlier proposals, and framed the terms of unity. Therefore the next closure should be issue/page proof, not a new biography file.
+
+### Writing rule after v123
+
+Allowed:
+
+> By 1917–1920 the unity question was being argued in the evangelical press with reference to earlier proposals from 1909 and later attempts such as the 1912 Vladikavkaz agreement.
+
+Not allowed:
+
+> Directly quoting the 1920 `Утренняя звезда` wording until `1920 №1`, p. 3 is opened and visually checked.

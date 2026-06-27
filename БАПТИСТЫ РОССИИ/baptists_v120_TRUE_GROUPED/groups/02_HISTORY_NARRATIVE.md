@@ -788,3 +788,47 @@ Potapova’s text preserves the process: 1909 discussions of a connecting commit
 **Safe narrative use:** Mazaev and Prokhanov should be written as adjacent but non-identical leaders whose disagreement was not merely personal rivalry; it involved different models of mission, unity, society, and church order.
 
 **Still not allowed:** using Potapova as a substitute for the actual 1909/1912 documents, `Утренняя звезда` 1920 article, or congress materials. Those remain periodical/document targets.
+
+
+---
+
+## v123 — Rushbrooke full visual pass and unity-target tightening
+
+v123 continues the same no-sprawl rule: the new evidence is absorbed into the grouped narrative and ledgers.
+
+### Rushbrooke / Pavlov: from sample visual check to full article visual pass
+
+The full Rushbrooke article section was rendered and visually inspected as page images for article pagination **361–367**. This upgrades the source from a single-page sample to a full-article visual pass. It still does **not** automatically create production quote-cards, because exact public quotation should still use clipped page cards / stable excerpts, but the article-level argument can now be summarized much more safely.
+
+| article page | visual status | safe content-level use |
+|---:|---|---|
+| 361 | checked earlier | Pavlov introduced as Russian Baptist pioneer; Voronin/Kalweit/Tiflis/Kura origin chain; Pavlov joins young Tiflis church |
+| 362 | checked in v123 contact sheet | Pavlov’s learning/languages; Tiflis church around Voronin; Pavlov + Ivanov-Klishnikov evangelize among Transcaucasian Molokans; Hamburg/Oncken route; contact with Ratushny/Riaboshapka |
+| 363 | checked in v123 contact sheet | Stundist/Baptist distinction; Pashkovite / Petersburg evangelical contact; 1884 Lieven-house conference; arrests/banishment; All-Russian Baptist Union context; Pavlov/Voronin Orenburg exile |
+| 364 | checked in v123 contact sheet | Orenburg suffering, family deaths, ministry in exile, Tulcea refugee/mission center, Siberia/Vladivostok evangelization |
+| 365 | checked in v123 contact sheet | Odessa 1905 conference arrest episode; prison dialogue; translation/publication; BWA congresses and international information flow |
+| 366 | checked in v123 contact sheet | post-1917 Moscow pastorate, Baptist Union service, hunger/peril, 1921 Baptist Congress, 1923 move toward Transcaucasia/Baku, illness/death and burial route |
+| 367 | checked in v123 contact sheet | concluding evaluation of Pavlov’s influence and Christological foundation; article closes before next unrelated item |
+
+**Narrative effect:** Pavlov is now not merely a biographical ornament. He is a structural bridge: Tiflis/Kura origins → Molokan evangelization → Hamburg/Oncken international link → southern Stundist/Baptist coordination → Petersburg/Pashkovite contact → persecution/exile → BWA international memory → early Soviet survival.
+
+### Unity / Mazaev–Prokhanov: exact target sharpened
+
+The v122 academic control from Potapova produced a sharper target: the `Утренняя звезда` reference is not vague. The cited item is:
+
+```text
+6-й Всероссийский съезд евангельских христиан // Утренняя звезда. 1920. №1. Январь. С. 3.
+```
+
+Search also surfaced Potapova’s monograph route / ResearchGate snippets that add concrete 1917 targets:
+
+```text
+О единстве // Утренняя звезда. 1917. 7 апреля. С. 2.
+О съезде евангельских христиан // Утренняя звезда. 1917. 7 апреля. С. 1.
+```
+
+and a specific 1912 issue: the private agreement of **D. I. Mazaev, I. S. Prokhanov and others in Vladikavkaz** reportedly touched the disputed reception/removal of members wrongly accepted across the two unions. This is crucial because it shows the unity problem was not only “personal ambition”; it was also a church-order / discipline / intercommunion problem.
+
+**Safe after v123:** write that the unity conflict had at least three layers: institutional cooperation, different visions of mission/society, and concrete church-discipline questions about reception of members between unions.
+
+**Still blocked:** exact claims from `Утренняя звезда` 1917/1920 or the Vladikavkaz agreement require scans or reliable page images.

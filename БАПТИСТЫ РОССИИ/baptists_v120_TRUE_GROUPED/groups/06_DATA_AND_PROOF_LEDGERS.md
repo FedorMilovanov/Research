@@ -3721,3 +3721,13 @@ This delta deliberately does not touch `PROOF_STATUS_LEDGER.csv` because these a
 | `v122_potapova_unity_article` | `academic_article_seen` | CyberLeninka article text seen; relevant Mazaev/Prokhanov unity section identified | academic control only; primary congress/periodical documents still needed |
 
 No `PROOF_STATUS_LEDGER.csv` row is added, because these are top-text/source-control objects rather than periodical issue rows. `SOURCE_ANCHORS.csv` and `NEXT_MICROBATCH.csv` are the correct ledgers for this pass.
+
+
+### v123 proof delta — Rushbrooke full article visual pass and unity target refinement
+
+| source_id | previous status | v123 status | proof gained | next gate |
+|---|---|---|---|---|
+| `v121_rushbrooke_pavlov` | `sample_visual_checked_p361` | `full_article_visual_pass_361_367` | rendered/visually inspected article pages 361–367; content-level map now safe | clipped quote-cards if exact quotation is needed |
+| `v122_potapova_unity_article` | `academic_article_seen` | `academic_article_seen_with_exact_periodical_targets` | exact target `Утренняя звезда 1920 №1 Jan p.3`; additional 1917 targets from monograph snippets; Vladikavkaz 1912 agreement target sharpened | acquire scans/pages; do not quote secondary snippet as primary |
+
+No new periodical issue row is added to `PROOF_STATUS_LEDGER.csv` because the 1917/1920 `Утренняя звезда` issues are not yet opened. The proper current status is `secondary_citation_seen`, held in `SOURCE_ANCHORS.csv` and `NEXT_MICROBATCH.csv`.
