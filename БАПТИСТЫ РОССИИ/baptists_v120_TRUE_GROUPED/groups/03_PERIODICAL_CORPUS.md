@@ -13630,3 +13630,42 @@ This is a **navigation/citation backbone**, not a primary corpus. Concretely it 
 ### Writing rule
 
 The bibliography is a Level-C research aid (a researcher's curated list). It may be used to locate and name sources, but a title's presence here does **not** by itself establish holding/quote-readiness — that still requires the underlying book/journal (per the proof ladder). Where the bibliography names a document that is now locally held (Sinichkin export), the local file governs.
+
+---
+
+## v125h — OCR capability achieved; first ocr_done closures
+
+**OCR is now operational in the working environment** (tesseract 5.5 + `tesseract-ocr-rus` + poppler, installed via sudo apt — the SANDBOX-ENV manual confirmed this works). This breaks the v125 blocker: scanned periodicals and documents can now advance from `page_count_verified` to `ocr_done`.
+
+### Pipeline
+
+`pdftoppm` (250–300 DPI) → per-page PNG → `tesseract -l rus+eng --psm 6` → text, with RAM-safe page-by-page cleanup (the sandbox has only ~1.9 GB RAM, so no whole-document rasterisation). OCR text is stored under `ocr_text/`. Throughput ≈ 15–25 s/page on 2 vCPU.
+
+### First ocr_done closures (4 documents)
+
+| Document | Pages | DPI | Quality | Status | Find |
+|---|---:|---:|---|---|---|
+| ВСЕХБ Instructional letter 1960 | 10 | 300 | **clean** (modern Soviet print) | ocr_done, quote-ready | regulatory trigger of the 1961 split — see 04 v125g |
+| Съезд Владикавказ 1885 | 13 | 250 | searchable (old orthography) | ocr_done | **earliest unity-congress**: doctrinal-unity clause, open-communion/foot-washing boundary |
+| 2nd Congress EC 1910-12-28→1911-01-04 | 23 | 250 | searchable (old orthography) | ocr_done | Prokhanov chair; unity-question core |
+| 2nd All-Russian Congress EC 1911 | 23 | 250 | searchable (old orthography) | ocr_done | near-duplicate of the above (distinction to verify) |
+
+### Two methodological findings
+
+1. **Old-orthography OCR is good enough for search, not yet for uncorrected quotation.** Tesseract's `rus` model is trained on modern Russian; pre-1918 texts (with ѣ, і, final ъ) come through with artifacts (e.g. «съ$здъ», «ученiи»). The output reliably locates passages and confirms identities, but a visual page-card clip is required before publication-grade quotation. Correct proof status: `ocr_done` ≠ `quote_card_verified`.
+
+2. **OCR confirms masthead → resolves the issue-number mapping problem (v125 note).** A test OCR of «Баптист» 1 января 1909 стр.1 returned the clean masthead: «№ 1. 1 Января 1909 г. Ростовъ-на-Дону. Духовно-нравственный журналъ. Органъ русскихъ баптистовъ». This means OCR'ing the first page of each «Баптист» scan will resolve the **date-label → issue-number** mapping that v125 flagged as OCR-dependent — enabling the Potapova/v124 targets (e.g. 1909 №11) to be located in the local corpus.
+
+### Earliest unity-congress finding (Vladikavkaz 1885)
+
+The 1885 congress OCR surfaced the **earliest documented doctrinal-boundary clause** in the Baptist union — directly relevant to the unity-question proof queue (v122–v124):
+
+> The Tiflis community proposed «чтобы благовѣстники наши держались единства въ ученiи», because some workers «учатъ открытой вечери» (open communion for the unbaptised) and others introduce «омовенie ногъ» (foot-washing) where not customary. «По долгомъ разсужденiи рѣшено единогласно, чтобы наши благовѣстники не учили открытой Вечери, потому что это вопреки исповѣданiю нашей Вѣры» — and a member taking communion in a non-baptist (infant-baptising) church, after admonition, may be excluded.
+
+This fixes the Baptist doctrinal boundary (closed communion, no open table) at the union's **first** independent congress — a Level-A primary anchor (ocr_done, quote-ready after visual check) for the unity question that the v122–v124 targets had only at secondary-citation level.
+
+### Next OCR queue
+
+- **Бонч-Бруевич «Преследование баптистов» 1902** (111 pp, the largest single source) — old orthography; high ROI.
+- «Баптист» 1909–1911 first-pages → masthead/issue-number map (cheap, ~1 page each).
+- A representative «Баптист» full-issue OCR to assess quote-readiness on the periodical body.

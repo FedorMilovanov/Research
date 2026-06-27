@@ -7206,3 +7206,45 @@ Allowed (Level B, quote-ready):
 Not allowed:
 
 > Presenting the «four churches» figure or the Order 0047 impact without flagging the article as the single source, or quoting Ermolov's sub-sources before they are independently located.
+
+---
+
+## v125g — OCR closure: the ВСЕХБ Instructional letter 1960 (regulatory trigger, now text-extracted)
+
+**First OCR-achieved closure in the archive.** The «Инструктивное письмо 1960» — the ВСЕХБ circular to senior presbyters accompanying the new 1960 Положение — is the precise regulatory trigger of the 1961 Initiative Group rebellion documented in v125c. It was previously held only at `page_count_verified_scan_no_ocr`. It has now been **OCR'd with tesseract rus+eng** (10 pp, full text → `ocr_text/Инструктивное_письмо_1960.pdf.txt`), advancing it to **`ocr_done`** and making its content quote-ready (visual page-card clipping still recommended for publication).
+
+**Source:** `Инструктивное письмо 1960.pdf` (Sinichkin TG export, 3 identical copies). OCR pipeline: `pdftoppm` 300 DPI → `tesseract -l rus+eng --psm 6`, page-by-page with RAM cleanup. Proof status: **`ocr_done`**.
+
+### What the letter actually orders (quote-ready, OCR'd)
+
+The letter is a directive to **suppress growth and mission**, which is exactly what the Initiative Group charged the ВСЕХБ with («уничтожил божественные принципы устроения церкви», v125c):
+
+1. **Growth explicitly deprioritised:**
+> «главной задачей богослужений в настоящее время является НЕ привлечение новых членов, а удовлетворение необходимых духовных потребностей верующих».
+> «На обязанности старшего пресвитера лежит сдерживание нездоровых миссионерских проявлений, именуемых апостолом Павлом ревностью по Богу, но не по рассуждению /Римл.10,2/».
+> «С погоней за количеством верующих в наших общинах должно быть решительно покончено».
+
+2. **Baptism throttled, especially youth:**
+> «с момента подачи заявления о приёме и до испытания должно пройти не менее 2–3 лет».
+> «стараясь свести крещение молодёжи в возрасте от 18 до 30 лет к самому минимальному количеству, принимая в общину лишь действительно утвердившихся в вере и хорошо испытанных людей».
+> «от лиц учащихся или находящихся на военной службе — не должны вообще приниматься заявления о вступлении в члены общины до окончания ими учёбы или военной службы».
+
+3. **State coordination of sacraments:**
+> «Крещение на открытом воздухе должно совершаться только в летнее время и с ведома органов советской власти».
+> Outdoor baptism «надо добиться того, чтобы около крещаемых не собиралось много народа и всё проходило в спокойствии и тишине».
+
+4. **An internal favour to the state-recognised merger logic:** «необъединённых пятидесятников… следует всячески привлекать в наши общины» (i.e. the absorption of Pentecostals was encouraged, even as Baptist self-reproduction was throttled).
+
+### Why this closes the v125c formation chronology
+
+The Initiative Group's 13.08.1961 démarche (v125c) accused the ВСЕХБ of «искусственно разделил церковь» and «проводил поставление служителей без участия церкви». This letter is the **documentary text** behind those accusations: a centrally-imposed rulebook throttling baptism, mission, youth and open-air worship, with state coordination of sacraments — i.e. the ВСЕХБ acting as a regulator of contraction. The 1961 split is now anchored at both ends: the **believers' side** (v125c chronology + Belyakova v125d) and the **ВСЕХБ regulatory side** (this letter).
+
+### Writing rule after v125g
+
+Allowed (ocr_done, quote-ready after page-card clip):
+
+> The ВСЕХБ's 1960 Instructional letter to senior presbyters ordered that worship's main task was «не привлечение новых членов», that baptism candidates serve 2–3 years' probation, that youth baptism (18–30) be «свести к самому минимальному количеству», that students and servicemen be refused, and that open-air baptism occur only «с ведома органов советской власти» — the regulatory programme the 1961 Initiative Group broke with.
+
+Not allowed:
+
+> Quoting any passage without clipping the page image (the OCR has minor character errors like «Полсжение»/«Положение» that must be visually resolved before publication-grade citation).
