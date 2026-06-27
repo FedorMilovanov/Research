@@ -993,3 +993,49 @@ Allowed (quote-ready, primary-grounded):
 Not allowed:
 
 > Presenting the 1867 date as settled scholarly consensus without flagging it as the Sinichkin-dossier argument routed through primary documents, or quoting the Ivanov manuscript verbatim before its 37-sheet original is visually checked page by page.
+
+---
+
+## v125d — Two primary anchors: Pashkov's confession of faith (1880) & the House of Gospel opening (1911)
+
+Two **Level A primary documents** with extractable text layers now anchor the Pashkovite origins and the House-of-Gospel / Prokhanov institutional layer respectively. Both are quote-ready pending a visual masthead check.
+
+### A. Pashkov's own confession of faith — «Сущность учения г. Пашкова» (1880)
+
+**Source:** `Сущность_учения_Пашкова.pdf` (9 pp, text layer, Sinichkin TG export). Originally: «Сущность учения г. Пашкова, изложенная им самим (Переписка г. Пашкова с о. протоиереем И. Янышевым) // Церковный вестник (часть неофициальная). 1880. №19. С. 3–7».
+
+This is **V. A. Pashkov's own letter to Protopresbyter Ioann Yanyshev, dated 9 April 1880**, published with Yanyshev's covering note of 29 April. It is the closest thing to a Pashkovite *profession de foi* — a primary doctrinal statement in Pashkov's own words, on justification by faith. Yanyshev introduces it as «по несомненно подлинному документу».
+
+Key passage — Pashkov's own testimony of conversion (quote-ready):
+
+> «Когда-то я был без Христа, чужд заветов обетования, не имел надежды и был безбожником в мире (Еф.2:12), я приближался к Господу устами только, а сердце мое далеко отстояло от Него (Мтф.15:8). Закон Божий был для меня мертвою буквою… я проводил, обличаемый совестью, жизнь суетную, греховную, богопротивную в продолжении целых сорока лет…»
+
+> «Настало время, когда явилась мне „благодать Божия, спасительная для всех человеков" (Тит.2:11), когда Господу благоугодно было дать мне понять, что Христос, умирая за грехи мира, ответил за грехи и мои…»
+
+Pashkov explicitly frames his mission as conversion, not theology: «довольствуясь тем исключительным призванием, которое имею от Бога: призывать людей ко Спасителю», citing James 3:1 («не многие делайтесь учителями»).
+
+**Significance:** This primary document lets the narrative describe Pashkovite doctrine **in Pashkov's own words** rather than through hostile Orthodox-missionary paraphrase — a corrective to the polemical literature (Айвазов, etc.) that dominates the 1900–1919 bibliography block.
+
+### B. Eyewitness to the House of Gospel opening — E. Kuteinikova (1911)
+
+**Source:** `Кутейникова_Открытие_Дома_Евангелия_1911.pdf` (18 pp, text layer, Sinichkin TG export). Elizaveta Kuteinikova's eyewitness memoir of the opening of the **House of Gospel (Дом Евангелия), Vasilevskii Ostrov, St Petersburg, 24-я линия 11** — the Prokhanov-led institutional centrepiece opened December 1911.
+
+Quote-ready detail (the international frame):
+
+- Kuteinikova compares the House to **Spurgeon's orphanage in London** («Сиротский Приют Сперджена … до 500 детей»), and recalls a London companion's prophecy «Они будут!» about such houses appearing in Russia.
+- International Baptist presence at the opening: «председатель Всемирного Союза Баптистов Мак-Артур и профессор МакКейг» — i.e. the **President of the Baptist World Alliance** and Professor McCaig personally helped unpack chairs for the opening. This confirms the international-ecumenical framing of the House of Gospel.
+- The atmosphere: workers «позеленевшие, худые, светились радостью»; a canteen work-party singing «сионских напевов» while standing knee-deep in packing straw at 4–8 a.m.
+
+**Significance:** A Level-A eyewitness (a participant) giving the texture of the 1911 opening — directly supports the 25.12.1911 milestone in the v125 chronology, where several day-by-day reports (`Открытие_Дома_Евангелия`, days 2–7) are also locally held as text-layer files.
+
+### Writing rule after v125d
+
+Allowed (Level A, primary/eyewitness, quote-ready):
+
+> In April 1880 Pashkov set out his confession of faith in a letter to Protopresbyter Yanyshev (published in *Церковный вестник* №19, 1880) — a testimony of conversion centred on justification by grace and a self-description as one called «призывать людей ко Спасителю» rather than to be a teacher of doctrine.
+>
+> The December 1911 opening of the House of Gospel in St Petersburg was, by Kuteinikova's eyewitness account, attended by the President of the Baptist World Alliance, MacArthur, and framed by the congregation as the first of hoped-for many such houses in Russia.
+
+Not allowed:
+
+> Verbatim publication quotation until a page-image quote-card is clipped for each citation; and treating the Yanyshev editorial framing as if it were Pashkov's own voice.

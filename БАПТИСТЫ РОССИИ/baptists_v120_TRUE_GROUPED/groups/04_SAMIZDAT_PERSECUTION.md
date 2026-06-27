@@ -7109,3 +7109,51 @@ Mining the 5 269 Sinichkin posts for Soviet-period persecution content (1950–1
 - **Locally held & scan-only:** `Инструктивное письмо 1960` (СЦ ЕХБ regulatory trigger). → OCR queued.
 - **Catalog-level (Toronto samizdat):** the `Вестник Спасения` / `Бюллетень СРУ` / `BRATSKII LISTOK` corpora that carried the СРУ/СЦ ЕХБ voice — already tracked to holdings/page level in the PROOF ledger; the Sinichkin date-spine now tells the archive *which issue date* to chase for each formation event.
 - **No new quote claims** are made from the posts themselves; they are a Level-C map.
+
+---
+
+## v125d — Academic anchor: Belyakova on KGB infiltration of unregistered ECB (Kiev, "Topsy", 1963–1981)
+
+A major **Level B academic study** using **Level A primary documents** is now locally held: N. A. Belyakova, *«Агентура КГБ в нелегальных евангельских сообществах позднего СССР: опыт микроисторического исследования»*, ИСТОРИЯ (journal), 2022, V.13, Issue 6(116), ИВИ РАН, DOI: 10.18254/S207987840021688-5. Full text extracted (25 pp). This is the strongest possible academic bridge for the v125c СЦ ЕХБ chronology: it studies the *surveillance side* of the same split the channel posts document from the believers' side.
+
+**Source:** `Beliakova-Topsi-KGB.pdf` (Sinichkin TG export). Proof status: `text_layer_extracted` — quote-ready pending visual masthead check.
+
+### Provenance and method
+
+- **Archive:** Security Service of Ukraine (СБУ) archive; the agent's personal + 7 working files were **declassified 27.12.2019** and transferred as having «оперативную ценность».
+- **Case span:** July 1963 – April 1981 (18 years); the agent — a **woman**, codename «**Топси**», a believer in the unregistered Kiev ECB community.
+- **Volume:** vol. 1 (1963–64) = 128 reports, index of 40 named persons; vol. 7 (1977–81) = 153 reports, 41 named persons. Each agent report accompanied by an operator's *справка* explaining context, the assignment, and planned follow-up.
+
+### Statistical context the article fixes
+
+> In 1981, across Ukraine, **951 unregistered religious associations** were registered by the state (excluding the Ukrainian Greek-Catholic Church); of these **~250 were unregistered ECB communities with ~10 000 members**. The unregistered ECB movement «оформившемся к середине 1960-х гг. под руководством „Совета церквей ЕХБ"» is described in historiography as «одном из наиболее преследуемых религиозных движений в СССР».
+
+### The Vins network (confirms v125c)
+
+The article identifies **Kiev** as a centre of the movement and reconstructs the **Vins family** — directly confirming the v125c formation record:
+
+- **Pyotr Vins** — preacher, **repressed for faith in 1937**.
+- **Lidiya Mikhailovna Vins** — his widow; senior figure of the unregistered Kiev community.
+- **Georgy (Georgii) Vins** — «с начала 1960-х гг. исполнял должность генерального секретаря Совета церквей ЕХБ». → Matches the v125c row (20.09.1965, General Secretary G. P. Vins). The family gained international visibility (photographs on Anglophone magazine covers; memoirs published).
+
+### Key historiographical conclusion (English abstract, quote-ready)
+
+> «The KGB's task was to control and monitor the ongoing processes in the religious community, conducting local operations to temporarily suppress the activity of individual activists, while **the initiative and strategy were in the hands of religious activists**. The analyzed activity of the 'Topsy' agent was **not aimed at eliminating the illegal movement** — she herself was an important element of the social structuring of the community: she created a 'musical space' for young people and children.»
+
+In the Russian text: «своей задачей КГБ видел контроль и [наблюдение] … инициатива и стратегия находились в руках религиозных активистов». The agent reported on forest worship near Kiev, watched the Vins family, monitored children/youth work and internal community conflicts, and participated in «exposing» ECB print outlets and foreign emissaries.
+
+### What this does for the dossier
+
+1. **Upgrades v125c from Level-C navigation to Level-B academic confirmation** for the СЦ ЕХБ formation dates, the Vins leadership, and Kiev as a centre.
+2. Provides the **archival counterweight** to the believer-side Toronto samizdat corpus (Вестник Спасения / Бюллетень СРУ): the same events seen from the KGB operational files.
+3. Bibliography supplies the modern research backbone (G. Vins *Верные до конца*; Savinsky 2001; Zavatsky 1995; Lahno 2009; *Подражайте вере их* 2001; Kolomiitsev memoir; *Подвиг веры* 2010).
+
+### Writing rule after v125d
+
+Allowed (Level B, peer-reviewed, quote-ready):
+
+> Declassified KGB files (SBU archive, opened 2019) show that from 1963 to 1981 an agent codenamed «Топси» — a female member of the unregistered Kiev ECB community — supplied the KGB with reports on forest worship, the Vins family leadership of the Council of Churches, and community youth work; but the files also show the KGB's objective was monitoring and temporary suppression of individual activists, not elimination of the movement, whose initiative remained with the believers.
+
+Not allowed:
+
+> Naming any of the ~40–41 persons indexed in the agent's reports without reading the specific report and the operator's справка, since the index entries are unverified denunciations, not proven facts.
