@@ -1039,3 +1039,56 @@ Allowed (Level A, primary/eyewitness, quote-ready):
 Not allowed:
 
 > Verbatim publication quotation until a page-image quote-card is clipped for each citation; and treating the Yanyshev editorial framing as if it were Pashkov's own voice.
+
+---
+
+## v125e — Foundational primary document: the «Краткая записка» to the MVD (8 January 1905)
+
+The single most important programmatic self-description of the Russian evangelical movement — its constitutional presentation to the imperial government, submitted **three months before** the 17.04.1905 religious-tolerance Ukaz — is now locally held with a full text layer.
+
+**Source:** `ИСП_Краткая_записка.pdf` (26 pp, text layer, Sinichkin TG export). Full title: *«Краткая записка о возникновении, развитии и о настоящем положении евангельского движения в России и о нуждах евангельских христиан (известных в общежитии под различными народными кличками: пашковцев, баптистов, новомолокан и т.д.)»*. **Submitted by I. S. Prokhanov to the MVD on 8 January 1905**, compiled by **I. P. Kushnerov** with the participation of **V. I. Dolgopolov** and **V. N. Ivanov**. Proof status: `text_layer_extracted` — quote-ready pending visual masthead check.
+
+### What the document contains
+
+1. **Proposals to amend the religious-tolerance laws** — the movement's direct lobbying input into the 1905 legislative turn.
+2. **22 appended official documents** of persecution: court cases on «принадлежности к штунде», prayer meetings and funerals; letters about «насилиях, побоях, истязаниях, убийствах, арестах, штрафах»; refusals to admit children to school, register marriages/births/deaths — i.e. a structured evidence dossier of pre-1905 state violence against believers.
+3. **The canonical «four streams» (четыре течения) thesis** of the movement's origins — the foundational geography-of-origins framework the entire secondary literature inherits.
+
+### The four streams (quote-ready, primary)
+
+| Stream | Where | When | Named originators (per the document) | Confessional kin |
+|---|---|---|---|---|
+| 1st | Novo-Vasil'evka & Astrakhanka, Taurida (Molokans) | 1840s | Sizov, Zakharovs, Yakov Delyakov, Mel'vil, Forkgammer | «новомолокане»/Don толк → Presbyterian-type (infant baptism) |
+| 2nd | Taurida + Kherson | early 1860s | Stolyarov, Viller, Balabanov, Ratushnyi, Bonekemper | Baptist-type |
+| 3rd | Tiflis (Caucasus) | — | **Voronin, Pavlov, Kol'veit** | Baptist-type |
+| 4th | Petersburg higher society | early 1870s | **V. A. Pashkov, Count Korff, Lord Radstock** | Baptist-type |
+
+Note the direct cross-link: stream 3's originators are exactly the Voronin–Pavlov–Kal'veit chain the v125b Voronin dossier reconstructs (Voronin baptised by Kal'veit via Delyakov 20.08.1867); stream 4 is the Pashkov/Radstock layer of the v125 confession-of-faith anchor.
+
+### The movement's own argument against the «foreign agents» thesis (quote-ready)
+
+This is the document's ideological core and its most historiographically consequential passage:
+
+> «Никто не может отрицать, что упомянутые русские люди были в числе первых последователей Евангельского движения, а вышеупомянутые лица с иностранными фамилиями вступили в отношения знакомства и духовного общения с ними, но приписывать им роль родоначальников движения было бы совершенно неправильным. … Евангельское движение — народное, а как известно, все такие движения имеют стихийный характер.»
+
+> «видимым образом последователями и носителями Евангельского движения были чисто русские люди, часто полуграмотные мужички в сермягах и лаптях, которые, несмотря ни на какие препятствия и преследования, никогда не переставали свидетельствовать о внутреннем спасительном перевороте их душ.»
+
+The theological warrant cited is John 3:8 («Дух дышит, где хочет») and a comparison to the Reformation (where «всё движение окрестили именем Лютера», though Luther «получил первый толчок со стороны своих друзей»).
+
+### A confessional brochure was attached
+
+> «Краткое вероучение христиан Евангельского исповедания, приемлющих водное крещение по вере» — submitted in courts as an explanation of faith; followers of streams 2–4 subscribed to all its points, stream 1 (новомолокане) excepting the ecclesiology/membership, baptism and Lord's Supper clauses.
+
+### Why this is the load-bearing origins document
+
+The «Краткая записка» is the movement's **own** answer to the two questions the origins narrative must hold open: (a) *where* did Russian evangelicalism begin, and (b) *was it foreign or indigenous?* It fixes the canonical four-streams map, names the originator chains per region, and — on the indigenous-vs-foreign question — takes a deliberate theological-political position (народное, стихийное, русские мужики, not foreign agents) that the subsequent polemic (Айвазов «Баптизм — орудие пангерманизма», etc.) was written against. Any narrative claim about evangelical origins must be checked against this document's actual wording.
+
+### Writing rule after v125e
+
+Allowed (Level A primary, quote-ready):
+
+> In its 8 January 1905 memorandum to the Interior Ministry — three months before the religious-tolerance Ukaz — the evangelical leadership presented the movement as arising in four regional streams (Taurida ново-молокане; Taurida/Kherson Baptist-type; Tiflis; Petersburg Pashkovite), named the originator chains for each, and argued in its own voice that the movement was indigenous and popular rather than the product of foreign agents.
+
+Not allowed:
+
+> Presenting the four-streams map or the indigenous-origin argument as neutral historiography rather than as the movement's own 1905 self-positioning, or quoting the 22 appended persecution documents individually before their specific pages are visually checked.
