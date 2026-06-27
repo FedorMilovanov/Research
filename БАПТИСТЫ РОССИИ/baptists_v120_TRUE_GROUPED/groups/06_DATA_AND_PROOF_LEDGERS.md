@@ -3709,3 +3709,15 @@ No row in v121 has `quote_checked`, `quote_card_verified` or `article_ready`. Th
 | `v121_rushbrooke_pavlov` | `pdf_downloaded_temp_page_counted_raw_text_seen` | 8 incl. cover | PDF downloaded from BiblicalStudies/Theology-on-the-Web; article pagination visible as 361–367 in raw text. | visual page check for pp. 361–367; exact page-card before citation |
 
 This delta deliberately does not touch `PROOF_STATUS_LEDGER.csv` because these are top-text/source-proof objects rather than periodical issue rows. The authoritative machine-readable update is in `data/SOURCE_ANCHORS.csv` and `data/NEXT_MICROBATCH.csv`.
+
+
+### v122 proof delta — sample visual checks and new academic control
+
+| source_id | new status | page/file evidence | status discipline |
+|---|---|---|---|
+| `v121_sinichkin_kura_baptism` | `pdf_downloaded_page_counted_14_sample_visual_checked` | local temp PDF rendered; visual page check performed for p. 165, showing bibliography and conclusion point about shifting emphasis from Kalweit to Tanasov/Severov/Voronin | still not full `quote_ready`; only sample page verified |
+| `v121_rushbrooke_pavlov` | `pdf_downloaded_page_counted_8_sample_visual_checked` | local temp PDF rendered; visual page check performed for article p. 361, showing title and first-page origin/Pavlov narrative | still not full `quote_ready`; only p.361 sample verified |
+| `v122_baptist_su_history_mirror` | `official_memory_mirror_seen` | `baptist.su/about/our-histoty` fetch succeeded; `baptist.org.ru/about/our-histoty` still returns not-found in tooling | use as mirror/control, not as proof that current official URL is technically accessible |
+| `v122_potapova_unity_article` | `academic_article_seen` | CyberLeninka article text seen; relevant Mazaev/Prokhanov unity section identified | academic control only; primary congress/periodical documents still needed |
+
+No `PROOF_STATUS_LEDGER.csv` row is added, because these are top-text/source-control objects rather than periodical issue rows. `SOURCE_ANCHORS.csv` and `NEXT_MICROBATCH.csv` are the correct ledgers for this pass.

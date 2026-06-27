@@ -749,3 +749,42 @@ A follow-up technical check moved two v121 targets one rung upward, but still **
 **Important interpretive gain:** Sinichkin complicates the inherited Kura story by pushing attention to documentary witnesses and Molokan-background actors; Rushbrooke independently shows that the international Baptist memory already linked Pavlov, Voronin, Tiflis, Kalweit and the 1867 date. These two sources should be used as a controlled pair: one checks the origin-event documentation; the other checks how the early Russian Baptist story circulated internationally.
 
 **Status discipline:** `raw_text_seen` is not `quote_checked`. The next agent must create visual page cards before extracting exact words for publication.
+
+
+---
+
+## v122 — controlled origin triangle: official memory / document critique / international memory
+
+v122 closes a small but important source-control step without creating any new files. The Kura/Voronin origin node now has three separate voices that must be kept distinct:
+
+| voice | source | current status | what it contributes | limit |
+|---|---|---|---|---|
+| official/confessional memory | `baptist.su/about/our-histoty` mirror of RSEHB history text | `official_memory_mirror_seen` | states 20 Aug. 1867, Kura, Voronin as accepted starting point; also frames three origins: Caucasus, southern Ukraine, Petersburg | mirror page, not yet proven identical to current `baptist.org.ru` page because official URL fetch returns not-found in tooling |
+| document-critical article | A. Sinichkin, `К вопросу о крещении первого русского баптиста`, *Богомыслие* 22, 2018 | `pdf_downloaded_page_counted_sample_visual_checked` | page 165 was visually checked and confirms the article’s conclusion: accents should shift from Kalweit alone to Molokan-background actors: Tanasov, Severov and Voronin; Kalweit’s organizational influence begins later | only sample visual page checked; full quote-card set still pending |
+| international Baptist memory | J. H. Rushbrooke, `Vasili Pavlov: A Russian Baptist Pioneer`, *Baptist Quarterly* 6.8, 1933 | `pdf_downloaded_page_counted_sample_visual_checked` | page 361 was visually checked and shows the international Baptist narrative linking Pavlov, Voronin, Tiflis, Kalweit and the accepted birthday date of Russian Baptists | only p.361 visually checked; full article still needs page-card set |
+
+### What changes in the narrative
+
+The old simplistic formula “Kalweit baptized Voronin; Russian Baptism began” must be replaced with a layered statement:
+
+1. **Confessional date:** 20 Aug. 1867 remains the accepted commemorative starting point.
+2. **Social-religious matrix:** Voronin came from the Molokan world and the first Tiflis circle was not a detached German transplant.
+3. **Mediation chain:** Delyakov/Kani Yagub and Kalweit matter, but Sinichkin’s checked conclusion warns against making Kalweit the sole formative cause of the Russian Baptist community.
+4. **Pavlov bridge:** Rushbrooke’s p.361 independently shows that by 1933 international Baptist memory was already narrating Pavlov through the Voronin/Kalweit/Tiflis origin chain.
+
+**Safe formulation after v122:**
+
+> The Kura baptism is the accepted symbolic birthday of Russian Baptism, but the formation of the Tiflis Baptist community must be narrated through Molokan search, local Russian-speaking actors, and later German Baptist organizational influence—not as a one-step import from Kalweit alone.
+
+### v122 — Mazaev / Prokhanov boundary deepened
+
+N. V. Potapova’s CyberLeninka article `Российские баптисты и евангельские христиане: к вопросу о происхождении и единстве деноминаций` is now added as an academic control for the Mazaev/Prokhanov boundary. It is not a primary source, but it is valuable because it prevents two false simplifications:
+
+- false unity myth: “баптисты и евангельские христиане просто всегда были одним движением”; 
+- false conflict myth: “Мазаев и Проханов — враги без общей евангельской основы”.
+
+Potapova’s text preserves the process: 1909 discussions of a connecting committee, 1909–1911 negotiations, 1912 Vladikavkaz meeting, and failure to reach a stable committee. It also cites A. P. Nagirnyak’s interpretation that Mazaev and Prokhanov represented different visions of evangelical awakening: Prokhanov’s broader reform/social project versus Mazaev’s more evangelistic/church-focused Baptist vision.
+
+**Safe narrative use:** Mazaev and Prokhanov should be written as adjacent but non-identical leaders whose disagreement was not merely personal rivalry; it involved different models of mission, unity, society, and church order.
+
+**Still not allowed:** using Potapova as a substitute for the actual 1909/1912 documents, `Утренняя звезда` 1920 article, or congress materials. Those remain periodical/document targets.

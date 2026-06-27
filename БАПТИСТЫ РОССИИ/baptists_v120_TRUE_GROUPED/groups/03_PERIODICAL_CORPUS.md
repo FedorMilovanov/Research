@@ -13443,3 +13443,38 @@ Not allowed yet:
 - `Павлов`: `groups/02_HISTORY_NARRATIVE.md` for biography; `groups/03_PERIODICAL_CORPUS.md` for `Правда о баптистах` / periodical references; source anchor for Rushbrooke.
 - `Проханов`: keep in the ВСЕХ / `Христианин` / `Утренняя звезда` / hymnody family, not as generic Baptist Union voice.
 - `Wardin AR 915`: `groups/06_DATA_AND_PROOF_LEDGERS.md` and `SOURCE_ANCHORS.csv`; use for box/folder request planning.
+
+
+---
+
+## v122 — Mazaev / Prokhanov / unity debate as a periodical-proof queue
+
+v122 adds an academic control source for the Baptist / Evangelical Christian unity question: N. V. Potapova, `Российские баптисты и евангельские христиане: к вопросу о происхождении и единстве деноминаций` (CyberLeninka, 2014). The source is useful, but it must route us back to periodicals and congress documents.
+
+### What the article helps target
+
+| node | Potapova-level claim | periodical/document proof still needed |
+|---|---|---|
+| 1909 connecting committee idea | First All-Russian Congress of Evangelical Christians proposed cooperation / a connecting committee rather than simple merger | congress materials; `Христианин` / `Утренняя звезда` references; Baptist congress responses |
+| 1909–1911 negotiations | Baptist leadership rejected Prokhanov’s committee model several times | exact Baptist-side documents and issue/page references |
+| 1912 Vladikavkaz meeting | representatives discussed a bilateral agreement, but stable committee was not created | text of agreement / congress records / periodical report |
+| 1920 memory polemic | `Утренняя звезда` reportedly accused Baptists of repeatedly answering negatively to unity proposals | locate `Утренняя звезда` 1920 issue/page before direct quotation |
+| Mazaev vs Prokhanov | different visions: Prokhanov’s broad reform/social/communal project vs Mazaev’s church-evangelistic Baptist emphasis | Nagirnyak pages 152–171; Mazaev memoirs; Prokhanov primary text |
+
+### Writing rule
+
+Allowed now:
+
+> The Baptist / Evangelical Christian unity question was a negotiated and contested process, not an obvious automatic merger. Mazaev and Prokhanov represented different but adjacent evangelical strategies.
+
+Not allowed yet:
+
+> Exact quotation from `Утренняя звезда` 1920 or from the 1912 Vladikavkaz agreement until the issue/document is opened and visually checked.
+
+### New proof queue created by v122
+
+1. Find `Утренняя звезда` 1920 issue containing the 1909 unity-proposal retrospective.
+2. Locate Baptist congress responses to the 1909 connecting committee proposal.
+3. Locate 1912 Vladikavkaz meeting / agreement text.
+4. Find A. P. Nagirnyak, `Дей Иванович Мазаев`, in `140 лет российскому баптизму`, pp. 152–171.
+5. Find `Мазаев Г. И. Воспоминания` (К., 1992) or reliable library record; do not rely on snippets.
