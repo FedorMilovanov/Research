@@ -1092,3 +1092,49 @@ Allowed (Level A primary, quote-ready):
 Not allowed:
 
 > Presenting the four-streams map or the indigenous-origin argument as neutral historiography rather than as the movement's own 1905 self-positioning, or quoting the 22 appended persecution documents individually before their specific pages are visually checked.
+
+---
+
+## v125f — Leader coverage index (from 5 269 Sinichkin posts)
+
+A coverage map of the **load-bearing leaders** across the channel's 5 269 posts, to tell the archive *where* the biographical material lives and *which primary document* verifies each figure. The post counts are exact (string search on name variants); lifespans are flagged by proof level — only those routed through a now-local primary document are treated as firm.
+
+> **Trust note:** this is a **Level C navigation layer**. Post counts tell you coverage density; they do not establish biographical fact. Each lifespan below is tagged with its verification route; unverified dates remain «needs primary card».
+
+### Imperial-era leaders (1840s–1930s)
+
+| Leader | Verified lifespan (route) | Posts | Role node |
+|---|---|---:|---|
+| **И. С. Проханов** | 1869–1935 (metrical book, post #12; Vladikavkaz birth record) | 723 | leader of Evangelical Christians; Russian Evangelical Union 1908; House of Gospel 1911 |
+| **Д. И. Мазаев** | 1847–1924 (chair, 1886 congress protocol — primary, v125) | 160 | chair Union of Russian Baptists; founder-editor of «Баптист» 1907 (post #76-77) |
+| **В. Г. Павлов** | 1854–1924 (1886 protocol — missionary appointment) | 198 | Tiflis presbyter/evangelist; baptised A. M. Mazayev 1875 (post #1848) |
+| **В. А. Пашков** | 1831–1902 (confession of faith 1880 — primary, v125d; post #5083) | 66 | Pashkovite founder; 4th stream (Krathaya Zapiska, v125e) |
+| **Н. И. Воронин** | 1840–1905 (own letter to Mazayev 1889 — primary, v125b) | 49 | «first Russian Baptist»; baptised 20.08.1867 by Kal'veit |
+| **Р. А. Фетлер** | 1861–1933 (standard reference; *needs primary card*) | 365 | Latvian-born evangelist; Far-East/emigration periodicals |
+| **И. В. Каргель** | 1849–1937 (standard reference; *needs primary card*) | 122 | St Petersburg/Petrograd teacher; influenced Prokhanov |
+
+### Soviet-era leaders (ВСЕХБ / СЦ ЕХБ)
+
+| Leader | Verified lifespan (route) | Posts | Role node |
+|---|---|---:|---|
+| **Я. И. Жидков** | 1885–1966 (standard reference; chair ВСЕХБ) | 157 | ВСЕХБ chair; post #353 |
+| **А. В. Карев** | 1894–1971 (standard reference) | 129 | received the 1961 Initiative Group (post #225, with Mitskevich) |
+| **А. Е. Клименко** | 1924–2000 (chair ВСЕХБ 1974–1985; post #66) | 26 | ВСЕХБ chair; Presbyter council 30.05.1975 (post #67) |
+| **Г. К. Крючков** | 1926–2007 (standard reference; chair СЦ ЕХБ) | 77 | chair СЦ ЕХБ from 20.09.1965 (v125c); arrested 1966 (post #647) |
+| **Г. П. Винс** | b. 1928; gen.sec СЦ ЕХБ (Belyakova v125d confirms); arrested 1966, exiled to the West 1979; *death date unverified* | 34 | gen.sec СЦ ЕХБ; Vins family (father Pyotr repressed 1937, mother Lidiya) |
+
+### How to read this index
+
+- **Density ≠ authority.** Prokhanov's 723 posts reflect the channel's focus, not that he is better documented than Voronin (49 posts but with a primary dossier). Always route to the primary document.
+- **The 1886 congress protocol** (v125, text-extracted) is the single richest primary source for the imperial leadership network: it names 16 delegates, fixes D. I. Mazayev as chair and A. M. Mazayev as vice-chair, records the union treasury (6 780 r. 23 k. income 1885–87), and assigns missionary districts (Pavlov, Voronin, Kapustinskii, etc.).
+- **Next closures:** the figures tagged «needs primary card» (Fetler, Kargel) are the highest-value biography targets — their post coverage is dense but no local primary document yet anchors their lifespans.
+
+### Writing rule
+
+Allowed (Level C navigation + flagged primaries):
+
+> The Sinichkin channel's biographical coverage concentrates on Prokhanov (723 posts), Fetler (365), Pavlov (198), Mazayev (160) and Zhidkov (157); for the imperial leaders the 1886 congress protocol and the Pashkov confession of faith now provide primary anchors, while Fetler and Kargel still need primary biographical cards.
+
+Not allowed:
+
+> Citing any lifespan above as established fact where it is tagged «standard reference / needs primary card», or quoting biographical detail from the posts themselves without routing it through a held primary document.
