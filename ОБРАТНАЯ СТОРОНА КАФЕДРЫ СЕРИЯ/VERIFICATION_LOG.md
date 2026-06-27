@@ -2,6 +2,16 @@
 
 Этот файл содержит текущий статус верификации кейсов.
 
+## Обновление от 2026-06-27 (Deep Research Pass XIII — КОНСЕРВАТИВНЫЙ «УМНЫЙ ДИОТРЕФ», институционально-династический пласт: Jerry Falwell Jr. / Liberty University)
+
+**Фокус:** продолжение сегмента «консервативный умный диотреф» — не харизматические еретики, а консервативные лидеры/институты, где власть, бренд и слабая подотчётность переплетаются. В этот раз — не церковь, а большой евангельский университет как парацерковная институция.
+
+1. **НОВЫЙ `Jerry_Falwell_Jr_Liberty_University.md`** (~120+ строк, Level A/B+). Консервативно-евангельский университетский кейс, релевантный именно как **механика поздней подотчётности**. Level A: Board statement 31.08.2020 (verbatim: раньше были готовы «extend grace and understanding», затем потребовали **immediate resignation**; запущено independent forensic investigation), FY2021 disclosure (Board accepted resignation 25.08.2020). Level B+/A по судебной позе: Reuters 24.08.2020 (Granda allegations + categorical denial Falwell), Reuters 16.04.2021 (иск Liberty о concealment / fiduciary duty / salary-severance package), Virginia Business 26.07.2024 (global settlement; взаимные извинения). **Ключевой узел:** совет слишком долго терпел warning signs («questionable comments», «worrying behavior», «inappropriate social media posts»), а затем резко включил дисциплину бренда и независимое расследование. **Граница:** детали sexual conduct остаются спорными утверждениями Granda, которые Falwell отрицал; для серии кейс использовать прежде всего по оси подотчётности/репутации/контроля информации. Антисоветы #3,4,14,18,19,20.
+
+**Реестр теперь 26 кейсов.** Сегмент «консервативный умный диотреф» дополнен примером не церковного, а университетско-династического лидера: совет в итоге сработал, но поздно, после долгого терпения и последующей юридической войны.
+
+---
+
 ## Обновление от 2026-06-27 (Deep Research Pass XII — КОНСЕРВАТИВНЫЙ «УМНЫЙ ДИОТРЕФ», деноминационный/патриархальный пласт: Paige Patterson (SWBTS/SBC) + Bill Gothard (IBLP))
 
 **Фокус:** продолжение сегмента «консервативный умный диотреф» — теперь институциональные патриархи, чья власть проверялась их собственными советами. Строгое отделение Level A (заявления советов + verbatim) от спорного (иски, отклонённые по сроку давности).
@@ -123,6 +133,7 @@
 | --- | --- | --- | --- | --- |
 | **Robert Morris** (Gateway) | **VERIFIED ✅ DEEPENED P-VI** | **Level A** | Guilty plea, 5 felony counts (Osage County, 2025-10-02); $270K реституция; диффам.иск $1M (июнь 2026 суд); пенсия→арбитраж (05.2026) | `Robert_Morris.md` |
 | **Paul / Wendy Guay** (GCC #2 / MacArthur) | **VERIFIED ✅ NEW P-VI** | **Level A** (док.факты) / **B+** (cover-up как намерение — спорно) | Tucker statement (verbatim), письмо MacArthur 1979, email 2003, GBC apology 2022. Уголовного приговора Guay НЕТ — отделено от дела Gray | `Paul_Wendy_Guay_GCC_Case.md` |
+| **Jerry Falwell Jr.** (Liberty University) | **VERIFIED ✅ NEW P-XIII** | **Level A/B+** | Board statement 31.08.2020 (immediate resignation + forensic investigation), FY2021 disclosure, Reuters on Granda allegations/denial, Liberty lawsuit 2021, global settlement 2024 | `Jerry_Falwell_Jr_Liberty_University.md` |
 | **David Platt** (McLean Bible Church) | **VERIFIED ✅ DEEPENED P-VIII** | **Level A** (court records) | Gaskins v. MBC, Record 0185-25-4 (2026, verbatim «count to eight»); устав изменён (убран vote of confidence); discovery протоколов Совета. Власть/процедура, НЕ грех | `David_Platt_McLean_Bible.md` |
 | **Jonathan Fletcher** (Emmanuel Wimbledon, CofE 🇬🇧) | **VERIFIED ✅ NEW P-VIII** | **Level A** | thirtyone:eight review (146 стр., 2021, verbatim) + **жюри: 8× indecent assault (2026)**. Консерв.-евангелич. диотреф. БЕЗ покаяния | `Jonathan_Fletcher_Emmanuel_Wimbledon.md` |
 | **Steve Timmis** (Acts 29 / Crowded House 🇬🇧) | **VERIFIED ✅ NEW P-VIII** | **Level A** | Acts 29 Board statement + thirtyone:eight review TCH (verbatim p.77) + покаяние старейшин TCH + IVP. Покаяние институтов ЕСТЬ, лидера НЕТ. Не уголовный | `Steve_Timmis_Acts29_CrowdedHouse.md` |

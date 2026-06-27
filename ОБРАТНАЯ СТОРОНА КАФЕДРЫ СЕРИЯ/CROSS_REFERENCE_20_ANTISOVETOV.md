@@ -1,4 +1,4 @@
-# Cross-Reference: «20 антисоветов пастору» × 25 верифицированных кейсов
+# Cross-Reference: «20 антисоветов пастору» × 26 верифицированных кейсов
 
 **Статус: VERIFIED — Level A (все кейсы)**
 **Дата: 2026-06-27**
@@ -28,8 +28,8 @@
 |---|---|---|---|
 | **1** | Полюби не Христа, а первое место | Hybels (GLS/celebrity), Driscoll (платформа), Noble («obsession to reach 100 000»), Patrick («identity through media platforms») | ★★★★ |
 | **2** | Считай церковь своей вотчиной, а не Божьим стадом | Driscoll (Mars Hill «my church»), Houston (Hillsong «royalty»), Noble (NewSpring «church of Noble» — критики) | ★★★ |
-| **3** | Болезненно защищай свой авторитет | SBC (защита репутации 20 лет), Hybels (2 «оправдания»), Driscoll («domineering»), Patrick («misuse of power»), Houston | ★★★★ |
-| **4** | Избегай подотчётности и выстраивай автономию | SBC («автономия церквей» как щит), Houston (declined interview 2016), Patrick («refusal of accountability»), Noble (отклонил restoration) | ★★★★ |
+| **3** | Болезненно защищай свой авторитет | SBC (защита репутации 20 лет), Hybels (2 «оправдания»), Driscoll («domineering»), Patrick («misuse of power»), Houston, **Falwell Jr. / Liberty** (late board action after prolonged tolerance) | ★★★★ |
+| **4** | Избегай подотчётности и выстраивай автономию | SBC («автономия церквей» как щит), Houston (declined interview 2016), Patrick («refusal of accountability»), Noble (отклонил restoration), **Falwell Jr. / Liberty** (board tolerated red flags until crisis) | ★★★★ |
 | **5** | Собери рядом защитников, а не советников | Hybels (elder board защищал до 2018), Driscoll (Board of Advisors & Accountability — лоялисты), RZIM (board защищал Ravi) | ★★★ |
 | **6** | Оставь множественность лидеров на бумаге | Driscoll (concentration of power despite eldership), Noble (board номинально, но culture of one) | ★★ |
 | **7** | Бойся сильных и одарённых рядом | Driscoll (вытеснение co-pastors, Acts 29 firings), Patrick (distanced from flock) | ★★ |
@@ -39,13 +39,13 @@
 | **11** | Управляй страхом, стыдом и доступом к благоволению | Houston (victim-blaming «you tempted my father»), Driscoll (intimidation), Patrick («manipulation») | ★★★ |
 | **12** | Души церковь микроконтролем | Driscoll (Mars Hill control culture), Patrick («domineering») | ★★ |
 | **13** | Поощряй нездоровое «открытие сердца» и собирай информацию | RZIM (использование доверия), Mars Hill (membership covenants как leverage) | ★★ |
-| **14** | Дозируй правду, строй туман и управляй восприятием | SBC (скрытый список), Houston (euphemisms), RZIM (deception), Allberry (undisclosed scope), Hybels («situations far wiser to avoid»), Tchividjian (неполное первое признание), Lawson (6 мес. молчания) | ★★★★★ |
+| **14** | Дозируй правду, строй туман и управляй восприятием | SBC (скрытый список), Houston (euphemisms), RZIM (deception), Allberry (undisclosed scope), Hybels («situations far wiser to avoid»), Tchividjian (неполное первое признание), Lawson (6 мес. молчания), **Falwell Jr. / Liberty** (competing narratives, late clarity) | ★★★★★ |
 | **15** | Будь мягок с полезными, но суров с неудобными | Hybels (Ortbergs vs loyalists), Driscoll (избирательная дисциплина) | ★★ |
 | **16** | Оставляй за собой шлейф разрушенных отношений | Driscoll (Mars Hill collapse, 21 pastors charges), Hybels (board+staff resignations) | ★★★ |
 | **17** | Объявляй любой серьёзный вопрос мятежом | Driscoll («rebellion» ярлык на критику), Mars Hill (excommunication несогласных) | ★★★ |
-| **18** | Ставь репутацию церкви и лидера выше истины | SBC (liability > safety), Morris (минимизация «moral failure with a young lady»), RZIM, Hybels (IAG: church portrayed as victim), Allberry, Lawson | ★★★★★ |
-| **19** | Прячься за процедурой, формой и правильностью жалобы | SBC (полития как щит), Tchividjian (process as cover для рецидива) | ★★★ |
-| **20** | Минимизируй зло и кайся так, чтобы ничего не менять | Morris (euphemism), Hybels (non-apology), Houston, Driscoll (unrepentant, fast-track возврат), Lawson, Tchividjian (рецидив), Noble (отказ restoration), **Patrick (точное описание цикла: «initial confession → short-term changes → reversion»)** | ★★★★★ |
+| **18** | Ставь репутацию церкви и лидера выше истины | SBC (liability > safety), Morris (минимизация «moral failure with a young lady»), RZIM, Hybels (IAG: church portrayed as victim), Allberry, Lawson, **Falwell Jr. / Liberty** (brand crisis forced action) | ★★★★★ |
+| **19** | Прячься за процедурой, формой и правильностью жалобы | SBC (полития как щит), Tchividjian (process as cover для рецидива), **Falwell Jr. / Liberty** (contracts, fiduciary-duty, severance battles) | ★★★ |
+| **20** | Минимизируй зло и кайся так, чтобы ничего не менять | Morris (euphemism), Hybels (non-apology), Houston, Driscoll (unrepentant, fast-track возврат), Lawson, Tchividjian (рецидив), Noble (отказ restoration), **Patrick (точное описание цикла: «initial confession → short-term changes → reversion»)**, **Falwell Jr. / Liberty** (late mutual apology after years of litigation) | ★★★★★ |
 
 ★ = число независимых кейсов, иллюстрирующих пункт.
 
@@ -327,3 +327,26 @@ Mars Hill: старейшины Petry/Meyer преданы трибуналу з
 **Граница для статьи:** оба — НЕ доказанные судом уголовные кейсы (иски отклонены по сроку давности); опираться на заявления советов + verbatim. Ярлык «cult» (Gothard) — мнение. Доктринальные пласты — отдельно.
 
 > Реестр: **25 кейсов**. Полный спектр реакции совета на «диотрефа»: сработал (Patterson) ↔ штамп/самоследствие (Gothard) ↔ защитил лидера (Mahaney) ↔ запоздало покаялся (MacDonald).
+
+
+---
+
+## Дополнение (Pass XIII): Jerry Falwell Jr. / Liberty University — университетско-династический вариант «умного диотрефа»
+
+Этот кейс расширяет сегмент «консервативный умный диотреф» за пределы поместной церкви/деноминации в сторону **крупной евангельской парацерковной институции**. Здесь главное — не доказанный criminal-abuse сюжет со стороны лидера, а **поздняя подотчётность совета** после долгого периода терпимости.
+
+| # | Антисовет | Проявление |
+|---|---|---|
+| #3 | Болезненно защищай свой авторитет | лидер годами оставался центром бренда и влияния, несмотря на repeated warning signs |
+| #4 | Избегай подотчётности и выстраивай автономию | Board сам признал, что раньше был готов «extend grace and understanding» |
+| #14 | Дозируй правду, строй туман | competing narratives: Granda allegations vs Falwell denials; board признал сигналы лишь постфактум |
+| #18 | Репутация выше истины | decisive action произошёл, когда кризис стал публично неуправляемым для Liberty brand |
+| #19 | Прячься за процедурой | посткризисный конфликт ушёл в severance / fiduciary duty / retirement / name-and-likeness litigation |
+| #20 | Минимизируй зло и кайся косметически | финал — mutual apology language 2024, но без полной публичной анатомии прежней терпимости |
+
+**Границы (обязательно соблюдать):**
+- сексуальные детали из рассказа Giancarlo Granda **оспаривались** Jerry Falwell Jr.;
+- кейс использовать прежде всего для темы **совета, бренда, поздней подотчётности и контроля нарратива**;
+- это университетско-корпоративный, а не чисто церковный дисциплинарный кейс.
+
+> Реестр: **26 кейсов**. Сегмент «консервативный умный диотреф» теперь включает и парацерковный университетский пласт: Driscoll, Timmis, Fletcher, Platt, MacDonald, Mahaney, Wilson, Patterson, Gothard, **Falwell Jr.** (+ институц. SBC/GCC).
