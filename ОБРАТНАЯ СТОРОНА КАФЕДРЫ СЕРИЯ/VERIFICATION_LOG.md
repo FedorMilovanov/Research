@@ -2,6 +2,16 @@
 
 Этот файл содержит текущий статус верификации кейсов.
 
+## Обновление от 2026-06-27 (Deep Research Pass V — Driscoll + RZIM, свежие детали 2024–2026)
+
+**Углублены два существующих досье (без новых файлов):**
+
+1. **Mark_Driscoll.md** (102 → 161 строка): The Trinity Church выстроена намеренно без подотчётности — Sutton Turner verbatim «total control without any accountability». Surveillance-скандал 2026: Chad Freese обнародовал text threads о слежке частных детективов за изгнанной семьёй 24/7 (уровень B+, named source + вещдоки). Покупка office complex за $15.5M (2026). Сторона защиты включена. Остаётся Level A по Mars Hill; НЕ criminal-кейс.
+
+2. **Ravi_Zacharias_RZIM.md** (101 → 167 строк): Guidepost financial report — **$960K** donor money на иск против жертвы, $400K бонус, ложь «no ministry funds were used» (Level A). Class-action доноров продолжается по misuse of funds (Georgia federal court). Margie Zacharias отказалась снять NDA с Thompson. **Victim impact statement Lori Anne Thompson (июнь 2025)**. Lighten Group спин-офф закрылся (2022). Family-defense (Nathan Zacharias) включена как миноритарная позиция. Ключевые факты сдвинуты A− → **A**.
+
+---
+
 ## Обновление от 2026-06-27 (Deep Research Pass IV — Grace Community Church / Gray case)
 
 **Добавлен особо деликатный кейс с двусторонним разбором.** Реестр: теперь 12 кейсов Level A.
@@ -15,12 +25,12 @@
 | Имя / Организация | Статус | Уровень | Первичка (тип) | Файл досье |
 | --- | --- | --- | --- | --- |
 | **Robert Morris** (Gateway) | **VERIFIED** | **Level A** | Criminal guilty plea, 5 felony counts (Osage County, 2025-10-02) | `Robert_Morris.md` |
-| **RZIM / Ravi Zacharias** | **VERIFIED** | **Level A-** | Independent investigation Miller & Martin PLLC (02/2021) + board confession | `Ravi_Zacharias_RZIM.md` |
+| **RZIM / Ravi Zacharias** | **VERIFIED ✅ DEEPENED P-V** | **Level A** (фин.факты) / A− (детали M&M) | Miller & Martin (02/2021) + board confession + **Guidepost (02/2022): $960K donor money на иск, $400K бонус, ложь «no ministry funds»**. Class-action (Georgia federal court). Thompson victim impact statement (06/2025). | `Ravi_Zacharias_RZIM.md` |
 | **Bill Hybels** (Willow Creek) | **VERIFIED** | **Level A** | IAG Report (02/2019) + entire board resignation | `Bill_Hybels.md` |
 | **Brian Houston** (Hillsong) | **VERIFIED** | **Level A** | Royal Commission (2014–15) + criminal trial verdict (2023) | `Brian_Houston.md` |
 | **Sam Allberry** (Immanuel Nashville) | **VERIFIED** | **Level A** | Elders statement + TGC statement (05/2026) | `Sam_Allberry.md` |
 | **SBC** (Southern Baptist Convention) | **VERIFIED** | **Level A** | Guidepost Report (288 стр.) + secret list 703 names | `SBC_Systemic_Failure.md` |
-| **Mark Driscoll** (Mars Hill / Acts 29) | **VERIFIED** | **Level A** | Board of Overseers Report (10/2014) + Acts 29 removal + 41 elders (2021) | `Mark_Driscoll.md` |
+| **Mark Driscoll** (Mars Hill / Acts 29 / Trinity) | **VERIFIED ✅ DEEPENED P-V** | **Level A** (Mars Hill) / B+ (Trinity surveillance) | Board (10/2014) + Acts 29 + 41 elders (2021). **Trinity «total control» (Turner); surveillance text threads (Freese, 2026); $15.5M buy**. НЕ criminal | `Mark_Driscoll.md` |
 | **Steven Lawson** (OnePassion / Ligonier) | **VERIFIED** | **Level A** | Public confession (03/2025) + OnePassion Board statement | `Steven_Lawson.md` |
 | **Tullian Tchividjian** (Coral Ridge) | **VERIFIED ✅ ELEVATED B→A** | **Level A** | Coral Ridge statement + **PCA South Florida Presbytery deposition** (08/2015, verbatim) | `Tullian_Tchividjian.md` |
 | **Perry Noble** (NewSpring) | **VERIFIED ✅ ELEVATED HOLD→A** | **Level A** | **Full official board statement** (verbatim, read by Shane Duffey, 07/2016, ref 1 Tim 3) | `Perry_Noble.md` |

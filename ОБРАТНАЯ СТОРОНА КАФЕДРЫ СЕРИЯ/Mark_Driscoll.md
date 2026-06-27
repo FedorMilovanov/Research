@@ -100,3 +100,62 @@ Driscoll resigned before implementation — что делает его current m
 - 41 Mars Hill Elders statement (июль 2021, Christianity Today): «continues to be unrepentant», «presently unfit for serving the church in the office of pastor»
 - Washington Post (15 октября 2014): Driscoll resignation coverage
 - Faith on View (май 2022): «He resigned seven years ago. Now, the Mars Hill elders are once again calling for him to repent»
+
+---
+
+## 🆕 Свежие детали 2024–2026 (Deep Pass V)
+
+### The Trinity Church: «total control without any accountability»
+
+Главное обновление: задокументировано, что Driscoll **намеренно** выстроил Trinity Church (Scottsdale, осн. 2016) без органа подотчётности.
+
+- **Sutton Turner** (бывший executive elder Mars Hill), verbatim: «Mark stated to me directly many times that if he ever started a new church, he would make sure that the governance was set up in a way that he had total control. Today, Mark Driscoll has total control of Trinity Church without any accountability.» (MinistryWatch, фев 2024)
+- У Trinity **нет** board of elders или oversight committee — только «translocal» группа «wise counsel». Это прямое воплощение антисовета #4 (автономия без подотчётности).
+- Бывший excommunicated intern (TRR): Driscoll сказал staff, что «intentionally structured Trinity to avoid the 'problems' he encountered at Mars Hill» — т.е. устранил всякий oversight сознательно.
+
+### Surveillance скандал (2026) — слежка за изгнанными
+
+Наиболее тяжёлое новое обвинение, подтверждённое инсайдером:
+
+- **Chad Freese**, бывший director of security Trinity, после ухода **публично обнародовал text threads** между руководством церкви и частными детективами.
+- По свидетельству excommunicated члена (Reddit AMA, апрель 2026, согласуется с публикациями Freese): на следующий день после отлучения Driscoll, используя средства конгрегации, нанял частных детективов для слежки за семьёй **24/7**. Freese подтвердил это и выложил переписку.
+- Ранее (2021) семья Manuele уже сообщала о слежке (Wartburg Watch): church funds на security personnel, чтобы следить за ними; Angelo Manuele подал в Scottsdale Police заявление о «false imprisonment» (Vince Manuele был заперт в кабинете Brandon Anderson для допроса).
+
+> **Важная оговорка об уровне:** свидетельства о слежке 2026 — на уровне **B+** (инсайдер Freese + released text threads + сходящиеся свидетельства), но без судебного приговора. Не подавать как juридически установленный факт; подавать как задокументированное обвинение с named source и вещественными доказательствами (переписка).
+
+### Финансы: $15.5M за пустой office complex (2026)
+
+- Март 2026: Trinity Church купила **пустующий office complex за $15.5 млн** (RoysReport / Religion Unplugged / Scottsdale Progress). На фоне репутации — церковь финансово «booming».
+- Контекст: один из старых паттернов Mars Hill — непрозрачность финансов (Mars Hill Global fund, $200K маркетинговой фирме на накрутку bestseller). Крупная непрозрачная покупка повторяет вопрос финансовой подотчётности.
+
+### Эскалация письма 40 старейшин (контекст)
+
+- Письмо ~40 (в части источников «41») бывших старейшин Mars Hill (июль 2021) — теперь читается в свете 2024–2026 как **верное предсказание**: они писали, что «sinful leadership behaviors appear similar to what he exhibited... at Mars Hill». Surveillance-скандал 2026 подтверждает паттерн «контроль и устрашение».
+
+### Сторона защиты (для баланса)
+
+Чтобы соблюсти двусторонность:
+- Часть аудитории (Reddit, отдельные пасторы) держится позиции: «Nothing Mark preaches is biblically unsound», проблема была «в лидерстве, не в учении»; Driscoll формально не обвинён в «criminal activity, immorality or heresy» (его resignation letter 2014).
+- Driscoll в проповеди 2022 заявил, что его **предупреждали**, будто церковные лидеры планировали обвинить его в адюльтере — т.е. сам подаёт ряд обвинений как координированную атаку.
+- Объективно: ни одно из обвинений против Driscoll не является **уголовным**; речь о паттерне **духовного/эмоционального абьюза власти, финансовой непрозрачности и устранения подотчётности**, а не о доказанном преступлении. Это надо чётко удерживать, чтобы не приписывать ему статус criminal-кейса (в отличие от Morris/Zacharias).
+
+### Обновлённая хронология (хвост)
+
+| Дата | Событие |
+|---|---|
+| 2016 | Основание The Trinity Church (Scottsdale) — намеренно без elder board |
+| 2021 (май) | Семья Manuele: слежка, «false imprisonment» заявление в полицию |
+| 2021 (июль) | ~40 бывших старейшин Mars Hill: «unrepentant», «presently unfit» |
+| 2024 (фев) | MinistryWatch: Sutton Turner — «total control without accountability» |
+| 2026 (март) | Trinity покупает office complex за $15.5M |
+| 2026 (апрель) | Chad Freese обнародует text threads со слежкой за изгнанной семьёй 24/7 |
+
+### Связь с «20 антисоветами» (дополнение)
+
+| Антисовет | Новое подтверждение 2024–2026 |
+|---|---|
+| #4 «Избегай подотчётности, выстраивай автономию» | Trinity сознательно без elder board — «total control» (Turner verbatim) |
+| #11 «Управляй страхом, стыдом» | Слежка частными детективами за изгнанными (Freese, text threads) |
+| #16 «Оставляй шлейф разрушенных отношений» | Manuele, Freese, excommunicated intern — продолжение Mars Hill-паттерна в Trinity |
+
+> **Итог Pass V:** кейс Driscoll укреплён свежими (2024–2026) named-source свидетельствами о намеренном устранении подотчётности и слежке. Остаётся **Level A** по Mars Hill (2014 board + Acts 29 + 41 elders), с Trinity-обвинениями на уровне **B+** (инсайдеры + вещдоки, без суда). Не criminal-кейс.

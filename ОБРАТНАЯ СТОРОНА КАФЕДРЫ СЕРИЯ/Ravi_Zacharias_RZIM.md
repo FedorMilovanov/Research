@@ -99,3 +99,69 @@
 | Thompson sued for «extortion» | **A** | Federal court filing (2017) |
 | RZIM board: «We believe Thompson told the truth» | **A** | RZIM official statement (2021-02-11) |
 | Staff marginalized for raising questions | **B+** | Witnesses cited in Miller & Martin Report |
+
+---
+
+## 🆕 Свежие детали 2022–2025 (Deep Pass V) — финансы, иски, NDA, последствия
+
+### Guidepost financial report (фев 2022): $960K donor money на иск против жертвы
+
+Отдельное расследование Guidepost Solutions (заказано RZIM) вскрыло **финансовый механизм** сокрытия — это сильнее, чем юридический отчёт Miller & Martin 2021:
+
+- RZIM потратил **$960,000 средств служения** на иск Захариаса против Thompson'ов (CT, фев 2022).
+- Executive committee выдал Захариасу **«general purposes loan» $260,000** (в обход политики против личных займов), покрыв settlement.
+- Затем — **бонус $400,000** ($260K на погашение займа + $140K на налоги), чтобы Захариас «использовал средства для немедленного погашения задолженности».
+- Юридические счета помещались в **«confidential file»**, не подлежавший обычному учёту и одобрению — «convenient loophole for hiding payments».
+- Захариас **публично заявлял, что «no ministry funds were used»** — это было ложью (подтверждено Guidepost).
+- Guidepost о культуре board: «Their veneration (bordering on devotion) for Zacharias... contributed to a culture that discouraged honest and open discussion... and valued loyalty to Zacharias above almost all else.» Совет был «stubbornly incurious».
+
+### Class-action иск доноров (2021 →, частично разрешён судом)
+
+- Доноры **Derek & Dora Carrier** (Невада; Derek — tight end Las Vegas Raiders) подали class-action: пожертвовали $30,000 в январе 2020, утверждают, что RZIM «deceived faithful Christians» и «bilked tens — if not hundreds — of millions of dollars».
+- Класс: все доноры RZIM 2004 — 9 фев 2021 (кроме сотрудников).
+- Georgia federal district court (по сообщению MinistryWatch, янв 2024): доноры **могут продолжать иск** на основании **misuse of funds**, но **не** на основании «faith-based allegations» (суд отделил финансовую претензию от богословской).
+- RZIM на 2019 имел **$36.8M net assets**; в фев 2021 прекратил приём пожертвований, заявил о прекращении apologetics-работы и передаче средств другим благотворительным организациям (исполнение неясно).
+
+### NDA: Lori Anne Thompson всё ещё связана; вдова отказалась освободить
+
+- Settlement: Захариас заплатил Thompson'ам **$250,000**, все стороны подписали NDA.
+- Захариас **нарушил NDA почти сразу**, публично говоря о деле (Thompson, 2025); Thompson'ы при этом молчали.
+- **Margie Zacharias** (вдова) **отказалась** освободить Thompson от NDA (по состоянию на январь 2021 и позже).
+- **Victim impact statement Lori Anne Thompson (июнь 2025)** — она публично нарушила молчание:
+  - «$33,000 CAD на counseling; ~$156,800 CAD на юридические издержки»; ещё $30,000 на Masters of Child Advocacy (Montclair State).
+  - «I was certain that RZ had sent someone to kill us both.»
+  - RZ/RZIM использовали прежнюю (не связанную) abuse-ситуацию Thompson'ов, чтобы выставить их «litigious couple who sued people for financial gain».
+  - «The betrayal trauma... crushed our relationship to each other, to God, and severed our connection to the wider faith community... we have lost much of faith, nearly all of our friends.»
+
+### Спин-офф Lighten Group и его закрытие (2021–2022)
+
+- Октябрь 2021: **Sarah Davis** (дочь Захариаса, бывший CEO RZIM) запустила Encounter Inc. → **The Lighten Group** с тремя бывшими RZIM-апологетами (Xandra Carroll, Alycia Wood, Lou Phillips).
+- Ноябрь 2022: Lighten **объявил о закрытии** («growing financial challenges»).
+
+### Семья Захариаса: продолжающаяся защита (для баланса)
+
+- **Nathan Zacharias** (сын) — вёл блог в защиту отца, по состоянию на 2022 заявил, что **не изменил мнения** о характере отца, несмотря на отчёты. Часть family/loyalists оспаривают выводы расследований.
+- Это важная «вторая сторона»: но в отличие от дела Gray, здесь обвинения **подтверждены двумя независимыми расследованиями** (Miller & Martin + Guidepost) и **признаны самим board RZIM**. Family-defense — миноритарная позиция против согласованного institutional признания. Подавать как существующую, но не равновесную.
+
+### Обновление уровней верификации
+
+| Утверждение | Уровень | Источник |
+|---|---|---|
+| $960K ministry funds на иск против Thompson | **A** | Guidepost Report (CT, фев 2022) |
+| $400K бонус + $260K loan в обход политики | **A** | Guidepost Report |
+| «No ministry funds were used» — ложь | **A** | Guidepost (vs официальное заявление Захариаса 2017) |
+| Class-action доноров продолжается (misuse of funds) | **A** | Georgia federal court ruling (MinistryWatch, 2024) |
+| Margie Zacharias отказалась снять NDA | **A** | Thompson statements; CBN/Premier (2021–2025) |
+| Lori Anne Thompson victim impact statement | **A** | Premier Christian News (июнь 2025), verbatim |
+| RZIM прекратил приём пожертвований, $36.8M net assets | **A** | MinistryWatch / RNS |
+
+### Связь с «20 антисоветами» (дополнение)
+
+| Антисовет | Новое подтверждение |
+|---|---|
+| #4 «Избегай подотчётности» | Board «stubbornly incurious»; confidential file в обход учёта |
+| #14 «Дозируй правду, строй туман» | «No ministry funds were used» — прямая ложь; NDA как инструмент молчания |
+| #18 «Ставь репутацию выше истины» | $960K donor money на защиту репутации; клевета на Thompson'ов как «extortionists» |
+| #19 «Прячься за процедурой» | NDA, «confidential settlement», board minutes без вопросов |
+
+> **Итог Pass V:** RZIM-кейс усилен **финансовой фактурой Level A** (Guidepost: $960K, $400K бонус, ложь о «no ministry funds»), судебным продолжением class-action и **victim impact statement Thompson 2025**. Это сдвигает общий уровень кейса с A− к **A** по ключевым институциональным фактам (финансы + признание board), оставляя A− лишь для деталей, опирающихся только на Miller & Martin.
