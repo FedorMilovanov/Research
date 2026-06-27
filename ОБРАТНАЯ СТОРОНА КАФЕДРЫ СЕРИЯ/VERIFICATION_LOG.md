@@ -2,6 +2,10 @@
 
 Этот файл содержит текущий статус верификации кейсов.
 
+## Обновление от 2026-06-27 (Deep Research Pass IV — Grace Community Church / Gray case)
+
+**Добавлен особо деликатный кейс с двусторонним разбором.** Реестр: теперь 12 кейсов Level A.
+
 ## Обновление от 2026-06-27 (Deep Research Pass III — Tchividjian + Noble + Patrick)
 
 **Итог прохода: 11/11 кейсов теперь Level A.** Закрыты все HOLD/LIMITED — найдена первичка (verbatim official statements советов/пресвитерий).
@@ -21,6 +25,7 @@
 | **Tullian Tchividjian** (Coral Ridge) | **VERIFIED ✅ ELEVATED B→A** | **Level A** | Coral Ridge statement + **PCA South Florida Presbytery deposition** (08/2015, verbatim) | `Tullian_Tchividjian.md` |
 | **Perry Noble** (NewSpring) | **VERIFIED ✅ ELEVATED HOLD→A** | **Level A** | **Full official board statement** (verbatim, read by Shane Duffey, 07/2016, ref 1 Tim 3) | `Perry_Noble.md` |
 | **Darrin Patrick** (The Journey) | **VERIFIED ✅ ELEVATED HOLD→A** | **Level A** | **Elders' official letter** (verbatim, 04/2016) + Acts 29 removal | `Darrin_Patrick.md` |
+| **Grace Community Church / Gray case** (MacArthur) | **VERIFIED ✅ NEW** | **Level A** (факты приговора) + спорные интерпретации | **Court record** (David Gray осуждён 2005, 21 г.–пожизненно) + видео отлучения Eileen (2002) + Hardy letter + Cho memo. Двусторонний разбор: defense GCC включён | `Grace_Community_Church_Gray_Case.md` |
 
 ### Что углублено в этом проходе (2026-06-27 Deep Pass III)
 
