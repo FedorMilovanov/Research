@@ -2,6 +2,23 @@
 
 Этот файл содержит текущий статус верификации кейсов.
 
+## Обновление от 2026-06-27 (Deep Research Pass VI — Guay (GCC #2) + Morris свежие детали 2025–2026)
+
+**Сделано в этом проходе:**
+
+1. **НОВЫЙ файл `Paul_Wendy_Guay_GCC_Case.md`** (~101 строка). Второй кейс по Grace Community Church / John MacArthur (первый — дело Gray). В отличие от Gray, **уголовного приговора Paul Guay НЕТ** — поэтому чётко разделены: документированные факты (Level A) vs свидетельские утверждения (B+) vs отрицания MacArthur vs defense-контраргументы. Level A: письменное заявление очевидца Tucker (verbatim «I know I touched her»), письмо MacArthur 1979 («faithful part of our staff»), email 2003 (отрицание + упрёк «obsession»), факт продолжения служения Guay (GCC до 1982, Mabton GBC 1997–2012), публичное извинение GBC (2022). **Спорная часть (cover-up как намерение MacArthur) помечена как НЕ Level A**; включена запись самой Wendy от 12.04.2003 (формулировка «халатность», не «сокрытие») — для честности. Источник: The Roys Report (04.2022, 03.2024), Religion Unplugged, Bishop-Accountability.
+
+2. **`Robert_Morris.md` углублён (117 → 152 строки), БЕЗ новых файлов:**
+   - **Исправлена реституция:** $250 000 → **$270 000** (по официальному пресс-релизу AG Оклахомы + KERA + The Roys Report; ранние СМИ давали $250K).
+   - Добавлен **прецедент по сроку давности** (Drummond: статут не применяется, т.к. Morris не был резидентом Оклахомы).
+   - Добавлен **диффамационный иск Клемишир $1 млн** (Dallas County, 13.06.2025) против Morris, Debbie Morris, Gateway, старейшин; на рассмотрении в Fifth Court of Appeals; суд по существу — **июнь 2026**; general denial Дулина verbatim.
+   - Добавлен **пенсионный спор → арбитраж** (8 мая 2026, dismissal без prejudice; НЕ урегулирование, НЕ выплата — поправка Christian Post 13.05.2026); требования Morris ($1M + $800K/год до 70, затем $600K/год) и позиция Gateway verbatim («laser-focused on securing his financial future»).
+   - Добавлены **параллельные иски против Gateway** (страховая + class-action о нецелевом использовании пожертвований в федеральном суде; иск о небрежности 09.2024).
+
+**Реестр Level A теперь 13 кейсов** (добавлен Guay — частично A / частично B+ по спорному ядру).
+
+---
+
 ## Обновление от 2026-06-27 (Deep Research Pass V — Driscoll + RZIM, свежие детали 2024–2026)
 
 **Углублены два существующих досье (без новых файлов):**
@@ -24,7 +41,8 @@
 
 | Имя / Организация | Статус | Уровень | Первичка (тип) | Файл досье |
 | --- | --- | --- | --- | --- |
-| **Robert Morris** (Gateway) | **VERIFIED** | **Level A** | Criminal guilty plea, 5 felony counts (Osage County, 2025-10-02) | `Robert_Morris.md` |
+| **Robert Morris** (Gateway) | **VERIFIED ✅ DEEPENED P-VI** | **Level A** | Guilty plea, 5 felony counts (Osage County, 2025-10-02); $270K реституция; диффам.иск $1M (июнь 2026 суд); пенсия→арбитраж (05.2026) | `Robert_Morris.md` |
+| **Paul / Wendy Guay** (GCC #2 / MacArthur) | **VERIFIED ✅ NEW P-VI** | **Level A** (док.факты) / **B+** (cover-up как намерение — спорно) | Tucker statement (verbatim), письмо MacArthur 1979, email 2003, GBC apology 2022. Уголовного приговора Guay НЕТ — отделено от дела Gray | `Paul_Wendy_Guay_GCC_Case.md` |
 | **RZIM / Ravi Zacharias** | **VERIFIED ✅ DEEPENED P-V** | **Level A** (фин.факты) / A− (детали M&M) | Miller & Martin (02/2021) + board confession + **Guidepost (02/2022): $960K donor money на иск, $400K бонус, ложь «no ministry funds»**. Class-action (Georgia federal court). Thompson victim impact statement (06/2025). | `Ravi_Zacharias_RZIM.md` |
 | **Bill Hybels** (Willow Creek) | **VERIFIED** | **Level A** | IAG Report (02/2019) + entire board resignation | `Bill_Hybels.md` |
 | **Brian Houston** (Hillsong) | **VERIFIED** | **Level A** | Royal Commission (2014–15) + criminal trial verdict (2023) | `Brian_Houston.md` |
