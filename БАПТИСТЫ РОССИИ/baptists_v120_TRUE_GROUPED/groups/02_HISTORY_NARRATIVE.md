@@ -945,3 +945,51 @@ The Sinichkin export is not only scanned periodicals — its **5 269 posts** fun
 ### Why this is parked at Level C and what unblocks it
 
 The chronology is a **navigation layer**: it tells the archive *which primary document to open for which claim and on what date*. The names that recur (Prokhanov, Pashkov, Pavlov, Mazaev, Ryaboshapka, Tsymbal, Voronin, Shilov, Vysockii) and the recurring institutions (Union of Russian Baptists 1884; Russian Evangelical Union 1908; House of Gospel 1911) are the load-bearing nodes. The next passes promote specific nodes to Level A by OCR-ing the now-local periodical scans and clipping quote-cards from the typed protocols/letters — queued in `NEXT_MICROBATCH.csv`.
+
+---
+
+## v125b — Origins node: the «first Russian Baptist» question (Voronin dossier)
+
+A central historiographical node for the origins narrative — *who was the first Russian Baptist, and when?* — is now directly supported by a quote-ready research dossier from the Sinichkin export: `Никита Исаевич Воронин.pdf` (5 pp, text layer) + the companion `А_Синичкин_К_вопросу_о_крещении_первого_русского_баптиста.pdf` (14 pp, text layer). These supersede the NEXT_MICROBATCH «Sinichkin Kura/Voronin article PDF» target.
+
+### The competing dating
+
+| Candidate | Event | Date | Source chain |
+|---|---|---|---|
+| **N. I. Voronin** | baptised by Kal'veit (Кальвейт), brought by Yakov Delyakov, in the German colony near Tiflis | **20.08.1867** | Voronin's **own letter to A. M. Mazayev**, Orenburg, 15.03.1889 (reproduced in the dossier) |
+| I. Ryaboshapka (+ others) | baptised by Efim Tsymbal in Lyubomirka | end of April **1870** | channel post + standard secondary tradition |
+
+The dossier argues, on primary grounds, for the priority of the Voronin 1867 baptism.
+
+### Quote-ready evidence (text layer; masthead check advised)
+
+**1. Voronin's own account of his baptism (letter to A. M. Mazayev, 15.03.1889):**
+
+> «1867 г. в августе 20-го дня пришел ко мне Я. Деляков объявил мне, что есть в Тифл. верующие немцы… мы 20 августа 1867 года пошли в колонию к Кальвейту… и тогда же в тот час вечером я был крещен во имя Господа Кальвейтом и с Деляковичем возвратился домой».
+
+Crucially the dossier notes Voronin states his acquaintance with Delyakov preceded the baptism by **at least two years** («знакомство с Деляковым состоялось по крайне мере за два года до момента Крещения»), i.e. the conviction matured from 1863–65 (via Severov, Tanasov, then Delyakov/Mel'vil) and culminated in the 20.08.1867 baptism.
+
+**2. Father Nikolai Kallistov, letter in «Церковный Вестник» №49, 08.12.1879** — a hostile but detailed external portrait of Voronin as «тузом первой величины», «зажиточным и влиятельным молоканином», with «отличным изустным знанием Библии» — an independent (Orthodox-missionary) confirmation of Voronin's stature and biblical erudition by 1879.
+
+**3. V. V. Ivanov manuscript «Очерки по истории русского баптизма»** (37 sheets, 1908–1917, author personally knew the participants) — supplies the pre-baptism network: Yakov Ivanovich Tanasov and Nikita Ivanovich Severov as the transmitters of the water-baptism conviction to Voronin in Tiflis c. 1861–63.
+
+### Why this matters for the narrative spine
+
+This node resolves a recurring fuzziness in secondary accounts. The dossier's value is that it routes the «first Baptist» claim through **primary documents** (Voronin's own dated letter; Kallistov 1879) rather than later memory. It also shows the *networked* character of the origin — Voronin did not arrive alone: he was the Russian face of a chain (Severov/Tanasov → Delyakov/Mel'vil → Kal'vet) linking the Molochna/Tiflis Molokan milieu to German Baptist practice.
+
+### Adjacent primary documents now locally held (origins corridor)
+
+- `В. Бонч-Бруевич — Преследование баптистов` (1902, 111 pp, text) — early ethnographic-missionary documentation.
+- `Еп. Алексий — Организация общин штундистов` (1908, 21 pp, text) — Orthodox study of the Stundist communities.
+- `Калистов — Русские баптисты` (1881, 18 pp) — the same Kallistov whose 1879 letter anchors the Voronin dossier.
+- `Коальков — Воспоминания о жизни в плену` (37 pp, text) — memoir.
+
+### Writing rule
+
+Allowed (quote-ready, primary-grounded):
+
+> Nikita Isaevich Voronin's own letter to A. M. Mazayev (15 March 1889) fixes his baptism by the German believer Kal'veit, via Yakov Delyakov, on 20 August 1867 in a colony near Tiflis — earlier than the April 1870 Tsymbal–Ryaboshapka baptism in Lyubomirka that is often cited as the Russian-Baptist beginning.
+
+Not allowed:
+
+> Presenting the 1867 date as settled scholarly consensus without flagging it as the Sinichkin-dossier argument routed through primary documents, or quoting the Ivanov manuscript verbatim before its 37-sheet original is visually checked page by page.
