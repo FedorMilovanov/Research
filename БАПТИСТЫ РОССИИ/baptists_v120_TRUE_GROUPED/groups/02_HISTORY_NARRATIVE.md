@@ -874,3 +874,74 @@ N. Potapova's 2019 article on Evangelical Christians and Baptists in 1917–1922
 - `Гость. 1917. Май. №5. С. 65–68` — report on the All-Russian Baptist congress in Vladikavkaz.
 
 These are not new narrative claims yet. They are exact periodical proof targets.
+
+---
+
+## v125 — Dated-event chronology from the Sinichkin TG channel
+
+The Sinichkin export is not only scanned periodicals — its **5 269 posts** function as a running «this day in evangelical history» chronicle. Mining them yielded **1 402 unique dated events spanning 1812–2026** (saved as a workspace dataset `chronology_all.tsv`; densest in the 1910s = 504 events, 1920s = 223). Below is a curated spine of **pre-revolutionary / founding milestones** to anchor the narrative; full per-decade extraction feeds the next passes.
+
+> **Trust note (per AGENT_RULES):** channel posts are **Level C**. They are used here as a *navigational chronology* — dates, names, event sequence — not as primary quotation. Where a post reproduces a scanned primary document (now locally held, see v125 periodical pass), the underlying scan is **Level A** and overrides the post.
+
+### Act-zero / prehistory (1812–1859)
+
+| Date | Event |
+|---|---|
+| 06.12.1812 | Alexander I founds the **Russian Bible Society** in St Petersburg; first meeting 11.01.1813 at Prince Golitsyn's home. |
+| 03.06.1819 | Holy Synod permits the RBS to publish the New Testament in Russian. |
+| 07.11.1825 – 12.04.1826 | Alexander I, then Nicholas I (via Metropolitan Seraphim), **suspend** the Russian Bible translation — the long freeze on vernacular Scripture. |
+| 02.04.1831 | **Vasily Aleksandrovich Pashkov** born in Moscow — future founder of the Pashkovite movement. |
+| 22.04.1834 | **Johann Gerhard Oncken** baptised on the Elbe, Hamburg — the conventional start of continental European Baptist work. |
+| 28.09.1845 | Lutheran pastor **Eduard Wüst** preaches his first sermon in South Russia — the «Wüst circle» seeds Mennonite awakening. |
+| 01.02.1854 | **Vasily Gur'evich Pavlov** born — future presbyter/evangelist of the Tiflis community. |
+| 10.09.1856 | Exactly 30 years after the ban, the Synod **resumes** authorisation of Russian Scripture translation. |
+| 05.05.1858 | Synod ruling authorising the **Russian Bible translation** (NT first) — «necessary and useful … but not for church use». |
+
+### Origins (1860–1884)
+
+| Date | Event |
+|---|---|
+| 06.01.1860 | «Wüst circle» organises a Molochna community; first Mennonite baptismal movement takes shape. |
+| 23.09.1860 | **First baptism among Russian Mennonites** — Jakob Becker and Heinrich Bartel. |
+| 22.09.1861 | First biblical baptism in **Courland** (Latvia). |
+| 08.04.1863 | Pashkovite-type gathering at historian N. A. Lyubimov's flat in Petersburg. |
+| 21.04.1864 | Mennonite Gerhard Wiiller baptises an Orthodox believer **in the Dnieper** — cross-confessional baptism. |
+| 1874 | **Lord Radstock** arrives in St Petersburg; «salon mission» among the Petersburg nobility (Chertkova, Pashkova, Lieven, Gagarina). |
+| 20.10.1858 | **Nikita Isaevich Voronin** born in Novo-Vasil'evka, Taurida (first Russian Baptist; see Sinichkin Voronin dossier, text-extracted v125). |
+| end of April 1870 | **Efim Tsymbal** baptises **Ivan Ryaboshapka** and others in Lyubomirka; ~70 baptised believers in Karlovka & Lyubomirka by July. |
+| 30.04–01.05.1884 | **First independent congress of Russian Baptists**, Novo-Vasil'evka (Taurida) — founding of the **Union of Russian Baptists**; 24 agenda items, missionary committee elected. |
+
+### Organisation, legality & unity (1885–1917)
+
+| Date | Event |
+|---|---|
+| 03–06.04.1885 | **Vladikavkaz congress** in Stepan Prokhanov's home (local protocol now held: `Съезд в Владикавказе 1885`). |
+| 26–30.12.1886 | Third congress of Russian Baptists, Kuban (local protocol held: `Протокол_съезда_русских_баптистов_декабрь_1886`). |
+| 03.09.1893 | Law of **3 Sept 1893** — intensified restrictions; leading figures reconsider strategy. |
+| 17.05.1900 | MVD circular escalates administrative pressure on «sectarians». |
+| **17.04.1905** | **Imperial Ukaz «Об укреплении начал веротерпимости»** — apostasy from Orthodoxy no longer criminally pursued; grants confessional freedom to Baptists. |
+| 17.10.1905 | **October Manifesto** — freedoms of conscience, speech, assembly, union. |
+| 17.10.1906 | Ukas on formation/action of Old Believer & sectarian communities. |
+| 06.12.1906 | Kiev **congress of Baptists and Evangelical Christians** on the 19.10.1906 law. |
+| 15.01–01.02.1907 | All-Russian congress of Russian Baptists & Evangelical Christians. |
+| 16.05.1908 | MVD approves the **charter of the «Russian Evangelical Union»** (Prokhanov) — the union Baptists later critiqued (see v124 `Баптист` 1909 №11 target). |
+| 1909 | Baptist congress in Odessa; 2nd Congress of the Union of Christian Youth (Petersburg, 17–19.05.1909). |
+| 28.12.1910 – 04.01.1911 | **Second Congress of Evangelical Christians** (protocols now locally held) — central to the Baptist/EC unity question (v122–v124). |
+| 1911 | 2nd All-Russian Congress of Evangelical Christians (local file: `2 vserosiyskty syezd EC 1911`, 23 pp). |
+| 25.12.1911 | **Opening of the House of Gospel (Дом Евангелия), Petersburg** — multi-day celebration (several day-by-day reports now locally held). |
+| 17–25.05.1917 | **4th Congress of Evangelical Christians**, Petrograd. |
+| 1917 №1 | P. V. Pavlov, **«Политические требования баптистов»** in *Slovo Istiny* 1917 №1 p.2 — **full text now extracted** (resolves v124 P0). |
+
+### Early-Soviet (1918–1925) — selected
+
+| Date | Event |
+|---|---|
+| 11.12.1919 | **Shilov's letter to Lenin** from the Petrograd community / United Council of Religious Groups (local file, 3 pp). |
+| 27.05–06.06.1920 | All-Russian Baptist congress, Moscow; 7th Congress of Evangelical Christians (to 07.06). |
+| 02.05.1921 | 6th All-Russian Congress of Christian Youth, **Tver** — Cheka arrests 42 participants (incl. Prokhanov, Vysockii) on 05.06. |
+| 12–17.05.1925 | 4th All-Ukrainian Baptist Congress, Kharkov (333 delegates) — founds the All-Ukrainian Union of Baptist Associations (chair A. P. Kostyukov). |
+| 18.05.1929 | New Art. 4 of the RSFSR Constitution — tightening of the religious-organisation regime. |
+
+### Why this is parked at Level C and what unblocks it
+
+The chronology is a **navigation layer**: it tells the archive *which primary document to open for which claim and on what date*. The names that recur (Prokhanov, Pashkov, Pavlov, Mazaev, Ryaboshapka, Tsymbal, Voronin, Shilov, Vysockii) and the recurring institutions (Union of Russian Baptists 1884; Russian Evangelical Union 1908; House of Gospel 1911) are the load-bearing nodes. The next passes promote specific nodes to Level A by OCR-ing the now-local periodical scans and clipping quote-cards from the typed protocols/letters — queued in `NEXT_MICROBATCH.csv`.

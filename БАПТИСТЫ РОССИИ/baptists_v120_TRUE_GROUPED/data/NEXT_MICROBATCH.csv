@@ -20,3 +20,10 @@ P0,Baptist 1917 no.1 p15 Mazaev telegram,Locate Baptist 1917 no.1 July p.15 and 
 P0,Utrennyaya Zvezda 1917 no.1 March 24 political pages,"Locate UZ 1917 no.1 March 24; verify pp.1,2-4,6-8 for revolution/government/Christian-democratic party materials",Known from Potapova 2019 citations; no primary page.
 P0,Slovo Istiny 1917 no.1 May political demands,Locate Slovo Istiny 1917 no.1; verify pp.1-4 including K momentu and P. V. Pavlov political demands,Known from Potapova 2019 citation; no scan/page.
 P1,Gost 1917 no.5 Vladikavkaz Baptist congress report,Locate Gost 1917 no.5 May pp.65-68 report on All-Russian Baptist congress in Vladikavkaz,Known from Potapova 2019 citation; no scan/page.
+RESOLVED-v125,Sinichkin Voronin article PDF,RESOLVED: text layer extracted (14 pp) + Voronin dossier (5 pp); quote-card set + visual page cards still wanted,Resolved at file/text level; production quotes need page-card clipping.
+RESOLVED-v125,Sinichkin Baptist/Evangelical Christian unity docs (Vladikavkaz 1885; Baptists 1886; 2nd Congress EC 1910-11; 2nd All-Russian EC 1911),Local files acquired; visual page check + quote-cards on protocols remain,Files present; OCR/quote-cards remain.
+P1,OCR Баптист 1909-1911 (46 page_counted scans),Run OCR on the 46 Baptist scans to reach ocr_done; build quote-cards for Mazaev/Prokhanov/unity items,Scans have no text layer; need tesseract OCR pipeline.
+P1,OCR Утренняя Звезда 1915 (16 scans),OCR the 16 UZ 1915 issues; relevant to public-square dossier (baptists_v93/22-30 was 1910),Scan only; no text layer.
+P0,"Библиография по истории ЕХБ (3 версии, 42-50 стр)",Mine the 3 bibliography PDFs (full text) into a master citation list; cross-ref to corpus,Text layer present; need structured extraction.
+P1,Письмо Шилова Ленину 1919 + Заявление Московской общины 1923,Quote-card these primary petitions; integrate into early-Soviet narrative (02_HISTORY_NARRATIVE),Text layer present; quote-ready after visual check.
+P0,Синичкин: майнинг 5269 постов в хронологию,Extract dated history-of-movement posts into 02_HISTORY_NARRATIVE; verify vs periodical corpus,Posts are Level C unless they reproduce a scanned Level-A doc.

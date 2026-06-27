@@ -13539,3 +13539,55 @@ The snippet tradition quotes a severe critique of the Russian Evangelical Union:
 ### Writing rule
 
 Use these rows to drive acquisition/OCR, not to write final quotes. Potapova 2019 is a strong academic map of confessional press, but the series still needs the underlying issues before publication-level quotation.
+
+---
+
+## v125 — Sinichkin TG export: local-file periodical corpus (page_count_verified)
+
+**Источник:** Telegram-канал «Синичкин рассказывает» (owner posts scanned periodicals, congress protocols and primary documents of the Russian evangelical/Baptist movement, 2022–2026). A full chat export (`ChatExport_2026-06-27`, 6125 files incl. **143 PDF**) was acquired and processed locally. This is the first time the archive holds **local, page-counted copies** of several corpora previously tracked only at catalog/metadata level.
+
+### What changed on the proof ladder
+
+All 98 periodical issues below moved from `catalog_verified / metadata_only` to **`page_count_verified`** (file accessed + exact page count read from the actual local PDF). They are **scans without an OCR text layer**, so `ocr_done` / `quote_card_verified` are **not** claimed — OCR and visual masthead check remain the next step (logged in `NEXT_MICROBATCH.csv`).
+
+### Corpus acquired (page_count_verified)
+
+| Corpus | Issues | Pages | Date range | Note |
+|---|---:|---:|---|---|
+| `Баптист` | 46 | 580 | 1909, 1910, 1911, 1927 | typical issue 12 pp; 1909 №1 (1 Jan) = 20 pp |
+| `Братский Листок` (дореволюционный) | 22 | 265 | 1906–1910 | **distinct from** the Soviet samizdat BRATSKII LISTOK (1965–2000); supplement to `Христианин` |
+| `Утренняя Звезда` | 16 | 126 | 1915 (Apr–Oct) | 7–8 pp each |
+| `Христианин` | 6 | 178 | 1915, 1926, 1928 | 1926 Mar & 1928 Oct = 54 pp; 1926 May = 46 pp |
+| `Гость` | 4 | 37 | 1918 №8, 1934 (Jan/Feb/Mar) | |
+| `Слово Истины` | 3 | 24 | 1918 (№9-12, №13, №14) | scans |
+| `Братский Вестник` | 1 | 44 | 1945 №2 | matches archive Tier-1 target |
+
+**Total: 98 issues, 1 254 pages, all `page_count_verified_scan_no_ocr`.** Rows live in `data/PROOF_STATUS_LEDGER.csv` (`source = Sinichkin TG export`).
+
+### Important disambiguations
+
+1. **Two different «Братский Листок».** The Toronto samizdat corpus tracks the CCECB *Братский листок* (1965–2000). The Sinichkin files are the **pre-revolutionary** *Братский Листок* (1906–1910), a monthly supplement to *Христианин*. They must **not** be merged by title.
+2. **`Утренняя Звезда` 1915 ≠ unity-question targets.** The v123/v124 unity rows cite UZ **1917/1920** issues (6th Congress retrospective, «О единстве»). The 16 Sinichkin UZ issues are all **1915**. They enrich the public-square dossier but do **not** close the unity rows.
+3. **`Баптист` issue-number mapping.** Sinichkin files carry **date labels** (e.g. «1 января 1909»), not always issue numbers. Matching them to the Potapova/v124 targets (e.g. `1909 №11` Mazaev on the Russian Evangelical Union) requires the issue's internal masthead, which is OCR-dependent and still pending.
+
+### Direct resolution of open P0 / NEXT_MICROBATCH items
+
+Not all Sinichkin value is in the scanned periodicals. The export also contains **typed primary documents with an extractable text layer**, which close several long-open targets:
+
+| Open target | Sinichkin file | New status |
+|---|---|---|
+| «Слово Истины» 1917 №1 — P. V. Pavlov, «Политические требования баптистов» (v124 P0) | `Политические_требования_баптистов.pdf` (3 pp, full text) | **text extracted**; quote-ready pending visual masthead check |
+| NEXT_MICROBATCH «Sinichkin Kura/Voronin article PDF» | `Никита Исаевич Воронин.pdf` (5 pp) + `А_Синичкин_К_вопросу_о_крещению.pdf` (14 pp) | **text extracted**; quote-card set still wanted |
+| Baptist/EC unity primary documents 1909–1912 | `Протокол_съезда_русских_баптистов_декабрь_1886`, `Съезд в Владикавказе 1885`, `Протоколы_Второго_Съезда_ЕХ_1910-1911`, `2 vserosiyskty syezd EC 1911` | local files acquired; OCR/quote-cards remain |
+
+Other notable primary documents now locally held (text layer where typed): `В. Бонч-Бруевич — Преследование баптистов` (1902, 111 pp), `Еп. Алексий — Организация общин штундистов` (1908, 21 pp), `Калистов — Русские баптисты` (1881, 18 pp), `Письмо Шилова Ленину` (1919, 3 pp), `Заявление Московской общины` (1923, 8 pp), `Инструктивное письмо 1960` (СЦ ЕХБ, 10 pp), `Баптисты в Великой Отечественной Войне` (8 pp), plus three versions of the `Библиография по истории ЕХБ` (42–50 pp each).
+
+### Writing rule after v125
+
+Allowed:
+
+> The Sinichkin channel export gives the archive its first local, page-counted copies of the pre-revolutionary *Баптист*, *Братский Листок*, *Утренняя Звезда*, *Христианин*, *Гость* and *Слово Истины*, plus the 1945 *Братский Вестник* №2 (44 pp) — 98 issues, 1 254 pages in total, verified at the file/page level.
+
+Not allowed:
+
+> Quoting any of these scanned issues verbatim until OCR + visual masthead check is done. The one exception already at text-layer level is the Pavlov «Политические требования баптистов» article (Slovo Istiny 1917 №1 p.2), and even there a masthead check is recommended before publication quotation.

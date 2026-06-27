@@ -3742,3 +3742,29 @@ No new periodical issue row is added to `PROOF_STATUS_LEDGER.csv` because the 19
 | `v124_1917_press_targets` | `periodical_targets_from_academic_citation` | concrete P0/P1 targets for 1917 periodical acquisition | files/OCR/visual quote-cards |
 
 No `quote_ready` rows are added. These are target rows, not closed evidence cards.
+
+---
+
+## v125 — Sinichkin TG export: ledger pass (local files + page counts)
+
+A full export of the Telegram channel «Синичкин рассказывает» was acquired (`ChatExport_2026-06-27`, 6125 files, 143 PDF) and turned into ledger rows. This pass converts metadata-only tracking into **local-file, page-counted** evidence.
+
+### Ledger deltas
+
+| Ledger | Before | After | Delta |
+|---|---:|---:|---|
+| `PROOF_STATUS_LEDGER.csv` | 199 | 297 | +98 Sinichkin periodical issues, all `page_count_verified_scan_no_ocr` |
+| `MASTER_CORPUS_LEDGER.csv` | 5 | 11 | Baptist row upgraded; +6 corpora (prerev. Bratskii Listok, UZ, Khristianin, Gost, Slovo Istiny, Bratskii Vestnik) |
+| `SOURCE_ANCHORS.csv` | 195 | 200 | +5 anchors (channel + Pavlov/Voronin/UZ/congress) |
+| `NEXT_MICROBATCH.csv` | 21 | 28 | 2 resolved (Voronin article, unity docs); +6 forward tasks (OCR, bibliography, posts mine) |
+
+### Proof-ladder movement
+
+- **98 scanned periodical issues** → `page_count_verified` (file opened, pages counted). `ocr_done` **not** claimed — scans have no text layer.
+- **P. V. Pavlov, «Политические требования баптистов»** (Slovo Istiny 1917 №1 p.2) → **text extracted** (3 pp). Closes the v124 P0 row at text level; masthead check still advised.
+- **Sinichkin Voronin dossier + «К вопросу о крещении…»** (14 pp) → text extracted. Closes the open NEXT_MICROBATCH «Sinichkin Kura/Voronin article PDF» row.
+- **Congress protocols** (Vladikavkaz 1885; Baptists 1886; 2nd Congress EC 1910–1911; 2nd All-Russian EC 1911) → local files acquired; quote-cards remain.
+
+### Status honesty
+
+No row was promoted to `quote_card_verified` without a text layer + visual check. The percentage snapshot therefore shifts on `file_access`/`page_count` only, not on quote-readiness. Quote-grade work is now unblocked for the typed-document subset (Pavlov, Voronin, protocols, Shilov–Lenin, 1923 statement, Bonch-Bruevich 1902, the three bibliographies) and is queued in `NEXT_MICROBATCH.csv`.

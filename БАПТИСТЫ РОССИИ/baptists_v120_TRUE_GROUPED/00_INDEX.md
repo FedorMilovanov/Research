@@ -104,3 +104,13 @@ Added early BRATSKII LISTOK 1965–1966 verification pass. This version keeps th
 ## v120 update — 1967–1970 BRATSKII LISTOK early block
 
 v120 continues the grouped architecture. It adds an early BRATSKII LISTOK verification pass covering 1967 item-only cards, 1968 page-verified issues, and 1969–1970 holdings-without-page rows. The archive remains non-quote-ready until local file/OCR/visual-check work is completed.
+
+
+## v125 update — Sinichkin TG export acquired (local periodical corpus)
+
+A full export of the Telegram channel «Синичкин рассказывает» was acquired and mined (`ChatExport_2026-06-27`, 6125 files incl. 143 PDF, 2 125 pages of material). This is the archive's first **local, page-counted** periodical corpus.
+
+- **+98 periodical issues** verified to `page_count_verified` (scans, no OCR): `Баптист` (46), pre-revolutionary `Братский Листок` (22), `Утренняя Звезда` 1915 (16), `Христианин` (6), `Гость` (4), `Слово Истины` (3), `Братский Вестник` 1945 №2 (1).
+- **Key distinction:** the Sinichkin *Братский Листок* (1906–1910) is the pre-revolutionary supplement to *Христианин* — **not** the Soviet CCECB samizdat (1965–2000) tracked in the Toronto corpus.
+- **Resolved open targets:** P. V. Pavlov «Политические требования баптистов» (Slovo Istiny 1917 №1) — text extracted; Sinichkin Voronin article — text extracted; Baptist/EC unity congress protocols — local files acquired.
+- **No `quote_card_verified` rows added.** Scanned issues need OCR; typed documents are queued for quote-cards. See `groups/03_PERIODICAL_CORPUS.md` (v125 section) and `groups/06_DATA_AND_PROOF_LEDGERS.md`.
