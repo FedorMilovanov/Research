@@ -2,6 +2,22 @@
 
 Этот файл содержит текущий статус верификации кейсов.
 
+## Обновление от 2026-06-27 (Deep Research Pass VIII — кейсы ВЛАСТИ/ПРОЦЕДУРЫ в консервативных кругах: Fletcher + Timmis; углубление Platt; рекатегоризация Hengsbach)
+
+**Фокус прохода (по запросу пользователя):** «диотрефовские» кейсы власти и процедуры в **консервативных** (евангельских/реформатских/баптистских) кругах, глубокая верификация, кейсы с покаянием и без.
+
+1. **НОВЫЙ `Jonathan_Fletcher_Emmanuel_Wimbledon.md`** (~97 строк, Level A). Консервативно-евангелическое крыло Церкви Англии (Iwerne). thirtyone:eight Independent Lessons Learned Review (146 стр., 03.2021, verbatim: «abuse of spiritual authority and power»; лидеры знали до 2017, бездействовали; «untouchable»). Уголовный исход: Kingston Crown Court — unfit to plead (02.12.2025) → «examination of facts» → **жюри: 8 эпизодов indecent assault установлены (05.2026), absolute discharge**. **Кейс БЕЗ покаяния** (отказался участвовать, отрицал вину). Антисоветы #1,3,4,9,11,13,16,18,20.
+
+2. **НОВЫЙ `Steve_Timmis_Acts29_CrowdedHouse.md`** (~95 строк, Level A). Реформатская сеть Acts 29 + The Crowded House (Шеффилд). Совет Acts 29 удалил CEO (verbatim statement); thirtyone:eight review TCH (verbatim p.77: coercive/controlling culture, abuse); **старейшины TCH покаялись** (verbatim); IVP изъял книги. Институц. слой: по CT — в 2015 уволены 5 сигнальщиков + NDA (B+). **Покаяние институтов ЕСТЬ, покаяния лидера НЕТ.** Не уголовный («no criminal or illegal behaviour»). Антисоветы #2,3,4,6,7,8,11,16,19,20.
+
+3. **`David_Platt_McLean_Bible.md` УГЛУБЛЁН** (97→108): реквизиты дела (Record No. 0185-25-4), verbatim «count to eight without entering a religious thicket»; **после remand 2023 MBC изменила устав — убрала "vote of confidence", дав Совету больше контроля**; что требуют в discovery (протоколы Совета 2020–2023 + списки членов); контраст с McRaney v. NAMB.
+
+4. **`Franz_Hengsbach_Essen_Germany.md` РЕКАТЕГОРИЗИРОВАН** — добавлен баннер «ВНЕ основного консервативного протестантского ядра — для ознакомления» (католический; скорее не пойдёт в статью; держится в отдельном файле по указанию пользователя).
+
+**Реестр теперь 18 кейсов.** Усилен сегмент «власть/процедура/диотреф» в консервативных кругах (Driscoll, Platt, Fletcher, Timmis; +институц. SBC).
+
+---
+
 ## Обновление от 2026-06-27 (Deep Research Pass VII — David Platt + зарубежные кейсы: Германия (Hengsbach) + Россия (Москвитин))
 
 **Сделано в этом проходе — три НОВЫХ файла-досье (расширение географии и типов; каждый = отдельный крупный кейс):**
@@ -57,7 +73,9 @@
 | --- | --- | --- | --- | --- |
 | **Robert Morris** (Gateway) | **VERIFIED ✅ DEEPENED P-VI** | **Level A** | Guilty plea, 5 felony counts (Osage County, 2025-10-02); $270K реституция; диффам.иск $1M (июнь 2026 суд); пенсия→арбитраж (05.2026) | `Robert_Morris.md` |
 | **Paul / Wendy Guay** (GCC #2 / MacArthur) | **VERIFIED ✅ NEW P-VI** | **Level A** (док.факты) / **B+** (cover-up как намерение — спорно) | Tucker statement (verbatim), письмо MacArthur 1979, email 2003, GBC apology 2022. Уголовного приговора Guay НЕТ — отделено от дела Gray | `Paul_Wendy_Guay_GCC_Case.md` |
-| **David Platt** (McLean Bible Church) | **VERIFIED ✅ NEW P-VII** | **Level A** (court records) | Appellate opinions (Gaskins v. MBC): 2023 + **2026** «не выше закона». Кейс о ВЛАСТИ/процедуре, НЕ о грехе; вина по существу НЕ установлена | `David_Platt_McLean_Bible.md` |
+| **David Platt** (McLean Bible Church) | **VERIFIED ✅ DEEPENED P-VIII** | **Level A** (court records) | Gaskins v. MBC, Record 0185-25-4 (2026, verbatim «count to eight»); устав изменён (убран vote of confidence); discovery протоколов Совета. Власть/процедура, НЕ грех | `David_Platt_McLean_Bible.md` |
+| **Jonathan Fletcher** (Emmanuel Wimbledon, CofE 🇬🇧) | **VERIFIED ✅ NEW P-VIII** | **Level A** | thirtyone:eight review (146 стр., 2021, verbatim) + **жюри: 8× indecent assault (2026)**. Консерв.-евангелич. диотреф. БЕЗ покаяния | `Jonathan_Fletcher_Emmanuel_Wimbledon.md` |
+| **Steve Timmis** (Acts 29 / Crowded House 🇬🇧) | **VERIFIED ✅ NEW P-VIII** | **Level A** | Acts 29 Board statement + thirtyone:eight review TCH (verbatim p.77) + покаяние старейшин TCH + IVP. Покаяние институтов ЕСТЬ, лидера НЕТ. Не уголовный | `Steve_Timmis_Acts29_CrowdedHouse.md` |
 | **Franz Hengsbach** (Эссен, Германия 🇩🇪) | **VERIFIED ✅ NEW P-VII** | **Level A** (институц. первичка) | Zwischenbericht IPP/Dissens/FZH (25.06.2026, заказ епархии); согласие епархии; Overbeck verbatim. Уголовного приговора нет (научная достоверность) | `Franz_Hengsbach_Essen_Germany.md` |
 | **Станислав Москвитин** (Омск, Россия 🇷🇺) | **VERIFIED ✅ NEW P-VII** | **Level A** (приговор 2023) | Кировский райсуд + Омский облсуд (ч.1 ст.239 УК, verbatim). Контроль сознания/гипноз. Дело 2024–26 о «нежелат. орг.» — вне рамок серии | `Stanislav_Moskvitin_Omsk_Russia.md` |
 | **RZIM / Ravi Zacharias** | **VERIFIED ✅ DEEPENED P-V** | **Level A** (фин.факты) / A− (детали M&M) | Miller & Martin (02/2021) + board confession + **Guidepost (02/2022): $960K donor money на иск, $400K бонус, ложь «no ministry funds»**. Class-action (Georgia federal court). Thompson victim impact statement (06/2025). | `Ravi_Zacharias_RZIM.md` |
