@@ -1,4 +1,4 @@
-# Cross-Reference: «20 антисоветов пастору» × 18 верифицированных кейсов
+# Cross-Reference: «20 антисоветов пастору» × 20 верифицированных кейсов
 
 **Статус: VERIFIED — Level A (все кейсы)**
 **Дата: 2026-06-27**
@@ -226,3 +226,34 @@ Acts 29 удалил CEO; thirtyone:eight (p.77): coercive/controlling culture, 
 - **Hengsbach (католич.)** — вынесен в отдельный файл, **вне этого консервативного сегмента**, для ознакомления.
 
 > Реестр: **18 кейсов**. Сегмент «власть/процедура/диотреф» (консерв.): Driscoll, Timmis, Fletcher, Platt + институц. SBC.
+
+
+---
+
+## Дополнение (Pass IX): харизматическое/евангелическое крыло + финансовый слой Hillsong
+
+По запросу — расширение на консервативные **и** умеренно-харизматические/пятидесятнические круги; прямые наводки пользователя: **Hillsong** (углубить) и **Bethel/Вефиль (Redding)**. Приоритет — власть/процедура/сокрытие; кейсы с покаянием и без; строгая граница Level A ↔ блоги/Reddit.
+
+### Сводная мини-матрица сегмента
+
+| Кейс | Среда | Тип | Покаяние лидера | Покаяние института | Антисоветы (ядро) |
+|---|---|---|---|---|---|
+| **Mike Pilavachi** | Харизм./евангел. CofE (UK) | spiritual abuse / контроль | частичное / оспорено | да (Soul Survivor / CofE) | #1,3,4,11,13,16,18,20 |
+| **Bethel Redding** | Харизм./NAR (US) | сокрытие / платформинг | (по лидерам — расслед.) | **ДА** (запоздалое, под давлением) | #5,10,14,16,18,20 |
+| **Brian Houston** (углубл.) | Пятидесятн. Hillsong (AU) | сокрытие + финансы | минимизация | частично (фин. review / ACNC) | #2,3,4,10,11,14,18,20 |
+
+### Pilavachi — spiritual abuse, две независимые инстанции (Pass IX)
+NST CofE + St Albans (09.2023, **substantiated**): *«used his spiritual authority to control people... physical wrestling of youths and massaging of young male interns»*, 40 лет, ~100 обратившихся. Scolding Review (Fiona Scolding KC, 26.09.2024): «credible and consistent evidence», 9 массажей, wrestling до 2018, «wholesale failure of organisational culture». Written warning (01.2024). **Позиция обвиняемого приведена verbatim** (оспаривал процесс). НЕ уголовный. Покаяние частичное (#20). → #1,3,4,11,13,16,18,20.
+
+### Bethel Redding — институциональное признание сокрытия (Pass IX)
+**Баннер: NAR-сегмент, не одобрение богословия; Reddit/блоги = Level C, не используются.** Триггер — видео Mike Winger (17.01.2026). Bethel (25.01.2026) verbatim: *«we did not tell the truth enough, early enough, long enough, or loud enough»*. Vallotton — личное извинение. Ben Armstrong → administrative leave (15.02.2026) + Sintra Group. 28.05.2026 — перестают платформить Bentley/Bickle/Bolz/Hartley. Жалоба в ACNC (Bethel Sydney). Обвинения против Bolz/Armstrong = **аллегации** («not a verdict»). → #5,10,14,16,18,20.
+
+### Houston — финансовый слой 2023 (Pass IX, углубление)
+Andrew Wilkie (парламент AU, 09.03.2023, privilege, 17 папок): *«fraud, money laundering and tax evasion»*, «private jets like Ubers», Cancun $150K. ACNC расследует (10.03.2023) → enforceable undertakings против Hillsong College (12.2024). Phil Dooley → independent review. Под-кейс Carl Lentz (уволен 11.2020). Обвинения Wilkie — **untested аллегации**; реакция Hillsong («out of context») приведена.
+
+**Границы (соблюдать в статье):**
+- **Pilavachi** — НЕ уголовный (safeguarding/disciplinary); позиция обвиняемого (оспаривание процесса) приведена verbatim; покаяние частичное.
+- **Bethel** — обвинения против Bolz/Armstrong на стадии расследования, не приговор; ценность кейса — в **факте институционального покаяния и реформ**, а не в установлении вины конкретных лиц.
+- **Houston (финансы)** — обвинения Wilkie **не доказаны судом** (parliamentary privilege ≠ судебное установление); ACNC-undertakings — административный факт.
+
+> Реестр: **20 кейсов**. Харизматич./евангелич. крыло: Pilavachi, Bethel + углублённый Houston (Hillsong). Спектр покаяния: частичное/оспоренное (Pilavachi) ↔ запоздалое институциональное под давлением (Bethel).

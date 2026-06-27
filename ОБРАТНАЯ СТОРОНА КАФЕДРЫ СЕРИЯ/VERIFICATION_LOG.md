@@ -2,6 +2,20 @@
 
 Этот файл содержит текущий статус верификации кейсов.
 
+## Обновление от 2026-06-27 (Deep Research Pass IX — харизматическое/евангелическое крыло: Pilavachi (Soul Survivor) + Bethel Redding (Bolz/Armstrong); углубление Houston финансовым слоем 2023)
+
+**Фокус прохода (по запросу пользователя):** консервативные + умеренно-харизматические/пятидесятнические круги; прямые наводки пользователя — **Hillsong** (углубить) и **Bethel/Вефиль (Redding)**. Приоритет — кейсы власти/процедуры/сокрытия; кейсы с покаянием и без; строгое отделение Level A от блогов/Reddit.
+
+1. **НОВЫЙ `Mike_Pilavachi_Soul_Survivor.md`** (~132 строки, Level A). Харизматическое/евангелическое крыло Церкви Англии. **Две независимые официальные инстанции** согласованно: (а) NST CofE + Diocese of St Albans (09.2023) — concerns **substantiated**, verbatim «used his spiritual authority to control people... physical wrestling of youths and massaging of young male interns», 40 лет, ~100 обратившихся; (б) **Scolding Review** (Fiona Scolding KC, опубликован полностью 26.09.2024) — «credible and consistent evidence», 9 свидетельств приватных массажей, wrestling до 2018, «wholesale failure of organisational culture». Clergy Discipline Measure → **written warning** (01.2024), Pilavachi признал «fallen short». MBE отозван Королём (2025). **Позиция обвиняемого приведена verbatim** (оспаривал процесс как «hostile and aggressive»). НЕ уголовный. **Покаяние частичное** (#20). Антисоветы #1,3,4,11,13,16,18,20.
+
+2. **НОВЫЙ `Bethel_Redding_Bolz_Armstrong.md`** (~140 строк, Level A по офиц. заявлениям института). **Баннер: харизматич./NAR-сегмент — для механики власти, не одобрение богословия; строгая граница источников (Reddit/блоги = Level C, не используются).** Триггер — видео Mike Winger (17.01.2026, 5ч50м). **Институциональное покаяние Bethel (25.01.2026)** verbatim: «we did not tell the truth enough, early enough, long enough, or loud enough»; личное извинение Kris Vallotton. **Ben Armstrong placed on administrative leave (15.02.2026)** + независимое расследование **Sintra Group**. **28.05.2026** Bethel перестаёт платформить Bentley/Bickle/Bolz/Hartley. Жалоба в ACNC против Bethel Sydney. Обвинения против Bolz/Armstrong помечены как **аллегации** (расследование, «not a verdict»). Редкий кейс с **запоздалым, но реальным институциональным покаянием под давлением**. Антисоветы #5,10,14,16,18,20.
+
+3. **`Brian_Houston.md` УГЛУБЛЁН** (95→142): добавлен **финансовый слой 2023** — выступление **Andrew Wilkie** в парламенте Австралии (09.03.2023, parliamentary privilege, 17 папок документов, verbatim «fraud, money laundering and tax evasion», «private jets like Ubers», Cancun $150K); **ACNC расследование** (Sue Woodward AM, 10.03.2023) + **enforceable undertakings против Hillsong College** (12.2024); ответ **Phil Dooley** (independent review). Под-кейс **Carl Lentz** (Hillsong NYC, уволен 11.2020) + отделение Hillsong SF (02.2025). Обвинения Wilkie помечены как **аллегации** (untested), реакция Hillsong («out of context») приведена.
+
+**Реестр теперь 20 кейсов.** Усилен сегмент харизматич./евангелич. крыла (Pilavachi, Bethel) + финансовый слой Hillsong. Спектр исходов покаяния расширен: частичное/оспоренное (Pilavachi) ↔ запоздалое институциональное под давлением (Bethel).
+
+---
+
 ## Обновление от 2026-06-27 (Deep Research Pass VIII — кейсы ВЛАСТИ/ПРОЦЕДУРЫ в консервативных кругах: Fletcher + Timmis; углубление Platt; рекатегоризация Hengsbach)
 
 **Фокус прохода (по запросу пользователя):** «диотрефовские» кейсы власти и процедуры в **консервативных** (евангельских/реформатских/баптистских) кругах, глубокая верификация, кейсы с покаянием и без.
