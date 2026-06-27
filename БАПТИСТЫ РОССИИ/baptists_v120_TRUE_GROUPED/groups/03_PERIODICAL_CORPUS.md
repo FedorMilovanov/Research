@@ -13591,3 +13591,42 @@ Allowed:
 Not allowed:
 
 > Quoting any of these scanned issues verbatim until OCR + visual masthead check is done. The one exception already at text-layer level is the Pavlov «Политические требования баптистов» article (Slovo Istiny 1917 №1 p.2), and even there a masthead check is recommended before publication quotation.
+
+---
+
+## v125b — Master bibliography of EKhB history (Sinichkin TG export)
+
+The export contains three dated versions of a curated «Библиография по истории Евангельского движения» (2024-01, 2024-01-15, 2025-12-22), each with a full text layer. The latest (**2025-12-22**) was parsed into a structured master list of **1 423 numbered entries** (saved as workspace asset `bibliography_master_2025_12_22.tsv`; numbering runs to №2006 with gaps where entries were merged/removed; +38 entries vs the 2024-01-15 version = 1 385). The compiler's own work appears in the list (e.g. №24: *«Альманах по истории русского баптизма. Выпуск 5. Составитель А. В. Синичкин»*, 2019, 222 pp).
+
+### Coverage profile (by publication decade)
+
+| Period | Entries | Character |
+|---|---:|---|
+| pre-1860 | ~13 | early sectarian/missionary background |
+| 1860–1899 | ~136 | imperial missionary polemic + early evangelical |
+| 1900–1919 | ~297 | **densest imperial block** — congress materials, periodicals, polemic |
+| 1920–1939 | ~148 | early-Soviet: atheistic critique + EC/Baptist publication |
+| 1940–1959 | ~32 | war / post-war |
+| 1960–1989 | ~216 | Soviet atheistic scholarship (Баптизм без маски, etc.) |
+| 1990–2019 | ~476 | modern research revival (almanacs, monographs, memoirs) |
+| 2020–2026 | ~54 | current |
+
+### Thematic markers (approximate)
+
+- ~253 pre-revolutionary missionary polemic (сектант, штунд, пашковцы, пангерманизм)
+- ~111 modern research (монография, исследование, история)
+- ~84 memoir / autobiographical (воспоминания, автобиография)
+- ~75 almanacs / congress materials / protocols
+- ~40 periodical references; ~27 archive guides/catalogues; ~42 Soviet atheistic critique
+
+### Use for the archive
+
+This is a **navigation/citation backbone**, not a primary corpus. Concretely it lets the archive:
+
+1. **Identify cited-but-unheld items** — e.g. the bibliography confirms many titles the periodical dossiers reference (Бонч-Бруевич 1902, Алексий 1895, Калистов 1881, Айвазов polemics) **several of which are now locally held** in the Sinichkin export (see v125 document inventory).
+2. **Name-density cross-check** — key figures surface with the frequency: Пашков 17, Павлов 18, Бонч-Бруевич 15, Фетлер 13, Редсток 8, Проханов 10, Мазаев 5, Воронин (via Sinichkin dossier), Шилов 3, Каргель 2.
+3. **Drive the NEXT_MICROBATCH bibliography-extraction task** (already queued): promote the TSV into a structured corpus ledger with publication year + type tags.
+
+### Writing rule
+
+The bibliography is a Level-C research aid (a researcher's curated list). It may be used to locate and name sources, but a title's presence here does **not** by itself establish holding/quote-readiness — that still requires the underlying book/journal (per the proof ladder). Where the bibliography names a document that is now locally held (Sinichkin export), the local file governs.

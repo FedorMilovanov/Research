@@ -7026,3 +7026,54 @@ This pass continues the grouped, non-proliferating archive method. No item is ma
 ### Interpretation
 
 This improves BRATSKII LISTOK substantially: the early period now has a mix of item-only rows and holdings rows. However, unlike the `Biulleten SRY` corpus, BRAT frequently lacks page-count in visible metadata. Therefore the correct next move is not to write quote-cards from the web card, but to acquire Baylor/Keston or OSA copies and count pages locally.
+
+---
+
+## v125 — Early-Soviet conscience documents from the Sinichkin TG export
+
+The Sinichkin export contains several **typed primary documents with an extractable text layer** that document the evangelical/Baptist conscience under early-Soviet pressure — the pre-history of the later samizdat/СЦ ЕХБ era this dossier already covers. They are quoted below at the **text-layer level**: the OCR-free text was read directly from the embedded layer, so they are quote-ready *pending a visual masthead/page check*. Page numbers refer to the Sinichkin local PDF.
+
+> **Proof status:** `text_layer_extracted` (file opened, text read, page count verified). Promotable to `quote_card_verified` after clipping a page image for each quotation. This is stronger than the catalog-level rows elsewhere in this dossier.
+
+### A. И. Н. Шилов — letter to V. I. Lenin, 11.12.1919 (3 pp, text layer)
+
+**Source:** `Письмо Шилова Ленину.pdf` (Sinichkin TG export). Ivan Nikitovich Shilov — presbyter of the Petrograd community of Evangelical Christians-Baptists and authorised representative of the United Council of Religious Communities and Groups — writes to Sovnarkom chairman Lenin documenting violations of the 4 January 1919 decree on exemption from military service on religious grounds.
+
+Key passages (quote-ready):
+
+- On the legal basis: Shilov cites «декрет Совнаркома изданным 4 января с/г» granting alternative service, and the constitution's freedom of religious/anti-religious propaganda.
+- On the gap between law and practice: members «заявляют мне, что они не могут дольше оставаться в команде и готовы лучше подвергнуться расстрелу, которым угрожает власть, чем оставаться служить против совести» — i.e. believers prefer execution to serving against conscience.
+- On administrative contempt: Shilov describes handing his mandate to official Murzin, who «бегло прочитал и положил в ящик стола», replying «Он нам не нужен» — a reception Shilov says he «даже не встречал у жандармов и сыщиков низвергнутого правительства».
+- On the travel ban on preachers: «нашим проповедникам не дают разрешения на выезд из Петрограда для совершения духовных треб», while «агитаторы антирелигиозной пропаганды могут ехать куда угодно».
+- On the absoluteness of pacifist conviction: «мы не можем принимать участие ни прямо, но косвенно ни в какой войне. И что никакие насилия или смерть не может нас заставить отказаться от убеждения в Евангелии».
+- Biblical warning to Lenin: «смотрите и Вы не возгордитесь как Навуходоносор, который после того, как вознесся против Всевышнего был низвержен и питался травою».
+
+**Outcome recorded in the same file:** the Рабоче-Крестьянская Инспекция complaints bureau (Общее Присутствие Бюро Жалоб, session 03.03.1920) **upheld** the complaint and ordered Petrograd Gubvoenkom to release Тюшин, Александров, Иванов, Хорев, Кирняйнен and transfer their cases to the Народный Суд per Sklyansky's 29.04.1919 telegram. → A rare documented case where a Baptist conscience appeal produced a concrete corrective result in 1920.
+
+### B. Заявление Московской общины ЕХ, 1923 (8 pp, text layer)
+
+**Source:** `Заявление Московской Общины 1923.pdf` (Sinichkin TG export). Addressed to the ВЦИК with copies to Kamenev, Smidovich, Kursky (Narkomyust), the Supreme Court, the Moscow Gubsud, the Military Tribunal, Yaroslavsky (ЦК РКП), «Известия» and «Безбожник», and to I. S. Prokhanov as chair of the All-Union Union of Evangelical Christians.
+
+The statement contests the ВСЕХ «послание» (published in «Известия» №180, 12.08.1923) on military service, which the Gubsudy then used to deny ECs exemption:
+
+- The statement argues the ВСЕХ послание «искажает действительное положение евангельских христиан к военной службе».
+- It asserts the Narkomyust circular №237 (5.11.1923) «совершенно исключает евангельских христиан из разряда тех религиозных течений, которым дается возможность замены военной службы другими повинностями» — «явным образом противоречит декретам от 14 января 1919 г. и 14 декабря 1920 г.».
+- The document's own table of contents is a research map: **«1. Первое выступление Проханова И. С. / 2. Арест Проханова / 3. Второе выступление Проханова / 4. Всесоюзный 9 съезд евангельских христиан»** — i.e. it reconstructs the Prokhanov–military-service episode and the 9th EC Congress.
+
+→ This is a **quote-ready primary anchor** for the Prokhanov / military-service / ВСЕХ episode and for the broader decoupling of legal exemption from its enforcement (1919 decree → 1923 erosion).
+
+### C. Инструктивное письмо 1960 — СЦ ЕХБ (10 pp, scan, no OCR)
+
+**Source:** `Инструктивное письмо 1960.pdf` (×3 copies, all identical scans, Sinichkin TG export). Page-count verified (10 pp) but **no text layer** — OCR required. This document sits directly at the 1959–1961 split that birthed the Council of Churches (СЦ ЕХБ), the central subject of this dossier's existing v81 material. Awaiting OCR + visual check before any quotation.
+
+### Writing rule after v125
+
+Allowed (text-layer quote-ready, masthead check advised):
+
+> In December 1919 the Petrograd presbyter Ivan Shilov wrote to Lenin documenting that, despite the 4 January 1919 decree, believers refusing military service on grounds of conscience were being held, tried by revolutionary tribunals, and denied the alternative service the decree provided — and that the complaints machinery ultimately (March 1920) ordered their release and transfer to the civil courts.
+>
+> By 1923 the Московской общины statement shows the legal ground had shifted: the ВСЕХ «послание» and Narkomyust circular №237 were being used to deny Evangelical Christians the exemption the 1919/1920 decrees had granted.
+
+Not allowed:
+
+> Verbatim publication quotation of these texts until a page-image quote-card is clipped for each citation, and until the 1960 Instructional letter is OCR'd.
