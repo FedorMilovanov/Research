@@ -7077,3 +7077,35 @@ Allowed (text-layer quote-ready, masthead check advised):
 Not allowed:
 
 > Verbatim publication quotation of these texts until a page-image quote-card is clipped for each citation, and until the 1960 Instructional letter is OCR'd.
+
+---
+
+## v125c — Initiative Group / Council of Churches (СЦ ЕХБ) formation chronology (Sinichkin TG)
+
+Mining the 5 269 Sinichkin posts for Soviet-period persecution content (1950–1999) yielded **203 dated posts** that form a precise date-spine for the 1959–1965 split this dossier already covers in its v81 material (the `91`–`96` source files). The channel posts give exact days, names and procedural detail that the archive's catalog-level rows lacked. **These are Level C** (channel narrative); they are used here as a dated navigation layer and to target which ВСЕХБ/СЦ ЕХБ primary documents (several now locally held) to open for quote-cards.
+
+### Formation date-spine (1961–1988)
+
+| Date | Event | Key actors |
+|---|---|---|
+| **09.08.1961** | **Pavel Yakimenkov arrested** at his workplace, sentenced to 5 years exile in Krasnoyarsk krai — four days *before* the послание to the ВСЕХБ Presidium. | Yakimenkov |
+| **13.08.1961** | **Initiative Group (Инициативная группа) formation**: G. K. Kryuchkov and A. F. Prokofiev present a group of **11 members** to the ВСЕХБ chancellery, demanding an Extraordinary All-Union Congress; received by A. V. Karev with A. I. Mitskevich present. The group charges the ВСЕХБ with «уничтожил божественные принципы устроения церкви», arbitrary appointment of ministers «без участия церкви», and artificial division of the church. | Kryuchkov, Prokofiev, Karev, Mitskevich |
+| **1962** | **A. F. Prokofiev arrested** — first head of the Initiative Group; 5 years camps + 5 years exile. | Prokofiev (1915–1995) |
+| **08.12.1963** | **Совет родственников заключённых (СРУ) initiative**: statement signed by **14** to Brezhnev, Khrushchev and Prosecutor-General Rudenko requesting permission to convene a conference of prisoners' relatives; 4-point agenda (material aid to families; law-observance by prisoners; non-substitution of spiritual struggle by political struggle; election of a permanent Council). | 14 signatories |
+| **23.02.1964** | СРУ formally constituted by the Оргкомитет (with a temporary statute, limited mandate). | Оргкомитет |
+| Nov 1964 | Yakimenkov returns from exile under amnesty; joins Оргкомитет, later serves as treasurer of the СЦ ЕХБ. | Yakimenkov |
+| **20.09.1965** | **Совет Церквей ЕХБ (СЦ ЕХБ) formed** at an illegal all-union meeting of serving ministers in Moscow; Оргкомитет renamed to Совет Церквей heading the new Союз Церквей ЕХБ; statute adopted; appeal to government and to churches. **Chair: G. K. Kryuchkov; General Secretary: G. P. Vins.** | Kryuchkov, Vins |
+| **22.09.1965** | СЦ ЕХБ delegation elected to approach Presidium chair A. I. Mikoyan. | Yakimenkov (delegate) |
+| **25.09.1987** | СЦ ЕХБ forms the **Отдел заступничества страждущих за имя Христово** (successor to the СРУ); first bulletin April 1988. | МСЦ ЕХБ |
+
+### Two threads this spine connects
+
+1. **The Shilov thread (1923–1942).** Post #563 documents the killing of **Ivan Shilov** — the same Petrograd presbyter whose 1919 letter to Lenin is now quote-ready in this dossier (v125). Born 1886, converted/baptised 1911 while serving on the Baltic Fleet, his «peace-making» (mediating between believers and the state) led to sustained pressure culminating in his death in 1942. This links the early-Soviet conscience-document layer (v125) to the long arc of persecution the 1959–1965 split inherits. → Quote-card needed from the post's source (Level C until the underlying document is held).
+
+2. **The Instructional Letter 1960 thread.** The `Инструктивное письмо 1960` (locally held, 10 pp scan, OCR-pending) sits exactly at the regulatory trigger of the 1961 Initiative Group. OCR-ing it is the natural next closure for this spine.
+
+### What unblocks quote-grade work here
+
+- **Locally held & scan-only:** `Инструктивное письмо 1960` (СЦ ЕХБ regulatory trigger). → OCR queued.
+- **Catalog-level (Toronto samizdat):** the `Вестник Спасения` / `Бюллетень СРУ` / `BRATSKII LISTOK` corpora that carried the СРУ/СЦ ЕХБ voice — already tracked to holdings/page level in the PROOF ledger; the Sinichkin date-spine now tells the archive *which issue date* to chase for each formation event.
+- **No new quote claims** are made from the posts themselves; they are a Level-C map.
