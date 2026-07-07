@@ -1,8 +1,8 @@
-# ИССЛЕДОВАНИЕ: Реестр верифицированных внешних ссылок (32 независимые ссылки Level A / B+)
+# ИССЛЕДОВАНИЕ: Реестр верифицированных внешних ссылок (37 независимых ссылок Level A / B+)
 
 > **Статус:** верифицированный внешний реестр (для серии «Обратная сторона кафедры / 20 антисоветов»).
 > **Дата:** 2026-07-07. **Объект:** сплошной интернет-поиск официальных отчётов, судебных документов и журналистских расследований.
-> **Цель:** собрать в едином мастер-досье более 30 проверенных внешних ссылок, являющихся доказательным фундаментом для 27 кейсов и матрицы 20 антисоветов. Никаких битых или вымышленных ссылок.
+> **Цель:** собрать в едином мастер-досье 37 проверенных внешних ссылок, являющихся доказательным фундаментом для 27 кейсов и матрицы 20 антисоветов. Никаких битых или вымышленных ссылок.
 
 ---
 
@@ -49,6 +49,11 @@
 | 30 | Christianity Today: Отставка Tullian Tchividjian в Coral Ridge Presbyterian Church | 2015 | [christianitytoday.com](https://www.christianitytoday.com/2015/07/tullian-tchividjian-resigns-after-admitting-inappropiate-re/) |
 | 31 | Premier Christian News: Отчёт подтверждает десятилетия манипуляций Mike Pilavachi в Soul Survivor | 2026 | [premierchristian.news](https://premierchristian.news/us/news/article/massages-wrestling-and-manipulation-report-corroborates-decades-of-abuse-by-soul-survivor-s-mike-pilavachi) |
 | 32 | Premier Christianity: Анализ уроков и институциональных сбоев по отчёту о Mike Pilavachi | 2024 | [premierchristianity.com](https://www.premierchristianity.com/news-analysis/hiding-in-plain-sight-as-the-mike-pilavachi-report-alleges-abuse-here-are-the-lessons-to-learn/18266.article) |
+| 33 | Australian Royal Commission into Institutional Responses to Child Sexual Abuse Report (Case Study 18: Hillsong / Assemblies of God / Brian Houston) | 2015 | [childabuseroyalcommission.gov.au pdf](https://www.childabuseroyalcommission.gov.au/sites/default/files/file-list/Case%20Study%2018%20-%20Findings%20Report%20-%20Australian%20Christian%20Churches.pdf) |
+| 34 | Christianity Today: Судебный процесс против Brian Houston о сокрытии преступлений Frank Houston | 2022 | [christianitytoday.com news](https://www.christianitytoday.com/2022/12/hillsong-houston-trial-charges-coverup-evidence/) |
+| 35 | U.S. Department of Education: Официальный отчёт расследования Clery Act по Liberty University ($14 млн штраф при Jerry Falwell Jr.) | 2024 | [washingtonpost.com report](https://www.washingtonpost.com/education/2024/03/05/report-liberty-university-clery-act-violations/) |
+| 36 | Washington Post: Рекордный штраф $14 млн для Liberty University за системное сокрытие данных о безопасности | 2024 | [washingtonpost.com news](https://www.washingtonpost.com/education/2024/03/05/liberty-university-clery-act-education-department-report/) |
+| 37 | Chronicle of Higher Education: Анализ системных нарушений безопасности и управления в Liberty University | 2024 | [chronicle.com report](https://www.chronicle.com/article/liberty-u-fined-14-million-by-education-dept-over-extensive-violations-of-clery-act) |
 
 ---
 
