@@ -60,6 +60,7 @@
 | 39 | `39_THE_PNEUMATOLOGY_SPIRIT_APPLICATION.md` | Пневматология Гилла: применение искупления Духом (возрождение — человек «wholly passive», освящение = «sanctification of the Spirit», свидетельство/ходатайство Духа по Рим 8) — новый угол, не из 6 лакун `31` | Level A: BDD ch.14 (ccel) + Exposition Romans 8 (thekingsbible); перекрёстные ссылки `13`/`08`/`26`/`34`/`30` |
 | 40 | `40_THE_CHRISTOLOGY_PERSON_OF_CHRIST.md` | Христология Гилла: ипостасное единство, communicatio idiomatum (Акт 20:28; Ин 3:13), воплощение (второе Лицо, не сущность), состояния уничижения/прославления, отвержение descensus ad inferos — новый угол, не из 6 лакун `31` | Level A: BDD Book VI (vi.i/vi.v/vi.vi, ccel); перекрёстные ссылки `13`/`32`/`37`/`08`/`38` |
 | 41 | `41_THE_DOCTRINE_OF_SCRIPTURE_CANON.md` | Учение Гилла о Писании: канон 66 книг, богодухновенность (2 Пет 1:21), отвержение апокрифов и преданий (sola scriptura) — новый угол, не из 6 лакун `31`; мост к `kod-da-vinchi` | Level A: BDD Book I «Of the Scriptures» (через christianbeliefs.org, PD); перекрёстные ссылки `15`/`37`/`13`/`kod-da-vinchi` |
+| 42 | `42_THE_CREATION_IMAGE_OF_GOD_AND_PROVIDENCE.md` | Творение, образ Божий в Адаме, грехопадение и провидение Гилла (BDD Book IV): шестидневное творение, образ = знание/праведность/святость, повреждение образа грехом → мост к `krajne-li-isporcheno-serdce`; провидение Троичное, immediate/mediate, general/special — новый угол, не из 6 лакун `31` | Level A: BDD Book IV (iv.iii/iv.iv/iv.v, ccel); перекрёстные ссылки `krajne-li-isporcheno-serdce`/`13`/`41`/`39` |
 
 ---
 
