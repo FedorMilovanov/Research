@@ -30,6 +30,8 @@
 | 09 | `09_SPRAVOCHNIK_DEEP_RESEARCH.md` | Справочник: углублённая хронология, библиография, глоссарий и сеть влияний | Каталог 11 книг и 9 томов с Level A ссылками (Public Domain); хронология 1697–1771 по Риппону; богословский глоссарий точных терминов (Имманентные акты, Мемра, Вечное оправдание); матрица влияний |
 | 10 | `10_ORDINANCES_AND_ECCLESIOLOGY.md` | Ординации и экклесиология: 1729 Declaration, кредобаптизм, закрытая Вечеря, антипедобаптизм, церковь/государство | 1729 Goat Yard Declaration (ст. VI/XI/XII); крещение — prerequisite Вечери; «infant-baptism — pillar of popery»; отделение церкви от гос-ва при лояльности |
 | 11 | `11_ESCHATOLOGY_MILLENNIUM.md` | Эсхатология: Book VII, тысячелетие, двухфазный премилленаризм, бессмертие души, вечные муки | Уникальное: духовное царство ДО Второго пришествия + личное 1000-летнее ПОСЛЕ (hybrid); бессмертие души из вечности завета |
+| 12 | `12_CAUSE_OF_GOD_AND_TRUTH.md` | «The Cause of God and Truth» — манифест: 4 части, Whitby, вербатим Part III (offers/sincerity/тайная воля) | Whitby Discourse on Five Points (1733/34); Part III = «arguments from reason»; вербатим: «grace is neither offered… nor bestowed»; external call ≠ universal offer; Фуллер защищал ответственность |
+| 13 | `13_TRINITY_ETERNAL_SONSHIP.md` | Троица, вечное сыновство, анти-социнианство; никейский нюанс (autotheos, асейность) | «Doctrine of the Trinity» (1731) → Body of Divinity Book I; «Without eternal generation the Trinity can never be supported»; Гилл = Кальвинов autotheos, не «communicatio essentiae» |
 
 ---
 
