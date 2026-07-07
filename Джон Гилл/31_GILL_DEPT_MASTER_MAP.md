@@ -49,6 +49,7 @@
 ## 3. Реальные оставшиеся лакуны (что ещё НЕ покрыто)
 
 1. **Суббота / Господень день у Гилла** (Sabbath/Lord's Day) — ни в одном досье.
+   - ✅ **ЗАКРЫТО досье `33_SABBATH_AND_LORDS_DAY.md`** (Суббота/Господень день, 2026-07-07): Гилл — перводневный субботарий по практике, НО отвергал creation ordinance и «моральность» 4-й заповеди (BDD Bk III Ch.8; Кол 2:16/Гал 4:10/Рим 14:5-6); напряжение с 1689 Ch.22. <!-- SABBATH-LACUNA-CLOSED -->
 2. **Неономиания / Marrow controversy глубже** — Gill vs «Neonomians»; трактат *The Doctrine of Justification by the Righteousness of Faith* (1756/1762) разобран лишь вскользь (в `12`/`22`), нет выделенного досье.
    - ✅ **ЗАКРЫТО досье `32_NEONOMIANISM_MARROW_CONTROVERSY.md`** (неономиания/Marrow, 2026-07-07): Гилл — англ. крыло общего неономианско-антиномианского фронта; *Righteousness of Christ*; вера≠причина; антиномизм отвергнут. <!-- NEONOMIANISM-LACUNA-CLOSED -->
 3. **Гилл о молитве и проповеди как пастырском служении** (Book I/III Practical Divinity) — только по касательной в `29`.
