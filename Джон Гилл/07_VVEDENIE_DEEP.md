@@ -1,0 +1,102 @@
+# Исследование: «Введение» к серии и статье «Богословие Гилла» — глубокий, умный фрейм + мощная золотая инфа
+
+> Часть 7 контентного досье Гилла (arena-auditor, 2026-07-07). Режим: исследование/фрейм, НЕ авторинг.
+> Ответ на указание владельца: *«Введение тоже нужно сделать глубже, умнее, продуманнее, больше мощной золотой инфы»*.
+> Опирается на: Rippon *Brief Memoir* (1838, PD), theopedia, ccel, reformedreader, baptists.net (Hazelton/Spurgeon/Rathel), SEBTS Rathel (2023), tonyreinke (Спёрджен о Гилле), era.ed.ac.uk (диссертация Эдинбурга), Muller *Post-Reformation Reformed Dogmatics*.
+
+---
+
+## 0. Что добыто в этом заходе (золотая инфа, проверяемая)
+
+| № | Золотой факт | Уровень | Источник |
+|---|---|---|---|
+| G1 | Писал **более десяти миллионов слов** обычным пером, сам правил корректуру; в 1770 г. в полях листа вывел: *«the last of more than ten thousand!»* | C (мемуар Риппона) | reformedreader; baptists.net/life-and-death |
+| G2 | **Первый баптист**, написавший (а) полный постиховый комментарий на **всё Писание** (*Exposition*, 1746–1763/66) и (б) **полную систематическую теологию** (*Body of Divinity*, 1769–70) | C | theopedia; SEBTS Rathel; TGC; baptists.net |
+| G3 | **51-летнее** пасторство одной церкви (Goat Yard Chapel → Carter Lane, 1719–1771). Церковь позже стала **Metropolitan Tabernacle** под Спёрдженом | C | theopedia; ccel; baptists.net |
+| G4 | Самоучка: греческий к 11, древнееврейский к 12; степень D.D. Маршаль-колледжа (Абердин) 1748 — *«I neither sought it, nor thought it, nor bought it»* | C | reformedreader; theopedia |
+| G5 | Richard Muller: Гилл — *«perhaps the most erudite of the eighteenth-century Dissenting theologies in the tradition of the older orthodoxy»* (*PRRD* 3:150) | C (академич.) | tonyreinke; SEBTS Rathel |
+| G6 | Toplady: *«If any one man can be supposed to have trod the whole circle of human learning, it was Dr. Gill»* | C | reformedreader; baptists.net |
+| G7 | Спёрджен: *«the world and the church take leave to question his dogmatism, but they both bow before his erudition»*; *«For good, sound, massive, sober sense in commenting, who can excel Gill?»* | C | tonyreinke |
+| G8 | Спёрджен (1859, закладка краеугольного камня Тэбернакла): *«His Body of Divinity has long been held in the highest repute. As the fervent exposition of an entire and harmonious creed, it has no rival»* | C | ccel (проповедь Спёрджена) |
+| G9 | Генеалогия мысли: ковенантная теология в линии **Witsius**, через **Джозефа Хасси** и **Джона Скеппа** | C | era.ed.ac.uk (Эдинбург) |
+
+---
+
+## 1. Тезис Введения (интеллектуальный фрейм)
+
+Гилл — не «суровый кальвинист-затворник», как его часто рисуют, а **последний из пуританских схоластов** и **самый эрудированный систематик баптистской традиции**. Его значимость трёхслойна:
+
+1. **Масштаб** — объём и охват корпуса не имеют аналогов в баптистской истории (G1–G3).
+2. **Метод** — строгая ковенантная ортодоксия в духе голландского реформатства (Witsius), проведённая через *всю* Библию и *всю* систему доктрин (G9, см. досье 08).
+3. **Парадокс влияния** — фигура одновременно обожаемая (Спёрджен, «Gillites») и отвергаемая («continent of mud» — Роберт Холл; «hyper-Calvinist»), что делает его чтение **интеллектуально честным упражнением**, а не партийным.
+
+> Умный ход для статьи: начать не с дат, а с **противоречия репутации** — почему один и тот же человек назван и «вершиной гипер-кальвинизма» (Спёрджен), и «самым учёным из диссентеров» (Мюллер). Это сразу задаёт глубину.
+
+---
+
+## 2. Масштаб фигуры (развёрнуто, с цитатами-якорями)
+
+- **Корпус.** Риппон (личный друг/преемник) свидетельствует: Гилл написал **более десяти миллионов слов** собственноручно и **сам читал корректуру** всего выходящего из печати (G1). За год до смерти, в 1770-м, он пометил поля: *«the last of more than ten thousand!»* — имея в виду десятитысячный лист проповеди/трактата [baptists.net/life-and-death].
+- **Две «первых».** Гилл — **первый баптист**, составивший (а) завершённый построчный комментарий на все книги Библии и (б) завершённую систематическую теологию [theopedia; SEBTS Rathel 2023, p.56; TGC]. До него ни Кальвин, ни Мэтью Генри не делали *обоих* полных трудов в рамках баптистской идентичности.
+- **Пасторство.** Goat Yard Chapel в Хорслидауне (Саутуарк), с 1757 — Carter Lane. Одна церковь, **51 год** (1719–1771). Её преемственность: Бенджамин Кич → Гилл → (через Риппона и др.) → **Metropolitan Tabernacle Чарльза Спёрджена** [theopedia; ccel; textus-receptus].
+- **Самообразование.** Греческий к 11 годам, древнееврейский — к 12; латынь освоил в грамматической школе Кеттеринга. Почётную степень D.D. Абердинского университета (1748) встретил словами: *«I neither sought it, nor thought it, nor bought it»* [reformedreader; theopedia]. Современники считали его **величайшим гебраистом эпохи**, а раввинистическую эрудицию — «never equalled outside Judaism» [reformedreader].
+- **Свидетельства эрудиции.** Augustus Toplady (автор «Rock of Ages»): *«If any one man can be supposed to have trod the whole circle of human learning, it was Dr. Gill»* [baptists.net]. Richard Muller (совр. историк Реформации): Гилл — *«perhaps the most erudite of the eighteenth-century Dissenting theologies in the tradition of the older orthodoxy»* (*Post-Reformation Reformed Dogmatics* 3:150) [tonyreinke; SEBTS].
+
+---
+
+## 3. Интеллектуальная генеалогия (почему он «умный», а не просто «суровый»)
+
+Гилл — **ковенантный богослов** в линии голландца **Германа Витзиуса** (*De Oeconomia Foederum*), чьи идеи были вложены в него в юности через **Джозефа Хасси** и **Джона Скеппа** [era.ed.ac.uk]. Отсюда — архитектура всей системы:
+
+- **Два завета:** завет дел с Адамом *во времени* и **завет благодати**, заключённый Отцом с Христом **до основания мира** ради спасения Избранных.
+- **Два «главы»** (Адам и Христос), в которых избранный одновременно — «дитя гнева» по завету дел и «оправдан от вечности» по завету благодати (см. досье 08, §1).
+- Это делает Гилла **прямым наследником пуританской «ортодоксии»** (Reformed orthodoxy), а не изобретателем «гипер-кальвинизма» ex nihilo.
+
+> Золотая мысль для Введения: Гилл писал «doctrine unpolluted with philosophy» (reformedreader о *Body of Divinity*) — т.е. сознательно держался библейского богословия против рационализма Просвещения. Это объясняет и его силу, и его «плотность».
+
+---
+
+## 4. Почему его чтут спорно (честный баланс — обязательно во Введении)
+
+- **«Гипер-кальвинизм» — открытый спор.** Rathel (2017, *Baptist Quarterly*) и Toon (1967) считают, что Гилл *был* гипер-кальвинистом; Nettles (1986), George и Ella (1995) — что *нет* [theopedia; досье 02/04]. Нюанс: Гилл утверждал **искреннее (free) предложение** Евангелия грешникам *без* предположения их возрождения, но **отвергал «duty-faith»** — будто на грешника возложена собственная способность уверовать (Ella, p.156, предостерегает от quote-mining).
+- **Критика «плотности».** Роберт Холл-старший: труды Гилла — *«a continent of mud»*; Веддер: *«more learned than perspicuous»* [SEBTS Rathel]. Это и есть причина, почему Гилла редко включают в «пантеон» баптистов.
+- **Но:** Спёрджен ставит точку — *«Gill is the Coryphaeus of hyper-Calvinism, but if his followers never went beyond their master, they would not go very far astray»* [tonyreinke]. То есть даже критик признаёт: сам Гилл — надёжный ориентир, а не эксцесс.
+
+---
+
+## 5. Влияние и наследие (почему это «золото» для читателя)
+
+- **Линия Спёрджена.** Церковь Гилла → Metropolitan Tabernacle. Спёрджен в 1855: *«my daily labour is to revive the old doctrines of Gill, Owen, Calvin, Augustine and Christ»*; свои экземпляры комментариев Гилла помечал **тремя звёздами** — «The very best!» [baptists.net/successors; tonyreinke].
+- **«Гиллиты»** — его подражатели (и повод для критики «Gillite»-ригидности); сам Спёрджен призывал *не* копировать учителя рабски [baptists.net/successors].
+- **Сохранение ортодоксии.** Lloyd-Jones (через Harrison, Evangelical Library): главная заслуга Гилла — **сохранение Троичной ортодоксии среди Particular Baptists в век «Trinitarian downgrade»** (когда многие уходили в унитарианство) [thelondonlyceum].
+- **Америка.** Его цитировали **Джонатан Эдвардс, J.L. Dagg, W.G.T. Shedd**; американские баптисты (Джесси Мерсер, Джон Леланд, Элханан Уинчестер) опирались на Гилла в спорах об условиях крещения [SEBTS Rathel; thelondonlyceum].
+- **Экуменизм баптистский.** Gill охотно цитировал паедобаптистов-реформатов в поддержку баптистских особенностей — модель «Baptist catholicity» для XXI века [TGC/themelios].
+
+---
+
+## 6. Готовые цитаты-якоря для открытия статьи
+
+1. **О призвании (Carter Lane, 1757, opening sermon, 1 Кор 2:2):** *«I am determined… what to make the subject of my ministry… not to know anything among you, save Jesus Christ, and Him crucified… none of these things move me»* [reformedreader].
+2. **О предопределении (его максимы):** *«nothing in time can be the cause of what was done in eternity… Predestination is according to the good pleasure of his will»* [reformedreader].
+3. **Спёрджен о Body of Divinity:** *«As the fervent exposition of an entire and harmonious creed, it has no rival»* [ccel].
+4. **Muller:** *«most erudite of the eighteenth-century Dissenting theologies in the tradition of the older orthodoxy»* [PRRD 3:150].
+
+---
+
+## 7. Каркас самого Введения (готовый «умный» текст, 4 абзаца-крючка)
+
+> **Абзац 1 (парадокс).** Джон Гилл (1697–1771) — фигура, которую одни называют «вершиной гипер-кальвинизма», а другие — «самым учёным богословом английского диссентерства». Обе оценки верны, и именно в их натяжении — ключ к человеку, написавшему больше десяти миллионов слов и пасторствовавшему одной лондонской церкви 51 год.
+> **Абзац 2 (масштаб).** Он — первый баптист, создавший *и* полный комментарий на всё Писание, *и* полную систематическую теологию. Его церковь стала позже Metropolitan Tabernacle Чарльза Спёрджена; его комментарии Спёрджен помечал тремя звёздами — «лучшее из возможного».
+> **Абзац 3 (метод).** За «суровостью» стоит строгая ковенантная логика в духе Витзиуса: Бог действует в вечном завете благодати, а не под давлением времени. Отсюда — самые неочевидные идеи Гилла: оправдание «от вечности» и завет как замысел Троицы (см. досье 08).
+> **Абзац 4 (зачем читать сейчас).** Читать Гилла — значит честно встретиться с баптистской ортодоксией XVIII века: её силой (библейская плотность) и её спорными гранями (predestination, free offer, закон). Эта статья — экзегетический климакс серии: от человека и учёного к самому **богословию**.
+
+---
+
+## 8. Перекрёстные ссылки
+
+- **Внутри отдела `Джон Гилл/`:** досье 01 (лакуны/первоисточники) · 02 (5 пунктов + вечное оправдание) · 03 (структура: Часть IV. Богословие) · 04 (7-текстовый экзегетический сет) · 05 (*Body of Divinity* TOC + каркас статьи) · 06 (индекс сайта + закон/антиномизм + Рим 3:31/Деян 13:48) · **08** (вечное оправдание и завет благодати — углубление §3 выше).
+- **Сайт (gb-is-my-strength):** серия `dzhon-gill` (`src/content/articles/dzhon-gill-*.mdx`): `dzhon-gill-istoricheskiy-kontekst` (это «Введение» серии — сюда ложится §7), `dzhon-gill-chast-1-chelovek`, `dzhon-gill-chast-2-uchenyi`, `dzhon-gill-chast-3-nasledie`, `dzhon-gill-spravochnik`; связки: `krajne-li-isporcheno-serdce` (total depravity), `rimlyanam-7-veruyushchiy-ili-neveruyushchiy` (закон/антиномизм), `hermenevticheskaya-otsenka-hristotsentrichnoy-germenevtiki`, `kod-da-vinchi`, серия `russian-baptism`.
+- **AuditRepo (аудиты, НЕ перенесены):** `verified/MASTER_BUG_MATRIX.md`; `incoming/arena-auditor/2026-07-06/` (D-23 RESOLVED, GREEN @ `75f807b73`).
+- **Другие отделы Research:** `БАПТИСТЫ РОССИИ` (баптистская идентичность Гилла), `СЕРИЯ СЕРДЦЕ` (антропология/сердце — смежно с total depravity и законом).
+
+> Примечание аудитора: досье — исследование/фрейм и каркас текста. Авторинг статьи и правка кода — вне режима аудитора (нужен switch в author/fix mode).
