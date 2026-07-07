@@ -1469,6 +1469,20 @@ Added:
 
 - `57_V61_VERIFIED_QUOTE_CARDS_SCOUGAL_CLARKSON_OWEN.md`
 
+## V62 update — verbatim quote-cards: Owen + Bunyan + Marshall (по первоисточнику)
+
+Added:
+
+- `58_V62_VERIFIED_QUOTE_CARDS_OWEN_BUNYAN_MARSHALL.md`
+
+Purpose: закрывает ещё 3 HIGH-priority кандидата из backlog V50/V51/V52 верификацией по первоисточнику (Monergism PDF / biblehub по первичному тексту трактатов).
+
+- **Owen** (*Dominion of Sin and Grace*, Рим 6:14): тезис трактата («Sin will be in us… but the great question is, whether it hath dominion over us or no»); различение Dominion vs Usurpation («Sin shall not have a Dominion, and set up a Throne of Iniquity in their Hearts»); признаки dominion (imagination/affections/reservation/hardness); grace vs law. ⚠️ URL ccel.org/ccel/owen/grace из V61 — 404; верный путь Monergism.
+- **Bunyan** (*Treatise of the Fear of God*): таксономия страхов (natural/ungodly/godly) + 3 verbatim; «slavish ungodly fear… confined conscience to the sense of justice only, and consequently to despair»; евангельский страх как «permanent principle, inwrought by the Divine Spirit».
+- **Marshall** (*Gospel Mystery of Sanctification*): структура 14 «направлений» + 3 verbatim; центральный тезис — освящение как «receiving out of the fullness of Christ, by fellowship with Him… mystical union»; порядок (направление 8): святость после союза/оправдания/Духа; против спасения по делам (направление 6).
+
+Маппинг на статьи: remaining vs reigning sin (O); страх Божий (B); sanctification (M+O4); религиозное сердце (M3+Clarkson).
+
 Purpose: закрывает HIGH-priority кандидатов из backlog V50/V51/V52 (статус «exact extraction needed») — превращает их в готовые для статьи quote-cards, верифицированные по первоисточнику (ccel.org / gracegems по первичному тексту проповеди). НЕ вторичка.
 
 Ключевые verbatim-добычи:
