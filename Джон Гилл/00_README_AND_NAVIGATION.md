@@ -50,6 +50,7 @@
 | 29 | `29_PRACTICAL_DIVINITY_WORSHIP_LAW.md` | Practical Divinity: поклонение/пение (ст.XII), закон как правило жизни (3-е употребление), Compendium 10 заповедей — мост к rimlyanam-7 | 5 книг (ccel); ст.XII Declaration; «free from law as covenant of works, not from it a rule of life» (BDD VI.9); псалмодия vs гимны; Рим 3:31 / Рим 7 |
 | 30 | `30_GILL_AND_GREAT_AWAKENING.md` | Гилл и Великое пробуждение / Джордж Уайтфилд — миф vs реальность, союз против Уэсли, experimental благочестие | Церковь поддерживала Уайтфилда на Kennington Common; Ella — «unsung pioneer of the Evangelical Awakening»; Toplady ценил; мост к СЕРДЦЕ и досье 12/22 |
 | 31 | `31_GILL_DEPT_MASTER_MAP.md` | МАСТЕР-КАРТА отдела: тематические кластеры (01–30), пересечения/дублирование, реальные лакуны | Кластеры A масштаб/био, B завет, C сотериология, D ординации/поклонение, E закон/освящение, F эсхатология, G Cause of God, H Троица/Писание, I структура; лакуны: суббота, неономиания, молитва/проповедь, legacy, Эдвардс |
+| 32 | `32_NEONOMIANISM_MARROW_CONTROVERSY.md` | Неономиания, Marrow controversy и Гилл: оправдание «по праведности веры» (лакуна №2 из `31`) | Бакстер/неономия = «новый закон»; Marrow (Фишер 1645, Бостон, 12 Marrow Men, 1720/22); Гилл — англ. particular-baptist крыло; *Righteousness of Christ* (1750/56/62); вера=воспринимающий глаз, не причина; антиномизм отвергнут (*Law Established by the Gospel* 1756, *Law in the Hand of Christ* 1761); мосты `08`/`12`/`26`/`29`/`30` |
 
 ---
 
