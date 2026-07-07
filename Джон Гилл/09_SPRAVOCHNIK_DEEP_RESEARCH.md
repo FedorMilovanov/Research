@@ -28,7 +28,7 @@
 | *A Dissertation Concerning the Antiquity of the Hebrew Language* | 1767 | Книга | [archive.org](https://archive.org/details/dissertationconc00gill) | Академическая защита древности еврейского языка, гласных огласовок и акцентов против рационалистов. |
 | *A Body of Doctrinal Divinity* | 1769 | 7 книг | [CCEL.org](https://ccel.org/ccel/gill/doctrinal/) | Систематическое изложение доктрин о Боге, Троице, вечных декретах, завете благодати и сотериологии. |
 | *A Body of Practical Divinity* | 1770 | 4 книги | [archive.org](https://archive.org/details/abodyofpractical00gill) | Учение о внутреннем и публичном поклонении, таинствах (крещение погружением, Вечеря) и устройстве церкви. |
-| *A Brief Memoir of the Life and Writings of John Gill, D.D.* (John Rippon) | 1838 | Мемуар | [reformedreader.org](https://www.reformedreader.org/rbb/gill/gillmemoir.htm) | Главный первоисточник биографии Гилла, написанный его преемником Джоном Риппоном. |
+| *A Brief Memoir of the Life and Writings of John Gill, D.D.* (John Rippon) | 1838 | Мемуар | [archive.org](https://archive.org/details/briefmemoiroflif00ripp) (OCR: `/stream/.../briefmemoiroflif00ripp_djvu.txt`) | Главный первоисточник биографии Гилла, написанный его преемником Джоном Риппоном. ⚠️ Ссылка `reformedreader.org/rbb/gill/gillmemoir.htm` мертва (404); рабочая — archive.org. Полная верификация фактов — досье 17. |
 
 ---
 
