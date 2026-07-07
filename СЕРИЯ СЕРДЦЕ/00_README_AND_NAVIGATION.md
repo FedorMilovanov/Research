@@ -1463,6 +1463,24 @@ but by whether it rests in them, despises them, or uses them to seek God.
 
 ---
 
+## V61 update — verbatim quote-cards: Scougal + Clarkson (по первоисточнику)
+
+Added:
+
+- `57_V61_VERIFIED_QUOTE_CARDS_SCOUGAL_CLARKSON_OWEN.md`
+
+Purpose: закрывает HIGH-priority кандидатов из backlog V50/V51/V52 (статус «exact extraction needed») — превращает их в готовые для статьи quote-cards, верифицированные по первоисточнику (ccel.org / gracegems по первичному тексту проповеди). НЕ вторичка.
+
+Ключевые verbatim-добычи:
+
+- **Scougal** (*Life of God in the Soul of Man*, CCEL): определение истинной религии — «true religion is a union of the soul with God, a real participation of the divine nature… Christ formed within us… a Divine Life»; религия как «inward, free, and self-moving principle»; «The worth and excellency of a soul is to be measured by the object of its love» (p.59).
+- **Clarkson** (*Soul Idolatry Excludes Men Out of Heaven*): определение идолопоклонства («give that honor and worship to the creature, which is due to the Creator alone»); различение внешнего vs внутреннего идолопоклонства; полная таксономия 13 актов душевного поклонения (esteem/mindfulness/intention/love/trust/fear/hope/desire/delight/zeal/...); «most sanctified natures are still a seminary of sin».
+- **Owen** (*Dominion of Sin and Grace*): локатор подтверждён (CCEL), verbatim — TODO следующей выемки.
+
+Маппинг на статьи серии: «сердце любит» (C1–C4 + S3); «новое сердце / divine life» (S1, S2); «remaining vs reigning sin» (C4 + Owen); финал серии (S1, S3).
+
+---
+
 ## V80 update — spiritual pride, false humility, self-love, religious self-display
 
 Added:
