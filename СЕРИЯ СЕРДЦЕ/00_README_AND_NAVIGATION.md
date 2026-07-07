@@ -1483,6 +1483,20 @@ Purpose: закрывает ещё 3 HIGH-priority кандидата из backl
 
 Маппинг на статьи: remaining vs reigning sin (O); страх Божий (B); sanctification (M+O4); религиозное сердце (M3+Clarkson).
 
+## V63 update — verbatim quote-cards: Reynolds + Timothy Rogers + Hooker (по первоисточнику)
+
+Added:
+
+- `59_V63_VERIFIED_QUOTE_CARDS_REYNOLDS_ROGERS_HOOKER.md`
+
+Purpose: закрывает оставшиеся HIGH/MEDIUM кандидаты из backlog V50/V51/V52 верификацией по первоисточнику (archive.org / EEBO / Monergism PDF).
+
+- **Reynolds** (*Passions and Faculties of the Soule of Man*, 1640): страсти как «natural, perfective motions» от Творца (против стоицизма); воля как «blind faculty on its own», управляемая разумом; три атрибута познания (apprehension/judgement/retention). Факультетная психология ДО Edwards.
+- **Timothy Rogers** (*Trouble of Mind and the Disease of Melancholy*, 1691): safety-layer — меланхолия как телесная болезнь («as vain to strive against it, as against a fever»); «do not attribute effects of mere Disease to the Devil»; душа и тело лечатся вместе (Word + Physick); не требовать от страдальца невозможного («broken bones»).
+- **Hooker** (*Poor Doubting Christian Drawn to Christ*): 4 препятствия к приходу ко Христу (presumptuous security → reformation of life → self-wrought faith → means of grace as mechanics); корень — «our Pride and Haughtiness… we would have something from ourselves, and not all from him».
+
+Все HIGH и MEDIUM кандидаты V50/V51/V52 закрыты (остались только LOW: Erskine poetry, Fisher Marrow).
+
 Purpose: закрывает HIGH-priority кандидатов из backlog V50/V51/V52 (статус «exact extraction needed») — превращает их в готовые для статьи quote-cards, верифицированные по первоисточнику (ccel.org / gracegems по первичному тексту проповеди). НЕ вторичка.
 
 Ключевые verbatim-добычи:
