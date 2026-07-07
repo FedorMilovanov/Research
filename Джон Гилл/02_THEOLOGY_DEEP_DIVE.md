@@ -10,10 +10,10 @@
 ## 1. Пять пунктов кальвинизма — позиция Гилла
 
 В *The Cause of God and Truth* (1735–38) Гилл систематически защищает (против Уитбя): (1) вечное избрание и отвержение, (2) limited/particular atonement, (3) непреодолимую благодать, (4) претерпение святых — плюс тотальное развращение как основание. В *Body of Doctrinal Divinity* (1769–73) это сведено в систему:
-- **Избрание и отвержение** — Кн.II «Of the Special Decrees of God… Particularly of Election» / «Of the Decrees of Rejection, of Some Angels, and of Some Men».
+- **Избрание и отвержение** — Кн.II «Of the Special Decrees of God… Particularly of Election» / «Of the Decrees of Rejection, of Some Angels, and of Some Men». ⚠️ **Верифицировано вербатим ccel Book II ch.3 (досье 27 §1, Level A):** Гилл предпочитает термин «rejection» (а не «reprobation»: «through wrong and frightful ideas being affixed to it»); двучастная структура — non-election/preterition + appointment to wrath; **супралапсарий** («pure mass of creatureship», не corrupt mass). «Золотая» цитата-полемика: возражения против reprobation продиктованы «partiality to ourselves».
 - **Particular redemption** — Христова смерть действенно обеспечивает спасение только избранным; намерение и применение ограничены вечным определением (Grokipedia; собств. Confession, арт.VI).
 - **Непреодолимая (действенная) благодать** — Дух применяет искупление к избранным, преодолевая природную вражду (effectual calling).
-- **Претерпение святых** — собств. Confession, арт.IX.
+- **Претерпение святых** — собств. Confession, арт.IX. ⚠️ **Верифицировано вербатим ccel Book VI ch.15 (досье 27 §3, Level A):** «those who are truly regenerated, effectually called… shall persevere in grace to the end… shall never finally and totally fall, so as to perish everlastingly». Библейские якоря: Иов 17:9, Пс 94:14, Пс 125:1-2. Тождество с Declaration of Faith арт.IX и Cause of God and Truth Section L (Евр 6:4-6).
 - **Тотальное развращение** — бессилие воли после грехопадения; невозрождённый духовно мёртв.
 
 ## 2. Заветная теология (coventant theology) — его собственные слова
