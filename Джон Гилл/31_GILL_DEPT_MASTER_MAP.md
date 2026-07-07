@@ -76,3 +76,9 @@
 ## 3b. НОВЫЕ УГЛЫ (после закрытия 6 лакун `31`) <!-- NEW-ANGLE-POLITICAL-THEOLOGY -->
 
 - **Политическая теология Гилла — гражданский магистрат, «два царства», outlier-статус** → досье `38` (`38_THE_POLITICAL_THEOLOGY.md`). НЕ входило в 6 исходных лакун; расширяет кластер D (church, state). Дополняет `14` (отделение ОТ госцеркви) и `10` (церковь/государство). Первоисточник Level A: *Body of Practical Divinity* Bk IV Ch.4 (ccel); *Body of Doctrinal Divinity* 2:696–708 (two-fold kingdom). Outlier-статус зафиксирован по 9Marks (Finn) и Clary 2024.
+
+---
+
+## 3c. НОВЫЕ УГЛЫ (после закрытия 6 лакун `31`) <!-- NEW-ANGLE-PNEUMATOLOGY -->
+
+- **Пневматология Гилла — применение искупления Духом (возрождение, действенное призвание, освящение, свидетельство/запечатление Духа)** → досье `39` (`39_THE_PNEUMATOLOGY_SPIRIT_APPLICATION.md`). НЕ входило в 6 исходных лакун; расширяет кластеры C (сотериология) и H (Троица/Дух). Дополняет `13` (Лицо Духа), `08` (оправдание vs освящение), `26`, `34`, `30`. Первоисточник Level A: *Body of Doctrinal Divinity* ch.14 «Of Sanctification» (ccel) + Exposition Romans 8 (thekingsbible).
