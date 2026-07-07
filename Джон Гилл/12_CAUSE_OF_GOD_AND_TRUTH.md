@@ -1,7 +1,7 @@
 # Исследование: «The Cause of God and Truth» — манифест Гилла (ч.12)
 
 > Часть 12 контентного досье Гилла (arena-auditor, 2026-07-07). Режим: исследование, НЕ авторинг.
-> Опирается на **собственный текст Гилла** (Level A, PD): *The Cause of God and Truth* (4 ч., 1735–38; preface = Google Books; Part III гл. об «offers/sincerity» — calvinandcalvinism; Reprobation — primitivebaptist.net). Вторично: SBJT 25.1 (Scheiderer), baptists.net (Cause of God and Truth 1–2), monergism.
+> Опирается на **собственный текст Гилла** (Level A, PD): *The Cause of God and Truth* (4 ч., 1735–38; предисловие верифицировано по archive.org; Part III Ch I «Of Reprobation» — archive.org, стр. 276, верифицировано). ⚠️ Ранее «offers/heralds»-цитаты цитировались по вторичке (calvinandcalvinism.com, primitivebaptist.net) — см. переатрибуцию §3 + досье 21. Вторично: SBJT 25.1 (Scheiderer), baptists.net, monergism.
 
 ---
 
@@ -35,10 +35,12 @@
 
 ## 3. ВЕРБАТИМ: Part III — рациональные аргументы (золотые цитаты)
 
-**(а) Искренность Евангелия / «offers»** — *Cause of God, Part 3, Chapter 1:4.6*:
-> «And as for the non-elect, grace is neither offered to them, nor bestowed on them, and therefore there can be no falsehood or hypocrisy, dissimulation or guile… in the divine conduct towards them».
-> «it should first be proved, that there are any offers of grace at all, made to any, whether elect, or non-elect. The gospel is not tendered to the elect, but is the power of God unto salvation to them. The grace of God is bestowed upon them, applied to them, and wrought in them, but not offered».
-> «The ministers of the gospel are sent to preach the gospel to every creature (Mark 16:15)… not to offer, but to preach Christ… The ministers are kerukas, criers or heralds; their business is kerussein, to proclaim aloud, to publish facts, to declare things that are done, and not to offer them to be done on conditions; as when a peace is concluded and finished, the herald's business… is to proclaim the peace, and not to offer it».
+**(а) Искренность Евангелия / «offers»** — ⚠️ **переатрибуция (досье 21 §3):** ранее цитировалось как *«Cause of God, Part 3, Ch 1:4.6»* (по calvinandcalvinism.com). Однако сама страница-источник маркирует «heralds/kerukas»-цитату как **«SERMON 95. AN ANSWER TO THE BIRMINGHAM DIALOGUE-WRITER»** из посмертных *Sermons and Tracts* (3 тт. quarto), а **не** из *Cause of God and Truth*. Гилл учил эту доктрину и там, и тут, но формально цитата — из Проповеди 95. Подлинные первичные якоря той же доктрины **в самом *Cause*** (Level A, archive.org):
+> «The ministers are kerukas, criers or heralds; their business is kerussein, to proclaim aloud, to publish facts, to declare things that are done, and not to offer them to be done on conditions; as when a peace is concluded and finished, the herald's business… is to proclaim the peace, and not to offer it». — **Sermon 95 «An Answer to the Birmingham Dialogue-Writer»** (*Sermons and Tracts*; Гилл ссылается вперёд на Cause Part I).
+
+> «that [the ministry of the word] is **not an offer** of reconciliation to the world; but a **proclamation or declaration of peace**, made by the blood of Jesus». — ***Cause of God and Truth*, Part I, Section XL** (разбор 2 Кор 5:19; archive.org chunk 40, стр. 80) — подлинный первичный якорь внутри *Cause*.
+
+> «And as for the non-elect, grace is neither offered to them, nor bestowed on them, and therefore there can be no falsehood or hypocrisy, dissimulation or guile… in the divine conduct towards them». *(трудность: точная SECTION в *Cause* требует подтверждения; доктрина подтверждена первичными якорями выше).*
 > «the gospel is a declaration of salvation already wrought out by Christ, and not an offer of it on conditions to be performed by man».
 
 **(б) Тайная vs открытая воля (reprobation/sincerity)** — *Cause of God, Of Reprobation*:
@@ -69,7 +71,7 @@
 
 - **Внутри отдела:** 02 (5 пунктов + баланс гипер-кальвинизма) · 04 (Cause 4 части из предисловия) · 06 (Cause Part III «arguments from reason») · 07 (влияние/спор) · 08 (вечное оправдание — тот же нерв «offer vs decree»).
 - **Сайт:** серия `dzhon-gill`; `rimlyanam-7-…` (закон/антиномизм — Гилл отвечал установлением закона); `krajne-li-isporcheno-serdce`.
-- **Первоисточники (Level A, PD):** archive.org (Cause of God and Truth, Tegg 1838); calvinandcalvinism.com (Part III verbatim); primitivebaptist.net (Reprobation verbatim); Google Books preface.
+- **Первоисточники (Level A, PD):** archive.org (Cause of God and Truth, Tegg 1838): Part III Ch I «Of Reprobation» = chunk 132–133, стр. 276; Part I Section XL (2 Кор 5:19, «proclaim not offer») = chunk 40, стр. 80; Section XLV (1 Тим 2:4) = стр. 91–96; Section LVI (2 Пет 3:9) = стр. 115–117. *Sermons and Tracts* (3 тт. quarto) — Sermon 95 «Birmingham Dialogue-Writer» (источник «heralds/kerukas»). ⚠️ calvinandcalvinism.com / primitivebaptist.net — вторичная репродукция (см. переатрибуцию §3 + досье 21). Google Books preface — заменён на archive.org.
 - **Вторично (Level C):** SBJT 25.1 (Scheiderer, 2021); baptists.net (Cause of God and Truth 1–2); monergism (Cause of God and Truth eBook).
 
 > Примечание аудитора: досье — исследование/вербатим-цитаты. Авторинг статьи — вне режима аудитора.
