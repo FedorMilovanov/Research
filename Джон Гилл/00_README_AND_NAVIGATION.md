@@ -55,6 +55,7 @@
 | 34 | `34_PRAYER_AND_PREACHING_PASTORAL.md` | Молитва и проповедь у Гилла как пастырское служение (лакуна №3 из `31`) | BDD Book III: Ch.3 «Public Ministry of the Word», Ch.5 «Of Public Prayer» (Trinitарная: к Отцу чрез Сына Духом); пастырские трактаты «Duty of a Pastor» / «Work of a Gospel Minister»; охрана кафедры (TGC); experiential piety; мосты `13`/`29`/`15`/`30` |
 | 35 | `35_LEGACY_GILLITES_GOSPEL_STANDARD.md` | Наследие Гилла: «Гиллиты» → Strict/Particular Baptists → Gospel Standard (лакуна №4 из `31`) | Раскол Gillites (Goat Yard 1729) vs Fullerites (1689) после 1785 Fuller; Гэдсби; High-Calvinist траектория; Спёрджен — НЕ гиллит (честный нюанс); мосты `10`/`14`/`30`/`08`/`12`/`25` |
 | 36 | `36_GILL_AND_JONATHAN_EDWARDS_AMERICAN.md` | Гилл и Джонатан Эдвардс / американские баптисты (лакуна №5 из `31`) | Эдвардс ЦИТИРУЕТ Гилла (Freedom of the Will §6; Remarks 7.28 → Cause of God/Whitby); оба отвечали Уитби; Троица-параллель; Морган Эдвардс→Brown; Бостонский трактат; мосты `35`/`12`/`30`/`13`/`10` |
+| 37 | `37_HERMENEUTICS_SYSTEMATIC.md` | Герменевтика Гилла системно: regula fidei, буквализм, типология, аллегория, раввинистика (лакуна №6 из `31`) | Синтез 5 координат: Рим 12:6 (правило веры=Piscator/Pareus/Tertullian), буквализм пророчеств/Масоры, типология (Кол 2:17), аллегория Песни (1728), раввинистика (Lightfoot of Baptists); мосты `02`/`15`/`16`/`18`/`24`/`13`/`36` |
 
 ---
 
