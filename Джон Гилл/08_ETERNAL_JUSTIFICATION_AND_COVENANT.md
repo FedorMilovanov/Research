@@ -17,7 +17,7 @@
 
 Источник: *Body of Divinity*, Book II, «Of Other Eternal and Immanent Acts in God, Particularly Adoption and Justification» (ccel doctrinal.iii.v).
 
-**Тезис Гилла:** оправдание — *«not only before faith, but it is from eternity, being an immanent act in the divine mind, and so an internal and eternal one»*. Оно выводится из вечного избрания: *«Who shall lay anything to the charge of God's elect? it is God that justifieth»* (Рим 8:33) выражено как *прошедшее* действие — так же, как «Он избрал нас» и «благословил… прежде основания мира» (Еф 1:3–4).
+**Тезис Гилла (вербатим из первоисточника, ccel Book II ch.5):** оправдание — *«an act internal and eternal, taken up in the divine mind from eternity, and is an immanent, abiding one in it»*. Гилл различает **active** (вечная, в разуме Божьем) и **passive** (во времени, в сознании верующего) justification: *«Active justification is the act of God; it is God that justifies. Passive justification is the act of God, terminating on the conscience of a believer, commonly called a transient act»*. Scholastic-якорь: Гилл опирается на д-ра Эймса (*Medulla Theologiae*): *«a sentence conceived in the divine mind, by the decree of justifying»*. Оно выводится из вечного избрания: *«as God's will to elect, is the election of his people, so his will to justify them, is the justification of them»* (Рим 8:33). ⚠️ Ранее цитата давалась в перефразе — заменена на вербатим Level A (досье 23 §2).
 
 **Разрешение парадокса (два главы / два завета):** избранный рассматривается одновременно
 - *в Адаме* (глава завета дел) → «по природе — дети гнева, как и прочие»;
@@ -58,7 +58,7 @@
 
 ## 5. Золотые цитаты-якоря (готовые)
 
-1. *«Justification is not only before faith, but it is from eternity, being an immanent act in the divine mind»* — Body of Divinity II (ccel).
+1. *«Justification… is an act internal and eternal, taken up in the divine mind from eternity»* + *«as God's will to elect, is the election of his people, so his will to justify them, is the justification of them»* — Body of Divinity II ch.5 (ccel, **вербатим Level A**, вериф. досье 23 §2; scholastic-якорь: Эймс, *Medulla Theologiae*).
 2. *«as in Christ… they are justified, and saved from condemnation»* (два главы/два завета) — Body of Divinity II (ccel).
 3. Witsius: акт Божий — *«the general justification of the elect»* — цитируется Гиллом (ccel).
 4. *«eternity… is the place where God… dwells and from whence He works His purpose out»* (ответ критикам) — baptists.net/reformation-today.
