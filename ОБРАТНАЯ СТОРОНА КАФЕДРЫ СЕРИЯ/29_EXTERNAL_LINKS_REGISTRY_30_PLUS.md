@@ -1,8 +1,8 @@
-# ИССЛЕДОВАНИЕ: Реестр верифицированных внешних ссылок (41 независимая ссылка Level A / B+)
+# ИССЛЕДОВАНИЕ: Реестр верифицированных внешних ссылок (37 независимых ссылок Level A / B+)
 
 > **Статус:** верифицированный внешний реестр (для серии «Обратная сторона кафедры / 20 антисоветов»).
 > **Дата:** 2026-07-07. **Объект:** сплошной интернет-поиск официальных отчётов, судебных документов и журналистских расследований.
-> **Цель:** собрать в едином мастер-досье 41 проверенная внешняя ссылка, являющихся доказательным фундаментом для 27 кейсов и матрицы 20 антисоветов. Никаких битых или вымышленных ссылок.
+> **Цель:** собрать в едином мастер-досье 37 проверенных внешних ссылок, являющихся доказательным фундаментом для 27 кейсов и матрицы 20 антисоветов. Никаких битых или вымышленных ссылок.
 
 ---
 
@@ -54,10 +54,6 @@
 | 35 | U.S. Department of Education: Официальный отчёт расследования Clery Act по Liberty University ($14 млн штраф при Jerry Falwell Jr.) | 2024 | [washingtonpost.com report](https://www.washingtonpost.com/education/2024/03/05/report-liberty-university-clery-act-violations/) |
 | 36 | Washington Post: Рекордный штраф $14 млн для Liberty University за системное сокрытие данных о безопасности | 2024 | [washingtonpost.com news](https://www.washingtonpost.com/education/2024/03/05/liberty-university-clery-act-education-department-report/) |
 | 37 | Chronicle of Higher Education: Анализ системных нарушений безопасности и управления в Liberty University | 2024 | [chronicle.com report](https://www.chronicle.com/article/liberty-u-fined-14-million-by-education-dept-over-extensive-violations-of-clery-act) |
-| 38 | Christianity Today: Разоблачение сокрытого романа 2014 года и увольнение Tullian Tchividjian из Willow Creek PCA | 2016 | [christianitytoday.com news](https://www.christianitytoday.com/2016/03/tullian-tchividjian-confesses-second-affair-coral-ridge/) |
-| 39 | Christian Post: Заявления совета Coral Ridge и South Florida Presbytery о лишении сана Чивиджяна | 2016 | [christianpost.com news](https://www.christianpost.com/news/coral-ridge-elders-knew-of-tullian-tchividjians-affair-with-married-woman-advised-him-to-keep-secret-source-alleges.html) |
-| 40 | Spiritual Sounding Board: Библиография и анализ системного духовного абьюза в деле Tullian Tchividjian | 2016 | [spiritualsoundingboard.com](https://spiritualsoundingboard.com/2016/03/18/resource-bibliography-on-system-issues-related-to-the-tullian-tchividjian-situation/) |
-| 41 | Официальные обвинения 21 старейшины Mars Hill Church против Mark Driscoll (Formal Charges PDF) | 2014 | [wthrockmorton.com pdf](https://www.wthrockmorton.com/wp-content/uploads/2014/08/FormalCharges-Driscoll-814.pdf) |
 
 ---
 
