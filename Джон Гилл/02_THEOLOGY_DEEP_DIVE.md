@@ -18,9 +18,13 @@
 
 ## 2. Заветная теология (coventant theology) — его собственные слова
 
-Гилл — ковенант-богослов (под влиянием Witsius через Skepp/Hussey). Его формулировка завета благодати (*Body of Divinity*, Кн.IV; цит. Puritan Board):
+Гилл — ковенант-богослов (под влиянием Witsius через Skepp/Hussey). Его формулировка завета благодати (*Body of Divinity*, **Book II ch.7**, вербатим ccel Level A — см. ниже):
 
-> «I have considered the covenant of grace in a former part of this work, as it was a compact in eternity, between the three divine persons, Father, Son, and Spirit; in which each person agreed to take his part in the economy of man's salvation… The covenant of grace is but one and the same in all ages, of which Christ is the substance… there never was any other way… no other name… by which men can be saved.»
+> **Цитата завета благодати (вербатим из первоисточника, ccel Book II ch.7, Level A — досье 25 §3):** *«The covenant of grace is a compact or agreement made from all eternity among the divine Persons, more especially between the Father and the Son, concerning the salvation of the elect.»* Плюс: *«The covenant of grace made between God and Christ, and with the elect in him, as their Head and Representative, is a proper covenant, consisting of stipulation and restipulation.»*
+
+> **Важный нюанс (Гилл опровергает «два завета» в вечности):** *«there is but one covenant of grace, and not two»* — Гилл отождествляет «covenant of redemption» и «covenant of grace» (ccel ch.7). Это против распространённого misconcept'а о «двух вечных заветах».
+
+> **Две администрации во времени (из *Body of Divinity* Book IV, вербатим):** *«The covenant of grace is but one and the same in all ages, of which Christ is the substance… there never was any other way… no other name… by which men can be saved.»* → *«there are different administrations of it; particularly two, one before the coming of Christ, and the other after it… fitly described… by two women, Hagar and Sarah, the bondwoman and the free (Gal. 4:22-26).»*
 
 > «there are different administrations of it; particularly two, one before the coming of Christ, and the other after it… by the first and old covenant… is meant the first and most ancient administration of the covenant of grace which reached from the fall of Adam… unto the coming of Christ… called therefore the 'second' and 'new' covenant. The one we commonly call the Old Testament dispensation, and the other the New Testament dispensation… fitly described… by two women, Hagar and Sarah, the bondwoman and the free (Gal. 4:22-26).»
 
