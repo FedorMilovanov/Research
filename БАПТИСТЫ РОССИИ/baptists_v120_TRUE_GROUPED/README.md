@@ -41,6 +41,14 @@ v104 продолжает TRUE GROUPED-архитектуру: новые све
 Продолжен grouped-подход: закрыт блок `Бюллетень СРУ 1980` по карточкам №75–79, №82, №84–86 и `Вестник Спасения 1967 №3(19)` до уровня `holdings/page`; `quote_ready` не выставлен.
 
 
+## v126 update — ПЕРВЫЙ QUOTE_READY (прорыв: открыт rusbaptist.stunda.org)
+
+**Главная находка:** `rusbaptist.stunda.org/08.htm` — открытый архив ВСЕХ корпусов самиздата СЦ ЕХБ с **text-layer PDF** (не изображения), что снимает главное препятствие, зафиксированное в v103-v125: «ни одна строка не помечена quote_ready, потому что нет полного цикла локальный файл/скан + OCR».
+
+**Первый `quote_ready`:** Вестник спасения 1965 №3 (молодёжный выпуск) — `rusbaptist.stunda.org/vestnikspasenia/1965-3.pdf`. Извлечено 4 quote-cards (QC-1 «Обращение к молодежи церкви ЕХБ» — раскол как «богопротивные человеческие постановления»; QC-2 программа духовной жизни; QC-3 гимн «Христианской молодежи»; QC-4 «Где путь?»). См. `groups/07_FIRST_QUOTE_READY_VESTNIK_SPASENIYA_1965_3.md`. PROOF_STATUS_LEDGER.csv: теперь 1 строка `quote_ready` (было 0).
+
+**Roadmap:** отдельные выпуски Вестника спасения открываются стабильно (по одному); большие сборные PDF (Bulleten-SRU.pdf, vi/1982-3.pdf) — требуют обхода 500-ошибки. Приоритет: 1963 №1 (программное заявление СЦ ЕХБ), 1971 №1 (год СРУ), Бюллетень СРУ 1971 №1 (Лидия Винс).
+
 ## v108
 
 Focused pass: more issue rows moved to holdings/page verified, but quote-ready remains blocked by lack of local scans/OCR/visual check.
