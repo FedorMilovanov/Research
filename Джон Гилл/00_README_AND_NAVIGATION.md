@@ -58,6 +58,7 @@
 | 37 | `37_HERMENEUTICS_SYSTEMATIC.md` | Герменевтика Гилла системно: regula fidei, буквализм, типология, аллегория, раввинистика (лакуна №6 из `31`) | Синтез 5 координат: Рим 12:6 (правило веры=Piscator/Pareus/Tertullian), буквализм пророчеств/Масоры, типология (Кол 2:17), аллегория Песни (1728), раввинистика (Lightfoot of Baptists); мосты `02`/`15`/`16`/`18`/`24`/`13`/`36` |
 | 38 | `38_THE_POLITICAL_THEOLOGY.md` | Политическая теология Гилла: гражданский магистрат как «guardian of both tables», доктрина «двух царств» (BDD 2:696–708), Гилл — outlier/establishmentarian среди баптистов (новый угол, не из 6 лакун `31`) | Первоисточник BDD Bk IV Ch.4 (ccel, Level A); two-fold kingdom; перекрёстные ссылки `10`/`14`/`11`/`35` |
 | 39 | `39_THE_PNEUMATOLOGY_SPIRIT_APPLICATION.md` | Пневматология Гилла: применение искупления Духом (возрождение — человек «wholly passive», освящение = «sanctification of the Spirit», свидетельство/ходатайство Духа по Рим 8) — новый угол, не из 6 лакун `31` | Level A: BDD ch.14 (ccel) + Exposition Romans 8 (thekingsbible); перекрёстные ссылки `13`/`08`/`26`/`34`/`30` |
+| 40 | `40_THE_CHRISTOLOGY_PERSON_OF_CHRIST.md` | Христология Гилла: ипостасное единство, communicatio idiomatum (Акт 20:28; Ин 3:13), воплощение (второе Лицо, не сущность), состояния уничижения/прославления, отвержение descensus ad inferos — новый угол, не из 6 лакун `31` | Level A: BDD Book VI (vi.i/vi.v/vi.vi, ccel); перекрёстные ссылки `13`/`32`/`37`/`08`/`38` |
 
 ---
 
