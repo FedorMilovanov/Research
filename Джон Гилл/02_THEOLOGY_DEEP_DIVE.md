@@ -50,18 +50,41 @@
 
 Гилл учил оправдание как вечный/имманентный акт Бога (до и вне веры человека) — *Body of Divinity* Кн.II, ch. «Of Other Eternal and Immanent Acts in God, Particularly Adoption and Justification». Это один из самых «гипер-кальвинистских» пунктов; защищался им наряду с Ames, Goodwin, Twisse, Owen. Важно для статьи: подать сбалансированно (это не отменяет оправдание верой в применении, но переносит его основание в вечный замысел).
 
-## 5. Крещение и церковь
+## 5. Раввинистическая, гебраистическая и арамейская герменевтика Гилла (Level A)
+
+Главная уникальность Джона Гилла среди комментаторов XVIII века — глубочайшее владение древнееврейским, арамейским, сирийским языками и литературой Второго Храма (Талмуд, Мишна, Таргумы Онкелоса и Ионафана бен Уззиэля, средневековые комментаторы Маймонид, Раши, Авраам ибн Эзра, Кимхи). В *Exposition of the New Testament* Гилл систематически привлекает еврейские корни для объяснения новозаветных идиом и культурного контекста:
+
+### Ин 1:1 — Логос («Слово») и арамейский термин «Мемра» (מימרא)
+В комментарии на Евангелие от Иоанна 1:1 Гилл опровергает утверждения унитариев и демонстрирует, что апостол Иоанн использует термин «Слово» в полном согласии с иудейскими арамейскими переводами Ветхого Завета (Таргумами):
+> «This is no strange and unusual way of speaking with the Jews, to call the divine Person, the Messiah, 'the Word of the Lord'; by which they understand not the word of his mouth... but a divine Person. So in the Targum of Onkelos on Gen. 28:20, Jacob's vow is rendered, 'If the Word of the Lord will be my help...' And in Targum Jonathan on Isa. 45:17 it is rendered, 'Israel shall be saved by the Word of the Lord...' It is frequent in the Chaldee paraphrases, to ascribe divine characters, perfections, and actions to the Memra, or Word of God.»
+
+→ Для статьи: Иоанн не заимствовал «Логос» из греческой философии (Платон/Филон), а опирался на библейско-иудейскую традицию «Мемры Бога» как божественной Личности Мессии.
+
+### Мф 5:17 — «Не нарушить Закон, но исполнить» и Талмуд
+Разбирая Нагорную проповедь, Гилл приводит точную параллель из Вавилонского Талмуда (трактат Шаббат 116b), показывая, как Христос использует привычную раввинистическую терминологию для утверждения Своего авторитета:
+> «Our Lord here speaks in the language of the Jews, who use the words לבטל (to abolish or destroy) and לקיים (to confirm or fulfil) concerning the law... In the Talmud it is recorded: 'I am not come to take away from the law of Moses, nor am I come to add to the law of Moses'... Christ came not to destroy the moral law, but to fulfil its righteous demands by his perfect obedience in the room and stead of his people.»
+
+## 6. Практическое богословие, экклезиология и баптистская идентичность
+
+В *A Body of Practical Divinity* (1770, Книги I–IV) Гилл выстраивает бескомпромиссно конгрегационалистскую и кредобаптистскую экклезиологию:
+- **Кредобаптизм погружением (Believer's Immersion):** В Книге III Гилл доказывает, что единственным библейским субъектом водного крещения является возрождённый верующий, исповедующий личную веру в Христа, а единственным модусом — полное погружение в воду (*immersion*), символизирующее погребение и воскресение (Рим 6:3-4). Педобаптизм (крещение младенцев) отвергается как человеческая традиция без библейского предписания.
+- **Закрытое причастие (Strict Communion):** Согласно собственной *Declaration of Faith* (арт. XI), водное крещение по вере является обязательным условием для членства в поместной церкви и допуска к Вечере Господней.
+- **Автономия поместной церкви:** Отвергая англиканскую иерархию и пресвитерианский синодализм, Гилл настаивает, что истинная Евангельская церковь — это поместное собрание возрождённых верующих, подчинённое исключительно Христу как Главе, управляемое двумя библейскими чинами: пресвитерами/пасторами и диаконами (*Practical Divinity*, Кн. II, гл. 3).
+
+## 7. Крещение, отделение церкви и гражданский статус
+(Дополняет §6 выше: диссентерский контекст и противостояние Церкви Англии)
+
 
 - **Кредобаптизм** — крещение только верующих погружением; его главная претензия к Церкви Англии (Edinburgh thesis). Собств. Confession, арт.XI: крещение — необходимое условие Вечери.
 - **Отделение церкви от государства** — непримиримый диссентер; только автономные конгрегациональные церкви.
 
-## 6. Спор о «гипер-кальвинизме» — сбалансированно
+## 8. Спор о «гипер-кальвинизме» — сбалансированно
 
 - **Критика:** Edinburgh thesis (era.ed.ac.uk): «hyper-Calvinist theology had a withering effect upon his denomination»; называет комментарий «virtually valueless today», Гилла «not a trustworthy scholar». Rathel (2017) и Toon — Гилл БЫЛ гипер-кальвинистом (отвергал gospel offer и duty-faith).
 - **Защита:** Ella (*John Gill and the Cause of God and Truth*), Nettles (*By His Grace and for His Glory*), George — Гилл НЕ был. Ключевой нюанс (Grokipedia): «evidence from his preaching and writings indicates he affirmed the gospel's free offer to sinners without presuming regeneration as a prerequisite» — т.е. он ПРЕДЛАГАЛ Евангелие грешникам, но отвергал «duty-faith» (обязанность невозрождённого уверовать). Это тонкое, но решающее различие.
 - **Для статьи:** обязательно подать обе стороны; не сводить к ярлыку.
 
-## 7. Предлагаемый план статьи «Богословие Джона Гилла» (с цитатами)
+## 9. Предлагаемый план статьи «Богословие Джона Гилла» (с цитатами)
 
 1. **Введение** — Гилл как первый баптист-систематик; контекст (см. ч.1, Исторический контекст).
 2. **Метод и завет** — ковенант-богословие (цит. §2 выше); завет благодати, две администрации.
@@ -72,7 +95,7 @@
 7. **Спор о гипер-кальвинизме** (§6) — сбалансированно.
 8. **Заключение** — значение для баптистской и реформатской традиции.
 
-## 8. Перекрёстные ссылки
+## 10. Перекрёстные ссылки
 - **Ч.1 (лакуны + первоисточники):** `./RESEARCH_gill-series-gaps-primary-sources_2026-07-06.md`
 - **Матрица:** `../verified/MASTER_BUG_MATRIX.md`
 - **Первоисточники:** *Exposition* `johngill.thekingsbible.com` (1 Tim 2:4 → `/CommentaryVerse/54/2/4`; Ин 3:16 → `/CommentaryVerse/43/3/16`; 2 Пет 3:9 → `/CommentaryVerse/61/3/9`); *Cause of God and Truth* `archive.org/details/causeofgodtruthi00gill`; *Body of Divinity* `archive.org/.../a-body-of-doctrinal-divi_gill-john_1769_1` + `_1770_3`, CCEL `ccel.org/ccel/gill/doctrinal/`; собств. Confession `reformedreader.org/ccc/johngilldeclarationoffaith.htm`

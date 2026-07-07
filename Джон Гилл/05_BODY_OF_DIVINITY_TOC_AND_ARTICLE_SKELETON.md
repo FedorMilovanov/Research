@@ -55,6 +55,17 @@
 - **Book VII. Of the Final State of Men**: смерть; бессмертие души; состояние до воскресения; воскресение; второе пришествие; конфлаграция; новые небеса/земля; тысячелетие; суд; участь нечестивых (ад); участь святых (небо).
 - **Indexes**: Scripture, Greek, Hebrew, Latin.
 
+### 3.1. Полное оглавление *A Body of Practical Divinity* (1770, 4 книги — практическая экзегеза и экклезиология)
+
+Вторая половина систематического труда Гилла (*Practical Divinity*) переводит доктрину в плоскость христианской жизни, поклонения и церковного устройства:
+
+- **Book I. Of the Worship of God, or Practical Religion (Internal Worship)** (21 гл.):
+  Ch. 1: Of the Worship of God. Ch. 2: Of the Fear of God. Ch. 3: Of Trust and Confidence in God. Ch. 4: Of Love to God. Ch. 5: Of Love to Christ. Ch. 6: Of the Hope of Eternal Life. Ch. 7: Of Faith in God and Christ. Ch. 8: Of Repentance towards God. Ch. 9: Of Humility. Ch. 10: Of Self-Denial. Ch. 11: Of Resignation to the Will of God. Ch. 12: Of Patience. Ch. 13: Of Christian Fortitude. Ch. 14: Of Zeal. Ch. 15: Of Wisdom or Prudence. Ch. 16: Of Godliness. Ch. 17: Of Good Works in General. Ch. 18: A Compendium of the Ten Commandments. Ch. 19–21: Duties to God and Man.
+- **Book II. Of External Worship, as Public** (11 гл.):
+  Ch. 1: Of the Nature of a Gospel Church. Ch. 2: Of the Duties of Church Members. Ch. 3: Of Church Officers (Pastors/Elders, Deacons). Ch. 4: Of the Exercise of Gifts. Ch. 5: Of Public Prayer. Ch. 6: Of Preaching the Word. Ch. 7: Of Hearing the Word. Ch. 8: Of the Public Ministry of the Word. Ch. 9: Of Singing Psalms, Hymns, and Spiritual Songs. Ch. 10: Of Baptism (водное крещение верующих погружением). Ch. 11: Of the Lord's Supper.
+- **Book III / IV. Of Church Ordinances and Government:**
+  В расширенных изданиях разделы о таинствах (Крещение и Вечеря) выносятся в Книгу III, а дисциплина, отлучение и внутрицерковное управление составляют Книгу IV.
+
 ---
 
 ## 4. Конкретный каркас статьи «Богословие Гилла» (следует порядку Гилла)
