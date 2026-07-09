@@ -1,86 +1,145 @@
 # Джон Гилл (1697–1771) — исследовательский отдел
 
-**Дата создания:** 2026-07-06  |  **Режим:** консолидация исследований Гилла из AuditRepo → Research (по указанию владельца; «чтобы не путаться»).
-**Canonical home:** это папка — единственное место хранения исследований по Гиллу. Аудит-отчёты (баги/CI) остаются в `FedorMilovanov/AuditRepo` (см. ссылки ниже) — они НЕ перенесены.
+**Дата создания:** 2026-07-06  
+**Последняя интеграционная сверка:** 2026-07-09  
+**Research snapshot:** `main@58e1ea5fab638812ae693a1d0b1e79c4dcb47131`  
+**Site snapshot, проверенный audit:** `gb-is-my-strength@d00715e95b45a32872aae7e00a3030b4c0bf5c12`
 
-Связь с сайтом: результаты ложатся в основу серии `dzhon-gill` на [gb-is-my-strength](https://github.com/FedorMilovanov/gb-is-my-strength) (5 частей + Справочник). План: добавить сфокусированную статью **«Богословие Гилла»** (Часть IV, экзегетический климакс).
+> **Canonical home:** эта папка хранит тематические dossiers по Гиллу.  
+> **Current status / supersession map:** [`31_GILL_DEPT_MASTER_MAP.md`](31_GILL_DEPT_MASTER_MAP.md).  
+> **Evidence archive V1–V11:** [`../incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md`](../incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md).
 
----
+## Текущий статус отдела
 
-## 🔎 Уровни верификации источников (по AGENT_RULES.md)
+```text
+Диапазон audit IDs: GILL-CONTENT-001…480
+Тематические dossiers: 01–42
+Production-код в этой ветке не менялся
+```
 
-- **Level A — первичные источники, public domain (цитировать можно):** johngill.thekingsbible.com (*Exposition of the Bible*, все цитаты Гилла по 9+ текстам); archive.org (*The Cause of God and Truth*, Tegg 1838, предисловие = первичный якорь структуры); ccel.org/ccel/gill/doctrinal (*A Body of Doctrinal Divinity*, полное оглавление 7 книг); reformedreader.org (Gill's *Declaration of Faith*).
-- **Level B — контент сайта (проверен автором):** `src/content/articles/dzhon-gill-*.mdx` (прочитаны заголовки/объёмы для аудита покрытия).
-- **Level C / осторожно — вторичная литература:** SBJT 25.1 (2021), TGC, SEBTS Rathel (2017), Nettles (*By His Grace*), George, Ella (*John Gill and the Cause of God and Truth*) — цитируются с пометкой, особенно в споре о гипер-кальвинизме.
+Ручные totals по `P0`, `HOLD` и другим статусам здесь не поддерживаются: они быстро устаревают и неоднозначны без формального генератора. Для приоритета использовать текущую матрицу `31`, Section 5 в ней и compact index evidence archive.
 
----
+### Порядок применения материалов
 
-## 📚 Тома отдела (порядок углубления)
+1. `31_GILL_DEPT_MASTER_MAP.md` — текущие решения, supersession и рабочие ограничения.
+2. `AGENT_RULES.md` — текущая таксономия источников, статусов и parallel-work protocol.
+3. Evidence archive — полные основания, история проходов и compact index `001…480`.
+4. Этот README — навигация и правила входа.
+5. Dossiers `01–42` — тематическая исследовательская история; отдельные формулировки могут быть `SUPERSEDED`, `CONTESTED` или `HOLD`.
 
-| № | Файл | Суть | Ключевая добыча |
-|---|---|---|---|
-| 01 | `01_SERIES_GAPS_AND_PRIMARY_SOURCES.md` | Лакуны серии + каталог первоисточников A–G | Главная лакуна: богословие Гилла не выделено в статью; A–G первоисточники на сайте |
-| 02 | `02_THEOLOGY_DEEP_DIVE.md` | Позиции Гилла, герменевтика и экклезиология с прямыми цитатами | 5 пунктов кальвинизма; завет благодати; раввинистическая герменевтика (Ин 1:1 Мемра/Логос, Талмуд Шаббат 116b к Мф 5:17); кредобаптизм погружением и автономия поместной церкви; вечное оправдание |
-| 03 | `03_STRUCTURE_PROPOSAL.md` | Структура серии: добавить Часть IV. Богословие | Серия УЖЕ = «Введение + I + II + III + Справочник»; рекомендация — Часть IV. Богословие (6 документов) |
-| 04 | `04_CONTENT_DEEPENING_AUDIT_AND_EXEGESIS_SET.md` | Аудит покрытия 5 MDX + 7-текстовый экзегетический сет | Богословие УЖЕ вшито в Часть II; 7 текстов с цитатами (1 Тим 2:4, Ин 3:16, 2 Петр 3:9, 1 Ин 2:2, Ин 1:29, Рим 8:29, Рим 9); Cause of God and Truth 4 части (из предисловия) |
-| 05 | `05_BODY_OF_DIVINITY_TOC_AND_ARTICLE_SKELETON.md` | Полное оглавление *Doctrinal & Practical Divinity* (11 книг) + каркас статьи | Оглавление Doctrinal Divinity (7 книг) и Practical Divinity (4 книги: поклонение, таинства, устройство церкви); Book VI.4 = параллель 7-текстовому сету |
-| 06 | `06_SITE_INDEX_LAW_ANTINOMIANISM_ELECTION.md` | Полный индекс сайта (20 статей) + закон/антиномизм + избрание/вера | Карта ссылок: `rimlyanam-7` (Рим 7→закон), `krajne-li-isporcheno-serdce` (total depravity); Рим 3:31 (закон утверждён), Деян 13:48 (вера = плод декрета); Cause Part III «arguments from reason» |
-| 07 | `07_VVEDENIE_DEEP.md` | Глубокое/умное «Введение»: масштаб фигуры + золотая инфа (G1–G9) + генеалогия (Witsius/Хасси/Скепп) + спор/влияние + готовый каркас текста | Масштаб: 10+ млн слов; первый баптист-комментатор всего Писания и систематик; пастор 51 год; церковь → Метрополитен-тэбернакл Спёрджена; Muller «most erudite»; Спёрджен «Coryphaeus of hyper-Calvinism» |
-| 08 | `08_ETERNAL_JUSTIFICATION_AND_COVENANT.md` | Вечное оправдание (`from eternity` vs гипер-ошибка) + завет благодати как хребет системы (первичные цитаты ccel) | Гилл-прецизионист: различение вечного декрета и исполнения во времени; два главы/два завета; Witsius «general justification of the elect» |
-| 09 | `09_SPRAVOCHNIK_DEEP_RESEARCH.md` | Справочник: углублённая хронология, библиография, глоссарий и сеть влияний | Каталог 11 книг и 9 томов с Level A ссылками (Public Domain); хронология 1697–1771 по Риппону; богословский глоссарий точных терминов (Имманентные акты, Мемра, Вечное оправдание); матрица влияний |
-| 10 | `10_ORDINANCES_AND_ECCLESIOLOGY.md` | Ординации и экклесиология: 1729 Declaration, кредобаптизм, закрытая Вечеря, антипедобаптизм, церковь/государство | 1729 Goat Yard Declaration (ст. VI/XI/XII); крещение — prerequisite Вечери; «infant-baptism — pillar of popery»; отделение церкви от гос-ва при лояльности |
-| 11 | `11_ESCHATOLOGY_MILLENNIUM.md` | Эсхатология: Book VII, тысячелетие, двухфазный премилленаризм, бессмертие души, вечные муки | Уникальное: духовное царство ДО Второго пришествия + личное 1000-летнее ПОСЛЕ (hybrid); бессмертие души из вечности завета |
-| 12 | `12_CAUSE_OF_GOD_AND_TRUTH.md` | «The Cause of God and Truth» — манифест: 4 части, Whitby, вербатим Part III (offers/sincerity/тайная воля) | Whitby Discourse on Five Points (1733/34); Part III = «arguments from reason»; вербатим: «grace is neither offered… nor bestowed»; external call ≠ universal offer; Фуллер защищал ответственность |
-| 13 | `13_TRINITY_ETERNAL_SONSHIP.md` | Троица, вечное сыновство, анти-социнианство; никейский нюанс (autotheos, асейность) | «Doctrine of the Trinity» (1731) → Body of Divinity Book I; «Without eternal generation the Trinity can never be supported»; Гилл = Кальвинов autotheos, не «communicatio essentiae» |
-| 14 | `14_DISSENTERS_REASONS_AND_SEPARATION.md` | Отделение от Государственной Церкви Англии: трактат 1751 г. (Dissenters' Reasons) | 6 библейских причин отделения от англиканства: небиблейская иерархия, Христос единственный Глава, отказ от Книги общих молитв, возрождённое членство, антипедобаптизм |
-| 15 | `15_HEBREW_ANTIQUITY_AND_SERMONS.md` | Защита Ветхого Завета и масоретского текста (1767) и пастырские проповеди (1773) | Академический трактат «Antiquity of the Hebrew Language»: защита гласных огласовок (Никкуд) и акцентов от рационалистов; богодухновенность текста; пастырские проповеди на Рим 3:31 и Ис 21:11 |
-| 16 | `16_SOLOMONS_SONG_AND_BAPTISM_DEFENSE.md` | Экспериментальное благочестие: Песнь Песней (1728) и защита крещения верующих (1749, 1753) | Первый магнум-опус (122 проповеди в Хорслидауне): перевод Таргума, христоцентричная аллегория (Песнь 1:1, 2:16, 4:12 замкнутый сад); полемика против педобаптистов Абрахама Тейлора |
-| 17 | `17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md` | **Биографические первоисточники и свидетели + верификация** | Сверка по Риппону (1838): жена Негус, дети, рукоположение 1720 (Скепп/Кросби/Кич), свидетели (Davies, Hall, Bayli); реестр современных научных трудов (Haykin/Brill 1997, Curt Daniel 1983, SBJT 25.1); регистр исправлений ERR-1…ERR-4 |
-| 18 | `18_PROPHECIES_MESSIANIC_APOLOGETICS.md` | Апологетика против английского деизма (1728 г.) и ветхозаветные пророчества о Христе | Опровержение Энтони Коллинза: доказательство буквального мессианского значения Быт 3:15 (семя жены), Ис 7:14 (филология слова *алма* / дева), Ис 53 (страдающий Мессия в Талмуде Санхедрин 98b) и Пс 15:10 (воскресение) |
-| 19 | `19_EXEGESIS_VERIFICATION_EXPOSITION_AND_CAUSE_OF_TRUTH.md` | **Верификация экзегезы по первоисточникам**: Exposition + Cause of God and Truth | Сплошная сверка 5 стихов (Ин 3:16, 1 Тим 2:4, 2 Пет 3:9, Рим 9:11, 1 Ин 2:2) с thekingsbible.com; исправлен эллипсис 1 Тим 2:4 (восстановлен reprobation-аргумент); Cause of God and Truth: архитектура Part I (SECTION-за-стих, сноски на Уитби), доктрина «proclamation vs offer» локализована в первоисточнике (2 Кор 5:19); свидетели Davies/Hall/Bayli → досье 09 |
-| 20 | `20_HEBREW_PRIESTHOOD_AND_PUBLIC_SINGING.md` | Учение о Первосвященстве Христа (Евр 7–10) и защита публичного церковного пения (1734 г.) | Христология Послания к Евреям: вечное назначение по чину Мелхиседека, Крест как жертвенник умилостивления, небесное ходатайство; трактат 1734 г.: 4 библейские опоры общецерковного вокального пения гимнов (Мф 26:30, Еф 5:19, Кол 3:16) |
-| 21 | `21_CAUSE_OF_GOD_PART_I_VERBATIM_AND_HERALDS_REATTRIBUTION.md` | **Cause Part I вербатим (1 Тим 2:4 + 2 Пет 3:9) + переатрибуция «heralds»** | Полный вербатим-разбор Section XLV (1 Тим 2:4, стр. 91–96) и Section LVI (2 Пет 3:9, стр. 115–117) из archive.org; карта SECTION навигации; закрытие TODO-V1: «heralds/kerukas»-цитата досье 12 — мисатрибуция исправлена (Cause Part III → Sermon 95 *Sermons and Tracts*); доктрина «proclaim vs offer» локализована в первоисточнике (Part I Section XL + Part III Ch I «Of Reprobation» стр. 276) |
-| 22 | `22_PREDESTINATION_VS_WESLEY_AND_RESURRECTION.md` | Полемика о предопределении против Джона Уэсли (1752 г.) и защита воскресения мёртвых (1735 г.) | Опровержение обвинений Джона Уэсли (*The Doctrine of Predestination Stated*): попустительский характер декрета отвержения (Бог не автор греха), суверенитет и ответственность (Деян 2:23); численное тождество физического воскресшего тела (Иов 19:26, 1 Кор 15:53) |
-| 23 | `23_SECTION_LVII_WORLD_VERBATIM_AND_ETERNAL_JUSTIFICATION_VERIFIED.md` | **Section LVII вербатим (Ин 3:16 + 1 Ин 2:2) + вечное оправдание по Body of Divinity** | Section LVII (стр. 117–123): лексический метод «world = язычники» по всем «world»-стихам Иоанна; кульминация — Талмуд Succa 55:2; вечное оправдание верифицировано по ccel Book II ch.5 (вербатим Level A + scholastic-якорь Эймс + active/passive distinction); досье 08 повышено с вторички; регистр оставшихся пробелов (GAP-1…5) |
-| 24 | `24_REVELATION_HISTORICISM_AND_SEVEN_CHURCHES.md` | Протестантский историцизм: толкование Откровения и 7 эпох истории Церкви | Комментарий на Откровение (*Exposition*): историцистская панорама от I века до Тысячелетия; 7 церквей Асии как 7 периодов христианской истории (Ефес, Смирна, Пергам, Фиатира, Сардис, Филадельфия, Лаодикия); убиение двух свидетелей (Откр 11:7-11) |
-| 25 | `25_COVENANT_ARCHITECTURE_VERBATIM.md` | **Ковенантная архитектура: вечный завет + совет + «два главы» (Book II ch.5–7, вербатим)** | GAP-2 закрыт: завет благодати как пакт Троицы верифицирован вербатим ccel ch.7 («compact or agreement made from all eternity among the divine Persons»); досье 02 повышено с вторички; GAP-1 концептуально закрыт (Rom 8:1); схоластическая цепочка авторитетов (Goodwin/Witsius/Twisse/Maccovius/Ames) верифицирована вербатим; Гилл опровергает «два завета» в вечности («one covenant of grace, and not two»); council vs covenant различены (ch.6) |
-| 26 | `26_CHRISTIAN_GOOD_WORKS_AND_ETHICS.md` | Богословие христианской этики: добрые дела против легализма и антиномизма (1752 г.) | Опровержение легализма и антиномизма (*A Dissertation Concerning Good Works* и *Practical Divinity* Book I ch.17): 4 библейские опоры доброго дела — возрождённый корень веры (Евр 11:6), правило Священного Писания (Кол 2:23 против самовольного служения), цель славы Божьей (Тит 3:5), и абсолютная необходимость как плода веры (Иак 2:17) |
-| 27 | `27_REPROBATION_UNIVERSAL_TEXTS_PERSEVERANCE_VERBATIM.md` | **Reprobation + Universal Redemption texts + Perseverance (Book II ch.3, VI ch.4/ch.15, вербатим)** | GAP-3/4/5 закрыты — финальная верификация всех ключевых доктрин: Reprobation (Гилл предпочитает «rejection»; супралапсарий «pure mass»); Book VI ch.4 = систематический аналог Cause Part I (3 класса «универсальных» текстов; duty-faith нюанс Ин 1:7 против гипер-обвинения); Perseverance (Иов 17:9, Пс 94:14/125). Все 5 GAP исчерпаны |
-| 28 | `28_GOSPEL_MIRACLES_APOLOGETICS.md` | Апологетика чудес и Воскресения Христа против деизма и раввинистической критики (*Exposition of the Gospels*) | Опровержение Томаса Вулстона и антиевангельской критики: историко-раввинистический контекст чуда в Кане Галилейской (Ин 2:1-11), биологическое доказательство 4 дней Лазаря во гробе (Ин 11:39) и юридический разбор лжи римской стражи у гроба Господня (Мф 28:13) |
-| 29 | `29_PRACTICAL_DIVINITY_WORSHIP_LAW.md` | Practical Divinity: поклонение/пение (ст.XII), закон как правило жизни (3-е употребление), Compendium 10 заповедей — мост к rimlyanam-7 | 5 книг (ccel); ст.XII Declaration; «free from law as covenant of works, not from it a rule of life» (BDD VI.9); псалмодия vs гимны; Рим 3:31 / Рим 7 |
-| 30 | `30_GILL_AND_GREAT_AWAKENING.md` | Гилл и Великое пробуждение / Джордж Уайтфилд — миф vs реальность, союз против Уэсли, experimental благочестие | Церковь поддерживала Уайтфилда на Kennington Common; Ella — «unsung pioneer of the Evangelical Awakening»; Toplady ценил; мост к СЕРДЦЕ и досье 12/22 |
-| 31 | `31_GILL_DEPT_MASTER_MAP.md` | МАСТЕР-КАРТА отдела: тематические кластеры (01–30), пересечения/дублирование, реальные лакуны | Кластеры A масштаб/био, B завет, C сотериология, D ординации/поклонение, E закон/освящение, F эсхатология, G Cause of God, H Троица/Писание, I структура; лакуны: суббота, неономиания, молитва/проповедь, legacy, Эдвардс |
-| 32 | `32_NEONOMIANISM_MARROW_CONTROVERSY.md` | Неономиания, Marrow controversy и Гилл: оправдание «по праведности веры» (лакуна №2 из `31`) | Бакстер/неономия = «новый закон»; Marrow (Фишер 1645, Бостон, 12 Marrow Men, 1720/22); Гилл — англ. particular-baptist крыло; *Righteousness of Christ* (1750/56/62); вера=воспринимающий глаз, не причина; антиномизм отвергнут (*Law Established by the Gospel* 1756, *Law in the Hand of Christ* 1761); мосты `08`/`12`/`26`/`29`/`30` |
-| 33 | `33_SABBATH_AND_LORDS_DAY.md` | Суббота и Господень день у Гилла: первый день как «христианская суббота», но без «creation ordinance» (лакуна №1 из `31`) | Первоисточник BDD Bk III Ch.8 (ccel): Lord's day = 1-й день, «substituted» вместо евр. субботы; Гилл ОТВЕРГАЕТ creation ordinance и «моральность» 4-й заповеди (Кол 2:16, Гал 4:10, Рим 14:5/6); напряжение с 1689 Ch.22; мосты `26`/`29`/`11` |
-| 34 | `34_PRAYER_AND_PREACHING_PASTORAL.md` | Молитва и проповедь у Гилла как пастырское служение (лакуна №3 из `31`) | BDD Book III: Ch.3 «Public Ministry of the Word», Ch.5 «Of Public Prayer» (Trinitарная: к Отцу чрез Сына Духом); пастырские трактаты «Duty of a Pastor» / «Work of a Gospel Minister»; охрана кафедры (TGC); experiential piety; мосты `13`/`29`/`15`/`30` |
-| 35 | `35_LEGACY_GILLITES_GOSPEL_STANDARD.md` | Наследие Гилла: «Гиллиты» → Strict/Particular Baptists → Gospel Standard (лакуна №4 из `31`) | Раскол Gillites (Goat Yard 1729) vs Fullerites (1689) после 1785 Fuller; Гэдсби; High-Calvinist траектория; Спёрджен — НЕ гиллит (честный нюанс); мосты `10`/`14`/`30`/`08`/`12`/`25` |
-| 36 | `36_GILL_AND_JONATHAN_EDWARDS_AMERICAN.md` | Гилл и Джонатан Эдвардс / американские баптисты (лакуна №5 из `31`) | Эдвардс ЦИТИРУЕТ Гилла (Freedom of the Will §6; Remarks 7.28 → Cause of God/Whitby); оба отвечали Уитби; Троица-параллель; Морган Эдвардс→Brown; Бостонский трактат; мосты `35`/`12`/`30`/`13`/`10` |
-| 37 | `37_HERMENEUTICS_SYSTEMATIC.md` | Герменевтика Гилла системно: regula fidei, буквализм, типология, аллегория, раввинистика (лакуна №6 из `31`) | Синтез 5 координат: Рим 12:6 (правило веры=Piscator/Pareus/Tertullian), буквализм пророчеств/Масоры, типология (Кол 2:17), аллегория Песни (1728), раввинистика (Lightfoot of Baptists); мосты `02`/`15`/`16`/`18`/`24`/`13`/`36` |
-| 38 | `38_THE_POLITICAL_THEOLOGY.md` | Политическая теология Гилла: гражданский магистрат как «guardian of both tables», доктрина «двух царств» (BDD 2:696–708), Гилл — outlier/establishmentarian среди баптистов (новый угол, не из 6 лакун `31`) | Первоисточник BDD Bk IV Ch.4 (ccel, Level A); two-fold kingdom; перекрёстные ссылки `10`/`14`/`11`/`35` |
-| 39 | `39_THE_PNEUMATOLOGY_SPIRIT_APPLICATION.md` | Пневматология Гилла: применение искупления Духом (возрождение — человек «wholly passive», освящение = «sanctification of the Spirit», свидетельство/ходатайство Духа по Рим 8) — новый угол, не из 6 лакун `31` | Level A: BDD ch.14 (ccel) + Exposition Romans 8 (thekingsbible); перекрёстные ссылки `13`/`08`/`26`/`34`/`30` |
-| 40 | `40_THE_CHRISTOLOGY_PERSON_OF_CHRIST.md` | Христология Гилла: ипостасное единство, communicatio idiomatum (Акт 20:28; Ин 3:13), воплощение (второе Лицо, не сущность), состояния уничижения/прославления, отвержение descensus ad inferos — новый угол, не из 6 лакун `31` | Level A: BDD Book VI (vi.i/vi.v/vi.vi, ccel); перекрёстные ссылки `13`/`32`/`37`/`08`/`38` |
-| 41 | `41_THE_DOCTRINE_OF_SCRIPTURE_CANON.md` | Учение Гилла о Писании: канон 66 книг, богодухновенность (2 Пет 1:21), отвержение апокрифов и преданий (sola scriptura) — новый угол, не из 6 лакун `31`; мост к `kod-da-vinchi` | Level A: BDD Book I «Of the Scriptures» (через christianbeliefs.org, PD); перекрёстные ссылки `15`/`37`/`13`/`kod-da-vinchi` |
-| 42 | `42_THE_CREATION_IMAGE_OF_GOD_AND_PROVIDENCE.md` | Творение, образ Божий в Адаме, грехопадение и провидение Гилла (BDD Book IV): шестидневное творение, образ = знание/праведность/святость, повреждение образа грехом → мост к `krajne-li-isporcheno-serdce`; провидение Троичное, immediate/mediate, general/special — новый угол, не из 6 лакун `31` | Level A: BDD Book IV (iv.iii/iv.iv/iv.v, ccel); перекрёстные ссылки `krajne-li-isporcheno-serdce`/`13`/`41`/`39` |
+Новый агент не должен считать поздний номер файла автоматически более надёжным и не должен брать раннюю формулировку из evidence archive без проверки позднего supersession.
+
+**Caveat по evidence archive:** файл сохранён byte-for-byte как итог накопительных проходов V1–V11 ради provenance. Его внутренний заголовок `FINAL MASTER`, UI-пункт про A−/A+, старая taxonomy `Level D`, ранние очереди и provisional hypotheses являются историческим слоем, а не текущей инструкцией. Current wording/status брать из `AGENT_RULES.md` и `31`.
 
 ---
 
-## 🎯 План статьи «Богословие Гилла» (8 разделов, итог)
+## Модель источников и статусов
 
-1. Введение — Гилл-систематик (*Body of Divinity*). **Глубокий фрейм + золотая инфа → досье 07**; неочевидные доктрины (вечное оправдание, завет) → досье 08.
-2. Вечный замысел: избрание и завет (Рим 9:11; завет Троицы; Рим 8:29; Деян 13:48).
-3. Грех и нужда → `krajne-li-isporcheno-serdce`.
-4. Христос и искупление + 7-текстовый сет (particular redemption).
-5. Применение спасения: оправдание, рождение свыше (Ин 3:3), призвание, претерпение.
-6. Закон и антиномизм (Рим 3:31) → `rimlyanam-7-veruyushchiy-ili-neveruyushchiy`.
-7. Спор о «гипер-кальвинизме» (сбалансированно; Cause Part III).
-8. Заключение + асайды: герменевтика (`hermenevticheskaya-otsenka-…`), канон (`kod-da-vinchi`), баптистская идентичность (серия `russian-baptism`).
+Использовать корневой [`AGENT_RULES.md`](../AGENT_RULES.md).
+
+Кратко:
+
+- `Level A/B/C` — уровень доказательности для конкретного claim;
+- `CONFIRMED / CONTESTED / HOLD / SUPERSEDED / EDITORIAL` — статус claim;
+- source work и access host фиксируются отдельно;
+- текст сайта — **TARGET**, а не источник для самоподтверждения.
+
+`archive.org`, CCEL, The King’s Bible, Reformed Reader и другие площадки не получают уровень автоматически: важны конкретная копия, проверка текста и locator.
 
 ---
 
-## 🔗 Перекрёстные ссылки
+## Основные точки входа
 
-- **Сайт (gb-is-my-strength):** серия `dzhon-gill` (`src/content/articles/dzhon-gill-*.mdx`); ключевые статьи для ссылок: `rimlyanam-7-veruyushchiy-ili-neveruyushchiy`, `krajne-li-isporcheno-serdce`, `hermenevticheskaya-otsenka-hristotsentrichnoy-germenevtiki`, `kod-da-vinchi`, серия `russian-baptism`.
-- **AuditRepo (аудиты, НЕ перенесены):** `AUDIT_gb-main_36b815c2_2026-07-06_cycle4.md` — D-23 (deploy-блокирующая регрессия Gill play-smoke; код чинит другой агент). Матрица: `verified/MASTER_BUG_MATRIX.md`.
-- **Другие отделы Research:** `БАПТИСТЫ РОССИИ` (баптистская идентичность Гилла), `СЕРИЯ СЕРДЦЕ` (антропология/сердце — смежно с total depravity и законом).
+| Задача | Входной файл | Примечание |
+|---|---|---|
+| Текущий статус и supersession | `31_GILL_DEPT_MASTER_MAP.md` | Читать первым |
+| Полное обоснование audit findings | evidence archive в `incoming/arena-auditor/2026-07-09/` | Ранние проходы сохраняют исторические формулировки; проверять поздние corrections |
+| Биография по Риппону | `17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md` | Возраст дочери и часть нормализаций уточнены в `31` и audit |
+| Структура Doctrinal / Practical Divinity | `05_BODY_OF_DIVINITY_TOC_AND_ARTICLE_SKELETON.md` | 7 doctrinal + 4 practical books; edition mapping обязателен |
+| *The Cause of God and Truth* | `12`, `19`, `21`, `23`, `27` | Использовать через `31`; Part IV и duty-faith имеют superseded/contested выводы |
+| Завет и eternal justification | `08`, `23`, `25` | Цитаты и interpretive verdict хранить раздельно |
+| Политическая теология | `38_THE_POLITICAL_THEOLOGY.md` | Корректирует упрощённое «полное отделение» из `10` |
+| Spurgeon / Whitefield / Brown | archive + `30`, `35`, `36` | Многие яркие claims остаются HOLD или зависят от одной secondary chain |
+| Site deployment | `31` + archive route-by-route | Пути относятся к указанному site snapshot и должны перепроверяться после движения site `main` |
 
-> Примечание аудитора: все тома — исследование/каркас. Авторинг статей и правка кода — вне режима аудитора.
+---
+
+## Инвентарь dossiers
+
+Dossiers `01–42` сохранены как provenance и рабочая исследовательская история. Здесь они сгруппированы, чтобы не дублировать длинную рекламную таблицу.
+
+| Диапазон | Кластер |
+|---|---|
+| `01–06` | первичная карта серии, структура трудов, ранние content-аудиты и site-index |
+| `07–17` | введение, биография, систематика, завет, экклесиология, эсхатология, Троица, иврит |
+| `18–30` | экзегеза, Cause verbatim, Уэсли, Откровение, этика, Practical Divinity, Whitefield |
+| `31` | current master map / matrix |
+| `32–37` | неономианство, Sabbath, молитва, legacy, Edwards, герменевтика |
+| `38–42` | политическая теология, пневматология, христология, Писание, творение/провидение |
+
+### Нумерация после `42`
+
+Не создавать `43_...` автоматически. Новый номер допустим только когда:
+
+1. тема действительно отсутствует в `01–42` и `31`;
+2. проверены открытые PR и ветки;
+3. определён canonical owner;
+4. изменение внесено в navigation/map тем же PR.
+
+Новые подтверждения существующих тем интегрируются в canonical owner, а не оформляются ещё одним перекрывающимся dossier.
+
+---
+
+## Критические supersession-указания
+
+- `09`: John 6:37 как событие 1 ноября 1716 — **SUPERSEDED**; chronology сверять по `17`, `31` и relevant archive finding.
+- `03/04`: планы отдельной Part IV — исторические предложения, не утверждённая архитектура.
+- `07`: «Rippon засвидетельствовал 10+ млн слов» — **SUPERSEDED**; у Риппона более 10 000 printed sheets, word total — поздняя экстраполяция.
+- `10` vs `38`: «полное отделение церкви от государства» — **SUPERSEDED** более точной политико-богословской формулой.
+- `26`: указан неверный Archive item для *Good Works* — **HOLD / high-priority correction**.
+- `27`: первичный Ин. 1:7 подтверждён, вывод «опровергает hyper-Calvinism» — **CONTESTED**, а не Level A conclusion.
+- `29`: *Practical Divinity* имеет четыре books; appendix о proselyte baptism не создаёт Book V.
+- `30`: Whitefield narrative зависит преимущественно от Ella/derivative chain — **HOLD** до независимой первичной опоры.
+- `39/40/42`: цифровые CCEL route segments были ошибочно приняты за printed book numbers.
+- Spurgeon: не смешивать 1859 foundation-stone event и источник, идентифицированный archive как sermon 369 (1861); exact edition/date проверять по finding locator.
+
+Полный список и operational wording находятся в `31`; доказательства — в evidence archive.
+
+---
+
+## Связь с сайтом
+
+На проверенном site snapshot production content находился преимущественно в:
+
+```text
+src/components/article-pilots/gill-context/
+src/components/article-pilots/gill-part1/
+src/components/article-pilots/gill-part2/
+src/components/article-pilots/gill-part3/
+src/components/article-pilots/gill-spravochnik/
+```
+
+Это snapshot, а не вечная карта. Перед новым deployment-аудитом повторно проверить актуальный site `main`.
+
+Старые ссылки dossiers на `src/content/articles/dzhon-gill-*.mdx` считать историческими, пока current rendering path не подтверждён заново.
+
+При исправлении claim проверять связанные слои:
+
+```text
+article body · quiz · glossary · timeline · TOC · SEO · share text · image caption/alt · bibliography
+```
+
+---
+
+## Правило для следующих агентов
+
+Перед новой работой:
+
+1. прочитать `AGENT_RULES.md`, этот README, `31` и relevant archive finding;
+2. проверить актуальный `main`, открытые PR и ветки;
+3. работать в уникальной ветке;
+4. повторно получить blob SHA перед изменением shared-файла;
+5. не удалять содержательные старые dossiers — использовать supersession;
+6. не считать сайты, копирующие Ella или друг друга, независимыми свидетелями;
+7. не писать `верифицировано` без точного locator и отдельной проверки interpretation;
+8. не создавать новые registries или numbered dossiers только потому, что они когда-то были предложены в раннем audit pass.
