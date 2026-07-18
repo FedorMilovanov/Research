@@ -1503,7 +1503,7 @@ Purpose: закрывает HIGH-priority кандидатов из backlog V50/
 
 - **Scougal** (*Life of God in the Soul of Man*, CCEL): определение истинной религии — «true religion is a union of the soul with God, a real participation of the divine nature… Christ formed within us… a Divine Life»; религия как «inward, free, and self-moving principle»; «The worth and excellency of a soul is to be measured by the object of its love» (p.59).
 - **Clarkson** (*Soul Idolatry Excludes Men Out of Heaven*): определение идолопоклонства («give that honor and worship to the creature, which is due to the Creator alone»); различение внешнего vs внутреннего идолопоклонства; полная таксономия 13 актов душевного поклонения (esteem/mindfulness/intention/love/trust/fear/hope/desire/delight/zeal/...); «most sanctified natures are still a seminary of sin».
-- **Owen** (*Dominion of Sin and Grace*): локатор подтверждён (CCEL), verbatim — TODO следующей выемки.
+- **Owen** (*Dominion of Sin and Grace*): локатор подтверждён (CCEL), ✅ добыто в V62 (досье 58).
 
 Маппинг на статьи серии: «сердце любит» (C1–C4 + S3); «новое сердце / divine life» (S1, S2); «remaining vs reigning sin» (C4 + Owen); финал серии (S1, S3).
 

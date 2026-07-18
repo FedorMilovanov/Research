@@ -12,7 +12,7 @@
 |---|---|---|---|
 | **Henry Scougal**, *Life of God in the Soul of Man* | HIGH, «CCEL» | ✅ 3 вербатим-цитаты с локаторами | ccel.org, Part I (определение религии) + Part II p.59 |
 | **David Clarkson**, *Soul Idolatry Excludes Men Out of Heaven* | HIGH, «exact extraction needed» | ✅ определение + таксономия 13 актов | gracegems/biblehub по первичному тексту проповеди |
-| **John Owen**, *Dominion of Sin and Grace* | HIGH, «CCEL PDF, Rom 6:14» | ⏳ локатор подтверждён; вербатим-цитата — TODO (требует отдельной выемки CCEL) | ccel.org/monergism |
+| **John Owen**, *Dominion of Sin and Grace* | HIGH, «CCEL PDF, Rom 6:14» | ✅ добыто в V62 (досье 58) | ccel.org/monergism |
 
 ---
 
@@ -90,7 +90,7 @@
 
 **Локатор (Level A подтверждён):** CCEL — `ccel.org/ccel/owen/grace.html`; Monergism PDF. Тема: Рим 6:14 («грех не господствует над вами»).
 
-**Концепт (из backlog V50, готов для статьи, вербатим-цитата — TODO следующей выемки):**
+**Концепт (из backlog V50, готов для статьи, ✅ добыто в V62 (досье 58)):**
 - различение **remaining sin** (остающийся грех) vs **reigning sin** (господствующий грех);
 - грех остаётся в верующем, но **не царствует** как господин;
 - защищает от двух ошибок: отчаяния («раз грех есть, я не христианин») и презумпции («раз я верующий, грех не опасен»).
@@ -105,7 +105,7 @@
 |---|---|---|---|
 | Scougal «divine life» | HIGH, «CCEL» | ✅ verbatim S1, S2, S3 | здесь §1 |
 | Clarkson Soul Idolatry | HIGH, «exact extraction needed» | ✅ verbatim C1–C4 + 13-act taxonomy | здесь §2 |
-| Owen Dominion of Sin | HIGH, «CCEL PDF» | ⏳ локатор подтверждён; verbatim TODO | здесь §3 |
+| Owen Dominion of Sin | HIGH, «CCEL PDF» | ⏳ локатор подтверждён; ✅ добыто в V62 (досье 58) | здесь §3 |
 | Bunyan Fear of God | HIGH (V51) | ⏳ не затронут | (следующий проход) |
 | Marshall Gospel Mystery | HIGH (V51) | ⏳ не затронут | (следующий проход) |
 | Reynolds Passions | HIGH (V51) | ⏳ не затронут | (следующий проход) |
@@ -118,7 +118,7 @@
 |---|---|---|
 | «Сердце любит» / «идолы сердца» | C1, C2, C3, C4, S3 | Clarkson 13 актов + Scougal «объект любви» |
 | «Новое сердце / divine life» | S1, S2 | Scougal определение религии; Gill Иез 36:26 |
-| «remaining vs reigning sin» | C4 + Owen (TODO) | Clarkson «seminary of sin» + Owen Dominion |
+| «remaining vs reigning sin» | C4 + Owen (см. досье 58) | Clarkson «seminary of sin» + Owen Dominion |
 | Финал серии «сердце ко Христу» | S1, S3 | Scougal «Christ formed within us» |
 
 ---

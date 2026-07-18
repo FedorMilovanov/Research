@@ -82,7 +82,7 @@ Part I — не сплошной трактат, а **последователь
 > «that [the ministry of the word] is not an **offer** of reconciliation to the world; but a **proclamation or declaration of peace**, made by the blood of Jesus, of reconciliation by the death of the Son of God.»
 > «nor did the apostles entreat all men to whom they preached, to be reconciled to God; the exhortation… is given not to all men, but to the believing Corinthians, for whom Christ was made sin.»
 
-→ Вывод: Part III-цитаты досье 12 **верны по существу** (доктрина подтверждена первоисточником). Однако формально они до сих пор атрибутированы вторичке. **Рекомендация:** при публикации раздела о гипер-кальвинизме цитировать Part I / Section XL (2 Кор 5:19) с прямой ссылкой на archive.org — это переводит опору с Level C на Level A. См. §5 (TODO-V1).
+→ Вывод: Part III-цитаты досье 12 **верны по существу** (доктрина подтверждена первоисточником). Однако формально они до сих пор атрибутированы вторичке. **Рекомендация:** при публикации раздела о гипер-кальвинизме цитировать Part I / Section XL (2 Кор 5:19) с прямой ссылкой на archive.org — это переводит опору с Level C на Level A. См. §5 (TODO-V1 закрыто в досье 21).
 
 ### 2.4 По конкретным стихам Рим 9 и 2 Пет 3:9 в *Cause*
 - **Рим 9** — в *Cause* обрабатывается двояко: как «позитивный» текст Part II (special grace) и внутри аргументов Part III (reprobation: Рим 9:18,22 «кого хочет, ожесточает» / «сосуды гнева» — см. чанк 34, ссылка на Рим 9 при разборе Рим 5:18).
@@ -107,7 +107,7 @@ Part I — не сплошной трактат, а **последователь
 | EDIT-A | `02_THEOLOGY_DEEP_DIVE.md` | §3, 1 Тим 2:4: помечен эллипсис; добавлено предупреждение + восстановленный reprobation-аргумент; ссылка на досье 19 §1.2. |
 | EDIT-B | `09_SPRAVOCHNIK_DEEP_RESEARCH.md` | Добавлен §7 «Свидетели-современники» (Hall/Davies/Bayli) — карточки в готовом для сайта виде; перекрёстная ссылка на досье 17/18. |
 | EDIT-C | `00_README_AND_NAVIGATION.md` | Добавлен том 18 в таблицу. |
-| TODO-V1 | (для будущего) | Part III «heralds/criers»-цитаты досье 12: переаттрибутировать с calvinandcalvinism.com → archive.org Part I, Section XL (2 Кор 5:19), чтобы поднять Level C → A. |
+| TODO-V1 (CLOSED) | (для будущего) | Part III «heralds/criers»-цитаты досье 12: переаттрибутировать с calvinandcalvinism.com → archive.org Part I, Section XL (2 Кор 5:19), чтобы поднять Level C → A. |
 
 ---
 

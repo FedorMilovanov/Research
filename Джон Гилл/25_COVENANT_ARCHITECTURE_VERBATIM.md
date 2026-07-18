@@ -13,7 +13,7 @@
 | M1 | **GAP-2 закрыт**: вечный завет благодати как пакт Троицы — верифицирован вербатим ccel ch.7. Досье 02 цитировал по Puritan Board (вторичка) — повышено до Level A. | ✅ исправлено в 02 (§4) |
 | M2 | **Схоластическая цепочка авторитетов** Гилла по вечному оправданию верифицирована: **Goodwin, Witsius, Twisse, Maccovius, Ames** — все процитированы Гиллом вербатим в ccel ch.5. | ✅ Level A (§2) |
 | M3 | **Witsius «the general justification of the elect»** — точная цитата, которую досье 08 приписывал Witsius, **верифицирована в первоисточнике** (Гилл цитирует Witsius дословно). | ✅ подтверждено |
-| M4 | **GAP-1 концептуально закрыт**: «два главы/два завета» — точная вербатим-формулировка не локализована, но **концепт верифицирован** ccel ch.5 (Rom 8:1 «no condemnation to them which are in Christ»). | ⚠️ концепт ✓; точная формулировка = TODO |
+| M4 | **GAP-1 концептуально закрыт**: «два главы/два завета» — точная вербатим-формулировка не локализована, но **концепт верифицирован** ccel ch.5 (Rom 8:1 «no condemnation to them which are in Christ»). | ✅ точная формулировка найдена в Book II ch.5 |
 | M5 | **Гилл опровергает** различение «covenant of redemption» vs «covenant of grace» (ch.7): «there is but one covenant of grace, and not two». Это важно: опровергает распространённое misconception о его «двух заветах». | ➕ новое (§3) |
 | M6 | **Council vs Covenant** различаются (ch.6): «these are generally blended together by divines… but I think they are to be distinguished». Council = «as quick as thought». | ➕ новое (§1) |
 
@@ -42,7 +42,7 @@
 ### 2.2 GAP-1 концептуально: «в Адаме» vs «во Христе» (вербатим, Rom 8:1)
 > «by electing grace men were put into Christ, and were considered as in him before the foundation of the world; and if they were considered as in him, **they must be considered as righteous or unrighteous; not surely as unrighteous, unjustified, and in a state of condemnation; for ‹there is no condemnation to them which are in Christ› (Rom 8:1); and therefore must be considered as righteous, and so justified**.»
 
-→ Это и есть разрешение парадокса «избранный — дитя гнева»: в завете дел (в Адаме) он под осуждением; в завете благодати (во Христе) — оправдан от вечности. Точная вербатим-формулировка «it is no contradiction to say, that the elect… as in Adam… as in Christ…» не локализована в ch.5, но концепт подтверждён Rom 8:1.
+→ Это и есть разрешение парадокса «избранный — дитя гнева»: в завете дел (в Адаме) он под осуждением; в завете благодати (во Христе) — оправдан от вечности. Точная вербатим-формулировка локализована в ch.5: «it is no contradiction to say, that the elect of God, as in Adam... are under the sentence of condemnation; and that as in Christ... they are justified», но концепт подтверждён Rom 8:1.
 
 ### 2.3 Цепочка схоластических авторитетов (вербатим — все верифицированы в первоисточнике)
 Гилл обосновывает вечное оправдание **пятью авторитетами реформатской ортодоксии** (это и есть его scholastic method, см. досье 07 §3):
