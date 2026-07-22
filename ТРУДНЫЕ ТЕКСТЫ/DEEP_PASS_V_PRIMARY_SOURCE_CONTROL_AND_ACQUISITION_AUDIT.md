@@ -1,6 +1,6 @@
 # Марафон V: контроль первоисточников, 45 источников и план дальнейшего приобретения
 
-**Версия:** 1.0  
+**Версия:** 1.1  
 **Дата:** 22 июля 2026 года  
 **Статус:** `SOURCE-CONTROL / 45-ITEM-REGISTRY / PRIMARY-TEXT-FIRST / NO-FALSE-CITATIONS`  
 **Связанный PR:** #5  
@@ -127,11 +127,13 @@ Michel Desjardins специально предупреждает, что изо
 - не восстанавливать систему противника из одного слова `δόξαι`;
 - держать несколько исторических моделей открытыми.
 
-## 3.4. Новейший большой комментарий уже вышел
+## 3.4. Комментарий Blumenthal 2026 зарегистрирован, но статус выхода нужно проверить
 
-Christian Blumenthal, *Der Judasbrief. Der Zweite Petrusbrief* (2026), 340 страниц, DOI `10.1628/978-3-16-164894-6`.
+Официальная карточка Mohr Siebeck регистрирует Christian Blumenthal, *Der Judasbrief. Der Zweite Petrusbrief* (2026), 340 страниц, DOI `10.1628/978-3-16-164894-6`.
 
-Книга особенно важна для проекта, поскольку исследует стратегические неоднозначности обоих писем и их иудейский и греко-римский контекст. Её необходимо включить в следующий сравнительный проход наряду с Bauckham, Davids, Green и Frey.
+Однако карточка издателя всё ещё содержала помету `forthcoming in May 2026`. Поскольку текущая дата — 22 июля 2026 года, нельзя автоматически писать, что книга уже фактически вышла и доступна: требуется подтвердить выпуск по обновлённой карточке издателя, библиотечному каталогу или самому полному файлу.
+
+Книга по заявленному описанию особенно важна для проекта, поскольку исследует стратегические неоднозначности обоих писем и их иудейский и греко-римский контекст. Рабочий статус: `METADATA-CONTROLLED / RELEASE-STATUS-VERIFY / NEED-FULL`.
 
 ---
 
@@ -250,7 +252,7 @@ Matthew Goff подтверждает, что включение Гильгам�
 | D02 | Peter H. Davids, *The Letters of 2 Peter and Jude* (PNTC, 2006), 380 pp. | еврейский фон и «злословие небесных существ» | `NEED-FULL` | высший |
 | D03 | Gene L. Green, *Jude and 2 Peter* (BECNT, 2008), 448 pp. | греческий текст, социологический и исторический контекст | `NEED-FULL` | высший |
 | D04 | Jörg Frey, *The Letter of Jude and the Second Letter of Peter* (2018), 560 pp. | профиль противников, апокалиптика, текстологические проблемы | `NEED-FULL` | высший |
-| D05 | Christian Blumenthal, *Der Judasbrief. Der Zweite Petrusbrief* (2026), 340 pp., DOI `10.1628/978-3-16-164894-6` | новейший комментарий; стратегическая неоднозначность | `NEED-FULL` | высший |
+| D05 | Christian Blumenthal, *Der Judasbrief. Der Zweite Petrusbrief* (2026), 340 pp., DOI `10.1628/978-3-16-164894-6` | заявленный новейший комментарий; стратегическая неоднозначность | `METADATA-CONTROLLED / RELEASE-STATUS-VERIFY / NEED-FULL` | высший |
 | D06 | Rodolfo G. Estrada III, “Blaspheming Angels,” JETS 63.4 (2020): 739–758 | гипотеза магов, сновидений и речевого воздействия на ангелов | `AUTHOR-FULL` | высокий |
 | D07 | Michel Desjardins, “The Portrayal of the Dissidents in 2 Peter and Jude,” JSNT 30 (1987): 89–102, DOI `10.1177/0142064X8700903006` | контроль полемической риторики и реконструкции противников | `NEED-FULL` | высокий |
 | D08 | Douglas J. Rowston, “The Most Neglected Book in the New Testament,” NTS 21.4 (1975): 554–563, DOI `10.1017/S0028688500010031` | история моделей противников и место Иуды | `NEED-FULL` | средний |
@@ -279,7 +281,7 @@ Matthew Goff подтверждает, что включение Гильгам�
 - Scodel 2021, DOI: <https://doi.org/10.1017/9781108648028.012>
 - Reed, полная карточка Cambridge: <https://doi.org/10.1017/CBO9780511499104>
 - Wright, e-book DOI: <https://doi.org/10.1628/978-3-16-157496-2>
-- Blumenthal 2026, DOI: <https://doi.org/10.1628/978-3-16-164894-6>
+- Blumenthal 2026, DOI-карточка; статус фактического выхода проверить: <https://doi.org/10.1628/978-3-16-164894-6>
 
 ## 6.2. Первичные цифровые корпуса
 
@@ -303,7 +305,7 @@ Matthew Goff подтверждает, что включение Гильгам�
 4. **Peter H. Davids, *The Letters of 2 Peter and Jude***.
 5. **Gene L. Green, *Jude and 2 Peter***.
 6. **Jörg Frey, *The Letter of Jude and the Second Letter of Peter***.
-7. **Christian Blumenthal, *Der Judasbrief. Der Zweite Petrusbrief* (2026)**.
+7. **Christian Blumenthal, *Der Judasbrief. Der Zweite Petrusbrief* (2026)** — только если фактический выпуск и полный текст уже доступны.
 8. **Matthew Goff, “Gilgamesh the Giant”** — чистый PDF со всеми примечаниями.
 9. **Ronald Hendel, “Of Demigods and the Deluge”** — чистый PDF, не Scribd-перескан.
 10. **Amar Annus, “On the Origin of Watchers”** — сохранить авторский PDF в корпусе.
