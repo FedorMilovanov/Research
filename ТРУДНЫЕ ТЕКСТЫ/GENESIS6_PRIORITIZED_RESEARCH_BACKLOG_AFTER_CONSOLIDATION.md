@@ -1,11 +1,25 @@
 # Приоритетный backlog серии Быт. 6 / Енох / Иуда / Пётр
 
 **Дата:** 24 июля 2026 года  
-**Статус:** `CANONICAL-BACKLOG / MARATHON-XXXII / OVERVIEW-PLUS-NINE / ARTICLES-1-2-MERGED / 44-WEB-PASS-GAP-CLOSURE / OWNER-BASED / FULL-TEXT-NOT-ABSTRACT / NO-BROAD-DUMPING`
+**Статус:** `CANONICAL-BACKLOG / MARATHON-XXXIII / TMS-CONFESSIONAL / OVERVIEW-PLUS-NINE / ARTICLES-1-2-MERGED / NO-Q / NO-JEDP / NO-MYTH-BORROWING / OWNER-BASED`
 
 ---
 
-# 1. Карта владельцев
+# 1. Управляющие документы
+
+1. `GENESIS6_TMS_INSPIRATION_INERRANCY_CONFESSIONAL_CONTROL_80_SOURCE_AUDIT.md`
+2. `GENESIS6_FINAL_POSITION_AND_CLAIM_BOUNDARIES.md`
+3. `MOSAIC_AUTHORSHIP_AND_DIVINE_REVELATION_CANONICAL_EVIDENCE_LEDGER.md`
+4. `MARATHON_XXXIII_TMS_CONFESSIONAL_RESET_AND_XXXII_SUPERSESSION_NOTICE.md`
+5. `GENESIS6_FINAL_PUBLICATION_SERIES_ARCHITECTURE.md`
+6. `NINE_ARTICLE_EVIDENCE_OWNER_CROSS_LINK_AND_ANTI_DUPLICATION_MATRIX.md`
+7. `00_GENESIS6_ENOCH_JUDE_RESEARCH_README.md`
+
+Файлы сравнительного Marathon XXXII являются evidence ledgers, а не методологическими владельцами.
+
+---
+
+# 2. Карта серии
 
 ```text
 0. Путеводитель
@@ -20,47 +34,66 @@
 9. История толкований
 ```
 
-Полный контроль:
-
-- `GENESIS6_FINAL_PUBLICATION_SERIES_ARCHITECTURE.md`;
-- `NINE_ARTICLE_EVIDENCE_OWNER_CROSS_LINK_AND_ANTI_DUPLICATION_MATRIX.md`;
-- `00_GENESIS6_ENOCH_JUDE_RESEARCH_README.md`;
-- `MARATHON_XXXII_COMPARATIVE_DELTA_OWNER_MAP_AND_FULL_TEXT_ACQUISITION_QUEUE.md`.
-
-Отдельная Статья 10 не создаётся. Применение распределено по девяти статьям и пастырскому эпилогу.
+Отдельная Статья 10 не создаётся.
 
 ---
 
-# 2. Общий приоритет
+# 3. Общий приоритет
 
 ```text
 P0-A
-→ интегрировать Article 2 post-XXXII delta
-→ conquest + audience + ancient heroes + immortality + human culpability
+→ TMS-remediation всех файлов Marathon XXXII
+→ удалить нейтральные формулы происхождения Бытия
+→ сохранить сравнительную библиографию только под каноническим контролем
 
 P0-B
+→ интегрировать исправленный Article 2 delta
+→ audience + land + mortality + human culpability
+→ pagan heroes only as short contrast
+
+P0-C
 → exact apparatus Статей 1–2
-→ Göttingen / BHQ / SP Numbers / exact lexica
+→ Göttingen / BHQ / SP Numbers / lexica
 
 P1
 → Статья 3 corpus/manuscript writing packet
-→ Brill 2024 corpus map
 
 P2
-→ Статья 4 apkallu / Watchers / Levantine-Aramaic background
+→ Статья 4 Watchers/apkallu research
+→ только для постбиблейского неканонического произведения
 
 P3
-→ Статья 6 объединённый Jude writing packet
+→ Статья 6 unified Jude packet
 
 P4
-→ Статья 9 Greek influence + modern genetic reception
+→ Статья 9 history of myth-influence theories and conservative response
 ```
-
-Широкий общий поиск остановлен. Новый источник принимается только если закрывает конкретную лакуну владельца или реально меняет verdict.
 
 ---
 
-# 3. Статья 1 — сыны Божии
+# 4. Обязательный TMS-фильтр
+
+Любой новый источник сначала оценивается по вопросам:
+
+1. Признаёт ли он Божественное происхождение Писания?
+2. Сохраняет ли Моисеево авторство?
+3. Сохраняет ли фактичность Быт. 1–11?
+4. Не превращает ли внешнюю параллель в источник истины?
+5. Не использует ли JEDP, Q или редактора для отмены канонического свидетельства?
+6. Отличает ли человеческие средства от Божественного источника истины?
+
+Если источник отвечает отрицательно, он может использоваться:
+
+- как pressure-test;
+- как история науки;
+- как возражение;
+- как объект опровержения;
+
+но не как основание проектного verdict.
+
+---
+
+# 5. Статья 1 — сыны Божии
 
 ## Главный файл
 
@@ -68,24 +101,24 @@ P4
 
 ## Закрыто
 
-- MT и SP;
+- Моисеево авторство и divine revelation;
+- MT/SP/LXX/Peshitta/Vulgate/Targums;
 - `בני האלהים`;
-- Иов и небесное собрание;
-- человеческие формулы сыновства;
-- LXX, Пешитта, Вульгата и Таргумы;
-- Сифитская, царская, судейская и минимальная небесная модели;
+- Job/Psalms parallels;
+- human-sonship texts;
+- четыре interpretive models;
+- минимальное небесное чтение;
 - человеческий объект Потопа;
 - Мф. 22:30;
-- апостольское уточнение;
-- 1 Енох как подчинённый фон;
-- итоговый referent verdict.
+- Иуда / 2 Петра;
+- границы 1 Еноха.
 
-## Marathon XXXII delta
+## TMS hardening
 
-1. Добавить краткую шестимодельную матрицу зависимости.
-2. Ответить на O’Hara: отсутствие слова «грех» не доказывает нейтральность.
-3. Чётче различить небесный грех и человеческую причину Потопа.
-4. Не переносить Greek/apkallu excursus полностью.
+1. Ссылка на 80-source control.
+2. Явный запрет мифического происхождения.
+3. Различить human means и source of truth.
+4. Не вводить apkallu/Greek heroes в referent argument.
 
 ## Осталось
 
@@ -93,9 +126,8 @@ P4
 - Göttingen Genesis;
 - Alexandrinus image/permission;
 - Neofiti exact apparatus;
-- Philip Alexander 1972;
-- exact pages Westermann / Schlisske / Seebass / Schreiner;
-- copy edit, SEO, summary, sidebar, bibliography.
+- exact pages closed commentaries;
+- final copy edit and bibliography.
 
 ```text
 RESEARCH = 98%
@@ -105,172 +137,145 @@ PUBLICATION = 82%
 
 ---
 
-# 4. Статья 2 — Нефилимы
+# 6. Статья 2 — Нефилимы
 
-## Главный файл
+## Главные файлы
 
-`ARTICLE_2_NEPHILIM_GIBBORIM_MEN_OF_NAME_MERGED_PUBLICATION_DRAFT.md`
+- `ARTICLE_2_NEPHILIM_GIBBORIM_MEN_OF_NAME_MERGED_PUBLICATION_DRAFT.md`;
+- `ARTICLE_2_POST_XXXII_PUBLICATION_DELTA_AND_INTEGRATION_PACKET.md`.
 
-## Базово закрыто
+## Закрыто
 
-- еврейский синтаксис;
-- отсутствующий объект `וילדו להם`;
-- антецедент `המה`;
-- древние версии;
-- Чис. 13:33 MT/OG;
-- риторика разведчиков;
-- Иез. 32:27;
-- Рефаимы в четырёх доменах;
-- теория второго вторжения;
-- практический слой.
+- Hebrew syntax;
+- absent direct object;
+- `המה` antecedent;
+- ancient versions;
+- Numbers 13 rhetoric and apparatus;
+- Ezekiel 32:27;
+- four-domain Rephaim matrix;
+- no second incursion;
+- pastoral application.
 
-## Marathon XXXII delta
+## Исправленный delta
 
-Главный пакет:
+Интегрировать:
 
-`ARTICLE_2_POST_XXXII_PUBLICATION_DELTA_AND_INTEGRATION_PACKET.md`
+1. Почему Моисей не объясняет Нефилимов.
+2. Две канонические функции — Потоп и Земля.
+3. Плоть и смертность как дополнительный мотив.
+4. Ангельский и человеческий судебные треки.
+5. Языческие герои — только короткий контраст, не источник.
 
-Интегрировать пять разделов:
+## Не интегрировать
 
-1. почему Моисей не объясняет Нефилимов;
-2. две функции Быт. 6:4 — Потоп и Земля;
-3. Нефилимы и древние герои соседних народов;
-4. бессмертие как pressure-test;
-5. почему суд направлен на человеческий мир.
-
-Добавить sidebar по исследованиям 2024–2026.
-
-## Новые владельческие досье
-
-- `ARTICLE_2_NEPHILIM_LAND_CONQUEST_AUDIENCE_PRESUPPOSITION_AND_DUAL_FUNCTION_DOSSIER.md`;
-- `GENESIS6_HUMAN_CULPABILITY_HEAVENLY_TRANSGRESSION_IMMORTALITY_AND_FLOOD_MATRIX.md`;
-- `GENESIS6_ANCIENT_DEMIGODS_HEROES_APKALLU_WATCHERS_COMPARATIVE_DOSSIER.md`;
-- `GENESIS6_DEPENDENCE_SHARED_MEMORY_POLEMIC_AND_REASSIMILATION_MODEL_MATRIX.md`.
+- прямое влияние мифа;
+- общий традиционный комплекс как происхождение текста;
+- диффузию в Моисеев текст;
+- «многовариантное происхождение»;
+- источниковую реконструкцию Jang;
+- отрицание нравственного нарушения O’Hara.
 
 ## Осталось
 
-1. Göttingen Genesis 6:4.
-2. Göttingen Numeri 13:33.
-3. Göttingen Ezechiel 32:27.
-4. BHQ/BHS loci.
-5. SP Numbers 13:33.
-6. Wevers Notes exact pages.
-7. Sperber / Maher exact pages.
-8. HALOT / DCH exact entries.
-9. Doak 2025 full chapter.
-10. Tracking the Rephaim full text.
-11. Korpelainen 2024 full text.
-12. Papyrus Anastasi I exact line.
-13. integrate delta + final copy edit.
+- Göttingen Genesis / Numeri / Ezechiel;
+- BHQ/BHS;
+- SP Numbers 13:33;
+- Wevers / Sperber / Maher exact pages;
+- HALOT/DCH;
+- final corrected merge.
 
 ```text
 BASE RESEARCH = 96%
-COMPARATIVE RESEARCH = 98%
-STRUCTURAL MERGE = COMPLETE
+COMPARATIVE EVIDENCE = 98%
+TMS-CORRECTED DELTA = COMPLETE
 PUBLICATION = 84%
-POST-XXXII PACKET = COMPLETE
-TARGET AFTER INTEGRATION = 90%
+TARGET AFTER MERGE = 90%
 ```
 
 ---
 
-# 5. Статья 3 — что такое 1 Енох
+# 7. Статья 3 — что такое 1 Енох
 
-## P0 writing packet
+## P0
 
-1. Historical Enoch / Enochic tradition / extant corpus.
-2. Пять частей корпуса.
-3. Относительная датировка без ложной точности.
+1. Historical Enoch / Enochic tradition / extant composite corpus.
+2. Five-book table.
+3. Relative dating without false precision.
 4. Manuscript date ≠ composition date.
-5. Карта 4Q201–4Q212:
-   - siglum;
-   - содержание;
-   - material date;
-   - editor;
-   - owner;
-   - official image route.
-6. Арамейская, греческая, эфиопская и латинская ветви.
+5. 4Q201–4Q212 map.
+6. Aramaic, Greek, Ethiopic and Latin branches.
 7. Codex Panopolitanus.
-8. Эфиопская полнота и пределы.
-9. Псевдоэпиграфия и составное авторство.
-10. Официальный статус в Эфиопской православной традиции.
-11. Writing packet без пересказа Книги Стражей.
+8. Ethiopic completeness and limits.
+9. Pseudepigraphy and composite authorship.
+10. Ethiopian canonical status from official sources.
 
-## Marathon XXXII delta
+## TMS boundary
 
-Полностью картировать Brill 2024:
+```text
+COMPOSITE 1 ENOCH
+≠
+COMPOSITE PENTATEUCH
+```
 
-- editions and recensions;
-- Aramaic language;
-- Babylonian astronomy;
-- chapters 8–10 only as targets until full read;
-- Matthew Goff;
-- Jaap Doedens.
-
-Не выдавать TOC за прочитанные главы.
+Source-critical findings about 1 Enoch cannot be transferred to Genesis.
 
 ```text
 RESEARCH = 86%
 PUBLICATION = 20%
-NEXT = CORPUS-MANUSCRIPT-WRITING-PACKET
 ```
 
 ---
 
-# 6. Статья 4 — Книга Стражей
+# 8. Статья 4 — Книга Стражей
 
 ## P0
 
-1. 1 Енох 1–36.
-2. Шемихаза и Азаэль.
-3. Запрещённые знания.
-4. Гиганты и насилие.
-5. Ходатайство и отказ в мире.
-6. Watchers / Дан. 4.
-7. Рукописные различия.
-8. Genesis → Enochic expansion.
-9. Common traditional core pressure-test.
-10. Список деталей, не импортируемых в Бытие.
+- 1 Enoch 1–36;
+- Shemihazah and Asael;
+- forbidden knowledge;
+- giants and violence;
+- Enoch’s intercession;
+- Watchers and Daniel 4;
+- manuscript variants;
+- Genesis → Enochic expansion;
+- forbidden-import list.
 
-## Marathon XXXII delta
+## Comparative research allowed here
 
-1. Amar Annus — полный apkallu argument.
-2. Shlomi Efrati — angels and mountains.
-3. Ida Fröhlich — `ʿYryn, Gbryn, Nplyn`.
-4. James VanderKam — human culpability.
-5. John Steele — Babylonian astronomy.
-6. Полемическая инверсия цивилизаторской мудрости.
-7. Многоисточниковая модель:
-   - Aramaic;
-   - Levantine;
-   - Mesopotamian;
-   - creative recension.
+- apkallu;
+- Aramaic/Levantine backgrounds;
+- Babylonian astronomy;
+- polemical inversion;
+- editorial development of the noncanonical work.
+
+## Boundary
+
+```text
+POSSIBLE INFLUENCE ON BOOK OF WATCHERS
+≠
+INFLUENCE ON MOSES
+```
 
 ```text
 RESEARCH = 89%
 PUBLICATION = 32%
-NEXT = FULL-TEXT-ACQUISITION + PUBLICATION-PACKET
 ```
 
 ---
 
-# 7. Статья 5 — Книга Исполинов
+# 9. Статья 5 — Книга Исполинов
 
-## P0
+Продолжить manuscript-first работу:
 
 - 4Q203, 4Q530–4Q533, 6Q8;
-- physical joins;
-- Охия, Хахия, Махавай, Гильгамеш;
-- сны, таблица, сад, путешествие;
-- вина, молитва, суд;
-- Турфан fragment-by-fragment;
+- joins and disputed joins;
+- names and dreams;
+- tablets, garden, Mahaway journey;
+- guilt, prayer and judgment;
+- Turfan fragments;
 - plates and permissions.
 
-## Marathon XXXII delta
-
-- Matthew Goff and Asian scribal networks;
-- различие арамейских и манихейских форм;
-- запрет обратного импорта поздних деталей.
+Не импортировать поздние детали обратно в Genesis.
 
 ```text
 RESEARCH = 85%
@@ -279,28 +284,25 @@ PUBLICATION = 30%
 
 ---
 
-# 8. Статья 6 — Иуда
+# 10. Статья 6 — Иуда
 
-## Уже создано
+Объединить Jude 9 и Jude 14–15 dossiers.
 
-- Jude 9 dossier;
-- Jude 14–15 / 1 Enoch 1:9 dossier.
+Главный doctrinal question:
 
-## P0
+```text
+INSPIRED USE OF TRUE EXTERNAL MATERIAL
+→ possible and actual in Jude
 
-1. Объединить оба dossier.
-2. Михаил и тело Моисея.
-3. Сохранившийся Testament/Assumption vs утраченный эпизод.
-4. Иуд. 14–15 и 1 Енох 1:9.
-5. 4Q204, Greek, Ethiopic.
-6. `ἐπροφήτευσεν`.
-7. истинная цитата ≠ канонизация всего источника.
-8. вдохновенность слов Иуды.
-9. канон и предание.
+WHOLE EXTERNAL BOOK CANONIZED
+→ no
 
-## Marathon XXXII delta
+EXTERNAL SOURCE GIVES JUDE AUTHORITY
+→ no
 
-Использовать dependence matrix только методологически; не повторять Greek heroes/apkallu.
+HOLY SPIRIT GUARANTEES JUDE'S WORDS
+→ yes
+```
 
 ```text
 RESEARCH = 91%
@@ -309,86 +311,45 @@ PUBLICATION = 28%
 
 ---
 
-# 9. Статья 7 — ангелы под мраком
+# 11. Статьи 7–8
 
-## P0
+## Статья 7
 
-- Иуд. 5–7;
-- `ἀρχή`, `οἰκητήριον`, цепи, мрак;
-- Содомская аналогия;
-- 2 Пет. 2:4–10;
-- `ταρταρώσας`;
-- Ной;
+- Jude 5–7;
+- 2 Peter 2:4–10;
+- angelic sin, chains and judgment;
 - ECM;
-- отдельный ангельский суд.
+- distinct angelic judgment.
 
-## Delta
+## Статья 8
 
-Чётко связать:
+- 1 Peter 3:18–22;
+- spirits in prison;
+- days of Noah;
+- baptism;
+- ascension and victory;
+- ECM.
 
-```text
-ангельский суд
-≠
-человеческий Потоп как наказание невиновных
-```
-
-```text
-RESEARCH = 88%
-PUBLICATION = 25%
-```
+Обе статьи подчинены TMS single-meaning and canonical-harmony control.
 
 ---
 
-# 10. Статья 8 — духи в темнице
+# 12. Статья 9 — история толкований
 
-## P0
+Единственный основной владелец:
 
-- 1 Пет. 3:18–22;
-- `ἐν ᾧ`, `πορευθείς`, `ἐκήρυξεν`;
-- `πνεύματα ἐν φυλακῇ`;
-- дни Ноя;
-- крещение;
-- вознесение;
-- 1 Пет. 4:6;
-- ECM;
-- победа Христа.
+- Greek influence theories;
+- apkallu-as-origin claims;
+- Ugaritic dependence claims;
+- JEDP/source criticism history;
+- patristic shifts;
+- Reformation;
+- modern genetic/racial systems;
+- conservative rebuttal.
 
-Delta: духовные силы реальны, но центр — Христос, не генетическая демонология.
+Правило:
 
-```text
-RESEARCH = 87%
-PUBLICATION = 27%
-```
-
----
-
-# 11. Статья 9 — история толкований
-
-## P0
-
-1. раннеиудейское небесное чтение;
-2. патристика;
-3. Africanus и Сифитский переход;
-4. Augustine;
-5. средневековая еврейская экзегеза;
-6. Реформация;
-7. современные четыре модели;
-8. причины исторических сдвигов;
-9. reception ≠ original meaning;
-10. церковное единство.
-
-## Marathon XXXII delta
-
-1. Ruth Scodel — Greek influence thesis.
-2. Guy Darshan — generation of heroes.
-3. John J. Collins — divine-human sexual relations.
-4. Amar Annus — apkallu influence as history of scholarship.
-5. John Day — Canaanite transformation.
-6. Shared-memory confessional model.
-7. O’Donnell — biosoteriology and racial purity.
-8. Young-Earth monster systems.
-9. Papyrus Anastasi I media audit.
-10. Правила проверки «новых находок».
+> История гипотез не превращает отвергнутую гипотезу в проектную возможность.
 
 ```text
 RESEARCH = 86%
@@ -397,79 +358,66 @@ PUBLICATION = 18%
 
 ---
 
-# 12. Путеводитель и эпилог
+# 13. Source acquisition queue
 
-Путеводитель пишется после стабилизации владельцев и содержит:
+## Canonical apparatus
 
-- карту серии;
-- 10–12 тезисов;
-- уровни уверенности;
-- предупреждения против сенсационализма;
-- comparative methodology;
-- технические приложения.
+1. BHQ Genesis.
+2. Göttingen Genesis.
+3. Göttingen Numeri.
+4. Göttingen Ezechiel.
+5. SP Numbers.
+6. ECM Catholic Letters.
+7. HALOT/DCH exact entries.
 
-Эпилог остаётся ненумерованным.
+## Conservative bibliology
 
----
+8. TMSJ inspiration/hermeneutics articles full PDFs.
+9. Thomas/Farnell synoptic corpus.
+10. Chou authorial intent corpus.
+11. Warfield primary texts.
+12. Chicago exposition and hermeneutics.
+13. Confessional original texts.
 
-# 13. Full-text acquisition queue
+## Comparative works
 
-## P0 — способен изменить формулировку
+14. Doak 2025.
+15. Scodel.
+16. Darshan.
+17. Collins.
+18. Annus.
+19. Brill 2024 chapters.
 
-1. Doak 2025, 99–116.
-2. Brill 2024 chapters 8–10.
-3. Tracking the Rephaim 2025.
-4. Korpelainen 2024.
-5. Scodel chapter 9.
-6. Darshan chapter 4.
-7. Collins, 259–274.
-8. Annus journal version.
-
-## P1 — аппараты
-
-9. Göttingen Genesis / Numeri / Ezechiel.
-10. BHQ Genesis.
-11. SP Numbers 13:33.
-12. HALOT / DCH.
-13. ECM Catholic Letters.
-14. Bauckham exact pages.
-
-## P2 — media/history
-
-15. Papyrus Anastasi I Gardiner / Fischer-Elfert / Wente.
-16. O’Donnell full text.
-17. Young-Earth monsters chapter.
-18. Korpelainen 2026 after publication.
+Comparative works are acquired to understand and answer arguments, not to establish the origin of Genesis.
 
 ---
 
-# 14. Политика источников
+# 14. Pre-commit checklist
 
 ```text
-1. определить владельца
-2. проверить дубли
-3. установить full / preview / metadata / in press
-4. прочитать релевантный раздел
-5. извлечь strongest argument
-6. зафиксировать цену
-7. проверить первичный текст
-8. verdict или только сноска
-9. не создавать dump
-10. не указывать непросмотренную страницу
-11. abstract ≠ full read
-12. media claim ≠ discovery
+[ ] God primary Author
+[ ] Moses human author
+[ ] verbal-plenary inspiration
+[ ] inerrancy whole and parts
+[ ] Genesis 1-11 factual
+[ ] no Q
+[ ] no JEDP
+[ ] no myth-borrowing presumption
+[ ] external texts subordinate
+[ ] canonical exegesis first
+[ ] one true meaning
+[ ] academic objections labelled as objections
 ```
 
 ---
 
-# 15. Следующий checkpoint
+# 15. Next checkpoint
 
 ```text
-CHECKPOINT XXXII-B
-→ интеграция Article 2 delta
-→ Article 3 writing packet skeleton
-→ Brill 2024 chapter acquisition routes
-→ apkallu primary-text matrix
-→ Greek heroes source cards
-→ exact Papyrus Anastasi I line
+MARATHON XXXIII-B
+→ search all Research files for drift phrases
+→ remediation ledger
+→ harden final position cross-links
+→ integrate corrected Article 2 delta
+→ launch Article 3 under TMS boundary
 ```
