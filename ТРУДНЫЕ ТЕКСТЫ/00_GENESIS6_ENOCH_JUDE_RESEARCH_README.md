@@ -1,7 +1,7 @@
 # README: исследовательский корпус Быт. 6 / Енох / Иуда / Пётр
 
 **Дата:** 23 июля 2026 года  
-**Статус:** `CANONICAL-ENTRYPOINT / MARATHONS-II-XXVII / MOSAIC-AUTHORSHIP / SCRIPTURE-FIRST / TEXTUAL-VERSIONS-CONTROLLED / ARTICLE-1-STARTED`
+**Статус:** `CANONICAL-ENTRYPOINT / MARATHONS-II-XXVIII / MOSAIC-AUTHORSHIP / SCRIPTURE-FIRST / MULTILINGUAL-STABILIZED / ARTICLE-1-SATURATED / SIX-ARTICLE-OWNERSHIP`
 
 ---
 
@@ -14,19 +14,22 @@
 3. `GENESIS6_ANCIENT_VERSIONS_MASTER_SYNOPTIC_AND_INTERPRETIVE_WEIGHT.md`
 4. `GENESIS6_1_4_OWN_FORMAL_RUSSIAN_TRANSLATION_WITH_NOTES.md`
 5. `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_01.md`
-6. `ARTICLE_1_REVISED_ARGUMENT_ARCHITECTURE_AFTER_HISTORY_WIDE_REINGEST.md`
-7. `WATCHERS_BIBLICAL_SOURCE_CONTROL_CANONICAL_VS_ENOCHIC_LEDGER.md`
-8. `GENESIS6_FINAL_PUBLICATION_SERIES_ARCHITECTURE.md`
-9. `GENESIS6_RESEARCH_CANONICAL_INDEX_AND_DEDUPLICATION_MAP.md`
+6. `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_02_ARGUMENTS_AND_VERDICT.md`
+7. `GENESIS6_SIX_ARTICLE_EVIDENCE_OWNERSHIP_ANTI_DUPLICATION_AND_CROSSLINK_MAP.md`
+8. `GENESIS6_MULTILINGUAL_90_SOURCE_ACQUISITION_LEDGER.md`
+9. `GENESIS6_EXACT_USER_UPLOAD_REQUEST_LIST_AND_SELF_ACQUISITION_QUEUE.md`
+10. `GENESIS6_SERIES_STOP_SEARCH_PUBLICATION_READINESS_AND_NEW_SOURCE_TRIAGE_PROTOCOL.md`
 
-При расхождении старых файлов с текущей позицией приоритет имеют:
+При расхождении старого файла с текущей позицией приоритет имеют:
 
 ```text
 GENESIS6_FINAL_POSITION_AND_CLAIM_BOUNDARIES.md
 +
 настоящий README
 +
-файлы Marathon XXVII по древним версиям
+файлы Marathon XXVII по тексту и версиям
++
+файлы Marathon XXVIII по серии и источникам
 ```
 
 ---
@@ -42,16 +45,17 @@ GENESIS6_FINAL_POSITION_AND_CLAIM_BOUNDARIES.md
 
 ЭПОХА ОСНОВНОЙ ЗАПИСИ
 → Исход / Синай / пустыня / Моав
-→ приблизительно 1445–1405 гг. до Р. Х.
+→ приблизительно 1445–1405 гг. до Р. Х. в ранней консервативной хронологии
 
 СРЕДСТВА
 → прямое откровение фундаментально
-→ родословия, записи и исследование возможны
+→ родословия, память, записи и исследование возможны
 → точный механизм каждой главы не открыт
 
 АВТОРИТЕТ
 → Писание устанавливает истину
-→ версии помогают установить передачу и раннее понимание
+→ текстовые свидетели помогают установить передачу
+→ история толкования помогает понять спор
 → 1 Енох и Древний Восток являются подчинённым фоном
 ```
 
@@ -76,7 +80,7 @@ GENESIS6_FINAL_POSITION_AND_CLAIM_BOUNDARIES.md
 
 КАНОНИЧЕСКАЯ СПЕЦИФИКАЦИЯ
 → Иуд. 6 и 2 Пет. 2 говорят о согрешивших и заключённых ангелах
-→ 1 Пет. 3 вероятно говорит о духах дней Ноя
+→ 1 Пет. 3 вероятно говорит о заключённых духах дней Ноя
 
 ПОЗИЦИЯ
 → минимальное небесное чтение
@@ -101,222 +105,317 @@ GENESIS6_FINAL_POSITION_AND_CLAIM_BOUNDARIES.md
 
 ---
 
-# 4. Результаты Marathon XXVII
+# 4. Результат текстологического Marathon XXVII
 
-## 4.1. Еврейский текст
+## Еврейский текст
 
-MT и Самаритянское Пятикнижие согласны в ключевом титуле:
-
-```hebrew
-בני האלהים
-```
-
-в ст. 2 и 4.
-
-Следовательно:
-
-- «ангелы» не являются доказанным другим еврейским Vorlage;
-- «великие» и «судьи» Таргумов являются переводческой экзегезой;
-- спор решается семантикой и каноническим распределением, а не конъектурой.
+MT и Самаритянское Пятикнижие согласны в ключевом титуле `בני האלהים` в ст. 2 и 4.
 
 Контроль:
 
 - `GENESIS6_BHQ_AND_HEBREW_TEXTUAL_APPARATUS_AUDIT.md`
 - `GENESIS6_SAMARITAN_PENTATEUCH_AND_HEBREW_VERSIONAL_CONTROL.md`
 
-## 4.2. Септуагинта
-
-Критический текст:
+## LXX
 
 ```greek
-6:2 οἱ υἱοὶ τοῦ θεοῦ
-6:4 οἱ υἱοὶ τοῦ θεοῦ
+Old Greek 6:2  οἱ υἱοὶ τοῦ θεοῦ
+Old Greek 6:4  οἱ υἱοὶ τοῦ θεοῦ
+Alexandrinus 6:2  οἱ ἄγγελοι τοῦ θεοῦ
+Alexandrinus 6:4  οἱ υἱοὶ τοῦ θεοῦ
 ```
 
-Codex Alexandrinus:
-
-```greek
-6:2 οἱ ἄγγελοι τοῦ θεοῦ
-6:4 οἱ υἱοὶ τοῦ θεοῦ
-```
-
-Исправление:
-
-- первоначальный Vaticanus не сохранил Быт. 1:1–46:28;
-- Sinaiticus не сохранил Быт. 6;
-- их нельзя использовать как прямые IV-вековые голоса этого стиха.
+Оригинальные Vaticanus и Sinaiticus не сохранили Быт. 6.
 
 Контроль:
 
 `GENESIS6_GOTTINGEN_LXX_WITNESS_BY_WITNESS_UIOI_ANGELOI_MATRIX.md`
 
-## 4.3. Таргумы
+## Таргумы
 
 ```text
 Onkelos
-→ בני רברביא
-→ сыны великих / могущественных
+→ сыны великих
 
 Neofiti main
-→ בני דייניא
 → сыны судей
 
 Neofiti margin
-→ память конкурирующей ангельной традиции
+→ конкурирующая ангельная память
 
 Pseudo-Jonathan
-→ сыны великих в 6:2
-→ Шемихазай и Узиэл, павшие с неба, в 6:4
+→ сыны великих
++ Шемихазай и Узиэл, павшие с неба
 ```
-
-Единой таргумной позиции нет.
 
 Контроль:
 
 `GENESIS6_TARGUMS_ONKELOS_NEOFITI_PSEUDO_JONATHAN_SYNOPTIC.md`
 
-## 4.4. Пешитта и Вульгата
+## Пешитта и Вульгата
 
-```text
-Peshitta
-→ сыны Элохима
-→ ידון как «пребывать»
-→ Нефилимы/рождённые как могучие
-
-Vulgate
-→ filii Dei
-→ non permanebit
-→ gigantes
-→ тесная связь рождённых с potentes
-```
+Обе сохраняют буквальный титул «сыны Бога/Элохима» и понимают `לא ידון` в линии пребывания.
 
 Контроль:
 
 `GENESIS6_PESHITTA_AND_VULGATE_DIRECT_TEXT_AUDIT.md`
 
-## 4.5. Собственный перевод
-
-Основной перевод:
+## Собственный перевод
 
 > **1** И было: когда человечество начало умножаться по лицу земли и дочери рождались у них,  
 > **2** сыны Божии увидели дочерей человеческих, что они прекрасны, и брали себе жён из всех, кого выбирали.  
 > **3** И сказал Яхве: «Не будет Мой Дух пребывать в человеке вечно, поскольку и он — плоть; и будут дни его сто двадцать лет».  
 > **4** Нефилимы были на земле в те дни, а также после того, когда сыны Божии входили к дочерям человеческим и те рождали им. Они — те могучие, которые издревле, люди имени.
 
-Контроль:
+Полный контроль:
 
 `GENESIS6_1_4_OWN_FORMAL_RUSSIAN_TRANSLATION_WITH_NOTES.md`
 
 ---
 
-# 5. Что остаётся честно незакрытым
+# 5. Результат многоязычного Marathon XXVIII
 
-Полные коммерческие страницы:
+## 5.1. Реестр источников
 
-1. BHQ Genesis apparatus/commentary к Быт. 6:1–4;
-2. полный печатный Göttingen apparatus Wevers p. 108 и смежные строки.
+`GENESIS6_MULTILINGUAL_90_SOURCE_ACQUISITION_LEDGER.md`
 
-Это не препятствует началу статьи, потому что:
+Фактически зарегистрировано более 100 источников и маршрутов:
 
-- основные текстовые ветви проверены;
-- ключевой титул стабилен;
-- главный греческий вариант зарегистрирован;
-- ограничения свидетелей B и S установлены;
-- никакой известный вариант не переворачивает основной вывод.
+- еврейские и арамейские;
+- патристические;
+- немецкие;
+- португальские и другие;
+- современные академические;
+- консервативные и конфессиональные;
+- критические издания и факсимиле.
 
-Но публикация не должна писать «полный аппарат проверен», пока страницы не получены непосредственно.
+Каждая позиция помечена по:
 
----
+- языку;
+- уровню;
+- реальному доступу;
+- наличию в корпусе;
+- владельцу статьи;
+- необходимости пользовательской загрузки.
 
-# 6. Статус Статьи 1
+## 5.2. Еврейская матрица
 
-Создан связный Draft 01:
+`GENESIS6_JEWISH_INTERPRETATION_MATRIX_RABBINIC_MEDIEVAL_MODERN_HEBREW.md`
 
-`ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_01.md`
+Еврейская история не линейна. В ней существуют:
 
-Он уже содержит:
+- ангельная традиция;
+- судьи/князья;
+- Сифиты/святая община;
+- ранние люди особой силы;
+- интеллектуальная элита;
+- смешанные модели;
+- современное небесное чтение Cassuto/JPS.
 
-1. введение;
-2. Scripture-first и Моисееву рамку;
-3. еврейский текст;
-4. собственный перевод;
-5. стабильность MT–SP;
-6. морфологию `בני האלהים`;
-7. канонические параллели;
-8. LXX;
-9. Пешитту и Вульгату;
-10. Таргумы;
-11. первый промежуточный вывод.
+## 5.3. Немецкая карта
 
-Следующий Draft должен добавить:
+`GENESIS6_GERMAN_LANGUAGE_SCHOLARSHIP_HISTORY_AND_ACQUISITION_MAP.md`
 
-1. полный steelman Сифитской модели;
-2. полный steelman царской модели;
-3. судейскую модель;
-4. минимальную небесную модель;
-5. суд только над человеком;
-6. Мф. 22:30;
-7. Иуду и 2 Петра;
-8. окончательное взвешивание.
+Обработаны линии:
 
----
+- Kurtz/Scholz;
+- Keil/Delitzsch;
+- Budde/Gunkel;
+- von Rad/Westermann;
+- Schlisske/Seebass/Schüle;
+- reception and lexicography.
 
-# 7. Направление Бытие — Енох
+## 5.4. Патристическая матрица
+
+`GENESIS6_PATRISTIC_PRIMARY_SOURCE_MATRIX_ANGELIC_SETHITE_AND_MIXED.md`
+
+Итог:
+
+- раннее ангельное преимущество реально;
+- абсолютного единогласия нет;
+- human reading существует до Августина;
+- Africanus, Ephrem, Cassian, Chrysostom, Theodoret and Augustine строят разные human arguments.
+
+## 5.5. Human-model steelman
+
+`GENESIS6_MODERN_HUMAN_MODELS_STRONGEST_THEOLOGIANS_AND_ARGUMENTS_MATRIX.md`
+
+Разведены:
+
+1. строгая Sethite;
+2. covenant-community;
+3. royal;
+4. judicial;
+5. social-violence;
+6. intellectual-elite;
+7. early-human anthropology;
+8. literary-functional models.
+
+## 5.6. Консервативный аудит
+
+`GENESIS6_CONSERVATIVE_EVANGELICAL_CONFESSIONAL_SOURCE_AUDIT.md`
+
+Высокая доктрина Писания не предрешает позицию:
 
 ```text
-Бог открывает истину Моисею
-→ Моисей записывает Быт. 6
-→ раннеиудейские авторы толкуют и расширяют
-→ Книга Стражей
-→ Иуда канонически подтверждает ограниченное истинное ядро
+Calvin / Keil / Leupold / Sproul
+→ human/Sethite
+
+Kurtz / Delitzsch / Beakley / Cook
+→ heavenly/angelic
+
+Kline
+→ royal/dynastic
 ```
 
-Kvanvig сохраняется как зарегистрированная внешняя академическая гипотеза, но отвергнут как проектная модель происхождения Пятикнижия.
+## 5.7. Полный Kurtz
+
+`KURTZ_1857_FULL_GERMAN_MONOGRAPH_ANGELIC_CASE_AND_LIMITS_AUDIT.md`
+
+Полный открытый 116-страничный скан исследован. Принято его лексическое и анти-Сифитское ядро; отвергнут переход к почти всеобщему физическому распространению ненормального потомства как необходимой причине Потопа.
 
 ---
 
-# 8. Что не использовать
+# 6. Финальная архитектура серии
+
+Контрольный файл:
+
+`GENESIS6_SIX_ARTICLE_EVIDENCE_OWNERSHIP_ANTI_DUPLICATION_AND_CROSSLINK_MAP.md`
+
+```text
+0. обзорная страница
+1. сыны Божии и дочери человеческие
+2. Нефилимы, могучие и люди имени
+3. ангелы под мраком: Иуда и 2 Петра
+4. духи в темнице: 1 Петра 3
+5. Стражи и Книга Исполинов
+6. «Енох пророчествовал»: цитата, канон и reception
+```
+
+Главное правило:
+
+> Один полный разбор каждого вопроса — в одной статье-владельце. В других статьях только краткое утверждение и cross-link.
+
+---
+
+# 7. Статус Статьи 1
+
+Существуют:
+
+- `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_01.md`
+- `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_02_ARGUMENTS_AND_VERDICT.md`
+
+Draft 01 содержит текст, версии, перевод и лексический анализ.
+
+Draft 02 содержит:
+
+- Sethite steelman;
+- royal steelman;
+- judicial steelman;
+- minimal heavenly steelman;
+- object of judgment;
+- marriage language;
+- Matt 22:30;
+- physiology;
+- Nephilim problem;
+- Jude/2 Peter;
+- Enoch boundaries;
+- comparative matrix;
+- final verdict.
+
+```text
+RESEARCH READINESS
+= 97%
+
+PUBLICATION READINESS
+= 75%
+
+BROAD SEARCH
+= STOP
+
+NEXT
+= MERGE + FOOTNOTES + STYLISTIC EDIT
+```
+
+---
+
+# 8. Точные незакрытые материалы
+
+Контрольный файл:
+
+`GENESIS6_EXACT_USER_UPLOAD_REQUEST_LIST_AND_SELF_ACQUISITION_QUEUE.md`
+
+## P0
+
+1. BHQ Genesis apparatus/commentary к 6:1–4.
+2. Wevers Göttingen apparatus к 6:2–4.
+3. Alexandrinus facsimile 6:2.
+4. Targum Neofiti main + margin 6:1–4.
+5. Philip Alexander 1972 full article.
+
+## P1
+
+- Westermann;
+- Schlisske;
+- Seebass;
+- Schreiner 1981;
+- Zimmermann;
+- Wenham/Hamilton/Mathews/Walton pages;
+- Ephrem/Chrysostom/Cyril/Bede originals;
+- Cassuto Hebrew article;
+- Kasher.
+
+Большую часть public-domain немецкого и патристического корпуса проект получает самостоятельно.
+
+---
+
+# 9. Stop-search
+
+Контрольный файл:
+
+`GENESIS6_SERIES_STOP_SEARCH_PUBLICATION_READINESS_AND_NEW_SOURCE_TRIAGE_PROTOCOL.md`
+
+Каждая исследовательская семья считается насыщенной при наличии:
+
+```text
+1 ancient primary
++ 1 classical exegete
++ 1 modern specialist
++ 1 strong opponent
++ 1 response with concession
+```
+
+После насыщения новый эквивалентный источник:
+
+- идёт в bibliography;
+- не создаёт новый research file;
+- не расширяет статью автоматически;
+- может заменить более слабую сноску.
+
+---
+
+# 10. Что не является позицией проекта
+
+Не использовать:
 
 - «Бытие прямо пишет “ангелы”»;
 - «Моисей называет их Стражами»;
-- «в древнейших кодексах единогласно стоят ангелы»;
-- «Vaticanus подтверждает чтение Быт. 6:2»;
-- «Sinaiticus подтверждает чтение Быт. 6:2»;
-- «Таргумы единогласно говорят о судьях»;
-- «Самаритянское Пятикнижие имеет правителей»;
-- «Пешитта имеет ангелов»;
+- «все древние единогласны»;
 - «все Нефилимы — гибриды»;
 - «Ной генетически чист»;
 - «Потоп уничтожил гибридную ДНК»;
+- «Сатана генетически портил мессианскую линию»;
+- «Иуда объясняет физиологию»;
 - «Иуда канонизировал весь 1 Енох»;
 - «Бытие заимствовало Шемихазу»;
-- «сходство само доказывает зависимость».
+- «Таргумы единогласно говорят о судьях»;
+- «человеческая позиция рационалистична по определению»;
+- «ангельная позиция мифологична по определению»;
+- количество PDF-копий как количество независимых источников.
 
 ---
 
-# 9. Карта доказательств
-
-| Вопрос | Файл |
-|---|---|
-| финальная позиция | `GENESIS6_FINAL_POSITION_AND_CLAIM_BOUNDARIES.md` |
-| Моисеево авторство | `MOSAIC_AUTHORSHIP_AND_DIVINE_REVELATION_CANONICAL_EVIDENCE_LEDGER.md` |
-| BHQ и еврейский аппарат | `GENESIS6_BHQ_AND_HEBREW_TEXTUAL_APPARATUS_AUDIT.md` |
-| Самаритянское Пятикнижие | `GENESIS6_SAMARITAN_PENTATEUCH_AND_HEBREW_VERSIONAL_CONTROL.md` |
-| LXX `υἱοὶ / ἄγγελοι` | `GENESIS6_GOTTINGEN_LXX_WITNESS_BY_WITNESS_UIOI_ANGELOI_MATRIX.md` |
-| Таргумы | `GENESIS6_TARGUMS_ONKELOS_NEOFITI_PSEUDO_JONATHAN_SYNOPTIC.md` |
-| Пешитта и Вульгата | `GENESIS6_PESHITTA_AND_VULGATE_DIRECT_TEXT_AUDIT.md` |
-| сводная версия | `GENESIS6_ANCIENT_VERSIONS_MASTER_SYNOPTIC_AND_INTERPRETIVE_WEIGHT.md` |
-| собственный перевод | `GENESIS6_1_4_OWN_FORMAL_RUSSIAN_TRANSLATION_WITH_NOTES.md` |
-| Draft 01 | `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_01.md` |
-| 42 возражения | `ANGELIC_READING_COMPLETE_RESPONSE_LEDGER_TO_42_STRONGEST_OBJECTIONS.md` |
-| антиангельский каталог | `ANTI_ANGELIC_MAXIMAL_ARGUMENT_ENCYCLOPEDIA_GENESIS6.md` |
-| Стражи: канон/Енох | `WATCHERS_BIBLICAL_SOURCE_CONTROL_CANONICAL_VS_ENOCHIC_LEDGER.md` |
-| история рецепции | `REED_NONLINEAR_RECEPTION_HISTORY_ANGELIC_SETHITE_AND_ENOCH_AUTHORITY.md` |
-| 1 Пет. 3 | `FIRST_PETER_3_18_22_FULL_EXEGESIS.md` |
-
----
-
-# 10. Метод
+# 11. Метод
 
 ```text
 CANONICAL TEXT
@@ -339,22 +438,8 @@ CANONICAL TEXT
 - от перевода «ангелы» к иному Hebrew Vorlage без доказательства;
 - от Таргума к словам Моисея;
 - от сходного мотива к заимствованию;
-- от поздней версии к заполнению ранней лакуны.
-
----
-
-# 11. Уровни уверенности
-
-```text
-TEXTUALLY ESTABLISHED
-STRONGLY PREFERRED
-PROBABLE
-PLAUSIBLE
-OPEN
-REGISTERED BUT NOT ADOPTED
-UNSUPPORTED
-CONTRADICTED
-```
+- от поздней версии к заполнению ранней лакуны;
+- от конфессиональной марки автора к автоматической истинности его экзегезы.
 
 ---
 
@@ -362,20 +447,20 @@ CONTRADICTED
 
 ```text
 СЕЙЧАС
-→ продолжить Draft 01 до полной Статьи 1
-→ встроить steelman всех позиций
-→ дать окончательный вердикт
+→ merge Article 1 Draft 01 + 02
+→ финальные постраничные сноски
+→ начать Hebrew close reading Article 2
 
 ТОЧЕЧНО
-→ получить страницы полного BHQ и Göttingen apparatus
-
-ПАРАЛЛЕЛЬНО
-→ начать отдельный close reading Быт. 6:4 для Статьи 2
+→ получить BHQ / Wevers / Neofiti / Alexander
+→ добрать лучшие original-language pages
 
 НЕ СЕЙЧАС
-→ новый общий поиск по мифам и Еноху
+→ новый общий поиск Genesis 6
+→ ещё одна подборка популярных книг о Нефилимах
+→ новый master dossier с конкурирующим итогом
 ```
 
 ## 13. Редакционный принцип
 
-> Писание является высшим письменным первоисточником истины. Текст Моисея устанавливается по еврейским свидетелям, а древние версии помогают увидеть раннее понимание. Перевод сохраняет «сынов Божиих» и другие трудные формулы, не пряча экзегезу внутри русских слов. Небесное чтение принимается только в объёме, поддерживаемом каноническим распределением и апостольским свидетельством; человеческие модели представляются в сильнейшей форме; енохический и гибридный максимализм не импортируется.
+> Писание является высшим письменным первоисточником истины. Моисеев текст устанавливается по еврейским свидетелям, а древние версии помогают увидеть его передачу и раннее понимание. Небесный referent принимается в минимальном канонически подтверждённом объёме. Human models представляются в сильнейшей форме и сохраняют важные наблюдения о композиции, власти, браке и суде. Любой новый источник обязан закрывать конкретный пробел, а не просто увеличивать архив.
