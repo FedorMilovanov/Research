@@ -1,15 +1,11 @@
 # Приоритетный backlog серии Быт. 6 / Енох / Иуда / Пётр
 
 **Дата:** 23 июля 2026 года  
-**Статус:** `CANONICAL-BACKLOG / MARATHON-XXIX / NINE-ARTICLE-SERIES / ARTICLE-1-SATURATED / NARROW-SEARCH-ONLY / OWNER-BASED`
+**Статус:** `CANONICAL-BACKLOG / MARATHON-XXIX / OVERVIEW-PLUS-NINE / OWNER-BASED / SELF-ACQUIRE-FIRST / NO-BROAD-DUMPING`
 
 ---
 
-# 1. Каноническая карта владельцев
-
-Полный контроль:
-
-`GENESIS6_FINAL_PUBLICATION_SERIES_ARCHITECTURE.md`
+# 1. Карта владельцев
 
 ```text
 0. Путеводитель
@@ -18,36 +14,41 @@
 3. Что такое 1 Енох
 4. Книга Стражей
 5. Книга Исполинов
-6. Иуд. 9 и 14–15: Моисей, Енох, предание и канон
-7. Иуд. 5–7 и 2 Пет. 2: ангелы под мраком
-8. 1 Пет. 3: духи в темнице
-9. История толкования
+6. Иуд. 9 и 14–15
+7. Иуд. 5–7 и 2 Пет. 2
+8. 1 Пет. 3
+9. История толкований
 ```
 
-Старые шестичастные номера не использовать.
+Полный контроль:
+
+- `GENESIS6_FINAL_PUBLICATION_SERIES_ARCHITECTURE.md`
+- `NINE_ARTICLE_EVIDENCE_OWNER_CROSS_LINK_AND_ANTI_DUPLICATION_MATRIX.md`
+
+Старые номера 3/5/6/8 не использовать.
 
 ---
 
-# 2. Общий редакционный приоритет
+# 2. Общий приоритет
 
 ```text
 P0
-→ закончить и опубликовать уже насыщенную Статью 1
+→ завершить Статью 1
 
 P1
-→ закрыть синтаксис и модели Статьи 2
+→ начать Статью 2
 
 P2
-→ подготовить корпусное введение Статьи 3
+→ собрать writing packet Статьи 3
 
 P3
-→ превратить существующие досье по Иуде в writing packets
+→ объединить dossier Статьи 6
 
 ПАРАЛЛЕЛЬНО
-→ точечные аппараты, рукописные изображения и permission ledger
+→ аппараты, facsimiles, original-language loci, permissions
 ```
 
-Общий поиск по теме «ангелы или Сифиты» остановлен. Новый материал принимается только тогда, когда закрывает конкретную лакуну владельца статьи.
+Общий поиск «ангелы или Сифиты» остановлен. Новый источник принимается только если закрывает конкретную лакуну статьи-владельца.
 
 ---
 
@@ -56,56 +57,54 @@ P3
 ## Готово
 
 - Scripture-first и Моисеево авторство;
-- MT и Самаритянское Пятикнижие;
-- Old Greek и `υἱοὶ / ἄγγελοι`;
-- Таргумы;
-- Пешитта и Вульгата;
+- MT и SP;
+- LXX `υἱοὶ / ἄγγελοι`;
+- Таргумы, Пешитта и Вульгата;
 - собственный перевод;
-- еврейская морфология;
-- Иов и небесное собрание;
-- человеческие формулы сыновства;
-- Draft 01;
-- Draft 02;
-- human-model steelmans;
-- минимальная небесная модель;
+- морфология и канонические параллели;
+- человеческое сыновство;
+- Draft 01 и Draft 02;
+- Сифитская, царская, судейская и небесная модели;
 - объект суда;
 - Мф. 22:30;
-- границы Иуды, Петра и Еноха;
-- финальный verdict;
-- Kurtz audit.
+- итоговый verdict;
+- немецкая, еврейская, патристическая и conservative evangelical pressure-test база;
+- Leupold, Calvin, Augustine, Africanus, Rashi, Ibn Ezra, Radak, Fockner, Eslinger, Bührer и Zimmermann source cards.
 
 ## P0
 
 ```text
 MERGE DRAFT 01 + DRAFT 02
-→ убрать повторы
-→ унифицировать терминологию
-→ расставить точные сноски
-→ сократить экскурсы, принадлежащие статьям 2–9
-→ сформировать публикационный файл
+→ добавить multilingual delta
+→ удалить материал владельцев 2–9
+→ унифицировать термины
+→ расставить сноски
+→ проверить объём 10 000–13 000 слов
+→ создать publication draft
 ```
 
-## Точечные доступы
+## Точечные остатки
 
-1. BHQ Genesis 6:1–4 apparatus/commentary.
-2. Wevers Göttingen apparatus.
-3. Alexandrinus facsimile Быт. 6:2.
-4. Targum Neofiti main/margin.
+1. BHQ Genesis 6:1–4 exact apparatus/commentary.
+2. Göttingen Genesis full apparatus 6:2–4.
+3. Alexandrinus publishable folio/crop.
+4. Neofiti exact main/margin pages и critical apparatus.
 5. Philip Alexander 1972.
+6. Лучшие закрытые страницы Westermann, Schlisske, Seebass и Schreiner 1981.
 
-Они не блокируют merge; они блокируют только окончательную аппаратную сноску или публикационный скрин.
+Эти материалы блокируют только окончательные аппаратные сноски, а не merge.
 
 ```text
-RESEARCH = 97%
-PUBLICATION = 75%
-BROAD SEARCH = STOP
+RESEARCH = 98%
+PUBLICATION = 78%
+SEARCH = TARGETED ONLY
 ```
 
 ---
 
 # 4. Статья 2 — Нефилимы
 
-## P0 Hebrew close reading
+## P0 close reading
 
 1. `הנפלים היו בארץ`.
 2. `בימים ההם וגם אחרי כן`.
@@ -114,11 +113,13 @@ BROAD SEARCH = STOP
 5. `המה הגברים`.
 6. `אשר מעולם`.
 7. `אנשי השם`.
+8. Все антецедентные диаграммы.
+9. MT, SP, LXX, Таргумы, Пешитта и Вульгата.
 
 ## P0 canon
 
-- Чис. 13:28–33 как речь разведчиков;
-- функция `דבה`;
+- Чис. 13:28–33;
+- `דבה` и риторика разведчиков;
 - Анакимы;
 - Рефаимы;
 - Емимы;
@@ -130,67 +131,56 @@ BROAD SEARCH = STOP
 
 - Нефилимы существовали независимо от союзов;
 - Нефилимы являются детьми;
-- дети являются `גברים`, но не обязательно все Нефилимы;
+- дети являются `גברים`, но не обязательно всеми Нефилимами;
 - категории частично перекрываются;
 - поздняя таргумная модель падших существ;
 - человеческие воины/тираны;
-- Grossman alternative;
-- Jang land/conquest function;
-- аудит второй инвазии.
+- Grossman;
+- Jang;
+- теория второй инвазии как pressure-test.
 
-## Нужные источники
+## Точечные источники
 
-- BHQ Numbers / Göttingen Numbers where relevant;
+- BHQ/Göttingen Numbers;
 - Hendel;
 - John Day;
 - Grossman official pagination;
-- Jang official PDF;
-- lexical and archaeological Rephaim studies.
+- Jang publisher PDF;
+- лучшие исследования народов-великанов.
 
 ```text
-RESEARCH = 72%
+RESEARCH = 74%
 PUBLICATION = 15%
-SEARCH = NARROW ONLY
+SEARCH = OWNER-SPECIFIC
 ```
 
 ---
 
 # 5. Статья 3 — что такое 1 Енох
 
-## Владелец
-
-Состав, языки, рукописи, датировка и передача составного корпуса 1 Еноха.
-
 ## P0
 
-1. Составить таблицу пяти частей корпуса.
-2. Различить historical Enoch / Enochic tradition / extant corpus.
-3. Зафиксировать относительную хронологию без ложной точности.
-4. Создать карту 4Q201–4Q212:
+1. Таблица пяти основных частей корпуса.
+2. Historical Enoch / Enochic tradition / extant corpus.
+3. Относительная датировка каждой части.
+4. Manuscript date ≠ composition date.
+5. Полная карта 4Q201–4Q212:
    - siglum;
-   - content range;
+   - содержание;
    - material date;
-   - composition relevance;
+   - article relevance;
    - editor;
    - image route.
-5. Отдельно описать:
-   - Aramaic witnesses;
-   - Greek witnesses;
-   - Ethiopic complete transmission;
-   - Latin fragments.
-6. Объяснить, почему manuscript date не равна composition date.
-7. Объяснить составное авторство.
-8. Проверить формулировки о каноничности в Эфиопской православной традиции.
-9. Сформировать publication packet без подробного пересказа Книги Стражей.
+6. Арамейская, греческая, эфиопская и латинская ветви.
+7. Codex Panopolitanus как конкретный свидетель, а не «весь греческий Енох».
+8. Эфиопская полнота и её текстологические пределы.
+9. Псевдоэпиграфия и составное авторство.
+10. Канонический статус в Эфиопской православной традиции по официальным источникам.
+11. Writing packet без пересказа Книги Стражей.
 
-## Запрещённое разрастание
+## Источники
 
-- полный сюжет 1 Енох 6–16 принадлежит Статье 4;
-- Книга Исполинов принадлежит Статье 5;
-- Иуд. 14–15 принадлежит Статье 6;
-- история рецепции принадлежит Статье 9.
-
-## Основные источники
+Большая база уже есть:
 
 - Milik;
 - Nickelsburg 1–2;
@@ -199,11 +189,13 @@ SEARCH = NARROW ONLY
 - Machiela;
 - Stadel;
 - official IAA objects;
-- Panopolitanus critical control;
-- Ethiopic critical editions.
+- Charles public-domain editions;
+- Timothy Lee open chapter.
+
+Остаются критические Ethiopic/Greek pages и permission data.
 
 ```text
-RESEARCH = 84%
+RESEARCH = 86%
 PUBLICATION = 20%
 SEARCH = MANUSCRIPT-SPECIFIC
 ```
@@ -214,28 +206,29 @@ SEARCH = MANUSCRIPT-SPECIFIC
 
 ## P0
 
-1. Структура 1 Енох 1–5, 6–11, 12–16, 17–36.
-2. Шемихаза и Азаэль без смешения их редакционных ролей.
-3. Запрещённые знания и насилие.
-4. Ходатайство и отказ в мире.
+1. 1 Енох 1–5, 6–11, 12–16, 17–36.
+2. Шемихаза и Азаэль без смешения литературных линий.
+3. Запрещённые знания, гиганты и насилие.
+4. Ходатайство Еноха и отказ в мире.
 5. Происхождение злых духов только как енохическая доктрина.
-6. Термин Watchers и Дан. 4.
-7. Genesis → Enoch как предпочтительная модель.
-8. Common traditional core как допустимая альтернатива.
-9. Kvanvig reverse-dependence как зарегистрированная сильная меньшинственная гипотеза.
-10. Список деталей, запрещённых для автоматического импорта в Бытие.
+6. `Watchers` и Дан. 4.
+7. Рукописные различия именно Книги Стражей.
+8. Genesis → Enoch как предпочтительная модель.
+9. Common traditional core как допустимая альтернатива.
+10. Kvanvig reverse-dependence как зарегистрированная, но отвергнутая проектная модель происхождения Пятикнижия.
+11. Список деталей, запрещённых для импорта в Бытие.
+12. Publication packet.
 
 ## Не повторять
 
 - общий состав всего 1 Еноха;
-- полный manuscript catalogue;
 - Книгу Исполинов;
 - Иуд. 14–15;
-- физиологию как доказанный факт.
+- полный канонический спор.
 
 ```text
-RESEARCH = 88%
-PUBLICATION = 30%
+RESEARCH = 89%
+PUBLICATION = 32%
 SEARCH = SOURCE-SPECIFIC
 ```
 
@@ -246,34 +239,44 @@ SEARCH = SOURCE-SPECIFIC
 ## P0
 
 1. 4Q203, 4Q530–4Q533, 6Q8.
-2. Проверка physical joins и disputed joins.
+2. Physical joins и disputed joins.
 3. Охия, Хахия, Махавай, Гильгамеш и другие имена.
 4. Два сна.
-5. Таблица/надпись.
+5. Каменная/записанная таблица.
 6. Сад и дерево с тремя ветвями.
 7. Небесные книги и суд.
 8. Путешествие Махавая к Еноху.
 9. Молитва и возможное покаяние.
-10. Различить осознание вины, молитву, прощение и спасение.
-11. Турфан fragment-by-fragment control.
-12. Проверить, где физически присутствуют 3000 локтей, каннибализм и кровь.
-13. Permission log и точные plate identifiers.
+10. Осознание вины ≠ прощение ≠ спасение.
+11. Турфан fragment-by-fragment.
+12. 3000 локтей, каннибализм и кровь по физическим свидетелям.
+13. Permission log.
 
-## Жёсткий критерий публикации фрагмента
+## Каждый публикуемый фрагмент
 
 ```text
 siglum
 + plate
++ image id
 + visible ink
 + lacuna
 + restoration
 + editor
 + alternative
 + confidence
++ permission
 ```
 
+## Закрытые владельцы
+
+- Stuckenbruck 1997;
+- DJD 31/36;
+- отдельные Drawnel pages.
+
+Большая часть корпуса уже загружена; повторные Machiela, Stadel, Ancient Tales и переводы не нужны.
+
 ```text
-RESEARCH = 84%
+RESEARCH = 85%
 PUBLICATION = 30%
 SEARCH = MANUSCRIPT-SPECIFIC
 ```
@@ -284,172 +287,162 @@ SEARCH = MANUSCRIPT-SPECIFIC
 
 ## Уже создано
 
-- `JUDE_9_BODY_OF_MOSES_ASSUMPTION_ASCENSION_PRIMARY_SOURCE_DOSSIER.md`;
-- `JUDE_14_15_1ENOCH_1_9_4Q204_MANUSCRIPT_CANON_DOSSIER.md`.
+- `JUDE_9_BODY_OF_MOSES_ASSUMPTION_ASCENSION_TESTAMENT_PRIMARY_SOURCE_DOSSIER.md`
+- `JUDE_14_15_1ENOCH_1_9_4Q204_GREEK_VERSIONS_INSPIRATION_CANON_DOSSIER.md`
 
 ## P0
 
-1. Объединить два dossier в единую argument architecture.
-2. Не смешивать утраченный рассказ Иуд. 9 с сохранившимся Latin Testament без оговорок.
-3. Проверить exact loci Оригена, Климента, Дидима и поздних свидетелей.
-4. Различить Testament / Assumption / Ascension of Moses.
-5. Закрыть 4Q204 plate, fragment, line and visible-restored map.
-6. Закрыть Panopolitanus exact page/line control.
-7. Проверить латинские свидетели 1 Енох 1:9.
-8. Сопоставить Bauckham models и Lee 2025.
-9. Сформулировать inspiration-not-whole-source-canon argument.
-10. Создать writing packet и план сносок.
+1. Объединить dossier в writing packet.
+2. Не смешивать Latin Testament с утраченным рассказом Иуд. 9.
+3. Проверить exact loci Оригена, Климента и Дидима.
+4. Различить Testament / Assumption / Ascension.
+5. Сопоставить burial, accusation и bodily-ascent models.
+6. Закрыть 4Q204 plate/fragment/line/visible-restored map.
+7. Закрыть Panopolitanus exact page/line.
+8. Проверить Latin witnesses 1 Енох 1:9.
+9. Сопоставить Bauckham и Timothy Lee.
+10. Сформулировать inspiration-not-whole-source-canon argument.
+11. Проверить официальный эфиопский канонический источник.
+12. Создать publication outline и footnote plan.
 
-## Главная граница
+## Закрытые владельцы
+
+- ECM exact pages;
+- Tromp;
+- Bauckham exact pages;
+- Clement/Didymus critical editions.
+
+Открытые Charles, Origen, IAA 4Q204 и Lee не запрашивать у пользователя повторно.
 
 ```text
-Иуда подтверждает истинность собственного утверждения
-≠
-канонизирует весь предполагаемый источник
-```
-
-```text
-RESEARCH = 89%
-PUBLICATION = 35%
+RESEARCH = 82%
+PUBLICATION = 18%
 SEARCH = EXACT-LOCUS ONLY
 ```
 
 ---
 
-# 9. Статья 7 — Иуд. 5–7 и 2 Петра 2
+# 9. Статья 7 — Иуд. 5–7 и 2 Пет. 2
 
 ## P0
 
-1. ECM Catholic Letters — Иуд. 5–7.
-2. Иуд. 5 `Ἰησοῦς / κύριος / θεός`.
-3. `ἀρχή`.
-4. `οἰκητήριον`.
-5. двойное `τηρέω`.
-6. `ὅμοιον τρόπον`.
-7. `τούτοις`.
-8. `ἐκπορνεύω`.
-9. `σὰρξ ἑτέρα`.
-10. 2 Пет. 2:4 `ταρταρόω`.
-11. `σειραῖς / σιροῖς`.
-12. ангелы → древний мир → Ной → Содом.
-13. Bauckham, Davids, Schreiner, Frey, Green exact pages.
-14. Иуда/2 Петра: dependence vs common tradition.
+1. ECM Иуд. 5–7.
+2. `Ἰησοῦς / κύριος / θεός`.
+3. `ἀρχή`, `οἰκητήριον`, двойное `τηρέω`.
+4. Узы, мрак и великий день.
+5. `ὅμοιον τρόπον`, `τούτοις`, `ἐκπορνεύω`, `σὰρξ ἑτέρα`.
+6. 2 Пет. 2:4–10.
+7. `ταρταρόω`.
+8. `σειραῖς / σιροῖς`.
+9. Ангелы → Ной → Содом.
+10. Иуда/2 Петра: зависимость или общий источник.
+11. Стражеский фон как сильная вероятность.
+12. Жёсткая граница против физиологического максимализма.
 
-## Stop criterion
-
-- apparatus closed;
-- Watchers background stated probabilistically;
-- no physiology import;
-- alternative antecedents represented;
-- cross-links to Articles 3–6 replace repeated excursuses.
+Davids и Schreiner уже загружены. Остаются Bauckham, Frey, Green и ECM exact pages.
 
 ```text
-RESEARCH = 80%
-PUBLICATION = 25%
-SEARCH = APPARATUS ONLY
+RESEARCH = 79%
+PUBLICATION = 12%
+SEARCH = TEXTUAL-APPARATUS ONLY
 ```
 
 ---
 
 # 10. Статья 8 — 1 Петра 3
 
-## Уже есть
-
-Большая экзегетическая база и full commentary audit Davids/Schreiner.
-
 ## P0
 
-- critical apparatus 3:18–22;
-- `σαρκί / πνεύματι`;
-- `ἐν ᾧ`;
-- `πορευθείς` 3:19 / 3:22;
-- `ἐκήρυξεν`;
-- `πνεύματα / νεκροῖς` matrix;
-- `ἐπερώτημα` publication wording;
-- time-of-proclamation models;
-- Cyril Greek;
-- Bede Latin;
-- Aphrahat/Syriac only with exact locus;
-- Creed vs verse exegesis;
-- public draft.
+1. Critical apparatus 3:18–22.
+2. `θανατωθεὶς ... ζῳοποιηθεὶς`.
+3. `σαρκί / πνεύματι`.
+4. `ἐν ᾧ`.
+5. `πορευθεὶς` 3:19/3:22.
+6. `ἐκήρυξεν`.
+7. `πνεύματα ἐν φυλακῇ`.
+8. Noah-preaching, angelic proclamation и descent models.
+9. Крещение, ковчег, вода и `ἐπερώτημα`.
+10. 1 Пет. 4:6 без автоматического слияния.
+11. Кирилл, Беда и сирийская рецепция по exact loci.
+12. Publication packet.
+
+Davids, Schreiner и существующий `FIRST_PETER_3_18_22_FULL_EXEGESIS.md` являются основной базой.
 
 ```text
-RESEARCH = 84%
-PUBLICATION = 35%
-SEARCH = PRIMARY-SPECIFIC
+RESEARCH = 82%
+PUBLICATION = 24%
+SEARCH = EXACT-LOCUS ONLY
 ```
 
 ---
 
-# 11. Статья 9 — история толкования
-
-## Уже структурировано
-
-- Jewish interpretation matrix;
-- patristic matrix;
-- German scholarship map;
-- Reed/Doedens reception history;
-- Kurtz full audit;
-- medieval trajectory;
-- conservative/confessional audit.
+# 11. Статья 9 — история толкований
 
 ## P0
 
-1. Построить хронологию с exact loci.
-2. Различить раннее преимущество и единогласие.
-3. Показать human readings до Августина.
-4. Различить еврейские angelic, judicial, royal, Sethite и mixed линии.
-5. Закрыть original-language pages:
-   - Athenagoras;
-   - Africanus;
-   - Ephrem;
-   - Chrysostom;
-   - Cyril;
-   - Cassian;
-   - Theodoret;
-   - Augustine;
-   - Bede;
-   - Calvin;
-   - Keil;
-   - Cassuto.
-6. Объяснить факторы смены позиции без превращения истории в голосование.
-7. Не повторять manuscript apparatus статей 3–8.
+1. Хронологическая таблица:
+   - автор;
+   - дата;
+   - язык;
+   - locus;
+   - позиция;
+   - первичный текст;
+   - перевод;
+   - степень проверки;
+   - влияние.
+2. Второй Храм.
+3. Раввинистические человеческие и ангельные линии.
+4. Ранние христианские ангельные позиции.
+5. Africanus как переходный свидетель.
+6. Ephrem/Cassian и аскетический перенос ангельной высоты на Сифитов.
+7. Chrysostom, Cyril, Theodoret, Augustine.
+8. Средневековье.
+9. Реформация.
+10. German XIX–XX centuries.
+11. Кумран и современное возвращение небесного чтения.
+12. Причины смены позиций без голосования за истину.
+
+## Открытые первичные источники уже найдены
+
+- Africanus;
+- Augustine;
+- Calvin;
+- Cassian;
+- Rashi;
+- Ibn Ezra;
+- Radak;
+- Genesis Rabbah;
+- Yoma;
+- Pirkei de-Rabbi Eliezer;
+- public-domain German works.
+
+## Точечные остатки
+
+- Athenagoras Greek;
+- Ephrem Syriac;
+- Chrysostom Homily 22 Greek/modern pages;
+- Cyril Greek;
+- Theodoret Greek;
+- Bede Latin;
+- Cassuto Hebrew;
+- Kasher;
+- Alexander 1972.
 
 ```text
-древность ≠ consensus
-majority ≠ truth
-citation ≠ whole-book canonization
-reception ≠ original meaning
-```
-
-```text
-RESEARCH = 82%
-PUBLICATION = 20%
+RESEARCH = 88%
+PUBLICATION = 16%
 SEARCH = PRIMARY-LOCUS ONLY
 ```
 
 ---
 
-# 12. Путеводитель
+# 12. Самостоятельное приобретение
 
-Писать после готовности первых трёх статей, затем обновить после завершения серии.
+Главный ledger:
 
-```text
-RESEARCH = 88%
-PUBLICATION = 25%
-```
+`OPEN_SOURCE_SELF_ACQUISITION_70_PLUS_VERIFIED_ROUTES_LEDGER.md`
 
-Путеводитель не должен становиться десятой доказательной статьёй.
-
----
-
-# 13. Self-acquisition
-
-Канонический новый ledger:
-
-`GENESIS6_70_PLUS_VERIFIED_OPEN_SOURCE_ACQUISITION_ROUTES_LEDGER.md`
-
-Правило:
+Перед запросом пользователю обязательно проверить:
 
 ```text
 official open route
@@ -457,65 +450,54 @@ official open route
 → public-domain edition
 → existing library
 → author upload
-→ только затем USER-UPLOAD / ILL
+→ controlled borrow
+→ только затем user request / ILL
 ```
 
-Не просить пользователя повторно загружать уже имеющиеся Nickelsburg, Drawnel, Machiela, Stadel, Doedens, Reed, Kvanvig, Davids, Schreiner и Ancient Tales of Giants.
+Уже не просить как недоступные:
+
+- Leupold;
+- Calvin;
+- Augustine;
+- Africanus;
+- Origen;
+- Rashi/Ibn Ezra/Radak;
+- Neofiti official route;
+- 4Q204 official route;
+- Charles;
+- Bührer;
+- Zimmermann;
+- Birney;
+- Eslinger;
+- Timothy Lee open chapter.
 
 ---
 
-# 14. Triage нового источника
+# 13. Стоп-правило
 
-Каждый материал получает:
+Переходить к написанию, когда:
 
-1. primary/secondary;
-2. full/partial;
-3. article owner;
-4. novelty tier;
-5. position;
-6. claim impact;
-7. exact pages;
-8. duplicate status;
-9. permission status.
+1. текст и главные версии установлены;
+2. лучший аргумент каждой позиции представлен;
+3. сильнейшее возражение содержит честную уступку;
+4. ключевые тезисы имеют страницы или первичный текст;
+5. оставшиеся закрытые источники меняют аппарат, а не основной verdict.
+
+Для Статьи 1 критерий выполнен.
+
+## 14. Следующее действие
 
 ```text
-Tier 1
-→ меняет текст или вывод
+СЕЙЧАС
+→ merge Draft 01 + Draft 02
 
-Tier 2
-→ меняет уверенность или формулировку
+ПОСЛЕ
+→ Marathon по Быт. 6:4 / Статья 2
 
-Tier 3
-→ укрепляет сноску
+ПАРАЛЛЕЛЬНО
+→ writing packet Статьи 3
+→ объединение dossier Статьи 6
 
-Tier 4
-→ bibliographic noise / duplicate
+НЕ СЕЙЧАС
+→ новый общий dump по ангелам, Нефилимам и Еноху
 ```
-
-После насыщения темы только Tier 1–2 создаёт новый основной research file.
-
----
-
-# 15. Действующий порядок работы
-
-```text
-1. MERGE ARTICLE 1
-2. FOOTNOTE SET ARTICLE 1
-3. ARTICLE 2 HEBREW CLOSE READING
-4. ARTICLE 3 CORPUS/MANUSCRIPT PACKET
-5. ARTICLE 6 MERGE JUDE DOSSIERS INTO WRITING PACKET
-6. ARTICLE 4 WATCHERS PUBLICATION ARCHITECTURE
-7. ARTICLE 5 GIANTS MANUSCRIPT PACKAGE
-8. ARTICLE 7 ECM / GREEK APPARATUS
-9. ARTICLE 8 PUBLIC DRAFT
-10. ARTICLE 9 PRIMARY-SOURCE CHRONOLOGY
-11. OVERVIEW PAGE
-```
-
-Пункты 4–10 могут идти параллельно у разных агентов только при соблюдении ownership map.
-
----
-
-# 16. Итог
-
-> Корпус больше не организован вокруг искусственного числа статей. Девять материалов соответствуют девяти самостоятельным исследовательским объектам. Следующий рост должен происходить не через новый общий поиск, а через завершение владельцев: публикационный merge Статьи 1, close reading Статьи 2, корпусный packet Статьи 3 и точечные рукописные и текстологические проходы для статей 4–9.
