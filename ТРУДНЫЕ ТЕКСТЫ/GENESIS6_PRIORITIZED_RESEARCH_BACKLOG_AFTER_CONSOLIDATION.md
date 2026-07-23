@@ -1,7 +1,7 @@
 # Приоритетный backlog серии Быт. 6 / Енох / Иуда / Пётр
 
-**Дата:** 23 июля 2026 года  
-**Статус:** `CANONICAL-BACKLOG / MARATHON-XXX / OVERVIEW-PLUS-NINE / ARTICLE-1-MERGED / OWNER-BASED / SELF-ACQUIRE-FIRST / NO-BROAD-DUMPING`
+**Дата:** 24 июля 2026 года  
+**Статус:** `CANONICAL-BACKLOG / MARATHON-XXXI / OVERVIEW-PLUS-NINE / ARTICLES-1-2-MERGED / OWNER-BASED / SELF-ACQUIRE-FIRST / EXACT-FOOTNOTES / NO-BROAD-DUMPING`
 
 ---
 
@@ -10,7 +10,7 @@
 ```text
 0. Путеводитель
 1. Сыны Божии
-2. Нефилимы
+2. Нефилимы, могучие и люди имени
 3. Что такое 1 Енох
 4. Книга Стражей
 5. Книга Исполинов
@@ -28,22 +28,27 @@
 
 Старые схемы из 3, 5, 6 и 8 статей не использовать.
 
+Отдельная Статья 10 не создаётся. Применение распределяется по девяти статьям и завершается ненумерованным пастырским эпилогом.
+
 ---
 
-# 2. Общий приоритет после слияния Статьи 1
+# 2. Общий приоритет после Marathon XXXI
 
 ```text
-P0
-→ Статья 1: точные постраничные сноски и финальная редактура
+P0-A
+→ Статьи 1–2: exact apparatus, postраничные сноски, final copy edit
 
-P1
-→ Статья 2: Быт. 6:4, Нефилимы и Чис. 13
-
-P2
+P0-B
 → Статья 3: corpus/manuscript writing packet
 
+P1
+→ Статья 6: объединить Jude 9 и Jude 14–15 dossier
+
+P2
+→ Статья 4: publication packet Книги Стражей
+
 P3
-→ Статья 6: объединить два dossier в writing packet
+→ Статьи 7–8: ECM и publication packets
 
 ПАРАЛЛЕЛЬНО
 → apparatus
@@ -52,7 +57,7 @@ P3
 → permissions
 ```
 
-Общий поиск «ангелы или Сифиты» остановлен. Новый источник принимается только если закрывает конкретную лакуну владельца.
+Широкий поиск «ангелы или Сифиты» остановлен. Новый источник принимается только если закрывает конкретную лакуну статьи-владельца.
 
 ---
 
@@ -62,7 +67,7 @@ P3
 
 `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_MERGED_PUBLICATION_DRAFT.md`
 
-## Структурно готово
+## Структурно закрыто
 
 - Scripture-first и Моисеево авторство;
 - MT и Самаритянское Пятикнижие;
@@ -72,59 +77,24 @@ P3
 - морфология `בני האלהים`;
 - Иов и небесное собрание;
 - человеческие формулы сыновства;
-- Сифитско-заветная модель;
-- царско-династическая модель;
-- судейско-аристократическая модель;
-- минимальная небесная модель;
-- объект суда;
-- обычная брачная лексика;
+- Сифитско-заветная, царская, судейская и минимальная небесная модели;
+- человеческий центр суда;
 - Мф. 22:30;
 - ограниченное апостольское уточнение;
 - границы использования 1 Еноха;
-- сравнительная матрица;
-- финальный verdict;
-- уровни уверенности;
-- anti-maximalist boundaries.
-
-Draft 01 и Draft 02 сохраняются только как редакционная история.
+- итоговый verdict и уровни уверенности.
 
 ## P0 до публикации
 
-1. Расставить exact paginated footnotes.
-2. Проверить все Hebrew/Greek/Syriac/Latin forms.
-3. Закрыть BHQ/Göttingen ссылки там, где доступ получен.
-4. Проверить Alexandrinus folio/crop и permission.
-5. Заменить длинные version excursuses ссылками на приложение A.
-6. Добавить multilingual source delta без расширения статьи.
-7. Проверить каждый cross-link на статьи 2–9.
-8. Провести финальный русский copy edit.
-9. Подготовить:
-   - краткое резюме;
-   - SEO-description;
-   - sidebar «что можно / нельзя утверждать»;
-   - bibliography.
-
-## Обязательные сноски
-
-- BHQ / Samaritan Pentateuch;
-- Wevers / Alexandrinus;
-- Onkelos / Neofiti / Pseudo-Jonathan;
-- Doedens;
-- Fockner и Leupold;
-- Calvin / Augustine / Keil;
-- Kline и лучшие royal-model sources;
-- Kurtz / Delitzsch;
-- Davids / Schreiner / Bauckham;
-- Reed / Nickelsburg только в пределах reception/Enoch context.
-
-## Точечные остатки
-
 1. BHQ Genesis 6:1–4 exact apparatus/commentary.
-2. Göttingen Genesis full apparatus 6:2–4.
-3. Alexandrinus publishable folio/crop.
-4. Neofiti exact main/margin pages и critical apparatus.
-5. Philip Alexander 1972.
-6. Закрытые страницы Westermann, Schlisske, Seebass и Schreiner 1981.
+2. Göttingen Genesis 6:2–4 exact apparatus.
+3. Проверка Hebrew/Greek/Syriac/Latin forms.
+4. Alexandrinus folio/crop и permission.
+5. Neofiti exact critical apparatus.
+6. Philip Alexander 1972.
+7. Точные страницы Westermann, Schlisske, Seebass, Schreiner.
+8. Финальный русский copy edit.
+9. Summary, SEO-description, sidebar и bibliography.
 
 ```text
 RESEARCH = 98%
@@ -135,77 +105,155 @@ SEARCH = FOOTNOTE-SPECIFIC ONLY
 
 ---
 
-# 4. Статья 2 — Нефилимы
+# 4. Статья 2 — Нефилимы, могучие и люди имени
 
-## P0 close reading
+## Главный файл
 
-1. `הנפלים היו בארץ`.
-2. `בימים ההם וגם אחרי כן`.
-3. `אשר יבאו`.
-4. `וילדו להם`.
-5. `המה הגברים`.
-6. `אשר מעולם`.
-7. `אנשי השם`.
-8. Все возможные antecedent diagrams.
-9. MT, SP, LXX, Таргумы, Пешитта и Вульгата.
+`ARTICLE_2_NEPHILIM_GIBBORIM_MEN_OF_NAME_MERGED_PUBLICATION_DRAFT.md`
 
-## P0 canon
+## Созданные владельческие файлы
 
-- Чис. 13:28–33;
-- `דבה` и риторика разведчиков;
-- Анакимы;
-- Рефаимы;
-- Емимы;
-- Замзуммимы;
-- Ог и Сихон;
-- отсутствие доказанной генетической непрерывности.
+1. `ARTICLE_2_NEPHILIM_GIBBORIM_MEN_OF_NAME_DRAFT_01_HEBREW_SYNTAX_AND_CANONICAL_MODELS.md`
+2. `ARTICLE_2_NEPHILIM_GIBBORIM_MEN_OF_NAME_DRAFT_02_VERSIONS_TEXTUAL_CRITICISM_AND_REVISED_VERDICT.md`
+3. `ARTICLE_2_GENESIS6_4_ANTECEDENT_DIRECT_OBJECT_AND_TRANSLATION_CONTROL_MATRIX.md`
+4. `ARTICLE_2_GENESIS6_4_ANCIENT_VERSIONS_FULL_SYNOPTIC.md`
+5. `ARTICLE_2_NUMBERS13_FEAR_RHETORIC_ANAKIM_REPHAIM_CANONICAL_DOSSIER.md`
+6. `ARTICLE_2_NUMBERS13_33_TEXTUAL_APPARATUS_AND_GENEALOGY_CLAUSE_DOSSIER.md`
+7. `ARTICLE_2_EZEKIEL32_27_NOPHELIM_GIBBORIM_LEXICAL_DOSSIER.md`
+8. `ARTICLE_2_REPHAIM_FOUR_DOMAIN_LEXICAL_MATRIX.md`
+9. `ARTICLE_2_EXACT_FOOTNOTE_AND_SOURCE_VERIFICATION_LEDGER.md`
 
-## Обязательные модели
+## Закрыто в Marathon XXXI
 
-- Нефилимы существовали независимо от союзов;
-- Нефилимы являются детьми;
-- дети являются `גברים`, но не обязательно всеми Нефилимами;
-- категории частично перекрываются;
-- поздняя таргумная модель падших существ;
-- человеческие воины/тираны;
-- Grossman;
-- Jang;
-- теория второй инвазии как pressure-test, не исходная позиция.
+### Еврейский синтаксис
 
-## Источники
+- `הנפלים היו בארץ`;
+- `בימים ההם`;
+- `וגם אחרי כן`;
+- frequentative possibility of `יבאו`;
+- субъект и отсутствующий объект `וילדו להם`;
+- кандидаты на антецедент `המה`;
+- `הגברים`;
+- `אשר מעולם`;
+- `אנשי השם`;
+- шесть моделей отношений.
 
-- BHQ/Göttingen Numbers;
-- Hendel;
-- John Day;
-- Grossman official pagination;
-- Jang publisher PDF;
-- лучшие исследования народов-великанов.
+### Древние версии
+
+- MT;
+- Самаритянское Пятикнижие;
+- LXX;
+- Пешитта;
+- Вульгата;
+- Онкелос;
+- Неофити main/margin;
+- Псевдо-Ионафан.
+
+Главный вывод:
 
 ```text
-RESEARCH = 74%
-PUBLICATION = 15%
-SEARCH = OWNER-SPECIFIC
+Рождённые
+→ вероятнее всего ближайший антецедент «они»
+→ названы могучими и людьми имени
+
+Нефилимы
+→ тесно связаны с рождёнными
+→ древние версии часто полностью отождествляют категории
+→ полное тождество древне и вероятно
+→ прямой объект «Нефилимов» в MT/SP всё равно отсутствует
+```
+
+### Чис. 13:33
+
+- риторика худой молвы;
+- саранча прежде всего в собственных глазах разведчиков;
+- Анакимы и имя Нефилимов;
+- MT-plus `בני ענק מן הנפלים`;
+- OG-minus отдельной генеалогической фразы;
+- различение текстологического факта и гипотезы поздней глоссы;
+- отсутствие рассказа о втором вторжении.
+
+### Иез. 32:27
+
+- `נֹפְלִים` как Qal-причастие «павшие»;
+- отличие от собственного имени `נְפִלִים`;
+- LXX «гиганты, павшие издревле»;
+- возможная аллюзия / игра слов;
+- запрет вывода «Нефилимы буквально означает падшие ангелы».
+
+### Рефаимы
+
+Разведены четыре домена:
+
+1. древний народ;
+2. топоним;
+3. тени Шеола;
+4. Рафа и воины Гефа.
+
+Ог прямо связан с Рефаимами, но не назван Нефилимом. Голиаф не назван Нефилимом. Единая демоническая родословная не установлена.
+
+### Практический слой
+
+- люди имени не защищены от суда;
+- страх мифологизирует реального противника;
+- неизвестность не разрешает фантазию;
+- текстовые варианты требуют точности, а не паники;
+- расовая и генетическая демонология запрещена;
+- Божья власть больше древней силы.
+
+## P0 до публикации
+
+1. Göttingen Genesis, Gen 6:4 — exact apparatus and page.
+2. Göttingen Numeri, Num 13:33 — полный список свидетелей плюса/минуса.
+3. Göttingen Ezechiel, Ezek 32:27 — negative/positive apparatus.
+4. BHQ/BHS apparatus для трёх loci.
+5. SP Numbers 13:33 в фиксированном издании.
+6. Wevers, *Notes on Greek Genesis*, exact Gen 6:4 page.
+7. Wevers, *Notes on Greek Numbers*, exact Num 13:33 page.
+8. Sperber, Onkelos exact pages.
+9. Maher, Pseudo-Jonathan exact page.
+10. HALOT/DCH exact pages `נפילים / רפאים`.
+11. Проверить конкретные Qumran Numbers fragments без предположения, что стих сохранён.
+12. Финальный copy edit, cross-links и bibliography.
+
+## Сносочный контроль
+
+Точно подтверждены страницы:
+
+- McNamara, Neofiti, 72–73;
+- Newman, 21–23, 27, 35–36;
+- Routledge, 21;
+- Lee, article 7–21 и заявленная лексическая граница.
+
+Остальные издания цитируются по locus или остаются `PENDING-PAGE`. Приблизительные страницы запрещены.
+
+```text
+RESEARCH = 96%
+STRUCTURAL MERGE = COMPLETE
+PUBLICATION = 84%
+FOOTNOTES = 80%
+SEARCH = APPARATUS-SPECIFIC ONLY
 ```
 
 ---
 
 # 5. Статья 3 — что такое 1 Енох
 
-## P0
+## P0 writing packet
 
-1. Таблица пяти основных частей корпуса.
-2. Historical Enoch / Enochic tradition / extant corpus.
-3. Относительная датировка частей без ложной точности.
+1. Historical Enoch / Enochic tradition / extant composite corpus.
+2. Таблица пяти частей 1 Еноха.
+3. Относительная датировка без ложной точности.
 4. Manuscript date ≠ composition date.
 5. Полная карта 4Q201–4Q212:
    - siglum;
    - содержание;
    - material date;
-   - article relevance;
    - editor;
-   - image route.
+   - article owner;
+   - official image route.
 6. Арамейская, греческая, эфиопская и латинская ветви.
-7. Codex Panopolitanus как конкретный свидетель.
+7. Codex Panopolitanus как конкретный свидетель, не «весь греческий Енох».
 8. Эфиопская полнота и текстологические пределы.
 9. Псевдоэпиграфия и составное авторство.
 10. Канонический статус в Эфиопской православной традиции по официальным источникам.
@@ -221,13 +269,13 @@ SEARCH = OWNER-SPECIFIC
 - Stadel;
 - official IAA objects;
 - Charles;
-- Timothy Lee.
-
-Остаются критические Ethiopic/Greek pages и permission data.
+- Timothy Lee;
+- Codex Panopolitanus routes.
 
 ```text
 RESEARCH = 86%
 PUBLICATION = 20%
+NEXT = MARATHON-XXXII
 SEARCH = MANUSCRIPT-SPECIFIC
 ```
 
@@ -250,7 +298,7 @@ SEARCH = MANUSCRIPT-SPECIFIC
 11. Список деталей, запрещённых для импорта в Бытие.
 12. Publication packet.
 
-Не повторять общий состав всего 1 Еноха, Книгу Исполинов, Иуд. 14–15 и полный канонический спор.
+Не повторять общий состав 1 Еноха, Книгу Исполинов, Иуд. 14–15 и полный канонический спор.
 
 ```text
 RESEARCH = 89%
@@ -266,9 +314,9 @@ SEARCH = SOURCE-SPECIFIC
 
 1. 4Q203, 4Q530–4Q533, 6Q8.
 2. Physical joins и disputed joins.
-3. Охия, Хахия, Махавай, Гильгамеш и другие имена.
+3. Охия, Хахия, Махавай и Гильгамеш.
 4. Два сна.
-5. Таблица/запись.
+5. Таблица / запись.
 6. Сад и дерево с тремя ветвями.
 7. Небесные книги и суд.
 8. Путешествие Махавая к Еноху.
@@ -278,7 +326,7 @@ SEARCH = SOURCE-SPECIFIC
 12. 3000 локтей, каннибализм и кровь по физическим свидетелям.
 13. Permission log.
 
-Каждый публикуемый фрагмент:
+Каждый публикуемый фрагмент требует:
 
 ```text
 siglum
@@ -312,77 +360,65 @@ SEARCH = MANUSCRIPT-SPECIFIC
 
 ## P0
 
-1. Объединить dossier в writing packet.
-2. Не смешивать Latin Testament с утраченным рассказом Иуд. 9.
-3. Проверить exact loci Оригена, Климента и Дидима.
-4. Различить Testament / Assumption / Ascension.
-5. Сопоставить burial, accusation и bodily-ascent models.
-6. Закрыть 4Q204 plate/fragment/line/visible-restored map.
-7. Закрыть Panopolitanus exact page/line.
-8. Проверить Latin witnesses 1 Енох 1:9.
-9. Сопоставить Bauckham и Timothy Lee.
-10. Сформулировать inspiration-not-whole-source-canon argument.
-11. Проверить официальный эфиопский канонический источник.
-12. Создать publication outline и footnote plan.
-
-Закрытые владельцы: ECM exact pages, Tromp, Bauckham exact pages, Clement/Didymus critical editions.
+1. Объединить оба dossier в один writing packet.
+2. Иуд. 9: Михаил, дьявол и тело Моисея.
+3. Отделить сохранившееся *Assumption/Testament of Moses* от утраченного эпизода.
+4. Иуд. 14–15 и 1 Енох 1:9.
+5. 4Q204, Greek Enoch, Ethiopic tradition.
+6. Формула `ἐπροφήτευσεν`.
+7. Цитирование истинного материала ≠ канонизация всего источника.
+8. Вдохновенность слов Иуды.
+9. Канон, предание и внешняя литература.
+10. Практический раздел о границах авторитета.
 
 ```text
-RESEARCH = 82%
-PUBLICATION = 18%
-SEARCH = EXACT-LOCUS ONLY
+RESEARCH = 91%
+PUBLICATION = 28%
+NEXT = UNIFIED-WRITING-PACKET
 ```
 
 ---
 
-# 9. Статья 7 — Иуд. 5–7 и 2 Пет. 2
+# 9. Статья 7 — ангелы под мраком
 
 ## P0
 
-1. ECM Иуд. 5–7.
-2. `Ἰησοῦς / κύριος / θεός`.
-3. `ἀρχή`, `οἰκητήριον`, двойное `τηρέω`.
-4. Узы, мрак и великий день.
-5. `ὅμοιον τρόπον`, `τούτοις`, `ἐκπορνεύω`, `σὰρξ ἑτέρα`.
-6. 2 Пет. 2:4–10.
-7. `ταρταρόω`.
-8. `σειραῖς / σιροῖς`.
-9. Ангелы → Ной → Содом.
-10. Иуда/2 Петра: зависимость или общий источник.
-11. Стражеский фон как сильная вероятность.
-12. Жёсткая граница против физиологического максимализма.
-
-Davids и Schreiner уже загружены. Остаются Bauckham, Frey, Green и ECM exact pages.
+1. Иуд. 5–7 — последовательность примеров.
+2. `ἀρχή`, `οἰκητήριον`, `δεσμοῖς ἀϊδίοις`, `ζόφος`.
+3. Содомская аналогия без лексического насилия.
+4. 2 Пет. 2:4–10.
+5. `ταρταρώσας` и заключение.
+6. Ной и древний мир.
+7. ECM / critical apparatus.
+8. Суд над ангелами и сохранение праведных.
+9. Не повторять метод цитирования Иуды из Статьи 6.
 
 ```text
-RESEARCH = 79%
-PUBLICATION = 12%
-SEARCH = TEXTUAL-APPARATUS ONLY
+RESEARCH = 88%
+PUBLICATION = 25%
 ```
 
 ---
 
-# 10. Статья 8 — 1 Петра 3
+# 10. Статья 8 — духи в темнице
 
 ## P0
 
-1. Critical apparatus 3:18–22.
-2. `θανατωθεὶς ... ζῳοποιηθεὶς`.
-3. `σαρκί / πνεύματι`.
-4. `ἐν ᾧ`.
-5. `πορευθεὶς` 3:19/3:22.
-6. `ἐκήρυξεν`.
-7. `πνεύματα ἐν φυλακῇ`.
-8. Noah-preaching, angelic proclamation и descent models.
-9. Крещение, ковчег, вода и `ἐπερώτημα`.
-10. 1 Пет. 4:6 без автоматического слияния.
-11. Кирилл, Беда и сирийская рецепция по exact loci.
-12. Publication packet.
+1. 1 Пет. 3:18–22.
+2. `ἐν ᾧ`.
+3. `πορευθείς`.
+4. `ἐκήρυξεν`.
+5. `πνεύματα ἐν φυλακῇ`.
+6. дни Ноя.
+7. крещение и `ἐπερώτημα`.
+8. вознесение и покорение сил.
+9. 1 Пет. 4:6 как отдельный, но связанный вопрос.
+10. ECM / exact pages.
+11. Христологический центр: победа Христа, не любопытство о духах.
 
 ```text
-RESEARCH = 82%
-PUBLICATION = 24%
-SEARCH = EXACT-LOCUS ONLY
+RESEARCH = 87%
+PUBLICATION = 27%
 ```
 
 ---
@@ -391,96 +427,93 @@ SEARCH = EXACT-LOCUS ONLY
 
 ## P0
 
-1. Хронологическая таблица с author/date/language/locus/position/text/translation/confidence/influence.
-2. Второй Храм.
-3. Раввинистические человеческие и ангельные линии.
-4. Ранние христианские ангельные позиции.
-5. Africanus как переходный свидетель.
-6. Ephrem/Cassian и аскетический перенос ангельной высоты на Сифитов.
-7. Chrysostom, Cyril, Theodoret, Augustine.
-8. Средневековье.
-9. Реформация.
-10. Немецкий XIX–XX век.
-11. Кумран и современное возвращение небесного чтения.
-12. Причины смены позиций без голосования за истину.
-
-Открытые источники уже найдены для Africanus, Augustine, Calvin, Cassian, Rashi, Ibn Ezra, Radak, Genesis Rabbah, Yoma, Pirkei de-Rabbi Eliezer и public-domain German works.
-
-Точечные остатки: Athenagoras Greek, Ephrem Syriac, Chrysostom, Cyril, Theodoret, Bede, Cassuto, Kasher, Alexander 1972.
+1. раннеиудейское небесное чтение;
+2. раннехристианские авторы;
+3. Julius Africanus и переход к Сифитской модели;
+4. Augustine;
+5. средневековая еврейская экзегеза;
+6. Реформация;
+7. современные Сифитская, царская, судейская и небесная модели;
+8. причины исторических сдвигов;
+9. история рецепции ≠ голосование за первоначальный смысл;
+10. практический раздел о церковном единстве при второстепенном разногласии.
 
 ```text
-RESEARCH = 88%
-PUBLICATION = 16%
-SEARCH = PRIMARY-LOCUS ONLY
+RESEARCH = 84%
+PUBLICATION = 18%
+SEARCH = ORIGINAL-LOCUS-SPECIFIC
 ```
 
 ---
 
-# 12. Самостоятельное приобретение
+# 12. Путеводитель и эпилог
 
-Главный ledger:
+Путеводитель пишется после стабилизации основных владельцев.
 
-`OPEN_SOURCE_SELF_ACQUISITION_70_PLUS_VERIFIED_ROUTES_LEDGER.md`
+Он должен содержать:
 
-Перед запросом пользователю:
+- карту серии;
+- 10–12 итоговых тезисов;
+- уровни уверенности;
+- предупреждения против сенсационализма;
+- cross-links;
+- технические приложения.
+
+После Статьи 9 создаётся ненумерованный пастырский эпилог, а не Статья 10.
+
+---
+
+# 13. Обязательная политика источников
 
 ```text
-official open route
-→ institutional repository
-→ public-domain edition
-→ existing library
-→ author upload
-→ controlled borrow
-→ только затем user request / ILL
+1. определить владельца
+2. проверить дубли
+3. установить полный статус доступа
+4. прочитать релевантный раздел
+5. извлечь сильнейший аргумент
+6. зафиксировать цену модели
+7. проверить первичный текст
+8. определить: verdict или только сноска
+9. не создавать общий dump
+10. не указывать непросмотренную страницу
 ```
 
-Не просить повторно как недоступные:
+## Высокоприоритетные закрытые или точечные материалы
 
-- Leupold;
-- Calvin;
-- Augustine;
-- Africanus;
-- Origen;
-- Rashi / Ibn Ezra / Radak;
-- Neofiti official route;
-- 4Q204 official route;
-- Charles;
-- Bührer;
-- Zimmermann;
-- Birney;
-- Eslinger;
-- Timothy Lee open material.
+- BHQ Genesis;
+- Göttingen Genesis, Numeri, Ezechiel;
+- ECM Catholic Letters;
+- Alexandrinus image/permission;
+- Philip Alexander 1972;
+- Tromp, *Assumption of Moses*;
+- Stuckenbruck 1997;
+- DJD 31/36;
+- Bauckham exact pages;
+- HALOT/DCH exact entries;
+- critical Syriac and patristic loci.
 
 ---
 
-# 13. Стоп-правило
-
-Переходить к написанию, когда:
-
-1. текст и главные версии установлены;
-2. лучший аргумент каждой позиции представлен;
-3. сильнейшее возражение содержит честную уступку;
-4. ключевые тезисы имеют страницы или первичный текст;
-5. оставшиеся закрытые источники меняют аппарат, а не verdict.
-
-Для Статьи 1 критерий написания и структурного слияния выполнен.
-
----
-
-# 14. Следующее действие
+# 14. Следующий марафон
 
 ```text
-СЕЙЧАС
-→ Статья 1: exact paginated footnote pass
+MARATHON XXXII
+→ Статья 3
+→ что такое 1 Енох
+→ corpus architecture
+→ five-book table
+→ 4Q201–4Q212 manuscript map
+→ language and transmission tree
+→ dating controls
+→ canonical-status boundaries
+→ writing packet
+```
+
+Параллельный технический поток:
+
+```text
+Статьи 1–2
+→ exact critical apparatus
+→ exact pagination
 → final copy edit
-
-СЛЕДУЮЩИЙ ИССЛЕДОВАТЕЛЬСКИЙ МАРАФОН
-→ Статья 2: Быт. 6:4 / Нефилимы / Чис. 13
-
-ПАРАЛЛЕЛЬНО
-→ writing packet Статьи 3
-→ объединение dossier Статьи 6
-
-НЕ СЕЙЧАС
-→ новый общий dump по ангелам, Нефилимам и Еноху
 ```
