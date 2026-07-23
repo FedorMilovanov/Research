@@ -1,7 +1,7 @@
 # README: исследовательский корпус Быт. 6 / Енох / Иуда / Пётр
 
 **Дата:** 23 июля 2026 года  
-**Статус:** `CANONICAL-ENTRYPOINT / MARATHONS-II-XXIX / MOSAIC-AUTHORSHIP / SCRIPTURE-FIRST / OVERVIEW-PLUS-NINE / THREE-ENOCHIC-STAGES / JUDE-NO-DUPLICATION`
+**Статус:** `CANONICAL-ENTRYPOINT / MARATHONS-II-XXX / MOSAIC-AUTHORSHIP / SCRIPTURE-FIRST / OVERVIEW-PLUS-NINE / ARTICLE-1-MERGED / THREE-ENOCHIC-STAGES / JUDE-NO-DUPLICATION`
 
 ---
 
@@ -10,17 +10,24 @@
 1. `GENESIS6_FINAL_POSITION_AND_CLAIM_BOUNDARIES.md`
 2. `GENESIS6_FINAL_PUBLICATION_SERIES_ARCHITECTURE.md`
 3. `NINE_ARTICLE_EVIDENCE_OWNER_CROSS_LINK_AND_ANTI_DUPLICATION_MATRIX.md`
-4. `MOSAIC_AUTHORSHIP_AND_DIVINE_REVELATION_CANONICAL_EVIDENCE_LEDGER.md`
-5. `GENESIS6_ANCIENT_VERSIONS_MASTER_SYNOPTIC_AND_INTERPRETIVE_WEIGHT.md`
-6. `GENESIS6_1_4_OWN_FORMAL_RUSSIAN_TRANSLATION_WITH_NOTES.md`
-7. `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_01.md`
-8. `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_02_ARGUMENTS_AND_VERDICT.md`
-9. `JUDE_9_BODY_OF_MOSES_ASSUMPTION_ASCENSION_TESTAMENT_PRIMARY_SOURCE_DOSSIER.md`
-10. `JUDE_14_15_1ENOCH_1_9_4Q204_GREEK_VERSIONS_INSPIRATION_CANON_DOSSIER.md`
-11. `OPEN_SOURCE_SELF_ACQUISITION_70_PLUS_VERIFIED_ROUTES_LEDGER.md`
-12. `NEWLY_ACQUIRED_MULTILINGUAL_INTERPRETER_ARGUMENT_DELTA_XXIX.md`
+4. `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_MERGED_PUBLICATION_DRAFT.md`
+5. `MOSAIC_AUTHORSHIP_AND_DIVINE_REVELATION_CANONICAL_EVIDENCE_LEDGER.md`
+6. `GENESIS6_ANCIENT_VERSIONS_MASTER_SYNOPTIC_AND_INTERPRETIVE_WEIGHT.md`
+7. `GENESIS6_1_4_OWN_FORMAL_RUSSIAN_TRANSLATION_WITH_NOTES.md`
+8. `JUDE_9_BODY_OF_MOSES_ASSUMPTION_ASCENSION_TESTAMENT_PRIMARY_SOURCE_DOSSIER.md`
+9. `JUDE_14_15_1ENOCH_1_9_4Q204_GREEK_VERSIONS_INSPIRATION_CANON_DOSSIER.md`
+10. `OPEN_SOURCE_SELF_ACQUISITION_70_PLUS_VERIFIED_ROUTES_LEDGER.md`
+11. `NEWLY_ACQUIRED_MULTILINGUAL_INTERPRETER_ARGUMENT_DELTA_XXIX.md`
+12. `NEWLY_ACQUIRED_MULTILINGUAL_INTERPRETER_ARGUMENT_DELTA_XXIX_NINE_ARTICLE_MIGRATION_NOTICE.md`
 13. `GENESIS6_EXACT_USER_UPLOAD_REQUEST_LIST_AND_SELF_ACQUISITION_QUEUE.md`
 14. `GENESIS6_PRIORITIZED_RESEARCH_BACKLOG_AFTER_CONSOLIDATION.md`
+
+Исходные файлы:
+
+- `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_01.md`;
+- `ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_DRAFT_02_ARGUMENTS_AND_VERDICT.md`
+
+сохраняются как редакционная история. Для дальнейшей публикационной работы использовать объединённый файл.
 
 При конфликте старых файлов приоритет имеют:
 
@@ -28,6 +35,7 @@
 финальная позиция
 → финальная архитектура 0 + 9
 → девятистатейная owner-map
+→ объединённый черновик Статьи 1
 → настоящий README
 → текущий backlog
 ```
@@ -137,11 +145,13 @@
 → самостоятельная Книга Исполинов
 
 СТАТЬЯ 6
-→ только Енох 1:9 в связи с методом Иуды
+→ Енох 1:9 в связи с методом Иуды
 
 СТАТЬЯ 9
-→ история авторитета и рецепции, без повторной рукописной экзегезы
+→ история авторитета и рецепции
 ```
+
+Это разные исследовательские объекты, а не повтор одной статьи.
 
 ## Почему Иуда больше не повторяется
 
@@ -218,23 +228,39 @@ Pseudo-Jonathan
 
 ## Статья 1
 
+Создан единый файл:
+
+`ARTICLE_1_SONS_OF_GOD_AND_DAUGHTERS_OF_HUMANKIND_MERGED_PUBLICATION_DRAFT.md`
+
+В нём:
+
+- слиты Draft 01 и Draft 02;
+- удалены повторные промежуточные выводы;
+- четыре позиции представлены в steelman-форме;
+- материал Нефилимов, Еноха и Иуды сокращён до cross-links;
+- закреплён минимальный небесный verdict;
+- добавлены границы уверенного, вероятного, открытого и запрещённого.
+
 ```text
-исследование
-→ насыщено
+RESEARCH
+→ 98%
 
-Draft 01
-→ текст, версии, лексика
+STRUCTURAL MERGE
+→ COMPLETE
 
-Draft 02
-→ позиции, возражения, verdict
+PUBLICATION
+→ около 82%
 
-следующее действие
-→ merge + новые multilingual source cards + сноски + сокращение повторов
+СЛЕДУЮЩЕЕ ДЕЙСТВИЕ
+→ exact paginated footnotes
+→ проверка Hebrew/Greek forms
+→ final copy edit
+→ SEO/summary/sidebar
 ```
 
 ## Статья 2
 
-Нужен отдельный close reading Быт. 6:4, Чис. 13 и народов-великанов.
+Нужен отдельный close reading Быт. 6:4, Чис. 13 и народов-великанов. Это следующий главный исследовательский марафон.
 
 ## Статья 3
 
@@ -242,7 +268,7 @@ Draft 02
 
 ## Статья 4
 
-Большой исследовательский корпус Книги Стражей уже существует; нужен publication packet.
+Большой корпус Книги Стражей уже существует; нужен publication packet.
 
 ## Статья 5
 
@@ -250,30 +276,25 @@ Draft 02
 
 ## Статья 6
 
-Созданы два primary-source dossier:
-
-- Иуд. 9 и тело Моисея;
-- Иуд. 14–15 и 1 Енох 1:9.
-
-Нужно объединить их в writing packet.
+Созданы два primary-source dossier. Нужно объединить их в writing packet.
 
 ## Статьи 7–8
 
-Davids, Schreiner и существующие греческие ledgers уже дают сильную основу; остаются ECM и точечные первичные страницы.
+Davids, Schreiner и греческие ledgers дают сильную основу; остаются ECM и точечные первичные страницы.
 
 ## Статья 9
 
-Многоязычная и патристическая база собрана; публикация требует оригинальных loci и хронологической редакции.
+Многоязычная и патристическая база собрана; публикация требует original-language loci и хронологической редакции.
 
 ---
 
 # 8. Самостоятельно найденные источники
 
-Создан ledger более чем со 120 записями:
+Главный ledger:
 
 `OPEN_SOURCE_SELF_ACQUISITION_70_PLUS_VERIFIED_ROUTES_LEDGER.md`
 
-В нём различаются:
+Он различает:
 
 ```text
 FULL OPEN
@@ -298,13 +319,13 @@ DUPLICATE
 - Rashi, Ibn Ezra, Radak и другие открытые еврейские комментарии;
 - официальный Neofiti manuscript route;
 - официальный 4Q204;
-- Charles по Моисею и Еноху;
+- Charles;
 - Origen;
 - Bührer;
 - Zimmermann;
 - Birney;
 - Eslinger;
-- открытый chapter Timothy Lee.
+- открытый материал Timothy Lee.
 
 ---
 
@@ -335,21 +356,21 @@ DUPLICATE
 - Hill Chrysostom Homily 22;
 - Cyril and Bede critical editions.
 
-Пользовательская загрузка требуется только после повторной проверки официального, institutional, public-domain, author-upload и library route.
+Пользовательская загрузка требуется только после повторной проверки official, institutional, public-domain, author-upload и library route.
 
 ---
 
-# 10. Метод работы с новыми источниками
+# 10. Метод работы с новым источником
 
 ```text
 1. определить статью-владельца
-2. проверить, не дубль ли это
+2. проверить дубли
 3. установить full text / preview / metadata
 4. прочитать релевантный раздел полностью
 5. извлечь сильнейший аргумент
 6. зафиксировать цену модели
 7. проверить первичные тексты
-8. определить, меняет ли источник verdict или только сноски
+8. определить, меняется verdict или только сноска
 9. не создавать новый общий dump
 ```
 
@@ -359,23 +380,25 @@ DUPLICATE
 
 ```text
 P0
-→ слить Draft 01 + Draft 02 Статьи 1
+→ Статья 1: точные постраничные сноски и финальная редактура
 
 P1
-→ начать Статью 2
+→ Статья 2: Быт. 6:4, Нефилимы и Чис. 13
 
 P2
-→ создать writing packet Статьи 3
+→ Статья 3: corpus/manuscript writing packet
 
 P3
-→ объединить dossier Статьи 6
+→ Статья 6: объединение двух dossier
 
 ПАРАЛЛЕЛЬНО
-→ точечные аппараты, изображения и permissions
+→ точечные аппараты, facsimiles, original-language loci и permissions
 ```
 
-Обзорная страница пишется последней, чтобы отражать завершённые выводы.
+Обзорная страница пишется после готовности основных владельцев, чтобы не превратиться в десятую доказательную статью.
 
-## 12. Редакционный принцип
+---
 
-> Исследование движется от богодухновенного Моисеева текста к составу и рукописям 1 Еноха, затем к Книге Стражей и Книге Исполинов, после чего рассматривает метод Иуды, ангельское преступление в Иуде и 2 Петра, трудный текст 1 Петра и, наконец, историю толкования. Каждый вопрос имеет одного владельца; открытые источники приобретаются самостоятельно прежде, чем пользователь получает запрос на загрузку.
+# 12. Редакционный принцип
+
+> Писание является высшим письменным первоисточником. Моисеев текст устанавливается по еврейским свидетелям; древние версии показывают передачу и раннее понимание; енохическая литература описывается точно и по отдельным произведениям; апостольские тексты дают каноническое уточнение без импорта всей поздней системы; история рецепции помогает понять спор, но не решает первоначальный смысл голосованием.
