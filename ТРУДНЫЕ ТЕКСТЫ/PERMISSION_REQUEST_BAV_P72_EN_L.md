@@ -1,52 +1,46 @@
 # Rights enquiry: Biblioteca Apostolica Vaticana / Pap.Bodmer.VIII / P72
 
-**Status:** `READY-FOR-PRELIMINARY-ENQUIRY / FORM-STILL-REQUIRED`  
+**Status:** `SENT-TO-RIGHTS@VATLIB.IT / 2026-07-24 / FORM-STILL-MAY-BE-REQUIRED`  
 **Recipient:** `rights@vatlib.it`  
-**Suggested subject:** `Rights enquiry: Pap.Bodmer.VIII (P72) for an educational web publication`
+**Subject:** `Permission request: P72 (Bodmer VII–VIII) manuscript image for educational web article`
+
+> Delivery note: an earlier message sent to `library@vatlib.it` failed with SMTP 550 because that address was not deliverable. The enquiry was corrected and successfully sent to the official address `rights@vatlib.it`, published by the BAV Reproductions and Rights Office.
 
 ---
 
 Dear Reproductions and Rights Office,
 
-I am preparing a freely accessible Russian-language educational article series on 1 Peter, 2 Peter, Jude, and their early manuscript witnesses for the website https://gospod-bog.ru.
+I am preparing a freely accessible Russian-language educational article on 1 Peter 3:18–22, 1 Peter 4:6, 2 Peter 2:4, and Jude 14–15 for the theological and historical website https://gospod-bog.ru.
 
-I am writing to ask whether the Biblioteca Apostolica Vaticana could license one low-resolution or watermarked image from Pap.Bodmer.VIII (Gregory-Aland P72) for use in one scholarly web article.
-
-The relevant passages under discussion are:
-
-- 1 Peter 3:18–22;
-- 1 Peter 4:4–11;
-- 2 Peter 2:2–8;
-- Jude 13–18.
-
-The article does not require all four passages to be illustrated. To keep the request narrow, one representative folio containing one of these passages would be sufficient. Could you please advise which DigiVatLib folio/image identifier should be cited in the professional-use request?
+The article discusses early manuscript evidence, including Papyrus Bodmer VII–VIII (P72). I would like to ask about permission to reproduce one or more low-resolution images of the relevant manuscript pages from the Vatican Library digital collection for educational use on this website.
 
 Proposed use:
 
-- one educational Russian-language web article;
-- free public access;
-- worldwide online availability;
-- no print edition and no sublicensing;
-- no use as a banner, advertisement, cover advertisement, or promotional graphic;
-- no reader download feature;
-- full shelfmark, copyright notice, required credit line, and link to DigiVatLib;
-- no crop, alteration, colour adjustment, annotation, or derivative image unless expressly authorised;
-- low-resolution or watermarked delivery is acceptable.
+- one scholarly educational article published online;
+- freely accessible without a paywall;
+- Russian-language audience;
+- no print edition, resale, sublicensing, or redistribution;
+- full shelf mark and attribution to Biblioteca Apostolica Vaticana;
+- direct link to the official digital collection;
+- image used only in the relevant manuscript discussion;
+- no banners, advertising use, or promotional use;
+- no alteration, crop, annotation, or highlighting unless expressly permitted;
+- downloading would not be offered to readers, and any technical restrictions or watermarking requirements would be followed.
 
-Please let me know:
+Please advise:
 
-1. whether this use should be submitted through the “Uso professionale / Pubblicazione in Internet” form;
-2. the correct shelfmark and folio/image identifier for the selected passage;
-3. the estimated reproduction and publication-rights fees;
-4. the applicable licence term, especially because the online form and legal note appear to mention different maximum periods;
+1. whether this use may be licensed;
+2. whether I should submit the Professional Use online form in addition to this preliminary enquiry;
+3. which exact shelf mark and image identifiers should be entered for the relevant P72 folios;
+4. whether a licensing or reproduction fee applies;
 5. the required credit wording;
-6. the maximum image dimensions or resolution;
-7. the technical measures expected to limit copying;
-8. whether a page preview must be approved before publication.
+6. the permitted resolution and licence term;
+7. any technical measures required to prevent downloading or copying;
+8. whether a preview of the article is required before publication.
 
-If the image licence is not practical, the article will link to DigiVatLib without reproducing an image. The manuscript image is an optional educational enhancement and not a commercial product.
+If reproduction rights cannot be granted, the article will use only a link to the official viewer and a textual discussion without copying Vatican Library images.
 
-Thank you for your guidance.
+Thank you for your consideration.
 
 Sincerely,
 
@@ -56,19 +50,15 @@ Project website: https://gospod-bog.ru
 
 ---
 
-## Before sending / submitting the professional-use form
-
-Confirm or complete:
+## Formal professional-use form data still needed
 
 - [ ] BAV account/login;
-- [ ] applicant's legal name and address;
+- [ ] applicant's legal name and postal address;
 - [ ] curator/editor name;
-- [ ] exact planned article title;
-- [ ] exact article URL;
+- [ ] exact planned article title and final URL;
 - [ ] requested licence end date;
 - [ ] legal publisher/operator of the website;
-- [ ] whether any banners, advertising, donations, sponsorships, affiliate links, or paid areas appear on the relevant page;
-- [ ] preferred single passage/folio;
-- [ ] whether the requested use qualifies as non-commercial under BAV's interpretation.
+- [ ] declaration concerning banners, advertising, donations, sponsorships, affiliate links, or paid areas;
+- [ ] preferred single passage/folio.
 
-The preliminary email does not replace the formal professional-use form or payment process.
+The preliminary email does not replace the formal professional-use form, quotation, approval, or payment process if BAV requires them.
