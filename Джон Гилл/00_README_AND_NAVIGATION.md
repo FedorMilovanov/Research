@@ -1,6 +1,6 @@
 # Джон Гилл (1697–1771) — исследовательский отдел
 
-**Дата создания:** 2026-07-06  |  **Последнее крупное обновление:** 2026-07-23  
+**Дата создания:** 2026-07-06  |  **Последнее крупное обновление:** 2026-07-24  
 **Режим:** консолидация, первоисточниковая верификация и критическая редактура серии о Джоне Гилле.
 
 **Canonical home:** эта папка — единственное место хранения содержательных исследований по Гиллу. Технические аудиты и CI-состояние остаются в `FedorMilovanov/AuditRepo`.
@@ -78,6 +78,27 @@
 | 49 | `49_HEBREW_RABBINICS_EXEGESIS_FULL_CORPUS.md` | Гебраистика, Judaica и метод | Диссертации 1767/1771, Memra, Масора и риск анахронизма |
 | 50 | `50_TRINITY_CHRISTOLOGY_CATHOLICITY_FULL_CORPUS.md` | Троица, Христос и catholicity | Godet, Swan, Stamps, Green; autotheos и две воли |
 | 51 | `51_BIOGRAPHY_CHURCH_LEGACY_EVIDENCE_REGISTER.md` | Биография, община и наследие | Иерархия свидетелей, Spurgeon, Gillites и спор об упадке |
+| 52 | `52_ELIZABETH_GILL_AND_ARCHIVAL_EVIDENCE.md` | Elizabeth Gill и архивная доказательность | Funeral sermon, ESTC и границы семейного свидетельства |
+| 53 | `53_SPURGEON_AND_GILL_PRIMARY_RECEPTION.md` | Сперджен и первичная рецепция Гилла | Похвала, критика и точная атрибуция |
+| 54 | `54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md` | Аудит доступа Park, Strother, Ascol и Walden | Полные тексты, previews и допустимые выводы |
+| 55 | `55_PUBLICATION_CHRONOLOGY_EDITIONS_AND_DATE_CONFLICTS.md` | Хронология публикаций | Первые издания и конфликты дат |
+| 56 | `56_FIRST_EDITION_DATE_RESOLUTION.md` | Разрешение дат первых изданий | Каталожная и факсимильная сверка |
+| 57 | `57_SPURGEON_1855_LETTER_PROVENANCE_RESOLVED.md` | Письмо Сперджена 1855 года | Цепочка provenance и пределы цитирования |
+| 58 | `58_SERMONS_TRACTS_VOL2_PAGINATION_RESOLVED.md` | Пагинация Sermons and Tracts II | Точная локализация трактатов |
+| 59 | `59_WHITEFIELD_SIX_VOLUME_PRIMARY_CORPUS_GILL_SEARCH.md` | Шесть томов Whitefield | Полнотекстовый Gill-search и отрицательный результат |
+| 60 | `60_WAVE2_MASTER_INDEX_AND_OPEN_DEBTS.md` | Индекс второй волны | Сведённые доказательства и открытые долги |
+| 61 | `61_OPEN_SOURCE_WAVE3_60_PLUS_AND_IMPLEMENTATION_MAP.md` | Третья волна 60+ | Открытые источники и карта внедрения |
+| 62 | `62_IMPLEMENTATION_LEDGER_WAVE3_SITE_CORRECTIONS.md` | Реестр site-исправлений | Источник → утверждение → production-компонент |
+| 63 | `63_BAPTIST_DECLINE_GROWTH_STATISTICS_AND_CAUSATION.md` | Рост, упадок и причинность | Отказ от линейной схемы Gill → paralysis |
+| 64 | `64_PRACTICAL_DIVINITY_FULL_CORPUS_CHURCH_FAMILY_CIVIL_DUTIES.md` | Practical Divinity целиком | Церковь, семья и гражданские обязанности |
+| 65 | `65_RABBINIC_CHRONOLOGY_AND_ANTI_ANACHRONISM_METHOD.md` | Раввинистическая хронология | Антианахронический метод и границы Judaica |
+| 66 | `66_GILLITES_FULLERITES_TERMINOLOGY_AND_DENOMINATIONAL_MEMORY.md` | Gillites и Fullerites | Датировка терминов и деноминационная память |
+| 67 | `67_OFFER_INVITE_PROCLAIM_SENSIBLE_SINNERS_CONCORDANCE.md` | Offer/invite/proclaim concordance | Терминологическая карта первичных мест |
+| 68 | `../68_GILL_INTRODUCTION_HISTORICAL_CONTEXT_50_PLUS_SOURCE_AUDIT.md` | Аудит исторического введения 50+ | Право, dissent, город и книжная культура |
+| 69 | `../69_GILL_SERIES_GLOSSARY_PLACEMENT_INFLECTION_AND_CADENCE_AUDIT.md` | Аудит глоссария серии | Placement, словоформы и cadence |
+| 70 | `70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md` | Финальная реверификация 50+ | Честные статусы доступа и publication gate |
+| 71 | `71_POST_MERGE_40_PLUS_SOURCE_COVERAGE_AND_EXPANSION_DECISION.md` | Послесливный аудит 40+ | Решение не раздувать введение без новых доказательств |
+| 72 | `72_PRIMARY_SOURCE_40_PLUS_DIRECT_LINK_LEDGER_AND_CLOSURE.md` | Первичный реестр 56 точек | Прямые оригиналы, границы вывода и закрытие долгов |
 
 ---
 
@@ -85,7 +106,7 @@
 
 ### A. Первичные тексты и проверяемость
 
-`01`, `05`, `09`, `12`, `17`, `19`, `21`, `23`, `25`, `27`, `43`, `45`, `47`.
+`01`, `05`, `09`, `12`, `17`, `19`, `21`, `23`, `25`, `27`, `43`, `45`, `47`, `52`, `55`–`62`, `65`, `67`, `70`–`72`.
 
 ### B. Сотериология и спор о гиперкальвинизме
 
