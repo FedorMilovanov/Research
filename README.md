@@ -36,14 +36,16 @@
 
 ### Текущий publication package Статей 6–9
 
-* [Финальный claim-to-citation ledger](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MASTER_CLAIM_TO_CITATION_LEDGER_XLIII.md)
-* [Publication QA gate и контракт переноса на сайт](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_PUBLICATION_ASSEMBLY_AND_QA_GATE_XLIII.md)
+* [Основной claim-to-citation ledger](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MASTER_CLAIM_TO_CITATION_LEDGER_XLIII.md)
+* [XLIV baptism overlay к ledger](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_CLAIM_LEDGER_XLIV_BAPTISM_OVERLAY.md)
+* [Текущий Publication QA gate XLIV](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_PUBLICATION_ASSEMBLY_AND_QA_GATE_XLIV.md)
 * [Статья 6 — Енох пророчествовал, Иуд. 14–15 и 4Q204](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_6_PUBLICATION_DRAFT_ENOCH_PROPHESIED_JUDE14_15_AND_4Q204_XLIII.md)
 * [Статья 7 — Ангелы под мраком, Иуд. 6–7 и 2 Пет. 2](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_7_PUBLICATION_DRAFT_ANGELS_UNDER_DARKNESS_JUDE6_7_2PETER2_XLIII.md)
-* [Статья 8 — Духи в темнице, Ной, крещение и победа Христа](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_PUBLICATION_DRAFT_SPIRITS_IN_PRISON_NOAH_BAPTISM_AND_CHRISTS_VICTORY_XLIII.md)
+* [Статья 8 XLIV — Духи в темнице, крещение Духом, водный знак и победа Христа](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_PUBLICATION_DRAFT_SPIRITS_IN_PRISON_NOAH_BAPTISM_AND_CHRISTS_VICTORY_XLIV.md)
+* [Специализированное досье 1 Пет. 3:21: вода, Дух и союз со Христом](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_1PETER3_21_WATER_SPIRIT_UNION_WITH_CHRIST_BAPTISM_COMPARATIVE_DOSSIER_XLIV.md)
 * [Статья 9 — Благовестие мёртвым, 1 Пет. 4:5–6](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_9_PUBLICATION_DRAFT_GOSPEL_TO_THE_DEAD_1PETER4_5_6_XLIII.md)
 
-При конфликте старого writing packet с более новым `00-HIGHEST-PRIORITY` notice применяется более новый notice и topic owner, указанный в master authority index. Для публикации Статей 6–9 использовать только XLIII publication package.
+Article 8 XLIII приостановлена и заменена XLIV. При конфликте старого writing packet с более новым `00-HIGHEST-PRIORITY` notice применяется более новый notice и topic owner. Для публикации Статей 6–9 использовать пакет, указанный выше.
 
 ## 📊 Верификационные аудиты
 
