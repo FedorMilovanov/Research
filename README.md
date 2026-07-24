@@ -35,7 +35,12 @@
 * [Нормализация физических путей и корневых файлов XXXIX](00_GENESIS6_FILE_LOCATION_NORMALIZATION_NOTICE_XLII.md)
 * [Research authority и supersession overlay XLVI](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_AUTHORITY_AND_SUPERSESSION_OVERLAY_XLVI.md)
 * [Site-ready authority overlay XLVIII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_SITE_READY_AUTHORITY_OVERLAY_XLVIII.md)
-* [XLIX publication correction overlay — высший приоритет по текстологии и правам](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_PUBLICATION_CORRECTION_OVERLAY.md)
+* [XLIX publication correction overlay — высший приоритет по текстологии](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_PUBLICATION_CORRECTION_OVERLAY.md)
+* [L rights gate resolution — высший приоритет по изображениям и открытым альтернативам](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_L_RIGHTS_GATE_RESOLUTION_AND_PUBLICATION_DECISION.md)
+* [L manifest — 50 контрольных узлов прав, provenance и open alternatives](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_L_50_NODE_RIGHTS_AND_OPEN_ALTERNATIVES_MANIFEST.md)
+* [L 4Q204 open transcription schematic — implementation-ready](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_6_4Q204_OPEN_TRANSCRIPTION_SCHEMATIC_SPEC_L.md)
+* [Готовый запрос IAA на 4Q204](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/PERMISSION_REQUEST_IAA_4Q204_EN_L.md)
+* [Готовый запрос Vatican Library на P72](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/PERMISSION_REQUEST_BAV_P72_EN_L.md)
 * [XLIX closeout — контрольный прогон 62+ узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLIX_CONTROL_RUN_CLOSEOUT.md)
 * [XLIX manifest — 56 основных и 6+ дополнительных контрольных узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_56_SOURCE_CONTROL_MANIFEST.md)
 
@@ -46,7 +51,7 @@
 * [Статья 8 — Духи в темнице, Ной, крещение и победа XLVIII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_SITE_READY_SPIRITS_IN_PRISON_NOAH_BAPTISM_VICTORY_XLVIII.md)
 * [Статья 9 — Благовестие мёртвым: 1 Пет. 4:5–6 XLVIII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_9_SITE_READY_GOSPEL_TO_THE_DEAD_1PETER4_5_6_XLVIII.md)
 
-Полные XLVIII-статьи остаются читательской основой. При переносе на сайт к ним обязательно применяются точечные текстологические и правовые исправления XLIX.
+Полные XLVIII-статьи остаются читательской основой. При переносе на сайт к ним обязательно применяются текстологические исправления XLIX и правовые/визуальные решения L.
 
 ### XLIX: прямой текст, рукописи, права и доступ
 
@@ -83,7 +88,13 @@ XLVIII FULL ARTICLES
 → READER-FACING BASE
 
 XLIX CORRECTIONS
-→ HIGHEST PRIORITY FOR PRIMARY TEXT, MANUSCRIPTS AND IMAGE RIGHTS
+→ HIGHEST PRIORITY FOR PRIMARY TEXT AND MANUSCRIPT READINGS
+
+L RIGHTS RESOLUTION
+→ HIGHEST PRIORITY FOR IMAGE RIGHTS AND OPEN VISUAL ALTERNATIVES
+
+RESTRICTED FACSIMILE PERMISSIONS
+→ OPTIONAL ENHANCEMENT, NOT PUBLICATION P0
 
 ECM2 / NA28 PRIMARY LINE
 → VERIFIED
