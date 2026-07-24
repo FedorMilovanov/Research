@@ -1,7 +1,7 @@
 # Статьи 6–9: закрытие контрольного марафона XLIX
 
 **Дата:** 24 июля 2026 года  
-**Статус:** `MARATHON-XLIX / 62-CONTROL-NODES / ECM2-PRIMARY-LINE-CLOSED / SINAITICUS-DIRECT / IMAGE-RIGHTS-CLOSED / TRUE-P0-REDUCED`
+**Статус:** `MARATHON-XLIX / 62-CONTROL-NODES / ECM2-PRIMARY-LINE-CLOSED / SINAITICUS-FOUR-LOCI-CLOSED / IMAGE-RIGHTS-DEFINED / TRUE-P0-REDUCED`
 
 ---
 
@@ -49,9 +49,9 @@ JUDE 15
 
 Метод:
 
-1. INTF: NA28 в Соборных посланиях принимает ECM2;
+1. INTF подтверждает, что NA28 в Соборных посланиях принимает ECM2;
 2. SBLGNT appendix перечисляет все 39 расхождений с ECM;
-3. direct SBLGNT text фиксирует чтения в наших loci;
+3. прямой SBLGNT-текст фиксирует чтения в наших loci;
 4. отсутствие locus в полном списке означает совпадение SBLGNT/ECM;
 5. Иуд. 15 прямо зарегистрирован как расхождение и даёт ECM `πᾶσαν ψυχήν`.
 
@@ -67,7 +67,14 @@ FULL WITNESS APPARATUS
 
 ---
 
-## 3. Прямой Codex Sinaiticus
+## 3. Прямой Codex Sinaiticus — все четыре статьи
+
+### 1 Пет. 3:18
+
+- British Library;
+- folio 320;
+- `ἀπέθανεν` — «умер»;
+- прямой древний вариант к ECM2/NA28 `ἔπαθεν` — «пострадал».
 
 ### 1 Пет. 4:6
 
@@ -80,7 +87,7 @@ FULL WITNESS APPARATUS
 - British Library;
 - folio 321b;
 - `σιροῖς ζόφοις`;
-- прямое древнее свидетельство варианта «ям/мрачных углублений».
+- прямое древнее свидетельство варианта «ям/мрачных углублений» при ECM2/NA28 `σειραῖς ζόφου`.
 
 ### Иуд. 14–15
 
@@ -90,9 +97,12 @@ FULL WITNESS APPARATUS
 - `πᾶσαν ψυχήν`;
 - `λόγων`.
 
-Теперь статьи могут показывать не абстрактное «существует вариант», а реальное раннее чтение конкретного кодекса.
+Теперь статьи могут показывать не абстрактное «существует вариант», а конкретные ранние чтения реального кодекса.
 
-Не найден только точный Sinaiticus locus 1 Пет. 3:18. Это уже не P0, потому что primary line ECM2/NA28 установлена.
+```text
+SINAITICUS PANEL FOR ARTICLES 6–9
+→ CLOSED
+```
 
 ---
 
@@ -116,7 +126,7 @@ B-359410
 
 - Milik Plate IX и IAA Plate 189 — разные системы нумерации;
 - они связываются через 4Q204 Fragment 1;
-- научный visual crosswalk теперь возможен;
+- научный visual crosswalk возможен;
 - поиск изображения больше не является блокером.
 
 Настоящий блокер:
@@ -151,23 +161,20 @@ PRINTED OR ONLINE PUBLICATION
 
 ---
 
-## 6. Греческий текст для сайта
+## 6. Открытая греческая текстовая основа
 
-SBLGNT source files опубликованы под `CC BY 4.0`.
-
-Это даёт открытую рабочую основу для греческих цитат при правильной атрибуции.
+SBLGNT source files опубликованы под `CC BY 4.0` и могут использоваться для греческих цитат при корректной атрибуции.
 
 Ограничения:
 
 - SBLGNT не заменяет NA28/ECM apparatus;
 - его apparatus сравнивает издания, а не все рукописи;
-- лицензия SBLGNT не распространяется на факсимиле P72, Sinaiticus, 4Q204, NA28 или ECM.
-
-Codex Sinaiticus transcription доступна под `CC BY-NC-SA 3.0`, поэтому её использование должно отдельно учитывать non-commercial и share-alike условия.
+- лицензия SBLGNT не распространяется на факсимиле P72, Sinaiticus, 4Q204, NA28 или ECM;
+- транскрипция Codex Sinaiticus имеет отдельную лицензию `CC BY-NC-SA 3.0`.
 
 ---
 
-## 7. Оставшиеся вторичные источники
+## 7. Вторичные источники, больше не являющиеся P0
 
 ### Crawford
 
@@ -247,21 +254,19 @@ PUBLICATION CONTENT
 
 - запрос прав IAA для 4Q204;
 - запрос прав Vatican Library для P72;
-- либо заменить факсимиле ссылками и собственными схемами.
+- либо заменить факсимиле официальными ссылками и собственными схемами.
 
 ---
 
 ## 9. Что больше не является P0
 
 - определение ECM2/NA28 primary line;
+- все четыре Sinaiticus loci;
 - поиск современного изображения 4Q204;
 - идентификация 4Q204 full-spectrum / infrared IDs;
-- понимание правового статуса IAA;
+- правовой статус IAA;
 - поиск P72 и подтверждение покрытия;
-- понимание правового статуса Vatican Library;
-- Sinaiticus 1 Пет. 4:6;
-- Sinaiticus 2 Пет. 2:4;
-- Sinaiticus Иуд. 14–15;
+- правовой статус Vatican Library;
 - полный Crawford только ради abstract-level summary;
 - полный Grudem только ради описания его модели;
 - полный ICC только ради уже откалиброванного альтернативного чтения.
@@ -290,6 +295,9 @@ NEW SUBSTANTIVE FINDS
 → YES
 
 ECM2 / NA28 PRIMARY TEXT BLOCKER
+→ CLOSED
+
+SINAITICUS FOUR-LOCUS PANEL
 → CLOSED
 
 EARLY MANUSCRIPT VARIANT CONTROL
