@@ -1,8 +1,10 @@
 # Permission request: IAA / 4Q204 / B-359409 or B-359410
 
-**Status:** `READY-TO-SEND / DO-NOT-SEND-WITHOUT-USER-REVIEW`  
+**Status:** `SENT / 2026-07-24 / RESPONSE-PENDING`  
 **Recipient:** `contact@deadseascrolls.org.il`  
-**Suggested subject:** `Permission request: 4Q204 / 4QEnochc image B-359409 or B-359410`
+**Subject:** `Permission request: 4Q204 / 4QEnochc image B-359409 or B-359410`
+
+The message is present in Gmail `SENT`; no immediate delivery-failure notification was found at the time of the LI control pass.
 
 ---
 
@@ -51,16 +53,14 @@ Project website: https://gospod-bog.ru
 
 ---
 
-## Before sending
-
-Confirm or replace:
+## Data still needed if IAA replies positively
 
 - [ ] legal/publisher name;
 - [ ] sender postal address if requested;
-- [ ] whether the site is legally non-commercial;
-- [ ] whether the site carries advertising, banners, donations, paid access, sponsorship, or affiliate links;
-- [ ] exact future article URL if already assigned;
+- [ ] accurate description of the site's commercial/non-commercial status;
+- [ ] advertising, banners, donations, paid access, sponsorship, or affiliate-link disclosure;
+- [ ] exact article URL;
 - [ ] preferred licence period;
-- [ ] whether B-359410 or B-359409 is visually preferable after private study.
+- [ ] final choice between B-359410 and B-359409.
 
 Do not claim `non-commercial` until the site's actual funding and promotional model has been checked against the licensor's definition.
