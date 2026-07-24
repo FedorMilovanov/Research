@@ -93,8 +93,8 @@
 
 | № | Документ | Доступ | Что контролирует | Граница |
 |---:|---|:---:|---|---|
-| 44 | [First London Baptist Confession, 1644 — исторические сканы](https://www.thecalvinist.net/post/first-london-baptist-confession-1644-1646) | A1 | Раннее самоописание Particular Baptists | Современная страница — только шлюз; использовать вложенные сканы |
-| 45 | [First London Baptist Confession, 1646 — исторический скан](https://www.thecalvinist.net/post/first-london-baptist-confession-1644-1646) | A1 | Пересмотренное исповедное самоописание | Не смешивать редакции 1644 и 1646 |
+| 44 | First London Baptist Confession, 1644 — Angus facsimile: [часть 1](https://www.london1644.info/documents/1LCF-1644-Facsimile-1.pdf), [часть 2](https://www.london1644.info/documents/1LCF-1644-Facsimile-2.pdf) | A1 | Раннее самоописание Particular Baptists | Две части одного исторического экземпляра; не смешивать со сводной редакцией 2022 года |
+| 45 | [First London Baptist Confession, 1646 — полный Angus facsimile](https://www.london1644.info/documents/1LCF-1646-Facsimile.pdf) | A1 | Пересмотренное исповедное самоописание | Не смешивать редакции 1644 и 1646 |
 | 46 | [Second London Baptist Confession, 1677 — транскрипция с оригинальной микрофильмы](https://www.ccel.org/creeds/bcf/bcftoc.htm) | A2 | Конфессиональная консолидация Particular Baptists | Исповедание не было централизованной конституцией всех общин |
 | 47 | [Standard Confession of General Baptists, 1660 — полный текст](https://www.reformedreader.org/ccc/tsc.htm) | A2 | Самостоятельная General Baptist сотериология и церковное самоописание | Транскрипцию спорной орфографии сверять с оригиналом |
 | 48 | [Standard Confession, 1660 — Folger record оригинального издания](https://catalog.folger.edu/record/520709) | A3 | Титул, издательская идентичность и provenance | Запись не заменяет полного факсимиле |
