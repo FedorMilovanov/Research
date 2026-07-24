@@ -43,9 +43,11 @@
 * [Статья 7 — Ангелы под мраком, Иуд. 6–7 и 2 Пет. 2](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_7_PUBLICATION_DRAFT_ANGELS_UNDER_DARKNESS_JUDE6_7_2PETER2_XLIII.md)
 * [Статья 8 XLIV — Духи в темнице, крещение Духом, водный знак и победа Христа](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_PUBLICATION_DRAFT_SPIRITS_IN_PRISON_NOAH_BAPTISM_AND_CHRISTS_VICTORY_XLIV.md)
 * [Специализированное досье 1 Пет. 3:21: вода, Дух и союз со Христом](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_1PETER3_21_WATER_SPIRIT_UNION_WITH_CHRIST_BAPTISM_COMPARATIVE_DOSSIER_XLIV.md)
+* [Краткая экзегетическая записка по ἐπερώτημα и доброй совести](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_1PETER3_21_EPEROTEMA_BRIEF_SCOPE_AND_TRANSLATION_NOTE_XLV.md)
+* [Компактный publication overlay по ἐπερώτημα](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_8_XLV_EPEROTEMA_PUBLICATION_SCOPE_OVERLAY.md)
 * [Статья 9 — Благовестие мёртвым, 1 Пет. 4:5–6](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_9_PUBLICATION_DRAFT_GOSPEL_TO_THE_DEAD_1PETER4_5_6_XLIII.md)
 
-Article 8 XLIII приостановлена и заменена XLIV. При конфликте старого writing packet с более новым `00-HIGHEST-PRIORITY` notice применяется более новый notice и topic owner. Для публикации Статей 6–9 использовать пакет, указанный выше.
+Article 8 XLIII приостановлена и заменена XLIV. При переносе Article 8 XLIV на сайт подробный спор о `ἐπερώτημα` сокращается согласно XLV publication overlay: основная статья не превращается в полный комментарий ко всему 1 Петра. При конфликте старого writing packet с более новым `00-HIGHEST-PRIORITY` notice применяется более новый notice и topic owner.
 
 ## 📊 Верификационные аудиты
 
