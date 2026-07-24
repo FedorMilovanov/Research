@@ -33,11 +33,11 @@
 * [Стандарт веса источников, дедупликации и цитат](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_SOURCE_WEIGHT_DEDUPLICATION_AND_CITATION_STANDARD_XLII.md)
 * [Общий аудит синхронизации и remediation log](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_GLOBAL_SYNCHRONIZATION_AUDIT_AND_REMEDIATION_LOG_XLII.md)
 * [Нормализация физических путей и корневых файлов XXXIX](00_GENESIS6_FILE_LOCATION_NORMALIZATION_NOTICE_XLII.md)
-* [Текущий research authority и supersession overlay XLVI](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_AUTHORITY_AND_SUPERSESSION_OVERLAY_XLVI.md)
-* [Текущий site-ready authority overlay XLVIII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_SITE_READY_AUTHORITY_OVERLAY_XLVIII.md)
-* [Реестр закрытых узлов и оставшихся задач XLVI](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_REMAINING_GAPS_AND_CLOSURE_REGISTER_XLVI.md)
-* [XLVII closeout: page ledgers, apparatus и оставшийся gate](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLVII_PAGE_LEDGER_AND_APPARATUS_CLOSEOUT.md)
-* [XLVIII closeout: четыре site-ready статьи и технический gate](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLVIII_SITE_READY_ASSEMBLY_CLOSEOUT.md)
+* [Research authority и supersession overlay XLVI](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_AUTHORITY_AND_SUPERSESSION_OVERLAY_XLVI.md)
+* [Site-ready authority overlay XLVIII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_SITE_READY_AUTHORITY_OVERLAY_XLVIII.md)
+* [XLIX publication correction overlay — высший приоритет по текстологии и правам](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_PUBLICATION_CORRECTION_OVERLAY.md)
+* [XLIX closeout — контрольный прогон 62+ узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLIX_CONTROL_RUN_CLOSEOUT.md)
+* [XLIX manifest — 56 основных и 6+ дополнительных контрольных узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_56_SOURCE_CONTROL_MANIFEST.md)
 
 ### Текущие site-ready статьи
 
@@ -46,12 +46,21 @@
 * [Статья 8 — Духи в темнице, Ной, крещение и победа XLVIII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_SITE_READY_SPIRITS_IN_PRISON_NOAH_BAPTISM_VICTORY_XLVIII.md)
 * [Статья 9 — Благовестие мёртвым: 1 Пет. 4:5–6 XLVIII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_9_SITE_READY_GOSPEL_TO_THE_DEAD_1PETER4_5_6_XLVIII.md)
 
+Полные XLVIII-статьи остаются читательской основой. При переносе на сайт к ним обязательно применяются точечные текстологические и правовые исправления XLIX.
+
+### XLIX: прямой текст, рукописи, права и доступ
+
+* [ECM2/NA28 — разрешение primary line пяти ключевых loci](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_ECM2_NA28_PRIMARY_LINE_RESOLUTION_XLIX.md)
+* [Codex Sinaiticus — прямой аудит 1 Пет. 4:6, 2 Пет. 2:4 и Иуд. 14–15](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_CODEX_SINAITICUS_DIRECT_LOCUS_AUDIT_XLIX.md)
+* [4Q204 и P72 — архивный crosswalk и права изображений](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_6_4Q204_P72_IMAGE_RIGHTS_AND_ARCHIVE_CROSSWALK_XLIX.md)
+* [Статьи 8–9 — финализация Crawford, Grudem и Williams–Horrell ICC](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_8_9_ACCESS_AND_LOCATOR_FINALIZATION_XLIX.md)
+
 ### Publication ledgers и контроль источников
 
 * [Основной claim-to-citation ledger](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MASTER_CLAIM_TO_CITATION_LEDGER_XLIII.md)
 * [XLIV baptism overlay к ledger](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_CLAIM_LEDGER_XLIV_BAPTISM_OVERLAY.md)
 * [Статья 6 — постраничный claim-to-citation ledger XLVII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_6_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVII.md)
-* [Статья 7 — постраничный claim-to-citation ledger XLVI](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_7_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVI.md)
+* [Статья 7 — постраничный claim-to-citation ledger XLVI](%D0%A2%D0%A0%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_7_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVI.md)
 * [Статья 7 — XLVII locator completion overlay](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_7_XLVII_LOCATOR_COMPLETION_OVERLAY.md)
 * [Статья 8 — locator-controlled claim-to-citation ledger XLVI](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_8_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVI.md)
 * [Статья 8 — XLVII locator completion overlay](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_8_XLVII_LOCATOR_COMPLETION_OVERLAY.md)
@@ -67,8 +76,22 @@
 * [Краткая записка по ἐπερώτημα XLV](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_8_1PETER3_21_EPEROTEMA_BRIEF_SCOPE_AND_TRANSLATION_NOTE_XLV.md)
 * [Publication overlay по ἐπερώτημα XLV](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_8_XLV_EPEROTEMA_PUBLICATION_SCOPE_OVERLAY.md)
 
-XLVIII является текущим читательским слоем. XLVII ledgers и apparatus control имеют приоритет в вопросах страниц, вариантов и границ доказательства. Полный ECM/NA28 не считается просмотренным, пока не получены физические страницы конкретных variation units.
+Текущий стандарт:
+
+```text
+XLVIII FULL ARTICLES
+→ READER-FACING BASE
+
+XLIX CORRECTIONS
+→ HIGHEST PRIORITY FOR PRIMARY TEXT, MANUSCRIPTS AND IMAGE RIGHTS
+
+ECM2 / NA28 PRIMARY LINE
+→ VERIFIED
+
+FULL WITNESS APPARATUS
+→ NOT YET TRANSCRIBED
+```
 
 ## 📊 Верификационные аудиты
 
-* [Аудит целостности проекта gb-is-my-strength и верификация синхронизации с Research Repo (2026-06-26)](AUDIT_PROJECT_INTEGRITY_CASE.md) — мастер-досье расхождений по уровням верификации (Level A, B, C, HOLD).
+* [Аудит целостности проекта gb-is-my-strength и верификация синхронизации с Research Repo (2026-06-26)](AUDIT_PROJECT_INTEGRITY_CASE.md) — мастер-досье расхождений по уровням верификации (Level A, B, C или HOLD).
