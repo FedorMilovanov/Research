@@ -11,12 +11,13 @@
 ## 1. Acceptance gates
 
 - [x] Архив восстановлен byte-for-byte через Research PR №13.
+- [x] Research PR №14 слит в `Research/main`: merge `66ee3ef5447d8dfde9df7e615018fbfbe8a27209`; exact head `ae8f4c42a70cea792bbab21c462b5c1cda47a320` прошёл `Gill PR2 Lossless Reconciliation`.
 - [x] Найдены все `GILL-CONTENT-001…480`; ID непрерывны.
 - [x] Каждой карточке назначены кластер, route-scope, современные owner-тома и production boundary.
 - [x] Категория `GENERAL` разрешена только как явная ручная граница, а не скрытая потеря.
 - [x] Site PR №192 слит в `gb-is-my-strength/main`: merge `877508fbfe42883b99922e3dcc717adfa91c33ad`; exact head `433c76ddd4ee37e9efe8fd4f5fc7573aa8e2a736` прошёл Gill, Shared Files, Overlay, Glossary, Native Source, Route Registry и Visual Parity.
 - [ ] После merge проверены `main`, production build и live Pages witness точного SHA.
-- [ ] AuditRepo closure-документ обновлён финальными SHA.
+- [x] AuditRepo closure supplement слит через PR №36: merge `3c02ae62e300fa472f8b5e62eb983b993ce9cc10`; PR №35 matrix/counters не изменены.
 
 ## 2. Как читать матрицу
 
