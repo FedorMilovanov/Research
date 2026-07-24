@@ -1,5 +1,7 @@
 # Исследование: углубление контента серии «Джон Гилл» (ч.4 — контент-аудит + «золото»)
 
+> **ИСТОРИЧЕСКОЕ ДОСЬЕ / SUPERSEDED.** Этот файл сохраняется как этап исследования 6–7 июля 2026 года. Его структура серии, числовые сводки и сильные выводы не являются текущим каноном. Современные владельцы: тома 12, 19, 21, 47, 55–62, 70–74; полная карта старых карточек — том 74. Использовать фактическое утверждение отсюда можно только после сверки с указанным современным владельцем и первичным источником.
+
 > Часть 4 контентного досье Гилла (arena-auditor, 2026-07-06). Режим:研究/рекомендация, НЕ авторинг.
 > Продолжение ч.1 (`...gaps-primary-sources`), ч.2 (`...theology-deep-dive`), ч.3 (`...structure-proposal`).
 > Основано на ЧТЕНИИ реальных `src/content/articles/dzhon-gill-*.mdx` + первичных источников (johngill.thekingsbible.com, archive.org).
@@ -52,7 +54,7 @@
 6. **Рим 8:29** («кого предузнал, тех и предопределил») — предведение = «вечная любовь Бога к Своему народу… особый народ, которого Он предузнал»; не предзнание всех (иначе все предопределены). → `CommentaryVerse/45/8/29`
 7. **Рим 9** (избрание по Рим 9:11) — «дети ещё не родились, не сделали ни доброго ни злого; дабы изволение Божие по избранию устояло». → *Body of Divinity* Book II (ccel.org/ccel/gill/doctrinal/doctrinal.iii.ii.html)
 
-**Плюс (доктринальные якоря из ч.2):** завет благодати как вечный завет Троицы (Body of Divinity Book IV); вечное оправдание (Body of Divinity Book II, «Of Other Eternal and Immanent Acts… Adoption and Justification»).
+**Плюс (доктринальные якоря из ч.2):** вечный завет благодати рассматривается в *Doctrinal Divinity*, Book II, ch. 7; Book IV посвящён временным проявлениям/администрациям завета. Вечное оправдание разбирается в Book II, ch. 5, «Of Other Eternal and Immanent Acts… Adoption and Justification».
 
 ---
 
@@ -62,7 +64,7 @@
 - **Part I (1735):** «passages of Scripture made use of by Dr. Whitby and others in favour of the Universal Scheme… answered» — т.е. отвечает на «универсальные» тексты (= мои 7 текстов из §2).
 - **Part II (1736):** «passages… in favour of special and distinguishing grace… vindicated from the exceptions of the Arminians» — позитивные кальвинистские тексты.
 - **Part III (1737):** «confutation of the arguments from reason used by the Arminians… against the above doctrines».
-- **Part IV** (с «Vindication… from the cavils of Mr. Henry Heywood»): природа, виды и случаи божественного просвещения (работа Духа / действенное призвание).
+- **Part IV (1738):** патристическое свидетельство до Августина по спорным доктринам благодати. Упоминание Henry Heywood и отдельная тема divine illumination относятся к другому тексту/издательскому окружению и не описывают содержание Part IV *The Cause of God and Truth*.
 
 **Значение:** это идеальный каркас для (а) раздела «Богословие» (опереться на Part I за «универсальные» тексты + Part II за позитивные) и (б) ОТДЕЛЬНОЙ статьи «The Cause of God and Truth против Уитби» — как самостоятельной (вторая предложенная в ч.1 статья). Полный текст: `archive.org/stream/causeofgodtruthi00gill/causeofgodtruthi00gill_djvu.txt` (OCR-шум местами, но читаемо).
 

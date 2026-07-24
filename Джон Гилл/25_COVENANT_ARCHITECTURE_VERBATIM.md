@@ -1,5 +1,7 @@
 # ИССЛЕДОВАНИЕ (ч.25): ковенантная архитектура Гилла — вечный завет благодати + вечный совет + «два главы» (Body of Divinity Book II ch.5–7, вербатим)
 
+> **УТОЧНЕНИЕ / SUPERSESSION.** Вербатим-цитаты Гилла сохраняются; исторические выводы о конфессиональном консенсусе и биографиях цитируемых авторов исправлены по GILL-CONTENT-454–459. Том 74 — карта; тома 55–58 и 70–73 — текущая библиографическая рамка.
+
 > **Статус:** исследовательское досье аудитора (ч.25 корпуса Гилла). Закрывает GAP-1 и GAP-2 из досье 23.
 > **Дата:** 2026-07-07. **Режим:** вербатим-выемка из первоисточника (Level A) — ccel.org Body of Doctrinal Divinity Book II ch.5–7.
 > **Цель:** верифицировать ядро ковенантной теологии Гилла по первоисточнику: вечный завет благодати как пакт Троицы (GAP-2) + разрешение парадокса «избранный оправдан, но дитя гнева» через «два главы/два завета» (GAP-1).
@@ -14,7 +16,7 @@
 | M2 | **Схоластическая цепочка авторитетов** Гилла по вечному оправданию верифицирована: **Goodwin, Witsius, Twisse, Maccovius, Ames** — все процитированы Гиллом вербатим в ccel ch.5. | ✅ Level A (§2) |
 | M3 | **Witsius «the general justification of the elect»** — точная цитата, которую досье 08 приписывал Witsius, **верифицирована в первоисточнике** (Гилл цитирует Witsius дословно). | ✅ подтверждено |
 | M4 | **GAP-1 концептуально закрыт**: «два главы/два завета» — точная вербатим-формулировка не локализована, но **концепт верифицирован** ccel ch.5 (Rom 8:1 «no condemnation to them which are in Christ»). | ⚠️ концепт ✓; точная формулировка = TODO |
-| M5 | **Гилл опровергает** различение «covenant of redemption» vs «covenant of grace» (ch.7): «there is but one covenant of grace, and not two». Это важно: опровергает распространённое misconception о его «двух заветах». | ➕ новое (§3) |
+| M5 | **Гилл отвергает как ошибочную двухзаветную формулировку** различения «covenant of redemption» vs «covenant of grace» (ch.7): «there is but one covenant of grace, and not two». Это важно: опровергает распространённое misconception о его «двух заветах». | ➕ новое (§3) |
 | M6 | **Council vs Covenant** различаются (ch.6): «these are generally blended together by divines… but I think they are to be distinguished». Council = «as quick as thought». | ➕ новое (§1) |
 
 ---
@@ -53,7 +55,7 @@
 - **Maccovius** (*Theolog. Quaest.*): *«as soon as one becomes a surety for another, the other is immediately freed, if the surety be accepted.»*
 - **Dr. Ames** (*Medulla Theologiae*): *«a sentence conceived in the divine mind, by the decree of justifying.»* (см. досье 22 §2.1)
 
-→ Вывод: Гилл — **не одинокий эксцентрик**, а сознательный наследник реформатской схоластики (Goodwin/Witsius/Twisse — ведущие делегаты Вестминстерской ассамблеи). Это сильно против аргумента Curt Daniel «Гилл = гипер-кальвинист-одиночка».
+→ Вывод ограничен генеалогией аргумента: Гилл сознательно цитирует реформатских схоластов. Goodwin участвовал в Вестминстерской ассамблее, Twisse был её prolocutor; Witsius принадлежал к более позднему голландскому поколению и делегатом не был. Наличие Maccovius/Ames/Witsius в цепочке не делает каждую формулу Гилла конфессиональным консенсусом.
 
 ### 2.4 Поручительство Христа как основание (вербатим)
 > «Christ became a **Surety** for his people from everlasting; engaged to pay their debts, bear their sins, and make satisfaction for them; and was accepted of as such by God his Father, who thenceforward looked at him for payment and satisfaction, and **looked at them as discharged**, and so they were in his eternal mind.»
@@ -81,7 +83,7 @@
 > «they have distinct acts of will; for though their nature and essence is but one… yet there are distinct acts of this will, put forth by and peculiar to each distinct Person.»
 
 ### 3.5 Имена завета (вербатим, классификация Гилла)
-Гилл перечисляет: «covenant of **life**» (Мал 2:5), «covenant of **peace**» (Мал 2:5; Ис 54:10), «covenant of **grace**» (общепринято), «covenant of **redemption**» (= то же, что grace, §3.3). + Этимология: ברית от ברר/ברא/ברה (purify/create/eat) — Гилл предпочитает «to select and choose».
+Гилл перечисляет: «covenant of **life**» (Мал 2:5), «covenant of **peace**» (Мал 2:5; Ис 54:10), «covenant of **grace**» (общепринято), «covenant of **redemption**» (= то же, что grace, §3.3). + Этимология: Гилл предлагает связи ברית с ברר/ברא/ברה и предпочитает значение «to select and choose». Это свидетельство его филологического метода XVIII века, а не автоматически принятая современная этимология.
 
 ---
 

@@ -1,0 +1,28 @@
+name: Gill PR2 Lossless Reconciliation
+
+on:
+  pull_request:
+    paths:
+      - incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md
+      - 'Джон Гилл/**'
+      - scripts/gill-pr2-lossless-reconciliation-audit.mjs
+      - .github/workflows/gill-pr2-lossless-reconciliation.yml
+  push:
+    branches:
+      - main
+    paths:
+      - incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md
+      - 'Джон Гилл/**'
+      - scripts/gill-pr2-lossless-reconciliation-audit.mjs
+      - .github/workflows/gill-pr2-lossless-reconciliation.yml
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify 001-480 archive, matrix, navigation and dossier remediation
+        run: node scripts/gill-pr2-lossless-reconciliation-audit.mjs
