@@ -29,6 +29,7 @@
 * [Единый лист разрешённых публикационных формулировок](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_PUBLICATION_POSITION_SHEET_XLII.md)
 * [Стандарт веса источников, дедупликации и цитат](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_SOURCE_WEIGHT_DEDUPLICATION_AND_CITATION_STANDARD_XLII.md)
 * [Общий аудит синхронизации и remediation log](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_GLOBAL_SYNCHRONIZATION_AUDIT_AND_REMEDIATION_LOG_XLII.md)
+* [Нормализация физических путей и корневых файлов XXXIX](00_GENESIS6_FILE_LOCATION_NORMALIZATION_NOTICE_XLII.md)
 
 При конфликте старого writing packet с более новым `00-HIGHEST-PRIORITY` notice применяется более новый notice и topic owner, указанный в master authority index.
 
