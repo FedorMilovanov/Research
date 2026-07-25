@@ -1,0 +1,35 @@
+name: Genesis 6 authority manifest
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'data/genesis6-authority-manifest.json'
+      - 'data/genesis6-publication-ledger.json'
+      - 'scripts/validate_genesis6_authority_manifest.py'
+      - 'ТРУДНЫЕ ТЕКСТЫ/**'
+      - '.github/workflows/genesis6-authority-manifest.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'data/genesis6-authority-manifest.json'
+      - 'data/genesis6-publication-ledger.json'
+      - 'scripts/validate_genesis6_authority_manifest.py'
+      - 'ТРУДНЫЕ ТЕКСТЫ/**'
+      - '.github/workflows/genesis6-authority-manifest.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  authority-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout complete Research history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate authority graph and publication ledger
+        run: python3 scripts/validate_genesis6_authority_manifest.py
