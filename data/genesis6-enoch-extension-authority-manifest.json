@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "seriesId": "genesis-6",
   "extensionId": "genesis6-enoch-articles-6a-6b",
   "generatedAt": "2026-07-28",
@@ -28,6 +28,14 @@
       "role": "chapter-version-witness-control",
       "requiredFor": [
         "6A",
+        "6B"
+      ]
+    },
+    {
+      "id": "GEN6-ENOCH-10-8-DECISION-LX",
+      "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LX_10_8_VERSION_CONTROL_DECISION.md",
+      "role": "locus-version-control-decision",
+      "requiredFor": [
         "6B"
       ]
     },
@@ -146,6 +154,7 @@
       "orderedDocumentIds": [
         "GEN6-ENOCH-PROTOCOL-LVI",
         "GEN6-ENOCH-VERSION-MATRIX-LIV",
+        "GEN6-ENOCH-10-8-DECISION-LX",
         "GEN6-ENOCH-CANON-MATRIX-LII",
         "GEN6-ENOCH-ARCHITECTURE-LIII",
         "GEN6-ENOCH-CLAIM-GATE-LIV",
@@ -179,16 +188,24 @@
   },
   "holdRegistry": {
     "blocking": [
-      "1-enoch-10-8-version-control",
       "1-enoch-15-8-12-demon-origin",
       "1-enoch-70-71-son-of-man",
       "astronomical-book-version-plurality"
     ],
     "preservedUncertainty": [
+      "1-enoch-10-8-interpretive-scope",
       "parables-date-and-witness-form",
       "animal-apocalypse-decomposition",
       "chapter-108-relation-to-epistle",
       "codex-panopolitanus-editorial-intention"
+    ],
+    "resolvedByEvidence": [
+      {
+        "id": "1-enoch-10-8-version-control",
+        "resolution": "text-established-interpretation-qualified",
+        "documentId": "GEN6-ENOCH-10-8-DECISION-LX",
+        "evidence": "Greek and Ge'ez full clause; Aramaic 4Q202 locus 10:8-12 partial/reconstructed"
+      }
     ],
     "resolvedByPolicy": [
       {
@@ -199,14 +216,15 @@
     ]
   },
   "namedHolds": [
-    "1-enoch-10-8-version-control",
     "1-enoch-15-8-12-demon-origin",
     "1-enoch-70-71-son-of-man",
     "astronomical-book-version-plurality",
+    "1-enoch-10-8-interpretive-scope",
     "parables-date-and-witness-form",
     "animal-apocalypse-decomposition",
     "chapter-108-relation-to-epistle",
     "codex-panopolitanus-editorial-intention",
+    "1-enoch-10-8-version-control",
     "manuscript-image-rights"
   ]
 }
