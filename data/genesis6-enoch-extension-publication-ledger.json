@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "genesis-6",
+  "extensionId": "genesis6-enoch-articles-6a-6b",
+  "manifestPath": "data/genesis6-enoch-extension-authority-manifest.json",
+  "manifestSha256": "8e44eebc5fae85d4f17d245729ab17b54e0c18ed56b503b12c42cf48909526c5",
+  "generatedAt": "2026-07-27",
+  "bundles": [
+    {
+      "articleKey": "6A",
+      "slug": "kniga-enoha-kotoroy-ne-bylo-kak-raznye-proizvedeniya-stali-korpusom",
+      "bundleId": "GEN6-PUB-ARTICLE-6A",
+      "orderedDocumentIds": [
+        "GEN6-ENOCH-PROTOCOL-LVI",
+        "GEN6-ENOCH-VERSION-MATRIX-LIV",
+        "GEN6-ENOCH-ARCHITECTURE-LIII",
+        "GEN6-ENOCH-CORPUS-DRAFT-LIV",
+        "GEN6-ENOCH-CLAIM-GATE-LIV",
+        "GEN6-ENOCH-ACADEMIC-PASS-1-LV",
+        "GEN6-ENOCH-ACADEMIC-PASS-2-LV",
+        "GEN6-ENOCH-CODEX-AUDIT-LVI",
+        "GEN6-ENOCH-PRODUCTION-MAP-LVII"
+      ],
+      "requiredSiteState": {
+        "draft": true,
+        "noindex": true
+      },
+      "rightsMode": "no-manuscript-image-reproduction",
+      "publicationStatus": "draft-noindex-hold"
+    },
+    {
+      "articleKey": "6B",
+      "slug": "mozhno-li-doveryat-1-enohu-kanonicheskiy-audit",
+      "bundleId": "GEN6-PUB-ARTICLE-6B",
+      "orderedDocumentIds": [
+        "GEN6-ENOCH-PROTOCOL-LVI",
+        "GEN6-ENOCH-VERSION-MATRIX-LIV",
+        "GEN6-ENOCH-CANON-MATRIX-LII",
+        "GEN6-ENOCH-ARCHITECTURE-LIII",
+        "GEN6-ENOCH-CLAIM-GATE-LIV",
+        "GEN6-ENOCH-PRODUCTION-MAP-LVII"
+      ],
+      "requiredSiteState": {
+        "draft": true,
+        "noindex": true
+      },
+      "rightsMode": "no-manuscript-image-reproduction",
+      "publicationStatus": "draft-noindex-hold"
+    }
+  ],
+  "releaseDecision": {
+    "state": "blocked",
+    "reason": "Both extension articles must remain draft/noindex until named textual, source, rights and exact-head technical gates are closed.",
+    "mayMergeAsDraftContent": true,
+    "mayPublish": false,
+    "mayRemoveNoindex": false
+  }
+}
