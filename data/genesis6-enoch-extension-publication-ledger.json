@@ -1,10 +1,10 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "seriesId": "genesis-6",
   "extensionId": "genesis6-enoch-articles-6a-6b",
   "manifestPath": "data/genesis6-enoch-extension-authority-manifest.json",
-  "manifestSha256": "cab3ba4a85fa539c7eacff4ecdb2d00bdd5054e4d4c4e4fe75d0baf99d1e9c36",
-  "generatedAt": "2026-07-27",
+  "manifestSha256": "6a2178281198bdaa7bc22cb0d57960d168ffb383e1ec617c634355bf38d457d4",
+  "generatedAt": "2026-07-28",
   "bundles": [
     {
       "articleKey": "6A",
@@ -27,7 +27,7 @@
         "noindex": true
       },
       "rightsMode": "no-manuscript-image-reproduction",
-      "publicationStatus": "draft-noindex-hold"
+      "publicationStatus": "source-audited-version-hold"
     },
     {
       "articleKey": "6B",
@@ -47,14 +47,40 @@
         "noindex": true
       },
       "rightsMode": "no-manuscript-image-reproduction",
-      "publicationStatus": "draft-noindex-hold"
+      "publicationStatus": "source-audited-version-hold"
     }
   ],
   "releaseDecision": {
     "state": "blocked",
-    "reason": "Both extension articles must remain draft/noindex until named textual, source, rights and exact-head technical gates are closed.",
+    "reason": "Claim-level sources, reader bibliography, provenance, technical CI and image-rights-by-no-reproduction are closed. Publication remains blocked only by four named version-control loci.",
     "mayMergeAsDraftContent": true,
     "mayPublish": false,
-    "mayRemoveNoindex": false
+    "mayRemoveNoindex": false,
+    "closedGates": [
+      "claim-level-source-apparatus",
+      "reader-bibliography-microaudit",
+      "site-provenance",
+      "exact-head-technical-ci",
+      "manuscript-image-rights-by-no-reproduction"
+    ],
+    "blockingHolds": [
+      "1-enoch-10-8-version-control",
+      "1-enoch-15-8-12-demon-origin",
+      "1-enoch-70-71-son-of-man",
+      "astronomical-book-version-plurality"
+    ],
+    "preservedUncertainty": [
+      "parables-date-and-witness-form",
+      "animal-apocalypse-decomposition",
+      "chapter-108-relation-to-epistle",
+      "codex-panopolitanus-editorial-intention"
+    ],
+    "resolvedByPolicy": [
+      {
+        "id": "manuscript-image-rights",
+        "resolution": "no-manuscript-image-reproduction",
+        "evidence": "site main 522f0e1cae4fb9ce5a4631cfe856421f1952f4bc"
+      }
+    ]
   }
 }
