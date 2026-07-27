@@ -15,6 +15,31 @@ EXPECTED_SLUGS = {
     "6A": "kniga-enoha-kotoroy-ne-bylo-kak-raznye-proizvedeniya-stali-korpusom",
     "6B": "mozhno-li-doveryat-1-enohu-kanonicheskiy-audit",
 }
+EXPECTED_GROUPS = {"6A": 27, "6B": 26}
+EXPECTED_BLOCKING_HOLDS = [
+    "1-enoch-10-8-version-control",
+    "1-enoch-15-8-12-demon-origin",
+    "1-enoch-70-71-son-of-man",
+    "astronomical-book-version-plurality",
+]
+EXPECTED_PRESERVED_HOLDS = [
+    "parables-date-and-witness-form",
+    "animal-apocalypse-decomposition",
+    "chapter-108-relation-to-epistle",
+    "codex-panopolitanus-editorial-intention",
+]
+EXPECTED_RESOLVED_HOLD = {
+    "id": "manuscript-image-rights",
+    "resolution": "no-manuscript-image-reproduction",
+    "evidence": "site main 522f0e1cae4fb9ce5a4631cfe856421f1952f4bc",
+}
+EXPECTED_CLOSED_GATES = [
+    "claim-level-source-apparatus",
+    "reader-bibliography-microaudit",
+    "site-provenance",
+    "exact-head-technical-ci",
+    "manuscript-image-rights-by-no-reproduction",
+]
 
 
 def fail(message: str) -> None:
@@ -51,8 +76,8 @@ def main() -> None:
     ledger = read_json(ledger_path)
 
     for name, document in (("manifest", manifest), ("ledger", ledger)):
-        if document.get("schemaVersion") != 1:
-            fail(f"{name} schemaVersion must be 1")
+        if document.get("schemaVersion") != 2:
+            fail(f"{name} schemaVersion must be 2")
         if document.get("seriesId") != "genesis-6":
             fail(f"{name} seriesId must be genesis-6")
         if document.get("extensionId") != "genesis6-enoch-articles-6a-6b":
@@ -62,6 +87,18 @@ def main() -> None:
         fail("ledger manifestPath drift")
     if ledger.get("manifestSha256") != sha256(manifest_path):
         fail("ledger manifest digest drift")
+
+    expected_policy = {
+        "canonicalScriptureGoverns": True,
+        "academicFindingsRequireLayerSeparation": True,
+        "siteStateMustRemainDraftNoindex": True,
+        "furtherResearchMustCloseBlockingHolds": True,
+        "preservedUncertaintyMustRemainExplicit": True,
+        "manuscriptImagesRequireExplicitRightsDecision": True,
+        "noManuscriptImageReproductionResolvesRightsGate": True,
+    }
+    if manifest.get("policy") != expected_policy:
+        fail("manifest policy drift")
 
     documents = manifest.get("documents")
     if not isinstance(documents, list) or not documents:
@@ -78,6 +115,46 @@ def main() -> None:
         document_ids.add(document_id)
         if not isinstance(relative_path, str) or not (root / relative_path).is_file():
             fail(f"missing authority document for {document_id}: {relative_path}")
+
+    acceptance = manifest.get("siteAcceptance")
+    if not isinstance(acceptance, dict):
+        fail("siteAcceptance missing")
+    if acceptance.get("repository") != "FedorMilovanov/gb-is-my-strength":
+        fail("siteAcceptance repository drift")
+    for field in ("acceptedHead", "mergeCommit"):
+        value = acceptance.get(field)
+        if not isinstance(value, str) or len(value) != 40 or any(ch not in "0123456789abcdef" for ch in value):
+            fail(f"siteAcceptance.{field} must be an exact SHA")
+    if acceptance.get("acceptedHead") != "b315998937e4fdd68e204d01660adb65707cd0e6":
+        fail("siteAcceptance acceptedHead drift")
+    if acceptance.get("mergeCommit") != "522f0e1cae4fb9ce5a4631cfe856421f1952f4bc":
+        fail("siteAcceptance mergeCommit drift")
+    if acceptance.get("claimLevelGroups") != EXPECTED_GROUPS:
+        fail("siteAcceptance claim-level group counts drift")
+    if acceptance.get("closedGates") != EXPECTED_CLOSED_GATES:
+        fail("siteAcceptance closed gates drift")
+    if acceptance.get("publicationAuthorized") is not False:
+        fail("site acceptance must not authorize publication")
+
+    registry = manifest.get("holdRegistry")
+    if not isinstance(registry, dict):
+        fail("holdRegistry missing")
+    if registry.get("blocking") != EXPECTED_BLOCKING_HOLDS:
+        fail("blocking HOLD registry drift")
+    if registry.get("preservedUncertainty") != EXPECTED_PRESERVED_HOLDS:
+        fail("preserved uncertainty registry drift")
+    if registry.get("resolvedByPolicy") != [EXPECTED_RESOLVED_HOLD]:
+        fail("resolved HOLD registry drift")
+
+    categories = (
+        registry["blocking"]
+        + registry["preservedUncertainty"]
+        + [item["id"] for item in registry["resolvedByPolicy"]]
+    )
+    if len(categories) != len(set(categories)):
+        fail("HOLD categories must be disjoint")
+    if manifest.get("namedHolds") != categories:
+        fail("namedHolds must equal the ordered union of HOLD categories")
 
     manifest_articles = manifest.get("draftArticles")
     ledger_bundles = ledger.get("bundles")
@@ -98,8 +175,8 @@ def main() -> None:
         bundle = ledger_by_key[key]
         if article.get("slug") != EXPECTED_SLUGS[key]:
             fail(f"{key} slug drift")
-        if article.get("publicationStatus") != "draft-noindex-hold":
-            fail(f"{key} publicationStatus must remain draft-noindex-hold")
+        if article.get("publicationStatus") != "source-audited-version-hold":
+            fail(f"{key} publicationStatus must remain source-audited-version-hold")
         if article.get("requiredSiteState") != {"draft": True, "noindex": True}:
             fail(f"{key} requiredSiteState must be draft/noindex")
         if article.get("rightsMode") != "no-manuscript-image-reproduction":
@@ -110,17 +187,7 @@ def main() -> None:
         missing_ids = [document_id for document_id in ordered_ids if document_id not in document_ids]
         if missing_ids:
             fail(f"{key} references unknown documents: {missing_ids}")
-
-        expected_bundle = {
-            "articleKey": article["articleKey"],
-            "slug": article["slug"],
-            "bundleId": article["bundleId"],
-            "orderedDocumentIds": article["orderedDocumentIds"],
-            "requiredSiteState": article["requiredSiteState"],
-            "rightsMode": article["rightsMode"],
-            "publicationStatus": article["publicationStatus"],
-        }
-        if bundle != expected_bundle:
+        if bundle != article:
             fail(f"{key} ledger bundle drift")
 
     release = ledger.get("releaseDecision")
@@ -130,15 +197,21 @@ def main() -> None:
         fail("extension release must remain blocked")
     if release.get("mayPublish") is not False or release.get("mayRemoveNoindex") is not False:
         fail("publication and noindex removal must remain forbidden")
-
-    holds = manifest.get("namedHolds")
-    if not isinstance(holds, list) or len(holds) < 8:
-        fail("named HOLD registry is incomplete")
+    if release.get("mayMergeAsDraftContent") is not True:
+        fail("draft content merge policy drift")
+    if release.get("closedGates") != EXPECTED_CLOSED_GATES:
+        fail("ledger closed gates drift")
+    if release.get("blockingHolds") != EXPECTED_BLOCKING_HOLDS:
+        fail("ledger blocking holds drift")
+    if release.get("preservedUncertainty") != EXPECTED_PRESERVED_HOLDS:
+        fail("ledger preserved uncertainty drift")
+    if release.get("resolvedByPolicy") != [EXPECTED_RESOLVED_HOLD]:
+        fail("ledger resolved HOLD drift")
 
     print(
         "Genesis 6 Enoch extension authority: PASS "
-        f"({len(documents)} documents, {len(manifest_articles)} draft articles, "
-        f"manifest {sha256(manifest_path)})"
+        f"({len(documents)} documents, {len(manifest_articles)} source-audited draft articles, "
+        f"{len(EXPECTED_BLOCKING_HOLDS)} blocking HOLDs, manifest {sha256(manifest_path)})"
     )
 
 
