@@ -3,7 +3,7 @@
   "seriesId": "genesis-6",
   "extensionId": "genesis6-enoch-articles-6a-6b",
   "manifestPath": "data/genesis6-enoch-extension-authority-manifest.json",
-  "manifestSha256": "8e44eebc5fae85d4f17d245729ab17b54e0c18ed56b503b12c42cf48909526c5",
+  "manifestSha256": "cab3ba4a85fa539c7eacff4ecdb2d00bdd5054e4d4c4e4fe75d0baf99d1e9c36",
   "generatedAt": "2026-07-27",
   "bundles": [
     {
@@ -19,7 +19,8 @@
         "GEN6-ENOCH-ACADEMIC-PASS-1-LV",
         "GEN6-ENOCH-ACADEMIC-PASS-2-LV",
         "GEN6-ENOCH-CODEX-AUDIT-LVI",
-        "GEN6-ENOCH-PRODUCTION-MAP-LVII"
+        "GEN6-ENOCH-PRODUCTION-MAP-LVII",
+        "GEN6-ENOCH-6A-FOOTNOTE-MAP-LIX"
       ],
       "requiredSiteState": {
         "draft": true,
@@ -38,7 +39,8 @@
         "GEN6-ENOCH-CANON-MATRIX-LII",
         "GEN6-ENOCH-ARCHITECTURE-LIII",
         "GEN6-ENOCH-CLAIM-GATE-LIV",
-        "GEN6-ENOCH-PRODUCTION-MAP-LVII"
+        "GEN6-ENOCH-PRODUCTION-MAP-LVII",
+        "GEN6-ENOCH-6B-SOURCE-PASS-LIX"
       ],
       "requiredSiteState": {
         "draft": true,
