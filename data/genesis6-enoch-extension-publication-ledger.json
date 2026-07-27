@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "seriesId": "genesis-6",
   "extensionId": "genesis6-enoch-articles-6a-6b",
   "manifestPath": "data/genesis6-enoch-extension-authority-manifest.json",
-  "manifestSha256": "6a2178281198bdaa7bc22cb0d57960d168ffb383e1ec617c634355bf38d457d4",
+  "manifestSha256": "f37c4858926a3a25f892a574a3dd3b4e1900f42d3981a575cc680c4c6fd5e614",
   "generatedAt": "2026-07-28",
   "bundles": [
     {
@@ -36,6 +36,7 @@
       "orderedDocumentIds": [
         "GEN6-ENOCH-PROTOCOL-LVI",
         "GEN6-ENOCH-VERSION-MATRIX-LIV",
+        "GEN6-ENOCH-10-8-DECISION-LX",
         "GEN6-ENOCH-CANON-MATRIX-LII",
         "GEN6-ENOCH-ARCHITECTURE-LIII",
         "GEN6-ENOCH-CLAIM-GATE-LIV",
@@ -52,7 +53,7 @@
   ],
   "releaseDecision": {
     "state": "blocked",
-    "reason": "Claim-level sources, reader bibliography, provenance, technical CI and image-rights-by-no-reproduction are closed. Publication remains blocked only by four named version-control loci.",
+    "reason": "Claim-level sources, reader bibliography, provenance, technical CI, image-rights-by-no-reproduction and 1 Enoch 10:8 version control are closed. Publication remains blocked by three named version-control loci.",
     "mayMergeAsDraftContent": true,
     "mayPublish": false,
     "mayRemoveNoindex": false,
@@ -61,19 +62,28 @@
       "reader-bibliography-microaudit",
       "site-provenance",
       "exact-head-technical-ci",
-      "manuscript-image-rights-by-no-reproduction"
+      "manuscript-image-rights-by-no-reproduction",
+      "1-enoch-10-8-version-control"
     ],
     "blockingHolds": [
-      "1-enoch-10-8-version-control",
       "1-enoch-15-8-12-demon-origin",
       "1-enoch-70-71-son-of-man",
       "astronomical-book-version-plurality"
     ],
     "preservedUncertainty": [
+      "1-enoch-10-8-interpretive-scope",
       "parables-date-and-witness-form",
       "animal-apocalypse-decomposition",
       "chapter-108-relation-to-epistle",
       "codex-panopolitanus-editorial-intention"
+    ],
+    "resolvedByEvidence": [
+      {
+        "id": "1-enoch-10-8-version-control",
+        "resolution": "text-established-interpretation-qualified",
+        "documentId": "GEN6-ENOCH-10-8-DECISION-LX",
+        "evidence": "Greek and Ge'ez full clause; Aramaic 4Q202 locus 10:8-12 partial/reconstructed"
+      }
     ],
     "resolvedByPolicy": [
       {
