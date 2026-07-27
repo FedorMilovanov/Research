@@ -1,7 +1,7 @@
 # LXIII-B: Астрономическая книга — исторический геэз-apparatus Charles 1906
 
 **Дата:** 28 июля 2026 года  
-**Статус:** `LXIII-B / CHARLES-1906-HISTORICAL-GE'EZ-APPARATUS / CHAPTER-72-LOCATED / VARIATION-DIRECT / PRE-QUMRAN-LIMIT / OCR-READING-HOLD`
+**Статус:** `LXIII-B / CHARLES-1906-HISTORICAL-GE'EZ-APPARATUS / CHAPTER-72-SEQUENCE-LOCATED / SCAN-LEAF-PAGE-VERIFICATION-HOLD / VARIATION-DIRECT / PRE-QUMRAN-LIMIT / OCR-READING-HOLD`
 
 ## 1. Назначение
 
@@ -11,31 +11,37 @@ R. H. Charles, *The Ethiopic Version of the Book of Enoch: Edited from Twenty-Th
 
 Цель:
 
-- локализовать начало Астрономической книги в старом critical text;
+- локализовать начало Астрономической книги в OCR-последовательности старого critical text;
 - подтвердить реальный multi-manuscript apparatus для геэз 72;
 - отделить исторический геэз-этап от более позднего открытия `4Q208–4Q211`;
-- уточнить exact pages для законного page acquisition.
+- подготовить визуально проверяемый scan/page-map request.
 
-OCR не используется для самостоятельной реконструкции схемы.
+OCR не используется для самостоятельной реконструкции схемы, точной пагинации или календарных вычислений.
 
 ## 2. Локализация
 
-В открытой репрезентации Charles 1906:
+В открытой OCR-репрезентации Charles 1906:
 
-- 1 Енох 71:14–17 находится на printed p. 191;
-- непосредственно после 71:17 начинается заголовок главы 72;
-- глава 72 и её apparatus продолжаются на следующих печатных страницах;
-- apparatus расположен рядом с геэз-main text.
+- непосредственно после последовательности 1 Енох 71:14–17 начинается заголовок главы 72;
+- далее следуют main Geʽez text главы 72 и расположенный рядом apparatus;
+- OCR позволяет проследить последующие chapter headers 73–82 и тем самым грубо локализовать непрерывный раздел Астрономической книги.
+
+При этом распознанные заголовки и номера печатных страниц противоречат друг другу. Поэтому нельзя утверждать, что глава 72 начинается на конкретной printed page, пока scan leaf не проверен визуально.
+
+Текущий статус:
+
+`CHAPTER-SEQUENCE-LOCATED / PRINTED-PAGE-NOT-VERIFIED / SCAN-LEAF-MAPPING-REQUIRED`
 
 Минимальный acquisition target:
 
-- printed pp. 191–200 для начала 72 и солнечной схемы;
-- дальнейшие exact page ranges 73–82 после проверки table/page map;
-- page scans, а не OCR alone.
+- визуально проверенный scan leaf с концом 71 и началом 72;
+- последовательность scan leaves для начала солнечной схемы;
+- визуально подтверждённый chapter-to-scan-leaf map 72–82;
+- только после этого — printed-page map.
 
 ## 3. Что прямо показывает аппарат начала главы 72
 
-Открытая текстовая репрезентация позволяет установить общий характер аппарата:
+Открытая OCR-репрезентация позволяет установить общий характер аппарата:
 
 - многочисленные manuscript omissions;
 - manuscript additions;
@@ -52,9 +58,11 @@ OCR не используется для самостоятельной реко
 
 `GE'EZ-VARIATION-PRESENT / EDITORIAL-RECONSTRUCTION-REQUIRED`
 
+Нельзя безопасно извлечь из OCR точные readings, числа, sigla или printed pages.
+
 ## 4. Доказательное значение
 
-Charles 1906 показывает, что даже до открытия кумранских арамейских рукописей геэз-традиция 72 не была одним беспроблемным текстом.
+Charles 1906 показывает, что даже до открытия кумранских арамейских рукописей геэз-традиция главы 72 не была одним беспроблемным текстом.
 
 Можно утверждать:
 
@@ -101,21 +109,24 @@ OCR старого тома особенно рискован для:
 - вычислять календарную схему по OCR;
 - исправлять числа по контексту без scan;
 - публиковать свой перевод;
-- приписывать reading конкретной рукописи без page verification;
-- делать вывод о 364 днях только из распознанной цифровой строки.
+- приписывать reading конкретной рукописи без image verification;
+- делать вывод о 364 днях только из распознанной цифровой строки;
+- ссылаться на OCR page number как на проверенную печатную пагинацию.
 
-## 7. Exact page workflow
+## 7. Exact scan workflow
 
-После получения scans необходимо:
+После получения scan images необходимо:
 
-1. построить page map 72–82;
-2. вручную транскрибировать только именованные loci;
-3. привязать все sigla к описанию рукописей Charles;
-4. отделить main reading, apparatus и conjecture;
-5. зарегистрировать numerical variants;
-6. сравнить с Knibb;
-7. сравнить с новым Eth I / Eth II apparatus;
-8. только затем сопоставить с Drawnel 4Q208–211.
+1. установить scan leaf, где заканчивается 71 и начинается 72;
+2. построить визуально проверенный chapter-to-scan-leaf map 72–82;
+3. затем сопоставить scan leaves с печатной пагинацией;
+4. вручную транскрибировать только именованные loci;
+5. привязать все sigla к описанию рукописей Charles;
+6. отделить main reading, apparatus и conjecture;
+7. зарегистрировать numerical variants;
+8. сравнить с Knibb;
+9. сравнить с новым Eth I / Eth II apparatus;
+10. только затем сопоставить с Drawnel 4Q208–211.
 
 ## 8. Historical variant table template
 
@@ -124,10 +135,10 @@ OCR старого тома особенно рискован для:
 | 72:1–7 | pending scan | pending | pending | gates/order | Knibb + new Geʽez |
 | 72:8–18 | pending scan | pending | gloss/dittography/corruption present | day/night fractions | Knibb + new Geʽez |
 | 72:19–26 | pending scan | pending | pending | gate/month sequence | Knibb + new Geʽez |
-| 73–75 | pending page map | pending | pending | lunar scheme | Drawnel + Ratzon |
-| 76–82 | pending page map | pending | pending | winds/stars/364 | Drawnel + new Geʽez |
+| 73–75 | pending verified leaf map | pending | pending | lunar scheme | Drawnel + Ratzon |
+| 76–82 | pending verified leaf map | pending | pending | winds/stars/364 | Drawnel + new Geʽez |
 
-Таблица остаётся `PENDING-SCAN`; OCR не заполняет exact readings.
+Таблица остаётся `PENDING-SCAN`; OCR не заполняет exact readings или page numbers.
 
 ## 9. Relation to DFG findings
 
@@ -155,7 +166,9 @@ DRAWNEL / RATZON
 
 Нужны:
 
-- Charles 1906 printed pp. 191–200 и page map до 82;
+- verified scan leaf с переходом 71 → 72;
+- verified scan-leaf map для 72–82;
+- только после визуальной сверки — printed-page map;
 - Knibb exact pages 72–82;
 - новый Geʽez apparatus exact loci;
 - Drawnel overlap tables;
@@ -178,8 +191,9 @@ Addendum не разрешает:
 - `noindex: true`;
 - `publicationAuthorized: false`;
 - `DIRECTION-OF-DEVELOPMENT-HOLD`;
-- `FULL-TEXT-ACCESS-HOLD`.
+- `FULL-TEXT-ACCESS-HOLD`;
+- `SCAN-LEAF-PAGE-VERIFICATION-HOLD`.
 
 ## 12. Итог
 
-> Charles 1906 прямо показывает rich historical variation уже в начале геэз-главы 72, но как pre-Qumran edition не может решить relation к 4Q208–211. Его printed pages нужны для истории readings; современный verdict требует scans, Knibb, нового Geʽez apparatus, Drawnel и Ratzon.
+> Charles 1906 прямо показывает rich historical variation уже в начале геэз-главы 72, но OCR не подтверждает точную печатную страницу. Как pre-Qumran edition он не может решить relation к 4Q208–211; современный verdict требует визуально проверенного scan-leaf map, Knibb, нового Geʽez apparatus, Drawnel и Ratzon.
