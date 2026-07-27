@@ -17,73 +17,102 @@
       "id": "GEN6-ENOCH-PROTOCOL-LVI",
       "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LVI_MANUSCRIPT_FACT_HYPOTHESIS_AND_CONFESSIONAL_JUDGMENT_PROTOCOL.md",
       "role": "method-and-confessional-boundary",
-      "requiredFor": ["6A", "6B"]
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
     },
     {
       "id": "GEN6-ENOCH-VERSION-MATRIX-LIV",
       "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LIV_CHAPTER_BLOCK_VERSION_WITNESS_AND_RECONSTRUCTION_MATRIX.md",
       "role": "chapter-version-witness-control",
-      "requiredFor": ["6A", "6B"]
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
     },
     {
       "id": "GEN6-ENOCH-CANON-MATRIX-LII",
       "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LII_CANONICAL_TENSION_AND_CONTRADICTION_MATRIX.md",
       "role": "canonical-audit-control",
-      "requiredFor": ["6B"]
+      "requiredFor": [
+        "6B"
+      ]
     },
     {
       "id": "GEN6-ENOCH-CORPUS-DRAFT-LIV",
       "path": "ТРУДНЫЕ ТЕКСТЫ/ARTICLE_ENOCH_A_RESEARCH_DRAFT_CORPUS_MANUSCRIPTS_VERSIONS_LIV.md",
       "role": "corpus-history-reader-authority",
-      "requiredFor": ["6A"]
+      "requiredFor": [
+        "6A"
+      ]
     },
     {
       "id": "GEN6-ENOCH-CLAIM-GATE-LIV",
       "path": "ТРУДНЫЕ ТЕКСТЫ/ARTICLE_ENOCH_A_LIV_CLAIM_TO_SOURCE_AND_RIGHTS_GATE.md",
       "role": "claim-source-rights-gate",
-      "requiredFor": ["6A", "6B"]
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
     },
     {
       "id": "GEN6-ENOCH-ACADEMIC-PASS-1-LV",
       "path": "ТРУДНЫЕ ТЕКСТЫ/ARTICLE_ENOCH_A_LV_SOURCE_ANNOTATED_ACADEMIC_PASS_1.md",
       "role": "source-annotated-corpus-control-1",
-      "requiredFor": ["6A"]
+      "requiredFor": [
+        "6A"
+      ]
     },
     {
       "id": "GEN6-ENOCH-ACADEMIC-PASS-2-LV",
       "path": "ТРУДНЫЕ ТЕКСТЫ/ARTICLE_ENOCH_A_LV_SOURCE_ANNOTATED_ACADEMIC_PASS_2.md",
       "role": "source-annotated-corpus-control-2",
-      "requiredFor": ["6A"]
+      "requiredFor": [
+        "6A"
+      ]
     },
     {
       "id": "GEN6-ENOCH-CODEX-AUDIT-LVI",
       "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LVI_CODEX_PANOPOLITANUS_FACT_FINDING_AND_SKEPTICAL_AUDIT.md",
       "role": "codex-fact-hypothesis-control",
-      "requiredFor": ["6A"]
+      "requiredFor": [
+        "6A"
+      ]
     },
     {
       "id": "GEN6-ENOCH-ARCHITECTURE-LIII",
       "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LIII_ARTICLE_ARCHITECTURE_AND_WORDING_OVERLAYS.md",
       "role": "article-separation-and-wording",
-      "requiredFor": ["6A", "6B"]
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
     },
     {
       "id": "GEN6-ENOCH-PRODUCTION-MAP-LVII",
       "path": "ТРУДНЫЕ ТЕКСТЫ/GENESIS6_LVII_ENOCH_SERIES_PRODUCTION_COMPLETION_MAP.md",
       "role": "series-order-and-release-gates",
-      "requiredFor": ["6A", "6B"]
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
     },
     {
       "id": "GEN6-ENOCH-6A-FOOTNOTE-MAP-LIX",
       "path": "ТРУДНЫЕ ТЕКСТЫ/ARTICLE_ENOCH_6A_LIX_CLAIM_LEVEL_FOOTNOTE_MAP.md",
       "role": "claim-level-footnote-map; insertion status superseded by siteAcceptance",
-      "requiredFor": ["6A"]
+      "requiredFor": [
+        "6A"
+      ]
     },
     {
       "id": "GEN6-ENOCH-6B-SOURCE-PASS-LIX",
       "path": "ТРУДНЫЕ ТЕКСТЫ/ARTICLE_ENOCH_6B_LIX_SOURCE_ANNOTATED_CANONICAL_AUDIT_PASS.md",
       "role": "source-annotated-audit-map; insertion status superseded by siteAcceptance",
-      "requiredFor": ["6B"]
+      "requiredFor": [
+        "6B"
+      ]
     }
   ],
   "draftArticles": [
@@ -103,7 +132,10 @@
         "GEN6-ENOCH-PRODUCTION-MAP-LVII",
         "GEN6-ENOCH-6A-FOOTNOTE-MAP-LIX"
       ],
-      "requiredSiteState": {"draft": true, "noindex": true},
+      "requiredSiteState": {
+        "draft": true,
+        "noindex": true
+      },
       "rightsMode": "no-manuscript-image-reproduction",
       "publicationStatus": "source-audited-version-hold"
     },
@@ -120,7 +152,10 @@
         "GEN6-ENOCH-PRODUCTION-MAP-LVII",
         "GEN6-ENOCH-6B-SOURCE-PASS-LIX"
       ],
-      "requiredSiteState": {"draft": true, "noindex": true},
+      "requiredSiteState": {
+        "draft": true,
+        "noindex": true
+      },
       "rightsMode": "no-manuscript-image-reproduction",
       "publicationStatus": "source-audited-version-hold"
     }
@@ -129,7 +164,10 @@
     "repository": "FedorMilovanov/gb-is-my-strength",
     "acceptedHead": "b315998937e4fdd68e204d01660adb65707cd0e6",
     "mergeCommit": "522f0e1cae4fb9ce5a4631cfe856421f1952f4bc",
-    "claimLevelGroups": {"6A": 27, "6B": 26},
+    "claimLevelGroups": {
+      "6A": 27,
+      "6B": 26
+    },
     "closedGates": [
       "claim-level-source-apparatus",
       "reader-bibliography-microaudit",
