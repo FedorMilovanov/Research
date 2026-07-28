@@ -17,23 +17,31 @@ EXPECTED_SLUGS = {
 }
 EXPECTED_GROUPS = {"6A": 27, "6B": 26}
 EXPECTED_BLOCKING_HOLDS = [
-    "1-enoch-15-8-12-demon-origin",
     "1-enoch-70-71-son-of-man",
     "astronomical-book-version-plurality",
 ]
 EXPECTED_PRESERVED_HOLDS = [
     "1-enoch-10-8-interpretive-scope",
+    "1-enoch-15-8-12-version-details-and-demon-identity",
     "parables-date-and-witness-form",
     "animal-apocalypse-decomposition",
     "chapter-108-relation-to-epistle",
     "codex-panopolitanus-editorial-intention",
 ]
-EXPECTED_RESOLVED_EVIDENCE = {
-    "id": "1-enoch-10-8-version-control",
-    "resolution": "text-established-interpretation-qualified",
-    "documentId": "GEN6-ENOCH-10-8-DECISION-LX",
-    "evidence": "Greek and Ge'ez full clause; Aramaic 4Q202 locus 10:8-12 partial/reconstructed",
-}
+EXPECTED_RESOLVED_EVIDENCE = [
+    {
+        "id": "1-enoch-10-8-version-control",
+        "resolution": "text-established-interpretation-qualified",
+        "documentId": "GEN6-ENOCH-10-8-DECISION-LX",
+        "evidence": "Greek and Ge'ez full clause; Aramaic 4Q202 locus 10:8-12 partial/reconstructed",
+    },
+    {
+        "id": "1-enoch-15-8-12-demon-origin",
+        "resolution": "core-model-established-canonical-status-qualified",
+        "documentId": "GEN6-ENOCH-15-8-12-DECISION-LXI",
+        "evidence": "Greek Syncellus and Codex Panopolitanus plus full Ge'ez preserve the core model; Aramaic 4Q204 is contextual/partial",
+    },
+]
 EXPECTED_RESOLVED_POLICY = {
     "id": "manuscript-image-rights",
     "resolution": "no-manuscript-image-reproduction",
@@ -46,9 +54,35 @@ EXPECTED_CLOSED_GATES = [
     "exact-head-technical-ci",
     "manuscript-image-rights-by-no-reproduction",
     "1-enoch-10-8-version-control",
+    "1-enoch-15-8-12-demon-origin",
 ]
-DECISION_ID = "GEN6-ENOCH-10-8-DECISION-LX"
-DECISION_PATH = "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LX_10_8_VERSION_CONTROL_DECISION.md"
+DECISIONS = {
+    "GEN6-ENOCH-10-8-DECISION-LX": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LX_10_8_VERSION_CONTROL_DECISION.md",
+        "markers": [
+            "1-enoch-10-8-version-control",
+            "1-enoch-10-8-interpretive-scope",
+            "TEXT-ESTABLISHED / INTERPRETATION-QUALIFIED",
+            "4Q202 / 4QEnᵇ",
+            "Codex Panopolitanus",
+            "ወላዕሌሁ ጸሐፍ ኵሎ ኀጢአተ",
+            "Публикационная блокировка серии **не снимается**",
+        ],
+    },
+    "GEN6-ENOCH-15-8-12-DECISION-LXI": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXI_15_8_12_DEMON_ORIGIN_VERSION_CONTROL_DECISION.md",
+        "markers": [
+            "1-enoch-15-8-12-demon-origin",
+            "1-enoch-15-8-12-version-details-and-demon-identity",
+            "CORE-MODEL-ESTABLISHED / CANONICAL-STATUS-QUALIFIED",
+            "4Q204 / 4QEnᶜ",
+            "Codex Panopolitanus",
+            "George Syncellus",
+            "формальным прямым противоречием не доказана",
+            "Публикационная блокировка серии **не снимается**",
+        ],
+    },
+}
 
 
 def fail(message: str) -> None:
@@ -85,8 +119,8 @@ def main() -> None:
     ledger = read_json(ledger_path)
 
     for name, document in (("manifest", manifest), ("ledger", ledger)):
-        if document.get("schemaVersion") != 3:
-            fail(f"{name} schemaVersion must be 3")
+        if document.get("schemaVersion") != 4:
+            fail(f"{name} schemaVersion must be 4")
         if document.get("seriesId") != "genesis-6":
             fail(f"{name} seriesId must be genesis-6")
         if document.get("extensionId") != "genesis6-enoch-articles-6a-6b":
@@ -114,7 +148,7 @@ def main() -> None:
         fail("manifest documents must be a non-empty list")
 
     document_ids: set[str] = set()
-    decision_document = None
+    document_by_id: dict[str, dict] = {}
     for document in documents:
         document_id = document.get("id")
         relative_path = document.get("path")
@@ -123,32 +157,23 @@ def main() -> None:
         if document_id in document_ids:
             fail(f"duplicate document id {document_id}")
         document_ids.add(document_id)
+        document_by_id[document_id] = document
         if not isinstance(relative_path, str) or not (root / relative_path).is_file():
             fail(f"missing authority document for {document_id}: {relative_path}")
-        if document_id == DECISION_ID:
-            decision_document = document
 
-    expected_decision_document = {
-        "id": DECISION_ID,
-        "path": DECISION_PATH,
-        "role": "locus-version-control-decision",
-        "requiredFor": ["6B"],
-    }
-    if decision_document != expected_decision_document:
-        fail("10:8 decision document binding drift")
-
-    decision_text = (root / DECISION_PATH).read_text(encoding="utf-8")
-    for marker in [
-        "1-enoch-10-8-version-control",
-        "1-enoch-10-8-interpretive-scope",
-        "TEXT-ESTABLISHED / INTERPRETATION-QUALIFIED",
-        "4Q202 / 4QEnᵇ",
-        "Codex Panopolitanus",
-        "ወላዕሌሁ ጸሐፍ ኵሎ ኀጢአተ",
-        "Публикационная блокировка серии **не снимается**",
-    ]:
-        if marker not in decision_text:
-            fail(f"10:8 decision missing marker: {marker}")
+    for decision_id, contract in DECISIONS.items():
+        expected_document = {
+            "id": decision_id,
+            "path": contract["path"],
+            "role": "locus-version-control-decision",
+            "requiredFor": ["6B"],
+        }
+        if document_by_id.get(decision_id) != expected_document:
+            fail(f"{decision_id} document binding drift")
+        decision_text = (root / contract["path"]).read_text(encoding="utf-8")
+        for marker in contract["markers"]:
+            if marker not in decision_text:
+                fail(f"{decision_id} missing marker: {marker}")
 
     acceptance = manifest.get("siteAcceptance")
     if not isinstance(acceptance, dict):
@@ -161,7 +186,7 @@ def main() -> None:
         fail("siteAcceptance mergeCommit drift")
     if acceptance.get("claimLevelGroups") != EXPECTED_GROUPS:
         fail("siteAcceptance claim-level group counts drift")
-    if acceptance.get("closedGates") != EXPECTED_CLOSED_GATES[:-1]:
+    if acceptance.get("closedGates") != EXPECTED_CLOSED_GATES[:5]:
         fail("siteAcceptance closed gates drift")
     if acceptance.get("publicationAuthorized") is not False:
         fail("site acceptance must not authorize publication")
@@ -175,7 +200,7 @@ def main() -> None:
         fail("blocking HOLD registry drift")
     if registry.get("preservedUncertainty") != EXPECTED_PRESERVED_HOLDS:
         fail("preserved uncertainty registry drift")
-    if registry.get("resolvedByEvidence") != [EXPECTED_RESOLVED_EVIDENCE]:
+    if registry.get("resolvedByEvidence") != EXPECTED_RESOLVED_EVIDENCE:
         fail("evidence resolution registry drift")
     if registry.get("resolvedByPolicy") != [EXPECTED_RESOLVED_POLICY]:
         fail("policy resolution registry drift")
@@ -205,6 +230,7 @@ def main() -> None:
     if tuple(sorted(ledger_by_key)) != EXPECTED_KEYS:
         fail("ledger article keys must be exactly 6A and 6B")
 
+    decision_ids = list(DECISIONS)
     for key in EXPECTED_KEYS:
         article = by_key[key]
         bundle = ledger_by_key[key]
@@ -222,10 +248,14 @@ def main() -> None:
         missing_ids = [document_id for document_id in ordered_ids if document_id not in document_ids]
         if missing_ids:
             fail(f"{key} references unknown documents: {missing_ids}")
-        if key == "6B" and DECISION_ID not in ordered_ids:
-            fail("6B bundle must include the 10:8 decision")
-        if key == "6A" and DECISION_ID in ordered_ids:
-            fail("6A bundle must not claim the 10:8 decision")
+        if key == "6B":
+            missing_decisions = [decision_id for decision_id in decision_ids if decision_id not in ordered_ids]
+            if missing_decisions:
+                fail(f"6B bundle missing decisions: {missing_decisions}")
+        if key == "6A":
+            unexpected_decisions = [decision_id for decision_id in decision_ids if decision_id in ordered_ids]
+            if unexpected_decisions:
+                fail(f"6A bundle must not claim decisions: {unexpected_decisions}")
         if bundle != article:
             fail(f"{key} ledger bundle drift")
 
@@ -244,7 +274,7 @@ def main() -> None:
         fail("ledger blocking holds drift")
     if release.get("preservedUncertainty") != EXPECTED_PRESERVED_HOLDS:
         fail("ledger preserved uncertainty drift")
-    if release.get("resolvedByEvidence") != [EXPECTED_RESOLVED_EVIDENCE]:
+    if release.get("resolvedByEvidence") != EXPECTED_RESOLVED_EVIDENCE:
         fail("ledger evidence resolution drift")
     if release.get("resolvedByPolicy") != [EXPECTED_RESOLVED_POLICY]:
         fail("ledger policy resolution drift")
@@ -252,7 +282,7 @@ def main() -> None:
     print(
         "Genesis 6 Enoch extension authority: PASS "
         f"({len(documents)} documents, {len(manifest_articles)} source-audited draft articles, "
-        f"{len(EXPECTED_BLOCKING_HOLDS)} blocking HOLDs, 10:8 text established, "
+        f"{len(EXPECTED_BLOCKING_HOLDS)} blocking HOLDs, 10:8 and 15:8-12 text models established, "
         f"manifest {sha256(manifest_path)})"
     )
 
