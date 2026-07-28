@@ -16,13 +16,12 @@ EXPECTED_SLUGS = {
     "6B": "mozhno-li-doveryat-1-enohu-kanonicheskiy-audit",
 }
 EXPECTED_GROUPS = {"6A": 27, "6B": 26}
-EXPECTED_BLOCKING_HOLDS = [
-    "astronomical-book-version-plurality",
-]
+EXPECTED_BLOCKING_HOLDS: list[str] = []
 EXPECTED_PRESERVED_HOLDS = [
     "1-enoch-10-8-interpretive-scope",
     "1-enoch-15-8-12-version-details-and-demon-identity",
     "1-enoch-70-71-composition-and-figure-identity",
+    "astronomical-book-reconstruction-direction-and-joins",
     "parables-date-and-witness-form",
     "animal-apocalypse-decomposition",
     "chapter-108-relation-to-epistle",
@@ -47,6 +46,12 @@ EXPECTED_RESOLVED_EVIDENCE = [
         "documentId": "GEN6-ENOCH-70-71-DECISION-LXV",
         "evidence": "LXII evidence chain plus modern critical translation support second-person 71:14; Charles third-person is an emendation; composition and total identity remain qualified",
     },
+    {
+        "id": "astronomical-book-version-plurality",
+        "resolution": "textual-plurality-established-evolution-model-qualified",
+        "documentId": "GEN6-ENOCH-ASTRONOMICAL-DECISION-LXVI",
+        "evidence": "4Q208/4Q209 continuity and scheme-level plurality are established by Ratzon's full reconstruction; direction of adaptation and exact joins remain qualified",
+    },
 ]
 EXPECTED_RESOLVED_POLICY = {
     "id": "manuscript-image-rights",
@@ -62,58 +67,79 @@ EXPECTED_CLOSED_GATES = [
     "1-enoch-10-8-version-control",
     "1-enoch-15-8-12-demon-origin",
     "1-enoch-70-71-son-of-man",
+    "astronomical-book-version-plurality",
 ]
 EVIDENCE_DOCUMENTS = {
+    "GEN6-ENOCH-ASTRONOMICAL-PROTOCOL-LXIII": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXIII_ASTRONOMICAL_BOOK_VERSION_PLURALITY_BLOCKING_HOLD_PROTOCOL.md",
+        "role": "locus-evidence-protocol",
+        "requiredFor": ["6A", "6B"],
+    },
+    "GEN6-ENOCH-ASTRONOMICAL-PUBLIC-GATE-LXIII-A": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXIII_A_ASTRONOMICAL_PUBLIC_EVIDENCE_AND_FULL_TEXT_ACCESS_GATE.md",
+        "role": "public-text-and-access-gate",
+        "requiredFor": ["6A", "6B"],
+    },
+    "GEN6-ENOCH-ASTRONOMICAL-CHARLES-ADDENDUM-LXIII-B": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXIII_B_ASTRONOMICAL_CHARLES_1906_HISTORICAL_APPARATUS_ADDENDUM.md",
+        "role": "historical-multi-ms-apparatus-evidence",
+        "requiredFor": ["6A", "6B"],
+    },
     "GEN6-ENOCH-70-71-PROTOCOL-LXII": {
         "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXII_70_71_SON_OF_MAN_BLOCKING_HOLD_CLOSURE_PROTOCOL.md",
         "role": "locus-evidence-protocol",
+        "requiredFor": ["6B"],
     },
     "GEN6-ENOCH-70-71-PUBLIC-GATE-LXII-A": {
         "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXII_A_70_71_PUBLIC_TEXT_TRANSLATION_AND_ACCESS_GATE.md",
         "role": "public-text-and-access-gate",
+        "requiredFor": ["6B"],
     },
     "GEN6-ENOCH-70-71-CHARLES-ADDENDUM-LXII-B": {
         "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXII_B_70_71_CHARLES_1906_DIRECT_APPARATUS_ADDENDUM.md",
         "role": "historical-multi-ms-apparatus-evidence",
+        "requiredFor": ["6B"],
     },
 }
 DECISIONS = {
     "GEN6-ENOCH-10-8-DECISION-LX": {
         "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LX_10_8_VERSION_CONTROL_DECISION.md",
+        "requiredFor": ["6B"],
         "markers": [
             "1-enoch-10-8-version-control",
-            "1-enoch-10-8-interpretive-scope",
             "TEXT-ESTABLISHED / INTERPRETATION-QUALIFIED",
-            "4Q202 / 4QEnᵇ",
-            "Codex Panopolitanus",
-            "ወላዕሌሁ ጸሐፍ ኵሎ ኀጢአተ",
             "Публикационная блокировка серии **не снимается**",
         ],
     },
     "GEN6-ENOCH-15-8-12-DECISION-LXI": {
         "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXI_15_8_12_DEMON_ORIGIN_VERSION_CONTROL_DECISION.md",
+        "requiredFor": ["6B"],
         "markers": [
             "1-enoch-15-8-12-demon-origin",
-            "1-enoch-15-8-12-version-details-and-demon-identity",
             "CORE-MODEL-ESTABLISHED / CANONICAL-STATUS-QUALIFIED",
-            "4Q204 / 4QEnᶜ",
-            "Codex Panopolitanus",
-            "George Syncellus",
-            "формальным прямым противоречием не доказана",
             "Публикационная блокировка серии **не снимается**",
         ],
     },
     "GEN6-ENOCH-70-71-DECISION-LXV": {
         "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXV_70_71_SON_OF_MAN_AUTHORITY_DECISION.md",
+        "requiredFor": ["6B"],
         "markers": [
             "1-enoch-70-71-son-of-man",
-            "1-enoch-70-71-composition-and-figure-identity",
             "DIRECT-ADDRESS-ESTABLISHED / COMPOSITION-AND-IDENTITY-QUALIFIED",
-            "CHARLES-THIRD-PERSON-EMENDATION / HISTORY-OF-INTERPRETATION",
-            "COMPOSITION-DISPUTED / PRESERVE-BOTH-MODELS",
-            "POSSIBLE-DIRECT-CONFLICT-IF-IDENTITY-IS-MAXIMIZED",
             "astronomical-book-version-plurality",
             "Публикационная блокировка серии **не снимается**",
+        ],
+    },
+    "GEN6-ENOCH-ASTRONOMICAL-DECISION-LXVI": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXVI_ASTRONOMICAL_BOOK_VERSION_PLURALITY_AUTHORITY_DECISION.md",
+        "requiredFor": ["6A", "6B"],
+        "markers": [
+            "astronomical-book-version-plurality",
+            "TEXTUAL-PLURALITY-ESTABLISHED / EVOLUTION-MODEL-QUALIFIED",
+            "astronomical-book-reconstruction-direction-and-joins",
+            "SAME-COMPOSITION",
+            "PEER-REVIEWED-CURRENT-RECONSTRUCTION",
+            "Research blockers закрыты; site implementation и publication authorization ещё не закрыты",
         ],
     },
 }
@@ -153,8 +179,8 @@ def main() -> None:
     ledger = read_json(ledger_path)
 
     for name, document in (("manifest", manifest), ("ledger", ledger)):
-        if document.get("schemaVersion") != 5:
-            fail(f"{name} schemaVersion must be 5")
+        if document.get("schemaVersion") != 6:
+            fail(f"{name} schemaVersion must be 6")
         if document.get("seriesId") != "genesis-6":
             fail(f"{name} seriesId must be genesis-6")
         if document.get("extensionId") != "genesis6-enoch-articles-6a-6b":
@@ -200,7 +226,7 @@ def main() -> None:
             "id": evidence_id,
             "path": contract["path"],
             "role": contract["role"],
-            "requiredFor": ["6B"],
+            "requiredFor": contract["requiredFor"],
         }
         if document_by_id.get(evidence_id) != expected_document:
             fail(f"{evidence_id} evidence binding drift")
@@ -210,7 +236,7 @@ def main() -> None:
             "id": decision_id,
             "path": contract["path"],
             "role": "locus-version-control-decision",
-            "requiredFor": ["6B"],
+            "requiredFor": contract["requiredFor"],
         }
         if document_by_id.get(decision_id) != expected_document:
             fail(f"{decision_id} document binding drift")
@@ -241,7 +267,7 @@ def main() -> None:
     if set(registry) != {"blocking", "preservedUncertainty", "resolvedByEvidence", "resolvedByPolicy"}:
         fail("holdRegistry keys drift")
     if registry.get("blocking") != EXPECTED_BLOCKING_HOLDS:
-        fail("blocking HOLD registry drift")
+        fail("blocking HOLD registry must be empty")
     if registry.get("preservedUncertainty") != EXPECTED_PRESERVED_HOLDS:
         fail("preserved uncertainty registry drift")
     if registry.get("resolvedByEvidence") != EXPECTED_RESOLVED_EVIDENCE:
@@ -275,16 +301,28 @@ def main() -> None:
         fail("ledger article keys must be exactly 6A and 6B")
 
     decision_ids = list(DECISIONS)
-    evidence_ids = list(EVIDENCE_DOCUMENTS)
+    astronomical_ids = [
+        "GEN6-ENOCH-ASTRONOMICAL-PROTOCOL-LXIII",
+        "GEN6-ENOCH-ASTRONOMICAL-PUBLIC-GATE-LXIII-A",
+        "GEN6-ENOCH-ASTRONOMICAL-CHARLES-ADDENDUM-LXIII-B",
+        "GEN6-ENOCH-ASTRONOMICAL-DECISION-LXVI",
+    ]
+    enoch_70_ids = [
+        "GEN6-ENOCH-70-71-PROTOCOL-LXII",
+        "GEN6-ENOCH-70-71-PUBLIC-GATE-LXII-A",
+        "GEN6-ENOCH-70-71-CHARLES-ADDENDUM-LXII-B",
+        "GEN6-ENOCH-70-71-DECISION-LXV",
+    ]
+
     for key in EXPECTED_KEYS:
         article = by_key[key]
         bundle = ledger_by_key[key]
         if article.get("slug") != EXPECTED_SLUGS[key]:
             fail(f"{key} slug drift")
-        if article.get("publicationStatus") != "source-audited-version-hold":
-            fail(f"{key} publicationStatus must remain source-audited-version-hold")
+        if article.get("publicationStatus") != "research-ready-site-implementation-hold":
+            fail(f"{key} publicationStatus must be research-ready-site-implementation-hold")
         if article.get("requiredSiteState") != {"draft": True, "noindex": True}:
-            fail(f"{key} requiredSiteState must be draft/noindex")
+            fail(f"{key} requiredSiteState must remain draft/noindex")
         if article.get("rightsMode") != "no-manuscript-image-reproduction":
             fail(f"{key} rightsMode drift")
         ordered_ids = article.get("orderedDocumentIds")
@@ -293,17 +331,25 @@ def main() -> None:
         missing_ids = [document_id for document_id in ordered_ids if document_id not in document_ids]
         if missing_ids:
             fail(f"{key} references unknown documents: {missing_ids}")
+        missing_astronomical = [document_id for document_id in astronomical_ids if document_id not in ordered_ids]
+        if missing_astronomical:
+            fail(f"{key} bundle missing Astronomical evidence/decision: {missing_astronomical}")
         if key == "6B":
             missing_decisions = [decision_id for decision_id in decision_ids if decision_id not in ordered_ids]
-            missing_evidence = [evidence_id for evidence_id in evidence_ids if evidence_id not in ordered_ids]
+            missing_70 = [document_id for document_id in enoch_70_ids if document_id not in ordered_ids]
             if missing_decisions:
                 fail(f"6B bundle missing decisions: {missing_decisions}")
-            if missing_evidence:
-                fail(f"6B bundle missing 70-71 evidence: {missing_evidence}")
+            if missing_70:
+                fail(f"6B bundle missing 70-71 evidence/decision: {missing_70}")
         if key == "6A":
-            unexpected = [document_id for document_id in decision_ids + evidence_ids if document_id in ordered_ids]
-            if unexpected:
-                fail(f"6A bundle must not claim 6B evidence/decisions: {unexpected}")
+            forbidden = [
+                document_id
+                for document_id in decision_ids + enoch_70_ids
+                if document_id != "GEN6-ENOCH-ASTRONOMICAL-DECISION-LXVI"
+                and document_id in ordered_ids
+            ]
+            if forbidden:
+                fail(f"6A bundle must not claim 6B-only evidence/decisions: {forbidden}")
         if bundle != article:
             fail(f"{key} ledger bundle drift")
 
@@ -316,10 +362,16 @@ def main() -> None:
         fail("publication and noindex removal must remain forbidden")
     if release.get("mayMergeAsDraftContent") is not True:
         fail("draft content merge policy drift")
+    if release.get("researchBlockersClosed") is not True:
+        fail("researchBlockersClosed must be true")
+    if release.get("siteImplementationRequired") is not True:
+        fail("siteImplementationRequired must be true")
+    if release.get("explicitPublicationPassRequired") is not True:
+        fail("explicitPublicationPassRequired must be true")
     if release.get("closedGates") != EXPECTED_CLOSED_GATES:
         fail("ledger closed gates drift")
     if release.get("blockingHolds") != EXPECTED_BLOCKING_HOLDS:
-        fail("ledger blocking holds drift")
+        fail("ledger blockingHolds must be empty")
     if release.get("preservedUncertainty") != EXPECTED_PRESERVED_HOLDS:
         fail("ledger preserved uncertainty drift")
     if release.get("resolvedByEvidence") != EXPECTED_RESOLVED_EVIDENCE:
@@ -329,8 +381,8 @@ def main() -> None:
 
     print(
         "Genesis 6 Enoch extension authority: PASS "
-        f"({len(documents)} documents, {len(manifest_articles)} source-audited draft articles, "
-        f"{len(EXPECTED_BLOCKING_HOLDS)} blocking HOLD, 70-71 evidence chain and authority decision bound, "
+        f"({len(documents)} documents, {len(manifest_articles)} research-ready draft articles, "
+        "0 Research blocking HOLDs, site implementation still required, "
         f"manifest {sha256(manifest_path)})"
     )
 
