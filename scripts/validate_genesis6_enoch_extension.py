@@ -17,12 +17,12 @@ EXPECTED_SLUGS = {
 }
 EXPECTED_GROUPS = {"6A": 27, "6B": 26}
 EXPECTED_BLOCKING_HOLDS = [
-    "1-enoch-70-71-son-of-man",
     "astronomical-book-version-plurality",
 ]
 EXPECTED_PRESERVED_HOLDS = [
     "1-enoch-10-8-interpretive-scope",
     "1-enoch-15-8-12-version-details-and-demon-identity",
+    "1-enoch-70-71-composition-and-figure-identity",
     "parables-date-and-witness-form",
     "animal-apocalypse-decomposition",
     "chapter-108-relation-to-epistle",
@@ -41,6 +41,12 @@ EXPECTED_RESOLVED_EVIDENCE = [
         "documentId": "GEN6-ENOCH-15-8-12-DECISION-LXI",
         "evidence": "Greek Syncellus and Codex Panopolitanus plus full Ge'ez preserve the core model; Aramaic 4Q204 is contextual/partial",
     },
+    {
+        "id": "1-enoch-70-71-son-of-man",
+        "resolution": "direct-address-established-composition-and-identity-qualified",
+        "documentId": "GEN6-ENOCH-70-71-DECISION-LXV",
+        "evidence": "LXII evidence chain plus modern critical translation support second-person 71:14; Charles third-person is an emendation; composition and total identity remain qualified",
+    },
 ]
 EXPECTED_RESOLVED_POLICY = {
     "id": "manuscript-image-rights",
@@ -55,7 +61,22 @@ EXPECTED_CLOSED_GATES = [
     "manuscript-image-rights-by-no-reproduction",
     "1-enoch-10-8-version-control",
     "1-enoch-15-8-12-demon-origin",
+    "1-enoch-70-71-son-of-man",
 ]
+EVIDENCE_DOCUMENTS = {
+    "GEN6-ENOCH-70-71-PROTOCOL-LXII": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXII_70_71_SON_OF_MAN_BLOCKING_HOLD_CLOSURE_PROTOCOL.md",
+        "role": "locus-evidence-protocol",
+    },
+    "GEN6-ENOCH-70-71-PUBLIC-GATE-LXII-A": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXII_A_70_71_PUBLIC_TEXT_TRANSLATION_AND_ACCESS_GATE.md",
+        "role": "public-text-and-access-gate",
+    },
+    "GEN6-ENOCH-70-71-CHARLES-ADDENDUM-LXII-B": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXII_B_70_71_CHARLES_1906_DIRECT_APPARATUS_ADDENDUM.md",
+        "role": "historical-multi-ms-apparatus-evidence",
+    },
+}
 DECISIONS = {
     "GEN6-ENOCH-10-8-DECISION-LX": {
         "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LX_10_8_VERSION_CONTROL_DECISION.md",
@@ -79,6 +100,19 @@ DECISIONS = {
             "Codex Panopolitanus",
             "George Syncellus",
             "формальным прямым противоречием не доказана",
+            "Публикационная блокировка серии **не снимается**",
+        ],
+    },
+    "GEN6-ENOCH-70-71-DECISION-LXV": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXV_70_71_SON_OF_MAN_AUTHORITY_DECISION.md",
+        "markers": [
+            "1-enoch-70-71-son-of-man",
+            "1-enoch-70-71-composition-and-figure-identity",
+            "DIRECT-ADDRESS-ESTABLISHED / COMPOSITION-AND-IDENTITY-QUALIFIED",
+            "CHARLES-THIRD-PERSON-EMENDATION / HISTORY-OF-INTERPRETATION",
+            "COMPOSITION-DISPUTED / PRESERVE-BOTH-MODELS",
+            "POSSIBLE-DIRECT-CONFLICT-IF-IDENTITY-IS-MAXIMIZED",
+            "astronomical-book-version-plurality",
             "Публикационная блокировка серии **не снимается**",
         ],
     },
@@ -119,8 +153,8 @@ def main() -> None:
     ledger = read_json(ledger_path)
 
     for name, document in (("manifest", manifest), ("ledger", ledger)):
-        if document.get("schemaVersion") != 4:
-            fail(f"{name} schemaVersion must be 4")
+        if document.get("schemaVersion") != 5:
+            fail(f"{name} schemaVersion must be 5")
         if document.get("seriesId") != "genesis-6":
             fail(f"{name} seriesId must be genesis-6")
         if document.get("extensionId") != "genesis6-enoch-articles-6a-6b":
@@ -160,6 +194,16 @@ def main() -> None:
         document_by_id[document_id] = document
         if not isinstance(relative_path, str) or not (root / relative_path).is_file():
             fail(f"missing authority document for {document_id}: {relative_path}")
+
+    for evidence_id, contract in EVIDENCE_DOCUMENTS.items():
+        expected_document = {
+            "id": evidence_id,
+            "path": contract["path"],
+            "role": contract["role"],
+            "requiredFor": ["6B"],
+        }
+        if document_by_id.get(evidence_id) != expected_document:
+            fail(f"{evidence_id} evidence binding drift")
 
     for decision_id, contract in DECISIONS.items():
         expected_document = {
@@ -231,6 +275,7 @@ def main() -> None:
         fail("ledger article keys must be exactly 6A and 6B")
 
     decision_ids = list(DECISIONS)
+    evidence_ids = list(EVIDENCE_DOCUMENTS)
     for key in EXPECTED_KEYS:
         article = by_key[key]
         bundle = ledger_by_key[key]
@@ -250,12 +295,15 @@ def main() -> None:
             fail(f"{key} references unknown documents: {missing_ids}")
         if key == "6B":
             missing_decisions = [decision_id for decision_id in decision_ids if decision_id not in ordered_ids]
+            missing_evidence = [evidence_id for evidence_id in evidence_ids if evidence_id not in ordered_ids]
             if missing_decisions:
                 fail(f"6B bundle missing decisions: {missing_decisions}")
+            if missing_evidence:
+                fail(f"6B bundle missing 70-71 evidence: {missing_evidence}")
         if key == "6A":
-            unexpected_decisions = [decision_id for decision_id in decision_ids if decision_id in ordered_ids]
-            if unexpected_decisions:
-                fail(f"6A bundle must not claim decisions: {unexpected_decisions}")
+            unexpected = [document_id for document_id in decision_ids + evidence_ids if document_id in ordered_ids]
+            if unexpected:
+                fail(f"6A bundle must not claim 6B evidence/decisions: {unexpected}")
         if bundle != article:
             fail(f"{key} ledger bundle drift")
 
@@ -282,7 +330,7 @@ def main() -> None:
     print(
         "Genesis 6 Enoch extension authority: PASS "
         f"({len(documents)} documents, {len(manifest_articles)} source-audited draft articles, "
-        f"{len(EXPECTED_BLOCKING_HOLDS)} blocking HOLDs, 10:8 and 15:8-12 text models established, "
+        f"{len(EXPECTED_BLOCKING_HOLDS)} blocking HOLD, 70-71 evidence chain and authority decision bound, "
         f"manifest {sha256(manifest_path)})"
     )
 
