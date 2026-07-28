@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 4,
+  "schemaVersion": 5,
   "seriesId": "genesis-6",
   "extensionId": "genesis6-enoch-articles-6a-6b",
   "manifestPath": "data/genesis6-enoch-extension-authority-manifest.json",
-  "manifestSha256": "8cfdadd344f15a752ee279d1c1122079fcacbbd97650dd39151872e5618099ef",
+  "manifestSha256": "d6a04ea2491ba4d30821204a7348eeac4994c43953ab0f9979f1b36d8c8b2dfd",
   "generatedAt": "2026-07-28",
   "bundles": [
     {
@@ -36,8 +36,12 @@
       "orderedDocumentIds": [
         "GEN6-ENOCH-PROTOCOL-LVI",
         "GEN6-ENOCH-VERSION-MATRIX-LIV",
+        "GEN6-ENOCH-70-71-PROTOCOL-LXII",
+        "GEN6-ENOCH-70-71-PUBLIC-GATE-LXII-A",
+        "GEN6-ENOCH-70-71-CHARLES-ADDENDUM-LXII-B",
         "GEN6-ENOCH-10-8-DECISION-LX",
         "GEN6-ENOCH-15-8-12-DECISION-LXI",
+        "GEN6-ENOCH-70-71-DECISION-LXV",
         "GEN6-ENOCH-CANON-MATRIX-LII",
         "GEN6-ENOCH-ARCHITECTURE-LIII",
         "GEN6-ENOCH-CLAIM-GATE-LIV",
@@ -54,7 +58,7 @@
   ],
   "releaseDecision": {
     "state": "blocked",
-    "reason": "Claim-level sources, reader bibliography, provenance, technical CI, image-rights-by-no-reproduction, 1 Enoch 10:8 and 1 Enoch 15:8-12 version control are closed. Publication remains blocked by two named version-control loci.",
+    "reason": "Claim-level sources, reader bibliography, provenance, technical CI, image-rights-by-no-reproduction, 1 Enoch 10:8, 1 Enoch 15:8-12 and 1 Enoch 70-71 version/composition control are closed. Publication remains blocked only by Astronomical Book version plurality.",
     "mayMergeAsDraftContent": true,
     "mayPublish": false,
     "mayRemoveNoindex": false,
@@ -65,15 +69,16 @@
       "exact-head-technical-ci",
       "manuscript-image-rights-by-no-reproduction",
       "1-enoch-10-8-version-control",
-      "1-enoch-15-8-12-demon-origin"
+      "1-enoch-15-8-12-demon-origin",
+      "1-enoch-70-71-son-of-man"
     ],
     "blockingHolds": [
-      "1-enoch-70-71-son-of-man",
       "astronomical-book-version-plurality"
     ],
     "preservedUncertainty": [
       "1-enoch-10-8-interpretive-scope",
       "1-enoch-15-8-12-version-details-and-demon-identity",
+      "1-enoch-70-71-composition-and-figure-identity",
       "parables-date-and-witness-form",
       "animal-apocalypse-decomposition",
       "chapter-108-relation-to-epistle",
@@ -91,6 +96,12 @@
         "resolution": "core-model-established-canonical-status-qualified",
         "documentId": "GEN6-ENOCH-15-8-12-DECISION-LXI",
         "evidence": "Greek Syncellus and Codex Panopolitanus plus full Ge'ez preserve the core model; Aramaic 4Q204 is contextual/partial"
+      },
+      {
+        "id": "1-enoch-70-71-son-of-man",
+        "resolution": "direct-address-established-composition-and-identity-qualified",
+        "documentId": "GEN6-ENOCH-70-71-DECISION-LXV",
+        "evidence": "LXII evidence chain plus modern critical translation support second-person 71:14; Charles third-person is an emendation; composition and total identity remain qualified"
       }
     ],
     "resolvedByPolicy": [
