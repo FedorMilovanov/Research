@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 6,
   "seriesId": "genesis-6",
   "extensionId": "genesis6-enoch-articles-6a-6b",
   "generatedAt": "2026-07-28",
@@ -26,6 +26,42 @@
       "id": "GEN6-ENOCH-VERSION-MATRIX-LIV",
       "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LIV_CHAPTER_BLOCK_VERSION_WITNESS_AND_RECONSTRUCTION_MATRIX.md",
       "role": "chapter-version-witness-control",
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
+    },
+    {
+      "id": "GEN6-ENOCH-ASTRONOMICAL-PROTOCOL-LXIII",
+      "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXIII_ASTRONOMICAL_BOOK_VERSION_PLURALITY_BLOCKING_HOLD_PROTOCOL.md",
+      "role": "locus-evidence-protocol",
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
+    },
+    {
+      "id": "GEN6-ENOCH-ASTRONOMICAL-PUBLIC-GATE-LXIII-A",
+      "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXIII_A_ASTRONOMICAL_PUBLIC_EVIDENCE_AND_FULL_TEXT_ACCESS_GATE.md",
+      "role": "public-text-and-access-gate",
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
+    },
+    {
+      "id": "GEN6-ENOCH-ASTRONOMICAL-CHARLES-ADDENDUM-LXIII-B",
+      "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXIII_B_ASTRONOMICAL_CHARLES_1906_HISTORICAL_APPARATUS_ADDENDUM.md",
+      "role": "historical-multi-ms-apparatus-evidence",
+      "requiredFor": [
+        "6A",
+        "6B"
+      ]
+    },
+    {
+      "id": "GEN6-ENOCH-ASTRONOMICAL-DECISION-LXVI",
+      "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXVI_ASTRONOMICAL_BOOK_VERSION_PLURALITY_AUTHORITY_DECISION.md",
+      "role": "locus-version-control-decision",
       "requiredFor": [
         "6A",
         "6B"
@@ -171,6 +207,10 @@
       "orderedDocumentIds": [
         "GEN6-ENOCH-PROTOCOL-LVI",
         "GEN6-ENOCH-VERSION-MATRIX-LIV",
+        "GEN6-ENOCH-ASTRONOMICAL-PROTOCOL-LXIII",
+        "GEN6-ENOCH-ASTRONOMICAL-PUBLIC-GATE-LXIII-A",
+        "GEN6-ENOCH-ASTRONOMICAL-CHARLES-ADDENDUM-LXIII-B",
+        "GEN6-ENOCH-ASTRONOMICAL-DECISION-LXVI",
         "GEN6-ENOCH-ARCHITECTURE-LIII",
         "GEN6-ENOCH-CORPUS-DRAFT-LIV",
         "GEN6-ENOCH-CLAIM-GATE-LIV",
@@ -185,7 +225,7 @@
         "noindex": true
       },
       "rightsMode": "no-manuscript-image-reproduction",
-      "publicationStatus": "source-audited-version-hold"
+      "publicationStatus": "research-ready-site-implementation-hold"
     },
     {
       "articleKey": "6B",
@@ -194,6 +234,10 @@
       "orderedDocumentIds": [
         "GEN6-ENOCH-PROTOCOL-LVI",
         "GEN6-ENOCH-VERSION-MATRIX-LIV",
+        "GEN6-ENOCH-ASTRONOMICAL-PROTOCOL-LXIII",
+        "GEN6-ENOCH-ASTRONOMICAL-PUBLIC-GATE-LXIII-A",
+        "GEN6-ENOCH-ASTRONOMICAL-CHARLES-ADDENDUM-LXIII-B",
+        "GEN6-ENOCH-ASTRONOMICAL-DECISION-LXVI",
         "GEN6-ENOCH-70-71-PROTOCOL-LXII",
         "GEN6-ENOCH-70-71-PUBLIC-GATE-LXII-A",
         "GEN6-ENOCH-70-71-CHARLES-ADDENDUM-LXII-B",
@@ -211,7 +255,7 @@
         "noindex": true
       },
       "rightsMode": "no-manuscript-image-reproduction",
-      "publicationStatus": "source-audited-version-hold"
+      "publicationStatus": "research-ready-site-implementation-hold"
     }
   ],
   "siteAcceptance": {
@@ -232,13 +276,12 @@
     "publicationAuthorized": false
   },
   "holdRegistry": {
-    "blocking": [
-      "astronomical-book-version-plurality"
-    ],
+    "blocking": [],
     "preservedUncertainty": [
       "1-enoch-10-8-interpretive-scope",
       "1-enoch-15-8-12-version-details-and-demon-identity",
       "1-enoch-70-71-composition-and-figure-identity",
+      "astronomical-book-reconstruction-direction-and-joins",
       "parables-date-and-witness-form",
       "animal-apocalypse-decomposition",
       "chapter-108-relation-to-epistle",
@@ -262,6 +305,12 @@
         "resolution": "direct-address-established-composition-and-identity-qualified",
         "documentId": "GEN6-ENOCH-70-71-DECISION-LXV",
         "evidence": "LXII evidence chain plus modern critical translation support second-person 71:14; Charles third-person is an emendation; composition and total identity remain qualified"
+      },
+      {
+        "id": "astronomical-book-version-plurality",
+        "resolution": "textual-plurality-established-evolution-model-qualified",
+        "documentId": "GEN6-ENOCH-ASTRONOMICAL-DECISION-LXVI",
+        "evidence": "4Q208/4Q209 continuity and scheme-level plurality are established by Ratzon's full reconstruction; direction of adaptation and exact joins remain qualified"
       }
     ],
     "resolvedByPolicy": [
@@ -273,10 +322,10 @@
     ]
   },
   "namedHolds": [
-    "astronomical-book-version-plurality",
     "1-enoch-10-8-interpretive-scope",
     "1-enoch-15-8-12-version-details-and-demon-identity",
     "1-enoch-70-71-composition-and-figure-identity",
+    "astronomical-book-reconstruction-direction-and-joins",
     "parables-date-and-witness-form",
     "animal-apocalypse-decomposition",
     "chapter-108-relation-to-epistle",
@@ -284,6 +333,7 @@
     "1-enoch-10-8-version-control",
     "1-enoch-15-8-12-demon-origin",
     "1-enoch-70-71-son-of-man",
+    "astronomical-book-version-plurality",
     "manuscript-image-rights"
   ]
 }
