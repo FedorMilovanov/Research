@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "seriesId": "genesis-6",
   "extensionId": "genesis6-enoch-articles-6a-6b",
   "generatedAt": "2026-07-28",
@@ -34,6 +34,14 @@
     {
       "id": "GEN6-ENOCH-10-8-DECISION-LX",
       "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LX_10_8_VERSION_CONTROL_DECISION.md",
+      "role": "locus-version-control-decision",
+      "requiredFor": [
+        "6B"
+      ]
+    },
+    {
+      "id": "GEN6-ENOCH-15-8-12-DECISION-LXI",
+      "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXI_15_8_12_DEMON_ORIGIN_VERSION_CONTROL_DECISION.md",
       "role": "locus-version-control-decision",
       "requiredFor": [
         "6B"
@@ -155,6 +163,7 @@
         "GEN6-ENOCH-PROTOCOL-LVI",
         "GEN6-ENOCH-VERSION-MATRIX-LIV",
         "GEN6-ENOCH-10-8-DECISION-LX",
+        "GEN6-ENOCH-15-8-12-DECISION-LXI",
         "GEN6-ENOCH-CANON-MATRIX-LII",
         "GEN6-ENOCH-ARCHITECTURE-LIII",
         "GEN6-ENOCH-CLAIM-GATE-LIV",
@@ -188,12 +197,12 @@
   },
   "holdRegistry": {
     "blocking": [
-      "1-enoch-15-8-12-demon-origin",
       "1-enoch-70-71-son-of-man",
       "astronomical-book-version-plurality"
     ],
     "preservedUncertainty": [
       "1-enoch-10-8-interpretive-scope",
+      "1-enoch-15-8-12-version-details-and-demon-identity",
       "parables-date-and-witness-form",
       "animal-apocalypse-decomposition",
       "chapter-108-relation-to-epistle",
@@ -205,6 +214,12 @@
         "resolution": "text-established-interpretation-qualified",
         "documentId": "GEN6-ENOCH-10-8-DECISION-LX",
         "evidence": "Greek and Ge'ez full clause; Aramaic 4Q202 locus 10:8-12 partial/reconstructed"
+      },
+      {
+        "id": "1-enoch-15-8-12-demon-origin",
+        "resolution": "core-model-established-canonical-status-qualified",
+        "documentId": "GEN6-ENOCH-15-8-12-DECISION-LXI",
+        "evidence": "Greek Syncellus and Codex Panopolitanus plus full Ge'ez preserve the core model; Aramaic 4Q204 is contextual/partial"
       }
     ],
     "resolvedByPolicy": [
@@ -216,15 +231,16 @@
     ]
   },
   "namedHolds": [
-    "1-enoch-15-8-12-demon-origin",
     "1-enoch-70-71-son-of-man",
     "astronomical-book-version-plurality",
     "1-enoch-10-8-interpretive-scope",
+    "1-enoch-15-8-12-version-details-and-demon-identity",
     "parables-date-and-witness-form",
     "animal-apocalypse-decomposition",
     "chapter-108-relation-to-epistle",
     "codex-panopolitanus-editorial-intention",
     "1-enoch-10-8-version-control",
+    "1-enoch-15-8-12-demon-origin",
     "manuscript-image-rights"
   ]
 }
