@@ -17,12 +17,12 @@ EXPECTED_SLUGS = {
 }
 EXPECTED_GROUPS = {"6A": 27, "6B": 26}
 EXPECTED_BLOCKING_HOLDS = [
-    "1-enoch-70-71-son-of-man",
     "astronomical-book-version-plurality",
 ]
 EXPECTED_PRESERVED_HOLDS = [
     "1-enoch-10-8-interpretive-scope",
     "1-enoch-15-8-12-version-details-and-demon-identity",
+    "1-enoch-70-71-composition-and-figure-identity",
     "parables-date-and-witness-form",
     "animal-apocalypse-decomposition",
     "chapter-108-relation-to-epistle",
@@ -41,6 +41,12 @@ EXPECTED_RESOLVED_EVIDENCE = [
         "documentId": "GEN6-ENOCH-15-8-12-DECISION-LXI",
         "evidence": "Greek Syncellus and Codex Panopolitanus plus full Ge'ez preserve the core model; Aramaic 4Q204 is contextual/partial",
     },
+    {
+        "id": "1-enoch-70-71-son-of-man",
+        "resolution": "direct-address-established-composition-and-identity-qualified",
+        "documentId": "GEN6-ENOCH-70-71-DECISION-LXII",
+        "evidence": "Ge'ez 71:14 supports second-person direct address; Charles third-person rendering is an emendation; composition and identity remain qualified",
+    },
 ]
 EXPECTED_RESOLVED_POLICY = {
     "id": "manuscript-image-rights",
@@ -55,6 +61,7 @@ EXPECTED_CLOSED_GATES = [
     "manuscript-image-rights-by-no-reproduction",
     "1-enoch-10-8-version-control",
     "1-enoch-15-8-12-demon-origin",
+    "1-enoch-70-71-son-of-man",
 ]
 DECISIONS = {
     "GEN6-ENOCH-10-8-DECISION-LX": {
@@ -79,6 +86,19 @@ DECISIONS = {
             "Codex Panopolitanus",
             "George Syncellus",
             "формальным прямым противоречием не доказана",
+            "Публикационная блокировка серии **не снимается**",
+        ],
+    },
+    "GEN6-ENOCH-70-71-DECISION-LXII": {
+        "path": "ТРУДНЫЕ ТЕКСТЫ/1_ENOCH_LXII_70_71_SON_OF_MAN_VERSION_AND_COMPOSITION_DECISION.md",
+        "markers": [
+            "1-enoch-70-71-son-of-man",
+            "1-enoch-70-71-composition-and-figure-identity",
+            "DIRECT-ADDRESS-ESTABLISHED / COMPOSITION-AND-IDENTITY-QUALIFIED",
+            "Ты — тот сын человеческий",
+            "CHARLES-THIRD-PERSON-EMENDATION / NOT-MANUSCRIPT-DEFAULT",
+            "COMPOSITION-DISPUTED / NO-SINGLE-LAYER-CLAIM",
+            "POSSIBLE-DIRECT-CONFLICT-IF-MAXIMIZED",
             "Публикационная блокировка серии **не снимается**",
         ],
     },
@@ -119,8 +139,8 @@ def main() -> None:
     ledger = read_json(ledger_path)
 
     for name, document in (("manifest", manifest), ("ledger", ledger)):
-        if document.get("schemaVersion") != 4:
-            fail(f"{name} schemaVersion must be 4")
+        if document.get("schemaVersion") != 5:
+            fail(f"{name} schemaVersion must be 5")
         if document.get("seriesId") != "genesis-6":
             fail(f"{name} seriesId must be genesis-6")
         if document.get("extensionId") != "genesis6-enoch-articles-6a-6b":
@@ -282,7 +302,7 @@ def main() -> None:
     print(
         "Genesis 6 Enoch extension authority: PASS "
         f"({len(documents)} documents, {len(manifest_articles)} source-audited draft articles, "
-        f"{len(EXPECTED_BLOCKING_HOLDS)} blocking HOLDs, 10:8 and 15:8-12 text models established, "
+        f"{len(EXPECTED_BLOCKING_HOLDS)} blocking HOLD, 10:8, 15:8-12 and 70-71 controls established, "
         f"manifest {sha256(manifest_path)})"
     )
 
