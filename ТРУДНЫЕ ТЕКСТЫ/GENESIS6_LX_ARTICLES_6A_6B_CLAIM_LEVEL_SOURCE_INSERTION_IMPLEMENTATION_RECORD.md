@@ -1,242 +1,188 @@
-# LX: статьи 6A–6B — итоговая запись внедрения claim-level источников после решения 10:8
+# LX: статьи 6A–6B — итоговая запись внедрения, evidence и authority
 
 **Дата:** 28 июля 2026 года  
-**Статус:** `LX / SITE-IMPLEMENTATION-RECORD / MERGED-TO-MAIN / 53-GROUP-AUDIT-COMPLETE / AUTHORITY-ACCEPTED / 10-8-TEXT-RESOLVED / THREE-BLOCKERS-REMAIN / DRAFT-NOINDEX / NOT-PUBLICATION-AUTHORITY`  
+**Статус:** `LX / FINAL-CONSOLIDATION-RECORD / SITE-APPARATUS-MERGED / 53-GROUP-AUDIT-COMPLETE / TWO-BLOCKERS-REMAIN / DRAFT-NOINDEX / NOT-PUBLICATION-AUTHORITY`  
 **Site repository:** `FedorMilovanov/gb-is-my-strength`  
-**Merged site PR:** `#465`  
+**Accepted site PR:** `#465`  
 **Accepted site head:** `b315998937e4fdd68e204d01660adb65707cd0e6`  
 **Site merge commit:** `522f0e1cae4fb9ce5a4631cfe856421f1952f4bc`  
-**Research authority main:** `4881aca169e76e60fb76e5574a38d360835822f4`
+**Research consolidation main:** `d093348af343a5477e46c2e81359e7c037839055`
 
 ---
 
 ## 1. Назначение
 
-Этот документ фиксирует завершённое внедрение reader-facing source apparatus для статей 6A и 6B, его техническое принятие сайтом и последующее authority-решение по 1 Енох 10:8.
+Этот документ фиксирует окончательное состояние объединения работ по статьям 6A–6B и исследованиям 1 Еноха после слияния всех актуальных evidence-веток.
 
-Он является implementation record, а не самостоятельным исследовательским authority. Он не заменяет:
+Он является implementation and supersession record, а не самостоятельным исследовательским authority. Управляющими остаются:
 
-- extension authority manifest;
+- `data/genesis6-enoch-extension-authority-manifest.json`;
+- `data/genesis6-enoch-extension-publication-ledger.json`;
+- `scripts/validate_genesis6_enoch_extension.py`;
 - `GEN6-ENOCH-10-8-DECISION-LX`;
-- LII, LIV, LVI и LIX;
-- critical editions;
-- locus-level review оставшихся blockers;
-- отдельную publication transaction.
+- `GEN6-ENOCH-15-8-12-DECISION-LXI`;
+- LII, LIV, LVI и LIX.
 
-## 2. Итоговая site delivery
+## 2. Что сохранено в `main`
 
-Чистая поставка выполнена через site PR `#465`:
+Ни один уникальный исследовательский документ не отброшен.
 
-- accepted head: `b315998937e4fdd68e204d01660adb65707cd0e6`;
-- merge commit: `522f0e1cae4fb9ce5a4631cfe856421f1952f4bc`;
-- изменено ровно шесть файлов;
-- exact-head CI полностью зелёный;
-- статьи оставлены `draft/noindex`;
-- публикация не авторизована.
+### Site/source implementation
 
-Промежуточные PR `#457` и `#460` не являются текущей поставкой. `#460` закрыт без merge и сохранён как историческое audit evidence.
+- site PR `#465` merged;
+- 6A: 27 claim-level source groups;
+- 6B: 26 claim-level source groups;
+- суммарно: 53 reader-facing source groups;
+- все шесть статей остаются `draft: true`, `noindex: true`, `sourcesRequired: true`;
+- reader order остаётся `6 → 6A → 6B → 7 → 8 → 9`.
 
-## 3. Точные article blobs
+### Research evidence packages
 
-### 3.1. Статья 6A
+- PR `#31` merged как evidence package по 1 Енох 15:8–12;
+- PR `#29` merged как evidence package по 1 Енох 70–71;
+- PR `#30` merged как evidence package по Астрономической книге;
+- прежняя implementation record ветка PR `#32` merged и настоящим документом приведена к финальному состоянию;
+- PR `#33` merged как authority-решение по 1 Енох 15:8–12.
 
-- slug: `kniga-enoha-kotoroy-ne-bylo-kak-raznye-proizvedeniya-stali-korpusom`;
-- blob: `4896a78591538f56a1a5f1db35131d12677d7c70`;
-- Research map: `GEN6-ENOCH-6A-FOOTNOTE-MAP-LIX`;
-- source groups: 27.
+Протоколы `LXIV` и `LXIV-A` по 15:8–12 теперь имеют историческую функцию: они документируют путь получения и ограничения evidence. Их прежняя формула blocking HOLD superseded управляющим решением `GEN6-ENOCH-15-8-12-DECISION-LXI`. Сохранённые в них ограничения по точным вариантам, арамейскому locus и идентичности демонической категории не удаляются, а переходят в `preservedUncertainty`.
 
-### 3.2. Статья 6B
+## 3. Решение по 1 Енох 10:8
 
-- slug: `mozhno-li-doveryat-1-enohu-kanonicheskiy-audit`;
-- blob: `c57db2e7c8a5140fdf96869794d284128653630c`;
-- Research map: `GEN6-ENOCH-6B-SOURCE-PASS-LIX`;
-- source groups: 26.
+Authority установил:
 
-Итого проверено 53 reader-facing source groups.
+- `4Q202 / 4QEnᵇ` подтверждает locus частично и реконструированно;
+- греческая и геэз-передачи сохраняют полную формулу;
+- глаголы описывают запись или судебную регистрацию вины, а не создание сущности греха;
+- текст не утверждает прямо невиновность людей и не отменяет каноническое учение о человеческой ответственности.
 
-## 4. Библиографический микроаудит
+Закрыто по evidence:
 
-### 4.1. 6A
+`1-enoch-10-8-version-control`
 
-Исправлено:
+Итоговый статус:
 
-- внутренняя placeholder-формула `Research dossier` удалена;
-- неподтверждённая сильная формула об извлечении Астрономической книги в календарные сборники заменена документированной множественностью и развивающейся историей геэз-передачи;
-- расплывчатые «критические реестры» заменены публичной OCP-библиографией и source-role boundary;
-- version, dating и composition uncertainty сохранены.
+`TEXT-ESTABLISHED / INTERPRETATION-QUALIFIED`
 
-### 4.2. 6B
+Сохраняется:
 
-Исправлено:
+`1-enoch-10-8-interpretive-scope`
 
-- варианты чтения 10:8 обозначены как hypothesis map, а не consensus;
-- неопределённые «древние версии» удалены;
-- внутренние Research filenames удалены;
-- текстологическое установление отделено от конфессионального канонического verdict;
-- `DIRECT-CONFLICT` не присвоен до authority review.
+## 4. Решение по 1 Енох 15:8–12
 
-## 5. Six-article consistency
+Authority установил основную енохическую модель:
 
-Проверен reader order:
+- греческие свидетели `Codex Panopolitanus` и `George Syncellus` сохраняют основной сюжет;
+- полная геэз-передача сохраняет ту же модель;
+- `4Q204 / 4QEnᶜ` является древним арамейским контекстным и частичным свидетелем, но не объявляется полной непрерывной строкой 15:8–12;
+- варианты влияют на wording, порядок стихов и глаголы действия, но не устраняют связь злых духов с погибшими исполинами.
 
-```text
-6 → 6A → 6B → 7 → 8 → 9
-```
+Закрыто по evidence:
 
-Проверено:
+`1-enoch-15-8-12-demon-origin`
 
-- статья 6 не канонизирует весь 1 Енох из-за Иуд. 14–15;
-- 6A остаётся corpus/manuscript/version history;
-- 6B сохраняет qualified canonical audit;
-- статья 7 не переносит Еноховы имена, число Стражей, Ермон, запрещённые искусства или происхождение бесов в Иуду и 2 Петра;
-- статья 8 не утверждает доказанную зависимость 1 Пет. 3:19 от конкретной редакции 1 Еноха;
-- статья 9 не объединяет 1 Пет. 3:19 и 4:6 через 1 Енох 22.
+Итоговый статус:
 
-Статьи 7–9 прошли отдельный экзегетический аудит без необходимости изменения текста.
+`CORE-MODEL-ESTABLISHED / CANONICAL-STATUS-QUALIFIED`
+
+Допустимая классификация:
+
+`TEXT-DIRECT / HISTORICAL-BACKGROUND / UNSUPPORTED-ELABORATION`
+
+Сохраняется:
+
+`1-enoch-15-8-12-version-details-and-demon-identity`
+
+Эта модель не становится библейской демонологией. `DIRECT-CONFLICT` не устанавливается только из молчания канона.
+
+## 5. Два оставшихся publication blocker
+
+После решений 10:8 и 15:8–12 выпуск остаётся заблокирован ровно двумя authority HOLD:
+
+1. `1-enoch-70-71-son-of-man`;
+2. `astronomical-book-version-plurality`.
+
+### 70–71
+
+В `main` сохранены:
+
+- locus-level closure protocol;
+- public text / translation / access inventory;
+- Charles 1906 historical apparatus addendum;
+- исправление ложной точности OCR-пагинации.
+
+Не закрыты:
+
+- exact multi-manuscript Geʽez syntax;
+- дейксис и субъект 71:14–17;
+- композиционная связь 70–71;
+- идентичность небесной фигуры;
+- отдельный confessional verdict после установления текста.
+
+### Астрономическая книга
+
+В `main` сохранены:
+
+- protocol по `4Q208–4Q211` и геэз 72–82;
+- public evidence and lawful-access gate;
+- Charles 1906 historical Geʽez apparatus addendum;
+- устранение непроверенной OCR-пагинации.
+
+Не закрыты:
+
+- полный fragment/apparatus matrix;
+- exact relation между `4Q208`, `4Q209`, `4Q210`, `4Q211`;
+- direction of development;
+- relation арамейских схем к различным геэз-рецензиям;
+- граница календарной нормы, литературной модели и физического утверждения.
 
 ## 6. Machine contracts
 
-Site provenance contract защищает:
+Research authority fail-closed проверяет:
 
-- reader order;
-- slug, section, author, series;
-- canonical override;
-- related-link graph;
-- forward link между соседними статьями;
-- `draft: true`;
-- `noindex: true`;
-- `sourcesRequired: true`;
-- pinned Research commit и manifest digests;
-- `releaseState: blocked`.
+- schema 4 extension manifest and ledger;
+- exact 27/26 source groups;
+- два unresolved blockers;
+- две evidence resolutions;
+- preserved uncertainty;
+- no-manuscript-image-reproduction policy;
+- `publicationAuthorized: false`;
+- `mayPublish: false`;
+- `mayRemoveNoindex: false`.
 
-Draft site PR `#466` отдельно усиливает exact footnote identity:
+Site exact-footnote gate отдельно закрепляет:
 
 - IDs `1–27` для 6A;
 - IDs `1–26` для 6B;
 - отсутствие неожиданных definitions;
 - использование каждого definition;
 - claim reference для каждого required ID;
-- release state меняется только отдельной publication transaction.
+- изменение release state только отдельной publication transaction.
 
-`#466` не меняет article blobs и не является публикационной операцией.
+## 7. Rights boundary
 
-## 7. Exact-head CI
-
-На accepted site head успешно завершены:
-
-- Genesis 6 Research provenance;
-- Glossary Contract;
-- Native Source Contract;
-- Shared Files Guard;
-- Route Registry Validators;
-- Visual Parity Guard — pixel-diff.
-
-Зелёный CI подтверждает технический контракт, но не богословскую истинность.
-
-## 8. Authority-решение по 1 Енох 10:8
-
-Research authority document `GEN6-ENOCH-10-8-DECISION-LX` установил:
-
-- `4Q202 / 4QEnᵇ`, frg. 1 iv является физическим частичным и реконструируемым арамейским свидетелем locus;
-- греческая версия сохраняет полную формулу о развращении земли через учение Асаэла и записи на нём всех грехов;
-- геэз сохраняет согласующуюся двухчастную конструкцию;
-- глаголы означают запись/судебную регистрацию, а не сотворение сущности греха;
-- формула не утверждает прямо невиновность людей или отмену Адамова падения;
-- 98:4 сохраняет внутренний акцент человеческой ответственности.
-
-Authority status:
-
-`TEXT-ESTABLISHED / INTERPRETATION-QUALIFIED`
-
-### 8.1. Resolved by evidence
-
-Закрыто:
-
-`1-enoch-10-8-version-control`
-
-### 8.2. Preserved uncertainty
-
-Сохраняется:
-
-`1-enoch-10-8-interpretive-scope`
-
-Допустимый итоговый verdict:
-
-`DIFFICULT-TO-HARMONIZE / INTERNAL-TENSION / TEXT-ESTABLISHED / INTERPRETATION-QUALIFIED`
-
-`DIRECT-CONFLICT` не требуется, если locus не превращается в отрицание человеческой ответственности.
-
-## 9. Три оставшихся blocking HOLD
-
-После решения 10:8 publication remains blocked тремя authority blockers:
-
-1. `1-enoch-15-8-12-demon-origin`;
-2. `1-enoch-70-71-son-of-man`;
-3. `astronomical-book-version-plurality`.
-
-## 10. Текущие чистые evidence paths
-
-### 10.1. 15:8–12
-
-Draft Research PR `#31`:
-
-- exact branch based on current authority main;
-- Greek model presence established;
-- Aramaic exact locus, multi-MS Geʽez and category scale remain open;
-- `DIRECT-CONFLICT` not established;
-- no site impact.
-
-### 10.2. 70–71
-
-Draft Research PR `#29`:
-
-- public translation divergence documented;
-- Charles 1912 emendation separated from manuscript fact;
-- Charles 1906 historical variation located in OCR sequence;
-- false printed-page precision removed;
-- multi-MS syntax/composition control remains open;
-- no site impact.
-
-### 10.3. Astronomical Book
-
-Draft Research PR `#30`:
-
-- physical plurality 4Q208–211 registered;
-- continuity plus textual plurality strongly supported;
-- Geʽez diversity established;
-- false OCR page precision removed;
-- direction of development and full apparatus remain open;
-- no site impact.
-
-## 11. Rights status
-
-`manuscript-image-rights` resolved by policy means only:
+`manuscript-image-rights` закрыт только политикой:
 
 ```text
 NO MANUSCRIPT IMAGE REPRODUCTION
 → TEXT-ONLY DELIVERY IS NOT BLOCKED BY IMAGE RIGHTS
 ```
 
-Это не разрешает:
+Это не разрешает рукописные изображения, protected plates, длинное воспроизведение аппарата, cropping или recoloring как обход прав.
 
-- manuscript images;
-- protected plates;
-- long apparatus reproduction;
-- cropping or recoloring as a rights workaround.
+## 8. Preserved uncertainty
 
-## 12. Preserved uncertainty outside blockers
+Помимо двух blockers, authority сохраняет:
 
-Authority separately preserves:
+- `1-enoch-10-8-interpretive-scope`;
+- `1-enoch-15-8-12-version-details-and-demon-identity`;
+- `parables-date-and-witness-form`;
+- `animal-apocalypse-decomposition`;
+- `chapter-108-relation-to-epistle`;
+- `codex-panopolitanus-editorial-intention`.
 
-- Parables date and witness form;
-- Animal Apocalypse decomposition;
-- chapter 108 relation to the Epistle;
-- Codex Panopolitanus editorial intention;
-- interpretive scope of 10:8.
+Эти вопросы не разрешают возвращать закрытые textual blockers, но обязаны оставаться видимыми в формулировках.
 
-Эти вопросы не должны исчезать из wording, даже когда они не являются текущими publication blockers.
-
-## 13. Publication state
+## 9. Publication state
 
 Сохраняются:
 
@@ -246,21 +192,8 @@ Authority separately preserves:
 - `publicationAuthorized: false`;
 - `releaseState: blocked`.
 
-Никакой merge evidence PR не является автоматической командой на публикацию.
+Ни merge evidence package, ни закрытие отдельного version-control вопроса не являются автоматической командой на публикацию.
 
-## 14. Запрещённое толкование
+## 10. Итог
 
-Нельзя писать:
-
-- «10:8 больше не содержит богословского напряжения»;
-- «закрытие version control доказало максимальное толкование»;
-- «три оставшихся PR автоматически разрешат выпуск»;
-- «Greek model 15:8–12 является апостольской демонологией»;
-- «71:14 точно отождествляет или точно не отождествляет Еноха»;
-- «Астрономическая книга имеет один простой арамейский original»;
-- «no-image policy разрешает брать изображения»;
-- «зелёный CI является богословским доказательством».
-
-Корректно:
-
-> Claim-level apparatus 6A–6B внедрён и принят authority. Текст 10:8 установлен при сохранении interpretive qualification. Publication остаётся заблокирован тремя locus/version blockers; каждый имеет отдельный чистый evidence path, а сайт сохраняет draft/noindex.
+> Все уникальные source, protocol, access-gate и authority документы по текущему марафону сохранены в Research `main`. Текстологические вопросы 10:8 и основная модель 15:8–12 закрыты по evidence с явными квалификаторами. Publication остаётся заблокирован двумя locus-level вопросами: 70–71 и textual plurality Астрономической книги. Параллельные PR больше не являются competing authority.
