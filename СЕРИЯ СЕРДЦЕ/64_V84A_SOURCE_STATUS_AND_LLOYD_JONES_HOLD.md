@@ -1,8 +1,11 @@
 # V84A — SOURCE STATUS / LIVE-URL VERIFICATION / LLOYD-JONES HOLD
 
 **Дата:** 2026-07-29  
+**Статус:** `HISTORICAL SNAPSHOT / SUPERSEDED FOR CURRENT AUTHORITY BY V84B–V84G`  
 **Связь:** corrective addendum к `63_V84_DEPRESSION_SIN_SUFFERING_GUILT_BURNOUT_DESPAIR.md`  
-**Причина:** сохранить абсолютную честность evidence-status после отказа live web-search/readback инструмента в текущем проходе.
+**Причина:** сохранить абсолютную честность evidence-status после отказа live web-search/readback инструмента в исходном проходе.
+
+Этот файл сохраняет историческое состояние HOLD на момент создания. Для текущих URL-status, source classes, Site SHA, редакционных выводов и Trinitarian-cross boundary использовать V84B–V84G, а не этот snapshot.
 
 ---
 
@@ -18,9 +21,9 @@
 
 ---
 
-## 2. Newly introduced official URLs: current status
+## 2. Newly introduced official URLs: historical status at this snapshot
 
-Эти URL указывают на широко известные официальные институциональные ресурсы, но в данном техническом сеансе live web tool не выполнил readback. До следующего успешного live-прохода их статус:
+Эти URL указывали на широко известные официальные институциональные ресурсы, но в исходном техническом сеансе live web tool не выполнил readback. Их исторический статус в V84A был:
 
 `OFFICIAL-URL / LIVE-READBACK-HOLD`
 
@@ -36,12 +39,16 @@
 10. APA depression guideline — `https://www.apa.org/depression-guideline`
 11. VA/DoD MDD guideline — `https://www.healthquality.va.gov/guidelines/MH/mdd/`
 
-### Rule
+### Historical rule
 
-- Они могут оставаться в research ledger как `next verification queue`.
-- Они не получают статус `M1 READ` до live readback.
-- Ни одна точная цитата, дата обновления, диагностический критерий или процент не публикуется по ним до readback.
-- Общая богословская позиция V84 не строится на них.
+- Они могли оставаться в research ledger как `next verification queue`.
+- Они не получали статус `M1 READ` до live readback.
+- Ни одна точная цитата, дата обновления, диагностический критерий или процент не публиковались по ним до readback.
+- Общая богословская позиция V84 на них не строилась.
+
+### Current rule
+
+Более поздние V84C–V84F фиксируют повторные official source checks и точные evidence classes. Статус из этого snapshot не понижает источник, который позднее был успешно прочитан, но и не заменяет более поздний locator/readback record.
 
 ---
 
@@ -55,7 +62,7 @@
 - новые official URL-HOLD;
 - один отдельный book fulltext HOLD по Lloyd-Jones.
 
-Количество ссылок никогда не заменяет evidence quality.
+Количество ссылок никогда не заменяет evidence quality. В самом V84 ledger теперь прямо назван смешанным набором status-classified resource checks.
 
 ---
 
@@ -74,6 +81,7 @@
 - указывать книгу как обязательный будущий primary source;
 - объяснять, почему её дифференциальный подход важен;
 - сохранять chapter questions;
+- использовать отдельно проверенные official MLJ Trust sermon pages строго в пределах их собственного evidence-status;
 - сопоставлять будущие находки с V71/V84 grids.
 
 ### What is forbidden now
@@ -86,24 +94,28 @@
 
 ---
 
-## 5. Minor textual correction
+## 5. Minor textual correction — RESOLVED
 
-В заголовке V84 `ПУРИ ТАНСКАЯ` следует читать как `ПУРИТАНСКАЯ`.
+Опечатка `ПУРИ ТАНСКАЯ` исправлена непосредственно в V84 на `ПУРИТАНСКАЯ`.
 
-Исправление орфографическое и не меняет содержание.
+Correction commit:
+
+`7b53be992fc9e30d6426f8427948f17aa2c9c21f`
+
+Исправление орфографическое и не меняет содержание. Эта секция больше не является обходным примечанием вместо правки исходника.
 
 ---
 
-## 6. Required next pass
+## 6. Remaining long-form research queue
 
-1. Live readback 11 URL-HOLD.
-2. Найти легальный full-text/экземпляр Lloyd-Jones.
-3. Chapter-by-chapter ledger с page locators.
-4. Отдельно проверить scientific literature по:
+1. Найти легальный full-text/экземпляр Lloyd-Jones.
+2. Chapter-by-chapter ledger с page locators.
+3. Отдельно проверить scientific literature по:
    - excessive/inappropriate guilt;
    - rumination and depression;
    - shame versus guilt;
    - depression following moral injury;
    - burnout versus depressive disorder;
    - grief, adjustment disorder and MDD differential.
-5. Только после этого повышать V84 из `RESEARCH READY` в `ARTICLE READY`.
+4. Сохранять различие между official sermon pages и отсутствующим полным текстом книги.
+5. Не повышать книжные claims до `ARTICLE READY` без full-text/page-level evidence.
