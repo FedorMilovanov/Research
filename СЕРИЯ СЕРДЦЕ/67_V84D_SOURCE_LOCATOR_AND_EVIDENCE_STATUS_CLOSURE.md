@@ -2,21 +2,22 @@
 
 **Дата:** 2026-07-29  
 **Статус:** source-integrity authority / точечная коррекция V84C  
-**Область:** Thomas Goodwin; Timothy Rogers; WHO burn-out wording; site source ledger  
+**Область:** Thomas Goodwin; Timothy Rogers; William Gurnall; WHO burn-out wording; site source ledger  
 **Production:** этот файл не публикует сайт и не заменяет богословскую архитектуру V84B–V84C
 
 ---
 
 ## 0. Причина коррекции
 
-Финальный ручной readback V84C и связанной статьи обнаружил две реальные неточности evidence-status:
+Финальный ручной readback V84C и связанной статьи обнаружил три реальные неточности evidence-status или формулировки:
 
 1. Wesley Center был назван «первичным полным HTML-текстом» Гудвина, хотя сама страница озаглавлена как **Extracts from the Works** и является историческим извлечением;
-2. две русские цитаты Тимоти Роджерса были обозначены как верифицированные «по первоисточнику» без опубликованного локатора внутри трактата.
+2. две русские цитаты Тимоти Роджерса были обозначены как верифицированные «по первоисточнику» без опубликованного локатора внутри трактата;
+3. пересказ Гарнэлла делал эмоциональный ужас безошибочным доказательством отсутствия согласия, тогда как первичный текст осторожнее различает внушённое движение, его пугающее действие и ложный вывод, который человек из него делает.
 
-Эти неточности не меняют богословские выводы, но должны быть исправлены, потому что корпус запрещает повышать evidence-status красивой формулировкой.
+Эти неточности не меняют богословские выводы, но должны быть исправлены, потому что корпус запрещает повышать evidence-status или силу вывода красивой формулировкой.
 
-V84D **supersedes только соответствующие source-status и locator claims V84C**. Все остальные выводы, editorial gates и 38-pass ledger V84C сохраняются.
+V84D **supersedes только соответствующие source-status, locator и paraphrase claims V84C**. Все остальные выводы, editorial gates и 38-pass ledger V84C сохраняются.
 
 ---
 
@@ -163,7 +164,52 @@ https://quod.lib.umich.edu/e/eebo2/A57573.0001.001?view=toc
 
 ---
 
-# 3. WHO BURN-OUT — СТРОГАЯ ФОРМУЛИРОВКА
+# 3. WILLIAM GURNALL — PARAPHRASE BOUNDARY
+
+Primary open text:
+
+https://ccel.org/ccel/gurnall/armour/files/gurnal02b.htm
+
+Дополнительный full-text locator:
+
+https://www.digitalpuritan.net/Digital%20Puritan%20Resources/Gurnall%2C%20William/The%20Christian%20in%20Complete%20Armour.txt.html
+
+Статус:
+
+`P1-PRIMARY-OPEN-TEXT`
+
+Локатор:
+
+- `Direction VIII`;
+- `Faith's Second Quenching Power`;
+- раздел об `affrighting temptations`;
+- глава о temptation to blasphemy.
+
+Подтверждено:
+
+- Гарнэлл различает enticing/alluring и affrighting temptations;
+- богохульные motions могут быть вброшены, чтобы не столько склонить, сколько тревожить и пугать христианина;
+- он прямо замечает, что грех христианина нередко лежит больше в печальном выводе из этих motions — например, `I am not a child of God` — чем в самих motions;
+- при атеистических внушениях он также различает то, что больше `offend and affright`, от того, что действительно `persuade` сердце.
+
+Не подтверждено как безошибочное правило:
+
+> Если мысль вызывает ужас, сам ужас уже доказывает ненависть к ней и отсутствие согласия.
+
+Правильная пастырская формула:
+
+> Появление внушённой мысли ещё не равно согласию воли. Но одна сила страха также не является безошибочным тестом; нужно различать, принимает и питает ли воля мысль или отвергает её, скорбит о ней и несёт ко Христу.
+
+Следствие для практического вопроса:
+
+- спрашивать не только `что я почувствовал при появлении мысли?`;
+- спрашивать `что воля делает с мыслью?`;
+- не объявлять непрошеную и отвергаемую мысль тайным идолом автоматически;
+- не выдавать эмоциональную реакцию за самостоятельный окончательный духовный вердикт.
+
+---
+
+# 4. WHO BURN-OUT — СТРОГАЯ ФОРМУЛИРОВКА
 
 Official WHO URL:
 
@@ -182,7 +228,7 @@ https://www.who.int/standards/classifications/frequently-asked-questions/burn-ou
 
 ---
 
-# 4. SITE CORRECTION
+# 5. SITE CORRECTION
 
 Связанный site PR:
 
@@ -192,13 +238,15 @@ https://www.who.int/standards/classifications/frequently-asked-questions/burn-ou
 
 `8202c7d8cef261ccf1d72b10a57d669a624c53b4`
 
-Промежуточный source-locator head:
+Промежуточные source-integrity heads:
 
-`c9554c86edddaa21c6dd3c9b293b486abeecd881`
+- `c9554c86edddaa21c6dd3c9b293b486abeecd881` — source locators;
+- `f1698f626e5ed6be2fcdadaf46045733b3ca8f51` — Rogers translation;
+- `1cee7f222a0c0f8829c18f23f83e06c3a8de1eaf` — Gurnall primary-text paraphrase.
 
-Финальный content head после переводческой коррекции:
+Финальный content head после синхронизации практического вопроса:
 
-`f1698f626e5ed6be2fcdadaf46045733b3ca8f51`
+`f3faa07cf473e581fa75db74ab4218a34a96fc89`
 
 Изменено только в `TmaNaSerdceBody.astro`:
 
@@ -208,7 +256,9 @@ https://www.who.int/standards/classifications/frequently-asked-questions/burn-ou
 - `Spirits` уточнено как исторические «жизненные духи»;
 - `phthisis` исправлено с ошибочного «плеврита» на «чахотку»;
 - Goodwin разделён на полный трактат в Works vol. 3 и Wesley historical extract;
-- прежняя формула `верифицирована по первоисточнику` заменена на проверяемое описание локаторов.
+- прежняя формула `верифицирована по первоисточнику` заменена на проверяемое описание локаторов;
+- Gurnall paraphrase ограничен тем, что действительно подтверждает первичный текст;
+- практический вопрос больше не делает один эмоциональный ужас доказательством отсутствия согласия.
 
 PageHead, reading time, TOC, CSS, JS, routes и соседние статьи не менялись.
 
@@ -216,16 +266,16 @@ PageHead, reading time, TOC, CSS, JS, routes и соседние статьи н
 
 ---
 
-# 5. FINAL SOURCE-INTEGRITY RULE
+# 6. FINAL SOURCE-INTEGRITY RULE
 
-> Full text, historical extract, original-edition metadata, encoded TOC, PDF link and page-image verification — разные виды свидетельства. Тезис может быть богословски верным и всё же требовать понижения evidence-status. Исправление статуса не ослабляет аргумент; оно делает его честным и воспроизводимым.
+> Full text, historical extract, original-edition metadata, encoded TOC, PDF link and page-image verification — разные виды свидетельства. Тезис может быть богословски верным и всё же требовать понижения evidence-status или ослабления вывода. Исправление статуса и формулировки не ослабляет аргумент; оно делает его честным и воспроизводимым.
 
 ---
 
-# 6. DISPOSITION
+# 7. DISPOSITION
 
 - V84B сохраняет theological-order authority.
 - V84C сохраняет editorial-completeness authority.
-- V84D становится authority для Goodwin/Rogers source status, цитатных локаторов, переводческих решений и WHO burn-out wording.
+- V84D становится authority для Goodwin/Rogers/Gurnall source status, цитатных локаторов, переводческих решений, paraphrase boundaries и WHO burn-out wording.
 - Новые прямые исторические цитаты по-прежнему требуют локатора; для PDF — page-image verification.
-- Production не заявляется до exact-head CI на `f1698f626e5ed6be2fcdadaf46045733b3ca8f51` или более новом фактическом head.
+- Production не заявляется до exact-head CI на `f3faa07cf473e581fa75db74ab4218a34a96fc89` или более новом фактическом head.
