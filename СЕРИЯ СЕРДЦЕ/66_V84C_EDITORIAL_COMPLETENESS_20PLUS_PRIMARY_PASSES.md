@@ -388,8 +388,8 @@ NICE специально запрещает полагаться на один 
 # 7. DISPOSITION
 
 - **Research:** V84C становится текущей editorial-completeness authority поверх V84B.
-- **AuditRepo:** внести findings и site gates отдельным intake.
-- **Site:** точечно углубить только статью `tma-na-serdce` в существующем PR; соседние главы не переписывать.
+- **AuditRepo:** findings и site gates внесены отдельным intake.
+- **Site:** точечное углубление реализовано в существующем PR только в двух canonical Astro files; финальная формулировка crisis-boundary синхронизирована с V84C.
 - **Production:** не заявлять до нового exact-head CI после последней редакционной правки.
 - **Lloyd-Jones book:** `BOOK-FULLTEXT-HOLD` сохраняется.
 - **Новые прямые цитаты:** не публиковать без текстового локатора и, для PDF, page-image verification.
