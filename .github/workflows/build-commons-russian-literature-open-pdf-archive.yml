@@ -8,6 +8,7 @@ on:
       - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs.py'
       - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs_search_api.py'
       - 'SOURCE_LIBRARY/tools/crawl_commons_strict_literary_pdfs.py'
+      - 'SOURCE_LIBRARY/tools/crawl_commons_strict_literary_pdfs_v2.py'
       - 'SOURCE_LIBRARY/COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md'
 
 permissions:
@@ -36,7 +37,7 @@ jobs:
 
       - name: Discover and download strict literary PDFs
         run: >-
-          python SOURCE_LIBRARY/tools/crawl_commons_strict_literary_pdfs.py
+          python SOURCE_LIBRARY/tools/crawl_commons_strict_literary_pdfs_v2.py
           --target 40
           --per-query 30
           --max-candidates 300
