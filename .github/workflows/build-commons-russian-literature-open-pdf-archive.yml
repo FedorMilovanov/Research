@@ -6,7 +6,7 @@ on:
     paths:
       - '.github/workflows/build-commons-russian-literature-open-pdf-archive.yml'
       - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs.py'
-      - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs_filemime.py'
+      - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs_search_api.py'
       - 'SOURCE_LIBRARY/COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md'
 
 permissions:
@@ -35,7 +35,7 @@ jobs:
 
       - name: Discover and download open PDFs
         run: >-
-          python SOURCE_LIBRARY/tools/crawl_commons_open_pdfs_filemime.py
+          python SOURCE_LIBRARY/tools/crawl_commons_open_pdfs_search_api.py
           --target 40
           --per-query 20
           --max-candidates 300
