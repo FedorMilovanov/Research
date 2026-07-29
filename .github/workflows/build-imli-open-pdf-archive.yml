@@ -1,0 +1,154 @@
+name: Build IMLI open-access PDF archive
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/build-imli-open-pdf-archive.yml'
+      - 'SOURCE_LIBRARY/tools/crawl_imli_open_pdfs.py'
+      - 'SOURCE_LIBRARY/IMLI_40PLUS_PDF_PASS_2026-07-30.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: imli-open-pdf-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  collect:
+    name: Collect ${{ matrix.collection }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        collection:
+          - esenin
+          - blok
+          - khlebnikov
+          - silver-age-general
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install crawler dependencies
+        run: python -m pip install --disable-pip-version-check requests beautifulsoup4 pypdf
+
+      - name: Crawl official IMLI item pages and download PDFs
+        run: >-
+          python SOURCE_LIBRARY/tools/crawl_imli_open_pdfs.py
+          --collection "${{ matrix.collection }}"
+          --output-root open-access-pdf-archive
+          --pause 1.2
+
+      - name: Write collection summary
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          collection = "${{ matrix.collection }}"
+          data = json.loads((Path('open-access-pdf-archive') / collection / 'manifest.json').read_text(encoding='utf-8'))
+          print(f"## {collection}")
+          print(f"- discovered/processed: **{data['discovered_item_pages']}**")
+          print(f"- downloaded PDFs: **{data['downloaded']}**")
+          print(f"- failures/HOLD: **{data['failed']}**")
+          print(f"- bytes: **{data['total_bytes']}**")
+          PY
+
+      - name: Upload PDFs with provenance and checksums
+        uses: actions/upload-artifact@v4
+        with:
+          name: imli-open-pdf-${{ matrix.collection }}
+          path: open-access-pdf-archive/${{ matrix.collection }}/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload lightweight manifest for aggregation
+        uses: actions/upload-artifact@v4
+        with:
+          name: imli-manifest-${{ matrix.collection }}
+          path: |
+            open-access-pdf-archive/${{ matrix.collection }}/manifest.json
+            open-access-pdf-archive/${{ matrix.collection }}/manifest.csv
+            open-access-pdf-archive/${{ matrix.collection }}/README.md
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 30
+
+  verify-40-plus:
+    name: Verify 40+ PDF pass
+    needs: collect
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Download collection manifests only
+        uses: actions/download-artifact@v4
+        with:
+          pattern: imli-manifest-*
+          path: manifests
+          merge-multiple: false
+
+      - name: Aggregate and enforce threshold
+        shell: bash
+        run: |
+          python - <<'PY' | tee aggregate-report.json
+          import json
+          from pathlib import Path
+
+          manifests = sorted(Path('manifests').rglob('manifest.json'))
+          rows = [json.loads(path.read_text(encoding='utf-8')) for path in manifests]
+          report = {
+              'collections': len(rows),
+              'processed_item_pages': sum(row['discovered_item_pages'] for row in rows),
+              'downloaded_pdfs': sum(row['downloaded'] for row in rows),
+              'failed_or_hold': sum(row['failed'] for row in rows),
+              'total_bytes': sum(row['total_bytes'] for row in rows),
+              'details': [
+                  {
+                      'collection': row['collection'],
+                      'processed': row['discovered_item_pages'],
+                      'downloaded': row['downloaded'],
+                      'failed': row['failed'],
+                  }
+                  for row in rows
+              ],
+          }
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          if report['processed_item_pages'] < 40:
+              raise SystemExit('40+ review gate failed: fewer than 40 official item pages were processed')
+          if report['downloaded_pdfs'] < 40:
+              raise SystemExit('40+ archive gate failed: fewer than 40 valid PDFs were downloaded')
+          PY
+
+      - name: Publish global summary
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          report = json.load(open('aggregate-report.json', encoding='utf-8'))
+          print('# IMLI 40+ open-PDF pass')
+          print(f"- collections: **{report['collections']}**")
+          print(f"- official item pages processed: **{report['processed_item_pages']}**")
+          print(f"- valid PDFs downloaded: **{report['downloaded_pdfs']}**")
+          print(f"- failures/HOLD: **{report['failed_or_hold']}**")
+          print(f"- total bytes: **{report['total_bytes']}**")
+          for item in report['details']:
+              print(f"- {item['collection']}: {item['downloaded']}/{item['processed']} downloaded, {item['failed']} HOLD")
+          PY
+
+      - name: Upload aggregate audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: imli-40plus-aggregate-report
+          path: aggregate-report.json
+          retention-days: 30
