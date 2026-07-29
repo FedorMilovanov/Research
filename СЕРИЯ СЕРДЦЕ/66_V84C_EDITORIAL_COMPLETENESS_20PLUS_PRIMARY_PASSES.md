@@ -1,4 +1,4 @@
-# V84C — ДЕПРЕССИЯ: РЕДАКТОРСКАЯ ПОЛНОТА, 20+ НОВЫХ ПРОХОДОВ И ТОЧЕЧНОЕ УГЛУБЛЕНИЕ
+# V84C — ДЕПРЕССИЯ: РЕДАКТОРСКАЯ ПОЛНОТА, 38 СМЕШАННЫХ SOURCE CHECKS И ТОЧЕЧНОЕ УГЛУБЛЕНИЕ
 
 **Дата:** 2026-07-29  
 **Статус:** editorial completeness authority / supplement к V84B  
@@ -17,9 +17,9 @@
 - не перепутаны ли диагноз, классификация и комплексная оценка;
 - не стали ли соседние статьи дублировать друг друга;
 - соответствует ли слог серии: твёрдый, богословский, пастырский, без терапевтического тумана и без обвинительной дубинки;
-- какие новые первичные источники дают материал, достойный внедрения, а какие должны остаться исследовательским фоном.
+- какие новые источниковые единицы дают материал, достойный внедрения, а какие должны остаться исследовательским фоном.
 
-Проведено более 20 новых источниковых проходов. В ledger ниже зафиксировано **38 отдельных проходов**: 13 исторических/классических, 12 официальных Martyn Lloyd-Jones Trust, 7 современных консервативных христианских и 6 официальных классификационных/safety. Они не считаются 38 одинаково сильными доказательствами: HTML full text, official sermon page, metadata, guideline и тематическая страница имеют разные evidence-status.
+В ledger ниже зафиксировано **38 status-classified source checks**: 13 исторических/классических, 12 официальных Martyn Lloyd-Jones Trust, 7 современных консервативных христианских и 6 официальных классификационных/safety. Это не 38 первичных полнотекстовых чтений и не 38 одинаково сильных доказательств: full text, historical extract, official sermon page, metadata, guideline и тематическая страница имеют разные evidence-status.
 
 ---
 
@@ -243,22 +243,26 @@ NICE специально запрещает полагаться на один 
 
 ---
 
-# 4. 38-ПРОХОДНЫЙ SOURCE LEDGER
+# 4. MIXED SOURCE LEDGER: 38 STATUS-CLASSIFIED CHECKS
 
 Статусы:
 
 - `P1-PRIMARY-FULL` — доступен первичный полный текст;
+- `P1-HISTORICAL-EXTRACT` — доступно историческое извлечение; оно доказывает только присутствующие в нём фрагменты;
+- `P1-FULL-TREATISE-LINK / PDF-PAGE-IMAGE-HOLD` — полный трактат найден, но новая цитата требует page-image verification;
 - `P1-OFFICIAL-SERMON` — официальная страница проповеди с description/breakdown и audio access;
 - `P2-OFFICIAL-METADATA` — официальный каталог/metadata, не полный текст;
 - `C1-OFFICIAL-CHRISTIAN` — официальный консервативный христианский материал;
 - `M1-OFFICIAL-GUIDELINE` — официальный medical/classification источник;
 - `HOLD-QUOTE` — тезис/локатор разрешён, новая дословная цитата без дополнительной сверки запрещена.
 
-## A. Исторические и классические первоисточники — 13
+**Supersession:** V84D является текущей authority для Goodwin/Rogers/Gurnall evidence status, точных локаторов, переводов и attribution boundaries. Этот ledger сохраняет editorial source map, но не отменяет более поздние понижения статуса.
 
-1. **Thomas Goodwin — A Child of Light Walking in Darkness**, первичный HTML-текст. `P1-PRIMARY-FULL`  
+## A. Исторические и классические source checks — 13
+
+1. **Thomas Goodwin — Wesley Center, Extracts from the Works.** `P1-HISTORICAL-EXTRACT`  
    https://wesley.nnu.edu/john-wesley/a-christian-library/a-christian-library-volume-6/extracts-from-the-works-of-the-rev-thomas-goodwin-dd-part-i/
-2. **Thomas Goodwin — Works, vol. 3 / treatise locator.** `P2-OFFICIAL-METADATA`  
+2. **Thomas Goodwin — Works, vol. 3 / full-treatise locator.** `P1-FULL-TREATISE-LINK / PDF-PAGE-IMAGE-HOLD`  
    https://digitalpuritan.net/thomas-goodwin/
 3. **Thomas Goodwin — treatise structure/index.** `P2-METADATA`  
    https://www.monergism.com/child-light-walking-darkness-ebook
@@ -387,9 +391,9 @@ NICE специально запрещает полагаться на один 
 
 # 7. DISPOSITION
 
-- **Research:** V84C становится текущей editorial-completeness authority поверх V84B.
-- **AuditRepo:** findings и site gates внесены отдельным intake.
-- **Site:** точечное углубление реализовано в существующем PR только в двух canonical Astro files; финальная формулировка crisis-boundary синхронизирована с V84C; site head — `8202c7d8cef261ccf1d72b10a57d669a624c53b4` и заморожен для exact-head CI.
-- **Production:** не заявлять до нового exact-head CI после последней редакционной правки.
+- **Research:** V84C сохраняет editorial-completeness authority поверх V84B; V84D supersedes source-status/locator/translation claims, а V84G — Trinitarian-cross boundary.
+- **AuditRepo:** findings и site gates внесены отдельными governed intake и closure-файлами.
+- **Site:** фактический head и exact-head evidence всегда читаются из PR `gb-is-my-strength#498` и позднейших cross-repo authority files; встроенный исторический SHA не считается текущим.
+- **Production:** не заявлять до exact-head CI после последней редакционной правки и синхронизации с текущим `main`.
 - **Lloyd-Jones book:** `BOOK-FULLTEXT-HOLD` сохраняется.
 - **Новые прямые цитаты:** не публиковать без текстового локатора и, для PDF, page-image verification.
