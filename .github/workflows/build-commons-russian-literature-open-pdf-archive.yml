@@ -1,4 +1,4 @@
-name: Build Commons Russian-literature open PDF archive
+name: Build Commons Russian-literature strict open PDF archive
 
 on:
   workflow_dispatch:
@@ -7,19 +7,19 @@ on:
       - '.github/workflows/build-commons-russian-literature-open-pdf-archive.yml'
       - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs.py'
       - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs_search_api.py'
-      - 'SOURCE_LIBRARY/tools/crawl_commons_curated_russian_literature_pdfs.py'
+      - 'SOURCE_LIBRARY/tools/crawl_commons_strict_literary_pdfs.py'
       - 'SOURCE_LIBRARY/COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md'
 
 permissions:
   contents: read
 
 concurrency:
-  group: commons-open-pdf-${{ github.event.pull_request.number || github.ref }}
+  group: commons-strict-open-pdf-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   collect-and-verify:
-    name: Collect and verify 40+ Commons PDFs
+    name: Collect and verify 40+ strict literary PDFs
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
@@ -34,11 +34,11 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --disable-pip-version-check requests pypdf
 
-      - name: Discover and download curated open PDFs
+      - name: Discover and download strict literary PDFs
         run: >-
-          python SOURCE_LIBRARY/tools/crawl_commons_curated_russian_literature_pdfs.py
+          python SOURCE_LIBRARY/tools/crawl_commons_strict_literary_pdfs.py
           --target 40
-          --per-query 20
+          --per-query 30
           --max-candidates 300
           --max-file-mb 120
           --output-root open-access-pdf-archive
@@ -50,7 +50,7 @@ jobs:
           python - <<'PY' | tee aggregate-report.json
           import json
           from pathlib import Path
-          path = Path('open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/manifest.json')
+          path = Path('open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/manifest.json')
           data = json.loads(path.read_text(encoding='utf-8'))
           report = {
               'collection': data['collection'],
@@ -71,8 +71,8 @@ jobs:
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
           report = json.load(open('aggregate-report.json', encoding='utf-8'))
-          print('# Commons Russian-literature curated 40+ PDF pass')
-          print(f"- eligible title-relevant open PDFs: **{report['eligible_candidates_discovered']}**")
+          print('# Commons strict literary 40+ PDF pass')
+          print(f"- eligible identity/title-verified open PDFs: **{report['eligible_candidates_discovered']}**")
           print(f"- candidates processed: **{report['candidates_processed']}**")
           print(f"- valid PDFs downloaded: **{report['downloaded_pdfs']}**")
           print(f"- failed/skipped: **{report['failed_or_skipped']}**")
@@ -84,7 +84,7 @@ jobs:
       - name: Split PDF archive into connector-safe parts
         shell: bash
         run: |
-          root='open-access-pdf-archive/commons-russian-literature-open-pdf-40plus'
+          root='open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus'
           mkdir -p "$root/chunks/part-1" "$root/chunks/part-2" "$root/chunks/part-3" "$root/chunks/part-4"
           shopt -s nullglob
           for file in "$root"/[0-9][0-9]__*.pdf; do
@@ -96,66 +96,66 @@ jobs:
           done
           find "$root/chunks" -maxdepth 2 -type f -printf '%p %s bytes\n' | sort
 
-      - name: Upload PDF archive part 1 (01-10)
+      - name: Upload strict PDF part 1 (01-10)
         uses: actions/upload-artifact@v4
         with:
-          name: commons-russian-literature-open-pdf-01-10
-          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/chunks/part-1/
+          name: commons-strict-literary-pdf-01-10
+          path: open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/chunks/part-1/
           if-no-files-found: error
           compression-level: 0
           retention-days: 7
 
-      - name: Upload PDF archive part 2 (11-20)
+      - name: Upload strict PDF part 2 (11-20)
         uses: actions/upload-artifact@v4
         with:
-          name: commons-russian-literature-open-pdf-11-20
-          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/chunks/part-2/
+          name: commons-strict-literary-pdf-11-20
+          path: open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/chunks/part-2/
           if-no-files-found: error
           compression-level: 0
           retention-days: 7
 
-      - name: Upload PDF archive part 3 (21-30)
+      - name: Upload strict PDF part 3 (21-30)
         uses: actions/upload-artifact@v4
         with:
-          name: commons-russian-literature-open-pdf-21-30
-          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/chunks/part-3/
+          name: commons-strict-literary-pdf-21-30
+          path: open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/chunks/part-3/
           if-no-files-found: error
           compression-level: 0
           retention-days: 7
 
-      - name: Upload PDF archive part 4 (31-40)
+      - name: Upload strict PDF part 4 (31-40)
         uses: actions/upload-artifact@v4
         with:
-          name: commons-russian-literature-open-pdf-31-40
-          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/chunks/part-4/
+          name: commons-strict-literary-pdf-31-40
+          path: open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/chunks/part-4/
           if-no-files-found: error
           compression-level: 0
           retention-days: 7
 
-      - name: Upload lightweight audit package
+      - name: Upload strict audit package
         uses: actions/upload-artifact@v4
         with:
-          name: commons-russian-literature-40plus-manifest
+          name: commons-strict-literary-40plus-manifest
           path: |
-            open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/manifest.json
-            open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/manifest.csv
-            open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/SHA256SUMS.txt
-            open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/README.md
+            open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/manifest.json
+            open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/manifest.csv
+            open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/SHA256SUMS.txt
+            open-access-pdf-archive/commons-russian-literature-strict-open-pdf-40plus/README.md
             aggregate-report.json
           if-no-files-found: error
           compression-level: 9
           retention-days: 30
 
-      - name: Enforce 40+ valid-PDF gate
+      - name: Enforce strict 40+ valid-PDF gate
         shell: bash
         run: |
           python - <<'PY'
           import json
           report = json.load(open('aggregate-report.json', encoding='utf-8'))
           if report['eligible_candidates_discovered'] < 40:
-              raise SystemExit('40+ curated open-PDF discovery gate failed')
+              raise SystemExit('40+ strict literary discovery gate failed')
           if report['downloaded_pdfs'] < 40:
               raise SystemExit(
-                  f"40+ curated valid-PDF archive gate failed: {report['downloaded_pdfs']} saved"
+                  f"40+ strict literary PDF gate failed: {report['downloaded_pdfs']} saved"
               )
           PY
