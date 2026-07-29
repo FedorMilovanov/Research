@@ -112,7 +112,7 @@ https://quod.lib.umich.edu/e/eebo2/A57573.0001.001?view=toc
 
 Русский фрагмент в статье:
 
-> Меланхолия завладевает мозгом и духом и лишает их способности к мысли и действию… Когда этот тяжкий недуг глубоко укоренился, бороться с ним так же тщетно, как бороться с горячкой или плевритом, подагрой или каменной болезнью.
+> Меланхолия овладевает мозгом и жизненными духами и лишает их способности к мысли или действию… Когда этот тяжкий недуг глубоко укоренился, бороться с ним так же тщетно, как бороться с горячкой или чахоткой, подагрой или каменной болезнью.
 
 Локатор:
 
@@ -123,6 +123,12 @@ https://quod.lib.umich.edu/e/eebo2/A57573.0001.001?view=toc
 `Melancholly seizes on the Brain and Spirits, and incapacitates them for Thought or Action...`
 
 и продолжает сравнение бесплодного волевого сопротивления с fever / phthisis / gout / stone.
+
+Переводческие границы:
+
+- `Spirits` передано как «жизненные духи» — раннемодерная физиологическая категория, не человеческая душа и не Святой Дух;
+- `phthisis` передано как «чахотка», а не «плеврит»;
+- историческая физиология не переносится в современную медицинскую аргументацию.
 
 ## 2.3 Вторая цитата
 
@@ -165,13 +171,14 @@ https://www.who.int/standards/classifications/frequently-asked-questions/burn-ou
 
 Разрешённая читательская формула:
 
-> Выгорание в ICD-11 описано как профессиональный феномен хронического рабочего стресса, а не как медицинское заболевание или название всякого истощения.
+> Выгорание в ICD-11 описано как профессиональный феномен, возникающий вследствие хронического стресса на рабочем месте, с которым не удалось успешно справиться, а не как медицинское заболевание или название всякого истощения.
 
-Эта формула точнее прежнего сокращения «относится к хроническому рабочему стрессу», потому что сохраняет три границы WHO:
+Эта формула сохраняет четыре границы WHO:
 
 1. occupational context;
-2. not classified as a medical condition;
-3. not applicable to every area of life.
+2. chronic workplace stress not successfully managed;
+3. not classified as a medical condition;
+4. not applicable to every area of life.
 
 ---
 
@@ -185,21 +192,27 @@ https://www.who.int/standards/classifications/frequently-asked-questions/burn-ou
 
 `8202c7d8cef261ccf1d72b10a57d669a624c53b4`
 
-Новый content head после source-integrity correction:
+Промежуточный source-locator head:
 
 `c9554c86edddaa21c6dd3c9b293b486abeecd881`
+
+Финальный content head после переводческой коррекции:
+
+`f1698f626e5ed6be2fcdadaf46045733b3ca8f51`
 
 Изменено только в `TmaNaSerdceBody.astro`:
 
 - `опасность устанавливаются` → `риск оценивается`;
-- burn-out приведён к строгой WHO-формуле;
+- burn-out приведён к полной WHO-формуле;
 - Rogers получил ссылку и локаторы `Preface, Advice 1 / Advice 5`;
+- `Spirits` уточнено как исторические «жизненные духи»;
+- `phthisis` исправлено с ошибочного «плеврита» на «чахотку»;
 - Goodwin разделён на полный трактат в Works vol. 3 и Wesley historical extract;
 - прежняя формула `верифицирована по первоисточнику` заменена на проверяемое описание локаторов.
 
 PageHead, reading time, TOC, CSS, JS, routes и соседние статьи не менялись.
 
-Все зелёные workflows предыдущего SHA считаются историческими и **не переносятся** на новый head. Требуется новый exact-head CI.
+Все зелёные workflows предыдущих SHA считаются историческими и **не переносятся** на новый head. Требуется новый exact-head CI.
 
 ---
 
@@ -213,6 +226,6 @@ PageHead, reading time, TOC, CSS, JS, routes и соседние статьи н
 
 - V84B сохраняет theological-order authority.
 - V84C сохраняет editorial-completeness authority.
-- V84D становится authority для Goodwin/Rogers source status, цитатных локаторов и WHO burn-out wording.
+- V84D становится authority для Goodwin/Rogers source status, цитатных локаторов, переводческих решений и WHO burn-out wording.
 - Новые прямые исторические цитаты по-прежнему требуют локатора; для PDF — page-image verification.
-- Production не заявляется до exact-head CI на `c9554c86edddaa21c6dd3c9b293b486abeecd881` или более новом фактическом head.
+- Production не заявляется до exact-head CI на `f1698f626e5ed6be2fcdadaf46045733b3ca8f51` или более новом фактическом head.
