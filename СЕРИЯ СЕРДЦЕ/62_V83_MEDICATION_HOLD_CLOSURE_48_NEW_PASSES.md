@@ -1,4 +1,4 @@
-# V83 — ПСИХОТРОПНЫЕ ПРЕПАРАТЫ: ЗАКРЫТИЕ HOLD, 48 НОВЫХ ПРОХОДОВ И УГЛУБЛЕНИЕ ГРАНИЦ
+# V83 — ПСИХОТРОПНЫЕ ПРЕПАРАТЫ: ЗАКРЫТИЕ HOLD, 48 СМЕШАННЫХ RESOURCE CHECKS И УГЛУБЛЕНИЕ ГРАНИЦ
 
 **Дата:** 2026-07-29  
 **Статус:** исследовательский том для серии «Тайны человеческого сердца»  
@@ -26,6 +26,8 @@ V83 не меняет богословскую позицию сайта, а д�
 6. **Синдром отмены может быть ошибочно принят за рецидив.** NICE требует обсуждать эту трудность и проводить индивидуальное постепенное снижение.
 7. **Приём и отказ не являются духовными баллами.** В обоих решениях возможны вера и мудрость либо страх, гордость, стыд и ложное упование.
 8. **Церковь не исчезает после назначения препарата.** Она продолжает служить Словом, молитвой, общением, практической помощью, наблюдением опасности и поддержкой семьи.
+
+Метрика `48` в этом томе означает **status-classified resource checks** разных классов: полный HTML/транскрипт, abstract/index/product page и непрослушанный audio backlog не считаются равными полнотекстовыми первичными чтениями.
 
 ---
 
@@ -288,7 +290,7 @@ NICE NG215 прямо предупреждает, что симптомы отм
 
 ---
 
-# 5. 48 НОВЫХ ПРОХОДОВ ПО ОФИЦИАЛЬНЫМ ХРИСТИАНСКИМ РЕСУРСАМ
+# 5. 48 STATUS-CLASSIFIED CHECKS ОФИЦИАЛЬНЫХ ХРИСТИАНСКИХ РЕСУРСОВ
 
 ## Статусы
 
@@ -297,7 +299,7 @@ NICE NG215 прямо предупреждает, что симптомы отм
 - `N2` — официальный abstract/index/product/session page; карта темы, не доказательство отсутствующего полного текста.
 - `N3` — официальный аудио/платный backlog; не использовать как доказательство до прослушивания/получения текста.
 
-## A. CCEF — 14 проходов
+## A. CCEF — 14 checks
 
 1. `N1` Mike Emlet, [The doctor is in — Part 3](https://www.ccef.org/resources/blog/doctor-part-3) — телесная оценка и границы медицинской компетенции.
 2. `N1` Mike Emlet, [The doctor is in — Part 4](https://www.ccef.org/doctor-part-4/) — решение «depends», индивидуальный контекст, body and spirit.
@@ -314,7 +316,7 @@ NICE NG215 прямо предупреждает, что симптомы отм
 13. `N2/N3` [Psychiatric Disorders Curriculum — digital](https://www.ccef.org/products/psychiatric-disorders-curriculum-digital-download) — embodied souls, labels, medication, ministry; курс не считать прослушанным.
 14. `N2` [Listening to Prozac… product page](https://www.ccef.org/products/listening-prozac-scriptures-primer-psychoactive-medications) — подтверждает «wisdom tight-rope»; не заменяет полный JBC.
 
-## B. Biblical Counseling Coalition — 12 проходов
+## B. Biblical Counseling Coalition — 12 checks
 
 15. `N1-C` [Mental Illness, Psychiatric Drugs, and Counseling Education](https://www.biblicalcounselingcoalition.org/2013/07/09/mental-illness-psychiatric-drugs-and-counseling-education/) — тело и душа, общее благо медицины, осторожность к медикаментозному редукционизму.
 16. `N1` [How Can Christians Tell the Difference Between a Spiritual Issue and a Physical One?](https://www.biblicalcounselingcoalition.org/2014/09/25/how-can-christians-tell-the-difference-between-a-spiritual-issue-and-a-physical-one/) — «when in doubt, check it out»; не гадать о физическом без обследования.
@@ -329,7 +331,7 @@ NICE NG215 прямо предупреждает, что симптомы отм
 25. `N1` [Suicide—the Preventable Death](https://www.biblicalcounselingcoalition.org/2014/02/19/suicidethe-preventable-death/) — безопасность и активное вмешательство; статистические данные обновлять.
 26. `N1` [Suicide Prevention and Grieving a Suicide](https://www.biblicalcounselingcoalition.org/2013/05/04/suicide-prevention-and-grieving-a-suicide/) — ресурсная карта; старые контакты/данные перепроверять.
 
-## C. ACBC — 6 проходов
+## C. ACBC — 6 checks
 
 27. `N1` [Mental Illness and Medicine — Statement from the Board](https://biblicalcounseling.com/about/beliefs/statements-from-the-board/mental-illness-and-medicine/) — официальный пятичастный баланс: физические и духовные проблемы, обследование, лечение тела, недостаточность медицины для души, запрет практиковать медицину без квалификации.
 28. `N1-C` [Despair: A Medical Perspective](https://biblicalcounseling.com/resource-library/podcast-episodes/despair-a-medical-perspective/) — в тяжёлой дезорганизации лекарство иногда может дать способность к связному взаимодействию; научные детали проверять.
@@ -338,7 +340,7 @@ NICE NG215 прямо предупреждает, что симптомы отм
 31. `N1` [What to Do in a Spiritual Emergency](https://biblicalcounseling.com/resource-library/articles/what-to-do-in-a-spiritual-emergency/) — кризисный маршрут не заменяется обычным домашним заданием.
 32. `N2/N3` [The Bible, Medicine, and Medical Issues](https://biblicalcounseling.com/product/winter-webinar-bible-medicine-medical-issues/?mode=list) — официальный цикл христианских медицинских специалистов; материалы требуют доступа.
 
-## D. IBCD — 8 проходов
+## D. IBCD — 8 checks
 
 33. `N2/N3` Charles Hodges, [Medicine, Common Grace, and the Sufficiency of Scripture](https://ibcd.org/medicine-common-grace-and-the-sufficiency-of-scripture-pre-conference-1/) — особенно важен для границы общей благодати и sufficiency; не считать прослушанным.
 34. `N2/N3` Charles Hodges, [Bipolar Disorder: Understanding the Medical and Spiritual Challenges](https://ibcd.org/bipolar-disorder-understanding-the-medical-and-spiritual-challenges/) — современная тема; full audio/PDF требует отдельного прохода.
@@ -349,7 +351,7 @@ NICE NG215 прямо предупреждает, что симптомы отм
 39. `N2/N3` [What’s Medical About Mental Illness?](https://ibcd.org/whats-medical-about-mental-illness/) — различение болезни и греха; outline/audio требуют проверки.
 40. `N2/N3` [Medicine and Biblical Sufficiency](https://ibcd.org/medicine-and-biblical-sufficiency/) — официальный workshop и PDF-link; содержание не расширять за outline.
 
-## E. RTS / PRTS / Ligonier / TMS — 8 проходов
+## E. RTS / PRTS / Ligonier / TMS — 8 checks
 
 41. `N2/N3` RTS, [Biblical Counseling and Modern Medicine](https://rts.edu/resources/biblical-counseling-and-modern-medicine/) — официальная лекция Charles Hodges; backlog на полный transcript/audio.
 42. `N1` RTS, [An Abundance of Counselors](https://rts.edu/resources/an-abundance-of-counselors/) — случай телесной причины, первоначально принятой за духовную; подчёркивает необходимость проверки тела.
@@ -360,11 +362,11 @@ NICE NG215 прямо предупреждает, что симптомы отм
 47. `N1-C` Ligonier, [The Heart of Depression](https://learn.ligonier.org/articles/heart-depression) — полезный духовный слой; старые медицинские обобщения не переносить без проверки.
 48. `N1` TMS, [Handling Scripture](https://tms.edu/handling-scripture/) — inerrancy/sufficiency должны становиться послушанием, а не одной декларацией.
 
-**Итог 48-проходного слоя:** полный текст, abstract, index, product page и audio backlog не смешиваются. Каждый ресурс используется только в пределах своего evidence-status.
+**Итог 48-unit слоя:** полный текст, abstract, index, product page и audio backlog не смешиваются. Каждый ресурс используется только в пределах своего evidence-status.
 
 ---
 
-# 6. 12 ДОПОЛНИТЕЛЬНЫХ OFFICIAL MEDICAL-SAFETY ПРОХОДОВ
+# 6. 12 ДОПОЛНИТЕЛЬНЫХ OFFICIAL MEDICAL-SAFETY CHECKS
 
 Эти источники не определяют сердце и не входят в богословский magisterium. Они проверяют только технические claims.
 
