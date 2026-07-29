@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/build-imli-open-pdf-archive.yml'
       - 'SOURCE_LIBRARY/tools/crawl_imli_open_pdfs.py'
+      - 'SOURCE_LIBRARY/tools/crawl_imli_open_pdfs_browser.py'
       - 'SOURCE_LIBRARY/IMLI_40PLUS_PDF_PASS_2026-07-30.md'
 
 permissions:
@@ -34,14 +35,14 @@ jobs:
 
       - name: Download current official IMLI Russian-literature PDFs
         run: >-
-          python SOURCE_LIBRARY/tools/crawl_imli_open_pdfs.py
+          python SOURCE_LIBRARY/tools/crawl_imli_open_pdfs_browser.py
           --target 40
-          --max-candidates 100
+          --max-candidates 107
           --max-file-mb 350
           --output-root open-access-pdf-archive
           --pause 1.0
 
-      - name: Enforce 40+ valid-PDF gate
+      - name: Build aggregate report
         shell: bash
         run: |
           python - <<'PY' | tee aggregate-report.json
@@ -62,10 +63,6 @@ jobs:
               'total_bytes': data['total_bytes'],
           }
           print(json.dumps(report, ensure_ascii=False, indent=2))
-          if report['eligible_candidates_discovered'] < 40:
-              raise SystemExit('40+ discovery gate failed')
-          if report['downloaded_pdfs'] < 40:
-              raise SystemExit('40+ valid-PDF archive gate failed')
           PY
 
       - name: Publish workflow summary
@@ -107,3 +104,17 @@ jobs:
           if-no-files-found: error
           compression-level: 9
           retention-days: 30
+
+      - name: Enforce 40+ valid-PDF gate
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          report = json.load(open('aggregate-report.json', encoding='utf-8'))
+          if report['eligible_candidates_discovered'] < 40:
+              raise SystemExit('40+ discovery gate failed')
+          if report['downloaded_pdfs'] < 40:
+              raise SystemExit(
+                  f"40+ valid-PDF archive gate failed: {report['downloaded_pdfs']} PDFs saved"
+              )
+          PY
