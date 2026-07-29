@@ -41,7 +41,7 @@ V84E–V84G сохраняют свои содержательные наход�
 - mergeable;
 - draft;
 - изменены ровно два canonical Astro-файла;
-- diff: `+99 / -44`.
+- diff: `+94 / -39`.
 
 Текущий `main` был влит в feature-ветку через maintenance PR `gb-is-my-strength#504` только после проверки, что оба целевых article blobs на moved base не изменились. Production PR не был слит.
 
