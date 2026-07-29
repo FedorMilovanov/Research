@@ -7,6 +7,7 @@ on:
       - '.github/workflows/build-commons-russian-literature-open-pdf-archive.yml'
       - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs.py'
       - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs_search_api.py'
+      - 'SOURCE_LIBRARY/tools/crawl_commons_curated_russian_literature_pdfs.py'
       - 'SOURCE_LIBRARY/COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md'
 
 permissions:
@@ -33,9 +34,9 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --disable-pip-version-check requests pypdf
 
-      - name: Discover and download open PDFs
+      - name: Discover and download curated open PDFs
         run: >-
-          python SOURCE_LIBRARY/tools/crawl_commons_open_pdfs_search_api.py
+          python SOURCE_LIBRARY/tools/crawl_commons_curated_russian_literature_pdfs.py
           --target 40
           --per-query 20
           --max-candidates 300
@@ -70,8 +71,8 @@ jobs:
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
           report = json.load(open('aggregate-report.json', encoding='utf-8'))
-          print('# Commons Russian-literature 40+ PDF pass')
-          print(f"- eligible open PDF candidates: **{report['eligible_candidates_discovered']}**")
+          print('# Commons Russian-literature curated 40+ PDF pass')
+          print(f"- eligible title-relevant open PDFs: **{report['eligible_candidates_discovered']}**")
           print(f"- candidates processed: **{report['candidates_processed']}**")
           print(f"- valid PDFs downloaded: **{report['downloaded_pdfs']}**")
           print(f"- failed/skipped: **{report['failed_or_skipped']}**")
@@ -80,11 +81,53 @@ jobs:
           print(f"- license counts: `{report['license_counts']}`")
           PY
 
-      - name: Upload PDF archive
+      - name: Split PDF archive into connector-safe parts
+        shell: bash
+        run: |
+          root='open-access-pdf-archive/commons-russian-literature-open-pdf-40plus'
+          mkdir -p "$root/chunks/part-1" "$root/chunks/part-2" "$root/chunks/part-3" "$root/chunks/part-4"
+          shopt -s nullglob
+          for file in "$root"/[0-9][0-9]__*.pdf; do
+            base=$(basename "$file")
+            number=${base%%__*}
+            index=$((10#$number))
+            part=$(( (index - 1) / 10 + 1 ))
+            mv "$file" "$root/chunks/part-$part/$base"
+          done
+          find "$root/chunks" -maxdepth 2 -type f -printf '%p %s bytes\n' | sort
+
+      - name: Upload PDF archive part 1 (01-10)
         uses: actions/upload-artifact@v4
         with:
-          name: commons-russian-literature-open-pdf-40plus
-          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/
+          name: commons-russian-literature-open-pdf-01-10
+          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/chunks/part-1/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload PDF archive part 2 (11-20)
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-russian-literature-open-pdf-11-20
+          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/chunks/part-2/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload PDF archive part 3 (21-30)
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-russian-literature-open-pdf-21-30
+          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/chunks/part-3/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload PDF archive part 4 (31-40)
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-russian-literature-open-pdf-31-40
+          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/chunks/part-4/
           if-no-files-found: error
           compression-level: 0
           retention-days: 7
@@ -110,9 +153,9 @@ jobs:
           import json
           report = json.load(open('aggregate-report.json', encoding='utf-8'))
           if report['eligible_candidates_discovered'] < 40:
-              raise SystemExit('40+ open-PDF discovery gate failed')
+              raise SystemExit('40+ curated open-PDF discovery gate failed')
           if report['downloaded_pdfs'] < 40:
               raise SystemExit(
-                  f"40+ valid-PDF archive gate failed: {report['downloaded_pdfs']} saved"
+                  f"40+ curated valid-PDF archive gate failed: {report['downloaded_pdfs']} saved"
               )
           PY
