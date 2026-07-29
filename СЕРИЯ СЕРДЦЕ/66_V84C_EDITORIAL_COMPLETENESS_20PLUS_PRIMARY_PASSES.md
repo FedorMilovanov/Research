@@ -389,7 +389,7 @@ NICE специально запрещает полагаться на один 
 
 - **Research:** V84C становится текущей editorial-completeness authority поверх V84B.
 - **AuditRepo:** findings и site gates внесены отдельным intake.
-- **Site:** точечное углубление реализовано в существующем PR только в двух canonical Astro files; финальная формулировка crisis-boundary синхронизирована с V84C; site head после синхронизации — `8202c7d8cef261ccf1d72b10a57d669a624c53b4`.
+- **Site:** точечное углубление реализовано в существующем PR только в двух canonical Astro files; финальная формулировка crisis-boundary синхронизирована с V84C; site head — `8202c7d8cef261ccf1d72b10a57d669a624c53b4` и заморожен для exact-head CI.
 - **Production:** не заявлять до нового exact-head CI после последней редакционной правки.
 - **Lloyd-Jones book:** `BOOK-FULLTEXT-HOLD` сохраняется.
 - **Новые прямые цитаты:** не публиковать без текстового локатора и, для PDF, page-image verification.
