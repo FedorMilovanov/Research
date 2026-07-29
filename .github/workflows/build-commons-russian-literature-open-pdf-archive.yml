@@ -1,0 +1,117 @@
+name: Build Commons Russian-literature open PDF archive
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/build-commons-russian-literature-open-pdf-archive.yml'
+      - 'SOURCE_LIBRARY/tools/crawl_commons_open_pdfs.py'
+      - 'SOURCE_LIBRARY/COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: commons-open-pdf-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  collect-and-verify:
+    name: Collect and verify 40+ Commons PDFs
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout PR merge candidate
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests pypdf
+
+      - name: Discover and download open PDFs
+        run: >-
+          python SOURCE_LIBRARY/tools/crawl_commons_open_pdfs.py
+          --target 40
+          --per-query 20
+          --max-candidates 250
+          --max-file-mb 120
+          --output-root open-access-pdf-archive
+          --pause 0.7
+
+      - name: Build aggregate report
+        shell: bash
+        run: |
+          python - <<'PY' | tee aggregate-report.json
+          import json
+          from pathlib import Path
+          path = Path('open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/manifest.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          report = {
+              'collection': data['collection'],
+              'eligible_candidates_discovered': data['eligible_open_pdf_candidates_discovered'],
+              'candidates_processed': data['candidates_processed'],
+              'downloaded_pdfs': data['downloaded_pdfs'],
+              'failed_or_skipped': data['failed_or_skipped'],
+              'total_bytes': data['total_bytes'],
+              'license_counts': data['license_counts'],
+              'discovery_failures': len(data['discovery_failures']),
+          }
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Publish summary
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          report = json.load(open('aggregate-report.json', encoding='utf-8'))
+          print('# Commons Russian-literature 40+ PDF pass')
+          print(f"- eligible open PDF candidates: **{report['eligible_candidates_discovered']}**")
+          print(f"- candidates processed: **{report['candidates_processed']}**")
+          print(f"- valid PDFs downloaded: **{report['downloaded_pdfs']}**")
+          print(f"- failed/skipped: **{report['failed_or_skipped']}**")
+          print(f"- discovery failures: **{report['discovery_failures']}**")
+          print(f"- total bytes: **{report['total_bytes']}**")
+          print(f"- license counts: `{report['license_counts']}`")
+          PY
+
+      - name: Upload PDF archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-russian-literature-open-pdf-40plus
+          path: open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload lightweight audit package
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-russian-literature-40plus-manifest
+          path: |
+            open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/manifest.json
+            open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/manifest.csv
+            open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/SHA256SUMS.txt
+            open-access-pdf-archive/commons-russian-literature-open-pdf-40plus/README.md
+            aggregate-report.json
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 30
+
+      - name: Enforce 40+ valid-PDF gate
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          report = json.load(open('aggregate-report.json', encoding='utf-8'))
+          if report['eligible_candidates_discovered'] < 40:
+              raise SystemExit('40+ open-PDF discovery gate failed')
+          if report['downloaded_pdfs'] < 40:
+              raise SystemExit(
+                  f"40+ valid-PDF archive gate failed: {report['downloaded_pdfs']} saved"
+              )
+          PY
