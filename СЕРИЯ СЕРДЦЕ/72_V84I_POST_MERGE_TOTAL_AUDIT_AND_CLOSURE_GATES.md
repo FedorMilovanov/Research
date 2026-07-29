@@ -62,7 +62,7 @@ Confirmed reader-facing strengths:
 9. Goodwin, Gurnall and MLJ are represented according to their actual evidence class;
 10. the final cross section preserves one Trinitarian saving work, real judgment and substitution, one Person of the Son, two natures and the limit of revealed metaphysical claims.
 
-No new material-theology rewrite is required before closure. Remaining work is repository/governance/navigation/deployment cleanup.
+No new material-theology rewrite is required before closure. Remaining work is repository/governance/navigation/deployment and source-provenance cleanup.
 
 ---
 
@@ -80,7 +80,7 @@ No new material-theology rewrite is required before closure. Remaining work is r
 **Severity:** high governance drift  
 **Confirmed:** the final AuditRepo authority still describes all three PRs as draft and unmerged.
 
-**Required:** a post-merge governed authority in AuditRepo must supersede the old workflow state without erasing the historical audit.
+**Resolution path:** AuditRepo PR `#102` adds the post-merge governed authority without erasing the historical audit.
 
 ### PM-003 — Site article TOC drift
 
@@ -95,7 +95,7 @@ It also retains two stale labels:
 - `#ne-odin-diagnoz` is no longer «Не один диагноз, а много»;
 - `#kogda-tma-bolezn` is no longer «Когда тьма — это болезнь тела».
 
-**Required:** repair the source-of-truth TOC, not a DOM/runtime patch.
+**Required:** repair the source-of-truth TOC, not a DOM/runtime patch. Governed implementation task: Site issue `#509`.
 
 ### PM-004 — tma reading-time and series-progress drift
 
@@ -104,12 +104,12 @@ It also retains two stale labels:
 
 The book-shaped series calculation also gives every extra article of a chapter the same `doneMin` and uses the core-only `HEART_TOTAL_MIN`, excluding the extra articles from the total. This is structurally wrong now that extras are declared full chapter articles.
 
-**Required:** calculate ordered cumulative progress from all actual book articles and one canonical reading-time source.
+**Required:** calculate ordered cumulative progress from all actual book articles and one canonical reading-time source. Correct full-book total after `tma=34`: `727` minutes. Governed implementation task: Site issue `#509`.
 
 ### PM-005 — `/hard-texts/` landing is behind the current architecture
 
 **Severity:** medium discoverability/schema drift  
-**Confirmed in source:** cards, stats, map and structured-data prose retain the earlier three-part model and stale reading times even though the active series config is a four-chapter book with chapter articles.
+**Confirmed in source and live output:** cards, stats, map and structured-data prose retain the earlier three-part model and stale reading times even though the active series config is a four-chapter book with chapter articles.
 
 Examples include:
 
@@ -118,22 +118,22 @@ Examples include:
 - a three-node series map;
 - static JSON-LD `hasPart` that does not represent the current published book structure.
 
-**Required:** derive landing counters and machine-readable parts from current series/data sources rather than hand-maintained duplicates.
+**Resolution path:** Site PR `#510` derives the landing inventory/metadata from the active book config, migrates `/hard-texts/` to `surface=series / seriesShape=book`, updates the four-chapter map and ratchets the route/visual registry contracts.
 
 ### PM-006 — live production was not yet a post-merge witness at audit time
 
 **Severity:** release closure gate  
 **Observed:** live `/hard-texts/` and live Romans 7 still rendered the old three-part/12-minute version while `main` contained the new book-shaped/45-minute source.
 
-**Important timing fact:** after the Site merge, an accidental one-line `tmp` commit was pushed and then removed. The deploy workflow uses `concurrency: group: pages` with `cancel-in-progress: true`; therefore those pushes restart/cancel the preceding deployment. At audit time the latest cleanup push was only minutes old, so the old live output proves absence of a completed witness, not by itself a failed pipeline.
+**Important timing fact:** after the Site merge, an accidental one-line `tmp` commit was pushed and then removed. The deploy workflow uses `concurrency: group: pages` with `cancel-in-progress: true`; therefore those pushes restart/cancel the preceding deployment. The old live output proves absence of a completed witness, not by itself a failed pipeline.
 
-**Required closure evidence:** the exact latest `main` release must finish deployment and the live release contract must prove the promoted SHA/candidate.
+**Required closure evidence:** after final cleanup merges, the exact latest `main` release must finish deployment and the live release contract must prove the promoted SHA/candidate.
 
 ### PM-007 — deployment workflow itself is structurally sound
 
 **Confirmed source:** `.github/workflows/deploy.yml` triggers on every push to `main`, builds one immutable candidate, promotes the same bytes to GitHub Pages and runs generic live-release plus TTS live contracts.
 
-No emergency manual upload or bypass is justified. The professional action is to let or rerun the controlled pipeline and inspect its exact run evidence.
+No emergency manual upload or bypass is justified. The professional action is to use the controlled pipeline and inspect its exact run evidence.
 
 ### PM-008 — accidental probe residue
 
@@ -141,6 +141,23 @@ No emergency manual upload or bypass is justified. The professional action is to
 **Confirmed:** commit `eb8f337827b2a621a2cdc3e90d6825a503276869` added a one-line `tmp` file; commit `97f5da7122b96d6cdedd55e4717234ac700233f4` removed it.
 
 No file residue remains. The only effect relevant here is deploy restart/cancellation under the pages concurrency policy.
+
+### PM-009 — Rogers translations need scan-first rights/provenance closure
+
+**Severity:** medium source-governance / rights-cleanup gate  
+**Confirmed:** the University of Michigan EEBO-TCP item correctly identifies Rogers 1691, exposes the Preface structure and supports locator navigation. The same item also carries an explicit notice restricting subsequent redistribution of its keyboarded/encoded edition.
+
+The underlying 1691 book is historical, and Google Books indexes a full-view British Library scan of the 1691 edition. Therefore the professional provenance model is:
+
+1. visually verify Preface advices `1`, `5` and `6` against the open page images of the 1691 scan;
+2. record scan/image and printed-page/signature locators where visible;
+3. make the scan the primary basis for the three Russian direct translations;
+4. retain Michigan EEBO-TCP only as a structural TOC/search aid with its rights boundary respected;
+5. do not import large English transcription passages.
+
+**Governed implementation task:** Site issue `#513`.
+
+This finding does not refute the current Russian translations. It prevents claiming full source-clean closure before scan-image verification and provenance correction.
 
 ---
 
@@ -163,22 +180,33 @@ A HOLD is an evidence boundary, not an unfinished promise to import the held mat
 
 ## 6. Required closure sequence
 
-1. Merge AuditRepo post-merge authority.
-2. Repair Site TOC labels/entries and `34`-minute metadata source.
-3. Repair cumulative book progress across all chapter articles.
-4. Remove stale hard-coded `/hard-texts/` counters, times, three-part map and incomplete structured-data inventory.
-5. Run exact-head PR checks for the cleanup Site head.
-6. Merge the Site cleanup only after those checks pass.
-7. Obtain post-merge deployment evidence for the then-current `main` SHA.
+1. Merge Research PR `#39` and AuditRepo PR `#102` after owner approval.
+2. Complete and merge Site PR `#510` after all exact-head checks and artifact readback pass.
+3. Implement Site issue `#509`:
+   - exact tma TOC parity;
+   - canonical `34` minutes;
+   - cumulative progress over all book pages;
+   - full total `727`;
+   - automated parity/progress contract.
+4. Implement Site issue `#513`:
+   - scan-first verification of Rogers Preface advices `1`, `5`, `6`;
+   - page-image locators;
+   - reader-facing source provenance correction.
+5. Run exact-head checks for the final Site cleanup head.
+6. Merge the final Site cleanup only after those checks pass.
+7. Obtain deployment evidence for the then-current `main` SHA.
 8. Read the live-release artifact and verify at minimum:
    - promoted SHA equals intended `main`;
    - `/articles/tma-na-serdce/` resolves;
    - title, canonical, modified date and article body are current;
    - tma reader TOC contains the repaired sections;
-   - article/series reading times agree;
-   - `/hard-texts/` exposes the current book architecture;
+   - article/series reading times agree at `34`;
+   - full-book progress total is `727` and cumulative positions increase;
+   - `/hard-texts/` exposes the current four-chapter book architecture;
    - Pagefind and sitemap include the route;
-   - no old three-part chrome remains on Romans 7.
+   - no old three-part chrome remains on Romans 7;
+   - Rogers source block points direct translations to scan-first locators.
+9. Delete obsolete merged feature/maintenance branches through the owner UI or an authorized branch-ref cleanup tool after all dependent PRs are closed.
 
 ---
 
@@ -192,7 +220,11 @@ A HOLD is an evidence boundary, not an unfinished promise to import the held mat
 
 `STALE PRE-MERGE AUTHORITY SUPERSEDED BY V84I`
 
-`SITE NAVIGATION / PROGRESS / LANDING CLEANUP REQUIRED`
+`LANDING CLEANUP IN PR #510`
+
+`TOC / READING-TIME / PROGRESS CLEANUP REQUIRED IN ISSUE #509`
+
+`ROGERS SCAN-FIRST PROVENANCE REQUIRED IN ISSUE #513`
 
 `LIVE RELEASE WITNESS REQUIRED`
 
