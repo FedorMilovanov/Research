@@ -1,0 +1,47 @@
+name: Audit ChatGPT Google Drive upload links
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'SOURCE_LIBRARY/tools/audit_google_drive_chatgpt_upload_links.py'
+      - 'SOURCE_LIBRARY/processed/GOOGLE_DRIVE_UPLOAD_AUDIT_2026-07-30.md'
+      - '.github/workflows/audit-google-drive-upload-links.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: google-drive-upload-link-audit-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Check 46 official OpenAI and Google URLs
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependency
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Run 46-link audit
+        run: python SOURCE_LIBRARY/tools/audit_google_drive_chatgpt_upload_links.py
+
+      - name: Publish summary
+        run: cat google-drive-upload-link-audit/README.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload audit package
+        uses: actions/upload-artifact@v4
+        with:
+          name: google-drive-upload-46-link-audit
+          path: google-drive-upload-link-audit/
+          if-no-files-found: error
+          retention-days: 30
