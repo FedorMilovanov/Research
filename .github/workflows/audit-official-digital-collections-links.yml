@@ -1,0 +1,55 @@
+name: Audit official digital collections links
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/audit-official-digital-collections-links.yml'
+      - 'SOURCE_LIBRARY/tools/audit_official_collection_links.py'
+      - 'SOURCE_LIBRARY/OFFICIAL_DIGITAL_COLLECTIONS_70PLUS_INDEX_2026-07-30.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: official-collections-link-audit-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Check all official collection URLs
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout PR merge candidate
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Audit official collection links
+        run: >-
+          python SOURCE_LIBRARY/tools/audit_official_collection_links.py
+          --source SOURCE_LIBRARY/OFFICIAL_DIGITAL_COLLECTIONS_70PLUS_INDEX_2026-07-30.md
+          --output link-audit-output
+          --timeout 45
+          --pause 0.2
+
+      - name: Publish summary
+        shell: bash
+        run: |
+          cat link-audit-output/OFFICIAL_COLLECTIONS_LINK_AUDIT.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload link-audit evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-digital-collections-link-audit
+          path: link-audit-output/
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 30

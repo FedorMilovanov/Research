@@ -1,0 +1,62 @@
+name: Build ephemera review candidates
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/build-ephemera-review-candidates.yml'
+      - 'SOURCE_LIBRARY/tools/build_ephemera_review_candidates.py'
+      - 'SOURCE_LIBRARY/EPHEMERA_REVIEW_WORKFLOW_2026-07-30.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ephemera-review-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-review-package:
+    name: Build manuscript, cover, place and history contact sheets
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout PR merge candidate
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests pillow
+
+      - name: Build ephemera review package
+        run: >-
+          python SOURCE_LIBRARY/tools/build_ephemera_review_candidates.py
+          --per-query 60
+          --minimum-ready 65
+          --output ephemera-review-output
+
+      - name: Publish summary
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          data = json.load(open('ephemera-review-output/ephemera-candidates.json', encoding='utf-8'))
+          print('# Ephemera review candidates')
+          print(f"- review-ready previews: **{data['review_ready']}**")
+          print(f"- by topic: `{data['review_ready_by_topic']}`")
+          print(f"- status counts: `{data['status_counts']}`")
+          print(f"- contact sheets: `{data['contact_sheets']}`")
+          PY
+
+      - name: Upload review package
+        uses: actions/upload-artifact@v4
+        with:
+          name: ephemera-review-candidates
+          path: ephemera-review-output/
+          if-no-files-found: error
+          compression-level: 6
+          retention-days: 30
