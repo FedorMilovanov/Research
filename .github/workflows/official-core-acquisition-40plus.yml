@@ -1,0 +1,70 @@
+name: Official core acquisition 40plus
+
+on:
+  pull_request:
+    paths:
+      - 'SOURCE_LIBRARY/TOTAL_SOURCE_ACQUISITION_AUDIT_2026-07-30.md'
+      - 'SOURCE_LIBRARY/tools/official_core_acquisition_40plus.py'
+      - '.github/workflows/official-core-acquisition-40plus.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: official-core-acquisition-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  acquire:
+    name: Audit 59 official objects and acquire exposed binaries
+    runs-on: ubuntu-24.04
+    timeout-minutes: 80
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependency
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Run rights-first acquisition pass
+        env:
+          MAX_FILE_BYTES: '367001600'
+          MAX_TOTAL_BYTES: '1610612736'
+        run: python SOURCE_LIBRARY/tools/official_core_acquisition_40plus.py
+
+      - name: Show report
+        run: sed -n '1,220p' official-core-acquisition-output/OFFICIAL_CORE_ACQUISITION_REPORT.md
+
+      - name: Build manifest package
+        run: |
+          mkdir -p acquisition-manifest-package
+          cp official-core-acquisition-output/OFFICIAL_CORE_ACQUISITION_REPORT.md acquisition-manifest-package/
+          cp official-core-acquisition-output/canonical_queue.json acquisition-manifest-package/
+          cp official-core-acquisition-output/candidate_audit.csv acquisition-manifest-package/
+          cp official-core-acquisition-output/download_manifest.csv acquisition-manifest-package/
+          cp official-core-acquisition-output/summary.json acquisition-manifest-package/
+          cp SOURCE_LIBRARY/tools/official_core_acquisition_40plus.py acquisition-manifest-package/
+
+      - name: Upload audit and manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-core-acquisition-59-manifest
+          path: acquisition-manifest-package/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload acquired binaries
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-core-acquisition-59-files
+          path: official-core-acquisition-output/files/
+          if-no-files-found: warn
+          compression-level: 0
+          retention-days: 7
