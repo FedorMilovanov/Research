@@ -5,6 +5,7 @@ on:
     paths:
       - 'SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py'
       - 'SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py'
+      - 'SOURCE_LIBRARY/tools/classify_dead_source_urls.py'
       - '.github/workflows/total-cross-repo-source-audit.yml'
   workflow_dispatch:
 
@@ -19,7 +20,7 @@ jobs:
   audit:
     name: Scan four repositories and audit sources
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 55
     steps:
       - name: Checkout Research audit branch
         uses: actions/checkout@v4
@@ -57,16 +58,22 @@ jobs:
           REFINED_URL_AUDIT_WORKERS: '36'
         run: python SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py
 
+      - name: Classify true dead sources
+        run: python SOURCE_LIBRARY/tools/classify_dead_source_urls.py
+
       - name: Show executive reports
         run: |
           sed -n '1,220p' total-audit-output/TOTAL_CROSS_REPO_SOURCE_AUDIT.md
           printf '\n--- REFINED ---\n'
           sed -n '1,240p' total-audit-output/refined/REFINED_TOTAL_SOURCE_AUDIT.md
+          printf '\n--- DEAD URL CLASSIFICATION ---\n'
+          cat total-audit-output/dead-url-classification/DEAD_URL_CLASSIFICATION.md
 
       - name: Build compact audit package
         run: |
           cp SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py total-audit-output/
           cp SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py total-audit-output/
+          cp SOURCE_LIBRARY/tools/classify_dead_source_urls.py total-audit-output/
           python - <<'PY'
           from pathlib import Path
           import hashlib, json
