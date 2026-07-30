@@ -1,0 +1,164 @@
+name: Build Commons 120+ open project-materials archive
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/build-commons-project-materials-120plus.yml'
+      - 'SOURCE_LIBRARY/tools/crawl_commons_project_materials_120plus.py'
+      - 'SOURCE_LIBRARY/COMMONS_PROJECT_MATERIALS_120PLUS_PASS_2026-07-30.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: commons-project-materials-120plus-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  collect-and-verify:
+    name: Collect 40 PDFs + 40 portraits + 40 mixed materials
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout PR merge candidate
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --disable-pip-version-check requests pypdf pillow
+
+      - name: Discover, download and verify 120+ originals
+        run: >-
+          python SOURCE_LIBRARY/tools/crawl_commons_project_materials_120plus.py
+          --target-pdf 40
+          --target-portrait 40
+          --target-ephemera 40
+          --per-query 45
+          --max-pdf-mb 100
+          --max-portrait-mb 25
+          --max-ephemera-mb 40
+          --output-root open-project-materials
+          --pause 0.45
+
+      - name: Build aggregate report
+        shell: bash
+        run: |
+          python - <<'PY' | tee aggregate-report.json
+          import json
+          from pathlib import Path
+          path = Path('open-project-materials/commons-project-materials-120plus/manifest.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          report = {
+              'collection': data['collection'],
+              'targets': data['targets'],
+              'eligible_candidates_discovered': data['eligible_candidates_discovered'],
+              'downloaded_counts': data['downloaded_counts'],
+              'total_downloaded': data['total_downloaded'],
+              'total_bytes': data['total_bytes'],
+              'license_counts': data['license_counts'],
+              'mime_counts': data['mime_counts'],
+              'discovery_failures': len(data['discovery_failures']),
+          }
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Publish summary
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          report = json.load(open('aggregate-report.json', encoding='utf-8'))
+          print('# Commons project materials — 120+ pass')
+          print(f"- discovered by bucket: `{report['eligible_candidates_discovered']}`")
+          print(f"- downloaded by bucket: `{report['downloaded_counts']}`")
+          print(f"- total downloaded: **{report['total_downloaded']}**")
+          print(f"- total bytes: **{report['total_bytes']}**")
+          print(f"- licenses: `{report['license_counts']}`")
+          print(f"- MIME types: `{report['mime_counts']}`")
+          print(f"- discovery failures: **{report['discovery_failures']}**")
+          PY
+
+      - name: Split archives into connector-safe parts
+        shell: bash
+        run: |
+          root='open-project-materials/commons-project-materials-120plus'
+          for bucket in pdf portrait ephemera; do
+            for part in 1 2 3 4; do
+              mkdir -p "$root/chunks/$bucket/part-$part"
+            done
+            shopt -s nullglob
+            for file in "$root/$bucket"/[0-9][0-9][0-9]__*; do
+              base=$(basename "$file")
+              number=${base%%__*}
+              index=$((10#$number))
+              part=$(( (index - 1) / 10 + 1 ))
+              mv "$file" "$root/chunks/$bucket/part-$part/$base"
+            done
+          done
+          find "$root/chunks" -maxdepth 3 -type f -printf '%p %s bytes\n' | sort
+
+      - name: Upload PDF parts
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-project-materials-pdf-parts
+          path: open-project-materials/commons-project-materials-120plus/chunks/pdf/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload portrait-reference parts
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-project-materials-portrait-parts
+          path: open-project-materials/commons-project-materials-120plus/chunks/portrait/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload ephemera and mixed-media parts
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-project-materials-ephemera-parts
+          path: open-project-materials/commons-project-materials-120plus/chunks/ephemera/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload manifest and audit package
+        uses: actions/upload-artifact@v4
+        with:
+          name: commons-project-materials-120plus-manifest
+          path: |
+            open-project-materials/commons-project-materials-120plus/manifest.json
+            open-project-materials/commons-project-materials-120plus/manifest.csv
+            open-project-materials/commons-project-materials-120plus/SHA256SUMS.txt
+            open-project-materials/commons-project-materials-120plus/README.md
+            aggregate-report.json
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 30
+
+      - name: Enforce all three 40+ gates
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          report = json.load(open('aggregate-report.json', encoding='utf-8'))
+          failures = {
+              bucket: (report['downloaded_counts'].get(bucket, 0), target)
+              for bucket, target in report['targets'].items()
+              if report['downloaded_counts'].get(bucket, 0) < target
+          }
+          if failures:
+              raise SystemExit(f'120+ gate failed: {failures}')
+          if report['total_downloaded'] < 120:
+              raise SystemExit(f"total gate failed: {report['total_downloaded']} saved")
+          PY
