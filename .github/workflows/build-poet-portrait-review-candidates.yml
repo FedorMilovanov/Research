@@ -1,4 +1,4 @@
-name: Build strict poet portrait review candidates v3
+name: Build identity-scoped poet portrait review candidates v4
 
 on:
   workflow_dispatch:
@@ -8,6 +8,7 @@ on:
       - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates.py'
       - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v2.py'
       - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v3.py'
+      - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v4.py'
       - 'SOURCE_LIBRARY/POET_PORTRAIT_REVIEW_WORKFLOW_2026-07-30.md'
       - 'SOURCE_LIBRARY/processed/POET_PORTRAIT_REVIEW_V1_REJECTION_AUDIT_2026-07-30.md'
 
@@ -15,12 +16,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: poet-portrait-review-v3-${{ github.event.pull_request.number || github.ref }}
+  group: poet-portrait-review-v4-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   build-review-package:
-    name: Build strict recursive-category portrait contact sheets
+    name: Build identity-scoped recursive portrait contact sheets
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
@@ -35,15 +36,15 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --disable-pip-version-check requests pillow
 
-      - name: Build rate-limit-resilient review candidates and contact sheets
+      - name: Build v4 review candidates and contact sheets
         run: >-
-          python SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v3.py
+          python SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v4.py
           --depth 3
           --category-limit 250
           --exact-search-limit 50
           --per-person 10
           --minimum-ready 70
-          --minimum-core 3
+          --minimum-core 1
           --output portrait-review-v2-output
 
       - name: Publish summary
@@ -52,17 +53,17 @@ jobs:
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
           data = json.load(open('portrait-review-v2-output/portrait-v2-candidates.json', encoding='utf-8'))
-          print('# Strict poet portrait review v3')
+          print('# Identity-scoped poet portrait review v4')
           print(f"- review-ready thumbnails: **{data['review_ready']}**")
           print(f"- by person: `{data['review_ready_by_person']}`")
           print(f"- status counts: `{data['status_counts']}`")
           print(f"- contact sheets: `{data['contact_sheets']}`")
           PY
 
-      - name: Upload strict v3 review package
+      - name: Upload v4 review package
         uses: actions/upload-artifact@v4
         with:
-          name: poet-portrait-review-candidates-v3
+          name: poet-portrait-review-candidates-v4
           path: portrait-review-v2-output/
           if-no-files-found: error
           compression-level: 6
