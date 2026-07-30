@@ -31,6 +31,19 @@ jobs:
       - name: Install HTTP dependency
         run: python -m pip install --disable-pip-version-check requests
 
+      - name: Harden malformed URL handling
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py')
+          s = p.read_text(encoding='utf-8')
+          old = '''                parsed = urlparse(url)\n                domain = parsed.netloc.lower().removeprefix("www.")\n                domain_counter[domain] += 1\n                url_occurrences.append({"repo": repo, "path": rel, "url": url, "domain": domain})'''
+          new = '''                try:\n                    parsed = urlparse(url)\n                    domain = parsed.netloc.lower().removeprefix("www.")\n                except ValueError:\n                    domain = "[invalid-url-text]"\n                domain_counter[domain] += 1\n                url_occurrences.append({"repo": repo, "path": rel, "url": url, "domain": domain})'''
+          if old not in s:
+              raise SystemExit('expected URL parse block not found')
+          p.write_text(s.replace(old, new), encoding='utf-8')
+          PY
+
       - name: Run total audit
         env:
           URL_AUDIT_CAP: '1200'
