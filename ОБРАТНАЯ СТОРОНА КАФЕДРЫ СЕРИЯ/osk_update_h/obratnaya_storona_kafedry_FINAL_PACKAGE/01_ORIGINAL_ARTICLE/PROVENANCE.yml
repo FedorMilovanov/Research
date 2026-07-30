@@ -1,0 +1,40 @@
+schema_version: 1
+reviewed_at: 2026-07-30
+package:
+  path: "original_article_latest_uploaded.zip"
+  size_bytes: 264993
+  sha256: "9b02d4358a9a1cde497447d290354d332cfb2398fe6b6b9c7f86b71e7141d1d4"
+  origin_class: "project-working-package"
+  acquisition_source: "UNRESOLVED"
+  acquired_at: "UNRESOLVED"
+  uploader_or_creator: "UNRESOLVED"
+  rights_status: "HOLD"
+  public_redistribution: false
+  notes: >-
+    The repository contains the package as a working/recovery artifact. The total
+    cross-repository audit did not find a trustworthy adjacent record of who
+    created or uploaded the ZIP, the original external source, or redistribution
+    permission. Do not present it as an independently sourced publication and do
+    not mirror it outside the research archive until those fields are recovered.
+
+extracted_counterpart:
+  path: "extracted_index.html"
+  size_bytes: 264511
+  sha256: "7cd2e1021a18dd8994d989b53f61e1fff7382ad0e1c4d093a8f9d119e7d79c6b"
+  relationship: "working extraction associated with the ZIP; byte-level equivalence not asserted"
+
+editorial_use:
+  allowed:
+    - "private comparison with the extracted working HTML"
+    - "recovery of project text and structure"
+    - "internal audit and migration"
+  blocked:
+    - "claiming the ZIP is an official publisher copy"
+    - "public redistribution without recovered rights/source information"
+    - "using embedded third-party media without item-level review"
+
+recovery_tasks:
+  - "identify the conversation, email, Drive item, commit, or local handoff that supplied the ZIP"
+  - "record original filename, timestamp and creator/uploader"
+  - "compare archive members with extracted_index.html and list transformations"
+  - "review embedded images, fonts and quoted material separately"
