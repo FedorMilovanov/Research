@@ -1,0 +1,95 @@
+name: Total cross-repo source audit
+
+on:
+  pull_request:
+    paths:
+      - 'SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py'
+      - 'SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py'
+      - 'SOURCE_LIBRARY/tools/classify_dead_source_urls.py'
+      - '.github/workflows/total-cross-repo-source-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: total-cross-repo-source-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Scan four repositories and audit sources
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - name: Checkout Research audit branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install HTTP dependency
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Harden malformed URL handling
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py')
+          s = p.read_text(encoding='utf-8')
+          old = '''                parsed = urlparse(url)\n                domain = parsed.netloc.lower().removeprefix("www.")\n                domain_counter[domain] += 1\n                url_occurrences.append({"repo": repo, "path": rel, "url": url, "domain": domain})'''
+          new = '''                try:\n                    parsed = urlparse(url)\n                    domain = parsed.netloc.lower().removeprefix("www.")\n                except ValueError:\n                    domain = "[invalid-url-text]"\n                domain_counter[domain] += 1\n                url_occurrences.append({"repo": repo, "path": rel, "url": url, "domain": domain})'''
+          if old not in s:
+              raise SystemExit('expected URL parse block not found')
+          p.write_text(s.replace(old, new), encoding='utf-8')
+          PY
+
+      - name: Run total audit
+        env:
+          URL_AUDIT_CAP: '1200'
+          URL_AUDIT_WORKERS: '24'
+        run: python SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py
+
+      - name: Run refined source-only audit
+        env:
+          REFINED_URL_AUDIT_CAP: '2500'
+          REFINED_URL_AUDIT_WORKERS: '36'
+        run: python SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py
+
+      - name: Classify true dead sources
+        run: python SOURCE_LIBRARY/tools/classify_dead_source_urls.py
+
+      - name: Show executive reports
+        run: |
+          sed -n '1,220p' total-audit-output/TOTAL_CROSS_REPO_SOURCE_AUDIT.md
+          printf '\n--- REFINED ---\n'
+          sed -n '1,240p' total-audit-output/refined/REFINED_TOTAL_SOURCE_AUDIT.md
+          printf '\n--- DEAD URL CLASSIFICATION ---\n'
+          cat total-audit-output/dead-url-classification/DEAD_URL_CLASSIFICATION.md
+
+      - name: Build compact audit package
+        run: |
+          cp SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py total-audit-output/
+          cp SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py total-audit-output/
+          cp SOURCE_LIBRARY/tools/classify_dead_source_urls.py total-audit-output/
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          root = Path('total-audit-output')
+          rows = []
+          for p in sorted(root.rglob('*')):
+              if p.is_file():
+                  h = hashlib.sha256(p.read_bytes()).hexdigest()
+                  rows.append({'file': p.relative_to(root).as_posix(), 'size_bytes': p.stat().st_size, 'sha256': h})
+          (root/'PACKAGE_MANIFEST.json').write_text(json.dumps(rows, indent=2), encoding='utf-8')
+          PY
+
+      - name: Upload total audit reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: total-cross-repo-source-audit-2026-07-30
+          path: total-audit-output/
+          if-no-files-found: error
+          retention-days: 30
