@@ -1,4 +1,4 @@
-name: Build poet portrait review candidates
+name: Build strict poet portrait review candidates v2
 
 on:
   workflow_dispatch:
@@ -6,20 +6,22 @@ on:
     paths:
       - '.github/workflows/build-poet-portrait-review-candidates.yml'
       - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates.py'
+      - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v2.py'
       - 'SOURCE_LIBRARY/POET_PORTRAIT_REVIEW_WORKFLOW_2026-07-30.md'
+      - 'SOURCE_LIBRARY/processed/POET_PORTRAIT_REVIEW_V1_REJECTION_AUDIT_2026-07-30.md'
 
 permissions:
   contents: read
 
 concurrency:
-  group: poet-portrait-review-${{ github.event.pull_request.number || github.ref }}
+  group: poet-portrait-review-v2-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   build-review-package:
-    name: Build category-based portrait contact sheets
+    name: Build strict recursive-category portrait contact sheets
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     steps:
       - name: Checkout PR merge candidate
         uses: actions/checkout@v4
@@ -32,34 +34,35 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --disable-pip-version-check requests pillow
 
-      - name: Build review candidates and contact sheets
+      - name: Build strict v2 review candidates and contact sheets
         run: >-
-          python SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates.py
-          --category-limit 150
-          --search-limit 50
-          --per-person 8
+          python SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v2.py
+          --depth 3
+          --category-limit 250
+          --exact-search-limit 50
+          --per-person 10
           --minimum-ready 70
-          --output portrait-review-output
+          --minimum-core 3
+          --output portrait-review-v2-output
 
       - name: Publish summary
         shell: bash
         run: |
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
-          data = json.load(open('portrait-review-output/portrait-candidates.json', encoding='utf-8'))
-          print('# Poet portrait review candidates')
+          data = json.load(open('portrait-review-v2-output/portrait-v2-candidates.json', encoding='utf-8'))
+          print('# Strict poet portrait review v2')
           print(f"- review-ready thumbnails: **{data['review_ready']}**")
-          print(f"- people: **{len(data['people'])}**")
           print(f"- by person: `{data['review_ready_by_person']}`")
           print(f"- status counts: `{data['status_counts']}`")
           print(f"- contact sheets: `{data['contact_sheets']}`")
           PY
 
-      - name: Upload review package
+      - name: Upload strict v2 review package
         uses: actions/upload-artifact@v4
         with:
-          name: poet-portrait-review-candidates
-          path: portrait-review-output/
+          name: poet-portrait-review-candidates-v2
+          path: portrait-review-v2-output/
           if-no-files-found: error
           compression-level: 6
           retention-days: 30
