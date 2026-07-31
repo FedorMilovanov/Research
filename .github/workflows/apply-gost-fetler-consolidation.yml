@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   integrate:
-    if: github.event.issue.title == '[automation] apply Gost Fetler v129b'
+    if: github.event.issue.title == '[automation] apply Gost Fetler v129c'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -33,15 +33,13 @@ jobs:
           test "$(grep -Foc 'Р. А. Фетлер** | 1861–1933' "$root/groups/02_HISTORY_NARRATIVE.md" || true)" = 0
           git diff --check
 
-      - name: Remove one-shot machinery and push
+      - name: Commit and push Research files only
         shell: bash
         run: |
           set -euo pipefail
-          rm -f .github/scripts/apply_gost_v129.py
-          rm -f .github/workflows/apply-gost-fetler-consolidation.yml
           git config user.name 'OpenAI Research Integrator'
           git config user.email 'research-integrator@users.noreply.github.com'
-          git add -A
+          git add 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED'
           git commit -m 'research(baptists): integrate Gost and split Fetler authorities'
           git push origin HEAD:main
 
