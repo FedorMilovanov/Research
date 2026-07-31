@@ -1,1 +1,1 @@
-Temporary registration marker for the Gost v135 congress supersession workflow. Registration pulse confirmed after workflow commit. Delete with the workflow and script after the successful research commit is verified.
+Temporary registration marker for the Gost v135 congress supersession workflow. Push trigger fired after marker-path-only registration. Delete with the workflow and script after the successful research commit is verified.
