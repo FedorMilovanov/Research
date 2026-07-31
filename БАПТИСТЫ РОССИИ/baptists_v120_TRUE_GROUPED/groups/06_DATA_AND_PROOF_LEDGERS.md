@@ -3768,3 +3768,45 @@ A full export of the Telegram channel «Синичкин рассказывае�
 ### Status honesty
 
 No row was promoted to `quote_card_verified` without a text layer + visual check. The percentage snapshot therefore shifts on `file_access`/`page_count` only, not on quote-readiness. Quote-grade work is now unblocked for the typed-document subset (Pavlov, Voronin, protocols, Shilov–Lenin, 1923 statement, Bonch-Bruevich 1902, the three bibliographies) and is queued in `NEXT_MICROBATCH.csv`.
+
+## v129 — `Гость` / Фетлеры: consolidated proof ledger
+
+| ID | Тезис / объект | Финальный статус | Разрешено | Заблокировано |
+|---|---|---|---|---|
+| GOST-129-001 | statutory name / post-split usage | partially_resolved | различать wording и usage | AAN I1082 pending |
+| GOST-129-002 | Union / Mutual Aid Society | primary_boundary_confirmed | cooperation with autonomy | общий издатель |
+| GOST-129-003 | Fetler group / L. Jesakow | primary_text_visual_pending | организация и роль с атрибуцией | facsimile-exact wording |
+| GOST-129-004 | unnamed rival society | counterpart_unknown | сообщение Союза | назвать Mutual Aid Society |
+| GOST-129-005 | Husaruk parenthesis | semantic_role_hold | association trace | editor/head role |
+| GOST-129-006 | 27 380 / 27 383 | arithmetic_conflict | хранить оба | silent correction |
+| GOST-129-007 | 400 / 401 | arithmetic_conflict | хранить оба | silent correction |
+| GOST-129-008 | William / Robert conflation | critical_correction_applied | separate persons | restore old row |
+| GOST-129-009 | 365 hits | surname_pool | contextual recount | person attribution |
+| GOST-129-010 | Blagovestnik no.1/1919 reproduction | facsimile_reproduction_verified | cite provenance | original acquired |
+| GOST-129-011 | Robert 1892–1941 | family_archive_strong_primary_file_pending | use with qualifier | primary-card verified |
+| GOST-129-012 | LBC `Гость` 1923–1930 | holding_confirmed_completeness_unknown | request inventory | call complete run |
+| GOST-129-013 | AAN 1446 p.70 | source_family_confirmed | source-family statement | specific issue/table |
+| GOST-129-014 | family PDF | reference_verified_no_repo_binary | link, SHA and provenance | duplicate upload |
+
+### Superseded
+
+1. `Р. А. Фетлер, 1861–1933, 365` → deprecated conflation.
+2. `15 February should be March 1905` → rejected; February sequence valid.
+3. `1937 cooperation = merger` → rejected.
+4. `Husaruk = editor/head` → unsupported HOLD.
+5. Printed totals may be silently normalized → rejected.
+
+### P0/P1 request queue — not sent
+
+AAN I1082; AAN 1446 p.70; APL 35/413/0/9/644; LVA 1987/1/13296; Wardin AR915 Box9/9.5–9.6; LBC issue inventory; GAPK 1921 №5; Prokhorov Appendix8; Kupsch pp.172–182; GCAH Jesakow. Every request remains `READY TO REQUEST — NOT SENT`.
+
+### Stable links
+
+- https://czasopisma.ipn.gov.pl/index.php/pis/article/download/2522/2386/3538
+- https://dlibra.kul.pl/publication/1714/edition/1866/
+- https://jbc.bj.uj.edu.pl/dlibra/publication/678242/ewangeliczny-chrzescijanin
+- https://search.rsl.ru/ru/record/01000371468
+- https://search.rsl.ru/ru/record/01006754154
+- https://www.prlib.ru/history/619208
+- https://bible.lv/en/fetler-family-heirlooms/
+- https://drive.google.com/file/d/1CUpNUJKayB3witUEm8bhzVP9VPAC1vv-/view

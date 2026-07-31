@@ -1110,7 +1110,8 @@ A coverage map of the **load-bearing leaders** across the channel's 5 269 posts,
 | **В. Г. Павлов** | 1854–1924 (1886 protocol — missionary appointment) | 198 | Tiflis presbyter/evangelist; baptised A. M. Mazayev 1875 (post #1848) |
 | **В. А. Пашков** | 1831–1902 (confession of faith 1880 — primary, v125d; post #5083) | 66 | Pashkovite founder; 4th stream (Krathaya Zapiska, v125e) |
 | **Н. И. Воронин** | 1840–1905 (own letter to Mazayev 1889 — primary, v125b) | 49 | «first Russian Baptist»; baptised 20.08.1867 by Kal'veit |
-| **Р. А. Фетлер** | 1861–1933 (standard reference; *needs primary card*) | 365 | Latvian-born evangelist; Far-East/emigration periodicals |
+| **В. А. Фетлер (Вильгельм / William)** | 1883–1957 (RSL authority records) | surname pool not yet disambiguated | St Petersburg/Riga evangelist, author, compiler and publishing organizer; `Вера`, `Гость`, legal and devotional booklet network |
+| **Р. А. Фетлер (Роберт / Robert)** | 1892–1941 (family archive strong; exact LVA file 1987/1/13296 located, contents pending) | surname pool not yet disambiguated | Omsk/Vladivostok pastor and editor-publisher of `Благовестник`; distinct younger brother of William |
 | **И. В. Каргель** | 1849–1937 (standard reference; *needs primary card*) | 122 | St Petersburg/Petrograd teacher; influenced Prokhanov |
 
 ### Soviet-era leaders (ВСЕХБ / СЦ ЕХБ)
@@ -1138,3 +1139,38 @@ Allowed (Level C navigation + flagged primaries):
 Not allowed:
 
 > Citing any lifespan above as established fact where it is tagged «standard reference / needs primary card», or quoting biographical detail from the posts themselves without routing it through a held primary document.
+
+## v129 — `Гость` и Фетлеры: консолидированный H–L delta
+
+**Дата интеграции:** 2026-07-31  
+**Метод:** один no-loss блок вместо последовательного добавления марафонов H–L.  
+**Gate:** metadata, text layer и reproduction не повышаются до `quote_ready` без полного оригинала, OCR и визуальной сверки.
+
+### Authority-коррекция
+
+- **Вильгельм Андреевич Фетлер (1883–1957):** Петербург—Рига; `Вера`, `Гость`; автор, составитель и издательский организатор. РГБ закрепляет полную форму имени и годы жизни.
+- **Роберт Андреевич Фетлер (1892–1941):** Омск—Владивосток; редактор-издатель `Благовестника`. Точный первичный маршрут — Latvijas Valsts arhīvs, фонд 1987, опись 1 (Rīga), дело 13296; само дело ещё не просмотрено.
+- Число **365** означает только `FETLER SURNAME HITS — PERSON DISAMBIGUATION REQUIRED` и не присваивается одному из братьев.
+
+### Юридическая и организационная граница
+
+- Уставное имя сохраняло евангельских христиан и баптистов; после выхода баптистов в 1925 году употреблялось имя без них. Статус: `PARTIALLY RESOLVED — STATUTORY NAME VS POST-SPLIT USAGE`.
+- Союз и Общество взаимной помощи оставались самостоятельными организациями; координация 1937 года не доказывает слияния или общего издателя.
+- Официальный орган Союза в апреле 1939 года исправляет формулу «группа Фетлера» на легализованное Общество взаимной помощи и называет `ks. L. Jesakow` руководителем.
+- Jesakow: `PROBABLE LEONID/LEON — IDENTITY NOT CLOSED`.
+- `(Husaruk)`: первичный след ассоциации; редакторская/руководящая роль `HOLD`.
+- Неназванное общество из предупреждения 1939 года не отождествляется с Обществом взаимной помощи без прямого документа.
+
+### Роберт Фетлер и `Благовестник`
+
+В публичном семейно-архивном корпусе воспроизведена обложка №1, март 1919, Омск; читается адрес Сенная, 10, а подпись называет Р. А. Фетлера редактором-издателем. Статус: `FACSIMILE REPRODUCTION VISUALLY VERIFIED — ORIGINAL ISSUE FILE NOT HELD`.
+
+Точные маршруты: Wardin AR 915 Box 9 Folders 9.5–9.6; GAPK, май 1921 №5; приложение 8 книги В. А. Прохорова. Сохраняется конфликт `1919–1921` в библиографии против №5 конца 1922 года в повествовании.
+
+### Новый P0-корпус `Гостя`
+
+Музей Вильяма Фетлера / Latvian Biblical Centre сообщает о физической коллекции `Гостя` 1923–1930. Доказан хранитель и диапазон; не доказаны полнота, непрерывность, дубли, приложения и права на оцифровку. Следующий шаг — issue-level inventory и контрольные фото обложек/колофонов.
+
+### Запреты
+
+Не переносить издателя одного журнала на другой; не присваивать 365 одному Фетлеру; не называть музейный диапазон полным комплектом; не назначать Гусарука редактором; не исправлять печатную статистику молча.

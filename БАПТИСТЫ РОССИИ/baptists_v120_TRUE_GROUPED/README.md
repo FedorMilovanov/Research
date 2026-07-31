@@ -133,3 +133,10 @@ Added early BRATSKII LISTOK 1965–1966 verification pass. This version keeps th
 ## v120 update — 1967–1970 BRATSKII LISTOK early block
 
 v120 continues the grouped architecture. It adds an early BRATSKII LISTOK verification pass covering 1967 item-only cards, 1968 page-verified issues, and 1969–1970 holdings-without-page rows. The archive remains non-quote-ready until local file/OCR/visual-check work is completed.
+
+## v129 update — `Гость` / Фетлеры, no-loss H–L integration
+
+- Исправлена склейка Вильгельма и Роберта Фетлеров; `365` перенесено в surname-disambiguation pool.
+- Интегрированы юридическая граница Союза/Общества, JBC-корпус, статистические конфликты, HOLD по Husaruk и authority-route Jesakow.
+- Зарегистрированы LVA 1987/1/13296, Wardin AR915 Box9/9.5–9.6, `Благовестник` и музейная коллекция `Гостя` 1923–1930.
+- Новых scattered MD и тяжёлых бинарников не создано; `quote_ready` не повышался.

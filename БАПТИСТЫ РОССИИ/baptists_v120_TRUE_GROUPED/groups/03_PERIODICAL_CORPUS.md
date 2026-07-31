@@ -13669,3 +13669,39 @@ This fixes the Baptist doctrinal boundary (closed communion, no open table) at t
 - **Бонч-Бруевич «Преследование баптистов» 1902** (111 pp, the largest single source) — old orthography; high ROI.
 - «Баптист» 1909–1911 first-pages → masthead/issue-number map (cheap, ~1 page each).
 - A representative «Баптист» full-issue OCR to assess quote-readiness on the periodical body.
+
+## v129 — `Гость`: контрольный корпус, издательская сеть и новые holdings
+
+### Контрольный первичный корпус
+
+JBC хранит официальный орган Союза `Ewangeliczny Chrześcijanin` за 1935–1939 годы. Он используется для юридических имён, решений, адресов и руководства, но не является выпуском или продолжением `Гостя`.
+
+- group: https://jbc.bj.uj.edu.pl/dlibra/publication/678242/ewangeliczny-chrzescijanin
+- March 1937 PDF: https://jbc.bj.uj.edu.pl/Content/680472/0001_NDIGCZAS039838_110491185.pdf
+- April 1939 PDF: https://jbc.bj.uj.edu.pl/Content/680480/0001_NDIGCZAS039838_110491233.pdf
+
+### Печатная статистика 1939 года
+
+| Показатель | Союз | Общество | Сумма | Напечатано | Статус |
+|---|---:|---:|---:|---:|---|
+| Члены с детьми | 16 007 | 11 373 | 27 380 | 27 383 | arithmetic conflict |
+| Пресвитеры и диаконы | 116 | 40 | 156 | 156 | match |
+| Евангелисты и работники | 187 | 213 | 400 | 401 | arithmetic conflict |
+
+Напечатанное и вычисленное хранить раздельно.
+
+### Передача источника
+
+`Kirchenblatt für die reformierte Schweiz` 21–22/1935 → `Zwiastun Ewangeliczny` 51–52/1935 и 1/1936 → `Ewangeliczny Chrześcijanin` 1/1937 → корректирующая статья 1/1939. Это граф передачи, а не независимые свидетельства. Контроль: Eduard Kupsch, `Die Freikirchen in Polen`, 1938, pp.172–182.
+
+### Издательская сеть `Гостя`
+
+РГБ фиксирует брошюры редакции или конторы `Гостя`: `Скрытое сокровище` (https://search.rsl.ru/ru/record/01004213601) и R. A. Torrey, `Потрясающий вопрос` (https://search.rsl.ru/ru/record/01004214188). Модель различает periodical, editorial office, imprint, booklet series, editor, translator, printer и address.
+
+### Holdings
+
+- LBC museum: физическая коллекция `Гостя` 1923–1930; completeness unknown; P0 inventory. https://bible.lv/en/fetler-family-heirlooms/
+- Public family compilation: https://drive.google.com/file/d/1CUpNUJKayB3witUEm8bhzVP9VPAC1vv-/view — modern compilation, not original issue.
+- AAN 1446 p.70: `Siejatiel Istiny` или `Gost` среди источников; конкретный выпуск не установлен.
+- AAN I1082: устав и переписка 1922–1931; P0, без сканов.
+- KUL 1927 statute: https://dlibra.kul.pl/publication/1714/edition/1866/ — 8 pages, full stable file/page review pending.
