@@ -1,0 +1,250 @@
+name: Apply Gost v133 evidence routes
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: baptists-grouped-writes
+  cancel-in-progress: false
+
+jobs:
+  integrate:
+    if: github.event.issue.title == '[automation] apply Gost v133 evidence routes'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Apply v133 to current main
+        shell: bash
+        run: |
+          set -uo pipefail
+          : > /tmp/gost-v133.log
+          success=0
+          for attempt in 1 2 3 4; do
+            echo "attempt=$attempt" | tee -a /tmp/gost-v133.log
+            git fetch origin main >> /tmp/gost-v133.log 2>&1 || exit 1
+            git reset --hard origin/main >> /tmp/gost-v133.log 2>&1 || exit 1
+            python - <<'PY' >> /tmp/gost-v133.log 2>&1
+          from pathlib import Path
+          import csv
+
+          root = Path('БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED')
+          ledger = root / 'groups/06_DATA_AND_PROOF_LEDGERS.md'
+          sources = root / 'data/SOURCE_ANCHORS.csv'
+          proof = root / 'data/PROOF_STATUS_LEDGER.csv'
+          micro = root / 'data/NEXT_MICROBATCH.csv'
+          for path in (ledger, sources, proof, micro):
+              if not path.exists():
+                  raise SystemExit(f'missing required file: {path}')
+
+          marker = '## v133 — Seiatel Istiny 1926 no.2: page-map, issue trace and publisher-history routes'
+          block = r'''
+          ## v133 — Seiatel Istiny 1926 no.2: page-map, issue trace and publisher-history routes
+
+          Three non-duplicate evidence routes now narrow the recovery of the exact citation `Сеятель Истины`, 1926, no.2, p.15.
+
+          1. N. V. Potapova's author/university full-text monograph supplies exact article, issue and page citations across the Hartford run for 1919–1922 and reproduces the first `Сеятель Истины` issue on book p.269. The accessible text does not identify Gusaruk, `Воскресная школа`, or the target 1926 page. Its value is the source-holder and page-map route.
+          2. G. P. Vins's memoir reproduces a notice explicitly attributed to the February 1926 issue and also cites September and December 1926 material. This is an independent content trace for the physical February issue, but it gives no printed page, cover, colophon, scan provenance or Gusaruk connection.
+          3. The official RUEBU conference report states that a 100-year history of the journal, assembled from several authors and containing little-known details, was available from the publisher. The old archive navigation also exposes an unpopulated `1926–1935` branch. The report and its bibliography/holding list are therefore exact acquisition targets, not substitutes for the issue.
+
+          No status upgrade is permitted: Gusaruk's role, the appendix start year and the wording of p.15 remain `HOLD`. The exact dual recovery step is to request from RUEBU the cover, contents, p.15 and final colophon of no.2/1926 together with the centenary report/source list, and to ask Potapova/SakhGU to identify the US holding used for the 1919–1926 run and any surviving control image or transcription of p.15.
+          '''
+          text = ledger.read_text(encoding='utf-8')
+          if marker not in text:
+              ledger.write_text(text.rstrip() + '\n\n' + block.strip() + '\n', encoding='utf-8')
+
+          def load_csv(path):
+              with path.open(encoding='utf-8-sig', newline='') as fh:
+                  reader = csv.DictReader(fh)
+                  fields = reader.fieldnames or []
+                  rows = list(reader)
+              if not fields:
+                  raise SystemExit(f'missing CSV header: {path}')
+              return fields, rows
+
+          def save_csv(path, fields, rows):
+              with path.open('w', encoding='utf-8-sig', newline='') as fh:
+                  writer = csv.DictWriter(fh, fieldnames=fields, lineterminator='\r\n')
+                  writer.writeheader()
+                  writer.writerows(rows)
+
+          def upsert(path, key, value, record):
+              fields, rows = load_csv(path)
+              matches = [row for row in rows if (row.get(key) or '').strip() == value]
+              if len(matches) > 1:
+                  raise SystemExit(f'duplicate {value} in {path}')
+              clean = {k: v for k, v in record.items() if k in fields}
+              if matches:
+                  matches[0].update(clean)
+              else:
+                  row = {field: '' for field in fields}
+                  row.update(clean)
+                  rows.append(row)
+              save_csv(path, fields, rows)
+
+          upsert(sources, 'source_id', 'GOST-133-SRC-POTAPOVA-T2', {
+              'source_id': 'GOST-133-SRC-POTAPOVA-T2',
+              'url': 'https://sakhgu.ru/wp-content/uploads/page/record_85100/2019_04/%D0%9F%D0%BE%D1%82%D0%B0%D0%BF%D0%BE%D0%B2%D0%B0-%D0%9D.-%D0%92.-%D0%9C%D0%BE%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F_%D0%A2%D0%BE%D0%BC-2-1.pdf',
+              'confirms': 'Author/university full text maps exact Seiatel Istiny articles, issues and pages for 1919-1922 and reproduces the first issue on book p.269; target 1926 no.2 p.15 is not exposed.',
+              'source': 'N. V. Potapova / Sakhalin State University',
+              'authority_level': 'A2 author-university full text; target page unseen',
+              'used_for': 'early issue-page map and US source-holder route',
+              'version': 'v133',
+              'source_key': 'GOST-133-SRC-POTAPOVA-T2',
+              'use': 'identify US holding and request targeted control image',
+              'label': 'Potapova vol.2 — Seiatel Istiny early page map',
+              'type': 'academic monograph full text',
+              'trust_note': 'Exact citations are useful as targets; no Gusaruk/Voskresnaia claim or 1926 p.15 facsimile is present in the inspected text.',
+              'source_type': 'author-university full text',
+              'note': 'Appendix p.269 reproduces first-issue images; visual PDF page check remained blocked in current tooling.'
+          })
+
+          upsert(sources, 'source_id', 'GOST-133-SRC-VINS-1926-02', {
+              'source_id': 'GOST-133-SRC-VINS-1926-02',
+              'url': 'https://vgulage.name/chapters/missioner-iz-ameriki/',
+              'confirms': 'Memoir reproduces a notice explicitly attributed to the February 1926 Seiatel Istiny and cites related September/December 1926 material.',
+              'source': 'G. P. Vins, Tropoyu vernosti',
+              'authority_level': 'B secondary verbatim issue trace',
+              'used_for': 'independent February 1926 issue-content trace',
+              'version': 'v133',
+              'source_key': 'GOST-133-SRC-VINS-1926-02',
+              'use': 'confirm issue-content trace only',
+              'label': 'Vins memoir — February 1926 Seiatel Istiny notice',
+              'type': 'memoir transcription of periodical notice',
+              'trust_note': 'No printed page, cover, colophon, scan provenance or Gusaruk connection is supplied.',
+              'source_type': 'secondary verbatim transcription',
+              'note': 'Do not substitute the memoir text for p.15 or infer that the reproduced notice occupied p.15.'
+          })
+
+          upsert(sources, 'source_id', 'GOST-133-SRC-RUEBU-100Y', {
+              'source_id': 'GOST-133-SRC-RUEBU-100Y',
+              'url': 'https://ruebu.net/ru/news/category-conferences/153-97th-annual-conference-2016',
+              'confirms': 'Official report says a 100-year history of Seiatel Istiny compiled from several authors contained little-known details and copies were available from the publisher; archive navigation exposes an unpopulated 1926-1935 branch.',
+              'source': 'RUEBU / Slavic Missionary Publications',
+              'authority_level': 'A official publisher report; report contents unseen',
+              'used_for': 'centenary report, bibliography and holding-source recovery',
+              'version': 'v133',
+              'source_key': 'GOST-133-SRC-RUEBU-100Y',
+              'use': 'request report and source/holding list with no.2/1926',
+              'label': 'RUEBU 100-year history report and 1926-1935 archive branch',
+              'type': 'official publisher conference report',
+              'trust_note': 'Confirms report/request route, not that the report contains p.15 or a complete issue inventory.',
+              'source_type': 'official publisher route',
+              'note': 'Request report and its bibliography/provenance together with cover, contents, p.15 and colophon.'
+          })
+
+          upsert(proof, 'item_id', 'GOST-130-004', {
+              'item_id': 'GOST-130-004',
+              'corpus': 'Воскресная школа',
+              'issue': 'Gusaruk source chain / Seiatel Istiny 1926 no.2 p.15',
+              'status': 'exact_primary_citation_located_issue_content_trace_and_source_holder_routes_added_target_page_unseen',
+              'pages': 'p.15 target unseen; separate February 1926 notice trace; early 1919-1922 page map; cover/contents/colophon required',
+              'holding': 'RUEBU publisher/archive; Potapova US source-holder route; MHC inventory excludes no.2',
+              'source': 'Gusaruk profile; Potapova vol.2; Vins memoir; RUEBU centenary report; MHC; Emigrantika',
+              'next_action': 'Request RUEBU no.2/1926 cover, contents, p.15, colophon plus centenary report/source list; ask Potapova/SakhGU for exact US holding and p.15 control image',
+              'year': '1926 / appendix chronology 1923-1936 vs 1933-1936',
+              'source_url': 'https://ruebu.net/ru/news/category-conferences/153-97th-annual-conference-2016',
+              'verification_note': 'New routes prove issue content and research access, not the target wording, Gusaruk editorship or appendix start year; all remain HOLD.',
+              'version': 'v133'
+          })
+
+          fields, rows = load_csv(micro)
+          item = 'Obtain Seiatel Istiny 1926 no.2 p.15'
+          matches = [row for row in rows if (row.get('item') or '').strip() == item]
+          if len(matches) != 1:
+              raise SystemExit(f'expected one exact microbatch row; found {len(matches)}')
+          matches[0].update({
+              'priority': 'P0',
+              'goal': 'Acquire RUEBU cover, contents, p.15 and colophon plus the 100-year report/source list; identify Potapova US holding and request a control image or exact transcription',
+              'blocker': 'Potapova maps the early run and Vins traces February 1926 content, but target p.15/facsimile and the US holding identity remain unavailable; requests are READY TO REQUEST — NOT SENT'
+          })
+          save_csv(micro, fields, rows)
+
+          if ledger.read_text(encoding='utf-8').count(marker) != 1:
+              raise SystemExit('v133 ledger marker count is not one')
+          for path, key, value in [
+              (sources, 'source_id', 'GOST-133-SRC-POTAPOVA-T2'),
+              (sources, 'source_id', 'GOST-133-SRC-VINS-1926-02'),
+              (sources, 'source_id', 'GOST-133-SRC-RUEBU-100Y'),
+              (proof, 'item_id', 'GOST-130-004'),
+              (micro, 'item', item),
+          ]:
+              _, check_rows = load_csv(path)
+              count = sum(1 for row in check_rows if (row.get(key) or '').strip() == value)
+              if count != 1:
+                  raise SystemExit(f'expected one {value} in {path}; found {count}')
+          print('Gost v133 evidence-route integration prepared successfully')
+          PY
+            status=$?
+            if [ "$status" -ne 0 ]; then
+              cat /tmp/gost-v133.log
+              exit "$status"
+            fi
+            git config user.name 'OpenAI Research Integrator'
+            git config user.email 'research-integrator@users.noreply.github.com'
+            git config core.whitespace cr-at-eol
+            git add -- \
+              'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/groups/06_DATA_AND_PROOF_LEDGERS.md' \
+              'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/SOURCE_ANCHORS.csv' \
+              'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv' \
+              'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv'
+            if git diff --cached --quiet; then
+              echo 'No research changes required; exact v133 state already present.' | tee -a /tmp/gost-v133.log
+              success=1
+              break
+            fi
+            git diff --cached --check >> /tmp/gost-v133.log 2>&1 || exit 1
+            git commit -m 'research(baptists): deepen Seiatel Istiny 1926 evidence routes v133' >> /tmp/gost-v133.log 2>&1 || exit 1
+            if git push origin HEAD:main >> /tmp/gost-v133.log 2>&1; then
+              success=1
+              break
+            fi
+            echo 'push race detected; reapplying to fresh origin/main' | tee -a /tmp/gost-v133.log
+          done
+          cat /tmp/gost-v133.log
+          if [ "$success" -ne 1 ]; then
+            echo 'bounded retries exhausted' >&2
+            exit 1
+          fi
+
+      - name: Post diagnostic log
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, urllib.request
+          path = pathlib.Path('/tmp/gost-v133.log')
+          body = path.read_text(errors='replace') if path.exists() else 'No integration log produced.'
+          payload = json.dumps({'body': '```text\n' + body[-50000:] + '\n```'}).encode()
+          url = f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/issues/{os.environ['ISSUE_NUMBER']}/comments"
+          request = urllib.request.Request(url, data=payload, method='POST', headers={
+              'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+              'Accept': 'application/vnd.github+json',
+              'Content-Type': 'application/json',
+          })
+          urllib.request.urlopen(request).read()
+          PY
+
+      - name: Close successful trigger
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          curl -fsSL -X PATCH \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H 'Accept: application/vnd.github+json' \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${{ github.event.issue.number }}" \
+            -d '{"state":"closed","state_reason":"completed"}'
