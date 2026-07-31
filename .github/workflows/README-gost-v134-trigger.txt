@@ -1,1 +1,0 @@
-Temporary registration marker for the issue-triggered Gost v134 HOLD-resolution integration. Delete after successful research commit and verification.
