@@ -23,6 +23,7 @@
 - [`BOOK_CONVERSION_AND_SITE_REMEDIATION_2026-07-31.md`](BOOK_CONVERSION_AND_SITE_REMEDIATION_2026-07-31.md) — решение о переходе от ограниченной серии к книге из 17 глав с сохранением URL.
 - [`OFFICIAL_PDF_SOURCE_LEDGER_73_2026-07-31.md`](OFFICIAL_PDF_SOURCE_LEDGER_73_2026-07-31.md) — независимая копия 73 прямых официальных PDF-ссылок и незакрытых слотов.
 - [`OFFICIAL_HOLE_CLOSURES_2026-07-31.md`](OFFICIAL_HOLE_CLOSURES_2026-07-31.md) — прямой официальный маршрут «Баптиста» 1909 №20, проверенные PDF «Братского вестника» 1945 №1/№3 и оставшиеся доказательные пробелы.
+- [`SECOND_PDF_DJVU_ACQUISITION_LEDGER_61_2026-07-31.md`](SECOND_PDF_DJVU_ACQUISITION_LEDGER_61_2026-07-31.md) — второй пакет из 61 прямого PDF/DJVU-маршрута; суммарно зафиксировано 135 прямых URL.
 - [`BOOK_ENGINE_MIGRATION_INVENTORY_2026-07-31.md`](BOOK_ENGINE_MIGRATION_INVENTORY_2026-07-31.md) — аудит всех десяти HTML-глав, жёстко зашитой навигации и найденного бага прогресс-индикатора.
 - [`INITIAL_CLAIM_TO_SOURCE_MATRIX_10_CHAPTERS_2026-07-31.md`](INITIAL_CLAIM_TO_SOURCE_MATRIX_10_CHAPTERS_2026-07-31.md) — приоритеты и статусы ключевых тезисов всех десяти опубликованных глав.
 
@@ -34,7 +35,8 @@
 - `baptisty-rossii/research/80-official-periodicals-pdf-ledger-73-links-2026-07-31.md`;
 - `baptisty-rossii/research/81-official-hole-closures-2026-07-31.md`;
 - `baptisty-rossii/research/82-book-engine-migration-inventory-2026-07-31.md`;
-- `baptisty-rossii/research/83-initial-claim-to-source-matrix-10-chapters-2026-07-31.md`.
+- `baptisty-rossii/research/83-initial-claim-to-source-matrix-10-chapters-2026-07-31.md`;
+- `baptisty-rossii/research/84-second-pdf-djvu-acquisition-ledger-61-links-2026-07-31.md`.
 
 Решение: развивать проект как книгу с отдельными URL глав. Текущие десять опубликованных маршрутов не объединяются в один монолит и не переименовываются без отдельного SYSTEM PR.
 
@@ -48,4 +50,4 @@
 6. Для загрузки фиксируются Drive ID, имя, MIME, байты, страницы, SHA-256, источник, дата и папка.
 7. Платные работы не начинать без отдельного согласования.
 
-Последняя синхронизация: **2026-07-31, книжная архитектура, PDF-интеграция, закрытие URL-пробелов, HTML-аудит и claim-to-source матрица**.
+Последняя синхронизация: **2026-07-31, книжная архитектура, 135 PDF/DJVU URL, закрытие URL-пробелов, HTML-аудит и claim-to-source матрица**.
