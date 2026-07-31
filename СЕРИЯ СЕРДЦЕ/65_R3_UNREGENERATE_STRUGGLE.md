@@ -716,14 +716,17 @@ of Jesus?»).** ✅
 Источники: https://sacred-texts.com/bib/cmt/gill/rom002.htm ;
 https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/romans-2-15.html
 
-**№19. Thomas Watson, The Godly Man's Picture (1666).** ⚠️ ЧАСТИЧНО: подтверждено
-в цитатных сборниках, дословность по первоисточнику сверить.
+**№19. Thomas Watson, The Godly Man's Picture (1666).** SAFE CLOSURE 2026-07-31 as
+`QUOTE-COLLECTION-ONLY / DO-NOT-DIRECT-QUOTE`.
 
 > "Morality is but nature refined — old Adam put in a better dress."
 
 Перевод: «Мораль — лишь облагороженная природа: старый Адам, одетый в лучшее платье».
-Источники: https://www.monergism.com/thethreshold/sdg/watson/The%20Godly%20Man%27s%20Picture%20-%20Thomas%20Watson.pdf ;
-https://www.gracegems.org/30/thomas_watson_quotes.htm
+Эта формула найдена в Watson quote collections, включая GraceGems, но не была закреплена в
+открытом primary chapter/page during this pass. Для статьи не использовать как прямую Watson
+цитату без первичного локатора; вместо неё использовать уже закрытые Calvin II.3.3–4 или
+общий paraphrase: внешняя мораль/цивильность не равна обновлению сердца.
+Источники для future locator only: Monergism PDF / GraceGems Watson quote collections.
 
 **№20. C. H. Spurgeon, «The Wailing of Risca» (MTP vol. 7, №349; 9 декабря 1860).** ✅
 
@@ -752,9 +755,9 @@ https://www.rayfowler.org/2010/05/10/spurgeon-if-sinners-will-be-damned/
 https://archive.spurgeon.org/sermons/0052.php
 
 **№22. «Свободная воля увела многих в ад, но никого не привела на небо» (припис.
-Сперджену).** ⚠️ НЕ ВЕРИФИЦИРОВАНО: в тексте проповеди №52 фразы нет; ходит по цитатникам
-без источника (https://rightwords.eu/quotes/free-will-carried-many-souls-to-hell-but-never-a-soul-to--25726).
-Не использовать, пока не найден первоисточник; вместо неё — №21.
+Сперджену).** SAFE CLOSURE 2026-07-31 as `APOCRYPHAL-RISK / DO-NOT-USE`.
+Фраза не найдена в тексте проповеди №52 и ходит по цитатникам без первичного источника.
+Не использовать как Spurgeon quote; вместо неё — закрытая №21 “Free Will—A Slave”.
 
 **№23. «Virtutes paganorum splendida vitia» (припис. Августину).** ⚠️ ЯРЛЫК, НЕ ЦИТАТА:
 в корпусе Августина отсутствует; реальные опоры — №2, №3, №4; популяризация — Пьер Бейль,

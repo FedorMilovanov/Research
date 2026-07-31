@@ -846,21 +846,13 @@ XVIII века, богословский наследник линии, прив
 (см. выше, п. 1.2 экзегезы).
 
 Филип Эдгком Хьюз (P. E. Hughes, «Paul's Second Epistle to the Corinthians», NICNT, 1962) —
-цитата, найденная через поисковую выдачу [**ТРЕБУЕТ ПРОВЕРКИ** — формулировка «expulsive force»
-подозрительно точно повторяет терминологию Чалмерса (см. ниже), что может означать, что это не
-дословная цитата Хьюза, а чей-то более поздний пересказ/синтез ЕГО экзегезы В ТЕРМИНАХ Чалмерса,
-приписанный ему блогом-агрегатором; нужно свериться по самой книге Хьюза, прежде чем цитировать
-как дословную]:
-> «How much we allow the knowledge of Christ to fill our being will determine how much of the old
-> dead things will fall away and how much new life will spring forth. We must know Jesus for that
-> expulsive force to work within us. We must look long and intently at Jesus.»
-> «Насколько мы позволим познанию Христа наполнить наше существо, настолько отпадёт ветхое
-> мёртвое и настолько прорастёт новая жизнь. Мы должны знать Иисуса, чтобы эта изгоняющая сила
-> действовала внутри нас. Мы должны смотреть на Иисуса — долго и пристально».
+SAFE CLOSURE 2026-07-31 as `BLOCKED-AS-DIRECT-HUGHES-QUOTE`: формулировка «expulsive force»
+подозрительно точно повторяет терминологию Чалмерса и была найдена только как поздний
+пересказ/синтез. До прямого чтения книги Хьюза **не цитировать** и не атрибутировать Хьюзу.
 
-Даже если атрибуция Хьюзу не подтвердится дословно, содержание («долго и пристально смотреть на
-Иисуса» как условие вытеснения ветхого) — точное сжатое резюме всего аргумента статьи, и в любом
-случае может быть использовано как безымянный пасторский вывод, если авторство не подтвердится.
+Разрешённая замена: использовать содержание как редакционный вывод без имени Хьюза — «долго и
+пристально смотреть на Иисуса» как условие вытеснения ветхого — или цитировать проверенного
+Chalmers / Owen / Calvin вместо сомнительной Hughes-формулы.
 
 ### Д. Свидетель на грани: M'Cheyne — «десять взглядов на Христа» (спорная атрибуция, честно разобрать)
 
@@ -1002,7 +994,7 @@ R8 в замаскированный self-help («смотри на Христа
 | 25 | Thomas Chalmers / possible Baxter source | Chalmers reportedly quotes the same saying in an 1844 letter and attributes it to Baxter | Fred Sanders, Scriptorium Daily, read directly 2026-07-31 | **SECONDARY-RESEARCH-READ / BAXTER-ORIGIN-UNCONFIRMED** — do not attribute original authorship to Baxter without primary Baxter locus |
 | 26 | John Piper | «одного доброго взгляда на себя достаточно, чтобы сделать десять взглядов на Христа более сладкими…»; «интроспекция — дорога, а не комната» | *Ten Sweeter, Stronger Looks*, desiringgod.org | ВЕРИФИЦИРОВАНО через поисковую выдачу |
 | 27 | J. I. Packer | «I owe more… to John Owen than to any other theologian… than to anything else he wrote [о Mortification]» | Banner of Truth, «Packer on Owen on Mortification» | ВЕРИФИЦИРОВАНО через поисковую выдачу |
-| 28 | Philip Edgcumbe Hughes (атрибуция под вопросом) | «We must know Jesus for that expulsive force to work within us. We must look long and intently at Jesus.» | предположительно *Paul's Second Epistle to the Corinthians* (NICNT, 1962) | [ТРЕБУЕТ ПРОВЕРКИ] — терминология «expulsive force» подозрительно близка к Чалмерсу, вероятен поздний парафраз, не дословная цитата Хьюза |
+| 28 | Philip Edgcumbe Hughes (атрибуция под вопросом) | «We must know Jesus for that expulsive force…» | alleged secondary/blog wording, not primary Hughes text | **BLOCKED-AS-DIRECT-HUGHES-QUOTE / DO-NOT-ATTRIBUTE** (safe closure 2026-07-31); use Chalmers/Owen/Calvin or anonymous editorial synthesis instead |
 | 29 | John Gill | «...not with the eyes of the body, but with the eyes of their understandings… stamps the image of Christ» | *Exposition of the Entire Bible*, на 2 Кор. 3:18 | ВЕРИФИЦИРОВАНО через поисковую выдачу |
 | 30 | 1689 LBCF | глава 13, «Of Sanctification», п. 1–3 полностью | 1689 London Baptist Confession of Faith | ВЕРИФИЦИРОВАНО (идентичный текст на трёх независимых конфессиональных сайтах) |
 | 31 | Ps 27:4 (МТ) / Пс. 26:4 (Синод.) | евр. текст + Синодальный текст | Tanakh (масоретский текст); bible.com/SYNO, bible-center.ru | ВЕРИФИЦИРОВАНО (первичный библейский текст, множественная сверка) |
@@ -1105,11 +1097,7 @@ R8 в замаскированный self-help («смотри на Христа
 3. **Belleville, «Reflections of Glory» — библиографические данные противоречивы** (SNTSMS/Cambridge
    vs JSNTS 52/Sheffield Academic Press) — сверить перед публикацией, если её тезис будет прямо
    упомянут в статье.
-4. **Hughes, «Paul's Second Epistle to the Corinthians» (NICNT/старая серия, 1962)** — цитата
-   про «expulsive force» вызывает подозрение на анахроничный парафраз (см. цитатный банк №28);
-   нужно либо найти книгу Хьюза напрямую (есть на archive.org — «Paul's Second epistle to the
-   Corinthians», Hughes, Philip Edgcumbe — ссылка найдена, но не открыта), либо снять цитату из
-   финальной статьи и заменить её без атрибуции конкретному автору.
+4. **Hughes — SAFE CLOSURE 2026-07-31 as blocked direct quote.** Do not attribute the “expulsive force” wording to Hughes unless the book is later opened and proves it. For current article drafting, remove Hughes attribution and use Chalmers/Owen/Calvin or anonymous editorial synthesis.
 5. **Spurgeon — SAFE CLOSURE 2026-07-31 at official-library locator level.** Official Spurgeon Library sermon “Glory!” (MTP vol. 29, 1 Pet. 5:10, May 20, 1883) was read. It cites 2 Cor. 3:18 directly and applies it to daily preparation for glory: “By communion with our Lord Jesus we are made like to him…” Boundary: this is not a dedicated sermon on 2 Cor. 3:18, but it is a verified Spurgeon official-library support locator. If a full dedicated Spurgeon sermon on 2 Cor. 3:18 is still wanted, that remains optional.
 6. **Martyn Lloyd-Jones, «Reflecting His Glory» — SAFE CLOSURE 2026-07-31 at official-page level.**
    Official MLJ Trust page was read: https://www.mljtrust.org/sermon/reflecting-his-glory/ .

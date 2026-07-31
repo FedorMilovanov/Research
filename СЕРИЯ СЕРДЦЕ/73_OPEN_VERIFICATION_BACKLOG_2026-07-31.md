@@ -154,7 +154,7 @@ Open not-A+ items:
 |---|---|---|
 | Carson PNTC / Schreiner NAC / Kruse PNTC locators | pages and exact citations need checking | page/edition locators or remove exact quote ambition |
 | Bavinck RD IV | exact quote not verified | 1–2 exact paragraphs with edition/page, or paraphrase only |
-| Whitefield “Every Man’s Necessity” / repeated “born again” statistic | anecdote/stat source not verified | primary biography/Journal source or do not use number |
+| Whitefield born-again anecdote/stat | no primary source found; tradition varies | **BLOCKED AS DOCUMENTED FACT**; use only as labelled tradition or omit |
 | Gill, *Body of Divinity*, Of Regeneration | needs 2–3 exact paragraphs and 1839 page locators | source extract + locator; clarify John 3:5 no-baptism argument |
 | Boston regeneration/change characteristics | partially paraphrased | exact PDF/page split for real/thorough/supernatural/universal change |
 | Stott and Sproul | exact page/source missing | page/chapter confirmation; especially Sproul `watershed` source |
@@ -194,10 +194,10 @@ Open not-A+ items:
 | Calvin Institutes II.3.3–4 | direct CCEL/Beveridge/Battles comparison open | exact source pass; choose English/Russian citation policy |
 | Augustine *Contra Julianum* IV.3.25 | Latin/English not directly verified | PL / Fathers of the Church locator or no direct quote |
 | `splendida vitia` attribution chain | Marshall article metadata/source not closed | establish whether formula is Augustine or later reception |
-| Watson *Godly Man’s Picture* | quote collection only | primary PDF/page locator |
+| Watson *Godly Man’s Picture* morality aphorism | quote collection only | **DO-NOT-DIRECT-QUOTE** unless primary locator is later found |
 | Luther page in Packer/Johnston | page pin missing | edition/page check |
 | Charnock / Bavinck / Hodge candidates | not yet verified | optional support quotes, not needed unless article wants them |
-| Spurgeon “free will carried...” quote | not verified; likely quote-book risk | do not use without primary sermon/source |
+| Spurgeon “free will carried...” quote | apocryphal-risk / quote-book only | **DO NOT USE**; use verified Spurgeon sermon substitute |
 
 Priority: **P1**.
 
@@ -211,7 +211,7 @@ Open not-A+ items:
 
 | Item | Current issue | Needed closure |
 |---|---|---|
-| Whitefield stony-ground quote | primary location not found | Journals / sermon / letters locator or drop/mark as attributed |
+| Whitefield stony-ground quote | primary location not found | **ATTRIBUTED-ONLY / DO-NOT-DIRECT-QUOTE**; use Spurgeon/Calvin substitutes |
 | Calvin Harmony / Luke 8:15 | full paragraph not fetched | CCEL/source readback |
 | France NICNT / Carson EBC | page locators needed | print/ebook locators |
 | Thomas Taylor 1621 | only title-level currently | Hail & Fire PDF exact paragraphs |
@@ -291,7 +291,7 @@ Open not-A+ items:
 | Owen, *Glory of Christ* | all quotes via snippets; chapter locators incomplete | CCEL/PDF exact pass; chapter/page per quote |
 | κατοπτριζόμενοι excursus | content exists, editorial decision open | owner/editor choose main text vs footnote/dropdown |
 | Belleville bibliography | conflicting data | verify edition details before citing |
-| Hughes “expulsive force” quote | suspicious/anachronistic | locate book or remove attribution |
+| Hughes “expulsive force” quote | suspicious/anachronistic | **BLOCKED-AS-DIRECT-HUGHES-QUOTE**; use Chalmers/Owen/Calvin or anonymous synthesis |
 | Spurgeon on 2 Cor. 3:18 | likely material but not found | spurgeongems index/source search |
 | MLJ `Reflecting His Glory` | link found, content not extracted | official MLJ page/audio/transcript check |
 | Owen two-books synthesis | editorial synthesis lacks external exact quote | optional: Kapic/Ferguson/Packer intro search |
@@ -456,9 +456,9 @@ These are not just low-grade; they should be explicitly blocked unless verified:
 |---|---|---|
 | Baucham “sissified/needy Jesus” | `71_R9...` | Do not use without primary source. |
 | “Spurgeon: lion for enemies / lamb for friends” | `71_R9...` | Treat as likely apocryphal; use verified Spurgeon substitutes instead. |
-| Spurgeon “free will carried many souls to hell...” | `65_R3...` | Not found in sermon #52; do not use without primary source. |
+| Spurgeon “free will carried many souls to hell...” | `65_R3...` | **APOCRYPHAL-RISK / DO-NOT-USE**; use verified Spurgeon sermon substitute instead. |
 | Owen “Without the Holy Spirit we may as well burn our Bibles” | `68_R7A...` | Attributed via Banner article but not located in Owen corpus; use Calvin substitute unless exact source found. |
-| Hughes “expulsive force” on 2 Cor 3:18 | `70_R8...` | Suspicious/anachronistic; locate source or remove attribution. |
+| Hughes “expulsive force” on 2 Cor 3:18 | `70_R8...` | **BLOCKED-AS-DIRECT-HUGHES-QUOTE**; remove attribution unless primary book later proves it. |
 | M’Cheyne “ten looks at Christ” | architecture/R8 context | Attribution disputed; verify via Bonar or omit name. |
 | Broad Adams psychiatric claims | V81–V84 | `DO-NOT-IMPORT` as contemporary guidance. |
 
@@ -488,13 +488,13 @@ This table is the practical audit queue to use before any filling/extraction pas
 | R1-SYS-01 | PARTLY-CLOSED-local | `63_R1...` | III.2 born again | Gill, *Body of Divinity* | B6 Monergism HTML verified 2026-07-31 | Baptist regeneration quote cards now partially locked | optional print-page / additional Gill extraction remains |
 | R1-SYS-02 | PARTLY-CLOSED-local | `63_R1...` | III.2 born again | Bavinck RD IV | Monergism RD4 ch.1 excerpt read 2026-07-31 | broad/restricted regeneration and immediate operation now excerpt-locked | Baker pages/Kuyper critique optional |
 | R1-SYS-03 | CLOSED-local | `63_R1...` | III.2 born again | Boston regeneration/state of grace | GraceGems open text verified 2026-07-31 | real/thorough/supernatural/universal/lasting breakdown locked | early-scan/print page optional |
-| R1-WHIT-01 | P1 | `62/63_R1...` | III.2 born again | Whitefield born-again anecdote/stat | source uncertain | attractive but risky statistic | find Journals/Gillies/Dallimore or do not use number |
+| R1-WHIT-01 | CLOSED-as-blocked-local | `62/63_R1...` | III.2 born again | Whitefield born-again anecdote/stat | no primary source found | blocked as documented fact | use verified Whitefield sermon instead; tradition only if labelled |
 | R2-HAM-01 | PARTLY-CLOSED-local | `64_R2...` | OT regeneration bonus | Hamilton Themelios/TrinJ/monograph | Themelios HTML verified 2026-07-31 | conclusion and spectrum names partly locked | TrinJ PDF and book-page locators still optional/open |
 | R2-FERG-01 | P1 | `64_R2...` | OT regeneration bonus | Ferguson *The Holy Spirit* | lectures only | book citation missing | get 1–2 exact book locators or paraphrase by lecture only |
 | R3-CALVIN-01 | CLOSED-local | `65_R3...` | struggle without regeneration | Calvin Institutes II.3.3–4 | CCEL/Beveridge readback done 2026-07-31 | civil righteousness wording now source-locked at CCEL level | Battles/Russian edition remains editorial check |
 | R3-AUG-01 | P1 | `65_R3...` | struggle without regeneration | Augustine / `splendida vitia` chain | attribution not closed | classic misattribution risk | verify Latin/FOC or mark reception only |
-| R3-SPURG-01 | BLOCK | `65_R3...` | struggle without regeneration | Spurgeon “free will carried...” | not found in sermon #52 | likely quote-book risk | do not use without primary source |
-| R4-WHIT-01 | P1 | `66_R4...` | four soils | Whitefield stony-ground quote | primary location not found | quote-site/attribution risk | locate Journals/sermon/letters or drop |
+| R3-SPURG-01 | CLOSED-as-blocked-local | `65_R3...` | struggle without regeneration | Spurgeon “free will carried...” | apocryphal-risk marked 2026-07-31 | do not use | use verified Spurgeon substitute |
+| R4-WHIT-01 | CLOSED-as-attributed-local | `66_R4...` | four soils | Whitefield stony-ground quote | no primary locator found | attributed-only / do-not-direct-quote | use Spurgeon F1 / Calvin B2 substitutes |
 | R4-TAYLOR-01 | P1 | `66_R4...` | four soils | Thomas Taylor 1621 | title only | source underused | extract exact paragraphs on stony/good soil |
 | R4-COMM-01 | P1 | `66_R4...` | four soils | France / Carson | page locators missing | modern commentary support not exact | print/ebook page pass; Calvin Harmony B2 separately closed locally |
 | R5-OWEN-01 | CLOSED-local | `67_R5...` | two struggles | Owen *Mortification* ch. 2 | CCEL verified 2026-07-31 | quote-card patched locally | print page not claimed |
@@ -507,7 +507,7 @@ This table is the practical audit queue to use before any filling/extraction pas
 | R7A-GILL-01 | CLOSED-local | `68_R7A...` | heart and Word | Gill Heb 4:2 | BibleStudyTools Gill readback done 2026-07-31 | both readings now pinned to public-domain mirror | print page not claimed |
 | R8-OWEN-01 | PARTLY-CLOSED-local | `70_R8...` | beholding glory | Owen *Glory of Christ* | key quote cards #10–15 CCEL-verified 2026-07-31 | capstone Owen core now chapter-locked | optional print-page pass only |
 | R8-GRAM-01 | editorial | `70_R8...` | beholding glory | κατοπτριζόμενοι | owner decision open | overload risk | decide main text vs footnote/dropdown |
-| R8-HUGHES-01 | BLOCK/P1 | `70_R8...` | beholding glory | Hughes “expulsive force” | suspicious | possible anachronistic paraphrase | locate book or remove attribution |
+| R8-HUGHES-01 | CLOSED-as-blocked-local | `70_R8...` | beholding glory | Hughes “expulsive force” | blocked as direct quote 2026-07-31 | do not attribute to Hughes | use Chalmers/Owen/Calvin or anonymous synthesis |
 | R8-SPURG-01 | PARTLY-CLOSED-local | `70_R8...` | beholding glory | Spurgeon official “Glory!” support locator | official Spurgeon Library read 2026-07-31 | support quote located | optional dedicated 2 Cor 3:18 sermon search remains |
 | R8-MLJ-01 | PARTLY-CLOSED-local | `70_R8...` | beholding glory | MLJ `Reflecting His Glory` | official MLJ page read 2026-07-31 | metadata/description/breakdown known | audio/transcript unverified; no direct sermon quote |
 | R8-MCHEYNE-01 | PARTLY-CLOSED-local | architecture/R8 | beholding glory | “ten looks at Christ” | Google Books p.239 verified 2026-07-31 | letter text/page locked; originality still open | do not claim Baxter origin without primary locus |
@@ -584,7 +584,7 @@ Four P0 articles have dossiers but still need source-locking: R1, R5, R7a, R8.
 
 | Planned article | Priority in architecture | Current status | Next audit action |
 |---|---|---|---|
-| II.3 `Борьба без возрождения` | P1 | R3 dossier exists, source-lock open | Close Calvin/Augustine/Watson/Luther locators. |
+| II.3 `Борьба без возрождения` | P1 | R3 dossier exists, source-lock partly open | Calvin is closed; Watson aphorism and Spurgeon free-will aphorism are blocked; Augustine Contra Julianum / splendida-vitia chain and some print locators remain open. |
 | V.2 `Четыре почвы` | P1 | R4 dossier exists, source-lock open | Close Whitefield/Taylor/France/Carson locators. |
 | Bonus `Возрождение в ВЗ` | P1 | R2 dossier exists, source-lock open | Close Hamilton/Ferguson/Calvin/Augustine/Gill/Owen locators. |
 | VI.4 `Гнев, обида, прощение` | P1 | No dedicated R-file found | Needs focused dossier; current material scattered in speech/temptation/pastoral grids. |
@@ -840,6 +840,7 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 | SC-R8-MLJ-PAGE-01 | `70_R8_BEHOLDING_GLORY.md` | MLJ `Reflecting His Glory` was link-only / content unknown | Verified official MLJ Trust sermon page metadata, description, and breakdown | audio/transcript unverified; no direct sermon quote |
 | SC-R8-MCHEYNE-01 | `70_R8_BEHOLDING_GLORY.md` | M'Cheyne “ten looks” attribution/page was disputed | Verified Google Books `Memoir and Remains`, p. 239, letter text; read Scriptorium Daily attribution caveat | letter text locked; pre-M'Cheyne/Baxter origin unconfirmed |
 | SC-R8-SPURGEON-01 | `70_R8_BEHOLDING_GLORY.md` | Spurgeon on 2 Cor. 3:18 was source-discovery open | Verified official Spurgeon Library sermon “Glory!” cites 2 Cor. 3:18 and applies communion/conformity | not a dedicated 2 Cor. 3:18 sermon; optional further search remains |
+| SC-R8-HUGHES-01 | `70_R8_BEHOLDING_GLORY.md` | Hughes “expulsive force” quote was suspicious/anachronistic | Marked blocked as direct Hughes quote; replace with Chalmers/Owen/Calvin or anonymous synthesis | may reopen only if primary Hughes book proves wording |
 | SC-R7A-CALVIN-HEB-01 | `68_R7A_WORD_AND_HEART.md` | Calvin on Heb. 4:2 verified by snippet only | Verified via CCEL Study / Calvin on Hebrews 4:2 | print page not claimed |
 | SC-R7A-GILL-HEB-01 | `68_R7A_WORD_AND_HEART.md` | Gill on Heb. 4:2 both readings was unverified candidate | Verified BibleStudyTools public-domain Gill page for Heb. 4:2 | print page not claimed |
 | SC-R7A-MANTON-JAS-01 | `68_R7A_WORD_AND_HEART.md` | Manton on James 1:21 ingrafted word was unverified / blocked | Verified CCEL Works vol. 4 `manton04.iv.html` section on James 1:21 | print page not claimed; Psalm 119 Manton remains open |
@@ -848,10 +849,13 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 | SC-R9-RYLE-M23-01 | `71_R9_CHRIST_OF_REVELATION.md` | Ryle Matthew 23 stern-reproof line was partial | Verified GraceGems `m23.htm` exact phrase about loving heart using stern reproof | print page not claimed; Ryle John 2 zeal remains partial |
 | SC-R9-GTY-JOHNSON-01 | `71_R9_CHRIST_OF_REVELATION.md` | GTY / Jeremiah Johnson “tame the Lion” critique was partial/byline-snippet | Verified official GTY blog `B210315` and exact line | critique context only, not doctrinal foundation |
 | SC-R4-CALVIN-HARMONY-01 | `66_R4_FOUR_SOILS.md` | Calvin Harmony B2 temporary-faith paragraph was partial / fetch-blocked | Verified CCEL `calcom32.ii.xix.html` paragraph on temporary faith / stony ground | print page not claimed; Luke 8:15 phrase optional |
+| SC-R4-SPURGEON-WHITEFIELD-01 | `66_R4_FOUR_SOILS.md` | Spurgeon stony-ground sermon was partial; Whitefield stony-ground quote lacked primary locator | Verified official Spurgeon Library F1; marked Whitefield F2 attributed-only / do-not-direct-quote | Spurgeon print page not claimed; Whitefield can reopen only with primary locator |
 | SC-R3-CALVIN-INST-01 | `65_R3_UNREGENERATE_STRUGGLE.md` | Institutes II.3.3–4 CCEL fetch had been blocked | Verified CCEL/Beveridge chapter readback at `institutes.iv.iv.html`; marked source-risk closed | Battles/Russian edition still editorial choice |
+| SC-R3-WATSON-SPURGEON-BLOCK-01 | `65_R3_UNREGENERATE_STRUGGLE.md` | Watson morality quote and Spurgeon free-will aphorism remained quote-collection risks | Marked Watson direct quote as quote-collection-only and Spurgeon aphorism as apocryphal-risk / do-not-use | use Calvin or verified Spurgeon substitutes |
 | SC-R1-GILL-REGEN-01 | `63_R1_REGENERATION_SYSTEMATICS.md` | Gill B6 was unverified Body of Divinity candidate | Verified Monergism HTML `Of Regeneration`; added exact anchors on large/strict regeneration and new creature/new man | print page not claimed; more Gill extraction optional |
 | SC-R1-BAVINCK-01 | `63_R1_REGENERATION_SYSTEMATICS.md` | Bavinck RD IV exact material was open | Verified Monergism HTML excerpt from RD4 ch.1 for broad/restricted regeneration, Word/Spirit order, and immediate Spirit operation | Baker page numbers not claimed; Kuyper critique optional |
 | SC-R1-BOSTON-REGEN-01 | `63_R1_REGENERATION_SYSTEMATICS.md` | Boston E3 regeneration-change characteristics were partial/paraphrase | Verified GraceGems open text breakdown of real/thorough/supernatural/universal/lasting change | print/early-scan page not claimed |
+| SC-R1-WHITEFIELD-ANECDOTE-01 | `62_R1_REGENERATION_EXEGESIS.md` / `63_R1_REGENERATION_SYSTEMATICS.md` | Whitefield “why preach born again?” anecdote was unverified tradition | Marked blocked as documented fact; use only as labelled tradition or omit | verified Whitefield sermon remains available substitute |
 | SC-R2-HAMILTON-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Hamilton Themelios conclusion/formula was fetch-blocked / partly snippet-based | Verified TGC/Themelios HTML conclusion and position spectrum | PDF/book pages not claimed; TrinJ survey-page details remain open |
 | SC-R2-CALVIN-JOHN739-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Calvin on John 7:39 surrounding context was open | Verified CCEL `calcom34.xiii.vii.html` for bright/illustrious Spirit and regeneration/new-creature line | print page not claimed |
 | SC-R2-AUG-TRACT32-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Augustine Tractate 32 exact wording was candidate | Verified New Advent/NPNF HTML on John 7:39 and special manner of giving Spirit | print page not claimed |
@@ -871,8 +875,8 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 | Rogers Advice 1/5/6 scan-first closure | needs visual Google/British Library 1691 page-image locator; OCR/secondary extraction not enough |
 | MLJ *Spiritual Depression* | full legal book text still HOLD |
 | Adams/Godwin PDF page-image gates | parsed text/PDF link is not page-image verification |
-| R8 Hughes + MLJ audio/transcript + M’Cheyne prior-origin + optional Spurgeon dedicated-sermon search | M’Cheyne letter text now page-locked; Spurgeon official “Glory!” support locator found; MLJ direct sermon wording still requires audio/transcript; Hughes remains blocked/paraphrased |
+| R8 MLJ audio/transcript + M’Cheyne prior-origin + optional Spurgeon dedicated-sermon search | Hughes direct quote is now blocked/resolved; M’Cheyne letter text page-locked; Spurgeon support locator found; MLJ direct sermon wording still requires audio/transcript |
 | R9 Sproul/Ortlund + Ryle John 2 partial + remaining GTY links | Gill Revelation, GTY `90-475`/`66-71`, GTY Johnson B210315, and Ryle Matthew 23 subsets are locally closed; other aggregator/snippet items still need page/chapter/source pass |
-| R1 Gill/Bavinck/Boston/Whitefield | Gill B6, Bavinck RD4 excerpt, and Boston regeneration characteristics are locally closed at HTML level; Whitefield and optional print-page policy remain open |
-| R4 Whitefield/Taylor/France/Carson | Calvin Harmony B2 is now locally closed; Whitefield/Taylor/France/Carson still not closed |
+| R1 Gill/Bavinck/Boston/Whitefield | Gill B6, Bavinck RD4 excerpt, and Boston regeneration characteristics are locally closed at HTML level; Whitefield anecdote is blocked as documented fact; optional print-page policy remains open |
+| R4 Taylor/France/Carson + optional Whitefield primary locator | Calvin Harmony B2 and Spurgeon F1 closed; Whitefield F2 is attributed-only/blocked for direct quote; Taylor/France/Carson still open |
 | R7a Metzger / commentary positions | Calvin and Gill are now locally closed; Metzger and modern commentary positions remain open |

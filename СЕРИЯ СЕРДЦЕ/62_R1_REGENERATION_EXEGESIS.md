@@ -591,7 +591,7 @@ https://www.midamerica.edu/uploads/files/pdf/journal/01-barrettjournal2012.pdf �
 — «…быть в Нём не только по внешнему исповеданию, но по внутренней перемене и чистоте сердца и обитанию Его Святого Духа». (Там же: сравнительно немногие из крещёных водою «рождены и от Духа».)
 Ссылки: https://biblebb.com/files/whitefield/GW049.htm ; https://www.blueletterbible.org/Comm/whitefield_george/Sermons/witf_049.cfm ; https://www.ccel.org/ccel/whitefield/sermons.li.html ; скан 1739 г.: https://archive.org/details/bim_eighteenth-century_the-nature-and-necessity_whitefield-george_1739
 
-**E-3. Уитфилд, ответ «Почему вы так часто проповедуете „должно вам родиться свыше“?» — «Потому что должно вам родиться свыше».** — [НЕ ВЕРИФИЦИРОВАНО — предание]. Ходит по проповедям и биографиям без надёжного первоисточника (найден только пересказ: https://sssw.org.uk/you-must-be-born-again/). Подавать только как известное предание («рассказывают, что…»), без претензии на документальность, либо опустить.
+**E-3. Уитфилд, ответ «Почему вы так часто проповедуете „должно вам родиться свыше“?» — «Потому что должно вам родиться свыше».** — [BLOCKED AS DOCUMENTED FACT / TRADITION ONLY — SAFE CLOSURE 2026-07-31]. Прямой первоисточник не найден; современные пересказы сами часто вводят формулу как “story goes / it is said / likely apocryphal”. Для статьи не использовать как документированную цитату. Если очень нужно — только как бездоказательное предание в одной фразе; предпочтительно опустить и заменить проверенной проповедью Whitefield “On Regeneration”.
 
 **E-4. C. H. Spurgeon, «Every Man's Necessity» (Metropolitan Tabernacle Pulpit; на Ин. 3:7)** — ВЕРИФИЦИРОВАНО (фраза найдена на spurgeon.org):
 > "Regeneration is a great deal more than reformation of life… for it is not 'Ye must be washed, ye must be improved, ye must be elevated;' but 'ye must be born'… a new life must be received."
@@ -682,11 +682,8 @@ https://www.midamerica.edu/uploads/files/pdf/journal/01-barrettjournal2012.pdf �
    Kruse PNTC (страницы на 3:9 и 5:1); номер проповеди Сперджена «Every Man's Necessity»
    в MTP. В этой сессии прямой доступ к CCEL/biblehub/archive был закрыт egress-политикой —
    при следующем прогоне (или у главного агента) перепроверить ссылки fetch'ем.
-2. **Бавинк** (Reformed Dogmatics IV, гл. о призвании и возрождении) — дословная цитата
-   не верифицирована в этом прогоне; кандидатная тема: возрождение в узком/широком смысле,
-   средство и непосредственность действия Духа. Добрать.
-3. **Уитфилдовский анекдот** (E-3) — искать первоисточник в биографиях (Gillies, Dallimore);
-   пока — только как предание.
+2. **Бавинк** — resolved in `63_R1_REGENERATION_SYSTEMATICS.md` safe-closure pass: RD4 ch.1 Monergism excerpt now covers broad/restricted regeneration, Word/Spirit order, and immediate Spirit operation. Optional Baker page numbers remain for academic edition use.
+3. **Уитфилдовский анекдот** (E-3) — SAFE CLOSURE 2026-07-31: не source-safe as documented fact; do not use as a quotation. If retained, label as tradition only. Prefer verified Whitefield “On Regeneration”.
 4. **Связка с бонусом R2 («Возрождение в ВЗ»):** статья III.2 должна аккуратно
    сформулировать отношение Иез. 36 к ВЗ-святым (обетование будущего излияния vs
    действительность возрождения до Пятидесятницы) — НЕ решая вопрос в теле статьи,

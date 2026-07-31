@@ -512,26 +512,21 @@ https://www.hailandfire.com/library_books/H%26F_Taylor%28Thomas%29_ParableoftheS
 
 ### Е. Проповедники
 
-**F1. Spurgeon**: «the mere stony-ground convert has not the Holy Ghost» (и контекст:
-приняли слово, «but not in the divine power or supernatural efficacy of it»).
-— «У каменнопочвенного "обращённого" как такового нет Святого Духа… [они приняли слово,]
-но не в божественной силе и сверхъестественной действенности его».
-Источник: C. H. Spurgeon, «The Seed upon Stony Ground», MTP sermon №1132 (14.09.1873,
-Мк. 4:5–6, 16–17). https://www.spurgeon.org/resource-library/sermons/the-seed-upon-stony-ground/ ;
-CCEL: https://ccel.org/ccel/spurgeon/sermons19/sermons19.xliv.html
-**ВЕРИФИЦИРОВАНО частично** (фразы из выдачи; полный абзац взять со spurgeon.org при написании).
+**F1. Spurgeon** — SAFE CLOSURE 2026-07-31 by official Spurgeon Library readback.
+Sermon: “The Seed upon Stony Ground”, MTP sermon №1132 (14.09.1873), Mark 4:5–6.
+Verified anchors:
+> “Receiving it, it produced an effect upon them. They were, in a measure, impressed by it…”
+> “not in the divine power or supernatural efficacy of it”
+> “there is a joy which is not the fruit of grace, but the growth of nature, and a peace which comes from delusion, and not from the Spirit of God”
 
-**F2. Whitefield**: «There are so many stony ground hearers, who receive the Word with joy,
-that I have determined to suspend my judgment till I know the tree by its fruits. I cannot
-believe they are converts until I see fruit brought back…»
-— «Слушателей каменистой почвы, принимающих Слово с радостью, так много, что я решил
-воздерживаться от суждения, пока не узнаю дерево по плодам. Я не могу считать их
-обращёнными, пока не увижу принесённого плода…»
-Источник: приписывается G. Whitefield (Journals); тиражируется через J. Ehrhard, «The
-Dangers of the Invitation System» (1999). https://gracequotes.org/quote/there-are-so-many-stony-ground-hearers-who-receive/
-**[НЕ ВЕРИФИЦИРОВАНО по первоисточнику — кандидат]**: атрибуция устойчивая, но точное
-место в Journals не найдено; в статье давать с формулой «приписывается Уайтфилду» или
-искать точное место в Journals (изд. Banner of Truth, 1960) перед публикацией.
+Источник: https://www.spurgeon.org/sermons/the-seed-upon-stony-ground
+Статус: `OFFICIAL-SPURGEON-LIBRARY-VERIFIED / SERMON-LOCATOR-LOCKED`; print page not claimed.
+
+**F2. Whitefield**: «There are so many stony ground hearers…» — SAFE CLOSURE 2026-07-31 as
+`ATTRIBUTED-ONLY / DO-NOT-DIRECT-QUOTE`.
+Формула устойчива в цитатниках и вторичной литературе, но первичный Journals/letter locator не найден.
+Для статьи не использовать как документированную цитату Уайтфилда. Если нужна та же функция,
+использовать Spurgeon F1, Calvin B2, либо упоминать Whitefield only as attributed tradition with explicit caveat.
 
 ### Ж. Современные
 
@@ -689,8 +684,7 @@ but of them who are unwilling to be changed.»
 
 ## Открытые вопросы / что ещё копать
 
-1. **Whitefield F2** — найти точное место в Journals (Banner of Truth 1960) или заменить
-   верифицируемой цитатой из его проповеди «The Method of Grace» / писем.
+1. **Whitefield F2 — SAFE CLOSURE 2026-07-31 as attributed-only.** Do not direct-quote without primary Journals/letter locator. Use Spurgeon F1 / Calvin B2 as verified substitutes.
 2. **Calvin Harmony B2 — SAFE CLOSURE 2026-07-31.** Полный абзац по temporary faith / stony ground сверён по CCEL `calcom32.ii.xix.html`. Остаётся только отдельная optional задача: если нужна специальная фраза по Лк. 8:15 («honest and good heart»), добрать её в том же CCEL-разделе.
 3. **France G1 / Carson G2** — проставить точные страницы по бумажным изданиям (NICNT 2007;
    EBC vol. 8) перед публикацией; у France взять и его замечание о названии «parable of
