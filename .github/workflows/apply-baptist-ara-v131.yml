@@ -1,0 +1,233 @@
+name: Apply Baptist ARA attribution v131
+
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-baptist-ara-v131.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-baptist-ara-v131
+  cancel-in-progress: false
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Apply source-controlled delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          git pull --ff-only origin main
+          python - <<'PY'
+          from pathlib import Path
+          import csv
+          import io
+
+          root = Path('БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED')
+          history = root / 'groups/02_HISTORY_NARRATIVE.md'
+          index = root / '00_INDEX.md'
+          sources = root / 'data/SOURCE_ANCHORS.csv'
+          proof = root / 'data/PROOF_STATUS_LEDGER.csv'
+          micro = root / 'data/NEXT_MICROBATCH.csv'
+
+          for path in (history, index, sources, proof, micro):
+              if not path.exists():
+                  raise SystemExit(f'missing required file: {path}')
+
+          marker = '## v131 — Baptist relief inside the ARA Ukrainian operations matrix'
+          block = r'''
+          ## v131 — Baptist relief inside the ARA Ukrainian operations matrix
+
+          ### What the new primary locator establishes
+
+          The Hoover Institution online exhibition identifies an exact primary item: `ARA Chart of Operations of Foreign and Domestic Relief Organizations in Five Famine Gubernias of the Ukraine, 1922`, held in **ARA Russia, box 134, folder 11**. Its institutional caption explicitly lists `Baptist` alongside Dutch and American Mennonites, the Nansen Mission, the Czecho-Slovak Mission and the Ukraine Red Cross.
+
+          This closes one question and opens a narrower one. A Baptist relief operation was represented inside the ARA's Ukrainian operations matrix in 1922. The caption does **not** identify the Baptist body, responsible officer, funding stream or relationship to the Southern Baptist Foreign Mission Board.
+
+          ### Correction to the v130 role map
+
+          Keep four evidence strands separate until the chart and folder are inspected:
+
+          1. **ARA institutional matrix:** the chart confirms a Baptist-labelled relief operation in the five-famine-gubernia Ukrainian field.
+          2. **Everett Gill:** an Associated Press report published 23 December 1921 described the Southern Baptists' European representative as being in Russia and urging a special Christmas offering for starving Russians. This proves presence and fundraising advocacy, not control of the charted operation.
+          3. **Hoyt Echols Porter:** AR 551-2 and MF 7853 preserve the field-worker and correspondence routes already mapped in v130. They do not yet prove that Porter was the person behind the chart's `Baptist` row.
+          4. **Southern Baptist FMB:** contemporary denominational evidence supports a Southern Baptist Russian relief channel, but the Hoover caption itself does not label the row `Southern Baptist`, `FMB`, `Gill` or `Porter`.
+
+          Therefore the safe formulation is:
+
+          > By 1922 the ARA's Ukrainian relief documentation treated a Baptist operation as a distinct participant in the five-gubernia field. The exact Baptist organization and its responsible personnel remain unresolved.
+
+          ### Nonsectarian operating rule
+
+          The same Hoover source explains that the ARA was committed to nonsectarian distribution while working with religious affiliates including Baptists. Agencies were expected to feed beyond their own co-religionists. Denominational fundraising and ARA-administered nonsectarian distribution are therefore compatible, but they must not be collapsed into a claim of denominational ownership of the whole operation.
+
+          ### Exact proof gate
+
+          Request only `ARA Russia, box 134, folder 11`, beginning with:
+
+          - a full-resolution image of the chart;
+          - the folder inventory and adjacent explanatory sheets;
+          - transcription of the five gubernia headings and the complete `Baptist` row;
+          - any names, addresses, quantities, territories, agreements or accounting references attached to that row.
+
+          Then compare the result with AR 915 folders 91.20 and 92.6, AR 551-2 box 045, and the Porter/Gill items in MF 7853. Until this comparison is complete, do not attribute the charted Baptist operation to Gill, Porter, the FMB or another Baptist union.
+          '''
+
+          text = history.read_text(encoding='utf-8')
+          if marker not in text:
+              history.write_text(text.rstrip() + '\n\n' + block.strip() + '\n', encoding='utf-8')
+
+          index_marker = '## v131 — ARA Baptist attribution correction'
+          index_block = r'''
+          ## v131 — ARA Baptist attribution correction
+
+          Added one narrow primary-source correction: the Hoover ARA chart for five famine gubernias in Ukraine (1922; ARA Russia, box 134, folder 11) explicitly lists a `Baptist` relief operation, but does not identify it as Southern Baptist or attach Gill/Porter to the row. The grouped narrative, source ledger, proof ledger and microbatch now preserve this institutional/personnel boundary. No new dossier file was created and no source was promoted to `file_access_verified` or `quote_ready`.
+          '''
+          text = index.read_text(encoding='utf-8')
+          if index_marker not in text:
+              index.write_text(text.rstrip() + '\n\n' + index_block.strip() + '\n', encoding='utf-8')
+
+          def append_csv_once(path: Path, key_col: str, key_value: str, row: list[str]) -> None:
+              raw = path.read_bytes()
+              text = raw.decode('utf-8-sig')
+              reader = csv.DictReader(io.StringIO(text))
+              if reader.fieldnames is None:
+                  raise SystemExit(f'missing header: {path}')
+              if key_col not in reader.fieldnames:
+                  raise SystemExit(f'missing key column {key_col}: {path}')
+              for existing in reader:
+                  if (existing.get(key_col) or '').strip() == key_value:
+                      return
+              if len(row) != len(reader.fieldnames):
+                  raise SystemExit(f'row width {len(row)} != header width {len(reader.fieldnames)}: {path}')
+              newline = '\r\n' if b'\r\n' in raw[:4096] else '\n'
+              buf = io.StringIO()
+              csv.writer(buf, lineterminator=newline).writerow(row)
+              with path.open('ab') as fh:
+                  if raw and not raw.endswith((b'\n', b'\r')):
+                      fh.write(newline.encode('utf-8'))
+                  fh.write(buf.getvalue().encode('utf-8'))
+
+          append_csv_once(sources, 'source_id', 'v131_hoover_ara_ukraine_baptist_chart', [
+              'v131_hoover_ara_ukraine_baptist_chart',
+              'https://histories.hoover.org/bread-medicine/a-delicate-balance-in-ukraine/',
+              'Exact primary-item title and locator ARA Russia box 134 folder 11; caption lists Baptist as a relief participant; ARA religious-affiliate nonsectarian rule.',
+              'v131-src-01',
+              'Hoover Institution Library & Archives — Bread + Medicine exhibition',
+              'official_archive_exhibit_primary_item_caption',
+              'ARA/Baptist institutional relief link and attribution boundary',
+              'v131',
+              'ara_ukraine_baptist_chart_1922',
+              'primary locator and controlled narrative correction',
+              'ARA chart — Baptist relief operation in five Ukrainian famine gubernias',
+              'official archive exhibit / primary-item caption',
+              'Caption is authoritative for title, locator and listed organizations; chart image/folder not yet fully inspected.',
+              'official_archive',
+              'Do not infer Southern Baptist/FMB/Gill/Porter responsibility from the Baptist label alone.'
+          ])
+
+          append_csv_once(sources, 'source_id', 'v131_oac_ara_russian_operational_records', [
+              'v131_oac_ara_russian_operational_records',
+              'https://oac.cdlib.org/findaid/ark:/13030/tf996nb3ks',
+              'ARA Russian operational records 1919-1925; collection 23003; Russian Famine Relief subject file 1921-1923; microfilm access and advance reservation requirements.',
+              'v131-src-02',
+              'Online Archive of California / Hoover Institution Library & Archives',
+              'official_collection_finding_aid',
+              'Exact acquisition route for box 134 folder 11 and related relief files',
+              'v131',
+              'ara_russian_operational_records_23003',
+              'archive access and request planning',
+              'ARA Russian operational records — official finding aid',
+              'official finding aid',
+              'Finding aid establishes collection/access route, not the contents of the unseen Baptist row.',
+              'official_archive_finding_aid',
+              'Request material in advance; most relevant records are microfilm-use only.'
+          ])
+
+          append_csv_once(sources, 'source_id', 'v131_gill_russia_christmas_appeal_1921_12_23', [
+              'v131_gill_russia_christmas_appeal_1921_12_23',
+              'https://texashistory.unt.edu/ark:/67531/metapth1534645/m1/1/',
+              'Associated Press report dated 23 Dec 1921 says Everett Gill, Southern Baptists European representative, was in Russia and urged special Christmas offerings for starving Russians.',
+              'v131-src-03',
+              'The Austin Statesman / Portal to Texas History',
+              'contemporary_newspaper_page',
+              'Gill chronology: presence in Russia and fundraising advocacy',
+              'v131',
+              'everett_gill_russia_1921_12_23',
+              'chronological anchor; not operational-command proof',
+              'Everett Gill reported in Russia — 23 December 1921',
+              'primary newspaper page / OCR',
+              'Full newspaper page is available; OCR supports the short notice but exact quotation still requires visual line check.',
+              'contemporary_press',
+              'Does not connect Gill personally to the Hoover chart Baptist row.'
+          ])
+
+          append_csv_once(proof, 'item_id', 'ara_ukraine_baptist_relief_matrix_1922', [
+              'ara_ukraine_baptist_relief_matrix_1922',
+              'ARA / Baptist relief',
+              'Ukraine five-famine-gubernia operations chart, 1922',
+              'official_archive_caption_and_locator_verified; full_resolution_chart_not_acquired; Baptist_body_and_person_unresolved',
+              '',
+              'Hoover Institution — ARA Russia box 134 folder 11',
+              'Hoover Bread + Medicine exhibition + OAC collection finding aid',
+              'Acquire full-resolution chart and folder inventory; transcribe complete Baptist row; compare AR915 91.20/92.6, AR551-2 box045 and MF7853.',
+              'v131-proof-01',
+              '1922',
+              'https://histories.hoover.org/bread-medicine/a-delicate-balance-in-ukraine/',
+              'Institutional Baptist participation is supported; Southern Baptist/FMB/Gill/Porter attribution is not yet supported by this item.',
+              'v131'
+          ])
+
+          append_csv_once(micro, 'item', 'ARA Russia box 134 folder 11 — Baptist relief chart', [
+              'P0',
+              'ARA Russia box 134 folder 11 — Baptist relief chart',
+              'Obtain full-resolution chart and folder inventory; transcribe the five gubernia headings and complete Baptist row values/territories/quantities; identify the Baptist body and responsible person; compare AR915 91.20/92.6, AR551-2 box045 and MF7853.',
+              'Official caption identifies Baptist as a participant but not Southern Baptist/FMB/Gill/Porter; chart image and adjacent records have not been fully inspected.'
+          ])
+
+          # Validate the newly appended identifiers are each unique.
+          for path, key, value in [
+              (sources, 'source_id', 'v131_hoover_ara_ukraine_baptist_chart'),
+              (sources, 'source_id', 'v131_oac_ara_russian_operational_records'),
+              (sources, 'source_id', 'v131_gill_russia_christmas_appeal_1921_12_23'),
+              (proof, 'item_id', 'ara_ukraine_baptist_relief_matrix_1922'),
+              (micro, 'item', 'ARA Russia box 134 folder 11 — Baptist relief chart'),
+          ]:
+              with path.open(encoding='utf-8-sig', newline='') as fh:
+                  rows = list(csv.DictReader(fh))
+              count = sum(1 for row in rows if (row.get(key) or '').strip() == value)
+              if count != 1:
+                  raise SystemExit(f'expected one {value} in {path}, found {count}')
+
+          if history.read_text(encoding='utf-8').count(marker) != 1:
+              raise SystemExit('v131 history marker count is not one')
+          if index.read_text(encoding='utf-8').count(index_marker) != 1:
+              raise SystemExit('v131 index marker count is not one')
+          PY
+
+          git rm .github/workflows/apply-baptist-ara-v131.yml
+          git config user.name "research-integration-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -- 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/groups/02_HISTORY_NARRATIVE.md' \
+                    'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/00_INDEX.md' \
+                    'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/SOURCE_ANCHORS.csv' \
+                    'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv' \
+                    'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv' \
+                    '.github/workflows/apply-baptist-ara-v131.yml'
+          if git diff --cached --quiet; then
+            echo "No changes required"
+            exit 0
+          fi
+          git commit -m "research(baptists): refine ARA Baptist relief attribution v131"
+          git pull --rebase origin main
+          git push origin HEAD:main
