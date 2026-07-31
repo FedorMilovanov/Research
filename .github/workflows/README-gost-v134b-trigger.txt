@@ -1,1 +1,0 @@
-Temporary registration marker for the corrected Gost v134 integration. Delete with all v134 service files after successful research commit and verification.
