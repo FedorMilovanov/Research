@@ -1,1 +1,0 @@
-Temporary registration marker for the issue-triggered Gost v131 source-chain integration. Delete after successful research commit and verification.
