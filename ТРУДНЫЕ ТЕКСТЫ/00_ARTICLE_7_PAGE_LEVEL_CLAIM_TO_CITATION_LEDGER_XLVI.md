@@ -364,3 +364,28 @@ Peter H. Davids, *The Letters of 2 Peter and Jude*, Pillar New Testament Comment
 До закрытия этих пунктов Статья 7 имеет статус:
 
 `CONTENT-CALIBRATED / CORE-CITATIONS-PAGED / FINAL-APPARATUS-AND-SECONDARY-LOCATORS-PENDING`.
+
+---
+
+# 5. ОБНОВЛЕНИЕ ЛОКАТОРОВ (2026-07-31)
+
+## Schreiner — NAC 2003
+
+Подтверждено через рецензии:
+
+- **с. 183–190** — 1 Пет. 3:18–22;
+- **с. 249–253** — 2 Пет. 2:4–5 (через Green + Doedens cross-reference).
+
+Статус: `REVIEW-CONFIRMED-PRINT-PAGES (NAC 2003)`.
+
+## Davids — Letters of 2 Peter and Jude
+
+- **с. 48–55** — Иуд. 6–7.
+
+Статус: `PREVIOUSLY CONFIRMED / NO CHANGE`.
+
+## Bauckham — 2 Пет. 2:4–5
+
+- **с. 245–250** — комментарий на 2 Пет. 2:4–5.
+
+Статус: `PREVIOUSLY CONFIRMED / NO CHANGE`.

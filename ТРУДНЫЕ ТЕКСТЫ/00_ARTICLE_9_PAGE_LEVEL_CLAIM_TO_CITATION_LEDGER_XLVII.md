@@ -248,8 +248,28 @@ CONSERVATIVE MAIN READING
 → SUPPORTED, SOME PRINT LOCATORS PENDING
 
 ICC DIRECT PAGES
-→ PENDING
+→ SECONDARY REVIEW LOCATOR CONFIRMED (2:185–357, 235–241, 344–355)
 
 NA28 / ECM DIRECT APPARATUS
 → NEXT REQUIRED CONTROL
 ```
+
+---
+
+# 7. ОБНОВЛЕНИЕ ЛОКАТОРОВ (2026-07-31)
+
+## Schreiner NAC 2003
+
+- **с. 206–208** — обсуждение 1 Пет. 4:1–6.
+
+Статус: `REVIEW-CONFIRMED-PRINT-PAGE (NAC 2003) / CSC 2020 PENDING`.
+
+## Williams–Horrell ICC vol. 2
+
+Подтверждено через рецензию Themelios:
+
+- **2:185–357** — основной блок;
+- **2:235–241** — особенно;
+- **2:344–355** — особенно.
+
+Статус: `SECONDARY-REVIEW-LOCATOR-CONFIRMED`. Ранний рабочий locator «2:340–344» скорректирован.
