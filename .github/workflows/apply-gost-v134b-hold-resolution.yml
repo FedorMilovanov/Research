@@ -47,6 +47,11 @@ jobs:
             git fetch origin main 2>&1 | tee -a "$log"
             git reset --hard origin/main 2>&1 | tee -a "$log"
             python3 .github/scripts/apply_gost_v134.py 2>&1 | tee -a "$log"
+            python3 - <<'PY'
+          from pathlib import Path
+          path = Path('БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/groups/06_DATA_AND_PROOF_LEDGERS.md')
+          path.write_text(path.read_text(encoding='utf-8-sig').rstrip() + '\n', encoding='utf-8')
+          PY
             git diff --check 2>&1 | tee -a "$log"
 
             mapfile -t changed < <(git diff --name-only | sort)
