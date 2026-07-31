@@ -189,3 +189,47 @@ Check the live Drive MASTER, `12 Drive Acquisitions`, `13 Institutional Requests
 - contents of unseen archive folders.
 
 Full control: [Drive synthesis](https://docs.google.com/document/d/1-gnYokX17_0EVa4t6-6kc6R3OGWD6OD4Y6GnocXjADs/edit) and [source register](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit).
+
+## v132 — ARA / Baptist relief attribution gate
+
+A new exact primary locator has been identified:
+
+- `ARA Chart of Operations of Foreign and Domestic Relief Organizations in Five Famine Gubernias of the Ukraine, 1922`;
+- Hoover Institution Library & Archives;
+- `ARA Russia, box 134, folder 11`;
+- official exhibition caption explicitly lists `Baptist` among relief participants.
+
+This establishes a Baptist-labelled operation inside the ARA Ukrainian relief matrix. It does **not** establish which Baptist organization stood behind the row, and it does not connect the row directly to the Southern Baptist Foreign Mission Board, Everett Gill or Hoyt Echols Porter.
+
+### P0 — exact closure request
+
+Request only box 134, folder 11, beginning with:
+
+1. a full-resolution image of the chart;
+2. the folder inventory and adjacent explanatory sheets;
+3. the five gubernia headings and the complete `Baptist` row;
+4. every attached name, address, territory, quantity, agreement, financial/accounting reference and date.
+
+Then compare the result with:
+
+- AR 915 folders 91.20 and 92.6;
+- AR 551-2, box 045;
+- Porter/Gill and relief items in MF 7853;
+- FMB annual and committee records already queued in v130.
+
+### Attribution boundary
+
+- The ARA item confirms institutional Baptist participation.
+- A contemporary Associated Press notice of 23 December 1921 places Everett Gill in Russia and records his appeal for Christmas offerings for starving Russians; it proves presence and fundraising advocacy, not command of the charted operation.
+- Porter remains the exact field-worker/archive route mapped in v130, but the chart caption does not name him.
+- The ARA’s nonsectarian distribution rule is compatible with denominational fundraising; it is not evidence that one denomination owned the whole operation.
+
+Until the chart and folder are inspected, keep the status:
+
+`OFFICIAL CAPTION/LOCATOR VERIFIED — BAPTIST BODY AND RESPONSIBLE PERSON UNRESOLVED`.
+
+Source routes:
+
+- https://histories.hoover.org/bread-medicine/a-delicate-balance-in-ukraine/
+- https://oac.cdlib.org/findaid/ark:/13030/tf996nb3ks
+- https://texashistory.unt.edu/ark:/67531/metapth1534645/m1/1/
