@@ -1,12 +1,13 @@
 name: Apply Gost v135 congress supersession
 
 on:
-  issues:
-    types: [opened]
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/README-gost-v135-trigger.txt'
 
 permissions:
   contents: write
-  issues: write
 
 concurrency:
   group: baptists-grouped-writes
@@ -14,7 +15,6 @@ concurrency:
 
 jobs:
   integrate:
-    if: github.event.issue.title == '[automation] apply Gost v135 congress supersession'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -27,9 +27,6 @@ jobs:
         shell: bash
         run: |
           set -Eeuo pipefail
-          log=/tmp/gost-v135.log
-          : > "$log"
-          trap 'status=$?; cp "$log" /tmp/gost-v135-final.log; exit $status' EXIT
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config core.whitespace cr-at-eol
@@ -44,60 +41,32 @@ jobs:
 
           success=0
           for attempt in 1 2 3 4; do
-            echo "attempt=$attempt" | tee -a "$log"
-            git fetch origin main 2>&1 | tee -a "$log"
-            git reset --hard origin/main 2>&1 | tee -a "$log"
-            python3 .github/scripts/apply_gost_v135.py 2>&1 | tee -a "$log"
+            echo "attempt=$attempt"
+            git fetch origin main
+            git reset --hard origin/main
+            python3 .github/scripts/apply_gost_v135.py
             python3 - <<'PY'
 from pathlib import Path
 p = Path("БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/groups/06_DATA_AND_PROOF_LEDGERS.md")
 p.write_text(p.read_text(encoding="utf-8").rstrip() + "\n", encoding="utf-8")
 PY
-            git diff --check 2>&1 | tee -a "$log"
+            git diff --check
 
             mapfile -t changed < <(git diff --name-only | sort)
             mapfile -t expected < <(printf '%s\n' "${paths[@]}" | sort)
             if [[ "${changed[*]}" != "${expected[*]}" ]]; then
-              echo "Unexpected changed-file set" | tee -a "$log"
-              printf 'changed: %s\n' "${changed[@]}" | tee -a "$log"
-              printf 'expected: %s\n' "${expected[@]}" | tee -a "$log"
+              echo "Unexpected changed-file set"
+              printf 'changed: %s\n' "${changed[@]}"
+              printf 'expected: %s\n' "${expected[@]}"
               exit 1
             fi
 
             git add -- "${paths[@]}"
-            git commit -m "research(baptists): resolve Gost congress numbering v135" 2>&1 | tee -a "$log"
-            if git push origin HEAD:main 2>&1 | tee -a "$log"; then
+            git commit -m "research(baptists): resolve Gost congress numbering v135"
+            if git push origin HEAD:main; then
               success=1
               break
             fi
-            echo "push race; retrying on fresh main" | tee -a "$log"
+            echo "push race; retrying on fresh main"
           done
           [[ "$success" -eq 1 ]]
-
-      - name: Post diagnostic log
-        if: always()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const path = '/tmp/gost-v135-final.log';
-            const body = fs.existsSync(path) ? fs.readFileSync(path, 'utf8') : 'No diagnostic log was produced.';
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body: '```text\n' + body.slice(-60000) + '\n```'
-            });
-
-      - name: Close successful trigger
-        if: success()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              state: 'closed',
-              state_reason: 'completed'
-            });
