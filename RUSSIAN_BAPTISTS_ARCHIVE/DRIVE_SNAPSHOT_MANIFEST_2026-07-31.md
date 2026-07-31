@@ -24,6 +24,7 @@
 | Snapshot | Drive ID | URL |
 |---|---|---|
 | CLOSING MASTER AFTER DRIVE+GITHUB REGISTRATION | `1qPqt2SydDiHHOa9dJRxR1UWjVLp1w1R3oM6DW_ORxo0` | https://docs.google.com/spreadsheets/d/1qPqt2SydDiHHOa9dJRxR1UWjVLp1w1R3oM6DW_ORxo0/edit |
+| CLOSING HANDOFF WITH GITHUB COMMITS | `1L6TPMe1m0UokTULtErwZkjV_lAoPJQBwd3HNuyReGk8` | https://docs.google.com/document/d/1L6TPMe1m0UokTULtErwZkjV_lAoPJQBwd3HNuyReGk8/edit |
 | FINAL MASTER ARCHIVE CATALOG | `1tfS6Ephz1bNLublaRjuNvP032eJyo-Yr8uc6ZvSpu_g` | https://docs.google.com/spreadsheets/d/1tfS6Ephz1bNLublaRjuNvP032eJyo-Yr8uc6ZvSpu_g/edit |
 | FINAL emergency handoff | `1AazKEDnNhZe4oHhyOHilfangYpFTpcDMyZReKTYAVJo` | https://docs.google.com/document/d/1AazKEDnNhZe4oHhyOHilfangYpFTpcDMyZReKTYAVJo/edit |
 | FINAL «Гость» Source Register | `1pEJLVzPK8amtpQIund6dHZ3b-scMTx_VDuF9VFPEnpc` | https://docs.google.com/spreadsheets/d/1pEJLVzPK8amtpQIund6dHZ3b-scMTx_VDuF9VFPEnpc/edit |
@@ -49,4 +50,5 @@
 - Исходные живые реестры не удалялись и не заменялись.
 - Большие бинарники не дублируются в GitHub.
 - Closing snapshot создан после регистрации snapshot-ссылок в живом MASTER.
+- Closing handoff содержит GitHub entrypoint и commit SHA сохранения.
 - Этот manifest не доказывает наличие каждого внешнего PDF; локальное наличие определяется только `01 PDF Library`, `12 Drive Acquisitions` и фактическими Drive-папками.
