@@ -27,6 +27,8 @@
 - [`OFFICIAL_HOLE_CLOSURES_2026-07-31.md`](OFFICIAL_HOLE_CLOSURES_2026-07-31.md) — прямой официальный маршрут «Баптиста» 1909 №20, проверенные PDF «Братского вестника» 1945 №1/№3 и оставшиеся доказательные пробелы.
 - [`SECOND_PDF_DJVU_ACQUISITION_LEDGER_61_2026-07-31.md`](SECOND_PDF_DJVU_ACQUISITION_LEDGER_61_2026-07-31.md) — второй пакет из 61 прямого PDF/DJVU-маршрута; суммарно зафиксировано 135 прямых URL.
 - [`BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md`](BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md) — каноническая консолидация пономерных и постраничных находок по «Братскому листку» без дублирования этапных отчётов и ZIP-пакетов.
+- [`bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv`](bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv) — message-level recovery-ledger всех 15 крупных Telegram-вложений: исходные имена, размеры, Message ID, SHA-256 экспортов и доказанное отсутствие attachment links.
+- [`TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md`](TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md) — повторяемая инструкция Telegram Desktop export и provenance-проверки.
 - [`BOOK_ENGINE_MIGRATION_INVENTORY_2026-07-31.md`](BOOK_ENGINE_MIGRATION_INVENTORY_2026-07-31.md) — аудит всех десяти HTML-глав, жёстко зашитой навигации и найденного бага прогресс-индикатора.
 - [`INITIAL_CLAIM_TO_SOURCE_MATRIX_10_CHAPTERS_2026-07-31.md`](INITIAL_CLAIM_TO_SOURCE_MATRIX_10_CHAPTERS_2026-07-31.md) — приоритеты и статусы ключевых тезисов всех десяти опубликованных глав.
 
@@ -55,7 +57,7 @@
 8. Этапные отчёты и подготовительные ZIP-пакеты не переносятся в канонические хранилища отдельными дублями: в MASTER и GitHub вливается только проверенная содержательная дельта.
 9. Параллельные журнальные агенты работают через отдельные маркеры; общие README/status/grouped-файлы перечитываются перед записью и обновляются только idempotent append/upsert.
 
-Последняя синхронизация: **2026-07-31, 20:21+03:00 — evidence-layer «Братского листка», единый маршрут БАН для 8 content-unknown выпусков, 49 институциональных записей и параллельная grouped-интеграция без потери дельт других журналов**.
+Последняя синхронизация: **2026-07-31, 20:56+03:00 — raw HTML-аудит 15 Telegram-вложений «Братского листка», 0 скрытых attachment links, recovery-ledger и инструкция повторного экспорта; бинарный состав без изменений**.
 
 ## Consolidated 1917–1926 research intake (v130)
 
