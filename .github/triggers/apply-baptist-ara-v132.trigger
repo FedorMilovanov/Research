@@ -1,0 +1,2 @@
+trigger=2026-07-31T21:10+03:00
+scope=ARA Baptist attribution correction only
