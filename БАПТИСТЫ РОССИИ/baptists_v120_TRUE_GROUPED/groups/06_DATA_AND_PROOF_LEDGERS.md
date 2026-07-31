@@ -3894,3 +3894,33 @@ Three non-duplicate evidence routes now narrow the recovery of the exact citatio
 3. The official RUEBU conference report states that a 100-year history of the journal, assembled from several authors and containing little-known details, was available from the publisher. The old archive navigation also exposes an unpopulated `1926–1935` branch. The report and its bibliography/holding list are therefore exact acquisition targets, not substitutes for the issue.
 
 No status upgrade is permitted: Gusaruk's role, the appendix start year and the wording of p.15 remain `HOLD`. The exact dual recovery step is to request from RUEBU the cover, contents, p.15 and final colophon of no.2/1926 together with the centenary report/source list, and to ask Potapova/SakhGU to identify the US holding used for the 1919–1926 run and any surviving control image or transcription of p.15.
+
+## v134 — HOLD/B resolution sweep: editorial roles and person authorities
+
+More than 70 candidate links, PDFs, catalog records and person references were triaged. Only evidence that independently changes a status or narrows a primary closure route is retained.
+
+| Node | Previous state | v134 decision | Remaining primary gate |
+|---|---|---|---|
+| Late `Gost` editors | Husaruk/Jesakow partly HOLD outside 1934 local colophons | Suławka's declared BUW/BN query of `Gost` 1935–1939 supports `L. Jesiakow` as responsible editor and `W. Husaruk` as editor-publisher through July 1936. `ACADEMIC ISSUE-SURVEY VERIFIED`. | Representative 1935 and July 1936 or adjacent colophons. |
+| `Woskriesnaja Szkoła` roles | derivative p.15 chain; role HOLD | Suławka's physical query covers 1933–1935 and supports `W. I. Husaruk` as editor-publisher and `L. Jaśków` as responsible editor from 1935. `ACADEMIC ISSUE-SURVEY VERIFIED`. | Opening 1933, transition 1935 and any 1936 colophons; 1936 endpoint/24 total remain scholarly synthesis. |
+| W. I. Husaruk identity | semantic/person HOLD | Family Warsaw biography from 1926, contemporary 1946 `Rev. W. Husaruk`, official RSL 1949 memoir record and the surveyed editorial role converge on Vladimir Husaruk. `IDENTITY RESOLVED — VERY HIGH CONFIDENCE`. | Personnel/signature/civil authority record. |
+| L. Jesakow identity | probable Leon/Leonid | Prewar academic `Leon Jesakow`, official postwar `ks. Leonid Jesaków`, and exact missionary-file locator `mf Call #238` form a continuous chain. `IDENTITY RESOLVED — VERY HIGH CONFIDENCE`. | Selected mf #238 identity/signature pages and APL board controls. |
+| Fetler child-material memory | apparent conflict with Husaruk | A later memory concerns an earlier 1920s child-material layer under V. A. Fetler. It is not transferred to the distinct Warsaw 1933–1936 series. | Separate early supplement title/colophon. |
+
+Status boundaries retained:
+
+- no `quote_ready` promotion without visual page/facsimile control;
+- `Сеятель Истины` 1926 no.2 p.15 remains required for exact wording and early provenance, not for the now independently supported later editorial role;
+- Kupsch pp.172–182, congress numbering X/XI/XII and the unnamed rival society remain unresolved;
+- Kłaczkow is narrowed to p.116 and p.261 rather than a broad chapter request;
+- no institutional request was sent and no paid work or binary acquisition was initiated.
+
+Evidence routes:
+
+- Suławka full PDF: https://theo-logos.pl/bitstreams/b91bb0e7-6815-4cad-97d7-2c614d563b9b/download
+- Husaruk family edition: https://www.everand.com/book/624459311/Awaiting-The-Dawn-My-Life-in-a-Nazi-Concentration-Camp
+- RSL memoir authority: https://search.rsl.ru/ru/record/01000371468
+- 1946 person control: https://www.scribd.com/document/980393151/EditorinChief-Northwestern-Pilot-Bible
+- Methodist school history: https://szkola.metodysci.pl/historia-szkoly/
+- Jesakow mf #238 finding aid: https://anyflip.com/ober/zwqj/basic
+- early Fetler-layer memory: https://ru.scribd.com/document/467281539/%D0%92%D0%98-1-2020
