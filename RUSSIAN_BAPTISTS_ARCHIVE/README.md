@@ -8,6 +8,8 @@
 |---|---|
 | Живой MASTER ARCHIVE CATALOG | [Google Sheets](https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit) |
 | Drive ID MASTER | `1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM` |
+| Детальный аудит «Братского листка» | [Google Sheets](https://docs.google.com/spreadsheets/d/15L76H5bufK9Pr8EelwO-KZTYXuKX-weKnOh7qV_ze6k/edit) |
+| Drive ID аудита «Братского листка» | `15L76H5bufK9Pr8EelwO-KZTYXuKX-weKnOh7qV_ze6k` |
 | Emergency snapshot folder | [Google Drive](https://drive.google.com/drive/folders/1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa) |
 | Drive ID snapshot folder | `1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa` |
 | Live emergency handoff | [Google Doc](https://docs.google.com/document/d/1G-9jYTIURIC3-YA-6YdP67JejkBxZDPhj1b0yi3gm0o/edit) |
@@ -24,6 +26,7 @@
 - [`OFFICIAL_PDF_SOURCE_LEDGER_73_2026-07-31.md`](OFFICIAL_PDF_SOURCE_LEDGER_73_2026-07-31.md) — независимая копия 73 прямых официальных PDF-ссылок и незакрытых слотов.
 - [`OFFICIAL_HOLE_CLOSURES_2026-07-31.md`](OFFICIAL_HOLE_CLOSURES_2026-07-31.md) — прямой официальный маршрут «Баптиста» 1909 №20, проверенные PDF «Братского вестника» 1945 №1/№3 и оставшиеся доказательные пробелы.
 - [`SECOND_PDF_DJVU_ACQUISITION_LEDGER_61_2026-07-31.md`](SECOND_PDF_DJVU_ACQUISITION_LEDGER_61_2026-07-31.md) — второй пакет из 61 прямого PDF/DJVU-маршрута; суммарно зафиксировано 135 прямых URL.
+- [`BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md`](BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md) — каноническая консолидация пономерных и постраничных находок по «Братскому листку» без дублирования этапных отчётов и ZIP-пакетов.
 - [`BOOK_ENGINE_MIGRATION_INVENTORY_2026-07-31.md`](BOOK_ENGINE_MIGRATION_INVENTORY_2026-07-31.md) — аудит всех десяти HTML-глав, жёстко зашитой навигации и найденного бага прогресс-индикатора.
 - [`INITIAL_CLAIM_TO_SOURCE_MATRIX_10_CHAPTERS_2026-07-31.md`](INITIAL_CLAIM_TO_SOURCE_MATRIX_10_CHAPTERS_2026-07-31.md) — приоритеты и статусы ключевых тезисов всех десяти опубликованных глав.
 
@@ -49,5 +52,6 @@
 5. Сдвоенный выпуск хранится одним физическим объектом.
 6. Для загрузки фиксируются Drive ID, имя, MIME, байты, страницы, SHA-256, источник, дата и папка.
 7. Платные работы не начинать без отдельного согласования.
+8. Этапные отчёты и подготовительные ZIP-пакеты не переносятся в канонические хранилища отдельными дублями: в MASTER и GitHub вливается только проверенная содержательная дельта.
 
-Последняя синхронизация: **2026-07-31, книжная архитектура, 135 PDF/DJVU URL, закрытие URL-пробелов, HTML-аудит и claim-to-source матрица**.
+Последняя синхронизация: **2026-07-31, 19:01+03:00 — книжная архитектура, 135 PDF/DJVU URL, evidence-layer «Братского листка», 15 issue-level позиций и 8 остающихся content-unknown выпусков**.
