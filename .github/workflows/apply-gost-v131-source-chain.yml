@@ -42,6 +42,7 @@ jobs:
             fi
             git config user.name 'OpenAI Research Integrator'
             git config user.email 'research-integrator@users.noreply.github.com'
+            git config core.whitespace cr-at-eol
             git add -- \
               'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/groups/06_DATA_AND_PROOF_LEDGERS.md' \
               'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/SOURCE_ANCHORS.csv' \
