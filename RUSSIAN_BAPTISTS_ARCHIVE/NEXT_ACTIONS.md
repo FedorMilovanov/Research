@@ -139,3 +139,36 @@
 - Не дробить сдвоенный выпуск.
 - Не создавать PDF из web-скриншотов вместо исходного файла.
 - Не считать viewer, каталог или фрагмент полным факсимиле.
+
+## v130 — international archive and 1917–1926 file queue
+
+Check the live Drive MASTER, `12 Drive Acquisitions`, `13 Institutional Requests` and current `main` before every action.
+
+### P0 — file/page closure
+1. Obtain the five early physical units of `Слово истины` 1918: no. 1; no. 2; no. 3–4; no. 5–6; no. 7–8.
+2. Obtain title page, verso and colophon of the 31-page 1921 congress proceedings; preserve 1921/1922 imprint conflict until then.
+3. Obtain the complete 81-page 1925 Plenum record; do not treat AR 881 extract as full closure.
+4. Acquire `SBC Annual 1922` and visually check p. 91, item/paragraph 124 plus the complete FMB section.
+5. Acquire Hoyt Porter, `Baptist World Movement`, pp. 275–282; hash and visually inspect all eight pages.
+6. Acquire the complete Third Baptist World Congress proceedings and inspect Russian delegates, peace and relief contexts.
+7. Inspect `Home and Foreign Fields`, April 1925, alleged pp. 9–11, before accepting or rejecting the `Слово истины` 1925 attribution.
+
+### P1 — exact archive inventories
+1. `AR 341` item inventory.
+2. `AR 242` item inventory.
+3. `AR 551-2`, box 045, three Porter folders.
+4. `MF 7853` frames/items for Porter, Neprash, relief, union agreements and Fetler.
+5. ABHS/International Ministries person-date-topic inventory for Lewis, Rushbrooke, Pavlov, Timoshenko, Neprash, Gill, Porter, Fetler, Russian Missionary Society and College Fund.
+6. RUEBU historical catalogue/provenance, using AR 915 folder 118.7 as a correspondence lead.
+7. Bethel Russian Mission detailed inventory.
+8. Advertisements in `Слово истины` 1917 and late 1918 for publisher-series nos. 3–10.
+
+### HOLD
+- `Слово истины` 1922 issue row;
+- alleged `Слово истины` 1925;
+- 1921 congress imprint year;
+- exact date of Pavlov's Stockholm report;
+- College Fund transfer/expenditure/opening of a school;
+- contents of unseen archive folders.
+
+Full control: [Drive synthesis](https://docs.google.com/document/d/1-gnYokX17_0EVa4t6-6kc6R3OGWD6OD4Y6GnocXjADs/edit) and [source register](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit).

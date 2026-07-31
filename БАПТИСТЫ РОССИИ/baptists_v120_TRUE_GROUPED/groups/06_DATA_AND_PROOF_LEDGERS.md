@@ -3820,3 +3820,32 @@ AAN I1082; AAN 1446 p.70; APL 35/413/0/9/644; LVA 1987/1/13296; Wardin AR915 Box
 - `NEXT_MICROBATCH.csv` содержит адресные OCR/recovery/holding-задачи и исключает общий поиск без нового ключа.
 - Подробные issue-level решения остаются в каноническом GitHub ledger и Drive-вкладке `08 Research Evidence`.
 - `MASTER_CORPUS_LEDGER.csv` без изменений: новых байтов нет.
+
+## v130 — proof/status controls for the 1917–1926 archive pass
+
+| Object | Current safe status | Forbidden promotion |
+|---|---|---|
+| `Слово истины` 1922 | `year_level_bibliographic_trace` | do not create an issue number |
+| alleged `Слово истины` 1925 | `hold_contradicted_primary_scan_required` | do not extend the journal run |
+| congress record 1921, 31 pp. | `bibliographic_item_verified_imprint_conflict` | do not choose 1921/1922 without title page |
+| Plenum 1925 / print 1926, 81 pp. | `bibliographic_item_and_extract_routes_verified` | AR 881 extract is not the full book |
+| AR 342 | `finding_aid_item_level_verified` | folder titles are not document contents |
+| MF 7853 | `finding_aid_exact_document_routes_verified` | microfilm titles/dates are not page-level content |
+| ABFMS annual 1923 | `content_text_seen_canonical_facsimile_pending` | no long quote/page claim yet |
+| BWA 1923 resolutions | `official_resolution_verified` | do not substitute for complete proceedings context |
+| AR 551-2 box 045 | `holding_box_folder_verified` | do not infer correspondence content |
+| Porter, BQ 1925 | `direct_pdf_url_verified_file_pending` | no summary/quote before eight-page visual check |
+| SBC Annual 1922 | `official_direct_url_and_index_target_verified` | no p.91 content claim until page inspected |
+| Gill/Pavlov newspaper | `page_target_verified` | full-page provenance and caption check required |
+| Riga 1926 photograph | `institutional_image_record_verified` | image/rights files still required |
+
+### Consolidated control objects
+
+- [Research synthesis](https://docs.google.com/document/d/1-gnYokX17_0EVa4t6-6kc6R3OGWD6OD4Y6GnocXjADs/edit)
+- [163-source register](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit)
+
+These two Drive objects absorb PASS 01–06. Do not add six PASS reports or their ZIPs to the canonical Drive/archive tree.
+
+### Universal gate
+
+`catalog card ≠ file`; `viewer ≠ file`; `direct URL ≠ downloaded binary`; `finding aid ≠ folder contents`; `page count ≠ OCR`; `text extraction ≠ quote card`; `library response ≠ received scan`.

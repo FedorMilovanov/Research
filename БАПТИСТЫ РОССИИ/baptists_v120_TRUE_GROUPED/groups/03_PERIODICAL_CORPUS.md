@@ -13718,3 +13718,43 @@ JBC хранит официальный орган Союза `Ewangeliczny Chrz
 - Один объединённый запрос зарегистрирован как `READY TO REQUEST — NOT SENT`; 1906 №5 остаётся отдельным запросом.
 - Новых бинарных выпусков нет; `MASTER_CORPUS_LEDGER.csv` не меняется.
 - Secondary locator, holding и parent PDF не повышают статус до `LOCAL`, visual page или `quote_ready`.
+
+## v130 — `Слово истины`, adjacent print and international serial targets
+
+### `Слово истины`: controlled chronology
+
+| Year | Safe status | Open problem |
+|---|---|---|
+| 1917 | complete public annual run, nos. 1–16 | inspect advertisements for publisher-series nos. 3–10 |
+| 1918 | eight physical units: 1; 2; 3–4; 5–6; 7–8; 9–12; 13; 14 | first five units remain absent from canonical Drive |
+| 1919 | minimum nos. 1, 2, 3 | full year not established |
+| 1920 | nos. 1, 2, 3, 5–6 | no. 4 unresolved |
+| 1921 | working sequence 1–2, 3–4, 5–6 | facsimiles/title pages still needed |
+| 1922 | year-level bibliographic trace | no issue/month/page/holding unit yet established |
+| 1925 claim | `HOLD_CONTRADICTED_PRIMARY_SCAN_REQUIRED` | likely confusion with publisher, revived `Баптист`, or translation attribution |
+
+The alleged 1925 `Слово истины` item must be checked against `Home and Foreign Fields` (April 1925, alleged pp. 9–11), `Баптист` 1925 nos. 3–5 and a Russian masthead/colophon. It is not part of the established journal run.
+
+### Publisher series
+
+Confirmed:
+- no. 1 — M. D. Timoshenko, `В Нарымский край`, Moscow, 1917, 244 pp.;
+- no. 2 — V. G. Pavlov, `Отделение церкви от государства`, 1917, 38 pp.;
+- no. 11 — M. D. Timoshenko, `Грязь тела`, 1917, 13 pp.
+
+Nos. 3–10 remain unresolved. `Меч духовный` is a title/author lead only; year, imprint, pagination and series number are unknown. Search advertisements inside the complete 1917 run and late 1918 issues rather than repeating broad title searches.
+
+`Манна` 1918 retains an institutional imprint conflict: Moscow / `Слово истины` versus Petrograd / journal `Гость`. The next evidence unit is title page + publication data + colophon, not a full paid scan by default.
+
+### Adjacent print corpora
+
+- `Good News for Russia` (1918), 256 pp., is a complete open advocacy/confessional source with Neprash and Fetler material. Attribute its institutional voice; do not use it as neutral statistics.
+- `Home and Foreign Fields` is the official Southern Baptist serial corridor for 1921–1923 Russia/Gill/Porter targets.
+- Porter, `Baptist World Movement`, *Baptist Quarterly* 2.6 (1925), pp. 275–282, has an exact PDF route but remains below file/page verification.
+- The Far Eastern `Благовестник` advertised `Песни для богослужений`, `Основы веры`, a Ya. Ya. Vins brochure and a fifty-song Sunday-school collection in 1921. This is a separate Vladivostok publishing line, not Moscow publisher-series nos. 3–10.
+- `Вестник баптистов` 1919 remains an existence/title lead without a complete issue census.
+- The Syzran Orthodox periodical also titled `Слово истины` is a controlled false positive and must not enter the Baptist run.
+
+Full evidence and link registry:
+- [Drive research synthesis](https://docs.google.com/document/d/1-gnYokX17_0EVa4t6-6kc6R3OGWD6OD4Y6GnocXjADs/edit)
+- [Drive source register](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit)

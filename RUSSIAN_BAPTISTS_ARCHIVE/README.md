@@ -56,3 +56,18 @@
 9. Параллельные журнальные агенты работают через отдельные маркеры; общие README/status/grouped-файлы перечитываются перед записью и обновляются только idempotent append/upsert.
 
 Последняя синхронизация: **2026-07-31, 20:21+03:00 — evidence-layer «Братского листка», единый маршрут БАН для 8 content-unknown выпусков, 49 институциональных записей и параллельная grouped-интеграция без потери дельт других журналов**.
+
+## Consolidated 1917–1926 research intake (v130)
+
+The six-pass research marathon was consolidated without adding PASS-by-PASS files to this repository or Drive.
+
+- [Canonical Google Doc — research synthesis](https://docs.google.com/document/d/1-gnYokX17_0EVa4t6-6kc6R3OGWD6OD4Y6GnocXjADs/edit)
+- [Canonical Google Sheet — 163 unique source URLs](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit)
+
+Repository integration is grouped:
+- historical synthesis → `groups/02_HISTORY_NARRATIVE.md`;
+- periodicals/publishing → `groups/03_PERIODICAL_CORPUS.md`;
+- proof gates/statuses → `groups/06_DATA_AND_PROOF_LEDGERS.md`;
+- stable rows → `SOURCE_ANCHORS.csv`, `PROOF_STATUS_LEDGER.csv`, `NEXT_MICROBATCH.csv`.
+
+Existing Drive copies of AR 881, AR 915 and known facsimiles were reused. No stage ZIPs, duplicate finding aids, paid orders or duplicate institutional requests were created.

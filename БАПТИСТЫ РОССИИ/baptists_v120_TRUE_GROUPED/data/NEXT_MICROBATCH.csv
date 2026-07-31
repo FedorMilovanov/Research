@@ -39,3 +39,14 @@ P1,Primary issue retrieval — known-content nonlocal set,Acquire/page-check 190
 P1,Knizhnaya letopis 1909 records 4209/5307 and 1910 record 20630,Open and transcribe exact registration entries,Only the index route is known.
 P1,1910 bound-parent final-page inspection,Inspect parent no.1/no.3/no.4/no.5 for bound appendices and page boundaries,Parent PDFs are non-target controls.
 P1,Bratskii Listok 1908 no.4 full issue mapping,"Verify pp.1–23, pp.3–9, Odessa congress and Ustav",Only fragment and secondary ranges available.
+P0,Slovo Istiny 1918 first five physical units,"Acquire nos.1;2;3-4;5-6;7-8; verify title pages, pages, SHA256 and visual completeness",Bibliographic holdings exist; physical files absent from canonical Drive; avoid duplicate later units.
+P0,"All-Russian Baptist Congress 1921 proceedings, 31 pp.",Obtain title page/verso/colophon and full scan; resolve 1921 versus 1922 imprint,Bibliographic conflict; no physical file.
+P0,"Baptist Union Plenum 1925 / print 1926, 81 pp.",Acquire complete volume and page-map,AR881 provides only an extract; Gutsche route is microfilm/navigation.
+P0,SBC Annual 1922 p.91 item 124,Acquire official PDF and visually inspect exact relief target plus full FMB section,Official server/tooling transfer timed out; URL/index is not page proof.
+P0,Hoyt Porter Baptist Quarterly 1925 pp.275-282,"Acquire unchanged eight-page PDF, hash and visually inspect before summary/quote",Exact direct URL verified; file access failed in research session.
+P0,Third Baptist World Congress proceedings 1923,"Acquire full volume; inspect Russian delegates, peace and relief pages/context",Official resolutions available but complete proceedings file not acquired.
+P0,Home and Foreign Fields April 1925 Slovo Istiny attribution,Inspect alleged pp.9-11 and compare Baptist 1925 nos.3-5 plus Russian masthead/colophon,Secondary attribution conflicts with established Slovo Istiny chronology.
+P1,AR341 / AR242 / AR551-2 box045 inventories,Request exact item/folder lists and costs before scans,Finding aids/guides identify collections but contents remain unseen.
+P1,MF7853 exact frame request,"Request Porter, Neprash, union agreements, relief and Fetler frames/items",Two-reel finding aid gives titles/dates but not images.
+P1,RUEBU / ABHS / Bethel archive inventories,Request focused person-date-topic or item inventories; no broad paid search,Provenance and collection corridors established; detailed inventories missing.
+P1,Slovo Istiny publisher series nos.3-10,Mine advertisements in complete 1917 run and late 1918 issues,"Broad catalogs reveal nos.1,2,11 only; repeated generic searches are low-yield."

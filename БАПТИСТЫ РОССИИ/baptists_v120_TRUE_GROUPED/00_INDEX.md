@@ -134,3 +134,19 @@ The v125 pass mined the Sinichkin channel export in six sub-passes. All changes 
 **Ledger deltas:** PROOF_STATUS_LEDGER 199→297; MASTER_CORPUS_LEDGER 5→11; SOURCE_ANCHORS 195→205; NEXT_MICROBATCH 21→28 (2 resolved).
 
 **Status honesty:** no `quote_card_verified` claims without text layer + visual check. Scanned periodicals (98 issues) remain at `page_count_verified_scan_no_ocr`; OCR is the main blocker for the next pass (no tesseract in the working environment).
+
+## v130 — international relief, archive maps and publishing control, 1917–1926
+
+v130 absorbs the useful delta from the six-pass Russian Baptist research marathon without creating PASS-by-PASS files in the repository.
+
+- Canonical Drive synthesis: [CONSOLIDATED RESEARCH 1917–1926](https://docs.google.com/document/d/1-gnYokX17_0EVa4t6-6kc6R3OGWD6OD4Y6GnocXjADs/edit).
+- Machine-readable source register: [163 unique URLs](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit).
+- Corrected archive identities: `AR 341 = I. V. Neprash`; `AR 342 = Mrs. I. V. Neprash`; AR 342 contains 1922 items despite its 1923–1955 summary range.
+- `MF 7853` is now an addressable map for Pavlov, Timoshenko, Neprash, union documents, Bible courses, famine relief, Hoyt Porter and the Fetler case.
+- Northern ABFMS/BWA/Lewis and Southern FMB/Gill/Porter channels are kept separate.
+- Hoyt E. Porter, not Everett Gill alone, is an essential Moscow/ARA field actor; `AR 551-2 box 045` and Porter items in `MF 7853` are the exact request corridor.
+- BWA 1923 peace, relief and Russian-delegates resolutions are preserved as official primary texts, while the complete congress proceedings remain a file/page target.
+- `Слово истины` 1922 remains year-level only; the alleged 1925 issue is `HOLD_CONTRADICTED_PRIMARY_SCAN_REQUIRED`.
+- No `quote_ready`, `IN DRIVE`, or full-file status was assigned from a catalog, viewer, direct URL or finding aid.
+
+Integration lives in `groups/02`, `groups/03`, `groups/06` and the stable CSV ledgers. The Drive Doc preserves the full reasoning, negative searches, conflicts and link registry.

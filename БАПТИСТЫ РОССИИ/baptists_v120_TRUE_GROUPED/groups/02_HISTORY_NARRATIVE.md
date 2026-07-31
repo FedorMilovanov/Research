@@ -1174,3 +1174,76 @@ Not allowed:
 ### Запреты
 
 Не переносить издателя одного журнала на другой; не присваивать 365 одному Фетлеру; не называть музейный диапазон полным комплектом; не назначать Гусарука редактором; не исправлять печатную статистику молча.
+
+## v130 — Russia 1917–1926: relief, unions and international Baptist infrastructure
+
+**Scope.** This block adds a source-controlled bridge for the future chapters on 1917–1928 and international/émigré networks. It does not replace the periodical census or claim access to unseen archive folders.
+
+### Archive identity corrections
+
+- `AR 341` is the **I. V. Neprash Papers**.
+- `AR 342` is the **Mrs. I. V. Neprash Papers**.
+- The related-material line in AR 915 that reverses these identifiers is treated as an internal finding-aid error.
+- AR 342 describes a 1923–1955 range but folder 2 lists letters, `Soglashenie`, `Postanovlenie` and union correspondence from 1922. The safe status is `FINDING-AID DATE RANGE INTERNALLY INCONSISTENT`.
+- `AR 242` remains the route for typed documents of the All-Russian Union of Baptists.
+- `MF 7853` gives exact document-title/date routes for Pavlov, Timoshenko, Neprash, Baptist/Evangelical Christian agreements, Bible courses, school finance, famine relief, Hoyt Porter and the Fetler case.
+- The RUEBU/Mansfield Center provenance must be kept distinct from the present institutional address; AR 915 folder 118.7 is a promising route to the old camp-library catalogue and transfer history.
+
+### Congress and union-document corridor
+
+1. The 31-page record of the All-Russian Baptist congress, 30 October–8 November 1921, is bibliographically established, but its imprint year remains `1921 / 1922 conflict` until the title page and colophon are seen.
+2. The 81-page record of the Plenum of the Council of the Baptist Union of the USSR, 5–12 December 1925, Moscow 1926, is bibliographically established. AR 881 box 4, folder 4.5, item 5 is an extract concerning Prokhanov, not a substitute for the full volume.
+3. AR 915 item 120.1 is a physical archive unit for the Thirteenth Caucasian Baptist Congress, 1925, Wardin no. 3887.
+4. The Waldemar Gutsche microfilm corridor independently points to the 1925 Plenum protocol.
+
+### Northern Baptist relief channel
+
+The 1923 ABFMS annual report describes `Rush a Ship to Russia`: almost 7,000 individual packages, 1,091 bales of clothing, additional children's clothing and miscellaneous cases, distribution through the American Relief Administration, travel by Walter O. Lewis, and a Moscow all-Russian Baptist/Evangelical Christian relief committee.
+
+Safe narrative use:
+
+> Famine relief was not a detached philanthropic appendix. It became an operational field where foreign Baptist agencies, the ARA, Russian Baptists and Evangelical Christians built temporary shared machinery.
+
+Keep denominational estimates of membership or congregational reach attributed to the reporting organization; they are not a census.
+
+BWA resolution 1923.3 independently confirms aid to the hungry, needy, widows and orphans, preservation of mission enterprises, aid beyond Baptist communities and the coordinating role of J. H. Rushbrooke.
+
+BWA resolution 1923.6 confirms the Russian-delegation/College Fund context. It does **not** prove that money was transferred, spent, or that a college opened.
+
+### Peace and conscientious objection
+
+BWA resolution 1923.7 preserves the boundary between:
+- the Russian request for a universal declaration that military service is incompatible with Christianity; and
+- the final BWA compromise, which did not adopt absolute non-resistance as a universal Baptist norm but defended respect for conscientious objectors and discussed alternative service.
+
+The Stockholm congress dates are 21–27 July 1923. Conflicting Russian dates for P. V. Pavlov's report remain a `DATE CONFLICT — DO NOT NORMALIZE`.
+
+### Southern Baptist channel: Gill and Porter are not interchangeable
+
+The evidence requires two roles:
+
+- **Everett Gill** — superintendent/organizer of the new European field, traveler, Bible and refugee-relief advocate.
+- **Hoyt Echols Porter** — identified in a contemporary 1922 report as the first Southern Baptist missionary sent to Russia, working in Moscow through/under ARA protection, distributing relief and undertaking some evangelistic work.
+
+Porter has an exact archive identity:
+- spouse: Lura King Porter;
+- Soviet Union service: 1921–1925;
+- `AR 551-2`, box 045, three folders.
+
+`MF 7853` adds exact Porter correspondence/report routes for 1922–1923, account sheets, agreements and the item titled `What I have seen in Russia: the Melitopol area`. These titles and dates are usable as a request map, not as claims about unseen content.
+
+### Publication and visual targets
+
+- Hoyt E. Porter, `Baptist World Movement`, *Baptist Quarterly* 2.6 (April 1925), pp. 275–282: exact direct PDF route verified; file/hash/full visual check pending.
+- `SBC Annual 1922`: exact indexed relief target p. 91, item/paragraph 124; binary/page visual check pending.
+- `Home and Foreign Fields`, 1921–1923: official archive corridor; search by exact month/person/topic rather than acquiring whole years without targets.
+- Americus Times-Recorder, 14 March 1922, p. 5: contemporary Gill–Pavloff page; retain full-page provenance before any crop.
+- Riga BWA conference photograph, October 1926: institutional record names Rushbrooke, Gill and Lewis; high-quality image and rights files are still required.
+
+### Research boundary
+
+The complete source map and 163-URL register are stored in Drive:
+- [consolidated narrative](https://docs.google.com/document/d/1-gnYokX17_0EVa4t6-6kc6R3OGWD6OD4Y6GnocXjADs/edit)
+- [source register](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit)
+
+Do not promote `catalog`, `viewer`, `direct URL`, `finding aid`, `OCR snippet` or `secondary citation` to `file_access_verified`, `page_count_verified` or `quote_card_verified` without the missing evidence step.
