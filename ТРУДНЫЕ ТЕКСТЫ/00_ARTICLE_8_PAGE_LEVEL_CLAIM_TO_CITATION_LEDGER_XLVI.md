@@ -432,3 +432,41 @@ Matthew R. Crawford, “Confessing God from a Good Conscience: 1 Peter 3:21 and 
 До закрытия этих пунктов:
 
 `ARTICLE-8-CONTENT-CALIBRATED / CLEAN-DRAFT-READY / CITATION-LOCATORS-PARTIALLY-COMPLETE`.
+
+---
+
+# 5. ОБНОВЛЕНИЕ ЛОКАТОРОВ (2026-07-31)
+
+## Schreiner NAC 2003 — подтверждённые страницы
+
+Через рецензии DTS Voice и Reform&Revival:
+
+- **с. 183** — начало 1 Пет. 3:18;
+- **с. 184–190** — «духи в темнице»;
+- **с. 186** — 1 Пет. 3:19;
+- **с. 190–191** — продолжение;
+- **с. 193** — 1 Пет. 3:21;
+- **с. 206–208** — 1 Пет. 4:1–6.
+
+Статус: `REVIEW-CONFIRMED-PRINT-PAGES (NAC 2003)`.
+
+## Schreiner CSC 2020 (350 pp.) — ПОДТВЕРЖДЕНО
+
+- **с. 209–216** — 1 Пет. 3:19 (духи в темнице).
+
+Источник: Southern Equip (SBTS), 2024.
+
+Статус: `SECONDARY-LOCATOR-CONFIRMED`.
+
+## Davids NICNT 1990 — подтверждённая страница
+
+- **с. 139** — `πνεύματα` = нечеловеческие существа.
+
+Статус: `SECONDARY-LOCATOR-CONFIRMED`.
+
+## Chad Pierce — Durham thesis 2009
+
+- Полный PDF: `https://etheses.durham.ac.uk/id/eprint/13/1/Thesisbound.pdf`
+- **с. 183–237** — релевантные разделы.
+
+Статус: `FULL-PDF-URL-CONFIRMED`.
