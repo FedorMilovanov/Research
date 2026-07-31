@@ -22,13 +22,15 @@
 - [`INSTITUTIONAL_RESPONSES_2026-07-31.md`](INSTITUTIONAL_RESPONSES_2026-07-31.md) — ответы РГБ/РНБ, шифры и ограничения.
 - [`BOOK_CONVERSION_AND_SITE_REMEDIATION_2026-07-31.md`](BOOK_CONVERSION_AND_SITE_REMEDIATION_2026-07-31.md) — решение о переходе от ограниченной серии к книге из 17 глав с сохранением URL.
 - [`OFFICIAL_PDF_SOURCE_LEDGER_73_2026-07-31.md`](OFFICIAL_PDF_SOURCE_LEDGER_73_2026-07-31.md) — независимая копия 73 прямых официальных PDF-ссылок и незакрытых слотов.
+- [`OFFICIAL_HOLE_CLOSURES_2026-07-31.md`](OFFICIAL_HOLE_CLOSURES_2026-07-31.md) — прямой официальный маршрут «Баптиста» 1909 №20, проверенные PDF «Братского вестника» 1945 №1/№3 и оставшиеся доказательные пробелы.
 
 ## Актуальная редакционная интеграция
 
 В `FedorMilovanov/gb-is-my-strength` создан lane `lane/baptists-book-research-integration-2026-07-31`. В нём находятся:
 
 - `baptisty-rossii/research/79-book-conversion-and-editorial-audit-2026-07-31.md`;
-- `baptisty-rossii/research/80-official-periodicals-pdf-ledger-73-links-2026-07-31.md`.
+- `baptisty-rossii/research/80-official-periodicals-pdf-ledger-73-links-2026-07-31.md`;
+- `baptisty-rossii/research/81-official-hole-closures-2026-07-31.md`.
 
 Решение: развивать проект как книгу с отдельными URL глав. Текущие десять опубликованных маршрутов не объединяются в один монолит и не переименовываются без отдельного SYSTEM PR.
 
@@ -42,4 +44,4 @@
 6. Для загрузки фиксируются Drive ID, имя, MIME, байты, страницы, SHA-256, источник, дата и папка.
 7. Платные работы не начинать без отдельного согласования.
 
-Последняя синхронизация: **2026-07-31, книжная и PDF-интеграция**.
+Последняя синхронизация: **2026-07-31, книжная, PDF-интеграция и закрытие официальных URL-пробелов**.
