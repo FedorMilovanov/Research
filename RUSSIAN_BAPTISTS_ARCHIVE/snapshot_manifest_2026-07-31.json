@@ -18,6 +18,11 @@
     "url": "https://docs.google.com/spreadsheets/d/1qPqt2SydDiHHOa9dJRxR1UWjVLp1w1R3oM6DW_ORxo0/edit",
     "note": "Created after Drive and GitHub snapshot registration was written back to the live MASTER."
   },
+  "closing_handoff_snapshot": {
+    "drive_id": "1L6TPMe1m0UokTULtErwZkjV_lAoPJQBwd3HNuyReGk8",
+    "url": "https://docs.google.com/document/d/1L6TPMe1m0UokTULtErwZkjV_lAoPJQBwd3HNuyReGk8/edit",
+    "note": "Contains final control counts, closing master ID, GitHub entrypoint and commit SHAs."
+  },
   "final_snapshots": [
     {
       "name": "MASTER ARCHIVE CATALOG",
@@ -84,6 +89,8 @@
   "github": {
     "repository": "FedorMilovanov/Research",
     "branch": "main",
-    "entrypoint": "00_RUSSIAN_BAPTISTS_ARCHIVE.md"
+    "entrypoint": "00_RUSSIAN_BAPTISTS_ARCHIVE.md",
+    "archive_directory": "RUSSIAN_BAPTISTS_ARCHIVE/",
+    "latest_snapshot_commit": "ae2fd4108937816daf1dea72f208e9dfacc87038"
   }
 }
