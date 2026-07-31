@@ -1,3 +1,33 @@
+# CURRENT MASTER OVERLAY — POST-V80 / V84I / R-SERIES AUDIT
+
+**Дата:** 2026-07-31
+**Статус:** текущий master-overlay поверх исторического master-index. Старые v1–v80 заметки ниже сохраняются как history.
+
+## Current authority order
+
+1. **Post-merge / current-state authority:** `72_V84I_POST_MERGE_TOTAL_AUDIT_AND_CLOSURE_GATES.md`.
+2. **Open verification backlog:** `73_OPEN_VERIFICATION_BACKLOG_2026-07-31.md`.
+3. **Book architecture:** `61_BOOK_ARCHITECTURE_V2_CHAPTERS_AND_RESEARCH_TASKS.md`.
+4. **New article-research dossiers:** `62_R1`–`71_R9`.
+5. **Source/safety history:** `60_V81`–`71_V84H`, governed by V84I where workflow/deployment state differs.
+
+## What is still not closed
+
+| Class | Open items |
+|---|---|
+| Post-merge site/governance | tma TOC/reading-time/progress cleanup; `/hard-texts/` book-shaped landing cleanup; live release witness; Rogers scan-first provenance. |
+| Evidence gates | MLJ book `BOOK-FULLTEXT-HOLD`; new direct PDF quote `PAGE-IMAGE-HOLD`; Adams `DO-NOT-IMPORT` medical generalizations. |
+| P0 architecture gaps without dedicated dossier | Eden heart before/fall; broken/repentant heart; judgment/two resurrections. |
+| P0 dossiers with source-lock open | R1 born again; R5 two struggles; R7a Word and heart; R8 beholding glory. |
+| P1/P2 open article lanes | anger/offense/forgiveness; anxious heart and peace; hardening; heart at home/new creation. |
+| Navigation drift | README/master/provenance needed this overlay because V81–V84I and R1–R9 were not represented in old v53–v80 navigation. |
+
+## Current quote rule
+
+Legacy v48 still means the old 801-row quote-risk queue was closed. It does **not** mean that new R1–R9 quote candidates are article-ready. Search-snippet verification must be treated as `SNIPPET-VERIFIED / PRIMARY-RECHECK-REQUIRED` until a primary text/scan/page locator is read.
+
+---
+
 # Master-index, структура серии, попытки, планы
 
 > Consolidated in v53 from SERDCE_RESEARCH_PACK v52. Every original file is preserved below under its original path.

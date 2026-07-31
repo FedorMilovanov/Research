@@ -1,3 +1,24 @@
+# CURRENT ARCHITECTURE NORMALIZATION NOTE — 2026-07-31
+
+This file remains the canonical book-architecture plan, but it contains sequential owner revisions (v2, v2.1, v2.2) that were not fully folded back into the initial chapter tables. Use this normalization note when reading the plan.
+
+## Effective revisions to apply
+
+1. `Глава VII. Школа сердца` should be read as **`Глава VII. Возрастание сердца`**.
+2. `Глава VIII. Сердце и его Бог` should include the later additions:
+   - VIII.1 `Сердце и Слово` — R7a / P0;
+   - VIII.5 `Христос — Пленитель сердца` — R8 / P0 capstone.
+3. Updated count is the later v2.2 count: **23 existing + 15 new (+1 bonus)**, not the earlier 23 + 12 + 1 line.
+4. R9 `Христос Откровения` exists as a later research dossier, but its architecture role is still open: standalone article, support block for R8, or cross-link support for X.1 `Суд сердца`.
+5. P0 architecture gaps still lacking dedicated dossiers as of 2026-07-31:
+   - I.2 `Сердце в Эдеме`;
+   - III.3 `Сокрушённое сердце: покаяние`;
+   - X.1 `Суд сердца: два воскресения`.
+
+See `73_OPEN_VERIFICATION_BACKLOG_2026-07-31.md` for the current open verification and architecture-gap backlog.
+
+---
+
 # Архитектура онлайн-книги «Тайны человеческого сердца» — v2 (главы, категории людей, research-задания)
 
 > **Статус:** утверждаемый план (owner-ревизия 2026-07-14). Ничего не внедрено в движок —

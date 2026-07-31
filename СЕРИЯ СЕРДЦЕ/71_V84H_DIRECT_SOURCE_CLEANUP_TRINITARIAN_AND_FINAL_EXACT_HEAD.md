@@ -1,3 +1,12 @@
+# POST-MERGE SUPERSESSION NOTE — READ V84I FIRST
+
+**Added:** 2026-07-31
+**Current-state supersession:** `72_V84I_POST_MERGE_TOTAL_AUDIT_AND_CLOSURE_GATES.md` supersedes V84H for workflow state, merge state, deployment/live-witness state, and `KEEP DRAFT / NO PRODUCTION CLAIM` language.
+
+V84H remains a substantive historical authority for direct research cleanup, trinitarian deepening, and exact-head evidence at its timestamp. Do not treat its title-line `CURRENT CROSS-REPO AUTHORITY` as current after V84I.
+
+---
+
 # V84H — DIRECT SOURCE CLEANUP, TRINITARIAN DEEPENING AND FINAL EXACT-HEAD CLOSURE
 
 **Дата:** 2026-07-29  
