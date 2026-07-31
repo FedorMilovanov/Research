@@ -549,28 +549,28 @@ Bible*, наш прямой конфессиональный предшеств�
 основание 1689 LBCF). Ценен для этой статьи как единственный автор в этом досье,
 пишущий именно из нашей деноминационной линии:
 - на Откр. 1:17 — сравнивает реакцию Иоанна с Маноем (не упал), Иезекиилем (упал, но
-  сохранил сознание), Даниилом (лишился сил и уснул) — и заключает, что Иоанн «упал как
-  мёртвый сразу», сильнее всех, потому что видение было «более величественным и
-  блистательным» [ВЕРИФИЦИРОВАНО ЧАСТИЧНО, сниппет с прямыми цитатами];
+  сохранил сознание), Даниилом (лишился сил и уснул) — и заключает, что Иоанн «fell down
+  at once, as dead», потому что видение было «more grand and illustrious»;
+  **SAFE CLOSURE 2026-07-31:** verified by BibleStudyTools Gill open text,
+  `revelation-1-17.html`;
 - на Откр. 2:23 — «испытующий внутренности и сердце» толкуется как атрибут
-  всеведения Христа как Бога, судящего не по внешности, а по внутренним побуждениям и
-  целям всех дел, сколь бы скрытыми они ни были [ВЕРИФИЦИРОВАНО ЧАСТИЧНО];
-- на Откр. 19:15 — «свирепый гнев Божий против грешников уподобляется точилу; а
-  нечестивая антихристианская партия уподобляется гроздьям», созревшим для гибели и
-  потому брошенным в точило, «раздавленным, выжатым и растоптанным могущественной силой
-  Христа, Слова Божия»; отмечает аллюзию на Пс. 2:9 и параллель с Откр. 14:19–20, а фон —
-  Ис. 63:3,6 [ВЕРИФИЦИРОВАНО ЧАСТИЧНО];
-- на Ис. 63:1 — относит текст к Мессии («описание слишком величественно и торжественно,
-  чтобы подходить простому человеку»), Едом — образ врагов церкви [ВЕРИФИЦИРОВАНО
-  ЧАСТИЧНО];
-- на Откр. 5:5–6 — важное наблюдение: Иоанн слышит «лев», но видит именно «агнца»,
-  сопоставимого со Христом «по невинности и чистоте природы, по безобидному и
-  беспорочному поведению, по кроткому и смиренному нраву во всей Его жизни»
-  [ВЕРИФИЦИРОВАНО ЧАСТИЧНО].
-Источники: biblestudytools.com/commentaries/gills-exposition-of-the-bible/ (зеркало
-общественного достояния); также archive.sacred-texts.com/bib/cmt/gill/; полный текст в
-общественном достоянии, широко зеркалируется — итоговую статью стоит цитировать по
-одному стабильному зеркалу (например, biblestudytools или studylight).
+  всеведения Христа как Бога: Christ is omniscient, does not judge by outward appearance,
+  but knows the principles and ends of actions; **SAFE CLOSURE 2026-07-31:** verified by
+  BibleStudyTools Gill open text, `revelation-2-23.html`;
+- на Откр. 19:15 — «the fierce wrath of God against sinners is compared to a winepress»;
+  wicked antichristian party are like grapes, cast into it, «pressed, squeezed, and
+  trodden down by the mighty power of Christ, the Word of God»; фон — Откр. 14:19–20,
+  Ис. 63:3,6; **SAFE CLOSURE 2026-07-31:** verified by BibleStudyTools Gill open text,
+  `revelation-19-15.html`;
+- на Ис. 63:1 — прежний тезис остаётся useful but not re-checked in this safe pass;
+  держать как `NOT-CLOSED-IN-THIS-PASS`, если будет нужен прямой Isaiah locator;
+- на Откр. 5:5–6 — Откр. 5:5 verified for Lion/root/prevailing; Откр. 5:6 verified for
+  John seeing a Lamb, not a lion, and for Gill’s lamb-language: Christ compared to a lamb
+  for «innocence and purity of nature», «harmless and inoffensive conversation», «meek and
+  humble deportment», patience in sufferings/death, and sacrifice;
+  **SAFE CLOSURE 2026-07-31:** verified by BibleStudyTools Gill open text,
+  `revelation-5-5.html` and `revelation-5-6.html`.
+Источники: BibleStudyTools Gill open text URLs above (public-domain commentary mirror); also archive.sacred-texts.com/bib/cmt/gill/ as alternate public-domain mirror. Stable article citation may use one mirror consistently; print page is not claimed.
 
 ### Баптисты — confessional anchor
 
@@ -601,14 +601,11 @@ Bible*, наш прямой конфессиональный предшеств�
   Божия»; ученики «вспомнили» этот текст именно в момент, когда наблюдали своего
   Учителя, выгоняющего торгующих, как разительную иллюстрацию духа, которым Он был
   движим [ВЕРИФИЦИРОВАНО ЧАСТИЧНО, сниппет с фразами в кавычках];
-- на Мф. 23 — «Христос всенародно обличает главные пороки книжников и фарисеев в
-  беспощадных выражениях»: восемь раз «горе вам», семь раз «лицемеры», дважды «слепые
-  вожди», дважды «безумные и слепые», один раз «змии, порождения ехиднины»; вывод
-  Райла: «эта глава показывает, что для самого любящего сердца возможно употреблять
-  язык сурового обличения» [ВЕРИФИЦИРОВАНО ЧАСТИЧНО, ключевая формулировка «for the
-  most loving heart to use the language of stern reproof» — почти готовый тезис для
-  статьи, дословность желательно перепроверить на ccel.org/ccel/ryle/matthew.xv.i.html
-  или gracegems.org/Ryle/m23.htm].
+- на Мф. 23 — **SAFE CLOSURE 2026-07-31** по GraceGems open text `m23.htm`: Ryle называет
+  главу «withering exposure» и «sharp rebuke» книжников и фарисеев; формула закрыта
+  дословно: *“It is a striking proof that it is possible for the most loving heart to use
+  the language of stern reproof.”* Статус: `GRACEGEMS-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED`;
+  печатная страница не заявляется.
 
 ### Современные консервативные
 
@@ -650,39 +647,38 @@ Ch. 4 «The Trauma of Holiness» (Исаия и Пётр — «изыди от �
   мой].
 
 **John MacArthur / gty.org** — проповеднический цикл по Откровению (Grace Community
-Church), релевантные проповеди (все ссылки ✅ найдены и подтверждены):
+Church), релевантные проповеди:
 - «The Vision of the Glorified Son, Part 1» (gty.org/sermons/66-4) — на Откр. 1:12–18;
-- «The Lord's Word to His Church: Ephesus» (gty.org/library/sermons-library/90-472) —
-  *«His eyes were like a flame of fire. His feet were like burnished bronze. That is His
-  omniscience»* — «Очи Его были как пламень огненный. Ноги Его были как раскалённая
-  бронза. Это Его всеведение» [перевод мой; ВЕРИФИЦИРОВАНО ЧАСТИЧНО];
-- «The Lord's Word to His Church: Thyatira» (gty.org/library/sermons-library/90-475) —
-  на Откр. 2:23: связывает формулу с Иер. 17:10 напрямую; *«His omniscience, His laser
-  vision penetrates everything, consumes every opposition, sweeps down all
-  obstructions, presses its way with invincible power to bring judgment»* — «Его
-  всеведение, Его лазерное зрение проникает всюду, поглощает всякое сопротивление,
-  сметает все препятствия, пробивается с непобедимой силой, чтобы совершить суд»
-  [перевод мой; ВЕРИФИЦИРОВАНО ЧАСТИЧНО];
+- «The Lord's Word to His Church: Thyatira» (`90-475`) — **SAFE CLOSURE 2026-07-31** по
+  official GTY transcript. На Откр. 2:23 связывает формулу с Иер. 17:10 напрямую:
+  *“His omniscience, His laser vision penetrates everything, consumes every opposition,
+  sweeps down all obstructions, presses its way with invincible power to bring judgment.”*
+  Также: *“I am the one who searches the minds and the hearts. That sounds like
+  Jeremiah 17:10.”* Статус: `OFFICIAL-GTY-TRANSCRIPT-VERIFIED`; URL:
+  https://www.gty.org/sermons/90-475/the-lords-word-to-his-church-thyatira
 - «A Vision of the Lamb», части 1–3 (gty.org/library/sermons-library/66-20,21,22) — на
   Откр. 5;
 - «God's Great Day of Wrath» (gty.org/library/sermons-library/66-25) — на Откр. 6;
-- «The Glorious Return of Jesus Christ», части 1–3 (gty.org/library/sermons-library/
-  66-70,71,72) — на Откр. 19; часть 2: *«He crushes the grapes in His wrath — a very
-  vivid symbol of judgment... He treads the winepress of the wrath of God alone»* —
-  «Он давит виноград в ярости Своей — очень яркий символ суда... Он один топчет
-  точило гнева Божия» [перевод мой; ВЕРИФИЦИРОВАНО ЧАСТИЧНО].
+- «The Glorious Return of Jesus Christ, Part 2» (`66-71`) — **SAFE CLOSURE 2026-07-31** по
+  official GTY transcript. На Откр. 19:15: *“He crushes the grapes in His wrath — a very
+  vivid symbol of judgment”*; and: *“He treads the winepress. The angels assist in the
+  mop-up and we in the reign in the Kingdom.”* Статус: `OFFICIAL-GTY-TRANSCRIPT-VERIFIED`;
+  URL: https://www.gty.org/sermons/66-71/the-glorious-return-of-jesus-christ-part-2
+
+Примечание safe-pass: прежняя строка привязывала краткую цитату про «eyes/feet/omniscience» к
+Ephesus (`90-472`). В этом проходе не было найдено необходимости держать её как отдельную
+quote-card; рабочая статья может опираться на официально проверенный Thyatira transcript (`90-475`).
 
 **Критика «Gentle and Lowly» изнутри консервативного реформатского лагеря** —
 центральный «крючок повода» для статьи:
-- Jeremiah Johnson [атрибуция статьи по сниппету, byline желательно перепроверить],
-  «Does Scripture Really Say That? A Critical Appraisal of "Gentle and Lowly"»
-  (gty.org/blogs/B210315) — прямая формулировка: *«Ortlund wants to tame the Lion of
-  the tribe of Judah»* — «Ортланд хочет приручить Льва колена Иудина» [перевод мой;
-  ВЕРИФИЦИРОВАНО ЧАСТИЧНО]. Статья указывает: Уорфилд в своём классическом эссе о
-  Христовых чувствах уделяет теме гнева Христа более 4200 слов, тогда как у Ортланда на
-  всю книгу — примерно вдвое меньше слов на эту тему; отмечает, что Ортланд цитирует
-  Лаодикийское послание (Откр. 3:20 «се, стою у двери и стучу»), но опускает более
-  суровую часть того же послания (3:16, «извергну тебя из уст Моих»).
+- Jeremiah Johnson, «Does Scripture Really Say That? A Critical Appraisal of "Gentle and
+  Lowly"» (gty.org/blogs/B210315) — **SAFE CLOSURE 2026-07-31** по official GTY blog
+  readback. Exact line: *“One gets the distinct impression that Ortlund wants to tame the
+  Lion of the tribe of Judah.”* Статья также прямо сравнивает объём Warfield on Christ’s
+  anger (4200-plus words) с Ortlund’s treatment and argues that Christ’s holiness includes
+  both compassion for sinners and fierce hatred of sin. Статус: `OFFICIAL-GTY-BLOG-VERIFIED`.
+  Это остаётся critique-source, not doctrinal foundation; Scripture remains the argument’s
+  authority.
 - reformation21.org, «Gentle and Lowly In Light of a Few Years» — более сочувственная,
   но тоже критическая рецензия изнутри реформатского мира: книга — «тоник» (tonic) для
   верующих, подлинно борющихся с грехом, но у читателя, ищущего полной картины прочих
@@ -807,12 +803,12 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 | 13 | T. Goodwin, *Heart of Christ*, подзаголовок | полное название трактата | ВЕРИФИЦИРОВАНО | banneroftruth.org |
 | 14 | T. Goodwin, тезис о величии+нежности | пересказ содержания | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | monergism.com PDF (URL известен, не открыт в этой сессии) |
 | 15 | J. Calvin, комм. на Ис. 63:4 | пересказ содержания | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | ccel.org/ccel/calvin/calcom16 |
-| 16 | J. Gill, Exposition (5 мест) | см. раздел «Свидетели» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО (прямые фразы в кавычках) | biblestudytools.com/commentaries/gills-exposition-of-the-bible/ |
-| 17 | J. C. Ryle, Ин. 2:17 и Мф. 23 | см. раздел «Свидетели» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | ccel.org/ccel/ryle/matthew, gracegems.org/Ryle |
+| 16 | J. Gill, Exposition | Rev. 1:17; 2:23; 5:5–6; 19:15 closed; Isa. 63:1 not closed | **PARTLY CLOSED 2026-07-31** — BibleStudyTools open text verified for Revelation loci | biblestudytools.com/commentaries/gills-exposition-of-the-bible/ |
+| 17 | J. C. Ryle, Ин. 2:17 и Мф. 23 | Matt. 23 stern-reproof line closed; John 2 zeal note still partial | **PARTLY CLOSED 2026-07-31** — GraceGems `m23.htm` verified | gracegems.org/Ryle/m23.htm |
 | 18 | 1689 LBCF гл. 8, 32 | Христос-Судия, Последний суд | ВЕРИФИЦИРОВАНО (устойчивый конфессиональный текст) | the1689confession.com, founders.org |
 | 19 | R. C. Sproul, *Holiness of God* (5 цитат) | см. раздел «Свидетели» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | ligonier.org/posts/great-quotes-holiness-god, billmuehlenberg.com |
-| 20 | J. MacArthur / gty.org (5 проповедей) | см. раздел «Свидетели» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО (URL точные) | gty.org/library/sermons-library/... (коды даны) |
-| 21 | GTY / J. Johnson, критика Ortlund | «tame the Lion of the tribe of Judah» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | gty.org/blogs/B210315 |
+| 20 | J. MacArthur / gty.org | `90-475` Thyatira and `66-71` Glorious Return Part 2 closed; other GTY links locator-level | **PARTLY CLOSED 2026-07-31** — official transcripts verified for two quote-cards | gty.org/sermons/90-475 ; gty.org/sermons/66-71 |
+| 21 | GTY / J. Johnson, критика Ortlund | “One gets the distinct impression that Ortlund wants to tame the Lion of the tribe of Judah.” | **SAFE CLOSURE 2026-07-31** — official GTY blog verified | gty.org/blogs/B210315 |
 | 22 | reformation21.org, рецензия Ortlund | сбалансированная критика | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | reformation21.org/gentle-lowly-in-light-of-a-few-years |
 | 23 | D. Ortlund, *Gentle and Lowly* гл. 15 | «natural work / strange work» + 3 цитаты | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | вторичные обзоры; нужен URL/страница книги |
 | 24 | D. Ortlund, цитата на Откр. 5:5–6 | «lion-like judgment... lamb-like tenderness» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО, URL не закреплён | требует повторного поиска с прямым URL |
@@ -948,6 +944,11 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 ---
 
 ## Открытые вопросы / что ещё копать
+
+0. **Gill Revelation comments — SAFE CLOSURE 2026-07-31.** The previously `ВЕРИФИЦИРОВАНО ЧАСТИЧНО` Gill notes on Rev. 1:17; 2:23; 5:5–6; 19:15 were checked against BibleStudyTools public-domain Gill pages and are now usable as open-text paraphrase/short quote with verse-page URL. Print page and Isaiah 63:1 locator are not claimed.
+0b. **MacArthur / GTY subset — SAFE CLOSURE 2026-07-31.** Official transcripts for `90-475` Thyatira and `66-71` Glorious Return Part 2 were read; those two GTY quote-cards are now usable as official-ministry transcript support. Other GTY Revelation links remain locator-level unless separately checked.
+0c. **Ryle on Matthew 23 — SAFE CLOSURE 2026-07-31.** The stern-reproof quote was verified against GraceGems `m23.htm`; John 2 zeal note remains not separately closed.
+0d. **GTY / Jeremiah Johnson critique — SAFE CLOSURE 2026-07-31.** Official GTY blog `B210315` was read; the “tame the Lion” line is now exact-source verified. Use only as conservative critique context, not as doctrinal foundation.
 
 1. **Точные постраничные цитаты Гудвина** о величии+нежности (majesty/glory vs tender
    heart) — PDF найден (monergism.com, digitalpuritan.net — оба URL уже в досье №13

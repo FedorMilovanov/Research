@@ -991,20 +991,20 @@ R8 в замаскированный self-help («смотри на Христа
 | 5 | Murray J. Harris | оба перевода грамматически возможны, p. 314 | NIGTC, *The Second Epistle to the Corinthians* (Eerdmans, 2005) | ВЕРИФИЦИРОВАНО опосредованно (через пересказ RTS-paper и др.), точная формулировка НЕ получена дословно — сверить по книге |
 | 6 | Paul Barnett | «beholding-as-in-a-mirror»; зеркало = Евангелие, p. 206 | NICNT, *The Second Epistle to the Corinthians* (Eerdmans, 1997) | ВЕРИФИЦИРОВАНО через поисковую выдачу (прямая цитата с указанием страницы) |
 | 7 | Linda Belleville | тезис «reflecting» | *Reflections of Glory…*, 1991 (серия и издательство — расхождение источников: SNTSMS/Cambridge vs JSNTS 52/Sheffield) | [ТРЕБУЕТ ПРОВЕРКИ библиографии], сам тезис — по заглавию книги, содержание не прочитано напрямую |
-| 8 | John Calvin | «in speculo conspicientes»; «image of God... repaired... little by little» | *Commentary on 2 Corinthians*, на 3:18 (CCEL) | ВЕРИФИЦИРОВАНО через поисковую выдачу, сверить дословно по CCEL при открытом доступе |
+| 8 | John Calvin | “In speculo conspicientes”; “the image of God, which had been effaced by sin, may be stamped anew upon us… by little and little” | *Commentary on 2 Corinthians*, ad 3:18, CCEL Study | **CCEL-HTML-VERIFIED / VERSE-COMMENTARY-LOCATOR-LOCKED** (safe closure 2026-07-31; print page not claimed) |
 | 9 | John Calvin | «Christ… is the mirror in which… we contemplate our election» | *Institutes*, III.24.5 | ВЕРИФИЦИРОВАНО (широко известная формула) — тематически про избрание, НЕ про 2 Кор. 3:18 |
-| 10 | John Owen | «Whilst by faith we contemplate the glory of Christ… perfect conformity» | *Meditations and Discourses on the Glory of Christ* (1684) | ВЕРИФИЦИРОВАНО через поисковую выдачу — сверить по CCEL/PDF перед публикацией |
-| 11 | John Owen | «If our future blessedness shall consist in being where he is… transformed into the same glory?» | там же (предисловие/введение) | ВЕРИФИЦИРОВАНО через поисковую выдачу (одна независимая находка) — сверить |
-| 12 | John Owen | «The only inquiry remaining, is, how a constant view… transforming power and efficacy» | там же | ВЕРИФИЦИРОВАНО через поисковую выдачу — сверить |
-| 13 | John Owen | «Constant contemplation of Christ and his glory… only relief» | там же | ВЕРИФИЦИРОВАНО через поисковую выдачу — сверить |
-| 14 | John Owen | «Here we walk by faith; there, by sight… internal power» | там же, гл. о различиях веры/видения | ВЕРИФИЦИРОВАНО через поисковую выдачу — сверить |
-| 15 | John Owen | «By beholding the glory of Christ believers are first gradually transformed… (1 John 3:2)» | там же | ВЕРИФИЦИРОВАНО через поисковую выдачу — сверить |
+| 10 | John Owen | “It is that whereby they are first gradually conformed unto it, and then fixed in the eternal enjoyment of it.” | *Meditations and Discourses on the Glory of Christ*, ch. I, `glory.i.iv.html` | **CCEL-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED** (safe closure 2026-07-31; print page not claimed) |
+| 11 | John Owen | “if our future blessedness shall consist in being where he is, and beholding of his glory, what better preparation can there be for it than in a constant previous contemplation of that glory…” | Preface to the reader, `glory.i.iii.html` | **CCEL-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED** |
+| 12 | John Owen | “The only inquiry remaining, is, how a constant view of the glory of Christ will produce this blessed effect in us…” + “transforming power and efficacy” | Part II, ch. II, `glory.ii.iv.html` | **CCEL-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED** |
+| 13 | John Owen | “a steady view of the glory of Christ… is the only effectual way to obtain a revival from under our spiritual decays…” | Part II, ch. II, `glory.ii.iv.html` | **CCEL-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED** |
+| 14 | John Owen | “We walk here by faith, and not by sight”; “We shall see him as he is” | ch. XII, `glory.i.xv.html` | **CCEL-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED** |
+| 15 | John Owen | “Faith also, in beholding the glory of Christ in this life, is accompanied with a transforming efficacy…” | ch. XIV, `glory.i.xvii.html` | **CCEL-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED** |
 | 16 | John Owen | последние слова: «I am going to him whom my soul hath loved…» (Флитвуду, 22.08.1683) | письмо, цит. по Gospel Coalition/Blue Letter Bible/Core Christianity | ВЕРИФИЦИРОВАНО (три независимых источника) |
 | 17 | John Owen | последние слова: «…the long-wished-for day is come at last, in which I shall see that glory…» (Пейну, 24.08.1683) | там же | ВЕРИФИЦИРОВАНО (три независимых источника) |
 | 18 | John Owen | «Set faith at work on Christ for the killing of thy sin… dead at thy feet» | *Of the Mortification of Sin in Believers* (1656) | ВЕРИФИЦИРОВАНО через поисковую выдачу (Goodreads + Probe Ministries независимо) |
-| 19 | John Owen | «Be killing sin or it will be killing you» | там же | ВЕРИФИЦИРОВАНО (широко и стабильно атрибутируется) |
+| 19 | John Owen | “be killing sin or it will be killing you” | *Of the Mortification of Sin in Believers*, ch. II, `mort.i.v.html` | **CCEL-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED** (safe closure 2026-07-31) |
 | 20 | Thomas Chalmers | «The heart is not so constituted; and the only way to dispossess it of an old affection, is by the expulsive power of a new one.» | *The Expulsive Power of a New Affection* (проповедь, ок. 1819) | ВЕРИФИЦИРОВАНО (многократно независимо, включая уже существующий V15/CHALMERS_EXPULSIVE_001 в корпусе, файлы 22 и 25) |
-| 21 | Thomas Chalmers | «There are two ways in which a practical moralist may attempt to displace… the expulsive power of a new one» (полный опорный абзац) | там же | ВЕРИФИЦИРОВАНО через поисковую выдачу — развёрнутый абзац, сверить по PDF (monergism/onthewing) перед публикацией |
+| 21 | Thomas Chalmers | “There are two ways in which a practical moralist may attempt to displace…”; “the only way to dispossess it of an old affection is by the expulsive power of a new one.” | *The Expulsive Power of a New Affection* (sermon), Precept Austin original-sermon text section | **OPEN-HTML-VERIFIED / EDITION-PAGE-NOT-CLAIMED** (safe closure 2026-07-31; use as HTML text or still do print/PDF page pass if needed) |
 | 22 | Thomas Chalmers | «The best way of casting out an impure affection is to admit a pure one…» | там же | ВЕРИФИЦИРОВАНО через поисковую выдачу |
 | 23 | Jonathan Edwards | «The first objective ground of gracious affections, is the transcendently excellent and amiable nature of divine things… not any conceived relation… to self-interest.» | *A Treatise Concerning Religious Affections* (1746), обсуждение Признака 2 | ВЕРИФИЦИРОВАНО через поисковую выдачу (множественная независимая сверка) |
 | 24 | Robert Murray M'Cheyne | «Learn much of the Lord Jesus. For every look at yourself, take ten looks at Christ…» (полный абзац) | письмо, *Memoir and Remains of the Rev. R. M. M'Cheyne*, ред. A. Bonar | ЦИТАТА ВЕРИФИЦИРОВАНА (текст подтверждён независимо), АВТОРСТВО ИЗРЕЧЕНИЯ ОТКРЫТО — см. полный разбор выше, раздел Д |
@@ -1105,13 +1105,7 @@ R8 в замаскированный self-help («смотри на Христа
 
 ## Открытые вопросы / что ещё копать
 
-1. **Полная сверка цитат Owen, «Glory of Christ», по первоисточнику.** Все цитаты из этой книги
-   в данном досье подтверждены только через поисковые сниппеты (WebFetch был полностью заблокирован
-   весь прогон). Нужно при снятой блокировке (или на другой машине/сессии) открыть
-   ccel.org/ccel/owen/glory (постранично по главам — glory.i.iii, glory.i.xv, glory.i.xvi и др.)
-   либо PDF на monergism.com/thethreshold/sdg/owen/gloryofchrist.pdf и свериться дословно, включая
-   точные номера глав для каждой цитаты (в этом прогоне удалось восстановить общее оглавление, но
-   НЕ удалось надёжно приписать каждую отдельную цитату конкретному номеру главы).
+1. **Owen, «Glory of Christ» — SAFE CLOSURE 2026-07-31.** Главный старый blocker («все цитаты только через поисковые сниппеты; WebFetch был заблокирован») частично закрыт: CCEL HTML теперь открыт и проверены ключевые quote-cards №10–15. Использовать статусы `CCEL-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED`; печатные страницы Banner/Works не заявлять. Остаётся только optional print-page pass, если нужна академическая печатная пагинация.
 2. **Владелец должен решить: как далеко заходить с грамматическим спором κατοπτριζόμενοι.**
    Материала достаточно для полноценного экскурса (BDAG, Harris, Barnett, Hodge, Pulpit Commentary,
    Chrysostom, Belleville) — возможно, стоит вынести подробности в сноску/раскрывающийся блок,
@@ -1130,11 +1124,13 @@ R8 в замаскированный self-help («смотри на Христа
    удалось). Стоит отдельно прогнать spurgeongems.org (все проповеди по указателю на 2 Кор. 3:18)
    при снятой блокировке WebFetch — весьма вероятно, что у Сперджена есть значимый материал,
    учитывая частоту, с которой он проповедовал по этому тексту.
-6. **Martyn Lloyd-Jones, «Reflecting His Glory»** (mljtrust.org) — найдена ссылка на проповедь
-   именно с таким названием именно на этот текст, содержание не извлечено. Явный кандидат для
-   следующего прогона — судя по заголовку, сам M.Ллойд-Джонс мог занять сторону «отражения»,
-   что дало бы статье живой пример современного консервативного проповедника на МЕНЬШИНСТВЕННОЙ
-   стороне спора — полезно для честности изложения.
+6. **Martyn Lloyd-Jones, «Reflecting His Glory» — SAFE CLOSURE 2026-07-31 at official-page level.**
+   Official MLJ Trust page was read: https://www.mljtrust.org/sermon/reflecting-his-glory/ .
+   It confirms sermon #5546, title, text 2 Cor. 3:18, original preaching date 1966-09-25,
+   audio availability, and the official description/breakdown: beholding / reflecting God’s glory,
+   restoration of God’s image, progressive transformation, and revival beginning with God’s people.
+   Boundary: `OFFICIAL-SERMON-PAGE-READ / AUDIO-UNLISTENED / NO-DIRECT-SERMON-QUOTE`; do not quote
+   sermon wording beyond the official page text unless audio/transcript is separately verified.
 7. **Owen — связь двух книг («Mortification» + «Glory of Christ») как единой системы** в этом
    прогоне обоснована (а) прямой цитатой-мостом 1656 года («Set faith at work on Christ») и
    (б) косвенным свидетельством Пэккера о союзе со Христом как основании всего богословия Оуэна,

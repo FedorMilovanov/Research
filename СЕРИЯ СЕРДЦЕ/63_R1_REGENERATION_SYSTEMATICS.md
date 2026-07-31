@@ -400,11 +400,25 @@ https://ccel.org/ccel/charnock/nat_regen/nat_regen.i.html — этот вари�
 Ссылка: https://johngill.thekingsbible.com/CommentaryVerse/60/1/3
 **ВЕРИФИЦИРОВАНО**.
 
-**B6.** Body of Doctrinal Divinity, кн. VI, гл. 11 «Of Regeneration» — рабочие кандидаты
-(суть глав достоверна, дословность не сверена в этой сессии):
-> «Возрождение приписывается в Писании не человеку, а Богу, и только Ему; рождённые свыше
-> „не от крови, не от хотения плоти, не от хотения мужа, но от Бога родились“».
-[НЕ ВЕРИФИЦИРОВАНО — кандидат; проверить по PDF Monergism, кн. VI, гл. 11, при доступе]
+**B6.** Body of Doctrinal Divinity, кн. VI, гл. 11 «Of Regeneration» — SAFE CLOSURE 2026-07-31.
+Monergism HTML readback confirms the chapter and gives two article-ready exact anchors:
+
+> “Regeneration may be considered either more largely, and then it includes with it effectual
+> calling, conversion, and sanctification: or more strictly, and then it designs the first
+> principle of grace infused into the soul…”
+
+> “…what is produced in regeneration is called the new creature, and the new man…”
+
+Перевод: «Возрождение можно рассматривать шире — тогда оно включает действенное призвание,
+обращение и освящение; или строже — тогда оно означает первый принцип благодати, вложенный
+в душу…»; «…то, что производится в возрождении, называется новым творением и новым человеком…».
+
+Ссылка: https://www.monergism.com/regeneration-6
+Статус: `MONERGISM-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED`; печатная страница 1839 г. не заявляется.
+Дополнительная verified опора из той же главы: Гилл различает instrumentality of the word and
+immediate infusion; the ministry of the word is “the vehicle in which the Spirit of God conveys
+himself and his grace into the hearts of men”, while the first principle of grace is described as
+“immediate infusion”.
 
 ### В. Луис Беркхоф
 
@@ -836,9 +850,7 @@ https://www.monergism.com/holy-spirits-work-calling-and-regeneration-herman-bavi
    spurgeongems, archive.org (fetch); все цитаты верифицированы по поисковым сниппетам. Перед
    вёрсткой статьи: контрольное сличение цитатника по ссылкам (особенно C1–C5 Беркхоф и G1 Уитфилд —
    взять цельные абзацы, а не склейки).
-2. **Гилл, кн. VI, гл. 11 «Of Regeneration»**: добыть 2–3 цельных абзаца дословно (PDF Monergism,
-   стр. по изданию 1839 г.); кандидат B6 подтвердить/заменить. Также его разбор Ин. 3:5 («от воды
-   и Духа» — не крещение) для врезки о крещальном вопросе.
+2. **Гилл, кн. VI, гл. 11 «Of Regeneration» — SAFE CLOSURE 2026-07-31 for HTML.** B6 подтверждён/заменён по Monergism HTML `https://www.monergism.com/regeneration-6`; exact anchors on strict/large sense of regeneration and new creature/new man are locked. Печатная страница 1839 г. не заявляется. Отдельный разбор Ин. 3:5 / Тит. 3:5 уже частично есть в B3–B4; если нужна печатная пагинация — optional future pass.
 3. **Бавинк дословно**: RD IV, гл. 1 — выписать 1–2 абзаца о cum verbo и о том, что возрождение
    в узком смысле предшествует вере (англ. изд. Baker, стр. уточнить); проверить его критику
    Кайперова «предполагаемого возрождения» (для бонуса R2 тоже пригодится).

@@ -386,13 +386,16 @@ https://www.ccel.org/ccel/calvin/calcom32.ii.xix.html ; зеркало:
 https://biblehub.com/library/calvin/commentary_on_matthew_mark_luke_volume_2/matthew_13_18-23_mark_4_13-20_luke.htm
 **ВЕРИФИЦИРОВАНО** (точная фраза).
 
-**B2.** «…temporary faith being a sort of vegetation of the seed» + «their hearts are not
+**B2.** «…temporary faith, being a sort of vegetation of the seed» + «their hearts are not
 so properly and thoroughly subdued, as to have the softness necessary for their continued
 nourishment» — «временная вера есть как бы прорастание семени… сердца их не настолько
 подлинно и глубоко покорены, чтобы иметь мягкость, необходимую для постоянного питания
-[семени]». Источник: там же (Pringle).
-**ВЕРИФИЦИРОВАНО частично** — фразы подтверждены поисковой выдачей по CCEL/StudyLight;
-при написании сверить полный абзац по calcom32.ii.xix.html.
+[семени]». Источник: там же (Pringle), CCEL `calcom32.ii.xix.html`.
+**SAFE CLOSURE 2026-07-31:** полный абзац сверён по CCEL readback; статус
+`CCEL-HTML-VERIFIED / HARMONY-SECTION-LOCATOR-LOCKED`; печатная страница не заявляется.
+Дополнительные закрытые фразы того же абзаца: «if the word does not fully penetrate the
+whole heart, and strike its roots deep, faith will want the supply of moisture that is
+necessary for perseverance»; «nothing has been done, till faith acquires true firmness».
 
 ### В. 1689 Лондонское исповедание
 
@@ -688,8 +691,7 @@ but of them who are unwilling to be changed.»
 
 1. **Whitefield F2** — найти точное место в Journals (Banner of Truth 1960) или заменить
    верифицируемой цитатой из его проповеди «The Method of Grace» / писем.
-2. **Calvin Harmony B2** — сверить полный абзац по CCEL calcom32.ii.xix.html (fetch был
-   заблокирован); заодно взять его комментарий на Лк. 8:15 («honest and good heart»).
+2. **Calvin Harmony B2 — SAFE CLOSURE 2026-07-31.** Полный абзац по temporary faith / stony ground сверён по CCEL `calcom32.ii.xix.html`. Остаётся только отдельная optional задача: если нужна специальная фраза по Лк. 8:15 («honest and good heart»), добрать её в том же CCEL-разделе.
 3. **France G1 / Carson G2** — проставить точные страницы по бумажным изданиям (NICNT 2007;
    EBC vol. 8) перед публикацией; у France взять и его замечание о названии «parable of
    the soils».

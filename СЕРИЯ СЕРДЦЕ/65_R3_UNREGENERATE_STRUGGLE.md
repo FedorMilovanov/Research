@@ -442,9 +442,7 @@
 > Пометки: ✅ ВЕРИФИЦИРОВАНО (точная фраза найдена в открытом источнике; ссылка приложена);
 > ⚠️ НЕ ВЕРИФИЦИРОВАНО — кандидат (включать только с этой пометкой или пересказом).
 
-**№1. Кальвин, Institutes II.3.3 (Beveridge, 1845).** ✅ (собрано из пяти независимо
-верифицированных фрагментов одного раздела; порядок — авторский; связки при финальной
-вычитке сверить по CCEL):
+**№1. Кальвин, Institutes II.3.3 (Beveridge, 1845).** ✅ SAFE CLOSURE 2026-07-31: CCEL chapter readback completed; фрагменты и порядок подтверждены по `institutes.iv.iv.html`, print page not claimed:
 
 > "In every age there have been some who, under the guidance of nature, were all their lives
 > devoted to virtue. It is of no consequence, that many blots may be detected in their conduct;
@@ -472,7 +470,7 @@ https://www.baptists.net/history/2023/02/book-2-chapter-3-everything-proceeding-
 подтверждение фрагментов: https://reformedbooksonline.com/topics/topics-by-subject/common-grace/john-calvin-on-common-grace/ ;
 https://sojo.net/articles/opinion/praise-calvins-total-depravity
 
-**№1b. Кальвин, Institutes II.3.4 (Battles, 1960) — Камилл и Катилина.** ✅ (фрагменты):
+**№1b. Кальвин, Institutes II.3.4 — Камилл и Катилина.** ✅ SAFE CLOSURE 2026-07-31 for Beveridge/CCEL wording; Battles wording remains useful but page/edition not claimed:
 
 > "…whether we must make Camillus equal to Catiline, or we shall have in Camillus an example
 > proving that nature, if carefully cultivated, is not utterly devoid of goodness. […] the
@@ -838,13 +836,7 @@ Couenhoven 2025 (https://journals.sagepub.com/doi/10.1177/09539468251370545).
 
 ## Открытые вопросы / что ещё копать
 
-1. **Institutes II.3.3–4 — сплошная сверка.** Прямой fetch CCEL был заблокирован; абзац №1
-   собран из верифицированных фрагментов. При вычитке: прогнать
-   https://www.ccel.org/ccel/calvin/institutes.iv.iv.html и вор-зеркало (vor.org/rbdisk),
-   свести связки; решить, давать Beveridge или Battles (рекомендую Battles в тексте статьи,
-   Beveridge в сноске — Battles точнее по изданию 1559 г.). Уточнить привязку фразы «not
-   common gifts of nature, but special graces of God»: II.3.4 или II.2.17 (почти дословный
-   параллелизм в двух местах).
+1. **Institutes II.3.3–4 — SAFE CLOSURE 2026-07-31 for CCEL/Beveridge.** Старый blocker «прямой fetch CCEL был заблокирован» закрыт: `https://www.ccel.org/ccel/calvin/institutes.iv.iv.html` прочитан, разделы II.3.3–4 и логика special gifts / providential restraint подтверждены. Остаётся не source-risk, а редакционный выбор: давать ли Battles как основной перевод и проверять русское издание; печатная страница Battles/Beveridge не заявляется.
 2. **Contra Julianum IV.3.25 (Фабриций/Катилина)** — сверить латынь по PL 44 (ссылка в №4)
    и английский по FOC 35 (archive.org, стр. ~180–190); пока держать с пометкой.
 3. **Статья Marshall «Virtutes paganorum sunt splendida vitia»** — установить выходные данные
