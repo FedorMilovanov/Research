@@ -1,0 +1,152 @@
+name: Build second editorial 40-PDF open archive
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/build-commons-second-editorial-40-pdf.yml'
+      - 'SOURCE_LIBRARY/tools/crawl_commons_second_editorial_40_pdfs.py'
+      - 'SOURCE_LIBRARY/SECOND_EDITORIAL_40_PDF_PASS_2026-07-30.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: commons-second-editorial-40-pdf-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  collect-and-verify:
+    name: Collect and verify second balanced 40-PDF corpus
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Checkout PR merge candidate
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests pypdf
+
+      - name: Discover, download and verify 40 PDFs
+        run: >-
+          python SOURCE_LIBRARY/tools/crawl_commons_second_editorial_40_pdfs.py
+          --target 40
+          --per-query 30
+          --max-candidates 180
+          --max-file-mb 120
+          --pause 0.45
+          --output-root second-editorial-pdf-archive
+
+      - name: Build aggregate report
+        shell: bash
+        run: |
+          python - <<'PY' | tee aggregate-report.json
+          import json
+          from pathlib import Path
+          path = Path('second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/manifest.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          report = {
+              'collection': data['collection'],
+              'discovered': data['eligible_open_pdf_candidates_discovered'],
+              'processed': data['candidates_processed'],
+              'downloaded': data['downloaded_pdfs'],
+              'failed_or_skipped': data['failed_or_skipped'],
+              'total_bytes': data['total_bytes'],
+              'license_counts': data['license_counts'],
+              'total_pages': sum(r.get('pages') or 0 for r in data['records'] if r.get('status') == 'DOWNLOADED'),
+              'discovery_failures': len(data['discovery_failures']),
+          }
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Publish summary
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          report = json.load(open('aggregate-report.json', encoding='utf-8'))
+          print('# Second editorial 40-PDF pass')
+          for key, value in report.items():
+              print(f'- {key}: **{value}**')
+          PY
+
+      - name: Split archive into four parts
+        shell: bash
+        run: |
+          root='second-editorial-pdf-archive/commons-second-editorial-open-pdf-40'
+          for part in 1 2 3 4; do mkdir -p "$root/chunks/part-$part"; done
+          shopt -s nullglob
+          for file in "$root"/[0-9][0-9]__*.pdf; do
+            base=$(basename "$file")
+            number=${base%%__*}
+            index=$((10#$number))
+            part=$(( (index - 1) / 10 + 1 ))
+            mv "$file" "$root/chunks/part-$part/$base"
+          done
+
+      - name: Upload PDFs 01-10
+        uses: actions/upload-artifact@v4
+        with:
+          name: second-editorial-pdf-01-10
+          path: second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/chunks/part-1/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload PDFs 11-20
+        uses: actions/upload-artifact@v4
+        with:
+          name: second-editorial-pdf-11-20
+          path: second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/chunks/part-2/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload PDFs 21-30
+        uses: actions/upload-artifact@v4
+        with:
+          name: second-editorial-pdf-21-30
+          path: second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/chunks/part-3/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload PDFs 31-40
+        uses: actions/upload-artifact@v4
+        with:
+          name: second-editorial-pdf-31-40
+          path: second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/chunks/part-4/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload manifest and audit package
+        uses: actions/upload-artifact@v4
+        with:
+          name: second-editorial-40-pdf-manifest
+          path: |
+            second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/manifest.json
+            second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/manifest.csv
+            second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/SHA256SUMS.txt
+            second-editorial-pdf-archive/commons-second-editorial-open-pdf-40/README.md
+            aggregate-report.json
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 30
+
+      - name: Enforce 40 valid PDFs
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          report = json.load(open('aggregate-report.json', encoding='utf-8'))
+          if report['downloaded'] != 40:
+              raise SystemExit(f"second editorial gate failed: {report['downloaded']}/40")
+          if report['discovery_failures']:
+              raise SystemExit(f"discovery failures: {report['discovery_failures']}")
+          PY
