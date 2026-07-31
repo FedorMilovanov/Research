@@ -55,6 +55,23 @@
 - 23 позиции без известного бинарного следа;
 - extraction queue: P1=13, P2=20, P3=5.
 
+### Telegram re-export — 15 oversized PDFs
+
+Сырые `messages4.html` и `messages5.html` проверены по всем 15 точным Message ID. Они содержат метаданные, но **0 attachment href**, **0 скрытых media-атрибутов**, не содержат пути `files/...` или Telegram file ID/access hash. Повторный поиск скрытых ссылок внутри этих экспортов закрыт.
+
+Надёжное действие:
+
+1. Telegram Desktop → Settings → Advanced → Export Telegram data.
+2. Выбрать нужный канал/чат, включить **Files**.
+3. Поставить максимальный размер выше 12,4 MB; безопаснее 20–50 MB.
+4. Сохранить экспорт вместе с каталогом `files/`.
+5. Либо получить повторную пересылку оригиналов владельцем канала.
+6. Либо извлечь приложения из проверенных parent PDF «Христианина».
+7. После получения: исходное имя, Message ID, байты, SHA-256, страницы, первая и последняя страница, дефекты и сравнение с parent extraction.
+
+Машинный список: [`bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv`](bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv).  
+Рабочая инструкция: [`TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md`](TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md).
+
 ### Метод извлечения
 
 1. Получить родительский PDF «Христианина».
@@ -138,7 +155,7 @@
 - Не склеивать разные издания/тиражи одного номера.
 - Не дробить сдвоенный выпуск.
 - Не создавать PDF из web-скриншотов вместо исходного файла.
-- Не считать viewer, каталог или фрагмент полным факсимиле.
+- Не считать viewer, каталог, Telegram metadata или фрагмент полным факсимиле.
 
 ## v130 — international archive and 1917–1926 file queue
 
