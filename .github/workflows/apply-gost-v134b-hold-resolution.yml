@@ -1,0 +1,97 @@
+name: Apply corrected Gost v134 HOLD resolution
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: baptists-grouped-writes
+  cancel-in-progress: false
+
+jobs:
+  integrate:
+    if: github.event.issue.title == '[automation] apply corrected Gost v134 HOLD resolution'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Apply and push guarded delta
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          log=/tmp/gost-v134b.log
+          : > "$log"
+          trap 'status=$?; cp "$log" /tmp/gost-v134b-final.log; exit $status' EXIT
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.whitespace cr-at-eol
+
+          paths=(
+            "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv"
+            "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv"
+            "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/SOURCE_ANCHORS.csv"
+            "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/groups/06_DATA_AND_PROOF_LEDGERS.md"
+          )
+
+          success=0
+          for attempt in 1 2 3 4; do
+            echo "attempt=$attempt" | tee -a "$log"
+            git fetch origin main 2>&1 | tee -a "$log"
+            git reset --hard origin/main 2>&1 | tee -a "$log"
+            python3 .github/scripts/apply_gost_v134.py 2>&1 | tee -a "$log"
+            git diff --check 2>&1 | tee -a "$log"
+
+            mapfile -t changed < <(git diff --name-only | sort)
+            mapfile -t expected < <(printf '%s\n' "${paths[@]}" | sort)
+            if [[ "${changed[*]}" != "${expected[*]}" ]]; then
+              echo "Unexpected changed-file set" | tee -a "$log"
+              printf 'changed: %s\n' "${changed[@]}" | tee -a "$log"
+              printf 'expected: %s\n' "${expected[@]}" | tee -a "$log"
+              exit 1
+            fi
+
+            git add -- "${paths[@]}"
+            git commit -m "research(baptists): resolve Gost editor and person authority HOLDs v134" 2>&1 | tee -a "$log"
+            if git push origin HEAD:main 2>&1 | tee -a "$log"; then
+              success=1
+              break
+            fi
+            echo "push race; retrying on fresh main" | tee -a "$log"
+          done
+          [[ "$success" -eq 1 ]]
+
+      - name: Post diagnostic log
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = '/tmp/gost-v134b-final.log';
+            const body = fs.existsSync(path) ? fs.readFileSync(path, 'utf8') : 'No diagnostic log was produced.';
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '```text\n' + body.slice(-60000) + '\n```'
+            });
+
+      - name: Close successful trigger
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
