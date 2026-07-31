@@ -1,0 +1,245 @@
+name: Apply Bratsky Listok stage16 consolidation
+
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-bratsky-stage16-consolidation.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-bratsky-stage16-consolidation
+  cancel-in-progress: false
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Apply retry-safe no-loss delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "research-baptists-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            echo "attempt $attempt"
+            git fetch origin main
+            git reset --hard origin/main
+          python - <<'PY'
+          from pathlib import Path
+          import csv, re
+
+          root = Path('.')
+          archive = root / 'RUSSIAN_BAPTISTS_ARCHIVE'
+          grouped = root / 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED'
+
+          def append_once(path, marker, block):
+              text = path.read_text(encoding='utf-8')
+              if marker not in text:
+                  path.write_text(text.rstrip() + '\n\n' + block.strip() + '\n', encoding='utf-8')
+
+          def patch(path, fn):
+              text = path.read_text(encoding='utf-8')
+              new = fn(text)
+              if new != text:
+                  path.write_text(new, encoding='utf-8')
+
+          ledger_block = '''
+          ## 10. Stage16 — единый маршрут БАН и параллельная интеграция
+
+          **Маркер:** `BRATSKY-STAGE16-v130`  
+          **Дата:** 2026-07-31.
+
+          Библиографическая роспись БАН по шифрам `1197`, `1198`, `36/18985*` покрывает все восемь выпусков, содержание которых ещё полностью неизвестно: 1907 №4; 1908 №6/№9; 1909 №5; 1910 №1/№3/№4/№5.
+
+          В живом MASTER зарегистрирован один объединённый запрос `READY TO REQUEST — NOT SENT`. Он просит сначала подтвердить фактическое наличие, печатный номер/год, пагинацию, первую и последнюю страницы, колофон, состояние и предварительную стоимость. Отдельный запрос БАН на 1906 №5 сохранён. Наличие в фонде не считается цифровым файлом, установленным содержанием или `quote_ready` страницей.
+
+          Параллельная работа по другим журналам допустима через отдельные маркеры. Перед изменением общих README/status/grouped-файлов необходимо перечитать свежий `main`; изменения применяются только idempotent append/upsert и повторяются на новом `origin/main` при push race. Чужие журнальные блоки не заменяются полной устаревшей копией.
+          '''
+          append_once(archive / 'BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md', 'BRATSKY-STAGE16-v130', ledger_block)
+
+          def patch_archive_readme(t):
+              rule = '9. Параллельные журнальные агенты работают через отдельные маркеры; общие README/status/grouped-файлы перечитываются перед записью и обновляются только idempotent append/upsert.'
+              if rule not in t:
+                  anchor = '8. Этапные отчёты и подготовительные ZIP-пакеты не переносятся в канонические хранилища отдельными дублями: в MASTER и GitHub вливается только проверенная содержательная дельта.'
+                  t = t.replace(anchor, anchor + '\n' + rule) if anchor in t else t.rstrip() + '\n\n' + rule + '\n'
+              sync = 'Последняя синхронизация: **2026-07-31, 20:21+03:00 — evidence-layer «Братского листка», единый маршрут БАН для 8 content-unknown выпусков, 49 институциональных записей и параллельная grouped-интеграция без потери дельт других журналов**.'
+              return re.sub(r'Последняя синхронизация: \*\*.*?\*\*\.', sync, t, count=1)
+          patch(archive / 'README.md', patch_archive_readme)
+
+          def patch_status(t):
+              t = re.sub(r'\| Институциональные заявки \| \*\*\d+\*\*: 9 `SENT/RESPONSE`, \d+ `READY/HOLD` \|', '| Институциональные заявки | **49**: 9 `SENT/RESPONSE`, 40 `READY/HOLD` |', t, count=1)
+              ban = 'Библиографическая роспись БАН по шифрам `1197`, `1198`, `36/18985*` покрывает все восемь позиций. В MASTER добавлен один объединённый запрос `READY TO REQUEST — NOT SENT`; отдельный запрос на 1906 №5 сохранён. Наличие в фонде не считается полученным сканом или установленным содержанием.'
+              anchor = 'Это не библиографические лакуны: существование позиций подтверждено. Нужны первичные экземпляры, проверка приплётов и визуальная page-level верификация.'
+              if ban not in t and anchor in t:
+                  t = t.replace(anchor, anchor + '\n\n' + ban)
+              section = '''## Параллельная интеграция
+
+          Другой агент одновременно ведёт «Гость»/Фетлеров и может менять общие grouped-файлы. Безопасный режим: разделённые журнальные маркеры, свежий read перед записью, idempotent append/upsert и retry к новому `origin/main`. В текущей интеграции чужие блоки и строки MASTER сохранены.'''
+              if '## Параллельная интеграция' not in t:
+                  t = t.rstrip() + '\n\n' + section + '\n'
+              return t
+          patch(archive / 'MASTER_STATUS_2026-07-31.md', patch_status)
+
+          def patch_actions(t):
+              ban = '''### Единый запрос БАН по восьми белым пятнам
+
+          Один объединённый запрос зарегистрирован в MASTER как `READY TO REQUEST — NOT SENT` для: 1907 №4; 1908 №6/№9; 1909 №5; 1910 №1/№3/№4/№5. БАН-реквизиты: `1197`, `1198`, `36/18985*`. Сначала получить подтверждение фактического наличия, номера/года на первой странице, пагинацию, состояние, последнюю страницу/колофон и предварительный расчёт. Полное копирование — только после отдельного согласования. Не объединять с запросом 1906 №5.'''
+              if '### Единый запрос БАН по восьми белым пятнам' not in t:
+                  anchor = '### Исправление 1906'
+                  t = t.replace(anchor, ban + '\n\n' + anchor) if anchor in t else t.rstrip() + '\n\n' + ban + '\n'
+              parallel = '''## Параллельная работа агентов
+
+          - Разные журнальные lanes могут работать одновременно.
+          - Перед записью общих README/status/grouped-файлов перечитывать свежий `main`.
+          - Использовать уникальные маркеры и idempotent append/upsert.
+          - При отклонённом push перечитать `origin/main`, повторно применить дельту и не заменять общий файл устаревшей полной копией.
+          - В Google Sheets писать в отдельные строки/ID; одну и ту же ячейку не обновлять параллельно без свежего readback.'''
+              if '## Параллельная работа агентов' not in t:
+                  anchor = '## Обязательная фиксация загрузки'
+                  t = t.replace(anchor, parallel + '\n\n' + anchor) if anchor in t else t.rstrip() + '\n\n' + parallel + '\n'
+              return t
+          patch(archive / 'NEXT_ACTIONS.md', patch_actions)
+
+          def patch_root(t):
+              catalog = '**Канонический каталог:** [Google Sheets MASTER ARCHIVE CATALOG](https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit)  '
+              audit = '**Детальный аудит «Братского листка»:** [Google Sheets](https://docs.google.com/spreadsheets/d/15L76H5bufK9Pr8EelwO-KZTYXuKX-weKnOh7qV_ze6k/edit)  '
+              ledger = '**Канонический evidence ledger:** [`BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md`](RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md)  '
+              additions = [x for x in (audit, ledger) if x not in t]
+              if additions and catalog in t:
+                  t = t.replace(catalog, catalog + '\n' + '\n'.join(additions))
+              rule = '- Параллельные агенты используют отдельные журнальные маркеры и idempotent append/upsert; общие файлы нельзя заменять от устаревшего HEAD.'
+              if rule not in t:
+                  anchor = '- Платные заказы в библиотеки не оформляются без отдельного согласования владельца проекта.'
+                  if anchor in t:
+                      t = t.replace(anchor, anchor + '\n' + rule)
+              live = 'Последняя живая синхронизация: **31 июля 2026 года, 20:21+03:00**.'
+              if 'Последняя живая синхронизация:' in t:
+                  t = re.sub(r'Последняя живая синхронизация: \*\*.*?\*\*\.', live, t, count=1)
+              else:
+                  t = t.rstrip() + '  \n' + live + '\n'
+              return t
+          patch(root / '00_RUSSIAN_BAPTISTS_ARCHIVE.md', patch_root)
+
+          periodicals_block = '''## v130 — «Братский листок» 1906–1910: evidence layer и единый маршрут БАН
+
+          **Маркер:** `BRATSKY-STAGE16-v130`  
+          **Режим:** no-loss append/upsert к свежему `main`.
+
+          - 60 номинальных позиций: 58 титульных выпусков + 2 замещения.
+          - 22 уникальные локальные позиции; 38 нелокальных.
+          - Пономерные/page anchors консолидированы для 15 позиций; восемь выпусков остаются content-unknown.
+          - БАН `1197`, `1198`, `36/18985*` покрывает все восемь: 1907 №4; 1908 №6/№9; 1909 №5; 1910 №1/№3/№4/№5.
+          - Один объединённый запрос зарегистрирован как `READY TO REQUEST — NOT SENT`; 1906 №5 остаётся отдельным запросом.
+          - Новых бинарных выпусков нет; `MASTER_CORPUS_LEDGER.csv` не меняется.
+          - Secondary locator, holding и parent PDF не повышают статус до `LOCAL`, visual page или `quote_ready`.
+          '''
+          append_once(grouped / 'groups/03_PERIODICAL_CORPUS.md', 'BRATSKY-STAGE16-v130', periodicals_block)
+
+          data_block = '''## v130 — «Братский листок»: proof/data integration stage16
+
+          **Маркер:** `BRATSKY-STAGE16-DATA-v130`
+
+          - В `PROOF_STATUS_LEDGER.csv` добавлен один агрегатный holding-control для восьми белых пятен.
+          - В `SOURCE_ANCHORS.csv` добавлен авторитетный библиографический маршрут БАН.
+          - `NEXT_MICROBATCH.csv` содержит адресные OCR/recovery/holding-задачи и исключает общий поиск без нового ключа.
+          - Подробные issue-level решения остаются в каноническом GitHub ledger и Drive-вкладке `08 Research Evidence`.
+          - `MASTER_CORPUS_LEDGER.csv` без изменений: новых байтов нет.
+          '''
+          append_once(grouped / 'groups/06_DATA_AND_PROOF_LEDGERS.md', 'BRATSKY-STAGE16-DATA-v130', data_block)
+          append_once(grouped / 'README.md', 'BRATSKY-STAGE16-v130', '''## v130 — «Братский листок» stage16
+
+          15 issue-level evidence positions, 8 content-unknown issues и единый BAN holding route. Интеграция marker-based и retry-safe; бинарный master не менялся.''')
+
+          def upsert_csv(path, rows, key):
+              with path.open('r', encoding='utf-8-sig', newline='') as f:
+                  reader = csv.DictReader(f)
+                  header = reader.fieldnames
+                  current = list(reader)
+              if not header or key not in header:
+                  raise SystemExit(f'bad CSV schema: {path} / {key}')
+              index = {row.get(key, ''): i for i, row in enumerate(current) if row.get(key, '')}
+              for incoming in rows:
+                  row = {column: incoming.get(column, '') for column in header}
+                  value = row[key]
+                  if value in index:
+                      current[index[value]] = row
+                  else:
+                      index[value] = len(current)
+                      current.append(row)
+              with path.open('w', encoding='utf-8', newline='') as f:
+                  writer = csv.DictWriter(f, fieldnames=header, lineterminator='\r\n')
+                  writer.writeheader()
+                  writer.writerows(current)
+
+          upsert_csv(grouped / 'data/PROOF_STATUS_LEDGER.csv', [{
+              'item_id': 'bratskii_listok_unknown8_ban_holdings',
+              'corpus': 'Bratskii Listok (prerevolutionary)',
+              'issue': '1907 no.4; 1908 no.6/no.9; 1909 no.5; 1910 no.1/no.3/no.4/no.5',
+              'status': 'institutional_holding_route_verified_content_unknown',
+              'holding': 'BAN 1197; 1198; 36/18985*',
+              'source': 'Andreev–Troitskii bibliography + live MASTER request audit',
+              'next_action': 'Send one consolidated holding/title-page/scan quote request after recipient verification; no paid work without approval',
+              'id': 'stage16-proof-01',
+              'year': '1907-1910',
+              'source_url': 'https://azbyka.ru/otechnik/bibliog/hristianskaja-periodicheskaja-pechat-na-russkom-jazyke-1801-1917-gg-tom-1/',
+              'verification_note': 'BAN holdings cover all eight remaining content-unknown positions; holding is not a digital-file or content claim.',
+              'version': 'stage16'
+          }], 'item_id')
+
+          upsert_csv(grouped / 'data/SOURCE_ANCHORS.csv', [{
+              'source_id': 'stage16_ban_unknown8_holdings',
+              'url': 'https://azbyka.ru/otechnik/bibliog/hristianskaja-periodicheskaja-pechat-na-russkom-jazyke-1801-1917-gg-tom-1/',
+              'confirms': 'BAN holdings 1197/1198/36/18985* collectively cover all 8 remaining content-unknown Bratskii Listok positions',
+              'id': 'stage16-src-01',
+              'source': 'Andreev–Troitskii detailed bibliography',
+              'authority_level': 'A/bibliographic_holding_authority',
+              'used_for': 'unknown8_consolidated_institutional_route',
+              'version': 'stage16',
+              'source_key': 'ban_unknown8_holdings',
+              'use': 'holding_route',
+              'label': 'BAN route for 8 content-unknown issues',
+              'type': 'bibliography',
+              'trust_note': 'Holding statement only; issue identity/content/pages and digital availability require physical verification.',
+              'source_type': 'institutional_holding_control',
+              'note': 'One consolidated request replaces eight separate drafts; 1906 no.5 remains separate.'
+          }], 'source_id')
+
+          tasks = [
+              ('P0', 'BAN consolidated request — 8 Bratskii Listok content-unknown issues', 'Verify holdings/title pages/page counts/colophons for all eight; obtain preliminary quote and scans after approval', 'READY TO REQUEST — NOT SENT; recipient routing and paid-work approval required.'),
+              ('P0', 'Bratskii Listok 1907 no.9 local verification', 'OCR/visually verify p.7 and search Lopukhin/Zaraysk/Zinoviev/Saveliev/Dolgopolov', 'Local scan lacks trusted text layer.'),
+              ('P0', 'Bratskii Listok 1908 no.2 targeted OCR', 'Map exact pages for Vins Volga mission and About I. P. Kushnerov', 'Local issue exists; secondary content locators lack pages.'),
+              ('P0', 'Bratskii Listok 1909 no.6 attachment recovery', 'Recover Telegram attachment and verify masthead plus pp.10–11', 'Metadata exists but bytes are absent.'),
+              ('P1', 'Primary issue retrieval — known-content nonlocal set', 'Acquire/page-check 1907 no.3/no.6; 1908 no.1/no.3/no.4; 1909 no.3', 'Locators exist; target facsimiles absent.'),
+              ('P1', 'Knizhnaya letopis 1909 records 4209/5307 and 1910 record 20630', 'Open and transcribe exact registration entries', 'Only the index route is known.'),
+              ('P1', '1910 bound-parent final-page inspection', 'Inspect parent no.1/no.3/no.4/no.5 for bound appendices and page boundaries', 'Parent PDFs are non-target controls.'),
+              ('P1', 'Bratskii Listok 1908 no.4 full issue mapping', 'Verify pp.1–23, pp.3–9, Odessa congress and Ustav', 'Only fragment and secondary ranges available.')
+          ]
+          upsert_csv(grouped / 'data/NEXT_MICROBATCH.csv', [
+              {'priority': p, 'item': item, 'goal': goal, 'blocker': blocker}
+              for p, item, goal, blocker in tasks
+          ], 'item')
+          PY
+            rm -f .github/workflows/apply-bratsky-stage16-consolidation.yml
+            git add --all
+            if git diff --cached --quiet; then
+              echo "delta already integrated"
+              exit 0
+            fi
+            git commit -m "research(baptists): consolidate Bratsky Listok stage16"
+            if git push origin HEAD:main; then
+              echo "push succeeded"
+              exit 0
+            fi
+            echo "push race detected; retrying on fresh main"
+          done
+          echo "failed after 5 retry attempts" >&2
+          exit 1
