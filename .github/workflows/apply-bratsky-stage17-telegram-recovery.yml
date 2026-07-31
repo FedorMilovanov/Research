@@ -1,0 +1,331 @@
+name: Apply Bratsky Listok stage17 Telegram recovery audit
+
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-bratsky-stage17-telegram-recovery.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-bratsky-stage17-telegram-recovery
+  cancel-in-progress: false
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Apply retry-safe no-loss delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "research-baptists-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            echo "attempt $attempt"
+            git fetch origin main
+            git reset --hard origin/main
+            python - <<'PY'
+          from pathlib import Path
+          import csv, re
+
+          root = Path('.')
+          archive = root / 'RUSSIAN_BAPTISTS_ARCHIVE'
+          grouped = root / 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED'
+
+          rows = [
+              ('1906','10','10','message4160','messages5.html','540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba','2458080','Братский_Листок_октябрь_1906_года.pdf','10.1 MB','06.10.2025 22:45:42 UTC+03:00'),
+              ('1906','12','12','message4419','messages5.html','540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba','2458080','Братский_Листок_декабрь_1906_года.pdf','12.4 MB','01.12.2025 12:11:08 UTC+03:00'),
+              ('1907','05','5','message3515','messages4.html','6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0','2610212','Братский_Листок_май_1907_года.pdf','11.6 MB','02.05.2025 10:43:33 UTC+03:00'),
+              ('1907','07','7','message3771','messages4.html','6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0','2610212','Братский_Листок_июль_1907_года_.pdf','11.3 MB','03.07.2025 08:29:41 UTC+03:00'),
+              ('1907','08','8','message3883','messages4.html','6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0','2610212','Братский_Листок_август_1907_года.pdf','9.2 MB','02.08.2025 17:15:25 UTC+03:00'),
+              ('1907','10','10','message4163','messages5.html','540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba','2458080','Братский_Листок_октябрь_1907_года.pdf','9.6 MB','07.10.2025 10:20:30 UTC+03:00'),
+              ('1908','07','7','message3775','messages4.html','6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0','2610212','Братский_Листок_июль_1908_года.pdf','8.5 MB','04.07.2025 08:39:15 UTC+03:00'),
+              ('1908','12','12','message4425','messages5.html','540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba','2458080','Братский_Листок_декабрь_1908_года.pdf','8.4 MB','03.12.2025 13:00:27 UTC+03:00'),
+              ('1909','06','6','message3643','messages4.html','6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0','2610212','Братский_Листок_июнь_1909_года.pdf','9.4 MB','04.06.2025 12:57:54 UTC+03:00'),
+              ('1909','08','8','message3889','messages4.html','6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0','2610212','Братский_Листок_август_1909_года.pdf','9.1 MB','06.08.2025 14:56:49 UTC+03:00'),
+              ('1909','11','11','message4306','messages5.html','540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba','2458080','Братский_Листок_ноябрь_1909_года.pdf','10.1 MB','10.11.2025 00:05:09 UTC+03:00'),
+              ('1909','12','12','message4436','messages5.html','540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba','2458080','Братский_Листок_декабрь_1909_года.pdf','9.2 MB','06.12.2025 22:28:34 UTC+03:00'),
+              ('1910','02','2','message3215','messages4.html','6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0','2610212','Братский_Листок_февраль_1910_года.pdf','11.0 MB','07.02.2025 23:45:32 UTC+03:00'),
+              ('1910','09','9','message4069','messages4.html','6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0','2610212','Братский_Листок_сентябрь_1910_года.pdf','11.4 MB','10.09.2025 19:36:42 UTC+03:00'),
+              ('1910','10','10','message4210','messages5.html','540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba','2458080','Братский_листок_октябрь_1910_год.pdf','11.4 MB','21.10.2025 15:06:38 UTC+03:00'),
+          ]
+
+          export_urls = {
+              'messages4.html': 'https://drive.google.com/file/d/10fn4zQI-kuC5jgUBy0ZIYpcJXZwSS4kd/view',
+              'messages5.html': 'https://drive.google.com/file/d/1lq6PUIzUy7OPSYovtkusAmz1tmDTwX-Z/view',
+          }
+
+          def append_once(path, marker, block):
+              text = path.read_text(encoding='utf-8')
+              if marker not in text:
+                  path.write_text(text.rstrip() + '\n\n' + block.strip() + '\n', encoding='utf-8')
+
+          def patch(path, fn):
+              text = path.read_text(encoding='utf-8')
+              new = fn(text)
+              if new != text:
+                  path.write_text(new, encoding='utf-8')
+
+          recovery_csv = archive / 'bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv'
+          recovery_header = ['year','month','issue','message_id','export_file','export_drive_url','export_sha256','export_bytes','filename','declared_size','published_at','export_description','anchor_count','hidden_media_attributes','local_files_path','telegram_file_id','status','required_recovery_action']
+          with recovery_csv.open('w', encoding='utf-8', newline='') as f:
+              w = csv.DictWriter(f, fieldnames=recovery_header, lineterminator='\r\n')
+              w.writeheader()
+              for year, month, issue, message_id, export_file, sha, export_bytes, filename, size, published in rows:
+                  w.writerow({
+                      'year': year,
+                      'month': month,
+                      'issue': issue,
+                      'message_id': message_id,
+                      'export_file': export_file,
+                      'export_drive_url': export_urls[export_file],
+                      'export_sha256': sha,
+                      'export_bytes': export_bytes,
+                      'filename': filename,
+                      'declared_size': size,
+                      'published_at': published,
+                      'export_description': 'Exceeds maximum size, change data exporting settings to download.',
+                      'anchor_count': '0',
+                      'hidden_media_attributes': '0',
+                      'local_files_path': '',
+                      'telegram_file_id': '',
+                      'status': 'METADATA_ONLY_EXPORT_NO_ATTACHMENT_LINK',
+                      'required_recovery_action': 'Re-export Telegram with Files enabled and maximum size above 12.4 MB; or owner resend; or verified parent extraction. Then record SHA256, bytes, page count, title and last-page visual comparison.',
+                  })
+
+          instruction = '''# Telegram re-export — 15 missing «Братский листок» PDFs
+
+**Marker:** `BRATSKY-STAGE17-v131`  
+**Status:** operational recovery instruction; no attachment bytes were recovered from the current HTML exports.
+
+## Proven limitation
+
+Raw `messages4.html` and `messages5.html` were inspected at the exact 15 message blocks. Every block retains filename, declared size and annotation, but contains:
+
+- 0 attachment `<a href>` links;
+- 0 hidden/non-style media attributes;
+- no `files/...` export path;
+- no Telegram file ID/access hash.
+
+The HTML therefore cannot be mined further for the original PDF bytes.
+
+## Correct Telegram Desktop export
+
+1. Open Telegram Desktop with the account that can see the original posts/files.
+2. Open Settings → Advanced → Export Telegram data.
+3. Include the relevant channel/chat and enable **Files**.
+4. Set the maximum file-size threshold above **12.4 MB**; prefer **20–50 MB**.
+5. Export as HTML while preserving the generated `files/` directory.
+6. Do not rename or edit recovered PDFs before hashing.
+
+## Verification after recovery
+
+For every PDF record: original filename, message ID, source export path, bytes, SHA-256, page count, first/title page, last page/colophon, defects and relation to parent extraction. Keep Telegram original and parent-extracted copy as separate provenance objects even when visually identical.
+
+## Prohibited substitution
+
+Do not manufacture a replacement PDF from screenshots, web previews or cropped images. Metadata, a viewer, a parent issue or a public post page is not the recovered target binary.
+'''
+          (archive / 'TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md').write_text(instruction, encoding='utf-8')
+
+          ledger_block = '''## 11. Stage17 — raw HTML audit of 15 missing Telegram PDFs
+
+**Marker:** `BRATSKY-STAGE17-v131`  
+**Date:** 2026-07-31.
+
+Two raw Telegram exports were audited directly:
+
+- `messages4.html`: 2,610,212 bytes; SHA-256 `6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0`;
+- `messages5.html`: 2,458,080 bytes; SHA-256 `540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba`.
+
+All 15 exact oversized media blocks retain filename, size and annotation but have 0 `href`, 0 hidden/non-style media attributes, no `files/...` path and no Telegram file ID/access hash. The existing exports are metadata witnesses only and cannot yield the original bytes.
+
+The recovery queue is now closed against repeated hidden-link mining. Valid next routes are: Telegram Desktop re-export with Files enabled and a size threshold above 12.4 MB; resend by the channel/account owner; or extraction from a verified parent `Христианин` PDF. Any recovered object must be hashed, page-counted and visually checked at title and last page. Screenshot-derived replacement PDFs are prohibited. Binary coverage remains 22 local / 38 nonlocal.
+'''
+          append_once(archive / 'BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md', 'BRATSKY-STAGE17-v131', ledger_block)
+
+          def patch_archive_readme(t):
+              additions = [
+                  '- [`bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv`](bratsky_listok_telegram_missing_15_recovery_2026-07-31.csv) — message-level recovery ledger for all 15 oversized Telegram attachments; raw export hashes, filenames, sizes and proven absence of attachment links.',
+                  '- [`TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md`](TELEGRAM_REEXPORT_BRATSKY_LISTOK_15_INSTRUCTION_2026-07-31.md) — repeatable Telegram Desktop export and provenance-verification procedure.',
+              ]
+              anchor = '- [`BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md`](BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md) — каноническая консолидация пономерных и постраничных находок по «Братскому листку» без дублирования этапных отчётов и ZIP-пакетов.'
+              for line in additions:
+                  if line not in t:
+                      t = t.replace(anchor, anchor + '\n' + line)
+                      anchor = line
+              sync = 'Последняя синхронизация: **2026-07-31, 20:56+03:00 — raw HTML-аудит 15 Telegram-вложений, 0 скрытых attachment links, recovery-ledger и инструкция повторного экспорта; бинарный состав без изменений**.'
+              return re.sub(r'Последняя синхронизация: \*\*.*?\*\*\.', sync, t, count=1)
+          patch(archive / 'README.md', patch_archive_readme)
+
+          def patch_status(t):
+              line = '| Telegram recovery audit | **15/15** oversized attachment blocks are metadata-only; **0** href/file-path/file-ID carriers |'
+              if line not in t:
+                  header = '| «Братский листок» — evidence layer | **15** issue-level позиций с новыми page/content anchors; **8** выпусков остаются полностью содержательно неизвестными |'
+                  if header in t:
+                      t = t.replace(header, header + '\n' + line)
+              block = '''### Raw Telegram recovery control
+
+All 15 exact missing-attachment message blocks were inspected in raw `messages4.html` and `messages5.html`. Every block has filename, declared size and annotation, but 0 `href`, 0 hidden/non-style media attributes, no `files/...` path and no Telegram file ID/access hash. The exports are metadata-only witnesses. Recovery requires a new Telegram export above 12.4 MB, owner resend or parent extraction; binary totals remain unchanged.'''
+              if '### Raw Telegram recovery control' not in t:
+                  anchor = '### Исследовательский evidence layer'
+                  t = t.replace(anchor, block + '\n\n' + anchor) if anchor in t else t.rstrip() + '\n\n' + block + '\n'
+              return t
+          patch(archive / 'MASTER_STATUS_2026-07-31.md', patch_status)
+
+          def patch_actions(t):
+              block = '''### Telegram re-export — 15 oversized PDFs
+
+The current `messages4.html` / `messages5.html` exports contain no recoverable attachment URL, file path or Telegram file ID. Re-export from Telegram Desktop with **Files** enabled and maximum size above **12.4 MB** (prefer 20–50 MB), or obtain owner resend. Preserve the generated `files/` directory. For every recovered PDF record SHA-256, bytes, pages, title page, last page/colophon and comparison with parent extraction. Do not create PDFs from screenshots or previews.'''
+              if '### Telegram re-export — 15 oversized PDFs' not in t:
+                  anchor = '### Метод извлечения'
+                  t = t.replace(anchor, block + '\n\n' + anchor) if anchor in t else t.rstrip() + '\n\n' + block + '\n'
+              return t
+          patch(archive / 'NEXT_ACTIONS.md', patch_actions)
+
+          def patch_root(t):
+              live = 'Последняя живая синхронизация: **31 июля 2026 года, 20:56+03:00 — Telegram recovery audit v131**.'
+              if 'Последняя живая синхронизация:' in t:
+                  t = re.sub(r'Последняя живая синхронизация: \*\*.*?\*\*\.', live, t, count=1)
+              else:
+                  t = t.rstrip() + '  \n' + live + '\n'
+              return t
+          patch(root / '00_RUSSIAN_BAPTISTS_ARCHIVE.md', patch_root)
+
+          periodicals_block = '''## v131 — «Братский листок»: raw Telegram recovery audit
+
+**Marker:** `BRATSKY-STAGE17-v131`
+
+- 15/15 oversized attachment message blocks checked in raw `messages4.html` / `messages5.html`.
+- 0 attachment hrefs; 0 hidden media attributes; 0 `files/...` paths; 0 Telegram file IDs/access hashes.
+- The HTML exports are metadata witnesses only; they cannot restore target bytes.
+- Correct routes: re-export above 12.4 MB with Files enabled, owner resend, or verified parent extraction.
+- New durable message-level recovery CSV and re-export instruction added under `RUSSIAN_BAPTISTS_ARCHIVE/`.
+- No target binary status changed; `MASTER_CORPUS_LEDGER.csv` remains untouched.
+'''
+          append_once(grouped / 'groups/03_PERIODICAL_CORPUS.md', 'BRATSKY-STAGE17-v131', periodicals_block)
+
+          data_block = '''## v131 — Telegram missing-15 proof/data integration
+
+**Marker:** `BRATSKY-STAGE17-DATA-v131`
+
+- `PROOF_STATUS_LEDGER.csv`: 15 stable message-level metadata-only rows.
+- `SOURCE_ANCHORS.csv`: two raw export source controls with exact bytes and SHA-256.
+- `NEXT_MICROBATCH.csv`: one explicit re-export/owner-resend/parent-extraction action.
+- Focused recovery CSV preserves year, issue, message ID, filename, size, export hash and the zero-link result.
+- No new binary object was received; do not promote any issue to local or quote-ready.
+'''
+          append_once(grouped / 'groups/06_DATA_AND_PROOF_LEDGERS.md', 'BRATSKY-STAGE17-DATA-v131', data_block)
+          append_once(grouped / 'README.md', 'BRATSKY-STAGE17-v131', '''## v131 — «Братский листок» Telegram recovery
+
+15 oversized attachment blocks were proven metadata-only in raw HTML; durable recovery ledger and repeat-export procedure added without changing binary coverage.''')
+
+          def upsert_csv(path, incoming_rows, key):
+              with path.open('r', encoding='utf-8-sig', newline='') as f:
+                  reader = csv.DictReader(f)
+                  header = reader.fieldnames
+                  current = list(reader)
+              if not header or key not in header:
+                  raise SystemExit(f'bad CSV schema: {path} / {key}')
+              index = {row.get(key, ''): i for i, row in enumerate(current) if row.get(key, '')}
+              for incoming in incoming_rows:
+                  row = {column: incoming.get(column, '') for column in header}
+                  value = row[key]
+                  if value in index:
+                      current[index[value]] = row
+                  else:
+                      index[value] = len(current)
+                      current.append(row)
+              with path.open('w', encoding='utf-8', newline='') as f:
+                  writer = csv.DictWriter(f, fieldnames=header, lineterminator='\r\n')
+                  writer.writeheader()
+                  writer.writerows(current)
+
+          proof_rows = []
+          for idx, (year, month, issue, message_id, export_file, sha, export_bytes, filename, size, published) in enumerate(rows, start=1):
+              proof_rows.append({
+                  'item_id': f'bratskii_listok_tg_missing_{message_id}',
+                  'corpus': 'Bratskii Listok (prerevolutionary)',
+                  'issue': f'{year} no.{issue}',
+                  'status': 'telegram_export_metadata_only_no_attachment_link',
+                  'pages': '',
+                  'holding': f'{export_file}; Telegram export message block {message_id}',
+                  'source': 'Raw Telegram HTML export from live Google Drive',
+                  'next_action': 'Re-export with Files enabled and limit above 12.4 MB; owner resend; or verified parent extraction; then SHA256/page/title-last-page compare',
+                  'id': f'stage17-proof-{idx:02d}',
+                  'year': year,
+                  'source_url': export_urls[export_file],
+                  'verification_note': f'{filename}; declared {size}; raw media block has 0 href, 0 hidden media attributes, no files path and no Telegram file ID; export SHA256 {sha}.',
+                  'version': 'stage17',
+              })
+          upsert_csv(grouped / 'data/PROOF_STATUS_LEDGER.csv', proof_rows, 'item_id')
+
+          source_rows = [
+              {
+                  'source_id': 'stage17_messages4_raw_export',
+                  'url': export_urls['messages4.html'],
+                  'confirms': 'Eight exact oversized Bratskii Listok media blocks retain metadata but contain no attachment transport fields',
+                  'id': 'stage17-src-01',
+                  'source': 'messages4.html raw Telegram export',
+                  'authority_level': 'A/provenance_raw_export',
+                  'used_for': 'telegram_missing_attachment_recovery_control',
+                  'version': 'stage17',
+                  'source_key': 'messages4_raw_export',
+                  'use': 'metadata_only_transport_audit',
+                  'label': 'messages4 raw Telegram export',
+                  'type': 'raw_html_export',
+                  'trust_note': '2,610,212 bytes; SHA256 6f908b8ca33dfbb95b503bba1d57c8cfcbd367209075c85310350c289e1d27b0; proves absence of embedded attachment links, not absence of originals.',
+                  'source_type': 'primary_provenance_export',
+                  'note': 'Re-export above 12.4 MB or obtain owner resend.',
+              },
+              {
+                  'source_id': 'stage17_messages5_raw_export',
+                  'url': export_urls['messages5.html'],
+                  'confirms': 'Seven exact oversized Bratskii Listok media blocks retain metadata but contain no attachment transport fields',
+                  'id': 'stage17-src-02',
+                  'source': 'messages5.html raw Telegram export',
+                  'authority_level': 'A/provenance_raw_export',
+                  'used_for': 'telegram_missing_attachment_recovery_control',
+                  'version': 'stage17',
+                  'source_key': 'messages5_raw_export',
+                  'use': 'metadata_only_transport_audit',
+                  'label': 'messages5 raw Telegram export',
+                  'type': 'raw_html_export',
+                  'trust_note': '2,458,080 bytes; SHA256 540fd2b98e2ca2bc082e0274de6a9666a18eebc006384aa8f6463286f82c59ba; proves absence of embedded attachment links, not absence of originals.',
+                  'source_type': 'primary_provenance_export',
+                  'note': 'Re-export above 12.4 MB or obtain owner resend.',
+              },
+          ]
+          upsert_csv(grouped / 'data/SOURCE_ANCHORS.csv', source_rows, 'source_id')
+
+          upsert_csv(grouped / 'data/NEXT_MICROBATCH.csv', [{
+              'priority': 'P0',
+              'item': 'Telegram re-export — 15 Bratskii Listok PDFs',
+              'goal': 'Export the original 15 PDFs with Files enabled and threshold above 12.4 MB, or obtain owner resend; preserve files directory; hash/page/title-last-page verify and compare with parent extraction',
+              'blocker': 'Current messages4/messages5 HTML contains metadata only and zero attachment transport fields.',
+          }], 'item')
+          PY
+            rm -f .github/workflows/apply-bratsky-stage17-telegram-recovery.yml
+            git add --all
+            if git diff --cached --quiet; then
+              echo "delta already integrated"
+              exit 0
+            fi
+            git commit -m "research(baptists): consolidate Bratsky Listok stage17 recovery"
+            if git push origin HEAD:main; then
+              echo "push succeeded"
+              exit 0
+            fi
+            echo "push race detected; retrying on fresh main"
+          done
+          echo "failed after 5 retry attempts" >&2
+          exit 1
