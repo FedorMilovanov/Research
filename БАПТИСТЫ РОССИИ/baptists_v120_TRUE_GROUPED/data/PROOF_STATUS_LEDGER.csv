@@ -1,4 +1,4 @@
-﻿item_id,corpus,issue,status,pages,holding,source,next_action,id,year,source_url,verification_note,version
+item_id,corpus,issue,status,pages,holding,source,next_action,id,year,source_url,verification_note,version
 vestnik_istiny_1976_02_54,Vestnik Istiny,1976 no. 2 (54),holdings_page_verified,40,Baylor/Keston,Toronto Samizdat,Acquire local scan/OCR/visual check,,,,,
 vestnik_istiny_1977_02_03_58_59,Vestnik Istiny,1977 no. 2-3 (58-59),holdings_page_verified,60,Baylor/Keston,Toronto Samizdat,Acquire local scan/OCR/visual check,,,,,
 vestnik_istiny_1978_02_03_62_63,Vestnik Istiny,1978 no. 2-3 (62-63),holdings_page_verified_with_copy_variant,56 plus no-page copy row,Baylor/Keston,Toronto Samizdat,Clarify copy variant; acquire scan,,,,,
@@ -307,3 +307,4 @@ sinichkin_bratsky_vestnik_1945_2,Bratsky Vestnik,BV 1945 no. 2,quote_ready,44,Si
 ,Authority,,critical_correction_applied,,,,,GOST-129-008,,,,
 ,Благовестник,1,facsimile_reproduction_verified,,,,,GOST-129-010,1919,,,
 ,Гость,,holding_completeness_unknown,,,,,GOST-129-012,1923-1930,,,
+bratskii_listok_unknown8_ban_holdings,Bratskii Listok (prerevolutionary),1907 no.4; 1908 no.6/no.9; 1909 no.5; 1910 no.1/no.3/no.4/no.5,institutional_holding_route_verified_content_unknown,,BAN 1197; 1198; 36/18985*,Andreev–Troitskii bibliography + live MASTER request audit,Send one consolidated holding/title-page/scan quote request after recipient verification; no paid work without approval,stage16-proof-01,1907-1910,https://azbyka.ru/otechnik/bibliog/hristianskaja-periodicheskaja-pechat-na-russkom-jazyke-1801-1917-gg-tom-1/,BAN holdings cover all eight remaining content-unknown positions; holding is not a digital-file or content claim.,stage16

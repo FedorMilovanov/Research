@@ -140,3 +140,7 @@ v120 continues the grouped architecture. It adds an early BRATSKII LISTOK verifi
 - Интегрированы юридическая граница Союза/Общества, JBC-корпус, статистические конфликты, HOLD по Husaruk и authority-route Jesakow.
 - Зарегистрированы LVA 1987/1/13296, Wardin AR915 Box9/9.5–9.6, `Благовестник` и музейная коллекция `Гостя` 1923–1930.
 - Новых scattered MD и тяжёлых бинарников не создано; `quote_ready` не повышался.
+
+## v130 — «Братский листок» stage16
+
+15 issue-level evidence positions, 8 content-unknown issues и единый BAN holding route. Интеграция marker-based и retry-safe; бинарный master не менялся.

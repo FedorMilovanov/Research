@@ -13705,3 +13705,16 @@ JBC хранит официальный орган Союза `Ewangeliczny Chrz
 - AAN 1446 p.70: `Siejatiel Istiny` или `Gost` среди источников; конкретный выпуск не установлен.
 - AAN I1082: устав и переписка 1922–1931; P0, без сканов.
 - KUL 1927 statute: https://dlibra.kul.pl/publication/1714/edition/1866/ — 8 pages, full stable file/page review pending.
+
+## v130 — «Братский листок» 1906–1910: evidence layer и единый маршрут БАН
+
+**Маркер:** `BRATSKY-STAGE16-v130`  
+**Режим:** no-loss append/upsert к свежему `main`.
+
+- 60 номинальных позиций: 58 титульных выпусков + 2 замещения.
+- 22 уникальные локальные позиции; 38 нелокальных.
+- Пономерные/page anchors консолидированы для 15 позиций; восемь выпусков остаются content-unknown.
+- БАН `1197`, `1198`, `36/18985*` покрывает все восемь: 1907 №4; 1908 №6/№9; 1909 №5; 1910 №1/№3/№4/№5.
+- Один объединённый запрос зарегистрирован как `READY TO REQUEST — NOT SENT`; 1906 №5 остаётся отдельным запросом.
+- Новых бинарных выпусков нет; `MASTER_CORPUS_LEDGER.csv` не меняется.
+- Secondary locator, holding и parent PDF не повышают статус до `LOCAL`, visual page или `quote_ready`.

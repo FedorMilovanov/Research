@@ -1,4 +1,4 @@
-﻿source_id,url,confirms,id,source,authority_level,used_for,version,source_key,use,label,type,trust_note,source_type,note
+source_id,url,confirms,id,source,authority_level,used_for,version,source_key,use,label,type,trust_note,source_type,note
 toronto_vestnik_spaseniia_master,https://samizdat.library.utoronto.ca/content/vestnik-spaseniia-dukhovno-nazidatelnyi-zhurnal-evangelskih-khristian-baptistov,Corpus 1963-1975; ca. 14-70 pp.; changed to Vestnik Istiny in 1976; issue grid late 1974/1975.,,,,,,,,,,,,
 toronto_biulleten_master,https://samizdat.library.utoronto.ca/content/biulleten-soveta-rodstvennikov-uznikov-evangelskikh-khristian-baptistov-sssr,"Master issue grid, visible 1985 no.126 and no.127; no 128/129 in current retrieved grid.",,,,,,,,,,,,
 toronto_brat_master,https://samizdat.library.utoronto.ca/content/bratskii-listok,Large BRATSKII LISTOK issue grid and source notes including 1971 AS/SDSA/MASA pointers.,,,,,,,,,,,,
@@ -207,3 +207,4 @@ sinichkin_ecb_in_wwii,tg://sinichkin_export/BaptistyVVelikoyOtechestvennoy,"«Е
 ,https://jbc.bj.uj.edu.pl/dlibra/publication/718058/edition/680480,,GOST-129-SRC-JBC1939,,,,,,,,,,A,not Gost
 ,https://bible.lv/en/fetler-family-heirlooms/,,GOST-129-SRC-LBC,,,,,,,,,,A-metadata,P0 inventory
 ,https://drive.google.com/file/d/1CUpNUJKayB3witUEm8bhzVP9VPAC1vv-/view,,GOST-129-SRC-FAMILY,,,,,,,,,,family archive,no repo binary
+stage16_ban_unknown8_holdings,https://azbyka.ru/otechnik/bibliog/hristianskaja-periodicheskaja-pechat-na-russkom-jazyke-1801-1917-gg-tom-1/,BAN holdings 1197/1198/36/18985* collectively cover all 8 remaining content-unknown Bratskii Listok positions,stage16-src-01,Andreev–Troitskii detailed bibliography,A/bibliographic_holding_authority,unknown8_consolidated_institutional_route,stage16,ban_unknown8_holdings,holding_route,BAN route for 8 content-unknown issues,bibliography,Holding statement only; issue identity/content/pages and digital availability require physical verification.,institutional_holding_control,One consolidated request replaces eight separate drafts; 1906 no.5 remains separate.

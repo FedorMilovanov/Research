@@ -3810,3 +3810,13 @@ AAN I1082; AAN 1446 p.70; APL 35/413/0/9/644; LVA 1987/1/13296; Wardin AR915 Box
 - https://www.prlib.ru/history/619208
 - https://bible.lv/en/fetler-family-heirlooms/
 - https://drive.google.com/file/d/1CUpNUJKayB3witUEm8bhzVP9VPAC1vv-/view
+
+## v130 — «Братский листок»: proof/data integration stage16
+
+**Маркер:** `BRATSKY-STAGE16-DATA-v130`
+
+- В `PROOF_STATUS_LEDGER.csv` добавлен один агрегатный holding-control для восьми белых пятен.
+- В `SOURCE_ANCHORS.csv` добавлен авторитетный библиографический маршрут БАН.
+- `NEXT_MICROBATCH.csv` содержит адресные OCR/recovery/holding-задачи и исключает общий поиск без нового ключа.
+- Подробные issue-level решения остаются в каноническом GitHub ledger и Drive-вкладке `08 Research Evidence`.
+- `MASTER_CORPUS_LEDGER.csv` без изменений: новых байтов нет.

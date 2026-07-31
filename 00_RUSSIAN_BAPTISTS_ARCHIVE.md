@@ -2,6 +2,8 @@
 
 **Статус:** активный исследовательский корпус  
 **Канонический каталог:** [Google Sheets MASTER ARCHIVE CATALOG](https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit)  
+**Детальный аудит «Братского листка»:** [Google Sheets](https://docs.google.com/spreadsheets/d/15L76H5bufK9Pr8EelwO-KZTYXuKX-weKnOh7qV_ze6k/edit)  
+**Канонический evidence ledger:** [`BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md`](RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_1906_1910_RESEARCH_LEDGER_2026-07-31.md)  
 **Аварийная папка Drive:** [snapshot 2026-07-31](https://drive.google.com/drive/folders/1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa)  
 **Полный handoff:** [Google Doc](https://docs.google.com/document/d/1G-9jYTIURIC3-YA-6YdP67JejkBxZDPhj1b0yi3gm0o/edit)
 
@@ -14,5 +16,7 @@
 - Статус `IN DRIVE` разрешён только после фактической передачи байтов и повторной проверки файла в целевой папке.
 - Исторические строки не удаляются: используются `SUPERSEDED`, `CONFLICT`, `HOLD` и `DUPLICATE RECORD`.
 - Платные заказы в библиотеки не оформляются без отдельного согласования владельца проекта.
+- Параллельные агенты используют отдельные журнальные маркеры и idempotent append/upsert; общие файлы нельзя заменять от устаревшего HEAD.
 
-Последнее аварийное сохранение: **31 июля 2026 года, 17:40 MSK**.
+Последнее аварийное сохранение: **31 июля 2026 года, 17:40 MSK**.  
+Последняя живая синхронизация: **31 июля 2026 года, 20:21+03:00**.
