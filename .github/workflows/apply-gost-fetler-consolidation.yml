@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   integrate:
-    if: github.event.issue.title == '[automation] apply Gost Fetler v129c'
+    if: github.event.issue.title == '[automation] apply Gost Fetler v129d'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -18,6 +18,20 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+
+      - name: Harden live authority-row replacement
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          path = Path('.github/scripts/apply_gost_v129.py')
+          text = path.read_text(encoding='utf-8')
+          start = text.index('# Critical person-authority correction.')
+          end = text.index("append_once(HISTORY,", start)
+          replacement = '''# Critical person-authority correction.\ntext = HISTORY.read_text(encoding='utf-8')\nnew = """| **В. А. Фетлер (Вильгельм / William)** | 1883–1957 (RSL authority records) | surname pool not yet disambiguated | St Petersburg/Riga evangelist, author, compiler and publishing organizer; `Вера`, `Гость`, legal and devotional booklet network |\n| **Р. А. Фетлер (Роберт / Robert)** | 1892–1941 (family archive strong; exact LVA file 1987/1/13296 located, contents pending) | surname pool not yet disambiguated | Omsk/Vladivostok pastor and editor-publisher of `Благовестник`; distinct younger brother of William |"""\nif '## v129 — `Гость` и Фетлеры: консолидированный H–L delta' not in text:\n    pattern = re.compile(r'^\\| \\*\\*Р\\.\\s*А\\.\\s*Фетлер\\*\\* \\|[^\\n]*$', re.MULTILINE)\n    matches = pattern.findall(text)\n    if len(matches) != 1:\n        raise SystemExit(f'unsafe live Fetler row count: {len(matches)}')\n    text = pattern.sub(new, text, count=1)\n    HISTORY.write_text(text, encoding='utf-8')\n    print('replaced conflated Fetler authority row by regex')\n\n'''
+          path.write_text(text[:start] + replacement + text[end:], encoding='utf-8')
+          PY
 
       - name: Apply research integration
         run: python .github/scripts/apply_gost_v129.py
