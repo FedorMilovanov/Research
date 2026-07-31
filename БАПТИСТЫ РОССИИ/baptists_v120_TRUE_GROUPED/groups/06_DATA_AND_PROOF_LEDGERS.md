@@ -3860,3 +3860,27 @@ These two Drive objects absorb PASS 01–06. Do not add six PASS reports or thei
 | `GOST-130-004` | `Воскресная школа` | `secondary_series_record_official_holding_not_located` | appendix existed in 1934; secondary records repeat 24 issues with conflicting start year | no official issue-level shelfmark/file found; Gusaruk role remains HOLD |
 
 **No upgrade:** parsed PDF text is not `quote_ready`; failed screenshot retrieval is recorded as a visual blocker, not ignored.
+
+## v131 — `Воскресная школа`: source-chain correction and exact recovery target
+
+### Derivative claims collapse to one citation
+
+The repeated attribution of `Воскресная школа` to V. I. Gusaruk in Mochola-derived press lists and later biographical profiles is not a set of independent confirmations. The biographical profile exposes the underlying locator: **`Сеятель Истины`, 1926, №2, p.15**. That issue and page have not been inspected, so the editor attribution and the competing `1923–1936` / `1933–1936` chronologies remain `HOLD`.
+
+### Publisher route and holding exclusion
+
+The official RUEBU / Slavic Missionary Publications archive is the correct publisher route, but the public archive is being updated and does not expose the target early issue. The Mennonite Heritage Centre serial inventory lists its 1926 `Seiatel Istinj` holdings as №1, №5 and №8–12; therefore №2 is not a viable MHC request target. This is a routing exclusion, not evidence that the issue is lost.
+
+### Aggregate-catalog caution
+
+The `Эмигрантика` aggregate entry ends the early sequence in 1922 and resumes it in 1956, while the MHC inventory physically records issues from 1925–1927. Catalog silence must not be used as negative evidence for the interwar run or for №2/1926.
+
+### Single next proof step
+
+Request only four elements from the publisher archive: the cover, contents, page 15 and final colophon of `Сеятель Истины` 1926 №2. Until those are seen, do not promote Gusaruk's role, the appendix start year, office, binding relation or issue count to primary-verified status. The institutional request is prepared but not sent.
+
+**Routes retained:**
+- official publisher archive: https://ruebu.net/ru/publications/sower-of-truth-archive
+- exact-citation profile: https://zarubezhje.narod.ru/gi/g_046.htm
+- MHC holding inventory: https://www.mharchives.ca/holdings/serials/r.htm
+- aggregate catalog with coverage gap: https://emigrantika.imli.ru/cat2010/715-bookiv
