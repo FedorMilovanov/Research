@@ -2,9 +2,12 @@
 
 Единая точка входа в межпроектную библиотеку источников, книг, изображений, рукописей и правовых решений.
 
-## Главный индекс
+## Главные индексы
 
 - [MASTER_OPEN_ACCESS_SOURCE_INDEX_2026-07-30.md](MASTER_OPEN_ACCESS_SOURCE_INDEX_2026-07-30.md) — 80+ проверенных ссылок по Сергею Есенину, Айседоре Дункан, 4Q204, P72, SBLGNT, Codex Sinaiticus и вспомогательной литературе.
+- [OFFICIAL_DIGITAL_COLLECTIONS_70PLUS_INDEX_2026-07-30.md](OFFICIAL_DIGITAL_COLLECTIONS_70PLUS_INDEX_2026-07-30.md) — 94 официальные точки входа: Library of Congress, NYPL, British Library, Bodleian, Cambridge, NTVMR, CSNTM, Vatican, Dead Sea Scrolls, Europeana, Gallica/BnF, российские библиотеки, архивы и музеи, портретные категории поэтов и открытые книжные каталоги.
+
+Второй индекс является картой официальных коллекций, а не списком автоматически разрешённых production-файлов. Для каждого объекта отдельно проверяются карточка, provenance, лицензия и credit line.
 
 ## Финальный строгий корпус 40 PDF
 
