@@ -16,6 +16,8 @@
 
 - [`MASTER_STATUS_2026-07-31.md`](MASTER_STATUS_2026-07-31.md) — проверенные контрольные цифры и главные выводы.
 - [`DRIVE_SNAPSHOT_MANIFEST_2026-07-31.md`](DRIVE_SNAPSHOT_MANIFEST_2026-07-31.md) — Drive ID всех аварийных копий.
+- [`drive_acquisitions_manifest_2026-07-31.csv`](drive_acquisitions_manifest_2026-07-31.csv) — все 47 объектов из `12 Drive Acquisitions`: файлы, Drive ID, байты, страницы и SHA-256.
+- [`snapshot_manifest_2026-07-31.json`](snapshot_manifest_2026-07-31.json) — машинный снимок контрольных цифр, конфликтов и точек восстановления.
 - [`NEXT_ACTIONS.md`](NEXT_ACTIONS.md) — приоритеты получения PDF/DJVU и правила продолжения.
 - [`INSTITUTIONAL_RESPONSES_2026-07-31.md`](INSTITUTIONAL_RESPONSES_2026-07-31.md) — ответы РГБ/РНБ, шифры и ограничения.
 
