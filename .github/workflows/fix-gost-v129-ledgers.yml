@@ -1,0 +1,104 @@
+name: Normalize Gost v129 ledger rows
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  normalize:
+    if: github.event.issue.title == '[automation] normalize Gost v129 ledgers'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Normalize exact v129 rows
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv
+
+          data = Path('БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data')
+
+          def update_csv(path, key_fields, replacements):
+              with path.open(encoding='utf-8-sig', newline='') as f:
+                  reader = csv.DictReader(f)
+                  fields = reader.fieldnames or []
+                  rows = list(reader)
+              found = {key: 0 for key in replacements}
+              for row in rows:
+                  key = next((row.get(field, '') for field in key_fields if row.get(field, '') in replacements), '')
+                  if key:
+                      row.update({field: value for field, value in replacements[key].items() if field in fields})
+                      found[key] += 1
+              bad = {key: count for key, count in found.items() if count != 1}
+              if bad:
+                  raise SystemExit(f'{path}: unsafe key counts {bad}')
+              with path.open('w', encoding='utf-8-sig', newline='') as f:
+                  writer = csv.DictWriter(f, fieldnames=fields, lineterminator='\r\n')
+                  writer.writeheader(); writer.writerows(rows)
+              print(f'normalized {len(replacements)} rows in {path}')
+
+          update_csv(data / 'SOURCE_ANCHORS.csv', ['source_id', 'id'], {
+              'GOST-129-SRC-JBC1939': {
+                  'source_id':'GOST-129-SRC-JBC1939','id':'','url':'https://jbc.bj.uj.edu.pl/dlibra/publication/718058/edition/680480','confirms':'organization boundary; 1939 statistics; unnamed-rival warning','source':'JBC edition 680480','authority_level':'A','used_for':'Gost organizational control','version':'v129','source_key':'GOST-129-SRC-JBC1939','use':'reference control only','label':'JBC April 1939','type':'primary periodical issue','trust_note':'text layer verified; visual page review pending; not Gost','source_type':'official primary periodical','note':'preserve printed/calculated conflicts 27,383/27,380 and 401/400'},
+              'GOST-129-SRC-LBC': {
+                  'source_id':'GOST-129-SRC-LBC','id':'','url':'https://bible.lv/en/fetler-family-heirlooms/','confirms':'physical Gost holding reported for 1923-1930','source':'William Fetler Museum / Latvian Biblical Centre','authority_level':'A-metadata','used_for':'holding and institutional-request route','version':'v129','source_key':'GOST-129-SRC-LBC','use':'P0 issue inventory','label':'LBC Gost museum holding','type':'institutional museum holding','trust_note':'range confirmed; completeness, gaps and rights unknown','source_type':'institutional holding statement','note':'do not call complete run'},
+              'GOST-129-SRC-FAMILY': {
+                  'source_id':'GOST-129-SRC-FAMILY','id':'','url':'https://drive.google.com/file/d/1CUpNUJKayB3witUEm8bhzVP9VPAC1vv-/view','confirms':'reproduced Blagovestnik cover; family chronology; exact LVA locator','source':'FETLER BROTHERS public family compilation','authority_level':'B-family archive','used_for':'Robert Fetler and Blagovestnik provenance control','version':'v129','source_key':'GOST-129-SRC-FAMILY','use':'reference only','label':'Fetler family compilation 2026','type':'modern family-archive compilation','trust_note':'270 pages; SHA verified; not original issue/state file','source_type':'family archive compilation','note':'existing public Drive file; no repo binary and no duplicate upload'}
+          })
+
+          update_csv(data / 'PROOF_STATUS_LEDGER.csv', ['item_id', 'id'], {
+              'GOST-129-008': {
+                  'item_id':'GOST-129-008','id':'','corpus':'Authority','issue':'William / Robert Fetler split','status':'critical_correction_applied','holding':'RSL + family/archive routes','source':'v129 H-L integration','next_action':'Recount 365 surname hits by context','year':'2026','source_url':'https://search.rsl.ru/ru/record/01006754154','verification_note':'Old R. A. Fetler 1861-1933 row deprecated; two person cards now separate','version':'v129'},
+              'GOST-129-010': {
+                  'item_id':'GOST-129-010','id':'','corpus':'Благовестник','issue':'No.1, March 1919, Omsk','status':'facsimile_reproduction_verified','holding':'FETLER BROTHERS p.67 reproduction','source':'public family compilation','next_action':'Obtain original/full issue or Prokhorov Appendix 8','year':'1919','source_url':'https://drive.google.com/file/d/1CUpNUJKayB3witUEm8bhzVP9VPAC1vv-/view','verification_note':'Sennaya 10 visible; caption identifies R. A. Fetler; original issue not held','version':'v129'},
+              'GOST-129-012': {
+                  'item_id':'GOST-129-012','id':'','corpus':'Гость','issue':'Museum holding 1923-1930','status':'holding_completeness_unknown','holding':'William Fetler Museum / LBC','source':'institutional museum page','next_action':'Request issue-level inventory, gaps, covers, colophons and rights','year':'1923-1930','source_url':'https://bible.lv/en/fetler-family-heirlooms/','verification_note':'Physical range reported; no claim of complete uninterrupted run','version':'v129'}
+          })
+
+          update_csv(data / 'NEXT_MICROBATCH.csv', ['item'], {
+              'Museum issue inventory': {'priority':'P0','item':'Museum issue inventory','goal':'Inventory years/issues/gaps/covers/colophons/provenance/rights','blocker':'LBC response; completeness unknown'},
+              'Review I1082': {'priority':'P0','item':'Review I1082','goal':'Statute versions, registration/approval acts, names, seals, addresses and publishing references','blocker':'AAN file has no online scans'},
+              'Request LVA 1987/1/13296': {'priority':'P0','item':'Request LVA 1987/1/13296','goal':'Verify Robert Fetler birth, occupation, arrest/deportation, sentence and death data','blocker':'Primary file located but unseen'},
+              'Wardin Box9 folders9.5-9.6': {'priority':'P0','item':'Wardin Box9 folders9.5-9.6','goal':'Folder inventories and representative/full scans for Blagovestnik 1919-1920 and Robert Fetler family','blocker':'Archive response; do not request all 121 boxes'}
+          })
+          PY
+
+      - name: Validate and push
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import csv
+          root=Path('БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data')
+          for p in (root/'SOURCE_ANCHORS.csv', root/'PROOF_STATUS_LEDGER.csv', root/'NEXT_MICROBATCH.csv'):
+              with p.open(encoding='utf-8-sig', newline='') as f:
+                  list(csv.DictReader(f))
+          PY
+          git config user.name 'OpenAI Research Integrator'
+          git config user.email 'research-integrator@users.noreply.github.com'
+          git add 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data'
+          git commit -m 'research(baptists): normalize Gost v129 ledger rows'
+          git push origin HEAD:main
+
+      - name: Close trigger issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          curl -fsSL -X PATCH \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H 'Accept: application/vnd.github+json' \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${{ github.event.issue.number }}" \
+            -d '{"state":"closed","state_reason":"completed"}'
