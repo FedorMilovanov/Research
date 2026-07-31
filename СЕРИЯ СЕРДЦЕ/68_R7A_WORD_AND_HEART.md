@@ -71,9 +71,11 @@
 `συγκεκερασμένους*` (`V-RPM/P-AMP`, “having been united with”), and Meyer/StudyLight was read directly
 for the hearing-vs-faith contrast and for his discussion of the singular reading. This locks the article’s
 basic variant note at an open-reference level.
-⚠️ Точный список аппарата NA28 и рейтинг Метцгера ({B}?) всё ещё НЕ верифицированы по самому Metzger/NA28:
-Metzger remains `BOOK/PAGE-HOLD`, so do not cite “Metzger says/rates…” until a physical/legitimate electronic
-apparatus is checked.
+**Closure decision 2026-08-01:** Metzger exact text/rating is no longer required for the article draft. Do not cite
+“Metzger says/rates…” at all. Use the open-reference apparatus layer above (BibleHub/Meyer) only to explain that
+there is a variant, then state the article’s theological point from Hebrews 3:19; 4:3 and 1 Thess. 2:13. Status:
+`METZGER-CITATION-DROPPED / NO-DIRECT-METZGER-QUOTE`; exact NA28/Metzger rating becomes optional scholarly
+appendix work, not a publication blocker.
 
 **Аргументы сторон:**
 
@@ -606,11 +608,8 @@ apparatus is checked.
 
 ## Открытые вопросы / что ещё копать
 
-1. **Metzger, Textual Commentary (2-е изд.), ad Heb. 4:2 — STILL BOOK/PAGE-HOLD.** 2026-08-01 direct readback locked only the open-reference layer (BibleHub interlinear/text; Meyer/StudyLight). Достать точный текст Metzger, рейтинг ({B}?) и полный аппарат NA28 (𝔓13vid? 0243? 33? 1739?) по легальному изданию. Также сверить, что именно читает א (по памяти — ед. ч., косвенно подтверждено сменой позиции Тишендорфа, но требует проверки по факсимиле/NA28).
-2. **Позиции комментаторов** (Lane WBC; O'Brien PNTC — с оговоркой об отзыве книги; Schreiner
-   EBTC; Ellingworth NIGTC; Attridge Hermeneia) по варианту и переводу Евр. 4:2 — не верифицированы;
-   сверить по книгам при написании. Заодно: как современные русские переводы (Кассиан, РБО-2011,
-   Заокский) передают 4:2. Gill ad Heb. 4:2 separately closed locally via BibleStudyTools public-domain mirror.
+1. **Metzger exact rating — CLOSED AS NO-USE 2026-08-01.** The article will not cite Metzger or a NA28 rating. Open-reference layer (BibleHub/Meyer/StudyLight) is enough for a modest variant footnote; exact Metzger text/rating is optional scholarly appendix work only, not a blocker.
+2. **Modern commentary positions — CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01.** Lane WBC; O'Brien PNTC (withdrawal caution); Schreiner EBTC; Ellingworth NIGTC; Attridge Hermeneia are no longer blockers. Do not summarize them as if checked; use only Calvin/Gill/open-reference variant layer unless the books are opened. Russian translation comparison remains optional editorial work, not source-risk. Gill ad Heb. 4:2 separately closed via BibleStudyTools public-domain mirror.
 3. **Manton — SAFE CLOSURE 2026-07-31 for James 1:21 only.** Works vol. 4 / CCEL `manton04.iv.html` checked; ἔμφυτος λόγος / ingrafted word section is now locked. Still open: exact Psalm 119:11 (Sermon XII), Psalm 119:97 (Sermon CI), and final sermon-count note (189/190).
 4. **Owen “burn our Bibles” — CLOSED AS ATTRIBUTED-ONLY 2026-08-01.** Banner/Ian Hamilton confirms a modern attribution but gives no Owen locator. Do not quote as Owen. Reopen only if Works/chapter/page is found; otherwise exclude or quote Hamilton as secondary wording with caveat.
 5. **Saxton, God's Battle Plan for the Mind** — выписать 2–3 дословные цитаты с указанием страниц

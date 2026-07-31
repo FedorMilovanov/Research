@@ -522,19 +522,19 @@ john-3-3 / john-3-8, — та же серия, что A-1).
 
 ### C. Современные консервативные комментаторы
 
-**C-1. D. A. Carson, The Gospel According to John (PNTC; Eerdmans, 1991), на Ин. 3:5 (p. 194–195)** — ВЕРИФИЦИРОВАНО (точная фраза найдена в цитированиях):
+**C-1. D. A. Carson, The Gospel According to John (PNTC; Eerdmans, 1991), на Ин. 3:5 (p. 194–195)** — CLOSED-AS-PARAPHRASE-ONLY 2026-08-01 (secondary citation, no direct book read):
 > "Most important of all is Ezekiel 36:25–27, where water and spirit come together so forcefully, the first to signify cleansing from impurity, and the second to depict the transformation of heart that will enable people to follow God wholly."
 — «Важнее всего Иез. 36:25–27, где вода и дух соединяются с такой силой: первая означает очищение от нечистоты, второй изображает преображение сердца, которое даст людям всецело следовать за Богом».
 Ссылки (цитирование с указанием источника): https://aaronshaf.com/2011/12/21/d-a-carson-on-the-meaning-of-born-of-water-and-of-the-spirit/ ; https://www.thegospelcoalition.org/article/born-water-spirit-mean/
 
-**C-2. Carson, там же (об «одном рождении»)** — ВЕРИФИЦИРОВАНО (фраза найдена):
+**C-2. Carson, там же (об «одном рождении»)** — CLOSED-AS-PARAPHRASE-ONLY 2026-08-01 (secondary citation, no direct book read):
 > "…the entire expression 'of water and the Spirit' cries out to be read as the equivalent of anōthen, 'from above', if there is genuine parallelism between v. 3 and v. 5, and this too argues that the expression should be taken as a reference to but one birth, not two."
 — «…всё выражение „от воды и Духа“ просится быть прочитанным как эквивалент ἄνωθεν, „свыше“, если между ст. 3 и ст. 5 есть подлинный параллелизм; и это тоже говорит в пользу того, что выражение следует понимать как указание на одно рождение, а не на два».
 Ссылка: https://www.thegospelcoalition.org/article/born-water-spirit-mean/
 
-**C-3. Carson, там же, на ἄνωθεν (p. 189)** — ВЕРИФИЦИРОВАНО по вторичному цитированию (Precept Austin со сноской на PNTC 189):
+**C-3. Carson, там же, на ἄνωθεν (p. 189)** — CLOSED-AS-PARAPHRASE-ONLY 2026-08-01 (Precept Austin secondary citation, no direct book read):
 > регенерация «anōthen, слово, которое может значить „свыше“ или „заново“. Поскольку Никодим понял его как „заново“, и Иисус его не поправил, некоторые настаивают на „заново“. Но Иисус настаивает и на том, что это новое рождение — дело Духа, который приходит из области „верха“».
-Ссылка: https://www.preceptaustin.org/john-3-commentary (цит. Carson, PNTC, 189). Дословную английскую форму сверить по бумажному изданию при написании.
+Ссылка: https://www.preceptaustin.org/john-3-commentary (цит. Carson, PNTC, 189). Статус: `SECONDARY-CITATION / DO-NOT-DIRECT-QUOTE`; use as commentary-position paraphrase only unless PNTC page is opened.
 
 **C-4. John Stott, The Epistles of John (TNTC; Eerdmans), p. 172, на 1 Ин. 5:1** — ВЕРИФИЦИРОВАНО:
 > "The combination of the present tense (believes) and perfect tense (has been born) is important. It shows clearly that believing is the consequence, not the cause, of the new birth. Our present, continuing activity of believing is the result, and therefore the evidence, of our past experience of new birth by which we became and remain God's children."
@@ -546,9 +546,9 @@ john-3-3 / john-3-8, — та же серия, что A-1).
 — «…средство, которым Бог дарует такую новую жизнь, — Евангелие, ибо верующие „возрождены не от тленного семени, но от нетленного, через живое и пребывающее слово Божие“».
 Источник: T. R. Schreiner, «Does Regeneration Necessarily Precede Conversion?», 9Marks.
 Ссылка: https://www.9marks.org/article/does-regeneration-necessarily-precede-conversion/
-Для комментария NAC (1, 2 Peter, Jude; B&H, 2003) на 1 Пет. 1:23–25 дословную цитату добрать по бумажному изданию — [НЕ ВЕРИФИЦИРОВАНО — кандидат]: тезис Шрайнера там: «слово» = проповеданное Евангелие (ст. 25), и нетленность семени гарантирует стойкость рождённой им жизни.
+Для комментария NAC (1, 2 Peter, Jude; B&H, 2003) на 1 Пет. 1:23–25: **CLOSED-AS-PARAPHRASE-ONLY 2026-08-01**. Не добирать/не цитировать дословно без книги; article burden covered by Schreiner’s 9Marks article plus Scripture.
 
-**C-6. Colin G. Kruse, The Letters of John (PNTC; Eerdmans, 2000), на 1 Ин. 3:9** — ВЕРИФИЦИРОВАНО (фрагменты, через Precept Austin и его статью):
+**C-6. Colin G. Kruse, The Letters of John (PNTC; Eerdmans, 2000), на 1 Ин. 3:9** — CLOSED-AS-PARAPHRASE-ONLY 2026-08-01 (Precept Austin/article fragments, no direct book read):
 > "To be born of God means being brought to new spiritual life by the will of God and through the agency of his Spirit… [the author uses] a present tense form of the verb 'to sin' (hamartanō), indicating that it is sinning as an ongoing action that he has in mind."
 — «Быть рождённым от Бога означает быть приведённым к новой духовной жизни волей Бога и действием Его Духа… [автор употребляет] форму настоящего времени глагола „грешить“, показывая, что он имеет в виду грех как длящееся действие».
 Особая позиция Круза: ἁμαρτία в 3:4–9 = ἀνομία — мятеж «вышедших от нас» (2:19), а не всякий грех; см. C. G. Kruse, «Sin and Perfection in 1 John».
@@ -677,9 +677,7 @@ https://www.midamerica.edu/uploads/files/pdf/journal/01-barrettjournal2012.pdf �
 
 ## Открытые вопросы / что ещё копать
 
-1. **Страницы бумажных изданий:** Carson PNTC (ἄνωθεν — p. 189; вода и Дух — p. 194–195 —
-   сверить по изданию 1991); Schreiner NAC на 1 Пет. 1:23–25 (дословная цитата);
-   Kruse PNTC (страницы на 3:9 и 5:1); номер проповеди Сперджена «Every Man's Necessity»
+1. **Modern commentary pages — CLOSED-AS-PARAPHRASE-ONLY 2026-08-01.** Carson PNTC, Schreiner NAC, and Kruse PNTC remain useful as position locators but are not direct-quote blockers. Do not quote them exactly unless the books are opened. Remaining optional checks: номер проповеди Сперджена «Every Man's Necessity»
    в MTP. В этой сессии прямой доступ к CCEL/biblehub/archive был закрыт egress-политикой —
    при следующем прогоне (или у главного агента) перепроверить ссылки fetch'ем.
 2. **Бавинк** — resolved in `63_R1_REGENERATION_SYSTEMATICS.md` safe-closure pass: RD4 ch.1 Monergism excerpt now covers broad/restricted regeneration, Word/Spirit order, and immediate Spirit operation. Optional Baker page numbers remain for academic edition use.

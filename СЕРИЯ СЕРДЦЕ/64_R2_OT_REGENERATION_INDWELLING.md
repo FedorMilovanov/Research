@@ -554,10 +554,12 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 > Против резкого разрыва между эпохами в вопросе внутренней работы Духа; автор описывает собственный пересмотр позиции в ходе преподавания.
 Ссылка: https://www.galaxie.com/article/trinj09-1-06
 
-**W-22. Hamilton — спектр позиций (классификация)** — ВЕРИФИЦИРОВАНО (по выдаче обеих статей)
-> Пять позиций: (1) возрождены и обитаемы — Owen, Warfield, Ferguson, Fuller, Wood; (2) возрождены и обитаемы, но с усиленным НЗ-опытом — Augustine, Calvin, Ladd, Block, Grudem; (3) возрождены, но не обитаемы — Erickson, Packer, VanGemeren, Ware [и сам Hamilton]; (4) «Дух действовал на них», без термина «возрождение», не обитаемы; (5) Дух не имел отношения к верности ВЗ-остатка.
-Источники: TrinJ 24NS (2003): 37–54; Themelios 30/1 (2004): 12–22.
-Ссылки: https://www.thegospelcoalition.org/themelios/article/were-old-covenant-believers-indwelt-by-the-holy-spirit/ ; http://www.examiningcalvinism.com/files/Articles/Hamilton._Old_Covenant_Believers_and_the_Indwelling_of_the_Spirit._Survey_of_Opinion.pdf
+**W-22. Hamilton — спектр позиций (классификация)** — SAFE CLOSURE 2026-08-01 по TrinJ PDF text
+> Hamilton’s TrinJ survey names six positions: (1) Continuity — regenerated and indwelt; (2) More Continuity than Discontinuity; (3) Some Continuity Some Discontinuity — regenerated but not indwelt; (4) More Discontinuity than Continuity; (5) Discontinuity — the Spirit had nothing to do with OT faithfulness; (6) Vague Discontinuity. The summary chart lists, among others: position 1 — Owen, Goodwin, Ferguson, Fredricks, Kaiser, Warfield; position 2 — Augustine, Calvin, Block, Grudem, Ladd; position 3 — Erickson, Packer, VanGemeren, Ware; position 4 — Luther, Chafer, Blaising/Bock, Carson, M. Green; position 6 — Barrett, Brown, Ryrie, Walvoord.
+— Для статьи: прежняя «пятичастная» таблица была сжата и неточна; использовать шесть позиций Hamilton и не выдумывать представителей позиции 5, потому что Hamilton explicitly says no author affirming it was found.
+Источники: TrinJ 24NS (2003): 37–54, pp. 37–38 and final chart; Themelios 30/1 (2004): 12–22.
+Ссылки: http://www.examiningcalvinism.com/files/Articles/Hamilton._Old_Covenant_Believers_and_the_Indwelling_of_the_Spirit._Survey_of_Opinion.pdf ; https://www.thegospelcoalition.org/themelios/article/were-old-covenant-believers-indwelt-by-the-holy-spirit/
+Статус: `TRINJ-PDF-TEXT-VERIFIED / SURVEY-CHART-LOCATOR-LOCKED`; PDF page-image not claimed.
 
 **W-23. Обзоры монографии Хэмилтона (для честного представления критики)** — ссылки ВЕРИФИЦИРОВАНЫ
 > Полезное из обзоров: Хэмилтон сам признаётся, что садился писать в пользу обитания ВЗ-святых, но текстовые данные заставили его сменить позицию (пересказ по обзорам). Критика: часть рецензентов считает, что его экзегеза Ин. 14:17/20:22 не всех убеждает.
@@ -596,11 +598,11 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
    (Иез. 36:26–27; Иер. 31:33; Иоиль 3:1–2) → Ин. 7:39 (с честной текстологией и
    Синодальной глоссой «на них») → Ин. 14:17 (три предлога; вариант ἐστίν/ἔσται) →
    Ин. 20:22 (дуновение нового творения) → Деян. 2.
-5. **Спектр позиций** — таблица A–E с представителями (по Хэмилтону, W-22), с честным
+5. **Спектр позиций** — таблица Hamilton 1–6 с представителями (по W-22, TrinJ chart), с честным
    указанием: наши же герои (Оуэн, Уорфилд, Фергюсон) — на стороне полной непрерывности,
-   а автор ключевой монографии (Хэмилтон) и Пакер с Эриксоном — на стороне «возрождены,
-   но не обитаемы». Вывод-развилка: церковь Христова никогда не делила по этому вопросу
-   общения; и нам не должно.
+   Пакер/Эриксон/ВанГемерен/Ware — «возрождены, но не обитаемы», Carson — в more-discontinuity,
+   а позицию «Дух никак не участвовал» Hamilton оставляет без найденных представителей. Вывод-развилка:
+   церковь Христова никогда не делила по этому вопросу общения; и нам не должно.
 6. **Как жить с развилкой (пастораль):**
    - обе главные позиции (B и C) исповедуют одно и то же о *нас*: НЗ-верующий — храм
      Духа; и одно и то же о *них*: ВЗ-святые — рождённые свыше братья по вере;
@@ -639,7 +641,7 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 
 ## Открытые вопросы / что ещё копать
 
-1. **Hamilton Themelios — SAFE CLOSURE 2026-07-31 for HTML article.** The TGC/Themelios HTML article was read directly: spectrum positions and conclusion are available without PDF. Calvin on John 7:39 (W-8), Augustine Tract. 32 (W-15), and Gill on John 7:39 (W-16) also closed via open HTML. **2026-08-01 update:** Hamilton monograph rows W-3/W-5/W-6 are now explicitly downgraded to `SECONDARY-QUOTE-SITE / BOOK-PAGE-HOLD`; do not quote them directly from Goodreads. Still open inside this cluster: TrinJ 24 PDF if exact survey-page details are needed; Hamilton monograph page quotes remain separate book-access task.
+1. **Hamilton Themelios/TrinJ — SAFE CLOSURE 2026-07-31/2026-08-01.** The TGC/Themelios HTML article was read directly; 2026-08-01 TrinJ PDF text was read for the six-position spectrum and final chart. Calvin on John 7:39 (W-8), Augustine Tract. 32 (W-15), and Gill on John 7:39 (W-16) also closed via open HTML. **2026-08-01 update:** Hamilton monograph rows W-3/W-5/W-6 are now explicitly downgraded to `SECONDARY-QUOTE-SITE / BOOK-PAGE-HOLD`; do not quote them directly from Goodreads. TrinJ survey-page details are now closed at PDF-text level; Hamilton monograph page quotes remain separate book-access task.
 2. **Ferguson, The Holy Spirit (1996)** — добрать 1–2 дословные книжные цитаты со
    страницами (гл. 1 «The Holy Spirit and His Story», гл. 4 о Пятидесятнице): сейчас его
    позиция документирована только подкастами/лекциями.
@@ -647,9 +649,7 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
    взять 1–2 цитаты с номерами страниц из гл. 2 (ВЗ), гл. 5–6 (Ин. 7:39; 14:17; 20:22)
    и заключения; на epdf.pub есть полный текст (проверить легальность источника; лучше
    Logos/Perlego).
-4. **Позиция 4 спектра** — имена представителей (в TrinJ 24, стр. ~44–48). Кандидаты по
-   вторичным упоминаниям: часть классических диспенсационалистов (Chafer? Walvoord?) —
-   НЕ вписывать без проверки.
+4. **Позиции спектра Hamilton — SAFE CLOSURE 2026-08-01.** TrinJ final chart names representatives for positions 1–4 and 6 and says no author affirming position 5 was found. Use that chart; do not invent extra names.
 5. **Синодальная глосса «на них»** в Ин. 7:39 — найти историю (следует ли Синодальный
    здесь Елизаветинской/славянской традиции; ср. слав. «не у бо бе Дух Святый»). Мелкая,
    но эффектная деталь для русского читателя.

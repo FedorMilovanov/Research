@@ -536,13 +536,12 @@ types of soil into which it falls».
 — «…не на сеятеле и даже не на семени (которое во всех четырёх сценах предполагается
 одним и тем же), а на разных типах почвы, в которую оно падает».
 Источник: R. T. France, The Gospel of Matthew (NICNT; Eerdmans, 2007), комм. на Мф. 13:1–9
-(ок. p. 502–508). **ВЕРИФИЦИРОВАНО частично** (формулировка подтверждена вторичным
-цитированием в нескольких работах; страницу сверить по бумажному изданию при написании).
+(ок. p. 502–508). **CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01.** Формулировка остаётся useful paraphrase/locator only; не цитировать дословно и не заявлять страницу без NICNT edition/page. Verified substitutes for article body: Calvin B2, Taylor E5, Spurgeon F1, Ryle G4/G5.
 
 **G2. Carson**: «the interpretation, like the parable itself, ends positively» —
 «истолкование, как и сама притча, заканчивается позитивно [доброй почвой и жатвой]».
 Источник: D. A. Carson, «Matthew», EBC vol. 8 (Zondervan, 1984), на Мф. 13:23.
-**ВЕРИФИЦИРОВАНО частично** (по вторичному цитированию). Остальное у Carson давать
+**CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01.** Давать только как paraphrase/locator, not exact quote, unless EBC edition/page is opened. Остальное у Carson давать
 пересказом с указанием источника: (а) притча отвечает, почему весть Царства встречает
 смешанный приём — Царство в нынешнем веке приходит через сеяние слова, а не через
 немедленный суд; (б) единственный внешний признак доброй почвы — плод; (в) συνίημι
@@ -688,9 +687,7 @@ but of them who are unwilling to be changed.»
 2. **Calvin Harmony B2 — SAFE CLOSURE 2026-07-31.** Полный абзац по temporary faith / stony ground сверён по CCEL `calcom32.ii.xix.html`. Остаётся только отдельная optional задача: если нужна специальная фраза по Лк. 8:15 («honest and good heart»), добрать её в том же CCEL-разделе.
 3. **Taylor (1621) — SAFE CLOSURE 2026-08-01 at open-text level.** Hail & Fire PDF metadata/title was read; exact stony/good-soil anchors are now locked via University of Michigan EEBO/TCP CC0 fulltext, pages 118–120 and 261–262. Remaining optional task: page-image/modernized Hail & Fire paragraph comparison only if the final article wants modern spelling or image-level citation.
 4. **Ryle G4/G5 — SAFE CLOSURE 2026-08-01.** Matthew 13 paragraph verified via CCEL and GraceGems; Mark 4 thorny-ground paragraph verified via GraceGems.
-5. **France G1 / Carson G2** — проставить точные страницы по бумажным изданиям (NICNT 2007;
-   EBC vol. 8) перед публикацией; у France взять и его замечание о названии «parable of
-   the soils».
+5. **France G1 / Carson G2 — CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01.** Do not block the article on modern commentary pages. Use them only as paraphrase/locator unless NICNT/EBC pages are later opened; primary/older verified substitutes already cover the article’s burden.
 6. **Русские переводы**: проверить, как Институты III.2.11–12 звучат в русском издании
    (изд. РГГУ, пер. А. Д. Бакулова) — для цитирования по-русски со ссылкой на страницу;
    аналогично русское издание «Путешествия Пилигрима» для Pliable.

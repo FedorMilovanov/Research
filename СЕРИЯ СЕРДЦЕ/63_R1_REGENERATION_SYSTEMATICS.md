@@ -720,9 +720,8 @@ https://ccel.org/ccel/whitefield/sermons/sermons.li.html
 > исторической августиновской и реформатской мысли… водораздельное утверждение, отличающее это
 > богословие от всех форм полупелагианства».
 
-Ссылка: https://www.reformedontheweb.com/theology2/regeneration-precedes-faith-r-c-sproul.pdf ;
-ср. https://learn.ligonier.org/articles/new-birth
-**ВЕРИФИЦИРОВАНО** (там же — его рассказ о семинарской доске: профессор написал крупно
+Ссылка: https://learn.ligonier.org/articles/new-birth
+**SAFE CLOSURE 2026-08-01 — official Ligonier article verified.** Use article citation/date (March 1, 2007) and no book-page claim; old third-party PDF is unnecessary. Там же — его рассказ о семинарской доске: профессор написал крупно
 "Regeneration Precedes Faith").
 
 **H6.** Джон Стотт (цитируется у Пайпера, Finally Alive, о 1 Ин. 5:1):
@@ -890,8 +889,7 @@ https://www.monergism.com/holy-spirits-work-calling-and-regeneration-herman-bavi
 3. **Бавинк — SAFE CLOSURE 2026-07-31 for RD4 ch.1 HTML excerpt.** Monergism excerpt from *Reformed Dogmatics* IV, ch. 1 read and locked for broad/restricted regeneration, Word/Spirit order, and immediate Spirit operation. Baker page numbers and Kuyper presumed-regeneration critique remain optional future checks.
 4. **Бостон — SAFE CLOSURE 2026-07-31 for HTML.** Real/thorough/supernatural/universal/lasting change breakdown verified in GraceGems open text. Early-scan/print page remains optional only.
 5. **Стотт**: точная страница The Letters of John (TNTC, 1964/1988) для H6.
-6. **Спрол**: установить книжный первоисточник пассажа о «watershed» (статья-PDF ← какая книга:
-   Chosen by God? The Mystery of the Holy Spirit?) — для корректной сноски.
+6. **Спрол watershed — SAFE CLOSURE 2026-08-01.** Official Ligonier article “The New Birth” directly verifies the “Regeneration precedes faith” / “watershed assertion” wording. Cite the article; no need to identify a book source unless a print-page citation is desired.
 7. **Уитфилд**: сколько раз он проповедовал на Ин. 3:7 — часто пишут «более 300 раз»; найти
    первоисточник этой статистики (дневники? Далимор?) или не использовать цифру.
 8. **Пробел плана**: в задании упомянут «Boston … (state of grace)» — если статья захочет его

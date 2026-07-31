@@ -615,42 +615,21 @@ Bible*, наш прямой конфессиональный предшеств�
 
 ### Современные консервативные
 
-**R. C. Sproul**, *The Holiness of God* (1985). Релевантные главы по оглавлению:
-Ch. 4 «The Trauma of Holiness» (Исаия и Пётр — «изыди от меня, Господи, ибо я человек
-грешный», Лк. 5:8 — тот же теофанический паттерн падения-ниц, что у Иоанна в Откр.
-1:17); Ch. 6 «Holy Justice»; Ch. 9 «God in the Hands of Angry Sinners» (обыгрывает
-заглавие проповеди Эдвардса в обратную сторону). Извлечённые цитаты (все —
-ВЕРИФИЦИРОВАНО ЧАСТИЧНО, через вторичные агрегаторы — billmuehlenberg.com, ligonier.org
-«Great Quotes from The Holiness of God», goodreads):
-- *«The Bible never says that God is love, love, love; or mercy, mercy, mercy... Thus
-  his love is holy love, his mercy is holy mercy, his justice is holy justice»* —
-  «Библия никогда не говорит, что Бог есть любовь, любовь, любовь, или милость,
-  милость, милость... Итак, Его любовь есть святая любовь, Его милость — святая
-  милость, Его правосудие — святое правосудие» [перевод мой];
-- *«The most violent expression of God's wrath and justice is seen in the cross. The
-  Cross was at once the most horrible and the most beautiful example of God's wrath.
-  It was the most just and the most gracious act in history»* — «Самое яростное
-  проявление гнева и правосудия Божьего явлено на кресте. Крест был одновременно самым
-  ужасным и самым прекрасным примером гнева Божьего. Это было самое справедливое и
-  самое благодатное деяние в истории» [перевод мой];
-- *«If we despise the justice of God, we are not Christians… If we hate the wrath of
-  God, it is because we hate God Himself… A God of love who has no wrath is no God…»* —
-  «Если мы презираем правосудие Божие, мы не христиане... Если мы ненавидим гнев
-  Божий, это потому что мы ненавидим Самого Бога... Бог любви, у Которого нет гнева, —
-  не Бог...» [перевод мой];
-- *«Holiness provokes hatred. The greater the holiness the greater the human hostility
-  toward it»* и *«No man was ever more loving than Jesus Christ. Yet even His love made
-  people angry»* — «Святость провоцирует ненависть. Чем больше святость, тем больше
-  враждебность к ней человека» / «Никто никогда не любил больше, чем Иисус Христос. И
-  всё же даже Его любовь вызывала у людей гнев» [перевод мой; источник — ligonier.org,
-  собственный сайт служения Спраула, оба варианта высокой степени доверия] — **эта
-  пара цитат может стать эпиграфом статьи**: снимает саму предпосылку «если Христос
-  свят и грозен, значит, Он не был по-настоящему любящим» — Спраул утверждает обратное:
-  Его любовь БЫЛА настолько подлинной и святой, что именно ОНА вызывала ярость.
-- *«While you enjoy the benefits of my grace, don't forget my justice. Don't forget the
-  gravity of sin. Remember that I am holy»* — «Наслаждаясь благами Моей благодати, не
-  забывай о Моём правосудии. Не забывай о тяжести греха. Помни, что Я свят» [перевод
-  мой].
+**R. C. Sproul**, *The Holiness of God* (1985) — **SAFE CLOSURE 2026-08-01 at official-ministry-quote level.**
+Official Ligonier article “Great Quotes from The Holiness of God” was read directly. Quote-safe anchors from that page:
+- “Holiness provokes hatred. The greater the holiness the greater the human hostility toward it.”
+- “No man was ever more loving than Jesus Christ. Yet even His love made people angry.”
+- “The most violent expression of God’s wrath and justice is seen in the Cross.”
+- “God’s grace is not infinite… God sets limits to His patience and forbearance.”
+- “Our peace with God is not fragile; it is stable… His bow is no longer bent…”
+
+Источник: https://www.ligonier.org/posts/great-quotes-holiness-god
+Статус: `OFFICIAL-LIGONIER-QUOTE-PAGE-VERIFIED / NO-BOOK-PAGE-CLAIM`. Релевантные главы книги
+(Ch. 4 “The Trauma of Holiness”, Ch. 6 “Holy Justice”, Ch. 9 “God in the Hands of Angry Sinners”)
+остаются useful chapter context, но direct page numbers не заявляются. Старые quote-bank строки,
+которые пришли только из Goodreads/Bill Muehlenberg or other aggregators (например “holy love / holy mercy /
+holy justice”, “A God of love who has no wrath is no God”, etc.), теперь `SECONDARY-AGGREGATOR /
+DO-NOT-DIRECT-QUOTE` до проверки по книге или официальной странице.
 
 **John MacArthur / gty.org** — проповеднический цикл по Откровению (Grace Community
 Church), релевантные проповеди:
@@ -694,29 +673,12 @@ quote-card; рабочая статья может опираться на оф�
   но частичный жанр [ВЕРИФИЦИРОВАНО ЧАСТИЧНО].
 
 **Dane Ortlund сам оговаривает суд** (прямой ответ на задание owner — «сам Ортланд
-оговаривает суд, найди где»):
-- Глава 15 книги, «His 'Natural' Work and His 'Strange' Work», построена на Плач 3:33
-  («ибо Он не по изволению сердца Своего наказывает и огорчает сынов человеческих») и
-  Ис. 28:21 («странно будет дело Его, необычен труд Его»), Иер. 32:41. Тезис главы (по
-  обзорным источникам, ВЕРИФИЦИРОВАНО ЧАСТИЧНО): милость естественна (natural) для
-  Бога, наказание — «неестественно» (unnatural) в том смысле, что не является
-  первичным, спонтанным движением Его сердца, но требует «накопленной провокации»; тем
-  не менее реальность гнева и суда НЕ отрицается, а помещается в рамку приоритета, а не
-  исключения: *«Mercy is natural to him. Punishment is unnatural»* — «Милость естественна
-  для Него. Наказание неестественно» [перевод мой]; *«...not once are we told that God
-  is 'provoked to love' or 'provoked to mercy.' His anger requires provocation; his
-  mercy is pent up, ready to gush forth»* — «...ни разу не сказано, что Бог „побуждается
-  к любви“ или „побуждается к милости“. Его гнев требует провокации; Его милость
-  сдержана до времени, готовая хлынуть» [перевод мой].
-- Прямая цитата на Откр. 5:5–6 (найдена по сниппету обзора, требует URL-привязки, см.
-  «Открытые вопросы»): *«...as fierce as his lion-like judgment would have been against
-  us, so deep will be his lamb-like tenderness for us»* — «...сколь свирепым был бы Его
-  львиный суд против нас, столь же глубока Его агнчая нежность к нам» [перевод мой] —
-  **это САМАЯ полезная находка всего этого блока**: сам Ортланд явным образом
-  использует ИМЕННО ту же пару образов (лев/агнец, Откр. 5:5–6), которую задание owner
-  просит разработать, — то есть статья R9 не изобретает новый ход против Ортланда, а
-  **достраивает то, что даже у самого Ортланда заявлено, но не развёрнуто на весь
-  корпус текстов Откровения**.
+оговаривает суд, найди где») — **SAFE CLOSURE 2026-08-01 at official Crossway article/Q&A level.**
+- Crossway Q&A with Dane Ortlund was read directly. Ortlund explicitly says that if Jesus had “no wrath, no judgement towards hardness of heart towards impenitent sin,” then “his gentle and lowly heart dissolves too”; “It’s both, or neither”; and wrath/gentleness are “much more like two elevators rising and falling together,” not a seesaw. He also says he is “relieved that he is a Christ of wrath and judgement,” because otherwise wrongs are not finally righted.
+- Crossway article “What It Means That God Is Rich in Mercy” was read directly. It says God is “rightly wrathful against sin and sinners,” while “wrath is not what he is ‘rich in.’”
+
+Источники: https://www.crossway.org/articles/qa-dane-ortlund-answers-your-questions-about-the-heart-of-christ-for-sinners/ ; https://www.crossway.org/articles/what-it-means-that-god-is-rich-in-mercy/
+Статус: `OFFICIAL-CROSSWAY-ARTICLE/Q&A-VERIFIED / NO-BOOK-PAGE-CLAIM`. Глава 15 книги (*Gentle and Lowly*, “His ‘Natural’ Work and His ‘Strange’ Work”) и lion/lamb wording from Rev. 5:5–6 remain `BOOK-PAGE-HOLD / DO-NOT-DIRECT-QUOTE` unless Crossway/book pages are opened. For this article’s argument, use the official Q&A/article wording instead of secondary snippets.
 
 **Не верифицировано / отклонённые кандидаты (важно зафиксировать, чтобы не
 использовались по ошибке):**
@@ -812,12 +774,12 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 | 16 | J. Gill, Exposition | Rev. 1:17; 2:23; 5:5–6; 19:15 closed; Isa. 63:1 not closed | **PARTLY CLOSED 2026-07-31** — BibleStudyTools open text verified for Revelation loci | biblestudytools.com/commentaries/gills-exposition-of-the-bible/ |
 | 17 | J. C. Ryle, Ин. 2 и Мф. 23 | Matt. 23 stern-reproof line closed; John 2 temple/heart-knowledge paragraph closed with caveat; old zeal-snippet not direct-quote-safe | **PARTLY CLOSED 2026-07-31 / 2026-08-01** — GraceGems `m23.htm` and `j02.htm` verified | gracegems.org/Ryle/m23.htm ; gracegems.org/Ryle/j02.htm |
 | 18 | 1689 LBCF гл. 8, 32 | Христос-Судия, Последний суд | ВЕРИФИЦИРОВАНО (устойчивый конфессиональный текст) | the1689confession.com, founders.org |
-| 19 | R. C. Sproul, *Holiness of God* (5 цитат) | см. раздел «Свидетели» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | ligonier.org/posts/great-quotes-holiness-god, billmuehlenberg.com |
+| 19 | R. C. Sproul, *Holiness of God* | official Ligonier quote-page subset verified; aggregator-only quotes blocked | **SAFE CLOSURE 2026-08-01** at official-ministry-quote level | ligonier.org/posts/great-quotes-holiness-god |
 | 20 | J. MacArthur / gty.org | `90-475` Thyatira and `66-71` Glorious Return Part 2 closed; other GTY links locator-level | **PARTLY CLOSED 2026-07-31** — official transcripts verified for two quote-cards | gty.org/sermons/90-475 ; gty.org/sermons/66-71 |
 | 21 | GTY / J. Johnson, критика Ortlund | “One gets the distinct impression that Ortlund wants to tame the Lion of the tribe of Judah.” | **SAFE CLOSURE 2026-07-31** — official GTY blog verified | gty.org/blogs/B210315 |
 | 22 | reformation21.org, рецензия Ortlund | сбалансированная критика | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | reformation21.org/gentle-lowly-in-light-of-a-few-years |
-| 23 | D. Ortlund, *Gentle and Lowly* гл. 15 | «natural work / strange work» + 3 цитаты | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | вторичные обзоры; нужен URL/страница книги |
-| 24 | D. Ortlund, цитата на Откр. 5:5–6 | «lion-like judgment... lamb-like tenderness» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО, URL не закреплён | требует повторного поиска с прямым URL |
+| 23 | D. Ortlund, Crossway Q&A/articles + *Gentle and Lowly* ch. 15 | official Q&A/article balance on wrath/gentleness verified; ch. 15 wording remains book-page hold | **PARTLY CLOSED 2026-08-01** | crossway.org/articles/qa-dane-ortlund... ; crossway.org/articles/what-it-means-that-god-is-rich-in-mercy/ |
+| 24 | D. Ortlund, цитата на Откр. 5:5–6 | “lion-like judgment... lamb-like tenderness” | **BOOK-PAGE-HOLD / DO-NOT-DIRECT-QUOTE** | use Crossway Q&A balance instead unless book page is opened |
 | 25 | C. H. Spurgeon, проповедь №1028 (5 цитат) | см. раздел «Спердженовский пласт» | ВЕРИФИЦИРОВАНО (кросс-сверено 4+ зеркалами) | spurgeon.org, spurgeongems.org/chsbm18.pdf, ccel.org, blueletterbible.org |
 | 26 | C. H. Spurgeon, «Among Lions», «Jesus and the Lambs», «An Earnest Warning» | см. выше | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | spurgeon.org/resource-library/sermons/... |
 | 27 | V. Baucham, «sissified, needy Jesus» | — | **НЕ ВЕРИФИЦИРОВАНО, не использовать** | — |
@@ -959,14 +921,8 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 0f. **Ryle John 2 — SAFE CLOSURE 2026-08-01 with caveat.** GraceGems `j02.htm` was read for temple-cleansing and Christ-heart-knowledge paragraphs. Old zeal-snippet wording remains do-not-direct-quote unless separately located.
 
 1. **Гудвин — short anchors closed, long/page citations still optional.** 2026-08-01 Monergism PDF text readback gives quote-safe short anchors from Introduction and Part II / Heb. 4:15, but not page-image or print pagination. If the article wants long block quotations or page numbers, do a separate page-image/edition pass (DigitalPuritan/Monergism/Banner edition comparison).
-2. **Sproul, *Holiness of God*** — все 5 извлечённых цитат идут через вторичные
-   агрегаторы. Нужно закрепить номер страницы/главы по официальному изданию (Tyndale
-   House / David C. Cook, разные годы переиздания — обратить внимание, что пагинация
-   отличается между изданиями 1985/1998/2000/2020; для сайта лучше цитировать по
-   главе, не по странице).
-3. **Ortlund, *Gentle and Lowly*, гл. 15** и цитата на Откр. 5:5–6 — обе требуют
-   прямого доступа к книге (Crossway, 2020) для точной страницы; сейчас — вторичный
-   пересказ, хотя формулировки выглядят подлинными (стиль совпадает).
+2. **Sproul — SAFE CLOSURE 2026-08-01 at official Ligonier quote-page level.** Use only the quote subset verified at Ligonier; old Goodreads/Bill Muehlenberg-only lines remain `SECONDARY-AGGREGATOR / DO-NOT-DIRECT-QUOTE` until checked in a book edition.
+3. **Ortlund — PARTLY CLOSED 2026-08-01 via official Crossway Q&A/articles.** Use Crossway’s Q&A/article wording for wrath/gentleness. *Gentle and Lowly* ch. 15 “natural/strange work” and Rev. 5 lion/lamb line remain `BOOK-PAGE-HOLD / DO-NOT-DIRECT-QUOTE` unless a legal book page is opened.
 4. **G. K. Beale (NIGTC, 1999) и R. Mounce (NICNT, 1997)** на Откр. 6:16 и 19:13 —
    стандартные академические евангельские комментарии, не привлечённые дословно в этом
    проходе; хорошее дополнение для более технической версии статьи или для сносок.

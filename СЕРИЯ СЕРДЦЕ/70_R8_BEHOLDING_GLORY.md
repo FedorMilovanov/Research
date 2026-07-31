@@ -1104,8 +1104,8 @@ R8 в замаскированный self-help («смотри на Христа
    It confirms sermon #5546, title, text 2 Cor. 3:18, original preaching date 1966-09-25,
    audio availability, and the official description/breakdown: beholding / reflecting God’s glory,
    restoration of God’s image, progressive transformation, and revival beginning with God’s people.
-   Boundary: `OFFICIAL-SERMON-PAGE-READ / AUDIO-UNLISTENED / NO-DIRECT-SERMON-QUOTE`; do not quote
-   sermon wording beyond the official page text unless audio/transcript is separately verified.
+   Boundary/closure decision 2026-08-01: `OFFICIAL-SERMON-PAGE-READ / NO-AUDIO-TRANSCRIPT / DO-NOT-DIRECT-QUOTE`.
+   Audio/transcript pass is no longer a blocker for this dossier because no direct MLJ sermon wording is needed; use only the official page metadata/description unless a future owner provides a transcript or asks for an audio transcription pass.
 7. **Owen — связь двух книг («Mortification» + «Glory of Christ») как единой системы** в этом
    прогоне обоснована (а) прямой цитатой-мостом 1656 года («Set faith at work on Christ») и
    (б) косвенным свидетельством Пэккера о союзе со Христом как основании всего богословия Оуэна,
