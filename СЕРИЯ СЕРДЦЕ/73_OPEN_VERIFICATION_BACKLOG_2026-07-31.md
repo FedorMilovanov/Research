@@ -489,21 +489,21 @@ This table is the practical audit queue to use before any filling/extraction pas
 | R1-SYS-02 | PARTLY-CLOSED-local | `63_R1...` | III.2 born again | Bavinck RD IV | Monergism RD4 ch.1 excerpt read 2026-07-31 | broad/restricted regeneration and immediate operation now excerpt-locked | Baker pages/Kuyper critique optional |
 | R1-SYS-03 | CLOSED-local | `63_R1...` | III.2 born again | Boston regeneration/state of grace | GraceGems open text verified 2026-07-31 | real/thorough/supernatural/universal/lasting breakdown locked | early-scan/print page optional |
 | R1-WHIT-01 | CLOSED-as-blocked-local | `62/63_R1...` | III.2 born again | Whitefield born-again anecdote/stat | no primary source found | blocked as documented fact | use verified Whitefield sermon instead; tradition only if labelled |
-| R2-HAM-01 | PARTLY-CLOSED-local | `64_R2...` | OT regeneration bonus | Hamilton Themelios/TrinJ/monograph | Themelios HTML verified 2026-07-31 | conclusion and spectrum names partly locked | TrinJ PDF and book-page locators still optional/open |
+| R2-HAM-01 | PARTLY-CLOSED-local | `64_R2...` | OT regeneration bonus | Hamilton Themelios/TrinJ/monograph | Themelios HTML verified 2026-07-31; Goodreads monograph quotes downgraded 2026-08-01 | conclusion locked; W-3/W-5/W-6 not direct-quote-safe | TrinJ PDF and monograph page locators still optional/open |
 | R2-FERG-01 | P1 | `64_R2...` | OT regeneration bonus | Ferguson *The Holy Spirit* | lectures only | book citation missing | get 1–2 exact book locators or paraphrase by lecture only |
 | R3-CALVIN-01 | CLOSED-local | `65_R3...` | struggle without regeneration | Calvin Institutes II.3.3–4 | CCEL/Beveridge readback done 2026-07-31 | civil righteousness wording now source-locked at CCEL level | Battles/Russian edition remains editorial check |
 | R3-AUG-01 | P1 | `65_R3...` | struggle without regeneration | Augustine / `splendida vitia` chain | attribution not closed | classic misattribution risk | verify Latin/FOC or mark reception only |
 | R3-SPURG-01 | CLOSED-as-blocked-local | `65_R3...` | struggle without regeneration | Spurgeon “free will carried...” | apocryphal-risk marked 2026-07-31 | do not use | use verified Spurgeon substitute |
 | R4-WHIT-01 | CLOSED-as-attributed-local | `66_R4...` | four soils | Whitefield stony-ground quote | no primary locator found | attributed-only / do-not-direct-quote | use Spurgeon F1 / Calvin B2 substitutes |
-| R4-TAYLOR-01 | P1 | `66_R4...` | four soils | Thomas Taylor 1621 | title only | source underused | extract exact paragraphs on stony/good soil |
+| R4-TAYLOR-01 | PARTLY-CLOSED-local | `66_R4...` | four soils | Thomas Taylor 1621 | Hail&Fire title/PDF metadata + EEBO CC0 fulltext pages 118–120, 261–262 verified 2026-08-01 | stony/good-soil anchors now usable at open-text level | optional page-image/modernized-Hail&Fire comparison only |
 | R4-COMM-01 | P1 | `66_R4...` | four soils | France / Carson | page locators missing | modern commentary support not exact | print/ebook page pass; Calvin Harmony B2 separately closed locally |
 | R5-OWEN-01 | CLOSED-local | `67_R5...` | two struggles | Owen *Mortification* ch. 2 | CCEL verified 2026-07-31 | quote-card patched locally | print page not claimed |
 | R5-OWEN-02 | CLOSED-local | `67_R5...` | two struggles | Owen “unless indeed he be so” / builder analogy | CCEL verified 2026-07-31 | exact context now patched | print/Goold page optional |
-| R5-MEAD-01 | PARTLY-CLOSED-local | `67_R5...` | two struggles | Mead Agrippa/conscience + false peace | CCEL verified 2026-07-31 | candidates #5/#7 closed | Mead step 7 and broader Q2–Q5 still open |
+| R5-MEAD-01 | PARTLY-CLOSED-local | `67_R5...` | two struggles | Mead Agrippa/conscience + false peace + step VII struggle | CCEL verified 2026-07-31/2026-08-01 | candidates #5/#7 and step 7 closed | broader Q2–Q5 still open only if needed |
 | R5-SPURG-01 | PARTLY-CLOSED-local | `67_R5...` | two struggles | Spurgeon Luke 18:13 publican | official Spurgeon Library sermon verified 2026-07-31 | Baptist preaching support found | optional broader Luke 18:9–14 sermon/syntax still open |
-| R7A-METZ-01 | P0 | `68_R7A...` | heart and Word | Metzger Heb 4:2 | exact text/rating missing | textual-variant claim not pinned | source page / critical apparatus pass |
+| R7A-METZ-01 | PARTLY-CLOSED/BOOK-HOLD | `68_R7A...` | heart and Word | Metzger Heb 4:2 | BibleHub/Meyer open-reference layer verified 2026-08-01; Metzger exact text/rating still missing | variant note safer, but do not cite Metzger/NA28 rating yet | legal Metzger/NA28 page pass |
 | R7A-COMM-01 | P0 | `68_R7A...` | heart and Word | Lane/O’Brien/Schreiner/Ellingworth/Attridge | positions not verified | commentary summary risk | verify individually; note O’Brien withdrawal caution; Calvin Heb 4:2 separately closed locally |
-| R7A-OWEN-01 | BLOCK/P1 | `68_R7A...` | heart and Word | Owen “burn our Bibles” | attributed, no corpus locator | misattribution risk | use Calvin substitute unless exact Owen source found |
+| R7A-OWEN-01 | CLOSED-as-attributed-only | `68_R7A...` | heart and Word | Owen “burn our Bibles” | Banner/Hamilton page verified but no Owen locator | do not quote as Owen | use Calvin/1689 substitutes unless exact Owen work/page is found |
 | R7A-GILL-01 | CLOSED-local | `68_R7A...` | heart and Word | Gill Heb 4:2 | BibleStudyTools Gill readback done 2026-07-31 | both readings now pinned to public-domain mirror | print page not claimed |
 | R8-OWEN-01 | PARTLY-CLOSED-local | `70_R8...` | beholding glory | Owen *Glory of Christ* | key quote cards #10–15 CCEL-verified 2026-07-31 | capstone Owen core now chapter-locked | optional print-page pass only |
 | R8-GRAM-01 | editorial | `70_R8...` | beholding glory | κατοπτριζόμενοι | owner decision open | overload risk | decide main text vs footnote/dropdown |
@@ -511,7 +511,7 @@ This table is the practical audit queue to use before any filling/extraction pas
 | R8-SPURG-01 | PARTLY-CLOSED-local | `70_R8...` | beholding glory | Spurgeon official “Glory!” support locator | official Spurgeon Library read 2026-07-31 | support quote located | optional dedicated 2 Cor 3:18 sermon search remains |
 | R8-MLJ-01 | PARTLY-CLOSED-local | `70_R8...` | beholding glory | MLJ `Reflecting His Glory` | official MLJ page read 2026-07-31 | metadata/description/breakdown known | audio/transcript unverified; no direct sermon quote |
 | R8-MCHEYNE-01 | PARTLY-CLOSED-local | architecture/R8 | beholding glory | “ten looks at Christ” | Google Books p.239 verified 2026-07-31 | letter text/page locked; originality still open | do not claim Baxter origin without primary locus |
-| R9-GOODWIN-01 | P1 | `71_R9...` | Christ of Revelation | Goodwin majesty+tenderness | direct page locators missing | quote-ready gap | Monergism/DigitalPuritan exact pass |
+| R9-GOODWIN-01 | PARTLY-CLOSED-local | `71_R9...` | Christ of Revelation | Goodwin majesty+tenderness | Monergism PDF text verified 2026-08-01 for Introduction + Part II anchors | short anchors quote-safe as PDF-text, not page-image | long/page-image/print-page pass optional/open |
 | R9-GILL-01 | CLOSED-local | `71_R9...` | Christ of Revelation | Gill on Rev 1:17; 2:23; 5:5–6; 19:15 | BibleStudyTools open text verified 2026-07-31 | Baptist/public-domain support layer now safer | print page and Isa 63:1 not claimed |
 | R9-SPROUL-01 | P1 | `71_R9...` | Christ of Revelation | Sproul *Holiness of God* | secondary aggregators | direct quote risk | known edition chapter/page or paraphrase only |
 | R9-ORTLUND-01 | P1 | `71_R9...` | Christ of Revelation | Ortlund ch. 15 | secondary/looks authentic | direct quote/page risk | Crossway edition page/chapter locator |
@@ -818,7 +818,7 @@ This vocabulary cleanup is not mandatory before continuing audit, but it would p
 
 ## 13. Safe closure pass 2026-07-31 — cumulative Research/local ledger
 
-Owner first authorized local closure runs without push, then explicitly authorized updating Research and pushing; that earlier safe-closure batch was committed/pushed in `7a48033`. This section now remains cumulative: rows already in `7a48033` are part of the pushed Research branch, while rows added after that commit are local until the next owner-authorized commit/push. All closures below were made only where a primary/open source could be read directly and where no print-page or page-image claim was needed. They do not make production/site claims.
+Owner first authorized local closure runs without push, then explicitly authorized updating Research and pushing; earlier safe-closure batches were pushed through `98a4158`. This section remains cumulative: rows dated 2026-08-01 in the current continuation are local workspace changes until the next owner-authorized commit/push. All closures below were made only where a primary/open source could be read directly and where no print-page or page-image claim was needed. They do not make production/site claims.
 
 ### 13.1 Closed locally
 
@@ -829,7 +829,7 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 | SC-R5-OWEN-MORT-03 | `67_R5_TWO_STRUGGLES.md` | Owen “easier see without eyes...” was partial | Verified by CCEL `mort.i.x.html` | print page not claimed |
 | SC-R5-OWEN-MORT-04 | `67_R5_TWO_STRUGGLES.md` | builder-without-foundation image was paraphrase/candidate | Verified exact paragraph by CCEL `mort.i.x.html`; added quote | print page not claimed |
 | SC-R5-OWEN-MORT-05 | `67_R5_TWO_STRUGGLES.md` | Owen ch. 5–6 negative definition / ch. 8 universal obedience were candidate summaries | Verified CCEL `mort.i.viii.html` and `mort.i.xi.html`; added exact boundary phrases and second general rule | print page not claimed |
-| SC-R5-MEAD-01 | `67_R5_TWO_STRUGGLES.md` | Mead Agrippa/conscience and false-peace lines were partial/candidate | Verified CCEL `almost.iii.i.html` and `almost.iii.viii.html` exact lines | print page not claimed; Mead step 7 remains open |
+| SC-R5-MEAD-01 | `67_R5_TWO_STRUGGLES.md` | Mead Agrippa/conscience and false-peace lines were partial/candidate | Verified CCEL `almost.iii.i.html` and `almost.iii.viii.html` exact lines | print page not claimed; step 7 closed separately in SC-R5-MEAD-STEP7-01 |
 | SC-R5-AUG-CONF-01 | `67_R5_TWO_STRUGGLES.md` | Augustine Confessions VIII.9.21 will/self formula was unverified candidate | Verified CCEL Schaff/NPNF exact sentence | Pusey/Chadwick print comparison optional |
 | SC-R5-SPURGEON-01 | `67_R5_TWO_STRUGGLES.md` | Spurgeon Luke 18 support was unverified candidate | Verified official Spurgeon Library “A Sermon for the Worst Man on Earth” on Luke 18:13 | print page not claimed; broader Luke 18:9–14 syntax still open |
 | SC-R5-EDWARDS-HEADINGS-01 | `67_R5_TWO_STRUGGLES.md` | Edwards 24 signs headings were CCEL/TGC summary with English headings candidates | Verified all Part II/III heading locators against CCEL `affections.toc.html` | body-level quotations still require section readback if used |
@@ -846,7 +846,7 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 | SC-R7A-MANTON-JAS-01 | `68_R7A_WORD_AND_HEART.md` | Manton on James 1:21 ingrafted word was unverified / blocked | Verified CCEL Works vol. 4 `manton04.iv.html` section on James 1:21 | print page not claimed; Psalm 119 Manton remains open |
 | SC-R9-GILL-REV-01 | `71_R9_CHRIST_OF_REVELATION.md` | Gill Revelation notes were `ВЕРИФИЦИРОВАНО ЧАСТИЧНО` | Verified BibleStudyTools public-domain Gill pages for Rev. 1:17; 2:23; 5:5–6; 19:15 | print page not claimed; Isa 63:1 not closed |
 | SC-R9-GTY-REV-01 | `71_R9_CHRIST_OF_REVELATION.md` | MacArthur / GTY Rev. 2 and Rev. 19 quotations were partial | Verified official GTY transcripts for `90-475` and `66-71` | official-ministry transcript support only; other GTY links not closed |
-| SC-R9-RYLE-M23-01 | `71_R9_CHRIST_OF_REVELATION.md` | Ryle Matthew 23 stern-reproof line was partial | Verified GraceGems `m23.htm` exact phrase about loving heart using stern reproof | print page not claimed; Ryle John 2 zeal remains partial |
+| SC-R9-RYLE-M23-01 | `71_R9_CHRIST_OF_REVELATION.md` | Ryle Matthew 23 stern-reproof line was partial | Verified GraceGems `m23.htm` exact phrase about loving heart using stern reproof | print page not claimed; John 2 handled separately in SC-R9-RYLE-JOHN2-01 |
 | SC-R9-GTY-JOHNSON-01 | `71_R9_CHRIST_OF_REVELATION.md` | GTY / Jeremiah Johnson “tame the Lion” critique was partial/byline-snippet | Verified official GTY blog `B210315` and exact line | critique context only, not doctrinal foundation |
 | SC-R4-CALVIN-HARMONY-01 | `66_R4_FOUR_SOILS.md` | Calvin Harmony B2 temporary-faith paragraph was partial / fetch-blocked | Verified CCEL `calcom32.ii.xix.html` paragraph on temporary faith / stony ground | print page not claimed; Luke 8:15 phrase optional |
 | SC-R4-SPURGEON-WHITEFIELD-01 | `66_R4_FOUR_SOILS.md` | Spurgeon stony-ground sermon was partial; Whitefield stony-ground quote lacked primary locator | Verified official Spurgeon Library F1; marked Whitefield F2 attributed-only / do-not-direct-quote | Spurgeon print page not claimed; Whitefield can reopen only with primary locator |
@@ -860,10 +860,20 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 | SC-R2-CALVIN-JOHN739-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Calvin on John 7:39 surrounding context was open | Verified CCEL `calcom34.xiii.vii.html` for bright/illustrious Spirit and regeneration/new-creature line | print page not claimed |
 | SC-R2-AUG-TRACT32-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Augustine Tractate 32 exact wording was candidate | Verified New Advent/NPNF HTML on John 7:39 and special manner of giving Spirit | print page not claimed |
 | SC-R2-GILL-JOHN739-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Gill on John 7:39 was unverified candidate | Verified BibleStudyTools public-domain Gill page for John 7:39 | print page not claimed |
+| SC-R2-WARFIELD-OTSPIRIT-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Warfield OT Spirit continuity phrases were snippet-level | Verified Monergism HTML article opening phrases directly | print/article page not claimed |
+| SC-R2-OWEN-PNEUM-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Owen Pneumatologia W-10/W-11 had phrase-level verification but no chapter readback | Verified CCEL `Pneumatologia`, Book III, ch. I (`pneum.i.vii.i.html`) for OT regeneration and obscure OT revelation statements | Goold/print pagination optional, not claimed |
+| SC-R2-HAMILTON-GOODREADS-01 | `64_R2_OT_REGENERATION_INDWELLING.md` | Hamilton monograph W-3/W-5/W-6 were marked verified via Goodreads quotes | Downgraded to `SECONDARY-QUOTE-SITE / BOOK-PAGE-HOLD`; direct quote blocked until B&H page/edition checked | use Themelios W-4 conclusion or paraphrase only |
+| SC-R5-MEAD-STEP7-01 | `67_R5_TWO_STRUGGLES.md` | Mead step VII “strife and combat against sin” remained open | Verified CCEL `almost.iii.ii.html` and added quote-card 7a | broader Mead Q2–Q5 optional |
+| SC-R4-TAYLOR-01 | `66_R4_FOUR_SOILS.md` | Taylor 1621 was title-only / source underused | Verified Hail&Fire PDF title/metadata and EEBO/TCP CC0 fulltext pages 118–120, 261–262 for stony/good-soil anchors | page-image and modernized-text comparison optional |
+| SC-R4-RYLE-01 | `66_R4_FOUR_SOILS.md` | Ryle Matthew 13 / Mark 4 were verified only loosely/snippet-level | Verified CCEL/GraceGems Matthew 13 and GraceGems Mark 4 paragraphs | print page not claimed |
+| SC-R7A-HEB42-OPENAPP-01 | `68_R7A_WORD_AND_HEART.md` | Hebrews 4:2 textual note depended on summaries and Metzger remained inaccessible | Verified BibleHub interlinear/text and Meyer/StudyLight readback for critical-form parsing and hearing/faith contrast | Metzger/NA28 rating remains `BOOK/PAGE-HOLD` |
+| SC-R7A-OWEN-BURN-01 | `68_R7A_WORD_AND_HEART.md` | “burn our Bibles” formula was attributed to Owen without corpus locator | Verified Banner/Hamilton secondary attribution; marked `SECONDARY-ATTRIBUTION / DO-NOT-DIRECT-QUOTE-AS-OWEN` | reopen only with Owen work/chapter/page |
+| SC-R9-GOODWIN-01 | `71_R9_CHRIST_OF_REVELATION.md` | Goodwin majesty+tenderness needed direct pass | Verified Monergism PDF text for Introduction and Part II/Heb. 4:15 short anchors | page-image/print page and long block quotes not claimed |
+| SC-R9-RYLE-JOHN2-01 | `71_R9_CHRIST_OF_REVELATION.md` | Ryle John 2 zeal line was snippet/partial | Verified GraceGems `j02.htm` for temple-cleansing/holy-wrath and Christ-knows-heart paragraphs; old zeal wording not found and blocked for direct quote | use verified John 2 wording or find separate Ryle locator |
 
 ### 13.2 Why these closures are safe
 
-- They use open primary/public-domain text hosts (CCEL) or CCEL Study readback.
+- They use open primary/public-domain text hosts (CCEL, GraceGems, Monergism public-domain pages, EEBO/TCP CC0 fulltext where rights permit) or CCEL/BibleHub/StudyLight readback.
 - They do not claim scan-image verification, printed page numbers, or critical-edition superiority.
 - They do not change theological conclusions; they only upgrade evidence status and locators.
 - They do not import any external source over Scripture; all uses remain subordinate support.
@@ -874,9 +884,10 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 |---|---|
 | Rogers Advice 1/5/6 scan-first closure | needs visual Google/British Library 1691 page-image locator; OCR/secondary extraction not enough |
 | MLJ *Spiritual Depression* | full legal book text still HOLD |
-| Adams/Godwin PDF page-image gates | parsed text/PDF link is not page-image verification |
+| Adams/Goodwin PDF page-image gates | parsed text/PDF link is not page-image verification |
 | R8 MLJ audio/transcript + M’Cheyne prior-origin + optional Spurgeon dedicated-sermon search | Hughes direct quote is now blocked/resolved; M’Cheyne letter text page-locked; Spurgeon support locator found; MLJ direct sermon wording still requires audio/transcript |
-| R9 Sproul/Ortlund + Ryle John 2 partial + remaining GTY links | Gill Revelation, GTY `90-475`/`66-71`, GTY Johnson B210315, and Ryle Matthew 23 subsets are locally closed; other aggregator/snippet items still need page/chapter/source pass |
+| R9 Sproul/Ortlund + remaining GTY links | Gill Revelation, GTY `90-475`/`66-71`, GTY Johnson B210315, Ryle Matthew 23, Goodwin short anchors, and Ryle John 2 temple/heart-knowledge subset are locally closed; Sproul/Ortlund and other aggregator/snippet items still need page/chapter/source pass |
 | R1 Gill/Bavinck/Boston/Whitefield | Gill B6, Bavinck RD4 excerpt, and Boston regeneration characteristics are locally closed at HTML level; Whitefield anecdote is blocked as documented fact; optional print-page policy remains open |
-| R4 Taylor/France/Carson + optional Whitefield primary locator | Calvin Harmony B2 and Spurgeon F1 closed; Whitefield F2 is attributed-only/blocked for direct quote; Taylor/France/Carson still open |
-| R7a Metzger / commentary positions | Calvin and Gill are now locally closed; Metzger and modern commentary positions remain open |
+| R4 France/Carson + optional Taylor page-image/Whitefield primary locator | Calvin Harmony B2, Spurgeon F1, Taylor open-text anchors, and Ryle G4/G5 are closed; Whitefield F2 is attributed-only/blocked for direct quote; France/Carson still need print/ebook pages |
+| R7a Metzger / commentary positions | Calvin and Gill are locally closed; BibleHub/Meyer open-reference layer for Heb. 4:2 is now closed; Metzger exact text/rating and modern commentary positions remain open |
+| R2 Ferguson book pages / Hamilton monograph pages / TrinJ survey details | Hamilton Themelios conclusion, Warfield HTML, Owen CCEL ch. I, Calvin, Augustine, and Gill John 7:39 are locally closed; Ferguson book, Hamilton monograph page quotes, and TrinJ remain open |

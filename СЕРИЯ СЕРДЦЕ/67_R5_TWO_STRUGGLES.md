@@ -731,6 +731,7 @@ Evans-имprint 1746: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idn
 7. **Mead** — мир почти-христианина «not a peace flowing from Christ’s propitiation, but
    a peace rising from a formal profession» — Use of Caution —
    https://ccel.org/ccel/mead_matthew/almost.iii.viii.html — **ВЕРИФИЦИРОВАНО по CCEL (safe closure 2026-07-31)**.
+7a. **Mead** — ступень 7: «A man may maintain a strife and combat against sin in himself, and yet be but almost a Christian»; Mead distinguishes gracious struggle (same faculty: regenerate against unregenerate part) from natural-conscience struggle (conscience against corrupt will/affections). — Question I, step VII — https://ccel.org/ccel/mead_matthew/almost.iii.ii.html — **CCEL-HTML-VERIFIED / QUESTION-I-STEP-VII-LOCATOR-LOCKED (safe closure 2026-08-01)**.
 7b. **Spurgeon** — “God be merciful to me a sinner” is “a pure, unadulterated prayer” and “full of confession of sin”; the publican means “the sinner” — *A Sermon for the Worst Man on Earth*, Luke 18:13, MTP vol. 33 — https://www.spurgeon.org/sermons/a-sermon-for-the-worst-man-on-earth — **OFFICIAL-SPURGEON-LIBRARY-VERIFIED (safe closure 2026-07-31)**.
 8. **Owen** — «Unless a man be a believer, — that is, one that is truly ingrafted into
    Christ, — he can never mortify any one sin.» — Of the Mortification of Sin in
@@ -889,7 +890,7 @@ Evans-имprint 1746: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idn
 
 ## Открытые вопросы / что ещё копать
 
-1. **Mead — SAFE CLOSURE 2026-07-31 for candidates №5 and №7.** Agrippa/conscience line verified in CCEL `almost.iii.i.html`; false-peace/formal-profession line verified in CCEL `almost.iii.viii.html`. Still open: выписать целиком ступень 7 («strife and combat against sin») and, if needed, broader answers Mead gives to questions 2–5.
+1. **Mead — SAFE CLOSURE 2026-07-31/2026-08-01.** Agrippa/conscience line verified in CCEL `almost.iii.i.html`; false-peace/formal-profession line verified in CCEL `almost.iii.viii.html`; **2026-08-01:** Question I, step VII (“strife and combat against sin”) verified in CCEL `almost.iii.ii.html` and added as quote-card 7a. Still open only if needed: broader answers Mead gives to Questions II–V.
 2. **Edwards signs headings — SAFE CLOSURE 2026-07-31.** All 24 Part II/III title-locators verified in CCEL TOC `affections.toc.html`; optional body-level quote extraction remains only where the article quotes more than a heading.
 3. **Owen, Mortification гл. 5–6 и 8 — SAFE CLOSURE 2026-07-31.** Negative definitions checked in CCEL `mort.i.viii.html`; second general rule checked in `mort.i.xi.html`. Remaining Owen task, if needed, is optional print-page/Goold pagination, not source-risk.
 4. **Сперджен на Лк. 18:13 — SAFE CLOSURE 2026-07-31.** Official Spurgeon Library “A Sermon for the Worst Man on Earth” verified as a strong Baptist preaching support on the publican. Optional future search only if a sermon explicitly covering all Luke 18:9–14 / Pharisee syntax is needed.

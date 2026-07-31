@@ -410,15 +410,17 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 Источник: Second London Baptist Confession (1689), 8.6 (прооф-тексты: 1 Кор. 4:10; Евр. 4:2; 1 Пет. 1:10–11; Откр. 13:8; Евр. 13:8).
 Ссылки: https://www.the1689confession.com/1689/chapter-8 ; https://reformedreader.org/ccc/1689lbc/english/Chapter08.htm
 
-**W-2. B. B. Warfield, «The Spirit of God in the Old Testament» (The Presbyterian and Reformed Review, окт. 1895)** — ВЕРИФИЦИРОВАНО (фразы найдены)
+**W-2. B. B. Warfield, «The Spirit of God in the Old Testament» (The Presbyterian and Reformed Review, окт. 1895)** — SAFE CLOSURE 2026-08-01
 > "…what is most fundamental in the Biblical doctrine of the Spirit of God is common to both Testaments." · "…in passing from the Old Testament to the New, the reader is conscious of no violent discontinuity in the conception of the Spirit which he finds in the two volumes."
 — «…самое фундаментальное в библейском учении о Духе Божием обще обоим Заветам»; «…переходя от Ветхого Завета к Новому, читатель не ощущает никакого насильственного разрыва в понимании Духа, которое он находит в двух томах».
 Ссылка: https://www.monergism.com/thethreshold/sdg/spiritot.html
+Статус: `MONERGISM-HTML-VERIFIED / ARTICLE-OPENING-LOCATOR-LOCKED`; фразы прочитаны напрямую в открытом HTML, печатная страница не заявляется.
 
-**W-3. J. M. Hamilton, God's Indwelling Presence (B&H Academic, 2006) — «храмовая» формула** — ВЕРИФИЦИРОВАНО (Goodreads quotes)
+**W-3. J. M. Hamilton, God's Indwelling Presence (B&H Academic, 2006) — «храмовая» формула** — QUOTE-SITE-ONLY / DO-NOT-DIRECT-QUOTE
 > "In the old covenant God faithfully remained with His people, accompanying them in a pillar of fire and cloud, then dwelling among them in the tabernacle and the temple. Under the new covenant, the only temple is the believing community itself, and God dwells not only among the community corporately (Matt 18:20; 1 Cor 3:16; 2 Cor 6:16), but also in each member individually (John 14:17; Rom 8:9–11; 1 Cor 6:19)."
 — «В ветхом завете Бог верно пребывал со Своим народом: сопровождал его в столпе огненном и облачном, затем обитал среди него в скинии и храме. В новом завете единственный храм — сама верующая община, и Бог обитает не только среди общины корпоративно (Мф. 18:20; 1 Кор. 3:16; 2 Кор. 6:16), но и в каждом её члене лично (Ин. 14:17; Рим. 8:9–11; 1 Кор. 6:19)».
 Ссылка: https://www.goodreads.com/work/quotes/527122-god-s-indwelling-presence-the-holy-spirit-in-the-old-and-new-testaments
+Статус: `SECONDARY-QUOTE-SITE / BOOK-PAGE-HOLD`. Не использовать как прямую цитату из монографии без B&H edition/page; безопасная замена для тезиса — W-4 Themelios conclusion, уже закрытая по HTML.
 
 **W-4. Hamilton — формула тезиса / conclusion** — SAFE CLOSURE 2026-07-31 по Themelios HTML.
 > “Were old covenant believers indwelt by the Holy Spirit? No. They did not need to be. God
@@ -436,15 +438,17 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 Ссылка: https://www.thegospelcoalition.org/themelios/article/were-old-covenant-believers-indwelt-by-the-holy-spirit/
 Статус: `THEMELIOS-HTML-VERIFIED / CONCLUSION-LOCATOR-LOCKED`; PDF/book page not claimed. Краткая формула “regenerate though not indwelt” остаётся правильным shorthand, но article quote лучше брать из conclusion above.
 
-**W-5. Hamilton — в чём новизна Иер. 31 / Иез. 36** — ВЕРИФИЦИРОВАНО (Goodreads quotes)
+**W-5. Hamilton — в чём новизна Иер. 31 / Иез. 36** — QUOTE-SITE-ONLY / DO-NOT-DIRECT-QUOTE
 > "The newness does not consist in the Spirit's regenerating ministry of enabling people to hear God's word and believe. What is new is the indwelling ministry of the Spirit and the spiritualized view of the temple."
 — «Новизна состоит не в возрождающем служении Духа, дающем людям способность слышать слово Божие и веровать. Ново — обитающее служение Духа и одухотворённое понимание храма».
 Ссылка: https://www.goodreads.com/work/quotes/527122-god-s-indwelling-presence-the-holy-spirit-in-the-old-and-new-testaments
+Статус: `SECONDARY-QUOTE-SITE / BOOK-PAGE-HOLD`. Не цитировать дословно; держать как поисковый указатель к книге. Для статьи пользоваться W-4 conclusion или пересказывать как позицию Hamilton без кавычек.
 
-**W-6. Hamilton (цитируя Джона Фрейма) — определение обитания** — ВЕРИФИЦИРОВАНО (Goodreads quotes)
+**W-6. Hamilton (цитируя Джона Фрейма) — определение обитания** — QUOTE-SITE-ONLY / DO-NOT-DIRECT-QUOTE
 > "The indwelling of the Spirit is God's favorable presence abiding with those who enjoy His merciful establishment of a covenant relationship. John Frame explains, 'God is not merely present in the world; he is covenantally present. He is with his creatures to bless and to judge them in accordance with the terms of his covenant.'"
 — «Обитание Духа — это благосклонное присутствие Бога, пребывающее с теми, кто имеет милостиво установленные Им заветные отношения. Джон Фрейм поясняет: „Бог не просто присутствует в мире — Он присутствует заветно. Он со Своими творениями, чтобы благословлять и судить их по условиям Своего завета“».
 Ссылка: https://www.goodreads.com/work/quotes/527122-god-s-indwelling-presence-the-holy-spirit-in-the-old-and-new-testaments
+Статус: `SECONDARY-QUOTE-SITE / BOOK-PAGE-HOLD`; не использовать прямую цитату Frame/Hamilton без проверки по книге Hamilton и первоисточнику Frame.
 
 **W-7. Жан Кальвин, Institutes II.10.2 (пер. Battles)** — ВЕРИФИЦИРОВАНО
 > "The covenant made with all the patriarchs is so much like ours in substance and reality that the two are actually one and the same. Yet they differ in the mode of dispensation."
@@ -472,15 +476,17 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 — «Ветхий Завет открыто проповедовал Отца, Сына же — прикровеннее. Новый явил Сына и указал на Божество Духа. Ныне Дух Сам обитает среди нас и подаёт нам яснейшее удостоверение о Себе».
 Ссылка: https://www.newadvent.org/fathers/310231.htm (Or. 31.26)
 
-**W-10. Джон Оуэн, Pneumatologia, кн. III (Works, ed. Goold, vol. 3)** — ВЕРИФИЦИРОВАНО (фразы найдены в изд. «The Work of the Holy Spirit in Regeneration»)
+**W-10. Джон Оуэн, Pneumatologia, кн. III (Works, ed. Goold, vol. 3)** — SAFE CLOSURE 2026-08-01
 > "Both regeneration and the doctrine of it were under the Old Testament. All the elect of God, in their several generations, were regenerate by the Spirit of God."
 — «И возрождение, и учение о нём были под Ветхим Заветом. Все избранные Божии, в своих поколениях, были возрождены Духом Божиим».
-Ссылки: https://ccel.org/ccel/owen/pneum/pneum.toc.html ; epub: http://www.apuritansmind.com/wp-content/uploads/FREEEBOOKS/TheWorkoftheHolySpirit-JohnOwen.epub
+Ссылка: https://ccel.org/ccel/owen/pneum/pneum.i.vii.i.html
+Статус: `CCEL-HTML-VERIFIED / BOOK-III-CHAPTER-I-LOCATOR-LOCKED`; Goold/print page not claimed.
 
-**W-11. Оуэн, там же** — ВЕРИФИЦИРОВАНО (фраза найдена)
+**W-11. Оуэн, там же** — SAFE CLOSURE 2026-08-01
 > "Although the work of regeneration by the Holy Spirit was wrought under the Old Testament, even from the foundation of the world, and the doctrine of it was recorded in the Scriptures, yet the revelation of it was but obscure in comparison of that light and evidence which it is brought forth into by the gospel."
 — «Хотя дело возрождения Духом Святым совершалось под Ветхим Заветом, даже от основания мира, и учение о нём было записано в Писаниях, однако откровение о нём было лишь тусклым в сравнении с тем светом и очевидностью, в которые оно выведено Евангелием».
-Ссылки: те же, что W-10 (глава/страницу по Goold vol. 3 уточнить при fetch — предположительно кн. III, гл. 1).
+Ссылка: https://ccel.org/ccel/owen/pneum/pneum.i.vii.i.html
+Статус: `CCEL-HTML-VERIFIED / BOOK-III-CHAPTER-I-LOCATOR-LOCKED`; точная Goold pagination остаётся необязательной editorial check, не source-risk.
 
 **W-12. NET Bible, текстологическое примечание к Ин. 14:17** — ВЕРИФИЦИРОВАНО
 > "Some early and important witnesses (P66* B D* W 1 565 it) have ἐστιν (estin, 'he is') instead of ἔσται (estai, 'he will be') here… When one considers transcriptional evidence, ἐστιν is the more difficult reading… but it must be noted that both P66 and D were corrected from the present tense to the future."
@@ -633,7 +639,7 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 
 ## Открытые вопросы / что ещё копать
 
-1. **Hamilton Themelios — SAFE CLOSURE 2026-07-31 for HTML article.** The TGC/Themelios HTML article was read directly: spectrum positions and conclusion are available without PDF. Calvin on John 7:39 (W-8), Augustine Tract. 32 (W-15), and Gill on John 7:39 (W-16) also closed via open HTML. Still open inside this cluster: TrinJ 24 PDF if exact survey-page details are needed; Owen Goold page/chapter for W-10/W-11.
+1. **Hamilton Themelios — SAFE CLOSURE 2026-07-31 for HTML article.** The TGC/Themelios HTML article was read directly: spectrum positions and conclusion are available without PDF. Calvin on John 7:39 (W-8), Augustine Tract. 32 (W-15), and Gill on John 7:39 (W-16) also closed via open HTML. **2026-08-01 update:** Hamilton monograph rows W-3/W-5/W-6 are now explicitly downgraded to `SECONDARY-QUOTE-SITE / BOOK-PAGE-HOLD`; do not quote them directly from Goodreads. Still open inside this cluster: TrinJ 24 PDF if exact survey-page details are needed; Hamilton monograph page quotes remain separate book-access task.
 2. **Ferguson, The Holy Spirit (1996)** — добрать 1–2 дословные книжные цитаты со
    страницами (гл. 1 «The Holy Spirit and His Story», гл. 4 о Пятидесятнице): сейчас его
    позиция документирована только подкастами/лекциями.
@@ -647,12 +653,11 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 5. **Синодальная глосса «на них»** в Ин. 7:39 — найти историю (следует ли Синодальный
    здесь Елизаветинской/славянской традиции; ср. слав. «не у бо бе Дух Святый»). Мелкая,
    но эффектная деталь для русского читателя.
-6. **Русские переводы источников:** существует ли изданный русский перевод Pneumatologia
-   Оуэна и «The Holy Spirit» Фергюсона (изд. «Евангелие и Реформация», «Левит»?) — чтобы
-   дать читателю русские ссылки; иначе — наши переводы с пометкой.
-7. **Кандидат на расширение:** Geerhardus Vos о Пятидесятнице (Biblical Theology; «нечто
+6. **Owen Pneumatologia — SAFE CLOSURE 2026-08-01 at CCEL HTML level.** W-10/W-11 are now locked to CCEL Book III, Chapter I (`pneum.i.vii.i.html`) for the Old-Testament-regeneration statements. Remaining optional task: Goold/print pagination only if the final article wants print edition page numbers. Русский перевод Pneumatologia всё ещё нужно проверить отдельно; пока это наши переводы с пометкой.
+7. **Warfield — SAFE CLOSURE 2026-08-01.** Monergism HTML page was read directly for the two opening continuity phrases; publication metadata still from the article heading, print page not claimed.
+8. **Кандидат на расширение:** Geerhardus Vos о Пятидесятнице (Biblical Theology; «нечто
    лучшее» Евр. 11:40) и John Owen о новозаветном «излиянии» как эсхатологическом даре —
    усилило бы мостик между позициями A и C «изнутри» одной традиции.
-8. **Связь с III.2:** согласовать формулировку про Иез. 36 (см. 62_R1, открытый вопрос
+9. **Связь с III.2:** согласовать формулировку про Иез. 36 (см. 62_R1, открытый вопрос
    №4): в III.2 — «обетование, которое уже дышит в Псалтири и исполняется в новом
    завете»; в бонусе — полный разбор. Проверить при вёрстке, что тексты не противоречат.

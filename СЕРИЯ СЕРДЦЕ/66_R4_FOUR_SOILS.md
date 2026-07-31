@@ -508,7 +508,7 @@ goes beyond him» (1621).
 здравый христианин идёт дальше него».
 Источник: титульный лист изд. 1621; Hail & Fire reprint:
 https://www.hailandfire.com/library_books/H%26F_Taylor%28Thomas%29_ParableoftheSower1621.pdf
-**ВЕРИФИЦИРОВАНО** (титул; сам текст цитировать после сверки по PDF — досье №46).
+**SAFE CLOSURE 2026-08-01.** Титул и Hail & Fire reprint metadata прочитаны в PDF; основной текст сверх первых страниц закрыт по University of Michigan EEBO/TCP CC0 fulltext (not page images), `A13547.0001.001/1:4`, pages 118–120 and 261–262. Exact anchors: (1) stony ground lacks sufficient “earth, roots, and moisture”; (2) “By rooting here I understand stability, certainty, and sincerity of faith and other graces”; (3) good ground “receiues willingly, retaines constantly, and perseueres fruitfully vnto the end.” Статус: `HAIL&FIRE-PDF-METADATA-VERIFIED + EEBO-CC0-FULLTEXT-VERIFIED / PAGE-LOCATOR-LOCKED`; page-image verification not claimed.
 
 ### Е. Проповедники
 
@@ -570,7 +570,7 @@ may be no deeply-rooted work in our souls.»
 Источник: J. C. Ryle, Expository Thoughts on the Gospels: Matthew, гл. 13. CCEL:
 https://ccel.org/ccel/ryle/matthew/matthew.xiv.i.html ; зеркала: gracegems.org/Ryle/m13.htm,
 studylight.org/commentaries/eng/ryl/matthew-13.html
-**ВЕРИФИЦИРОВАНО**.
+**CCEL/GRACEGEMS-HTML-VERIFIED / MATTHEW-13-LOCATOR-LOCKED (safe closure 2026-08-01)**; print page not claimed.
 
 **G5. Ryle** (о терниях, Мк. 4 / Мф. 13): thorny-ground hearers — «the grand secret of
 their condition is the world»: заботы, обманчивость богатства и похоти прочего «prevent
@@ -578,7 +578,7 @@ the word having its full effect on their souls».
 — «великий секрет их состояния — мир»: заботы и богатство «не дают слову произвести
 полное действие в их душах».
 Источник: Ryle, Expository Thoughts (Mk 4 / Mt 13). gracegems.org/Ryle/mark04.htm
-**ВЕРИФИЦИРОВАНО частично** (по выдаче gracegems; абзац сверить при написании).
+**GRACEGEMS-HTML-VERIFIED / MARK-4-LOCATOR-LOCKED (safe closure 2026-08-01)**; print page not claimed.
 
 ### З. Отцы
 
@@ -686,15 +686,15 @@ but of them who are unwilling to be changed.»
 
 1. **Whitefield F2 — SAFE CLOSURE 2026-07-31 as attributed-only.** Do not direct-quote without primary Journals/letter locator. Use Spurgeon F1 / Calvin B2 as verified substitutes.
 2. **Calvin Harmony B2 — SAFE CLOSURE 2026-07-31.** Полный абзац по temporary faith / stony ground сверён по CCEL `calcom32.ii.xix.html`. Остаётся только отдельная optional задача: если нужна специальная фраза по Лк. 8:15 («honest and good heart»), добрать её в том же CCEL-разделе.
-3. **France G1 / Carson G2** — проставить точные страницы по бумажным изданиям (NICNT 2007;
+3. **Taylor (1621) — SAFE CLOSURE 2026-08-01 at open-text level.** Hail & Fire PDF metadata/title was read; exact stony/good-soil anchors are now locked via University of Michigan EEBO/TCP CC0 fulltext, pages 118–120 and 261–262. Remaining optional task: page-image/modernized Hail & Fire paragraph comparison only if the final article wants modern spelling or image-level citation.
+4. **Ryle G4/G5 — SAFE CLOSURE 2026-08-01.** Matthew 13 paragraph verified via CCEL and GraceGems; Mark 4 thorny-ground paragraph verified via GraceGems.
+5. **France G1 / Carson G2** — проставить точные страницы по бумажным изданиям (NICNT 2007;
    EBC vol. 8) перед публикацией; у France взять и его замечание о названии «parable of
    the soils».
-4. **Taylor (1621)** — вычитать по Hail & Fire PDF 2–3 дословных абзаца о каменной и
-   доброй почве (готовый пуританский монограф по теме, пока используется только титул).
-5. **Русские переводы**: проверить, как Институты III.2.11–12 звучат в русском издании
+6. **Русские переводы**: проверить, как Институты III.2.11–12 звучат в русском издании
    (изд. РГГУ, пер. А. Д. Бакулова) — для цитирования по-русски со ссылкой на страницу;
    аналогично русское издание «Путешествия Пилигрима» для Pliable.
-6. **Лк. 8:15 текстология/лексика**: καλῇ καὶ ἀγαθῇ на фоне греческого идеала καλὸς
+7. **Лк. 8:15 текстология/лексика**: καλῇ καὶ ἀγαθῇ на фоне греческого идеала καλὸς
    κἀγαθός — стоит ли давать в статье это культурное эхо (France обсуждает) или это
    перегруз.
 7. **Связка с V.3**: согласовать сетку осей (мотив/оружие/плод) со статьёй «Две борьбы»,

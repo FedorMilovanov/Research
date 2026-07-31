@@ -539,9 +539,14 @@ PDF для постраничных цитат, см. «Открытые воп�
 ИЗ величия делает вывод о неисчерпаемости милости — обратный, более сильный ход, чем
 простое «несмотря на».
 [Источники: monergism.com/thethreshold/sdg/goodwin/The_Heart_of_Christ_-_Thomas_Goodwin.pdf;
-digitalpuritan.net — оба URL уже на файле в досье №13 серии; полнотекстовые
-постраничные цитаты о «величии/славе» требуют повторного прохода — WebFetch был
-недоступен в этой сессии].
+digitalpuritan.net — оба URL уже на файле в досье №13 серии].
+**SAFE CLOSURE 2026-08-01:** Monergism PDF text was read directly (not page-image verified).
+Quote-safe short anchors now available without claiming print pagination: Introduction — Christ’s heart,
+“in respect of pity and compassion, remains the same it was on earth”; Part II / Heb. 4:15 — the text
+“sets out the frame and workings” of Christ’s heart and, as it were, lets us “feel how his heart beats
+and his bowels yearn towards us, even now he is in glory”; same Part II — Christ “retains one tender
+part and bare place in his heart still unarmed” to be touched with our miseries. Статус:
+`MONERGISM-PDF-TEXT-VERIFIED / INTRODUCTION-AND-PART-II-LOCATOR-LOCKED`; page-image / print-page not claimed.
 
 **Джон Гилл** (Particular/Reformed Baptist, 1697–1771) — *Exposition of the Entire
 Bible*, наш прямой конфессиональный предшественник (Гилл — баптист лондонской
@@ -596,11 +601,12 @@ Bible*, наш прямой конфессиональный предшеств�
 традиции; часто используется реформатскими баптистами как надёжный экзегет)
 
 *Expository Thoughts on the Gospels*:
-- на Ин. 2:17 — отмечает, что бывают случаи, когда «оправданно быть полностью
-  поглощённым и как бы съеденным ревностью о предмете, в котором затронута слава
-  Божия»; ученики «вспомнили» этот текст именно в момент, когда наблюдали своего
-  Учителя, выгоняющего торгующих, как разительную иллюстрацию духа, которым Он был
-  движим [ВЕРИФИЦИРОВАНО ЧАСТИЧНО, сниппет с фразами в кавычках];
+- на Ин. 2:12–25 — **SAFE CLOSURE 2026-08-01 with caveat** по GraceGems open text `j02.htm`:
+  Ryle’s verified emphasis is Christ’s righteous/holy wrath against irreverence in the house of God,
+  and John 2:24–25 as proof that Christ perfectly knows the human heart. The earlier snippet wording
+  about being “eaten/absorbed by zeal” was **not** seen in this readback; do not use that as a Ryle
+  direct quote unless another primary Ryle locator is found. Статус: `GRACEGEMS-HTML-VERIFIED /
+  JOHN-2-12-25-LOCATOR-LOCKED / ZEAL-SNIPPET-DO-NOT-DIRECT-QUOTE`;
 - на Мф. 23 — **SAFE CLOSURE 2026-07-31** по GraceGems open text `m23.htm`: Ryle называет
   главу «withering exposure» и «sharp rebuke» книжников и фарисеев; формула закрыта
   дословно: *“It is a striking proof that it is possible for the most loving heart to use
@@ -801,10 +807,10 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 | 11 | Дан. 7:9 / 10:5–6 | фон образа (белые волосы, очи-факелы) | ВЕРИФИЦИРОВАНО | biblehub.com, intertextual.bible |
 | 12 | J. Owen, *Glory of Christ*, гл. VIII | «full of outward terror, because of the giving of the fiery law» | ВЕРИФИЦИРОВАНО | ccel.org/ccel/owen/glory/glory.i.xi.html |
 | 13 | T. Goodwin, *Heart of Christ*, подзаголовок | полное название трактата | ВЕРИФИЦИРОВАНО | banneroftruth.org |
-| 14 | T. Goodwin, тезис о величии+нежности | пересказ содержания | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | monergism.com PDF (URL известен, не открыт в этой сессии) |
+| 14 | T. Goodwin, тезис о величии+нежности | short anchors from Introduction + Part II / Heb. 4:15 | **SAFE CLOSURE 2026-08-01** — Monergism PDF text read directly; page-image not claimed | monergism.com/thethreshold/sdg/goodwin/The_Heart_of_Christ_-_Thomas_Goodwin.pdf |
 | 15 | J. Calvin, комм. на Ис. 63:4 | пересказ содержания | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | ccel.org/ccel/calvin/calcom16 |
 | 16 | J. Gill, Exposition | Rev. 1:17; 2:23; 5:5–6; 19:15 closed; Isa. 63:1 not closed | **PARTLY CLOSED 2026-07-31** — BibleStudyTools open text verified for Revelation loci | biblestudytools.com/commentaries/gills-exposition-of-the-bible/ |
-| 17 | J. C. Ryle, Ин. 2:17 и Мф. 23 | Matt. 23 stern-reproof line closed; John 2 zeal note still partial | **PARTLY CLOSED 2026-07-31** — GraceGems `m23.htm` verified | gracegems.org/Ryle/m23.htm |
+| 17 | J. C. Ryle, Ин. 2 и Мф. 23 | Matt. 23 stern-reproof line closed; John 2 temple/heart-knowledge paragraph closed with caveat; old zeal-snippet not direct-quote-safe | **PARTLY CLOSED 2026-07-31 / 2026-08-01** — GraceGems `m23.htm` and `j02.htm` verified | gracegems.org/Ryle/m23.htm ; gracegems.org/Ryle/j02.htm |
 | 18 | 1689 LBCF гл. 8, 32 | Христос-Судия, Последний суд | ВЕРИФИЦИРОВАНО (устойчивый конфессиональный текст) | the1689confession.com, founders.org |
 | 19 | R. C. Sproul, *Holiness of God* (5 цитат) | см. раздел «Свидетели» | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | ligonier.org/posts/great-quotes-holiness-god, billmuehlenberg.com |
 | 20 | J. MacArthur / gty.org | `90-475` Thyatira and `66-71` Glorious Return Part 2 closed; other GTY links locator-level | **PARTLY CLOSED 2026-07-31** — official transcripts verified for two quote-cards | gty.org/sermons/90-475 ; gty.org/sermons/66-71 |
@@ -947,15 +953,12 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 
 0. **Gill Revelation comments — SAFE CLOSURE 2026-07-31.** The previously `ВЕРИФИЦИРОВАНО ЧАСТИЧНО` Gill notes on Rev. 1:17; 2:23; 5:5–6; 19:15 were checked against BibleStudyTools public-domain Gill pages and are now usable as open-text paraphrase/short quote with verse-page URL. Print page and Isaiah 63:1 locator are not claimed.
 0b. **MacArthur / GTY subset — SAFE CLOSURE 2026-07-31.** Official transcripts for `90-475` Thyatira and `66-71` Glorious Return Part 2 were read; those two GTY quote-cards are now usable as official-ministry transcript support. Other GTY Revelation links remain locator-level unless separately checked.
-0c. **Ryle on Matthew 23 — SAFE CLOSURE 2026-07-31.** The stern-reproof quote was verified against GraceGems `m23.htm`; John 2 zeal note remains not separately closed.
+0c. **Ryle on Matthew 23 — SAFE CLOSURE 2026-07-31.** The stern-reproof quote was verified against GraceGems `m23.htm`. John 2 is separately handled in 0f: temple/heart-knowledge paragraphs closed, old zeal-snippet remains do-not-direct-quote.
 0d. **GTY / Jeremiah Johnson critique — SAFE CLOSURE 2026-07-31.** Official GTY blog `B210315` was read; the “tame the Lion” line is now exact-source verified. Use only as conservative critique context, not as doctrinal foundation.
+0e. **Goodwin short anchors — SAFE CLOSURE 2026-08-01.** Monergism PDF text was read for Introduction and Part II / Heb. 4:15. Use short anchors with `PDF-TEXT` status only; do not claim print/page-image verification.
+0f. **Ryle John 2 — SAFE CLOSURE 2026-08-01 with caveat.** GraceGems `j02.htm` was read for temple-cleansing and Christ-heart-knowledge paragraphs. Old zeal-snippet wording remains do-not-direct-quote unless separately located.
 
-1. **Точные постраничные цитаты Гудвина** о величии+нежности (majesty/glory vs tender
-   heart) — PDF найден (monergism.com, digitalpuritan.net — оба URL уже в досье №13
-   серии), но не открыт в этой сессии из-за блокировки WebFetch. Нужен повторный проход
-   с рабочим фетчем для 2–3 дословных абзацев с указанием части/главы трактата (Goodwin
-   делит книгу на части по стихам — Part I на Мф. 12:20 и др.; Part III специально о
-   том, как величие небесной славы Христа согласуется с милостью).
+1. **Гудвин — short anchors closed, long/page citations still optional.** 2026-08-01 Monergism PDF text readback gives quote-safe short anchors from Introduction and Part II / Heb. 4:15, but not page-image or print pagination. If the article wants long block quotations or page numbers, do a separate page-image/edition pass (DigitalPuritan/Monergism/Banner edition comparison).
 2. **Sproul, *Holiness of God*** — все 5 извлечённых цитат идут через вторичные
    агрегаторы. Нужно закрепить номер страницы/главы по официальному изданию (Tyndale
    House / David C. Cook, разные годы переиздания — обратить внимание, что пагинация
