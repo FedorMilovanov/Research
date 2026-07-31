@@ -1,0 +1,84 @@
+{
+  "snapshot_at": "2026-07-31T17:40:00+03:00",
+  "project": "РУССКИЕ БАПТИСТЫ",
+  "canonical_master": {
+    "drive_id": "1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM",
+    "url": "https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit"
+  },
+  "emergency_folder": {
+    "drive_id": "1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa",
+    "url": "https://drive.google.com/drive/folders/1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa"
+  },
+  "live_handoff": {
+    "drive_id": "1G-9jYTIURIC3-YA-6YdP67JejkBxZDPhj1b0yi3gm0o",
+    "url": "https://docs.google.com/document/d/1G-9jYTIURIC3-YA-6YdP67JejkBxZDPhj1b0yi3gm0o/edit"
+  },
+  "final_snapshots": [
+    {
+      "name": "MASTER ARCHIVE CATALOG",
+      "drive_id": "1tfS6Ephz1bNLublaRjuNvP032eJyo-Yr8uc6ZvSpu_g"
+    },
+    {
+      "name": "EMERGENCY HANDOFF",
+      "drive_id": "1AazKEDnNhZe4oHhyOHilfangYpFTpcDMyZReKTYAVJo"
+    },
+    {
+      "name": "ГОСТЬ SOURCE REGISTER",
+      "drive_id": "1pEJLVzPK8amtpQIund6dHZ3b-scMTx_VDuF9VFPEnpc"
+    },
+    {
+      "name": "БРАТСКИЙ ЛИСТОК AUDIT",
+      "drive_id": "12FnPpK7Cwsuj4iIFcjLM8s0nzOVrmB-egoUp1aYSnQw"
+    },
+    {
+      "name": "ГОСТЬ REQUEST REGISTER",
+      "drive_id": "1dXq6ZAZbXm6IAN1U_LTDBnI72_PZTBwZ6EEiONzgnBs"
+    }
+  ],
+  "control_counts": {
+    "institutional_requests_total": 40,
+    "institutional_requests_sent_or_response": 9,
+    "institutional_requests_ready_or_hold": 31,
+    "slovo_istiny_1918_local_physical_objects": 3,
+    "slovo_istiny_1918_total_physical_objects": 8,
+    "guest_local_unique_issues": 4,
+    "guest_source_contexts": 70,
+    "guest_lost_attachments": 57,
+    "guest_exact_title_duplicates": 0,
+    "bratskiy_listok_nominal_positions": 60,
+    "bratskiy_listok_local_positions": 22,
+    "bratskiy_listok_nonlocal_positions": 38,
+    "bratskiy_listok_lost_attachments": 15,
+    "bratskiy_listok_no_known_binary": 23,
+    "bratskiy_extraction_p1": 13,
+    "bratskiy_extraction_p2": 20,
+    "bratskiy_extraction_p3": 5,
+    "baptist_1909_local_issues": 23,
+    "baptist_1909_nominal_issues": 24
+  },
+  "critical_conflicts": [
+    {
+      "object": "Манна 1918",
+      "status": "SUSPENDED",
+      "side_a": "RSL response: Moscow / Slovo istiny",
+      "side_b": "NEB parent MARC: Petrograd / journal Gost",
+      "resolution_required": "title page or colophon image"
+    },
+    {
+      "object": "Братский листок 1906 source-named May",
+      "status": "RESOLVED",
+      "resolution": "printed parent slot is no. 6; missing slot is no. 5"
+    }
+  ],
+  "transport_limits": [
+    "upload.wikimedia.org DNS blocked in working container",
+    "mbchurch.ru DNS blocked in working container",
+    "stunda.org DNS blocked in working container",
+    "viewer or file metadata must not be promoted to IN DRIVE without bytes"
+  ],
+  "github": {
+    "repository": "FedorMilovanov/Research",
+    "branch": "main",
+    "entrypoint": "00_RUSSIAN_BAPTISTS_ARCHIVE.md"
+  }
+}
