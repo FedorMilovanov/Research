@@ -1,0 +1,1 @@
+Temporary trigger registration marker for the one-shot Gost v130 workflow. This file must be removed after the successful research commit.
