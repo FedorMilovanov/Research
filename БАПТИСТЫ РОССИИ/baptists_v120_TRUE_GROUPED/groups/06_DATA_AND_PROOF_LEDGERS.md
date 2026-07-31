@@ -3884,3 +3884,13 @@ Request only four elements from the publisher archive: the cover, contents, page
 - exact-citation profile: https://zarubezhje.narod.ru/gi/g_046.htm
 - MHC holding inventory: https://www.mharchives.ca/holdings/serials/r.htm
 - aggregate catalog with coverage gap: https://emigrantika.imli.ru/cat2010/715-bookiv
+
+## v133 — Seiatel Istiny 1926 no.2: page-map, issue trace and publisher-history routes
+
+Three non-duplicate evidence routes now narrow the recovery of the exact citation `Сеятель Истины`, 1926, no.2, p.15.
+
+1. N. V. Potapova's author/university full-text monograph supplies exact article, issue and page citations across the Hartford run for 1919–1922 and reproduces the first `Сеятель Истины` issue on book p.269. The accessible text does not identify Gusaruk, `Воскресная школа`, or the target 1926 page. Its value is the source-holder and page-map route.
+2. G. P. Vins's memoir reproduces a notice explicitly attributed to the February 1926 issue and also cites September and December 1926 material. This is an independent content trace for the physical February issue, but it gives no printed page, cover, colophon, scan provenance or Gusaruk connection.
+3. The official RUEBU conference report states that a 100-year history of the journal, assembled from several authors and containing little-known details, was available from the publisher. The old archive navigation also exposes an unpopulated `1926–1935` branch. The report and its bibliography/holding list are therefore exact acquisition targets, not substitutes for the issue.
+
+No status upgrade is permitted: Gusaruk's role, the appendix start year and the wording of p.15 remain `HOLD`. The exact dual recovery step is to request from RUEBU the cover, contents, p.15 and final colophon of no.2/1926 together with the centenary report/source list, and to ask Potapova/SakhGU to identify the US holding used for the 1919–1926 run and any surviving control image or transcription of p.15.
