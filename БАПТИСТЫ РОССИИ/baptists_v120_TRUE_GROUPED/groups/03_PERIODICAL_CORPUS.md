@@ -13758,3 +13758,20 @@ Nos. 3–10 remain unresolved. `Меч духовный` is a title/author lead 
 Full evidence and link registry:
 - [Drive research synthesis](https://docs.google.com/document/d/1-gnYokX17_0EVa4t6-6kc6R3OGWD6OD4Y6GnocXjADs/edit)
 - [Drive source register](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit)
+
+## v130 — `Ewangeliczny Chrześcijanin` April 1939 page map
+
+**Object:** JBC edition `680480`, R.6, nr 1 (April 1939), official 32-page PDF.  
+**Status:** `PRIMARY PAGE-MAPPED TEXT LAYER — VISUAL SCREENSHOT PENDING`; this is a control periodical, not an issue/continuation of `Гость`.
+
+| printed page | controlled use | gate |
+|---:|---|---|
+| 23–24 | title of the Kupsch rebuttal; quotation of the four-group scheme; wording `W. Fetler ... (Husaruk)` | exact quotation requires visual card |
+| 25 | source chain: Świątkowski 1937, March 1937 issue, Russian ministerial decisions of 25 Jan/15 Feb 1905, `Zwiastun Ewangeliczny`, Swiss church press, Russian 1909 press; legal correction of the Union/Association and Jesakow | source leads are not yet all inspected |
+| 26–27 | component statistics for Union and Association; printed totals; statement that they are two independent associations coordinated in the Community | preserve `27,383/27,380` and `401/400` conflicts |
+| 28 | announcement of XII congress for 28–30 May 1939 in Równe | visual check pending |
+| 31 | unnamed-society warning; reproduced MWRiOP notice dated 26 Jan 1939, address Szeroka 26, board elected 18 May 1937 at XI congress | statute-approval date is OCR-garbled and must not be normalized |
+
+### Official-object correction
+
+JBC edition `680475` is December 1937 №5. IPN footnotes calling that object 1938 №2 are a routing error; official October 1938 №2 is edition `680477`.

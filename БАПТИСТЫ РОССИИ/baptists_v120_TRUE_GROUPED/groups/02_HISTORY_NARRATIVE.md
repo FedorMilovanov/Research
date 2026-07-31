@@ -1247,3 +1247,21 @@ The complete source map and 163-URL register are stored in Drive:
 - [source register](https://docs.google.com/spreadsheets/d/1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4/edit)
 
 Do not promote `catalog`, `viewer`, `direct URL`, `finding aid`, `OCR snippet` or `secondary citation` to `file_access_verified`, `page_count_verified` or `quote_card_verified` without the missing evidence step.
+
+## v130 — JBC 1937–1939: citation routing and congress-number control
+
+### Edition 680475 must not be cited as 1938 №2
+
+Official Jagiellonian Digital Library metadata identifies edition `680475` as **R.4, nr 5 (grudzień 1937)**. The IPN study's footnotes 95–96 point to that same edition but label it `1938, nr 2`; the official JBC object for **R.5, nr 2 (październik 1938)** is edition `680477`. This is preserved as a `CITATION_MAPPING_CONFLICT`, not silently corrected inside the scholar's prose. Event/page claims routed through those footnotes must be checked against the actual pages before use.
+
+### 1937 congress numbering remains unresolved
+
+The IPN narrative calls the Warsaw meeting of 15–19 May 1937 the jubilee **10th congress**. The April 1939 primary issue reproduces a Ministry notice stating that the board was elected on 18 May 1937 at the **XI congress**; the same issue announces the **XII congress** for 28–30 May 1939. Therefore the repository now carries:
+
+`CONGRESS NUMBERING CONFLICT — SCHOLARLY 10TH VS PRIMARY NOTICE XI; XII ANNOUNCED FOR 1939`.
+
+Possible explanations (different counting conventions, an extraordinary congress, or a secondary numbering slip) are hypotheses only. Congress minutes or annual reports are required before normalization.
+
+### Husaruk and legal-organizational boundary
+
+On p.24 the Kupsch quotation prints `W. Fetler ... (Husaruk)`. The parenthesis is evidence of an association/correction in the 1939 polemic, but it does not by itself establish Husaruk's office. `HUSARUK ROLE HOLD` remains. On pp.25–27 the issue explicitly replaces personal “groups” with the legalized Union and Mutual Aid Association, names `ks. L. Jesakow` at the head of the latter, and describes the two bodies as independent religious associations joined in a coordinating Community.

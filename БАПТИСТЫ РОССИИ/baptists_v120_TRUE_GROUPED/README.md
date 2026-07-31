@@ -144,3 +144,10 @@ v120 continues the grouped architecture. It adds an early BRATSKII LISTOK verifi
 ## v130 — «Братский листок» stage16
 
 15 issue-level evidence positions, 8 content-unknown issues и единый BAN holding route. Интеграция marker-based и retry-safe; бинарный master не менялся.
+
+## v130 update — JBC citation routing and congress numbering
+
+- Added a page map for the April 1939 JBC control issue without importing it into the `Гость` corpus.
+- Corrected source routing: edition 680475 is December 1937 №5, not 1938 №2.
+- Preserved the 1937 congress-number conflict (10th / XI; XII announced for 1939) as unresolved.
+- Kept Husaruk and `Воскресная школа` editorship/holding claims behind their existing evidence gates.

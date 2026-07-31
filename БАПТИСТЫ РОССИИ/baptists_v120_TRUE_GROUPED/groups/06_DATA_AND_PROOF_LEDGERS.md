@@ -3849,3 +3849,14 @@ These two Drive objects absorb PASS 01–06. Do not add six PASS reports or thei
 ### Universal gate
 
 `catalog card ≠ file`; `viewer ≠ file`; `direct URL ≠ downloaded binary`; `finding aid ≠ folder contents`; `page count ≠ OCR`; `text extraction ≠ quote card`; `library response ≠ received scan`.
+
+## v130 — JBC citation and visual-proof delta
+
+| ID | item | new status | what is proved | still blocked |
+|---|---|---|---|---|
+| `GOST-130-001` | JBC April 1939 №1 | `primary_text_page_mapped_visual_pending` | pp.23–28 and 31 mapped to Kupsch/Husaruk, source chain, legal correction, statistics, congress notice and ministry notice | screenshots/page cards |
+| `GOST-130-002` | JBC edition 680475 | `official_metadata_citation_conflict` | official object = Dec 1937 №5; IPN labels same edition 1938 №2 | cited content pages must be inspected before reassignment |
+| `GOST-130-003` | May 1937 congress | `numbering_conflict_unresolved` | IPN = 10th; reproduced ministry notice = XI; April 1939 announces XII | congress minutes/counting convention |
+| `GOST-130-004` | `Воскресная школа` | `secondary_series_record_official_holding_not_located` | appendix existed in 1934; secondary records repeat 24 issues with conflicting start year | no official issue-level shelfmark/file found; Gusaruk role remains HOLD |
+
+**No upgrade:** parsed PDF text is not `quote_ready`; failed screenshot retrieval is recorded as a visual blocker, not ignored.
