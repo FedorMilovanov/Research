@@ -332,8 +332,7 @@ Carson, Exegetical Fallacies, гл. 1 — общее правило, без ци
 стыда. Так Авессалом возненавидел нечистоту Амнона — за то, что она принесла позор
 ему и его сестре».
 
-Сопутствующий принцип универсальности (ВЕРИФИЦИРОВАНО ЧАСТИЧНО — через поисковую сводку;
-сверить пунктуацию по PDF):
+Сопутствующий принцип универсальности (SAFE CLOSURE 2026-07-31 — CCEL `almost.iii.viii.html`):
 
 > «he that hates sin as sin, hates all sin; and he that obeys the command as the express
 > will of God, obeys every command.»
@@ -342,7 +341,7 @@ Carson, Exegetical Fallacies, гл. 1 — общее правило, без ци
 как ясно выраженной воли Божьей — слушается всякой заповеди». (Параллель — второе общее
 правило Owen: универсальность послушания; и Пс. 118:6 «взираю на ВСЕ заповеди».)
 
-Анализ Агриппы (ВЕРИФИЦИРОВАНО ЧАСТИЧНО — формула из поисковой выдачи по тексту Mead):
+Анализ Агриппы (SAFE CLOSURE 2026-07-31 — CCEL introduction `almost.iii.i.html`):
 
 > «though he would not be converted, yet he could not but be convinced; his conscience
 > was touched, though his heart was not renewed.»
@@ -359,10 +358,11 @@ Carson, Exegetical Fallacies, гл. 1 — общее правило, без ци
 самого себя». — Это ось 3 (отношение к Богу) в одной строке: пока «я» не низложено,
 даже религиозная борьба служит «я».
 
-О ложном мире (ВЕРИФИЦИРОВАНО ЧАСТИЧНО — пересказ близко к тексту, сверить):
-почти-христианин успокаивает совесть — но не кровью Христа; его мир «не от умилостивления
-Христова, а от формального исповедания» (peace «not flowing from Christ's propitiation,
-but rising from a formal profession»). Прямая антитеза молитве мытаря: ἱλάσθητί μοι.
+О ложном мире (SAFE CLOSURE 2026-07-31 — CCEL `almost.iii.viii.html`):
+почти-христианин успокаивает совесть — но не кровью Христа; Mead прямо пишет: “it is not
+a peace flowing from Christ’s propitiation, but a peace rising from a formal profession,
+not a peace of Christ’s giving, but a peace of his own making”. Прямая антитеза молитве
+мытаря: ἱλάσθητί μοι.
 
 **Guardrail (из досье 44, повторить в статье):** Mead — против ложного мира, не против
 надломленной трости. Не применять 20 ступеней как молот к слабому верующему; в паре
@@ -559,8 +559,7 @@ https://www.ccel.org/ccel/calvin/institutes.v.iv.html
 2. **John Bunyan**, A Treatise of the Fear of God (досье 58, verbatim): таксономия
    страхов — страх, «гонящий человека ПРОЧЬ от Бога» (Адам, Каин) vs сыновний страх.
    Критерий: куда страх ведёт. Готовая баптистская параллель к оси 4.
-3. **Сперджен** — проповеди на Лк. 18:9–14 и о ложном покаянии: кандидаты для украшения,
-   в этом прогоне не верифицированы (см. Открытые вопросы).
+3. **Сперджен** — SAFE CLOSURE 2026-07-31: official Spurgeon Library sermon “A Sermon for the Worst Man on Earth” (MTP vol. 33, Luke 18:13, 1887) verified. It supplies a Baptist preaching voice on the publican: “God be merciful to me a sinner” as “pure, unadulterated prayer”, “full of confession of sin”, and the publican as “the sinner”. URL: https://www.spurgeon.org/sermons/a-sermon-for-the-worst-man-on-earth . Print page not claimed.
 
 ### Г. Современные консервативные
 
@@ -591,8 +590,7 @@ https://sacred-texts.com/chr/augconf/aug08.htm ; https://www.ccel.org/ccel/augus
 — Портрет борьбы совести изнутри: совесть требует, воля саботирует; человек «борется»
 с грехом так, чтобы не победить. Обращение Августина (VIII.12) — иллюстрация перелома:
 борьбу завершает не решимость, а Слово («tolle, lege» → Рим. 13:13–14) и благодать.
-Смежная формула VIII.9.21 о воле, приказывающей себе и не слушающейся, — кандидат
-[НЕ ВЕРИФИЦИРОВАНО в этом прогоне].
+Смежная формула VIII.9.21 о воле, приказывающей себе и не слушающейся, — SAFE CLOSURE 2026-07-31 по CCEL Schaff/NPNF: “The mind commands the body, and it obeys forthwith; the mind commands itself, and is resisted.” Статус: `CCEL-NPNF-HTML-VERIFIED / BOOK-CHAPTER-SECTION-LOCKED`.
 
 ### Е. Jonathan Edwards, «A Treatise Concerning Religious Affections» (1746) — полные списки
 
@@ -606,9 +604,7 @@ Evans-имprint 1746: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idn
 НО ни высота, ни жар аффектов сами по себе ничего не доказывают. Для нашей статьи
 Эдвардс — «весы», на которых взвешиваются обе борьбы.
 
-**Part II — двенадцать НЕДОСТОВЕРНЫХ знаков** («ни за, ни против»; формулировка знака 1
-ВЕРИФИЦИРОВАНА дословно; остальные — краткая передача по CCEL/TGC-обзору, дословные
-заголовки сверить по CCEL при вычитке):
+**Part II — двенадцать НЕДОСТОВЕРНЫХ знаков** («ни за, ни против»; SAFE CLOSURE 2026-07-31: полный список заголовков Part II сверён по CCEL TOC `affections.toc.html`; русские пункты ниже остаются краткой передачей, но английские title-locators больше не являются открытым вопросом):
 
 1. Что религиозные аффекты очень велики и подняты очень высоко. — Verbatim: «It is no
    sign one way or the other, that religious affections are very great, or raised very
@@ -632,8 +628,7 @@ Evans-имprint 1746: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idn
 опыта, ревность, уверенность, впечатление на церковь. Эдвардс выбивает все двенадцать
 опор разом — и Mead (20 ступеней) с ним смыкается.
 
-**Part III — двенадцать ДОСТОВЕРНЫХ знаков благодатных аффектов** (краткие формулировки;
-знаки 6 и 11 верифицированы дословно, остальные — передача по CCEL/TGC, сверить):
+**Part III — двенадцать ДОСТОВЕРНЫХ знаков благодатных аффектов** (SAFE CLOSURE 2026-07-31: полный список заголовков Part III сверён по CCEL TOC `affections.toc.html`; знаки 6 и 11 дополнительно верифицированы дословно в теле, остальные ниже — краткая русская передача CCEL title-locators):
 
 1. Они рождаются от духовных, сверхъестественных, божественных воздействий на сердце
    (новый источник, не разогретая природа).
@@ -725,19 +720,18 @@ Evans-имprint 1746: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idn
    made Absalom hate Amnon's uncleanness…») — ступень 5 — https://gracequotes.org/author-quote/matthew-mead/ ;
    gracegems — **ВЕРИФИЦИРОВАНО**.
 4. **Mead** — «he that hates sin as sin, hates all sin; and he that obeys the command as
-   the express will of God, obeys every command» — ступень 5/18 — CCEL
-   https://ccel.org/ccel/mead_matthew/almost.iii.ii.html — **ВЕРИФИЦИРОВАНО ЧАСТИЧНО**
-   (через поисковую сводку; сверить пунктуацию по PDF).
-5. **Mead** — «though he would not be converted, yet he could not but be convinced; his
-   conscience was touched, though his heart was not renewed» (об Агриппе) — вступление —
-   Monergism PDF — **ВЕРИФИЦИРОВАНО ЧАСТИЧНО** (сводка близко к тексту).
+   the express will of God, obeys every command» — Use of Caution, §1 — CCEL
+   https://ccel.org/ccel/mead_matthew/almost.iii.viii.html — **ВЕРИФИЦИРОВАНО по CCEL (safe closure 2026-07-31)**.
+5. **Mead** — «Though he would not be converted, yet he could not but be convinced; his
+   conscience was touched, though his heart was not renewed» (об Агриппе) — Introduction —
+   https://ccel.org/ccel/mead_matthew/almost.iii.i.html — **ВЕРИФИЦИРОВАНО по CCEL (safe closure 2026-07-31)**.
 6. **Mead** — «He that was never truly cast out of himself, can have no higher end than
    himself.» — раздел о причинах остановки almost-christian — CCEL/gracegems —
    **ВЕРИФИЦИРОВАНО** (точная фраза в выдаче).
-7. **Mead** — мир почти-христианина «не от умилостивления Христова, а от формального
-   исповедания» (peace not flowing from Christ's propitiation, but rising from a formal
-   profession) — application — **НЕ ВЕРИФИЦИРОВАНО дословно — кандидат** (смысловой
-   пересказ выдачи; идеально стыкуется с ἱλάσθητι Лк. 18:13 — найти точный абзац в PDF).
+7. **Mead** — мир почти-христианина «not a peace flowing from Christ’s propitiation, but
+   a peace rising from a formal profession» — Use of Caution —
+   https://ccel.org/ccel/mead_matthew/almost.iii.viii.html — **ВЕРИФИЦИРОВАНО по CCEL (safe closure 2026-07-31)**.
+7b. **Spurgeon** — “God be merciful to me a sinner” is “a pure, unadulterated prayer” and “full of confession of sin”; the publican means “the sinner” — *A Sermon for the Worst Man on Earth*, Luke 18:13, MTP vol. 33 — https://www.spurgeon.org/sermons/a-sermon-for-the-worst-man-on-earth — **OFFICIAL-SPURGEON-LIBRARY-VERIFIED (safe closure 2026-07-31)**.
 8. **Owen** — «Unless a man be a believer, — that is, one that is truly ingrafted into
    Christ, — he can never mortify any one sin.» — Of the Mortification of Sin in
    Believers (1656), гл. 7 — https://ccel.org/ccel/owen/mort/mort.i.x.html ;
@@ -781,11 +775,8 @@ Evans-имprint 1746: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idn
     appetite and longing of soul after spiritual attainments increased. On the contrary,
     false affections rest satisfied in themselves.» — Part III, знак 11 —
     https://www.ccel.org/ccel/edwards/affections.vi.x.html — **ВЕРИФИЦИРОВАНО**.
-20. **Edwards** — прочие заголовки знаков Part II (2–12) и Part III (1–5, 7–10, 12) —
-    краткие передачи по CCEL toc + TGC-обзору (Justin Taylor) —
-    https://www.thegospelcoalition.org/blogs/justin-taylor/an-overview-of-the-religious-affections-12-no-signs-and-12-true-signs/ —
-    **сводка ВЕРИФИЦИРОВАНА, дословные английские заголовки — кандидаты** (взять из CCEL
-    при цитировании в статье).
+20. **Edwards** — заголовки знаков Part II (1–12) и Part III (1–12) —
+    CCEL TOC `https://ccel.org/ccel/edwards/affections.toc.html` — **CCEL-TOC-VERIFIED (safe closure 2026-07-31)**. Текущие русские строки — краткая передача; при прямом английском цитировании использовать CCEL title text.
 21. **Кальвин** — определения legal/evangelical repentance + примеры Каин/Саул/Иуда —
     Institutes of the Christian Religion, III.3.4 (пер. Beveridge) —
     https://www.biblestudytools.com/history/calvin-institutes-christianity/book3/chapter-3.html ;
@@ -802,9 +793,7 @@ Evans-имprint 1746: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idn
     chastity and continency, only not yet» (+ контекст: «боялся, как бы Ты не услышал
     меня скоро…») — Confessiones VIII.7.17 (пер. Pusey) —
     https://sacred-texts.com/chr/augconf/aug08.htm — **ВЕРИФИЦИРОВАНО**.
-25. **Августин** — воля приказывает телу — и тело слушается; воля приказывает себе — и
-    встречает сопротивление — Confessiones VIII.9.21 — **НЕ ВЕРИФИЦИРОВАНО дословно —
-    кандидат** (взять по Pusey при вычитке).
+25. **Августин** — “The mind commands the body, and it obeys forthwith; the mind commands itself, and is resisted.” — Confessiones VIII.9.21 — https://www.ccel.org/ccel/schaff/npnf101.vi.VIII.IX.html — **ВЕРИФИЦИРОВАНО по CCEL/NPNF (safe closure 2026-07-31)**.
 26. **Watson** — «Morality is but nature refined — old Adam put in a better dress» —
     The Godly Man's Picture (1666) — **НЕ ВЕРИФИЦИРОВАНО дословно — кандидат** (статус
     унаследован из досье 65; сверить по изданию Banner/monergism).
@@ -900,20 +889,11 @@ Evans-имprint 1746: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idn
 
 ## Открытые вопросы / что ещё копать
 
-1. **Достать полный PDF Mead** (Monergism / apuritansmind), когда будет доступ без
-   egress-блока: (а) сверить кандидатов №5, 7 цитатного банка; (б) выписать целиком
-   ступень 7 («strife and combat against sin») — в этом прогоне добыта тема ступени, но
-   не её внутренний текст (Mead там различает борьбу «от света совести» и борьбу «от
-   нового естества» — нужен дословный абзац); (в) ответы Mead на вопросы 2–5 (почему
-   доходит лишь до «почти»; в чём гибельность «почти»; применение).
-2. **Edwards: дословные английские заголовки** всех 24 знаков из CCEL (сейчас дословно
-   верифицированы II.1, III.6, III.11 + сводка) — механическая задача при вычитке.
-3. **Owen, Mortification гл. 5–6 и 8**: дословные формулировки «чего умерщвление не есть»
-   (особенно diversion — блудный → скупой) и второго общего правила (универсальность) —
-   сейчас конспект по памяти корпуса.
-4. **Сперджен на Лк. 18:9–14** — найти и верифицировать одну сильную проповедь (кандидаты:
-   «The Pharisee and the Publican», MTP) для баптистского проповеднического голоса.
-5. **Августин VIII.9.21** (воля, приказывающая себе) — дословно по Pusey/Chadwick.
+1. **Mead — SAFE CLOSURE 2026-07-31 for candidates №5 and №7.** Agrippa/conscience line verified in CCEL `almost.iii.i.html`; false-peace/formal-profession line verified in CCEL `almost.iii.viii.html`. Still open: выписать целиком ступень 7 («strife and combat against sin») and, if needed, broader answers Mead gives to questions 2–5.
+2. **Edwards signs headings — SAFE CLOSURE 2026-07-31.** All 24 Part II/III title-locators verified in CCEL TOC `affections.toc.html`; optional body-level quote extraction remains only where the article quotes more than a heading.
+3. **Owen, Mortification гл. 5–6 и 8 — SAFE CLOSURE 2026-07-31.** Negative definitions checked in CCEL `mort.i.viii.html`; second general rule checked in `mort.i.xi.html`. Remaining Owen task, if needed, is optional print-page/Goold pagination, not source-risk.
+4. **Сперджен на Лк. 18:13 — SAFE CLOSURE 2026-07-31.** Official Spurgeon Library “A Sermon for the Worst Man on Earth” verified as a strong Baptist preaching support on the publican. Optional future search only if a sermon explicitly covering all Luke 18:9–14 / Pharisee syntax is needed.
+5. **Августин VIII.9.21 — SAFE CLOSURE 2026-07-31.** Formula on mind commanding body/self verified via CCEL/NPNF `npnf101.vi.VIII.IX.html`; optional Pusey/Chadwick print comparison only if desired.
 6. **Синтаксис Лк. 18:11** (πρὸς ἑαυτόν — с σταθείς или с προσηύχετο): свериться с
    Marshall (NIGTC), Bock (BECNT), Edwards (PNTC) — для сноски в статье, не для тела.
 7. **Возможный бонус-мостик**: связь с бонусом главы V «Евр. 6:4–8 / непростительный грех»

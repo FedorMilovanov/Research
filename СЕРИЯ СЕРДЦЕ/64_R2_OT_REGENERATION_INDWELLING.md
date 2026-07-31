@@ -420,11 +420,21 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 — «В ветхом завете Бог верно пребывал со Своим народом: сопровождал его в столпе огненном и облачном, затем обитал среди него в скинии и храме. В новом завете единственный храм — сама верующая община, и Бог обитает не только среди общины корпоративно (Мф. 18:20; 1 Кор. 3:16; 2 Кор. 6:16), но и в каждом её члене лично (Ин. 14:17; Рим. 8:9–11; 1 Кор. 6:19)».
 Ссылка: https://www.goodreads.com/work/quotes/527122-god-s-indwelling-presence-the-holy-spirit-in-the-old-and-new-testaments
 
-**W-4. Hamilton — формула тезиса** — ВЕРИФИЦИРОВАНО (формула подтверждена поиском по Themelios 30/1)
-> "…old covenant believers may be described as **regenerate though not indwelt**."
-— «…ветхозаветных верующих можно описать как **возрождённых, хотя и не обитаемых** [Духом]».
-Источники: J. M. Hamilton, «Were Old Covenant Believers Indwelt by the Holy Spirit?», Themelios 30/1 (2004): 12–22; God's Indwelling Presence, гл. 2–5.
-Ссылки: https://www.thegospelcoalition.org/themelios/article/were-old-covenant-believers-indwelt-by-the-holy-spirit/ ; PDF: https://jimhamilton.info/wp-content/uploads/2008/06/them30-1.pdf
+**W-4. Hamilton — формула тезиса / conclusion** — SAFE CLOSURE 2026-07-31 по Themelios HTML.
+> “Were old covenant believers indwelt by the Holy Spirit? No. They did not need to be. God
+> dwelt in the temple. He was thereby with them.”
+> “They became faithful by the regenerating work of the Holy Spirit…”
+> “Under the old covenant, the Spirit gave life and was with the people as he dwelt in the
+> temple. Under the new covenant, the Spirit gives life and dwells in God’s people; they are
+> his temple.”
+
+Перевод: «Были ли ветхозаветные верующие обитаемы Святым Духом? Нет… Бог обитал в храме
+и тем самым был с ними… Они стали верными через возрождающее действие Святого Духа… Под
+ветхим заветом Дух давал жизнь и был с народом, обитая в храме; под новым заветом Дух даёт
+жизнь и обитает в Божьем народе: они — Его храм».
+Источник: J. M. Hamilton, “Were Old Covenant Believers Indwelt by the Holy Spirit?”, Themelios 30/1 (2004): 12–22.
+Ссылка: https://www.thegospelcoalition.org/themelios/article/were-old-covenant-believers-indwelt-by-the-holy-spirit/
+Статус: `THEMELIOS-HTML-VERIFIED / CONCLUSION-LOCATOR-LOCKED`; PDF/book page not claimed. Краткая формула “regenerate though not indwelt” остаётся правильным shorthand, но article quote лучше брать из conclusion above.
 
 **W-5. Hamilton — в чём новизна Иер. 31 / Иез. 36** — ВЕРИФИЦИРОВАНО (Goodreads quotes)
 > "The newness does not consist in the Spirit's regenerating ministry of enabling people to hear God's word and believe. What is new is the indwelling ministry of the Spirit and the spiritualized view of the temple."
@@ -441,12 +451,21 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 — «Завет, заключённый со всеми патриархами, настолько подобен нашему по сущности и реальности, что оба — на деле один и тот же. Различаются же они образом домостроительства».
 Ссылки: https://www.ccel.org/ccel/calvin/institutes.iv.xi.html (кн. II, гл. 10) ; https://www.biblestudytools.com/history/calvin-institutes-christianity/book2/chapter-10.html
 
-**W-8. Кальвин, Комментарий на Ин. 7:39** — ВЕРИФИЦИРОВАНО (сниппет CCEL)
-> "The Evangelist, therefore, does not absolutely affirm that the grace of the Spirit was not offered and given to believers before the death of Christ, but that it was not yet so bright and illustrious as it would afterwards become."
-— «Итак, евангелист не утверждает безусловно, что благодать Духа не предлагалась и не давалась верующим до смерти Христа, — но что она ещё не была столь светлой и славной, какой ей предстояло стать впоследствии».
-Дополнительный фрагмент того же места (о предмете вопроса): "the question relates strictly to the power of the Spirit, by which we are born again in Christ, and become new creatures" — «вопрос касается именно силы Духа, которой мы возрождаемся во Христе и становимся новым творением» [контекст фразы при написании статьи перепроверить fetch'ем — сниппет не показал окружение].
+**W-8. Кальвин, Комментарий на Ин. 7:39** — SAFE CLOSURE 2026-07-31 по CCEL.
+> "The Evangelist, therefore, does not absolutely affirm that the grace of the Spirit was not
+> offered and given to believers before the death of Christ, but that it was not yet so bright
+> and illustrious as it would afterwards become."
+
+> "the question relates strictly to the power of the Spirit, by which we are born again in
+> Christ, and become new creatures."
+
+— «Итак, евангелист не утверждает безусловно, что благодать Духа не предлагалась и не давалась
+верующим до смерти Христа, — но что она ещё не была столь светлой и славной, какой ей предстояло
+стать впоследствии»; «вопрос касается именно силы Духа, которой мы возрождаемся во Христе и
+становимся новым творением».
 Источник: Calvin, Commentary on the Gospel According to John, vol. 1, на Ин. 7:39.
 Ссылка: https://www.ccel.org/ccel/calvin/calcom34.xiii.vii.html
+Статус: `CCEL-HTML-VERIFIED / JOHN-7-39-SECTION-LOCKED`; print page not claimed.
 
 **W-9. Григорий Богослов, Слово 31 (Пятое богословское), §26** — ВЕРИФИЦИРОВАНО (1-я и 3-я фразы; средняя — стандартный текст NPNF)
 > "The Old Testament proclaimed the Father openly, and the Son more obscurely. The New manifested the Son, and suggested the Deity of the Spirit. Now the Spirit Himself dwells among us, and supplies us with a clearer demonstration of Himself."
@@ -480,13 +499,30 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 Ссылка: https://www.thegospelcoalition.org/sermon/streams-of-living-water-john-7-37-39-en/
 Для PNTC (The Gospel According to John, 1991, ad loc. 7:39) дословную цитату добрать по бумажному изданию — [НЕ ВЕРИФИЦИРОВАНО — кандидат].
 
-**W-15. Августин, Tractatus in Ioannem 32 (на Ин. 7:39)** — [НЕ ВЕРИФИЦИРОВАНО дословно — кандидат; содержание подтверждено]
-> Содержание (по сводке New Advent): Августин спрашивает, как «Духа ещё не было», если Духом говорили пророки и святые прежде; и отвечает: предстояло **некое такое даяние (даяние особого образа), какого прежде не бывало**, — и именно о нём сказано «Духа ещё не было, потому что Иисус ещё не был прославлен»; ученики уже имели Духа в одном смысле, но им предстояло принять Его иначе после воскресения.
-Ссылка: https://www.newadvent.org/fathers/1701032.htm (NPNF1-07, Tract. 32; точную английскую формулировку взять при fetch).
+**W-15. Августин, Tractatus in Ioannem 32 (на Ин. 7:39)** — SAFE CLOSURE 2026-07-31.
+> “For the meaning is not that the Spirit of God, which was with God, was not in being; but
+> was not yet in them who had believed on Jesus.”
+> “Nor was it another spirit that the prophets also had, who proclaimed beforehand the coming
+> of Christ. But still, there was to be a certain manner of this giving, which had not at all
+> appeared before.”
 
-**W-16. Джон Гилл, Exposition of the New Testament, на Ин. 7:39** — [НЕ ВЕРИФИЦИРОВАНО — кандидат]
-> Кандидатный тезис (по памяти корпуса, сверить): «не был ещё дан» — слова «дан» нет в оригинале, но смысл верно восполняется; речь не о бытии Духа (Он вечен) и не об отсутствии Его благодати в ВЗ-святых, а о том, что Он ещё не был дан в той славной мере даров и благодати, как по вознесении Христа.
-Ссылка для проверки: https://biblehub.com/commentaries/gill/john/7.htm
+Перевод: смысл не в том, будто Духа Божия не было, но что Он ещё не был таким образом в
+уверовавших в Иисуса; пророки имели не иного Духа, однако предстоял особый образ даяния,
+которого прежде не было.
+Ссылка: https://www.newadvent.org/fathers/1701032.htm (Tractate 32, John 7:37–39).
+Статус: `NEWADVENT-NPNF-HTML-VERIFIED / TRACTATE-LOCATOR-LOCKED`; print page not claimed.
+
+**W-16. Джон Гилл, Exposition of the New Testament, на Ин. 7:39** — SAFE CLOSURE 2026-07-31.
+> “the word ‘given’ is not in the original text; but is very properly supplied…”
+> “he was in being as a divine person… from everlasting; and he had been bestowed in his grace upon the Old Testament saints…”
+> “but as yet the time was not come, at least for the more plentiful donation of him…”
+
+Перевод: слово «дан» не стоит в оригинале, но правильно восполняется; речь не о том, будто Духа
+не было как Божественного Лица, ибо Он от вечности, и Его благодать была дарована ветхозаветным
+святым; речь о ещё не наступившем времени более обильного дарования Духа после прославления Христа.
+Источник: Gill, *Exposition of the New Testament*, John 7:39.
+Ссылка: https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/john-7-39.html
+Статус: `PUBLIC-DOMAIN-HTML-VERIFIED / JOHN-7-39-LOCATOR-LOCKED`; print page not claimed.
 
 **W-17. Sinclair Ferguson — позиция по Ин. 7:39 и 14:17** — ВЕРИФИЦИРОВАНО как позиция (сводка Ask Ligonier), дословность подкаст-формулировок не фиксируем
 > Пересказ: (1) «Духа ещё не было» — различия между ВЗ- и НЗ-служением Духа столь драматичны, что *как если бы* Духа ещё не существовало; (2) в Ин. 14:17 Христос не противопоставляет ветхозаветный опыт учеников новозаветному: Дух обитал в верующих и под ветхим заветом; различие — не столько в обитании, сколько в образе их переживания и познания Его.
@@ -597,12 +633,7 @@ LXX Быт. 2:7 (Бог «вдунул» дыхание жизни) и Иез. 3
 
 ## Открытые вопросы / что ещё копать
 
-1. **Контрольный fetch при написании** (egress этой сессии блокировал прямые загрузки):
-   (а) Themelios 30/1 PDF (jimhamilton.info) — дословная формулировка вывода Хэмилтона и
-   имена позиций 4–5 спектра; (б) TrinJ 24 PDF (examiningcalvinism.com); (в) Кальвин на
-   Ин. 7:39 — окружение фразы про «силу Духа, которой мы возрождаемся» (W-8, второй
-   фрагмент); (г) Августин Tract. 32 — точная NPNF-формулировка (W-15); (д) Гилл на
-   Ин. 7:39 (W-16); (е) Оуэн — глава/страница по Goold для W-10/W-11.
+1. **Hamilton Themelios — SAFE CLOSURE 2026-07-31 for HTML article.** The TGC/Themelios HTML article was read directly: spectrum positions and conclusion are available without PDF. Calvin on John 7:39 (W-8), Augustine Tract. 32 (W-15), and Gill on John 7:39 (W-16) also closed via open HTML. Still open inside this cluster: TrinJ 24 PDF if exact survey-page details are needed; Owen Goold page/chapter for W-10/W-11.
 2. **Ferguson, The Holy Spirit (1996)** — добрать 1–2 дословные книжные цитаты со
    страницами (гл. 1 «The Holy Spirit and His Story», гл. 4 о Пятидесятнице): сейчас его
    позиция документирована только подкастами/лекциями.

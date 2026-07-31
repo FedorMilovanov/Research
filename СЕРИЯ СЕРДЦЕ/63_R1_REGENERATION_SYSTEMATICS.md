@@ -489,7 +489,35 @@ himself and his grace into the hearts of men”, while the first principle of gr
 Ссылка: https://www.ccel.org/ccel/berkhof/systematictheology.vi.vi.html
 **ВЕРИФИЦИРОВАНО** (сниппет CCEL). ← Готовый ответ синергизму «проповедь убедила — человек решил».
 
-### Г. У. Г. Т. Шедд (для узла immediate/mediate)
+
+### Г. Herman Bavinck — Reformed Dogmatics IV, chapter 1 (calling and regeneration)
+
+**BV1.** Bavinck on broad vs restricted regeneration — SAFE CLOSURE 2026-07-31:
+> “one can still construe this term in a broad as well as a more restricted sense.” In the
+> broad Reformation usage, regeneration included “the total renewal of a person”; in the
+> restricted sense it “suggests the genesis or origin of that life” and dogmatics restricts
+> the term to “the implantation of the spiritual life.”
+
+Перевод: «термин можно понимать в широком и более ограниченном смысле… в широком смысле
+возрождение включает полное обновление человека; в ограниченном — указывает на возникновение
+или происхождение этой жизни, на вложение духовной жизни».
+
+**BV2.** Bavinck on Word/Spirit and order — SAFE CLOSURE 2026-07-31:
+> “In the preaching of the gospel to adults… the external call is therefore anterior to
+> regeneration, although it may coincide with it in time.”
+> “God can open human hearts before but also during the hearing of his Word (Acts 16:14).”
+
+**BV3.** Bavinck on immediate operation — SAFE CLOSURE 2026-07-31:
+> “the operation of God’s Spirit in regeneration is immediate; in other words, that God’s
+> Spirit itself directly enters the human heart and with infallible certainty brings about
+> regeneration without in any way being dependent on the human will.”
+
+Источник: Monergism HTML excerpt from Herman Bavinck, *Reformed Dogmatics*, vol. 4, ch. 1,
+“The Holy Spirit's Work of Calling and Regeneration”:
+https://www.monergism.com/holy-spirits-work-calling-and-regeneration-herman-bavinck
+Статус: `MONERGISM-HTML-READ / BAVINCK-RD4-CH1-EXCERPT-LOCKED`; Baker page numbers not claimed.
+
+### Д. У. Г. Т. Шедд (для узла immediate/mediate)
 
 **D1.** Dogmatic Theology (т. II; цитируется и у Беркхофа):
 > "The influence of the Holy Spirit is distinguishable from that of the truth; from that of man
@@ -515,7 +543,7 @@ Shedd, Dogm. Theol. II, pp. 500, 506). **ВЕРИФИЦИРОВАНО** (по с
 «средствами освящения» без оговорок — и возражает: Слово причастно и к рождению веры, Иак. 1:18;
 1 Пет. 1:23).
 
-### Д. Томас Бостон
+### Е. Томас Бостон
 
 **E1.** Human Nature in its Fourfold State, State III, «Regeneration»:
 > "Regeneration is a real thorough change, whereby the man is made a new creature (2 Cor. 5:17)."
@@ -534,12 +562,22 @@ https://www.monergism.com/thethreshold/sdg/boston/Human_Nature_in_its_Fourfold_S
 
 Ссылка: те же. **ВЕРИФИЦИРОВАНО** (в изданиях встречается вариант "passive in birth").
 
-**E3.** Там же (характеристики перемены): «это перемена сверхъестественная — рождённый свыше
-рождён от Духа»; «это перемена всеобщая» (ум, воля, чувства, вся жизнь) — формулы верифицированы
-по сниппетам в пересказе; дословную разбивку взять по PDF при доступе.
-[частично ВЕРИФИЦИРОВАНО / уточнить дословность]
+**E3.** Там же (характеристики перемены) — SAFE CLOSURE 2026-07-31 по GraceGems open text.
+Boston’s regeneration section gives a structured breakdown:
 
-### Е. Чарльз Сперджен
+> “Regeneration is a supernatural real change on the whole man…”
+> “But regeneration is a real, thorough change, whereby the man is made a new creature…”
+> “It is a change of qualities or dispositions.”
+> “It is a SUPERNATURAL change.”
+> “It is a change into the LIKENESS OF GOD.”
+> “It is a UNIVERSAL change.”
+> “Yet, though every part of the man is renewed, there is no part of him which is perfectly renewed.”
+> “Nevertheless, it is a LASTING change, which never entirely dies off.”
+
+Ссылка: https://www.gracegems.org/28/human_nature5.htm
+Статус: `GRACEGEMS-HTML-VERIFIED / REGENERATION-SECTION-LOCKED`; early-scan/print page not claimed.
+
+### Ж. Чарльз Сперджен
 
 **F1.** № 130 «Regeneration» (Ин. 3:3; 3 мая 1857; NPSP т. 3):
 > "The change is radical; it gives us new natures, makes us love what we hated and hate what we
@@ -851,11 +889,8 @@ https://www.monergism.com/holy-spirits-work-calling-and-regeneration-herman-bavi
    вёрсткой статьи: контрольное сличение цитатника по ссылкам (особенно C1–C5 Беркхоф и G1 Уитфилд —
    взять цельные абзацы, а не склейки).
 2. **Гилл, кн. VI, гл. 11 «Of Regeneration» — SAFE CLOSURE 2026-07-31 for HTML.** B6 подтверждён/заменён по Monergism HTML `https://www.monergism.com/regeneration-6`; exact anchors on strict/large sense of regeneration and new creature/new man are locked. Печатная страница 1839 г. не заявляется. Отдельный разбор Ин. 3:5 / Тит. 3:5 уже частично есть в B3–B4; если нужна печатная пагинация — optional future pass.
-3. **Бавинк дословно**: RD IV, гл. 1 — выписать 1–2 абзаца о cum verbo и о том, что возрождение
-   в узком смысле предшествует вере (англ. изд. Baker, стр. уточнить); проверить его критику
-   Кайперова «предполагаемого возрождения» (для бонуса R2 тоже пригодится).
-4. **Бостон**: дословная разбивка характеристик перемены (real/thorough/supernatural/universal)
-   по PDF — сейчас частично в пересказе.
+3. **Бавинк — SAFE CLOSURE 2026-07-31 for RD4 ch.1 HTML excerpt.** Monergism excerpt from *Reformed Dogmatics* IV, ch. 1 read and locked for broad/restricted regeneration, Word/Spirit order, and immediate Spirit operation. Baker page numbers and Kuyper presumed-regeneration critique remain optional future checks.
+4. **Бостон — SAFE CLOSURE 2026-07-31 for HTML.** Real/thorough/supernatural/universal/lasting change breakdown verified in GraceGems open text. Early-scan/print page remains optional only.
 5. **Стотт**: точная страница The Letters of John (TNTC, 1964/1988) для H6.
 6. **Спрол**: установить книжный первоисточник пассажа о «watershed» (статья-PDF ← какая книга:
    Chosen by God? The Mystery of the Holy Spirit?) — для корректной сноски.

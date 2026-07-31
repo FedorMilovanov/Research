@@ -891,14 +891,13 @@ Christ" (письмо? Bonar Memoir? — установи реальный ис�
    > превосходства Христа и всего, что в Нём. Пусть Дух Святой наполнит каждую комнату твоего
    > сердца — и тогда не останется места ни для глупости, ни для мира, ни для сатаны, ни для
    > плоти».
-   Один источник (независимая цитата по поисковой сводке) указывает страницу 293 издания
-   «Memoir and Remains…» (Edinburgh: Banner of Truth, 1844/1966).
+   SAFE CLOSURE 2026-07-31: Google Books readback of *Memoir and Remains* at `pg=PA239` confirms the letter heading “TO A SOUL WHOM HE HAD NEVER SEEN, BUT WHOSE CASE WAS LAID BEFORE HIM BY A FRIEND”, date March 20, 1840, and the full paragraph including “For one look at yourself, take ten looks at Christ!” Print page **239** is visible in that Google Books edition; Banner p.293 remains a separate edition locator not claimed here.
 
-2. **М'Чейн сам НЕ заявляет об оригинальности изречения.** По независимому исследованию блога
-   The Scriptorium Daily (найдено через поисковую выдачу, содержательно надёжно, хотя сам текст
-   статьи прочитать напрямую в этой сессии не удалось из-за блокировки WebFetch — только через
-   синтез поиска): М'Чейн в письме **заключает фразу в кавычки**, не называя автора — то есть сам
-   осознаёт, что цитирует чью-то чужую формулу, а не изобретает свою.
+2. **М'Чейн сам НЕ заявляет об оригинальности изречения.** SAFE CLOSURE 2026-07-31:
+   The Scriptorium Daily article by Fred Sanders was read directly, and the Google Books page-image/OCR
+   of Bonar’s *Memoir and Remains* was also read. The letter prints the sentence in quotation marks:
+   “For one look at yourself, take ten looks at Christ!”; M'Cheyne does not name the earlier source.
+   Therefore the sentence is verified **in M'Cheyne's letter**, but originality remains open.
 
 3. **След ведёт к Ричарду Бакстеру — но не подтверждается в его корпусе.** Наставник М'Чейна,
    Томас Чалмерс (тот же автор, что и «Expulsive Power», см. ниже — интересное схождение обеих
@@ -910,19 +909,11 @@ Christ" (письмо? Bonar Memoir? — установи реальный ис�
    не установленному источнику, и «эти евангельские столпы, передававшие её из уст в уста, не
    слишком заботились о том, откуда она взялась».
 
-4. **Дата и адресат письма расходятся между вторичными источниками.** Один источник называет
-   письмо датированным **20 марта 1840 г.**, изданным на стр. 239 издания Oliphant, Anderson &
-   Ferrier (Edinburgh, 1883); другой указывает стр. 293 издания Banner of Truth (1844/1966);
-   третий источник (поисковый синтез, низкая надёжность) называет адресата «другом по имени
-   George Shaw», но это не подтверждено независимо, и это, возможно, смешение с ДРУГИМ известным
-   письмом М'Чейна — датированным точно **2 октября 1840 г.**, адресованным **Rev. Dan Edwards**
-   (после его рукоположения как миссионера к евреям), которое содержит другую, тоже широко
-   известную фразу М'Чейна («культура внутреннего человека», «не великие дарования, а великое
-   уподобление Иисусу»), но, по доступным в этом прогоне данным, **не содержит** фразы про «десять
-   взглядов». Иначе говоря: у М'Чейна есть НЕСКОЛЬКО знаменитых пасторских писем, легко путаемых
-   друг с другом во вторичной литературе; письмо с «десятью взглядами» и письмо к Дэну Эдвардсу —
-   по всей видимости, **разные** письма, но точную идентификацию адресата первого в рамках этой
-   сессии подтвердить независимо не удалось.
+4. **Дата и адресат письма теперь уточнены для проверенного издания.** Google Books `pg=PA239`
+   confirms the letter is dated **20 марта 1840 г.** and headed **“TO A SOUL WHOM HE HAD NEVER SEEN,
+   BUT WHOSE CASE WAS LAID BEFORE HIM BY A FRIEND.”** This closes the low-confidence “George Shaw”
+   lead as not to be used here. Banner p.293 may be a different pagination of the same letter; do not
+   mix page numbers between editions.
 
 **Итоговая рекомендация для статьи [маркировка: ЦИТАТА ПОДЛИННАЯ, АТРИБУЦИЯ АВТОРСТВА ОТКРЫТА]:**
 Формулировку можно и стоит использовать — сама фраза достоверно находится в письме М'Чейна,
@@ -1007,8 +998,8 @@ R8 в замаскированный self-help («смотри на Христа
 | 21 | Thomas Chalmers | “There are two ways in which a practical moralist may attempt to displace…”; “the only way to dispossess it of an old affection is by the expulsive power of a new one.” | *The Expulsive Power of a New Affection* (sermon), Precept Austin original-sermon text section | **OPEN-HTML-VERIFIED / EDITION-PAGE-NOT-CLAIMED** (safe closure 2026-07-31; use as HTML text or still do print/PDF page pass if needed) |
 | 22 | Thomas Chalmers | «The best way of casting out an impure affection is to admit a pure one…» | там же | ВЕРИФИЦИРОВАНО через поисковую выдачу |
 | 23 | Jonathan Edwards | «The first objective ground of gracious affections, is the transcendently excellent and amiable nature of divine things… not any conceived relation… to self-interest.» | *A Treatise Concerning Religious Affections* (1746), обсуждение Признака 2 | ВЕРИФИЦИРОВАНО через поисковую выдачу (множественная независимая сверка) |
-| 24 | Robert Murray M'Cheyne | «Learn much of the Lord Jesus. For every look at yourself, take ten looks at Christ…» (полный абзац) | письмо, *Memoir and Remains of the Rev. R. M. M'Cheyne*, ред. A. Bonar | ЦИТАТА ВЕРИФИЦИРОВАНА (текст подтверждён независимо), АВТОРСТВО ИЗРЕЧЕНИЯ ОТКРЫТО — см. полный разбор выше, раздел Д |
-| 25 | Thomas Chalmers (об источнике M'Cheyne) | приписывает близкое изречение Ричарду Бакстеру, письмо 1844 г. | по расследованию Scriptorium Daily (опосредованно, через поисковый синтез) | НЕ ВЕРИФИЦИРОВАНО дословно — сама статья не прочитана напрямую (WebFetch заблокирован); сообщается о ней ДРУГИМИ независимыми поисковыми попаданиями непротиворечиво, но это не равно прямой проверке первоисточника |
+| 24 | Robert Murray M'Cheyne | “Learn much of the Lord Jesus. For one look at yourself, take ten looks at Christ!” | *Memoir and Remains of the Rev. R. M. M'Cheyne*, ed. A. Bonar, letter “To a soul whom he had never seen…”, March 20, 1840, Google Books `pg=PA239` | **GOOGLE-BOOKS-SCAN/OCR-VERIFIED / PAGE-LOCATOR-LOCKED** for letter text; originality of the saying remains open |
+| 25 | Thomas Chalmers / possible Baxter source | Chalmers reportedly quotes the same saying in an 1844 letter and attributes it to Baxter | Fred Sanders, Scriptorium Daily, read directly 2026-07-31 | **SECONDARY-RESEARCH-READ / BAXTER-ORIGIN-UNCONFIRMED** — do not attribute original authorship to Baxter without primary Baxter locus |
 | 26 | John Piper | «одного доброго взгляда на себя достаточно, чтобы сделать десять взглядов на Христа более сладкими…»; «интроспекция — дорога, а не комната» | *Ten Sweeter, Stronger Looks*, desiringgod.org | ВЕРИФИЦИРОВАНО через поисковую выдачу |
 | 27 | J. I. Packer | «I owe more… to John Owen than to any other theologian… than to anything else he wrote [о Mortification]» | Banner of Truth, «Packer on Owen on Mortification» | ВЕРИФИЦИРОВАНО через поисковую выдачу |
 | 28 | Philip Edgcumbe Hughes (атрибуция под вопросом) | «We must know Jesus for that expulsive force to work within us. We must look long and intently at Jesus.» | предположительно *Paul's Second Epistle to the Corinthians* (NICNT, 1962) | [ТРЕБУЕТ ПРОВЕРКИ] — терминология «expulsive force» подозрительно близка к Чалмерсу, вероятен поздний парафраз, не дословная цитата Хьюза |
@@ -1016,6 +1007,7 @@ R8 в замаскированный self-help («смотри на Христа
 | 30 | 1689 LBCF | глава 13, «Of Sanctification», п. 1–3 полностью | 1689 London Baptist Confession of Faith | ВЕРИФИЦИРОВАНО (идентичный текст на трёх независимых конфессиональных сайтах) |
 | 31 | Ps 27:4 (МТ) / Пс. 26:4 (Синод.) | евр. текст + Синодальный текст | Tanakh (масоретский текст); bible.com/SYNO, bible-center.ru | ВЕРИФИЦИРОВАНО (первичный библейский текст, множественная сверка) |
 | 32 | Ps 34:5 (МТ) / Пс. 33:6 (Синод.) | евр. текст + Синодальный текст + LXX | Tanakh; bible.com/СИНОД (дважды независимо); LXX (sacred-texts.com и др.) | ВЕРИФИЦИРОВАНО (первичный текст, множественная сверка по трём традициям) |
+| 33 | C. H. Spurgeon | “By communion with our Lord Jesus we are made like to him…” + direct citation of 2 Cor. 3:18 | “Glory!”, Metropolitan Tabernacle Pulpit vol. 29, official Spurgeon Library, 1 Pet. 5:10 | **OFFICIAL-SPURGEON-LIBRARY-VERIFIED / SERMON-LOCATOR-LOCKED** (safe closure 2026-07-31; not a dedicated 2 Cor. 3:18 sermon) |
 
 ---
 
@@ -1118,12 +1110,7 @@ R8 в замаскированный self-help («смотри на Христа
    нужно либо найти книгу Хьюза напрямую (есть на archive.org — «Paul's Second epistle to the
    Corinthians», Hughes, Philip Edgcumbe — ссылка найдена, но не открыта), либо снять цитату из
    финальной статьи и заменить её без атрибуции конкретному автору.
-5. **Spurgeon.** По архитектуре задания ожидалась проверка на предмет проповедей Сперджена на
-   2 Кор. 3:18 (тема «from glory to glory» упоминается вскользь в проповеди №767 из Metropolitan
-   Tabernacle Pulpit, том 13, но полного текста и точного применения в этом прогоне получить не
-   удалось). Стоит отдельно прогнать spurgeongems.org (все проповеди по указателю на 2 Кор. 3:18)
-   при снятой блокировке WebFetch — весьма вероятно, что у Сперджена есть значимый материал,
-   учитывая частоту, с которой он проповедовал по этому тексту.
+5. **Spurgeon — SAFE CLOSURE 2026-07-31 at official-library locator level.** Official Spurgeon Library sermon “Glory!” (MTP vol. 29, 1 Pet. 5:10, May 20, 1883) was read. It cites 2 Cor. 3:18 directly and applies it to daily preparation for glory: “By communion with our Lord Jesus we are made like to him…” Boundary: this is not a dedicated sermon on 2 Cor. 3:18, but it is a verified Spurgeon official-library support locator. If a full dedicated Spurgeon sermon on 2 Cor. 3:18 is still wanted, that remains optional.
 6. **Martyn Lloyd-Jones, «Reflecting His Glory» — SAFE CLOSURE 2026-07-31 at official-page level.**
    Official MLJ Trust page was read: https://www.mljtrust.org/sermon/reflecting-his-glory/ .
    It confirms sermon #5546, title, text 2 Cor. 3:18, original preaching date 1966-09-25,
@@ -1140,17 +1127,18 @@ R8 в замаскированный self-help («смотри на Христа
    Синклера Фергюсона или Дж. Пэккера к современным изданиям Оуэна (напр. «Overcoming Sin and
    Temptation», ред. Kapic & Taylor, Crossway) — вероятный источник именно такого явного
    сопоставления.
-8. **1 Кор. 13:12 и связь с раввинистическим/эллинистическим фоном «зеркал»** — античные зеркала
+8. **M'Cheyne ten-looks quote — SAFE CLOSURE 2026-07-31.** Letter text and page locator are verified in Google Books `pg=PA239`; Scriptorium Daily was read for attribution caveat. Remaining boundary: original source before M'Cheyne remains unconfirmed; do not attribute original authorship to Baxter.
+9. **1 Кор. 13:12 и связь с раввинистическим/эллинистическим фоном «зеркал»** — античные зеркала
    (полированный металл) давали заведомо мутный образ; можно углубить культурно-исторический фон
    (Коринф был известен производством бронзовых зеркал) для живости статьи — не критично, но
    украсило бы материал; требует отдельного поиска.
-9. **2 Кор. 3:18 и учение о theosis/обожении** — в поиске всплыла статья «2 Corinthians 3:18 and
+10. **2 Кор. 3:18 и учение о theosis/обожении** — в поиске всплыла статья «2 Corinthians 3:18 and
    Its Implications for "Theosis"» (academia.edu) — тема щекотливая для реформатско-баптистского
    фрейма (обычно ассоциируется с восточным православием); НЕ разрабатывать в статье без отдельного
    осторожного богословского решения владельца — Кальвин использует слово «deify» в другом месте
    (2 Пет. 1:4), но это отдельный вопрос, выходящий за рамки R8; на всякий случай пометить, чтобы
    автор статьи НЕ увлёкся этим языком непреднамеренно.
-10. **Проверить, нет ли в корпусе серии (файлы 04, 06, 19–22) уже готового материала по Оуэну
+11. **Проверить, нет ли в корпусе серии (файлы 04, 06, 19–22) уже готового материала по Оуэну
     «Glory of Christ»**, который не всплыл при точечном grep в начале этого прогона (поиск шёл по
     "Glory of Christ" и вариациям — ничего не нашлось, кроме этого нового досье, но полный обзор
     всех 60+ файлов корпуса не проводился построчно из-за объёма).
