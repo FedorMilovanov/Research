@@ -24,6 +24,7 @@
 - [`OFFICIAL_PDF_SOURCE_LEDGER_73_2026-07-31.md`](OFFICIAL_PDF_SOURCE_LEDGER_73_2026-07-31.md) — независимая копия 73 прямых официальных PDF-ссылок и незакрытых слотов.
 - [`OFFICIAL_HOLE_CLOSURES_2026-07-31.md`](OFFICIAL_HOLE_CLOSURES_2026-07-31.md) — прямой официальный маршрут «Баптиста» 1909 №20, проверенные PDF «Братского вестника» 1945 №1/№3 и оставшиеся доказательные пробелы.
 - [`BOOK_ENGINE_MIGRATION_INVENTORY_2026-07-31.md`](BOOK_ENGINE_MIGRATION_INVENTORY_2026-07-31.md) — аудит всех десяти HTML-глав, жёстко зашитой навигации и найденного бага прогресс-индикатора.
+- [`INITIAL_CLAIM_TO_SOURCE_MATRIX_10_CHAPTERS_2026-07-31.md`](INITIAL_CLAIM_TO_SOURCE_MATRIX_10_CHAPTERS_2026-07-31.md) — приоритеты и статусы ключевых тезисов всех десяти опубликованных глав.
 
 ## Актуальная редакционная интеграция
 
@@ -32,7 +33,8 @@
 - `baptisty-rossii/research/79-book-conversion-and-editorial-audit-2026-07-31.md`;
 - `baptisty-rossii/research/80-official-periodicals-pdf-ledger-73-links-2026-07-31.md`;
 - `baptisty-rossii/research/81-official-hole-closures-2026-07-31.md`;
-- `baptisty-rossii/research/82-book-engine-migration-inventory-2026-07-31.md`.
+- `baptisty-rossii/research/82-book-engine-migration-inventory-2026-07-31.md`;
+- `baptisty-rossii/research/83-initial-claim-to-source-matrix-10-chapters-2026-07-31.md`.
 
 Решение: развивать проект как книгу с отдельными URL глав. Текущие десять опубликованных маршрутов не объединяются в один монолит и не переименовываются без отдельного SYSTEM PR.
 
@@ -46,4 +48,4 @@
 6. Для загрузки фиксируются Drive ID, имя, MIME, байты, страницы, SHA-256, источник, дата и папка.
 7. Платные работы не начинать без отдельного согласования.
 
-Последняя синхронизация: **2026-07-31, книжная, PDF-интеграция, закрытие официальных URL-пробелов и аудит HTML-движка**.
+Последняя синхронизация: **2026-07-31, книжная архитектура, PDF-интеграция, закрытие URL-пробелов, HTML-аудит и claim-to-source матрица**.
