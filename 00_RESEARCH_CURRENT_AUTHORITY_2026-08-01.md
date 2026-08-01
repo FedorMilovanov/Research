@@ -2,7 +2,7 @@
 
 **Дата:** 2026-08-01  
 **Статус:** `ACTIVE ROOT AUTHORITY / WAVE-BASED CLOSURE`  
-**Current base:** `0f2a706dff1682117fad54c45c8d7b25c98b62eb`
+**Current base:** `f50b21ad6af5dd7aaa53c5be381929b353b26d58`
 
 ## Назначение
 
@@ -50,6 +50,7 @@ Parsed text, OCR и repository paraphrase сами по себе не дают `
 ## Current corpus authorities
 
 - `СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/44_WAVE11_PRODUCT_INTEGRATION_CLOSEOUT_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/43_WAVE10_FAITHFUL_WITNESS_UNDER_PRESSURE_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/42_WAVE9_MODERN_DIOTROPHES_EDITORIAL_OUTLINE_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md`;
@@ -90,6 +91,9 @@ or machine ledger governs.
   119 case-evidence sources + 29 controls = 148 sources / 0 product writes**.
 - OSK Wave 10: «Верность под давлением» — **15 actor pathways / 105 case-to-source refs /
   33 new source records / 20 faithful responses / 181-source governing pool / NO PRODUCT WRITE**.
+- OSK Product Wave 11: faithful-witness supplement merged in `gb-is-my-strength` PR `#719`
+  at `d0fe4a7dc20bc6a6f503b290ec32a2b70110a379` — **15 actor pathways /
+  20 faithful responses / 73 reader links / 181-source authority / 0 public routes**.
 - Cumulative OSK case authority: **290 sources / 216 A-class / 197 exact URLs / 105 quote-safe**.
 - Effective OSK routing:
   `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 4 STANDALONE / 0 HOLD`.
@@ -100,8 +104,9 @@ or machine ledger governs.
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK Product Wave 11: integrate the faithful-witness supplement into the existing
-  no-route Diotrophes draft while preserving `PUBLICATION_HOLD`;
+- OSK Product Wave 12: publish the complete Wave 10 + Wave 11 Diotrophes reader draft
+  through a separate exact-head route/release PR while preserving `PUBLICATION_HOLD`
+  until route, metadata, search, print, no-JS and browser evidence are complete;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 
