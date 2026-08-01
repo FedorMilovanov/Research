@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "bratsky-listok-1906-1910",
+  "authorityBaseCommit": "20fafafd733dfabbe4280c8d78ed58344e5b1e2f",
+  "generatedAt": "2026-08-01",
+  "policy": {
+    "siteImportRequiresPinnedResearchCommit": true,
+    "siteImportRequiresManifestSha256": true,
+    "pageMapIsNotAutomaticQuotePermission": true,
+    "unknownIssueContentMayNotSupportAbsenceClaims": true,
+    "completeSeriesClaimAllowed": false,
+    "rightsAndImageUseRequireSeparateDecision": true,
+    "driveOperationalStateIsNotPublicationAuthority": true,
+    "noIndividualStageIsCumulative": true
+  },
+  "compiledEvidence": {
+    "model": "ordered-overlay-union",
+    "role": "Stage18–25 together form the active primary page-map authority",
+    "artifacts": [
+      {"stage":18,"path":"RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage18_2026-07-31.csv","commit":"30cd0cbb4f65644ff40d82f5120546023657d9b2","encoding":"csv"},
+      {"stage":19,"path":"RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage19_2026-07-31.csv","commit":"f9a393c1262bd9a0eaa0336f5b9472da49576dc9","encoding":"csv"},
+      {"stage":20,"path":"RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage20_2026-07-31.csv","commit":"223e1acfe05bf91dfb0fededa8c037cc531c2933","encoding":"csv"},
+      {"stage":21,"path":"RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage21_2026-07-31.csv","commit":"c832ed1dbb88bbbbd65547173e42f96d2bce86cb","encoding":"csv"},
+      {"stage":22,"path":"RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE22_2026-08-01.csv","commit":"939c2b398aa2b5b1af28c8a6fd31c8cd0baf2d2b","encoding":"csv"},
+      {"stage":23,"path":"RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE23_2026-08-01.csv","commit":"f3601a30f071385da8987acf1d96090b28a6af52","encoding":"csv"},
+      {"stage":24,"path":"RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE24_2026-08-01.csv","commit":"a9e020058e3b0d5e17439a6ee05ee84a9f5cb64a","encoding":"csv"},
+      {"stage":25,"path":"RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE25_2026-08-01.csv.gz.b64","commit":"3da5aab25505b4ccd91b629bc20bfc2ff26c434b","blobSha":"d06cd8959bfc854f9efc75c3f0005235167f51dd","encoding":"base64+gzip+csv"}
+    ],
+    "crossIssueRecords": [
+      {"stage":25,"recordId":"BL25-CROSS-1905-CONGRESS-CALENDAR","role":"cross-issue-synthesis","issueKeyRequired":false},
+      {"stage":25,"recordId":"BL25-CROSS-1906-1908-UNION-PRECURSOR","role":"cross-issue-synthesis","issueKeyRequired":false}
+    ]
+  },
+  "localCorpusSummary": {
+    "binaryFilesRetained": 23,
+    "semanticPositions": 22,
+    "fullMaps": 17,
+    "truncatedFragments": 1,
+    "targetedMaps": 4,
+    "unmappedLocalPositions": 0
+  },
+  "localPositions": [
+    {"id":"BL-1906-06","year":1906,"issue":6,"kind":"standard","coverageClass":"full","canonicalSha256":"1f2576aeeefdf95f4366b740ecf06a7a1dbd374b82c9575a68d8931021db258b","filePages":10,"evidenceRecordId":"BL-EV-1906-06-PRIMARY","note":"Drive filename says May; printed masthead №6 is canonical."},
+    {"id":"BL-1906-07","year":1906,"issue":7,"kind":"standard","coverageClass":"full","canonicalSha256":"09fee235887ae29dd60060e277b7208dae3e6baa6c25e95fca7f26269355f333","filePages":9,"evidenceRecordId":"BL-EV-1906-07-PRIMARY"},
+    {"id":"BL-1906-08","year":1906,"issue":8,"kind":"standard","coverageClass":"full","canonicalSha256":"48d8611d27ad9d26329e713e4405ae6d11719f9b42704b88ca68f506f26c45b9","filePages":14,"evidenceRecordId":"BL-EV-1906-08-PRIMARY"},
+    {"id":"BL-1906-09","year":1906,"issue":9,"kind":"standard","coverageClass":"full","canonicalSha256":"a90c76e0375ac8ac49177ed5d369891123c42f76748519a4f1db88aeb3af5130","filePages":10,"evidenceRecordId":"BL-EV-1906-09-PRIMARY"},
+    {"id":"BL-1906-11","year":1906,"issue":11,"kind":"standard","coverageClass":"full","canonicalSha256":"fb9030ad4a1309ab578374731c07180b885488406e46ead566b13d7b837a6554","filePages":8,"evidenceRecordId":"BL-EV-1906-11-PRIMARY"},
+    {"id":"BL-1907-09","year":1907,"issue":9,"kind":"standard","coverageClass":"targeted","canonicalSha256":"c0299138c65e775870092427b6c48f8a873ce8627d506fb1cb9dd1bd8a4ee0c4","filePages":16,"evidenceRecordId":"BL-EV-1907-09-P07-PRIMARY","note":"Primary map is targeted to printed p.7; the local binary is page-counted."},
+    {"id":"BL-1907-11","year":1907,"issue":11,"kind":"standard","coverageClass":"truncated","canonicalSha256":"255ecccbac553ceb6e8b22595eaa6791130d033c7ed5685f67e0a5793248d624","filePages":7,"evidenceRecordId":"BL-EV-1907-11-TRUNCATED","note":"Seven preserved pages; continuation is missing. Never describe as a complete issue."},
+    {"id":"BL-1907-12","year":1907,"issue":12,"kind":"standard","coverageClass":"full","canonicalSha256":"750b92b27612fac2025b9af2ab94f5c2ea50c19bf199f2c02779d4ea75bac2db","filePages":17,"uniquePrintedPages":16,"evidenceRecordId":"BL-EV-1907-12-PRIMARY","note":"PDF contains one byte-identical repeated printed page."},
+    {"id":"BL-1908-02","year":1908,"issue":2,"kind":"standard","coverageClass":"full","canonicalSha256":"cc5eaa28ba8f9b63e4b09ed124a29310973a78499bc8d87ee7d699644d5bb9c7","filePages":14,"evidenceRecordId":"BL-EV-1908-02-PRIMARY"},
+    {"id":"BL-1908-05","year":1908,"issue":5,"kind":"standard","coverageClass":"full","canonicalSha256":"ed2899b8957158f5638ccd2557ef68467b7f8d408ce63f7f23b1251089c26683","filePages":8,"evidenceRecordId":"BL-EV-1908-05-PRIMARY","note":"Thematic first-page title does not replace the printed parent slot №5."},
+    {"id":"BL-1908-08","year":1908,"issue":8,"kind":"standard","coverageClass":"full","canonicalSha256":"4ad3f6fd5da812dd6699f6cf3016b0f1abce4975b1f7ca36cf844bbc3727d477","filePages":12,"evidenceRecordId":"BL-EV-1908-08-PRIMARY"},
+    {"id":"BL-1908-10-SUBSTITUTE","year":1908,"issue":10,"kind":"substitute","coverageClass":"full","canonicalSha256":"0ee01385271aa83d5464465271319c1a27753fa609cab7a3cdc566974daac6fe","filePages":16,"evidenceRecordId":"BL-EV-1908-10-SUBSTITUTE-PRIMARY","note":"Official publication issued instead of the normal Bratsky Listok title."},
+    {"id":"BL-1908-11","year":1908,"issue":11,"kind":"standard","coverageClass":"full","canonicalSha256":"52fa59375aea18ff7387472c2d05dddc1e0ab775ed27a50df66a28c57aabeffd","filePages":14,"evidenceRecordId":"BL-EV-1908-11-PRIMARY"},
+    {"id":"BL-1909-02","year":1909,"issue":2,"kind":"standard","coverageClass":"targeted","canonicalSha256":"6e6eee2d15e8c1c68e90bd031c8dce403873630bb280f920ca77ab58ebfcf510","filePages":12,"evidenceRecordId":"BL-EV-1909-02-P04-05-PRIMARY","note":"Primary map covers printed pp.4–5."},
+    {"id":"BL-1909-07","year":1909,"issue":7,"kind":"standard","coverageClass":"targeted","canonicalSha256":"1fbc119781a19e74d7b94a8672968e270fcc1017cd2f76a55fed4d0c94819bef","filePages":16,"evidenceRecordId":"BL-EV-1909-07-P04-07-PRIMARY","note":"Primary map covers printed pp.4–7; filename/month metadata is not authority."},
+    {"id":"BL-1909-09","year":1909,"issue":9,"kind":"standard","coverageClass":"targeted","canonicalSha256":"0afdfe2560fee37dbd4fe3a4485516500dece305417247341aa41f1f2fe40cfc","filePages":12,"evidenceRecordId":"BL-EV-1909-09-P01-04-PRIMARY","note":"Primary map covers printed pp.1–4; filename/month metadata is not authority."},
+    {"id":"BL-1909-10","year":1909,"issue":10,"kind":"standard","coverageClass":"full","canonicalSha256":"19679a242c3872a970d0cf560850d8e9b20feb22684a4954bd33d76d0376d389","filePages":8,"evidenceRecordId":"BL-EV-1909-10-PRIMARY","note":"Filename/month metadata is not authority; printed №10 is canonical."},
+    {"id":"BL-1910-06","year":1910,"issue":6,"kind":"standard","coverageClass":"full","canonicalSha256":"64161aac155ee77d84985758807fb8ea3ec0f082df35094d714a068ab9c0c8a6","filePages":10,"uniquePrintedPages":8,"evidenceRecordId":"BL-EV-1910-06-PRIMARY","note":"Eight printed pages plus two unnumbered plates."},
+    {"id":"BL-1910-07","year":1910,"issue":7,"kind":"standard","coverageClass":"full","canonicalSha256":"775cd42c3f9656c641de8f913b594716308718743fdf67373640b89757f4c577","filePages":12,"evidenceRecordId":"BL-EV-1910-07-PRIMARY"},
+    {"id":"BL-1910-08","year":1910,"issue":8,"kind":"standard","coverageClass":"full","canonicalSha256":"f259338653848c00a26df3f291806115bf7a604f88ce5b59acec30382ca8227a","filePages":12,"evidenceRecordId":"BL-EV-1910-08-PRIMARY"},
+    {"id":"BL-1910-11","year":1910,"issue":11,"kind":"standard","coverageClass":"full","canonicalSha256":"4f61f13d34bc5c85eea4d2433d89652cbfc808c626bdc503224925f6a2fd8f3c","filePages":12,"evidenceRecordId":"BL-EV-1910-11-PRIMARY"},
+    {"id":"BL-1910-12","year":1910,"issue":12,"kind":"standard","coverageClass":"full","canonicalSha256":"4a00b37b5518e8c1d447e00c0efdc4daff4462f3d51c19fb460af239829870ba","filePages":16,"evidenceRecordId":"BL-EV-1910-12-PRIMARY"}
+  ],
+  "byteVariants": [
+    {
+      "positionId": "BL-1906-11",
+      "canonicalSha256": "fb9030ad4a1309ab578374731c07180b885488406e46ead566b13d7b837a6554",
+      "variantSha256": "67c1de40d68ea200c4cc1ea80fa61db6697437d84ad3a9365bad01db1de2bc25",
+      "renderComparison": {"dpi": 120, "changedPages": 0},
+      "policy": "one semantic issue; retain both binaries only as provenance"
+    }
+  ],
+  "unknownIssues": [
+    {"id":"BL-GAP-1907-04","year":1907,"issue":4,"contentState":"fully-unknown","acquisitionState":"ready-to-request-not-sent","holdingRoute":"BAN consolidated eight-issue request","publicationRule":"must be disclosed as a corpus gap; may not support a negative content claim"},
+    {"id":"BL-GAP-1908-06","year":1908,"issue":6,"contentState":"fully-unknown","acquisitionState":"ready-to-request-not-sent","holdingRoute":"BAN consolidated eight-issue request","publicationRule":"must be disclosed as a corpus gap; may not support a negative content claim"},
+    {"id":"BL-GAP-1908-09","year":1908,"issue":9,"contentState":"fully-unknown","acquisitionState":"ready-to-request-not-sent","holdingRoute":"BAN consolidated eight-issue request","publicationRule":"must be disclosed as a corpus gap; may not support a negative content claim"},
+    {"id":"BL-GAP-1909-05","year":1909,"issue":5,"contentState":"fully-unknown","acquisitionState":"ready-to-request-not-sent","holdingRoute":"BAN consolidated eight-issue request","publicationRule":"must be disclosed as a corpus gap; may not support a negative content claim"},
+    {"id":"BL-GAP-1910-01","year":1910,"issue":1,"contentState":"fully-unknown","acquisitionState":"ready-to-request-not-sent","holdingRoute":"BAN consolidated eight-issue request","publicationRule":"must be disclosed as a corpus gap; may not support a negative content claim"},
+    {"id":"BL-GAP-1910-03","year":1910,"issue":3,"contentState":"fully-unknown","acquisitionState":"ready-to-request-not-sent","holdingRoute":"BAN consolidated eight-issue request","publicationRule":"must be disclosed as a corpus gap; may not support a negative content claim"},
+    {"id":"BL-GAP-1910-04","year":1910,"issue":4,"contentState":"fully-unknown","acquisitionState":"ready-to-request-not-sent","holdingRoute":"BAN consolidated eight-issue request","publicationRule":"must be disclosed as a corpus gap; may not support a negative content claim"},
+    {"id":"BL-GAP-1910-05","year":1910,"issue":5,"contentState":"fully-unknown","acquisitionState":"ready-to-request-not-sent","holdingRoute":"BAN consolidated eight-issue request","publicationRule":"must be disclosed as a corpus gap; may not support a negative content claim"}
+  ],
+  "publicationBoundaries": {
+    "full": "Page-level evidence is mapped for the complete preserved local issue; direct quotations still require the cited facsimile line.",
+    "targeted": "Only the recorded page range is publication-supported; unexamined pages remain outside the evidence claim.",
+    "truncated": "Only preserved pages are usable; the issue must be described as incomplete and the missing continuation remains unknown.",
+    "substitute": "Describe as an official publication issued in place of Bratsky Listok, not as a normal-title issue."
+  }
+}
