@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "seriesId": "bratsky-listok-1906-1910",
   "authorityManifest": "data/bratsky-listok-authority-manifest.json",
-  "authorityManifestSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "authorityManifestSha256": "3fedb82c81fec6d2e1790fc7ee1fa89aaf5f498ee7c8d3e2c7c8c1d42fd9dd0d",
   "researchCommitPinRequired": true,
   "bundles": [
     {
