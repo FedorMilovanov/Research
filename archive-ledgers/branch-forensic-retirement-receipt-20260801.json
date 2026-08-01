@@ -1,0 +1,19 @@
+{
+  "repository": "FedorMilovanov/Research",
+  "archiveBranch": "archive/legacy-diverged-heads-20260801",
+  "retiredAt": "2026-08-01T15:49:38.978361+00:00",
+  "policy": "No open PR and all changes relative to merge base were restricted to .github/workflows/** and reports/**.",
+  "deletedCount": 2,
+  "deleted": [
+    {
+      "branch": "audit/full-branch-disposition-20260801",
+      "sha": "22a5af632ac43e6f1abfd1b42b076bfd5e55e025",
+      "fileCount": 3
+    },
+    {
+      "branch": "audit/full-branch-details-20260801",
+      "sha": "8eb4fee15eadc8ddf770af70cacfcbb012030338",
+      "fileCount": 31
+    }
+  ]
+}
