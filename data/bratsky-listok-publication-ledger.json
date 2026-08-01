@@ -12,6 +12,13 @@
       "sitePublicationEligible": false,
       "directInputs": [
         "data/bratsky-listok-authority-manifest.json",
+        "RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage18_2026-07-31.csv",
+        "RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage19_2026-07-31.csv",
+        "RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage20_2026-07-31.csv",
+        "RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage21_2026-07-31.csv",
+        "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE22_2026-08-01.csv",
+        "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE23_2026-08-01.csv",
+        "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE24_2026-08-01.csv",
         "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE25_2026-08-01.csv.gz.b64"
       ],
       "requiredEditorialSteps": [
@@ -25,6 +32,7 @@
       "requiredDisclosures": [
         "The local corpus covers 22 semantic positions, not the complete 1906–1910 run.",
         "Coverage consists of 17 full maps, one truncated fragment and four targeted maps.",
+        "Stage18–25 are ordered overlays; no individual stage is a cumulative corpus export.",
         "One November 1906 issue has two pixel-identical byte variants and counts once.",
         "Eight issue contents remain fully unknown and one consolidated BAN request is ready but not sent."
       ],
@@ -32,6 +40,7 @@
         "The complete Bratsky Listok run has been examined.",
         "An unknown issue contained no relevant material.",
         "A page map alone makes every wording quote-ready.",
+        "Any individual Stage18–25 file represents the complete mapped corpus.",
         "A substitute publication is an ordinary issue bearing the Bratsky Listok title.",
         "Telegram attachment metadata proves that the missing PDF bytes were recovered."
       ]
