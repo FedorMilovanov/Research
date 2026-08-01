@@ -3,6 +3,7 @@ name: Heart Source Closure
 on:
   pull_request:
     paths:
+      - "data/repository-evidence-policy-v2.json"
       - "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md"
       - "СЕРИЯ СЕРДЦЕ/74_PRIMARY_SOURCE_CLOSURE_60PLUS_2026-08-01.md"
       - "СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json"
@@ -11,6 +12,7 @@ on:
   push:
     branches: [main]
     paths:
+      - "data/repository-evidence-policy-v2.json"
       - "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md"
       - "СЕРИЯ СЕРДЦЕ/74_PRIMARY_SOURCE_CLOSURE_60PLUS_2026-08-01.md"
       - "СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json"
@@ -22,13 +24,12 @@ permissions:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: Compile checker
-        run: python -m py_compile scripts/check_heart_source_closure.py
+        run: python3 -m py_compile scripts/check_heart_source_closure.py
       - name: Validate source closure
-        run: python scripts/check_heart_source_closure.py
+        run: python3 scripts/check_heart_source_closure.py
+      - name: Ensure checker is read-only
+        run: git diff --exit-code
