@@ -53,7 +53,7 @@ STAGES: tuple[dict[str, Any], ...] = (
     {
         "stage": 23,
         "path": "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE23_2026-08-01.csv",
-        "commit": "9fffa08d99262d022f4ce0eef83b2f14c092f214",
+        "commit": "f3601a30f071385da8987acf1d96090b28a6af52",
         "encoding": "csv",
     },
     {
@@ -70,6 +70,22 @@ STAGES: tuple[dict[str, Any], ...] = (
         "encoding": "base64+gzip+csv",
     },
 )
+
+CROSS_ISSUE_RECORDS: tuple[dict[str, Any], ...] = (
+    {
+        "stage": 25,
+        "recordId": "BL25-CROSS-1905-CONGRESS-CALENDAR",
+        "role": "cross-issue-synthesis",
+        "issueKeyRequired": False,
+    },
+    {
+        "stage": 25,
+        "recordId": "BL25-CROSS-1906-1908-UNION-PRECURSOR",
+        "role": "cross-issue-synthesis",
+        "issueKeyRequired": False,
+    },
+)
+CROSS_KEYS = {(item["stage"], item["recordId"]) for item in CROSS_ISSUE_RECORDS}
 
 LOCAL = {
     (1906, 6), (1906, 7), (1906, 8), (1906, 9), (1906, 11),
@@ -188,6 +204,8 @@ def main() -> int:
         errors.append("compiledEvidence.model must be ordered-overlay-union")
     if compiled.get("artifacts") != list(STAGES):
         errors.append("compiledEvidence.artifacts differs from the exact Stage18-25 chain")
+    if compiled.get("crossIssueRecords") != list(CROSS_ISSUE_RECORDS):
+        errors.append("compiledEvidence.crossIssueRecords differs from the exact typed set")
 
     positions = manifest.get("localPositions", [])
     if not isinstance(positions, list):
@@ -269,6 +287,7 @@ def main() -> int:
     csv_ids: set[str] = set()
     csv_hashes: set[str] = set()
     csv_keys: set[tuple[int, int]] = set()
+    cross_seen: set[tuple[int, str]] = set()
     stage_row_counts: dict[int, int] = {}
     for spec in STAGES:
         rows = read_stage_rows(spec, errors)
@@ -278,13 +297,18 @@ def main() -> int:
             errors.append(f"Stage{stage} must contain at least one data row")
         for row_number, row in enumerate(rows, start=2):
             rid = (row.get("record_id") or "").strip()
+            typed_key = (stage, rid)
             if not rid or rid in csv_ids:
                 errors.append(f"Stage{stage} invalid/duplicate record_id at row {row_number}: {rid!r}")
             else:
                 csv_ids.add(rid)
             csv_hashes.update(re.findall(r"[0-9a-f]{64}", row.get("source_sha256") or ""))
             key = issue_key(row)
-            if key:
+            if typed_key in CROSS_KEYS:
+                cross_seen.add(typed_key)
+                if key is not None:
+                    errors.append(f"Stage{stage} {rid}: cross-issue synthesis unexpectedly has an issue key")
+            elif key:
                 csv_keys.add(key)
             else:
                 errors.append(f"Stage{stage} {rid or row_number}: invalid year/issue")
@@ -293,6 +317,8 @@ def main() -> int:
                     errors.append(f"Stage{stage} {rid or row_number}: empty {field}")
             all_rows.append((stage, row_number, row))
 
+    if cross_seen != CROSS_KEYS:
+        errors.append(f"cross-issue synthesis set differs: {sorted(cross_seen ^ CROSS_KEYS)}")
     if hashes - csv_hashes:
         errors.append(f"compiled Stage18-25 union lacks canonical hashes: {sorted(hashes - csv_hashes)}")
     if LOCAL - csv_keys:
