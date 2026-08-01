@@ -7,7 +7,7 @@ on:
       - 'SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py'
       - 'SOURCE_LIBRARY/tools/classify_dead_source_urls.py'
       - 'SOURCE_LIBRARY/audit-baseline.json'
-      - 'requirements/source-audit.txt'
+      - 'requirements/source-audit.lock'
       - '.github/workflows/total-cross-repo-source-audit.yml'
   push:
     branches: [main]
@@ -16,7 +16,7 @@ on:
       - 'SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py'
       - 'SOURCE_LIBRARY/tools/classify_dead_source_urls.py'
       - 'SOURCE_LIBRARY/audit-baseline.json'
-      - 'requirements/source-audit.txt'
+      - 'requirements/source-audit.lock'
       - '.github/workflows/total-cross-repo-source-audit.yml'
   schedule:
     - cron: '23 4 * * 1'
@@ -45,10 +45,10 @@ jobs:
         with:
           python-version: '3.12.8'
           cache: pip
-          cache-dependency-path: requirements/source-audit.txt
+          cache-dependency-path: requirements/source-audit.lock
 
-      - name: Install pinned dependencies
-        run: python -m pip install --disable-pip-version-check -r requirements/source-audit.txt
+      - name: Install hash-locked dependencies
+        run: python -m pip install --disable-pip-version-check --require-hashes -r requirements/source-audit.lock
 
       - name: Compile committed auditors
         run: |
@@ -104,9 +104,10 @@ jobs:
           cp SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py total-audit-output/
           cp SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py total-audit-output/
           cp SOURCE_LIBRARY/tools/classify_dead_source_urls.py total-audit-output/
-          cp requirements/source-audit.txt total-audit-output/
+          cp requirements/source-audit.lock total-audit-output/
           git rev-parse HEAD > total-audit-output/RESEARCH_COMMIT.txt
           python -m pip freeze > total-audit-output/PIP_FREEZE.txt
+          sha256sum requirements/source-audit.lock > total-audit-output/DEPENDENCY_LOCK_SHA256.txt
           python - <<'PY'
           from pathlib import Path
           import hashlib, json, platform, sys
