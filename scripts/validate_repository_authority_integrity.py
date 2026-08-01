@@ -48,13 +48,51 @@ require(
 )
 agent_rules = read("AGENT_RULES.md")
 readme = read("README.md")
+control_plane = read("00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md")
 for text, label in ((agent_rules, "AGENT_RULES"), (readme, "README")):
     require("A, B, C или HOLD" not in text, f"legacy A/B/C/HOLD taxonomy remains in {label}")
     require("Level A, B, C или HOLD" not in text, f"legacy Level taxonomy remains in {label}")
 require("repository-evidence-policy-v2.json" in agent_rules, "AGENT_RULES must link canonical policy")
 require("repository-evidence-policy-v2.json" in readme, "README must link canonical policy")
+require("00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md" in readme, "README must link current control-plane authority")
+for marker in (
+    "RESEARCH-CONTROL-PLANE-2026-08-02",
+    "Snapshot semantics",
+    "Research closure",
+    "EPHEMERAL_ACTION_ARTIFACT",
+):
+    require(marker in control_plane, f"control-plane authority missing marker: {marker}")
 for cls in ("`A1`", "`A2`", "`A3`", "`B1`", "`C`", "`D`"):
     require(cls in agent_rules, f"AGENT_RULES missing source class {cls}")
+
+# Corpus crosswalks may namespace legacy values but cannot redefine global classes.
+atlas_readme = read("БИБЛЕЙСКИЙ АТЛАС/README.md")
+require("Level A (" not in atlas_readme and "Level B" not in atlas_readme, "Atlas legacy Level A/B taxonomy remains active")
+require("evidenceClass" in atlas_readme and "localization" not in atlas_readme.lower(), "Atlas must separate evidence from location confidence")
+require("Уверенность локализации" in atlas_readme, "Atlas localization-confidence boundary missing")
+
+gill_crosswalk = read("Джон Гилл/00_SOURCE_STATUS_CROSSWALK_V2.md")
+for marker in (
+    "SUPERSEDES THE “A1–X” SEMANTICS",
+    "historical Gill `A3`",
+    "evidenceClass",
+    "accessState",
+    "locatorState",
+    "rightsState",
+    "publicationState",
+):
+    require(marker in gill_crosswalk, f"Gill source-status crosswalk missing marker: {marker}")
+
+source_library_readme = read("SOURCE_LIBRARY/README.md")
+for marker in (
+    "Access state",
+    "Custody state",
+    "Rights state",
+    "Publication state",
+    "EPHEMERAL_ACTION_ARTIFACT",
+    "ACQUIRED_DURABLE",
+):
+    require(marker in source_library_readme, f"Source Library state separation missing marker: {marker}")
 
 # Critical control-plane workflows must pin checkout and remain read-only.
 critical_workflows = [
@@ -128,17 +166,21 @@ for dependency in (
     require(Path(dependency).name in w10_validator, f"Wave 10 validator does not read parent input: {dependency}")
 require("inherited source ids absent from Wave 9 parent" in w10_validator, "Wave 10 lacks inherited-ID parent proof")
 
-# Cross-repository Product pin.
+# Cross-repository Product pins.
 w7_workflow = read(".github/workflows/osk-wave7-product-article-audit.yml")
 w7_validator = read("scripts/validate_osk_wave7_product_article_audit.py")
 require("repository: FedorMilovanov/gb-is-my-strength" in w7_workflow, "Wave 7 does not checkout Product repository")
 require("PRODUCT_REPO" in w7_validator and "rev-parse" in w7_validator and "hash-object" in w7_validator, "Wave 7 does not verify Product commit/blob")
+gill_workflow = read(".github/workflows/gill-pr2-lossless-reconciliation.yml")
+require("repository: FedorMilovanov/gb-is-my-strength" in gill_workflow, "Gill does not checkout Product repository")
+require("GILL_PRODUCT_REPO" in gill_workflow, "Gill workflow does not pass Product repository to validator")
 
 # Historical and active byte pins.
 bratsky = read("scripts/validate_bratsky_listok_authority_manifest.py")
 require("rev-parse" in bratsky and "commit:path" in bratsky, "Bratsky commit pins are not byte-verified")
 gill = read("scripts/gill-pr2-lossless-reconciliation-audit.mjs")
 require("git('hash-object'" in gill, "Gill archive blob is not computed from bytes")
+require("GILL_PRODUCT_REPO" in gill and "cat-file" in gill, "Gill Product commit witnesses are not checked externally")
 genesis = read("scripts/validate_genesis6_authority_manifest.py")
 require("contentSha256" in genesis and "base_blob != head_blob" in genesis, "Genesis active bytes are not locked to authorityBaseCommit")
 
@@ -175,7 +217,9 @@ require("item_id" in baptist_normalizer and "secondary_id" in baptist_normalizer
 require("number.is_integer" in baptist_normalizer, "Baptist float years are not normalized")
 require("cmp /tmp/first.csv" in read(".github/workflows/baptist-proof-ledger-v2.yml"), "Baptist canonical output is not determinism-tested")
 
-require((ROOT / "archive-ledgers/README.md").is_file(), "main lacks durable archive-branch index")
+archive_index = read("archive-ledgers/README.md")
+require("archive/legacy-diverged-heads-20260801" in archive_index, "forensic archive is not indexed on main")
+require("Neutralized aliases" in archive_index, "neutralized branch aliases are not documented")
 
 if errors:
     print(f"Repository authority integrity: FAIL ({len(errors)})", file=sys.stderr)
