@@ -2,25 +2,31 @@
 
 **Дата:** 2026-08-01  
 **Research base:** `20fafafd733dfabbe4280c8d78ed58344e5b1e2f`  
-**Активный evidence-слой:** `RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE25_2026-08-01.csv.gz.b64`  
+**Активный evidence-контракт:** ordered union файлов Stage18–Stage25  
 **Production/site claim:** нет
 
 ## Зачем этот файл
 
-Stage25 завершил разметку всего доступного локального корпуса. Следующий шаг —
-не Stage26 с повторным пересказом тех же PDF, а одна машинно проверяемая граница
-между исследовательскими данными и допустимым публикационным использованием.
+Stage25 завершил последнюю незакрытую часть разметки доступного локального
+корпуса, но сам файл Stage25 содержит только свой последний overlay. Полная
+постраничная authority складывается из восьми независимых файлов Stage18–25.
+Следующий шаг — не Stage26 с повторным пересказом тех же PDF, а одна машинно
+проверяемая граница между этими overlays и допустимым публикационным
+использованием.
 
 Канонические точки входа:
 
-- `data/bratsky-listok-authority-manifest.json` — 22 локальные позиции,
-  coverage-классы, byte-variant и восемь полностью неизвестных выпусков;
+- `data/bratsky-listok-authority-manifest.json` — compiled authority над
+  Stage18–25, 22 локальные позиции, coverage-классы, byte-variant и восемь
+  полностью неизвестных выпусков;
 - `data/bratsky-listok-publication-ledger.json` — один bounded research bundle,
   обязательные disclosure и запрещённые выводы;
 - `scripts/validate_bratsky_listok_authority_manifest.py` — fail-closed проверка;
-- Stage25 — активная cumulative page-map;
-- Stage24 сохраняется как исторический predecessor, но запрещён как прямой
-  publication input.
+- Stage18–25 — восемь прямых evidence inputs, читаемых как ordered overlay union.
+
+Ни один отдельный Stage18–25 не является cumulative-экспортом всего корпуса.
+Stage24 не superseded: он остаётся активным evidence overlay для ноября 1906 и
+ноября 1908. Stage25 добавляет четыре карты 1906 года и завершает union.
 
 ## Точная граница локального корпуса
 
@@ -45,6 +51,24 @@ Coverage-класс означает:
 Даже `full` не превращает пересказ в автоматическое разрешение на прямую цитату:
 цитата должна быть снова привязана к строке факсимиле.
 
+## Evidence chain
+
+```text
+Stage18 — 1908 №5, №8; 1907 №9 targeted
+Stage19 — 1908 №2; 1909 №2, №7, №9 targeted
+Stage20 — 1910 №6, №7, №8
+Stage21 — 1910 №11, №12
+Stage22 — 1908 №10 substitute; 1909 №10
+Stage23 — 1907 №11 truncated; 1907 №12
+Stage24 — 1906 №11; 1908 №11
+Stage25 — 1906 №6, №7, №8, №9
+```
+
+Validator декодирует Stage25 из base64+gzip, читает остальные CSV, объединяет
+все строки и требует присутствия каждого из 22 issue SHA-256 и каждой
+семантической позиции. Удаление или ошибочная замена любого overlay делает CI
+красным.
+
 ## Восемь полностью неизвестных выпусков
 
 ```text
@@ -67,11 +91,11 @@ Coverage-класс означает:
 
 1. точный Research commit;
 2. SHA-256 authority manifest;
-3. только Stage25 как активный page-evidence input;
+3. полный ordered input set Stage18–25;
 4. issue-level writing guards;
 5. отдельное решение по правам и изображениям;
 6. явное disclosure о восьми неизвестных выпусках.
 
 Manifest не создаёт новую статью, не меняет исторические выводы и не даёт
-production authority. Он устраняет необходимость вручную помнить, какой Stage
-сейчас действующий и какие лакуны нельзя замалчивать.
+production authority. Он устраняет необходимость вручную помнить, какие Stage
+составляют действующую карту и какие лакуны нельзя замалчивать.
