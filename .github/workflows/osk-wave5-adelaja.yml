@@ -1,0 +1,35 @@
+name: OSK Wave 5 Adelaja Boundary
+
+on:
+  pull_request:
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/39_WAVE5_ADELAJA_FINAL_BOUNDARY_2026-08-01.md'
+      - 'data/osk-wave5-decisions-2026-08-01.json'
+      - 'data/osk-wave5-source-registry-2026-08-01.json'
+      - 'data/osk-wave5-source-registry-*-2026-08-01.json'
+      - 'scripts/validate_osk_wave5_adelaja.py'
+      - '.github/workflows/osk-wave5-adelaja.yml'
+  push:
+    branches: [main]
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/39_WAVE5_ADELAJA_FINAL_BOUNDARY_2026-08-01.md'
+      - 'data/osk-wave5-decisions-2026-08-01.json'
+      - 'data/osk-wave5-source-registry-2026-08-01.json'
+      - 'data/osk-wave5-source-registry-*-2026-08-01.json'
+      - 'scripts/validate_osk_wave5_adelaja.py'
+      - '.github/workflows/osk-wave5-adelaja.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_osk_wave5_adelaja.py
+      - name: Validate Wave 5 authority
+        run: python scripts/validate_osk_wave5_adelaja.py
