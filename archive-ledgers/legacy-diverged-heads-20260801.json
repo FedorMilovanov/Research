@@ -1,0 +1,427 @@
+{
+  "repository": "FedorMilovanov/Research",
+  "mainShaAtArchive": "f50b21ad6af5dd7aaa53c5be381929b353b26d58",
+  "createdAt": "2026-08-01T15:39:51.256570+00:00",
+  "archiveBranch": "archive/legacy-diverged-heads-20260801",
+  "policy": "Each source tip is an additional parent of the archive anchor; full commit history remains reachable. Original working refs are deleted only after ancestry verification.",
+  "branches": [
+    {
+      "branch": "agent/genesis6-enoch-70-71-locus-decision",
+      "ref": "origin/agent/genesis6-enoch-70-71-locus-decision",
+      "sha": "b48ab79ecac7a09e59d751e9d7f669bd6404e2f3",
+      "commitDate": "2026-07-28T03:37:53+03:00",
+      "subject": "test(enoch): enforce 70-71 evidence resolution",
+      "treeSha": "8259da744eaba2100bd2d1f9940ad4c7a7fcf599",
+      "ageHours": 110.88,
+      "relation": "diverged",
+      "ahead": 4,
+      "behind": 219,
+      "mergeBase": "11e86a120f212d75cf01667d7d3bfa72ed9c327a",
+      "sameTreeRefs": [],
+      "pullRequests": [],
+      "openPullRequests": [],
+      "exactMergedPullRequests": [],
+      "protectedPrefix": false,
+      "descendants": [],
+      "uniqueCommits": [
+        {
+          "sha": "870de54f6918e5aacb1799d582c8340fcd72bb53",
+          "date": "2026-07-28T03:32:46+03:00",
+          "subject": "research(enoch): decide 70-71 Son of Man locus"
+        },
+        {
+          "sha": "59eefeebc5fcffede867b07e6fe8048e5d7fc892",
+          "date": "2026-07-28T03:35:50+03:00",
+          "subject": "research(enoch): register 70-71 locus decision"
+        },
+        {
+          "sha": "c809a138983568b3439c8b7a5fdc60a8b4f0a670",
+          "date": "2026-07-28T03:36:45+03:00",
+          "subject": "research(enoch): close 70-71 version-composition gate"
+        },
+        {
+          "sha": "b48ab79ecac7a09e59d751e9d7f669bd6404e2f3",
+          "date": "2026-07-28T03:37:53+03:00",
+          "subject": "test(enoch): enforce 70-71 evidence resolution"
+        }
+      ],
+      "files": [
+        {
+          "status": "M",
+          "path": "data/genesis6-enoch-extension-authority-manifest.json",
+          "additions": 19,
+          "deletions": 3
+        },
+        {
+          "status": "M",
+          "path": "data/genesis6-enoch-extension-publication-ledger.json",
+          "additions": 13,
+          "deletions": 5
+        },
+        {
+          "status": "M",
+          "path": "scripts/validate_genesis6_enoch_extension.py",
+          "additions": 24,
+          "deletions": 4
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\242\\320\\240\\320\\243\\320\\224\\320\\235\\320\\253\\320\\225 \\320\\242\\320\\225\\320\\232\\320\\241\\320\\242\\320\\253/1_ENOCH_LXII_70_71_SON_OF_MAN_VERSION_AND_COMPOSITION_DECISION.md\"",
+          "additions": 268,
+          "deletions": 0
+        }
+      ],
+      "fileCount": 4,
+      "topLevelCounts": {
+        "\"\\320\\242\\320\\240\\320\\243\\320\\224\\320\\235\\320\\253\\320\\225 \\320\\242\\320\\225\\320\\232\\320\\241\\320\\242\\320\\253": 1,
+        "data": 2,
+        "scripts": 1
+      },
+      "mainDiffSha256": "c5a329ab935defd9c5f45a3482f201b16242e2b9a83eb0067072276f2817f46e",
+      "workflowOnly": false,
+      "reportOrWorkflowOnly": false,
+      "docsDataOnly": false,
+      "suggestedAction": "REVIEW_UNIQUE_MIXED"
+    },
+    {
+      "branch": "arena/019f763c-research",
+      "ref": "origin/arena/019f763c-research",
+      "sha": "1f07f3d4d769d27439c19fa337f38f3ca096db19",
+      "commitDate": "2026-07-18T18:06:19Z",
+      "subject": "UPDATE HOLD STATUSES: All 6 restrictive cases successfully verified to Level A",
+      "treeSha": "12d43243efd81e70a0f087e332b4b6f031d5c262",
+      "ageHours": 333.41,
+      "relation": "diverged",
+      "ahead": 3,
+      "behind": 545,
+      "mergeBase": "363b840343dccbf4a0ce9107c7520380efce72cc",
+      "sameTreeRefs": [],
+      "pullRequests": [],
+      "openPullRequests": [],
+      "exactMergedPullRequests": [],
+      "protectedPrefix": false,
+      "descendants": [],
+      "uniqueCommits": [
+        {
+          "sha": "85ae7042c128ac7a3793ed405bbc1b83574f4009",
+          "date": "2026-07-18T17:48:21Z",
+          "subject": "RESEARCH DEEPENING: Consolidate TODOs and missing gaps"
+        },
+        {
+          "sha": "caa47191b91a4e13eae6adbd9fec1fab063e0f21",
+          "date": "2026-07-18T18:05:27Z",
+          "subject": "CREATE 5 THEMATIC MEGADOSSERS FOR SERIES SERDCE"
+        },
+        {
+          "sha": "1f07f3d4d769d27439c19fa337f38f3ca096db19",
+          "date": "2026-07-18T18:06:19Z",
+          "subject": "UPDATE HOLD STATUSES: All 6 restrictive cases successfully verified to Level A"
+        }
+      ],
+      "files": [
+        {
+          "status": "M",
+          "path": "AUDIT_PROJECT_INTEGRITY_CASE.md",
+          "additions": 14,
+          "deletions": 14
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\224\\320\\266\\320\\276\\320\\275 \\320\\223\\320\\270\\320\\273\\320\\273/08_ETERNAL_JUSTIFICATION_AND_COVENANT.md\"",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\224\\320\\266\\320\\276\\320\\275 \\320\\223\\320\\270\\320\\273\\320\\273/19_EXEGESIS_VERIFICATION_EXPOSITION_AND_CAUSE_OF_TRUTH.md\"",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\224\\320\\266\\320\\276\\320\\275 \\320\\223\\320\\270\\320\\273\\320\\273/23_SECTION_LVII_WORLD_VERBATIM_AND_ETERNAL_JUSTIFICATION_VERIFIED.md\"",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\224\\320\\266\\320\\276\\320\\275 \\320\\223\\320\\270\\320\\273\\320\\273/25_COVENANT_ARCHITECTURE_VERBATIM.md\"",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\236\\320\\221\\320\\240\\320\\220\\320\\242\\320\\235\\320\\220\\320\\257 \\320\\241\\320\\242\\320\\236\\320\\240\\320\\236\\320\\235\\320\\220 \\320\\232\\320\\220\\320\\244\\320\\225\\320\\224\\320\\240\\320\\253 \\320\\241\\320\\225\\320\\240\\320\\230\\320\\257/35_ANATOMY_OF_MANIPULATION_8_MECHANISMS.md\"",
+          "additions": 126,
+          "deletions": 0
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\236\\320\\221\\320\\240\\320\\220\\320\\242\\320\\235\\320\\220\\320\\257 \\320\\241\\320\\242\\320\\236\\320\\240\\320\\236\\320\\235\\320\\220 \\320\\232\\320\\220\\320\\244\\320\\225\\320\\224\\320\\240\\320\\253 \\320\\241\\320\\225\\320\\240\\320\\230\\320\\257/36_HEALTH_CHURCH_SERIES_ARTICLES_4_TO_9_RESEARCH.md\"",
+          "additions": 90,
+          "deletions": 0
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\236\\320\\221\\320\\240\\320\\220\\320\\242\\320\\235\\320\\220\\320\\257 \\320\\241\\320\\242\\320\\236\\320\\240\\320\\236\\320\\235\\320\\220 \\320\\232\\320\\220\\320\\244\\320\\225\\320\\224\\320\\240\\320\\253 \\320\\241\\320\\225\\320\\240\\320\\230\\320\\257/CROSS_REFERENCE_20_ANTISOVETOV.md\"",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/00_README_AND_NAVIGATION.md\"",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/01_MASTER_INDEX_AND_SERIES_STRUCTURE.md\"",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/57_V61_VERIFIED_QUOTE_CARDS_SCOUGAL_CLARKSON_OWEN.md\"",
+          "additions": 4,
+          "deletions": 4
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/MEGA_01_ANTHROPOLOGY_FOUR_STATES.md\"",
+          "additions": 37,
+          "deletions": 0
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/MEGA_02_AFFECTIONS_AND_HEART_IDOLS.md\"",
+          "additions": 33,
+          "deletions": 0
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/MEGA_03_TEMPTATION_AND_SPIRITUAL_WARFARE.md\"",
+          "additions": 32,
+          "deletions": 0
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/MEGA_04_TONGUE_AND_SPEECH_OVERFLOW.md\"",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/MEGA_05_BODY_SENSES_AND_COMFORTS.md\"",
+          "additions": 19,
+          "deletions": 0
+        }
+      ],
+      "fileCount": 16,
+      "topLevelCounts": {
+        "\"\\320\\224\\320\\266\\320\\276\\320\\275 \\320\\223\\320\\270\\320\\273\\320\\273": 4,
+        "\"\\320\\236\\320\\221\\320\\240\\320\\220\\320\\242\\320\\235\\320\\220\\320\\257 \\320\\241\\320\\242\\320\\236\\320\\240\\320\\236\\320\\235\\320\\220 \\320\\232\\320\\220\\320\\244\\320\\225\\320\\224\\320\\240\\320\\253 \\320\\241\\320\\225\\320\\240\\320\\230\\320\\257": 3,
+        "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225": 8,
+        "AUDIT_PROJECT_INTEGRITY_CASE.md": 1
+      },
+      "mainDiffSha256": "8d6b5801d1b29cd98b0189a4e7b97dc6a1ca35632ede97413e10be91b96aba64",
+      "workflowOnly": false,
+      "reportOrWorkflowOnly": false,
+      "docsDataOnly": false,
+      "suggestedAction": "REVIEW_UNIQUE_MIXED"
+    },
+    {
+      "branch": "arena/019f763d-research",
+      "ref": "origin/arena/019f763d-research",
+      "sha": "e656578220fc3c48fc9fe958817ef72693834297",
+      "commitDate": "2026-07-18T20:15:09Z",
+      "subject": "Добавить P0-досье о покаянии и Эдеме",
+      "treeSha": "f2f89f6c21d198388bc71c3301ec9075d8b41b5a",
+      "ageHours": 331.26,
+      "relation": "diverged",
+      "ahead": 2,
+      "behind": 545,
+      "mergeBase": "363b840343dccbf4a0ce9107c7520380efce72cc",
+      "sameTreeRefs": [],
+      "pullRequests": [],
+      "openPullRequests": [],
+      "exactMergedPullRequests": [],
+      "protectedPrefix": false,
+      "descendants": [],
+      "uniqueCommits": [
+        {
+          "sha": "75678cb115a9b94596e8826e183ba57bb9107218",
+          "date": "2026-07-18T17:25:26Z",
+          "subject": "Добавить R10 о суде сердца и воскресении"
+        },
+        {
+          "sha": "e656578220fc3c48fc9fe958817ef72693834297",
+          "date": "2026-07-18T20:15:09Z",
+          "subject": "Добавить P0-досье о покаянии и Эдеме"
+        }
+      ],
+      "files": [
+        {
+          "status": "M",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/71_R9_CHRIST_OF_REVELATION.md\"",
+          "additions": 3,
+          "deletions": 1
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/72_R10_JUDGMENT_TWO_RESURRECTIONS.md\"",
+          "additions": 761,
+          "deletions": 0
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/73_R11_CONTRITE_HEART_REPENTANCE.md\"",
+          "additions": 812,
+          "deletions": 0
+        },
+        {
+          "status": "A",
+          "path": "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225/74_R12_EDEN_FALL_HEART.md\"",
+          "additions": 725,
+          "deletions": 0
+        }
+      ],
+      "fileCount": 4,
+      "topLevelCounts": {
+        "\"\\320\\241\\320\\225\\320\\240\\320\\230\\320\\257 \\320\\241\\320\\225\\320\\240\\320\\224\\320\\246\\320\\225": 4
+      },
+      "mainDiffSha256": "8aa6b73be4350c38e09721a2b037b671fc9671ebd1949ae531a6703626265906",
+      "workflowOnly": false,
+      "reportOrWorkflowOnly": false,
+      "docsDataOnly": false,
+      "suggestedAction": "REVIEW_UNIQUE_MIXED"
+    },
+    {
+      "branch": "audit/gill-final-master-2026-07-09",
+      "ref": "origin/audit/gill-final-master-2026-07-09",
+      "sha": "aeb7526d5910f26bb98408684463d9f357c508e5",
+      "commitDate": "2026-07-09T14:32:04+03:00",
+      "subject": "Gill audit: consolidate evidence archive and current governance",
+      "treeSha": "3f6d115b2f28f86804dd519fd20a221ba5b6b44a",
+      "ageHours": 555.98,
+      "relation": "diverged",
+      "ahead": 1,
+      "behind": 573,
+      "mergeBase": "58e1ea5fab638812ae693a1d0b1e79c4dcb47131",
+      "sameTreeRefs": [],
+      "pullRequests": [
+        {
+          "number": 2,
+          "state": "closed",
+          "draft": true,
+          "mergedAt": null,
+          "closedAt": "2026-07-24T10:58:14Z",
+          "headSha": "aeb7526d5910f26bb98408684463d9f357c508e5",
+          "baseRef": "main",
+          "title": "Gill audit: evidence archive, current matrix and agent rules"
+        }
+      ],
+      "openPullRequests": [],
+      "exactMergedPullRequests": [],
+      "protectedPrefix": false,
+      "descendants": [],
+      "uniqueCommits": [
+        {
+          "sha": "aeb7526d5910f26bb98408684463d9f357c508e5",
+          "date": "2026-07-09T14:32:04+03:00",
+          "subject": "Gill audit: consolidate evidence archive and current governance"
+        }
+      ],
+      "files": [
+        {
+          "status": "M",
+          "path": "AGENT_RULES.md",
+          "additions": 137,
+          "deletions": 20
+        },
+        {
+          "status": "A",
+          "path": "incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md",
+          "additions": 11557,
+          "deletions": 0
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\224\\320\\266\\320\\276\\320\\275 \\320\\223\\320\\270\\320\\273\\320\\273/00_README_AND_NAVIGATION.md\"",
+          "additions": 126,
+          "deletions": 67
+        },
+        {
+          "status": "M",
+          "path": "\"\\320\\224\\320\\266\\320\\276\\320\\275 \\320\\223\\320\\270\\320\\273\\320\\273/31_GILL_DEPT_MASTER_MAP.md\"",
+          "additions": 148,
+          "deletions": 62
+        }
+      ],
+      "fileCount": 4,
+      "topLevelCounts": {
+        "\"\\320\\224\\320\\266\\320\\276\\320\\275 \\320\\223\\320\\270\\320\\273\\320\\273": 2,
+        "AGENT_RULES.md": 1,
+        "incoming": 1
+      },
+      "mainDiffSha256": "64bb7f8feb0cf8dfe2f8cc77be31e551fdcdcdfe6c20e8da59c1d4da1e4a85a0",
+      "workflowOnly": false,
+      "reportOrWorkflowOnly": false,
+      "docsDataOnly": false,
+      "suggestedAction": "REVIEW_UNIQUE_MIXED"
+    },
+    {
+      "branch": "research/mayakovsky-brik-primary-corpus-2026-07-22",
+      "ref": "origin/research/mayakovsky-brik-primary-corpus-2026-07-22",
+      "sha": "07197a93b76517cfe71a5981a5c2a05fe91ecdfe",
+      "commitDate": "2026-07-22T21:55:49+03:00",
+      "subject": "research(mayakovsky): establish Brik correspondence and archive source dossier",
+      "treeSha": "ec4554057529b46f02a12820c787a7fbcf25538b",
+      "ageHours": 236.58,
+      "relation": "diverged",
+      "ahead": 1,
+      "behind": 543,
+      "mergeBase": "8569bb19ad95e3684261197c781c8e961d452471",
+      "sameTreeRefs": [],
+      "pullRequests": [
+        {
+          "number": 6,
+          "state": "closed",
+          "draft": true,
+          "mergedAt": null,
+          "closedAt": "2026-07-22T19:05:51Z",
+          "headSha": "07197a93b76517cfe71a5981a5c2a05fe91ecdfe",
+          "baseRef": "main",
+          "title": "Research: первоисточники Маяковского и Бриков, корпус переписки 1–416"
+        }
+      ],
+      "openPullRequests": [],
+      "exactMergedPullRequests": [],
+      "protectedPrefix": false,
+      "descendants": [],
+      "uniqueCommits": [
+        {
+          "sha": "07197a93b76517cfe71a5981a5c2a05fe91ecdfe",
+          "date": "2026-07-22T21:55:49+03:00",
+          "subject": "research(mayakovsky): establish Brik correspondence and archive source dossier"
+        }
+      ],
+      "files": [
+        {
+          "status": "A",
+          "path": "\"\\320\\234\\320\\260\\321\\217\\320\\272\\320\\276\\320\\262\\321\\201\\320\\272\\320\\270\\320\\271 \\320\\270 \\320\\221\\321\\200\\320\\270\\320\\272\\320\\270/PRIMARY_SOURCE_MASTER_DOSSIER_2026-07-22.md\"",
+          "additions": 634,
+          "deletions": 0
+        }
+      ],
+      "fileCount": 1,
+      "topLevelCounts": {
+        "\"\\320\\234\\320\\260\\321\\217\\320\\272\\320\\276\\320\\262\\321\\201\\320\\272\\320\\270\\320\\271 \\320\\270 \\320\\221\\321\\200\\320\\270\\320\\272\\320\\270": 1
+      },
+      "mainDiffSha256": "9f960097576bb4d20153002bff484287120634300449a802c9c005c6fa040c61",
+      "workflowOnly": false,
+      "reportOrWorkflowOnly": false,
+      "docsDataOnly": false,
+      "suggestedAction": "REVIEW_UNIQUE_MIXED"
+    }
+  ]
+}
