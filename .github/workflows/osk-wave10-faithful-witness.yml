@@ -4,6 +4,12 @@ on:
   pull_request:
     paths:
       - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'data/repository-evidence-policy-v2.json'
+      - 'data/osk-source-registry-core-*-2026-08-01.json'
+      - 'data/osk-wave2-source-registry-*-2026-08-01.json'
+      - 'data/osk-wave7-article-audit-source-registry-2026-08-01.json'
+      - 'data/osk-wave9-modern-diotrophes-source-manifest-2026-08-01.json'
+      - 'data/osk-wave9-modern-diotrophes-outline-2026-08-01.json'
       - 'data/osk-wave10-faithful-witness-cases-2026-08-01.json'
       - 'data/osk-wave10-faithful-witness-new-sources-2026-08-01.json'
       - 'data/osk-wave10-twenty-faithful-responses-2026-08-01.json'
@@ -14,6 +20,12 @@ on:
     branches: [main]
     paths:
       - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'data/repository-evidence-policy-v2.json'
+      - 'data/osk-source-registry-core-*-2026-08-01.json'
+      - 'data/osk-wave2-source-registry-*-2026-08-01.json'
+      - 'data/osk-wave7-article-audit-source-registry-2026-08-01.json'
+      - 'data/osk-wave9-modern-diotrophes-source-manifest-2026-08-01.json'
+      - 'data/osk-wave9-modern-diotrophes-outline-2026-08-01.json'
       - 'data/osk-wave10-faithful-witness-cases-2026-08-01.json'
       - 'data/osk-wave10-faithful-witness-new-sources-2026-08-01.json'
       - 'data/osk-wave10-twenty-faithful-responses-2026-08-01.json'
@@ -26,12 +38,12 @@ permissions:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: Compile validator
-        run: python -m py_compile scripts/validate_osk_wave10_faithful_witness.py
-      - name: Validate faithful-witness authority
-        run: python scripts/validate_osk_wave10_faithful_witness.py
+        run: python3 -m py_compile scripts/validate_osk_wave10_faithful_witness.py
+      - name: Validate faithful-witness authority and parent source pool
+        run: python3 scripts/validate_osk_wave10_faithful_witness.py
       - name: Ensure validation is read-only
         run: git diff --exit-code
