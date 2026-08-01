@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 2,
+  "authorityId": "RESEARCH-PUBLIC-PROJECTION-CURRENT-2026-08-02",
+  "status": "CURRENT",
+  "baseQueue": "data/public-projection-queue-2026-08-01.json",
+  "overlays": [
+    "data/public-projection-osk-wave6-overlay-2026-08-01.json"
+  ],
+  "compositionRule": "Load the base queue by record id, replace every supersedes_queue_record_id with overlay.effective_record, then recompute counts. Consumers must not read the base queue as current without applying all listed overlays.",
+  "researchAuthority": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+  "researchAuthoritySnapshot": "1466b65a4449bac968a28d7da2d2b78db545e29e",
+  "productSnapshot": "efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3",
+  "effectiveCounts": {
+    "PROMOTE": 0,
+    "REFERENCE": 4,
+    "SUPERSEDED": 0,
+    "BLOCKED": 6,
+    "total": 10
+  },
+  "currentRecordOverrides": [
+    "osk-power-dark-side-standalone"
+  ],
+  "policy": {
+    "baseQueueAloneIsHistorical": true,
+    "overlayApplicationRequired": true,
+    "countsMustBeRecomputed": true,
+    "researchClosureIsNotPublication": true,
+    "promoteRequiresNoHolds": true
+  }
+}
