@@ -1,0 +1,37 @@
+name: OSK Wave 10 Faithful Witness
+
+on:
+  pull_request:
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'data/osk-wave10-faithful-witness-cases-2026-08-01.json'
+      - 'data/osk-wave10-faithful-witness-new-sources-2026-08-01.json'
+      - 'data/osk-wave10-twenty-faithful-responses-2026-08-01.json'
+      - 'scripts/validate_osk_wave10_faithful_witness.py'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/43_WAVE10_FAITHFUL_WITNESS_UNDER_PRESSURE_2026-08-01.md'
+      - '.github/workflows/osk-wave10-faithful-witness.yml'
+  push:
+    branches: [main]
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'data/osk-wave10-faithful-witness-cases-2026-08-01.json'
+      - 'data/osk-wave10-faithful-witness-new-sources-2026-08-01.json'
+      - 'data/osk-wave10-twenty-faithful-responses-2026-08-01.json'
+      - 'scripts/validate_osk_wave10_faithful_witness.py'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/43_WAVE10_FAITHFUL_WITNESS_UNDER_PRESSURE_2026-08-01.md'
+      - '.github/workflows/osk-wave10-faithful-witness.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_osk_wave10_faithful_witness.py
+      - name: Validate faithful-witness authority
+        run: python scripts/validate_osk_wave10_faithful_witness.py
+      - name: Ensure validation is read-only
+        run: git diff --exit-code
