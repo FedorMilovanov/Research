@@ -2,7 +2,7 @@
 
 **Дата:** 2026-08-01  
 **Статус:** `ACTIVE ROOT AUTHORITY / WAVE-BASED CLOSURE`  
-**Current base:** `49f49f89cceb53f8146de3426ccc71f3c6ad1818`
+**Current base:** `bfaa54b71231b86f1b6aa2c4b6017690f2172739`
 
 ## Назначение
 
@@ -50,6 +50,7 @@ Parsed text, OCR и repository paraphrase сами по себе не дают `
 ## Current corpus authorities
 
 - `СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/42_WAVE9_MODERN_DIOTROPHES_EDITORIAL_OUTLINE_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/40_WAVE6_SITE_TRANSFER_PUBLICATION_LEDGER_2026-08-01.md`;
 - `PUBLIC_PROJECTION_OSK_WAVE6_OVERLAY_2026-08-01.md`;
@@ -81,18 +82,22 @@ or machine ledger governs.
 - OSK Wave 5: Adelaja / King’s Capital final procedural boundary and 52-source pass.
 - OSK Wave 6: 20-point publication ledger + 10 future article bundles.
 - OSK Wave 7: product paragraph audit — **20 preserved points / 14 mandatory fixes /
-  12 source notes / 54-source control pool / 0 product writes**.
+  12 source notes / 54-source control pool**.
+- OSK Wave 8: product correction PR merged at `41617252e18939599e1e3f45e62d8d10d0fd1b27` —
+  **14 corrections / 20 anchors / 29 curated reader links / permanent read-only contract**.
+- OSK Wave 9: «Диотрефы нашего времени» — **21 bounded core cards / one mechanism each /
+  119 case-evidence sources + 29 controls = 148 sources / 0 product writes**.
 - Cumulative OSK case authority: **290 sources / 216 A-class / 197 exact URLs / 105 quote-safe**.
 - Effective OSK routing:
   `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 4 STANDALONE / 0 HOLD`.
 - All 33 OSK cases have an explicit route; no generic case-level HOLD remains.
-- A06 OSK projection: `REFERENCE / PUBLICATION_HOLD`, **NO PRODUCT WRITE**.
+- A06 OSK projection: `REFERENCE / PUBLICATION_HOLD`.
 
 ### Active
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK Wave 8 separate product PR applying exactly 14 mandatory fixes and 12 source notes;
+- OSK Wave 10 separate product draft for `/articles/diotrefy-nashego-vremeni/`;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 

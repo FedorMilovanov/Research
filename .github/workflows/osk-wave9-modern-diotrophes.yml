@@ -1,0 +1,35 @@
+name: OSK Wave 9 Modern Diotrophes Outline
+
+on:
+  pull_request:
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'data/osk-wave9-modern-diotrophes-source-manifest-2026-08-01.json'
+      - 'data/osk-wave9-modern-diotrophes-outline-2026-08-01.json'
+      - 'scripts/validate_osk_wave9_modern_diotrophes.py'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/42_WAVE9_MODERN_DIOTROPHES_EDITORIAL_OUTLINE_2026-08-01.md'
+      - '.github/workflows/osk-wave9-modern-diotrophes.yml'
+  push:
+    branches: [main]
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'data/osk-wave9-modern-diotrophes-source-manifest-2026-08-01.json'
+      - 'data/osk-wave9-modern-diotrophes-outline-2026-08-01.json'
+      - 'scripts/validate_osk_wave9_modern_diotrophes.py'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/42_WAVE9_MODERN_DIOTROPHES_EDITORIAL_OUTLINE_2026-08-01.md'
+      - '.github/workflows/osk-wave9-modern-diotrophes.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_osk_wave9_modern_diotrophes.py
+      - name: Validate 148-source editorial outline
+        run: python scripts/validate_osk_wave9_modern_diotrophes.py
+      - name: Ensure validation is read-only
+        run: git diff --exit-code
