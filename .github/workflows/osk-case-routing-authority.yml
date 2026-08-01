@@ -1,0 +1,44 @@
+name: OSK Case Routing Authority
+
+on:
+  pull_request:
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/35_CURRENT_AUTHORITY_POWER_CASE_ROUTING_2026-08-01.md'
+      - 'data/osk-case-routing-source-registry-2026-08-01.json'
+      - 'data/osk-case-routing-registry-2026-08-01.json'
+      - 'data/osk-source-registry-core-*-2026-08-01.json'
+      - 'scripts/validate_osk_case_routing_authority.py'
+      - '.github/workflows/osk-case-routing-authority.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/35_CURRENT_AUTHORITY_POWER_CASE_ROUTING_2026-08-01.md'
+      - 'data/osk-case-routing-source-registry-2026-08-01.json'
+      - 'data/osk-case-routing-registry-2026-08-01.json'
+      - 'data/osk-source-registry-core-*-2026-08-01.json'
+      - 'scripts/validate_osk_case_routing_authority.py'
+      - '.github/workflows/osk-case-routing-authority.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact head
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_osk_case_routing_authority.py
+
+      - name: Validate authority and registries
+        run: python scripts/validate_osk_case_routing_authority.py
