@@ -9,6 +9,7 @@
 ## Текущая authority и правила
 
 - Межкорпусная текущая authority: [`00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md`](00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md).
+- Текущая control-plane authority: [`00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md`](00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md).
 - Правила агентов: [`AGENT_RULES.md`](AGENT_RULES.md).
 - Каноническая машинная evidence-policy: [`data/repository-evidence-policy-v2.json`](data/repository-evidence-policy-v2.json).
 - Текущая public-projection authority: [`data/public-projection-current-2026-08-02.json`](data/public-projection-current-2026-08-02.json).
@@ -50,7 +51,7 @@
 * [L 4Q204 open transcription schematic — implementation-ready](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_6_4Q204_OPEN_TRANSCRIPTION_SCHEMATIC_SPEC_L.md)
 * [Готовый запрос IAA на 4Q204](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/PERMISSION_REQUEST_IAA_4Q204_EN_L.md)
 * [Готовый запрос Vatican Library на P72](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/PERMISSION_REQUEST_BAV_P72_EN_L.md)
-* [XLIX closeout — контрольный прогон 62+ узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%AB%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLIX_CONTROL_RUN_CLOSEOUT.md)
+* [XLIX closeout — контрольный прогон 62+ узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLIX_CONTROL_RUN_CLOSEOUT.md)
 * [XLIX manifest — 56 основных и 6+ дополнительных контрольных узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_56_SOURCE_CONTROL_MANIFEST.md)
 
 ### Текущие site-ready статьи
