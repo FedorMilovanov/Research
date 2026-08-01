@@ -1,0 +1,35 @@
+name: OSK Wave 6 Site Transfer Ledger
+
+on:
+  pull_request:
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'PUBLIC_PROJECTION_OSK_WAVE6_OVERLAY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/40_WAVE6_SITE_TRANSFER_PUBLICATION_LEDGER_2026-08-01.md'
+      - 'data/osk-wave6-site-transfer-ledger-2026-08-01.json'
+      - 'data/public-projection-osk-wave6-overlay-2026-08-01.json'
+      - 'scripts/validate_osk_wave6_site_transfer.py'
+      - '.github/workflows/osk-wave6-site-transfer.yml'
+  push:
+    branches: [main]
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'PUBLIC_PROJECTION_OSK_WAVE6_OVERLAY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/40_WAVE6_SITE_TRANSFER_PUBLICATION_LEDGER_2026-08-01.md'
+      - 'data/osk-wave6-site-transfer-ledger-2026-08-01.json'
+      - 'data/public-projection-osk-wave6-overlay-2026-08-01.json'
+      - 'scripts/validate_osk_wave6_site_transfer.py'
+      - '.github/workflows/osk-wave6-site-transfer.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_osk_wave6_site_transfer.py
+      - name: Validate Wave 6 publication ledger
+        run: python scripts/validate_osk_wave6_site_transfer.py

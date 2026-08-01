@@ -2,7 +2,7 @@
 
 **Дата:** 2026-08-01  
 **Статус:** `ACTIVE ROOT AUTHORITY / WAVE-BASED CLOSURE`  
-**Current base:** `48fc47f7df447d87312a72be25e6b71718afde86`
+**Current base:** `446a83932d4ec446b4c87e2c7b2fb02aeeee49eb`
 
 ## Назначение
 
@@ -50,6 +50,8 @@ Parsed text, OCR и repository paraphrase сами по себе не дают `
 ## Current corpus authorities
 
 - `СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/40_WAVE6_SITE_TRANSFER_PUBLICATION_LEDGER_2026-08-01.md`;
+- `PUBLIC_PROJECTION_OSK_WAVE6_OVERLAY_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/39_WAVE5_ADELAJA_FINAL_BOUNDARY_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/38_WAVE4_STANDALONE_PASTORAL_CARE_LEGAL_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/37_WAVE3_DARK_SIDE_REPENTANCE_RESTORATION_2026-08-01.md`;
@@ -75,17 +77,20 @@ or machine ledger governs.
 - OSK Wave 2: eight money/power cases and 56-source pass.
 - OSK Wave 3: seven dark-side/restoration decisions and 49-source pass.
 - OSK Wave 4: three standalone pastoral-care/legal dossiers and 54-source pass.
-- OSK Wave 5: Adelaja / King’s Capital final procedural boundary and **52-source pass**.
+- OSK Wave 5: Adelaja / King’s Capital final procedural boundary and 52-source pass.
+- OSK Wave 6: **20-point publication ledger + 10 future article bundles**.
 - Cumulative OSK authority: **290 sources / 216 A-class / 197 exact URLs / 105 quote-safe**.
-- Effective routing:
+- Effective OSK routing:
   `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 4 STANDALONE / 0 HOLD`.
-- All 33 OSK cases now have an explicit current route; no generic case-level HOLD remains.
+- All 33 OSK cases have an explicit route; no generic case-level HOLD remains.
+- A06 OSK projection: `REFERENCE / PUBLICATION_HOLD`, **NO PRODUCT WRITE**.
 
 ### Active
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK site-transfer/publication ledger for `gb-is-my-strength`;
+- OSK paragraph-level audit of the current product article and selection of one
+  bounded product lane;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 
