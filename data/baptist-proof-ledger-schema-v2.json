@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "authorityId": "BAPTIST-PROOF-LEDGER-SCHEMA-2026-08-02",
+  "legacyInput": "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv",
+  "canonicalColumns": [
+    "record_id",
+    "corpus",
+    "issue",
+    "year",
+    "status",
+    "pages",
+    "holding",
+    "source",
+    "source_url",
+    "verification_note",
+    "next_action",
+    "version"
+  ],
+  "legacyFieldMapping": {
+    "record_id": ["item_id", "id"],
+    "corpus": ["corpus"],
+    "issue": ["issue"],
+    "year": ["year", "issue-derived"],
+    "status": ["status"],
+    "pages": ["pages"],
+    "holding": ["holding"],
+    "source": ["source"],
+    "source_url": ["source_url"],
+    "verification_note": ["verification_note"],
+    "next_action": ["next_action"],
+    "version": ["version"]
+  },
+  "corpusAliases": {
+    "Biulleten SRY": "Бюллетень СРУ",
+    "Biulleten SRU": "Бюллетень СРУ",
+    "Vestnik Spaseniia": "Вестник Спасения",
+    "BRATSKII LISTOK": "Братский листок",
+    "Baptist": "Баптист"
+  },
+  "normalization": {
+    "yearMustBeIntegerOrBlank": true,
+    "recordIdMustBeUnique": true,
+    "itemIdAndIdMayNotConflict": true,
+    "emptyRecordIdForbidden": true,
+    "sourceUrlMustBeHttpsOrBlank": true,
+    "legacyInputIsReadOnly": true,
+    "canonicalViewIsGeneratedDeterministically": true
+  }
+}
