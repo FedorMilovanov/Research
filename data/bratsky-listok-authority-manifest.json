@@ -10,23 +10,23 @@
     "unknownIssueContentMayNotSupportAbsenceClaims": true,
     "completeSeriesClaimAllowed": false,
     "rightsAndImageUseRequireSeparateDecision": true,
-    "driveOperationalStateIsNotPublicationAuthority": true
+    "driveOperationalStateIsNotPublicationAuthority": true,
+    "noIndividualStageIsCumulative": true
   },
-  "activeEvidence": {
-    "path": "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE25_2026-08-01.csv.gz.b64",
-    "commit": "3da5aab25505b4ccd91b629bc20bfc2ff26c434b",
-    "blobSha": "d06cd8959bfc854f9efc75c3f0005235167f51dd",
-    "encoding": "base64+gzip+csv",
-    "role": "active cumulative primary page-map evidence"
+  "compiledEvidence": {
+    "model": "ordered-overlay-union",
+    "role": "Stage18–25 together form the active primary page-map authority",
+    "artifacts": [
+      {"stage":18,"path":"RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage18_2026-07-31.csv","commit":"30cd0cbb4f65644ff40d82f5120546023657d9b2","encoding":"csv"},
+      {"stage":19,"path":"RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage19_2026-07-31.csv","commit":"f9a393c1262bd9a0eaa0336f5b9472da49576dc9","encoding":"csv"},
+      {"stage":20,"path":"RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage20_2026-07-31.csv","commit":"223e1acfe05bf91dfb0fededa8c037cc531c2933","encoding":"csv"},
+      {"stage":21,"path":"RUSSIAN_BAPTISTS_ARCHIVE/bratsky_listok_primary_page_map_stage21_2026-07-31.csv","commit":"c832ed1dbb88bbbbd65547173e42f96d2bce86cb","encoding":"csv"},
+      {"stage":22,"path":"RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE22_2026-08-01.csv","commit":"939c2b398aa2b5b1af28c8a6fd31c8cd0baf2d2b","encoding":"csv"},
+      {"stage":23,"path":"RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE23_2026-08-01.csv","commit":"9fffa08d99262d022f4ce0eef83b2f14c092f214","encoding":"csv"},
+      {"stage":24,"path":"RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE24_2026-08-01.csv","commit":"a9e020058e3b0d5e17439a6ee05ee84a9f5cb64a","encoding":"csv"},
+      {"stage":25,"path":"RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE25_2026-08-01.csv.gz.b64","commit":"3da5aab25505b4ccd91b629bc20bfc2ff26c434b","blobSha":"d06cd8959bfc854f9efc75c3f0005235167f51dd","encoding":"base64+gzip+csv"}
+    ]
   },
-  "supersededArtifacts": [
-    {
-      "path": "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE24_2026-08-01.csv",
-      "commit": "a9e020058e3b0d5e17439a6ee05ee84a9f5cb64a",
-      "status": "superseded-by-stage25",
-      "directPublicationInput": false
-    }
-  ],
   "localCorpusSummary": {
     "binaryFilesRetained": 23,
     "semanticPositions": 22,
