@@ -2,7 +2,7 @@
 
 **Дата:** 2026-08-01  
 **Статус:** `ACTIVE ROOT AUTHORITY / WAVE-BASED CLOSURE`  
-**Current base:** `45dca0ca83e375f8247cda01dfc33bcd7b034e6e`
+**Current base:** `7d790c4dfa6b5c82cd3ebf9d50a828aff95c808c`
 
 ## Назначение
 
@@ -50,6 +50,7 @@ Parsed text, OCR и repository paraphrase сами по себе не дают `
 ## Current corpus authorities
 
 - `СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/38_WAVE4_STANDALONE_PASTORAL_CARE_LEGAL_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/37_WAVE3_DARK_SIDE_REPENTANCE_RESTORATION_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/36_WAVE2_CONDITIONAL_MONEY_POWER_CLOSURE_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/35_CURRENT_AUTHORITY_POWER_CASE_ROUTING_2026-08-01.md`;
@@ -71,16 +72,17 @@ or machine ledger governs.
 - Genesis/Enoch named Research blockers: closed; publication hold remains.
 - OSK Wave 1: 33-case routing and 79-source register.
 - OSK Wave 2: eight money/power cases and 56-source pass.
-- OSK Wave 3: seven dark-side/restoration decisions; 49 new + 7 inherited
-  source records; cumulative OSK pool **184 sources / 145 A-class / 64 quote-safe**.
-- Effective OSK routing remains
+- OSK Wave 3: seven dark-side/restoration decisions and 49-source pass.
+- OSK Wave 4: three standalone pastoral-care/legal dossiers and **54-source pass**.
+- Cumulative OSK authority: **238 sources / 186 A-class / 148 exact URLs / 82 quote-safe**.
+- Effective routing remains
   `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 3 STANDALONE / 1 HOLD`.
 
 ### Active
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK Wave 4 standalone pastoral-care/legal and Wave 5 blocked case;
+- OSK Wave 5 blocked Adelaja case and later site-transfer ledger;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 
