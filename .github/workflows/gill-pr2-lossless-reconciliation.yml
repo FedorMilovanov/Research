@@ -24,11 +24,27 @@ jobs:
   audit:
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout complete history for commit witnesses
+      - name: Checkout complete Research history
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
-      - name: Verify archive bytes, matrix bytes, 001-480 mapping and dossier remediation
+          path: Research
+      - name: Checkout complete Product history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: FedorMilovanov/gb-is-my-strength
+          ref: 877508fbfe42883b99922e3dcc717adfa91c33ad
+          fetch-depth: 0
+          path: Product
+          persist-credentials: false
+      - name: Verify Research blobs, Product commit witnesses and 001-480 mapping
+        working-directory: Research
+        env:
+          GILL_PRODUCT_REPO: ../Product
         run: node scripts/gill-pr2-lossless-reconciliation-audit.mjs
-      - name: Ensure audit is read-only
-        run: git diff --exit-code
+      - name: Ensure both checkouts are read-only
+        run: |
+          git -C Research diff --exit-code
+          git -C Product diff --exit-code
+          test -z "$(git -C Research status --porcelain)"
+          test -z "$(git -C Product status --porcelain)"
