@@ -1,0 +1,52 @@
+name: Repository authority integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-authority-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout complete history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+
+      - name: Compile validators
+        run: |
+          python3 -m py_compile \
+            scripts/validate_repository_authority_integrity.py \
+            scripts/validate_public_projection_queue.py \
+            scripts/validate_osk_wave7_product_article_audit.py \
+            scripts/validate_osk_wave9_modern_diotrophes.py \
+            scripts/validate_osk_wave10_faithful_witness.py \
+            scripts/validate_bratsky_listok_authority_manifest.py \
+            scripts/validate_genesis6_authority_manifest.py \
+            scripts/check_heart_source_closure.py
+
+      - name: Validate repository control plane
+        run: python3 scripts/validate_repository_authority_integrity.py
+
+      - name: Run deterministic corpus validators
+        run: |
+          python3 scripts/validate_public_projection_queue.py
+          python3 scripts/validate_osk_wave7_product_article_audit.py
+          python3 scripts/validate_osk_wave9_modern_diotrophes.py
+          python3 scripts/validate_osk_wave10_faithful_witness.py
+          python3 scripts/validate_bratsky_listok_authority_manifest.py
+          python3 scripts/validate_genesis6_authority_manifest.py
+          python3 scripts/check_heart_source_closure.py
+          node scripts/gill-pr2-lossless-reconciliation-audit.mjs
+
+      - name: Ensure all validators are read-only
+        run: git diff --exit-code
