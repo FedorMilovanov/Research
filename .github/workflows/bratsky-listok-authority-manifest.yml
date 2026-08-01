@@ -1,0 +1,38 @@
+name: Bratsky Listok authority manifest
+
+on:
+  pull_request:
+    paths:
+      - "data/bratsky-listok-authority-manifest.json"
+      - "data/bratsky-listok-publication-ledger.json"
+      - "scripts/validate_bratsky_listok_authority_manifest.py"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PUBLICATION_AUTHORITY_2026-08-01.md"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE24_2026-08-01.csv"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE25_2026-08-01.csv.gz.b64"
+      - ".github/workflows/bratsky-listok-authority-manifest.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/bratsky-listok-authority-manifest.json"
+      - "data/bratsky-listok-publication-ledger.json"
+      - "scripts/validate_bratsky_listok_authority_manifest.py"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PUBLICATION_AUTHORITY_2026-08-01.md"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE24_2026-08-01.csv"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PRIMARY_PAGE_MAP_STAGE25_2026-08-01.csv.gz.b64"
+      - ".github/workflows/bratsky-listok-authority-manifest.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  authority-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_bratsky_listok_authority_manifest.py
+      - name: Validate authority and publication boundary
+        run: python scripts/validate_bratsky_listok_authority_manifest.py
