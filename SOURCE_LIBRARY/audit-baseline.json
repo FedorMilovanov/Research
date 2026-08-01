@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "authority": "TOTAL_SOURCE_AUDIT_CLOSEOUT_2026-07-30",
+  "recordedAt": "2026-07-30",
+  "dead_urls": 234,
+  "true_dead_source_repair": 45,
+  "missing_local_links": 24,
+  "publication_assets_without_provenance": 0,
+  "notes": "The raw DEAD ceiling is the 234-row recheck set from the closeout. The actionable true-dead baseline is 45 and is enforced by the classifier workflow. Production provenance gaps were closed and therefore remain zero-tolerance."
+}
