@@ -1,21 +1,22 @@
 # Research
 
-Этот репозиторий используется для сбора и систематизации информации, которую я собираю с помощью мощных AI-агентов. Это своего рода «исследовательский бэкенд» и база знаний.
+Этот репозиторий используется для сбора и систематизации информации, которую я собираю с помощью мощных AI-агентов. Это исследовательский бэкенд и база знаний.
 
 ## 🚀 Цель
 
-Автоматизированный поиск, извлечение и структурирование данных по различным темам (например, «Баптисты России», «Серия Сердце», «Обратная сторона кафедры» и др.) для последующего глубокого анализа и использования в контенте.
+Автоматизированный поиск, извлечение и структурирование данных по различным темам — «Баптисты России», «Серия Сердце», «Обратная сторона кафедры» и другим — для глубокого анализа и последующего использования в контенте.
 
-## 🌐 Связь с сайтом
+## Текущая authority и правила
 
-Все собранные и обработанные здесь данные ложатся в основу моего сайта:
-👉 [gb-is-my-strength](https://github.com/FedorMilovanov/gb-is-my-strength)
+- Межкорпусная текущая authority: [`00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md`](00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md).
+- Правила агентов: [`AGENT_RULES.md`](AGENT_RULES.md).
+- Каноническая машинная evidence-policy: [`data/repository-evidence-policy-v2.json`](data/repository-evidence-policy-v2.json).
+- Текущая public-projection authority: [`data/public-projection-current-2026-08-02.json`](data/public-projection-current-2026-08-02.json).
+- Custody-policy временных и долговечных artifacts: [`data/artifact-custody-policy-v2.json`](data/artifact-custody-policy-v2.json).
 
-## 🤖 Правила для агентов
+Глобальные классы источников: `A1`, `A2`, `A3`, `B1`, `C`, `D`. `HOLD` не является классом источника. Evidence class, access, locator, rights и publication state фиксируются отдельно. Локальные исторические обозначения действуют только внутри явно описанного legacy crosswalk и не могут переопределять глобальную policy.
 
-Все новые данные должны добавляться согласно структуре репозитория с указанием уровня верификации источника (A, B, C или HOLD).
-
-Для спорных библейско-текстологических исследований агент обязан дополнительно различать:
+Для спорных библейско-текстологических исследований агент дополнительно различает:
 
 - прямой канонический текст;
 - сохранившиеся рукописные буквы;
@@ -23,6 +24,10 @@
 - литературную связь;
 - историческую реконструкцию;
 - канонико-богословский вывод.
+
+## 🌐 Связь с сайтом
+
+Публичный продукт: [gb-is-my-strength](https://github.com/FedorMilovanov/gb-is-my-strength). Research closure сама по себе не разрешает Product write или публикацию.
 
 ## 📚 Бытие 6, Иуда, 1–2 Петра и 1 Енох
 
@@ -45,7 +50,7 @@
 * [L 4Q204 open transcription schematic — implementation-ready](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/ARTICLE_6_4Q204_OPEN_TRANSCRIPTION_SCHEMATIC_SPEC_L.md)
 * [Готовый запрос IAA на 4Q204](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/PERMISSION_REQUEST_IAA_4Q204_EN_L.md)
 * [Готовый запрос Vatican Library на P72](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/PERMISSION_REQUEST_BAV_P72_EN_L.md)
-* [XLIX closeout — контрольный прогон 62+ узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLIX_CONTROL_RUN_CLOSEOUT.md)
+* [XLIX closeout — контрольный прогон 62+ узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%AB%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_MARATHON_XLIX_CONTROL_RUN_CLOSEOUT.md)
 * [XLIX manifest — 56 основных и 6+ дополнительных контрольных узлов](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_56_SOURCE_CONTROL_MANIFEST.md)
 
 ### Текущие site-ready статьи
@@ -75,7 +80,7 @@
 * [Статья 8 — XLVII locator completion overlay](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_8_XLVII_LOCATOR_COMPLETION_OVERLAY.md)
 * [Статья 9 — постраничный claim-to-citation ledger XLVII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLE_9_PAGE_LEVEL_CLAIM_TO_CITATION_LEDGER_XLVII.md)
 * [NA28/ECM и ранние свидетели — apparatus control XLVII](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_NA28_ECM_AND_EARLY_WITNESS_APPARATUS_CONTROL_XLVII.md)
-* [Publication QA gate XLIV](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_PUBLICATION_ASSEMBLY_AND_QA_GATE_XLIV.md)
+* [Publication QA gate XLIV](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_PUBLICATION_ASSEMBLY_AND_QA_GATE_XLIV.md)
 
 ### Специализированные owners и приложения
 
@@ -112,4 +117,5 @@ FULL WITNESS APPARATUS
 
 ## 📊 Верификационные аудиты
 
-* [Аудит целостности проекта gb-is-my-strength и верификация синхронизации с Research Repo (2026-06-26)](AUDIT_PROJECT_INTEGRITY_CASE.md) — мастер-досье расхождений по уровням верификации (Level A, B, C или HOLD).
+* [Исторический аудит целостности проекта от 2026-06-26](AUDIT_PROJECT_INTEGRITY_CASE.md) — historical evidence, не текущая authority.
+* [Repository-wide authority integrity validator](scripts/validate_repository_authority_integrity.py) — текущая машинная проверка control plane, transitive inputs, byte pins и read-only behavior.
