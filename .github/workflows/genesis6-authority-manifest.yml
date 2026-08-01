@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'README.md'
+      - 'data/repository-evidence-policy-v2.json'
       - 'data/genesis6-authority-manifest.json'
       - 'data/genesis6-publication-ledger.json'
       - 'scripts/validate_genesis6_authority_manifest.py'
@@ -13,6 +14,7 @@ on:
     branches: [main]
     paths:
       - 'README.md'
+      - 'data/repository-evidence-policy-v2.json'
       - 'data/genesis6-authority-manifest.json'
       - 'data/genesis6-publication-ledger.json'
       - 'scripts/validate_genesis6_authority_manifest.py'
@@ -25,11 +27,15 @@ permissions:
 
 jobs:
   authority-contract:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout complete Research history
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
-      - name: Validate authority graph and publication ledger
+      - name: Compile validator
+        run: python3 -m py_compile scripts/validate_genesis6_authority_manifest.py
+      - name: Validate authority graph, active bytes and publication ledger
         run: python3 scripts/validate_genesis6_authority_manifest.py
+      - name: Ensure validator is read-only
+        run: git diff --exit-code
