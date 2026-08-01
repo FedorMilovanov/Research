@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "authorityId": "RESEARCH-EVIDENCE-POLICY-V2-2026-08-02",
+  "sourceClasses": {
+    "A1": "Primary legal, judicial, governmental, or participant-created record",
+    "A2": "Official independent investigation, transcript, report, or primary institutional publication",
+    "A3": "Official event-specific statement, board decision, or institutional document",
+    "B1": "High-quality secondary corroboration; never sole support for a disputed quote-safe claim",
+    "C": "Context, discovery lead, or unverified source; never quote-safe",
+    "D": "Excluded, irrelevant, unreliable, or unidentified source"
+  },
+  "accessStates": [
+    "FULL_OBJECT_VERIFIED",
+    "PARTIAL_OBJECT",
+    "CATALOG_ONLY",
+    "LINK_ONLY",
+    "NOT_ACQUIRED"
+  ],
+  "locatorStates": [
+    "EXACT_LOCATOR_VERIFIED",
+    "COARSE_LOCATOR_ONLY",
+    "LOCATOR_MISSING"
+  ],
+  "rightsStates": [
+    "PUBLICATION_ELIGIBLE",
+    "STORAGE_ONLY",
+    "PRIVATE_STUDY_ONLY",
+    "PERMISSION_REQUIRED",
+    "RIGHTS_UNKNOWN"
+  ],
+  "publicationStates": [
+    "PROMOTE",
+    "REFERENCE",
+    "SUPERSEDED",
+    "BLOCKED"
+  ],
+  "holds": [
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "ARCHIVE_HOLD",
+    "RIGHTS_HOLD",
+    "PUBLICATION_HOLD"
+  ],
+  "quoteSafeContract": {
+    "allowedEvidenceClasses": ["A1", "A2", "A3"],
+    "requiresExactLocator": true,
+    "requiresContextVerification": true,
+    "requiresIdentifiedEditionOrVersion": true,
+    "b1SoleSupportForbidden": true,
+    "cAndDForbidden": true
+  },
+  "policy": {
+    "holdIsNotEvidenceClass": true,
+    "researchPresenceIsNotPublication": true,
+    "drivePresenceIsNotRights": true,
+    "urlReachabilityIsNotContentVerification": true,
+    "bibliographicRecordIsNotFullObject": true,
+    "textualCommitOrBlobMarkerIsNotByteVerification": true,
+    "validatorsMustBeReadOnly": true,
+    "transitiveAuthorityInputsMustBeValidated": true
+  }
+}
