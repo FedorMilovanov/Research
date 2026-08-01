@@ -1,0 +1,35 @@
+name: OSK Wave 3 Dark Side Authority
+
+on:
+  pull_request:
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/37_WAVE3_DARK_SIDE_REPENTANCE_RESTORATION_2026-08-01.md'
+      - 'data/osk-wave3-decisions-2026-08-01.json'
+      - 'data/osk-wave3-source-registry-2026-08-01.json'
+      - 'data/osk-wave3-source-registry-*-2026-08-01.json'
+      - 'scripts/validate_osk_wave3_dark_side.py'
+      - '.github/workflows/osk-wave3-dark-side.yml'
+  push:
+    branches: [main]
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/37_WAVE3_DARK_SIDE_REPENTANCE_RESTORATION_2026-08-01.md'
+      - 'data/osk-wave3-decisions-2026-08-01.json'
+      - 'data/osk-wave3-source-registry-2026-08-01.json'
+      - 'data/osk-wave3-source-registry-*-2026-08-01.json'
+      - 'scripts/validate_osk_wave3_dark_side.py'
+      - '.github/workflows/osk-wave3-dark-side.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_osk_wave3_dark_side.py
+      - name: Validate Wave 3 authority
+        run: python scripts/validate_osk_wave3_dark_side.py
