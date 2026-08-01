@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "A06-PHYSICAL-RIGHTS-LEDGER-2026-08-01",
+  "researchSnapshot": "48fc47f7df447d87312a72be25e6b71718afde86",
+  "driveCheckedAt": "2026-08-01",
+  "rule": "Drive presence proves custody only. Publication requires item-level provenance, rights basis, credit line, identity/content review, and a target route owner.",
+  "records": [
+    {
+      "id": "DRV-EPHEMERA-63",
+      "corpusId": "source-library-ephemera-63",
+      "physicalState": "VERIFIED_COMPLETE_PACKAGE",
+      "driveObjects": [
+        {"id": "1vfSja20qrEwQNuYDS1dI_WFZYxD18-_C", "title": "02 — APPROVED EPHEMERA 63", "kind": "folder"},
+        {"id": "14DsRdBd3zvEvR9JiF_2yAOL-agZfE7GU", "title": "01 — ORIGINALS 01-16.zip", "kind": "zip"},
+        {"id": "1yi5Vzi7DbTFVhJ5IaIAmTsXjDvFdm72C", "title": "02 — ORIGINALS 17-32.zip", "kind": "zip"},
+        {"id": "1fVWuckOkgxHRTmdxyLqvfSJR35mjkRsi", "title": "03 — ORIGINALS 33-48.zip", "kind": "zip"},
+        {"id": "1-JY6zCDgDp0I38oqXLZaQCbEfL20wef-", "title": "04 — ORIGINALS 49-63.zip", "kind": "zip"},
+        {"id": "13JOBCx_Pu5FfIPOshYYEOMPBkPCRQndl", "title": "90 — REVIEW CONTACT SHEETS AND CANDIDATES.zip", "kind": "zip"}
+      ],
+      "rightsState": "ITEM_LEVEL_REVIEW_REQUIRED",
+      "publicationEligible": false,
+      "requiredBeforeUse": ["match each original to the Research allowlist", "re-fetch item-level license/provenance", "record exact credit line", "review institutional/reproduction restrictions", "assign a product media owner"],
+      "notes": "Private archival acquisition is verified; it is not a blanket production licence."
+    },
+    {
+      "id": "DRV-EDITORIAL-40",
+      "corpusId": "source-library-editorial-40-pdf",
+      "physicalState": "VERIFIED_FILES_AND_CHECKSUMS_PARTIAL_VIEW",
+      "driveObjects": [
+        {"id": "1ak7i3iIRrNBIRDzOaxHVkkHKRuARwB70", "title": "00_SHA256SUMS.txt", "kind": "checksum"},
+        {"id": "1sE28JaPLL0tsYcxCSit98rDneRymt5de", "title": "01__My Life - Isadora Duncan.pdf", "kind": "pdf"},
+        {"id": "1xFcMWmU7ARfA_7TS3cq_Nmu-j89e8sUo", "title": "22__Modern Russian poetry; texts and translations.pdf", "kind": "pdf"}
+      ],
+      "rightsState": "REFERENCE_ONLY_ITEM_REVIEW_REQUIRED",
+      "publicationEligible": false,
+      "requiredBeforeUse": ["resolve the exact 40-file manifest against Drive objects", "verify each item licence at source", "treat embedded illustrations separately", "assign a bounded claim or media target"],
+      "notes": "Physical examples and checksum control are present; completeness and production rights are not inferred from search results."
+    },
+    {
+      "id": "DRV-POET-PORTRAITS-45",
+      "corpusId": "source-library-poet-portraits-45",
+      "physicalState": "VERIFIED_APPROVED_FOLDER",
+      "driveObjects": [
+        {"id": "1YlAac-1QA_iiWPK63X7ZINsJmaPy6ndH", "title": "01 — PEOPLE & PORTRAITS", "kind": "folder"},
+        {"id": "1DvT6JoP2MJ6584km3eqOZYKJfwXIDLFB", "title": "02 — MEDIA — PORTRAITS & EPHEMERA", "kind": "folder"},
+        {"id": "1BcHMZEPJtTDbE9zXZnRLtjCBtvGG3S02", "title": "01 — APPROVED CORE POET PORTRAITS 45", "kind": "folder"}
+      ],
+      "rightsState": "IDENTITY_AND_ITEM_RIGHTS_REVIEW_REQUIRED",
+      "publicationEligible": false,
+      "requiredBeforeUse": ["human identity confirmation", "match each original to allowlist metadata", "re-check current item licence", "preserve attribution and credit line", "route to a separately owned poet-media lane"],
+      "notes": "Approved means archive allowlist, not production approval."
+    },
+    {
+      "id": "DRV-BRATSKY-REGISTER",
+      "corpusId": "bratsky-listok-1906-1910",
+      "physicalState": "VERIFIED_REGISTER_NOT_COMPLETE_RUN",
+      "driveObjects": [
+        {"id": "15L76H5bufK9Pr8EelwO-KZTYXuKX-weKnOh7qV_ze6k", "title": "БРАТСКИЙ ЛИСТОК 1906–1910 — АУДИТ И РЕЕСТР — 2026-07-31", "kind": "spreadsheet"},
+        {"id": "1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM", "title": "РУССКИЕ БАПТИСТЫ — MASTER ARCHIVE CATALOG", "kind": "spreadsheet"}
+      ],
+      "rightsState": "SCAN_PAGE_AND_REUSE_REVIEW_REQUIRED",
+      "publicationEligible": false,
+      "requiredBeforeUse": ["pin Research commit and manifest digest", "resolve direct quotations to page images", "verify scan provenance and reuse basis", "disclose 17 full, 1 fragment, 4 targeted coverage", "disclose eight fully unknown issues"],
+      "notes": "Drive registers are present; the complete 1906–1910 run is not."
+    },
+    {
+      "id": "DRV-BAPTIST-ARCHIVE",
+      "corpusId": "baptist-archive-v156",
+      "physicalState": "VERIFIED_REGISTERS_AND_FINDING_AIDS",
+      "driveObjects": [
+        {"id": "1b5leKk8uTouwZJZwuWkPXyU23wLKRfXin68bbWswJG4", "title": "РУССКИЕ БАПТИСТЫ — CONSOLIDATED SOURCE REGISTER — 2026-07-31", "kind": "spreadsheet"},
+        {"id": "1MRL3MPovajDDS5RlYAe2cQsVKV8OTg7X", "title": "SBHLA AR 915 — Albert Wardin Russian Baptists Collection — finding aid.pdf", "kind": "pdf"},
+        {"id": "1ImfyB9hpoQxqH2DdXlVPOIrmQ_E1ojiH", "title": "SBHLA AR 881 — Russian Evangelical Archives — finding aid.pdf", "kind": "pdf"}
+      ],
+      "rightsState": "ARCHIVE_CONTENT_AND_REUSE_NOT_OBTAINED",
+      "publicationEligible": false,
+      "requiredBeforeUse": ["acquire requested scans under owner approval", "record folder/page locators", "perform OCR plus visual verification", "obtain or document reuse basis", "create quote cards only from verified pages"],
+      "notes": "Finding aids and registers prove holdings/navigation, not possession of the requested contents."
+    },
+    {
+      "id": "DRV-GILL-ARCHIVE",
+      "corpusId": "gill-archive-families",
+      "physicalState": "NOT_VERIFIED",
+      "driveObjects": [],
+      "rightsState": "UNKNOWN",
+      "publicationEligible": false,
+      "requiredBeforeUse": ["identify canonical Drive folder or declare Drive not applicable", "match physical files to Gill volume registry", "record provenance and reuse basis"],
+      "notes": "Targeted Drive search did not identify a canonical Gill package."
+    },
+    {
+      "id": "DRV-BIBLICAL-ATLAS",
+      "corpusId": "biblical-atlas-primary-strengthening",
+      "physicalState": "NOT_VERIFIED_CANONICAL_PACKAGE",
+      "driveObjects": [],
+      "rightsState": "UNKNOWN",
+      "publicationEligible": false,
+      "requiredBeforeUse": ["identify exact atlas source files rather than audit dumps", "record map/base-image rights", "pin primary-source locators for Pihahiroth and sea-crossing claims"],
+      "notes": "Drive search returned noisy audit material, not a canonical atlas rights package."
+    }
+  ]
+}
