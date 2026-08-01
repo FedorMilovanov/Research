@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "authorityId": "RESEARCH-ARTIFACT-CUSTODY-POLICY-2026-08-02",
+  "states": {
+    "EPHEMERAL_ACTION_ARTIFACT": "GitHub Actions artifact with finite retention; not durable custody",
+    "TRANSFER_PENDING_VERIFICATION": "Bytes were sent to a candidate durable store but destination readback is incomplete",
+    "ACQUIRED_DURABLE": "Destination object ID, byte size and SHA-256 were independently read back and match the source manifest",
+    "LINK_ONLY": "No redistributable bytes are held; stable source navigation only",
+    "PRIVATE_STUDY_ONLY": "Bytes are held under a non-public research boundary",
+    "PUBLICATION_ELIGIBLE": "Separate item-level identity, rights, credit and route decisions are complete"
+  },
+  "durableReceiptRequiredFields": [
+    "sourceArtifactName",
+    "sourceWorkflowRun",
+    "sourceManifestSha256",
+    "destinationProvider",
+    "destinationObjectId",
+    "destinationPath",
+    "destinationBytes",
+    "destinationSha256Readback",
+    "verifiedAtUtc",
+    "verifiedBy"
+  ],
+  "policy": {
+    "actionsArtifactIsNeverDurableByItself": true,
+    "downloadedIsNotPublicationEligible": true,
+    "archiveApprovalIsNotRouteApproval": true,
+    "destinationWriteWithoutReadbackIsNotAcquiredDurable": true,
+    "retentionExpiryMustBeDisclosed": true,
+    "rightsRemainItemSpecific": true
+  }
+}
