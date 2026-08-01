@@ -190,7 +190,7 @@ Open not-A+ items:
 | Item | Current issue | Needed closure |
 |---|---|---|
 | Calvin Institutes II.3.3–4 | direct CCEL/Beveridge/Battles comparison open | exact source pass; choose English/Russian citation policy |
-| Augustine *Contra Julianum* IV.3.25 | Latin/English not directly verified | PL / Fathers of the Church locator or no direct quote |
+| Augustine *Contra Julianum* IV.3.25 | Latin Migne/Wikisource verified 2026-08-01; English FOC page optional | may quote Latin-backed substance; do not quote `splendida vitia` label as Augustine |
 | `splendida vitia` attribution chain | Marshall article metadata/source not closed | establish whether formula is Augustine or later reception |
 | Watson *Godly Man’s Picture* morality aphorism | quote collection only | **DO-NOT-DIRECT-QUOTE** unless primary locator is later found |
 | Luther page in Packer/Johnston | page pin missing | edition/page check |
@@ -491,7 +491,7 @@ This table is the practical audit queue to use before any filling/extraction pas
 | R2-HAM-01 | PARTLY-CLOSED-local | `64_R2...` | OT regeneration bonus | Hamilton Themelios/TrinJ/monograph | Themelios HTML verified 2026-07-31; TrinJ survey chart verified 2026-08-01; Goodreads monograph quotes downgraded | conclusion and six-position chart locked | Hamilton monograph page locators still optional/open |
 | R2-FERG-01 | P1 | `64_R2...` | OT regeneration bonus | Ferguson *The Holy Spirit* | lectures only | book citation missing | get 1–2 exact book locators or paraphrase by lecture only |
 | R3-CALVIN-01 | CLOSED-local | `65_R3...` | struggle without regeneration | Calvin Institutes II.3.3–4 | CCEL/Beveridge readback done 2026-07-31 | civil righteousness wording now source-locked at CCEL level | Battles/Russian edition remains editorial check |
-| R3-AUG-01 | P1 | `65_R3...` | struggle without regeneration | Augustine / `splendida vitia` chain | attribution not closed | classic misattribution risk | verify Latin/FOC or mark reception only |
+| R3-AUG-01 | PARTLY-CLOSED-local | `65_R3...` | struggle without regeneration | Augustine / `splendida vitia` chain | Contra Julianum IV.3.25 Latin verified 2026-08-01; `splendida vitia` label remains reception-only | Augustine substance safer; label not direct quote | use Contra Julianum/City of God; do not quote “splendida vitia” as Augustine |
 | R3-SPURG-01 | CLOSED-as-blocked-local | `65_R3...` | struggle without regeneration | Spurgeon “free will carried...” | apocryphal-risk marked 2026-07-31 | do not use | use verified Spurgeon substitute |
 | R4-WHIT-01 | CLOSED-as-attributed-local | `66_R4...` | four soils | Whitefield stony-ground quote | no primary locator found | attributed-only / do-not-direct-quote | use Spurgeon F1 / Calvin B2 substitutes |
 | R4-TAYLOR-01 | PARTLY-CLOSED-local | `66_R4...` | four soils | Thomas Taylor 1621 | Hail&Fire title/PDF metadata + EEBO CC0 fulltext pages 118–120, 261–262 verified 2026-08-01 | stony/good-soil anchors now usable at open-text level | optional page-image/modernized-Hail&Fire comparison only |
@@ -568,8 +568,8 @@ The book architecture file `61_BOOK_ARCHITECTURE_V2_CHAPTERS_AND_RESEARCH_TASKS.
 | III.3 `Сокрушённое сердце: покаяние` | No dedicated R-file found | **OPEN / architecture gap** | Material exists scattered in R5, V84 depression/guilt, religious-heart files, but no focused Psalm 51 / 2 Cor 7 / true-false repentance dossier. |
 | V.3 `Две борьбы` | Yes: `67_R5...` | **Research exists, source-lock mostly closed** | Owen, Mead step 7, Augustine VIII.9.21, Spurgeon Luke 18:13 support, and Edwards headings now closed; only optional body-level Edwards / broader Mead Q2–Q5 remain. |
 | X.1 `Суд сердца: два воскресения` | No dedicated R-file found | **OPEN / architecture gap** | R9 points toward this article, but X.1 needs its own John 5:28–29 / Rev 20 / Luke 16 / 2 Thess 1 dossier. |
-| VIII.1 `Сердце и Слово` | Yes: `68_R7A...` | **Research exists, source-lock open** | Heb 4:2 textual issue and commentary locators open. |
-| VIII.5 `Христос — Пленитель сердца` | Yes: `70_R8...` | **Research exists, source-lock open** | Owen *Glory of Christ* exact locators and several quote candidates open. |
+| VIII.1 `Сердце и Слово` | Yes: `68_R7A...` | **Research exists, source-lock mostly closed** | Heb 4:2 open-reference layer closed; Metzger dropped/no-use; modern commentators no-direct-quote. |
+| VIII.5 `Христос — Пленитель сердца` | Yes: `70_R8...` | **Research exists, source-lock mostly closed** | Owen *Glory of Christ* locators closed; MLJ/other book/audio items bounded/no-direct-quote. |
 
 P0 conclusion:
 
@@ -583,17 +583,17 @@ Four P0 articles have dossiers but still need source-locking: R1, R5, R7a, R8.
 
 | Planned article | Priority in architecture | Current status | Next audit action |
 |---|---|---|---|
-| II.3 `Борьба без возрождения` | P1 | R3 dossier exists, source-lock partly open | Calvin is closed; Watson aphorism and Spurgeon free-will aphorism are blocked; Augustine Contra Julianum / splendida-vitia chain and some print locators remain open. |
-| V.2 `Четыре почвы` | P1 | R4 dossier exists, source-lock open | Close Whitefield/Taylor/France/Carson locators. |
-| Bonus `Возрождение в ВЗ` | P1 | R2 dossier exists, source-lock open | Close Hamilton/Ferguson/Calvin/Augustine/Gill/Owen locators. |
+| II.3 `Борьба без возрождения` | P1 | R3 dossier exists, source-lock mostly closed | Calvin closed; Augustine Contra Julianum IV.3.25 Latin closed; Watson aphorism and apocryphal Spurgeon blocked; `splendida vitia` label is reception-only, not Augustine direct quote. |
+| V.2 `Четыре почвы` | P1 | R4 dossier exists, source-lock mostly closed | Whitefield blocked/attributed-only; Taylor, Calvin, Spurgeon, Ryle closed; France/Carson no-direct-quote. |
+| Bonus `Возрождение в ВЗ` | P1 | R2 dossier exists, source-lock mostly closed | Hamilton Themelios/TrinJ, Calvin, Augustine, Gill, Owen, Warfield closed; Ferguson/Hamilton book quotes bounded/no-direct-quote. |
 | VI.4 `Гнев, обида, прощение` | P1 | No dedicated R-file found | Needs focused dossier; current material scattered in speech/temptation/pastoral grids. |
 | IX.2 `Тревожное сердце и покой Божий` | P1 | No dedicated R-file found | Needs John 14 / Phil 4 / Matt 6 / 1 Pet 5 focused dossier, with medical-anxiety guardrails. |
 | II.4 `Ожесточение` | P2 | No dedicated R-file found | Needs Heb 3 / Pharaoh / Mark 3:5 / seared conscience dossier. |
 | VIII.3 `Сердце в молитве` | P2 | Older `34_V54...` prayer layer exists, but no final R-style dossier | Audit whether V54 is sufficient or needs R-file extraction. |
 | X.3 `Сердце дома: новое небо и новая земля` | P2 | No dedicated R-file found | Needs Rev 21–22 / Ps 73:26 final hope dossier. |
 | V optional `Уверенность` | P3 | scattered in assurance files | Needs decision whether to remain optional or become article. |
-| V/R7b `Фарисей и ученик` | P1 | R7b dossier exists, source-lock open | Close Carson/MLJ/Spurgeon/Augustine/Cyril candidates. |
-| R9 `Христос Откровения` | later owner-driven P1/P0 support | R9 dossier exists, source-lock open | Decide if standalone article, R8 support block, or X.1 cross-link support. |
+| V/R7b `Фарисей и ученик` | P1 | R7b dossier exists, source-lock mostly closed | Gill Acts 17, Spurgeon №1949, Whitefield, and Ryle Luke 12 closed; Carson/MLJ/Ryle-deep-study snippets closed as no-direct-quote. |
+| R9 `Христос Откровения` | later owner-driven P1/P0 support | R9 dossier exists, source-lock mostly closed | Decision still editorial: standalone article, R8 support block, or X.1 cross-link support. |
 
 ### 10.3 Architecture-level priority if continuing audit
 
@@ -745,7 +745,7 @@ Files with explicit inherited blocked-fetch caveat:
 | `67_R5_TWO_STRUGGLES.md` | egress blocked; many candidates still marked for вычитка |
 | `68_R7A_WORD_AND_HEART.md` | direct access blocked; unverified candidates require book/e-source check |
 | `70_R8_BEHOLDING_GLORY.md` | direct fetch blocked; Owen and others snippet-verified only |
-| `71_R9_CHRIST_OF_REVELATION.md` | WebFetch blocked; many `ВЕРИФИЦИРОВАНО ЧАСТИЧНО` aggregator items |
+| `71_R9_CHRIST_OF_REVELATION.md` | old caveat superseded by safe closures: Gill/GTY/Ryle/Goodwin/Sproul/Ortlund subsets now closed; remaining snippets blocked/no-use |
 
 Interpretation:
 
@@ -851,6 +851,8 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 | SC-R4-SPURGEON-WHITEFIELD-01 | `66_R4_FOUR_SOILS.md` | Spurgeon stony-ground sermon was partial; Whitefield stony-ground quote lacked primary locator | Verified official Spurgeon Library F1; marked Whitefield F2 attributed-only / do-not-direct-quote | Spurgeon print page not claimed; Whitefield can reopen only with primary locator |
 | SC-R3-CALVIN-INST-01 | `65_R3_UNREGENERATE_STRUGGLE.md` | Institutes II.3.3–4 CCEL fetch had been blocked | Verified CCEL/Beveridge chapter readback at `institutes.iv.iv.html`; marked source-risk closed | Battles/Russian edition still editorial choice |
 | SC-R3-WATSON-SPURGEON-BLOCK-01 | `65_R3_UNREGENERATE_STRUGGLE.md` | Watson morality quote and Spurgeon free-will aphorism remained quote-collection risks | Marked Watson direct quote as quote-collection-only and Spurgeon aphorism as apocryphal-risk / do-not-use | use Calvin or verified Spurgeon substitutes |
+| SC-R3-AUG-CONTRAJUL-01 | `65_R3_UNREGENERATE_STRUGGLE.md` | Augustine Contra Julianum IV.3.25 Fabricius/Catiline was unverified | Verified Latin Wikisource/Migne text for Book IV, cap. III, §25 | FOC English/page comparison optional; `splendida vitia` remains reception label, not direct Augustine quote |
+| SC-R7B-SOURCE-CLEANUP-01 | `69_R7B_PHARISEE_DISCIPLE.md` | R7b Gill/Spurgeon/Whitefield/Ryle items were snippet-level; Carson/MLJ/Ryle extras unverified | Verified Gill Acts 17:11, official Spurgeon №1949, CCEL Whitefield, GraceGems Ryle Luke 12; downgraded Carson/MLJ/Ryle-extra to no-direct-quote | no book/page claims |
 | SC-R1-GILL-REGEN-01 | `63_R1_REGENERATION_SYSTEMATICS.md` | Gill B6 was unverified Body of Divinity candidate | Verified Monergism HTML `Of Regeneration`; added exact anchors on large/strict regeneration and new creature/new man | print page not claimed; more Gill extraction optional |
 | SC-R1-BAVINCK-01 | `63_R1_REGENERATION_SYSTEMATICS.md` | Bavinck RD IV exact material was open | Verified Monergism HTML excerpt from RD4 ch.1 for broad/restricted regeneration, Word/Spirit order, and immediate Spirit operation | Baker page numbers not claimed; Kuyper critique optional |
 | SC-R1-BOSTON-REGEN-01 | `63_R1_REGENERATION_SYSTEMATICS.md` | Boston E3 regeneration-change characteristics were partial/paraphrase | Verified GraceGems open text breakdown of real/thorough/supernatural/universal/lasting change | print/early-scan page not claimed |
@@ -901,3 +903,5 @@ Owner first authorized local closure runs without push, then explicitly authoriz
 | R4 optional Taylor page-image/Whitefield primary locator | Calvin Harmony B2, Spurgeon F1, Taylor open-text anchors, and Ryle G4/G5 are closed; Whitefield F2 is attributed-only; France/Carson are closed-as-no-direct-quote/paraphrase-only, not blockers |
 | R7a modern commentary positions | Calvin/Gill and BibleHub/Meyer open-reference layer are closed; Metzger exact rating dropped/no-use; Lane/O’Brien/Schreiner/Ellingworth/Attridge closed-as-no-direct-quote/not blockers |
 | R2 Ferguson/Hamilton monograph pages | Hamilton Themelios conclusion, TrinJ survey chart, Warfield HTML, Owen CCEL ch. I, Calvin, Augustine, and Gill John 7:39 are locally closed; Ferguson/Hamilton monograph direct book quotes remain blocked/optional |
+| R3 Augustine / splendida-vitia | Contra Julianum IV.3.25 Latin is now closed; `splendida vitia` remains reception-only/do-not-quote-as-Augustine; Watson quote-collection and apocryphal Spurgeon remain blocked |
+| R7b Pharisee/disciple | Main public-domain/open ministry supports closed; remaining Carson/MLJ/Ryle-extra snippets are no-direct-quote, and Chrysostom Russian translation check is optional |

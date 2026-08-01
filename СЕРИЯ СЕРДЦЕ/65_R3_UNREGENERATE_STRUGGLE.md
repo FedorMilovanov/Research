@@ -520,9 +520,8 @@ https://www.cprf.co.uk/quotes/uncommongracequotes.html
 трактата: Against Julian, FOC vol. 35 (M. A. Schumacher, 1957),
 https://archive.org/details/againstjulian0035augu
 
-**№4. Августин, Contra Julianum IV.3.25 — Фабриций и Катилина.** ⚠️ НЕ ВЕРИФИЦИРОВАНО
-дословно (лат. текст по традиции цитирования; смысл подтверждён вторично — Schaff, History
-of the Christian Church III, https://ccel.org/ccel/schaff/hcc3/hcc3.iii.xii.xl.html):
+**№4. Августин, Contra Julianum IV.3.25 — Фабриций и Катилина.** — SAFE CLOSURE 2026-08-01
+по Latin Wikisource / Migne text (Book IV, cap. III, §25):
 
 > "Ideo Fabricius minus quam Catilina punietur, non quia iste bonus, sed quia ille magis malus;
 > et minus impius quam Catilina Fabricius, non veras virtutes habendo, sed a veris virtutibus
@@ -530,9 +529,12 @@ of the Christian Church III, https://ccel.org/ccel/schaff/hcc3/hcc3.iii.xii.xl.h
 
 Перевод: «Фабриций будет наказан меньше, чем Катилина, — не потому, что он добр, а потому, что
 тот более зол; и Фабриций менее нечестив, чем Катилина, не потому, что имел истинные
-добродетели, а потому, что не так далеко отклонился от истинных добродетелей». Проверить по:
-лат. PDF (PL 44) https://www.documentacatholicaomnia.eu/04z/z_0354-0430__Augustinus__Contra_Julianum__MLT.pdf.html ;
-англ. FOC 35, https://archive.org/details/againstjulian0035augu (кн. IV, гл. 3, §25).
+добродетели, а потому, что не так далеко отклонился от истинных добродетелей».
+Источник: Augustine, *Contra Iulianum* IV.3.25, Latin Wikisource ed. Migne:
+https://la.wikisource.org/wiki/Contra_Iulianum_(ed._Migne) ; metadata cross-check:
+Documenta Catholica Omnia, PL/Migne 44, cols. 0641–0874,
+https://www.documentacatholicaomnia.eu/04z/z_0354-0430__Augustinus__Contra_Julianum__MLT.pdf.html .
+Статус: `LATIN-WIKISOURCE-MIGNE-TEXT-VERIFIED / BOOK-IV-CAP-III-25-LOCATOR-LOCKED`; FOC English/page comparison optional, not source-risk.
 
 **№5–6. Кальвин, Commentary on Romans 2:14–15.** ✅
 
@@ -840,8 +842,7 @@ Couenhoven 2025 (https://journals.sagepub.com/doi/10.1177/09539468251370545).
 ## Открытые вопросы / что ещё копать
 
 1. **Institutes II.3.3–4 — SAFE CLOSURE 2026-07-31 for CCEL/Beveridge.** Старый blocker «прямой fetch CCEL был заблокирован» закрыт: `https://www.ccel.org/ccel/calvin/institutes.iv.iv.html` прочитан, разделы II.3.3–4 и логика special gifts / providential restraint подтверждены. Остаётся не source-risk, а редакционный выбор: давать ли Battles как основной перевод и проверять русское издание; печатная страница Battles/Beveridge не заявляется.
-2. **Contra Julianum IV.3.25 (Фабриций/Катилина)** — сверить латынь по PL 44 (ссылка в №4)
-   и английский по FOC 35 (archive.org, стр. ~180–190); пока держать с пометкой.
+2. **Contra Julianum IV.3.25 (Фабриций/Катилина) — SAFE CLOSURE 2026-08-01.** Latin Wikisource/Migne text verified; FOC English/page comparison remains optional only.
 3. **Статья Marshall «Virtutes paganorum sunt splendida vitia»** — установить выходные данные
    (Semantic Scholar запись без метаданных в выдаче); может дать точное первое вхождение
    формулы (до Бейля? Меланхтон? схоластика?). Это единственный незакрытый хвост
