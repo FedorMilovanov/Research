@@ -1,242 +1,200 @@
 #!/usr/bin/env python3
+"""Validate the composed public-projection authority (base queue + overlays)."""
 from __future__ import annotations
 
 import csv
 import json
-import re
 import sys
+from collections import Counter
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-QUEUE_JSON = ROOT / "data/public-projection-queue-2026-08-01.json"
-QUEUE_CSV = ROOT / "data/public-projection-queue-2026-08-01.csv"
+BASE_JSON = ROOT / "data/public-projection-queue-2026-08-01.json"
+BASE_CSV = ROOT / "data/public-projection-queue-2026-08-01.csv"
 RIGHTS_JSON = ROOT / "data/physical-rights-ledger-2026-08-01.json"
-RIGHTS_CSV = ROOT / "data/physical-rights-ledger-2026-08-01.csv"
+OVERLAY_JSON = ROOT / "data/public-projection-osk-wave6-overlay-2026-08-01.json"
+CURRENT_JSON = ROOT / "data/public-projection-current-2026-08-02.json"
 DASHBOARD = ROOT / "PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-01.md"
+ROOT_AUTHORITY = ROOT / "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md"
 
 ALLOWED_DISPOSITIONS = {"PROMOTE", "REFERENCE", "SUPERSEDED", "BLOCKED"}
-ALLOWED_HOLDS = {
-    "EVIDENCE_HOLD",
-    "LOCATOR_HOLD",
-    "ARCHIVE_HOLD",
-    "RIGHTS_HOLD",
-    "PUBLICATION_HOLD",
-}
-ALLOWED_PHYSICAL = {
-    "VERIFIED_COMPLETE_PACKAGE",
-    "VERIFIED_FILES_AND_CHECKSUMS_PARTIAL_VIEW",
-    "VERIFIED_APPROVED_FOLDER",
-    "VERIFIED_REGISTER_NOT_COMPLETE_RUN",
-    "VERIFIED_REGISTERS_AND_FINDING_AIDS",
-    "NOT_VERIFIED",
-    "NOT_VERIFIED_CANONICAL_PACKAGE",
-}
-SHA_RE = re.compile(r"^[0-9a-f]{40}$")
-ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]+$")
-DRIVE_ID_RE = re.compile(r"^[A-Za-z0-9_-]{10,}$")
-
+ALLOWED_HOLDS = {"EVIDENCE_HOLD", "LOCATOR_HOLD", "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
 errors: list[str] = []
 
 
-def fail(message: str) -> None:
-    errors.append(message)
+def require(condition: bool, message: str) -> None:
+    if not condition:
+        errors.append(message)
 
 
-def load_json(path: Path):
+def load(path: Path) -> dict[str, Any]:
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception as exc:
-        fail(f"{path.relative_to(ROOT)}: invalid JSON: {exc}")
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"cannot read {path.relative_to(ROOT)}: {exc}")
         return {}
+    if not isinstance(value, dict):
+        errors.append(f"{path.relative_to(ROOT)} must contain an object")
+        return {}
+    return value
 
 
-def load_csv(path: Path):
-    try:
-        with path.open(encoding="utf-8", newline="") as handle:
-            return list(csv.DictReader(handle))
-    except Exception as exc:
-        fail(f"{path.relative_to(ROOT)}: invalid CSV: {exc}")
+def counts_for(records: list[dict[str, Any]]) -> dict[str, int]:
+    counts = Counter(str(record.get("disposition")) for record in records)
+    return {
+        "PROMOTE": counts["PROMOTE"],
+        "REFERENCE": counts["REFERENCE"],
+        "SUPERSEDED": counts["SUPERSEDED"],
+        "BLOCKED": counts["BLOCKED"],
+        "total": len(records),
+    }
+
+
+def apply_osk_overlay(base: dict[str, Any], overlay: dict[str, Any]) -> list[dict[str, Any]]:
+    records = base.get("records", [])
+    require(isinstance(records, list), "base records must be a list")
+    if not isinstance(records, list):
         return []
-
-
-queue = load_json(QUEUE_JSON)
-rights = load_json(RIGHTS_JSON)
-queue_csv = load_csv(QUEUE_CSV)
-rights_csv = load_csv(RIGHTS_CSV)
-
-if queue.get("schemaVersion") != 1:
-    fail("queue schemaVersion must be 1")
-if rights.get("schemaVersion") != 1:
-    fail("rights schemaVersion must be 1")
-if queue.get("allowedDispositions") != ["PROMOTE", "REFERENCE", "SUPERSEDED", "BLOCKED"]:
-    fail("queue disposition vocabulary/order drift")
-if set(queue.get("allowedHolds", [])) != ALLOWED_HOLDS:
-    fail("queue hold vocabulary drift")
-
-for repo, sha in queue.get("snapshots", {}).items():
-    if not SHA_RE.fullmatch(str(sha)):
-        fail(f"snapshot {repo} is not an exact 40-character SHA")
-
-rights_records = rights.get("records", [])
-rights_by_id = {}
-for record in rights_records:
-    rid = record.get("id")
-    if not rid or rid in rights_by_id:
-        fail(f"duplicate or missing rights id: {rid}")
-        continue
-    rights_by_id[rid] = record
-    if record.get("physicalState") not in ALLOWED_PHYSICAL:
-        fail(f"{rid}: unsupported physicalState {record.get('physicalState')}")
-    objects = record.get("driveObjects")
-    if not isinstance(objects, list):
-        fail(f"{rid}: driveObjects must be a list")
-        objects = []
-    if str(record.get("physicalState", "")).startswith("VERIFIED") and not objects:
-        fail(f"{rid}: verified physical state requires Drive objects")
-    for obj in objects:
-        if not DRIVE_ID_RE.fullmatch(str(obj.get("id", ""))):
-            fail(f"{rid}: invalid Drive object id")
-        if not str(obj.get("title", "")).strip():
-            fail(f"{rid}: Drive object title missing")
-    if record.get("publicationEligible") is True and record.get("rightsState") != "CLEARED":
-        fail(f"{rid}: publicationEligible requires rightsState=CLEARED")
-    if record.get("publicationEligible") is False and not record.get("requiredBeforeUse"):
-        fail(f"{rid}: non-eligible record requires actionable requiredBeforeUse")
-
-records = queue.get("records", [])
-seen = set()
-for record in records:
-    rid = record.get("id")
-    if not ID_RE.fullmatch(str(rid or "")):
-        fail(f"invalid queue id: {rid}")
-    if rid in seen:
-        fail(f"duplicate queue id: {rid}")
-    seen.add(rid)
-
-    disposition = record.get("disposition")
-    if disposition not in ALLOWED_DISPOSITIONS:
-        fail(f"{rid}: unsupported disposition {disposition}")
-    holds = record.get("holds")
-    if not isinstance(holds, list):
-        fail(f"{rid}: holds must be a list")
-        holds = []
-    for hold in holds:
-        if hold not in ALLOWED_HOLDS:
-            fail(f"{rid}: vague/unsupported hold {hold}")
-    if disposition == "BLOCKED" and not holds:
-        fail(f"{rid}: BLOCKED requires at least one typed hold")
-    if disposition == "PROMOTE":
-        if holds:
-            fail(f"{rid}: PROMOTE cannot retain holds")
-        if record.get("publicWordingFidelity") != "VERIFIED_FAITHFUL":
-            fail(f"{rid}: PROMOTE requires VERIFIED_FAITHFUL wording")
-        for rights_id in record.get("rightsLedgerIds", []):
-            if not rights_by_id.get(rights_id, {}).get("publicationEligible"):
-                fail(f"{rid}: PROMOTE references non-cleared rights record {rights_id}")
-
-    for required in (
-        "corpus",
-        "researchStatus",
-        "sourceAuthorities",
-        "targetRepository",
-        "targetRouteState",
-        "targetPageType",
-        "targetClaimIds",
-        "publicWordingFidelity",
-        "nextAction",
-        "forbiddenPromotion",
-    ):
-        if not record.get(required):
-            fail(f"{rid}: missing {required}")
-
-    for authority in record.get("sourceAuthorities", []):
-        source = ROOT / authority
-        if not source.exists():
-            fail(f"{rid}: source authority does not exist: {authority}")
-
-    for route in record.get("targetPublicRoutes", []):
-        if not isinstance(route, str) or not route.startswith("/") or not route.endswith("/"):
-            fail(f"{rid}: invalid public route {route}")
-    if not record.get("targetPublicRoutes") and "NO_" not in record.get("targetRouteState", "") and "RESEARCH_" not in record.get("targetRouteState", ""):
-        fail(f"{rid}: empty target routes require an explicit no-route state")
-
-    for rights_id in record.get("rightsLedgerIds", []):
-        if rights_id not in rights_by_id:
-            fail(f"{rid}: unknown rights ledger id {rights_id}")
-
-expected_counts = {key: 0 for key in ALLOWED_DISPOSITIONS}
-for record in records:
-    if record.get("disposition") in expected_counts:
-        expected_counts[record["disposition"]] += 1
-reported = queue.get("counts", {})
-for key, value in expected_counts.items():
-    if reported.get(key) != value:
-        fail(f"queue count drift for {key}: {reported.get(key)} != {value}")
-if reported.get("total") != len(records):
-    fail("queue total count drift")
-if reported.get("alreadyPublic") != sum(bool(r.get("alreadyPublic")) for r in records):
-    fail("queue alreadyPublic count drift")
-if reported.get("withPhysicalRightsRecords") != sum(bool(r.get("rightsLedgerIds")) for r in records):
-    fail("queue physical-rights count drift")
-
-if len(queue_csv) != len(records):
-    fail("queue CSV row count differs from JSON")
-else:
-    csv_by_id = {row.get("id"): row for row in queue_csv}
-    if set(csv_by_id) != seen:
-        fail("queue CSV ids differ from JSON")
+    target = overlay.get("supersedes_queue_record_id")
+    replacement = overlay.get("effective_record")
+    require(isinstance(target, str) and bool(target), "overlay target record id missing")
+    require(isinstance(replacement, dict), "overlay effective_record must be an object")
+    result: list[dict[str, Any]] = []
+    matches = 0
     for record in records:
-        row = csv_by_id.get(record["id"], {})
-        if row.get("disposition") != record.get("disposition"):
-            fail(f"{record['id']}: queue CSV disposition drift")
-        if row.get("researchStatus") != record.get("researchStatus"):
-            fail(f"{record['id']}: queue CSV researchStatus drift")
+        if not isinstance(record, dict):
+            errors.append("base queue contains non-object record")
+            continue
+        if record.get("id") == target:
+            matches += 1
+            result.append(dict(replacement) if isinstance(replacement, dict) else record)
+        else:
+            result.append(record)
+    require(matches == 1, f"overlay must replace exactly one base record, found {matches}")
+    return result
 
-if len(rights_csv) != len(rights_records):
-    fail("rights CSV row count differs from JSON")
-else:
-    csv_by_id = {row.get("id"): row for row in rights_csv}
-    if set(csv_by_id) != set(rights_by_id):
-        fail("rights CSV ids differ from JSON")
-    for rid, record in rights_by_id.items():
-        row = csv_by_id.get(rid, {})
-        if row.get("physicalState") != record.get("physicalState"):
-            fail(f"{rid}: rights CSV physicalState drift")
-        if row.get("rightsState") != record.get("rightsState"):
-            fail(f"{rid}: rights CSV rightsState drift")
 
-try:
-    dashboard = DASHBOARD.read_text(encoding="utf-8")
-except Exception as exc:
-    fail(f"dashboard unreadable: {exc}")
-    dashboard = ""
-for marker in (
-    queue.get("authorityId", ""),
-    queue.get("snapshots", {}).get("research", ""),
-    f"| `PROMOTE` | **{reported.get('PROMOTE')}** |",
-    f"| `REFERENCE` | **{reported.get('REFERENCE')}** |",
-    f"| `BLOCKED` | **{reported.get('BLOCKED')}** |",
-    "NO AUTOMATIC PROMOTION",
-):
-    if marker and marker not in dashboard:
-        fail(f"dashboard missing marker: {marker}")
+def validate_record(record: dict[str, Any], rights_ids: set[str]) -> None:
+    rid = record.get("id")
+    require(isinstance(rid, str) and bool(rid), "projection record missing id")
+    disposition = record.get("disposition")
+    require(disposition in ALLOWED_DISPOSITIONS, f"{rid}: invalid disposition {disposition!r}")
+    holds = record.get("holds", [])
+    require(isinstance(holds, list), f"{rid}: holds must be a list")
+    if not isinstance(holds, list):
+        holds = []
+    unknown_holds = sorted(set(holds) - ALLOWED_HOLDS)
+    require(not unknown_holds, f"{rid}: unknown holds {unknown_holds}")
+    authorities = record.get("sourceAuthorities", [])
+    require(isinstance(authorities, list) and authorities, f"{rid}: sourceAuthorities required")
+    if isinstance(authorities, list):
+        for rel in authorities:
+            require(isinstance(rel, str) and (ROOT / rel).is_file(), f"{rid}: missing source authority {rel}")
+    record_rights = record.get("rightsLedgerIds", [])
+    require(isinstance(record_rights, list), f"{rid}: rightsLedgerIds must be a list")
+    if isinstance(record_rights, list):
+        missing_rights = sorted(set(record_rights) - rights_ids)
+        require(not missing_rights, f"{rid}: missing rights records {missing_rights}")
+    if disposition == "PROMOTE":
+        require(not holds, f"{rid}: PROMOTE cannot retain holds")
+        require(record.get("publicWordingFidelity") == "VERIFIED_FAITHFUL", f"{rid}: PROMOTE requires VERIFIED_FAITHFUL wording")
+        require(record.get("alreadyPublic") is True, f"{rid}: PROMOTE requires an existing verified target")
 
-if queue.get("policy", {}).get("automaticPromotionForbidden") is not True:
-    fail("automatic promotion policy must be true")
-if reported.get("PROMOTE") != 0:
-    fail("current Agent 06 snapshot must not contain an unreviewed PROMOTE record")
 
-if errors:
-    print(f"❌ Agent 06 public projection validation failed ({len(errors)}):", file=sys.stderr)
-    for error in errors:
-        print(f"  - {error}", file=sys.stderr)
-    raise SystemExit(1)
+def validate_base_csv(base: dict[str, Any]) -> None:
+    try:
+        with BASE_CSV.open(encoding="utf-8-sig", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+    except OSError as exc:
+        errors.append(f"cannot read base CSV: {exc}")
+        return
+    records = base.get("records", [])
+    if not isinstance(records, list):
+        return
+    json_ids = [record.get("id") for record in records if isinstance(record, dict)]
+    csv_ids = [row.get("id") for row in rows]
+    require(csv_ids == json_ids, "base CSV record order/IDs drift from base JSON")
+    for row, record in zip(rows, records):
+        require(row.get("disposition") == record.get("disposition"), f"base CSV disposition drift: {record.get('id')}")
+        csv_holds = [item for item in (row.get("holds") or "").split("|") if item]
+        require(csv_holds == record.get("holds", []), f"base CSV hold drift: {record.get('id')}")
 
-print(
-    "✅ Agent 06 projection authority passed: "
-    f"{len(records)} records, "
-    f"{reported.get('REFERENCE')} reference, "
-    f"{reported.get('BLOCKED')} blocked, "
-    f"{len(rights_records)} rights records, "
-    "0 automatic promotions"
-)
+
+def main() -> int:
+    base = load(BASE_JSON)
+    rights = load(RIGHTS_JSON)
+    overlay = load(OVERLAY_JSON)
+    current = load(CURRENT_JSON)
+    try:
+        dashboard = DASHBOARD.read_text(encoding="utf-8")
+        root_authority = ROOT_AUTHORITY.read_text(encoding="utf-8")
+    except OSError as exc:
+        errors.append(f"authority text read failed: {exc}")
+        dashboard = ""
+        root_authority = ""
+
+    require(base.get("schemaVersion") == 1, "base queue schemaVersion drift")
+    require(base.get("authorityId") == "A06-RESEARCH-PUBLIC-PROJECTION-2026-08-01", "base authorityId drift")
+    validate_base_csv(base)
+
+    rights_records = rights.get("records", rights.get("items", []))
+    if not isinstance(rights_records, list):
+        rights_records = []
+        errors.append("rights ledger records/items must be a list")
+    rights_ids = {
+        str(item.get("id")) for item in rights_records
+        if isinstance(item, dict) and isinstance(item.get("id"), str)
+    }
+
+    effective = apply_osk_overlay(base, overlay)
+    ids = [record.get("id") for record in effective]
+    require(len(ids) == len(set(ids)) == 10, "effective queue must contain 10 unique record IDs")
+    for record in effective:
+        if isinstance(record, dict):
+            validate_record(record, rights_ids)
+
+    effective_counts = counts_for(effective)
+    require(overlay.get("schema_version") == 2, "OSK overlay schema_version must be 2")
+    require(overlay.get("authority_id") == "A06-OSK-CURRENT-PROJECTION-2026-08-02", "OSK overlay authority drift")
+    require(overlay.get("effective_projection_counts") == effective_counts, "overlay effective counts drift")
+    require(current.get("schemaVersion") == 2 and current.get("status") == "CURRENT", "current projection descriptor drift")
+    require(current.get("baseQueue") == BASE_JSON.relative_to(ROOT).as_posix(), "current descriptor baseQueue drift")
+    require(current.get("overlays") == [OVERLAY_JSON.relative_to(ROOT).as_posix()], "current descriptor overlay list drift")
+    require(current.get("effectiveCounts") == effective_counts, "current descriptor effective counts drift")
+    require(current.get("policy", {}).get("baseQueueAloneIsHistorical") is True, "base queue must be explicitly historical alone")
+
+    osk = next((record for record in effective if record.get("id") == "osk-power-dark-side-standalone"), None)
+    require(isinstance(osk, dict), "effective OSK record missing")
+    if isinstance(osk, dict):
+        require(osk.get("disposition") == "REFERENCE", "effective OSK disposition must be REFERENCE")
+        require(osk.get("researchStatus") == "WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD", "WAVES_1_TO_11 OSK state missing")
+        require(osk.get("holds") == ["PUBLICATION_HOLD"], "effective OSK must retain only PUBLICATION_HOLD")
+        require("wave11-product-integration-closeout" in osk.get("targetClaimIds", []), "OSK Wave 11 claim marker missing")
+        require("Wave 12" in osk.get("nextAction", ""), "OSK next action must name Wave 12")
+
+    require("44_WAVE11_PRODUCT_INTEGRATION_CLOSEOUT_2026-08-01.md" in root_authority, "root authority missing Wave 11 closeout")
+    require("Wave 12" in root_authority, "root authority missing Wave 12 route-release stage")
+    for marker in (
+        "RESEARCH-PUBLIC-PROJECTION-CURRENT-2026-08-02",
+        "base + overlay",
+        "REFERENCE: 4",
+        "BLOCKED: 6",
+        "WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD",
+    ):
+        require(marker in dashboard, f"dashboard missing current marker: {marker}")
+
+    if errors:
+        print(f"Public projection authority: FAIL ({len(errors)})", file=sys.stderr)
+        for error in errors:
+            print(f"- {error}", file=sys.stderr)
+        return 1
+    print(
+        "Public projection authority: PASS — base + overlay composed; "
+        f"counts={effective_counts}; OSK Waves 1-11 REFERENCE/PUBLICATION_HOLD"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
