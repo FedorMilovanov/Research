@@ -12,7 +12,6 @@ permissions:
 
 jobs:
   publish:
-    if: ${{ hashFiles('.v156_parts/part_00') != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +21,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if [ ! -f .v156_parts/part_00 ]; then
+            echo 'v156 payload already consumed; nothing to do.'
+            exit 0
+          fi
           target='БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv'
           tmp="${target}.tmp"
           cat .v156_parts/part_* | base64 --decode > "$tmp"
