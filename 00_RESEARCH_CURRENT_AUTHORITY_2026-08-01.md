@@ -2,7 +2,7 @@
 
 **Дата:** 2026-08-01  
 **Статус:** `ACTIVE ROOT AUTHORITY / WAVE-BASED CLOSURE`  
-**Base:** `20fafafd733dfabbe4280c8d78ed58344e5b1e2f`
+**Current base:** `729c1b75f9c9dfabaaae52c6be5b7fb868c0db38`
 
 ## Назначение
 
@@ -50,7 +50,8 @@ Parsed text, OCR и repository paraphrase сами по себе не дают `
 ## Current corpus authorities
 
 - `СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md`;
-- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/35_CURRENT_AUTHORITY_POWER_CASE_ROUTING_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/36_WAVE2_CONDITIONAL_MONEY_POWER_CLOSURE_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/35_CURRENT_AUTHORITY_POWER_CASE_ROUTING_2026-08-01.md` — base Wave 1;
 - `data/genesis6-authority-manifest.json`;
 - `data/genesis6-enoch-extension-authority-manifest.json`;
 - Gill navigation/volumes 70–74 and their validators;
@@ -67,13 +68,15 @@ or machine ledger governs.
 
 - Heart disputed-claim source closure: 85-source registry.
 - Genesis/Enoch named Research blockers: closed; publication hold remains.
-- OSK Wave 1: core power/Diotrephes routing and 79-source register.
+- OSK Wave 1: 33-case routing and 79-source register.
+- OSK Wave 2: eight money/power cases, 56-source pass; effective routing
+  `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 3 STANDALONE / 1 HOLD`.
 
 ### Active
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK conditional/dark-side/standalone waves;
+- OSK Wave 3 dark-side/restoration and later standalone/blocked waves;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 
