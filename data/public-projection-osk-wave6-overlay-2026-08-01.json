@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "authority_id": "A06-OSK-WAVE6-PROJECTION-2026-08-01",
+  "base_authority_id": "A06-RESEARCH-PUBLIC-PROJECTION-2026-08-01",
+  "supersedes_queue_record_id": "osk-power-dark-side-standalone",
+  "research_snapshot": "446a83932d4ec446b4c87e2c7b2fb02aeeee49eb",
+  "product_snapshot": "efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3",
+  "effective_record": {
+    "id": "osk-power-dark-side-standalone",
+    "disposition": "REFERENCE",
+    "researchStatus": "WAVES_1_TO_5_EVIDENCE_CLOSED_290_SOURCES_WAVE6_LEDGER_READY",
+    "sourceAuthorities": [
+      "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+      "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/39_WAVE5_ADELAJA_FINAL_BOUNDARY_2026-08-01.md",
+      "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/40_WAVE6_SITE_TRANSFER_PUBLICATION_LEDGER_2026-08-01.md",
+      "data/osk-wave6-site-transfer-ledger-2026-08-01.json"
+    ],
+    "targetRepository": "FedorMilovanov/gb-is-my-strength",
+    "targetPublicRoutes": [
+      "/articles/20-antisovetov-pastoru/"
+    ],
+    "targetRouteState": "EXISTING_CONCEPTUAL_ROUTE_PLUS_TEN_UNCREATED_BOUNDED_CASE_ARTICLE_ROUTES",
+    "targetPageType": "article-and-future-bounded-series",
+    "targetClaimIds": [
+      "20-point-evidence-map",
+      "21-core",
+      "1-conditional",
+      "7-dark-side",
+      "4-standalone",
+      "0-hold",
+      "10-future-article-bundles"
+    ],
+    "alreadyPublic": true,
+    "publicWordingFidelity": "CONCEPTUAL_CORE_PRESENT_CASE_EVIDENCE_NOT_APPLIED",
+    "holds": [
+      "PUBLICATION_HOLD"
+    ],
+    "rightsLedgerIds": [],
+    "separateMediaLaneRequired": true,
+    "nextAction": "Preserve the current conceptual body, audit terminology and sources paragraph-by-paragraph, then open one separately owned product PR for a bounded source-note or one new case article.",
+    "forbiddenPromotion": "Do not add a modern case roster or convert allegations, settlements, denials, scientific findings, institutional actions, or another person's conviction into interchangeable proof."
+  },
+  "effective_projection_counts": {
+    "PROMOTE": 0,
+    "REFERENCE": 4,
+    "SUPERSEDED": 0,
+    "BLOCKED": 6,
+    "total": 10
+  }
+}
