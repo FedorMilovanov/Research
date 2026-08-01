@@ -730,25 +730,17 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
   ПРИМЕНЕНИЕ образа: не только описание, но и молитва верующего о том, чтобы грозные
   черты Христа действовали на его собственный грех.
 
-**Другие подлинные находки Сперджена на смежные темы** (ВЕРИФИЦИРОВАНО ЧАСТИЧНО,
-короткие цитаты в кавычках из вторичного поиска, URL известны):
-- «An Earnest Warning Against Lukewarmness» (spurgeon.org) — Христос «searches the
-  heart, and tries the reins of the children of men» — «испытывает сердце и проверяет
-  внутренности сынов человеческих» [перевод мой] — прямое гомилетическое эхо Откр. 2:23
-  / Иер. 17:10.
-- «Among Lions» (spurgeon.org/resource-library/sermons/among-lions/) — цитирует гимн:
-  *«Jesu's tremendous name / Puts all our foes to flight; / Jesus, the meek, the angry
-  Lamb, / A Lion is in fight»* — «Грозное имя Иисуса / Обращает в бегство всех наших
-  врагов; / Иисус, кроткий, гневный Агнец, / В битве есть Лев» [перевод мой] — подлинная
-  формула нужного парадокса («кроткий Агнец» = «Лев в битве»), с указанием источника.
-- «Jesus and the Lambs» (spurgeon.org) — *«...it is the index of a noble nature that it
-  can be majestic as a lion in the midst of the fray... and yet it has a dove's eye and
-  a maiden's heart. Such is our Lord Jesus Christ; he is the conquering Captain of
-  salvation, but he is meek and lowly of heart»* — «...признак благородной природы в
-  том, что она может быть величественной, как лев, посреди сражения... и всё же иметь
-  голубиный взор и девичье сердце. Таков наш Господь Иисус Христос: Он — побеждающий
-  Военачальник спасения, но Он кроток и смирен сердцем» [перевод мой] — **отличная,
-  подлинная, атрибутированная замена** апокрифическому «льву для врагов».
+**Другие находки Сперджена на смежные темы — cleanup 2026-08-01:**
+- «An Earnest Warning Against Lukewarmness» — **SAFE CLOSURE** по official Spurgeon Library:
+  Христос “views with searching eyes all the works of his church”; “he searches the heart,
+  and tries the reins of the children of men.” Это прямое гомилетическое эхо Откр. 2:23 / Иер. 17:10.
+  URL: https://www.spurgeon.org/sermons/an-earnest-warning-against-lukewarmness
+  Статус: `OFFICIAL-SPURGEON-LIBRARY-VERIFIED / SERMON-LOCATOR-LOCKED`.
+- «Among Lions» — official Spurgeon Library page was read (https://www.spurgeon.org/sermons/among-lions),
+  but the secondary hymn wording “Jesus, the meek, the angry Lamb, / A Lion is in fight” was **not** seen
+  in the readback. Статус: `OFFICIAL-PAGE-READ / CLAIM-NOT-FOUND / DO-NOT-DIRECT-QUOTE`.
+- «Jesus and the Lambs» / related lamb wording remains `LOCATOR-UNCERTAIN / DO-NOT-DIRECT-QUOTE` in this dossier;
+  use verified Spurgeon №1028 and “An Earnest Warning” instead.
 
 ---
 
@@ -770,7 +762,7 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 | 12 | J. Owen, *Glory of Christ*, гл. VIII | «full of outward terror, because of the giving of the fiery law» | ВЕРИФИЦИРОВАНО | ccel.org/ccel/owen/glory/glory.i.xi.html |
 | 13 | T. Goodwin, *Heart of Christ*, подзаголовок | полное название трактата | ВЕРИФИЦИРОВАНО | banneroftruth.org |
 | 14 | T. Goodwin, тезис о величии+нежности | short anchors from Introduction + Part II / Heb. 4:15 | **SAFE CLOSURE 2026-08-01** — Monergism PDF text read directly; page-image not claimed | monergism.com/thethreshold/sdg/goodwin/The_Heart_of_Christ_-_Thomas_Goodwin.pdf |
-| 15 | J. Calvin, комм. на Ис. 63:4 | пересказ содержания | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | ccel.org/ccel/calvin/calcom16 |
+| 15 | J. Calvin, комм. на Ис. 63:1–6 | Edom/winepress as God the avenger/protector of church | **SAFE CLOSURE 2026-08-01** — CCEL chapter read | ccel.org/ccel/calvin/calcom16.xvi.i.html |
 | 16 | J. Gill, Exposition | Rev. 1:17; 2:23; 5:5–6; 19:15 closed; Isa. 63:1 not closed | **PARTLY CLOSED 2026-07-31** — BibleStudyTools open text verified for Revelation loci | biblestudytools.com/commentaries/gills-exposition-of-the-bible/ |
 | 17 | J. C. Ryle, Ин. 2 и Мф. 23 | Matt. 23 stern-reproof line closed; John 2 temple/heart-knowledge paragraph closed with caveat; old zeal-snippet not direct-quote-safe | **PARTLY CLOSED 2026-07-31 / 2026-08-01** — GraceGems `m23.htm` and `j02.htm` verified | gracegems.org/Ryle/m23.htm ; gracegems.org/Ryle/j02.htm |
 | 18 | 1689 LBCF гл. 8, 32 | Христос-Судия, Последний суд | ВЕРИФИЦИРОВАНО (устойчивый конфессиональный текст) | the1689confession.com, founders.org |
@@ -781,7 +773,7 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 | 23 | D. Ortlund, Crossway Q&A/articles + *Gentle and Lowly* ch. 15 | official Q&A/article balance on wrath/gentleness verified; ch. 15 wording remains book-page hold | **PARTLY CLOSED 2026-08-01** | crossway.org/articles/qa-dane-ortlund... ; crossway.org/articles/what-it-means-that-god-is-rich-in-mercy/ |
 | 24 | D. Ortlund, цитата на Откр. 5:5–6 | “lion-like judgment... lamb-like tenderness” | **BOOK-PAGE-HOLD / DO-NOT-DIRECT-QUOTE** | use Crossway Q&A balance instead unless book page is opened |
 | 25 | C. H. Spurgeon, проповедь №1028 (5 цитат) | см. раздел «Спердженовский пласт» | ВЕРИФИЦИРОВАНО (кросс-сверено 4+ зеркалами) | spurgeon.org, spurgeongems.org/chsbm18.pdf, ccel.org, blueletterbible.org |
-| 26 | C. H. Spurgeon, «Among Lions», «Jesus and the Lambs», «An Earnest Warning» | см. выше | ВЕРИФИЦИРОВАНО ЧАСТИЧНО | spurgeon.org/resource-library/sermons/... |
+| 26 | C. H. Spurgeon, «An Earnest Warning» / «Among Lions» | Laodicea heart-searching verified; Among Lions hymn claim not found | **PARTLY CLOSED 2026-08-01** — official Spurgeon pages read; unverified snippets blocked | spurgeon.org/sermons/an-earnest-warning-against-lukewarmness ; spurgeon.org/sermons/among-lions |
 | 27 | V. Baucham, «sissified, needy Jesus» | — | **НЕ ВЕРИФИЦИРОВАНО, не использовать** | — |
 | 28 | «Spurgeon»: лев врагам/агнец друзьям | — | **НЕ ВЕРИФИЦИРОВАНО, вероятный апокриф, не использовать** | spurgeon.org сам список опровержений |
 | 29 | G. Beale / R. Mounce, комм. на Откр. 6:16 | «не противоречие, а завершение» (пересказ) | [НЕ ВЕРИФИЦИРОВАНО — кандидат], нет прямой цитаты с указанием страницы | Beale NIGTC 1999; Mounce NICNT 1997 (библиографически точные издания) |
@@ -919,6 +911,8 @@ spurgeon_charles/sermons/1028.cfm; ccel.org (Sermons Volume 18: 1872) — схо
 0d. **GTY / Jeremiah Johnson critique — SAFE CLOSURE 2026-07-31.** Official GTY blog `B210315` was read; the “tame the Lion” line is now exact-source verified. Use only as conservative critique context, not as doctrinal foundation.
 0e. **Goodwin short anchors — SAFE CLOSURE 2026-08-01.** Monergism PDF text was read for Introduction and Part II / Heb. 4:15. Use short anchors with `PDF-TEXT` status only; do not claim print/page-image verification.
 0f. **Ryle John 2 — SAFE CLOSURE 2026-08-01 with caveat.** GraceGems `j02.htm` was read for temple-cleansing and Christ-heart-knowledge paragraphs. Old zeal-snippet wording remains do-not-direct-quote unless separately located.
+0g. **Calvin Isaiah 63 — SAFE CLOSURE 2026-08-01.** CCEL `calcom16.xvi.i.html` was read for Isaiah 63:1–6; use Calvin as historical/exegetical support for God as protector/avenger and for the winepress vengeance image, not as Christ-passion proof.
+0h. **Spurgeon extra R9 snippets — PARTLY CLOSED 2026-08-01.** Official “An Earnest Warning Against Lukewarmness” verified; “Among Lions” page read but the hymn-snippet was not found, so do not direct-quote that wording.
 
 1. **Гудвин — short anchors closed, long/page citations still optional.** 2026-08-01 Monergism PDF text readback gives quote-safe short anchors from Introduction and Part II / Heb. 4:15, but not page-image or print pagination. If the article wants long block quotations or page numbers, do a separate page-image/edition pass (DigitalPuritan/Monergism/Banner edition comparison).
 2. **Sproul — SAFE CLOSURE 2026-08-01 at official Ligonier quote-page level.** Use only the quote subset verified at Ligonier; old Goodreads/Bill Muehlenberg-only lines remain `SECONDARY-AGGREGATOR / DO-NOT-DIRECT-QUOTE` until checked in a book edition.
