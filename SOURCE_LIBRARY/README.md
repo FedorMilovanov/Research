@@ -2,50 +2,70 @@
 
 Единая точка входа в межпроектную библиотеку источников, книг, изображений, рукописей и правовых решений.
 
+Корпус подчиняется глобальной [`repository-evidence-policy-v2`](../data/repository-evidence-policy-v2.json) и [`artifact-custody-policy-v2`](../data/artifact-custody-policy-v2.json).
+
 ## Главные индексы
 
-- [MASTER_OPEN_ACCESS_SOURCE_INDEX_2026-07-30.md](MASTER_OPEN_ACCESS_SOURCE_INDEX_2026-07-30.md) — 80+ проверенных ссылок по Сергею Есенину, Айседоре Дункан, 4Q204, P72, SBLGNT, Codex Sinaiticus и вспомогательной литературе.
-- [OFFICIAL_DIGITAL_COLLECTIONS_70PLUS_INDEX_2026-07-30.md](OFFICIAL_DIGITAL_COLLECTIONS_70PLUS_INDEX_2026-07-30.md) — 94 официальные точки входа: Library of Congress, NYPL, British Library, Bodleian, Cambridge, NTVMR, CSNTM, Vatican, Dead Sea Scrolls, Europeana, Gallica/BnF, российские библиотеки, архивы и музеи, портретные категории поэтов и открытые книжные каталоги.
+- [MASTER_OPEN_ACCESS_SOURCE_INDEX_2026-07-30.md](MASTER_OPEN_ACCESS_SOURCE_INDEX_2026-07-30.md) — проверенные точки входа по литературе, рукописям и вспомогательным материалам.
+- [OFFICIAL_DIGITAL_COLLECTIONS_70PLUS_INDEX_2026-07-30.md](OFFICIAL_DIGITAL_COLLECTIONS_70PLUS_INDEX_2026-07-30.md) — официальные коллекции, библиотеки, архивы и музеи.
 
-Второй индекс является картой официальных коллекций, а не списком автоматически разрешённых production-файлов. Для каждого объекта отдельно проверяются карточка, provenance, лицензия и credit line.
+Индекс официальной коллекции не является списком автоматически разрешённых production-файлов. Для каждого объекта отдельно проверяются идентичность, полный объект, точный локатор, provenance, права, credit line и целевой маршрут.
 
-## Финальный строгий корпус 40 PDF
+## Корпус 40 PDF
 
-- [COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md](COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md) — методика строгого поиска, права, очистка ложных совпадений и итоговый gate.
-- [processed/COMMONS_STRICT_40_PROCESSING_INDEX_2026-07-30.md](processed/COMMONS_STRICT_40_PROCESSING_INDEX_2026-07-30.md) — состав всех 40 PDF, число страниц, тематические корзины, текстовый слой и контрольные SHA.
-- Воспроизводимый workflow: [../.github/workflows/build-commons-russian-literature-open-pdf-archive.yml](../.github/workflows/build-commons-russian-literature-open-pdf-archive.yml).
+- [COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md](COMMONS_RUSSIAN_LITERATURE_40PLUS_PDF_PASS_2026-07-30.md) — методика поиска и проверки.
+- [processed/COMMONS_STRICT_40_PROCESSING_INDEX_2026-07-30.md](processed/COMMONS_STRICT_40_PROCESSING_INDEX_2026-07-30.md) — состав, страницы, тематические корзины, текстовый слой и SHA-256.
+- [Воспроизводимый workflow](../.github/workflows/build-commons-russian-literature-open-pdf-archive.yml).
 
-Итог корпуса:
+Зафиксированный исследовательский проход содержал 40 PDF, 12 434 страницы и SHA-256 для каждого объекта. Эти цифры описывают конкретный evidence package. GitHub Actions artifact с семидневным retention остаётся `EPHEMERAL_ACTION_ARTIFACT`, пока не создан durable receipt с destination object ID и SHA-256 readback.
 
-- 40 действительных PDF;
-- 12 434 страницы;
-- 610 183 443 байта;
-- 39 Public Domain и 1 CC BY-SA 4.0;
-- 40/40 совпадений SHA-256;
-- 40/40 первых страниц отрендерены и визуально проверены;
-- 19 развитых текстовых слоёв, 4 частичных, 17 scan-first.
+## Независимые статусы
 
-Корпус является вспомогательной библиотекой старых изданий и периодики. Он не заменяет академические комментарии ИМЛИ, ФЭБ и РВБ. Использование отдельной фотографии или иллюстрации требует собственной проверки provenance и прав.
+Старые значения `DOWNLOAD-OK`, `LINK-ONLY`, `PRIVATE-STUDY`, `HOLD`, `CATALOG-ONLY` были смешанными shorthand. Для новых и обновляемых записей используются отдельные оси:
 
-## Статусы
+### Access state
 
-- `DOWNLOAD-OK` — официальный open access, public domain или открытая лицензия;
-- `LINK-ONLY` — публично хранить ссылку и описание, но не бинарный объект;
-- `PRIVATE-STUDY` — частный просмотр/скриншот без публичной публикации;
-- `HOLD` — права или provenance не подтверждены;
-- `CATALOG-ONLY` — запись каталога без доступного файла.
+- `FULL_OBJECT_VERIFIED`
+- `PARTIAL_OBJECT`
+- `CATALOG_ONLY`
+- `LINK_ONLY`
+- `NOT_ACQUIRED`
+
+### Custody state
+
+- `EPHEMERAL_ACTION_ARTIFACT`
+- `TRANSFER_PENDING_VERIFICATION`
+- `ACQUIRED_DURABLE`
+- `PRIVATE_STUDY_ONLY`
+
+### Rights state
+
+- `PUBLICATION_ELIGIBLE`
+- `STORAGE_ONLY`
+- `PRIVATE_STUDY_ONLY`
+- `PERMISSION_REQUIRED`
+- `RIGHTS_UNKNOWN`
+
+### Publication state
+
+- `PROMOTE`
+- `REFERENCE`
+- `SUPERSEDED`
+- `BLOCKED`
+
+`DOWNLOAD-OK` в исторической записи означает только успешный download в конкретном проходе; он не равен `ACQUIRED_DURABLE` и не равен `PUBLICATION_ELIGIBLE`. `HOLD` должен быть заменён типизированным `EVIDENCE_HOLD`, `LOCATOR_HOLD`, `ARCHIVE_HOLD`, `RIGHTS_HOLD` или `PUBLICATION_HOLD`.
 
 ## Где хранить материалы
 
-- GitHub: исследовательский текст, ссылки, provenance, цитатные ledgers, лицензии и решения.
-- Частный Google Drive: официальные open-access PDF/JPEG, переписка учреждений, manifests и private-study screenshots.
-- Постоянная Library-копия: резервные ZIP, пока Drive-коннектор недоступен.
-- Не хранить публично: IAA/P72 факсимиле без разрешения, персональные данные из писем, современные книги сомнительного происхождения.
+- GitHub: authority, research text, URL indexes, provenance, citations, rights ledgers, checksums и durable receipts.
+- Durable private storage: только объекты, для которых сохранены destination ID, размер и SHA-256 readback.
+- Link-only: restricted viewers, нескачанные каталожные карточки и объекты с неясным правом перераспространения.
+- Не публиковать: restricted facsimiles без разрешения, персональные данные из переписки и современные книги сомнительного происхождения.
 
-## Связанные проектные документы
+## Связанные проекты
 
-- The Legendary Poet: https://github.com/FedorMilovanov/TheLegendaryPoet/blob/main/docs/ESENIN_DUNCAN_RESEARCH_DOSSIER_2026-07-30.md
-- The Legendary Poet source policy: https://github.com/FedorMilovanov/TheLegendaryPoet/blob/main/docs/IMLI_RUSSIAN_LITERATURE_ARCHIVE.md
-- The Legendary Poet source list: https://github.com/FedorMilovanov/TheLegendaryPoet/blob/main/docs/RESEARCH_SOURCES.md
-- gospod-bog.ru manuscript-source integration: https://github.com/FedorMilovanov/gb-is-my-strength/blob/main/docs/research/OPEN_SOURCE_MANUSCRIPT_LIBRARY_4Q204_P72_2026-07-30.md
-- Audit intake for The Legendary Poet: https://github.com/FedorMilovanov/AuditRepo/tree/main/projects/the-legendary-poet/incoming/gpt-5-6-source-library/2026-07-30
+- [The Legendary Poet — Esenin/Duncan dossier](https://github.com/FedorMilovanov/TheLegendaryPoet/blob/main/docs/ESENIN_DUNCAN_RESEARCH_DOSSIER_2026-07-30.md)
+- [The Legendary Poet source policy](https://github.com/FedorMilovanov/TheLegendaryPoet/blob/main/docs/IMLI_RUSSIAN_LITERATURE_ARCHIVE.md)
+- [The Legendary Poet source list](https://github.com/FedorMilovanov/TheLegendaryPoet/blob/main/docs/RESEARCH_SOURCES.md)
+- [gospod-bog.ru manuscript-source integration](https://github.com/FedorMilovanov/gb-is-my-strength/blob/main/docs/research/OPEN_SOURCE_MANUSCRIPT_LIBRARY_4Q204_P72_2026-07-30.md)
+- [Audit intake](https://github.com/FedorMilovanov/AuditRepo/tree/main/projects/the-legendary-poet/incoming/gpt-5-6-source-library/2026-07-30)
