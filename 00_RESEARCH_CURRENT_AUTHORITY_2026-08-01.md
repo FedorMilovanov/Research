@@ -2,7 +2,7 @@
 
 **Дата:** 2026-08-01  
 **Статус:** `ACTIVE ROOT AUTHORITY / WAVE-BASED CLOSURE`  
-**Current base:** `bfaa54b71231b86f1b6aa2c4b6017690f2172739`
+**Current base:** `0f2a706dff1682117fad54c45c8d7b25c98b62eb`
 
 ## Назначение
 
@@ -50,6 +50,7 @@ Parsed text, OCR и repository paraphrase сами по себе не дают `
 ## Current corpus authorities
 
 - `СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/43_WAVE10_FAITHFUL_WITNESS_UNDER_PRESSURE_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/42_WAVE9_MODERN_DIOTROPHES_EDITORIAL_OUTLINE_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/40_WAVE6_SITE_TRANSFER_PUBLICATION_LEDGER_2026-08-01.md`;
@@ -87,6 +88,8 @@ or machine ledger governs.
   **14 corrections / 20 anchors / 29 curated reader links / permanent read-only contract**.
 - OSK Wave 9: «Диотрефы нашего времени» — **21 bounded core cards / one mechanism each /
   119 case-evidence sources + 29 controls = 148 sources / 0 product writes**.
+- OSK Wave 10: «Верность под давлением» — **15 actor pathways / 105 case-to-source refs /
+  33 new source records / 20 faithful responses / 181-source governing pool / NO PRODUCT WRITE**.
 - Cumulative OSK case authority: **290 sources / 216 A-class / 197 exact URLs / 105 quote-safe**.
 - Effective OSK routing:
   `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 4 STANDALONE / 0 HOLD`.
@@ -97,7 +100,8 @@ or machine ledger governs.
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK Wave 10 separate product draft for `/articles/diotrefy-nashego-vremeni/`;
+- OSK Product Wave 11: integrate the faithful-witness supplement into the existing
+  no-route Diotrophes draft while preserving `PUBLICATION_HOLD`;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 
