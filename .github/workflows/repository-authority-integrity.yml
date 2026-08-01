@@ -17,12 +17,22 @@ jobs:
   validate:
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout complete history
+      - name: Checkout complete Research history
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
+          path: Research
+
+      - name: Checkout exact Product snapshot
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: FedorMilovanov/gb-is-my-strength
+          ref: efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3
+          path: Product
+          persist-credentials: false
 
       - name: Compile validators
+        working-directory: Research
         run: |
           python3 -m py_compile \
             scripts/validate_repository_authority_integrity.py \
@@ -35,9 +45,15 @@ jobs:
             scripts/check_heart_source_closure.py
 
       - name: Validate repository control plane
+        working-directory: Research
+        env:
+          PRODUCT_REPO: ../Product
         run: python3 scripts/validate_repository_authority_integrity.py
 
       - name: Run deterministic corpus validators
+        working-directory: Research
+        env:
+          PRODUCT_REPO: ../Product
         run: |
           python3 scripts/validate_public_projection_queue.py
           python3 scripts/validate_osk_wave7_product_article_audit.py
@@ -48,5 +64,9 @@ jobs:
           python3 scripts/check_heart_source_closure.py
           node scripts/gill-pr2-lossless-reconciliation-audit.mjs
 
-      - name: Ensure all validators are read-only
-        run: git diff --exit-code
+      - name: Ensure all validators and checkouts are read-only
+        run: |
+          git -C Research diff --exit-code
+          git -C Product diff --exit-code
+          test -z "$(git -C Research status --porcelain)"
+          test -z "$(git -C Product status --porcelain)"
