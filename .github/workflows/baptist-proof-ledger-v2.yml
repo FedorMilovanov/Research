@@ -1,0 +1,51 @@
+name: Baptist proof ledger v2
+
+on:
+  pull_request:
+    paths:
+      - 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv'
+      - 'data/baptist-proof-ledger-schema-v2.json'
+      - 'scripts/normalize_baptist_proof_ledger.py'
+      - '.github/workflows/baptist-proof-ledger-v2.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv'
+      - 'data/baptist-proof-ledger-schema-v2.json'
+      - 'scripts/normalize_baptist_proof_ledger.py'
+      - '.github/workflows/baptist-proof-ledger-v2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  normalize-and-validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Compile canonicalizer
+        run: python3 -m py_compile scripts/normalize_baptist_proof_ledger.py
+      - name: Generate canonical v2 view
+        run: >-
+          python3 scripts/normalize_baptist_proof_ledger.py
+          --output generated/baptist/PROOF_STATUS_LEDGER_V2.csv
+          --summary generated/baptist/PROOF_STATUS_LEDGER_V2.summary.json
+      - name: Prove deterministic output
+        run: |
+          cp generated/baptist/PROOF_STATUS_LEDGER_V2.csv /tmp/first.csv
+          cp generated/baptist/PROOF_STATUS_LEDGER_V2.summary.json /tmp/first.json
+          python3 scripts/normalize_baptist_proof_ledger.py \
+            --output generated/baptist/PROOF_STATUS_LEDGER_V2.csv \
+            --summary generated/baptist/PROOF_STATUS_LEDGER_V2.summary.json
+          cmp /tmp/first.csv generated/baptist/PROOF_STATUS_LEDGER_V2.csv
+          cmp /tmp/first.json generated/baptist/PROOF_STATUS_LEDGER_V2.summary.json
+      - name: Upload canonical machine view
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        with:
+          name: baptist-proof-ledger-v2-canonical-view
+          path: generated/baptist/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Ensure canonicalizer is read-only
+        run: git diff --exit-code
