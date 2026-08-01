@@ -1,0 +1,35 @@
+{
+  "repository": "FedorMilovanov/Research",
+  "previousArchiveAnchor": "a7eebfd1faff6db1ad38476ecea4be42f169f67c",
+  "policy": "Unmerged unique archive tips become parents of the archive anchor. Exact merged heads older than 24h are deleted without extra parents because their accepted content is in main and the PR retains the exact patch.",
+  "preserved": [
+    {
+      "branch": "archive/imli-40plus-pdf-pass-2026-07-30",
+      "sha": "b1e24fe1f22c7ce8b11ceed60ea85caef19feafc"
+    },
+    {
+      "branch": "archive/project-materials-120plus-2026-07-30",
+      "sha": "2d4d9cb8d9de55e4c4d52c41ff81790014c7ca25"
+    },
+    {
+      "branch": "archive/poet-portrait-review-candidates-2026-07-30",
+      "sha": "ce5e96b1250353430c5aa443f76aa01da3536303"
+    },
+    {
+      "branch": "archive/second-editorial-40-pdf-2026-07-30",
+      "sha": "19acb416019e91623295749667d97bf6a26074c4"
+    }
+  ],
+  "acceptedMerged": [
+    {
+      "branch": "archive/commons-russian-literature-40plus-2026-07-30",
+      "sha": "83dad12f384c8c5f9aaed17898fad50e5d154a46",
+      "pr": 43
+    },
+    {
+      "branch": "archive/ephemera-review-candidates-2026-07-30",
+      "sha": "2f311eb99caef00162e98e6a2da7799c28aa926d",
+      "pr": 50
+    }
+  ]
+}
