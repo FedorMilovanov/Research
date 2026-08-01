@@ -2,7 +2,7 @@
 
 **Дата:** 2026-08-01  
 **Статус:** `ACTIVE ROOT AUTHORITY / WAVE-BASED CLOSURE`  
-**Current base:** `729c1b75f9c9dfabaaae52c6be5b7fb868c0db38`
+**Current base:** `45dca0ca83e375f8247cda01dfc33bcd7b034e6e`
 
 ## Назначение
 
@@ -50,8 +50,9 @@ Parsed text, OCR и repository paraphrase сами по себе не дают `
 ## Current corpus authorities
 
 - `СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/37_WAVE3_DARK_SIDE_REPENTANCE_RESTORATION_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/36_WAVE2_CONDITIONAL_MONEY_POWER_CLOSURE_2026-08-01.md`;
-- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/35_CURRENT_AUTHORITY_POWER_CASE_ROUTING_2026-08-01.md` — base Wave 1;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/35_CURRENT_AUTHORITY_POWER_CASE_ROUTING_2026-08-01.md`;
 - `data/genesis6-authority-manifest.json`;
 - `data/genesis6-enoch-extension-authority-manifest.json`;
 - Gill navigation/volumes 70–74 and their validators;
@@ -69,14 +70,17 @@ or machine ledger governs.
 - Heart disputed-claim source closure: 85-source registry.
 - Genesis/Enoch named Research blockers: closed; publication hold remains.
 - OSK Wave 1: 33-case routing and 79-source register.
-- OSK Wave 2: eight money/power cases, 56-source pass; effective routing
+- OSK Wave 2: eight money/power cases and 56-source pass.
+- OSK Wave 3: seven dark-side/restoration decisions; 49 new + 7 inherited
+  source records; cumulative OSK pool **184 sources / 145 A-class / 64 quote-safe**.
+- Effective OSK routing remains
   `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 3 STANDALONE / 1 HOLD`.
 
 ### Active
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK Wave 3 dark-side/restoration and later standalone/blocked waves;
+- OSK Wave 4 standalone pastoral-care/legal and Wave 5 blocked case;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 
