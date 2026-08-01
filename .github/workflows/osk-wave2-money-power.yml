@@ -1,0 +1,35 @@
+name: OSK Wave 2 Money Power Authority
+
+on:
+  pull_request:
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/36_WAVE2_CONDITIONAL_MONEY_POWER_CLOSURE_2026-08-01.md'
+      - 'data/osk-wave2-decisions-2026-08-01.json'
+      - 'data/osk-wave2-source-registry-2026-08-01.json'
+      - 'data/osk-wave2-source-registry-*-2026-08-01.json'
+      - 'scripts/validate_osk_wave2_money_power.py'
+      - '.github/workflows/osk-wave2-money-power.yml'
+  push:
+    branches: [main]
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/36_WAVE2_CONDITIONAL_MONEY_POWER_CLOSURE_2026-08-01.md'
+      - 'data/osk-wave2-decisions-2026-08-01.json'
+      - 'data/osk-wave2-source-registry-2026-08-01.json'
+      - 'data/osk-wave2-source-registry-*-2026-08-01.json'
+      - 'scripts/validate_osk_wave2_money_power.py'
+      - '.github/workflows/osk-wave2-money-power.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_osk_wave2_money_power.py
+      - name: Validate Wave 2 authority
+        run: python scripts/validate_osk_wave2_money_power.py
