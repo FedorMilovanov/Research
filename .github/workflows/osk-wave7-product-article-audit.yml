@@ -1,0 +1,33 @@
+name: OSK Wave 7 Product Article Audit
+
+on:
+  pull_request:
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md'
+      - 'data/osk-wave7-product-article-audit-2026-08-01.json'
+      - 'data/osk-wave7-article-audit-source-registry-2026-08-01.json'
+      - 'scripts/validate_osk_wave7_product_article_audit.py'
+      - '.github/workflows/osk-wave7-product-article-audit.yml'
+  push:
+    branches: [main]
+    paths:
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md'
+      - 'data/osk-wave7-product-article-audit-2026-08-01.json'
+      - 'data/osk-wave7-article-audit-source-registry-2026-08-01.json'
+      - 'scripts/validate_osk_wave7_product_article_audit.py'
+      - '.github/workflows/osk-wave7-product-article-audit.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile validator
+        run: python -m py_compile scripts/validate_osk_wave7_product_article_audit.py
+      - name: Validate Wave 7 audit
+        run: python scripts/validate_osk_wave7_product_article_audit.py

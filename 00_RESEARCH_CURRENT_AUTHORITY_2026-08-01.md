@@ -2,7 +2,7 @@
 
 **Дата:** 2026-08-01  
 **Статус:** `ACTIVE ROOT AUTHORITY / WAVE-BASED CLOSURE`  
-**Current base:** `446a83932d4ec446b4c87e2c7b2fb02aeeee49eb`
+**Current base:** `49f49f89cceb53f8146de3426ccc71f3c6ad1818`
 
 ## Назначение
 
@@ -50,6 +50,7 @@ Parsed text, OCR и repository paraphrase сами по себе не дают `
 ## Current corpus authorities
 
 - `СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md`;
+- `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/40_WAVE6_SITE_TRANSFER_PUBLICATION_LEDGER_2026-08-01.md`;
 - `PUBLIC_PROJECTION_OSK_WAVE6_OVERLAY_2026-08-01.md`;
 - `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/39_WAVE5_ADELAJA_FINAL_BOUNDARY_2026-08-01.md`;
@@ -78,8 +79,10 @@ or machine ledger governs.
 - OSK Wave 3: seven dark-side/restoration decisions and 49-source pass.
 - OSK Wave 4: three standalone pastoral-care/legal dossiers and 54-source pass.
 - OSK Wave 5: Adelaja / King’s Capital final procedural boundary and 52-source pass.
-- OSK Wave 6: **20-point publication ledger + 10 future article bundles**.
-- Cumulative OSK authority: **290 sources / 216 A-class / 197 exact URLs / 105 quote-safe**.
+- OSK Wave 6: 20-point publication ledger + 10 future article bundles.
+- OSK Wave 7: product paragraph audit — **20 preserved points / 14 mandatory fixes /
+  12 source notes / 54-source control pool / 0 product writes**.
+- Cumulative OSK case authority: **290 sources / 216 A-class / 197 exact URLs / 105 quote-safe**.
 - Effective OSK routing:
   `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 4 STANDALONE / 0 HOLD`.
 - All 33 OSK cases have an explicit route; no generic case-level HOLD remains.
@@ -89,8 +92,7 @@ or machine ledger governs.
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK paragraph-level audit of the current product article and selection of one
-  bounded product lane;
+- OSK Wave 8 separate product PR applying exactly 14 mandatory fixes and 12 source notes;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 
