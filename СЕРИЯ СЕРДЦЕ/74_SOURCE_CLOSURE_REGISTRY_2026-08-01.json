@@ -1,0 +1,1000 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-01",
+  "repository": "FedorMilovanov/Research",
+  "scope": "СЕРИЯ СЕРДЦЕ R1–R9 and V84 evidence boundaries",
+  "minimum_unique_sources": 60,
+  "trusted_source_classes": [
+    "academic_journal",
+    "confessional_primary",
+    "official_author_archive",
+    "official_media",
+    "official_ministry",
+    "official_ministry_transcript",
+    "official_publisher",
+    "open_reference",
+    "primary_scan",
+    "primary_text",
+    "primary_text_reproduction",
+    "primary_text_rights_limited",
+    "public_domain_commentary"
+  ],
+  "counts": {
+    "unique_sources": 85,
+    "trusted_sources": 81,
+    "claims": 18,
+    "quote_safe_claims": 9,
+    "non_quote_claims": 9
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "author": "George Whitefield",
+      "work": "On Regeneration",
+      "url": "https://ccel.org/ccel/whitefield/sermons.li.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R1 direct regeneration doctrine"
+    },
+    {
+      "id": "SRC-002",
+      "author": "George Whitefield",
+      "work": "Directions How to Hear Sermons",
+      "url": "https://www.ccel.org/ccel/whitefield/sermons.xxx.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R4 primary replacement for unlocated stony-ground wording"
+    },
+    {
+      "id": "SRC-003",
+      "author": "George Whitefield",
+      "work": "Selected Sermons",
+      "url": "https://ccel.org/ccel/w/whitefield/sermons/cache/sermons.pdf",
+      "class": "primary_text",
+      "format": "PDF",
+      "use": "Whitefield corpus control"
+    },
+    {
+      "id": "SRC-004",
+      "author": "C. H. Spurgeon",
+      "work": "Samson Conquered",
+      "url": "https://www.spurgeon.org/resource-library/sermons/samson-conquered/",
+      "class": "official_author_archive",
+      "format": "HTML",
+      "use": "R3 verifies free-will aphorism in sermon 224"
+    },
+    {
+      "id": "SRC-005",
+      "author": "C. H. Spurgeon",
+      "work": "Among Lions",
+      "url": "https://www.spurgeon.org/resource-library/sermons/among-lions/",
+      "class": "official_author_archive",
+      "format": "HTML",
+      "use": "R9 controls lion language; does not support old exact aphorism"
+    },
+    {
+      "id": "SRC-006",
+      "author": "C. H. Spurgeon",
+      "work": "The Lions' Den",
+      "url": "https://www.spurgeon.org/resource-library/sermons/the-lions-den/",
+      "class": "official_author_archive",
+      "format": "HTML",
+      "use": "R9 verified substitute"
+    },
+    {
+      "id": "SRC-007",
+      "author": "C. H. Spurgeon",
+      "work": "David's Prayer in the Cave",
+      "url": "https://www.spurgeon.org/resource-library/sermons/davids-prayer-in-the-cave/",
+      "class": "official_author_archive",
+      "format": "HTML",
+      "use": "R9 verified substitute"
+    },
+    {
+      "id": "SRC-008",
+      "author": "C. H. Spurgeon",
+      "work": "David's Prayer in the Cave",
+      "url": "https://www.spurgeon.org/wp-content/uploads/2020/03/50_David_s_Prayer_in_the_Cave.pdf",
+      "class": "official_author_archive",
+      "format": "PDF",
+      "use": "R9 page-stable sermon PDF"
+    },
+    {
+      "id": "SRC-009",
+      "author": "Thomas Watson",
+      "work": "Heaven Taken by Storm",
+      "url": "https://quod.lib.umich.edu/e/eebo/A65299.0001.001/1:4?rgn=div1&view=fulltext",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "R7a verifies pandect of divine knowledge"
+    },
+    {
+      "id": "SRC-010",
+      "author": "Thomas Watson",
+      "work": "Heaven Taken by Storm item record",
+      "url": "https://quod.lib.umich.edu/e/eebo/A65299.0001.001?view=toc",
+      "class": "primary_bibliographic",
+      "format": "EEBO-TCP",
+      "use": "edition and rights control"
+    },
+    {
+      "id": "SRC-011",
+      "author": "Thomas Watson",
+      "work": "Heaven Taken by Storm catalogue",
+      "url": "https://catalog.folger.edu/record/153910",
+      "class": "library_catalog",
+      "format": "Catalogue",
+      "use": "1669 edition control"
+    },
+    {
+      "id": "SRC-012",
+      "author": "John Owen",
+      "work": "Pneumatologia: name and doctrine of the Spirit",
+      "url": "https://ccel.org/ccel/owen/pneum/pneum.i.v.ii.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R7a primary replacement for burn-Bibles condensation"
+    },
+    {
+      "id": "SRC-013",
+      "author": "John Owen",
+      "work": "Understanding the Mind of God in Scripture",
+      "url": "https://www.ccel.org/ccel/owen/pneum.i.xii.v.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R7a Spirit and Scripture exact primary passage"
+    },
+    {
+      "id": "SRC-014",
+      "author": "John Owen",
+      "work": "Spirit's composition and disposal of Scripture",
+      "url": "https://www.ccel.org/ccel/owen/pneum/pneum.i.xii.x.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R7a sufficiency and illumination"
+    },
+    {
+      "id": "SRC-015",
+      "author": "John Owen",
+      "work": "Old Testament operations of the Spirit",
+      "url": "https://www.ccel.org/ccel/owen/pneum.i.vi.i.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R2 continuity/discontinuity"
+    },
+    {
+      "id": "SRC-016",
+      "author": "John Owen",
+      "work": "Pneumatologia, regeneration",
+      "url": "https://www.ccel.org/ccel/owen/pneum/pneum.i.vii.i.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R1/R2 regeneration"
+    },
+    {
+      "id": "SRC-017",
+      "author": "John Owen",
+      "work": "Mortification of Sin, chapter II",
+      "url": "https://www.ccel.org/ccel/owen/mort.i.v.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R5 killing sin quote"
+    },
+    {
+      "id": "SRC-018",
+      "author": "John Owen",
+      "work": "Mortification of Sin, chapter VII",
+      "url": "https://www.ccel.org/ccel/owen/mort.i.x.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R5 exact context"
+    },
+    {
+      "id": "SRC-019",
+      "author": "John Owen",
+      "work": "Of Temptation",
+      "url": "https://www.ccel.org/ccel/owen/temptation.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "temptation and heart"
+    },
+    {
+      "id": "SRC-020",
+      "author": "John Owen",
+      "work": "Glory of Christ TOC",
+      "url": "https://www.ccel.org/ccel/owen/glory/glory.toc.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R8 chapter map"
+    },
+    {
+      "id": "SRC-021",
+      "author": "John Owen",
+      "work": "Glory of Christ plain text",
+      "url": "https://ccel.org/ccel/o/owen/glory/cache/glory.txt",
+      "class": "primary_text",
+      "format": "TXT",
+      "use": "R8 corpus search"
+    },
+    {
+      "id": "SRC-022",
+      "author": "John Owen",
+      "work": "Works volume 3 scan",
+      "url": "https://archive.org/details/worksofjohnowe03owen",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "edition control for Pneumatologia"
+    },
+    {
+      "id": "SRC-023",
+      "author": "John Owen",
+      "work": "Works volume 3",
+      "url": "https://books.google.com/books/about/The_Works_of_John_Owen.html?id=qHAuAAAAYAAJ",
+      "class": "primary_scan",
+      "format": "Google Books",
+      "use": "edition and pagination control"
+    },
+    {
+      "id": "SRC-024",
+      "author": "John Owen",
+      "work": "Works bibliography",
+      "url": "https://johnowen.org/bibliography/",
+      "class": "scholarly_bibliography",
+      "format": "HTML",
+      "use": "work/edition identity"
+    },
+    {
+      "id": "SRC-025",
+      "author": "Thomas Boston",
+      "work": "Human Nature in Its Fourfold State",
+      "url": "https://archive.org/details/humannatureinits00bostuoft",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "R1/R3 anthropology"
+    },
+    {
+      "id": "SRC-026",
+      "author": "Thomas Boston",
+      "work": "Human Nature in Its Fourfold State, 1771",
+      "url": "https://archive.org/details/bim_eighteenth-century_human-nature-in-its-four_boston-thomas_1771",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "early edition control"
+    },
+    {
+      "id": "SRC-027",
+      "author": "1689 London Baptist Confession",
+      "work": "Chapter 9, Of Free Will",
+      "url": "https://www.bible-researcher.com/1689/chapter9.html",
+      "class": "confessional_primary",
+      "format": "HTML",
+      "use": "free-will and states"
+    },
+    {
+      "id": "SRC-028",
+      "author": "1689 London Baptist Confession",
+      "work": "Chapter 21, Christian Liberty",
+      "url": "https://www.the1689confession.com/1689/chapter-21",
+      "class": "confessional_primary",
+      "format": "HTML",
+      "use": "conscience/liberty"
+    },
+    {
+      "id": "SRC-029",
+      "author": "Westminster Assembly",
+      "work": "Westminster Confession",
+      "url": "https://thewestminsterstandard.org/the-westminster-confession/",
+      "class": "confessional_primary",
+      "format": "HTML",
+      "use": "confessional comparison"
+    },
+    {
+      "id": "SRC-030",
+      "author": "Savoy Assembly",
+      "work": "Savoy Declaration",
+      "url": "https://www.the-highway.com/savoy_declaration.html",
+      "class": "confessional_primary",
+      "format": "HTML",
+      "use": "confessional comparison"
+    },
+    {
+      "id": "SRC-031",
+      "author": "William Perkins",
+      "work": "A Golden Chaine",
+      "url": "https://archive.org/details/goldenchaineorde00perk",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "states and calling"
+    },
+    {
+      "id": "SRC-032",
+      "author": "William Perkins",
+      "work": "Cases of Conscience",
+      "url": "https://quod.lib.umich.edu/e/eebo/A09365.0001.001?view=toc",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "conscience locator"
+    },
+    {
+      "id": "SRC-033",
+      "author": "William Ames",
+      "work": "Conscience with the Power and Cases Thereof",
+      "url": "https://quod.lib.umich.edu/e/eebo/A69129.0001.001?view=toc",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "conscience taxonomy"
+    },
+    {
+      "id": "SRC-034",
+      "author": "Stephen Charnock",
+      "work": "Works vol. 3",
+      "url": "https://www.digitalpuritan.net/Digital%20Puritan%20Resources/Charnock%2C%20Stephen/The%20Complete%20Works%20of%20Stephen%20Charnock%20%28vol.3%29.txt.html",
+      "class": "primary_text",
+      "format": "TXT/HTML",
+      "use": "practical atheism and regeneration"
+    },
+    {
+      "id": "SRC-035",
+      "author": "Thomas Manton",
+      "work": "Works vol. 4, James 1:21",
+      "url": "https://www.ccel.org/ccel/manton/manton04.iv.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R7a ingrafted word"
+    },
+    {
+      "id": "SRC-036",
+      "author": "Jonathan Edwards",
+      "work": "Religious Affections",
+      "url": "https://www.ccel.org/ccel/edwards/affections.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R5 signs and affections"
+    },
+    {
+      "id": "SRC-037",
+      "author": "Matthew Mead",
+      "work": "The Almost Christian Discovered",
+      "url": "https://www.ccel.org/ccel/mead_matthew/almost.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R5 false peace and struggle"
+    },
+    {
+      "id": "SRC-038",
+      "author": "Thomas Shepard",
+      "work": "The Sincere Convert, 1650",
+      "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-sincere-convert-_shepard-thomas_1650_0",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "false conversion"
+    },
+    {
+      "id": "SRC-039",
+      "author": "Joseph Alleine",
+      "work": "An Alarm to the Unconverted",
+      "url": "https://archive.org/details/alarmtounconvert00allerich",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "conversion and false peace"
+    },
+    {
+      "id": "SRC-040",
+      "author": "William Guthrie",
+      "work": "The Christian's Great Interest",
+      "url": "https://www.ccel.org/g/guthrie/interest/int.htm",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "assurance and saving change"
+    },
+    {
+      "id": "SRC-041",
+      "author": "Thomas Hooker",
+      "work": "The Poor Doubting Christian",
+      "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-poor-doubting-christ_hooker-thomas_1664",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "assurance and self-qualification"
+    },
+    {
+      "id": "SRC-042",
+      "author": "Thomas Brooks",
+      "work": "Heaven on Earth",
+      "url": "https://www.gracegems.org/Brooks/heaven_on_earth2.htm",
+      "class": "primary_text_reproduction",
+      "format": "HTML",
+      "use": "assurance"
+    },
+    {
+      "id": "SRC-043",
+      "author": "Walter Marshall",
+      "work": "The Gospel Mystery of Sanctification",
+      "url": "https://www.monergism.com/thethreshold/articles/onsite/GospelMystery.pdf",
+      "class": "primary_text_reproduction",
+      "format": "PDF",
+      "use": "union and sanctification"
+    },
+    {
+      "id": "SRC-044",
+      "author": "Anthony Burgess",
+      "work": "Spiritual Refining",
+      "url": "https://quod.lib.umich.edu/e/eebo/A30243.0001.001",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "true/counterfeit grace"
+    },
+    {
+      "id": "SRC-045",
+      "author": "John Flavel",
+      "work": "Touchstone of Sincerity",
+      "url": "https://archive.org/details/touchstoneofsinc00flav",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "sincerity and assurance"
+    },
+    {
+      "id": "SRC-046",
+      "author": "Thomas Goodwin",
+      "work": "Works vol. 6",
+      "url": "https://www.digitalpuritan.net/Digital%20Puritan%20Resources/Goodwin%2C%20Thomas/The%20Works%20of%20Thomas%20Goodwin%20%28vol.6%29.txt.html",
+      "class": "primary_text_reproduction",
+      "format": "TXT/HTML",
+      "use": "Christ's righteousness"
+    },
+    {
+      "id": "SRC-047",
+      "author": "Samuel Bolton",
+      "work": "The True Bounds of Christian Freedom",
+      "url": "https://www.monergism.com/true-bounds-christian-freedom-ebook",
+      "class": "primary_text_reproduction",
+      "format": "HTML/PDF",
+      "use": "law/gospel and liberty"
+    },
+    {
+      "id": "SRC-048",
+      "author": "Daniel Dyke",
+      "work": "The Mystery of Self-Deceiving, 1633",
+      "url": "https://archive.org/details/bim_early-english-books-1475-1640_the-mystery-of-self-dece_dyke-daniel_1633",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "self-deceit"
+    },
+    {
+      "id": "SRC-049",
+      "author": "John Bunyan",
+      "work": "A Treatise of the Fear of God",
+      "url": "https://quod.lib.umich.edu/e/eebo/A30211.0001.001/1:2.5?rgn=div2;view=fulltext",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "fear of God"
+    },
+    {
+      "id": "SRC-050",
+      "author": "Robert Bolton",
+      "work": "Instructions for a Right Comforting Afflicted Consciences",
+      "url": "https://ota.bodleian.ox.ac.uk/repository/xmlui/bitstream/handle/20.500.12024/A16330/A16330.html?isAllowed=y&sequence=5",
+      "class": "primary_text",
+      "format": "TCP/HTML",
+      "use": "afflicted conscience"
+    },
+    {
+      "id": "SRC-051",
+      "author": "Thomas Taylor",
+      "work": "The Parable of the Sower, 1621",
+      "url": "https://www.hailandfire.com/library_books/H%26F_Taylor%28Thomas%29_ParableoftheSower1621.pdf",
+      "class": "primary_text_reproduction",
+      "format": "PDF",
+      "use": "R4 soils"
+    },
+    {
+      "id": "SRC-052",
+      "author": "Richard Sibbes",
+      "work": "The Bruised Reed",
+      "url": "https://www.monergism.com/thethreshold/sdg/bruisedreed.html",
+      "class": "primary_text_reproduction",
+      "format": "HTML",
+      "use": "weak grace safeguard"
+    },
+    {
+      "id": "SRC-053",
+      "author": "Thomas Goodwin",
+      "work": "A Child of Light Walking in Darkness",
+      "url": "https://www.monergism.com/thethreshold/sdg/goodwin/A%20Child%20of%20Light%20Walking%20in%20Darkness%20-%20Goodwin.pdf",
+      "class": "primary_text_reproduction",
+      "format": "PDF",
+      "use": "darkness/desertion"
+    },
+    {
+      "id": "SRC-054",
+      "author": "William Bridge",
+      "work": "A Lifting Up for the Downcast",
+      "url": "https://www.monergism.com/thethreshold/sdg/bridge/A%20Lifting%20Up%20for%20the%20Downcast%20-%20Bridge.pdf",
+      "class": "primary_text_reproduction",
+      "format": "PDF",
+      "use": "downcast believer"
+    },
+    {
+      "id": "SRC-055",
+      "author": "Timothy Rogers",
+      "work": "A Discourse Concerning Trouble of Mind, 1706",
+      "url": "https://archive.org/details/bim_eighteenth-century_a-discourse-concerning-t_rogers-timothy_1706",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "edition control; Site uses 1691 scan locators"
+    },
+    {
+      "id": "SRC-056",
+      "author": "Timothy Rogers",
+      "work": "A Discourse Concerning Trouble of Mind, 1691",
+      "url": "https://quod.lib.umich.edu/e/eebo2/A57573.0001.001/",
+      "class": "primary_text_rights_limited",
+      "format": "EEBO-TCP",
+      "use": "search/locator only, rights boundary"
+    },
+    {
+      "id": "SRC-057",
+      "author": "Richard Baxter",
+      "work": "Preservatives against Melancholy, 1713",
+      "url": "https://archive.org/details/bim_eighteenth-century_preservatives-against-me_baxter-richard_1713",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "historical melancholy"
+    },
+    {
+      "id": "SRC-058",
+      "author": "Richard Baxter",
+      "work": "A Christian Directory",
+      "url": "https://quod.lib.umich.edu/e/eebo/A26892.0001.001/?view=toc",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "pastoral directions"
+    },
+    {
+      "id": "SRC-059",
+      "author": "William Gurnall",
+      "work": "The Christian in Complete Armour",
+      "url": "https://www.ccel.org/ccel/gurnall/armour/files/gurnal01a.pdf",
+      "class": "primary_text_reproduction",
+      "format": "PDF",
+      "use": "temptation and despair"
+    },
+    {
+      "id": "SRC-060",
+      "author": "Thomas Watson",
+      "work": "The Doctrine of Repentance, 1668",
+      "url": "https://archive.org/details/bim_early-english-books-1641-1700_the-doctrine-of-repentan_watson-thomas_1668/page/n3/mode/2up",
+      "class": "primary_scan",
+      "format": "Scan/PDF",
+      "use": "repentance"
+    },
+    {
+      "id": "SRC-061",
+      "author": "Jeremiah Burroughs",
+      "work": "The Evil of Evils",
+      "url": "https://www.monergism.com/thethreshold/sdg/burroughs/The%20Evil%20of%20Evils%20-%20Jeremiah%20Burroughs.pdf",
+      "class": "primary_text_reproduction",
+      "format": "PDF",
+      "use": "sin and repentance"
+    },
+    {
+      "id": "SRC-062",
+      "author": "Richard Sibbes",
+      "work": "The Returning Backslider",
+      "url": "https://quod.lib.umich.edu/e/eebo2/A12190.0001.001?view=toc",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "backsliding"
+    },
+    {
+      "id": "SRC-063",
+      "author": "John Flavel",
+      "work": "Christ Altogether Lovely",
+      "url": "https://www.ccel.org/ccel/flavel/lovely.html",
+      "class": "primary_text",
+      "format": "HTML",
+      "use": "R8 Christ's glory"
+    },
+    {
+      "id": "SRC-064",
+      "author": "Thomas Goodwin",
+      "work": "The Heart of Christ",
+      "url": "https://www.monergism.com/thethreshold/sdg/goodwin/The_Heart_of_Christ_-_Thomas_Goodwin.pdf",
+      "class": "primary_text_reproduction",
+      "format": "PDF",
+      "use": "R9 short anchors only"
+    },
+    {
+      "id": "SRC-065",
+      "author": "Thomas Shepard",
+      "work": "The Sound Believer",
+      "url": "https://www.monergism.com/sound-believer-ebook",
+      "class": "primary_text_reproduction",
+      "format": "HTML/PDF",
+      "use": "duties and Christ"
+    },
+    {
+      "id": "SRC-066",
+      "author": "David Clarkson",
+      "work": "Soul Idolatry Excludes Men Out of Heaven",
+      "url": "https://www.monergism.com/soul-idolatry-excludes-men-out-heaven",
+      "class": "primary_text_reproduction",
+      "format": "HTML",
+      "use": "heart idolatry"
+    },
+    {
+      "id": "SRC-067",
+      "author": "Jeremiah Burroughs",
+      "work": "Moses His Choice",
+      "url": "https://quod.lib.umich.edu/e/eebo/A30592.0001.001?view=toc",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "self-denial"
+    },
+    {
+      "id": "SRC-068",
+      "author": "Richard Gilpin",
+      "work": "Demonologia Sacra",
+      "url": "https://quod.lib.umich.edu/e/eebo/A42781.0001.001",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "temptation"
+    },
+    {
+      "id": "SRC-069",
+      "author": "Richard Capel",
+      "work": "Tentations: Their Nature, Danger, Cure",
+      "url": "https://quod.lib.umich.edu/e/eebo/A17936.0001.001?view=toc",
+      "class": "primary_text",
+      "format": "EEBO-TCP",
+      "use": "temptation"
+    },
+    {
+      "id": "SRC-070",
+      "author": "James M. Hamilton Jr.",
+      "work": "Were Old Covenant Believers Indwelt by the Holy Spirit?",
+      "url": "https://www.thegospelcoalition.org/themelios/article/were-old-covenant-believers-indwelt-by-the-holy-spirit/",
+      "class": "academic_journal",
+      "format": "HTML",
+      "use": "R2 official Themelios argument"
+    },
+    {
+      "id": "SRC-071",
+      "author": "Sinclair Ferguson",
+      "work": "Old Testament Indwelling of the Spirit",
+      "url": "https://learn.ligonier.org/sermons/old-testament-indwelling-of-the-spirit",
+      "class": "official_ministry_transcript",
+      "format": "HTML/Audio",
+      "use": "R2 replaces unverified book quotation"
+    },
+    {
+      "id": "SRC-072",
+      "author": "R. C. Sproul",
+      "work": "The New Birth",
+      "url": "https://learn.ligonier.org/articles/new-birth",
+      "class": "official_ministry",
+      "format": "HTML",
+      "use": "R1 regeneration precedes faith"
+    },
+    {
+      "id": "SRC-073",
+      "author": "Dane Ortlund",
+      "work": "Does Gentle and Lowly Ignore God's Wrath?",
+      "url": "https://www.crossway.org/articles/does-gentle-and-lowly-ignore-gods-wrath/",
+      "class": "official_publisher",
+      "format": "HTML",
+      "use": "R9 official wrath/gentleness balance"
+    },
+    {
+      "id": "SRC-074",
+      "author": "Dane Ortlund",
+      "work": "Beset with Weakness",
+      "url": "https://www.crossway.org/articles/beset-with-weakness/",
+      "class": "official_publisher",
+      "format": "HTML",
+      "use": "R9 official lion-like judgment/lamb-like tenderness replacement"
+    },
+    {
+      "id": "SRC-075",
+      "author": "Voddie Baucham",
+      "work": "Brokenness / Sissified Jesus clip",
+      "url": "https://wretched.org/tv/voddie-baucham-sissified-jesus/",
+      "class": "official_media",
+      "format": "Video",
+      "use": "R9 primary-audio witness"
+    },
+    {
+      "id": "SRC-076",
+      "author": "Voddie Baucham",
+      "work": "Brokenness sermon contemporaneous report",
+      "url": "https://justinwheeler.wordpress.com/2009/03/02/tcc-09-vodie-baucham-brokenness/",
+      "class": "contemporaneous_transcript",
+      "format": "HTML",
+      "use": "R9 exact wording corroboration, not sole authority"
+    },
+    {
+      "id": "SRC-077",
+      "author": "Robert Murray M'Cheyne",
+      "work": "Memoir and Remains",
+      "url": "https://books.google.com/books/about/Memoir_and_Remains_of_the_Rev_Robert_Mur.html?id=dPU4AQAAMAAJ",
+      "class": "primary_scan",
+      "format": "Google Books",
+      "use": "R8 letter page locus"
+    },
+    {
+      "id": "SRC-078",
+      "author": "Timothy Rogers",
+      "work": "A Discourse Concerning Trouble of Mind",
+      "url": "https://books.google.com/books/about/A_Discourse_concerning_Trouble_of_Mind_a.html?id=yMRjAAAAcAAJ",
+      "class": "primary_scan",
+      "format": "Google Books",
+      "use": "Rogers 1691 scan family; exact Site locators authoritative"
+    },
+    {
+      "id": "SRC-079",
+      "author": "BibleHub",
+      "work": "Hebrews 4:2 interlinear/text",
+      "url": "https://biblehub.com/text/hebrews/4-2.htm",
+      "class": "open_reference",
+      "format": "HTML",
+      "use": "R7a textual-form control"
+    },
+    {
+      "id": "SRC-080",
+      "author": "Heinrich Meyer",
+      "work": "Hebrews 4 commentary",
+      "url": "https://www.studylight.org/commentaries/eng/hmc/hebrews-4.html",
+      "class": "public_domain_commentary",
+      "format": "HTML",
+      "use": "R7a variant discussion"
+    },
+    {
+      "id": "SRC-081",
+      "author": "Thomas Chalmers",
+      "work": "The Expulsive Power of a New Affection",
+      "url": "https://www.cslewisinstitute.org/resources/the-expulsive-power-of-a-new-affection/",
+      "class": "primary_text_reproduction",
+      "format": "HTML",
+      "use": "R8 correct source for expulsive-force language"
+    },
+    {
+      "id": "SRC-082",
+      "author": "Thomas Chalmers",
+      "work": "The Expulsive Power of a New Affection PDF",
+      "url": "https://www.cslewisinstitute.org/wp-content/plugins/adorechurch-core/download/download.php?file=https%3A%2F%2Fwww.cslewisinstitute.org%2Fwp-content%2Fuploads%2FExpulsivePoweDiscourseIX.pdf",
+      "class": "primary_text_reproduction",
+      "format": "PDF",
+      "use": "R8 page-stable reproduction"
+    },
+    {
+      "id": "SRC-083",
+      "author": "Augustine",
+      "work": "Contra Iulianum, Migne edition",
+      "url": "https://la.wikisource.org/wiki/Contra_Iulianum_%28ed._Migne%29",
+      "class": "primary_text",
+      "format": "Latin HTML",
+      "use": "R3 verified Augustine locus; not splendida vitia formula"
+    },
+    {
+      "id": "SRC-084",
+      "author": "Augustine",
+      "work": "City of God",
+      "url": "https://www.newadvent.org/fathers/1201.htm",
+      "class": "primary_text_reproduction",
+      "format": "HTML",
+      "use": "R3 Augustine theology control"
+    },
+    {
+      "id": "SRC-085",
+      "author": "Martyn Lloyd-Jones",
+      "work": "Reflecting His Glory",
+      "url": "https://www.mljtrust.org/sermon/reflecting-his-glory/",
+      "class": "official_ministry",
+      "format": "Audio/metadata",
+      "use": "R8 official sermon page; no invented transcript quote"
+    }
+  ],
+  "claims": [
+    {
+      "id": "CLM-WHITEFIELD-ANECDOTE",
+      "label": "Whitefield repeated born-again anecdote/stat",
+      "status": "REMOVE",
+      "quote_safe": false,
+      "support": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "decision": "No primary locus for the anecdote was found. Remove as documented history; use Whitefield's actual sermon On Regeneration."
+    },
+    {
+      "id": "CLM-WHITEFIELD-STONY",
+      "label": "Whitefield stony-ground wording",
+      "status": "OFFICIAL_REPLACEMENT",
+      "quote_safe": true,
+      "support": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "decision": "Replace the unlocated wording with Whitefield's primary sermon Directions How to Hear Sermons."
+    },
+    {
+      "id": "CLM-SPURGEON-FREE-WILL",
+      "label": "Spurgeon free will carried many souls to hell",
+      "status": "PRIMARY_VERIFIED",
+      "quote_safe": true,
+      "support": [
+        "SRC-004"
+      ],
+      "decision": "Verified in sermon No. 224, Samson Conquered. Restore with exact sermon locator and context."
+    },
+    {
+      "id": "CLM-SPURGEON-LION-LAMB",
+      "label": "Spurgeon lion for enemies / lamb for friends aphorism",
+      "status": "REMOVE",
+      "quote_safe": false,
+      "support": [
+        "SRC-005",
+        "SRC-006",
+        "SRC-007",
+        "SRC-008"
+      ],
+      "decision": "Exact aphorism not found in the official sermon corpus checked. Remove; use actual lion/Lamb material only."
+    },
+    {
+      "id": "CLM-BAUCHAM-SISSIFIED",
+      "label": "Baucham sissified, needy Jesus",
+      "status": "PRIMARY_AUDIO_VERIFIED",
+      "quote_safe": true,
+      "support": [
+        "SRC-075"
+      ],
+      "decision": "Verified by preserved official media clip; a contemporaneous report independently corroborates the Brokenness sermon wording. Cite as sermon/audio, not book text."
+    },
+    {
+      "id": "CLM-OWEN-BURN-BIBLES",
+      "label": "Owen without the Spirit burn our Bibles",
+      "status": "OFFICIAL_REPLACEMENT",
+      "quote_safe": true,
+      "support": [
+        "SRC-012",
+        "SRC-013",
+        "SRC-014",
+        "SRC-022",
+        "SRC-023"
+      ],
+      "decision": "Do not present the modern compression as Owen's verbatim sentence. Replace it with Owen's exact primary claims that Scripture becomes a dead letter without the Spirit's powerful efficacy and that the Spirit alone gives saving understanding."
+    },
+    {
+      "id": "CLM-HUGHES-EXPULSIVE",
+      "label": "Hughes expulsive force on 2 Corinthians 3:18",
+      "status": "REMOVE",
+      "quote_safe": false,
+      "support": [
+        "SRC-081",
+        "SRC-082"
+      ],
+      "decision": "Remove Hughes attribution. The load-bearing phrase belongs to Thomas Chalmers; cite Chalmers directly."
+    },
+    {
+      "id": "CLM-AUGUSTINE-SPLENDIDA",
+      "label": "splendida vitia as verbatim Augustine",
+      "status": "RECEPTION_ONLY",
+      "quote_safe": false,
+      "support": [
+        "SRC-083",
+        "SRC-084"
+      ],
+      "decision": "Use only as a later reception label. Augustine's substantive argument may be cited from primary loci, but the Latin phrase is not quoted as Augustine."
+    },
+    {
+      "id": "CLM-WATSON-MORALITY",
+      "label": "Watson morality aphorism from quote collection",
+      "status": "REMOVE",
+      "quote_safe": false,
+      "support": [
+        "SRC-009",
+        "SRC-010",
+        "SRC-060"
+      ],
+      "decision": "Remove the quote-collection wording unless a primary section is later opened. Watson remains usable through verified primary texts."
+    },
+    {
+      "id": "CLM-MCHEYNE-TEN-LOOKS",
+      "label": "M'Cheyne ten looks at Christ",
+      "status": "PRIMARY_VERIFIED",
+      "quote_safe": true,
+      "support": [
+        "SRC-077"
+      ],
+      "decision": "The wording is verified in M'Cheyne's letter as printed in Memoir and Remains. Do not claim that M'Cheyne coined it or that Baxter is its proven origin."
+    },
+    {
+      "id": "CLM-KOTZKER-HEART",
+      "label": "Kotzker words on/on-in the heart story",
+      "status": "REMOVE",
+      "quote_safe": false,
+      "support": [],
+      "decision": "No adequate primary attribution was found. Remove the name and preferably the illustration; it may not be used as a historical claim."
+    },
+    {
+      "id": "CLM-WATSON-PANDECT",
+      "label": "Watson Scripture is the pandect of divine knowledge",
+      "status": "PRIMARY_VERIFIED",
+      "quote_safe": true,
+      "support": [
+        "SRC-009"
+      ],
+      "decision": "Verified in the 1670 EEBO-TCP text of Heaven Taken by Storm."
+    },
+    {
+      "id": "CLM-HAMILTON-MONOGRAPH",
+      "label": "Hamilton monograph quote-site wording",
+      "status": "PARAPHRASE_ONLY",
+      "quote_safe": false,
+      "support": [
+        "SRC-070"
+      ],
+      "decision": "Remove Goodreads/quote-site book wording. Use Hamilton's peer-reviewed Themelios argument or paraphrase the monograph only with a legal edition."
+    },
+    {
+      "id": "CLM-FERGUSON-BOOK",
+      "label": "Ferguson The Holy Spirit direct book quote",
+      "status": "OFFICIAL_REPLACEMENT",
+      "quote_safe": true,
+      "support": [
+        "SRC-071"
+      ],
+      "decision": "Use Ferguson's official Ligonier teaching transcript. Do not make a book-page claim without the book."
+    },
+    {
+      "id": "CLM-ORTLUND-CH15",
+      "label": "Ortlund chapter 15 lion/lamb wording",
+      "status": "OFFICIAL_REPLACEMENT",
+      "quote_safe": true,
+      "support": [
+        "SRC-073",
+        "SRC-074"
+      ],
+      "decision": "Use Crossway's official Q&A and article; no unsupported chapter/page claim."
+    },
+    {
+      "id": "CLM-ROGERS-ADVICE",
+      "label": "Rogers Advice 1, 5, 6 provenance",
+      "status": "PRIMARY_VERIFIED",
+      "quote_safe": true,
+      "support": [
+        "SRC-055",
+        "SRC-056",
+        "SRC-078"
+      ],
+      "decision": "Closed through Site PR #510 visual 1691 scan readback: printed ii/PDF17, xii/PDF27, xiv/PDF29. EEBO-TCP remains search aid only."
+    },
+    {
+      "id": "CLM-MLJ-BOOK",
+      "label": "MLJ Spiritual Depression book wording",
+      "status": "PARAPHRASE_ONLY",
+      "quote_safe": false,
+      "support": [
+        "SRC-085"
+      ],
+      "decision": "Do not quote the book without legal full text. Official sermon metadata/audio may support only what it actually exposes."
+    },
+    {
+      "id": "CLM-PDF-LONG-QUOTES",
+      "label": "Long quotations from OCR/searchable PDFs without page image",
+      "status": "PARAPHRASE_ONLY",
+      "quote_safe": false,
+      "support": [
+        "SRC-043",
+        "SRC-046",
+        "SRC-051",
+        "SRC-053",
+        "SRC-054",
+        "SRC-059",
+        "SRC-061",
+        "SRC-064",
+        "SRC-082"
+      ],
+      "decision": "No long direct quote is authorized from OCR alone. Use short checked anchors or paraphrase; page-image verification is required for long quotations."
+    }
+  ]
+}

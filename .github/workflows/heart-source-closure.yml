@@ -1,0 +1,34 @@
+name: Heart Source Closure
+
+on:
+  pull_request:
+    paths:
+      - "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md"
+      - "СЕРИЯ СЕРДЦЕ/74_PRIMARY_SOURCE_CLOSURE_60PLUS_2026-08-01.md"
+      - "СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json"
+      - "scripts/check_heart_source_closure.py"
+      - ".github/workflows/heart-source-closure.yml"
+  push:
+    branches: [main]
+    paths:
+      - "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md"
+      - "СЕРИЯ СЕРДЦЕ/74_PRIMARY_SOURCE_CLOSURE_60PLUS_2026-08-01.md"
+      - "СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json"
+      - "scripts/check_heart_source_closure.py"
+      - ".github/workflows/heart-source-closure.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile checker
+        run: python -m py_compile scripts/check_heart_source_closure.py
+      - name: Validate source closure
+        run: python scripts/check_heart_source_closure.py
