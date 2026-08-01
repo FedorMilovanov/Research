@@ -1,3 +1,27 @@
+# CURRENT NAVIGATION UPDATE — V84I / R1–R9 / OPEN VERIFICATION BACKLOG
+
+**Дата:** 2026-07-31
+**Статус:** навигационный оверлей поверх старого v53–v80 README; не удаляет исторические заметки ниже.
+
+Текущий вход в работу по серии о сердце теперь начинается не с v74/v80, а с пост-merge authority и новых R-досье:
+
+1. `72_V84I_POST_MERGE_TOTAL_AUDIT_AND_CLOSURE_GATES.md` — current cross-repo authority: merge state, open closure gates, source/provenance boundaries.
+2. `73_OPEN_VERIFICATION_BACKLOG_2026-07-31.md` — audit backlog: что осталось незакрытым / не A+ / не quote-safe; создан после запроса owner 2026-07-31.
+3. `61_BOOK_ARCHITECTURE_V2_CHAPTERS_AND_RESEARCH_TASKS.md` — текущая архитектура онлайн-книги; читать с учётом revision drift note внутри файла.
+4. `62_R1_REGENERATION_EXEGESIS.md` + `63_R1_REGENERATION_SYSTEMATICS.md` — R1, III.2 «Рождение свыше».
+5. `64_R2_OT_REGENERATION_INDWELLING.md` — R2, бонус «Возрождение в ВЗ / обитание Духа».
+6. `65_R3_UNREGENERATE_STRUGGLE.md` — R3, II.3 «Борьба без возрождения».
+7. `66_R4_FOUR_SOILS.md` — R4, V.2 «Четыре почвы»; content-ready, но quote-lock still open.
+8. `67_R5_TWO_STRUGGLES.md` — R5, V.3 «Две борьбы».
+9. `68_R7A_WORD_AND_HEART.md` — R7a, VIII.1 «Сердце и Слово».
+10. `69_R7B_PHARISEE_DISCIPLE.md` — R7b, «Фарисей и ученик».
+11. `70_R8_BEHOLDING_GLORY.md` — R8, VIII.5 «Христос — Пленитель сердца».
+12. `71_R9_CHRIST_OF_REVELATION.md` — R9, Христос Откровения; решить, будет ли standalone article, support block for R8, or X.1 support.
+
+**Не считать закрытым:** Rogers scan-first provenance, MLJ book fulltext, new direct PDF quote page-images, R1/R5/R7a/R8/R9 exact-source locks, а также P0 architecture gaps: Eden, Repentance, Judgment/two resurrections.
+
+---
+
 # V74 UPDATE — HOLY AFFECTIONS / TRUE LOVE / COUNTERFEIT ZEAL
 
 **Дата:** 2026-06-25  

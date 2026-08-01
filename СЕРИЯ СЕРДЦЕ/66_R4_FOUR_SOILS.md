@@ -386,13 +386,16 @@ https://www.ccel.org/ccel/calvin/calcom32.ii.xix.html ; зеркало:
 https://biblehub.com/library/calvin/commentary_on_matthew_mark_luke_volume_2/matthew_13_18-23_mark_4_13-20_luke.htm
 **ВЕРИФИЦИРОВАНО** (точная фраза).
 
-**B2.** «…temporary faith being a sort of vegetation of the seed» + «their hearts are not
+**B2.** «…temporary faith, being a sort of vegetation of the seed» + «their hearts are not
 so properly and thoroughly subdued, as to have the softness necessary for their continued
 nourishment» — «временная вера есть как бы прорастание семени… сердца их не настолько
 подлинно и глубоко покорены, чтобы иметь мягкость, необходимую для постоянного питания
-[семени]». Источник: там же (Pringle).
-**ВЕРИФИЦИРОВАНО частично** — фразы подтверждены поисковой выдачей по CCEL/StudyLight;
-при написании сверить полный абзац по calcom32.ii.xix.html.
+[семени]». Источник: там же (Pringle), CCEL `calcom32.ii.xix.html`.
+**SAFE CLOSURE 2026-07-31:** полный абзац сверён по CCEL readback; статус
+`CCEL-HTML-VERIFIED / HARMONY-SECTION-LOCATOR-LOCKED`; печатная страница не заявляется.
+Дополнительные закрытые фразы того же абзаца: «if the word does not fully penetrate the
+whole heart, and strike its roots deep, faith will want the supply of moisture that is
+necessary for perseverance»; «nothing has been done, till faith acquires true firmness».
 
 ### В. 1689 Лондонское исповедание
 
@@ -505,30 +508,25 @@ goes beyond him» (1621).
 здравый христианин идёт дальше него».
 Источник: титульный лист изд. 1621; Hail & Fire reprint:
 https://www.hailandfire.com/library_books/H%26F_Taylor%28Thomas%29_ParableoftheSower1621.pdf
-**ВЕРИФИЦИРОВАНО** (титул; сам текст цитировать после сверки по PDF — досье №46).
+**SAFE CLOSURE 2026-08-01.** Титул и Hail & Fire reprint metadata прочитаны в PDF; основной текст сверх первых страниц закрыт по University of Michigan EEBO/TCP CC0 fulltext (not page images), `A13547.0001.001/1:4`, pages 118–120 and 261–262. Exact anchors: (1) stony ground lacks sufficient “earth, roots, and moisture”; (2) “By rooting here I understand stability, certainty, and sincerity of faith and other graces”; (3) good ground “receiues willingly, retaines constantly, and perseueres fruitfully vnto the end.” Статус: `HAIL&FIRE-PDF-METADATA-VERIFIED + EEBO-CC0-FULLTEXT-VERIFIED / PAGE-LOCATOR-LOCKED`; page-image verification not claimed.
 
 ### Е. Проповедники
 
-**F1. Spurgeon**: «the mere stony-ground convert has not the Holy Ghost» (и контекст:
-приняли слово, «but not in the divine power or supernatural efficacy of it»).
-— «У каменнопочвенного "обращённого" как такового нет Святого Духа… [они приняли слово,]
-но не в божественной силе и сверхъестественной действенности его».
-Источник: C. H. Spurgeon, «The Seed upon Stony Ground», MTP sermon №1132 (14.09.1873,
-Мк. 4:5–6, 16–17). https://www.spurgeon.org/resource-library/sermons/the-seed-upon-stony-ground/ ;
-CCEL: https://ccel.org/ccel/spurgeon/sermons19/sermons19.xliv.html
-**ВЕРИФИЦИРОВАНО частично** (фразы из выдачи; полный абзац взять со spurgeon.org при написании).
+**F1. Spurgeon** — SAFE CLOSURE 2026-07-31 by official Spurgeon Library readback.
+Sermon: “The Seed upon Stony Ground”, MTP sermon №1132 (14.09.1873), Mark 4:5–6.
+Verified anchors:
+> “Receiving it, it produced an effect upon them. They were, in a measure, impressed by it…”
+> “not in the divine power or supernatural efficacy of it”
+> “there is a joy which is not the fruit of grace, but the growth of nature, and a peace which comes from delusion, and not from the Spirit of God”
 
-**F2. Whitefield**: «There are so many stony ground hearers, who receive the Word with joy,
-that I have determined to suspend my judgment till I know the tree by its fruits. I cannot
-believe they are converts until I see fruit brought back…»
-— «Слушателей каменистой почвы, принимающих Слово с радостью, так много, что я решил
-воздерживаться от суждения, пока не узнаю дерево по плодам. Я не могу считать их
-обращёнными, пока не увижу принесённого плода…»
-Источник: приписывается G. Whitefield (Journals); тиражируется через J. Ehrhard, «The
-Dangers of the Invitation System» (1999). https://gracequotes.org/quote/there-are-so-many-stony-ground-hearers-who-receive/
-**[НЕ ВЕРИФИЦИРОВАНО по первоисточнику — кандидат]**: атрибуция устойчивая, но точное
-место в Journals не найдено; в статье давать с формулой «приписывается Уайтфилду» или
-искать точное место в Journals (изд. Banner of Truth, 1960) перед публикацией.
+Источник: https://www.spurgeon.org/sermons/the-seed-upon-stony-ground
+Статус: `OFFICIAL-SPURGEON-LIBRARY-VERIFIED / SERMON-LOCATOR-LOCKED`; print page not claimed.
+
+**F2. Whitefield**: «There are so many stony ground hearers…» — SAFE CLOSURE 2026-07-31 as
+`ATTRIBUTED-ONLY / DO-NOT-DIRECT-QUOTE`.
+Формула устойчива в цитатниках и вторичной литературе, но первичный Journals/letter locator не найден.
+Для статьи не использовать как документированную цитату Уайтфилда. Если нужна та же функция,
+использовать Spurgeon F1, Calvin B2, либо упоминать Whitefield only as attributed tradition with explicit caveat.
 
 ### Ж. Современные
 
@@ -538,13 +536,12 @@ types of soil into which it falls».
 — «…не на сеятеле и даже не на семени (которое во всех четырёх сценах предполагается
 одним и тем же), а на разных типах почвы, в которую оно падает».
 Источник: R. T. France, The Gospel of Matthew (NICNT; Eerdmans, 2007), комм. на Мф. 13:1–9
-(ок. p. 502–508). **ВЕРИФИЦИРОВАНО частично** (формулировка подтверждена вторичным
-цитированием в нескольких работах; страницу сверить по бумажному изданию при написании).
+(ок. p. 502–508). **CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01.** Формулировка остаётся useful paraphrase/locator only; не цитировать дословно и не заявлять страницу без NICNT edition/page. Verified substitutes for article body: Calvin B2, Taylor E5, Spurgeon F1, Ryle G4/G5.
 
 **G2. Carson**: «the interpretation, like the parable itself, ends positively» —
 «истолкование, как и сама притча, заканчивается позитивно [доброй почвой и жатвой]».
 Источник: D. A. Carson, «Matthew», EBC vol. 8 (Zondervan, 1984), на Мф. 13:23.
-**ВЕРИФИЦИРОВАНО частично** (по вторичному цитированию). Остальное у Carson давать
+**CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01.** Давать только как paraphrase/locator, not exact quote, unless EBC edition/page is opened. Остальное у Carson давать
 пересказом с указанием источника: (а) притча отвечает, почему весть Царства встречает
 смешанный приём — Царство в нынешнем веке приходит через сеяние слова, а не через
 немедленный суд; (б) единственный внешний признак доброй почвы — плод; (в) συνίημι
@@ -572,7 +569,7 @@ may be no deeply-rooted work in our souls.»
 Источник: J. C. Ryle, Expository Thoughts on the Gospels: Matthew, гл. 13. CCEL:
 https://ccel.org/ccel/ryle/matthew/matthew.xiv.i.html ; зеркала: gracegems.org/Ryle/m13.htm,
 studylight.org/commentaries/eng/ryl/matthew-13.html
-**ВЕРИФИЦИРОВАНО**.
+**CCEL/GRACEGEMS-HTML-VERIFIED / MATTHEW-13-LOCATOR-LOCKED (safe closure 2026-08-01)**; print page not claimed.
 
 **G5. Ryle** (о терниях, Мк. 4 / Мф. 13): thorny-ground hearers — «the grand secret of
 their condition is the world»: заботы, обманчивость богатства и похоти прочего «prevent
@@ -580,7 +577,7 @@ the word having its full effect on their souls».
 — «великий секрет их состояния — мир»: заботы и богатство «не дают слову произвести
 полное действие в их душах».
 Источник: Ryle, Expository Thoughts (Mk 4 / Mt 13). gracegems.org/Ryle/mark04.htm
-**ВЕРИФИЦИРОВАНО частично** (по выдаче gracegems; абзац сверить при написании).
+**GRACEGEMS-HTML-VERIFIED / MARK-4-LOCATOR-LOCKED (safe closure 2026-08-01)**; print page not claimed.
 
 ### З. Отцы
 
@@ -686,19 +683,15 @@ but of them who are unwilling to be changed.»
 
 ## Открытые вопросы / что ещё копать
 
-1. **Whitefield F2** — найти точное место в Journals (Banner of Truth 1960) или заменить
-   верифицируемой цитатой из его проповеди «The Method of Grace» / писем.
-2. **Calvin Harmony B2** — сверить полный абзац по CCEL calcom32.ii.xix.html (fetch был
-   заблокирован); заодно взять его комментарий на Лк. 8:15 («honest and good heart»).
-3. **France G1 / Carson G2** — проставить точные страницы по бумажным изданиям (NICNT 2007;
-   EBC vol. 8) перед публикацией; у France взять и его замечание о названии «parable of
-   the soils».
-4. **Taylor (1621)** — вычитать по Hail & Fire PDF 2–3 дословных абзаца о каменной и
-   доброй почве (готовый пуританский монограф по теме, пока используется только титул).
-5. **Русские переводы**: проверить, как Институты III.2.11–12 звучат в русском издании
+1. **Whitefield F2 — SAFE CLOSURE 2026-07-31 as attributed-only.** Do not direct-quote without primary Journals/letter locator. Use Spurgeon F1 / Calvin B2 as verified substitutes.
+2. **Calvin Harmony B2 — SAFE CLOSURE 2026-07-31.** Полный абзац по temporary faith / stony ground сверён по CCEL `calcom32.ii.xix.html`. Остаётся только отдельная optional задача: если нужна специальная фраза по Лк. 8:15 («honest and good heart»), добрать её в том же CCEL-разделе.
+3. **Taylor (1621) — SAFE CLOSURE 2026-08-01 at open-text level.** Hail & Fire PDF metadata/title was read; exact stony/good-soil anchors are now locked via University of Michigan EEBO/TCP CC0 fulltext, pages 118–120 and 261–262. Remaining optional task: page-image/modernized Hail & Fire paragraph comparison only if the final article wants modern spelling or image-level citation.
+4. **Ryle G4/G5 — SAFE CLOSURE 2026-08-01.** Matthew 13 paragraph verified via CCEL and GraceGems; Mark 4 thorny-ground paragraph verified via GraceGems.
+5. **France G1 / Carson G2 — CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01.** Do not block the article on modern commentary pages. Use them only as paraphrase/locator unless NICNT/EBC pages are later opened; primary/older verified substitutes already cover the article’s burden.
+6. **Русские переводы**: проверить, как Институты III.2.11–12 звучат в русском издании
    (изд. РГГУ, пер. А. Д. Бакулова) — для цитирования по-русски со ссылкой на страницу;
    аналогично русское издание «Путешествия Пилигрима» для Pliable.
-6. **Лк. 8:15 текстология/лексика**: καλῇ καὶ ἀγαθῇ на фоне греческого идеала καλὸς
+7. **Лк. 8:15 текстология/лексика**: καλῇ καὶ ἀγαθῇ на фоне греческого идеала καλὸς
    κἀγαθός — стоит ли давать в статье это культурное эхо (France обсуждает) или это
    перегруз.
 7. **Связка с V.3**: согласовать сетку осей (мотив/оружие/плод) со статьёй «Две борьбы»,

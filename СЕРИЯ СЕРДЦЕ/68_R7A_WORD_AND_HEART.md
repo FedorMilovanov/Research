@@ -67,8 +67,15 @@
 (𝔓46 A B C — мн. ч.), [Meyer's NT Commentary](https://www.studylight.org/commentaries/eng/hmc/hebrews-4.html)
 («A B C D* М» за мн. ч.; «D*** E K L» — συγκεκραμένους; принятие Лахманом/Тишендорфом-1/Алфордом);
 [Wikipedia: Textual variants in Hebrews](https://en.wikipedia.org/wiki/Textual_variants_in_the_Epistle_to_the_Hebrews).
-⚠️ Точный список аппарата NA28 и рейтинг Метцгера ({B}?) в этом прогоне дословно НЕ верифицированы
-(PDF Метцгера недоступен из-за блокировки) — сверить по бумажному NA28/Metzger перед публикацией.
+**Safe closure 2026-08-01:** BibleHub interlinear/text pages were read directly for the critical-form parsing
+`συγκεκερασμένους*` (`V-RPM/P-AMP`, “having been united with”), and Meyer/StudyLight was read directly
+for the hearing-vs-faith contrast and for his discussion of the singular reading. This locks the article’s
+basic variant note at an open-reference level.
+**Closure decision 2026-08-01:** Metzger exact text/rating is no longer required for the article draft. Do not cite
+“Metzger says/rates…” at all. Use the open-reference apparatus layer above (BibleHub/Meyer) only to explain that
+there is a variant, then state the article’s theological point from Hebrews 3:19; 4:3 and 1 Thess. 2:13. Status:
+`METZGER-CITATION-DROPPED / NO-DIRECT-METZGER-QUOTE`; exact NA28/Metzger rating becomes optional scholarly
+appendix work, not a publication blocker.
 
 **Аргументы сторон:**
 
@@ -327,8 +334,10 @@
   и не исчерпать псалом. Издания: [Banner of Truth, Works vols 6–9](https://banneroftruth.org/us/store/collected-workssets/sermons-on-psalm-119-mantons-works-vols-6-9/);
   e-текст: [monergism.com/exposition-psalm-119-ebook](https://www.monergism.com/exposition-psalm-119-ebook).
 - «A Practical Commentary… on the Epistle of James» (Works, vol. 4) — на Иак. 1:21 (ἔμφυτος λόγος).
-  Дословную цитату в этом прогоне добыть не удалось (доступ к тексту блокирован) — добрать при
-  написании из vol. 4. [НЕ ВЕРИФИЦИРОВАНО]
+  **SAFE CLOSURE 2026-07-31:** CCEL `manton04.iv.html` readback gives the exact James 1:21 section.
+  Manton: “The ingrafted word, λόγον ἔμφυτον… noteth the end and fruit of hearing, that the word
+  may be planted in us”; and: the word was “not only propounded to them, but rooted in them by
+  faith.” Статус: `CCEL-HTML-VERIFIED / JAMES-1-21-SECTION-LOCKED`; print page not claimed.
 - «Sermons upon Genesis 24:63» (Works, vol. 17) — 10 проповедей о размышлении; источник ключевой
   цитаты о цепочке Слово → размышление → молитва (Цитатный банк, №6–7).
 
@@ -460,12 +469,12 @@
 - Ссылки: [theoldguys.org](https://theoldguys.org/2013/01/09/john-calvin-the-spirit-and-the-word-go-together/); [indycrowe.com](https://indycrowe.com/2014/02/26/calvin-on-the-spirit-and-the-word/); текст на CCEL: [ccel.org/ccel/calvin/institutes](https://ccel.org/ccel/calvin/institutes/institutes.iii.x.html).
 - Рядом (та же секция, верифицировано по тем же ссылкам): «God did not bring forth his Word among men for the sake of a momentary display, intending at the coming of his Spirit to abolish it. Rather, he sent down the same Spirit by whose power he had dispensed the Word, to complete his work by the efficacious confirmation of the Word» — «Бог явил Своё Слово среди людей не ради минутного зрелища, чтобы с приходом Духа упразднить его; но ниспослал того же Духа, силою которого преподал Слово, — довершить Своё дело действенным утверждением Слова».
 
-**№10. Кальвин — на Евр. 4:2. ВЕРИФИЦИРОВАНО (по сниппету; сверить абзац целиком)**
+**№10. Кальвин — на Евр. 4:2. SAFE CLOSURE 2026-07-31 — ВЕРИФИЦИРОВАНО по CCEL study/readback**
 > "…he repeats the word 'hear' for this end, that we may know that hearing is useless except the word addressed to us be by faith received."
 >
 > «…он повторяет слово „слышать“ ради того, чтобы мы знали: слышание бесполезно, если обращённое к нам слово не принято верой».
 - Источник: Calvin, Commentary on the Epistle to the Hebrews, ad 4:2 (пер. J. Owen, 1853).
-- Ссылка: [ccel.org/ccel/calvin/calcom44.x.i.html](https://ccel.org/ccel/calvin/calcom44.x.i.html).
+- Ссылка: [CCEL Study Bible / Calvin on Hebrews 4:2](https://www.ccel.org/study/Hebrews_4:2). Статус: `CCEL-HTML-VERIFIED / VERSE-COMMENTARY-LOCATOR-LOCKED`; печатная страница не заявляется.
 
 **№11. Лютер — oratio, meditatio, tentatio. ВЕРИФИЦИРОВАНО (элементы)**
 > "For as soon as God's Word becomes known through you, the devil will afflict you, will make a real doctor [theologian] of you."
@@ -511,8 +520,8 @@
 - Ссылки: [orthodoxchurchquotes.com](https://www.orthodoxchurchquotes.com/2013/07/31/st-john-chrysostom-this-is-the-cause-of-all-evils/); [javierperdomo.substack.com](https://javierperdomo.substack.com/p/john-chrysostom-on-christians-knowing).
 - NB: в популярных сборниках цитату часто приписывают беседам о Лазаре — верифицированная локация: Кол., беседа IX.
 
-**№17. [НЕ ВЕРИФИЦИРОВАНО — кандидат] «Без Святого Духа мы можем с тем же успехом сжечь свои Библии» (припис. John Owen)**
-- Ходит в форме "Without the Holy Spirit we may as well burn our Bibles"; так озаглавлена статья Banner of Truth ([banneroftruth.org, 2009](https://banneroftruth.org/us/resources/articles/2009/without-the-holy-spirit-we-may-as-well-burn-our-bibles/)) с атрибуцией Owen. Дословный источник в корпусе Owen в этом прогоне не найден; вероятно, пересказ мысли из «Причин, путей и средств разумения ума Божия» (Causes, Ways, and Means, 1678). Использовать только как пересказ с оговоркой, либо найти точное место у Owen. Твёрдая замена — №9 (Кальвин).
+**№17. [ATTRIBUTED-ONLY / DO-NOT-DIRECT-QUOTE] «Без Святого Духа мы можем с тем же успехом сжечь свои Библии» (припис. John Owen)**
+- Ходит в форме "Without the Holy Spirit we may as well burn our Bibles"; так озаглавлена статья Banner of Truth ([banneroftruth.org, 2009](https://banneroftruth.org/us/resources/articles/2009/without-the-holy-spirit-we-may-as-well-burn-our-bibles/)) с атрибуцией Owen. Safe closure 2026-08-01: страница Banner of Truth/Ian Hamilton была прочитана напрямую; она атрибутирует формулу Owen, но не даёт work/chapter/page locator. Поэтому это не quote-ready Owen. Статус: `SECONDARY-ATTRIBUTION / DO-NOT-DIRECT-QUOTE-AS-OWEN`. Использовать только как современную формулировку Hamilton “as attributed to Owen” либо заменить на №9 (Кальвин) и 1689 1.6/14.1.
 
 **№18. Иероним — незнание Писаний есть незнание Христа. ВЕРИФИЦИРОВАНО**
 > "…if, as Paul says, Christ is the power of God and the wisdom of God, and if the man who does not know Scripture does not know the power and wisdom of God, then ignorance of Scripture is ignorance of Christ." (лат. итог: "Ignoratio enim Scripturarum, ignoratio Christi est.")
@@ -522,11 +531,18 @@
 - Ссылки: [crossroadsinitiative.com](https://www.crossroadsinitiative.com/media/articles/ignorance-of-scripture-is-ignorance-of-christ-st-jerome/); [stpiusxurbandale.org (PDF отрывка)](https://stpiusxurbandale.org/component/fileman/file/documents/Jerome%20on%20Scripture.pdf?routed=1&container=fileman-files).
 - Применение: чтение Писания целится во Христа (связка с R8 и Лк. 24:27, 32).
 
-**№19. [НЕ ВЕРИФИЦИРОВАНО — кандидат] Джон Гилл на Евр. 4:2 (оба чтения)**
-- По сводке поиска: Гилл отмечает, что «александрийские копии» читают о лицах («они не были
-  смешаны»), и тогда смысл — «большинство израильтян не присоединились верою к Халеву и Иисусу
-  Навину, послушавшим Господа». Сверить дословно: Gill, Exposition of the NT, ad Heb. 4:2
-  ([biblestudytools.com — Gill](https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/)).
+**№19. Джон Гилл на Евр. 4:2 (оба чтения) — SAFE CLOSURE 2026-07-31**
+- Гилл объясняет основное чтение: Евангелие / «word of hearing» не принесло пользы Израилю,
+  потому что оно «not being mixed with faith in them that heard it». Его образ: Евангелие как
+  пища, вера как рука, которая принимает, вкушает, ест и «digests» её.
+- Гилл также фиксирует вариант: Alexandrian copy, Complutensian edition, Beza/Stephens copies
+  and others read “they were not mixed”, referring not to the word but to persons. Тогда смысл:
+  большинство израильтян не присоединились верой к Халеву и Иисусу Навину, которые приняли и
+  послушались слово Господа.
+- Источник: Gill, *Exposition of the New Testament*, Heb. 4:2, public-domain mirror:
+  https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/hebrews-4-2.html
+- Статус: `PUBLIC-DOMAIN-HTML-VERIFIED / VERSE-COMMENTARY-LOCATOR-LOCKED`; печатная страница
+  не заявляется.
 
 ---
 
@@ -582,8 +598,7 @@
 - **Не противопоставлять чтение и церковь:** 1689 14.1 — вера рождается «служением Слова»
   (проповедь!); личное чтение не заменяет слышания в собрании (связь с Евр. 4:2 — народ под
   общей проповедью; мн. ч. NA28 подчёркивает общинность).
-- **Не цитировать неверифицированное:** №17 (Owen) и №19 (Гилл) — только после сверки; продолжение
-  №5 — тоже.
+- **Не цитировать неверифицированное:** №17 (Owen “burn our Bibles”) is now `ATTRIBUTED-ONLY / DO-NOT-DIRECT-QUOTE`; №19 (Gill Heb. 4:2) is closed via BibleStudyTools; продолжение №5 — тоже требует сверки.
 - **Не называть верующих фарисеями** (требование owner, R7b): фарисейская линия здесь — только
   как предупреждение о чтении без веры, с «берегитесь закваски» (Лк. 12:1) ученикам.
 - **Counseling-авторов не привлекать** вместо экзегезы (рамка серии); Saxton/Beeke — как историки
@@ -593,20 +608,10 @@
 
 ## Открытые вопросы / что ещё копать
 
-1. **Metzger, Textual Commentary (2-е изд.), ad Heb. 4:2** — достать точный текст статьи и рейтинг
-   ({B}?) и полный аппарат NA28 (𝔓13vid? 0243? 33? 1739?): в этой сессии PDF заблокирован прокси.
-   Также сверить, что именно читает א (по памяти — ед. ч., косвенно подтверждено сменой позиции
-   Тишендорфа, но требует проверки по факсимиле/NA28).
-2. **Позиции комментаторов** (Lane WBC; O'Brien PNTC — с оговоркой об отзыве книги; Schreiner
-   EBTC; Ellingworth NIGTC; Attridge Hermeneia) по варианту и переводу Евр. 4:2 — не верифицированы;
-   сверить по книгам при написании. Заодно: как современные русские переводы (Кассиан, РБО-2011,
-   Заокский) передают 4:2.
-3. **Manton на Иак. 1:21** (Works, vol. 4) — добрать 1–2 дословные цитаты о ἔμφυτος λόγος;
-   и 1–2 дословные из проповедей на Пс. 119:11 (Sermon XII) и 119:97 (Sermon CI). Уточнить счёт
-   проповедей (традиционно 190; в изданиях встречается 189).
-4. **Owen** — найти точное место, стоящее за «without the Spirit we may as well burn our Bibles»
-   (вероятно, Works vol. 4, «Causes, Ways, and Means of Understanding the Mind of God»), либо
-   исключить формулу.
+1. **Metzger exact rating — CLOSED AS NO-USE 2026-08-01.** The article will not cite Metzger or a NA28 rating. Open-reference layer (BibleHub/Meyer/StudyLight) is enough for a modest variant footnote; exact Metzger text/rating is optional scholarly appendix work only, not a blocker.
+2. **Modern commentary positions — CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01.** Lane WBC; O'Brien PNTC (withdrawal caution); Schreiner EBTC; Ellingworth NIGTC; Attridge Hermeneia are no longer blockers. Do not summarize them as if checked; use only Calvin/Gill/open-reference variant layer unless the books are opened. Russian translation comparison remains optional editorial work, not source-risk. Gill ad Heb. 4:2 separately closed via BibleStudyTools public-domain mirror.
+3. **Manton — SAFE CLOSURE 2026-07-31 for James 1:21 only.** Works vol. 4 / CCEL `manton04.iv.html` checked; ἔμφυτος λόγος / ingrafted word section is now locked. Still open: exact Psalm 119:11 (Sermon XII), Psalm 119:97 (Sermon CI), and final sermon-count note (189/190).
+4. **Owen “burn our Bibles” — CLOSED AS ATTRIBUTED-ONLY 2026-08-01.** Banner/Ian Hamilton confirms a modern attribution but gives no Owen locator. Do not quote as Owen. Reopen only if Works/chapter/page is found; otherwise exclude or quote Hamilton as secondary wording with caveat.
 5. **Saxton, God's Battle Plan for the Mind** — выписать 2–3 дословные цитаты с указанием страниц
    (гл. 1–5: необходимость и определение медитации).
 6. **Хасидская притча «слова НА сердце»** (Втор. 6:6) — проверить атрибуцию (Коцкер ребе?) или

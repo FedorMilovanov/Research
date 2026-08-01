@@ -1,3 +1,40 @@
+# POST-V80 PROVENANCE OVERLAY — V81–V84I / R1–R9 / OPEN AUDIT
+
+**Дата:** 2026-07-31
+**Статус:** добавочный provenance overlay. Историческая v53 provenance map ниже сохраняется без переписывания.
+
+The old provenance table maps the v52 consolidation. It does not cover the post-v80 research run. Current post-v80 files are:
+
+| File | Role | Current status |
+|---|---|---|
+| `60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md` | Adams primary-source deepening | historical/source layer; governed by V84E–V84I boundaries |
+| `61_BOOK_ARCHITECTURE_V2_CHAPTERS_AND_RESEARCH_TASKS.md` | current book architecture and research tasks | authoritative plan, but has revision drift noted in `73_OPEN...` |
+| `61_V82_PSYCHOTROPIC_MEDICATION_BODY_SOUL_BIBLICAL_COUNSELING.md` | medication/body-soul counseling layer | source/safety history |
+| `62_R1_REGENERATION_EXEGESIS.md` | R1 exegetical dossier for III.2 born again | source-lock open |
+| `62_V83_MEDICATION_HOLD_CLOSURE_48_NEW_PASSES.md` | medication source-status closure | historical/source layer; mixed checks |
+| `63_R1_REGENERATION_SYSTEMATICS.md` | R1 systematic dossier for III.2 born again | source-lock open |
+| `63_V84_DEPRESSION_SIN_SUFFERING_GUILT_BURNOUT_DESPAIR.md` | first depression synthesis | superseded/narrowed by V84B–V84I where relevant |
+| `64_R2_OT_REGENERATION_INDWELLING.md` | R2 OT regeneration / indwelling bonus | source-lock open |
+| `64_V84A_SOURCE_STATUS_AND_LLOYD_JONES_HOLD.md` | source status + MLJ hold snapshot | historical snapshot; MLJ book hold remains |
+| `65_R3_UNREGENERATE_STRUGGLE.md` | R3 struggle without regeneration | source-lock open |
+| `65_V84B_DEPRESSION_THEOLOGICAL_PRIMACY_AND_AXIS_CORRECTION.md` | theological-order correction | authority for five-axis model |
+| `66_R4_FOUR_SOILS.md` | R4 four soils | content-ready / quote-lock open |
+| `66_V84C_EDITORIAL_COMPLETENESS_20PLUS_PRIMARY_PASSES.md` | editorial completeness pass | corrected by V84D/H where relevant |
+| `67_R5_TWO_STRUGGLES.md` | R5 two struggles | P0 source-lock open |
+| `67_V84D_SOURCE_LOCATOR_AND_EVIDENCE_STATUS_CLOSURE.md` | Goodwin/Rogers/Gurnall/WHO source boundary | current source-integrity authority for those items |
+| `68_R7A_WORD_AND_HEART.md` | R7a Word and heart | P0 source-lock open |
+| `68_V84E_INDEPENDENT_AUDIT_AND_CURRENT_AUTHORITY.md` | independent audit snapshot | superseded for workflow by V84I, content retained |
+| `69_R7B_PHARISEE_DISCIPLE.md` | R7b Pharisee/disciple | source-lock open |
+| `69_V84F_FINAL_EXACT_HEAD_CLOSURE.md` | exact-head closure snapshot | superseded for workflow by V84I, content retained |
+| `70_R8_BEHOLDING_GLORY.md` | R8 beholding glory / Christ Captor | P0 source-lock open; Owen CCEL access now found |
+| `70_V84G_TRINITARIAN_CROSS_AND_DERELICTION_BOUNDARY.md` | Trinitarian/christological cross boundary | current theological boundary |
+| `71_R9_CHRIST_OF_REVELATION.md` | R9 Christ of Revelation | high partial-verification density; use carefully |
+| `71_V84H_DIRECT_SOURCE_CLEANUP_TRINITARIAN_AND_FINAL_EXACT_HEAD.md` | pre-V84I direct cleanup/current snapshot | current-state language superseded by V84I |
+| `72_V84I_POST_MERGE_TOTAL_AUDIT_AND_CLOSURE_GATES.md` | post-merge current cross-repo authority | current authority; not fully closed |
+| `73_OPEN_VERIFICATION_BACKLOG_2026-07-31.md` | no-push open verification backlog | local audit backlog; not source authority |
+
+---
+
 # Карта происхождения: каждый старый файл -> новый том
 
 > Consolidated in v53 from SERDCE_RESEARCH_PACK v52. Every original file is preserved below under its original path.

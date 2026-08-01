@@ -549,8 +549,7 @@ emou; matēn de sebontai me didaskontes didaskalias entalmata anthrōpōn.*
   копать в глубину («в них ведь сокрыто, как клад»), и бьёт в δοκεῖτε: они «думали»
   иметь жизнь, ожидая спасения «от одного чтения, без веры». Цитата в банке (№1).
 - *Кирилл Александрийский* — раннее свидетельство чтения ἐραυνᾶτε как индикатива
-  (по сводке TBS). Направление для сносок: Augustinus, Sermones о мытаре и фарисее
-  (номер проповеди уточнить — см. «Открытые вопросы»).
+  (по сводке TBS). Использовать только как `LOCATOR/PARAPHRASE-ONLY`, если не открыт первичный текст; не blocker.
 
 **Реформаторы.**
 - *Жан Кальвин*, Комментарий на Иоанна, 5:39: Писание читается «с прямым намерением найти
@@ -608,12 +607,12 @@ emou; matēn de sebontai me didaskontes didaskalias entalmata anthrōpōn.*
   отделение закона Бога от Лица Бога»; законничество и антиномизм — «неидентичные
   близнецы из одной утробы» (неверие в благость Бога). Богословская рама всей статьи:
   фарисейство — не строгость, а искажённый образ Бога. Цитаты №18–19.
-- *D. A. Carson* (The Gospel According to John, PNTC) — на Ин. 5:39–40: Писания
-  свидетельствуют о Христе, и потому чтение, не приводящее ко Христу, промахивается мимо
-  их назначения [точная цитата НЕ ВЕРИФИЦИРОВАНА — кандидат, сверить по бумажному изданию].
-- *D. M. Lloyd-Jones, Studies in the Sermon on the Mount* — разбор Мф. 6:1–6: высшая
-  опасность — религиозное «я», питающееся собственным благочестием [точная цитата
-  НЕ ВЕРИФИЦИРОВАНА — кандидат].
+- *D. A. Carson* (The Gospel According to John, PNTC) — на Ин. 5:39–40: позиция полезна
+  только как `PARAPHRASE-ONLY / DO-NOT-DIRECT-QUOTE` после cleanup 2026-08-01; точную цитату
+  не давать без PNTC page.
+- *D. M. Lloyd-Jones, Studies in the Sermon on the Mount* — разбор Мф. 6:1–6: закрыт как
+  `BOOK/PDF-NOT-OPENED / DO-NOT-DIRECT-QUOTE`; для статьи достаточно текста Мф. 6 и
+  проверенных старых источников.
 
 ---
 
@@ -752,40 +751,36 @@ https://founders.org/library/1689-confession/ — **ВЕРИФИЦИРОВАНО
 *Догматическая рамка фарисейской праведности: пост и десятина Лк. 18:12 — реальны и
 бесплодны.*
 
-**№12. John Gill — Exposition of the New Testament, на Деян. 17:11.**
-Ссылка: https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/acts-17-11.html —
-**ВЕРИФИЦИРОВАНО (сниппет, фрагмент).**
-> Писания были тем, "by which they examined, tried, and judged of the word they received…"
-Перевод: «…тем, чем они проверяли, испытывали и судили принятое ими слово».
-*(Фрагмент краток; при вёрстке взять полнее по ссылке.)*
+**№12. John Gill — Exposition of the New Testament, на Деян. 17:11.** — SAFE CLOSURE 2026-08-01
+Ссылка: https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/acts-17-11.html
+Статус: `PUBLIC-DOMAIN-HTML-VERIFIED / VERSE-COMMENTARY-LOCATOR-LOCKED`.
+> The Bereans searched the Old Testament “to see whether the things which the apostle preached… were agreeable to them, or no; determining, if they were not, to reject them, but if they were, to embrace them.”
+Перевод: Верийцы исследовали Писания, чтобы увидеть, согласуется ли проповедь апостола с ними; если нет — отвергнуть, если да — принять.
 
-**№13. C. H. Spurgeon — Sermon No. 1949, "The Pharisee and the Publican" (Metropolitan
-Tabernacle Pulpit, vol. 33, 1887).** Ссылка: https://spurgeongems.org/sermon/chs1949.pdf —
-**ВЕРИФИЦИРОВАНО (сниппет, смысловые узлы; дословные абзацы взять из PDF при вёрстке).**
-Узлы, подтверждённые поиском: (а) фарисей «пришёл в храм молиться — и не молился», его
-«молитва» лишена исповедания греха и прошения; (б) более точная передача слов мытаря —
-"God be merciful to me **the** sinner" — «грешнику по преимуществу» (артикль τῷ ἁμαρτωλῷ).
+**№13. C. H. Spurgeon — Sermon No. 1949, "A Sermon for the Worst Man on Earth" (Metropolitan
+Tabernacle Pulpit, vol. 33, 1887; Luke 18:13).** — SAFE CLOSURE 2026-08-01
+Ссылка: https://www.spurgeon.org/sermons/a-sermon-for-the-worst-man-on-earth
+Статус: `OFFICIAL-SPURGEON-LIBRARY-VERIFIED / SERMON-LOCATOR-LOCKED`.
+Verified anchors: the Pharisee “went up into the temple to pray” but “did not pray”; he had “no sins to confess, but many virtues to parade”; the publican’s “God be merciful to me a sinner” is “a pure, unadulterated prayer”; and Spurgeon notes the more accurate rendering “the sinner.”
 
-**№14. C. H. Spurgeon — там же (предостережение).**
-> "May God grant us grace to beware of the least touch of self-righteousness, for it is
-> evil, only evil, and that continually."
-Перевод: «Да даст нам Бог благодать беречься и малейшего прикосновения самоправедности,
-ибо она зло, только зло, и притом непрестанно». — **[НЕ ВЕРИФИЦИРОВАНО точное место —
-кандидат: фраза встречается в сниппетах по проповедям Сперджена о фарисее и мытаре
-(№1949 / №2687 "Too Good to be Saved"); сверить по PDF перед публикацией.]**
+**№14. C. H. Spurgeon — self-righteousness warning.** — CLOSED-AS-NOT-FOUND-IN-1949 2026-08-01
+> "May God grant us grace to beware of the least touch of self-righteousness..."
+Статус: `SNIPPET-ONLY / DO-NOT-DIRECT-QUOTE`. The exact wording was not seen in the official Spurgeon Library readback of sermon №1949. Use №13 verified anchors instead; reopen only if sermon №2687 or another official locator is checked.
 
-**№15. George Whitefield — Sermon 34, "The Pharisee and Publican" (на Лк. 18:14).**
+**№15. George Whitefield — Sermon 34, "The Pharisee and Publican" (на Лк. 18:14).** — SAFE CLOSURE 2026-08-01
 Ссылки: https://www.ccel.org/ccel/whitefield/sermons.xxxvi.html ;
-https://www.gracegems.org/Whitefield/pharisee_and_publican.htm — **ВЕРИФИЦИРОВАНО (сниппет).**
+https://www.gracegems.org/Whitefield/pharisee_and_publican.htm
+Статус: `CCEL-HTML-VERIFIED / SERMON-LOCATOR-LOCKED`.
 > "…we are all self-righteous by nature; it is as natural for us to turn to a covenant of
 > works, as for the sparks to fly upwards."
 Перевод: «…мы все самоправедны по природе; обращаться к завету дел для нас так же
 естественно, как искрам лететь вверх».
 *Ключевая цитата пасторского поворота: фарисейство — не «их» болезнь, а болезнь природы.*
 
-**№16. J. C. Ryle — Expository Thoughts on Luke, vol. 2, на Лк. 12:1–7.**
+**№16. J. C. Ryle — Expository Thoughts on Luke, vol. 2, на Лк. 12:1–7.** — SAFE CLOSURE 2026-08-01
 Ссылки: https://www.gracegems.org/Ryle/l12.htm ;
-https://www.studylight.org/commentaries/eng/ryl/luke-12.html — **ВЕРИФИЦИРОВАНО (сниппет).**
+https://www.studylight.org/commentaries/eng/ryl/luke-12.html
+Статус: `GRACEGEMS-HTML-VERIFIED / LUKE-12-SECTION-LOCKED`.
 > "Pharisaism is a subtle leaven which the natural heart is always ready to receive. It is
 > a leaven which once received into the heart infects the whole character of a man's
 > Christianity."
@@ -818,25 +813,16 @@ https://www.thegospelcoalition.org/reviews/20-quotes-from-sinclair-fergusons-boo
 Перевод: «…законничество и антиномизм — на деле неидентичные близнецы, вышедшие из одной
 утробы» (утроба — неверие в благость и любовь Бога; ср. контекст книги).
 
-**№20. D. A. Carson — The Gospel According to John (PNTC, Eerdmans, 1991), на Ин. 5:39–40.**
-**[НЕ ВЕРИФИЦИРОВАНО — кандидат]** (смысл по памяти: Писания — свидетели, ведущие ко
-Христу; религиозное благоговение перед текстом может сосуществовать с отказом прийти к
-Тому, на Кого текст указывает). Сверить по бумажному изданию, с. ~263–264.
+**№20. D. A. Carson — The Gospel According to John (PNTC, Eerdmans, 1991), на Ин. 5:39–40.** — CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01
+Статус: `BOOK-PAGE-NOT-OPENED / PARAPHRASE-ONLY`. Do not quote Carson directly; use John 5:39–40 itself plus verified Calvin/Gill/Ryle/Gill-Acts layers unless PNTC page is opened.
 
 **№21. D. M. Lloyd-Jones — Studies in the Sermon on the Mount (IVP/Eerdmans), разбор
-Мф. 6:1–6.** **[НЕ ВЕРИФИЦИРОВАНО — кандидат]** (смысл по памяти: высшая и тончайшая
-опасность — «религиозное я», питающееся собственным благочестием; лицемер погибает от
-аплодисментов, которых сам искал). PDF полного текста существует в открытом доступе
-(hcf-india.org) — при вёрстке выбрать точный абзац.
+Мф. 6:1–6.** — CLOSED-AS-NO-DIRECT-QUOTE 2026-08-01
+Статус: `BOOK/PDF-NOT-OPENED / DO-NOT-DIRECT-QUOTE`. Not needed for source closure; use Christ’s text in Matthew 6 and verified older supports unless owner supplies legal text/page.
 
-**№22. J. C. Ryle — о необходимом углублённом изучении Писания.**
-> "I have a strong conviction that we want more reverent, deep-searching study of the
-> Scriptures in the present day."
-Перевод: «Я твёрдо убеждён: в наши дни нам недостаёт более благоговейного, глубоко
-копающего изучения Писаний». — **[ЧАСТИЧНО ВЕРИФИЦИРОВАНО (сниппет без точного места;
-вероятно, предисловие к Expository Thoughts on John) — уточнить место перед публикацией.]**
-*Нужна для баланса: критика фарисея — не индульгенция лени; ученик копает не меньше,
-а глубже — до Христа.*
+**№22. J. C. Ryle — о необходимом углублённом изучении Писания.** — CLOSED-AS-SNIPPET-ONLY 2026-08-01
+> "I have a strong conviction that we want more reverent, deep-searching study of the Scriptures in the present day."
+Статус: `SNIPPET-ONLY / DO-NOT-DIRECT-QUOTE`. Use the verified Berean/Gill Acts 17:11 layer for the balance instead; reopen only if the Ryle preface locator is found.
 
 **Справочная (для сноски об ἐραυνᾶτε):** Trinitarian Bible Society, «Search the Scriptures:
 An Examination of John 5.39» — https://www.tbsbibles.org/page/John5verse39 ; также
@@ -926,10 +912,7 @@ https://www.textandtranslation.org/john-539-imperative-or-indicative/ — сво
 1. **Формат по owner:** один разворот с сеткой (рекомендовано) или два отдельных портрета?
    Если два — ученический портрет забирает Лк. 10:38–42; Деян. 17:11; Пс. 118; 1689 14.2,
    фарисейский — Ин. 5; Мф. 6; 15; 23; Лк. 18.
-2. **Дословная сверка перед вёрсткой** (fetch из этой среды был заблокирован): Spurgeon
-   №14 (точное место в №1949 или №2687); Carson №20; Lloyd-Jones №21; Ryle №22 (место);
-   Gill №12 (полный абзац); точный текст Златоуста по русскому изданию (СПбДА, «Беседы на
-   Иоанна», беседа 41) — для статьи лучше дать классический русский перевод.
+2. **Дословная сверка перед вёрсткой — SAFE CLOSURE 2026-08-01 for main candidates.** Gill №12, Spurgeon №13, Whitefield №15, and Ryle №16 are directly closed. Spurgeon №14, Carson №20, MLJ №21, and Ryle №22 are closed as no-direct-quote/snippet-only. Точный русский текст Златоуста по СПбДА остаётся optional editorial translation check.
 3. **Раввинистический фон (дословность подтверждена, 2026-07-17):** Пиркей Авот 2:7
    («приобрёл слова Торы — приобрёл жизнь века грядущего») и b. Berakhot 28b:12
    (благодарственная молитва рабби Нехуньи «положил долю мою среди сидящих в доме учения…»)

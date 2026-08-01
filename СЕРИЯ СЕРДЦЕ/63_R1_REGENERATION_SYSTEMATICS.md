@@ -400,11 +400,25 @@ https://ccel.org/ccel/charnock/nat_regen/nat_regen.i.html — этот вари�
 Ссылка: https://johngill.thekingsbible.com/CommentaryVerse/60/1/3
 **ВЕРИФИЦИРОВАНО**.
 
-**B6.** Body of Doctrinal Divinity, кн. VI, гл. 11 «Of Regeneration» — рабочие кандидаты
-(суть глав достоверна, дословность не сверена в этой сессии):
-> «Возрождение приписывается в Писании не человеку, а Богу, и только Ему; рождённые свыше
-> „не от крови, не от хотения плоти, не от хотения мужа, но от Бога родились“».
-[НЕ ВЕРИФИЦИРОВАНО — кандидат; проверить по PDF Monergism, кн. VI, гл. 11, при доступе]
+**B6.** Body of Doctrinal Divinity, кн. VI, гл. 11 «Of Regeneration» — SAFE CLOSURE 2026-07-31.
+Monergism HTML readback confirms the chapter and gives two article-ready exact anchors:
+
+> “Regeneration may be considered either more largely, and then it includes with it effectual
+> calling, conversion, and sanctification: or more strictly, and then it designs the first
+> principle of grace infused into the soul…”
+
+> “…what is produced in regeneration is called the new creature, and the new man…”
+
+Перевод: «Возрождение можно рассматривать шире — тогда оно включает действенное призвание,
+обращение и освящение; или строже — тогда оно означает первый принцип благодати, вложенный
+в душу…»; «…то, что производится в возрождении, называется новым творением и новым человеком…».
+
+Ссылка: https://www.monergism.com/regeneration-6
+Статус: `MONERGISM-HTML-VERIFIED / CHAPTER-LOCATOR-LOCKED`; печатная страница 1839 г. не заявляется.
+Дополнительная verified опора из той же главы: Гилл различает instrumentality of the word and
+immediate infusion; the ministry of the word is “the vehicle in which the Spirit of God conveys
+himself and his grace into the hearts of men”, while the first principle of grace is described as
+“immediate infusion”.
 
 ### В. Луис Беркхоф
 
@@ -475,7 +489,35 @@ https://ccel.org/ccel/charnock/nat_regen/nat_regen.i.html — этот вари�
 Ссылка: https://www.ccel.org/ccel/berkhof/systematictheology.vi.vi.html
 **ВЕРИФИЦИРОВАНО** (сниппет CCEL). ← Готовый ответ синергизму «проповедь убедила — человек решил».
 
-### Г. У. Г. Т. Шедд (для узла immediate/mediate)
+
+### Г. Herman Bavinck — Reformed Dogmatics IV, chapter 1 (calling and regeneration)
+
+**BV1.** Bavinck on broad vs restricted regeneration — SAFE CLOSURE 2026-07-31:
+> “one can still construe this term in a broad as well as a more restricted sense.” In the
+> broad Reformation usage, regeneration included “the total renewal of a person”; in the
+> restricted sense it “suggests the genesis or origin of that life” and dogmatics restricts
+> the term to “the implantation of the spiritual life.”
+
+Перевод: «термин можно понимать в широком и более ограниченном смысле… в широком смысле
+возрождение включает полное обновление человека; в ограниченном — указывает на возникновение
+или происхождение этой жизни, на вложение духовной жизни».
+
+**BV2.** Bavinck on Word/Spirit and order — SAFE CLOSURE 2026-07-31:
+> “In the preaching of the gospel to adults… the external call is therefore anterior to
+> regeneration, although it may coincide with it in time.”
+> “God can open human hearts before but also during the hearing of his Word (Acts 16:14).”
+
+**BV3.** Bavinck on immediate operation — SAFE CLOSURE 2026-07-31:
+> “the operation of God’s Spirit in regeneration is immediate; in other words, that God’s
+> Spirit itself directly enters the human heart and with infallible certainty brings about
+> regeneration without in any way being dependent on the human will.”
+
+Источник: Monergism HTML excerpt from Herman Bavinck, *Reformed Dogmatics*, vol. 4, ch. 1,
+“The Holy Spirit's Work of Calling and Regeneration”:
+https://www.monergism.com/holy-spirits-work-calling-and-regeneration-herman-bavinck
+Статус: `MONERGISM-HTML-READ / BAVINCK-RD4-CH1-EXCERPT-LOCKED`; Baker page numbers not claimed.
+
+### Д. У. Г. Т. Шедд (для узла immediate/mediate)
 
 **D1.** Dogmatic Theology (т. II; цитируется и у Беркхофа):
 > "The influence of the Holy Spirit is distinguishable from that of the truth; from that of man
@@ -501,7 +543,7 @@ Shedd, Dogm. Theol. II, pp. 500, 506). **ВЕРИФИЦИРОВАНО** (по с
 «средствами освящения» без оговорок — и возражает: Слово причастно и к рождению веры, Иак. 1:18;
 1 Пет. 1:23).
 
-### Д. Томас Бостон
+### Е. Томас Бостон
 
 **E1.** Human Nature in its Fourfold State, State III, «Regeneration»:
 > "Regeneration is a real thorough change, whereby the man is made a new creature (2 Cor. 5:17)."
@@ -520,12 +562,22 @@ https://www.monergism.com/thethreshold/sdg/boston/Human_Nature_in_its_Fourfold_S
 
 Ссылка: те же. **ВЕРИФИЦИРОВАНО** (в изданиях встречается вариант "passive in birth").
 
-**E3.** Там же (характеристики перемены): «это перемена сверхъестественная — рождённый свыше
-рождён от Духа»; «это перемена всеобщая» (ум, воля, чувства, вся жизнь) — формулы верифицированы
-по сниппетам в пересказе; дословную разбивку взять по PDF при доступе.
-[частично ВЕРИФИЦИРОВАНО / уточнить дословность]
+**E3.** Там же (характеристики перемены) — SAFE CLOSURE 2026-07-31 по GraceGems open text.
+Boston’s regeneration section gives a structured breakdown:
 
-### Е. Чарльз Сперджен
+> “Regeneration is a supernatural real change on the whole man…”
+> “But regeneration is a real, thorough change, whereby the man is made a new creature…”
+> “It is a change of qualities or dispositions.”
+> “It is a SUPERNATURAL change.”
+> “It is a change into the LIKENESS OF GOD.”
+> “It is a UNIVERSAL change.”
+> “Yet, though every part of the man is renewed, there is no part of him which is perfectly renewed.”
+> “Nevertheless, it is a LASTING change, which never entirely dies off.”
+
+Ссылка: https://www.gracegems.org/28/human_nature5.htm
+Статус: `GRACEGEMS-HTML-VERIFIED / REGENERATION-SECTION-LOCKED`; early-scan/print page not claimed.
+
+### Ж. Чарльз Сперджен
 
 **F1.** № 130 «Regeneration» (Ин. 3:3; 3 мая 1857; NPSP т. 3):
 > "The change is radical; it gives us new natures, makes us love what we hated and hate what we
@@ -602,9 +654,7 @@ https://ccel.org/ccel/whitefield/sermons/sermons.li.html
 
 **G2.** Анекдот: на вопрос, почему он так часто проповедует на «должно вам родиться свыше»,
 Уитфилд ответил: **"Because ye must be born again"** — «Потому что должно вам родиться свыше».
-[НЕ ВЕРИФИЦИРОВАНО — легенда: рассказ ходит в трёх вариантах (друг / дама / критик), первоисточник
-не установлен, современные публикации помечают его как "likely apocryphal". Если использовать —
-только с оговоркой «предание рассказывает…», без выдачи за документированный факт.]
+[BLOCKED AS DOCUMENTED FACT / TRADITION ONLY — SAFE CLOSURE 2026-07-31: рассказ ходит в разных вариантах, первоисточник не установлен, современные публикации вводят его как “story goes / it is said / likely apocryphal”. Не использовать как документированную цитату; если нужен риторический ход — только как предание с оговоркой, лучше заменить Whitefield “On Regeneration”.]
 
 **G3.** Факт для рамки (проверяем при написании): Уитфилд возвращался к Ин. 3:7 постоянно на
 протяжении всего служения; «Marks of the New Birth» (1741) даёт его список признаков рождения
@@ -670,9 +720,8 @@ https://ccel.org/ccel/whitefield/sermons/sermons.li.html
 > исторической августиновской и реформатской мысли… водораздельное утверждение, отличающее это
 > богословие от всех форм полупелагианства».
 
-Ссылка: https://www.reformedontheweb.com/theology2/regeneration-precedes-faith-r-c-sproul.pdf ;
-ср. https://learn.ligonier.org/articles/new-birth
-**ВЕРИФИЦИРОВАНО** (там же — его рассказ о семинарской доске: профессор написал крупно
+Ссылка: https://learn.ligonier.org/articles/new-birth
+**SAFE CLOSURE 2026-08-01 — official Ligonier article verified.** Use article citation/date (March 1, 2007) and no book-page claim; old third-party PDF is unnecessary. Там же — его рассказ о семинарской доске: профессор написал крупно
 "Regeneration Precedes Faith").
 
 **H6.** Джон Стотт (цитируется у Пайпера, Finally Alive, о 1 Ин. 5:1):
@@ -836,17 +885,11 @@ https://www.monergism.com/holy-spirits-work-calling-and-regeneration-herman-bavi
    spurgeongems, archive.org (fetch); все цитаты верифицированы по поисковым сниппетам. Перед
    вёрсткой статьи: контрольное сличение цитатника по ссылкам (особенно C1–C5 Беркхоф и G1 Уитфилд —
    взять цельные абзацы, а не склейки).
-2. **Гилл, кн. VI, гл. 11 «Of Regeneration»**: добыть 2–3 цельных абзаца дословно (PDF Monergism,
-   стр. по изданию 1839 г.); кандидат B6 подтвердить/заменить. Также его разбор Ин. 3:5 («от воды
-   и Духа» — не крещение) для врезки о крещальном вопросе.
-3. **Бавинк дословно**: RD IV, гл. 1 — выписать 1–2 абзаца о cum verbo и о том, что возрождение
-   в узком смысле предшествует вере (англ. изд. Baker, стр. уточнить); проверить его критику
-   Кайперова «предполагаемого возрождения» (для бонуса R2 тоже пригодится).
-4. **Бостон**: дословная разбивка характеристик перемены (real/thorough/supernatural/universal)
-   по PDF — сейчас частично в пересказе.
+2. **Гилл, кн. VI, гл. 11 «Of Regeneration» — SAFE CLOSURE 2026-07-31 for HTML.** B6 подтверждён/заменён по Monergism HTML `https://www.monergism.com/regeneration-6`; exact anchors on strict/large sense of regeneration and new creature/new man are locked. Печатная страница 1839 г. не заявляется. Отдельный разбор Ин. 3:5 / Тит. 3:5 уже частично есть в B3–B4; если нужна печатная пагинация — optional future pass.
+3. **Бавинк — SAFE CLOSURE 2026-07-31 for RD4 ch.1 HTML excerpt.** Monergism excerpt from *Reformed Dogmatics* IV, ch. 1 read and locked for broad/restricted regeneration, Word/Spirit order, and immediate Spirit operation. Baker page numbers and Kuyper presumed-regeneration critique remain optional future checks.
+4. **Бостон — SAFE CLOSURE 2026-07-31 for HTML.** Real/thorough/supernatural/universal/lasting change breakdown verified in GraceGems open text. Early-scan/print page remains optional only.
 5. **Стотт**: точная страница The Letters of John (TNTC, 1964/1988) для H6.
-6. **Спрол**: установить книжный первоисточник пассажа о «watershed» (статья-PDF ← какая книга:
-   Chosen by God? The Mystery of the Holy Spirit?) — для корректной сноски.
+6. **Спрол watershed — SAFE CLOSURE 2026-08-01.** Official Ligonier article “The New Birth” directly verifies the “Regeneration precedes faith” / “watershed assertion” wording. Cite the article; no need to identify a book source unless a print-page citation is desired.
 7. **Уитфилд**: сколько раз он проповедовал на Ин. 3:7 — часто пишут «более 300 раз»; найти
    первоисточник этой статистики (дневники? Далимор?) или не использовать цифру.
 8. **Пробел плана**: в задании упомянут «Boston … (state of grace)» — если статья захочет его

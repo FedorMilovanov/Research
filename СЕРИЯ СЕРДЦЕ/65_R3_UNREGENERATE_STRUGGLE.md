@@ -442,9 +442,7 @@
 > Пометки: ✅ ВЕРИФИЦИРОВАНО (точная фраза найдена в открытом источнике; ссылка приложена);
 > ⚠️ НЕ ВЕРИФИЦИРОВАНО — кандидат (включать только с этой пометкой или пересказом).
 
-**№1. Кальвин, Institutes II.3.3 (Beveridge, 1845).** ✅ (собрано из пяти независимо
-верифицированных фрагментов одного раздела; порядок — авторский; связки при финальной
-вычитке сверить по CCEL):
+**№1. Кальвин, Institutes II.3.3 (Beveridge, 1845).** ✅ SAFE CLOSURE 2026-07-31: CCEL chapter readback completed; фрагменты и порядок подтверждены по `institutes.iv.iv.html`, print page not claimed:
 
 > "In every age there have been some who, under the guidance of nature, were all their lives
 > devoted to virtue. It is of no consequence, that many blots may be detected in their conduct;
@@ -472,7 +470,7 @@ https://www.baptists.net/history/2023/02/book-2-chapter-3-everything-proceeding-
 подтверждение фрагментов: https://reformedbooksonline.com/topics/topics-by-subject/common-grace/john-calvin-on-common-grace/ ;
 https://sojo.net/articles/opinion/praise-calvins-total-depravity
 
-**№1b. Кальвин, Institutes II.3.4 (Battles, 1960) — Камилл и Катилина.** ✅ (фрагменты):
+**№1b. Кальвин, Institutes II.3.4 — Камилл и Катилина.** ✅ SAFE CLOSURE 2026-07-31 for Beveridge/CCEL wording; Battles wording remains useful but page/edition not claimed:
 
 > "…whether we must make Camillus equal to Catiline, or we shall have in Camillus an example
 > proving that nature, if carefully cultivated, is not utterly devoid of goodness. […] the
@@ -522,9 +520,8 @@ https://www.cprf.co.uk/quotes/uncommongracequotes.html
 трактата: Against Julian, FOC vol. 35 (M. A. Schumacher, 1957),
 https://archive.org/details/againstjulian0035augu
 
-**№4. Августин, Contra Julianum IV.3.25 — Фабриций и Катилина.** ⚠️ НЕ ВЕРИФИЦИРОВАНО
-дословно (лат. текст по традиции цитирования; смысл подтверждён вторично — Schaff, History
-of the Christian Church III, https://ccel.org/ccel/schaff/hcc3/hcc3.iii.xii.xl.html):
+**№4. Августин, Contra Julianum IV.3.25 — Фабриций и Катилина.** — SAFE CLOSURE 2026-08-01
+по Latin Wikisource / Migne text (Book IV, cap. III, §25):
 
 > "Ideo Fabricius minus quam Catilina punietur, non quia iste bonus, sed quia ille magis malus;
 > et minus impius quam Catilina Fabricius, non veras virtutes habendo, sed a veris virtutibus
@@ -532,9 +529,12 @@ of the Christian Church III, https://ccel.org/ccel/schaff/hcc3/hcc3.iii.xii.xl.h
 
 Перевод: «Фабриций будет наказан меньше, чем Катилина, — не потому, что он добр, а потому, что
 тот более зол; и Фабриций менее нечестив, чем Катилина, не потому, что имел истинные
-добродетели, а потому, что не так далеко отклонился от истинных добродетелей». Проверить по:
-лат. PDF (PL 44) https://www.documentacatholicaomnia.eu/04z/z_0354-0430__Augustinus__Contra_Julianum__MLT.pdf.html ;
-англ. FOC 35, https://archive.org/details/againstjulian0035augu (кн. IV, гл. 3, §25).
+добродетели, а потому, что не так далеко отклонился от истинных добродетелей».
+Источник: Augustine, *Contra Iulianum* IV.3.25, Latin Wikisource ed. Migne:
+https://la.wikisource.org/wiki/Contra_Iulianum_(ed._Migne) ; metadata cross-check:
+Documenta Catholica Omnia, PL/Migne 44, cols. 0641–0874,
+https://www.documentacatholicaomnia.eu/04z/z_0354-0430__Augustinus__Contra_Julianum__MLT.pdf.html .
+Статус: `LATIN-WIKISOURCE-MIGNE-TEXT-VERIFIED / BOOK-IV-CAP-III-25-LOCATOR-LOCKED`; FOC English/page comparison optional, not source-risk.
 
 **№5–6. Кальвин, Commentary on Romans 2:14–15.** ✅
 
@@ -718,14 +718,17 @@ of Jesus?»).** ✅
 Источники: https://sacred-texts.com/bib/cmt/gill/rom002.htm ;
 https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/romans-2-15.html
 
-**№19. Thomas Watson, The Godly Man's Picture (1666).** ⚠️ ЧАСТИЧНО: подтверждено
-в цитатных сборниках, дословность по первоисточнику сверить.
+**№19. Thomas Watson, The Godly Man's Picture (1666).** SAFE CLOSURE 2026-07-31 as
+`QUOTE-COLLECTION-ONLY / DO-NOT-DIRECT-QUOTE`.
 
 > "Morality is but nature refined — old Adam put in a better dress."
 
 Перевод: «Мораль — лишь облагороженная природа: старый Адам, одетый в лучшее платье».
-Источники: https://www.monergism.com/thethreshold/sdg/watson/The%20Godly%20Man%27s%20Picture%20-%20Thomas%20Watson.pdf ;
-https://www.gracegems.org/30/thomas_watson_quotes.htm
+Эта формула найдена в Watson quote collections, включая GraceGems, но не была закреплена в
+открытом primary chapter/page during this pass. Для статьи не использовать как прямую Watson
+цитату без первичного локатора; вместо неё использовать уже закрытые Calvin II.3.3–4 или
+общий paraphrase: внешняя мораль/цивильность не равна обновлению сердца.
+Источники для future locator only: Monergism PDF / GraceGems Watson quote collections.
 
 **№20. C. H. Spurgeon, «The Wailing of Risca» (MTP vol. 7, №349; 9 декабря 1860).** ✅
 
@@ -754,9 +757,9 @@ https://www.rayfowler.org/2010/05/10/spurgeon-if-sinners-will-be-damned/
 https://archive.spurgeon.org/sermons/0052.php
 
 **№22. «Свободная воля увела многих в ад, но никого не привела на небо» (припис.
-Сперджену).** ⚠️ НЕ ВЕРИФИЦИРОВАНО: в тексте проповеди №52 фразы нет; ходит по цитатникам
-без источника (https://rightwords.eu/quotes/free-will-carried-many-souls-to-hell-but-never-a-soul-to--25726).
-Не использовать, пока не найден первоисточник; вместо неё — №21.
+Сперджену).** SAFE CLOSURE 2026-07-31 as `APOCRYPHAL-RISK / DO-NOT-USE`.
+Фраза не найдена в тексте проповеди №52 и ходит по цитатникам без первичного источника.
+Не использовать как Spurgeon quote; вместо неё — закрытая №21 “Free Will—A Slave”.
 
 **№23. «Virtutes paganorum splendida vitia» (припис. Августину).** ⚠️ ЯРЛЫК, НЕ ЦИТАТА:
 в корпусе Августина отсутствует; реальные опоры — №2, №3, №4; популяризация — Пьер Бейль,
@@ -838,15 +841,8 @@ Couenhoven 2025 (https://journals.sagepub.com/doi/10.1177/09539468251370545).
 
 ## Открытые вопросы / что ещё копать
 
-1. **Institutes II.3.3–4 — сплошная сверка.** Прямой fetch CCEL был заблокирован; абзац №1
-   собран из верифицированных фрагментов. При вычитке: прогнать
-   https://www.ccel.org/ccel/calvin/institutes.iv.iv.html и вор-зеркало (vor.org/rbdisk),
-   свести связки; решить, давать Beveridge или Battles (рекомендую Battles в тексте статьи,
-   Beveridge в сноске — Battles точнее по изданию 1559 г.). Уточнить привязку фразы «not
-   common gifts of nature, but special graces of God»: II.3.4 или II.2.17 (почти дословный
-   параллелизм в двух местах).
-2. **Contra Julianum IV.3.25 (Фабриций/Катилина)** — сверить латынь по PL 44 (ссылка в №4)
-   и английский по FOC 35 (archive.org, стр. ~180–190); пока держать с пометкой.
+1. **Institutes II.3.3–4 — SAFE CLOSURE 2026-07-31 for CCEL/Beveridge.** Старый blocker «прямой fetch CCEL был заблокирован» закрыт: `https://www.ccel.org/ccel/calvin/institutes.iv.iv.html` прочитан, разделы II.3.3–4 и логика special gifts / providential restraint подтверждены. Остаётся не source-risk, а редакционный выбор: давать ли Battles как основной перевод и проверять русское издание; печатная страница Battles/Beveridge не заявляется.
+2. **Contra Julianum IV.3.25 (Фабриций/Катилина) — SAFE CLOSURE 2026-08-01.** Latin Wikisource/Migne text verified; FOC English/page comparison remains optional only.
 3. **Статья Marshall «Virtutes paganorum sunt splendida vitia»** — установить выходные данные
    (Semantic Scholar запись без метаданных в выдаче); может дать точное первое вхождение
    формулы (до Бейля? Меланхтон? схоластика?). Это единственный незакрытый хвост
