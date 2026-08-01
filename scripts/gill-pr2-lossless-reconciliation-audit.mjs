@@ -1,24 +1,28 @@
 import fs from 'node:fs';
+import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 
 const archivePath = 'incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md';
 const matrixPath = 'Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md';
 const navPath = 'Джон Гилл/00_README_AND_NAVIGATION.md';
+const crosswalkPath = 'Джон Гилл/00_SOURCE_STATUS_CROSSWALK_V2.md';
 const expectedArchiveBlob = 'baa3fccb6f67cd05117b2c4f0342867662a3fce0';
 const expectedMatrixBlob = '90085ab3d75ebc51f0c398fd3a8e2b4f4674a824';
 const expectedSiteMerge = '877508fbfe42883b99922e3dcc717adfa91c33ad';
 const expectedExactHead = '433c76ddd4ee37e9efe8fd4f5fc7573aa8e2a736';
+const productRepo = process.env.GILL_PRODUCT_REPO ? path.resolve(process.env.GILL_PRODUCT_REPO) : '';
 
 const archive = fs.readFileSync(archivePath, 'utf8');
 const matrix = fs.readFileSync(matrixPath, 'utf8');
 const nav = fs.readFileSync(navPath, 'utf8');
+const crosswalk = fs.readFileSync(crosswalkPath, 'utf8');
 const failures = [];
 
-function git(...args) {
+function gitAt(repo, ...args) {
   try {
-    return execFileSync('git', args, { encoding: 'utf8' }).trim();
+    return execFileSync('git', ['-C', repo, ...args], { encoding: 'utf8' }).trim();
   } catch (error) {
-    failures.push(`git ${args.join(' ')} failed: ${error.stderr?.toString().trim() || error.message}`);
+    failures.push(`git -C ${repo} ${args.join(' ')} failed: ${error.stderr?.toString().trim() || error.message}`);
     return '';
   }
 }
@@ -37,16 +41,15 @@ function assertSequence(ids, label) {
   }
 }
 
-// Compute Git object IDs from actual bytes. Literal blob markers alone are not evidence.
-const archiveWorkingBlob = git('hash-object', archivePath); // git hash-object is required by repository integrity gate
-const archiveHeadBlob = git('rev-parse', `HEAD:${archivePath}`);
-const matrixWorkingBlob = git('hash-object', matrixPath);
-const matrixHeadBlob = git('rev-parse', `HEAD:${matrixPath}`);
+const archiveWorkingBlob = gitAt('.', 'hash-object', archivePath); // git hash-object
+const archiveHeadBlob = gitAt('.', 'rev-parse', `HEAD:${archivePath}`);
+const matrixWorkingBlob = gitAt('.', 'hash-object', matrixPath);
+const matrixHeadBlob = gitAt('.', 'rev-parse', `HEAD:${matrixPath}`);
 if (archiveWorkingBlob !== expectedArchiveBlob) failures.push(`archive working blob drift: ${archiveWorkingBlob} != ${expectedArchiveBlob}`);
 if (archiveHeadBlob !== expectedArchiveBlob) failures.push(`archive HEAD blob drift: ${archiveHeadBlob} != ${expectedArchiveBlob}`);
 if (matrixWorkingBlob !== expectedMatrixBlob) failures.push(`matrix working blob drift: ${matrixWorkingBlob} != ${expectedMatrixBlob}`);
 if (matrixHeadBlob !== expectedMatrixBlob) failures.push(`matrix HEAD blob drift: ${matrixHeadBlob} != ${expectedMatrixBlob}`);
-if (git('status', '--porcelain', '--', archivePath, matrixPath, navPath)) failures.push('Gill reconciliation inputs are dirty');
+if (gitAt('.', 'status', '--porcelain', '--', archivePath, matrixPath, navPath, crosswalkPath)) failures.push('Gill reconciliation inputs are dirty');
 
 assertSequence(idsFrom(archive, /^## GILL-CONTENT-(\d{3})\s+—/gm), 'archive');
 assertSequence(idsFrom(matrix, /^\| GILL-CONTENT-(\d{3}) \|/gm), 'matrix');
@@ -56,11 +59,23 @@ const archiveMarker = matrix.match(/\*\*Archive blob:\*\* `([0-9a-f]{40})`/i)?.[
 if (archiveMarker !== archiveWorkingBlob) failures.push(`matrix archive marker ${archiveMarker} != actual blob ${archiveWorkingBlob}`);
 if (!matrix.includes(`merge \`${expectedSiteMerge}\``)) failures.push('matrix: site PR192 merge marker missing');
 if (!matrix.includes(`exact head \`${expectedExactHead}\``)) failures.push('matrix: exact-head CI marker missing');
-for (const commit of [expectedSiteMerge, expectedExactHead]) {
-  git('cat-file', '-e', `${commit}^{commit}`);
+
+if (!productRepo || !fs.existsSync(path.join(productRepo, '.git'))) {
+  failures.push('GILL_PRODUCT_REPO must point to a checked-out gb-is-my-strength repository');
+} else {
+  gitAt(productRepo, 'cat-file', '-e', `${expectedSiteMerge}^{commit}`);
+  gitAt(productRepo, 'cat-file', '-e', `${expectedExactHead}^{commit}`);
+  const mergeTree = gitAt(productRepo, 'rev-parse', `${expectedSiteMerge}^{tree}`);
+  const headTree = gitAt(productRepo, 'rev-parse', `${expectedExactHead}^{tree}`);
+  if (!mergeTree || !headTree) failures.push('Product commit tree witnesses are unavailable');
+  if (gitAt(productRepo, 'status', '--porcelain')) failures.push('Gill Product checkout is dirty');
 }
+
 if (!nav.includes('| 74 | `74_PR2_001_480_RECONCILIATION_MATRIX.md` |')) failures.push('navigation: volume 74 row missing');
 if (!nav.includes('`70`–`74`.')) failures.push('navigation: primary-verifiability cluster does not include volume 74');
+for (const marker of ['SUPERSEDES THE “A1–X” SEMANTICS', 'historical Gill `A3`', 'evidenceClass', 'accessState']) {
+  if (!crosswalk.includes(marker)) failures.push(`Gill source-status crosswalk missing marker: ${marker}`);
+}
 
 const dossierChecks = [
   ['Джон Гилл/01_SERIES_GAPS_AND_PRIMARY_SOURCES.md', ['ИСТОРИЧЕСКОЕ ДОСЬЕ / SUPERSEDED'], ['1769–1773, 3 книги', 'крупнейший библейский комментарий одного автора']],
@@ -76,11 +91,10 @@ const dossierChecks = [
   ['Джон Гилл/40_THE_CHRISTOLOGY_PERSON_OF_CHRIST.md', ['ПРЕДУПРЕЖДЕНИЕ О CCEL-МАРШРУТАХ'], []],
   ['Джон Гилл/42_THE_CREATION_IMAGE_OF_GOD_AND_PROVIDENCE.md', ['ПРЕДУПРЕЖДЕНИЕ О CCEL-МАРШРУТАХ'], []],
 ];
-
-for (const [path, required, forbidden] of dossierChecks) {
-  const text = fs.readFileSync(path, 'utf8');
-  for (const marker of required) if (!text.includes(marker)) failures.push(`${path}: required marker missing: ${marker}`);
-  for (const marker of forbidden) if (text.includes(marker)) failures.push(`${path}: forbidden stale marker remains: ${marker}`);
+for (const [file, required, forbidden] of dossierChecks) {
+  const text = fs.readFileSync(file, 'utf8');
+  for (const marker of required) if (!text.includes(marker)) failures.push(`${file}: required marker missing: ${marker}`);
+  for (const marker of forbidden) if (text.includes(marker)) failures.push(`${file}: forbidden stale marker remains: ${marker}`);
 }
 
 if (failures.length) {
@@ -88,4 +102,4 @@ if (failures.length) {
   for (const failure of failures) console.error(`- ${failure}`);
   process.exit(1);
 }
-console.log('Gill PR2 lossless reconciliation: PASS — archive and matrix blobs verified, 480 IDs reconciled, commit witnesses present.');
+console.log('Gill PR2 lossless reconciliation: PASS — Research blobs, 480 IDs, Product commit witnesses and source-status crosswalk verified.');
