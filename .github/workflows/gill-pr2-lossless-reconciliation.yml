@@ -3,14 +3,15 @@ name: Gill PR2 Lossless Reconciliation
 on:
   pull_request:
     paths:
+      - data/repository-evidence-policy-v2.json
       - incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md
       - 'Джон Гилл/**'
       - scripts/gill-pr2-lossless-reconciliation-audit.mjs
       - .github/workflows/gill-pr2-lossless-reconciliation.yml
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
+      - data/repository-evidence-policy-v2.json
       - incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md
       - 'Джон Гилл/**'
       - scripts/gill-pr2-lossless-reconciliation-audit.mjs
@@ -21,8 +22,13 @@ permissions:
 
 jobs:
   audit:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - name: Verify 001-480 archive, matrix, navigation and dossier remediation
+      - name: Checkout complete history for commit witnesses
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - name: Verify archive bytes, matrix bytes, 001-480 mapping and dossier remediation
         run: node scripts/gill-pr2-lossless-reconciliation-audit.mjs
+      - name: Ensure audit is read-only
+        run: git diff --exit-code
