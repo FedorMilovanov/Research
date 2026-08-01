@@ -1,37 +1,41 @@
-# A06 OSK projection overlay — Wave 6
+# OSK public-projection overlay — current through Wave 11
 
-**Authority ID:** `A06-OSK-WAVE6-PROJECTION-2026-08-01`  
-**Base A06 authority:** `A06-RESEARCH-PUBLIC-PROJECTION-2026-08-01`  
-**Superseded record:** `osk-power-dark-side-standalone`  
-**Research snapshot:** `446a83932d4ec446b4c87e2c7b2fb02aeeee49eb`  
+**Current overlay authority:** `A06-OSK-CURRENT-PROJECTION-2026-08-02`  
+**Supersedes:** `A06-OSK-WAVE6-PROJECTION-2026-08-01`  
+**Base queue authority:** `A06-RESEARCH-PUBLIC-PROJECTION-2026-08-01`  
+**Replaced record:** `osk-power-dark-side-standalone`  
+**Research authority snapshot:** `1466b65a4449bac968a28d7da2d2b78db545e29e`  
 **Product snapshot:** `efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3`
 
 ## Effective decision
 
-`BLOCKED / EVIDENCE_HOLD + PUBLICATION_HOLD`
+```text
+REFERENCE / PUBLICATION_HOLD
+WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD
+```
 
-становится:
+The historical base record that described Waves 1–4 and an active Wave 5 is no longer current. Waves 1–11 are recorded as completed Research/integration stages, with effective routing:
 
-`REFERENCE / PUBLICATION_HOLD`
+```text
+21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 4 STANDALONE / 0 HOLD
+```
 
-Причина: Waves 1–5 закрыли evidence-route всех 33 кейсов и Wave 6 создала
-20-point site-transfer ledger. Это не `PROMOTE`: текущий product body ещё не прошёл
-paragraph-level fidelity audit, а современные кейсы не разрешены к автоматической
-вставке.
+This remains `REFERENCE`, not `PROMOTE`, because Wave 11 does not prove a live public release. Wave 12 must separately verify the exact Product commit, target route, bounded approved edits, build result and live-route witness.
 
-## Effective A06 counts
+## Effective counts
 
-- `PROMOTE`: **0**
-- `REFERENCE`: **4**
-- `SUPERSEDED`: **0**
-- `BLOCKED`: **6**
-- total: **10**
+```text
+PROMOTE: 0
+REFERENCE: 4
+SUPERSEDED: 0
+BLOCKED: 6
+total: 10
+```
 
-## Product boundary
+## Machine authority
 
-- существующий `/articles/20-antisovetov-pastoru/` сохраняется;
-- case roster не добавляется;
-- новые future routes не создаются этой волной;
-- direct quote не добавляется;
-- Product и AuditRepo не изменяются;
-- отдельный product PR возможен только для одного bounded claim/package.
+- base queue: `data/public-projection-queue-2026-08-01.json`;
+- current overlay: `data/public-projection-osk-wave6-overlay-2026-08-01.json`;
+- canonical composition descriptor: `data/public-projection-current-2026-08-02.json`.
+
+The base queue must never be consumed alone as current state.
