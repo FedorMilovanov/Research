@@ -1,14 +1,27 @@
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 
 const archivePath = 'incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md';
 const matrixPath = 'Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md';
 const navPath = 'Джон Гилл/00_README_AND_NAVIGATION.md';
+const expectedArchiveBlob = 'baa3fccb6f67cd05117b2c4f0342867662a3fce0';
+const expectedMatrixBlob = '90085ab3d75ebc51f0c398fd3a8e2b4f4674a824';
+const expectedSiteMerge = '877508fbfe42883b99922e3dcc717adfa91c33ad';
+const expectedExactHead = '433c76ddd4ee37e9efe8fd4f5fc7573aa8e2a736';
 
 const archive = fs.readFileSync(archivePath, 'utf8');
 const matrix = fs.readFileSync(matrixPath, 'utf8');
 const nav = fs.readFileSync(navPath, 'utf8');
-
 const failures = [];
+
+function git(...args) {
+  try {
+    return execFileSync('git', args, { encoding: 'utf8' }).trim();
+  } catch (error) {
+    failures.push(`git ${args.join(' ')} failed: ${error.stderr?.toString().trim() || error.message}`);
+    return '';
+  }
+}
 
 function idsFrom(text, pattern) {
   return [...text.matchAll(pattern)].map((match) => Number(match[1]));
@@ -24,13 +37,28 @@ function assertSequence(ids, label) {
   }
 }
 
+// Compute Git object IDs from actual bytes. Literal blob markers alone are not evidence.
+const archiveWorkingBlob = git('hash-object', archivePath); // git hash-object is required by repository integrity gate
+const archiveHeadBlob = git('rev-parse', `HEAD:${archivePath}`);
+const matrixWorkingBlob = git('hash-object', matrixPath);
+const matrixHeadBlob = git('rev-parse', `HEAD:${matrixPath}`);
+if (archiveWorkingBlob !== expectedArchiveBlob) failures.push(`archive working blob drift: ${archiveWorkingBlob} != ${expectedArchiveBlob}`);
+if (archiveHeadBlob !== expectedArchiveBlob) failures.push(`archive HEAD blob drift: ${archiveHeadBlob} != ${expectedArchiveBlob}`);
+if (matrixWorkingBlob !== expectedMatrixBlob) failures.push(`matrix working blob drift: ${matrixWorkingBlob} != ${expectedMatrixBlob}`);
+if (matrixHeadBlob !== expectedMatrixBlob) failures.push(`matrix HEAD blob drift: ${matrixHeadBlob} != ${expectedMatrixBlob}`);
+if (git('status', '--porcelain', '--', archivePath, matrixPath, navPath)) failures.push('Gill reconciliation inputs are dirty');
+
 assertSequence(idsFrom(archive, /^## GILL-CONTENT-(\d{3})\s+—/gm), 'archive');
 assertSequence(idsFrom(matrix, /^\| GILL-CONTENT-(\d{3}) \|/gm), 'matrix');
-
 if (Buffer.byteLength(archive, 'utf8') < 400_000) failures.push('archive: unexpectedly smaller than 400 KB');
-if (!matrix.includes('**Archive blob:** `baa3fccb6f67cd05117b2c4f0342867662a3fce0`')) failures.push('matrix: restored PR2 archive blob marker missing');
-if (!matrix.includes('merge `877508fbfe42883b99922e3dcc717adfa91c33ad`')) failures.push('matrix: site PR192 merge marker missing');
-if (!matrix.includes('exact head `433c76ddd4ee37e9efe8fd4f5fc7573aa8e2a736`')) failures.push('matrix: exact-head CI marker missing');
+
+const archiveMarker = matrix.match(/\*\*Archive blob:\*\* `([0-9a-f]{40})`/i)?.[1];
+if (archiveMarker !== archiveWorkingBlob) failures.push(`matrix archive marker ${archiveMarker} != actual blob ${archiveWorkingBlob}`);
+if (!matrix.includes(`merge \`${expectedSiteMerge}\``)) failures.push('matrix: site PR192 merge marker missing');
+if (!matrix.includes(`exact head \`${expectedExactHead}\``)) failures.push('matrix: exact-head CI marker missing');
+for (const commit of [expectedSiteMerge, expectedExactHead]) {
+  git('cat-file', '-e', `${commit}^{commit}`);
+}
 if (!nav.includes('| 74 | `74_PR2_001_480_RECONCILIATION_MATRIX.md` |')) failures.push('navigation: volume 74 row missing');
 if (!nav.includes('`70`–`74`.')) failures.push('navigation: primary-verifiability cluster does not include volume 74');
 
@@ -56,9 +84,8 @@ for (const [path, required, forbidden] of dossierChecks) {
 }
 
 if (failures.length) {
-  console.error('Gill PR2 lossless reconciliation audit failed:');
+  console.error(`Gill PR2 lossless reconciliation: FAIL (${failures.length})`);
   for (const failure of failures) console.error(`- ${failure}`);
   process.exit(1);
 }
-
-console.log('Gill PR2 lossless reconciliation audit passed: archive=480, matrix=480, dossiers remediated.');
+console.log('Gill PR2 lossless reconciliation: PASS — archive and matrix blobs verified, 480 IDs reconciled, commit witnesses present.');
