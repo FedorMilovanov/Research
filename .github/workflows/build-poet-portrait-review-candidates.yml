@@ -10,61 +10,61 @@ on:
       - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v3.py'
       - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v4.py'
       - 'SOURCE_LIBRARY/POET_PORTRAIT_REVIEW_WORKFLOW_2026-07-30.md'
-      - 'SOURCE_LIBRARY/processed/POET_PORTRAIT_REVIEW_V1_REJECTION_AUDIT_2026-07-30.md'
+      - 'requirements/source-audit.txt'
+      - 'data/artifact-custody-policy-v2.json'
 
 permissions:
   contents: read
 
-concurrency:
-  group: poet-portrait-review-v4-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
-
 jobs:
   build-review-package:
-    name: Build identity-scoped recursive portrait contact sheets
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 240
     steps:
-      - name: Checkout PR merge candidate
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
-          python-version: '3.12'
-
-      - name: Install dependencies
-        run: python -m pip install --disable-pip-version-check requests pillow
-
-      - name: Build v4 review candidates and contact sheets
+          python-version: '3.12.8'
+          cache: pip
+          cache-dependency-path: requirements/source-audit.txt
+      - name: Install pinned dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements/source-audit.txt
+      - name: Compile builders
+        run: python -m py_compile SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates*.py
+      - name: Build identity-scoped review candidates
         run: >-
           python SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v4.py
-          --depth 3
-          --category-limit 250
-          --exact-search-limit 50
-          --per-person 10
-          --minimum-ready 70
-          --minimum-core 1
+          --depth 3 --category-limit 250 --exact-search-limit 50
+          --per-person 10 --minimum-ready 70 --minimum-core 1
           --output portrait-review-v2-output
-
-      - name: Publish summary
-        shell: bash
+      - name: Validate output and record temporary custody
         run: |
-          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          python - <<'PY'
           import json
-          data = json.load(open('portrait-review-v2-output/portrait-v2-candidates.json', encoding='utf-8'))
-          print('# Identity-scoped poet portrait review v4')
-          print(f"- review-ready thumbnails: **{data['review_ready']}**")
-          print(f"- by person: `{data['review_ready_by_person']}`")
-          print(f"- status counts: `{data['status_counts']}`")
-          print(f"- contact sheets: `{data['contact_sheets']}`")
+          from pathlib import Path
+          root = Path('portrait-review-v2-output')
+          data = json.loads((root / 'portrait-v2-candidates.json').read_text(encoding='utf-8'))
+          if data['review_ready'] < 70:
+              raise SystemExit(f"review-ready gate failed: {data['review_ready']}")
+          (root / 'CUSTODY.json').write_text(json.dumps({
+              'state': 'EPHEMERAL_ACTION_ARTIFACT',
+              'publicationEligible': False,
+              'identityDecision': 'HUMAN_REVIEW_REQUIRED',
+              'retentionDays': 30,
+              'durableReceiptPresent': False,
+              'policy': 'data/artifact-custody-policy-v2.json'
+          }, indent=2), encoding='utf-8')
           PY
-
-      - name: Upload v4 review package
-        uses: actions/upload-artifact@v4
+      - name: Add reproducibility witnesses
+        run: |
+          git rev-parse HEAD > portrait-review-v2-output/RESEARCH_COMMIT.txt
+          python -m pip freeze > portrait-review-v2-output/PIP_FREEZE.txt
+      - name: Upload temporary review package
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
         with:
-          name: poet-portrait-review-candidates-v4
+          name: ephemeral-poet-portrait-review-v4
           path: portrait-review-v2-output/
           if-no-files-found: error
-          compression-level: 6
           retention-days: 30
+      - name: Ensure builders are read-only
+        run: git diff --exit-code
