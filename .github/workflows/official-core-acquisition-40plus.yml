@@ -7,7 +7,7 @@ on:
       - 'SOURCE_LIBRARY/TOTAL_SOURCE_ACQUISITION_AUDIT_2026-07-30.md'
       - 'SOURCE_LIBRARY/tools/official_core_acquisition_40plus.py'
       - 'SOURCE_LIBRARY/tools/official_core_acquisition_40plus_v2.py'
-      - 'requirements/source-audit.txt'
+      - 'requirements/source-audit.lock'
       - 'data/artifact-custody-policy-v2.json'
       - '.github/workflows/official-core-acquisition-40plus.yml'
 
@@ -24,9 +24,9 @@ jobs:
         with:
           python-version: '3.12.8'
           cache: pip
-          cache-dependency-path: requirements/source-audit.txt
-      - name: Install pinned dependencies
-        run: python -m pip install --disable-pip-version-check -r requirements/source-audit.txt
+          cache-dependency-path: requirements/source-audit.lock
+      - name: Install hash-locked dependencies
+        run: python -m pip install --disable-pip-version-check --require-hashes -r requirements/source-audit.lock
       - name: Compile acquisition tools
         run: python -m py_compile SOURCE_LIBRARY/tools/official_core_acquisition_40plus.py SOURCE_LIBRARY/tools/official_core_acquisition_40plus_v2.py
       - name: Run corrected rights-first acquisition pass
@@ -60,6 +60,7 @@ jobs:
           PY
           git rev-parse HEAD > official-core-acquisition-output/RESEARCH_COMMIT.txt
           python -m pip freeze > official-core-acquisition-output/PIP_FREEZE.txt
+          sha256sum requirements/source-audit.lock > official-core-acquisition-output/DEPENDENCY_LOCK_SHA256.txt
       - name: Upload temporary acquisition evidence and files
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
         with:
