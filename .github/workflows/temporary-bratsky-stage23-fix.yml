@@ -36,9 +36,7 @@ jobs:
               raise SystemExit(f'unexpected target positions: {matches}')
 
           index = matches[0]
-          line = lines[index]
-          raw = line.rstrip('\r\n')
-          ending = line[len(raw):]
+          raw = lines[index].rstrip('\r\n')
           values = next(csv.reader([raw]))
           if len(values) != 13:
               raise SystemExit(f'expected 13 shifted columns, got {len(values)}')
@@ -65,7 +63,7 @@ jobs:
           ]
           buffer = io.StringIO(newline='')
           csv.writer(buffer, lineterminator='\n').writerow(corrected)
-          lines[index] = buffer.getvalue().rstrip('\n') + ending
+          lines[index] = buffer.getvalue()
           with path.open('w', encoding='utf-8', newline='') as handle:
               handle.writelines(lines)
           PY
