@@ -10,7 +10,7 @@ on:
       - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v3.py'
       - 'SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates_v4.py'
       - 'SOURCE_LIBRARY/POET_PORTRAIT_REVIEW_WORKFLOW_2026-07-30.md'
-      - 'requirements/source-audit.txt'
+      - 'requirements/source-audit.lock'
       - 'data/artifact-custody-policy-v2.json'
 
 permissions:
@@ -26,9 +26,9 @@ jobs:
         with:
           python-version: '3.12.8'
           cache: pip
-          cache-dependency-path: requirements/source-audit.txt
-      - name: Install pinned dependencies
-        run: python -m pip install --disable-pip-version-check -r requirements/source-audit.txt
+          cache-dependency-path: requirements/source-audit.lock
+      - name: Install hash-locked dependencies
+        run: python -m pip install --disable-pip-version-check --require-hashes -r requirements/source-audit.lock
       - name: Compile builders
         run: python -m py_compile SOURCE_LIBRARY/tools/build_poet_portrait_review_candidates*.py
       - name: Build identity-scoped review candidates
@@ -59,6 +59,7 @@ jobs:
         run: |
           git rev-parse HEAD > portrait-review-v2-output/RESEARCH_COMMIT.txt
           python -m pip freeze > portrait-review-v2-output/PIP_FREEZE.txt
+          sha256sum requirements/source-audit.lock > portrait-review-v2-output/DEPENDENCY_LOCK_SHA256.txt
       - name: Upload temporary review package
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
         with:
