@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "A06-RESEARCH-PUBLIC-PROJECTION-2026-08-01",
+  "generatedAt": "2026-08-01",
+  "snapshots": {
+    "research": "48fc47f7df447d87312a72be25e6b71718afde86",
+    "product": "efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3",
+    "auditRepo": "7b81f6a7e0cc246f9c8e65cd07766b371bdf9a6a"
+  },
+  "sourceOfTruth": {
+    "queue": "data/public-projection-queue-2026-08-01.json",
+    "rightsLedger": "data/physical-rights-ledger-2026-08-01.json",
+    "dashboard": "PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-01.md",
+    "validator": "scripts/validate_public_projection_queue.py"
+  },
+  "allowedDispositions": [
+    "PROMOTE",
+    "REFERENCE",
+    "SUPERSEDED",
+    "BLOCKED"
+  ],
+  "allowedHolds": [
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "ARCHIVE_HOLD",
+    "RIGHTS_HOLD",
+    "PUBLICATION_HOLD"
+  ],
+  "policy": {
+    "researchPresenceIsNotPublication": true,
+    "drivePresenceIsCustodyNotRights": true,
+    "automaticPromotionForbidden": true,
+    "productWriteRequiresPromoteRecord": true,
+    "promoteRequiresNoHolds": true,
+    "promoteRequiresVerifiedFaithfulWording": true,
+    "promoteRequiresAllPhysicalRightsEligible": true
+  },
+  "counts": {
+    "PROMOTE": 0,
+    "REFERENCE": 3,
+    "SUPERSEDED": 0,
+    "BLOCKED": 7,
+    "total": 10,
+    "withPhysicalRightsRecords": 7,
+    "alreadyPublic": 7
+  },
+  "records": [
+    {
+      "id": "heart-series-source-closure",
+      "corpus": "СЕРИЯ СЕРДЦЕ",
+      "disposition": "REFERENCE",
+      "researchStatus": "EVIDENCE_CLOSED_85_SOURCES_18_CLAIMS",
+      "sourceAuthorities": [
+        "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-01.md",
+        "СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json"
+      ],
+      "targetRepository": "FedorMilovanov/gb-is-my-strength",
+      "targetPublicRoutes": [
+        "/articles/chto-bibliya-nazyvaet-serdcem/",
+        "/articles/kak-hranit-serdce/",
+        "/articles/kak-menyaetsya-serdce/",
+        "/articles/krajne-li-isporcheno-serdce/",
+        "/articles/myslennaya-zhizn-serdca/",
+        "/articles/novoe-serdce/",
+        "/articles/osvobozhdennoe-serdce/",
+        "/articles/religioznoe-serdce/",
+        "/articles/serdce-hrista-k-nemoshchnym/",
+        "/articles/serdce-i-duh/",
+        "/articles/serdce-i-iskushenie/",
+        "/articles/serdce-i-sokrovishche/",
+        "/articles/serdce-i-telo/",
+        "/articles/serdce-i-yazyk/",
+        "/articles/serdce-ne-v-odinochku/",
+        "/articles/serdce-pod-skorbyu/",
+        "/articles/serdce-spravochnik/",
+        "/articles/skrytye-idoly-serdca/",
+        "/articles/sovest-vnutrenniy-sud/",
+        "/articles/starye-dorozhki-serdca/",
+        "/articles/tma-na-serdce/"
+      ],
+      "targetRoutePrefixes": [],
+      "targetRouteState": "EXISTING_PRODUCTION_DIST_ROUTE_SET",
+      "targetPageType": "article-series",
+      "targetClaimIds": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7a",
+        "R7b",
+        "R8",
+        "R9",
+        "18-disputed-claim-registry"
+      ],
+      "alreadyPublic": true,
+      "publicWordingFidelity": "PARTIAL_REVERIFY_REQUIRED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [],
+      "separateMediaLaneRequired": false,
+      "nextAction": "Compare the post-PR79 claim decisions against the current article text; change only bounded claim sections in a separately owned product PR.",
+      "forbiddenPromotion": "Do not treat all 85 sources or all 18 claims as quote-safe; only nine claims are quote-safe in the governing registry."
+    },
+    {
+      "id": "osk-power-dark-side-standalone",
+      "corpus": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ",
+      "disposition": "BLOCKED",
+      "researchStatus": "WAVES_1_TO_4_CLOSED_WAVE5_AND_SITE_TRANSFER_ACTIVE",
+      "sourceAuthorities": [
+        "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+        "data/osk-case-routing-registry-2026-08-01.json",
+        "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/38_WAVE4_STANDALONE_PASTORAL_CARE_LEGAL_2026-08-01.md"
+      ],
+      "targetRepository": "FedorMilovanov/gb-is-my-strength",
+      "targetPublicRoutes": [
+        "/articles/20-antisovetov-pastoru/"
+      ],
+      "targetRoutePrefixes": [],
+      "targetRouteState": "ONE_EXISTING_ROUTE_PLUS_UNASSIGNED_DARK_SIDE_AND_STANDALONE_ROUTES",
+      "targetPageType": "article-and-future-series",
+      "targetClaimIds": [
+        "33-case-routing",
+        "21-core",
+        "1-conditional",
+        "7-dark-side",
+        "3-standalone",
+        "1-hold"
+      ],
+      "alreadyPublic": true,
+      "publicWordingFidelity": "NOT_VERIFIED_AGAINST_238_SOURCE_AUTHORITY",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [],
+      "separateMediaLaneRequired": true,
+      "nextAction": "Finish Wave 5 blocked-case decision, then create a legal/editorial site-transfer ledger mapping each bounded case claim to a route and paragraph.",
+      "forbiddenPromotion": "Do not turn allegations, settlements, dismissals, denials, scientific findings or institutional actions into interchangeable findings of guilt."
+    },
+    {
+      "id": "bratsky-listok-1906-1910",
+      "corpus": "Братский листок 1906–1910",
+      "disposition": "BLOCKED",
+      "researchStatus": "RESEARCH_PACKAGE_READY_SITE_PUBLICATION_FALSE",
+      "sourceAuthorities": [
+        "RUSSIAN_BAPTISTS_ARCHIVE/BRATSKY_LISTOK_PUBLICATION_AUTHORITY_2026-08-01.md",
+        "data/bratsky-listok-publication-ledger.json"
+      ],
+      "targetRepository": "FedorMilovanov/gb-is-my-strength",
+      "targetPublicRoutes": [
+        "/baptisty-rossii/",
+        "/baptisty-rossii/podpolnaya-pechat/"
+      ],
+      "targetRoutePrefixes": [
+        "/baptisty-rossii/"
+      ],
+      "targetRouteState": "EXISTING_ROUTE_CANDIDATES_NO_APPROVED_CLAIM_MAP",
+      "targetPageType": "history-series-and-source-cards",
+      "targetClaimIds": [
+        "22-semantic-issue-positions",
+        "17-full-maps",
+        "1-truncated-fragment",
+        "4-targeted-maps"
+      ],
+      "alreadyPublic": true,
+      "publicWordingFidelity": "NOT_VERIFIED_AT_ISSUE_PAGE_LEVEL",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [
+        "DRV-BRATSKY-REGISTER"
+      ],
+      "separateMediaLaneRequired": true,
+      "nextAction": "Select one bounded thesis, pin the Research manifest digest, resolve every quotation to a page image, and disclose the eight unknown issues.",
+      "forbiddenPromotion": "Do not claim the complete run was examined or that page maps alone make wording quote-ready."
+    },
+    {
+      "id": "baptist-archive-v156",
+      "corpus": "БАПТИСТЫ РОССИИ / grouped archive",
+      "disposition": "BLOCKED",
+      "researchStatus": "ACTIVE_MICROBATCH_V156",
+      "sourceAuthorities": [
+        "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+        "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv"
+      ],
+      "targetRepository": "FedorMilovanov/gb-is-my-strength",
+      "targetPublicRoutes": [
+        "/baptisty-rossii/",
+        "/baptisty-rossii/dva-sezda-1884/",
+        "/baptisty-rossii/goneniya-i-sovest/",
+        "/baptisty-rossii/iniciativnaya-gruppa/",
+        "/baptisty-rossii/noch-na-kure/",
+        "/baptisty-rossii/peterburgskaya-liniya/",
+        "/baptisty-rossii/podpolnaya-pechat/",
+        "/baptisty-rossii/sovetskaya-noch/",
+        "/baptisty-rossii/spravochnik/",
+        "/baptisty-rossii/vsehib-1944/",
+        "/baptisty-rossii/yuzhnaya-shtunda/"
+      ],
+      "targetRoutePrefixes": [
+        "/baptisty-rossii/"
+      ],
+      "targetRouteState": "EXISTING_PRODUCTION_DIST_SERIES",
+      "targetPageType": "history-series",
+      "targetClaimIds": [
+        "NEXT_MICROBATCH-v156",
+        "Bratskii-Listok-1965-1986",
+        "Mazaev-source-chain",
+        "unity-primary-documents-1909-1917"
+      ],
+      "alreadyPublic": true,
+      "publicWordingFidelity": "MIXED_EXISTING_TEXT_NOT_CLEARED_BY_MICROBATCH",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [
+        "DRV-BAPTIST-ARCHIVE"
+      ],
+      "separateMediaLaneRequired": true,
+      "nextAction": "Acquire scans, perform OCR plus visual verification, and map verified page claims to individual existing Baptist routes.",
+      "forbiddenPromotion": "Holdings, finding aids, snippets and page-count metadata do not prove article-ready content or quotation rights."
+    },
+    {
+      "id": "genesis6-enoch-hard-texts",
+      "corpus": "Genesis 6 / Enoch extension",
+      "disposition": "REFERENCE",
+      "researchStatus": "NAMED_RESEARCH_BLOCKERS_CLOSED_PUBLICATION_HOLD",
+      "sourceAuthorities": [
+        "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+        "data/genesis6-authority-manifest.json",
+        "data/genesis6-enoch-extension-authority-manifest.json"
+      ],
+      "targetRepository": "FedorMilovanov/gb-is-my-strength",
+      "targetPublicRoutes": [
+        "/hard-texts/angely-pod-mrakom-iuda-6-7-2-petra-2/"
+      ],
+      "targetRoutePrefixes": [
+        "/hard-texts/"
+      ],
+      "targetRouteState": "EXISTING_HARD_TEXT_SERIES",
+      "targetPageType": "hard-text-article",
+      "targetClaimIds": [
+        "genesis6-authority",
+        "genesis6-enoch-extension"
+      ],
+      "alreadyPublic": true,
+      "publicWordingFidelity": "REVERIFY_REQUIRED",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [],
+      "separateMediaLaneRequired": false,
+      "nextAction": "Compare current hard-text wording and locators to the two manifests before any editorial change.",
+      "forbiddenPromotion": "Research closure does not itself approve a reader-facing wording or deployment."
+    },
+    {
+      "id": "gill-archive-families",
+      "corpus": "John Gill closed-book/archive families",
+      "disposition": "BLOCKED",
+      "researchStatus": "ACTIVE_ARCHIVE_FAMILIES_AFTER_PUBLIC_SUITE",
+      "sourceAuthorities": [
+        "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md"
+      ],
+      "targetRepository": "FedorMilovanov/gb-is-my-strength",
+      "targetPublicRoutes": [
+        "/articles/dzhon-gill-chast-1-chelovek/",
+        "/articles/dzhon-gill-chast-2-uchenyi/",
+        "/articles/dzhon-gill-chast-3-nasledie/",
+        "/articles/dzhon-gill-chast-4-ekzeget/",
+        "/articles/dzhon-gill-istoricheskiy-kontekst/",
+        "/articles/dzhon-gill-spravochnik/"
+      ],
+      "targetRoutePrefixes": [
+        "/articles/dzhon-gill-"
+      ],
+      "targetRouteState": "EXISTING_PUBLIC_SUITE_WITH_SEPARATE_ARCHIVE_BACKLOG",
+      "targetPageType": "biographical-reference-series",
+      "targetClaimIds": [
+        "Gill-navigation-volumes-70-74",
+        "closed-book-families"
+      ],
+      "alreadyPublic": true,
+      "publicWordingFidelity": "PUBLIC_SUITE_EXISTS_ARCHIVE_DELTA_UNMAPPED",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [
+        "DRV-GILL-ARCHIVE"
+      ],
+      "separateMediaLaneRequired": true,
+      "nextAction": "Identify the canonical physical package, map each closed-book family to the Gill witness registry, then open only claim-bounded follow-ups.",
+      "forbiddenPromotion": "Do not infer provenance or rights from a bibliography, title, OCR fragment or Drive search miss."
+    },
+    {
+      "id": "biblical-atlas-primary-strengthening",
+      "corpus": "БИБЛЕЙСКИЙ АТЛАС",
+      "disposition": "BLOCKED",
+      "researchStatus": "ACTIVE_PIHAHIROTH_SEA_CROSSING_AND_PRIMARY_SOURCE_STRENGTHENING",
+      "sourceAuthorities": [
+        "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+        "БИБЛЕЙСКИЙ АТЛАС/README.md"
+      ],
+      "targetRepository": "FedorMilovanov/gb-is-my-strength",
+      "targetPublicRoutes": [
+        "/karty/",
+        "/karty/avraam/",
+        "/karty/ishod/"
+      ],
+      "targetRoutePrefixes": [
+        "/karty/"
+      ],
+      "targetRouteState": "EXISTING_MAP_HUB_AND_NATIVE_ROUTES",
+      "targetPageType": "interactive-map-and-dossier",
+      "targetClaimIds": [
+        "Pihahiroth",
+        "sea-crossing",
+        "primary-source-strengthening"
+      ],
+      "alreadyPublic": true,
+      "publicWordingFidelity": "NOT_VERIFIED_FOR_ACTIVE_DOSSIERS",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [
+        "DRV-BIBLICAL-ATLAS"
+      ],
+      "separateMediaLaneRequired": true,
+      "nextAction": "Pin exact primary locators and map/base-image rights before changing map claims or assets.",
+      "forbiddenPromotion": "A map geometry or working dossier does not establish historical location certainty or image reuse rights."
+    },
+    {
+      "id": "source-library-ephemera-63",
+      "corpus": "Source Library approved ephemera 63",
+      "disposition": "BLOCKED",
+      "researchStatus": "PRIVATE_ARCHIVE_ACQUIRED_63_OF_63",
+      "sourceAuthorities": [
+        "SOURCE_LIBRARY/processed/APPROVED_EPHEMERA_63_ALLOWLIST_2026-07-30.md"
+      ],
+      "targetRepository": "FedorMilovanov/gb-is-my-strength",
+      "targetPublicRoutes": [],
+      "targetRoutePrefixes": [],
+      "targetRouteState": "NO_ASSIGNED_PRODUCT_ROUTE",
+      "targetPageType": "media-asset-lane",
+      "targetClaimIds": [
+        "63-item-allowlist"
+      ],
+      "alreadyPublic": false,
+      "publicWordingFidelity": "NOT_APPLICABLE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [
+        "DRV-EPHEMERA-63"
+      ],
+      "separateMediaLaneRequired": true,
+      "nextAction": "Create item-level provenance and credit records only when a route owner selects a specific image.",
+      "forbiddenPromotion": "Archive approval is not production approval; embedded and institutional reproductions require separate review."
+    },
+    {
+      "id": "source-library-editorial-40-pdf",
+      "corpus": "Source Library second editorial 40-PDF archive",
+      "disposition": "REFERENCE",
+      "researchStatus": "SEPARATE_RESEARCH_CORPUS",
+      "sourceAuthorities": [
+        "SOURCE_LIBRARY/SECOND_EDITORIAL_40_PDF_PASS_2026-07-30.md"
+      ],
+      "targetRepository": "FedorMilovanov/Research",
+      "targetPublicRoutes": [],
+      "targetRoutePrefixes": [],
+      "targetRouteState": "RESEARCH_REFERENCE_NO_DIRECT_PUBLIC_ROUTE",
+      "targetPageType": "research-reference-corpus",
+      "targetClaimIds": [
+        "second-editorial-40-pdf"
+      ],
+      "alreadyPublic": false,
+      "publicWordingFidelity": "NOT_APPLICABLE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "rightsLedgerIds": [
+        "DRV-EDITORIAL-40"
+      ],
+      "separateMediaLaneRequired": true,
+      "nextAction": "Use as source navigation; create a separate bounded claim or media lane before any public use.",
+      "forbiddenPromotion": "Open PDF acquisition does not automatically clear embedded illustrations or every edition for production."
+    },
+    {
+      "id": "source-library-poet-portraits-45",
+      "corpus": "Source Library approved core poet portraits 45",
+      "disposition": "BLOCKED",
+      "researchStatus": "REVIEW_ALLOWLIST_READY_ORIGINALS_ARCHIVED",
+      "sourceAuthorities": [
+        "SOURCE_LIBRARY/POET_PORTRAIT_REVIEW_WORKFLOW_2026-07-30.md",
+        "SOURCE_LIBRARY/processed/APPROVED_CORE_POET_PORTRAITS_45_ALLOWLIST_2026-07-30.md"
+      ],
+      "targetRepository": "OUTSIDE_CURRENT_PRODUCT_SCOPE",
+      "targetPublicRoutes": [],
+      "targetRoutePrefixes": [],
+      "targetRouteState": "NO_ROUTE_IN_GB_PRODUCT",
+      "targetPageType": "portrait-media-lane",
+      "targetClaimIds": [
+        "45-item-core-poet-allowlist"
+      ],
+      "alreadyPublic": false,
+      "publicWordingFidelity": "NOT_APPLICABLE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "rightsLedgerIds": [
+        "DRV-POET-PORTRAITS-45"
+      ],
+      "separateMediaLaneRequired": true,
+      "nextAction": "Route through a separately owned poet-site media lane with human identity and item-level rights verification.",
+      "forbiddenPromotion": "Automated discovery and archive allowlisting do not identify a person or authorize public use."
+    }
+  ]
+}
