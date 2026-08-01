@@ -27,6 +27,10 @@ function gitAt(repo, ...args) {
   }
 }
 
+function git(...args) {
+  return gitAt('.', ...args);
+}
+
 function idsFrom(text, pattern) {
   return [...text.matchAll(pattern)].map((match) => Number(match[1]));
 }
@@ -41,15 +45,15 @@ function assertSequence(ids, label) {
   }
 }
 
-const archiveWorkingBlob = gitAt('.', 'hash-object', archivePath); // git hash-object
-const archiveHeadBlob = gitAt('.', 'rev-parse', `HEAD:${archivePath}`);
-const matrixWorkingBlob = gitAt('.', 'hash-object', matrixPath);
-const matrixHeadBlob = gitAt('.', 'rev-parse', `HEAD:${matrixPath}`);
+const archiveWorkingBlob = git('hash-object', archivePath);
+const archiveHeadBlob = git('rev-parse', `HEAD:${archivePath}`);
+const matrixWorkingBlob = git('hash-object', matrixPath);
+const matrixHeadBlob = git('rev-parse', `HEAD:${matrixPath}`);
 if (archiveWorkingBlob !== expectedArchiveBlob) failures.push(`archive working blob drift: ${archiveWorkingBlob} != ${expectedArchiveBlob}`);
 if (archiveHeadBlob !== expectedArchiveBlob) failures.push(`archive HEAD blob drift: ${archiveHeadBlob} != ${expectedArchiveBlob}`);
 if (matrixWorkingBlob !== expectedMatrixBlob) failures.push(`matrix working blob drift: ${matrixWorkingBlob} != ${expectedMatrixBlob}`);
 if (matrixHeadBlob !== expectedMatrixBlob) failures.push(`matrix HEAD blob drift: ${matrixHeadBlob} != ${expectedMatrixBlob}`);
-if (gitAt('.', 'status', '--porcelain', '--', archivePath, matrixPath, navPath, crosswalkPath)) failures.push('Gill reconciliation inputs are dirty');
+if (git('status', '--porcelain', '--', archivePath, matrixPath, navPath, crosswalkPath)) failures.push('Gill reconciliation inputs are dirty');
 
 assertSequence(idsFrom(archive, /^## GILL-CONTENT-(\d{3})\s+—/gm), 'archive');
 assertSequence(idsFrom(matrix, /^\| GILL-CONTENT-(\d{3}) \|/gm), 'matrix');
