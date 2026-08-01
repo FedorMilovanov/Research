@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Total cross-repository source/archive audit for The Legendary Poet projects.
+"""Deterministic cross-repository source/archive audit.
 
-Clones the four public repositories, inventories all files, extracts and checks URLs,
-finds missing local references, duplicate binaries, source-related documentation,
-and assets that appear to lack nearby provenance/rights metadata.
+The program scans fresh shallow clones of the four public project repositories,
+creates machine-readable queues, and never modifies tracked source files. URL
+parsing is fail-closed: malformed text is classified, not allowed to crash or be
+silently rewritten by a workflow step.
 """
 from __future__ import annotations
 
@@ -19,22 +20,14 @@ import sys
 import time
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass
 from pathlib import Path
-from urllib.parse import urlparse, unquote
+from urllib.parse import unquote, urlparse
 
-try:
-    import requests
-except ImportError:
-    requests = None
+import requests
 
-REPOS = [
-    "TheLegendaryPoet",
-    "gb-is-my-strength",
-    "Research",
-    "AuditRepo",
-]
 OWNER = "FedorMilovanov"
-
+REPOS = ("TheLegendaryPoet", "gb-is-my-strength", "Research", "AuditRepo")
 TEXT_EXTS = {
     ".md", ".mdx", ".txt", ".html", ".htm", ".xml", ".json", ".jsonl",
     ".yaml", ".yml", ".toml", ".ini", ".cfg", ".csv", ".tsv", ".js",
@@ -43,17 +36,26 @@ TEXT_EXTS = {
 }
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".tif", ".tiff", ".bmp", ".avif", ".svg"}
 DOC_EXTS = {".pdf", ".doc", ".docx", ".odt", ".epub", ".djvu", ".mobi"}
-BINARY_ARCHIVE_EXTS = {".zip", ".7z", ".rar", ".tar", ".gz", ".bz2", ".xz"}
+ARCHIVE_EXTS = {".zip", ".7z", ".rar", ".tar", ".gz", ".bz2", ".xz"}
 SKIP_DIRS = {".git", "node_modules", ".next", ".astro", ".cache", ".venv", "venv", "dist", "build", "coverage"}
-SOURCE_WORDS = re.compile(
-    r"source|sources|reference|references|bibliograph|provenance|rights|license|licence|"
-    r"research|archive|manuscript|audit|источник|литератур|библиограф|прав[ао]|лиценз|архив|рукопис",
-    re.I,
-)
 URL_RE = re.compile(r"https?://[^\s<>'\"`\])}]+", re.I)
 ATTR_RE = re.compile(r"(?:href|src)\s*=\s*[\"']([^\"']+)[\"']", re.I)
 MD_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+SOURCE_WORDS = re.compile(
+    r"source|reference|bibliograph|provenance|rights|license|licence|research|archive|"
+    r"manuscript|audit|источник|литератур|библиограф|прав[ао]|лиценз|архив|рукопис",
+    re.I,
+)
 SOURCE_MARKER_RE = re.compile(r"источник|sources?|bibliograph|references?|примечан|сноск|литератур", re.I)
+EDITORIAL_RE = re.compile(r"(^|/)(articles?|biografii|hard-texts|content|poets?|research|baptisty-rossii)(/|$)", re.I)
+USER_AGENT = "TheLegendaryPoet-SourceAudit/2.0 (+https://github.com/FedorMilovanov/Research)"
+
+
+@dataclass(frozen=True)
+class Thresholds:
+    max_new_dead: int
+    max_new_missing_local: int
+    max_new_publication_provenance: int
 
 
 def run(cmd: list[str], cwd: Path | None = None) -> None:
@@ -62,134 +64,153 @@ def run(cmd: list[str], cwd: Path | None = None) -> None:
 
 
 def sha256_file(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1024 * 1024), b""):
-            h.update(chunk)
-    return h.hexdigest()
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def safe_read(path: Path, max_bytes: int = 4_000_000) -> str | None:
     try:
         if path.stat().st_size > max_bytes:
             return None
-        return path.read_text("utf-8", errors="replace")
-    except Exception:
+        return path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
         return None
 
 
+def write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def normalize_url(raw: str) -> str:
-    return html.unescape(raw).rstrip(".,;:!?\")'\u00bb\u201d")
+    return html.unescape(raw).rstrip(".,;:!?\")'»”")
+
+
+def parse_domain(url: str) -> tuple[str, str]:
+    try:
+        parsed = urlparse(url)
+    except ValueError as exc:
+        return "[invalid-url-text]", f"ValueError: {exc}"
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return "[invalid-url-text]", "missing scheme or host"
+    return parsed.netloc.lower().removeprefix("www."), ""
 
 
 def should_skip(path: Path, root: Path) -> bool:
-    rel = path.relative_to(root)
-    return any(part in SKIP_DIRS for part in rel.parts)
+    return any(part in SKIP_DIRS for part in path.relative_to(root).parts)
 
 
 def local_target_exists(source: Path, target: str, repo_root: Path) -> tuple[bool, str]:
     target = html.unescape(target.strip())
     if not target or target.startswith(("http://", "https://", "mailto:", "tel:", "data:", "javascript:", "#", "//")):
         return True, "external-or-anchor"
-    target = target.split("#", 1)[0].split("?", 1)[0]
+    target = unquote(target.split("#", 1)[0].split("?", 1)[0])
     if not target:
         return True, "anchor"
-    target = unquote(target)
-    if target.startswith("/"):
-        candidate = repo_root / target.lstrip("/")
-    else:
-        candidate = source.parent / target
-    try:
-        candidate = candidate.resolve()
-        repo_resolved = repo_root.resolve()
-        if repo_resolved not in candidate.parents and candidate != repo_resolved:
-            return True, "outside-repo"
-    except Exception:
-        pass
-    if candidate.exists():
-        return True, str(candidate.relative_to(repo_root))
-    # Common static-site resolution fallbacks.
+    candidate = repo_root / target.lstrip("/") if target.startswith("/") else source.parent / target
+    candidate = candidate.resolve()
+    root_resolved = repo_root.resolve()
+    if candidate != root_resolved and root_resolved not in candidate.parents:
+        return True, "outside-repo"
     fallbacks = [
+        candidate,
         candidate.with_suffix(".html") if not candidate.suffix else candidate,
         candidate / "index.html",
         repo_root / "public" / target.lstrip("/"),
         repo_root / "src" / target.lstrip("/"),
     ]
-    for fb in fallbacks:
-        if fb.exists():
-            try:
-                return True, str(fb.relative_to(repo_root))
-            except Exception:
-                return True, str(fb)
-    try:
-        return False, str(candidate.relative_to(repo_root))
-    except Exception:
-        return False, str(candidate)
+    for item in fallbacks:
+        if item.exists():
+            return True, item.relative_to(repo_root).as_posix()
+    return False, candidate.relative_to(repo_root).as_posix()
 
 
 def provenance_nearby(path: Path, repo_root: Path) -> bool:
-    stem = path.stem.lower()
-    nearby_names = {
+    names = {
         "readme.md", "sources.md", "source.md", "rights.md", "license", "license.md",
         "provenance.md", "metadata.json", "manifest.json", "credits.md", "attribution.md",
         "источники.md", "права.md",
     }
-    for parent in [path.parent, *list(path.parents)[:3]]:
+    for parent in (path.parent, *list(path.parents)[:3]):
         if parent == repo_root.parent:
             break
         try:
             for child in parent.iterdir():
-                if child.is_file():
-                    low = child.name.lower()
-                    if low in nearby_names or SOURCE_WORDS.search(low):
-                        return True
-                    if child.stem.lower() == stem and child.suffix.lower() in {".md", ".txt", ".json", ".yaml", ".yml", ".csv"}:
-                        return True
-        except Exception:
+                if not child.is_file():
+                    continue
+                low = child.name.lower()
+                if low in names or SOURCE_WORDS.search(low):
+                    return True
+                if child.stem.lower() == path.stem.lower() and child.suffix.lower() in {".md", ".txt", ".json", ".yaml", ".yml", ".csv"}:
+                    return True
+        except OSError:
             continue
         if parent == repo_root:
             break
     return False
 
 
-def audit_url(url: str) -> dict[str, str | int | float]:
-    if requests is None:
-        return {"url": url, "status": "NO_REQUESTS", "code": 0, "final_url": "", "content_type": "", "seconds": 0.0, "error": "requests unavailable"}
-    headers = {"User-Agent": "TheLegendaryPoet-SourceAudit/2026-07-30 (+https://github.com/FedorMilovanov/Research)"}
+def audit_url(session: requests.Session, url: str) -> dict[str, str | int | float]:
+    domain, parse_error = parse_domain(url)
+    if parse_error:
+        return {
+            "url": url, "status": "MALFORMED", "code": 0, "final_url": "",
+            "content_type": "", "seconds": 0.0, "error": parse_error,
+        }
     started = time.monotonic()
     try:
-        r = requests.get(url, headers=headers, timeout=(6, 14), allow_redirects=True, stream=True)
-        elapsed = round(time.monotonic() - started, 3)
-        code = int(r.status_code)
-        ctype = r.headers.get("content-type", "")[:160]
-        final = r.url
-        r.close()
+        response = session.get(url, timeout=(6, 14), allow_redirects=True, stream=True)
+        code = int(response.status_code)
+        final_url = response.url
+        content_type = response.headers.get("content-type", "")[:160]
+        response.close()
         if 200 <= code < 400:
             status = "OK"
-        elif code in {401, 403, 429}:
+        elif code in {401, 403, 429, 451}:
             status = "RESTRICTED"
-        elif code == 404:
+        elif code in {404, 410}:
             status = "DEAD"
         elif 500 <= code < 600:
             status = "SERVER_ERROR"
         else:
             status = "HTTP_ERROR"
-        return {"url": url, "status": status, "code": code, "final_url": final, "content_type": ctype, "seconds": elapsed, "error": ""}
-    except Exception as exc:
-        return {"url": url, "status": "REQUEST_ERROR", "code": 0, "final_url": "", "content_type": "", "seconds": round(time.monotonic() - started, 3), "error": str(exc)[:300]}
+        return {
+            "url": url, "status": status, "code": code, "final_url": final_url,
+            "content_type": content_type, "seconds": round(time.monotonic() - started, 3), "error": "",
+        }
+    except requests.RequestException as exc:
+        return {
+            "url": url, "status": "REQUEST_ERROR", "code": 0, "final_url": "",
+            "content_type": "", "seconds": round(time.monotonic() - started, 3),
+            "error": f"{type(exc).__name__}: {exc}"[:300],
+        }
 
 
-def write_csv(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(rows)
+def load_baseline(path: Path) -> dict:
+    if not path.is_file():
+        return {}
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return value if isinstance(value, dict) else {}
 
 
 def main() -> int:
     work = Path(os.environ.get("AUDIT_WORK", "_total_audit_work")).resolve()
     out = Path(os.environ.get("AUDIT_OUT", "total-audit-output")).resolve()
+    baseline_path = Path(os.environ.get("AUDIT_BASELINE", "SOURCE_LIBRARY/audit-baseline.json"))
+    thresholds = Thresholds(
+        max_new_dead=int(os.environ.get("MAX_NEW_DEAD", "0")),
+        max_new_missing_local=int(os.environ.get("MAX_NEW_MISSING_LOCAL", "0")),
+        max_new_publication_provenance=int(os.environ.get("MAX_NEW_PUBLICATION_PROVENANCE", "0")),
+    )
     shutil.rmtree(work, ignore_errors=True)
     shutil.rmtree(out, ignore_errors=True)
     work.mkdir(parents=True)
@@ -200,65 +221,49 @@ def main() -> int:
 
     inventory: list[dict] = []
     url_occurrences: list[dict] = []
+    malformed_urls: list[dict] = []
     missing_local: list[dict] = []
     assets_without_provenance: list[dict] = []
     source_related: list[dict] = []
     content_without_sources: list[dict] = []
     hashes: dict[str, list[dict]] = defaultdict(list)
     repo_stats: dict[str, dict] = {}
-    domain_counter = Counter()
+    domain_counter: Counter[str] = Counter()
 
     for repo in REPOS:
         root = work / repo
-        ext_counts = Counter()
-        type_counts = Counter()
-        dir_sizes = Counter()
-        file_count = 0
-        total_size = 0
-        text_count = 0
-        url_count = 0
+        stats = Counter()
         for path in root.rglob("*"):
             if not path.is_file() or should_skip(path, root):
                 continue
             rel = path.relative_to(root).as_posix()
             size = path.stat().st_size
             suffix = path.suffix.lower()
-            file_count += 1
-            total_size += size
-            ext_counts[suffix or "[no-ext]"] += 1
-            topdir = rel.split("/", 1)[0]
-            dir_sizes[topdir] += size
             if suffix in IMAGE_EXTS:
                 kind = "image"
             elif suffix in DOC_EXTS:
                 kind = "document"
-            elif suffix in BINARY_ARCHIVE_EXTS:
+            elif suffix in ARCHIVE_EXTS:
                 kind = "archive"
             elif suffix in TEXT_EXTS or path.name.lower() in {"license", "readme", "cname"}:
                 kind = "text"
             else:
                 kind = "other"
-            type_counts[kind] += 1
             digest = ""
             if size <= 250_000_000:
                 try:
                     digest = sha256_file(path)
-                    if size >= 512:
-                        hashes[digest].append({"repo": repo, "path": rel, "size": size})
-                except Exception:
+                except OSError:
                     digest = ""
-            inventory.append({
-                "repo": repo,
-                "path": rel,
-                "size_bytes": size,
-                "extension": suffix,
-                "kind": kind,
-                "sha256": digest,
-            })
+            if digest and size >= 512:
+                hashes[digest].append({"repo": repo, "path": rel, "size": size})
+            inventory.append({"repo": repo, "path": rel, "size_bytes": size, "extension": suffix, "kind": kind, "sha256": digest})
+            stats["files"] += 1
+            stats["size_bytes"] += size
+            stats[f"kind:{kind}"] += 1
 
             if SOURCE_WORDS.search(rel):
                 source_related.append({"repo": repo, "path": rel, "size_bytes": size, "reason": "path-keyword"})
-
             if kind in {"image", "document", "archive"} and not provenance_nearby(path, root):
                 assets_without_provenance.append({
                     "repo": repo, "path": rel, "size_bytes": size, "kind": kind,
@@ -268,49 +273,33 @@ def main() -> int:
             text = safe_read(path) if kind == "text" else None
             if text is None:
                 continue
-            text_count += 1
-            urls_here = []
+            stats["text_files"] += 1
+            urls_here: list[str] = []
             for raw in URL_RE.findall(text):
                 url = normalize_url(raw)
-                if not url.startswith(("http://", "https://")):
+                domain, parse_error = parse_domain(url)
+                if parse_error:
+                    malformed_urls.append({"repo": repo, "path": rel, "url": url, "error": parse_error})
                     continue
                 urls_here.append(url)
-                parsed = urlparse(url)
-                domain = parsed.netloc.lower().removeprefix("www.")
                 domain_counter[domain] += 1
                 url_occurrences.append({"repo": repo, "path": rel, "url": url, "domain": domain})
-            url_count += len(urls_here)
+            stats["url_occurrences"] += len(urls_here)
 
-            links = [m.group(1).strip().split()[0] for m in MD_LINK_RE.finditer(text)]
-            links += [m.group(1).strip() for m in ATTR_RE.finditer(text)]
-            seen_local = set()
-            for target in links:
-                key = target
-                if key in seen_local:
-                    continue
-                seen_local.add(key)
+            links = [match.group(1).strip().split()[0] for match in MD_LINK_RE.finditer(text)]
+            links += [match.group(1).strip() for match in ATTR_RE.finditer(text)]
+            for target in dict.fromkeys(links):
                 exists, resolved = local_target_exists(path, target, root)
                 if not exists:
                     missing_local.append({"repo": repo, "source_path": rel, "target": target, "resolved_candidate": resolved})
 
-            # Editorial content with no obvious source apparatus.
-            editorial_path = bool(re.search(r"(^|/)(articles?|biografii|hard-texts|content|poets?|research|baptisty-rossii)(/|$)", rel, re.I))
-            if editorial_path and suffix in {".md", ".mdx", ".html", ".astro"}:
+            if EDITORIAL_RE.search(rel) and suffix in {".md", ".mdx", ".html", ".astro"}:
                 if not urls_here and not SOURCE_MARKER_RE.search(text):
                     content_without_sources.append({
                         "repo": repo, "path": rel, "size_bytes": size,
                         "reason": "editorial content has no URL and no source/bibliography marker",
                     })
-
-        repo_stats[repo] = {
-            "files": file_count,
-            "size_bytes": total_size,
-            "text_files": text_count,
-            "urls_occurrences": url_count,
-            "extension_counts": dict(ext_counts.most_common()),
-            "type_counts": dict(type_counts),
-            "top_level_sizes": dict(dir_sizes.most_common()),
-        }
+        repo_stats[repo] = dict(stats)
 
     duplicate_rows: list[dict] = []
     duplicate_groups = 0
@@ -324,23 +313,28 @@ def main() -> int:
             duplicate_rows.append({"sha256": digest, "group_size": len(items), "item_index": index, **item})
 
     unique_urls = sorted({row["url"] for row in url_occurrences})
-    # Audit every URL up to a generous bound; preserve the remainder as NOT_TESTED.
     audit_cap = int(os.environ.get("URL_AUDIT_CAP", "1200"))
     urls_to_test = unique_urls[:audit_cap]
+    session = requests.Session()
+    session.headers.update({"User-Agent": USER_AGENT, "Accept": "text/html,application/json,application/pdf,*/*;q=0.8"})
     url_results: list[dict] = []
     workers = int(os.environ.get("URL_AUDIT_WORKERS", "24"))
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(audit_url, url): url for url in urls_to_test}
-        for i, future in enumerate(as_completed(futures), 1):
+        futures = {pool.submit(audit_url, session, url): url for url in urls_to_test}
+        for index, future in enumerate(as_completed(futures), 1):
             url_results.append(future.result())
-            if i % 50 == 0:
-                print(f"audited {i}/{len(urls_to_test)} URLs", flush=True)
+            if index % 50 == 0:
+                print(f"audited {index}/{len(urls_to_test)} URLs", flush=True)
     for url in unique_urls[audit_cap:]:
-        url_results.append({"url": url, "status": "NOT_TESTED_CAP", "code": 0, "final_url": "", "content_type": "", "seconds": 0.0, "error": "beyond audit cap"})
-    url_results.sort(key=lambda r: r["url"])
+        url_results.append({
+            "url": url, "status": "NOT_TESTED_CAP", "code": 0, "final_url": "",
+            "content_type": "", "seconds": 0.0, "error": "beyond audit cap",
+        })
+    url_results.sort(key=lambda row: str(row["url"]))
 
     write_csv(out / "inventory.csv", ["repo", "path", "size_bytes", "extension", "kind", "sha256"], inventory)
     write_csv(out / "url_occurrences.csv", ["repo", "path", "url", "domain"], url_occurrences)
+    write_csv(out / "malformed_url_occurrences.csv", ["repo", "path", "url", "error"], malformed_urls)
     write_csv(out / "url_audit.csv", ["url", "status", "code", "final_url", "content_type", "seconds", "error"], url_results)
     write_csv(out / "missing_local_links.csv", ["repo", "source_path", "target", "resolved_candidate"], missing_local)
     write_csv(out / "duplicate_files.csv", ["sha256", "group_size", "item_index", "repo", "path", "size"], duplicate_rows)
@@ -350,85 +344,67 @@ def main() -> int:
     (out / "all_unique_urls.txt").write_text("\n".join(unique_urls) + "\n", encoding="utf-8")
     (out / "repo_stats.json").write_text(json.dumps(repo_stats, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    status_counts = Counter(str(r["status"]) for r in url_results)
-    source_by_repo = Counter(r["repo"] for r in source_related)
-    assets_by_repo = Counter(r["repo"] for r in assets_without_provenance)
-    content_gap_by_repo = Counter(r["repo"] for r in content_without_sources)
-    missing_by_repo = Counter(r["repo"] for r in missing_local)
+    status_counts = Counter(str(row["status"]) for row in url_results)
+    publication_provenance = [
+        row for row in assets_without_provenance
+        if row["repo"] in {"TheLegendaryPoet", "gb-is-my-strength"} and str(row["path"]).startswith("public/")
+    ]
+    summary = {
+        "repositories": len(REPOS),
+        "files": len(inventory),
+        "unique_urls": len(unique_urls),
+        "url_status": dict(status_counts),
+        "malformed_urls": len(malformed_urls),
+        "missing_local": len(missing_local),
+        "duplicate_groups": duplicate_groups,
+        "duplicate_bytes": duplicate_bytes,
+        "assets_without_provenance": len(assets_without_provenance),
+        "publication_assets_without_provenance": len(publication_provenance),
+        "editorial_content_without_sources": len(content_without_sources),
+    }
+    (out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
     lines = [
         "# Total cross-repository source/archive audit",
         "",
-        "Generated by GitHub Actions from fresh shallow clones of all four `main` branches.",
+        "Generated from committed audit code and fresh shallow clones. The validator did not rewrite its own source.",
         "",
         "## Executive summary",
         "",
-        f"- repositories scanned: **{len(REPOS)}**",
-        f"- files inventoried: **{len(inventory):,}**",
-        f"- unique external URLs found: **{len(unique_urls):,}**",
-        f"- URL occurrences: **{len(url_occurrences):,}**",
-        f"- URLs live-audited: **{len(urls_to_test):,}** (cap {audit_cap:,})",
-        f"- missing local link/reference candidates: **{len(missing_local):,}**",
-        f"- duplicate SHA-256 groups: **{duplicate_groups:,}**",
-        f"- estimated duplicate bytes beyond first copy: **{duplicate_bytes:,}**",
-        f"- source/research/rights-related files: **{len(source_related):,}**",
-        f"- binary assets lacking nearby provenance metadata by heuristic: **{len(assets_without_provenance):,}**",
-        f"- editorial content files with no URL/source marker by heuristic: **{len(content_without_sources):,}**",
+        *(f"- {key}: **{value}**" for key, value in summary.items() if key != "url_status"),
+        f"- URL status: `{summary['url_status']}`",
         "",
-        "## Repository inventory",
+        "## Required review queues",
         "",
-        "| Repository | Files | Bytes | Text | URL occurrences | Source-related | Missing local refs | Assets w/o nearby provenance | Editorial source gaps |",
-        "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
-    ]
-    for repo in REPOS:
-        st = repo_stats[repo]
-        lines.append(
-            f"| `{repo}` | {st['files']:,} | {st['size_bytes']:,} | {st['text_files']:,} | {st['urls_occurrences']:,} | "
-            f"{source_by_repo[repo]:,} | {missing_by_repo[repo]:,} | {assets_by_repo[repo]:,} | {content_gap_by_repo[repo]:,} |"
-        )
-    lines += ["", "## URL status", "", "| Status | Count |", "|---|---:|"]
-    for status, count in status_counts.most_common():
-        lines.append(f"| `{status}` | {count:,} |")
-    lines += ["", "## Most referenced domains", "", "| Domain | Occurrences |", "|---|---:|"]
-    for domain, count in domain_counter.most_common(40):
-        lines.append(f"| `{domain}` | {count:,} |")
-    lines += [
-        "",
-        "## Required human review queues",
-        "",
-        "1. `assets_without_provenance.csv`: decide whether each binary is public-domain/open-license, private study only, or must be removed/replaced.",
-        "2. `editorial_content_without_sources.csv`: add bibliography/source apparatus where the heuristic is correct.",
-        "3. `missing_local_links.csv`: distinguish actual broken links from runtime-generated routes.",
-        "4. `url_audit.csv`: repair `DEAD`, review `RESTRICTED`, and retry temporary `REQUEST_ERROR`/`SERVER_ERROR` entries.",
-        "5. `duplicate_files.csv`: remove redundant binaries only after confirming paths are not deliberate deployment copies.",
-        "",
-        "## Storage and publication policy",
-        "",
-        "- GitHub: code, manifests, URL indexes, rights/provenance ledgers, citations, checksums.",
-        "- Library/Drive: large legal-to-store PDFs and original-resolution images.",
-        "- Link-only: restricted viewers, archives with unclear redistribution rights, licensed manuscript photography.",
-        "- Never infer that an open-access web page grants republication rights for embedded images.",
-        "",
-        "## Machine-readable outputs",
-        "",
-        "- `inventory.csv`",
-        "- `repo_stats.json`",
-        "- `url_occurrences.csv`",
-        "- `url_audit.csv`",
-        "- `all_unique_urls.txt`",
-        "- `missing_local_links.csv`",
-        "- `duplicate_files.csv`",
-        "- `assets_without_provenance.csv`",
-        "- `source_related_files.csv`",
-        "- `editorial_content_without_sources.csv`",
+        "1. `url_audit.csv`: confirm DEAD and persistent server/network failures.",
+        "2. `missing_local_links.csv`: distinguish broken paths from generated routes.",
+        "3. `assets_without_provenance.csv`: resolve custody, license and publication rights.",
+        "4. `editorial_content_without_sources.csv`: add source apparatus where the heuristic is correct.",
+        "5. `malformed_url_occurrences.csv`: repair source text rather than patching the auditor at runtime.",
     ]
     (out / "TOTAL_CROSS_REPO_SOURCE_AUDIT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print("AUDIT_COMPLETE", json.dumps({
-        "files": len(inventory), "unique_urls": len(unique_urls), "url_status": dict(status_counts),
-        "missing_local": len(missing_local), "duplicate_groups": duplicate_groups,
-        "assets_without_provenance": len(assets_without_provenance),
-        "editorial_content_without_sources": len(content_without_sources),
-    }, ensure_ascii=False), flush=True)
+
+    baseline = load_baseline(baseline_path)
+    baseline_dead = int(baseline.get("dead_urls", 0))
+    baseline_missing = int(baseline.get("missing_local_links", 0))
+    baseline_provenance = int(baseline.get("publication_assets_without_provenance", 0))
+    failures: list[str] = []
+    current_dead = int(status_counts.get("DEAD", 0))
+    if current_dead - baseline_dead > thresholds.max_new_dead:
+        failures.append(f"new DEAD URLs: {current_dead - baseline_dead} > {thresholds.max_new_dead}")
+    if len(missing_local) - baseline_missing > thresholds.max_new_missing_local:
+        failures.append(f"new missing local links: {len(missing_local) - baseline_missing} > {thresholds.max_new_missing_local}")
+    if len(publication_provenance) - baseline_provenance > thresholds.max_new_publication_provenance:
+        failures.append(
+            "new publication assets without provenance: "
+            f"{len(publication_provenance) - baseline_provenance} > {thresholds.max_new_publication_provenance}"
+        )
+
+    print("AUDIT_COMPLETE", json.dumps(summary, ensure_ascii=False), flush=True)
+    if failures:
+        for failure in failures:
+            print(f"GATE_FAILURE: {failure}", file=sys.stderr)
+        return 2
     return 0
 
 
