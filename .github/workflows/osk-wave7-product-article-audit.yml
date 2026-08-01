@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'data/repository-evidence-policy-v2.json'
       - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md'
       - 'data/osk-wave7-product-article-audit-2026-08-01.json'
       - 'data/osk-wave7-article-audit-source-registry-2026-08-01.json'
@@ -13,21 +14,47 @@ on:
     branches: [main]
     paths:
       - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
+      - 'data/repository-evidence-policy-v2.json'
       - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/41_WAVE7_PRODUCT_ARTICLE_PARAGRAPH_AUDIT_2026-08-01.md'
       - 'data/osk-wave7-product-article-audit-2026-08-01.json'
       - 'data/osk-wave7-article-audit-source-registry-2026-08-01.json'
       - 'scripts/validate_osk_wave7_product_article_audit.py'
       - '.github/workflows/osk-wave7-product-article-audit.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          path: Research
+
+      - name: Checkout exact Product snapshot
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: FedorMilovanov/gb-is-my-strength
+          ref: efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3
+          path: Product
+          persist-credentials: false
+
       - name: Compile validator
-        run: python -m py_compile scripts/validate_osk_wave7_product_article_audit.py
-      - name: Validate Wave 7 audit
-        run: python scripts/validate_osk_wave7_product_article_audit.py
+        working-directory: Research
+        run: python3 -m py_compile scripts/validate_osk_wave7_product_article_audit.py
+
+      - name: Validate Wave 7 against exact Product bytes
+        working-directory: Research
+        env:
+          PRODUCT_REPO: ../Product
+        run: python3 scripts/validate_osk_wave7_product_article_audit.py
+
+      - name: Ensure both checkouts are read-only
+        run: |
+          git -C Research diff --exit-code
+          git -C Product diff --exit-code
+          test -z "$(git -C Research status --porcelain)"
+          test -z "$(git -C Product status --porcelain)"
