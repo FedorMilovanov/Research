@@ -3,6 +3,7 @@ name: Bratsky Listok authority manifest
 on:
   pull_request:
     paths:
+      - "data/repository-evidence-policy-v2.json"
       - "data/bratsky-listok-authority-manifest.json"
       - "data/bratsky-listok-publication-ledger.json"
       - "scripts/validate_bratsky_listok_authority_manifest.py"
@@ -19,6 +20,7 @@ on:
   push:
     branches: [main]
     paths:
+      - "data/repository-evidence-policy-v2.json"
       - "data/bratsky-listok-authority-manifest.json"
       - "data/bratsky-listok-publication-ledger.json"
       - "scripts/validate_bratsky_listok_authority_manifest.py"
@@ -38,13 +40,15 @@ permissions:
 
 jobs:
   authority-contract:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout complete history for commit:path verification
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          python-version: "3.12"
+          fetch-depth: 0
       - name: Compile validator
-        run: python -m py_compile scripts/validate_bratsky_listok_authority_manifest.py
-      - name: Validate authority and publication boundary
-        run: python scripts/validate_bratsky_listok_authority_manifest.py
+        run: python3 -m py_compile scripts/validate_bratsky_listok_authority_manifest.py
+      - name: Validate authority, historical blobs and publication boundary
+        run: python3 scripts/validate_bratsky_listok_authority_manifest.py
+      - name: Ensure validator is read-only
+        run: git diff --exit-code
