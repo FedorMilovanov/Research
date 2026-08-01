@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "authorityId": "CORE-POET-PORTRAITS-ALLOWLIST-2026-08-02",
+  "status": "APPROVED_FOR_REFERENCE_ARCHIVE_NOT_AUTOMATIC_PUBLICATION",
+  "policy": {
+    "exactlyFivePerPoet": true,
+    "identityRequiresMetadataAndHumanReview": true,
+    "rightsRecheckedAtDownload": true,
+    "archiveApprovalIsNotPublicationApproval": true,
+    "itemLevelCreditRequired": true
+  },
+  "records": [
+    {"poetKey":"01_esenin","poetName":"Сергей Есенин","commonsTitle":"File:Esenin1914.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"01_esenin","poetName":"Сергей Есенин","commonsTitle":"File:Esenin1925.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"01_esenin","poetName":"Сергей Есенин","commonsTitle":"File:1916. Сергей Есенин и Сергей Городецкий.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"01_esenin","poetName":"Сергей Есенин","commonsTitle":"File:Chagin and Esenin 1924.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"01_esenin","poetName":"Сергей Есенин","commonsTitle":"File:Eseninnikolaiklyeuv.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+
+    {"poetKey":"02_bunin","poetName":"Иван Бунин","commonsTitle":"File:Ivan Bunin (sepia).jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"02_bunin","poetName":"Иван Бунин","commonsTitle":"File:Ivan Bunin 1891.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"02_bunin","poetName":"Иван Бунин","commonsTitle":"File:Ivan Bunin 1933.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"02_bunin","poetName":"Иван Бунин","commonsTitle":"File:Ivan Bunin-1901.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"02_bunin","poetName":"Иван Бунин","commonsTitle":"File:Иван Бунин (1928).jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+
+    {"poetKey":"03_severyanin","poetName":"Игорь Северянин","commonsTitle":"File:Igor Severyanin 1915.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"03_severyanin","poetName":"Игорь Северянин","commonsTitle":"File:Igor Severyanin by Leonidov.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"03_severyanin","poetName":"Игорь Северянин","commonsTitle":"File:Igor Severyanin by Lev Leonidov.JPG","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"03_severyanin","poetName":"Игорь Северянин","commonsTitle":"File:Igor Severyanin.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"03_severyanin","poetName":"Игорь Северянин","commonsTitle":"File:Igor Severyanin by Viktor Deni.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+
+    {"poetKey":"04_balmont","poetName":"Константин Бальмонт","commonsTitle":"File:Balm1892.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"04_balmont","poetName":"Константин Бальмонт","commonsTitle":"File:Balmont 1880s.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"04_balmont","poetName":"Константин Бальмонт","commonsTitle":"File:Balmont by Voloshin.JPG","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"04_balmont","poetName":"Константин Бальмонт","commonsTitle":"File:Balmont KD.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"04_balmont","poetName":"Константин Бальмонт","commonsTitle":"File:Konstantin Balmont 1928.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+
+    {"poetKey":"05_tyutchev","poetName":"Фёдор Тютчев","commonsTitle":"File:1864. Тютчев.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"05_tyutchev","poetName":"Фёдор Тютчев","commonsTitle":"File:1865. Тютчев в Париже.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"05_tyutchev","poetName":"Фёдор Тютчев","commonsTitle":"File:1867. Тютчев.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"05_tyutchev","poetName":"Фёдор Тютчев","commonsTitle":"File:Fyodor Tyutchev.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"05_tyutchev","poetName":"Фёдор Тютчев","commonsTitle":"File:Tiutchev.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+
+    {"poetKey":"06_maykov","poetName":"Аполлон Майков","commonsTitle":"File:Apollon Maykov.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"06_maykov","poetName":"Аполлон Майков","commonsTitle":"File:Perov-Maikov.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"06_maykov","poetName":"Аполлон Майков","commonsTitle":"File:Apollon Maikov.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"06_maykov","poetName":"Аполлон Майков","commonsTitle":"File:Maikov AN.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"06_maykov","poetName":"Аполлон Майков","commonsTitle":"File:Портрет А.Н.Майкова.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+
+    {"poetKey":"07_bryusov","poetName":"Валерий Брюсов","commonsTitle":"File:Brusov1920-2.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"07_bryusov","poetName":"Валерий Брюсов","commonsTitle":"File:Brusov.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"07_bryusov","poetName":"Валерий Брюсов","commonsTitle":"File:Brusov1890.PNG","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"07_bryusov","poetName":"Валерий Брюсов","commonsTitle":"File:Brjussow, Waleri (Moskauer Almanach, 1914).jpeg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"07_bryusov","poetName":"Валерий Брюсов","commonsTitle":"File:1903. Портрет В.Я. Брюсова.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+
+    {"poetKey":"08_blok","poetName":"Александр Блок","commonsTitle":"File:A. A. Blok.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"08_blok","poetName":"Александр Блок","commonsTitle":"File:Alexander Blok by Ivan Parkhomenko 1910.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"08_blok","poetName":"Александр Блок","commonsTitle":"File:Alexander Blok.jpeg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"08_blok","poetName":"Александр Блок","commonsTitle":"File:Blok AA.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"08_blok","poetName":"Александр Блок","commonsTitle":"File:Александр Блок. 1898 год.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+
+    {"poetKey":"09_fet","poetName":"Афанасий Фет","commonsTitle":"File:Afanasy Fet 7.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"09_fet","poetName":"Афанасий Фет","commonsTitle":"File:Afanasy Fet.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"09_fet","poetName":"Афанасий Фет","commonsTitle":"File:Fet A A.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons person category","human contact-sheet review"]},
+    {"poetKey":"09_fet","poetName":"Афанасий Фет","commonsTitle":"File:Fet as officer (ca. 1850) 2.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]},
+    {"poetKey":"09_fet","poetName":"Афанасий Фет","commonsTitle":"File:Fet by Repin.jpg","reviewDecision":"APPROVED_REFERENCE","identityEvidence":["Commons caption","human contact-sheet review"]}
+  ]
+}
