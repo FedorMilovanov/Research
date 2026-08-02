@@ -1,14 +1,15 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "authorityId": "BAPTIST-ACQUISITION-PROOF-AUTHORITY-2026-08-02",
   "status": "CURRENT_FOR_ACQUISITION_AND_PROOF_STAGES_NOT_PUBLICATION",
-  "observedAt": "2026-08-02T10:25:00+02:00",
+  "observedAt": "2026-08-02T10:30:00+02:00",
   "operationalMaster": {
     "title": "РУССКИЕ БАПТИСТЫ — MASTER ARCHIVE CATALOG",
     "driveId": "1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM",
-    "modifiedTimeObserved": "2026-08-02T08:20:59.516Z",
+    "modifiedTimeObserved": "2026-08-02T08:22:18.328Z",
     "acquisitionSheet": "12 Drive Acquisitions",
     "dossierSheet": "08 Article Dossiers",
+    "librarySheet": "01 PDF Library",
     "mutationPolicy": "APPEND_ONLY_OR_IDEMPOTENT_TARGETED_UPDATE"
   },
   "authoritySplit": {
@@ -16,6 +17,7 @@
     "githubRole": "IMMUTABLE_STATUS_SEMANTICS_AND_AUDIT_RECEIPTS",
     "binaryIdentityRule": "EXACT_DRIVE_ID_PLUS_SHA256",
     "visualIdentityRule": "EXACT_SOURCE_SHA256_PLUS_PAGE_LOCATOR_PLUS_VISUAL_CARD_DRIVE_ID_AND_SHA256",
+    "sourceClassRule": "FILE_FORM_AND_PROVENANCE_MUST_BE_CLASSIFIED_SEPARATELY_FROM_UNDERLYING_HISTORICAL_TEXT",
     "conflictRule": "FAIL_CLOSED_NO_SILENT_SUPERSESSION"
   },
   "stateMachines": {
@@ -31,6 +33,12 @@
       "VISUAL_PAGE_VERIFIED",
       "BOUNDED_TRANSCRIPTION_VERIFIED",
       "QUOTE_READY"
+    ],
+    "sourceClass": [
+      "UNCLASSIFIED",
+      "DERIVATIVE_TRANSCRIPTION",
+      "PUBLISHED_PRIMARY_TEXT_EDITION",
+      "ARCHIVAL_FACSIMILE"
     ]
   },
   "receipts": [
@@ -46,6 +54,7 @@
       "sha256": "3d33eb3691dd18f0109028cf1c2c51bb71e21b882dfddfff4393438311498c1c",
       "acquisitionState": "CANONICAL_DRIVE_REGISTERED",
       "proofState": "TEXT_LAYER_PRESENT",
+      "sourceClass": "MODERN_SCHOLARLY_ARTICLE",
       "visualState": "PENDING",
       "quoteState": "NOT_APPROVED",
       "supersedesOnly": "ACQUISITION_AND_TEXT_LAYER_MISSING_CLAIMS_FOR_THIS_EXACT_FILE"
@@ -62,9 +71,41 @@
       "sha256": "6d23e500ef19dc457d2f23c06b695ea95e2670759558e0419847022ccc969cc9",
       "acquisitionState": "CANONICAL_DRIVE_REGISTERED",
       "proofState": "TEXT_LAYER_PRESENT",
+      "sourceClass": "DERIVATIVE_BIOGRAPHY_DOSSIER",
       "visualState": "PENDING",
       "quoteState": "NOT_APPROVED",
       "supersedesOnly": "ACQUISITION_AND_TEXT_LAYER_MISSING_CLAIMS_FOR_THIS_EXACT_FILE"
+    },
+    {
+      "id": "SHILOV-LENIN-1919-DERIVATIVE-2026-08-02",
+      "masterRow": 53,
+      "libraryRow": 100,
+      "fileName": "Письмо Шилова Ленину (1).pdf",
+      "canonicalDriveId": "12PD_RzFXLcKrIYy9ubfskvRKVPj7FlOc",
+      "rawDuplicateDriveId": "1iJhvJ7UjlyhNZAXk586sZzRTa37mKLmf",
+      "canonicalFolder": "02 — LETTERS, PETITIONS & STATE DOCUMENTS",
+      "canonicalFolderDriveId": "1-vmWwdvYcF8RqFdPr4aWO5REp_mic9Aq",
+      "bytes": 79460,
+      "pages": 3,
+      "sha256": "7c9674b65e15bf76c1833ba0b99b4d735e2c9f3f268351af17f8206516003327",
+      "acquisitionState": "CANONICAL_DRIVE_REGISTERED",
+      "proofState": "TEXT_LAYER_PRESENT",
+      "sourceClass": "DERIVATIVE_TRANSCRIPTION",
+      "facsimileState": "NOT_ARCHIVAL_FACSIMILE",
+      "metadata": {
+        "author": "Алексей Синичкин",
+        "creator": "Microsoft Word",
+        "creationDate": "2024-04-18"
+      },
+      "underlyingHistoricalTexts": [
+        "SHILOV_LETTER_DATED_1919-12-11",
+        "PETROGRAD_COMPLAINT_BUREAU_RESPONSE_1920"
+      ],
+      "provenanceState": "ARCHIVAL_ORIGINAL_AND_EDITION_NOT_IDENTIFIED",
+      "primaryQuoteState": "NOT_APPROVED",
+      "navigationUse": "ALLOWED_WITH_DERIVATIVE_DISCLOSURE",
+      "supersedesOnly": "PRIMARY_SOURCE_CLASSIFICATION_OF_THIS_EXACT_2024_PDF",
+      "receipt": "RUSSIAN_BAPTISTS_ARCHIVE/SHILOV_LENIN_1919_DERIVATIVE_CLASSIFICATION_2026-08-02.md"
     }
   ],
   "visualClosures": [
@@ -112,9 +153,11 @@
     }
   ],
   "counts": {
-    "acquisitionReceipts": 2,
-    "canonicalDriveRegistered": 2,
-    "textLayerPresent": 2,
+    "acquisitionReceipts": 3,
+    "canonicalDriveRegistered": 3,
+    "textLayerPresent": 3,
+    "derivativeTranscriptions": 1,
+    "archivalFacsimilesAmongReceipts": 0,
     "visualClosures": 1,
     "visualPageVerified": 1,
     "boundedTranscriptionVerified": 0,
@@ -122,7 +165,9 @@
   },
   "immutableReceipts": [
     "RUSSIAN_BAPTISTS_ARCHIVE/drive_acquisition_delta_2026-08-02.csv",
-    "RUSSIAN_BAPTISTS_ARCHIVE/BAPTIST_1909_NO11_MAZAEV_VISUAL_CLOSURE_2026-08-02.md"
+    "RUSSIAN_BAPTISTS_ARCHIVE/drive_acquisition_delta_2026-08-02-b.csv",
+    "RUSSIAN_BAPTISTS_ARCHIVE/BAPTIST_1909_NO11_MAZAEV_VISUAL_CLOSURE_2026-08-02.md",
+    "RUSSIAN_BAPTISTS_ARCHIVE/SHILOV_LENIN_1919_DERIVATIVE_CLASSIFICATION_2026-08-02.md"
   ],
   "boundaries": {
     "publicationClaimed": false,
@@ -130,6 +175,7 @@
     "localizedVisualClosureClaimed": true,
     "boundedTranscriptionClaimed": false,
     "quoteReadyClaimed": false,
+    "shilovPrimaryFacsimileClaimed": false,
     "rawDuplicatesMayBeDeleted": false,
     "paidOrdersAuthorized": false
   }
