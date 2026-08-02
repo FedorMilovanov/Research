@@ -1,0 +1,35 @@
+name: Baptist Acquisition Authority
+
+on:
+  pull_request:
+    paths:
+      - "data/baptist-acquisition-proof-authority-2026-08-02.json"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/drive_acquisition_delta_2026-08-02.csv"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/README.md"
+      - "scripts/validate_baptist_acquisition_authority.py"
+      - ".github/workflows/baptist-acquisition-authority.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/baptist-acquisition-proof-authority-2026-08-02.json"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/drive_acquisition_delta_2026-08-02.csv"
+      - "RUSSIAN_BAPTISTS_ARCHIVE/README.md"
+      - "scripts/validate_baptist_acquisition_authority.py"
+      - ".github/workflows/baptist-acquisition-authority.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Compile validator
+        run: python3 -m py_compile scripts/validate_baptist_acquisition_authority.py
+      - name: Validate acquisition and proof authority
+        run: python3 scripts/validate_baptist_acquisition_authority.py
+      - name: Ensure validator is read-only
+        run: git diff --exit-code
