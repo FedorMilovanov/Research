@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "ATLAS-PIHAHIROTH-AUTHORITY-2026-08-02",
+  "status": "CURRENT_TEXTUAL_CONSTRAINTS_CLOSED_EXACT_LOCATION_UNRESOLVED",
+  "generatedAt": "2026-08-02",
+  "placeId": "pihahiroth",
+  "canonicalNameRu": "Пи-Гахироф",
+  "exactCoordinateStatus": "UNRESOLVED",
+  "publicationDecision": "CANDIDATE_CORRIDORS_ONLY_NO_SINGLE_AUTHORITATIVE_POINT",
+  "directQuotesApproved": false,
+  "textualConstraints": [
+    {
+      "id": "PH-T01",
+      "status": "CLOSED",
+      "claim": "After Succoth Israel camped at Etham at the edge of the wilderness.",
+      "locators": ["Exod 13:20","Num 33:6"]
+    },
+    {
+      "id": "PH-T02",
+      "status": "CLOSED",
+      "claim": "The movement to Pi-hahiroth is described as turning back from the Etham stage rather than simply continuing in a straight line.",
+      "locators": ["Exod 14:1-2","Num 33:7"]
+    },
+    {
+      "id": "PH-T03",
+      "status": "CLOSED",
+      "claim": "The camp is relationally described before Pi-hahiroth, between Migdol and the sea, opposite Baal-zephon.",
+      "locators": ["Exod 14:2,9"]
+    },
+    {
+      "id": "PH-T04",
+      "status": "CLOSED",
+      "claim": "Pharaoh's interpretation requires a route that appeared constrained by wilderness and water and vulnerable to chariot pursuit.",
+      "locators": ["Exod 14:3-9"]
+    },
+    {
+      "id": "PH-T05",
+      "status": "CLOSED",
+      "claim": "After the sea passage the itinerary enters the wilderness of Shur/Etham, linking the crossing to the eastern desert margin.",
+      "locators": ["Exod 15:22","Num 33:8"]
+    },
+    {
+      "id": "PH-T06",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "The Hebrew yam in the immediate narrative identifies the water crossed, while the wider designation yam suph does not by itself select one modern lake or the modern Gulf of Suez coastline.",
+      "locators": ["Exod 13:18","Exod 14:2,9,16,21-31","Exod 15:4,22"]
+    },
+    {
+      "id": "PH-T07",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "Migdol can function as a place-name connected with a frontier tower or fort, but the term does not uniquely identify one excavated installation without independent evidence.",
+      "locators": ["Exod 14:2","Num 33:7"]
+    },
+    {
+      "id": "PH-T08",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "Baal-zephon supplies an orientation landmark or cultic place-name; multiple ancient sites associated with Baal-zephon prevent unique identification from the name alone.",
+      "locators": ["Exod 14:2,9"]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "PH-CAND-NORTH",
+      "label": "Northern coastal / Sirbonic corridor",
+      "status": "ALTERNATIVE",
+      "confidence": "LOW",
+      "geometry": "CORRIDOR_NOT_POINT",
+      "supports": [
+        "Baal-zephon traditions are strongly represented in the north-eastern Delta and coastal sphere.",
+        "A coastal barrier-lagoon setting can produce water-and-wilderness constraint."
+      ],
+      "problems": [
+        "The identification depends on disputed correlations of Baal-zephon and the sea terminology.",
+        "It lengthens or reorganizes the relation to the Wadi Tumilat/Etham sequence.",
+        "No secure inscription identifies the Exodus camp."
+      ]
+    },
+    {
+      "id": "PH-CAND-BALLAH",
+      "label": "Ballah Lakes / north isthmus corridor",
+      "status": "CANDIDATE",
+      "confidence": "MODERATE_LOW",
+      "geometry": "CORRIDOR_NOT_POINT",
+      "supports": [
+        "It lies near the eastern Delta frontier and north-south military routes.",
+        "Former lake and marsh systems provide a plausible constrained approach.",
+        "The corridor can be related to a turn from the Wadi Tumilat/Etham axis."
+      ],
+      "problems": [
+        "Ancient shorelines and lake connectivity changed through time and require palaeoenvironmental reconstruction.",
+        "No excavated site is securely named Pi-hahiroth, Migdol and Baal-zephon together.",
+        "The proposed crossing point varies substantially among reconstructions."
+      ]
+    },
+    {
+      "id": "PH-CAND-BITTER",
+      "label": "Lake Timsah / Bitter Lakes corridor",
+      "status": "CANDIDATE",
+      "confidence": "MODERATE_LOW",
+      "geometry": "CORRIDOR_NOT_POINT",
+      "supports": [
+        "It preserves a close relation to the Wadi Tumilat and the eastern wilderness margin.",
+        "The lake basin can fit the narrative movement from settlement corridor to constrained waterside camp.",
+        "It has a long history in scholarly southern-isthmus route reconstructions."
+      ],
+      "problems": [
+        "Modern canal and lake geography cannot be projected directly into the Late Bronze Age.",
+        "The location of Baal-zephon remains unproven.",
+        "Different reconstructions place Etham, Migdol and the crossing on incompatible points."
+      ]
+    }
+  ],
+  "mapContract": {
+    "canonicalFeatureType": "uncertainty-area",
+    "renderSinglePoint": false,
+    "renderCandidates": true,
+    "defaultCandidate": "PH-CAND-BALLAH",
+    "defaultCandidateIsCertain": false,
+    "showPalaeowaterDisclaimer": true,
+    "requiredReaderLabel": "Точное место Пи-Гахирофа и перехода не установлено; показаны исследовательские коридоры, а не найденная точка.",
+    "requiredLayers": [
+      "Wadi Tumilat / eastern Delta approach",
+      "Late Bronze Age frontier context",
+      "reconstructed palaeolakes with date/source metadata",
+      "candidate corridors",
+      "modern canal/coastline visually distinguished from ancient reconstruction"
+    ],
+    "forbiddenClaims": [
+      "Археологи нашли точное место перехода.",
+      "Любая одна современная береговая линия совпадает с береговой линией времени Исхода.",
+      "Название Migdol само по себе доказывает конкретную крепость.",
+      "Baal-zephon имеет только одну возможную локализацию.",
+      "Ветровой отгон воды доказывает историчность или точную координату события."
+    ]
+  },
+  "rightsContract": {
+    "baseMap": {
+      "preferred": "Natural Earth public-domain vector data",
+      "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "publicationState": "APPROVED_WITH_ATTRIBUTION_NOTE"
+    },
+    "modernElevation": {
+      "preferred": "NASA/USGS public data with dataset-specific credit",
+      "url": "https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy",
+      "publicationState": "DATASET_LEVEL_REVIEW_REQUIRED"
+    },
+    "archaeologicalMaps": {
+      "publicationState": "LINK_OR_DERIVED_SCHEMATIC_ONLY_UNLESS_LICENSE_EXPLICIT",
+      "rule": "Do not reproduce a modern scholar's map or publisher figure merely because it is visible in a preview or PDF."
+    }
+  },
+  "sources": [
+    {
+      "id": "PH-S01",
+      "class": "A1",
+      "type": "primary_text_dataset",
+      "title": "Open Scriptures MorphHB",
+      "url": "https://github.com/openscriptures/morphhb",
+      "locators": ["Exod 13:17-22","Exod 14:1-31","Exod 15:1-22","Num 33:5-8"],
+      "use": "Hebrew textual and morphological control"
+    },
+    {
+      "id": "PH-S02",
+      "class": "A1",
+      "type": "primary_text_dataset",
+      "title": "STEPBible Data",
+      "url": "https://github.com/STEPBible/STEPBible-Data",
+      "locators": ["Exodus and Numbers place-name and lexical datasets"],
+      "use": "Independent lexical and place-name cross-check"
+    },
+    {
+      "id": "PH-S03",
+      "class": "A3",
+      "type": "academic_book",
+      "title": "James K. Hoffmeier, Ancient Israel in Sinai",
+      "url": "https://global.oup.com/academic/product/ancient-israel-in-sinai-9780199731695",
+      "locators": ["chapters on the route from Egypt, yam suph and Sinai geography"],
+      "use": "Major southern-isthmus reconstruction; bibliographic and argument control, no direct quotation"
+    },
+    {
+      "id": "PH-S04",
+      "class": "A3",
+      "type": "academic_book",
+      "title": "James K. Hoffmeier, Israel in Egypt",
+      "url": "https://global.oup.com/academic/product/israel-in-egypt-9780195130881",
+      "locators": ["eastern Delta, frontier and Exodus geography chapters"],
+      "use": "Egyptological and historical-geographical context"
+    },
+    {
+      "id": "PH-S05",
+      "class": "A3",
+      "type": "academic_book",
+      "title": "Kenneth A. Kitchen, On the Reliability of the Old Testament",
+      "url": "https://www.eerdmans.com/9780802803962/on-the-reliability-of-the-old-testament/",
+      "locators": ["Exodus route and eastern frontier discussion"],
+      "use": "Comparative conservative reconstruction; no direct quotation"
+    },
+    {
+      "id": "PH-S06",
+      "class": "A2",
+      "type": "academic_chapter",
+      "title": "Manfred Bietak, On the Historicity of the Exodus",
+      "url": "https://doi.org/10.1007/978-3-319-04768-3_2",
+      "locators": ["eastern Delta settlement and historical-geographical constraints"],
+      "use": "Egyptological context and limits of direct archaeological identification"
+    },
+    {
+      "id": "PH-S07",
+      "class": "A2",
+      "type": "academic_article",
+      "title": "Nadav Na'aman, The Exodus Story: Between Historical Memory and Historiographical Composition",
+      "url": "https://doi.org/10.1163/156921207781375123",
+      "locators": ["historical memory and composition discussion"],
+      "use": "Critical historiographical comparator; not used to determine a coordinate"
+    },
+    {
+      "id": "PH-S08",
+      "class": "A1",
+      "type": "official_open_data_policy",
+      "title": "Natural Earth public-domain terms",
+      "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "locators": ["Terms of Use"],
+      "use": "Base-map rights"
+    },
+    {
+      "id": "PH-S09",
+      "class": "A1",
+      "type": "official_open_data_policy",
+      "title": "NASA Earthdata data and information policy",
+      "url": "https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy",
+      "locators": ["Data and Information Policy"],
+      "use": "Elevation/palaeoenvironmental data rights boundary"
+    }
+  ],
+  "counts": {
+    "textualConstraints": 8,
+    "closedConstraints": 5,
+    "boundaryClosedConstraints": 3,
+    "candidates": 3,
+    "sources": 9,
+    "directQuotesApproved": 0,
+    "authoritativePoints": 0
+  }
+}
