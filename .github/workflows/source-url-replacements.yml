@@ -1,0 +1,32 @@
+name: Source URL replacements
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/source-url-replacements.yml'
+      - 'data/source-url-replacements-2026-08-02.json'
+      - 'scripts/validate_source_url_replacements.py'
+      - 'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/source-url-replacements.yml'
+      - 'data/source-url-replacements-2026-08-02.json'
+      - 'scripts/validate_source_url_replacements.py'
+      - 'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - run: python3 -m py_compile scripts/validate_source_url_replacements.py
+      - run: python3 scripts/validate_source_url_replacements.py
+      - run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
