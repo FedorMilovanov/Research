@@ -1,11 +1,16 @@
 # RUSSIAN BAPTISTS ARCHIVE
 
+> **Текущая status-authority:** [`00_CURRENT_AUTHORITY_2026-08-02.md`](00_CURRENT_AUTHORITY_2026-08-02.md). Она различает живой операционный MASTER, неизменяемые GitHub-receipts и отдельные proof stages.
+
 Текстовая долговременная копия проекта **«РУССКИЕ БАПТИСТЫ»**. Большие факсимиле и исходные пакеты находятся в Google Drive; этот каталог обеспечивает восстановление структуры, библиографии и исследовательских решений без зависимости от истории чата.
 
 ## Канонические ресурсы
 
 | Ресурс | Ссылка / ID |
 |---|---|
+| Current acquisition/proof authority | [`00_CURRENT_AUTHORITY_2026-08-02.md`](00_CURRENT_AUTHORITY_2026-08-02.md) |
+| Machine authority | [`../data/baptist-acquisition-proof-authority-2026-08-02.json`](../data/baptist-acquisition-proof-authority-2026-08-02.json) |
+| Immutable Drive delta receipt | [`drive_acquisition_delta_2026-08-02.csv`](drive_acquisition_delta_2026-08-02.csv) |
 | Живой MASTER ARCHIVE CATALOG | [Google Sheets](https://docs.google.com/spreadsheets/d/1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM/edit) |
 | Drive ID MASTER | `1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM` |
 | Детальный аудит «Братского листка» | [Google Sheets](https://docs.google.com/spreadsheets/d/15L76H5bufK9Pr8EelwO-KZTYXuKX-weKnOh7qV_ze6k/edit) |
@@ -16,9 +21,11 @@
 
 ## Файлы этого каталога
 
-- [`MASTER_STATUS_2026-07-31.md`](MASTER_STATUS_2026-07-31.md) — проверенные контрольные цифры и главные выводы.
+- [`00_CURRENT_AUTHORITY_2026-08-02.md`](00_CURRENT_AUTHORITY_2026-08-02.md) — текущая authority по acquisition/proof stages и границам supersession.
+- [`drive_acquisition_delta_2026-08-02.csv`](drive_acquisition_delta_2026-08-02.csv) — immutable receipt строк 51–52 живого MASTER: exact Drive ID, raw provenance duplicate, bytes, pages и SHA-256.
+- [`MASTER_STATUS_2026-07-31.md`](MASTER_STATUS_2026-07-31.md) — исторический snapshot проверенных контрольных цифр и главных выводов.
 - [`DRIVE_SNAPSHOT_MANIFEST_2026-07-31.md`](DRIVE_SNAPSHOT_MANIFEST_2026-07-31.md) — Drive ID всех аварийных копий.
-- [`drive_acquisitions_manifest_2026-07-31.csv`](drive_acquisitions_manifest_2026-07-31.csv) — все 47 объектов из `12 Drive Acquisitions`: файлы, Drive ID, байты, страницы и SHA-256.
+- [`drive_acquisitions_manifest_2026-07-31.csv`](drive_acquisitions_manifest_2026-07-31.csv) — исторический снимок 47 объектов из `12 Drive Acquisitions`: файлы, Drive ID, байты, страницы и SHA-256.
 - [`snapshot_manifest_2026-07-31.json`](snapshot_manifest_2026-07-31.json) — машинный снимок контрольных цифр, конфликтов и точек восстановления.
 - [`NEXT_ACTIONS.md`](NEXT_ACTIONS.md) — приоритеты получения PDF/DJVU и правила продолжения.
 - [`INSTITUTIONAL_RESPONSES_2026-07-31.md`](INSTITUTIONAL_RESPONSES_2026-07-31.md) — ответы РГБ/РНБ, шифры и ограничения.
@@ -47,17 +54,19 @@
 
 ## Высшие правила
 
-1. Живой Google Sheets MASTER является каноническим и редактируется append-only.
-2. Аварийные snapshot-копии не используются вместо живого MASTER.
-3. Найденная ссылка, проверенный viewer, скачанный файл и файл в Drive — четыре разные стадии.
-4. Raw Telegram export и canonical thematic copy могут составлять provenance pair и не являются мусорным дублем.
-5. Сдвоенный выпуск хранится одним физическим объектом.
-6. Для загрузки фиксируются Drive ID, имя, MIME, байты, страницы, SHA-256, источник, дата и папка.
-7. Платные работы не начинать без отдельного согласования.
-8. Этапные отчёты и подготовительные ZIP-пакеты не переносятся в канонические хранилища отдельными дублями: в MASTER и GitHub вливается только проверенная содержательная дельта.
-9. Параллельные журнальные агенты работают через отдельные маркеры; общие README/status/grouped-файлы перечитываются перед записью и обновляются только idempotent append/upsert.
+1. Живой Google Sheets MASTER — операционный append-only каталог для изменяемых inventory-строк, заявок и acquisition log.
+2. GitHub current authority и immutable receipts — authority для значения статусов, правил повышения evidence и воспроизводимого аудита.
+3. Физический объект определяется exact Drive ID + SHA-256. При конфликте Sheet/receipt/file действует fail-closed; молчаливое supersession запрещено.
+4. Аварийные snapshot-копии не используются вместо живого MASTER.
+5. Найденная ссылка, проверенный viewer, скачанный файл, файл в canonical Drive, text layer, visual verification и quote-ready — разные стадии.
+6. Raw Telegram export и canonical thematic copy могут составлять provenance pair и не являются мусорным дублем.
+7. Сдвоенный выпуск хранится одним физическим объектом.
+8. Для загрузки фиксируются Drive ID, имя, MIME, байты, страницы, SHA-256, источник, дата и папка.
+9. Платные работы не начинать без отдельного согласования.
+10. Этапные отчёты и подготовительные ZIP-пакеты не переносятся в канонические хранилища отдельными дублями: в MASTER и GitHub вливается только проверенная содержательная дельта.
+11. Параллельные журнальные агенты работают через отдельные маркеры; общие README/status/grouped-файлы перечитываются перед записью и обновляются только idempotent append/upsert.
 
-Последняя синхронизация: **2026-07-31, 20:56+03:00 — raw HTML-аудит 15 Telegram-вложений «Братского листка», 0 скрытых attachment links, recovery-ledger и инструкция повторного экспорта; бинарный состав без изменений**.
+Последняя синхронизация: **2026-08-02, 11:08+03:00 — exact canonical registration строк 51–52 для Синичкина и dossier Воронина; raw provenance duplicates сохранены; оба файла имеют text layer, но visual page-card и quote-ready остаются pending**.
 
 ## Consolidated 1917–1926 research intake (v130)
 
