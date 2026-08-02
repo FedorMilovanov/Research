@@ -1,0 +1,216 @@
+name: Retire absorbed Research branches
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/retire-absorbed-branches.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retire-absorbed-research-branches
+  cancel-in-progress: false
+
+jobs:
+  retire:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout complete Research history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+
+      - name: Verify ancestry and delete only absorbed refs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin '+refs/heads/*:refs/remotes/origin/*' --prune
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          candidates=(
+            'agent/osk-source-authority-20260801'
+            'agent/osk-wave2-money-power-20260801'
+            'agent/osk-wave5-adelaja-20260801'
+            'archive/poet-portrait-review-refresh-20260731'
+            'archive/second-editorial-40-pdf-refresh-20260731'
+            'arena/019fb9cf-research'
+            'docs/source-library-94-collections-navigation-2026-07-30'
+            'tmp-do-not-use'
+          )
+          archive='archive/legacy-diverged-heads-20260801'
+          : > /tmp/retired-branches.tsv
+
+          archive_sha="$(git ls-remote --heads origin "refs/heads/${archive}" | awk '{print $1}')"
+          test -n "$archive_sha"
+          archive_merge_base="$(git merge-base origin/main "$archive_sha")"
+          archive_ahead="$(git rev-list --count "origin/main..${archive_sha}")"
+          archive_behind="$(git rev-list --count "${archive_sha}..origin/main")"
+          test "$archive_ahead" -gt 0
+
+          for branch in "${candidates[@]}"; do
+            sha="$(git ls-remote --heads origin "refs/heads/${branch}" | awk '{print $1}')"
+            if [[ -z "$sha" ]]; then
+              printf '%s\t%s\t%s\n' "$branch" '' 'ALREADY_ABSENT' >> /tmp/retired-branches.tsv
+              continue
+            fi
+            if ! git merge-base --is-ancestor "$sha" origin/main; then
+              echo "Ref has unique commits and will not be deleted: ${branch}@${sha}" >&2
+              exit 1
+            fi
+            ahead="$(git rev-list --count "origin/main..${sha}")"
+            if [[ "$ahead" != '0' ]]; then
+              echo "Ref unexpectedly ahead of main: ${branch}@${sha} ahead=${ahead}" >&2
+              exit 1
+            fi
+            git push origin --delete "$branch"
+            if git ls-remote --exit-code --heads origin "refs/heads/${branch}" >/dev/null 2>&1; then
+              echo "Ref still exists after delete: ${branch}" >&2
+              exit 1
+            fi
+            printf '%s\t%s\t%s\n' "$branch" "$sha" 'DELETED_AFTER_ANCESTRY_PROOF' >> /tmp/retired-branches.tsv
+          done
+
+          if ! git ls-remote --exit-code --heads origin "refs/heads/${archive}" >/dev/null 2>&1; then
+            echo 'Forensic archive ref disappeared' >&2
+            exit 1
+          fi
+
+          cat > /tmp/archive-state.env <<EOF
+          ARCHIVE_BRANCH=${archive}
+          ARCHIVE_SHA=${archive_sha}
+          ARCHIVE_MERGE_BASE=${archive_merge_base}
+          ARCHIVE_AHEAD=${archive_ahead}
+          ARCHIVE_BEHIND=${archive_behind}
+          EOF
+
+      - name: Commit current branch retirement authority
+        shell: bash
+        run: |
+          set -euo pipefail
+          source /tmp/archive-state.env
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p archive-ledgers data
+
+            python3 <<'PY'
+          from __future__ import annotations
+          import json
+          import os
+          import pathlib
+          import subprocess
+          from datetime import datetime, timezone
+
+          root = pathlib.Path.cwd()
+          rows = []
+          for raw in pathlib.Path('/tmp/retired-branches.tsv').read_text(encoding='utf-8').splitlines():
+              branch, sha, status = raw.split('\t')
+              rows.append({'branch': branch, 'sha': sha or None, 'status': status, 'uniqueCommitsAtRetirement': 0})
+          archive = {
+              'branch': os.environ['ARCHIVE_BRANCH'],
+              'sha': os.environ['ARCHIVE_SHA'],
+              'mergeBaseWithMainAtRetirement': os.environ['ARCHIVE_MERGE_BASE'],
+              'aheadOfMainAtRetirement': int(os.environ['ARCHIVE_AHEAD']),
+              'behindMainAtRetirement': int(os.environ['ARCHIVE_BEHIND']),
+              'status': 'RETAIN_FORENSIC_HISTORY_NOT_CURRENT_AUTHORITY',
+              'uniqueLedgerFiles': [
+                  'archive-ledgers/branch-cleanup-summary-20260801.md',
+                  'archive-ledgers/branch-forensic-retirement-receipt-20260801.json',
+                  'archive-ledgers/legacy-diverged-heads-20260801.json',
+                  'archive-ledgers/legacy-diverged-heads-20260801.md',
+                  'archive-ledgers/source-library-ref-consolidation-20260801.json',
+                  'archive-ledgers/source-library-ref-consolidation-20260801.md',
+              ],
+          }
+          tested_main = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          payload = {
+              'schemaVersion': 1,
+              'authorityId': 'RESEARCH-BRANCH-RETIREMENT-AUTHORITY-2026-08-02',
+              'generatedAt': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+              'testedMain': tested_main,
+              'status': 'ABSORBED_REFS_RETIRED_FORENSIC_ARCHIVE_RETAINED',
+              'retired': rows,
+              'retiredCount': sum(row['status'] == 'DELETED_AFTER_ANCESTRY_PROOF' for row in rows),
+              'alreadyAbsentCount': sum(row['status'] == 'ALREADY_ABSENT' for row in rows),
+              'archive': archive,
+              'rules': {
+                  'deleteOnlyIfAncestorOfMain': True,
+                  'deleteOnlyIfAheadCountZero': True,
+                  'archiveIsCurrentAuthority': False,
+                  'archiveMayBeDeleted': False,
+              },
+              'recovery': {
+                  'inspectArchive': f"git fetch origin {archive['branch']} && git log --graph --oneline origin/{archive['branch']}",
+                  'readHistoricalLedger': f"git show origin/{archive['branch']}:archive-ledgers/branch-cleanup-summary-20260801.md",
+              },
+          }
+          json_path = root / 'data/branch-retirement-authority-2026-08-02.json'
+          json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          deleted = [row for row in rows if row['status'] == 'DELETED_AFTER_ANCESTRY_PROOF']
+          absent = [row for row in rows if row['status'] == 'ALREADY_ABSENT']
+          lines = [
+              '# CURRENT BRANCH RETIREMENT AUTHORITY — 2026-08-02',
+              '',
+              '**Authority ID:** `RESEARCH-BRANCH-RETIREMENT-AUTHORITY-2026-08-02`  ',
+              '**Status:** absorbed refs retired; forensic archive retained; archive is historical-only.',
+              '',
+              '## Retired refs',
+              '',
+              'Every listed ref was deleted only after its exact head was proven to be an ancestor of fresh `origin/main` and its ahead count was exactly zero.',
+              '',
+              '| Ref | Exact retired SHA | Result |',
+              '|---|---|---|',
+          ]
+          for row in deleted + absent:
+              lines.append(f"| `{row['branch']}` | `{row['sha'] or 'already absent'}` | `{row['status']}` |")
+          lines += [
+              '',
+              '## Retained forensic archive',
+              '',
+              f"- Branch: `{archive['branch']}`",
+              f"- Exact head at retirement: `{archive['sha']}`",
+              f"- Merge base with main: `{archive['mergeBaseWithMainAtRetirement']}`",
+              f"- Unique commits at retirement: `{archive['aheadOfMainAtRetirement']}`",
+              f"- Status: `{archive['status']}`",
+              '',
+              'The archive branch preserves branch-cleanup and source-library forensic ledgers. It is **not current research authority**, must not be used as a publication source, and must not be deleted until its unique ledger files are intentionally migrated or replaced by an equivalent immutable archive.',
+              '',
+              '## Recovery',
+              '',
+              '```bash',
+              payload['recovery']['inspectArchive'],
+              payload['recovery']['readHistoricalLedger'],
+              '```',
+              '',
+              '## Boundary',
+              '',
+              'This closes stale branch visibility and merged-head retention. It does not merge the forensic archive into current authority and does not authorize deletion of the archive branch.',
+          ]
+          (root / 'archive-ledgers/CURRENT_BRANCH_RETIREMENT_AUTHORITY_2026-08-02.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+          PY
+
+            git diff --check
+            git diff --name-only -- . \
+              ':(exclude)data/branch-retirement-authority-2026-08-02.json' \
+              ':(exclude)archive-ledgers/CURRENT_BRANCH_RETIREMENT_AUTHORITY_2026-08-02.md' > /tmp/unexpected-retirement-paths
+            if [[ -s /tmp/unexpected-retirement-paths ]]; then
+              echo 'Unexpected retirement receipt paths:' >&2
+              cat /tmp/unexpected-retirement-paths >&2
+              exit 1
+            fi
+            git add data/branch-retirement-authority-2026-08-02.json archive-ledgers/CURRENT_BRANCH_RETIREMENT_AUTHORITY_2026-08-02.md
+            git commit -m 'chore(branches): record absorbed ref retirement'
+            if git push origin HEAD:main; then
+              echo 'Branch retirement receipt committed to main.'
+              exit 0
+            fi
+            echo 'Main advanced while recording retirement; retrying receipt on latest main.' >&2
+          done
+          echo 'Branches were retired but receipt could not be pushed after four attempts.' >&2
+          exit 1
