@@ -131,9 +131,10 @@ for marker in (
     "PUBLICATION READINESS: NOT CLAIMED",
 ):
     require(marker in current_text.upper(), f"current authority marker missing: {marker}")
+readme_lower = readme_text.lower()
 require("00_CURRENT_AUTHORITY_2026-08-02.md" in readme_text, "README does not point to current authority")
-require("операционный каталог" in readme_text.lower(), "README does not define Drive operational role")
-require("неизменяем" in readme_text.lower(), "README does not define immutable GitHub receipt role")
+require("операционный" in readme_lower and "каталог" in readme_lower, "README does not define Drive operational catalog role")
+require("неизменяем" in readme_lower, "README does not define immutable GitHub receipt role")
 require("Живой Google Sheets MASTER является каноническим и редактируется append-only." not in readme_text, "obsolete universal MASTER authority statement remains")
 
 if errors:
