@@ -1,0 +1,38 @@
+name: Gill closed-book families
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/gill-closed-book-families.yml'
+      - 'data/gill-closed-book-families-2026-08-02.json'
+      - 'scripts/validate_gill_closed_book_families.py'
+      - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+      - 'Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
+      - 'Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
+      - 'Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/gill-closed-book-families.yml'
+      - 'data/gill-closed-book-families-2026-08-02.json'
+      - 'scripts/validate_gill_closed_book_families.py'
+      - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+      - 'Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
+      - 'Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
+      - 'Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - run: python3 -m py_compile scripts/validate_gill_closed_book_families.py
+      - run: python3 scripts/validate_gill_closed_book_families.py
+      - run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
