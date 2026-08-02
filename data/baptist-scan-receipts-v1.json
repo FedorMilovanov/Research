@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "BAPTIST-SCAN-RECEIPTS-2026-08-02",
+  "status": "NO_FILE_RECEIPTS_ESTABLISHED_REQUEST_LANE_ACTIVE",
+  "generatedAt": "2026-08-02",
+  "records": [],
+  "counts": {
+    "fileVerified": 0,
+    "ocrComplete": 0,
+    "quoteReady": 0,
+    "rejectedNotSourceFile": 0
+  },
+  "boundary": "An empty receipt ledger does not assert that no files exist anywhere. It asserts only that no item in the current Research authority has a verified byte-level receipt yet."
+}
