@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "SOURCE-URL-REPLACEMENTS-2026-08-02",
+  "status": "CURRENT_CONFIRMED_REPLACEMENTS",
+  "generatedAt": "2026-08-02",
+  "rule": "A repaired URL changes transport only. It never upgrades evidence, image rights, quotation readiness or publication eligibility.",
+  "records": [
+    {
+      "id": "URLR-001",
+      "oldUrl": "https://www.ccel.org/creeds/bcf/bcftoc.htm",
+      "newUrl": "https://www.ccel.org/creeds/bcf/bcf.htm",
+      "status": "REPLACE",
+      "sourceClass": "A2",
+      "rightsEffect": "NONE",
+      "note": "CCEL Baptist Confession navigation moved; use the live confession text entry."
+    },
+    {
+      "id": "URLR-002",
+      "oldUrl": "http://feb-web.ru/feb/esenin/about.htm",
+      "newUrl": "https://feb-web.ru/feb/esenin/rub.html",
+      "status": "REPLACE",
+      "sourceClass": "A2",
+      "rightsEffect": "NONE",
+      "note": "Use the current FEB Esenin electronic-publication entry."
+    },
+    {
+      "id": "URLR-003",
+      "oldUrl": "http://feb-web.ru/feb/esenin/sitemap.asp",
+      "newUrl": "https://feb-web.ru/feb/esenin/sitemap.htm",
+      "status": "REPLACE",
+      "sourceClass": "A2",
+      "rightsEffect": "NONE",
+      "note": "Current FEB Esenin sitemap."
+    },
+    {
+      "id": "URLR-004",
+      "oldUrl": "https://isadoraduncanarchive.org/all-items/",
+      "newUrl": "https://www.isadoraduncanarchive.org/collection/all",
+      "status": "REPLACE_WITH_RIGHTS_HOLD",
+      "sourceClass": "A2",
+      "rightsEffect": "ITEM_LEVEL_RIGHTS_REVIEW_REQUIRED",
+      "note": "Live collection index; a live item page is not blanket permission to reproduce images."
+    },
+    {
+      "id": "URLR-005",
+      "oldUrl": "https://isadoraduncanarchive.org/historical/",
+      "newUrl": "https://www.isadoraduncanarchive.org/collection/",
+      "status": "REPLACE_WITH_RIGHTS_HOLD",
+      "sourceClass": "A2",
+      "rightsEffect": "ITEM_LEVEL_RIGHTS_REVIEW_REQUIRED",
+      "note": "Use the current Print Media Collections entry point."
+    },
+    {
+      "id": "URLR-006",
+      "oldUrl": "https://isadoraduncanarchive.org/works/",
+      "newUrl": "https://www.isadoraduncanarchive.org/reference/isadora",
+      "status": "REPLACE_WITH_RIGHTS_HOLD",
+      "sourceClass": "A2",
+      "rightsEffect": "ITEM_LEVEL_RIGHTS_REVIEW_REQUIRED",
+      "note": "Current bibliography/reference entry; embedded media remains rights-per-item."
+    },
+    {
+      "id": "URLR-007",
+      "oldUrl": "https://lexicon.qumran-digital.org/transcriptions/index.html",
+      "newUrl": "https://lexicon.qumran-digital.org/transcriptions/4Q204/2025-11-11/index.html",
+      "status": "REPLACE_WITH_VERSION_PIN",
+      "sourceClass": "A1",
+      "rightsEffect": "CC_BY_SA_4_0_FOR_TRANSCRIPTION_PAGE_NOT_MANUSCRIPT_PHOTO",
+      "version": "2025-11-11",
+      "note": "Pin the exact 4Q204 transcription version; do not imply rights to IAA/Leon Levy manuscript photographs."
+    },
+    {
+      "id": "URLR-008",
+      "oldUrl": "",
+      "newUrl": "https://lexicon.qumran-digital.org/transcriptions/4Q204/changelog.html",
+      "status": "ADD_VERSION_HISTORY",
+      "sourceClass": "A1",
+      "rightsEffect": "NONE",
+      "note": "Store alongside the pinned transcription as version history."
+    }
+  ],
+  "rightsBoundaries": {
+    "duncan": "URL repair does not remove item-level ownership and reproduction restrictions.",
+    "qumran": "Open transcription licensing does not authorize reproduction of restricted manuscript photography.",
+    "feb": "Text access and bibliographic navigation do not automatically authorize every embedded image.",
+    "ccel": "Historical confession text is source access; edition/quotation context remains required."
+  },
+  "counts": {
+    "confirmedReplacements": 7,
+    "addedVersionHistory": 1,
+    "rightsHoldsPreserved": 3,
+    "versionPins": 1
+  }
+}
