@@ -1,0 +1,49 @@
+name: Atlas Pihahiroth authority
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/atlas-pihahiroth.yml'
+      - 'data/atlas-pihahiroth-authority-2026-08-02.json'
+      - 'scripts/validate_atlas_pihahiroth.py'
+      - 'БИБЛЕЙСКИЙ АТЛАС/GEO-DOSSIER-pihahiroth.md'
+      - 'БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md'
+      - 'БИБЛЕЙСКИЙ АТЛАС/README.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/atlas-pihahiroth.yml'
+      - 'data/atlas-pihahiroth-authority-2026-08-02.json'
+      - 'scripts/validate_atlas_pihahiroth.py'
+      - 'БИБЛЕЙСКИЙ АТЛАС/GEO-DOSSIER-pihahiroth.md'
+      - 'БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md'
+      - 'БИБЛЕЙСКИЙ АТЛАС/README.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: atlas-pihahiroth-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+
+      - name: Compile validator
+        run: python3 -m py_compile scripts/validate_atlas_pihahiroth.py
+
+      - name: Validate uncertainty geometry and rights boundary
+        run: python3 scripts/validate_atlas_pihahiroth.py
+
+      - name: Ensure validator is read-only
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
