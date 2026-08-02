@@ -1,0 +1,65 @@
+name: Heart reader assembly
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/heart-reader-assembly.yml'
+      - 'data/heart-reader-assembly-2026-08-02.json'
+      - 'data/heart-p0-architecture-dossiers-2026-08-02.json'
+      - 'scripts/validate_heart_reader_assembly.py'
+      - 'scripts/validate_heart_p0_dossiers.py'
+      - 'СЕРИЯ СЕРДЦЕ/75_P0_EDEN_HEART_CREATED_AND_FALLEN_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/76_P0_BROKEN_HEART_REPENTANCE_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/79_READER_CHAPTER_I2_HEART_IN_EDEN_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/80_READER_CHAPTER_III3_BROKEN_HEART_REPENTANCE_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/81_READER_CHAPTER_X1_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/82_BOOK_ASSEMBLY_DECISIONS_2026-08-02.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/heart-reader-assembly.yml'
+      - 'data/heart-reader-assembly-2026-08-02.json'
+      - 'data/heart-p0-architecture-dossiers-2026-08-02.json'
+      - 'scripts/validate_heart_reader_assembly.py'
+      - 'scripts/validate_heart_p0_dossiers.py'
+      - 'СЕРИЯ СЕРДЦЕ/75_P0_EDEN_HEART_CREATED_AND_FALLEN_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/76_P0_BROKEN_HEART_REPENTANCE_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/79_READER_CHAPTER_I2_HEART_IN_EDEN_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/80_READER_CHAPTER_III3_BROKEN_HEART_REPENTANCE_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/81_READER_CHAPTER_X1_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md'
+      - 'СЕРИЯ СЕРДЦЕ/82_BOOK_ASSEMBLY_DECISIONS_2026-08-02.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: heart-reader-assembly-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Compile validators
+        run: |
+          python3 -m py_compile \
+            scripts/validate_heart_p0_dossiers.py \
+            scripts/validate_heart_reader_assembly.py
+
+      - name: Preserve evidence authority
+        run: python3 scripts/validate_heart_p0_dossiers.py
+
+      - name: Validate reader chapters and final order
+        run: python3 scripts/validate_heart_reader_assembly.py
+
+      - name: Ensure validators are read-only
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
