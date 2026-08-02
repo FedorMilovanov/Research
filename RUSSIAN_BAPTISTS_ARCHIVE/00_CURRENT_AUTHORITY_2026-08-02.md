@@ -1,115 +1,112 @@
 # CURRENT AUTHORITY — RUSSIAN BAPTISTS ARCHIVE
 
 **Дата:** 2026-08-02  
-**Authority ID:** `BAPTIST-ACQUISITION-PROOF-AUTHORITY-2026-08-02`  
-**Статус:** текущая authority для acquisition, source-class и proof stages; **не** утверждает публикационную готовность корпуса.
+**Base authority:** `BAPTIST-ACQUISITION-PROOF-AUTHORITY-2026-08-02`  
+**Source-class overlay:** `BAPTIST-DERIVATIVE-TRANSCRIPTIONS-2026-08-02`  
+**Статус:** current authority для acquisition, source class и proof stages; publication readiness не заявляется.
 
-## 1. Как устроена authority
+## 1. Authority composition
 
-У проекта два согласованных, но не взаимозаменяемых слоя:
+1. [`../data/baptist-acquisition-proof-authority-2026-08-02.json`](../data/baptist-acquisition-proof-authority-2026-08-02.json) управляет exact binary identity, acquisition receipts и локальным visual closure «Баптиста» 1909 №11.
+2. [`../data/baptist-derivative-transcription-authority-2026-08-02.json`](../data/baptist-derivative-transcription-authority-2026-08-02.json) управляет source class современных Word-транскрипций Шилова и Московской общины.
+3. Google Sheets MASTER `1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM` остаётся живым operational inventory. GitHub receipts остаются immutable proof/status authority.
 
-1. **Google Sheets MASTER** (`1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM`) — живой операционный каталог файлов, ссылок, приобретений, dossier-state и заявок. Inventory rows добавляются append-only; явно названные dossier/library cells могут обновляться idempotent targeted update.
-2. **GitHub current authority + immutable receipts** — точные значения статусов, правила повышения evidence и неизменяемая фиксация Drive ID, страниц, байтов, SHA-256, source class и visual witnesses.
+Binary identity = exact Drive ID + SHA-256. Visual identity = source SHA-256 + page locator + visual-card Drive ID + visual-card SHA-256. Source class определяется отдельно от исторического содержания файла.
 
-Физический объект определяется парой **exact Drive ID + SHA-256**. Visual closure дополнительно требует source SHA-256, точный page locator и visual-card Drive ID + SHA-256. Source class определяется отдельно от исторического содержания: существование старого текста не превращает современную транскрипцию в archival facsimile.
+При конфликте действует `FAIL_CLOSED`: никакого молчаливого повышения статуса.
 
-При расхождении действует `FAIL_CLOSED`: статус не повышается и конфликт не разрешается молча.
+## 2. Acquisition receipts
 
-Машинная authority: [`../data/baptist-acquisition-proof-authority-2026-08-02.json`](../data/baptist-acquisition-proof-authority-2026-08-02.json).
+### Синичкин — статья о крещении Воронина
 
-Immutable receipts:
-
-- [`drive_acquisition_delta_2026-08-02.csv`](drive_acquisition_delta_2026-08-02.csv) — rows 51–52;
-- [`drive_acquisition_delta_2026-08-02-b.csv`](drive_acquisition_delta_2026-08-02-b.csv) — row 53;
-- [`BAPTIST_1909_NO11_MAZAEV_VISUAL_CLOSURE_2026-08-02.md`](BAPTIST_1909_NO11_MAZAEV_VISUAL_CLOSURE_2026-08-02.md);
-- [`SHILOV_LENIN_1919_DERIVATIVE_CLASSIFICATION_2026-08-02.md`](SHILOV_LENIN_1919_DERIVATIVE_CLASSIFICATION_2026-08-02.md).
-
-## 2. Закрытые acquisition-записи
-
-### Синичкин — «К вопросу о крещении первого русского баптиста»
-
-- canonical Drive ID: `1yH-oxjymaDJi4g5Els8xpRiqKFgWDD7V`;
-- raw provenance duplicate: `1nPb63h0DLbhx582WFpVPeXS2fH5UFT8O`;
-- bytes/pages/SHA-256: `542143` / `14` / `3d33eb3691dd18f0109028cf1c2c51bb71e21b882dfddfff4393438311498c1c`;
+- canonical Drive: `1yH-oxjymaDJi4g5Els8xpRiqKFgWDD7V`;
+- raw duplicate: `1nPb63h0DLbhx582WFpVPeXS2fH5UFT8O`;
+- bytes/pages/SHA: `542143` / `14` / `3d33eb3691dd18f0109028cf1c2c51bb71e21b882dfddfff4393438311498c1c`;
 - MASTER: `12 Drive Acquisitions!51`;
-- acquisition: `CANONICAL_DRIVE_REGISTERED`;
-- proof: `TEXT_LAYER_PRESENT`;
-- source class: `MODERN_SCHOLARLY_ARTICLE`;
-- visual: `PENDING`;
-- quote-ready: `NOT_APPROVED`.
+- `CANONICAL_DRIVE_REGISTERED / TEXT_LAYER_PRESENT / VISUAL_PENDING / NOT_QUOTE_READY`.
 
-### «Никита Исаевич Воронин» — biography dossier
+### Biography dossier «Никита Исаевич Воронин»
 
-- canonical Drive ID: `17O1csxPvxZO0T4Wq0TaRmT69yQ1dkEmT`;
-- raw provenance duplicate: `1_PxsBG7YrO58B3yajjNt5MF08WlZDrbV`;
-- bytes/pages/SHA-256: `244468` / `5` / `6d23e500ef19dc457d2f23c06b695ea95e2670759558e0419847022ccc969cc9`;
+- canonical Drive: `17O1csxPvxZO0T4Wq0TaRmT69yQ1dkEmT`;
+- raw duplicate: `1_PxsBG7YrO58B3yajjNt5MF08WlZDrbV`;
+- bytes/pages/SHA: `244468` / `5` / `6d23e500ef19dc457d2f23c06b695ea95e2670759558e0419847022ccc969cc9`;
 - MASTER: `12 Drive Acquisitions!52`;
-- acquisition: `CANONICAL_DRIVE_REGISTERED`;
-- proof: `TEXT_LAYER_PRESENT`;
-- source class: `DERIVATIVE_BIOGRAPHY_DOSSIER`;
-- source-chain visual pass: `PENDING`;
-- quote-ready: `NOT_APPROVED`.
+- `CANONICAL_DRIVE_REGISTERED / TEXT_LAYER_PRESENT / VISUAL_PENDING / NOT_QUOTE_READY`.
 
-## 3. Source-class closure — письмо Шилова Ленину
+### Шилов — typed compilation
 
-**Classification ID:** `SHILOV-LENIN-1919-DERIVATIVE-2026-08-02`.
+- canonical Drive: `12PD_RzFXLcKrIYy9ubfskvRKVPj7FlOc`;
+- raw duplicate: `1iJhvJ7UjlyhNZAXk586sZzRTa37mKLmf`;
+- bytes/pages/SHA: `79460` / `3` / `7c9674b65e15bf76c1833ba0b99b4d735e2c9f3f268351af17f8206516003327`;
+- MASTER: `12 Drive Acquisitions!53`, `01 PDF Library!100`;
+- acquisition/text: closed;
+- source class controlled by derivative overlay.
 
-Exact file:
+### Московская община 1923 — typed compilation
 
-- canonical Drive ID: `12PD_RzFXLcKrIYy9ubfskvRKVPj7FlOc`;
-- raw provenance duplicate: `1iJhvJ7UjlyhNZAXk586sZzRTa37mKLmf`;
-- canonical folder: `02 — LETTERS, PETITIONS & STATE DOCUMENTS` (`1-vmWwdvYcF8RqFdPr4aWO5REp_mic9Aq`);
-- bytes/pages/SHA-256: `79460` / `3` / `7c9674b65e15bf76c1833ba0b99b4d735e2c9f3f268351af17f8206516003327`;
-- MASTER acquisition: `12 Drive Acquisitions!53`;
-- MASTER library class: `01 PDF Library!100`.
+- canonical Drive: `1xBpAmUxoERAZJULqnmevSr5zjgReWAGi`;
+- raw duplicate: `1ag6DMRa4UO3Pz3SbKRue6LpTR4gL6a1E`;
+- bytes/pages/SHA: `119979` / `8` / `c6ef11f8b2fef460bcc083709e0a74fcc6c29a70c353ac73fbff0907126cb8a0`;
+- MASTER: `12 Drive Acquisitions!54`, `01 PDF Library!92`;
+- acquisition/text: closed;
+- source class controlled by derivative overlay.
 
-Technical/visual facts:
+## 3. Derivative transcription overlay
 
-- PDF Author: `Алексей Синичкин`;
-- Creator: `Microsoft Word`;
-- CreationDate: `2024-04-18`;
-- modern A4 typeset pages and clean text layer;
-- contains a typed 1919 letter text and a typed 1920 response/result section;
-- contains no photographed archival page, original signature, stamp, folio or repository shelfmark.
+### SHILOV-LENIN-1919-DERIVATIVE-2026-08-02
 
-Decision:
+Technical/visual result:
 
-- acquisition: `CANONICAL_DRIVE_REGISTERED`;
-- proof: `TEXT_LAYER_PRESENT`;
-- source class: `DERIVATIVE_TRANSCRIPTION`;
-- facsimile: `NOT_ARCHIVAL_FACSIMILE`;
-- archival provenance/original: `NOT_IDENTIFIED`;
-- navigation/paraphrase with explicit derivative disclosure: `ALLOWED`;
-- primary quotation: `NOT_APPROVED`.
+- PDF Author: Алексей Синичкин;
+- Creator: Microsoft Word;
+- CreationDate: 2024-04-18;
+- modern A4 typeset text, not a photographed document;
+- combines a typed 1919 letter and typed 1920 response/result section;
+- no archival folio, signature, stamp or repository shelfmark.
 
-The former `PRIMARY_SOURCE` label for this exact 2024 PDF has been removed. This does not declare the underlying 1919 letter false; it prevents the derivative file from impersonating an archival witness.
+Decision: `DERIVATIVE_TRANSCRIPTION / NOT_ARCHIVAL_FACSIMILE / ARCHIVAL_ORIGINAL_NOT_IDENTIFIED / PRIMARY_QUOTE_NOT_APPROVED`.
 
-## 4. Локальный visual closure — «Баптист» 1909 №11
+### MOSCOW-COMMUNITY-1923-DERIVATIVE-2026-08-02
+
+Technical/visual result:
+
+- PDF Author: Алексей Синичкин;
+- Creator: Microsoft Word;
+- CreationDate: 2023-01-05;
+- eight modern A4 typeset pages;
+- no archival page image, signatures, stamp, folio or shelfmark;
+- archival original or published primary edition is not identified in the PDF.
+
+Decision: `DERIVATIVE_TRANSCRIPTION / NOT_ARCHIVAL_FACSIMILE / ARCHIVAL_ORIGINAL_NOT_IDENTIFIED / PRIMARY_QUOTE_NOT_APPROVED`.
+
+Allowed for both: navigation, search-target discovery and working paraphrase with explicit derivative disclosure. Forbidden: primary quotation, facsimile claim, original-orthography/signature claim and completeness claim until the original or a verified primary edition is opened.
+
+## 4. Local visual closure — «Баптист» 1909 №11
 
 **Closure ID:** `BAPTIST-1909-NO11-MAZAEV-VISUAL-2026-08-02`.
 
-Source identity:
+Source:
 
-- Drive ID: `1pOyzFgm0NY0A-eBLScb9s9GVEiGVN1rU`;
-- bytes/pages/SHA-256: `9842696` / `22` / `0d54f0c2157e76f621bf2fd65137386ae538a792516c473703179bc3127fba73`;
-- text layer: `ABSENT_SCAN_ONLY`.
+- Drive `1pOyzFgm0NY0A-eBLScb9s9GVEiGVN1rU`;
+- bytes/pages/SHA: `9842696` / `22` / `0d54f0c2157e76f621bf2fd65137386ae538a792516c473703179bc3127fba73`;
+- scan-only, no text layer.
 
 Visual witnesses:
 
-- printed p.14: Drive `1yOm3KBJ9ujtETUG7u-0hl5ijrGiKuXYG`, SHA-256 `ed381e3ee5764483098fbdda76986953d8d5c7e2ab170e453d38d1a2fd6c23e5`;
-- printed p.15: Drive `1v-7bxYeZ6bMsaiVoFgqz5nWUctOtEwA8`, SHA-256 `bb3e78a0deb06b437cbf647c09fada131343eb48174d2fa0630809aca639b2ea`;
-- combined Google Doc: `1zCwFFMTaOcI476aOP_cXSzgdViWNk4VEySJ2G88W6bY`.
+- printed p.14: Drive `1yOm3KBJ9ujtETUG7u-0hl5ijrGiKuXYG`, SHA `ed381e3ee5764483098fbdda76986953d8d5c7e2ab170e453d38d1a2fd6c23e5`;
+- printed p.15: Drive `1v-7bxYeZ6bMsaiVoFgqz5nWUctOtEwA8`, SHA `bb3e78a0deb06b437cbf647c09fada131343eb48174d2fa0630809aca639b2ea`;
+- evidence Doc `1zCwFFMTaOcI476aOP_cXSzgdViWNk4VEySJ2G88W6bY`.
 
-Закрыто:
+Verified:
 
-1. p.14 начинает материал **«О Петербургской „свободе“»**;
-2. pp.14–15 содержат критику/обсуждение евангельского союза;
-3. p.15 завершает материал подписью **«Ваш меньший брат А. М. Мазаев»**;
-4. title, continuity, author attribution и existence-level critique claim имеют статус `VISUAL_PAGE_VERIFIED`.
+1. p.14 begins «О Петербургской „свободе“»;
+2. pp.14–15 discuss/criticize the evangelical union;
+3. p.15 ends with «Ваш меньший брат А. М. Мазаев»;
+4. title, continuity, attribution and existence-level critique claim are `VISUAL_PAGE_VERIFIED`.
 
-Не закрыто: full OCR, `BOUNDED_TRANSCRIPTION_PENDING`, general quote-ready, документы соглашения 1912 года и обобщение позиции статьи на всё движение.
+Still open: full OCR, `BOUNDED_TRANSCRIPTION_PENDING`, general quote-ready, 1912 agreement documents and movement-wide generalization.
 
-## 5. Обязательные модели стадий
+## 5. Stage models
 
 ### Acquisition
 
@@ -123,51 +120,41 @@ Visual witnesses:
 
 `UNCLASSIFIED → DERIVATIVE_TRANSCRIPTION | PUBLISHED_PRIMARY_TEXT_EDITION | ARCHIVAL_FACSIMILE`
 
-Переходы не подразумеваются:
+Old words inside a modern PDF do not make the PDF a primary facsimile.
 
-- link ≠ viewer;
-- viewer ≠ bytes;
-- bytes ≠ canonical registration;
-- text layer ≠ visual verification;
-- visual page ≠ bounded transcription;
-- old wording inside a modern file ≠ archival facsimile;
-- bounded transcription ≠ unlimited quotation right.
+## 6. Current open gates
 
-## 6. Что остаётся открытым
+- visual page-card set for all 14 pages of the Sinichkin article;
+- source-chain pass for the Voronin dossier;
+- archival original/edition for the Shilov letter and 1920 response;
+- archival original/edition for the Moscow 1923 statement;
+- bounded transcription for «Баптист» 1909 №11 pp.14–15;
+- OCR for 46 «Баптист» scans and 16 «Утренняя звезда» scans;
+- missing physical issues of «Слова истины» and «Братский листок»;
+- paid institutional requests;
+- book/site publication readiness.
 
-Эта authority **не** закрывает:
+## 7. Supersession boundary
 
-- visual page-card set для всех 14 страниц Синичкина;
-- source-chain pass для dossier Воронина;
-- archival original/provenance письма Шилова и ответа 1920 года;
-- bounded transcription для «Баптиста» 1909 №11 pp.14–15;
-- OCR 46 сканов «Баптиста» 1909–1911;
-- OCR 16 выпусков «Утренней звезды» 1915;
-- первые пять физических единиц «Слова истины» 1918;
-- отсутствующие/неизвлечённые выпуски «Братского листка»;
-- платные институциональные заказы;
-- publication readiness книги или отдельных глав.
+Closed only:
 
-## 7. Supersession
+- acquisition/text-layer absence claims for rows 51–54;
+- primary-page-unopened blocker for «Баптист» 1909 №11 pp.14–15;
+- false `PRIMARY_SOURCE` labels for the exact Shilov and Moscow Word-PDFs.
 
-Исторические отчёты сохраняются. Эта authority supersede’ит только:
+Not closed: archival provenance, diplomatic transcription, primary-quotation permission or entire corpus completion.
 
-- отсутствие exact bytes/text layer для acquisitions rows 51–53;
-- старое неразличение operational MASTER и proof authority;
-- blocker, будто primary pages «Баптиста» 1909 №11 не открыты;
-- ошибочный `PRIMARY_SOURCE` label для exact Word-PDF Шилова.
-
-Запрещены более широкие выводы: «архив полностью закрыт», «весь №11 quote-ready», «письмо Шилова проверено по архивному оригиналу», «все unity documents получены».
-
-## 8. Текущий итог
+## 8. Machine summary
 
 ```text
-LIVE MASTER: OPERATIONAL INVENTORY
-GITHUB AUTHORITY: STATUS SEMANTICS + IMMUTABLE RECEIPTS
-SINICHKIN PDF: CANONICAL / TEXT PRESENT / VISUAL PENDING / NOT QUOTE-READY
-VORONIN DOSSIER: CANONICAL / TEXT PRESENT / VISUAL PENDING / NOT QUOTE-READY
+BASE AUTHORITY: BAPTIST-ACQUISITION-PROOF-AUTHORITY-2026-08-02
+SOURCE-CLASS OVERLAY: BAPTIST-DERIVATIVE-TRANSCRIPTIONS-2026-08-02
+DERIVATIVE TRANSCRIPTIONS: 2
+ARCHIVAL FACSIMILES AMONG THEM: 0
+PRIMARY QUOTE-READY AMONG THEM: 0
 SHILOV PDF: DERIVATIVE TRANSCRIPTION / NOT ARCHIVAL FACSIMILE / PRIMARY QUOTE NOT APPROVED
-BAPTIST 1909 NO.11 P14–15: VISUAL PAGE VERIFIED / TRANSCRIPTION PENDING / NOT GENERAL QUOTE-READY
+MOSCOW 1923 PDF: DERIVATIVE TRANSCRIPTION / NOT ARCHIVAL FACSIMILE / PRIMARY QUOTE NOT APPROVED
+BAPTIST 1909 NO.11: LOCALIZED VISUAL PAGE VERIFIED
 CORPUS-WIDE VISUAL VERIFICATION: NOT CLAIMED
 PAID ORDERS: NOT AUTHORIZED
 PUBLICATION READINESS: NOT CLAIMED
