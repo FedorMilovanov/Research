@@ -1,0 +1,125 @@
+name: Research current stage authority
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/research-stage-authority.yml'
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md'
+      - '00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md'
+      - 'data/research-stage-closure-2026-08-02.json'
+      - 'data/public-projection-current-2026-08-02-v2.json'
+      - 'data/public-projection-osk-wave12-overlay-2026-08-02.json'
+      - 'data/osk-wave12-product-release-receipt-2026-08-02.json'
+      - 'data/public-projection-wave12-ci-receipt.json'
+      - 'data/stage-ci-receipts-2026-08-02.json'
+      - 'data/heart-p0-architecture-dossiers-2026-08-02.json'
+      - 'data/atlas-pihahiroth-authority-2026-08-02.json'
+      - 'data/baptist-scan-acquisition-policy-v2.json'
+      - 'data/baptist-scan-receipts-v1.json'
+      - 'data/gill-closed-book-families-2026-08-02.json'
+      - 'data/source-url-replacements-2026-08-02.json'
+      - 'scripts/validate_research_stage_closure.py'
+      - 'scripts/validate_public_projection_wave12.py'
+      - 'scripts/validate_heart_p0_dossiers.py'
+      - 'scripts/validate_atlas_pihahiroth.py'
+      - 'scripts/build_baptist_scan_request_package.py'
+      - 'scripts/validate_gill_closed_book_families.py'
+      - 'scripts/validate_source_url_replacements.py'
+      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md'
+      - 'СЕРИЯ СЕРДЦЕ/**'
+      - 'БИБЛЕЙСКИЙ АТЛАС/**'
+      - 'RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md'
+      - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+      - 'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/45_WAVE12_PRODUCT_PUBLICATION_RELEASE_2026-08-02.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/research-stage-authority.yml'
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md'
+      - '00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md'
+      - 'data/research-stage-closure-2026-08-02.json'
+      - 'data/public-projection-current-2026-08-02-v2.json'
+      - 'data/public-projection-osk-wave12-overlay-2026-08-02.json'
+      - 'data/osk-wave12-product-release-receipt-2026-08-02.json'
+      - 'data/public-projection-wave12-ci-receipt.json'
+      - 'data/stage-ci-receipts-2026-08-02.json'
+      - 'data/heart-p0-architecture-dossiers-2026-08-02.json'
+      - 'data/atlas-pihahiroth-authority-2026-08-02.json'
+      - 'data/baptist-scan-acquisition-policy-v2.json'
+      - 'data/baptist-scan-receipts-v1.json'
+      - 'data/gill-closed-book-families-2026-08-02.json'
+      - 'data/source-url-replacements-2026-08-02.json'
+      - 'scripts/validate_research_stage_closure.py'
+      - 'scripts/validate_public_projection_wave12.py'
+      - 'scripts/validate_heart_p0_dossiers.py'
+      - 'scripts/validate_atlas_pihahiroth.py'
+      - 'scripts/build_baptist_scan_request_package.py'
+      - 'scripts/validate_gill_closed_book_families.py'
+      - 'scripts/validate_source_url_replacements.py'
+      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md'
+      - 'СЕРИЯ СЕРДЦЕ/**'
+      - 'БИБЛЕЙСКИЙ АТЛАС/**'
+      - 'RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md'
+      - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+      - 'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/45_WAVE12_PRODUCT_PUBLICATION_RELEASE_2026-08-02.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: research-stage-authority-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout complete Research history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+
+      - name: Compile current validators
+        run: |
+          python3 -m py_compile \
+            scripts/validate_repository_authority_integrity.py \
+            scripts/validate_public_projection_wave12.py \
+            scripts/validate_heart_p0_dossiers.py \
+            scripts/validate_atlas_pihahiroth.py \
+            scripts/build_baptist_scan_request_package.py \
+            scripts/validate_gill_closed_book_families.py \
+            scripts/validate_source_url_replacements.py \
+            scripts/validate_research_stage_closure.py
+
+      - name: Validate control plane
+        run: python3 scripts/validate_repository_authority_integrity.py
+
+      - name: Validate OSK Wave 12 publication and projection
+        run: python3 scripts/validate_public_projection_wave12.py
+
+      - name: Validate Heart P0 evidence closure
+        run: python3 scripts/validate_heart_p0_dossiers.py
+
+      - name: Validate Atlas Pihahiroth uncertainty authority
+        run: python3 scripts/validate_atlas_pihahiroth.py
+
+      - name: Validate Baptist request and receipt lane
+        run: python3 scripts/build_baptist_scan_request_package.py
+
+      - name: Validate Gill closed-book families
+        run: python3 scripts/validate_gill_closed_book_families.py
+
+      - name: Validate Source Library replacements
+        run: python3 scripts/validate_source_url_replacements.py
+
+      - name: Validate root stage composition
+        run: python3 scripts/validate_research_stage_closure.py
+
+      - name: Ensure all validators are read-only
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
