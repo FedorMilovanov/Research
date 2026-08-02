@@ -38,6 +38,7 @@ jobs:
             scripts/validate_baptist_derivative_transcriptions.py
             scripts/validate_gill_closed_book_families.py
             scripts/validate_atlas_pihahiroth.py
+            scripts/validate_source_url_replacements.py
           )
 
           for attempt in 1 2 3 4; do
@@ -75,6 +76,7 @@ jobs:
               'validate_baptist_derivative_transcriptions',
               'validate_gill_closed_book_families',
               'validate_atlas_pihahiroth',
+              'validate_source_url_replacements',
           ]
           authority_files = [
               'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md',
@@ -86,6 +88,8 @@ jobs:
               'data/gill-closed-book-families-2026-08-02.json',
               'БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md',
               'data/atlas-pihahiroth-authority-2026-08-02.json',
+              'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md',
+              'data/source-url-replacements-2026-08-02.json',
           ]
           evidence = []
           for relative in authority_files:
@@ -125,6 +129,7 @@ jobs:
                   'baptistAcquisitionAndSourceClass': 'PASS',
                   'gillClosedBookFamilies': 'PASS',
                   'atlasPihahirothResearchAuthority': 'PASS',
+                  'sourceLibraryUrlAndRightsAuthority': 'PASS',
               },
               'boundaries': {
                   'productDeploymentWitnessIncluded': False,
@@ -132,6 +137,7 @@ jobs:
                   'closedBookFilesClaimedReceived': False,
                   'baptistCorpusQuoteReadyClaimed': False,
                   'atlasExactCoordinateClaimed': False,
+                  'sourceLibraryTrueDeadQueueClaimedClosed': False,
               },
           }
           out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
