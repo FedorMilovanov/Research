@@ -1,0 +1,39 @@
+name: Branch retirement authority
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'data/branch-retirement-authority-2026-08-02.json'
+      - 'archive-ledgers/CURRENT_BRANCH_RETIREMENT_AUTHORITY_2026-08-02.md'
+      - 'scripts/validate_branch_retirement_authority.py'
+      - '.github/workflows/branch-retirement-authority.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'data/branch-retirement-authority-2026-08-02.json'
+      - 'archive-ledgers/CURRENT_BRANCH_RETIREMENT_AUTHORITY_2026-08-02.md'
+      - 'scripts/validate_branch_retirement_authority.py'
+      - '.github/workflows/branch-retirement-authority.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout complete history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Compile validator
+        run: python3 -m py_compile scripts/validate_branch_retirement_authority.py
+
+      - name: Validate remote refs and forensic archive
+        run: python3 scripts/validate_branch_retirement_authority.py
+
+      - name: Ensure read-only validation
+        run: git diff --exit-code
