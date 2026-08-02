@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "BAPTIST-DERIVATIVE-TRANSCRIPTIONS-2026-08-02",
+  "status": "CURRENT_SOURCE_CLASS_OVERLAY_NOT_PRIMARY_QUOTE_AUTHORITY",
+  "composes": "BAPTIST-ACQUISITION-PROOF-AUTHORITY-2026-08-02",
+  "classificationRule": "MODERN_TYPED_TEXT_WITHOUT_ARCHIVAL_PAGE_IMAGE_OR_EDITION_PROVENANCE_IS_DERIVATIVE_TRANSCRIPTION",
+  "permittedUse": [
+    "NAVIGATION",
+    "SEARCH_TARGET_DISCOVERY",
+    "WORKING_PARAPHRASE_WITH_DERIVATIVE_DISCLOSURE"
+  ],
+  "forbiddenUse": [
+    "PRIMARY_QUOTATION_WITHOUT_ORIGINAL_OR_EDITION_CHECK",
+    "ARCHIVAL_FACSIMILE_CLAIM",
+    "ORIGINAL_ORTHOGRAPHY_OR_SIGNATURE_CLAIM",
+    "COMPLETENESS_CLAIM"
+  ],
+  "records": [
+    {
+      "id": "SHILOV-LENIN-1919-DERIVATIVE-2026-08-02",
+      "historicalTarget": "LETTER_DATED_1919-12-11_PLUS_1920_RESPONSE",
+      "fileName": "Письмо Шилова Ленину (1).pdf",
+      "canonicalDriveId": "12PD_RzFXLcKrIYy9ubfskvRKVPj7FlOc",
+      "rawDuplicateDriveId": "1iJhvJ7UjlyhNZAXk586sZzRTa37mKLmf",
+      "canonicalFolderDriveId": "1-vmWwdvYcF8RqFdPr4aWO5REp_mic9Aq",
+      "bytes": 79460,
+      "pages": 3,
+      "sha256": "7c9674b65e15bf76c1833ba0b99b4d735e2c9f3f268351af17f8206516003327",
+      "pdfMetadata": {
+        "author": "Алексей Синичкин",
+        "creator": "Microsoft Word",
+        "creationDate": "2024-04-18"
+      },
+      "masterAcquisitionRow": 53,
+      "masterLibraryRow": 100,
+      "sourceClass": "DERIVATIVE_TRANSCRIPTION",
+      "facsimileState": "NOT_ARCHIVAL_FACSIMILE",
+      "provenanceState": "ARCHIVAL_ORIGINAL_AND_EDITION_NOT_IDENTIFIED",
+      "primaryQuoteState": "NOT_APPROVED",
+      "receipt": "RUSSIAN_BAPTISTS_ARCHIVE/SHILOV_LENIN_1919_DERIVATIVE_CLASSIFICATION_2026-08-02.md",
+      "acquisitionReceipt": "RUSSIAN_BAPTISTS_ARCHIVE/drive_acquisition_delta_2026-08-02-b.csv"
+    },
+    {
+      "id": "MOSCOW-COMMUNITY-1923-DERIVATIVE-2026-08-02",
+      "historicalTarget": "MOSCOW_EVANGELICAL_CHRISTIAN_COMMUNITY_STATEMENT_1923",
+      "fileName": "Заявление Московской Общины  1923.pdf",
+      "canonicalDriveId": "1xBpAmUxoERAZJULqnmevSr5zjgReWAGi",
+      "rawDuplicateDriveId": "1ag6DMRa4UO3Pz3SbKRue6LpTR4gL6a1E",
+      "canonicalFolderDriveId": "1-vmWwdvYcF8RqFdPr4aWO5REp_mic9Aq",
+      "bytes": 119979,
+      "pages": 8,
+      "sha256": "c6ef11f8b2fef460bcc083709e0a74fcc6c29a70c353ac73fbff0907126cb8a0",
+      "pdfMetadata": {
+        "author": "Алексей Синичкин",
+        "creator": "Microsoft Word",
+        "creationDate": "2023-01-05"
+      },
+      "masterAcquisitionRow": 54,
+      "masterLibraryRow": 92,
+      "sourceClass": "DERIVATIVE_TRANSCRIPTION",
+      "facsimileState": "NOT_ARCHIVAL_FACSIMILE",
+      "provenanceState": "ARCHIVAL_ORIGINAL_AND_EDITION_NOT_IDENTIFIED",
+      "primaryQuoteState": "NOT_APPROVED",
+      "receipt": "RUSSIAN_BAPTISTS_ARCHIVE/MOSCOW_COMMUNITY_1923_DERIVATIVE_CLASSIFICATION_2026-08-02.md",
+      "acquisitionReceipt": "RUSSIAN_BAPTISTS_ARCHIVE/drive_acquisition_delta_2026-08-02-c.csv"
+    }
+  ],
+  "counts": {
+    "records": 2,
+    "canonicalDriveRegistered": 2,
+    "textLayerPresent": 2,
+    "derivativeTranscriptions": 2,
+    "archivalFacsimiles": 0,
+    "primaryQuoteReady": 0,
+    "provenanceRestored": 0
+  },
+  "boundaries": {
+    "underlyingHistoricalTextsDenied": false,
+    "facsimileAuthorityClaimed": false,
+    "primaryQuoteAuthorityClaimed": false,
+    "navigationUseAllowed": true
+  }
+}
