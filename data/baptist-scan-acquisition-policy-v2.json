@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "authorityId": "BAPTIST-SCAN-ACQUISITION-POLICY-2026-08-02",
+  "status": "CURRENT_FAIL_CLOSED",
+  "queueInput": "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv",
+  "legacyProofInput": "БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv",
+  "receiptManifest": "data/baptist-scan-receipts-v1.json",
+  "allowedStates": [
+    "CATALOG_VERIFIED_REQUEST_READY",
+    "REQUEST_SENT",
+    "RECEIVED_UNVERIFIED",
+    "FILE_VERIFIED",
+    "OCR_COMPLETE_VISUAL_PENDING",
+    "QUOTE_READY",
+    "RIGHTS_HOLD",
+    "REJECTED_NOT_SOURCE_FILE"
+  ],
+  "promotionRules": {
+    "CATALOG_VERIFIED_REQUEST_READY": [
+      "record_id",
+      "holding_or_provider",
+      "request_target",
+      "requested_item_designation",
+      "catalog_or_source_url",
+      "next_action"
+    ],
+    "REQUEST_SENT": [
+      "request_sent_at",
+      "request_channel",
+      "request_message_sha256"
+    ],
+    "RECEIVED_UNVERIFIED": [
+      "received_at",
+      "file_name",
+      "byte_size",
+      "sha256",
+      "storage_receipt"
+    ],
+    "FILE_VERIFIED": [
+      "format",
+      "page_count",
+      "title_page_visual_review",
+      "issue_identity_review",
+      "duplicate_check"
+    ],
+    "OCR_COMPLETE_VISUAL_PENDING": [
+      "ocr_engine",
+      "ocr_version",
+      "ocr_text_sha256",
+      "ocr_pages",
+      "visual_review_pending_pages"
+    ],
+    "QUOTE_READY": [
+      "quote_cards",
+      "page_locator_system",
+      "visual_review_completed_at",
+      "rights_state",
+      "rights_basis"
+    ]
+  },
+  "hardRules": [
+    "A catalog card, holding row, snippet, page count or Drive filename never proves that the source file was acquired.",
+    "Downloaded must mean byte_size plus SHA-256 plus durable storage receipt.",
+    "OCR text is never quote-ready until the cited page image has been visually checked.",
+    "A service manifest, viewer bootstrap JSON or identical placeholder file must be rejected as NOT_SOURCE_FILE.",
+    "Rights and quotation readiness are independent from file custody.",
+    "The append-only legacy proof ledger remains evidence history; machine consumers use normalized views and receipts."
+  ],
+  "custody": {
+    "actionsArtifactState": "EPHEMERAL_ACTION_ARTIFACT",
+    "durableStates": ["PRIVATE_DRIVE_RECEIPT_VERIFIED", "LIBRARY_RECEIPT_VERIFIED", "INSTITUTIONAL_DOWNLOAD_REPRODUCIBLE"],
+    "actionsArtifactAloneIsNeverAcquired": true
+  }
+}
