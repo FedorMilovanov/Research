@@ -127,7 +127,7 @@ readme_text = README.read_text(encoding="utf-8") if README.exists() else ""
 for marker in (
     "BAPTIST-ACQUISITION-PROOF-AUTHORITY-2026-08-02",
     "FAIL_CLOSED",
-    "VISUAL PAGE-CARD PASS PENDING",
+    "VISUAL PENDING",
     "PUBLICATION READINESS: NOT CLAIMED",
 ):
     require(marker in current_text.upper(), f"current authority marker missing: {marker}")
