@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "GILL-CLOSED-BOOK-FAMILIES-2026-08-02",
+  "status": "CURRENT_REQUEST_READY_NO_UNVERIFIED_PROMOTION",
+  "generatedAt": "2026-08-02",
+  "directQuotesApproved": false,
+  "receiptPolicy": {
+    "receivedRequires": ["file_name","byte_size","sha256","received_at","durable_storage_receipt"],
+    "usableRequires": ["edition_identity","title_page_review","page_count","toc_or_index_map","rights_state"],
+    "quoteReadyRequires": ["page_image_review","stable_locator","quote_card","context_window","rights_basis"],
+    "driveNameAloneIsReceipt": false,
+    "previewAloneIsFullText": false,
+    "bibliographyAloneSupportsClaim": false
+  },
+  "families": [
+    {
+      "id": "GILL-FAM-PARK",
+      "label": "Park scholarship family",
+      "status": "EXTERNAL_ACQUISITION_REQUIRED",
+      "ownerDocuments": ["Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md","Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md"],
+      "claimScopes": ["decline thesis","hyper-Calvinism terminology","reception history"],
+      "searchQueries": ["Park John Gill full text","Park Gill decline thesis PDF","Park John Gill dissertation"],
+      "acceptance": "Exact edition/full text or library scan with stable pages; abstract and quotation site remain navigation only."
+    },
+    {
+      "id": "GILL-FAM-STROTHER",
+      "label": "Strother scholarship family",
+      "status": "EXTERNAL_ACQUISITION_REQUIRED",
+      "ownerDocuments": ["Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md","Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md"],
+      "claimScopes": ["biography","doctoral scholarship","Gill and Particular Baptist context"],
+      "searchQueries": ["Strother John Gill dissertation full text","Strother Gill PDF"],
+      "acceptance": "Institutional repository file or verified scan; metadata record alone does not authorize page claims."
+    },
+    {
+      "id": "GILL-FAM-ASCOL",
+      "label": "Ascol offer and duty-faith family",
+      "status": "EXTERNAL_ACQUISITION_REQUIRED",
+      "ownerDocuments": ["Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md","Джон Гилл/44_PDF_PAGE_AUDIT_WHITEFIELD_OFFER_DUTY_FAITH.md","Джон Гилл/45_PRIMARY_GILL_GOSPEL_PROCLAMATION_EXTERNAL_CALL.md"],
+      "claimScopes": ["gospel offer","duty faith","external call","Gill reception"],
+      "searchQueries": ["Ascol John Gill gospel offer PDF","Thomas Ascol Gill duty faith full text"],
+      "acceptance": "Full text with pages and edition identity; snippets may not control quotation or conclusion."
+    },
+    {
+      "id": "GILL-FAM-WALDEN",
+      "label": "Walden legacy and reception family",
+      "status": "EXTERNAL_ACQUISITION_REQUIRED",
+      "ownerDocuments": ["Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md","Джон Гилл/51_BIOGRAPHY_CHURCH_LEGACY_EVIDENCE_REGISTER.md"],
+      "claimScopes": ["Gillites","later Baptist reception","legacy terminology"],
+      "searchQueries": ["Walden John Gill legacy full text","Walden Gillites PDF"],
+      "acceptance": "Verified complete work or scan; later summary cannot substitute for the cited historical argument."
+    },
+    {
+      "id": "GILL-FAM-BIOGRAPHICAL-PRIMARY",
+      "label": "Rippon Crosby White biographical witness editions",
+      "status": "PARTIAL_OPEN_ACCESS_ACQUISITION_REQUIRED",
+      "ownerDocuments": ["Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md","Джон Гилл/46_WHITEFIELD_PRIMARY_AND_LATE_WITNESS_SOURCE_CHAIN.md","Джон Гилл/51_BIOGRAPHY_CHURCH_LEGACY_EVIDENCE_REGISTER.md","Джон Гилл/52_ELIZABETH_GILL_AND_ARCHIVAL_EVIDENCE.md"],
+      "claimScopes": ["life chronology","church history","family testimony","contemporary reception"],
+      "searchQueries": ["John Rippon Memoir John Gill scan","Crosby History English Baptists Gill scan","John Gill biographical primary source scan"],
+      "acceptance": "Item-level public-domain scan with title page, edition, pages and provenance; OCR is only a navigation layer."
+    },
+    {
+      "id": "GILL-FAM-FIRST-EDITIONS",
+      "label": "Gill first-edition and edition-conflict family",
+      "status": "PARTIAL_OPEN_ACCESS_ACQUISITION_REQUIRED",
+      "ownerDocuments": ["Джон Гилл/55_PUBLICATION_CHRONOLOGY_EDITIONS_AND_DATE_CONFLICTS.md","Джон Гилл/56_FIRST_EDITION_DATE_RESOLUTION.md","Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md"],
+      "claimScopes": ["first edition dates","title wording","edition sequence","page-stable primary quotation"],
+      "searchQueries": ["John Gill first edition scan","John Gill ESTC scan","John Gill HathiTrust Internet Archive first edition"],
+      "acceptance": "Bibliographic record plus visual title-page witness; publication date claims require edition-specific evidence."
+    },
+    {
+      "id": "GILL-FAM-CANONICAL-PHYSICAL-PACKAGE",
+      "label": "Canonical physical archive package",
+      "status": "PACKAGE_IDENTITY_UNRESOLVED",
+      "ownerDocuments": ["Джон Гилл/70_PR2_PRIMARY_VERIFIABILITY_NAVIGATION.md","Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md","Джон Гилл/00_README_AND_NAVIGATION.md"],
+      "claimScopes": ["closed-book archive provenance","physical custody","family-to-witness mapping"],
+      "searchQueries": ["Gill archive package","Джон Гилл архив","GILL source archive ZIP","Gill closed books"],
+      "acceptance": "One named package or manifest with file list, byte sizes, SHA-256, storage receipt and mapping to the Gill witness registry."
+    }
+  ],
+  "receipts": [],
+  "counts": {
+    "families": 7,
+    "verifiedPackageReceipts": 0,
+    "quoteReadyFamilies": 0,
+    "directQuotesApproved": 0
+  },
+  "boundary": "The acquisition matrix closes ownership and acceptance criteria. It does not claim that external books or the physical package have been received."
+}
