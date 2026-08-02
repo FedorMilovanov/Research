@@ -1,0 +1,159 @@
+name: Research closure witness
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/research-closure-witness.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-closure-witness
+  cancel-in-progress: false
+
+jobs:
+  witness:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout complete Research history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+
+      - name: Validate latest main and commit exact witness
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          validators=(
+            scripts/check_heart_source_closure.py
+            scripts/validate_heart_p0_dossiers.py
+            scripts/validate_baptist_acquisition_authority.py
+            scripts/validate_baptist_derivative_transcriptions.py
+            scripts/validate_gill_closed_book_families.py
+            scripts/validate_atlas_pihahiroth.py
+          )
+
+          for attempt in 1 2 3 4; do
+            echo "Research witness attempt ${attempt}"
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf /tmp/research-closure-witness
+            mkdir -p /tmp/research-closure-witness
+
+            for validator in "${validators[@]}"; do
+              test -f "$validator"
+              python3 -m py_compile "$validator"
+              slug="$(basename "$validator" .py)"
+              python3 "$validator" | tee "/tmp/research-closure-witness/${slug}.stdout.txt"
+            done
+
+            git diff --exit-code
+            test -z "$(git status --porcelain)"
+
+            python3 <<'PY'
+          from __future__ import annotations
+          import hashlib
+          import json
+          import pathlib
+          import subprocess
+          from datetime import datetime, timezone
+
+          root = pathlib.Path.cwd()
+          out = root / 'data/research-closure-witness-2026-08-02.json'
+          tested = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          validators = [
+              'check_heart_source_closure',
+              'validate_heart_p0_dossiers',
+              'validate_baptist_acquisition_authority',
+              'validate_baptist_derivative_transcriptions',
+              'validate_gill_closed_book_families',
+              'validate_atlas_pihahiroth',
+          ]
+          authority_files = [
+              'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md',
+              'data/heart-p0-architecture-dossiers-2026-08-02.json',
+              'RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md',
+              'data/baptist-acquisition-proof-authority-2026-08-02.json',
+              'data/baptist-derivative-transcription-authority-2026-08-02.json',
+              'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md',
+              'data/gill-closed-book-families-2026-08-02.json',
+              'БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md',
+              'data/atlas-pihahiroth-authority-2026-08-02.json',
+          ]
+          evidence = []
+          for relative in authority_files:
+              path = root / relative
+              if not path.is_file():
+                  raise SystemExit(f'missing authority file: {relative}')
+              data = path.read_bytes()
+              evidence.append({
+                  'path': relative,
+                  'bytes': len(data),
+                  'sha256': hashlib.sha256(data).hexdigest(),
+                  'gitBlobSha': subprocess.check_output(['git', 'hash-object', str(path)], text=True).strip(),
+              })
+          runs = []
+          for name in validators:
+              stdout_path = pathlib.Path('/tmp/research-closure-witness') / f'{name}.stdout.txt'
+              output = stdout_path.read_text(encoding='utf-8').strip()
+              if not output:
+                  raise SystemExit(f'empty validator output: {name}')
+              runs.append({
+                  'validator': f'scripts/{name}.py',
+                  'status': 'PASS',
+                  'stdout': output,
+                  'stdoutSha256': hashlib.sha256(output.encode('utf-8')).hexdigest(),
+              })
+          payload = {
+              'schemaVersion': 1,
+              'authorityId': 'RESEARCH-CLOSURE-WITNESS-2026-08-02',
+              'generatedAt': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+              'testedCommit': tested,
+              'branch': 'main',
+              'status': 'ALL_LISTED_VALIDATORS_PASSED_CLEAN_TREE',
+              'validators': runs,
+              'authorityFiles': evidence,
+              'domains': {
+                  'heart': 'PASS',
+                  'baptistAcquisitionAndSourceClass': 'PASS',
+                  'gillClosedBookFamilies': 'PASS',
+                  'atlasPihahirothResearchAuthority': 'PASS',
+              },
+              'boundaries': {
+                  'productDeploymentWitnessIncluded': False,
+                  'externalPaidAcquisitionsIncluded': False,
+                  'closedBookFilesClaimedReceived': False,
+                  'baptistCorpusQuoteReadyClaimed': False,
+                  'atlasExactCoordinateClaimed': False,
+              },
+          }
+          out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+            git diff --check
+            git diff --name-only -- . \
+              ':(exclude)data/research-closure-witness-2026-08-02.json' > /tmp/unexpected-witness-paths
+            if [[ -s /tmp/unexpected-witness-paths ]]; then
+              echo 'Unexpected Research witness paths:' >&2
+              cat /tmp/unexpected-witness-paths >&2
+              exit 1
+            fi
+
+            git add data/research-closure-witness-2026-08-02.json
+            git commit -m 'ci(research): record consolidated closure witness'
+            if git push origin HEAD:main; then
+              echo 'Research closure witness committed to main.'
+              exit 0
+            fi
+            echo 'Research main advanced; retrying every validator on the new head.' >&2
+          done
+
+          echo 'Could not push Research closure witness after four fresh-main attempts.' >&2
+          exit 1
