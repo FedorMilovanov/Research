@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02",
+  "status": "CURRENT_EVIDENCE_AND_BOUNDARY_CLOSED",
+  "generatedAt": "2026-08-02",
+  "scope": [
+    "I.2 Сердце в Эдеме",
+    "III.3 Сокрушённое сердце: покаяние",
+    "X.1 Суд сердца: два воскресения"
+  ],
+  "directQuotesApproved": false,
+  "publicationEligible": true,
+  "dossiers": [
+    {
+      "id": "HEART-P0-EDEN",
+      "path": "СЕРИЯ СЕРДЦЕ/75_P0_EDEN_HEART_CREATED_AND_FALLEN_2026-08-02.md",
+      "chapter": "I.2",
+      "title": "Сердце в Эдеме: сотворённое и падшее",
+      "claimIds": ["EDEN-01","EDEN-02","EDEN-03","EDEN-04","EDEN-05","EDEN-06","EDEN-07","EDEN-08"]
+    },
+    {
+      "id": "HEART-P0-REPENTANCE",
+      "path": "СЕРИЯ СЕРДЦЕ/76_P0_BROKEN_HEART_REPENTANCE_2026-08-02.md",
+      "chapter": "III.3",
+      "title": "Сокрушённое сердце: покаяние",
+      "claimIds": ["REP-01","REP-02","REP-03","REP-04","REP-05","REP-06","REP-07","REP-08"]
+    },
+    {
+      "id": "HEART-P0-JUDGMENT",
+      "path": "СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md",
+      "chapter": "X.1",
+      "title": "Суд сердца: два воскресения",
+      "claimIds": ["JUDG-01","JUDG-02","JUDG-03","JUDG-04","JUDG-05","JUDG-06","JUDG-07","JUDG-08","JUDG-09","JUDG-10"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "HP0-S01",
+      "class": "A1",
+      "type": "primary_text_dataset",
+      "title": "Open Scriptures MorphHB — Westminster Leningrad Codex with morphology",
+      "url": "https://github.com/openscriptures/morphhb",
+      "locators": ["Gen 1:26-31","Gen 2:7-25","Gen 3:1-24","Eccl 7:29","Ps 51:3-19","Dan 12:2"],
+      "use": "Hebrew textual control; no dataset wording is quoted in the dossiers"
+    },
+    {
+      "id": "HP0-S02",
+      "class": "A1",
+      "type": "primary_text_dataset",
+      "title": "STEPBible Data",
+      "url": "https://github.com/STEPBible/STEPBible-Data",
+      "locators": ["Hebrew and Greek lexical/morphological datasets for named loci"],
+      "use": "Independent lexical and morphology cross-check"
+    },
+    {
+      "id": "HP0-S03",
+      "class": "A1",
+      "type": "primary_text_dataset",
+      "title": "SBL Greek New Testament",
+      "url": "https://github.com/Faithlife/SBLGNT",
+      "locators": ["Rom 5:12-21","Eph 4:22-24","Col 3:9-10","2 Cor 7:8-11","John 5:24-29","Acts 24:15","Rev 20:4-15","Luke 16:19-31"],
+      "use": "Greek textual control; no new direct quotation is approved"
+    },
+    {
+      "id": "HP0-S04",
+      "class": "A2",
+      "type": "confessional_primary",
+      "title": "Westminster Confession of Faith",
+      "url": "https://opc.org/WCF-WIP.html",
+      "locators": ["4.2","6.1-6","9.2-5","15.1-6","32.1-3","33.1-3"],
+      "use": "Reformed synthesis for creation, fall, repentance, resurrection and judgment"
+    },
+    {
+      "id": "HP0-S05",
+      "class": "A2",
+      "type": "confessional_primary",
+      "title": "Second London Baptist Confession 1689 — Of Creation",
+      "url": "https://www.the1689confession.com/1689/chapter-4",
+      "locators": ["4.1-3"],
+      "use": "Baptist confessional formulation of original image, righteousness, holiness and mutable obedience"
+    },
+    {
+      "id": "HP0-S06",
+      "class": "A2",
+      "type": "confessional_primary",
+      "title": "Second London Baptist Confession 1689 — Of the Fall of Man",
+      "url": "https://www.the1689confession.com/1689/chapter-6",
+      "locators": ["6.1-5"],
+      "use": "Baptist confessional formulation of fall, corruption and actual sins"
+    },
+    {
+      "id": "HP0-S07",
+      "class": "A2",
+      "type": "confessional_primary",
+      "title": "Second London Baptist Confession 1689 — Repentance unto Life and Salvation",
+      "url": "https://www.the1689confession.com/1689/chapter-15",
+      "locators": ["15.1-5"],
+      "use": "Repentance as evangelical grace, particular confession and non-meritorious necessity"
+    },
+    {
+      "id": "HP0-S08",
+      "class": "A2",
+      "type": "confessional_primary",
+      "title": "Second London Baptist Confession 1689 — State after Death and Resurrection",
+      "url": "https://www.the1689confession.com/1689/chapter-31",
+      "locators": ["31.1-3"],
+      "use": "Intermediate state, bodily resurrection and distinct outcomes"
+    },
+    {
+      "id": "HP0-S09",
+      "class": "A2",
+      "type": "confessional_primary",
+      "title": "Second London Baptist Confession 1689 — Last Judgement",
+      "url": "https://www.the1689confession.com/chapter-32",
+      "locators": ["32.1-3"],
+      "use": "Universal judgment, works as public evidence, eternal outcomes and pastoral purpose"
+    },
+    {
+      "id": "HP0-S10",
+      "class": "A2",
+      "type": "primary_theology",
+      "title": "John Calvin, Institutes I.15",
+      "url": "https://ccel.org/ccel/calvin/institutes/institutes.iii.xvi.html",
+      "locators": ["I.15.1-8"],
+      "use": "Created state, image of God, faculties and original righteousness"
+    },
+    {
+      "id": "HP0-S11",
+      "class": "A2",
+      "type": "primary_theology",
+      "title": "John Calvin, Institutes II.1",
+      "url": "https://www.ccel.org/ccel/calvin/institutes.vii.ii.html",
+      "locators": ["II.1.1-11"],
+      "use": "Fall, unbelief, ingratitude, corruption and retained creaturely identity"
+    },
+    {
+      "id": "HP0-S12",
+      "class": "A2",
+      "type": "primary_theology",
+      "title": "John Calvin, Institutes III.3",
+      "url": "https://www.ccel.org/ccel/calvin/institutes.v.iv.html",
+      "locators": ["III.3.1-24"],
+      "use": "Repentance following faith, mortification, vivification and lifelong fruit"
+    },
+    {
+      "id": "HP0-S13",
+      "class": "A2",
+      "type": "primary_theology",
+      "title": "John Calvin, Institutes III.25",
+      "url": "https://ccel.org/ccel/calvin/institutes/institutes.v.xxvi.html",
+      "locators": ["III.25.1-12"],
+      "use": "Final bodily resurrection, continuity of identity and eternal outcomes"
+    },
+    {
+      "id": "HP0-S14",
+      "class": "A2",
+      "type": "primary_theology",
+      "title": "John Owen, Practical Exposition upon Psalm 130",
+      "url": "https://ccel.org/ccel/owen/psalm130/psalm130.i.ix.xviii.ii.html",
+      "locators": ["Psalm 130 exposition, gospel sorrow and assurance section"],
+      "use": "Distinction between legal sorrow, presumption and gospel sorrow joined to forgiveness"
+    },
+    {
+      "id": "HP0-S15",
+      "class": "A2",
+      "type": "primary_theology",
+      "title": "Thomas Watson, Body of Divinity",
+      "url": "https://www.ccel.org/ccel/watson/divinity.ix.iii.html",
+      "locators": ["Justification and repentance discussion"],
+      "use": "Repentance is necessary but not the meritorious cause of justification"
+    },
+    {
+      "id": "HP0-S16",
+      "class": "A2",
+      "type": "primary_theology",
+      "title": "John Owen, Vindiciae Evangelicae, chapter XXXV",
+      "url": "https://ccel.org/ccel/owen/vindicevang/vindicevang.i.xlii.html",
+      "locators": ["Chapter XXXV: resurrection and final state of the wicked"],
+      "use": "Historical Reformed defense of resurrection and final judgment"
+    },
+    {
+      "id": "HP0-S17",
+      "class": "A2",
+      "type": "primary_commentary",
+      "title": "John Calvin, Commentary on the Synoptic Gospels",
+      "url": "https://www.ccel.org/ccel/calvin/calcom33.ii.vi.html",
+      "locators": ["Matt 22:23-33 / Mark 12:18-27 / Luke 20:27-40"],
+      "use": "Resurrection identity, transformed life and God of the living"
+    }
+  ],
+  "claims": [
+    {
+      "id": "EDEN-01",
+      "dossierId": "HEART-P0-EDEN",
+      "status": "CLOSED",
+      "claim": "Humanity was created good, personal, embodied and in God's image; the original inner life was not morally neutral or already divided against God.",
+      "support": ["HP0-S01","HP0-S04","HP0-S05","HP0-S10"],
+      "locators": ["Gen 1:26-31","Eccl 7:29","WCF 4.2","1689 4.2","Calvin I.15"],
+      "publicationBoundary": "Do not describe innocence as saving union with Christ or immutable holiness."
+    },
+    {
+      "id": "EDEN-02",
+      "dossierId": "HEART-P0-EDEN",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "Genesis 1-2 does not use one technical heart term as a complete anthropology; 'heart in Eden' is a canonical synthesis of knowledge, desire, will, communion and obedience.",
+      "support": ["HP0-S01","HP0-S02","HP0-S10"],
+      "locators": ["Gen 1-2","Calvin I.15.3-8"],
+      "publicationBoundary": "Never claim that Genesis explicitly labels every pre-fall faculty 'heart'."
+    },
+    {
+      "id": "EDEN-03",
+      "dossierId": "HEART-P0-EDEN",
+      "status": "CLOSED",
+      "claim": "The created person possessed real moral ability and a mutable obedience under God's command.",
+      "support": ["HP0-S01","HP0-S04","HP0-S05"],
+      "locators": ["Gen 2:15-17","WCF 4.2; 9.2","1689 4.2-3"],
+      "publicationBoundary": "Ability before the fall must not be projected onto fallen humanity."
+    },
+    {
+      "id": "EDEN-04",
+      "dossierId": "HEART-P0-EDEN",
+      "status": "CLOSED",
+      "claim": "The fall involved unbelief toward God's word, autonomous moral judgment, disordered desire and overt transgression.",
+      "support": ["HP0-S01","HP0-S06","HP0-S11"],
+      "locators": ["Gen 3:1-6","1689 6.1-2","Calvin II.1"],
+      "publicationBoundary": "Do not invent Eve's psychology beyond the narrative's speech, sight, desire and action."
+    },
+    {
+      "id": "EDEN-05",
+      "dossierId": "HEART-P0-EDEN",
+      "status": "CLOSED",
+      "claim": "After transgression, shame, concealment, blame and exile reveal rupture with God, self, neighbor and creation.",
+      "support": ["HP0-S01","HP0-S06"],
+      "locators": ["Gen 3:7-24","1689 6.2-5"],
+      "publicationBoundary": "The narrative sequence is evidence; modern clinical labels are not."
+    },
+    {
+      "id": "EDEN-06",
+      "dossierId": "HEART-P0-EDEN",
+      "status": "CLOSED",
+      "claim": "The fall corrupts every faculty without erasing human creaturehood or the continuing image-bearing status of humanity.",
+      "support": ["HP0-S04","HP0-S06","HP0-S11"],
+      "locators": ["WCF 6.2-4","1689 6.2-4","Calvin II.1"],
+      "publicationBoundary": "Total corruption means pervasive corruption, not maximal evil in every person or loss of rational/personhood."
+    },
+    {
+      "id": "EDEN-07",
+      "dossierId": "HEART-P0-EDEN",
+      "status": "CLOSED",
+      "claim": "Romans 5 treats Adam as the representative root through whom sin and death enter, while Christ is the obedient head of the new humanity.",
+      "support": ["HP0-S03","HP0-S04","HP0-S06"],
+      "locators": ["Rom 5:12-21","WCF 6.3","1689 6.3"],
+      "publicationBoundary": "Do not reduce inherited corruption to imitation alone."
+    },
+    {
+      "id": "EDEN-08",
+      "dossierId": "HEART-P0-EDEN",
+      "status": "CLOSED",
+      "claim": "The restoration of the human inner life is Christ-shaped renewal in knowledge, righteousness and holiness, not a return to autonomous innocence.",
+      "support": ["HP0-S03","HP0-S04","HP0-S05"],
+      "locators": ["Eph 4:22-24","Col 3:9-10","WCF 13.1"],
+      "publicationBoundary": "The chapter should move from Eden to Christ rather than ending with introspective diagnosis."
+    },
+    {
+      "id": "REP-01",
+      "dossierId": "HEART-P0-REPENTANCE",
+      "status": "CLOSED",
+      "claim": "Biblical brokenness is Godward recognition and turning from concrete sin, not emotional collapse as an end in itself.",
+      "support": ["HP0-S01","HP0-S03","HP0-S07","HP0-S12"],
+      "locators": ["Ps 51:3-6","2 Cor 7:8-11","1689 15.1-3","Calvin III.3"],
+      "publicationBoundary": "Intensity of feeling alone neither proves nor disproves repentance."
+    },
+    {
+      "id": "REP-02",
+      "dossierId": "HEART-P0-REPENTANCE",
+      "status": "CLOSED",
+      "claim": "Psalm 51 joins confession, appeal to mercy, cleansing, renewed inner life and the broken spirit; sorrow does not atone for sin.",
+      "support": ["HP0-S01","HP0-S07","HP0-S14"],
+      "locators": ["Ps 51:3-19","1689 15.3","Owen on Psalm 130"],
+      "publicationBoundary": "Do not make contrition a payment offered to God."
+    },
+    {
+      "id": "REP-03",
+      "dossierId": "HEART-P0-REPENTANCE",
+      "status": "CLOSED",
+      "claim": "Second Corinthians 7 distinguishes godly and worldly sorrow by their Godward direction and fruit, not by tears, duration or temperament.",
+      "support": ["HP0-S03","HP0-S07","HP0-S12"],
+      "locators": ["2 Cor 7:8-11","1689 15.2","Calvin III.3"],
+      "publicationBoundary": "Do not diagnose a person's repentance from outward affect alone."
+    },
+    {
+      "id": "REP-04",
+      "dossierId": "HEART-P0-REPENTANCE",
+      "status": "CLOSED",
+      "claim": "Evangelical repentance follows and accompanies faith; it is necessary but never the meritorious cause of pardon or justification.",
+      "support": ["HP0-S04","HP0-S07","HP0-S12","HP0-S15"],
+      "locators": ["WCF 15.3","1689 15.3","Calvin III.3.1-5","Watson, justification discussion"],
+      "publicationBoundary": "Avoid both legalism and antinomian denial of repentance."
+    },
+    {
+      "id": "REP-05",
+      "dossierId": "HEART-P0-REPENTANCE",
+      "status": "CLOSED",
+      "claim": "Known particular sins call for particular confession and fitting fruit toward those harmed, while confession remains ordered by truth, safety and proper jurisdiction.",
+      "support": ["HP0-S04","HP0-S07"],
+      "locators": ["WCF 15.5-6","1689 15.4-5"],
+      "publicationBoundary": "Do not demand public disclosure of private trauma or details that expose victims."
+    },
+    {
+      "id": "REP-06",
+      "dossierId": "HEART-P0-REPENTANCE",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "Regret, shame, fear of consequences and self-condemnation can coexist with refusal to turn to God; Judas and Esau are warning analogies, not mechanical tests for another person's heart.",
+      "support": ["HP0-S03","HP0-S12","HP0-S14"],
+      "locators": ["Matt 27:3-5","Heb 12:16-17","2 Cor 7:10","Calvin III.3","Owen on gospel sorrow"],
+      "publicationBoundary": "Do not pronounce final apostasy from one episode of grief or relapse."
+    },
+    {
+      "id": "REP-07",
+      "dossierId": "HEART-P0-REPENTANCE",
+      "status": "CLOSED",
+      "claim": "True repentance bears observable fruit, but fruit is proportionate, temporal and concrete rather than a staged performance demanded for acceptance.",
+      "support": ["HP0-S03","HP0-S07","HP0-S12"],
+      "locators": ["Luke 3:8-14","Acts 26:20","1689 15.2,5","Calvin III.3.15-20"],
+      "publicationBoundary": "Church leaders must not turn fruit into an indefinite probation controlled by themselves."
+    },
+    {
+      "id": "REP-08",
+      "dossierId": "HEART-P0-REPENTANCE",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "Depression, trauma response, exhaustion or muted affect are not themselves evidence of impenitence; repentance is judged by truthward turning and fruit, not emotional style.",
+      "support": ["HP0-S03","HP0-S14"],
+      "locators": ["2 Cor 7:8-11","Owen on gospel sorrow and assurance"],
+      "publicationBoundary": "The chapter must not medicalize sin or moralize illness."
+    },
+    {
+      "id": "JUDG-01",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "CLOSED",
+      "claim": "Scripture teaches a resurrection of both the just and the unjust under Christ's authority.",
+      "support": ["HP0-S03","HP0-S04","HP0-S08","HP0-S13"],
+      "locators": ["John 5:28-29","Acts 24:15","WCF 32.2-3","1689 31.2-3","Calvin III.25"],
+      "publicationBoundary": "Do not speak as if only believers are bodily raised."
+    },
+    {
+      "id": "JUDG-02",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "John 5:28-29 places both outcomes under one summons and authority but does not by itself settle every question about millennial sequencing.",
+      "support": ["HP0-S03","HP0-S08"],
+      "locators": ["John 5:24-29","1689 31.3"],
+      "publicationBoundary": "Do not make the singular 'hour' carry more chronological precision than the discourse supplies."
+    },
+    {
+      "id": "JUDG-03",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "Revelation 20 distinguishes the first resurrection and the later judgment, but orthodox interpreters disagree whether the first resurrection is bodily, spiritual or representative; the chapter must disclose the chosen reading.",
+      "support": ["HP0-S03","HP0-S04","HP0-S09","HP0-S13"],
+      "locators": ["Rev 20:4-15","WCF 32-33","1689 31-32","Calvin III.25"],
+      "publicationBoundary": "Do not present one millennial system as the lexical meaning of John 5."
+    },
+    {
+      "id": "JUDG-04",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "CLOSED",
+      "claim": "The final judgment publicly evaluates thoughts, words and deeds; works manifest allegiance and the justice of the verdict but do not become the meritorious ground of justification.",
+      "support": ["HP0-S03","HP0-S04","HP0-S09","HP0-S15"],
+      "locators": ["2 Cor 5:10","Matt 25:31-46","Rev 20:12-13","WCF 33.1","1689 32.1","Watson"],
+      "publicationBoundary": "Avoid both salvation by works and a judgment emptied of moral evidence."
+    },
+    {
+      "id": "JUDG-05",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "Luke 16 supports conscious personal distinction after death and before final resurrection, but the parable is not an exhaustive map of the unseen world.",
+      "support": ["HP0-S03","HP0-S04","HP0-S08"],
+      "locators": ["Luke 16:19-31","WCF 32.1","1689 31.1"],
+      "publicationBoundary": "Do not turn narrative imagery into coordinates, timings or speculative topography."
+    },
+    {
+      "id": "JUDG-06",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "CLOSED",
+      "claim": "Resurrection preserves personal and bodily identity while transforming the qualities of the raised body.",
+      "support": ["HP0-S03","HP0-S04","HP0-S08","HP0-S13","HP0-S17"],
+      "locators": ["1 Cor 15:35-54","Phil 3:20-21","WCF 32.2-3","1689 31.2-3","Calvin III.25"],
+      "publicationBoundary": "Avoid both crude material continuity and a merely disembodied afterlife."
+    },
+    {
+      "id": "JUDG-07",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "CLOSED",
+      "claim": "The final outcomes are life in God's presence and irreversible judgment, not an endless postmortem probation.",
+      "support": ["HP0-S03","HP0-S04","HP0-S09","HP0-S16"],
+      "locators": ["Matt 25:46","2 Thess 1:7-10","Rev 20:14-15","WCF 33.2","1689 32.2","Owen, Vindiciae XXXV"],
+      "publicationBoundary": "Do not claim more about degrees or mechanisms of punishment than the cited texts support."
+    },
+    {
+      "id": "JUDG-08",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "CLOSED",
+      "claim": "For believers, assurance at judgment rests in Christ, his righteousness and union with him; transformed life is evidence and fruit, not a competing foundation.",
+      "support": ["HP0-S03","HP0-S04","HP0-S09","HP0-S13"],
+      "locators": ["John 5:24","Rom 8:1,30-34","WCF 33.2-3","Calvin III.25"],
+      "publicationBoundary": "The chapter must end in Christ rather than self-salvation through heart inspection."
+    },
+    {
+      "id": "JUDG-09",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "CLOSED",
+      "claim": "The doctrine of judgment exposes the moral seriousness of the present heart and comforts the oppressed because hidden truth will be brought under Christ's just verdict.",
+      "support": ["HP0-S03","HP0-S04","HP0-S09"],
+      "locators": ["Eccl 12:14","Rom 2:16","1 Cor 4:5","WCF 33.3","1689 32.3"],
+      "publicationBoundary": "Do not weaponize final judgment to silence lawful appeal, reporting or present accountability."
+    },
+    {
+      "id": "JUDG-10",
+      "dossierId": "HEART-P0-JUDGMENT",
+      "status": "BOUNDARY_CLOSED",
+      "claim": "The date and detailed mechanics of the last day are not disclosed for calculation; watchfulness and hope are the intended pastoral uses.",
+      "support": ["HP0-S03","HP0-S04","HP0-S09"],
+      "locators": ["Mark 13:32-37","Acts 1:7","WCF 33.3","1689 32.3"],
+      "publicationBoundary": "No date-setting, newspaper exegesis or speculative resurrection timetable."
+    }
+  ],
+  "counts": {
+    "dossiers": 3,
+    "sources": 17,
+    "claims": 26,
+    "closedClaims": 19,
+    "boundaryClosedClaims": 7,
+    "directQuotesApproved": 0
+  }
+}
