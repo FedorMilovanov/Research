@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-STAGE-CLOSURE-2026-08-02",
+  "status": "CURRENT_FAIL_CLOSED",
+  "generatedAt": "2026-08-02",
+  "currentAuthority": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
+  "controlPlaneAuthority": "00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md",
+  "stages": [
+    {
+      "id": "STAGE-OSK-WAVE12",
+      "name": "OSK public release and projection",
+      "state": "CLOSED_WITH_CI_AND_PRODUCTION_READBACK",
+      "semanticAuthority": "PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md",
+      "machineAuthority": "data/public-projection-current-2026-08-02-v2.json",
+      "receipts": [
+        "data/osk-wave12-product-release-receipt-2026-08-02.json",
+        "data/public-projection-wave12-ci-receipt.json",
+        "data/stage-ci-receipts-2026-08-02.json"
+      ],
+      "result": {
+        "route": "/articles/diotrefy-nashego-vremeni/",
+        "disposition": "PROMOTE",
+        "holds": [],
+        "authoritySources": 181,
+        "readerLinks": 73,
+        "newDirectQuotesApproved": 0,
+        "productionReadback": true
+      },
+      "nextLane": "NORMAL_MAINTENANCE_AND_FUTURE_EDITORIAL_WAVES"
+    },
+    {
+      "id": "STAGE-HEART-P0",
+      "name": "Heart-series three P0 research dossiers",
+      "state": "RESEARCH_CLOSED_EDITORIAL_ASSEMBLY_OPEN",
+      "semanticAuthority": "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md",
+      "machineAuthority": "data/heart-p0-architecture-dossiers-2026-08-02.json",
+      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "result": {
+        "dossiers": 3,
+        "sources": 17,
+        "claims": 26,
+        "newDirectQuotesApproved": 0
+      },
+      "nextLane": "READER_CHAPTER_ASSEMBLY_BOOK_COPYEDIT_AND_PRODUCT_RELEASE"
+    },
+    {
+      "id": "STAGE-ATLAS-PIHAHIROTH",
+      "name": "Pihahiroth textual and cartographic authority",
+      "state": "RESEARCH_CLOSED_PRODUCT_IMPLEMENTATION_OPEN",
+      "semanticAuthority": "БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md",
+      "machineAuthority": "data/atlas-pihahiroth-authority-2026-08-02.json",
+      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "result": {
+        "textualConstraints": 8,
+        "candidateCorridors": 3,
+        "authoritativePoints": 0,
+        "exactCoordinate": "UNRESOLVED",
+        "singlePointAllowed": false
+      },
+      "nextLane": "PRODUCT_UNCERTAINTY_POLYGONS_PALAEOwater_DATASET_AND_CREDITS"
+    },
+    {
+      "id": "STAGE-BAPTIST-SCAN-LANE",
+      "name": "Baptist scan request and receipt pipeline",
+      "state": "REQUEST_AND_RECEIPT_SYSTEM_CLOSED_EXTERNAL_DELIVERY_OPEN",
+      "semanticAuthority": "RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md",
+      "machineAuthority": "data/baptist-scan-acquisition-policy-v2.json",
+      "receiptLedger": "data/baptist-scan-receipts-v1.json",
+      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "result": {
+        "requestPackageReady": true,
+        "verifiedFileReceipts": 0,
+        "ocrComplete": 0,
+        "quoteReady": 0
+      },
+      "externalDependency": "INSTITUTIONAL_OR_PRIVATE_SOURCE_FILE_DELIVERY",
+      "nextLane": "SEND_REQUESTS_APPEND_BYTE_RECEIPTS_OCR_VISUAL_REVIEW_RIGHTS"
+    },
+    {
+      "id": "STAGE-GILL-CLOSED-BOOKS",
+      "name": "Gill closed-book family ownership and acquisition contract",
+      "state": "OWNERSHIP_AND_ACCEPTANCE_CLOSED_EXTERNAL_ACQUISITION_OPEN",
+      "semanticAuthority": "Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md",
+      "machineAuthority": "data/gill-closed-book-families-2026-08-02.json",
+      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "result": {
+        "families": 7,
+        "verifiedPackageReceipts": 0,
+        "quoteReadyFamilies": 0,
+        "newDirectQuotesApproved": 0
+      },
+      "externalDependency": "INSTITUTIONAL_OR_PRIVATE_FULL_TEXT_DELIVERY",
+      "nextLane": "ACQUIRE_ONE_FAMILY_AT_A_TIME_AND_MAP_TO_OWNER_CLAIMS"
+    },
+    {
+      "id": "STAGE-SOURCE-URL-REPAIRS",
+      "name": "Confirmed Source Library URL repairs",
+      "state": "CONFIRMED_REPAIRS_CLOSED_REMAINING_QUEUE_OPEN",
+      "semanticAuthority": "SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md",
+      "machineAuthority": "data/source-url-replacements-2026-08-02.json",
+      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "result": {
+        "confirmedReplacements": 7,
+        "addedVersionHistory": 1,
+        "rightsHoldsPreserved": 3,
+        "versionPins": 1
+      },
+      "nextLane": "REPAIR_REMAINING_TRUE_DEAD_URLS_ITEM_BY_ITEM"
+    }
+  ],
+  "globalBoundaries": [
+    "A research closeout never fabricates an external file receipt.",
+    "An unresolved exact coordinate can coexist with a closed uncertainty-geometry decision.",
+    "Editorial assembly is not an evidence gap and is not a publication witness.",
+    "URL repair changes transport only and never upgrades rights or evidence.",
+    "A CI receipt proves the named repository contract, not facts outside its scope.",
+    "Product publication requires its own release and production-readback receipts."
+  ],
+  "counts": {
+    "stages": 6,
+    "fullyClosedWithExternalReadback": 1,
+    "researchClosedNextLaneOpen": 2,
+    "operationalSystemsClosedExternalDependencyOpen": 2,
+    "boundedRepairSetClosedRemainingQueueOpen": 1
+  }
+}
