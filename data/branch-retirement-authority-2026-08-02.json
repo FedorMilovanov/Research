@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-BRANCH-RETIREMENT-AUTHORITY-2026-08-02",
+  "recordedAt": "2026-08-02T10:45:00+02:00",
+  "status": "ABSORBED_REFS_RETIRED_FORENSIC_ARCHIVE_RETAINED",
+  "testedMainBeforeReceipt": "321e3efbe797c9e7155911e9f9deda6197db8076",
+  "retiredRefs": [
+    "agent/osk-source-authority-20260801",
+    "agent/osk-wave2-money-power-20260801",
+    "agent/osk-wave5-adelaja-20260801",
+    "archive/poet-portrait-review-refresh-20260731",
+    "archive/second-editorial-40-pdf-refresh-20260731",
+    "arena/019fb9cf-research",
+    "docs/source-library-94-collections-navigation-2026-07-30",
+    "tmp-do-not-use"
+  ],
+  "retiredCount": 8,
+  "postRetirementVisibleRefs": [
+    "main",
+    "archive/legacy-diverged-heads-20260801"
+  ],
+  "verification": {
+    "preDeleteRule": "DELETE_ONLY_AFTER_HEAD_IS_ANCESTOR_OF_FRESH_ORIGIN_MAIN_AND_AHEAD_COUNT_EQUALS_ZERO",
+    "allEightPassedPreDeleteRule": true,
+    "postDeleteRefSearchConfirmedAbsent": true,
+    "deletedHeadShasPersisted": false,
+    "deletedHeadShaLimitation": "The first retirement run deleted the refs after exact runtime ancestry checks, but its receipt step failed because shell variables were sourced without export before Python. The branch heads were therefore not committed to repository evidence and are not reconstructed here.",
+    "workflowRemovedAfterOneTimeUse": true
+  },
+  "forensicArchive": {
+    "branch": "archive/legacy-diverged-heads-20260801",
+    "headSha": "979fdc748c5f7097618c126eb75176152ac98d69",
+    "mergeBaseWithMain": "f50b21ad6af5dd7aaa53c5be381929b353b26d58",
+    "aheadOfMainAtReceipt": 50,
+    "behindMainAtReceipt": 138,
+    "status": "RETAIN_FORENSIC_HISTORY_NOT_CURRENT_AUTHORITY",
+    "currentAuthority": false,
+    "mayBeDeleted": false,
+    "uniqueLedgerFiles": [
+      "archive-ledgers/branch-cleanup-summary-20260801.md",
+      "archive-ledgers/branch-forensic-retirement-receipt-20260801.json",
+      "archive-ledgers/legacy-diverged-heads-20260801.json",
+      "archive-ledgers/legacy-diverged-heads-20260801.md",
+      "archive-ledgers/source-library-ref-consolidation-20260801.json",
+      "archive-ledgers/source-library-ref-consolidation-20260801.md"
+    ]
+  },
+  "recovery": {
+    "inspectArchive": "git fetch origin archive/legacy-diverged-heads-20260801 && git log --graph --oneline origin/archive/legacy-diverged-heads-20260801",
+    "readHistoricalLedger": "git show origin/archive/legacy-diverged-heads-20260801:archive-ledgers/branch-cleanup-summary-20260801.md"
+  },
+  "boundaries": {
+    "forensicArchiveMergedIntoCurrentAuthority": false,
+    "forensicArchiveDeletionAuthorized": false,
+    "deletedHeadShasInvented": false,
+    "retiredRefsRestorableFromNamedRemoteRefs": false
+  }
+}
