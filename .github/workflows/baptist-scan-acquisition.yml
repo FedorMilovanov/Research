@@ -1,0 +1,60 @@
+name: Baptist scan acquisition
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/baptist-scan-acquisition.yml'
+      - 'data/baptist-scan-acquisition-policy-v2.json'
+      - 'data/baptist-scan-receipts-v1.json'
+      - 'scripts/build_baptist_scan_request_package.py'
+      - 'RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md'
+      - 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv'
+      - 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/baptist-scan-acquisition.yml'
+      - 'data/baptist-scan-acquisition-policy-v2.json'
+      - 'data/baptist-scan-receipts-v1.json'
+      - 'scripts/build_baptist_scan_request_package.py'
+      - 'RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md'
+      - 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/NEXT_MICROBATCH.csv'
+      - 'БАПТИСТЫ РОССИИ/baptists_v120_TRUE_GROUPED/data/PROOF_STATUS_LEDGER.csv'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: baptist-scan-acquisition-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Compile acquisition validator
+        run: python3 -m py_compile scripts/build_baptist_scan_request_package.py
+
+      - name: Build deterministic request package and validate receipts
+        run: python3 scripts/build_baptist_scan_request_package.py --output-dir "$RUNNER_TEMP/baptist-scan-request-package"
+
+      - name: Publish request summary
+        run: cat "$RUNNER_TEMP/baptist-scan-request-package/REQUESTS.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Ensure builder is read-only
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
+
+      - name: Upload request package
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        with:
+          name: baptist-scan-request-package
+          path: ${{ runner.temp }}/baptist-scan-request-package/
+          if-no-files-found: error
+          retention-days: 30
