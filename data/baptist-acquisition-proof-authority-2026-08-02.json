@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "BAPTIST-ACQUISITION-PROOF-AUTHORITY-2026-08-02",
+  "status": "CURRENT_FOR_ACQUISITION_AND_PROOF_STAGES_NOT_PUBLICATION",
+  "observedAt": "2026-08-02T11:08:47+03:00",
+  "operationalMaster": {
+    "title": "РУССКИЕ БАПТИСТЫ — MASTER ARCHIVE CATALOG",
+    "driveId": "1y9d_7bWAEsz8iYdMuRrtb6onDYEXLQx5PgT95oYNsSM",
+    "modifiedTimeObserved": "2026-08-02T08:08:47.168Z",
+    "sheet": "12 Drive Acquisitions",
+    "mutationPolicy": "APPEND_ONLY"
+  },
+  "authoritySplit": {
+    "driveMasterRole": "MUTABLE_OPERATIONAL_INVENTORY",
+    "githubRole": "IMMUTABLE_STATUS_SEMANTICS_AND_AUDIT_RECEIPTS",
+    "binaryIdentityRule": "EXACT_DRIVE_ID_PLUS_SHA256",
+    "conflictRule": "FAIL_CLOSED_NO_SILENT_SUPERSESSION"
+  },
+  "stateMachines": {
+    "acquisition": [
+      "LOCATOR_ONLY",
+      "VIEWER_ACCESSIBLE",
+      "BYTES_ACQUIRED",
+      "CANONICAL_DRIVE_REGISTERED"
+    ],
+    "proof": [
+      "NO_TEXT",
+      "TEXT_LAYER_PRESENT",
+      "VISUAL_PAGE_VERIFIED",
+      "QUOTE_READY"
+    ]
+  },
+  "receipts": [
+    {
+      "id": "SINICHKIN-2018-FIRST-RUSSIAN-BAPTIST-BAPTISM",
+      "masterRow": 51,
+      "fileName": "А_Синичкин_К_вопросу_о_крещении_первого_русского_баптиста.pdf",
+      "canonicalDriveId": "1yH-oxjymaDJi4g5Els8xpRiqKFgWDD7V",
+      "rawDuplicateDriveId": "1nPb63h0DLbhx582WFpVPeXS2fH5UFT8O",
+      "canonicalFolder": "02 — ORIGINS, STUNDISM & IMPERIAL PERIOD",
+      "bytes": 542143,
+      "pages": 14,
+      "sha256": "3d33eb3691dd18f0109028cf1c2c51bb71e21b882dfddfff4393438311498c1c",
+      "acquisitionState": "CANONICAL_DRIVE_REGISTERED",
+      "proofState": "TEXT_LAYER_PRESENT",
+      "visualState": "PENDING",
+      "quoteState": "NOT_APPROVED",
+      "supersedesOnly": "ACQUISITION_AND_TEXT_LAYER_MISSING_CLAIMS_FOR_THIS_EXACT_FILE"
+    },
+    {
+      "id": "VORONIN-BIOGRAPHY-DOSSIER",
+      "masterRow": 52,
+      "fileName": "Никита Исаевич Воронин.pdf",
+      "canonicalDriveId": "17O1csxPvxZO0T4Wq0TaRmT69yQ1dkEmT",
+      "rawDuplicateDriveId": "1_PxsBG7YrO58B3yajjNt5MF08WlZDrbV",
+      "canonicalFolder": "03 — BIOGRAPHIES, MEMOIRS & PEOPLE",
+      "bytes": 244468,
+      "pages": 5,
+      "sha256": "6d23e500ef19dc457d2f23c06b695ea95e2670759558e0419847022ccc969cc9",
+      "acquisitionState": "CANONICAL_DRIVE_REGISTERED",
+      "proofState": "TEXT_LAYER_PRESENT",
+      "visualState": "PENDING",
+      "quoteState": "NOT_APPROVED",
+      "supersedesOnly": "ACQUISITION_AND_TEXT_LAYER_MISSING_CLAIMS_FOR_THIS_EXACT_FILE"
+    }
+  ],
+  "counts": {
+    "receipts": 2,
+    "canonicalDriveRegistered": 2,
+    "textLayerPresent": 2,
+    "visualPageVerified": 0,
+    "quoteReady": 0
+  },
+  "immutableReceipt": "RUSSIAN_BAPTISTS_ARCHIVE/drive_acquisition_delta_2026-08-02.csv",
+  "boundaries": {
+    "publicationClaimed": false,
+    "visualVerificationClaimed": false,
+    "quoteReadyClaimed": false,
+    "rawDuplicatesMayBeDeleted": false,
+    "paidOrdersAuthorized": false
+  }
+}
