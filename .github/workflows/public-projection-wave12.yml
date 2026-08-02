@@ -1,0 +1,55 @@
+name: Public projection Wave 12
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/public-projection-wave12.yml'
+      - 'scripts/validate_public_projection_wave12.py'
+      - 'data/public-projection-queue-2026-08-01.json'
+      - 'data/public-projection-osk-wave12-overlay-2026-08-02.json'
+      - 'data/public-projection-current-2026-08-02-v2.json'
+      - 'data/osk-wave12-product-release-receipt-2026-08-02.json'
+      - 'data/stage-ci-receipts-2026-08-02.json'
+      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/45_WAVE12_PRODUCT_PUBLICATION_RELEASE_2026-08-02.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/public-projection-wave12.yml'
+      - 'scripts/validate_public_projection_wave12.py'
+      - 'data/public-projection-queue-2026-08-01.json'
+      - 'data/public-projection-osk-wave12-overlay-2026-08-02.json'
+      - 'data/public-projection-current-2026-08-02-v2.json'
+      - 'data/osk-wave12-product-release-receipt-2026-08-02.json'
+      - 'data/stage-ci-receipts-2026-08-02.json'
+      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md'
+      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/45_WAVE12_PRODUCT_PUBLICATION_RELEASE_2026-08-02.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-projection-wave12-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+
+      - name: Compile projection validator
+        run: python3 -m py_compile scripts/validate_public_projection_wave12.py
+
+      - name: Recompose and validate current projection
+        run: python3 scripts/validate_public_projection_wave12.py
+
+      - name: Ensure validator is read-only
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
