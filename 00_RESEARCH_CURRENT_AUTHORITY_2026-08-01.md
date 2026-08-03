@@ -94,6 +94,12 @@ or machine ledger governs.
 - OSK Product Wave 11: faithful-witness supplement merged in `gb-is-my-strength` PR `#719`
   at `d0fe4a7dc20bc6a6f503b290ec32a2b70110a379` — **15 actor pathways /
   20 faithful responses / 73 reader links / 181-source authority / 0 public routes**.
+- OSK Product Wave 12 source acceptance: reader route `/articles/diotrefy-nashego-vremeni/`
+  merged in `gb-is-my-strength` PR `#810`; exact verified head
+  `f39589d8920ae828c13ee5fd804a79433be7bd82`, source merge
+  `e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e`. Exact-head route, metadata,
+  search, print, no-JS and Chromium/WebKit evidence passed. This is source acceptance only;
+  production/live verification is not claimed and `PUBLICATION_HOLD` remains.
 - Cumulative OSK case authority: **290 sources / 216 A-class / 197 exact URLs / 105 quote-safe**.
 - Effective OSK routing:
   `21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 4 STANDALONE / 0 HOLD`.
@@ -104,9 +110,9 @@ or machine ledger governs.
 
 - Baptist archive scans/OCR/archive acquisition;
 - Source Library dead-link, acquisition and rights queue;
-- OSK Product Wave 12: publish the complete Wave 10 + Wave 11 Diotrophes reader draft
-  through a separate exact-head route/release PR while preserving `PUBLICATION_HOLD`
-  until route, metadata, search, print, no-JS and browser evidence are complete;
+- OSK post-Wave-12 production boundary: obtain a separate same-release live witness for
+  `/articles/diotrefy-nashego-vremeni/`, verify deployed bytes and then explicitly decide
+  whether `PUBLICATION_HOLD` can be removed;
 - Atlas Pihahiroth/sea-crossing and primary-source strengthening;
 - Gill closed-book/archive families.
 
