@@ -37,8 +37,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Compile validator
-        run: python3 -m py_compile scripts/validate_atlas_pihahiroth.py
+      - name: Validate Python syntax without writing bytecode
+        run: >-
+          python3 -c 'from pathlib import Path; p=Path("scripts/validate_atlas_pihahiroth.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
 
       - name: Validate uncertainty geometry and rights boundary
         run: python3 scripts/validate_atlas_pihahiroth.py
