@@ -38,6 +38,12 @@ jobs:
           path: Product
           persist-credentials: false
 
+      - name: Fetch pinned Gill Product witness
+        run: |
+          git -C Product cat-file -e '433c76ddd4ee37e9efe8fd4f5fc7573aa8e2a736^{commit}' || \
+            git -C Product fetch --no-tags --depth=1 origin 433c76ddd4ee37e9efe8fd4f5fc7573aa8e2a736
+          git -C Product cat-file -e '433c76ddd4ee37e9efe8fd4f5fc7573aa8e2a736^{commit}'
+
       - name: Validate Python syntax without writing bytecode
         working-directory: Research
         run: |
