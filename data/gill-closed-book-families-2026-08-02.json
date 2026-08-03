@@ -71,7 +71,7 @@
       "id": "GILL-FAM-CANONICAL-PHYSICAL-PACKAGE",
       "label": "Canonical physical archive package",
       "status": "PACKAGE_IDENTITY_UNRESOLVED",
-      "ownerDocuments": ["Джон Гилл/70_PR2_PRIMARY_VERIFIABILITY_NAVIGATION.md","Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md","Джон Гилл/00_README_AND_NAVIGATION.md"],
+      "ownerDocuments": ["Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md","Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md","Джон Гилл/00_README_AND_NAVIGATION.md"],
       "claimScopes": ["closed-book archive provenance","physical custody","family-to-witness mapping"],
       "searchQueries": ["Gill archive package","Джон Гилл архив","GILL source archive ZIP","Gill closed books"],
       "acceptance": "One named package or manifest with file list, byte sizes, SHA-256, storage receipt and mapping to the Gill witness registry."
