@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "GILL-RIPPON-1838-OPEN-ACCESS-VERIFICATION-2026-08-04",
+  "familyId": "GILL-FAM-BIOGRAPHICAL-PRIMARY",
+  "status": "REMOTE_ITEM_VERIFIED_AWAITING_BYTE_RECEIPT",
+  "generatedAt": "2026-08-04",
+  "directQuotesApproved": false,
+  "quoteReady": false,
+  "byteReceiptEstablished": false,
+  "items": [
+    {
+      "id": "GILL-BIO-RIPPON-1838-IA",
+      "role": "biographical_primary_witness",
+      "repository": "Internet Archive",
+      "holdingInstitution": "Princeton Theological Seminary Library",
+      "itemIdentifier": "briefmemoiroflif00ripp",
+      "itemUrl": "https://archive.org/details/briefmemoiroflif00ripp",
+      "ark": "ark:/13960/t3223d09c",
+      "editionIdentity": {
+        "title": "A brief memoir of the life and writings of the late Rev. John Gill, D.D.",
+        "creator": "John Rippon (1751-1836)",
+        "addedWork": "An Essay on the Death of Dr. Gill by Benjamin Francis",
+        "publisher": "London : John Bennett, 4 Three Tun Passage, Newgate Street",
+        "printer": "E. Spettigue, 67 Chancery Lane",
+        "publicationYear": 1838,
+        "language": "English",
+        "lccn": "36019852",
+        "oclc": "10750526",
+        "openLibraryEdition": "OL6341134M",
+        "openLibraryWork": "OL7594572W"
+      },
+      "remoteFiles": {
+        "pdf": {
+          "candidateFileName": "briefmemoiroflif00ripp.pdf",
+          "url": "https://archive.org/download/briefmemoiroflif00ripp/briefmemoiroflif00ripp.pdf",
+          "availabilityObserved": true,
+          "pdfObjectPages": 178
+        },
+        "ocrText": {
+          "candidateFileName": "briefmemoiroflif00ripp_djvu.txt",
+          "url": "https://archive.org/stream/briefmemoiroflif00ripp/briefmemoiroflif00ripp_djvu.txt",
+          "availabilityObserved": true,
+          "role": "navigation_only"
+        }
+      },
+      "remoteVerification": {
+        "itemMetadataReviewed": true,
+        "catalogPages": 182,
+        "pageNumberConfidence": 96,
+        "scanPpi": 400,
+        "titlePageTextReviewed": true,
+        "titlePagePdfIndex": 6,
+        "titlePageImageReviewed": false,
+        "advertisementPdfIndex": 8,
+        "advertisementConfirmsVerbatimReprint": true,
+        "pageCountDifferenceDocumented": true,
+        "stableLocatorExamples": [
+          "PDF object page 6: title page",
+          "PDF object page 8: publisher advertisement",
+          "PDF object page 10: memoir text begins"
+        ]
+      },
+      "rights": {
+        "state": "PUBLIC_DOMAIN_WORK_REMOTE_SCAN_DOWNLOADABLE",
+        "basis": [
+          "The edition was published in London in 1838.",
+          "The principal author, John Rippon, died in 1836.",
+          "The repository exposes unrestricted PDF and OCR download options for this item."
+        ],
+        "licenseClaim": "none_required_for_public_domain_work",
+        "repositoryTermsStillApply": true
+      },
+      "receipt": {
+        "state": "NOT_RECEIVED",
+        "file_name": null,
+        "byte_size": null,
+        "sha256": null,
+        "received_at": null,
+        "durable_storage_receipt": null
+      },
+      "receiptGaps": [
+        "file_name",
+        "byte_size",
+        "sha256",
+        "received_at",
+        "durable_storage_receipt"
+      ],
+      "claimBoundary": "Remote edition discovery and title-text verification only. No page quotation, claim promotion, or quote card is authorized until a byte-level receipt and page-image readback exist."
+    }
+  ],
+  "counts": {
+    "remoteItemsVerified": 1,
+    "byteReceipts": 0,
+    "editionUsableItems": 0,
+    "quoteReadyItems": 0,
+    "directQuotesApproved": 0
+  },
+  "boundary": "This authority closes item identity and remote availability for one Rippon edition. It does not establish local custody, SHA-256 fixity, durable storage, page-image review, or quotation authority."
+}
