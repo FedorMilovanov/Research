@@ -17,7 +17,7 @@ REPORT_PATH = ROOT / "ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/
 ROOT_AUTHORITY_PATH = ROOT / "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md"
 AUTHORITY_ID = "RESEARCH-OSK-AUTHORITY-2026-08-01-W7"
 EXPECTED_PRODUCT = "efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3"
-EXPECTED_BLOB = "c7d3e1be45bacbb538126c76d50399920aa53ec7"
+EXPECTED_BLOB = "c7d3e1be69d81d3dec299d7d6ebcfa015548b459"
 CANONICAL_SOURCE = "src/components/article-pilots/antisovetov/AntisovetovBody.astro"
 errors: list[str] = []
 

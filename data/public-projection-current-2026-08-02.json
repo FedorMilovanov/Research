@@ -9,7 +9,7 @@
   "compositionRule": "Load the base queue by record id, replace every supersedes_queue_record_id with overlay.effective_record, then recompute counts. Consumers must not read the base queue as current without applying all listed overlays.",
   "researchAuthority": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
   "researchAuthoritySnapshot": "1466b65a4449bac968a28d7da2d2b78db545e29e",
-  "productSnapshot": "efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3",
+  "productSnapshot": "e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e",
   "effectiveCounts": {
     "PROMOTE": 0,
     "REFERENCE": 4,

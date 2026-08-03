@@ -5,7 +5,7 @@
   "supersedes_authority_id": "A06-OSK-WAVE6-PROJECTION-2026-08-01",
   "supersedes_queue_record_id": "osk-power-dark-side-standalone",
   "research_snapshot": "1466b65a4449bac968a28d7da2d2b78db545e29e",
-  "product_snapshot": "efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3",
+  "product_snapshot": "e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e",
   "effective_record": {
     "id": "osk-power-dark-side-standalone",
     "corpus": "ОБРАТНАЯ СТОРОНА КАФЕДРЫ",
@@ -21,12 +21,13 @@
     ],
     "targetRepository": "FedorMilovanov/gb-is-my-strength",
     "targetPublicRoutes": [
-      "/articles/20-antisovetov-pastoru/"
+      "/articles/20-antisovetov-pastoru/",
+      "/articles/diotrefy-nashego-vremeni/"
     ],
     "targetRoutePrefixes": [
       "/articles/"
     ],
-    "targetRouteState": "WAVE11_INTEGRATION_CLOSED_WAVE12_RELEASE_ROUTE_NOT_EXECUTED",
+    "targetRouteState": "WAVE12_SOURCE_ROUTE_MERGED_LIVE_WITNESS_NOT_CLAIMED",
     "targetPageType": "article-and-future-bounded-series",
     "targetClaimIds": [
       "21-core",
@@ -36,17 +37,26 @@
       "0-hold",
       "wave7-14-mandatory-fixes",
       "wave10-20-faithful-responses",
-      "wave11-product-integration-closeout"
+      "wave11-product-integration-closeout",
+      "wave12-source-route-accepted"
     ],
     "alreadyPublic": true,
-    "publicWordingFidelity": "WAVE11_INTEGRATION_RECORDED_RELEASE_ROUTE_REQUIRES_SEPARATE_WAVE12",
+    "wave12SourceAcceptance": {
+      "productPullRequest": 810,
+      "exactVerifiedHead": "f39589d8920ae828c13ee5fd804a79433be7bd82",
+      "sourceMerge": "e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e",
+      "route": "/articles/diotrefy-nashego-vremeni/",
+      "exactHeadChecksGreen": true,
+      "productionVerified": false
+    },
+    "publicWordingFidelity": "WAVE12_SOURCE_ROUTE_ACCEPTED_LIVE_RELEASE_UNVERIFIED",
     "holds": [
       "PUBLICATION_HOLD"
     ],
     "rightsLedgerIds": [],
     "separateMediaLaneRequired": true,
-    "nextAction": "Execute Wave 12 as a separately owned release-route stage: verify the exact Product commit and route, apply only approved bounded edits, run build and live-route witnesses, then explicitly decide whether PUBLICATION_HOLD can be removed.",
-    "forbiddenPromotion": "Do not treat Research closure or Wave 11 integration as a live release; do not add unbounded case rosters, verdict language, or media without separate rights review."
+    "nextAction": "Wave 12 source-route acceptance is complete at Product merge e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e. Obtain a separate same-release production/live witness for /articles/diotrefy-nashego-vremeni/, verify deployed bytes, metadata, search, print, no-JS and browser behavior, then explicitly decide whether PUBLICATION_HOLD can be removed.",
+    "forbiddenPromotion": "Do not treat Research closure or source merge as a live release; do not add unbounded case rosters, verdict language, or media without separate rights review."
   },
   "effective_projection_counts": {
     "PROMOTE": 0,

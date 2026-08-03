@@ -7,25 +7,19 @@ on:
     paths:
       - '.github/workflows/public-projection-wave12.yml'
       - 'scripts/validate_public_projection_wave12.py'
-      - 'data/public-projection-queue-2026-08-01.json'
-      - 'data/public-projection-osk-wave12-overlay-2026-08-02.json'
-      - 'data/public-projection-current-2026-08-02-v2.json'
-      - 'data/osk-wave12-product-release-receipt-2026-08-02.json'
-      - 'data/stage-ci-receipts-2026-08-02.json'
-      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md'
-      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/45_WAVE12_PRODUCT_PUBLICATION_RELEASE_2026-08-02.md'
+      - 'data/public-projection-current-2026-08-02.json'
+      - 'data/public-projection-osk-wave6-overlay-2026-08-01.json'
+      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-01.md'
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
   push:
     branches: [main]
     paths:
       - '.github/workflows/public-projection-wave12.yml'
       - 'scripts/validate_public_projection_wave12.py'
-      - 'data/public-projection-queue-2026-08-01.json'
-      - 'data/public-projection-osk-wave12-overlay-2026-08-02.json'
-      - 'data/public-projection-current-2026-08-02-v2.json'
-      - 'data/osk-wave12-product-release-receipt-2026-08-02.json'
-      - 'data/stage-ci-receipts-2026-08-02.json'
-      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md'
-      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/45_WAVE12_PRODUCT_PUBLICATION_RELEASE_2026-08-02.md'
+      - 'data/public-projection-current-2026-08-02.json'
+      - 'data/public-projection-osk-wave6-overlay-2026-08-01.json'
+      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-01.md'
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
 
 permissions:
   contents: read
@@ -43,10 +37,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Compile projection validator
-        run: python3 -m py_compile scripts/validate_public_projection_wave12.py
+      - name: Validate Python syntax without writing bytecode
+        run: >-
+          python3 -c 'from pathlib import Path; p=Path("scripts/validate_public_projection_wave12.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
 
-      - name: Recompose and validate current projection
+      - name: Recompose and validate current source projection
         run: python3 scripts/validate_public_projection_wave12.py
 
       - name: Ensure validator is read-only

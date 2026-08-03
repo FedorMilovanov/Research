@@ -6,15 +6,15 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/research-stage-authority.yml'
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
       - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md'
       - '00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md'
+      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-01.md'
       - 'data/research-stage-closure-2026-08-02.json'
-      - 'data/public-projection-current-2026-08-02-v2.json'
-      - 'data/public-projection-osk-wave12-overlay-2026-08-02.json'
-      - 'data/osk-wave12-product-release-receipt-2026-08-02.json'
-      - 'data/public-projection-wave12-ci-receipt.json'
-      - 'data/stage-ci-receipts-2026-08-02.json'
+      - 'data/public-projection-current-2026-08-02.json'
+      - 'data/public-projection-osk-wave6-overlay-2026-08-01.json'
       - 'data/heart-p0-architecture-dossiers-2026-08-02.json'
+      - 'data/heart-reader-assembly-2026-08-02.json'
       - 'data/atlas-pihahiroth-authority-2026-08-02.json'
       - 'data/baptist-scan-acquisition-policy-v2.json'
       - 'data/baptist-scan-receipts-v1.json'
@@ -23,30 +23,29 @@ on:
       - 'scripts/validate_research_stage_closure.py'
       - 'scripts/validate_public_projection_wave12.py'
       - 'scripts/validate_heart_p0_dossiers.py'
+      - 'scripts/validate_heart_reader_assembly.py'
       - 'scripts/validate_atlas_pihahiroth.py'
       - 'scripts/build_baptist_scan_request_package.py'
       - 'scripts/validate_gill_closed_book_families.py'
       - 'scripts/validate_source_url_replacements.py'
-      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md'
       - 'СЕРИЯ СЕРДЦЕ/**'
       - 'БИБЛЕЙСКИЙ АТЛАС/**'
       - 'RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md'
       - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
       - 'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md'
-      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/45_WAVE12_PRODUCT_PUBLICATION_RELEASE_2026-08-02.md'
   push:
     branches: [main]
     paths:
       - '.github/workflows/research-stage-authority.yml'
+      - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md'
       - '00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md'
       - '00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md'
+      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-01.md'
       - 'data/research-stage-closure-2026-08-02.json'
-      - 'data/public-projection-current-2026-08-02-v2.json'
-      - 'data/public-projection-osk-wave12-overlay-2026-08-02.json'
-      - 'data/osk-wave12-product-release-receipt-2026-08-02.json'
-      - 'data/public-projection-wave12-ci-receipt.json'
-      - 'data/stage-ci-receipts-2026-08-02.json'
+      - 'data/public-projection-current-2026-08-02.json'
+      - 'data/public-projection-osk-wave6-overlay-2026-08-01.json'
       - 'data/heart-p0-architecture-dossiers-2026-08-02.json'
+      - 'data/heart-reader-assembly-2026-08-02.json'
       - 'data/atlas-pihahiroth-authority-2026-08-02.json'
       - 'data/baptist-scan-acquisition-policy-v2.json'
       - 'data/baptist-scan-receipts-v1.json'
@@ -55,17 +54,16 @@ on:
       - 'scripts/validate_research_stage_closure.py'
       - 'scripts/validate_public_projection_wave12.py'
       - 'scripts/validate_heart_p0_dossiers.py'
+      - 'scripts/validate_heart_reader_assembly.py'
       - 'scripts/validate_atlas_pihahiroth.py'
       - 'scripts/build_baptist_scan_request_package.py'
       - 'scripts/validate_gill_closed_book_families.py'
       - 'scripts/validate_source_url_replacements.py'
-      - 'PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md'
       - 'СЕРИЯ СЕРДЦЕ/**'
       - 'БИБЛЕЙСКИЙ АТЛАС/**'
       - 'RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md'
       - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
       - 'SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md'
-      - 'ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/45_WAVE12_PRODUCT_PUBLICATION_RELEASE_2026-08-02.md'
 
 permissions:
   contents: read
@@ -83,26 +81,33 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Compile current validators
+      - name: Validate Python syntax without writing bytecode
         run: |
-          python3 -m py_compile \
+          for path in \
             scripts/validate_repository_authority_integrity.py \
             scripts/validate_public_projection_wave12.py \
             scripts/validate_heart_p0_dossiers.py \
+            scripts/validate_heart_reader_assembly.py \
             scripts/validate_atlas_pihahiroth.py \
             scripts/build_baptist_scan_request_package.py \
             scripts/validate_gill_closed_book_families.py \
             scripts/validate_source_url_replacements.py \
             scripts/validate_research_stage_closure.py
+          do
+            python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
+          done
 
       - name: Validate control plane
         run: python3 scripts/validate_repository_authority_integrity.py
 
-      - name: Validate OSK Wave 12 publication and projection
+      - name: Validate OSK Wave 12 source projection boundary
         run: python3 scripts/validate_public_projection_wave12.py
 
       - name: Validate Heart P0 evidence closure
         run: python3 scripts/validate_heart_p0_dossiers.py
+
+      - name: Validate Heart reader assembly
+        run: python3 scripts/validate_heart_reader_assembly.py
 
       - name: Validate Atlas Pihahiroth uncertainty authority
         run: python3 scripts/validate_atlas_pihahiroth.py

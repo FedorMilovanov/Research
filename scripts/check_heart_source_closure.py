@@ -10,10 +10,13 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "СЕРИЯ СЕРДЦЕ" / "74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json"
 
-# Trust is policy code, not user-controlled registry data.
+# Trust is policy code, not user-controlled registry data. Bibliographies are
+# trusted only for identity/edition work, and contemporaneous transcripts only
+# as corroboration; quote-safe restrictions for both are enforced below.
 TRUSTED_SOURCE_CLASSES = {
     "academic_journal",
     "confessional_primary",
+    "contemporaneous_transcript",
     "official_author_archive",
     "official_media",
     "official_ministry",
@@ -23,6 +26,7 @@ TRUSTED_SOURCE_CLASSES = {
     "primary_text",
     "primary_text_reproduction",
     "primary_text_rights_limited",
+    "scholarly_bibliography",
 }
 ALLOWED_UNTRUSTED_CLASSES = {
     "library_catalog",
@@ -30,6 +34,8 @@ ALLOWED_UNTRUSTED_CLASSES = {
     "primary_bibliographic",
     "public_domain_commentary",
 }
+NON_QUOTE_SUPPORT_CLASSES = {"scholarly_bibliography"}
+CORROBORATIVE_ONLY_CLASSES = {"contemporaneous_transcript"}
 ALLOWED_STATUSES = {
     "PRIMARY_VERIFIED",
     "PRIMARY_AUDIO_VERIFIED",
@@ -195,12 +201,26 @@ def main() -> int:
                 errors.append(f"{prefix} is quote-safe with invalid status {status}")
             if not support:
                 errors.append(f"{prefix} is quote-safe but has no support")
+            support_classes = {
+                str(source_by_id.get(item, {}).get("class")) for item in support
+            }
             low_trust = [
                 item for item in support
                 if source_by_id.get(item, {}).get("class") not in TRUSTED_SOURCE_CLASSES
             ]
             if low_trust:
                 errors.append(f"{prefix} uses non-trusted quote support: {low_trust}")
+            forbidden_quote_support = sorted(support_classes & NON_QUOTE_SUPPORT_CLASSES)
+            if forbidden_quote_support:
+                errors.append(
+                    f"{prefix} uses bibliography-only quote support: {forbidden_quote_support}"
+                )
+            if support_classes & CORROBORATIVE_ONLY_CLASSES:
+                independent_classes = support_classes - CORROBORATIVE_ONLY_CLASSES
+                if not independent_classes or not independent_classes <= TRUSTED_SOURCE_CLASSES:
+                    errors.append(
+                        f"{prefix} uses a contemporaneous transcript without independent trusted support"
+                    )
             contract = QUOTE_SAFE_LOCATORS.get(str(claim_id))
             if not contract:
                 errors.append(f"{prefix} lacks a hardcoded quote-safe locator contract")

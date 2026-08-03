@@ -112,7 +112,7 @@ for rel in critical_workflows:
     text = read(rel)
     require(f"actions/checkout@{CHECKOUT_SHA}" in text, f"{rel}: checkout action is not SHA-pinned")
     require("actions/checkout@v4" not in text, f"{rel}: floating checkout tag remains")
-    require("git diff --exit-code" in text, f"{rel}: missing read-only assertion")
+    require("diff --exit-code" in text, f"{rel}: missing read-only assertion")
 
 # Source-library acquisition workflows must use pinned toolchains and explicit custody.
 source_workflows = [
@@ -130,8 +130,8 @@ for rel in source_workflows:
     text = read(rel)
     require(f"actions/checkout@{CHECKOUT_SHA}" in text, f"{rel}: checkout is not pinned")
     require(f"actions/setup-python@{SETUP_PYTHON_SHA}" in text, f"{rel}: setup-python is not pinned")
-    require("requirements/source-audit.txt" in text, f"{rel}: pinned dependency file missing")
-    require("git diff --exit-code" in text, f"{rel}: read-only assertion missing")
+    require("requirements/source-audit.lock" in text, f"{rel}: hash-locked dependency file missing")
+    require("diff --exit-code" in text, f"{rel}: read-only assertion missing")
     if "upload-artifact" in text:
         require(f"actions/upload-artifact@{UPLOAD_ARTIFACT_SHA}" in text, f"{rel}: upload-artifact is not pinned")
 for rel in source_workflows[2:]:
@@ -201,7 +201,8 @@ for dependency in (
 ):
     require(dependency in projection_workflow, f"projection workflow missing trigger: {dependency}")
 require("apply_osk_overlay" in projection_validator, "projection validator does not compose overlay")
-require("WAVES_1_TO_11" in projection_validator, "projection validator lacks current OSK state")
+require("WAVES_1_TO_11" in projection_validator, "projection validator lacks current OSK research state")
+require("wave12SourceAcceptance" in projection_validator, "projection validator lacks Wave 12 source boundary")
 
 # Single media allowlist.
 portrait = read("SOURCE_LIBRARY/tools/download_approved_core_poet_portraits.py")

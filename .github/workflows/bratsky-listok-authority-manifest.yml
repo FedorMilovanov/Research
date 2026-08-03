@@ -46,9 +46,17 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
-      - name: Compile validator
-        run: python3 -m py_compile scripts/validate_bratsky_listok_authority_manifest.py
+      - name: Fetch pinned Stage 23 witness
+        run: |
+          git cat-file -e 'f3601a30f071385da8987acf1d96090b28a6af52^{commit}' || \
+            git fetch --no-tags --depth=1 origin f3601a30f071385da8987acf1d96090b28a6af52
+          git cat-file -e 'f3601a30f071385da8987acf1d96090b28a6af52^{commit}'
+      - name: Validate Python syntax without writing bytecode
+        run: >-
+          python3 -c 'from pathlib import Path; p=Path("scripts/validate_bratsky_listok_authority_manifest.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
       - name: Validate authority, historical blobs and publication boundary
         run: python3 scripts/validate_bratsky_listok_authority_manifest.py
       - name: Ensure validator is read-only
-        run: git diff --exit-code
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"

@@ -77,6 +77,10 @@ def russian_word_count(text: str) -> int:
     return len(re.findall(r"[А-Яа-яЁё]{2,}", text))
 
 
+def normalize_yo(text: str) -> str:
+    return text.replace("Ё", "Е").replace("ё", "е")
+
+
 registry = load(REGISTRY)
 require(registry.get("schemaVersion") == 1, "registry schemaVersion must be 1")
 require(registry.get("authorityId") == EXPECTED_AUTHORITY, "registry authorityId drift")
@@ -155,7 +159,6 @@ require(status_counts == Counter({"CLOSED": 19, "BOUNDARY_CLOSED": 7}), f"claim 
 for dossier_id, spec in EXPECTED_DOSSIERS.items():
     require(claim_counts[dossier_id] == spec["count"], f"{dossier_id}: expected {spec['count']} claims, found {claim_counts[dossier_id]}")
 
-# Dossier declarations must exactly match the machine registry and real files.
 dossiers = registry.get("dossiers")
 require(isinstance(dossiers, list) and len(dossiers) == 3, "exactly three dossier declarations required")
 dossiers = dossiers if isinstance(dossiers, list) else []
@@ -177,14 +180,6 @@ for row in dossiers:
 
 require(set(declared_ids) == set(EXPECTED_DOSSIERS), "dossier declaration set drift")
 
-required_markers = [
-    "EVIDENCE CLOSED / BOUNDARIES CLOSED / CHAPTER-READY",
-    "Прямые цитаты:** `0 approved`",
-    "## 11. Запрещённые формулировки",
-    "Source ledger",
-    "## 13. Решение",
-]
-# Judgment has later numbering; semantic headings are checked separately below.
 for dossier_id, spec in EXPECTED_DOSSIERS.items():
     path = ROOT / spec["path"]
     require(path.is_file(), f"{dossier_id}: dossier file missing")
@@ -206,15 +201,33 @@ current_text = read(CURRENT)
 overlay_text = read(OVERLAY)
 old_authority_text = read(OLD_AUTHORITY)
 architecture_text = read(ARCHITECTURE)
+normalized_old_authority = normalize_yo(old_authority_text)
+normalized_architecture = normalize_yo(architecture_text)
+
 require("HEART-CURRENT-AUTHORITY-2026-08-02" in current_text, "current authority ID missing")
-require(EXPECTED_AUTHORITY in current_text, "current authority does not compose P0 overlay")
+require(
+    "78_P0_ARCHITECTURE_CLOSURE_OVERLAY_2026-08-02.md" in current_text
+    and "data/heart-p0-architecture-dossiers-2026-08-02.json" in current_text,
+    "current authority does not compose the P0 overlay and machine registry",
+)
 require("Product/site publication | `NOT CLAIMED`" in current_text, "current authority must preserve Product boundary")
 require(EXPECTED_AUTHORITY in overlay_text, "overlay authority marker missing")
 require("3 DOSSIERS" in overlay_text and "26 CLAIM NODES" in overlay_text, "overlay machine counts missing")
 require("Книга полностью собрана и опубликована" in overlay_text, "overlay must explicitly forbid false completion claim")
 require("§5 P0-list superseded этим overlay" in overlay_text, "supersession scope missing")
-require("P0. Must close before publication-ready prose" in old_authority_text, "historical P0 statement unexpectedly lost")
-require("Сердце в Эдеме" in architecture_text and "Сокрушенное сердце" in architecture_text and "два воскресения" in architecture_text, "book architecture no longer exposes the original three gaps")
+require(
+    "P0 content-architecture gaps" in old_authority_text
+    and "Сердце в Эдеме" in old_authority_text
+    and "Сокрушенное сердце" in normalized_old_authority
+    and "два воскресения" in old_authority_text,
+    "historical P0 gap statement unexpectedly lost",
+)
+require(
+    "Сердце в Эдеме" in architecture_text
+    and "Сокрушенное сердце" in normalized_architecture
+    and "два воскресения" in architecture_text,
+    "book architecture no longer exposes the original three gaps",
+)
 
 counts = registry.get("counts")
 require(isinstance(counts, dict), "counts object required")

@@ -49,11 +49,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Compile Heart validators
+      - name: Validate Heart Python syntax without writing bytecode
         run: |
-          python3 -m py_compile \
+          for path in \
             scripts/check_heart_source_closure.py \
             scripts/validate_heart_p0_dossiers.py
+          do
+            python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
+          done
 
       - name: Preserve R1-R9 source closure
         run: python3 scripts/check_heart_source_closure.py

@@ -37,8 +37,9 @@ jobs:
       - name: Checkout Research
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
-      - name: Compile acquisition validator
-        run: python3 -m py_compile scripts/build_baptist_scan_request_package.py
+      - name: Validate acquisition syntax without writing bytecode
+        run: >-
+          python3 -c 'from pathlib import Path; p=Path("scripts/build_baptist_scan_request_package.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
 
       - name: Build deterministic request package and validate receipts
         run: python3 scripts/build_baptist_scan_request_package.py --output-dir "$RUNNER_TEMP/baptist-scan-request-package"

@@ -47,11 +47,14 @@ jobs:
       - name: Checkout Research
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
-      - name: Compile validators
+      - name: Validate Python syntax without writing bytecode
         run: |
-          python3 -m py_compile \
+          for path in \
             scripts/validate_heart_p0_dossiers.py \
             scripts/validate_heart_reader_assembly.py
+          do
+            python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
+          done
 
       - name: Preserve evidence authority
         run: python3 scripts/validate_heart_p0_dossiers.py

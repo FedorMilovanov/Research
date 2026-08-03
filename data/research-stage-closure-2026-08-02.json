@@ -2,46 +2,51 @@
   "schemaVersion": 1,
   "authorityId": "RESEARCH-STAGE-CLOSURE-2026-08-02",
   "status": "CURRENT_FAIL_CLOSED",
-  "generatedAt": "2026-08-02",
+  "generatedAt": "2026-08-03",
   "currentAuthority": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
   "controlPlaneAuthority": "00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md",
   "stages": [
     {
       "id": "STAGE-OSK-WAVE12",
-      "name": "OSK public release and projection",
-      "state": "CLOSED_WITH_CI_AND_PRODUCTION_READBACK",
-      "semanticAuthority": "PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-02_V2.md",
-      "machineAuthority": "data/public-projection-current-2026-08-02-v2.json",
-      "receipts": [
-        "data/osk-wave12-product-release-receipt-2026-08-02.json",
-        "data/public-projection-wave12-ci-receipt.json",
-        "data/stage-ci-receipts-2026-08-02.json"
-      ],
+      "name": "OSK Wave 12 source acceptance and live-verification boundary",
+      "state": "SOURCE_ACCEPTED_LIVE_VERIFICATION_OPEN",
+      "semanticAuthority": "PUBLIC_PROJECTION_CURRENT_AUTHORITY_2026-08-01.md",
+      "machineAuthority": "data/public-projection-current-2026-08-02.json",
+      "receipts": [],
       "result": {
         "route": "/articles/diotrefy-nashego-vremeni/",
-        "disposition": "PROMOTE",
-        "holds": [],
+        "disposition": "REFERENCE",
+        "holds": ["PUBLICATION_HOLD"],
         "authoritySources": 181,
         "readerLinks": 73,
         "newDirectQuotesApproved": 0,
-        "productionReadback": true
+        "productPullRequest": 810,
+        "exactVerifiedHead": "f39589d8920ae828c13ee5fd804a79433be7bd82",
+        "sourceMerge": "e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e",
+        "exactHeadChecksGreen": true,
+        "productionReadback": false
       },
-      "nextLane": "NORMAL_MAINTENANCE_AND_FUTURE_EDITORIAL_WAVES"
+      "nextLane": "SAME_RELEASE_PRODUCTION_LIVE_WITNESS_AND_EXPLICIT_DISPOSITION_DECISION"
     },
     {
       "id": "STAGE-HEART-P0",
-      "name": "Heart-series three P0 research dossiers",
-      "state": "RESEARCH_CLOSED_EDITORIAL_ASSEMBLY_OPEN",
-      "semanticAuthority": "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md",
-      "machineAuthority": "data/heart-p0-architecture-dossiers-2026-08-02.json",
-      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "name": "Heart P0 evidence and three reader chapters",
+      "state": "RESEARCH_AND_THREE_READER_CHAPTERS_CLOSED_BOOK_QA_OPEN",
+      "semanticAuthority": "СЕРИЯ СЕРДЦЕ/82_BOOK_ASSEMBLY_DECISIONS_2026-08-02.md",
+      "machineAuthority": "data/heart-reader-assembly-2026-08-02.json",
+      "receipts": [],
       "result": {
         "dossiers": 3,
         "sources": 17,
         "claims": 26,
-        "newDirectQuotesApproved": 0
+        "readerChapters": 3,
+        "finalBookEntries": 18,
+        "newDirectQuotesApproved": 0,
+        "wholeBookLineEditComplete": false,
+        "wholeBookCitationPassComplete": false,
+        "productReleaseComplete": false
       },
-      "nextLane": "READER_CHAPTER_ASSEMBLY_BOOK_COPYEDIT_AND_PRODUCT_RELEASE"
+      "nextLane": "WHOLE_BOOK_LINE_EDIT_CITATION_PASS_AND_SEPARATE_PRODUCT_RELEASE"
     },
     {
       "id": "STAGE-ATLAS-PIHAHIROTH",
@@ -49,7 +54,7 @@
       "state": "RESEARCH_CLOSED_PRODUCT_IMPLEMENTATION_OPEN",
       "semanticAuthority": "БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md",
       "machineAuthority": "data/atlas-pihahiroth-authority-2026-08-02.json",
-      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "receipts": [],
       "result": {
         "textualConstraints": 8,
         "candidateCorridors": 3,
@@ -66,7 +71,7 @@
       "semanticAuthority": "RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md",
       "machineAuthority": "data/baptist-scan-acquisition-policy-v2.json",
       "receiptLedger": "data/baptist-scan-receipts-v1.json",
-      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "receipts": [],
       "result": {
         "requestPackageReady": true,
         "verifiedFileReceipts": 0,
@@ -82,7 +87,7 @@
       "state": "OWNERSHIP_AND_ACCEPTANCE_CLOSED_EXTERNAL_ACQUISITION_OPEN",
       "semanticAuthority": "Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md",
       "machineAuthority": "data/gill-closed-book-families-2026-08-02.json",
-      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "receipts": [],
       "result": {
         "families": 7,
         "verifiedPackageReceipts": 0,
@@ -98,7 +103,7 @@
       "state": "CONFIRMED_REPAIRS_CLOSED_REMAINING_QUEUE_OPEN",
       "semanticAuthority": "SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md",
       "machineAuthority": "data/source-url-replacements-2026-08-02.json",
-      "receipts": ["data/stage-ci-receipts-2026-08-02.json"],
+      "receipts": [],
       "result": {
         "confirmedReplacements": 7,
         "addedVersionHistory": 1,
@@ -109,17 +114,18 @@
     }
   ],
   "globalBoundaries": [
+    "A Product source merge and exact-head CI are not a production/live readback.",
     "A research closeout never fabricates an external file receipt.",
     "An unresolved exact coordinate can coexist with a closed uncertainty-geometry decision.",
-    "Editorial assembly is not an evidence gap and is not a publication witness.",
+    "Reader-chapter assembly is not whole-book line editing, citation completion or Product release.",
     "URL repair changes transport only and never upgrades rights or evidence.",
-    "A CI receipt proves the named repository contract, not facts outside its scope.",
-    "Product publication requires its own release and production-readback receipts."
+    "A CI result proves the named repository contract, not facts outside its scope."
   ],
   "counts": {
     "stages": 6,
-    "fullyClosedWithExternalReadback": 1,
-    "researchClosedNextLaneOpen": 2,
+    "sourceAcceptedLiveVerificationOpen": 1,
+    "researchAndReaderAssemblyClosedBookQaOpen": 1,
+    "researchClosedProductImplementationOpen": 1,
     "operationalSystemsClosedExternalDependencyOpen": 2,
     "boundedRepairSetClosedRemainingQueueOpen": 1
   }

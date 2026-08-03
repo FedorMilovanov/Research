@@ -24,8 +24,9 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-      - name: Compile canonicalizer
-        run: python3 -m py_compile scripts/normalize_baptist_proof_ledger.py
+      - name: Validate canonicalizer syntax without writing bytecode
+        run: >-
+          python3 -c 'from pathlib import Path; p=Path("scripts/normalize_baptist_proof_ledger.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
       - name: Generate canonical v2 view
         run: >-
           python3 scripts/normalize_baptist_proof_ledger.py
@@ -47,5 +48,5 @@ jobs:
           path: generated/baptist/
           if-no-files-found: error
           retention-days: 30
-      - name: Ensure canonicalizer is read-only
+      - name: Ensure tracked sources remain read-only
         run: git diff --exit-code

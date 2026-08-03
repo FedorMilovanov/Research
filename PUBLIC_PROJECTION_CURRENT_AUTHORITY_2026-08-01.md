@@ -4,7 +4,8 @@
 **Status:** `CURRENT / FAIL-CLOSED / NO AUTOMATIC PROMOTION`  
 **Composition:** `base + overlay`  
 **Research authority snapshot:** `1466b65a4449bac968a28d7da2d2b78db545e29e`  
-**Product snapshot:** `efaf2a51b1fcc7b7d3f8c9558ecb5acf849df3b3`
+**Product source snapshot:** `e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e`  
+**Production verification:** `NOT CLAIMED`
 
 ## Canonical machine entry point
 
@@ -32,7 +33,7 @@ The base queue by itself is **not current authority**. A consumer that does not 
 | Record | Disposition | Governing boundary |
 |---|---|---|
 | `heart-series-source-closure` | `REFERENCE` | Nine quote-safe claims only; `PUBLICATION_HOLD` |
-| `osk-power-dark-side-standalone` | `REFERENCE` | `WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD`; Wave 12 is a separate release-route stage |
+| `osk-power-dark-side-standalone` | `REFERENCE` | `WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD`; Wave 12 source route accepted, live deployment still unverified |
 | `bratsky-listok-1906-1910` | `BLOCKED` | archive, locator, rights and publication holds |
 | `baptist-archive-v156` | `BLOCKED` | scans/OCR/visual verification and route-level claim mapping required |
 | `genesis6-enoch-hard-texts` | `REFERENCE` | active authority graph closed; reader wording still requires bounded re-verification |
@@ -46,18 +47,28 @@ The base queue by itself is **not current authority**. A consumer that does not 
 
 The old base record `WAVES_1_TO_4_CLOSED_WAVE5_AND_SITE_TRANSFER_ACTIVE` is superseded.
 
-Current OSK status:
+Current OSK research/publication status remains:
 
 ```text
 WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD
 21 CORE / 1 CONDITIONAL / 7 DARK_SIDE / 4 STANDALONE / 0 HOLD
 ```
 
-Wave 11 records integration closeout only. It does not prove a live release. Wave 12 must verify the exact Product commit, route, bounded edits, build and live-route witness before any decision to remove `PUBLICATION_HOLD`.
+Wave 12 source acceptance is now complete:
+
+- Product PR `#810`;
+- exact verified head `f39589d8920ae828c13ee5fd804a79433be7bd82`;
+- source merge `e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e`;
+- route `/articles/diotrefy-nashego-vremeni/`;
+- exact-head source/browser checks green;
+- production/live verification: **not claimed**.
+
+This source acceptance does not prove deployed bytes or authorize automatic promotion. `PUBLICATION_HOLD` remains until a separate same-release production witness verifies the live route, metadata, search, print, no-JS and browser behavior, followed by an explicit disposition decision.
 
 ## Non-negotiable rules
 
 - Research presence is not publication approval.
+- Source merge is not production verification.
 - Drive or artifact custody is not a rights decision.
 - A reachable URL is not verified content.
 - `PROMOTE` requires zero holds, verified faithful wording and all applicable rights decisions.
