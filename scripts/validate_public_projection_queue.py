@@ -20,6 +20,9 @@ ROOT_AUTHORITY = ROOT / "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md"
 
 ALLOWED_DISPOSITIONS = {"PROMOTE", "REFERENCE", "SUPERSEDED", "BLOCKED"}
 ALLOWED_HOLDS = {"EVIDENCE_HOLD", "LOCATOR_HOLD", "ARCHIVE_HOLD", "RIGHTS_HOLD", "PUBLICATION_HOLD"}
+WAVE12_HEAD = "f39589d8920ae828c13ee5fd804a79433be7bd82"
+WAVE12_MERGE = "e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e"
+WAVE12_ROUTE = "/articles/diotrefy-nashego-vremeni/"
 errors: list[str] = []
 
 
@@ -117,7 +120,7 @@ def validate_base_csv(base: dict[str, Any]) -> None:
     require(csv_ids == json_ids, "base CSV record order/IDs drift from base JSON")
     for row, record in zip(rows, records):
         require(row.get("disposition") == record.get("disposition"), f"base CSV disposition drift: {record.get('id')}")
-        csv_holds = [item for item in (row.get("holds") or "").split("|") if item]
+        csv_holds = [item.strip() for item in (row.get("holds") or "").split("|") if item.strip()]
         require(csv_holds == record.get("holds", []), f"base CSV hold drift: {record.get('id')}")
 
 
@@ -171,16 +174,33 @@ def main() -> int:
         require(osk.get("researchStatus") == "WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD", "WAVES_1_TO_11 OSK state missing")
         require(osk.get("holds") == ["PUBLICATION_HOLD"], "effective OSK must retain only PUBLICATION_HOLD")
         require("wave11-product-integration-closeout" in osk.get("targetClaimIds", []), "OSK Wave 11 claim marker missing")
-        require("Wave 12" in osk.get("nextAction", ""), "OSK next action must name Wave 12")
+        require("wave12-source-route-accepted" in osk.get("targetClaimIds", []), "OSK Wave 12 source marker missing")
+        require(osk.get("targetRouteState") == "WAVE12_SOURCE_ROUTE_MERGED_LIVE_WITNESS_NOT_CLAIMED", "OSK Wave 12 route state drift")
+        require(WAVE12_ROUTE in osk.get("targetPublicRoutes", []), "OSK Wave 12 route missing")
+        acceptance = osk.get("wave12SourceAcceptance")
+        require(isinstance(acceptance, dict), "OSK Wave 12 source acceptance missing")
+        if isinstance(acceptance, dict):
+            require(acceptance.get("productPullRequest") == 810, "OSK Wave 12 Product PR drift")
+            require(acceptance.get("exactVerifiedHead") == WAVE12_HEAD, "OSK Wave 12 exact head drift")
+            require(acceptance.get("sourceMerge") == WAVE12_MERGE, "OSK Wave 12 source merge drift")
+            require(acceptance.get("route") == WAVE12_ROUTE, "OSK Wave 12 acceptance route drift")
+            require(acceptance.get("exactHeadChecksGreen") is True, "OSK Wave 12 exact-head evidence missing")
+            require(acceptance.get("productionVerified") is False, "OSK Wave 12 must not claim production verification")
+        require("same-release production/live witness" in osk.get("nextAction", ""), "OSK next action must preserve live-witness barrier")
 
+    require(overlay.get("product_snapshot") == WAVE12_MERGE, "overlay Product source snapshot drift")
+    require(current.get("productSnapshot") == WAVE12_MERGE, "current descriptor Product source snapshot drift")
     require("44_WAVE11_PRODUCT_INTEGRATION_CLOSEOUT_2026-08-01.md" in root_authority, "root authority missing Wave 11 closeout")
-    require("Wave 12" in root_authority, "root authority missing Wave 12 route-release stage")
+    require("Wave 12" in root_authority and WAVE12_MERGE in root_authority, "root authority missing Wave 12 source closure")
     for marker in (
         "RESEARCH-PUBLIC-PROJECTION-CURRENT-2026-08-02",
         "base + overlay",
         "REFERENCE: 4",
         "BLOCKED: 6",
         "WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD",
+        WAVE12_MERGE,
+        WAVE12_ROUTE,
+        "Production verification:** `NOT CLAIMED`",
     ):
         require(marker in dashboard, f"dashboard missing current marker: {marker}")
 
@@ -191,7 +211,8 @@ def main() -> int:
         return 1
     print(
         "Public projection authority: PASS — base + overlay composed; "
-        f"counts={effective_counts}; OSK Waves 1-11 REFERENCE/PUBLICATION_HOLD"
+        f"counts={effective_counts}; OSK Waves 1-11 REFERENCE/PUBLICATION_HOLD; "
+        "Wave 12 source accepted, production unverified"
     )
     return 0
 
