@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "authorityId": "GILL-CLOSED-BOOK-FAMILIES-2026-08-02",
-  "status": "CURRENT_REQUEST_READY_REMOTE_ITEM_VERIFIED_NO_BYTE_RECEIPT",
+  "status": "CURRENT_REQUEST_READY_ONE_DURABLE_FILE_RECEIPT_NO_QUOTES",
   "generatedAt": "2026-08-02",
   "lastVerifiedAt": "2026-08-04",
   "directQuotesApproved": false,
@@ -53,7 +53,7 @@
     {
       "id": "GILL-FAM-BIOGRAPHICAL-PRIMARY",
       "label": "Rippon Crosby White biographical witness editions",
-      "status": "OPEN_ACCESS_ITEM_VERIFIED_BYTE_RECEIPT_REQUIRED",
+      "status": "DURABLE_BYTE_RECEIPT_ESTABLISHED_EDITION_VERIFIED_CLAIM_FOLLOWUP_REQUIRED",
       "ownerDocuments": ["Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md","Джон Гилл/46_WHITEFIELD_PRIMARY_AND_LATE_WITNESS_SOURCE_CHAIN.md","Джон Гилл/51_BIOGRAPHY_CHURCH_LEGACY_EVIDENCE_REGISTER.md","Джон Гилл/52_ELIZABETH_GILL_AND_ARCHIVAL_EVIDENCE.md"],
       "discoveryAuthority": "data/gill-rippon-1838-open-access-verification-2026-08-04.json",
       "claimScopes": ["life chronology","church history","family testimony","contemporary reception"],
@@ -79,13 +79,34 @@
       "acceptance": "One named package or manifest with file list, byte sizes, SHA-256, storage receipt and mapping to the Gill witness registry."
     }
   ],
-  "receipts": [],
+  "receipts": [
+    {
+      "receiptId": "GILL-RECEIPT-RIPPON-1838-IA-20260804",
+      "familyId": "GILL-FAM-BIOGRAPHICAL-PRIMARY",
+      "itemId": "GILL-BIO-RIPPON-1838-IA",
+      "authority": "data/gill-rippon-1838-open-access-verification-2026-08-04.json",
+      "file_name": "briefmemoiroflif00ripp.pdf",
+      "byte_size": 9297102,
+      "sha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
+      "received_at": "2026-08-03T23:46:51.303Z",
+      "durable_storage_receipt": {
+        "provider": "Google Drive",
+        "file_id": "1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu",
+        "stored_name": "GILL-BIO-RIPPON-1838-IA__briefmemoiroflif00ripp__sha256-362019ee851280e1.pdf",
+        "created_at": "2026-08-03T23:49:15.863Z",
+        "shared": false
+      },
+      "editionUsable": true,
+      "quoteReady": false
+    }
+  ],
   "counts": {
     "families": 7,
     "verifiedRemoteItems": 1,
+    "verifiedFileReceipts": 1,
     "verifiedPackageReceipts": 0,
     "quoteReadyFamilies": 0,
     "directQuotesApproved": 0
   },
-  "boundary": "The acquisition matrix closes ownership and acceptance criteria and records one verified remote item identity. It does not claim that external books or the physical package have been received, stored, hashed, page-image reviewed or promoted to quotation authority."
+  "boundary": "The acquisition matrix closes ownership and acceptance criteria and records one durable file receipt for Rippon 1838. The canonical physical package remains unresolved; no family is quote ready and no direct quotation is approved."
 }
