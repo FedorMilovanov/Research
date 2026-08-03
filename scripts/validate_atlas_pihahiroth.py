@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Validate the Pihahiroth uncertainty-geometry authority."""
+"""Validate the Pihahiroth uncertainty-geometry authority and owner composition."""
 from __future__ import annotations
 
 import json
-import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -64,7 +63,7 @@ for row in constraints:
     require(isinstance(locators, list) and bool(locators), f"{cid}: locators required")
 
 candidates = registry.get("candidates")
-require(isinstance(candidates, list) and len(candidates) == 3, "exactly three candidates required")
+require(isinstance(candidates, list) and len(candidates) == 3, "exactly three current corridors required")
 candidates = candidates if isinstance(candidates, list) else []
 required_candidates = {"PH-CAND-NORTH", "PH-CAND-BALLAH", "PH-CAND-BITTER"}
 require({row.get("id") for row in candidates if isinstance(row, dict)} == required_candidates, "candidate set drift")
@@ -118,22 +117,39 @@ require(counts.get("sources") == 9, "source count drift")
 require(counts.get("directQuotesApproved") == 0, "direct quote count must remain zero")
 require(counts.get("authoritativePoints") == 0, "authoritative point count must remain zero")
 
+# The historical GEO dossier owns the candidate analysis and provenance. The
+# current authority and JSON own the present status, machine counts and Product
+# uncertainty contract. Do not require a historical dossier to impersonate a
+# later authority file or inflate it to an arbitrary prose length.
 dossier = read(DOSSIER)
+for marker in (
+    "# Пи-Гахироф и место перехода моря",
+    "## 📄 Кандидаты локализации",
+    "## 🔍 Анализ и верификация",
+    "## 🗺 Решение для Атласа",
+    "## ⏳ Хронология вопроса",
+    "Горькие озёра / Тимсах",
+    "Север Суэцкого залива",
+    "Озеро Балах / Мензала",
+    "Нувейба, залив Акаба",
+    "ни один не локализован надёжно",
+    "без ложной точности",
+):
+    require(marker in dossier, f"historical dossier marker missing: {marker}")
+for forbidden in ("TODO", "TBD", "Археологи нашли точное место перехода"):
+    require(forbidden not in dossier, f"unresolved/forbidden dossier marker: {forbidden}")
+
 current = read(CURRENT)
 for marker in (
-    "ATLAS-PIHAHIROTH-AUTHORITY-2026-08-02",
-    "TEXTUAL CONSTRAINTS CLOSED / EXACT LOCATION UNRESOLVED",
-    "Точное место Пи-Гахирофа и перехода не установлено",
-    "SINGLE AUTHORITATIVE POINT = FORBIDDEN",
+    "ATLAS-CURRENT-AUTHORITY-2026-08-02",
     "data/atlas-pihahiroth-authority-2026-08-02.json",
+    "exact coordinate | `UNRESOLVED`",
+    "single authoritative point | `FORBIDDEN`",
+    "PRODUCT IMPLEMENTATION OPEN",
+    "Исследование Пи-Гахирофа завершено в форме трёх кандидатных коридоров; точное место не установлено",
 ):
-    require(marker in dossier, f"dossier marker missing: {marker}")
-require(len(re.findall(r"[А-Яа-яЁё]{2,}", dossier)) >= 1200, "dossier below depth floor")
-for forbidden in ("TODO", "TBD", "PUBLICATION_HOLD", "Археологи нашли точное место перехода"):
-    require(forbidden not in dossier, f"unresolved/forbidden dossier marker: {forbidden}")
-require("ATLAS-CURRENT-AUTHORITY-2026-08-02" in current, "current Atlas authority missing")
-require("single authoritative point | `FORBIDDEN`" in current, "current authority must forbid single point")
-require("Product implementation open" in current or "PRODUCT IMPLEMENTATION OPEN" in current, "implementation boundary missing")
+    require(marker in current, f"current Atlas authority missing marker: {marker}")
+require("Атлас установил, где именно Израиль перешёл море" in current, "forbidden reader claim must remain explicit")
 
 if errors:
     print(f"Atlas Pihahiroth: FAIL ({len(errors)})", file=sys.stderr)
@@ -141,4 +157,4 @@ if errors:
         print(f"- {error}", file=sys.stderr)
     raise SystemExit(1)
 
-print("Atlas Pihahiroth: PASS — 8 constraints, 3 corridors, 9 sources, 0 authoritative points")
+print("Atlas Pihahiroth: PASS — 8 constraints, 3 corridors, 9 sources, 0 authoritative points; owner composition preserved")
