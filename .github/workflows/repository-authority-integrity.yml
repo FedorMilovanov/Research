@@ -23,6 +23,12 @@ jobs:
           fetch-depth: 0
           path: Research
 
+      - name: Fetch pinned Bratsky Stage 23 witness
+        run: |
+          git -C Research cat-file -e 'f3601a30f071385da8987acf1d96090b28a6af52^{commit}' || \
+            git -C Research fetch --no-tags --depth=1 origin f3601a30f071385da8987acf1d96090b28a6af52
+          git -C Research cat-file -e 'f3601a30f071385da8987acf1d96090b28a6af52^{commit}'
+
       - name: Checkout exact Product snapshot with complete history
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
@@ -32,10 +38,10 @@ jobs:
           path: Product
           persist-credentials: false
 
-      - name: Compile validators
+      - name: Validate Python syntax without writing bytecode
         working-directory: Research
         run: |
-          python3 -m py_compile \
+          for path in \
             scripts/validate_repository_authority_integrity.py \
             scripts/validate_public_projection_queue.py \
             scripts/validate_osk_wave7_product_article_audit.py \
@@ -45,6 +51,9 @@ jobs:
             scripts/validate_genesis6_authority_manifest.py \
             scripts/check_heart_source_closure.py \
             scripts/normalize_baptist_proof_ledger.py
+          do
+            python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
+          done
 
       - name: Validate repository control plane
         working-directory: Research
