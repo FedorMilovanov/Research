@@ -2,11 +2,12 @@
   "schemaVersion": 1,
   "authorityId": "GILL-RIPPON-1838-OPEN-ACCESS-VERIFICATION-2026-08-04",
   "familyId": "GILL-FAM-BIOGRAPHICAL-PRIMARY",
-  "status": "REMOTE_ITEM_VERIFIED_AWAITING_BYTE_RECEIPT",
+  "status": "BYTE_RECEIPT_ESTABLISHED_EDITION_VERIFIED_CLAIM_FOLLOWUP_REQUIRED",
   "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
   "directQuotesApproved": false,
   "quoteReady": false,
-  "byteReceiptEstablished": false,
+  "byteReceiptEstablished": true,
   "items": [
     {
       "id": "GILL-BIO-RIPPON-1838-IA",
@@ -48,15 +49,21 @@
         "catalogPages": 182,
         "pageNumberConfidence": 96,
         "scanPpi": 400,
+        "pdfInspectionReviewed": true,
+        "pdfEncrypted": false,
+        "pdfJavaScript": false,
+        "pdfAttachments": 0,
         "titlePageTextReviewed": true,
         "titlePagePdfIndex": 6,
-        "titlePageImageReviewed": false,
+        "titlePageImageReviewed": true,
         "advertisementPdfIndex": 8,
+        "advertisementImageReviewed": true,
         "advertisementConfirmsVerbatimReprint": true,
         "pageCountDifferenceDocumented": true,
+        "locatorMapReviewed": true,
         "stableLocatorExamples": [
           "PDF object page 6: title page",
-          "PDF object page 8: publisher advertisement",
+          "PDF object pages 8-9: publisher advertisement",
           "PDF object page 10: memoir text begins"
         ]
       },
@@ -71,29 +78,34 @@
         "repositoryTermsStillApply": true
       },
       "receipt": {
-        "state": "NOT_RECEIVED",
-        "file_name": null,
-        "byte_size": null,
-        "sha256": null,
-        "received_at": null,
-        "durable_storage_receipt": null
+        "state": "RECEIVED_DURABLE_DRIVE",
+        "file_name": "briefmemoiroflif00ripp.pdf",
+        "byte_size": 9297102,
+        "sha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
+        "received_at": "2026-08-03T23:46:51.303Z",
+        "durable_storage_receipt": {
+          "provider": "Google Drive",
+          "file_id": "1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu",
+          "stored_name": "GILL-BIO-RIPPON-1838-IA__briefmemoiroflif00ripp__sha256-362019ee851280e1.pdf",
+          "mime_type": "application/pdf",
+          "byte_size": 9297102,
+          "created_at": "2026-08-03T23:49:15.863Z",
+          "modified_at": "2026-08-03T23:49:15.863Z",
+          "parent_id": "0AL754uQ3lkWPUk9PVA",
+          "shared": false,
+          "metadata_readback": true
+        }
       },
-      "receiptGaps": [
-        "file_name",
-        "byte_size",
-        "sha256",
-        "received_at",
-        "durable_storage_receipt"
-      ],
-      "claimBoundary": "Remote edition discovery and title-text verification only. No page quotation, claim promotion, or quote card is authorized until a byte-level receipt and page-image readback exist."
+      "receiptGaps": [],
+      "claimBoundary": "Exact bytes, durable custody, edition identity and the edition-level locator map are verified. No claim or quotation is promoted until an owner-scoped locator, context window and quote card are reviewed."
     }
   ],
   "counts": {
     "remoteItemsVerified": 1,
-    "byteReceipts": 0,
-    "editionUsableItems": 0,
+    "byteReceipts": 1,
+    "editionUsableItems": 1,
     "quoteReadyItems": 0,
     "directQuotesApproved": 0
   },
-  "boundary": "This authority closes item identity and remote availability for one Rippon edition. It does not establish local custody, SHA-256 fixity, durable storage, page-image review, or quotation authority."
+  "boundary": "This authority establishes one durable byte receipt and edition-level usability for Rippon 1838. It does not establish claim usability, a quote card, quotation authority or Product publication approval."
 }
