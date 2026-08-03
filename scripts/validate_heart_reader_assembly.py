@@ -46,7 +46,10 @@ def read(path: Path) -> str:
 
 
 def words(text: str) -> int:
-    return len(re.findall(r"[A-Za-zА-Яа-яЁё]{2,}", text))
+    # Count ordinary alphabetic word tokens, including one-letter Russian
+    # conjunctions and prepositions. Excluding them made the 1500-word floor
+    # depend on word length rather than the actual chapter word count.
+    return len(re.findall(r"[A-Za-zА-Яа-яЁё]+", text))
 
 
 registry = load(REGISTRY)
