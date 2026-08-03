@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed validation for OSK Wave 6 site-transfer publication ledger."""
+"""Fail-closed validation for OSK Wave 6 ledger and its current projection overlay."""
 from __future__ import annotations
 import json, sys
 from pathlib import Path
@@ -104,7 +104,7 @@ def main()->None:
     if not CORE<=bundle_cases or not DARK<=bundle_cases or not STANDALONE<=bundle_cases: die("future bundles must route all core/dark/standalone cases")
     if CONDITIONAL & bundle_cases: die("conditional comparator must not receive an automatic future article bundle")
 
-    if overlay.get("schema_version")!=1 or overlay.get("authority_id")!="A06-OSK-WAVE6-PROJECTION-2026-08-01": die("overlay authority drift")
+    if overlay.get("schema_version")!=2 or overlay.get("authority_id")!="A06-OSK-CURRENT-PROJECTION-2026-08-02": die("current overlay authority drift")
     if overlay.get("base_authority_id")!=baseq.get("authorityId"): die("overlay base authority drift")
     if overlay.get("supersedes_queue_record_id")!="osk-power-dark-side-standalone": die("overlay target drift")
     base_record=next((r for r in baseq.get("records",[]) if r.get("id")=="osk-power-dark-side-standalone"),None)
@@ -112,15 +112,32 @@ def main()->None:
     effective=overlay.get("effective_record")
     if not isinstance(effective,dict) or effective.get("disposition")!="REFERENCE": die("effective overlay disposition drift")
     if effective.get("holds")!=["PUBLICATION_HOLD"]: die("overlay must remove EVIDENCE_HOLD but retain PUBLICATION_HOLD")
-    if effective.get("researchStatus")!="WAVES_1_TO_5_EVIDENCE_CLOSED_290_SOURCES_WAVE6_LEDGER_READY": die("overlay research status drift")
+    if effective.get("researchStatus")!="WAVES_1_TO_11_RESEARCH_CLOSED_PRODUCT_PUBLICATION_HOLD": die("current overlay research status drift")
     if overlay.get("effective_projection_counts")!={"PROMOTE":0,"REFERENCE":4,"SUPERSEDED":0,"BLOCKED":6,"total":10}: die("effective A06 counts drift")
+
+    acceptance=effective.get("wave12SourceAcceptance")
+    if not isinstance(acceptance,dict): die("Wave 12 source acceptance object required")
+    expected_acceptance={
+        "productPullRequest":810,
+        "exactVerifiedHead":"f39589d8920ae828c13ee5fd804a79433be7bd82",
+        "sourceMerge":"e604b97dbbe45cf9ba9e2a84551b799f0dac1a0e",
+        "route":"/articles/diotrefy-nashego-vremeni/",
+        "exactHeadChecksGreen":True,
+        "productionVerified":False,
+    }
+    if acceptance!=expected_acceptance: die(f"Wave 12 source acceptance drift: {acceptance}")
+    if overlay.get("product_snapshot")!=expected_acceptance["sourceMerge"]: die("current overlay Product snapshot drift")
+    if effective.get("targetRouteState")!="WAVE12_SOURCE_ROUTE_MERGED_LIVE_WITNESS_NOT_CLAIMED": die("Wave 12 route-state boundary drift")
+    if expected_acceptance["route"] not in effective.get("targetPublicRoutes",[]): die("Wave 12 route missing from projection")
+    if "wave12-source-route-accepted" not in effective.get("targetClaimIds",[]): die("Wave 12 claim marker missing")
+    if "same-release production/live witness" not in effective.get("nextAction",""): die("Wave 12 live-witness next action missing")
 
     for authority in effective.get("sourceAuthorities",[]):
         if not (R/authority).exists(): die(f"overlay source authority missing: {authority}")
 
     text=AUTHORITY.read_text(encoding="utf-8")+OVERLAY_MD.read_text(encoding="utf-8")+ROOT_AUTH.read_text(encoding="utf-8")
-    for marker in ("Wave 6","290","216","105","PRESERVE_BODY_NO_CASE_ROSTER","REFERENCE / PUBLICATION_HOLD","10 editorial bundles","NO PRODUCT WRITE"):
+    for marker in ("Wave 6","Wave 12","290","216","105","PRESERVE_BODY_NO_CASE_ROSTER","REFERENCE / PUBLICATION_HOLD","10 editorial bundles","NO PRODUCT WRITE"):
         if marker not in text: die(f"authority marker missing: {marker}")
-    print("OSK Wave 6 OK: 20 point records, 10 future bundles, 33 routed cases; A06 OSK effective REFERENCE with PUBLICATION_HOLD and 0 PROMOTE")
+    print("OSK Wave 6/current projection OK: 20 point records, 10 future bundles, 33 routed cases; Wave 12 source accepted; REFERENCE/PUBLICATION_HOLD; production unverified")
 
 if __name__=="__main__": main()
