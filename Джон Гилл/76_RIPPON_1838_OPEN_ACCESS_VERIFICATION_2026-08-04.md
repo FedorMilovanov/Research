@@ -1,4 +1,4 @@
-# Том 76. Rippon 1838 — open-access item verification
+# Том 76. Rippon 1838 — durable byte receipt and edition verification
 
 **Дата:** 2026-08-04  
 **Authority ID:** `GILL-RIPPON-1838-OPEN-ACCESS-VERIFICATION-2026-08-04`  
@@ -7,15 +7,15 @@
 
 ```text
 REMOTE ITEM VERIFIED = 1
-BYTE RECEIPT = 0
-EDITION-USABLE ITEMS = 0
+BYTE RECEIPT = 1
+EDITION-USABLE ITEMS = 1
 QUOTE READY = 0
 DIRECT QUOTES APPROVED = 0
 ```
 
-## 1. Что закрыто этой волной
+## 1. Edition identity
 
-Для одного конкретного издания Риппона закрыты discovery и edition identity:
+Для одного конкретного издания Риппона подтверждены:
 
 - John Rippon, *A Brief Memoir of the Life and Writings of the Late Rev. John Gill, D.D.*;
 - London: John Bennett, 4 Three Tun Passage, Newgate Street;
@@ -33,64 +33,96 @@ Canonical item page:
 
 `https://archive.org/details/briefmemoiroflif00ripp`
 
-Remote PDF candidate:
+Exact source PDF endpoint:
 
 `https://archive.org/download/briefmemoiroflif00ripp/briefmemoiroflif00ripp.pdf`
 
-OCR navigation candidate:
+OCR navigation endpoint:
 
 `https://archive.org/stream/briefmemoiroflif00ripp/briefmemoiroflif00ripp_djvu.txt`
 
-## 2. Title-page and pagination review
+OCR остаётся только навигационным слоем и не заменяет page-image readback.
 
-Remote PDF parsing records:
+## 2. Exact-byte receipt
+
+Файл был фактически загружен и измерен как полученный объект:
+
+```text
+file_name = briefmemoiroflif00ripp.pdf
+byte_size = 9297102
+sha256 = 362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792
+received_at = 2026-08-03T23:46:51.303Z
+```
+
+Durable raw-file storage установлен в Google Drive и подтверждён независимым metadata readback:
+
+```text
+provider = Google Drive
+file_id = 1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu
+stored_name = GILL-BIO-RIPPON-1838-IA__briefmemoiroflif00ripp__sha256-362019ee851280e1.pdf
+mime_type = application/pdf
+stored_size = 9297102
+created_at = 2026-08-03T23:49:15.863Z
+shared = false
+metadata_readback = true
+```
+
+Drive-name сам по себе не использован как receipt: квитанция включает фактически загруженные bytes, полный SHA-256, measured size, time и устойчивый file ID. Файл хранится private/not-shared; Research фиксирует custody, но не превращает Drive в публичный источник.
+
+## 3. PDF and page-image readback
+
+Проверка полученного PDF установила:
 
 - PDF object pages: `178`;
 - catalog pages: `182`;
 - repository page-number confidence: `96`;
 - scan density: `400 ppi`;
-- PDF object page `6`: title page;
-- PDF object page `8`: publisher advertisement;
-- PDF object page `10`: memoir body begins.
+- encrypted: `false`;
+- JavaScript: `false`;
+- attachments: `0`;
+- PDF object page `6`: визуально проверенная title page;
+- PDF object pages `8-9`: визуально проверенное publisher advertisement;
+- PDF object page `10`: начало memoir body.
 
-The title-page text identifies Rippon, John Gill, John Bennett, the London address and the year 1838. The advertisement states that the detached edition was printed verbatim from the memoir prefixed to Gill's nine-volume exposition. This establishes remote edition identity, not local custody.
+Title page визуально подтверждает Rippon, John Gill, John Bennett, лондонский адрес и 1838 год. Advertisement сообщает, что detached edition напечатано verbatim из memoir, ранее помещённого перед девятитомным exposition Gill.
 
-The `178` PDF-object / `182` catalog-page difference is preserved as a documented boundary and must not be silently normalized into a quotation locator.
+Разница `178` PDF-object pages / `182` catalog pages сохранена как явная граница. Локаторы в registry относятся к PDF object index и не подменяются printed-page номерами.
 
-## 3. Rights boundary
+## 4. Rights boundary
 
-The work was published in 1838. Rippon died in 1836. Internet Archive presents unrestricted PDF and OCR download options for this item. The registry therefore records the work as a public-domain remote scan while preserving repository terms.
+Работа опубликована в 1838 году; Rippon умер в 1836 году. Internet Archive предоставляет unrestricted PDF/OCR download для данного item. Registry сохраняет состояние `PUBLIC_DOMAIN_WORK_REMOTE_SCAN_DOWNLOADABLE` и отдельно указывает, что repository terms продолжают применяться.
 
-This rights review does not itself prove that a particular local file was received unchanged.
+Право хранить public-domain scan и право переносить конкретную цитату в Product не смешиваются.
 
-## 4. What remains open
+## 5. Что закрыто
 
-A valid byte receipt still requires all five fields:
+```text
+REMOTE DISCOVERY = CLOSED
+EDITION IDENTITY = CLOSED
+EXACT FILE RECEIPT = CLOSED
+DURABLE STORAGE RECEIPT = CLOSED
+TITLE-PAGE IMAGE REVIEW = CLOSED
+EDITION-LEVEL LOCATOR MAP = CLOSED
+EDITION USABILITY = CLOSED
+```
 
-1. actual received file name;
-2. byte size measured from the received file;
-3. SHA-256 computed from the received bytes;
-4. received-at timestamp;
-5. durable storage receipt.
+Family status:
 
-None of these fields is inferred from a browser preview, OCR endpoint, item metadata, generated Gill PDF, or a filename in Drive/Library.
+`DURABLE_BYTE_RECEIPT_ESTABLISHED_EDITION_VERIFIED_CLAIM_FOLLOWUP_REQUIRED`
 
-The runtime used for this wave could verify the remote item and parse the PDF endpoint, but could not materialize the external bytes into durable storage. Therefore the family is advanced only to:
+## 6. Что остаётся закрытым для promotion
 
-`OPEN_ACCESS_ITEM_VERIFIED_BYTE_RECEIPT_REQUIRED`
+```text
+CLAIM-USABLE OWNER MAPPING = OPEN
+QUOTE CARD = 0
+CONTEXT WINDOW REVIEW = 0
+QUOTE READY = 0
+DIRECT QUOTES APPROVED = 0
+PRODUCT PUBLICATION APPROVAL = 0
+```
 
-It is not advanced to `received`, `edition usable`, `claim usable` or `quote ready`.
+Наличие bytes и edition usability не разрешает автоматически цитировать любую страницу. Для каждого будущего тезиса требуется отдельный owner-scoped locator, контекстное окно, quote card и rights/publication decision.
 
-## 5. Claim boundary
+## 7. Next valid action
 
-Until a byte receipt and page-image readback exist:
-
-- OCR remains navigation only;
-- no new direct quotation is approved;
-- no quote card is created;
-- no claim in the Gill corpus may cite this new authority as locally verified page evidence;
-- the existing owner documents remain unchanged.
-
-## 6. Next valid action
-
-Materialize the exact PDF or original scan, calculate SHA-256 and byte size, store it durably, review the page image at the intended locator, then update the same family registry. Creating a second receipt ledger or treating the remote URL as custody is forbidden.
+Выбрать один конкретный claim из owner documents этой family, проверить его по page image и surrounding context, оформить одну quote card и только затем решать, может ли item стать claim usable для этого ограниченного scope. Массовая quote promotion всей книги запрещена.
