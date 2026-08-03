@@ -11,6 +11,7 @@ on:
       - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
       - 'Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
       - 'Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
+      - 'Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md'
       - 'Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md'
   push:
     branches: [main]
@@ -21,6 +22,7 @@ on:
       - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
       - 'Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
       - 'Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
+      - 'Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md'
       - 'Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md'
 
 permissions:
@@ -31,7 +33,9 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-      - run: python3 -m py_compile scripts/validate_gill_closed_book_families.py
+      - name: Validate Gill family syntax without writing bytecode
+        run: >-
+          python3 -c 'from pathlib import Path; p=Path("scripts/validate_gill_closed_book_families.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
       - run: python3 scripts/validate_gill_closed_book_families.py
       - run: |
           git diff --exit-code
