@@ -1,14 +1,15 @@
 # Том 75. Closed-book family acquisition authority
 
 **Дата:** 2026-08-02  
+**Последняя проверка:** 2026-08-04  
 **Authority ID:** `GILL-CLOSED-BOOK-FAMILIES-2026-08-02`  
-**Статус:** `FAMILY OWNERSHIP CLOSED / REQUEST CRITERIA CLOSED / EXTERNAL FILE RECEIPTS OPEN`  
+**Статус:** `FAMILY OWNERSHIP CLOSED / ONE DURABLE FILE RECEIPT / REMAINING ACQUISITION OPEN`  
 **Machine registry:** `data/gill-closed-book-families-2026-08-02.json`  
 **Прямые цитаты:** `0 approved`
 
 ## 1. Что исправляет этот том
 
-Ранний backlog говорил о «закрытых книгах» как об одной неопределённой корзине. Теперь каждая семья имеет:
+Ранний backlog говорил о «закрытых книгах» как об одной неопределённой корзине. Теперь каждая family имеет:
 
 - отдельный ID;
 - owner documents;
@@ -25,7 +26,7 @@
 | `GILL-FAM-STROTHER` | biography and doctoral scholarship | external acquisition required |
 | `GILL-FAM-ASCOL` | gospel offer, duty faith, external call | external acquisition required |
 | `GILL-FAM-WALDEN` | Gillites and later reception | external acquisition required |
-| `GILL-FAM-BIOGRAPHICAL-PRIMARY` | Rippon, Crosby, White and biographical witnesses | partial open-access acquisition required |
+| `GILL-FAM-BIOGRAPHICAL-PRIMARY` | Rippon, Crosby, White and biographical witnesses | one durable Rippon receipt; edition verified; claim follow-up required |
 | `GILL-FAM-FIRST-EDITIONS` | dates, title pages, edition conflicts | partial open-access acquisition required |
 | `GILL-FAM-CANONICAL-PHYSICAL-PACKAGE` | archive custody and registry mapping | package identity unresolved |
 
@@ -39,34 +40,45 @@ FULL FILE RECEIVED
 → requires bytes + SHA-256 + durable receipt
 
 EDITION VERIFIED
-→ requires title page + pagination + edition identity
+→ requires title page + pagination + edition identity + locator map
 
 CLAIM USABLE
 → requires exact owner scope and locator
 
 QUOTE READY
-→ requires page-image readback + context + rights basis
+→ requires page-image readback + context + quote card + rights basis
 ```
 
 Ни один уровень не выводится из имени файла или поискового результата.
 
-## 4. Search audit boundary
+## 4. Current receipt transaction
 
-Connected Drive searches по английским и русским названиям выполнены как discovery pass. Они не создают receipt автоматически. Даже найденный объект должен пройти byte-level materialization/readback и mapping к конкретной family.
+Для `GILL-FAM-BIOGRAPHICAL-PRIMARY` установлен один точный receipt:
+
+- item: `GILL-BIO-RIPPON-1838-IA`;
+- file: `briefmemoiroflif00ripp.pdf`;
+- bytes: `9297102`;
+- SHA-256: `362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792`;
+- durable provider: Google Drive;
+- durable file ID: `1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu`;
+- metadata readback confirmed the same `application/pdf` and byte size;
+- title page, publisher advertisement and edition locator map were visually reviewed.
+
+Это file-level receipt для одного open-access item. Он не является canonical physical package receipt и не закрывает другие семьи.
+
+## 5. Search audit boundary
+
+Connected Drive searches по английским и русским названиям остаются discovery pass, пока конкретный объект не проходит byte-level materialization/readback и mapping к family. Текущий Rippon receipt прошёл этот ladder; простые совпадения по имени всё ещё не проходят.
 
 Поэтому допустимо говорить:
 
-> Поиск выполнен; verified package receipt в Research пока не установлен.
+> Для Rippon 1838 установлен один durable file receipt; остальные внешние acquisition dependencies остаются открыты.
 
 Недопустимо говорить:
 
-> Файлов точно нет.
+> Наличие похожего имени в Drive означает verified full text.
 
-или:
-
-> Файл найден по имени, значит источник закрыт.
-
-## 5. Canonical physical package
+## 6. Canonical physical package
 
 Package считается установленным только при наличии:
 
@@ -79,9 +91,9 @@ Package считается установленным только при нал
 7. mapping к witness registry/owners;
 8. duplicate and placeholder rejection.
 
-До этого `GILL-FAM-CANONICAL-PHYSICAL-PACKAGE` остаётся `PACKAGE_IDENTITY_UNRESOLVED`.
+Один Rippon PDF не является этим пакетом. `GILL-FAM-CANONICAL-PHYSICAL-PACKAGE` остаётся `PACKAGE_IDENTITY_UNRESOLVED`.
 
-## 6. Что закрыто
+## 7. Что закрыто
 
 ```text
 UNOWNED CLOSED-BOOK BACKLOG = CLOSED
@@ -90,19 +102,22 @@ CLAIM SCOPE = CLOSED
 REQUEST QUERIES = CLOSED
 ACCEPTANCE CRITERIA = CLOSED
 FALSE FULL-TEXT PROMOTION = BLOCKED
+RIPPON 1838 EXACT FILE RECEIPT = CLOSED
+RIPPON 1838 EDITION VERIFICATION = CLOSED
 ```
 
-## 7. Что остаётся внешним
+## 8. Current counts and open boundaries
 
 ```text
-INSTITUTIONAL / PRIVATE FILE DELIVERY = OPEN
-BYTE RECEIPTS = 0
+DURABLE FILE RECEIPTS = 1
+VERIFIED PACKAGE RECEIPTS = 0
 QUOTE-READY FAMILIES = 0
 NEW DIRECT QUOTES = 0
+REMAINING INSTITUTIONAL / PRIVATE FILE DELIVERY = OPEN
 ```
 
-Это не незакрытый исследовательский вопрос о том, что нужно искать. Это внешний acquisition dependency с определённым контрактом.
+Receipt closure не означает claim или quotation closure. Для Rippon остаётся owner-scoped claim follow-up; для остальных families остаётся external acquisition.
 
-## 8. Next valid action
+## 9. Next valid action
 
-Получить одну конкретную family, записать receipt, проверить edition/страницы, затем открыть только claim-bounded follow-up в соответствующем owner document. Массовое «добавить всё найденное» запрещено.
+Для Rippon выбрать один конкретный claim, проверить page image и context window, создать одну quote card и обновить соответствующий owner document. Отдельно можно получать следующую family, но массовое «добавить всё найденное» и смешивание family receipts запрещены.
