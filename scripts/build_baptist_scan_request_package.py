@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build a deterministic Baptist scan-request package and validate byte receipts.
+"""Build a deterministic Baptist scan-request package and validate receipts.
 
-The script never promotes catalog evidence to acquisition. It reads the current
-NEXT_MICROBATCH, composes verified receipts where present, and emits request-ready
-records for everything else.
+The current NEXT_MICROBATCH is a historical four-column queue. This builder
+maps it losslessly into stable request records without treating catalog notes,
+filenames, URLs, OCR text, or generated Actions artifacts as acquired scans.
 """
 from __future__ import annotations
 
@@ -25,7 +25,7 @@ ID_FIELDS = ("record_id", "item_id", "id", "queue_id", "source_id")
 ISSUE_FIELDS = ("issue", "title", "item", "requested_item_designation")
 HOLDING_FIELDS = ("holding", "holding_or_provider", "archive", "provider")
 SOURCE_FIELDS = ("source", "catalog", "catalog_or_source_url", "source_url")
-ACTION_FIELDS = ("next_action", "action", "request_action")
+ACTION_FIELDS = ("next_action", "action", "request_action", "goal")
 STATE_ORDER = {
     "CATALOG_VERIFIED_REQUEST_READY": 0,
     "REQUEST_SENT": 1,
@@ -51,9 +51,18 @@ def pick(row: dict[str, str], fields: tuple[str, ...]) -> str:
     return ""
 
 
+def stable_legacy_id(issue: str) -> str:
+    """Derive an order-independent ID from the exact legacy item designation."""
+    digest = hashlib.sha256(issue.encode("utf-8")).hexdigest()[:16]
+    return f"legacy-next-microbatch-{digest}"
+
+
 def clean_url(value: str) -> str:
     value = value.strip()
-    if value.startswith("http://") or value.startswith("https://"):
+    if not value:
+        return ""
+    parsed = urlparse(value)
+    if parsed.scheme in {"http", "https"} and parsed.netloc:
         return value
     return ""
 
@@ -78,7 +87,7 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
-def require_receipt_fields(record: dict[str, Any], required: list[str], context: str) -> None:
+def require_fields(record: dict[str, Any], required: list[str], context: str) -> None:
     for field in required:
         value = record.get(field)
         if value is None or value == "" or value == []:
@@ -93,15 +102,22 @@ def normalize_queue() -> list[dict[str, str]]:
         return []
     with handle:
         reader = csv.DictReader(handle)
-        if not reader.fieldnames:
+        fields = {str(name or "").strip() for name in (reader.fieldnames or [])}
+        if not fields:
             fail("NEXT_MICROBATCH has no header")
             return []
+        legacy_four_column = fields == {"priority", "item", "goal", "blocker"}
         records: list[dict[str, str]] = []
         seen: set[str] = set()
         for row_number, raw in enumerate(reader, start=2):
             row = {str(key or "").strip(): str(value or "").strip() for key, value in raw.items()}
-            record_id = pick(row, ID_FIELDS)
             issue = pick(row, ISSUE_FIELDS)
+            if not issue:
+                fail(f"queue row {row_number}: issue/title is required")
+                continue
+            record_id = pick(row, ID_FIELDS)
+            if not record_id and legacy_four_column:
+                record_id = stable_legacy_id(issue)
             if not record_id:
                 fail(f"queue row {row_number}: stable ID is required")
                 continue
@@ -109,33 +125,39 @@ def normalize_queue() -> list[dict[str, str]]:
                 fail(f"queue row {row_number}: duplicate ID {record_id}")
                 continue
             seen.add(record_id)
-            if not issue:
-                fail(f"queue row {row_number}/{record_id}: issue/title is required")
-                continue
-            holding = pick(row, HOLDING_FIELDS)
+
             source = pick(row, SOURCE_FIELDS)
+            holding = pick(row, HOLDING_FIELDS)
             action = pick(row, ACTION_FIELDS)
             source_url = clean_url(row.get("source_url", "")) or clean_url(source)
             if source_url:
                 parsed = urlparse(source_url)
                 if parsed.scheme not in {"http", "https"} or not parsed.netloc:
                     fail(f"queue row {row_number}/{record_id}: malformed source URL")
+            if legacy_four_column:
+                # The historical queue has no dedicated holding/source column.
+                # Preserve its blocker/context verbatim as the request target
+                # instead of inventing an archive or claiming a verified holding.
+                holding = row.get("blocker", "").strip()
+                action = row.get("goal", "").strip()
             if not holding and not source:
-                fail(f"queue row {row_number}/{record_id}: holding or source pointer required")
+                fail(f"queue row {row_number}/{record_id}: holding/source context required")
             if not action:
                 action = "Request scan or source file; record byte receipt; perform OCR and visual page review."
+
             records.append({
                 "record_id": record_id,
-                "corpus": row.get("corpus", "").strip(),
+                "corpus": row.get("corpus", "").strip() or "Baptist legacy NEXT_MICROBATCH",
                 "issue": issue,
                 "year": row.get("year", "").strip(),
-                "queue_status": row.get("status", "").strip(),
+                "queue_status": row.get("status", "").strip() or row.get("priority", "").strip(),
                 "pages": row.get("pages", "").strip(),
                 "holding_or_provider": holding or source,
                 "source": source,
                 "catalog_or_source_url": source_url,
                 "next_action": action,
                 "legacy_version": row.get("version", "").strip(),
+                "legacy_blocker": row.get("blocker", "").strip(),
             })
         return records
 
@@ -167,7 +189,7 @@ def validate_receipts(policy: dict[str, Any], queue: list[dict[str, str]], recei
         if state not in allowed:
             fail(f"{context}: invalid state {state}")
             continue
-        require_receipt_fields(record, list(rules.get(state, [])), context)
+        require_fields(record, list(rules.get(state, [])), context)
         if STATE_ORDER.get(state, -1) >= STATE_ORDER["RECEIVED_UNVERIFIED"] and state != "REJECTED_NOT_SOURCE_FILE":
             sha = str(record.get("sha256", ""))
             size = record.get("byte_size")
@@ -176,7 +198,8 @@ def validate_receipts(policy: dict[str, Any], queue: list[dict[str, str]], recei
             if not isinstance(size, int) or size <= 0:
                 fail(f"{context}: positive byte_size required")
             storage = record.get("storage_receipt")
-            if not isinstance(storage, dict) or storage.get("state") not in policy.get("custody", {}).get("durableStates", []):
+            durable = policy.get("custody", {}).get("durableStates", [])
+            if not isinstance(storage, dict) or storage.get("state") not in durable:
                 fail(f"{context}: durable storage receipt required")
         if STATE_ORDER.get(state, -1) >= STATE_ORDER["FILE_VERIFIED"] and state not in {"RIGHTS_HOLD", "REJECTED_NOT_SOURCE_FILE"}:
             if not isinstance(record.get("page_count"), int) or record["page_count"] <= 0:
@@ -184,7 +207,8 @@ def validate_receipts(policy: dict[str, Any], queue: list[dict[str, str]], recei
             if record.get("title_page_visual_review") is not True or record.get("issue_identity_review") is not True:
                 fail(f"{context}: visual identity review required")
         if state == "QUOTE_READY":
-            if record.get("rights_state") not in {"PUBLIC_DOMAIN", "OPEN_LICENSE", "PRIVATE_RESEARCH_QUOTATION_REVIEWED", "PERMISSION_GRANTED"}:
+            allowed_rights = {"PUBLIC_DOMAIN", "OPEN_LICENSE", "PRIVATE_RESEARCH_QUOTATION_REVIEWED", "PERMISSION_GRANTED"}
+            if record.get("rights_state") not in allowed_rights:
                 fail(f"{context}: quote-ready rights state invalid")
             if not isinstance(record.get("quote_cards"), list) or not record["quote_cards"]:
                 fail(f"{context}: quote cards required")
@@ -198,17 +222,18 @@ def build_package(queue: list[dict[str, str]], receipt_map: dict[str, dict[str, 
         receipt = receipt_map.get(row["record_id"])
         if receipt:
             package.append({**row, "state": receipt["state"], "receipt": receipt})
-        else:
-            package.append({
-                **row,
-                "state": "CATALOG_VERIFIED_REQUEST_READY",
-                "request_target": row["holding_or_provider"],
-                "requested_item_designation": row["issue"],
-                "request_template": (
-                    f"Please provide a complete scan or source file for {row['issue']}. "
-                    "Please preserve cover/title page, all numbered and unnumbered pages, and identify any copy/page-count variant."
-                ),
-            })
+            continue
+        package.append({
+            **row,
+            "state": "CATALOG_VERIFIED_REQUEST_READY",
+            "request_target": row["holding_or_provider"],
+            "requested_item_designation": row["issue"],
+            "request_template": (
+                f"Please provide a complete scan or source file for {row['issue']}. "
+                "Please preserve cover/title page, all numbered and unnumbered pages, "
+                "and identify any copy/page-count variant."
+            ),
+        })
     return package
 
 
@@ -222,41 +247,32 @@ def write_outputs(output_dir: Path, package: list[dict[str, Any]], queue_sha: st
         "queueSha256": queue_sha,
         "records": package,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
-    csv_fields = [
-        "record_id", "corpus", "issue", "year", "state", "pages",
-        "holding_or_provider", "catalog_or_source_url", "next_action",
-    ]
+    csv_fields = ["record_id", "corpus", "issue", "year", "state", "pages", "holding_or_provider", "catalog_or_source_url", "next_action"]
     with (output_dir / "baptist-scan-request-package.csv").open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=csv_fields)
         writer.writeheader()
         for row in package:
             writer.writerow({field: row.get(field, "") for field in csv_fields})
     lines = [
-        "# Baptist scan request package",
-        "",
-        "**Custody:** `EPHEMERAL_ACTION_ARTIFACT` — this package is a request queue, not acquired scans.",
-        "",
+        "# Baptist scan request package", "",
+        "**Custody:** `EPHEMERAL_ACTION_ARTIFACT` — this package is a request queue, not acquired scans.", "",
     ]
     for row in package:
         lines.extend([
-            f"## {row['record_id']} — {row['issue']}",
-            "",
+            f"## {row['record_id']} — {row['issue']}", "",
             f"- state: `{row['state']}`",
             f"- corpus: {row.get('corpus') or 'not supplied'}",
-            f"- holding/provider: {row['holding_or_provider']}",
+            f"- holding/provider context: {row['holding_or_provider']}",
             f"- catalog/source: {row.get('catalog_or_source_url') or row.get('source') or 'not supplied'}",
             f"- page note: {row.get('pages') or 'not supplied'}",
-            f"- next action: {row['next_action']}",
-            "",
-            row.get("request_template", "Receipt already exists; follow the receipt state and next action."),
-            "",
+            f"- next action: {row['next_action']}", "",
+            row.get("request_template", "Receipt already exists; follow the receipt state and next action."), "",
         ])
     (output_dir / "REQUESTS.md").write_text("\n".join(lines), encoding="utf-8")
     sums = []
     for path in sorted(output_dir.iterdir()):
-        if path.name == "SHA256SUMS.txt" or not path.is_file():
-            continue
-        sums.append(f"{sha256_file(path)}  {path.name}")
+        if path.name != "SHA256SUMS.txt" and path.is_file():
+            sums.append(f"{sha256_file(path)}  {path.name}")
     (output_dir / "SHA256SUMS.txt").write_text("\n".join(sums) + "\n", encoding="utf-8")
 
 
@@ -283,13 +299,9 @@ def main() -> int:
         "quoteReady": sum(row["state"] == "QUOTE_READY" for row in package),
     }
     declared = receipts.get("counts", {})
-    require_declared = {
-        "fileVerified": counts["fileVerified"],
-        "quoteReady": counts["quoteReady"],
-    }
-    for key, expected in require_declared.items():
-        if declared.get(key) != expected:
-            fail(f"receipt count drift: {key}={declared.get(key)} expected {expected}")
+    for key in ("fileVerified", "quoteReady"):
+        if declared.get(key) != counts[key]:
+            fail(f"receipt count drift: {key}={declared.get(key)} expected {counts[key]}")
     if args.output_dir:
         write_outputs(args.output_dir, package, sha256_file(QUEUE_PATH))
     if errors:
