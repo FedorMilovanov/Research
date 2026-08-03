@@ -42,9 +42,10 @@ jobs:
           path: Product
           persist-credentials: false
 
-      - name: Compile validator
+      - name: Validate Python syntax without writing bytecode
         working-directory: Research
-        run: python3 -m py_compile scripts/validate_osk_wave7_product_article_audit.py
+        run: >-
+          python3 -c 'from pathlib import Path; p=Path("scripts/validate_osk_wave7_product_article_audit.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
 
       - name: Validate Wave 7 against exact Product bytes
         working-directory: Research
