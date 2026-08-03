@@ -20,13 +20,13 @@
     "record_id": ["item_id", "id"],
     "corpus": ["corpus"],
     "issue": ["issue"],
-    "year": ["year", "issue-derived"],
+    "year": ["year", "issue-derived", "first-year-from-range-with-raw-note"],
     "status": ["status"],
     "pages": ["pages"],
     "holding": ["holding"],
-    "source": ["source"],
-    "source_url": ["source_url"],
-    "verification_note": ["verification_note"],
+    "source": ["source", "non-HTTPS-legacy-pointer"],
+    "source_url": ["HTTPS source_url only"],
+    "verification_note": ["verification_note", "legacy-year-expression", "secondary-id-alias"],
     "next_action": ["next_action"],
     "version": ["version"]
   },
@@ -39,10 +39,13 @@
   },
   "normalization": {
     "yearMustBeIntegerOrBlank": true,
+    "yearRangeUsesFirstYearAndPreservesRawExpression": true,
     "recordIdMustBeUnique": true,
-    "itemIdAndIdMayNotConflict": true,
+    "itemIdIsPrimaryWhenLegacySecondaryIdDiffers": true,
+    "secondaryIdAliasMustBePreservedInVerificationNote": true,
     "emptyRecordIdForbidden": true,
     "sourceUrlMustBeHttpsOrBlank": true,
+    "nonHttpsTransportPointerMustBePreservedOutsideSourceUrl": true,
     "legacyInputIsReadOnly": true,
     "canonicalViewIsGeneratedDeterministically": true
   }
