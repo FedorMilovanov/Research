@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed validation for the Heart X.2 owner overlay."""
+"""Fail-closed validation for the Heart X.2 owner overlay and later X.3 composition."""
 from __future__ import annotations
 
 import argparse
@@ -14,6 +14,7 @@ BASE = ROOT / "data/heart-whole-book-integration-2026-08-04.json"
 VII = ROOT / "data/heart-vii-owner-closure-2026-08-04.json"
 I4 = ROOT / "data/heart-i4-owner-closure-2026-08-04.json"
 X2 = ROOT / "data/heart-x2-owner-closure-2026-08-04.json"
+X3 = ROOT / "data/heart-x3-owner-closure-2026-08-04.json"
 HUMAN = ROOT / "СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md"
 CURRENT = ROOT / "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md"
 X1_DOSSIER = ROOT / "СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md"
@@ -79,7 +80,9 @@ base = load(BASE)
 vii = load(VII)
 i4 = load(I4)
 x2 = load(X2)
+x3 = load(X3)
 
+# Immutable transaction chain through X.2.
 require(base.get("authorityId") == "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04", "base authority drift")
 require(base.get("counts", {}).get("productSourceOnly") == 5, "base Product count drift")
 require(base.get("counts", {}).get("ownerRequired") == 4, "base gap count drift")
@@ -96,24 +99,19 @@ require(vii.get("effectiveCounts", {}).get("ownerRequired") == 3, "VII gap count
 require(i4.get("authorityId") == "HEART-I4-OWNER-CLOSURE-2026-08-04", "I.4 dependency drift")
 require(i4.get("effectiveCounts", {}).get("productSourceOnly") == 7, "I.4 Product count drift")
 require(i4.get("effectiveCounts", {}).get("ownerRequired") == 2, "I.4 gap count drift")
-require(i4.get("remainingOwnerGaps") == ["HEART-BOOK-X2", "HEART-BOOK-X3"], "I.4 gap set drift")
 
+# X.2 historical closure must remain exactly 8 source owners / 1 remaining gap.
 require(x2.get("schemaVersion") == 1, "X.2 schema drift")
 require(x2.get("authorityId") == "HEART-X2-OWNER-CLOSURE-2026-08-04", "X.2 authority drift")
 require(x2.get("status") == "X2_PRODUCT_SOURCE_ESTABLISHED_UNIFIED_READER_AND_BOOK_CITATION_PASS_OPEN", "X.2 status drift")
 require(x2.get("generatedAt") == x2.get("lastVerifiedAt") == "2026-08-04", "X.2 date drift")
-require(x2.get("baseAuthorityId") == base.get("authorityId"), "X.2 base authority mismatch")
-require(x2.get("dependsOnOverlays") == [
-    "data/heart-vii-owner-closure-2026-08-04.json",
-    "data/heart-i4-owner-closure-2026-08-04.json",
-], "X.2 dependency order drift")
 require(x2.get("researchSnapshot") == "4a3f3966d3ebf9df7d0ff2b3777ec9d446321a9b", "X.2 Research snapshot drift")
-
-snapshot = x2.get("productSnapshot", {})
-require(snapshot.get("repository") == "FedorMilovanov/gb-is-my-strength", "Product repository drift")
-require(snapshot.get("commit") == PRODUCT_COMMIT, "Product commit drift")
-require(snapshot.get("satelliteRegistry") == {"path": SATELLITE_PATH, "blobSha": SATELLITE_BLOB}, "satellite witness drift")
-require(snapshot.get("articleOwner") == {"path": ARTICLE_PATH, "blobSha": ARTICLE_BLOB}, "article witness drift")
+require(x2.get("productSnapshot") == {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": PRODUCT_COMMIT,
+    "satelliteRegistry": {"path": SATELLITE_PATH, "blobSha": SATELLITE_BLOB},
+    "articleOwner": {"path": ARTICLE_PATH, "blobSha": ARTICLE_BLOB},
+}, "X.2 Product snapshot drift")
 
 override = x2.get("entryOverride", {})
 require(override.get("id") == "HEART-BOOK-X2", "X.2 ID drift")
@@ -136,12 +134,6 @@ require(override.get("researchOwners") == [
 require(override.get("effectiveCitationState") == "PRODUCT_SOURCE_CITATION_PASS_REQUIRED", "X.2 citation state drift")
 require(override.get("manuscriptState") == "SOURCE_SELECTED_UNIFIED_X2_READER_NOT_ASSEMBLED", "X.2 manuscript state drift")
 require(len(str(override.get("dedupOwner", ""))) >= 300, "X.2 dedup boundary too weak")
-
-boundary = override.get("supportBoundary", {})
-require(len(boundary.get("supports", [])) == 4, "X.2 support set drift")
-require(len(boundary.get("doesNotSupport", [])) == 6, "X.2 non-support set drift")
-require("X.2 automatically owns the separate X.3 book conclusion" in boundary.get("doesNotSupport", []), "X.2/X.3 separation missing")
-
 require(x2.get("effectiveCounts") == {
     "finalBookEntries": 18,
     "assembledReader": 3,
@@ -152,18 +144,21 @@ require(x2.get("effectiveCounts") == {
     "bookMatchedProductCoreItems": 5,
     "selectedProductSatelliteItems": 4,
     "newDirectQuotesApproved": 0,
-}, "X.2 effective count drift")
-require(x2.get("remainingOwnerGaps") == ["HEART-BOOK-X3"], "X.2 remaining gap drift")
-require(x2.get("publicationBoundary") == {
-    "x2SourceOwnerClosed": True,
-    "x2UnifiedReaderAssembled": False,
-    "wholeBookLineEditComplete": False,
-    "wholeBookCitationPassComplete": False,
-    "manuscriptBundleComplete": False,
-    "productReleaseComplete": False,
-    "newDirectQuotesApproved": 0,
-}, "X.2 publication boundary drift")
+}, "X.2 historical count drift")
+require(x2.get("remainingOwnerGaps") == ["HEART-BOOK-X3"], "X.2 historical remaining-gap drift")
+require(x2.get("publicationBoundary", {}).get("x2SourceOwnerClosed") is True, "X.2 owner closure drift")
+require(x2.get("publicationBoundary", {}).get("x2UnifiedReaderAssembled") is False, "X.2 reader boundary drift")
 
+# Later X.3 overlay closes the current gap without mutating X.2 history.
+require(x3.get("authorityId") == "HEART-X3-OWNER-CLOSURE-2026-08-04", "X.3 composition authority missing")
+require(x3.get("effectiveCounts", {}).get("productSourceOnly") == 8, "X.3 must preserve eight full Product-source entries")
+require(x3.get("effectiveCounts", {}).get("productSectionOnly") == 1, "X.3 Product-section count drift")
+require(x3.get("effectiveCounts", {}).get("ownerRequired") == 0, "X.3 current gap count drift")
+require(x3.get("remainingOwnerGaps") == [], "X.3 must close the current gap")
+require(x3.get("publicationBoundary", {}).get("allEighteenEntriesOwnerMapped") is True, "all-entry owner mapping not closed")
+require(x3.get("publicationBoundary", {}).get("x3FinalBookConclusionAssembled") is False, "X.3 assembly boundary drift")
+
+# Exact Product witness and X.2 section ownership.
 require(product_root.is_dir(), "Product checkout missing")
 require(git(product_root, "rev-parse", "HEAD") == PRODUCT_COMMIT, "Product checkout head drift")
 require(git(product_root, "hash-object", SATELLITE_PATH) == SATELLITE_BLOB, "satellite blob drift")
@@ -185,9 +180,10 @@ for marker in (
 ):
     require(marker in article_text, f"Product article marker missing: {marker}")
 for section in SECTIONS:
-    require(f'id="{section}"' in article_text, f"Product section missing: {section}")
-require('id="vyhod"' in article_text, "separate X.3 candidate section missing")
+    require(f'id="{section}"' in article_text, f"Product X.2 section missing: {section}")
+require('id="vyhod"' in article_text, "separate X.3 conclusion section missing")
 
+# X.1 boundaries remain controlling.
 x1_dossier = read(X1_DOSSIER)
 x1_reader = read(X1_READER)
 require("EVIDENCE CLOSED / BOUNDARIES CLOSED / CHAPTER-READY" in x1_dossier, "X.1 dossier authority missing")
@@ -197,6 +193,7 @@ require("**Reader assembly authority:** `HEART-READER-ASSEMBLY-2026-08-02`" in x
 require("Бог спасает целого человека и поднимет тело" in x1_reader, "X.1 whole-person resurrection missing")
 require("тело получит качества нетления, славы и силы" in x1_reader, "X.1 glorified-body marker missing")
 
+# X.2 human authority stays a historical snapshot; current authority composes X.3.
 human = read(HUMAN)
 current = read(CURRENT)
 for marker in (
@@ -204,29 +201,30 @@ for marker in (
     "X.2 SOURCE OWNER = CLOSED",
     "UNIFIED X.2 READER = NOT ASSEMBLED",
     "OWNER GAPS REMAINING = 1",
-    PRODUCT_COMMIT,
-    SATELLITE_BLOB,
     ARTICLE_BLOB,
 ):
     require(marker in human, f"X.2 human marker missing: {marker}")
 for marker in (
     "X.2 SOURCE OWNER = CLOSED",
     "UNIFIED X.2 READER = NOT ASSEMBLED",
+    "X.3 CONCLUSION SECTION OWNER = CLOSED",
     "PRODUCT SOURCE OWNERS = 8",
-    "STANDALONE OWNER GAPS = 1",
-    "X.3 `Заключительная надежда`",
+    "PRODUCT SECTION OWNERS = 1",
+    "STANDALONE OWNER GAPS = 0",
+    "ALL 18 ENTRIES OWNER-MAPPED = TRUE",
 ):
-    require(marker in current, f"current authority marker missing: {marker}")
+    require(marker in current, f"current authority composition marker missing: {marker}")
 gaps = current.split("### Manuscript owner gaps", 1)[-1].split("### Dossier-to-reader assembly", 1)[0]
-require("X.3 `Заключительная надежда`" in gaps, "X.3 missing from current gap section")
-for closed in (
+require("NONE / CLOSED" in gaps, "current zero-gap marker missing")
+for entry in (
     "I.4 `Внутренний человек и телесная жизнь`",
     "VII `Сердце в страдании и унынии`",
     "X.2 `Освобождённое сердце`",
+    "X.3 `Заключительная надежда`",
 ):
-    require(closed not in gaps, f"closed owner returned to gap section: {closed}")
+    require(entry not in gaps, f"closed entry returned to current gap section: {entry}")
 
-for text, name in ((human, "human"), (current, "current")):
+for text, name in ((human, "X.2 human"), (current, "current")):
     for forbidden in (
         "UNIFIED X.2 READER = ASSEMBLED",
         "WHOLE-BOOK CITATION PASS = CLOSED",
@@ -243,4 +241,4 @@ if errors:
         print(f"- {error}", file=sys.stderr)
     raise SystemExit(1)
 
-print("Heart X.2 owner closure: PASS — exact Product glorification source selected, 1 owner gap remains, reader/citation/Product release open")
+print("Heart X.2 owner closure: PASS — X.2 historical 8/1 preserved; X.3 composition closes current gaps without absorbing X.2 sections")

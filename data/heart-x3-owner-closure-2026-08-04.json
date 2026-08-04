@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-X3-OWNER-CLOSURE-2026-08-04",
+  "status": "X3_PRODUCT_CONCLUSION_SECTION_ESTABLISHED_FINAL_BOOK_ASSEMBLY_AND_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "baseAuthorityId": "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04",
+  "baseAuthority": "data/heart-whole-book-integration-2026-08-04.json",
+  "dependsOnOverlays": [
+    "data/heart-vii-owner-closure-2026-08-04.json",
+    "data/heart-i4-owner-closure-2026-08-04.json",
+    "data/heart-x2-owner-closure-2026-08-04.json"
+  ],
+  "researchSnapshot": "17a573f1791e7bcdf314be0f40593c13ef60b8d4",
+  "productSnapshot": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "articleOwner": {
+      "path": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "blobSha": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f"
+    }
+  },
+  "entryOverride": {
+    "id": "HEART-BOOK-X3",
+    "bookLabel": "X.3 Заключительная надежда",
+    "previousPrimaryState": "OWNER_REQUIRED",
+    "effectivePrimaryState": "PRODUCT_SECTION_ONLY",
+    "primaryProductOwner": {
+      "id": "osvobozhdennoe",
+      "slug": "osvobozhdennoe-serdce",
+      "minutes": 27,
+      "sourcePath": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "sourceBlobSha": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f",
+      "sectionId": "vyhod",
+      "sectionTitle": "Выход: сердце, наконец успокоенное",
+      "role": "book-level conclusion from the whole journey of the heart to the face of God and final hope"
+    },
+    "excludedSiblingSections": [
+      "chetyre-sostoyaniya",
+      "vopl-i-otvet",
+      "ne-besplotnoe-parenie",
+      "ne-sposobno-greshit",
+      "pobeda-nad-vragom"
+    ],
+    "researchOwners": [
+      "СЕРИЯ СЕРДЦЕ/82_BOOK_ASSEMBLY_DECISIONS_2026-08-02.md",
+      "СЕРИЯ СЕРДЦЕ/71_R9_CHRIST_OF_REVELATION.md",
+      "СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md"
+    ],
+    "effectiveCitationState": "PRODUCT_SECTION_CITATION_PASS_REQUIRED",
+    "manuscriptState": "CONCLUSION_SECTION_SELECTED_FINAL_BOOK_CONCLUSION_NOT_ASSEMBLED",
+    "dedupOwner": "X.3 owns only the book-level concluding movement: recapitulating the series from corruption through regeneration, struggle, idols, temptation, fear and darkness to Christ, the face of God, final rest and endurance. It must not repeat X.2's full exposition of glorification, bodily redemption, incorruption or inability to sin, and it must not introduce a new doctrine, historical claim or quotation absent from the governed source chain.",
+    "supportBoundary": {
+      "supports": [
+        "the exact Product section explicitly says it is the last point toward which the whole series has moved",
+        "the section recapitulates the series rather than opening a new doctrinal argument",
+        "the section turns the reader from endless introspection to the face of God and final hope in Christ",
+        "the final-order authority places X.3 after X.2 as a distinct concluding entry",
+        "R9 preserves the risen Christ as the personal and authoritative center of the final hope"
+      ],
+      "doesNotSupport": [
+        "the five positive-glorification sections already assigned to X.2 belong to X.3",
+        "a standalone final-book X.3 manuscript has been assembled outside the Product section",
+        "the whole-book citation and reference pass is complete",
+        "the whole-book line edit or transition pass is complete",
+        "new direct quotations are approved",
+        "the final eighteen-entry manuscript bundle is complete",
+        "the final eighteen-entry book is released in Product"
+      ]
+    }
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 3,
+    "productSourceOnly": 8,
+    "productSectionOnly": 1,
+    "researchDossierOnly": 6,
+    "ownerRequired": 0,
+    "currentProductCoreItems": 6,
+    "bookMatchedProductCoreItems": 5,
+    "selectedProductSatelliteItems": 4,
+    "selectedProductSectionOwners": 1,
+    "uniqueProductPagesMapped": 9,
+    "newDirectQuotesApproved": 0
+  },
+  "remainingOwnerGaps": [],
+  "publicationBoundary": {
+    "allEighteenEntriesOwnerMapped": true,
+    "x3ConclusionSectionSelected": true,
+    "x3FinalBookConclusionAssembled": false,
+    "wholeBookLineEditComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "supersessionRule": "For HEART-BOOK-X3 current owner state and aggregate effective counts after the VII, I.4 and X.2 overlays, this overlay supersedes the corresponding baseline fields. It closes the final owner gap only; manuscript assembly, citation, line-edit and Product release boundaries remain open."
+}
