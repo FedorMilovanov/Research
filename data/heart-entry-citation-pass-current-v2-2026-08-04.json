@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V2-2026-08-04",
+  "status": "FIVE_ENTRY_PASSES_COMPOSED_ALL_FIVE_ASSEMBLED_READERS_REVIEWED_THIRTEEN_READERS_OPEN",
+  "generatedAt": "2026-08-04",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-2026-08-04.json",
+    "gitBlob": "79cfd859180a95da76c8102bc4167f245487dd74",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-2026-08-04",
+    "historicalCounts": {
+      "entryCitationPassComplete": 4,
+      "entryCitationPassOpen": 14,
+      "assembledReaderEntries": 4,
+      "assembledReaderCitationReviewsComplete": 4,
+      "missingStandaloneFinalReaders": 14
+    }
+  },
+  "deltaReceipt": {
+    "order": 17,
+    "id": "HEART-BOOK-X2",
+    "label": "X.2 Освобождённое сердце",
+    "path": "data/heart-x2-citation-review-2026-08-04.json",
+    "gitBlob": "09996dbc5dba079c3c786c2da1befc8f28c2def2",
+    "authorityId": "HEART-X2-CITATION-REVIEW-2026-08-04",
+    "readerAssemblyPath": "data/heart-x2-reader-assembly-2026-08-04.json",
+    "readerAssemblyGitBlob": "c6d80a65ad7b4d764252ad48169b1e33ad88d283",
+    "stateTransition": "ASSEMBLED_READER_CITATION_OPEN_TO_ENTRY_CITATION_PASS_COMPLETE",
+    "composedCountAfterReceipt": "5 / 18",
+    "newDirectQuotesApproved": 0
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 5,
+    "entryCitationPassOpen": 13,
+    "assembledReaderEntries": 5,
+    "assembledReaderCitationReviewsComplete": 5,
+    "missingStandaloneFinalReaders": 13,
+    "productSourceOnlyEntries": 7,
+    "researchDossierOnlyEntries": 6,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I2",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-X1",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "openEntriesBySourceLane": {
+    "productSourceOnly": [
+      "HEART-BOOK-I1",
+      "HEART-BOOK-I3",
+      "HEART-BOOK-I4",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VII"
+    ],
+    "researchDossierOnly": [
+      "HEART-BOOK-II",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ]
+  },
+  "readerAssemblyBacklog": {
+    "removedByDelta": "HEART-BOOK-X2",
+    "remaining": [
+      "HEART-BOOK-I1",
+      "HEART-BOOK-I3",
+      "HEART-BOOK-I4",
+      "HEART-BOOK-II",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "effectiveMissingStandaloneFinalReaders": 13
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "STANDALONE_READER_ASSEMBLY",
+    "preferredEntryId": "HEART-BOOK-I4",
+    "reason": "I.4 already has a closed Product source cluster and explicit historical assembly priority; assembly must precede its entry citation pass."
+  }
+}
