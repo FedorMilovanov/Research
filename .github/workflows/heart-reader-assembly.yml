@@ -14,6 +14,7 @@ on:
       - 'data/heart-x2-owner-closure-2026-08-04.json'
       - 'data/heart-x3-owner-closure-2026-08-04.json'
       - 'data/heart-x3-reader-assembly-2026-08-04.json'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.json'
       - 'scripts/validate_heart_reader_assembly.py'
       - 'scripts/validate_heart_p0_dossiers.py'
       - 'scripts/validate_heart_whole_book_integration.py'
@@ -22,6 +23,7 @@ on:
       - 'scripts/validate_heart_x2_owner_closure.py'
       - 'scripts/validate_heart_x3_owner_closure.py'
       - 'scripts/validate_heart_x3_reader_assembly.py'
+      - 'scripts/build_heart_whole_book_citation_inventory.py'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md'
@@ -56,6 +58,7 @@ on:
       - 'data/heart-x2-owner-closure-2026-08-04.json'
       - 'data/heart-x3-owner-closure-2026-08-04.json'
       - 'data/heart-x3-reader-assembly-2026-08-04.json'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.json'
       - 'scripts/validate_heart_reader_assembly.py'
       - 'scripts/validate_heart_p0_dossiers.py'
       - 'scripts/validate_heart_whole_book_integration.py'
@@ -64,6 +67,7 @@ on:
       - 'scripts/validate_heart_x2_owner_closure.py'
       - 'scripts/validate_heart_x3_owner_closure.py'
       - 'scripts/validate_heart_x3_reader_assembly.py'
+      - 'scripts/build_heart_whole_book_citation_inventory.py'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md'
@@ -123,7 +127,8 @@ jobs:
             scripts/validate_heart_i4_owner_closure.py \
             scripts/validate_heart_x2_owner_closure.py \
             scripts/validate_heart_x3_owner_closure.py \
-            scripts/validate_heart_x3_reader_assembly.py
+            scripts/validate_heart_x3_reader_assembly.py \
+            scripts/build_heart_whole_book_citation_inventory.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -159,6 +164,10 @@ jobs:
       - name: Validate paraphrase-only X.3 final-book reader assembly
         working-directory: Research
         run: python3 scripts/validate_heart_x3_reader_assembly.py --product-root ../Product
+
+      - name: Build and check eighteen-entry citation/reference inventory
+        working-directory: Research
+        run: python3 scripts/build_heart_whole_book_citation_inventory.py --product-root ../Product
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
