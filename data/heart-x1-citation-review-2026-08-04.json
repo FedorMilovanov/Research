@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-X1-CITATION-REVIEW-2026-08-04",
+  "status": "X1_ENTRY_CITATION_PASS_COMPLETE_WHOLE_BOOK_OPEN",
+  "reviewedAt": "2026-08-04",
+  "entry": {
+    "order": 16,
+    "id": "HEART-BOOK-X1",
+    "label": "X.1 Суд сердца: два воскресения",
+    "inventoryEntrySha256": "7e27c913e38325dc86a2c35220a7f069e4c7c53fca7dac5c750dbfbf09659e99",
+    "triageStateBefore": "TRIAGED_OPEN",
+    "stateAfter": "ENTRY_CITATION_PASS_COMPLETE"
+  },
+  "immutableSources": {
+    "reader": {
+      "path": "СЕРИЯ СЕРДЦЕ/81_READER_CHAPTER_X1_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md",
+      "gitBlob": "0fe2b234c1249d1dc6f1e37103f63c850fb41b83",
+      "authority": "HEART-READER-ASSEMBLY-2026-08-02",
+      "newDirectQuotesDeclared": 0
+    },
+    "evidenceDossier": {
+      "path": "СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md",
+      "gitBlob": "ae5c16ef129892e169596fbd90490b5d4f64aa43",
+      "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02",
+      "claimIds": ["JUDG-01", "JUDG-02", "JUDG-03", "JUDG-04", "JUDG-05", "JUDG-06", "JUDG-07", "JUDG-08", "JUDG-09", "JUDG-10"],
+      "directQuotesApproved": 0
+    },
+    "evidenceRegistry": {
+      "path": "data/heart-p0-architecture-dossiers-2026-08-02.json",
+      "gitBlob": "71c26fed5de96cead1e2f8dcdedbfefc05f3e628",
+      "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02"
+    }
+  },
+  "scriptureReview": {
+    "readerDetectedReferences": 3,
+    "dossierDetectedReferences": 37,
+    "aggregateUniqueReferences": 40,
+    "classification": "REFERENCE_LOCATORS_CANONICAL_PARAPHRASE_AND_ESCHATOLOGICAL_NAVIGATION_NO_VERBATIM_TRANSLATION",
+    "translationVersionIdentifierRequired": false,
+    "reasonVersionNotRequired": "The reader and dossier govern Scripture through canonical locators, paraphrase and exegetical navigation. Neither document approves a verbatim Bible-translation passage as a direct quotation.",
+    "governingClaimGroupSelection": "EXACT_DOSSIER_CLAIM_RANGE_AND_P0_DOSSIER_ID",
+    "allGoverningClaimsHaveSupport": true,
+    "allGoverningClaimsHaveLocators": true,
+    "allGoverningClaimsHavePublicationBoundary": true,
+    "allUsedSourcesHaveUrlAndLocator": true,
+    "reviewComplete": true
+  },
+  "quotationReview": {
+    "aggregateQuotationSurfaces": 33,
+    "reader": {
+      "inlineQuotationSegments": 6,
+      "markdownBlockquotes": 2,
+      "historicalOrSourceDirectQuotes": 0
+    },
+    "evidenceDossier": {
+      "inlineQuotationSegments": 20,
+      "markdownBlockquotes": 5,
+      "historicalOrSourceDirectQuotesApproved": 0
+    },
+    "classification": "AUTHORIAL_FORMULAS_CANONICAL_PARAPHRASE_TECHNICAL_TERMS_RHETORICAL_AND_PROHIBITED_FORMULATION_SURFACES",
+    "approvedDirectQuoteTransferToReader": 0,
+    "externalAttributionLinks": 0,
+    "reviewComplete": true
+  },
+  "claimGovernance": {
+    "governingDossierId": "HEART-P0-JUDGMENT",
+    "claimIds": ["JUDG-01", "JUDG-02", "JUDG-03", "JUDG-04", "JUDG-05", "JUDG-06", "JUDG-07", "JUDG-08", "JUDG-09", "JUDG-10"],
+    "claimsReviewed": 10,
+    "requiredSourceIds": ["HP0-S03", "HP0-S04", "HP0-S08", "HP0-S09", "HP0-S13", "HP0-S15", "HP0-S16", "HP0-S17"],
+    "requiredSourcesPresent": 8,
+    "selectionMethod": "Require the immutable claim-range marker JUDG-01…JUDG-10, then select exactly those ten P0 claims under HEART-P0-JUDGMENT.",
+    "allSelectedClaimsClosedOrBoundaryClosed": true,
+    "allSelectedClaimsHaveSupportIds": true,
+    "allSelectedClaimsHaveLocators": true,
+    "allSelectedClaimsHavePublicationBoundary": true,
+    "allRequiredSourcesPresent": true,
+    "allRequiredSourcesHaveUrl": true,
+    "allRequiredSourcesHaveLocator": true,
+    "reviewComplete": true
+  },
+  "disposition": {
+    "scriptureNormalizationBlockerResolved": true,
+    "quotationClassificationBlockerResolved": true,
+    "externalLinkBlockerApplicable": false,
+    "sourceHeadingOrBibliographyOwnerBlockerApplicable": false,
+    "readerAssemblyBlockerApplicable": false,
+    "remainingEntryBlockers": [],
+    "readerManuscriptChanged": false,
+    "evidenceDossierChanged": false,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "entryCitationPassComplete": true
+  },
+  "wholeBookBoundary": {
+    "entryCitationPassComplete": "3 / 18",
+    "entryCitationPassOpen": "15 / 18",
+    "assembledReaderCitationReviewsComplete": "3 / 4",
+    "wholeBookCitationPassComplete": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false
+  },
+  "nextTransaction": "Review the remaining assembled reader, X.3, while preserving its paraphrase-only reader boundary and separately governing its owner dossier surfaces."
+}
