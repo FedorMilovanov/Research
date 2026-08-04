@@ -141,6 +141,10 @@ I.4 выбрана не произвольно:
 
 ## 8. Permanent gate
 
+```text
+CURRENT V2 VALIDATOR = scripts/validate_heart_entry_citation_pass_current_v2.py
+```
+
 Heart workflow обязан выполнять:
 
 ```text
