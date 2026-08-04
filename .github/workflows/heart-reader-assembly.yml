@@ -61,7 +61,8 @@ jobs:
             scripts/validate_heart_x3_owner_closure.py \
             scripts/validate_heart_x3_reader_assembly.py \
             scripts/build_heart_whole_book_citation_inventory.py \
-            scripts/validate_heart_whole_book_citation_inventory.py
+            scripts/validate_heart_whole_book_citation_inventory.py \
+            scripts/validate_heart_entry_citation_dispositions.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -101,6 +102,10 @@ jobs:
       - name: Validate eighteen-entry citation/reference inventory
         working-directory: Research
         run: python3 scripts/validate_heart_whole_book_citation_inventory.py --product-root ../Product
+
+      - name: Validate eighteen-entry citation disposition triage
+        working-directory: Research
+        run: python3 scripts/validate_heart_entry_citation_dispositions.py --product-root ../Product
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
