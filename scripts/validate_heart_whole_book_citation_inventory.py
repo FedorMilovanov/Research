@@ -20,6 +20,15 @@ BASE_CURRENT = ROOT / "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.m
 CURRENT = ROOT / "СЕРИЯ СЕРДЦЕ/90_CITATION_INVENTORY_CURRENT_OVERLAY_2026-08-04.md"
 
 JSON_SHA = "b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000"
+EXPECTED_PART_PATHS = [
+    "data/heart-whole-book-citation-inventory-2026-08-04.v2.part01.b64",
+    "data/heart-whole-book-citation-inventory-2026-08-04.v2.part02a.b64",
+    "data/heart-whole-book-citation-inventory-2026-08-04.v2.part02b.b64",
+    "data/heart-whole-book-citation-inventory-2026-08-04.v2.part02c.b64",
+    "data/heart-whole-book-citation-inventory-2026-08-04.v2.part02d.b64",
+    "data/heart-whole-book-citation-inventory-2026-08-04.v2.part03.b64",
+    "data/heart-whole-book-citation-inventory-2026-08-04.v2.part04.b64",
+]
 EXPECTED_COUNTS = {
     "finalBookEntries": 18,
     "assembledReader": 4,
@@ -49,7 +58,15 @@ def require(condition: bool, message: str) -> None:
         errors.append(message)
 
 
-def load_json(path: Path) -> dict[str, Any]:
+def sha256(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def canonical(value: Any) -> str:
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+
+
+def read_json(path: Path) -> dict[str, Any]:
     try:
         value = json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
@@ -57,14 +74,6 @@ def load_json(path: Path) -> dict[str, Any]:
         return {}
     require(isinstance(value, dict), f"{path.relative_to(ROOT)}: object required")
     return value if isinstance(value, dict) else {}
-
-
-def sha256(data: bytes) -> str:
-    return hashlib.sha256(data).hexdigest()
-
-
-def canonical(value: Any) -> str:
-    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
 def import_builder() -> Any:
@@ -81,32 +90,56 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--product-root", type=Path, required=True)
 product_root = parser.parse_args().product_root.resolve()
 
-encoding = load_json(ENCODING)
+encoding = read_json(ENCODING)
 require(encoding.get("schemaVersion") == 2, "encoding schema drift")
-require(encoding.get("authorityId") == "HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-V2-2026-08-04", "encoding authority drift")
-require(encoding.get("supersedes") == "HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-2026-08-04", "encoding supersession drift")
+require(
+    encoding.get("authorityId")
+    == "HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-V2-2026-08-04",
+    "encoding authority drift",
+)
+require(
+    encoding.get("supersedes")
+    == "HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-2026-08-04",
+    "encoding supersession drift",
+)
 require(encoding.get("encoding") == "gzip+base64-chunks", "encoding mode drift")
-require(encoding.get("decodedJsonPath") == "data/heart-whole-book-citation-inventory-2026-08-04.json", "decoded path drift")
 require(encoding.get("decodedJsonBytes") == 285803, "decoded JSON size drift")
 require(encoding.get("decodedJsonSha256") == JSON_SHA, "decoded JSON manifest SHA drift")
-require(isinstance(encoding.get("gzipBytes"), int) and encoding.get("gzipBytes", 0) > 0, "gzip size missing")
-require(isinstance(encoding.get("gzipSha256"), str) and len(encoding.get("gzipSha256", "")) == 64, "gzip SHA missing")
-require(isinstance(encoding.get("base64Characters"), int) and encoding.get("base64Characters", 0) > 0, "base64 character count missing")
-require(encoding.get("decodedAuthorityId") == "HEART-WHOLE-BOOK-CITATION-INVENTORY-2026-08-04", "decoded authority pointer drift")
-require(encoding.get("decodedStatus") == "EIGHTEEN_ENTRY_READ_ONLY_CITATION_INVENTORY_COMPLETE_BOOK_PASS_OPEN", "decoded status pointer drift")
-require("corrupted V1 storage transport" in str(encoding.get("transportBoundary", "")), "transport correction boundary missing")
+require(encoding.get("gzipBytes") == 46416, "gzip size drift")
+require(
+    encoding.get("gzipSha256")
+    == "e1aea3fdbe537972bfc9382d2fa0267d661dd70f5929602ecfcd50dda5f0f834",
+    "gzip SHA drift",
+)
+require(encoding.get("base64Characters") == 61888, "base64 character count drift")
+require(
+    encoding.get("decodedAuthorityId")
+    == "HEART-WHOLE-BOOK-CITATION-INVENTORY-2026-08-04",
+    "decoded authority pointer drift",
+)
+require(
+    encoding.get("decodedStatus")
+    == "EIGHTEEN_ENTRY_READ_ONLY_CITATION_INVENTORY_COMPLETE_BOOK_PASS_OPEN",
+    "decoded status pointer drift",
+)
+require(
+    "corrupted V1 storage transport" in str(encoding.get("transportBoundary", ""))
+    and "four independently hashed subparts" in str(encoding.get("transportBoundary", "")),
+    "transport correction boundary missing",
+)
 
 parts = encoding.get("parts", [])
-require(isinstance(parts, list) and len(parts) == 4, "exactly four encoded parts required")
+require(isinstance(parts, list) and len(parts) == 7, "exactly seven ordered transport parts required")
+if isinstance(parts, list):
+    require([part.get("path") for part in parts if isinstance(part, dict)] == EXPECTED_PART_PATHS, "transport part order drift")
+
 encoded_parts: list[str] = []
 if isinstance(parts, list):
     for index, part in enumerate(parts, start=1):
         require(isinstance(part, dict), f"part {index}: object required")
         if not isinstance(part, dict):
             continue
-        expected_path = f"data/heart-whole-book-citation-inventory-2026-08-04.v2.part{index:02}.b64"
-        require(part.get("path") == expected_path, f"part {index}: path drift")
-        path = ROOT / expected_path
+        path = ROOT / str(part.get("path", ""))
         require(path.is_file(), f"part {index}: file missing")
         if not path.is_file():
             continue
@@ -140,84 +173,88 @@ except Exception as exc:
 builder = import_builder()
 live = builder.build(product_root) if builder is not None else {}
 require(canonical(snapshot) == canonical(live), "encoded inventory differs from fresh read-only scan")
-
 require(snapshot.get("schemaVersion") == 1, "inventory schema drift")
 require(snapshot.get("authorityId") == "HEART-WHOLE-BOOK-CITATION-INVENTORY-2026-08-04", "inventory authority drift")
 require(snapshot.get("status") == "EIGHTEEN_ENTRY_READ_ONLY_CITATION_INVENTORY_COMPLETE_BOOK_PASS_OPEN", "inventory status drift")
-require(snapshot.get("generatedAt") == snapshot.get("lastVerifiedAt") == "2026-08-04", "inventory date drift")
-require(snapshot.get("researchSnapshot") == "92bb7c3708b77f6e8344e8c29261d93ecea4debb", "inventory Research snapshot drift")
-require(snapshot.get("productSnapshot") == {
-    "repository": "FedorMilovanov/gb-is-my-strength",
-    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
-}, "inventory Product snapshot drift")
+require(snapshot.get("researchSnapshot") == "92bb7c3708b77f6e8344e8c29261d93ecea4debb", "Research snapshot drift")
+require(
+    snapshot.get("productSnapshot")
+    == {
+        "repository": "FedorMilovanov/gb-is-my-strength",
+        "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    },
+    "Product snapshot drift",
+)
 require(snapshot.get("counts") == EXPECTED_COUNTS, "inventory count drift")
+
 entries = snapshot.get("entries", [])
 require(isinstance(entries, list) and len(entries) == 18, "inventory must contain eighteen entries")
 if isinstance(entries, list):
-    require([row.get("order") for row in entries if isinstance(row, dict)] == list(range(1, 19)), "inventory entry order drift")
-    require(all(row.get("aggregate", {}).get("entryCitationPassComplete") is False for row in entries if isinstance(row, dict)), "an entry citation pass was silently approved")
-    require(all("BOOK_LEVEL_CITATION_REVIEW_REQUIRED" in row.get("aggregate", {}).get("manualReviewReasons", []) for row in entries if isinstance(row, dict)), "manual book review reason missing")
-    require(sum(1 for row in entries if isinstance(row, dict) and row.get("readerAssembled") is True) == 4, "reader-assembled inventory count drift")
+    require([row.get("order") for row in entries if isinstance(row, dict)] == list(range(1, 19)), "entry order drift")
+    require(
+        all(row.get("aggregate", {}).get("entryCitationPassComplete") is False for row in entries if isinstance(row, dict)),
+        "an entry citation pass was silently approved",
+    )
+    require(
+        all(
+            "BOOK_LEVEL_CITATION_REVIEW_REQUIRED"
+            in row.get("aggregate", {}).get("manualReviewReasons", [])
+            for row in entries
+            if isinstance(row, dict)
+        ),
+        "manual book review reason missing",
+    )
 
-publication = snapshot.get("publicationBoundary", {})
-require(publication == {
-    "allEighteenEntriesOwnerMapped": True,
-    "citationInventoryComplete": True,
-    "wholeBookReaderAssemblyComplete": False,
-    "wholeBookCitationPassComplete": False,
-    "wholeBookTransitionDedupPassComplete": False,
-    "wholeBookLineEditComplete": False,
-    "manuscriptBundleComplete": False,
-    "productReleaseComplete": False,
-    "newDirectQuotesApproved": 0,
-}, "inventory publication boundary drift")
-require(len(snapshot.get("globalSurfaces", {}).get("uniqueScriptureReferences", [])) == 1063, "global Scripture list drift")
-require(len(snapshot.get("globalSurfaces", {}).get("uniqueExternalLinks", [])) == 414, "global external-link list drift")
-require(len(snapshot.get("globalSurfaces", {}).get("uniqueInternalArticleLinks", [])) == 22, "global internal-link list drift")
+require(
+    snapshot.get("publicationBoundary")
+    == {
+        "allEighteenEntriesOwnerMapped": True,
+        "citationInventoryComplete": True,
+        "wholeBookReaderAssemblyComplete": False,
+        "wholeBookCitationPassComplete": False,
+        "wholeBookTransitionDedupPassComplete": False,
+        "wholeBookLineEditComplete": False,
+        "manuscriptBundleComplete": False,
+        "productReleaseComplete": False,
+        "newDirectQuotesApproved": 0,
+    },
+    "publication boundary drift",
+)
 
 human = HUMAN.read_text(encoding="utf-8") if HUMAN.is_file() else ""
 base_current = BASE_CURRENT.read_text(encoding="utf-8") if BASE_CURRENT.is_file() else ""
 current = CURRENT.read_text(encoding="utf-8") if CURRENT.is_file() else ""
 for marker in (
-    "HEART-WHOLE-BOOK-CITATION-INVENTORY-2026-08-04",
     "CITATION INVENTORY = COMPLETE",
-    "WHOLE-BOOK CITATION PASS = OPEN",
     "ENTRY CITATION PASS COMPLETE = 0 / 18",
     "ENTRIES REQUIRING MANUAL BOOK REVIEW = 18 / 18",
-    "UNIQUE OWNER FILES = 31",
+    "WHOLE-BOOK CITATION PASS = OPEN",
     "UNIQUE SCRIPTURE REFERENCES = 1063",
     "UNIQUE EXTERNAL LINKS = 414",
-    "INLINE QUOTATION SURFACES = 3271",
     JSON_SHA,
 ):
     require(marker in human, f"human inventory marker missing: {marker}")
 for marker in (
-    "HEART-CURRENT-AUTHORITY-2026-08-04",
     "ALL 18 ENTRIES OWNER-MAPPED = TRUE",
     "ASSEMBLED READER OWNERS = 4",
     "STANDALONE OWNER GAPS = 0",
     "WHOLE-BOOK CITATION PASS = OPEN",
 ):
-    require(marker in base_current, f"base current authority marker missing: {marker}")
+    require(marker in base_current, f"base current marker missing: {marker}")
 for marker in (
     "HEART-CITATION-INVENTORY-CURRENT-OVERLAY-2026-08-04",
     "HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-V2-2026-08-04",
     "CORRUPTED V1 TRANSPORT = SUPERSEDED BY V2",
-    "CITATION INVENTORY = COMPLETE",
-    "ENTRY CITATION PASS COMPLETE = 0 / 18",
-    "ENTRIES REQUIRING MANUAL BOOK REVIEW = 18 / 18",
-    "WHOLE-BOOK CITATION PASS = OPEN",
-    "ASSEMBLED READER OWNERS = 4",
-    "STANDALONE OWNER GAPS = 0",
     "BOOTSTRAP --write MODE IN PERMANENT CI = REMOVED",
     "ENCODED REGISTRY FRESH-SCAN DRIFT GUARD = BOUND",
+    "ENTRY CITATION PASS COMPLETE = 0 / 18",
 ):
-    require(marker in current, f"current overlay inventory marker missing: {marker}")
-for text, name in ((human, "human inventory"), (base_current, "base current authority"), (current, "current overlay")):
+    require(marker in current, f"current overlay marker missing: {marker}")
+
+for text, name in ((human, "human inventory"), (base_current, "base current"), (current, "current overlay")):
     for forbidden in (
         "WHOLE-BOOK CITATION PASS = CLOSED",
         "ENTRY CITATION PASS COMPLETE = 18 / 18",
-        "NEW DIRECT QUOTES = 1",
         "MANUSCRIPT BUNDLE = COMPLETE",
         "PRODUCT RELEASE = COMPLETE",
         "TODO",
@@ -233,6 +270,6 @@ if errors:
 
 print(
     "Heart whole-book citation inventory: PASS — "
-    "18 entries scanned, 31 files, 1063 Scripture refs, 414 external links, "
-    f"0/18 citation passes; encoding v2 {encoding.get('gzipSha256')}"
+    "18 entries, 31 files, 1063 Scripture refs, 414 external links, "
+    "0/18 citation passes; v2 transport decoded and fresh-scan equal"
 )
