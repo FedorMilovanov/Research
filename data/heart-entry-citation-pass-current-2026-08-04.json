@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-2026-08-04",
+  "status": "FOUR_ENTRY_PASSES_COMPOSED_ALL_ASSEMBLED_READER_REVIEWS_COMPLETE_READER_ASSEMBLY_OPEN",
+  "generatedAt": "2026-08-04",
+  "baseTriage": {
+    "path": "data/heart-entry-citation-dispositions-2026-08-04.json",
+    "gitBlob": "de4d49cada15b231dfc31058aced4ec7a25928a2",
+    "historicalStatus": "EIGHTEEN_ENTRY_DISPOSITION_TRIAGE_COMPLETE_CITATION_PASS_OPEN",
+    "historicalEntryCitationPassComplete": 0
+  },
+  "completedPassReceipts": [
+    {
+      "order": 2,
+      "id": "HEART-BOOK-I2",
+      "label": "I.2 Сердце в Эдеме",
+      "path": "data/heart-i2-citation-review-2026-08-04.json",
+      "gitBlob": "c46b8879c8b48f186c74d415e1e1e059b919f1fa",
+      "authorityId": "HEART-I2-CITATION-REVIEW-2026-08-04",
+      "composedCountAfterReceipt": "1 / 18"
+    },
+    {
+      "order": 8,
+      "id": "HEART-BOOK-III3",
+      "label": "III.3 Сокрушённое сердце: покаяние",
+      "path": "data/heart-iii3-citation-review-2026-08-04.json",
+      "gitBlob": "0f79e1ef077fbf77d05fd475f57717d7d10944dd",
+      "authorityId": "HEART-III3-CITATION-REVIEW-2026-08-04",
+      "composedCountAfterReceipt": "2 / 18"
+    },
+    {
+      "order": 16,
+      "id": "HEART-BOOK-X1",
+      "label": "X.1 Суд сердца: два воскресения",
+      "path": "data/heart-x1-citation-review-2026-08-04.json",
+      "gitBlob": "81c4f9f0354ed3e156a4f84f223035801795046e",
+      "authorityId": "HEART-X1-CITATION-REVIEW-2026-08-04",
+      "composedCountAfterReceipt": "3 / 18"
+    },
+    {
+      "order": 18,
+      "id": "HEART-BOOK-X3",
+      "label": "X.3 Заключительная надежда",
+      "path": "data/heart-x3-citation-review-2026-08-04.json",
+      "gitBlob": "fdb8337e9017dc33789d22334eec70d9963be354",
+      "authorityId": "HEART-X3-CITATION-REVIEW-2026-08-04",
+      "composedCountAfterReceipt": "4 / 18"
+    }
+  ],
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 4,
+    "entryCitationPassOpen": 14,
+    "assembledReaderEntries": 4,
+    "assembledReaderCitationReviewsComplete": 4,
+    "missingStandaloneFinalReaders": 14,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I2",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-X1",
+    "HEART-BOOK-X3"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX",
+    "HEART-BOOK-X2"
+  ],
+  "readerAssemblyBacklog": {
+    "historicalX3AssemblyReceipt": {
+      "path": "data/heart-x3-reader-assembly-2026-08-04.json",
+      "gitBlob": "b8426888b2053ab5be1f18ccd1532513a8fe6cca",
+      "explicitRemainingReaderAssemblies": [
+        "HEART-BOOK-I4",
+        "HEART-BOOK-II",
+        "HEART-BOOK-III2",
+        "HEART-BOOK-IV",
+        "HEART-BOOK-VI",
+        "HEART-BOOK-VII",
+        "HEART-BOOK-VIII",
+        "HEART-BOOK-IX",
+        "HEART-BOOK-X2"
+      ]
+    },
+    "additionalProductSourceToFinalReaderConversionsRequiredByTriage": [
+      "HEART-BOOK-I1",
+      "HEART-BOOK-I3",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V"
+    ],
+    "effectiveMissingStandaloneFinalReaders": 14,
+    "interpretation": "The historical X.3 assembly receipt lists nine explicit integration-priority assemblies. Disposition triage additionally marks five existing Product-source entries as requiring conversion into standalone final-book readers before their final entry citation pass."
+  },
+  "openEntriesBySourceLane": {
+    "productSourceOnly": [
+      "HEART-BOOK-I1",
+      "HEART-BOOK-I3",
+      "HEART-BOOK-I4",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-X2"
+    ],
+    "researchDossierOnly": [
+      "HEART-BOOK-II",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ]
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Assemble one missing standalone final-book reader through a separate guarded chapter transaction, preserving source ownership and zero-new-direct-quote boundaries."
+}
