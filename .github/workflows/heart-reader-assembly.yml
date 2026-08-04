@@ -112,6 +112,62 @@ jobs:
         working-directory: Research
         run: python3 scripts/validate_heart_i2_entry_citation_pass.py --product-root ../Product
 
+      - name: Build read-only III.3 citation diagnostic
+        working-directory: Research
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+          import json
+          import re
+          from pathlib import Path
+
+          root = Path.cwd()
+          spec = importlib.util.spec_from_file_location('builder', root / 'scripts/build_heart_whole_book_citation_inventory.py')
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          reader_path = 'СЕРИЯ СЕРДЦЕ/80_READER_CHAPTER_III3_BROKEN_HEART_REPENTANCE_2026-08-02.md'
+          dossier_path = 'СЕРИЯ СЕРДЦЕ/76_P0_BROKEN_HEART_REPENTANCE_2026-08-02.md'
+          reader = module.scan_owner(module.r(reader_path, 'reader'), Path('../Product').resolve())
+          dossier = module.scan_owner(module.r(dossier_path, 'dossier'), Path('../Product').resolve())
+          reader_text = (root / reader_path).read_text(encoding='utf-8')
+          dossier_text = (root / dossier_path).read_text(encoding='utf-8')
+          p0 = json.loads((root / 'data/heart-p0-architecture-dossiers-2026-08-02.json').read_text(encoding='utf-8'))
+          grouped_claims = {}
+          for row in p0.get('claims', []):
+              grouped_claims.setdefault(row.get('dossierId', 'NONE'), []).append(row)
+          payload = {
+              'readerScan': reader,
+              'dossierScan': dossier,
+              'readerRussianQuotes': re.findall(r'«([^»\n]{8,})»', reader_text),
+              'readerCurlyQuotes': re.findall(r'“([^”\n]{8,})”', reader_text),
+              'dossierRussianQuotes': re.findall(r'«([^»\n]{8,})»', dossier_text),
+              'dossierCurlyQuotes': re.findall(r'“([^”\n]{8,})”', dossier_text),
+              'readerBlockquotes': [line.lstrip()[1:].strip() for line in reader_text.splitlines() if re.match(r'^\s*>\s?\S', line)],
+              'dossierBlockquotes': [line.lstrip()[1:].strip() for line in dossier_text.splitlines() if re.match(r'^\s*>\s?\S', line)],
+              'claimGroups': grouped_claims,
+              'sources': p0.get('sources', []),
+          }
+          out = Path('/tmp/iii3-citation-diagnostic.json')
+          out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps({
+              'readerRefs': len(reader['scriptureReferences']),
+              'dossierRefs': len(dossier['scriptureReferences']),
+              'aggregateRefs': len(set(reader['scriptureReferences']) | set(dossier['scriptureReferences'])),
+              'readerInline': reader['inlineQuotationSegments'],
+              'dossierInline': dossier['inlineQuotationSegments'],
+              'readerBlockquotes': reader['markdownBlockquotes'],
+              'dossierBlockquotes': dossier['markdownBlockquotes'],
+          }, ensure_ascii=False))
+          PY
+
+      - name: Upload read-only III.3 diagnostic
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: iii3-citation-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/iii3-citation-diagnostic.json
+          if-no-files-found: error
+          retention-days: 1
+
       - name: Ensure validators and exact Product witness are read-only
         run: |
           git -C Research diff --exit-code
