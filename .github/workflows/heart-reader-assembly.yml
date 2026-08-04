@@ -9,7 +9,6 @@ on:
       - 'data/heart-*.json'
       - 'data/heart-whole-book-citation-inventory-2026-08-04*'
       - 'scripts/validate_heart_*.py'
-      - 'scripts/diagnose_heart_*.py'
       - 'scripts/build_heart_whole_book_citation_inventory.py'
       - 'СЕРИЯ СЕРДЦЕ/**'
   push:
@@ -19,7 +18,6 @@ on:
       - 'data/heart-*.json'
       - 'data/heart-whole-book-citation-inventory-2026-08-04*'
       - 'scripts/validate_heart_*.py'
-      - 'scripts/diagnose_heart_*.py'
       - 'scripts/build_heart_whole_book_citation_inventory.py'
       - 'СЕРИЯ СЕРДЦЕ/**'
 
@@ -71,7 +69,6 @@ jobs:
             scripts/validate_heart_x3_entry_citation_pass.py \
             scripts/validate_heart_entry_citation_pass_current.py \
             scripts/validate_heart_x2_reader_assembly.py \
-            scripts/diagnose_heart_x2_current_refs.py \
             scripts/validate_heart_x2_entry_citation_pass.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
@@ -140,18 +137,6 @@ jobs:
       - name: Validate paraphrase-only X.2 final-book reader assembly
         working-directory: Research
         run: python3 scripts/validate_heart_x2_reader_assembly.py --product-root ../Product
-
-      - name: Diagnose X.2 current Scripture token granularity
-        working-directory: Research
-        run: python3 scripts/diagnose_heart_x2_current_refs.py --product-root ../Product --output /tmp/x2-current-ref-diagnostic.json
-
-      - name: Upload X.2 current-reference diagnostic
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: x2-current-reference-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
-          path: /tmp/x2-current-ref-diagnostic.json
-          if-no-files-found: error
-          retention-days: 1
 
       - name: Validate completed X.2 entry citation pass
         working-directory: Research
