@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-X2-READER-ASSEMBLY-2026-08-04",
+  "status": "X2_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "ownerAuthority": {
+    "path": "data/heart-x2-owner-closure-2026-08-04.json",
+    "gitBlob": "c1fdcfba816bdc6131d157760632d4899f89731c",
+    "authorityId": "HEART-X2-OWNER-CLOSURE-2026-08-04"
+  },
+  "precedingCurrentCitationAuthority": {
+    "path": "data/heart-entry-citation-pass-current-2026-08-04.json",
+    "gitBlob": "79cfd859180a95da76c8102bc4167f245487dd74",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-2026-08-04",
+    "entryCitationPassComplete": "4 / 18"
+  },
+  "reader": {
+    "id": "HEART-READER-X2-GLORIFIED-HEART-2026-08-04",
+    "bookEntryId": "HEART-BOOK-X2",
+    "bookLabel": "X.2 Освобождённое сердце",
+    "path": "СЕРИЯ СЕРДЦЕ/97_READER_CHAPTER_X2_GLORIFIED_HEART_2026-08-04.md",
+    "gitBlob": "72f6a9d70b32af65d7a44c297d467e9fabdc4a85",
+    "state": "ASSEMBLED_READER_PARAPHRASE_ONLY",
+    "wordCountBoundary": {
+      "minimum": 1200,
+      "maximum": 2200
+    },
+    "requiredSections": [
+      "После суда — положительная цель спасения",
+      "Четыре состояния и направление искупления",
+      "Стенание имеет предел",
+      "Искупление всего человека",
+      "Свобода, которую нельзя утратить",
+      "Последний враг будет уничтожен",
+      "Что эта надежда меняет сейчас",
+      "Границы главы",
+      "Для размышления",
+      "Переход"
+    ],
+    "expectedDetectedScriptureReferences": 9,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "exactProductSource": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "path": "src/content/articles/osvobozhdennoe-serdce.mdx",
+    "gitBlob": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f",
+    "fullFileSha256": "621c0ab9af7a417cf73d9012f7ed02be74d02223a24af65a836b875a06d32e9d",
+    "sections": [
+      {
+        "id": "chetyre-sostoyaniya",
+        "role": "four-state framework and irreversible glorified freedom",
+        "scopedSha256": "1f85220c268c2c11b7e3b50345241fa42baf8690c21dd17ba525655ffa7466aa",
+        "bytes": 2381,
+        "scriptureReferences": [],
+        "inlineQuotationSegments": 2,
+        "markdownBlockquotes": 0
+      },
+      {
+        "id": "vopl-i-otvet",
+        "role": "Romans 7 to Romans 8 bodily-redemption movement",
+        "scopedSha256": "ecbec7c26d082cb710fc141521561e31d68e9414f65d4f6ebcb85aca810d9d96",
+        "bytes": 1885,
+        "scriptureReferences": ["Рим.7:24", "Рим.7:25", "Рим.8:23", "Флп.1:6"],
+        "inlineQuotationSegments": 7,
+        "markdownBlockquotes": 1
+      },
+      {
+        "id": "ne-besplotnoe-parenie",
+        "role": "bodily resurrection, incorruption and new creation",
+        "scopedSha256": "9627108225bf3d8791ae9f8ba01b5e4e44819eb46e3c815a5cb141dbdc54db01",
+        "bytes": 2428,
+        "scriptureReferences": ["1 Кор.15:42,44", "Флп.3:21"],
+        "inlineQuotationSegments": 5,
+        "markdownBlockquotes": 1
+      },
+      {
+        "id": "ne-sposobno-greshit",
+        "role": "perfect and irreversible freedom only to good",
+        "scopedSha256": "2b5d382283b401e016257e2f14eac7f17c51a86482f98ce53cf9e86ea652aa6f",
+        "bytes": 2396,
+        "scriptureReferences": ["1 Ин.3:2", "Евр.12:23", "Мф.5:8"],
+        "inlineQuotationSegments": 5,
+        "markdownBlockquotes": 0
+      },
+      {
+        "id": "pobeda-nad-vragom",
+        "role": "final defeat of sin, death and the curse",
+        "scopedSha256": "fded44e3bae5140bfb54536f75c483d65272da7f19f347f02cf51ba4ff1583d2",
+        "bytes": 1605,
+        "scriptureReferences": ["1 Кор.15:55,57"],
+        "inlineQuotationSegments": 4,
+        "markdownBlockquotes": 1
+      }
+    ],
+    "aggregate": {
+      "uniqueScriptureReferences": 10,
+      "inlineQuotationSegments": 23,
+      "markdownBlockquotes": 3,
+      "quotationSurfaces": 26,
+      "externalLinks": 0,
+      "internalArticleLinks": ["/articles/krajne-li-isporcheno-serdce/"]
+    }
+  },
+  "composition": {
+    "mode": "PARAPHRASE_ONLY",
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "exactProductQuotationSegmentsCopied": 0,
+    "exactProductBlockquotesCopied": 0,
+    "longExactProductSentencesCopied": 0,
+    "productSourceChanged": false,
+    "ownerAuthorityChanged": false,
+    "x1OwnershipChanged": false,
+    "x3OwnershipChanged": false,
+    "wholeBookOrderChanged": false
+  },
+  "requiredBoundaries": [
+    "X.2 owns positive glorification, bodily redemption, incorruption, final removal of remaining sin, immutable freedom only to good and victory over death and the curse",
+    "X.1 retains the judicial fork, two resurrection outcomes and final judgment",
+    "X.3 retains the book-level concluding turn to Christ, the face of God and final hope",
+    "the X.2 reader does not copy Product prose, Product Scripture quotations or Product blockquotes",
+    "the X.2 entry citation pass remains open after reader assembly",
+    "the whole-book citation, transition, line-edit, manuscript-bundle and Product-release gates remain open"
+  ],
+  "effectivePrimaryState": {
+    "entryId": "HEART-BOOK-X2",
+    "previous": "PRODUCT_SOURCE_ONLY",
+    "current": "ASSEMBLED_READER",
+    "sourceBackedByExactProductSections": true,
+    "entryCitationPassComplete": false
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 5,
+    "missingStandaloneFinalReaders": 13,
+    "entryCitationPassComplete": 4,
+    "entryCitationPassOpen": 14,
+    "productSourceOnly": 7,
+    "researchDossierOnly": 6,
+    "newDirectQuotesApproved": 0
+  },
+  "remainingReaderAssemblies": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "publicationBoundary": {
+    "x2UnifiedReaderAssembled": true,
+    "x2EntryCitationPassComplete": false,
+    "allCurrentlyAssembledReadersCitationReviewed": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Perform a separate fail-closed X.2 entry citation pass over the new reader and the exact five-section Product source chain."
+}
