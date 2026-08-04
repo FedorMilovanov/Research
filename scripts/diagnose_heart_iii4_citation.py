@@ -85,7 +85,7 @@ reader_text=READER.read_text(encoding="utf-8");reader_scan=mod.scan_owner(mod.r(
 surf=surfaces(texts["PRODUCT"],"PRODUCT",mod)+surfaces(texts["R2"],"R2",mod)
 assert len(surf)==289 and qcount(scans["PRODUCT"])+qcount(scans["R2"])==289
 base=[{k:r[k] for k in ("owner","ownerIndex","section","type","sha256","chars","nearbyScripture")} for r in surf]
-classified=[{**r,"class":r["class"]} for r in base for _ in [next(x["class"] for x in surf if all(x.get(k)==r.get(k) for k in ("owner","ownerIndex")) )]]
+classified=[{**b,"class":s["class"]} for b,s in zip(base,surf)]
 role_counts=dict(sorted(Counter(r["class"] for r in classified).items()))
 role_sections={}
 for r in classified:role_sections.setdefault(r["owner"],{}).setdefault(r["class"],set()).add(r["section"])
