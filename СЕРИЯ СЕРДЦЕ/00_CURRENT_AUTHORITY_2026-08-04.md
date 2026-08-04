@@ -131,7 +131,7 @@ I.4 now owns embodied inner-person integration. It does not absorb I.1's whole b
 1. X.2 `Освобождённое сердце`;
 2. X.3 `Заключительная надежда`.
 
-### Dossier/source-cluster-to-reader assembly
+### Dossier-to-reader assembly
 
 Reader manuscripts остаются несобранными для:
 
