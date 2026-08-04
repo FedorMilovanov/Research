@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-I4-READER-ASSEMBLY-2026-08-04",
+  "status": "I4_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "ownerClosure": ["data/heart-i4-owner-closure-2026-08-04.json", "5a7aa3ef29571255708c49692a6232177b7bcf14"],
+    "precedingCurrentV2": ["data/heart-entry-citation-pass-current-v2-2026-08-04.json", "66d2f46cf639d9825b5b09fc4e94111be3af2a11"],
+    "v81": ["СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md", "f5b3491acad2e6a68197d6c1191ea3b9fb74aa75", "8c69a16734361addb287f49bc4903c904744c8c3cfde611de1aed2579e22e0e0"],
+    "v82": ["СЕРИЯ СЕРДЦЕ/61_V82_PSYCHOTROPIC_MEDICATION_BODY_SOUL_BIBLICAL_COUNSELING.md", "d62d76abe607335861745cc732a9aad8edc3b743", "c3bb78319db66fa64e9567465eb2b27e275eff6bb735f6c1368ff81cd9a426a8"]
+  },
+  "reader": {
+    "id": "HEART-READER-I4-INNER-PERSON-EMBODIED-LIFE-2026-08-04",
+    "bookEntryId": "HEART-BOOK-I4",
+    "path": "СЕРИЯ СЕРДЦЕ/101_READER_CHAPTER_I4_INNER_PERSON_EMBODIED_LIFE_2026-08-04.md",
+    "gitBlob": "d683ed3f1e8d699f0232f9ee7a30dc0fa2400d74",
+    "state": "ASSEMBLED_READER_PARAPHRASE_ONLY",
+    "wordCountBoundary": [1400, 2300],
+    "expectedDetectedScriptureReferences": 9,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "productSnapshot": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "primary": {
+      "path": "src/content/articles/serdce-i-telo.mdx",
+      "gitBlob": "dca5863c614cf3a4f8503d52a79bb76e705c9d2c",
+      "fullSha256": "79a1ce46206e504d082d0af9094bd308afc6abe3163d432099263ca5229c3ec2",
+      "sectionManifest": [
+        ["telo-ne-vrag","829781f61eb45cc6ab9b944fb714fb20e59064a6047408a193fd605f43c36bb4",2546,1,3,0,0],
+        ["chleny-oruzhie","89f3fb186c98c0fa48e8f36784bb92816a9530ec570a2a7c982c3f47af76ab07",2234,3,6,0,1],
+        ["hram-kuplennyj","db012a80d9b42f70d2d2759acc77790e6e3c735b77dae659427eab7afacb2dd2",1903,1,5,0,0],
+        ["zhivaya-zhertva","0d9f0cee0b2ded2445f8f9374ed55147915eefb623072af4d831cf7b2cc27c41",1880,1,7,0,0],
+        ["komfort-gospodin","cd9609ec4a0f8588716141025147adead8c97ebe57d084ded0148679abaaa4c0",1928,0,6,0,1],
+        ["ustalost","a29a2ab752e30f47d60505525d8f99957ac64ef57eb2cd359fd01643b43c9dba",2075,0,5,0,0],
+        ["ne-hlebom-odnim","18016ebca67607fa7359bbfa5b280d8a4f627d14af3ea57fbd106fcecf6c7b87",1424,2,3,0,1],
+        ["tverdo-ne-dubinkoy","b66b4e79b62b305096dd0a72d5b494442de1b4ee0d81b65c75b240ffd6fabdb5",2134,0,5,0,0],
+        ["kak-otlichit","919646023c3622cfa980f2b164115adaf8240a095b31bbdac2ee17d21fcc627a",1223,0,0,0,0],
+        ["vyhod","6b49facc0c618d7f9f648dd0fc39a2401fd36fc718e3d748e2960f537e445577",1527,0,3,0,0]
+      ],
+      "aggregate": {"uniqueScriptureReferences":8,"quotationSurfaces":43,"externalLinks":0,"internalArticleLinks":3}
+    },
+    "support": {
+      "path": "src/content/articles/chto-bibliya-nazyvaet-serdcem.mdx",
+      "gitBlob": "acc12804f5b2450efebbb6e0b2cabd31066ef48c",
+      "fullSha256": "50657f3473c06e16d75ffe740828a9311f642562e824f148113ae28ff9b03c07",
+      "sectionManifest": [
+        ["vnutrenniy-chelovek","d6ffdf64d0b46b23cee96f4943f76ed20be117c531efdc6ca30bae199737c0b8",3115,1,3,0,0],
+        ["serdce-dusha-duh","0cc608846137d909c8e5a3cd391c5b71b8d23a27e60d60d68658865382f2c33d",5035,5,7,0,0]
+      ],
+      "aggregate": {"uniqueScriptureReferences":6,"quotationSurfaces":10,"externalLinks":0,"internalArticleLinks":0},
+      "ownershipBoundary": "I.1 retains the complete biblical definition of the heart."
+    },
+    "combinedAggregate": {"uniqueScriptureReferences":14,"quotationSurfaces":53,"externalLinks":0,"internalArticleLinks":3}
+  },
+  "composition": {
+    "mode": "PARAPHRASE_ONLY",
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "productQuotationSegmentsCopied": 0,
+    "productLongSentencesCopied": 0,
+    "researchQuotationSegmentsCopied": 0,
+    "sourceFilesChanged": false,
+    "i1OwnershipChanged": false,
+    "viiOwnershipChanged": false
+  },
+  "effectiveState": {
+    "entryId": "HEART-BOOK-I4",
+    "previous": "PRODUCT_SOURCE_ONLY",
+    "current": "ASSEMBLED_READER",
+    "entryCitationPassComplete": false
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 6,
+    "missingStandaloneFinalReaders": 12,
+    "entryCitationPassComplete": 5,
+    "entryCitationPassOpen": 13,
+    "assembledReaderCitationReviewsComplete": 5,
+    "productSourceOnly": 6,
+    "researchDossierOnly": 6,
+    "newDirectQuotesApproved": 0
+  },
+  "remainingReaderAssemblies": ["HEART-BOOK-I1","HEART-BOOK-I3","HEART-BOOK-II","HEART-BOOK-III1","HEART-BOOK-III2","HEART-BOOK-III4","HEART-BOOK-IV","HEART-BOOK-V","HEART-BOOK-VI","HEART-BOOK-VII","HEART-BOOK-VIII","HEART-BOOK-IX"],
+  "publicationBoundary": {
+    "i4UnifiedReaderAssembled": true,
+    "i4EntryCitationPassComplete": false,
+    "allCurrentlyAssembledReadersCitationReviewed": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Separate I.4 entry citation pass."
+}
