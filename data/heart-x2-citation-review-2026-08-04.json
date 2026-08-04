@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-X2-CITATION-REVIEW-2026-08-04",
+  "status": "X2_ENTRY_CITATION_PASS_COMPLETE_ASSEMBLED_READER_REVIEWS_FIVE_OF_FIVE_WHOLE_BOOK_OPEN",
+  "reviewedAt": "2026-08-04",
+  "entry": {
+    "order": 17,
+    "id": "HEART-BOOK-X2",
+    "label": "X.2 Освобождённое сердце",
+    "inventoryEntrySha256": "9754ba5e5545d57d56d56ee9f23f3204c7e40e424cc4ed7956db8e83707347a6",
+    "triageStateBefore": "TRIAGED_OPEN",
+    "stateAfter": "ENTRY_CITATION_PASS_COMPLETE"
+  },
+  "immutableSources": {
+    "reader": {
+      "path": "СЕРИЯ СЕРДЦЕ/97_READER_CHAPTER_X2_GLORIFIED_HEART_2026-08-04.md",
+      "gitBlob": "72f6a9d70b32af65d7a44c297d467e9fabdc4a85",
+      "state": "ASSEMBLED_READER_PARAPHRASE_ONLY",
+      "newDirectQuotesDeclared": 0
+    },
+    "readerAssembly": {
+      "path": "data/heart-x2-reader-assembly-2026-08-04.json",
+      "gitBlob": "c6d80a65ad7b4d764252ad48169b1e33ad88d283",
+      "authorityId": "HEART-X2-READER-ASSEMBLY-2026-08-04"
+    },
+    "ownerClosure": {
+      "path": "data/heart-x2-owner-closure-2026-08-04.json",
+      "gitBlob": "c1fdcfba816bdc6131d157760632d4899f89731c",
+      "authorityId": "HEART-X2-OWNER-CLOSURE-2026-08-04"
+    },
+    "productSource": {
+      "repository": "FedorMilovanov/gb-is-my-strength",
+      "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+      "path": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "gitBlob": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f",
+      "fullFileSha256": "621c0ab9af7a417cf73d9012f7ed02be74d02223a24af65a836b875a06d32e9d",
+      "sectionIds": [
+        "chetyre-sostoyaniya",
+        "vopl-i-otvet",
+        "ne-besplotnoe-parenie",
+        "ne-sposobno-greshit",
+        "pobeda-nad-vragom"
+      ]
+    },
+    "judgmentDossier": {
+      "path": "СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md",
+      "gitBlob": "ae5c16ef129892e169596fbd90490b5d4f64aa43",
+      "role": "X1_JUDICIAL_AND_ESCHATOLOGICAL_BOUNDARY_SUPPORT"
+    },
+    "x1Reader": {
+      "path": "СЕРИЯ СЕРДЦЕ/81_READER_CHAPTER_X1_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md",
+      "gitBlob": "0fe2b234c1249d1dc6f1e37103f63c850fb41b83",
+      "role": "PRECEDING_JUDICIAL_FORK_AND_TRANSITION_BOUNDARY"
+    },
+    "x1CitationReview": {
+      "path": "data/heart-x1-citation-review-2026-08-04.json",
+      "gitBlob": "81c4f9f0354ed3e156a4f84f223035801795046e",
+      "authorityId": "HEART-X1-CITATION-REVIEW-2026-08-04"
+    },
+    "precedingCurrentCitationAuthority": {
+      "path": "data/heart-entry-citation-pass-current-2026-08-04.json",
+      "gitBlob": "79cfd859180a95da76c8102bc4167f245487dd74",
+      "entryCitationPassComplete": "4 / 18"
+    }
+  },
+  "scriptureReview": {
+    "readerDetectedReferences": 9,
+    "productSectionUniqueReferences": 10,
+    "x1SupportUniqueReferences": 40,
+    "historicalThreeOwnerUniqueReferences": 50,
+    "currentReaderPlusEvidenceUniqueReferences": 50,
+    "readerReferencesSubsetOfGovernedEvidence": true,
+    "readerClassification": "CANONICAL_LOCATORS_AND_PARAPHRASE_NO_VERBATIM_TRANSLATION",
+    "productDirectScriptureQuotationSurfaces": 16,
+    "productDirectScriptureQuotationVersion": "RUSSIAN_SYNODAL",
+    "productDirectScriptureQuotations": [
+      {"text":"Бедный я человек! кто избавит меня от сего тела смерти?","locator":"Рим. 7:24","version":"RUSSIAN_SYNODAL","surface":"inline","transferToReader":false},
+      {"text":"Благодарю Бога моего Иисусом Христом","locator":"Рим. 7:25","version":"RUSSIAN_SYNODAL","surface":"inline","transferToReader":false},
+      {"text":"искупление тела","locator":"Рим. 8:23","version":"RUSSIAN_SYNODAL","surface":"inline_fragment","transferToReader":false},
+      {"text":"начавший в вас доброе дело","locator":"Флп. 1:6","version":"RUSSIAN_SYNODAL","surface":"inline_fragment","transferToReader":false},
+      {"text":"даже до дня Иисуса Христа","locator":"Флп. 1:6","version":"RUSSIAN_SYNODAL","surface":"inline_fragment","transferToReader":false},
+      {"text":"Мы в себе стенаем, ожидая усыновления, искупления тела нашего","locator":"Рим. 8:23","version":"RUSSIAN_SYNODAL","surface":"markdown_blockquote","transferToReader":false},
+      {"text":"уничижённое тело наше преобразит так, что оно будет сообразно славному телу Его","locator":"Флп. 3:21","version":"RUSSIAN_SYNODAL","surface":"inline","transferToReader":false},
+      {"text":"тело духовное","locator":"1 Кор. 15:44","version":"RUSSIAN_SYNODAL","surface":"inline_fragment","transferToReader":false},
+      {"text":"телу душевному","locator":"1 Кор. 15:44","version":"RUSSIAN_SYNODAL","surface":"inline_fragment","transferToReader":false},
+      {"text":"Сеется в тлении, восстаёт в нетлении… сеется тело душевное, восстаёт тело духовное","locator":"1 Кор. 15:42, 44","version":"RUSSIAN_SYNODAL","surface":"markdown_blockquote","transferToReader":false},
+      {"text":"Будем подобны Ему, потому что увидим Его, как Он есть","locator":"1 Ин. 3:2","version":"RUSSIAN_SYNODAL","surface":"inline","transferToReader":false},
+      {"text":"Блаженны чистые сердцем, ибо они Бога узрят","locator":"Мф. 5:8","version":"RUSSIAN_SYNODAL","surface":"inline","transferToReader":false},
+      {"text":"духов праведников, достигших совершенства","locator":"Евр. 12:23","version":"RUSSIAN_SYNODAL","surface":"inline_fragment","transferToReader":false},
+      {"text":"отрёт Бог всякую слезу с очей их, и смерти не будет уже; ни плача, ни вопля, ни болезни уже не будет","locator":"Откр. 21:4","version":"RUSSIAN_SYNODAL","surface":"inline","transferToReader":false},
+      {"text":"И ничего уже не будет проклятого","locator":"Откр. 22:3","version":"RUSSIAN_SYNODAL","surface":"inline","transferToReader":false},
+      {"text":"Смерть! где твоё жало? ад! где твоя победа?.. Благодарение Богу, даровавшему нам победу Господом нашим Иисусом Христом","locator":"1 Кор. 15:55, 57","version":"RUSSIAN_SYNODAL","surface":"markdown_blockquote","transferToReader":false}
+    ],
+    "translationVersionIdentifierRequiredForProductSupport": true,
+    "translationVersionResolved": true,
+    "translationVersionIdentifierRequiredForReader": false,
+    "reviewComplete": true
+  },
+  "quotationReview": {
+    "reader": {
+      "inlineQuotationSegments": 0,
+      "markdownBlockquotes": 0,
+      "historicalOrSourceDirectQuotes": 0,
+      "paraphraseOnlyBoundaryPreserved": true
+    },
+    "productSections": {
+      "inlineQuotationSegments": 23,
+      "markdownBlockquotes": 3,
+      "quotationSurfaces": 26,
+      "scriptureDirectQuotationSurfaces": 16,
+      "confessionalDirectQuotationSurfaces": 1,
+      "titleSurfaces": 2,
+      "technicalLexicalOrAuthorialSurfaces": 7,
+      "approvedDirectQuoteTransferToReader": 0
+    },
+    "confessionalQuotation": {
+      "text": "сделана совершенно и неизменно свободной только к добру",
+      "locators": ["Westminster Confession of Faith 9.5", "Second London Baptist Confession 1689 9.5"],
+      "sourceUrls": ["https://www.opc.org/wcf.html", "https://baptistconfession.org/"],
+      "classification": "DUAL_CONFESSIONAL_FORMULA_LOCATOR_RESOLVED",
+      "transferToReader": false
+    },
+    "x1SupportChain": {
+      "quotationSurfaces": 33,
+      "governedByAuthorityId": "HEART-X1-CITATION-REVIEW-2026-08-04",
+      "bulkReapprovalPerformed": false
+    },
+    "historicalThreeOwnerQuotationSurfaces": 59,
+    "currentReaderPlusEvidenceQuotationSurfaces": 59,
+    "newDirectQuotesApproved": 0,
+    "reviewComplete": true
+  },
+  "linkReview": {
+    "externalLinks": 0,
+    "productInternalArticleLinks": ["/articles/krajne-li-isporcheno-serdce/"],
+    "classification": "SOURCE_PAGE_CONTEXT_LINK_NOT_COPIED_TO_FINAL_READER",
+    "readerInternalArticleLinks": 0,
+    "linkBlockerResolved": true,
+    "reviewComplete": true
+  },
+  "supportGovernance": {
+    "x1CitationPassRequiredAndComplete": true,
+    "judgmentDossierClaimsGoverned": "JUDG-01…JUDG-10",
+    "x1SupportScriptureReferences": 40,
+    "x1SupportQuotationSurfaces": 33,
+    "x1OwnsJudicialFork": true,
+    "x2OwnsPositiveGlorification": true,
+    "x3OwnsBookConclusion": true,
+    "reviewComplete": true
+  },
+  "disposition": {
+    "readerAssemblyBlockerResolved": true,
+    "scriptureNormalizationBlockerResolved": true,
+    "quotationClassificationBlockerResolved": true,
+    "linkBlockerResolved": true,
+    "sourceHeadingOrBibliographyOwnerBlockerApplicable": false,
+    "remainingEntryBlockers": [],
+    "readerManuscriptChanged": false,
+    "productSourceChanged": false,
+    "researchSupportChanged": false,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "entryCitationPassComplete": true
+  },
+  "wholeBookBoundary": {
+    "assembledReaderEntries": "5 / 18",
+    "assembledReaderCitationReviewsComplete": "5 / 5",
+    "missingStandaloneFinalReaders": 13,
+    "entryCitationPassComplete": "5 / 18",
+    "entryCitationPassOpen": "13 / 18",
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false
+  },
+  "nextTransaction": "Compose a new current-state overlay for five completed entry passes and thirteen missing standalone readers, then assemble the next missing final-book reader in a separate transaction."
+}
