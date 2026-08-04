@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "authorityId": "HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-V2-2026-08-04",
+  "supersedes": "HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-2026-08-04",
+  "encoding": "gzip+base64-chunks",
+  "decodedJsonPath": "data/heart-whole-book-citation-inventory-2026-08-04.json",
+  "decodedJsonBytes": 285803,
+  "decodedJsonSha256": "b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000",
+  "gzipBytes": 46416,
+  "gzipSha256": "e1aea3fdbe537972bfc9382d2fa0267d661dd70f5929602ecfcd50dda5f0f834",
+  "base64Characters": 61888,
+  "parts": [
+    {
+      "path": "data/heart-whole-book-citation-inventory-2026-08-04.v2.part01.b64",
+      "characters": 15472,
+      "normalizedSha256": "37741bbefd81815e7d592d4896cd7fa4bda316e410fc9520ebfd8c66a6e1cfbf"
+    },
+    {
+      "path": "data/heart-whole-book-citation-inventory-2026-08-04.v2.part02.b64",
+      "characters": 15472,
+      "normalizedSha256": "e7b4bf82221acc546b52168e72e51ca6dc05effe952fafc03ccfd4592a0d4549"
+    },
+    {
+      "path": "data/heart-whole-book-citation-inventory-2026-08-04.v2.part03.b64",
+      "characters": 15472,
+      "normalizedSha256": "02a5f79ea247183a9c56e5c55e8cba4e2a9fbf2affa8c63aa6011b91eefd7557"
+    },
+    {
+      "path": "data/heart-whole-book-citation-inventory-2026-08-04.v2.part04.b64",
+      "characters": 15472,
+      "normalizedSha256": "04b78be02093e67c5fd7d54ba0711c2cf5c14dcc40905d8b9dd2c3a029839665"
+    }
+  ],
+  "decodedAuthorityId": "HEART-WHOLE-BOOK-CITATION-INVENTORY-2026-08-04",
+  "decodedStatus": "EIGHTEEN_ENTRY_READ_ONLY_CITATION_INVENTORY_COMPLETE_BOOK_PASS_OPEN",
+  "transportBoundary": "V2 replaces only the corrupted V1 storage transport. The decoded inventory JSON authority and fresh-scan equality are unchanged."
+}
