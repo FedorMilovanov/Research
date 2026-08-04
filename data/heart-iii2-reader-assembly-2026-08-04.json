@@ -17,7 +17,7 @@
       "de4d49cada15b231dfc31058aced4ec7a25928a2"
     ],
     "inventoryBuilder": [
-      "scripts/build_heart_whole_book_citation_inventory.py",
+      "scripts/build_heart_whole-book-citation-inventory.py",
       "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"
     ]
   },
@@ -28,8 +28,8 @@
   },
   "reader": {
     "path": "СЕРИЯ СЕРДЦЕ/121_READER_CHAPTER_III2_REGENERATION_2026-08-04.md",
-    "gitBlob": "7f40a2ba5a061fe773c5c746c91e640fe1b6e518",
-    "fullSha256": "8febf0d6509d6491cdedaaf70fb0f0b6b46a9883b1dae0b81388b5aeec85398c",
+    "gitBlob": "a3f66d265cd66eff7187dcd5c511faf645833988",
+    "fullSha256": "10cf0d7cc4ed548280ebd06c02b240f173fa06a3948b22616652e697c7626437",
     "wordCount": 1718,
     "scriptureReferences": 25,
     "quotationSurfaces": 0,
