@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-III1-READER-ASSEMBLY-2026-08-04",
+  "status": "III1_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "currentV6": [
+      "data/heart-entry-citation-pass-current-v6-2026-08-04.json",
+      "fd46d6f99a735301f2966b0e2912eb68805bdff9"
+    ],
+    "wholeBookIntegration": [
+      "data/heart-whole-book-integration-2026-08-04.json",
+      "06d67275c42c7a9c3bd0365044f358b4b7d7a895"
+    ],
+    "historicalTriage": [
+      "data/heart-entry-citation-dispositions-2026-08-04.json",
+      "de4d49cada15b231dfc31058aced4ec7a25928a2"
+    ]
+  },
+  "entry": {
+    "order": 6,
+    "id": "HEART-BOOK-III1",
+    "label": "III.1 Обещание нового сердца"
+  },
+  "reader": {
+    "path": "СЕРИЯ СЕРДЦЕ/117_READER_CHAPTER_III1_NEW_HEART_PROMISE_2026-08-04.md",
+    "gitBlob": "f0355d4a9a451ecbe6a2256a36876839a0c4889e",
+    "fullSha256": "fd4fe3aa36e46554d105fa7277fe812337d1852ca7a475f2b91b779238fdf93f",
+    "wordCount": 1791,
+    "scriptureReferences": 18,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceHeadings": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "exactProductSource": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "path": "src/content/articles/novoe-serdce.mdx",
+    "gitBlob": "8d4936d6b58b380215b259a5511a8c2bfad33a46",
+    "historicalFullOwner": {
+      "ownerSurfaces": 1,
+      "sourceHeadings": 0,
+      "scriptureReferences": 30,
+      "quotationSurfaces": 67,
+      "externalLinks": 0,
+      "internalArticleLinks": 4
+    },
+    "exactSectionOrder": [
+      "ne-radi-vas",
+      "obrezanie-serdca",
+      "dam-serdce-novoe",
+      "ne-remont-a-rozhdenie",
+      "zavet-na-serdce",
+      "chto-novo-chto-net",
+      "lidiya",
+      "fundament",
+      "tverdo-ne-dubinkoy",
+      "kak-uznat",
+      "vyhod",
+      "istochniki"
+    ],
+    "assemblyOwnership": {
+      "promiseCore": [
+        "ne-radi-vas",
+        "obrezanie-serdca",
+        "dam-serdce-novoe",
+        "zavet-na-serdce",
+        "vyhod"
+      ],
+      "boundedSupport": [
+        "chto-novo-chto-net"
+      ],
+      "retainedForAdjacentEntriesOrCitationReview": [
+        "ne-remont-a-rozhdenie",
+        "lidiya",
+        "fundament",
+        "tverdo-ne-dubinkoy",
+        "kak-uznat",
+        "istochniki"
+      ]
+    }
+  },
+  "composition": {
+    "mode": "PARAPHRASE_ONLY",
+    "productSourceChanged": false,
+    "historicalAuthoritiesChanged": false,
+    "productQuotationSurfacesCopiedToReader": 0,
+    "productLinksCopiedToReader": 0,
+    "longExactProductSentencesCopied": 0,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "ownershipBoundaries": [
+    "III.1 owns the Ezekiel 36 promise, covenant cleansing and replacement of the stone heart.",
+    "III.2 retains divine causation, new birth, monergistic renewal and the means by which the promise becomes personal reality.",
+    "III.3 retains confession, godly sorrow, repentance response and fruit.",
+    "III.4 retains life, adoption and indwelling by the Spirit.",
+    "All thirty historical Scripture references, sixty-seven quotation surfaces and four internal links remain open for a separate III.1 entry citation pass."
+  ],
+  "effectiveState": {
+    "entryId": "HEART-BOOK-III1",
+    "previous": "PRODUCT_SOURCE_ONLY",
+    "current": "ASSEMBLED_READER_CITATION_OPEN"
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 10,
+    "missingStandaloneFinalReaders": 8,
+    "entryCitationPassComplete": 9,
+    "entryCitationPassOpen": 9,
+    "assembledReaderCitationReviewsComplete": 9,
+    "productSourceOnly": 3,
+    "researchDossierOnly": 5,
+    "productSourceLinkRepairsRequired": 3,
+    "dossierUrlHoldsRetained": 15,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "publicationBoundary": {
+    "iii1ReaderAssembled": true,
+    "iii1EntryCitationPassComplete": false,
+    "allCurrentlyAssembledReadersCitationReviewed": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceLinkRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Perform a separate fail-closed III.1 entry citation pass over the immutable reader and the complete historical Product owner."
+}
