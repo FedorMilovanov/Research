@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-PART2-CITATION-REVIEW-2026-08-04",
+  "status": "PART2_ENTRY_CITATION_PASS_COMPLETE_NINE_ASSEMBLED_READERS_REVIEWED_WHOLE_BOOK_OPEN",
+  "reviewedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "readerAssembly": ["data/heart-part2-reader-assembly-2026-08-04.json", "7fe129945caa023e796e592d0c8fc07a01a89f69"],
+    "precedingCurrentV5": ["data/heart-entry-citation-pass-current-v5-2026-08-04.json", "2ba8c381e636a9f1148fa30e3f010d595feb42a6"],
+    "historicalTriage": ["data/heart-entry-citation-dispositions-2026-08-04.json", "de4d49cada15b231dfc31058aced4ec7a25928a2"],
+    "sourceClosureRegistry": ["СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json", "c67243b7f180bd84c86a0a52b9134844fb221d90"]
+  },
+  "entry": {"order": 5, "id": "HEART-BOOK-II", "label": "II Диагноз падшего сердца"},
+  "sourceOwners": [
+    {"id":"R3","path":"СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md","gitBlob":"ae55b1fad5cccbdb623c551a14222e0f51ec084a","fullSha256":"12c4344acfc96050eaae35d98ed666102e62c700ead9db34c24681a914102efb"},
+    {"id":"R4","path":"СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md","gitBlob":"f82780e13cb064aa89c06427d11a938662fc3ff8","fullSha256":"1e5ff030fea335f64dda3a613898d1237d3a4e34d0c303d67f51a64af92e1964"}
+  ],
+  "fullOwnerReview": {
+    "detected": {"ownerSurfaces":2,"sourceHeadings":1,"scriptureReferences":118,"quotationSurfaces":437,"externalLinks":80,"internalArticleLinks":1},
+    "scriptureReferenceSetSha256": "5d78a0e23ed09e10f71dfcf9010269430c53faf2bd6ffe1225a3160ee9ffc4a6",
+    "sourceSurfaceBaseManifestSha256": "d51a1de91ac865bf81c485797092637ff39d3b50ca59dbbaddec85e9cd2cb804",
+    "classifiedSurfaceManifestSha256": "f7cf291e9cecb4a3a9d5aa28ae0185982c54c477448ce3e1b3752501379538cc",
+    "roleMapSha256": "be48bfb08f60853e858217c3df3a3456dc1b9a7d8235aed394ca5c39f3e65894",
+    "sectionSummarySha256": "b0932037fbc01a403aa22347d2c3065b6115a1513b3747a4b46fdeb926e6adf7",
+    "quotationRoleCounts": {
+      "EXEGETICAL_SCRIPTURE_OR_LEXICAL_SURFACE": 178,
+      "ATTRIBUTED_WITNESS_OR_QUOTE_BANK_SURFACE": 194,
+      "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": 65
+    },
+    "roleSectionMap": {
+      "R3": {
+        "EXEGETICAL_SCRIPTURE_OR_LEXICAL_SURFACE": ["1. Рим. 2:14–15 — совесть: почему невозрождённый вообще борется","2. Мф. 5:45 и Деян. 14:17 — общая благодать: откуда у невозрождённого доброе","3. Еф. 2:1–3 — диагноз: мёртв, а не немощен","4. Ин. 8:34; Рим. 6:17–20; 2 Пет. 2:19 — рабство: почему победы не освобождают","5. Рим. 8:7–8 — вражда и неспособность: сам потолок","6. Евр. 11:6; Рим. 14:23; Ин. 15:5; Ис. 64:6 — почему даже добрые дела «не засчитываются» вертикально","7. Мк. 10:17–22 — лицо этой борьбы: богатый юноша (и взгляд Христа)","8. Рим. 1:18–20 + Рим. 10:14–17 — не слышавшие Евангелия"],
+        "ATTRIBUTED_WITNESS_OR_QUOTE_BANK_SURFACE": ["А. Отцы","Б. Расследование формулы «splendida vitia / блестящие пороки» (задание: проверить атрибуцию)","В. Реформаторы","Г. Реформатские исповедания (свидетели каркаса)","Д. Пуритане","Е. Баптисты","Ж. Современные консервативные","Цитатный банк (каждая цитата с источником и ссылкой)"]
+      },
+      "R4": {
+        "EXEGETICAL_SCRIPTURE_OR_LEXICAL_SURFACE": ["1. Сцена: проповедь толпе как сама ситуация притчи","2. Семя и сердце: терминология","3. Почва 1: при дороге — непонимающее (нерассуждающее) сердце","4. Почва 2: камень — сердце временной веры (узел статьи)","5. Почва 3: терние — разделённое (задушенное заботами) сердце","6. Почва 4: добрая земля — понимающее, хранящее, терпеливое сердце","7. Рамка слушания: Мк. 4:24 / Лк. 8:18","8. Зачем притчи: Ис. 6:9–10 и «тайна Царства» (контекст, без которого нельзя)","9. Евр. 6:4–8 и 1 Ин. 2:19 — канонические параллели temporary faith","10. Сводная таблица редакций","И. Писание (основные рабочие тексты, Синодальный)"],
+        "ATTRIBUTED_WITNESS_OR_QUOTE_BANK_SURFACE": ["Реформаторы","Пуритане","Баптисты","Современные консервативные","Отцы (свидетель, не якорь)","Цитатный банк","А. Кальвин, Institutes of the Christian Religion, III.2.11–12 (пер. Beveridge)","Б. Кальвин, Commentary on a Harmony of the Evangelists (пер. Pringle), на Мф. 13:20–21 / Лк. 8:13","В. 1689 Лондонское исповедание","Г. Gill, Exposition of the New Testament","Д. Пуритане","Е. Проповедники","Ж. Современные"]
+      }
+    },
+    "unmappedSectionsDisposition": "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE",
+    "allScriptureReferenceTokensGoverned": true,
+    "allQuotationSurfacesClassified": true,
+    "bulkDirectQuotationApproval": false
+  },
+  "externalLinkReview": {
+    "reviewedAt": "2026-08-04",
+    "externalLinkSetSha256": "f5ce26d3f27bf9e6aa2c87e625d9b91875d580f296d02d80e974a27dd279187f",
+    "linksDispositioned": 80,
+    "dispositionRegistrySha256": "0811af3bd3865bc4dfd36f7d1f62048cdbd85f73c243512eb33410b07bbf8fe1",
+    "statusCounts": {
+      "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE": 34,
+      "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER": 31,
+      "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD": 15
+    },
+    "method": {
+      "contextWindowCharacters": 500,
+      "holdTerms": ["НЕ ВЕРИФИЦИРОВАНО","не верифицирован","кандидат","Открытые вопросы","выходные данные установить","не использовать","опасност","неточно","не найден","не подтверд","сомнитель","проверить атрибуцию","HOLD","NO-DIRECT-QUOTE"],
+      "verifiedTerms": ["ВЕРИФИЦИРОВАНО","SAFE CLOSURE","подтверждено","точная фраза","дословно","проверен"],
+      "fallback": "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER"
+    },
+    "readerTransfer": 0,
+    "directQuoteBulkApproval": false
+  },
+  "internalLinkReview": {
+    "path": "/articles/opinion/",
+    "status": "UNRESOLVED_GENERIC_PATH_NO_PRODUCT_TARGET_NO_READER_TRANSFER",
+    "productTargetExistsOnPinnedCommit": false,
+    "readerTransfer": false
+  },
+  "readerReview": {
+    "path":"СЕРИЯ СЕРДЦЕ/113_READER_CHAPTER_II_FALLEN_HEART_DIAGNOSIS_2026-08-04.md",
+    "gitBlob":"4cca195d034c70a7d3d6c3dd8edc9a04fcffcc20",
+    "fullSha256":"c7e37a30651bf96f77f2a2eba204251591edb2ab28aff1cc8332d6c72f99086d",
+    "scriptureReferences":20,
+    "quotationSurfaces":0,
+    "externalLinks":0,
+    "internalArticleLinks":0,
+    "footnoteDefinitions":0,
+    "newDirectQuotesApproved":0
+  },
+  "sourceStatusBoundary": {
+    "verifiedAndSafeClosureMarkersPreserved": true,
+    "candidateAndOpenQuestionMarkersPreserved": true,
+    "noDirectQuoteMarkersPreserved": true,
+    "unresolvedSourceCandidatesPromoted": 0,
+    "sourceFilesChanged": false
+  },
+  "disposition": {
+    "entryCitationPassComplete": true,
+    "remainingEntryBlockers": [],
+    "sourceQuotationSurfacesCopiedToReader": 0,
+    "sourceLinksCopiedToReader": 0,
+    "newDirectQuotesApproved": 0,
+    "interpretation": "Every historical Part II surface has a deterministic dossier-role or link-status disposition. Candidate and hold records remain fail-closed and nothing is transferred into the paraphrase-only reader."
+  },
+  "effectiveState": {"entryId":"HEART-BOOK-II","previous":"ASSEMBLED_READER_CITATION_OPEN","current":"ENTRY_CITATION_PASS_COMPLETE"},
+  "effectiveCounts": {"finalBookEntries":18,"assembledReader":9,"missingStandaloneFinalReaders":9,"entryCitationPassComplete":9,"entryCitationPassOpen":9,"assembledReaderCitationReviewsComplete":9,"productSourceOnly":4,"researchDossierOnly":5,"productSourceLinkRepairsRequired":3,"newDirectQuotesApproved":0},
+  "publicationBoundary": {"part2EntryCitationPassComplete":true,"allCurrentlyAssembledReadersCitationReviewed":true,"wholeBookReaderAssemblyComplete":false,"wholeBookCitationPassComplete":false,"wholeBookTransitionDedupPassComplete":false,"wholeBookLineEditComplete":false,"manuscriptBundleComplete":false,"productReleaseComplete":false,"productSourceLinkRepairsComplete":false,"newDirectQuotesApproved":0},
+  "nextTransaction": "Compose a separate versioned current V6 authority from immutable current V5 plus this Part II citation receipt."
+}
