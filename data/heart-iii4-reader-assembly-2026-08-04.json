@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-III4-READER-ASSEMBLY-2026-08-04",
+  "status": "III4_STANDALONE_READER_ASSEMBLED_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "exactBase": {
+    "researchCommit": "7bf8c2a9730449feb2d83972da172ccb22b3a129",
+    "productCommit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "currentV8": ["data/heart-entry-citation-pass-current-v8-2026-08-04.json", "6736f90211e34c5dbb7d9943e617102b660bb5be"],
+    "integration": ["data/heart-whole-book-integration-2026-08-04.json", "06d67275c42c7a9c3bd0365044f358b4b7d7a895"],
+    "historicalTriage": ["data/heart-entry-citation-dispositions-2026-08-04.json", "de4d49cada15b231dfc31058aced4ec7a25928a2"],
+    "inventoryBuilder": ["scripts/build_heart_whole_book_citation_inventory.py", "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"]
+  },
+  "entry": {
+    "order": 9,
+    "id": "HEART-BOOK-III4",
+    "label": "III.4 Сердце и Дух",
+    "previousState": "PRODUCT_SOURCE_ONLY",
+    "currentState": "ASSEMBLED_READER_CITATION_OPEN",
+    "dedupOwner": "Owns life and adoption by the Spirit; the R2 dossier supplies the bounded Old Testament continuity/discontinuity excursus."
+  },
+  "sourceOwners": [
+    {
+      "id": "PRODUCT",
+      "path": "src/content/articles/serdce-i-duh.mdx",
+      "gitBlob": "1f8ede3dd03a2129bbf7d91d49689d25f0f72571",
+      "fullSha256": "d6b57fc6486e192f371daf430ab50dc7a6d9bdb99b5caa75ed5617d333b2ebe9",
+      "scan": {"scriptureReferences":45,"quotationSurfaces":115,"externalLinks":0,"internalArticleLinks":6,"footnoteDefinitions":0,"sourceHeadings":0},
+      "manifestHashes": {
+        "scriptureReferenceSetSha256": "796b498e007c52399967ea3f358ada3848099df796fa7927e3e92c707db4f7b5",
+        "externalLinkSetSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "internalArticleLinkSetSha256": "c0bf668f80df6cdaf0430a572ee139872cbdc429f42749a540b37b4c6b6fbab5",
+        "headingManifestSha256": "c07f44b3c737e5c16b6f71d4fd65b6688fdcbae83ad82c67bef391bdd5179091",
+        "sectionSummarySha256": "737415ac94d7de6afda48fdb0db287a92d77192e25cb5a22dc2f5d3942e64a80"
+      }
+    },
+    {
+      "id": "R2",
+      "path": "СЕРИЯ СЕРДЦЕ/64_R2_OT_REGENERATION_INDWELLING.md",
+      "gitBlob": "0bc0cde5a85fe015ca8f394c3fda28074ce19577",
+      "fullSha256": "4aa919cf1c54d634852cf179bd006f27d197e0adbc41dbd1c286a0c0f39d9292",
+      "scan": {"scriptureReferences":93,"quotationSurfaces":174,"externalLinks":30,"internalArticleLinks":0,"footnoteDefinitions":0,"sourceHeadings":0},
+      "manifestHashes": {
+        "scriptureReferenceSetSha256": "62db12011cc5ecfd8f2f0c55a11176d00ca517c7c4ed2981543ebdb1344e2217",
+        "externalLinkSetSha256": "c6585ad6c6612715ec1114ee8e85f72436b0c24a6238a97455fb7cb11cc6f431",
+        "internalArticleLinkSetSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "headingManifestSha256": "0f0a7f42d79bb7e6f5eca00cd99207d1539238456c3b1b7fa373ddc6e89537f7",
+        "sectionSummarySha256": "13ab5f989c4e046906ee6b3811aeef862b1b246891fe24ac0e5c1100c4f6ebba"
+      }
+    }
+  ],
+  "historicalUnion": {
+    "ownerSurfaces": 2,
+    "scriptureReferences": 136,
+    "quotationSurfaces": 289,
+    "uniqueExternalLinks": 30,
+    "ownerUrlRecords": 30,
+    "internalArticleLinks": 6,
+    "scriptureReferenceSetSha256": "7a587385428590ae7d679608a01507f23ea709cd5b3f0979773efc6fe6a62bb9",
+    "externalLinkSetSha256": "c6585ad6c6612715ec1114ee8e85f72436b0c24a6238a97455fb7cb11cc6f431",
+    "internalArticleLinkSetSha256": "c0bf668f80df6cdaf0430a572ee139872cbdc429f42749a540b37b4c6b6fbab5",
+    "allHistoricalQuotationSurfacesRemainOutsideReader": true,
+    "allHistoricalLinksRemainOutsideReader": true,
+    "citationAndLinkDispositionDeferred": true
+  },
+  "reader": {
+    "path": "СЕРИЯ СЕРДЦЕ/125_READER_CHAPTER_III4_HEART_AND_SPIRIT_2026-08-04.md",
+    "gitBlob": "bf34a453d7fc851bfda3a79eb0389418610c9681",
+    "fullSha256": "6d4d26b32b605f1d2855f4f6ae51f145f98b6e4c39bfda19562fa81a46f7b56d",
+    "words": 1681,
+    "scriptureReferences": 15,
+    "scriptureReferenceSetSha256": "e11949db71628dd3feab5b3d8301909999d0d0f4c66d304f0f83df36702a6644",
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceHeadings": 0,
+    "longExactSentenceTransfers": 0,
+    "sourceQuotationTransfer": 0,
+    "sourceLinkTransfer": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "ownershipBoundary": {
+    "owns": [
+      "no-condemnation as the foundation of Spirit-led life",
+      "the indwelling Spirit and new mind-set",
+      "mortification by the Spirit as grounded activity",
+      "adoption and the Spirit's witness",
+      "groaning, intercession and assurance in Romans 8",
+      "the bounded Old Testament continuity/discontinuity excursus"
+    ],
+    "doesNotOwn": {
+      "HEART-BOOK-III1": "the Ezekiel 36 promise and covenant replacement motif",
+      "HEART-BOOK-III2": "divine causation and the logical priority of regeneration",
+      "HEART-BOOK-III3": "repentance, godly sorrow and restitution",
+      "HEART-BOOK-V": "the complete two-struggles and warfare exposition",
+      "HEART-BOOK-VII": "the full pastoral treatment of suffering and depression",
+      "HEART-BOOK-X2": "complete glorification and the final end of remaining sin"
+    },
+    "oldTestamentExcursus": {
+      "regeneratingGraceInOldTestamentSaintsAffirmed": true,
+      "pentecostalNewnessAffirmed": true,
+      "indwellingSpectrumPresentedWithoutDogmatizing": true,
+      "john7AndJohn14TextualVariantsNotUsedAsSoleDoctrinalBasis": true
+    }
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReaders": 12,
+    "missingStandaloneFinalReaders": 6,
+    "entryCitationPassComplete": 11,
+    "entryCitationPassOpen": 7,
+    "assembledReaderCitationReviewsComplete": 11,
+    "assembledReadersAwaitingCitationReview": 1,
+    "productSourceOnlyEntries": 2,
+    "researchDossierOnlyEntries": 4,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 40,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "publicationBoundary": {
+    "iii4ReaderAssemblyComplete": true,
+    "iii4EntryCitationPassComplete": false,
+    "allCurrentlyAssembledReadersReviewed": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "ENTRY_CITATION_PASS",
+    "preferredEntryId": "HEART-BOOK-III4",
+    "reason": "The exact Product and R2 historical union 136/289/30/6 must receive an independent citation and link disposition before V9 composition."
+  }
+}
