@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 6,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V6-2026-08-04",
+  "status": "NINE_ENTRY_PASSES_COMPOSED_ALL_NINE_READERS_REVIEWED_NINE_READERS_OPEN",
+  "generatedAt": "2026-08-04",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-v5-2026-08-04.json",
+    "gitBlob": "2ba8c381e636a9f1148fa30e3f010d595feb42a6",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V5-2026-08-04",
+    "historicalCounts": {
+      "entryCitationPassComplete": 8,
+      "entryCitationPassOpen": 10,
+      "assembledReaderEntries": 8,
+      "assembledReaderCitationReviewsComplete": 8,
+      "missingStandaloneFinalReaders": 10,
+      "productSourceOnlyEntries": 4,
+      "researchDossierOnlyEntries": 6
+    }
+  },
+  "deltaReceipt": {
+    "order": 5,
+    "id": "HEART-BOOK-II",
+    "label": "II Диагноз падшего сердца",
+    "path": "data/heart-part2-citation-review-2026-08-04.json",
+    "gitBlob": "c746a626953ee57a394a41a5f82a83630f1cd782",
+    "authorityId": "HEART-PART2-CITATION-REVIEW-2026-08-04",
+    "readerAssemblyPath": "data/heart-part2-reader-assembly-2026-08-04.json",
+    "readerAssemblyGitBlob": "7fe129945caa023e796e592d0c8fc07a01a89f69",
+    "stateTransition": "ASSEMBLED_READER_CITATION_OPEN_TO_ENTRY_CITATION_PASS_COMPLETE",
+    "composedCountAfterReceipt": "9 / 18",
+    "dossierUrlHoldsRetained": 15,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 9,
+    "entryCitationPassOpen": 9,
+    "assembledReaderEntries": 9,
+    "assembledReaderCitationReviewsComplete": 9,
+    "missingStandaloneFinalReaders": 9,
+    "productSourceOnlyEntries": 4,
+    "researchDossierOnlyEntries": 5,
+    "productSourceLinkRepairsRequired": 3,
+    "dossierUrlHoldsRetained": 15,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I2",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-X1",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "openEntriesBySourceLane": {
+    "productSourceOnly": [
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VII"
+    ],
+    "researchDossierOnly": [
+      "HEART-BOOK-III2",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ]
+  },
+  "readerAssemblyBacklog": {
+    "removedByDelta": "HEART-BOOK-II",
+    "remaining": [
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "effectiveMissingStandaloneFinalReaders": 9
+  },
+  "retainedRepairAndHoldBacklog": {
+    "productSourceLinkRepairs": {
+      "entryId": "HEART-BOOK-I3",
+      "required": 3,
+      "complete": false
+    },
+    "part2DossierUrlHolds": {
+      "entryId": "HEART-BOOK-II",
+      "retained": 15,
+      "promoted": 0
+    },
+    "part2UnresolvedInternalPath": {
+      "path": "/articles/opinion/",
+      "retained": 1,
+      "readerTransfer": false
+    }
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceLinkRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "STANDALONE_READER_ASSEMBLY",
+    "preferredEntryId": "HEART-BOOK-III1",
+    "reason": "Part I and Part II are now fully assembled and entry-reviewed. III.1 is the next final-order gap and has an exact Product owner for the promise of a new heart."
+  }
+}
