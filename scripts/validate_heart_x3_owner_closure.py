@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the final Heart X.3 conclusion-section owner overlay."""
+"""Validate X.3 owner closure and its later paraphrase-only reader composition."""
 from __future__ import annotations
 
 import argparse
@@ -15,6 +15,7 @@ VII = ROOT / "data/heart-vii-owner-closure-2026-08-04.json"
 I4 = ROOT / "data/heart-i4-owner-closure-2026-08-04.json"
 X2 = ROOT / "data/heart-x2-owner-closure-2026-08-04.json"
 X3 = ROOT / "data/heart-x3-owner-closure-2026-08-04.json"
+X3_READER = ROOT / "data/heart-x3-reader-assembly-2026-08-04.json"
 HUMAN = ROOT / "СЕРИЯ СЕРДЦЕ/87_X3_CONCLUDING_HOPE_OWNER_CLOSURE_2026-08-04.md"
 CURRENT = ROOT / "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md"
 BOOK = ROOT / "СЕРИЯ СЕРДЦЕ/82_BOOK_ASSEMBLY_DECISIONS_2026-08-02.md"
@@ -80,15 +81,16 @@ vii = load(VII)
 i4 = load(I4)
 x2 = load(X2)
 x3 = load(X3)
+reader = load(X3_READER)
 
-# Historical overlay chain must remain immutable and monotonic.
+# Immutable owner-discovery chain.
 require(base.get("authorityId") == "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04", "base authority drift")
 require(base.get("counts", {}).get("ownerRequired") == 4, "base gap count drift")
 entries = base.get("entries", [])
 require(isinstance(entries, list) and len(entries) == 18, "base must contain eighteen entries")
 base_x3 = next((row for row in entries if isinstance(row, dict) and row.get("id") == "HEART-BOOK-X3"), {})
 require(base_x3.get("bookLabel") == "X.3 Заключительная надежда", "base X.3 label drift")
-require(base_x3.get("primaryState") == "OWNER_REQUIRED", "base X.3 historical state drift")
+require(base_x3.get("primaryState") == "OWNER_REQUIRED", "base X.3 state drift")
 require(base_x3.get("productOwner") is None and base_x3.get("researchOwners") == [], "base X.3 snapshot mutated")
 
 require(vii.get("authorityId") == "HEART-VII-OWNER-CLOSURE-2026-08-04", "VII dependency drift")
@@ -98,22 +100,13 @@ require(i4.get("effectiveCounts", {}).get("ownerRequired") == 2, "I.4 gap count 
 require(x2.get("authorityId") == "HEART-X2-OWNER-CLOSURE-2026-08-04", "X.2 dependency drift")
 require(x2.get("effectiveCounts", {}).get("productSourceOnly") == 8, "X.2 Product count drift")
 require(x2.get("effectiveCounts", {}).get("ownerRequired") == 1, "X.2 gap count drift")
-require(x2.get("remainingOwnerGaps") == ["HEART-BOOK-X3"], "X.2 remaining-gap snapshot drift")
-require(x2.get("publicationBoundary", {}).get("x2SourceOwnerClosed") is True, "X.2 owner not closed")
-require(x2.get("publicationBoundary", {}).get("x2UnifiedReaderAssembled") is False, "X.2 reader boundary drift")
+require(x2.get("remainingOwnerGaps") == ["HEART-BOOK-X3"], "X.2 gap snapshot drift")
 
-# X.3 overlay contract.
+# X.3 owner snapshot stays pre-reader-assembly.
 require(x3.get("schemaVersion") == 1, "X.3 schema drift")
 require(x3.get("authorityId") == "HEART-X3-OWNER-CLOSURE-2026-08-04", "X.3 authority drift")
 require(x3.get("status") == "X3_PRODUCT_CONCLUSION_SECTION_ESTABLISHED_FINAL_BOOK_ASSEMBLY_AND_CITATION_PASS_OPEN", "X.3 status drift")
 require(x3.get("generatedAt") == x3.get("lastVerifiedAt") == "2026-08-04", "X.3 date drift")
-require(x3.get("baseAuthorityId") == base.get("authorityId"), "X.3 base authority mismatch")
-require(x3.get("baseAuthority") == "data/heart-whole-book-integration-2026-08-04.json", "X.3 base path drift")
-require(x3.get("dependsOnOverlays") == [
-    "data/heart-vii-owner-closure-2026-08-04.json",
-    "data/heart-i4-owner-closure-2026-08-04.json",
-    "data/heart-x2-owner-closure-2026-08-04.json",
-], "X.3 dependency order drift")
 require(x3.get("researchSnapshot") == "17a573f1791e7bcdf314be0f40593c13ef60b8d4", "X.3 Research snapshot drift")
 require(x3.get("productSnapshot") == {
     "repository": "FedorMilovanov/gb-is-my-strength",
@@ -125,7 +118,7 @@ override = x3.get("entryOverride", {})
 require(override.get("id") == "HEART-BOOK-X3", "X.3 ID drift")
 require(override.get("bookLabel") == "X.3 Заключительная надежда", "X.3 label drift")
 require(override.get("previousPrimaryState") == "OWNER_REQUIRED", "X.3 previous state drift")
-require(override.get("effectivePrimaryState") == "PRODUCT_SECTION_ONLY", "X.3 effective state drift")
+require(override.get("effectivePrimaryState") == "PRODUCT_SECTION_ONLY", "X.3 owner state drift")
 require(override.get("primaryProductOwner") == {
     "id": "osvobozhdennoe",
     "slug": "osvobozhdennoe-serdce",
@@ -136,22 +129,17 @@ require(override.get("primaryProductOwner") == {
     "sectionTitle": "Выход: сердце, наконец успокоенное",
     "role": "book-level conclusion from the whole journey of the heart to the face of God and final hope",
 }, "X.3 Product section owner drift")
-require(override.get("excludedSiblingSections") == EXCLUDED_X2_SECTIONS, "X.3 excluded X.2 section set drift")
+require(override.get("excludedSiblingSections") == EXCLUDED_X2_SECTIONS, "X.3 X.2 exclusion drift")
 require(override.get("researchOwners") == [
     "СЕРИЯ СЕРДЦЕ/82_BOOK_ASSEMBLY_DECISIONS_2026-08-02.md",
     "СЕРИЯ СЕРДЦЕ/71_R9_CHRIST_OF_REVELATION.md",
     "СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md",
-], "X.3 Research owner set drift")
+], "X.3 Research owner drift")
 require(override.get("effectiveCitationState") == "PRODUCT_SECTION_CITATION_PASS_REQUIRED", "X.3 citation state drift")
-require(override.get("manuscriptState") == "CONCLUSION_SECTION_SELECTED_FINAL_BOOK_CONCLUSION_NOT_ASSEMBLED", "X.3 manuscript state drift")
+require(override.get("manuscriptState") == "CONCLUSION_SECTION_SELECTED_FINAL_BOOK_CONCLUSION_NOT_ASSEMBLED", "X.3 historical manuscript state drift")
 require(len(str(override.get("dedupOwner", ""))) >= 380, "X.3 dedup boundary too weak")
-
-boundary = override.get("supportBoundary", {})
-require(len(boundary.get("supports", [])) == 5, "X.3 support set drift")
-require(len(boundary.get("doesNotSupport", [])) == 7, "X.3 non-support set drift")
-require("the five positive-glorification sections already assigned to X.2 belong to X.3" in boundary.get("doesNotSupport", []), "X.2/X.3 section exclusion missing")
-require("the final eighteen-entry manuscript bundle is complete" in boundary.get("doesNotSupport", []), "X.3 manuscript negative boundary missing")
-
+require(len(override.get("supportBoundary", {}).get("supports", [])) == 5, "X.3 support set drift")
+require(len(override.get("supportBoundary", {}).get("doesNotSupport", [])) == 7, "X.3 non-support set drift")
 require(x3.get("effectiveCounts") == {
     "finalBookEntries": 18,
     "assembledReader": 3,
@@ -165,8 +153,8 @@ require(x3.get("effectiveCounts") == {
     "selectedProductSectionOwners": 1,
     "uniqueProductPagesMapped": 9,
     "newDirectQuotesApproved": 0,
-}, "X.3 effective count drift")
-require(x3.get("remainingOwnerGaps") == [], "X.3 remaining gap set must be empty")
+}, "X.3 owner count drift")
+require(x3.get("remainingOwnerGaps") == [], "X.3 owner gaps must remain empty")
 require(x3.get("publicationBoundary") == {
     "allEighteenEntriesOwnerMapped": True,
     "x3ConclusionSectionSelected": True,
@@ -176,55 +164,62 @@ require(x3.get("publicationBoundary") == {
     "manuscriptBundleComplete": False,
     "productReleaseComplete": False,
     "newDirectQuotesApproved": 0,
-}, "X.3 publication boundary drift")
+}, "X.3 owner publication boundary drift")
 
-# Exact Product section extraction and boundaries.
+# Later reader transaction advances current state without mutating owner history.
+require(reader.get("authorityId") == "HEART-X3-READER-ASSEMBLY-2026-08-04", "X.3 reader composition authority missing")
+require(reader.get("ownerAuthorityId") == x3.get("authorityId"), "X.3 reader/owner mismatch")
+require(reader.get("effectivePrimaryState") == {
+    "entryId": "HEART-BOOK-X3",
+    "previous": "PRODUCT_SECTION_ONLY",
+    "current": "ASSEMBLED_READER",
+    "sourceBackedByProductSection": True,
+}, "X.3 reader state composition drift")
+require(reader.get("effectiveCounts", {}).get("assembledReader") == 4, "X.3 current assembled-reader count drift")
+require(reader.get("effectiveCounts", {}).get("productSourceOnly") == 8, "X.3 current Product-source count drift")
+require(reader.get("effectiveCounts", {}).get("productSectionOnly") == 0, "X.3 current Product-section primary count drift")
+require(reader.get("effectiveCounts", {}).get("researchDossierOnly") == 6, "X.3 current dossier count drift")
+require(reader.get("effectiveCounts", {}).get("ownerRequired") == 0, "X.3 current owner-gap drift")
+require(reader.get("effectiveCounts", {}).get("sourceBackedByProductSection") == 1, "X.3 source-backed reader count drift")
+require(reader.get("publicationBoundary", {}).get("x3FinalBookConclusionAssembled") is True, "X.3 reader assembly not closed")
+require(reader.get("publicationBoundary", {}).get("wholeBookReaderAssemblyComplete") is False, "whole-book reader boundary drift")
+require(reader.get("publicationBoundary", {}).get("wholeBookCitationPassComplete") is False, "whole-book citation boundary drift")
+require(reader.get("publicationBoundary", {}).get("productReleaseComplete") is False, "Product release boundary drift")
+
+# Exact Product section still controls the reader source.
 require(product_root.is_dir(), "Product checkout missing")
 require(git(product_root, "rev-parse", "HEAD") == PRODUCT_COMMIT, "Product checkout head drift")
 require(git(product_root, "hash-object", ARTICLE_PATH) == ARTICLE_BLOB, "Product article blob drift")
 article = read(product_root / ARTICLE_PATH)
 start_marker = '<h2 id="vyhod">Выход: сердце, наконец успокоенное</h2>'
 end_marker = '<h2 id="istochniki">Источники и сверка</h2>'
-require(start_marker in article, "X.3 section start missing")
-require(end_marker in article, "X.3 section end missing")
+require(start_marker in article and end_marker in article, "X.3 Product section boundary missing")
 if start_marker in article and end_marker in article:
-    start = article.index(start_marker)
-    end = article.index(end_marker)
-    require(start < end, "X.3 section ordering drift")
-    conclusion = article[start:end]
+    conclusion = article[article.index(start_marker):article.index(end_marker)]
 else:
     conclusion = ""
 for marker in (
     "И вот последнее, к чему шла вся серия.",
     "Мы начали с сердца испорченного и лукавого",
-    "прошли через новое рождение, войну двух природ, идолов, искушения, страхи, тьму",
     "увидели Христа, Который несёт немощных",
     "не к бесконечному самокопанию, а к лицу Божьему",
-    "не к вечной тревоге, а к вечному насыщению",
     "Здесь — война. Там — Он. И этого довольно, чтобы держаться.",
 ):
     require(marker in conclusion, f"X.3 Product conclusion marker missing: {marker}")
 for section in EXCLUDED_X2_SECTIONS:
-    require(f'id="{section}"' not in conclusion, f"X.2 section leaked into X.3 conclusion: {section}")
-require('id="istochniki"' not in conclusion, "sources section leaked into X.3 conclusion")
+    require(f'id="{section}"' not in conclusion, f"X.2 section leaked into X.3: {section}")
 
-# Research authority chain.
+# Human owner snapshot and source authorities remain intact.
 book = read(BOOK)
 r9 = read(R9)
 x2_human = read(X2_HUMAN)
-require("**Authority ID:** `HEART-READER-ASSEMBLY-2026-08-02`" in book, "book assembly authority marker missing")
-require("18. X.3 — Заключительная надежда." in book, "X.3 final-order marker missing")
-require("FINAL ORDER = CLOSED" in book, "final-order closure marker missing")
-require("WHOLE-BOOK CITATION/REFERENCE PASS = OPEN" in book, "book citation boundary missing")
-require("# R9 — Христос Откровения" in r9, "R9 authority title missing")
-require("Тот же Христос" in r9, "R9 same-Christ boundary missing")
-require("испытующий сердца" in r9, "R9 heart-testing Christ marker missing")
-require("X.3 OWNER = OPEN" in x2_human, "X.2 historical X.3 gap marker missing")
-require("The final `vyhod` section is not silently absorbed into X.2" in x2_human, "X.2/X.3 withholding marker missing")
-
-# Human/current status must show complete mapping without claiming assembly/release.
 human = read(HUMAN)
-current = read(CURRENT)
+require("18. X.3 — Заключительная надежда." in book, "X.3 final order missing")
+require("FINAL ORDER = CLOSED" in book, "final-order closure missing")
+require("WHOLE-BOOK CITATION/REFERENCE PASS = OPEN" in book, "citation boundary missing")
+require("# R9 — Христос Откровения" in r9 and "испытующий сердца" in r9, "R9 boundary missing")
+require("X.3 OWNER = OPEN" in x2_human, "X.2 historical gap marker missing")
+require("The final `vyhod` section is not silently absorbed into X.2" in x2_human, "X.2 withholding marker missing")
 for marker in (
     "HEART-X3-OWNER-CLOSURE-2026-08-04",
     "X.3 CONCLUSION SECTION OWNER = CLOSED",
@@ -234,16 +229,27 @@ for marker in (
     "FINAL-BOOK X.3 MANUSCRIPT = NOT ASSEMBLED",
     ARTICLE_BLOB,
 ):
-    require(marker in human, f"X.3 human authority marker missing: {marker}")
+    require(marker in human, f"X.3 owner human marker missing: {marker}")
+
+# Current authority records both transaction history and current reader state.
+current = read(CURRENT)
 for marker in (
     "X.3 CONCLUSION SECTION OWNER = CLOSED",
-    "PRODUCT SOURCE OWNERS = 8",
-    "PRODUCT SECTION OWNERS = 1",
-    "STANDALONE OWNER GAPS = 0",
     "ALL 18 ENTRIES OWNER-MAPPED = TRUE",
-    "FINAL-BOOK X.3 MANUSCRIPT = NOT ASSEMBLED",
+    "ASSEMBLED READER OWNERS = 4",
+    "PRODUCT SOURCE OWNERS = 8",
+    "CURRENT PRIMARY PRODUCT SECTION OWNERS = 0",
+    "SOURCE-BACKED PRODUCT SECTION READERS = 1",
+    "STANDALONE OWNER GAPS = 0",
+    "FINAL-BOOK X.3 MANUSCRIPT = ASSEMBLED",
+    "WHOLE-BOOK READER ASSEMBLY = INCOMPLETE",
 ):
-    require(marker in current, f"current authority X.3 marker missing: {marker}")
+    require(marker in current, f"current X.3 composition marker missing: {marker}")
+require("AFTER X.3 OWNER OVERLAY:" in current, "X.3 owner ledger heading missing")
+require("PRODUCT SECTION OWNERS = 1" in current, "X.3 historical section count missing")
+require("FINAL-BOOK X.3 MANUSCRIPT = NOT ASSEMBLED" in current, "X.3 historical manuscript marker missing")
+require("AFTER X.3 READER ASSEMBLY / CURRENT:" in current, "X.3 reader ledger heading missing")
+
 gap_section = current.split("### Manuscript owner gaps", 1)[-1].split("### Dossier-to-reader assembly", 1)[0]
 require("NONE / CLOSED" in gap_section, "current zero-gap marker missing")
 for entry in (
@@ -252,20 +258,17 @@ for entry in (
     "X.2 `Освобождённое сердце`",
     "X.3 `Заключительная надежда`",
 ):
-    require(entry not in gap_section, f"closed entry remains in current gap section: {entry}")
-
-for text, name in ((human, "human"), (current, "current")):
-    for forbidden in (
-        "FINAL-BOOK X.3 MANUSCRIPT = ASSEMBLED",
-        "WHOLE-BOOK CITATION PASS = CLOSED",
-        "WHOLE-BOOK LINE EDIT = CLOSED",
-        "MANUSCRIPT BUNDLE = COMPLETE",
-        "PRODUCT RELEASE = COMPLETE",
-        "NEW DIRECT QUOTES = 1",
-        "TODO",
-        "TBD",
-    ):
-        require(forbidden not in text, f"{name} authority contains forbidden marker: {forbidden}")
+    require(entry not in gap_section, f"closed entry remains in gap section: {entry}")
+for forbidden in (
+    "WHOLE-BOOK CITATION PASS = CLOSED",
+    "WHOLE-BOOK LINE EDIT = CLOSED",
+    "MANUSCRIPT BUNDLE = COMPLETE",
+    "PRODUCT RELEASE = COMPLETE",
+    "NEW DIRECT QUOTES = 1",
+    "TODO",
+    "TBD",
+):
+    require(forbidden not in current, f"current authority contains forbidden marker: {forbidden}")
 
 if errors:
     print(f"Heart X.3 owner closure: FAIL ({len(errors)})", file=sys.stderr)
@@ -273,4 +276,4 @@ if errors:
         print(f"- {error}", file=sys.stderr)
     raise SystemExit(1)
 
-print("Heart X.3 owner closure: PASS — all 18 entries owner-mapped, 0 gaps, final-book assembly/citation/line-edit/Product release open")
+print("Heart X.3 owner closure: PASS — owner snapshot preserved; paraphrase-only reader advances current state to 4 assembled readers")

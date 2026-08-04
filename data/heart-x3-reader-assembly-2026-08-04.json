@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-X3-READER-ASSEMBLY-2026-08-04",
+  "status": "X3_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_WHOLE_BOOK_QA_OPEN",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "ownerAuthorityId": "HEART-X3-OWNER-CLOSURE-2026-08-04",
+  "ownerAuthority": "data/heart-x3-owner-closure-2026-08-04.json",
+  "researchSnapshot": "18d25e0173fada290e30ecbd1b8cd7f0dc6d9c23",
+  "reader": {
+    "id": "HEART-READER-X3-CONCLUDING-HOPE-2026-08-04",
+    "bookEntryId": "HEART-BOOK-X3",
+    "bookLabel": "X.3 Заключительная надежда",
+    "path": "СЕРИЯ СЕРДЦЕ/88_READER_CHAPTER_X3_CONCLUDING_HOPE_2026-08-04.md",
+    "state": "ASSEMBLED_READER_PARAPHRASE_ONLY",
+    "sections": [
+      "Последнее движение книги",
+      "Не самокопание, а лицо Божье",
+      "Здесь война, там Христос",
+      "Надежда, которая сохраняет границы",
+      "Заключение"
+    ]
+  },
+  "exactSource": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "path": "src/content/articles/osvobozhdennoe-serdce.mdx",
+    "blobSha": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f",
+    "sectionId": "vyhod",
+    "sectionTitle": "Выход: сердце, наконец успокоенное",
+    "sectionEndId": "istochniki"
+  },
+  "composition": {
+    "mode": "PARAPHRASE_ONLY",
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "exactProductProseQuotesCopied": 0,
+    "x2OwnedSectionsCopied": 0,
+    "sourceOwnerChanged": false,
+    "x2OwnershipChanged": false,
+    "wholeBookOrderChanged": false
+  },
+  "requiredBoundaries": [
+    "the conclusion must recap the whole journey rather than open a new doctrinal argument",
+    "the conclusion must turn from endless introspection to the face of God and Christ-centered hope",
+    "X.2 retains the detailed glorification, bodily redemption, incorruption and non posse peccare exposition",
+    "R9 source-status cautions remain controlling",
+    "existing Product Scripture quotations are not copied as new direct quotations into the Research reader",
+    "whole-book citation, transitions, line edit, manuscript bundle and Product release remain open"
+  ],
+  "effectivePrimaryState": {
+    "entryId": "HEART-BOOK-X3",
+    "previous": "PRODUCT_SECTION_ONLY",
+    "current": "ASSEMBLED_READER",
+    "sourceBackedByProductSection": true
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 4,
+    "productSourceOnly": 8,
+    "productSectionOnly": 0,
+    "researchDossierOnly": 6,
+    "ownerRequired": 0,
+    "sourceBackedByProductSection": 1,
+    "uniqueProductPagesMapped": 9,
+    "newDirectQuotesApproved": 0
+  },
+  "remainingReaderAssemblies": [
+    "HEART-BOOK-I4",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX",
+    "HEART-BOOK-X2"
+  ],
+  "publicationBoundary": {
+    "allEighteenEntriesOwnerMapped": true,
+    "x3FinalBookConclusionAssembled": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Perform one read-only citation/reference inventory across all eighteen entries, then assemble the remaining nine reader manuscripts without changing source ownership or approving new direct quotations by implication."
+}
