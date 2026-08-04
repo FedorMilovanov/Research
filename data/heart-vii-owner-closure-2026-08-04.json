@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-VII-OWNER-CLOSURE-2026-08-04",
+  "status": "VII_PRODUCT_SOURCE_CLUSTER_ESTABLISHED_UNIFIED_READER_AND_BOOK_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "baseAuthorityId": "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04",
+  "baseAuthority": "data/heart-whole-book-integration-2026-08-04.json",
+  "researchSnapshot": "3000ce2b90a61cfc0fc0a24c2292ab5bf931ffb7",
+  "productSnapshot": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "coreRegistry": {
+      "path": "src/components/article-pilots/_shared/heartSeriesData.ts",
+      "blobSha": "553adbd67a459fa9e022f00b924e8c20201bf400"
+    },
+    "satelliteRegistry": {
+      "path": "src/components/article-pilots/_shared/series/hardTextsSeriesConfig.ts",
+      "blobSha": "152c90b2dcee67d1683289445d0d2239905ed41c"
+    }
+  },
+  "entryOverride": {
+    "id": "HEART-BOOK-VII",
+    "bookLabel": "VII Сердце в страдании и унынии",
+    "previousPrimaryState": "OWNER_REQUIRED",
+    "effectivePrimaryState": "PRODUCT_SOURCE_ONLY",
+    "primaryProductOwner": {
+      "id": "tma",
+      "slug": "tma-na-serdce",
+      "minutes": 34,
+      "role": "depression-darkness-body-soul-guilt-safety primary source"
+    },
+    "supportingProductOwners": [
+      {
+        "id": "skorb",
+        "slug": "serdce-pod-skorbyu",
+        "minutes": 28,
+        "role": "suffering-providence-lament companion source"
+      }
+    ],
+    "researchOwners": [
+      "СЕРИЯ СЕРДЦЕ/65_V84B_DEPRESSION_THEOLOGICAL_PRIMACY_AND_AXIS_CORRECTION.md",
+      "СЕРИЯ СЕРДЦЕ/67_V84D_SOURCE_LOCATOR_AND_EVIDENCE_STATUS_CLOSURE.md",
+      "СЕРИЯ СЕРДЦЕ/72_V84I_POST_MERGE_TOTAL_AUDIT_AND_CLOSURE_GATES.md"
+    ],
+    "effectiveCitationState": "PRODUCT_SOURCE_CITATION_PASS_REQUIRED",
+    "manuscriptState": "SOURCE_CLUSTER_SELECTED_UNIFIED_READER_NOT_ASSEMBLED",
+    "dedupOwner": "VII owns suffering, depressive darkness, embodied weakness, real and false guilt, lament, safety and competence boundaries; it must not classify suffering as personal sin by default or duplicate III.3 repentance and forgiveness distinctions.",
+    "supportBoundary": {
+      "supports": [
+        "a current Product source cluster exists for suffering and depressive darkness",
+        "the material text base is complete for the present publication stage",
+        "theological, body-soul, source-locator and safety boundaries are governed by V84B, V84D and V84I"
+      ],
+      "doesNotSupport": [
+        "a unified chapter VII reader manuscript is assembled",
+        "the whole-book citation pass is complete",
+        "new direct quotations are approved",
+        "the final eighteen-entry book is released in Product"
+      ]
+    }
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 3,
+    "productSourceOnly": 6,
+    "researchDossierOnly": 6,
+    "ownerRequired": 3,
+    "currentProductCoreItems": 6,
+    "bookMatchedProductCoreItems": 5,
+    "selectedProductSatelliteItems": 2,
+    "newDirectQuotesApproved": 0
+  },
+  "remainingOwnerGaps": [
+    "HEART-BOOK-I4",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "publicationBoundary": {
+    "viiSourceOwnerClusterClosed": true,
+    "viiUnifiedReaderAssembled": false,
+    "wholeBookLineEditComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "supersessionRule": "For HEART-BOOK-VII current owner state and effective integration counts, this overlay supersedes the corresponding baseline fields in HEART-WHOLE-BOOK-INTEGRATION-2026-08-04. All other baseline entries, dedup owners and negative boundaries remain unchanged."
+}
