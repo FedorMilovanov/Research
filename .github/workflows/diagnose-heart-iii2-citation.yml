@@ -1,0 +1,60 @@
+name: Diagnose Heart III.2 citation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/diagnose-heart-iii2-citation.yml'
+      - 'scripts/diagnose_heart_iii2_citation.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: diagnose-heart-iii2-citation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Checkout Research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          path: Research
+          persist-credentials: false
+
+      - name: Checkout exact Product snapshot
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: FedorMilovanov/gb-is-my-strength
+          ref: 0fbe7d1ead9ebd1bea867418e254da438ec63329
+          path: Product
+          persist-credentials: false
+
+      - name: Compile diagnostic without writing bytecode
+        working-directory: Research
+        run: python3 -c 'from pathlib import Path; p=Path("scripts/diagnose_heart_iii2_citation.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
+
+      - name: Build exact III.2 citation diagnostic
+        working-directory: Research
+        run: python3 scripts/diagnose_heart_iii2_citation.py --product-root ../Product
+
+      - name: Upload exact diagnostic
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: heart-iii2-citation-diagnostic
+          path: Research/iii2-citation-diagnostic.json
+          if-no-files-found: error
+          retention-days: 2
+
+      - name: Ensure source checkouts remain read-only
+        run: |
+          rm Research/iii2-citation-diagnostic.json
+          git -C Research diff --exit-code
+          test -z "$(git -C Research status --porcelain)"
+          git -C Product diff --exit-code
+          test -z "$(git -C Product status --porcelain)"
