@@ -202,7 +202,7 @@ for marker in (
     '  - "прославление"',
     '  - "воскресение"',
     'состояние славы, где сердце окончательно освобождается от греха',
-    'не бесплотное парение и не нематериальное',
+    'Надежда эта — не бесплотное парение на облаках',
     'сделана совершенно и неизменно свободной только к добру',
     'И ничего уже не будет проклятого',
 ):
@@ -216,9 +216,9 @@ x1_reader = read(X1_READER)
 require("EVIDENCE CLOSED / BOUNDARIES CLOSED / CHAPTER-READY" in x1_dossier, "X.1 dossier authority marker missing")
 require("тело и преображение" in x1_dossier, "X.1 bodily-transformation boundary missing")
 require("ясные тексты и система тысячелетия" in x1_dossier, "X.1 millennial-system boundary missing")
-require("Reader assembly authority: `HEART-READER-ASSEMBLY-2026-08-02`" in x1_reader, "X.1 reader authority marker missing")
+require("**Reader assembly authority:** `HEART-READER-ASSEMBLY-2026-08-02`" in x1_reader, "X.1 reader authority marker missing")
 require("Бог спасает целого человека и поднимет тело" in x1_reader, "X.1 whole-person resurrection marker missing")
-require("Тело получит качества нетления, славы и силы" in x1_reader, "X.1 glorified-body marker missing")
+require("тело получит качества нетления, славы и силы" in x1_reader, "X.1 glorified-body marker missing")
 
 human = read(HUMAN)
 for marker in (
