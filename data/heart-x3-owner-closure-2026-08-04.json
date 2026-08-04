@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-X3-OWNER-CLOSURE-2026-08-04",
+  "status": "X3_PRODUCT_SECTION_OWNER_ESTABLISHED_BOOK_INTEGRATION_AND_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "baseAuthorityId": "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04",
+  "baseAuthority": "data/heart-whole-book-integration-2026-08-04.json",
+  "dependsOnOverlays": [
+    "data/heart-vii-owner-closure-2026-08-04.json",
+    "data/heart-i4-owner-closure-2026-08-04.json",
+    "data/heart-x2-owner-closure-2026-08-04.json"
+  ],
+  "researchSnapshot": "54cd176d4a01158c575c3f404a62804f92dd4a12",
+  "productSnapshot": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "satelliteRegistry": {
+      "path": "src/components/article-pilots/_shared/series/hardTextsSeriesConfig.ts",
+      "blobSha": "152c90b2dcee67d1683289445d0d2239905ed41c"
+    },
+    "articleOwner": {
+      "path": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "blobSha": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f"
+    }
+  },
+  "entryOverride": {
+    "id": "HEART-BOOK-X3",
+    "bookLabel": "X.3 Заключительная надежда",
+    "previousPrimaryState": "OWNER_REQUIRED",
+    "effectivePrimaryState": "PRODUCT_SOURCE_ONLY",
+    "sharedProductSourceWith": "HEART-BOOK-X2",
+    "primarySectionOwner": {
+      "productId": "osvobozhdennoe",
+      "slug": "osvobozhdennoe-serdce",
+      "minutes": 27,
+      "sourcePath": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "sourceBlobSha": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f",
+      "sectionId": "vyhod",
+      "sectionHeading": "Выход: сердце, наконец успокоенное",
+      "role": "book-level conclusion from the whole journey of the heart to final Christ-centred hope"
+    },
+    "researchOwners": [
+      "СЕРИЯ СЕРДЦЕ/71_R9_CHRIST_OF_REVELATION.md",
+      "СЕРИЯ СЕРДЦЕ/82_BOOK_ASSEMBLY_DECISIONS_2026-08-02.md",
+      "СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md"
+    ],
+    "effectiveCitationState": "PRODUCT_SECTION_CITATION_PASS_REQUIRED",
+    "manuscriptState": "CONCLUSION_SECTION_SELECTED_BOOK_INTEGRATION_NOT_COMPLETE",
+    "dedupOwner": "X.3 owns the book-level concluding movement: it recalls the full journey from corruption through new birth, conflict, temptation, fear, darkness and Christ's care, then turns the reader from endless self-analysis to the face of God, final satisfaction and perseverance in hope. It does not re-prove X.2 glorification, re-open X.1 judgment sequencing or introduce a new R10 research dossier.",
+    "supportBoundary": {
+      "supports": [
+        "an exact Product conclusion section already summarizes the whole Heart series and ends in Christ-centred hope",
+        "the section is locatable independently from the five X.2 doctrinal sections",
+        "R9 keeps the concluding hope centred on the risen Christ rather than an abstract eschatological state",
+        "book assembly authority keeps X.3 as the final entry and forbids reopening a new R10 dossier"
+      ],
+      "doesNotSupport": [
+        "the whole eighteen-entry manuscript has been assembled into one book file",
+        "the conclusion may add new historical or lexical claims without registered evidence",
+        "X.3 owns X.2's detailed doctrine of glorification or X.1's judicial sequence",
+        "the whole-book citation pass is complete",
+        "new direct quotations are approved",
+        "the final eighteen-entry book is released in Product"
+      ]
+    }
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 3,
+    "productSourceOnly": 9,
+    "researchDossierOnly": 6,
+    "ownerRequired": 0,
+    "currentProductCoreItems": 6,
+    "bookMatchedProductCoreItems": 5,
+    "selectedProductSatelliteItems": 4,
+    "uniqueProductPagesMapped": 9,
+    "newDirectQuotesApproved": 0
+  },
+  "remainingOwnerGaps": [],
+  "publicationBoundary": {
+    "allEighteenEntriesHaveOwners": true,
+    "x3ConclusionSectionOwnerClosed": true,
+    "x3BookIntegrationComplete": false,
+    "wholeBookLineEditComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "supersessionRule": "For HEART-BOOK-X3 current owner state and aggregate effective counts after the VII, I.4 and X.2 overlays, this overlay supersedes the corresponding baseline fields. The shared Product article is partitioned by section: X.2 owns the glorification argument, while X.3 owns only the vyhod conclusion. All evidence, citation and publication boundaries remain unchanged."
+}
