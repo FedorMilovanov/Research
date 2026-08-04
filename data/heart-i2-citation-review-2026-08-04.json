@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-I2-CITATION-REVIEW-2026-08-04",
+  "status": "I2_ENTRY_CITATION_PASS_COMPLETE_WHOLE_BOOK_OPEN",
+  "reviewedAt": "2026-08-04",
+  "entry": {
+    "order": 2,
+    "id": "HEART-BOOK-I2",
+    "label": "I.2 Сердце в Эдеме",
+    "inventoryEntrySha256": "fbe1a99962021e156484f25535d925ac70aeec65467d502bd14334cc4e6a8199",
+    "triageStateBefore": "TRIAGED_OPEN",
+    "stateAfter": "ENTRY_CITATION_PASS_COMPLETE"
+  },
+  "immutableSources": {
+    "reader": {
+      "path": "СЕРИЯ СЕРДЦЕ/79_READER_CHAPTER_I2_HEART_IN_EDEN_2026-08-02.md",
+      "gitBlob": "204545a59477d92839245800f56791466bf45349",
+      "authority": "HEART-READER-ASSEMBLY-2026-08-02",
+      "newDirectQuotesDeclared": 0
+    },
+    "evidenceDossier": {
+      "path": "СЕРИЯ СЕРДЦЕ/75_P0_EDEN_HEART_CREATED_AND_FALLEN_2026-08-02.md",
+      "gitBlob": "15f5e7fb3b152cf7a6a1470c1cea86e720be933b",
+      "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02",
+      "claimIds": ["EDEN-01", "EDEN-02", "EDEN-03", "EDEN-04", "EDEN-05", "EDEN-06", "EDEN-07", "EDEN-08"],
+      "directQuotesApproved": 0
+    },
+    "evidenceRegistry": {
+      "path": "data/heart-p0-architecture-dossiers-2026-08-02.json",
+      "gitBlob": "71c26fed5de96cead1e2f8dcdedbfefc05f3e628",
+      "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02"
+    }
+  },
+  "scriptureReview": {
+    "readerDetectedReferences": 2,
+    "dossierDetectedReferences": 23,
+    "aggregateUniqueReferences": 23,
+    "classification": "REFERENCE_LOCATORS_AND_CANONICAL_PARAPHRASE_NO_VERBATIM_TRANSLATION",
+    "translationVersionIdentifierRequired": false,
+    "reasonVersionNotRequired": "Neither the reader nor the dossier reproduces a verbatim Bible-translation passage as an approved direct quotation. Detected references function as canonical locators or prose navigation.",
+    "claimLocatorCoverage": "8 / 8",
+    "governingSourceRecords": 8,
+    "governingSourceRecordsWithUrlAndLocator": 8,
+    "reviewComplete": true
+  },
+  "quotationReview": {
+    "aggregateQuotationSurfaces": 24,
+    "reader": {
+      "markdownBlockquotes": 0,
+      "inlineQuotationSegments": 7,
+      "historicalOrSourceDirectQuotes": 0,
+      "segments": [
+        {"text": "сердце — это разум, чувства и воля", "class": "REJECTED_TECHNICAL_DEFINITION_EXAMPLE"},
+        {"text": "сердце в Эдеме", "class": "CHAPTER_TERM"},
+        {"text": "Выбери смерть", "class": "HYPOTHETICAL_RHETORICAL_SPEECH"},
+        {"text": "Бог скрывает от тебя настоящее добро. Ты должен сам определить, что тебе нужно", "class": "HYPOTHETICAL_RHETORICAL_SPEECH"},
+        {"text": "не оправдывайся", "class": "PASTORAL_SHORTHAND_UNDER_RESTRICTION"},
+        {"text": "Как обнаружить внутри себя неповреждённого человека?", "class": "RHETORICAL_QUESTION"},
+        {"text": "Как Дух обновляет меня по образу Христа?", "class": "RHETORICAL_QUESTION"}
+      ]
+    },
+    "evidenceDossier": {
+      "markdownBlockquotes": 4,
+      "inlineQuotationSegments": 13,
+      "historicalOrSourceDirectQuotes": 0,
+      "classification": "AUTHORIAL_EVIDENCE_FORMULAS_TERMS_AND_PROHIBITED_FORMULATION_EXAMPLES",
+      "approvedDirectQuoteTransferToReader": 0
+    },
+    "reviewComplete": true
+  },
+  "claimGovernance": {
+    "claimsReviewed": 8,
+    "claimsClosedOrBoundaryClosed": 8,
+    "claimsWithSupportIds": 8,
+    "claimsWithLocators": 8,
+    "claimsWithPublicationBoundary": 8,
+    "requiredSourceIds": ["HP0-S01", "HP0-S02", "HP0-S03", "HP0-S04", "HP0-S05", "HP0-S06", "HP0-S10", "HP0-S11"],
+    "requiredSourcesPresent": 8,
+    "requiredSourcesWithUrl": 8,
+    "requiredSourcesWithLocator": 8,
+    "reviewComplete": true
+  },
+  "disposition": {
+    "scriptureNormalizationBlockerResolved": true,
+    "quotationClassificationBlockerResolved": true,
+    "externalLinkBlockerApplicable": false,
+    "sourceHeadingOrBibliographyOwnerBlockerApplicable": false,
+    "readerAssemblyBlockerApplicable": false,
+    "remainingEntryBlockers": [],
+    "readerManuscriptChanged": false,
+    "evidenceDossierChanged": false,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "entryCitationPassComplete": true
+  },
+  "wholeBookBoundary": {
+    "entryCitationPassComplete": "1 / 18",
+    "entryCitationPassOpen": "17 / 18",
+    "wholeBookCitationPassComplete": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false
+  },
+  "nextTransaction": "Review the next assembled reader, III.3, under the same fail-closed distinction between reader-facing text and support-dossier quotation surfaces."
+}
