@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-I4-OWNER-CLOSURE-2026-08-04",
+  "status": "I4_PRODUCT_SOURCE_CLUSTER_ESTABLISHED_UNIFIED_READER_AND_BOOK_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "baseAuthorityId": "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04",
+  "baseAuthority": "data/heart-whole-book-integration-2026-08-04.json",
+  "dependsOnOverlays": [
+    "data/heart-vii-owner-closure-2026-08-04.json"
+  ],
+  "researchSnapshot": "6f73c5f0e32565e5df668f840a4eb513fdd50f83",
+  "productSnapshot": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "coreRegistry": {
+      "path": "src/components/article-pilots/_shared/heartSeriesData.ts",
+      "blobSha": "553adbd67a459fa9e022f00b924e8c20201bf400"
+    },
+    "satelliteRegistry": {
+      "path": "src/components/article-pilots/_shared/series/hardTextsSeriesConfig.ts",
+      "blobSha": "152c90b2dcee67d1683289445d0d2239905ed41c"
+    }
+  },
+  "entryOverride": {
+    "id": "HEART-BOOK-I4",
+    "bookLabel": "I.4 Внутренний человек и телесная жизнь",
+    "previousPrimaryState": "OWNER_REQUIRED",
+    "effectivePrimaryState": "PRODUCT_SOURCE_ONLY",
+    "primaryProductOwner": {
+      "id": "telo",
+      "slug": "serdce-i-telo",
+      "minutes": 23,
+      "role": "heart-body-members-habits-appetites primary source"
+    },
+    "supportingProductOwners": [
+      {
+        "id": "prolog",
+        "slug": "chto-bibliya-nazyvaet-serdcem",
+        "minutes": 39,
+        "role": "whole-person biblical-heart definition support"
+      }
+    ],
+    "researchOwners": [
+      "СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md",
+      "СЕРИЯ СЕРДЦЕ/61_V82_PSYCHOTROPIC_MEDICATION_BODY_SOUL_BIBLICAL_COUNSELING.md"
+    ],
+    "effectiveCitationState": "PRODUCT_SOURCE_CITATION_PASS_REQUIRED",
+    "manuscriptState": "SOURCE_CLUSTER_SELECTED_UNIFIED_READER_NOT_ASSEMBLED",
+    "dedupOwner": "I.4 owns the embodied inner person, bodily influence, members and learned pathways without reducing the heart to biology or treating bodily conditions as morally irrelevant; it must not duplicate I.1's complete heart definition or VII's depression and safety chapter.",
+    "supportBoundary": {
+      "supports": [
+        "a current Product source cluster exists for heart, body, members, habits and bodily influence",
+        "V81 supplies bounded inner-person, habit and embodied-practice research",
+        "V82 supplies the whole-person body-soul and medical-competence boundary"
+      ],
+      "doesNotSupport": [
+        "a unified chapter I.4 reader manuscript is assembled",
+        "the whole-book citation pass is complete",
+        "historical medical claims from Adams are current clinical guidance",
+        "new direct quotations are approved",
+        "the final eighteen-entry book is released in Product"
+      ]
+    }
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 3,
+    "productSourceOnly": 7,
+    "researchDossierOnly": 6,
+    "ownerRequired": 2,
+    "currentProductCoreItems": 6,
+    "bookMatchedProductCoreItems": 5,
+    "selectedProductSatelliteItems": 3,
+    "newDirectQuotesApproved": 0
+  },
+  "remainingOwnerGaps": [
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "publicationBoundary": {
+    "i4SourceOwnerClusterClosed": true,
+    "i4UnifiedReaderAssembled": false,
+    "wholeBookLineEditComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "supersessionRule": "For HEART-BOOK-I4 current owner state and aggregate effective counts after the VII overlay, this overlay supersedes the corresponding baseline fields. The VII overlay and all other baseline entries, dedup owners and negative boundaries remain unchanged."
+}
