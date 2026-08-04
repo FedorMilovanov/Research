@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-III3-CITATION-REVIEW-2026-08-04",
+  "status": "III3_ENTRY_CITATION_PASS_COMPLETE_WHOLE_BOOK_OPEN",
+  "reviewedAt": "2026-08-04",
+  "entry": {
+    "order": 8,
+    "id": "HEART-BOOK-III3",
+    "label": "III.3 Сокрушённое сердце: покаяние",
+    "inventoryEntrySha256": "91ccbce5aa0bf8a22c75af4ab984b09dd8928623666eaef30ded88cbb1fe4c73",
+    "triageStateBefore": "TRIAGED_OPEN",
+    "stateAfter": "ENTRY_CITATION_PASS_COMPLETE"
+  },
+  "immutableSources": {
+    "reader": {
+      "path": "СЕРИЯ СЕРДЦЕ/80_READER_CHAPTER_III3_BROKEN_HEART_REPENTANCE_2026-08-02.md",
+      "gitBlob": "f7a8fe5032ceeb26d9acc4fd6f248ba5f92de29d",
+      "authority": "HEART-READER-ASSEMBLY-2026-08-02",
+      "newDirectQuotesDeclared": 0
+    },
+    "evidenceDossier": {
+      "path": "СЕРИЯ СЕРДЦЕ/76_P0_BROKEN_HEART_REPENTANCE_2026-08-02.md",
+      "gitBlob": "d54e86796a38f34a656829011ed17948cf6edb8f",
+      "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02",
+      "claimIds": ["REP-01", "REP-02", "REP-03", "REP-04", "REP-05", "REP-06", "REP-07", "REP-08"],
+      "directQuotesApproved": 0
+    },
+    "evidenceRegistry": {
+      "path": "data/heart-p0-architecture-dossiers-2026-08-02.json",
+      "gitBlob": "71c26fed5de96cead1e2f8dcdedbfefc05f3e628",
+      "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02"
+    }
+  },
+  "scriptureReview": {
+    "readerDetectedReferences": 1,
+    "dossierDetectedReferences": 20,
+    "aggregateUniqueReferences": 20,
+    "classification": "REFERENCE_LOCATORS_CANONICAL_PARAPHRASE_AND_EXEGETICAL_NAVIGATION_NO_VERBATIM_TRANSLATION",
+    "translationVersionIdentifierRequired": false,
+    "reasonVersionNotRequired": "The reader and dossier govern Scripture through canonical locators and paraphrase. Neither document approves a verbatim Bible-translation excerpt as a direct quotation.",
+    "governingClaimGroupSelection": "EXACT_DOSSIER_CLAIM_RANGE_AND_P0_DOSSIER_ID",
+    "allGoverningClaimsHaveSupport": true,
+    "allGoverningClaimsHaveLocators": true,
+    "allGoverningClaimsHavePublicationBoundary": true,
+    "allUsedSourcesHaveUrlAndLocator": true,
+    "reviewComplete": true
+  },
+  "quotationReview": {
+    "aggregateQuotationSurfaces": 42,
+    "reader": {
+      "inlineQuotationSegments": 16,
+      "markdownBlockquotes": 2,
+      "historicalOrSourceDirectQuotes": 0
+    },
+    "evidenceDossier": {
+      "inlineQuotationSegments": 19,
+      "markdownBlockquotes": 5,
+      "historicalOrSourceDirectQuotesApproved": 0
+    },
+    "classification": "AUTHORIAL_FORMULAS_CANONICAL_PARAPHRASE_TECHNICAL_TERMS_RHETORICAL_AND_PROHIBITED_FORMULATION_SURFACES",
+    "approvedDirectQuoteTransferToReader": 0,
+    "externalAttributionLinks": 0,
+    "reviewComplete": true
+  },
+  "claimGovernance": {
+    "governingDossierId": "HEART-P0-REPENTANCE",
+    "claimIds": ["REP-01", "REP-02", "REP-03", "REP-04", "REP-05", "REP-06", "REP-07", "REP-08"],
+    "claimsReviewed": 8,
+    "requiredSourceIds": ["HP0-S01", "HP0-S03", "HP0-S04", "HP0-S07", "HP0-S12", "HP0-S14", "HP0-S15"],
+    "requiredSourcesPresent": 7,
+    "selectionMethod": "Require the immutable dossier claim-range marker REP-01…REP-08, then select exactly those eight P0 claims under HEART-P0-REPENTANCE.",
+    "allSelectedClaimsClosedOrBoundaryClosed": true,
+    "allSelectedClaimsHaveSupportIds": true,
+    "allSelectedClaimsHaveLocators": true,
+    "allSelectedClaimsHavePublicationBoundary": true,
+    "allRequiredSourcesPresent": true,
+    "allRequiredSourcesHaveUrl": true,
+    "allRequiredSourcesHaveLocator": true,
+    "reviewComplete": true
+  },
+  "disposition": {
+    "scriptureNormalizationBlockerResolved": true,
+    "quotationClassificationBlockerResolved": true,
+    "externalLinkBlockerApplicable": false,
+    "sourceHeadingOrBibliographyOwnerBlockerApplicable": false,
+    "readerAssemblyBlockerApplicable": false,
+    "remainingEntryBlockers": [],
+    "readerManuscriptChanged": false,
+    "evidenceDossierChanged": false,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "entryCitationPassComplete": true
+  },
+  "wholeBookBoundary": {
+    "entryCitationPassComplete": "2 / 18",
+    "entryCitationPassOpen": "16 / 18",
+    "assembledReaderCitationReviewsComplete": "2 / 4",
+    "wholeBookCitationPassComplete": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false
+  },
+  "nextTransaction": "Review the next assembled reader, X.1, using its exact judgment/two-resurrections reader, P0 dossier and governing source group."
+}
