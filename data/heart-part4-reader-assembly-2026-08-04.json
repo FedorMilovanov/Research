@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-PART4-READER-ASSEMBLY-2026-08-04",
+  "status": "PART4_STANDALONE_READER_ASSEMBLED_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "exactBase": {
+    "researchCommit": "cb33e3037d5cf8442e28e6081c0cf5c5b7336689",
+    "currentV9": {
+      "path": "data/heart-entry-citation-pass-current-v9-2026-08-04.json",
+      "gitBlob": "d8a65b5233a471e024f5642e1dc3d1a50f13babf",
+      "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V9-2026-08-04"
+    },
+    "integration": {
+      "path": "data/heart-whole-book-integration-2026-08-04.json",
+      "gitBlob": "06d67275c42c7a9c3bd0365044f358b4b7d7a895"
+    },
+    "historicalTriage": {
+      "path": "data/heart-entry-citation-dispositions-2026-08-04.json",
+      "gitBlob": "de4d49cada15b231dfc31058aced4ec7a25928a2"
+    },
+    "inventoryBuilder": {
+      "path": "scripts/build_heart_whole_book_citation_inventory.py",
+      "gitBlob": "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"
+    }
+  },
+  "entry": {
+    "order": 10,
+    "id": "HEART-BOOK-IV",
+    "label": "IV Сердце и слово Божие",
+    "previousState": "RESEARCH_DOSSIER_ONLY",
+    "currentState": "ASSEMBLED_READER_CITATION_OPEN",
+    "dedupOwner": "Owns Scripture reception, illumination and the heart; forbidden Owen and Kotzker attributions remain excluded."
+  },
+  "sourceOwner": {
+    "path": "СЕРИЯ СЕРДЦЕ/68_R7A_WORD_AND_HEART.md",
+    "gitBlob": "ceff41072982c664606bc377ef8f1f0f241677da",
+    "fullSha256": "420e5fd82739edcd77258440125fa65dd4a6c8cf36e5377e32a3c2e143285089",
+    "historicalSurface": {
+      "scriptureReferences": 65,
+      "quotationSurfaces": 225,
+      "externalLinks": 36,
+      "internalArticleLinks": 2,
+      "footnoteDefinitions": 0,
+      "sourceHeadings": 0
+    },
+    "manifestHashes": {
+      "scriptureReferenceSetSha256": "f7539fc92fd79dc29d4ba97bad1e43a173cf6d77a77006ea1a77a08059224b3a",
+      "externalLinkSetSha256": "452a0db94764d231a3f8798368c71d624c98fae30825a94e68c98b4f168b4219",
+      "internalArticleLinkSetSha256": "26f4a242663e5d878d4b09e33890abddf605a0cbcdda9c653c1e41cd6849c0d3",
+      "headingManifestSha256": "a850b5b16e4c776d6991d93e4ab08cef46ee9c72cd5c52df85539997db77d5d1",
+      "sectionSummarySha256": "2491e864a4d0eb19946dfe294b525644108448e39a96e2e49bd95aa49ffc2675"
+    },
+    "assemblyBoundary": {
+      "allHistoricalQuotationSurfacesRemainOutsideReader": true,
+      "allHistoricalLinksRemainOutsideReader": true,
+      "hebrews4VariantNotUsedAsSoleDoctrinalBasis": true,
+      "owenBurnBiblesAttributionExcluded": true,
+      "kotzkerAttributionExcluded": true,
+      "part8BeholdingGloryOwnershipRetained": true,
+      "citationAndLinkDispositionDeferred": true
+    }
+  },
+  "reader": {
+    "path": "СЕРИЯ СЕРДЦЕ/129_READER_CHAPTER_IV_HEART_AND_WORD_2026-08-04.md",
+    "gitBlob": "55eda03de3cc29e7946a705fe0fffbd2acc4e36d",
+    "fullSha256": "b3a103936c9495484a2a5478262ec4d4e47ab49f5192dd523add1deeb7d23d58",
+    "words": 1580,
+    "scriptureReferences": 18,
+    "scriptureReferenceSetSha256": "56bbb6e030f13cd370efd794cc76f19c59a70d5fb76abbabd5a8167f989f8f75",
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceHeadings": 0,
+    "longExactSentenceTransfers": 0,
+    "sourceQuotationTransfer": 0,
+    "sourceLinkTransfer": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "ownershipBoundary": {
+    "owns": [
+      "hearing and receiving Scripture by faith",
+      "the implanted Word and obedient response",
+      "biblical meditation as text-bound reception",
+      "Word-and-Spirit illumination",
+      "sanctification by truth",
+      "abiding in Christ's Word"
+    ],
+    "doesNotOwn": {
+      "HEART-BOOK-III2": "divine causation and the new-birth order",
+      "HEART-BOOK-III3": "repentance response, sorrow and restitution",
+      "HEART-BOOK-V": "the two-struggles distinction and warfare exposition",
+      "HEART-BOOK-VI": "Pharisee and disciple contrast",
+      "HEART-BOOK-VIII": "beholding and transformation by the glory of Christ"
+    }
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReaders": 13,
+    "missingStandaloneFinalReaders": 5,
+    "entryCitationPassComplete": 12,
+    "entryCitationPassOpen": 6,
+    "assembledReaderCitationReviewsComplete": 12,
+    "assembledReadersAwaitingCitationReview": 1,
+    "productSourceOnlyEntries": 2,
+    "researchDossierOnlyEntries": 3,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 46,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "publicationBoundary": {
+    "part4ReaderAssemblyComplete": true,
+    "part4EntryCitationPassComplete": false,
+    "allCurrentlyAssembledReadersReviewed": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "ENTRY_CITATION_PASS",
+    "preferredEntryId": "HEART-BOOK-IV",
+    "reason": "The Part IV reader is assembled from the exact R7a owner; its complete 65/225/36/2 historical surface must now receive a separate deterministic citation and link disposition pass."
+  }
+}
