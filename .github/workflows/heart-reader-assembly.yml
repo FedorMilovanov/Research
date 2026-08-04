@@ -76,7 +76,8 @@ jobs:
             scripts/validate_heart_entry_citation_pass_current_v3.py \
             scripts/validate_heart_i1_reader_assembly.py \
             scripts/validate_heart_i1_entry_citation_pass.py \
-            scripts/validate_heart_entry_citation_pass_current_v4.py
+            scripts/validate_heart_entry_citation_pass_current_v4.py \
+            scripts/validate_heart_i3_reader_assembly.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -176,6 +177,10 @@ jobs:
       - name: Validate current seven-entry citation composition
         working-directory: Research
         run: python3 scripts/validate_heart_entry_citation_pass_current_v4.py
+
+      - name: Validate paraphrase-only I.3 final-book reader assembly
+        working-directory: Research
+        run: python3 scripts/validate_heart_i3_reader_assembly.py --product-root ../Product
 
       - name: Ensure validators and exact Product witness are read-only
         run: |

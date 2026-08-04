@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-I3-READER-ASSEMBLY-2026-08-04",
+  "status": "I3_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "currentV4": ["data/heart-entry-citation-pass-current-v4-2026-08-04.json", "d0ddea6cf1fc33dfab53ae9691aaf2d903d03b73"],
+    "wholeBookIntegration": ["data/heart-whole-book-integration-2026-08-04.json", "06d67275c42c7a9c3bd0365044f358b4b7d7a895"],
+    "historicalTriage": ["data/heart-entry-citation-dispositions-2026-08-04.json", "de4d49cada15b231dfc31058aced4ec7a25928a2"],
+    "i1Reader": ["СЕРИЯ СЕРДЦЕ/105_READER_CHAPTER_I1_WHAT_BIBLE_CALLS_HEART_2026-08-04.md", "a5d35df1a87ab39abc8a85b1d84f1b1ab03da105"],
+    "i2Reader": ["СЕРИЯ СЕРДЦЕ/79_READER_CHAPTER_I2_HEART_IN_EDEN_2026-08-02.md", "204545a59477d92839245800f56791466bf45349"],
+    "partIiR3": ["СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md", "ae55b1fad5cccbdb623c551a14222e0f51ec084a"],
+    "partIiR4": ["СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md", "f82780e13cb064aa89c06427d11a938662fc3ff8"]
+  },
+  "entry": {"order": 3, "id": "HEART-BOOK-I3", "label": "I.3 Падшее сердце: Иеремия 17"},
+  "reader": {
+    "path": "СЕРИЯ СЕРДЦЕ/109_READER_CHAPTER_I3_FALLEN_HEART_JEREMIAH_17_2026-08-04.md",
+    "gitBlob": "a958066bff3010f14540d67c900c362bd88de98a",
+    "fullSha256": "6d00cbd44a7d3540faddcbdbc03bfff1fd1c5a441c380392010f973d76ce92f9",
+    "wordCount": 1708,
+    "scriptureReferences": 13,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "inventorySourceHeadingFalsePositives": ["Два источника доверия", "Сердце как источник самообмана"],
+    "newDirectQuotesApproved": 0
+  },
+  "exactProductSource": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "path": "src/content/articles/krajne-li-isporcheno-serdce.mdx",
+    "gitBlob": "dc27b7a06d37321a068e971c02af4a0df3028ae6",
+    "fullSha256": "4292f76ff3e2fa15dfd682b5a421400ce9a62ec391109b3109aef14d72b224f0",
+    "selectedAssemblySections": [
+      {"id":"istoricheskiy-fon","sha256":"5e08087f586959654303d48faaf60337cb6cbd464004e32a5dbad919f4fd51c7","bytes":2570,"scriptureReferences":["Иер.17:5–9"],"externalLinks":[],"internalArticleLinks":[],"inlineQuotationSegments":1,"markdownBlockquotes":0,"htmlBlockquotes":0,"quotationSurfaces":1},
+      {"id":"greh-vyrezannyy","sha256":"44045d5d8a82be7047b4b4a03ee595fa8711d1c95a18619a4b3936cf725bbe79","bytes":9393,"scriptureReferences":["Jer.17:9","Еф.5:5","Иер.17:1","Иер.17:9","Иеремия 17:1–4"],"externalLinks":["https://web.archive.org/web/2/https://www.digitalpuritan.net/Digital%20Puritan%20Resources/Clarkson,%20David/The%20Practical%20Works%20of%20David%20Clarkson%20","https://www.ccel.org/study/Jeremiah_17:9-10"],"internalArticleLinks":[],"inlineQuotationSegments":18,"markdownBlockquotes":0,"htmlBlockquotes":0,"quotationSurfaces":18},
+      {"id":"dva-obraza-doveriya","sha256":"fd946847ebf2e707cf9b3f873642cc90edd7b0d9500cf990deef770eb74d5940","bytes":2290,"scriptureReferences":["Jer.17:9","Иер.17:5,7","Иер.17:5–7","Иеремия 17:5–8"],"externalLinks":[],"internalArticleLinks":[],"inlineQuotationSegments":5,"markdownBlockquotes":1,"htmlBlockquotes":0,"quotationSurfaces":6},
+      {"id":"serdce-istochnik-samoobmana","sha256":"2c7cec50f85a31cd247517defd47822d07d3e66ea96a0465b83a7b333e32837c","bytes":12915,"scriptureReferences":["Jer.17:9","Иез.36:26","Иер.15:18,30:12","Иер.17:1–4","Иер.17:9","Иер.17:9–10","Иер.31:31–33","Иеремия 17:9–10","Притч.4:23","Пс.138:23–24","Псалом 138"],"externalLinks":["https://www.spurgeon.org/resource-library/sermons/honest-dealing-with-god/"],"internalArticleLinks":[],"inlineQuotationSegments":24,"markdownBlockquotes":3,"htmlBlockquotes":0,"quotationSurfaces":27},
+      {"id":"otnositsya-li-k-veruyushchemu","sha256":"9ab0b15aaec93ba7d53b84fd07caaccf5b53c65cec71202354b7353b92d36905","bytes":13334,"scriptureReferences":["Втор.30:6","Гал.5:17","Евр.8","Евр.8:10","Евр.8:8–12;10:16","Иез.36","Иез.36:26","Иер.17:9","Иер.24:7","Иер.31:31–34","Иер.31:33","Иер.32:39","Иеремия 17:9","Ин.3","Рим.6:14","Рим.7","Рим.7:15","Рим.7:7–25","Рим.8","Рим.8:1","Рим.8:13","Римлянам 7"],"externalLinks":["https://www.desiringgod.org/interviews/is-the-believers-heart-desperately-sick","https://www.desiringgod.org/interviews/is-the-christians-heart-deceitfully-wicked"],"internalArticleLinks":["/articles/rimlyanam-7-veruyushchiy-ili-neveruyushchiy/"],"inlineQuotationSegments":32,"markdownBlockquotes":0,"htmlBlockquotes":0,"quotationSurfaces":32},
+      {"id":"chto-izmenilos","sha256":"02b0c40cb91f3223c4db2a46838e3b30083b7caf3898a14702d9668056d054a8","bytes":25849,"scriptureReferences":["1 Ин.5:10","Rom.7:18","Гал.5:16–24","Гал.5:17","Евр.10:22","Евр.12:5–11","Евр.3:12","Еф.2:1","Зах.3:1","Иез.36:26","Иер.17:9","Иер.31:33","Ин.16:8;2","Кор.7:10","Откр.12:10","Рим.2:15","Рим.6","Рим.6:14","Рим.7:18","Рим.7:7–25","Рим.8:1","Рим.8:13","Рим.8:33–34","Флп.3:10–14"],"externalLinks":["https://ccel.org/ccel/berkhof/systematictheology.vi.x.html"],"internalArticleLinks":[],"inlineQuotationSegments":43,"markdownBlockquotes":0,"htmlBlockquotes":0,"quotationSurfaces":43},
+      {"id":"kak-greh-stanovitsya-strukturoy","sha256":"292af770c061ec788a947320bba1fbfffdb6fda537966913574791c6b5ce497d","bytes":4044,"scriptureReferences":[],"externalLinks":[],"internalArticleLinks":[],"inlineQuotationSegments":12,"markdownBlockquotes":1,"htmlBlockquotes":0,"quotationSurfaces":13},
+      {"id":"kak-nelzya-primenyat","sha256":"29964e5beb31e34d4cf0c46e71e6b94870810ab6969291c910663de1ca2f42f5","bytes":9326,"scriptureReferences":["Гал.5:17","Евр.8","Еккл.7:29","Иер.17","Иеремия 17","Рим.6:1","Рим.6:14","Рим.8:1","Рим.8:13"],"externalLinks":[],"internalArticleLinks":[],"inlineQuotationSegments":17,"markdownBlockquotes":0,"htmlBlockquotes":0,"quotationSurfaces":17},
+      {"id":"praktika","sha256":"3b95e03dcbe160b3a10fee6fd5772e71f63e63415780328061af407912f278d1","bytes":13904,"scriptureReferences":["Иер.17:9","Псалом 138","Рим.8:13"],"externalLinks":[],"internalArticleLinks":[],"inlineQuotationSegments":29,"markdownBlockquotes":0,"htmlBlockquotes":0,"quotationSurfaces":29},
+      {"id":"velikaya-nadezhda","sha256":"e27fb70305a5296b832789434cd1ef7897b1b9ad5c0736c7d89c9f364188d2ca","bytes":6527,"scriptureReferences":["Евреям 8","Ис.42:3","Мф.12:20","Мф.9:12"],"externalLinks":[],"internalArticleLinks":[],"inlineQuotationSegments":7,"markdownBlockquotes":0,"htmlBlockquotes":0,"quotationSurfaces":7}
+    ],
+    "selectedAggregate": {"sections":10,"bytes":100152,"uniqueScriptureReferences":62,"quotationSurfaces":193,"externalLinks":6,"internalArticleLinks":1,"scriptureReferenceSetSha256":"ebad12d8f1a9d8c1f0c1bd5fd4790ee49fd24f0d4e04626e5cd785cfdb2b702b","sectionManifestSha256":"8804a6e3488a8c5feea6c264b8d08e6ec8530852f452167a73a2db4f1919ebc2"},
+    "historicalFullOwner": {"ownerSurfaces":1,"sourceHeadings":0,"scriptureReferences":71,"quotationSurfaces":224,"externalLinks":15,"internalArticleLinks":3},
+    "excludedFromAssemblyOwnership": ["sec-quiz","zaklyuchenie","istochniki","literatura","spravka"]
+  },
+  "composition": {"mode":"PARAPHRASE_ONLY","productSourceChanged":false,"boundaryWitnessesChanged":false,"productQuotationSurfacesCopiedToReader":0,"productLinksCopiedToReader":0,"longExactProductSentencesCopied":0,"newHistoricalClaims":0,"newDirectQuotesApproved":0},
+  "ownershipBoundaries": [
+    "I.1 retains the book-wide definition and canonical survey of heart",
+    "I.2 retains creation, mutable obedience, fall, shame, hiding and Adam-to-Christ transition",
+    "I.3 owns the Jeremiah 17 exposition and gospel-qualified application to a believer with a new heart",
+    "Part II retains the broader unregenerate-struggle ceiling and four-soils diagnosis without repeating the full Jeremiah 17 exposition",
+    "bibliography, source-link adequacy and all 224 historical quotation surfaces remain open for a separate I.3 citation pass"
+  ],
+  "effectiveState": {"entryId":"HEART-BOOK-I3","previous":"PRODUCT_SOURCE_ONLY","current":"ASSEMBLED_READER_CITATION_OPEN"},
+  "effectiveCounts": {"finalBookEntries":18,"assembledReader":8,"missingStandaloneFinalReaders":10,"entryCitationPassComplete":7,"entryCitationPassOpen":11,"assembledReaderCitationReviewsComplete":7,"productSourceOnly":4,"researchDossierOnly":6,"newDirectQuotesApproved":0},
+  "publicationBoundary": {"i3ReaderAssembled":true,"i3EntryCitationPassComplete":false,"allCurrentlyAssembledReadersCitationReviewed":false,"wholeBookReaderAssemblyComplete":false,"wholeBookCitationPassComplete":false,"wholeBookTransitionDedupPassComplete":false,"wholeBookLineEditComplete":false,"manuscriptBundleComplete":false,"productReleaseComplete":false,"newDirectQuotesApproved":0},
+  "nextTransaction": "Perform a separate fail-closed I.3 entry citation pass over the immutable reader and full historical Product owner."
+}
