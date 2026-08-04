@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-I4-CITATION-REVIEW-2026-08-04",
+  "status": "I4_ENTRY_CITATION_PASS_COMPLETE_SIX_ASSEMBLED_READERS_REVIEWED_WHOLE_BOOK_OPEN",
+  "reviewedAt": "2026-08-04",
+  "entry": {
+    "order": 4,
+    "id": "HEART-BOOK-I4",
+    "label": "I.4 Внутренний человек и телесная жизнь",
+    "historicalInventoryEntrySha256": "96cf828429bc60fd1ba4cec313182f629f17131d2004017e7ff3c88df4a741e0",
+    "triageStateBefore": "TRIAGED_OPEN",
+    "assemblyStateBefore": "ASSEMBLED_READER_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN",
+    "stateAfter": "ENTRY_CITATION_PASS_COMPLETE"
+  },
+  "immutableSources": {
+    "reader": ["СЕРИЯ СЕРДЦЕ/101_READER_CHAPTER_I4_INNER_PERSON_EMBODIED_LIFE_2026-08-04.md", "d683ed3f1e8d699f0232f9ee7a30dc0fa2400d74"],
+    "readerAssembly": ["data/heart-i4-reader-assembly-2026-08-04.json", "83c535047dbc8bb9f19676d539e04a5e700e43ab"],
+    "ownerClosure": ["data/heart-i4-owner-closure-2026-08-04.json", "5a7aa3ef29571255708c49692a6232177b7bcf14"],
+    "precedingCurrentV2": ["data/heart-entry-citation-pass-current-v2-2026-08-04.json", "66d2f46cf639d9825b5b09fc4e94111be3af2a11"],
+    "historicalTriage": ["data/heart-entry-citation-dispositions-2026-08-04.json", "de4d49cada15b231dfc31058aced4ec7a25928a2"],
+    "productCommit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "primaryProduct": ["src/content/articles/serdce-i-telo.mdx", "dca5863c614cf3a4f8503d52a79bb76e705c9d2c"],
+    "supportProduct": ["src/content/articles/chto-bibliya-nazyvaet-serdcem.mdx", "acc12804f5b2450efebbb6e0b2cabd31066ef48c"],
+    "v81": ["СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md", "f5b3491acad2e6a68197d6c1191ea3b9fb74aa75"],
+    "v82": ["СЕРИЯ СЕРДЦЕ/61_V82_PSYCHOTROPIC_MEDICATION_BODY_SOUL_BIBLICAL_COUNSELING.md", "d62d76abe607335861745cc732a9aad8edc3b743"]
+  },
+  "readerReview": {
+    "detectedScriptureReferences": 9,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "scriptureClassification": "LOCATOR_ONLY_AND_CANONICAL_PARAPHRASE_NO_VERBATIM_TRANSLATION",
+    "translationVersionIdentifierRequired": false,
+    "historicalOrSourceDirectQuotes": 0,
+    "newDirectQuotesApproved": 0,
+    "reviewComplete": true
+  },
+  "historicalOwnerSurfaceReview": {
+    "ownerSurfaces": 4,
+    "sourceHeadings": 3,
+    "uniqueScriptureReferences": 171,
+    "externalLinks": 97,
+    "internalArticleLinks": 8,
+    "quotationSurfaces": 216,
+    "owners": [
+      {
+        "path": "src/content/articles/serdce-i-telo.mdx",
+        "scriptureReferences": 17,
+        "externalLinks": 0,
+        "internalArticleLinks": 4,
+        "quotationSurfaces": 64,
+        "sourceHeadings": 0,
+        "classification": "PRODUCT_SCRIPTURE_LEXICAL_AND_AUTHORIAL_SOURCE_SURFACES_NO_TRANSFER"
+      },
+      {
+        "path": "src/content/articles/chto-bibliya-nazyvaet-serdcem.mdx",
+        "scriptureReferences": 142,
+        "externalLinks": 0,
+        "internalArticleLinks": 4,
+        "quotationSurfaces": 98,
+        "sourceHeadings": 0,
+        "classification": "PRODUCT_SCRIPTURE_LEXICAL_AND_HISTORICAL_SOURCE_SURFACES_NO_TRANSFER"
+      },
+      {
+        "path": "СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md",
+        "scriptureReferences": 12,
+        "externalLinks": 31,
+        "internalArticleLinks": 0,
+        "quotationSurfaces": 23,
+        "sourceHeadings": 1,
+        "classification": "P1_P1C_P2_HOLD_RESEARCH_DOSSIER_NO_TRANSFER"
+      },
+      {
+        "path": "СЕРИЯ СЕРДЦЕ/61_V82_PSYCHOTROPIC_MEDICATION_BODY_SOUL_BIBLICAL_COUNSELING.md",
+        "scriptureReferences": 1,
+        "externalLinks": 66,
+        "internalArticleLinks": 1,
+        "quotationSurfaces": 31,
+        "sourceHeadings": 2,
+        "classification": "C1_C1PDF_C2_C3_CAUTION_AND_GREEN_YELLOW_RED_RESEARCH_DOSSIER_NO_TRANSFER"
+      }
+    ],
+    "reviewComplete": true
+  },
+  "scriptureReview": {
+    "historicalOwnerUniqueReferences": 171,
+    "readerReferences": 9,
+    "readerReferencesSubsetOfGovernedOwnerReferences": true,
+    "productBibleQuotationVersion": "RUSSIAN_SYNODAL_AS_DECLARED_BY_BOTH_PRODUCT_SOURCE_FILES",
+    "productBibleWordingTransferredToReader": false,
+    "v81AndV82ScriptureRole": "LOCATOR_AND_RESEARCH_CONTEXT_ONLY_NO_VERBATIM_TRANSFER",
+    "reviewComplete": true
+  },
+  "quotationReview": {
+    "historicalOwnerQuotationSurfaces": 216,
+    "productPrimary": 64,
+    "productSupport": 98,
+    "v81": 23,
+    "v82": 31,
+    "reader": 0,
+    "approvedQuotationTransferToReader": 0,
+    "approvedBlockquoteTransferToReader": 0,
+    "newDirectQuotesApproved": 0,
+    "bulkApprovalOfResearchDossierSurfaces": false,
+    "reviewComplete": true
+  },
+  "externalLinkReview": {
+    "historicalExternalLinks": 97,
+    "readerExternalLinks": 0,
+    "v81": {
+      "count": 31,
+      "domains": ["nouthetic.org"],
+      "governance": "P1_P1C_P2_HOLD_AND_PAGE_IMAGE_POLICY",
+      "readerFacingCitations": 0
+    },
+    "v82": {
+      "count": 66,
+      "domains": ["biblicalcounseling.com","blog.tms.edu","blogs.faithlafayette.org","ibcd.org","newgrowthpress.com","store.faithlafayette.org","tms.edu","www.biblicalcounselingcoalition.org","www.ccef.org","www.faithlafayette.org","www.fda.gov","www.gov.uk","www.gracechurch.org","www.nice.org.uk","www.rcpsych.ac.uk"],
+      "governance": "C1_C1PDF_C2_C3_CAUTION_AND_SOURCE_HIERARCHY",
+      "readerFacingCitations": 0
+    },
+    "classification": "IMMUTABLE_SUPPORT_DOSSIER_LINKS_NOT_READER_CITATIONS_NO_BULK_QUOTE_APPROVAL",
+    "blockerResolvedForEntryUse": true,
+    "reviewComplete": true
+  },
+  "internalLinkReview": {
+    "historicalDetectedUniqueLinks": 8,
+    "readerLinks": 0,
+    "productContextTargets": [
+      "/articles/serdce-i-iskushenie/",
+      "/articles/serdce-i-yazyk/",
+      "/articles/skrytye-idoly-serdca/",
+      "/articles/starye-dorozhki-serdca/",
+      "/articles/krajne-li-isporcheno-serdce/",
+      "/articles/novoe-serdce/",
+      "/articles/serdce-hrista-k-nemoshchnym/"
+    ],
+    "v82FalsePositiveExternalPathToken": "/articles/who-is-saying-medicine-is-unimportant/",
+    "productContextTargetsExistAtPinnedCommit": true,
+    "transferredToReader": false,
+    "reviewComplete": true
+  },
+  "sourceGovernance": {
+    "v81RequiredStatuses": ["P1 — VERIFIED PRIMARY TEXT","P1-C — VERIFIED, CAUTION","P2 — OFFICIAL BOOK PAGE","HOLD","PAGE-IMAGE HOLD"],
+    "v82RequiredStatuses": ["C1","C1-PDF","C2","C3","CAUTION","GREEN — можно внедрять","YELLOW — только с оговоркой и современной проверкой","RED — не внедрять"],
+    "v81ResearchClaimsBulkApproved": false,
+    "v82ResearchClaimsBulkApproved": false,
+    "historicalMedicalClaimsPromotedToCurrentGuidance": false,
+    "readerSourceHeadingRequired": false,
+    "reviewComplete": true
+  },
+  "disposition": {
+    "scriptureVersionAbbreviationContextBlockerResolved": true,
+    "quotationClassificationLocatorBlockerResolved": true,
+    "externalLinkAdequacyStabilityBlockerResolvedForEntryUse": true,
+    "readerAssemblyBlockerResolved": true,
+    "remainingEntryBlockers": [],
+    "readerManuscriptChanged": false,
+    "productSourcesChanged": false,
+    "v81Changed": false,
+    "v82Changed": false,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "entryCitationPassComplete": true
+  },
+  "wholeBookBoundary": {
+    "entryCitationPassComplete": "6 / 18",
+    "entryCitationPassOpen": "12 / 18",
+    "assembledReaderEntries": "6 / 18",
+    "assembledReaderCitationReviewsComplete": "6 / 6",
+    "missingStandaloneFinalReaders": 12,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false
+  },
+  "nextTransaction": "Compose a versioned current citation state V3, then assemble the next missing standalone final-book reader."
+}
