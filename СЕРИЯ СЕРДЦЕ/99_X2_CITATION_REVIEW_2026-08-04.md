@@ -19,68 +19,115 @@ ASSEMBLED READER CITATION REVIEWS = 5 / 5
 MISSING STANDALONE FINAL READERS = 13
 WHOLE-BOOK CITATION PASS = OPEN
 WHOLE-BOOK READER ASSEMBLY = INCOMPLETE
+NEW DIRECT QUOTES APPROVED = 0
 ```
 
-X.2 закрывается отдельной citation transaction после самостоятельной reader-assembly transaction. Historical triage и historical owner closure не переписываются: они продолжают фиксировать прежние состояния `TRIAGED_OPEN` и `PRODUCT_SOURCE_CITATION_PASS_REQUIRED`.
+X.2 закрывается как пятый отдельный entry citation pass. Reader был собран и merged в предшествующей транзакции; настоящий pass не изменяет reader, Product source или historical support authorities.
 
 ## 2. Immutable source chain
 
 ```text
 X.2 READER GIT BLOB = 72f6a9d70b32af65d7a44c297d467e9fabdc4a85
-X.2 READER ASSEMBLY GIT BLOB = c6d80a65ad7b4d764252ad48169b1e33ad88d283
+X.2 ASSEMBLY RECEIPT GIT BLOB = c6d80a65ad7b4d764252ad48169b1e33ad88d283
 X.2 OWNER CLOSURE GIT BLOB = c1fdcfba816bdc6131d157760632d4899f89731c
-PRODUCT GIT BLOB = 16a2390da6e0d0382165fc8bf8b7150cb9253c1f
-JUDGMENT DOSSIER GIT BLOB = ae5c16ef129892e169596fbd90490b5d4f64aa43
-X.1 READER GIT BLOB = 0fe2b234c1249d1dc6f1e37103f63c850fb41b83
-X.1 CITATION REVIEW GIT BLOB = 81c4f9f0354ed3e156a4f84f223035801795046e
 PRECEDING CURRENT CITATION AUTHORITY GIT BLOB = 79cfd859180a95da76c8102bc4167f245487dd74
+HISTORICAL TRIAGE GIT BLOB = de4d49cada15b231dfc31058aced4ec7a25928a2
+PRODUCT GIT BLOB = 16a2390da6e0d0382165fc8bf8b7150cb9253c1f
+PRODUCT COMMIT = 0fbe7d1ead9ebd1bea867418e254da438ec63329
 INVENTORY ENTRY SHA-256 = 9754ba5e5545d57d56d56ee9f23f3204c7e40e424cc4ed7956db8e83707347a6
 ```
 
-Product witness остаётся pinned к commit `0fbe7d1ead9ebd1bea867418e254da438ec63329`. Ни один source, reader или previous receipt не изменяется этой транзакцией.
+## 3. Scope boundary
 
-## 3. Current four-surface scope
-
-Historical inventory X.2 имел три owner surfaces:
-
-1. exact five-section Product source;
-2. P0 judgment dossier;
-3. X.1 reader boundary.
-
-После assembly добавлен четвёртый current surface:
-
-4. standalone paraphrase-only X.2 reader.
+Historical inventory row for X.2 contains three owner surfaces and therefore reports:
 
 ```text
-HISTORICAL OWNER SURFACES = 3
-CURRENT OWNER / READER SURFACES = 4
+HISTORICAL DETECTED SCRIPTURE REFERENCES = 50
+HISTORICAL DETECTED QUOTATION SURFACES = 59
 ```
 
-Новый reader не заменяет evidence chain и не переписывает historical inventory. Он становится publication-facing manuscript, а three historical surfaces остаются governing support.
+Those historical totals include the X.1 judgment support chain. This transaction preserves that witness but does not bulk-reapprove X.1:
 
-## 4. Scripture governance
+```text
+X.1 SUPPORT REAPPROVED = FALSE
+X.1 OWNS JUDICIAL FORK = TRUE
+X.2 OWNS POSITIVE GLORIFICATION = TRUE
+X.3 OWNS BOOK CONCLUSION = TRUE
+```
+
+Current X.2 review scope consists only of the merged X.2 reader and the exact five Product section owners.
+
+## 4. Scripture locator review
 
 ```text
 READER DETECTED REFERENCES = 9
-PRODUCT FIVE-SECTION REFERENCES = 10
-X.1 SUPPORT REFERENCES = 40
-HISTORICAL THREE-OWNER REFERENCES = 50
-SCRIPTURE REFERENCES GOVERNED = 50 / 50
-READER REFERENCES SUBSET OF GOVERNED EVIDENCE = TRUE
+PRODUCT SCANNER DETECTED REFERENCES = 10
+PRODUCT MANUAL SCANNER-GAP REFERENCES = 2
+PRODUCT GOVERNED LOCATORS = 12
+X.2 GOVERNED SCRIPTURE LOCATORS = 16
 ```
 
-Reader использует canonical locators и paraphrase, но не содержит verbatim translation quotation surfaces.
-
-Product five-section source содержит шестнадцать direct Scripture quotation surfaces. Их version boundary закрыт как:
+Reader locators:
 
 ```text
-PRODUCT SCRIPTURE QUOTATION VERSION = RUSSIAN SYNODAL
-PRODUCT DIRECT SCRIPTURE QUOTATION SURFACES = 16
-PRODUCT SCRIPTURE QUOTATIONS TRANSFERRED TO READER = 0
-TRANSLATION VERSION REQUIRED FOR READER = FALSE
+Рим.7
+Рим.8
+Флп.1:6
+1 Кор.15
+Флп.3:21
+1 Ин.3:2
+Мф.5:8
+Евр.12:23
+Откр.21–22
 ```
 
-Governed locators включают:
+Product scanner locators:
+
+```text
+Рим.7:24
+Рим.7:25
+Рим.8:23
+Флп.1:6
+1 Кор.15:42,44
+Флп.3:21
+1 Ин.3:2
+Евр.12:23
+Мф.5:8
+1 Кор.15:55,57
+```
+
+The historical scanner recognizes `Откр` but not the abbreviation `Отк.` used in Product. Manual review therefore governs:
+
+```text
+Отк.21:4
+Отк.22:3
+```
+
+```text
+PRODUCT SCRIPTURE VERSION = RUSSIAN_SYNODAL
+TRANSLATION VERSION RESOLVED = TRUE
+READER VERBATIM BIBLE TRANSLATION SURFACES = 0
+```
+
+## 5. Quotation review
+
+```text
+READER INLINE QUOTATION SEGMENTS = 0
+READER MARKDOWN BLOCKQUOTES = 0
+PRODUCT INLINE QUOTATION SEGMENTS = 23
+PRODUCT MARKDOWN BLOCKQUOTES = 3
+PRODUCT QUOTATION SURFACES CLASSIFIED = 26 / 26
+RUSSIAN SYNODAL SCRIPTURE SURFACES = 18
+CONFESSIONAL SURFACES = 1
+TITLE SURFACES = 2
+EDITORIAL / LEXICAL SURFACES = 5
+PRODUCT QUOTATION SURFACES TRANSFERRED TO READER = 0
+NEW DIRECT QUOTES APPROVED = 0
+```
+
+### Russian Synodal — 18
+
+The exact surfaces and locators are machine-bound in the receipt. They cover:
 
 - Рим. 7:24–25;
 - Рим. 8:23;
@@ -90,131 +137,73 @@ Governed locators включают:
 - 1 Ин. 3:2;
 - Мф. 5:8;
 - Евр. 12:23;
-- Откр. 21:4;
-- Откр. 22:3.
+- Отк. 21:4;
+- Отк. 22:3.
 
-Повторные surfaces одного locator сохраняются как отдельные quotation surfaces, но не увеличивают unique-reference count.
+Single-word or short-phrase surfaces remain Scripture-classified when the Product context quotes the verse term itself, including `искупление` and `нетление`. `поглощается` remains lexical/editorial because Product uses it inside a Greek-lemma explanation rather than as a separately located verse quotation.
 
-## 5. Product quotation classification
-
-```text
-PRODUCT INLINE QUOTATION SEGMENTS = 23
-PRODUCT MARKDOWN BLOCKQUOTES = 3
-PRODUCT QUOTATION SURFACES CLASSIFIED = 26 / 26
-```
-
-Classification:
-
-```text
-SCRIPTURE DIRECT QUOTATION SURFACES = 16
-CONFESSIONAL DIRECT QUOTATION SURFACES = 1
-TITLE SURFACES = 2
-TECHNICAL / LEXICAL / AUTHORIAL SURFACES = 7
-TOTAL = 26
-```
-
-### Confessional surface
-
-Product formula:
+### Confessional substance — 1
 
 ```text
 сделана совершенно и неизменно свободной только к добру
 ```
 
-governed by exact locators:
+Locator:
 
 ```text
 Westminster Confession of Faith 9.5
 Second London Baptist Confession 1689 9.5
 ```
 
-The two confessions use the same substantive formula for the will in glory. The machine receipt binds the OPC WCF page and a full 1689 confession source URL. The formula remains in Product support only and is not copied into the reader.
+The confessional substance is verified. The Russian Product wording is treated as a Product translation; no Russian page-edition claim is made.
 
-### Non-direct surfaces
-
-Two title surfaces identify Thomas Boston’s book and the linked Product article. Seven remaining surfaces are technical terms, lexical glosses or authorial contrast words. They are not reclassified as historical direct quotations merely because quotation marks are present.
-
-## 6. Support-chain reuse without bulk reapproval
+### Titles — 2
 
 ```text
-X.1 SUPPORT SCRIPTURE REFERENCES = 40
-X.1 SUPPORT QUOTATION SURFACES = 33
-X.1 CITATION PASS = COMPLETE
-X.1 SUPPORT BANK BULK REAPPROVAL = NOT PERFORMED
+Человеческая природа в её четверояком состоянии
+Крайне ли испорчено сердце
 ```
 
-X.2 depends on the already completed X.1 citation authority for the judgment dossier and X.1 reader boundary. Permanent X.2 validation still rescans those immutable files and confirms the exact `40 / 33` support counts, but does not create a second incompatible classification registry for the same surfaces.
-
-Ownership remains separated:
+### Editorial / lexical — 5
 
 ```text
-X.1 OWNS = judicial fork, two resurrection outcomes and final judgment
-X.2 OWNS = positive glorification, bodily redemption and irreversible freedom to good
-X.3 OWNS = book-level conclusion and final Christ-centered hope
+освобождение через выкуп
+бесплотное
+стремящихся
+поглощается
+проглотить, поглотить без остатка
 ```
 
-## 7. Effective quotation totals
+## 6. Link review
 
 ```text
-X.1 SUPPORT QUOTATION SURFACES = 33
-PRODUCT QUOTATION SURFACES = 26
-HISTORICAL THREE-OWNER QUOTATION SURFACES = 59 / 59
-X.2 READER QUOTATION SURFACES = 0
-CURRENT READER + EVIDENCE QUOTATION SURFACES = 59 / 59
-NEW DIRECT QUOTES APPROVED = 0
-```
-
-Citation pass completion governs all existing surfaces while preserving zero direct-quote transfer into the new reader.
-
-## 8. Link review
-
-```text
-EXTERNAL LINKS = 0
+PRODUCT EXTERNAL LINKS = 0
 PRODUCT INTERNAL ARTICLE LINKS = 1
-READER INTERNAL ARTICLE LINKS = 0
+READER LINKS = 0
 LINK BLOCKER = RESOLVED
 ```
 
-The Product link `/articles/krajne-li-isporcheno-serdce/` belongs to source-page context in `chetyre-sostoyaniya`. It is not copied into the final reader and is not required as reader-facing citation infrastructure.
+The sole Product link is:
 
-## 9. Mutation boundary
+```text
+/articles/krajne-li-isporcheno-serdce/
+```
+
+Disposition: existing Product context link, source-only, not copied to the final-book reader.
+
+## 7. Mutation boundary
 
 ```text
 READER MANUSCRIPT CHANGES = 0
 PRODUCT SOURCE CHANGES = 0
-JUDGMENT DOSSIER CHANGES = 0
-X.1 READER CHANGES = 0
+RESEARCH SUPPORT CHANGES = 0
 NEW HISTORICAL CLAIMS = 0
 NEW DIRECT QUOTES APPROVED = 0
 ```
 
-This review classifies existing surfaces and binds existing authorities. It does not edit the assembled reader or supporting sources.
+## 8. Permanent gate
 
-## 10. State transition
-
-Before this transaction:
-
-```text
-ASSEMBLED READERS = 5 / 18
-ASSEMBLED READER CITATION REVIEWS = 4 / 5
-ENTRY CITATION PASSES COMPLETE = 4 / 18
-ENTRY CITATION PASSES OPEN = 14 / 18
-```
-
-After this transaction:
-
-```text
-ASSEMBLED READERS = 5 / 18
-ASSEMBLED READER CITATION REVIEWS = 5 / 5
-ENTRY CITATION PASSES COMPLETE = 5 / 18
-ENTRY CITATION PASSES OPEN = 13 / 18
-```
-
-Reader assembly count does not change. Citation completion increases by exactly one.
-
-## 11. Permanent gate
-
-Heart workflow обязан выполнять:
+Heart workflow must execute:
 
 ```text
 python3 scripts/validate_heart_x2_entry_citation_pass.py --product-root ../Product
@@ -222,47 +211,29 @@ python3 scripts/validate_heart_x2_entry_citation_pass.py --product-root ../Produ
 
 Acceptance requires:
 
-- immutable blobs for reader, assembly, owner, triage, Product, judgment dossier, X.1 reader, X.1 citation receipt and preceding current authority;
-- reader scan `9 refs / 0 quotation surfaces / 0 links`;
-- exact five-section Product extraction;
-- exact Product `10 refs / 23 inline / 3 blockquotes / 1 internal link`;
-- exact ordered Product quote and blockquote texts;
-- support scan `40 refs / 33 quotation surfaces`;
-- historical evidence union `50 refs / 59 quotation surfaces`;
-- reader references contained in governed evidence union;
-- exact sixteen Scripture quotation texts, locators and `RUSSIAN_SYNODAL` version;
-- exact WCF 9.5 / 1689 9.5 confessional locator and source URLs;
-- historical `TRIAGED_OPEN` state preserved;
-- X.1 completed support pass preserved;
-- assembly receipt preserved with citation pass historically open;
-- composed state `5 / 18`, reader reviews `5 / 5` and missing readers `13`;
-- all whole-book and Product release gates open;
+- immutable reader, assembly, owner, historical triage, preceding current authority and Product blobs;
+- exact five Product section IDs;
+- reader scan `9` references and zero quotation/link surfaces;
+- Product scanner set `10` plus manual `Отк.21:4` and `Отк.22:3`;
+- union `16` governed locators;
+- exact ordered `23` inline and `3` blockquote surfaces;
+- exact non-overlapping taxonomy `18 + 1 + 2 + 5 = 26`;
+- Russian Synodal version binding;
+- WCF 9.5 and 1689 LBCF 9.5 confessional locator binding;
+- historical `50 / 59` inventory witness preserved but not reapproved;
+- preceding composed state `4 / 18`;
+- new composed state `5 / 18` and assembled-reader reviews `5 / 5`;
 - clean Research and Product checkouts.
 
-## 12. Publication boundaries
+## 9. Publication boundaries
 
 ```text
 X.2 ENTRY CITATION PASS COMPLETE ≠ WHOLE-BOOK CITATION PASS COMPLETE
 ASSEMBLED READER REVIEWS 5 / 5 ≠ FINAL ENTRIES 18 / 18
-EXISTING PRODUCT DIRECT QUOTES GOVERNED ≠ NEW DIRECT QUOTES APPROVED
-RUSSIAN SYNODAL VERSION RESOLVED ≠ PRODUCT QUOTES COPIED TO READER
-X.1 SUPPORT GOVERNED ≠ X.1 OWNERSHIP ABSORBED BY X.2
+HISTORICAL X.1 SUPPORT PRESENT ≠ X.1 SUPPORT REAPPROVED
 RESEARCH MERGE ≠ PRODUCT RELEASE
 ```
 
-## 13. Что остаётся открытым
+## 10. Final disposition
 
-```text
-ENTRY CITATION PASSES OPEN = 13 / 18
-MISSING STANDALONE FINAL READERS = 13
-WHOLE-BOOK READER ASSEMBLY = INCOMPLETE
-WHOLE-BOOK CITATION PASS = OPEN
-WHOLE-BOOK TRANSITION / DEDUP PASS = OPEN
-WHOLE-BOOK LINE EDIT = OPEN
-MANUSCRIPT BUNDLE = INCOMPLETE
-PRODUCT RELEASE = NOT CLAIMED
-```
-
-## 14. Final disposition
-
-Authority `HEART-X2-CITATION-REVIEW-2026-08-04` closes the X.2 entry citation pass only. Current completion becomes `5 / 18`; all five assembled readers are reviewed `5 / 5`; thirteen standalone readers and their subsequent citation passes remain open.
+Authority `HEART-X2-CITATION-REVIEW-2026-08-04` closes only X.2. Current entry citation completion becomes `5 / 18`; thirteen entries and thirteen standalone readers remain open. Whole-book assembly, transition/dedup, line edit, manuscript bundle and Product release remain fail-closed.
