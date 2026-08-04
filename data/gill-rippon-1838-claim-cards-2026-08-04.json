@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "GILL-RIPPON-1838-CLAIM-CARDS-2026-08-04",
+  "status": "ONE_PAGE_IMAGE_REVIEWED_CLAIM_USABLE_PARAPHRASE_ONLY",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "sourceItemId": "GILL-BIO-RIPPON-1838-IA",
+  "receiptAuthority": "data/gill-rippon-1838-open-access-verification-2026-08-04.json",
+  "ownerDocument": "Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md",
+  "directQuoteApproved": false,
+  "productPublicationApproved": false,
+  "cards": [
+    {
+      "id": "GILL-RIPPON-1838-CLAIM-BIRTH-PARENTS-001",
+      "claimScope": "John Gill's place and old-style date of birth, his parents' names, and his mother's maiden name.",
+      "claimState": "CLAIM_USABLE_PARAPHRASE_ONLY",
+      "approvedParaphraseRu": "Джон Гилл родился в Кеттеринге, Нортгемптоншир, 23 ноября 1697 года по старому стилю; его родителями были Эдвард Гилл и Элизабет, урождённая Уолкер.",
+      "source": {
+        "edition": "John Rippon, A Brief Memoir of the Life and Writings of the Late Rev. John Gill, D.D. (London: John Bennett, 1838)",
+        "pdfFileName": "briefmemoiroflif00ripp.pdf",
+        "pdfByteSize": 9297102,
+        "pdfSha256": "362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792",
+        "driveFileId": "1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu",
+        "itemUrl": "https://archive.org/details/briefmemoiroflif00ripp"
+      },
+      "locator": {
+        "pdfObjectIndexZeroBased": 10,
+        "pdfHumanPageOneBased": 11,
+        "printedPage": "1",
+        "contextPdfObjectIndexesZeroBased": [10, 11],
+        "contextPrintedPages": ["1", "2"]
+      },
+      "pageImageReview": {
+        "reviewed": true,
+        "renderDpi": 220,
+        "primaryImageSha256": "0a7fa164c13ae653ee9d6ab754057224cf266674536070a49e78a48d31eb9b86",
+        "contextImageSha256": "98f923d831023617ee3d8c99c6663c34edfcc44470dc7a08e6270fae64583590",
+        "primaryImageFinding": "The final paragraph on printed page 1 visibly states Kettering, Nov. 23 o.s. 1697, Edward Gill, Elizabeth, and Walker as her maiden name.",
+        "contextImageFinding": "Printed page 2 continues with the family's social and dissenting-congregation context; it does not alter the birth-and-parents statement."
+      },
+      "transcription": {
+        "role": "research_evidence_not_product_quote",
+        "text": "The subject of this Memoir was born at Kettering, in Northamptonshire, Nov. 23, o. s. 1697, of amiable and serious parents, Edward Gill, and Elizabeth his wife, whose maiden name was Walker.",
+        "sha256": "ba341d1321897649e616f94a1693d21ab5fc632010bc4f839b8c49aa823e2587",
+        "wordCount": 32,
+        "normalizedLongS": false
+      },
+      "contextWindow": {
+        "before": "Rippon introduces the memoir's method and says it retains authentic documents and character evidence while rejecting what is superfluous.",
+        "after": "The next printed page describes the parents' modest circumstances and Edward Gill's membership in the local dissenting congregation.",
+        "reviewed": true
+      },
+      "supportBoundary": {
+        "supports": [
+          "birth place: Kettering, Northamptonshire",
+          "birth date: 23 November 1697 old style",
+          "father: Edward Gill",
+          "mother: Elizabeth Gill, maiden name Walker"
+        ],
+        "doesNotSupport": [
+          "conversion chronology",
+          "baptism chronology",
+          "Edward Gill's later office as deacon",
+          "any Product publication or direct quotation"
+        ]
+      },
+      "rights": {
+        "state": "PUBLIC_DOMAIN_WORK_REMOTE_SCAN_DOWNLOADABLE",
+        "repositoryTermsStillApply": true
+      },
+      "approval": {
+        "claimUsable": true,
+        "paraphraseApproved": true,
+        "directQuoteApproved": false,
+        "productPublicationApproved": false
+      }
+    }
+  ],
+  "counts": {
+    "cards": 1,
+    "pageImageReviewed": 1,
+    "claimUsableScopes": 1,
+    "paraphraseApproved": 1,
+    "directQuoteApproved": 0,
+    "productPublicationApproved": 0
+  },
+  "boundary": "One narrowly scoped biographical claim is usable only as the approved Russian paraphrase. The stored transcription remains Research evidence, not an approved Product quotation. No family-wide quote readiness, package receipt or Product publication state changes."
+}
