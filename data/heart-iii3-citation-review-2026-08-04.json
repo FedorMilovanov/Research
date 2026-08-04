@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-III3-CITATION-REVIEW-2026-08-04",
+  "status": "III3_ENTRY_CITATION_PASS_COMPLETE_WHOLE_BOOK_OPEN",
+  "reviewedAt": "2026-08-04",
+  "entry": {
+    "order": 8,
+    "id": "HEART-BOOK-III3",
+    "label": "III.3 Сокрушённое сердце: покаяние",
+    "inventoryEntrySha256": "91ccbce5aa0bf8a22c75af4ab984b09dd8928623666eaef30ded88cbb1fe4c73",
+    "triageStateBefore": "TRIAGED_OPEN",
+    "stateAfter": "ENTRY_CITATION_PASS_COMPLETE"
+  },
+  "immutableSources": {
+    "reader": {
+      "path": "СЕРИЯ СЕРДЦЕ/80_READER_CHAPTER_III3_BROKEN_HEART_REPENTANCE_2026-08-02.md",
+      "gitBlob": "aa6031f70370f39785f1b8d3af5154dc46e964f9",
+      "authority": "HEART-READER-ASSEMBLY-2026-08-02",
+      "newDirectQuotesDeclared": 0
+    },
+    "evidenceDossier": {
+      "path": "СЕРИЯ СЕРДЦЕ/76_P0_BROKEN_HEART_REPENTANCE_2026-08-02.md",
+      "gitBlob": "42442ba19d58b8b27428f20692704477cc533efd",
+      "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02",
+      "directQuotesApproved": 0
+    },
+    "evidenceRegistry": {
+      "path": "data/heart-p0-architecture-dossiers-2026-08-02.json",
+      "gitBlob": "71c26fed5de96cead1e2f8dcdedbfefc05f3e628",
+      "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02"
+    }
+  },
+  "scriptureReview": {
+    "aggregateUniqueReferences": 20,
+    "classification": "REFERENCE_LOCATORS_CANONICAL_PARAPHRASE_AND_EXEGETICAL_NAVIGATION_NO_VERBATIM_TRANSLATION",
+    "translationVersionIdentifierRequired": false,
+    "reasonVersionNotRequired": "The reader and dossier govern Scripture through canonical locators and paraphrase. Neither document approves a verbatim Bible-translation excerpt as a direct quotation.",
+    "governingClaimGroupSelection": "EXACT_CLAIM_IDS_EMBEDDED_IN_DOSSIER",
+    "allGoverningClaimsHaveSupport": true,
+    "allGoverningClaimsHaveLocators": true,
+    "allGoverningClaimsHavePublicationBoundary": true,
+    "allUsedSourcesHaveUrlAndLocator": true,
+    "reviewComplete": true
+  },
+  "quotationReview": {
+    "aggregateQuotationSurfaces": 42,
+    "classification": "AUTHORIAL_FORMULAS_CANONICAL_PARAPHRASE_TECHNICAL_TERMS_RHETORICAL_AND_PROHIBITED_FORMULATION_SURFACES",
+    "readerHistoricalOrSourceDirectQuotes": 0,
+    "dossierHistoricalOrSourceDirectQuotesApproved": 0,
+    "approvedDirectQuoteTransferToReader": 0,
+    "externalAttributionLinks": 0,
+    "reviewComplete": true
+  },
+  "claimGovernance": {
+    "selectionMethod": "Select the unique P0 claim group whose exact claim IDs are embedded in the immutable repentance dossier.",
+    "allSelectedClaimsClosedOrBoundaryClosed": true,
+    "allSelectedClaimsHaveSupportIds": true,
+    "allSelectedClaimsHaveLocators": true,
+    "allSelectedClaimsHavePublicationBoundary": true,
+    "allRequiredSourcesPresent": true,
+    "allRequiredSourcesHaveUrl": true,
+    "allRequiredSourcesHaveLocator": true,
+    "reviewComplete": true
+  },
+  "disposition": {
+    "scriptureNormalizationBlockerResolved": true,
+    "quotationClassificationBlockerResolved": true,
+    "externalLinkBlockerApplicable": false,
+    "sourceHeadingOrBibliographyOwnerBlockerApplicable": false,
+    "readerAssemblyBlockerApplicable": false,
+    "remainingEntryBlockers": [],
+    "readerManuscriptChanged": false,
+    "evidenceDossierChanged": false,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "entryCitationPassComplete": true
+  },
+  "wholeBookBoundary": {
+    "entryCitationPassComplete": "2 / 18",
+    "entryCitationPassOpen": "16 / 18",
+    "assembledReaderCitationReviewsComplete": "2 / 4",
+    "wholeBookCitationPassComplete": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false
+  },
+  "nextTransaction": "Review the next assembled reader, X.1, using its exact judgment/two-resurrections reader, P0 dossier and governing source group."
+}
