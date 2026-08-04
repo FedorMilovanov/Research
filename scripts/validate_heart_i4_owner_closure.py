@@ -207,7 +207,7 @@ require("V81 — ДЖЕЙ АДАМС: СЕРДЦЕ, ПРИВЫЧКИ, ПОКАЯ
 require("Сердце — внутренний человек, а не эмоциональная половина личности" in v81, "V81 inner-person boundary missing")
 require("Ряд медицинских и психиатрических утверждений Адамса должен остаться" in v81, "V81 historical-medical boundary missing")
 require("V82 — ПСИХОТРОПНЫЕ ПРЕПАРАТЫ, ТЕЛО И ДУША" in v82, "V82 owner marker missing")
-require("человек создан как телесно-духовное единство" in v82, "V82 whole-person boundary missing")
+require("Человек создан как телесно-духовное единство" in v82, "V82 whole-person boundary missing")
 require("пастор или душепопечитель без медицинской квалификации не назначает" in v82, "V82 medical-competence boundary missing")
 
 human = read(HUMAN)
