@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-III2-READER-ASSEMBLY-2026-08-04",
+  "status": "III2_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "currentV7": [
+      "data/heart-entry-citation-pass-current-v7-2026-08-04.json",
+      "86c932764ca2eba3bec726876f2cb73a0c78e762"
+    ],
+    "wholeBookIntegration": [
+      "data/heart-whole-book-integration-2026-08-04.json",
+      "06d67275c42c7a9c3bd0365044f358b4b7d7a895"
+    ],
+    "historicalTriage": [
+      "data/heart-entry-citation-dispositions-2026-08-04.json",
+      "de4d49cada15b231dfc31058aced4ec7a25928a2"
+    ],
+    "inventoryBuilder": [
+      "scripts/build_heart_whole_book_citation_inventory.py",
+      "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"
+    ]
+  },
+  "entry": {
+    "order": 7,
+    "id": "HEART-BOOK-III2",
+    "label": "III.2 Рождение свыше и обновление"
+  },
+  "reader": {
+    "path": "СЕРИЯ СЕРДЦЕ/121_READER_CHAPTER_III2_REGENERATION_2026-08-04.md",
+    "gitBlob": "a3f66d265cd66eff7187dcd5c511faf645833988",
+    "fullSha256": "10cf0d7cc4ed548280ebd06c02b240f173fa06a3948b22616652e697c7626437",
+    "wordCount": 1718,
+    "scriptureReferences": 25,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceHeadings": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "exactResearchSources": [
+    {
+      "role": "R1_REGENERATION_EXEGESIS",
+      "path": "СЕРИЯ СЕРДЦЕ/62_R1_REGENERATION_EXEGESIS.md",
+      "gitBlob": "d75117cf00cf0bb859fc40a67a26dca4c039ec57"
+    },
+    {
+      "role": "R1_REGENERATION_SYSTEMATICS",
+      "path": "СЕРИЯ СЕРДЦЕ/63_R1_REGENERATION_SYSTEMATICS.md",
+      "gitBlob": "143b3477792f52a9fa5721431ff64e7ffb2a4d5a"
+    }
+  ],
+  "historicalUnion": {
+    "ownerSurfaces": 2,
+    "sourceHeadings": 0,
+    "scriptureReferences": 115,
+    "quotationSurfaces": 609,
+    "externalLinks": 67,
+    "internalArticleLinks": 1,
+    "inventoryEntrySha256": "f5308c0ccf13e992ac19ea78801a2d5253940c89e41d73ef6b4e9c280797fb0c"
+  },
+  "composition": {
+    "mode": "PARAPHRASE_ONLY",
+    "researchDossiersChanged": false,
+    "historicalAuthoritiesChanged": false,
+    "dossierQuotationSurfacesCopiedToReader": 0,
+    "dossierLinksCopiedToReader": 0,
+    "longExactDossierSentencesCopied": 0,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "ownershipBoundaries": [
+    "III.2 owns divine causation, new birth, monergistic renewal, the Word as appointed means, the causal order of regeneration and faith, and the first evidences of new life.",
+    "III.1 retains the Ezekiel 36 promise and covenant replacement motif.",
+    "III.3 retains confession, godly sorrow, repentance response and fruit.",
+    "III.4 retains life, adoption and indwelling by the Spirit.",
+    "All historical dossier quotation and link surfaces remain open for a separate III.2 entry citation pass."
+  ],
+  "effectiveState": {
+    "entryId": "HEART-BOOK-III2",
+    "previous": "RESEARCH_DOSSIER_ONLY",
+    "current": "ASSEMBLED_READER_CITATION_OPEN"
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReaders": 11,
+    "missingStandaloneFinalReaders": 7,
+    "entryCitationPassComplete": 10,
+    "entryCitationPassOpen": 8,
+    "assembledReaderCitationReviewsComplete": 10,
+    "productSourceOnlyEntries": 3,
+    "researchDossierOnlyEntries": 4,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 15,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "publicationBoundary": {
+    "iii2ReaderAssembled": true,
+    "iii2EntryCitationPassComplete": false,
+    "allCurrentlyAssembledReadersCitationReviewed": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Perform a separate fail-closed III.2 entry citation pass over the immutable reader and both complete R1 dossier owners."
+}
