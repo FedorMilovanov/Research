@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-I1-READER-ASSEMBLY-2026-08-04",
+  "status": "I1_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "baselineIntegration": ["data/heart-whole-book-integration-2026-08-04.json", "06d67275c42c7a9c3bd0365044f358b4b7d7a895"],
+    "precedingCurrentV3": ["data/heart-entry-citation-pass-current-v3-2026-08-04.json", "407c8d78baa966a3336e7bd60edfa51178b74f32"],
+    "historicalTriage": ["data/heart-entry-citation-dispositions-2026-08-04.json", "de4d49cada15b231dfc31058aced4ec7a25928a2"]
+  },
+  "reader": {
+    "id": "HEART-READER-I1-WHAT-BIBLE-CALLS-HEART-2026-08-04",
+    "bookEntryId": "HEART-BOOK-I1",
+    "path": "СЕРИЯ СЕРДЦЕ/105_READER_CHAPTER_I1_WHAT_BIBLE_CALLS_HEART_2026-08-04.md",
+    "gitBlob": "bb593d52f4838cff079a7409441d2982c4f823ea",
+    "fullSha256": "de692612cf07eefc374a7c30d5b5b9d16ad1704a78e69b3e7ee6589224067f2b",
+    "state": "ASSEMBLED_READER_PARAPHRASE_ONLY",
+    "wordCountBoundary": [1800, 3000],
+    "expectedDetectedScriptureReferences": 20,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "productSnapshot": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "path": "src/content/articles/chto-bibliya-nazyvaet-serdcem.mdx",
+    "gitBlob": "acc12804f5b2450efebbb6e0b2cabd31066ef48c",
+    "fullSha256": "50657f3473c06e16d75ffe740828a9311f642562e824f148113ae28ff9b03c07",
+    "selectedSectionManifest": [
+      ["nepravilno-slyshim","f9a0f50c32df5ac2e439726c2ff212f0e17bebe3ccdedbf3fe208510dd0055bf",2553,8,10,0,0],
+      ["vnutrenniy-chelovek","d6ffdf64d0b46b23cee96f4943f76ed20be117c531efdc6ca30bae199737c0b8",3115,1,3,0,0],
+      ["serdce-dusha-duh","0cc608846137d909c8e5a3cd391c5b71b8d23a27e60d60d68658865382f2c33d",5035,5,7,0,0],
+      ["bog-trebuet-vsyo","6ec02621b6e29ede2314149d22ca8366fccf29055dd0c4a69a12effb11cedd93",1260,3,3,0,0],
+      ["bog-vidit-serdce","1f3dd8697be57b878a66e8b76ef77e7404fc8e0f8367f3e149c19bae2bf1195a",1809,4,6,0,0],
+      ["serdce-myslit","42d2ee381d43c6afe8e118a2490db3bda8657cb5514c72525e56964eb57c65ba",1210,5,6,0,0],
+      ["serdce-reshaet","fbcffd8dacefea983e3395797c2fb69cc19b29e4d3ae954e7b4d02bd76cbed18",1501,4,4,0,0],
+      ["serdce-lyubit","91c7e07697369d36e04e1e6f3320753a17dee95e01ecd38610ccffc05abec16d",1355,2,6,0,1],
+      ["serdce-chuvstvuet","a7fd93f8181a962e8233f3e9c7a852f2e72defdb3301ef9586dba3442254de9d",2087,11,7,0,0],
+      ["serdce-govorit","94bb9fcfa80fbaff55ac82a75fb5e908da1adb25e51d0f0f56eea41513e4e078",1255,3,3,0,0],
+      ["serdce-sovest","7e46340bb1b4c397a2f1f81b8afe3864779fde8d54a0977a102558646464c095",1632,5,5,0,0],
+      ["serdce-veruet","d0be28983ac95f0599276cbeef2f055c7ed80f1b1f8f92821fdf49f489f7cc8a",1384,6,6,0,0],
+      ["hranit-serdce","a4f8c998ce00a1eae3043242f7b79aeda28e3e13c65c2316a533ea01419a2ad1",977,2,3,0,0],
+      ["serdce-boga","33fdb1b6cdb8ca815116cbae8b8457b485abd62ffca3bb4b913f359e31a8f4a2",2018,6,6,0,1],
+      ["karta-pisaniya","aecd3b43675b4d0f53f87a897be2f13d7a9bff205faa5fb5541610cd6d45c8e5",3411,93,0,0,0],
+      ["tverdo-ne-dubinkoy","bae7f0945b05f6fd2ac882c6e4daf1ad56691c45179375cc47f1964ba29d371c",2161,0,2,0,0],
+      ["vyhod","166a8d505766d7144f3ef1404097a0ed63856b617160a120f8f8c9e7604eb75a",1700,6,3,0,0]
+    ],
+    "selectedAggregate": {"sections":17,"bytes":34463,"uniqueScriptureReferences":126,"quotationSurfaces":80,"externalLinks":0,"internalArticleLinks":2},
+    "excludedSections": [
+      ["padshee-serdce","I.3_AND_II_FALLEN_HEART_DIAGNOSIS"],
+      ["novoe-serdce","III.1_NEW_HEART_PROMISE"],
+      ["istochniki","FUTURE_I1_CITATION_PASS_BIBLIOGRAPHY_SCOPE"]
+    ],
+    "historicalFullOwnerRow": {"ownerSurfaces":1,"sourceHeadings":0,"scriptureReferences":142,"externalLinks":0,"internalArticleLinks":4,"quotationSurfaces":98,"inventoryEntrySha256":"5acd1ed1ec0f50707a694332ae4ed56c274f31294d67956999f7eb7437f8250d"}
+  },
+  "composition": {
+    "mode": "PARAPHRASE_ONLY",
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "productQuotationSegmentsCopied": 0,
+    "productLongSentencesCopied": 0,
+    "productLinksCopied": 0,
+    "productSourceChanged": false,
+    "i2OwnershipChanged": false,
+    "i3OrIIOwnershipChanged": false,
+    "i4OwnershipChanged": false,
+    "iii1OwnershipChanged": false
+  },
+  "effectiveState": {"entryId":"HEART-BOOK-I1","previous":"PRODUCT_SOURCE_ONLY","current":"ASSEMBLED_READER","entryCitationPassComplete":false},
+  "effectiveCounts": {
+    "finalBookEntries":18,
+    "assembledReader":7,
+    "missingStandaloneFinalReaders":11,
+    "entryCitationPassComplete":6,
+    "entryCitationPassOpen":12,
+    "assembledReaderCitationReviewsComplete":6,
+    "productSourceOnly":5,
+    "researchDossierOnly":6,
+    "newDirectQuotesApproved":0
+  },
+  "remainingReaderAssemblies": ["HEART-BOOK-I3","HEART-BOOK-II","HEART-BOOK-III1","HEART-BOOK-III2","HEART-BOOK-III4","HEART-BOOK-IV","HEART-BOOK-V","HEART-BOOK-VI","HEART-BOOK-VII","HEART-BOOK-VIII","HEART-BOOK-IX"],
+  "publicationBoundary": {
+    "i1UnifiedReaderAssembled":true,
+    "i1EntryCitationPassComplete":false,
+    "allCurrentlyAssembledReadersCitationReviewed":false,
+    "wholeBookReaderAssemblyComplete":false,
+    "wholeBookCitationPassComplete":false,
+    "wholeBookLineEditComplete":false,
+    "manuscriptBundleComplete":false,
+    "productReleaseComplete":false,
+    "newDirectQuotesApproved":0
+  },
+  "nextTransaction": "Separate I.1 entry citation pass over the full historical Product owner row and the new reader."
+}
