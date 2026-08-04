@@ -71,7 +71,8 @@ jobs:
             scripts/validate_heart_x2_reader_assembly.py \
             scripts/validate_heart_x2_entry_citation_pass.py \
             scripts/validate_heart_entry_citation_pass_current_v2.py \
-            scripts/validate_heart_i4_reader_assembly.py
+            scripts/validate_heart_i4_reader_assembly.py \
+            scripts/validate_heart_i4_entry_citation_pass.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -152,82 +153,9 @@ jobs:
         working-directory: Research
         run: python3 scripts/validate_heart_i4_reader_assembly.py --product-root ../Product
 
-      - name: Build read-only I.4 citation surface diagnostic
+      - name: Validate completed I.4 entry citation pass
         working-directory: Research
-        run: |
-          python3 - <<'PY'
-          import importlib.util
-          import json
-          import re
-          from pathlib import Path
-          from urllib.parse import urlparse
-
-          root = Path.cwd()
-          product_root = Path('../Product').resolve()
-          spec = importlib.util.spec_from_file_location('builder', root / 'scripts/build_heart_whole_book_citation_inventory.py')
-          module = importlib.util.module_from_spec(spec)
-          spec.loader.exec_module(module)
-          owners = [
-              module.p('src/content/articles/serdce-i-telo.mdx', 'primary Product body-life source'),
-              module.p('src/content/articles/chto-bibliya-nazyvaet-serdcem.mdx', 'supporting Product whole-person source'),
-              module.r('СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md', 'V81 habit and inner-person boundary'),
-              module.r('СЕРИЯ СЕРДЦЕ/61_V82_PSYCHOTROPIC_MEDICATION_BODY_SOUL_BIBLICAL_COUNSELING.md', 'V82 body-soul and competence boundary'),
-          ]
-          scans = [module.scan_owner(owner, product_root) for owner in owners]
-          details = []
-          for owner, scan in zip(owners, scans, strict=True):
-              owner_root = root if owner['surface'] == 'research' else product_root
-              text = (owner_root / owner['path']).read_text(encoding='utf-8')
-              details.append({
-                  'scan': scan,
-                  'externalDomains': sorted({urlparse(url).netloc for url in scan['externalLinks']}),
-                  'russianQuotes': re.findall(r'«([^»\n]{8,})»', text),
-                  'curlyQuotes': re.findall(r'“([^”\n]{8,})”', text),
-                  'markdownBlockquotes': [line.lstrip()[1:].strip() for line in text.splitlines() if re.match(r'^\s*>\s?\S', line)],
-              })
-          reader = module.scan_owner(
-              module.r('СЕРИЯ СЕРДЦЕ/101_READER_CHAPTER_I4_INNER_PERSON_EMBODIED_LIFE_2026-08-04.md', 'assembled I.4 reader'),
-              product_root,
-          )
-          aggregate = {
-              'ownerSurfaces': len(scans),
-              'sourceHeadings': sum(len(scan['sourceHeadings']) for scan in scans),
-              'uniqueScriptureReferences': len({ref for scan in scans for ref in scan['scriptureReferences']}),
-              'externalLinks': len({url for scan in scans for url in scan['externalLinks']}),
-              'internalArticleLinks': len({url for scan in scans for url in scan['internalArticleLinks']}),
-              'quotationSurfaces': sum(scan['inlineQuotationSegments'] + scan['markdownBlockquotes'] + scan['htmlBlockquotes'] for scan in scans),
-          }
-          payload = {
-              'ownerDetails': details,
-              'historicalAggregate': aggregate,
-              'readerScan': reader,
-              'assembly': json.loads((root / 'data/heart-i4-reader-assembly-2026-08-04.json').read_text(encoding='utf-8')),
-              'triage': json.loads((root / 'data/heart-entry-citation-dispositions-2026-08-04.json').read_text(encoding='utf-8')),
-          }
-          out = Path('/tmp/i4-citation-surface-diagnostic.json')
-          out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-          print(json.dumps({
-              'aggregate': aggregate,
-              'readerRefs': len(reader['scriptureReferences']),
-              'readerQuotationSurfaces': reader['inlineQuotationSegments'] + reader['markdownBlockquotes'] + reader['htmlBlockquotes'],
-              'perOwner': [{
-                  'path': row['scan']['path'],
-                  'refs': len(row['scan']['scriptureReferences']),
-                  'external': len(row['scan']['externalLinks']),
-                  'internal': len(row['scan']['internalArticleLinks']),
-                  'quotes': row['scan']['inlineQuotationSegments'] + row['scan']['markdownBlockquotes'] + row['scan']['htmlBlockquotes'],
-                  'sourceHeadings': len(row['scan']['sourceHeadings']),
-              } for row in details],
-          }, ensure_ascii=False))
-          PY
-
-      - name: Upload read-only I.4 citation diagnostic
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: i4-citation-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
-          path: /tmp/i4-citation-surface-diagnostic.json
-          if-no-files-found: error
-          retention-days: 1
+        run: python3 scripts/validate_heart_i4_entry_citation_pass.py --product-root ../Product
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
