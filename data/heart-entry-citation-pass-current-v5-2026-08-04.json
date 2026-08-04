@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 5,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V5-2026-08-04",
+  "status": "EIGHT_ENTRY_PASSES_COMPOSED_ALL_EIGHT_READERS_REVIEWED_TEN_READERS_OPEN",
+  "generatedAt": "2026-08-04",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-v4-2026-08-04.json",
+    "gitBlob": "d0ddea6cf1fc33dfab53ae9691aaf2d903d03b73",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V4-2026-08-04",
+    "historicalCounts": {
+      "entryCitationPassComplete": 7,
+      "entryCitationPassOpen": 11,
+      "assembledReaderEntries": 7,
+      "assembledReaderCitationReviewsComplete": 7,
+      "missingStandaloneFinalReaders": 11
+    }
+  },
+  "deltaReceipt": {
+    "order": 3,
+    "id": "HEART-BOOK-I3",
+    "label": "I.3 Падшее сердце: Иеремия 17",
+    "path": "data/heart-i3-citation-review-2026-08-04.json",
+    "gitBlob": "b753e0e407bf881bc49974954b452817a99f1730",
+    "authorityId": "HEART-I3-CITATION-REVIEW-2026-08-04",
+    "readerAssemblyPath": "data/heart-i3-reader-assembly-2026-08-04.json",
+    "readerAssemblyGitBlob": "2ae5a01ed0a2c9931b7a36f4991cf93bcec3fb7a",
+    "stateTransition": "ASSEMBLED_READER_CITATION_OPEN_TO_ENTRY_CITATION_PASS_COMPLETE",
+    "composedCountAfterReceipt": "8 / 18",
+    "productSourceLinkRepairRequired": 3,
+    "newDirectQuotesApproved": 0
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 8,
+    "entryCitationPassOpen": 10,
+    "assembledReaderEntries": 8,
+    "assembledReaderCitationReviewsComplete": 8,
+    "missingStandaloneFinalReaders": 10,
+    "productSourceOnlyEntries": 4,
+    "researchDossierOnlyEntries": 6,
+    "productSourceLinkRepairsRequired": 3,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I2",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-X1",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-II",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "openEntriesBySourceLane": {
+    "productSourceOnly": [
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VII"
+    ],
+    "researchDossierOnly": [
+      "HEART-BOOK-II",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ]
+  },
+  "readerAssemblyBacklog": {
+    "removedByDelta": "HEART-BOOK-I3",
+    "remaining": [
+      "HEART-BOOK-II",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "effectiveMissingStandaloneFinalReaders": 10
+  },
+  "productRepairBacklog": {
+    "entryId": "HEART-BOOK-I3",
+    "requiredBeforeProductPublication": 3,
+    "scope": "Clarkson malformed URL, Calvin Jeremiah legacy alias and Brooks Monergism legacy alias",
+    "researchCitationReviewComplete": true,
+    "productSourceRepairComplete": false
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceLinkRepairsComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "STANDALONE_READER_ASSEMBLY",
+    "preferredEntryId": "HEART-BOOK-II",
+    "reason": "Part I readers I.1 through I.4 are now assembled and reviewed. Part II is the next final-order gap and has bounded R3/R4 Research dossiers for the unregenerate-struggle ceiling and four-soils diagnosis."
+  }
+}
