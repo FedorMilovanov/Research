@@ -9,6 +9,12 @@ on:
       - '.github/workflows/diagnose-heart-part4-reader-assembly.yml'
       - 'scripts/diagnose_heart_part4_reader_assembly.py'
       - 'СЕРИЯ СЕРДЦЕ/125_READER_CHAPTER_IV_HEART_AND_WORD_2026-08-04.md'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/diagnose-heart-part4-reader-assembly.yml'
+      - 'scripts/diagnose_heart_part4_reader_assembly.py'
+      - 'СЕРИЯ СЕРДЦЕ/125_READER_CHAPTER_IV_HEART_AND_WORD_2026-08-04.md'
 
 permissions:
   contents: read
