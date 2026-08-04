@@ -30,12 +30,12 @@ EXPECTED_BLOBS = {
     INTEGRATION: "06d67275c42c7a9c3bd0365044f358b4b7d7a895",
     TRIAGE: "de4d49cada15b231dfc31058aced4ec7a25928a2",
     BUILDER: "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12",
-    READER: "7f40a2ba5a061fe773c5c746c91e640fe1b6e518",
+    READER: "a3f66d265cd66eff7187dcd5c511faf645833988",
 }
-READER_SHA256 = "8febf0d6509d6491cdedaaf70fb0f0b6b46a9883b1dae0b81388b5aeec85398c"
+READER_SHA256 = "10cf0d7cc4ed548280ebd06c02b240f173fa06a3948b22616652e697c7626437"
 REQUIRED_HEADINGS = [
     "Не исправление, а рождение",
-    "Рождение свыше и источник жизни",
+    "Рождение свыше и начало жизни",
     "Мёртвые оживают по благодати",
     "Дух действует суверенно",
     "Слово как установленное средство",
@@ -47,6 +47,26 @@ REQUIRED_HEADINGS = [
     "Границы III.2",
     "Переход",
 ]
+EXPECTED_IMMUTABLE = {
+    "currentV7": [str(CURRENT.relative_to(ROOT)), EXPECTED_BLOBS[CURRENT]],
+    "wholeBookIntegration": [str(INTEGRATION.relative_to(ROOT)), EXPECTED_BLOBS[INTEGRATION]],
+    "historicalTriage": [str(TRIAGE.relative_to(ROOT)), EXPECTED_BLOBS[TRIAGE]],
+    "inventoryBuilder": [str(BUILDER.relative_to(ROOT)), EXPECTED_BLOBS[BUILDER]],
+}
+EXPECTED_COUNTS = {
+    "finalBookEntries": 18,
+    "assembledReaders": 11,
+    "missingStandaloneFinalReaders": 7,
+    "entryCitationPassComplete": 10,
+    "entryCitationPassOpen": 8,
+    "assembledReaderCitationReviewsComplete": 10,
+    "productSourceOnlyEntries": 3,
+    "researchDossierOnlyEntries": 4,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 15,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0,
+}
 errors: list[str] = []
 
 
@@ -182,8 +202,8 @@ require(integration_entry.get("order") == 7, "III.2 integration order drift")
 require(integration_entry.get("primaryState") == "RESEARCH_DOSSIER_ONLY", "III.2 integration primary state drift")
 require(integration_entry.get("productOwner") is None, "III.2 unexpectedly has Product owner")
 require(integration_entry.get("researchOwners") == [
-    "СЕРИЯ СЕРДЦЕ/62_R1_REGENERATION_EXEGESIS.md",
-    "СЕРИЯ СЕРДЦЕ/63_R1_REGENERATION_SYSTEMATICS.md",
+    str(EXEGESIS.relative_to(ROOT)),
+    str(SYSTEMATICS.relative_to(ROOT)),
 ], "III.2 integration owner set drift")
 require(
     integration_entry.get("dedupOwner") == "Owns divine causation, new birth, monergistic renewal and means; III.3 owns repentance response and fruit.",
@@ -205,6 +225,7 @@ require(triage_entry.get("disposition", {}).get("entryCitationPassComplete") is 
 
 require(receipt.get("authorityId") == "HEART-III2-READER-ASSEMBLY-2026-08-04", "III.2 receipt authority drift")
 require(receipt.get("status") == "III2_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN", "III.2 receipt status drift")
+require(receipt.get("immutableAuthorities") == EXPECTED_IMMUTABLE, "III.2 immutable authority chain drift")
 require(receipt.get("entry") == {"order": 7, "id": "HEART-BOOK-III2", "label": "III.2 Рождение свыше и обновление"}, "III.2 receipt entry drift")
 require(receipt.get("reader") == {
     "path": str(READER.relative_to(ROOT)),
@@ -247,20 +268,8 @@ require(receipt.get("effectiveState") == {
     "previous": "RESEARCH_DOSSIER_ONLY",
     "current": "ASSEMBLED_READER_CITATION_OPEN",
 }, "III.2 effective state drift")
-require(receipt.get("effectiveCounts") == {
-    "finalBookEntries": 18,
-    "assembledReaders": 11,
-    "missingStandaloneFinalReaders": 7,
-    "entryCitationPassComplete": 10,
-    "entryCitationPassOpen": 8,
-    "assembledReaderCitationReviewsComplete": 10,
-    "productSourceOnlyEntries": 3,
-    "researchDossierOnlyEntries": 4,
-    "productSourceRepairsRequired": 4,
-    "dossierUrlHoldsRetained": 15,
-    "unresolvedInternalPathsRetained": 1,
-    "newDirectQuotesApproved": 0,
-}, "III.2 effective count block drift")
+require(receipt.get("effectiveCounts") == EXPECTED_COUNTS, "III.2 effective count block drift")
+
 boundary = receipt.get("publicationBoundary", {})
 require(boundary.get("iii2ReaderAssembled") is True, "III.2 reader not marked assembled")
 for key in (
@@ -287,8 +296,8 @@ for marker in (
     "ASSEMBLED READERS = 11 / 18",
     "MISSING STANDALONE FINAL READERS = 7",
     "ENTRY CITATION PASSES COMPLETE = 10 / 18",
+    "Research-dossier-only lanes: `5 → 4`",
     "III.2 ENTRY CITATION PASS = OPEN",
-    "RESEARCH-DOSSIER-ONLY LANES: `5 → 4`".replace("RESEARCH-DOSSIER-ONLY LANES: ", "Research-dossier-only lanes: "),
     "PRODUCT RELEASE = NOT CLAIMED",
 ):
     require(marker in human, f"III.2 human authority marker missing: {marker}")
@@ -310,6 +319,6 @@ if errors:
     raise SystemExit(1)
 
 print("Heart III.2 reader assembly: PASS")
-print("- reader: 1718 words / 25 Scripture / 0 quote-link-footnote surfaces")
+print("- reader: 1718 words / 25 Scripture / 0 quote-link-footnote-source surfaces")
 print("- historical union: 115 Scripture / 609 quotation / 67 external / 1 internal")
 print("- effective state: 11 readers assembled; III.2 citation pass remains open")
