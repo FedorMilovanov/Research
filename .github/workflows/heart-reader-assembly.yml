@@ -165,9 +165,17 @@ jobs:
         working-directory: Research
         run: python3 scripts/validate_heart_x3_reader_assembly.py --product-root ../Product
 
-      - name: Build and check eighteen-entry citation/reference inventory
+      - name: Build citation/reference inventory bootstrap
         working-directory: Research
-        run: python3 scripts/build_heart_whole_book_citation_inventory.py --product-root ../Product
+        run: python3 scripts/build_heart_whole_book_citation_inventory.py --product-root ../Product --write
+
+      - name: Upload citation inventory bootstrap
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: heart-citation-inventory-${{ github.run_id }}-${{ github.run_attempt }}
+          path: Research/data/heart-whole-book-citation-inventory-2026-08-04.json
+          if-no-files-found: error
+          retention-days: 1
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
