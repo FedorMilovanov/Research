@@ -8,9 +8,12 @@ on:
       - '.github/workflows/gill-closed-book-families.yml'
       - 'data/gill-closed-book-families-2026-08-02.json'
       - 'data/gill-rippon-1838-open-access-verification-2026-08-04.json'
+      - 'data/gill-rippon-1838-claim-cards-2026-08-04.json'
       - 'scripts/validate_gill_closed_book_families.py'
+      - 'scripts/validate_gill_rippon_claim_cards.py'
       - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
       - 'Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md'
+      - 'Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md'
       - 'Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
       - 'Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
       - 'Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md'
@@ -21,9 +24,12 @@ on:
       - '.github/workflows/gill-closed-book-families.yml'
       - 'data/gill-closed-book-families-2026-08-02.json'
       - 'data/gill-rippon-1838-open-access-verification-2026-08-04.json'
+      - 'data/gill-rippon-1838-claim-cards-2026-08-04.json'
       - 'scripts/validate_gill_closed_book_families.py'
+      - 'scripts/validate_gill_rippon_claim_cards.py'
       - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
       - 'Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md'
+      - 'Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md'
       - 'Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
       - 'Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
       - 'Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md'
@@ -39,8 +45,9 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: Validate Gill family syntax without writing bytecode
         run: >-
-          python3 -c 'from pathlib import Path; p=Path("scripts/validate_gill_closed_book_families.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
+          python3 -c 'from pathlib import Path; paths=[Path("scripts/validate_gill_closed_book_families.py"),Path("scripts/validate_gill_rippon_claim_cards.py")]; [compile(p.read_text(encoding="utf-8"), str(p), "exec") for p in paths]'
       - run: python3 scripts/validate_gill_closed_book_families.py
+      - run: python3 scripts/validate_gill_rippon_claim_cards.py
       - run: |
           git diff --exit-code
           test -z "$(git status --porcelain)"
