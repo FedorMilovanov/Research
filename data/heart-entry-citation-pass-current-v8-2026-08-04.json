@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 8,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V8-2026-08-04",
+  "status": "ELEVEN_ENTRY_PASSES_COMPOSED_ALL_ELEVEN_READERS_REVIEWED_SEVEN_READERS_OPEN",
+  "generatedAt": "2026-08-04",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-v7-2026-08-04.json",
+    "gitBlob": "86c932764ca2eba3bec726876f2cb73a0c78e762",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V7-2026-08-04",
+    "historicalCounts": {
+      "entryCitationPassComplete": 10,
+      "entryCitationPassOpen": 8,
+      "assembledReaderEntries": 10,
+      "assembledReaderCitationReviewsComplete": 10,
+      "missingStandaloneFinalReaders": 8,
+      "productSourceOnlyEntries": 3,
+      "researchDossierOnlyEntries": 5,
+      "productSourceRepairsRequired": 4,
+      "dossierUrlHoldsRetained": 15,
+      "unresolvedInternalPathsRetained": 1
+    }
+  },
+  "deltaReceipt": {
+    "order": 7,
+    "id": "HEART-BOOK-III2",
+    "label": "III.2 Рождение свыше и обновление",
+    "path": "data/heart-iii2-citation-review-2026-08-04.json",
+    "gitBlob": "bda547518627241c96942b256134dbbcd12d29f9",
+    "authorityId": "HEART-III2-CITATION-REVIEW-2026-08-04",
+    "readerAssemblyPath": "data/heart-iii2-reader-assembly-2026-08-04.json",
+    "readerAssemblyGitBlob": "82e2a70977d67591c3a290248f102601c7c4d5dc",
+    "stateTransition": "ASSEMBLED_READER_CITATION_OPEN_TO_ENTRY_CITATION_PASS_COMPLETE",
+    "composedCountAfterReceipt": "11 / 18",
+    "dossierUrlHoldsAdded": 25,
+    "dossierSourceUrlRepairsAdded": 2,
+    "unresolvedInternalPathsAdded": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 11,
+    "entryCitationPassOpen": 7,
+    "assembledReaderEntries": 11,
+    "assembledReaderCitationReviewsComplete": 11,
+    "missingStandaloneFinalReaders": 7,
+    "productSourceOnlyEntries": 3,
+    "researchDossierOnlyEntries": 4,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 40,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I2",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-X1",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "openEntriesBySourceLane": {
+    "productSourceOnly": [
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VII"
+    ],
+    "researchDossierOnly": [
+      "HEART-BOOK-IV",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ]
+  },
+  "readerAssemblyBacklog": {
+    "removedByDelta": "HEART-BOOK-III2",
+    "remaining": [
+      "HEART-BOOK-III4",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "effectiveMissingStandaloneFinalReaders": 7
+  },
+  "retainedRepairAndHoldBacklog": {
+    "productSourceRepairs": {
+      "totalRequired": 4,
+      "complete": false,
+      "items": [
+        {
+          "entryId": "HEART-BOOK-I3",
+          "kind": "SOURCE_URL_REPAIR",
+          "required": 3
+        },
+        {
+          "entryId": "HEART-BOOK-III1",
+          "kind": "SCRIPTURE_LOCATOR_REPAIR",
+          "required": 1,
+          "surfaceIndex": 57,
+          "requiredLocator": "Флп. 1:6"
+        }
+      ]
+    },
+    "iii1AttributedTheologicalLocatorHolds": {
+      "entryId": "HEART-BOOK-III1",
+      "retained": 1,
+      "surfaceIndex": 26,
+      "readerTransfer": false
+    },
+    "iii1LexicalSupportLocatorHolds": {
+      "entryId": "HEART-BOOK-III1",
+      "retained": 8,
+      "surfaceIndices": [24, 39, 44, 62, 63, 64, 65, 66],
+      "readerTransfer": false
+    },
+    "dossierUrlHolds": {
+      "totalRetained": 40,
+      "components": [
+        {
+          "entryId": "HEART-BOOK-II",
+          "retained": 15,
+          "promoted": 0
+        },
+        {
+          "entryId": "HEART-BOOK-III2",
+          "retained": 25,
+          "promoted": 0
+        }
+      ]
+    },
+    "iii2DossierSourceUrlRepairs": {
+      "entryId": "HEART-BOOK-III2",
+      "required": 2,
+      "complete": false,
+      "tokens": [
+        "https://www.monergism.com/regeneration-6`",
+        "https://www.reformedreader.org/ccc/1689lbc/english/Chapter10.htm**"
+      ]
+    },
+    "part2UnresolvedInternalPath": {
+      "path": "/articles/opinion/",
+      "retained": 1,
+      "readerTransfer": false
+    },
+    "iii2FalsePositiveInternalPath": {
+      "path": "/articles/onsite/",
+      "status": "EXTERNAL_URL_PATH_FRAGMENT_FALSE_POSITIVE",
+      "unresolvedInternalPathsAdded": 0,
+      "readerTransfer": false
+    }
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "STANDALONE_READER_ASSEMBLY",
+    "preferredEntryId": "HEART-BOOK-III4",
+    "reason": "III.2 is now assembled and entry-reviewed; III.3 is already complete, so III.4 is the next final-order gap and retains life, adoption and indwelling by the Spirit."
+  }
+}
