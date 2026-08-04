@@ -108,6 +108,55 @@ jobs:
         working-directory: Research
         run: python3 scripts/validate_heart_entry_citation_dispositions.py --product-root ../Product
 
+      - name: Build read-only I.2 diagnostic
+        working-directory: Research
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+          import json
+          import re
+          from pathlib import Path
+
+          root = Path.cwd()
+          spec = importlib.util.spec_from_file_location('builder', root / 'scripts/build_heart_whole_book_citation_inventory.py')
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          reader_path = 'СЕРИЯ СЕРДЦЕ/79_READER_CHAPTER_I2_HEART_IN_EDEN_2026-08-02.md'
+          dossier_path = 'СЕРИЯ СЕРДЦЕ/75_P0_EDEN_HEART_CREATED_AND_FALLEN_2026-08-02.md'
+          reader = module.scan_owner(module.r(reader_path, 'reader'), Path('../Product').resolve())
+          dossier = module.scan_owner(module.r(dossier_path, 'dossier'), Path('../Product').resolve())
+          reader_text = (root / reader_path).read_text(encoding='utf-8')
+          dossier_text = (root / dossier_path).read_text(encoding='utf-8')
+          p0 = json.loads((root / 'data/heart-p0-architecture-dossiers-2026-08-02.json').read_text(encoding='utf-8'))
+          claims = [row for row in p0['claims'] if row.get('dossierId') == 'HEART-P0-EDEN']
+          payload = {
+              'readerScan': reader,
+              'dossierScan': dossier,
+              'readerQuoteSegments': re.findall(r'«([^»\n]{8,})»', reader_text),
+              'dossierQuoteSegments': re.findall(r'«([^»\n]{8,})»', dossier_text),
+              'dossierBlockquotes': [line.lstrip()[1:].strip() for line in dossier_text.splitlines() if re.match(r'^\s*>\s?\S', line)],
+              'claimIds': [row['id'] for row in claims],
+              'usedSourceIds': sorted({source_id for row in claims for source_id in row.get('support', [])}),
+          }
+          Path('/tmp/i2-citation-diagnostic.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps({
+              'readerRefs': len(reader['scriptureReferences']),
+              'dossierRefs': len(dossier['scriptureReferences']),
+              'aggregateRefs': len(set(reader['scriptureReferences']) | set(dossier['scriptureReferences'])),
+              'readerInline': reader['inlineQuotationSegments'],
+              'dossierInline': dossier['inlineQuotationSegments'],
+              'dossierBlockquotes': dossier['markdownBlockquotes'],
+          }, ensure_ascii=False))
+          PY
+
+      - name: Upload read-only I.2 diagnostic
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: i2-citation-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/i2-citation-diagnostic.json
+          if-no-files-found: error
+          retention-days: 1
+
       - name: Validate completed I.2 citation review
         working-directory: Research
         run: python3 scripts/validate_heart_i2_citation_review.py --product-root ../Product
