@@ -147,6 +147,126 @@ jobs:
         working-directory: Research
         run: python3 scripts/validate_heart_entry_citation_pass_current_v2.py
 
+      - name: Build read-only I.4 reader assembly diagnostic
+        working-directory: Research
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import importlib.util
+          import json
+          import re
+          from pathlib import Path
+
+          root = Path.cwd()
+          product_root = Path('../Product').resolve()
+          builder_path = root / 'scripts/build_heart_whole_book_citation_inventory.py'
+          spec = importlib.util.spec_from_file_location('builder', builder_path)
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+
+          sources = {
+              'primary': {
+                  'path': 'src/content/articles/serdce-i-telo.mdx',
+                  'sectionIds': [
+                      'telo-ne-vrag',
+                      'chleny-oruzhie',
+                      'hram-kuplennyj',
+                      'zhivaya-zhertva',
+                      'komfort-gospodin',
+                      'ustalost',
+                      'ne-hlebom-odnim',
+                      'tverdo-ne-dubinkoy',
+                      'kak-otlichit',
+                      'vyhod',
+                  ],
+              },
+              'support': {
+                  'path': 'src/content/articles/chto-bibliya-nazyvaet-serdcem.mdx',
+                  'sectionIds': ['vnutrenniy-chelovek', 'serdce-dusha-duh'],
+              },
+          }
+
+          def section_row(text, section_id):
+              scoped = module.extract_sections(text, [section_id])
+              return {
+                  'id': section_id,
+                  'text': scoped,
+                  'sha256': hashlib.sha256(scoped.encode('utf-8')).hexdigest(),
+                  'bytes': len(scoped.encode('utf-8')),
+                  'scriptureReferences': sorted({
+                      module.normalize_ref(match.group(0))
+                      for match in module.SCRIPTURE_RE.finditer(scoped)
+                  }, key=str.casefold),
+                  'externalLinks': sorted({
+                      module.trim_url(match.group(0))
+                      for match in module.URL_RE.finditer(scoped)
+                  }, key=str.casefold),
+                  'internalArticleLinks': sorted(set(module.ARTICLE_LINK_RE.findall(scoped))),
+                  'inlineQuotationSegments': len(re.findall(r'«([^»\n]{8,})»', scoped)) + len(re.findall(r'“([^”\n]{8,})”', scoped)),
+                  'markdownBlockquotes': sum(1 for line in scoped.splitlines() if re.match(r'^\s*>\s?\S', line)),
+              }
+
+          product_rows = {}
+          for name, source in sources.items():
+              path = product_root / source['path']
+              text = path.read_text(encoding='utf-8')
+              product_rows[name] = {
+                  'path': source['path'],
+                  'fullSha256': hashlib.sha256(text.encode('utf-8')).hexdigest(),
+                  'sections': [section_row(text, section_id) for section_id in source['sectionIds']],
+              }
+
+          research_sources = {}
+          for rel, markers in {
+              'СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md': [
+                  'Сердце — целостный внутренний человек',
+                  'Остаточный грех как склонность и привычный принцип',
+                  'Четыре свойства укоренившейся привычки',
+                  'исторически описанной позицией автора',
+              ],
+              'СЕРИЯ СЕРДЦЕ/61_V82_PSYCHOTROPIC_MEDICATION_BODY_SOUL_BIBLICAL_COUNSELING.md': [
+                  'Редукционизм 1 — человек есть только тело',
+                  'Редукционизм 2 — тело почти не имеет значения',
+                  'Писание обладает верховной, непогрешимой и достаточной властью',
+                  'не назначает, не отменяет и не меняет дозировку',
+              ],
+          }.items():
+              text = (root / rel).read_text(encoding='utf-8')
+              research_sources[rel] = {
+                  'sha256': hashlib.sha256(text.encode('utf-8')).hexdigest(),
+                  'bytes': len(text.encode('utf-8')),
+                  'markers': {marker: marker in text for marker in markers},
+              }
+
+          payload = {
+              'productCommit': '0fbe7d1ead9ebd1bea867418e254da438ec63329',
+              'productSources': product_rows,
+              'researchSources': research_sources,
+              'ownerClosure': json.loads((root / 'data/heart-i4-owner-closure-2026-08-04.json').read_text(encoding='utf-8')),
+              'precedingCurrentV2': json.loads((root / 'data/heart-entry-citation-pass-current-v2-2026-08-04.json').read_text(encoding='utf-8')),
+          }
+          out = Path('/tmp/i4-reader-assembly-diagnostic.json')
+          out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps({
+              'primarySections': len(product_rows['primary']['sections']),
+              'supportSections': len(product_rows['support']['sections']),
+              'primaryBytes': sum(row['bytes'] for row in product_rows['primary']['sections']),
+              'supportBytes': sum(row['bytes'] for row in product_rows['support']['sections']),
+              'primaryRefs': len({ref for row in product_rows['primary']['sections'] for ref in row['scriptureReferences']}),
+              'supportRefs': len({ref for row in product_rows['support']['sections'] for ref in row['scriptureReferences']}),
+              'primaryQuotationSurfaces': sum(row['inlineQuotationSegments'] + row['markdownBlockquotes'] for row in product_rows['primary']['sections']),
+              'supportQuotationSurfaces': sum(row['inlineQuotationSegments'] + row['markdownBlockquotes'] for row in product_rows['support']['sections']),
+          }, ensure_ascii=False))
+          PY
+
+      - name: Upload read-only I.4 reader assembly diagnostic
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: i4-reader-assembly-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/i4-reader-assembly-diagnostic.json
+          if-no-files-found: error
+          retention-days: 1
+
       - name: Ensure validators and exact Product witness are read-only
         run: |
           git -C Research diff --exit-code
