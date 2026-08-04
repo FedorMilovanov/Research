@@ -14,7 +14,11 @@ on:
       - 'data/heart-x2-owner-closure-2026-08-04.json'
       - 'data/heart-x3-owner-closure-2026-08-04.json'
       - 'data/heart-x3-reader-assembly-2026-08-04.json'
-      - 'data/heart-whole-book-citation-inventory-2026-08-04.json'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.encoding.json'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.part01.b64'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.part02.b64'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.part03.b64'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.part04.b64'
       - 'scripts/validate_heart_reader_assembly.py'
       - 'scripts/validate_heart_p0_dossiers.py'
       - 'scripts/validate_heart_whole_book_integration.py'
@@ -24,6 +28,7 @@ on:
       - 'scripts/validate_heart_x3_owner_closure.py'
       - 'scripts/validate_heart_x3_reader_assembly.py'
       - 'scripts/build_heart_whole_book_citation_inventory.py'
+      - 'scripts/validate_heart_whole_book_citation_inventory.py'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md'
@@ -46,6 +51,7 @@ on:
       - 'СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/87_X3_CONCLUDING_HOPE_OWNER_CLOSURE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/88_READER_CHAPTER_X3_CONCLUDING_HOPE_2026-08-04.md'
+      - 'СЕРИЯ СЕРДЦЕ/89_WHOLE_BOOK_CITATION_INVENTORY_2026-08-04.md'
   push:
     branches: [main]
     paths:
@@ -58,7 +64,11 @@ on:
       - 'data/heart-x2-owner-closure-2026-08-04.json'
       - 'data/heart-x3-owner-closure-2026-08-04.json'
       - 'data/heart-x3-reader-assembly-2026-08-04.json'
-      - 'data/heart-whole-book-citation-inventory-2026-08-04.json'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.encoding.json'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.part01.b64'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.part02.b64'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.part03.b64'
+      - 'data/heart-whole-book-citation-inventory-2026-08-04.part04.b64'
       - 'scripts/validate_heart_reader_assembly.py'
       - 'scripts/validate_heart_p0_dossiers.py'
       - 'scripts/validate_heart_whole_book_integration.py'
@@ -68,6 +78,7 @@ on:
       - 'scripts/validate_heart_x3_owner_closure.py'
       - 'scripts/validate_heart_x3_reader_assembly.py'
       - 'scripts/build_heart_whole_book_citation_inventory.py'
+      - 'scripts/validate_heart_whole_book_citation_inventory.py'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md'
@@ -90,6 +101,7 @@ on:
       - 'СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/87_X3_CONCLUDING_HOPE_OWNER_CLOSURE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/88_READER_CHAPTER_X3_CONCLUDING_HOPE_2026-08-04.md'
+      - 'СЕРИЯ СЕРДЦЕ/89_WHOLE_BOOK_CITATION_INVENTORY_2026-08-04.md'
 
 permissions:
   contents: read
@@ -128,7 +140,8 @@ jobs:
             scripts/validate_heart_x2_owner_closure.py \
             scripts/validate_heart_x3_owner_closure.py \
             scripts/validate_heart_x3_reader_assembly.py \
-            scripts/build_heart_whole_book_citation_inventory.py
+            scripts/build_heart_whole_book_citation_inventory.py \
+            scripts/validate_heart_whole_book_citation_inventory.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -165,17 +178,9 @@ jobs:
         working-directory: Research
         run: python3 scripts/validate_heart_x3_reader_assembly.py --product-root ../Product
 
-      - name: Build citation/reference inventory bootstrap
+      - name: Validate eighteen-entry citation/reference inventory
         working-directory: Research
-        run: python3 scripts/build_heart_whole_book_citation_inventory.py --product-root ../Product --write
-
-      - name: Upload citation inventory bootstrap
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: heart-citation-inventory-${{ github.run_id }}-${{ github.run_attempt }}
-          path: Research/data/heart-whole-book-citation-inventory-2026-08-04.json
-          if-no-files-found: error
-          retention-days: 1
+        run: python3 scripts/validate_heart_whole_book_citation_inventory.py --product-root ../Product
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
