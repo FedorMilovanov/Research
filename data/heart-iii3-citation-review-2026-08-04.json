@@ -14,14 +14,15 @@
   "immutableSources": {
     "reader": {
       "path": "СЕРИЯ СЕРДЦЕ/80_READER_CHAPTER_III3_BROKEN_HEART_REPENTANCE_2026-08-02.md",
-      "gitBlob": "aa6031f70370f39785f1b8d3af5154dc46e964f9",
+      "gitBlob": "f7a8fe5032ceeb26d9acc4fd6f248ba5f92de29d",
       "authority": "HEART-READER-ASSEMBLY-2026-08-02",
       "newDirectQuotesDeclared": 0
     },
     "evidenceDossier": {
       "path": "СЕРИЯ СЕРДЦЕ/76_P0_BROKEN_HEART_REPENTANCE_2026-08-02.md",
-      "gitBlob": "42442ba19d58b8b27428f20692704477cc533efd",
+      "gitBlob": "d54e86796a38f34a656829011ed17948cf6edb8f",
       "authority": "HEART-P0-ARCHITECTURE-CLOSURE-2026-08-02",
+      "claimIds": ["REP-01", "REP-02", "REP-03", "REP-04", "REP-05", "REP-06", "REP-07", "REP-08"],
       "directQuotesApproved": 0
     },
     "evidenceRegistry": {
@@ -31,11 +32,13 @@
     }
   },
   "scriptureReview": {
+    "readerDetectedReferences": 1,
+    "dossierDetectedReferences": 20,
     "aggregateUniqueReferences": 20,
     "classification": "REFERENCE_LOCATORS_CANONICAL_PARAPHRASE_AND_EXEGETICAL_NAVIGATION_NO_VERBATIM_TRANSLATION",
     "translationVersionIdentifierRequired": false,
     "reasonVersionNotRequired": "The reader and dossier govern Scripture through canonical locators and paraphrase. Neither document approves a verbatim Bible-translation excerpt as a direct quotation.",
-    "governingClaimGroupSelection": "EXACT_CLAIM_IDS_EMBEDDED_IN_DOSSIER",
+    "governingClaimGroupSelection": "EXACT_DOSSIER_CLAIM_RANGE_AND_P0_DOSSIER_ID",
     "allGoverningClaimsHaveSupport": true,
     "allGoverningClaimsHaveLocators": true,
     "allGoverningClaimsHavePublicationBoundary": true,
@@ -44,15 +47,28 @@
   },
   "quotationReview": {
     "aggregateQuotationSurfaces": 42,
+    "reader": {
+      "inlineQuotationSegments": 16,
+      "markdownBlockquotes": 2,
+      "historicalOrSourceDirectQuotes": 0
+    },
+    "evidenceDossier": {
+      "inlineQuotationSegments": 19,
+      "markdownBlockquotes": 5,
+      "historicalOrSourceDirectQuotesApproved": 0
+    },
     "classification": "AUTHORIAL_FORMULAS_CANONICAL_PARAPHRASE_TECHNICAL_TERMS_RHETORICAL_AND_PROHIBITED_FORMULATION_SURFACES",
-    "readerHistoricalOrSourceDirectQuotes": 0,
-    "dossierHistoricalOrSourceDirectQuotesApproved": 0,
     "approvedDirectQuoteTransferToReader": 0,
     "externalAttributionLinks": 0,
     "reviewComplete": true
   },
   "claimGovernance": {
-    "selectionMethod": "Select the unique P0 claim group whose exact claim IDs are embedded in the immutable repentance dossier.",
+    "governingDossierId": "HEART-P0-REPENTANCE",
+    "claimIds": ["REP-01", "REP-02", "REP-03", "REP-04", "REP-05", "REP-06", "REP-07", "REP-08"],
+    "claimsReviewed": 8,
+    "requiredSourceIds": ["HP0-S01", "HP0-S03", "HP0-S04", "HP0-S07", "HP0-S12", "HP0-S14", "HP0-S15"],
+    "requiredSourcesPresent": 7,
+    "selectionMethod": "Require the immutable dossier claim-range marker REP-01…REP-08, then select exactly those eight P0 claims under HEART-P0-REPENTANCE.",
     "allSelectedClaimsClosedOrBoundaryClosed": true,
     "allSelectedClaimsHaveSupportIds": true,
     "allSelectedClaimsHaveLocators": true,
