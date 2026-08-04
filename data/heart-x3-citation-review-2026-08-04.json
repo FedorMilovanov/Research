@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-X3-CITATION-REVIEW-2026-08-04",
+  "status": "X3_ENTRY_CITATION_PASS_COMPLETE_ALL_ASSEMBLED_READERS_REVIEWED_WHOLE_BOOK_OPEN",
+  "reviewedAt": "2026-08-04",
+  "entry": {
+    "order": 18,
+    "id": "HEART-BOOK-X3",
+    "label": "X.3 Заключительная надежда",
+    "inventoryEntrySha256": "4b4c812566e075fcb94612ed94f7fd16d4ec7c43185cd2516f6386298180fc74",
+    "triageStateBefore": "TRIAGED_OPEN",
+    "stateAfter": "ENTRY_CITATION_PASS_COMPLETE"
+  },
+  "immutableSources": {
+    "reader": {
+      "path": "СЕРИЯ СЕРДЦЕ/88_READER_CHAPTER_X3_CONCLUDING_HOPE_2026-08-04.md",
+      "gitBlob": "22a8d83700498e6229c5dbbe04366d23cf8859ec",
+      "fullFileSha256": "44e79c9497b582802aed7cf7eefbc16db4cd9e1b2b3c6b493a4dde823fa57852",
+      "authority": "HEART-X3-READER-ASSEMBLY-2026-08-04",
+      "compositionMode": "PARAPHRASE_ONLY",
+      "newDirectQuotesDeclared": 0
+    },
+    "productConclusion": {
+      "repository": "FedorMilovanov/gb-is-my-strength",
+      "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+      "path": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "gitBlob": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f",
+      "fullFileSha256": "621c0ab9af7a417cf73d9012f7ed02be74d02223a24af65a836b875a06d32e9d",
+      "sectionId": "vyhod",
+      "scopedSha256": "556f29a8402172abaf76dd62480398a8e3a73d0154341b745bc85bc0fb7caa5f"
+    },
+    "r9Dossier": {
+      "path": "СЕРИЯ СЕРДЦЕ/71_R9_CHRIST_OF_REVELATION.md",
+      "gitBlob": "c58d253324e1b4adba19fb7958ccd18a6862452c",
+      "fullFileSha256": "533159ae410d10945ab851cd4d344d374ecb616dfadf947438a554001090f567",
+      "role": "RISEN_CHRIST_BOUNDARY_AND_MIXED_STATUS_EVIDENCE_DOSSIER"
+    },
+    "ownerClosure": {
+      "path": "data/heart-x3-owner-closure-2026-08-04.json",
+      "gitBlob": "c6972b6dab85591d8a4b9ac5a5705ee6b1520513",
+      "authority": "HEART-X3-OWNER-CLOSURE-2026-08-04"
+    },
+    "readerAssembly": {
+      "path": "data/heart-x3-reader-assembly-2026-08-04.json",
+      "gitBlob": "b8426888b2053ab5be1f18ccd1532513a8fe6cca",
+      "authority": "HEART-X3-READER-ASSEMBLY-2026-08-04"
+    },
+    "sourceClosureRegistry": {
+      "path": "СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json",
+      "gitBlob": "c67243b7f180bd84c86a0a52b9134844fb221d90",
+      "scope": "R1-R9_AND_V84_EVIDENCE_BOUNDARIES"
+    }
+  },
+  "scriptureReview": {
+    "readerDetectedReferences": 3,
+    "productSectionDetectedReferences": 1,
+    "r9DetectedReferences": 111,
+    "aggregateUniqueReferences": 115,
+    "readerClassification": "CANONICAL_PARAPHRASE_AND_LOCATOR_NAVIGATION_NO_VERBATIM_TRANSLATION",
+    "productDirectScriptureQuotes": [
+      {
+        "text": "А я в правде буду взирать на лице Твоё; пробудившись, буду насыщаться образом Твоим",
+        "locator": "Пс. 16:15",
+        "version": "RUSSIAN_SYNODAL",
+        "transferToReader": false
+      },
+      {
+        "text": "как Он есть",
+        "locator": "1 Ин. 3:2",
+        "version": "RUSSIAN_SYNODAL",
+        "transferToReader": false
+      }
+    ],
+    "translationVersionIdentifierRequiredForProductSupport": true,
+    "translationVersionResolvedInReceipt": true,
+    "translationVersionIdentifierRequiredForReader": false,
+    "reviewComplete": true
+  },
+  "quotationReview": {
+    "aggregateQuotationSurfaces": 209,
+    "reader": {
+      "inlineQuotationSegments": 0,
+      "markdownBlockquotes": 0,
+      "historicalOrSourceDirectQuotes": 0,
+      "paraphraseOnlyBoundaryPreserved": true
+    },
+    "productConclusion": {
+      "inlineQuotationSegments": 2,
+      "markdownBlockquotes": 0,
+      "classification": "TWO_RUSSIAN_SYNODAL_SCRIPTURE_SURFACES_VERSIONED_IN_RECEIPT_NOT_COPIED_TO_READER"
+    },
+    "r9Dossier": {
+      "inlineQuotationSegments": 204,
+      "markdownBlockquotes": 3,
+      "classification": "MIXED_STATUS_EVIDENCE_BANK_WITH_QUOTE_SAFE_PARTIAL_HOLD_CANDIDATE_AND_DO_NOT_DIRECT_QUOTE_DISPOSITIONS",
+      "statusTaxonomyRequired": [
+        "ВЕРИФИЦИРОВАНО",
+        "ВЕРИФИЦИРОВАНО ЧАСТИЧНО",
+        "[НЕ ВЕРИФИЦИРОВАНО — кандидат]",
+        "DO-NOT-DIRECT-QUOTE",
+        "BOOK-PAGE-HOLD",
+        "SAFE CLOSURE"
+      ],
+      "citationBankHeadingRequired": "Цитатный банк (сводная таблица источников)",
+      "supportDossierPublicationAsDirectQuoteArticleApproved": false,
+      "approvedDirectQuoteTransferToReader": 0,
+      "dispositionCompleteForEntryUse": true
+    },
+    "newDirectQuotesApproved": 0,
+    "reviewComplete": true
+  },
+  "externalLinkReview": {
+    "aggregateExternalLinks": 7,
+    "reviewedLiveAt": "2026-08-04",
+    "links": [
+      {
+        "url": "https://www.crossway.org/articles/qa-dane-ortlund-answers-your-questions-about-the-heart-of-christ-for-sinners/",
+        "disposition": "OFFICIAL_CROSSWAY_QA_LIVE_QUOTE_SAFE_WITHIN_ARTICLE_WORDING_NO_BOOK_PAGE_CLAIM"
+      },
+      {
+        "url": "https://www.crossway.org/articles/what-it-means-that-god-is-rich-in-mercy/",
+        "disposition": "OFFICIAL_CROSSWAY_ARTICLE_LIVE_QUOTE_SAFE_WITHIN_ARTICLE_WORDING_NO_BOOK_PAGE_CLAIM"
+      },
+      {
+        "url": "https://www.gty.org/sermons/66-71/the-glorious-return-of-jesus-christ-part-2",
+        "disposition": "OFFICIAL_GTY_TRANSCRIPT_LIVE_VERIFIED"
+      },
+      {
+        "url": "https://www.gty.org/sermons/90-475/the-lords-word-to-his-church-thyatira",
+        "disposition": "OFFICIAL_GTY_TRANSCRIPT_LIVE_VERIFIED"
+      },
+      {
+        "url": "https://www.ligonier.org/posts/great-quotes-holiness-god",
+        "disposition": "OFFICIAL_LIGONIER_QUOTE_PAGE_LIVE_VERIFIED_NO_BOOK_PAGE_CLAIM"
+      },
+      {
+        "url": "https://www.spurgeon.org/sermons/among-lions",
+        "disposition": "OFFICIAL_PAGE_LIVE_CLAIM_NOT_FOUND_DO_NOT_DIRECT_QUOTE"
+      },
+      {
+        "url": "https://www.spurgeon.org/sermons/an-earnest-warning-against-lukewarmness",
+        "disposition": "OFFICIAL_SPURGEON_LIBRARY_LIVE_VERIFIED_SERMON_LOCATOR_LOCKED"
+      }
+    ],
+    "internalArticleLinkTokens": [
+      "/articles/qa-dane-ortlund-answers-your-questions-about-the-heart-of-christ-for-sinners/",
+      "/articles/what-it-means-that-god-is-rich-in-mercy/"
+    ],
+    "internalArticleLinkClassification": "PATH_COMPONENTS_OF_THE_TWO_EXTERNAL_CROSSWAY_URLS_NOT_PRODUCT_INTERNAL_LINKS",
+    "externalLinkBlockerResolved": true,
+    "reviewComplete": true
+  },
+  "sourceGovernance": {
+    "r9SourceHeadingPresent": true,
+    "readerSourceHeadingPresent": true,
+    "sourceClosureRegistryBound": true,
+    "r9MethodologicalCautionsPreserved": true,
+    "r9OpenQuestionsPreserved": true,
+    "mixedStatusQuoteBankNotBulkApproved": true,
+    "reviewComplete": true
+  },
+  "disposition": {
+    "scriptureNormalizationBlockerResolved": true,
+    "quotationClassificationBlockerResolved": true,
+    "externalLinkBlockerResolved": true,
+    "sourceHeadingOrBibliographyOwnerBlockerApplicable": false,
+    "readerAssemblyBlockerApplicable": false,
+    "remainingEntryBlockers": [],
+    "readerManuscriptChanged": false,
+    "productSourceChanged": false,
+    "r9DossierChanged": false,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0,
+    "entryCitationPassComplete": true
+  },
+  "wholeBookBoundary": {
+    "entryCitationPassComplete": "4 / 18",
+    "entryCitationPassOpen": "14 / 18",
+    "assembledReaderCitationReviewsComplete": "4 / 4",
+    "wholeBookCitationPassComplete": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false
+  },
+  "nextTransaction": "Assemble the next missing final-book reader in a separate chapter transaction; completed citation review now covers all four currently assembled readers."
+}
