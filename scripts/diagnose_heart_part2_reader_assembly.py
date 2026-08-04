@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Temporary read-only Part II source decomposition."""
+"""Temporary read-only Part II source and reader decomposition."""
 from __future__ import annotations
 
 import argparse
@@ -14,6 +14,7 @@ BUILDER = ROOT / "scripts/build_heart_whole_book_citation_inventory.py"
 R3 = Path("СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md")
 R4 = Path("СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md")
 I3 = Path("СЕРИЯ СЕРДЦЕ/109_READER_CHAPTER_I3_FALLEN_HEART_JEREMIAH_17_2026-08-04.md")
+READER = Path("СЕРИЯ СЕРДЦЕ/113_READER_CHAPTER_II_FALLEN_HEART_DIAGNOSIS_2026-08-04.md")
 CURRENT = Path("data/heart-entry-citation-pass-current-v5-2026-08-04.json")
 INTEGRATION = Path("data/heart-whole-book-integration-2026-08-04.json")
 TRIAGE = Path("data/heart-entry-citation-dispositions-2026-08-04.json")
@@ -49,6 +50,7 @@ payload = {
     "r3": scan(R3, "Part II unregenerate-struggle owner"),
     "r4": scan(R4, "Part II four-soils owner"),
     "i3Boundary": scan(I3, "preceding I.3 reader boundary"),
+    "reader": scan(READER, "assembled Part II reader"),
     "currentV5": json.loads((ROOT / CURRENT).read_text(encoding="utf-8")),
     "integration": json.loads((ROOT / INTEGRATION).read_text(encoding="utf-8")),
     "triage": json.loads((ROOT / TRIAGE).read_text(encoding="utf-8")),
@@ -57,7 +59,16 @@ payload["r3"]["gitBlob"] = "ae55b1fad5cccbdb623c551a14222e0f51ec084a"
 payload["r4"]["gitBlob"] = "f82780e13cb064aa89c06427d11a938662fc3ff8"
 payload["i3Boundary"]["gitBlob"] = "a958066bff3010f14540d67c900c362bd88de98a"
 args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print(json.dumps({
-    "r3": {"words": payload["r3"]["words"], "refs": len(payload["r3"]["scan"]["scriptureReferences"]), "quotes": payload["r3"]["scan"]["inlineQuotationSegments"] + payload["r3"]["scan"]["markdownBlockquotes"] + payload["r3"]["scan"]["htmlBlockquotes"], "external": len(payload["r3"]["scan"]["externalLinks"]), "internal": len(payload["r3"]["scan"]["internalArticleLinks"])},
-    "r4": {"words": payload["r4"]["words"], "refs": len(payload["r4"]["scan"]["scriptureReferences"]), "quotes": payload["r4"]["scan"]["inlineQuotationSegments"] + payload["r4"]["scan"]["markdownBlockquotes"] + payload["r4"]["scan"]["htmlBlockquotes"], "external": len(payload["r4"]["scan"]["externalLinks"]), "internal": len(payload["r4"]["scan"]["internalArticleLinks"])},
-}, ensure_ascii=False))
+
+def brief(item: dict) -> dict:
+    return {
+        "words": item["words"],
+        "sha256": item["sha256"],
+        "refs": len(item["scan"]["scriptureReferences"]),
+        "quotes": item["scan"]["inlineQuotationSegments"] + item["scan"]["markdownBlockquotes"] + item["scan"]["htmlBlockquotes"],
+        "external": len(item["scan"]["externalLinks"]),
+        "internal": len(item["scan"]["internalArticleLinks"]),
+        "sourceHeadings": item["scan"]["sourceHeadings"],
+        "footnotes": item["scan"]["footnoteDefinitions"],
+    }
+print(json.dumps({"r3": brief(payload["r3"]), "r4": brief(payload["r4"]), "reader": brief(payload["reader"])}, ensure_ascii=False))
