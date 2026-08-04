@@ -17,10 +17,12 @@ SECTION_IDS = ["chetyre-sostoyaniya", "vopl-i-otvet", "ne-besplotnoe-parenie", "
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--product-root", type=Path, required=True)
-product_root = parser.parse_args().product_root.resolve()
+parser.add_argument("--output", type=Path, required=True)
+args = parser.parse_args()
+product_root = args.product_root.resolve()
 spec = importlib.util.spec_from_file_location("builder", BUILDER)
-module = importlib.util.module_from_spec(spec)
 assert spec is not None and spec.loader is not None
+module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 reader = module.scan_owner(module.r(str(READER.relative_to(ROOT)), "reader"), product_root)
 dossier = module.scan_owner(module.r(str(DOSSIER.relative_to(ROOT)), "dossier"), product_root)
@@ -32,7 +34,7 @@ support = set(dossier["scriptureReferences"]) | set(x1["scriptureReferences"])
 historical = support | set(product_refs)
 reader_refs = set(reader["scriptureReferences"])
 current = historical | reader_refs
-print(json.dumps({
+payload = {
     "reader": sorted(reader_refs, key=str.casefold),
     "product": product_refs,
     "supportCount": len(support),
@@ -40,4 +42,7 @@ print(json.dumps({
     "currentCount": len(current),
     "readerAddedTokens": sorted(reader_refs - historical, key=str.casefold),
     "historicalTokensCoveredByReader": sorted(reader_refs & historical, key=str.casefold),
-}, ensure_ascii=False, indent=2))
+}
+args.output.parent.mkdir(parents=True, exist_ok=True)
+args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(json.dumps(payload, ensure_ascii=False))
