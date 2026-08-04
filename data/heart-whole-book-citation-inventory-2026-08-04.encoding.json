@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-2026-08-04",
+  "encoding": "gzip+base64-chunks",
+  "decodedJsonPath": "data/heart-whole-book-citation-inventory-2026-08-04.json",
+  "decodedJsonBytes": 285803,
+  "decodedJsonSha256": "b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000",
+  "gzipBytes": 46416,
+  "gzipSha256": "e1aea1238abea14bf8b7a4157bd36038c760073ce7932eacdb2582f473277dd8",
+  "base64Characters": 61888,
+  "parts": [
+    {
+      "path": "data/heart-whole-book-citation-inventory-2026-08-04.part01.b64",
+      "characters": 15472,
+      "normalizedSha256": "37741b299f0f2eaad56cfc549d8fb1d5e4c394af724b8f89f937873e80d72f21"
+    },
+    {
+      "path": "data/heart-whole-book-citation-inventory-2026-08-04.part02.b64",
+      "characters": 15472,
+      "normalizedSha256": "e7b4c0f2136b0b6e0fbcd070adbf5f09d749daed07165cb49b0bbb83f8180611"
+    },
+    {
+      "path": "data/heart-whole-book-citation-inventory-2026-08-04.part03.b64",
+      "characters": 15472,
+      "normalizedSha256": "02a5ca0c901c0da63d8f23475001b53ed5a29738833bc1bdd2c2e50239f03b57"
+    },
+    {
+      "path": "data/heart-whole-book-citation-inventory-2026-08-04.part04.b64",
+      "characters": 15472,
+      "normalizedSha256": "04b78ee449b6d9189c25a218dd5caf889bb7b917124eac7d29cc3483e7be6ae8"
+    }
+  ],
+  "decodedAuthorityId": "HEART-WHOLE-BOOK-CITATION-INVENTORY-2026-08-04",
+  "decodedStatus": "EIGHTEEN_ENTRY_READ_ONLY_CITATION_INVENTORY_COMPLETE_BOOK_PASS_OPEN",
+  "boundary": "The encoded chunks preserve the exact deterministic JSON snapshot. They are storage transport only: the permanent validator must decode, verify every hash and compare the snapshot to a fresh read-only Research/Product scan before accepting it."
+}
