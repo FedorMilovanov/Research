@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-X2-OWNER-CLOSURE-2026-08-04",
+  "status": "X2_PRODUCT_SOURCE_ESTABLISHED_UNIFIED_READER_AND_BOOK_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "baseAuthorityId": "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04",
+  "baseAuthority": "data/heart-whole-book-integration-2026-08-04.json",
+  "dependsOnOverlays": [
+    "data/heart-vii-owner-closure-2026-08-04.json",
+    "data/heart-i4-owner-closure-2026-08-04.json"
+  ],
+  "researchSnapshot": "4a3f3966d3ebf9df7d0ff2b3777ec9d446321a9b",
+  "productSnapshot": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "satelliteRegistry": {
+      "path": "src/components/article-pilots/_shared/series/hardTextsSeriesConfig.ts",
+      "blobSha": "152c90b2dcee67d1683289445d0d2239905ed41c"
+    },
+    "articleOwner": {
+      "path": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "blobSha": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f"
+    }
+  },
+  "entryOverride": {
+    "id": "HEART-BOOK-X2",
+    "bookLabel": "X.2 Освобождённое сердце",
+    "previousPrimaryState": "OWNER_REQUIRED",
+    "effectivePrimaryState": "PRODUCT_SOURCE_ONLY",
+    "primaryProductOwner": {
+      "id": "osvobozhdennoe",
+      "slug": "osvobozhdennoe-serdce",
+      "minutes": 27,
+      "role": "glorification-bodily-redemption-final-freedom-from-sin primary source",
+      "sourcePath": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "sourceBlobSha": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f"
+    },
+    "sectionOwners": [
+      {
+        "id": "chetyre-sostoyaniya",
+        "role": "four-state framework and non posse peccare destination"
+      },
+      {
+        "id": "vopl-i-otvet",
+        "role": "Romans 8 bodily redemption and completion"
+      },
+      {
+        "id": "ne-besplotnoe-parenie",
+        "role": "bodily resurrection, incorruption and new creation"
+      },
+      {
+        "id": "ne-sposobno-greshit",
+        "role": "perfect and irreversible freedom only to good"
+      },
+      {
+        "id": "pobeda-nad-vragom",
+        "role": "final defeat of sin, death and the curse"
+      }
+    ],
+    "researchOwners": [
+      "СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md",
+      "СЕРИЯ СЕРДЦЕ/81_READER_CHAPTER_X1_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md"
+    ],
+    "effectiveCitationState": "PRODUCT_SOURCE_CITATION_PASS_REQUIRED",
+    "manuscriptState": "SOURCE_SELECTED_UNIFIED_X2_READER_NOT_ASSEMBLED",
+    "dedupOwner": "X.2 owns positive glorification: bodily redemption, incorruption, final removal of remaining sin, immutable freedom only to good and victory over death and the curse. X.1 retains the judicial fork, two resurrection outcomes and final judgment; X.3 retains the book-level concluding turn from the whole journey of the heart to final hope.",
+    "supportBoundary": {
+      "supports": [
+        "a current Product article exists whose explicit subject is the glorified heart and bodily final victory",
+        "the source distinguishes bodily resurrection from disembodied escape",
+        "the source locates complete inability to sin in glory rather than the present Christian life",
+        "X.1 Research authorities preserve bodily resurrection, judgment and millennial-system boundaries"
+      ],
+      "doesNotSupport": [
+        "a unified chapter X.2 reader manuscript has been assembled for the final book",
+        "X.2 owns the detailed judicial fork or millennial sequence",
+        "X.2 automatically owns the separate X.3 book conclusion",
+        "the whole-book citation pass is complete",
+        "new direct quotations are approved",
+        "the final eighteen-entry book is released in Product"
+      ]
+    }
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 3,
+    "productSourceOnly": 8,
+    "researchDossierOnly": 6,
+    "ownerRequired": 1,
+    "currentProductCoreItems": 6,
+    "bookMatchedProductCoreItems": 5,
+    "selectedProductSatelliteItems": 4,
+    "newDirectQuotesApproved": 0
+  },
+  "remainingOwnerGaps": [
+    "HEART-BOOK-X3"
+  ],
+  "publicationBoundary": {
+    "x2SourceOwnerClosed": true,
+    "x2UnifiedReaderAssembled": false,
+    "wholeBookLineEditComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "supersessionRule": "For HEART-BOOK-X2 current owner state and aggregate effective counts after the VII and I.4 overlays, this overlay supersedes the corresponding baseline fields. X.3 remains a separate owner gap; all other baseline and overlay boundaries remain unchanged."
+}
