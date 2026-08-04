@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-PART2-READER-ASSEMBLY-2026-08-04",
+  "status": "PART2_FINAL_BOOK_READER_ASSEMBLED_PARAPHRASE_ONLY_ENTRY_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "currentV5": ["data/heart-entry-citation-pass-current-v5-2026-08-04.json", "2ba8c381e636a9f1148fa30e3f010d595feb42a6"],
+    "wholeBookIntegration": ["data/heart-whole-book-integration-2026-08-04.json", "06d67275c42c7a9c3bd0365044f358b4b7d7a895"],
+    "historicalTriage": ["data/heart-entry-citation-dispositions-2026-08-04.json", "de4d49cada15b231dfc31058aced4ec7a25928a2"],
+    "precedingI3Reader": ["СЕРИЯ СЕРДЦЕ/109_READER_CHAPTER_I3_FALLEN_HEART_JEREMIAH_17_2026-08-04.md", "a958066bff3010f14540d67c900c362bd88de98a"]
+  },
+  "entry": {
+    "order": 5,
+    "id": "HEART-BOOK-II",
+    "label": "II Диагноз падшего сердца"
+  },
+  "reader": {
+    "path": "СЕРИЯ СЕРДЦЕ/113_READER_CHAPTER_II_FALLEN_HEART_DIAGNOSIS_2026-08-04.md",
+    "gitBlob": "4cca195d034c70a7d3d6c3dd8edc9a04fcffcc20",
+    "fullSha256": "c7e37a30651bf96f77f2a2eba204251591edb2ab28aff1cc8332d6c72f99086d",
+    "wordCount": 1671,
+    "scriptureReferences": 20,
+    "scriptureReferenceSetSha256": "cf61799664220cc835851e4e356198568786eb1962bfc1b17d4acdae8f2c9e23",
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "sourceHeadings": 0,
+    "footnoteDefinitions": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "sourceOwners": [
+    {
+      "role": "UNREGENERATE_STRUGGLE_CEILING",
+      "path": "СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md",
+      "gitBlob": "ae55b1fad5cccbdb623c551a14222e0f51ec084a",
+      "fullSha256": "12c4344acfc96050eaae35d98ed666102e62c700ead9db34c24681a914102efb",
+      "words": 7771,
+      "scriptureReferences": 50,
+      "quotationSurfaces": 304,
+      "externalLinks": 53,
+      "internalArticleLinks": 1,
+      "sourceHeadings": 1
+    },
+    {
+      "role": "FOUR_SOILS_DIAGNOSIS",
+      "path": "СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md",
+      "gitBlob": "f82780e13cb064aa89c06427d11a938662fc3ff8",
+      "fullSha256": "1e5ff030fea335f64dda3a613898d1237d3a4e34d0c303d67f51a64af92e1964",
+      "words": 6528,
+      "scriptureReferences": 68,
+      "quotationSurfaces": 133,
+      "externalLinks": 27,
+      "internalArticleLinks": 0,
+      "sourceHeadings": 0
+    }
+  ],
+  "historicalUnion": {
+    "ownerSurfaces": 2,
+    "sourceHeadings": 1,
+    "scriptureReferences": 118,
+    "scriptureReferenceSetSha256": "5d78a0e23ed09e10f71dfcf9010269430c53faf2bd6ffe1225a3160ee9ffc4a6",
+    "quotationSurfaces": 437,
+    "externalLinks": 80,
+    "externalLinkSetSha256": "f5ce26d3f27bf9e6aa2c87e625d9b91875d580f296d02d80e974a27dd279187f",
+    "internalArticleLinks": 1,
+    "internalLinkSetSha256": "340d19206af863e8b9a7098a84d47199360bec49d1062545c199a4fda8572c65",
+    "internalArticleLinkTargets": ["/articles/opinion/"]
+  },
+  "composition": {
+    "mode": "PARAPHRASE_ONLY",
+    "sourceFilesChanged": false,
+    "precedingI3Changed": false,
+    "sourceQuotationSurfacesCopiedToReader": 0,
+    "sourceLinksCopiedToReader": 0,
+    "longExactSourceSentencesCopied": 0,
+    "newHistoricalClaims": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "ownershipBoundaries": [
+    "I.3 retains the full Jeremiah 17 exposition and its gospel-qualified application",
+    "Part II owns the real horizontal struggle of the unregenerate, its vertical ceiling and the four-soils response to the word",
+    "III.1 retains the promise of a new heart",
+    "III.2 retains the causal exposition of regeneration",
+    "V retains the distinction between conscience-only struggle and Spirit-enabled warfare",
+    "the full 118/437/80/1 dossier surface remains open for a separate Part II citation pass"
+  ],
+  "effectiveState": {
+    "entryId": "HEART-BOOK-II",
+    "previous": "RESEARCH_DOSSIER_ONLY",
+    "current": "ASSEMBLED_READER_CITATION_OPEN"
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReader": 9,
+    "missingStandaloneFinalReaders": 9,
+    "entryCitationPassComplete": 8,
+    "entryCitationPassOpen": 10,
+    "assembledReaderCitationReviewsComplete": 8,
+    "productSourceOnly": 4,
+    "researchDossierOnly": 5,
+    "productSourceLinkRepairsRequired": 3,
+    "newDirectQuotesApproved": 0
+  },
+  "publicationBoundary": {
+    "part2ReaderAssembled": true,
+    "part2EntryCitationPassComplete": false,
+    "allCurrentlyAssembledReadersCitationReviewed": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceLinkRepairsComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Perform a separate fail-closed Part II entry citation pass over the immutable reader and full R3/R4 dossier surface."
+}
