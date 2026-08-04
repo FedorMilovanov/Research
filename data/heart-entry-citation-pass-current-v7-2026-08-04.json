@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 7,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V7-2026-08-04",
+  "status": "TEN_ENTRY_PASSES_COMPOSED_ALL_TEN_READERS_REVIEWED_EIGHT_READERS_OPEN",
+  "generatedAt": "2026-08-04",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-v6-2026-08-04.json",
+    "gitBlob": "fd46d6f99a735301f2966b0e2912eb68805bdff9",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V6-2026-08-04",
+    "historicalCounts": {
+      "entryCitationPassComplete": 9,
+      "entryCitationPassOpen": 9,
+      "assembledReaderEntries": 9,
+      "assembledReaderCitationReviewsComplete": 9,
+      "missingStandaloneFinalReaders": 9,
+      "productSourceOnlyEntries": 4,
+      "researchDossierOnlyEntries": 5,
+      "productSourceRepairsRequired": 3
+    }
+  },
+  "deltaReceipt": {
+    "order": 6,
+    "id": "HEART-BOOK-III1",
+    "label": "III.1 Обещание нового сердца",
+    "path": "data/heart-iii1-citation-review-2026-08-04.json",
+    "gitBlob": "220c4f05339298e7f5b7ace1054f43c6286ee71a",
+    "authorityId": "HEART-III1-CITATION-REVIEW-2026-08-04",
+    "readerAssemblyPath": "data/heart-iii1-reader-assembly-2026-08-04.json",
+    "readerAssemblyGitBlob": "9012cec659ddbac7e65cb0d23ab8a639e0787bab",
+    "stateTransition": "ASSEMBLED_READER_CITATION_OPEN_TO_ENTRY_CITATION_PASS_COMPLETE",
+    "composedCountAfterReceipt": "10 / 18",
+    "productScriptureLocatorRepairsAdded": 1,
+    "attributedTheologicalLocatorHoldsRetained": 1,
+    "lexicalSupportLocatorHoldsRetained": 8,
+    "newDirectQuotesApproved": 0
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 10,
+    "entryCitationPassOpen": 8,
+    "assembledReaderEntries": 10,
+    "assembledReaderCitationReviewsComplete": 10,
+    "missingStandaloneFinalReaders": 8,
+    "productSourceOnlyEntries": 3,
+    "researchDossierOnlyEntries": 5,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 15,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I2",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-X1",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "openEntriesBySourceLane": {
+    "productSourceOnly": [
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VII"
+    ],
+    "researchDossierOnly": [
+      "HEART-BOOK-III2",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ]
+  },
+  "readerAssemblyBacklog": {
+    "removedByDelta": "HEART-BOOK-III1",
+    "remaining": [
+      "HEART-BOOK-III2",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "effectiveMissingStandaloneFinalReaders": 8
+  },
+  "retainedRepairAndHoldBacklog": {
+    "productSourceRepairs": {
+      "totalRequired": 4,
+      "complete": false,
+      "items": [
+        {
+          "entryId": "HEART-BOOK-I3",
+          "kind": "SOURCE_URL_REPAIR",
+          "required": 3
+        },
+        {
+          "entryId": "HEART-BOOK-III1",
+          "kind": "SCRIPTURE_LOCATOR_REPAIR",
+          "required": 1,
+          "surfaceIndex": 57,
+          "requiredLocator": "Флп. 1:6"
+        }
+      ]
+    },
+    "iii1AttributedTheologicalLocatorHolds": {
+      "entryId": "HEART-BOOK-III1",
+      "retained": 1,
+      "surfaceIndex": 26,
+      "readerTransfer": false
+    },
+    "iii1LexicalSupportLocatorHolds": {
+      "entryId": "HEART-BOOK-III1",
+      "retained": 8,
+      "surfaceIndices": [24, 39, 44, 62, 63, 64, 65, 66],
+      "readerTransfer": false
+    },
+    "part2DossierUrlHolds": {
+      "entryId": "HEART-BOOK-II",
+      "retained": 15,
+      "promoted": 0
+    },
+    "part2UnresolvedInternalPath": {
+      "path": "/articles/opinion/",
+      "retained": 1,
+      "readerTransfer": false
+    }
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "STANDALONE_READER_ASSEMBLY",
+    "preferredEntryId": "HEART-BOOK-III2",
+    "reason": "III.1 is now assembled and entry-reviewed. III.2 is the next final-order gap and retains the causal new-birth and regeneration exposition as a Research-dossier lane."
+  }
+}
