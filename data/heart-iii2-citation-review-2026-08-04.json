@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-III2-CITATION-REVIEW-2026-08-04",
+  "status": "III2_ENTRY_CITATION_PASS_COMPLETE_READER_REVIEWED_ZERO_NEW_DIRECT_QUOTES",
+  "generatedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "currentV7": [
+      "data/heart-entry-citation-pass-current-v7-2026-08-04.json",
+      "86c932764ca2eba3bec726876f2cb73a0c78e762"
+    ],
+    "readerAssembly": [
+      "data/heart-iii2-reader-assembly-2026-08-04.json",
+      "82e2a70977d67591c3a290248f102601c7c4d5dc"
+    ],
+    "inventoryBuilder": [
+      "scripts/build_heart_whole_book_citation_inventory.py",
+      "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"
+    ]
+  },
+  "entry": {
+    "order": 7,
+    "id": "HEART-BOOK-III2",
+    "label": "III.2 Рождение свыше и обновление"
+  },
+  "owners": [
+    {
+      "id": "R1_EXEGESIS",
+      "path": "СЕРИЯ СЕРДЦЕ/62_R1_REGENERATION_EXEGESIS.md",
+      "gitBlob": "d75117cf00cf0bb859fc40a67a26dca4c039ec57",
+      "fullSha256": "7ecab949786b371e93df8f68e91a51fdb5af2b77e5fbf6fad4998b8a54d17d29",
+      "scriptureReferences": 64,
+      "quotationSurfaces": 230,
+      "externalLinks": 37,
+      "internalArticleLinks": 0
+    },
+    {
+      "id": "R1_SYSTEMATICS",
+      "path": "СЕРИЯ СЕРДЦЕ/63_R1_REGENERATION_SYSTEMATICS.md",
+      "gitBlob": "143b3477792f52a9fa5721431ff64e7ffb2a4d5a",
+      "fullSha256": "a382b72d7db263da03e073c6d2f032b4eef81caa3cfcc1008d30e817c1f2a0ae",
+      "scriptureReferences": 74,
+      "quotationSurfaces": 379,
+      "externalLinks": 39,
+      "internalArticleLinks": 1
+    }
+  ],
+  "historicalUnion": {
+    "ownerSurfaces": 2,
+    "scriptureReferences": 115,
+    "quotationSurfaces": 609,
+    "externalLinks": 67,
+    "ownerUrlRecords": 76,
+    "internalArticleLinksDetected": 1,
+    "scriptureReferenceSetSha256": "5383b18c99faadd09427126d461e1339326734eb5d107b850615defe2e2a186a",
+    "baseSurfaceManifestSha256": "80f1ee2c8d01200ff5a85a828f59a267ce1703f8f1971a7b0971f19f179788d6",
+    "sectionSummarySha256": "0196b7d3a578e2e7b04acd56254c5a9f9bb6a39cb9f1b795a829f9edb8c49f12",
+    "externalLinkSetSha256": "616381ad2cb3a43ebe2494e9eb838c9f22fbbe58ce7fba881078eed4badf8c08"
+  },
+  "quotationClassification": {
+    "classes": {
+      "EXEGETICAL_SCRIPTURE_OR_GRAMMATICAL_SURFACE": 175,
+      "ATTRIBUTED_CONFESSIONAL_OR_THEOLOGICAL_WITNESS_SURFACE": 349,
+      "EDITORIAL_SYSTEMATIC_OR_CAUTION_SURFACE": 85
+    },
+    "byOwner": {
+      "R1_EXEGESIS": {
+        "EXEGETICAL_SCRIPTURE_OR_GRAMMATICAL_SURFACE": 117,
+        "ATTRIBUTED_CONFESSIONAL_OR_THEOLOGICAL_WITNESS_SURFACE": 78,
+        "EDITORIAL_SYSTEMATIC_OR_CAUTION_SURFACE": 35
+      },
+      "R1_SYSTEMATICS": {
+        "EXEGETICAL_SCRIPTURE_OR_GRAMMATICAL_SURFACE": 58,
+        "ATTRIBUTED_CONFESSIONAL_OR_THEOLOGICAL_WITNESS_SURFACE": 271,
+        "EDITORIAL_SYSTEMATIC_OR_CAUTION_SURFACE": 50
+      }
+    },
+    "total": 609,
+    "sectionRoleMapSha256": "9b0f7d2ee5255e0f733701cae6ba5f17adb97b85a673e9011fba6108aa55a576",
+    "classifiedManifestSha256": "b486c76ec4bfc806dbab1389e64899a06a33509341120550aa1c8a45175b2fdf",
+    "bulkDirectQuoteApproval": false,
+    "readerTransfer": 0
+  },
+  "externalLinkDisposition": {
+    "unique": 67,
+    "ownerUrlRecords": 76,
+    "occurrences": 89,
+    "counts": {
+      "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE": 35,
+      "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER": 5,
+      "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD": 25,
+      "DOSSIER_SOURCE_URL_REPAIR_REQUIRED": 2
+    },
+    "sourceUrlRepairsRequired": [
+      "https://www.monergism.com/regeneration-6`",
+      "https://www.reformedreader.org/ccc/1689lbc/english/Chapter10.htm**"
+    ],
+    "urlDispositionManifestSha256": "8b1430c850c6826dcab99cf7fc743e9c8b296983c3d56965a24eff5a5313c1f9",
+    "readerTransfer": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "internalPathDisposition": {
+    "detected": "/articles/onsite/",
+    "detectedOccurrences": 2,
+    "status": "EXTERNAL_URL_PATH_FRAGMENT_FALSE_POSITIVE",
+    "containingExternalUrls": [
+      "https://www.monergism.com/thethreshold/articles/onsite/monergism_grid.html",
+      "https://www.monergism.com/thethreshold/articles/onsite/regeneration_grudem.html"
+    ],
+    "productTargetExistsOnPinnedSnapshot": false,
+    "readerTransfer": 0,
+    "unresolvedInternalPathsAdded": 0
+  },
+  "readerReview": {
+    "path": "СЕРИЯ СЕРДЦЕ/121_READER_CHAPTER_III2_REGENERATION_2026-08-04.md",
+    "gitBlob": "a3f66d265cd66eff7187dcd5c511faf645833988",
+    "wordCount": 1718,
+    "scriptureReferences": 25,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceHeadings": 0,
+    "historicalDossierQuotationTransfer": 0,
+    "historicalDossierLinkTransfer": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "retainedHoldsAndRepairs": {
+    "productSourceRepairsRequired": 4,
+    "priorPart2DossierUrlHoldsRetained": 15,
+    "iii2DossierUrlHoldsAdded": 25,
+    "totalDossierUrlHoldsRetained": 40,
+    "iii2DossierSourceUrlRepairsRequired": 2,
+    "part2UnresolvedInternalPathsRetained": 1,
+    "iii2UnresolvedInternalPathsAdded": 0
+  },
+  "effectiveState": {
+    "previous": "ASSEMBLED_READER_CITATION_OPEN",
+    "current": "ENTRY_CITATION_PASS_COMPLETE",
+    "entryCitationPassComplete": true,
+    "assembledReaderCitationReviewComplete": true
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 11,
+    "entryCitationPassOpen": 7,
+    "assembledReaders": 11,
+    "assembledReaderCitationReviewsComplete": 11,
+    "missingStandaloneFinalReaders": 7,
+    "productSourceOnlyEntries": 3,
+    "researchDossierOnlyEntries": 4,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 40,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "publicationBoundary": {
+    "iii2EntryCitationPassComplete": true,
+    "allCurrentlyAssembledReadersCitationReviewed": true,
+    "currentV8CompositionComplete": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Compose a separate current V8 delta authority from immutable V7 plus this III.2 receipt; do not assemble III.4 in the same transaction."
+}
