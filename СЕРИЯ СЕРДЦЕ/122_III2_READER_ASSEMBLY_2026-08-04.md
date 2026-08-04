@@ -55,6 +55,10 @@ No historical dossier quotation, link or long exact sentence is copied to the re
 
 ## Effective state
 
+**ASSEMBLED READERS = 11 / 18**  
+**MISSING STANDALONE FINAL READERS = 7**  
+**ENTRY CITATION PASSES COMPLETE = 10 / 18**
+
 - `HEART-BOOK-III2`: `RESEARCH_DOSSIER_ONLY → ASSEMBLED_READER_CITATION_OPEN`;
 - assembled readers: `10 → 11 / 18`;
 - missing standalone readers: `8 → 7`;
