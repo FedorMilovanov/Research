@@ -23,8 +23,8 @@ III.3 закрывается как отдельный entry-level citation pass
 ## 2. Immutable source chain
 
 ```text
-READER GIT BLOB = aa6031f70370f39785f1b8d3af5154dc46e964f9
-DOSSIER GIT BLOB = 42442ba19d58b8b27428f20692704477cc533efd
+READER GIT BLOB = f7a8fe5032ceeb26d9acc4fd6f248ba5f92de29d
+DOSSIER GIT BLOB = d54e86796a38f34a656829011ed17948cf6edb8f
 P0 REGISTRY GIT BLOB = 71c26fed5de96cead1e2f8dcdedbfefc05f3e628
 INVENTORY ENTRY SHA-256 = 91ccbce5aa0bf8a22c75af4ab984b09dd8928623666eaef30ded88cbb1fe4c73
 ```
@@ -63,7 +63,7 @@ APPROVED DIRECT-QUOTE TRANSFER TO READER = 0
 
 ## 5. Governing claim and source chain
 
-Machine validator выбирает единственную P0 claim group, все exact claim IDs которой встроены в immutable repentance dossier:
+Immutable reader и dossier содержат диапазон claims `REP-01…REP-08`. Machine validator требует этот exact range marker, затем выбирает в P0 registry ровно восемь claims с этими ID и проверяет их binding к `HEART-P0-REPENTANCE`.
 
 ```text
 GOVERNING DOSSIER ID = HEART-P0-REPENTANCE
@@ -122,12 +122,15 @@ python3 scripts/validate_heart_iii3_entry_citation_pass.py --product-root ../Pro
 Acceptance требует:
 
 - immutable blob equality для reader, dossier и P0 registry;
+- exact claim-range markers `REP-01…REP-08` в reader и dossier;
 - fresh scan exact Product snapshot;
-- unique Scripture union `20`;
+- reader/dossier/union Scripture counts `1 / 20 / 20`;
+- reader quotation counts `16 inline + 2 blockquotes`;
+- dossier quotation counts `19 inline + 5 blockquotes`;
 - quotation-surface total `42`;
 - отсутствие external/internal links, footnotes и HTML blockquotes;
 - zero-direct-quote declarations в reader и dossier;
-- уникальную governing P0 claim group;
+- exact governing P0 claim and source sets;
 - полную claim/source/locator/publication-boundary chain;
 - исторический triage state `TRIAGED_OPEN` без переписывания snapshot;
 - preceding I.2 pass `1 / 18`;
