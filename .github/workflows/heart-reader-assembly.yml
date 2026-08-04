@@ -66,7 +66,8 @@ jobs:
             scripts/validate_heart_i2_entry_citation_pass.py \
             scripts/validate_heart_iii3_entry_citation_pass.py \
             scripts/validate_heart_x1_entry_citation_pass.py \
-            scripts/validate_heart_x3_entry_citation_pass.py
+            scripts/validate_heart_x3_entry_citation_pass.py \
+            scripts/validate_heart_entry_citation_pass_current.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -126,6 +127,10 @@ jobs:
       - name: Validate completed X.3 entry citation pass
         working-directory: Research
         run: python3 scripts/validate_heart_x3_entry_citation_pass.py --product-root ../Product
+
+      - name: Validate current entry citation pass composition
+        working-directory: Research
+        run: python3 scripts/validate_heart_entry_citation_pass_current.py
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
