@@ -1,8 +1,11 @@
 # СЕРИЯ СЕРДЦЕ — current authority
 
+> **SUPERSEDED FOR CURRENT STATUS BY:** `00_CURRENT_AUTHORITY_2026-08-04.md`.  
+> Этот файл сохраняется как immutable status snapshot после P0 closure и до whole-book owner mapping. Evidence boundaries ниже не отменены.
+
 **Дата:** 2026-08-02  
 **Authority ID:** `HEART-CURRENT-AUTHORITY-2026-08-02`  
-**Статус:** `CURRENT / EVIDENCE CLOSED FOR R1-R9 AND THREE P0 ARCHITECTURE DOSSIERS / EDITORIAL ASSEMBLY ACTIVE`  
+**Статус:** `SUPERSEDED STATUS SNAPSHOT / EVIDENCE CLOSED FOR R1-R9 AND THREE P0 ARCHITECTURE DOSSIERS / EDITORIAL ASSEMBLY ACTIVE AT SNAPSHOT TIME`  
 **Предыдущая authority:** `00_CURRENT_AUTHORITY_2026-08-01.md`
 
 ## 1. Текущая композиция authority
@@ -65,7 +68,7 @@ Research lane завершён для названных P0 тем. Следую
 
 ## 6. Production boundary
 
-Текущий статус означает:
+Текущий статус на дату snapshot означал:
 
 ```text
 RESEARCH EVIDENCE READY
@@ -76,4 +79,4 @@ PRODUCT RELEASE NOT YET WITNESSED
 
 ## 7. Решение
 
-Authority `HEART-CURRENT-AUTHORITY-2026-08-02` supersedes предыдущую только в status/navigation layer и по трём P0 gaps. Она не удаляет исторические досье и не ослабляет source decisions R1–R9. Серия переходит к сборке рукописи.
+Authority `HEART-CURRENT-AUTHORITY-2026-08-02` superseded authority 2026-08-01 only in status/navigation layer and for the three P0 gaps. Authority `HEART-CURRENT-AUTHORITY-2026-08-04` now supersedes this snapshot for current status after reader assembly and 18-entry owner mapping. Historical evidence and negative boundaries remain controlling.

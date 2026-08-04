@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04",
+  "status": "EIGHTEEN_ENTRY_MAPPING_COMPLETE_MANUSCRIPT_AND_CITATION_PASSES_OPEN",
+  "generatedAt": "2026-08-04",
+  "lastVerifiedAt": "2026-08-04",
+  "researchSnapshot": "bd0a0809f6cae37a8650333930020fa53153f2d1",
+  "readerAssemblyAuthority": "data/heart-reader-assembly-2026-08-02.json",
+  "p0EvidenceAuthority": "data/heart-p0-architecture-dossiers-2026-08-02.json",
+  "r1r9SourceAuthority": "СЕРИЯ СЕРДЦЕ/74_SOURCE_CLOSURE_REGISTRY_2026-08-01.json",
+  "productSnapshot": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "path": "src/components/article-pilots/_shared/heartSeriesData.ts",
+    "blobSha": "553adbd67a459fa9e022f00b924e8c20201bf400",
+    "currentCoreItems": [
+      {
+        "id": "prolog",
+        "slug": "chto-bibliya-nazyvaet-serdcem"
+      },
+      {
+        "id": "krajne",
+        "slug": "krajne-li-isporcheno-serdce"
+      },
+      {
+        "id": "rimlyanam",
+        "slug": "rimlyanam-7-veruyushchiy-ili-neveruyushchiy"
+      },
+      {
+        "id": "novoe",
+        "slug": "novoe-serdce"
+      },
+      {
+        "id": "serdce-duh",
+        "slug": "serdce-i-duh"
+      },
+      {
+        "id": "spravochnik",
+        "slug": "serdce-spravochnik"
+      }
+    ],
+    "bookMatchedCoreItems": 5,
+    "outsideFinalBookOrder": [
+      "spravochnik"
+    ]
+  },
+  "entries": [
+    {
+      "order": 1,
+      "id": "HEART-BOOK-I1",
+      "bookLabel": "I.1 Что Библия называет сердцем",
+      "primaryState": "PRODUCT_SOURCE_ONLY",
+      "productOwner": {
+        "id": "prolog",
+        "slug": "chto-bibliya-nazyvaet-serdcem"
+      },
+      "researchOwners": [],
+      "citationState": "PRODUCT_SOURCE_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Owns the book-wide definition of heart; later chapters may recall but must not re-establish the full lexical and canonical survey."
+    },
+    {
+      "order": 2,
+      "id": "HEART-BOOK-I2",
+      "bookLabel": "I.2 Сердце в Эдеме",
+      "primaryState": "ASSEMBLED_READER",
+      "productOwner": null,
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/75_P0_EDEN_HEART_CREATED_AND_FALLEN_2026-08-02.md",
+        "СЕРИЯ СЕРДЦЕ/79_READER_CHAPTER_I2_HEART_IN_EDEN_2026-08-02.md"
+      ],
+      "citationState": "P0_READER_BOUNDARIES_VALIDATED",
+      "dedupOwner": "Owns the Genesis 1-3 creation/fall sequence, original goodness, mutable obedience, shame, hiding, blame and Adam-to-Christ transition."
+    },
+    {
+      "order": 3,
+      "id": "HEART-BOOK-I3",
+      "bookLabel": "I.3 Падшее сердце: Иеремия 17",
+      "primaryState": "PRODUCT_SOURCE_ONLY",
+      "productOwner": {
+        "id": "krajne",
+        "slug": "krajne-li-isporcheno-serdce"
+      },
+      "researchOwners": [],
+      "citationState": "PRODUCT_SOURCE_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Owns the Jeremiah 17 diagnosis and its gospel-qualified application; later diagnosis chapters must not duplicate the full exposition."
+    },
+    {
+      "order": 4,
+      "id": "HEART-BOOK-I4",
+      "bookLabel": "I.4 Внутренний человек и телесная жизнь",
+      "primaryState": "OWNER_REQUIRED",
+      "productOwner": null,
+      "supportingProductOwner": {
+        "id": "prolog",
+        "slug": "chto-bibliya-nazyvaet-serdcem"
+      },
+      "researchOwners": [],
+      "citationState": "OWNER_AND_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Must distinguish whole-person biblical anthropology from reduction of the heart to emotion or from denial of bodily conditions."
+    },
+    {
+      "order": 5,
+      "id": "HEART-BOOK-II",
+      "bookLabel": "II Диагноз падшего сердца",
+      "primaryState": "RESEARCH_DOSSIER_ONLY",
+      "productOwner": null,
+      "supportingProductOwner": {
+        "id": "krajne",
+        "slug": "krajne-li-isporcheno-serdce"
+      },
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md",
+        "СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md"
+      ],
+      "citationState": "R_DOSSIER_BOUNDARIES_AVAILABLE_MANUSCRIPT_REQUIRED",
+      "dedupOwner": "Owns the unregenerate struggle ceiling and four-soils diagnosis without retelling I.2 or the full Jeremiah 17 exposition."
+    },
+    {
+      "order": 6,
+      "id": "HEART-BOOK-III1",
+      "bookLabel": "III.1 Обещание нового сердца",
+      "primaryState": "PRODUCT_SOURCE_ONLY",
+      "productOwner": {
+        "id": "novoe",
+        "slug": "novoe-serdce"
+      },
+      "researchOwners": [],
+      "citationState": "PRODUCT_SOURCE_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Owns the Ezekiel 36 promise and covenant replacement motif; III.2 owns the causal new-birth exposition."
+    },
+    {
+      "order": 7,
+      "id": "HEART-BOOK-III2",
+      "bookLabel": "III.2 Рождение свыше и обновление",
+      "primaryState": "RESEARCH_DOSSIER_ONLY",
+      "productOwner": null,
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/62_R1_REGENERATION_EXEGESIS.md",
+        "СЕРИЯ СЕРДЦЕ/63_R1_REGENERATION_SYSTEMATICS.md"
+      ],
+      "citationState": "R_DOSSIER_BOUNDARIES_AVAILABLE_MANUSCRIPT_REQUIRED",
+      "dedupOwner": "Owns divine causation, new birth, monergistic renewal and means; III.3 owns repentance response and fruit."
+    },
+    {
+      "order": 8,
+      "id": "HEART-BOOK-III3",
+      "bookLabel": "III.3 Сокрушённое сердце: покаяние",
+      "primaryState": "ASSEMBLED_READER",
+      "productOwner": null,
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/76_P0_BROKEN_HEART_REPENTANCE_2026-08-02.md",
+        "СЕРИЯ СЕРДЦЕ/80_READER_CHAPTER_III3_BROKEN_HEART_REPENTANCE_2026-08-02.md"
+      ],
+      "citationState": "P0_READER_BOUNDARIES_VALIDATED",
+      "dedupOwner": "Owns confession, godly and worldly sorrow, fruit, restitution, safety and the forgiveness-trust-office distinctions."
+    },
+    {
+      "order": 9,
+      "id": "HEART-BOOK-III4",
+      "bookLabel": "III.4 Сердце и Дух",
+      "primaryState": "PRODUCT_SOURCE_ONLY",
+      "productOwner": {
+        "id": "serdce-duh",
+        "slug": "serdce-i-duh"
+      },
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/64_R2_OT_REGENERATION_INDWELLING.md"
+      ],
+      "citationState": "PRODUCT_SOURCE_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Owns life and adoption by the Spirit; the R2 dossier supplies the bounded Old Testament continuity/discontinuity excursus."
+    },
+    {
+      "order": 10,
+      "id": "HEART-BOOK-IV",
+      "bookLabel": "IV Сердце и слово Божие",
+      "primaryState": "RESEARCH_DOSSIER_ONLY",
+      "productOwner": null,
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/68_R7A_WORD_AND_HEART.md"
+      ],
+      "citationState": "R_DOSSIER_BOUNDARIES_AVAILABLE_MANUSCRIPT_REQUIRED",
+      "dedupOwner": "Owns Scripture reception, illumination and the heart; forbidden Owen and Kotzker attributions remain excluded."
+    },
+    {
+      "order": 11,
+      "id": "HEART-BOOK-V",
+      "bookLabel": "V Сердце в борьбе с грехом",
+      "primaryState": "PRODUCT_SOURCE_ONLY",
+      "productOwner": {
+        "id": "rimlyanam",
+        "slug": "rimlyanam-7-veruyushchiy-ili-neveruyushchiy"
+      },
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md",
+        "СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md",
+        "СЕРИЯ СЕРДЦЕ/67_R5_TWO_STRUGGLES.md"
+      ],
+      "citationState": "PRODUCT_SOURCE_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Owns the distinction between conscience-only struggle and Spirit-enabled warfare; it may summarize but not absorb III.2 regeneration."
+    },
+    {
+      "order": 12,
+      "id": "HEART-BOOK-VI",
+      "bookLabel": "VI Сердце ученика и фарисея",
+      "primaryState": "RESEARCH_DOSSIER_ONLY",
+      "productOwner": null,
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/69_R7B_PHARISEE_DISCIPLE.md"
+      ],
+      "citationState": "R_DOSSIER_BOUNDARIES_AVAILABLE_MANUSCRIPT_REQUIRED",
+      "dedupOwner": "Owns teachability, religious self-protection and Berean testing without repeating the four-soils chapter."
+    },
+    {
+      "order": 13,
+      "id": "HEART-BOOK-VII",
+      "bookLabel": "VII Сердце в страдании и унынии",
+      "primaryState": "OWNER_REQUIRED",
+      "productOwner": null,
+      "researchOwners": [],
+      "citationState": "OWNER_AND_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Must preserve body-soul, trauma, depression and pastoral-safety boundaries and must not classify suffering as sin by default."
+    },
+    {
+      "order": 14,
+      "id": "HEART-BOOK-VIII",
+      "bookLabel": "VIII Взирая на славу Христа",
+      "primaryState": "RESEARCH_DOSSIER_ONLY",
+      "productOwner": null,
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/70_R8_BEHOLDING_GLORY.md"
+      ],
+      "citationState": "R_DOSSIER_BOUNDARIES_AVAILABLE_MANUSCRIPT_REQUIRED",
+      "dedupOwner": "Owns beholding and transformation; the katoptrizomenoi discussion remains one bounded excursus rather than a separate chapter."
+    },
+    {
+      "order": 15,
+      "id": "HEART-BOOK-IX",
+      "bookLabel": "IX Христос Апокалипсиса и сердце",
+      "primaryState": "RESEARCH_DOSSIER_ONLY",
+      "productOwner": null,
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/71_R9_CHRIST_OF_REVELATION.md"
+      ],
+      "citationState": "R_DOSSIER_BOUNDARIES_AVAILABLE_MANUSCRIPT_REQUIRED",
+      "dedupOwner": "Owns the person, authority and glory of the risen Christ as a standalone bridge; X.1 owns resurrection and final judgment."
+    },
+    {
+      "order": 16,
+      "id": "HEART-BOOK-X1",
+      "bookLabel": "X.1 Суд сердца: два воскресения",
+      "primaryState": "ASSEMBLED_READER",
+      "productOwner": null,
+      "researchOwners": [
+        "СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md",
+        "СЕРИЯ СЕРДЦЕ/81_READER_CHAPTER_X1_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md"
+      ],
+      "citationState": "P0_READER_BOUNDARIES_VALIDATED",
+      "dedupOwner": "Owns the judicial fork, two resurrections, books, judgment and final outcomes without selecting one millennial scheme as a lexical conclusion."
+    },
+    {
+      "order": 17,
+      "id": "HEART-BOOK-X2",
+      "bookLabel": "X.2 Освобождённое сердце",
+      "primaryState": "OWNER_REQUIRED",
+      "productOwner": null,
+      "researchOwners": [],
+      "citationState": "OWNER_AND_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Owns positive glorification, bodily redemption and the end of remaining sin; X.1 owns the judicial fork."
+    },
+    {
+      "order": 18,
+      "id": "HEART-BOOK-X3",
+      "bookLabel": "X.3 Заключительная надежда",
+      "primaryState": "OWNER_REQUIRED",
+      "productOwner": null,
+      "researchOwners": [],
+      "citationState": "OWNER_AND_CITATION_PASS_REQUIRED",
+      "dedupOwner": "Owns the book-level conclusion and transition to hope without introducing new unregistered historical claims or quotations."
+    }
+  ],
+  "integrationBoundary": {
+    "finalOrderMapped": true,
+    "productSnapshotVerified": true,
+    "readerOwnersMapped": true,
+    "r1r9EvidenceOwnersMapped": true,
+    "standaloneOwnerGapsEnumerated": true,
+    "wholeBookLineEditComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "counts": {
+    "finalBookEntries": 18,
+    "assembledReader": 3,
+    "productSourceOnly": 5,
+    "researchDossierOnly": 6,
+    "ownerRequired": 4,
+    "currentProductCoreItems": 6,
+    "bookMatchedProductCoreItems": 5,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Assemble or select manuscript owners for the four OWNER_REQUIRED entries, then perform one read-only citation/reference inventory across all eighteen entries before any whole-book line edit or Product release claim."
+}
