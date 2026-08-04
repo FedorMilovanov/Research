@@ -122,6 +122,83 @@ jobs:
         working-directory: Research
         run: python3 scripts/validate_heart_x1_entry_citation_pass.py --product-root ../Product
 
+      - name: Build read-only X.3 owner-surface diagnostic
+        working-directory: Research
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+          import json
+          import re
+          from pathlib import Path
+
+          root = Path.cwd()
+          product_root = Path('../Product').resolve()
+          spec = importlib.util.spec_from_file_location(
+              'builder', root / 'scripts/build_heart_whole_book_citation_inventory.py'
+          )
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          inventory = module.build(product_root)
+          rows = [row for row in inventory['entries'] if row['id'] == 'HEART-BOOK-X3']
+          if len(rows) != 1:
+              raise SystemExit(f'X.3 entry count: {len(rows)}')
+          entry = rows[0]
+          owner_details = []
+          for owner in entry['owners']:
+              owner_root = root if owner['surface'] == 'research' else product_root
+              full_text = (owner_root / owner['path']).read_text(encoding='utf-8')
+              scoped_text = module.extract_sections(full_text, owner['sections'])
+              owner_details.append({
+                  'scan': owner,
+                  'russianQuotes': re.findall(r'«([^»\n]{8,})»', scoped_text),
+                  'curlyQuotes': re.findall(r'“([^”\n]{8,})”', scoped_text),
+                  'blockquotes': [
+                      line.lstrip()[1:].strip()
+                      for line in scoped_text.splitlines()
+                      if re.match(r'^\s*>\s?\S', line)
+                  ],
+                  'scopedText': scoped_text,
+              })
+          payload = {
+              'entry': entry,
+              'ownerDetails': owner_details,
+          }
+          out = Path('/tmp/x3-citation-diagnostic.json')
+          out.write_text(
+              json.dumps(payload, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+          print(json.dumps({
+              'owners': [
+                  {
+                      'surface': owner['scan']['surface'],
+                      'path': owner['scan']['path'],
+                      'sections': owner['scan']['sections'],
+                      'refs': len(owner['scan']['scriptureReferences']),
+                      'external': len(owner['scan']['externalLinks']),
+                      'internal': len(owner['scan']['internalArticleLinks']),
+                      'inline': owner['scan']['inlineQuotationSegments'],
+                      'markdownBlockquotes': owner['scan']['markdownBlockquotes'],
+                      'htmlBlockquotes': owner['scan']['htmlBlockquotes'],
+                      'sourceHeadings': len(owner['scan']['sourceHeadings']),
+                  }
+                  for owner in owner_details
+              ],
+              'aggregateRefs': len(entry['aggregate']['uniqueScriptureReferences']),
+              'aggregateExternal': len(entry['aggregate']['externalLinks']),
+              'aggregateInternal': len(entry['aggregate']['internalArticleLinks']),
+              'aggregateQuotationSurfaces': entry['aggregate']['quotationSurfaceCount'],
+          }, ensure_ascii=False))
+          PY
+
+      - name: Upload read-only X.3 diagnostic
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: x3-citation-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/x3-citation-diagnostic.json
+          if-no-files-found: error
+          retention-days: 1
+
       - name: Ensure validators and exact Product witness are read-only
         run: |
           git -C Research diff --exit-code
