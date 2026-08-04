@@ -26,7 +26,7 @@ BLOBS = {
     INTEGRATION: "06d67275c42c7a9c3bd0365044f358b4b7d7a895",
     CURRENT_V3: "407c8d78baa966a3336e7bd60edfa51178b74f32",
     TRIAGE: "de4d49cada15b231dfc31058aced4ec7a25928a2",
-    READER: "bb593d52f4838cff079a7409441d2982c4f823ea",
+    READER: "a5d35df1a87ab39abc8a85b1d84f1b1ab03da105",
 }
 PRODUCT_BLOB = "acc12804f5b2450efebbb6e0b2cabd31066ef48c"
 PRODUCT_SHA = "50657f3473c06e16d75ffe740828a9311f642562e824f148113ae28ff9b03c07"
@@ -143,7 +143,7 @@ for key in ("externalLinks", "internalArticleLinks"):
     require(reader_scan.get(key) == [], f"I.1 reader {key} must remain absent")
 for key in ("footnoteDefinitions", "markdownBlockquotes", "htmlBlockquotes", "inlineQuotationSegments"):
     require(reader_scan.get(key) == 0, f"I.1 reader {key} must remain zero")
-require(reader_scan.get("fullFileSha256") == "de692612cf07eefc374a7c30d5b5b9d16ad1704a78e69b3e7ee6589224067f2b", "I.1 reader SHA drift")
+require(reader_scan.get("fullFileSha256") == "0da103d12bf6dca8bf4aced0c9734052c8d6ef3501ffea7c3368f42708398d24", "I.1 reader SHA drift")
 word_count = len(re.findall(r"[A-Za-zА-Яа-яЁё0-9-]+", reader_text))
 require(1800 <= word_count <= 3000, f"I.1 reader word count outside boundary: {word_count}")
 
