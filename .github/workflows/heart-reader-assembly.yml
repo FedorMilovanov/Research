@@ -10,6 +10,7 @@ on:
       - 'data/heart-whole-book-citation-inventory-2026-08-04*'
       - 'scripts/validate_heart_*.py'
       - 'scripts/build_heart_whole_book_citation_inventory.py'
+      - 'scripts/diagnose_heart_part2_reader_assembly.py'
       - 'СЕРИЯ СЕРДЦЕ/**'
   push:
     branches: [main]
@@ -19,6 +20,7 @@ on:
       - 'data/heart-whole-book-citation-inventory-2026-08-04*'
       - 'scripts/validate_heart_*.py'
       - 'scripts/build_heart_whole_book_citation_inventory.py'
+      - 'scripts/diagnose_heart_part2_reader_assembly.py'
       - 'СЕРИЯ СЕРДЦЕ/**'
 
 permissions:
@@ -79,7 +81,8 @@ jobs:
             scripts/validate_heart_entry_citation_pass_current_v4.py \
             scripts/validate_heart_i3_reader_assembly.py \
             scripts/validate_heart_i3_entry_citation_pass.py \
-            scripts/validate_heart_entry_citation_pass_current_v5.py
+            scripts/validate_heart_entry_citation_pass_current_v5.py \
+            scripts/diagnose_heart_part2_reader_assembly.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -191,6 +194,18 @@ jobs:
       - name: Validate current eight-entry citation composition
         working-directory: Research
         run: python3 scripts/validate_heart_entry_citation_pass_current_v5.py
+
+      - name: Build read-only Part II reader diagnostic
+        working-directory: Research
+        run: python3 scripts/diagnose_heart_part2_reader_assembly.py --product-root ../Product --output /tmp/part2-reader-diagnostic.json
+
+      - name: Upload read-only Part II reader diagnostic
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: part2-reader-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/part2-reader-diagnostic.json
+          if-no-files-found: error
+          retention-days: 1
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
