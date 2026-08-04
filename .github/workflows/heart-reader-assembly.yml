@@ -10,6 +10,7 @@ on:
       - 'data/heart-whole-book-citation-inventory-2026-08-04*'
       - 'scripts/validate_heart_*.py'
       - 'scripts/build_heart_whole_book_citation_inventory.py'
+      - 'scripts/diagnose_heart_i1_citation.py'
       - 'СЕРИЯ СЕРДЦЕ/**'
   push:
     branches: [main]
@@ -19,6 +20,7 @@ on:
       - 'data/heart-whole-book-citation-inventory-2026-08-04*'
       - 'scripts/validate_heart_*.py'
       - 'scripts/build_heart_whole_book_citation_inventory.py'
+      - 'scripts/diagnose_heart_i1_citation.py'
       - 'СЕРИЯ СЕРДЦЕ/**'
 
 permissions:
@@ -74,7 +76,8 @@ jobs:
             scripts/validate_heart_i4_reader_assembly.py \
             scripts/validate_heart_i4_entry_citation_pass.py \
             scripts/validate_heart_entry_citation_pass_current_v3.py \
-            scripts/validate_heart_i1_reader_assembly.py
+            scripts/validate_heart_i1_reader_assembly.py \
+            scripts/diagnose_heart_i1_citation.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -166,6 +169,18 @@ jobs:
       - name: Validate paraphrase-only I.1 final-book reader assembly
         working-directory: Research
         run: python3 scripts/validate_heart_i1_reader_assembly.py --product-root ../Product
+
+      - name: Build read-only I.1 citation decomposition
+        working-directory: Research
+        run: python3 scripts/diagnose_heart_i1_citation.py --product-root ../Product --output /tmp/i1-citation-diagnostic.json
+
+      - name: Upload read-only I.1 citation diagnostic
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: i1-citation-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/i1-citation-diagnostic.json
+          if-no-files-found: error
+          retention-days: 1
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
