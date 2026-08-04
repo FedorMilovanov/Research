@@ -16,7 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 ENCODING = ROOT / "data/heart-whole-book-citation-inventory-2026-08-04.encoding.json"
 BUILDER = ROOT / "scripts/build_heart_whole_book_citation_inventory.py"
 HUMAN = ROOT / "СЕРИЯ СЕРДЦЕ/89_WHOLE_BOOK_CITATION_INVENTORY_2026-08-04.md"
-CURRENT = ROOT / "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md"
+BASE_CURRENT = ROOT / "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md"
+CURRENT = ROOT / "СЕРИЯ СЕРДЦЕ/90_CITATION_INVENTORY_CURRENT_OVERLAY_2026-08-04.md"
 
 JSON_SHA = "b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000"
 GZIP_SHA = "e1aea1238abea14bf8b7a4157bd36038c760073ce7932eacdb2582f473277dd8"
@@ -172,6 +173,7 @@ require(len(snapshot.get("globalSurfaces", {}).get("uniqueExternalLinks", [])) =
 require(len(snapshot.get("globalSurfaces", {}).get("uniqueInternalArticleLinks", [])) == 22, "global internal-link list drift")
 
 human = HUMAN.read_text(encoding="utf-8") if HUMAN.is_file() else ""
+base_current = BASE_CURRENT.read_text(encoding="utf-8") if BASE_CURRENT.is_file() else ""
 current = CURRENT.read_text(encoding="utf-8") if CURRENT.is_file() else ""
 for marker in (
     "HEART-WHOLE-BOOK-CITATION-INVENTORY-2026-08-04",
@@ -188,15 +190,26 @@ for marker in (
 ):
     require(marker in human, f"human inventory marker missing: {marker}")
 for marker in (
+    "HEART-CURRENT-AUTHORITY-2026-08-04",
+    "ALL 18 ENTRIES OWNER-MAPPED = TRUE",
+    "ASSEMBLED READER OWNERS = 4",
+    "STANDALONE OWNER GAPS = 0",
+    "WHOLE-BOOK CITATION PASS = OPEN",
+):
+    require(marker in base_current, f"base current authority marker missing: {marker}")
+for marker in (
+    "HEART-CITATION-INVENTORY-CURRENT-OVERLAY-2026-08-04",
     "CITATION INVENTORY = COMPLETE",
     "ENTRY CITATION PASS COMPLETE = 0 / 18",
     "ENTRIES REQUIRING MANUAL BOOK REVIEW = 18 / 18",
     "WHOLE-BOOK CITATION PASS = OPEN",
     "ASSEMBLED READER OWNERS = 4",
     "STANDALONE OWNER GAPS = 0",
+    "BOOTSTRAP --write MODE IN PERMANENT CI = REMOVED",
+    "ENCODED REGISTRY FRESH-SCAN DRIFT GUARD = BOUND",
 ):
-    require(marker in current, f"current authority inventory marker missing: {marker}")
-for text, name in ((human, "human inventory"), (current, "current authority")):
+    require(marker in current, f"current overlay inventory marker missing: {marker}")
+for text, name in ((human, "human inventory"), (base_current, "base current authority"), (current, "current overlay")):
     for forbidden in (
         "WHOLE-BOOK CITATION PASS = CLOSED",
         "ENTRY CITATION PASS COMPLETE = 18 / 18",
@@ -214,4 +227,4 @@ if errors:
         print(f"- {error}", file=sys.stderr)
     raise SystemExit(1)
 
-print("Heart whole-book citation inventory: PASS — 18 entries scanned, 31 files, 1063 Scripture refs, 414 external links, 0/18 citation passes")
+print("Heart whole-book citation inventory: PASS — 18 entries scanned, 31 files, 1063 Scripture refs, 414 external links, 0/18 citation passes; permanent gate bound")
