@@ -55,6 +55,8 @@ DECODED JSON BYTES = 285803
 DECODED JSON SHA-256 = b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000
 CURRENT TRANSPORT AUTHORITY = HEART-WHOLE-BOOK-CITATION-INVENTORY-ENCODING-V2-2026-08-04
 CURRENT GZIP SHA-256 = e1aea3fdbe537972bfc9382d2fa0267d661dd70f5929602ecfcd50dda5f0f834
+CURRENT ORDERED TRANSPORT PARTS = 7
+SECOND LONG SEGMENT SHARDS = 4 × 3868 CHARACTERS
 CORRUPTED V1 TRANSPORT = SUPERSEDED BY V2
 ```
 
@@ -70,7 +72,8 @@ python3 scripts/validate_heart_whole_book_citation_inventory.py --product-root .
 
 Acceptance requires all of the following:
 
-- verify the V2 manifest and four normalized base64 chunk hashes;
+- verify the V2 manifest and seven ordered base64 part hashes;
+- verify the four independently hashed shards of the long second segment;
 - decode the exact V2 gzip stream;
 - verify gzip and decoded JSON sizes and SHA-256;
 - require decoded JSON SHA `b25ff1a498057f6c20d92e5f98965338c40a9de752af198e9de97fefcf81b000`;
@@ -102,7 +105,8 @@ PERMANENT INVENTORY WORKFLOW BINDING = CLOSED
 BOOTSTRAP --write MODE IN PERMANENT CI = REMOVED
 BOOTSTRAP ARTIFACT UPLOAD IN PERMANENT CI = REMOVED
 CORRUPTED V1 TRANSPORT = SUPERSEDED BY V2
-V2 MANIFEST AND FOUR PARTS = COMMITTED
+V2 MANIFEST AND SEVEN ORDERED PARTS = COMMITTED
+LONG SECOND SEGMENT = FOUR SHA-VERIFIED SHARDS
 ENCODED REGISTRY FRESH-SCAN DRIFT GUARD = BOUND
 ```
 
