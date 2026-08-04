@@ -11,11 +11,13 @@ on:
       - 'data/heart-whole-book-integration-2026-08-04.json'
       - 'data/heart-vii-owner-closure-2026-08-04.json'
       - 'data/heart-i4-owner-closure-2026-08-04.json'
+      - 'data/heart-x2-owner-closure-2026-08-04.json'
       - 'scripts/validate_heart_reader_assembly.py'
       - 'scripts/validate_heart_p0_dossiers.py'
       - 'scripts/validate_heart_whole_book_integration.py'
       - 'scripts/validate_heart_vii_owner_closure.py'
       - 'scripts/validate_heart_i4_owner_closure.py'
+      - 'scripts/validate_heart_x2_owner_closure.py'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md'
@@ -34,6 +36,7 @@ on:
       - 'СЕРИЯ СЕРДЦЕ/83_WHOLE_BOOK_INTEGRATION_MANIFEST_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/84_VII_SUFFERING_AND_DESPAIR_OWNER_CLOSURE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/85_I4_INNER_PERSON_AND_EMBODIED_LIFE_OWNER_CLOSURE_2026-08-04.md'
+      - 'СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md'
   push:
     branches: [main]
     paths:
@@ -43,11 +46,13 @@ on:
       - 'data/heart-whole-book-integration-2026-08-04.json'
       - 'data/heart-vii-owner-closure-2026-08-04.json'
       - 'data/heart-i4-owner-closure-2026-08-04.json'
+      - 'data/heart-x2-owner-closure-2026-08-04.json'
       - 'scripts/validate_heart_reader_assembly.py'
       - 'scripts/validate_heart_p0_dossiers.py'
       - 'scripts/validate_heart_whole_book_integration.py'
       - 'scripts/validate_heart_vii_owner_closure.py'
       - 'scripts/validate_heart_i4_owner_closure.py'
+      - 'scripts/validate_heart_x2_owner_closure.py'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md'
       - 'СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/60_V81_JAY_ADAMS_PRIMARY_SOURCE_DEEPENING.md'
@@ -66,6 +71,7 @@ on:
       - 'СЕРИЯ СЕРДЦЕ/83_WHOLE_BOOK_INTEGRATION_MANIFEST_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/84_VII_SUFFERING_AND_DESPAIR_OWNER_CLOSURE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/85_I4_INNER_PERSON_AND_EMBODIED_LIFE_OWNER_CLOSURE_2026-08-04.md'
+      - 'СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md'
 
 permissions:
   contents: read
@@ -100,7 +106,8 @@ jobs:
             scripts/validate_heart_reader_assembly.py \
             scripts/validate_heart_whole_book_integration.py \
             scripts/validate_heart_vii_owner_closure.py \
-            scripts/validate_heart_i4_owner_closure.py
+            scripts/validate_heart_i4_owner_closure.py \
+            scripts/validate_heart_x2_owner_closure.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -124,6 +131,10 @@ jobs:
       - name: Validate chapter I.4 source-owner closure
         working-directory: Research
         run: python3 scripts/validate_heart_i4_owner_closure.py --product-root ../Product
+
+      - name: Validate chapter X.2 glorification source-owner closure
+        working-directory: Research
+        run: python3 scripts/validate_heart_x2_owner_closure.py --product-root ../Product
 
       - name: Ensure validators and exact Product witness are read-only
         run: |
