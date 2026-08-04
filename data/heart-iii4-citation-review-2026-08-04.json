@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-III4-CITATION-REVIEW-2026-08-04",
+  "status": "III4_ENTRY_CITATION_PASS_COMPLETE_ALL_TWELVE_READERS_REVIEWED_ZERO_NEW_DIRECT_QUOTES",
+  "reviewedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "currentV8": [
+      "data/heart-entry-citation-pass-current-v8-2026-08-04.json",
+      "6736f90211e34c5dbb7d9943e617102b660bb5be"
+    ],
+    "readerAssembly": [
+      "data/heart-iii4-reader-assembly-2026-08-04.json",
+      "b9dfda284cfa36d8ee6a7d970dc3bf2a9eeba7c9"
+    ],
+    "inventoryBuilder": [
+      "scripts/build_heart_whole_book_citation_inventory.py",
+      "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"
+    ]
+  },
+  "entry": {
+    "order": 9,
+    "id": "HEART-BOOK-III4",
+    "label": "III.4 Сердце и Дух"
+  },
+  "sourceOwners": [
+    {
+      "id": "PRODUCT",
+      "path": "src/content/articles/serdce-i-duh.mdx",
+      "gitBlob": "1f8ede3dd03a2129bbf7d91d49689d25f0f72571",
+      "fullSha256": "d6b57fc6486e192f371daf430ab50dc7a6d9bdb99b5caa75ed5617d333b2ebe9"
+    },
+    {
+      "id": "R2",
+      "path": "СЕРИЯ СЕРДЦЕ/64_R2_OT_REGENERATION_INDWELLING.md",
+      "gitBlob": "0bc0cde5a85fe015ca8f394c3fda28074ce19577",
+      "fullSha256": "4aa919cf1c54d634852cf179bd006f27d197e0adbc41dbd1c286a0c0f39d9292"
+    }
+  ],
+  "fullOwnerReview": {
+    "detected": {
+      "ownerSurfaces": 2,
+      "scriptureReferences": 136,
+      "quotationSurfaces": 289,
+      "externalLinks": 30,
+      "internalArticleLinks": 6
+    },
+    "ownerCounts": {
+      "PRODUCT": {
+        "scriptureReferences": 45,
+        "quotationSurfaces": 115,
+        "externalLinks": 0,
+        "internalArticleLinks": 6
+      },
+      "R2": {
+        "scriptureReferences": 93,
+        "quotationSurfaces": 174,
+        "externalLinks": 30,
+        "internalArticleLinks": 0
+      }
+    },
+    "scriptureReferenceSetSha256": "7a587385428590ae7d679608a01507f23ea709cd5b3f0979773efc6fe6a62bb9",
+    "sourceSurfaceBaseManifestSha256": "823ede67a8913057b559db8185e5c35a942655964e0a2e73f71ae9595d062f9e",
+    "classifiedSurfaceManifestSha256": "2355e802be1f20e51d2550c3dc4ed3cbfdc3776b8ac32217df7252c68e0f9e64",
+    "roleSectionMapSha256": "a5fb8ff7f6358d6cf79cdcc08cc52197ea8fa0aeeb0796d332ff8c20ad3b46aa",
+    "sectionSummarySha256": "bd5192283b58bea3b8dd1532db2f3c83cbf258d5ce6be8456ed9f426b0d0f1db",
+    "quotationRoleCounts": {
+      "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": 92,
+      "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": 27,
+      "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": 170
+    },
+    "roleSectionMap": {
+      "PRODUCT": {
+        "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": [
+          "Источники и сверка"
+        ],
+        "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": [
+          "Коротко"
+        ],
+        "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": [
+          "Выход: ничто не отлучит",
+          "Дух живёт в вас",
+          "Дух усыновления, а не рабства",
+          "Дух ходатайствует в немощи",
+          "Если Бог за нас",
+          "Золотая цепь спасения",
+          "Кто осудит? Двойное ходатайство",
+          "Начало — не усилие, а «нет осуждения»",
+          "Новый строй мыслей",
+          "Стенание твари и стенание сердца",
+          "Твёрдо, но не дубинкой"
+        ]
+      },
+      "R2": {
+        "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": [
+          "Спектр позиций (по Hamilton, TrinJ 24 [2003]: 37–54; Themelios 30/1 [2004]: 12–22)",
+          "Цитатный банк"
+        ],
+        "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": [
+          "Задача и место в книге",
+          "Открытые вопросы / что ещё копать",
+          "Тезисный каркас (предлагаемая структура)",
+          "Чего избегать"
+        ],
+        "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": [
+          "0. Рамка вопроса: что именно спрашиваем",
+          "1. Числ. 11:25–29 — Дух «на» семидесяти и желание Моисея",
+          "10. Ин. 20:22 — «дунул и говорит: примите Духа Святого»",
+          "11. Евр. 11 (+ 11:39–40; 1 Пет. 1:10–12) — вера ВЗ-святых",
+          "12. Сводная экзегетическая таблица",
+          "2. «Дух в нём»: Быт. 41:38; Числ. 27:18 (+ Дан. 4:8–9; 5:11) — особые люди",
+          "3. 1 Цар. 16:13–14 — Дух «устремился на» Давида и «отступил от» Саула",
+          "4. Пс. 50:13 (МТ 51:13; англ. 51:11) — «Духа Твоего Святого не отними от меня»",
+          "5. Иез. 36:26–27 (пар. 11:19–20; 37:14; ср. Втор. 30:6; Иер. 31:31–34) — обетование",
+          "6. Ис. 63:10–11; Агг. 2:5; Неем. 9:20 — Дух посреди народа (корпоративно)",
+          "7. Ин. 3:3–10 — «ты — учитель Израилев, и этого ли не знаешь?»",
+          "8. Ин. 7:37–39 — «ибо ещё не было Духа» (ключевой текст дискуссии)",
+          "9. Ин. 14:16–17 — «с вами пребывает и в вас будет»",
+          "R2. Было ли возрождение в Ветхом Завете? Обитал ли Дух в ВЗ-святых? (досье для бонус-статьи гл. III + «Трудные тексты»)",
+          "Баптистское исповедание и баптисты",
+          "Отцы (свидетели, не догматический якорь)",
+          "Пуритане",
+          "Рабочее название",
+          "Современные консервативные"
+        ]
+      }
+    },
+    "allScriptureReferenceTokensGoverned": true,
+    "allQuotationSurfacesClassified": true,
+    "bulkDirectQuotationApproval": false
+  },
+  "externalLinkReview": {
+    "reviewedAt": "2026-08-04",
+    "externalLinkSetSha256": "c6585ad6c6612715ec1114ee8e85f72436b0c24a6238a97455fb7cb11cc6f431",
+    "linksDispositioned": 30,
+    "urlOccurrences": 34,
+    "statusCounts": {
+      "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD": 6,
+      "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER": 5,
+      "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE": 19
+    },
+    "statusUrlSetSha256": {
+      "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE": "8f56ec5710b0bf7635cff64a9494d0ee9797032b75769c4c5c08dabf1163e8a4",
+      "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER": "22e009c380ec3e9faa516eb9b77b41dad41501620bfe7e6979c7a587f8ea3852",
+      "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD": "096e41a27cdbece441632735804ef16ada70b6fe7ca14b28dc9392063d38095d"
+    },
+    "dispositionRegistrySha256": "8a144607ecbe3bd671d78476060596f46762b02a690a2ca76fed86db97c67457",
+    "method": {
+      "contextWindowCharacters": 500,
+      "holdTerms": [
+        "НЕ ВЕРИФИЦИРОВАНО",
+        "не верифицирован",
+        "кандидат",
+        "Открытые вопросы",
+        "не использовать",
+        "неточно",
+        "не найден",
+        "не подтверд",
+        "сомнитель",
+        "проверить",
+        "HOLD",
+        "NO-DIRECT-QUOTE",
+        "BOOK-PAGE-HOLD",
+        "DO-NOT-DIRECT-QUOTE",
+        "перед публикацией",
+        "контрольное сличение",
+        "локатор"
+      ],
+      "verifiedTerms": [
+        "ВЕРИФИЦИРОВАНО",
+        "SAFE CLOSURE",
+        "подтверждено",
+        "точная фраза",
+        "дословно",
+        "проверен",
+        "проверено",
+        "VERIFIED"
+      ],
+      "fallback": "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER"
+    },
+    "sourceUrlRepairsAdded": 0,
+    "readerTransfer": 0,
+    "directQuoteBulkApproval": false
+  },
+  "internalLinkReview": {
+    "detected": 6,
+    "allTargetsExistOnPinnedProductCommit": true,
+    "registrySha256": "aeeaf3a5481a2c94db93038732a08b7a11206158f3cfd3ce420df0ea263e8b10",
+    "targets": [
+      {
+        "path": "/articles/kak-menyaetsya-serdce/",
+        "target": "src/content/articles/kak-menyaetsya-serdce.mdx",
+        "exists": true,
+        "targetBlob": "3b621802cfe5198bca3e8c49de328266d8f8abdf",
+        "readerTransfer": false
+      },
+      {
+        "path": "/articles/krajne-li-isporcheno-serdce/",
+        "target": "src/content/articles/krajne-li-isporcheno-serdce.mdx",
+        "exists": true,
+        "targetBlob": "dc27b7a06d37321a068e971c02af4a0df3028ae6",
+        "readerTransfer": false
+      },
+      {
+        "path": "/articles/novoe-serdce/",
+        "target": "src/content/articles/novoe-serdce.mdx",
+        "exists": true,
+        "targetBlob": "8d4936d6b58b380215b259a5511a8c2bfad33a46",
+        "readerTransfer": false
+      },
+      {
+        "path": "/articles/religioznoe-serdce/",
+        "target": "src/content/articles/religioznoe-serdce.mdx",
+        "exists": true,
+        "targetBlob": "9f25c8bfa96c872bf44d631dc2b68a317da2435a",
+        "readerTransfer": false
+      },
+      {
+        "path": "/articles/rimlyanam-7-veruyushchiy-ili-neveruyushchiy/",
+        "target": "src/content/articles/rimlyanam-7-veruyushchiy-ili-neveruyushchiy.mdx",
+        "exists": true,
+        "targetBlob": "b8c5f655446f4bbea95bcb5fff5a8a980aaf25cc",
+        "readerTransfer": false
+      },
+      {
+        "path": "/articles/strah-bozhij-rabskij-ili-synovnij/",
+        "target": "src/content/articles/strah-bozhij-rabskij-ili-synovnij.mdx",
+        "exists": true,
+        "targetBlob": "c878bc9a616d40dd7c9088b2fd7cf16df83f82ae",
+        "readerTransfer": false
+      }
+    ],
+    "newUnresolvedInternalPaths": 0,
+    "readerTransfer": 0
+  },
+  "readerReview": {
+    "path": "СЕРИЯ СЕРДЦЕ/125_READER_CHAPTER_III4_HEART_AND_SPIRIT_2026-08-04.md",
+    "gitBlob": "bf34a453d7fc851bfda3a79eb0389418610c9681",
+    "fullSha256": "6d4d26b32b605f1d2855f4f6ae51f145f98b6e4c39bfda19562fa81a46f7b56d",
+    "words": 1681,
+    "scriptureReferences": 15,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceHeadings": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "sourceStatusBoundary": {
+    "verifiedAndSafeClosureMarkersPreserved": true,
+    "candidateAndOpenQuestionMarkersPreserved": true,
+    "bookPageAndNoDirectQuoteHoldsPreserved": true,
+    "unresolvedSourceCandidatesPromoted": 0,
+    "sourceFilesChanged": false
+  },
+  "retainedRepairAndHoldBacklog": {
+    "productSourceRepairsRequired": 4,
+    "precedingDossierUrlHoldsRetained": 40,
+    "iii4DossierUrlHoldsAdded": 6,
+    "currentDossierUrlHoldsRetained": 46,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "iii4NewUnresolvedInternalPaths": 0
+  },
+  "effectiveState": {
+    "entryCitationPassComplete": true,
+    "assembledReaderCitationReviewComplete": true,
+    "sourceQuotationSurfacesCopiedToReader": 0,
+    "sourceLinksCopiedToReader": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 12,
+    "entryCitationPassOpen": 6,
+    "assembledReaders": 12,
+    "assembledReaderCitationReviewsComplete": 12,
+    "missingStandaloneFinalReaders": 6,
+    "productSourceOnlyEntries": 2,
+    "researchDossierOnlyEntries": 4,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 46,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "publicationBoundary": {
+    "iii4EntryCitationPassComplete": true,
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Compose a separate versioned current V9 authority from immutable current V8 plus this III.4 citation receipt."
+}
