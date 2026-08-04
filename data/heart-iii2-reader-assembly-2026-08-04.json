@@ -17,7 +17,7 @@
       "de4d49cada15b231dfc31058aced4ec7a25928a2"
     ],
     "inventoryBuilder": [
-      "scripts/build_heart_whole-book-citation-inventory.py",
+      "scripts/build_heart_whole_book_citation_inventory.py",
       "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"
     ]
   },
