@@ -8,7 +8,7 @@ import importlib.util
 import json
 import re
 import subprocess
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -52,15 +52,14 @@ def normalize(value: str) -> str:
     return value.strip()
 
 
-def sha(value: Any, *, sort_keys: bool = False) -> str:
-    if isinstance(value, str):
-        payload = value
-    else:
-        payload = json.dumps(value, ensure_ascii=False, separators=(",", ":"), sort_keys=sort_keys)
+def digest(value: Any, *, sort_keys: bool = False) -> str:
+    payload = value if isinstance(value, str) else json.dumps(
+        value, ensure_ascii=False, separators=(",", ":"), sort_keys=sort_keys
+    )
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
-def headings(text: str) -> list[dict[str, Any]]:
+def heading_rows(text: str) -> list[dict[str, Any]]:
     return [
         {"offset": match.start(), "level": len(match.group(1)), "title": match.group(2).strip()}
         for match in re.finditer(r"(?m)^(#{1,4})\s+(.+?)\s*$", text)
@@ -70,15 +69,15 @@ def headings(text: str) -> list[dict[str, Any]]:
 def heading_for(rows: list[dict[str, Any]], offset: int) -> str:
     current = "frontmatter-or-introduction"
     for row in rows:
-        if row["offset"] > offset:
+        if int(row["offset"]) > offset:
             break
         current = str(row["title"])
     return current
 
 
 def extract_surfaces(text: str, owner: str, module: Any) -> list[dict[str, Any]]:
-    heading_rows = headings(text)
-    rows: list[dict[str, Any]] = []
+    headings = heading_rows(text)
+    surfaces: list[dict[str, Any]] = []
     patterns = [
         ("RUSSIAN", re.compile(r"«([^»\n]{8,})»")),
         ("CURLY", re.compile(r"“([^”\n]{8,})”")),
@@ -94,25 +93,25 @@ def extract_surfaces(text: str, owner: str, module: Any) -> list[dict[str, Any]]
                 {module.normalize_ref(item.group(0)) for item in module.SCRIPTURE_RE.finditer(text[left:right])},
                 key=str.casefold,
             )
-            rows.append({
+            surfaces.append({
                 "owner": owner,
                 "position": match.start(),
-                "section": heading_for(heading_rows, match.start()),
+                "section": heading_for(headings, match.start()),
                 "type": surface_type,
-                "sha256": sha(value),
+                "sha256": digest(value),
                 "chars": len(value),
                 "nearbyScripture": nearby,
             })
-    rows.sort(key=lambda row: int(row["position"]))
-    for index, row in enumerate(rows, start=1):
+    surfaces.sort(key=lambda row: int(row["position"]))
+    for index, row in enumerate(surfaces, start=1):
         row["ownerIndex"] = index
         del row["position"]
-    return rows
+    return surfaces
 
 
-def contexts_for_url(text: str, url: str) -> list[dict[str, Any]]:
-    heading_rows = headings(text)
-    rows: list[dict[str, Any]] = []
+def url_contexts(text: str, owner: str, url: str) -> list[dict[str, Any]]:
+    headings = heading_rows(text)
+    contexts: list[dict[str, Any]] = []
     cursor = 0
     while True:
         offset = text.find(url, cursor)
@@ -121,25 +120,32 @@ def contexts_for_url(text: str, url: str) -> list[dict[str, Any]]:
         left = max(0, offset - 500)
         right = min(len(text), offset + len(url) + 500)
         context = normalize(text[left:right])
-        rows.append({
-            "section": heading_for(heading_rows, offset),
-            "contextSha256": sha(context),
-            "holdTerms": sorted({term for term in HOLD_TERMS if term.casefold() in context.casefold()}, key=str.casefold),
-            "verifiedTerms": sorted({term for term in VERIFIED_TERMS if term.casefold() in context.casefold()}, key=str.casefold),
+        contexts.append({
+            "owner": owner,
+            "section": heading_for(headings, offset),
+            "contextSha256": digest(context),
+            "holdTerms": sorted(
+                {term for term in HOLD_TERMS if term.casefold() in context.casefold()}, key=str.casefold
+            ),
+            "verifiedTerms": sorted(
+                {term for term in VERIFIED_TERMS if term.casefold() in context.casefold()}, key=str.casefold
+            ),
         })
         cursor = offset + 1
-    return rows
+    return contexts
 
 
 def classify_url(contexts: list[dict[str, Any]]) -> str:
-    if any(row["holdTerms"] for row in contexts) or any("Открытые вопросы" in row["section"] for row in contexts):
+    if any(row["holdTerms"] for row in contexts) or any(
+        "Открытые вопросы" in str(row["section"]) for row in contexts
+    ):
         return "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD"
     if any(row["verifiedTerms"] for row in contexts):
         return "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE"
     return "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER"
 
 
-def qcount(scan: dict[str, Any]) -> int:
+def quote_count(scan: dict[str, Any]) -> int:
     return scan["inlineQuotationSegments"] + scan["markdownBlockquotes"] + scan["htmlBlockquotes"]
 
 
@@ -157,28 +163,36 @@ assert spec is not None and spec.loader is not None
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
-texts = {
-    "R1_EXEGESIS": EXEGESIS.read_text(encoding="utf-8"),
-    "R1_SYSTEMATICS": SYSTEMATICS.read_text(encoding="utf-8"),
+owners = {
+    "R1_EXEGESIS": EXEGESIS,
+    "R1_SYSTEMATICS": SYSTEMATICS,
 }
+texts = {owner: path.read_text(encoding="utf-8") for owner, path in owners.items()}
 scans = {
-    "R1_EXEGESIS": module.scan_owner(module.r(str(EXEGESIS.relative_to(ROOT)), "III.2 R1 exegesis owner"), product_root),
-    "R1_SYSTEMATICS": module.scan_owner(module.r(str(SYSTEMATICS.relative_to(ROOT)), "III.2 R1 systematics owner"), product_root),
+    owner: module.scan_owner(module.r(str(path.relative_to(ROOT)), f"III.2 {owner} owner"), product_root)
+    for owner, path in owners.items()
 }
-reader_scan = module.scan_owner(module.r(str(READER.relative_to(ROOT)), "III.2 assembled reader"), product_root)
+reader_scan = module.scan_owner(
+    module.r(str(READER.relative_to(ROOT)), "III.2 assembled reader"), product_root
+)
 
 surfaces_by_owner = {
-    owner: extract_surfaces(text, owner, module) for owner, text in texts.items()
+    owner: extract_surfaces(texts[owner], owner, module) for owner in owners
 }
 all_surfaces = surfaces_by_owner["R1_EXEGESIS"] + surfaces_by_owner["R1_SYSTEMATICS"]
 base_manifest = [
-    {key: row[key] for key in ("owner", "ownerIndex", "section", "type", "sha256", "chars", "nearbyScripture")}
+    {key: row[key] for key in (
+        "owner", "ownerIndex", "section", "type", "sha256", "chars", "nearbyScripture"
+    )}
     for row in all_surfaces
 ]
-section_summary: dict[str, dict[str, Any]] = {}
+
+section_buckets: dict[str, dict[str, Any]] = {}
 for row in all_surfaces:
     key = f"{row['owner']}::{row['section']}"
-    bucket = section_summary.setdefault(key, {"surfaces": 0, "types": Counter(), "withNearbyScripture": 0})
+    bucket = section_buckets.setdefault(
+        key, {"surfaces": 0, "types": Counter(), "withNearbyScripture": 0}
+    )
     bucket["surfaces"] += 1
     bucket["types"][row["type"]] += 1
     bucket["withNearbyScripture"] += int(bool(row["nearbyScripture"]))
@@ -188,64 +202,82 @@ section_summary = {
         "types": dict(sorted(value["types"].items())),
         "withNearbyScripture": value["withNearbyScripture"],
     }
-    for key, value in sorted(section_summary.items())
+    for key, value in sorted(section_buckets.items())
 }
 
+unique_urls = sorted(
+    set(scans["R1_EXEGESIS"]["externalLinks"]) | set(scans["R1_SYSTEMATICS"]["externalLinks"]),
+    key=str.casefold,
+)
 url_registry: list[dict[str, Any]] = []
-for owner, text in texts.items():
-    for url in sorted(scans[owner]["externalLinks"], key=str.casefold):
-        contexts = contexts_for_url(text, url)
-        url_registry.append({
-            "owner": owner,
-            "url": url,
-            "status": classify_url(contexts),
-            "occurrences": len(contexts),
-            "sections": sorted({row["section"] for row in contexts}, key=str.casefold),
-            "contexts": contexts,
-            "readerTransfer": False,
-            "directQuoteBulkApproval": False,
-        })
+for url in unique_urls:
+    contexts: list[dict[str, Any]] = []
+    for owner in owners:
+        if url in scans[owner]["externalLinks"]:
+            contexts.extend(url_contexts(texts[owner], owner, url))
+    url_registry.append({
+        "url": url,
+        "owners": sorted({str(row["owner"]) for row in contexts}),
+        "status": classify_url(contexts),
+        "occurrences": len(contexts),
+        "sections": sorted(
+            {f"{row['owner']}::{row['section']}" for row in contexts}, key=str.casefold
+        ),
+        "contexts": contexts,
+        "readerTransfer": False,
+        "directQuoteBulkApproval": False,
+    })
 
 union_refs = sorted(
-    set(scans["R1_EXEGESIS"]["scriptureReferences"]) | set(scans["R1_SYSTEMATICS"]["scriptureReferences"]),
+    set(scans["R1_EXEGESIS"]["scriptureReferences"])
+    | set(scans["R1_SYSTEMATICS"]["scriptureReferences"]),
     key=str.casefold,
 )
 union_internal = sorted(
-    set(scans["R1_EXEGESIS"]["internalArticleLinks"]) | set(scans["R1_SYSTEMATICS"]["internalArticleLinks"]),
+    set(scans["R1_EXEGESIS"]["internalArticleLinks"])
+    | set(scans["R1_SYSTEMATICS"]["internalArticleLinks"]),
     key=str.casefold,
 )
 status_counts = dict(sorted(Counter(row["status"] for row in url_registry).items()))
 
 payload = {
     "authorityId": "HEART-III2-CITATION-DIAGNOSTIC-2026-08-04",
-    "researchHead": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
-    "immutableBlobs": {str(path.relative_to(ROOT)): expected for path, expected in EXPECTED_BLOBS.items()},
+    "researchHead": subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
+    ).strip(),
+    "immutableBlobs": {
+        str(path.relative_to(ROOT)): expected for path, expected in EXPECTED_BLOBS.items()
+    },
     "owners": [
         {
             "id": owner,
-            "path": str((EXEGESIS if owner == "R1_EXEGESIS" else SYSTEMATICS).relative_to(ROOT)),
-            "fullSha256": sha(text),
-            "headings": [{key: row[key] for key in ("level", "title")} for row in headings(text)],
+            "path": str(path.relative_to(ROOT)),
+            "fullSha256": digest(texts[owner]),
+            "headings": [
+                {key: row[key] for key in ("level", "title")}
+                for row in heading_rows(texts[owner])
+            ],
             "scan": {
                 "scriptureReferences": len(scans[owner]["scriptureReferences"]),
-                "quotationSurfaces": qcount(scans[owner]),
+                "quotationSurfaces": quote_count(scans[owner]),
                 "externalLinks": len(scans[owner]["externalLinks"]),
                 "internalArticleLinks": len(scans[owner]["internalArticleLinks"]),
                 "sourceHeadings": scans[owner]["sourceHeadings"],
             },
         }
-        for owner, text in texts.items()
+        for owner, path in owners.items()
     ],
     "historicalUnion": {
         "ownerSurfaces": 2,
         "scriptureReferences": len(union_refs),
         "quotationSurfaces": len(all_surfaces),
-        "externalLinks": len(url_registry),
+        "externalLinks": len(unique_urls),
+        "ownerUrlRecords": sum(len(scans[owner]["externalLinks"]) for owner in owners),
         "internalArticleLinks": len(union_internal),
-        "scriptureReferenceSetSha256": sha(union_refs),
-        "baseSurfaceManifestSha256": sha(base_manifest),
-        "sectionSummarySha256": sha(section_summary, sort_keys=True),
-        "externalLinkSetSha256": sha([{key: row[key] for key in ("owner", "url")} for row in url_registry]),
+        "scriptureReferenceSetSha256": digest(union_refs),
+        "baseSurfaceManifestSha256": digest(base_manifest),
+        "sectionSummarySha256": digest(section_summary, sort_keys=True),
+        "externalLinkSetSha256": digest(unique_urls),
     },
     "scriptureReferences": union_refs,
     "surfaceManifest": base_manifest,
@@ -255,7 +287,7 @@ payload = {
     "internalLinks": union_internal,
     "readerReview": {
         "scriptureReferences": len(reader_scan["scriptureReferences"]),
-        "quotationSurfaces": qcount(reader_scan),
+        "quotationSurfaces": quote_count(reader_scan),
         "externalLinks": len(reader_scan["externalLinks"]),
         "internalArticleLinks": len(reader_scan["internalArticleLinks"]),
         "footnoteDefinitions": reader_scan["footnoteDefinitions"],
@@ -274,10 +306,12 @@ assert payload["readerReview"] == {
     "footnoteDefinitions": 0,
     "sourceHeadings": [],
 }
-OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+OUTPUT.write_text(
+    json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+)
 print(json.dumps({
     "historicalUnion": payload["historicalUnion"],
     "urlStatusCounts": status_counts,
     "readerReview": payload["readerReview"],
-    "outputSha256": sha(OUTPUT.read_text(encoding="utf-8")),
+    "outputSha256": digest(OUTPUT.read_text(encoding="utf-8")),
 }, ensure_ascii=False, indent=2))
