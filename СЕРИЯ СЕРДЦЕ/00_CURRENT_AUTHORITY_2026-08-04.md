@@ -33,6 +33,7 @@ R1-R9 SOURCE CLOSURE = CLOSED WITH NEGATIVE BOUNDARIES
 THREE P0 EVIDENCE DOSSIERS = CLOSED
 INITIAL THREE P0 READER CHAPTERS = ASSEMBLED
 ASSEMBLED READER OWNERS = 4
+CURRENT READER LABEL = X.3 `Заключительная надежда`
 R9 ROLE = CLOSED
 KATOPTRIZOMENOI ROLE = CLOSED
 FINAL ORDER = CLOSED
@@ -190,6 +191,7 @@ The exact section starts at `vyhod` and ends immediately before `istochniki`. It
 ### Current reader state
 
 ```text
+current reader = X.3 `Заключительная надежда`
 reader authority = HEART-X3-READER-ASSEMBLY-2026-08-04
 reader file = 88_READER_CHAPTER_X3_CONCLUDING_HOPE_2026-08-04.md
 current primary state = ASSEMBLED_READER
