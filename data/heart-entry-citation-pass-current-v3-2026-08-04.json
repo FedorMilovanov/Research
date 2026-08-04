@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 3,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V3-2026-08-04",
+  "status": "SIX_ENTRY_PASSES_COMPOSED_ALL_SIX_READERS_REVIEWED_TWELVE_READERS_OPEN",
+  "generatedAt": "2026-08-04",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-v2-2026-08-04.json",
+    "gitBlob": "66d2f46cf639d9825b5b09fc4e94111be3af2a11",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V2-2026-08-04",
+    "historicalCounts": {
+      "entryCitationPassComplete": 5,
+      "entryCitationPassOpen": 13,
+      "assembledReaderEntries": 5,
+      "assembledReaderCitationReviewsComplete": 5,
+      "missingStandaloneFinalReaders": 13
+    }
+  },
+  "deltaReceipt": {
+    "order": 4,
+    "id": "HEART-BOOK-I4",
+    "label": "I.4 Внутренний человек и телесная жизнь",
+    "path": "data/heart-i4-citation-review-2026-08-04.json",
+    "gitBlob": "af16fca67f9eee2763b59c2cd4fae24dc7649388",
+    "authorityId": "HEART-I4-CITATION-REVIEW-2026-08-04",
+    "readerAssemblyPath": "data/heart-i4-reader-assembly-2026-08-04.json",
+    "readerAssemblyGitBlob": "83c535047dbc8bb9f19676d539e04a5e700e43ab",
+    "stateTransition": "ASSEMBLED_READER_CITATION_OPEN_TO_ENTRY_CITATION_PASS_COMPLETE",
+    "composedCountAfterReceipt": "6 / 18",
+    "newDirectQuotesApproved": 0
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 6,
+    "entryCitationPassOpen": 12,
+    "assembledReaderEntries": 6,
+    "assembledReaderCitationReviewsComplete": 6,
+    "missingStandaloneFinalReaders": 12,
+    "productSourceOnlyEntries": 6,
+    "researchDossierOnlyEntries": 6,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I2",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-X1",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "openEntriesBySourceLane": {
+    "productSourceOnly": [
+      "HEART-BOOK-I1",
+      "HEART-BOOK-I3",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VII"
+    ],
+    "researchDossierOnly": [
+      "HEART-BOOK-II",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ]
+  },
+  "readerAssemblyBacklog": {
+    "removedByDelta": "HEART-BOOK-I4",
+    "remaining": [
+      "HEART-BOOK-I1",
+      "HEART-BOOK-I3",
+      "HEART-BOOK-II",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "effectiveMissingStandaloneFinalReaders": 12
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "STANDALONE_READER_ASSEMBLY",
+    "preferredEntryId": "HEART-BOOK-I1",
+    "reason": "I.1 is the first final-order entry, has an exact Product source owner and must become a bounded standalone reader before Part I can be read continuously and before its citation pass can close."
+  }
+}
