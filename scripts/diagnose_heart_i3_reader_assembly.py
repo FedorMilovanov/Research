@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Temporary read-only exact I.3 Product section decomposition."""
+"""Temporary read-only exact I.3 Product and reader decomposition."""
 from __future__ import annotations
 
 import argparse
@@ -13,6 +13,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 BUILDER = ROOT / "scripts/build_heart_whole_book_citation_inventory.py"
 PRODUCT_PATH = Path("src/content/articles/krajne-li-isporcheno-serdce.mdx")
+READER_PATH = Path("СЕРИЯ СЕРДЦЕ/109_READER_CHAPTER_I3_FALLEN_HEART_JEREMIAH_17_2026-08-04.md")
 I1_READER = ROOT / "СЕРИЯ СЕРДЦЕ/105_READER_CHAPTER_I1_WHAT_BIBLE_CALLS_HEART_2026-08-04.md"
 I2_READER = ROOT / "СЕРИЯ СЕРДЦЕ/79_READER_CHAPTER_I2_HEART_IN_EDEN_2026-08-02.md"
 R3 = ROOT / "СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md"
@@ -33,7 +34,9 @@ module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
 product_text = (product_root / PRODUCT_PATH).read_text(encoding="utf-8")
+reader_text = (ROOT / READER_PATH).read_text(encoding="utf-8")
 full_scan = module.scan_owner(module.p(str(PRODUCT_PATH), "historical full I.3 owner"), product_root)
+reader_scan = module.scan_owner(module.r(str(READER_PATH), "assembled I.3 reader"), product_root)
 section_starts = [(m.start(), m.group(1)) for m in re.finditer(r'<h2\s+id="([^"]+)"', product_text)]
 sections: list[dict[str, Any]] = []
 for index, (start, section_id) in enumerate(section_starts):
@@ -70,6 +73,11 @@ payload = {
         "fullScan": full_scan,
         "sections": sections,
     },
+    "reader": {
+        "path": str(READER_PATH),
+        "fullSha256": hashlib.sha256(reader_text.encode("utf-8")).hexdigest(),
+        "scan": reader_scan,
+    },
     "boundaries": {
         "i1Reader": I1_READER.read_text(encoding="utf-8"),
         "i2Reader": I2_READER.read_text(encoding="utf-8"),
@@ -88,6 +96,10 @@ print(json.dumps({
     "fullQuotes": full_scan["inlineQuotationSegments"] + full_scan["markdownBlockquotes"] + full_scan["htmlBlockquotes"],
     "fullExternal": len(full_scan["externalLinks"]),
     "fullInternal": len(full_scan["internalArticleLinks"]),
+    "readerRefs": len(reader_scan["scriptureReferences"]),
+    "readerQuotes": reader_scan["inlineQuotationSegments"] + reader_scan["markdownBlockquotes"] + reader_scan["htmlBlockquotes"],
+    "readerExternal": len(reader_scan["externalLinks"]),
+    "readerInternal": len(reader_scan["internalArticleLinks"]),
     "sectionBytes": {row["id"]: row["bytes"] for row in sections},
     "sectionRefs": {row["id"]: len(row["scriptureReferences"]) for row in sections},
     "sectionQuotes": {row["id"]: row["quotationSurfaces"] for row in sections},
