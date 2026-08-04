@@ -52,6 +52,7 @@ on:
       - 'СЕРИЯ СЕРДЦЕ/87_X3_CONCLUDING_HOPE_OWNER_CLOSURE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/88_READER_CHAPTER_X3_CONCLUDING_HOPE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/89_WHOLE_BOOK_CITATION_INVENTORY_2026-08-04.md'
+      - 'СЕРИЯ СЕРДЦЕ/90_CITATION_INVENTORY_CURRENT_OVERLAY_2026-08-04.md'
   push:
     branches: [main]
     paths:
@@ -102,6 +103,7 @@ on:
       - 'СЕРИЯ СЕРДЦЕ/87_X3_CONCLUDING_HOPE_OWNER_CLOSURE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/88_READER_CHAPTER_X3_CONCLUDING_HOPE_2026-08-04.md'
       - 'СЕРИЯ СЕРДЦЕ/89_WHOLE_BOOK_CITATION_INVENTORY_2026-08-04.md'
+      - 'СЕРИЯ СЕРДЦЕ/90_CITATION_INVENTORY_CURRENT_OVERLAY_2026-08-04.md'
 
 permissions:
   contents: read
