@@ -33,7 +33,7 @@
   },
   "scriptureReview": {
     "readerDetectedReferences": 2,
-    "dossierDetectedReferences": 23,
+    "dossierDetectedReferences": 21,
     "aggregateUniqueReferences": 23,
     "classification": "REFERENCE_LOCATORS_AND_CANONICAL_PARAPHRASE_NO_VERBATIM_TRANSLATION",
     "translationVersionIdentifierRequired": false,
