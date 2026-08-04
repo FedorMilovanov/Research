@@ -12,76 +12,30 @@
     "stateAfter": "ENTRY_CITATION_PASS_COMPLETE"
   },
   "immutableSources": {
-    "reader": {
-      "path": "СЕРИЯ СЕРДЦЕ/97_READER_CHAPTER_X2_GLORIFIED_HEART_2026-08-04.md",
-      "gitBlob": "72f6a9d70b32af65d7a44c297d467e9fabdc4a85",
-      "state": "ASSEMBLED_READER_PARAPHRASE_ONLY"
-    },
-    "readerAssembly": {
-      "path": "data/heart-x2-reader-assembly-2026-08-04.json",
-      "gitBlob": "c6d80a65ad7b4d764252ad48169b1e33ad88d283",
-      "authorityId": "HEART-X2-READER-ASSEMBLY-2026-08-04"
-    },
-    "ownerClosure": {
-      "path": "data/heart-x2-owner-closure-2026-08-04.json",
-      "gitBlob": "c1fdcfba816bdc6131d157760632d4899f89731c",
-      "authorityId": "HEART-X2-OWNER-CLOSURE-2026-08-04"
-    },
-    "precedingCurrentCitationAuthority": {
-      "path": "data/heart-entry-citation-pass-current-2026-08-04.json",
-      "gitBlob": "79cfd859180a95da76c8102bc4167f245487dd74",
-      "entryCitationPassComplete": "4 / 18"
-    },
-    "historicalTriage": {
-      "path": "data/heart-entry-citation-dispositions-2026-08-04.json",
-      "gitBlob": "de4d49cada15b231dfc31058aced4ec7a25928a2",
-      "historicalDetectedScriptureReferences": 50,
-      "historicalDetectedQuotationSurfaces": 59,
-      "interpretation": "Historical inventory includes the X.1 judgment support chain. It is preserved as a witness and is not reapproved in this X.2 transaction."
-    },
+    "reader": ["СЕРИЯ СЕРДЦЕ/97_READER_CHAPTER_X2_GLORIFIED_HEART_2026-08-04.md", "72f6a9d70b32af65d7a44c297d467e9fabdc4a85"],
+    "readerAssembly": ["data/heart-x2-reader-assembly-2026-08-04.json", "c6d80a65ad7b4d764252ad48169b1e33ad88d283"],
+    "ownerClosure": ["data/heart-x2-owner-closure-2026-08-04.json", "c1fdcfba816bdc6131d157760632d4899f89731c"],
+    "precedingCurrentCitationAuthority": ["data/heart-entry-citation-pass-current-2026-08-04.json", "79cfd859180a95da76c8102bc4167f245487dd74"],
+    "historicalTriage": ["data/heart-entry-citation-dispositions-2026-08-04.json", "de4d49cada15b231dfc31058aced4ec7a25928a2"],
     "product": {
       "repository": "FedorMilovanov/gb-is-my-strength",
       "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
       "path": "src/content/articles/osvobozhdennoe-serdce.mdx",
       "gitBlob": "16a2390da6e0d0382165fc8bf8b7150cb9253c1f",
       "fullFileSha256": "621c0ab9af7a417cf73d9012f7ed02be74d02223a24af65a836b875a06d32e9d",
-      "sectionIds": [
-        "chetyre-sostoyaniya",
-        "vopl-i-otvet",
-        "ne-besplotnoe-parenie",
-        "ne-sposobno-greshit",
-        "pobeda-nad-vragom"
-      ]
+      "sectionIds": ["chetyre-sostoyaniya", "vopl-i-otvet", "ne-besplotnoe-parenie", "ne-sposobno-greshit", "pobeda-nad-vragom"]
     }
   },
+  "historicalInventoryWitness": {
+    "detectedScriptureReferences": 50,
+    "detectedQuotationSurfaces": 59,
+    "includesX1JudgmentSupportChain": true,
+    "reapprovedInThisTransaction": false
+  },
   "scriptureReview": {
-    "readerDetectedReferences": [
-      "Рим.7",
-      "Рим.8",
-      "Флп.1:6",
-      "1 Кор.15",
-      "Флп.3:21",
-      "1 Ин.3:2",
-      "Мф.5:8",
-      "Евр.12:23",
-      "Откр.21–22"
-    ],
-    "productScannerDetectedReferences": [
-      "Рим.7:24",
-      "Рим.7:25",
-      "Рим.8:23",
-      "Флп.1:6",
-      "1 Кор.15:42,44",
-      "Флп.3:21",
-      "1 Ин.3:2",
-      "Евр.12:23",
-      "Мф.5:8",
-      "1 Кор.15:55,57"
-    ],
-    "productManualScannerGapReferences": [
-      "Отк.21:4",
-      "Отк.22:3"
-    ],
+    "readerDetectedReferences": ["Рим.7", "Рим.8", "Флп.1:6", "1 Кор.15", "Флп.3:21", "1 Ин.3:2", "Мф.5:8", "Евр.12:23", "Откр.21–22"],
+    "productScannerDetectedReferences": ["Рим.7:24", "Рим.7:25", "Рим.8:23", "Флп.1:6", "1 Кор.15:42,44", "Флп.3:21", "1 Ин.3:2", "Евр.12:23", "Мф.5:8", "1 Кор.15:55,57"],
+    "productManualScannerGapReferences": ["Отк.21:4", "Отк.22:3"],
     "scannerGapReason": "The historical BOOK_TOKEN recognizes Откр but not the Product abbreviation Отк.",
     "readerDetectedReferenceCount": 9,
     "productScannerDetectedReferenceCount": 10,
@@ -92,69 +46,53 @@
     "productScriptureTranslation": "RUSSIAN_SYNODAL",
     "productScriptureQuotationSurfaces": 18,
     "translationVersionResolved": true,
-    "verificationSources": [
-      "https://bible.by/syn/",
-      "https://www.bible.com/ru/bible/400/PHP.1.6.SYNO",
-      "https://www.bible.com/ru/bible/400/PHP.3.21.SYNO"
-    ],
+    "verificationSources": ["https://bible.by/syn/", "https://www.bible.com/ru/bible/400/PHP.1.6.SYNO", "https://www.bible.com/ru/bible/400/PHP.3.21.SYNO"],
     "reviewComplete": true
   },
   "quotationReview": {
-    "reader": {
-      "inlineQuotationSegments": 0,
-      "markdownBlockquotes": 0,
-      "directQuotes": 0,
-      "paraphraseOnlyBoundaryPreserved": true
-    },
+    "reader": {"inlineQuotationSegments": 0, "markdownBlockquotes": 0, "directQuotes": 0, "paraphraseOnlyBoundaryPreserved": true},
     "product": {
       "inlineQuotationSegments": 23,
       "markdownBlockquotes": 3,
       "quotationSurfaces": 26,
-      "categoryCounts": {
-        "RUSSIAN_SYNODAL_SCRIPTURE": 18,
-        "CONFESSIONAL_SUBSTANCE": 1,
-        "BIBLIOGRAPHIC_OR_ARTICLE_TITLE": 2,
-        "EDITORIAL_OR_LEXICAL_GLOSS": 5
-      }
+      "categoryCounts": {"RUSSIAN_SYNODAL_SCRIPTURE": 18, "CONFESSIONAL_SUBSTANCE": 1, "BIBLIOGRAPHIC_OR_ARTICLE_TITLE": 2, "EDITORIAL_OR_LEXICAL_GLOSS": 5}
     },
     "russianSynodalScripture": [
-      {"text":"Бедный я человек! кто избавит меня от сего тела смерти?","locator":"Рим.7:24","surface":"inline"},
-      {"text":"Благодарю Бога моего Иисусом Христом","locator":"Рим.7:25","surface":"inline"},
-      {"text":"искупление тела","locator":"Рим.8:23","surface":"inline_fragment"},
-      {"text":"начавший в вас доброе дело","locator":"Флп.1:6","surface":"inline_fragment"},
-      {"text":"даже до дня Иисуса Христа","locator":"Флп.1:6","surface":"inline_fragment"},
-      {"text":"Мы в себе стенаем, ожидая усыновления, искупления тела нашего (Рим. 8:23).","locator":"Рим.8:23","surface":"markdown_blockquote"},
-      {"text":"уничижённое тело наше преобразит так, что оно будет сообразно славному телу Его","locator":"Флп.3:21","surface":"inline"},
-      {"text":"тело духовное","locator":"1 Кор.15:44","surface":"inline_fragment"},
-      {"text":"телу душевному","locator":"1 Кор.15:44","surface":"inline_fragment"},
-      {"text":"нетление","locator":"1 Кор.15:42","surface":"inline_fragment"},
-      {"text":"Сеется в тлении, восстаёт в нетлении… сеется тело душевное, восстаёт тело духовное (1 Кор. 15:42, 44).","locator":"1 Кор.15:42,44","surface":"markdown_blockquote"},
-      {"text":"Будем подобны Ему, потому что увидим Его, как Он есть","locator":"1 Ин.3:2","surface":"inline"},
-      {"text":"Блаженны чистые сердцем, ибо они Бога узрят","locator":"Мф.5:8","surface":"inline"},
-      {"text":"духов праведников, достигших совершенства","locator":"Евр.12:23","surface":"inline_fragment"},
-      {"text":"поглощается","locator":"1 Кор.15:54","surface":"inline_fragment"},
-      {"text":"отрёт Бог всякую слезу с очей их, и смерти не будет уже; ни плача, ни вопля, ни болезни уже не будет","locator":"Отк.21:4","surface":"inline"},
-      {"text":"И ничего уже не будет проклятого","locator":"Отк.22:3","surface":"inline"},
-      {"text":"Смерть! где твоё жало? ад! где твоя победа?.. Благодарение Богу, даровавшему нам победу Господом нашим Иисусом Христом (1 Кор. 15:55, 57).","locator":"1 Кор.15:55,57","surface":"markdown_blockquote"}
+      ["Бедный я человек! кто избавит меня от сего тела смерти?", "Рим.7:24", "inline"],
+      ["Благодарю Бога моего Иисусом Христом", "Рим.7:25", "inline"],
+      ["искупление тела", "Рим.8:23", "inline_fragment"],
+      ["искупление", "Рим.8:23", "inline_term"],
+      ["начавший в вас доброе дело", "Флп.1:6", "inline_fragment"],
+      ["даже до дня Иисуса Христа", "Флп.1:6", "inline_fragment"],
+      ["Мы в себе стенаем, ожидая усыновления, искупления тела нашего (Рим. 8:23).", "Рим.8:23", "markdown_blockquote"],
+      ["уничижённое тело наше преобразит так, что оно будет сообразно славному телу Его", "Флп.3:21", "inline"],
+      ["тело духовное", "1 Кор.15:44", "inline_fragment"],
+      ["телу душевному", "1 Кор.15:44", "inline_fragment"],
+      ["нетление", "1 Кор.15:42", "inline_term"],
+      ["Сеется в тлении, восстаёт в нетлении… сеется тело душевное, восстаёт тело духовное (1 Кор. 15:42, 44).", "1 Кор.15:42,44", "markdown_blockquote"],
+      ["Будем подобны Ему, потому что увидим Его, как Он есть", "1 Ин.3:2", "inline"],
+      ["Блаженны чистые сердцем, ибо они Бога узрят", "Мф.5:8", "inline"],
+      ["духов праведников, достигших совершенства", "Евр.12:23", "inline_fragment"],
+      ["отрёт Бог всякую слезу с очей их, и смерти не будет уже; ни плача, ни вопля, ни болезни уже не будет", "Отк.21:4", "inline"],
+      ["И ничего уже не будет проклятого", "Отк.22:3", "inline"],
+      ["Смерть! где твоё жало? ад! где твоя победа?.. Благодарение Богу, даровавшему нам победу Господом нашим Иисусом Христом (1 Кор. 15:55, 57).", "1 Кор.15:55,57", "markdown_blockquote"]
     ],
-    "confessionalSubstance": [
-      {
-        "text":"сделана совершенно и неизменно свободной только к добру",
-        "locators":["Westminster Confession of Faith 9.5","Second London Baptist Confession 1689 9.5"],
-        "sourceUrls":["https://www.wts.edu/wcf/chapter-9-of-free-will","https://www.the1689confession.com/1689/chapter-9"],
-        "disposition":"CONFESSIONAL_SUBSTANCE_VERIFIED_RUSSIAN_WORDING_IS_PRODUCT_TRANSLATION_NO_PAGE_EDITION_CLAIM"
-      }
-    ],
+    "confessionalSubstance": [{
+      "text": "сделана совершенно и неизменно свободной только к добру",
+      "locators": ["Westminster Confession of Faith 9.5", "Second London Baptist Confession 1689 9.5"],
+      "sourceUrls": ["https://www.wts.edu/wcf/chapter-9-of-free-will", "https://www.the1689confession.com/1689/chapter-9"],
+      "disposition": "CONFESSIONAL_SUBSTANCE_VERIFIED_RUSSIAN_WORDING_IS_PRODUCT_TRANSLATION_NO_PAGE_EDITION_CLAIM"
+    }],
     "bibliographicOrArticleTitles": [
-      {"text":"Человеческая природа в её четверояком состоянии","locator":"Thomas Boston, Human Nature in Its Fourfold State"},
-      {"text":"Крайне ли испорчено сердце","locator":"/articles/krajne-li-isporcheno-serdce/"}
+      ["Человеческая природа в её четверояком состоянии", "Thomas Boston, Human Nature in Its Fourfold State"],
+      ["Крайне ли испорчено сердце", "/articles/krajne-li-isporcheno-serdce/"]
     ],
     "editorialOrLexicalGlosses": [
-      {"text":"искупление","locator":"ἀπολύτρωσις lexical discussion"},
-      {"text":"освобождение через выкуп","locator":"ἀπολύτρωσις editorial gloss"},
-      {"text":"бесплотное","locator":"editorial contrast"},
-      {"text":"стремящихся","locator":"editorial contrast with достигших"},
-      {"text":"проглотить, поглотить без остатка","locator":"καταπίνω editorial gloss"}
+      ["освобождение через выкуп", "ἀπολύτρωσις editorial gloss"],
+      ["бесплотное", "editorial contrast"],
+      ["стремящихся", "editorial contrast with достигших"],
+      ["поглощается", "καταπίνω lexical discussion"],
+      ["проглотить, поглотить без остатка", "καταπίνω editorial gloss"]
     ],
     "allProductSurfacesDispositioned": "26 / 26",
     "approvedDirectQuoteTransferToReader": 0,
@@ -163,24 +101,12 @@
   },
   "linkReview": {
     "externalLinks": 0,
-    "productInternalArticleLinks": [
-      {
-        "path":"/articles/krajne-li-isporcheno-serdce/",
-        "section":"chetyre-sostoyaniya",
-        "disposition":"EXISTING_PRODUCT_CONTEXT_LINK_SOURCE_ONLY_NOT_COPIED_TO_READER"
-      }
-    ],
+    "productInternalArticleLinks": [{"path": "/articles/krajne-li-isporcheno-serdce/", "section": "chetyre-sostoyaniya", "disposition": "EXISTING_PRODUCT_CONTEXT_LINK_SOURCE_ONLY_NOT_COPIED_TO_READER"}],
     "readerInternalArticleLinks": 0,
     "linkBlockerResolved": true,
     "reviewComplete": true
   },
-  "supportBoundary": {
-    "historicalInventoryIncludesX1Support": true,
-    "x1SupportReapprovedInThisTransaction": false,
-    "x1OwnsJudicialFork": true,
-    "x2OwnsPositiveGlorification": true,
-    "x3OwnsBookConclusion": true
-  },
+  "supportBoundary": {"x1SupportReapprovedInThisTransaction": false, "x1OwnsJudicialFork": true, "x2OwnsPositiveGlorification": true, "x3OwnsBookConclusion": true},
   "disposition": {
     "readerAssemblyBlockerResolved": true,
     "scriptureNormalizationBlockerResolved": true,
