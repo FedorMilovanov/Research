@@ -15,6 +15,7 @@ BASE = ROOT / "data/heart-whole-book-integration-2026-08-04.json"
 VII = ROOT / "data/heart-vii-owner-closure-2026-08-04.json"
 I4 = ROOT / "data/heart-i4-owner-closure-2026-08-04.json"
 X2 = ROOT / "data/heart-x2-owner-closure-2026-08-04.json"
+X3 = ROOT / "data/heart-x3-owner-closure-2026-08-04.json"
 HUMAN = ROOT / "СЕРИЯ СЕРДЦЕ/86_X2_GORIFIED_HEART_OWNER_CLOSURE_2026-08-04.md"
 CURRENT = ROOT / "СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-04.md"
 X1_DOSSIER = ROOT / "СЕРИЯ СЕРДЦЕ/77_P0_JUDGMENT_TWO_RESURRECTIONS_2026-08-02.md"
@@ -91,6 +92,8 @@ base = load(BASE)
 vii = load(VII)
 i4 = load(I4)
 x2 = load(X2)
+x3_present = X3.is_file()
+x3 = load(X3) if x3_present else {}
 
 require(base.get("authorityId") == "HEART-WHOLE-BOOK-INTEGRATION-2026-08-04", "base authority drift")
 require(base.get("counts", {}).get("productSourceOnly") == 5, "base Product count drift")
@@ -183,6 +186,13 @@ require(x2.get("publicationBoundary") == {
 }, "X.2 publication boundary drift")
 require("X.3 remains a separate owner gap" in str(x2.get("supersessionRule", "")), "X.2 supersession boundary missing")
 
+if x3_present:
+    require(x3.get("authorityId") == "HEART-X3-OWNER-CLOSURE-2026-08-04", "X.3 successor authority drift")
+    require(x3.get("dependsOnOverlays", [])[-1:] == ["data/heart-x2-owner-closure-2026-08-04.json"], "X.3 successor dependency drift")
+    require(x3.get("remainingOwnerGaps") == [], "X.3 successor must close the remaining gap")
+    require(x3.get("publicationBoundary", {}).get("x3ConclusionSectionOwnerClosed") is True, "X.3 successor conclusion owner not closed")
+    require(x3.get("publicationBoundary", {}).get("x3BookIntegrationComplete") is False, "X.3 successor book-integration boundary drift")
+
 require(product_root.is_dir(), f"Product checkout missing: {product_root}")
 require(run_git(product_root, "rev-parse", "HEAD") == PRODUCT_COMMIT, "X.2 Product checkout head drift")
 require(run_git(product_root, "hash-object", SATELLITE_PATH) == SATELLITE_BLOB, "X.2 satellite registry blob drift")
@@ -241,9 +251,8 @@ for marker in (
     "UNIFIED X.2 READER = NOT ASSEMBLED",
     "PRODUCT SOURCE OWNERS = 8",
     "STANDALONE OWNER GAPS = 1",
-    "X.3 `Заключительная надежда`",
 ):
-    require(marker in current, f"current authority X.2 marker missing: {marker}")
+    require(marker in current, f"current authority X.2 transaction marker missing: {marker}")
 owner_gap_section = current.split("### Manuscript owner gaps", 1)[-1].split("### Dossier-to-reader assembly", 1)[0]
 for closed_gap in (
     "I.4 `Внутренний человек и телесная жизнь`",
@@ -251,7 +260,11 @@ for closed_gap in (
     "X.2 `Освобождённое сердце`",
 ):
     require(closed_gap not in owner_gap_section, f"closed owner remains in current gap list: {closed_gap}")
-require("X.3 `Заключительная надежда`" in owner_gap_section, "X.3 missing from current owner-gap list")
+if x3_present:
+    require("X.3 `Заключительная надежда`" not in owner_gap_section, "X.3 successor closed but remains in current gap list")
+    require("NONE — all 18 entries have deterministic owners" in owner_gap_section, "X.3 successor owner-gap closure marker missing")
+else:
+    require("X.3 `Заключительная надежда`" in owner_gap_section, "X.3 missing from current owner-gap list before successor")
 
 for path, text in ((HUMAN, human), (CURRENT, current)):
     for forbidden in (
@@ -271,4 +284,4 @@ if errors:
         print(f"- {error}", file=sys.stderr)
     raise SystemExit(1)
 
-print("Heart X.2 owner closure: PASS — exact Product glorification source selected, 1 owner gap remains, reader/citation/Product release open")
+print("Heart X.2 owner closure: PASS — exact Product glorification source selected, successor-aware gap boundary, reader/citation/Product release open")
