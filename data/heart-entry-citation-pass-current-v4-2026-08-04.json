@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 4,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V4-2026-08-04",
+  "status": "SEVEN_ENTRY_PASSES_COMPOSED_ALL_SEVEN_READERS_REVIEWED_ELEVEN_READERS_OPEN",
+  "generatedAt": "2026-08-04",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-v3-2026-08-04.json",
+    "gitBlob": "407c8d78baa966a3336e7bd60edfa51178b74f32",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V3-2026-08-04",
+    "historicalCounts": {
+      "entryCitationPassComplete": 6,
+      "entryCitationPassOpen": 12,
+      "assembledReaderEntries": 6,
+      "assembledReaderCitationReviewsComplete": 6,
+      "missingStandaloneFinalReaders": 12,
+      "productSourceOnlyEntries": 6,
+      "researchDossierOnlyEntries": 6
+    }
+  },
+  "deltaReceipt": {
+    "order": 1,
+    "id": "HEART-BOOK-I1",
+    "label": "I.1 Что Библия называет сердцем",
+    "path": "data/heart-i1-citation-review-2026-08-04.json",
+    "gitBlob": "bb7c20c740aed7fadc181ee3f5e3b79951580edf",
+    "authorityId": "HEART-I1-CITATION-REVIEW-2026-08-04",
+    "readerAssemblyPath": "data/heart-i1-reader-assembly-2026-08-04.json",
+    "readerAssemblyGitBlob": "e4b805585fbe9606efb5ed4c59861d52ec08c699",
+    "stateTransition": "ASSEMBLED_READER_CITATION_OPEN_TO_ENTRY_CITATION_PASS_COMPLETE",
+    "composedCountAfterReceipt": "7 / 18",
+    "newDirectQuotesApproved": 0
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 7,
+    "entryCitationPassOpen": 11,
+    "assembledReaderEntries": 7,
+    "assembledReaderCitationReviewsComplete": 7,
+    "missingStandaloneFinalReaders": 11,
+    "productSourceOnlyEntries": 5,
+    "researchDossierOnlyEntries": 6,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I2",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-X1",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-I3",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "openEntriesBySourceLane": {
+    "productSourceOnly": [
+      "HEART-BOOK-I3",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VII"
+    ],
+    "researchDossierOnly": [
+      "HEART-BOOK-II",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ]
+  },
+  "readerAssemblyBacklog": {
+    "removedByDelta": "HEART-BOOK-I1",
+    "remaining": [
+      "HEART-BOOK-I3",
+      "HEART-BOOK-II",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III2",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-IV",
+      "HEART-BOOK-V",
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "effectiveMissingStandaloneFinalReaders": 11
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "STANDALONE_READER_ASSEMBLY",
+    "preferredEntryId": "HEART-BOOK-I3",
+    "reason": "I.1 and I.2 are assembled and citation-reviewed; I.3 is the next final-order gap and owns the fallen-heart diagnosis before Part II."
+  }
+}
