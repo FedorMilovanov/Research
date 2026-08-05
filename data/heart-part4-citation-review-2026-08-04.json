@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-PART4-CITATION-REVIEW-2026-08-04",
+  "status": "PART4_ENTRY_CITATION_PASS_COMPLETE_ALL_THIRTEEN_READERS_REVIEWED_ZERO_NEW_DIRECT_QUOTES",
+  "reviewedAt": "2026-08-04",
+  "immutableAuthorities": {
+    "currentV9": [
+      "data/heart-entry-citation-pass-current-v9-2026-08-04.json",
+      "d8a65b5233a471e024f5642e1dc3d1a50f13babf"
+    ],
+    "readerAssembly": [
+      "data/heart-part4-reader-assembly-2026-08-04.json",
+      "58f0922734601cf9cf16e448d50836b269b624e0"
+    ],
+    "inventoryBuilder": [
+      "scripts/build_heart_whole_book_citation_inventory.py",
+      "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"
+    ]
+  },
+  "entry": {
+    "order": 10,
+    "id": "HEART-BOOK-IV",
+    "label": "IV Сердце и слово Божие"
+  },
+  "sourceOwner": {
+    "path": "СЕРИЯ СЕРДЦЕ/68_R7A_WORD_AND_HEART.md",
+    "gitBlob": "ceff41072982c664606bc377ef8f1f0f241677da",
+    "fullSha256": "420e5fd82739edcd77258440125fa65dd4a6c8cf36e5377e32a3c2e143285089"
+  },
+  "fullOwnerReview": {
+    "detected": {
+      "scriptureReferences": 65,
+      "quotationSurfaces": 225,
+      "externalLinks": 36,
+      "internalArticleLinks": 2
+    },
+    "scriptureReferenceSetSha256": "f7539fc92fd79dc29d4ba97bad1e43a173cf6d77a77006ea1a77a08059224b3a",
+    "sourceSurfaceBaseManifestSha256": "95ebde518aff552e30f1c08b2ce659f9c75d334cf285c2263be9f9561170d581",
+    "classifiedSurfaceManifestSha256": "7adb959304e297d8a57ce3cb43755c38c2ed2df3b06f7acce6766c7d2fe00e32",
+    "roleSectionMapSha256": "1176f36eac7ed7e182b4ec0304c6ccc4105c62baf356c285421466d1138bf8e5",
+    "sectionSummarySha256": "de421a44aa20c53c52992c990ccea1b5ddc9eaac8165d2595a4ad9a39b5201df",
+    "quotationRoleCounts": {
+      "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": 91,
+      "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": 18,
+      "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": 116
+    },
+    "roleSectionMap": {
+      "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": [
+        "Баптисты (1689)",
+        "Отцы (свидетели, не якорь)",
+        "Пуритане",
+        "Реформаторы",
+        "Современные консервативные",
+        "Цитатный банк"
+      ],
+      "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": [
+        "Задача и место в книге",
+        "Открытые вопросы / что ещё копать",
+        "Предлагаемая структура",
+        "Чего избегать"
+      ],
+      "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": [
+        "1. Евр. 4:2 — «слово слышанное, не растворённое верою» (ЯКОРНЫЙ ТЕКСТ + текстологическая проблема)",
+        "10. Иер. 15:16 — «обретены слова Твои, и я съел их»",
+        "11. Связка «Слово + Дух» (тезис: не Слово ИЛИ Дух, а Дух через Слово)",
+        "12. Против психологизации",
+        "1а. 1 Фес. 2:13 — доктринальный близнец без текстологической проблемы (добавить в статью)",
+        "2. Иак. 1:21 — ἔμφυτος λόγος, насажденное слово",
+        "3. Иак. 1:22–25 — исполнители, а не забывчивые слушатели",
+        "4. Ин. 17:17 — освящение истиной",
+        "5. Пс. 1:2–3 — размышление и дерево у воды",
+        "6. Пс. 118 (119) — анатомия сердца, живущего Словом",
+        "7. 1 Пет. 2:2 — молоко словесное",
+        "8. Кол. 3:16 — слово Христово, вселяющееся обильно (+ параллель с Еф. 5:18–19: ключ «Слово=Дух»)",
+        "9. Втор. 6:6 — слова на сердце",
+        "R7a. Сердце и Слово: Слово, растворённое верой, питает и преображает сердце",
+        "Гомилетические находки"
+      ]
+    },
+    "allScriptureReferenceTokensGoverned": true,
+    "allQuotationSurfacesClassified": true,
+    "bulkDirectQuotationApproval": false
+  },
+  "externalLinkReview": {
+    "reviewedAt": "2026-08-04",
+    "externalLinkSetSha256": "452a0db94764d231a3f8798368c71d624c98fae30825a94e68c98b4f168b4219",
+    "linksDispositioned": 36,
+    "urlOccurrences": 40,
+    "statusCounts": {
+      "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD": 9,
+      "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE": 27
+    },
+    "statusUrlSetSha256": {
+      "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE": "10ac0c02b727a34d2f3dcfe8bcca1a5a7fd58c053aa5a0f0dbd1091ba2e80d37",
+      "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD": "87cd27c8b846fa696ed17979ccfffb29c29733c0a0dbafbed44fc1a520b535f3"
+    },
+    "dispositionRegistrySha256": "9bd28bb0399e0de1abb4078a82bb07de311710ba04fb29a01cc36dee9014f493",
+    "method": {
+      "contextWindowCharacters": 500,
+      "holdTerms": [
+        "НЕ ВЕРИФИЦИРОВАНО",
+        "не верифицирован",
+        "кандидат",
+        "Открытые вопросы",
+        "не использовать",
+        "неточно",
+        "не найден",
+        "не подтверд",
+        "сомнитель",
+        "проверить",
+        "HOLD",
+        "NO-DIRECT-QUOTE",
+        "BOOK-PAGE-HOLD",
+        "DO-NOT-DIRECT-QUOTE",
+        "перед публикацией",
+        "контрольное сличение",
+        "локатор",
+        "не quote-ready",
+        "ATTRIBUTED-ONLY"
+      ],
+      "verifiedTerms": [
+        "ВЕРИФИЦИРОВАНО",
+        "SAFE CLOSURE",
+        "подтверждено",
+        "точная фраза",
+        "дословно",
+        "проверен",
+        "проверено",
+        "VERIFIED"
+      ],
+      "fallback": "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER"
+    },
+    "supportOnlyLinks": 0,
+    "sourceUrlRepairsAdded": 0,
+    "readerTransfer": 0,
+    "directQuoteBulkApproval": false
+  },
+  "internalLinkReview": {
+    "detected": 2,
+    "externalUrlPathFragmentFalsePositives": 2,
+    "registrySha256": "57286008310028af6aeffd85d6d5c6d1cf0251d2d0594febd55e0589823f73c8",
+    "registry": [
+      {
+        "path": "/articles/2009/",
+        "status": "EXTERNAL_URL_PATH_FRAGMENT_FALSE_POSITIVE",
+        "containingExternalUrls": [
+          "https://banneroftruth.org/us/resources/articles/2009/without-the-holy-spirit-we-may-as-well-burn-our-bibles/"
+        ],
+        "productTargetChecked": false,
+        "readerTransfer": false
+      },
+      {
+        "path": "/articles/ignorance-of-scripture-is-ignorance-of-christ-st-jerome/",
+        "status": "EXTERNAL_URL_PATH_FRAGMENT_FALSE_POSITIVE",
+        "containingExternalUrls": [
+          "https://www.crossroadsinitiative.com/media/articles/ignorance-of-scripture-is-ignorance-of-christ-st-jerome/"
+        ],
+        "productTargetChecked": false,
+        "readerTransfer": false
+      }
+    ],
+    "newUnresolvedInternalPaths": 0,
+    "readerTransfer": 0
+  },
+  "readerReview": {
+    "path": "СЕРИЯ СЕРДЦЕ/129_READER_CHAPTER_IV_HEART_AND_WORD_2026-08-04.md",
+    "gitBlob": "55eda03de3cc29e7946a705fe0fffbd2acc4e36d",
+    "fullSha256": "b3a103936c9495484a2a5478262ec4d4e47ab49f5192dd523add1deeb7d23d58",
+    "words": 1580,
+    "scriptureReferences": 18,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceHeadings": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "sourceStatusBoundary": {
+    "verifiedAndSafeClosureMarkersPreserved": true,
+    "candidateAndOpenQuestionMarkersPreserved": true,
+    "bookPageAndNoDirectQuoteHoldsPreserved": true,
+    "owenAttributionRemainsNonQuoteReady": true,
+    "kotzkerAttributionRemainsExcluded": true,
+    "unresolvedSourceCandidatesPromoted": 0,
+    "sourceFilesChanged": false
+  },
+  "retainedRepairAndHoldBacklog": {
+    "productSourceRepairsRequired": 4,
+    "precedingDossierUrlHoldsRetained": 46,
+    "part4DossierUrlHoldsAdded": 9,
+    "currentDossierUrlHoldsRetained": 55,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "part4NewUnresolvedInternalPaths": 0
+  },
+  "effectiveState": {
+    "entryCitationPassComplete": true,
+    "assembledReaderCitationReviewComplete": true,
+    "sourceQuotationSurfacesCopiedToReader": 0,
+    "sourceLinksCopiedToReader": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 13,
+    "entryCitationPassOpen": 5,
+    "assembledReaders": 13,
+    "assembledReaderCitationReviewsComplete": 13,
+    "missingStandaloneFinalReaders": 5,
+    "productSourceOnlyEntries": 2,
+    "researchDossierOnlyEntries": 3,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 55,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "publicationBoundary": {
+    "part4EntryCitationPassComplete": true,
+    "allCurrentlyAssembledReadersReviewed": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Compose a separate versioned current V10 authority from immutable current V9 plus this Part IV citation receipt."
+}
