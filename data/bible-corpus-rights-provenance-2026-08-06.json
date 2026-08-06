@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "BIBLE-CORPUS-RIGHTS-PROVENANCE-2026-08-06",
+  "status": "VERIFIED_DECISION_WITH_ARCHIVE_RIGHTS_AND_PUBLICATION_HOLDS",
+  "reviewedAt": "2026-08-06",
+  "policyAuthority": {
+    "path": "data/repository-evidence-policy-v2.json",
+    "blob": "02de5a9c6617e48a335fe0ffe8c539abee9fc225"
+  },
+  "productEvidenceAnchor": {
+    "repository": "FedorMilovanov/gb-is-my-strength",
+    "commit": "76737eefe16a0feb2fdf729c805d17b5cdcdc376",
+    "registry": {
+      "path": "data/bible/books.json",
+      "blob": "1df1830241657e13efba43ebd27397dbdc46bbc7",
+      "books": 66,
+      "defaultTranslationByTestament": {
+        "OT": "synodal",
+        "NT": "kassian"
+      }
+    },
+    "contract": {
+      "path": "scripts/bible-reference-contract.mjs",
+      "blob": "5b5d3cb368990b7069dd657ef563a8af3491954f",
+      "requiredMetadataFields": [
+        "translation",
+        "source",
+        "sourceUrl",
+        "rights"
+      ]
+    },
+    "sampleRecords": [
+      {
+        "path": "data/bible/synodal/bytie.json",
+        "blob": "4f0e2a6e6b7481442bfb12b39934e3e93be66eea",
+        "translation": "Синодальный перевод",
+        "sourcePresent": true,
+        "sourceUrlPresent": false,
+        "rightsPresent": false,
+        "rightsState": "RIGHTS_UNKNOWN",
+        "publicationState": "BLOCKED",
+        "holds": [
+          "RIGHTS_HOLD",
+          "PUBLICATION_HOLD"
+        ]
+      },
+      {
+        "path": "data/bible/kassian/matfeya.json",
+        "blob": "02ca5a53cc0036f06f425456914fb6eba36b0391",
+        "translation": "Перевод еп. Кассиана (Безобразова)",
+        "sourcePresent": true,
+        "sourceUrlPresent": false,
+        "rightsPresent": false,
+        "rightsState": "PERMISSION_REQUIRED",
+        "publicationState": "BLOCKED",
+        "holds": [
+          "RIGHTS_HOLD",
+          "PUBLICATION_HOLD"
+        ]
+      }
+    ]
+  },
+  "sourceRecords": [
+    {
+      "id": "CROSSWIRE-RUSSYNODAL-MODULE-1.9.1",
+      "title": "The SWORD Project module RusSynodal",
+      "url": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=RusSynodal",
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "identifiedVersion": "1.9.1 (2020-12-21)",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "finding": "CrossWire declares the exact RusSynodal module Public Domain; candidate archive bytes were not acquired or hashed in this wave."
+    },
+    {
+      "id": "CROSSWIRE-RUSSYNODAL-COPYRIGHT",
+      "title": "The SWORD Project copyright record for RusSynodal",
+      "url": "https://www.crosswire.org/sword/copyright/ModInfoCopyright.jsp?modName=RusSynodal",
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "finding": "The institutional copyright record separately labels Distribution License as Public Domain and identifies source endpoints."
+    },
+    {
+      "id": "CROSSWIRE-RUSSYNODAL-RAWZIP",
+      "title": "Official raw RusSynodal package endpoint",
+      "url": "https://www.crosswire.org/ftpmirror/pub/sword/packages/rawzip/RusSynodal.zip",
+      "evidenceClass": "A3",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "identifiedVersion": "expected module 1.9.1; archive bytes not verified",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "finding": "The official endpoint was resolved from CrossWire's module download flow, but the archive could not be downloaded in the current environment; no SHA-256 or book manifest is asserted."
+    },
+    {
+      "id": "CROSSWIRE-RUSSYNODALLIO-1.0.3",
+      "title": "The SWORD Project module RusSynodalLIO",
+      "url": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=RusSynodalLIO",
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "identifiedVersion": "1.0.3 (2019-01-07)",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "finding": "Copyrighted; permission to distribute is granted to CrossWire, not generally to downstream publishers. Reject as an unlicensed Product corpus source."
+    },
+    {
+      "id": "RBO-KASSIAN-CATALOG-2039",
+      "title": "Российское Библейское Общество — Новый Завет в переводе еп. Кассиана",
+      "url": "https://biblia.ru/catalog/Portions/2039/",
+      "evidenceClass": "A3",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "identifiedVersion": "2023 printed edition, ISBN 978-5-7454-1784-9",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "finding": "The official RBO catalog states that the edition was published with RBO permission; no permission for this Product repository is present."
+    },
+    {
+      "id": "ONLY-BIBLE-KASSIAN-PERMISSION-NOTICE",
+      "title": "Библия Онлайн — notice for Cassian translation",
+      "url": "https://only.bible/bible/cas/",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "identifiedVersion": "web publication notice, checked 2026-08-06",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "finding": "Corroborates that an online publisher displays the Cassian text under permission and identifies RBO as the Russian rights administrator; it is not itself permission for this Product."
+    }
+  ],
+  "decisions": {
+    "currentProductCorpus": {
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "reason": "Current canonical records lack exact sourceUrl/rights provenance, and the NT default is a permission-controlled translation."
+    },
+    "synodalCandidate": {
+      "sourceId": "CROSSWIRE-RUSSYNODAL-MODULE-1.9.1",
+      "disposition": "CANDIDATE_ONLY",
+      "reason": "Official Public Domain metadata exists, but exact archive bytes, hash, book manifest, versification and 66-book mapping are not yet verified."
+    },
+    "kassian": {
+      "disposition": "DO_NOT_EXPAND_OR_REPUBLISH_WITHOUT_PERMISSION",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "RIGHTS_HOLD",
+        "PUBLICATION_HOLD"
+      ]
+    },
+    "rusSynodalLIO": {
+      "disposition": "REJECT_UNLICENSED_DOWNSTREAM_USE",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "BLOCKED"
+    },
+    "searchP207": {
+      "disposition": "REMAINS_OPEN",
+      "reason": "Research identifies a viable candidate and forbidden alternatives, but has not acquired and validated the exact publication corpus."
+    }
+  },
+  "nextVerifiableActions": [
+    "Acquire the official RusSynodal raw ZIP from the exact CrossWire endpoint outside this restricted environment.",
+    "Record archive byte length and SHA-256 before extraction.",
+    "Verify the embedded module version, DistributionLicense, TextSource and complete book manifest.",
+    "Map only the Product's 66 protocanonical books and document any Synodal/SynodalProt versification conversion.",
+    "Generate a verse-level import manifest and compare every existing Product canonical record before replacement.",
+    "Populate sourceUrl and rights metadata from the exact acquired module, not from generic web copies.",
+    "Obtain explicit written permission before retaining or expanding Cassian text in a public Product corpus; otherwise replace it with the verified eligible source.",
+    "Run source, corpus, search, dist and browser witnesses in a later Product lane; Research closure alone is not publication approval."
+  ],
+  "nonClaims": [
+    "No Bible archive was acquired or hashed in this wave.",
+    "No complete 66-book text corpus was generated.",
+    "No Product, AuditRepo or production deployment was changed.",
+    "No legal opinion or guaranteed public-domain determination beyond the cited institutional module record is asserted.",
+    "SEARCH-P2-07 is not closed."
+  ]
+}
