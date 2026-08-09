@@ -86,10 +86,13 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 
 ### Tarte au Citron / Jacques Genin
 
-- Genin's **2009 citron-basilic** version is strongly documented by later French journalism and should be treated as a modern authored reinterpretation, not the invention of tarte au citron as a genre.
+- Genin's citron-basilic is treated as a modern authored reinterpretation, not the invention of tarte au citron as a genre.
+- **Authorized author-source custody is now closed at object level:** Éditions Alternatives' official archive identifies Jacques Genin + Ingrid Astier, *Le meilleur de la tarte au citron*, published **14 October 2010**, ISBN **978-2-86227-651-9**, and explicitly describes it as Genin transmitting tart-dough, baking and lemon-cream methods plus variations. The copyrighted book remains a reference/authorized acquisition target, not a reusable Product asset.
+- The exact statement **`citron-basilic version created in 2009` remains PROBABLE/B1**, because Le Monde 2021 gives 2009 while the located authorized 2010 publisher page does not state the creation year. A contemporaneous April 2009 Le Monde profile confirms the new rue de Turenne context but not the tart's exact creation date.
 - A 2026 Relais Desserts professional historical synthesis remains an explicit **falsification/locator source**: it challenges a timeless purely French modern-tart genealogy and points toward a wider English/transnational lemon-cream history. The synthesis itself is not primary origin proof.
-- **Eliza Acton 1845 materially changes the governing boundary.** Wellcome/University of Leeds identifies a digitized 1845 *Modern Cookery* object with 679 images and a Public Domain Mark; the same Leeds scan is preserved on Wikimedia Commons. Separately, a transcription explicitly based on the 1845 first edition maps `Common Lemon Tartlets` to printed **p.431** and `Store Mixture for Lemon Tartlets` to **p.434**.
+- **Eliza Acton 1845 materially changes the governing historical boundary.** Wellcome/University of Leeds identifies a digitized 1845 *Modern Cookery* object with 679 images and a Public Domain Mark; the same Leeds scan is preserved on Wikimedia Commons. Separately, a transcription explicitly based on the 1845 first edition maps `Common Lemon Tartlets` to printed **p.431** and `Store Mixture for Lemon Tartlets` to **p.434**.
 - The mapped Acton text describes a recognizable pastry-shell + lemon-filling architecture: thin puff-paste shells receive an egg/sugar/butter/lemon filling and are baked; the store mixture is cooked until cream-thick before later filling and baking in thin puff-paste shells.
+- *The Georgia Citizen*, **16 August 1850**, independently republishes `Common Lemon Tartlets`, directly witnessing transatlantic circulation of the same architecture by 1850. It is a transmission witness, not origin proof.
 - Evidence remains deliberately split: **1845 object identity and rights lane are institutionally verified; recipe text/page mapping is strong; the exact original p.431/p.434 facsimile leaves have not yet been directly visually inspected.** Therefore `PAGE_IMAGE_HOLD` remains for verbatim quotation/facsimile Product use.
 - Additional bounded nodes remain useful but are no longer the earliest architecture evidence:
   - **1855 Webster** = directly readable `Lemon Cream`, served as a cream rather than shown in a tart shell;
@@ -196,6 +199,8 @@ Historical evidence strength and visual publication rights are separate. `viewab
 
 Acton 1845 has an unusually strong visual-rights lane because Wellcome marks the digitized object with a Public Domain Mark and supplies a credit line, but Product facsimile use still requires exact-leaf inspection, credit capture and durable byte provenance.
 
+The authorized Genin/Astier 2010 book is copyrighted: the publisher record closes author-source identity/scope, not reproduction rights.
+
 Modern maison photography remains reference-only unless licensed. Generated visuals are modern editorial specimens only and must never masquerade as historical evidence. See `00_VISUAL_ARCHIVE_AND_RIGHTS_LEDGER.md` and `00_GENERATION_REFERENCE_AND_PROMPT_BRIEF.md`.
 
 ## Current publication state
@@ -209,8 +214,8 @@ No Product repository has been modified by this wave.
 1. Direct page images: de Kock 1848 p.4 col.1; Bailleux 1856 Éclairs p.74; Michigan *Vanity Fair* 1861 p.50 col.1; Lacam 1893 p.44/p.49; *Le Gaulois* 1899 p.3; *Le Journal* 1899 p.1.
 2. Bailleux edition history: lawfully acquire **1860 Religieuse/Baba/Savarin pages** and determine whether the **1856 first edition** already contains the named Religieuse/Baba/Savarin entries.
 3. Baba: continue pre-1873 rum-specific search; distinguish first named Baba/Savarin from first directly inspectable rum-soaked formulation.
-4. Tarte au Citron: pin and visually inspect Acton 1845 printed p.431/p.434 facsimile leaves; direct Genin 2009 participant source; complete bounded Dumas 1873 lemon-entry review; inspect Jeanes 1870 p.227; acquire the earliest comparable **French professional recipe architecture** and later meringue/emulsified-cream transitions.
-5. Tatin: exact 1903 Bulletin page; Dubois 1894 `Tarte aux pêches molles` leaf; primary 1790 `tourte retournée` object; Jullemier 1915 page; Besnard 1921 issue/page; Curnonsky/Rouff 1926 page; 1923 p.85 / 1929 p.5 / 1931 p.2 direct page reviews.
+4. Tarte au Citron: pin and visually inspect Acton 1845 printed p.431/p.434 facsimile leaves; seek a **Genin-controlled 2009 date source** only (the general authorized technique/source lane is closed by the 2010 Alternatives book); complete bounded Dumas 1873 lemon-entry review; inspect Jeanes 1870 p.227; acquire the earliest comparable **French professional recipe architecture** and later meringue/emulsified-cream transitions.
+5. Tatin: exact 1903 Bulletin page; Dubois 1894 `Tarte aux pêches molles` leaf; primary 1790 `tourte retournée` object; Jullemier 1915 page; Besnard 1921 issue/page; Curnonsky 1926 page; 1923 p.85 / 1929 p.5 / 1931 p.2 direct page reviews.
 6. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 under the exact `n°30 à 39` citation; original 1979 Confrérie prospectus/statutes and old-JORF notice; search 1926–1975 for earlier accident motifs.
 7. Paris-Brest: contemporaneous **1909–1911** advertising/menu/trade/local-directory evidence, including Durand/Bauget.
 8. Legal records: exact INPI canelé 1985 collective mark; Tropézienne historical patent/mark; exact `Véritable Kouign-Amann de Douarnenez` register object to test the participant-reported 15 Dec 1999 date and capture holder/number/classes/publication/status.
