@@ -116,6 +116,22 @@ FULL WITNESS APPARATUS
 → NOT YET TRANSCRIBED
 ```
 
+## 🕊️ Новая серия: 1 Коринфянам 11 — покрывало, мужчины и женщины
+
+Research-ветка новой серии (foundation-стадия, **не публикуется и не пушится** до research-closure):
+
+* [Точка входа и мастер-индекс серии](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/00_README_AND_MASTER_AUTHORITY_INDEX.md)
+* [Греческий текст NA28 и текстологические примечания](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/01_GREEK_TEXT_NA28_AND_TEXTUAL_NOTES.md)
+* [Исторический контекст: Коринф и практика покрытия головы](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/02_HISTORICAL_CONTEXT_CORINTH_VEILING.md)
+* [Карта экзегетических узлов (cruces)](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/03_EXEGETICAL_CRUXES_MAP.md)
+* [Ландшафт комментаторов (консервативные приоритетно)](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/04_COMMENTATOR_AND_SCHOLARSHIP_LANDSCAPE.md)
+* [Очередь приобретения полных книг](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/05_SOURCE_ACQUISITION_QUEUE_BOOKS.md)
+* [Интеграция корпуса «Бытие 6» по 1 Кор. 11:10](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/06_PARALLEL_GENESIS6_CORPUS_INTEGRATION.md)
+* [Публикационный формат-ориентир](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/07_PUBLICATION_FORMAT_ORIENTIR.md)
+* [Координация параллельных агентов](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/08_AGENT_COORDINATION.md)
+
+Серия следует той же evidence-дисциплине, что и «Бытие 6» (уровни доказательства, вес источников, confidence-шкала, publication gate). Она интегрирует уже существующий параллельный корпус по 1 Кор. 11:10 из `ТРУДНЫЕ ТЕКСТЫ` (серия «Бытие 6») — см. `06_...`. Машинный манифест: [`data/1cor11-authority-manifest.json`](data/1cor11-authority-manifest.json).
+
 ## 📊 Верификационные аудиты
 
 * [Исторический аудит целостности проекта от 2026-06-26](AUDIT_PROJECT_INTEGRITY_CASE.md) — historical evidence, не текущая authority.
