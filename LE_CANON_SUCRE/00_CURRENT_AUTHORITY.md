@@ -87,16 +87,14 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 ### Tarte au Citron / Jacques Genin
 
 - Genin's **2009 citron-basilic** version is strongly documented by later French journalism and should be treated as a modern authored reinterpretation, not the invention of tarte au citron as a genre.
-- A 2026 Relais Desserts professional historical synthesis is now an explicit **falsification/locator source**: it argues that older French lemon use and the later lemon-cream tart should not be collapsed into one timeless native-French form and points toward a transnational/English lemon-curd genealogy.
-- This professional synthesis is **not primary origin proof**. Its Dumas 1873 and English eighteenth/nineteenth-century historical claims must be checked against the underlying books before promotion.
-- Current research must distinguish:
-  - lemon use in pastry/confiserie;
-  - lemon cream / curd as a preparation;
-  - recognizable tart shell + lemon filling;
-  - baked custard vs emulsified cream;
-  - meringued vs unmeringued forms;
-  - French codification vs wider European/British transmission.
-- `Jacques Genin invented tarte au citron` is prohibited current wording.
+- A 2026 Relais Desserts professional historical synthesis remains an explicit **falsification/locator source**: it argues that older French lemon use and the later lemon-cream tart should not be collapsed into one timeless native-French form and points toward a transnational/English lemon-cream genealogy.
+- Primary-object acquisition now establishes three bounded historical nodes rather than leaving the genealogy wholly abstract:
+  - **1855 Webster** = directly readable English-language `Lemon Cream`, an egg/lemon/sugar preparation thickened over heat and served as cream; no tart-shell use is shown;
+  - **1870 Jeanes** = professional *Gunter's Modern Confectioner* table of contents directly lists `Lemon Cheese Cakes`, p.227; exact recipe/form remains `CONTENT_HOLD`;
+  - **1877 Charles Gérard** = direct French-language/Alsatian inventory witness listing `la tourte au citron` among `tartes` and `tourtes`; the passage is nomenclature, not a recipe.
+- Dumas's **1873** *Grand dictionnaire de cuisine* is now directly identified as a full historical object, but its exact lemon entries remain to inspect; corpus snippets/common-term indexes must not be promoted into a positive or negative recipe claim.
+- The unresolved question has narrowed: not `did lemon cream or a named lemon tourte exist?`, but **when shell + lemon filling/cream + later meringue/emulsified architecture converge into the recognizable modern tart**.
+- `Jacques Genin invented tarte au citron`, `Gérard 1877 is the modern tarte au citron`, and a simple national-origin claim remain prohibited current wording.
 
 ### Paris-Brest
 
@@ -131,8 +129,10 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 
 - Douarnenez official/regional heritage preserves Yves-René Scordia / c.1860 as the strong local creation tradition.
 - Independent *Le Monde* reporting in 2001, while describing the Douarnenez association founder's historical research, explicitly notes the absence of an incontestable written trace for the reconstruction then being advanced.
-- This does not disprove Scordia; it prevents `archival records prove invention in exactly 1860` wording.
-- A current artisan/association participant reports creation of the Douarnenez group in November 1999 and an INPI filing for `Véritable Kouign-Amann de Douarnenez` on **15 December 1999**. Exact mark number, holder/applicant, classes, publication and status remain `LOCATOR_HOLD` until the INPI register object is acquired.
+- The same 2001 report independently states that **two years earlier** eighteen of Douarnenez's twenty-two pâtissiers had formed an association for the `véritable kouign-amann de Douarnenez` and **had filed the mark with INPI**. Thus the bounded existence of association/protection activity around **1999** is no longer participant-only.
+- A current artisan/association participant supplies the more precise **November 1999** association date and **15 December 1999** filing date. Those exact dates, plus mark number, historical holder/applicant wording, classes, publication/registration and status, remain `LOCATOR_HOLD` until the INPI register object is acquired.
+- Do not silently reconcile the 2001 count of eighteen pâtissiers with the current artisan page's seventeen-member account; preserve the source-level variance.
+- The independent modern-protection evidence does not strengthen the unclosed **c.1860 invention event**.
 
 ### Canelé
 
@@ -203,11 +203,11 @@ No Product repository has been modified by this wave.
 1. Direct page images: de Kock 1848 p.4 col.1; Bailleux 1856 Éclairs p.74; Michigan *Vanity Fair* 1861 p.50 col.1; Lacam 1893 p.44/p.49; *Le Gaulois* 1899 p.3; *Le Journal* 1899 p.1.
 2. Bailleux edition history: lawfully acquire **1860 Religieuse/Baba/Savarin pages** and determine whether the **1856 first edition** already contains the named Religieuse/Baba/Savarin entries.
 3. Baba: continue pre-1873 rum-specific search; distinguish first named Baba/Savarin from first directly inspectable rum-soaked formulation.
-4. Tarte au Citron: direct Genin 2009 participant source; inspect Dumas 1873 lemon entries; acquire early English lemon-curd/cream sources and earliest French recognizable tart/meringue forms.
+4. Tarte au Citron: direct Genin 2009 participant source; inspect Dumas 1873 lemon entries and Jeanes 1870 p.227; continue the pre/post-1877 French chain from the now-direct `tourte au citron` witness; acquire earlier English lemon-cream/lemon-cheese objects and the first directly inspectable recognizable shell + lemon filling and meringue transitions.
 5. Tatin: exact 1903 Bulletin page; Dubois 1894 `Tarte aux pêches molles` leaf; primary 1790 `tourte retournée` object; Jullemier 1915 page; Besnard 1921 issue/page; Curnonsky/Rouff 1926 page; 1923 p.85 / 1929 p.5 / 1931 p.2 direct page reviews.
 6. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 under the exact `n°30 à 39` citation; original 1979 Confrérie prospectus/statutes and old-JORF notice; search 1926–1975 for earlier accident motifs.
 7. Paris-Brest: contemporaneous **1909–1911** advertising/menu/trade/local-directory evidence, including Durand/Bauget.
-8. Legal records: exact INPI canelé 1985 collective mark; Tropézienne historical patent/mark; `Véritable Kouign-Amann de Douarnenez` 1999 mark.
+8. Legal records: exact INPI canelé 1985 collective mark; Tropézienne historical patent/mark; exact `Véritable Kouign-Amann de Douarnenez` register object to test the participant-reported 15 Dec 1999 date and capture holder/number/classes/publication/status.
 9. 2000 Feuilles: authorized Hermé page for Ladurée `Millefeuille praliné` → `2000 Feuilles` recollection; earliest 1998–2001 catalogue/sale evidence.
 10. Mont-Blanc: Farmer 1896 p.357 page-image/credit review; earlier named European forms before 1896.
 11. Tropézienne: May–July 1956 contemporary Saint-Tropez press + original Bardot testimony provenance + Polish primary biographical/migration records for Micka.
