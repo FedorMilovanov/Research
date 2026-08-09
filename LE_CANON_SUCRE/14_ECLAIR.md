@@ -6,9 +6,34 @@
 
 ## Краткий статус
 
-`PASTRY TERM ATTESTED 1856 / BAILLEUX 1856 PROFESSIONAL RECIPE TIGHTLY LOCATED p.74 / U.S. VANITY FAIR 1861 VOLUME OBJECT IDENTIFIED + EXACT PAGE/COLUMN SECONDARY LOCATOR / GOUFFE 1873 PRIMARY / CAREME INVENTION UNRESOLVED`
+`FRENCH PASTRY USE TIGHTLY LOCATED TO 1848 / BNF-DIGITIZED WORK PROVENANCE CONFIRMED / BAILLEUX 1856 PROFESSIONAL RECIPE TIGHTLY LOCATED p.74 / U.S. VANITY FAIR 1861 VOLUME OBJECT IDENTIFIED + EXACT PAGE/COLUMN SECONDARY LOCATOR / GOUFFE 1873 PRIMARY / CAREME INVENTION UNRESOLVED`
 
-## Lexicographic institutional evidence
+## Earliest current French target — Charles Paul de Kock, 1848
+
+Specialist historical-language study:
+https://wordhistories.net/2025/03/25/eclair-cake/
+
+This study identifies an earlier French pastry occurrence than the 1856 BHVF/Bailleux witnesses: Charles Paul de Kock, *L’Atelier de demoiselles ou l’apothicaire de Pontoise*, original edition **1848**, printed **p. 4, col. 1**. The cited passage describes `éclairs` explicitly as small cakes filled with cream, i.e. an unambiguous pastry sense rather than the ordinary lexical meaning of `éclair`.
+
+Hachette BnF independently confirms the bibliographic identity and BnF digitization provenance of the work:
+https://www.hachettebnf.fr/livre/latelier-de-demoiselles-ou-lapothicaire-de-pontoise-vaudeville-en-3-actes-9782012183292/
+
+The Hachette BnF record states:
+
+- author: Ch.-Paul de Kock;
+- original edition date: **1848**;
+- work belongs to the BnF/Hachette facsimile preservation programme based on works digitized by BnF.
+
+Current evidence decision:
+
+- 1848 work identity/date and BnF-digitization provenance = `A2/A3 BIBLIOGRAPHICALLY CONFIRMED`;
+- `éclairs`, printed p. 4 col. 1 = `TIGHT B1 LOCATOR TO PRIMARY`;
+- exact BnF/Gallica page route and direct scan inspection = `LOCATOR_HOLD`;
+- direct quotation = not approved until the primary page is opened and contextualized.
+
+This **supersedes 1856 as the earliest currently located French pastry use in this corpus**, but does not establish the absolute first use of the word.
+
+## Lexicographic evidence — 1856 / 1864
 
 CNRTL / TLFi:
 https://www.cnrtl.fr/etymologie/%C3%A9clair
@@ -16,7 +41,7 @@ https://www.cnrtl.fr/etymologie/%C3%A9clair
 BHVF attestations:
 https://www.cnrtl.fr/definition/bhvf/%C3%A9clair
 
-BHVF provides an 1856 literary pastry occurrence. The 1864 Littré entry is therefore a lexicographic milestone, not safely the first pastry use.
+BHVF provides a separate **1856** literary pastry occurrence. The 1864 Littré entry is therefore a later lexicographic milestone, not the earliest currently known pastry use in this corpus.
 
 ## Professional primary object — Bailleux 1856
 
@@ -50,7 +75,7 @@ https://wordhistories.net/2025/03/25/eclair-cake/
 
 It identifies Fitz-Hugh Ludlow, *The Primpenny Family*, chapter 4, in **Vanity Fair (New York), 2 February 1861, p. 50, col. 1** with `éclairs` in an ordinary sweets list.
 
-Wave 2 now identifies a stable institutional full-volume archive object at the University of Michigan:
+Wave 2 identifies a stable institutional full-volume archive object at the University of Michigan:
 
 https://quod.lib.umich.edu/m/moajrnl/acg4267.0003.000?view=toc
 
@@ -72,7 +97,7 @@ https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%
 Duchesse/éclair relationship:
 https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/349
 
-Gouffé directly treats `éclairs` in relation to `pains à la duchesse` and specifies pâte à choux as shared technical basis.
+Gouffé directly treats `éclairs` in relation to `pains à la duchesse` and specifies pâte à choux as shared technical basis. His historical observation that the name had changed roughly twenty years earlier is compatible with the mid-nineteenth-century documentary network, but it should not be converted into an invented exact naming year.
 
 ## Popular Carême attribution
 
@@ -82,20 +107,27 @@ Therefore:
 
 `CAREME_INVENTED_ECLAIR = UNRESOLVED / EVIDENCE_HOLD`.
 
+The 1848 find makes this boundary even more important: a documented word occurrence is not the same thing as an invention event.
+
 ## Ответы, отрицания и альтернативные объяснения
 
-- 1856: pastry word attested via BHVF;
-- 1856: Bailleux professional `Éclairs` tightly located to p. 74, primary page still to inspect;
-- 1861: institutional U.S. volume identified; exact issue/page/column comes from a tight specialist locator and needs page inspection;
-- 1864: Littré dictionary milestone;
-- 1873: Gouffé exact primary professional description;
+- **1848**: earliest currently located French pastry use in this corpus, de Kock p. 4 col. 1; primary scan route still to acquire;
+- **1856**: independent BHVF literary attestation;
+- **1856**: Bailleux professional `Éclairs` tightly located to p. 74, primary page still to inspect;
+- **1861**: institutional U.S. volume identified; exact issue/page/column comes from a tight specialist locator and needs page inspection;
+- **1864**: Littré dictionary milestone;
+- **1873**: Gouffé exact primary professional description and duchesse relationship;
 - Carême: inventor attribution remains unclosed.
 
 ## Анализ и границы допустимой формулировки
 
-Safe:
+Safe now:
 
-> The pastry term `éclair` is attested in 1856. Bailleux's 1856 professional manual has a tightly identified p. 74 `Éclairs` recipe pending direct page inspection. A University of Michigan 1861 New York *Vanity Fair* volume is now identified for the U.S. reception trail, while specialist research points to 2 February 1861, p. 50 col. 1. Gouffé in 1873 directly places éclairs in the technical family of `pains à la duchesse` and pâte à choux.
+> The French pastry word `éclair` is currently located as early as 1848 in Charles Paul de Kock's *L’Atelier de demoiselles ou l’apothicaire de Pontoise*, where specialist research points to p. 4 col. 1 and an explicit cream-filled pastry description. Hachette BnF confirms the 1848 work and its BnF-digitized provenance, while the exact primary page still needs direct inspection. Bailleux then provides a professional 1856 recipe target, an American occurrence is tightly located to 1861, and Gouffé in 1873 directly relates éclairs to `pains à la duchesse`.
+
+Unsafe:
+
+> 1848 is definitively the first-ever invention or first use of the éclair.
 
 Unsafe:
 
@@ -103,11 +135,12 @@ Unsafe:
 
 Also unsafe until direct page inspection:
 
-> Bailleux p. 74 and *Vanity Fair* p. 50 col. 1 are already quote-safe primary passages in this corpus.
+> de Kock p. 4 col. 1, Bailleux p. 74 and *Vanity Fair* p. 50 col. 1 are already quote-safe primary passages in this corpus.
 
 ## Хронология
 
-- pre-1856 — predecessor terminology/forms under investigation;
+- pre-1848 — predecessor terminology/forms under investigation;
+- **1848** — de Kock `éclairs` pastry occurrence, tight primary locator p. 4 col. 1; exact BnF/Gallica scan pending;
 - **1856** — BHVF pastry attestation;
 - **1856** — Bailleux p. 74 professional recipe tight locator;
 - **2 Feb 1861** — U.S. *Vanity Fair* p. 50 col. 1 tight locator within an identified institutional volume;
@@ -115,6 +148,8 @@ Also unsafe until direct page inspection:
 - **1873** — Gouffé exact professional duchesse/éclair relationship.
 
 ## Anatomy / technique
+
+The 1848 description proves only a bounded early semantic/form fact: small cakes identified as `éclairs` and filled with cream. It does not yet prove dimensions, icing standardization or a single inventor.
 
 Bailleux secondary locator indicates an already recognizable elongated, filled and glazed professional éclair family in 1856; exact primary wording awaits the page.
 
@@ -124,18 +159,21 @@ Gouffé 1873 documented family:
 
 ## Myth vs Document
 
-**DOCUMENTARY NETWORK:** 1856 lexical evidence + Bailleux 1856 exact page target + identified 1861 U.S. archive volume/exact secondary page locator + 1873 Gouffé exact primary.  
+**EARLIEST CURRENT LOCATOR:** de Kock 1848 p. 4 col. 1, exact primary scan still pending.  
+**DOCUMENTARY NETWORK:** 1848 literary pastry use → 1856 lexical + professional recipe targets → 1861 U.S. transmission → 1873 Gouffé professional relationship.  
 **UNRESOLVED ATTRIBUTION:** Carême as inventor.  
-**RESEARCH TARGET:** predecessor names and direct Bailleux/Vanity Fair page inspection.
+**RESEARCH TARGET:** direct 1848/1856/1861 page acquisition plus predecessor terminology before 1848.
 
 ## Права, архив и публикационные HOLD
 
-Gouffé pages remain strong facsimile candidates. Bailleux p. 74 is a strong candidate only after the actual scan page and its host/reuse terms are inspected. University of Michigan supplies a much better rights/provenance route for the 1861 *Vanity Fair* object than a modern quotation page, but page-level inspection and credit terms still need to be recorded before Product use.
+The de Kock 1848 BnF-digitized source becomes the highest-priority early Éclair facsimile target because it predates the Bailleux/Gouffé evidence. Do not use the modern Hachette BnF product page as a facsimile substitute; acquire the underlying BnF object and its item-level rights statement.
+
+Gouffé pages remain strong facsimile candidates. Bailleux p. 74 is a strong candidate only after the actual scan page and its host/reuse terms are inspected. University of Michigan supplies a strong provenance/rights route for the 1861 *Vanity Fair* object, but page-level inspection and credit terms still need to be recorded before Product use.
 
 ## Следующее проверяемое действие
 
-1. Open Bailleux 1856 printed p. 74 directly in the digitized object and record stable page/scan locator.
-2. Navigate the Michigan 1861 *Vanity Fair* volume to 2 February, p. 50, col. 1 and inspect the actual page.
-3. Search Carême full texts for `duchesse`, `pain à la duchesse`, `éclair` and related choux forms.
-4. Acquire H. de Kock 1856 exact edition/page behind the BHVF citation.
-5. Continue searching for professional `éclair` recipes before Bailleux 1856 without assuming p. 74 is the absolute first.
+1. Resolve the underlying BnF/Gallica item for de Kock's 1848 *L’Atelier de demoiselles...* and inspect printed p. 4 col. 1 directly.
+2. Open Bailleux 1856 printed p. 74 directly in the digitized object and record stable page/scan locator.
+3. Navigate the Michigan 1861 *Vanity Fair* volume to 2 February, p. 50, col. 1 and inspect the actual page.
+4. Search Carême full texts for `duchesse`, `pain à la duchesse`, `éclair` and related choux forms.
+5. Search pre-1848 French books/newspapers for pastry-context `éclair` without assuming the 1848 hit is absolute first.
