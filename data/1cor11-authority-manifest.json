@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "1cor11",
+  "seriesTitle": "1 Коринфянам 11:2–16 — покрывало, мужчины и женщины",
+  "authorityBaseCommit": null,
+  "generatedAt": "2026-08-09",
+  "status": "PHASE1_IN_PROGRESS_RESEARCH_ONLY",
+  "policy": {
+    "siteImportRequiresPinnedResearchCommit": true,
+    "siteImportRequiresManifestSha256": true,
+    "draftNoindexUntilTechnicalGates": true,
+    "closeoutsAreNeverContentAuthority": true,
+    "publicationAllowed": false,
+    "pushAllowed": false
+  },
+  "documents": [
+    {
+      "id": "1COR11-SOURCES-LEDGER-00",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/ИСТОЧНИКИ/00_ИСТОЧНИКИ_ЛЕДЖЕР.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "source-registry",
+          "rights",
+          "acquisition"
+        ]
+      },
+      "authorityClass": "manifest",
+      "status": "foundation",
+      "sourceGrade": "not-applicable",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:sources"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-MASTER-00",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/00_MASTER_INDEX_AND_SERIES_STRUCTURE.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "authority-order",
+          "supersession",
+          "scope"
+        ]
+      },
+      "authorityClass": "manifest",
+      "status": "foundation",
+      "sourceGrade": "not-applicable",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:authority-order"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-SCOPE-00",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/00_SCOPE_AND_BOUNDARIES.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "scope",
+          "terminology"
+        ]
+      },
+      "authorityClass": "manifest",
+      "status": "foundation",
+      "sourceGrade": "not-applicable",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:scope"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-EVIDENCE-00",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/00_EVIDENCE_LEVELS_AND_CLAIM_CALIBRATION_STANDARD.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "evidence-levels",
+          "claim-calibration"
+        ]
+      },
+      "authorityClass": "manifest",
+      "status": "foundation",
+      "sourceGrade": "not-applicable",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:evidence-standard"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-SOURCES-00",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/00_SOURCE_WEIGHT_AND_ACQUISITION_PLAN.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "source-weight",
+          "acquisition-plan"
+        ]
+      },
+      "authorityClass": "manifest",
+      "status": "foundation",
+      "sourceGrade": "not-applicable",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:acquisition"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-HIST-01",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/01_HISTORICAL_CONTEXT_DOSSIER.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "corinth-context",
+          "capite-velato",
+          "veil-vs-hair"
+        ]
+      },
+      "authorityClass": "dossier",
+      "status": "foundation",
+      "sourceGrade": "B1+C",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:historical-context"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-GREEK-02",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/02_GREEK_TEXT_ANALYSIS_1COR11_2_16.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "na28-text",
+          "morphology",
+          "exousia",
+          "angels",
+          "peribolaion"
+        ]
+      },
+      "authorityClass": "dossier",
+      "status": "foundation",
+      "sourceGrade": "A",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:greek-text"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-COMM-03",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/03_COMMENTATOR_LANDSCAPE.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "commentator-map",
+          "conservative-primary"
+        ]
+      },
+      "authorityClass": "dossier",
+      "status": "foundation",
+      "sourceGrade": "B1",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:commentators"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-QUESTIONS-04",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/04_QUESTION_MATRIX_AND_CLAIM_LEDGER.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "question-matrix",
+          "claim-ledger"
+        ]
+      },
+      "authorityClass": "dossier",
+      "status": "foundation",
+      "sourceGrade": "not-applicable",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:claims"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-ADVERSARIAL-05",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/05_ADVERSARIAL_AND_LIBERAL_READINGS.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "interpolation",
+          "liberal-readings",
+          "counter-arguments"
+        ]
+      },
+      "authorityClass": "dossier",
+      "status": "foundation",
+      "sourceGrade": "B1+C",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:adversarial"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-PATRISTIC-06",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/06_PATRISTIC_PRIMARY_SOURCES.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "chrysostom",
+          "tertullian",
+          "theophan",
+          "patristic-readings"
+        ]
+      },
+      "authorityClass": "dossier",
+      "status": "foundation",
+      "sourceGrade": "A2",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:patristics"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    },
+    {
+      "id": "1COR11-APPLICATION-07",
+      "path": "СЕРИЯ 1 КОРИНФЯНАМ 11/07_APPLICATION_DEBATE.md",
+      "scope": {
+        "articles": [],
+        "claims": [
+          "application",
+          "complementarian",
+          "egalitarian"
+        ]
+      },
+      "authorityClass": "dossier",
+      "status": "foundation",
+      "sourceGrade": "not-applicable",
+      "rightsState": "not-applicable",
+      "canonicalScopes": [
+        "series:1cor11:application"
+      ],
+      "exclusive": true,
+      "contentAuthority": false,
+      "mandatoryForSite": false,
+      "sitePublicationEligible": false,
+      "supersedes": [],
+      "appliesTo": []
+    }
+  ],
+  "rightsDecisions": [],
+  "publicationBundles": [],
+  "holds": [
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "ARCHIVE_HOLD",
+    "RIGHTS_HOLD",
+    "PUBLICATION_HOLD"
+  ],
+  "readmeRequiredPaths": [
+    "СЕРИЯ 1 КОРИНФЯНАМ 11/00_MASTER_INDEX_AND_SERIES_STRUCTURE.md",
+    "СЕРИЯ 1 КОРИНФЯНАМ 11/00_SCOPE_AND_BOUNDARIES.md"
+  ]
+}
