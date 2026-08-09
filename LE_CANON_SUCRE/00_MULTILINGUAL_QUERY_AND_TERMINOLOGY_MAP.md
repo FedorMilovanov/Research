@@ -10,12 +10,12 @@
 | Saint-Honoré | `Saint-Honoré`, `St-Honoré`, `gâteau Saint-Honoré`, `Chiboust`, `Maison Chiboust`, `crème Chiboust`, `Auguste Julien`, `Jullien`, `Flan Suisse`, `Bordeaux`, `1840`, `1847`, `1863`, `Lacam p.44`, `Lacam p.49` |
 | Paris-Brest | `Paris-Brest`, `Paris Brest`, `Paris-Brest-Paris`, `Louis Durand`, `Durand pâtissier`, `Maisons-Laffitte`, `Longueil`, `Bauget`, `Gerbet`, `roue`, `praliné`, `1909`, `1910`, `1911`, `annuaire`, `réclame`, `menu`, `pâtisserie` |
 | Baba | `baba`, `baba au rhum`, `baba moderne`, `baba polonais`, `kouglof`, `kougelhopf`, `Stanislas`, `Stohrer`, `Tokay`, `Malaga`, `savarin` |
-| Tarte citron | `tarte au citron`, `crème citron`, `citron vert`, `basilic`, `Jacques Genin`, `crémeux`, `émulsion`, `2009` |
+| Tarte citron | `tarte au citron`, `tourte au citron`, `crème citron`, `citron vert`, `basilic`, `Jacques Genin`, `crémeux`, `émulsion`, `meringué`, `2009`, `Acton 1845`, `Common Lemon Tartlets`, `Store Mixture for Lemon Tartlets`, `rdz664vd`, `z22c8gru`, `Gunter's Modern Confectioner`, `Lemon Cheese Cakes`, `Jeanes 227` |
 | Opéra | `Opéra`, `gâteau opéra`, `entremets opéra`, `Cyriaque Gavillon`, `Andrée Gavillon`, `Dalloyau`, `1955`, `Grand Hôtel`, `Le Gaulois`, `18 mars 1899` |
 | Ispahan | `Ispahan`, `Paradis`, `rose`, `framboise`, `litchi`, `letchi`, `Pierre Hermé`, `Fauchon`, `Ladurée`, `1997` |
 | 2000 Feuilles | `2000 Feuilles`, `Deux Mille Feuilles`, `mille-feuille praliné`, `Millefeuille praliné`, `Ladurée`, `praliné feuilleté`, `crêpes dentelles`, `millénaire`, `an 2000`, `catalogue Pierre Hermé`, `1998`, `1999`, `2000`, `2001` |
 | Mont-Blanc | `Mont-Blanc`, `Mont Blanc`, `Monte Bianco`, `marrons`, `vermicelles de marrons`, `châtaignes`, `panna montata`, `Rumpelmayer`, `Angelina`, `1891`, `1896`, `1903` |
-| Religieuse | `religieuse`, `flan à la religieuse`, `religieuse au café`, `religieuse au chocolat`, `Frascati`, `Café Frascati`, `Maison Frascati`, `Cintract`, `M. A. Cintract`, `Signor Frascati`, `pains à la duchesse`, `choux superposés`, `1856`, `1873` |
+| Religieuse | `religieuse`, `flan à la religieuse`, `religieuse au café`, `religieuse au chocolat`, `Frascati`, `Café Frascati`, `Maison Frascati`, `Cintract`, `M. A. Cintract`, `Signor Frascati`, `pains à la duchesse`, `choux superposés`, `1856`, `1860`, `1873` |
 | Kouign-Amann | `kouign-amann`, `kouign amann`, `Douarnenez`, `Scordia`, `Yves-René Scordia`, `1860`, `beurre`, `sucre`, `Association du véritable Kouign-Amann`, `marque`, `1999` |
 | Tatin | `tarte Tatin`, `tarte des demoiselles Tatin`, `Mlle Tatin`, `Fanny Tatin`, `Stéphanie Tatin`, `Caroline Tatin`, `Lamotte-Beuvron`, `Pin d'Or`, `Hôtel Tatin`, `Gabriel Hanotaux`, `Le Journal 18 décembre 1899`, `Société de géographie du Cher 1903`, `Jullemier 1915`, `Contes de Sologne`, `Paul Besnard`, `Blois et le Loir-et-Cher`, `4-LC11-1357`, `Livret d'or 1923 p.85`, `Curnonsky`, `L'Orléanais 1926`, `Paris-Soir 25 août 1929 p.5`, `Horizons d'Argonne 1976 p.97`, `n°30 à 39`, `Lichonneux`, `0413000987`, `W413000745`, `prospectus 1979`, `tourte retournée 1790`, `Urbain Dubois 1894`, `Tarte aux pêches molles` |
 | Tropézienne | `Tarte Tropézienne`, `Alexandre Micka`, `Aleksander Micka`, `Saint-Tropez`, `Brigitte Bardot`, `Et Dieu… créa la femme`, `mai 1956`, `juin 1956`, `juillet 1956`, `brevet 1972`, `18 août 1972`, `INPI`, `BOPI` |
@@ -33,6 +33,20 @@ Use exact object-oriented queries rather than generic history pages:
 - `"Charles Paul de Kock" éclairs p. 4`
 - `"Le Pâtissier moderne" Éclairs 74 Bailleux`
 - `"The Primpenny Family" éclairs 2 February 1861`
+
+### Tarte au Citron — Acton edition custody / Jeanes page
+
+Treat **edition identity as a search field**, not incidental metadata:
+
+- `"Modern Cookery" Acton 1845 "first edition" 683`
+- `"z22c8gru" edition`
+- `"rdz664vd" "Third edition"`
+- `"Common Lemon Tartlets" 431 Acton`
+- `"Store Mixture for Lemon Tartlets" 434 Acton`
+- `"Gunter's Modern Confectioner" "Lemon Cheese Cakes" 227`
+- `"b20405881" "Lemon Cheese Cakes"`
+
+Do not map printed p.431/p.434 to a scan frame until the scan's edition and pagination continuity are directly verified. Do not use the 1873 Jeanes scan as a substitute for the 1870 p.227 object without edition comparison.
 
 ### Paris-Brest 1909–1911
 
