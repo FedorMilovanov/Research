@@ -30,7 +30,7 @@ EXPECTED_BLOBS = {
     R4: "f82780e13cb064aa89c06427d11a938662fc3ff8",
     R5: "846277b099e58bf36b88c2ae0dfe4e24e6bec53b",
     READER: "183819bf469d7e28f270fa6891b8ae1534e2f6ef",
-    PART2: "d3a156bbbf67a3c45d1a019ab1ffc7da261ad692",
+    PART2: "c746a626953ee57a394a41a5f82a83630f1cd782",
     V11: "58e9dcf7f724b03c7b9d09b49f75922f8bf73b23",
     ASSEMBLY: "cf58624519e3f3ea7290fde518afce85f258863c",
 }
@@ -184,7 +184,7 @@ all_quote_rows = [{"owner": name, **row} for name in owners for row in quotes[na
 part2 = json.loads(PART2.read_text(encoding="utf-8"))
 reuse = {
     "receiptAuthorityId": part2.get("authorityId"),
-    "R3R4RoleCounts": part2.get("fullOwnerReview", {}).get("roleCounts"),
+    "R3R4RoleCounts": part2.get("fullOwnerReview", {}).get("quotationRoleCounts"),
     "R3R4UrlStatusCounts": part2.get("externalLinkReview", {}).get("statusCounts"),
     "R3R4SourceSurfaceBaseManifestSha256": part2.get("fullOwnerReview", {}).get("sourceSurfaceBaseManifestSha256"),
     "R3R4ClassifiedSurfaceManifestSha256": part2.get("fullOwnerReview", {}).get("classifiedSurfaceManifestSha256"),
