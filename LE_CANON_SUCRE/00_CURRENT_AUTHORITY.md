@@ -64,7 +64,7 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 
 ### Religieuse
 
-- A new pre-Gouffé professional witness is now directly verified: the Saint Petersburg Polytechnic University Electronic Library identifies **Bailleux, *Le Pâtissier moderne*, Paris 1860**, and its institutional machine-readable table of contents lists a dedicated **`Religieuse`** entry inside Chapter V `Gâteaux garnis`.
+- The Saint Petersburg Polytechnic University Electronic Library identifies **Bailleux, *Le Pâtissier moderne*, Paris 1860**, and its institutional machine-readable table of contents lists a dedicated **`Religieuse`** entry inside Chapter V `Gâteaux garnis`.
 - Therefore the old corpus statement `Gouffé 1873 = earliest directly verified professional named Religieuse` is **SUPERSEDED**.
 - Correct current distinction:
   - **1860 Bailleux** = earliest directly verified **professional named entry/section** in this corpus;
@@ -73,6 +73,30 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 - Rare-book bibliography identifies the 1860 book as a **third edition, revised/corrected/enlarged**, while Christie's verifies the first edition as **1856**. It is now a P0 edition-history question whether `Religieuse` was already present in 1856 or added before 1860.
 - Frascati 1856 remains a later origin tradition, although Bailleux's genuine first-edition provenance connects him professionally to M. A. Cintract / Maison Frascati. Do not infer the 1856 recipe from that provenance.
 - Modern retellings conflict about the alleged 1856 geometry. Do not reconstruct it as historical fact.
+
+### Baba au Rhum / Savarin
+
+- The same SPbPU institutional 1860 Bailleux record exposes professional named entries including **`Petits Savarins`, `Babas parisiens`, `Savarin` and `Baba`** in the openly visible table of contents.
+- Therefore the professional named-form chronology does not begin with Gouffé 1873: **Baba/Savarin are directly verified as named professional entries in the 1860 edition**.
+- The 1860 scan itself is access-restricted; exact recipe wording, form and soaking liquid remain `ACCESS/LOCATOR_HOLD`. Presence of `Baba` in the TOC does **not** prove rum use.
+- Gouffé 1873 remains the earliest **exact rum-specific page directly inspected in the current corpus** through `baba moderne glacé au rhum`, while separately documenting savarin.
+- Whether Bailleux's **1856 first edition** already contains the same Baba/Savarin entries remains an edition-delta question.
+- Current Stohrer house history attributes baba to Nicolas Stohrer but itself preserves divergent Tokay/Malaga stories and treats rum as later. This participant inconsistency is a reason for caution, not a defect to smooth over.
+- Do not write `rum baba first appeared in 1873`; 1873 is only the current earliest exact inspected rum-specific page.
+
+### Tarte au Citron / Jacques Genin
+
+- Genin's **2009 citron-basilic** version is strongly documented by later French journalism and should be treated as a modern authored reinterpretation, not the invention of tarte au citron as a genre.
+- A 2026 Relais Desserts professional historical synthesis is now an explicit **falsification/locator source**: it argues that older French lemon use and the later lemon-cream tart should not be collapsed into one timeless native-French form and points toward a transnational/English lemon-curd genealogy.
+- This professional synthesis is **not primary origin proof**. Its Dumas 1873 and English eighteenth/nineteenth-century historical claims must be checked against the underlying books before promotion.
+- Current research must distinguish:
+  - lemon use in pastry/confiserie;
+  - lemon cream / curd as a preparation;
+  - recognizable tart shell + lemon filling;
+  - baked custard vs emulsified cream;
+  - meringued vs unmeringued forms;
+  - French codification vs wider European/British transmission.
+- `Jacques Genin invented tarte au citron` is prohibited current wording.
 
 ### Paris-Brest
 
@@ -93,7 +117,8 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 - Ispahan **1997** is cross-language official/institutional chronology; earlier rose / `Paradis` genealogy remains separate.
 - 2000 Feuilles composition/signature status is directly documented by Hermé material.
 - Gault&Millau's Hermé-recollection framing materially supports the **millennium renaming context**; `2000` must not be explained as literal layer count.
-- A first-person Hermé author-text points to an earlier Ladurée `Millefeuille praliné` precursor, but the searchable copy is not an authorized publisher surface. Acquire legitimate book/publisher/library custody before promotion.
+- A first-person Hermé author-text points to an earlier Ladurée `Millefeuille praliné` precursor. The relevant authorized editions are now cleanly identified through Pierre Hermé's own Maison: *Toutes les saveurs de la vie* (Buchet-Chastel, 2022) and *Dictionnaire amoureux de la pâtisserie* (Plon, 2025).
+- Exact precursor wording/page still requires authorized publisher/library custody. Searchable user-upload copies remain locator leads only.
 
 ### Mont-Blanc
 
@@ -101,6 +126,13 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 - Farmer **1896 first edition** is a verified Internet Archive full object, with printed p.357 headed `Mont Blanc`.
 - Therefore a named Mont Blanc is documented before Angelina's 1903 founding. Angelina should be treated as a famous house-signature lineage, not category inventor.
 - Earlier named European `Mont-Blanc/Monte Bianco` remains open.
+
+### Kouign-Amann
+
+- Douarnenez official/regional heritage preserves Yves-René Scordia / c.1860 as the strong local creation tradition.
+- Independent *Le Monde* reporting in 2001, while describing the Douarnenez association founder's historical research, explicitly notes the absence of an incontestable written trace for the reconstruction then being advanced.
+- This does not disprove Scordia; it prevents `archival records prove invention in exactly 1860` wording.
+- A current artisan/association participant reports creation of the Douarnenez group in November 1999 and an INPI filing for `Véritable Kouign-Amann de Douarnenez` on **15 December 1999**. Exact mark number, holder/applicant, classes, publication and status remain `LOCATOR_HOLD` until the INPI register object is acquired.
 
 ### Canelé
 
@@ -169,15 +201,17 @@ No Product repository has been modified by this wave.
 ## Current P0 acquisition queue
 
 1. Direct page images: de Kock 1848 p.4 col.1; Bailleux 1856 Éclairs p.74; Michigan *Vanity Fair* 1861 p.50 col.1; Lacam 1893 p.44/p.49; *Le Gaulois* 1899 p.3; *Le Journal* 1899 p.1.
-2. Religieuse edition history: determine whether Bailleux **1856** already contains `Religieuse`; lawfully acquire the exact **1860** Religieuse page/recipe; continue Frascati/Cintract and first standard two-choux search.
-3. Tatin: exact 1903 Bulletin page; Dubois 1894 `Tarte aux pêches molles` leaf; primary 1790 `tourte retournée` object; Jullemier 1915 page; Besnard 1921 issue/page; Curnonsky/Rouff 1926 page; 1923 p.85 / 1929 p.5 / 1931 p.2 direct page reviews.
-4. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 under the exact `n°30 à 39` citation; original 1979 Confrérie prospectus/statutes and old-JORF notice; search 1926–1975 for earlier accident motifs.
-5. Paris-Brest: contemporaneous **1909–1911** advertising/menu/trade/local-directory evidence, including Durand/Bauget.
-6. Legal records: exact INPI canelé 1985 collective mark; Tropézienne historical patent/mark; Kouign-Amann association/mark claims.
-7. 2000 Feuilles: authorized Hermé source for Ladurée `Millefeuille praliné` → `2000 Feuilles` recollection; earliest 1998–2001 catalogue/sale evidence.
-8. Mont-Blanc: Farmer 1896 p.357 page-image/credit review; earlier named European forms before 1896.
-9. Tropézienne: May–July 1956 contemporary Saint-Tropez press + original Bardot testimony provenance + Polish primary biographical/migration records for Micka.
-10. Resolve item-level rights before any archive visual enters Product.
+2. Bailleux edition history: lawfully acquire **1860 Religieuse/Baba/Savarin pages** and determine whether the **1856 first edition** already contains the named Religieuse/Baba/Savarin entries.
+3. Baba: continue pre-1873 rum-specific search; distinguish first named Baba/Savarin from first directly inspectable rum-soaked formulation.
+4. Tarte au Citron: direct Genin 2009 participant source; inspect Dumas 1873 lemon entries; acquire early English lemon-curd/cream sources and earliest French recognizable tart/meringue forms.
+5. Tatin: exact 1903 Bulletin page; Dubois 1894 `Tarte aux pêches molles` leaf; primary 1790 `tourte retournée` object; Jullemier 1915 page; Besnard 1921 issue/page; Curnonsky/Rouff 1926 page; 1923 p.85 / 1929 p.5 / 1931 p.2 direct page reviews.
+6. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 under the exact `n°30 à 39` citation; original 1979 Confrérie prospectus/statutes and old-JORF notice; search 1926–1975 for earlier accident motifs.
+7. Paris-Brest: contemporaneous **1909–1911** advertising/menu/trade/local-directory evidence, including Durand/Bauget.
+8. Legal records: exact INPI canelé 1985 collective mark; Tropézienne historical patent/mark; `Véritable Kouign-Amann de Douarnenez` 1999 mark.
+9. 2000 Feuilles: authorized Hermé page for Ladurée `Millefeuille praliné` → `2000 Feuilles` recollection; earliest 1998–2001 catalogue/sale evidence.
+10. Mont-Blanc: Farmer 1896 p.357 page-image/credit review; earlier named European forms before 1896.
+11. Tropézienne: May–July 1956 contemporary Saint-Tropez press + original Bardot testimony provenance + Polish primary biographical/migration records for Micka.
+12. Resolve item-level rights before any archive visual enters Product.
 
 ## Repository state
 
