@@ -61,7 +61,7 @@ The list is a research sample, not a predetermined editorial verdict. Reserve ca
 
 ### Conflicts intentionally left open
 
-- `SAINT_HONORE_ORIGIN`: Lacam/Charabot 1893 full object is identified; secondary transcription gives an exact **printed p. 49** Saint-Honoré/Chiboust/Julien locator and points toward 1840, while modern institutional retellings often give 1847. Direct p. 49 scan inspection remains open.
+- `SAINT_HONORE_ORIGIN`: Lacam/Charabot 1893 full object is identified. Page-level secondary research maps the **1840 Maison Chiboust / Auguste Julien / Bordeaux `Flan Suisse` historical account to printed p. 44**, while **printed p. 49 contains a separate technical statement** showing that Saint-Honoré could exist without pâte à choux. Modern institutional retellings also repeat 1840, while some other retellings use 1847. Direct p. 44 and p. 49 scan inspection remains open.
 - `PARIS_BREST_CREATION_DATE`: 1909 vs 1910; 1891 is race date only.
 - `RELIGIEUSE_ORIGIN_FRASCATI_1856`: modern retellings conflict; no contemporaneous Religieuse locator has yet closed the Frascati claim.
 - `OPERA_NAME_VS_CANONICAL_FORM`: exact 1899 Gallica page route is resolved, but page content has not yet been directly fetched/inspected; identity with Dalloyau 1955 is not assumed.
@@ -101,7 +101,7 @@ No Product repository has been modified by this wave.
 1. Directly inspect the exact *Le Gaulois* 18 Mar 1899 p. 3 Gallica scan and preserve context/rights.
 2. Directly inspect *Le Journal* 18 Dec 1899 p. 1, then acquire 1903/1921/1926 Tatin primary objects.
 3. Open Bailleux 1856 p. 74 directly and inspect University of Michigan *Vanity Fair* 2 Feb 1861 p. 50 col. 1.
-4. Directly inspect Lacam/Charabot 1893 printed p. 49 for Saint-Honoré.
+4. Directly inspect Lacam/Charabot 1893 printed **p. 44 and p. 49** for Saint-Honoré and preserve the distinction between origin account and technical statement.
 5. Find contemporaneous Paris-Brest 1909–1910 cake evidence.
 6. Find pre-1873 `religieuse` uses and test Frascati 1856 directly.
 7. Locate exact INPI objects for canelé 1985, Tropézienne historical patent/mark and Kouign-Amann claims.
