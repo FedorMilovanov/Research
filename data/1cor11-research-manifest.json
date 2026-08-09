@@ -142,6 +142,51 @@
       "publicationState": "REFERENCE"
     },
     {
+      "id": "1COR11-PATRISTIC-CATENA-14",
+      "path": "1_КОРИНФЯНАМ_11/14_EXHAUSTIVE_VERSE_BY_VERSE_PATRISTIC_CATENA.md",
+      "scope": ["11:2-16", "patristic-catena", "verse-by-verse", "chrysostom", "augustine", "ambrosiaster"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-TEXT-CRITICISM-15",
+      "path": "1_КОРИНФЯНАМ_11/15_TEXTUAL_CRITICISM_AND_MANUSCRIPT_APPARATUS.md",
+      "scope": ["11:2-16", "text-criticism", "8-variant-units", "p46-aleph-b-a-c-d", "apparatus"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-DISCOURSE-CHIASM-16",
+      "path": "1_КОРИНФЯНАМ_11/16_DISCOURSE_ANALYSIS_CHIASM_AND_RHETORICAL_STRUCTURE.md",
+      "scope": ["11:2-16", "discourse-analysis", "chiasm", "rhetoric", "macro-structure"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-CLAIM-LEDGER-17",
+      "path": "1_КОРИНФЯНАМ_11/17_MASTER_CLAIM_BY_CLAIM_CONFIDENCE_LEDGER.md",
+      "scope": ["11:2-16", "35-claims", "confidence-scale", "fail-closed", "boundary-conditions"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-THEO-SYNTHESIS-18",
+      "path": "1_КОРИНФЯНАМ_11/18_THEOLOGICAL_SYNTHESIS_CREATION_CHRISTOLOGY_ECCLESIOLOGY.md",
+      "scope": ["11:2-16", "systematics", "trinity", "anthropology", "ecclesiology", "liturgics"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
       "id": "1COR11-ARTICLE-1-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md",
       "scope": ["11:2-3", "site-article", "headship", "trinity", "christ"],
