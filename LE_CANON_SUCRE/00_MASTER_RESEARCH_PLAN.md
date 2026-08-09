@@ -40,6 +40,7 @@ The method is adversarial. Every attractive origin story receives a falsificatio
 - Élysée / DILA / BnF / archive services;
 - French professional pâtisserie organizations;
 - university/library digitization projects such as SPbPU where they expose legitimate bibliographic/TOC metadata;
+- Wellcome Collection / University of Leeds and comparable institutional full-object custody;
 - INA / film institutions.
 
 ### Independent secondary / scholarly
@@ -55,6 +56,7 @@ Secondary sources can discover precise primary targets, expose conflicts and doc
 Use non-French sources only when they add evidence:
 
 - United States: Internet Archive, University of Michigan, Library of Congress, NYPL menus;
+- United Kingdom: Wellcome/Leeds, historical cookery books and professional manuals where they clarify transnational pastry genealogy;
 - Japan: official maison timelines, NDL and professional pâtisserie press;
 - Italy: Mont-Blanc / chestnut-dessert genealogy;
 - Germany/Austria/Switzerland: historical pastry and European transmission;
@@ -72,8 +74,9 @@ Examples now controlling:
 
 - Éclair: 1848 is the earliest current French pastry locator, not an invention date.
 - Religieuse: **Bailleux 1860 is the earliest directly verified professional named entry/section in the current corpus; Gouffé 1873 remains the earliest exact recipe/form pages directly inspected.** The 1860 content page is access-restricted and the 1856 first-edition delta remains open.
+- Tarte au Citron: Acton **1845** now supplies a strongly mapped English shell + lemon-filling architecture, but its exact original recipe leaf still needs direct facsimile inspection and it does not close French origin/codification. Gérard **1877** directly closes a French-language `tourte au citron` name witness, not its recipe architecture.
 - Mont-Blanc: named Farmer 1896 is primary-closed before Angelina; earlier named European use remains open.
-- Kouign-Amann: Scordia / Douarnenez / c.1860 is a strong local tradition, but independent reporting on the Douarnenez association's own historical research explicitly noted the absence of an incontestable written trace; exact early evidence remains open.
+- Kouign-Amann: Scordia / Douarnenez / c.1860 is a strong local tradition, but independent reporting on the Douarnenez association's own historical research explicitly noted the absence of an incontestable written trace; exact early evidence remains open. Association/protection activity and an INPI filing around **1999** are independently corroborated by *Le Monde* 2001, while exact register particulars remain open.
 
 ## Current historical full-object / institutional-metadata lane
 
@@ -88,11 +91,13 @@ Examples now controlling:
 
 ### Other controlling objects / metadata
 
+- Acton 1845: https://wellcomecollection.org/works/rdz664vd — Wellcome/Leeds full object, 679 images, Public Domain Mark; first-edition-based text maps `Common Lemon Tartlets` p.431 and `Store Mixture for Lemon Tartlets` p.434, exact facsimile leaf still to inspect.
+- Gérard 1877: https://fr.wikisource.org/wiki/Page%3AG%C3%A9rard_-_L%E2%80%99Ancienne_Alsace_%C3%A0_table%2C_1877.djvu/219 — direct French-language `tourte au citron` named-form witness.
 - Lacam/Charabot 1893: https://gallica.bnf.fr/ark:/12148/bpt6k9735327k — Saint-Honoré p.44/p.49 targets.
 - Farmer 1896: https://archive.org/details/bostoncookingsc00collgoog — named `Mont Blanc`, printed p.357.
 - Dubois 1894: https://gallica.bnf.fr/ark:/12148/bpt6k3412588h — Tatin technique-genealogy object; exact inverted-tart leaf pending.
 - Bailleux 1856 full object — Éclairs p.74 tightly located, direct page pending.
-- **Bailleux 1860, SPbPU institutional record/TOC:** https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info — dedicated `Religieuse` entry visible in machine-readable TOC; scan access restricted, exact page/form pending.
+- **Bailleux 1860, SPbPU institutional record/TOC:** https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info — dedicated `Religieuse` plus Baba/Savarin entries visible in machine-readable TOC; scan access restricted, exact pages/forms pending.
 - Michigan *Vanity Fair* 1861 full volume — exact p.50 col.1 pending.
 - DILA `jo_associations` open-data lane — official route for association publication metadata including old-JORF notices before 2 Jan 1985; exact 1979 Lichonneux record still to extract.
 
@@ -104,6 +109,10 @@ Examples now controlling:
 - `ECLAIR_BAILLEUX_1856_PAGE`
 - `ECLAIR_VANITY_FAIR_1861_PAGE`
 - `SAINT_HONORE_LACAM_P44_P49`
+- `TARTE_CITRON_ACTON_1845_P431_P434_FACSIMILE`
+- `TARTE_CITRON_DUMAS_1873_EXACT_LEMON_RANGE`
+- `TARTE_CITRON_JEANES_1870_P227`
+- `TARTE_CITRON_EARLIEST_FRENCH_RECIPE_AND_MERINGUE_CHAIN`
 - `OPERA_LE_GAULOIS_1899_PAGE`
 - `TATIN_LE_JOURNAL_1899_PAGE`
 - `TATIN_BULLETIN_1903_PAGE`
@@ -121,7 +130,7 @@ Examples now controlling:
 - `RELIGIEUSE_FRASCATI_1856_CONTEMPORARY_RECORD`
 - `CANELE_INPI_1985`
 - `TROPEZIENNE_INPI_1972`
-- **`KOUIGN_AMANN_INPI_1999_EXACT_RECORD`**
+- **`KOUIGN_AMANN_INPI_1999_EXACT_RECORD`** — filing existence around 1999 independently corroborated; exact date/holder/number/classes/publication/status still open.
 
 ### P1 — genealogy / authorized-source closure
 
@@ -132,7 +141,7 @@ Examples now controlling:
 - `TROPEZIENNE_1956_PRESS_BARDOT_PROVENANCE`
 - `MICKA_POLISH_PRIMARY_BIOGRAPHY`
 - `BABA_EARLY_STOHRER_RUM_TIMING`
-- `TARTE_CITRON_GENRE_HISTORY_VS_GENIN_REINTERPRETATION`
+- `TARTE_CITRON_FRENCH_CODIFICATION_VS_GENIN_REINTERPRETATION` — broad European shell+lemon architecture is no longer wholly open after Acton 1845; focus is French codification, meringue/emulsion transition and Genin's later authored form.
 
 ### P2
 
@@ -150,7 +159,7 @@ For a mark/patent/association publication:
 - capture application/registration/publication number and exact date;
 - retain historical owner-name variants and legal successors;
 - do not infer filing date from Confrérie founding date;
-- an official participant statement that “we filed with INPI” is strong evidence of the participant claim but not a replacement for the register record;
+- an official participant statement that “we filed with INPI” or an independent report that a filing occurred can close only that bounded filing-existence claim, not the register particulars;
 - for association notices, use official DILA/Journal officiel records where possible; do not substitute Pappers/Assoce when the official notice can be acquired.
 
 ## Full-object protocol
@@ -160,17 +169,19 @@ For a historical book/newspaper/menu:
 - record title, author, edition, year, publisher/institution;
 - stable item URL;
 - exact page/scan leaf/column when available;
-- distinguish OCR, machine-readable TOC and verified page image;
+- distinguish OCR, machine-readable TOC, verified transcription and verified page image;
 - preserve original language;
 - add Russian translation only as editorial translation;
 - record rights separately;
-- do not promote snippet/catalogue/search-result/TOC text into claims about visual form or exact recipe wording it does not expose.
+- do not promote snippet/catalogue/search-result/TOC/transcription text into a stronger facsimile claim than it exposes.
+
+A transcription explicitly mapped to a historical edition can close a bounded text/locator layer when corroborated by institutional object identity, but the original page remains `PAGE_IMAGE_HOLD` until visually inspected. This currently governs Acton 1845 p.431/p.434.
 
 ## Access boundary
 
 Never bypass authentication, paywalls or network restrictions.
 
-An institutional TOC behind an otherwise restricted scan can close a bounded `named entry exists in this edition` claim if the TOC itself is openly exposed, but it cannot close recipe wording, page image, geometry or technique. This rule currently applies to Bailleux 1860 / `Religieuse`.
+An institutional TOC behind an otherwise restricted scan can close a bounded `named entry exists in this edition` claim if the TOC itself is openly exposed, but it cannot close recipe wording, page image, geometry or technique. This rule currently applies to Bailleux 1860.
 
 ## Visual protocol
 
