@@ -183,6 +183,7 @@ Research-ветка новой исследовательской серии (fo
 * [Полиглотный синоптический лексикон 11:2–16: NA28, Vulgata, Peshitta, Славянский, Синодальный](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/59_POLYGLOT_SYNOPTIC_LEXICON_GREEK_LATIN_SYRIAC_SLAVONIC.md)
 * [Каноническая синхрония макроблока 1 Кор 11–14: литургический чин, Вечеря, дары, любовь, молчание](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/60_CANONICAL_SYNCHRONY_CORINTHIAN_CHURCH_ORDER_1COR11_14.md)
 * [Генеральная академическая карта соотнесения тезисов и первоисточников (Claim-to-Footnote Mapping)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/61_MASTER_CLAIM_TO_FOOTNOTE_ACADEMIC_CITATION_MAP.md)
+* [Частые вопросы читателя и практический синтез серии (справочник Q1–Q10)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/62_1COR11_READER_FAQ_AND_PRACTICAL_SYNTHESIS.md)
 * [Параллельный корпус и координация агентов](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/00_README_AND_MASTER_AUTHORITY_INDEX.md)
 * [Машиночитаемый манифест доказательств и источников](data/1cor11-research-manifest.json)
 * [Машиночитаемый манифест координации серии](data/1cor11-authority-manifest.json)

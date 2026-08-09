@@ -6,7 +6,7 @@
 **Канонический текстовый сегмент:** 1 Коринфянам 11:2–16  
 **Связанный публичный репозиторий:** `FedorMilovanov/gb-is-my-strength`  
 **Текущая исследовательская ветка:** `arena/019fe62d-research`  
-**Операционный статус:** `FOUNDATION FULLY EXPANDED / 69-DOCUMENT MASTER SYSTEM`
+**Операционный статус:** `FOUNDATION FULLY EXPANDED / 70-DOCUMENT MASTER SYSTEM`
 
 ---
 
@@ -40,7 +40,7 @@
 
 ---
 
-## 3. Полная навигационная карта серии (69 документов: 62 досье + 7 статей)
+## 3. Полная навигационная карта серии (70 документов: 63 досье + 7 статей)
 
 ### Исследовательские досье, матрицы и своды
 
@@ -108,6 +108,7 @@
 | **59** | `59_POLYGLOT_SYNOPTIC_LEXICON_GREEK_LATIN_SYRIAC_SLAVONIC.md` | Полиглотный синоптический лексикон 11:2–16: NA28, Vulgata, Peshitta, Церковнославянский, Синодальный | `ACTIVE` |
 | **60** | `60_CANONICAL_SYNCHRONY_CORINTHIAN_CHURCH_ORDER_1COR11_14.md` | Каноническая синхрония макроблока 1 Кор 11–14: литургический чин, Вечеря, дары, любовь, молчание (14:34) | `ACTIVE` |
 | **61** | `61_MASTER_CLAIM_TO_FOOTNOTE_ACADEMIC_CITATION_MAP.md` | Генеральная академическая карта соотнесения тезисов и первоисточников (Claim-to-Footnote Mapping) | `ACTIVE` |
+| **62** | `62_1COR11_READER_FAQ_AND_PRACTICAL_SYNTHESIS.md` | Частые вопросы читателя и практический синтез серии (справочник Q1–Q10) | `ACTIVE` |
 | **DATA** | `../data/1cor11-research-manifest.json` | Машиночитаемый манифест доказательств, источников и статусов | `ACTIVE` |
 
 ### Публикационные статьи серии (Site-Ready Drafts)

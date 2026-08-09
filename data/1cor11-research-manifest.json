@@ -574,6 +574,15 @@
       "publicationState": "REFERENCE"
     },
     {
+      "id": "1COR11-READER-FAQ-62",
+      "path": "1_КОРИНФЯНАМ_11/62_1COR11_READER_FAQ_AND_PRACTICAL_SYNTHESIS.md",
+      "scope": ["11:2-16", "reader-faq", "practical-synthesis", "q1-q10"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
       "id": "1COR11-ARTICLE-1-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md",
       "scope": ["11:2-3", "site-article", "headship", "trinity", "christ"],
