@@ -9,7 +9,8 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 | 18th c. | Baba | Stohrer attributes baba to Nicolas Stohrer; Tokay/Malaga versions diverge and rum comes later | `HOUSE TRADITION / event not primary-closed` |
 | 1840 | Saint-Honoré | Lacam/Charabot 1893 later historical account connects Maison Chiboust, Auguste Julien and Bordeaux `Flan Suisse` to 1840 | `PROBABLE / FULL PRIMARY VOLUME IDENTIFIED / ORIGIN ACCOUNT TIGHTLY LOCATED TO PRINTED p.44 / DIRECT PAGE INSPECTION PENDING` — https://gallica.bnf.fr/ark:/12148/bpt6k9735327k |
 | 1847 | Saint-Honoré | Some modern retellings use 1847 | `CONFLICT / DO NOT USE AS SOLE ORIGIN DATE` |
-| 1856 | Éclair | BHVF records literary pastry use `ses éclairs` | `DOCUMENTED lexical witness` — https://www.cnrtl.fr/definition/bhvf/%C3%A9clair |
+| **1848** | **Éclair** | Charles Paul de Kock, *L’Atelier de demoiselles ou l’apothicaire de Pontoise*, is tightly located to printed p.4 col.1 with an explicit cream-filled `éclairs` pastry description | `EARLIEST CURRENT FRENCH PASTRY LOCATOR / HACHETTE BNF CONFIRMS 1848 EDITION + BNF DIGITIZATION PROVENANCE / EXACT PRIMARY PAGE STILL TO INSPECT` — https://www.hachettebnf.fr/livre/latelier-de-demoiselles-ou-lapothicaire-de-pontoise-vaudeville-en-3-actes-9782012183292/ |
+| 1856 | Éclair | BHVF records a separate literary pastry use `ses éclairs` | `DOCUMENTED lexical witness`, no longer earliest current locator — https://www.cnrtl.fr/definition/bhvf/%C3%A9clair |
 | 1856 | Éclair | Bailleux, *Le Pâtissier moderne*, professional `Éclairs` recipe | `FULL BOOK OBJECT IDENTIFIED / PRINTED p.74 TIGHTLY LOCATED / DIRECT PAGE INSPECTION PENDING` — https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC |
 | 1856 | Religieuse | Modern recap attributes creation to Frascati; Bailleux trained at Maison Frascati but no Religieuse page has been found | `DISPUTED / CONTEMPORARY LOCATOR MISSING` |
 | 1860 | Kouign-Amann | Douarnenez official tourism attributes creation to Yves-René Scordia | `LOCAL TRADITION / early record missing` |
@@ -46,7 +47,8 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 | 1987 | Ispahan genealogy | Hermé recounts `Paradis`, rose + raspberry, at Fauchon | `DIRECT PARTICIPANT INTERVIEW` |
 | 1995 | Canelé research | Région reports DRAC-backed work finding no convent evidence for modern canelé | `INSTITUTIONAL SUMMARY / underlying report priority` |
 | 1997 | Ispahan | Comité Colbert + Pierre Hermé Japan give 1997 milestone | `CROSS-LANGUAGE OFFICIAL CONFIRMATION` |
-| ca.1999–2000 | 2000 Feuilles | Gault&Millau links creation/name to millennium context | `B1 PROBABLE / primary launch catalogue needed` |
+| pre-2000 / Ladurée period | 2000 Feuilles precursor | A first-person Hermé author-text lead says the precursor was created at Ladurée as `Millefeuille praliné` | `STRONG AUTHOR-TEXT ACQUISITION LEAD / ACCESSIBLE COPY NOT AUTHORIZED PUBLISHER SURFACE / AUTHORIZED SOURCE REQUIRED` |
+| c.1999–2000 | 2000 Feuilles | Gault&Millau direct-interview context says Hermé responded to millennium questions with a reworked mille-feuille, renamed `2000 Feuilles` | `STRONG DIRECT-INTERVIEW MILLENNIUM NAMING CONTEXT / EXACT FIRST CATALOGUE-DATE STILL OPEN` — https://fr.gaultmillau.com/fr/news/pierre-herme-en-cinq-desserts |
 | 2001 | Pierre Hermé | Japanese official timeline gives first France boutique milestone | `OFFICIAL TIMELINE` |
 | 2009 | Tarte citron / Genin | Le Monde dates citron-basilic version to 2009 | `B1 STRONG / participant primary desired` |
 | 2026 | Galette | Élysée records republican galette without fève | `PRIMARY GOVERNMENT RECORD` |
@@ -54,13 +56,15 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 ## Dates prohibited as simple origin labels at current state
 
 - Saint-Honoré `1847` / `1863`: not primary-closed; Lacam page-level locator instead points to an 1840 Maison Chiboust account on p.44, while p.49 is a separate technical statement.
+- Éclair `1856 as first known pastry use`: superseded by the tightly located 1848 de Kock occurrence; exact 1848 primary page still needs direct scan inspection, and 1848 must not be called an absolute invention date.
 - Paris-Brest cake `1891`: race date only. Exact cake year remains 1909/1910 conflict even within later Durand-family evidence.
 - Religieuse `1856`: disputed modern attribution pending contemporaneous evidence.
 - Kouign-Amann `1860`: local tradition pending early record.
 - Tatin accident date: legend, not documentary milestone.
 - Canelé convent/18th-century origin: not established by current regional research.
-- Éclair `Carême / early 1800s`: no exact primary invention locator; Bailleux 1856 is already the strongest professional early target.
+- Éclair `Carême / early 1800s`: no exact primary invention locator; early named pastry evidence is currently 1848 and a professional recipe is tightly located in 1856.
 - Mont-Blanc `1903 invention`: rejected; named Mont Blanc is directly present in Farmer 1896 p.357 and related construction in Artusi 1891.
+- 2000 Feuilles `2000 = literal layer count`: rejected; direct-interview evidence ties the renaming to the millennium context, while exact first catalogue/date remains open.
 - Tropézienne `Bardot named it in 1955 during filming`: incompatible with documented May–July 1956 filming.
 
 ## Chronology next actions
