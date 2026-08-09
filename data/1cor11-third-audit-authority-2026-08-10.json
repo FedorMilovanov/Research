@@ -1,0 +1,73 @@
+{
+  "schema": "1cor11-third-audit-authority-v1",
+  "date": "2026-08-10",
+  "base_main": "a353b6d2b83553a60548bf2f9d625c54ab2d5f88",
+  "status": [
+    "THIRD-AUDIT",
+    "OPEN-WEB-EXHAUSTION",
+    "LATEST-EDITION-CONTROL",
+    "EDGE-PROVENANCE",
+    "CONSERVATIVE-WEIGHTED",
+    "FAIL-CLOSED",
+    "RESEARCH-ONLY",
+    "PUBLICATION-HOLD"
+  ],
+  "authority_files": [
+    "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md",
+    "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZ_OPEN_WEB_EXHAUSTION_AND_LATEST_EDITION_AUDIT_2026-08-10.md",
+    "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZ_CLOSED_BOOK_ACQUISITION_REVISED_2026-08-10.md"
+  ],
+  "supersedes_for_user_acquisition": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZ_CLOSED_BOOK_ACQUISITION_PRIORITY_2026-08-10.md",
+  "policy": {
+    "do_not_request_open_web_material": true,
+    "latest_edition_check_required": true,
+    "edge_model_is_not_equal_weight_model": true,
+    "product_write": false,
+    "site_publication": false,
+    "publication_hold": true
+  },
+  "p0_user_acquisition_only_if_not_otherwise_accessible": [
+    "Thiselton NIGTC 2000 pp.800-847 + notes",
+    "Fee NICNT Revised 2014 pp.542-586 + notes/addendum",
+    "Garland BECNT 2nd ed. 2025 full 1 Cor 11:2-16 section + notes",
+    "Ciampa/Rosner PNTC 2010 pp.503-540 + notes"
+  ],
+  "self_acquire_first": [
+    "Fitzmyer AYB 2008",
+    "Winter Roman Wives Roman Widows",
+    "Ambrosiaster relevant v10 reception claim",
+    "Peppiatt core rhetorical thesis",
+    "Fee 1987 first edition",
+    "Garland 2003 first edition",
+    "public-domain commentaries",
+    "open scholarly articles"
+  ],
+  "latest_edition_corrections": {
+    "garland": "use 2nd ed. 2025 as current primary Garland witness; 2003 for delta only",
+    "fee": "use NICNT Revised 2014 for current Fee position; do not silently substitute 1987"
+  },
+  "edge_provenance_pinned": [
+    "Murphy-O'Connor sexual-role/hairstyle model",
+    "Murphy-O'Connor human-messenger angels model",
+    "MacGregor homosexuality/hairstyle model",
+    "quotation-refutation model",
+    "interpolation 11:3b-15 model and direct critique",
+    "Finney honor/status reconstruction"
+  ],
+  "controlling_synthesis": {
+    "material_covering": "B-high leading",
+    "hair_only": "C serious alternative",
+    "kephale_headship_authority": "B leading",
+    "kephale_source_only": "C viable",
+    "exousia_woman_subject": "A syntax",
+    "exousia_referent": "B/C",
+    "holy_liturgical_angels": "B leading",
+    "watchers": "C",
+    "roman_capite_velato_background": "A historical background",
+    "exact_corinth_trigger": "B reconstruction",
+    "wives_vs_all_women": "OPEN B/C",
+    "women_pray_prophesy_11_5": "A",
+    "interpolation_11_3b_15": "D/C-low",
+    "large_quotation_refutation": "D/C-low"
+  }
+}
