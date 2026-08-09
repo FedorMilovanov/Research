@@ -94,6 +94,8 @@ Historical source rows and old claim decisions are not silently deleted when lat
 | LCS-2F01 | https://www.pierreherme.com/fr/art-de-la-patisserie | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Official signature/fetish context |
 | LCS-2F02 | https://gourmet.galerieslafayette.com/b/pierre-herme-et-pierre-sang-une-rencontre-gourmande-entre-deux-univers/ | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Direct Hermé explanation of composition/textural contrast |
 | LCS-2F03 | https://fr.gaultmillau.com/fr/news/pierre-herme-en-cinq-desserts | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Gault&Millau article structured around Hermé recollections links the renaming to millennium context; exact launch catalogue/date remains open |
+| LCS-2F04 | https://www.pierreherme.com/fr/cadeaux/livre-toutes-les-saveurs-de-la-vie.html | A3 | FULL_OBJECT_VERIFIED | EDITION_IDENTITY_VERIFIED | COPYRIGHTED | REFERENCE | Official Maison identifies Hermé/Roig *Toutes les saveurs de la vie*, Buchet-Chastel 2022; authorized acquisition target for first-person career chronology, exact Ladurée precursor page still open |
+| LCS-2F05 | https://www.pierreherme.com/fr/dictionnaire-amoureux-patisserie.html | A3 | FULL_OBJECT_VERIFIED | EDITION_IDENTITY_VERIFIED | COPYRIGHTED | REFERENCE | Official Maison identifies Hermé/Mathieu *Dictionnaire amoureux de la pâtisserie*, Plon 2025; exact relevant entry/page still requires authorized access |
 
 ## Mont-Blanc / Angelina
 
@@ -128,6 +130,9 @@ Historical source rows and old claim decisions are not silently deleted when lat
 |---|---|---|---|---|---|---|---|
 | LCS-KA01 | https://douarnenez-tourisme.com/decouvrir/gastronomie/kouign-amann/ | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Douarnenez local tradition: Scordia/1860 and technique |
 | LCS-KA02 | https://www.lopt.org/carte/cornouaille/specialites/kouign-amann-de-douarnenez | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Counter-signal: absence from Curnonsky/de Croze regional inventory noted |
+| LCS-KA03 | https://www.lemonde.fr/archives/article/2001/07/25/le-kouign-amann-breton_4199992_1819218.html | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Independent 2001 report on Alain Le Berre/association historical research explicitly notes absence of an incontestable written trace for the Scordia-origin reconstruction |
+| LCS-KA04 | https://bcd.bzh/becedia/br/kouignou-ha-bleutou-breizh | A2 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Breton-language institutional heritage transmission of Scordia/Douarnenez c.1860 tradition; not contemporaneous proof |
+| LCS-KA05 | https://www.gateaux-bretons-douarnenez.bzh/veritable-kouign-amann-douarnenez-jain-yves-rene-scordia/ | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Artisan association-member participant history reports Nov 1999 association and INPI filing 15 Dec 1999; exact register object/number/classes/status remain open |
 
 ## Galette des Rois
 
@@ -175,6 +180,7 @@ The following rows supersede weaker discovery routes where noted and are the con
 | LCS-TT08 | Tatin / Curnonsky 1926 | https://catalogue.bnf.fr/ | A2 | CATALOG_VERIFIED | TITLE_YEAR_VERIFIED_PAGE_OPEN | BNF_ITEM_REVIEW_REQUIRED | BnF confirms Curnonsky & Marcel Rouff, *La France gastronomique... L'Orléanais*, F. Rouff, 1926; exact Tatin page still to pin |
 | LCS-TT09 | Tatin / Confrérie | https://stephanevaladou.wixsite.com/lichonneuxtatin/lesprit-et-les-lois | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Current participant source states Journal officiel registration 27 Mar 1979 and explicitly retells a `légende`; evidence of modern myth transmission, not nineteenth-century accident |
 | LCS-TT10 | Tatin / Confrérie legal metadata | https://www.pappers.fr/entreprise/confrerie-des-lichonneux-de-tarte-tatin-530404714 | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | RNA/INSEE-derived metadata gives creation 16 Mar 1979 and association identifier W413000745; official original notice still preferred |
+| LCS-RG01 | Religieuse / Bailleux | https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info | A2 | INSTITUTIONAL_RECORD_PLUS_OPEN_TOC_VERIFIED / SCAN_ACCESS_RESTRICTED | NAMED_ENTRY_TOC_VERIFIED / EXACT_PAGE_OPEN | RIGHTS_RESTRICTED | SPbPU record identifies Bailleux, Paris 1860, DOI 10.18720/SPBPU/2/ed-3262; open TOC directly lists `Religieuse` in Chapter V `Gâteaux garnis`; proves named professional entry in 1860 edition, not recipe wording/form |
 | LCS-CA03 | Canelé / professional institution | professional French pâtisserie-industry source recorded in dossier | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Independently strengthens 1985 Gironde pâtissiers' Confrérie creation/professional institutionalization; does not substitute for INPI mark record |
 
 ## Current claim decisions — historical Wave 1 table
@@ -199,7 +205,7 @@ The rows below are retained for audit history. Where a Wave 2 controlling decisi
 | LCS-C014 | Angelina's Mont-Blanc is a house signature associated with Rumpelmayer/early 20th c | CONFIRMED AS HOUSE TRADITION | LCS-MB01/02 | none for bounded house wording |
 | LCS-C015 | `Religieuse` in 1873 had only the later standard two-choux form | FALSE / OVERSTATED | LCS-S004/005 | none |
 | LCS-C016 | Frascati invented the religieuse in 1856 | DISPUTED/UNRESOLVED | modern retellings + Bailleux provenance vs Gouffé | EVIDENCE_HOLD; negative search coverage is not absence proof |
-| LCS-C017 | Scordia created Kouign-Amann in Douarnenez in 1860 | LOCAL TRADITION / PROBABLE | LCS-KA01 | EVIDENCE_HOLD pending early record |
+| LCS-C017 | Scordia created Kouign-Amann in Douarnenez in 1860 | SUPERSEDED BY LCS-C042 | LCS-KA01 | see controlling decision |
 | LCS-C018 | Tatin accident story is established historical fact | SUPERSEDED BY LCS-C035 | LCS-TT01/02 | see controlling decision |
 | LCS-C019 | Canelé convent origin is established | REJECTED AS ESTABLISHED FACT | LCS-CA01/02 | underlying archival acquisition remains |
 | LCS-C020 | Éclair pastry use is attested by 1856 and professionally described by 1873 | SUPERSEDED BY LCS-C030 | LCS-S006/007/015, LCS-EA01/02 | see controlling decision |
@@ -219,15 +225,18 @@ The rows below are retained for audit history. Where a Wave 2 controlling decisi
 |---|---|---|---|---|
 | LCS-C030 | Earliest currently located French pastry use of `éclair` is 1848 | `CURRENT EARLIEST LOCATOR / NOT ABSOLUTE FIRST / NOT INVENTION DATE` | LCS-EA04 plus specialist p.4 col.1 locator; later LCS-S015/LCS-EA01 | direct BnF/Gallica page inspection; pre-1848 search remains open |
 | LCS-C031 | Exact Louis Durand Paris-Brest cake year is closed as 1910 | `UNRESOLVED 1909–1910; 1911 DISCOVERY-ONLY` | LCS-PB02/03/05/06/07 plus LCS-PB08 discovery signal | contemporaneous 1909–1911 advertisement/menu/trade/local record required |
-| LCS-C032 | `2000 Feuilles` millennium naming context is merely an unsupported guess | `REJECTED`; millennium context is materially supported by Gault&Millau's Hermé-recollection framing | LCS-2F03 | exact first catalogue/sale date and authorized Ladurée-precursor source remain open |
+| LCS-C032 | `2000 Feuilles` millennium naming context is merely an unsupported guess | `REJECTED`; millennium context is materially supported by Gault&Millau's Hermé-recollection framing | LCS-2F03 | exact first catalogue/sale date and authorized Ladurée-precursor passage remain open |
 | LCS-C033 | A dessert actually named `Mont Blanc` existed before Angelina's 1903 founding | `CONFIRMED BOUNDED CLAIM` | LCS-MB06 printed p.357 + LCS-MB03 precursor construction | page-image review remains for quotation/facsimile, not for bounded object/date identity |
 | LCS-C034 | Early documentary Tatin network is only a vague later local legend | `REJECTED`; current network has exact 1899 page route and a tightly located contemporaneous 1903 Bulletin witness | LCS-TT04/05/06 | direct page-image/content inspection still required for quote-safe promotion |
-| LCS-C035 | Tatin accident/distraction story can be narrated as nineteenth-century documented origin | `REJECTED AS CURRENT WORDING / LATE MYTH LAYER` | LCS-TT05/09/10 | acquire *Horizons d'Argonne* 1976 p.97 and original 1979 prospectus/JO notice; do not claim absolute first oral telling |
-| LCS-C036 | Jullemier is a 1903 publication witness | `FALSE / DATE-CONFLATION` | Tatin dossier bibliographic work | c.1903 is described event; *Contes de Sologne* bibliographic publication = 1915; exact page open |
+| LCS-C035 | Tatin accident/distraction story can be narrated as nineteenth-century documented origin | `REJECTED AS CURRENT WORDING / LATE MYTH LAYER` | LCS-TT05/09/10 | acquire *Horizons d'Argonne* `n°30 à 39, 1976, p.97` and original 1979 prospectus/DILA-old-JORF notice; do not claim absolute first oral telling |
+| LCS-C036 | Jullemier is a 1903 publication witness | `FALSE / DATE-CONFLATION` | Tatin dossier bibliographic work | c.1903 is described event; *Contes de Sologne* publication = 1915; exact page open |
 | LCS-C037 | Curnonsky invented the Tatin accident legend in 1926 | `UNSUPPORTED / DO NOT PUBLISH` | LCS-TT05 plus BnF-confirmed 1926 volume identity | exact 1926 Tatin page still to acquire; current historical synthesis reports no Curnonsky accident passage |
-| LCS-C038 | Tatin sisters invented the general technique of an inverted fruit tart | `UNRESOLVED / CURRENT EVIDENCE POINTS TO PRE-EXISTING TECHNIQUE` | LCS-TT05; Académie du Goût lead to Urbain Dubois 1894; 1790 `tourte retournée` institutional historical lead | primary 1790 and Dubois 1894 pages required before strong technique genealogy wording |
+| LCS-C038 | Tatin sisters invented the general technique of an inverted fruit tart | `UNRESOLVED / CURRENT EVIDENCE POINTS TO PRE-EXISTING TECHNIQUE` | LCS-TT05; Académie du Goût lead to Urbain Dubois 1894; 1790 `tourte retournée` historical lead | primary 1790 and Dubois 1894 pages required before strong technique-genealogy wording |
 | LCS-C039 | Canelé 1985 professional institutionalization is only a tourism-site story | `REJECTED`; multiple professional/regional/library sources corroborate 1985 Confrérie/spelling layer | LCS-CA01/02/03 | exact INPI collective-mark object remains LOCATOR_HOLD |
-| LCS-C040 | Gouffé 1873 is the earliest directly verified professional Religieuse recipe currently in this corpus | `CONFIRMED AS CORPUS-BOUND STATEMENT` | LCS-S004/005 + documented negative-search coverage | earlier Frascati/Religieuse may still exist; no absence claim allowed |
+| LCS-C040 | Gouffé 1873 is the earliest exact Religieuse recipe/form directly inspected in this corpus | `CONFIRMED AS CORPUS-BOUND EXACT-PAGE CLAIM` | LCS-S004/005 | earlier named/professional evidence exists; do not call 1873 first named entry or absolute origin |
+| LCS-C041 | A professional named `Religieuse` entry is directly verified in Bailleux's 1860 edition | `CONFIRMED CORPUS-BOUND NAMED-ENTRY CLAIM` | LCS-RG01 | exact 1860 page/form restricted; whether the 1856 first edition already contains `Religieuse` remains open |
+| LCS-C042 | Scordia's exact 1860 Kouign-Amann invention event is already primary/archivally closed | `REJECTED AS CURRENT EVIDENCE STATUS / STRONG LOCAL TRADITION ONLY` | LCS-KA01/03/04 | earliest contemporaneous name/recipe and Scordia-linked primary object remain EVIDENCE/LOCATOR_HOLD; exact 1999 INPI record separate |
+| LCS-C043 | The authorized identity of the Hermé books relevant to the Ladurée precursor is unresolved | `REJECTED`; official Maison records cleanly identify Buchet-Chastel 2022 and Plon 2025 acquisition targets | LCS-2F04/05 | exact precursor passage on an authorized readable page and first 1998–2001 catalogue still open |
 
 ## Rights queue
 
@@ -235,6 +244,8 @@ The rows below are retained for audit history. Where a Wave 2 controlling decisi
 - Wikisource/Commons historical scans/transcriptions: reuse conditions must be checked per scan/transcription page; preserve credits.
 - Gallica/BnF/RetroNews historical objects remain subject to item/institution reproduction conditions; full-text or page-route availability does not automatically clear promotional image reuse.
 - Farmer 1896, Bailleux 1856, de Kock 1848, *Vanity Fair* 1861, *Le Gaulois* 1899, *Le Journal* 1899 and Tatin 1903 Bulletin require page-level review plus item-level rights/credit decisions before facsimile publication.
+- SPbPU Bailleux 1860 exposes bibliographic/TOC metadata publicly but scan reading is access-restricted; do not bypass authentication/network restrictions and do not imply image rights.
+- Modern Hermé books are copyrighted; unauthorized searchable uploads may generate locators but must not be reproduced or treated as authorized custody.
 - Modern maison, press and participant photography: `RIGHTS_UNKNOWN` unless explicit item licence is found; do not lift into Product.
 - Élysée/municipal/region pages: factual citation is separate from photo reuse; image rights remain item-specific.
 
@@ -242,15 +253,16 @@ The rows below are retained for audit history. Where a Wave 2 controlling decisi
 
 1. direct de Kock 1848 p.4 col.1 BnF/Gallica page;
 2. direct Bailleux 1856 p.74 and Michigan *Vanity Fair* 2 Feb 1861 p.50 col.1;
-3. Lacam 1893 printed p.44/p.49;
-4. *Le Gaulois*, 18 Mar 1899 p.3 and *Le Journal*, 18 Dec 1899 p.1 direct page inspection;
-5. Tatin 1903 Bulletin exact page(s), Jullemier 1915 page, Besnard 1921 issue/page, Curnonsky/Rouff 1926 page;
-6. Tatin *Horizons d'Argonne* 1976 p.97 + original 1979 Confrérie prospectus / Journal officiel notice;
-7. primary Urbain Dubois 1894 inverted-tart page and primary 1790 `tourte retournée` record to distinguish technique genealogy from Tatin-name genealogy;
-8. contemporaneous Paris-Brest 1909–1911 records, including Durand/Bauget and Maisons-Laffitte business/trade directories;
-9. pre-1873 Religieuse/Frascati records and first clearly standard two-choux depiction;
-10. exact INPI canelé 1985 collective mark and exact Tropézienne/Kouign-Amann legal records;
-11. authorized Hermé source for Ladurée `Millefeuille praliné` → `2000 Feuilles` recollection and earliest 1998–2001 catalogue;
+3. Bailleux 1860 exact `Religieuse` page through lawful access and 1856-vs-1860 edition comparison;
+4. Lacam 1893 printed p.44/p.49;
+5. *Le Gaulois*, 18 Mar 1899 p.3 and *Le Journal*, 18 Dec 1899 p.1 direct page inspection;
+6. Tatin 1903 Bulletin exact page(s), Jullemier 1915 page, Besnard 1921 issue/page, 1923 p.85, Curnonsky/Rouff 1926 page, Paris-Soir 1929 p.5 and Dépêche 1931 p.2;
+7. Tatin *Horizons d'Argonne* `n°30 à 39, 1976, p.97` + original 1979 Confrérie prospectus / DILA-old-JORF notice;
+8. primary Urbain Dubois 1894 inverted-tart page and primary 1790 `tourte retournée` record to distinguish technique genealogy from Tatin-name genealogy;
+9. contemporaneous Paris-Brest 1909–1911 records, including Durand/Bauget and Maisons-Laffitte business/trade directories;
+10. exact INPI canelé 1985 collective mark, exact Tropézienne 1972 legal object and exact `Véritable Kouign-Amann de Douarnenez` 1999 trademark object;
+11. authorized Hermé page for Ladurée `Millefeuille praliné` → `2000 Feuilles` recollection and earliest 1998–2001 catalogue;
 12. Farmer 1896 p.357 page-image/credit review and pre-1896 European named `Mont-Blanc/Monte Bianco` search;
 13. May–July 1956 contemporary Saint-Tropez press on Micka/Bardot/name plus original Bardot testimony provenance;
-14. Polish primary/biographical records for Alexandre/Aleksander Micka.
+14. Polish primary/biographical records for Alexandre/Aleksander Micka;
+15. earliest Kouign-Amann printed name/recipe and Scordia-linked primary record.
