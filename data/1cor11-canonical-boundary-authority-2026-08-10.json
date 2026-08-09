@@ -1,0 +1,38 @@
+{
+  "topic": "1 Corinthians 11:5 / 14:34-35 / 1 Timothy 2:11-15",
+  "date": "2026-08-10",
+  "status": "CANONICAL-BOUNDARY-AUDIT / RESEARCH-ONLY / PUBLICATION-HOLD",
+  "core": {
+    "women_pray_prophesy_11_5": "A",
+    "eleven_five_alone_settles_eldership": false,
+    "fourteen_34_35_western_transposition": "A",
+    "fourteen_34_35_extant_complete_omission": "NONE_KNOWN",
+    "fourteen_34_35_interpolation": "C_SERIOUS_TEXTUAL_HYPOTHESIS",
+    "fourteen_34_35_exact_restricted_speech": "OPEN_B_C",
+    "first_timothy_2_teach_authority_restriction_text": "A",
+    "first_timothy_2_didaskin_authentein_relation": "B_C",
+    "first_timothy_2_creation_fall_rationale": "A",
+    "leading_canonical_reconciliation": "B_DIFFERENTIATED_FUNCTIONS_COMPLEMENTARIAN",
+    "final_ordination_policy": "OUTSIDE_1COR11_ALONE"
+  },
+  "textual_debate": {
+    "niccum_external_evidence": "CONTROL",
+    "payne_vaticanus_case": "PRO_INTERPOLATION_CONTESTED",
+    "fellows_2019": "CRITIQUES_PAYNE_OBELOS_IDENTIFICATION",
+    "fellows_2024": "PRO_INTERPOLATION_ON_OTHER_TRANSCRIPTIONAL_GROUNDS",
+    "lavrinovica_2017": "V33B_PARAGRAPH_BOUNDARY_CONTROL"
+  },
+  "reconciliation_models": [
+    "R1_DIFFERENTIATED_FUNCTIONS_COMPLEMENTARIAN",
+    "R2_TRADITIONAL_RESTRICTION_CHARISMATIC_EXCEPTION",
+    "R3_INTERPOLATION_PLUS_LOCAL_1TIM2",
+    "R4_AUTHENTIC_14_DISORDER_ONLY_PLUS_LOCAL_AUTHORITY_ABUSE",
+    "R5_QUOTATION_REFUTATION"
+  ],
+  "publication": {
+    "product_write": false,
+    "ui_implementation": false,
+    "site_publication": false,
+    "publication_hold": true
+  }
+}
