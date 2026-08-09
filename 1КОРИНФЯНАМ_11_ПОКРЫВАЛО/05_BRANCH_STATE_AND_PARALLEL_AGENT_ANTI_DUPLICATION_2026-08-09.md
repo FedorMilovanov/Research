@@ -1,0 +1,180 @@
+# Состояние ветки, соседние ветки и анти-дубликат для параллельных агентов
+
+**Дата:** 9 августа 2026 (обновлено после слияния параллельных фундаментов от 3 агентов)
+**Статус:** `BRANCH-OPEN / PUSHED / ANTI-DUPLICATION / SINGLE-CANONICAL-ENTRYPOINT / FOUNDATION-MERGED / GREEK-DOSSIER-06-WRITTEN / PHASE-1-PATRISTICS-ACQUIRED`
+**Ветка:** `arena/019fe62b-research`
+**Scope:** новый исследовательский кейс «1 Кор. 11:2–16 покрывало/мужчина/женщина»
+**Канонический entrypoint:** `00_README_FOUNDATION_OPEN_2026-08-09.md` (в этой папке)
+
+---
+
+## 1. Проверка соседних веток
+
+Проверено:
+
+```text
+git fetch --all --prune
+git branch -a
+git worktree list
+```
+
+На момент 9 августа 2026 в удалённом репозитории видны только:
+
+- `main`;
+- `origin/main`;
+- текущая рабочая ветка `arena/019fe62b-research`.
+
+Отдельной ветки по 1 Кор. 11 или покрывалу не найдено.
+
+Внутри этой ветки работали три параллельных агента, независимо закладывавшие фундамент:
+
+1. **Агент 1** — папка `1КОРИНФЯНАМ_11_ПОКРЫВАЛО/` (эта папка, канонический entrypoint), файлы 00–05 + позже слитый файл 06.
+2. **Агент 2** — папка `1_КОРИНФЯНАМ_11/` (греческий досье 01, master source ledger 15, queue 16). Содержимое слито в эту папку (00A, 01B, 04B, 06); дублирующая папка удалена.
+3. **Агент 3** — папка `СЕРИЯ 1 КОРИНФЯНАМ 11/` (00–07 тематические досье, плюс `ИСТОЧНИКИ/` с полными ANF текстами Климента Ал. *Paedagogus*, Тертуллиана *De Oratione* и *De Virginibus Velandis*, а также сверенными цитатами Златоуста, Кальвина, Гилла, Ходжа, Феофилакта, Феофана Затворника). Его ИСТОЧНИКИ уже скопированы в общую библиотеку `SOURCE_LIBRARY/processed/1COR11_PRIMARY/patristics/`; сам корпус досье остаётся как рабочая поверхность, его содержимое будет интегрироваться в соответствующие номера файлов этой канонической папки по мере углубления исследования. Новые контентные досье создаются в этой (канонической) папке, а не в виде новых параллельных папок; агентские заготовки 01–07 в `СЕРИЯ 1 КОРИНФЯНАМ 11/` используются как сырьё, но не считаются каноническими.
+
+---
+
+## 2. Что уже есть по 1 Кор. 11 в Research
+
+До открытия этой серии в репозитории существовали файлы, связанные с 1 Кор. 11 косвенно, через серию по Быт. 6:
+
+1. `ТРУДНЫЕ ТЕКСТЫ/GREEK_NT_DIRECT_TEXT_ANALYSIS_1COR11_1PETER3_4_2PETER2_JUDE.md` — DEEP-PASS-XIX-C, прямой минимальный разбор
+2. `ТРУДНЫЕ ТЕКСТЫ/GREEK_NT_ADVERSARIAL_PRESSURE_TEST_JUDE_1PETER_2PETER_1COR11.md`
+3. `ТРУДНЫЕ ТЕКСТЫ/PATRISTIC_CROSS_TEXT_MATRIX_JOB_PSALMS_DEUT32_NUM13_1COR11_JUDE_PETER.md`
+
+Их значение:
+
+- минимальный греческий разбор `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς`;
+- предохранитель по `διὰ τοὺς ἀγγέλους`;
+- прямое чтение не отождествляет ангелов автоматически со Стражами Быт. 6;
+- эти файлы остаются в корпусе по Быт. 6, но их выводы интегрированы в досье 06.
+
+---
+
+## 3. Что уже создано в новом кейсе
+
+Каноническая папка:
+
+```text
+1КОРИНФЯНАМ_11_ПОКРЫВАЛО/
+```
+
+Дублирующая папка `1_КОРИНФЯНАМ_11/` **удалена** после слияния; её содержимое перенесено сюда.
+
+Файлы на текущий момент:
+
+1. `00_README_FOUNDATION_OPEN_2026-08-09.md` — фундамент, карта вопросов, источников, спорных позиций.
+2. `00A_PARALLEL_FOUNDATION_MERGE_NOTE_2026-08-09.md` — заметка о слиянии двух фундаментов.
+3. `01_SOURCE_ACQUISITION_PLAN.md` — базовый план приобретения книг/статей.
+4. `01B_BOOK_ACQUISITION_PRIORITY_QUEUE_SUPPLEMENT_2026-08-09.md` — детальная P0/P1/P2 очередь с порядком чтения шестью слоями (дополнение к 01).
+5. `02_CLAIM_LEDGER_TEMPLATE_AND_POSITIONS.md` — реестр тезисов и предварительных позиций.
+6. `03_PRODUCT_SITE_STYLE_AND_SERIES_CONTRACT_2026-08-09.md` — наблюдения по стилю сайта и будущему переносу (SBL+Chicago, милость к оппоненту, догмат vs адиафора).
+7. `04_SOURCE_CARDS_AND_LOCATOR_REGISTRY_2026-08-09.md` — карточки отдельных ключевых источников.
+8. `04B_MASTER_SOURCE_LEDGER_SUPPLEMENT_2026-08-09.md` — расширенный реестр 130+ источников с evidence-классами A1/A2/A3/B1/C/D.
+9. `05_BRANCH_STATE_AND_PARALLEL_AGENT_ANTI_DUPLICATION_2026-08-09.md` — этот файл.
+10. `06_GREEK_TEXT_AND_APPARATUS_1COR11_2_16.md` — **первый содержательный досье**: рабочий греческий текст NA28/SBLGNT 11:2–16, стих-за-стихом грамматический разбор, минимальные выводы A/B/C/X, с интеграцией DEEP-PASS-XIX-C. Текст помечен NOT-QUOTE-SAFE до коллации с печатным NA28.
+
+Рабочая папка для полных текстов общественного достояния создана:
+
+```text
+SOURCE_LIBRARY/processed/1COR11_PRIMARY/
+  patristics/
+  reformation_puritan/
+  classical_conservative/
+  primary_context/
+```
+(пока пустая структура; содержательное скачивание — следующим проходом).
+
+---
+
+## 4. Ownership-правила для агентов с похожим prompt
+
+Если другой агент получает задание по 1 Кор. 11:2–16 в этом репозитории:
+
+1. Не создавать вторую папку с другим именем.
+2. Не открывать второй README/фундамент, если этот уже существует.
+3. Не делать новый claim-ledger параллельно.
+4. Не записывать найденные источники в корень репозитория.
+5. Не использовать новый кейс как повод менять серию по Быт. 6 без отдельного authority.
+6. Любое новое исследование вносить в существующую папку как тематическое досье или overlay.
+7. Перед записью перечитать этот файл и `00_README...`.
+
+Канонический вход:
+
+```text
+1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00_README_FOUNDATION_OPEN_2026-08-09.md
+```
+
+---
+
+## 5. Разрешённые следующие файлы
+
+Следующие агенты могут создавать только тематические досье внутри этой папки:
+
+```text
+06_GREEK_TEXT_AND_APPARATUS_1COR11_2_16.md
+07_CORINTH_ROMAN_COLONY_CONTEXT.md
+08_KEPHALE_AUTHORITY_SOURCE_CHRISTOLOGY.md
+09_COVERING_MEN_WOMEN_HAIR_VEIL.md
+10_EXOUSIA_AND_ANGELS_VERSE_10.md
+11_NATURE_HAIR_PERIBOLAIOS_AND_MARTIN_GOODACRE.md
+12_PATRISTIC_HISTORY_OF_INTERPRETATION.md
+13_COMMENTATORS_MATRIX.md
+14_MODERN_APPLICATION_HERMENEUTICS.md
+15_RUSSIAN_ORTHODOX_AND_EVANGELICAL_INTERPRETATION.md
+```
+
+Если нужен новый узел, добавлять его номер после 15 и обновлять этот файл.
+
+---
+
+## 6. Не путать research и product
+
+Сейчас это Research. Продуктовый сайт `gb-is-my-strength` не меняется.
+
+Product-aware заметки собраны в `03_PRODUCT_SITE_STYLE...`, но там нет права мутировать сайт. Для будущих product-изменений потребуется отдельная ветка/PR в продуктовом репозитории и lane record по его `AGENTS.md`.
+
+---
+
+## 7. Push policy
+
+Владелец явно разрешил push в эту Research-ветку. Текущее состояние закоммичено и отправлено в:
+
+```text
+origin/arena/019fe62b-research
+```
+
+Это не публикация сайта, а только сохранение фундамента исследования.
+
+---
+
+## 8. Краткая позиция для агентов
+
+Не строить серию вокруг одного любимого вывода. Кейс должен честно взвесить:
+
+- тканевое покрывало;
+- волосы/причёску;
+- покрывало как социальный знак;
+- римский контекст мужчин `capite velato`;
+- греческий и римский варианты практик;
+- еврейский фон;
+- `κεφαλή` как главенство/источник/представительство;
+- `ἐξουσία` как собственную власть/право женщины;
+- добрых и падших ангелов;
+- сотворённый порядок и культурную форму;
+- применение сегодня.
+
+Главный пока вывод не догматический, а исследовательский: текст нельзя редуцировать ни к «только ткань», ни к «только волосы», ни к «чистая культура без нормы».
+
+---
+
+## Update 2026-08-09 (pass-2 integration, 4th push wave)
+
+- Added dossiers 15 (image/glory/interdependence theology), 16 (hermeneutics/application), 17 (Russian Orthodox/Evangelical/Baptist reception), 18 (master index).
+- Added source files for Schreiner RBMW ch.5 and Ellicott in SOURCE_LIBRARY/…/classical_conservative/.
+- Dossier 10 exousia/angels (crux) completed earlier this session.
+- Verse-by-verse synopsis (14) copied from parallel Agent-V dossier (09_VERSE_BY_VERSE_EXEGESIS) with Schreiner addendum.
+- Numbering note: files 09 (x2), 10 (x2) reflect two separate topics (historical dossier / primary source pack; exousia-angels / 14:34 reconciliation). Master index (18) is canonical mapping.
+- All work in 1КОРИНФЯНАМ_11_ПОКРЫВАЛО/; СЕРИЯ 1 КОРИНФЯНАМ 11/ retained as parallel working surface (NOT canonical entrypoint).
+- Still NO publication draft; PUBLICATION_HOLD, BDAG/TDNT-HOLD, major-commentary-archive-HOLD remain.
+- Next pass (pass-2): BDAG/EDNT/TDNT collation; NA28 apparatus verification; integration of Fee/Thiselton/Garland/Ciampa-Rosner/Winter/Schreiner once books available; Patristic fill (Augustine, Theodoret, Cyril Al., Aquinas, Luther, Beza, Bengel, Meyer, Godet, Lenski, Morris, Bruce); Russian Baptist archive pass through CSVs.

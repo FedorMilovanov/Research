@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "1cor11-headcovering",
+  "date": "2026-08-09",
+  "state": "RESEARCH_MAIN_READY_PENDING_FINAL_CI",
+  "integrationBranch": "agent/1cor11-main-synthesis-20260809",
+  "sourceBranches": [
+    {
+      "branch": "arena/019fe62b-research",
+      "head": "883593bd3aedb4fbb67d1fb159ab363a847596dd",
+      "integrationPr": 155,
+      "role": "source-evidence-foundation"
+    },
+    {
+      "branch": "arena/019fe62d-research",
+      "head": "1ae05904aad93bae59e7b655791c9dea5530758e",
+      "originalMainPr": 156,
+      "normalizedIntegrationPr": 158,
+      "role": "expanded-dossier-and-article-corpus",
+      "normalization": {
+        "researchDocumentsRewritten": false,
+        "rootReadmeDeltaRemoved": true,
+        "historicalAuthorityManifestPreservedAs": "data/1cor11-authority-manifest-arena-d-20260809.json",
+        "genericAuthorityAliasCollisionRemoved": true
+      }
+    }
+  ],
+  "historicalGreekInput": {
+    "commit": "85c5f6a65c249cdcddcac37572ab5103b8a18dc5",
+    "status": "supporting-historical-research-input"
+  },
+  "authorityOrder": [
+    "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md",
+    "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00Z_FINAL_CLAIM_CALIBRATION_2026-08-09.md",
+    "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00Z_51_EXTERNAL_VERIFICATION_LEDGER_2026-08-09.md",
+    "1_КОРИНФЯНАМ_11/21_CLAIM_CALIBRATION_AND_FAIL_CLOSED_AUDIT.md",
+    "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/36_POSITION_SHEET_AND_EVIDENCE_BALANCE_2026-08-09.md"
+  ],
+  "externalVerification": {
+    "records": 51,
+    "meaning": "distinct URL verification records of mixed depth; not 51 full-book reads",
+    "statuses": [
+      "DIRECT_TEXT_VERIFIED",
+      "PRIMARY_ARCHIVE_VERIFIED",
+      "SCHOLARLY_ARGUMENT_VERIFIED",
+      "BIBLIOGRAPHIC_VERIFIED",
+      "ACCESS_RETRY"
+    ]
+  },
+  "textCriticalCurrentState": {
+    "currentPublishedNestleAland": "NA28",
+    "currentPublishedUBSGreekNT": "GNT6",
+    "gnt6TextRelation": "identical-to-future-NA29-text-per-publisher",
+    "na29PublicationDate": "2027-02-28",
+    "paulineECM": "NOT_COMPLETED_AS_PUBLISHED_FULL_PAULINE_ECM"
+  },
+  "claimCalibration": {
+    "womenPrayAndProphesy_1Cor11_5": "A",
+    "exousiaWomanSubjectHasAuthorityRightPower": "A_CORE",
+    "exousiaSymbolReferent": "B_C_OPEN",
+    "angelsInvokedIdentityUnspecified": "A_MINIMUM",
+    "holyLiturgicalAngels": "B",
+    "watchersFallenAngels": "C",
+    "kephaleHeadshipAuthorityPredominance": "B",
+    "kephaleSourceOnly": "C",
+    "materialHeadCovering": "B_HIGH",
+    "hairHairstyleOnly": "C",
+    "peribolaionTesticleTheory": "D_C_LOW",
+    "romanMaleCultHeadCoveringHistoricalBackground": "A",
+    "romanCultPracticeAsExactCorinthProblem": "B",
+    "wivesVsAllWomenScope": "OPEN_B_C",
+    "mutualityVerses11_12": "A",
+    "sameMaterialFormMandatoryToday": "C_B_HERMENEUTICAL"
+  },
+  "supersededClaims": [
+    "NA29_IS_CURRENT_PUBLISHED_NESTLE_ALAND_ON_2026_08_09",
+    "PAULINE_ECM_IS_COMPLETE",
+    "75_STRICTLY_VERIFIED_SOURCES_AS_UNIFORM_PAGE_LEVEL_STATUS",
+    "EXACT_P46_FOLIO_WITHOUT_DIRECT_OBJECT_CUSTODY",
+    "KEPHALE_SOURCE_READING_REFUTED_GRADE_X",
+    "HAIR_ONLY_READING_REFUTED_GRADE_X",
+    "HOLY_ANGELS_CERTAIN_A",
+    "WATCHERS_DIRECTLY_IDENTIFIED_BY_PAUL",
+    "CAPITE_VELATO_PROVES_EXACT_CORINTHIAN_CHRISTIAN_ACTION",
+    "ALL_WOMEN_OR_UNMARRIED_SCOPE_SETTLED",
+    "SCHREINER_IS_ESVEC_1_CORINTHIANS_CONTRIBUTOR",
+    "1COR11_5_ALONE_SETTLES_PASTORATE_ORDINATION"
+  ],
+  "bibliographicCorrection": {
+    "ESVExpositoryCommentary1CorinthiansContributor": "Andrew David Naselli",
+    "incorrectHistoricalAttribution": "Thomas R. Schreiner"
+  },
+  "publicationBoundary": {
+    "researchMainMergeAllowedAfterFinalCI": true,
+    "productWrite": false,
+    "sitePublication": false,
+    "publicationHold": true,
+    "directQuotePromotion": false
+  }
+}
