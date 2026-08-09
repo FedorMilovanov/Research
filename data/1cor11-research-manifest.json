@@ -90,7 +90,52 @@
     {
       "id": "1COR11-BIBLIO-MONOGRAPHS-08",
       "path": "1_КОРИНФЯНАМ_11/08_1COR11_EXHAUSTIVE_BIBLIOGRAPHY_AND_MONOGRAPH_SURVEY.md",
-      "scope": ["11:2-16", "monograph-survey", "30-books-annotated", "beck-nig-pntc-zecnt"],
+      "scope": ["11:2-16", "monograph-survey", "30-books-annotated", "becnt-nigtc-pntc-zecnt"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-SOURCE-CARDS-09",
+      "path": "1_КОРИНФЯНАМ_11/09_TMS_AND_CONSERVATIVE_SOURCE_CARDS_REGISTRY.md",
+      "scope": ["11:2-16", "source-cards", "locators", "access-hold", "rights-hold"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-CROSS-BRANCH-10",
+      "path": "1_КОРИНФЯНАМ_11/10_CROSS_BRANCH_MULTI_AGENT_SYNCHRONIZATION_LEDGER.md",
+      "scope": ["11:2-16", "agent-coordination", "anti-duplication", "branch-sync"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-JEWISH-PARALLELS-11",
+      "path": "1_КОРИНФЯНАМ_11/11_SECOND_TEMPLE_RABBINIC_AND_QUMRAN_PARALLELS_DOSSIER.md",
+      "scope": ["11:2-16", "second-temple", "philo", "josephus", "qumran-angels", "mishnah-ketubot", "talmud-erva"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-CANONICAL-SYNTHESIS-12",
+      "path": "1_КОРИНФЯНАМ_11/12_CROSS_CANONICAL_SYNTHESIS_1COR11_1COR14_1TIM2.md",
+      "scope": ["11:2-16", "1cor-14-34-35", "1tim-2-11-15", "prophecy-vs-teaching", "lalein-sigan-diakrinein"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-HERMENEUTICS-13",
+      "path": "1_КОРИНФЯНАМ_11/13_HERMENEUTICS_CREATION_ORDER_VS_CULTURAL_EXPRESSION.md",
+      "scope": ["11:2-16", "hermeneutics", "creation-order", "cultural-symbol", "5-point-test"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
