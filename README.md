@@ -140,6 +140,8 @@ Research-ветка новой исследовательской серии (fo
 * [Дискурс-анализ, концентрический хиазм A-B-X-B'-A' и риторика](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/16_DISCOURSE_ANALYSIS_CHIASM_AND_RHETORICAL_STRUCTURE.md)
 * [Главный реестр 35 утверждений и калибровки уверенности (Grade A–X)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/17_MASTER_CLAIM_BY_CLAIM_CONFIDENCE_LEDGER.md)
 * [Богословский синтез: Творение, Христология и Экклезиология](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/18_THEOLOGICAL_SYNTHESIS_CREATION_CHRISTOLOGY_ECCLESIOLOGY.md)
+* [Археология Коринфа (ASCSA), культы и разоблачение мифа о 1 000 блудницах](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/19_CORINTH_ARCHAEOLOGY_CULTS_AND_POPULAR_MYTHS_DOSSIER.md)
+* [Греко-римское право, брак sine manu и семиотика одежды (Ллевеллин-Джонс, Олсон)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/20_GRECO_ROMAN_VEILING_LAW_AND_FASHION_MONOGRAPH_DOSSIER.md)
 * [Параллельный корпус и координация агентов](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/00_README_AND_MASTER_AUTHORITY_INDEX.md)
 * [Машиночитаемый манифест доказательств и источников](data/1cor11-research-manifest.json)
 * [Машиночитаемый манифест координации серии](data/1cor11-authority-manifest.json)

@@ -187,6 +187,24 @@
       "publicationState": "REFERENCE"
     },
     {
+      "id": "1COR11-CORINTH-MYTHS-19",
+      "path": "1_КОРИНФЯНАМ_11/19_CORINTH_ARCHAEOLOGY_CULTS_AND_POPULAR_MYTHS_DOSSIER.md",
+      "scope": ["11:2-16", "corinth-archaeology", "ascsa-excavations", "aphrodite-myth-debunked", "demeter-kore", "isis", "dionysus"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-VEILING-LAW-20",
+      "path": "1_КОРИНФЯНАМ_11/20_GRECO_ROMAN_VEILING_LAW_AND_FASHION_MONOGRAPH_DOSSIER.md",
+      "scope": ["11:2-16", "llewellyn-jones", "tegidion", "treggiari-sine-manu", "olson-dress", "thompson-corinth-busts"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
       "id": "1COR11-ARTICLE-1-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md",
       "scope": ["11:2-3", "site-article", "headship", "trinity", "christ"],
