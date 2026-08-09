@@ -1,0 +1,40 @@
+{
+  "topic": "1 Corinthians 11-14 / 1 Timothy 2 speech-function taxonomy",
+  "date": "2026-08-10",
+  "status": "SPEECH-FUNCTION-TAXONOMY / RESEARCH-ONLY / PUBLICATION-HOLD",
+  "functions": [
+    "PRAYER",
+    "PROPHECY",
+    "TONGUES",
+    "INTERPRETATION",
+    "REVELATION",
+    "WEIGHING_DISCERNMENT",
+    "TEACHING",
+    "EXHORTATION",
+    "QUESTIONING_LEARNING",
+    "AUTHORITY",
+    "OVERSIGHT_ELDERSHIP"
+  ],
+  "boundaries": {
+    "prayer_equals_prophecy": false,
+    "prophecy_equals_teaching_lexically": false,
+    "prophecy_is_evaluated_1cor14_29": "A",
+    "sigao_context_scoped_in_1cor14": "A_FRAME",
+    "exact_14_34_35_prohibited_function": "OPEN_B_C",
+    "teaching_to_elder_oversight_link": "B_CANONICAL",
+    "exousia_1cor11_equals_authentein_1tim2": false,
+    "modern_sermon_equals_single_nt_lexeme": false
+  },
+  "shogren": {
+    "main_1cor11_position_self_acquired": true,
+    "direct_author_web_source": "https://openoureyeslord.com/2014/10/24/those-veiled-women-of-corinth/",
+    "user_book_required_for_position_discovery": false,
+    "full_commentary_notes": "OPTIONAL_P1_IF_ALREADY_HELD"
+  },
+  "publication": {
+    "product_write": false,
+    "ui_implementation": false,
+    "site_publication": false,
+    "publication_hold": true
+  }
+}
