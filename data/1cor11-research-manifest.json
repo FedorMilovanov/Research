@@ -18,12 +18,7 @@
     {
       "id": "1COR11-MASTER-00",
       "path": "1_КОРИНФЯНАМ_11/00_1COR11_MASTER_AUTHORITY_INDEX_AND_SERIES_ARCHITECTURE.md",
-      "scope": [
-        "11:2-16",
-        "series-architecture",
-        "methodology",
-        "evidence-policy"
-      ],
+      "scope": ["11:2-16", "series-architecture", "methodology", "evidence-policy"],
       "evidenceClass": "A2",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -32,14 +27,7 @@
     {
       "id": "1COR11-GREEK-01",
       "path": "1_КОРИНФЯНАМ_11/01_1COR11_GREEK_TEXT_APPARATUS_MORPHOLOGY_SYNTAX_DOSSIER.md",
-      "scope": [
-        "11:2-16",
-        "greek-text",
-        "manuscript-apparatus",
-        "morphology",
-        "syntax",
-        "lexicon"
-      ],
+      "scope": ["11:2-16", "greek-text", "manuscript-apparatus", "morphology", "syntax", "lexicon"],
       "evidenceClass": "A1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -48,14 +36,7 @@
     {
       "id": "1COR11-HISTORICAL-02",
       "path": "1_КОРИНФЯНАМ_11/02_1COR11_HISTORICAL_ARCHAEOLOGICAL_ROMAN_CORINTH_DOSSIER.md",
-      "scope": [
-        "11:2-16",
-        "roman-corinth",
-        "capite-velato",
-        "palla-matrona",
-        "nova-femina",
-        "cults"
-      ],
+      "scope": ["11:2-16", "roman-corinth", "capite-velato", "palla-matrona", "nova-femina", "cults"],
       "evidenceClass": "A1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -64,14 +45,7 @@
     {
       "id": "1COR11-PATRISTIC-REFORMATION-03",
       "path": "1_КОРИНФЯНАМ_11/03_1COR11_PATRISTIC_REFORMATION_HISTORICAL_EXEGESIS_MATRIX.md",
-      "scope": [
-        "11:2-16",
-        "patristic-exegesis",
-        "reformation",
-        "calvin",
-        "gill",
-        "hodge"
-      ],
+      "scope": ["11:2-16", "patristic-exegesis", "reformation", "calvin", "gill", "hodge"],
       "evidenceClass": "A2",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -80,16 +54,7 @@
     {
       "id": "1COR11-MODERN-CORPUS-04",
       "path": "1_КОРИНФЯНАМ_11/04_1COR11_MODERN_SCHOLARSHIP_CONSERVATIVE_COMMUNITY_CORPUS.md",
-      "scope": [
-        "11:2-16",
-        "schreiner",
-        "thiselton",
-        "ciampa-rosner",
-        "grudem",
-        "winter",
-        "oster",
-        "garland"
-      ],
+      "scope": ["11:2-16", "schreiner", "thiselton", "ciampa-rosner", "grudem", "winter", "oster", "garland"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -98,13 +63,7 @@
     {
       "id": "1COR11-FIVE-MODELS-05",
       "path": "1_КОРИНФЯНАМ_11/05_1COR11_SYSTEMATIC_HERMENEUTICAL_FIVE_MODELS_MATRIX.md",
-      "scope": [
-        "11:2-16",
-        "systematics",
-        "hermeneutics",
-        "adversarial-matrix",
-        "five-models"
-      ],
+      "scope": ["11:2-16", "systematics", "hermeneutics", "adversarial-matrix", "five-models"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -113,14 +72,7 @@
     {
       "id": "1COR11-CRITICAL-NODES-06",
       "path": "1_КОРИНФЯНАМ_11/06_1COR11_THEOLOGICAL_CRITICAL_NODES_AND_CANONICAL_TENSIONS.md",
-      "scope": [
-        "11:2-16",
-        "trinity-headship",
-        "women-prophecy-vs-silence",
-        "angels",
-        "nature-hair",
-        "custom"
-      ],
+      "scope": ["11:2-16", "trinity-headship", "women-prophecy-vs-silence", "angels", "nature-hair", "custom"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -129,12 +81,7 @@
     {
       "id": "1COR11-SOURCE-LEDGER-07",
       "path": "1_КОРИНФЯНАМ_11/07_1COR11_SOURCE_VERIFICATION_AND_PAGE_LEVEL_LEDGER.md",
-      "scope": [
-        "11:2-16",
-        "bibliographic-ledger",
-        "locators",
-        "page-level-citations"
-      ],
+      "scope": ["11:2-16", "bibliographic-ledger", "locators", "page-level-citations"],
       "evidenceClass": "A2",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -143,12 +90,7 @@
     {
       "id": "1COR11-BIBLIO-MONOGRAPHS-08",
       "path": "1_КОРИНФЯНАМ_11/08_1COR11_EXHAUSTIVE_BIBLIOGRAPHY_AND_MONOGRAPH_SURVEY.md",
-      "scope": [
-        "11:2-16",
-        "monograph-survey",
-        "30-books-annotated",
-        "becnt-nigtc-pntc-zecnt"
-      ],
+      "scope": ["11:2-16", "monograph-survey", "30-books-annotated", "becnt-nigtc-pntc-zecnt"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -157,13 +99,7 @@
     {
       "id": "1COR11-SOURCE-CARDS-09",
       "path": "1_КОРИНФЯНАМ_11/09_TMS_AND_CONSERVATIVE_SOURCE_CARDS_REGISTRY.md",
-      "scope": [
-        "11:2-16",
-        "source-cards",
-        "locators",
-        "access-hold",
-        "rights-hold"
-      ],
+      "scope": ["11:2-16", "source-cards", "locators", "access-hold", "rights-hold"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -172,12 +108,7 @@
     {
       "id": "1COR11-CROSS-BRANCH-10",
       "path": "1_КОРИНФЯНАМ_11/10_CROSS_BRANCH_MULTI_AGENT_SYNCHRONIZATION_LEDGER.md",
-      "scope": [
-        "11:2-16",
-        "agent-coordination",
-        "anti-duplication",
-        "branch-sync"
-      ],
+      "scope": ["11:2-16", "agent-coordination", "anti-duplication", "branch-sync"],
       "evidenceClass": "A2",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -186,15 +117,7 @@
     {
       "id": "1COR11-JEWISH-PARALLELS-11",
       "path": "1_КОРИНФЯНАМ_11/11_SECOND_TEMPLE_RABBINIC_AND_QUMRAN_PARALLELS_DOSSIER.md",
-      "scope": [
-        "11:2-16",
-        "second-temple",
-        "philo",
-        "josephus",
-        "qumran-angels",
-        "mishnah-ketubot",
-        "talmud-erva"
-      ],
+      "scope": ["11:2-16", "second-temple", "philo", "josephus", "qumran-angels", "mishnah-ketubot", "talmud-erva"],
       "evidenceClass": "A1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -203,13 +126,7 @@
     {
       "id": "1COR11-CANONICAL-SYNTHESIS-12",
       "path": "1_КОРИНФЯНАМ_11/12_CROSS_CANONICAL_SYNTHESIS_1COR11_1COR14_1TIM2.md",
-      "scope": [
-        "11:2-16",
-        "1cor-14-34-35",
-        "1tim-2-11-15",
-        "prophecy-vs-teaching",
-        "lalein-sigan-diakrinein"
-      ],
+      "scope": ["11:2-16", "1cor-14-34-35", "1tim-2-11-15", "prophecy-vs-teaching", "lalein-sigan-diakrinein"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -218,13 +135,7 @@
     {
       "id": "1COR11-HERMENEUTICS-13",
       "path": "1_КОРИНФЯНАМ_11/13_HERMENEUTICS_CREATION_ORDER_VS_CULTURAL_EXPRESSION.md",
-      "scope": [
-        "11:2-16",
-        "hermeneutics",
-        "creation-order",
-        "cultural-symbol",
-        "5-point-test"
-      ],
+      "scope": ["11:2-16", "hermeneutics", "creation-order", "cultural-symbol", "5-point-test"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -233,14 +144,7 @@
     {
       "id": "1COR11-PATRISTIC-CATENA-14",
       "path": "1_КОРИНФЯНАМ_11/14_EXHAUSTIVE_VERSE_BY_VERSE_PATRISTIC_CATENA.md",
-      "scope": [
-        "11:2-16",
-        "patristic-catena",
-        "verse-by-verse",
-        "chrysostom",
-        "augustine",
-        "ambrosiaster"
-      ],
+      "scope": ["11:2-16", "patristic-catena", "verse-by-verse", "chrysostom", "augustine", "ambrosiaster"],
       "evidenceClass": "A2",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -249,13 +153,7 @@
     {
       "id": "1COR11-TEXT-CRITICISM-15",
       "path": "1_КОРИНФЯНАМ_11/15_TEXTUAL_CRITICISM_AND_MANUSCRIPT_APPARATUS.md",
-      "scope": [
-        "11:2-16",
-        "text-criticism",
-        "8-variant-units",
-        "p46-aleph-b-a-c-d",
-        "apparatus"
-      ],
+      "scope": ["11:2-16", "text-criticism", "8-variant-units", "p46-aleph-b-a-c-d", "apparatus"],
       "evidenceClass": "A1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -264,13 +162,7 @@
     {
       "id": "1COR11-DISCOURSE-CHIASM-16",
       "path": "1_КОРИНФЯНАМ_11/16_DISCOURSE_ANALYSIS_CHIASM_AND_RHETORICAL_STRUCTURE.md",
-      "scope": [
-        "11:2-16",
-        "discourse-analysis",
-        "chiasm",
-        "rhetoric",
-        "macro-structure"
-      ],
+      "scope": ["11:2-16", "discourse-analysis", "chiasm", "rhetoric", "macro-structure"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -279,31 +171,8 @@
     {
       "id": "1COR11-CLAIM-LEDGER-17",
       "path": "1_КОРИНФЯНАМ_11/17_MASTER_CLAIM_BY_CLAIM_CONFIDENCE_LEDGER.md",
-      "scope": [
-        "11:2-16",
-        "35-claims",
-        "confidence-scale",
-        "fail-closed",
-        "boundary-conditions"
-      ],
+      "scope": ["11:2-16", "35-claims", "confidence-scale", "fail-closed", "boundary-conditions"],
       "evidenceClass": "A2",
-      "status": "active",
-      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
-      "publicationState": "REFERENCE"
-    },
-    {
-      "id": "1COR11-CALIBRATION-21",
-      "path": "1_КОРИНФЯНАМ_11/21_CLAIM_CALIBRATION_AND_FAIL_CLOSED_AUDIT.md",
-      "scope": [
-        "11:2-16",
-        "calibration",
-        "fail-closed",
-        "evidence-discipline",
-        "kephale",
-        "covering",
-        "angels"
-      ],
-      "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
       "publicationState": "REFERENCE"
@@ -311,14 +180,7 @@
     {
       "id": "1COR11-THEO-SYNTHESIS-18",
       "path": "1_КОРИНФЯНАМ_11/18_THEOLOGICAL_SYNTHESIS_CREATION_CHRISTOLOGY_ECCLESIOLOGY.md",
-      "scope": [
-        "11:2-16",
-        "systematics",
-        "trinity",
-        "anthropology",
-        "ecclesiology",
-        "liturgics"
-      ],
+      "scope": ["11:2-16", "systematics", "trinity", "anthropology", "ecclesiology", "liturgics"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -327,15 +189,7 @@
     {
       "id": "1COR11-CORINTH-MYTHS-19",
       "path": "1_КОРИНФЯНАМ_11/19_CORINTH_ARCHAEOLOGY_CULTS_AND_POPULAR_MYTHS_DOSSIER.md",
-      "scope": [
-        "11:2-16",
-        "corinth-archaeology",
-        "ascsa-excavations",
-        "aphrodite-myth-debunked",
-        "demeter-kore",
-        "isis",
-        "dionysus"
-      ],
+      "scope": ["11:2-16", "corinth-archaeology", "ascsa-excavations", "aphrodite-myth-debunked", "demeter-kore", "isis", "dionysus"],
       "evidenceClass": "A1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -344,14 +198,52 @@
     {
       "id": "1COR11-VEILING-LAW-20",
       "path": "1_КОРИНФЯНАМ_11/20_GRECO_ROMAN_VEILING_LAW_AND_FASHION_MONOGRAPH_DOSSIER.md",
-      "scope": [
-        "11:2-16",
-        "llewellyn-jones",
-        "tegidion",
-        "treggiari-sine-manu",
-        "olson-dress",
-        "thompson-corinth-busts"
-      ],
+      "scope": ["11:2-16", "llewellyn-jones", "tegidion", "treggiari-sine-manu", "olson-dress", "thompson-corinth-busts"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-CALIBRATION-21",
+      "path": "1_КОРИНФЯНАМ_11/21_CLAIM_CALIBRATION_AND_FAIL_CLOSED_AUDIT.md",
+      "scope": ["11:2-16", "fail-closed", "calibration-overlay", "confidence-boundaries"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-LEXICAL-22",
+      "path": "1_КОРИНФЯНАМ_11/22_EXHAUSTIVE_GREEK_LEXICAL_DATABASE_EIGHT_CRUCIAL_LEMMAS.md",
+      "scope": ["11:2-16", "lexicography", "eight-crucial-lemmas", "bdag", "lsj", "mm", "tlg"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-RABBINIC-23",
+      "path": "1_КОРИНФЯНАМ_11/23_RABBINIC_TARGUMIC_AND_TALMUDIC_LOCUS_DOSSIER.md",
+      "scope": ["11:2-16", "bereishit-rabbah", "pirkei-eliezer", "talmud-ketubot", "eve-guilt-contrast"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-OBJECTIONS-24",
+      "path": "1_КОРИНФЯНАМ_11/24_COMPLETE_RESPONSE_LEDGER_TO_40_STRONGEST_OBJECTIONS.md",
+      "scope": ["11:2-16", "40-objections", "adversarial-responses", "egalitarian-critique", "traditionalist-critique"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-PASTORAL-25",
+      "path": "1_КОРИНФЯНАМ_11/25_HERMENEUTICAL_APPLICATION_AND_PASTORAL_GUIDE.md",
+      "scope": ["11:2-16", "pastoral-praxis", "church-guidelines", "freedom-of-conscience", "biblical-womanhood"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "PUBLIC_DOMAIN_RESEARCH",
@@ -360,13 +252,7 @@
     {
       "id": "1COR11-ARTICLE-1-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md",
-      "scope": [
-        "11:2-3",
-        "site-article",
-        "headship",
-        "trinity",
-        "christ"
-      ],
+      "scope": ["11:2-3", "site-article", "headship", "trinity", "christ"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "ORIGINAL_COMPOSITION",
@@ -375,14 +261,7 @@
     {
       "id": "1COR11-ARTICLE-2-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_2_SITE_READY_ROMAN_CORINTH_CAPITE_VELATO_AND_NOVA_FEMINA_1COR11_4_6.md",
-      "scope": [
-        "11:4-6",
-        "site-article",
-        "roman-corinth",
-        "capite-velato",
-        "palla",
-        "nova-femina"
-      ],
+      "scope": ["11:4-6", "site-article", "roman-corinth", "capite-velato", "palla", "nova-femina"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "ORIGINAL_COMPOSITION",
@@ -391,14 +270,7 @@
     {
       "id": "1COR11-ARTICLE-3-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_3_SITE_READY_IMAGE_GLORY_AND_CREATION_ORDER_1COR11_7_12.md",
-      "scope": [
-        "11:7-9",
-        "11:11-12",
-        "site-article",
-        "image-glory",
-        "genesis-creation",
-        "mutuality"
-      ],
+      "scope": ["11:7-9", "11:11-12", "site-article", "image-glory", "genesis-creation", "mutuality"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "ORIGINAL_COMPOSITION",
@@ -407,13 +279,7 @@
     {
       "id": "1COR11-ARTICLE-4-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_4_SITE_READY_AUTHORITY_ON_HEAD_AND_THE_ANGELS_1COR11_10.md",
-      "scope": [
-        "11:10",
-        "site-article",
-        "exousia",
-        "angels",
-        "qumran-parallels"
-      ],
+      "scope": ["11:10", "site-article", "exousia", "angels", "qumran-parallels"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "ORIGINAL_COMPOSITION",
@@ -422,13 +288,7 @@
     {
       "id": "1COR11-ARTICLE-5-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_5_SITE_READY_NATURE_HAIR_AND_CHURCH_CUSTOM_1COR11_13_16.md",
-      "scope": [
-        "11:13-16",
-        "site-article",
-        "nature",
-        "hair-covering",
-        "church-custom"
-      ],
+      "scope": ["11:13-16", "site-article", "nature", "hair-covering", "church-custom"],
       "evidenceClass": "B1",
       "status": "active",
       "rightsState": "ORIGINAL_COMPOSITION",
@@ -436,35 +296,10 @@
     }
   ],
   "primaryTextWitnesses": [
-    {
-      "siglum": "P46",
-      "date": "c. 200 AD",
-      "locus": "1 Cor 11:2-16",
-      "state": "verified"
-    },
-    {
-      "siglum": "Codex Sinaiticus (Aleph)",
-      "date": "IV c.",
-      "locus": "1 Кор 11:2-16",
-      "state": "verified"
-    },
-    {
-      "siglum": "Codex Vaticanus (B)",
-      "date": "IV c.",
-      "locus": "1 Кор 11:2-16",
-      "state": "verified"
-    },
-    {
-      "siglum": "Codex Alexandrinus (A)",
-      "date": "V c.",
-      "locus": "1 Кор 11:2-16",
-      "state": "verified"
-    },
-    {
-      "siglum": "Codex Claromontanus (D)",
-      "date": "VI c.",
-      "locus": "1 Кор 11:2-16",
-      "state": "verified"
-    }
+    { "siglum": "P46", "date": "c. 200 AD", "locus": "1 Cor 11:2-16", "state": "verified" },
+    { "siglum": "Codex Sinaiticus (Aleph)", "date": "IV c.", "locus": "1 Кор 11:2-16", "state": "verified" },
+    { "siglum": "Codex Vaticanus (B)", "date": "IV c.", "locus": "1 Кор 11:2-16", "state": "verified" },
+    { "siglum": "Codex Alexandrinus (A)", "date": "V c.", "locus": "1 Кор 11:2-16", "state": "verified" },
+    { "siglum": "Codex Claromontanus (D)", "date": "VI c.", "locus": "1 Кор 11:2-16", "state": "verified" }
   ]
 }
