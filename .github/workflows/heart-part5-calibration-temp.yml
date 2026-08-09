@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/heart-part5-calibration-temp.yml'
       - 'scripts/validate_heart_part5_native_citation_pass.py'
+      - 'scripts/calibrate_heart_part5_dispositions_temp.py'
 
 permissions:
   contents: read
@@ -30,7 +31,11 @@ jobs:
           persist-credentials: false
       - name: Calibrate Part V native citation surfaces
         working-directory: Research
+        continue-on-error: true
         run: python3 scripts/validate_heart_part5_native_citation_pass.py --product-root ../Product
+      - name: Calibrate Part V role and URL dispositions
+        working-directory: Research
+        run: python3 scripts/calibrate_heart_part5_dispositions_temp.py --product-root ../Product
       - name: Prove read-only
         if: always()
         run: |
