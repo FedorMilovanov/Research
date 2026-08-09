@@ -96,7 +96,9 @@ jobs:
             scripts/validate_heart_part4_entry_citation_pass.py \
             scripts/validate_heart_entry_citation_pass_current_v10.py \
             scripts/validate_heart_part5_reader_assembly.py \
-            scripts/validate_heart_product_source_authority_parity.py
+            scripts/validate_heart_product_source_authority_parity.py \
+            scripts/validate_heart_part5_native_citation_pass.py \
+            scripts/validate_heart_entry_citation_pass_current_v12.py
           do
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
@@ -273,9 +275,17 @@ jobs:
         working-directory: Research
         run: python3 scripts/validate_heart_part5_reader_assembly.py --product-root ../Product
 
-      - name: Calibrate Product native source authority parity
+      - name: Validate Product native source authority correction
         working-directory: Research
         run: python3 scripts/validate_heart_product_source_authority_parity.py --product-root ../Product
+
+      - name: Validate Part V native-authority entry citation pass
+        working-directory: Research
+        run: python3 scripts/validate_heart_part5_native_citation_pass.py --product-root ../Product
+
+      - name: Validate current seven-entry native-authority composition
+        working-directory: Research
+        run: python3 scripts/validate_heart_entry_citation_pass_current_v12.py
 
       - name: Ensure validators and exact Product witness are read-only
         if: always()
