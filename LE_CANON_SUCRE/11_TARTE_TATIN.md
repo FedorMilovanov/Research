@@ -2,18 +2,18 @@
 
 ## Проверяемый вопрос
 
-Что документировано о сёстрах Tatin, гостинице и раннем названии; какие даты являются источниковыми; когда появляется знаменитая история случайного переворачивания?
+Что документировано о сёстрах Tatin, гостинице и раннем названии; какие даты являются источниковыми; когда появляется знаменитая история случайного переворачивания; и существовала ли сама техника перевёрнутой фруктовой тарты до Tatin?
 
 ## Краткий статус
 
-`LOCAL TRADITION STRONG / HOTEL SPECIALTY DOCUMENTARY NETWORK 1899+1903 / ACCIDENT STORY LATE LEGEND / 1903 GEOGRAPHICAL-SOCIETY WITNESS TIGHTLY LOCATED / JULLEMIER EVENT-vs-PUBLICATION DATE CORRECTED / 1921 SERIAL TITLE+COTE IDENTIFIED / CURNONSKY 1926 BNF VOLUME IDENTITY CONFIRMED / LEGEND GENEALOGY POINTS TO 1970s`
+`HOTEL SPECIALTY DOCUMENTARY NETWORK 1899+1903 / ACCIDENT STORY LATE LEGEND / JULLEMIER EVENT-vs-PUBLICATION CORRECTED / 1921 SERIAL+COTE IDENTIFIED / CURNONSKY 1926 VOLUME CONFIRMED / LEGEND GENEALOGY POINTS TO 1970s / PRE-TATIN INVERSION-TECHNIQUE GENEALOGY NOW HAS A BNF-GALLICA 1894 OBJECT`
 
 ## Local institutional source
 
 Mairie de Lamotte-Beuvron:
 https://www.lamotte-beuvron.fr/ma-ville/lamotte-beuvron-ville-imperiale/ville-imperiale/berceau-de-la-tarte-tatin/
 
-The municipality preserves the sisters/hotel/local-origin narrative and currently retells an accident/distraction version. This is important evidence for **present local tradition**, not a contemporaneous witness to a nineteenth-century accident.
+The municipality preserves the sisters/hotel/local-origin narrative and currently retells an accident/distraction version. This is evidence for **present local tradition**, not a contemporaneous witness to a nineteenth-century accident.
 
 ## 1899 early printed-name target — exact archive route identified
 
@@ -31,62 +31,48 @@ Current status:
 - first-occurrence claim = still fail-closed until the page is directly inspected and earlier searches remain considered.
 
 University of Liège historian Pierre Leclercq, following Henri Delétang's research, independently identifies the 1899 author as **Gabriel Hanotaux** and treats this as the first known reference in that research line:
-https://www.campus.uliege.be/cms/c_9917930/fr/les-grands-mythes-de-la-gastronomie-la-tarte-des-demoiselles-tatin
+https://www.news.uliege.be/cms/c_9917930/fr/les-grands-mythes-de-la-gastronomie-la-tarte-des-demoiselles-tatin
 
 This strengthens the acquisition target but does not replace direct inspection of the newspaper page.
 
 ## 1903 — independent contemporaneous printed witness, separate from Jullemier
 
-University of Liège historian Pierre Leclercq, summarizing Henri Delétang's archival research:
-https://www.campus.uliege.be/cms/c_9917930/fr/les-grands-mythes-de-la-gastronomie-la-tarte-des-demoiselles-tatin
-
-Leclercq provides a precise source locator to an excursion report by members of the **Société de géographie du Cher**, 23–24 February **1903**:
+Pierre Leclercq, summarizing Henri Delétang's archival research, provides a precise source locator to an excursion report by members of the **Société de géographie du Cher**, 23–24 February **1903**:
 
 - periodical: `Bulletin de la Société de géographie du Cher`;
 - `1re année, 1902-1903`;
 - relevant excursion report: **pp. 127–138**;
-- the transcribed passage directly names Hôtel Tatin and describes a hot apple tart as a **specialty of the house**, explicitly associating it with Mlle F. Tatin at the stove.
+- the transcribed passage names Hôtel Tatin and describes a hot apple tart as a **specialty of the house**, associating it with Mlle F. Tatin at the stove.
 
-A digitized full-volume object for the Bulletin series is independently identified through Google Books / University of Michigan provenance:
+A digitized full-volume object is independently identified through Google Books / University of Michigan provenance:
 https://books.google.com/books/about/Bulletin.html?id=N_efAAAAMAAJ
 
 CTHS independently identifies the periodical and society:
 https://cths.fr/ed/edition.php?id=8838
-
-A surviving bound-volume description independently confirms that the first semiannual fascicle of the first year was issued in **February 1903** and the second in July 1903, tightening the serial chronology, though an antiquarian listing is not used as event evidence.
 
 Evidence decision:
 
 - periodical identity + first-year date range = `A2 / INSTITUTIONAL-BIBLIOGRAPHICALLY CONFIRMED`;
 - exact source range `1re année, 1902-1903, pp.127-138` = `TIGHT SCHOLARLY LOCATOR TO PRIMARY`;
 - relevant Tatin wording = supported by an academic historian reproducing Delétang's transcription;
-- direct scan-page inspection of pp.127–138 in the primary object = still `LOCATOR_HOLD` before quote-safe promotion.
+- direct scan-page inspection of the relevant primary page remains `LOCATOR_HOLD` before quote-safe promotion.
 
-This is **not** the same source as Jullemier and materially improves the chronology: there is a genuinely contemporaneous 1903 printed travel/excursion witness to the Hôtel Tatin apple-tart specialty.
+This is **not** the same source as Jullemier. It is a genuinely contemporaneous 1903 printed witness to the Hôtel Tatin apple-tart specialty.
 
 ## Jullemier — event-date vs publication-date correction
 
 Académie du Goût:
 https://www.academiedugout.fr/articles/la-mysterieuse-histoire-de-la-tarte-tatin_3268
 
-The article says Lucien Jullemier writes in one of his *Contes de Sologne* **about a meal at Hôtel Tatin around 1903**.
+The modern synthesis says Lucien Jullemier writes in *Contes de Sologne* about a meal at Hôtel Tatin around **1903**. This must not be transformed into `published in 1903`.
 
-This wording must not be transformed into `published in 1903`.
-
-Bibliographic sources for Lucien Jullemier list *Contes de Sologne* as a **1915** publication, Paris, Imprimerie générale La Hure. Current evidence therefore distinguishes:
+Current bibliography distinguishes:
 
 - `c.1903` = date of the **described meal/event**;
-- `1915` = current bibliographic date for **publication of Contes de Sologne**;
-- exact 1915 book object/page containing the Tatin passage = still `LOCATOR_HOLD`.
+- `1915` = current bibliographic date for **publication of *Contes de Sologne***;
+- exact 1915 object/page containing the Tatin passage = `LOCATOR_HOLD`.
 
-The contemporaneous 1903 Bulletin and later Jullemier retrospective are separate witnesses and must remain separate in Product chronology.
-
-## Marie Souchon / 1921 transition
-
-Académie du Goût points to the Marie Souchon manuscript tradition and Paul Besnard's 1921 printed recipe.
-
-Secondary historical locator:
-https://www.cuisine-lucullus.com/histoire-de-la-cuisine/13-tout-un-plat/836-tarte-des-soeurs-tatin
+The contemporaneous 1903 Bulletin and later Jullemier retrospective remain separate witnesses.
 
 ## 1921 Besnard publication — BnF serial identity pinned
 
@@ -96,7 +82,7 @@ https://catalogue.bnf.fr/ark:/12148/cb32713209f
 BnF metadata:
 
 - key title: **`Blois et le Loir-et-Cher`**;
-- description: `revue mensuelle illustrée`;
+- `revue mensuelle illustrée`;
 - publisher: **Éditions du Jardin de la France**;
 - run: **11e année, n.s., n° 1 (1er mars 1920) → 1947**;
 - ISSN: **0995-8347**;
@@ -106,7 +92,7 @@ Evidence decision:
 
 - identity/existence of the 1921 serial = `A2 BNF CATALOGUE VERIFIED`;
 - publisher/run/ISSN/call number = `EXACT BIBLIOGRAPHIC LOCATOR`;
-- Besnard's particular 1921 issue/month/page remain `LOCATOR_HOLD`;
+- Besnard's exact 1921 issue/month/page remain `LOCATOR_HOLD`;
 - later reproductions of the recipe text are not substituted for the unacquired page.
 
 ## 1923 transmission objects — exact routes identified
@@ -126,59 +112,100 @@ The BnF Catalogue général independently lists:
 Current evidence decision:
 
 - existence/title/authors/publisher/year of the **1926 Orléanais volume** = `A2 BNF CATALOGUE VERIFIED`;
-- exact BnF notice ARK and Tatin page inside the volume = not yet pinned;
+- exact Tatin page inside the volume = open;
 - exact recipe wording = `LOCATOR_HOLD`;
 - claims that Curnonsky invented the accident legend are **not accepted** without a primary passage.
 
-This last boundary is strengthened by the academic myth-genealogy below: Leclercq explicitly reports that no Curnonsky publication found in the historical investigation contains the alleged accident story.
+Leclercq/Delétang report that no Curnonsky publication found in their historical investigation carries the alleged accident story.
 
 ## Myth genealogy — the accident/distraction story appears very late
 
 University of Liège / Pierre Leclercq, following Henri Delétang:
-https://www.campus.uliege.be/cms/c_9917930/fr/les-grands-mythes-de-la-gastronomie-la-tarte-des-demoiselles-tatin
+https://www.news.uliege.be/cms/c_9917930/fr/les-grands-mythes-de-la-gastronomie-la-tarte-des-demoiselles-tatin
 
-This is currently the strongest secondary historical synthesis for the **genealogy of the myth itself**. It reports:
+Current historical synthesis reports:
 
-- no Curnonsky publication in the investigated corpus carries the supposed accident anecdote;
+- no located Curnonsky publication carries the supposed accident anecdote;
 - a **vague precursor reference** to clumsiness exists in *Horizons d'Argonne* in **1976**, cited by Delétang to p. 97;
-- the first developed accident/distraction legend is associated with the **Confrérie des Lichonneux** around **1979**, whose own prospectus reportedly presented it as a `légende` rather than documentary fact.
+- a developed accident/distraction legend is associated with the **Confrérie des Lichonneux** around **1979**, whose prospectus reportedly presented it as a `légende`.
 
-Wave 2 independently identifies the 1976 periodical object at bibliographic level:
+### 1976 pagination audit
 
-- *Horizons d'Argonne*, nos. **30–31**, 1976;
-- Centre d'Études Argonnais;
-- surviving bibliographic descriptions give approximately 86–92 pages depending on collation/listing;
-- the exact Delétang-cited **p. 97** creates a collation question that must be resolved against the original issue/combined pagination rather than assumed from bookseller metadata.
+Do **not** attach the cited `p.97` automatically to `Horizons d'Argonne n°30–31` merely because that combined issue is dated 1976. Surviving bibliographic/resale descriptions for n°30–31 give only roughly 86–92 pages, while other 1976 issue numbering also exists. The correct current state is:
 
-The Centre d'Études Argonnais states that the historical issues of *Horizons d'Argonne* are preserved in its long-running review corpus and that older issues are consultable through the association site/archive:
+- year = `1976`, strong scholarly locator;
+- page = `97`, strong scholarly locator;
+- exact issue/combined-pagination mapping = **UNRESOLVED**;
+- original issue/page = acquisition target.
+
+Centre d'Études Argonnais:
 https://centredetudesargonnais.com/
+
+The association states that historical issues of *Horizons d'Argonne* are preserved and older issues are being made consultable. This is the preferred route for resolving the issue/pagination question.
 
 ### Confrérie legal/institutional timing
 
-Current Confrérie page:
+Current Confrérie source:
 https://stephanevaladou.wixsite.com/lichonneuxtatin/lesprit-et-les-lois
 
-The Confrérie's own current source states that the association was **registered in the Journal officiel on 27 March 1979** and reproduces Article II objectives centered on promoting and defending the traditional hot inverted tart.
+It states that the association was **registered in the Journal officiel on 27 March 1979**.
 
-The same current Confrérie site explicitly labels its birth narrative **`La légende de la naissance de la tarte Tatin`**:
+History page:
 https://stephanevaladou.wixsite.com/lichonneuxtatin/un-peu-dhistoire
 
-It currently retells multiple incompatible mechanisms — fall, forgotten dough, distraction, genius — while also acknowledging that the inverted tart may have been a pre-existing regional form. This is excellent evidence for **modern myth transmission**, not for nineteenth-century events.
+The current participant source explicitly labels the birth narrative **`La légende de la naissance de la tarte Tatin`** and retells multiple incompatible mechanisms. This is strong evidence for **modern myth transmission**, not nineteenth-century events.
 
-Académie du Goût gives `1978` for the formation of the group, while the Confrérie's own legal-registration statement gives Journal officiel registration in March **1979**. These can coexist as `informal/founding activity vs formal registration`, but that reconciliation must not be asserted without statutes or founding minutes.
+Académie du Goût gives `1978` for the formation of the group, while the current Confrérie source gives formal Journal officiel registration in March **1979**. A possible informal-formation/formal-registration distinction is plausible but must not be asserted without founding minutes/statutes.
 
 ### Current decision on the accident story
 
 - nineteenth-century accident = `UNSUPPORTED / LEGEND`;
 - 1899 + 1903 witnesses = document fame/specialty, **not accident**;
-- 1921/1923/1926 recipe transmission = currently no acquired accident wording;
+- 1921/1923/1926 transmission = currently no acquired accident wording;
 - alleged Curnonsky invention of legend = `REJECTED AS CURRENT WORDING / NO PRIMARY SUPPORT FOUND`;
-- vague 1976 clumsiness reference = `STRONG SCHOLARLY LOCATOR / EXACT ORIGINAL PAGE NEEDED`;
-- developed Confrérie legend around 1979 = `STRONG HISTORICAL-SYNTHESIS + PARTICIPANT MYTH-TRANSMISSION EVIDENCE`; original 1979 prospectus still a high-value acquisition target.
+- 1976 clumsiness reference = `STRONG SCHOLARLY LOCATOR / EXACT ORIGINAL ISSUE+PAGE NEEDED`;
+- developed Confrérie legend around 1979 = `STRONG HISTORICAL-SYNTHESIS + PARTICIPANT MYTH-TRANSMISSION EVIDENCE`; original 1979 prospectus remains a high-value target.
 
-This makes Tatin one of the strongest future `MYTH VS DOCUMENT` articles in the Canon.
+## Technique genealogy — inversion predates the Tatin fame network
 
-## Required tripartite model
+This is a separate question from **who made the Hôtel Tatin specialty famous**.
+
+### Late-eighteenth-century `tourte retournée` lead
+
+Leclercq/Delétang point to a **1790 professional mastery-rule context** in which a baker candidate was expected to prepare a `tourte retournée`. The current historical synthesis is strong enough to make this a primary-acquisition target, but the exact 1790 legal/professional object has not yet been acquired.
+
+Decision:
+
+`PRE-TATIN INVERSION TERMINOLOGY = STRONG HISTORICAL LEAD / PRIMARY OBJECT REQUIRED`.
+
+Do not claim that the 1790 object was the same recipe as modern Tatin.
+
+### Urbain Dubois 1894 — primary book object now identified
+
+Académie du Goût points to Urbain Dubois, *La Pâtisserie d'aujourd'hui* (1894), and specifically to a `Tarte aux pêches molles` described as an inverted fruit-tart technique with possible fruit variants including apples.
+
+Wave 2 now closes the **book/object identity** independently through BnF/Gallica:
+
+- author: **Urbain Dubois**;
+- title: ***La pâtisserie d'aujourd'hui***;
+- edition: **2e édition**;
+- publisher: **E. Dentu**;
+- year: **1894**;
+- BnF holding reported as `4-V-3643`;
+- Gallica ARK: **`bpt6k3412588h`**;
+- stable object URL: https://gallica.bnf.fr/ark:/12148/bpt6k3412588h
+- BnF catalogue marks the work as consultable on Gallica; secondary catalogue metadata records the historical object as **domaine public**.
+
+Current evidence state:
+
+- Dubois 1894 book identity/digitized BnF object = `A2/A1 OBJECT-LEVEL CLOSED`;
+- exact `Tarte aux pêches molles` scan leaf = **LOCATOR_HOLD** because the Gallica viewer/API route has not yet yielded the relevant page in this environment;
+- exact wording about apple variants = not quote-safe until the primary page is directly inspected;
+- conceptual implication = the research question must distinguish **inversion technique genealogy** from **Tatin name/hotel genealogy**.
+
+This materially weakens any future wording that the sisters necessarily invented the *general technique* of an inverted fruit tart. It does **not** diminish the documented importance of the Hôtel Tatin specialty or prove recipe identity.
+
+## Required tripartite + technique model
 
 ### DOCUMENTED / document-targeted
 
@@ -188,8 +215,13 @@ This makes Tatin one of the strongest future `MYTH VS DOCUMENT` articles in the 
 - Besnard 1921 serial target;
 - 1923 primary routes;
 - Curnonsky/Rouff 1926 volume;
-- 1976 *Horizons d'Argonne* vague myth precursor target;
-- 1979 Confrérie prospectus/statutes/legal registration layer.
+- 1976 *Horizons d'Argonne* myth-precursor target;
+- 1979 Confrérie prospectus/statutes/legal-registration layer.
+
+### PRE-EXISTING TECHNIQUE GENEALOGY
+
+- 1790 `tourte retournée` professional/legal lead — primary object not yet acquired;
+- Dubois 1894 *La pâtisserie d'aujourd'hui* — BnF/Gallica object acquired at bibliographic/object level; exact recipe leaf pending.
 
 ### LOCAL TRADITION
 
@@ -209,15 +241,17 @@ Each legend must be dated to its **own transmission evidence** rather than proje
 
 ## Ответы, отрицания и альтернативные объяснения
 
-The 1903 Bulletin strengthens a bounded historical claim: **Hôtel Tatin had a renowned hot apple-tart specialty associated with Fanny Tatin by 1903**.
+The 1903 Bulletin supports the bounded historical claim that **Hôtel Tatin had a renowned hot apple-tart specialty associated with Fanny Tatin by 1903**.
 
-The late legend evidence strongly argues against narrating the accident as if it were preserved nineteenth-century testimony. It does not prove that no accident of any kind ever happened; it proves that the **documentary tradition currently identified does not carry that story until much later**.
+The late myth evidence argues strongly against narrating the accident as preserved nineteenth-century testimony. It does not prove that no accident of any kind ever happened; it shows that the **located documentary tradition does not carry the developed story until much later**.
+
+The 1790/Dubois leads require a second distinction: a technique can predate the Tatin sisters while the sisters' particular hotel version, name, execution and later cultural influence remain historically important.
 
 ## Анализ и границы допустимой формулировки
 
 Safe:
 
-> Contemporary evidence documents the Hôtel Tatin apple-tart specialty by 1899–1903, but the famous accident narrative appears in the documentary tradition far later. Historical research summarized by University of Liège places a vague clumsiness reference in 1976 and a developed Confrérie legend around 1979; the Confrérie's current material itself labels the story a legend and records formal Journal officiel registration in March 1979. No acquired Curnonsky publication currently supports the claim that he invented the anecdote.
+> Contemporary evidence documents the Hôtel Tatin apple-tart specialty by 1899–1903. Historical research also points to inverted-pastry techniques predating the Tatin fame network, including a 1790 `tourte retournée` lead and a now-identified BnF/Gallica 1894 Urbain Dubois pastry book whose exact inverted-fruit-tart page is still being acquired. The famous accident narrative appears in the located documentary tradition much later, with a 1976 precursor and a developed Confrérie legend around 1979.
 
 Unsafe:
 
@@ -225,33 +259,44 @@ Unsafe:
 
 Unsafe:
 
+> The Tatin sisters invented the general technique of baking a fruit tart upside down.
+
+Unsafe:
+
+> Dubois's 1894 tart was exactly the same recipe later called Tarte Tatin.
+
+Unsafe:
+
 > Curnonsky invented the accident legend in 1926.
 
 Unsafe:
 
-> 1979 is proved as the absolute first time anyone ever orally told an accident story.
-
-The evidence concerns the **located printed/documentary tradition**, not unknowable oral transmission.
+> 1979 is proved as the absolute first oral telling of an accident story.
 
 ## Хронология
 
+- **1790** — `tourte retournée` professional/legal lead; exact primary object still to acquire.
+- **1894** — Dubois, *La pâtisserie d'aujourd'hui*, BnF/Gallica full object identified (`bpt6k3412588h`); exact inverted-tart leaf pending.
 - **18 December 1899** — exact RetroNews p.1 route identified; direct content inspection pending.
 - **23–24 February 1903** — contemporaneous Société de géographie du Cher excursion; report tightly located to pp.127–138.
-- **c.1903** — date of meal/event described in later Jullemier retrospective.
-- **1915** — current bibliographic date for Jullemier *Contes de Sologne*.
+- **c.1903** — meal/event described in later Jullemier retrospective.
+- **1915** — bibliographic date for Jullemier *Contes de Sologne*.
 - **1921** — Besnard target narrowed to BnF serial `Blois et le Loir-et-Cher`, ISSN 0995-8347, cote `4-LC11-1357`.
 - **1923** — primary Gallica/RetroNews transmission routes identified.
 - **1926** — Curnonsky/Rouff `L'Orléanais` volume BnF-confirmed; exact Tatin page open.
-- **1976** — Delétang/Leclercq identify a vague clumsiness reference in *Horizons d'Argonne*; exact original p.97 to acquire and pagination to resolve.
-- **1979** — current Confrérie source states Journal officiel registration 27 March 1979; academic historical synthesis associates developed accident legend with Confrérie promotional storytelling around this period.
+- **1976** — Delétang/Leclercq identify a vague clumsiness reference in *Horizons d'Argonne*; exact original issue/p.97 to acquire.
+- **1979** — current Confrérie source states Journal officiel registration 27 March 1979; historical synthesis associates developed accident legend with Confrérie storytelling around this period.
 
 ## Anatomy / technique
 
 The 1903 Bulletin witness supports `hot apple tart / house specialty`, not exact later technique.
 
-Separate historical core technique from modern variants:
+For future educational diagrams separate:
 
-`fruit caramelization + pastry + inversion/service relationship`.
+1. earlier generic inversion technique;
+2. Hôtel Tatin documented specialty;
+3. 1921/1926 recipe transmission;
+4. late accident legend.
 
 Exact assembly order, apple varieties and heat method require period/professional sources. Later reproductions of Besnard's text point to a copper vessel and charcoal/camp-oven method, but exact wording should transfer only after the 1921 page is acquired.
 
@@ -259,27 +304,31 @@ Exact assembly order, apple varieties and heat method require period/professiona
 
 High-value authentic visual targets:
 
-1. exact 18 December 1899 *Le Journal* page;
-2. 1903 Bulletin de la Société de géographie du Cher exact Tatin page;
-3. Jullemier 1915 page;
-4. Besnard 1921 page;
-5. 1923 Gallica page;
-6. Curnonsky/Rouff 1926 Tatin page;
-7. **Horizons d'Argonne 1976 p.97**;
-8. **original 1979 Confrérie prospectus/statutes or Journal officiel notice**;
-9. hotel/sisters archival photography with provenance.
+1. Dubois 1894 exact `Tarte aux pêches molles` page from Gallica `bpt6k3412588h`;
+2. primary 1790 `tourte retournée` professional/legal document;
+3. exact 18 December 1899 *Le Journal* page;
+4. 1903 Bulletin de la Société de géographie du Cher exact Tatin page;
+5. Jullemier 1915 page;
+6. Besnard 1921 page;
+7. 1923 Gallica page;
+8. Curnonsky/Rouff 1926 Tatin page;
+9. *Horizons d'Argonne* 1976 p.97 with correct issue/pagination;
+10. original 1979 Confrérie prospectus/statutes or Journal officiel notice;
+11. hotel/sisters archival photography with provenance.
 
-The 1976 and 1979 objects are especially valuable because they can visually demonstrate **how a legend is born**, rather than merely telling the reader that a legend exists.
+The 1976/1979 objects can demonstrate **how a legend is born**. The Dubois/1790 objects can demonstrate **why technique genealogy must be separated from invention mythology**.
 
-Modern municipal/Confrérie website imagery is reference-only unless licensed. Archive access never automatically authorizes Product reproduction.
+BnF/Gallica marks the Dubois historical object as digitized/consultable; Product visual reuse still requires final item-level credit/reproduction review rather than assuming `digitized = production-cleared`.
 
 ## Следующее проверяемое действие
 
-1. Navigate the digitized Société de géographie du Cher volume to the 1902–1903 pp.127–138 and capture the exact Tatin page.
-2. Acquire/inspect *Horizons d'Argonne* 1976 p.97 and resolve issue/pagination.
-3. Locate the original 1979 Confrérie prospectus/statutes and, if available, the Journal officiel association notice.
-4. Resolve the 1921 Besnard issue/month/page using BnF cote `4-LC11-1357`.
-5. Find institutional full object for Jullemier *Contes de Sologne* (1915) and exact Tatin page.
-6. Directly inspect *Le Journal* 1899 and 1923 routes.
-7. Pin Curnonsky/Rouff 1926 exact Tatin page.
-8. Search 1926–1975 press/cookbooks for the accident motif to test whether an earlier printed version exists between Curnonsky and the 1976–1979 layer.
+1. Resolve the exact Gallica scan leaf for Dubois 1894 `Tarte aux pêches molles` inside `bpt6k3412588h` and preserve exact wording/context.
+2. Acquire the primary 1790 `tourte retournée` professional/mastery document behind the scholarly lead.
+3. Navigate the digitized Société de géographie du Cher volume to the exact Tatin passage inside pp.127–138.
+4. Acquire/inspect *Horizons d'Argonne* 1976 p.97 and resolve issue/pagination rather than assuming n°30–31.
+5. Locate original 1979 Confrérie prospectus/statutes and Journal officiel notice.
+6. Resolve the 1921 Besnard issue/month/page using BnF cote `4-LC11-1357`.
+7. Find institutional full object for Jullemier *Contes de Sologne* (1915) and exact Tatin page.
+8. Directly inspect *Le Journal* 1899 and 1923 routes.
+9. Pin Curnonsky/Rouff 1926 exact Tatin page.
+10. Search 1926–1975 press/cookbooks for accident motifs to test whether an earlier printed version exists between Curnonsky and the 1976–1979 layer.
