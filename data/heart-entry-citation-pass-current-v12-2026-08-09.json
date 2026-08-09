@@ -18,12 +18,13 @@
   },
   "deltaReceipt": {
     "path": "data/heart-part5-native-citation-review-2026-08-09.json",
-    "gitBlob": "3dcf8f2ce5fc05c28203fdabdb5bbec59423aa50",
+    "gitBlob": "c4c29e9ef3188824473cd984df42bc009a350219",
     "authorityId": "HEART-PART5-NATIVE-CITATION-REVIEW-2026-08-09",
     "entryId": "HEART-BOOK-V",
     "entryOrder": 11,
     "effect": "first native-authority citation pass for Part V; current completion advances 6 to 7",
     "part5DossierUrlHoldsAdded": 12,
+    "part5ReaderOnlyScriptureLocatorsDispositioned": 4,
     "part5NewSourceUrlRepairs": 0,
     "part5NewUnresolvedInternalPaths": 0,
     "newDirectQuotesApproved": 0
