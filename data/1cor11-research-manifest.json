@@ -286,6 +286,24 @@
       "publicationState": "REFERENCE"
     },
     {
+      "id": "1COR11-BAPTIST-HISTORY-30",
+      "path": "1_КОРИНФЯНАМ_11/30_RUSSIAN_BAPTIST_AND_EVANGELICAL_RECEPTION_HISTORY.md",
+      "scope": ["11:2-16", "russian-baptists", "aucecb", "kargel", "prokhanov", "bratsky-vestnik", "msc-ecb"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-POSITION-SHEET-31",
+      "path": "1_КОРИНФЯНАМ_11/31_CONSOLIDATED_PUBLICATION_POSITION_SHEET_Q1_Q10.md",
+      "scope": ["11:2-16", "q1-q10", "position-sheet", "allowed-wording", "prohibited-claims"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
       "id": "1COR11-ARTICLE-1-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md",
       "scope": ["11:2-3", "site-article", "headship", "trinity", "christ"],

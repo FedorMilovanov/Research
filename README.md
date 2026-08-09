@@ -151,6 +151,8 @@ Research-ветка новой исследовательской серии (fo
 * [Экзегетический аудит Robertson & Plummer ICC (1911): восточное покрывало, ангелы](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/27_ROBERTSON_PLUMMER_ICC_1911_EXEGESIS_AUDIT.md)
 * [Полный спектр 7 толкований «Ради Ангелов»: 1QSa 2:3–9, CD 15:15–17, Товит 12](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/28_SEVEN_READINGS_OF_ANGELS_1COR11_10_DOSSIER.md)
 * [Хронологическая панорама рецепции 1 Кор. 11 за 20 веков (от отцов до XXI века)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/29_HISTORICAL_THEOLOGY_TIMELINE_FROM_PATRISTICS_TO_PRESENT.md)
+* [История рецепции в российском баптизме и евангельском движении (XIX–XXI вв.)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/30_RUSSIAN_BAPTIST_AND_EVANGELICAL_RECEPTION_HISTORY.md)
+* [Сводный публикационный лист позиций: 10 главных вопросов (Q1–Q10)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/31_CONSOLIDATED_PUBLICATION_POSITION_SHEET_Q1_Q10.md)
 * [Параллельный корпус и координация агентов](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/00_README_AND_MASTER_AUTHORITY_INDEX.md)
 * [Машиночитаемый манифест доказательств и источников](data/1cor11-research-manifest.json)
 * [Машиночитаемый манифест координации серии](data/1cor11-authority-manifest.json)
