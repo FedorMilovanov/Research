@@ -169,3 +169,19 @@
 ## Следующее действие
 
 Фаза 2: сверить каждый стих с Thiselton (NIGTC) и Ciampa–Rosner (PNTC) после получения книг от владельца; закрыть Q7 (11:5 vs 14:34) и Q1 (ситуация) по полному историческому слою.
+
+---
+
+## ДОПОЛНЕНИЕ PASS-1 (2026-08-09): Шрейнер (RBMW гл. 5) — ключевые решения
+
+Полная глава получена: `ИСТОЧНИКИ/КОММЕНТАТОРЫ_ШРЕЙНЕР_RBMW_ГЛАВА5_ЦИТАТЫ.md`.
+
+- **Q2 (покрывало):** «it is probable that Paul is speaking of wearing a head covering of some kind, such as a shawl»; ἀντί в 11:15 = equivalence, не substitution; волосы — «indication that she needs to wear a covering». Итог: ткань-шаль PROBABLE (Шрейнер, Fee по аргументам katakalypto, Philo Spec. Laws 3:60, Polybius 15.27.2, Есф. 6:12, Плутарх).
+- **Q3 (κεφαλή):** три аргумента за «власть»: Грудем; LXX (никогда «источник»); Павел (Еф. 5:23, Еф. 1:22, Кол. 2:10 — против демонических властей). Троица: функциональное подчинение, не онтологическое (1 Кор. 15:28; Ходж, Кальвин, Беркхоф).
+- **Q4 (ἐξουσία):** семь аргументов против Hooker; ключ — структура 7/10 параллель + ὀφείλει (обязанность) + Diodorus 1.47.5 (короны = чужая власть).
+- **Q5 (ангелы):** «The best solution is probably that the angels are good angels who assist in worship and desire to see the order of creation maintained»; честное «We don't know for sure».
+- **Q7 (11:5 vs 14:34):** женщины молились/пророчествовали ПУБЛИЧНО; 14:33b–36 запрещает только участие женщин в суде пророчеств (14:29–33a) — решение Шрейнера (самое влиятельное в современном комплементарианстве).
+- **Q8 (φύσις):** «natural and instinctive sense of right and wrong... especially with respect to sexuality» (параллель Рим. 1:26–27); культурное проявление врождённого чувства.
+- **Q9 (11:16):** «we have no such practice» = о практике непокрытия; «binding for all churches in the Greco-Roman world»; универсальный принцип.
+- **Применение:** принцип (порядок, мужское лидерство, женское участие в молитве/пророчестве под властью) вечен; форма (покрывало) культурна — «Am I suggesting that women return to wearing coverings or veils? No.»
+- **Q6 (интерполяция):** «should be viewed as an interpolation only if there are convincing textual arguments, and this is hardly the case here»; против Padgett/Shoemaker (теория «коринфской цитаты»): «the citation becomes incredibly long. Moreover there is no indication that Paul is citing the Corinthians».
