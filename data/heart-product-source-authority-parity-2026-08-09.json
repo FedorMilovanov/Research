@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-PRODUCT-SOURCE-AUTHORITY-PARITY-2026-08-09",
+  "status": "NATIVE_AUTHORITY_DIVERGES_FROM_REFERENCE_MDX_REOPEN_REQUIRED",
+  "generatedAt": "2026-08-09",
+  "researchBase": "062a7fe14d98c89fe04fc376fdfeb8bb2b060378",
+  "productSnapshot": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+  "historicalBuilder": {
+    "path": "scripts/build_heart_whole_book_citation_inventory.py",
+    "gitBlob": "6e8fb1af57bc72d26a9ca91d5b84b1fec3de7f12"
+  },
+  "calibration": {
+    "ownerSpecsChecked": 10,
+    "uniqueSlugsChecked": 9,
+    "allCitationSurfacesParity": false,
+    "mismatchingOwnerSpecs": 10,
+    "manifestSha256": "df4fd39e73c031083d8fad145263281c3be10ededa0a20d14f89b78e64a3b576"
+  },
+  "mismatchingSpecs": [
+    {
+      "entryIds": ["HEART-BOOK-I1", "HEART-BOOK-I4"],
+      "referenceMdx": "src/content/articles/chto-bibliya-nazyvaet-serdcem.mdx",
+      "sections": [],
+      "nativeBody": "src/components/article-pilots/chto-bibliya-nazyvaet-serdcem/ChtoBibliyaBody.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-I3"],
+      "referenceMdx": "src/content/articles/krajne-li-isporcheno-serdce.mdx",
+      "sections": [],
+      "nativeBody": "src/components/article-pilots/krajne/KrajneBody.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-III1"],
+      "referenceMdx": "src/content/articles/novoe-serdce.mdx",
+      "sections": [],
+      "nativeBody": "src/components/article-pilots/novoe-serdce/NovoeSerdceBody.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-X2"],
+      "referenceMdx": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "sections": ["chetyre-sostoyaniya", "vopl-i-otvet", "ne-besplotnoe-parenie", "ne-sposobno-greshit", "pobeda-nad-vragom"],
+      "nativeBody": "src/components/article-pilots/osvobozhdennoe/OsvobozhdennoeBody.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-X3"],
+      "referenceMdx": "src/content/articles/osvobozhdennoe-serdce.mdx",
+      "sections": ["vyhod"],
+      "nativeBody": "src/components/article-pilots/osvobozhdennoe/OsvobozhdennoeBody.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-V"],
+      "referenceMdx": "src/content/articles/rimlyanam-7-veruyushchiy-ili-neveruyushchiy.mdx",
+      "sections": [],
+      "nativeBody": "src/components/article-pilots/rimlyanam7/Rimlyanam7Body.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-III4"],
+      "referenceMdx": "src/content/articles/serdce-i-duh.mdx",
+      "sections": [],
+      "nativeBody": "src/components/article-pilots/serdce-iduh/SerdceIDuhBody.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-I4"],
+      "referenceMdx": "src/content/articles/serdce-i-telo.mdx",
+      "sections": [],
+      "nativeBody": "src/components/article-pilots/serdce-telo/SerdceTeloBody.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-VII"],
+      "referenceMdx": "src/content/articles/serdce-pod-skorbyu.mdx",
+      "sections": [],
+      "nativeBody": "src/components/article-pilots/serdce-skorb/SerdceSkorbBody.astro"
+    },
+    {
+      "entryIds": ["HEART-BOOK-VII"],
+      "referenceMdx": "src/content/articles/tma-na-serdce.mdx",
+      "sections": [],
+      "nativeBody": "src/components/article-pilots/tma-na-serdce/TmaNaSerdceBody.astro"
+    }
+  ],
+  "affectedEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "completedEntriesReopened": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "alreadyOpenAffectedEntries": ["HEART-BOOK-V", "HEART-BOOK-VII"],
+  "completedEntriesUnaffected": [
+    "HEART-BOOK-I2",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-X1"
+  ],
+  "decision": {
+    "historicalReferenceMdxMayRemainForensicWitness": true,
+    "historicalReferenceMdxMayActAsCurrentCitationAuthority": false,
+    "nativeAstroBodyIsCurrentProductContentAuthority": true,
+    "priorCitationReceiptsRemainImmutableHistoricalEvidence": true,
+    "reopenedEntriesRequireNativeAuthorityCitationReview": true,
+    "part5CitationReviewMustUseNativeAuthority": true
+  },
+  "importantCalibrationNote": "Some native-only external URLs are Astro/UI shell surfaces (for example schema.org, Telegram and SVG namespace), but the divergence is not shell-only: Scripture-reference sets, internal article targets and/or quotation manifests differ across the affected owner specs. Therefore the prior MDX citation passes cannot remain current authority merely by filtering shell URLs."
+}
