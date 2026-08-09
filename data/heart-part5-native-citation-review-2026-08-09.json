@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-PART5-NATIVE-CITATION-REVIEW-2026-08-09",
+  "status": "PART5_NATIVE_AUTHORITY_ENTRY_CITATION_PASS_COMPLETE_CURRENT_SEVEN_OF_EIGHTEEN",
+  "reviewedAt": "2026-08-09",
+  "entry": {
+    "order": 11,
+    "id": "HEART-BOOK-V",
+    "label": "V Сердце в борьбе с грехом",
+    "previousState": "ASSEMBLED_READER_CITATION_OPEN",
+    "currentState": "ENTRY_CITATION_PASS_COMPLETE"
+  },
+  "immutableAuthorities": {
+    "previousCurrentV11": [
+      "data/heart-entry-citation-pass-current-v11-2026-08-09.json",
+      "58e9dcf7f724b03c7b9d09b49f75922f8bf73b23"
+    ],
+    "readerAssembly": [
+      "data/heart-part5-reader-assembly-2026-08-09.json",
+      "cf58624519e3f3ea7290fde518afce85f258863c"
+    ],
+    "part2R3R4CitationReview": [
+      "data/heart-part2-citation-review-2026-08-04.json",
+      "c746a626953ee57a394a41a5f82a83630f1cd782"
+    ],
+    "productSnapshot": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "productNativeOwner": [
+      "src/components/article-pilots/rimlyanam7/Rimlyanam7Body.astro",
+      "35ed2f340ae725485533e322b3e1db0a68e01747"
+    ],
+    "r3": [
+      "СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md",
+      "ae55b1fad5cccbdb623c551a14222e0f51ec084a"
+    ],
+    "r4": [
+      "СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md",
+      "f82780e13cb064aa89c06427d11a938662fc3ff8"
+    ],
+    "r5": [
+      "СЕРИЯ СЕРДЦЕ/67_R5_TWO_STRUGGLES.md",
+      "846277b099e58bf36b88c2ae0dfe4e24e6bec53b"
+    ],
+    "reader": [
+      "СЕРИЯ СЕРДЦЕ/133_READER_CHAPTER_V_HEART_IN_WAR_2026-08-09.md",
+      "183819bf469d7e28f270fa6891b8ae1534e2f6ef"
+    ]
+  },
+  "surfaceInventory": {
+    "aggregate": {
+      "uniqueScriptureReferences": 203,
+      "quotationSurfaces": 755,
+      "uniqueExternalLinks": 122,
+      "uniqueInternalArticleLinks": 1,
+      "scriptureSetSha256": "f491df64b28fc84f1758367f585d28fe6350a3c6583f8ed3908790b88570f058",
+      "quotationManifestSha256": "5b49de2c04a1f0b5fa2230758341059d5e83d36b687e5c01cca067a97a21e4b5",
+      "externalLinkSetSha256": "53986ca4a35c8e315667233d1815bbcf86de1954faeb9c35ecee7d241d131074",
+      "internalLinkSetSha256": "340d19206af863e8b9a7098a84d47199360bec49d1062545c199a4fda8572c65"
+    },
+    "perOwner": {
+      "PRODUCT_NATIVE": {
+        "scriptureReferences": 37,
+        "quotationSurfaces": 96,
+        "externalLinks": 3,
+        "internalArticleLinks": 0,
+        "scriptureSha256": "02094b1e7aacbbb99c35fd6140d660b78bea4ecec9605cf8a46c0d56ac4015ca",
+        "quotationManifestSha256": "930e741f1b4e9cca50d64780c21311b34846108c81dcbbec3930d902c30a20c7",
+        "externalLinksSha256": "9989ce0d5249a9835b0be9ea9be19ca4f6cf9eb4b98134adce2fc5d714f96b99",
+        "internalLinksSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "sectionSummarySha256": "dad04d2a298b9e434a380829fd4c9aa7296f550d9d7fb259f1ecf3ca299488c1"
+      },
+      "R3": {
+        "scriptureReferences": 50,
+        "quotationSurfaces": 304,
+        "externalLinks": 53,
+        "internalArticleLinks": 1,
+        "scriptureSha256": "f460f71ff3a8e514ff32e134d3b56f38450c581e7b2323adab7b7b912d00276a",
+        "quotationManifestSha256": "e4f11bc3c754428303cc2dbf3cd4db0e88fee7cec16f89ebf9e54b677b8fe5b1"
+      },
+      "R4": {
+        "scriptureReferences": 68,
+        "quotationSurfaces": 133,
+        "externalLinks": 27,
+        "internalArticleLinks": 0,
+        "scriptureSha256": "2a6c75cc83e10124bbd7bee57457c79ed455ca51f04ebab3e1c84ed6ced0df94",
+        "quotationManifestSha256": "b107a0d0c7ba2a8db287e4f932f401ca17808bf657c568dff8f974935677dea0"
+      },
+      "R5": {
+        "scriptureReferences": 59,
+        "quotationSurfaces": 222,
+        "externalLinks": 39,
+        "internalArticleLinks": 0,
+        "scriptureSha256": "a4d618f57460d998573c1d6f62d66b2aa7cdce8ade5cc6311ce333828f39a75e",
+        "quotationManifestSha256": "be3fc1dd3b25ad0878a3d051e65aad0e283c64f0b26720bf7e254eba26fe2024",
+        "externalLinksSha256": "0dd6d187ec2918570f543059fe610b46b9f613c2c5eef35b471808ab8ca190e0",
+        "sectionSummarySha256": "5b64f7ddce35094d3011eadd2bc06669537b2337001295df334611753b383aa3"
+      }
+    }
+  },
+  "quotationReview": {
+    "bulkDirectQuotationApproval": false,
+    "newDirectQuotesApproved": 0,
+    "productNative": {
+      "roleCounts": {
+        "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": 31,
+        "EDITORIAL_CHROME_OR_NAVIGATION_SURFACE": 3,
+        "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": 62
+      },
+      "roleMapSha256": "849c6806b7f843b0bb0f6df880b8962b8d1642f115f7658090507e1872f1a42c",
+      "roleSectionMap": {
+        "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": [
+          "Коротко",
+          "I. В чём именно вопрос",
+          "II. Римлянам 6–8: три звена одной цепи",
+          "III. Что именно повторяется в Рим. 7:14–25",
+          "IV. Позиция 1: Павел описывает верующего",
+          "V. Позиция 2: Павел описывает человека под законом до освобождения Духом",
+          "VIII. Почему я считаю, что Рим. 7 применим к верующему",
+          "IX. Пастырский вывод: кому Рим. 7 утешение, а кому предупреждение",
+          "Твёрдо, но не дубинкой",
+          "Как отличить в себе"
+        ],
+        "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": [
+          "VI. Ллойд-Джонс: не зрелый христианин и не обычный невозрождённый",
+          "VII. TMSJ / Джей Стрит: старозаветная борьба глазами Нового Завета",
+          "Источники и сверка"
+        ],
+        "EDITORIAL_CHROME_OR_NAVIGATION_SURFACE": [
+          "frontmatter-or-introduction",
+          "Читайте также"
+        ]
+      }
+    },
+    "r5": {
+      "roleCounts": {
+        "ATTRIBUTED_WITNESS_OR_QUOTE_BANK_SURFACE": 133,
+        "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": 34,
+        "EXEGETICAL_SCRIPTURE_OR_LEXICAL_SURFACE": 55
+      },
+      "roleMapSha256": "fece0c5a593d422a6cd0fc9320e4dd8a8b5b46084d8e84844905ecec3c3c10bb",
+      "roleSectionMap": {
+        "EXEGETICAL_SCRIPTURE_OR_LEXICAL_SURFACE": [
+          "1. Лк. 18:9–14 — фарисей и мытарь: две борьбы на молитве (центральный текст статьи)",
+          "2. 2 Кор. 7:10–11 — две печали: анатомия «плода поражений»",
+          "3. Рим. 2:14–15 — совесть есть у всех: почему борьба совести реальна",
+          "4. Рим. 7:22 + 8:13 — отличительные глаголы возрождённой борьбы",
+          "5. Гал. 5:16–25 — сама борьба как признак Духа; плод Духа как признак победы",
+          "6. 1 Ин. — направление пути (ось 6): рождённость видна по вектору, не по безупречности",
+          "7. Библейские пары-кейсы (материал для живой ткани статьи)",
+          "8. Мф. 26:41 / Owen: искушение и «вхождение в искушение» (для оси 2 — оружие)"
+        ],
+        "ATTRIBUTED_WITNESS_OR_QUOTE_BANK_SURFACE": [
+          "1. Matthew Mead, «The Almost Christian Discovered» (1661) — обязательный источник статьи",
+          "2. John Owen, «Of the Mortification of Sin in Believers» (1656) — гл. 2, 5–8",
+          "3. John Owen, «Of Temptation» (1658) — оружие возрождённой борьбы",
+          "4. Кратко (уже верифицировано в корпусе, использовать перекрёстно)",
+          "Б. Реформаторы",
+          "В. Баптисты",
+          "Г. Современные консервативные",
+          "Д. Отцы (свидетель, не догматический якорь)",
+          "Е. Jonathan Edwards, «A Treatise Concerning Religious Affections» (1746) — полные списки",
+          "Ж. Гордость морального победителя vs смирение побеждающего Духом (сводный узел)",
+          "Цитатный банк (полные источники и статус верификации)"
+        ],
+        "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": [
+          "R5 — Две борьбы: борьба совести и борьба Духа (различение) — досье для статьи V.3",
+          "Задача и место в книге",
+          "Предлагаемая структура (H2)",
+          "Строки-якоря серии (обязательны, из R7/R8)",
+          "Чего избегать (guardrails)",
+          "Открытые вопросы / что ещё копать"
+        ]
+      }
+    },
+    "r3r4Reuse": {
+      "authorityId": "HEART-PART2-CITATION-REVIEW-2026-08-04",
+      "sourceSurfaceBaseManifestSha256": "d51a1de91ac865bf81c485797092637ff39d3b50ca59dbbaddec85e9cd2cb804",
+      "classifiedSurfaceManifestSha256": "f7cf291e9cecb4a3a9d5aa28ae0185982c54c477448ce3e1b3752501379538cc",
+      "roleCounts": {
+        "ATTRIBUTED_WITNESS_OR_QUOTE_BANK_SURFACE": 194,
+        "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": 65,
+        "EXEGETICAL_SCRIPTURE_OR_LEXICAL_SURFACE": 178
+      },
+      "reuseAllowedOnlyWithExactR3R4Blobs": true
+    }
+  },
+  "externalLinkReview": {
+    "productNative": {
+      "linksDispositioned": 3,
+      "statusCounts": {
+        "NON_CITATION_UI_OR_SCHEMA_URL": 3
+      },
+      "registrySha256": "d067657e80b1494fb4631cea2adfce20897f393f6fbb6c1ac0c7f44b73a1d8bd",
+      "readerTransfer": 0
+    },
+    "r5": {
+      "linksDispositioned": 39,
+      "urlOccurrences": 54,
+      "statusCounts": {
+        "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD": 12,
+        "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE": 26,
+        "MARKDOWN_CODE_DELIMITER_SCANNER_ARTIFACT": 1
+      },
+      "registrySha256": "c9b81cf0107224af94c44316be1468180106c64c61e88347f65eed50733d73b5",
+      "scannerArtifact": {
+        "raw": "https://ccel.org/ccel/edwards/affections.toc.html`",
+        "canonical": "https://ccel.org/ccel/edwards/affections.toc.html",
+        "disposition": "Markdown code delimiter is outside the canonical URL; source Markdown remains unchanged."
+      },
+      "readerTransfer": 0,
+      "bulkDirectQuoteApproval": false
+    },
+    "r3r4Reuse": {
+      "linksDispositioned": 80,
+      "statusCounts": {
+        "DOSSIER_OPEN_OR_DIRECT_QUOTE_HOLD": 15,
+        "DOSSIER_SUPPORT_RECORD_NO_READER_TRANSFER": 31,
+        "DOSSIER_VERIFIED_OR_SAFE_CLOSURE_SOURCE": 34
+      },
+      "registrySha256": "0811af3bd3865bc4dfd36f7d1f62048cdbd85f73c243512eb33410b07bbf8fe1"
+    }
+  },
+  "internalLinkReview": {
+    "uniqueDetected": 1,
+    "path": "/articles/opinion/",
+    "owner": "R3",
+    "status": "REUSED_PART2_UNRESOLVED_GENERIC_PATH_NO_PRODUCT_TARGET_NO_READER_TRANSFER",
+    "newUnresolvedInternalPathsAdded": 0,
+    "readerTransfer": false
+  },
+  "readerReview": {
+    "path": "СЕРИЯ СЕРДЦЕ/133_READER_CHAPTER_V_HEART_IN_WAR_2026-08-09.md",
+    "gitBlob": "183819bf469d7e28f270fa6891b8ae1534e2f6ef",
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceQuotationTransfer": 0,
+    "sourceLinkTransfer": 0,
+    "newDirectQuotesApproved": 0,
+    "scriptureReferencesDetected": 19,
+    "ownerUnionExactMatches": 15,
+    "readerOnlyScriptureReferencesMustBeExplicitlyDispositioned": true,
+    "readerOnlyScriptureReferences": [
+      {
+        "reference": "1 Ин.1:8–2",
+        "displayLocator": "1 Ин. 1:8–2:2",
+        "status": "READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED",
+        "role": "Continuing sin, confession and Christ's advocacy after defeat.",
+        "contextMarker": "1 Ин. 1:8–2:2 соединяет честность о продолжающемся грехе с исповеданием и ходатайством Христа.",
+        "sourceQuotationTransfer": 0,
+        "sourceLinkTransfer": 0
+      },
+      {
+        "reference": "Гал.5",
+        "displayLocator": "Гал. 5",
+        "status": "COVERED_ALIAS_OF_REVIEWED_OWNER_REFERENCE",
+        "coveredBy": "Гал.5:16–25",
+        "role": "Broad chapter alias in the reader introduction; the specific warfare/fruit range is already reviewed in R5.",
+        "contextMarker": "Она соединяет Рим. 6–8, Гал. 5 и пастырские предупреждения предыдущих глав",
+        "sourceQuotationTransfer": 0,
+        "sourceLinkTransfer": 0
+      },
+      {
+        "reference": "Еф.6",
+        "displayLocator": "Еф. 6",
+        "status": "READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED",
+        "role": "Reader-level synthesis for Word, prayer, faith and standing as warfare means.",
+        "contextMarker": "Еф. 6 добавляет Слово, молитву, веру и церковное стояние.",
+        "sourceQuotationTransfer": 0,
+        "sourceLinkTransfer": 0
+      },
+      {
+        "reference": "Кол.3",
+        "displayLocator": "Кол. 3",
+        "status": "READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED",
+        "role": "Reader-level synthesis connecting mortification with positive new-character fruit.",
+        "contextMarker": "Кол. 3 соединяет умерщвление земного с облечением в милосердие, доброту, смирение, кротость, терпение и любовь.",
+        "sourceQuotationTransfer": 0,
+        "sourceLinkTransfer": 0
+      }
+    ]
+  },
+  "retainedRepairAndHoldBacklog": {
+    "historicalProductSourceRepairsRequired": 4,
+    "historicalDossierUrlHoldsRetained": 55,
+    "part5DossierUrlHoldsAdded": 12,
+    "currentDossierUrlHoldsRetained": 67,
+    "dossierSourceUrlRepairsRequired": 2,
+    "part5NewSourceUrlRepairs": 0,
+    "unresolvedInternalPathsRetained": 1,
+    "part5NewUnresolvedInternalPaths": 0,
+    "nativeSourceAuthorityReconciliationsOpen": 7,
+    "silentlyClosedItems": 0
+  },
+  "disposition": {
+    "entryCitationPassComplete": true,
+    "assembledReaderCitationReviewComplete": true,
+    "sourceQuotationSurfacesCopiedToReader": 0,
+    "sourceLinksCopiedToReader": 0,
+    "newDirectQuotesApproved": 0,
+    "interpretation": "Part V is reviewed against current native Romans 7 authority plus bounded R3/R4/R5 support. Existing R3/R4 dispositions are reused only under exact blob identity; R5 adds twelve explicit fail-closed URL holds; no held or attributed quotation is promoted into the paraphrase-only reader."
+  },
+  "publicationBoundary": {
+    "part5EntryCitationPassComplete": true,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "nativeSourceAuthorityReconciliationComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": "Compose a separate current V12 authority from immutable V11 plus this Part V native-authority citation receipt."
+}
