@@ -1,0 +1,87 @@
+{
+  "scope": "1 Corinthians 11:2-16 P0 open-preview delta audit",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "branch": "agent/1cor11-p0-open-preview-delta-20260810",
+  "rules": {
+    "do_not_request_user_if_agent_can_access": true,
+    "do_not_infer_current_edition_from_old_edition": true,
+    "secondary_quote_is_not_primary_evidence": true,
+    "no_grade_change_without_direct_evidence": true,
+    "product_write": false,
+    "ui_implementation": false,
+    "site_publication": false,
+    "publication_hold": true
+  },
+  "p0": {
+    "fee_revised_2014": {
+      "current_edition_identity": "DIRECT_CONFIRMED",
+      "full_11_2_16_section": "HOLD",
+      "secondary_revised_page_quotes": "DISCOVERY_ONLY",
+      "remaining_target": "approx pp. 542-586 plus notes/addendum"
+    },
+    "thiselton_nigct_2000": {
+      "shorter_commentary_derives_from_nigct": "DIRECT_BIBLIOGRAPHIC_CONFIRMED",
+      "core_position_discovery": "PARTIALLY_REDUCED_UNCERTAINTY",
+      "technical_section": "HOLD",
+      "remaining_target": "pp. 800-847 plus notes"
+    },
+    "garland_becnt_2025_second_edition": {
+      "current_edition_identity": "DIRECT_CONFIRMED",
+      "updated_throughout": "DIRECT_PUBLISHER_CONFIRMED",
+      "section_title": "Headdress in Public Worship (11:2-16)",
+      "continuity_from_2003": "HOLD_DO_NOT_ASSUME",
+      "full_current_section": "HOLD"
+    },
+    "ciampa_rosner_pntc_2010": {
+      "macro_thesis": "PARTIALLY_CLOSED_DIRECT_CIAMPA_SUMMARY",
+      "macro_nodes": [
+        "glory_honor_shame",
+        "Roman_social_significance_of_female_headcoverings",
+        "public_church_meetings",
+        "husbands_wives_shame_frame",
+        "Genesis_1_2_defends_and_relativizes_distinctions"
+      ],
+      "detailed_section": "HOLD",
+      "remaining_target": "pp. 503-540 plus notes"
+    }
+  },
+  "marginal_information_priority": [
+    "Garland_2025 ~= Fee_Revised_2014",
+    "Thiselton_2000 ~= Ciampa_Rosner_2010"
+  ],
+  "current_scholarship_ingress": {
+    "janelle_peters_2025": {
+      "title": "Paul and the Citizen Body: Egalitarian Athletics and Veiling Instructions in 1 Corinthians",
+      "publisher": "Mohr Siebeck",
+      "series": "WUNT II 625",
+      "project_model_grade": "C_SERIOUS_CURRENT_MODEL",
+      "open_antecedent": "Creation, Angels, and Gender in Paul, Philo, and the Dead Sea Scrolls (Open Theology 7, 2021)",
+      "pressure_nodes": [
+        "material_veiling",
+        "creation",
+        "exousia_and_bodily_control",
+        "angels_without_required_Watchers",
+        "11_11_12_interdependence",
+        "Roman_Greek_citizenship_and_prestige",
+        "status_reconfiguration"
+      ]
+    }
+  },
+  "core_grades_changed": false,
+  "core_synthesis": {
+    "material_covering": "B_HIGH_LEADING",
+    "hair_only": "C_SERIOUS_ALTERNATIVE",
+    "kephale_headship_authority": "B_LEADING",
+    "kephale_source_only": "C_VIABLE",
+    "exousia_woman_subject": "A_SYNTAX",
+    "exousia_referent": "B_C",
+    "holy_liturgical_angels": "B_LEADING",
+    "watchers": "C",
+    "roman_capite_velato_background": "A",
+    "exact_corinth_trigger": "B_RECONSTRUCTION",
+    "wives_vs_all_women": "OPEN_B_C",
+    "women_pray_prophesy_11_5": "A",
+    "mutual_interdependence_11_11_12": "A"
+  }
+}
