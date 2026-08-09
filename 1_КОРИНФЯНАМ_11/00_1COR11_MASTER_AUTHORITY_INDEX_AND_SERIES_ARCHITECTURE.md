@@ -67,6 +67,7 @@
 | **18** | `18_THEOLOGICAL_SYNTHESIS_CREATION_CHRISTOLOGY_ECCLESIOLOGY.md` | Догматический синтез: Троица, антропология пола, экклезиология и предстояние пред Ангелами | `ACTIVE` |
 | **19** | `19_CORINTH_ARCHAEOLOGY_CULTS_AND_POPULAR_MYTHS_DOSSIER.md` | Археология Коринфа (ASCSA), разоблачение мифа о 1 000 проститутках, святилище Деметры, Исида, Дионис | `ACTIVE` |
 | **20** | `20_GRECO_ROMAN_VEILING_LAW_AND_FASHION_MONOGRAPH_DOSSIER.md` | Греко-римское право, брак *sine manu*, *tegidion* (Ллевеллин-Джонс), семиотика одежды (Олсон, Треггиари) | `ACTIVE` |
+| **21** | `21_CLAIM_CALIBRATION_AND_FAIL_CLOSED_AUDIT.md` | **Калибровочный overlay** к claim-ledger: пересмотр переоценённых тезисов (κεφαλή, природа покрытия, ангелы), соответствие fail-closed | `ACTIVE / OVERLAY` |
 | **DATA** | `../data/1cor11-research-manifest.json` | Машиночитаемый манифест доказательств, источников и статусов | `ACTIVE` |
 
 ### Публикационные статьи серии (Site-Ready Drafts)
