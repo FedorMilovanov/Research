@@ -1,0 +1,58 @@
+{
+  "scope": "Roman primary evidence for head coverings relevant to 1 Corinthians 11:2-16",
+  "date": "2026-08-10",
+  "status": "PRIMARY_EVIDENCE_CONTROL_RESEARCH_ONLY_PUBLICATION_HOLD",
+  "primary_witnesses": {
+    "lucretius_drn_5_1198ff": {
+      "datum": "covered-head posture at altars recognizable as conventional piety",
+      "relation_to_paul": "pre-Paul",
+      "grade": "A_PRIMARY_TEXT"
+    },
+    "virgil_aeneid_3_403_409": {
+      "datum": "garment over hair/head during sacrifice with omen-protection rationale",
+      "relation_to_paul": "pre-Paul Augustan",
+      "grade": "A_PRIMARY_TEXT"
+    },
+    "livy_1_18_7_10": {
+      "datum": "augur capite velato while praying and seeking divine signs",
+      "relation_to_paul": "Augustan",
+      "grade": "A_PRIMARY_TEXT"
+    },
+    "plutarch_roman_questions_10": {
+      "datum": "Roman men cover heads in divine service; toga around ears; prayer/divination rationale",
+      "relation_to_paul": "near-post-Paul",
+      "grade": "A_AS_PLUTARCH_STATEMENT"
+    },
+    "plutarch_roman_questions_11_13": {
+      "datum": "uncovered-head cult exceptions for Saturn and Honor",
+      "grade": "A_PRIMARY_COUNTEREXAMPLE"
+    },
+    "plutarch_roman_questions_14": {
+      "datum": "women more usually public covered, men uncovered; funeral inversion",
+      "grade": "B_HIGH_HISTORICAL_NORM"
+    }
+  },
+  "visual_archaeological_controls": {
+    "augustus_corinth_sacrificant": "A_B_PUBLISHED_ARCHAEOLOGY",
+    "ara_pacis_mixed_female_head_state": "A_B_VISUAL_CORPUS",
+    "eumachia_female_ritual_covering": "A_B_VISUAL_CORPUS",
+    "corinthian_elite_female_bareheaded_portraits": "A_B_VISUAL_CORPUS"
+  },
+  "grades": {
+    "roman_capite_velato_background": "A",
+    "roman_ritual_head_state_has_exceptions": "A",
+    "corinth_local_visual_familiarity": "B_HIGH_A_B",
+    "roman_female_public_covering_norm": "B_HIGH_TENDENCY",
+    "roman_female_one_universal_veil_rule": "REJECTED",
+    "v4_exact_capite_velato": "B_C",
+    "exact_corinth_trigger": "RECONSTRUCTION_LAYER"
+  },
+  "blocked_overclaims": [
+    "all Roman male worship was capite velato",
+    "all respectable Roman women always veiled",
+    "unveiled woman universally equals prostitute or adulteress",
+    "material covering automatically proves exact Roman rite",
+    "real Roman background automatically proves Nommik or Finney causal trigger"
+  ],
+  "core_synthesis_changed": false
+}
