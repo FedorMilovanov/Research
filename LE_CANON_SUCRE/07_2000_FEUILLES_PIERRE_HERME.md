@@ -2,13 +2,13 @@
 
 ## Проверяемый вопрос
 
-Когда создан `2000 Feuilles`; почему он так называется; чем он технически отличается от классического mille-feuille; какие элементы можно подтвердить напрямую у Hermé?
+Когда создан `2000 Feuilles`; почему он так называется; чем он технически отличается от классического mille-feuille; можно ли авторизованным источником закрыть цепь Ladurée `Millefeuille praliné` → Maison Pierre Hermé Paris → `2000 Feuilles`?
 
 ## Краткий статус
 
-`CONFIRMED current signature/composition / STRONG DIRECT-INTERVIEW MILLENNIUM RENAMING CONTEXT / LADUREE MILLEFEUILLE-PRALINE PRECURSOR = STRONG AUTHOR-TEXT LEAD BUT AUTHORIZED SOURCE STILL NEEDED`
+`CONFIRMED CURRENT SIGNATURE/COMPOSITION / STRONG DIRECT-INTERVIEW MILLENNIUM RENAMING CONTEXT / AUTHORED LADUREE PRECURSOR LEAD IDENTIFIED / AUTHORIZED BOOK IDENTITIES NOW PRIMARY-PARTICIPANT CLOSED / EXACT PASSAGE STILL NOT AUTHORIZED-SURFACE VERIFIED`
 
-## Official Pierre Hermé sources
+## Official Pierre Hermé sources — current object
 
 Pierre Hermé — L'Art de la Pâtisserie:
 https://www.pierreherme.com/fr/art-de-la-patisserie
@@ -18,7 +18,11 @@ Current house material places 2000 Feuilles among signature/fetish creations.
 Current product page:
 https://www.pierreherme.com/fr/2000-feuilles-entremets.html
 
-Current official composition centers on caramelized puff pastry, Piedmont-hazelnut praline feuilleté and praline mousseline.
+The current official composition centers on:
+
+`caramelized puff pastry + Piedmont-hazelnut praline feuilleté + praline mousseline`.
+
+The Maison describes the dessert through a deliberate play between soft praline mousseline and crisp caramelized pastry / feuilleté praline.
 
 ## Direct participant interview — composition / texture
 
@@ -27,65 +31,109 @@ https://gourmet.galerieslafayette.com/b/pierre-herme-et-pierre-sang-une-rencontr
 
 Hermé directly describes the 2000 Feuilles logic through caramelized puff pastry, Piedmont hazelnut praline feuilleté, praline mousseline and crisp textural contrast.
 
-This is strong participant evidence for the current concept/composition.
+This is strong participant evidence for current concept/composition.
 
-## Direct-interview context — millennium renaming now materially strengthened
+## Direct-interview context — millennium renaming materially strengthened
 
 Gault&Millau:
 https://fr.gaultmillau.com/fr/news/pierre-herme-en-cinq-desserts
 
-The article is structured around Pierre Hermé personally recounting five creations and reproduces his direct comments. In the `2000 Feuilles` section it explains that, on the eve of the year 2000, Hermé was repeatedly asked what cake he would create for the millennium; his response was a reworked mille-feuille, **renamed `2000 Feuilles`**, which he says remains successful twenty-five years later.
+The article is structured around Pierre Hermé personally recounting five creations. In the `2000 Feuilles` section it places the object in the millennium context: on the eve/turn of the year 2000 Hermé was repeatedly asked what cake he would make for the new millennium, and the mille-feuille was reworked/reframed under the `2000 Feuilles` name.
 
 Evidence decision:
 
-- `2000 Feuilles` name linked to the turn of the millennium = **STRONG DIRECT-INTERVIEW CONTEXT**, no longer merely an unauthored inference from the number `2000`;
-- exact calendar day of first sale / catalogue appearance = still `UNRESOLVED`;
-- do not infer that `2000` means literally two thousand pastry layers.
+- name linked to the millennium = **STRONG DIRECT-INTERVIEW CONTEXT**;
+- exact first commercial sale / catalogue day = `UNRESOLVED`;
+- `2000 = literally 2,000 pastry layers` = rejected.
 
-Safe bounded wording now:
+Safe bounded wording:
 
-> In a Gault&Millau interview context, Pierre Hermé's 2000 Feuilles is presented as a mille-feuille reworked and renamed for the turn of the year 2000; the exact first commercial catalogue/date remains to be pinned.
+> In a Gault&Millau interview context centered on Pierre Hermé's recollections, 2000 Feuilles is linked to the turn-of-the-millennium reframing of his mille-feuille; the exact first commercial catalogue/date remains to be pinned.
 
-## Ladurée precursor — important author-text lead, but source custody not yet clean
+## Ladurée precursor — strong authored lead, exact passage still custody-limited
 
-A searchable digital copy of Pierre Hermé's first-person *Dictionnaire amoureux de la pâtisserie* contains a highly specific recollection: Hermé says he created the dessert **at Ladurée**, where it was called `Millefeuille praliné`, and later renamed it when establishing Maison Pierre Hermé Paris for the year 2000. The passage also explains the `doublement feuilleté` idea through light puff pastry plus crisp gavotte/crêpe-dentelle elements in the praline.
+A searchable digital copy of a first-person Pierre Hermé author text contains a highly specific recollection that the precursor was created **at Ladurée** under the name `Millefeuille praliné` and was later renamed in the context of Maison Pierre Hermé Paris / the year 2000.
 
-Current searchable copy is hosted on a user-upload platform rather than an authorized publisher surface. Under Research policy this gives a **STRONG AUTHOR-TEXT / ACQUISITION LEAD**, but it is not used as the sole quote-safe source and the copyrighted passage is not reproduced here.
+A second searchable copy of Hermé's autobiographical writing independently mentions introducing a `millefeuille praliné` among the creations he brought to Ladurée.
 
-Current status:
+However, the copies exposing those passages are user-upload surfaces rather than authorized publisher/library access. Under Research policy they remain **STRONG AUTHOR-TEXT ACQUISITION LEADS**, not quote-safe evidence.
 
-- `Ladurée precursor called Millefeuille praliné` = `PROBABLE / STRONG AUTHOR-TEXT LEAD`;
-- `renamed around creation of Maison Pierre Hermé Paris / year 2000` = supported independently by the Gault&Millau direct-interview context for the millennium renaming, but the exact Ladurée→Maison sequence still needs authorized book/publisher verification;
-- exact earlier Ladurée creation year = `UNRESOLVED`.
+The copyrighted passage is deliberately not reproduced here.
 
-Priority is to locate an authorized publisher excerpt, library full object available under legitimate access, or a second direct Hermé interview repeating the Ladurée precursor history.
+## Authorized book identity — now cleanly pinned on Pierre Hermé's own site
 
-## Independent publisher context
+The acquisition target is no longer an unidentified PDF.
 
-Éditions de La Martinière author pages for Pierre Hermé's books describe 2000-feuilles as one of the creations responsible for his international reputation and independently preserve the career sequence Fauchon → Ladurée → own maisons:
-https://www.editionsdelamartiniere.fr/livres/macaron-2
+### *Toutes les saveurs de la vie*
 
-This supports significance/career context but does not by itself prove the exact creation sequence.
+Official Maison page:
+https://www.pierreherme.com/fr/cadeaux/livre-toutes-les-saveurs-de-la-vie.html
+
+Pierre Hermé Paris identifies:
+
+- Pierre Hermé as the author/subject;
+- collaboration with Catherine Roig;
+- **Éditions Buchet-Chastel**;
+- publication in **2022**;
+- **311 pages**;
+- the book as Hermé's own retrospective account of his career, including the path through Lenôtre/Fauchon and the creation of Maison Pierre Hermé Paris.
+
+BnF independently catalogues *Toutes les saveurs de la vie* under Pierre Hermé / Buchet-Chastel / 2022.
+
+### *Dictionnaire amoureux de la pâtisserie*
+
+Official Maison page:
+https://www.pierreherme.com/fr/dictionnaire-amoureux-patisserie.html
+
+Pierre Hermé Paris identifies:
+
+- Pierre Hermé + Julie Mathieu;
+- **Éditions Plon**;
+- **2025**;
+- **528 pages** on the Maison product record.
+
+BnF independently catalogues the same work as Pierre Hermé, *Dictionnaire amoureux de la pâtisserie*, Plon, 2025.
+
+Evidence decision:
+
+- identity, authorship, publisher and edition/year of the two authorial acquisition targets = `A3/A2 PRIMARY-PARTICIPANT + BNF-BIBLIOGRAPHICALLY CLOSED`;
+- exact Ladurée→`Millefeuille praliné`→`2000 Feuilles` passage on an **authorized readable surface** = still `ACCESS/LOCATOR_HOLD`;
+- the unauthorized searchable copies may guide page/entry acquisition, but cannot replace legitimate custody.
+
+This is an important improvement: the research target is now a **specific authorized edition**, not an amorphous web quotation.
+
+## Independent publisher/career context
+
+Éditions de La Martinière material on Pierre Hermé's books and career preserves the broad professional sequence Fauchon → Ladurée → own maisons and treats 2000 Feuilles as one of the creations associated with his international reputation.
+
+This supports significance/career context but does not by itself close the exact Ladurée precursor sequence.
 
 ## Ответы, отрицания и альтернативные объяснения
 
 Do **not** infer that `2000` means two thousand pastry layers.
 
-Do **not** state a precise launch day/year solely from current catalogues.
+Do **not** state a precise launch day solely from current catalogues.
 
-Current evidence securely supports:
+Current evidence supports:
 
-- the object is a Pierre Hermé signature/fetish;
-- it is deliberately related to mille-feuille;
-- praline, caramelized feuilletage and additional crisp texture are central;
-- the naming is genuinely tied to the turn of the millennium in a direct-interview context;
-- a first-person authored source gives a Ladurée `Millefeuille praliné` precursor, but the accessible copy's custody is not clean enough for quote-safe publication.
+- official current signature/fetish status;
+- official composition and texture logic;
+- real millennium naming context through direct-interview reporting;
+- a strong first-person authored Ladurée `Millefeuille praliné` precursor lead;
+- exact authorized identities of the 2022 Buchet-Chastel and 2025 Plon books in which acquisition can be pursued.
+
+Still unresolved:
+
+- exact earlier Ladurée creation year;
+- exact page/entry in the authorized edition;
+- exact first Maison sale/catalogue appearance;
+- whether a period Ladurée/Maison menu survives.
 
 ## Анализ и границы допустимой формулировки
 
 Safe:
 
-> Pierre Hermé's own materials define 2000 Feuilles through caramelized puff pastry, hazelnut-praline feuilleté and praline mousseline. A direct-interview account published by Gault&Millau links the `2000 Feuilles` renaming to the turn of the millennium. An authored Hermé text additionally points to an earlier Ladurée `Millefeuille praliné` precursor, but that specific source still needs authorized-source acquisition before it is used as quote-safe evidence.
+> Pierre Hermé's own materials define 2000 Feuilles through caramelized puff pastry, hazelnut-praline feuilleté and praline mousseline. Gault&Millau's interview framing links its renaming to the turn of the millennium. First-person Hermé book text additionally provides a strong lead to an earlier Ladurée `Millefeuille praliné`, and the relevant Hermé-authored editions are now cleanly identified through the Maison and BnF; the exact passage still needs authorized-page acquisition before quote-safe use.
 
 Unsafe:
 
@@ -95,42 +143,43 @@ Unsafe:
 
 > The exact commercial launch date was 1 January 2000.
 
-Unsafe until authorized source acquisition:
+Unsafe until authorized page acquisition:
 
-> The Ladurée precursor chronology is fully primary-closed in this corpus.
+> The Ladurée precursor sequence is fully primary-closed and directly quoted from the authorized edition.
 
 ## Хронология
 
-- pre-2000 / Ladurée period — `Millefeuille praliné` precursor according to a strong first-person author-text lead; authorized source still to acquire;
-- eve/turn of **2000** — direct-interview context supports renaming/reframing as `2000 Feuilles` for the millennium;
+- Ladurée period — `Millefeuille praliné` precursor according to strong first-person author-text leads; exact authorized page still to acquire;
+- creation of Maison Pierre Hermé Paris / millennium period — authorized career chronology exists; exact precursor-to-Maison transition date remains to pin;
+- eve/turn of **2000** — direct-interview context supports millennium renaming/reframing as `2000 Feuilles`;
 - current — official house signature/fetish status and composition.
 
 ## Anatomy / technique
 
 Research-ready current logic:
 
-`caramelized feuilletage → praline feuilleté / crisp crêpe-dentelle-type layer → praline mousseline`.
+`caramelized feuilletage → praline feuilleté with fine crisp crêpe-dentelle/gavotte-type texture → praline mousseline`.
 
-The authored precursor lead is especially important because it suggests the name is a conceptual pun/reframing around an already double-textured mille-feuille rather than a literal layer count. Exact historical formula should still be checked against an authorized period source before claiming continuity.
+The authored precursor lead matters because it suggests a conceptual doubling of crisp/laminated textures, not a literal count of two thousand layers. Historical continuity of the formula still needs an authorized period source.
 
 ## Industry influence
 
-The dossier should compare 2000 Feuilles to classical mille-feuille as an example of a modern chef converting a canonical technique into an authored signature. Influence claims beyond Hermé's own status still need independent professional sources.
+The dossier should compare 2000 Feuilles with classical mille-feuille as an example of a modern chef converting a canonical construction into an authored signature. Independent professional evidence is still needed for broader influence claims.
 
 ## Права, архив и публикационные HOLD
 
-Current Hermé product imagery is reference-only. Modern copyrighted book pages must not be reproduced from unauthorized uploads.
+Current Hermé product imagery is reference-only unless licensed. Modern copyrighted book pages must not be reproduced from unauthorized uploads.
 
-Potential authentic visual targets:
+Potential authentic/period targets:
 
+- late-Ladurée catalogue/menu naming `Millefeuille praliné`;
 - first Pierre Hermé Paris catalogue naming `2000 Feuilles`;
-- late-Ladurée menu/catalogue naming `Millefeuille praliné`, if found;
-- early Maison menu/catalogue around 1998–2001;
-- contemporary press advertisement/review from launch period.
+- 1997–2001 press review/ad/menu;
+- authorized page/entry from the 2022 Buchet-Chastel or 2025 Plon Hermé-authored works.
 
 ## Следующее проверяемое действие
 
-1. Find an authorized publisher/library source for the first-person Ladurée `Millefeuille praliné` → `2000 Feuilles` passage.
-2. Search Pierre Hermé/Ladurée catalogues and press around 1997–2001 for earliest named appearances.
-3. Search French and Japanese direct interviews for the Ladurée precursor wording.
-4. Distinguish `creation of precursor`, `renaming`, `first Maison sale` and `first catalogue appearance` rather than forcing them into one date.
+1. Acquire the relevant passage legally from the identified **Buchet-Chastel 2022** and/or **Plon 2025** editions through publisher preview, BnF/library access or another authorized excerpt.
+2. Search Ladurée catalogues/menus from Hermé's tenure for `millefeuille praliné`.
+3. Search Maison Pierre Hermé Paris catalogues and French/Japanese press around 1997–2001 for the earliest `2000 Feuilles` appearance.
+4. Distinguish `precursor creation`, `renaming`, `first Maison sale`, `first press mention` and `first catalogue appearance` rather than compressing them into one date.
