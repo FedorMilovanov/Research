@@ -1,7 +1,7 @@
 # Мастер-индекс и карта серии 1 Кор. 11:2–16
 
 **Дата:** 9 августа 2026 г.
-**Статус ветки:** `RESEARCH-ACTIVE / DOSSIERS-1-to-17 LAID / BOOK-ACQUISITION PHASE-1 / NO-PUBLICATION-DRAFT YET`
+**Статус ветки:** `RESEARCH-ACTIVE / DOSSIERS-1-to-36 LAID / BOOK-ACQUISITION PHASE-1 / NO-PUBLICATION-DRAFT YET`
 **Ветка:** `arena/019fe62b-research`
 **Каноническая папка:** `1КОРИНФЯНАМ_11_ПОКРЫВАЛО/` (основной entrypoint по координации от Агента А и после слияния).
 
@@ -35,6 +35,24 @@
 | 15 | `15_IMAGE_GLORY_AND_INTERDEPENDENCE_THEOLOGY.md` | Богословие образа, славы и взаимозависимости | DOSSIER | εἰκών/δόξα; ἐκ/διά; Быт.1–2 vs Быт.3; Еф.5/Кол.3; ограничитель плήν. |
 | 16 | `16_HERMENEUTICS_AND_APPLICATION_TODAY.md` | Герменевтика применения сегодня | WORKING / PASTORAL-HOLD | Универсальный принцип vs культурная форма; 3 евангелические позиции; пастырские следствия. |
 | 17 | `17_RUSSIAN_ORTHODOX_EVANGELICAL_BAPTIST_RECEPTION.md` | Русская православная и евангелическо-баптистская рецепция | WORKING / ARCHIVE-HOLD | Златоуст/Феофилакт/Феофан/Лопухин/Кассиан; Синодальный перевод; Братский листок; русский быт. |
+| 19 | `19_EVIDENCE_LEVELS_AND_CLAIM_CALIBRATION_STANDARD_2026-08-09.md` | Стандарт уровней доказательности | STANDARD | 9-уровневая шкала по образцу Быт.6. |
+| 20 | `20_SCOPE_AND_BOUNDARIES_2026-08-09.md` | Скоуп и границы | FOUNDATION | Точные границы отрывка и терминология. |
+| 21 | `21_SOURCE_WEIGHT_AND_ACQUISITION_PLAN_2026-08-09.md` | Вес источников и план приобретения | FOUNDATION | Правила веса и дедупликации. |
+| 22 | `22_COMMENTATOR_LANDSCAPE_2026-08-09.md` | Ландшафт комментаторов | PASS-1 | Консервативный/либеральный/эгалитарный ряд. |
+| 23 | `23_QUESTION_MATRIX_AND_CLAIM_LEDGER_2026-08-09.md` | Матрица Q1–Q10 и claim-ledger | LEDGER | Вопросы и баланс доказательств. |
+| 24 | `24_ADVERSARIAL_AND_LIBERAL_READINGS_2026-08-09.md` | Адверсариал/либеральные прочтения | PASS-1 | Сильные контраргументы (Walker, Cope, Wire). |
+| 25 | `25_PATRISTIC_PRIMARY_SOURCES_2026-08-09.md` | Святоотеческие первоисточники | PASS-1 | Ссылки на полные ANF и NPNF. |
+| 26 | `26_APPLICATION_DEBATE_2026-08-09.md` | Применение сегодня — дебаты | PASS-1 | Три основные позиции. |
+| 27 | `27_LOGIC_AND_RHETORIC_2026-08-09.md` | Логика и риторика (дубль файла 08) | SUPPLEMENT | Сохранён как supplement. |
+| 28 | `28_VERSE_BY_VERSE_EXEGESIS_2026-08-09.md` | Экзегеза стих-за-стихом (дубль файла 14) | SUPPLEMENT | Сохранён как supplement. |
+| 29 | `29_WOMEN_PRAYING_VS_1COR14_34_2026-08-09.md` | 11:5 vs 14:34 (дубль файла 10) | SUPPLEMENT | Пять стратегий. |
+| 30 | `30_OT_AND_JEWISH_BACKGROUND_SUPPLEMENT_2026-08-09.md` | ВЗ/еврейский фон (supplement к 04) | SUPPLEMENT | Расширенный фон. |
+| 31 | `31_PARALLEL_CORPUS_COORDINATION_2026-08-09.md` | Координация корпусов | COORD | Карта владения агентами. |
+| 32 | `32_INTEGRATION_SUMMARY_AND_CANONICAL_INDEX_2026-08-09.md` | Итог интеграции и канонический индекс | SYNTHESIS | Карта слияния трёх агентов. |
+| 33 | `33_PHASE1_COMMENTATOR_BASE_STATUS_2026-08-09.md` | Статус комментаторской базы фазы 1 | CLOSEOUT | Что собрано; Q1–Q10 баланс. |
+| 34 | `34_Q5_ANGELS_DEEP_DOSSIER_2026-08-09.md` | Q5 ангелы — углублённое досье | CRUX | Кумран (1QSa, CD), карта 7 толкований. |
+| 35 | `35_ARTICLE_FRAMEWORK_SERIES_PLAN_2026-08-09.md` | Каркас 7 статей сайта | PLANNING | Хартия ARTICLE-STANDARD; гейты. |
+| 36 | `36_POSITION_SHEET_AND_EVIDENCE_BALANCE_2026-08-09.md` | **Сводный позиционный лист Q1–Q10** | **SYNTHESIS / OWNER-REVIEW** | Консервативный центр и оставшиеся открытые вопросы. |
 
 Досье, обозначенные как `DOSSIER`, содержат substantive исследовательский контент. Файлы `FOUNDATION/TEMPLATE/REGISTRY/COORD/MERGE-DOC/STYLE-RULES` — инфраструктурные.
 
