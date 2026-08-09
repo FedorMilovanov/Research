@@ -1,218 +1,78 @@
 # LE CANON SUCRÉ — master research plan
 
-**Status:** `ACTIVE / WAVE 2 AUDITED`  
-**Authority:** `00_CURRENT_AUTHORITY.md`
+**Status:** `WAVE 2 TERMINAL / RESEARCH COMPLETE FOR CURRENT SCOPE`  
+**Authority:** [`00_CURRENT_AUTHORITY.md`](00_CURRENT_AUTHORITY.md)  
+**Terminal gate map:** [`00_TERMINAL_CLOSURE_MATRIX_2026-08-10.md`](00_TERMINAL_CLOSURE_MATRIX_2026-08-10.md)
 
-## Research question
+## Objective achieved
 
-For each candidate, establish separately:
+Wave 2 established a fail-closed multilingual evidence corpus for 15 candidate canonical French pâtisseries. The research task is complete when the Canon can distinguish documented fact, participant tradition, retrospective attribution, unresolved chronology, visual custody and legal locator gaps without inventing certainty.
 
-1. earliest currently located **name/use** without confusing first-found with invention;
-2. earliest surviving **recipe or professional description**;
-3. creator/house attribution and its evidentiary basis;
-4. evolution of architecture and technique;
-5. geography, transmission and reception;
-6. later author/house reinterpretations;
-7. myths, participant traditions and conflicting chronologies;
-8. modern canonical recognition;
-9. authentic visual-document candidates and item-level rights;
-10. exact wording that can or cannot be transferred to Product.
+The purpose of the wave was **not** to prove an absolute inventor/date for every historical object. Historical questions that survived targeted lawful acquisition are now terminalized in the closure matrix with explicit safe wording.
 
-The method is adversarial. Every attractive origin story receives a falsification pass. A later myth can be historically important without becoming a true origin event.
+## Controlling method
 
-## Source priority
+1. `earliest directly verified in this corpus` is not `invented first in history`.
+2. `route resolved != content verified`.
+3. A TOC/named entry can close the existence of a professional named form without closing recipe wording or geometry.
+4. A transcription can close a bounded text layer while the exact facsimile remains visual custody work.
+5. Rights do not prove edition identity, and edition identity does not prove Product image rights.
+6. Negative search coverage never proves absence.
+7. Access restrictions are never bypassed.
+8. Participant/institutional statements about older events remain attributed unless independently primary-closed.
+9. Conflicting sources stay conflicting when no contemporaneous record resolves them.
+10. A narrow unresolved locator/year/number is non-blocking when the canonical narrative can omit it safely.
 
-### Primary / near-primary historical objects
+## Terminalized former P0 lanes
 
-- BnF / Gallica / RetroNews;
-- Bibliothèque Sainte-Geneviève and French municipal/university libraries;
-- Archives nationales / Archives de Paris / Archives départementales;
-- INPI / historical BOPI / trademark registers;
-- Journal officiel / DILA open data / old JORF / JOAFE where legally relevant;
-- period newspapers, menus, advertisements, cookbooks, catalogues, trade journals and legal records;
-- contemporary participant catalogues/press only for contemporary or explicitly participant claims.
+All former P0 acquisition lanes are classified in the terminal matrix. Important release decisions include:
 
-### Institutional / participant
+- **Acton:** first-edition bibliographic match is sufficiently closed; exact p.431/p.434 image leaves remain visual custody only. The third-edition `rdz664vd/b21531869` conflation is permanently rejected.
+- **Bailleux:** 1860 named Religieuse/Baba/Savarin entries are closed at institutional-TOC level; the 1856-vs-1860 delta is terminal unresolved and must not be back-projected.
+- **Éclair:** 1848 French locator, 1856 professional recipe locator and 1861 U.S. reception are closed at bounded claim level; page images are optional custody work.
+- **Baba:** Gouffé 1873 remains earliest exact rum-specific page directly inspected in corpus; absolute first rum use is terminal unresolved.
+- **Saint-Honoré:** Gouffé architecture plus Lacam retrospective 1840 account are sufficient for safe attributed narrative; direct Lacam leaves are non-blocking visual work.
+- **Opéra:** Dalloyau 1955 modern line and an older 1899 name lead can coexist; identity between them remains prohibited to infer.
+- **Tarte au Citron:** transnational early architecture is closed; exact French codification/meringue firsts remain terminal unresolved; Genin technique is authorized by 2010, while exact 2009 date stays later-reporting only.
+- **Tatin:** documentary fame, printed transmission, late accident myth and pre-existing inversion technique are separated and terminalized; missing original leaves do not justify keeping the entire dossier open.
+- **Paris-Brest:** cake chronology terminates as an honest 1909–1910 conflict; do not manufacture reconciliation.
+- **Canelé / Kouign-Amann / Tropézienne legal lanes:** bounded historical protection/institutionalization claims are separated from exact legal-number custody. Missing numbers are non-blocking where the exact legal claim is omitted or attributed.
+- **2000 Feuilles:** modern identity/composition and millennium context are sufficient; exact Ladurée precursor passage is a non-blocking authorized-page hold.
+- **Mont-Blanc:** named 1896 form before Angelina is closed; earlier named forms are optional extension work.
+- **Tropézienne / Micka:** 1955 creation vs 1956 filming is closed; Polish origin is bounded to sourced reporting, with no invented civil/migration detail.
+- **Galette:** modern Élysée ritual is closed; deep Saturnalia continuity remains prohibited as a direct chain.
 
-- official maisons and professional bodies;
-- authorized publishers for author-held modern source identity and scope;
-- Comité Colbert;
-- Région Nouvelle-Aquitaine and local public institutions;
-- Élysée / DILA / BnF / archive services;
-- French professional pâtisserie organizations;
-- university/library digitization projects such as SPbPU where they expose legitimate bibliographic/TOC metadata;
-- Wellcome Collection / University of Leeds and comparable institutional full-object custody;
-- INA / film institutions.
+## Supersession rule
 
-### Independent secondary / scholarly
+Any older section titled `Current P0 acquisition queue`, `next action`, `Следующее проверяемое действие`, `priority target`, `page pending` or equivalent in Wave 2 dossiers is retained as audit history but **does not remain a release gate** after 2026-08-10.
 
-- university historians and institutional research services;
-- Le Monde, Gault&Millau, Académie du Goût;
-- specialist historical/professional research used as locator generators.
+For release gating, the only current state is:
 
-Secondary sources can discover precise primary targets, expose conflicts and document reception. They do not automatically close disputed origin events.
+1. `00_CURRENT_AUTHORITY.md`;
+2. `00_TERMINAL_CLOSURE_MATRIX_2026-08-10.md`;
+3. existing master claim/chronology/rights evidence ledgers as supporting records;
+4. exact-head repository integrity and PR state.
 
-## International archive pass
+A newly discovered primary source opens **Wave 3** rather than reclassifying Wave 2 as unfinished.
 
-Use non-French sources only when they add evidence:
+## Remaining work before PR can leave draft
 
-- United States: Internet Archive, University of Michigan, Library of Congress, NYPL menus, institutional historic-newspaper repositories;
-- United Kingdom: Wellcome/Leeds, historical cookery books and professional manuals where they clarify transnational pastry genealogy;
-- Japan: official maison timelines, NDL and professional pâtisserie press;
-- Italy: Mont-Blanc / chestnut-dessert genealogy;
-- Germany/Austria/Switzerland: historical pastry and European transmission;
-- Poland: Alexandre/Aleksander Micka biography/migration and Polish context;
-- Breton/regional corpora for Kouign-Amann;
-- other institutional digitization only when it provides legitimate metadata/access unavailable elsewhere.
+There is no remaining historical acquisition marathon in Wave 2. Only control-plane convergence remains:
 
-Catalogues such as WorldCat/HathiTrust/Google Books may be locators; a catalogue card is not the acquired object.
+1. anti-drift sweep against terminal authority/matrix;
+2. exact-head `Repository authority integrity` completed with `success`;
+3. PR remains mergeable;
+4. unresolved review threads = 0;
+5. PR entrypoint accurately describes terminal state.
 
-## Corpus-bound evidence rule
+If all five pass, mark PR #154 ready for review. Do not merge automatically from Research closure alone; merge remains a separate repository decision.
 
-Use wording such as **`earliest directly verified in this corpus`** when the research has not established absolute priority. Negative search coverage never proves historical absence.
+## Product handoff boundary
 
-Examples now controlling:
+Research completion does not authorize Product changes or archive-image publication. A Product handoff must choose exact claims and exact assets, then close any item-specific licence/credit/crop/bytes requirements in that transaction.
 
-- Éclair: 1848 is the earliest current French pastry locator, not an invention date.
-- Religieuse: **Bailleux 1860 is the earliest directly verified professional named entry/section in the current corpus; Gouffé 1873 remains the earliest exact recipe/form pages directly inspected.** The 1860 content page is access-restricted and the 1856 first-edition delta remains open.
-- Tarte au Citron: Acton **1845 first-edition-based text** strongly maps shell + lemon-filling architecture, with the same form independently visible in U.S. print by **1850**. Facsimile custody is deliberately separate: Wellcome/Leeds `rdz664vd` / IA `b21531869` is explicitly **third edition**; `z22c8gru` is a separate 1845, 760-image, `xxxii + 683 pages` public-domain **edition-match candidate** whose exposed metadata does not state the edition. Exact first-edition p.431/p.434 custody therefore remains `EDITION_MATCH_HOLD + PAGE_IMAGE_HOLD`. Gérard **1877** closes a French-language `tourte au citron` name witness, not its recipe architecture. For Genin, authorized author-source custody for technique is closed by the **2010 Genin/Astier book**, while the exact `created in 2009` statement remains B1-probable until a Genin-controlled 2009 source is found.
-- Mont-Blanc: named Farmer 1896 is primary-closed before Angelina; earlier named European use remains open.
-- Kouign-Amann: Scordia / Douarnenez / c.1860 is a strong local tradition, but independent reporting on the Douarnenez association's own historical research explicitly noted the absence of an incontestable written trace; exact early evidence remains open. Association/protection activity and an INPI filing around **1999** are independently corroborated by *Le Monde* 2001, while exact register particulars remain open.
+Modern copyrighted maison/press/book images remain reference-only unless licensed. Generated editorial visuals remain explicitly modern and cannot replace historical evidence.
 
-## Current historical full-object / institutional-metadata lane
+## Future work
 
-### Gouffé 1873 — exact primary anchors
-
-- Saint-Honoré: https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/278
-- Religieuse: https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/345
-- Religieuse figure: https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/346
-- Éclair / duchesse: https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/349
-- Baba au rhum: https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/275
-- Savarin: https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/277
-
-### Other controlling objects / metadata
-
-- Acton first-edition text map: the first-edition-based 1845 transcription maps `Common Lemon Tartlets` p.431 and `Store Mixture for Lemon Tartlets` p.434; architecture is textually strong, exact edition-matched facsimile still open.
-- Acton Wellcome/Leeds `rdz664vd`: https://wellcomecollection.org/works/rdz664vd — **1845 third edition, greatly improved**, 679 images, physical `xxx, 607 pages...`, Public Domain Mark; useful historical/edition-comparison object, **not** first-edition p.431/p.434 custody. IA/Commons `b21531869` is the same scan.
-- Acton Wellcome/Leeds `z22c8gru`: https://wellcomecollection.org/works/z22c8gru — separate 1845 object, 760 images, physical `xxxii, 683 pages, 5 unnumbered pages, 32 pages`, Public Domain Mark; edition statement is not exposed in current metadata, so it remains `EDITION_MATCH_CANDIDATE`.
-- *Georgia Citizen*, 16 Aug 1850: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn83026608/1850-08-16/ed-1/seq-4/ — exact period newspaper page republishes `Common Lemon Tartlets`; direct transmission witness, not origin proof.
-- Gérard 1877: https://fr.wikisource.org/wiki/Page%3AG%C3%A9rard_-_L%E2%80%99Ancienne_Alsace_%C3%A0_table%2C_1877.djvu/219 — direct French-language `tourte au citron` named-form witness.
-- Jeanes 1870: https://books.google.com/books?id=VjoCAAAAQAAJ — third-edition Google Books object; TOC directly locates `Lemon Cheese Cakes` p.227, exact 1870 recipe page open. A separate 1873 MHL/IA third-edition scan `b20405881` is an edition-comparison route only.
-- Genin/Astier 2010: https://www.editionsalternatives.com/site.php?id=991&type=P — authorized publisher record for *Le meilleur de la tarte au citron*, 14 Oct 2010, ISBN 978-2-86227-651-9; closes author-source identity/scope for dough, baking and lemon-cream technique, but not the exact 2009 creation-year claim.
-- Lacam/Charabot 1893: https://gallica.bnf.fr/ark:/12148/bpt6k9735327k — Saint-Honoré p.44/p.49 targets.
-- Farmer 1896: https://archive.org/details/bostoncookingsc00collgoog — named `Mont Blanc`, printed p.357.
-- Dubois 1894: https://gallica.bnf.fr/ark:/12148/bpt6k3412588h — Tatin technique-genealogy object; exact inverted-tart leaf pending.
-- Bailleux 1856 full object — Éclairs p.74 tightly located, direct page pending.
-- **Bailleux 1860, SPbPU institutional record/TOC:** https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info — dedicated `Religieuse` plus Baba/Savarin entries visible in machine-readable TOC; scan access restricted, exact pages/forms pending.
-- Michigan *Vanity Fair* 1861 full volume — exact p.50 col.1 pending.
-- DILA `jo_associations` open-data lane — official route for association publication metadata including old-JORF notices before 2 Jan 1985; exact 1979 Lichonneux record still to extract.
-
-## Current conflict-first queues
-
-### P0 — primary page / legal-object acquisition
-
-- `ECLAIR_DE_KOCK_1848_PAGE`
-- `ECLAIR_BAILLEUX_1856_PAGE`
-- `ECLAIR_VANITY_FAIR_1861_PAGE`
-- `SAINT_HONORE_LACAM_P44_P49`
-- **`TARTE_CITRON_ACTON_1845_EDITION_MATCH_AND_P431_P434_FACSIMILE`** — first exclude `rdz664vd/b21531869` as third-edition custody, then inspect `z22c8gru` title/edition matter; only an edition-matched object may close exact first-edition page-image custody.
-- **`TARTE_CITRON_GENIN_2009_CREATION_DATE_PRIMARY`** — technique/author-source identity is no longer open; only the exact 2009 creation-year custody remains.
-- `TARTE_CITRON_DUMAS_1873_EXACT_LEMON_RANGE`
-- `TARTE_CITRON_JEANES_1870_P227` — 1873 MHL/IA scan may support edition comparison but cannot silently close the 1870 page.
-- `TARTE_CITRON_EARLIEST_FRENCH_RECIPE_AND_MERINGUE_CHAIN`
-- `OPERA_LE_GAULOIS_1899_PAGE`
-- `TATIN_LE_JOURNAL_1899_PAGE`
-- `TATIN_BULLETIN_1903_PAGE`
-- `TATIN_DUBOIS_1894_PAGE`
-- `TATIN_1790_TOURTE_RETOURNEE_PRIMARY`
-- `TATIN_JULLEMIER_1915_PAGE`
-- `TATIN_BESNARD_1921_ISSUE_PAGE`
-- `TATIN_CURNONSKY_1926_PAGE`
-- `TATIN_1923_P85_AND_1929_1931_PAGE_REVIEW`
-- `TATIN_HORIZONS_1976_P97`
-- `TATIN_CONFRERIE_1979_PROSPECTUS_DILA_OLD_JORF`
-- `PARIS_BREST_1909_1911_CONTEMPORARY_RECORD`
-- **`RELIGIEUSE_BAILLEUX_1860_EXACT_PAGE`**
-- **`RELIGIEUSE_BAILLEUX_1856_VS_1860_EDITION_DELTA`**
-- `RELIGIEUSE_FRASCATI_1856_CONTEMPORARY_RECORD`
-- `CANELE_INPI_1985`
-- `TROPEZIENNE_INPI_1972`
-- **`KOUIGN_AMANN_INPI_1999_EXACT_RECORD`** — filing existence around 1999 independently corroborated; exact date/holder/number/classes/publication/status still open.
-
-### P1 — genealogy / authorized-source closure
-
-- `2000_FEUILLES_AUTHORIZED_LADUREE_PRECURSOR_AND_FIRST_CATALOGUE` — authorized edition targets are now specifically identified as Hermé/Catherine Roig, *Toutes les saveurs de la vie* (Buchet-Chastel, 2022) and Hermé/Julie Mathieu, *Dictionnaire amoureux de la pâtisserie* (Plon, 2025); exact authorized passage still open.
-- `MONT_BLANC_PRE1896_NAMED_EUROPEAN`
-- `CANELE_JEAN_BALDE_1937_AND_DRAC_1995`
-- `KOUIGN_AMANN_EARLY_PRINT_CHAIN`
-- `TROPEZIENNE_1956_PRESS_BARDOT_PROVENANCE`
-- `MICKA_POLISH_PRIMARY_BIOGRAPHY`
-- `BABA_EARLY_STOHRER_RUM_TIMING`
-- `TARTE_CITRON_FRENCH_CODIFICATION_VS_GENIN_REINTERPRETATION` — broad European shell+lemon architecture and Genin's authorized technique source are no longer wholly open; focus is exact Acton edition/page custody, French codification, meringue/emulsion transition and exact 2009 date custody.
-
-### P2
-
-- complete technique/transmission matrix;
-- atlas and chronology validation;
-- reserve-candidate source comparison;
-- item-level visual-rights closure.
-
-## Legal-record protocol
-
-For a mark/patent/association publication:
-
-- separate `marque`, `marque collective`, `brevet`, trade name, association declaration, publication, brand and secret formula;
-- capture exact holder/declarant name as registered at the time;
-- capture application/registration/publication number and exact date;
-- retain historical owner-name variants and legal successors;
-- do not infer filing date from Confrérie founding date;
-- an official participant statement that “we filed with INPI” or an independent report that a filing occurred can close only that bounded filing-existence claim, not the register particulars;
-- for association notices, use official DILA/Journal officiel records where possible; do not substitute Pappers/Assoce when the official notice can be acquired.
-
-## Full-object protocol
-
-For a historical book/newspaper/menu:
-
-- record title, author, **edition**, year, publisher/institution;
-- stable item URL;
-- exact page/scan leaf/column when available;
-- distinguish OCR, machine-readable TOC, verified transcription and verified page image;
-- preserve original language;
-- add Russian translation only as editorial translation;
-- record rights separately;
-- do not promote snippet/catalogue/search-result/TOC/transcription text into a stronger facsimile claim than it exposes;
-- **same year/title is not enough for page-image custody when multiple editions exist**. A page mapped in one edition can be attached to a scan only after edition identity and pagination continuity are verified.
-
-A transcription explicitly mapped to a historical edition can close a bounded text/locator layer, but an original-page claim additionally requires an edition-matched scan. This now governs Acton 1845: `rdz664vd/b21531869` is explicitly third edition; `z22c8gru` is a separate candidate; exact first-edition p.431/p.434 remains `EDITION_MATCH_HOLD + PAGE_IMAGE_HOLD`.
-
-An authorized publisher page can close modern author/book identity and described scope without automatically closing every date/claim inside the subject's biography. This currently governs Genin/Astier 2010 versus the still-open exact 2009 citron-basilic creation date.
-
-## Access boundary
-
-Never bypass authentication, paywalls or network restrictions.
-
-An institutional TOC behind an otherwise restricted scan can close a bounded `named entry exists in this edition` claim if the TOC itself is openly exposed, but it cannot close recipe wording, page image, geometry or technique. This rule currently applies to Bailleux 1860.
-
-## Visual protocol
-
-Historical visuals must be authentic acquired objects. Never generate a fake historical newspaper, menu, recipe page, archival photograph, patent/trademark record, letter or institutional stamp.
-
-Every visual row needs object identity, institution, date, creator if known, stable URL, rights statement, required credit and publication decision. `downloaded`, `digitized`, `viewable` and `public domain in one jurisdiction` are not automatically `PUBLICATION_ELIGIBLE`. **Public-domain status also does not repair an edition mismatch.**
-
-Modern copyrighted author books can be authoritative text/source objects without becoming visual assets. Generated contemporary editorial imagery is governed separately by `00_GENERATION_REFERENCE_AND_PROMPT_BRIEF.md`.
-
-## Deliverables
-
-This namespace maintains:
-
-- current authority;
-- master research plan;
-- claim-to-citation ledger;
-- multilingual query/terminology map;
-- chronology;
-- canon/reserve analysis;
-- visual-rights ledger;
-- generation reference brief;
-- 15 object dossiers.
-
-Do not create transient `PASS_1`, `MORE_LINKS`, `FINAL_FINAL` files. New waves update governing artifacts and preserve prior conflicting rows as `CONFLICT`, `HISTORICAL` or `SUPERSEDED`.
+Future historical discoveries are welcome but are not backlog debt for this wave. Start a new research wave only when there is a concrete new primary/authorized object or a new Product question requiring evidence beyond the terminal safe wording.
