@@ -67,7 +67,7 @@
 | **18** | `18_THEOLOGICAL_SYNTHESIS_CREATION_CHRISTOLOGY_ECCLESIOLOGY.md` | Догматический синтез: Троица, антропология пола, экклезиология и предстояние пред Ангелами | `ACTIVE` |
 | **19** | `19_CORINTH_ARCHAEOLOGY_CULTS_AND_POPULAR_MYTHS_DOSSIER.md` | Археология Коринфа (ASCSA), разоблачение мифа о 1 000 проститутках, святилище Деметры, Исида, Дионис | `ACTIVE` |
 | **20** | `20_GRECO_ROMAN_VEILING_LAW_AND_FASHION_MONOGRAPH_DOSSIER.md` | Греко-римское право, брак *sine manu*, *tegidion* (Ллевеллин-Джонс), семиотика одежды (Олсон, Треггиари) | `ACTIVE` |
-| **21** | `21_CLAIM_CALIBRATION_AND_FAIL_CLOSED_AUDIT.md` | Fail-closed калибровка уверенности тезисов и границы допустимых формулировок | `ACTIVE` |
+| **21** | `21_CLAIM_CALIBRATION_AND_FAIL_CLOSED_AUDIT.md` | Fail-closed калибровка уверенности тезисов и границы допустимых формулировок. **HIGHEST PRIORITY** для степени уверенности; применяется к `ARTICLE_1..5` и `05` | `ACTIVE / OVERLAY` |
 | **22** | `22_EXHAUSTIVE_GREEK_LEXICAL_DATABASE_EIGHT_CRUCIAL_LEMMAS.md` | Полная лексикографическая база 8 ключевых лексем (BDAG, LSJ, MM, Louw-Nida, TLG) | `ACTIVE` |
 | **23** | `23_RABBINIC_TARGUMIC_AND_TALMUDIC_LOCUS_DOSSIER.md` | Раввинистическая традиция (Берешит Рабба, Пиркей де-Р. Элиэзер) и христоцентричный контраст Павла | `ACTIVE` |
 | **24** | `24_COMPLETE_RESPONSE_LEDGER_TO_40_STRONGEST_OBJECTIONS.md` | Полный состязательный реестр ответов на 40 сильнейших возражений (эгалитаризм, ритуализм, hair-only) | `ACTIVE` |
