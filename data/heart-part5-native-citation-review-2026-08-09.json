@@ -11,15 +11,39 @@
     "currentState": "ENTRY_CITATION_PASS_COMPLETE"
   },
   "immutableAuthorities": {
-    "previousCurrentV11": ["data/heart-entry-citation-pass-current-v11-2026-08-09.json", "58e9dcf7f724b03c7b9d09b49f75922f8bf73b23"],
-    "readerAssembly": ["data/heart-part5-reader-assembly-2026-08-09.json", "cf58624519e3f3ea7290fde518afce85f258863c"],
-    "part2R3R4CitationReview": ["data/heart-part2-citation-review-2026-08-04.json", "c746a626953ee57a394a41a5f82a83630f1cd782"],
+    "previousCurrentV11": [
+      "data/heart-entry-citation-pass-current-v11-2026-08-09.json",
+      "58e9dcf7f724b03c7b9d09b49f75922f8bf73b23"
+    ],
+    "readerAssembly": [
+      "data/heart-part5-reader-assembly-2026-08-09.json",
+      "cf58624519e3f3ea7290fde518afce85f258863c"
+    ],
+    "part2R3R4CitationReview": [
+      "data/heart-part2-citation-review-2026-08-04.json",
+      "c746a626953ee57a394a41a5f82a83630f1cd782"
+    ],
     "productSnapshot": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
-    "productNativeOwner": ["src/components/article-pilots/rimlyanam7/Rimlyanam7Body.astro", "35ed2f340ae725485533e322b3e1db0a68e01747"],
-    "r3": ["СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md", "ae55b1fad5cccbdb623c551a14222e0f51ec084a"],
-    "r4": ["СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md", "f82780e13cb064aa89c06427d11a938662fc3ff8"],
-    "r5": ["СЕРИЯ СЕРДЦЕ/67_R5_TWO_STRUGGLES.md", "846277b099e58bf36b88c2ae0dfe4e24e6bec53b"],
-    "reader": ["СЕРИЯ СЕРДЦЕ/133_READER_CHAPTER_V_HEART_IN_WAR_2026-08-09.md", "183819bf469d7e28f270fa6891b8ae1534e2f6ef"]
+    "productNativeOwner": [
+      "src/components/article-pilots/rimlyanam7/Rimlyanam7Body.astro",
+      "35ed2f340ae725485533e322b3e1db0a68e01747"
+    ],
+    "r3": [
+      "СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md",
+      "ae55b1fad5cccbdb623c551a14222e0f51ec084a"
+    ],
+    "r4": [
+      "СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md",
+      "f82780e13cb064aa89c06427d11a938662fc3ff8"
+    ],
+    "r5": [
+      "СЕРИЯ СЕРДЦЕ/67_R5_TWO_STRUGGLES.md",
+      "846277b099e58bf36b88c2ae0dfe4e24e6bec53b"
+    ],
+    "reader": [
+      "СЕРИЯ СЕРДЦЕ/133_READER_CHAPTER_V_HEART_IN_WAR_2026-08-09.md",
+      "183819bf469d7e28f270fa6891b8ae1534e2f6ef"
+    ]
   },
   "surfaceInventory": {
     "aggregate": {
@@ -83,9 +107,27 @@
       },
       "roleMapSha256": "849c6806b7f843b0bb0f6df880b8962b8d1642f115f7658090507e1872f1a42c",
       "roleSectionMap": {
-        "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": ["Коротко", "I. В чём именно вопрос", "II. Римлянам 6–8: три звена одной цепи", "III. Что именно повторяется в Рим. 7:14–25", "IV. Позиция 1: Павел описывает верующего", "V. Позиция 2: Павел описывает человека под законом до освобождения Духом", "VIII. Почему я считаю, что Рим. 7 применим к верующему", "IX. Пастырский вывод: кому Рим. 7 утешение, а кому предупреждение", "Твёрдо, но не дубинкой", "Как отличить в себе"],
-        "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": ["VI. Ллойд-Джонс: не зрелый христианин и не обычный невозрождённый", "VII. TMSJ / Джей Стрит: старозаветная борьба глазами Нового Завета", "Источники и сверка"],
-        "EDITORIAL_CHROME_OR_NAVIGATION_SURFACE": ["frontmatter-or-introduction", "Читайте также"]
+        "EXEGETICAL_SCRIPTURE_OR_DOCTRINAL_SURFACE": [
+          "Коротко",
+          "I. В чём именно вопрос",
+          "II. Римлянам 6–8: три звена одной цепи",
+          "III. Что именно повторяется в Рим. 7:14–25",
+          "IV. Позиция 1: Павел описывает верующего",
+          "V. Позиция 2: Павел описывает человека под законом до освобождения Духом",
+          "VIII. Почему я считаю, что Рим. 7 применим к верующему",
+          "IX. Пастырский вывод: кому Рим. 7 утешение, а кому предупреждение",
+          "Твёрдо, но не дубинкой",
+          "Как отличить в себе"
+        ],
+        "ATTRIBUTED_WITNESS_OR_SOURCE_BANK_SURFACE": [
+          "VI. Ллойд-Джонс: не зрелый христианин и не обычный невозрождённый",
+          "VII. TMSJ / Джей Стрит: старозаветная борьба глазами Нового Завета",
+          "Источники и сверка"
+        ],
+        "EDITORIAL_CHROME_OR_NAVIGATION_SURFACE": [
+          "frontmatter-or-introduction",
+          "Читайте также"
+        ]
       }
     },
     "r5": {
@@ -96,9 +138,37 @@
       },
       "roleMapSha256": "fece0c5a593d422a6cd0fc9320e4dd8a8b5b46084d8e84844905ecec3c3c10bb",
       "roleSectionMap": {
-        "EXEGETICAL_SCRIPTURE_OR_LEXICAL_SURFACE": ["1. Лк. 18:9–14 — фарисей и мытарь: две борьбы на молитве (центральный текст статьи)", "2. 2 Кор. 7:10–11 — две печали: анатомия «плода поражений»", "3. Рим. 2:14–15 — совесть есть у всех: почему борьба совести реальна", "4. Рим. 7:22 + 8:13 — отличительные глаголы возрождённой борьбы", "5. Гал. 5:16–25 — сама борьба как признак Духа; плод Духа как признак победы", "6. 1 Ин. — направление пути (ось 6): рождённость видна по вектору, не по безупречности", "7. Библейские пары-кейсы (материал для живой ткани статьи)", "8. Мф. 26:41 / Owen: искушение и «вхождение в искушение» (для оси 2 — оружие)"],
-        "ATTRIBUTED_WITNESS_OR_QUOTE_BANK_SURFACE": ["1. Matthew Mead, «The Almost Christian Discovered» (1661) — обязательный источник статьи", "2. John Owen, «Of the Mortification of Sin in Believers» (1656) — гл. 2, 5–8", "3. John Owen, «Of Temptation» (1658) — оружие возрождённой борьбы", "4. Кратко (уже верифицировано в корпусе, использовать перекрёстно)", "Б. Реформаторы", "В. Баптисты", "Г. Современные консервативные", "Д. Отцы (свидетель, не догматический якорь)", "Е. Jonathan Edwards, «A Treatise Concerning Religious Affections» (1746) — полные списки", "Ж. Гордость морального победителя vs смирение побеждающего Духом (сводный узел)", "Цитатный банк (полные источники и статус верификации)"],
-        "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": ["R5 — Две борьбы: борьба совести и борьба Духа (различение) — досье для статьи V.3", "Задача и место в книге", "Предлагаемая структура (H2)", "Строки-якоря серии (обязательны, из R7/R8)", "Чего избегать (guardrails)", "Открытые вопросы / что ещё копать"]
+        "EXEGETICAL_SCRIPTURE_OR_LEXICAL_SURFACE": [
+          "1. Лк. 18:9–14 — фарисей и мытарь: две борьбы на молитве (центральный текст статьи)",
+          "2. 2 Кор. 7:10–11 — две печали: анатомия «плода поражений»",
+          "3. Рим. 2:14–15 — совесть есть у всех: почему борьба совести реальна",
+          "4. Рим. 7:22 + 8:13 — отличительные глаголы возрождённой борьбы",
+          "5. Гал. 5:16–25 — сама борьба как признак Духа; плод Духа как признак победы",
+          "6. 1 Ин. — направление пути (ось 6): рождённость видна по вектору, не по безупречности",
+          "7. Библейские пары-кейсы (материал для живой ткани статьи)",
+          "8. Мф. 26:41 / Owen: искушение и «вхождение в искушение» (для оси 2 — оружие)"
+        ],
+        "ATTRIBUTED_WITNESS_OR_QUOTE_BANK_SURFACE": [
+          "1. Matthew Mead, «The Almost Christian Discovered» (1661) — обязательный источник статьи",
+          "2. John Owen, «Of the Mortification of Sin in Believers» (1656) — гл. 2, 5–8",
+          "3. John Owen, «Of Temptation» (1658) — оружие возрождённой борьбы",
+          "4. Кратко (уже верифицировано в корпусе, использовать перекрёстно)",
+          "Б. Реформаторы",
+          "В. Баптисты",
+          "Г. Современные консервативные",
+          "Д. Отцы (свидетель, не догматический якорь)",
+          "Е. Jonathan Edwards, «A Treatise Concerning Religious Affections» (1746) — полные списки",
+          "Ж. Гордость морального победителя vs смирение побеждающего Духом (сводный узел)",
+          "Цитатный банк (полные источники и статус верификации)"
+        ],
+        "EDITORIAL_STRUCTURAL_OR_CAUTION_SURFACE": [
+          "R5 — Две борьбы: борьба совести и борьба Духа (различение) — досье для статьи V.3",
+          "Задача и место в книге",
+          "Предлагаемая структура (H2)",
+          "Строки-якоря серии (обязательны, из R7/R8)",
+          "Чего избегать (guardrails)",
+          "Открытые вопросы / что ещё копать"
+        ]
       }
     },
     "r3r4Reuse": {
@@ -116,7 +186,9 @@
   "externalLinkReview": {
     "productNative": {
       "linksDispositioned": 3,
-      "statusCounts": {"NON_CITATION_UI_OR_SCHEMA_URL": 3},
+      "statusCounts": {
+        "NON_CITATION_UI_OR_SCHEMA_URL": 3
+      },
       "registrySha256": "d067657e80b1494fb4631cea2adfce20897f393f6fbb6c1ac0c7f44b73a1d8bd",
       "readerTransfer": 0
     },
@@ -165,7 +237,48 @@
     "sourceQuotationTransfer": 0,
     "sourceLinkTransfer": 0,
     "newDirectQuotesApproved": 0,
-    "allReaderScriptureReferencesMustResolveInsideReviewedOwnerUnion": true
+    "scriptureReferencesDetected": 19,
+    "ownerUnionExactMatches": 15,
+    "readerOnlyScriptureReferencesMustBeExplicitlyDispositioned": true,
+    "readerOnlyScriptureReferences": [
+      {
+        "reference": "1 Ин.1:8–2",
+        "displayLocator": "1 Ин. 1:8–2:2",
+        "status": "READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED",
+        "role": "Continuing sin, confession and Christ's advocacy after defeat.",
+        "contextMarker": "1 Ин. 1:8–2:2 соединяет честность о продолжающемся грехе с исповеданием и ходатайством Христа.",
+        "sourceQuotationTransfer": 0,
+        "sourceLinkTransfer": 0
+      },
+      {
+        "reference": "Гал.5",
+        "displayLocator": "Гал. 5",
+        "status": "COVERED_ALIAS_OF_REVIEWED_OWNER_REFERENCE",
+        "coveredBy": "Гал.5:16–25",
+        "role": "Broad chapter alias in the reader introduction; the specific warfare/fruit range is already reviewed in R5.",
+        "contextMarker": "Она соединяет Рим. 6–8, Гал. 5 и пастырские предупреждения предыдущих глав",
+        "sourceQuotationTransfer": 0,
+        "sourceLinkTransfer": 0
+      },
+      {
+        "reference": "Еф.6",
+        "displayLocator": "Еф. 6",
+        "status": "READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED",
+        "role": "Reader-level synthesis for Word, prayer, faith and standing as warfare means.",
+        "contextMarker": "Еф. 6 добавляет Слово, молитву, веру и церковное стояние.",
+        "sourceQuotationTransfer": 0,
+        "sourceLinkTransfer": 0
+      },
+      {
+        "reference": "Кол.3",
+        "displayLocator": "Кол. 3",
+        "status": "READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED",
+        "role": "Reader-level synthesis connecting mortification with positive new-character fruit.",
+        "contextMarker": "Кол. 3 соединяет умерщвление земного с облечением в милосердие, доброту, смирение, кротость, терпение и любовь.",
+        "sourceQuotationTransfer": 0,
+        "sourceLinkTransfer": 0
+      }
+    ]
   },
   "retainedRepairAndHoldBacklog": {
     "historicalProductSourceRepairsRequired": 4,
