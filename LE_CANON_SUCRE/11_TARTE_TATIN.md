@@ -27,15 +27,20 @@ This article is valuable mainly because it points to concrete historical nodes t
 - Paul Besnard, `La Tarte des Demoiselles Tatin`, published in 1921;
 - Curnonsky's 1926 diffusion milestone.
 
-A separate Wave 1 discovery lead points to an **1899** newspaper occurrence of `tarte de Mlle Tatin`; the primary issue/page is not yet in the corpus.
+A second independent/confrérie-oriented historical synthesis narrows the earliest newspaper lead to **Le Journal, 18 December 1899, p. 1**, with the phrase `la tarte de Mlle Tatin`:
+https://www.cuisine-lucullus.com/histoire-de-la-cuisine/13-tout-un-plat/836-tarte-des-soeurs-tatin
+
+This is a **secondary locator**, not the acquired newspaper object. The exact *Le Journal* scan/issue page remains `NOT_ACQUIRED` and must not yet be treated as quote-safe primary evidence.
+
+A patrimoine-oriented synthesis additionally labels the accident narrative as `La légende` and points to Paul Besnard's 1921 publication as an early printed recipe milestone. This strengthens the research direction but does not replace the underlying 1921 object.
 
 ## Required tripartite model
 
 ### DOCUMENTED / document-targeted
 
-- named Tatin dessert appears in early printed sources, with 1899/1903/1921/1926 targets;
+- secondary locator convergence points to *Le Journal*, 18 December 1899, p. 1, for `tarte de Mlle Tatin`;
 - sisters/hotel context can be checked through local records;
-- Besnard and Curnonsky are concrete publication targets.
+- Jullemier 1903, Besnard 1921 and Curnonsky 1926 are concrete publication targets.
 
 ### LOCAL TRADITION
 
@@ -53,19 +58,25 @@ Do not use absence of an accident record to claim the accident certainly never h
 
 Conversely, repetition by tourism, cookbooks and popular articles does not convert the accident story into an A-class fact.
 
+The 1899 locator materially improves the acquisition target but does **not** close the claim until the exact newspaper page is inspected.
+
 ## Анализ и границы допустимой формулировки
 
 Safe:
 
-> The Tatin tradition is anchored in Lamotte-Beuvron and the Tatin sisters, while the famous accident story is a later legend unless a contemporaneous witness is found. Early printed milestones around 1899–1926 are being resolved individually.
+> The Tatin tradition is anchored in Lamotte-Beuvron and the Tatin sisters, while the famous accident story is a later legend unless a contemporaneous witness is found. Secondary locator work points to *Le Journal*, 18 December 1899, p. 1, as an early printed mention of `la tarte de Mlle Tatin`; the primary page still needs direct acquisition and inspection.
 
 Unsafe:
 
 > Stéphanie Tatin accidentally dropped/forgot the tart, flipped it, and thereby invented tarte Tatin.
 
+Also unsafe until primary acquisition:
+
+> The first documentary mention is definitively 18 December 1899.
+
 ## Хронология
 
-- 1899 — strong discovery lead for `tarte de Mlle Tatin`; exact newspaper page needed;
+- 18 December 1899 — tightened secondary locator: *Le Journal*, p. 1, `tarte de Mlle Tatin`; exact primary page still needed;
 - 1903 — Jullemier account target;
 - 1921 — Besnard `La Tarte des Demoiselles Tatin` target;
 - 1926 — Curnonsky diffusion target.
@@ -83,17 +94,17 @@ Exact order of assembly, apple variety and caramel method must come from period/
 High-value visual targets:
 
 - hotel/sisters archival photograph;
-- 1899 newspaper page;
+- exact 18 December 1899 *Le Journal* page;
 - 1903/1921 printed pages;
 - early menu/advertisement.
 
 Modern municipal photographs remain rights-item-specific.
 
-`EVIDENCE_HOLD` remains on accident narrative; `LOCATOR_HOLD` on the 1899/1903/1921 primary objects until acquired.
+`EVIDENCE_HOLD` remains on accident narrative; `LOCATOR_HOLD` remains on the 1899/1903/1921 primary objects until acquired directly.
 
 ## Следующее проверяемое действие
 
-1. Acquire the exact 18 Dec 1899 `Le Journal` occurrence if the discovery lead is correct.
+1. Acquire and inspect the exact 18 December 1899 *Le Journal* first page and preserve stable issue/item URL plus scan locator.
 2. Acquire Jullemier 1903 exact object/page.
 3. Acquire Besnard 1921 exact revue issue/page.
 4. Acquire Curnonsky 1926 exact edition/page.
