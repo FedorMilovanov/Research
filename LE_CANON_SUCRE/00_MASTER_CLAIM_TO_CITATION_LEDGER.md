@@ -19,7 +19,7 @@ Rights below concern reuse of the source object/visual, not the ability to cite 
 | LCS-S003 | https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/278 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | Saint-Honoré architecture |
 | LCS-S004 | https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/345 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | Religieuse chocolate/coffee constructions |
 | LCS-S005 | https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/346 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | Religieuse continuation and figure |
-| LCS-S006 | https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/349 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | Éclairs / pains à la duchesse relationship |
+| LCS-S006 | https://fr.wikisource.org/wiki/Page%3AGouff%C3%A%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/349 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | Éclairs / pains à la duchesse relationship |
 | LCS-S007 | https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/121 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | Pâte à choux named for croquembouches, duchesses and éclairs |
 | LCS-S008 | https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/275 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | Baba moderne glacé au rhum |
 | LCS-S009 | https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/277 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | Savarin / related forms |
@@ -135,12 +135,33 @@ Rights below concern reuse of the source object/visual, not the ability to cite 
 | LCS-GR02 | https://www.elysee.fr/emmanuel-macron/2019/01/11/reception-maitres-boulangers-epiphanie-galette | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Primary government record for modern Élysée tradition; says tradition since 1975 |
 | LCS-GR03 | https://www.elysee.fr/emmanuel-macron/2026/01/05/remise-de-la-galette-de-lepiphanie-1 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Primary current government record; republican galette without fève |
 
+## Wave 1 locator and conflict upgrades
+
+These rows synchronize the governing ledger with later Wave 1 dossier research. They do not silently replace the earlier discovery rows above.
+
+| sourceId | object | source | evidenceClass | accessState | locatorState | rightsState | use |
+|---|---|---|---|---|---|---|---|
+| LCS-SH01 | Saint-Honoré | https://gallica.bnf.fr/ark:/12148/bpt6k9735327k | A1 | FULL_OBJECT_VERIFIED | COARSE_LOCATOR_ONLY | RIGHTS_UNKNOWN | Lacam & Charabot 1893 historical full object; exact Saint-Honoré page still to pin |
+| LCS-SH02 | Saint-Honoré | https://nouvellesgastronomiques.com/ne-parlons-plus-de-creme-chiboust/ | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Hervé This transcription of Lacam: Auguste Julien, Bordeaux `Flan Suisse`, Maison Chiboust, 1840; primary page still required |
+| LCS-EA01 | Éclair | https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC | A1 | FULL_OBJECT_VERIFIED | COARSE_LOCATOR_ONLY | RIGHTS_UNKNOWN | Louis Bailleux, *Le Pâtissier moderne*, 1856 full book identity |
+| LCS-EA02 | Éclair | https://wordhistories.net/2025/03/25/eclair-cake/ | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Tight locator to Bailleux 1856 p. 74 `Éclairs`; direct primary page inspection pending |
+| LCS-EA03 | Éclair / US reception | https://wordhistories.net/2025/03/25/eclair-cake/ | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Tight locator to *Vanity Fair* New York, 2 Feb 1861, p. 50 col. 1; primary issue scan pending |
+| LCS-OP07 | Opéra | https://catalogue.bnf.fr/ark:/12148/cb32779904b.public | A2 | CATALOG_ONLY | COARSE_LOCATOR_ONLY | RIGHTS_UNKNOWN | BnF identity for *Le Gaulois*; secondary locator points to 18 Mar 1899 p. 3 `gâteau opéra` ad |
+| LCS-TT03 | Tatin | https://www.cuisine-lucullus.com/histoire-de-la-cuisine/13-tout-un-plat/836-tarte-des-soeurs-tatin | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Tight secondary locator to *Le Journal*, 18 Dec 1899 p. 1, `la tarte de Mlle Tatin`; primary issue pending |
+| LCS-MB03 | Mont-Blanc lineage | https://it.wikisource.org/wiki/Scienza_in_cucina_e_l%27arte_di_mangiar_bene/Torte_e_dolci_al_cucchiaio/653._Dolce_di_marroni_con_panna_montata | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | Artusi 1891 chestnut strands + whipped cream, pre-Angelina architecture under descriptive title |
+| LCS-MB04 | Mont-Blanc | https://cardmyrecipe.com/collections/fannie-farmer | B1 | PARTIAL_OBJECT | COARSE_LOCATOR_ONLY | RIGHTS_UNKNOWN | Verified-first-printing preservation browser locates named `Mont Blanc` to Farmer 1896 p. 357; original scan must be inspected |
+| LCS-MB05 | Mont-Blanc | https://fr.wikisource.org/wiki/Le_guide_culinaire/Entremets | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | Escoffier 1903 `Mont-Blanc aux marrons`, French professional continuity |
+| LCS-TR02 | Tropézienne | https://www.latartetropezienne.fr/fr/blog/le-coffret-bb-trop-en-lhonneur-de-brigitte-bardot-n18 | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Maison retrospective Bardot testimony / `marraine`; house page's 1955-film wording conflicts with film chronology |
+| LCS-TR03 | Tropézienne / film | https://www.radiofrance.fr/franceinter/et-dieu-crea-la-femme-8528446 | A2 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Independent exact filming dates: 3 May–7 July 1956 |
+| LCS-TR04 | Tropézienne / film | https://www.filmfrance.net/films/et-dieu-crea-la-femme/ | A2 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | Film France/CNC: film 1956, Saint-Tropez shooting location |
+| LCS-TR05 | Tropézienne / film | https://www.filmportal.de/en/movie/et-dieu-crea-la-femme_ | A2 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | German institutional film record independently confirms 03.05–07.07.1956 shoot |
+
 ## Current claim decisions
 
 | claimId | claim | decision | main support | holds |
 |---|---|---|---|---|
 | LCS-C001 | A recognizable Saint-Honoré choux architecture is documented by 1873 | CONFIRMED | LCS-S003 | none for bounded claim |
-| LCS-C002 | Chiboust/Jullien origin chronology is fully established | UNRESOLVED | discovery only | EVIDENCE_HOLD, LOCATOR_HOLD |
+| LCS-C002 | Chiboust/Jullien origin chronology is fully established | UNRESOLVED; 1840 Maison Chiboust/Auguste Julien chain is now PROBABLE but exact Lacam page is pending | LCS-SH01/02 | LOCATOR_HOLD, EVIDENCE_HOLD on exact inventor/date wording |
 | LCS-C003 | Paris–Brest–Paris race began in 1891 | CONFIRMED | LCS-PB01 | none |
 | LCS-C004 | Paris-Brest cake was created in 1891 | REJECTED AS CURRENT WORDING | conflicts with LCS-PB02/03 | EVIDENCE_HOLD |
 | LCS-C005 | Louis Durand cake date is exactly 1910 | PROBABLE | LCS-PB02/03/06 vs LCS-PB05 | EVIDENCE_HOLD on exact year |
@@ -148,37 +169,48 @@ Rights below concern reuse of the source object/visual, not the ability to cite 
 | LCS-C007 | Rum baba is directly documented by 1873 | CONFIRMED | LCS-S008 | none |
 | LCS-C008 | Genin citron-basilic version dates to 2009 | PROBABLE | LCS-TC01 | primary participant locator still desirable |
 | LCS-C009 | Canonical Dalloyau Opéra is a 1955 house creation | PROBABLE/STRONG | LCS-OP01/02/03/04 | contemporary 1955 locator still desired |
-| LCS-C010 | The name `gâteau opéra` first appeared in 1955 | DISPUTED | LCS-OP05 discovery lead | EVIDENCE_HOLD, LOCATOR_HOLD |
+| LCS-C010 | The name `gâteau opéra` first appeared in 1955 | DISPUTED; secondary locator now points to *Le Gaulois*, 18 Mar 1899 p. 3 | LCS-OP05/07 | LOCATOR_HOLD until exact primary issue page |
 | LCS-C011 | Ispahan is documented by maison/institutional timelines as a 1997 creation/release | CONFIRMED FOR MODERN TIMELINE | LCS-IS01/02 | primary catalogue still desirable |
 | LCS-C012 | 2000 Feuilles composition and signature status are documented by Hermé | CONFIRMED | LCS-2F01/02 | none for composition/status |
 | LCS-C013 | Name `2000 Feuilles` derives from millennium launch | PROBABLE | LCS-2F03 | EVIDENCE_HOLD pending primary |
-| LCS-C014 | Angelina's Mont-Blanc is a house signature associated with Rumpelmayer/early 20th c | CONFIRMED AS HOUSE TRADITION | LCS-MB01/02 | EVIDENCE_HOLD on category invention |
+| LCS-C014 | Angelina's Mont-Blanc is a house signature associated with Rumpelmayer/early 20th c | CONFIRMED AS HOUSE TRADITION | LCS-MB01/02 | none for bounded house wording |
 | LCS-C015 | `Religieuse` in 1873 had only the later standard two-choux form | FALSE / OVERSTATED | LCS-S004/005 | none |
 | LCS-C016 | Frascati invented the religieuse in 1856 | DISPUTED/UNRESOLVED | modern La Poste vs Stohrer and Gouffé evidence | EVIDENCE_HOLD |
 | LCS-C017 | Scordia created Kouign-Amann in Douarnenez in 1860 | LOCAL TRADITION / PROBABLE | LCS-KA01 | EVIDENCE_HOLD pending early record |
 | LCS-C018 | Tatin accident story is established historical fact | LEGEND / NOT PROMOTED | LCS-TT01/02 | EVIDENCE_HOLD |
 | LCS-C019 | Canelé convent origin is established | REJECTED AS ESTABLISHED FACT | LCS-CA01/02 | underlying archival acquisition remains |
-| LCS-C020 | Éclair pastry use is attested by 1856 and professionally described by 1873 | CONFIRMED | LCS-S006/007, LCS-S015 | none for bounded claim |
+| LCS-C020 | Éclair pastry use is attested by 1856 and professionally described by 1873 | CONFIRMED; Bailleux 1856 also has tight professional-recipe locator | LCS-S006/007/015, LCS-EA01/02 | LOCATOR_HOLD only on direct Bailleux p.74 scan |
 | LCS-C021 | Carême invented the éclair | UNRESOLVED | no exact primary locator found | EVIDENCE_HOLD |
 | LCS-C022 | Élysée baker-galette reception tradition is documented since 1975 | CONFIRMED FOR MODERN RITUAL | LCS-GR02 | none |
 | LCS-C023 | Saturnalia directly and continuously evolved into modern galette des rois | UNRESOLVED / DO NOT PUBLISH | no documentary chain | EVIDENCE_HOLD |
+| LCS-C024 | Mont-Blanc/chestnut-and-cream lineage existed before Angelina's 1903 founding | CONFIRMED FOR PRE-ANGELINA LINEAGE | LCS-MB03 plus LCS-MB04 | direct Farmer 1896 scan still LOCATOR_HOLD, but Artusi 1891 primary construction already closes the broader pre-Angelina point |
+| LCS-C025 | Angelina invented the entire Mont-Blanc dessert category in 1903 | REJECTED AS CURRENT WORDING | LCS-MB03/04/05 vs LCS-MB01/02 | none; replace with house-signature wording |
+| LCS-C026 | `Éclair` was circulating in American English by 2 Feb 1861 | PROBABLE / TIGHTLY LOCATED | LCS-EA03 | LOCATOR_HOLD pending original *Vanity Fair* scan |
+| LCS-C027 | Bardot named the Tropézienne in 1955 while *Et Dieu… créa la femme* was being shot | REJECTED AS CURRENT WORDING / CHRONOLOGY CONFLICT | LCS-TR02 vs LCS-TR03/04/05 | exact naming mechanism remains EVIDENCE_HOLD |
+| LCS-C028 | Micka's pastry-creation tradition belongs to 1955, while the documented film shoot occurred 3 May–7 July 1956 | CONFIRMED AS TWO SEPARATE MILESTONES | LCS-TR01, LCS-TR03/04/05 | contemporary naming evidence still desired |
+| LCS-C029 | An early printed `tarte de Mlle Tatin` is tightly located to *Le Journal*, 18 Dec 1899 p.1 | PROBABLE / TIGHTLY LOCATED | LCS-TT03 | LOCATOR_HOLD pending primary issue scan |
 
 ## Rights queue
 
 - `LCS-S012` Wellcome historical Lacam object: `PERMISSION_REQUIRED` for image reuse according to current object rights metadata.
 - Wikisource/Commons historical scans/transcriptions: reuse conditions must be checked per scan/transcription page; current rows are suitable research anchors, but credits should be preserved.
+- Gallica/BnF historical objects remain subject to item/institution reproduction conditions; full text availability does not automatically clear promotional image reuse.
+- Farmer 1896, Bailleux 1856, *Vanity Fair* 1861, *Le Gaulois* 1899 and *Le Journal* 1899 require direct item acquisition plus item-level rights/credit decisions before facsimile publication.
 - Modern maison and newspaper photography: `RIGHTS_UNKNOWN` unless an explicit item licence is found; do not lift into Product.
 - Élysée/municipal/region pages: factual citation is separate from photo reuse; image rights remain item-specific.
 
 ## Wave 2 acquisition queue
 
-1. exact 1899 Opéra advertisement object;
-2. exact 1899 Tatin newspaper occurrence;
+1. exact *Le Gaulois*, 18 Mar 1899 p. 3 Opéra advertisement scan;
+2. exact *Le Journal*, 18 Dec 1899 p. 1 Tatin occurrence scan;
 3. 1903 Jullemier Tatin account and 1921 Besnard page;
 4. INPI canelé 1985 collective mark;
-5. INPI / mark evidence for Kouign-Amann and Tropézienne;
-6. pre-1873 Religieuse records;
+5. exact INPI/legal record for Tropézienne and Kouign-Amann; distinguish `marque` from `brevet`;
+6. pre-1873 Religieuse records, especially Frascati-adjacent sources;
 7. contemporaneous 1909–1910 Paris-Brest cake record;
-8. pre-1903 Mont-Blanc / Monte Bianco full-object recipes;
+8. Farmer 1896 p. 357 original `Mont Blanc` scan and earlier named European Mont-Blanc/Monte Bianco witnesses;
 9. primary Pierre Hermé 2000 Feuilles launch/catalogue;
-10. exact Lacam pages on Saint-Honoré/Chiboust/Jullien.
+10. exact Lacam 1893 page on Saint-Honoré/Chiboust/Jullien;
+11. Bailleux 1856 p. 74 direct `Éclairs` scan;
+12. *Vanity Fair* New York, 2 Feb 1861 p. 50 col. 1 original issue scan;
+13. May–July 1956 contemporary Saint-Tropez press on Micka/Bardot/name, plus provenance of the later Bardot letter/testimony.
