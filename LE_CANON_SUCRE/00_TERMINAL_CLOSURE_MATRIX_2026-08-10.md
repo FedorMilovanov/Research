@@ -22,7 +22,7 @@ A row is `CLOSED` when the corpus has enough evidence for the bounded editorial 
 
 | Gate | Terminal state | Safe wording / controlling decision | Remaining non-blocking boundary |
 |---|---|---|---|
-| Acton 1845 edition identity | `CLOSED — BIBLIOGRAPHIC EDITION MATCH` | First-edition-based text maps `Common Lemon Tartlets` p.431 and `Store Mixture for Lemon Tartlets` p.434. Wellcome/Leeds `z22c8gru` / IA `b21531857` has the first-edition collation `xxxii, 683` plus publisher catalogues; separate `rdz664vd/b21531869` is explicitly the third edition and is rejected as first-edition custody. | Exact p.431/p.434 image leaves remain `VISUAL_CUSTODY_HOLD`; do not invent scan-frame offsets. |
+| Acton 1845 edition identity | `CLOSED — BIBLIOGRAPHIC EDITION MATCH` | First-edition-based text maps `Common Lemon Tartlets` p.431 and `Store Mixture for Lemon Tartlets` p.434. Wellcome/Leeds `z22c8gru` / IA `b21531857` matches the first-edition collation `xxxii, 683` plus publisher catalogues; separate `rdz664vd/b21531869` is explicitly the third edition and is rejected as first-edition custody. | Exact p.431/p.434 image leaves remain `VISUAL_CUSTODY_HOLD`; do not invent scan-frame offsets. |
 | Jeanes 1870 p.227 | `CLOSED — NAMED PROFESSIONAL ENTRY` | Google Books catalogs the 1870 volume as third edition and directly locates `Lemon Cheese Cakes`, p.227. | Exact 1870 recipe page remains `TERMINAL_NON_BLOCKING_CONTENT_HOLD`; do not infer its ingredients from the separate 1873 scan. |
 | Éclair de Kock 1848 | `CLOSED — CURRENT EARLIEST LOCATOR` | A cream-filled pastry called `éclairs` is tightly located to de Kock 1848 p.4 col.1. Treat 1848 as the earliest current French pastry locator in this corpus, never as an invention date. | Original page-image custody remains optional/visual. |
 | Éclair Bailleux 1856 | `CLOSED — PROFESSIONAL RECIPE LOCATOR` | Bailleux first edition is a verified 1856 professional full object; specialist page work locates `Éclairs` p.74 and records cream filling/icing. | Direct p.74 facsimile remains `VISUAL_CUSTODY_HOLD`. |
@@ -60,10 +60,12 @@ The 15-object selection is retained. No unresolved row above requires replacing 
 
 The corpus is **research-complete for the current Canon scope** when all of the following are true on one exact branch head:
 
-1. this matrix is referenced by current authority, plan, claim ledger and rights ledger;
-2. stale dossier `next action` sections are treated as historical acquisition notes and are superseded by this matrix for release gating;
-3. no governing artifact claims a stronger state than this matrix;
+1. this matrix is referenced by current authority and the terminal master research plan;
+2. stale dossier/ledger `next action` and acquisition sections are explicitly superseded for release gating by current authority/plan/matrix while remaining visible as audit history;
+3. no current release-controller claims a stronger state than this matrix;
 4. `Repository authority integrity` completes with `success` on that exact head;
 5. PR is mergeable and has no unresolved review threads.
+
+The master claim ledger, chronology, rights ledger and dossiers remain supporting evidence/audit records; they do not need reverse links to this matrix to preserve their historical rows.
 
 After those gates, further discoveries are a **new research wave**, not unfinished Wave 2 work.
