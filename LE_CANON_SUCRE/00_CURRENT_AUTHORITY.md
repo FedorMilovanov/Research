@@ -42,9 +42,9 @@ This list is a research sample, not a predetermined editorial verdict. Reserve c
 
 ## Audit result
 
-The corpus currently contains the governing files, generation/rights brief and all 15 dossiers. The repository authority-integrity workflow was green at audited head `1931d3fbaa10edeea415c788b8946cbe4ae39938`, including `Validate repository control plane` and deterministic corpus validators. Later commits must receive their own completed CI conclusion before being called green.
+The substantive audit found **content drift**, not a broken control plane. Governing artifacts have been synchronized with explicit `SUPERSEDED` decisions rather than silent history rewrites. Every later source discovery must update the controlling layer as well as its dossier.
 
-The substantive audit found **content drift**, not a broken control plane: the master claim ledger and visual ledger lagged behind newer dossier discoveries. They have now been converted to Wave 2 governing state with explicit `SUPERSEDED` decisions rather than silent history rewrites.
+Repository authority CI is authoritative only after GitHub reports a completed conclusion for the current head; `queued`, `pending` or `in_progress` is not green.
 
 ## Controlling findings
 
@@ -56,7 +56,7 @@ The substantive audit found **content drift**, not a broken control plane: the m
 
 ### Éclair
 
-- The earliest **current French pastry locator** is now Charles Paul de Kock **1848**, printed p.4 col.1, with cream-filled `éclairs`; the underlying BnF/Gallica page still requires direct inspection.
+- The earliest **current French pastry locator** is Charles Paul de Kock **1848**, printed p.4 col.1, with cream-filled `éclairs`; the underlying BnF/Gallica page still requires direct inspection.
 - Bailleux 1856 is a verified full professional-book object; `Éclairs` is tightly located to p.74, direct page pending.
 - University of Michigan identifies the 1861 New York *Vanity Fair* volume; exact 2 Feb 1861 p.50 col.1 remains to inspect.
 - Gouffé 1873 directly links éclairs to `pains à la duchesse` / pâte à choux.
@@ -64,9 +64,15 @@ The substantive audit found **content drift**, not a broken control plane: the m
 
 ### Religieuse
 
-- Gouffé 1873 remains the earliest **directly verified professional Religieuse recipe/form in this corpus**, and the form is multi-piece rather than the later timeless two-choux stereotype.
-- Frascati 1856 is repeatedly claimed by later sources; Bailleux's 1856 provenance confirms a real Maison Frascati professional connection through M. A. Cintract.
-- Targeted pre-1873 searches have not yet produced an inspectable Religieuse object. This is negative-search coverage, **not evidence of absence**.
+- A new pre-Gouffé professional witness is now directly verified: the Saint Petersburg Polytechnic University Electronic Library identifies **Bailleux, *Le Pâtissier moderne*, Paris 1860**, and its institutional machine-readable table of contents lists a dedicated **`Religieuse`** entry inside Chapter V `Gâteaux garnis`.
+- Therefore the old corpus statement `Gouffé 1873 = earliest directly verified professional named Religieuse` is **SUPERSEDED**.
+- Correct current distinction:
+  - **1860 Bailleux** = earliest directly verified **professional named entry/section** in this corpus;
+  - **1873 Gouffé** = earliest exact **recipe/form pages directly inspected** in this corpus.
+- The 1860 scan is access-restricted for anonymous Internet users, so exact Bailleux page/recipe/form remains `LOCATOR_HOLD / CONTENT_HOLD`; no access controls are bypassed.
+- Rare-book bibliography identifies the 1860 book as a **third edition, revised/corrected/enlarged**, while Christie's verifies the first edition as **1856**. It is now a P0 edition-history question whether `Religieuse` was already present in 1856 or added before 1860.
+- Frascati 1856 remains a later origin tradition, although Bailleux's genuine first-edition provenance connects him professionally to M. A. Cintract / Maison Frascati. Do not infer the 1856 recipe from that provenance.
+- Modern retellings conflict about the alleged 1856 geometry. Do not reconstruct it as historical fact.
 
 ### Paris-Brest
 
@@ -74,7 +80,7 @@ The substantive audit found **content drift**, not a broken control plane: the m
 - Current Durand Maison = **1910**.
 - La Poste + a direct interview with Louis Durand's great-grandson preserve **1909**.
 - A weak local chronology gives **1911** and a Bauget signal; this remains `C / DISCOVERY` only.
-- Exact cake chronology is therefore unresolved; search window is **1909–1911**. Do not invent `commission 1909 → launch 1910` without a period record.
+- Exact cake chronology is unresolved; search window is **1909–1911**. Do not invent `commission 1909 → launch 1910` without a period record.
 
 ### Opéra
 
@@ -99,8 +105,10 @@ The substantive audit found **content drift**, not a broken control plane: the m
 ### Canelé
 
 - Nouvelle-Aquitaine's institutional history rejects the convent-origin story as established fact.
-- 1985 professional institutionalization / Confrérie / spelling layer is independently corroborated by professional, regional and library sources.
-- Exact **1985 INPI collective-mark object** remains `LOCATOR_HOLD`; repetition of the 1985 story is not a substitute for the legal record.
+- Professional Gironde pastry testimony says that in 1985 the departmental pastry organization created the Confrérie, removed one `n` from `cannelé`, and filed the one-`n` name with INPI; regional/library sources independently report the collective-mark step.
+- INPI's own historical coverage includes French marks, valid or expired, from **1976**, and BOPI pages for French marks from **1982**. A genuine 1985 French filing is therefore within the official historical search horizon.
+- Exact mark number, historical holder/deposant, filing/publication dates, classes and BOPI page remain `LOCATOR_HOLD`.
+- Holder search must include the historical professional-union line, not only the modern Confrérie title; current owner/predecessor hypotheses remain leads until the register object is found.
 
 ### Tarte Tropézienne
 
@@ -117,29 +125,32 @@ The substantive audit found **content drift**, not a broken control plane: the m
 - Independent contemporaneous 1903 witness is tightly located to *Bulletin de la Société de géographie du Cher*, `1re année, 1902-1903`, pp.127–138. Full serial object identified; exact Tatin leaf pending.
 - Jullemier correction: **c.1903 = described meal/event; 1915 = publication date of *Contes de Sologne***. Never call Jullemier a 1903 publication.
 - Besnard 1921 target is narrowed to BnF serial `Blois et le Loir-et-Cher`, ISSN 0995-8347, cote `4-LC11-1357`; exact issue/page open.
+- 1923 *Livret d'or* Tatin recipe is tightly located to printed **p.85**; direct page-context review remains open.
 - BnF confirms Curnonsky/Rouff `L'Orléanais` volume, 1926; exact Tatin page open.
+- Exact RetroNews route is identified for *Paris-Soir*, **25 Aug 1929 p.5**, plus *La Dépêche du Berry*, **11 Sep 1931 p.2**.
 
 **Accident-legend genealogy**
 
 - Current early 1899/1903 documentary network establishes the famous Hôtel Tatin apple-tart specialty, not an accident.
 - Leclercq/Delétang report no located Curnonsky passage carrying the famous accident anecdote.
-- A vague clumsiness precursor is scholarly-located to *Horizons d'Argonne* **1976, p.97**; exact issue/pagination is unresolved and must not be guessed from a 1976 issue with incompatible pagination.
-- A developed promotional legend is associated with the Confrérie around **1979**. The current Confrérie page itself labels the birth narrative a `légende` and states Journal officiel registration on **27 March 1979**.
-- Official Journal-officiel guidance confirms that association publications **before 2 January 1985** belong to the older JORF publication stream rather than the later JOAFE stream. The exact 1979 original notice still has to be acquired. Third-party declaration/creation dates (`9 Mar` / `16 Mar`) remain non-controlling until that primary notice/statutes are obtained.
+- Preserve the scholarly citation exactly as ***Horizons d'Argonne*, `n°30 à 39, 1976, p.97`** for a vague clumsiness precursor; original page/bound-run mapping remains open. Do not silently rewrite it to `n°30–31`.
+- A developed promotional legend is associated with the Confrérie around **1979**. The current Confrérie page itself labels the birth narrative a `légende` and states Journal officiel publication/registration on **27 March 1979**.
+- Official Journal-officiel guidance confirms that association publications **before 2 January 1985** belong to the older JORF stream rather than later JOAFE. The exact 1979 original notice/prospectus remains open; third-party March creation/declaration dates remain non-controlling.
 
 **Pre-Tatin inversion-technique genealogy**
 
 - A 1790 professional/mastery `tourte retournée` lead exists through scholarly historical work; exact primary legal/professional object remains open.
-- Urbain Dubois, *La pâtisserie d'aujourd'hui*, **2e éd., E. Dentu, 1894**, is now an identified BnF/Gallica historical full object: `https://gallica.bnf.fr/ark:/12148/bpt6k3412588h`.
+- Urbain Dubois, *La pâtisserie d'aujourd'hui*, **2e éd., E. Dentu, 1894**, is an identified BnF/Gallica historical full object: `https://gallica.bnf.fr/ark:/12148/bpt6k3412588h`.
 - The exact `Tarte aux pêches molles` scan leaf and wording about fruit variants remain `LOCATOR_HOLD` because the Gallica viewer/API did not expose the relevant page in the current environment.
-- This means the future article must distinguish `pre-existing inversion technique` from `Hôtel Tatin version/name/fame`; it is unsafe to claim the sisters invented the general upside-down-fruit-tart technique.
+- The future article must distinguish `pre-existing inversion technique` from `Hôtel Tatin version/name/fame`; it is unsafe to claim the sisters invented the general upside-down-fruit-tart technique.
 
 ## Evidence boundary
 
 - `A3` participant/institutional pages prove what that participant/institution currently states; they do not automatically prove an earlier event.
 - `B1` can triangulate, expose conflicts and supply tight locators but cannot alone make a disputed historical claim quote-safe.
 - **route resolved != content verified**.
-- Negative search coverage never proves historical non-existence.
+- A verified TOC/structural entry is stronger than vague discovery but does not substitute for an inspected recipe page.
+- Negative search coverage never proves historical non-existence and must be revised when a new object is found.
 - OCR may navigate a verified full object but direct quotations require page/context verification.
 - An unauthorized modern upload can expose an acquisition lead but cannot be promoted merely because its text is searchable.
 
@@ -157,11 +168,11 @@ No Product repository has been modified by this wave.
 
 ## Current P0 acquisition queue
 
-1. Direct page images: de Kock 1848 p.4 col.1; Bailleux 1856 p.74; Michigan *Vanity Fair* 1861 p.50 col.1; Lacam 1893 p.44/p.49; *Le Gaulois* 1899 p.3; *Le Journal* 1899 p.1.
-2. Tatin: exact 1903 Bulletin page; Dubois 1894 `Tarte aux pêches molles` leaf; primary 1790 `tourte retournée` object; Jullemier 1915 page; Besnard 1921 issue/page; Curnonsky/Rouff 1926 page.
-3. Tatin myth genealogy: exact *Horizons d'Argonne* 1976 p.97 with correct issue/pagination; original 1979 Confrérie prospectus/statutes and old-JORF association notice; search 1926–1975 for earlier accident motifs.
-4. Paris-Brest: contemporaneous **1909–1911** advertising/menu/trade/local-directory evidence, including Durand/Bauget.
-5. Religieuse: pre-1873 Frascati/Cintract/name sources and first clearly standard two-choux depiction.
+1. Direct page images: de Kock 1848 p.4 col.1; Bailleux 1856 Éclairs p.74; Michigan *Vanity Fair* 1861 p.50 col.1; Lacam 1893 p.44/p.49; *Le Gaulois* 1899 p.3; *Le Journal* 1899 p.1.
+2. Religieuse edition history: determine whether Bailleux **1856** already contains `Religieuse`; lawfully acquire the exact **1860** Religieuse page/recipe; continue Frascati/Cintract and first standard two-choux search.
+3. Tatin: exact 1903 Bulletin page; Dubois 1894 `Tarte aux pêches molles` leaf; primary 1790 `tourte retournée` object; Jullemier 1915 page; Besnard 1921 issue/page; Curnonsky/Rouff 1926 page; 1923 p.85 / 1929 p.5 / 1931 p.2 direct page reviews.
+4. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 under the exact `n°30 à 39` citation; original 1979 Confrérie prospectus/statutes and old-JORF notice; search 1926–1975 for earlier accident motifs.
+5. Paris-Brest: contemporaneous **1909–1911** advertising/menu/trade/local-directory evidence, including Durand/Bauget.
 6. Legal records: exact INPI canelé 1985 collective mark; Tropézienne historical patent/mark; Kouign-Amann association/mark claims.
 7. 2000 Feuilles: authorized Hermé source for Ladurée `Millefeuille praliné` → `2000 Feuilles` recollection; earliest 1998–2001 catalogue/sale evidence.
 8. Mont-Blanc: Farmer 1896 p.357 page-image/credit review; earlier named European forms before 1896.
