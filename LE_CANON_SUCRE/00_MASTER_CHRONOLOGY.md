@@ -13,12 +13,13 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 | **1848** | Éclair | Charles Paul de Kock, *L’Atelier de demoiselles ou l’apothicaire de Pontoise*, is tightly located to printed p.4 col.1 with cream-filled `éclairs` | `EARLIEST CURRENT FRENCH PASTRY LOCATOR / 1848 EDITION + BNF DIGITIZATION PROVENANCE CONFIRMED / PRIMARY PAGE PENDING` |
 | 1856 | Éclair | BHVF records a separate literary pastry use | `DOCUMENTED lexical witness`, no longer earliest current locator |
 | 1856 | Éclair | Bailleux, *Le Pâtissier moderne*, professional `Éclairs` recipe | `FULL BOOK OBJECT IDENTIFIED / PRINTED p.74 TIGHTLY LOCATED / DIRECT PAGE PENDING` — https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC |
-| 1856 | Religieuse | Modern recaps attribute an ancestor to Frascati; Bailleux trained at Maison Frascati | `DISPUTED / CONTEMPORARY RELIGIEUSE OBJECT MISSING / NEGATIVE SEARCH COVERAGE IS NOT ABSENCE PROOF` |
+| 1856 | Religieuse / Frascati | Later sources attribute an ancestor/invention to Frascati; Bailleux first-edition provenance ties him to M. A. Cintract / Maison Frascati | `ORIGIN EVENT DISPUTED / 1856 FIRST-EDITION RELIGIEUSE CONTENT UNRESOLVED`; provenance does not prove recipe presence |
+| **1860** | Religieuse | Bailleux expanded/third edition, *Le Pâtissier moderne*, institutional SPbPU TOC directly lists `Religieuse` in Chapter V `Gâteaux garnis` | `DIRECT PROFESSIONAL NAMED ENTRY VERIFIED AT INSTITUTIONAL TOC LEVEL / EXACT PAGE+RECIPE+FORM PENDING`; earliest named professional entry currently verified in corpus — https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info |
 | 1860 | Kouign-Amann | Douarnenez official tourism attributes creation to Yves-René Scordia | `LOCAL TRADITION / early record missing` |
 | 1861-02-02 | Éclair | New York *Vanity Fair*, p.50 col.1 `éclairs` locator | `MICHIGAN 1861 VOLUME IDENTIFIED / TIGHT PAGE-COLUMN LOCATOR / DIRECT PAGE PENDING` — https://quod.lib.umich.edu/m/moajrnl/acg4267.0003.000?view=toc |
 | 1864 | Éclair | Littré pastry-sense dictionary milestone | `DOCUMENTED lexicographic milestone`, not first known use |
 | 1873 | Saint-Honoré | Gouffé describes base + pâte-à-choux crown + small choux | `DOCUMENTED PRIMARY` |
-| 1873 | Religieuse | Gouffé describes multi-choux `flan à la religieuse` forms | `DOCUMENTED PRIMARY / EARLIEST DIRECTLY VERIFIED PROFESSIONAL RELIGIEUSE IN CURRENT CORPUS` |
+| 1873 | Religieuse | Gouffé describes multi-choux `flan à la religieuse` forms | `DOCUMENTED PRIMARY / EARLIEST EXACT RELIGIEUSE RECIPE+FORM PAGES DIRECTLY INSPECTED IN CURRENT CORPUS`; 1860 named entry now predates it structurally |
 | 1873 | Éclair | Gouffé links éclairs to pains à la duchesse / pâte à choux | `DOCUMENTED PRIMARY` |
 | 1873 | Baba/Savarin | Gouffé documents rum baba and savarin as distinct named professional forms | `DOCUMENTED PRIMARY` |
 | 1891 | Mont-Blanc lineage | Artusi recipe 653 documents chestnut strands + whipped cream | `DOCUMENTED PRIMARY ITALIAN PRE-ANGELINA CONSTRUCTION` |
@@ -68,7 +69,8 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 
 - Saint-Honoré `1847` / `1863`: not primary-closed; current Lacam map points to p.44 for 1840 account and p.49 for a separate technical statement.
 - Éclair `1856 as first known pastry use`: superseded by current 1848 locator; 1848 is not an invention date.
-- Religieuse `1856 as closed invention`: Frascati remains unresolved; Gouffé 1873 is only the earliest directly verified professional form **in this corpus**.
+- Religieuse `1873 as first professional named occurrence`: **superseded** by Bailleux 1860 institutional TOC. The current safe split is `1860 named professional entry / 1873 earliest exact recipe-form pages inspected`; 1856 edition content remains unresolved.
+- Religieuse `1856 as closed Frascati invention`: unresolved; provenance is not event proof.
 - Paris-Brest cake `1891`: race date only. Exact cake date remains 1909/1910 conflict; 1911 is discovery-only.
 - Kouign-Amann `1860`: local tradition pending early record.
 - Tatin `Jullemier published in 1903`: false date conflation; c.1903 event vs 1915 publication.
@@ -83,12 +85,12 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 
 ## Chronology next actions
 
-1. Acquire direct page images for de Kock 1848, Bailleux 1856, Michigan *Vanity Fair* 1861, Lacam p.44/p.49, *Le Gaulois* 1899 and *Le Journal* 1899.
-2. Tatin technique: exact Dubois 1894 `Tarte aux pêches molles` leaf in Gallica `bpt6k3412588h`; primary 1790 `tourte retournée` mastery/legal object.
-3. Tatin documentary network: exact 1903 Bulletin leaf, Jullemier 1915 page, Besnard 1921 issue/page, 1923 Livret p.85, Curnonsky/Rouff 1926 page, Paris-Soir 1929 p.5 and Dépêche du Berry 1931 page content.
-4. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 while preserving the exact scholarly citation `n°30 à 39`; original 1979 Confrérie prospectus/statutes and pre-1985 old-JORF association notice; search 1926–1975 for earlier accident motifs.
-5. Paris-Brest: contemporaneous 1909–1911 Durand/Bauget advertising, menu, trade or directory evidence.
-6. Religieuse: pre-1873 Frascati/Cintract sources and first standard two-choux depiction.
+1. Acquire direct page images for de Kock 1848, Bailleux 1856 Éclairs p.74, Michigan *Vanity Fair* 1861, Lacam p.44/p.49, *Le Gaulois* 1899 and *Le Journal* 1899.
+2. Religieuse: compare Bailleux 1856 vs 1860 editions; lawfully acquire the 1860 `Religieuse` page/recipe; continue Frascati/Cintract and modern two-choux transition research.
+3. Tatin technique: exact Dubois 1894 `Tarte aux pêches molles` leaf in Gallica `bpt6k3412588h`; primary 1790 `tourte retournée` mastery/legal object.
+4. Tatin documentary network: exact 1903 Bulletin leaf, Jullemier 1915 page, Besnard 1921 issue/page, 1923 Livret p.85, Curnonsky/Rouff 1926 page, Paris-Soir 1929 p.5 and Dépêche du Berry 1931 page content.
+5. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 while preserving the exact scholarly citation `n°30 à 39`; original 1979 Confrérie prospectus/statutes and pre-1985 old-JORF association notice; search 1926–1975 for earlier accident motifs.
+6. Paris-Brest: contemporaneous 1909–1911 Durand/Bauget advertising, menu, trade or directory evidence.
 7. Exact INPI objects for canelé 1985, Tropézienne historical patent/mark and Kouign-Amann legal claims.
 8. Authorized Hermé source for Ladurée precursor + earliest 1998–2001 2000 Feuilles catalogue/sale evidence.
 9. Farmer 1896 page-image/credit review + earlier named European Mont-Blanc search.
