@@ -14,7 +14,7 @@ PREVIOUS = ROOT / "data/heart-entry-citation-pass-current-v11-2026-08-09.json"
 DELTA = ROOT / "data/heart-part5-native-citation-review-2026-08-09.json"
 HUMAN = ROOT / "СЕРИЯ СЕРДЦЕ/136_PART5_NATIVE_ENTRY_CITATION_PASS_2026-08-09.md"
 PREVIOUS_BLOB = "58e9dcf7f724b03c7b9d09b49f75922f8bf73b23"
-DELTA_BLOB = "3dcf8f2ce5fc05c28203fdabdb5bbec59423aa50"
+DELTA_BLOB = "c4c29e9ef3188824473cd984df42bc009a350219"
 COMPLETE = {"HEART-BOOK-I2", "HEART-BOOK-II", "HEART-BOOK-III2", "HEART-BOOK-III3", "HEART-BOOK-IV", "HEART-BOOK-V", "HEART-BOOK-X1"}
 OPEN = {"HEART-BOOK-I1", "HEART-BOOK-I3", "HEART-BOOK-I4", "HEART-BOOK-III1", "HEART-BOOK-III4", "HEART-BOOK-VI", "HEART-BOOK-VII", "HEART-BOOK-VIII", "HEART-BOOK-IX", "HEART-BOOK-X2", "HEART-BOOK-X3"}
 REOPENED = {"HEART-BOOK-I1", "HEART-BOOK-I3", "HEART-BOOK-I4", "HEART-BOOK-III1", "HEART-BOOK-III4", "HEART-BOOK-X2", "HEART-BOOK-X3"}
@@ -62,6 +62,10 @@ require(delta.get("entry", {}).get("id") == "HEART-BOOK-V", "Part V delta identi
 require(delta.get("disposition", {}).get("entryCitationPassComplete") is True, "Part V delta not complete")
 require(delta.get("disposition", {}).get("assembledReaderCitationReviewComplete") is True, "Part V reader review not complete")
 require(delta.get("disposition", {}).get("newDirectQuotesApproved") == 0, "Part V delta approves new quotes")
+reader_review = delta.get("readerReview", {})
+require(reader_review.get("scriptureReferencesDetected") == 19, "Part V reader Scripture count drift in delta")
+require(reader_review.get("ownerUnionExactMatches") == 15, "Part V reader exact owner-match count drift in delta")
+require(len(reader_review.get("readerOnlyScriptureReferences", [])) == 4, "Part V reader-only Scripture disposition count drift in delta")
 require(delta.get("retainedRepairAndHoldBacklog") == {
     "historicalProductSourceRepairsRequired": 4,
     "historicalDossierUrlHoldsRetained": 55,
@@ -88,6 +92,7 @@ require(receipt_ref.get("gitBlob") == DELTA_BLOB, "V12 delta blob drift")
 require(receipt_ref.get("authorityId") == delta.get("authorityId"), "V12 delta authority mismatch")
 require(receipt_ref.get("entryId") == "HEART-BOOK-V" and receipt_ref.get("entryOrder") == 11, "V12 delta identity drift")
 require(receipt_ref.get("part5DossierUrlHoldsAdded") == 12, "V12 Part V hold delta drift")
+require(receipt_ref.get("part5ReaderOnlyScriptureLocatorsDispositioned") == 4, "V12 Part V reader-only Scripture disposition delta drift")
 require(receipt_ref.get("part5NewSourceUrlRepairs") == 0, "V12 Part V source repair delta drift")
 require(receipt_ref.get("part5NewUnresolvedInternalPaths") == 0, "V12 Part V unresolved path delta drift")
 require(receipt_ref.get("newDirectQuotesApproved") == 0, "V12 quote delta drift")
@@ -165,6 +170,7 @@ if HUMAN.is_file():
         "CURRENT NATIVE-AUTHORITY CITATION PASSES COMPLETE = 7 / 18",
         "CURRENT CITATION PASSES OPEN = 11 / 18",
         "CURRENT DOSSIER URL HOLDS = 67 = 55 retained + 12 Part V",
+        "4 reader-only Scripture locators dispositioned explicitly",
         "HEART-BOOK-X2 NATIVE SOURCE AUTHORITY RECONCILIATION",
     ):
         require(marker in human, f"V12 human mirror missing marker: {marker}")
