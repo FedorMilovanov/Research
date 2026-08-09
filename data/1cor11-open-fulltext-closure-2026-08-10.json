@@ -1,0 +1,35 @@
+{
+  "schema": "1cor11-open-fulltext-closure-v1",
+  "date": "2026-08-10",
+  "base_main": "6fde93455e67cb5f2bb7461b51b3d5f760151d02",
+  "status": ["FOURTH-PASS", "OPEN-FULLTEXT-CLAIM-CLOSURE", "CONSERVATIVE-WEIGHTED", "FAIL-CLOSED", "RESEARCH-ONLY", "PUBLICATION-HOLD"],
+  "authority_file": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZ_OPEN_FULLTEXT_CLAIM_CLOSURE_2026-08-10.md",
+  "direct_open_controls": {
+    "callon_2024": {
+      "claim": "wives/free(d)-wives is a serious current model; scholarly consensus absent",
+      "result": "retain WIVES_VS_ALL_WOMEN = OPEN B/C"
+    },
+    "gill_1990": {
+      "claim": "Roman male capite-velato/status background real; exact Corinth trigger reconstructed; female portraiture mixed",
+      "result": "retain ROMAN_BACKGROUND=A and EXACT_TRIGGER=B; reject universal-female-veil shortcut"
+    },
+    "fitzmyer_qumran": {
+      "claim": "Qumran angelology strengthens holy/liturgical angel interpretation as background",
+      "result": "retain HOLY_LITURGICAL_ANGELS=B not A"
+    }
+  },
+  "new_fail_closed_cautions": [
+    "UNVEILED_WOMAN_EQUALS_PROSTITUTE_UNIVERSALLY",
+    "SHORT_OR_SHAVED_WOMAN_EQUALS_PROSTITUTE_OR_ADULTERESS_UNIVERSALLY",
+    "ALL_CORINTHIAN_WOMEN_ALWAYS_WORE_ONE_VEIL_FORM",
+    "ALL_FEMALE_SLAVES_SHARED_ONE_HAIRSTYLE",
+    "ROMAN_RITUAL_PROVES_EXACT_CHURCH_TRIGGER",
+    "CALLON_PROVES_WIVES_ONLY",
+    "QUMRAN_PROVES_EXACT_ANGEL_IDENTITY"
+  ],
+  "publication": {
+    "product_write": false,
+    "site_publication": false,
+    "publication_hold": true
+  }
+}
