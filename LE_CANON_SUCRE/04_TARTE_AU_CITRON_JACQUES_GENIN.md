@@ -6,7 +6,7 @@
 
 ## Краткий статус
 
-`GENRE HISTORY OPEN / ENGLISH LEMON-TARTLET ARCHITECTURE LOCATED IN ACTON 1845 / 1845 INSTITUTIONAL FULL OBJECT + PUBLIC-DOMAIN CUSTODY VERIFIED / EXACT RECIPE FACSIMILE PAGE STILL TO INSPECT / 1855 LEMON-CREAM PRIMARY TEXT / 1870 PROFESSIONAL LEMON-CHEESE-CAKE NAMED ENTRY / 1877 DIRECT FRENCH-ALSATIAN TOURTE-AU-CITRON WITNESS / GENIN AUTHORIZED AUTHOR-BOOK SOURCE CLOSED FOR TECHNIQUE BY 2010 / GENIN 2009 CREATION-YEAR STILL B1-PROBABLE / MODERN FRENCH CONVERGENCE UNRESOLVED`
+`GENRE HISTORY OPEN / ENGLISH LEMON-TARTLET ARCHITECTURE LOCATED IN ACTON 1845 FIRST-EDITION-BASED TEXT / ACTON 1845 WELLCOME EDITION CUSTODY SPLIT VERIFIED / rdz664vd+b21531869 = THIRD EDITION, NOT FIRST-EDITION FACSIMILE / z22c8gru = SEPARATE 1845 683-PAGE CANDIDATE, EDITION LABEL NOT YET CLOSED / EDITION_MATCH_HOLD + PAGE_IMAGE_HOLD ON P431/P434 / 1855 LEMON-CREAM PRIMARY TEXT / 1870 PROFESSIONAL LEMON-CHEESE-CAKE NAMED ENTRY / 1877 DIRECT FRENCH-ALSATIAN TOURTE-AU-CITRON WITNESS / GENIN AUTHORIZED AUTHOR-BOOK SOURCE CLOSED FOR TECHNIQUE BY 2010 / GENIN 2009 CREATION-YEAR STILL B1-PROBABLE / MODERN FRENCH CONVERGENCE UNRESOLVED`
 
 ## Modern Genin — authorized author source + independent chronology
 
@@ -75,21 +75,9 @@ The historical search has now materially strengthened that transnational hypothe
 
 ## Major architecture result — Eliza Acton 1845
 
-### The full historical object and rights are independently pinned
+### First-edition text map and institutional scan custody are now kept separate
 
-Wellcome Collection / University of Leeds:
-https://wellcomecollection.org/works/rdz664vd
-
-Wellcome identifies Eliza Acton, *Modern Cookery, in All Its Branches*, London, Longman, Brown, Green, and Longmans, **1845**, as an online digitized object. Its record exposes **679 images**, identifies the physical volume and marks the digitized work with a **Public Domain Mark**.
-
-The same Leeds/Medical Heritage Library scan is mirrored on Wikimedia Commons under Internet Archive identifier **`b21531869`**, likewise dated **1845**, 679 pages and marked public domain:
-https://commons.wikimedia.org/wiki/File:Modern_cookery,_in_all_its_branches_-_reduced_to_a_system_of_easy_practice,_for_the_use_of_private_families_(IA_b21531869).pdf
-
-These institutional/collection records close object identity and give a strong rights lane. They do **not by themselves** prove the exact recipe text on a specific page.
-
-### 1845 first-edition text map — `Common Lemon Tartlets` and store filling
-
-The Online Books Page at the University of Pennsylvania describes the available web transcription of Acton's *Modern Cookery* as **based on the first edition, 1845**. The transcription's title page itself gives London / Longman, Brown, Green and Longmans / 1845:
+The Online Books Page at the University of Pennsylvania describes the available web transcription of Acton's *Modern Cookery* as **based on the first edition, 1845**. The transcription's title page gives London / Longman, Brown, Green and Longmans / 1845:
 https://onlinebooks.library.upenn.edu/webbin/who/Acton%2C%20Eliza%2C%201799-1859
 https://fiftywordsforsnow.com/ebooks/acton/actoncontents.html
 
@@ -101,20 +89,39 @@ That first-edition-based text maps the pastry chapter as follows:
 - `Lemon Sandwiches` — p.433;
 - **`Store Mixture for Lemon Tartlets which will remain good for a year or two` — p.434**.
 
-The transcribed `Common Lemon Tartlets` is architecturally important: eggs, sugar, butter, lemon juice/rind and a small quantity of flour are mixed as the filling; **patty-pans are lined with thin puff-paste, filled two-thirds full and baked**. This is already a recognizable lemon-filled pastry-shell architecture in an English 1845 source.
-
-The adjacent `Store Mixture for Lemon Tartlets` is even closer to a lemon-curd-like assembly: butter, sugar, egg yolks/whites, lemon rind and juice are stirred over gentle heat until thick; when needed the cooled mixture is put into **patty-pans lined with thin puff-paste** and baked.
+The transcribed `Common Lemon Tartlets` is architecturally important: eggs, sugar, butter, lemon juice/rind and a small quantity of flour are mixed as the filling; **patty-pans are lined with thin puff-paste, filled two-thirds full and baked**. The adjacent store mixture cooks butter, sugar, eggs and lemon over gentle heat until cream-thick, cools it, then later uses it in thin puff-paste shells for baking.
 
 A United States newspaper gives an additional independent transmission witness: *The Georgia Citizen* printed `Common Lemon Tartlets` on **16 August 1850**, including the thin puff-paste shell and lemon filling. That directly demonstrates transatlantic circulation of the recipe by 1850, but it is a transmission witness, not evidence that the United States originated the form.
 
-Evidence boundary:
+### Wellcome/Leeds object A — `rdz664vd`: explicitly third edition
 
-- the **1845 edition/object identity is institutionally closed** through Wellcome/Leeds and independent catalogue mirrors;
-- the recipe wording/page map is strongly exposed by a transcription explicitly based on the 1845 first edition and cross-consistent with the 1845 book structure;
-- the current automated viewer did not expose the **specific original scan leaf** for p.431/p.434, so the exact facsimile page remains `PAGE_IMAGE_HOLD` before verbatim quotation/facsimile use;
-- the 1850 newspaper independently corroborates period circulation of the same architecture but does not substitute for Acton's original page image;
-- this is nevertheless a much stronger architecture result than the prior standalone `Lemon Cream` node and shifts the open question away from whether shell + lemon filling existed at all;
-- it does **not** prove French invention, modern pâte-sucrée/emulsified-curd architecture, blind-baked assembly, or meringue.
+Wellcome Collection / University of Leeds:
+https://wellcomecollection.org/works/rdz664vd
+
+The institutional record dates the object to **1845**, exposes **679 images**, marks it with a **Public Domain Mark**, and explicitly labels the physical book **`Third edition, greatly improved`**, with physical description `xxx, 607 pages, 1 unnumbered page, 32 pages`.
+
+Its Wikimedia Commons / Medical Heritage Library mirror is IA **`b21531869`**. Because this is the same Leeds scan, it inherits the same edition identity. It is therefore **not valid facsimile custody for first-edition printed p.431/p.434 merely because the publication year is also 1845**.
+
+This corrects the previous corpus conflation. `rdz664vd` / `b21531869` remains a useful public-domain historical object and edition-comparison candidate, but it must not be cited as the original first-edition page image for the p.431/p.434 text map.
+
+### Wellcome/Leeds object B — `z22c8gru`: separate 1845, 683-page candidate
+
+Wellcome Collection / University of Leeds:
+https://wellcomecollection.org/works/z22c8gru
+
+The institutional record separately identifies another **1845** *Modern Cookery* object, exposes **760 images**, gives physical description **`xxxii, 683 pages, 5 unnumbered pages, 32 pages`**, and marks it with a **Public Domain Mark**. Unlike `rdz664vd`, the currently exposed metadata does **not** show an edition statement.
+
+The pagination makes this a much more plausible acquisition target for the first-edition-based p.431/p.434 text map, but plausibility is not edition proof. Until title page / edition statement / pagination continuity are directly checked, this object remains **`EDITION_MATCH_CANDIDATE`**, not `FIRST_EDITION_FACSIMILE_VERIFIED`.
+
+### Evidence boundary after correction
+
+- **First-edition text mapping** of `Common Lemon Tartlets` p.431 and `Store Mixture for Lemon Tartlets` p.434 remains strong through the explicitly first-edition-based transcription.
+- **Architecture claim remains strong:** a recognizable shell + lemon filling construction is mapped to Acton 1845 and independently visible in U.S. print by 1850.
+- **`rdz664vd` / `b21531869` is third edition** and cannot close first-edition p.431/p.434 facsimile custody.
+- **`z22c8gru` is a separate 1845, 683-page Leeds candidate**, but its edition match is not yet directly verified from the exposed metadata.
+- Therefore exact Acton facsimile custody is now correctly typed as **`EDITION_MATCH_HOLD + PAGE_IMAGE_HOLD`**, not merely `PAGE_IMAGE_HOLD`.
+- No scan-frame arithmetic may be inferred from printed pagination.
+- None of this proves French invention, modern pâte-sucrée/emulsified-curd architecture, blind-baked assembly, or meringue.
 
 ## Additional primary-object layer — lemon cream and named forms
 
@@ -146,6 +153,8 @@ Current evidence boundary:
 - the exact p.227 recipe/form has not yet been directly inspected in this wave, so ingredients and form remain `CONTENT_HOLD`;
 - Acton 1845 means Jeanes is no longer needed to establish the mere existence of an English lemon-filled pastry architecture; Jeanes remains valuable as professional-confectioner transmission.
 
+A separate Medical Heritage Library/Internet Archive full scan exists for a **1873 third edition** (`b20405881`), and Open Library identifies that full object. That later printing is useful as a lawful page-acquisition route for testing whether the third-edition appendix text is stable, but it does not silently substitute for the 1870 Google Books printing without an edition-content comparison.
+
 ## Direct French/Alsatian named-form witness — Gérard 1877
 
 Wikisource facsimile/transcription of Charles Gérard, *L’Ancienne Alsace à table*, Berger-Levrault, **1877**, scan page 219 / Chapter VII:
@@ -174,7 +183,7 @@ Therefore:
 
 ## Ответы, отрицания и альтернативные объяснения
 
-Current evidence now establishes an English lemon-tartlet architecture in 1845, later English cream/professional transmission, and a French-language named `tourte au citron` by 1877. It still does not close the specifically modern French architecture or its national-origin story.
+Current evidence establishes a strongly first-edition-mapped English lemon-tartlet architecture in 1845, direct U.S. transmission by 1850, later English cream/professional transmission, and a French-language named `tourte au citron` by 1877. It still does not close the specifically modern French architecture or its national-origin story.
 
 Do not write:
 
@@ -193,13 +202,14 @@ For the older genre, keep separate:
 5. tart shells filled before baking vs blind-baked shells filled afterward;
 6. cooked/baked lemon custard vs later emulsified butter-rich cream;
 7. meringued vs unmeringued forms;
-8. British/European transmission vs specifically French codification.
+8. British/European transmission vs specifically French codification;
+9. first-edition text mapping vs exact-edition facsimile custody.
 
 The modern object can be canonical even if its component genealogy is transnational.
 
 ## Анализ и границы допустимой формулировки
 
-The modern Genin evidence is now split correctly:
+The modern Genin evidence is split correctly:
 
 - **authorized author technique/source custody by 2010** = closed through Éditions Alternatives / Genin-Astier book identity and scope;
 - **2009 creation date for the citron-basilic version** = still `PROBABLE`, supported by strong later B1 journalism rather than a located 2009 Genin statement/catalogue;
@@ -207,15 +217,17 @@ The modern Genin evidence is now split correctly:
 
 The major historical correction is now:
 
-- **1845 Acton**: first-edition text map contains `Common Lemon Tartlets` and a cooked `Store Mixture for Lemon Tartlets`; institutionally verified 1845 full object exists, exact recipe facsimile page still to inspect;
-- **1850 Georgia Citizen**: period U.S. newspaper directly republishes `Common Lemon Tartlets`, establishing transatlantic transmission by that date;
+- **1845 Acton first-edition text**: maps `Common Lemon Tartlets` p.431 and a cooked `Store Mixture for Lemon Tartlets` p.434;
+- **1845 Wellcome `rdz664vd` / IA `b21531869`**: explicitly third edition, 679 images, public domain; useful historical object but **not** first-edition p.431/p.434 facsimile custody;
+- **1845 Wellcome `z22c8gru`**: separate 760-image / xxxii+683-page public-domain candidate; edition identity still needs direct closure;
+- **1850 Georgia Citizen**: directly republishes `Common Lemon Tartlets`, establishing transatlantic transmission by that date;
 - **1855 Webster**: directly inspected standalone `Lemon Cream`;
 - **1870 Jeanes**: professional `Lemon Cheese Cakes` named entry / p.227 locator;
 - **1877 Gérard**: directly inspected French-language `tourte au citron` nomenclature witness.
 
-Thus the open problem is no longer `when did a lemon filling meet pastry?` in broad European history. A recognizable English shell + lemon-filling construction is already tightly mapped to **1845** and is independently visible in U.S. print by **1850**. The remaining high-value questions are:
+Thus the open problem is no longer `when did a lemon filling meet pastry?` in broad European history. A recognizable shell + lemon-filling construction is tightly mapped to **1845** and independently visible in U.S. print by **1850**. The remaining high-value questions are:
 
-- direct facsimile closure of Acton p.431/p.434;
+- exact edition-match and facsimile closure of Acton p.431/p.434;
 - how/when comparable architecture is documented in French professional literature;
 - when the familiar French pâte-sucrée + smooth lemon cream/emulsion becomes standard;
 - when meringue enters the French chain;
@@ -223,10 +235,13 @@ Thus the open problem is no longer `when did a lemon filling meet pastry?` in br
 
 ## Хронология
 
-- **1845** — Acton, *Modern Cookery*: first-edition-based text directly maps `Common Lemon Tartlets` p.431 and cooked `Store Mixture for Lemon Tartlets` p.434; 1845 Wellcome/Leeds full object and public-domain custody verified; exact recipe scan leaf still to inspect;
+- **1845** — Acton first-edition-based text maps `Common Lemon Tartlets` p.431 and cooked `Store Mixture for Lemon Tartlets` p.434;
+- **1845** — Wellcome/Leeds `rdz664vd`, 679 images, is explicitly **Third edition, greatly improved**; it must not be used as first-edition p.431/p.434 facsimile custody;
+- **1845** — Wellcome/Leeds `z22c8gru`, 760 images, physical `xxxii, 683 pages...`, is a separate public-domain edition-match candidate; exposed metadata does not yet close its edition identity;
 - **1850-08-16** — *Georgia Citizen* directly republishes `Common Lemon Tartlets`; transatlantic transmission witness, not origin proof;
 - **1855** — Webster, direct `Lemon Cream`, p.141: thickened lemon/egg/sugar cream served independently;
-- **1870** — Jeanes, *Gunter's Modern Confectioner*, direct TOC entry `Lemon Cheese Cakes`, p.227; exact recipe page still to inspect;
+- **1870** — Jeanes, *Gunter's Modern Confectioner*, direct TOC entry `Lemon Cheese Cakes`, p.227; exact 1870 recipe page still to inspect;
+- **1873** — a separate full MHL/IA third-edition Jeanes scan (`b20405881`) is identified as a potential comparison route; not yet promoted as the 1870 page;
 - **1873** — Dumas full historical object directly identified; targeted direct search has not yet surfaced a modern-style lemon tart, but absence is not claimed;
 - **1877** — Gérard directly lists `la tourte au citron` in an Alsatian inventory of tartes/tourtes; architecture unspecified;
 - earliest directly inspected French professional recipe combining recognizable shell + lemon cream — `UNRESOLVED`;
@@ -238,12 +253,12 @@ Thus the open problem is no longer `when did a lemon filling meet pastry?` in br
 
 ## Anatomy / technique
 
-Acton 1845 directly sharpens the historical technique matrix:
+The first-edition-based Acton text sharpens the historical technique matrix:
 
 - one lemon-tartlet method mixes eggs/sugar/butter/lemon with a little flour and bakes the filling inside thin puff paste;
 - a second lemon-tartlet mixture cooks butter/sugar/eggs/lemon over gentle heat until cream-thick, cools/stores it, then puts it into thin puff-paste shells for baking.
 
-Authorized Genin source custody now supports a later, distinct authored technique family by 2010:
+Authorized Genin source custody supports a later, distinct authored technique family by 2010:
 
 - tart dough and separate baking;
 - citrus cream;
@@ -263,14 +278,15 @@ Future technical sources should test: over-sweetening, overcooked/curdled cream,
 
 ## Myth vs Document
 
-**EUROPEAN ARCHITECTURE:** Acton 1845 strongly locates a recognizable English lemon-filled tartlet architecture and cooked lemon-tartlet filling; institutional full-object custody is verified, exact recipe facsimile leaf remains open.  
+**EUROPEAN ARCHITECTURE:** Acton 1845 first-edition-based text strongly locates a recognizable English lemon-filled tartlet architecture and cooked lemon-tartlet filling.  
+**EDITION CUSTODY:** `rdz664vd` / `b21531869` is explicitly third edition; `z22c8gru` is a separate 1845 683-page candidate whose edition match remains open. Therefore p.431/p.434 facsimile custody remains `EDITION_MATCH_HOLD + PAGE_IMAGE_HOLD`.  
 **TRANSMISSION:** Georgia Citizen 1850 directly republishes `Common Lemon Tartlets`, proving period transatlantic circulation without proving U.S. origin.  
 **PRIMARY COMPONENT HISTORY:** Webster 1855 directly documents `Lemon Cream`; Jeanes 1870 directly exposes a professional `Lemon Cheese Cakes` entry.  
 **FRENCH-LANGUAGE NAME HISTORY:** Gérard 1877 directly documents `tourte au citron`.  
 **GENIN AUTHOR SOURCE:** Alternatives 2010 officially identifies the Genin/Astier lemon-tart book and its technique scope; exact 2009 creation year remains separate and B1-probable.  
 **DUMAS SEARCH BOUNDARY:** 1873 full object verified; targeted search has not yielded a modern-style lemon-tart hit, but no absence claim is made.  
-**PRIMARY GAPS:** Acton exact page image; exact Dumas relevant range; Jeanes p.227; earliest comparable French recipe architecture; meringue and later emulsified-cream transitions; Genin-controlled 2009 date source.  
-**PROHIBITED SHORTCUT:** `Genin invented tarte au citron`, `Gérard 1877 is the modern tarte au citron`, `Acton invented the modern tart`, or any simple Britain/France invention claim without the transmission/convergence chain.
+**PRIMARY GAPS:** Acton exact-edition page image; exact Dumas relevant range; Jeanes 1870 p.227; earliest comparable French recipe architecture; meringue and later emulsified-cream transitions; Genin-controlled 2009 date source.  
+**PROHIBITED SHORTCUT:** `Genin invented tarte au citron`, `Gérard 1877 is the modern tarte au citron`, `Acton invented the modern tart`, `rdz664vd is the first edition`, or any simple Britain/France invention claim without the transmission/convergence chain.
 
 ## Права, архив и публикационные HOLD
 
@@ -278,7 +294,7 @@ Le Monde/Fooding/Relais Desserts photographs and modern recipe text remain propr
 
 The Genin/Astier 2010 book is an authorized author-source target but remains copyrighted; use the publisher record for identity/scope and acquire/quote pages only under lawful access and normal quotation limits. Do not use publisher/book photography as Product media without permission.
 
-Acton is unusually strong for visual rights: Wellcome explicitly marks its 1845 digitized object with a **Public Domain Mark** and provides a required credit line; Wikimedia Commons mirrors the Leeds/Medical Heritage Library scan with the same public-domain status. Before Product facsimile use, pin the exact p.431/p.434 scan leaf, credit line, resolution and bytes/SHA if durably acquired.
+Both located Wellcome/Leeds 1845 Acton objects have a **Public Domain Mark** and explicit Wellcome credit routes. Rights are therefore strong at object level, but **rights closure is not edition closure**. `rdz664vd` is the third edition; `z22c8gru` remains the edition-match candidate. Before any Product facsimile use, first close the exact edition/title-page match, then pin the exact recipe leaf, credit line, resolution and bytes/SHA if durably acquired.
 
 The Gérard/Wikisource page is a strong facsimile candidate, but its exact scan/transcription licence/credit must be captured in the visual-rights ledger before Product use. Google Books object availability is evidence access, not automatic Product image permission.
 
@@ -286,9 +302,10 @@ The Gérard/Wikisource page is a strong facsimile candidate, but its exact scan/
 
 ## Следующее проверяемое действие
 
-1. Pin and visually inspect the original Acton 1845 scan leaves corresponding to printed p.431 and p.434; record exact Wellcome/Commons credit and SHA only if bytes are durably acquired.
-2. Find a Genin-controlled 2009 statement/catalogue if one survives; do not keep searching for a generic `participant technique source`, because the authorized 2010 Genin/Astier book now closes that lane.
-3. Complete the bounded Dumas 1873 lemon-entry/index audit; record negative coverage without turning it into absence proof.
-4. Directly inspect Jeanes 1870 p.227.
-5. Search French professional cookbooks 1800–1950 under `tarte au citron`, `tourte au citron`, `crème citron`, `crème de citron`, `citron meringué`, spelling/OCR variants, using Acton 1845 and Gérard 1877 as anchors rather than assuming national priority.
-6. Identify earliest directly inspectable French meringued vs unmeringued forms and classify filling technique.
+1. **Acton edition-match closure:** inspect title/edition matter for `z22c8gru` and compare pagination/structure against the first-edition-based text map; explicitly exclude `rdz664vd`/`b21531869` from first-edition facsimile claims.
+2. Only after edition match is closed, visually inspect the authentic scan leaves corresponding to printed p.431 and p.434; record exact Wellcome credit and SHA only if bytes are durably acquired.
+3. Directly inspect Jeanes 1870 p.227; use the 1873 MHL/IA full scan only as an edition-comparison route, not a silent substitute.
+4. Find a Genin-controlled 2009 statement/catalogue if one survives; do not keep searching for a generic `participant technique source`, because the authorized 2010 Genin/Astier book now closes that lane.
+5. Complete the bounded Dumas 1873 lemon-entry/index audit; record negative coverage without turning it into absence proof.
+6. Search French professional cookbooks 1800–1950 under `tarte au citron`, `tourte au citron`, `crème citron`, `crème de citron`, `citron meringué`, spelling/OCR variants, using Acton 1845 and Gérard 1877 as anchors rather than assuming national priority.
+7. Identify earliest directly inspectable French meringued vs unmeringued forms and classify filling technique.
