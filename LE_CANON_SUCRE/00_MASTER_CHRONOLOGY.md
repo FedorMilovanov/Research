@@ -1,65 +1,68 @@
 # LE CANON SUCRÉ — master chronology
 
-**Status:** `WORKING CHRONOLOGY / FAIL-CLOSED`  
-Dates below are not all equal. Each row is tagged as documentary, participant/institutional, secondary lead or unresolved.
+**Status:** `WORKING CHRONOLOGY / FAIL-CLOSED / WAVE 2`  
+Dates below are not all equal. Each row is tagged as documentary, participant/institutional, secondary locator or unresolved.
 
 | Date | Object | Milestone | Status / evidence |
 |---|---|---|---|
 | 1730 | Stohrer | Current house dates founding at rue Montorgueil to 1730 | `CONFIRMED participant history` — https://stohrer.fr/notre-maison/ |
-| 18th c. | Baba | Stohrer currently attributes baba to Nicolas Stohrer; Tokay/Malaga versions diverge and rum comes later | `HOUSE TRADITION / event not primary-closed` |
-| 1840 | Saint-Honoré | Lacam/Charabot 1893 account, currently available through a secondary transcription, says Auguste Julien brought the Bordeaux `Flan Suisse` idea and the cake was first made at Maison Chiboust in 1840 | `PROBABLE / PRIMARY OBJECT IDENTIFIED, EXACT PAGE NOT YET PINNED` — Gallica: https://gallica.bnf.fr/ark:/12148/bpt6k9735327k |
-| 1847 | Saint-Honoré | Some modern institutional retellings use 1847 | `CONFLICT WITH LACAM 1840 / DO NOT USE AS SOLE ORIGIN DATE` |
-| 1856 | Éclair | BHVF records literary pastry use `ses éclairs` in H. de Kock | `DOCUMENTED lexical witness` — https://www.cnrtl.fr/definition/bhvf/%C3%A9clair |
-| 1856 | Éclair | Louis Bailleux's professional *Le Pâtissier moderne* has been tightly located by specialist secondary research to an `Éclairs` recipe on p. 74 | `PRIMARY BOOK FULL OBJECT IDENTIFIED / DIRECT p.74 SCAN VERIFICATION PENDING` — https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC |
-| 1856 | Religieuse | La Poste modern recap attributes creation to Signor Frascati; Bailleux's 1856 book is unusually relevant because its author trained at Maison Frascati, but no Religieuse page has yet been found in it | `DISPUTED / no contemporaneous religieuse locator acquired` |
+| 18th c. | Baba | Stohrer attributes baba to Nicolas Stohrer; Tokay/Malaga versions diverge and rum comes later | `HOUSE TRADITION / event not primary-closed` |
+| 1840 | Saint-Honoré | Lacam/Charabot 1893 later historical account connects Maison Chiboust, Auguste Julien and Bordeaux `Flan Suisse` to 1840 | `PROBABLE / FULL PRIMARY VOLUME IDENTIFIED / ORIGIN ACCOUNT TIGHTLY LOCATED TO PRINTED p.44 / DIRECT PAGE INSPECTION PENDING` — https://gallica.bnf.fr/ark:/12148/bpt6k9735327k |
+| 1847 | Saint-Honoré | Some modern retellings use 1847 | `CONFLICT / DO NOT USE AS SOLE ORIGIN DATE` |
+| 1856 | Éclair | BHVF records literary pastry use `ses éclairs` | `DOCUMENTED lexical witness` — https://www.cnrtl.fr/definition/bhvf/%C3%A9clair |
+| 1856 | Éclair | Bailleux, *Le Pâtissier moderne*, professional `Éclairs` recipe | `FULL BOOK OBJECT IDENTIFIED / PRINTED p.74 TIGHTLY LOCATED / DIRECT PAGE INSPECTION PENDING` — https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC |
+| 1856 | Religieuse | Modern recap attributes creation to Frascati; Bailleux trained at Maison Frascati but no Religieuse page has been found | `DISPUTED / CONTEMPORARY LOCATOR MISSING` |
 | 1860 | Kouign-Amann | Douarnenez official tourism attributes creation to Yves-René Scordia | `LOCAL TRADITION / early record missing` |
-| 1861-02-02 | Éclair | *Vanity Fair* (New York), ch. 4, p. 50 col. 1, is tightly located by historical-language/OED-based secondary work to an English-language `éclairs` occurrence | `TIGHT SECONDARY LOCATOR / ORIGINAL ISSUE SCAN NOT YET ACQUIRED` — https://wordhistories.net/2025/03/25/eclair-cake/ |
-| 1864 | Éclair | TLFi etymology gives Littré pastry sense | `DOCUMENTED lexicographic milestone`, not first known use |
-| 1873 | Saint-Honoré | Gouffé directly describes base + crown of pâte à choux + small choux | `DOCUMENTED PRIMARY` |
-| 1873 | Religieuse | Gouffé describes multi-choux `flan à la religieuse` constructions | `DOCUMENTED PRIMARY`; modern two-choux shape cannot be back-projected universally |
-| 1873 | Éclair | Gouffé directly links varied `éclairs` to `pains à la duchesse` and gives choux pastry for both | `DOCUMENTED PRIMARY` |
-| 1873 | Baba/Savarin | Gouffé indexes/recipes `baba moderne glacé au rhum`, baba polonais and savarin separately | `DOCUMENTED PRIMARY` |
-| 1891 | Mont-Blanc lineage | Artusi recipe 653, `Dolce di marroni con panna montata`, documents chestnut mixture forced/passed into strands with whipped cream | `DOCUMENTED PRIMARY ITALIAN PRE-ANGELINA CONSTRUCTION` — https://it.wikisource.org/wiki/Scienza_in_cucina_e_l%27arte_di_mangiar_bene/Torte_e_dolci_al_cucchiaio/653._Dolce_di_marroni_con_panna_montata |
-| 1891 | Paris-Brest | First Paris–Brest–Paris cycle race | `DOCUMENTED BnF institutional` — https://gallica.bnf.fr/selections/fr/html/images/cyclisme |
-| 1896 | Mont-Blanc | Fannie Merritt Farmer's first edition contains a dessert named `Mont Blanc`, located to p. 357 by a verified-first-printing preservation browser | `STRONG FIRST-EDITION WITNESS / ORIGINAL SCAN DIRECT INSPECTION PENDING` — https://cardmyrecipe.com/collections/fannie-farmer |
-| 1899-03-18 | Opéra | Secondary locator convergence points to a Grand Hôtel `gâteau opéra` advertisement in *Le Gaulois*, p. 3 | `TIGHTENED SECONDARY LOCATOR / primary scan not yet acquired`; BnF title record: https://catalogue.bnf.fr/ark:/12148/cb32779904b.public |
-| 1899-12-18 | Tatin | Secondary locator convergence points to `la tarte de Mlle Tatin` in *Le Journal*, p. 1 | `TIGHTENED SECONDARY LOCATOR / primary scan not yet acquired` — https://www.cuisine-lucullus.com/histoire-de-la-cuisine/13-tout-un-plat/836-tarte-des-soeurs-tatin |
-| 1903 | Mont-Blanc | Escoffier's *Guide culinaire* includes `Mont-Blanc aux marrons`, an independent French professional continuity witness | `DOCUMENTED HISTORICAL PROFESSIONAL TEXT` — https://fr.wikisource.org/wiki/Le_guide_culinaire/Entremets |
-| 1903 | Angelina | House history dates founding of Angelina by Anton Rumpelmayer | `CONFIRMED participant history` |
-| 1903 | Tatin | Académie du Goût points to Lucien Jullemier account | `SECONDARY LOCATOR LEAD / primary needed` |
+| 1861-02-02 | Éclair | New York *Vanity Fair*, p.50 col.1 `éclairs` locator | `UNIVERSITY OF MICHIGAN 1861 VOLUME OBJECT IDENTIFIED / EXACT PAGE-COLUMN FROM TIGHT SECONDARY LOCATOR / DIRECT PAGE INSPECTION PENDING` — https://quod.lib.umich.edu/m/moajrnl/acg4267.0003.000?view=toc |
+| 1864 | Éclair | Littré pastry-sense dictionary milestone | `DOCUMENTED lexicographic milestone`, not first known use |
+| 1873 | Saint-Honoré | Gouffé describes base + pâte-à-choux crown + small choux | `DOCUMENTED PRIMARY` |
+| 1873 | Religieuse | Gouffé describes multi-choux `flan à la religieuse` forms | `DOCUMENTED PRIMARY`; later two-choux stereotype cannot be back-projected universally |
+| 1873 | Éclair | Gouffé links éclairs to pains à la duchesse / pâte à choux | `DOCUMENTED PRIMARY` |
+| 1873 | Baba/Savarin | Gouffé documents rum baba and savarin as distinct named professional forms | `DOCUMENTED PRIMARY` |
+| 1891 | Mont-Blanc lineage | Artusi recipe 653 documents chestnut strands + whipped cream | `DOCUMENTED PRIMARY ITALIAN PRE-ANGELINA CONSTRUCTION` — https://it.wikisource.org/wiki/Scienza_in_cucina_e_l%27arte_di_mangiar_bene/Torte_e_dolci_al_cucchiaio/653._Dolce_di_marroni_con_panna_montata |
+| 1891 | Paris-Brest | First Paris–Brest–Paris cycle race | `DOCUMENTED BnF INSTITUTIONAL` — https://gallica.bnf.fr/selections/fr/html/images/cyclisme |
+| 1896 | Mont-Blanc | Farmer first edition, printed p.357, recipe headed `Mont Blanc` | `DOCUMENTED PRIMARY FULL OBJECT / EXACT PRINTED PAGE LOCATED` — https://archive.org/details/bostoncookingsc00collgoog ; OCR/page map verifies p.357, page-image inspection still required for quote/facsimile use |
+| 1899-03-18 | Opéra | Grand Hôtel `gâteau opéra` reported on *Le Gaulois* p.3 | `EXACT GALLICA ITEM/PAGE ROUTE IDENTIFIED / PAGE BYTES NOT YET INSPECTED` — https://gallica.bnf.fr/ark:/12148/bpt6k5305801/f3.image.langFR |
+| 1899-12-18 | Tatin | `la tarte de Mlle Tatin` reported on *Le Journal* p.1 | `EXACT RETRONEWS ITEM/PAGE ROUTE IDENTIFIED / DIRECT CONTENT INSPECTION PENDING` — https://www.retronews.fr/journal/le-journal/18-decembre-1899/129/238489/1 |
+| 1903 | Mont-Blanc | Escoffier contains `Mont-Blanc aux marrons` | `DOCUMENTED HISTORICAL PROFESSIONAL TEXT` — https://fr.wikisource.org/wiki/Le_guide_culinaire/Entremets |
+| 1903 | Angelina | Current house dates opening/founding to 1903 | `CONFIRMED participant history` |
+| c.1903 | Tatin | Académie du Goût points to Lucien Jullemier account | `SECONDARY LOCATOR LEAD / primary object needed` |
 | 1907 | Paris-Brest | Durand family dates founding of house | `CONFIRMED participant history` |
-| 1909 | Paris-Brest | La Poste says race founders asked Louis Durand to create cake | `INSTITUTIONAL RECAP / conflict with 1910` |
-| 1910 | Paris-Brest | Durand family dates Louis Durand creation to 1910 | `STRONG PARTICIPANT TRADITION / contemporaneous record still needed` |
-| 1921 | Tatin | Académie du Goût points to Paul Besnard publication `La Tarte des Demoiselles Tatin` | `SECONDARY LOCATOR LEAD / primary needed` |
-| 1926 | Tatin | Curnonsky publication milestone | `SECONDARY LOCATOR LEAD / primary edition-page needed` |
-| 1937 | Canelé | Région Nouvelle-Aquitaine reports Jean Balde as first written trace identified by its research synthesis | `INSTITUTIONAL RESEARCH SUMMARY / exact underlying page needed` |
-| 1955 | Opéra | Dalloyau dates canonical house Opéra to 1955 | `STRONG PARTICIPANT + Comité Colbert corroboration` |
-| 1955 | Tropézienne | Current Maison dates Alexandre Micka creation of the pastry to 1955 | `STRONG PARTICIPANT TRADITION / contemporary press needed` |
-| 1956-05-03 → 1956-07-07 | Tropézienne / Bardot | Independent film sources date the Saint-Tropez shoot of *Et Dieu… créa la femme* to this period | `DOCUMENTED FILM CHRONOLOGY`; this prevents wording that Bardot named it "in 1955 during filming" — Radio France: https://www.radiofrance.fr/franceinter/et-dieu-crea-la-femme-8528446 |
-| 1956 | Tropézienne / Bardot | Later Bardot testimony strongly supports her discovery/promotion/`marraine` role, but exact naming date/mechanism remains retrospective | `STRONG RETROSPECTIVE TESTIMONY / CONTEMPORARY NAMING EVIDENCE OPEN` |
-| 1975 | Galette | Élysée says presidential reception of master bakers for Epiphany is a tradition since 1975 | `PRIMARY GOVERNMENT RECORD` |
-| 1985 | Canelé | Région reports Confrérie chose single-n spelling and deposited collective mark | `INSTITUTIONAL SUMMARY / exact INPI record needed` |
-| 1985 | Ispahan genealogy | Hermé interview recounts discovery of rose in Bulgaria | `DIRECT PARTICIPANT INTERVIEW` |
-| 1987 | Ispahan genealogy | Hermé interview recounts `Paradis`, rose + raspberry, at Fauchon | `DIRECT PARTICIPANT INTERVIEW` |
-| 1995 | Canelé research | Région reports DRAC-backed archaeological/archive work finding no convent evidence for modern canelé | `INSTITUTIONAL SUMMARY / underlying report acquisition priority` |
-| 1997 | Ispahan | Comité Colbert and Pierre Hermé Japan give 1997 Ispahan milestone | `CROSS-LANGUAGE OFFICIAL CONFIRMATION` |
-| ca. 1999–2000 | 2000 Feuilles | Gault&Millau links creation/name to millennium context | `B1 PROBABLE / primary launch catalogue needed` |
+| 1909 | Paris-Brest | La Poste gives 1909; RTL interview with Louis Durand's great-grandson also says family has kept the same cake since 1909 | `INSTITUTIONAL RECAP + DIRECT FAMILY INTERVIEW / CONFLICT WITH CURRENT MAISON 1910` — https://www.rtl.fr/actu/debats-societe/stephane-descendant-du-createur-du-paris-brest-on-garde-le-meme-gateau-depuis-1909-7777480967 |
+| 1910 | Paris-Brest | Current Durand family website dates Louis Durand creation to 1910 | `STRONG CURRENT PARTICIPANT TRADITION / INTERNAL FAMILY-LINE CONFLICT WITH 1909 INTERVIEW / CONTEMPORARY RECORD NEEDED` — https://www.paris-brest.fr/notre-histoire/ |
+| 1921 | Tatin | Paul Besnard `La Tarte des Demoiselles Tatin` in `Blois et le Loir-et-Cher` | `MULTIPLE SECONDARY LOCATORS / PRIMARY ISSUE-PAGE STILL NEEDED` |
+| 1923 | Tatin | `Le Livret d'or... Salon d'automne` transmission object | `PRIMARY GALLICA OBJECT ROUTE IDENTIFIED / RELEVANT PAGE TO INSPECT` — https://gallica.bnf.fr/ark:/12148/bpt6k11817663 |
+| 1923-12-29 | Tatin | *Comœdia*, p.4 transmission route | `EXACT RETRONEWS PAGE ROUTE IDENTIFIED / CONTENT TO INSPECT` — https://www.retronews.fr/journal/comoedia/29-decembre-1923/775/2502411/4 |
+| 1926 | Tatin | Curnonsky diffusion milestone | `SECONDARY LOCATOR LEAD / primary edition-page needed` |
+| 1937 | Canelé | Région reports Jean Balde as earliest written trace identified by its research synthesis | `INSTITUTIONAL RESEARCH SUMMARY / underlying page needed` |
+| 1955 | Opéra | Dalloyau dates canonical house Opéra to 1955 | `STRONG PARTICIPANT + COMITE COLBERT CORROBORATION` |
+| 1955 | Tropézienne | Current Maison dates Micka pastry creation to 1955 | `STRONG PARTICIPANT TRADITION / contemporary press needed` |
+| 1956-05-03 → 1956-07-07 | Tropézienne / Bardot | Saint-Tropez shoot of *Et Dieu… créa la femme* | `DOCUMENTED FILM CHRONOLOGY`; rejects wording `named in 1955 during filming` |
+| 1956 | Tropézienne / Bardot | Later Bardot testimony supports discovery/promotion/`marraine` role | `STRONG RETROSPECTIVE TESTIMONY / CONTEMPORARY NAMING EVIDENCE OPEN` |
+| 1972-08-18 | Tropézienne IP | Secondary legal sources converge on French process/patent filing date | `TIGHT SECONDARY LEGAL LOCATOR / EXACT INPI PATENT OBJECT MISSING` |
+| 1975 | Galette | Élysée says master-baker Epiphany reception tradition dates to 1975 | `PRIMARY GOVERNMENT RECORD` |
+| 1985 | Canelé | Région reports Confrérie spelling decision and collective mark deposit | `INSTITUTIONAL SUMMARY / exact INPI object needed` |
+| 1985 | Ispahan genealogy | Hermé recounts discovery of rose in Bulgaria | `DIRECT PARTICIPANT INTERVIEW` |
+| 1987 | Ispahan genealogy | Hermé recounts `Paradis`, rose + raspberry, at Fauchon | `DIRECT PARTICIPANT INTERVIEW` |
+| 1995 | Canelé research | Région reports DRAC-backed work finding no convent evidence for modern canelé | `INSTITUTIONAL SUMMARY / underlying report priority` |
+| 1997 | Ispahan | Comité Colbert + Pierre Hermé Japan give 1997 milestone | `CROSS-LANGUAGE OFFICIAL CONFIRMATION` |
+| ca.1999–2000 | 2000 Feuilles | Gault&Millau links creation/name to millennium context | `B1 PROBABLE / primary launch catalogue needed` |
 | 2001 | Pierre Hermé | Japanese official timeline gives first France boutique milestone | `OFFICIAL TIMELINE` |
-| 2009 | Tarte citron / Genin | Le Monde dates citron-basilic version to 2009 | `B1 STRONG / direct participant record desired` |
-| 2026 | Galette | Élysée explicitly records republican galette without fève | `PRIMARY GOVERNMENT RECORD` |
+| 2009 | Tarte citron / Genin | Le Monde dates citron-basilic version to 2009 | `B1 STRONG / participant primary desired` |
+| 2026 | Galette | Élysée records republican galette without fève | `PRIMARY GOVERNMENT RECORD` |
 
 ## Dates prohibited as simple origin labels at current state
 
-- Saint-Honoré `1847` / `1863`: neither is primary-closed; Lacam's later account currently points instead to 1840 for first making at Maison Chiboust.
-- Paris-Brest cake `1891`: race date only; do not use as cake creation date.
+- Saint-Honoré `1847` / `1863`: not primary-closed; Lacam page-level locator instead points to an 1840 Maison Chiboust account on p.44, while p.49 is a separate technical statement.
+- Paris-Brest cake `1891`: race date only. Exact cake year remains 1909/1910 conflict even within later Durand-family evidence.
 - Religieuse `1856`: disputed modern attribution pending contemporaneous evidence.
 - Kouign-Amann `1860`: local tradition pending early record.
 - Tatin accident date: legend, not documentary milestone.
-- Canelé convent/18th-century origin: not supported as established fact by current regional institutional research.
-- Éclair `Carême / early 1800s`: no exact primary invention locator acquired; a professional recipe is already tightly located in Bailleux 1856.
-- Mont-Blanc `1903 invention`: rejected as a simple category-origin label; Artusi documents a closely related chestnut/cream construction in 1891 and Farmer has a named `Mont Blanc` in a verified 1896 first-edition record. Angelina 1903 is a house/signature milestone, not the category's earliest current witness.
-- Tropézienne `Bardot named it in 1955 during filming`: incompatible with the independently documented May–July 1956 shoot. Keep `1955 pastry creation` and `1956 Bardot/film episode` separate until contemporary naming evidence closes the sequence.
+- Canelé convent/18th-century origin: not established by current regional research.
+- Éclair `Carême / early 1800s`: no exact primary invention locator; Bailleux 1856 is already the strongest professional early target.
+- Mont-Blanc `1903 invention`: rejected; named Mont Blanc is directly present in Farmer 1896 p.357 and related construction in Artusi 1891.
+- Tropézienne `Bardot named it in 1955 during filming`: incompatible with documented May–July 1956 filming.
 
 ## Chronology next actions
 
-Each unresolved row must be replaced or strengthened with stable edition/issue/item URLs and exact page/leaf/column locators. A later research wave may move rows from `PROBABLE/DISPUTED` to `CONFIRMED`, but no status changes by repetition alone.
+Replace or strengthen unresolved rows with stable item URLs plus exact page/leaf/column and direct context inspection. No status changes by repetition alone.
