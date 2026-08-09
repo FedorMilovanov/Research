@@ -55,8 +55,9 @@ Historical source rows and old claim decisions are not silently deleted when lat
 | LCS-BA01 | https://stohrer.fr/notre-maison/ | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Current house tradition; explicitly acknowledges Tokay/Malaga divergence and later rum |
 | LCS-BA02 | https://stohrer.fr/produit/baba-au-rhum-individuel/ | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Current house calls baba historical creation of Nicolas Stohrer |
 | LCS-BA03 | https://stohrer.fr/notre-savoir-faire/ | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Current continuity of baba production |
-| LCS-BA04 | LCS-S008 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | 1873 primary rum-baba witness |
-| LCS-BA05 | LCS-S009 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | 1873 primary savarin witness |
+| LCS-BA04 | LCS-S008 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | 1873 exact primary `baba moderne glacé au rhum` witness |
+| LCS-BA05 | LCS-S009 | A1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | PUBLICATION_ELIGIBLE | REFERENCE | 1873 exact primary savarin witness |
+| LCS-BA06 | https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info | A2 | INSTITUTIONAL_RECORD_PLUS_OPEN_TOC_VERIFIED / SCAN_ACCESS_RESTRICTED | NAMED_ENTRY_TOC_VERIFIED / EXACT_PAGES_OPEN | RIGHTS_RESTRICTED | REFERENCE | Bailleux 1860 institutional TOC directly lists `Petits Savarins`, `Babas parisiens`, and separate `Savarin` / `Baba`; proves named professional forms in this edition, not rum use or exact recipe/form |
 
 ## Tarte au citron / Jacques Genin
 
@@ -66,6 +67,7 @@ Historical source rows and old claim decisions are not silently deleted when lat
 | LCS-TC02 | https://www.lemonde.fr/m-styles/article/2014/12/18/toque-de-chocolat_4543389_4497319.html | B1 | FULL_OBJECT_VERIFIED | COARSE_LOCATOR_ONLY | RIGHTS_UNKNOWN | REFERENCE | Genin profile and fresh-production philosophy |
 | LCS-TC03 | https://www.lemonde.fr/m-le-mag/article/2014/10/24/chic-un-dessert_4511148_4500055.html | B1 | FULL_OBJECT_VERIFIED | COARSE_LOCATOR_ONLY | RIGHTS_UNKNOWN | REFERENCE | Modern-classic context |
 | LCS-TC04 | https://lefooding.com/recettes/toquera-101-la-tarte-au-citron | B1 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Technique/recipe witness; do not reproduce recipe wholesale |
+| LCS-TC05 | https://www.relais-desserts.net/2026/01/19/il-etait-une-fois-la-tarte-au-citron/ | A3 | FULL_OBJECT_VERIFIED | EXACT_LOCATOR_VERIFIED | RIGHTS_UNKNOWN | REFERENCE | Professional association historical synthesis challenges simple timeless-native-French modern-tart genealogy and supplies Dumas/English lemon-cream acquisition leads; not primary origin proof |
 
 ## Opéra
 
@@ -195,7 +197,7 @@ The rows below are retained for audit history. Where a Wave 2 controlling decisi
 | LCS-C004 | Paris-Brest cake was created in 1891 | REJECTED AS CURRENT WORDING | LCS-PB02/03 | EVIDENCE_HOLD |
 | LCS-C005 | Louis Durand cake date is exactly 1910 | SUPERSEDED BY LCS-C031 | LCS-PB02/03/06 vs LCS-PB05 | see controlling decision |
 | LCS-C006 | Stohrer house currently attributes baba to Nicolas Stohrer and acknowledges divergent soaking stories | CONFIRMED | LCS-BA01 | none for participant-statement wording |
-| LCS-C007 | Rum baba is directly documented by 1873 | CONFIRMED | LCS-S008 | none |
+| LCS-C007 | Rum baba is directly documented by 1873 | CONFIRMED | LCS-S008 | none for bounded claim; this is not an absolute first-use date |
 | LCS-C008 | Genin citron-basilic version dates to 2009 | PROBABLE | LCS-TC01 | primary participant locator still desirable |
 | LCS-C009 | Canonical Dalloyau Opéra is a 1955 house creation | PROBABLE/STRONG | LCS-OP01/02/03/04 | contemporary 1955 locator still desired |
 | LCS-C010 | The name `gâteau opéra` first appeared in 1955 | DISPUTED | LCS-OP05/07/08 | content-verification hold on exact 1899 page |
@@ -237,6 +239,8 @@ The rows below are retained for audit history. Where a Wave 2 controlling decisi
 | LCS-C041 | A professional named `Religieuse` entry is directly verified in Bailleux's 1860 edition | `CONFIRMED CORPUS-BOUND NAMED-ENTRY CLAIM` | LCS-RG01 | exact 1860 page/form restricted; whether the 1856 first edition already contains `Religieuse` remains open |
 | LCS-C042 | Scordia's exact 1860 Kouign-Amann invention event is already primary/archivally closed | `REJECTED AS CURRENT EVIDENCE STATUS / STRONG LOCAL TRADITION ONLY` | LCS-KA01/03/04 | earliest contemporaneous name/recipe and Scordia-linked primary object remain EVIDENCE/LOCATOR_HOLD; exact 1999 INPI record separate |
 | LCS-C043 | The authorized identity of the Hermé books relevant to the Ladurée precursor is unresolved | `REJECTED`; official Maison records cleanly identify Buchet-Chastel 2022 and Plon 2025 acquisition targets | LCS-2F04/05 | exact precursor passage on an authorized readable page and first 1998–2001 catalogue still open |
+| LCS-C044 | Bailleux 1860 already contains professional named Baba/Savarin forms | `CONFIRMED CORPUS-BOUND NAMED-FORM CLAIM` | LCS-BA06 | exact 1860 pages, recipe/form and soaking alcohol are restricted/open; whether same entries occur in 1856 first edition remains unresolved |
+| LCS-C045 | The historical origin of the modern lemon-cream tarte au citron is already closed as a simple old purely French lineage | `UNRESOLVED / SIMPLIFIED ORIGIN WORDING REJECTED` | LCS-TC05 plus modern Genin sources | direct Dumas 1873 review, early English lemon-curd/cream sources, earliest French recognizable tart and meringue transition still required; TC05 is locator/falsification source, not primary proof |
 
 ## Rights queue
 
@@ -246,23 +250,25 @@ The rows below are retained for audit history. Where a Wave 2 controlling decisi
 - Farmer 1896, Bailleux 1856, de Kock 1848, *Vanity Fair* 1861, *Le Gaulois* 1899, *Le Journal* 1899 and Tatin 1903 Bulletin require page-level review plus item-level rights/credit decisions before facsimile publication.
 - SPbPU Bailleux 1860 exposes bibliographic/TOC metadata publicly but scan reading is access-restricted; do not bypass authentication/network restrictions and do not imply image rights.
 - Modern Hermé books are copyrighted; unauthorized searchable uploads may generate locators but must not be reproduced or treated as authorized custody.
-- Modern maison, press and participant photography: `RIGHTS_UNKNOWN` unless explicit item licence is found; do not lift into Product.
+- Modern press/professional-association/maison photography and recipe text remain proprietary/reference-only unless an explicit licence is found.
 - Élysée/municipal/region pages: factual citation is separate from photo reuse; image rights remain item-specific.
 
 ## Wave 2 acquisition queue after audit
 
 1. direct de Kock 1848 p.4 col.1 BnF/Gallica page;
 2. direct Bailleux 1856 p.74 and Michigan *Vanity Fair* 2 Feb 1861 p.50 col.1;
-3. Bailleux 1860 exact `Religieuse` page through lawful access and 1856-vs-1860 edition comparison;
-4. Lacam 1893 printed p.44/p.49;
-5. *Le Gaulois*, 18 Mar 1899 p.3 and *Le Journal*, 18 Dec 1899 p.1 direct page inspection;
-6. Tatin 1903 Bulletin exact page(s), Jullemier 1915 page, Besnard 1921 issue/page, 1923 p.85, Curnonsky/Rouff 1926 page, Paris-Soir 1929 p.5 and Dépêche 1931 p.2;
-7. Tatin *Horizons d'Argonne* `n°30 à 39, 1976, p.97` + original 1979 Confrérie prospectus / DILA-old-JORF notice;
-8. primary Urbain Dubois 1894 inverted-tart page and primary 1790 `tourte retournée` record to distinguish technique genealogy from Tatin-name genealogy;
-9. contemporaneous Paris-Brest 1909–1911 records, including Durand/Bauget and Maisons-Laffitte business/trade directories;
-10. exact INPI canelé 1985 collective mark, exact Tropézienne 1972 legal object and exact `Véritable Kouign-Amann de Douarnenez` 1999 trademark object;
-11. authorized Hermé page for Ladurée `Millefeuille praliné` → `2000 Feuilles` recollection and earliest 1998–2001 catalogue;
-12. Farmer 1896 p.357 page-image/credit review and pre-1896 European named `Mont-Blanc/Monte Bianco` search;
-13. May–July 1956 contemporary Saint-Tropez press on Micka/Bardot/name plus original Bardot testimony provenance;
-14. Polish primary/biographical records for Alexandre/Aleksander Micka;
-15. earliest Kouign-Amann printed name/recipe and Scordia-linked primary record.
+3. Bailleux 1860 exact `Religieuse`, `Baba/Babas parisiens`, `Savarin/Petits Savarins` pages through lawful access and 1856-vs-1860 edition comparison;
+4. Baba pre-1873 rum-specific search and first exact rum-use locator;
+5. Tarte au Citron: direct Genin participant source; Dumas 1873 lemon entries; early English lemon-curd/cream primary sources; earliest French recognizable lemon tart and meringue transition;
+6. Lacam 1893 printed p.44/p.49;
+7. *Le Gaulois*, 18 Mar 1899 p.3 and *Le Journal*, 18 Dec 1899 p.1 direct page inspection;
+8. Tatin 1903 Bulletin exact page(s), Jullemier 1915 page, Besnard 1921 issue/page, 1923 p.85, Curnonsky/Rouff 1926 page, Paris-Soir 1929 p.5 and Dépêche 1931 p.2;
+9. Tatin *Horizons d'Argonne* `n°30 à 39, 1976, p.97` + original 1979 Confrérie prospectus / DILA-old-JORF notice;
+10. primary Urbain Dubois 1894 inverted-tart page and primary 1790 `tourte retournée` record to distinguish technique genealogy from Tatin-name genealogy;
+11. contemporaneous Paris-Brest 1909–1911 records, including Durand/Bauget and Maisons-Laffitte business/trade directories;
+12. exact INPI canelé 1985 collective mark, exact Tropézienne 1972 legal object and exact `Véritable Kouign-Amann de Douarnenez` 1999 trademark object;
+13. authorized Hermé page for Ladurée `Millefeuille praliné` → `2000 Feuilles` recollection and earliest 1998–2001 catalogue;
+14. Farmer 1896 p.357 page-image/credit review and pre-1896 European named `Mont-Blanc/Monte Bianco` search;
+15. May–July 1956 contemporary Saint-Tropez press on Micka/Bardot/name plus original Bardot testimony provenance;
+16. Polish primary/biographical records for Alexandre/Aleksander Micka;
+17. earliest Kouign-Amann printed name/recipe and Scordia-linked primary record.
