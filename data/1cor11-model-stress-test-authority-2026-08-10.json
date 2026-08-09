@@ -1,0 +1,43 @@
+{
+  "topic": "1 Corinthians 11:2-16",
+  "date": "2026-08-10",
+  "status": "MODEL-STRESS-TEST / RESEARCH-ONLY / PUBLICATION-HOLD",
+  "models": [
+    "M1_MATERIAL_COVERING_HEADSHIP_ORDER",
+    "M2_MATERIAL_COVERING_WOMANS_AUTHORITY_INTERDEPENDENCE",
+    "M3_HAIR_HAIRSTYLE_ONLY",
+    "M4_ROMAN_RITUAL_STATUS_TRIGGER",
+    "M5_WIVES_FREE_FREED_WIVES",
+    "M6_LARGE_QUOTATION_REFUTATION",
+    "M7_INTERPOLATION_NON_PAULINE_BLOCK"
+  ],
+  "labels": [
+    "NATURAL",
+    "COMPATIBLE",
+    "EXTRA_ASSUMPTION",
+    "TENSION",
+    "MAJOR_TENSION",
+    "N_A"
+  ],
+  "result": {
+    "leading_whole_pericope_synthesis": "CALIBRATED_MATERIAL_COVERING_HEADSHIP_WITH_WOMAN_AGENCY_AND_MUTUALITY",
+    "hair_only": "C_SERIOUS_ALTERNATIVE",
+    "roman_trigger": "B_BACKGROUND_NOT_TOTAL_MODEL",
+    "wives_free_freed_wives": "OPEN_B_C",
+    "quotation_refutation": "D_C_LOW",
+    "interpolation": "D_C_LOW"
+  },
+  "nonnegotiable_corrections_inside_conservative_synthesis": [
+    "EXOUSIA_WOMAN_SUBJECT_A",
+    "MUTUAL_INTERDEPENDENCE_11_11_12_A",
+    "NO_UNIVERSAL_PROSTITUTION_SHAVING_FOLKLORE",
+    "NO_EXACT_CORINTH_TRIGGER_AS_A",
+    "NO_KEPHALE_LEXICAL_EXCLUSIVITY"
+  ],
+  "publication": {
+    "product_write": false,
+    "ui_implementation": false,
+    "site_publication": false,
+    "publication_hold": true
+  }
+}
