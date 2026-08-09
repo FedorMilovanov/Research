@@ -86,6 +86,7 @@
 | Q7: 11:5 vs 14:34–35 (пять стратегий) | `10_Q7_1COR11_5_VS_14_34.md` | PASS-1 |
 | Q5: «ради ангелов» 11:10 (кумранский фон + карта прочтений) | `13_Q5_ANGELS_1COR11_10_DOSSIER.md` | PASS-1 |
 | Фаза 1: статус комментаторской базы (Q1–Q10, L1–L7) | `12_PHASE1_COMMENTATOR_BASE_STATUS.md` | CLOSED (фаза 1) |
+| Каркас будущих статей серии (по стандарту сайта) | `14_ARTICLE_FRAMEWORK_SERIES_PLAN.md` | PLANNING |
 
 ---
 
