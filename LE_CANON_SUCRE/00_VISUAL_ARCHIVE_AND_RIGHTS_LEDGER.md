@@ -23,6 +23,14 @@
 | LCSV-014 | Ispahan | https://www.comitecolbert.com/membres/pierre-herme/ | Comité Colbert / house signature imagery | FULL_OBJECT_VERIFIED | RIGHTS_UNKNOWN | BLOCKED | Use as reference; seek explicit press-kit permission if desired |
 | LCSV-015 | Mont-Blanc | https://www.angelina-paris.fr/notre-savoir-faire | current house signature imagery | FULL_OBJECT_VERIFIED | RIGHTS_UNKNOWN / proprietary | BLOCKED | Reference-only until permission/licence |
 | LCSV-016 | Tropézienne | https://www.latartetropezienne.fr/fr/ | current house imagery | FULL_OBJECT_VERIFIED | RIGHTS_UNKNOWN / proprietary | BLOCKED | Historical photo discovery should go via archive/INA, not screenshot reuse |
+| LCSV-017 | Mont-Blanc precursor | https://it.wikisource.org/wiki/Scienza_in_cucina_e_l%27arte_di_mangiar_bene/Torte_e_dolci_al_cucchiaio/653._Dolce_di_marroni_con_panna_montata | Artusi, 1891, recipe 653 | FULL_OBJECT_VERIFIED | Wikisource reuse subject to page licence/attribution | REFERENCE / STRONG CANDIDATE | One of the best genuine archive interludes: chestnut strands + whipped cream before Angelina; title is not `Monte Bianco` |
+| LCSV-018 | Mont-Blanc | https://cardmyrecipe.com/collections/fannie-farmer | Farmer first printing 1896, `Mont Blanc`, p. 357 locator | PARTIAL_OBJECT | RIGHTS_UNKNOWN until original-scan host/item is opened | BLOCKED pending acquisition | High-value American facsimile target; do not screenshot preservation browser as substitute for original page |
+| LCSV-019 | Mont-Blanc | https://fr.wikisource.org/wiki/Le_guide_culinaire/Entremets | Escoffier 1903, `Mont-Blanc aux marrons` | FULL_OBJECT_VERIFIED | Wikisource reuse subject to terms | REFERENCE / STRONG CANDIDATE | French professional continuity witness contemporaneous with Angelina founding |
+| LCSV-020 | Éclair | https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC | Louis Bailleux, *Le Pâtissier moderne*, 1856; `Éclairs` tightly located to p. 74 | FULL_OBJECT_VERIFIED at book level | RIGHTS_UNKNOWN / page scan not directly acquired | BLOCKED pending exact page | Potentially stronger Éclair facsimile than Gouffé because it is 1856; exact scan must be opened first |
+| LCSV-021 | Éclair / US reception | original *Vanity Fair* New York issue still to acquire; locator source: https://wordhistories.net/2025/03/25/eclair-cake/ | 2 Feb 1861, p. 50 col. 1, `éclairs` in a sweets list | NOT_ACQUIRED primary / tight secondary locator | RIGHTS_UNKNOWN | BLOCKED | Excellent transatlantic reception document if stable original issue scan is found |
+| LCSV-022 | Opéra name genealogy | BnF title route https://catalogue.bnf.fr/ark:/12148/cb32779904b.public | *Le Gaulois*, 18 Mar 1899, p. 3 reported Grand Hôtel `gâteau opéra` advertisement | CATALOG_ONLY / exact issue page not acquired | RIGHTS_UNKNOWN | BLOCKED | Future facsimile should make clear this is name genealogy, not proof of identity with Dalloyau 1955 cake |
+| LCSV-023 | Tatin | secondary locator https://www.cuisine-lucullus.com/histoire-de-la-cuisine/13-tout-un-plat/836-tarte-des-soeurs-tatin | *Le Journal*, 18 Dec 1899, p. 1 reported `la tarte de Mlle Tatin` | NOT_ACQUIRED primary / tight secondary locator | RIGHTS_UNKNOWN | BLOCKED | High-value early printed-name facsimile target; primary issue scan required |
+| LCSV-024 | Tropézienne / Bardot testimony | https://www.latartetropezienne.fr/fr/blog/le-coffret-bb-trop-en-lhonneur-de-brigitte-bardot-n18 | Maison page preserving retrospective Bardot `marraine` testimony | FULL_OBJECT_VERIFIED | proprietary / letter-object rights and custody not yet known | BLOCKED | Find original letter/object; current webpage image/copy is reference evidence, not production-cleared archive material |
 
 ## Archive targets not yet acquired
 
@@ -33,35 +41,41 @@ Search for:
 - `Saint-Honoré`, `Chiboust`, `Julien/Jullien` in nineteenth-century pastry books;
 - `Paris-Brest` in 1909–1911 newspapers, menus and trade press;
 - `religieuse` + `Frascati` around 1850–1875;
-- `gâteau opéra` around 1899;
-- `Mlle Tatin` / `Demoiselles Tatin` around 1899–1926;
-- early `Mont-Blanc` chestnut recipes;
+- exact *Le Gaulois*, 18 March 1899 p. 3 `gâteau opéra` advertisement;
+- exact *Le Journal*, 18 December 1899 p. 1 `tarte de Mlle Tatin` occurrence;
+- earlier named `Mont-Blanc` / `Monte Bianco` chestnut recipes before 1896;
 - early `canelé/cannelé/canaule` records.
 
 Gallica research help:
 https://gallica.bnf.fr/accueil/fr/html/aide-a-la-recherche
 
-### INA
+### INA / cinema archives
 
-Target: contemporary/historical broadcast and film-related Tarte Tropézienne material. An INA catalogue hit alone is `CATALOG_ONLY`; obtain exact programme/item identity and rights boundary before promotion.
+Target: contemporary/historical Tarte Tropézienne and *Et Dieu… créa la femme* material. Film chronology is now independently established as May–July 1956; visual acquisition should focus on period Saint-Tropez shop/crew evidence and the provenance of Bardot's later letter/testimony. An INA catalogue hit alone remains `CATALOG_ONLY` until exact programme/item identity and rights boundary are captured.
 
 ### INPI
 
 Target exact records:
 
 - `canelé` collective mark (reported 1985);
-- Tarte Tropézienne mark/brand record reported around 1972;
+- Tarte Tropézienne mark/brand record often reported around 1972;
 - Kouign-Amann association/mark claims.
 
-A search result or modern house statement does not substitute for the INPI record.
+A search result or modern house statement does not substitute for the INPI record. Keep `marque`, `brevet`, trade name and secret recipe as legally distinct concepts.
 
-### NYPL / United States
+### United States
 
-Use Buttolph Menu Collection to find transmission/appearance of French pastry names in menus. Treat each menu as its own item with date/restaurant/place/rights. Do not claim French origin facts from later American menus; they document reception/transmission.
+Priority acquisitions now include:
+
+- Farmer first edition 1896, `Mont Blanc`, p. 357 original scan;
+- *Vanity Fair* (New York), 2 Feb 1861, p. 50 col. 1 original issue scan for `éclairs`;
+- NYPL Buttolph Menu Collection for dated French-pastry transmission/reception.
+
+Treat each American item as evidence of reception/transmission unless it independently proves an origin claim.
 
 ### Italy / Switzerland / Germany
 
-Priority visual/document lane: pre-1903 `Mont Blanc / Monte Bianco` chestnut preparations. Prefer digitized historical cookbooks with explicit public-domain/rights metadata.
+Artusi 1891 has now closed one major pre-Angelina architecture gap. Continue searching for the **named** forms `Mont Blanc`, `Mont-Blanc`, `Monte Bianco` before 1896 in Italian, Swiss, French and German digitized books.
 
 ## Design-ready visual classes
 
