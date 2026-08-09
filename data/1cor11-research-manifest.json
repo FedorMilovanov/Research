@@ -304,6 +304,117 @@
       "publicationState": "REFERENCE"
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "1COR11-SEVEN-ARTICLES-ARCH-32",
+      "path": "1_КОРИНФЯНАМ_11/32_SEVEN_ARTICLE_EXPANDED_SITE_ARCHITECTURE.md",
+      "scope": ["11:2-16", "7-article-architecture", "thematic-passports", "reader-pacing"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-ELLICOTT-33",
+      "path": "1_КОРИНФЯНАМ_11/33_ELLICOTT_1877_COMMENTARY_AND_CLASSICAL_ENGLISH_EXEGESIS.md",
+      "scope": ["11:2-16", "ellicott-1877", "shore", "lightfoot", "victorian-exegesis"],
+      "evidenceClass": "A3",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-CATACOMB-ART-34",
+      "path": "1_КОРИНФЯНАМ_11/34_EARLY_CHRISTIAN_ICONOGRAPHY_AND_CATACOMB_ART_DOSSIER.md",
+      "scope": ["11:2-16", "catacombs-priscilla", "callixtus", "orante-frescoes", "fractio-panis"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-OT-PRIESTLY-35",
+      "path": "1_КОРИНФЯНАМ_11/35_HEBREW_OT_PRIESTLY_AND_CANONICAL_BACKGROUND_DOSSIER.md",
+      "scope": ["11:2-16", "ot-background", "mitznefet", "migbaot", "sotah-num-5", "nazarite-num-6", "mourning-head"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-75-SOURCE-AUDIT-36",
+      "path": "1_КОРИНФЯНАМ_11/36_50_PLUS_SCHOLARLY_CONSERVATIVE_SOURCE_AUDIT_PASS.md",
+      "scope": ["11:2-16", "75-sources-audited", "classes-a1-b1", "manuscripts-qumran-patristics-monographs"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-PANORAMA-37",
+      "path": "1_КОРИНФЯНАМ_11/37_PANORAMIC_HISTORY_OF_VEILING_FROM_MESOPOTAMIA_TO_ROME.md",
+      "scope": ["11:2-16", "mesopotamia-mal-40", "tanakh-veiling", "greek-kredemnon", "roman-flammeum-palla"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-VEIL-KERCHIEF-38",
+      "path": "1_КОРИНФЯНАМ_11/38_VEIL_VS_KERCHIEF_IN_CHRISTIAN_HISTORY_AND_SLAVIC_CULTURE.md",
+      "scope": ["11:2-16", "carthage-tertullian", "medieval-wimple", "slavic-povoynik", "oprostovolositsya", "baptist-kerchief"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-CULTURAL-SHIFT-39",
+      "path": "1_КОРИНФЯНАМ_11/39_THE_GREAT_CULTURAL_SHIFT_1900_TO_2026_AND_MODERN_PRAXIS.md",
+      "scope": ["11:2-16", "1900-2026-shift", "flappers-bobbed-hair", "vatican-ii-1983", "head-covering-movement", "2026-praxis"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-WOMEN-PROPHETS-40",
+      "path": "1_КОРИНФЯНАМ_11/40_WOMEN_PROPHETS_AND_PRAYER_IN_BIBLICAL_CANON.md",
+      "scope": ["11:2-16", "women-prophets", "miriam", "deborah", "huldah", "anna", "philips-daughters"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-GIFT-VS-OFFICE-41",
+      "path": "1_КОРИНФЯНАМ_11/41_SPIRITUAL_GIFT_VS_PASTORAL_OFFICE_DISTINCTION.md",
+      "scope": ["11:2-16", "gift-vs-office", "charisma-vs-presbyterate", "1tim-3", "titus-1"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-PROOF-TEXTS-42",
+      "path": "1_КОРИНФЯНАМ_11/42_EGALITARIAN_PROOF_TEXTS_AND_EXEGETICAL_AUDIT.md",
+      "scope": ["11:2-16", "proof-texts", "junia-rom-16-7", "phoebe-rom-16-1", "priscilla-acts-18", "gal-3-28"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-ORDINATION-HISTORY-43",
+      "path": "1_КОРИНФЯНАМ_11/43_HISTORY_OF_WOMENS_ORDINATION_1800_YEAR_CONSENSUS.md",
+      "scope": ["11:2-16", "ordination-history", "1800-year-consensus", "1853-brown", "mainline-decline"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+>>>>>>> 8887aeb (feat(1cor11): integrate women-in-ministry, spiritual gift vs office, egalitarian proof-text audit, and 1800-year consensus dossiers)
       "id": "1COR11-ARTICLE-1-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md",
       "scope": ["11:2-3", "site-article", "headship", "trinity", "christ"],
@@ -347,6 +458,27 @@
       "status": "active",
       "rightsState": "ORIGINAL_COMPOSITION",
       "publicationState": "REFERENCE"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "id": "1COR11-ARTICLE-6-SITE",
+      "path": "1_КОРИНФЯНАМ_11/ARTICLE_6_SITE_READY_NATURE_AND_HAIR_1COR11_13_15.md",
+      "scope": ["11:13-15", "site-article", "physis", "kome", "hair-theology"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "ORIGINAL_COMPOSITION",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-ARTICLE-7-SITE",
+      "path": "1_КОРИНФЯНАМ_11/ARTICLE_7_SITE_READY_APOSTOLIC_CUSTOM_AND_CHURCH_PRAXIS_1COR11_16.md",
+      "scope": ["11:16", "site-article", "apostolic-custom", "church-unity", "series-conclusion"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "ORIGINAL_COMPOSITION",
+      "publicationState": "REFERENCE"
+>>>>>>> 8887aeb (feat(1cor11): integrate women-in-ministry, spiritual gift vs office, egalitarian proof-text audit, and 1800-year consensus dossiers)
     }
   ],
   "primaryTextWitnesses": [
