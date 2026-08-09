@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 12,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V12-2026-08-09",
+  "status": "PART5_NATIVE_AUTHORITY_PASS_COMPOSED_SEVEN_COMPLETE_SEVEN_REOPENED",
+  "generatedAt": "2026-08-09",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-v11-2026-08-09.json",
+    "gitBlob": "58e9dcf7f724b03c7b9d09b49f75922f8bf73b23",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V11-2026-08-09",
+    "countsBeforeDelta": {
+      "entryCitationPassComplete": 6,
+      "entryCitationPassOpen": 12,
+      "assembledReaderEntries": 14,
+      "assembledReaderCitationReviewsComplete": 6,
+      "dossierUrlHoldsRetained": 55,
+      "nativeAuthorityReopenedCompletedEntries": 7
+    }
+  },
+  "deltaReceipt": {
+    "path": "data/heart-part5-native-citation-review-2026-08-09.json",
+    "gitBlob": "3dcf8f2ce5fc05c28203fdabdb5bbec59423aa50",
+    "authorityId": "HEART-PART5-NATIVE-CITATION-REVIEW-2026-08-09",
+    "entryId": "HEART-BOOK-V",
+    "entryOrder": 11,
+    "effect": "first native-authority citation pass for Part V; current completion advances 6 to 7",
+    "part5DossierUrlHoldsAdded": 12,
+    "part5NewSourceUrlRepairs": 0,
+    "part5NewUnresolvedInternalPaths": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 7,
+    "entryCitationPassOpen": 11,
+    "assembledReaderEntries": 14,
+    "assembledReaderCitationReviewsComplete": 7,
+    "assembledReadersAwaitingCitationReviewOrNativeReconciliation": 7,
+    "missingStandaloneFinalReaders": 4,
+    "productSourceOnlyMissingReaderEntries": 1,
+    "researchDossierOnlyMissingReaderEntries": 3,
+    "nativeAuthorityReopenedCompletedEntries": 7,
+    "productSourceRepairsRequiredRetained": 4,
+    "historicalDossierUrlHoldsRetained": 55,
+    "part5DossierUrlHoldsRetained": 12,
+    "dossierUrlHoldsRetained": 67,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I2",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-V",
+    "HEART-BOOK-X1"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "reopenedByNativeSourceAuthority": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "readerState": {
+    "assembledReaders": 14,
+    "missingStandaloneReaders": [
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "assembledReaderAwaitingFirstCitationPass": [],
+    "assembledReadersNeedingNativeSourceReconciliation": [
+      "HEART-BOOK-I1",
+      "HEART-BOOK-I3",
+      "HEART-BOOK-I4",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-X2",
+      "HEART-BOOK-X3"
+    ]
+  },
+  "retainedBacklog": {
+    "historicalProductSourceRepairsRequired": 4,
+    "historicalDossierUrlHoldsRetained": 55,
+    "part5DossierUrlHoldsRetained": 12,
+    "dossierUrlHoldsRetained": 67,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "sourceAuthorityReconciliationsOpen": 7,
+    "silentlyClosedItems": 0
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewedAgainstCurrentAuthority": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "nativeSourceAuthorityReconciliationComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "NATIVE_SOURCE_AUTHORITY_RECONCILIATION",
+    "preferredEntryId": "HEART-BOOK-X2",
+    "reason": "Part V proves the native-authority citation method. X.2 is the smallest reopened section-scoped Product owner and is the best next transaction to prove reader/source reconciliation without touching the larger open standalone-reader lanes."
+  }
+}
