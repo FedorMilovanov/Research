@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "HEART-PART5-READER-ASSEMBLY-2026-08-09",
+  "status": "PART5_STANDALONE_READER_ASSEMBLED_CITATION_PASS_OPEN",
+  "generatedAt": "2026-08-09",
+  "exactBase": {
+    "researchCommit": "2128ac9d0b9d8320f52ba5a155c45e2f99d95bff",
+    "currentV10": {
+      "path": "data/heart-entry-citation-pass-current-v10-2026-08-09.json",
+      "gitBlob": "2a34228ecb29d3181c6e23f0f761a48c3af0ebd5",
+      "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V10-2026-08-09"
+    },
+    "productSnapshot": {
+      "repository": "FedorMilovanov/gb-is-my-strength",
+      "commit": "0fbe7d1ead9ebd1bea867418e254da438ec63329"
+    }
+  },
+  "entry": {
+    "order": 11,
+    "id": "HEART-BOOK-V",
+    "label": "V Сердце в борьбе с грехом",
+    "previousState": "PRODUCT_SOURCE_ONLY",
+    "currentState": "ASSEMBLED_READER_CITATION_OPEN",
+    "dedupOwner": "Owns the distinction between conscience-only restraint and Spirit-enabled warfare; it may summarize but not absorb III.2 regeneration, IV Scripture-reception, VI Pharisee/disciple or VIII beholding-glory ownership."
+  },
+  "sourceOwners": {
+    "primaryProduct": {
+      "path": "src/components/article-pilots/rimlyanam7/Rimlyanam7Body.astro",
+      "gitBlob": "35ed2f340ae725485533e322b3e1db0a68e01747",
+      "role": "Primary Romans 6–8 / Romans 7 interpretive and pastoral warfare owner"
+    },
+    "boundedResearchSupport": [
+      {
+        "path": "СЕРИЯ СЕРДЦЕ/65_R3_UNREGENERATE_STRUGGLE.md",
+        "gitBlob": "ae55b1fad5cccbdb623c551a14222e0f51ec084a",
+        "role": "Conscience, natural restraint and the ceiling of struggle without regeneration"
+      },
+      {
+        "path": "СЕРИЯ СЕРДЦЕ/66_R4_FOUR_SOILS.md",
+        "gitBlob": "f82780e13cb064aa89c06427d11a938662fc3ff8",
+        "role": "Persistence/root/fruit warning; full four-soils exposition remains outside Part V"
+      },
+      {
+        "path": "СЕРИЯ СЕРДЦЕ/67_R5_TWO_STRUGGLES.md",
+        "gitBlob": "846277b099e58bf36b88c2ae0dfe4e24e6bec53b",
+        "role": "Six-axis two-struggles distinction and pastoral comparison framework"
+      }
+    ]
+  },
+  "reader": {
+    "path": "СЕРИЯ СЕРДЦЕ/133_READER_CHAPTER_V_HEART_IN_WAR_2026-08-09.md",
+    "gitBlob": "183819bf469d7e28f270fa6891b8ae1534e2f6ef",
+    "minimumWords": 1800,
+    "quotationSurfaces": 0,
+    "externalLinks": 0,
+    "internalArticleLinks": 0,
+    "footnoteDefinitions": 0,
+    "sourceQuotationTransfer": 0,
+    "sourceLinkTransfer": 0,
+    "newDirectQuotesApproved": 0
+  },
+  "ownershipBoundary": {
+    "owns": [
+      "Romans 6–8 frame: broken dominion with continuing warfare",
+      "conscience-only moral restraint versus Spirit-enabled warfare",
+      "motive, means and Godward direction of anti-sin struggle",
+      "defeat response: concealment/self-justification versus confession and return to Christ",
+      "victory response: superiority versus gratitude and humility",
+      "longitudinal direction rather than one-moment performance as a pastoral discriminator"
+    ],
+    "doesNotOwn": {
+      "HEART-BOOK-III2": "divine causation and the new-birth order",
+      "HEART-BOOK-III3": "repentance sequence, restitution and full broken-heart exposition",
+      "HEART-BOOK-IV": "Scripture reception, illumination and meditation as its own chapter",
+      "HEART-BOOK-VI": "full Pharisee/disciple contrast and religious self-protection",
+      "HEART-BOOK-VIII": "beholding and transformation by the glory of Christ"
+    }
+  },
+  "assemblyBoundary": {
+    "romans7InterpretiveDisputeNotFlattenedToOneUnqualifiedProofText": true,
+    "moralRestraintWithoutRegenerationNotDenied": true,
+    "visiblePerformanceNotUsedAsStandaloneSalvationTest": true,
+    "allHistoricalQuotationSurfacesRemainOutsideReader": true,
+    "allHistoricalExternalLinksRemainOutsideReader": true,
+    "allSourceFootnotesRemainOutsideReader": true,
+    "part6PhariseeExegesisNotAbsorbed": true,
+    "citationAndLinkDispositionDeferred": true
+  },
+  "effectiveCounts": {
+    "finalBookEntries": 18,
+    "assembledReaders": 14,
+    "missingStandaloneFinalReaders": 4,
+    "entryCitationPassComplete": 13,
+    "entryCitationPassOpen": 5,
+    "assembledReaderCitationReviewsComplete": 13,
+    "assembledReadersAwaitingCitationReview": 1,
+    "productSourceOnlyEntries": 1,
+    "researchDossierOnlyEntries": 3,
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 55,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "retainedRepairAndHoldBacklog": {
+    "productSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 55,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "part5RepairsClosedByAssembly": 0,
+    "part5HoldsPromotedByAssembly": 0
+  },
+  "publicationBoundary": {
+    "part5ReaderAssemblyComplete": true,
+    "part5EntryCitationPassComplete": false,
+    "allCurrentlyAssembledReadersReviewed": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "ENTRY_CITATION_PASS",
+    "preferredEntryId": "HEART-BOOK-V",
+    "reason": "The Part V reader now exists from the pinned Product Romans 7 owner plus bounded R3/R4/R5 support. Its source surfaces and every retained research citation/link must receive a separate deterministic disposition pass before V11 composition."
+  }
+}
