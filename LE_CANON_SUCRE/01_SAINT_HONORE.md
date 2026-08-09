@@ -6,7 +6,7 @@
 
 ## Краткий статус
 
-`PROBABLE 1840 MAISON CHIBOUST / JULIEN ROLE SUPPORTED BY LACAM SECONDARY TRANSCRIPTION / CONFIRMED architecture by 1873 / EVIDENCE_HOLD on exact early page`
+`PROBABLE 1840 MAISON CHIBOUST / LACAM ORIGIN ACCOUNT TIGHTLY LOCATED p.44 + TECHNICAL STATEMENT p.49 / CONFIRMED ARCHITECTURE 1873 / DIRECT LACAM PAGE INSPECTION STILL OPEN`
 
 ## Первичные источники и локаторы
 
@@ -15,101 +15,107 @@
 Exact scan page:
 https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/278
 
-The page directly documents:
-
-- a pastry base (`fond de pâte à foncer`);
-- a crown of pâte à choux;
-- small choux added to the construction;
-- Saint-Honoré as a named family with cooked cream/bavarois variants.
+The page directly documents a pastry base, pâte-à-choux crown, small choux and named Saint-Honoré variants.
 
 `evidenceClass=A1`, `FULL_OBJECT_VERIFIED`, `EXACT_LOCATOR_VERIFIED`.
 
-This proves a recognizable Saint-Honoré architecture in 1873. It does **not** prove the first invention date.
+This proves recognizable Saint-Honoré architecture in 1873; it does not prove first invention.
 
 Institutional full-object record:
 https://genovefa.bsg.univ-paris3.fr/s/a-lire-et-a-manger/item/923006
 
-### Lacam & Charabot 1893 — primary object now identified
+### Lacam & Charabot 1893 — primary object identified, printed locators tightened
 
 BnF/Gallica full object:
 https://gallica.bnf.fr/ark:/12148/bpt6k9735327k
 
-Bibliographic identity is independently confirmed as Pierre Lacam and Antoine Charabot, *Le Glacier classique et artistique en France et en Italie*, 1893.
+Bibliographic identity: Pierre Lacam & Antoine Charabot, *Le Glacier classique et artistique en France et en Italie*, 1893.
 
-The exact Saint-Honoré page inside this object is **not yet pinned directly in Wave 1**, so it remains `FULL_OBJECT_VERIFIED / COARSE_LOCATOR_ONLY` for the origin claim.
+Wave 2 improves the page map through a detailed secondary article that explicitly cites the historical volume:
 
-A detailed historical article by Hervé This transcribes Lacam's account and materially changes the conflict map:
-https://nouvellesgastronomiques.com/ne-parlons-plus-de-creme-chiboust/
+https://okapi.books.com.tw/article/15765
 
-According to that transcription, Lacam says that Auguste Julien had brought the Saint-Honoré idea from Bordeaux, where it was made under the name `Flan Suisse`, and that the cake was first made at Chiboust in **1840**, taking the name of rue Saint-Honoré.
+It distinguishes two different printed locators:
 
-Because the exact primary scan page is not yet pinned, this is currently a `B1 SECONDARY TRANSCRIPTION OF PRIMARY / LOCATOR_HOLD`, not quote-safe A-class evidence.
+- **p. 44** — the historical account connecting 1840, Maison Chiboust, Auguste Julien and the Bordeaux `Flan Suisse` precursor;
+- **p. 49** — a separate technical statement that a Saint-Honoré can be made without pâte à choux, useful for showing that the dessert's construction was historically variable.
+
+This corrects the earlier overly coarse assumption that p. 49 carried the whole origin account.
+
+A separate modern institutional page from Ville de Paris currently repeats the **1840** Saint-Honoré/Chiboust tradition:
+https://www.paris.fr/pages/ces-5-patisseries-ont-ete-inventees-a-paris-33339
+
+This is useful corroboration of the modern institutional tradition, not a substitute for direct inspection of Lacam 1893.
+
+Current status:
+
+- Lacam full object = `FULL_OBJECT_VERIFIED`;
+- printed p. 44 origin account = `TIGHT SECONDARY LOCATOR TO PRIMARY / DIRECT PAGE INSPECTION PENDING`;
+- printed p. 49 technical statement = `TIGHT SECONDARY LOCATOR TO PRIMARY / DIRECT PAGE INSPECTION PENDING`;
+- direct quotation from either page = not quote-safe until the page scan is opened and context verified.
 
 ## Ответы, отрицания и альтернативные объяснения
 
-The evidence is now more specific than a generic `1840s / 1847 / 1863` story:
+The evidence is more specific than a generic `1840s / 1847 / 1863` story:
 
 - Lacam/Charabot 1893 full object exists in Gallica;
-- a detailed transcription of Lacam gives **1840**, Maison Chiboust, with **Auguste Julien** as the person who brought the Bordeaux `Flan Suisse` idea;
-- current French Agriculture Ministry material instead gives **1847** and also centers Auguste Jullien;
-- several modern retellings attribute the invention directly to Chiboust himself;
-- Gouffé 1873 independently proves the mature choux architecture.
+- secondary page-level transcription maps the 1840 Maison Chiboust / Auguste Julien / Bordeaux `Flan Suisse` account to **p. 44**;
+- p. 49 is a separate technical/form statement;
+- a current Ville de Paris page also repeats 1840;
+- other modern institutional retellings have used 1847;
+- Gouffé 1873 independently proves mature choux architecture.
 
-Therefore the research should not collapse `Maison Chiboust`, `Chiboust the proprietor`, and `Auguste Julien/Jullien the pâtissier` into one person/claim.
+Do not collapse `Maison Chiboust`, Chiboust the proprietor and Auguste Julien/Jullien into a single identity claim.
 
 Current decisions:
 
-- `Maison Chiboust / 1840` — `PROBABLE`, strengthened by Lacam transcription but exact primary page pending;
+- `Maison Chiboust / 1840` — `PROBABLE`, now with exact printed-page target but direct primary inspection pending;
 - `Auguste Julien/Jullien brought/adapted Flan Suisse` — `PROBABLE`, same hold;
 - `Chiboust personally invented Saint-Honoré in 1840/1847` — `DISPUTED / OVER-SIMPLIFIED`;
-- `1847` as exact creation year — `CONFLICT`, because Lacam transcription gives 1840;
+- `1847` as sole exact creation year — `CONFLICT`;
 - `Jullien introduced the modern base in 1863` — `EVIDENCE_HOLD / LOCATOR_HOLD`;
-- `Saint-Honoré already had a choux-based recognizable architecture by 1873` — `CONFIRMED`.
+- recognizable choux architecture by 1873 — `CONFIRMED`.
 
 ## Анализ и границы допустимой формулировки
 
 Safe now:
 
-> К 1873 году Jules Gouffé описывает Saint-Honoré как уже узнаваемую конструкцию с основанием, короной pâte à choux и небольшими choux. Более раннюю генеалогию нельзя свести к одной бесспорной дате: поздний свидетель Pierre Lacam связывает Maison Chiboust, Auguste Julien и бордоский `Flan Suisse` с 1840 годом, тогда как современные институциональные пересказы встречаются и с датой 1847.
+> By 1873 Gouffé documents a recognizable Saint-Honoré architecture. For the earlier genealogy, Lacam/Charabot's 1893 volume is identified and secondary page-level research maps the 1840 Maison Chiboust / Auguste Julien / Bordeaux `Flan Suisse` account to printed p. 44, while p. 49 preserves a separate statement showing historical structural variation. Direct page inspection remains required before quote-safe use.
 
-Not safe yet:
+Unsafe:
 
 > Chiboust personally invented Saint-Honoré in 1847 and Jullien definitively modernized it in 1863.
 
-That sentence overstates both identity and chronology.
-
 ## Хронология
 
-- 1840 — `PROBABLE` Lacam/Charabot account via secondary transcription: first making at Maison Chiboust; exact Gallica page still to pin;
-- 1847 — modern institutional competing date, not accepted as sole origin year;
-- 1863 — often-repeated Jullien modernization date, still primary-unclosed;
-- 1873 — exact professional architecture in Gouffé.
+- **1840** — probable Lacam later account; printed target p. 44; direct scan inspection pending;
+- **1847** — competing modern institutional date, not accepted as sole origin year;
+- **1863** — repeated modernization date, still primary-unclosed;
+- **1873** — exact Gouffé architecture;
+- **1893** — Lacam/Charabot historical account and technical reflection.
 
 ## Technique / anatomy
 
-Wave 1 factual architecture:
-
-`base pastry → choux crown → small choux → cooked cream/bavarois filling family`.
-
-For future anatomy graphics, distinguish:
+Future article should distinguish:
 
 1. reported Bordeaux `Flan Suisse` precursor;
 2. reported early Maison Chiboust form;
-3. documented Gouffé 1873 form;
-4. later modern Saint-Honoré.
+3. p. 49 evidence that Saint-Honoré was not locked to one pâte-à-choux architecture;
+4. documented Gouffé 1873 form;
+5. later modern Saint-Honoré.
 
 Do not draw these as one timeless construction.
 
 ## Права, архив и публикационные HOLD
 
-- Gouffé/Wikisource facsimile is a strong historical visual candidate; preserve edition/source attribution.
-- Lacam/Charabot Gallica object is now identified; item-level BnF reproduction rights must still be checked before visual reuse.
-- Modern maison/institutional photographs are not automatically reusable.
-- `PUBLICATION_HOLD` remains on the exact inventor/date sentence until the Gallica Lacam page and earlier evidence are pinned.
+- Gouffé/Wikisource facsimile is a strong historical visual candidate with attribution/terms preserved.
+- Lacam/Charabot Gallica object is identified; direct p.44/p.49 page capture and item-level BnF reproduction conditions remain to record.
+- modern institutional/maison photography is reference-only unless licensed.
+- `PUBLICATION_HOLD` remains on a single definitive inventor/date sentence.
 
 ## Следующее проверяемое действие
 
-1. Pin the exact Saint-Honoré/Julien/Chiboust page inside Gallica `bpt6k9735327k`.
-2. Search Gallica 1835–1873 for earliest named recipe/advertisement and Maison Chiboust records.
-3. Test the recurring `1863` modernization claim against period trade literature.
-4. Separate earliest **name**, earliest **recipe**, earliest **Maison attribution**, and earliest **modern architecture** rather than forcing one invention date.
+1. Open Gallica object `bpt6k9735327k` at printed p. 44 and p. 49; record scan-leaf URLs and surrounding context.
+2. Search 1835–1873 for earlier named recipe/advertisement and Maison Chiboust records.
+3. Test recurring `1863` modernization claim in period trade literature.
+4. Keep earliest name, recipe, Maison attribution and modern architecture as separate claims.
