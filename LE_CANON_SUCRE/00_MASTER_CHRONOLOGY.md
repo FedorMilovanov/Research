@@ -37,9 +37,11 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 | 1911 | Paris-Brest | Weak local chronology gives 1911 and a Bauget signal | `C / DISCOVERY ONLY / SEARCH-WINDOW EXPANSION`, not accepted event date |
 | 1915 | Tatin / Jullemier | Bibliographic date for *Contes de Sologne* | `BIBLIOGRAPHIC DATE / EXACT TATIN PAGE OPEN`; do not call Jullemier a 1903 publication |
 | 1921 | Tatin / Besnard | `La Tarte des Demoiselles Tatin` target in *Blois et le Loir-et-Cher* | `BNF SERIAL VERIFIED / ISSN 0995-8347 / COTE 4-LC11-1357 / EXACT ISSUE+PAGE OPEN` — https://catalogue.bnf.fr/ark:/12148/cb32713209f |
-| 1923 | Tatin | *Le Livret d'or... Salon d'automne* transmission object | `PRIMARY GALLICA OBJECT ROUTE IDENTIFIED / RELEVANT PAGE PENDING` — https://gallica.bnf.fr/ark:/12148/bpt6k11817663 |
+| 1923 | Tatin | *Le Livret d'or... Salon d'automne* carries `Recette solognote : tarte des Demoiselles Tatin, de Lamotte-Beuvron` | `PRIMARY GALLICA FULL OBJECT IDENTIFIED / PRINTED p.85 TIGHTLY LOCATED / DIRECT PAGE CONTEXT STILL TO INSPECT` — https://gallica.bnf.fr/ark:/12148/bpt6k11817663 |
 | 1923-12-29 | Tatin | *Comœdia*, p.4 transmission route | `EXACT RETRONEWS PAGE ROUTE IDENTIFIED / CONTENT PENDING` — https://www.retronews.fr/journal/comoedia/29-decembre-1923/775/2502411/4 |
-| 1926 | Tatin / Curnonsky-Rouff | *La France gastronomique... L'Orléanais* | `BNF CATALOGUE CONFIRMS AUTHORS/TITLE/PUBLISHER/YEAR / EXACT TATIN PAGE OPEN`; no acquired support that Curnonsky created accident legend |
+| 1926 | Tatin / Curnonsky-Rouff | *La France gastronomique... L'Orléanais* | `BNF CATALOGUE CONFIRMS AUTHORS/TITLE/PUBLISHER/YEAR / EXACT TATIN PAGE OPEN`; L'OPT supplies a tight secondary navigation key and exact heading; no acquired support that Curnonsky created accident legend |
+| **1929-08-25** | Tatin | Recipe transmitted in *Paris-Soir* | `EXACT RETRONEWS ISSUE+PAGE ROUTE IDENTIFIED: p.5 / DIRECT CONTENT INSPECTION PENDING` — https://www.retronews.fr/journal/paris-soir/25-aout-1929/131/106713/5 |
+| 1931-09-11 | Tatin | Hubert Fillay transmission in *La Dépêche du Berry* | `EXACT RETRONEWS ROUTE IDENTIFIED / DIRECT CONTENT REVIEW STILL REQUIRED` — https://www.retronews.fr/journal/la-depeche-du-berry/11-septembre-1931/693/2215503/2 |
 | 1937 | Canelé | Région reports Jean Balde as earliest written trace identified by its synthesis | `INSTITUTIONAL RESEARCH SUMMARY / underlying page needed` |
 | 1955 | Opéra | Dalloyau dates canonical house Opéra to 1955 | `STRONG PARTICIPANT + COMITÉ COLBERT CORROBORATION` |
 | 1955 | Tropézienne | Current Maison dates Micka pastry creation to 1955 | `STRONG PARTICIPANT TRADITION / contemporary press needed` |
@@ -47,7 +49,7 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 | 1956 | Tropézienne / Bardot | Later Bardot testimony supports discovery/promotion/`marraine` role | `STRONG RETROSPECTIVE TESTIMONY / CONTEMPORARY NAMING EVIDENCE OPEN` |
 | 1972-08-18 | Tropézienne IP | Secondary legal sources converge on French process/patent filing date | `TIGHT SECONDARY LEGAL LOCATOR / EXACT INPI OBJECT MISSING` |
 | 1975 | Galette | Élysée says master-baker Epiphany reception tradition dates to 1975 | `PRIMARY GOVERNMENT RECORD` |
-| **1976** | Tatin legend genealogy | Delétang/Leclercq locate a vague clumsiness reference in *Horizons d'Argonne*, p.97 | `STRONG SCHOLARLY LOCATOR / EXACT ISSUE+PAGINATION UNRESOLVED / ORIGINAL PAGE REQUIRED`; do not force p.97 into an incompatible 1976 issue |
+| **1976** | Tatin legend genealogy | Delétang/Leclercq cite *Horizons d'Argonne*, Centre d'études argonnais, Sainte-Ménehould, **`n°30 à 39, 1976, p.97`**, for a vague clumsiness reference | `EXACT SCHOLARLY BIBLIOGRAPHIC LOCATOR / ORIGINAL PAGE + PRECISE ISSUE-OR-BOUND-RUN MAPPING REQUIRED`; do not silently rewrite citation as `n°30–31` |
 | 1979-03 | Tatin / Confrérie | Third-party association metadata gives differing March declaration/creation dates | `CONFLICTING NON-PRIMARY METADATA`; do not choose 9 Mar vs 16 Mar without original record |
 | **1979-03-27** | Tatin / Confrérie | Current Confrérie states Journal officiel registration/publication on this date | `PARTICIPANT LEGAL-HISTORY STATEMENT`; official Journal-officiel guidance confirms pre-2-Jan-1985 association notices belong to older JORF stream; exact original notice still required |
 | c.1979 | Tatin legend genealogy | Historical synthesis associates developed accident/distraction narrative with Confrérie storytelling; current Confrérie labels birth story `légende` | `STRONG MYTH-TRANSMISSION EVIDENCE / ORIGINAL PROSPECTUS REQUIRED`; not proof of first oral telling |
@@ -83,8 +85,8 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 
 1. Acquire direct page images for de Kock 1848, Bailleux 1856, Michigan *Vanity Fair* 1861, Lacam p.44/p.49, *Le Gaulois* 1899 and *Le Journal* 1899.
 2. Tatin technique: exact Dubois 1894 `Tarte aux pêches molles` leaf in Gallica `bpt6k3412588h`; primary 1790 `tourte retournée` mastery/legal object.
-3. Tatin documentary network: exact 1903 Bulletin leaf, Jullemier 1915 page, Besnard 1921 issue/page, Curnonsky/Rouff 1926 page.
-4. Tatin myth genealogy: exact *Horizons d'Argonne* 1976 p.97 with correct issue/pagination; original 1979 Confrérie prospectus/statutes and pre-1985 old-JORF association notice; search 1926–1975 for earlier accident motifs.
+3. Tatin documentary network: exact 1903 Bulletin leaf, Jullemier 1915 page, Besnard 1921 issue/page, 1923 Livret p.85, Curnonsky/Rouff 1926 page, Paris-Soir 1929 p.5 and Dépêche du Berry 1931 page content.
+4. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 while preserving the exact scholarly citation `n°30 à 39`; original 1979 Confrérie prospectus/statutes and pre-1985 old-JORF association notice; search 1926–1975 for earlier accident motifs.
 5. Paris-Brest: contemporaneous 1909–1911 Durand/Bauget advertising, menu, trade or directory evidence.
 6. Religieuse: pre-1873 Frascati/Cintract sources and first standard two-choux depiction.
 7. Exact INPI objects for canelé 1985, Tropézienne historical patent/mark and Kouign-Amann legal claims.
