@@ -77,7 +77,7 @@
 | **28** | `28_SEVEN_READINGS_OF_ANGELS_1COR11_10_DOSSIER.md` | Полный спектр 7 толкований «Ради Ангелов»: 1QSa 2:3–9, CD 15:15–17, Товит 12, Патристика | `ACTIVE` |
 | **29** | `29_HISTORICAL_THEOLOGY_TIMELINE_FROM_PATRISTICS_TO_PRESENT.md` | Хронологическая панорама рецепции 1 Кор. 11 за 20 веков (от апостольских мужей до XXI века) | `ACTIVE` |
 | **30** | `30_RUSSIAN_BAPTIST_AND_EVANGELICAL_RECEPTION_HISTORY.md` | История рецепции в российском баптизме (Каргель, Проханов, ВСЕХБ, МСЦ ЕХБ) | `ACTIVE` |
-| **31** | `31_CONSOLIDATED_PUBLICATION_POSITION_SHEET_Q1_Q10.md` | Сводный публикационный лист позиций: 10 главных вопросов (Q1–Q10), разрешённые формулировки | `ACTIVE` |
+| **31** | `31_CONSOLIDATED_PUBLICATION_POSITION_SHEET_Q1_Q10.md` | Сводный публикационный лист позиций: 10 главных вопросов (Q1–Q10), разрешённые формулировки, калибровка | `ACTIVE / AUTHORITY` |
 | **32** | `32_SEVEN_ARTICLE_EXPANDED_SITE_ARCHITECTURE.md` | Семичастная расширенная архитектура читательской серии сайта | `ACTIVE` |
 | **33** | `33_ELLICOTT_1877_COMMENTARY_AND_CLASSICAL_ENGLISH_EXEGESIS.md` | Английская классическая экзегеза: комментарий Элликотта (1877) и школа Лайтфута | `ACTIVE` |
 | **34** | `34_EARLY_CHRISTIAN_ICONOGRAPHY_AND_CATACOMB_ART_DOSSIER.md` | Катакомбное искусство Рима (Присцилла, Каллист): фрески Орант в покрывалах и Fractio Panis | `ACTIVE` |
@@ -90,6 +90,7 @@
 | **41** | `41_SPIRITUAL_GIFT_VS_PASTORAL_OFFICE_DISTINCTION.md` | Различие дара (Charisma) и пресвитерства (Office): почему пророчество не равно пасторству | `ACTIVE` |
 | **42** | `42_EGALITARIAN_PROOF_TEXTS_AND_EXEGETICAL_AUDIT.md` | Аудит эгалитарных доказательств: Юния (Рим. 16:7), Фива, Прискилла, Гал. 3:28, жены у Гроба | `ACTIVE` |
 | **43** | `43_HISTORY_OF_WOMENS_ORDINATION_1800_YEAR_CONSENSUS.md` | 1800-летний вселенский консенсус против женской ординации и истоки либерального суфражизма | `ACTIVE` |
+| **44** | `44_1COR11_READER_FAQ_AND_PRACTICAL_SYNTHESIS.md` | Читательское FAQ и практический синтез: 10 частых вопросов, одна-страница позиция, ссылки на досье | `ACTIVE / READER` |
 | **DATA** | `../data/1cor11-research-manifest.json` | Машиночитаемый манифест доказательств, источников и статусов | `ACTIVE` |
 
 ### Публикационные статьи серии (Site-Ready Drafts)
