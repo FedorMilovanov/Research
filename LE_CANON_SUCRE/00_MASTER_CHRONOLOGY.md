@@ -16,8 +16,8 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 | 1873 | Éclair | Gouffé directly links varied `éclairs` to `pains à la duchesse` and gives choux pastry for both | `DOCUMENTED PRIMARY` |
 | 1873 | Baba/Savarin | Gouffé indexes/recipes `baba moderne glacé au rhum`, baba polonais and savarin separately | `DOCUMENTED PRIMARY` |
 | 1891 | Paris-Brest | First Paris–Brest–Paris cycle race | `DOCUMENTED BnF institutional` — https://gallica.bnf.fr/selections/fr/html/images/cyclisme |
-| 1899 | Tatin | A newspaper mention of `tarte de Mlle Tatin` is a strong secondary discovery lead | `UNRESOLVED / primary issue-page needed` |
-| 1899 | Opéra | Puratos reports an advertisement mentioning `gâteau opéra` | `UNRESOLVED / exact advertisement needed`; does not establish identity with 1955 Dalloyau cake |
+| 1899-03-18 | Opéra | Secondary locator convergence points to a Grand Hôtel `gâteau opéra` advertisement in *Le Gaulois*, p. 3 | `TIGHTENED SECONDARY LOCATOR / primary scan not yet acquired`; BnF title record: https://catalogue.bnf.fr/ark:/12148/cb32779904b.public |
+| 1899-12-18 | Tatin | Secondary locator convergence points to `la tarte de Mlle Tatin` in *Le Journal*, p. 1 | `TIGHTENED SECONDARY LOCATOR / primary scan not yet acquired` — https://www.cuisine-lucullus.com/histoire-de-la-cuisine/13-tout-un-plat/836-tarte-des-soeurs-tatin |
 | 1903 | Angelina | House history dates founding of Angelina by Anton Rumpelmayer | `CONFIRMED participant history` |
 | 1903 | Tatin | Académie du Goût points to Lucien Jullemier account | `SECONDARY LOCATOR LEAD / primary needed` |
 | 1907 | Paris-Brest | Durand family dates founding of house | `CONFIRMED participant history` |
