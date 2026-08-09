@@ -4,204 +4,181 @@
 **Статус:** `THIRD-AUDIT / OPEN-WEB-EXHAUSTION / LATEST-EDITION-CONTROL / EDGE-PROVENANCE / CONSERVATIVE-WEIGHTED / FAIL-CLOSED / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **База:** `main@a353b6d2b83553a60548bf2f9d625c54ab2d5f88`
 
-## 1. Зачем нужен третий проход
+## 1. Метод
 
-Второй аудит уже расширил карту до 45 commentary/reception nodes + 25 специализированных scholarly nodes. Третий проход не считает новые URL как новые «голоса». Его задача — сделать три вещи, которые влияют на качество дальнейшего исследования:
+Третий проход не добавляет URL ради счётчика. Он закрывает три риска:
 
-1. **исчерпать открытый web до просьбы пользователю о книге**;
-2. **проверить latest edition**, чтобы не просить устаревшее издание как главный источник;
-3. **привязать редкие/экзотические версии к точным авторам и академическим loci**, чтобы не пересказывать карикатуры.
-
-Жёсткое правило:
+1. просить пользователя о том, что агент может достать сам;
+2. использовать устаревшее издание как current authority;
+3. пересказывать крайние версии без точного author/locus provenance.
 
 ```text
-OPEN-WEB-SUFFICIENT => USER_ACQUISITION = NO
-FULL-PAGE-CONTEXT_STILL_CLOSED => USER_ACQUISITION = OPTIONAL/PRIORITISED
-EXOTIC_MODEL_FOUND => HISTORY/DEBATE NODE, NOT EQUAL-WEIGHT THEOLOGY
+OPEN_WEB_SUFFICIENT => USER_ACQUISITION = NO
+FULL_SECTION_STILL_CLOSED => USER_ACQUISITION = OPTIONAL/PRIORITISED
+LATEST_EDITION_EXISTS => OLDER_EDITION != CURRENT_AUTHORITY
+EXOTIC_MODEL => HISTORY/DEBATE NODE, NOT EQUAL-WEIGHT THEOLOGY
 ```
 
-## 2. Latest-edition correction: Garland
+## 2. Latest-edition corrections
 
-Предыдущая очередь ставила David E. Garland, *1 Corinthians* (BECNT, 2003), pp. 505–532, как P0. Это библиографически уже не оптимально.
+### David E. Garland
 
-### Исправление
+- **Current target:** David E. Garland, *1 Corinthians*, **2nd ed.**, BECNT, Baker Academic, **2025**.
+- 2003 edition remains useful only for edition-delta comparison.
+- 2025 metadata/TOC preserve a dedicated `Headdress in Public Worship (11:2–16)` section.
+- The old first-edition locator `pp. 505–532` must **not** be copied onto the 2025 edition without direct page verification.
 
-- **David E. Garland, *1 Corinthians*, 2nd ed., BECNT, Baker Academic, 2025** — теперь **основной P0 Garland witness**.
-- 2003 edition сохраняется только для **edition-delta comparison**: что Garland изменил за два десятилетия.
-- Официальные/книжные метаданные 2025 edition подтверждают отдельный раздел `VII. Headdress in Public Worship (11:2–16)`.
-- Старые locator `pp. 505–532` относятся к первой редакции и **не должны автоматически переноситься** на 2025 edition.
+### Michael J. Gorman
 
-**Policy:** если пользователь имеет новую 2nd edition, нужен именно полный section 11:2–16 + footnotes. Старую 2003 просить только если нужно сравнить revisions.
+- Michael J. Gorman, *1 Corinthians: A Theological, Pastoral, and Missional Commentary* (Eerdmans, 2025) is added as a current theological/pastoral control.
+- It does not replace Thiselton/Fee/Garland/Ciampa-Rosner for technical Greek.
+- Until its 11:2–16 section is directly read, no disputed exegetical position is attributed to Gorman.
 
-## 3. Новый current-control commentary: Michael J. Gorman 2025
+## 3. Open-web exhaustion: materials removed from the user-request queue
 
-- Michael J. Gorman, *1 Corinthians: A Theological, Pastoral, and Missional Commentary* (Eerdmans, 2025).
-- Это **не замена** Thiselton/Fee/Garland/Ciampa-Rosner по technical Greek.
-- Роль: свежий post-2024 theological/pastoral control, особенно для contemporary application и ecclesiology.
-- Пока позиция Gorman по каждому спорному узлу 11:2–16 не прочитана page-level, нельзя приписывать ему конкретное решение.
+### Joseph A. Fitzmyer — SELF-ACQUIRE
 
-Калибровка: `BIBLIOGRAPHICALLY VERIFIED / CURRENT CONTROL / PAGE-LEVEL HOLD`.
+A full online reading route has been located. The volume TOC places `11:2–16` at **pp. 404–424**, with the next section beginning p.425.
 
-## 4. Open-web exhaustion: что больше НЕ надо просить у пользователя первым
+**Policy:** do not ask the user for Fitzmyer. The agent should inspect/summarize the section itself. A third-party online route can support research access; it is not a license to redistribute copyrighted pages or long quotations.
 
-### 4.1 Ambrosiaster — узел «ангелы = епископы» уже доступен
+### Ambrosiaster — SELF-ACQUIRE for the relevant historical claim
 
-Для конкретного historical claim v.10 достаточно прямого атрибутированного open-web excerpt:
+The specific reception claim `angels = bishops/church leaders` is already directly attested in attributed open-web excerpts.
 
-- Ambrosiaster: veil signifies power; `angels` interpreted as bishops.
-- Этот exact claim уже можно фиксировать как late-antique reception node без просьбы о полном IVP томе.
+**Policy:** do not ask the user for Ambrosiaster merely to establish that historical reading. A full critical volume is only optional for a future complete page-level patristic catena.
 
-**Следствие:** Ambrosiaster/Bray full volume больше не P1 user-acquisition target для самого тезиса `angels=bishops`. Full volume нужен лишь при желании сделать полную late-antique page-level катену или публикационную цитату с контролем контекста.
+### Lucy Peppiatt — SELF-ACQUIRE for map-level representation
 
-### 4.2 Lucy Peppiatt — core thesis доступен достаточно для map-level критики
+Publisher/Google Books previews expose the book's thesis and structure well enough to map the quotation/dialogue model without caricature.
 
-Google Books/издательские preview дают:
+**Policy:** do not ask the user for the book merely to describe the model. Full text is optional only for a strongest-form footnote-by-footnote rebuttal.
 
-- тезис о dialogue/quotation-rhetorical reading;
-- структуру книги;
-- explicit proposal, что Corinthian male leadership навязывал женщинам coverings и что Paul в значимой части спорит с их позицией.
+### Gordon D. Fee 1987 first edition — SELF-ACQUIRE / NOT CURRENT
 
-**Следствие:** для честного описания модели книгу у пользователя просить не надо. Full book остаётся optional только если нужен **strongest-form page-by-page rebuttal с footnotes**.
+Public catalog/preview routes are sufficient to track the old edition. It does not control Fee's final published position because a revised NICNT edition appeared in 2014.
 
-### 4.3 Fee 1987 first edition
+### Garland 2003 — SELF-ACQUIRE / NOT CURRENT
 
-Open Library / Internet Archive catalog routes и публичные preview делают первую редакцию широко отслеживаемой. Но **Fee Revised 2014** остаётся отдельным P0, потому что именно revision должна контролировать его финальную позицию.
+Public preview/catalog routes suffice for first-edition layout and historical comparison. Do not request it as the primary Garland witness.
 
-### 4.4 Garland 2003
+### Bruce W. Winter — DO NOT REQUEST YET
 
-Open Library/Google Books preview и подробные ToC/loci позволяют самостоятельно контролировать bibliographic layout первой редакции. Просить старый том как основной больше не нужно.
+The core `Roman Wives, Roman Widows` thesis, chapter structure, reviews and substantial summaries are accessible online, including the location of the 1 Cor 11 chapter (`The Appearance of Unveiled Wives...`, pp. 77ff).
 
-## 5. Что после open-web sweep всё ещё реально закрыто и ценно
+**Policy:** continue self-exhausting web/preview/library routes first. Ask for the full chapter only if a later page-level footnote/source-chain audit cannot be completed otherwise.
 
-Следующие позиции остаются честными acquisition targets, потому что open web даёт metadata/snippets/TOC, но не полный нужный section + footnotes:
+## 4. Genuine closed-book targets after the sweep
 
-1. **Anthony C. Thiselton, NIGTC (2000), 11:2–16** — P0.
-2. **Gordon D. Fee, NICNT Revised (2014), full 11:2–16 + notes** — P0.
-3. **David E. Garland, BECNT 2nd ed. (2025), full 11:2–16 + notes** — P0 latest-edition.
-4. **Roy E. Ciampa & Brian S. Rosner, PNTC (2010), full 11:2–16 + notes** — P0.
-5. **Joseph A. Fitzmyer, Anchor Yale Bible (2008), full 11:2–16 + notes** — P0 pericope-level integration.
-6. **Bruce W. Winter, *Roman Wives, Roman Widows* (2003), ch. 5, pp. 77ff** — P0 historical thesis in strongest full-book form.
-7. **Gregory J. Lockwood, Concordia Commentary (2000), full 11:2–16** — P1 conservative-confessional technical control.
-8. **Wolfgang Schrage, EKK VII/2, 11:2–16** — P1 German critical adversarial control.
-9. **Judith L. Kovacs, *The Church's Bible: 1 Corinthians*, 11:2–16** — P1 patristic breadth beyond already-open excerpts.
-10. **Michael J. Gorman 2025, 11:2–16** — P1 current application/theological control if available, not technical P0.
+### P0 — maximum marginal value
 
-## 6. Exact provenance крайних/неведущих моделей
+1. **Anthony C. Thiselton, NIGTC (2000)** — `11:2–16`, **pp. 800–847**, including notes. Public TOCs expose the internal loci (`κεφαλή` p.812; v.4 p.823; vv.5–6 p.828; vv.7–9 p.834; `ἐξουσία` p.838; `φύσις` p.844), but the complete technical discussion remains closed in the routes verified in this pass.
+2. **Gordon D. Fee, NICNT Revised (2014)** — `11:2–16`, approximately **pp. 542–586**, including the addendum and notes. The old 1987 edition is not a substitute.
+3. **David E. Garland, BECNT 2nd ed. (2025)** — complete `Headdress in Public Worship (11:2–16)` section + notes. Page numbers must come from the 2025 edition itself.
+4. **Roy E. Ciampa & Brian S. Rosner, PNTC (2010)** — **pp. 503–540** + notes (v.3 p.506; vv.4–6 p.511; vv.7–12 p.522; vv.13–16 p.537).
 
-Ниже модели фиксируются потому, что они реально опубликованы. Их включение **не означает**, что они равновероятны консервативному синтезу.
+### P1 — valuable confessional/continental/patristic controls
 
-### 6.1 Jerome Murphy-O'Connor — hairstyle + sexual-role thesis
+5. **Gregory J. Lockwood, Concordia Commentary (2000)** — full technical 11:2–16 section. Publisher confirms the full edition includes original-language grammatical analysis and essays on worship/ordination; the popular edition deliberately removes technical notes and Greek, so it is not an adequate replacement.
+6. **Wolfgang Schrage, EKK VII/2 (1995)** — full 11:2–16 closing section of the volume (`1 Kor 6,12–11,16`).
+7. **Judith L. Kovacs, *1 Corinthians: Interpreted by Early Christian Commentators*** — 11:2–16, especially v.10 angels and vv.14–16 nature/custom, to test breadth beyond already-open patristic excerpts.
+8. **Michael J. Gorman (2025)** — 11:2–16 only if readily available; lower priority than the four technical P0 works.
 
-**Source:** `Sex and Logic in 1 Corinthians 11:2–16`, later collected in *Keys to First Corinthians* (OUP, 2009), pp. 142–158.
+**Not in the current user-request list:** Fitzmyer, Winter, Ambrosiaster, Peppiatt, Fee 1987, Garland 2003, public-domain commentaries and journal articles available through open routes.
 
-Позиция в abstract:
+## 5. Exact provenance of unusual/edge readings
 
-- отрывок якобы не о женском veiling;
-- мужские длинные волосы трактуются как знак active male homosexual role;
-- женская неправильная причёска / короткие волосы связываются с masculine/lesbian presentation;
-- creation argument защищает sexual differentiation;
-- vv.11–12 используются для affirming equality.
+### Jerome Murphy-O'Connor — hairstyle + sexual-role reconstruction
 
-**Калибровка:** `D/C-low / PUBLISHED EDGE MODEL`. Нельзя превращать древние данные о hairstyle/sexual signalling в универсальный lexical equation для 1 Cor 11.
+`Sex and Logic in 1 Corinthians 11:2–16`, later collected in *Keys to First Corinthians* (OUP, 2009), pp. 142–158:
 
-### 6.2 Murphy-O'Connor — human messengers in v.10
+- not a veiling passage in his reconstruction;
+- male long hair linked to an active male homosexual role;
+- improperly arranged/short female hair linked to masculine/lesbian presentation;
+- creation argument protects sexual differentiation;
+- vv.11–12 affirm mutuality/equality.
 
-**Source:** `1 Corinthians 11:2–16 Once Again`, *Keys to First Corinthians* (2009), pp. 159–181.
+**Calibration:** `D/C-low / PUBLISHED EDGE MODEL`.
 
-В revised proposal:
+### Murphy-O'Connor — human messengers in v.10
 
-- `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` читается как woman exercising control over her head / arranging hair;
-- `angels` предлагается понимать как human messengers from other churches;
-- chapter separately weighs `κεφαλή` as ruler/source/person etc.
+`1 Corinthians 11:2–16 Once Again`, *Keys to First Corinthians* (2009), pp. 159–181:
 
-**Калибровка:** human-messenger reading = `D/C-low history/debate`; полезна именно как реальный академический вариант.
+- `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` = woman exercises control over her head / arranges hair;
+- `angels` = human messengers from other churches;
+- `κεφαλή` possibilities are explicitly reweighed.
 
-### 6.3 Kirk R. MacGregor — homosexuality-prohibition thesis
+**Calibration:** `D/C-low history/debate`.
 
-**Source:** `Is 1 Corinthians 11:2–16 a Prohibition of Homosexuality?`, *Bibliotheca Sacra* 166:662 (2009), 201ff.
+### Kirk R. MacGregor — homosexuality-prohibition thesis
 
-Позиция:
+`Is 1 Corinthians 11:2–16 a Prohibition of Homosexuality?`, *Bibliotheca Sacra* 166:662 (2009):
 
-- `κατὰ κεφαλῆς ἔχων` понимается как long hair, не garment;
-- мужчинам запрещаются long hair, женщинам short hair;
-- gender-crossing appearance связывается с homosexuality.
+- `κατὰ κεφαλῆς ἔχων` read as long hair rather than garment;
+- men forbidden long hair, women short hair;
+- gender-crossing appearance linked to homosexuality.
 
-**Калибровка:** `D/C-low`. Исторически интересная консервативная попытка, но далеко не leading material-covering reading.
+**Calibration:** `D/C-low`; not the leading material-covering interpretation.
 
-### 6.4 Quotation/refutation внутри 11:3–16
+### Quotation/refutation model
 
-**Source:** Alessandra Castilho da Costa, `Identifying Quotations in 1 Corinthians 11:3-16` (recent linguistic argumentative-analysis article).
+Alessandra Castilho da Costa, `Identifying Quotations in 1 Corinthians 11:3-16`, proposes that vv.4–9 can reflect Corinthian quoted viewpoint subsequently refuted by Paul.
 
-Proposal:
+**Calibration:** `D/C-low / RECENT LINGUISTIC EDGE MODEL`; requires stronger discourse-marker verification before any elevation.
 
-- vv.4–9 могут представлять Corinthian viewpoint/quotation, который Paul затем refutes.
+### Interpolation 11:3b–15
 
-**Калибровка:** `D/C-low / RECENT LINGUISTIC EDGE MODEL`. Нужна отдельная проверка Greek discourse markers; не читать как установленную структуру письма.
+Timothy Milinovich proposed interpolation of 11:3b–15; Sławomir Torbus published a direct structural critique defending the passage's organic integration.
 
-### 6.5 Interpolation of 11:3b–15
+**Calibration:** `D/C-low`: no adequate manuscript omission-base presently controls removal of the passage.
 
-Timothy Milinovich proposed interpolation of 11:3b–15 (parallel to his approach to 14:34–35). Sławomir Torbus published a direct critique arguing that the passage belongs organically to the performative/concentric structure of 1 Corinthians.
+### Mark Finney — honour/status reconstruction
 
-**Калибровка:** interpolation = `D/C-low`, потому что:
+`Honour, Head-coverings and Headship: 1 Corinthians 11.2-16 in its Social Context`, JSNT 33.1 (2010): higher-status male head attire/status distinctions and female covering/community honour form a proposed social trigger.
 
-- нет достаточного manuscript omission-base для удаления 11:3b–15;
-- модель зависит прежде всего от literary/theological reconstruction;
-- она должна быть известна как scholarly edge case, но не включена в publication-level alternatives как равновесная.
+**Calibration:** `B/C historical reconstruction`, not A-level local fact.
 
-### 6.6 Mark Finney — honour/status male-covering reconstruction
+## 6. Rare `angels` map, now provenance-separated
 
-**Source:** `Honour, Head-coverings and Headship: 1 Corinthians 11.2-16 in its Social Context`, JSNT 33.1 (2010).
-
-Proposal:
-
-- higher-status male Corinthians могли использовать head attire для сохранения status distinctions;
-- female covering защищает communal honour в потенциальном присутствии outsiders.
-
-**Калибровка:** `B/C historical reconstruction` — сильнее чистой экзотики, но всё равно реконструкция local trigger, а не A-level текстовый факт.
-
-## 7. Rare `angels` map — provenance tightened
-
-Теперь можно удерживать по крайней мере следующие исторические чтения, не смешивая их:
-
-1. holy/liturgical angels present in worship — `B leading`;
-2. fallen angels / Watchers — Tertullian line — `C`;
-3. guardian angels — patristic/classic variant — `D/C-low`;
+1. holy/liturgical angels present in worship — `B / leading`;
+2. fallen angels / Watchers — Tertullian — `C`;
+3. guardian angels — historical variant — `D/C-low`;
 4. bishops/church leaders — Ambrosiaster — `D history`;
-5. Christian prophets — Beza/classic catalogue — `D history`;
+5. Christian prophets — classic reception catalogue — `D history`;
 6. betrothal messengers — Lightfoot/Gill reception — `D history`;
-7. hostile/visiting observers or messengers from churches — classic + Murphy-O'Connor variant — `D/C-low`;
-8. angelic imitation / covered heavenly worshippers — classic homiletical variant — `D history`.
+7. visiting/hostile human observers or messengers from churches — classic + Murphy-O'Connor variants — `D/C-low`;
+8. angelic imitation / heavenly worshippers — classic homiletical variant — `D history`.
 
-A-level minimum remains unchanged: Paul says `because of the angels`; text itself does not identify their exact function.
+A-level minimum is unchanged: Paul invokes `the angels`; the verse itself does not identify their exact function.
 
-## 8. Conservative synthesis after third audit
+## 7. Conservative synthesis after third audit
 
-Third pass **does not overturn** the controlling synthesis:
+No reversal:
 
 - material/textile covering — `B-high / leading`;
-- hair/hairstyle-only — `C / serious alternative`, with sexual-role variants lower (`D/C-low`);
+- hair/hairstyle-only — `C / serious alternative`; sexual-role submodels lower (`D/C-low`);
 - `κεφαλή` headship/authority/predominance — `B / leading`; source/origin-only — `C`;
-- `ἐξουσίαν ἔχειν`: woman is grammatical subject — `A`; exact symbolic referent — `B/C`;
-- holy/liturgical angels — `B / leading`; Watchers — `C`; human/clergy variants — lower;
+- woman is grammatical subject of `ἐξουσίαν ἔχειν` — `A`; exact symbolic referent — `B/C`;
+- holy/liturgical angels — `B / leading`; Watchers — `C`; human/clergy variants lower;
 - Roman male covered worship — `A historical background`; exact Corinth trigger — `B reconstruction`;
 - wives vs all women — `OPEN B/C`;
 - women praying/prophesying in 11:5 — `A`;
-- interpolation of 11:3b–15 — `D/C-low`;
-- quotation/refutation of substantial vv.4–9 — `D/C-low` pending stronger discourse/textual evidence.
+- interpolation 11:3b–15 — `D/C-low`;
+- large quotation/refutation model — `D/C-low` pending stronger evidence.
 
-## 9. Tightened publication cautions
+## 8. Tightened cautions
 
-Не писать как установленный факт:
+Do not state as established fact:
 
-- что Garland 2003 — его latest/current commentary;
-- что Fee 1987 автоматически отражает Revised 2014;
-- что `angels=bishops` — нормальное Pauline lexical meaning, хотя Ambrosiaster так толковал;
-- что homosexual/lesbian hairstyle reconstruction является «значением греческих слов»;
-- что vv.4–9 demonstrably quote Corinthians merely because a rhetorical model can be constructed;
-- что 11:3b–15 имеет manuscript evidence of omission sufficient for interpolation;
-- что Roman status, Dionysiac ecstasy, prostitution, homosexuality или Judaizing являются доказанным single local trigger.
+- Garland 2003 is the current/latest commentary;
+- Fee 1987 automatically represents Revised 2014;
+- `angels=bishops` is Pauline lexical meaning because Ambrosiaster used it;
+- a homosexual/lesbian hairstyle reconstruction is the lexical meaning of Paul's Greek;
+- vv.4–9 are demonstrably a Corinthian quotation merely because a rhetorical model can be built;
+- 11:3b–15 has a manuscript omission-base sufficient for interpolation;
+- Roman status, Dionysiac ecstasy, prostitution, homosexuality or Judaizing is the proven single Corinthian trigger.
 
-## 10. Boundary
+## 9. Boundary
 
 ```text
 PRODUCT_WRITE = false
