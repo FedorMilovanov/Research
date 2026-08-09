@@ -1,0 +1,52 @@
+{
+  "scope": "Aldar Nommik open-route adversarial audit for 1 Corinthians 11:2-16",
+  "date": "2026-08-10",
+  "status": "PRE_FULLTEXT_RESEARCH_ONLY_PUBLICATION_HOLD",
+  "access": {
+    "institutional_fulltext_exists": "A_INSTITUTIONAL",
+    "urn": "urn:nbn:se:ths:diva-2600",
+    "fulltext_bytes_read": false,
+    "user_acquisition_allowed": false,
+    "do_not_guess_diva_pid": true
+  },
+  "model": {
+    "name": "RITUAL_UNIFORMITY_CAPITE_VELATO",
+    "whole_model_grade": "C_SERIOUS_CURRENT_RECONSTRUCTION",
+    "roman_capite_velato_background": "A",
+    "corinthian_recognition": "B_HIGH_HISTORICAL_INFERENCE",
+    "v4_material_covering": "B_HIGH",
+    "v4_exact_capite_velato": "B_C",
+    "corinthian_uniformity_rule": "C_SERIOUS_RECONSTRUCTION",
+    "married_women_target": "B_C",
+    "divine_knowledge_efficacy_trigger": "C",
+    "v10": "HOLD_MAJOR",
+    "angels": "HOLD_MAJOR"
+  },
+  "stress_test": {
+    "v2": "NATURAL",
+    "v3": "HOLD_COMPATIBLE",
+    "v4": "NATURAL_STRONG",
+    "v5_6": "COMPATIBLE_WITH_EXPLANATORY_GAIN_PLUS_EXTRA_ASSUMPTION",
+    "v7_9": "COMPATIBLE",
+    "v10": "HOLD_MAJOR",
+    "v11_12": "NATURAL_COMPATIBLE",
+    "v13": "COMPATIBLE",
+    "v14_15": "COMPATIBLE_LOW_UNIQUE_ADVANTAGE",
+    "v16": "COMPATIBLE"
+  },
+  "methodological_controls": {
+    "material_object_does_not_entail_exact_roman_rite": true,
+    "cognitive_plausibility_does_not_establish_hidden_event": true,
+    "active_corinthian_interlocutors_do_not_identify_exact_counterargument": true,
+    "same_roman_background_can_support_multiple_causal_models": true
+  },
+  "core_grades_changed": false,
+  "promotion_blockers": [
+    "full v10 exousia treatment",
+    "full angels treatment",
+    "direct constraint on ritual-uniformity proposal",
+    "evidence for divine-knowledge efficacy conflict",
+    "exact v4 link from material covering to capite velato"
+  ],
+  "next_action": "resolve institutional DiVA record and perform page-level fulltext delta audit"
+}
