@@ -7,8 +7,11 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 |---|---|---|---|
 | 1730 | Stohrer | Current house dates founding at rue Montorgueil to 1730 | `CONFIRMED participant history` — https://stohrer.fr/notre-maison/ |
 | 18th c. | Baba | Stohrer currently attributes baba to Nicolas Stohrer; Tokay/Malaga versions diverge and rum comes later | `HOUSE TRADITION / event not primary-closed` |
+| 1840 | Saint-Honoré | Lacam/Charabot 1893 account, currently available through a secondary transcription, says Auguste Julien brought the Bordeaux `Flan Suisse` idea and the cake was first made at Maison Chiboust in 1840 | `PROBABLE / PRIMARY OBJECT IDENTIFIED, EXACT PAGE NOT YET PINNED` — Gallica: https://gallica.bnf.fr/ark:/12148/bpt6k9735327k |
+| 1847 | Saint-Honoré | Some modern institutional retellings use 1847 | `CONFLICT WITH LACAM 1840 / DO NOT USE AS SOLE ORIGIN DATE` |
 | 1856 | Éclair | BHVF records literary pastry use `ses éclairs` in H. de Kock | `DOCUMENTED lexical witness` — https://www.cnrtl.fr/definition/bhvf/%C3%A9clair |
-| 1856 | Religieuse | La Poste modern recap attributes creation to Signor Frascati | `DISPUTED / no contemporaneous locator acquired` |
+| 1856 | Éclair | Louis Bailleux's professional *Le Pâtissier moderne* has been tightly located by specialist secondary research to an `Éclairs` recipe on p. 74 | `PRIMARY BOOK FULL OBJECT IDENTIFIED / DIRECT p.74 SCAN VERIFICATION PENDING` — https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC |
+| 1856 | Religieuse | La Poste modern recap attributes creation to Signor Frascati; Bailleux's 1856 book is unusually relevant because its author trained at Maison Frascati, but no Religieuse page has yet been found in it | `DISPUTED / no contemporaneous religieuse locator acquired` |
 | 1860 | Kouign-Amann | Douarnenez official tourism attributes creation to Yves-René Scordia | `LOCAL TRADITION / early record missing` |
 | 1864 | Éclair | TLFi etymology gives Littré pastry sense | `DOCUMENTED lexicographic milestone`, not first known use |
 | 1873 | Saint-Honoré | Gouffé directly describes base + crown of pâte à choux + small choux | `DOCUMENTED PRIMARY` |
@@ -41,13 +44,13 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 
 ## Dates prohibited as simple origin labels at current state
 
-- Saint-Honoré `1847` / `1863`: not yet primary-closed in this corpus.
+- Saint-Honoré `1847` / `1863`: neither is primary-closed; Lacam's later account currently points instead to 1840 for first making at Maison Chiboust.
 - Paris-Brest cake `1891`: race date only; do not use as cake creation date.
 - Religieuse `1856`: disputed modern attribution pending contemporaneous evidence.
 - Kouign-Amann `1860`: local tradition pending early record.
 - Tatin accident date: legend, not documentary milestone.
 - Canelé convent/18th-century origin: not supported as established fact by current regional institutional research.
-- Éclair `Carême / early 1800s`: no exact primary invention locator acquired.
+- Éclair `Carême / early 1800s`: no exact primary invention locator acquired; a professional recipe is already tightly located in Bailleux 1856.
 - Mont-Blanc `1903 invention`: Angelina house lineage must be separated from older European category genealogy.
 
 ## Chronology next actions
