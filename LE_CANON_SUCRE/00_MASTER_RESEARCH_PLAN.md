@@ -35,6 +35,7 @@ The method is adversarial. Every attractive origin story receives a falsificatio
 ### Institutional / participant
 
 - official maisons and professional bodies;
+- authorized publishers for author-held modern source identity and scope;
 - Comité Colbert;
 - Région Nouvelle-Aquitaine and local public institutions;
 - Élysée / DILA / BnF / archive services;
@@ -55,7 +56,7 @@ Secondary sources can discover precise primary targets, expose conflicts and doc
 
 Use non-French sources only when they add evidence:
 
-- United States: Internet Archive, University of Michigan, Library of Congress, NYPL menus;
+- United States: Internet Archive, University of Michigan, Library of Congress, NYPL menus, institutional historic-newspaper repositories;
 - United Kingdom: Wellcome/Leeds, historical cookery books and professional manuals where they clarify transnational pastry genealogy;
 - Japan: official maison timelines, NDL and professional pâtisserie press;
 - Italy: Mont-Blanc / chestnut-dessert genealogy;
@@ -74,7 +75,7 @@ Examples now controlling:
 
 - Éclair: 1848 is the earliest current French pastry locator, not an invention date.
 - Religieuse: **Bailleux 1860 is the earliest directly verified professional named entry/section in the current corpus; Gouffé 1873 remains the earliest exact recipe/form pages directly inspected.** The 1860 content page is access-restricted and the 1856 first-edition delta remains open.
-- Tarte au Citron: Acton **1845** now supplies a strongly mapped English shell + lemon-filling architecture, but its exact original recipe leaf still needs direct facsimile inspection and it does not close French origin/codification. Gérard **1877** directly closes a French-language `tourte au citron` name witness, not its recipe architecture.
+- Tarte au Citron: Acton **1845** now supplies a strongly mapped English shell + lemon-filling architecture, with the same form independently visible in U.S. print by **1850**; exact Acton facsimile leaves still need direct inspection. Gérard **1877** closes a French-language `tourte au citron` name witness, not its recipe architecture. For Genin, authorized author-source custody for technique is closed by the **2010 Genin/Astier book**, while the exact `created in 2009` statement remains B1-probable until a Genin-controlled 2009 source is found.
 - Mont-Blanc: named Farmer 1896 is primary-closed before Angelina; earlier named European use remains open.
 - Kouign-Amann: Scordia / Douarnenez / c.1860 is a strong local tradition, but independent reporting on the Douarnenez association's own historical research explicitly noted the absence of an incontestable written trace; exact early evidence remains open. Association/protection activity and an INPI filing around **1999** are independently corroborated by *Le Monde* 2001, while exact register particulars remain open.
 
@@ -91,8 +92,10 @@ Examples now controlling:
 
 ### Other controlling objects / metadata
 
-- Acton 1845: https://wellcomecollection.org/works/rdz664vd — Wellcome/Leeds full object, 679 images, Public Domain Mark; first-edition-based text maps `Common Lemon Tartlets` p.431 and `Store Mixture for Lemon Tartlets` p.434, exact facsimile leaf still to inspect.
+- Acton 1845: https://wellcomecollection.org/works/rdz664vd — Wellcome/Leeds full object, 679 images, Public Domain Mark; first-edition-based text maps `Common Lemon Tartlets` p.431 and `Store Mixture for Lemon Tartlets` p.434, exact facsimile leaves still to inspect.
+- *Georgia Citizen*, 16 Aug 1850: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn83026608/1850-08-16/ed-1/seq-4/ — exact period newspaper page republishes `Common Lemon Tartlets`; direct transmission witness, not origin proof.
 - Gérard 1877: https://fr.wikisource.org/wiki/Page%3AG%C3%A9rard_-_L%E2%80%99Ancienne_Alsace_%C3%A0_table%2C_1877.djvu/219 — direct French-language `tourte au citron` named-form witness.
+- Genin/Astier 2010: https://www.editionsalternatives.com/site.php?id=991&type=P — authorized publisher record for *Le meilleur de la tarte au citron*, 14 Oct 2010, ISBN 978-2-86227-651-9; closes author-source identity/scope for dough, baking and lemon-cream technique, but not the exact 2009 creation-year claim.
 - Lacam/Charabot 1893: https://gallica.bnf.fr/ark:/12148/bpt6k9735327k — Saint-Honoré p.44/p.49 targets.
 - Farmer 1896: https://archive.org/details/bostoncookingsc00collgoog — named `Mont Blanc`, printed p.357.
 - Dubois 1894: https://gallica.bnf.fr/ark:/12148/bpt6k3412588h — Tatin technique-genealogy object; exact inverted-tart leaf pending.
@@ -110,6 +113,7 @@ Examples now controlling:
 - `ECLAIR_VANITY_FAIR_1861_PAGE`
 - `SAINT_HONORE_LACAM_P44_P49`
 - `TARTE_CITRON_ACTON_1845_P431_P434_FACSIMILE`
+- **`TARTE_CITRON_GENIN_2009_CREATION_DATE_PRIMARY`** — technique/author-source identity is no longer open; only the exact 2009 creation-year custody remains.
 - `TARTE_CITRON_DUMAS_1873_EXACT_LEMON_RANGE`
 - `TARTE_CITRON_JEANES_1870_P227`
 - `TARTE_CITRON_EARLIEST_FRENCH_RECIPE_AND_MERINGUE_CHAIN`
@@ -141,7 +145,7 @@ Examples now controlling:
 - `TROPEZIENNE_1956_PRESS_BARDOT_PROVENANCE`
 - `MICKA_POLISH_PRIMARY_BIOGRAPHY`
 - `BABA_EARLY_STOHRER_RUM_TIMING`
-- `TARTE_CITRON_FRENCH_CODIFICATION_VS_GENIN_REINTERPRETATION` — broad European shell+lemon architecture is no longer wholly open after Acton 1845; focus is French codification, meringue/emulsion transition and Genin's later authored form.
+- `TARTE_CITRON_FRENCH_CODIFICATION_VS_GENIN_REINTERPRETATION` — broad European shell+lemon architecture and Genin's authorized technique source are no longer wholly open; focus is French codification, meringue/emulsion transition and exact 2009 date custody.
 
 ### P2
 
@@ -177,6 +181,8 @@ For a historical book/newspaper/menu:
 
 A transcription explicitly mapped to a historical edition can close a bounded text/locator layer when corroborated by institutional object identity, but the original page remains `PAGE_IMAGE_HOLD` until visually inspected. This currently governs Acton 1845 p.431/p.434.
 
+An authorized publisher page can close modern author/book identity and described scope without automatically closing every date/claim inside the subject's biography. This currently governs Genin/Astier 2010 versus the still-open exact 2009 citron-basilic creation date.
+
 ## Access boundary
 
 Never bypass authentication, paywalls or network restrictions.
@@ -189,7 +195,7 @@ Historical visuals must be authentic acquired objects. Never generate a fake his
 
 Every visual row needs object identity, institution, date, creator if known, stable URL, rights statement, required credit and publication decision. `downloaded`, `digitized`, `viewable` and `public domain in one jurisdiction` are not automatically `PUBLICATION_ELIGIBLE`.
 
-Generated contemporary editorial imagery is governed separately by `00_GENERATION_REFERENCE_AND_PROMPT_BRIEF.md`.
+Modern copyrighted author books can be authoritative text/source objects without becoming visual assets. Generated contemporary editorial imagery is governed separately by `00_GENERATION_REFERENCE_AND_PROMPT_BRIEF.md`.
 
 ## Deliverables
 
