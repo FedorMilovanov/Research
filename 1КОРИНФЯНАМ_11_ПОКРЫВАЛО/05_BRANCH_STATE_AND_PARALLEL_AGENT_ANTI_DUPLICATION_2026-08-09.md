@@ -165,3 +165,16 @@ origin/arena/019fe62b-research
 - применение сегодня.
 
 Главный пока вывод не догматический, а исследовательский: текст нельзя редуцировать ни к «только ткань», ни к «только волосы», ни к «чистая культура без нормы».
+
+---
+
+## Update 2026-08-09 (pass-2 integration, 4th push wave)
+
+- Added dossiers 15 (image/glory/interdependence theology), 16 (hermeneutics/application), 17 (Russian Orthodox/Evangelical/Baptist reception), 18 (master index).
+- Added source files for Schreiner RBMW ch.5 and Ellicott in SOURCE_LIBRARY/…/classical_conservative/.
+- Dossier 10 exousia/angels (crux) completed earlier this session.
+- Verse-by-verse synopsis (14) copied from parallel Agent-V dossier (09_VERSE_BY_VERSE_EXEGESIS) with Schreiner addendum.
+- Numbering note: files 09 (x2), 10 (x2) reflect two separate topics (historical dossier / primary source pack; exousia-angels / 14:34 reconciliation). Master index (18) is canonical mapping.
+- All work in 1КОРИНФЯНАМ_11_ПОКРЫВАЛО/; СЕРИЯ 1 КОРИНФЯНАМ 11/ retained as parallel working surface (NOT canonical entrypoint).
+- Still NO publication draft; PUBLICATION_HOLD, BDAG/TDNT-HOLD, major-commentary-archive-HOLD remain.
+- Next pass (pass-2): BDAG/EDNT/TDNT collation; NA28 apparatus verification; integration of Fee/Thiselton/Garland/Ciampa-Rosner/Winter/Schreiner once books available; Patristic fill (Augustine, Theodoret, Cyril Al., Aquinas, Luther, Beza, Bengel, Meyer, Godet, Lenski, Morris, Bruce); Russian Baptist archive pass through CSVs.
