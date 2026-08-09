@@ -80,6 +80,7 @@
 | Сильные контраргументы и либеральные прочтения | `05_ADVERSARIAL_AND_LIBERAL_READINGS.md` | FOUNDATION |
 | Святоотеческие первоисточники (Златоуст, Феофан, Тертуллиан и др.) | `06_PATRISTIC_PRIMARY_SOURCES.md` | FOUNDATION |
 | Применение сегодня (комплементарианство / эгалитаризм / культура) | `07_APPLICATION_DEBATE.md` | FOUNDATION |
+| Логика и риторика 11:2–16 (структура аргумента, силлогизмы, узлы L1–L7) | `08_LOGIC_AND_RHETORIC_OF_1COR11_2_16.md` | PASS-1 |
 
 ---
 

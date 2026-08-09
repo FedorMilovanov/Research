@@ -112,3 +112,30 @@
 1. Каждая либеральная позиция — с именем автора и работой.
 2. Ответ строится на уровнях A–D, не на эмоции.
 3. Файл пополняется на каждой фазе; старые записи не удаляются (SUPERSEDED/обновление статуса).
+
+---
+
+## 9. ДОПОЛНЕНИЕ PASS-1 (2026-08-09): позиции Мейера, EGT, Робертсона
+
+### 9.1. Мейер против Златоуста: 11:4 — риторика, а не реальная проблема мужчин
+
+Мейер: «Had Paul meant to correct the men because they had prayed or preached as prophets at Corinth with their heads covered (Chrysostom and many of the older commentators), he would have gone into the matter more in detail, as he does in what follows respecting the women.» Это создаёт внутренний консервативный спор: Златоуст/Феофилакт/Феофан (мужчины реально покрывали) ↔ Мейер (риторический ход) ↔ Остер/Winter (реально, но по римскому обычаю capite velato). Серия должна честно показать все три и не выдавать ни одну за факт (Q1).
+
+### 9.2. EGT против Мейера: 11:5 — публичная молитва/пророчество женщин
+
+EGT (Findlay): «There is no ground in the text for limiting the reference in her case to the exercise of these gifts in domestic and private circles (thus Hf., Bt., and some others); on the contradiction with 1 Corinthians 14:34, see note ad loc.» Мейер: малые собрания («церковь в доме»). Спор о том, как снимать напряжение 11:5 ↔ 14:34 (Q7). Обе позиции — консервативные; финальное решение — фаза 4.
+
+### 9.3. Мейер и Робертсон против Тертуллиана (ангелы 11:10)
+
+- Мейер: «Any allusion to Genesis 6:1-4 (suggested already by Tertullian... and Hofmann) is wholly foreign to the passage... What an importing of carnal lust! And were not the women whom the apostle here warns in part matrons and grey-headed dames!»
+- Робертсон: «It is not preachers that Paul has in mind, nor evil angels who could be tempted (Genesis 6:1), but angels present in worship (cf. 1 Corinthians 4:9; Psalms 138:1) who would be shocked... since the angels themselves veil their faces before Jehovah (Isaiah 6:2).»
+- Правило Мейера: «ἄγγελοι, when standing absolutely in the N. T., always denotes good angels alone» (ср. 1 Кор. 4:9).
+- Значение для серии: прочтение «падшие ангелы» — древнее (Тертуллиан) и уместно как исторический факт, но консервативный мейнстрим (Мейер, Робертсон, EGT, Кальвин, Гилл) его отвергает. Взвешенный статус: POSSIBLE/исторический курьёз, не основное прочтение. Связь с корпусом «Трудные тексты» (Быт. 6) фиксируется как литературно-богословская (уровень D), не как экзегетический вывод из 11:10.
+
+### 9.4. Усиление ответа на «волосяную» гипотезу (Q2)
+
+Помимо Златоуста («не сказал: да растит волосы, но: да покрывается»), теперь есть:
+- Мейер (11:15): «if the κόμη is an honour for a woman because it is given to her in place of a veil, then the veil itself too must be an honour to her, and to lay it aside in prayer a disgrace»; «Naturae debet respondere voluntas» (Bengel).
+- Робертсон (11:15): ἀντί — «not in the place of a veil, but answering to» (как в Ин. 1:16).
+- EGT (11:4–5): κατὰ κεφαλῆς ἔχων = «wearing down from the head (a veil: κάλυμμα understood)... to throw the upper fold or lappet of her robe over her head» — конкретная античная практика ткани.
+- Греческие реалии: только гетеры ходили с непокрытой головой; рабыни — бритые; обритие — наказание прелюбодейке (EGT, Робертсон, Мейер; Wetstein; Ис. 7:20; Чис. 5:18; Юстинианов кодекс).
