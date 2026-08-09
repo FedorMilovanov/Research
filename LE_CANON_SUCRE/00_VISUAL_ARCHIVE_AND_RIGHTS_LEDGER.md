@@ -32,26 +32,27 @@
 | LCSV-022 | Opéra name genealogy | https://gallica.bnf.fr/ark:/12148/bpt6k5305801/f3.image.langFR | *Le Gaulois*, 18 Mar 1899, p.3 exact page route | EXACT_ITEM_PAGE_ROUTE_IDENTIFIED / CONTENT_NOT_DIRECTLY_INSPECTED | BnF/Gallica item-level review | BLOCKED | Name genealogy only; no identity with Dalloyau 1955 assumed |
 | LCSV-023 | Tatin | https://www.retronews.fr/journal/le-journal/18-decembre-1899/129/238489/1 | *Le Journal*, 18 Dec 1899, p.1 exact page route | EXACT_ITEM_PAGE_ROUTE_IDENTIFIED / CONTENT_NOT_DIRECTLY_INSPECTED | RetroNews/BnF item-level review | BLOCKED | Early printed-name candidate |
 | LCSV-024 | Tropézienne / Bardot testimony | https://www.latartetropezienne.fr/fr/blog/le-coffret-bb-trop-en-lhonneur-de-brigitte-bardot-n18 | Maison page preserving retrospective Bardot `marraine` testimony | FULL_OBJECT_VERIFIED | proprietary / letter-object rights and custody unknown | BLOCKED | Find original letter/object |
-| LCSV-025 | Tatin transmission | https://gallica.bnf.fr/ark:/12148/bpt6k11817663 | *Le Livret d'or de la section gastronomique régionaliste du Salon d'automne*, 1923 | PRIMARY_OBJECT_ROUTE_IDENTIFIED / RELEVANT_PAGE_PENDING | Gallica item-level review | BLOCKED | Authentic transmission bridge |
+| LCSV-025 | Tatin transmission | https://gallica.bnf.fr/ark:/12148/bpt6k11817663 | *Le Livret d'or de la section gastronomique régionaliste du Salon d'automne*, 1923; printed p.85 locator | PRIMARY_OBJECT_ROUTE_IDENTIFIED / PRINTED_PAGE_TIGHTLY_LOCATED | Gallica item-level review | BLOCKED | Authentic regionalist transmission target; direct page context still to inspect |
 | LCSV-026 | Tatin transmission | https://www.retronews.fr/journal/comoedia/29-decembre-1923/775/2502411/4 | *Comœdia*, 29 Dec 1923, p.4 | EXACT_ITEM_PAGE_ROUTE_IDENTIFIED / CONTENT_PENDING | RetroNews item-level review | BLOCKED | Period newspaper transmission candidate |
 | LCSV-027 | Éclair earliest-current locator | https://www.hachettebnf.fr/livre/latelier-de-demoiselles-ou-lapothicaire-de-pontoise-vaudeville-en-3-actes-9782012183292/ | Charles Paul de Kock, 1848; specialist locator p.4 col.1 | BIBLIOGRAPHIC_OBJECT_VERIFIED / PRIMARY_PAGE_NOT_ACQUIRED | exact BnF/Gallica item rights unknown | BLOCKED | High-value early-word-use facsimile target; Hachette BnF page is provenance/reference, not substitute for original scan |
-| LCSV-028 | Tatin / 1903 contemporaneous witness | https://books.google.com/books/about/Bulletin.html?id=N_efAAAAMAAJ | *Bulletin de la Société de géographie du Cher*, 1re année 1902–1903, target pp.127–138 | FULL_SERIAL_OBJECT_IDENTIFIED / EXACT_RELEVANT_PAGE_PENDING | Google Books / underlying library item review required | BLOCKED | Important because it is independent contemporaneous evidence of Hôtel Tatin apple-tart specialty |
+| LCSV-028 | Tatin / 1903 contemporaneous witness | https://books.google.com/books/about/Bulletin.html?id=N_efAAAAMAAJ | *Bulletin de la Société de géographie du Cher*, 1re année 1902–1903, target pp.127–138 | FULL_SERIAL_OBJECT_IDENTIFIED / EXACT_RELEVANT_PAGE_PENDING | Google Books / underlying library item review required | BLOCKED | Independent contemporaneous evidence of Hôtel Tatin apple-tart specialty |
 | LCSV-029 | Tatin / Besnard 1921 | https://catalogue.bnf.fr/ark:/12148/cb32713209f | *Blois et le Loir-et-Cher*, ISSN 0995-8347, BnF cote 4-LC11-1357 | CATALOG_VERIFIED / EXACT_ISSUE_PAGE_PENDING | BnF item-level review | BLOCKED | Do not create fake 1921 recipe page; acquire exact issue/page |
-| LCSV-030 | Tatin / Curnonsky-Rouff | BnF catalogue target for *La France gastronomique... L'Orléanais*, F. Rouff, 1926 | 1926 volume identity confirmed; exact Tatin page open | CATALOG_VERIFIED / PAGE_PENDING | BnF item-level review | BLOCKED | Needed to test recipe diffusion and reject unsupported Curnonsky-legend claims |
-| LCSV-031 | Tatin myth genealogy | University of Liège synthesis: https://www.news.uliege.be/cms/c_9917930/fr/les-grands-mythes-de-la-gastronomie-la-tarte-des-demoiselles-tatin | scholarly locator to *Horizons d'Argonne* 1976, p.97 | SECONDARY_SCHOLARLY_LOCATOR / PRIMARY_ISSUE_PENDING | rights unknown | BLOCKED | Acquire original 1976 page; do not turn scholarly citation into fake facsimile |
-| LCSV-032 | Tatin / Confrérie legal-myth layer | https://stephanevaladou.wixsite.com/lichonneuxtatin/lesprit-et-les-lois | current Confrérie source; Journal officiel registration stated 27 Mar 1979 | PARTICIPANT_OBJECT_VERIFIED | proprietary page; original JO notice separately required | REFERENCE / IMAGE BLOCKED | Evidence of modern myth transmission and association history, not nineteenth-century origin |
+| LCSV-030 | Tatin / Curnonsky-Rouff | BnF Catalogue général, *La France gastronomique... L'Orléanais*, F. Rouff, 1926 | 1926 volume identity confirmed; L'OPT gives tight secondary heading/navigation key; exact primary Tatin page open | CATALOG_VERIFIED / PAGE_PENDING | BnF item-level review | BLOCKED | Needed to test recipe diffusion and reject unsupported Curnonsky-legend claims |
+| LCSV-031 | Tatin myth genealogy | https://www.news.uliege.be/cms/c_9917930/fr/les-grands-mythes-de-la-gastronomie-la-tarte-des-demoiselles-tatin | Delétang/Leclercq cite *Horizons d'Argonne*, `n°30 à 39, 1976, p.97` | EXACT_SCHOLARLY_BIBLIOGRAPHIC_LOCATOR / ORIGINAL_PAGE_PENDING | rights unknown | BLOCKED | Preserve citation verbatim; do not collapse it to n°30–31 or invent issue mapping |
+| LCSV-032 | Tatin / Confrérie legal-myth layer | https://stephanevaladou.wixsite.com/lichonneuxtatin/lesprit-et-les-lois | current Confrérie source; Journal officiel registration stated 27 Mar 1979 | PARTICIPANT_OBJECT_VERIFIED | proprietary page; original old-JORF notice separately required | REFERENCE / IMAGE BLOCKED | Evidence of modern myth transmission and association history, not nineteenth-century origin |
 | LCSV-033 | Tatin / Confrérie legend page | https://stephanevaladou.wixsite.com/lichonneuxtatin/un-peu-dhistoire | current page explicitly presents birth narrative as `légende` | PARTICIPANT_OBJECT_VERIFIED | proprietary | REFERENCE / IMAGE BLOCKED | Use factually; do not reuse site imagery without licence |
-| LCSV-034 | Tatin technique genealogy | primary Urbain Dubois 1894 page not yet acquired; discovery source in dossier | reported inverted peach tart with apple variants | NOT_ACQUIRED_PRIMARY | UNKNOWN | BLOCKED | High-value comparator to separate pre-existing inversion technique from Tatin name/history |
-| LCSV-035 | Tatin technique genealogy | primary 1790 `tourte retournée` mastery-rule object not yet acquired; scholarly institutional lead in dossier | late-18th-c inverted-tourte terminology | NOT_ACQUIRED_PRIMARY | UNKNOWN | BLOCKED | Must be authentic legal/professional document if used; never AI-reconstruct |
+| LCSV-034 | Tatin technique genealogy | https://gallica.bnf.fr/ark:/12148/bpt6k3412588h | Urbain Dubois, *La pâtisserie d'aujourd'hui*, 2e éd., 1894; exact `Tarte aux pêches molles` leaf pending | FULL_HISTORICAL_OBJECT_IDENTIFIED / PAGE_PENDING | BnF/Gallica item review | BLOCKED pending exact leaf | Comparator to separate pre-existing inversion technique from Tatin name/history |
+| LCSV-035 | Tatin technique genealogy | primary 1790 `tourte retournée` mastery-rule object not yet acquired; scholarly institutional lead in dossier | late-18th-c inversion terminology | NOT_ACQUIRED_PRIMARY | UNKNOWN | BLOCKED | Must be authentic legal/professional document if used; never AI-reconstruct |
+| LCSV-036 | Tatin / mass-press transmission | https://www.retronews.fr/journal/paris-soir/25-aout-1929/131/106713/5 | *Paris-Soir*, 25 Aug 1929, **p.5**, exact RetroNews route | EXACT_ITEM_PAGE_ROUTE_IDENTIFIED / CONTENT_NOT_DIRECTLY_INSPECTED | RetroNews/BnF item-level review | BLOCKED | Strong authentic bridge from specialist/regional publication to mass Paris press |
+| LCSV-037 | Tatin / Berry reception | https://www.retronews.fr/journal/la-depeche-du-berry/11-septembre-1931/693/2215503/2 | *La Dépêche du Berry*, 11 Sep 1931, p.2 | EXACT_ITEM_PAGE_ROUTE_IDENTIFIED / CONTENT_REVIEW_PENDING | RetroNews item-level review | BLOCKED | Hubert Fillay transmission target |
 
 ## Audit correction — stale targets superseded
 
-The following older task phrasings are **superseded**:
-
-- `Jullemier 1903 primary object` → incorrect conflation. Current model is **c.1903 described meal/event + 1915 publication of *Contes de Sologne***; acquire the 1915 page.
-- `Paris-Brest 1909–1910 only` → broaden to **1909–1911** because later family evidence conflicts 1909/1910 and a weak local 1911/Bauget discovery signal exists.
+- `Jullemier 1903 primary object` → incorrect conflation. Current model is **c.1903 described meal/event + 1915 publication of *Contes de Sologne***.
+- `Paris-Brest 1909–1910 only` → broaden to **1909–1911** because later family evidence conflicts 1909/1910 and a weak local 1911/Bauget signal exists.
 - `Lacam p.49 origin page` → incorrect simplification. Acquire **p.44 origin account + p.49 separate technical statement**.
-- `Tatin accident origin document` → do not search only nineteenth-century origin wording. The current documentary genealogy points to a **late myth layer**, with 1976 and c.1979 primary acquisition targets.
+- `Tatin accident origin document` → current documentary genealogy points to a **late myth layer**; target 1976/1979 originals instead of back-projecting the story.
+- `Horizons d'Argonne n°30–31` → incorrect narrowing. The exact scholarly citation is **`n°30 à 39, 1976, p.97`**; original page/mapping remains open.
 
 ## Archive targets not yet fully acquired
 
@@ -63,31 +64,31 @@ Priority order after audit:
 2. Lacam 1893 p.44 + p.49;
 3. *Le Gaulois*, 18 Mar 1899 p.3;
 4. *Le Journal*, 18 Dec 1899 p.1;
-5. Tatin 1903 Bulletin exact page(s), Jullemier 1915 page, Besnard 1921 exact issue/page, Curnonsky/Rouff 1926 page;
-6. *Horizons d'Argonne* 1976 p.97 and original 1979 Confrérie/Journal officiel material;
+5. Tatin 1903 Bulletin exact page(s), Jullemier 1915 page, Besnard 1921 exact issue/page, 1923 Livret p.85, Curnonsky/Rouff 1926 page, *Paris-Soir* 1929 p.5, Dépêche du Berry 1931 p.2;
+6. *Horizons d'Argonne* 1976 p.97 preserving the exact `n°30 à 39` scholarly citation; original 1979 Confrérie/old-JORF material;
 7. Paris-Brest 1909–1911 advertisements, menus, trade press, directories, Durand/Bauget local records;
 8. pre-1873 `religieuse` / Frascati / Cintract sources and first standard two-choux depiction;
-9. primary Urbain Dubois 1894 inverted-tart page and primary 1790 `tourte retournée` record;
-10. earlier named `Mont-Blanc / Monte Bianco` before Farmer 1896;
+9. Dubois 1894 exact inverted-tart leaf and primary 1790 `tourte retournée` record;
+10. earlier named `Mont-Blanc / Monte Bianco` before 1896;
 11. early `canelé/cannelé/canaule` and exact 1985 legal record.
-
-Gallica research help:
-https://gallica.bnf.fr/accueil/fr/html/aide-a-la-recherche
 
 ### INA / cinema archives
 
-Target contemporary Tarte Tropézienne and *Et Dieu… créa la femme* material. Film chronology is independently established as May–July 1956; visual acquisition should focus on period Saint-Tropez shop/crew evidence and provenance of Bardot's later testimony. Catalogue hits remain `CATALOG_ONLY` until item identity/rights are captured.
+Target contemporary Tarte Tropézienne and *Et Dieu… créa la femme* material. Film chronology is independently established as May–July 1956; visual acquisition should focus on period Saint-Tropez shop/crew evidence and provenance of Bardot's later testimony.
 
-### INPI
+### INPI / Journal officiel
 
 Target exact legal records:
 
 - `canelé` collective mark reported 1985;
 - Tropézienne historical process/patent filing reported 18 Aug 1972;
 - historical Tarte Tropézienne mark registration;
-- Kouign-Amann association/mark claims.
+- Kouign-Amann association/mark claims;
+- Tatin Confrérie original 1979 association notice/statutes.
 
-Keep `marque`, `brevet`, trade name, association registration and secret recipe legally distinct.
+Official Journal-officiel guidance indicates association publications before 2 January 1985 belong to the older JORF stream rather than later JOAFE. Do not manufacture a modern JOAFE PDF path for the 1979 notice.
+
+Keep `marque`, `brevet`, trade name, association declaration/publication and secret recipe legally distinct.
 
 ### United States
 
@@ -134,15 +135,4 @@ Classes 1–6 require item-level rights closure before production. Class 7 stays
 
 ## Credit contract
 
-Before an authentic visual receives `PUBLICATION_ELIGIBLE`, record:
-
-- creator/author if known;
-- object title;
-- date;
-- institution;
-- stable item URL;
-- licence/right statement;
-- required credit line;
-- crop/derivative permission if relevant;
-- resolution available;
-- local acquisition SHA-256 only if bytes are actually and durably acquired.
+Before an authentic visual receives `PUBLICATION_ELIGIBLE`, record creator/author, object title, date, institution, stable item URL, licence/right statement, required credit, crop/derivative permission, resolution, and SHA-256 only if bytes are actually and durably acquired.
