@@ -1,0 +1,67 @@
+{
+  "topic": "1 Corinthians 11:2-16",
+  "date": "2026-08-10",
+  "status": "VERSE-ADVERSARIAL-AUDIT / SEMANTIC-RELATION-MAP / RESEARCH-ONLY / PUBLICATION-HOLD",
+  "base_policy": {
+    "conservative_weighted": true,
+    "fail_closed": true,
+    "product_write": false,
+    "site_publication": false,
+    "ui_implementation": false
+  },
+  "artifacts": {
+    "verse_audit": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZZ_VERSE_BY_VERSE_ADVERSARIAL_AUDIT_1COR11_2_16_2026-08-10.md",
+    "relation_map": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZZ_SEGMENT_LEVEL_RELATION_MAP_1COR11_2_16_2026-08-10.md",
+    "product_handoff_tz": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZZ_PRODUCT_HANDOFF_TZ_INTERACTIVE_GREEK_RUSSIAN_FLIP_MATRIX_2026-08-10.md",
+    "shogren_source_card": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZZ_SOURCE_CARD_GARY_SHOGREN_FIRST_CORINTHIANS_2026-08-10.md",
+    "current_pointer": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md"
+  },
+  "textual_base": {
+    "current_greek_text_authority": "GNT6",
+    "gnt6_published": true,
+    "gnt6_identical_to_future_na29_text": true,
+    "na29_release_date": "2027-02-28",
+    "claim_pauline_ecm_complete": false
+  },
+  "core": {
+    "material_covering": "B_HIGH_LEADING",
+    "hair_only": "C_SERIOUS_ALTERNATIVE",
+    "kephale_headship_authority": "B_LEADING",
+    "kephale_source_only": "C_VIABLE",
+    "women_pray_prophesy_11_5": "A",
+    "public_assembly": "B_LEADING",
+    "exousia_woman_subject": "A",
+    "exousia_referent": "B_C",
+    "holy_liturgical_angels": "B_LEADING",
+    "watchers": "C",
+    "mutual_interdependence_11_11_12": "A",
+    "roman_capite_velato_background": "A",
+    "exact_corinth_trigger": "B_RECONSTRUCTION",
+    "wives_vs_all_women": "OPEN_B_C",
+    "physis_sex_differentiation": "B",
+    "v16_church_wide_appeal": "A",
+    "v16_exact_custom_referent": "B_C"
+  },
+  "relation_types": [
+    "DIRECT_SYNTAX",
+    "DIRECT_SEMANTIC",
+    "INTERTEXT_STRONG",
+    "INTERTEXT_PROPOSED",
+    "EXEGETICAL_B",
+    "EXEGETICAL_C",
+    "HISTORICAL_B",
+    "HISTORICAL_D",
+    "NEGATIVE_BOUNDARY"
+  ],
+  "shogren": {
+    "status": "P1_IF_ALREADY_HELD",
+    "page_level": "HOLD",
+    "replace_p0": false,
+    "current_greek_text_authority": false
+  },
+  "next_research": [
+    "closed P0 commentary page-level comparison",
+    "verse-audit delta after Thiselton/Fee Revised/Garland 2025/Ciampa-Rosner",
+    "canonical reconciliation 1 Cor 11:5 vs 14:34-35 and 1 Tim 2 remains separate"
+  ]
+}
