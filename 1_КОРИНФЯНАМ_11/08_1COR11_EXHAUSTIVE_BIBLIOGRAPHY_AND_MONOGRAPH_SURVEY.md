@@ -128,16 +128,6 @@
 - **Библиография:** Carson, D.A. *Showing the Spirit: A Theological Exposition of 1 Corinthians 12–14*. Grand Rapids, MI: Baker Book House, 1987. 224 pp. (Раздел по герменевтике пророчества и молчания женщин, pp. 88–92, 121–131). ISBN: 978-0801025211.
 - **Класс доказательства:** `B1`.
 
-#### 19b. D.A. Carson — *«Silent in the Churches»: On the Role of Women in 1 Corinthians 14:33b–36* (1991)
-- **Библиография:** Carson, D.A. *«Silent in the Churches»: On the Role of Women in 1 Corinthians 14:33b–36*. В *Recovering Biblical Manhood and Womanhood: A Response to Evangelical Feminism*, ред. J. Piper и W. Grudem. Wheaton, IL: Crossway, 1991, pp. 140–153.
-- **Открытый доступ:** PDF на media.thegospelcoalition.org/documents/carson/1991_silent_in_the_churches_1Cor_14.pdf.
-- **Содержание (релевантно 1 Кор. 11:2–16):**
-  - Гармонизация 1 Кор. 11:2–16 и 14:33b–36: оба совместимы, каждый в своём контексте (оценка пророчеств/доктринальный суд в 14);
-  - Глосс-гипотеза 14:34–35 — меньшинство: «все рукописи содержат этот пассаж», рукописное свидетельство за подлинность;
-  - 11:16 («мы не имеем такого обычая, ни церкви Божии») склоняет к церковно-публичному прочтению 11:2–16;
-  - Критика «абсолютной дихотомии» Фи (Fee), который считал 14:34–35 несовместимым с 11:2–16.
-- **Класс доказательства:** `B1`.
-
 #### 20. Robert Letham — *The Holy Trinity: In Scripture, History, Theology, and Worship*
 - **Библиография:** Letham, Robert. *The Holy Trinity: In Scripture, History, Theology, and Worship*. Phillipsburg, NJ: P&R Publishing, 2004; rev. ed. 2019. 672 pp. (Раздел по 1 Кор. 11:3 и тринитарному порядку: pp. 479–502). ISBN: 978-1629953496.
 - **Класс доказательства:** `B1`.

@@ -6,7 +6,7 @@
 **Канонический текстовый сегмент:** 1 Коринфянам 11:2–16  
 **Связанный публичный репозиторий:** `FedorMilovanov/gb-is-my-strength`  
 **Текущая исследовательская ветка:** `arena/019fe62d-research`  
-**Операционный статус:** `FOUNDATION FULLY EXPANDED / 50-DOCUMENT MASTER SYSTEM`
+**Операционный статус:** `FOUNDATION FULLY EXPANDED / 69-DOCUMENT MASTER SYSTEM`
 
 ---
 
@@ -40,7 +40,7 @@
 
 ---
 
-## 3. Полная навигационная карта серии (50 документов)
+## 3. Полная навигационная карта серии (69 документов: 62 досье + 7 статей)
 
 ### Исследовательские досье, матрицы и своды
 
@@ -77,7 +77,7 @@
 | **28** | `28_SEVEN_READINGS_OF_ANGELS_1COR11_10_DOSSIER.md` | Полный спектр 7 толкований «Ради Ангелов»: 1QSa 2:3–9, CD 15:15–17, Товит 12, Патристика | `ACTIVE` |
 | **29** | `29_HISTORICAL_THEOLOGY_TIMELINE_FROM_PATRISTICS_TO_PRESENT.md` | Хронологическая панорама рецепции 1 Кор. 11 за 20 веков (от апостольских мужей до XXI века) | `ACTIVE` |
 | **30** | `30_RUSSIAN_BAPTIST_AND_EVANGELICAL_RECEPTION_HISTORY.md` | История рецепции в российском баптизме (Каргель, Проханов, ВСЕХБ, МСЦ ЕХБ) | `ACTIVE` |
-| **31** | `31_CONSOLIDATED_PUBLICATION_POSITION_SHEET_Q1_Q10.md` | Сводный публикационный лист позиций: 10 главных вопросов (Q1–Q10), разрешённые формулировки, калибровка | `ACTIVE / AUTHORITY` |
+| **31** | `31_CONSOLIDATED_PUBLICATION_POSITION_SHEET_Q1_Q10.md` | Сводный публикационный лист позиций: 10 главных вопросов (Q1–Q10), разрешённые формулировки | `ACTIVE` |
 | **32** | `32_SEVEN_ARTICLE_EXPANDED_SITE_ARCHITECTURE.md` | Семичастная расширенная архитектура читательской серии сайта | `ACTIVE` |
 | **33** | `33_ELLICOTT_1877_COMMENTARY_AND_CLASSICAL_ENGLISH_EXEGESIS.md` | Английская классическая экзегеза: комментарий Элликотта (1877) и школа Лайтфута | `ACTIVE` |
 | **34** | `34_EARLY_CHRISTIAN_ICONOGRAPHY_AND_CATACOMB_ART_DOSSIER.md` | Катакомбное искусство Рима (Присцилла, Каллист): фрески Орант в покрывалах и Fractio Panis | `ACTIVE` |
@@ -90,7 +90,24 @@
 | **41** | `41_SPIRITUAL_GIFT_VS_PASTORAL_OFFICE_DISTINCTION.md` | Различие дара (Charisma) и пресвитерства (Office): почему пророчество не равно пасторству | `ACTIVE` |
 | **42** | `42_EGALITARIAN_PROOF_TEXTS_AND_EXEGETICAL_AUDIT.md` | Аудит эгалитарных доказательств: Юния (Рим. 16:7), Фива, Прискилла, Гал. 3:28, жены у Гроба | `ACTIVE` |
 | **43** | `43_HISTORY_OF_WOMENS_ORDINATION_1800_YEAR_CONSENSUS.md` | 1800-летний вселенский консенсус против женской ординации и истоки либерального суфражизма | `ACTIVE` |
-| **44** | `44_1COR11_READER_FAQ_AND_PRACTICAL_SYNTHESIS.md` | Читательское FAQ и практический синтез: 10 частых вопросов, одна-страница позиция, ссылки на досье | `ACTIVE / READER` |
+| **44** | `44_RHETORICAL_PARADOX_AND_CONTRAST_11_2_VS_11_17.md` | Риторический парадокс 11-й главы: похвала (11:2) vs порицание (11:17); богословие Предания | `ACTIVE` |
+| **45** | `45_SCOPE_OF_HEADSHIP_MARITAL_VS_UNIVERSAL_SINGLE_CHRISTIANS.md` | Границы главенства: брачный vs универсальный охват; статус незамужних христианок | `ACTIVE` |
+| **46** | `46_NT_PROPHECY_THEOLOGY_AND_CESSATIONIST_CONTINUATIONIST_AXIS.md` | Богословие пророчества в 11:5: сессационизм vs континуационизм; молитвенный голос сестёр | `ACTIVE` |
+| **47** | `47_ANCIENT_PHYSIOLOGY_HAIR_THEOLOGY_AND_NAZARITE_PARADOX.md` | Античная медицина о волосах, парадокс назорейства (Чис. 6; Деян. 18:18), материнство во Христе | `ACTIVE` |
+| **48** | `48_LITERARY_LINK_1COR8_10_CHRISTIAN_FREEDOM_AND_EXOUSIA.md` | Литературная связь 1 Кор. 8–10 и 11: христианская свобода, отказ от прав и созидание | `ACTIVE` |
+| **49** | `49_THEOLOGY_OF_GLORY_TRIPARTITE_DOXA_AND_VEILING_CREATURE.md` | Трёхчастная теология славы: слава Бога, слава мужа, слава волос; сокрытие тварного пред Богом | `ACTIVE` |
+| **50** | `50_APOSTOLIC_TRILOGY_ON_MODESTY_1COR11_1TIM2_1PETER3.md` | Апостольская трилогия о скромности: 1 Кор. 11, 1 Тим. 2 и 1 Пет. 3; сокровенный сердца человек | `ACTIVE` |
+| **51** | `51_ANCIENT_SLAVE_TONSURE_AND_PENAL_SHAVING_DOSSIER.md` | Рабская тонзура и судебное бритьё в античном праве: Тацит, Эсхин и сила аргумента 11:6 | `ACTIVE` |
+| **52** | `52_SYRIAC_AND_EASTERN_LITURGICAL_RECEPTION_PESHITTA_DIDASCALIA.md` | Сирийская и восточная рецепция: Пешитта (shulṭānā), Дидаскалия, Афраат, Ефрем Сирин, Феодор Мопсуэстийский | `ACTIVE` |
+| **53** | `53_ANABAPTIST_AND_RADICAL_REFORMATION_VEILING_HERMENEUTICS.md` | Анабаптистская герменевтика: Дирк Филипс (Enchiridion 1564), Менно Симонс, Дордрехт 1632, Александр Мак 1708 | `ACTIVE` |
+| **54** | `54_ADVANCED_GREEK_SYNTAX_DATIVE_PARTICIPLE_AND_ANTI_PERIBOLAIOU.md` | Углубленный греческий синтаксис: κατὰ κεφαλῆς, Dativus Modi (ἀκαтаκαλύπτῳ), предлог ἀντί (11:15), Wallace/BDF | `ACTIVE` |
+| **55** | `55_GENESIS_CREATION_ORDER_PRE_FALL_VS_POST_FALL_PAULINE_TELEOLOGY.md` | Богословие творения: Догреховный чин Бытия 2 vs Бытие 3 в паолинской антропологии (11:7–12) | `ACTIVE` |
+| **56** | `56_CORINTHIAN_SLOGANS_HYPOTHESIS_AND_EPISTOLARY_UNITY_1COR11.md` | Критика гипотезы коринфских цитат (11:3–10) и доказательство эпистолярного монолита перикопы | `ACTIVE` |
+| **57** | `57_CANONICAL_ANGELOLOGY_OF_WORSHIP_HEAVENLY_LITURGY_AND_ECCLESIA.md` | Каноническая ангелология богослужения: Скиния, Серафимы (Ис. 6), 1QSa, Евр. 12:22 и 1 Кор. 11:10 | `ACTIVE` |
+| **58** | `58_MATERIAL_CULTURE_AND_GARMENT_TYPOLOGY_IN_ROMAN_CORINTH.md` | Материальная культура и типология одежд: palla, stola, vittae, flammeum, toga, tegidion, архитектура domus | `ACTIVE` |
+| **59** | `59_POLYGLOT_SYNOPTIC_LEXICON_GREEK_LATIN_SYRIAC_SLAVONIC.md` | Полиглотный синоптический лексикон 11:2–16: NA28, Vulgata, Peshitta, Церковнославянский, Синодальный | `ACTIVE` |
+| **60** | `60_CANONICAL_SYNCHRONY_CORINTHIAN_CHURCH_ORDER_1COR11_14.md` | Каноническая синхрония макроблока 1 Кор 11–14: литургический чин, Вечеря, дары, любовь, молчание (14:34) | `ACTIVE` |
+| **61** | `61_MASTER_CLAIM_TO_FOOTNOTE_ACADEMIC_CITATION_MAP.md` | Генеральная академическая карта соотнесения тезисов и первоисточников (Claim-to-Footnote Mapping) | `ACTIVE` |
 | **DATA** | `../data/1cor11-research-manifest.json` | Машиночитаемый манифест доказательств, источников и статусов | `ACTIVE` |
 
 ### Публикационные статьи серии (Site-Ready Drafts)
