@@ -44,7 +44,11 @@
 | LCSV-034 | Tatin technique genealogy | https://gallica.bnf.fr/ark:/12148/bpt6k3412588h | Urbain Dubois, *La pâtisserie d'aujourd'hui*, 2e éd., 1894; exact `Tarte aux pêches molles` leaf pending | FULL_HISTORICAL_OBJECT_IDENTIFIED / PAGE_PENDING | BnF/Gallica item review | BLOCKED pending exact leaf | Comparator to separate pre-existing inversion technique from Tatin name/history |
 | LCSV-035 | Tatin technique genealogy | primary 1790 `tourte retournée` mastery-rule object not yet acquired; scholarly institutional lead in dossier | late-18th-c inversion terminology | NOT_ACQUIRED_PRIMARY | UNKNOWN | BLOCKED | Must be authentic legal/professional document if used; never AI-reconstruct |
 | LCSV-036 | Tatin / mass-press transmission | https://www.retronews.fr/journal/paris-soir/25-aout-1929/131/106713/5 | *Paris-Soir*, 25 Aug 1929, **p.5**, exact RetroNews route | EXACT_ITEM_PAGE_ROUTE_IDENTIFIED / CONTENT_NOT_DIRECTLY_INSPECTED | RetroNews/BnF item-level review | BLOCKED | Strong authentic bridge from specialist/regional publication to mass Paris press |
-| LCSV-037 | Tatin / Berry reception | https://www.retronews.fr/journal/la-depeche-du-berry/11-septembre-1931/693/2215503/2 | *La Dépêche du Berry*, 11 Sep 1931, p.2 | EXACT_ITEM_PAGE_ROUTE_IDENTIFIED / CONTENT_REVIEW_PENDING | RetroNews item-level review | BLOCKED | Hubert Fillay transmission target |
+| LCSV-037 | Tatin / Berry reception | https://www.retronews.fr/journal/la-depeche-du-berry/11-septembre-1931/693/2215503/2 | *La Dépêche du Berry*, 11 Sep 1931, p.2 | EXACT_ITEM_PAGE_ROUTE_IDENTIFIED / CONTENT_REVIEW_PENDING | RetroNews/BnF item-level review | BLOCKED | Hubert Fillay transmission target |
+| LCSV-038 | Tarte au Citron / Acton | https://wellcomecollection.org/works/rdz664vd | Eliza Acton, *Modern Cookery*, London 1845; 679-image Leeds/Wellcome object; target printed p.431 `Common Lemon Tartlets` and p.434 store filling | FULL_OBJECT_VERIFIED / TARGET_PAGES_TEXTUALLY_MAPPED / FACSIMILE_LEAVES_PENDING | **PUBLIC DOMAIN MARK**; Wellcome gives explicit credit line; exact page-resolution/credit capture still required | REFERENCE / STRONG CANDIDATE | Major early shell+lemon-filling architecture; do not publish a facsimile until exact leaf is visually inspected and recorded |
+| LCSV-039 | Tarte au Citron / Acton mirror | https://commons.wikimedia.org/wiki/File:Modern_cookery,_in_all_its_branches_-_reduced_to_a_system_of_easy_practice,_for_the_use_of_private_families_(IA_b21531869).pdf | Same Leeds/Medical Heritage Library scan, IA `b21531869`, 1845, 679 pages | FULL_OBJECT_VERIFIED / EXACT_RECIPE_LEAF_PENDING | Public Domain Mark / Commons file page records free-of-known-restrictions status | REFERENCE / ACQUISITION ROUTE | Useful durable mirror; preserve original Leeds/Wellcome provenance and exact credit |
+| LCSV-040 | Tarte au Citron / Gérard | https://fr.wikisource.org/wiki/Page%3AG%C3%A9rard_-_L%E2%80%99Ancienne_Alsace_%C3%A0_table%2C_1877.djvu/219 | Charles Gérard, *L’Ancienne Alsace à table*, 1877, direct `tourte au citron` inventory page | FULL_OBJECT_VERIFIED / EXACT_PAGE_TEXT_VERIFIED | Wikisource scan/transcription terms and attribution must be captured | REFERENCE / STRONG CANDIDATE | French-language name-history facsimile; nomenclature only, not recipe architecture |
+| LCSV-041 | Tarte au Citron / Webster | https://books.google.com/books?id=b28EAAAAYAAJ | Webster, *The Improved Housewife*, 1855, p.141 `Lemon Cream` | FULL_HISTORICAL_OBJECT_VERIFIED / EXACT_PAGE_TEXT_VERIFIED | Google digitization/item reproduction terms need review | BLOCKED FOR IMAGE / REFERENCE FOR FACTS | Component-genealogy witness; Acton 1845 is earlier/stronger for shell+filling architecture |
 
 ## Audit correction — stale targets superseded
 
@@ -53,6 +57,7 @@
 - `Lacam p.49 origin page` → incorrect simplification. Acquire **p.44 origin account + p.49 separate technical statement**.
 - `Tatin accident origin document` → current documentary genealogy points to a **late myth layer**; target 1976/1979 originals instead of back-projecting the story.
 - `Horizons d'Argonne n°30–31` → incorrect narrowing. The exact scholarly citation is **`n°30 à 39, 1976, p.97`**; original page/mapping remains open.
+- `Tarte au Citron old architecture wholly unknown` → superseded. Acton 1845 now provides a strongly mapped English lemon-tartlet architecture with public-domain full-object custody; exact facsimile recipe leaves remain open and French codification remains separate.
 
 ## Archive targets not yet fully acquired
 
@@ -70,7 +75,15 @@ Priority order after audit:
 8. pre-1873 `religieuse` / Frascati / Cintract sources and first standard two-choux depiction;
 9. Dubois 1894 exact inverted-tart leaf and primary 1790 `tourte retournée` record;
 10. earlier named `Mont-Blanc / Monte Bianco` before 1896;
-11. early `canelé/cannelé/canaule` and exact 1985 legal record.
+11. early `canelé/cannelé/canaule` and exact 1985 legal record;
+12. French tarte-au-citron professional recipe chain between the Acton 1845 English architecture and Gérard 1877 French-language name witness; exact Dumas 1873 relevant range.
+
+### United Kingdom / lemon-tart genealogy
+
+- **Acton 1845 is now a priority authentic facsimile lane** because the institutional Wellcome/Leeds object has explicit Public Domain Mark rights and the first-edition text maps p.431/p.434.
+- Exact p.431 / p.434 image leaves still need visual inspection; do not manufacture a page number→scan-frame mapping.
+- Jeanes 1870 p.227 `Lemon Cheese Cakes` remains an exact professional-page acquisition target.
+- Google Books / transcriptions can support discovery and bounded text mapping but do not replace page-image custody for Product facsimiles.
 
 ### INA / cinema archives
 
@@ -83,7 +96,7 @@ Target exact legal records:
 - `canelé` collective mark reported 1985;
 - Tropézienne historical process/patent filing reported 18 Aug 1972;
 - historical Tarte Tropézienne mark registration;
-- Kouign-Amann association/mark claims;
+- **Kouign-Amann exact mark record** — *Le Monde* 2001 independently corroborates that a Douarnenez association had filed the `véritable kouign-amann de Douarnenez` mark around 1999, but exact participant-reported 15 Dec 1999 date, holder, number, classes, publication and status remain open;
 - Tatin Confrérie original 1979 association notice/statutes.
 
 Official Journal-officiel guidance indicates association publications before 2 January 1985 belong to the older JORF stream rather than later JOAFE. Do not manufacture a modern JOAFE PDF path for the 1979 notice.
