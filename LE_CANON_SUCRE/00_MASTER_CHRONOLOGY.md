@@ -15,13 +15,14 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 | 1856 | Éclair | Bailleux, *Le Pâtissier moderne*, professional `Éclairs` recipe | `FULL BOOK OBJECT IDENTIFIED / PRINTED p.74 TIGHTLY LOCATED / DIRECT PAGE PENDING` — https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC |
 | 1856 | Religieuse / Frascati | Later sources attribute an ancestor/invention to Frascati; Bailleux first-edition provenance ties him to M. A. Cintract / Maison Frascati | `ORIGIN EVENT DISPUTED / 1856 FIRST-EDITION RELIGIEUSE CONTENT UNRESOLVED`; provenance does not prove recipe presence |
 | **1860** | Religieuse | Bailleux expanded/third edition, *Le Pâtissier moderne*, institutional SPbPU TOC directly lists `Religieuse` in Chapter V `Gâteaux garnis` | `DIRECT PROFESSIONAL NAMED ENTRY VERIFIED AT INSTITUTIONAL TOC LEVEL / EXACT PAGE+RECIPE+FORM PENDING`; earliest named professional entry currently verified in corpus — https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info |
-| 1860 | Kouign-Amann | Douarnenez official tourism attributes creation to Yves-René Scordia | `LOCAL TRADITION / early record missing` |
+| **1860** | Baba / Savarin | The same Bailleux/SPbPU institutional TOC directly lists `Petits Savarins`, `Babas parisiens`, and later separate `Savarin` and `Baba` entries | `DIRECT PROFESSIONAL NAMED-FORM ENTRIES VERIFIED AT TOC LEVEL / EXACT RECIPE+SOAKING LIQUID+FORM PENDING`; does not prove rum use — https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info |
+| 1860 | Kouign-Amann | Douarnenez official tourism attributes creation to Yves-René Scordia | `STRONG LOCAL TRADITION / CONTEMPORARY PRIMARY RECORD MISSING`; later independent reporting explicitly notes documentary gap |
 | 1861-02-02 | Éclair | New York *Vanity Fair*, p.50 col.1 `éclairs` locator | `MICHIGAN 1861 VOLUME IDENTIFIED / TIGHT PAGE-COLUMN LOCATOR / DIRECT PAGE PENDING` — https://quod.lib.umich.edu/m/moajrnl/acg4267.0003.000?view=toc |
 | 1864 | Éclair | Littré pastry-sense dictionary milestone | `DOCUMENTED lexicographic milestone`, not first known use |
 | 1873 | Saint-Honoré | Gouffé describes base + pâte-à-choux crown + small choux | `DOCUMENTED PRIMARY` |
 | 1873 | Religieuse | Gouffé describes multi-choux `flan à la religieuse` forms | `DOCUMENTED PRIMARY / EARLIEST EXACT RELIGIEUSE RECIPE+FORM PAGES DIRECTLY INSPECTED IN CURRENT CORPUS`; 1860 named entry now predates it structurally |
 | 1873 | Éclair | Gouffé links éclairs to pains à la duchesse / pâte à choux | `DOCUMENTED PRIMARY` |
-| 1873 | Baba/Savarin | Gouffé documents rum baba and savarin as distinct named professional forms | `DOCUMENTED PRIMARY` |
+| 1873 | Baba/Savarin | Gouffé documents `baba moderne glacé au rhum` and savarin with exact inspectable pages | `DOCUMENTED PRIMARY / EARLIEST EXACT RUM-SPECIFIC BABA PAGE DIRECTLY INSPECTED IN CURRENT CORPUS`; named Baba/Savarin entries are already verified in Bailleux 1860 |
 | 1891 | Mont-Blanc lineage | Artusi recipe 653 documents chestnut strands + whipped cream | `DOCUMENTED PRIMARY ITALIAN PRE-ANGELINA CONSTRUCTION` |
 | 1891 | Paris-Brest | First Paris–Brest–Paris cycle race | `DOCUMENTED BNF INSTITUTIONAL`; this is not cake date |
 | **1894** | Tatin technique genealogy | Urbain Dubois, *La pâtisserie d'aujourd'hui*, 2e éd., E. Dentu; BnF/Gallica object `bpt6k3412588h` | `HISTORICAL FULL OBJECT IDENTIFIED / EXACT Tarte aux pêches molles LEAF PENDING`; inversion-technique comparator, not Tatin-name evidence — https://gallica.bnf.fr/ark:/12148/bpt6k3412588h |
@@ -59,10 +60,13 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 | 1987 | Ispahan genealogy | Hermé recounts `Paradis`, rose + raspberry, at Fauchon | `DIRECT PARTICIPANT INTERVIEW` |
 | 1995 | Canelé research | Région reports archive/archaeology work finding no convent evidence for modern canelé | `INSTITUTIONAL SUMMARY / underlying report priority` |
 | 1997 | Ispahan | Comité Colbert + Pierre Hermé Japan give 1997 milestone | `CROSS-LANGUAGE OFFICIAL CONFIRMATION` |
-| pre-2000 / Ladurée period | 2000 Feuilles precursor | First-person Hermé author-text lead says precursor was created at Ladurée as `Millefeuille praliné` | `STRONG AUTHOR-TEXT ACQUISITION LEAD / CURRENT SEARCHABLE COPY NOT AUTHORIZED PUBLISHER SURFACE` |
+| **1999-11 → 1999-12-15** | Kouign-Amann / protection | Participant association-member source reports formation of a 17-member Douarnenez group in Nov 1999 and INPI filing `Véritable Kouign-Amann de Douarnenez` on 15 Dec 1999 | `STRONG PARTICIPANT LEGAL LOCATOR / EXACT INPI NUMBER, HOLDER, CLASSES, PUBLICATION AND STATUS OPEN` |
+| pre-2000 / Ladurée period | 2000 Feuilles precursor | First-person Hermé author-text lead says precursor was created at Ladurée as `Millefeuille praliné` | `STRONG AUTHOR-TEXT ACQUISITION LEAD / AUTHORIZED 2022/2025 BOOK IDENTITIES NOW PINNED / EXACT AUTHORIZED PAGE OPEN` |
 | c.1999–2000 | 2000 Feuilles | Gault&Millau's Hermé-recollection framing links reworked mille-feuille / `2000 Feuilles` to millennium context | `STRONG MILLENNIUM-NAMING CONTEXT / EXACT FIRST CATALOGUE-DATE OPEN` |
+| **2001-07-25** | Kouign-Amann historiography | *Le Monde* reports Alain Le Berre's historical research while explicitly noting absence of an incontestable written trace for the Scordia-origin reconstruction | `STRONG B1 INDEPENDENT AUDIT SIGNAL`; does not disprove Scordia, but prevents archival-closure wording — https://www.lemonde.fr/archives/article/2001/07/25/le-kouign-amann-breton_4199992_1819218.html |
 | 2001 | Pierre Hermé | Japanese official timeline gives first France boutique milestone | `OFFICIAL TIMELINE` |
 | 2009 | Tarte citron / Genin | Le Monde dates citron-basilic version to 2009 | `B1 STRONG / participant primary desired` |
+| **2026** | Tarte au Citron historiography | Relais Desserts professional synthesis explicitly challenges a simplistic timeless-native-French modern-tart genealogy and points toward older transnational/English lemon-cream leads | `PROFESSIONAL LOCATOR/FALSIFICATION SOURCE / UNDERLYING DUMAS+ENGLISH+FRENCH PRIMARY CHAIN REQUIRED`; not origin proof |
 | 2026 | Galette | Élysée records republican galette without fève | `PRIMARY GOVERNMENT RECORD` |
 
 ## Dates / claims prohibited as simple origin labels
@@ -71,8 +75,12 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 - Éclair `1856 as first known pastry use`: superseded by current 1848 locator; 1848 is not an invention date.
 - Religieuse `1873 as first professional named occurrence`: **superseded** by Bailleux 1860 institutional TOC. The current safe split is `1860 named professional entry / 1873 earliest exact recipe-form pages inspected`; 1856 edition content remains unresolved.
 - Religieuse `1856 as closed Frascati invention`: unresolved; provenance is not event proof.
+- Baba/Savarin `1873 as first professional named occurrence`: **superseded** by Bailleux 1860 institutional TOC. The safe split is `1860 named entries / 1873 earliest exact rum-specific Baba page directly inspected`; 1856 edition and first rum date remain open.
+- Baba `rum first appeared in 1873`: unsafe; 1873 is only the earliest exact rum-specific page directly inspected in this corpus.
 - Paris-Brest cake `1891`: race date only. Exact cake date remains 1909/1910 conflict; 1911 is discovery-only.
-- Kouign-Amann `1860`: local tradition pending early record.
+- Kouign-Amann `1860 as archivally proven exact invention`: unsafe. Scordia/c.1860 is a strong Douarnenez tradition, but independent reporting on the association's own research notes the lack of an incontestable written trace.
+- Tarte au Citron `Jacques Genin invented the genre`: false/unsafe. 2009 concerns a modern authored citron-basilic version; older genre genealogy remains open.
+- Tarte au Citron `modern lemon-cream tart is already proven as an old purely French invention`: unresolved; Relais Desserts is a professional falsification/locator source, not the primary chain.
 - Tatin `Jullemier published in 1903`: false date conflation; c.1903 event vs 1915 publication.
 - Tatin `sisters invented inversion technique`: unsafe; 1790 and Dubois 1894 pre-Tatin technique leads now exist, with primary-page work still open.
 - Tatin accident as nineteenth-century documented origin: unsupported; current located print genealogy becomes visible only much later, with 1976/c.1979 targets.
@@ -86,12 +94,14 @@ Dates below are not equal in evidentiary status. Each row distinguishes primary/
 ## Chronology next actions
 
 1. Acquire direct page images for de Kock 1848, Bailleux 1856 Éclairs p.74, Michigan *Vanity Fair* 1861, Lacam p.44/p.49, *Le Gaulois* 1899 and *Le Journal* 1899.
-2. Religieuse: compare Bailleux 1856 vs 1860 editions; lawfully acquire the 1860 `Religieuse` page/recipe; continue Frascati/Cintract and modern two-choux transition research.
-3. Tatin technique: exact Dubois 1894 `Tarte aux pêches molles` leaf in Gallica `bpt6k3412588h`; primary 1790 `tourte retournée` mastery/legal object.
-4. Tatin documentary network: exact 1903 Bulletin leaf, Jullemier 1915 page, Besnard 1921 issue/page, 1923 Livret p.85, Curnonsky/Rouff 1926 page, Paris-Soir 1929 p.5 and Dépêche du Berry 1931 page content.
-5. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 while preserving the exact scholarly citation `n°30 à 39`; original 1979 Confrérie prospectus/statutes and pre-1985 old-JORF association notice; search 1926–1975 for earlier accident motifs.
-6. Paris-Brest: contemporaneous 1909–1911 Durand/Bauget advertising, menu, trade or directory evidence.
-7. Exact INPI objects for canelé 1985, Tropézienne historical patent/mark and Kouign-Amann legal claims.
-8. Authorized Hermé source for Ladurée precursor + earliest 1998–2001 2000 Feuilles catalogue/sale evidence.
-9. Farmer 1896 page-image/credit review + earlier named European Mont-Blanc search.
-10. Contemporary May–July 1956 Saint-Tropez material + Bardot testimony provenance + Polish Micka primary biography/migration records.
+2. Bailleux edition history: compare 1856 vs 1860; lawfully acquire exact `Religieuse`, `Baba/Babas parisiens` and `Savarin/Petits Savarins` pages from 1860.
+3. Baba: search pre-1873 rum-specific recipes and separate first named Baba/Savarin from first inspectable rum-soaked formulation.
+4. Tarte au Citron: acquire direct Genin 2009 participant evidence; inspect Dumas 1873 lemon entries; acquire early English lemon-curd/cream sources and earliest French recognizable tart + meringue forms.
+5. Tatin technique: exact Dubois 1894 `Tarte aux pêches molles` leaf in Gallica `bpt6k3412588h`; primary 1790 `tourte retournée` mastery/legal object.
+6. Tatin documentary network: exact 1903 Bulletin leaf, Jullemier 1915 page, Besnard 1921 issue/page, 1923 Livret p.85, Curnonsky/Rouff 1926 page, Paris-Soir 1929 p.5 and Dépêche du Berry 1931 page content.
+7. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 while preserving exact scholarly citation `n°30 à 39`; original 1979 Confrérie prospectus/statutes and DILA/old-JORF association notice; search 1926–1975 for earlier accident motifs.
+8. Paris-Brest: contemporaneous 1909–1911 Durand/Bauget advertising, menu, trade or directory evidence.
+9. Exact INPI objects for canelé 1985, Tropézienne historical patent/mark and `Véritable Kouign-Amann de Douarnenez` 1999.
+10. Authorized Hermé page for Ladurée precursor + earliest 1998–2001 2000 Feuilles catalogue/sale evidence.
+11. Farmer 1896 page-image/credit review + earlier named European Mont-Blanc search.
+12. Contemporary May–July 1956 Saint-Tropez material + Bardot testimony provenance + Polish Micka primary biography/migration records.
