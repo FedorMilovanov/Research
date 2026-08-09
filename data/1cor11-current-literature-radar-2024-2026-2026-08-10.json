@@ -1,0 +1,58 @@
+{
+  "scope": "1 Corinthians 11:2-16 current literature radar 2024-2026",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "rules": {
+    "recency_is_not_authority": true,
+    "peer_review_is_not_correctness": true,
+    "publication_date_must_be_verified": true,
+    "do_not_request_user_if_agent_can_access": true
+  },
+  "already_ingested": {
+    "callon_2024": "B_C_SERIOUS_CURRENT_MODEL",
+    "peters_2025": "C_SERIOUS_CURRENT_MODEL"
+  },
+  "new_nodes": {
+    "nommik_2025": {
+      "work": "Robes, Romans, and Rituals in First Corinthians: Paul and the Conflict over Head-Coverings",
+      "type": "PhD dissertation / academic monograph",
+      "model": "RITUAL_UNIFORMITY_CAPITE_VELATO",
+      "grade": "C_SERIOUS_CURRENT_RECONSTRUCTION",
+      "roman_capite_velato_background": "A_INDEPENDENT",
+      "exact_corinthian_uniformity_trigger": "C_RECONSTRUCTION",
+      "user_acquisition": false,
+      "next_action": "SELF_ACQUIRE_DIVA_FULLTEXT_AND_AUDIT"
+    },
+    "sales_2024": {
+      "work": "Paul and Pseudo-Paul: Authorship, Ideology, and the Difference of Androprimacy",
+      "type": "peer-reviewed open article",
+      "analytical_category": "C_CURRENT_THEORETICAL_NODE",
+      "quotation_model_11_3_10": "D_C_LOW",
+      "large_quotation_refutation_grade_changed": false
+    },
+    "hamplova_2025": {
+      "type": "defended MA thesis, institutional full text",
+      "grade": "P3_CURRENT_THESIS_CONTROL",
+      "user_acquisition": false
+    },
+    "odewole_2025": {
+      "type": "open journal article",
+      "grade": "P3_CURRENT_RECEPTION_NODE",
+      "core_evidential_weight": "D_C_LOW"
+    },
+    "garwood_2026": {
+      "type": "contemporary book / non-universalist reassessment",
+      "model": "NO_UNIVERSAL_COVERING_LAW",
+      "grade": "D_C_LOW_CURRENT_EDGE"
+    }
+  },
+  "metadata_corrections": {
+    "penner_vander_stichele_unveiling_paul": {
+      "misleading_repository_date": "2025",
+      "verified_publication_year": "2005",
+      "is_current_2025_scholarship": false
+    }
+  },
+  "core_grades_changed": false,
+  "next_priority": "NOMMIK_OPEN_FULLTEXT_AUDIT"
+}
