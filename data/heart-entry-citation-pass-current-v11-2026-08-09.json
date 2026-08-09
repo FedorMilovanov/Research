@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 11,
+  "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V11-2026-08-09",
+  "status": "NATIVE_SOURCE_AUTHORITY_RECONCILIATION_REOPENS_SEVEN_COMPLETED_ENTRIES",
+  "generatedAt": "2026-08-09",
+  "previousCurrentAuthority": {
+    "path": "data/heart-entry-citation-pass-current-v10-2026-08-09.json",
+    "gitBlob": "2a34228ecb29d3181c6e23f0f761a48c3af0ebd5",
+    "authorityId": "HEART-ENTRY-CITATION-PASS-CURRENT-V10-2026-08-09",
+    "historicalCounts": {
+      "entryCitationPassComplete": 13,
+      "entryCitationPassOpen": 5,
+      "assembledReaderEntries": 13,
+      "assembledReaderCitationReviewsComplete": 13,
+      "missingStandaloneFinalReaders": 5,
+      "productSourceRepairsRequired": 4,
+      "dossierUrlHoldsRetained": 55,
+      "dossierSourceUrlRepairsRequired": 2,
+      "unresolvedInternalPathsRetained": 1
+    }
+  },
+  "part5AssemblyAfterV10": {
+    "path": "data/heart-part5-reader-assembly-2026-08-09.json",
+    "authorityId": "HEART-PART5-READER-ASSEMBLY-2026-08-09",
+    "effect": "assembled readers advanced 13 to 14; citation completeness remained 13/18"
+  },
+  "sourceAuthorityCorrection": {
+    "path": "data/heart-product-source-authority-parity-2026-08-09.json",
+    "authorityId": "HEART-PRODUCT-SOURCE-AUTHORITY-PARITY-2026-08-09",
+    "productSnapshot": "0fbe7d1ead9ebd1bea867418e254da438ec63329",
+    "manifestSha256": "df4fd39e73c031083d8fad145263281c3be10ededa0a20d14f89b78e64a3b576",
+    "ownerSpecsChecked": 10,
+    "mismatchingOwnerSpecs": 10,
+    "completedEntriesReopened": 7
+  },
+  "currentCounts": {
+    "finalBookEntries": 18,
+    "entryCitationPassComplete": 6,
+    "entryCitationPassOpen": 12,
+    "assembledReaderEntries": 14,
+    "assembledReaderCitationReviewsComplete": 6,
+    "assembledReadersAwaitingCitationReviewOrNativeReconciliation": 8,
+    "missingStandaloneFinalReaders": 4,
+    "productSourceOnlyMissingReaderEntries": 1,
+    "researchDossierOnlyMissingReaderEntries": 3,
+    "nativeAuthorityReopenedCompletedEntries": 7,
+    "productSourceRepairsRequiredRetained": 4,
+    "dossierUrlHoldsRetained": 55,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "newDirectQuotesApproved": 0
+  },
+  "completedEntryIds": [
+    "HEART-BOOK-I2",
+    "HEART-BOOK-II",
+    "HEART-BOOK-III2",
+    "HEART-BOOK-III3",
+    "HEART-BOOK-IV",
+    "HEART-BOOK-X1"
+  ],
+  "openEntryIds": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "reopenedByNativeSourceAuthority": [
+    "HEART-BOOK-I1",
+    "HEART-BOOK-I3",
+    "HEART-BOOK-I4",
+    "HEART-BOOK-III1",
+    "HEART-BOOK-III4",
+    "HEART-BOOK-X2",
+    "HEART-BOOK-X3"
+  ],
+  "alreadyOpenBeforeCorrection": [
+    "HEART-BOOK-V",
+    "HEART-BOOK-VI",
+    "HEART-BOOK-VII",
+    "HEART-BOOK-VIII",
+    "HEART-BOOK-IX"
+  ],
+  "readerState": {
+    "assembledReaders": 14,
+    "missingStandaloneReaders": [
+      "HEART-BOOK-VI",
+      "HEART-BOOK-VII",
+      "HEART-BOOK-VIII",
+      "HEART-BOOK-IX"
+    ],
+    "assembledReaderAwaitingFirstCitationPass": ["HEART-BOOK-V"],
+    "assembledReadersNeedingNativeSourceReconciliation": [
+      "HEART-BOOK-I1",
+      "HEART-BOOK-I3",
+      "HEART-BOOK-I4",
+      "HEART-BOOK-III1",
+      "HEART-BOOK-III4",
+      "HEART-BOOK-X2",
+      "HEART-BOOK-X3"
+    ]
+  },
+  "retainedBacklog": {
+    "historicalProductSourceRepairsRequired": 4,
+    "dossierUrlHoldsRetained": 55,
+    "dossierSourceUrlRepairsRequired": 2,
+    "unresolvedInternalPathsRetained": 1,
+    "sourceAuthorityReconciliationsOpen": 7,
+    "silentlyClosedItems": 0
+  },
+  "publicationBoundary": {
+    "allCurrentlyAssembledReadersReviewedAgainstCurrentAuthority": false,
+    "wholeBookReaderAssemblyComplete": false,
+    "wholeBookCitationPassComplete": false,
+    "wholeBookTransitionDedupPassComplete": false,
+    "wholeBookLineEditComplete": false,
+    "manuscriptBundleComplete": false,
+    "productReleaseComplete": false,
+    "productSourceRepairsComplete": false,
+    "dossierUrlHoldsResolved": false,
+    "dossierSourceUrlRepairsComplete": false,
+    "unresolvedInternalPathsResolved": false,
+    "nativeSourceAuthorityReconciliationComplete": false,
+    "newDirectQuotesApproved": 0
+  },
+  "nextTransaction": {
+    "type": "NATIVE_AUTHORITY_ENTRY_CITATION_PASS",
+    "preferredEntryId": "HEART-BOOK-V",
+    "reason": "Part V is already assembled from the native Romans 7 Body and has never received a citation pass. It should be reviewed against current native Product authority before composing the next current state. Reopened historical passes remain separately queued for native reconciliation."
+  }
+}
