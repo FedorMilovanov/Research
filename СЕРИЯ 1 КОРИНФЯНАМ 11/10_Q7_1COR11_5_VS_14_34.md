@@ -92,3 +92,25 @@ ARCHIVE_HOLD — Thiselton/Чампа–Роснер/Шрейнер по 14:34�
 ## 7. Следующее действие
 
 Фаза 4: полный разбор λαλεῖν в 1 Кор. 14 (конкорданс + Thiselton) — отдельный мини-аппендикс к этой серии или передача в будущую серию по 14-й главе.
+
+---
+
+## ДОПОЛНЕНИЕ PASS-1 (2026-08-09): пятая стратегия — Годэ
+
+**Годэ (1890), с. 116–117** — отвергает и «малые собрания» (Мейер), и «разные действия» (λαλεῖν ≠ пророчество), и «только учение»:
+
+> «What the passage in chap. xiv. forbids to women, is not ill-speaking or ill-timed speaking, it is speaking; and what Paul contrasts with the term speaking, is keeping silence or asking at home.»
+
+> «I rather think, therefore, that while rejecting, as a rule, the speaking of women in Churches, Paul yet meant to leave them a certain degree of liberty for the exceptional case in which, in consequence of a sudden revelation (prophesying), or under the influence of a strong inspiration of prayer and thanksgiving (speaking in tongues), the woman should feel herself constrained to give utterance to this extraordinary impulse of the Spirit. Only at the time when she thus went out of her natural position of reserve and dependence, he insisted the more that she should not forget, nor the Church with her, the abnormal character of the action; and this was the end which the veil was intended to serve.»
+
+### Обновлённая карта Q7 (5 стратегий):
+
+| # | Стратегия | Сторонники | Сила/слабость |
+|---|---|---|---|
+| 1 | Малые собрания (11:5) vs полное собрание (14:34) | Мейер, Элликотт, отчасти Феофан | Снимает противоречие; но текст 11 не даёт признаков «малых собраний»; 11:10/16 звучат публично (Годэ, EGT) |
+| 2 | Разные действия: молитва/пророчество ≠ λαλεῖν (суд/вопросы) | EGT, Шрейнер, Карсон, Грудем | Сохраняет публичность; но семантика λαλεῖν в 14 гл. спopна |
+| 3 | 11:5 не разрешение, а коррекция злоупотребления | Кальвин | Просто; но «зачем регулировать то, что собираешься запретить?» (Элликотт, Годэ) |
+| 4 | 14:33b–36 — запрет суда пророчеств женщинами | Шрейнер (4 аргумента) | Самое влиятельное в совр. комплементарианстве |
+| 5 | Молчание как правило; пророчество — исключение (внезапное вдохновение), тогда и покрывало | Годэ | Уважает оба текста; но «исключительность» не вычитается прямо из 11:5 |
+
+**Вывод для серии:** Q7 остаётся OPEN; консенсус консервативного лагеря отсутствует (5 жизнеспособных стратегий). Финальное решение — фаза 4 после Thiselton/Чампа–Роснер. В статье 11:5 — честная карта всех пяти с именами.
