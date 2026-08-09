@@ -18,9 +18,12 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 | 1873 | Religieuse | Gouffé describes multi-choux `flan à la religieuse` constructions | `DOCUMENTED PRIMARY`; modern two-choux shape cannot be back-projected universally |
 | 1873 | Éclair | Gouffé directly links varied `éclairs` to `pains à la duchesse` and gives choux pastry for both | `DOCUMENTED PRIMARY` |
 | 1873 | Baba/Savarin | Gouffé indexes/recipes `baba moderne glacé au rhum`, baba polonais and savarin separately | `DOCUMENTED PRIMARY` |
+| 1891 | Mont-Blanc lineage | Artusi recipe 653, `Dolce di marroni con panna montata`, documents chestnut mixture forced/passed into strands with whipped cream | `DOCUMENTED PRIMARY ITALIAN PRE-ANGELINA CONSTRUCTION` — https://it.wikisource.org/wiki/Scienza_in_cucina_e_l%27arte_di_mangiar_bene/Torte_e_dolci_al_cucchiaio/653._Dolce_di_marroni_con_panna_montata |
 | 1891 | Paris-Brest | First Paris–Brest–Paris cycle race | `DOCUMENTED BnF institutional` — https://gallica.bnf.fr/selections/fr/html/images/cyclisme |
+| 1896 | Mont-Blanc | Fannie Merritt Farmer's first edition contains a dessert named `Mont Blanc`, located to p. 357 by a verified-first-printing preservation browser | `STRONG FIRST-EDITION WITNESS / ORIGINAL SCAN DIRECT INSPECTION PENDING` — https://cardmyrecipe.com/collections/fannie-farmer |
 | 1899-03-18 | Opéra | Secondary locator convergence points to a Grand Hôtel `gâteau opéra` advertisement in *Le Gaulois*, p. 3 | `TIGHTENED SECONDARY LOCATOR / primary scan not yet acquired`; BnF title record: https://catalogue.bnf.fr/ark:/12148/cb32779904b.public |
 | 1899-12-18 | Tatin | Secondary locator convergence points to `la tarte de Mlle Tatin` in *Le Journal*, p. 1 | `TIGHTENED SECONDARY LOCATOR / primary scan not yet acquired` — https://www.cuisine-lucullus.com/histoire-de-la-cuisine/13-tout-un-plat/836-tarte-des-soeurs-tatin |
+| 1903 | Mont-Blanc | Escoffier's *Guide culinaire* includes `Mont-Blanc aux marrons`, an independent French professional continuity witness | `DOCUMENTED HISTORICAL PROFESSIONAL TEXT` — https://fr.wikisource.org/wiki/Le_guide_culinaire/Entremets |
 | 1903 | Angelina | House history dates founding of Angelina by Anton Rumpelmayer | `CONFIRMED participant history` |
 | 1903 | Tatin | Académie du Goût points to Lucien Jullemier account | `SECONDARY LOCATOR LEAD / primary needed` |
 | 1907 | Paris-Brest | Durand family dates founding of house | `CONFIRMED participant history` |
@@ -51,7 +54,7 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 - Tatin accident date: legend, not documentary milestone.
 - Canelé convent/18th-century origin: not supported as established fact by current regional institutional research.
 - Éclair `Carême / early 1800s`: no exact primary invention locator acquired; a professional recipe is already tightly located in Bailleux 1856.
-- Mont-Blanc `1903 invention`: Angelina house lineage must be separated from older European category genealogy.
+- Mont-Blanc `1903 invention`: rejected as a simple category-origin label; Artusi documents a closely related chestnut/cream construction in 1891 and Farmer has a named `Mont Blanc` in a verified 1896 first-edition record. Angelina 1903 is a house/signature milestone, not the category's earliest current witness.
 
 ## Chronology next actions
 
