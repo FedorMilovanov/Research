@@ -116,21 +116,30 @@ FULL WITNESS APPARATUS
 → NOT YET TRANSCRIBED
 ```
 
-## 🕊️ Новая серия: 1 Коринфянам 11 — покрывало, мужчины и женщины
+## 🕊️ Новая серия: 1 Коринфянам 11:2–16 (Покрывало, главенство, творение и ангелы)
 
-Research-ветка новой серии (foundation-стадия, **не публикуется и не пушится** до research-closure):
+Research-ветка новой исследовательской серии (foundation-стадия, **не публикуется** до полного research-closure):
 
-* [Точка входа и мастер-индекс серии](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/00_README_AND_MASTER_AUTHORITY_INDEX.md)
-* [Греческий текст NA28 и текстологические примечания](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/01_GREEK_TEXT_NA28_AND_TEXTUAL_NOTES.md)
-* [Исторический контекст: Коринф и практика покрытия головы](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/02_HISTORICAL_CONTEXT_CORINTH_VEILING.md)
-* [Карта экзегетических узлов (cruces)](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/03_EXEGETICAL_CRUXES_MAP.md)
-* [Ландшафт комментаторов (консервативные приоритетно)](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/04_COMMENTATOR_AND_SCHOLARSHIP_LANDSCAPE.md)
-* [Очередь приобретения полных книг](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/05_SOURCE_ACQUISITION_QUEUE_BOOKS.md)
-* [Интеграция корпуса «Бытие 6» по 1 Кор. 11:10](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/06_PARALLEL_GENESIS6_CORPUS_INTEGRATION.md)
-* [Публикационный формат-ориентир](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/07_PUBLICATION_FORMAT_ORIENTIR.md)
-* [Координация параллельных агентов](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/08_AGENT_COORDINATION.md)
+### Исследовательские досье, матрицы и своды
+* [Мастер-досье и архитектура серии](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/00_1COR11_MASTER_AUTHORITY_INDEX_AND_SERIES_ARCHITECTURE.md)
+* [Греческий текст, аппарат разночтений, морфология и синтаксис](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/01_1COR11_GREEK_TEXT_APPARATUS_MORPHOLOGY_SYNTAX_DOSSIER.md)
+* [Историко-археологический контекст римского Коринфа (capite velato, nova femina, palla)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/02_1COR11_HISTORICAL_ARCHAEOLOGICAL_ROMAN_CORINTH_DOSSIER.md)
+* [Святоотеческая, реформационная и историческая экзегеза (Златоуст, Кальвин, Гилл, Ходж)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/03_1COR11_PATRISTIC_REFORMATION_HISTORICAL_EXEGESIS_MATRIX.md)
+* [Современный академический и консервативный корпус (Шрайнер, Тизелтон, Чампа/Рознер, Грудем, Винтер)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/04_1COR11_MODERN_SCHOLARSHIP_CONSERVATIVE_COMMUNITY_CORPUS.md)
+* [Сравнительная матрица пяти герменевтических моделей](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/05_1COR11_SYSTEMATIC_HERMENEUTICAL_FIVE_MODELS_MATRIX.md)
+* [Критические богословские узлы и канонические напряжения (Троица, пророчество, ангелы, природа)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/06_1COR11_THEOLOGICAL_CRITICAL_NODES_AND_CANONICAL_TENSIONS.md)
+* [Постраничный верификационный реестр источников и цитат](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/07_1COR11_SOURCE_VERIFICATION_AND_PAGE_LEVEL_LEDGER.md)
+* [Полный библиографический корпус и аннотированный обзор 30 монографий](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/08_1COR11_EXHAUSTIVE_BIBLIOGRAPHY_AND_MONOGRAPH_SURVEY.md)
+* [Параллельный корпус и координация агентов](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%201%20%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C%2011/00_README_AND_MASTER_AUTHORITY_INDEX.md)
+* [Машиночитаемый манифест доказательств и источников](data/1cor11-research-manifest.json)
+* [Машиночитаемый манифест координации серии](data/1cor11-authority-manifest.json)
 
-Серия следует той же evidence-дисциплине, что и «Бытие 6» (уровни доказательства, вес источников, confidence-шкала, publication gate). Она интегрирует уже существующий параллельный корпус по 1 Кор. 11:10 из `ТРУДНЫЕ ТЕКСТЫ` (серия «Бытие 6») — см. `06_...`. Машинный манифест: [`data/1cor11-authority-manifest.json`](data/1cor11-authority-manifest.json).
+### Публикационные статьи серии (Site-Ready Drafts)
+* [Статья 1. Главенство, Христос и Троица: богословие κεφαλή в 1 Кор. 11:2–3](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md)
+* [Статья 2. Мужчины в тогах и женщины без покрывал: Римский Коринф и кризис благочиния (1 Кор. 11:4–6)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/ARTICLE_2_SITE_READY_ROMAN_CORINTH_CAPITE_VELATO_AND_NOVA_FEMINA_1COR11_4_6.md)
+* [Статья 3. Образ, слава и творение: Бытие 1–2 и взаимная зависимость в Господе (1 Кор. 11:7–12)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/ARTICLE_3_SITE_READY_IMAGE_GLORY_AND_CREATION_ORDER_1COR11_7_12.md)
+* [Статья 4. Власть на голове и тайна ангелов: ἐξουσία и διὰ τοὺς ἀγγέλους (1 Кор. 11:10)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/ARTICLE_4_SITE_READY_AUTHORITY_ON_HEAD_AND_THE_ANGELS_1COR11_10.md)
+* [Статья 5. Уроки природы, волосы и соборный обычай церквей (1 Кор. 11:13–16)](1_%D0%9A%D0%9E%D0%A0%D0%98%D0%9D%D0%A4%D0%AF%D0%9D%D0%90%D0%9C_11/ARTICLE_5_SITE_READY_NATURE_HAIR_AND_CHURCH_CUSTOM_1COR11_13_16.md)
 
 ## 📊 Верификационные аудиты
 

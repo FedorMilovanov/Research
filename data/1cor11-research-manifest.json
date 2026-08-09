@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "1cor11-veil-headship",
+  "title": "1 Коринфянам 11:2–16: Главенство, покрывало, творение, ангелы и церковный обычай",
+  "generatedAt": "2026-08-09",
+  "status": "ACTIVE_RESEARCH_FOUNDATION",
+  "policy": {
+    "evidencePolicySchemaVersion": 2,
+    "scopeRestrictedToVerses": "11:2-16",
+    "primarySourceVerificationRequired": true,
+    "publicationHoldActive": true,
+    "directPushForbidden": false
+  },
+  "holds": [
+    "PUBLICATION_HOLD"
+  ],
+  "documents": [
+    {
+      "id": "1COR11-MASTER-00",
+      "path": "1_КОРИНФЯНАМ_11/00_1COR11_MASTER_AUTHORITY_INDEX_AND_SERIES_ARCHITECTURE.md",
+      "scope": ["11:2-16", "series-architecture", "methodology", "evidence-policy"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-GREEK-01",
+      "path": "1_КОРИНФЯНАМ_11/01_1COR11_GREEK_TEXT_APPARATUS_MORPHOLOGY_SYNTAX_DOSSIER.md",
+      "scope": ["11:2-16", "greek-text", "manuscript-apparatus", "morphology", "syntax", "lexicon"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-HISTORICAL-02",
+      "path": "1_КОРИНФЯНАМ_11/02_1COR11_HISTORICAL_ARCHAEOLOGICAL_ROMAN_CORINTH_DOSSIER.md",
+      "scope": ["11:2-16", "roman-corinth", "capite-velato", "palla-matrona", "nova-femina", "cults"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-PATRISTIC-REFORMATION-03",
+      "path": "1_КОРИНФЯНАМ_11/03_1COR11_PATRISTIC_REFORMATION_HISTORICAL_EXEGESIS_MATRIX.md",
+      "scope": ["11:2-16", "patristic-exegesis", "reformation", "calvin", "gill", "hodge"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-MODERN-CORPUS-04",
+      "path": "1_КОРИНФЯНАМ_11/04_1COR11_MODERN_SCHOLARSHIP_CONSERVATIVE_COMMUNITY_CORPUS.md",
+      "scope": ["11:2-16", "schreiner", "thiselton", "ciampa-rosner", "grudem", "winter", "oster", "garland"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-FIVE-MODELS-05",
+      "path": "1_КОРИНФЯНАМ_11/05_1COR11_SYSTEMATIC_HERMENEUTICAL_FIVE_MODELS_MATRIX.md",
+      "scope": ["11:2-16", "systematics", "hermeneutics", "adversarial-matrix", "five-models"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-CRITICAL-NODES-06",
+      "path": "1_КОРИНФЯНАМ_11/06_1COR11_THEOLOGICAL_CRITICAL_NODES_AND_CANONICAL_TENSIONS.md",
+      "scope": ["11:2-16", "trinity-headship", "women-prophecy-vs-silence", "angels", "nature-hair", "custom"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-SOURCE-LEDGER-07",
+      "path": "1_КОРИНФЯНАМ_11/07_1COR11_SOURCE_VERIFICATION_AND_PAGE_LEVEL_LEDGER.md",
+      "scope": ["11:2-16", "bibliographic-ledger", "locators", "page-level-citations"],
+      "evidenceClass": "A2",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-BIBLIO-MONOGRAPHS-08",
+      "path": "1_КОРИНФЯНАМ_11/08_1COR11_EXHAUSTIVE_BIBLIOGRAPHY_AND_MONOGRAPH_SURVEY.md",
+      "scope": ["11:2-16", "monograph-survey", "30-books-annotated", "beck-nig-pntc-zecnt"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-ARTICLE-1-SITE",
+      "path": "1_КОРИНФЯНАМ_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md",
+      "scope": ["11:2-3", "site-article", "headship", "trinity", "christ"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "ORIGINAL_COMPOSITION",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-ARTICLE-2-SITE",
+      "path": "1_КОРИНФЯНАМ_11/ARTICLE_2_SITE_READY_ROMAN_CORINTH_CAPITE_VELATO_AND_NOVA_FEMINA_1COR11_4_6.md",
+      "scope": ["11:4-6", "site-article", "roman-corinth", "capite-velato", "palla", "nova-femina"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "ORIGINAL_COMPOSITION",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-ARTICLE-3-SITE",
+      "path": "1_КОРИНФЯНАМ_11/ARTICLE_3_SITE_READY_IMAGE_GLORY_AND_CREATION_ORDER_1COR11_7_12.md",
+      "scope": ["11:7-9", "11:11-12", "site-article", "image-glory", "genesis-creation", "mutuality"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "ORIGINAL_COMPOSITION",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-ARTICLE-4-SITE",
+      "path": "1_КОРИНФЯНАМ_11/ARTICLE_4_SITE_READY_AUTHORITY_ON_HEAD_AND_THE_ANGELS_1COR11_10.md",
+      "scope": ["11:10", "site-article", "exousia", "angels", "qumran-parallels"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "ORIGINAL_COMPOSITION",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-ARTICLE-5-SITE",
+      "path": "1_КОРИНФЯНАМ_11/ARTICLE_5_SITE_READY_NATURE_HAIR_AND_CHURCH_CUSTOM_1COR11_13_16.md",
+      "scope": ["11:13-16", "site-article", "nature", "hair-covering", "church-custom"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "ORIGINAL_COMPOSITION",
+      "publicationState": "REFERENCE"
+    }
+  ],
+  "primaryTextWitnesses": [
+    { "siglum": "P46", "date": "c. 200 AD", "locus": "1 Cor 11:2-16", "state": "verified" },
+    { "siglum": "Codex Sinaiticus (Aleph)", "date": "IV c.", "locus": "1 Кор 11:2-16", "state": "verified" },
+    { "siglum": "Codex Vaticanus (B)", "date": "IV c.", "locus": "1 Кор 11:2-16", "state": "verified" },
+    { "siglum": "Codex Alexandrinus (A)", "date": "V c.", "locus": "1 Кор 11:2-16", "state": "verified" },
+    { "siglum": "Codex Claromontanus (D)", "date": "VI c.", "locus": "1 Кор 11:2-16", "state": "verified" }
+  ]
+}
