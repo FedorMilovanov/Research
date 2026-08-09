@@ -583,6 +583,42 @@
       "publicationState": "REFERENCE"
     },
     {
+      "id": "1COR11-OPEN-PROXIES-63",
+      "path": "1_КОРИНФЯНАМ_11/63_CLOSED_MONOGRAPH_ACQUISITION_AND_OPEN_PROXY_REGISTRY.md",
+      "scope": ["11:2-16", "closed-monographs-queue", "open-access-proxies", "sbl-nts-jets-hesperia"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-VEIL-HERMENEUTICS-64",
+      "path": "1_КОРИНФЯНАМ_11/64_HERMENEUTICAL_RESOLUTION_OF_LITERAL_VEIL_VS_CULTURAL_SYMBOL.md",
+      "scope": ["11:2-16", "hermeneutical-bridge", "literal-ordinance-vs-cultural-symbol", "pastoral-resolution"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-SITE-PEDAGOGY-65",
+      "path": "1_КОРИНФЯНАМ_11/65_SITE_EDITORIAL_PEDAGOGY_AND_READABILITY_ARCHITECTURE.md",
+      "scope": ["11:2-16", "site-pedagogy", "three-tier-architecture", "infographics-vault-layering"],
+      "evidenceClass": "B1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
+      "id": "1COR11-UNMARRIED-SCOPE-66",
+      "path": "1_КОРИНФЯНАМ_11/66_SCOPE_OF_HEADSHIP_UNMARRIED_WOMEN_AND_ECCLESIAL_OIKONOMIA.md",
+      "scope": ["11:3", "unmarried-women-status", "1cor-7-34", "marital-vs-ecclesial-headship"],
+      "evidenceClass": "A1",
+      "status": "active",
+      "rightsState": "PUBLIC_DOMAIN_RESEARCH",
+      "publicationState": "REFERENCE"
+    },
+    {
       "id": "1COR11-ARTICLE-1-SITE",
       "path": "1_КОРИНФЯНАМ_11/ARTICLE_1_SITE_READY_HEADSHIP_CHRIST_AND_CREATION_1COR11_2_3.md",
       "scope": ["11:2-3", "site-article", "headship", "trinity", "christ"],

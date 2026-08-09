@@ -6,7 +6,7 @@
 **Канонический текстовый сегмент:** 1 Коринфянам 11:2–16  
 **Связанный публичный репозиторий:** `FedorMilovanov/gb-is-my-strength`  
 **Текущая исследовательская ветка:** `arena/019fe62d-research`  
-**Операционный статус:** `FOUNDATION FULLY EXPANDED / 70-DOCUMENT MASTER SYSTEM`
+**Операционный статус:** `FOUNDATION FULLY EXPANDED / 74-DOCUMENT MASTER SYSTEM`
 
 ---
 
@@ -40,7 +40,7 @@
 
 ---
 
-## 3. Полная навигационная карта серии (70 документов: 63 досье + 7 статей)
+## 3. Полная навигационная карта серии (74 документа: 67 досье + 7 статей)
 
 ### Исследовательские досье, матрицы и своды
 
@@ -109,6 +109,10 @@
 | **60** | `60_CANONICAL_SYNCHRONY_CORINTHIAN_CHURCH_ORDER_1COR11_14.md` | Каноническая синхрония макроблока 1 Кор 11–14: литургический чин, Вечеря, дары, любовь, молчание (14:34) | `ACTIVE` |
 | **61** | `61_MASTER_CLAIM_TO_FOOTNOTE_ACADEMIC_CITATION_MAP.md` | Генеральная академическая карта соотнесения тезисов и первоисточников (Claim-to-Footnote Mapping) | `ACTIVE` |
 | **62** | `62_1COR11_READER_FAQ_AND_PRACTICAL_SYNTHESIS.md` | Частые вопросы читателя и практический синтез серии (справочник Q1–Q10) | `ACTIVE` |
+| **63** | `63_CLOSED_MONOGRAPH_ACQUISITION_AND_OPEN_PROXY_REGISTRY.md` | Реестр открытых академических прокси-источников для закрытых монографий (SBL, NTS, JETS, Hesperia) | `ACTIVE` |
+| **64** | `64_HERMENEUTICAL_RESOLUTION_OF_LITERAL_VEIL_VS_CULTURAL_SYMBOL.md` | Разрешение спора: Буквальный апостольский знак (Лагерь А) vs Культурный символ (Лагерь Б) | `ACTIVE` |
+| **65** | `65_SITE_EDITORIAL_PEDAGOGY_AND_READABILITY_ARCHITECTURE.md` | Редакционная педагогика и трехуровневая модель доступности статей для сайта | `ACTIVE` |
+| **66** | `66_SCOPE_OF_HEADSHIP_UNMARRIED_WOMEN_AND_ECCLESIAL_OIKONOMIA.md` | Объем главенства, статус незамужних христианок (1 Кор 7:34) и экклезиологическая икономия | `ACTIVE` |
 | **DATA** | `../data/1cor11-research-manifest.json` | Машиночитаемый манифест доказательств, источников и статусов | `ACTIVE` |
 
 ### Публикационные статьи серии (Site-Ready Drafts)
