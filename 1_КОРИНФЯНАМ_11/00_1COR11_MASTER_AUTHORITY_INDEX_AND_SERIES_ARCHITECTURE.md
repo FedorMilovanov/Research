@@ -72,6 +72,7 @@
 | **23** | `23_RABBINIC_TARGUMIC_AND_TALMUDIC_LOCUS_DOSSIER.md` | Раввинистическая традиция (Берешит Рабба, Пиркей де-Р. Элиэзер) и христоцентричный контраст Павла | `ACTIVE` |
 | **24** | `24_COMPLETE_RESPONSE_LEDGER_TO_40_STRONGEST_OBJECTIONS.md` | Полный состязательный реестр ответов на 40 сильнейших возражений (эгалитаризм, ритуализм, hair-only) | `ACTIVE` |
 | **25** | `25_HERMENEUTICAL_APPLICATION_AND_PASTORAL_GUIDE.md` | Пастырское руководство и принципы практического применения в поместной общине XXI века | `ACTIVE` |
+| **26** | `26_1COR11_RUSSIAN_EXEGETICAL_RECEPTION.md` | Русская православная рецепция 1 Кор. 11: Феофан Затворник, Лопухин, Кассиан Безобразов; русские переводы 11:10 (акт./пассив.) | `ACTIVE / RECEPTION` |
 | **DATA** | `../data/1cor11-research-manifest.json` | Машиночитаемый манифест доказательств, источников и статусов | `ACTIVE` |
 
 ### Публикационные статьи серии (Site-Ready Drafts)
