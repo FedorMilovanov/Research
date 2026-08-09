@@ -82,7 +82,14 @@ Part V reader остаётся paraphrase-only:
 - source quotations transferred: **0**;
 - source links transferred: **0**.
 
-Его Scripture locators должны быть подмножеством полностью просмотренного owner union; это проверяет validator.
+Reader scanner видит **19 Scripture locators**. **15** имеют exact match внутри полностью просмотренного owner union, а **4 reader-only Scripture locators dispositioned explicitly** — без wildcard-разрешения и без расширения quote/link authority:
+
+- `Гал.5` — `COVERED_ALIAS_OF_REVIEWED_OWNER_REFERENCE`, bounded alias к уже проверенному `Гал.5:16–25`;
+- `1 Ин.1:8–2` (reader text: `1 Ин. 1:8–2:2`) — `READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED`, мост «продолжающийся грех → исповедание → ходатайство Христа»;
+- `Еф.6` — `READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED`, reader-level synthesis о Слове, молитве, вере и стоянии как средствах войны;
+- `Кол.3` — `READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED`, reader-level synthesis «умерщвление → положительный плод нового характера».
+
+Каждый из четырёх locators закреплён exact context marker в receipt. Любой пятый reader-only locator, исчезновение marker, drift alias target или попытка source quote/link transfer должны сделать validator красным.
 
 ## Current authority after composition
 
