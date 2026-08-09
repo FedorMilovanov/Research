@@ -136,10 +136,10 @@ Artusi 1891 already closes a **construction** precursor but not the earliest Ita
 
 ## Deutsch / Österreich / Schweiz
 
-- `Mont Blanc Kastanien Dessert Kochbuch 19. Jahrhundert`
-- `Baba Rum Savarin Konditorei 19. Jahrhundert`
+- `Mont Blanc Kastanien Dessert Kochbuch 19th century`
+- `Baba Rum Savarin Konditorei 19th century`
 - `Kouglof Baba Stanislaus Stohrer`
-- `französische Konditorei Religieuse 19. Jahrhundert`
+- `französische Konditorei Religieuse 19th century`
 
 Goal: independent transmission evidence, not source-count inflation.
 
