@@ -28,7 +28,7 @@ The method is adversarial. Every attractive origin story receives a falsificatio
 - Bibliothèque Sainte-Geneviève and French municipal/university libraries;
 - Archives nationales / Archives de Paris / Archives départementales;
 - INPI / historical BOPI / trademark registers;
-- Journal officiel / old JORF / JOAFE where legally relevant;
+- Journal officiel / DILA open data / old JORF / JOAFE where legally relevant;
 - period newspapers, menus, advertisements, cookbooks, catalogues, trade journals and legal records;
 - contemporary participant catalogues/press only for contemporary or explicitly participant claims.
 
@@ -39,6 +39,7 @@ The method is adversarial. Every attractive origin story receives a falsificatio
 - Région Nouvelle-Aquitaine and local public institutions;
 - Élysée / DILA / BnF / archive services;
 - French professional pâtisserie organizations;
+- university/library digitization projects such as SPbPU where they expose legitimate bibliographic/TOC metadata;
 - INA / film institutions.
 
 ### Independent secondary / scholarly
@@ -58,7 +59,8 @@ Use non-French sources only when they add evidence:
 - Italy: Mont-Blanc / chestnut-dessert genealogy;
 - Germany/Austria/Switzerland: historical pastry and European transmission;
 - Poland: Alexandre/Aleksander Micka biography/migration and Polish context;
-- Breton/regional corpora for Kouign-Amann.
+- Breton/regional corpora for Kouign-Amann;
+- other institutional digitization only when it provides legitimate metadata/access unavailable elsewhere.
 
 Catalogues such as WorldCat/HathiTrust/Google Books may be locators; a catalogue card is not the acquired object.
 
@@ -69,10 +71,11 @@ Use wording such as **`earliest directly verified in this corpus`** when the res
 Examples now controlling:
 
 - Éclair: 1848 is the earliest current French pastry locator, not an invention date.
-- Religieuse: Gouffé 1873 is the earliest directly verified professional recipe in the current corpus, not proof that Frascati 1856 never existed.
+- Religieuse: **Bailleux 1860 is the earliest directly verified professional named entry/section in the current corpus; Gouffé 1873 remains the earliest exact recipe/form pages directly inspected.** The 1860 content page is access-restricted and the 1856 first-edition delta remains open.
 - Mont-Blanc: named Farmer 1896 is primary-closed before Angelina; earlier named European use remains open.
+- Kouign-Amann: Scordia / Douarnenez / c.1860 is a strong local tradition, but independent reporting on the Douarnenez association's own historical research explicitly noted the absence of an incontestable written trace; exact early evidence remains open.
 
-## Current historical full-object lane
+## Current historical full-object / institutional-metadata lane
 
 ### Gouffé 1873 — exact primary anchors
 
@@ -83,13 +86,15 @@ Examples now controlling:
 - Baba au rhum: https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/275
 - Savarin: https://fr.wikisource.org/wiki/Page%3AGouff%C3%A9_-_Le_Livre_de_P%C3%A2tisserie%2C_1873.djvu/277
 
-### Other controlling historical objects
+### Other controlling objects / metadata
 
 - Lacam/Charabot 1893: https://gallica.bnf.fr/ark:/12148/bpt6k9735327k — Saint-Honoré p.44/p.49 targets.
-- Farmer 1896: https://archive.org/details/bostoncookingsc00collgoog — `Mont Blanc`, printed p.357.
+- Farmer 1896: https://archive.org/details/bostoncookingsc00collgoog — named `Mont Blanc`, printed p.357.
 - Dubois 1894: https://gallica.bnf.fr/ark:/12148/bpt6k3412588h — Tatin technique-genealogy object; exact inverted-tart leaf pending.
-- Bailleux 1856 full object — exact p.74 pending.
+- Bailleux 1856 full object — Éclairs p.74 tightly located, direct page pending.
+- **Bailleux 1860, SPbPU institutional record/TOC:** https://elib.spbstu.ru/dl/2/ed-3262_0000697628bx.pdf/en/info — dedicated `Religieuse` entry visible in machine-readable TOC; scan access restricted, exact page/form pending.
 - Michigan *Vanity Fair* 1861 full volume — exact p.50 col.1 pending.
+- DILA `jo_associations` open-data lane — official route for association publication metadata including old-JORF notices before 2 Jan 1985; exact 1979 Lichonneux record still to extract.
 
 ## Current conflict-first queues
 
@@ -107,20 +112,24 @@ Examples now controlling:
 - `TATIN_JULLEMIER_1915_PAGE`
 - `TATIN_BESNARD_1921_ISSUE_PAGE`
 - `TATIN_CURNONSKY_1926_PAGE`
+- `TATIN_1923_P85_AND_1929_1931_PAGE_REVIEW`
 - `TATIN_HORIZONS_1976_P97`
-- `TATIN_CONFRERIE_1979_PROSPECTUS_OLD_JORF`
+- `TATIN_CONFRERIE_1979_PROSPECTUS_DILA_OLD_JORF`
 - `PARIS_BREST_1909_1911_CONTEMPORARY_RECORD`
-- `RELIGIEUSE_PRE1873_FRASCATI`
+- **`RELIGIEUSE_BAILLEUX_1860_EXACT_PAGE`**
+- **`RELIGIEUSE_BAILLEUX_1856_VS_1860_EDITION_DELTA`**
+- `RELIGIEUSE_FRASCATI_1856_CONTEMPORARY_RECORD`
 - `CANELE_INPI_1985`
 - `TROPEZIENNE_INPI_1972`
+- **`KOUIGN_AMANN_INPI_1999_EXACT_RECORD`**
 
 ### P1 — genealogy / authorized-source closure
 
-- `2000_FEUILLES_AUTHORIZED_LADUREE_PRECURSOR_AND_FIRST_CATALOGUE`
+- `2000_FEUILLES_AUTHORIZED_LADUREE_PRECURSOR_AND_FIRST_CATALOGUE` — authorized edition targets are now specifically identified as Hermé/Catherine Roig, *Toutes les saveurs de la vie* (Buchet-Chastel, 2022) and Hermé/Julie Mathieu, *Dictionnaire amoureux de la pâtisserie* (Plon, 2025); exact authorized passage still open.
 - `MONT_BLANC_PRE1896_NAMED_EUROPEAN`
 - `CANELE_JEAN_BALDE_1937_AND_DRAC_1995`
-- `KOUIGN_AMANN_EARLY_RECORD_AND_LEGAL_RECORD`
-- `TROPEZIENNE_1956_PRESS_BARDO​T_PROVENANCE`
+- `KOUIGN_AMANN_EARLY_PRINT_CHAIN`
+- `TROPEZIENNE_1956_PRESS_BARDOT_PROVENANCE`
 - `MICKA_POLISH_PRIMARY_BIOGRAPHY`
 - `BABA_EARLY_STOHRER_RUM_TIMING`
 - `TARTE_CITRON_GENRE_HISTORY_VS_GENIN_REINTERPRETATION`
@@ -141,7 +150,8 @@ For a mark/patent/association publication:
 - capture application/registration/publication number and exact date;
 - retain historical owner-name variants and legal successors;
 - do not infer filing date from Confrérie founding date;
-- an official participant statement that “we filed with INPI” is strong evidence of the participant claim but not a replacement for the register record.
+- an official participant statement that “we filed with INPI” is strong evidence of the participant claim but not a replacement for the register record;
+- for association notices, use official DILA/Journal officiel records where possible; do not substitute Pappers/Assoce when the official notice can be acquired.
 
 ## Full-object protocol
 
@@ -150,11 +160,17 @@ For a historical book/newspaper/menu:
 - record title, author, edition, year, publisher/institution;
 - stable item URL;
 - exact page/scan leaf/column when available;
-- distinguish OCR from verified image/page;
+- distinguish OCR, machine-readable TOC and verified page image;
 - preserve original language;
 - add Russian translation only as editorial translation;
 - record rights separately;
-- do not promote snippet/catalogue/search-result text as a directly inspected page.
+- do not promote snippet/catalogue/search-result/TOC text into claims about visual form or exact recipe wording it does not expose.
+
+## Access boundary
+
+Never bypass authentication, paywalls or network restrictions.
+
+An institutional TOC behind an otherwise restricted scan can close a bounded `named entry exists in this edition` claim if the TOC itself is openly exposed, but it cannot close recipe wording, page image, geometry or technique. This rule currently applies to Bailleux 1860 / `Religieuse`.
 
 ## Visual protocol
 
