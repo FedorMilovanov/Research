@@ -13,6 +13,7 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 | 1856 | Éclair | Louis Bailleux's professional *Le Pâtissier moderne* has been tightly located by specialist secondary research to an `Éclairs` recipe on p. 74 | `PRIMARY BOOK FULL OBJECT IDENTIFIED / DIRECT p.74 SCAN VERIFICATION PENDING` — https://books.google.com/books/about/Le_Patissier_moderne_ou_trait%C3%A9_%C3%A9l%C3%A9men.html?id=BljqJaHy8eoC |
 | 1856 | Religieuse | La Poste modern recap attributes creation to Signor Frascati; Bailleux's 1856 book is unusually relevant because its author trained at Maison Frascati, but no Religieuse page has yet been found in it | `DISPUTED / no contemporaneous religieuse locator acquired` |
 | 1860 | Kouign-Amann | Douarnenez official tourism attributes creation to Yves-René Scordia | `LOCAL TRADITION / early record missing` |
+| 1861-02-02 | Éclair | *Vanity Fair* (New York), ch. 4, p. 50 col. 1, is tightly located by historical-language/OED-based secondary work to an English-language `éclairs` occurrence | `TIGHT SECONDARY LOCATOR / ORIGINAL ISSUE SCAN NOT YET ACQUIRED` — https://wordhistories.net/2025/03/25/eclair-cake/ |
 | 1864 | Éclair | TLFi etymology gives Littré pastry sense | `DOCUMENTED lexicographic milestone`, not first known use |
 | 1873 | Saint-Honoré | Gouffé directly describes base + crown of pâte à choux + small choux | `DOCUMENTED PRIMARY` |
 | 1873 | Religieuse | Gouffé describes multi-choux `flan à la religieuse` constructions | `DOCUMENTED PRIMARY`; modern two-choux shape cannot be back-projected universally |
@@ -33,7 +34,9 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 | 1926 | Tatin | Curnonsky publication milestone | `SECONDARY LOCATOR LEAD / primary edition-page needed` |
 | 1937 | Canelé | Région Nouvelle-Aquitaine reports Jean Balde as first written trace identified by its research synthesis | `INSTITUTIONAL RESEARCH SUMMARY / exact underlying page needed` |
 | 1955 | Opéra | Dalloyau dates canonical house Opéra to 1955 | `STRONG PARTICIPANT + Comité Colbert corroboration` |
-| 1955 | Tropézienne | Current Maison dates Alexandre Micka creation to 1955 | `STRONG PARTICIPANT TRADITION / contemporary press needed` |
+| 1955 | Tropézienne | Current Maison dates Alexandre Micka creation of the pastry to 1955 | `STRONG PARTICIPANT TRADITION / contemporary press needed` |
+| 1956-05-03 → 1956-07-07 | Tropézienne / Bardot | Independent film sources date the Saint-Tropez shoot of *Et Dieu… créa la femme* to this period | `DOCUMENTED FILM CHRONOLOGY`; this prevents wording that Bardot named it "in 1955 during filming" — Radio France: https://www.radiofrance.fr/franceinter/et-dieu-crea-la-femme-8528446 |
+| 1956 | Tropézienne / Bardot | Later Bardot testimony strongly supports her discovery/promotion/`marraine` role, but exact naming date/mechanism remains retrospective | `STRONG RETROSPECTIVE TESTIMONY / CONTEMPORARY NAMING EVIDENCE OPEN` |
 | 1975 | Galette | Élysée says presidential reception of master bakers for Epiphany is a tradition since 1975 | `PRIMARY GOVERNMENT RECORD` |
 | 1985 | Canelé | Région reports Confrérie chose single-n spelling and deposited collective mark | `INSTITUTIONAL SUMMARY / exact INPI record needed` |
 | 1985 | Ispahan genealogy | Hermé interview recounts discovery of rose in Bulgaria | `DIRECT PARTICIPANT INTERVIEW` |
@@ -55,6 +58,7 @@ Dates below are not all equal. Each row is tagged as documentary, participant/in
 - Canelé convent/18th-century origin: not supported as established fact by current regional institutional research.
 - Éclair `Carême / early 1800s`: no exact primary invention locator acquired; a professional recipe is already tightly located in Bailleux 1856.
 - Mont-Blanc `1903 invention`: rejected as a simple category-origin label; Artusi documents a closely related chestnut/cream construction in 1891 and Farmer has a named `Mont Blanc` in a verified 1896 first-edition record. Angelina 1903 is a house/signature milestone, not the category's earliest current witness.
+- Tropézienne `Bardot named it in 1955 during filming`: incompatible with the independently documented May–July 1956 shoot. Keep `1955 pastry creation` and `1956 Bardot/film episode` separate until contemporary naming evidence closes the sequence.
 
 ## Chronology next actions
 
