@@ -27,13 +27,15 @@ READER = ROOT / "СЕРИЯ СЕРДЦЕ/133_READER_CHAPTER_V_HEART_IN_WAR_2026-
 HUMAN = ROOT / "СЕРИЯ СЕРДЦЕ/136_PART5_NATIVE_ENTRY_CITATION_PASS_2026-08-09.md"
 TEMP_WORKFLOW = ROOT / ".github/workflows/heart-part5-calibration-temp.yml"
 TEMP_DISPOSITION = ROOT / "scripts/calibrate_heart_part5_dispositions_temp.py"
+TEMP_READER_REF_WORKFLOW = ROOT / ".github/workflows/heart-part5-reader-ref-diagnostic-temp.yml"
+TEMP_READER_REF_DIAGNOSTIC = ROOT / "scripts/diagnose_heart_part5_reader_refs_temp.py"
 PRODUCT_REL = Path("src/components/article-pilots/rimlyanam7/Rimlyanam7Body.astro")
 PRODUCT_COMMIT = "0fbe7d1ead9ebd1bea867418e254da438ec63329"
 EXPECTED_BLOBS = {
     V11: "58e9dcf7f724b03c7b9d09b49f75922f8bf73b23",
     ASSEMBLY: "cf58624519e3f3ea7290fde518afce85f258863c",
     PART2: "c746a626953ee57a394a41a5f82a83630f1cd782",
-    R3: "ae55b1fad5cccbdb623c551a14222e0f51ec084a",
+    R3: "ae55b1fad5ccdb623c551a14222e0f51ec084a",
     R4: "f82780e13cb064aa89c06427d11a938662fc3ff8",
     R5: "846277b099e58bf36b88c2ae0dfe4e24e6bec53b",
     READER: "183819bf469d7e28f270fa6891b8ae1534e2f6ef",
@@ -192,6 +194,8 @@ if product_path.is_file():
 require(subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=product_root, text=True).strip() == PRODUCT_COMMIT, "Product snapshot drift")
 require(not TEMP_WORKFLOW.exists(), "temporary calibration workflow must not exist in final tree")
 require(not TEMP_DISPOSITION.exists(), "temporary disposition calibrator must not exist in final tree")
+require(not TEMP_READER_REF_WORKFLOW.exists(), "temporary reader-ref workflow must not exist in final tree")
+require(not TEMP_READER_REF_DIAGNOSTIC.exists(), "temporary reader-ref diagnostic must not exist in final tree")
 
 receipt = read_json(RECEIPT)
 v11 = read_json(V11)
@@ -314,7 +318,35 @@ require(reader_scan["inlineQuotationSegments"] + reader_scan["markdownBlockquote
 require(len(reader_scan["externalLinks"]) == reader_review.get("externalLinks") == 0, "Part V reader external-link boundary drift")
 require(len(reader_scan["internalArticleLinks"]) == reader_review.get("internalArticleLinks") == 0, "Part V reader internal-link boundary drift")
 require(reader_scan["footnoteDefinitions"] == reader_review.get("footnoteDefinitions") == 0, "Part V reader footnote boundary drift")
-require(set(reader_scan["scriptureReferences"]).issubset(set(union_refs)), "Part V reader Scripture references escape reviewed owner union")
+reader_refs = set(reader_scan["scriptureReferences"])
+reader_only_refs = reader_refs - set(union_refs)
+expected_reader_only_refs = {"1 Ин.1:8–2", "Гал.5", "Еф.6", "Кол.3"}
+require(len(reader_refs) == reader_review.get("scriptureReferencesDetected") == 19, "Part V reader Scripture count drift")
+require(len(reader_refs & set(union_refs)) == reader_review.get("ownerUnionExactMatches") == 15, "Part V reader owner-union exact-match count drift")
+require(reader_review.get("readerOnlyScriptureReferencesMustBeExplicitlyDispositioned") is True, "Part V reader-only Scripture disposition boundary drift")
+require(reader_only_refs == expected_reader_only_refs, f"Part V reader-only Scripture set drift: {sorted(reader_only_refs, key=str.casefold)}")
+reader_only_rows = reader_review.get("readerOnlyScriptureReferences", [])
+require(isinstance(reader_only_rows, list) and len(reader_only_rows) == 4, "Part V reader-only Scripture disposition count drift")
+row_by_ref = {
+    str(row.get("reference")): row
+    for row in reader_only_rows
+    if isinstance(row, dict) and row.get("reference")
+}
+require(set(row_by_ref) == expected_reader_only_refs, "Part V reader-only Scripture disposition registry drift")
+reader_text = READER.read_text(encoding="utf-8")
+for reference in sorted(expected_reader_only_refs, key=str.casefold):
+    row = row_by_ref.get(reference, {})
+    require(bool(row.get("role")), f"Part V reader-only Scripture role missing: {reference}")
+    marker = str(row.get("contextMarker", ""))
+    require(bool(marker) and marker in reader_text, f"Part V reader-only Scripture context marker drift: {reference}")
+    require(row.get("sourceQuotationTransfer") == 0, f"Part V reader-only Scripture quote transfer drift: {reference}")
+    require(row.get("sourceLinkTransfer") == 0, f"Part V reader-only Scripture link transfer drift: {reference}")
+    if reference == "Гал.5":
+        require(row.get("status") == "COVERED_ALIAS_OF_REVIEWED_OWNER_REFERENCE", "Part V Galatians 5 alias status drift")
+        require(row.get("coveredBy") == "Гал.5:16–25", "Part V Galatians 5 alias target drift")
+        require(row.get("coveredBy") in set(union_refs), "Part V Galatians 5 alias target escaped owner union")
+    else:
+        require(row.get("status") == "READER_ONLY_SCRIPTURE_LOCATOR_REVIEWED", f"Part V reader-only Scripture review status drift: {reference}")
 require(reader_review.get("sourceQuotationTransfer") == 0 and reader_review.get("sourceLinkTransfer") == 0, "Part V reader source transfer drift")
 require(reader_review.get("newDirectQuotesApproved") == 0, "Part V reader approves new direct quotes")
 
@@ -342,6 +374,7 @@ if HUMAN.is_file():
         "203 unique Scripture refs / 755 quotation surfaces / 122 unique external URLs / 1 internal article path",
         "CURRENT DOSSIER URL HOLDS = 67 = 55 retained + 12 Part V",
         "CURRENT NATIVE-AUTHORITY CITATION PASSES COMPLETE = 7 / 18",
+        "4 reader-only Scripture locators dispositioned explicitly",
         "new direct quotes approved: **0**",
         "HEART-BOOK-X2 NATIVE SOURCE AUTHORITY RECONCILIATION",
     ):
