@@ -87,14 +87,17 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 ### Tarte au Citron / Jacques Genin
 
 - Genin's **2009 citron-basilic** version is strongly documented by later French journalism and should be treated as a modern authored reinterpretation, not the invention of tarte au citron as a genre.
-- A 2026 Relais Desserts professional historical synthesis remains an explicit **falsification/locator source**: it argues that older French lemon use and the later lemon-cream tart should not be collapsed into one timeless native-French form and points toward a transnational/English lemon-cream genealogy.
-- Primary-object acquisition now establishes three bounded historical nodes rather than leaving the genealogy wholly abstract:
-  - **1855 Webster** = directly readable English-language `Lemon Cream`, an egg/lemon/sugar preparation thickened over heat and served as cream; no tart-shell use is shown;
-  - **1870 Jeanes** = professional *Gunter's Modern Confectioner* table of contents directly lists `Lemon Cheese Cakes`, p.227; exact recipe/form remains `CONTENT_HOLD`;
-  - **1877 Charles Gérard** = direct French-language/Alsatian inventory witness listing `la tourte au citron` among `tartes` and `tourtes`; the passage is nomenclature, not a recipe.
-- Dumas's **1873** *Grand dictionnaire de cuisine* is now directly identified as a full historical object, but its exact lemon entries remain to inspect; corpus snippets/common-term indexes must not be promoted into a positive or negative recipe claim.
-- The unresolved question has narrowed: not `did lemon cream or a named lemon tourte exist?`, but **when shell + lemon filling/cream + later meringue/emulsified architecture converge into the recognizable modern tart**.
-- `Jacques Genin invented tarte au citron`, `Gérard 1877 is the modern tarte au citron`, and a simple national-origin claim remain prohibited current wording.
+- A 2026 Relais Desserts professional historical synthesis remains an explicit **falsification/locator source**: it challenges a timeless purely French modern-tart genealogy and points toward a wider English/transnational lemon-cream history. The synthesis itself is not primary origin proof.
+- **Eliza Acton 1845 materially changes the governing boundary.** Wellcome/University of Leeds identifies a digitized 1845 *Modern Cookery* object with 679 images and a Public Domain Mark; the same Leeds scan is preserved on Wikimedia Commons. Separately, a transcription explicitly based on the 1845 first edition maps `Common Lemon Tartlets` to printed **p.431** and `Store Mixture for Lemon Tartlets` to **p.434**.
+- The mapped Acton text describes a recognizable pastry-shell + lemon-filling architecture: thin puff-paste shells receive an egg/sugar/butter/lemon filling and are baked; the store mixture is cooked until cream-thick before later filling and baking in thin puff-paste shells.
+- Evidence remains deliberately split: **1845 object identity and rights lane are institutionally verified; recipe text/page mapping is strong; the exact original p.431/p.434 facsimile leaves have not yet been directly visually inspected.** Therefore `PAGE_IMAGE_HOLD` remains for verbatim quotation/facsimile Product use.
+- Additional bounded nodes remain useful but are no longer the earliest architecture evidence:
+  - **1855 Webster** = directly readable `Lemon Cream`, served as a cream rather than shown in a tart shell;
+  - **1870 Jeanes** = professional *Gunter's Modern Confectioner* TOC directly lists `Lemon Cheese Cakes`, p.227; exact recipe/form remains `CONTENT_HOLD`;
+  - **1877 Charles Gérard** = direct French-language/Alsatian inventory witness listing `la tourte au citron`; nomenclature, not recipe architecture.
+- Dumas's **1873** *Grand dictionnaire de cuisine* is directly identified as a full historical object. Targeted direct searches have not yet surfaced a modern-style lemon-tart entry; this is **negative search coverage only**, never proof of absence.
+- The high-value unresolved question is now specifically **French codification and later convergence**: when comparable shell + lemon filling appears in directly inspectable French professional recipes; when meringue enters; when the familiar pâte-sucrée + smooth/emulsified lemon-cream architecture becomes established.
+- Prohibited shortcuts include `Jacques Genin invented tarte au citron`, `Acton invented the modern tart`, `Gérard 1877 is the modern tarte au citron`, and any simple national-invention claim unsupported by the transmission chain.
 
 ### Paris-Brest
 
@@ -182,6 +185,7 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 - `B1` can triangulate, expose conflicts and supply tight locators but cannot alone make a disputed historical claim quote-safe.
 - **route resolved != content verified**.
 - A verified TOC/structural entry is stronger than vague discovery but does not substitute for an inspected recipe page.
+- A transcription explicitly mapped to a historical edition can close a bounded text/locator layer when corroborated by institutional object identity, but it does not become an inspected facsimile page. Acton 1845 p.431/p.434 currently follows this rule.
 - Negative search coverage never proves historical non-existence and must be revised when a new object is found.
 - OCR may navigate a verified full object but direct quotations require page/context verification.
 - An unauthorized modern upload can expose an acquisition lead but cannot be promoted merely because its text is searchable.
@@ -189,6 +193,8 @@ Repository authority CI is authoritative only after GitHub reports a completed c
 ## Rights boundary
 
 Historical evidence strength and visual publication rights are separate. `viewable`, `downloadable`, `digitized`, `public domain in one jurisdiction`, or `OCR-found` do not automatically produce Product publication approval.
+
+Acton 1845 has an unusually strong visual-rights lane because Wellcome marks the digitized object with a Public Domain Mark and supplies a credit line, but Product facsimile use still requires exact-leaf inspection, credit capture and durable byte provenance.
 
 Modern maison photography remains reference-only unless licensed. Generated visuals are modern editorial specimens only and must never masquerade as historical evidence. See `00_VISUAL_ARCHIVE_AND_RIGHTS_LEDGER.md` and `00_GENERATION_REFERENCE_AND_PROMPT_BRIEF.md`.
 
@@ -203,7 +209,7 @@ No Product repository has been modified by this wave.
 1. Direct page images: de Kock 1848 p.4 col.1; Bailleux 1856 Éclairs p.74; Michigan *Vanity Fair* 1861 p.50 col.1; Lacam 1893 p.44/p.49; *Le Gaulois* 1899 p.3; *Le Journal* 1899 p.1.
 2. Bailleux edition history: lawfully acquire **1860 Religieuse/Baba/Savarin pages** and determine whether the **1856 first edition** already contains the named Religieuse/Baba/Savarin entries.
 3. Baba: continue pre-1873 rum-specific search; distinguish first named Baba/Savarin from first directly inspectable rum-soaked formulation.
-4. Tarte au Citron: direct Genin 2009 participant source; inspect Dumas 1873 lemon entries and Jeanes 1870 p.227; continue the pre/post-1877 French chain from the now-direct `tourte au citron` witness; acquire earlier English lemon-cream/lemon-cheese objects and the first directly inspectable recognizable shell + lemon filling and meringue transitions.
+4. Tarte au Citron: pin and visually inspect Acton 1845 printed p.431/p.434 facsimile leaves; direct Genin 2009 participant source; complete bounded Dumas 1873 lemon-entry review; inspect Jeanes 1870 p.227; acquire the earliest comparable **French professional recipe architecture** and later meringue/emulsified-cream transitions.
 5. Tatin: exact 1903 Bulletin page; Dubois 1894 `Tarte aux pêches molles` leaf; primary 1790 `tourte retournée` object; Jullemier 1915 page; Besnard 1921 issue/page; Curnonsky/Rouff 1926 page; 1923 p.85 / 1929 p.5 / 1931 p.2 direct page reviews.
 6. Tatin myth genealogy: original *Horizons d'Argonne* 1976 p.97 under the exact `n°30 à 39` citation; original 1979 Confrérie prospectus/statutes and old-JORF notice; search 1926–1975 for earlier accident motifs.
 7. Paris-Brest: contemporaneous **1909–1911** advertising/menu/trade/local-directory evidence, including Durand/Bauget.
