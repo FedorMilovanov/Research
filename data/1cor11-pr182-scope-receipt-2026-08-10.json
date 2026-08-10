@@ -1,0 +1,18 @@
+{
+  "date":"2026-08-10",
+  "pr":182,
+  "branch":"agent/1cor11-citation-quarantine-20260810",
+  "scope":[
+    "agent citation fabrication quarantine",
+    "direct publisher/institutional source verification",
+    "recent scholarship acquisition",
+    "quotation/refutation adversarial stress test",
+    "same-letter Pauline quotation/slogan corpus control",
+    "multilingual recent scholarship control",
+    "rights-aware visual archaeology ledger",
+    "patristic speaker-boundary control"
+  ],
+  "coreGradeReversals":0,
+  "publicationHold":true,
+  "directTextHolds":["Garland 2025 pp468-493 + notes","Ciampa/Rosner pp503-540 + notes","Nommik DiVA full object"]
+}
