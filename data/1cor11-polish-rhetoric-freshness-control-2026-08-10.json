@@ -1,0 +1,55 @@
+{
+  "schemaVersion":"1.0",
+  "date":"2026-08-10",
+  "topic":"1 Corinthians 11:2-16",
+  "status":"RESEARCH_ONLY_PUBLICATION_HOLD",
+  "coreGradeReversals":0,
+  "sources":[
+    {
+      "id":"kowalski-2020",
+      "author":"Marcin Kowalski",
+      "title":"Między darem Bożym a konstruktem społecznym. Wczesnochrześcijańskie rozumienie płciowości na podstawie 1 Kor 11,2-16",
+      "journal":"Biblica et Patristica Thoruniensia",
+      "volumeIssue":"13.1",
+      "pages":"59-104",
+      "doi":"10.12775/BPTh.2020.003",
+      "officialAbstractModel":{"v2":"introduction","v3":"Pauline thesis","vv4_6":"cultural argument","vv7_12":"Christological-theological argument","vv13_15":"natural-law argument","frame":"ecclesial"},
+      "fulltextExists":"VERIFIED_OFFICIAL_PDF_LINK_AND_KUL_OBJECT",
+      "runtimePdfBytes":"HOLD_CACHE_MISS",
+      "exactV10Exousia":"DETAIL_HOLD",
+      "exactAngelModel":"DETAIL_HOLD"
+    },
+    {
+      "id":"torbus-2009",
+      "author":"Slawomir Torbus",
+      "title":"The Rhetorical Dispositio of 1 Cor. 11, 2-16 and the Problem of the Veil",
+      "book":"New Chapters in the History of Rhetoric",
+      "pages":"507-521",
+      "publisher":"Brill",
+      "bibliographicState":"VERIFIED_PUBLISHER_TOC",
+      "abstractModel":"COHERENT_RHETORICAL_DISPOSITIO_ORAL_STYLE",
+      "fullArgument":"CONTENT_HOLD"
+    },
+    {
+      "id":"peerbolte-2000",
+      "author":"L. J. Lietaert Peerbolte",
+      "title":"Man, Woman, and the Angels in 1 Cor 11:2-16",
+      "book":"The Creation of Man and Woman",
+      "pages":"76-92",
+      "publisher":"Brill",
+      "bibliographicState":"VERIFIED_PUBLISHER_TOC",
+      "womanControlHead":"STRONG_SECONDARY_ATTESTED_PP86_87",
+      "watchersLine":"STRONG_SECONDARY_ATTESTED",
+      "directBody":"HOLD"
+    },
+    {
+      "id":"penner-vanderstichele-freshness",
+      "title":"Unveiling Paul: Gendering Ethos in 1 Corinthians 11:2-16",
+      "actualPublication":"2004 electronic / 2005 book chapter",
+      "researchGate2025":"RECENT_UPLOAD_OR_INDEX_EVENT_NOT_NEW_PUBLICATION",
+      "state":"FALSE_FRESHNESS_BLOCKED"
+    }
+  ],
+  "currentQuotationCalibration":{"publishedFamily":"C_SERIOUS_MULTIPLE_B1","textualFit":"D_C_LOW","leadingModel":false},
+  "acquisitionQueue":["Kowalski official PDF bytes retry","Torbus 2009 pp507-521","Peerbolte 2000 pp76-92"]
+}
