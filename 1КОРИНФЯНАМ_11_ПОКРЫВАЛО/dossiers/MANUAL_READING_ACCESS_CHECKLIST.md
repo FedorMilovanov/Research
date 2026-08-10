@@ -60,6 +60,8 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #23 [Olson 2008]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview id l9wdU6ysZgEC; pp.25, 33–36, 51, 113; full body still external).
    - **Item #34 [Apphe]:** Önder 2022 FULL BODY READ 2026-08-10 — no Apphe/CIG 3796 discussion (comparison target inapplicable); CIG vol.4 preview id TU5FwAcnR9cC indices-only; printed page external.
    - **Item #28 [Fendel EXOUSIAN.xlsx]:** `DATASET_CONTENT_READ_DIRECT` (2026-08-10, full 9-chunk table scan via ORA file render; three Roman-period PP rows enumerated: BGU.7.1655 ἀπό+gen, P.Oxy.8.1120 κατά+gen, P.Oxy.9.1205 εἰς+acc; **no ἐπί+genitive among them**).
+   - **Item #19 [Peerbolte 2000]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview id Ma9xEQAAQBAJ; key pp.76–91 incl. Watchers argument and ἐξουσία discussion; full body external).
+   - **Item #13 [Lumesberger-Loisl 2025]:** `BIBLIOGRAPHIC_AND_TOC_CLOSED` (2026-08-10, publisher Leseprobe TOC confirms chapter pp.295–303 in Siquans/Eder, Katholisches Bibelwerk 2025, ISBN 978-3-460-25266-0; body external).
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
@@ -272,7 +274,8 @@ https://ixtheo.de/Record/1925710505
 **Extract:** exact material reconstruction and gender-difference argument.
 
 ```text
-STATUS = BIBLIOGRAPHIC_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = BIBLIOGRAPHIC_AND_TOC_CLOSED_2026_08_10 / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_BIBLIO = Siquans, Agnethe / Eder, Sigrid (Hrsg.), "Ist die Bibel frauenfeindlich? Biblische Frauenbilder und was wirklich dahinter steckt", Stuttgart: Katholisches Bibelwerk 2025-03-17, 320 pp., ISBN 978-3-460-25266-0; chapter "Kopftuchgebot für Christinnen? Die 'Verhüllung' des Kopfes als Ausdruck der Geschlechterdifferenz (1 Kor 11,2–16)" = pp.295–303 CONFIRMED via official publisher Leseprobe TOC (https://www.bibelwerk.shop/fileadmin/products/kun03_25266.pdf); chapter body external
 ```
 
 ## 14. Judith M. Gundry-Volf (1997)
@@ -360,7 +363,9 @@ https://brill.com/display/book/edcoll/9789047400394/B9789047400394_s016.xml
 **Extract:** direct Watchers/Enochic argument, exact `ἐξουσία` interpretation, exact page wording.
 
 ```text
-STATUS = CHAPTER_IDENTITY_AND_SECONDARY_PAGE_LOCATORS_CLOSED / DIRECT_BODY_HOLD_NONBLOCKING
+STATUS = CHAPTER_IDENTITY_AND_SECONDARY_PAGE_LOCATORS_CLOSED / PREVIEW_LEVEL_DIRECT_READ_2026_08_10 / FULL_BODY_EXTERNAL_HOLD
+VERIFIED_PREVIEW_ROUTE = Google Books limited preview id Ma9xEQAAQBAJ (Brill 2000, SearchWithinVolume)
+PREVIEW_EXTRACTS = "p.76 chapter 'Man, Woman, and the Angels in 1 Cor 11:2-16'; p.83 κεφαλή = 'authority or supremacy over someone else', vv.4-5 disgrace logic; p.86 'authority on the head' — Vulgate Rev 14:18 potestatem habere supra as vulgar Latin, GNB 'a covering over her head', NRSV 'a…'; p.87 'authority over her own head' reading 'not easily combined with the context' (would leave choice to woman); pp.87-88 forbidden liaison of angels and women = legend of the fall of the Watchers; Tertullian already interpreted 1 Cor 11:10 thus; p.88 CD (Damascus Document) 'Azaz'el and the angels who came to the daughters of man', 1 Enoch 7:7, 1 Enoch 12:4 'the Watchers of heaven'; p.89 Watchers fell from heaven through lust; moral disorder and bloodshed; T.Reuben; p.90 'This material proves that the legendary fall of the Watchers was understood as a fall of angels. Paul's words διὰ τοὺς ἀγγέλους may therefore indeed refer to the legend of the Watchers'; p.91 angels attend worship; History of the Rechabites 16:18a-d (angels carry prayers to God)"
 ```
 
 ## 20. Charles H. Cosgrove (2005)
