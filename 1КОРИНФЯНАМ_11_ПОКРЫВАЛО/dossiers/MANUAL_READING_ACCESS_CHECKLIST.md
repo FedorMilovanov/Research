@@ -68,6 +68,8 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #4 [Thiselton NIGTC]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books pmC4EQAAQBAJ; 11:2–16 section headings + translation fragments + φύσις four views; full body external).
    - **Item #11 [Økland]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books kSkJ_LtXlj8C; chs.5–7 pp.173–240 fragments incl. Qumran angels as guardians of liturgical order; full body external).
    - **Item #6 [Starling EBTC 2025]:** `BIBLIA_PREVIEW_OPEN` (2026-08-10, embedded preview live — TOC/front matter; 11:2–16 body not exposed in preview).
+   - **Item #1 [Reasoner 2025]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books limited preview IEiGEQAAQBAJ; Commentary 7 pp.432+ translation + text-critical notes (αὐτῇ in P46 D F G K L Y Mb Ambst; ἐξουσία original, veil/covering gloss), Chrysostom κομήν gloss, veils/under authority 11:7–10, angels/Stuckenbruck 2001, 11:16 τις; full body external).
+   - **Item #2 [Garland 2025 2e]:** metadata refined (872 pp. GB / 880 Christianbook / 850 Logos; pub 2025-11-11; GB wgUl0QEACAAJ no preview); section pagination still unverified.
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
@@ -103,7 +105,9 @@ https://books.google.com/books/about/1_Corinthians.html?id=IEiGEQAAQBAJ
 **Extract:** material veil vs hair; `κεφαλή`; v10 `ἐξουσία`; angels; `φύσις`; v16; exact Corinth trigger; authenticate any circulated p.434/p.444 wording.
 
 ```text
-STATUS = CHAPTER_AND_PAGINATION_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = CHAPTER_AND_PAGINATION_CLOSED / PREVIEW_LEVEL_DIRECT_READ_2026_08_10 / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_PREVIEW_ROUTE = Google Books limited preview id IEiGEQAAQBAJ (ebook, Brill 2025-09-12; print id vKQ10QEACAAJ, 720 pp.)
+PREVIEW_EXTRACTS = "Commentary 7 starts p.432 with 'Translation of 1 Corinthians 11:2-16' (vv.2-16 rendered; v.15 'long hair is given for a covering', v.16 'we have no such practice, nor do the churches of God'); sub-section 11:13-16 titled 'Long Hair for Women, Short Hair for Men'; Text-Critical Analysis: 11:15 αὐτῇ missing in P46 D F G K L Y Mb Ambst; '(veil, covering) is an explanatory gloss; the enigmatic ἐξουσία is original'; Chrysostom glossed κατὰ κεφαλῆς ἔχων (11:4) with κομήν (Hom. 1Cor 26.1, PG 61:213; cf. Jantsch 2015a: 108-110); 'Paul expects women to veil themselves in order to show that they are under authority (11:7-10)'; veils 'effective in upholding the created order... and also effective in keeping angels from targeting them (Stuckenbruck 2001: 230-232)'; 11:16 τις as rejection of an audience idea (3:18; 11:16, 34; 2 Cor 2:5); section 'Veils and Virgins'; T.W. Martin 2004 testicle theory discussed (11:15 semen); Pseudo-Phocylides on long hair"
 ```
 
 ## 2. David E. Garland, *1 Corinthians*, BECNT 2nd ed. (2025)
@@ -118,7 +122,7 @@ STATUS = CHAPTER_AND_PAGINATION_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 
 ```text
 STATUS = SECTION_IDENTITY_CLOSED / 2025_PAGINATION_AND_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
-VERIFIED_BOOK_METADATA = LOGOS_2025_2E_TOTAL_PAGES_850 / PRINT_ISBN_9781540962607 / EBOOK_ISBN_9781493451692 / SECTION_PAGINATION_STILL_UNVERIFIED
+VERIFIED_BOOK_METADATA = GB_2025_2E_TOTAL_PAGES_872 / CHRISTIANBOOK_880 / LOGOS_850 / PRINT_ISBN_9781540962607 / EBOOK_ISBN_9781493451692 / PUBLISHED_2025-11-11 / GB_id_wgUl0QEACAAJ_NO_PREVIEW / SECTION_PAGINATION_STILL_UNVERIFIED
 ```
 
 ## 3. Gordon D. Fee, NICNT Revised Edition (2014)
@@ -191,6 +195,7 @@ STATUS = BOOK_CLOSED / TARGET_SECTION_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 
 ```text
 STATUS = BOOK_CLOSED / TARGET_SECTION_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_BIBLIO_2026_08_10 = Eerdmans 2025, 477 pp., ISBN 9780802882660; Google Books id DjnU0AEACAAJ (no preview); "A Theological, Pastoral, and Missional Commentary"
 ```
 
 ## 8. Susanna Drake, *Veiling in the Late Antique World* (CUP, 2025)
@@ -272,8 +277,9 @@ https://bakeracademic.com/products/9781540960955_archaeology-and-the-ministry-of
 **Extract:** whether he actually discusses 1 Cor 11, S-1116, S-1088, Julian Basilica, `capite velato`, women’s head covering.
 
 ```text
-STATUS = CHAPTER_RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = CHAPTER_RANGE_CLOSED / PREVIEW_LEVEL_CONTROL_2026_08_10 / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 VERIFIED_ROUTE = REVIEW (C. Burnett, 2025-10): "Roman Corinth" = pp.126–156 confirmed; no 1 Cor 11 / S-1116 / S-1088 / capite velato discussion visible in review text
+VERIFIED_PREVIEW = Google Books limited preview id njouEQAAQBAJ (2025-05-20, 320 pp.): SearchWithinVolume finds "Julian Basilica" inside Roman Corinth chapter (RA1-PT118) but ZERO hits for "head covering", "veiled", "capite velato" — negative control at preview level suggesting deSilva does not substantively treat 1 Cor 11 veiling (book is visual archaeology survey)
 ```
 
 ## 13. Barbara Lumesberger-Loisl (2025)
