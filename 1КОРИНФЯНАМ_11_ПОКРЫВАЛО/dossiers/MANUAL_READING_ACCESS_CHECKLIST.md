@@ -64,6 +64,10 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #13 [Lumesberger-Loisl 2025]:** `BIBLIOGRAPHIC_AND_TOC_CLOSED` (2026-08-10, publisher Leseprobe TOC confirms chapter pp.295–303 in Siquans/Eder, Katholisches Bibelwerk 2025, ISBN 978-3-460-25266-0; body external).
    - **Item #42 [Garland 2003]:** `SECTION_SPAN_AND_PREVIEW_READ` (2026-08-10, Google Books preview g4B7sIoz0g8C; section VII pp.505–532 confirmed; v10 'authority on her head' + vv.11–12 backtracking position captured; full body external; M3 edition-comparison baseline for Garland 2025).
    - **Costa 2023 (pt-BR; quotation-family member, not in 43-item checklist but in QUOTATION dossier):** `FULL_BODY_CLOSED_DIRECT` (2026-08-10, official UFMG OA PDF `periodicos.ufmg.br/.../55158/45585`; vv.4–9 Corinthian quotation refuted; v.10 literal authority of woman + angels=messengers; vv.13–15 declarative readings; model distinct from Salés/Shoemaker).
+   - **Item #34 [Apphe — IK Kalchedon 61 = CIG 3796]:** `FULL_BODY_CLOSED_DIRECT_PHI` (2026-08-10, PH279287; "Ὀρβανίλλα, θρεπτὴ Ἄπφης προφήτιδος, ζήσασα ἔτη ζκ΄· μήτηρ Τυραννίς. ζῇ"; gen. apposition — Apphe herself prophetess; prophet-wife reading not supported by text; printed page optional).
+   - **Item #4 [Thiselton NIGTC]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books pmC4EQAAQBAJ; 11:2–16 section headings + translation fragments + φύσις four views; full body external).
+   - **Item #11 [Økland]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books kSkJ_LtXlj8C; chs.5–7 pp.173–240 fragments incl. Qumran angels as guardians of liturgical order; full body external).
+   - **Item #6 [Starling EBTC 2025]:** `BIBLIA_PREVIEW_OPEN` (2026-08-10, embedded preview live — TOC/front matter; 11:2–16 body not exposed in preview).
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
@@ -146,7 +150,9 @@ AUTHORIZED_TRANSLATION_ROUTE = "Portuguese edition of Gordon D. Fee, 1 Coríntio
 **Extract:** exact material reconstruction, lexical arguments, `κεφαλή`, `ἐξουσία`, angels, `φύσις`, v16, rhetorical structure.
 
 ```text
-STATUS = WORK_AND_RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = WORK_AND_RANGE_CLOSED / PREVIEW_LEVEL_DIRECT_READ_2026_08_10 / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_PREVIEW_ROUTE = Google Books limited preview id pmC4EQAAQBAJ (Eerdmans 2000, 1446 pp., ISBN 9780802824493)
+PREVIEW_EXTRACTS = "TOC section headings for 11:2-16: 'Long Hair? (11:4)', 'Head Covering (Hoods), Gender Identity, and Shame or Respect (11:5-6)', 'Image of God, Glory, and Gender Differentiation (11:7-9)', 'ἐξουσία: Power? Authority? Control? Over What? (11:10)', 'φύσις…'; translation 11:4-6: man 'with his head covered (i.e. with long hair) shames his head'; woman 'with her head uncovered (less probably, with long, loose, unbound hair) shames her head, for it is one and the same thing as a woman [shaved]'; 11:16 'we ourselves have no such custom, nor do the churches of God'; 'if the first concern of 11:2-16 is long hair (as is also entirely possible), it is about men, not about women' — section title 'The Veiling of Women in Public Worship' (Robertson-Plummer) rejected; Roman head covering in public devotion vs hair-style signaling loose sexuality; ἀκατακαλύπτῳ + Rousselle/Dale Martin; Jewish male practice lacks firm data (2 Cor 3:12-13 Kopfbedeckung); φύσις four views in history of interpretation"
 ```
 
 ## 5. Roy E. Ciampa & Brian S. Rosner, PNTC (2010)
@@ -159,6 +165,7 @@ STATUS = WORK_AND_RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 
 ```text
 STATUS = WORK_AND_RANGE_CLOSED / DETAIL_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_BIBLIO_2026_08_10 = Eerdmans 2010, 922 pp., ISBN 9780802837325; Google Books id QXJnSecbvKcC (Limited preview; SearchWithinVolume exposes no 11:2-16 body); Apollos ed. ISBN 9781844744848
 ```
 
 ## 6. David I. Starling, EBTC (2025)
@@ -246,7 +253,9 @@ https://books.google.com/books/about/Women_in_Their_Place.html?id=kSkJ_LtXlj8C
 **Extract:** exact positions on veil vs hair, `κεφαλή`, `ἐξουσία`, angels, `φύσις`, v16 and sanctuary-space trigger.
 
 ```text
-STATUS = IDENTITY_TOC_THESIS_CONTROL_CLOSED / CH4_7_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = IDENTITY_TOC_THESIS_CONTROL_CLOSED / PREVIEW_LEVEL_DIRECT_READ_2026_08_10 / CH4_7_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_PREVIEW_ROUTE = Google Books limited preview id kSkJ_LtXlj8C (T&T Clark 2004)
+PREVIEW_EXTRACTS = "translation 11:3-13 incl. 11:10 'authority/power upon the head, because of the angels', 11:16 'we do not have such a practice, nor do the ekklesiai'; veil = either 'signs of subordination under male authority' (Fatum 1988) or 'sign of personal authority and control in Christ (i.e. independently of the male)' (Schüssler Fiorenza 1983: 228-29); question 'whether Paul is prescribing long hair or veils'; 'commentators from Tertullian on have taken the view that [angels...]' (D'Angelo 1995); angels in 11:10 within cosmological discourse (Smith 1978); 'In Qumran at least, the angels were considered to be guardians of the liturgical order' (Frennesson) — supports heavenly-holy-angels/order reading; Philo Spec. Laws 1.66-67; 'Veil as Boundary' — 11:1-3 reading 'focusing more on proper places and relations than on subjugation of women per se'; veil = physical/concrete way to make ritual structure, hierarchy, authority visible (cf. 1 Cor 9.4-6); 'veils are multivalent'; Watchers-legend background (Meeks 1973-74, Gundry-Volf 1997b)"
 ```
 
 ---
@@ -586,8 +595,13 @@ STATUS = TEXT_BODY_CLOSED / TABBERNEE_FIG77_TERMINAL_EXTERNAL_IMAGE_HOLD
 **Verify:** exact grammar around `Ἄπφη ... προφῆτις`; whether syntax favors independent office or prophet-wife interpretation; object/funerary context.
 
 ```text
-STATUS = FEMALE_NOUN_BEARER_SPECIALIST_CONTROL_CLOSED / ORIGINAL_PRINTED_PAGE_TERMINAL_BINARY_TRANSPORT_HOLD
-VERIFIED_2026_08_10 = Önder 2022 (Tarih Dergisi 77, 1–14, OA CC BY-NC) FULL BODY READ — article treats Apollo oracle at Kalkhedon (Pythaios/Khresterios, asylia decrees, numismatics) and does NOT discuss Apphe / IK 61 / CIG 3796 / προφῆτις; comparison target resolved as inapplicable. CIG vol. 4 (1859) = Google Books preview id TU5FwAcnR9cC (595 pp.; preview exposes indices only — name index RA2-PA71 confirms "3796. Ἄφφη"; main-text pages not in preview). HathiTrust 1977 Olms reprint = Limited (search only). Printed CIG/IK page remains external.
+STATUS = FULL_BODY_CLOSED_DIRECT_PHI_2026_08_10 / GRAMMAR_AND_CONTEXT_VERIFIED / PRINTED_PAGE_OPTIONAL_IMAGE_ONLY
+VERIFIED_RUNTIME_ROUTE = https://inscriptions.packhum.org/text/279287 (IK Kalchedon 61; Bith. Kalchedon (Kadıköy))
+FULL_TEXT = "Ὀρβανίλλα, θρεπτὴ Ἄπφης προφήτιδος, ζήσασα ἔτη ζκ΄· μήτηρ Τυραννίς. ζῇ"
+READING = "Orbanilla, fostling (θρεπτή) of Apphe the prophetess (Ἄπφης προφήτιδος, gen.), who lived 27 years; mother Tyrannis. She lives." Funerary dedication (Roman-period Bithynia).
+GRAMMAR = Ἄπφης προφήτιδος = genitive apposition: Apphe herself bears the title προφῆτις; Orbanilla is her θρεπτή. No husband/prophet-wife construction in the text; the "prophet's wife" reading is not supported by this inscription's syntax.
+NOTE = PHI search for προφῆτις does not surface IK 61 (PHI search coverage gap); text was located via PHI book 654 (IK Kalchedon) id arithmetic (108=PH279334 → 61=PH279287).
+CONTEXT_CONTROL = Önder 2022 (Tarih Dergisi 77, 1–14, OA) full body read 2026-08-10: does NOT discuss IK 61 (comparison target inapplicable). CIG vol. 4 (1859) Google Books preview TU5FwAcnR9cC: indices only (name index confirms "3796. Ἄφφη"). Printed CIG/IK page now optional (image autopsy only).
 ```
 
 ## 35. Termessos — TAM III,1 870 / PH280975

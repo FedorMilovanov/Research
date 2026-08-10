@@ -308,7 +308,20 @@ TABBERNEE_FIG77_OBJECT_IMAGE = TERMINAL_EXTERNAL_IMAGE_HOLD_CURRENT_RUNTIME
 
 ## 4.5 Apphe of Kalchedon — female `prophetis`, office interpretation unresolved
 
-Prosopographic control and `IK Kalchedon 61 = CIG 3796` identify **Ἄπφη** as the female `προφῆτις` noun-bearer in a Roman-period funerary inscription. **Direct full-body read 2026-08-10:** Selin Önder Kaddar, “Oracle of Apollo in Kalkhedon,” *Tarih Dergisi* 77 (2022): 1–14, DOI `10.26650/iutd.1096605` (OA, CC BY-NC), treats the Apollo oracle at Kalkhedon (Pythaios/Khresterios epithets, asylia decrees, numismatics, topographical discussion) and **does not discuss Apphe, IK Kalchedon 61, CIG 3796 or any `προφῆτις`** — the earlier dossier attribution of an interpretive fork to this article is **REVOKED** as unsupported by the body. The interpretive fork itself (independent oracular office vs prophet's wife) remains a general specialist/lexicographic point (cf. LSJ `προφῆτις`: “prophet's wife, LXX Is.”; Moulton–Milligan on restored titles), not sourced to Önder 2022. The CIG vol. 4 (1859) Google Books preview (`TU5FwAcnR9cC`) exposes only the indices (name index confirms `3796. Ἄφφη`); the printed page of CIG 3796 remains external.
+**Full body closed direct 2026-08-10** via PHI: https://inscriptions.packhum.org/text/279287 (IK Kalchedon 61; Bith. Kalchedon (Kadıköy); Roman period). Complete text:
+
+```text
+Ὀρβανίλλα,
+θρεπτὴ Ἄπφης
+προφήτιδος,
+ζήσασα ἔτη ζκ΄·
+μήτηρ Τυραν-
+νίς. ζῇ
+```
+
+Reading: **Orbanilla, fostling (`θρεπτή`) of Apphe the prophetess (`Ἄπφης προφήτιδος`), who lived 27 years; (her) mother Tyrannis. She lives.** Funerary dedication. The genitive apposition `Ἄπφης προφήτιδος` shows Apphe herself bore the title `προφῆτις`; Orbanilla is her `θρεπτή` (fostling/ward). The syntax gives **no husband/prophet-wife construction** — the "prophet's wife" reading (a general lexicographic sense, cf. LSJ `προφῆτις` "prophet's wife, LXX Is.") is **not supported by this inscription**. The formal character of the title (independent oracular office vs honorific) remains open, but the noun-bearer and funerary context are now direct-body verified. PHI search for `προφῆτις` does not surface IK 61 (search-coverage gap); located via PHI book 654 id arithmetic.
+
+**Direct full-body read 2026-08-10 (comparison target):** Selin Önder Kaddar, “Oracle of Apollo in Kalkhedon,” *Tarih Dergisi* 77 (2022): 1–14, DOI `10.26650/iutd.1096605` (OA, CC BY-NC), treats the Apollo oracle at Kalkhedon (Pythaios/Khresterios epithets, asylia decrees, numismatics, topographical discussion) and **does not discuss Apphe, IK Kalchedon 61, CIG 3796 or any `προφῆτις`** — the earlier dossier attribution of an interpretive fork to this article is **REVOKED** as unsupported by the body. The CIG vol. 4 (1859) Google Books preview (`TU5FwAcnR9cC`) exposes only the indices (name index confirms `3796. Ἄφφη`); the printed page of CIG 3796 is now optional (image autopsy only).
 
 ```text
 NAME = Ἄπφη
@@ -317,14 +330,14 @@ REFERENCE = IK Kalchedon 61 = CIG 3796
 OBJECT_TYPE = FUNERARY_INSCRIPTION
 DATE = ROMAN_PERIOD
 
-APPHE_IK61_CIG3796_CROSSWALK = STRONG_SPECIALIST
-APPHE_PROPHETIS_NOUN_BEARER = B_HIGH_DIRECT_SPECIALIST_BODY
-APPHE_FUNERARY_CONTEXT = B_HIGH_DIRECT_SPECIALIST_BODY
+APPHE_IK61_CIG3796_CROSSWALK = CLOSED_DIRECT_PHI_279287
+APPHE_PROPHETIS_NOUN_BEARER = A_DIRECT_BODY / ἌΠΦΗΣ_ΠΡΟΦΗΤΙΔΟΣ_GEN_APPOSITION
+APPHE_FUNERARY_CONTEXT = A_DIRECT_BODY / ORBANILLA_THREPTE_27_YEARS / MOTHER_TYRANNIS
 APPHE_APOLLO_KHRESTERIOS_CONTEXT = B_HIGH_CONTEXTUAL
 APPHE_FORMAL_ORACULAR_OFFICE = B_C_AMBIGUOUS
-APPHE_PROPHET_WIFE_READING = SPECIALIST_POSSIBILITY
+APPHE_PROPHET_WIFE_READING = NOT_SUPPORTED_BY_DIRECT_TEXT_2026_08_10 (gen. apposition gives Apphe the title herself)
 APPHE_CIG_OFFICIAL_VOLUME_IDENTITY = CLOSED
-APPHE_DIRECT_CIG3796_PAGE_BODY = TERMINAL_BINARY_TRANSPORT_HOLD_CURRENT_RUNTIME
+APPHE_DIRECT_CIG3796_PAGE_BODY = CLOSED_VIA_PHI_TEXT / PRINTED_PAGE_OPTIONAL_IMAGE_ONLY
 APPHE_HEAD_HAIR_CODE = NOT_FOUND
 ONDER_2022_APPHE_DISCUSSION = NONE_FOUND_DIRECT_FULL_BODY_READ_2026_08_10
 CIG_VOL4_1859_GB_PREVIEW = INDICES_ONLY / NAME_INDEX_CONFIRMS_3796_APHE
