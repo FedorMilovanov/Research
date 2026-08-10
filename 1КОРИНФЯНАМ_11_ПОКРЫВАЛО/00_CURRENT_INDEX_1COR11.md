@@ -94,11 +94,11 @@ TRYPHOSA = direct Didyma prophetis; PHI247445 / ordinal450 = SEG30.1286 = Didyma
 ERESOS_IG_XII_SUPPL_126 = direct 2C BCE institutional prophetis in sanctuary-space regulation
 EIRENE = direct promantis
 CLEOPATRA = fragmentary restored prophetis
-POTTA_TAM_V1_535 = external prophetis/soteira; direct PHI body HOLD
+POTTA_TAM_V1_535 = external prophetis/soteira; secondary full Greek transcription + official TAM V.1 corpus route CLOSED; direct TAM/PHI page body HOLD
 AMMIAS_THYATEIRA = direct priestess + vision-oracle formula; NOT prophetis
 AMMIA_PHILADELPHIA = early-Christian literary prophetess
-NANAS_PH271564 = 4C CE prophetis; Poirier full epitaph closed; disputed angelic-language comparator; image HOLD
-APPHE_IK61_CIG3796 = Roman Apollo prophetis; direct page HOLD
+NANAS_PH271564 = 4C CE prophetis; Poirier full epitaph CLOSED; Tabbernee 1997 pp.420–421 + fig.77 citation route CLOSED; same-object image autopsy HOLD
+APPHE_IK61_CIG3796 = Roman Apollo prophetis; specialist prosopography closes role/funerary/Roman context + IK61=CIG3796 crosswalk; direct CIG/IK page body HOLD
 MILETOS_481 = women among divine-manifestation channels
 ```
 
@@ -276,9 +276,12 @@ DRAKE_2025_CH2_PP70_89_BODY = HOLD
 DESILVA_2025_ROMAN_CORINTH_PP126_156 = HOLD
 DIDYMA_SUPPLEMENT_2023_FULL_BODY = RUNTIME_BINARY_HOLD
 PHILOKRATEIA_DIRECT_CORPUS_OBJECT_ID = ACQUISITION
-POTTA_TAM_V1_535_DIRECT_PHI_BODY = RUNTIME_CACHE_HOLD
-NANAS_TABBERNEE_FIG77 = SAME_OBJECT_IMAGE_HOLD
-APPHE_CIG3796_IK61 = DIRECT_PAGE_BODY_HOLD
+POTTA_TAM_V1_535_SECONDARY_FULL_TRANSCRIPTION_AND_OFFICIAL_VOLUME_ROUTE = CLOSED
+POTTA_TAM_V1_535_DIRECT_TAM_PHI_BODY = RUNTIME_CACHE_HOLD
+NANAS_TABBERNEE_FIG77_CITATION_ROUTE = CLOSED
+NANAS_TABBERNEE_FIG77_SAME_OBJECT_IMAGE_AUTOPSY = HOLD
+APPHE_IK61_CIG3796_PROSOPOGRAPHIC_ROLE_OBJECT_DATE_CROSSWALK = CLOSED_SPECIALIST
+APPHE_CIG3796_IK61_DIRECT_PAGE_BODY = HOLD
 NISYRA_SEG49_1624 = BODY_NOUN_BEARER_HOLD
 TERMESSOS_TAMIII1_870 = BODY_NOUN_BEARER_GENRE_HOLD
 IGVII_3111 = BODY_NOUN_BEARER_HOLD
