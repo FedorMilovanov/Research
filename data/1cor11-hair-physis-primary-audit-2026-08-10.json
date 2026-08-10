@@ -1,0 +1,40 @@
+{
+  "scope": "1 Corinthians 11:13-15 hair/physis primary social-corpus audit",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "grades": {
+    "v14_15_evaluative_sex_code": "A_TEXT",
+    "torah_male_long_hair_religious_exception": "A_PRIMARY",
+    "greco_roman_male_long_hair_contexts_exist": "A_PRIMARY",
+    "male_long_hair_social_meaning_context_dependent": "A_B_HIGH",
+    "ancient_nature_to_sexed_grooming_reasoning": "A_B_HIGH",
+    "physis_biology_only": "REJECTED",
+    "physis_mere_local_custom": "REJECTED",
+    "physis_sexed_naturalized_propriety": "B_HIGH_LEADING",
+    "exact_biology_culture_mix": "B_C",
+    "hair_as_natural_covering_concept": "A_B_HIGH",
+    "hair_as_analogical_natural_covering_argument": "B_HIGH",
+    "hair_only_whole_passage": "C_SERIOUS_ALTERNATIVE",
+    "gender_crossing_grooming_background": "B_HIGH",
+    "exact_homosexual_role_trigger": "D_C_LOW_TO_C",
+    "peribolaion_testicle_theory": "D_C_LOW"
+  },
+  "primary_controls": {
+    "numbers_6_2_5": "male or female Nazirite; no razor; long/grown head hair as consecratory sign",
+    "dio_35": "religious/farming/barbarian/philosophical male long-hair contexts; ordinary grooming differs",
+    "dio_72": "long-haired philosopher as marked public identity",
+    "epictetus_3_1": "nature-based sex-differentiated bodily/grooming propriety",
+    "dio_hair_as_covering": "hair can be conceptually a natural covering distinct from artificial caps"
+  },
+  "method_controls": {
+    "exception_does_not_erase_general_norm": true,
+    "general_norm_does_not_mean_biological_impossibility": true,
+    "hair_as_covering_does_not_prove_hair_only": true,
+    "gender_crossing_grooming_background_does_not_identify_exact_corinthian_sexual_role": true
+  },
+  "core_synthesis_reversed": false,
+  "product_write": false,
+  "ui_implementation": false,
+  "site_publication": false,
+  "publication_hold": true
+}
