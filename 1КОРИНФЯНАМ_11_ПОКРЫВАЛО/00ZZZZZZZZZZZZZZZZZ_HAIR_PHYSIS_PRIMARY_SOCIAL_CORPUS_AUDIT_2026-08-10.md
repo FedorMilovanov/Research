@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:13–15 — hair / `φύσις` / unbound-hair primary social corpus
 
-**Дата:** 2026-08-10  
-**Статус:** `PRIMARY-SOCIAL-CORPUS / PHYSIS-HAIR / UNBOUND-HAIR-POLYSEMY / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Дата:** 2026-08-11  
+**Статус:** `PRIMARY-SOCIAL-CORPUS / PHYSIS-HAIR / MULTILINGUAL-DIRECT-SCHOLARSHIP / UNBOUND-HAIR-POLYSEMY / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Scope and lexical firewall
 
@@ -22,7 +22,7 @@ The lexical minimum remains:
 δόξα = glory
 ```
 
-This canonical corpus now owns **two different hair questions** that must not be collapsed:
+This canonical corpus owns two different hair questions that must not be collapsed:
 
 ```text
 A. LONG_HAIR / KOMAŌ / PHYSIS
@@ -275,6 +275,74 @@ MATERIAL_COVERING = B_HIGH_LEADING // provenance strengthened, grade unchanged
 HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE // remains live
 CORE_GRADE_REVERSALS = 0
 ```
+
+## 10.2 Giancarlo Biguzzi — direct Italian hair-side synthesis + monograph route
+
+The multilingual Italian sweep recovered two distinct evidence objects that must not be collapsed.
+
+### A. 2001 monograph identity / library route
+
+Official EDB publisher and Pontifical Gregorian University catalogue independently verify:
+
+> Giancarlo Biguzzi, *Velo e silenzio. Paolo e la donna in 1Cor 11,2–16 e 14,33b–36* (Supplementi alla Rivista Biblica 37; Bologna: EDB, 2001), 200 pp., ISBN `9788810302255`.
+
+Publisher TOC:
+
+```text
+INTRODUCTION
+I. PAUL_AND_THE_WOMENS_VEIL_1COR11_2_16
+II. PAUL_AND_THE_SILENCE_OF_WOMEN_1COR14_33B_36
+BIBLIOGRAPHY
+```
+
+Gregorian holding:
+
+```text
+PUG_RECORD = 324803BIB
+LOCATION = Mag_10_DV_37
+BIGUZZI_2001_MONOGRAPH_BODY = NOT_DIRECTLY_ACQUIRED
+```
+
+### B. 2009 direct synthesis of Biguzzi’s own position
+
+A directly readable Italian article, introduced by the host as a synthesis by Prof. Giancarlo Biguzzi of themes developed more fully in his 2001 *Velo e silenzio* and 2009 *Paolo e la donna*, gives a compact first-person-style scholarly position map for 1 Cor 11:2–16.
+
+Directly stated in the accessible text:
+
+```text
+MEN_AND_WOMEN_PRAY_PROPHESY_ON_EQUAL_ASSEMBLY_FOOTING = YES
+TRADITIONAL_MALE_CAP_FEMALE_VEIL_READING = QUESTIONED
+GREEK_TEXT_NEVER_USES_WORD_VEIL = AUTHOR_ARGUMENT
+VV14_15_HAIR = CENTRAL_INTERPRETIVE_CONTROL
+PAUL_REQUIRES_SEX_DIFFERENTIATED_HAIRSTYLE = AUTHOR_MODEL
+EQUAL_DIGNITY_MALE_FEMALE = AUTHOR_THEOLOGICAL_CONCLUSION
+CORINTHIAN_WOMEN_MASCULINIZING_HAIRSTYLE = PROBABLE_RECONSTRUCTION
+SUSPICION_OF_HOMOSEXUALITY = PROBABLE_RECONSTRUCTION
+```
+
+Biguzzi’s synthesis says that what “comes down from” the man and what covers the woman in vv14–15 are their hairs, and treats the practical issue as maintaining visible sexual differentiation through hairstyle rather than a required female textile veil.
+
+Evidence ceiling:
+
+```text
+BIGUZZI_2009_DIRECT_SYNTHESIS = CLOSED_DIRECT_WEB_BODY
+BIGUZZI_HAIR_SIDE_POSITION = DIRECTLY_VERIFIED_IN_2009_SYNTHESIS
+BIGUZZI_2001_MONOGRAPH_EXISTENCE = CLOSED_DIRECT_PUBLISHER_LIBRARY
+BIGUZZI_2001_FULL_ARGUMENT = NOT_DIRECTLY_READ
+BIGUZZI_2009_SYNTHESIS != BIGUZZI_2001_PAGE_SPECIFIC_BODY
+```
+
+Project effect:
+
+```text
+HAIR_ONLY_HAS_ADDITIONAL_SPECIALIST_ITALIAN_DIRECT_SUPPORT = YES
+HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE_UNCHANGED
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+BIGUZZI_EXACT_CORINTH_HOMOSEXUALITY_TRIGGER = RECONSTRUCTION_LAYER
+CORE_GRADE_REVERSALS = 0
+```
+
+This is precisely why multilingual discovery matters: it adds a direct specialist hair-side control without artificially converting it into a grade reversal.
 
 ---
 
@@ -545,7 +613,7 @@ EXACT_SEXUAL_ROLE_MODEL = D_C_LOW_TO_C
 HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
 ```
 
-Primary hair social data keep it serious but do not overcome the distinct cover/uncover lexical field by themselves.
+Primary hair social data and Biguzzi’s direct Italian specialist synthesis keep it serious but do not overcome the distinct cover/uncover lexical field by themselves.
 
 ---
 
@@ -606,6 +674,8 @@ EXACT_HOMOSEXUAL_ROLE_TRIGGER = D_C_LOW_TO_C
 
 EDSALL_2013_DIRECT_FULL_BODY = CLOSED
 EDSALL_KATA_KEPHALES_OBJECT_COVERING_CORPUS = DIRECT_B1_STRONG
+BIGUZZI_2009_DIRECT_SYNTHESIS = CLOSED_DIRECT_ITALIAN_HAIR_SIDE_CONTROL
+BIGUZZI_2001_MONOGRAPH = IDENTITY_AND_LIBRARY_ROUTE_CLOSED / BODY_NOT_ACQUIRED
 
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
