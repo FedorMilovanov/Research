@@ -249,6 +249,33 @@ HAIR_AS_NATURAL_COVERING_ANALOGY = B_HIGH
 PERIBOLAION_TESTICLE_THEORY = D_C_LOW
 ```
 
+## 10.1 Edsall 2013 — direct full-text lexical/costume control
+
+Benjamin A. Edsall, “Greco-Roman Costume and Paul’s Fraught Argument in 1 Corinthians 11.2–16,” *Journal of Greco-Roman Christianity and Judaism* 9 (2013): 132–146.
+
+Official JGRChJ full text:
+- https://www.jgrchj.net/volume9/JGRChJ9-5_Edsall.pdf
+
+Direct PDF/body inspection closes a previously missing specialist control. Edsall surveys Greek `κατὰ κεφαλῆς` and gives object/garment examples including Posidonius/[Plutarch], Dionysius of Halicarnassus 3.71.5, 12.16.4, 15.9.7 and Plutarch *Quaest. Rom.* 267C. On printed p.136 he explicitly reports that his survey found no occurrence in which `κατὰ κεφαλῆς` describes hair “coming down from the head”. He also argues that `περιβόλαιον` normally denotes a covering/textile and notes that hair-style advocates had not supplied an example where it denotes a hairstyle.
+
+Calibrated use:
+
+```text
+EDSALL_2013_DIRECT_FULL_BODY = CLOSED
+EDSALL_KATA_KEPHALES_OBJECT_COVERING_CORPUS = DIRECT_B1_STRONG
+EDSALL_NO_HAIR_EXAMPLE_IN_HIS_SURVEY = DIRECT_SOURCE_CLAIM
+EDSALL_PERIBOLAION_TEXTILE_PRESSURE = DIRECT_B1
+EDSALL_SURVEY != LOGICAL_PROOF_NO_HAIR_USAGE_EXISTS_ANYWHERE
+```
+
+This strengthens provenance behind the project’s material-covering lead but does **not** make hair-only disappear as a serious published alternative. Edsall’s own historical reconstruction of the Corinthian trigger remains a reconstruction, not an independently observed event.
+
+```text
+MATERIAL_COVERING = B_HIGH_LEADING // provenance strengthened, grade unchanged
+HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE // remains live
+CORE_GRADE_REVERSALS = 0
+```
+
 ---
 
 # 11. Gender-crossing / sexual-role background
@@ -576,6 +603,9 @@ HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
 EXACT_CORINTH_UNBOUND_HAIR_TRIGGER = RECONSTRUCTION_LAYER
 PERIBOLAION_TESTICLE_THEORY = D_C_LOW
 EXACT_HOMOSEXUAL_ROLE_TRIGGER = D_C_LOW_TO_C
+
+EDSALL_2013_DIRECT_FULL_BODY = CLOSED
+EDSALL_KATA_KEPHALES_OBJECT_COVERING_CORPUS = DIRECT_B1_STRONG
 
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
