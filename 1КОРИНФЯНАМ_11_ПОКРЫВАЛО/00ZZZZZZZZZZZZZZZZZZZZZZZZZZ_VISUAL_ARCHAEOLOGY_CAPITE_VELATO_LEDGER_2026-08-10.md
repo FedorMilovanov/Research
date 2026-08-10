@@ -258,3 +258,123 @@ ROMAN_CAPITE_VELATO_BACKGROUND = A
 V4_EXACT_CAPITE_VELATO = B_C
 PUBLICATION_HOLD = true
 ```
+
+---
+
+# 8. Legacy catalogue mapping — Johnson 1931 -> modern inventory numbers
+
+This section closes a provenance problem that matters for older 1 Cor 11 scholarship and for Janelle Peters' 2013 dissertation.
+
+Older authors often cite Franklin P. Johnson's catalogue numbers without the modern Corinth Museum `S-` inventory numbers. Future agents must not treat those as separate objects.
+
+## 8.1 Johnson no.134 -> Augustus -> S-1116
+
+David W. J. Gill's direct 1990 article, while discussing the Corinthian `capite velato` Augustus, cites:
+
+```text
+F. P. Johnson, Corinth IX.1 (1931), pp.71-72, no.134
+```
+
+Dietrich Boschung's 1993 Augustus catalogue independently cites the same Corinth Augustus as:
+
+```text
+F. P. Johnson, Corinth IX.1, 70ff., Nr.134
+```
+
+and its Corinth Museum index separately identifies the Corinth Augustus object as:
+
+```text
+Inv. S 1116 A-F
+```
+
+Current museum/ASCSA-derived object records identify **S-1116** as the Augustus from the Julian Basilica, shown in priestly/sacrificial `capite velato` form.
+
+The combined catalogue identity is therefore highly secure:
+
+```text
+JOHNSON_1931_NO_134 = AUGUSTUS_CAPITE_VELATO_CORINTH
+MODERN_INVENTORY = S-1116
+LEGACY_TO_MODERN_MAPPING = HIGH_CONFIDENCE
+```
+
+This mapping is a bibliographic/catalogue resolution, not a new exegetical argument.
+
+## 8.2 Johnson no.137 -> veiled Julio-Claudian head -> S-1088
+
+Gill 1990 cites the second covered imperial image as:
+
+```text
+Johnson, Corinth IX.1, pp.76-77, no.137
+```
+
+Later object scholarship is even more explicit for the modern inventory:
+
+- the veiled head is `S-1088`;
+- modern descriptions state that **Johnson published this object as Nero son of Germanicus**;
+- independent object bibliography gives `Johnson 1931, pp.76f., cat. no.137` for S-1088.
+
+Thus:
+
+```text
+JOHNSON_1931_NO_137 = MODERN_S1088
+OBJECT = VEILED_JULIO_CLAUDIAN_MALE_HEAD
+JOHNSON_PERSON_ID = NERO_SON_OF_GERMANICUS
+CURRENT_PERSON_ID = DISPUTED
+```
+
+The object identity is stronger than the historical-person identification.
+
+## 8.3 Peters 2013 p.282 — safe provenance bridge
+
+Later scholarship page-specifically cites **Janelle Peters' 2013 dissertation p.282** in connection with the Roman Corinth veiled imperial statue and then cites Johnson, *Corinth IX.1*, pp.70-72.
+
+The direct Peters p.282 PDF page has **not** yet been acquired in the current runtime.
+
+Therefore the safe bridge is:
+
+```text
+PETERS_2013_P282 -> SECONDARY_PAGE_LOCATOR_TO_JOHNSON_70_72
+JOHNSON_NO_134 -> AUGUSTUS -> MODERN_S1116 = HIGH_CONFIDENCE
+PETERS_P282_DIRECT_AUTOPSY = HOLD
+```
+
+Do **not** write:
+
+```text
+"Peters explicitly calls the object S-1116" = NOT_YET_DIRECTLY_VERIFIED
+```
+
+Do write, if provenance needs explaining:
+
+> Peters' older Johnson-based Corinthian statue discussion belongs to the same legacy archaeological chain now represented by the modern S-1116 Augustus record, but Peters' p.282 itself remains to be directly autopsied.
+
+## 8.4 Why this mapping matters
+
+This prevents duplicate-counting in scholarship reviews:
+
+```text
+JOHNSON_NO134
+GILL_1990_AUGUSTUS
+PETERS_2013_OLD_CATALOGUE_ROUTE
+MODERN_S1116
+```
+
+are not four independent archaeological finds. They are different publication stages around the same anchor object.
+
+Likewise:
+
+```text
+JOHNSON_NO137
+GILL_1990_SECOND_COVERED_IMPERIAL_IMAGE
+MODERN_S1088
+```
+
+are one object tradition with changing personal identification.
+
+New source-hygiene rule:
+
+```text
+LEGACY_CATALOGUE_NUMBER != NEW_OBJECT
+OBJECT_CONTINUITY != PERSON_IDENTIFICATION_CONTINUITY
+MODERN_ASCSA_INVENTORY/ASSEMBLAGE > LEGACY_PERSON_LABEL_FOR_CURRENT_CAPTIONING
+```
