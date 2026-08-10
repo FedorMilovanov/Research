@@ -1,0 +1,40 @@
+{
+  "scope": "1 Corinthians 11:16 convention and translocal-practice audit",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "grades": {
+    "philoneikos_contentious": "A_LEXICAL",
+    "synetheia_custom_practice": "A_LEXICAL",
+    "toiauten_contextual_antecedent_required": "A_DISCOURSE",
+    "v16_translocal_church_practice_appeal": "A_TEXT",
+    "v16_normative_force_in_discourse": "B_HIGH",
+    "v16_no_contrary_alternative_practice": "B_LEADING",
+    "v16_exact_custom_referent": "B_C",
+    "v16_custom_of_contention": "C_VIABLE",
+    "v16_cancels_previous_head_order": "D_C_LOW",
+    "v16_identical_garment_form_everywhere": "C_LOW_UNPROVED",
+    "v16_alone_settles_modern_application": false
+  },
+  "same_letter_translocal_controls": [
+    "1 Corinthians 4:17",
+    "1 Corinthians 7:17",
+    "1 Corinthians 14:33",
+    "1 Corinthians 16:1"
+  ],
+  "translation_controls": {
+    "greek_contains_allen_other": false,
+    "literal_demonstrative": "such practice/custom",
+    "other_practice": "contextual interpretive paraphrase"
+  },
+  "methodological_controls": {
+    "custom_word_does_not_mean_optional": true,
+    "local_trigger_can_coexist_with_translocal_norm": true,
+    "v16_has_low_power_to_decide_material_vs_hair": true,
+    "v2_paradosis_and_v16_synetheia_are_not_lexical_synonyms": true
+  },
+  "core_synthesis_reversed": false,
+  "product_write": false,
+  "ui_implementation": false,
+  "site_publication": false,
+  "publication_hold": true
+}
