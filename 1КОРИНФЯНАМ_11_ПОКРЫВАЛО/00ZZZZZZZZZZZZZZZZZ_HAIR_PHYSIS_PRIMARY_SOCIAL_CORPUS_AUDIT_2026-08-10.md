@@ -1,9 +1,9 @@
-# 1 Коринфянам 11:13–15 — hair / `φύσις` primary social-corpus audit
+# 1 Коринфянам 11:13–15 — hair / `φύσις` / unbound-hair primary social corpus
 
 **Дата:** 2026-08-10  
-**Статус:** `PRIMARY-SOCIAL-CORPUS / PHYSIS-HAIR / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `PRIMARY-SOCIAL-CORPUS / PHYSIS-HAIR / UNBOUND-HAIR-POLYSEMY / RESEARCH-ONLY / PUBLICATION-HOLD`
 
-## 0. Question
+## 0. Scope and lexical firewall
 
 Paul asks:
 
@@ -13,70 +13,63 @@ Paul asks:
 γυνὴ δὲ ἐὰν κομᾷ δόξα αὐτῇ ἐστιν;
 ```
 
-The lexical audit already established:
+The lexical minimum remains:
 
 ```text
-φύσις = semantically broad in Paul
-κομάω = wear/let hair grow long
+κομάω = wear / allow hair to grow long
 κόμη = hair
 ἀτιμία = dishonor
 δόξα = glory
 ```
 
-This layer asks a different question:
-
-> What kind of claim could a first-century hearer plausibly understand when Paul says “nature itself teaches” a sex-differentiated hair honor/shame rule?
-
-We deliberately seek **both confirming evidence and exceptions**.
-
-Anti-overclaim rule:
+This canonical corpus now owns **two different hair questions** that must not be collapsed:
 
 ```text
-A_SOCIAL_NORM_CAN_BE_REAL_WITHOUT_BEING_EXCEPTIONLESS
-AN_EXCEPTION_DOES_NOT_ERASE_A_NORM
-A_NORM_DOES_NOT_BECOME_BIOLOGICAL_IMPOSSIBILITY
+A. LONG_HAIR / KOMAŌ / PHYSIS
+B. UNBOUND_OR_DISHEVELLED_HAIR / SOCIAL_RITUAL_POLYSEMY
+```
+
+Critical firewall:
+
+```text
+LONG_HAIR != UNBOUND_HAIR
+UNBOUND_HAIR != ONE_FIXED_SOCIAL_MESSAGE
+ANAPLEKO != AUTOMATICALLY_UNBIND_HAIR
+HAIR_SIGNALING != EXACT_CORINTH_TRIGGER_IDENTIFIED
 ```
 
 ---
 
-# 1. Paul’s claim is about worn/grown hair, not follicle capacity
+# 1. Paul’s vv14–15 claim is evaluative, not follicular biology
 
-`κομάω` concerns wearing/allowing the hair to grow long.
-
-Paul does **not** say:
+Paul does not claim:
 
 ```text
 male hair biologically cannot grow long
-female hair biologically grows at a categorically different maximum length
+female hair has categorically different growth mechanics
 ```
 
-His predicate is evaluative:
+He evaluates visible sexed presentation:
 
 ```text
-male long-hair state -> ἀτιμία
-female long-hair state -> δόξα
+male_long_hair -> ἀτιμία
+female_long_hair -> δόξα
 ```
-
-Therefore the question is one of **sexed visible propriety/honor**, not a biological statement about growth mechanics.
 
 ```text
 V14_15_EVALUATIVE_SEX_CODE = A_TEXT
-BIOLOGICAL_HAIR_GROWTH_IMPOSSIBILITY_CLAIM = false
+BIOLOGICAL_HAIR_GROWTH_IMPOSSIBILITY = FALSE
 ```
+
+The historical question is therefore visible sexed propriety/honor, not modern hair biology.
 
 ---
 
-# 2. Numbers 6 — decisive Jewish exception to an exceptionless male-short-hair law
+# 2. Numbers 6 — explicit Jewish marked exception
 
-Numbers 6:2 explicitly opens the Nazirite vow to:
+Numbers 6 opens the Nazirite vow to man or woman and requires no razor during consecration.
 
-```text
-man or woman
-```
-
-The vow then requires that no razor pass over the head during the period of consecration.
-
-LXX Numbers 6:5:
+LXX Num 6:5:
 
 ```text
 ξυρὸν οὐκ ἐπελεύσεται ἐπὶ τὴν κεφαλὴν αὐτοῦ ...
@@ -84,337 +77,171 @@ LXX Numbers 6:5:
 τρέφων κόμην τρίχα κεφαλῆς
 ```
 
-The Nazirite is holy and **nourishes/grows the long hair of the head**.
-
-## Evidential result
-
-Jewish Scripture itself knows a religiously authorized condition in which a male may wear uncut/grown hair.
-
 ```text
 TORAH_MALE_LONG_HAIR_RELIGIOUS_EXCEPTION = A_PRIMARY
 ```
 
-This is extremely important for interpreting Paul.
-
-It blocks:
+This blocks:
 
 ```text
-PAUL_MEANS_MALE_LONG_HAIR_IS_INTRINSICALLY_SINFUL_IN_EVERY_POSSIBLE_CONTEXT = false
+PAUL_MEANS_MALE_LONG_HAIR_IS_INTRINSICALLY_SINFUL_IN_EVERY_CONTEXT = FALSE
 ```
 
-because an exception existed in the scriptural tradition Paul knew.
-
-It does **not** prove Paul’s Corinthian men were Nazirites or that the Nazirite vow controls 1 Cor 11.
-
-Rather, it clarifies the logical form of Paul’s `φύσις` claim: a general/propriety norm can coexist with marked religious exceptions.
+A marked religious exception can coexist with an ordinary social propriety norm.
 
 ---
 
-# 3. Dio Chrysostom, Discourse 35 — male long hair is context-sensitive
+# 3. Dio Chrysostom 35 — male long hair is context-sensitive
 
-Dio, near the late first/early second century, discusses his own long hair in a Greco-Roman setting.
+Dio describes several male groups whose long hair can be socially intelligible:
 
-He explicitly notes multiple male groups who can wear long hair without the same social ridicule:
-
-- men because of a deity/religious association;
+- religious/deity-associated men;
 - farmers;
-- many “barbarians”;
+- some “barbarians”;
 - philosophers/philosophical types.
 
-He says that in such cases a man is not necessarily subjected to odium/ridicule.
-
-He also observes that **“we” shear our locks and shave beards**, contrasting ordinary grooming with these other groups.
-
-## Result
+He contrasts them with ordinary grooming in which “we” shear locks and shave beards.
 
 ```text
 GRECO_ROMAN_MALE_LONG_HAIR_EXISTS = A_PRIMARY_TEXT
-MALE_LONG_HAIR_SOCIAL_MEANING_IS_CONTEXT_DEPENDENT = A/B_HIGH_PRIMARY_SOCIAL_EVIDENCE
-ORDINARY_GROOMING_CAN_DIFFER_FROM_RELIGIOUS/ETHNIC/PHILOSOPHICAL_EXCEPTIONS = A/B_HIGH
+MALE_LONG_HAIR_SOCIAL_MEANING_CONTEXT_DEPENDENT = A_B_HIGH
+ORDINARY_GROOMING_CAN_DIFFER_FROM_RELIGIOUS_ETHNIC_PHILOSOPHICAL_EXCEPTIONS = A_B_HIGH
 ```
 
-This is a direct primary counterexample to any universal formula:
+Therefore:
 
 ```text
-ALL_MEN_IN_ANTIQUITY_FOUND_LONG_HAIR_SHAMEFUL = false
+ALL_MEN_IN_ANTIQUITY_FOUND_LONG_HAIR_SHAMEFUL = FALSE
 ```
 
-Yet it also supports the existence of a **default cultural norm** from which marked groups differed.
+Yet the existence of marked exceptions also presupposes an ordinary legible norm.
 
 ---
 
-# 4. Dio Chrysostom, Discourse 72 — long-haired philosopher as marked public appearance
+# 4. Dio Chrysostom 72 — marked philosophical appearance
 
-Dio’s Discourse 72 explains that philosophers with long hair and beard were a recognizable social type and could be mocked/insulted precisely because of their distinctive appearance.
-
-The text also appeals to images of gods, generals and kings as precedents for such appearance.
-
-Thus male long hair can simultaneously be:
+Long-haired/bearded philosophers form a recognizable public type and can be mocked precisely because their presentation is marked.
 
 ```text
-A MARKED DEVIATION FROM ORDINARY URBAN APPEARANCE
-AND
-A LEGIBLE PHILOSOPHICAL/RELIGIOUS/ELITE SYMBOL
+MALE_LONG_HAIR_CAN_BE_MARKED_BUT_SOCIAL_ROLE_LEGIBLE = A_B_HIGH
 ```
 
-The social code is not binary biology.
-
-```text
-MALE_LONG_HAIR_CAN_BE_MARKED_BUT_MEANINGFUL = A/B_HIGH
-```
+The social code is not raw biology.
 
 ---
 
-# 5. Epictetus, Discourses 3.1 — an ancient `nature -> sexed appearance` reasoning pattern
+# 5. Epictetus, Discourses 3.1 — ancient `nature -> sexed visible propriety`
 
-Epictetus is especially valuable not because he discusses scalp-hair length in exactly Paul’s way, but because he gives a near-contemporary philosophical **argument from nature to sex-differentiated bodily presentation**.
+Epictetus gives a near-contemporary philosophical argument from nature/creation to visible sex-differentiated bodily presentation.
 
-He asks whether a person is man or woman, says each should present/adorn themselves accordingly, invokes bodily hair as a natural sex marker, and repeatedly frames proper presentation as conformity to what nature/God has made:
+He urges:
 
 ```text
 allow a man to be a man
 and a woman to be a woman
 ```
 
-He condemns deliberate removal of male body hair as feminizing and speaks of nature’s arrangement as something not to invert.
-
-## What this establishes
+and condemns deliberate feminizing removal of male body hair as contrary to sexed nature/order.
 
 ```text
-ANCIENT_PHYSIS_REASONING_CAN_LINK_CREATED/BODILY_SEX_DIFFERENCE_TO_VISIBLE_GROOMING_PROPRIETY = A/B_HIGH_BACKGROUND
+ANCIENT_PHYSIS_CAN_LINK_EMBODIED_SEX_DIFFERENCE_TO_VISIBLE_GROOMING_PROPRIETY = A_B_HIGH_BACKGROUND
 ```
 
-This is a strong conceptual analogue for the **type** of Paul’s argument.
-
-## What it does not establish
-
-Epictetus’ specific example is chiefly body hair/depilation, not Paul’s scalp-hair length contrast.
-
-Therefore:
+His immediate example is chiefly body hair/depilation, not Paul’s exact scalp-hair rule.
 
 ```text
-EPICTETUS_PROVES_PAULS_EXACT_HAIR_RULE = false
+EPICTETUS_PROVES_PAULS_EXACT_HAIR_LENGTH_RULE = FALSE
 ```
 
-But it undermines the false dichotomy:
-
-```text
-either raw biology OR arbitrary custom
-```
-
-Ancient “nature” discourse can combine embodied sex traits with socially enacted grooming norms.
+But it blocks a false dichotomy between “raw biology” and “arbitrary custom”.
 
 ---
 
-# 6. Dio’s paradox: long hair can itself be a “covering”
+# 6. Hair can itself be conceptualized as covering
 
-Dio 35 even speaks of some peoples wearing long hair as a **covering** and asks rhetorically why humans make artificial head coverings when their own hair can cover/protect.
-
-This is useful for 1 Cor 11:15 because it shows the conceptual metaphor:
+Dio 35 can describe long hair as a natural covering and contrast it with artificial head coverings.
 
 ```text
-HAIR AS NATURAL COVERING
+HAIR_CAN_BE_CONCEPTUALIZED_AS_COVERING = A_B_PRIMARY_BACKGROUND
+HAIR_THEREFORE_IS_THE_ONLY_COVERING_IN_1COR11 = FALSE
 ```
 
-was available in the broader Greco-Roman world.
-
-But this does not prove hair-only exegesis of vv4–7.
-
-Why:
-
-- Dio distinguishes natural hair-covering from artificial caps/garments;
-- Paul also uses distinct lexical fields for cover/uncover and hair;
-- hair as **a** covering can support an analogy between natural and textile coverings just as easily as identity.
-
-Thus:
-
-```text
-HAIR_CAN_BE_CONCEPTUALIZED_AS_COVERING = A/B_PRIMARY_BACKGROUND
-HAIR_THEREFORE_IS_THE_ONLY_COVERING_IN_1COR11 = false
-```
+This supports a natural-covering analogy just as readily as a hair-only identity claim.
 
 ---
 
-# 7. What “nature teaches” cannot mean after the primary corpus
+# 7. Best historical model for `φύσις`
 
-## Not an exceptionless biological law
-
-Numbers 6 and Greco-Roman male long-hair groups block the idea that male long hair is physically or categorically impossible.
-
-## Not mere arbitrary fashion
-
-Epictetus shows ancient thinkers could treat sex-differentiated grooming as an expression of **nature/order** rather than a purely optional trend.
-
-Dio shows ordinary norms, marked exceptions and social meanings can coexist.
-
-Therefore the strongest historical-semantic model is:
+The corpus blocks both reductions:
 
 ```text
-PHYSIS_IN_V14 = SEXED NATURALIZED PROPRIETY
+PHYSIS = MODERN_BIOLOGY_ONLY = REJECTED
+PHYSIS = MERE_LOCAL_CUSTOM = REJECTED
+```
+
+Best current model:
+
+```text
+PHYSIS_IN_V14 = SEXED_NATURALIZED_PROPRIETY
 ```
 
 where:
 
-- embodied sexual difference supplies a perceived natural order;
+- embodied sexual difference supplies perceived natural/created order;
 - culturally legible hair presentation expresses that order;
-- exceptional ritual/ethnic/philosophical statuses can modify the ordinary code without destroying it.
-
-Current grade:
+- honor/shame evaluates the presentation;
+- marked ritual/ethnic/philosophical exceptions can exist without erasing the ordinary norm.
 
 ```text
 PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
+EXACT_BIOLOGY_CULTURE_WEIGHT = B_C
 ```
-
-This is a modest strengthening from the earlier B-leading label because primary social-philosophical analogues now directly demonstrate the argument type.
-
-Exact biology/social-convention weighting remains B/C.
 
 ---
 
-# 8. `ἀτιμία` and `δόξα` confirm a social-evaluative dimension
+# 8. `ἀτιμία` / `δόξα` — social-evaluative output
 
-Paul does not say merely:
-
-```text
-male long hair = unnatural fact
-female long hair = natural fact
-```
-
-He says:
-
-```text
-male long hair = dishonor
-female long hair = glory
-```
-
-Honor/glory are relational/public evaluative categories.
-
-Thus even if `φύσις` includes embodied creation, its teaching reaches the audience through a **recognized honor code**.
+Paul’s predicates are dishonor and glory, relational/public evaluative categories.
 
 ```text
 PHYSIS_ARGUMENT_HAS_SOCIAL_EVALUATIVE_OUTPUT = A_TEXT
 ```
 
-This strongly supports a hybrid nature/propriety model over either modern reduction.
+This supports a hybrid created-order + socially recognized propriety model.
 
 ---
 
-# 9. Does the existence of male long-haired philosophers refute Paul?
+# 9. vv14–15 and the earlier covering language
 
-No.
+Hair is:
 
-The argument would only be refuted if Paul claimed:
-
-```text
-no man anywhere can ever legitimately wear long hair
-```
-
-But his rhetoric can naturally function as a general community propriety judgment.
-
-Dio’s evidence actually helps explain how such a statement works:
-
-- ordinary male grooming exists;
-- marked male long-hair exceptions exist;
-- observers infer role/ethnicity/religion/philosophy from the exception.
-
-In Corinthian Christian worship, Paul can insist on an ordinary sex-coded presentation even while other societies or special vows make different signs legible.
-
-```text
-EXCEPTIONS_DO_NOT_REFUTE_GENERAL_PROPRIETY_ARGUMENT = B_HIGH
-```
-
----
-
-# 10. Does Numbers 6 make Paul contradict Torah?
-
-Not necessarily.
-
-Nazirite long hair is a **marked consecratory exception** defined precisely by an explicit vow and temporary no-razor rule.
-
-A marked exception often presupposes the ordinary state from which it differs.
+- visible and sex-coded;
+- culturally groomed;
+- capable of functioning as natural covering;
+- socially variable;
+- honor/shame legible.
 
 Therefore:
 
 ```text
-NAZIRITE_EXCEPTION != PAUL_CONTRADICTS_TORAH
+HAIR_AS_ANALOGICAL_NATURAL_COVERING_ARGUMENT = B_HIGH
 ```
 
-The primary importance is logical:
-
-Paul’s “nature teaches dishonor” cannot reasonably be turned into an absolute metaphysical prohibition that has no contextual exceptions.
-
----
-
-# 11. Does `φύσις` mean “what everyone in Corinth customarily does”? 
-
-Too weak.
-
-Why:
-
-1. Paul does not use `συνήθεια` here; he uses `φύσις`.
-2. v16 separately contains `συνήθεια` for communal custom/practice.
-3. Epictetus demonstrates an ancient conceptual category in which visible sexed behavior is grounded in “nature.”
-4. Paul asks whether **nature itself teaches**, giving the argument rhetorical objectivity beyond mere Corinthian preference.
-
-Thus:
+But:
 
 ```text
-PHYSIS = MERE_LOCAL_CUSTOM = REJECTED
-```
-
-But because ancient `nature` discourse includes socialized perceptions of proper embodiment:
-
-```text
-PHYSIS = MODERN_BIOLOGY_ONLY = REJECTED
-```
-
----
-
-# 12. Relation between vv14–15 and the external covering
-
-The primary social corpus clarifies what hair can do in the argument.
-
-Hair is:
-
-- a visible sex-coded bodily feature;
-- culturally groomed;
-- capable of functioning as a natural covering;
-- contextually variable;
-- honor/shame legible.
-
-Therefore hair works extremely well as an **analogy/natural counterpart** for a sex-differentiated head-covering rule.
-
-This strengthens:
-
-```text
-HAIR_AS_ANALOGICAL/NATURAL_COVERING_ARGUMENT = B_HIGH
-```
-
-It does not force:
-
-```text
-HAIR = IDENTICAL_REFERENT_OF_ALL_COVERING_LANGUAGE
+HAIR = IDENTICAL_REFERENT_OF_ALL_COVERING_LANGUAGE = NOT_FORCED
 ```
 
 because Paul’s earlier cover/uncover lexical field remains distinct.
 
 ---
 
-# 13. `περιβόλαιον` revisited with social corpus
+# 10. `περιβόλαιον`
 
-The lexical audit established normal wrap/garment semantics.
+Normal wrap/covering semantics remain preferable.
 
-Dio’s natural-hair-as-covering language shows that ancient discourse could compare biological hair and artificial head coverings.
-
-This makes a natural-covering analogy particularly plausible:
-
-```text
-woman’s hair = naturally given covering/corresponding sign
-```
-
-without needing the noun `περιβόλαιον` to denote testicles or a hidden physiological organ.
-
-Thus:
+Dio’s hair-as-natural-covering language shows the conceptual comparison was available without requiring a hidden physiological referent.
 
 ```text
 PERIBOLAION_NORMAL_COVERING = A
@@ -424,99 +251,286 @@ PERIBOLAION_TESTICLE_THEORY = D_C_LOW
 
 ---
 
-# 14. Gender-crossing / sexual-role theories
+# 11. Gender-crossing / sexual-role background
 
-Epictetus does explicitly associate deliberate male feminizing grooming with sexual/gender boundary violation and invokes catamite imagery in his polemic.
-
-This confirms an important historical minimum:
+Epictetus confirms that grooming can participate in gender/sexual-role signaling.
 
 ```text
-GROOMING_COULD_CARRY_GENDER/SEXUAL_ROLE_SIGNALING = A/B_HIGH_BACKGROUND
+GROOMING_COULD_CARRY_GENDER_SEXUAL_ROLE_SIGNALING = A_B_HIGH_BACKGROUND
 ```
 
-But that does **not** establish that Paul’s male long hair in 1 Cor 11 specifically identifies:
-
-- active male homosexual role;
-- passive male homosexual role;
-- cult prostitution;
-- lesbian presentation.
-
-Those specialized Murphy-O’Connor/MacGregor reconstructions still require evidence tying **Corinthian Christian coiffure** to a precise sexual-role code.
-
-Thus:
+But this does not establish that 1 Cor 11 specifically encodes one homosexual role, cult prostitution or lesbian presentation.
 
 ```text
-GENDER_CROSSING_GROOMING_BACKGROUND = B_HIGH
 EXACT_HOMOSEXUAL_ROLE_TRIGGER_IN_1COR11 = D_C_LOW_TO_C
 ```
 
-The background is real; the exact trigger remains weak.
+---
+
+# 12. A separate question: genuinely unbound/dishevelled female hair
+
+Modern hair models often assume:
+
+```text
+UNBOUND_HAIR = SEXUAL_IMMODESTY_OR_AVAILABILITY
+```
+
+The primary corpus shows that erotic usage is real **but not universal**.
+
+```text
+ONE_CONTEXTUAL_MEANING != UNIVERSAL_SEMANTIC_CODE
+DISHEVELLED_HAIR != ONE_FIXED_SOCIAL_MESSAGE
+```
 
 ---
 
-# 15. Model stress test
+# 13. Erotic context — Apuleius, Metamorphoses 2.16–17
 
-## Model A — pure biology
+Direct Latin:
+- https://la.wikisource.org/wiki/Metamorphoses_(Apuleius)/Liber_II
 
-```text
-male follicles -> short hair by nature
-female follicles -> long hair by nature
-```
-
-Fails because both sexes can grow hair and ancient male long-hair exceptions are explicit.
+Lucius asks Photis to let her hair loose/flowing; the immediately following scene has clothing removed and `crinibusque dissolutis` in an explicit sexual encounter.
 
 ```text
-PURE_BIOLOGY_MODEL = D/REJECTED
+UNBOUND_HAIR_CAN_HAVE_EXPLICIT_EROTIC_SEXUAL_FUNCTION = A_PRIMARY
 ```
 
-## Model B — arbitrary local fashion
+But:
 
 ```text
-Paul merely repeats Corinthian haircut fashion with no created/sexed grounding
+PRIVATE_EROTIC_BEDROOM_SCENE != ALL_PUBLIC_UNBOUND_HAIR_IS_SEXUAL
 ```
 
-Fails to account for `φύσις`, Epictetan-style natural-order reasoning, and the integration with vv7–12 creation differentiation.
+---
+
+# 14. Mourning / public crisis / supplication
+
+## Livy 26.9
+
+Perseus:
+- https://www.perseus.tufts.edu/hopper/text?doc=26&fromdoc=Perseus%3Atext%3A1999.02.0158
+
+As Hannibal threatens Rome, matrons flood streets/shrines with dishevelled hair, kneeling/praying at altars.
+
+```text
+DISHEVELLED_HAIR_CAN_MARK_PUBLIC_SUPPLICATION_CRISIS = A_PRIMARY
+```
+
+## Livy 1.13 — Sabine women
+
+- https://www.perseus.tufts.edu/hopper/text?doc=Liv.+1.13&lang=original
+
+The women enter between armies with loosened hair and torn garments, pleading for the violence to stop.
+
+```text
+LOOSENED_HAIR_CAN_MARK_CRISIS_SUPPLICATION_GRIEF = A_PRIMARY
+```
+
+## Plutarch, Roman Questions 14
+
+Funeral inversion includes daughters going uncovered with hair loosened.
+
+```text
+PLUTARCH_Q14_MOURNING_INVERSION = A_PRIMARY
+```
+
+## Ovid, Metamorphoses 13
+
+- https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D13
+
+Funeral imagery includes matrons with dishevelled hair as grief expression.
+
+```text
+DISHEVELLED_HAIR_CAN_MARK_FUNERAL_MOURNING = A_PRIMARY
+```
+
+These cases are incompatible with a universal erotic code.
+
+---
+
+# 15. Cultic / ritual contexts
+
+## Ovid, Metamorphoses 4
+
+- https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D4%3Acard%3D1
+
+At a Bacchic festival, matrons/maids loosen long hair and take the thyrsus under priestly instruction.
+
+```text
+LOOSED_LONG_HAIR_CAN_BE_RITUAL_CULTIC_PRESENTATION = A_PRIMARY
+```
+
+## Tacitus, Annals 14.30
+
+- https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0078%3Abook%3D14%3Achapter%3D30
+
+Women in black with dishevelled hair and torches appear among Druids confronting Roman forces.
+
+```text
+TACITUS_DRUIDIC_DISHEVELLED_HAIR = A_PRIMARY_LOW_LOCALITY_RELEVANCE
+```
+
+This confirms ritual/frenzy imagery, not a Corinthian causal trigger.
+
+---
+
+# 16. Cosgrove 2005 — bibliographic owner / direct body HOLD
+
+Charles H. Cosgrove, “A Woman’s Unbound Hair in the Greco-Roman World, with Special Reference to the Story of the ‘Sinful Woman’ in Luke 7:36–50,” *JBL* 124.4 (2005): 675–692. DOI `10.2307/30041064`.
+
+Routes:
+- https://www.jstor.org/stable/30041064
+- https://www.jstor.org/stable/i30041057
+
+```text
+COSGROVE_2005 = VERIFIED_JBL_B1
+COSGROVE_DIRECT_FULLTEXT = CONTENT_HOLD_RUNTIME
+```
+
+Later page-specific citations are discovery controls, not substitutes for direct JBL body.
+
+---
+
+# 17. Unbound-hair polysemy established
+
+Primary corpus minimum:
+
+```text
+UNBOUND_DISHEVELLED_HAIR -> CAN_BE_EROTIC
+UNBOUND_DISHEVELLED_HAIR -> CAN_BE_MOURNING
+UNBOUND_DISHEVELLED_HAIR -> CAN_BE_PUBLIC_SUPPLICATION
+UNBOUND_DISHEVELLED_HAIR -> CAN_BE_CULTIC_RITUAL
+UNBOUND_DISHEVELLED_HAIR -> CAN_BE_CRISIS_FRENZY_IMAGERY
+```
+
+Therefore reject:
+
+```text
+UNBOUND_HAIR = PROSTITUTE = UNIVERSAL
+UNBOUND_HAIR = SEXUAL_AVAILABILITY = UNIVERSAL
+UNBOUND_HAIR = ONE_FIXED_SOCIAL_MESSAGE
+```
+
+Context must establish which meaning is active.
+
+---
+
+# 18. Implication for hair-only / unbound-hair models of 1 Cor 11
+
+## General plausibility strengthened
+
+```text
+HAIR_STATE_SOCIAL_SIGNALING = B_HIGH_BACKGROUND
+```
+
+Hair state could be socially/ritually meaningful.
+
+## Exact trigger remains underdetermined
+
+A model identifying Corinthian hair state specifically as:
+
+- sexual availability;
+- prostitution;
+- mourning;
+- Dionysiac ecstasy;
+- Isiac ritual;
+- another marked role
+
+must establish the local context independently.
+
+```text
+EXACT_CORINTH_UNBOUND_HAIR_TRIGGER = RECONSTRUCTION_LAYER
+```
+
+## Textile vs hair remains unsolved by this corpus
+
+Social meanings of genuinely unbound hair do not establish that Paul’s `ἀκατακαλύπτῳ` / `κατακαλύπτεται` means unbound hair.
+
+```text
+SOCIAL_UNBOUND_HAIR_CORPUS != LEXICAL_IDENTIFICATION_OF_KATAKALYPTO
+```
+
+---
+
+# 19. Andania `ἀναπλέκω` firewall
+
+Current direct Andania/Lycosura owner:
+
+`00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MASSEY_2015_ANDANIA_LYCOSURA_EPIGRAPHY_FULLTEXT_AUDIT_2026-08-10.md`
+
+Do not confuse:
+
+```text
+A. REAL_UNBOUND_HAIR has multiple social meanings
+B. ANDANIA ἀναπλέκω means unbind hair
+```
+
+A is established generally. B is strongly challenged lexically/epigraphically.
+
+```text
+UNBOUND_HAIR_CORPUS != PROOF_ANAPLEKO_MEANS_UNBOUND
+```
+
+---
+
+# 20. Model stress test
+
+## Pure biology
+
+```text
+PURE_BIOLOGY_MODEL = D_REJECTED
+```
+
+Both sexes can grow hair; marked male exceptions exist.
+
+## Arbitrary local fashion only
 
 ```text
 MERE_ARBITRARY_CUSTOM_MODEL = C_LOW
 ```
 
-## Model C — sexed naturalized propriety
+Fails to account for `φύσις`, created-order reasoning and ancient nature/propriety analogues.
+
+## Sexed naturalized propriety
 
 ```text
 embodied sex difference
-+ socially legible grooming conventions
++ socially legible grooming
 + honor/shame evaluation
-+ ordinary norm with possible marked exceptions
++ marked exceptions
 ```
-
-Fits Paul, Epictetus, Dio and the existence of Jewish special exceptions.
 
 ```text
 SEXED_NATURALIZED_PROPRIETY_MODEL = B_HIGH_LEADING
 ```
 
-## Model D — exact sexual-role code
+## Exact sexual-role code
 
-Ancient gender-crossing grooming can be sexually charged, but precise Corinthian homosexual-role identification remains under-evidenced.
+Real gender-crossing grooming background exists, but exact Corinthian sexual-role identification remains weak.
 
 ```text
 EXACT_SEXUAL_ROLE_MODEL = D_C_LOW_TO_C
 ```
 
+## Hair-only whole passage
+
+```text
+HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
+```
+
+Primary hair social data keep it serious but do not overcome the distinct cover/uncover lexical field by themselves.
+
 ---
 
-# 16. Translation/research implications
+# 21. Research / translation implications
 
-For the future Russian analytical layer:
-
-Do not gloss `φύσις` as either:
+Do not gloss `φύσις` simply as:
 
 ```text
 «биология»
 ```
 
-or
+or:
 
 ```text
 «обычай»
@@ -524,30 +538,22 @@ or
 
 without annotation.
 
-Main research translation should retain:
+Preferred analytical note:
 
-> «Не сама ли природа учит вас...»
+> `φύσις` = perceived natural/created order expressed through sexed embodied and socially recognized propriety; exact biology/culture ratio disputed.
 
-with an expandable node:
-
-```text
-φύσις = perceived natural/created order expressed through sexed embodied and socially recognized propriety;
-exact biology/culture ratio disputed.
-```
-
-v14–15 should visually preserve:
+Also keep distinct in UI/research notes:
 
 ```text
-man + long hair -> dishonor
-woman + long hair -> glory
-hair -> given as covering
+LONG_HAIR
+UNBOUND_HAIR
+BRAIDED_OR_ARRANGED_HAIR
+TEXTILE_HEAD_COVERING
 ```
-
-while allowing a note that marked male long-hair exceptions existed in Jewish and Greco-Roman contexts.
 
 ---
 
-# 17. Grade delta
+# 22. Current grades
 
 ```text
 V14_15_EVALUATIVE_SEX_CODE = A
@@ -560,14 +566,18 @@ GENDER_CROSSING_GROOMING_BACKGROUND = B_HIGH
 PHYSIS_BIOLOGY_ONLY = REJECTED
 PHYSIS_MERE_LOCAL_CUSTOM = REJECTED
 PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
-EXACT_BIOLOGY/CULTURE_MIX = B_C
+EXACT_BIOLOGY_CULTURE_MIX = B_C
 
 HAIR_AS_NATURAL_COVERING_CONCEPT = A_B_HIGH
-HAIR_AS_ANALOGICAL/NATURAL_COVERING_ARGUMENT = B_HIGH
+HAIR_AS_ANALOGICAL_NATURAL_COVERING_ARGUMENT = B_HIGH
+UNBOUND_HAIR_POLYSEMY = A_B_HIGH_PRIMARY_SOCIAL_CONTROL
+HAIR_STATE_SOCIAL_SIGNALING = B_HIGH_BACKGROUND
 HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
+EXACT_CORINTH_UNBOUND_HAIR_TRIGGER = RECONSTRUCTION_LAYER
 PERIBOLAION_TESTICLE_THEORY = D_C_LOW
-
 EXACT_HOMOSEXUAL_ROLE_TRIGGER = D_C_LOW_TO_C
-```
 
-No change to `PUBLICATION_HOLD`.
+CORE_GRADE_REVERSALS = 0
+PUBLICATION_HOLD = true
+PRODUCT_WRITE = false
+```
