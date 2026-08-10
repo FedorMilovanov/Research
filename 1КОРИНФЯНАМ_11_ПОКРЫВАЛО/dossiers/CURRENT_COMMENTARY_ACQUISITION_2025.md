@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:2–16 — current commentary acquisition 2025
 
-**Статус:** `EVERGREEN-DOSSIER / CURRENT-COMMENTARIES / PAGINATION-CONTROL / DIRECT-BODY-HOLDS / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Статус:** `EVERGREEN-DOSSIER / CURRENT-COMMENTARIES / PAGINATION-CONTROL / DIRECT-BODY-HOLDS / TRANSPORT-LEDGER / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последнее обновление:** 2026-08-10
 
 ## 0. Authority rule
@@ -11,15 +11,19 @@ This dossier owns the current 2025 commentary acquisition queue for:
 - Michael J. Gorman, *1 Corinthians* (Eerdmans, 2025);
 - David I. Starling, *1 Corinthians* (Lexham Academic / EBTC, 2025).
 
+It also records **transport attempts** for other high-value commentary targets when that prevents future agents from repeating the same preview route.
+
 ```text
 CURRENT_BOOK_EXISTS != 1COR11_POSITION_VERIFIED
 PUBLISHER_TOC != CHAPTER_BODY
 SEARCH_SNIPPET != QUOTE_SAFE_TEXT
 PAGINATION_PLAUSIBLE != QUOTE_AUTHENTICATED
+PREVIEW_EXISTS != TARGET_SECTION_EXPOSED
+PREVIEW_NO_MATCH != BOOK_HAS_NO_SUCH_DISCUSSION
 RECENCY != AUTHORITY
 ```
 
-Garland 2025, Fee Revised 2014, Thiselton 2000 and Ciampa/Rosner 2010 remain high-value acquisition targets but are not duplicated here if they have their own current source cards/audits.
+Garland 2025, Fee Revised 2014, Thiselton 2000 and Ciampa/Rosner 2010 keep their own substantive owners/source cards where present. This dossier stores only cross-target acquisition state, not duplicate exegesis.
 
 ---
 
@@ -38,10 +42,8 @@ PRINT_ISBN = 9789004737037
 LENGTH = 732_pages
 ```
 
-Brill chapter route:
+Brill / Google routes:
 - https://brill.com/display/book/9789004737044/BP000007.xml
-
-Google Books:
 - https://books.google.com/books/about/1_Corinthians.html?id=IEiGEQAAQBAJ
 
 ## 1.1 Corrected section pagination
@@ -81,9 +83,25 @@ P444_AS_11_8 = PAGINATION_PLAUSIBLE / WORDING_UNVERIFIED
 P343_AS_11_3 = PAGINATION_IMPOSSIBLE_IN_2025_EDITION
 ```
 
-Do not authenticate wording merely because the page falls inside the correct section.
+The presence of one impossible citation on the same page means the circulating quote bundle cannot be promoted wholesale. Each wording claim must be independently authenticated.
 
-## 1.3 Position remains body-HOLD
+## 1.3 Direct-body transport status
+
+The official Brill TOC identifies the dedicated chapter:
+
+```text
+Commentary 7 = Hair and Head Coverings in the Assembly (11:2–16)
+```
+
+Sequential Brill chapter-slot inference was tested as discovery only; the presumed next `BP...` route did not yield a readable target body in the current runtime.
+
+```text
+BRILL_CHAPTER_ID_SEQUENCE_INFERENCE != DIRECT_CHAPTER_BODY
+REASONER_OFFICIAL_CHAPTER_IDENTITY = CLOSED
+REASONER_DIRECT_11_2_16_BODY = HOLD
+```
+
+Position remains open:
 
 ```text
 REASONER_VEIL_HAIR_POSITION = HOLD
@@ -122,6 +140,17 @@ GORMAN_2025 = CURRENT_THEOLOGICAL_PASTORAL_MISSIONAL_COMMENTARY
 GORMAN_2025 != PRIMARY_TECHNICAL_TEXT_CRITICAL_OWNER
 ```
 
+Lawful routes tested in the current acquisition sequence:
+
+```text
+EERDMANS_PUBLISHER_OBJECT = VERIFIED
+GOOGLE_BOOKS_LIMITED_PREVIEW_OBJECT = VERIFIED
+OVERDRIVE_LIBBY_SAMPLE_ROUTE = VERIFIED_AS_LICENSED_ROUTE
+TARGET_11_2_16_BODY_EXPOSED = NO_IN_CURRENT_RUNTIME
+```
+
+A dynamic sample route that does not expose the target section cannot be converted into a quotation by inference.
+
 Current direct-section status:
 
 ```text
@@ -142,14 +171,10 @@ P1 GORMAN_2025_EXACT_11_2_16_SECTION = ACQUIRE
 
 # 3. David I. Starling — EBTC 2025
 
-Direct embedded-preview metadata identifies:
-
-> David I. Starling, *1 Corinthians*, Evangelical Biblical Theology Commentary, 2025.
-
-Verified route:
+Official embedded preview:
 - https://biblia.com/api/plugins/embeddedpreview?historybuttons=false&layout=minimal&navigationbox=false&resourceName=LLS%3AEBTC67CO1&sharebutton=false
 
-Current metadata control:
+It identifies:
 
 ```text
 AUTHOR = David_I_Starling
@@ -159,15 +184,12 @@ PUBLISHER = Lexham_Academic_Lexham_Press
 GENERAL_EDITORS = Alexander_Schreiner_Kostenberger
 ```
 
-Current runtime has not extracted a quote-safe 1 Cor 11:2–16 section or exact pages/positions on:
+The preview was searched directly for target-section markers (`11:2–16`, covering vocabulary and related terms). The accessible preview surface exposes front matter / contents, not the required exposition.
 
 ```text
-KEPHALE
-MATERIAL_COVERING_VS_HAIR
-EXOUSIA
-ANGELS
-PHYSIS
-V16
+STARLING_OFFICIAL_BIBLIA_PREVIEW = VERIFIED
+STARLING_PREVIEW_TARGET_SECTION = NOT_EXPOSED
+PREVIEW_FRONT_MATTER != COMMENTARY_POSITION
 ```
 
 Therefore:
@@ -183,7 +205,94 @@ Do not infer Starling’s position from series editors, confessional context or 
 
 ---
 
-# 4. Current commentary queue
+# 4. Cross-target lawful-preview transport ledger
+
+This section does **not** own the exegesis of Fee/Garland/Thiselton/Ciampa-Rosner. It records routes already exhausted in the current runtime so later passes do not re-run the same metadata-only search and mistake lack of preview for substantive evidence.
+
+## 4.1 Fee Revised 2014
+
+Substantive owner:
+- `00ZZZZZZZZZ_SOURCE_CARD_FEE_REVISED_2014_1COR11.md`
+
+Routes checked:
+
+```text
+BIBLIA_NICNT67CO1_2ED = OFFICIAL_EMBEDDED_PREVIEW / FRONT_MATTER_ONLY
+GOOGLE_PLAY_REVISED_EDITION = VERIFIED_BOOK_SAMPLE_OBJECT
+SEARCH_11_2 = NO_MATCH_IN_ACCESSIBLE_PREVIEW_INDEX
+SEARCH_HEAD_COVERING = NO_MATCH_IN_ACCESSIBLE_PREVIEW_INDEX
+SEARCH_P563 = NO_MATCH_IN_ACCESSIBLE_BIBLIA_SURFACE
+```
+
+Therefore:
+
+```text
+FEE_2014_PP542_586_DIRECT_BODY = HOLD
+THIRD_PARTY_FEE_P563_WORDING != DIRECT_FEE_2014
+```
+
+The source card’s narrower p.576–578 / n.123 acquisition target remains more efficient than repeating broad preview searches.
+
+## 4.2 Ciampa / Rosner 2010
+
+Official Eerdmans object is verified:
+
+```text
+TITLE = The First Letter to the Corinthians
+AUTHORS = Roy_E_Ciampa + Brian_S_Rosner
+SERIES = PNTC
+YEAR = 2010
+PAGES = 990
+```
+
+Google Books limited-preview objects were searched for `11:2`, `head covering`, `covering` and `authority on her head`; the accessible index did not expose the target body.
+
+```text
+CIAMPA_ROSNER_OFFICIAL_BOOK_OBJECT = CLOSED
+CIAMPA_ROSNER_GOOGLE_BOOKS_TARGET_BODY = NOT_EXPOSED
+CIAMPA_ROSNER_2010_PP503_540 = DETAIL_HOLD
+```
+
+No negative inference about their actual interpretation follows from preview non-exposure.
+
+## 4.3 Garland 2025 second edition
+
+Google Books and Baker controls verify a genuine second edition:
+
+```text
+AUTHOR = David_E_Garland
+TITLE = 1_Corinthians
+SERIES = BECNT
+EDITION = 2
+YEAR = 2025
+PAGES = 872
+```
+
+The Google Books object was searched directly for `11:2` and `head covering`; neither was exposed in the accessible index.
+
+```text
+GARLAND_2025_2E_BOOK_OBJECT = VERIFIED
+GARLAND_2025_2E_TARGET_SECTION_PREVIEW = NOT_EXPOSED
+GARLAND_2025_2E_PP468_493 = P0_DIRECT_TEXT_HOLD
+```
+
+Do not reconstruct the 2025 revision by copying Garland’s older edition wording unless the edition continuity is directly checked.
+
+## 4.4 Thiselton 2000
+
+Google Books exposes multiple records for the NIGTC commentary; the correct work identity is secure. Targeted searches for `11:2`, `head covering`, `veil` and p.800 did not expose the target body on the accessible preview surfaces.
+
+```text
+THISELTON_2000_WORK = VERIFIED
+THISELTON_GOOGLE_BOOKS_TARGET_SECTION = NOT_EXPOSED
+THISELTON_2000_PP800_847 = HOLD
+```
+
+A 2011 shorter commentary is a different evidence object and must not silently replace the 2000 NIGTC body.
+
+---
+
+# 5. Current commentary queue
 
 ```text
 GARLAND_2025_2E_PP468_493 = P0_DIRECT_TEXT_HOLD
@@ -195,11 +304,14 @@ FEE_REVISED_2014_APPROX_PP542_586 = HOLD
 CIAMPA_ROSNER_2010_PP503_540 = DETAIL_HOLD
 ```
 
-Current edition status alone never upgrades a claim grade.
+```text
+PREVIEW_ROUTE_EXHAUSTED_FOR_CURRENT_RUNTIME != SOURCE_UNAVAILABLE_GLOBALLY
+CURRENT_EDITION_STATUS_ALONE != CLAIM_GRADE
+```
 
 ---
 
-# 5. Acquisition method
+# 6. Acquisition method
 
 ```text
 1. publisher chapter / ebook preview
@@ -207,13 +319,14 @@ Current edition status alone never upgrades a claim grade.
 3. Google Books contents/snippet only for navigation
 4. quote only after direct section body
 5. reconcile any page claim against publisher TOC before using it as falsifier
+6. record exhausted preview routes so the next pass changes transport instead of repeating queries
 ```
 
 Do not ask the user for a copy before exhausting lawful routes available to the runtime.
 
 ---
 
-# 6. Audit lessons
+# 7. Audit lessons
 
 ```text
 SEARCH_INDEX_STRIPPED_VERSE_LABEL != SAFE_MANUAL_MAPPING
@@ -221,19 +334,24 @@ CHAPTER_SEQUENCE_MUST_BE_RECONCILED_WITH_PUBLISHER_TOC
 DERIVED_FIREWALL_MUST_BE_REAUDITED_IF_ITS_PAGINATION_PREMISE_FAILS
 SELF_CORRECTION > PRESERVING_A_CONVENIENT_REJECTION
 CURRENT_EDITION != POSITION_VERIFIED
+PREVIEW_NO_MATCH != ABSENCE_FROM_BOOK
+LICENSED_SAMPLE_ROUTE != TARGET_SECTION_READ
 ```
 
 ---
 
-# 7. Result
+# 8. Result
 
 ```text
 REASONER_2025 = VERIFIED_CURRENT_TECHNICAL_COMMENTARY
 REASONER_11_2_16 = APPROX_PP432_451 / DIRECT_BODY_HOLD
 GORMAN_2025 = VERIFIED_CURRENT_THEOLOGICAL_COMMENTARY / SECTION_HOLD
 STARLING_2025 = VERIFIED_CURRENT_COMMENTARY / 1COR11_CONTENT_HOLD
+
+FEE_CIAMPA_GARLAND_THISELTON_LAWFUL_PREVIEW_ROUTES = TESTED_NO_TARGET_BODY_EXPOSED
+NEXT_PASS_FOR_THESE_TARGETS = CHANGE_TRANSPORT_NOT_REPEAT_METADATA_SEARCH
+
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 SITE_PUBLICATION = false
-```
