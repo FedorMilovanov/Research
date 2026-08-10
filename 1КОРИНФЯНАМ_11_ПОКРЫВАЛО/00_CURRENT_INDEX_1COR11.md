@@ -18,10 +18,10 @@ Do not infer authority from filename recency or the number of `Z` characters.
 
 # 1. Claim / Greek-text authority
 
-- `00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md` — **current grades**.
+- `00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md` — current grades.
 - `00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md` — Greek text / textual-risk contract.
 - `00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md` — provenance/publication baseline.
-- `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` — **deprecated shim only** for old backlinks.
+- `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` — deprecated shim only.
 
 ---
 
@@ -39,8 +39,6 @@ Do not infer authority from filename recency or the number of `Z` characters.
 # 3. `ἐξουσία`
 
 - `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`
-
-Owns v10 `ἐξουσίαν/κάλυμμα`, formal `ἐξουσία + ἐπί`, Fendel 2023, female documentary right-bearers and bounded exact-head search.
 
 ```text
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
@@ -60,7 +58,6 @@ Owns both long-hair/`κομάω`/`φύσις` and unbound/dishevelled-hair polys
 ```text
 LONG_HAIR != UNBOUND_HAIR
 UNBOUND_HAIR != ONE_FIXED_SOCIAL_MESSAGE
-UNBOUND_HAIR_CORPUS != PROOF_ANAPLEKO_MEANS_UNBOUND
 PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
 HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
 ```
@@ -84,7 +81,7 @@ GLOBAL_NONEXISTENCE = NOT_CLAIMED
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MASSEY_2015_ANDANIA_LYCOSURA_EPIGRAPHY_FULLTEXT_AUDIT_2026-08-10.md`
 
-Owns Massey, direct PHI/CGRN Andania, date dispute, white `pilos`, separate hair/adornment rules, direct Lycosura, Voutiras, Karataş and the Dittenberger supplement firewall.
+Owns Massey, direct PHI/CGRN Andania, white `pilos`, separate hair/adornment rules, date dispute, direct Lycosura, Voutiras, Karataş and the Dittenberger supplement firewall.
 
 ---
 
@@ -92,24 +89,11 @@ Owns Massey, direct PHI/CGRN Andania, date dispute, white `pilos`, separate hair
 
 - `dossiers/QUOTATION_REFUTATION_SPEAKER_BOUNDARY.md`
 
-Single owner for:
-
-```text
-SHOEMAKER_COSTA_SALES_PUBLISHED_FAMILY
-MARSHALL_NEWBERRY_CONTINUOUS_CONTROLS
-1COR_SAME_LETTER_QUOTATION_SLOGAN_CORPUS
-OMANSON_WATSON_CULY_HOLLOWAY_METHOD
-DIA_TOUTO_PLEN_BOUNDARY_STRESS
-TERTULLIAN_CHRYSOSTOM_AMBROSIASTER_EARLY_RECEPTION
-PG118_TRANSMISSION_FIREWALL
-```
-
-Current:
+Owns modern quotation models, same-letter primary quotation/slogan corpus and early speaker-boundary reception.
 
 ```text
 LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
 LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
-CLOSE_LONG_UNMARKED_ANALOGUE = NOT_FOUND_IN_INSPECTED_1COR
 EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 ```
 
@@ -121,29 +105,33 @@ EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 
 - `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
 
-Owns Virgil, Livy, Lucretius, Plutarch RQ 10–14, Valerius Maximus 6.3.10, Gallus source contradiction, funeral inversion and `infula/vitta` separation.
-
 ```text
 ROMAN_CAPITE_VELATO_BACKGROUND = A
 V4_EXACT_CAPITE_VELATO = B_C
 SULPICIUS_GALLUS_HEAD_STATE = CONTRADICTORY_SOURCE_TRADITION
 ```
 
-### Local Corinth visual custody
+### Local Corinth visual / archaeology / image-custody owner
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`
 
-Owns S-1116, S-1088, ASCSA provenance, Commons originals/rights/SHA1 and Johnson legacy mappings.
+Owns:
+
+```text
+S1116 / S1088
+ASCSA_CORINTH_XXII_2022
+THOMPSON_1988
+GILL_1990
+DESILVA_2025_ROMAN_CORINTH_ACQUISITION
+COMMONS_RIGHTS_ORIGINALS_SHA1
+JOHNSON_LEGACY_MAPPING
+```
 
 ### Female Roman / late-antique visual method
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_ROMAN_FEMALE_VEILING_STATUS_VISUAL_DELTA_2026-08-10.md`
 
 Owns Fantham, Olson, Hughes, Stafford and Galter.
-
-### Current-edition / archaeology acquisition
-
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CURRENT_EDITION_ARCHAEOLOGY_ACQUISITION_DELTA_2026-08-10.md`
 
 ---
 
@@ -172,14 +160,22 @@ OCR != SOURCE_IMAGE_AUTHORITY
 
 ---
 
-# 9. Recent / multilingual scholarship
+# 9. Recent / current scholarship
 
-### Current radar / acquisition
+### Canonical current radar
 
-- `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md` — canonical multilingual 2024–2026 ranking; includes Hamplová, Francis, Lumesberger-Loisl and false-freshness controls.
-- `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
-- `00ZZZZZZZZZ_SOURCE_CARD_REASONER_GORMAN_2025_COMMENTARIES.md`
+- `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
+
+### Direct-source acquisition
+
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
+- `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
+
+### Current 2025 commentary acquisition
+
+- `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md`
+
+Owns Reasoner 2025, Gorman 2025 and Starling 2025, including corrected Reasoner pagination and direct-body HOLDs.
 
 ### Gundry-Volf / Gielen / Hao Li / Standhartinger
 
@@ -215,13 +211,14 @@ FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
 
 ```text
 GARLAND_2025_2E = DIRECT_TEXT_HOLD
-REASONER_2025_BRILL_COMMENTARY_7 = DIRECT_CHAPTER_HOLD
-STARLING_2025_EBTC = SECTION_HOLD
-GORMAN_2025_EERDMANS = THEOLOGICAL_SECTION_HOLD
+REASONER_2025_PP432_451 = DIRECT_CHAPTER_HOLD
+STARLING_2025_1COR11 = SECTION_HOLD
+GORMAN_2025_1COR11 = SECTION_HOLD
 THISELTON_2000_FULL_SECTION = HOLD
 FEE_REVISED_2014_FULL_SECTION = HOLD
 CIAMPA_ROSNER_2010_DETAIL = HOLD
 DRAKE_2025_CH2_PP70_89_BODY = HOLD
+DESILVA_2025_ROMAN_CORINTH_PP126_156 = HOLD
 DIDYMA_SUPPLEMENT_FULL_BODY = OPEN
 POTTA_TAM_V1_535_DIRECT_PHI_BODY = RUNTIME_CACHE_HOLD
 CORRINGTON_1991_DIRECT_FULLTEXT = HOLD
@@ -240,7 +237,7 @@ DO_NOT_CREATE_PASS_N_REPORT_IF_DOSSIER_EXISTS = true
 UPDATE_EVERGREEN_DOSSIER = preferred
 UPDATE_CANONICAL_MAIN_AUDIT_IF_NEW_DELTA_IS_SAME_EVIDENCE_DOMAIN = preferred
 UPDATE_CURRENT_CLAIM_REGISTRY = only_if_claim_grade_or_owner_changes
-ADD_SEPARATE_RECEIPT = only_if machine/provenance need is genuinely distinct
+ADD_SEPARATE_RECEIPT = onlyif machine/provenance need is genuinely distinct
 PRESERVE_OLD_MAIN_PATH_AS_DEPRECATED_SHIM_IF_BACKLINKS_MAY_EXIST = true
 ```
 
