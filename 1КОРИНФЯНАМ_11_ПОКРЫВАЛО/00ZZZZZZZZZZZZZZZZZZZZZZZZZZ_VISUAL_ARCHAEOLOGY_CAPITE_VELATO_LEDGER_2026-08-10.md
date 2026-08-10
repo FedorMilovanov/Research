@@ -307,16 +307,36 @@ JOHNSON_PERSON_ID = NERO_SON_OF_GERMANICUS
 CURRENT_PERSON_ID = DISPUTED
 ```
 
-## Peters 2013 bridge
+## Peters 2013 dissertation bridge — p.282 narrowed
 
-Later scholarship page-specifically cites Janelle Peters 2013 p.282 alongside the legacy Johnson route.
+Current Peters source genealogy identifies the exact work:
+
+> Janelle Lynne Peters, “Leveling the Playing Field: Egalitarian Veils and Athletic Metaphors in 1 Corinthians.” PhD dissertation, Emory University, 2013.
+
+Institutional metadata is controlled in:
+- `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
 
 ```text
-PETERS_2013_P282 = SECONDARY_PAGE_LOCATOR_TO_LEGACY_CORINTH_OBJECT_CHAIN
-PETERS_P282_DIRECT_AUTOPSY = HOLD
+EMORY_OBJECT_ID = qr46r105v
+REPOSITORY_STATUS = OPEN_ACCESS
+CH6_CREATION_IN_CORINTHIAN_HOUSE_CHURCHES_AND_ROMAN_EMPIRE = starts_p228
+CH7_VEILING_THE_BODY_OF_CHRIST = starts_p264
+CONCLUSION = starts_p301
 ```
 
-Do not claim Peters used modern inventory numbers unless directly read.
+Therefore p.282 is deterministically **inside Peters’ veiling chapter**, not an unlocated page number.
+
+Later scholarship page-specifically cites Peters p.282 in connection with a Corinthian statue and F. P. Johnson, *Corinth IX.1*, pp.70–72. That downstream citation is useful as an acquisition locator but does not replace Peters’ own page.
+
+```text
+PETERS_2013_DISSERTATION_OBJECT = DIRECT_INSTITUTIONAL_METADATA_CLOSED
+PETERS_2013_P282 = CH7_VEILING_BODY_OF_CHRIST_DETERMINISTIC_PAGE_TARGET
+PETERS_2013_P282_CORINTH_STATUE = SECONDARY_PAGE_LOCATOR
+PETERS_2013_P282_DIRECT_AUTOPSY = HOLD_RUNTIME_PRIMARY_PDF_ENDPOINT
+PETERS_P282_OBJECT_IDENTIFICATION = VERIFY_AGAINST_ASCSA_JOHNSON_CHAIN
+```
+
+Do not infer a modern inventory number or person identification from the downstream p.282 citation until Peters’ page itself is read. The archaeological objects remain owned by this ASCSA ledger, not by a secondary Peters citation.
 
 ---
 
@@ -392,7 +412,7 @@ Preserve both even if the exact v4 reconstruction changes.
 
 ```text
 P1 DESILVA_2025_ROMAN_CORINTH_PP126_156 = DIRECT_BODY_HOLD
-P1 PETERS_2013_P282 = DIRECT_PAGE_HOLD
+P1 PETERS_2013_EMORY_QR46R105V_P282 = DIRECT_PAGE_HOLD
 ```
 
 ---
@@ -405,6 +425,8 @@ THOMPSON_1988_DIRECT_PUBLISHER_CONTROL = CLOSED
 GILL_1990_DIRECT_OPEN_CONTROL = CLOSED
 ASCSA_CORINTH_XXII_2022 = CURRENT_ASSEMBLAGE_OWNER
 DESILVA_2025 = CURRENT_SYNTHESIS_TARGET / SPECIFIC_LOCATOR_HOLD
+PETERS_2013_DISSERTATION_OBJECT = DIRECT_INSTITUTIONAL_METADATA_CLOSED
+PETERS_2013_P282 = DETERMINISTIC_CH7_PAGE_TARGET / DIRECT_PAGE_HOLD
 CORINTH_S1116 = SECURE_LOCAL_CAPITE_VELATO_ANCHOR
 CORINTH_S1088 = SECURE_LOCAL_VEILED_MALE_OBJECT_PERSON_ID_OPEN
 IMAGE_RIGHTS_AND_CHECKSUMS = PINNED
