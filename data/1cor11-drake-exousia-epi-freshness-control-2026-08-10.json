@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "1 Corinthians 11:2-16",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "coreGradeReversals": 0,
+  "drake2025": {
+    "book": "Veiling in the Late Antique World",
+    "publisher": "Cambridge University Press",
+    "printYear": 2025,
+    "onlinePublication": "2025-11-26",
+    "chapter": "Veils in Corinth: Paul's First Letter to the Corinthians",
+    "pages": "70-89",
+    "chapterDoi": "10.1017/9781009673518.003",
+    "materialVeilingModel": "DIRECT_PUBLISHER_SUMMARY",
+    "multifactorSocialSignification": "DIRECT_PUBLISHER_SUMMARY",
+    "fullBody": "HOLD"
+  },
+  "exousiaEpiGen": {
+    "biblicalGreekAttested": true,
+    "controls": [
+      {
+        "ref": "Rev 2:26",
+        "pattern": "exousia + epi + genitive",
+        "supportVerb": "didomi",
+        "semanticDirection": "active authority over domain"
+      },
+      {
+        "ref": "Rev 14:18",
+        "pattern": "echo + exousia + epi + genitive",
+        "supportVerb": "echo",
+        "semanticDirection": "active authority over fire"
+      },
+      {
+        "ref": "Rev 20:6",
+        "pattern": "preposed epi + genitive + echo + exousia",
+        "supportVerb": "echo",
+        "semanticDirection": "no authority over these"
+      }
+    ],
+    "uncommonDoesNotMeanUnattested": true,
+    "exactNonbiblicalHeadParallel": "NOT_FOUND_IN_BOUNDED_SEARCH",
+    "globalNonexistenceClaim": false
+  },
+  "fendel2023": {
+    "totalExousianTokens": 290,
+    "totalExousianEcho": 190,
+    "romanHigherRegisterPP": 3,
+    "romanPPPrepositionsEnumeratedInArticleTable": false,
+    "psiX1115KnownPP": "peri autou"
+  },
+  "freshness": {
+    "standhartingerResearchGate2025": "REJECT_FALSE_FRESHNESS",
+    "standhartingerOriginalElectronic": 2002,
+    "standhartingerBookVersion": 2003,
+    "rule": "platform upload/index year is not publication year without primary bibliographic control"
+  },
+  "grades": {
+    "materialCovering": "B_HIGH_LEADING_UNCHANGED",
+    "exousiaWomanSubject": "A_SYNTAX_UNCHANGED",
+    "exousiaActiveWomanBearerPull": "B_HIGH_STRENGTHENED_PROVENANCE",
+    "exousiaExactReferent": "B_C_UNCHANGED"
+  }
+}
