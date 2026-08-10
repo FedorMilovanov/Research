@@ -1,30 +1,27 @@
 # Source card — Mark Reasoner / Michael J. Gorman, 1 Corinthians commentaries (2025)
 
 **Дата аудита:** 2026-08-10  
-**Статус:** `CURRENT-2025-COMMENTARY-INGRESS / DIRECT-PUBLISHER-METADATA / BODY-HOLD / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `CURRENT-2025-COMMENTARY-INGRESS / PAGINATION-CORRECTED / DIRECT-PUBLISHER-METADATA / BODY-HOLD / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Purpose
 
-Current-literature radar already tracked Garland 2025, Peters, Nõmmik and other recent work, but a fresh search exposed a major technical 2025 commentary that was not represented in Research at all:
+This card controls two current 2025 commentaries:
 
-> Mark Reasoner, *1 Corinthians*, Brill Exegetical Commentary Series 3 (2025).
+- Mark Reasoner, *1 Corinthians*, Brill Exegetical Commentary Series 3 (2025);
+- Michael J. Gorman, *1 Corinthians: A Theological, Pastoral, and Missional Commentary* (Eerdmans, 2025).
 
-Michael J. Gorman's 2025 Eerdmans commentary was mentioned only briefly in the radar but did not have a calibrated source card.
-
-These works must **not** be treated as equal evidence classes:
+They are different evidence classes:
 
 ```text
 REASONER_2025 = TECHNICAL_EXEGETICAL_COMMENTARY / HIGH_VALUE_DIRECT_SECTION_HOLD
 GORMAN_2025 = THEOLOGICAL_PASTORAL_MISSIONAL_COMMENTARY / CURRENT_INTERPRETIVE_CONTROL
 ```
 
-No claim grade changes until the exact 11:2–16 sections are directly acquired and adversarially tested.
+No claim grade changes merely because either book exists.
 
 ---
 
-# 1. Mark Reasoner — *1 Corinthians* (Brill, 2025)
-
-## 1.1 Direct publisher identity
+# 1. Mark Reasoner — direct identity
 
 Direct Brill metadata verifies:
 
@@ -40,160 +37,119 @@ PRINT_PUBLICATION_DATE = 2025-09-08
 LENGTH = 732 pages
 ```
 
-The commentary is a major current technical work, not a devotional or popular exposition.
+Direct Brill chapter route already verified for Commentary 4:
 
-The Brill chapter platform visibly organizes analysis through categories such as:
+- https://brill.com/display/book/9789004737044/BP000007.xml
+
+Brill's TOC identifies:
 
 ```text
-Translation
-Text-Critical Analysis
-Grammatical Analysis
-Historical Analysis
-Theological Analysis
+Commentary 5 — Paul Responds to Questions on Marriage (7:1–40)
+Commentary 6 — Food Offered to Idols (8:1–11:1)
+Commentary 7 — Hair and Head Coverings in the Assembly (11:2–16)
+Commentary 8 — Keep the Lord's Supper (11:17–34)
 ```
 
-The publisher/book description also emphasizes first-century Roman Corinth, patristic commentary and Paul's call for church unity.
+Google Books:
+
+- https://books.google.com/books/about/1_Corinthians.html?id=IEiGEQAAQBAJ
+
+---
+
+# 2. Critical pagination correction
+
+An earlier version of this card **misread the stripped Google Books contents rows** and mapped p.321 to 11:2–16 and p.432 to 11:17–34.
+
+That was wrong.
+
+Google Books displays verse-range labels with punctuation partly stripped. Read in sequence with the Brill TOC, the chapter starts are:
+
+```text
+7:1–40       -> p.277   // Commentary 5
+8:1–11:1     -> p.321   // Commentary 6
+11:2–16      -> p.432   // Commentary 7
+11:17–34     -> p.452   // Commentary 8
+12:1–14:40   -> p.476   // Commentary 9
+15:1–58      -> p.590   // Commentary 10
+16:1–24      -> p.638   // Commentary 11
+```
+
+Brill independently gives Commentary 4 as pp.238–276, which fits the Google Books sequence exactly: Commentary 5 begins p.277.
 
 Therefore:
 
 ```text
-REASONER_2025_TECHNICAL_WEIGHT = HIGH_CURRENT_COMMENTARY
-REASONER_2025_RECENCY = VERIFIED
+REASONER_COMMENTARY_7_11_2_16_START = P432
+REASONER_COMMENTARY_8_11_17_34_START = P452
+REASONER_11_2_16_APPROX_SPAN = P432_451
+REASONER_11_2_16_IS_111_PAGES = FALSE
 ```
+
+The previous values:
+
+```text
+CH7_START = P321
+NEXT_SECTION_START = P432
+SPAN = P321_431
+```
+
+are **superseded and rejected**.
 
 ---
 
-# 2. Dedicated 1 Cor 11:2–16 chapter — not a passing excursus
+# 3. Consequence for circulated Reasoner quotations
 
-Brill's own table of contents gives a dedicated chapter:
-
-> **Commentary 7 — “Hair and Head Coverings in the Assembly (11:2–16)”**
-
-This is followed by:
-
-> Commentary 8 — “Keep the Lord's Supper (11:17–34)”
-
-Google Books independently exposes chapter starts in the contents/index:
+Popular/low-quality webpages circulate purported Reasoner quotations assigned to:
 
 ```text
-11:2–16 / Commentary 7 begins about p.321
-11:17–34 / Commentary 8 begins p.432
+p.434 -> 1 Cor 11:2
+p.343 -> 1 Cor 11:3
+p.444 -> 1 Cor 11:8
 ```
 
-Thus the head-covering section occupies roughly:
+The old card incorrectly rejected p.434 and p.444 as impossible because of the pagination error.
+
+Correct status:
 
 ```text
-pp.321–431
-~111 pages before the Lord's Supper section begins
+P434_FOR_V2 = PAGINATION_PLAUSIBLE / WORDING_UNVERIFIED
+P444_FOR_V8 = PAGINATION_PLAUSIBLE / WORDING_UNVERIFIED
+P343_FOR_V3 = PAGINATION_IMPOSSIBLE_FOR_COMMENTARY_7_IN_THIS_EDITION
 ```
 
-The exact final printed page of Commentary 7 should still be confirmed from the Brill chapter record/PDF; `321–431` is a chapter-boundary inference from Google Books start pages, not a directly rendered Brill page-range field.
-
-Safe status:
+Why:
 
 ```text
-REASONER_11_2_16_DEDICATED_CHAPTER = DIRECT_BRILL_TOC
-REASONER_11_2_16_START_PAGE = GOOGLE_BOOKS_321
-REASONER_11_17_START_PAGE = GOOGLE_BOOKS_432
-REASONER_11_2_16_APPROX_SPAN = 321_431_INFERRED_FROM_BOUNDARIES
+11:2–16 = pp.432–451 approximately
 ```
 
-This scale alone moves Reasoner into the high-value acquisition queue.
+Thus p.434 and p.444 lie inside the correct section, while p.343 lies in Commentary 6 (8:1–11:1), not Commentary 7.
 
----
-
-# 3. Why Reasoner is P0/P1 for this project
-
-A current 100+ page technical treatment can potentially update several nodes at once:
-
-```text
-κεφαλή
-material covering vs hair
-male head-state
-female head-state
-ἐξουσία v10
-angels
-Genesis/creation
-φύσις
-v16
-Roman Corinth background
-patristic reception
-```
-
-The project currently holds exact pages for Garland 2025, Starling 2025 and other current commentaries. Reasoner is now at least as important as those for direct technical adjudication because:
-
-1. it is from 2025;
-2. the series is explicitly exegetical;
-3. the passage gets an unusually long dedicated chapter;
-4. the book foregrounds Roman Corinth and patristic interpretation;
-5. it can test whether the current registry still reflects the newest full technical commentary landscape.
-
-Queue:
-
-```text
-P0/P1 REASONER_2025_COMMENTARY_7_FULL_BODY = ACQUIRE
-```
-
----
-
-# 4. Reasoner position — current fail-closed boundary
-
-The Brill chapter body is currently institution/login gated.
-
-Google Books gives contents/index metadata but the present pass did **not** recover a reliable official verse-by-verse body for Commentary 7.
-
-Low-quality/popular webpages currently reproduce purported exact Reasoner page quotations for vv.2–8 and other verses. Those pages are useful only as **locator signals**, because:
-
-- they are not Brill;
-- provenance of the copied text is not independently established in this pass;
-- page numbers can be wrong or copied circularly;
-- excerpts can omit qualifications/notes.
-
-## 4.1 Direct falsification of some circulated page labels
-
-Google Books gives a hard pagination boundary:
-
-```text
-COMMENTARY_7_11_2_16_START = 321
-COMMENTARY_8_11_17_34_START = 432
-```
-
-Therefore **any claimed 11:2–16 quotation assigned to p.432 or later cannot have the cited page number correct in this edition**.
-
-At least two currently circulating web attributions fail this test:
-
-```text
-"Reasoner 2025 p.434" assigned to 1 Cor 11:2 = IMPOSSIBLE_PAGE_LABEL
-"Reasoner 2025 p.444" assigned to 1 Cor 11:8 = IMPOSSIBLE_PAGE_LABEL
-```
-
-Both pages fall after the direct Google Books start of Commentary 8 (11:17–34) at p.432.
-
-A circulated `p.343` attribution for v.3 at least falls inside the possible Commentary 7 span, but its wording still remains **unverified** because the Brill body itself has not been acquired.
-
-This demonstrates that the web quotation chain is not merely lower-quality in theory; its pagination is **proven corrupt in specific cases**.
+This **does not authenticate** the wording copied by Wikipedia or other sites. It only corrects the page-location test.
 
 New firewall:
 
 ```text
-REASONER_WEB_QUOTE_WITH_PAGE >= 432 AND CLAIMED_VERSE <= 11_16 = REJECT_PAGE_LABEL
-REASONER_WEB_QUOTE_INSIDE_321_431 = LOCATOR_ONLY_UNTIL_BRILL_TEXT
+PAGINATION_PLAUSIBLE != QUOTE_AUTHENTICATED
 LOW_QUALITY_EXACT_WORDING != QUOTE_SAFE
+PAGE_NUMBER_CONTRADICTION = valid falsifier only after chapter pagination is directly controlled
+DO_NOT_REJECT_P434_OR_P444_ON_PAGINATION
+REJECT_P343_AS_V3_PAGE_LABEL_IN_2025_EDITION
 ```
 
-Do not “repair” an impossible page citation by silently changing the page number. Reacquire the primary text.
+Do not silently “repair” the p.343 citation. Reacquire Reasoner's actual body.
 
-Therefore do **not** promote from those sites claims such as:
+---
 
-```text
-Reasoner says kephale = hierarchy/authority
-Reasoner says all women, not wives
-Reasoner requires material covering
-Reasoner gives a specific v10 exousia meaning
-Reasoner identifies the angels in a particular way
-```
+# 4. Reasoner's actual interpretive position remains HOLD
 
-until the Brill chapter itself is acquired.
+The Brill chapter body remains institution/login gated in the current route.
+
+The chapter title establishes only the problem-space:
+
+> Hair and Head Coverings in the Assembly (11:2–16)
+
+It does **not** establish how Reasoner adjudicates veil vs hair, `κεφαλή`, `ἐξουσία`, angels, `φύσις`, or v16.
 
 Current status:
 
@@ -206,13 +162,15 @@ REASONER_PHYSIS_POSITION = HOLD
 REASONER_V16_POSITION = HOLD
 ```
 
-The chapter title alone establishes that Reasoner treats **hair and head coverings** as the problem-space; it does not establish how he adjudicates them.
+Acquisition priority remains high because the commentary is current and technical, not because the section is unusually long.
+
+```text
+P0/P1 REASONER_2025_COMMENTARY_7_PP432_451 = ACQUIRE_DIRECT_BODY
+```
 
 ---
 
-# 5. Reasoner acquisition routes
-
-Direct lawful routes identified:
+# 5. Reasoner lawful acquisition routes
 
 ```text
 BRILL_CHAPTER_PLATFORM = institutional login / paid PDF / preview
@@ -220,23 +178,17 @@ GOOGLE_BOOKS = contents/index + limited snippets
 LIBRARY_EBOOK = possible institutional Brill access
 ```
 
-Do not ask the user for a copy before exhausting institutional/library/preview access.
-
-```text
-REASONER_USER_ACQUISITION = SELF_EXHAUST_FIRST
-```
+Do not ask the user for a copy before exhausting lawful preview/library routes available to the runtime.
 
 ---
 
-# 6. Michael J. Gorman — *1 Corinthians* (Eerdmans, 2025)
-
-## 6.1 Direct publisher identity
+# 6. Michael J. Gorman — direct identity
 
 Eerdmans directly verifies:
 
 > Michael J. Gorman, *1 Corinthians: A Theological, Pastoral, and Missional Commentary* (2025).
 
-Direct metadata:
+Current metadata:
 
 ```text
 AUTHOR = Michael J. Gorman
@@ -247,54 +199,20 @@ HARDCOVER_ISBN = 9780802882660
 LENGTH = 477 pages
 ```
 
-Google Books independently confirms 477 pages and the March 6, 2025 publication date.
-
----
-
-# 7. Gorman's evidence class
-
-Eerdmans explicitly describes the volume as a commentary that:
-
-- gives careful exposition of 1 Corinthians;
-- stresses theological content;
-- focuses on spiritual, pastoral and missional implications;
-- interprets the letter around the church as **one, holy, catholic and apostolic**;
-- includes reflection questions and topical sidebars.
-
-This is a serious scholarly commentary, but its declared purpose differs from Brill Reasoner's technical exegetical series.
-
-Therefore:
+Gorman's declared commentary type is theological, pastoral, and missional. It remains a serious current interpretive control but is not automatically the primary technical owner of a disputed papyrological or grammatical microclaim.
 
 ```text
-GORMAN_2025 = R2/P1_CURRENT_THEOLOGICAL_COMMENTARY_CONTROL
+GORMAN_2025 = P1_CURRENT_THEOLOGICAL_COMMENTARY_CONTROL
 GORMAN_2025 != PRIMARY_TECHNICAL_TEXT_CRITICAL_OWNER
 ```
 
-It is valuable for:
-
-```text
-whole-passage synthesis
-Pauline theology
-church/ecclesiology
-pastoral application
-current reception
-```
-
-and less likely than Reasoner to be the controlling source for a disputed papyrological or grammatical microclaim.
-
 ---
 
-# 8. Gorman 11:2–16 position — direct-section HOLD
+# 7. Gorman 11:2–16 position — direct-section HOLD
 
-The direct Eerdmans page does not expose the 11:2–16 body in this pass.
+The direct Eerdmans route has not yielded a quote-safe 11:2–16 body in this pass.
 
-Google Books supplies book metadata/partial contents but did not expose a quote-safe relevant section.
-
-A later 2026 article and other secondary sites summarize/quote Gorman as reading men and women as both praying/prophesying and the dispute in terms of culturally intelligible gender/modesty/order rather than a simple ban on female authority.
-
-Those are **locator-only** until the Eerdmans text itself is acquired.
-
-Therefore:
+Secondary 2026 material may serve as acquisition locators, but must not be promoted to direct Gorman wording.
 
 ```text
 GORMAN_11_2_16_DIRECT_BODY = HOLD
@@ -304,44 +222,29 @@ GORMAN_EXOUSIA_POSITION = HOLD
 GORMAN_ANGELS_POSITION = HOLD
 ```
 
-Do not import a secondary paraphrase into the claim registry as “Gorman 2025 says”.
-
 ---
 
-# 9. Relative acquisition priority
+# 8. Relative acquisition priority
 
 ```text
-P0/P1 Reasoner 2025 Commentary 7 = HIGH
+P0/P1 Reasoner 2025 Commentary 7 pp432–451 = HIGH
 P1 Gorman 2025 exact 11:2–16 section = MEDIUM_HIGH
 ```
 
-Why Reasoner first:
+Reasoner first because of:
 
 ```text
-DEDICATED_LONG_SECTION
-+ TECHNICAL_SERIES
-+ TEXT_CRITICAL/GRAMMATICAL/HISTORICAL_METHOD
+CURRENT_2025
++ TECHNICAL_EXEGETICAL_SERIES
++ TEXT_CRITICAL_GRAMMATICAL_HISTORICAL_METHOD
 + ROMAN_CORINTH_FOCUS
 ```
 
-Why Gorman still matters:
-
-```text
-CURRENT_MAJOR_NT_SCHOLAR
-+ DIRECT_2025_FULL_COMMENTARY
-+ THEOLOGICAL_SYNTHESIS
-+ ECCLESIOLOGICAL_APPLICATION
-```
+Not because of a false 100+ page section-length claim.
 
 ---
 
-# 10. Effect on current literature radar
-
-Reasoner is a genuine radar omission and should be added to the high-value current commentary queue.
-
-Gorman was previously only a brief radar note; this card gives it proper evidence-class separation.
-
-Current high-value 2025 commentary set now includes at minimum:
+# 9. Current commentary radar
 
 ```text
 GARLAND_2025_2E = P0_DIRECT_TEXT_HOLD
@@ -354,9 +257,7 @@ Drake 2025 and Peters 2025 remain thematic/specialist monographs rather than ver
 
 ---
 
-# 11. No grade change from mere existence
-
-The discovery of two current commentaries does **not** itself change any current claim.
+# 10. No grade change
 
 ```text
 CORE_GRADE_REVERSALS = 0
@@ -366,27 +267,41 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 ```
 
-Reasoner/Gorman matter because they are current pressure-tests still to be read directly, not because publication year is authority.
+---
+
+# 11. Audit lesson
+
+This correction is itself a source-hygiene control:
+
+```text
+SEARCH_INDEX_STRIPPED_VERSE_LABEL != SAFE_MANUAL_MAPPING
+CHAPTER_SEQUENCE_MUST_BE_RECONCILED_WITH_PUBLISHER_TOC
+DERIVED_FIREWALL_MUST_BE_REAUDITED_IF_ITS_PAGINATION_PREMISE_FAILS
+SELF_CORRECTION > PRESERVING_A_CONVENIENT_REJECTION
+```
+
+The old pagination-based rejection of p.434/p.444 must not propagate into later research.
 
 ---
 
 # 12. Result
 
 ```text
-REASONER_2025 = GENUINE_MISSING_CURRENT_TECHNICAL_COMMENTARY
+REASONER_2025 = VERIFIED_CURRENT_TECHNICAL_COMMENTARY
 REASONER_COMMENTARY_7 = DIRECT_BRILL_TOC_VERIFIED
-REASONER_CH7_START = P321_GOOGLE_BOOKS
-REASONER_NEXT_SECTION_START = P432_GOOGLE_BOOKS
-REASONER_APPROX_11_2_16_SPAN = P321_431_BOUNDARY_INFERENCE
+REASONER_CH7_START = P432_GOOGLE_BOOKS_CORRECTED
+REASONER_COMMENTARY_8_START = P452_GOOGLE_BOOKS_CORRECTED
+REASONER_11_2_16_APPROX_SPAN = P432_451
 REASONER_BODY = HOLD
-REASONER_WEB_P434_AS_11_2 = REJECTED_IMPOSSIBLE_PAGE_LABEL
-REASONER_WEB_P444_AS_11_8 = REJECTED_IMPOSSIBLE_PAGE_LABEL
+
+REASONER_WEB_P434_AS_11_2 = PAGINATION_PLAUSIBLE / WORDING_UNVERIFIED
+REASONER_WEB_P444_AS_11_8 = PAGINATION_PLAUSIBLE / WORDING_UNVERIFIED
+REASONER_WEB_P343_AS_11_3 = REJECT_PAGE_LABEL_FOR_2025_EDITION
 
 GORMAN_2025 = VERIFIED_CURRENT_EERDMANS_COMMENTARY
 GORMAN_EVIDENCE_CLASS = THEOLOGICAL_PASTORAL_MISSIONAL
 GORMAN_11_2_16_BODY = HOLD
 
-LOW_QUALITY_REASONER_QUOTES = DISCOVERY_ONLY
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
