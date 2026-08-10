@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:10 — `ἐξουσία` formal + documentary corpus
 
-**Статус:** `EVERGREEN-CONTROLLING-DOSSIER / TEXTUAL-LEXICAL-DOCUMENTARY / SOURCE-ROUTES-PINNED / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`  
-**Последнее обновление:** 2026-08-10
+**Статус:** `EVERGREEN-CONTROLLING-DOSSIER / TEXTUAL-LEXICAL-DOCUMENTARY / MULTILINGUAL-DIRECT-COUNTERMODEL / SOURCE-ROUTES-PINNED / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Последнее обновление:** 2026-08-11
 
 ## 0. Authority rule
 
@@ -21,6 +21,7 @@ GREEK_TEXT / KALYMMA_TRANSMISSION
 FORMAL_EXOUSIA_EPI_TAXONOMY
 FENDEL_DOCUMENTARY_CORPUS
 FEMALE_DOCUMENTARY_RIGHT_BEARERS
+DIRECT_PUBLISHED_COUNTERMODELS
 BOUNDED_EXACT_HEAD_PARALLEL_SEARCH
 FINAL_ACQUISITION_DISPOSITION
 ```
@@ -89,7 +90,7 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 ```
 
-Strong active direction does **not** prove modern autonomy theology or one exact social reconstruction.
+Strong active direction does **not** prove modern autonomy theology or one exact social reconstruction. The direct Romerowski countermodel below now makes an additional distinction explicit: the normal semantic pull of `ἐξουσίαν ἔχειν` does not itself settle whether `ἐπὶ τῆς κεφαλῆς` is its authority-domain complement or a locative phrase in a contextual metonymy.
 
 ---
 
@@ -151,6 +152,70 @@ PKNT_UNCOMMON != PASSIVE_EXOUSIA_PROOF
 ```
 
 This detail is nonblocking because the formal claim “unattested” is already falsified directly by biblical Greek and the broader documentary direction is independently controlled.
+
+## 5A. Sylvain Romerowski 2006 — direct French full-body countermodel
+
+Multilingual searching on 2026-08-11 located a direct author-hosted PDF:
+
+> Sylvain Romerowski, “L’exousia sur la tête en 1 Corinthiens 11.10,” *Théologie évangélique* 5.2 (2006): 147–166.
+
+Direct source route:
+- author bibliography page: `https://sylvain-romerowski.ibnogent.org/articles/`
+- author-hosted journal PDF: `https://sylvain-romerowski.ibnogent.org/wp-content/uploads/2023/10/ThEv2006-2-Exousia_sur_tete_1Co11.103.pdf`
+
+The PDF is directly readable, 20 pages, and supplies a serious published counterargument to a shortcut sometimes made from active `ἐξουσία` semantics.
+
+### Direct position map
+
+Romerowski directly argues:
+
+```text
+MATERIAL_HEAD_COVERING = YES
+AKATAKALYPTOS_LOOSE_HAIR_ONLY = REJECTED_AS_LESS_PROBABLE
+PERIBOLAION = GARMENT_COVERING_CONTROL
+KEPHALE = CHIEF_HEADSHIP_READING
+WOMAN_MAN = MOST_LIKELY_WIFE_HUSBAND
+```
+
+For v10 specifically, his sequence is more nuanced than “`ἐξουσία` means passive authority”:
+
+1. he agrees that in ordinary `ἐξουσίαν ἔχειν ἐπί X` authority-over constructions the grammatical subject is the authority holder/exerciser;
+2. he argues that the slogan “`ἐξουσία` always means exercised authority, never suffered authority” is linguistically imprecise because one must examine the distribution/construction rather than the noun in isolation;
+3. he judges that in 1 Cor 11:10 `ἐπὶ τῆς κεφαλῆς` is better read locatively with `ἔχειν` — “have something on the head” — rather than as the domain governed by the woman;
+4. because one cannot literally wear a right/authority on the head, he takes `ἐξουσία` metonymically as a **sign of authority**;
+5. he explicitly says both “the woman's right” and “the husband's authority” are initially possible once metonymy is admitted, but concludes from his Roman-marital/contextual reconstruction that the latter is preferable;
+6. his angel referent is heavenly angels joining worship, not Winter's state messengers.
+
+```text
+ROMEROWSKI_2006_DIRECT_BODY = CLOSED_DIRECT_AUTHOR_HOSTED_PDF
+ROMEROWSKI_EXOUSIA_METONYMY = DIRECT_PUBLISHED_COUNTERMODEL
+ROMEROWSKI_SIGN_REFERENT = HUSBANDS_AUTHORITY_PREFERRED
+ROMEROWSKI_WOMANS_RIGHT_OPTION = ACKNOWLEDGED_AS_POSSIBLE_BEFORE_CONTEXTUAL_DECISION
+ROMEROWSKI_ANGELS = HEAVENLY_WORSHIP_ANGELS
+ROMEROWSKI_WINTER_STATE_MESSENGERS = DOUBTFUL_REJECTED
+```
+
+### Effect on the current evidence grades
+
+This source is important because it directly blocks an overstatement, not because it reverses the current grade:
+
+```text
+WOMAN_IS_GRAMMATICAL_SUBJECT = UNAFFECTED_A
+ACTIVE_EXOUSIAN_ECHEIN_DOCUMENTARY_PULL = UNAFFECTED_B_HIGH
+ACTIVE_PULL_FORCES_V10_REFERENT = FALSE
+CONTEXTUAL_METONYMY_PASSIVE_SIGN_READING = REAL_PUBLISHED_COUNTERMODEL
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+```
+
+The decisive point is to keep two questions separate:
+
+```text
+Q1 = what does exousian_echein normally do in Greek?
+Q2 = how does the complete phrase function in this ad_hoc sentence?
+```
+
+Romerowski presses Q2 against a mechanical inference from Q1. The documentary corpus still supplies strong active-right/power controls, while his direct full-body countermodel strengthens the reason not to overpromote that semantic pull into one forced exact referent.
 
 ---
 
@@ -350,7 +415,7 @@ EXOUSIA_EXACT_REFERENT = B_C
 
 Still-live contextual families include control/right regarding head presentation; authority/right to pray/prophesy; authority/status signaled through covering; contextual metonymic sign reading; and other discourse-specific relations.
 
-A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`.
+A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`. Romerowski 2006 is now a direct full-body example of exactly such a contextual/metonymic argument and therefore must be represented as a serious countermodel rather than dismissed as a lexical impossibility.
 
 ---
 
@@ -368,6 +433,9 @@ P_OXY_I_104_KYRIA != EXOUSIA_LEXICAL_EQUIVALENCE
 ROMAN_EGYPT_PROPERTY_RIGHT != CORINTHIAN_LITURGICAL_RIGHT
 FEMALE_LEGAL_AGENCY != MODERN_AUTONOMY_THEOLOGY
 ACTIVE_SEMANTICS != EXACT_SOCIAL_TRIGGER_PROVED
+ACTIVE_EXOUSIA_PULL != EXACT_V10_REFERENT_FORCED
+ROMEROWSKI_METONYMY != EXOUSIA_LEXICALLY_MEANS_VEIL
+ROMEROWSKI_HUSBAND_AUTHORITY = INTERPRETIVE_CONTEXTUAL_CONCLUSION_NOT_LEXICAL_DEFINITION
 TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 ```
 
@@ -375,19 +443,19 @@ TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 
 # 13. Final acquisition disposition
 
-The former local P0/P1 queue is closed as follows:
-
 ```text
 PKNT_2_2006_P390 = PAGE_LOCATOR_CLOSED / DIRECT_PAGE_TERMINAL_EXTERNAL_ACCESS_HOLD / NONBLOCKING
 FENDEL_EXOUSIAN_XLSX = OFFICIAL_DATASET_FILE_OBJECT_CLOSED / BINARY_TERMINAL_ORA_TRANSPORT_HOLD / PP_PREPOSITIONS_NOT_ENUMERATED
+ROMEROWSKI_2006_FULL_FRENCH_PDF = CLOSED_DIRECT_AUTHOR_HOSTED
 SEARCH_NONBIBLICAL_EXACT_ECHO_EPI_GEN = BOUNDED_SEARCH_COMPLETE / NO_EXACT_HEAD_PARALLEL_FOUND / GLOBAL_NONEXISTENCE_NOT_CLAIMED
 P_WISC_I_13_EDITION_IMAGE_TEXT_APPARATUS = OPTIONAL_NONBLOCKING_REOPEN
 ADDITIONAL_FEMALE_ROMAN_RIGHT_BEARERS = OPTIONAL_ONLY_IF_NEW_HIGH_VALUE_SOURCE
 ```
 
 ```text
-EXOUSIA_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
-NEW_DIRECT_DATASET_BINARY_OR_AUTHORIZED_PAGE_ACCESS = REOPEN_ONLY_TRIGGER
+EXOUSIA_ENGLISH_KNOWN_ROUTE_QUEUE = EMPTY
+EXOUSIA_MULTILINGUAL_SEARCH = REOPEN_ON_NEW_HIGH_VALUE_SOURCE
+NEW_DIRECT_DATASET_BINARY_OR_AUTHORIZED_PAGE_ACCESS = REOPEN_TRIGGER
 ```
 
 ---
@@ -405,9 +473,9 @@ TAM_II_603_LALLA = A_EPIGRAPHIC_FEMALE_RIGHT_BEARER
 TAM_II_604 = A_EPIGRAPHIC_LOCAL_RIGHT_FORMULA
 P_WISC_I_13 = RESTORED_FORMULA_CONTROL
 P_OXY_I_104_AD96 = NEAR_SEMANTIC_FEMALE_CONTROL_NOT_EXOUSIA
+ROMEROWSKI_2006 = DIRECT_FULL_BODY_SERIOUS_CONTEXTUAL_METONYMY_COUNTERMODEL
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
-EXOUSIA_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 ```
