@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — patristic speaker-boundary control
 
 **Дата:** 2026-08-10  
-**Статус:** `EARLY-RECEPTION / SPEAKER-BOUNDARY / PRIMARY-TEXT-CONTROL / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `EARLY-RECEPTION / SPEAKER-BOUNDARY / CHRYSOSTOM-DIRECT / PG118-TRANSMISSION-CONTROL / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Question
 
@@ -70,13 +70,13 @@ Do not turn this into the stronger claim that no second-century Christian ever h
 
 ---
 
-# 2. John Chrysostom — Homily 26: explicit continuous discourse and local `διὰ τοῦτο` backlink
+# 2. John Chrysostom — Homily 26: continuous discourse, explicit Corinth reconstruction, local `διὰ τοῦτο` backlink
 
 Primary translation:
 
 - John Chrysostom, Homily 26 on 1 Corinthians: https://www.newadvent.org/fathers/220126.htm
 
-## 2.1 vv2–3
+## 2.1 vv2–3 — continuous Pauline explanation
 
 Chrysostom says Paul moves from the idol-food discussion to “another accusation,” begins with praise for those who kept traditions, and then gives the reason for the disputed practice at v3.
 
@@ -90,7 +90,78 @@ v2 tradition frame
 
 There is no speaker change.
 
-## 2.2 vv4–10
+## 2.2 Chrysostom’s own reconstruction of the triggering practices
+
+Homily 26 directly reconstructs the Corinthian situation in a much more concrete way than Paul’s surviving letter itself does.
+
+Chrysostom says in substance that:
+
+- women prayed and prophesied unveiled / bare-headed;
+- men wore long hair;
+- men covered their heads when praying and prophesying;
+- he calls the male long-hair / head-covering practices “Grecian custom(s)”;
+- Paul had already admonished them orally while present;
+- some obeyed and others disobeyed.
+
+Direct New Advent locator:
+
+- Homily 26, section 2, immediately before the exposition of 1 Cor 11:3.
+
+Safe status:
+
+```text
+CHRYSOSTOM_WOMEN_UNCOVERED_AT_PRAYER_PROPHECY = DIRECT_RECEPTION_RECONSTRUCTION
+CHRYSOSTOM_MEN_LONG_HAIRED = DIRECT_RECEPTION_RECONSTRUCTION
+CHRYSOSTOM_MEN_COVERED_WHILE_PRAYING_PROPHECYING = DIRECT_RECEPTION_RECONSTRUCTION
+CHRYSOSTOM_MALE_PRACTICES_GREEK_CUSTOM = DIRECT_RECEPTION_RECONSTRUCTION
+CHRYSOSTOM_PRIOR_ORAL_ADMONITION_SOME_OBEY_SOME_DISOBEY = DIRECT_RECEPTION_RECONSTRUCTION
+```
+
+Crucial evidence boundary:
+
+```text
+CHRYSOSTOM_RECONSTRUCTION != FIRST_CENTURY_CORINTH_FACT
+```
+
+Chrysostom is a major ancient interpreter, but his statement is a late-fourth-century reconstruction of the hidden event behind Paul’s letter, not independent contemporary archaeological or documentary evidence.
+
+This matters because later modern interpreters can inherit a concrete ancient reconstruction and accidentally present it as though Paul himself stated all of its details.
+
+## 2.3 PG118 independently preserves the same Chrysostom material
+
+The 2026 CGPG OCR corpus gives a second transmission route in PG118 / Oecumenius.
+
+Raw corpus:
+
+- `https://raw.githubusercontent.com/calfa-co/Patrologia-Graeca/main/PG118/PG118_text.txt`
+
+The beginning of the 1 Cor 11 material is mapped around:
+
+```text
+$0 = 118
+$8 = 406
+$9 = 1
+```
+
+The unlabelled PG118 text reproduces the same reconstruction in substance:
+
+- women praying/prophesying uncovered;
+- men wearing long hair and covering their heads;
+- the practices identified as Greek customs.
+
+The PG118 volume’s own prefatory material describes the commentary as compiled/abridged from Chrysostom together with explicitly introduced material from other Fathers. Since the same passage is independently extant in Chrysostom’s directly transmitted Homily 26, the transmission relationship here is unusually well controlled.
+
+Safe result:
+
+```text
+PG118_CHRYSOSTOM_TRIGGER_PARALLEL = STRONG_TRANSMISSIONAL_CONVERGENCE
+DIRECT_CHRYSOSTOM_HOMILY = OWNER_CONTROL
+PG118_UNLABELLED_TEXT != NEW_INDEPENDENT_HISTORICAL_WITNESS
+```
+
+This is a **transmission control**, not a second vote for the historical reconstruction.
+
+## 2.4 vv4–10 — local discourse continuity
 
 Chrysostom proceeds continuously through:
 
@@ -121,7 +192,7 @@ CHRYSOSTOM_DIA_TOUTO_LOCAL_BACKLINK = DIRECT_EARLY_RECEPTION
 COSTA_LONG_DISTANCE_BACKLINK = NO_EARLY_SUPPORT_FOUND_HERE
 ```
 
-## 2.3 vv15–16
+## 2.5 vv15–16
 
 Chrysostom continues to treat the hair analogy and v16 closure as Paul’s reasoning and rebuke. He interprets v16 as rejecting contentious opposition to what Paul has just taught.
 
@@ -196,7 +267,7 @@ This patristic control therefore both strengthens source hygiene and preserves a
 | Reader | Date | What is disputed? | Speaker boundary perceived? | v10 backlink |
 |---|---:|---|---|---|
 | Tertullian | c.200 | whether `woman` includes virgins; veiling scope | no hidden Corinthian block | passage treated as apostolic command/reasoning |
-| Chrysostom | late 4th c. | meaning/application of Paul’s rule | no | explicitly from preceding reasons + angels |
+| Chrysostom | late 4th c. | meaning/application; reconstructs women uncovered and men long-haired/covered | no | explicitly from preceding reasons + angels |
 | Ambrosiaster | late 4th c. | headship/veil/angels interpretation | no | vv8–10 grouped continuously |
 
 Bounded conclusion:
@@ -216,7 +287,34 @@ because the proposed boundary was not obvious to the early readers checked, incl
 
 ---
 
-# 5. Effect on quotation-model calibration
+# 5. Separate ancient reconstruction from first-century evidence
+
+The new Chrysostom/PG118 cross-control makes an additional source-hygiene rule necessary.
+
+An ancient commentator may preserve an **early interpretation of the hidden event** without preserving independent access to the actual first-century event.
+
+Therefore:
+
+```text
+ANCIENT_RECONSTRUCTION = RECEPTION_EVIDENCE
+ANCIENT_RECONSTRUCTION != CONTEMPORARY_EVENT_EVIDENCE
+ANCIENT_RECONSTRUCTION_REPEATED_IN_LATER_CATENA != INDEPENDENT_MULTIPLE_ATTESTATION_OF_EVENT
+```
+
+This applies especially to claims such as:
+
+```text
+CORINTHIAN_WOMEN_WERE_PRAYING_BAREHEADED = NOT_PROVED_BY_CHRYSOSTOM_ALONE
+CORINTHIAN_MEN_WORE_LONG_HAIR = NOT_PROVED_BY_CHRYSOSTOM_ALONE
+CORINTHIAN_MEN_COPIED_GREEK_CUSTOMS = NOT_PROVED_BY_CHRYSOSTOM_ALONE
+PAUL_HAD_PREVIOUSLY_ISSUED_EXACT_HEAD_RULES_ORALLY = CHRYSOSTOM_RECONSTRUCTION
+```
+
+The project may cite these statements as **what Chrysostom understood the situation to be**, not as direct A-grade history.
+
+---
+
+# 6. Effect on quotation-model calibration
 
 Current dual-axis result remains:
 
@@ -231,11 +329,13 @@ The patristic pass adds:
 ```text
 EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 EARLY_RECEPTION_SUPPORT_FOR_CONTINUOUS_ARGUMENT = STRONG
+CHRYSOSTOM_EXACT_TRIGGER_RECONSTRUCTION = DIRECT_RECEPTION_NOT_FIRST_CENTURY_FACT
+PG118_CHRYSOSTOM_PARALLEL = TRANSMISSIONAL_CONTROL_NOT_INDEPENDENT_EVENT_WITNESS
 ```
 
 No core grade reversal.
 
-The low textual-fit assessment now rests on **multiple independent controls**, not conservatism by default:
+The low textual-fit assessment now rests on multiple independent controls:
 
 1. unstable modern quotation boundaries;
 2. `γάρ / καὶ γάρ -> διὰ τοῦτο` local continuity;
@@ -246,17 +346,19 @@ The low textual-fit assessment now rests on **multiple independent controls**, n
 
 ---
 
-# 6. Publication-safe formulation
+# 7. Publication-safe formulation
 
 Safe wording:
 
-> The large Corinthian-quotation interpretation is a real modern minority model, but it is not supported by a known early reception tradition in the witnesses checked here. Tertullian, Chrysostom, and Ambrosiaster all read the relevant verses as a continuous Pauline argument; Chrysostom in particular connects “for this reason” in v10 to the immediately preceding reasons. Early reception cannot settle original discourse structure, but it is a meaningful historical control against presenting the quotation boundary as obvious or traditional.
+> The large Corinthian-quotation interpretation is a real modern minority model, but it is not supported by a known early reception tradition in the witnesses checked here. Tertullian, Chrysostom, and Ambrosiaster all read the relevant verses as a continuous Pauline argument; Chrysostom in particular connects “for this reason” in v10 to the immediately preceding reasons. Chrysostom also reconstructs the underlying problem as women praying/prophesying uncovered and men wearing long hair and covering their heads, but this is his late-fourth-century reconstruction, not independent first-century evidence. PG118 preserves the same Chrysostom material and therefore controls transmission rather than multiplying historical witnesses.
 
 Do not write:
 
 ```text
 “no church father ever saw a quotation” = NOT_PROVED
 “patristic consensus proves Pauline authorship of every proposition” = OVERCLAIM
+“Chrysostom proves Corinthian women were bareheaded” = OVERCLAIM
+“PG118 independently proves Chrysostom’s Corinth event” = FALSE_MULTIPLE_ATTESTATION
 “Chrysostom says angels are priests/bishops” = FALSE
 “Ambrosiaster says angels are bishops” = TRUE_DIRECT_LATIN
 ```
@@ -267,6 +369,8 @@ Do not write:
 
 ```text
 EARLY_RECEPTION != ORIGINAL_INTENT
+ANCIENT_RECONSTRUCTION != FIRST_CENTURY_EVENT_EVIDENCE
+TRANSMISSIONAL_PARALLEL != INDEPENDENT_EVENT_WITNESS
 ABSENCE_OF_EARLY_READING != IMPOSSIBILITY
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
