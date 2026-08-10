@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "1 Corinthians 11:2-16",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "coreGradeReversals": 0,
+  "method": {
+    "agentDumpIsDiscoveryOnly": true,
+    "publisherAbstractIsNotFullText": true,
+    "peerReviewIsNotAutomaticProbabilityPromotion": true,
+    "directQuotePromotionRequiresObjectLocatorContext": true
+  },
+  "sources": [
+    {
+      "id": "nommik-2025",
+      "author": "Aldar Nommik",
+      "title": "Robes, Romans, and Rituals in First Corinthians: Paul and the Conflict over Head-Coverings",
+      "type": "dissertation/book",
+      "publicationMetadata": "verified official/institutional",
+      "modelDescription": "verified author/publisher description",
+      "hiddenCorinthEvents": "C_SERIOUS_RECONSTRUCTION",
+      "exactPageLocator": "LOCATOR_HOLD_UNLESS_EDITION_PINNED",
+      "routes": [
+        "https://ehs.se/forskning/dth/",
+        "https://wipfandstock.com/9798385259823/robes-romans-and-rituals-in-first-corinthians/",
+        "https://books.google.com/books?id=JjGFEQAAQBAJ",
+        "https://books.google.com/books?id=2KQ1EQAAQBAJ"
+      ]
+    },
+    {
+      "id": "berglund-2025",
+      "author": "Carl Johan Berglund",
+      "title": "Paulus profetiska praktik och samhallets forvantningar i Forsta Korinthierbrevet 11-14",
+      "type": "peer-reviewed journal article",
+      "evidenceClass": "B1",
+      "abstractClaims": "VERIFIED",
+      "citesNommikPages81to150": true,
+      "agentBodyLevelNommikEndorsement": "LOCATOR_HOLD",
+      "agentBodyLevelPeppiattCritique": "LOCATOR_HOLD",
+      "doi": "10.58412/hyb.v3i1.25747"
+    },
+    {
+      "id": "hooker-1964",
+      "author": "M. D. Hooker",
+      "title": "Authority on her Head: An Examination of I Cor. xi. 10",
+      "type": "peer-reviewed journal article",
+      "evidenceClass": "B1",
+      "activeExousiaApparatus": "DIRECT_CAMBRIDGE",
+      "angelMisdirectedWorshipProposal": "DIRECT_CAMBRIDGE_NOTE_PUBLISHED_ALTERNATIVE",
+      "doi": "10.1017/S0028688500024334"
+    },
+    {
+      "id": "fitzmyer-1957",
+      "author": "Joseph A. Fitzmyer",
+      "title": "A Feature of Qumran Angelology and the Angels of I Cor. XI. 10",
+      "type": "peer-reviewed journal article",
+      "evidenceClass": "B1",
+      "qumranHeavenlyAngelSupport": "DIRECT_CAMBRIDGE_EXTRACT",
+      "activeExousiaApparatus": "DIRECT_CAMBRIDGE",
+      "doi": "10.1017/S0028688500011395"
+    },
+    {
+      "id": "newberry-2019",
+      "author": "Julie Newberry",
+      "title": "Paul's Allusive Reasoning in 1 Corinthians 11.7-12",
+      "type": "peer-reviewed journal article",
+      "evidenceClass": "B1",
+      "newRelativeToUploadedDump": true,
+      "oneEsdrasIntertext": "DIRECT_CAMBRIDGE_ABSTRACT",
+      "womanAuthorityV10": "DIRECT_CAMBRIDGE_ABSTRACT",
+      "interdependenceCounterbalance": "DIRECT_CAMBRIDGE_ABSTRACT",
+      "doi": "10.1017/S0028688518000292"
+    },
+    {
+      "id": "marshall-2019",
+      "author": "Jill E. Marshall",
+      "title": "Uncovering Traditions in 1 Corinthians 11:2-16",
+      "type": "peer-reviewed journal article",
+      "evidenceClass": "B1",
+      "twoModifiedTraditions": "DIRECT_BRILL_ABSTRACT",
+      "notEquivalentToLargeQuotationModel": true,
+      "doi": "10.1163/15685365-12341617"
+    },
+    {
+      "id": "costa-2023-2024",
+      "author": "Alessandra Castilho da Costa",
+      "title": "Identificando citacoes em 1 Corintios 11:3-16: uma analise da orientacao argumentativa e do ponto de vista",
+      "type": "peer-reviewed/academic journal article",
+      "evidenceClass": "B1",
+      "newRelativeToUploadedDump": true,
+      "method": ["Textual Discourse Analysis", "Discursive Traditions", "Argumentative Semantics"],
+      "vv4to9UnendorsedQuotation": "DIRECT_OFFICIAL_ABSTRACT_PUBLISHED_PROPOSAL",
+      "largeQuotationCurrentRegistryGrade": "D_C_LOW_UNCHANGED",
+      "doi": "10.17851/2237-2083.31.3.1404-1446"
+    },
+    {
+      "id": "sales-2024",
+      "author": "Luis Josue Sales",
+      "title": "Paul and Pseudo-Paul: Authorship, Ideology, and the Difference of Androprimacy",
+      "type": "peer-reviewed open-access journal article",
+      "evidenceClass": "B1",
+      "newRelativeToUploadedDump": true,
+      "quotationModel": "REAL_PUBLISHED_ALTERNATIVE",
+      "androprimacy": "AUTHOR_CONCEPTUAL_FRAME",
+      "doesNotRaiseQuotationGradeByItself": true,
+      "doi": "10.3390/rel15091141"
+    },
+    {
+      "id": "chadwick-2022",
+      "author": "Christie Goulart Chadwick",
+      "title": "Veu ou penteado? Um estudo de 1 Corintios 11 e o uso do veu na adoracao",
+      "type": "journal article",
+      "evidenceClass": "B1",
+      "newRelativeToUploadedDump": true,
+      "hairOnlyProposal": "REAL_PUBLISHED_ALTERNATIVE",
+      "currentHairOnlyGrade": "C_SERIOUS_ALTERNATIVE_UNCHANGED",
+      "doi": "10.19141/1809-2454.kerygma.v17.n1.pe01592"
+    },
+    {
+      "id": "callon-2024",
+      "author": "Callie Callon",
+      "title": "Authority Over Whose Head? Did Paul Instruct Wives or All Women to Cover Their Heads (1 Corinthians 11:2-16)?",
+      "type": "peer-reviewed open-access journal article",
+      "evidenceClass": "B1",
+      "currentModelGrade": "B_C_SERIOUS_CURRENT_MODEL_UNCHANGED",
+      "doi": "10.1017/S0017816024000300"
+    }
+  ],
+  "unresolved": {
+    "garland2025": "HOLD_FULL_SECTION_PP468_493_NOT_DIRECTLY_ACQUIRED",
+    "ciampaRosner2010": "DETAIL_HOLD_PP503_540_DIRECT_BOOK_NOT_ACQUIRED",
+    "nommikFulltext": "P0_DIRECT_DIVA_BYTES_NOT_ACQUIRED_IN_BROWSER_PATH",
+    "costaFullArgument": "P0_ADVERSARIAL_FULLTEXT_REVIEW_NEEDED",
+    "gundryVolf": "P1_FULLTEXT",
+    "olsonFantham": "P1_DIRECT_SOCIAL_HISTORY_SECTIONS"
+  }
+}
