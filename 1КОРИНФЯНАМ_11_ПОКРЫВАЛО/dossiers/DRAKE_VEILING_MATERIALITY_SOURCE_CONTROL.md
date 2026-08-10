@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:2–16 — Susanna Drake veiling / materiality source control
 
-**Статус:** `EVERGREEN-DOSSIER / DRAKE-2025-CAMBRIDGE / DRAKE-2026-AUTHOR-INTERVIEW / MATERIALITY / SOURCE-TYPE-SEPARATION / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Статус:** `EVERGREEN-DOSSIER / DRAKE-2025-CAMBRIDGE / DRAKE-2026-AUTHOR-INTERVIEW / MATERIALITY / SOURCE-TYPE-SEPARATION / TERMINAL-PUBLISHER-ACCESS / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последнее обновление:** 2026-08-10
 
 ## 0. Authority rule
@@ -69,9 +69,13 @@ Chapter DOI:
 Route:
 - https://www.cambridge.org/core/books/veiling-in-the-late-antique-world/veils-in-corinth/BB79DFCE0FB2F5AFDD9CCB0C6C5B83D4
 
+Cambridge exposes the chapter identity, pagination and summary but marks the chapter itself **Get access**. The book-level preview likewise leaves chapter 2 behind access control. No lawful public route tested in this audit exposed the complete pp.70–89 body/notes.
+
 ```text
 DRAKE_CH2_PP70_89 = VERIFIED_CUP
-DRAKE_CH2_FULL_BODY = PAYWALL_DIRECT_BODY_HOLD
+DRAKE_CH2_SUMMARY = DIRECT_CUP
+DRAKE_CH2_FULL_BODY = TERMINAL_PUBLISHER_ACCESS_HOLD_CURRENT_RUNTIME
+DRAKE_CH2_PUBLIC_PREVIEW_ROUTES = EXHAUSTED_NO_FULL_BODY
 ```
 
 ## 2.1 What the publisher summary directly establishes
@@ -114,7 +118,8 @@ until the chapter body and notes are directly read.
 
 ```text
 PUBLISHER_SUMMARY != FULL_CHAPTER
-DRAKE_SUBCLAIM_PAGE_LOCATORS = HOLD
+DRAKE_SUBCLAIM_PAGE_LOCATORS = NOT_DIRECTLY_VERIFIED
+TERMINAL_PUBLISHER_ACCESS_HOLD != LICENSE_TO_USE_SECONDARY_RECONSTRUCTION
 ```
 
 ---
@@ -306,7 +311,7 @@ That dossier owns Rev 14:18 / 20:6, PKNT p.390 HOLD, Fendel 2023, documentary fe
 Current Drake-specific status remains:
 
 ```text
-DRAKE_EXOUSIA_DETAILED_POSITION = HOLD_CHAPTER_BODY
+DRAKE_EXOUSIA_DETAILED_POSITION = NOT_DIRECTLY_VERIFIED / CH2_BODY_TERMINAL_PUBLISHER_ACCESS_HOLD
 ```
 
 Do not duplicate the formal syntax corpus in this file.
@@ -329,14 +334,17 @@ Do not project fourth/fifth-century norms mechanically back into Roman Corinth.
 
 ---
 
-# 13. Current acquisition queue
+# 13. Final acquisition disposition
 
 ```text
-P0 DRAKE_2025_CH2_PP70_89_FULL_BODY_AND_NOTES = HOLD
-P1 DRAKE_CH1_MATERIAL_RELEVANT_TO_FIRST_SECOND_CENTURY_VEILING = HOLD
+DRAKE_2025_CH2_PP70_89_IDENTITY_AND_PAGINATION = CLOSED_DIRECT_CUP
+DRAKE_2025_CH2_PUBLISHER_SUMMARY = CLOSED_DIRECT_CUP
+DRAKE_2025_CH2_PP70_89_FULL_BODY_AND_NOTES = TERMINAL_PUBLISHER_ACCESS_HOLD_CURRENT_RUNTIME
+DRAKE_CH1_MATERIAL_RELEVANT_TO_FIRST_SECOND_CENTURY_VEILING = TERMINAL_PUBLISHER_ACCESS_HOLD_CURRENT_RUNTIME
+DRAKE_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_PUBLIC_ROUTES = EMPTY
 ```
 
-When chapter 2 becomes directly accessible, test independently:
+If a genuinely new authorized/institutional route later exposes chapter 2, test independently:
 
 ```text
 MATERIAL_VEIL
@@ -350,7 +358,7 @@ MALE_PRACTICE
 CORINTH_ARCHAEOLOGY
 ```
 
-Publisher summary and interview are not substitutes for those page-specific body claims.
+Publisher summary and interview are not substitutes for those page-specific body claims. The terminal access classification prevents repeated futile preview searches; it does not convert unavailable detail into evidence.
 
 ---
 
@@ -383,6 +391,8 @@ FIRST_CENTURY_HEAD_COVERING != NECESSARILY_MODERN_HEADSCARF
 MALE_AND_FEMALE_COVERING != SAME_SEMANTICS_AUTOMATICALLY
 CAMBRIDGE_2025 > NBN_2026_BIBLIOGRAPHIC_LABEL
 RECENT_SOURCE != AUTOMATIC_GRADE_UPGRADE
+TERMINAL_PUBLISHER_ACCESS_HOLD != SOURCE_REFUTED
+TERMINAL_PUBLISHER_ACCESS_HOLD != VERIFIED_BODY
 ```
 
 ---
@@ -397,7 +407,8 @@ DRAKE_HIDDEN_DEBATE_CONFIDENCE = LOW_OPEN
 DRAKE_VEILING_MULTIVALENCE = STRONG_AUTHOR_SELF_DESCRIPTION
 DRAKE_EARLY_OUTER_GARMENT_HEAD_COVERING = AUTHOR_MATERIALITY_CONTROL
 DRAKE_LATER_SEPARATE_VEIL_SHIFT = AUTHOR_MATERIALITY_CONTROL
-DRAKE_CH2_BODY = HOLD
+DRAKE_CH2_BODY = TERMINAL_PUBLISHER_ACCESS_HOLD_CURRENT_RUNTIME
+DRAKE_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_PUBLIC_ROUTES = EMPTY
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
