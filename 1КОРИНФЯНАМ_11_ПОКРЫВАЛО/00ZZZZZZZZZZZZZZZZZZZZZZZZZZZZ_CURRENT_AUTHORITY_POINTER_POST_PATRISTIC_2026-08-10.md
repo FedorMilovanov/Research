@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — post-patristic authority pointer
 
 **Дата:** 2026-08-10  
-**Статус:** `LATEST-BRANCH-AUTHORITY / CURRENT-EDITION-ARCHAEOLOGY-ADVANCED / ADDITIVE-SUCCESSOR-POINTER / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `LATEST-BRANCH-AUTHORITY / CURRENT-EDITION-ARCHAEOLOGY / LATE-ANTIQUE-PATRISTIC-ADVANCED / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 This file is an additive successor to `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` on this branch. It does **not** replace the current claim registry for grades.
 
@@ -17,10 +17,11 @@ This file is an additive successor to `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY
 8. `00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md` — Czech/Portuguese/Swedish/German current controls.
 9. `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md` — Corinth object provenance + image-rights ledger.
 10. `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_SPEAKER_BOUNDARY_CONTROL_2026-08-10.md` — Tertullian/Chrysostom/Ambrosiaster speaker-boundary control.
-11. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CURRENT_EDITION_ARCHAEOLOGY_ACQUISITION_DELTA_2026-08-10.md`** — Starling 2025 current commentary target; deSilva 2025 Roman Corinth archaeology target; direct Thompson 1988 archaeology owner; current acquisition/HOLD map.
-12. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ASSET_CUSTODY_CHECKSUM_SUPPLEMENT_2026-08-10.md`** — preferred open S-1116/S-1088 image files, original binary URLs, CC BY-SA 4.0 rights and SHA-1 identity pins.
-13. `data/1cor11-corpus-multilingual-visual-patristic-supplement-2026-08-10.json` — machine supplement for prior later controls.
-14. **`data/1cor11-current-edition-archaeology-acquisition-2026-08-10.json`** — machine receipt for the current-edition/archaeology acquisition pass.
+11. `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CURRENT_EDITION_ARCHAEOLOGY_ACQUISITION_DELTA_2026-08-10.md` — Starling 2025 current commentary target; deSilva 2025 Roman Corinth archaeology target; direct Thompson 1988 archaeology owner; current acquisition/HOLD map.
+12. `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ASSET_CUSTODY_CHECKSUM_SUPPLEMENT_2026-08-10.md` — preferred open S-1116/S-1088 image files, original binary URLs, CC BY-SA 4.0 rights and SHA-1 identity pins.
+13. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_LATE_ANTIQUE_VEILING_AND_PATRISTIC_ANGEL_DELTA_2026-08-10.md`** — Paczkowski 2023 dedicated patristic angelology; Stafford 2024 late-antique visual corpus/method control; D’Angelo original-publication cleanup; Galter 2021 broad cultural-history background.
+14. `data/1cor11-corpus-multilingual-visual-patristic-supplement-2026-08-10.json` — machine supplement for prior later controls.
+15. `data/1cor11-current-edition-archaeology-acquisition-2026-08-10.json` — machine receipt for the current-edition/archaeology acquisition pass.
 
 ## Current delta summary
 
@@ -37,6 +38,15 @@ EARLY_RECEPTION_SUPPORT_FOR_CONTINUOUS_ARGUMENT = STRONG
 CHRYSOSTOM_DIA_TOUTO_V10 = LOCAL_BACKLINK_TO_PRECEDING_REASONS
 AMBROSIASTER_ANGELS_AS_BISHOPS = TRUE_DIRECT_LATIN
 CHRYSOSTOM_ANGELS_AS_PRIESTS_BISHOPS = FALSE_ATTRIBUTION
+
+PACZKOWSKI_2023 = DIRECT_DEDICATED_PATRISTIC_1COR11_10_CONTROL
+PATRISTIC_ANGEL_RANGE = CELESTIAL + FALLEN_GEN6 + LITURGICAL_CELEBRANTS/PARTICIPANTS + OUTSIDER_OBSERVERS
+PATRISTIC_RANGE != MODERN_PROBABILITY_PROMOTION
+STAFFORD_2024 = DIRECT_OXFORD_LATE_ANTIQUE_VISUAL_METHOD_CONTROL
+STAFFORD_LATE_ANTIQUE_SAMPLE_WITH_COVER = 35/150 = 23.3_PERCENT
+STAFFORD_LATE_ANTIQUE_SAMPLE_UNCOVERED = 110/150 = 73.3_PERCENT
+STAFFORD_PERCENTAGES != FIRST_CENTURY_CORINTH_FREQUENCIES
+DANGELO_ORIGINAL_CHAPTER = 1995_OFF_WITH_HER_HEAD_PP131_164
 
 ROMAN_CAPITE_VELATO_BACKGROUND = A
 CORINTH_S1116 = AUGUSTUS_CAPITE_VELATO / JULIAN_BASILICA / ASCSA_PROVENANCE
@@ -100,6 +110,7 @@ P0/P1 Starling EBTC 2025 exact 1 Cor 11 section = NEW_CONTENT_HOLD
 P1 Nommik DiVA full object = RUNTIME_HOLD
 P1 deSilva 2025 Roman Corinth pp126-156 = ACQUIRE_AND_TEST_SPECIFIC_1COR11_USE
 P1 Olson/Fantham female dress/portrait sections = HOLD
+P1 direct primary-text checks behind Paczkowski reception subfamilies = OPEN
 ```
 
 ## Fail-closed boundary
@@ -111,6 +122,8 @@ DIRECT_QUOTE_FROM_AGENT = NEVER_QUOTE_SAFE_WITHOUT_DIRECT_TEXT
 PUBLISHED_MODEL != EQUALLY_PROBABLE_MODEL
 CURRENT_EDITION != POSITION_VERIFIED
 EARLY_RECEPTION != ORIGINAL_AUTHORIAL_INTENT
+LATE_ANTIQUITY != FIRST_CENTURY_CORINTH
+NORMATIVE_TEXT != BEHAVIORAL_CENSUS
 VISUAL_OBJECT != EXEGETICAL_PROOF
 OBJECT_METADATA != IMAGE_RIGHTS
 COMMONS_FILENAME != ARCHAEOLOGICAL_IDENTIFICATION_CERTAINTY
