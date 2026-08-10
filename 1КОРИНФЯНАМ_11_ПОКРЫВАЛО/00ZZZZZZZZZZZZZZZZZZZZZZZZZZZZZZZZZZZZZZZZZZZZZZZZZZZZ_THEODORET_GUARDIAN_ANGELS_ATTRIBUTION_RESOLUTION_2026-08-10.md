@@ -1,17 +1,16 @@
 # 1 Corinthians 11:10 — Theodoret guardian-angels attribution resolution
 
 **Date:** 2026-08-10  
-**Status:** `PATRISTIC-ATTRIBUTION / EXACT-PG-LOCATORS / PUBLISHED-TRANSLATION-LOCATOR / PRIMARY-PAGE-IMAGE-HOLD / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Status:** `PATRISTIC-ATTRIBUTION / EXACT-PG-LOCATORS / PUBLISHED-TRANSLATION-LOCATOR / ORIGINAL-SCAN-OBJECT-CLOSED / TARGET-RENDER-TERMINAL-TRANSPORT-HOLD / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority / supersession
 
-This is the **single retained branch owner** for the Theodoret guardian/assigned-angels attribution.
-
-It consolidates the earlier branch locator-delta and attribution-resolution layers. Future work must update this file rather than create another Theodoret successor report.
+This is the **single retained branch owner** for the Theodoret guardian/assigned-angels attribution. Direct PG-image transport state is synchronized with `dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md`.
 
 ```text
 THEODORET_GUARDIAN_ANGELS_ATTRIBUTION = VERIFIED_AT_SOURCE_LOCATOR_LEVEL
-THEODORET_DIRECT_GREEK_PAGE_AUTOPSY = HOLD
+THEODORET_PG82_ORIGINAL_SCAN_OBJECT = CLOSED_PUBLIC_DOMAIN
+THEODORET_DIRECT_GREEK_PAGE_AUTOPSY = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
 CORE_GRADE_REVERSALS = 0
 ```
 
@@ -21,17 +20,15 @@ CORE_GRADE_REVERSALS = 0
 
 Theodoret of Cyrus, *Interpretatio epistulae I ad Corinthios*, is independently identified in **PG 82**, within the standalone Pauline commentary corpus.
 
-Controls retained from the earlier locator pass:
-
+Controls:
 - Mieczysław Paczkowski, “The Angelological Topics in Patristic Exegesis of 1Cor 11:10” / “Wątki angelologiczne w egzegezie patrystycznej 1Kor 11,10” (2023), DOI `10.31743/vp.15533`;
-- Biblissima/BnF manuscript control: Paris, BnF Coislin 82, Theodoret’s Pauline commentary; 1 Corinthians occupies the relevant manuscript section;
-- Migne PG 82 index independently identifies the standalone 1 Corinthians commentary.
+- Biblissima/BnF Coislin 82 manuscript control;
+- Migne PG 82 index.
 
 Routes:
-
-- Paczkowski: https://czasopisma.kul.pl/index.php/vp/article/view/15533
-- Biblissima/BnF Coislin 82: https://portail.biblissima.fr/fr/ark%3A/43093/mdataa9131f7246a06e1c33669c7c65747f8b76ff370d
-- PG 82 index: https://www.documentacatholicaomnia.eu/1815-1875%2C_Migne%2C_PG_Volumen_082_Rerum_Conspectus_Pro_Columnis_Ordinatus%2C_MGR.html
+- https://czasopisma.kul.pl/index.php/vp/article/view/15533
+- https://portail.biblissima.fr/fr/ark%3A/43093/mdataa9131f7246a06e1c33669c7c65747f8b76ff370d
+- https://www.documentacatholicaomnia.eu/1815-1875%2C_Migne%2C_PG_Volumen_082_Rerum_Conspectus_Pro_Columnis_Ordinatus%2C_MGR.html
 
 ```text
 THEODORET_1COR_COMMENTARY = DIRECTLY_IDENTIFIED_WORK
@@ -42,7 +39,7 @@ CATENA_FRAGMENT != STANDALONE_THEODORET_COMMENTARY
 
 # 2. Exact PG locators
 
-Paczkowski gives the exact standalone commentary locators:
+Paczkowski gives:
 
 ```text
 Theodoretus Cyrensis,
@@ -51,14 +48,12 @@ PG 82, 312D
 PG 82, 313A
 ```
 
-His discussion connects Theodoret’s explanation with:
+and connects the explanation with:
 
 ```text
 Acts 12:15
 Matthew 18:10
 ```
-
-These are the passages used to support angels assigned to / caring for human beings.
 
 ```text
 THEODORET_PG_LOCATORS = PG82_312D_313A
@@ -70,13 +65,9 @@ THEODORET_MATT_18_10 = STRONG_SPECIALIST_LOCATOR_CONTROL
 
 # 3. Published modern translation route
 
-Published translation:
-
 > Theodoret of Cyrus, *Commentary on the Letters of St Paul*, vol. 1, trans. Robert Charles Hill, Holy Cross Orthodox Press, 2001.
 
-Volume 1 contains Romans and 1–2 Corinthians. The 1 Cor 11:10 explanation is repeatedly located at **p.205**.
-
-Its controlled substance is:
+The 1 Cor 11:10 explanation is repeatedly located at **p.205**. Controlled substance:
 
 ```text
 EXOUSIA = covering / display of subjection
@@ -84,22 +75,18 @@ ANGELS = those set over human beings / entrusted with their care
 SUPPORT = Acts 12:15 + Matthew 18:10
 ```
 
-Calibration:
-
 ```text
 HILL_2001_P205 = EXACT_MODERN_TRANSLATION_LOCATOR_STRONGLY_CONTROLLED
-HILL_P205_DIRECT_BOOK_BYTES_IN_CURRENT_RUNTIME = HOLD
+HILL_P205_DIRECT_BOOK_BYTES_IN_CURRENT_RUNTIME = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
 ```
 
-The project does not make an unofficial reproduction the controlling source; its function is only to converge with the exact PG locators and scriptural references supplied by specialist scholarship.
+An unofficial reproduction is not made controlling evidence.
 
 ---
 
 # 4. Independent reception control
 
-Henry Alford’s *Greek Testament* independently groups Theodoret with a guardian-angels interpretation.
-
-This is **supporting reception evidence**, not the primary ownership proof.
+Henry Alford independently groups Theodoret with a guardian-angels interpretation.
 
 ```text
 PACZKOWSKI_EXACT_PG_LOCATORS > ALFORD_CLASSIFICATION
@@ -108,7 +95,7 @@ STANDALONE_THEODORET_OWNER > CATENA_PROXIMITY
 
 ---
 
-# 5. What is now closed
+# 5. What is closed
 
 ```text
 THEODORET_GUARDIAN_ANGELS_SOURCE_ATTRIBUTION = VERIFIED
@@ -116,6 +103,7 @@ THEODORET_STANDALONE_COMMENTARY_OWNER = VERIFIED
 THEODORET_PG_82_312D_313A = CLOSED_LOCATOR
 THEODORET_HILL_VOL1_P205 = CLOSED_TRANSLATION_LOCATOR
 THEODORET_ACTS_12_15_MATT_18_10_CHAIN = CLOSED_AT_LOCATOR_TRANSLATION_LEVEL
+THEODORET_PG82_ORIGINAL_SCAN_OBJECT = CLOSED_PUBLIC_DOMAIN_COMMONS
 ```
 
 Source-near taxonomy:
@@ -125,29 +113,27 @@ ANGELS = CELESTIAL ANGELS ASSIGNED/SET OVER HUMAN BEINGS
 FUNCTION = CARE/OVERSIGHT
 ```
 
-The label `guardian angels` is a convenient modern taxonomy; the source-near wording is preferable when precision matters.
+`guardian angels` is a convenient modern taxonomy; source-near wording is preferable.
 
 ---
 
-# 6. What remains open
+# 6. Direct-image ceiling
 
-A direct rendered image / personal Greek-page autopsy of **PG 82, 312D–313A** has not yet been completed in the current controlled workflow.
-
-A public-domain PG 82 PDF is known to exist, but the earlier runtime could not complete the page-image autopsy because of object-size/access limitations.
+A public-domain PG 82 scan object is directly identified and exact target columns are closed, but the current runtime cannot render the target image through the available binary transport.
 
 ```text
+PG82_SCAN_PAGES = 854
+PG82_SCAN_FILE_SIZE = 107.37_MB
 THEODORET_EXACT_GREEK_WORDING_PERSONALLY_AUTOPSIED = false
-THEODORET_PG_PAGE_IMAGE = HOLD
+THEODORET_PG82_312D_313A_RENDERED_IMAGE = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
 QUOTE_SAFE_GREEK_FROM_THIS_PASS = false
 ```
 
-Do not generate a Greek quotation from memory or from a secondary transcription before direct page verification.
+Do not generate a Greek quotation from memory, OCR, or secondary transcription. Reopen only if a genuinely new renderable public-domain scan/critical-edition route becomes available.
 
 ---
 
 # 7. Catena firewall
-
-Keep the standalone interpretation distinct from nearby catena material:
 
 ```text
 THEODORET_GUARDIAN_ANGELS != PHOTIUS_WITNESS_ANGELS
@@ -155,13 +141,11 @@ THEODORET_GUARDIAN_ANGELS != CATENA_KYTILLOU_CHURCH_ANGELS
 CATENA_NEIGHBOR_LABEL != STANDALONE_COMMENTARY_OWNER
 ```
 
-The guardian/assigned-angels attribution is owned by the standalone PG/Hill route, not by an ambiguous Cramer-catena attribution chain.
+The attribution is owned by the standalone PG/Hill route, not ambiguous catena proximity.
 
 ---
 
 # 8. Historical reception map
-
-Current controlled diversity includes:
 
 ```text
 TERTULLIAN = FALLEN_WATCHERS / GEN6
@@ -188,12 +172,7 @@ WATCHERS = C_SERIOUS_ALTERNATIVE
 GUARDIAN_ASSIGNED_ANGELS_AS_PAULS_EXACT_MEANING = C_LOW
 ```
 
-Why source closure does not promote the Pauline theory:
-
-1. Theodoret is a fifth-century reception witness, not first-century evidence.
-2. Acts 12:15 / Matt 18:10 establish conceptual availability of assigned angels, not Paul’s exact intention here.
-3. 1 Cor 11:10 itself does not specify the angels’ exact function.
-4. Other early readers assign different functions/referents.
+Source closure does not promote the Pauline theory because Theodoret is a fifth-century reception witness and 1 Cor 11:10 does not specify exact angelic function.
 
 ```text
 THEODORET_ATTRIBUTION_CONFIDENCE = UPGRADED
@@ -202,7 +181,7 @@ PAULINE_GUARDIAN_ANGEL_PROBABILITY = UNCHANGED
 
 ---
 
-# 10. Result
+# 10. Final disposition
 
 ```text
 CORE_GRADE_REVERSALS = 0
@@ -210,9 +189,12 @@ THEODORET_STANDALONE_OWNER = CLOSED
 THEODORET_PG_LOCATOR = CLOSED_PG82_312D_313A
 THEODORET_HILL_LOCATOR = CLOSED_P205
 THEODORET_GUARDIAN_ASSIGNED_ANGEL_RECEPTION = VERIFIED_AT_LOCATOR_TRANSLATION_LEVEL
-THEODORET_DIRECT_PG_IMAGE_AUTOPSY = HOLD
+THEODORET_PG82_SCAN_OBJECT = CLOSED_PUBLIC_DOMAIN
+THEODORET_DIRECT_PG_IMAGE_AUTOPSY = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
+THEODORET_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
 GUARDIAN_ANGELS_AS_PAULS_EXACT_MEANING = C_LOW_UNCHANGED
 EXACT_ANGELIC_FUNCTION = B_C_UNCHANGED
+TERMINAL_TRANSPORT_HOLD != VERIFIED_IMAGE
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 ```
