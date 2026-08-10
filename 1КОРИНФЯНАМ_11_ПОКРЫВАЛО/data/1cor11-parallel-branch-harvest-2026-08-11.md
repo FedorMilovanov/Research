@@ -19,7 +19,7 @@ VERIFY_THEN_UPDATE_EVERGREEN_OWNER = REQUIRED
 
 ## 1. Branch delta shape
 
-At first inspection the two branches were diverged by 12 commits each. After this target branch added its first harvest receipt, the arena branch remained 12 unique commits ahead and became 13 commits behind the target branch. Its unique content delta remains concentrated in four existing evergreen files:
+The two branches remain diverged. At the latest comparison the arena branch still has **12 unique commits** not present on the target branch, while the target has continued moving ahead with multilingual and branch-harvest verification work. The arena branch's unique content delta remains concentrated in four existing evergreen files:
 
 ```text
 dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md
@@ -65,21 +65,46 @@ APPHE_HEAD_HAIR_CODE = NOT_ATTESTED
 
 **Required owner correction:** remove the stale direct-page terminal hold and narrow the old “oracle office vs prophet-wife” fork to the still-live **formal-office/status** question.
 
-### 2.2 Alessandra Castilho da Costa — official UFMG article record
+### 2.2 Alessandra Castilho da Costa — full official UFMG PDF CLOSED DIRECT
 
 Official article:
 - https://periodicos.ufmg.br/index.php/relin/article/view/55158
+- official PDF: https://periodicos.ufmg.br/index.php/relin/article/view/55158/45585
 - DOI `10.17851/2237-2083.31.3.1404-1446`
+- *Revista de Estudos da Linguagem* 31.3, pp.1404–1446.
 
-The official abstract directly states that the study uses textual-discourse/argumentative analysis, identifies antagonistic Pauline and Corinthian points of view, and concludes that **vv.4–9 are quotations not endorsed by Paul**.
+The target workflow independently rendered/read the complete official 43-page PDF, so the arena branch's substantive Costa closure is no longer agent-only discovery.
+
+Direct body establishes the author's speaker map:
 
 ```text
-COSTA_ARTICLE_IDENTITY = CLOSED_DIRECT_OFFICIAL
-COSTA_VV4_9_UNENDORSED_QUOTATION = CLOSED_DIRECT_OFFICIAL_ABSTRACT
-COSTA_DETAILED_VERSE_BY_VERSE_BODY_CLAIMS_FROM_ARENA = PENDING_INDEPENDENT_PDF_BODY_REOPEN
+COSTA_V3 = PAULINE_POV
+COSTA_VV4_9 = CORINTHIAN_POV_QUOTATION_NOT_ENDORSED_BY_PAUL
+COSTA_VV10_16 = PAULINE_POV_REFUTATION
 ```
 
-The arena branch reports a full official PDF read and much more detailed conclusions (v10, angels, v13, vv14–15). Those details remain discovery-only until the PDF body itself is independently re-rendered/read in the target workflow.
+Direct-body details:
+
+```text
+COSTA_V10_EXOUSIAN_ECHEIN = ACTIVE_WOMAN_AUTHORITY_READING
+COSTA_V10_DIA_TOUTO = AUTHOR_LINKS_BACK_OVER_PRIOR_ARGUMENT_BLOCKS
+COSTA_ANGELS = HUMAN_MESSENGER_PROPHETESS_GROUP_MODEL_IN_AUTHOR_ARGUMENT
+COSTA_V14_15 = DECLARATIVE_NOT_RHETORICAL_QUESTION_IN_AUTHOR_MODEL
+COSTA_MAN_LONG_HAIR = ALLOWED_IN_AUTHOR_MODEL
+COSTA_WOMAN_LONG_HAIR = GLORY_AND_NATURAL_COVERING_IN_AUTHOR_MODEL
+COSTA_V16 = AUTHOR_READS_AS_DENIAL_OF_CORINTHIAN_OBLIGATION_WOMAN_COVER_MAN_UNCOVER
+COSTA_FULL_OFFICIAL_PDF = CLOSED_DIRECT
+```
+
+Important calibration:
+
+```text
+COSTA_MODEL_EXISTENCE_AND_INTERNAL_ARGUMENT = DIRECT_FULL_BODY
+COSTA_MODEL_EXISTENCE != PROJECT_TEXTUAL_FIT_UPGRADE
+LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW_UNCHANGED
+```
+
+The full body materially improves source attribution and adversarial testing; it does not remove the project's independent burdens involving unmarked quotation boundaries, `γάρ` cohesion, `διὰ τοῦτο`, same-letter controls and early reception.
 
 ### 2.3 Nicole Francis 2023 — official BYU model control
 
@@ -154,8 +179,6 @@ P_WISC_I_13_USE = FORMULA_RESTORATION_CONTROL
 P_WISC_I_13_USE_AS_DIRECT_SURVIVING_EXOUSIA_LEXEME = FORBIDDEN
 ```
 
-This independently confirms the useful arena correction and sharpens the older evergreen wording “restored in the relevant region.”
-
 ### 2.7 P.Oxy. VIII 1120 — `κατά + genitive` independently closed
 
 A current peer-reviewed Oxford Academic article directly reproduces the documentary phrase from P.Oxy. 8.1120:
@@ -163,8 +186,6 @@ A current peer-reviewed Oxford Academic article directly reproduces the document
 ```text
 μὴ ἔχων κατ' αὐτῆς ἐξουσίαν
 ```
-
-The formal relation is therefore independently secure as `κατά + genitive` with active authority over a person.
 
 ```text
 P_OXY_8_1120_KATA_GEN_EXOUSIA = CLOSED_DIRECT_PAGE_SPECIFIC_SCHOLARLY_QUOTATION
@@ -185,7 +206,7 @@ and the apparatus explicitly gives for line 2.33:
 \ἐκ/
 ```
 
-So the arena shorthand `BGU.7.1655 = ἀπό + genitive` must **not** be promoted as a clean unqualified dataset reading before Fendel's XLSX row is actually opened. The direct edition records a correction/apparatus problem at precisely the preposition.
+So the arena shorthand `BGU.7.1655 = ἀπό + genitive` must **not** be promoted as a clean unqualified critical-edition reading before Fendel's XLSX row is actually opened.
 
 ```text
 BGU_7_1655_EXOUSIA_ECHEIN = CLOSED_DIRECT_DOCUMENTARY
@@ -221,9 +242,57 @@ DO_NOT_GUESS = true
 
 This is a concrete example where branch harvesting prevented a false grade/source reversal from entering the controlling owner.
 
-## 3. High-value arena assertions still quarantined pending independent source reopen
+### 2.10 Kowalski 2020 — new official KUL institutional file object CLOSED
 
-The following are **not rejected**; they are prioritized because the parallel branch reports direct closure. They remain discovery-only until the target workflow reaches the same primary body independently.
+The arena branch supplied an exact KUL bitstream route. Independent target searching now verifies the official KUL repository item:
+- Marcin Kowalski, “Między darem Bożym a konstruktem społecznym. Wczesnochrześcijańskie rozumienie płciowości na podstawie 1 Kor 11,2–16”;
+- *Biblica et Patristica Thoruniensia* 13.1 (2020): 59–104;
+- KUL handle `20.500.12153/3396`;
+- repository file `Kowalski_Marcin_Miedzy_darem_Bozym_a_konstruktem_spolecznym.pdf`, 742.32 KB;
+- Creative Commons license stated by the institutional repository.
+
+The institutional abstract directly closes the continuous-Pauline macrostructure:
+
+```text
+V2 = INTRODUCTION
+V3 = PAULINE_THESIS
+V4_6 = CULTURAL_ARGUMENT
+V7_12 = CHRISTOLOGICAL_THEOLOGICAL_ARGUMENT
+V13_15 = NATURAL_LAW_ARGUMENT
+FRAME = ECCLESIAL_INTRODUCTION_AND_CONCLUSION
+```
+
+The target runtime still has not independently rendered the exact KUL PDF bytes, so arena's full-body label remains unpromoted. However, the old state “only APCZ PDF object / terminal endpoint” is now incomplete because a **second official institutional file object** exists.
+
+```text
+KOWALSKI_KUL_ITEM = CLOSED_DIRECT_INSTITUTIONAL
+KOWALSKI_KUL_PDF_FILE_OBJECT = CLOSED_DIRECT_INSTITUTIONAL
+KOWALSKI_KUL_ABSTRACT = CLOSED_DIRECT
+KOWALSKI_FULL_BODY_TARGET_RUNTIME = STILL_RENDER_HOLD
+```
+
+### 2.11 Roman female covering controls — arena preview claims independently bounded
+
+The arena manual checklist reports rich preview extraction from Elaine Fantham 2008 and Kelly Olson 2008. Independent target searching confirms the source identities and key methodological/social direction, but not every arena page-level snippet.
+
+For Kelly Olson, Routledge directly verifies the 2008 monograph and its focus on dress as social/status visual language. A scholarly BMCR review reports Olson's distinction between prescriptive literary ideals and actual visual practice and specifically notes that the `palla` could, but need not, veil the head; the review points to pp.34–36 for this discussion.
+
+```text
+OLSON_2008_BOOK = CLOSED_DIRECT_PUBLISHER
+OLSON_PALLA_CAN_VEIL_BUT_NOT_ALWAYS = STRONG_SCHOLARLY_REVIEW_CONTROL
+OLSON_LITERARY_IDEAL_VS_VISUAL_PRACTICE = STRONG_SCHOLARLY_REVIEW_CONTROL
+ARENA_OLSON_EXACT_PREVIEW_QUOTES = NOT_ALL_INDEPENDENTLY_REPRODUCED
+```
+
+For Fantham, the chapter identity and pp.158–171 are secure; independent scholarly discussion corroborates her central contrast between male ritual head-covering and female `vittae`/`infulae` and the warning that literary dress prescriptions do not map mechanically onto portrait practice. The arena's exact preview wording remains source-lane evidence until the chapter body itself is re-rendered in the target workflow.
+
+```text
+FANTHAM_2008_CHAPTER_IDENTITY = CLOSED
+FANTHAM_HEAD_COVERING_RITUAL_GENDER_DIRECTION = STRONG_SECONDARY_CONTROL
+ARENA_FANTHAM_EXACT_PREVIEW_QUOTES = NOT_ALL_INDEPENDENTLY_REPRODUCED
+```
+
+## 3. High-value arena assertions still quarantined pending independent source reopen
 
 ### 3.1 Fendel `EXOUSIAN.xlsx`
 
@@ -237,9 +306,9 @@ P.Oxy.9.1205 = εἰς + accusative
 
 Current audit refinement:
 - P.Oxy.8.1120 `κατά + genitive` is independently corroborated;
-- BGU VII 1655 has a direct-edition `ἀπό` / apparatus `ἐκ` complication, so the arena shorthand is not safe as written;
-- P.Oxy.9.1205 exact complement remains to be independently reopened;
-- the actual Fendel XLSX row normalization remains unread in this target runtime.
+- BGU VII 1655 has a direct-edition `ἀπό` / apparatus `ἐκ` complication, so the arena shorthand is not safe as an unqualified critical-edition statement;
+- P.Oxy.9.1205 object identity is independently anchored, but the exact `εἰς + accusative` complement remains to be independently reopened;
+- ORA directly verifies the dataset and `EXOUSIAN.xlsx` (51.7 KB), but the binary remains a cache/transport hold in the target runtime.
 
 ```text
 FENDEL_ORA_DATASET_OBJECT = CLOSED_OFFICIAL
@@ -249,7 +318,7 @@ FENDEL_THREE_PP_ROW_ENUMERATION = PARTIALLY_CORROBORATED_NOT_DATASET_BODY_CLOSED
 
 ### 3.2 Potta / TAM V.1 535
 
-PHI search output now independently exposes the correct target object `TAM V,1 535`, location Maionia and `laurus`; the same search surface exposes the start/end of the Hermogenes dedication. A separate scholarly transcription reproduces the full formula including `Ποτταν ... προφῆτιν σώτειραν`, but the exact PHI target-page body has not yet rendered in the target workflow.
+PHI search output independently exposes the correct target object `TAM V,1 535`, location Maionia and `laurus`; a specialist transcription reproduces the full formula including `Ποτταν ... προφῆτιν σώτειραν`, but the exact PHI target-page body has not yet rendered in the target workflow.
 
 ```text
 POTTA_PHI_OBJECT_IDENTITY = CLOSED_DIRECT_SEARCH_SURFACE
@@ -266,23 +335,14 @@ Arena reports direct PHI body:
 νίων προφήτιδος.
 ```
 
-The exact target page has not yet been independently rendered. Nawotka's current specialist list does cite `TAM III,1 870 (Termessos)` among external `prophetis` inscriptions, so the arena claim is plausible and high priority, but body/noun-bearer syntax still requires primary reopening here.
+The exact target page has not yet been independently rendered. Nawotka's specialist list cites `TAM III,1 870 (Termessos)` among external `prophetis` inscriptions, so the arena claim is plausible and high priority, but body/noun-bearer syntax still requires primary reopening here.
 
 ```text
 TERMESSOS_870_SPECIALIST_REFERENCE = CORROBORATED
 TERMESSOS_870_DIRECT_BODY = HIGH_PRIORITY_ARENA_DISCOVERY_PENDING_REOPEN
 ```
 
-### 3.4 Kowalski 2020
-
-Arena manual checklist reports full Polish OA PDF read, while its own quotation evergreen file still retains the older `PDF_BYTES_TERMINAL_RUNTIME_ENDPOINT_HOLD` wording. This internal cross-file mismatch is exactly why branch assertions are not promoted automatically.
-
-```text
-KOWALSKI_ARENA_STATE = INTERNALLY_UNSYNCED
-TARGET_WORKFLOW = REOPEN_OFFICIAL_PDF_BEFORE_PROMOTION
-```
-
-### 3.5 Reasoner 2025 preview details
+### 3.4 Reasoner 2025 preview details
 
 Arena reports materially richer Google/publisher preview snippets for Commentary 7, including translation/section headings, v15/v16 wording fragments, and angels/authority notes.
 
@@ -291,18 +351,42 @@ REASONER_ARENA_PREVIEW_DELTA = HIGH_VALUE_DISCOVERY
 REASONER_DETAILED_POSITION = DO_NOT_PROMOTE_UNTIL_TARGET_PREVIEW_REPRODUCED
 ```
 
-### 3.6 Lisa Hughes 2007 visual table
+### 3.5 Thiselton 2000 preview details
 
-Arena reports exact peer-reviewed citation control for Table 1 (`N=113`, 67 veiled / 59%, 46 unveiled / 41%) but explicitly says this is **not direct table-image autopsy**.
+Independent target search now closes the exact section architecture inside pp.800–847:
 
 ```text
-HUGHES_TABLE_NUMBERS = ARENA_PAGE_SPECIFIC_SECONDARY_OR_TEXTUAL_CONTROL
+P800 = MUTUALITY_AND_RECIPROCITY_11_2_16
+P812 = KEPHALE_MULTIPLE_MEANINGS
+P823 = KATA_KEPHALES_COVERED_HEAD_OR_LONG_HAIR_11_4
+P828 = HEAD_COVERING_HOODS_GENDER_IDENTITY_SHAME_RESPECT_11_5_6
+P834 = IMAGE_GLORY_GENDER_DIFFERENTIATION_11_7_9
+P838 = EXOUSIA_POWER_AUTHORITY_CONTROL_OVER_WHAT_11_10
+P844 = PHYSIS_NATURE_CUSTOM_ORDERING_11_14
+P848 = NEXT_SECTION_11_17_34
+```
+
+This closes architecture/locator control but **not** the complete body wording reported by arena previews.
+
+```text
+THISELTON_TARGET_ARCHITECTURE = CLOSED
+THISELTON_ARENA_DETAILED_TRANSLATION_EXCERPTS = PENDING_REPRODUCTION
+```
+
+### 3.6 Lisa Hughes 2007 visual table
+
+Arena reports exact peer-reviewed citation control for Table 1 (`N=113`, 67 veiled / 59%, 46 unveiled / 41%) but explicitly says this is **not direct table-image autopsy**. Independent target controls support `N=113` and the later peer-reviewed citation of **59% veiled**, while the exact 67/46 table cells remain not directly autopsied.
+
+```text
+HUGHES_N_113 = STRONG_PAGE_SPECIFIC_SECONDARY_CONTROL
+HUGHES_VEILED_59_PERCENT = PEER_REVIEWED_LATER_CITATION_CONTROL
+HUGHES_67_46_COUNTS = ARITHMETICALLY_CONSISTENT_NOT_DIRECT_TABLE_AUTOPSY
 HUGHES_DIRECT_TABLE_IMAGE = NOT_YET_CLOSED_IN_TARGET_WORKFLOW
 ```
 
 ## 4. Branch-conflict audit
 
-The parallel branch is valuable but not internally perfect. Two concrete classes are now established.
+The parallel branch is valuable but not internally perfect. Two concrete classes are established.
 
 First, an internal cross-file mismatch:
 
@@ -335,23 +419,26 @@ CLOSED_VERIFIED_NOW:
   P_OXY_8_1120_KATA_GEN_CONTROL
   BGU_7_1655_APPARATUS_CAUTION
   NISYRA_SEG49_1624_FALSE_ARENA_REVERSAL
-  COSTA_OFFICIAL_ABSTRACT
+  COSTA_FULL_OFFICIAL_PDF
   FRANCIS_OFFICIAL_ABSTRACT
   HAO_LI_OFFICIAL_OBJECT_ABSTRACT
   WANG_2022_OFFICIAL_OBJECT_ABSTRACT
+  KOWALSKI_KUL_INSTITUTIONAL_FILE_OBJECT
+  THISSELTON_TARGET_SECTION_ARCHITECTURE
 
 P0A = APPHE_OWNER_CORRECTION
 P0B = NISYRA_OWNER_RETAIN_REFERENCE_ERROR_AND_RECORD_ARENA_FALSE_REVERSAL
 P0C = TERMESSOS_TAMIII1_870_DIRECT_BODY_REOPEN
 P0D = FENDEL_EXOUSIAN_XLSX_ROW_REOPEN
 P0E = EXOUSIA_OWNER_ABSORB_PWISC_POXY_BGU_REFINEMENTS
-P1A = COSTA_FULL_OFFICIAL_PDF_REOPEN
-P1B = KOWALSKI_FULL_OFFICIAL_PDF_REOPEN
-P1C = REASONER_PREVIEW_REPRODUCTION
-P1D = POTTA_DIRECT_PHI_REOPEN
-P1E = HAO_LI_CHINESE_PDF_REOPEN
-P1F = WANG_2022_CHINESE_PDF_REOPEN
-P2 = FRANCIS_FULL_PDF / HUGHES_TABLE_IMAGE / OTHER_NONBLOCKING_BODY_CONTROLS
+P0F = QUOTATION_OWNER_ABSORB_COSTA_FULL_BODY_AND_KOWALSKI_KUL_ROUTE
+P1A = KOWALSKI_FULL_OFFICIAL_PDF_REOPEN
+P1B = REASONER_PREVIEW_REPRODUCTION
+P1C = POTTA_DIRECT_PHI_REOPEN
+P1D = HAO_LI_CHINESE_PDF_REOPEN
+P1E = WANG_2022_CHINESE_PDF_REOPEN
+P1F = P_OXY_9_1205_EXACT_COMPLEMENT_REOPEN
+P2 = FRANCIS_FULL_PDF / HUGHES_TABLE_IMAGE / FANTHAM_OLSON_PAGE_AUTOPSY / OTHER_NONBLOCKING_BODY_CONTROLS
 ```
 
 ## 6. Research-state result
@@ -361,7 +448,9 @@ PARALLEL_BRANCH_HARVEST = ACTIVE
 ARENA_UNIQUE_COMMITS_AT_LATEST_COMPARE = 12
 ARENA_UNIQUE_CHANGED_EVERGREEN_FILES = 4
 ARENA_NISYRA_FALSE_REVERSAL_CAUGHT = YES
-INDEPENDENT_PRIMARY_OR_OFFICIAL_CONFIRMATIONS = APPHE + PWISC + POXY8_1120 + BGU7_1655 + NISYRA_CONTROL + COSTA_ABSTRACT + FRANCIS_ABSTRACT + HAO_LI_OBJECT_ABSTRACT + WANG_2022_OBJECT_ABSTRACT
+COSTA_FULL_OFFICIAL_PDF_CLOSED_IN_TARGET_WORKFLOW = YES
+KOWALSKI_SECOND_OFFICIAL_INSTITUTIONAL_FILE_ROUTE_FOUND = YES
+INDEPENDENT_PRIMARY_OR_OFFICIAL_CONFIRMATIONS = APPHE + PWISC + POXY8_1120 + BGU7_1655 + NISYRA_CONTROL + COSTA_FULL_BODY + FRANCIS_ABSTRACT + HAO_LI_OBJECT_ABSTRACT + WANG_2022_OBJECT_ABSTRACT + KOWALSKI_KUL_OBJECT + THISSELTON_ARCHITECTURE
 HIGH_VALUE_UNVERIFIED_AGENT_DELTAS = QUARANTINED_NOT_DROPPED
 CORE_GRADE_REVERSALS = 0
 MULTILINGUAL_REOPEN_SWEEP = ACTIVE
