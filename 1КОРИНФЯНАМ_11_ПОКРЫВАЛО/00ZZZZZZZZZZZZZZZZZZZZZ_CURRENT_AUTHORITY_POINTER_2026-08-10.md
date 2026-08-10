@@ -1,206 +1,63 @@
-# 1 Коринфянам 11:2–16 — current authority pointer after citation quarantine + direct-source + corpus/visual controls
+# 1 Коринфянам 11:2–16 — legacy current-authority pointer
 
 **Дата:** 2026-08-10  
-**Статус:** `LATEST-AUTHORITY-POINTER / CITATION-QUARANTINE / DIRECT-SOURCE / QUOTATION-STRESS / PRIMARY-CORPUS / MULTILINGUAL / VISUAL-ARCHAEOLOGY / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `DEPRECATED-NAVIGATION-SHIM / PATH-PRESERVED / RESEARCH-ONLY / PUBLICATION-HOLD`
 
-## Read order
+## Current navigation
 
-1. `00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md` — provenance / ownership / publication boundary.
-2. `00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md` — single current claim-grade registry; **still controlling for grades**.
-3. `00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md` — current Greek edition/text-base contract.
-4. `00ZZZZZZZZZZZZZZZZZZZZ_AGENT_DUMP_48_TARGET_VERIFICATION_AUDIT_2026-08-10.md` — first uploaded agent-dump source-hygiene audit.
-5. **`00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`** — second 48+ target source-specific reconciliation; current control for Fee/Garland/Ciampa-Rosner attribution, Nõmmik institutional summary, Finney direct abstract and Murphy-O’Connor human-messenger source status.
-6. **`00ZZZZZZZZZZZZZZZZZZZZZ_MONTIER_SHAVED_HEAD_SOCIAL_MYTH_CONTROL_2026-08-10.md`** — direct open-fulltext control against the shaved-prostitute/temple-prostitute folklore claim.
-7. **`00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`** — stop-layer for fabricated/mis-cited fresh-source claims: P.Oxy. 5575, Kirk JBL 142.3, Ehrensperger/Al-Suadi ritual chapters, Chrysostom false quote, DeConick JBL/chapter attribution, Yung Suk Kim, Petterson and Punt bibliographic controls.
-8. **`00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`** — direct publisher/institutional source pass; Nõmmik access-map separation, Berglund 2025 provenance, Hooker/Fitzmyer Cambridge controls, Newberry 2019, Marshall 2019, Costa 2023/24, Salés 2024, Chadwick 2022 and Callon 2024.
-9. **`00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`** — current adversarial control for the large quotation/refutation family; Costa body stress-tested against `διὰ τοῦτο`, punctuation, v3 semantics, v16, Salés boundary, Marshall modified-tradition model and Newberry continuity model.
-10. **`00ZZZZZZZZZZZZZZZZZZZZZZZZ_PAULINE_QUOTATION_SLOGAN_CORPUS_CONTROL_2026-08-10.md`** — same-letter primary-corpus control: explicit opponent speech (1:12; 15:12), letter-source frame (7:1), disputed short slogans (6:12–13; 8:1/4; 10:23), quotation-boundary methodology, and no close verified analogue for a 6–8 verse hostile quotation with internal `γάρ` chain + `διὰ τοῦτο` pivot.
-11. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md`** — non-English/current control: Czech Hamplová 2025 full thesis, Portuguese Costa/Chadwick context, Swedish Berglund, German Lumesberger-Loisl 2025 bibliographic HOLD, plus Nicole Francis as a distinct recent model.
-12. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`** — object-level visual archaeology and rights: Corinth S-1116 Augustus `capite velato`, S-1088 disputed Julio-Claudian veiled male, ASCSA *Corinth XXII*, and CC BY-SA image candidates.
-13. Claim-specific primary/adversarial audits listed in the current registry.
+This historical path is intentionally preserved so older links do not break, but it is **no longer a current read-order owner**.
 
-These later layers **do not supersede core claim grades** because no core grade changed. They supersede conflicting raw-agent `verified/gold/fully verified` labels, improve source ownership/provenance, separate scholarly status from textual fit, and add archaeological/image-rights controls.
+Use:
 
----
-
-## Current verified source-hygiene and acquisition controls
+1. [`00_CURRENT_INDEX_1COR11.md`](00_CURRENT_INDEX_1COR11.md) — stable human-readable navigation authority;
+2. `00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md` — controlling current claim grades;
+3. the specialized dossier/audit named by the index for the claim being checked.
 
 ```text
-FEE_FORMAL_2014_LABEL = REVISED_EDITION
-FEE_2014_EXTERNAL_COVERING = VERIFIED_CURRENT_ED_REVIEW
-FEE_2014_KEPHALE_SOURCE = VERIFIED_CURRENT_ED_REVIEW
-FEE_2014_EXOUSIA_ACTIVE_RIGHT = VERIFIED_CURRENT_ED_REVIEW
-
-YARBROUGH_JIPP = BECNT_SERIES_EDITORS
-GARLAND_2003_POSITION != VERIFIED_GARLAND_2025_POSITION
-GARLAND_2025_11_2_16 = PP_468_493 + NOTES / HOLD_DIRECT_READ
-
-CIAMPA_ROSNER_KEPHALE_PREEMINENCE_ONLY = REJECTED_OVERSIMPLIFICATION
-CIAMPA_ROSNER_KEPHALE_AUTHORITY_COMPONENT = STRONG_SECONDARY_ATTESTED
-CIAMPA_ROSNER_V10_WOMAN_AUTHORITY_RIGHT = STRONG_SECONDARY_ATTESTED
-CIAMPA_ROSNER_DIRECT_P509_530_533 = HOLD
-
-SHAVED_HEAD = TEMPLE_PROSTITUTE_MARKER = REJECTED_UNIVERSAL
-SHAVED_WOMAN = UNIVERSALLY_ADULTERESS = REJECTED
-
-NOMMIK_MODEL_DESCRIPTION = A_AUTHOR/INSTITUTIONAL_DESCRIPTION
-NOMMIK_HIDDEN_EVENTS = C_SERIOUS_RECONSTRUCTION
-NOMMIK_BACKGROUND_SUBSTRATE != NOMMIK_HIDDEN_TRIGGER
-NOMMIK_EXACT_PAGE_LOCATOR = EDITION_PIN_REQUIRED
-NOMMIK_DIVA_FULLTEXT_ROUTE = OFFICIALLY_ADVERTISED_BUT_RUNTIME_CACHE_HOLD
-BERGLUND_2025_PEER_REVIEWED = VERIFIED_INSTITUTIONAL
-BERGLUND_CITES_NOMMIK_81_150 = VERIFIED_DIRECT_JOURNAL_PAGE
-BERGLUND_AGENT_BODY_LEVEL_ENDORSEMENTS = LOCATOR_HOLD
-
-FINNEY_MODEL_DESCRIPTION = DIRECT_JSNT_ABSTRACT
-MURPHY_OCONNOR_HUMAN_MESSENGERS = DIRECT_OXFORD_ABSTRACT
-HUMAN_MESSENGERS_LIKELIHOOD = D_C_LOW_PUBLISHED_ALTERNATIVE
-
-HOOKER_EXOUSIA_ACTIVE = DIRECT_CAMBRIDGE_APPARATUS
-HOOKER_ANGEL_MISDIRECTED_WORSHIP_MODEL = REAL_PUBLISHED_ALTERNATIVE
-FITZMYER_QUMRAN_HEAVENLY_ANGEL_SUPPORT = DIRECT_CAMBRIDGE_EXTRACT
-FITZMYER_EXOUSIA_ACTIVE = DIRECT_CAMBRIDGE_APPARATUS
-NEWBERRY_1_ESDRAS_4_INTERTEXT = DIRECT_CAMBRIDGE_ABSTRACT
-NEWBERRY_V10_WOMAN_AUTHORITY = DIRECT_CAMBRIDGE_ABSTRACT
-MARSHALL_TWO_MODIFIED_TRADITIONS = DIRECT_BRILL_ABSTRACT
-MARSHALL_MODEL != LARGE_QUOTATION_MODEL
-
-COSTA_VV4_9_UNENDORSED_QUOTATION = REAL_B1_LINGUISTIC_PROPOSAL
-COSTA_BODY_ARGUMENT = SUBSTANTIALLY_READ_SAME_DOI_CC_BY_OBJECT
-COSTA_DIA_TOUTO_V10 = MAJOR_DISCOURSE_BURDEN
-COSTA_V13_V14_15 = REPUNCTUATION/DISCOURSE_REANALYSIS_BURDEN
-SALES_2024_ANDROPRIMACY_QUOTATION_MODEL = REAL_B1_ALTERNATIVE
-SALES_BOUNDARY = VV3_10
-COSTA_BOUNDARY = VV4_9
-LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
-LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
-LARGE_QUOTATION_LEADING_MODEL = false
-
-PAUL_EXPLICIT_OPPONENT_SPEECH_FRAMES = A_TEXT_1COR1_12_15_12
-PAUL_LETTER_SOURCE_FRAME = A_TEXT_1COR7_1
-UNMARKED_SLOGAN_CANDIDATES = REAL_BUT_BOUNDARIES/OWNERSHIP_DISPUTED
-SHORT_SLOGAN_PARALLEL != LONG_QUOTATION_PROOF
-CLOSE_6_8_VERSE_HOSTILE_QUOTE_ANALOGUE_IN_INSPECTED_1COR_CORPUS = NOT_FOUND
-ABSENCE_OF_QUOTATIVE_FORMULA_ALONE = NOT_DISPOSITIVE
-
-HAMPLOVA_2025_FULL_CZECH_THESIS = DIRECT_INSTITUTIONAL_OBJECT
-HAMPLOVA_V10_ACTIVE_WOMAN = CURRENT_RECEPTION_SUPPORT_NOT_NEW_LEXICAL_PROOF
-HAMPLOVA_CITES_GARLAND_2003_NOT_2025 = EDITION_FIREWALL
-FRANCIS_ROMAN_ANALOGY_NOT_DRESS_CODE = REAL_DISTINCT_RECENT_MODEL
-LUMESBERGER_LOISL_2025_GERMAN_CHAPTER = BIBLIOGRAPHIC_VERIFIED_CONTENT_HOLD
-
-CORINTH_S1116_AUGUSTUS_CAPITE_VELATO = A2_OBJECT/PROVENANCE
-CORINTH_S1116_FINDSPOT = JULIAN_BASILICA
-CORINTH_S1088_VEILED_JULIO_CLAUDIAN = STRONG_OBJECT_CONTROL
-CORINTH_S1088_PERSON_IDENTIFICATION = DISPUTED
-ASCSA_CORINTH_XXII_2022 = CURRENT_ASSEMBLAGE_CONTROL
-S1116_COMMONS_IMAGE = CC_BY_SA_4_0_PUBLICATION_CANDIDATE
-S1088_COMMONS_IMAGE = CC_BY_SA_4_0_PUBLICATION_CANDIDATE_WITH_ID_QUALIFICATION
-
-POXY_84_5575_1COR11_PARALLEL = REJECTED_FABRICATION
-POXY_5575_ACTUAL = VOL_87_2023_SAYINGS_OF_JESUS
-KIRK_JBL_142_3_2023_509_530 = REJECTED_FALSE_CITATION
-EHRENSPERGER_JECH_13_1_2023 = REJECTED_FALSE_CITATION
-EHRENSPERGER_RITUAL_EMOTION_CHAPTER = REJECTED_FALSE_CITATION
-AL_SUADI_EARLY_CHRISTIAN_RITUAL_LIFE_1COR11 = REJECTED_FALSE_CITATION
-CHRYSOSTOM_ANGELS_PRIESTS_BISHOPS_QUOTE = REJECTED_FABRICATED_QUOTE
-DECONICK_JBL_140_3_2021_599_616 = REJECTED_FALSE_CITATION
-DECONICK_GNOSTIC_NEW_AGE_STANDALONE_CHAPTER = REJECTED_AS_CITED
-DECONICK_EXACT_1COR11_USE = HOLD_DIRECT_READ
-YUNG_SUK_KIM_2023_1COR_BOOK = QUARANTINE_NOT_LOCATED
-PETTERSON_BOOK = REAL_BUT_MISCITED
-PETTERSON_1COR11_SPECIALIST_USE = HOLD
-PUNT_REAL_SOURCE = TRUE_BUT_AGENT_CITATION_FALSE
-PUNT_SPECIFIC_1COR11_MODEL = HOLD_DIRECT_READ
-
-CORE_GRADE_REVERSALS = 0
+THIS_FILE_CONTROLS_GRADES = false
+THIS_FILE_CONTROLS_READ_ORDER = false
+CURRENT_INDEX_CONTROLS_NAVIGATION = true
+CURRENT_CLAIM_REGISTRY_CONTROLS_GRADES = true
 ```
 
----
+## Why this file is now a shim
 
-## Current core remains
+During the 2026-08-10 research marathon this file accumulated an ever-growing list of successor layers. That pattern caused navigation duplication:
 
 ```text
-MATERIAL_COVERING = B_HIGH_LEADING
-HAIR_ONLY = C_SERIOUS_ALTERNATIVE
-KEPHALE_HEADSHIP_AUTHORITY = B_LEADING
-KEPHALE_SOURCE_ONLY = C_VIABLE
-WIVES_VS_ALL_WOMEN = OPEN_B_C
-EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
-EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
-EXOUSIA_EXACT_REFERENT = B_C
-HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
-ANGELS_AS_COSMIC_WITNESSES/PRESENT_ASSEMBLY = B_LEADING
-EXACT_ANGELIC_FUNCTION = B_C
-WATCHERS = C_SERIOUS_ALTERNATIVE
-ROMAN_CAPITE_VELATO_BACKGROUND = A
-V4_EXACT_CAPITE_VELATO = B_C
-EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
-PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
-V16_TRANSLOCAL_CHURCH_APPEAL = A_TEXT
-V16_NORMATIVE_FORCE = B_HIGH
-V16_EXACT_CUSTOM_REFERENT = B_C
-ONE_ESDRAS_4_INTERTEXT = B_C_SERIOUS_PROPOSED
-LARGE_QUOTATION_REFUTATION = D_C_LOW_TEXTUAL_FIT
+pointer
+-> later pointer
+-> later pointer
+-> source delta
+-> later correction
 ```
 
-Quotation-family clarification:
+The current architecture replaces that ladder with:
 
 ```text
-D_C_LOW = CURRENT_TEXTUAL_FIT_GRADE
-NOT = CLAIM_THAT_NO_SERIOUS_SCHOLAR_ADVOCATES_IT
+STABLE_INDEX
+-> CLAIM_REGISTRY
+-> EVERGREEN_DOSSIER_OR_CONTROLLING_AUDIT
+-> HISTORICAL_RECEIPT_ONLY_WHEN_PROVENANCE_IS_NEEDED
 ```
 
-Shoemaker/Costa/Salés establish a genuine published minority family. The same-letter corpus audit does not verify a close long-block parallel, while Marshall/Newberry demonstrate competing continuity models explaining the tension without speaker change.
+The previous detailed contents remain available in git history and in the retained source-specific files. They are not repeated here.
 
----
-
-## Current P0 direct-text holds
+## Anti-sprawl rule
 
 ```text
-Thiselton NIGTC 2000: pp.800–847 + notes
-Fee NICNT Revised 2014: approx pp.542–586 + notes; include pp.565–567 addendum
-Garland BECNT 2nd ed. 2025: pp.468–493 + notes
-Ciampa/Rosner PNTC 2010: pp.503–540 + notes
-Nõmmik DTH 9: full DiVA object + edition-pinned locators
+DO_NOT_CREATE_NEW_Z_LADDER_POINTER = true
+DO_NOT_CREATE_PASS_N_REPORT_IF_DOSSIER_EXISTS = true
+UPDATE_EVERGREEN_DOSSIER = preferred
+UPDATE_CURRENT_CLAIM_REGISTRY = only_if_grade_or_owner_changes
+PRESERVE_OLD_PATH_AS_SHIM_IF_BACKLINKS_MAY_EXIST = true
 ```
 
-Costa is no longer merely an abstract-only target: the same-DOI CC BY body was substantially inspected and the model has dedicated adversarial and same-letter corpus controls.
-
-## Next agent-side high-value targets
-
-1. Garland 2025 complete pp.468–493 + notes.
-2. Ciampa/Rosner pp.503–540 + notes; replace quote chains with direct book text.
-3. Nõmmik DiVA full object if runtime route opens; current official fulltext link remains cache-blocked.
-4. Direct full Watson & Culy criteria/1 Cor 11 discussion if lawfully accessible.
-5. Technical discourse corpus for `γάρ`, `καὶ γάρ`, `διὰ τοῦτο`, `πλὴν` in polyphonic/quoted discourse.
-6. Early reception control: whether any premodern reader independently perceived a Corinthian speaker boundary in vv3–10/vv4–9.
-7. Gundry-Volf full chapter.
-8. Olson/Fantham exact Roman female dress/portrait sections.
-9. DeConick *The Gnostic New Age*, direct chapter read only.
-10. Punt, “Pauline Bodies and South African Bodies,” direct read before 1 Cor 11-specific attribution.
-11. Expand rights-safe visual ledger to coins/reliefs and respectable female portraiture without turning images into dress-frequency statistics.
-12. Continue multilingual 2025–2026 search; bibliographic hits stay HOLD until content is directly checked.
-
-Do not ask the user for these while agent-side lawful access routes remain available.
-
----
-
-## Boundary
+## Publication boundary
 
 ```text
-AGENT_DUMP = DISCOVERY_ONLY
-FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
-DIRECT_QUOTE_FROM_AGENT = NEVER_QUOTE_SAFE_WITHOUT_DIRECT_TEXT
-RECENCY != AUTHORITY
-PEER_REVIEW != CORRECTNESS
-PUBLISHER_ABSTRACT != FULL_ARTICLE
-NUMBER_OF_ADVOCATES != TEXTUAL_PROOF
-VISUAL_OBJECT != EXEGETICAL_PROOF
-OBJECT_METADATA != IMAGE_RIGHTS
-DO_NOT_REQUEST_FROM_USER_IF_AGENT_CAN_ACCESS = true
 PRODUCT_WRITE = false
-UI_IMPLEMENTATION = false
 SITE_PUBLICATION = false
 PUBLICATION_HOLD = true
+RESEARCH_CLOSURE != PRODUCT_APPROVAL
 ```
