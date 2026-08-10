@@ -5,36 +5,23 @@
 
 ## 0. Read order
 
-This is the stable human entry point for the 1 Cor 11:2–16 corpus.
-
 ```text
-1. READ THIS INDEX
-2. READ CURRENT_CLAIM_REGISTRY FOR THE GRADE
-3. OPEN THE CONTROLLING DOSSIER/AUDIT FOR THE CLAIM
-4. OPEN HISTORICAL RECEIPTS ONLY WHEN PROVENANCE IS NEEDED
+1. THIS INDEX
+2. CURRENT_CLAIM_REGISTRY for grade
+3. CONTROLLING DOSSIER/AUDIT for evidence
+4. HISTORICAL RECEIPT only when provenance is needed
 ```
 
-Do **not** infer authority from the number of `Z` characters or filename recency.
+Do not infer authority from filename recency or number of `Z` characters.
 
 ---
 
 # 1. Current claim / text authority
 
-### Claim grades
-
-- [`00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md`](00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md)
-
-### Greek text / textual-risk contract
-
-- [`00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md`](00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md)
-
-### Provenance / publication boundary baseline
-
-- [`00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md`](00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md)
-
-### Legacy navigation path
-
-- `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` is now a **deprecated shim** preserved only for old backlinks; it no longer controls read order or grades.
+- [`00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md`](00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md) — **grades**.
+- [`00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md`](00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md) — Greek text / textual-risk contract.
+- [`00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md`](00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md) — provenance/publication baseline.
+- `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` — **deprecated shim only**, preserved for old backlinks.
 
 ---
 
@@ -55,19 +42,18 @@ Do **not** infer authority from the number of `Z` characters or filename recency
 
 - [`dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`](dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md)
 
-It owns:
+Owns:
 
 ```text
-V10 ἐξουσίαν / κάλυμμα textual separation
+v10 ἐξουσίαν / κάλυμμα separation
 ἐξουσίαν ἔχειν active semantic direction
 biblical exact/near ἐξουσία + ἐπί controls
-Fendel documentary corpus
-female Roman documentary/epigraphic right-bearers
+Fendel corpus
+female documentary right-bearers
 bounded exact-head-parallel search
-PKNT / XLSX acquisition holds
 ```
 
-Current core remains claim-registry owned:
+Current grade layer:
 
 ```text
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
@@ -75,8 +61,6 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 EXACT_NONBIBLICAL_HEAD_PHRASE = NOT_FOUND_IN_BOUNDED_SEARCH
 ```
-
-Historical source receipts remain available, but they are not separate current navigation owners.
 
 ---
 
@@ -86,22 +70,7 @@ Historical source receipts remain available, but they are not separate current n
 
 - [`dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`](dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md)
 
-It owns:
-
-```text
-Tryphosa / Eirene / Cleopatra
-Didyma 235B προφητίσκη firewall
-Agatho source-error correction
-Miletos 481 female divine-manifestation channel
-Didyma visual-honour culture
-British Museum archaic Didyma head objects
-Andania ritual headwear + hair separation
-Lycosura correction
-Virgil / Lucan / Diodorus / Plutarch / Iamblichus comparative layer
-Delphi negative object/personnel control
-DAI Inschriften von Didyma Supplement acquisition route
-bounded prophetess + head/hair search
-```
+Owns Tryphosa, Eirene, Cleopatra, Didyma 235B, Agatho correction, Miletos 481, Didyma visual-honour culture, Delphi, archaic Didyma head objects and the bounded `prophetess + head/hair` search.
 
 Current bounded result:
 
@@ -111,36 +80,54 @@ IDENTIFIED_TRYPHOSA_EIRENE_PORTRAIT = NOT_FOUND
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
+### Single Andania/Lycosura direct-epigraphy owner
+
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MASSEY_2015_ANDANIA_LYCOSURA_EPIGRAPHY_FULLTEXT_AUDIT_2026-08-10.md`
+
+It now consolidates:
+
+```text
+MASSEY_2015_FULLTEXT
+ANDANIA_PHI_CGRN_DIRECT_TEXT
+ANDANIA_WHITE_PILOS + WOMEN_HAIR_ADORNMENT_RULES
+ANDANIA_DATE_DISPUTE_91BCE_VS_C23CE
+LYCOSURA_DIRECT_TEXT
+VOUTIRAS_1999
+KARATAS_2020
+DITTENBERGER_TOUS_ANDRAS_FIREWALL
+LYCOSURA_EXACT_GENDER_MAPPING = OPEN
+```
+
+The former separate Andania and Lycosura correction overlays were absorbed and removed.
+
 ---
 
 # 5. Roman ritual / Corinth archaeology / visual custody
 
-### General Roman head-covering evidence
+### General Roman background
 
 - `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
 - `00ZZZZZZZZZZZ_NOMMIK_OPEN_ROUTE_ADVERSARIAL_AUDIT_2026-08-10.md`
 
-### Single current Corinth object + image-custody ledger
+### Corinth object + image-custody owner
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`
 
-The ledger now owns both object provenance **and** reusable-photo custody/checksums for:
+Owns S-1116, S-1088, ASCSA provenance, reusable Commons originals, CC BY-SA custody, SHA1 pins and Johnson legacy mappings.
 
-```text
-S1116 = Augustus capite velato, Julian Basilica
-S1088 = veiled Julio-Claudian male, person ID disputed
-Commons rights / original binary URLs / SHA1 pins
-Johnson 1931 legacy catalogue mappings
-Peters 2013 legacy-route HOLD
-```
+### Female Roman / late-antique visual-method owner
+
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_ROMAN_FEMALE_VEILING_STATUS_VISUAL_DELTA_2026-08-10.md`
+
+Owns Fantham, Olson, Hughes, Stafford and Galter with chronology/genre boundaries.
 
 ```text
 ROMAN_CAPITE_VELATO_BACKGROUND = A
 V4_EXACT_CAPITE_VELATO = B_C
-VISUAL_OBJECT != EXEGETICAL_PROOF
+PORTRAIT_SAMPLE != POPULATION_CENSUS
 ```
 
-### Current-edition archaeology acquisition map
+### Current-edition archaeology acquisition
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CURRENT_EDITION_ARCHAEOLOGY_ACQUISITION_DELTA_2026-08-10.md`
 
@@ -150,31 +137,32 @@ VISUAL_OBJECT != EXEGETICAL_PROOF
 
 - `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_UNBOUND_HAIR_PRIMARY_SOCIAL_CORPUS_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZ_LYCOSURA_MASSEY_GENDER_CORRECTION_OVERLAY_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZ_ANDANIA_DIRECT_INSCRIPTION_HEADWEAR_HAIR_OVERLAY_2026-08-10.md`
 
-The ritual dossier above owns the current cross-axis synthesis; these files remain source-specific controls.
+Andania/Lycosura ritual hair/headwear material is now owned by the single epigraphy owner in section 4 rather than separate overlays.
 
 ---
 
 # 7. Angels / patristic reception
 
-### Primary Pauline / Second Temple controls
+### Primary Pauline / Second Temple
 
 - `00ZZZZZZZZZZZZZZ_ANGELS_PRIMARY_CORPUS_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZ_ANGEL_MODELS_STRESS_MATRIX_2026-08-10.md`
 
-### Current patristic owners
+### Cross-author patristic owner
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_ANGEL_PRIMARY_TEXT_DELTA_2026-08-10.md`
+
+Now owns Paczkowski’s specialist map plus primary ownership distinctions for Tertullian, Chrysostom, Ambrosiaster, Severian and the cross-map to author-specific owners.
+
+### Other current patristic owners
+
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_SPEAKER_BOUNDARY_CONTROL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CLEMENT_IRENAEUS_EARLY_ANGEL_RECEPTION_PRIMARY_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CATENA_CRAMER_ATTRIBUTION_FIREWALL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGELS_ATTRIBUTION_RESOLUTION_2026-08-10.md`
 
-Theodoret retained owner now includes PG82 locators, Hill 2001 p.205, Biblissima/BnF manuscript route and catena separation. The earlier locator-delta has been consolidated and removed.
-
-The Cramer firewall owns Cyril/Kytilou normalization and Photius local label tracking; the separate Cyril correction has been consolidated and removed.
+The mixed late-antique/patristic delta was split into the proper patristic and female-visual owners and removed.
 
 ### PG/OCR workflow
 
@@ -183,14 +171,13 @@ The Cramer firewall owns Cyril/Kytilou normalization and Photius local label tra
 ```text
 OCR = LOCATOR_ENGINE
 OCR != SOURCE_IMAGE_AUTHORITY
-DIRECT_PAGE_IMAGE > OCR_FOR_PUBLICATION_QUOTE
 ```
 
 ---
 
 # 8. Recent / multilingual scholarship
 
-### Current literature radar / source cards
+### Radar / source cards
 
 - `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
@@ -198,20 +185,18 @@ DIRECT_PAGE_IMAGE > OCR_FOR_PUBLICATION_QUOTE
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md`
 
-### Gundry-Volf / Gielen / Hao Li / Standhartinger retained owner
+### Gundry-Volf / Gielen / Hao Li / Standhartinger owner
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_GIELEN_CHINESE_SCHOLARSHIP_SOURCE_CONTROL_2026-08-10.md`
-
-It now owns the absorbed Gundry-Volf two-context refinement and Standhartinger false-freshness control.
 
 ```text
 GUNDRY_VOLF = HAIRSTYLE + TWO_SOCIAL_CONTEXTS + CULTURE_CREATION_IN_CHRIST
 GIELEN = MODIFIED_SHORT_HAIR_NOT_SIMPLE_UNBOUND_HAIR
 LI_HAO = 2023_ORIGINAL / 2025_REPOST_BLOCKED
-STANDHARTINGER = 2002_ARTICLE / 2003_BOOK_VERSION / 2025_PLATFORM_DATE_BLOCKED
+STANDHARTINGER = 2002_ARTICLE / 2003_BOOK / 2025_PLATFORM_DATE_BLOCKED
 ```
 
-### Quotation/refutation controls
+### Quotation/refutation
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZ_PAULINE_QUOTATION_SLOGAN_CORPUS_CONTROL_2026-08-10.md`
@@ -222,7 +207,7 @@ STANDHARTINGER = 2002_ARTICLE / 2003_BOOK_VERSION / 2025_PLATFORM_DATE_BLOCKED
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2026_AUTHOR_INTERVIEW_MATERIALITY_CONTROL_2026-08-10.md`
 
 ```text
-PUBLISHER_CHAPTER_SUMMARY != FULL_BOOK_BODY
+PUBLISHER_SUMMARY != FULL_BOOK_BODY
 AUTHOR_INTERVIEW != PEER_REVIEWED_BOOK_BODY
 REPOST_DATE != ORIGINAL_PUBLICATION_DATE
 ```
@@ -236,12 +221,10 @@ GARLAND_2025_2E = P0_DIRECT_TEXT_HOLD
 REASONER_2025_BRILL_COMMENTARY_7 = P0_P1_DIRECT_CHAPTER_HOLD
 STARLING_2025_EBTC = P0_P1_SECTION_HOLD
 GORMAN_2025_EERDMANS = P1_THEOLOGICAL_SECTION_HOLD
-THISelton_2000_FULL_SECTION = HOLD
+THISELTON_2000_FULL_SECTION = HOLD
 FEE_REVISED_2014_FULL_SECTION = HOLD
 CIAMPA_ROSNER_2010_DETAIL = HOLD
 ```
-
-Reasoner page-label firewall remains in its source card; do not propagate impossible circulated page claims before direct body acquisition.
 
 ---
 
@@ -254,7 +237,6 @@ Reasoner page-label firewall remains in its source card; do not propagate imposs
 ```text
 AGENT_OUTPUT = DISCOVERY_ONLY
 BIBLIOGRAPHIC_EXISTENCE != CLAIM_VERIFICATION
-SECONDARY_QUOTE != DIRECT_CURRENT_EDITION_TEXT
 FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
 ```
 
@@ -267,11 +249,11 @@ DO_NOT_CREATE_NEW_Z_LADDER_POINTER = true
 DO_NOT_CREATE_PASS_N_REPORT_IF_DOSSIER_EXISTS = true
 UPDATE_EVERGREEN_DOSSIER = preferred
 UPDATE_CURRENT_CLAIM_REGISTRY = only_if_claim_grade_or_owner_changes
-ADD_SEPARATE_RECEIPT = only_if_machine/provenance need is genuinely distinct
+ADD_SEPARATE_RECEIPT = only_if machine/provenance need is genuinely distinct
 PRESERVE_OLD_MAIN_PATH_AS_DEPRECATED_SHIM_IF_BACKLINKS_MAY_EXIST = true
 ```
 
-When a branch-only successor is fully absorbed by a retained owner, delete the successor from the branch rather than preserving duplicate current-state summaries.
+If a branch-only successor is fully absorbed by a retained owner, delete the successor rather than preserving duplicate current-state summaries.
 
 ---
 
