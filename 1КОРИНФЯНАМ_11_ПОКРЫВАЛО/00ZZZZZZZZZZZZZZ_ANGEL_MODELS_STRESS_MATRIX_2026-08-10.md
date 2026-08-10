@@ -1,36 +1,31 @@
 # Angel-model stress matrix — 1 Cor 11:10
 
 **Дата:** 2026-08-10  
-**Статус:** `MODEL-STRESS-TEST / PRIMARY-CORPUS-CONTROL / RESEARCH-ONLY`
+**Статус:** `MODEL-STRESS-TEST / PRIMARY-CORPUS-CONTROL / SOURCE-PROVENANCE / RESEARCH-ONLY / PUBLICATION-HOLD`
 
-## Legend
+## 0. Legend / method
 
 ```text
-NATURAL = model fits direct Pauline/Qumran data with little extra machinery
+NATURAL = fits direct Pauline/Second-Temple data with little extra machinery
 COMPATIBLE = possible but not specifically predicted
-EXTRA_ASSUMPTION = important unstated link is required
-TENSION = local Pauline usage pushes against the model
-MAJOR_TENSION = model must overcome multiple local controls
+EXTRA_ASSUMPTION = important unstated link required
+TENSION = local evidence pushes against model
+MAJOR_TENSION = multiple local controls must be overcome
+PUBLISHED_PROVENANCE != DIRECT_PRIMARY_PROOF
 ```
-
----
 
 | Evidence node | Holy/heavenly witnesses | Watchers | Human messengers | Bishops/clergy | Guardian angels |
 |---|---|---|---|---|---|
 | v10 unmodified plural `angels` | `NATURAL` | `COMPATIBLE` | `TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
 | 1 Cor 4:9 angels as audience | **`NATURAL/STRONG`** | `COMPATIBLE` | `TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
-| 1 Cor 6:3 believers judge angels | `NATURAL` | `COMPATIBLE` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
-| 1 Cor 13:1 humans vs angels | `NATURAL` | `COMPATIBLE` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
-| Qumran angels in holy assembly | **`NATURAL/STRONG`** | `TENSION` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
-| Songs of Sabbath Sacrifice | **`NATURAL/STRONG`** | `TENSION` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
-| 1 Tim 5:21 elect angels witness church order | **`NATURAL/STRONG`** | `TENSION` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
-| Heb 12 heavenly assembly | `NATURAL` | `TENSION` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
-| 1 Enoch sexual angel tradition | `COMPATIBLE` | **`NATURAL/STRONG`** | `MAJOR_TENSION` | `MAJOR_TENSION` | `TENSION` |
-| Jude 6–7 fallen angel tradition | `COMPATIBLE` | **`NATURAL`** | `MAJOR_TENSION` | `MAJOR_TENSION` | `TENSION` |
-| Tertullian reception of v10 | `COMPATIBLE` | **`NATURAL`** | `TENSION` | `TENSION` | `TENSION` |
+| 1 Cor 6:3 / 13:1 celestial field | `NATURAL` | `COMPATIBLE` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
+| Qumran / Sabbath Songs heavenly assembly | **`NATURAL/STRONG`** | `TENSION` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
+| 1 Tim 5:21 elect angels witness order | **`NATURAL/STRONG`** | `TENSION` | `MAJOR_TENSION` | `MAJOR_TENSION` | `COMPATIBLE` |
+| 1 Enoch / Jude fallen-angel tradition | `COMPATIBLE` | **`NATURAL/STRONG`** | `MAJOR_TENSION` | `MAJOR_TENSION` | `TENSION` |
+| Tertullian reception | `COMPATIBLE` | **`NATURAL`** | `TENSION` | `TENSION` | `TENSION` |
 | immediate vv7–9 creation context | **`NATURAL`** | `COMPATIBLE + EXTRA_ASSUMPTION` | `TENSION` | `TENSION` | `COMPATIBLE` |
-| woman's active `exousia` syntax | `NATURAL/COMPATIBLE` | `COMPATIBLE` | `COMPATIBLE` | `TENSION` if external authority imposed | `COMPATIBLE` |
-| no explicit sexual-danger language in v10 | `NATURAL` | `EXTRA_ASSUMPTION` | `NATURAL` | `NATURAL` | `NATURAL` |
+| woman as grammatical `ἐξουσία` bearer | `NATURAL/COMPATIBLE` | `COMPATIBLE` | `COMPATIBLE` | `TENSION` if imposed external authority | `COMPATIBLE` |
+| no explicit sexual-danger language | `NATURAL` | `EXTRA_ASSUMPTION` | `NATURAL` | `NATURAL` | `NATURAL` |
 | no introduced human delegates | `NATURAL` | `NATURAL` | **`MAJOR_TENSION`** | `MAJOR_TENSION` | `NATURAL` |
 | no explicit guardian relation | `NATURAL` | `NATURAL` | `NATURAL` | `NATURAL` | `EXTRA_ASSUMPTION` |
 
@@ -38,7 +33,7 @@ MAJOR_TENSION = model must overcome multiple local controls
 
 # 1. Holy/heavenly witness family
 
-## Best-supported minimum
+Best-supported minimum:
 
 ```text
 THE_ANGELS = HEAVENLY_BEINGS
@@ -46,54 +41,41 @@ THEY_BELONG_TO_THE_COSMIC_AUDIENCE/ASSEMBLY_OF_GOD
 THEIR_PRESENCE_MAKES_ORDERED_CONDUCT_BEFORE_GOD_SIGNIFICANT
 ```
 
-This minimum does **not** require a detailed theory of angelic offense, lust, guardianship or priestly inspection.
+Strengths:
 
-### Strengths
+- same-letter celestial field, especially 1 Cor 4:9;
+- Second-Temple heavenly-assembly background;
+- early-Christian heavenly-assembly analogues;
+- no need to redefine ordinary `angels` as a human office.
 
-- same-letter anchor in 1 Cor 4:9;
-- same-letter celestial semantic field;
-- Second Temple holy-assembly background;
-- early Christian heavenly-assembly background;
-- no need to change ordinary `angels` into a special human office.
+Remaining gap:
 
-### Remaining gap
-
-Why exactly does angelic presence require **this head-state**?
-
-The primary corpus makes the conceptual move plausible, but Paul does not state the intermediate proposition.
-
-Current:
+> Why exactly does angelic presence require this particular head-state?
 
 ```text
 HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
-COSMIC_WITNESS/PRESENT_ASSEMBLY_FUNCTION = B_LEADING
-EXACT_FUNCTION = B_C
+COSMIC_WITNESS_PRESENT_ASSEMBLY_FUNCTION = B_LEADING
+EXACT_ANGELIC_FUNCTION = B_C
 ```
 
 ---
 
-# 2. Watchers family
+# 2. Watchers / fallen-angel family
 
-## Best version of the model
-
-Do **not** caricature it as “angels randomly lust after hats.” Its strongest form is:
+Strongest form:
 
 1. Genesis 6 / Enochic tradition associates heavenly beings with illicit desire for women;
-2. early Jewish and Christian readers knew this tradition;
-3. Paul’s creation argument has just invoked Genesis categories;
+2. the tradition was known in early Jewish/Christian contexts;
+3. Paul has just invoked creation categories;
 4. female bodily/head presentation may therefore be regulated partly in view of angelic sexual transgression.
 
-This is a coherent published/reception model.
+Local burdens:
 
-## Why it still loses locally
-
-- the immediate Genesis material is Genesis 2, not Genesis 6;
-- Paul does not mark the angels as fallen;
+- immediate creation material is Genesis 2, not Genesis 6;
+- Paul does not call these angels fallen;
 - same-letter angel usage has a closer positive/cosmic-audience parallel;
-- Enoch’s Watchers are punished/bound, complicating present predatory danger;
-- no lust/beauty/temptation vocabulary appears in v10.
-
-Thus:
+- Watchers are punished/bound in Enochic tradition;
+- v10 has no lust/beauty/temptation vocabulary.
 
 ```text
 WATCHERS_BACKGROUND = A
@@ -101,20 +83,42 @@ WATCHERS_REFERENT = C_SERIOUS
 SEXUAL_THREAT_MECHANISM = C_LOW_TO_C
 ```
 
+## 2.1 L. J. Lietaert Peerbolte 2000 — source-provenance control
+
+L. J. Lietaert Peerbolte, “Man, Woman, and the Angels in 1 Cor 11:2–16,” in *The Creation of Man and Woman: Interpretations of the Biblical Narratives in Jewish and Christian Traditions*, TBN 3 (Leiden: Brill, 2000), 76–92.
+
+Publisher route:
+- https://brill.com/display/book/edcoll/9789047400394/B9789047400394_s016.xml
+
+Cambridge bibliography independently confirms the chapter/pages.
+
+Strong secondary page-specific controls report:
+
+```text
+PEERBOLTE_PP86_87 = WOMAN_EXERCISES_CONTROL_OVER_HER_HEAD
+PEERBOLTE_WATCHERS_ENOCHIC_LINE = STRONG_SECONDARY_ATTESTED
+PEERBOLTE_DIRECT_CHAPTER_BODY = HOLD
+```
+
+This strengthens the documented scholarly provenance of the active-woman / Watchers family; it does **not** upgrade the local textual probability without direct body and stronger primary linkage.
+
+```text
+PEERBOLTE_PROVENANCE_ADDED = true
+WATCHERS_GRADE_CHANGE = none
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+```
+
 ---
 
 # 3. Human messengers
 
-The model usually proposes visitors/delegates from other churches or human observers.
-
-Lexical possibility exists because `ἄγγελος` can mean messenger.
-
-But the local semantic burden is high:
+`ἄγγελος` can lexically mean messenger, but the local burden is high:
 
 - same-letter `angels` are celestial;
-- humans are explicitly distinguished from angels in 4:9 and 13:1;
-- v10 supplies no source/mission/arrival language;
-- church messengers elsewhere can be called `ἀπόστολοι ἐκκλησιῶν` (2 Cor 8:23), so Paul has clearer human-delegate vocabulary.
+- humans are distinguished from angels in 4:9 and 13:1;
+- v10 has no mission/arrival/source language;
+- Paul has clearer human-delegate vocabulary elsewhere (`ἀπόστολοι ἐκκλησιῶν`, 2 Cor 8:23).
 
 ```text
 HUMAN_MESSENGERS = D_C_LOW
@@ -122,27 +126,21 @@ HUMAN_MESSENGERS = D_C_LOW
 
 ---
 
-# 4. Bishops/clergy
+# 4. Bishops / clergy
 
-Historical reception matters: later Christians could call ecclesial officers “angels” and Revelation’s church-angels encouraged that route.
-
-But as original 1 Cor 11:10 exegesis:
+Later reception can call ecclesial officers “angels,” and Revelation encouraged this route. As original 1 Cor 11:10 exegesis, same-letter semantics and lack of office terminology create major tension.
 
 ```text
-BISHOPS_CLERGY = D_C_LOW
+BISHOPS_CLERGY = D_C_LOW_RECEPTION
 ```
 
-because the same-letter semantic field and lack of office terminology create major tension.
-
-This model belongs in reception history, not the leading grammatical-historical layer.
+Reception ownership belongs in the patristic files; it is not leading grammatical-historical evidence.
 
 ---
 
 # 5. Guardian angels
 
-This model has genuine wider Jewish/Christian conceptual support: heavenly guardians of persons/communities are not alien to the period.
-
-But v10 does not say:
+Guardian-person/community traditions are historically plausible, but v10 does not say:
 
 ```text
 their angels
@@ -150,52 +148,41 @@ her angel
 angels assigned to women
 ```
 
-Hence:
-
 ```text
 GUARDIAN_ANGELS_EXACT = C_LOW
 ```
 
-It remains more plausible than clergy/human delegates as an angelic identity, but less textually anchored than generic heavenly witnesses.
+More plausible as an angelic identity than human delegates/clergy, less locally anchored than generic heavenly witnesses.
 
 ---
 
-# 6. Model burden ranking
-
-From lowest to highest local burden:
+# 6. Burden ranking
 
 ```text
-1. HEAVENLY/HOLY ANGELS, COSMIC WITNESS/PRESENCE FAMILY
+1. HEAVENLY/HOLY ANGELS — COSMIC WITNESS/PRESENCE
 2. WATCHERS / FALLEN-ANGEL FAMILY
 3. GUARDIAN-ANGEL SPECIALIZATION
 4. HUMAN MESSENGERS
 5. BISHOPS/CLERGY
 ```
 
-This is not a metaphysical ranking of possible angelologies. It is specifically a **1 Cor 11:10 contextual burden ranking**.
+This ranks contextual burden in 1 Cor 11:10, not metaphysical possibility.
 
 ---
 
-# 7. What would change the ranking?
+# 7. Promotion / downgrade conditions
 
-## Promote Watchers toward B if
+Promote Watchers toward B only if a stronger primary bridge appears, for example:
 
-- a pre-Pauline text links women’s veiling/head-state specifically to preventing Watcher desire;
-- a Pauline text uses unmodified `angels` for Genesis-6 rebels in a comparable ethical instruction;
-- full P0 commentary evidence supplies a much tighter Genesis 2 → Genesis 6 transition than currently visible.
+- pre-Pauline text linking women’s head-state specifically to preventing Watcher desire;
+- comparable Pauline use of unmodified `angels` for Genesis-6 rebels in ethical instruction;
+- direct major-commentary evidence demonstrating a tighter Genesis 2 → Genesis 6 transition.
 
-## Downgrade holy/heavenly witness family if
+Downgrade heavenly-witness family if its primary assembly controls prove textually/restorationally too weak or if a stronger local referent signal emerges.
 
-- primary evidence shows Qumran congregation-angel language is textually/restorationally too unstable to bear the comparison;
-- 1 Cor 4:9 is shown not to imply observational audience in any relevant sense;
-- a stronger local lexical signal for another referent emerges.
+Promote human messengers only with direct Pauline evidence that unqualified `οἱ ἄγγελοι` denotes visiting church delegates in a comparable context.
 
-## Promote human messengers if
-
-- direct evidence appears that `οἱ ἄγγελοι` was a known Pauline label for visiting church delegates without qualification;
-- the Corinthian context independently introduces such delegates.
-
-At present none of these promotion conditions is met.
+None of those promotion conditions is currently met.
 
 ---
 
@@ -203,12 +190,14 @@ At present none of these promotion conditions is met.
 
 ```text
 HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
-ANGELS_AS_COSMIC_WITNESSES/PRESENT_ASSEMBLY = B_LEADING
+ANGELS_AS_COSMIC_WITNESSES_PRESENT_ASSEMBLY = B_LEADING
 EXACT_ANGELIC_FUNCTION = B_C
 WATCHERS = C_SERIOUS
 GUARDIAN_ANGELS = C_LOW
 HUMAN_MESSENGERS = D_C_LOW
 BISHOPS_CLERGY = D_C_LOW_RECEPTION
+PEERBOLTE_DIRECT_BODY = HOLD
+CORE_GRADE_REVERSALS = 0
+PUBLICATION_HOLD = true
+PRODUCT_WRITE = false
 ```
-
-No Product/UI work.
