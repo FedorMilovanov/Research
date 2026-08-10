@@ -106,6 +106,57 @@ SALES_BOUNDARY = VV3_10
 AGREEMENT_QUOTATION_EXISTS != AGREEMENT_WHERE_QUOTATION_IS
 ```
 
+## 2.4 Lucy Peppiatt 2015 — alternating-voice model
+
+Lucy Peppiatt, *Women and Worship at Corinth: Paul’s Rhetorical Arguments in 1 Corinthians* (2015).
+
+Direct JSTOR book control verifies the monograph, its 2015 date and the dedicated 1 Cor 11 chapters:
+
+```text
+ch1 1 Corinthians 11:2–16: The Problems with the Women = pp21–43
+ch2 Men and Women before God = pp44–65
+ch3 A Rhetorical Reading Revisited = pp66–84
+ch4 The Teaching of Paul = pp85–111
+```
+
+JSTOR’s book description identifies Peppiatt’s larger reconstruction as Paul engaging domineering Corinthian male leadership, including a practice of coercing women to wear head coverings.
+
+Important boundary firewall: ch.3 opens by describing **Shoemaker’s** older contiguous `11:2–10 -> 11:11–16` model. That description is not Peppiatt’s own exact final segmentation.
+
+A public 2023 author interview/transcript provides a direct self-description of her own alternating-voice proposal:
+
+```text
+vv2_3 = PAUL
+vv4_5 = CORINTHIAN theology/practice quoted back
+v6 = PAUL / reductio ad absurdum
+vv7_10 = CORINTHIANS
+v11 = PAUL resumes / combats their view
+v14 = PAUL ironic/sarcastic reuse of a view she attributes to them
+v15 = PAUL hair-as-covering “trump card” in her reading
+v16 = PAUL denies that the churches have the proposed custom
+```
+
+The same interview is methodologically useful because Peppiatt explicitly presents the reconstruction as a hypothesis and acknowledges that she may be wrong; she also notes that quotation punctuation is not present in the original Greek and must be inferred.
+
+```text
+PEPPIATT_2015 = REAL_MONOGRAPH_LENGTH_RHETORICAL_QUOTATION_REFUTATION_MODEL
+PEPPIATT_MODEL_FAMILY = ALTERNATING_VOICE
+PEPPIATT_EXPLICIT_QUOTATION_MARKER_AT_V4_OR_V7 = ABSENT
+PEPPIATT_AUTHOR_CERTAINTY = HYPOTHESIS_NOT_CLAIMED_PROOF
+PEPPIATT_MODEL_STATUS = C_SERIOUS_PUBLISHED_ALTERNATIVE
+```
+
+Peppiatt therefore must not be collapsed into Shoemaker/Costa/Salés. The disagreement inside the family is not only whether quotation exists, but **how many speaker switches are required and where**.
+
+```text
+SHOEMAKER = CONTIGUOUS_LARGE_BLOCK_LINEAGE
+COSTA = VV4_9_QUOTATION
+SALES = VV3_10_QUOTATION
+PEPPIATT = ALTERNATING_VOICE_WITH_MULTIPLE_SWITCHES
+```
+
+This strengthens the scholarly-status map but does not raise the project’s textual-fit grade: more switches also increase the need for positive speaker-boundary criteria.
+
 ---
 
 # 3. Continuous-Pauline / rhetorical-coherence controls
@@ -326,6 +377,21 @@ PLEN_V11_PROVES_NEW_SPEAKER = false
 
 One speaker can qualify/counterbalance his own argument.
 
+### Peppiatt-specific burden
+
+Peppiatt’s model avoids one single long uninterrupted hostile quotation but pays for that with **multiple inferred speaker switches**:
+
+```text
+PAUL -> CORINTHIANS -> PAUL -> CORINTHIANS -> PAUL
+```
+
+No explicit quotation/source marker occurs at the proposed v4 or v7 transitions. Her model therefore needs positive discourse criteria for each switch rather than receiving a probability bonus merely because the resulting theology is more coherent.
+
+```text
+PEPPIATT_EXPLANATORY_COHERENCE != SPEAKER_BOUNDARY_PROOF
+PEPPIATT_MULTIPLE_SWITCHES = ADDITIONAL_TEXTUAL_BURDEN
+```
+
 ---
 
 # 7. Early reception speaker-boundary control
@@ -406,9 +472,9 @@ NO_CHURCH_FATHER_EVER_SAW_A_QUOTATION = NOT_PROVED
 
 | Control | Large quotation family | Continuous models |
 |---|---|---|
-| serious published advocates | yes | yes |
-| agreed quotation boundary | **no** | N/A |
-| explicit source frame at 11:3/4 | no | not required |
+| serious published advocates | yes: Shoemaker / Costa / Salés / Peppiatt | yes |
+| agreed quotation boundary | **no; Peppiatt adds alternating switches** | N/A |
+| explicit source frame at 11:3/4/7 | no | not required |
 | close long unmarked same-letter analogue | not found | not required |
 | local `γάρ → διὰ τοῦτο` | burden | natural |
 | `πλὴν` v11 | possible pivot | internal qualification possible |
@@ -417,9 +483,9 @@ NO_CHURCH_FATHER_EVER_SAW_A_QUOTATION = NOT_PROVED
 
 Why textual fit remains low:
 
-1. no explicit source/quotative frame at the proposed boundary;
-2. advocates disagree over span;
-3. proposed block is longer/more explanatory than safer slogan candidates;
+1. no explicit source/quotative frame at the proposed boundaries;
+2. advocates disagree over span and even over number of speaker switches;
+3. proposed blocks are longer/more explanatory than safer slogan candidates, or in Peppiatt’s case require repeated unmarked transitions;
 4. local `γάρ / καὶ γάρ → διὰ τοῦτο` supports continuity;
 5. `πλὴν` need not mark a new speaker;
 6. several forms require additional semantic/punctuation moves;
@@ -452,7 +518,7 @@ Accumulating further advocates alone should not alter probability.
 
 Safe summary:
 
-> A substantial Corinthian-quotation reading is a genuine published minority family. Paul can quote/reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block; advocates disagree over its span; several modern rhetorical studies read the passage continuously; and the checked early witnesses likewise read it as Paul’s continuous argument. The model therefore belongs in the status quaestionis but remains low in textual fit.
+> A substantial Corinthian-quotation reading is a genuine published minority family, now including both contiguous-block and alternating-voice proposals. Paul can quote/reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or for repeated alternating unmarked switches; advocates disagree over span; several modern rhetorical studies read the passage continuously; and the checked early witnesses likewise read it as Paul’s continuous argument. The model family therefore belongs in the status quaestionis but remains low in textual fit.
 
 Do not write:
 
@@ -462,6 +528,7 @@ NO_QUOTATION_MARKS_THEREFORE_IMPOSSIBLE = FALSE_METHOD
 PLEN_PROVES_NEW_SPEAKER = OVERCLAIM
 NA28_PUNCTUATION_PROVES_COSTA_IMPOSSIBLE = OVERCLAIM
 EARLY_RECEPTION_PROVES_ORIGINAL_INTENT = OVERCLAIM
+PEPPIATT_EXPLANATORY_POWER_PROVES_SWITCHES = OVERCLAIM
 ```
 
 ---
@@ -473,6 +540,7 @@ CORE_GRADE_REVERSALS = 0
 LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
 LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
 LARGE_QUOTATION_LEADING_MODEL = false
+PEPPIATT_2015 = ABSORBED_AS_DISTINCT_ALTERNATING_VOICE_MODEL
 CLOSE_LONG_UNMARKED_ANALOGUE = NOT_FOUND_IN_INSPECTED_1COR
 EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 EARLY_CONTINUOUS_PAULINE_READING = STRONGLY_ATTESTED
