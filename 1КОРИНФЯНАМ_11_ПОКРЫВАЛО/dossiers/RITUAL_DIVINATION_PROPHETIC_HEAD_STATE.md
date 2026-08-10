@@ -42,7 +42,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 | Cleopatra, Didyma | restored `[προφ]ήτιδι` | fragmentary candidate | **No** |
 | Didyma 235B | `καλὴ προφητίσκη` graffito | informal / possibly sarcastic; office unproved | **No** |
 | Agatho, Didyma | prophet's wife + building benefaction | source-error negative control | **No** |
-| Potta, Maionia | `TAM V.1 535`, `προφῆτιν σώτειραν` | external Asia-Minor prophetis | **No** |
+| Potta, Maionia | `TAM V.1 535`, `προφῆτιν σώτειραν`; PHI target indexed with `laurus` | external Asia-Minor prophetis | **Target monument is a laurel-motif stele, not the neighboring veiled figure** |
 | Ammias, Thyateira | direct priestess + postmortem vision-oracle formula | oracular priestly control, not prophetis | **No** |
 | Ammia, Philadelphia | Eusebian female prophetess | early-Christian reception | **No** |
 | Nanas, Phrygia | PHI-indexed `προφήτισα`; Poirier 2004 prints full epitaph | late prophetess / angelic-language comparator | **No marker found** |
@@ -51,7 +51,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 | Thera / IG XII.3 1349/863 | anonymous Delphic `[προφ]ῆτις` sends oracle | role control | **No** |
 | IGLSyr 1 51 | `ἀναγραφή` itself called `προφήτις` | false-person control | **Not a woman** |
 | Athens / IG II² 13148 | female funerary epigram, no mantic wording in indexed text | very likely reference error | **Not countable** |
-| Nisyra / SEG 49.1624 | PH348429 / TM949255; body incomplete | candidate-list HOLD | **Unknown** |
+| Nisyra / SEG 49.1624 | PH348429 / TM949255; PHI indexed text is a two-line dedication without visible `προφῆτις` | **very likely reference error in Nawotka fn.77; do not count as secure prophetess** | **No target iconography established** |
 | Termessos / TAM III,1 870 | PH280975; cult context verified, body/genre incomplete | candidate-list HOLD | **Unknown** |
 | Lebadeia / IG VII 3111 | PH146626; body incomplete | candidate-list HOLD | **Unknown** |
 | Andania / Lycosura | direct ritual headwear/hair regulation | separate regulatory axes | **Yes, not prophetess-specific** |
@@ -217,9 +217,14 @@ Published text includes:
 
 Oxford independently treats her as prophetess / `soteira` and mediator or mouthpiece of Zeus.
 
+The PHI search index now exposes the target object itself (`TAM V,1 535`, Lydia: Maionia), including its opening `Ἑρμογένης Μητροδώρου ...` and closing `... σώτειραν γενομένην τοῦ Ἑρμογένου`, while the direct object page still hits the runtime cache boundary. The indexed object is marked `laurus`; independent epigraphic description identifies the same monument as a **stele with representation of a laurel leaf**.
+
 ```text
 POTTA_PROPHETIS = B_HIGH_EXACT_REFERENCE_PLUS_INDEPENDENT_OXFORD_CONTROL
-DIRECT_PHI_BODY = RUNTIME_CACHE_HOLD
+POTTA_PHI_TARGET_OBJECT_SEARCH_INDEX = CLOSED_PARTIAL_BODY
+POTTA_DIRECT_PHI_FULL_TITLE_LINE = RUNTIME_CACHE_HOLD
+POTTA_TAM535_VISUAL_DESCRIPTION = LAURUS / LAUREL_LEAF_STELE
+POTTA_TAM535_SAME_OBJECT_FIGURAL_HEAD_HAIR = NOT_ATTESTED
 POTTA_HEAD_HAIR_CODE = NOT_ATTESTED
 ```
 
@@ -227,6 +232,7 @@ Nearby `TAM V.1 533` may show a veiled figure, but:
 
 ```text
 MAIONIA_533_POSSIBLY_VEILED != POTTA_TAM535
+NONFIGURAL_LAUREL_STELE != NEGATIVE_EVIDENCE_FOR_POTTA_LIVE_RITUAL_DRESS
 ```
 
 ## 4.2 Ammias of Thyateira — oracle function, not `prophetis`
@@ -300,7 +306,13 @@ APPHE_HEAD_HAIR_CODE = NOT_FOUND
 
 # 5. External reference-list audit
 
-Nawotka footnote 77 is an **acquisition list**, not ten verified historical women.
+Nawotka explicitly states that outside Miletos/Didyma there are **“only ten inscriptions attesting prophetesses”** and footnote 77 supplies the ten references below. Item-by-item checking shows that the footnote cannot be used as a ready-made ten-prophetess prosopography: at least one entry is a grammatical non-person (`IGLSyr 1 51`), one is a female epitaph without mantic wording (`IG II² 13148`), and the accessible PHI indexed body for `SEG 49.1624` likewise does not attest a prophetess.
+
+```text
+NAWOTKA_FN77_LIST_CLAIM = TEN_INSCRIPTIONS_ATTESTING_PROPHETESSES
+NAWOTKA_FN77_REFERENCE != VERIFIED_PROPHETESS_OBJECT
+ITEM_BY_ITEM_NOUN_BEARER_AUDIT = REQUIRED
+```
 
 ## 5.1 IGLSyr 1 51 — false person
 
@@ -339,26 +351,26 @@ DO_NOT_GUESS_REPLACEMENT
 
 ## 5.4 Nisyra — `SEG 49.1624 / PH348429 / TM949255`
 
-PHI search exposes the target opening:
+PHI's own indexed search result exposes the target as a short two-line dedication:
 
 ```text
-Θεῷ Βασιλεῖ ...
-μετὰ τῶν ἰδίων πάντων κατὰ ἐπιταγήν
+Θεῷ Βασιλεῖ Διονο[ι— μετὰ τῶν]
+ἰδίων πάντων κατ[ὰ ἐπιταγὴν]
 ```
 
-Independent narrowing:
+The indexed target contains no visible `προφῆτις`, female noun-bearer or mantic title. Trismegistos independently locks the object identity as `TM 949255 = SEG 49.1624`. Opening the direct PHI object currently returns a cache miss, so this audit does **not** infer an unknown intended replacement reference.
+
+Adjacent `SEG 49.1623` is independently a different object: a dedication to Apollo and Artemis, with olive branch + double axe. Its iconography cannot be transferred to 1624.
 
 ```text
-MALAY_1999_NO136 = SEG49_1623_DIRECT_PHI
-MALAY_1999_NO137 = NISYRA_ROMAN_IMPERIAL_SOTERIA_INSCRIPTION_INDEPENDENT_CONTROL
-MALAY_NO137_EQ_SEG49_1624 = PLAUSIBLE_NOT_DIRECTLY_VERIFIED
-```
-
-Adjacent `1623` has olive branch + double axe; a 2024 regional Nisyra archaeology study documents broader local cultic iconography. Neither may be transferred to target 1624.
-
-```text
-NISYRA_1624_FULL_BODY = RUNTIME_CACHE_HOLD
-NISYRA_1624_NOUN_BEARER = HOLD
+NISYRA_1624_PHI_INDEXED_BODY = CLOSED_TWO_LINE_DEDICATION
+NISYRA_1624_TM949255_CROSSWALK = CLOSED
+NISYRA_1624_PROPHETIS_IN_INDEXED_BODY = NOT_FOUND
+NISYRA_1624_COUNT_AS_SECURE_PROPHETESS = NO
+NISYRA_1624_NAWOTKA_FN77_STATUS = VERY_LIKELY_REFERENCE_ERROR
+NISYRA_1624_DIRECT_OBJECT_PAGE = RUNTIME_CACHE_HOLD
+NISYRA_1624_INTENDED_REFERENCE = UNKNOWN
+DO_NOT_GUESS_NISYRA_REPLACEMENT = true
 SEG49_1623_ICONOGRAPHY != SEG49_1624_ICONOGRAPHY
 REGIONAL_ARCHAEOLOGY != TARGET_OBJECT_ICONOGRAPHY
 ```
@@ -441,6 +453,18 @@ PHILOKRATEIA_P445_FIGURAL_HEAD_HAIR_MARKER = NOT_PRESENT
 NON_FIGURAL_STELE_PHOTO != LIVE_RITUAL_DRESS_EVIDENCE
 ```
 
+Potta / Maionia:
+- target `TAM V.1 535 / PH263959` is indexed with `laurus`;
+- independent epigraphic description identifies the target as a stele with a laurel-leaf representation;
+- the neighboring possibly veiled female figure at `TAM V.1 533` is a different object.
+
+```text
+POTTA_TAM535_SAME_OBJECT_VISUAL_MOTIF = LAUREL_LEAF
+POTTA_TAM535_FIGURAL_FEMALE_HEAD_HAIR = NOT_ATTESTED
+MAIONIA_533_POSSIBLY_VEILED != POTTA_TAM535
+NONFIGURAL_LAUREL_STELE != LIVE_RITUAL_DRESS_EVIDENCE
+```
+
 Didyma public image honours:
 - Nannion, Didyma 445 / I.Didyma346, 7/6 BCE: `εἰκόνι γραπτῇ`;
 - Didyma 478, AD 125/150: Apollonia, `εἰκόνι γραπτῇ`;
@@ -520,7 +544,7 @@ DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 
 Safe synthesis:
 
-> The comparative case is now stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. These mutually reinforce a **ritual-performance-state** axis. The direct p.445 photograph closes Philokrateia's same-object image route but shows only a non-figural inscribed stele, not her appearance. The evidence still does not yield a same-object rule saying that Philokrateia, Tryphosa, Eirene or another identified mantic woman wore a specific veil/headband/hairstyle, and therefore does not identify the Corinthian trigger.
+> The comparative case is now stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. These mutually reinforce a **ritual-performance-state** axis. The direct p.445 photograph closes Philokrateia's same-object image route but shows only a non-figural inscribed stele, not her appearance. Potta's target monument is likewise controlled as a laurel-motif stele rather than the neighboring possibly veiled female figure. Item-by-item checking also shows that Nawotka's footnote 77 cannot be treated as ten automatically secure prophetess objects. The evidence still does not yield a same-object rule saying that Philokrateia, Tryphosa, Eirene, Potta or another identified mantic woman wore a specific veil/headband/hairstyle, and therefore does not identify the Corinthian trigger.
 
 **No core grade reversal.**
 
@@ -528,23 +552,25 @@ Safe synthesis:
 
 # 11. P0 queue
 
-1. Potta `TAM V.1 535 / PH263959`: direct body.
+1. Potta `TAM V.1 535 / PH263959`: direct full title-line body; target object/visual motif already narrowed.
 2. Nanas: Tabbernee fig.77 same-object image.
 3. Apphe `IK Kalchedon 61 = CIG 3796`: direct page/object.
-4. Nisyra `SEG 49.1624 / PH348429 / TM949255`: full text/noun-bearer; prove/disprove Malay no.137 crosswalk.
-5. Termessos `TAM III,1 870 / PH280975`: full text/noun-bearer/genre.
-6. Lebadeia `IG VII 3111 / PH146626`: full body/noun-bearer.
-7. Didyma III.7: full body search for female mantic titles + head/hair terms.
-8. Didyma 235B: direct stone/Rehm page.
-9. Nawotka `IG II² 13148`: explicit erratum/intended object only; **do not guess**.
+4. Termessos `TAM III,1 870 / PH280975`: full text/noun-bearer/genre.
+5. Lebadeia `IG VII 3111 / PH146626`: full body/noun-bearer.
+6. Didyma III.7: full body search for female mantic titles + head/hair terms.
+7. Didyma 235B: direct stone/Rehm page.
+8. Nawotka `IG II² 13148`: explicit erratum/intended object only; **do not guess**.
+9. Nawotka `SEG 49.1624`: explicit erratum/intended object only; **do not guess**.
 10. Corrington 1991 direct full text.
 11. Claros personnel system with gender/status/object controls.
 
-Closed from this queue:
+Closed from the substantive candidate queue:
 
 ```text
 PHILOKRATEIA_CGRN_232_OBJECT_ROUTE = CLOSED
 PHILOKRATEIA_VOLLGRAFF_1909_P445_SAME_OBJECT_PHOTO = CLOSED_DIRECT_IMAGE
+NISYRA_1624_COUNT_AS_SECURE_PROPHETESS = NO
+POTTA_TAM535_SAME_OBJECT_VISUAL_MOTIF = LAUREL_LEAF
 ```
 
 ---
@@ -558,6 +584,7 @@ PUBLICATION_HOLD = true
 AGENT_DISCOVERY != AUTHORITY
 DIRECT_OBJECT > SECONDARY_SUMMARY
 REFERENCE_LIST != VERIFIED_PERSON_LIST
+NAWOTKA_FN77_REFERENCE != VERIFIED_PROPHETESS_OBJECT
 ROLE != HEAD_CODE
 PRIESTESS != PROPHETIS_PROMANTIS_AUTOMATICALLY
 LINKED_RITUAL_CORPUS != SAME_OBJECT_HEAD_STATE
