@@ -62,6 +62,7 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #28 [Fendel EXOUSIAN.xlsx]:** `DATASET_CONTENT_READ_DIRECT` (2026-08-10, full 9-chunk table scan via ORA file render; three Roman-period PP rows enumerated: BGU.7.1655 ἀπό+gen, P.Oxy.8.1120 κατά+gen, P.Oxy.9.1205 εἰς+acc; **no ἐπί+genitive among them**).
    - **Item #19 [Peerbolte 2000]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview id Ma9xEQAAQBAJ; key pp.76–91 incl. Watchers argument and ἐξουσία discussion; full body external).
    - **Item #13 [Lumesberger-Loisl 2025]:** `BIBLIOGRAPHIC_AND_TOC_CLOSED` (2026-08-10, publisher Leseprobe TOC confirms chapter pp.295–303 in Siquans/Eder, Katholisches Bibelwerk 2025, ISBN 978-3-460-25266-0; body external).
+   - **Item #42 [Garland 2003]:** `SECTION_SPAN_AND_PREVIEW_READ` (2026-08-10, Google Books preview g4B7sIoz0g8C; section VII pp.505–532 confirmed; v10 'authority on her head' + vv.11–12 backtracking position captured; full body external; M3 edition-comparison baseline for Garland 2025).
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
@@ -692,7 +693,9 @@ EXTRACTED_SUMMARY = "Paul is not outlining a church dress code; by analogy with 
 **Purpose:** establish precisely what 2025 changed; never substitute 2003 text/pages for 2025.
 
 ```text
-STATUS = OPTIONAL_EDITION_CONTINUITY_CONTROL
+STATUS = OPTIONAL_EDITION_CONTINUITY_CONTROL / SECTION_SPAN_AND_PREVIEW_READ_2026_08_10 / FULL_BODY_EXTERNAL
+VERIFIED_PREVIEW_ROUTE = Google Books preview id g4B7sIoz0g8C (2003, 870 pp.)
+PREVIEW_EXTRACTS = "section VII 'Headdress in Public Worship (11:2-16)' = pp.505-532 CONFIRMED; p.505 'The complexity of 11:2…'; p.508 'authority on her head. In 11:11-12, however, he backtracks lest the Corinthians become confused and think that he implies that women are inferior to men'; p.509 bareheaded/hell text; p.512 11:2 ἐπαινῶ new section; p.518 11:5-6 Murphy-O'Connor on 11:14 'having down from the head' = long hair hanging down, Thiselton 2000: 825; p.520 Hebrew woman uncovered widely regarded as…; p.521 Jos. Asen. 18:6 bride veil; p.528 angels monitor woman's submission, BeDuhn 1999: 308-19; p.532 section end"
 ```
 
 ## 43. Low-weight current edge/reception full bodies
