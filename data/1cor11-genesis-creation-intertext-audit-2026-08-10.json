@@ -1,0 +1,49 @@
+{
+  "scope": "1 Corinthians 11:7-12 Genesis/creation intertext audit",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "primary_controls": {
+    "genesis_1_26_27": "human created in image of God; male and female created",
+    "genesis_1_28": "both blessed and commissioned",
+    "genesis_2_18": "human alone not good; corresponding helper",
+    "genesis_2_21_23": "woman derived from man; Gen 2:23 uses ek tou andros",
+    "genesis_2_24": "man-wife one-flesh relation"
+  },
+  "grades": {
+    "gen1_human_in_gods_image_male_female": "A_PRIMARY",
+    "gen1_both_sexes_blessed_mandated": "A_PRIMARY",
+    "v7_local_image_glory_asymmetry": "A_TEXT",
+    "v7_denies_female_imago_dei": "C_LOW_NOT_EXPLICIT",
+    "both_sexes_participate_in_genesis_imago": "A_B_HIGH_PRIMARY_CONTROL",
+    "v8_woman_from_man": "A_TEXT",
+    "v8_gen2_origin_echo": "A_B_HIGH",
+    "v9_woman_for_because_of_man": "A_TEXT",
+    "v9_gen2_purpose_echo": "B_HIGH",
+    "v7_9_creation_reasoning_real": "A_DISCOURSE",
+    "creation_order_asymmetry": "B_HIGH",
+    "v10_dia_touto_creation_link": "A",
+    "exousia_woman_subject": "A",
+    "v11_plen_qualification": "A",
+    "v11_mutual_interdependence": "A",
+    "v12a_gen2_23_echo": "A_B_HIGH",
+    "v12_ek_vs_dia_difference": "A",
+    "all_things_from_god": "A",
+    "1_esdras_4_proposed_intertext": "B_C_SERIOUS",
+    "calibrated_creation_mutual_order_model": "B_HIGH_LEADING",
+    "hard_female_not_image_model": "C_LOW",
+    "v11_12_cancel_creation_model": "C_LOW",
+    "large_quotation_refutation": "D_C_LOW"
+  },
+  "method_controls": {
+    "omission_of_eikon_is_not_explicit_negation": true,
+    "origin_in_v8_does_not_define_kephale_lexically": true,
+    "v11_12_qualify_without_erasing_v8_9": true,
+    "ek_and_dia_are_not_identical_relations": true,
+    "1_esdras_is_not_required_for_core_exegesis": true,
+    "creation_grounding_does_not_by_itself_prove_identical_garment_form_in_all_cultures": true
+  },
+  "product_write": false,
+  "ui_implementation": false,
+  "site_publication": false,
+  "publication_hold": true
+}
