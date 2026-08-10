@@ -1,28 +1,39 @@
 # Source card — Gordon D. Fee, *The First Epistle to the Corinthians*, Revised Edition (2014), 1 Cor 11:2–16
 
-**Дата аудита:** 2026-08-10  
-**Статус:** `TECHNICAL-COMMENTARY / REVISED-EDITION-CALIBRATION / EXACT-TOC-CLOSED / TERMINAL-BODY-ACCESS / RESEARCH-ONLY`
+**Дата аудита:** 2026-08-11  
+**Статус:** `TECHNICAL-COMMENTARY / REVISED-EDITION-CALIBRATION / MULTILINGUAL-ACQUISITION / EXACT-TOC-CLOSED / TARGET-BODY-HOLD / RESEARCH-ONLY`
 
 ## 0. Purpose
 
-Fee is repeatedly cited throughout the 1 Cor 11 literature, but three different evidence objects are easily conflated:
+Fee is repeatedly cited throughout the 1 Cor 11 literature, but several evidence objects must remain distinct:
 
 ```text
 FEE_1987_FIRST_EDITION
+FEE_1994_SPANISH_TRANSLATION_OF_1987
 FEE_2014_REVISED_EDITION_MAIN_BODY
 FEE_2014_NEW_BIBLIOGRAPHIC_ADDENDA/FOOTNOTE_UPDATES
+FEE_2019_PORTUGUESE_TRANSLATION_OF_REVISED_2014
+FEE_2024_SPANISH_TRANSLATION_OF_REVISED_2014
 ```
 
-This card prevents two shortcuts:
+This card prevents four shortcuts:
+1. assuming the 2014 Addendum is a hidden new commentary;
+2. treating downstream quotations as direct revised body;
+3. treating a translation of 1987 as 2014 evidence;
+4. refusing a genuine published translation as direct author-position evidence merely because it is not English.
 
-1. assuming that the existence of a 2014 “Addendum” means Fee wrote a materially new exegesis of 11:2–6 there;
-2. treating downstream quotations as direct revised-edition body when the actual 2014 page is not exposed.
+```text
+LANGUAGE != EVIDENCE_GRADE
+PUBLISHED_TRANSLATION_OF_VERIFIED_EDITION_CAN_VERIFY_AUTHOR_POSITION_FOR_THAT_EDITION
+PUBLISHED_TRANSLATION_WORDING != ORIGINAL_LANGUAGE_QUOTE
+TRANSLATION_PAGINATION != ORIGINAL_PAGINATION
+```
 
 ---
 
-# 1. Direct edition identity
+# 1. English revised-edition identity
 
-Direct Eerdmans/Logos/Biblia and Google Books controls verify:
+Direct Eerdmans/Logos/Biblia controls verify:
 
 ```text
 AUTHOR = Gordon D. Fee
@@ -33,184 +44,257 @@ PUBLISHER = Eerdmans
 YEAR = 2014
 PRINT_ISBN = 9780802871367
 EBOOK_ISBN = 9781467440417
+LOGOS_RESOURCE = LLS:NICNT67CO1_2ED
+PAGES = 1044
 ```
 
-The direct Logos/Biblia embedded preview shows the 2014 revised-edition title/copyright/front matter but truncates before the later exposition. Google Books/retailer TOC independently identifies the revised internal structure.
+The English Logos/Biblia preview verifies the revised object but does not render the target 1 Cor 11 body in the current route.
 
 ---
 
-# 2. Exact revised-edition 11:2–16 map
-
-The current revised TOC gives:
+# 2. Exact English revised-edition 11:2–16 map
 
 ```text
-C. Women and Men in Worship (11:2–16) ........ p.542
-
-1. An Argument from Culture and Shame (11:2–6) ... p.550
-Addendum ........................................... p.565
-
-2. An Argument from Creation (11:7–12) ............ p.567
-
-3. An Argument from Propriety (11:13–16) .......... p.580
-
-D. Abuse of the Lord's Supper (11:17–34) .......... p.587
+C. Women and Men in Worship (11:2–16) ............. p542
+1. An Argument from Culture and Shame (11:2–6) ... p550
+Addendum ........................................... p565
+2. An Argument from Creation (11:7–12) ............ p567
+3. An Argument from Propriety (11:13–16) .......... p580
+D. Abuse of the Lord's Supper (11:17–34) .......... p587
 ```
 
 Thus:
 
 ```text
-MAIN_11_2_16 = pp.542–586
-CULTURE_SHAME_EXPOSITION = pp.550–564
-ADDENDUM = starts p.565, about 2 pages in TOC
-CREATION_11_7_12 = pp.567–579
-PROPRIETY_11_13_16 = pp.580–586
+MAIN_11_2_16 = pp542_586
+CULTURE_SHAME_EXPOSITION = pp550_564
+ADDENDUM = starts p565; about 2 pages
+CREATION_11_7_12 = pp567_579
+PROPRIETY_11_13_16 = pp580_586
 ```
 
-These are **2014 revised-edition locators**. Do not substitute 1987 page numbers when citing the revised edition.
+These are English 2014 revised-edition locators. Never transfer 1987 or translated pagination into this map.
 
 ---
 
-# 3. What the 2014 Addendum is — and is not
+# 3. New direct authorized route: Portuguese revised edition
 
-A detailed 2014 review based on a review copy reports that the new addendum on the difficult veiling problem in 11:2–6 is primarily **bibliographical material with a short introduction, without additional commentary**.
+Official Vida Nova / CLC controls verify:
 
-An independent DTS review likewise reports no broad substantial change in Fee's conclusions overall while noting NIV 2011, newer literature and footnote updates.
+```text
+TITLE_PT = 1 Coríntios: Comentário exegético
+AUTHOR = Gordon_D_Fee
+PUBLISHER = Vida_Nova
+EDITION_YEAR = 2019
+PRINT_ISBN = 9788527509268
+EBOOK_ISBN = 9786559671076
+PAGES = 1168
+ORIGINAL_TITLE = The First Epistle to the Corinthians
+TRANSLATION_BASE = SECOND_ENGLISH_EDITION_2014
+```
+
+CLC exposes an official downloadable sample PDF (`1corintios_comentario_exegetico_trecho`, 918.8 KB). The fetched object is 52 pages and directly exposes both the revised-edition preface and the translated TOC.
+
+## 3.1 Direct Portuguese revised pagination
+
+The official sample directly gives:
+
+```text
+C. Mulheres e homens no culto (11.2-16) ........... p616
+1. Cultura e sentimento de vergonha (11.2-6) ...... p626
+2. Criação (11.7-12) ............................... p645
+3. Decoro (11.13-16) ............................... p660
+D. Abusos contra a ceia do Senhor (11.17-34) ...... p668
+```
 
 Evidence class:
 
 ```text
-FEE_2014_ADDENDUM_BIBLIOGRAPHIC_NATURE = STRONG_REVIEW_CONTROL
-FEE_2014_ADDENDUM_DIRECT_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
-FEE_2014_ADDENDUM_AS_MAJOR_NEW_EXEGESIS = NOT_SUPPORTED_BY_CURRENT_EVIDENCE
+FEE_PT_2019_EDITION_IDENTITY = CLOSED_DIRECT_OFFICIAL
+FEE_PT_2019_TRANSLATES_REVISED_2014 = CLOSED_DIRECT_OFFICIAL
+FEE_PT_2019_OFFICIAL_SAMPLE = CLOSED_DIRECT_PDF
+FEE_PT_2019_REVISED_TOC = CLOSED_DIRECT_BODY
+FEE_PT_2019_11_2_16_TARGET_EXPOSITION = NOT_PRESENT_IN_52_PAGE_SAMPLE
 ```
 
-Important self-correction:
+## 3.2 Revised preface now direct through the Portuguese translation
 
-```text
-OLD_WORKING_ASSUMPTION:
-  "the 11:2–6 addendum may contain Fee's revised substantive position"
-
-CURRENT:
-  ADDENDUM_IS_PRIMARILY_BIBLIOGRAPHIC / MAIN_EXEGESIS_REMAINS_IN_BODY
-```
-
-Do not spend acquisition effort on the addendum as though it were a hidden second commentary.
-
----
-
-# 4. What genuinely changed in the revised edition
-
-Direct publisher/front-matter controls and independent reviews establish:
-
-```text
-NIV_2011_BASE_TEXT = major motivation
-POST_1987_BIBLIOGRAPHY = added/updated
-FOOTNOTES = updated in places, including lexical references
-FORMAT/VERSE_NUMBER_HANDLING = revised
-SOME_OTHER_SECTIONS = more materially revised
-```
-
-The reviews specifically flag 14:34–35 as a substantially revised controversial section. They do **not** establish a comparable wholesale rewriting of 11:2–16.
-
-```text
-FEE_2014 != FEE_1987_WITH_ZERO_CHANGE
-FEE_2014_1COR11 != PROVED_NEW_MODEL
-```
-
-The right comparison remains source-specific, not presumed continuity or presumed change.
-
----
-
-# 5. Final exact-body status for 11:2–16
-
-Lawful routes exhausted in this audit:
-
-```text
-BIBLIA_NICNT67CO1_2ED = OFFICIAL_EMBEDDED_PREVIEW / FRONT_MATTER_ONLY
-GOOGLE_BOOKS = METADATA_TOC_SELECTED_MATERIAL / TARGET_BODY_NOT_EXPOSED
-GOOGLE_PLAY = SAMPLE_OBJECT / TARGET_BODY_NOT_EXPOSED
-OTHER_PUBLIC_PREVIEW_ROUTES = NO_QUOTE_SAFE_TARGET_BODY
-```
+This is stronger than the previous review-only control. In Fee's own revised preface as directly exposed by the authorized Portuguese translation, he explains that:
+- the first edition used the 1978 NIV;
+- he later had access to the 2011 NIV text before publication;
+- the revised edition allowed him to remove about twenty first-edition footnotes tied to translation problems;
+- the technical literature on 1 Corinthians had expanded dramatically in the intervening quarter century;
+- he also changed presentation conventions around chapter/verse language.
 
 Therefore:
 
 ```text
-FEE_2014_PP542_586_DIRECT_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
-FEE_2014_PP565_566_ADDENDUM_DIRECT_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
-FEE_2014_NOTES_11_2_16 = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
+FEE_2014_REVISION_MOTIVATION = CLOSED_DIRECT_AUTHOR_PREFACE_VIA_AUTHORIZED_TRANSLATION
+NIV_2011_BASE_TEXT = CLOSED_DIRECT_AUTHOR_PREFACE
+ABOUT_TWENTY_OLD_TRANSLATION_FOOTNOTES_REMOVED = CLOSED_DIRECT_AUTHOR_PREFACE
+POST_1987_LITERATURE_UPDATE = CLOSED_DIRECT_AUTHOR_PREFACE
+VERSE_NUMBER_PRESENTATION_CHANGE = CLOSED_DIRECT_AUTHOR_PREFACE
 ```
 
-No exact quotation should be labelled `direct Fee 2014` unless the actual revised page is later acquired through a genuinely new authorized/institutional route.
+This does **not** by itself prove which individual 1 Cor 11 sentences changed. The target exposition still requires direct section body.
 
 ---
 
-# 6. Angels — strong locator, not primary-body closure
+# 4. New authorized route: Spanish revised edition
 
-A peer-reviewed Cambridge NTS article cites the revised Fee commentary specifically at:
-
-```text
-Fee, First Epistle, pp.576–578
-```
-
-for the angel question in 11:10.
-
-A separate secondary quotation chain reproduces Fee's rejection of a lustful/fallen-angels threat reading and assigns it to:
+Official Logos / Editorial Tesoro Bíblico verifies:
 
 ```text
-p.576 n.123
+TITLE_ES = La primera epístola a los Corintios: Nuevo Comentario Internacional del Nuevo Testamento
+AUTHOR = Gordon_D_Fee
+PUBLISHER = Editorial_Tesoro_Biblico
+YEAR = 2024
+PAGES = 1044
+TRANSLATION_BASE = REVISED_ENGLISH_VERSION_2014
+ACCESS = LOGOS_DIGITAL_EDITION / OJEAR_LIBRO
 ```
 
-The reported argument is that the lustful-angels scenario is foreign to Pauline/contextual evidence and raises unresolved questions about why women would be endangered.
+The product description explicitly states that the Spanish edition comes from the revised English commentary published in 2014.
+
+```text
+FEE_ES_2024_EDITION_IDENTITY = CLOSED_DIRECT_OFFICIAL
+FEE_ES_2024_TRANSLATES_REVISED_2014 = CLOSED_DIRECT_OFFICIAL
+FEE_ES_2024_LICENSED_LOOK_INSIDE_ROUTE = VERIFIED
+FEE_ES_2024_11_2_16_TARGET_BODY = NOT_EXPOSED_CURRENT_PREVIEW
+```
+
+Do not confuse this with the Nueva Creación Spanish edition.
+
+---
+
+# 5. First-edition firewall now strengthened by direct user copy
+
+The user-provided PDF `Gordon D. Fee, Primera Epistola a Los Corintios.pdf` was page-autopsied. Its title/copyright pages establish:
+
+```text
+SPANISH_PUBLISHER = Nueva_Creacion
+SPANISH_COPYRIGHT = 1994
+ORIGINAL_COPYRIGHT = Eerdmans_1987
+TRANSLATOR = Carlos_Alonso_Vargas
+TRANSLATION_BASE = FEE_1987_FIRST_EDITION
+```
+
+The complete 1 Cor 11:2–16 body in that object is direct readable evidence for Fee's 1987 position. It has been stored in Google Drive and recorded in:
+- `data/1cor11-fee-1987-spanish-user-acquisition-2026-08-11.md`
+
+```text
+FEE_1987_FIRST_EDITION_DIRECT_BODY = CLOSED_DIRECT
+FEE_ES_1994_NUEVA_CREACION = TRANSLATION_OF_1987
+FEE_ES_1994 != FEE_ES_2024_TESORO_BIBLICO
+FEE_ES_1994 != FEE_2014_REVISED_BODY
+```
+
+This first-edition closure is valuable for later edition-delta comparison, but it cannot silently close the 2014 text.
+
+---
+
+# 6. What the 2014 Addendum is — and is not
+
+A detailed review based on a 2014 review copy reports that the new addendum on 11:2–6 is primarily bibliographical material with a short introduction rather than a second substantive exposition. An independent DTS review likewise reports broad continuity alongside NIV/literature/footnote updating.
+
+```text
+FEE_2014_ADDENDUM_BIBLIOGRAPHIC_NATURE = STRONG_REVIEW_CONTROL
+FEE_2014_ADDENDUM_DIRECT_BODY = STILL_NOT_ACQUIRED
+FEE_2014_ADDENDUM_AS_MAJOR_NEW_EXEGESIS = NOT_SUPPORTED_BY_CURRENT_EVIDENCE
+```
+
+The direct Portuguese revised preface now independently confirms that substantial bibliographic and translation-base updating occurred across the revised edition, but it does not make the Addendum body direct.
+
+---
+
+# 7. Current exact-body status for 11:2–16
+
+English routes already tested:
+
+```text
+BIBLIA_NICNT67CO1_2ED = OFFICIAL_EMBEDDED_PREVIEW / TARGET_BODY_NOT_EXPOSED
+GOOGLE_BOOKS = METADATA_TOC_SELECTED_MATERIAL / TARGET_BODY_NOT_EXPOSED
+GOOGLE_PLAY = SAMPLE_OBJECT / TARGET_BODY_NOT_EXPOSED
+```
+
+New language routes:
+
+```text
+PORTUGUESE_VIDA_NOVA_CLC = AUTHORIZED_REVISED_TRANSLATION / OFFICIAL_52_PAGE_SAMPLE / PREFACE_AND_TOC_DIRECT / TARGET_BODY_NOT_IN_SAMPLE
+SPANISH_TESORO_BIBLICO_LOGOS = AUTHORIZED_REVISED_TRANSLATION / LICENSED_LOOK_INSIDE / TARGET_BODY_NOT_EXPOSED_CURRENT_PREVIEW
+```
+
+Therefore the old global terminal wording is superseded:
+
+```text
+FEE_2014_ENGLISH_KNOWN_ROUTES = TERMINAL_EXTERNAL_ACCESS_HOLD
+FEE_2014_MULTILINGUAL_REOPEN = ACTIVE
+FEE_2014_PP542_586_OR_EQUIVALENT_TRANSLATED_TARGET_BODY = NOT_YET_DIRECTLY_ACQUIRED
+FEE_2014_NOTES_11_2_16 = NOT_YET_DIRECTLY_ACQUIRED
+```
+
+No exact English quotation should be labelled `direct Fee 2014` unless the English page itself is acquired. A published revised translation can establish Fee's substantive position for the 2014 edition if its target body is acquired, but must be cited as translation evidence.
+
+---
+
+# 8. Angels — strong locator, still not target-body closure
+
+Peer-reviewed scholarship places the revised Fee angel discussion at:
+
+```text
+Fee, First Epistle, pp576_578
+```
+
+A secondary quote chain assigns the anti-lustful-Watchers argument to:
+
+```text
+p576 n123
+```
 
 Current evidence class:
 
 ```text
 FEE_2014_ANGELS_LOCATOR_576_578 = STRONG_PEER_REVIEWED_PAGE_LOCATOR
 FEE_2014_N123_WATCHERS_REJECTION = STRONG_SECONDARY_QUOTE_LOCATOR
-FEE_2014_N123_DIRECT_PAGE = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
+FEE_2014_N123_DIRECT_ENGLISH_PAGE = NOT_ACQUIRED
+FEE_2014_EQUIVALENT_PT_ES_ANGEL_SECTION = SEARCH_TARGET_ACTIVE
 ```
 
-Do not promote the reproduced wording to quote-safe Fee text. The locator is retained so a future authorized copy can be checked immediately.
+Do not promote the reproduced wording to quote-safe Fee text.
 
 ---
 
-# 7. Former P0 targets — final disposition
-
-The former priority ladder is no longer an active queue:
+# 9. Reopened target order
 
 ```text
-p.576 n.123 + surrounding vv10 angel discussion = PRECISE_LOCATOR_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
-pp.576–578 complete v10/angel subsection = PRECISE_LOCATOR_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
-v10 ἐξουσία note(s) within pp.567–579 = RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
-main 11:2–6 exposition pp.550–564 = RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
-addendum pp.565–566 = RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD / LOW_ACQUISITION_VALUE
-vv13–16 pp.580–586 = RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+P0A = Portuguese 2019 target section around local pp616_667, especially v10/angels equivalent of English pp576_578/n123
+P0B = Spanish 2024 Logos revised target section, especially v10/angels
+P1 = English revised pp576_578/n123 if a new lawful/institutional route appears
+P1 = English/translated complete 11:2-6 main body and Addendum
+P1 = translated/English vv13-16 body
 ```
 
-```text
-FEE_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_PUBLIC_ROUTES = EMPTY
-NEW_AUTHORIZED_OR_INSTITUTIONAL_ACCESS = REOPEN_ONLY_TRIGGER
-```
+Do not repeat the exhausted English preview endpoints as though they were new searches.
 
 ---
 
-# 8. Edition firewall
-
-Historical secondary literature often cites Fee 1987 page numbers for the covering discussion. The 2014 revised structure moves the relevant main block to the mid-500s.
+# 10. Edition / translation firewall
 
 ```text
 FEE_CITATION_WITH_YEAR_2014 + 1987_PAGE_NUMBER = VERIFY_BEFORE_USE
 FEE_QUOTE_WITHOUT_EDITION = EDITION_AMBIGUOUS
 FEE_1987_WORDING != AUTOMATIC_2014_WORDING
+FEE_1987_PAGINATION != FEE_2014_PAGINATION
+FEE_PT_2019_PAGINATION != ENGLISH_2014_PAGINATION
+FEE_ES_2024_DIGITAL_LOCATOR != ENGLISH_2014_PRINT_PAGINATION
+TRANSLATED_DIRECT_BODY != ORIGINAL_LANGUAGE_VERBATIM_QUOTE
 ```
-
-A scholarly claim can remain substantively continuous across editions while the page/footnote changes; citation precision must still be edition-specific.
 
 ---
 
-# 9. Relation to current project models
+# 11. Relation to current project models
 
-No grade change follows merely from Fee's continuing influence.
+No grade reversal follows merely from the new acquisition routes.
 
 ```text
 MATERIAL_COVERING = B_HIGH_LEADING
@@ -219,33 +303,39 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
 WATCHERS = C_SERIOUS_ALTERNATIVE
+CORE_GRADE_REVERSALS = 0
 ```
 
-Fee remains a high-weight technical pressure-test, not a vote that automatically decides the issue. The reported p.576 n.123 anti-Watchers argument remains a source locator, not a direct Fee quotation.
+Fee remains a high-weight technical pressure-test, not a vote that automatically decides the issue.
 
 ---
 
-# 10. Result
+# 12. Result
 
 ```text
 FEE_2014_REVISED_EDITION = VERIFIED
-FEE_11_2_16_REVISED_RANGE = 542_586
-FEE_11_2_6_MAIN = 550_564
-FEE_11_2_6_ADDENDUM = 565_566_APPROX
-FEE_11_7_12 = 567_579
-FEE_11_13_16 = 580_586
+FEE_2014_ENGLISH_11_2_16_RANGE = pp542_586
+FEE_2014_ENGLISH_11_2_6_MAIN = pp550_564
+FEE_2014_ENGLISH_ADDENDUM = pp565_566_APPROX
+FEE_2014_ENGLISH_11_7_12 = pp567_579
+FEE_2014_ENGLISH_11_13_16 = pp580_586
+
+FEE_1987_FIRST_EDITION_DIRECT_BODY = CLOSED_DIRECT_VIA_AUTHORIZED_SPANISH_TRANSLATION
+FEE_PT_2019 = AUTHORIZED_TRANSLATION_OF_REVISED_2014
+FEE_PT_2019_REVISED_PREFACE = CLOSED_DIRECT
+FEE_PT_2019_TOC = CLOSED_DIRECT
+FEE_PT_2019_11_2_16_TARGET_BODY = NOT_IN_OFFICIAL_SAMPLE
+FEE_ES_2024 = AUTHORIZED_TRANSLATION_OF_REVISED_2014
+FEE_ES_2024_TARGET_BODY = NOT_EXPOSED_CURRENT_PREVIEW
 
 ADDENDUM_AS_NEW_MAJOR_EXEGESIS = REJECTED_WORKING_ASSUMPTION
-ADDENDUM = PRIMARILY_BIBLIOGRAPHIC_ACCORDING_TO_REVIEW_CONTROL
-
 FEE_ANGELS = PEER_REVIEWED_LOCATOR_PP576_578
 FEE_WATCHERS_REJECTION = SECONDARY_LOCATOR_P576_N123
-DIRECT_P576_N123 = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
-FEE_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_PUBLIC_ROUTES = EMPTY
 
+ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
+FEE_MULTILINGUAL_REOPEN = ACTIVE
 TERMINAL_EXTERNAL_ACCESS_HOLD != VERIFIED_BODY
 TERMINAL_EXTERNAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
-CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 SITE_PUBLICATION = false
