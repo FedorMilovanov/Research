@@ -44,7 +44,7 @@ Official publisher route verifies the Portuguese edition is based on the **secon
 
 Target exposition is not present in that sample.
 
-### Portuguese OverDrive / Libby — NEW LICENSED LANE
+### Portuguese OverDrive / Libby
 
 OverDrive directly records the same Vida Nova ebook:
 
@@ -97,16 +97,27 @@ ACTIVE_EXOUSIA_PULL_FORCES_EXACT_REFERENT = FALSE
 Owner updated:
 - `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`
 
-## 4. Schirrmacher 1993 / revised 2002 — German monograph route
+## 4. Schirrmacher 1993 / revised 2002 — German monograph + author PDF routes
 
 Author + Heidelberg controls verify *Paulus im Kampf gegen den Schleier: Eine alternative Auslegung von 1. Korinther 11,2–16*, first edition 1993, revised 5th edition 2002, 130 pp., ISBN `9783933372451`, with Heidelberg physical holding.
+
+The author's own book page now directly exposes **three full-book PDF download routes**:
+
+```text
+BOOK_2002_PDF = AUTHOR_HOSTED_DOWNLOAD_ROUTE
+BOOK_2007_ENGLISH_PDF = AUTHOR_HOSTED_DOWNLOAD_ROUTE
+BOOK_2023_ENGLISH_PDF = AUTHOR_HOSTED_DOWNLOAD_ROUTE
+```
+
+The current web runtime resolves the exact PDF URLs but returns cache-miss on the binaries, so their existence is a stronger lawful acquisition route but not yet body closure.
 
 Author summary directly describes a quotation/refutation model: Corinthian veil teaching driven ad absurdum in vv4–9, Pauline contradiction in vv10–15, and v16 denying universal binding force.
 
 ```text
 SCHIRRMACHER_MODEL_EXISTENCE = CLOSED_DIRECT_AUTHOR_LIBRARY
 SCHIRRMACHER_AUTHOR_SUMMARY = DIRECT
-SCHIRRMACHER_FULL_BOOK_BODY = NOT_YET_ACQUIRED
+SCHIRRMACHER_AUTHOR_FULL_PDF_ROUTES = VERIFIED
+SCHIRRMACHER_FULL_BOOK_BODY = NOT_YET_RENDERED_CURRENT_RUNTIME
 ```
 
 Owner updated:
@@ -203,7 +214,30 @@ ARAUJO_WATCHERS_MODEL = REAL_PORTUGUESE_SCHOLARLY_NODE
 WATCHERS_GRADE_CHANGE_FROM_ABSTRACT_ALONE = NO
 ```
 
-## 11. Search-state result
+## 11. Nathanael Xuesheng Wang 2022 — Chinese official OA journal route
+
+Official *Journal of Research for Christianity in China* / 《中国基督教研究》 records:
+- 王学晟 / Nathanael Xuesheng Wang;
+- “蒙头祷告讲道还是闭口不言？——对哥林多前书中两段矛盾经文之探讨” / “Praying and Prophesying with Coverings or Remaining Silent: A Probe into the Two Contradictory Periopae in 1 Corinthians”;
+- no.19 (2022), pp.80–111;
+- DOI `10.29635/JRCC.202212_(19).0005`;
+- official journal article page + PDF route;
+- journal is open access and states CC BY-NC-ND 4.0 for its articles.
+
+The official abstract directly says the author reads 1 Cor 11:2–16 as Paul supporting women's prayer/prophecy while requiring head covering primarily because of the young church's social image, not as a restriction on women's ministry. It separately treats 1 Cor 14:34–35 as a later interpolation.
+
+```text
+WANG_2022_CHINESE_ARTICLE_IDENTITY = CLOSED_DIRECT_OFFICIAL_JOURNAL
+WANG_2022_OFFICIAL_OA_PDF_ROUTE = VERIFIED
+WANG_2022_ABSTRACT = CLOSED_DIRECT_OFFICIAL
+WANG_2022_FULL_PDF_BODY = NOT_YET_RENDERED_CURRENT_RUNTIME
+WANG_2022_MATERIAL_COVERING_SOCIAL_IMAGE_MODEL = REAL_CHINESE_SCHOLARLY_NODE
+GRADE_CHANGE_FROM_ABSTRACT_ALONE = NO
+```
+
+A downstream Chinese full-text mirror is discovery-only until compared against the official journal PDF.
+
+## 12. Search-state result
 
 ```text
 ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
@@ -212,7 +246,8 @@ REGIONAL_LIBRARY_REOPEN_SWEEP = ACTIVE
 NEW_DIRECT_NON_ENGLISH_BODY_FOUND = YES
 NEW_AUTHORIZED_TRANSLATION_ROUTES_FOUND = YES
 NEW_LICENSED_EBOOK_ROUTES_FOUND = YES
-NEW_INSTITUTIONAL_PDF_ROUTES_FOUND = YES
+NEW_AUTHOR_FULL_PDF_ROUTES_FOUND = YES
+NEW_INSTITUTIONAL_OR_OFFICIAL_OA_PDF_ROUTES_FOUND = YES
 CORE_GRADE_REVERSALS = 0
 ```
 
