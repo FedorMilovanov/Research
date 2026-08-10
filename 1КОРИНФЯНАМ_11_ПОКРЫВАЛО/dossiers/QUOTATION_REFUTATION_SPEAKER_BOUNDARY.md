@@ -65,14 +65,27 @@ SHOEMAKER_FULL_BOUNDARY_DETAILS = ABSTRACT_LIMITED
 
 ## Costa 2023/2024
 
-Alessandra Castilho da Costa, “Identificando citações em 1 Coríntios 11:3–16...,” *Revista de Estudos da Linguagem* 31.3: 1404–1446. DOI `10.17851/2237-2083.31.3.1404-1446`.
+Alessandra Castilho da Costa, “Identificando citações em 1 Coríntios 11:3–16: uma análise da orientação argumentativa e do ponto de vista,” *Revista de Estudos da Linguagem* 31.3 (2023): 1404–1446. DOI `10.17851/2237-2083.31.3.1404-1446`. **FULL BODY READ 2026-08-10** (official UFMG OA PDF: https://periodicos.ufmg.br/index.php/relin/article/download/55158/45585; CC BY 4.0; 9 chunks).
+
+Linguistic model (Textual Discourse Analysis + Discourse Traditions + Argumentative Semantics):
+- **vv.4–9 = Corinthian PdV quoted and refuted** (vv.4–6: covered head shame logic; vv.7–9: order-topos arguments, inclusio on "the man").
+- **v.3 = Pauline PdV**; `κεφαλή` = "fonte/ponto de origem" (source), NOT "líder" (blocked by cohesion test with "deliberately" in vv.7–9).
+- **v.10 = consequence of v.3** (not of the quotation): `ἐξουσίαν ἔχειν` read literally — "a mulher tem autoridade sobre a própria cabeça" (to cover or not); metonymic reading véu=autoridade rejected (weakest link, unproductive, no other attestation).
+- **"por causa dos anjos"**: `ἄγγελοι` = "mensageiros" (spiritual messengers); encapsulating anaphora for "todo homem/mulher que ora ou profetiza" (agent of pray/prophesy); woman who prays/prophesies = spiritual messenger with authority from God; refutes vv.5–6 command.
+- **vv.11–12 = Pauline PdV** (πλήν opposition to v.8; mutual interdependence; equality of existence order).
+- **v.13 read as declarative** "É decente que a mulher ore a Deus descoberta" (no ou/ouchi/mē particles; person-index distribution; coherence with v.3; Genesis 2–3 intertext — God clothed woman with tunic, did not cover her head) — NOT a rhetorical question.
+- **vv.14–15 read as declarative** (οὐδέ never in NT rhetorical questions per Costa's analysis contra Payne 2015; Mk 12:10, Lk 23:40 = biased questions not rhetorical).
+- The overall thesis: the passage is Paul's refutation of Corinthian veiling command; women need not cover their heads.
 
 ```text
-COSTA_BOUNDARY = VV4_9_QUOTATION
-COSTA_V3 = PAULINE_POV
-COSTA_V10 = PAULINE_POV
+COSTA_BOUNDARY = VV4_9_CORINTHIAN_QUOTATION_REFUTED
+COSTA_V3 = PAULINE_POV / KEPHALE_SOURCE_READING
+COSTA_V10 = PAULINE_POV / EXOUSIA_LITERAL_AUTHORITY_OF_WOMAN / ANGELS_SPIRITUAL_MESSENGERS_ANAPHORA
 COSTA_V11_12 = PAULINE_MUTUALITY
+COSTA_V13 = DECLARATIVE_DECENT_WOMAN_PRAYS_UNCOVERED
+COSTA_V14_15 = DECLARATIVE_NOT_RHETORICAL_QUESTIONS
 COSTA_HAS_EXPLICIT_LINGUISTIC_MODEL = true
+COSTA_FULL_BODY = CLOSED_DIRECT_2026_08_10 (official UFMG OA)
 ```
 
 ## Salés 2024

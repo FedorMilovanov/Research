@@ -63,6 +63,7 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #19 [Peerbolte 2000]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview id Ma9xEQAAQBAJ; key pp.76–91 incl. Watchers argument and ἐξουσία discussion; full body external).
    - **Item #13 [Lumesberger-Loisl 2025]:** `BIBLIOGRAPHIC_AND_TOC_CLOSED` (2026-08-10, publisher Leseprobe TOC confirms chapter pp.295–303 in Siquans/Eder, Katholisches Bibelwerk 2025, ISBN 978-3-460-25266-0; body external).
    - **Item #42 [Garland 2003]:** `SECTION_SPAN_AND_PREVIEW_READ` (2026-08-10, Google Books preview g4B7sIoz0g8C; section VII pp.505–532 confirmed; v10 'authority on her head' + vv.11–12 backtracking position captured; full body external; M3 edition-comparison baseline for Garland 2025).
+   - **Costa 2023 (pt-BR; quotation-family member, not in 43-item checklist but in QUOTATION dossier):** `FULL_BODY_CLOSED_DIRECT` (2026-08-10, official UFMG OA PDF `periodicos.ufmg.br/.../55158/45585`; vv.4–9 Corinthian quotation refuted; v.10 literal authority of woman + angels=messengers; vv.13–15 declarative readings; model distinct from Salés/Shoemaker).
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
