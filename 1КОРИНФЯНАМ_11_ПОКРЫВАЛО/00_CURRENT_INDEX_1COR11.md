@@ -114,6 +114,15 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 ```
 
+Current syntax guardrail:
+
+```text
+ἐξουσία + ἐπί + genitive = DIRECTLY ATTESTED IN BIBLICAL GREEK
+UNCOMMON != UNATTESTED
+```
+
+The exact nonbiblical phrase `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` remains `NOT_FOUND_IN_BOUNDED_SEARCH`; this is not a global nonexistence claim.
+
 ---
 
 # 5. Angels / reception history
@@ -131,6 +140,12 @@ Patristic/reception controls in current draft branch include:
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGEL_LOCATOR_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CYRIL_CATENA_KYTILLOU_ATTRIBUTION_CORRECTION_2026-08-10.md`
 
+**Evergreen source-verification tooling:**
+
+- [`dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md`](dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md)
+
+The 2026 open PG OCR corpus is a locator engine, not a substitute for source-image verification. Current coverage includes PG118 but not PG74 or PG82, so it does not by itself close the Cyril/Theodoret page-image holds.
+
 Reception diversity must not be used as vote-counting for original Pauline meaning.
 
 ---
@@ -143,6 +158,17 @@ Reception diversity must not be used as vote-counting for original Pauline meani
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZ_PAULINE_QUOTATION_SLOGAN_CORPUS_CONTROL_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2025_EXOUSIA_EPI_GEN_FRESHNESS_CONTROL_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2026_AUTHOR_INTERVIEW_MATERIALITY_CONTROL_2026-08-10.md`
+
+Current Drake source separation:
+
+```text
+CAMBRIDGE_2025_CHAPTER_SUMMARY = DIRECT_PUBLISHER_CONTROL
+DRAKE_2026_INTERVIEW = DIRECT_AUTHOR_SELF_DESCRIPTION
+INTERVIEW != BOOK_BODY
+DRAKE_CH2_PP70_89_BODY = HOLD
+```
 
 Published existence / peer review is not automatic grade promotion.
 
