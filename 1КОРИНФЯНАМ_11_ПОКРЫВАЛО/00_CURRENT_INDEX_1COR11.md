@@ -37,6 +37,16 @@ MORE_Z_CHARACTERS != MORE_CURRENT
 - `00ZZZZZZZZZZZZZZZZ_GENESIS_CREATION_INTERTEXT_AUDIT_11_7_12_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZ_V16_CONVENTION_TRANSLOCAL_PRACTICE_AUDIT_2026-08-10.md`
 
+Greek lexical owner now also owns the direct Goodacre 2011 rebuttal / Martin 2013 response-history control for `περιβόλαιον`:
+
+```text
+PERIBOLAION_WRAP_COVERING_GARMENT = A
+PERIBOLAION_TESTICLE_THEORY = D_C_LOW_PUBLISHED_EDGE_MODEL
+GOODACRE_2011_DIRECT_FULL_BODY = CLOSED
+MARTIN_2013_RESPONSE_IDENTITY = DIRECT_JOURNAL_VERIFIED
+MARTIN_2013_DIRECT_FULL_BODY = HOLD
+```
+
 ---
 
 # 3. `ἐξουσία`
@@ -65,11 +75,14 @@ LONG_HAIR / KOMAŌ / PHYSIS
 UNBOUND_OR_DISHEVELLED_HAIR_POLYSEMY
 ```
 
+and the direct Edsall 2013 `κατὰ κεφαλῆς` / costume lexical control.
+
 ```text
 LONG_HAIR != UNBOUND_HAIR
 UNBOUND_HAIR != ONE_FIXED_SOCIAL_MESSAGE
 PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
 HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
+EDSALL_2013_DIRECT_FULL_BODY = CLOSED
 ```
 
 ---
@@ -79,6 +92,15 @@ HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
 **Owner:** `dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`
 
 Owns Tryphosa, Eirene, Cleopatra, Didyma 235B, Agatho correction, Miletos 481, Potta, Ammias of Thyateira, Ammia of Philadelphia, Didyma visual-honour culture, Delphi controls and bounded `female mantic office + head/hair` search.
+
+Tryphosa numbering crosswalk is explicit:
+
+```text
+PHI_OBJECT_ID = 247445
+PHI_INTERFACE_ORDINAL = Didyma 450
+SEG_REFERENCE = SEG 30.1286
+CURRENT_DIDYMA_EDITION_REFERENCE = Didyma 708
+```
 
 ```text
 AMMIAS_THYATEIRA != AMMIA_PHILADELPHIA
@@ -104,7 +126,8 @@ Owns Massey, direct PHI/CGRN Andania, white `pilos`, separate hair/adornment rul
 Owns:
 
 ```text
-SHOEMAKER / COSTA / SALES quotation family
+SHOEMAKER / COSTA / SALES contiguous quotation-family variants
+PEPPIATT_2015 alternating-voice / multiple-switch model
 MARSHALL / NEWBERRY continuity controls
 KOWALSKI_2020 continuous rhetorical model
 TORBUS_2009 rhetorical dispositio control
@@ -162,10 +185,13 @@ OCR != SOURCE_IMAGE_AUTHORITY
 
 - `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
 
+Owns Hilton–Matthews 2008 contradiction control and the Edsall visual-method cross-control in addition to the primary Roman matrix.
+
 ```text
 ROMAN_CAPITE_VELATO_BACKGROUND = A
 V4_EXACT_CAPITE_VELATO = B_C
 SULPICIUS_GALLUS_HEAD_STATE = CONTRADICTORY_SOURCE_TRADITION
+HILTON_MATTHEWS_2008_DIRECT_BODY = HOLD
 ```
 
 ### Local Corinth visual / archaeology / image custody
@@ -184,11 +210,18 @@ COMMONS_ORIGINALS_RIGHTS_SHA1
 JOHNSON_LEGACY_MAPPING
 ```
 
-### Female Roman / late-antique visual method
+### Female Greek/Roman / late-antique visual method
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_ROMAN_FEMALE_VEILING_STATUS_VISUAL_DELTA_2026-08-10.md`
 
-Owns Fantham, Olson, Hughes, Stafford and Galter.
+Owns Llewellyn-Jones, Fantham, Olson, Hughes, Stafford and Galter.
+
+```text
+LLEWELLYN_JONES_2003 = DIRECT_JSTOR_FOUNDATIONAL_GREEK_CONTROL
+GREEK_FEMALE_VEILING_ROUTINE = STRONG_FOUNDATIONAL_SOURCE_CLAIM
+VEILING_ONE_FIXED_SOCIAL_MEANING = REJECT
+ICONOGRAPHY_AS_DAILY_PHOTOGRAPH = REJECT_METHOD
+```
 
 ---
 
@@ -198,12 +231,22 @@ Owns Fantham, Olson, Hughes, Stafford and Galter.
 
 - `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
 
-Owns current ranking, Hamplová, Francis, Lumesberger-Loisl and false-freshness controls including Penner/Vander Stichele.
+Owns current ranking, Hamplová, Francis, Lumesberger-Loisl and false-freshness controls including Penner/Vander Stichele and Standhartinger.
 
 ### Direct-source acquisition
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
+
+Nõmmik institutional custody is now pinned at the navigation layer so the DiVA object cannot be lost between passes:
+
+```text
+NOMMIK_DIVA_URN = urn:nbn:se:ths:diva-2600
+NOMMIK_DIVA_OBJECT_IDENTITY = A2_INSTITUTIONAL
+NOMMIK_DIVA_FULLTEXT_ROUTE = DIRECT_EHS_LINK
+NOMMIK_DIVA_BODY_FETCH = RUNTIME_HOLD
+FULLTEXT_NOT_FETCHED != OBJECT_NOT_FOUND
+```
 
 ### Current commentary acquisition
 
@@ -265,10 +308,13 @@ FEE_REVISED_2014_FULL_SECTION = HOLD
 CIAMPA_ROSNER_2010_DETAIL = HOLD
 DRAKE_2025_CH2_PP70_89_BODY = HOLD
 DESILVA_2025_ROMAN_CORINTH_PP126_156 = HOLD
+NOMMIK_DIVA_URN_NBN_SE_THS_DIVA_2600 = BODY_RUNTIME_HOLD
 OKLAND_2004_CH4_7 = BODY_HOLD
 KOWALSKI_2020_OFFICIAL_PDF_BYTES = RETRY
 TORBUS_2009_PP507_521 = HOLD
 PEERBOLTE_2000_PP76_92 = HOLD
+MARTIN_2013_PP453_465 = DIRECT_BODY_HOLD
+HILTON_MATTHEWS_2008_PP336_342 = DIRECT_BODY_HOLD
 DIDYMA_SUPPLEMENT_FULL_BODY = OPEN
 POTTA_TAM_V1_535_DIRECT_PHI_BODY = RUNTIME_CACHE_HOLD
 CORRINGTON_1991_DIRECT_FULLTEXT = HOLD
