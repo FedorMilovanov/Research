@@ -170,6 +170,28 @@ ANTIQUARIAN_EXEMPLUM != UNIVERSAL_SOCIAL_LAW
 LITERARY_DRESS_CLAIM_REQUIRES_VISUAL_EPIGRAPHIC_CONTROL
 ```
 
+## 7.1 Hilton & Matthews 2008 — specialist contradiction control
+
+J. L. Hilton and L. L. V. Matthews, “Veiled or Unveiled? (Plut. Quaest. Rom. 267B–C),” *Classical Quarterly* 58.1 (2008): 336–342. DOI `10.1017/S0009838808000323`.
+
+Direct publisher metadata:
+- Cambridge Core confirms article identity, authors, volume/issue, pages 336–342 and DOI.
+
+The direct article body remains a custody HOLD in the current runtime. A later Macquarie University full-text treatment gives page-specific attribution to Hilton & Matthews p.341 n.22 and p.342: they examined the Valerius/Plutarch discrepancy, did not resolve it, and treated the broader question of routine Roman female head covering as too large for the short note.
+
+Calibrated status:
+
+```text
+HILTON_MATTHEWS_2008_IDENTITY = DIRECT_PUBLISHER_VERIFIED
+HILTON_MATTHEWS_2008_DIRECT_BODY = HOLD
+HILTON_MATTHEWS_PP341_342_ATTRIBUTION = STRONG_SECONDARY_PAGE_SPECIFIC_CONTROL
+PLUTARCH_Q14_VS_VALERIUS_6_3_10 = REAL_PRIMARY_CONTRADICTION
+VALERIUS_AUTOMATICALLY_CORRECTS_PLUTARCH = NOT_ESTABLISHED
+ONE_ANECDOTE != UNIVERSAL_FEMALE_VEIL_LAW
+```
+
+Do not upgrade a downstream paraphrase into direct article-body evidence until the *Classical Quarterly* pages themselves are acquired.
+
 ---
 
 # 8. Funeral inversion and unbound hair
@@ -271,6 +293,18 @@ ALL_ROMAN_WOMEN_WORSHIP_UNCOVERED = false
 ALL_FEMALE_RITUAL_COVERING = MARITAL_SUBMISSION_SYMBOL = false
 ```
 
+## 12.1 Edsall 2013 — visual-evidence method control
+
+Edsall’s direct JGRChJ full text also supplies a useful visual-method firewall: he explicitly warns that the discrepancy between written costume evidence and uncovered portraiture cannot be resolved by treating a bust as a behavioural photograph. His material-covering lexical corpus is owned in the hair/`φύσις` audit; the methodological consequence belongs here.
+
+```text
+EDSALL_2013_DIRECT_FULL_BODY = CLOSED
+PORTRAIT_BARE_HEAD != EVERYDAY_BEHAVIORAL_PHOTOGRAPH
+VISUAL_EVIDENCE_REQUIRES_CONTEXTUAL_INTERPRETATION = REINFORCED
+```
+
+This independently converges with the Olson/Hughes/Stafford controls without turning visual ambiguity into proof for either universal veiling or universal unveiling.
+
 ---
 
 # 13. Historical asymmetry relevant to Paul
@@ -362,6 +396,7 @@ THEREFORE_PAULINE_REASONING_IS_ONLY_CULTURAL = invalid_inference
 | covered head could accompany prayer/augury/divination | **A** | Livy + Plutarch + Virgil/Lucretius |
 | Roman cultic practice had uncovered-head exceptions | **A** | Plutarch RQ 11, 13 |
 | Gallus female head-state tradition is contradictory | **A source-critical fact** | Plutarch Q14 vs Valerius 6.3.10 |
+| Hilton & Matthews 2008 direct article identity | **verified / body HOLD** | Cambridge metadata; page-specific later control only |
 | Corinth displayed male covered-sacrificer imperial imagery | **A/B** | published Corinth archaeology / ASCSA |
 | women were more commonly covered publicly than men in Plutarch’s framing | **B-high historical norm** | Plutarch Q14 |
 | every respectable woman always veiled | **D / false universalization** | contradicted by mixed evidence |
@@ -382,6 +417,7 @@ PLUTARCH_Q10_MALE_RITUAL_COVERING = A_PRIMARY_LITERARY
 PLUTARCH_Q14_FEMALE_MORE_USUAL_COVERING = A_PRIMARY_AUTHOR_STATEMENT_WITH_COMPLEXITY
 VALERIUS_6_3_10_UNCOVERED_WIFE = A_PRIMARY_TEXT
 SULPICIUS_GALLUS_HEAD_STATE = CONTRADICTORY_SOURCE_TRADITION
+HILTON_MATTHEWS_2008_DIRECT_BODY = HOLD
 ROMAN_FEMALE_UNIVERSAL_VEIL_RULE = REJECTED
 V4_EXACT_CAPITE_VELATO = B_C
 CORE_GRADE_REVERSALS = 0
