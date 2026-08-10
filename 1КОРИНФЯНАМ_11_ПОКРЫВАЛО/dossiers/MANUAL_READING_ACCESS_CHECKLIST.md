@@ -70,6 +70,8 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #6 [Starling EBTC 2025]:** `BIBLIA_PREVIEW_OPEN` (2026-08-10, embedded preview live — TOC/front matter; 11:2–16 body not exposed in preview).
    - **Item #1 [Reasoner 2025]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books limited preview IEiGEQAAQBAJ; Commentary 7 pp.432+ translation + text-critical notes (αὐτῇ in P46 D F G K L Y Mb Ambst; ἐξουσία original, veil/covering gloss), Chrysostom κομήν gloss, veils/under authority 11:7–10, angels/Stuckenbruck 2001, 11:16 τις; full body external).
    - **Item #2 [Garland 2025 2e]:** metadata refined (872 pp. GB / 880 Christianbook / 850 Logos; pub 2025-11-11; GB wgUl0QEACAAJ no preview); section pagination still unverified.
+   - **Item #10 [Peters 2025, Mohr]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview ID5HEQAAQBAJ; 1 Cor 11 section ~pp.113–138: gendered veiling no details, angels = creation-angels or women's angelic prophetic languages (p.115), Pyrrha/Deucalion myth, headship political language; full monograph external).
+   - **Item #12 [deSilva 2025]:** `PREVIEW_LEVEL_NEGATIVE_CONTROL` (2026-08-10: Julian Basilica present in Roman Corinth chapter; zero hits for head covering/veiled/capite velato in preview index).
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
@@ -240,7 +242,9 @@ https://www.mohrsiebeck.com/en/book/paul-and-the-citizen-body-9783161601637
 DOI `10.1628/978-3-16-160164-4`.
 
 ```text
-STATUS = PUBLISHER_MODEL_AND_TOC_CLOSED / FULL_MONOGRAPH_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = PUBLISHER_MODEL_AND_TOC_CLOSED / PREVIEW_LEVEL_DIRECT_READ_2026_08_10 / FULL_MONOGRAPH_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_PREVIEW_ROUTE = Google Books preview id ID5HEQAAQBAJ (Mohr Siebeck 2025-02-17, 183 pp.)
+PREVIEW_EXTRACTS = "abstract: bodily control 'prioritized having control over one's body and head'; new citizen body 'accessible to all, regardless of social status'; p.5 'Paul provides no details as to the practice of gendered veiling. He refers only to the practice of all of Pauline house-churches'; p.6 athletics+veiling = moving Corinthians away from imperial construction of creation; p.11 'In the new creation, male and female bodies exhibit physical differences that are mimicked by their attire'; p.12 honorific connotations of veiling during sacrifice; p.115 11:10 διὰ τοῦτο refers to preceding thoughts on Gen. 2; women veil 'to put authority over their heads because of the angels', 'which could refer alternatively to the angels present at creation or the creational languages of angels spoken by the women during prophesy'; v.11 interdependence; p.120 veiling justified by myths, pagan-temple background; p.133 veiled Pyrrha and Deucalion mythic vision; p.138 headship political language + appeal to social custom, Oster and Gill on dishonor of male worshipers; TOC: 'Creation in the Pauline HouseChurches' p.113, 1 Cor 11 section ~p.130"
 ```
 
 ## 11. Jorunn Økland, *Women in Their Place* (2004/2005)
