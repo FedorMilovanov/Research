@@ -1,0 +1,42 @@
+{
+  "scope": "1 Corinthians 11:2-16 current Greek text base and textual-risk contract",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "text_base": {
+    "current_published_edition": "GNT6",
+    "publication_year": 2025,
+    "future_na29_text_identical_to_gnt6": true,
+    "na29_published_as_of_2026_08_10": false,
+    "na29_scheduled_publication": "2027-02-28",
+    "completed_pauline_ecm_for_1cor": false
+  },
+  "official_gnt6_controls": {
+    "ecm_text_changes_highlighted_for": ["Mark", "Acts", "Revelation"],
+    "pauline_apparatus_witness_selection_revised": true,
+    "same_text_does_not_imply_same_apparatus": true
+  },
+  "passage_risk": {
+    "whole_unit_interpolation_11_3b_15": "D_C_LOW",
+    "current_critical_text_retains_pericope": true,
+    "major_project_disputes_are_primarily_interpretive": true,
+    "claim_specific_variant_promotion": "HOLD_APPARATUS"
+  },
+  "future_matrix_contract": {
+    "greek_base_edition": "GNT6_2025",
+    "require_textual_variant_risk_field": true,
+    "variant_risk_values": ["NONE_KNOWN_MATERIAL", "LOW", "MEDIUM", "HIGH", "HOLD_APPARATUS"],
+    "text_authority_is_separate_from_reproduction_rights": true
+  },
+  "prohibited_claims": [
+    "NA29 is already the currently published edition",
+    "1 Corinthians 11 is based on a completed Pauline ECM",
+    "GNT6 introduced a new completed-Pauline-ECM text for 1 Corinthians 11",
+    "semantic difficulty equals textual instability",
+    "quotation/refutation theory is a manuscript variant",
+    "GNT6 and NA29 apparatuses are necessarily identical because their texts are identical"
+  ],
+  "product_write": false,
+  "ui_implementation": false,
+  "site_publication": false,
+  "publication_hold": true
+}
