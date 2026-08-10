@@ -1,0 +1,722 @@
+# 1 Коринфянам 11:2–16 — complete manual reading / access checklist
+
+**Статус:** `EVERGREEN-ACCESS-CHECKLIST / NAVIGATION-ONLY / MANUAL-READING / TERMINAL-HOLD-REOPEN-MAP / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Последнее обновление:** 2026-08-10
+
+## 0. Purpose / authority
+
+This file answers one practical question:
+
+> If a human researcher obtains library, institutional, purchased, local-PDF or renderable-scan access, exactly what still deserves direct reading or visual autopsy, where is it, and what should be extracted?
+
+This is **not** a new evidence owner and does not make the current audit incomplete.
+
+```text
+CURRENT_RESEARCH_AUDIT = COMPLETE_FOR_KNOWN_RUNTIME_ROUTES
+ACTIVE_AGENT_ACQUISITION_QUEUE = EMPTY
+THIS_FILE = HUMAN_MANUAL_ACCESS_REOPEN_CHECKLIST
+TERMINAL_HOLD != VERIFIED_BODY
+TERMINAL_HOLD != NEGATIVE_EVIDENCE
+READING_ONE_ITEM != AUTOMATIC_GRADE_CHANGE
+```
+
+After any item is acquired/read, update its controlling evergreen owner and then mark the item `CLOSED_DIRECT` here.
+
+Priority meanings:
+
+```text
+M0 = highest-value; can materially sharpen current synthesis
+M1 = important specialist/source-control reading
+M2 = primary-object / image / dataset autopsy
+M3 = optional nonblocking completeness / edition-comparison check
+```
+
+---
+
+# 1. M0 — current technical commentaries and major whole-models
+
+## 1. Mark Reasoner, *1 Corinthians* (Brill, 2025)
+
+**Read:** Commentary 7, “Hair and Head Coverings in the Assembly (11:2–16),” approx. **pp.432–451**, including notes.
+
+**Where:** Brill Exegetical Commentary Series 3; official chapter route:  
+https://brill.com/display/book/9789004737044/BP000007.xml  
+Google Books metadata/TOC:  
+https://books.google.com/books/about/1_Corinthians.html?id=IEiGEQAAQBAJ
+
+**Extract:** material veil vs hair; `κεφαλή`; v10 `ἐξουσία`; angels; `φύσις`; v16; exact Corinth trigger; authenticate any circulated p.434/p.444 wording.
+
+```text
+STATUS = CHAPTER_AND_PAGINATION_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 2. David E. Garland, *1 Corinthians*, BECNT 2nd ed. (2025)
+
+**Read:** complete section **“VII. Headdress in Public Worship (11:2–16)”** + notes. First record the actual 2025 second-edition pagination.
+
+**Where:** Baker Academic / Logos / Perlego / institutional ebook; print ISBN `9781540962607`, ebook ISBN `9781493451692`.
+
+**Do not use:** old working `pp.468–493`; it was not verified. Do not silently transfer first-edition pagination.
+
+**Extract:** all verse-level changes from the 2003 edition; veil/hair; `κεφαλή`; `ἐξουσία`; angels; nature/custom; social trigger.
+
+```text
+STATUS = SECTION_IDENTITY_CLOSED / 2025_PAGINATION_AND_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 3. Gordon D. Fee, NICNT Revised Edition (2014)
+
+**Read complete block:** **pp.542–586** + notes.
+
+Highest-value internal targets:
+- pp.550–564 — 11:2–6 main exposition;
+- pp.565–566 — Addendum;
+- pp.567–579 — 11:7–12;
+- **pp.576–578, especially p.576 n.123** — angels / Watchers locator;
+- pp.580–586 — 11:13–16.
+
+**Where:** Eerdmans / Logos-Biblia `NICNT67CO1_2ED` / Google Play or institutional ebook.
+
+**Extract:** actual revised wording, edition changes vs 1987, v10 `ἐξουσία`, angels/Watchers, material practice, v13–16.
+
+```text
+STATUS = EXACT_REVISED_RANGES_CLOSED / BODY_AND_NOTES_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 4. Anthony C. Thiselton, NIGTC (2000)
+
+**Read:** **pp.800–847** + notes.
+
+**Where:** NIGTC / Eerdmans-Grand Rapids edition via institutional library, Google Books record, ebook/library access.
+
+**Extract:** exact material reconstruction, lexical arguments, `κεφαλή`, `ἐξουσία`, angels, `φύσις`, v16, rhetorical structure.
+
+```text
+STATUS = WORK_AND_RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 5. Roy E. Ciampa & Brian S. Rosner, PNTC (2010)
+
+**Read:** **pp.503–540** + notes.
+
+**Where:** Eerdmans / institutional ebook / Google Books limited-preview record.
+
+**Extract:** whole-model structure, veil/hair, hierarchy/interdependence, v10, angels, nature/custom, v16.
+
+```text
+STATUS = WORK_AND_RANGE_CLOSED / DETAIL_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 6. David I. Starling, EBTC (2025)
+
+**Read:** exact 1 Cor 11:2–16 exposition + notes.
+
+**Where:** Lexham Academic / Logos / Biblia. Official embedded preview object:  
+https://biblia.com/api/plugins/embeddedpreview?historybuttons=false&layout=minimal&navigationbox=false&resourceName=LLS%3AEBTC67CO1&sharebutton=false
+
+**Extract:** veil/hair, creation, `κεφαλή`, v10, angels, nature/custom, theological synthesis.
+
+```text
+STATUS = BOOK_CLOSED / TARGET_SECTION_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 7. Michael J. Gorman, *1 Corinthians* (Eerdmans, 2025)
+
+**Read:** exact section covering 1 Cor 11:2–16.
+
+**Where:** Eerdmans; licensed ebook/library/Libby-OverDrive or institutional access; hardcover ISBN `9780802882660`, ebook ISBN `9781467465748`.
+
+**Extract:** primarily theological/pastoral synthesis; record technical claims only where the body itself makes them.
+
+```text
+STATUS = BOOK_CLOSED / TARGET_SECTION_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 8. Susanna Drake, *Veiling in the Late Antique World* (CUP, 2025)
+
+**Read first:** ch.2 **“Veils in Corinth,” pp.70–89**, including notes.
+
+**Also read:** relevant ch.1 material that directly treats first-/second-century Mediterranean material forms and the transition between outer-garment head covering and later separate/tighter veils.
+
+**Where:** Cambridge Core book DOI `10.1017/9781009673518`; ch.2 DOI `10.1017/9781009673518.003`:  
+https://www.cambridge.org/core/books/veiling-in-the-late-antique-world/veils-in-corinth/BB79DFCE0FB2F5AFDD9CCB0C6C5B83D4
+
+**Extract:** exact garment/material claims; all v10/angels/hair/`κεφαλή` detail; what is book-body vs interview-level self-description.
+
+```text
+STATUS = CH2_IDENTITY_PAGINATION_SUMMARY_CLOSED / FULL_BODY_AND_NOTES_TERMINAL_PUBLISHER_ACCESS_HOLD
+```
+
+## 9. Aldar Nõmmik, *Robes, Romans, and Rituals in First Corinthians*
+
+**Read:** ideally the **complete dissertation/book**, with special attention to 1 Cor 11 argument, Roman `capite velato`, ritual cognition/divine knowledge, reconstructed Corinthian uniformity pressure, v10, angels, creation, nature/custom.
+
+**Where:** EHS dissertation listing / DiVA fulltext object; current Wipf & Stock edition:  
+https://ehs.se/forskning/dth/  
+https://wipfandstock.com/9798385259823/robes-romans-and-rituals-in-first-corinthians/
+
+Institutional identifier:
+```text
+URN = urn:nbn:se:ths:diva-2600
+```
+
+```text
+STATUS = INSTITUTIONAL_OBJECT_AND_FULLTEXT_ROUTE_CLOSED / BODY_FETCH_TERMINAL_RUNTIME_CACHE_HOLD
+```
+
+## 10. Janelle Peters, *Paul and the Citizen Body* (Mohr Siebeck, 2025)
+
+**Read:** complete 183-page monograph if possible; at minimum every 1 Cor 11 section, especially bodily/head control, citizenship/status, creation, slavery, `ἐξουσία`, angels and material veiling.
+
+**Where:** Mohr Siebeck, WUNT II 625:  
+https://www.mohrsiebeck.com/en/book/paul-and-the-citizen-body-9783161601637  
+DOI `10.1628/978-3-16-160164-4`.
+
+```text
+STATUS = PUBLISHER_MODEL_AND_TOC_CLOSED / FULL_MONOGRAPH_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 11. Jorunn Økland, *Women in Their Place* (2004/2005)
+
+**Read:** at least chs.4–7:
+- ch.4 “Places for Women in Early Roman Corinth: Ritual Sanctuary Spaces” — starts p.78;
+- ch.5 “Paul and the Discourse of Sanctuary Space” — starts p.131;
+- ch.6 “Corinthian Order” — starts p.168;
+- ch.7 “Obedient and Subversive” — starts p.224.
+
+**Where:** Bloomsbury / T&T Clark ebook or institutional library:  
+https://www.bloomsbury.com/uk/women-in-their-place-9780567012708/  
+https://books.google.com/books/about/Women_in_Their_Place.html?id=kSkJ_LtXlj8C
+
+**Extract:** exact positions on veil vs hair, `κεφαλή`, `ἐξουσία`, angels, `φύσις`, v16 and sanctuary-space trigger.
+
+```text
+STATUS = IDENTITY_TOC_THESIS_CONTROL_CLOSED / CH4_7_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+---
+
+# 2. M1 — important specialist articles / chapters / visual-social controls
+
+## 12. David A. deSilva, *Archaeology and the Ministry of Paul* (2025)
+
+**Read:** **pp.126–156, “Roman Corinth.”**
+
+**Where:** Baker Academic:  
+https://bakeracademic.com/products/9781540960955_archaeology-and-the-ministry-of-paul
+
+**Extract:** whether he actually discusses 1 Cor 11, S-1116, S-1088, Julian Basilica, `capite velato`, women’s head covering.
+
+```text
+STATUS = CHAPTER_RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 13. Barbara Lumesberger-Loisl (2025)
+
+**Read:** “Kopftuchgebot für Christinnen? ... (1 Kor 11,2–16),” **pp.295–303**.
+
+**Where:** chapter/book access via library; bibliographic record:  
+https://ixtheo.de/Record/1925710505
+
+**Extract:** exact material reconstruction and gender-difference argument.
+
+```text
+STATUS = BIBLIOGRAPHIC_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 14. Judith M. Gundry-Volf (1997)
+
+**Read:** “Gender and Creation in 1 Corinthians 11:2–16,” **pp.151–171**.
+
+**Where:** Festschrift *Evangelium, Schriftauslegung, Kirche* (Vandenhoeck & Ruprecht, 1997), institutional library/interlibrary loan.
+
+Priority loci already independently located:
+- p.151 n.1 — hairstyle proposal;
+- p.152 — culture/creation/in-Christ two-context framework;
+- pp.154–155 — honor/shame presentation;
+- pp.162–163 — creation + interdependence;
+- p.164 — angels.
+
+```text
+STATUS = BIBLIOGRAPHY_AND_PAGE_LOCATORS_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 15. Marlis Gielen (1999)
+
+**Read:** “Beten und Prophezeien mit unverhülltem Kopf? ...,” *ZNW* 90.3–4, **pp.220–249**.
+
+**Where:** De Gruyter/ZNW or institutional library. A 2009 reworking appears in *Paulus im Gespräch* (Kohlhammer).
+
+**Extract:** exact modified short-hair reconstruction, sex-role symbolism, what changed in 2009 reworking.
+
+```text
+STATUS = ARTICLE_IDENTITY_MODEL_LOCATORS_CLOSED / DIRECT_1999_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 16. Hao Li (2023)
+
+**Read:** full Chinese article **pp.267–318**.
+
+**Where:** official JRCC page, choose “PDF (Chinese)”:  
+https://ccspub.cc/jrcc/article/view/38  
+DOI `10.29635/JRCC.202312_(21).0012`.
+
+**Extract:** exact positions on creation order, reciprocity, veil/hair, v10, angels, cultural adaptation/challenge.
+
+```text
+STATUS = OFFICIAL_RECORD_ABSTRACT_PDF_OBJECT_CLOSED / PDF_BYTES_TERMINAL_RUNTIME_ENDPOINT_HOLD
+```
+
+## 17. Janelle Peters, Biblica 2020
+
+**Read:** “Slavery and the Gendered Construction of Worship Veils in 1 Corinthians,” *Biblica* 101.3 (2020), **pp.431–443**.
+
+**Where:** Peeters / institutional journal access; DOI `10.2143/BIB.101.3.3288730`; JSTOR stable item `48653612`.
+
+**Extract:** exact slavery/status mechanism, whether benefit to enslaved men/women is argued from specific primary evidence, verse-level chain.
+
+```text
+STATUS = PUBLISHER_ABSTRACT_CLOSED / FULL_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 18. Janelle Peters dissertation (Emory, 2013)
+
+**Read:** preferably chs.6–7; minimally **p.282**.
+
+TOC anchors:
+- ch.6 starts p.228;
+- ch.7 “Veiling the Body of Christ” starts p.264;
+- conclusion starts p.301.
+
+**Where:** Emory Open Access repository, persistent object `qr46r105v`, “Primary PDF”.
+
+**Why p.282 matters:** downstream scholarship cites it for a Corinthian statue / F. P. Johnson *Corinth* IX.1 pp.70–72; direct page must verify which object and what claim Peters actually makes.
+
+```text
+STATUS = INSTITUTIONAL_OBJECT_TOC_CLOSED / PRIMARY_PDF_AND_P282_TERMINAL_RUNTIME_ENDPOINT_HOLD
+```
+
+## 19. L. J. Lietaert Peerbolte (2000)
+
+**Read:** “Man, Woman, and the Angels in 1 Cor 11:2–16,” in *The Creation of Man and Woman*, **pp.76–92**, especially pp.86–87.
+
+**Where:** Brill chapter:  
+https://brill.com/display/book/edcoll/9789047400394/B9789047400394_s016.xml
+
+**Extract:** direct Watchers/Enochic argument, exact `ἐξουσία` interpretation, exact page wording.
+
+```text
+STATUS = CHAPTER_IDENTITY_AND_SECONDARY_PAGE_LOCATORS_CLOSED / DIRECT_BODY_HOLD_NONBLOCKING
+```
+
+## 20. Charles H. Cosgrove (2005)
+
+**Read:** “A Woman’s Unbound Hair in the Greco-Roman World...,” *JBL* 124.4 (2005), **pp.675–692**.
+
+**Where:** JSTOR:  
+https://www.jstor.org/stable/30041064  
+DOI `10.2307/30041064`.
+
+**Extract:** actual evidence for meanings of genuinely unbound/dishevelled female hair; keep distinct from Andania `ἀναπλέκω`.
+
+```text
+STATUS = BIBLIOGRAPHIC_CLOSED / DIRECT_FULLTEXT_CONTENT_HOLD_RUNTIME
+```
+
+## 21. Gail Paterson Corrington (1991)
+
+**Read:** “The Headless Woman: Paul and the Language of the Body in 1 Cor 11:2–16,” *Perspectives in Religious Studies* 18.3 (Fall 1991), **pp.223–231**.
+
+**Where:** Baylor/PRSt library holdings or interlibrary loan; Baylor PRSt Index confirms volume/issue/pages.
+
+**Extract:** exact body/head semantic argument and any use of visual/social evidence.
+
+```text
+STATUS = IDENTITY_CLOSED / DIRECT_FULLTEXT_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 22. Elaine Fantham (2008)
+
+**Read:** “Covering the Head at Rome: Ritual and Gender,” **pp.158–171**.
+
+**Where:** *Roman Dress and the Fabrics of Roman Culture*; DOI `10.3138/9781442689039-012`; University of Toronto Press / De Gruyter-Brill / institutional ebook.
+
+**Extract:** male/female ritual head-covering distinctions, status/ritual gender meanings, chronology.
+
+```text
+STATUS = IDENTITY_AND_EXACT_LOCATOR_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 23. Kelly Olson, *Dress and the Roman Woman* (2008)
+
+**Read at minimum:** contexts around **pp.22, 25, 34, 41**; ideally relevant chapters on palla/stola/togata and self-presentation.
+
+**Where:** Routledge institutional ebook:  
+https://www.routledge.com/Dress-and-the-Roman-Woman-Self-Presentation-and-Society/Olson/p/book/9780203927625
+
+**Extract:** palla/head-cover frequency, literary ideal vs visual practice, moral/status vocabulary.
+
+```text
+STATUS = BOOK_AND_PAGE_LOCATORS_CLOSED / TARGET_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 24. Lisa A. Hughes (2007)
+
+**Read:** full article if possible, **pp.218–241**; mandatory autopsy of **Table 1, p.227 + surrounding methodology/context**.
+
+**Where:** Taylor & Francis / *Material Religion*:  
+https://www.tandfonline.com/doi/abs/10.2752/175183407X219750  
+DOI `10.2752/175183407X219750`.
+
+**Verify:** `N=113`, veiled `67`, unveiled `46`; sample definition and exclusions.
+
+```text
+STATUS = ARTICLE_PDF_OBJECT_AND_SECONDARY_TABLE_LOCATOR_CLOSED / DIRECT_TABLE_AUTOPSY_TERMINAL_ACCESS_HOLD
+```
+
+## 25. Marcin Kowalski (2020)
+
+**Read:** full article **pp.59–104**.
+
+**Where:** official APCZ / KUL repository; DOI `10.12775/BPTh.2020.003`.
+
+**Extract:** full continuous-Pauline rhetorical argument; v10/angels detail; relation of cultural and Christological/theological argument.
+
+```text
+STATUS = OFFICIAL_ABSTRACT_AND_OPEN_ACCESS_PDF_OBJECT_CLOSED / PDF_BYTES_TERMINAL_RUNTIME_ENDPOINT_HOLD
+```
+
+## 26. Sławomir Torbus (2009)
+
+**Read:** “The Rhetorical Dispositio of 1 Cor. 11, 2–16 and the Problem of the Veil,” **pp.507–521**.
+
+**Where:** Brill, *New Chapters in the History of Rhetoric*, institutional ebook/chapter access.
+
+**Extract:** exact `dispositio`, continuity argument, whether he directly addresses quotation/refutation proposals.
+
+```text
+STATUS = CHAPTER_IDENTITY_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 27. Peter Arzt-Grabner et al., *1. Korinther*, PKNT 2 (2006)
+
+**Read:** **p.390**, including surrounding paragraph/footnotes.
+
+**Where:** PKNT 2 via institutional theological library / publisher ebook.
+
+**Verify:** exact claim that `ἐξουσία` + `ἐπί` + genitive is “uncommon”; source corpus behind that statement.
+
+```text
+STATUS = PAGE_LOCATOR_CLOSED / DIRECT_PAGE_TERMINAL_EXTERNAL_ACCESS_HOLD / NONBLOCKING
+```
+
+---
+
+# 3. M2 — primary scans, datasets and epigraphic objects
+
+## 28. Fendel 2023 — `EXOUSIAN.xlsx`
+
+**Read/data-audit:** official Oxford dataset spreadsheet `EXOUSIAN.xlsx` (51.7 KB).
+
+**Where:** Oxford Research Archive dataset:  
+https://ora.ox.ac.uk/objects/uuid:28406bed-423d-4801-9691-d5d7caa94e2a  
+DOI `10.5287/ora-dqmbwrvj6`.
+
+**Mandatory extraction:** identify the **three Roman-period prepositional-phrase rows** and record the actual prepositions/cases. Do not infer that any are `ἐπί + genitive` before reading rows.
+
+```text
+STATUS = DATASET_FILE_OBJECT_CLOSED / XLSX_BINARY_TERMINAL_ORA_TRANSPORT_HOLD
+```
+
+## 29. PG 118 — direct scan image p.409
+
+**Inspect visually:** original **Patrologia Graeca Vol. 118.pdf**, PDF p.409.
+
+**Where:** Wikimedia Commons public-domain object `Patrologia Graeca Vol. 118.pdf`.
+
+**Verify:** Clement Hypotyposeis fragment and Photius-parallel block against OCR; author labels, Greek, punctuation, exact page layout.
+
+```text
+STATUS = OCR_IMAGE_LOCATED / ORIGINAL_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINAL_TRANSPORT_HOLD
+```
+
+## 30. Cyril of Alexandria — PG 74, cols.879–883
+
+**Inspect visually:** `Patrologia Graeca Vol. 074.pdf`, printed **PG cols.879–883**.
+
+**Where:** Wikimedia Commons public-domain original scan.
+
+**Verify:** Cyril fragment wording and relation to Cramer `Κυτίλλου` block; do not use OCR as image authority.
+
+```text
+STATUS = WORK_COLUMNS_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINAL_TRANSPORT_HOLD
+```
+
+## 31. Theodoret — PG 82, cols.312D–313A
+
+**Inspect visually:** `Patrologia Graeca Vol. 082.pdf`, **PG 82, 312D–313A**.
+
+**Where:** Wikimedia Commons public-domain original scan.
+
+**Also read:** Robert C. Hill, *Commentary on the Letters of St Paul*, vol.1 (2001), **p.205**, if accessible.
+
+**Verify:** exact Greek for angels assigned over humans / entrusted with care; Acts 12:15 + Matt 18:10 chain; compare Hill translation.
+
+```text
+STATUS = WORK_COLUMNS_SCAN_OBJECT_CLOSED / PG_IMAGE_TERMINAL_TRANSPORT_HOLD / HILL_P205_TERMINAL_EXTERNAL_ACCESS_HOLD
+```
+
+## 32. Potta — TAM V.1 535 / PH263959
+
+**Read directly:** complete target printed/PHI object, not only search-index excerpt.
+
+**Where:** Packard Humanities/PHI object `PH263959`; *TAM V.1* no.535 (Lydia: Maionia).
+
+**Verify:** complete title/syntax around `Ποτταν ... προφῆτιν σώτειραν`, object description, whether any additional head/hair information exists.
+
+```text
+STATUS = PARTIAL_INDEX_BODY_AND_OFFICIAL_VOLUME_ROUTE_CLOSED / DIRECT_PAGE_TERMINAL_PUBLIC_ROUTE_HOLD
+```
+
+## 33. Nanas — same-object image
+
+**Inspect:** Tabbernee **fig.77** same-object image for Nanas; also visually inspect the relevant Poirier 2004 page image even though text body is already read.
+
+**Where:** Tabbernee figure via library/book access; Poirier open PDF:  
+https://ifa.phil-fak.uni-koeln.de/fileadmin/IfA/EpiAna_pdfs/037151_Poirier_The_Montanist_Nature_of_the_Nanas_Inscription__Steinepigramme_16-41-15_.pdf
+
+**Verify:** whether the object itself contains any head/hair/iconographic marker; keep disputed angelic-language interpretation separate.
+
+```text
+STATUS = TEXT_BODY_CLOSED / TABBERNEE_FIG77_TERMINAL_EXTERNAL_IMAGE_HOLD
+```
+
+## 34. Apphe — IK Kalchedon 61 = CIG 3796
+
+**Read visually/directly:** the original printed inscription page for **CIG 3796 / IK Kalchedon 61**.
+
+**Where:** CIG volume / IK Kalchedon through research library, digitized old-volume repository, Hathi/Google/Internet Archive where legally accessible.
+
+**Compare with:** Selin Önder 2022, DOI `10.26650/iutd.1096605`.
+
+**Verify:** exact grammar around `Ἄπφη ... προφῆτις`; whether syntax favors independent office or prophet-wife interpretation; object/funerary context.
+
+```text
+STATUS = FEMALE_NOUN_BEARER_SPECIALIST_CONTROL_CLOSED / ORIGINAL_PRINTED_PAGE_TERMINAL_BINARY_TRANSPORT_HOLD
+```
+
+## 35. Termessos — TAM III,1 870 / PH280975
+
+**Read directly:** complete inscription body.
+
+**Where:** PHI `PH280975` / *TAM III,1* no.870 through corpus/library scan.
+
+**Verify:** noun bearer, gender, syntax, genre, relation to Demeter Eleusinia; do not infer from neighboring TAM numbers.
+
+```text
+STATUS = CORPUS_AND_CULT_CONTEXT_CLOSED / BODY_NOUN_BEARER_GENRE_TERMINAL_PUBLIC_ROUTE_HOLD
+```
+
+## 36. Nisyra — SEG 49.1624 / PH348429 / TM949255
+
+**Read directly:** direct PHI object page if/when it renders; compare with TM object.
+
+**Where:** PHI `PH348429`; Trismegistos `TM949255`; SEG 49.1624.
+
+**Purpose:** confirm the currently indexed two-line dedication and document the likely Nawotka-reference error; **do not guess a replacement inscription**.
+
+```text
+STATUS = INDEXED_BODY_AND_TM_CROSSWALK_CLOSED / DIRECT_OBJECT_PAGE_TERMINAL_PUBLIC_ROUTE_HOLD / VERY_LIKELY_REFERENCE_ERROR
+```
+
+## 37. Philokrateia — CGRN 232 direct page
+
+**Read if route recovers:** direct CGRN 232 body.
+
+**Where:** Collection of Greek Ritual Norms, object CGRN 232. Object identity is already closed through CGRN 222 cross-reference; Vollgraff 1909 p.445 same-object photo is already read.
+
+**Purpose:** redundant direct-corpus confirmation only.
+
+```text
+STATUS = OBJECT_AND_PHOTO_CLOSED / DIRECT_CGRN232_RUNTIME_502_HOLD_NONBLOCKING
+```
+
+## 38. P.Wisc. I 13 — edition image/apparatus
+
+**Inspect if available:** papyrus/edition image and apparatus around the restored `ἐξουσία` formula.
+
+**Where:** documentary text route:  
+https://droitromain.univ-grenoble-alpes.fr/Negotia/Wisc1_DDBDP.gr.html  
+then trace the edition image/apparatus through papyrological library resources.
+
+**Purpose:** distinguish restored formula from surviving visible letters.
+
+```text
+STATUS = OPTIONAL_NONBLOCKING_REOPEN
+```
+
+---
+
+# 4. M3 — optional completeness / model-stress checks
+
+## 39. Cramer printed catena label image
+
+**Inspect:** printed Cramer page around the suspicious digital label `Κυτίλλου` and corresponding 1 Cor 11 angel block.
+
+**Where:** Cramer, *Catenae Graecorum Patrum in Novum Testamentum*, vol.5 (Oxford, 1841), manuscript tradition principally Paris BnF grec 227; Scaife ATLAS text route already closed.
+
+**Purpose:** visually distinguish printed/editorial form from digital transcription; independent fragment convergence already strongly identifies Cyril.
+
+```text
+STATUS = OPTIONAL_NONBLOCKING_IMAGE_CHECK
+```
+
+## 40. Martin 2013 — later PDF page screenshots
+
+**Inspect:** later page images of Martin’s response PDF for visual/page-image confirmation.
+
+**Purpose:** text layer and substantive argument are already read; this is only visual custody completeness.
+
+```text
+STATUS = FULL_TEXT_BODY_CLOSED / LATER_PAGE_SCREENSHOTS_RUNTIME_CACHE_HOLD_NONBLOCKING
+```
+
+## 41. Nicole Francis 2023/24 — full PDF
+
+**Read if easy to obtain:** “A Pauline Dress Code or a Roman Analogy: Reinterpreting Paul’s Discourse in 1 Corinthians 11:1–16.”
+
+**Where:** BYU ScholarsArchive:  
+https://scholarsarchive.byu.edu/studiaantiqua/vol22/iss1/6/
+
+**Purpose:** full stress-test of the “Roman analogy / not-primary-dress-code” model; lower venue weight.
+
+```text
+STATUS = OPTIONAL_MODEL_STRESS_REOPEN_ONLY_IF_MATERIAL
+```
+
+## 42. Garland first edition (2003) — edition comparison only
+
+**Read only after/alongside 2025 edition:** “Headdress in Public Worship (11:2–16),” **pp.505–532** in the first edition.
+
+**Purpose:** establish precisely what 2025 changed; never substitute 2003 text/pages for 2025.
+
+```text
+STATUS = OPTIONAL_EDITION_CONTINUITY_CONTROL
+```
+
+## 43. Low-weight current edge/reception full bodies
+
+These are not required to stabilize the current grade map, but may be read for exhaustive current-debate history:
+
+- Israel O. O. Odewole 2025, *QUAERENS* 7.1:18–33 — official journal route: https://jurnal.widyaagape.ac.id/index.php/quaerens/article/view/240
+- Jason Garwood, *Paul & the Head Covering: A Biblical Reassessment* (2026) — current confessional/non-universalist edge model.
+
+```text
+STATUS = OPTIONAL_LOW_WEIGHT_CURRENT_RECEPTION
+```
+
+---
+
+# 5. What is already directly closed — do NOT put back on reading queue
+
+The following do **not** need reacquisition merely to repeat work:
+
+```text
+DIDYMA_III7_2023_FULL_BODY = CLOSED_DIRECT_OFFICIAL
+TRYPHOSA_N708_BODY_AND_TAF18 = CLOSED_DIRECT_OFFICIAL
+DIDYMA_235B_FALSE_OLD_READING = CLOSED
+DIDYMA_273_EXEMPLI_GRATIA_RESTORATION = CLOSED
+PHILOKRATEIA_VOLLGRAFF_1909_P445_PHOTO = CLOSED_DIRECT_IMAGE
+ERESOS_IG_XII_SUPPL_126 = CLOSED_DIRECT
+IGVII_3111_BODY = CLOSED_DIRECT_IGVII
+IGLSYR_1_51 = CLOSED_DIRECT_FALSE_PERSON_CONTROL
+MILETOS_481 = CLOSED_DIRECT
+AMMIAS_THYATEIRA = CLOSED_DIRECT
+PETERS_2021_OPEN_THEOLOGY = CLOSED_DIRECT_FULLTEXT
+HAMPLOVA_2025 = CLOSED_DIRECT_INSTITUTIONAL_FULLTEXT
+SALES_2024 = CLOSED_OPEN_FULLTEXT
+LLEWELLYN_JONES_2003_KEY_CHAPTER_CONTROLS = CLOSED_DIRECT_JSTOR_PREVIEWS
+STAFFORD_2024 = CLOSED_DIRECT_OXFORD
+THOMPSON_1988 = CLOSED_DIRECT_PUBLISHER_CONTROL
+GILL_1990 = CLOSED_DIRECT_OPEN
+ASCSA_CORINTH_XXII_OBJECT_CONTEXT = CLOSED_CURRENT_ASSEMBLAGE_CONTROL
+GOODACRE_2011 = CLOSED_DIRECT_FULL_BODY
+MARTIN_2013 = CLOSED_DIRECT_TEXT_BODY
+HILTON_MATTHEWS_2008 = CLOSED_DIRECT_UKZN_PDF
+FENDEL_2023_ARTICLE_BODY_AND_CORPUS_COUNTS = CLOSED_DIRECT
+PSI_X_1115 = CLOSED_DIRECT
+TAM_II_603_604 = CLOSED_DIRECT
+```
+
+---
+
+# 6. Recommended human reading order
+
+If access is limited, use this order:
+
+```text
+1 Reasoner 2025 pp432_451
+2 Garland 2025 2e section VII
+3 Fee 2014 pp542_586 / esp 576_578 n123
+4 Thiselton 2000 pp800_847
+5 Ciampa_Rosner 2010 pp503_540
+6 Drake 2025 pp70_89
+7 Nommik fulltext
+8 Peters 2025 full monograph
+9 Starling 2025 1Cor11 section
+10 Gorman 2025 1Cor11 section
+11 Okland ch4_7
+12 deSilva 2025 pp126_156
+13 Gundry_Volf 1997 pp151_171
+14 Gielen 1999 pp220_249
+15 Hao_Li 2023 pp267_318
+16 Peerbolte 2000 pp76_92
+17 Peters 2020 pp431_443
+18 Corrington 1991 pp223_231
+19 Fantham / Olson / Hughes
+20 Kowalski / Torbus
+21 PKNT p390 / Fendel XLSX
+22 PG118 / PG74 / PG82 page-image autopsy
+23 Potta / Apphe / Termessos / Nanas object checks
+24 all M3 optional controls
+```
+
+---
+
+# 7. Reading-return protocol
+
+For every newly acquired source, record:
+
+```text
+SOURCE_ID
+EDITION_YEAR
+PRINT_OR_PDF_PAGINATION
+ACCESS_ROUTE
+PAGE_RANGE_READ
+DIRECT_QUOTE_SAFE = true_or_false
+CLAIMS_ACTUALLY_SUPPORTED
+CLAIMS_NOT_SUPPORTED
+EDITION_DIFFERENCES
+IMAGE_AUTOPSY = if_applicable
+OWNER_FILE_UPDATED
+CLAIM_REGISTRY_CHANGE = yes_or_no
+```
+
+A user-provided PDF/photo/scan should be treated as a **new lawful access route** and reopens only the matching checklist item.
+
+---
+
+# 8. Final status
+
+```text
+TOTAL_CONCRETE_MANUAL_READING_ITEMS = 43
+M0_MAJOR = 11
+M1_SPECIALIST = 16
+M2_PRIMARY_OBJECT_DATA = 11
+M3_OPTIONAL = 5
+
+CURRENT_RESEARCH_AUDIT_READY = true
+CURRENT_AGENT_ACQUISITION_QUEUE = empty
+MANUAL_READING_CAN_STILL_UPGRADE_SOURCE_CUSTODY = true
+MANUAL_READING_LIST_COMPLETE_FOR_CURRENT_KNOWN_GAPS = true
+```
