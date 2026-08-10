@@ -28,6 +28,8 @@ ADJACENT_STELE_ICONOGRAPHY != TARGET_INSCRIPTION_ICONOGRAPHY
 PHI_ORDINAL != AUTOMATICALLY_REHM_OR_CURRENT_EDITION_NUMBER
 WORD_PROPHETIS_IN_AN_INSCRIPTION != FEMALE_PERSON_AUTOMATICALLY
 REFERENCE_LIST_ENTRY != VERIFIED_PROPHETESS_OBJECT_AUTOMATICALLY
+SEQUENTIAL_EDITOR_NUMBERING != PROOF_OF_OBJECT_CROSSWALK
+CULT_CONTEXT != PROPHETIS_NOUN_BEARER
 PRINT_REFERENCE_ERROR != LICENSE_TO_GUESS_THE_INTENDED_REFERENCE
 PDF_TEXT_LAYER_READ != PAGE_IMAGE_AUTOPSY
 ROMAN_GREEK_JEWISH_CHRISTIAN_COMPARAND != EXACT_CORINTH_TRIGGER
@@ -57,9 +59,9 @@ Every new corpus-list item must pass **noun-bearer / syntax / object-identity au
 | Thera / IG XII.3 1349/863 | Delphic `[προφ]ῆτις` sends oracle | anonymous epigraphic control | **No** |
 | IGLSyr 1 51 | `ἀναγραφή` itself called `προφήτις` | semantic false-positive control | **Not a woman** |
 | Athens / IG II² 13148 | direct funerary epigram; official IG organization + text conflict with prophetess list | very likely citation/reference error | **Not countable as prophetess** |
-| Nisyra / SEG 49.1624 | exact object pinned; target syntax/body incomplete | candidate-list HOLD | **Unknown** |
-| Termessos / TAM III,1 870 | deterministic object mapping; body incomplete | candidate-list HOLD | **Unknown** |
-| Lebadeia / IG VII 3111 | deterministic object mapping; body incomplete | candidate-list HOLD | **Unknown** |
+| Nisyra / SEG 49.1624 | PHI/TM object pinned; Malay no.137 Nisyra/Roman-soteria context independently verified, exact crosswalk/body still open | candidate-list HOLD narrowed | **Unknown** |
+| Termessos / TAM III,1 870 | object mapping + independent Demeter Eleusinia cult-reference control; body incomplete | candidate-list HOLD narrowed | **Unknown** |
+| Lebadeia / IG VII 3111 | deterministic object mapping; false-neighbor identities firewalled; body incomplete | candidate-list HOLD | **Unknown** |
 | Andania / Lycosura | direct ritual hair/headwear regulation | separate regulatory axes | **Yes, but not prophetess** |
 | Virgil / Lucan | prophetic head/hair imagery | literary comparison only | **Literary only** |
 
@@ -422,7 +424,7 @@ COUNT_AS_SECURE_PROPHETESS = NO
 
 Do not silently repair the citation to a neighboring inscription. Only an explicit erratum, source manuscript/notes, or independently identifiable intended object can close the intended-reference question.
 
-## 5.5 Nisyra — `SEG 49.1624`
+## 5.5 Nisyra — `SEG 49.1624`: object pinned, contextual substrate narrowed
 
 ```text
 PHI_OBJECT = 348429
@@ -431,31 +433,73 @@ LOCATION = NISYRA_LYDIA
 DIRECT_BODY_CURRENT_RUNTIME = CACHE_HOLD
 ```
 
-The search surface exposes only the opening dedication formula beginning `Θεῷ Βασιλεῖ ...`; noun-bearer remains unresolved.
+The PHI/search surface exposes the opening dedication formula beginning `Θεῷ Βασιλεῖ ...`; noun-bearer remains unresolved.
 
-Adjacent `SEG 49.1623` is a **different marble stele** (48/47 BCE) with olive branch and double axe above its inscription.
+Independent object/corpus work narrows the acquisition target:
+
+- direct PHI for adjacent `SEG 49.1623` identifies it as H. Malay, *Researches in Lydia, Mysia and Aiolis* (1999), p.128, **no.136**, Nisyra, 48/47 BCE;
+- independent Oxford scholarship cites **Malay no.137 (Nisyra, Roman imperial period)** as a `σωθεὶς ἐκ (μεγάλου) κινδύνου` / soteria-type inscription;
+- Malay 1999 is independently identified as ETAM 23, the relevant Nisyra corpus publication.
+
+Because no.136 is `SEG 49.1623`, it is tempting to identify sequential no.137 with `SEG 49.1624`. That crosswalk is **plausible but not yet direct** and is therefore deliberately not promoted.
+
+Adjacent `SEG 49.1623` is a **different marble stele** with olive branch and double axe. None of its text or iconography may be transferred to 1624.
 
 ```text
+MALAY_1999_NO136 = SEG49_1623_DIRECT_PHI
+MALAY_1999_NO137 = NISYRA_ROMAN_IMPERIAL_SOTERIA_INSCRIPTION_INDEPENDENT_CONTROL
+MALAY_NO137_EQ_SEG49_1624 = PLAUSIBLE_NOT_DIRECTLY_VERIFIED
 SEG49_1623_ICONOGRAPHY != SEG49_1624_ICONOGRAPHY
-NISYRA_1624_FEMALE_PERSON = HOLD_UNTIL_BODY
+NISYRA_1624_PROPHETIS_NOUN_BEARER = HOLD_UNTIL_BODY
 NISYRA_1624_HEAD_STATE = UNKNOWN
 ```
 
-## 5.6 Termessos — `TAM III,1 870`
+The contextual substrate is now stronger, but the prophetess claim itself is **not** upgraded.
+
+## 5.6 Termessos — `TAM III,1 870`: cult context verified, noun-bearer still open
 
 ```text
 TERMESSOS_TAMIII1_870_PH280975 = DETERMINISTIC_CORPUS_MAPPING
 TERMESSOS_TAMIII1_870 = BODY_AND_SYNTAX_HOLD
+```
+
+Independent scholarship supplies a useful but limited control. Hugh Bowden’s 2007 study of Demeter Eleusinia cult transmission lists **Termessos — TAM III 870** in its evidence table for a local cult of **Demeter Eleusinia**. Separate epigraphic literature also cites TAM III 870 in Termessian personal-name/cult discussion, showing that the object is not merely a floating number.
+
+This validates the **cultic relevance and reference identity** of 870, but does not show the full Greek text or establish who bears `προφῆτις`.
+
+```text
+TERMESSOS_870_DEMETER_ELEUSINIA_CULT_CONTEXT = VERIFIED_INDEPENDENT_SCHOLARLY
+TERMESSOS_870_REFERENCE_NOT_RANDOM = true
+TERMESSOS_870_PROPHETIS_NOUN_BEARER = HOLD
+TERMESSOS_870_OBJECT_TYPE = HOLD
 DO_NOT_COUNT_AS_NAMED_FEMALE_PERSON_YET
 ```
 
-## 5.7 Lebadeia — `IG VII 3111`
+Do not infer from neighboring TAM numbers that 870 is a theatre-seat inscription; numbering adjacency is not object-identity proof.
+
+## 5.7 Lebadeia — `IG VII 3111`: identity firewall strengthened
 
 ```text
 IGVII_3111_PH146626 = DETERMINISTIC_CORPUS_MAPPING
 IGVII_3111 = BODY_AND_NOUN_BEARER_HOLD
+```
+
+Official IG bibliography identifies `IG VII` as Dittenberger’s 1892 *Inscriptiones Megaridis et Boeotiae* and includes a Lebadeia section. The old volume is public-domain and digitally catalogued, but the exact 3111 page/text has not yet been successfully extracted in the current runtime.
+
+Searches for `3111` produce dangerous false-neighbor hits:
+
+- `DVC 3111` is a **Dodona** private oracle inquiry of Nikomachos;
+- `IG II² 3111` is an **Attic** inscription;
+- neither is `IG VII 3111` from Lebadeia.
+
+```text
+DVC_3111_DODONA != IGVII_3111_LEBADEIA
+IGII2_3111_ATTICA != IGVII_3111_LEBADEIA
+IGVII_3111_PROPHETIS_NOUN_BEARER = HOLD
 DO_NOT_COUNT_AS_NAMED_FEMALE_PERSON_YET
 ```
+
+This is an identity firewall, not evidence against the Lebadeia reference itself.
 
 ---
 
@@ -568,6 +612,9 @@ AMMIAS_THYATEIRA != AMMIA_PHILADELPHIA
 THYATEIRA_ORACLE_FUNCTION != PROPHETIS_TITLE
 IGLSYR_1_51_PROPHETIS != FEMALE_PERSON
 IGII2_13148_REFERENCE != VERIFIED_PROPHETESS
+DVC_3111 != IGVII_3111
+IGII2_3111 != IGVII_3111
+MALAY_NO137_SEQUENTIAL_POSITION != SEG49_1624_PROOF
 VISUAL_HONOUR != SURVIVING_PORTRAIT
 ARCHAIC_VEILED_WOMAN != FIRST_CENTURY_PROPHETESS
 ADJACENT_NISYRA_STELE != TARGET_NISYRA_STELE
@@ -606,9 +653,9 @@ NANAS_HEAD_HAIR_CODE = NOT_FOUND
 APPHE_HEAD_HAIR_CODE = NOT_FOUND
 ERESOS_PROPHETESS_OFFICE = A_EPIGRAPHIC_PRE_PAULINE_NO_HEAD_CODE
 IGII2_13148 = VERY_LIKELY_REFERENCE_ERROR_NOT_PROPHETESS
-NISYRA_1624 = SYNTAX_OBJECT_HOLD
-TERMESSOS_870 = SYNTAX_OBJECT_HOLD
-IGVII_3111 = SYNTAX_OBJECT_HOLD
+NISYRA_1624 = OBJECT_PINNED_CONTEXT_NARROWED_NOUN_BEARER_HOLD
+TERMESSOS_870 = CULT_CONTEXT_VERIFIED_NOUN_BEARER_HOLD
+IGVII_3111 = IDENTITY_FIREWALLED_NOUN_BEARER_HOLD
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
@@ -633,7 +680,7 @@ DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 
 Safe synthesis:
 
-> Female mantic/prophetic agency is directly attested in several Greek, Asia-Minor and early-Christian environments, and Eresos supplies a direct pre-Pauline sanctuary regulation in which a `prophetis` is an institutional exception to the general female temple-entry ban. The broadened corpus also demonstrates why reference lists and lexical hits cannot be counted mechanically: `IGLSyr 1 51` personifies an inscription as `prophetis`, while `IG II² 13148` converges across direct funerary text and official corpus organization as a very likely miscitation in the prophetess footnote. No near-Pauline direct object has yet been verified in which the same identified prophetess/promantis bears a specific veil/headband/hair code capable of explaining Corinth.
+> Female mantic/prophetic agency is directly attested in several Greek, Asia-Minor and early-Christian environments, and Eresos supplies a direct pre-Pauline sanctuary regulation in which a `prophetis` is an institutional exception to the general female temple-entry ban. The broadened corpus also demonstrates why reference lists and lexical hits cannot be counted mechanically: `IGLSyr 1 51` personifies an inscription as `prophetis`, while `IG II² 13148` converges across direct funerary text and official corpus organization as a very likely miscitation in the prophetess footnote. The remaining Nisyra, Termessos and Lebadeia entries have now been narrowed by independent object/cult/identity controls, but their `prophetis` noun-bearers remain unverified until direct bodies are acquired. No near-Pauline direct object has yet been verified in which the same identified prophetess/promantis bears a specific veil/headband/hair code capable of explaining Corinth.
 
 ---
 
@@ -644,9 +691,9 @@ Safe synthesis:
 1. Potta `TAM V.1 535 / PH263959` direct body.
 2. Nanas **Tabbernee fig.77** / same-object monument image; text body is now closed.
 3. Apphe `IK Kalchedon 61 = CIG 3796` direct page/object; CIG volume identity is closed.
-4. Nisyra `SEG 49.1624 / PH348429 / TM949255` complete text, noun-bearer, object description.
-5. Termessos `TAM III,1 870 / PH280975` direct text, noun-bearer, object description.
-6. Lebadeia `IG VII 3111 / PH146626` direct body + noun-bearer.
+4. Nisyra `SEG 49.1624 / PH348429 / TM949255` complete text and noun-bearer; explicitly prove/disprove Malay no.137 crosswalk rather than infer it.
+5. Termessos `TAM III,1 870 / PH280975` direct text, noun-bearer and object type; Demeter Eleusinia context is already verified.
+6. Lebadeia `IG VII 3111 / PH146626` direct body + noun-bearer; preserve `DVC 3111` / `IG II² 3111` identity firewall.
 7. Didyma III.7 full body search for female mantic titles + head/hair terms.
 8. Didyma 235B direct stone/Rehm page.
 
