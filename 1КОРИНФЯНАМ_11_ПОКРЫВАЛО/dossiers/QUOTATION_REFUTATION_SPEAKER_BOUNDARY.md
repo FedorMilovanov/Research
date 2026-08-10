@@ -24,6 +24,7 @@ EARLY_RECEPTION != ORIGINAL_AUTHORIAL_INTENT
 ABSENCE_OF_EXPLICIT_QUOTATIVE_FORMULA != QUOTATION_IMPOSSIBLE
 SHORT_SLOGAN_PARALLEL != LONG_UNMARKED_BLOCK_PROOF
 NUMBER_OF_ADVOCATES != TEXTUAL_PROOF
+METHOD_AUTHOR != EVERY_DOWNSTREAM_APPLICATION_OF_METHOD
 ```
 
 Future work updates this dossier; do not create separate quotation/slogan/speaker-boundary successor files.
@@ -310,12 +311,23 @@ QUOTE_BOUNDARY_MUST_BE_JUSTIFIED_EXPLICITLY
 ```
 
 Duane Watson and Martin Culy, *Quoting Corinthians: Identifying Slogans and Quotations in 1 Corinthians* (Pickwick, 2018):
-- https://wipfandstock.com/9781532618437/quoting-corinthians/
+- publisher: https://wipfandstock.com/9781532618437/quoting-corinthians/
+- lawful ebook preview route: Everand / Google Play sample surfaces located in the current acquisition pass.
+
+The publisher describes a step-by-step method for identifying slogans/quotations and says the criteria are applied to **eleven passages** in 1 Corinthians. The accessible lawful preview exposes the method/front portion of the book. Direct searches within that preview did **not** expose `11:2`, `head covering` or a Peppiatt discussion.
+
+A later popular article explicitly says that **it** applies Watson–Culy’s criteria to 1 Cor 11:2–16. That downstream use is not evidence that Watson and Culy themselves selected 11:2–16 among their eleven applications.
 
 ```text
+WATSON_CULY_2018_BOOK_AND_METHOD = DIRECT_PUBLISHER_PLUS_LAWFUL_PREVIEW_VERIFIED
+WATSON_CULY_ELEVEN_APPLICATIONS = DIRECT_PUBLISHER_DESCRIPTION
+WATSON_CULY_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
+DOWNSTREAM_APPLICATION_OF_WATSON_CULY_CRITERIA != WATSON_CULY_AUTHOR_APPLICATION
 PAUL_CAN_ECHO_OR_CITE_CORINTHIAN_MATERIAL = PLAUSIBLE
 THEREFORE_POSITIVE_BOUNDARY_CRITERIA_ARE_REQUIRED = true
 ```
+
+Do not list Watson/Culy as direct advocates or direct critics of a large quotation in 11:2–16 unless their own relevant passage is acquired.
 
 Paul A. Holloway, “Religious ‘Slogans’ in 1 Corinthians: Status Markers, Sophistic Values, and Theological Conflict,” *JTS* 72.1 (2021): 125–154:
 - https://academic.oup.com/jts/article/72/1/125/6151684
@@ -502,7 +514,8 @@ NOT = SCHOLARLY_EXISTENCE_GRADE
 # 9. Acquisition targets
 
 ```text
-P0 WATSON_CULY_2018_FULL_CRITERIA_AND_1COR11_DISCUSSION = HOLD
+WATSON_CULY_2018_METHOD = CLOSED_AT_PUBLISHER_PLUS_LAWFUL_PREVIEW_LEVEL
+WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED / DO_NOT_ASSUME_SUCH_SECTION
 P1 KOWALSKI_2020_OFFICIAL_PDF_BYTES = RETRY
 P1 TORBUS_2009_PP507_521 = FULLTEXT_HOLD
 P1 TECHNICAL_GAR_KAI_GAR_DIA_TOUTO_PLEN_POLYPHONY_CORPUS = OPEN
@@ -518,7 +531,7 @@ Accumulating further advocates alone should not alter probability.
 
 Safe summary:
 
-> A substantial Corinthian-quotation reading is a genuine published minority family, now including both contiguous-block and alternating-voice proposals. Paul can quote/reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or for repeated alternating unmarked switches; advocates disagree over span; several modern rhetorical studies read the passage continuously; and the checked early witnesses likewise read it as Paul’s continuous argument. The model family therefore belongs in the status quaestionis but remains low in textual fit.
+> A substantial Corinthian-quotation reading is a genuine published minority family, now including both contiguous-block and alternating-voice proposals. Paul can quote/reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or for repeated alternating unmarked switches; advocates disagree over span; several modern rhetorical studies read the passage continuously; and the checked early witnesses likewise read it as Paul’s continuous argument. Watson and Culy are retained as a method-control source; no direct application of their criteria to 11:2–16 is currently verified. The large-quotation model family therefore belongs in the status quaestionis but remains low in textual fit.
 
 Do not write:
 
@@ -529,6 +542,7 @@ PLEN_PROVES_NEW_SPEAKER = OVERCLAIM
 NA28_PUNCTUATION_PROVES_COSTA_IMPOSSIBLE = OVERCLAIM
 EARLY_RECEPTION_PROVES_ORIGINAL_INTENT = OVERCLAIM
 PEPPIATT_EXPLANATORY_POWER_PROVES_SWITCHES = OVERCLAIM
+WATSON_CULY_METHOD_USED_BY_LATER_WRITER = WATSON_CULY_THEMSELVES_APPLY_TO_1COR11 = FALSE_ATTRIBUTION
 ```
 
 ---
@@ -541,6 +555,8 @@ LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
 LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
 LARGE_QUOTATION_LEADING_MODEL = false
 PEPPIATT_2015 = ABSORBED_AS_DISTINCT_ALTERNATING_VOICE_MODEL
+WATSON_CULY_2018_METHOD = DIRECT_CONTROL
+WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
 CLOSE_LONG_UNMARKED_ANALOGUE = NOT_FOUND_IN_INSPECTED_1COR
 EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 EARLY_CONTINUOUS_PAULINE_READING = STRONGLY_ATTESTED
