@@ -1,20 +1,21 @@
-# 1 Коринфянам 11:2–16 — current authority pointer after citation-quarantine pass
+# 1 Коринфянам 11:2–16 — current authority pointer after citation quarantine + direct-source pass
 
 **Дата:** 2026-08-10  
-**Статус:** `LATEST-AUTHORITY-POINTER / AGENT-CITATION-QUARANTINE-VERIFIED / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `LATEST-AUTHORITY-POINTER / CITATION-QUARANTINE / DIRECT-SOURCE-RECENT-SCHOLARSHIP / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## Read order
 
 1. `00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md` — provenance / ownership / publication boundary.
-2. `00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md` — single current claim-grade registry.
+2. `00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md` — single current claim-grade registry; **still controlling for grades**.
 3. `00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md` — current Greek edition/text-base contract.
 4. `00ZZZZZZZZZZZZZZZZZZZZ_AGENT_DUMP_48_TARGET_VERIFICATION_AUDIT_2026-08-10.md` — first uploaded agent-dump source-hygiene audit.
 5. **`00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`** — second 48+ target source-specific reconciliation; current control for Fee/Garland/Ciampa-Rosner attribution, Nõmmik institutional summary, Finney direct abstract and Murphy-O’Connor human-messenger source status.
 6. **`00ZZZZZZZZZZZZZZZZZZZZZ_MONTIER_SHAVED_HEAD_SOCIAL_MYTH_CONTROL_2026-08-10.md`** — direct open-fulltext control against the shaved-prostitute/temple-prostitute folklore claim.
-7. **`00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`** — current stop-layer for fabricated or mis-cited fresh-source claims: P.Oxy. 5575, Kirk JBL 142.3, Ehrensperger/Al-Suadi ritual chapters, Chrysostom false quote, DeConick JBL/chapter attribution, Yung Suk Kim, Petterson and Punt bibliographic controls.
-8. Claim-specific primary/adversarial audits listed in the current registry.
+7. **`00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`** — stop-layer for fabricated/mis-cited fresh-source claims: P.Oxy. 5575, Kirk JBL 142.3, Ehrensperger/Al-Suadi ritual chapters, Chrysostom false quote, DeConick JBL/chapter attribution, Yung Suk Kim, Petterson and Punt bibliographic controls.
+8. **`00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`** — direct publisher/institutional source pass; Nõmmik access-map separation, Berglund 2025 provenance, Hooker/Fitzmyer Cambridge controls, Newberry 2019, Marshall 2019, Costa 2023/24, Salés 2024, Chadwick 2022 and Callon 2024.
+9. Claim-specific primary/adversarial audits listed in the current registry.
 
-The newest quarantine layer **does not supersede core claim grades** because no core grade changed. It supersedes any conflicting `verified/gold/fully verified` labels attached to the specific quarantined citations in raw agent dumps.
+The quarantine/direct-source layers **do not supersede core claim grades** because no core grade changed. They supersede conflicting raw-agent `verified/gold/fully verified` labels and improve source ownership/provenance.
 
 ---
 
@@ -38,12 +39,29 @@ CIAMPA_ROSNER_DIRECT_P509_530_533 = HOLD
 SHAVED_HEAD = TEMPLE_PROSTITUTE_MARKER = REJECTED_UNIVERSAL
 SHAVED_WOMAN = UNIVERSALLY_ADULTERESS = REJECTED
 
-NOMMIK_MODEL_DESCRIPTION = A_AUTHOR/INSTITUTIONAL
+NOMMIK_MODEL_DESCRIPTION = A_AUTHOR/INSTITUTIONAL_DESCRIPTION
 NOMMIK_HIDDEN_EVENTS = C_SERIOUS_RECONSTRUCTION
+NOMMIK_BACKGROUND_SUBSTRATE != NOMMIK_HIDDEN_TRIGGER
+NOMMIK_EXACT_PAGE_LOCATOR = EDITION_PIN_REQUIRED
+BERGLUND_2025_PEER_REVIEWED = VERIFIED_INSTITUTIONAL
+BERGLUND_CITES_NOMMIK_81_150 = VERIFIED_DIRECT_JOURNAL_PAGE
+BERGLUND_AGENT_BODY_LEVEL_ENDORSEMENTS = LOCATOR_HOLD
 
 FINNEY_MODEL_DESCRIPTION = DIRECT_JSNT_ABSTRACT
 MURPHY_OCONNOR_HUMAN_MESSENGERS = DIRECT_OXFORD_ABSTRACT
 HUMAN_MESSENGERS_LIKELIHOOD = D_C_LOW_PUBLISHED_ALTERNATIVE
+
+HOOKER_EXOUSIA_ACTIVE = DIRECT_CAMBRIDGE_APPARATUS
+HOOKER_ANGEL_MISDIRECTED_WORSHIP_MODEL = REAL_PUBLISHED_ALTERNATIVE
+FITZMYER_QUMRAN_HEAVENLY_ANGEL_SUPPORT = DIRECT_CAMBRIDGE_EXTRACT
+FITZMYER_EXOUSIA_ACTIVE = DIRECT_CAMBRIDGE_APPARATUS
+NEWBERRY_1_ESDRAS_4_INTERTEXT = DIRECT_CAMBRIDGE_ABSTRACT
+NEWBERRY_V10_WOMAN_AUTHORITY = DIRECT_CAMBRIDGE_ABSTRACT
+MARSHALL_TWO_MODIFIED_TRADITIONS = DIRECT_BRILL_ABSTRACT
+MARSHALL_MODEL != LARGE_QUOTATION_MODEL
+COSTA_VV4_9_UNENDORSED_QUOTATION = REAL_B1_LINGUISTIC_PROPOSAL
+SALES_2024_ANDROPRIMACY_QUOTATION_MODEL = REAL_B1_ALTERNATIVE
+CHADWICK_2022_HAIR_ONLY = REAL_B1_ALTERNATIVE
 
 POXY_84_5575_1COR11_PARALLEL = REJECTED_FABRICATION
 POXY_5575_ACTUAL = VOL_87_2023_SAYINGS_OF_JESUS
@@ -88,7 +106,11 @@ PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
 V16_TRANSLOCAL_CHURCH_APPEAL = A_TEXT
 V16_NORMATIVE_FORCE = B_HIGH
 V16_EXACT_CUSTOM_REFERENT = B_C
+ONE_ESDRAS_4_INTERTEXT = B_C_SERIOUS_PROPOSED
+LARGE_QUOTATION_REFUTATION = D_C_LOW
 ```
+
+Recent Costa/Salés support makes the quotation hypothesis worth a fresh adversarial stress test, but **does not yet authorize a grade change**. Marshall must be kept separate because her model uses modified traditions without requiring a large speaker-change quotation.
 
 ---
 
@@ -99,18 +121,22 @@ Thiselton NIGTC 2000: pp.800–847 + notes
 Fee NICNT Revised 2014: approx pp.542–586 + notes; include pp.565–567 addendum
 Garland BECNT 2nd ed. 2025: pp.468–493 + notes
 Ciampa/Rosner PNTC 2010: pp.503–540 + notes
+Nõmmik DTH 9: full DiVA object + edition-pinned locators
+Costa: full argument for vv4–9 quotation before any grade reconsideration
 ```
 
 ## Next agent-side high-value targets
 
-1. Nõmmik DiVA full text, especially v10/angels and hidden-event argumentation.
-2. Direct Ciampa/Rosner pp.509 and 530–533.
-3. Hooker 1964 full text.
-4. Gundry-Volf full text.
-5. Olson 2008 exact Roman female dress/portrait discussion.
-6. Fantham 2008 full chapter on Roman head covering and gender.
-7. DeConick *The Gnostic New Age*, ch.4 direct read only to test whether 1 Cor 11 is actually discussed.
-8. Punt, “Pauline Bodies and South African Bodies” direct read before any 1 Cor 11-specific attribution.
+1. Garland 2025 complete pp.468–493 + notes.
+2. Ciampa/Rosner pp.503–540 + notes; replace quote chains with direct book text.
+3. Nõmmik DiVA full object, especially the transition from Roman evidence to hidden-event reconstruction and v10/angels.
+4. Costa full-text adversarial matrix vs Peppiatt/Shoemaker/Marshall/current discourse audit.
+5. Hooker 1964 complete article if a lawful direct route opens; Cambridge apparatus already pinned.
+6. Gundry-Volf full chapter.
+7. Olson 2008 / Fantham 2008 exact Roman female dress/portrait sections.
+8. DeConick *The Gnostic New Age*, ch.4 direct read only to test whether 1 Cor 11 is actually discussed.
+9. Punt, “Pauline Bodies and South African Bodies” direct read before any 1 Cor 11-specific attribution.
+10. Rights-safe visual ledger for capite-velato statues, reliefs and coins with museum/archive provenance.
 
 Do not ask the user for these while agent-side lawful access routes remain available.
 
@@ -122,6 +148,9 @@ Do not ask the user for these while agent-side lawful access routes remain avail
 AGENT_DUMP = DISCOVERY_ONLY
 FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
 DIRECT_QUOTE_FROM_AGENT = NEVER_QUOTE_SAFE_WITHOUT_DIRECT_TEXT
+RECENCY != AUTHORITY
+PEER_REVIEW != CORRECTNESS
+PUBLISHER_ABSTRACT != FULL_ARTICLE
 DO_NOT_REQUEST_FROM_USER_IF_AGENT_CAN_ACCESS = true
 PRODUCT_WRITE = false
 UI_IMPLEMENTATION = false
