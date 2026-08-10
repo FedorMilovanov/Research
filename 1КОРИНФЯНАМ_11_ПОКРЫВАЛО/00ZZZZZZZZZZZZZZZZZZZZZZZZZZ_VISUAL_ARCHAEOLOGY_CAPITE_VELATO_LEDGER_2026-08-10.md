@@ -1,200 +1,184 @@
-# 1 Коринфянам 11:2–16 — visual archaeology / `capite velato` source ledger
+# 1 Коринфянам 11:2–16 — Roman Corinth visual archaeology / `capite velato` custody ledger
 
 **Дата:** 2026-08-10  
-**Статус:** `VISUAL-ARCHAEOLOGY / OBJECT-PROVENANCE / RIGHTS-AWARE / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `VISUAL-ARCHAEOLOGY / OBJECT-PROVENANCE / RIGHTS-CUSTODY / CHECKSUM-PINNED / RESEARCH-ONLY / PUBLICATION-HOLD`
 
-## 0. Purpose
+## 0. Authority rule
 
-Visual evidence is useful here only if five things are kept separate:
+This is the single retained owner for the Roman Corinth `capite velato` object pair and their reusable image custody.
+
+It combines:
 
 ```text
 OBJECT_IDENTITY
-FINDSPOT/PROVENANCE
-DATE
+FINDSPOT_PROVENANCE
+DATE_CONTEXT
 INTERPRETIVE_FUNCTION
 IMAGE_RIGHTS
+ORIGINAL_FILE_IDENTITY
+LEGACY_CATALOGUE_MAPPING
 ```
 
-A photograph of a covered Roman man can demonstrate that a real Roman ritual/imperial representation existed. It **cannot by itself prove** that 1 Cor 11:4 refers to that exact practice.
+Future work should update this ledger instead of adding a separate visual checksum/custody supplement.
 
-This ledger prioritizes museum/excavation provenance and rights-safe image routes over unattributed internet images.
+Core boundary:
+
+```text
+VISUAL_OBJECT != EXEGETICAL_PROOF
+OBJECT_METADATA != IMAGE_RIGHTS
+PHOTO_FILENAME != PERSON_IDENTIFICATION_CERTAINTY
+CHECKSUM = FILE_IDENTITY_CONTROL
+ROMAN_CAPITE_VELATO_BACKGROUND = A
+V4_EXACT_CAPITE_VELATO = B_C
+```
 
 ---
 
-# 1. Augustus `capite velato`, Ancient Corinth — anchor object
+# 1. S-1116 — Augustus `capite velato`, Ancient Corinth
 
-## 1.1 Object
+## 1.1 Object provenance
 
 ```text
 OBJECT = marble statue of Augustus
-MUSEUM = Archaeological Museum of Ancient Corinth
 INVENTORY = S-1116
+MUSEUM = Archaeological Museum of Ancient Corinth
 FINDSPOT = Julian Basilica, Ancient Corinth
-EXCAVATION = American School of Classical Studies at Athens, 1914–1915
-ICONOGRAPHY = togate male with fold of toga drawn over head; sacrificial/priestly representation
+EXCAVATION = ASCSA
+ICONOGRAPHY = togate Augustus with toga fold over head in sacrificial/priestly representation
 ```
 
-## 1.2 Strongest current archaeological source
+Primary/current archaeological routes:
 
-The American School of Classical Studies at Athens’ official history of Corinth states that the Julian Basilica contained imperial-family sculptures, including **Augustus in Pentelic marble, dressed in a toga with a fold draped over his head and portrayed engaged in sacrifice**.
-
-Official route:
-
-- https://www.ascsa.edu.gr/excavations/ancient-corinth/about-the-excavations-1/history-timeline
-
-ASCSA’s 2022 *Corinth XXII* publication page identifies the Julian Basilica as a major early-imperial civic/imperial-cult context and publishes the complete sculptural assemblage.
-
-- Paul D. Scotton, Catherine de Grazia Vanderpool, Carolynn Roncaglia, *The Julian Basilica: Architecture, Sculpture, Epigraphy*, Corinth XXII (ASCSA, 2022).
-- https://www.ascsa.edu.gr/publications/book/?i=9780876610237
-
-An AJA review explicitly identifies **two `capite velato` statues** among the sculptural highlights: Augustus and a Julio-Claudian prince (possibly Nero Caesar).
-
-- https://www.journals.uchicago.edu/doi/10.1086/725629
-
-Safe archaeological claims:
+- ASCSA Corinth excavation history: https://www.ascsa.edu.gr/excavations/ancient-corinth/about-the-excavations-1/history-timeline
+- Paul D. Scotton, Catherine de Grazia Vanderpool, Carolynn Roncaglia, *The Julian Basilica: Architecture, Sculpture, Epigraphy*, *Corinth* XXII (ASCSA, 2022): https://www.ascsa.edu.gr/publications/book/?i=9780876610237
+- AJA review identifying the `capite velato` sculptural pair: https://www.journals.uchicago.edu/doi/10.1086/725629
 
 ```text
-CORINTH_S1116_EXISTS = A2/INSTITUTIONAL_ARCHAEOLOGY
+CORINTH_S1116_EXISTS = A2_INSTITUTIONAL_ARCHAEOLOGY
 CORINTH_S1116_FROM_JULIAN_BASILICA = A2
+CORINTH_S1116_AUGUSTUS = SECURE
 CORINTH_S1116_MALE_CAPITE_VELATO = A2
-ROMAN_CAPITE_VELATO_BACKGROUND_IN_CORINTH = A // current project grade retained
-V4_EXACTLY_S1116_PRACTICE = NOT_PROVED_BY_OBJECT
 ```
 
-## 1.3 Rights-safe image candidate
-
-Wikimedia Commons file:
-
-- `Statue of Augustus at the Archaeological Museum of Corinth on January 10, 2020.jpg`
-- photographer: George E. Koronaios
-- source: own work
-- resolution: 4000 × 6000
-- depicted object: S-1116
-- license: **CC BY-SA 4.0**
-
-File page:
-
-- https://commons.wikimedia.org/wiki/File:Statue_of_Augustus_at_the_Archaeological_Museum_of_Corinth_on_January_10,_2020.jpg
-
-Required attribution if reused:
-
-```text
-Photo: George E. Koronaios, Wikimedia Commons, CC BY-SA 4.0.
-Object: Augustus, Archaeological Museum of Ancient Corinth, inv. S-1116.
-```
-
-Rights state:
-
-```text
-IMAGE_RIGHTS = OPEN_CC_BY_SA_4_0
-ATTRIBUTION_REQUIRED = true
-SHARE_ALIKE_IF_ADAPTED = true
-PUBLICATION_CANDIDATE = YES_AFTER_PRODUCT_RIGHTS_CHECK
-```
-
-Do not use the separate AncientRome.ru photographs as the preferred publication asset: their pages identify photographer copyright, whereas Commons supplies an explicit reusable license.
+This establishes real Roman ritual/imperial head-covering iconography in the monumental environment of Corinth. It does **not** prove that Paul’s v4 target is exactly this practice.
 
 ---
 
-# 2. Veiled Julio-Claudian portrait head, Ancient Corinth — second local control
+## 1.2 Preferred open photograph + checksum
 
-## 2.1 Object and identification caution
+Commons file page:
+- https://commons.wikimedia.org/wiki/File:Statue_of_Augustus_at_the_Archaeological_Museum_of_Corinth_on_January_10,_2020.jpg
 
-A second veiled imperial portrait from the Julian Basilica is catalogued as:
+Original binary:
+- https://upload.wikimedia.org/wikipedia/commons/f/fe/Statue_of_Augustus_at_the_Archaeological_Museum_of_Corinth_on_January_10%2C_2020.jpg
+
+```text
+PHOTOGRAPHER = George E. Koronaios
+PHOTO_DATE = 2020-01-10
+DIMENSIONS = 4000x6000
+MIME = image/jpeg
+FILE_SIZE = 2568248_bytes
+LICENSE = CC_BY_SA_4_0
+SHA1 = 5bd067867204a13353d3175fa2c704d60163359a
+```
+
+Recommended attribution:
+
+> Photo: George E. Koronaios, Wikimedia Commons, CC BY-SA 4.0. Object: Augustus, Archaeological Museum of Ancient Corinth, inv. S-1116.
+
+```text
+S1116_IMAGE_OBJECT_ID = STRONG
+S1116_IMAGE_RIGHTS = OPEN_CC_BY_SA_4_0
+S1116_IMAGE_CHECKSUM = PINNED
+PUBLICATION_CANDIDATE = YES_AFTER_PRODUCT_RIGHTS_GATE
+```
+
+---
+
+# 2. S-1088 — veiled Julio-Claudian male portrait head
+
+## 2.1 Object provenance and identity firewall
 
 ```text
 INVENTORY = S-1088
 MATERIAL = marble
 MUSEUM = Archaeological Museum of Ancient Corinth
 FINDSPOT = Julian Basilica
-HEAD = veiled / capite-velato type
-IDENTIFICATION = DISPUTED
+HEAD_STATE = VEILED_CAPITE_VELATO_TYPE
+PERSON_IDENTIFICATION = DISPUTED
 ```
 
-Older and modern identifications have varied. It has been connected with Tiberius and with Nero Caesar, son of Germanicus, among other proposals.
+Current safe label:
 
-Therefore the safe object label is:
+> **Veiled Julio-Claudian male portrait head, S-1088**.
 
-> **Veiled Julio-Claudian male portrait head, S-1088**, rather than an unqualified “Emperor Nero”.
+Older and modern identifications have included Tiberius / Nero Caesar and other Julio-Claudian possibilities. AJA’s review of *Corinth XXII* describes the second `capite velato` statue cautiously as a Julio-Claudian prince, possibly Nero Caesar.
 
-The AJA review of *Corinth XXII* likewise cautiously describes the second `capite velato` statue as a **Julio-Claudian prince (possibly Nero Caesar)**.
-
-Route:
-
+Routes:
 - https://www.journals.uchicago.edu/doi/10.1086/725629
-
-Secondary object page preserving the identification debate and bibliography:
-
-- https://ancientrome.ru/art/artworken/img.htm?id=6018
-
-Safe claims:
+- secondary object bibliography/identity history: https://ancientrome.ru/art/artworken/img.htm?id=6018
 
 ```text
 CORINTH_S1088_VEILED_MALE_HEAD = STRONG_OBJECT_CONTROL
-S1088_EXACT_PERSON = OPEN/DISPUTED
-S1088_AS_EMPEROR_NERO_CERTAIN = REJECT
+S1088_EXACT_PERSON = OPEN_DISPUTED
+S1088_AS_EMPEROR_NERO_CERTAIN = REJECTED
 S1088_AS_NERO_CAESAR = PUBLISHED_IDENTIFICATION_NOT_CERTAINTY
 ```
 
-## 2.2 Rights-safe photo candidate
+---
 
-Wikimedia Commons:
+## 2.2 Preferred open photograph + checksum
 
-- `Portrait of Nero, 1st cent. A.D. (CAM S-1088, 1-10-2020).jpg`
-- photographer: George E. Koronaios
-- resolution: 4000 × 6000
-- own work
-- file category/license surface: **CC BY-SA 4.0**
-
-File page:
-
+Commons file page:
 - https://commons.wikimedia.org/wiki/File:Portrait_of_Nero,_1st_cent._A.D._(CAM_S-1088,_1-10-2020).jpg
 
-If reused, the caption should correct the Commons title’s certainty:
+Original binary:
+- https://upload.wikimedia.org/wikipedia/commons/c/ca/Portrait_of_Nero%2C_1st_cent._A.D._%28CAM_S-1088%2C_1-10-2020%29.jpg
 
 ```text
-Veiled Julio-Claudian male portrait head (often identified as Nero/Nero Caesar),
-Archaeological Museum of Ancient Corinth, inv. S-1088.
-Photo: George E. Koronaios, Wikimedia Commons, CC BY-SA 4.0.
+PHOTOGRAPHER = George E. Koronaios
+PHOTO_DATE = 2020-01-10
+DIMENSIONS = 4000x6000
+MIME = image/jpeg
+FILE_SIZE = 10421038_bytes
+LICENSE = CC_BY_SA_4_0
+SHA1 = 0752c9a5dbd0269f8da48449e288a3c1e44abfc4
 ```
 
-Do not reproduce the title “Nero” as an archaeological certainty without a qualification.
+Recommended caption:
+
+> Veiled Julio-Claudian male portrait head (often identified as Nero/Nero Caesar), Archaeological Museum of Ancient Corinth, inv. S-1088. Photo: George E. Koronaios, Wikimedia Commons, CC BY-SA 4.0.
+
+```text
+S1088_IMAGE_OBJECT_ID = STRONG_INVENTORY_MATCH
+S1088_PERSON_ID = OPEN_DISPUTED
+S1088_IMAGE_RIGHTS = OPEN_CC_BY_SA_4_0
+S1088_IMAGE_CHECKSUM = PINNED
+COMMONS_FILENAME_NERO != CERTAIN_PERSON_IDENTIFICATION
+```
 
 ---
 
-# 3. Why these two objects matter more than generic Roman examples
+# 3. Archaeological meaning of the pair
 
-The Via Labicana Augustus in Rome is an iconic example of `capite velato`, but S-1116 and S-1088 have a more direct contextual value for this project because they are **from Roman Corinth itself**, from the Julian Basilica bordering the forum.
+S-1116 and S-1088 are stronger for local contextual background than generic Roman examples because both belong to **Roman Corinth itself**, in the Julian Basilica / forum monumental environment.
 
-That establishes:
+Safe conclusion:
 
 ```text
-CAPITE_VELATO_ICONOGRAPHY_WAS_VISIBLE/PRESENT_IN_ROMAN_CORINTH = VERY_STRONG
+CAPITE_VELATO_ICONOGRAPHY_PRESENT_IN_ROMAN_CORINTH = VERY_STRONG
+ROMAN_CAPITE_VELATO_BACKGROUND = A
 ```
 
-It does **not** establish:
+Unsafe conclusions:
 
 ```text
 EVERY_CORINTHIAN_MAN_WORSHIPPED_CAPITE_VELATO = FALSE_UNIVERSAL
 PAUL_V4_EXACTLY_TARGETS_IMPERIAL_CULT = UNPROVED
-CHRISTIAN_MEN_WERE_COPYING_AUGUSTUS_STATUE = UNPROVED
+CHRISTIAN_MEN_WERE_COPYING_THE_IMPERIAL_STATUES = UNPROVED
 ```
 
-The archaeological function is therefore background calibration, not hidden-event reconstruction.
-
----
-
-# 4. New 2022 archaeological upgrade over older proof-texting
-
-Older 1 Cor 11 discussions often cite Richard Oster 1988/1992 and isolated portrait finds. The 2022 ASCSA monograph upgrades the archaeological context by publishing the Julian Basilica’s architecture, sculpture and epigraphy as a total assemblage.
-
-ASCSA states that the building contained at least 11 large-scale statues likely representing Julio-Claudian family members and was a major imperial-cult/civic context.
-
-This strengthens the project’s ability to say:
-
-> Roman sacrificial head-covering iconography was not a remote Roman custom imported only through literary analogy; important examples were physically installed in the monumental civic landscape of Roman Corinth.
-
-But the wording must remain archaeological, not exegetically deterministic.
+The 2022 ASCSA monograph is preferable to treating isolated older photographs or proof-texted catalogue entries as the complete archaeological context.
 
 ```text
 CORINTH_LOCAL_VISUAL_BACKGROUND = A2_STRONG
@@ -203,163 +187,61 @@ EXEGETICAL_IDENTIFICATION_V4 = B_C
 
 ---
 
-# 5. Visual-publication selection rules
+# 4. Legacy catalogue mapping
 
-For future site/article use, prefer in this order:
+Older scholarship often uses Franklin P. Johnson, *Corinth IX.1* (1931) numbers rather than modern `S-` inventories. These are not additional objects.
 
-1. explicit open-license image of a securely identified object;
-2. museum/excavation source for object metadata;
-3. object inventory number in caption;
-4. qualified identification where disputed;
-5. separate rights record.
+## 4.1 Johnson no.134 -> S-1116
 
-Reject:
+Gill 1990 and Boschung 1993 independently tie the Corinth `capite velato` Augustus to Johnson no.134; modern museum/ASCSA control identifies the object as S-1116.
 
 ```text
-BLOG_IMAGE_WITHOUT_LICENSE
-PINTEREST/REPOSTED_IMAGE
-CAPTION_WITHOUT_INVENTORY/PROVENANCE
-S1088 = NERO_WITHOUT_QUALIFICATION
-IMAGE = PROOF_OF_PAULINE_TRIGGER
-```
-
----
-
-# 6. Recommended preserved visuals
-
-## A. Anchor
-
-**Augustus S-1116, capite velato, Julian Basilica, Corinth**
-
-- strongest local object;
-- secure identity;
-- direct ASCSA archaeological context;
-- high-resolution CC BY-SA 4.0 image available.
-
-## B. Adversarial/nuance pair
-
-**Veiled Julio-Claudian head S-1088, Julian Basilica, Corinth**
-
-- demonstrates a second local veiled male imperial image;
-- identity uncertain, making it a useful example of why object identity and iconographic practice must be separated;
-- high-resolution reusable Commons image available.
-
-These two visuals should be preserved in future research/product work even if the exact v4 reconstruction changes.
-
----
-
-# 7. Boundary
-
-```text
-VISUAL_OBJECT != EXEGETICAL_PROOF
-OBJECT_METADATA != IMAGE_RIGHTS
-OPEN_IMAGE_LICENSE != MUSEUM_ENDORSEMENT
-ROMAN_CAPITE_VELATO_BACKGROUND = A
-V4_EXACT_CAPITE_VELATO = B_C
-PUBLICATION_HOLD = true
-```
-
----
-
-# 8. Legacy catalogue mapping — Johnson 1931 -> modern inventory numbers
-
-This section closes a provenance problem that matters for older 1 Cor 11 scholarship and for Janelle Peters' 2013 dissertation.
-
-Older authors often cite Franklin P. Johnson's catalogue numbers without the modern Corinth Museum `S-` inventory numbers. Future agents must not treat those as separate objects.
-
-## 8.1 Johnson no.134 -> Augustus -> S-1116
-
-David W. J. Gill's direct 1990 article, while discussing the Corinthian `capite velato` Augustus, cites:
-
-```text
-F. P. Johnson, Corinth IX.1 (1931), pp.71-72, no.134
-```
-
-Dietrich Boschung's 1993 Augustus catalogue independently cites the same Corinth Augustus as:
-
-```text
-F. P. Johnson, Corinth IX.1, 70ff., Nr.134
-```
-
-and its Corinth Museum index separately identifies the Corinth Augustus object as:
-
-```text
-Inv. S 1116 A-F
-```
-
-Current museum/ASCSA-derived object records identify **S-1116** as the Augustus from the Julian Basilica, shown in priestly/sacrificial `capite velato` form.
-
-The combined catalogue identity is therefore highly secure:
-
-```text
-JOHNSON_1931_NO_134 = AUGUSTUS_CAPITE_VELATO_CORINTH
-MODERN_INVENTORY = S-1116
+JOHNSON_1931_NO134 = AUGUSTUS_CAPITE_VELATO_CORINTH
+MODERN_INVENTORY = S1116
 LEGACY_TO_MODERN_MAPPING = HIGH_CONFIDENCE
 ```
 
-This mapping is a bibliographic/catalogue resolution, not a new exegetical argument.
+## 4.2 Johnson no.137 -> S-1088
 
-## 8.2 Johnson no.137 -> veiled Julio-Claudian head -> S-1088
-
-Gill 1990 cites the second covered imperial image as:
+Gill’s second covered imperial image and later object bibliography map Johnson no.137 to modern S-1088.
 
 ```text
-Johnson, Corinth IX.1, pp.76-77, no.137
-```
-
-Later object scholarship is even more explicit for the modern inventory:
-
-- the veiled head is `S-1088`;
-- modern descriptions state that **Johnson published this object as Nero son of Germanicus**;
-- independent object bibliography gives `Johnson 1931, pp.76f., cat. no.137` for S-1088.
-
-Thus:
-
-```text
-JOHNSON_1931_NO_137 = MODERN_S1088
+JOHNSON_1931_NO137 = MODERN_S1088
 OBJECT = VEILED_JULIO_CLAUDIAN_MALE_HEAD
 JOHNSON_PERSON_ID = NERO_SON_OF_GERMANICUS
 CURRENT_PERSON_ID = DISPUTED
 ```
 
-The object identity is stronger than the historical-person identification.
+Object continuity is stronger than person-identification continuity.
 
-## 8.3 Peters 2013 p.282 — safe provenance bridge
+## 4.3 Peters 2013 bridge
 
-Later scholarship page-specifically cites **Janelle Peters' 2013 dissertation p.282** in connection with the Roman Corinth veiled imperial statue and then cites Johnson, *Corinth IX.1*, pp.70-72.
+Later scholarship page-specifically cites Janelle Peters 2013 p.282 alongside the older Johnson catalogue route.
 
-The direct Peters p.282 PDF page has **not** yet been acquired in the current runtime.
-
-Therefore the safe bridge is:
+Current safe status:
 
 ```text
-PETERS_2013_P282 -> SECONDARY_PAGE_LOCATOR_TO_JOHNSON_70_72
-JOHNSON_NO_134 -> AUGUSTUS -> MODERN_S1116 = HIGH_CONFIDENCE
+PETERS_2013_P282 = SECONDARY_PAGE_LOCATOR_TO_LEGACY_CORINTH_OBJECT_CHAIN
+JOHNSON_NO134_TO_MODERN_S1116 = HIGH_CONFIDENCE
 PETERS_P282_DIRECT_AUTOPSY = HOLD
 ```
 
-Do **not** write:
+Do not claim Peters herself used the modern inventory `S-1116` unless p.282 is directly read.
 
-```text
-"Peters explicitly calls the object S-1116" = NOT_YET_DIRECTLY_VERIFIED
-```
+---
 
-Do write, if provenance needs explaining:
+# 5. Duplicate-counting firewall
 
-> Peters' older Johnson-based Corinthian statue discussion belongs to the same legacy archaeological chain now represented by the modern S-1116 Augustus record, but Peters' p.282 itself remains to be directly autopsied.
-
-## 8.4 Why this mapping matters
-
-This prevents duplicate-counting in scholarship reviews:
+Do not count publication stages as independent archaeological objects:
 
 ```text
 JOHNSON_NO134
 GILL_1990_AUGUSTUS
-PETERS_2013_OLD_CATALOGUE_ROUTE
+PETERS_2013_LEGACY_ROUTE
 MODERN_S1116
+=
+ONE_ANCHOR_OBJECT_TRADITION
 ```
-
-are not four independent archaeological finds. They are different publication stages around the same anchor object.
 
 Likewise:
 
@@ -367,14 +249,74 @@ Likewise:
 JOHNSON_NO137
 GILL_1990_SECOND_COVERED_IMPERIAL_IMAGE
 MODERN_S1088
+=
+ONE_OBJECT_TRADITION_WITH_CHANGING_PERSON_ID
 ```
-
-are one object tradition with changing personal identification.
-
-New source-hygiene rule:
 
 ```text
 LEGACY_CATALOGUE_NUMBER != NEW_OBJECT
 OBJECT_CONTINUITY != PERSON_IDENTIFICATION_CONTINUITY
-MODERN_ASCSA_INVENTORY/ASSEMBLAGE > LEGACY_PERSON_LABEL_FOR_CURRENT_CAPTIONING
+MODERN_ASCSA_INVENTORY_ASSEMBLAGE > LEGACY_PERSON_LABEL_FOR_CURRENT_CAPTIONING
+```
+
+---
+
+# 6. Image-custody workflow
+
+For any future product/import use:
+
+```text
+1. fetch original Commons binary;
+2. compute SHA1/SHA256 locally;
+3. compare with pinned custody record;
+4. preserve photographer + CC attribution;
+5. keep museum object identity separate from Commons filename;
+6. record crops/transforms as derivative artifacts;
+7. if Commons bytes changed, inspect file history and record a new custody event.
+```
+
+Rights boundary:
+
+```text
+CC_BY_SA_PHOTO_RIGHTS != RIGHT_TO_CLAIM_EXACT_PAULINE_TRIGGER
+OPEN_PHOTO != MUSEUM_ENDORSEMENT
+LICENSE != OBJECT_PROVENANCE
+```
+
+---
+
+# 7. Preferred visual pair
+
+### Anchor
+**Augustus S-1116, capite velato, Julian Basilica, Corinth**
+
+- secure identity;
+- direct local archaeological context;
+- high-resolution CC BY-SA 4.0 image;
+- checksum pinned.
+
+### Nuance object
+**Veiled Julio-Claudian male head S-1088**
+
+- second local veiled imperial image;
+- disputed personal identity demonstrates why object identity and person label must be separated;
+- high-resolution CC BY-SA 4.0 image;
+- checksum pinned.
+
+Preserve both even if the exact exegetical reconstruction of v4 changes.
+
+---
+
+# 8. Result
+
+```text
+CORE_GRADE_REVERSALS = 0
+CORINTH_S1116 = SECURE_LOCAL_CAPITE_VELATO_ANCHOR
+CORINTH_S1088 = SECURE_LOCAL_VEILED_MALE_OBJECT_PERSON_ID_OPEN
+IMAGE_RIGHTS_AND_CHECKSUMS = PINNED_IN_SAME_LEDGER
+ROMAN_CAPITE_VELATO_BACKGROUND = A
+V4_EXACT_CAPITE_VELATO = B_C
+VISUAL_OBJECT != EXEGETICAL_PROOF
+PUBLICATION_HOLD = true
+PRODUCT_WRITE = false
 ```
