@@ -3,18 +3,21 @@
 **Статус:** `NAVIGATION-AUTHORITY / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последнее обновление:** 2026-08-10
 
-## 0. Read order
+## 0. Read order / authority contract
 
 ```text
-1. THIS INDEX
-2. CURRENT_CLAIM_REGISTRY for grades
-3. CONTROLLING CANONICAL AUDIT / EVERGREEN DOSSIER
-4. HISTORICAL OR MACHINE RECEIPT only for distinct provenance
+1. THIS INDEX = navigation only
+2. CURRENT_CLAIM_REGISTRY = grades
+3. CONTROLLING CANONICAL AUDIT / EVERGREEN DOSSIER = evidence
+4. HISTORICAL OR MACHINE RECEIPT = only distinct provenance
 ```
 
 ```text
 FILENAME_RECENCY != AUTHORITY
 MORE_Z_CHARACTERS != MORE_CURRENT
+PRODUCT_WRITE = false
+SITE_PUBLICATION = false
+PUBLICATION_HOLD = true
 ```
 
 ---
@@ -37,7 +40,7 @@ MORE_Z_CHARACTERS != MORE_CURRENT
 - `00ZZZZZZZZZZZZZZZZ_GENESIS_CREATION_INTERTEXT_AUDIT_11_7_12_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZ_V16_CONVENTION_TRANSLOCAL_PRACTICE_AUDIT_2026-08-10.md`
 
-Greek lexical owner now also owns the direct Goodacre 2011 rebuttal / Martin 2013 response-history control for `περιβόλαιον`:
+Greek lexical owner also owns Goodacre 2011 / Martin 2013 response-history control for `περιβόλαιον`:
 
 ```text
 PERIBOLAION_WRAP_COVERING_GARMENT = A
@@ -53,6 +56,8 @@ MARTIN_2013_DIRECT_FULL_BODY = HOLD
 
 **Owner:** `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`
 
+Owns v10 transmission, formal `ἐξουσία + ἐπί`, Fendel documentary corpus, female right-bearers, restoration/source-type firewalls and bounded exact-head search.
+
 ```text
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
@@ -60,22 +65,13 @@ EXOUSIA_EXACT_REFERENT = B_C
 EXACT_NONBIBLICAL_HEAD_PHRASE = NOT_FOUND_IN_BOUNDED_SEARCH
 ```
 
-Owns v10 transmission, formal `ἐξουσία + ἐπί`, Fendel documentary corpus, female right-bearers, restoration/source-type firewalls and bounded exact-head search.
-
 ---
 
 # 4. Hair / `φύσις` / hairstyle
 
 **Owner:** `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
 
-Owns both:
-
-```text
-LONG_HAIR / KOMAŌ / PHYSIS
-UNBOUND_OR_DISHEVELLED_HAIR_POLYSEMY
-```
-
-and the direct Edsall 2013 `κατὰ κεφαλῆς` / costume lexical control.
+Owns long-hair/`κομάω`/`φύσις`, unbound/dishevelled-hair polysemy and Edsall 2013 `κατὰ κεφαλῆς` / costume control.
 
 ```text
 LONG_HAIR != UNBOUND_HAIR
@@ -91,31 +87,46 @@ EDSALL_2013_DIRECT_FULL_BODY = CLOSED
 
 **Owner:** `dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`
 
-Owns Tryphosa, Eirene, Cleopatra, Didyma 235B, Agatho correction, Miletos 481, Potta, Ammias of Thyateira, Ammia of Philadelphia, Didyma visual-honour culture, Delphi controls and bounded `female mantic office + head/hair` search.
-
-Tryphosa numbering crosswalk is explicit:
+Current controlled corpus includes:
 
 ```text
-PHI_OBJECT_ID = 247445
-PHI_INTERFACE_ORDINAL = Didyma 450
-SEG_REFERENCE = SEG 30.1286
-CURRENT_DIDYMA_EDITION_REFERENCE = Didyma 708
+TRYPHOSA = direct Didyma prophetis; PHI 247445 / ordinal 450 = SEG 30.1286 = Didyma 708
+EIRENE = direct promantis
+CLEOPATRA = fragmentary restored prophetis
+DIDYMA_235B = prophetiske graffito; official office unproved
+AGATHO = prophet's wife + building benefaction; NOT prophetis from Didyma 302+303
+POTTA_TAM_V1_535 = external Asia-Minor prophetis/soteira; direct PHI body runtime HOLD
+AMMIAS_THYATEIRA_TAM_V2_1055 = direct priestess + vision-oracle formula; NOT prophetis title
+AMMIA_PHILADELPHIA = separate early-Christian literary prophetess
+NANAS_PHRYGIA_PH271564 = late direct prophetis tombstone; religious identity disputed; same-object head marker not found
+APPHE_IK_KALCHEDON_61_CIG3796 = Roman-period funerary Apollo prophetis; direct object/body acquisition pending
+MILETOS_481 = women among divine-manifestation channels
+```
+
+Noun-bearer / object-identity audit is mandatory:
+
+```text
+WORD_PROPHETIS_IN_AN_INSCRIPTION != FEMALE_PERSON_AUTOMATICALLY
+IGLSYR_1_51_PROPHETIS = PERSONIFICATION_OF_ANAGRAPHE / NOT FEMALE_PERSON
+NISYRA_SEG49_1624_PH348429 = OBJECT_PINNED / BODY_SYNTAX_HOLD
+TERMESSOS_TAMIII1_870 = BODY_SYNTAX_HOLD
+IGII2_13148_PH15638 = FEMALE_EPITAPH / PROPHETIS_NOUN_BEARER_HOLD
+IGVII_3111 = BODY_SYNTAX_HOLD
+ADJACENT_STELE_ICONOGRAPHY != TARGET_INSCRIPTION_ICONOGRAPHY
+SAME_LOCALITY != SAME_OBJECT_OR_PERSON
 ```
 
 ```text
-AMMIAS_THYATEIRA != AMMIA_PHILADELPHIA
-PRIESTESS_ORACLE_FUNCTION != DIRECT_PROPHETIS_TITLE
-SAME_LOCALITY != SAME_OBJECT
-ROLE != HEAD_CODE
 DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = NOT_VERIFIED
+IDENTIFIED_TRYPHOSA_EIRENE_PORTRAIT = NOT_FOUND
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
 ### Andania / Lycosura direct epigraphy
 
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MASSEY_2015_ANDANIA_LYCOSURA_EPIGRAPHY_FULLTEXT_AUDIT_2026-08-10.md`
+**Owner:** `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MASSEY_2015_ANDANIA_LYCOSURA_EPIGRAPHY_FULLTEXT_AUDIT_2026-08-10.md`
 
-Owns Massey, direct PHI/CGRN Andania, white `pilos`, separate hair/adornment rules, date dispute, direct Lycosura, Voutiras, Karataş and the Dittenberger supplement firewall.
+Owns Massey, direct PHI/CGRN Andania, white `pilos`, separate female hair/adornment rules, dating dispute, direct Lycosura, Voutiras, Karataş and the Dittenberger supplement firewall.
 
 ---
 
@@ -146,14 +157,14 @@ EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 
 ---
 
-# 7. Angels
+# 7. Angels / patristic reception
 
-### Pauline / Second Temple corpus
+### Pauline / Second Temple
 
 - `00ZZZZZZZZZZZZZZ_ANGELS_PRIMARY_CORPUS_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZ_ANGEL_MODELS_STRESS_MATRIX_2026-08-10.md`
 
-Angel-model matrix also owns Peerbolte 2000 source provenance (`pp.76–92`; direct body HOLD; secondary page-specific active-woman / Watchers controls).
+Angel-model matrix also owns Peerbolte 2000 provenance (`pp.76–92`; direct body HOLD; secondary page-specific Watchers controls).
 
 ```text
 HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
@@ -163,14 +174,11 @@ PEERBOLTE_DIRECT_BODY = HOLD
 
 ### Patristic owners
 
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_ANGEL_PRIMARY_TEXT_DELTA_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CLEMENT_IRENAEUS_EARLY_ANGEL_RECEPTION_PRIMARY_DELTA_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CATENA_CRAMER_ATTRIBUTION_FIREWALL_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGELS_ATTRIBUTION_RESOLUTION_2026-08-10.md`
-
-### PG/OCR workflow
-
-- `dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_ANGEL_PRIMARY_TEXT_DELTA_2026-08-10.md` — cross-author map.
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CLEMENT_IRENAEUS_EARLY_ANGEL_RECEPTION_PRIMARY_DELTA_2026-08-10.md` — unique early fragment / PG118 / reporter-vs-endorser provenance.
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CATENA_CRAMER_ATTRIBUTION_FIREWALL_2026-08-10.md`.
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGELS_ATTRIBUTION_RESOLUTION_2026-08-10.md`.
+- `dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md`.
 
 ```text
 OCR = LOCATOR_ENGINE
@@ -179,13 +187,13 @@ OCR != SOURCE_IMAGE_AUTHORITY
 
 ---
 
-# 8. Roman head-covering evidence / Corinth archaeology
+# 8. Roman head-covering / Corinth archaeology / visual method
 
 ### Roman primary matrix
 
-- `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
+**Owner:** `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
 
-Owns Hilton–Matthews 2008 contradiction control and the Edsall visual-method cross-control in addition to the primary Roman matrix.
+Owns primary Roman controls plus Hilton–Matthews 2008 contradiction control and Edsall visual-method cross-control.
 
 ```text
 ROMAN_CAPITE_VELATO_BACKGROUND = A
@@ -196,23 +204,13 @@ HILTON_MATTHEWS_2008_DIRECT_BODY = HOLD
 
 ### Local Corinth visual / archaeology / image custody
 
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`
+**Owner:** `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`
 
-Owns:
-
-```text
-S1116 / S1088
-ASCSA_CORINTH_XXII_2022
-THOMPSON_1988
-GILL_1990
-DESILVA_2025_ROMAN_CORINTH_ACQUISITION
-COMMONS_ORIGINALS_RIGHTS_SHA1
-JOHNSON_LEGACY_MAPPING
-```
+Owns S-1116 / S-1088, ASCSA *Corinth XXII* 2022, Thompson 1988, Gill 1990, deSilva 2025 acquisition, Commons original URLs/rights/SHA1 and Johnson legacy mapping.
 
 ### Female Greek/Roman / late-antique visual method
 
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_ROMAN_FEMALE_VEILING_STATUS_VISUAL_DELTA_2026-08-10.md`
+**Owner:** `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_ROMAN_FEMALE_VEILING_STATUS_VISUAL_DELTA_2026-08-10.md`
 
 Owns Llewellyn-Jones, Fantham, Olson, Hughes, Stafford and Galter.
 
@@ -225,46 +223,42 @@ ICONOGRAPHY_AS_DAILY_PHOTOGRAPH = REJECT_METHOD
 
 ---
 
-# 9. Current / multilingual scholarship
+# 9. Current / multilingual / foundational scholarship
 
 ### Canonical 2024–2026 radar
 
-- `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
+**Owner:** `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
 
 Owns current ranking, Hamplová, Francis, Lumesberger-Loisl and false-freshness controls including Penner/Vander Stichele and Standhartinger.
 
-### Direct-source acquisition
+### Direct-source acquisition / current models
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_GIELEN_CHINESE_SCHOLARSHIP_SOURCE_CONTROL_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MAYORDOMO_2022_MASCULINITY_DIRECT_FULLTEXT_AUDIT_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_JANTSCH_DUTOIT_STUCKENBRUCK_2015_VOLUME_CONTROL_2026-08-10.md`
 
-Nõmmik institutional custody is now pinned at the navigation layer so the DiVA object cannot be lost between passes:
+Nõmmik institutional custody:
 
 ```text
 NOMMIK_DIVA_URN = urn:nbn:se:ths:diva-2600
 NOMMIK_DIVA_OBJECT_IDENTITY = A2_INSTITUTIONAL
 NOMMIK_DIVA_FULLTEXT_ROUTE = DIRECT_EHS_LINK
 NOMMIK_DIVA_BODY_FETCH = RUNTIME_HOLD
-FULLTEXT_NOT_FETCHED != OBJECT_NOT_FOUND
 ```
 
 ### Current commentary acquisition
 
-- `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md`
-
-Owns Reasoner 2025, Gorman 2025 and Starling 2025, including corrected Reasoner pagination and direct-body HOLDs.
-
-### Gundry-Volf / Gielen / Hao Li / Standhartinger
-
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_GIELEN_CHINESE_SCHOLARSHIP_SOURCE_CONTROL_2026-08-10.md`
+**Owner:** `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md` — Reasoner 2025, Gorman 2025, Starling 2025.
 
 ### Drake
 
-- `dossiers/DRAKE_VEILING_MATERIALITY_SOURCE_CONTROL.md`
+**Owner:** `dossiers/DRAKE_VEILING_MATERIALITY_SOURCE_CONTROL.md`.
 
-### Foundational archaeological / ritual-space model
+### Økland foundational archaeological / ritual-space model
 
-- `00ZZZZZZZZZ_SOURCE_CARD_OKLAND_2004_2005_SANCTUARY_SPACE.md`
+**Owner:** `00ZZZZZZZZZ_SOURCE_CARD_OKLAND_2004_2005_SANCTUARY_SPACE.md`.
 
 ```text
 OKLAND_FOUNDATIONAL != CURRENT_2024_2026
@@ -272,21 +266,20 @@ OKLAND_GENDERED_SANCTUARY_SPACE_MODEL = C_SERIOUS_FOUNDATIONAL_CONTEXTUAL_MODEL
 OKLAND_DIRECT_BODY_DETAIL = HOLD
 ```
 
-### Other specialist controls
-
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MAYORDOMO_2022_MASCULINITY_DIRECT_FULLTEXT_AUDIT_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_JANTSCH_DUTOIT_STUCKENBRUCK_2015_VOLUME_CONTROL_2026-08-10.md`
-
 ---
 
-# 10. Agent-output quarantine
+# 10. Agent-output quarantine / machine provenance
 
-- `00ZZZZZZZZZZZZZZZZZZZZ_AGENT_DUMP_48_TARGET_VERIFICATION_AUDIT_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`
+Human owner:
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`
 
-Structured machine owner retained:
+Historical source dumps retained only as provenance:
+- `00ZZZZZZZZZZZZZZZZZZZZ_AGENT_DUMP_48_TARGET_VERIFICATION_AUDIT_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`
+
+Machine owners retained because they contain distinct structured provenance:
 - `data/1cor11-agent-citation-quarantine-2026-08-10.json`
+- `data/1cor11-direct-source-recent-scholarship-2026-08-10.json`
 
 ```text
 AGENT_OUTPUT = DISCOVERY_ONLY
@@ -315,8 +308,14 @@ TORBUS_2009_PP507_521 = HOLD
 PEERBOLTE_2000_PP76_92 = HOLD
 MARTIN_2013_PP453_465 = DIRECT_BODY_HOLD
 HILTON_MATTHEWS_2008_PP336_342 = DIRECT_BODY_HOLD
-DIDYMA_SUPPLEMENT_FULL_BODY = OPEN
+DIDYMA_SUPPLEMENT_2023_FULL_BODY = OPEN
 POTTA_TAM_V1_535_DIRECT_PHI_BODY = RUNTIME_CACHE_HOLD
+NANAS_HASPELS_PLATE630_TABBERNEE_FIG77 = SAME_OBJECT_IMAGE_ACQUISITION
+APPHE_IK_KALCHEDON61_CIG3796 = DIRECT_OBJECT_BODY_ACQUISITION
+NISYRA_SEG49_1624 = BODY_NOUN_BEARER_HOLD
+TERMESSOS_TAMIII1_870 = BODY_NOUN_BEARER_HOLD
+IGII2_13148 = PROPHETIS_NOUN_BEARER_HOLD
+IGVII_3111 = BODY_NOUN_BEARER_HOLD
 CORRINGTON_1991_DIRECT_FULLTEXT = HOLD
 WATSON_CULY_2018_1COR11_DISCUSSION = HOLD
 THEODORET_PG82_DIRECT_PAGE_IMAGE = HOLD
@@ -325,7 +324,7 @@ CYRIL_PG74_DIRECT_PAGE_IMAGE = HOLD
 
 ---
 
-# 12. Anti-sprawl rule
+# 12. Anti-sprawl / cleanup rule
 
 ```text
 DO_NOT_CREATE_NEW_Z_LADDER_POINTER = true
