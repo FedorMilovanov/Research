@@ -1,0 +1,82 @@
+{
+  "topic": "1 Corinthians 11:2-16 second agent-dump deep verification",
+  "date": "2026-08-10",
+  "status": "research-only/publication-hold",
+  "verification_target_floor": 48,
+  "agent_dump_policy": "discovery-only",
+  "core_grade_reversals": 0,
+  "accepted_refinements": {
+    "fee_2014_formal_label": "Revised Edition",
+    "fee_2014_external_covering": "verified-current-edition-review",
+    "fee_2014_kephale": "source/source-of-life/origin-current-edition-review",
+    "fee_2014_exousia": "freedom/right-active-current-edition-review",
+    "garland_2025_series_editors": [
+      "Robert W. Yarbrough",
+      "Joshua W. Jipp"
+    ],
+    "garland_2003_to_2025_continuity": "do-not-assume",
+    "garland_2025_1cor11_2_16": "pp.468-493+notes-hold-direct-read",
+    "ciampa_rosner_kephale": "authority-component-strong-secondary-attestation-direct-p509-hold",
+    "ciampa_rosner_v10": "woman-authority-right-strong-secondary-attestation-direct-pp530-533-hold",
+    "montier_2015": "open-fulltext-social-myth-control",
+    "nommik_model_description": "direct-institutional-author-summary",
+    "finney_2010_model_description": "direct-journal-abstract",
+    "murphy_oconnor_human_messengers": "direct-oxford-abstract-published-alternative"
+  },
+  "strengthened_no_overclaim_gates": [
+    "SHAVED_HEAD != TEMPLE_PROSTITUTE_MARKER",
+    "SHAVED_WOMAN != UNIVERSALLY_PROSTITUTE",
+    "SHAVED_WOMAN != UNIVERSALLY_ADULTERESS",
+    "GARLAND_2003_POSITION != VERIFIED_GARLAND_2025_POSITION",
+    "SERIES_EDITOR != VOLUME_EDITOR",
+    "CIAMPA_ROSNER_KEPHALE != PREEMINENCE_ONLY",
+    "RELATIONAL_ORDER_V3 != PASSIVE_EXOUSIA_V10",
+    "PUBLISHED_ALTERNATIVE != EQUAL_PROBABILITY"
+  ],
+  "current_core": {
+    "material_covering": "B_HIGH_LEADING",
+    "hair_only": "C_SERIOUS_ALTERNATIVE",
+    "kephale_headship_authority": "B_LEADING",
+    "kephale_source_only": "C_VIABLE",
+    "wives_vs_all_women": "OPEN_B_C",
+    "exousia_woman_subject": "A_SYNTAX",
+    "exousia_active_woman_bearer_pull": "B_HIGH",
+    "exousia_exact_referent": "B_C",
+    "heavenly_holy_angels": "B_HIGH_LEADING",
+    "angels_cosmic_witness_present_assembly": "B_LEADING",
+    "exact_angelic_function": "B_C",
+    "watchers": "C_SERIOUS_ALTERNATIVE",
+    "human_messengers": "D_C_LOW_PUBLISHED_ALTERNATIVE",
+    "roman_capite_velato_background": "A",
+    "v4_exact_capite_velato": "B_C",
+    "exact_corinth_trigger": "RECONSTRUCTION_LAYER",
+    "physis_sexed_naturalized_propriety": "B_HIGH_LEADING",
+    "v16_translocal_appeal": "A_TEXT",
+    "v16_normative_force": "B_HIGH",
+    "v16_exact_referent": "B_C"
+  },
+  "new_source_cards": [
+    "00ZZZZZZZZZZZZZZZZZZZZZ_MONTIER_SHAVED_HEAD_SOCIAL_MYTH_CONTROL_2026-08-10.md"
+  ],
+  "p0_holds": [
+    "Thiselton NIGTC 2000 pp.800-847 + notes",
+    "Fee NICNT Revised 2014 approx pp.542-586 + notes, including pp.565-567 addendum",
+    "Garland BECNT 2nd ed. 2025 pp.468-493 + notes",
+    "Ciampa/Rosner PNTC 2010 pp.503-540 + notes"
+  ],
+  "next_high_value_agent_side_targets": [
+    "Nommik DiVA fulltext bytes",
+    "Hooker 1964 full article",
+    "Gundry-Volf full text",
+    "Olson 2008 exact dress/portrait discussion",
+    "Fantham 2008 full chapter",
+    "Ciampa/Rosner direct pp.509 and 530-533"
+  ],
+  "boundaries": {
+    "do_not_request_from_user_if_agent_can_access": true,
+    "product_write": false,
+    "ui_implementation": false,
+    "site_publication": false,
+    "publication_hold": true
+  }
+}
