@@ -1,13 +1,20 @@
 # 1 Коринфянам 11:10 — `ἐξουσία` formal + documentary corpus
 
-**Статус:** `EVERGREEN-CONTROLLING-DOSSIER / TEXTUAL-LEXICAL-DOCUMENTARY / SOURCE-ROUTES-PINNED / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Статус:** `EVERGREEN-CONTROLLING-DOSSIER / TEXTUAL-LEXICAL-DOCUMENTARY / SOURCE-ROUTES-PINNED / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последнее обновление:** 2026-08-10
 
 ## 0. Authority rule
 
-This is the single evidence owner for the `ἐξουσία` node in 1 Cor 11:10.
+This is the single evidence owner for the `ἐξουσία` node in 1 Cor 11:10. Claim grades remain owned by the current claim registry.
 
-It consolidates:
+```text
+CLAIM_GRADE_OWNER = CURRENT_CLAIM_REGISTRY
+THIS_DOSSIER = CONTROLLING_EVIDENCE_MAP_FOR_EXOUSIA
+FUTURE_DISCOVERY = UPDATE_THIS_FILE
+DO_NOT_CREATE_NEW_V10_DELTA = true
+```
+
+It owns:
 
 ```text
 GREEK_TEXT / KALYMMA_TRANSMISSION
@@ -15,17 +22,8 @@ FORMAL_EXOUSIA_EPI_TAXONOMY
 FENDEL_DOCUMENTARY_CORPUS
 FEMALE_DOCUMENTARY_RIGHT_BEARERS
 BOUNDED_EXACT_HEAD_PARALLEL_SEARCH
-ACQUISITION_HOLDS
+FINAL_ACQUISITION_DISPOSITION
 ```
-
-Claim grades remain owned by the current claim registry.
-
-```text
-CLAIM_GRADE_OWNER = CURRENT_CLAIM_REGISTRY
-THIS_DOSSIER = CONTROLLING_EVIDENCE_MAP_FOR_EXOUSIA
-```
-
-Future work updates this file; do not create another `V10 delta`, `female addendum`, `papyrology pass`, or current pointer for the same node.
 
 ---
 
@@ -52,12 +50,10 @@ This does not by itself solve the exact referent of `ἐξουσία`.
 
 # 2. `ἐξουσίαν` vs `κάλυμμα` — textual transmission
 
-## 2.1 Extant Greek manuscript control
-
 STEP VarApp route:
 - https://www.stepbible.org/?q=version%3DVarApp%40reference%3D1Cor.11
 
-The listed extant Greek manuscript tradition, including P46 and major codices, supports `ἐξουσίαν`; the current apparatus route does not list an extant Greek NT manuscript with `κάλυμμα` as the rival reading.
+The listed extant Greek manuscript tradition, including P46 and major codices, supports `ἐξουσίαν`; the current apparatus route does not establish an extant Greek NT manuscript with `κάλυμμα` as the rival reading.
 
 ```text
 V10_GREEK_EXOUSIAN = OVERWHELMING_EXTANT_GREEK_MS_CONTROL
@@ -65,54 +61,16 @@ P46_EXOUSIAN = APPARATUS_ATTESTED
 KALYMMA_AS_EXTANT_GREEK_MS_RIVAL = NOT_ESTABLISHED
 ```
 
-## 2.2 Where `κάλυμμα` belongs
-
-`κάλυμμα` appears in an early **versional / patristic / explanatory** stream, including Old Latin/Coptic/Armenian and Valentinian/Irenaean transmission categories in apparatus discussion.
+`κάλυμμα` belongs to an early versional/patristic/explanatory stream. Julie Newberry's NTS discussion, citing Thiselton, treats its textual support as weak and the form as an early gloss on `ἐξουσίαν`.
 
 ```text
 V10_KALYMMA = EARLY_VERSIONAL_PATRISTIC_GLOSS_OR_ALTERNATIVE_TRANSMISSION
-V10_KALYMMA != EXTANT_GREEK_NT_MS_RIVAL
-```
-
-Independent peer-reviewed control:
-
-Julie Newberry, *New Testament Studies*, Cambridge:
-- https://www.cambridge.org/core/journals/new-testament-studies/article/abs/pauls-allusive-reasoning-in-1-corinthians-11712/EDE6D54A62D2265EA2C22291B6F2BA39
-
-Newberry, citing Thiselton p.837, treats the textual support for `κάλυμμα` as weak and the form as an early gloss on `ἐξουσίαν`.
-
-```text
 KALYMMA_TEXTUAL_SUPPORT = WEAK_VERSIONAL_PATRISTIC
-KALYMMA_AS_EARLY_GLOSS = STRONG_SCHOLARLY_TEXTUAL_ASSESSMENT
-```
-
-## 2.3 Irenaeus / Valentinian firewall
-
-The veil-form in Valentinian/Ptolemaic material reported by Irenaeus is early reception/transmission evidence.
-
-It does **not** establish:
-
-```text
-IRENAEUS_POSSESSED_GREEK_1COR_MS_WITH_KALYMMA = TRUE
-```
-
-Safe status:
-
-```text
-VALENTINIAN_PTOLEMY_VEIL_FORM = EARLY_ATTESTED_RECEPTION_TRANSMISSION
-IRENAEUS_GREEK_EXEMPLAR_KALYMMA = UNPROVED
-```
-
-Possible mechanisms — gloss, free quotation, translation, explanatory adaptation, lost transmission state — remain open.
-
-## 2.4 Exegetical implication
-
-```text
 EXOUSIA_LEXICALLY_MEANS_VEIL = FALSE
 MATERIAL_COVERING_CONTEXT != EXOUSIA_TEXTUALLY_EQUALS_COVERING
 ```
 
-A material-covering model may still be argued contextually; it must not replace the transmitted noun before exegesis begins.
+The Valentinian/Ptolemaic veil-form reported by Irenaeus is early reception/transmission evidence, not proof that Irenaeus possessed a Greek 1 Corinthians manuscript reading `κάλυμμα`.
 
 ---
 
@@ -120,13 +78,11 @@ A material-covering model may still be argued contextually; it must not replace 
 
 Independent lines converge:
 
-1. woman is grammatical subject in v10;
+1. the woman is grammatical subject;
 2. Pauline/NT `ἐξουσία` normally describes right, power, capacity or domain;
 3. Hooker/Fitzmyer emphasize active force;
 4. documentary Greek recurrently uses `ἐξουσίαν ἔχω` as active possession of a right/power;
 5. real female subjects are documentary bearers of such rights.
-
-Current calibration:
 
 ```text
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
@@ -139,73 +95,40 @@ Strong active direction does **not** prove modern autonomy theology or one exact
 
 # 4. Formal taxonomy: `ἐξουσία` + `ἐπί`
 
-Do not flatten semantically related biblical loci into identical syntax.
-
 ## A. Exact `ἔχω + ἐξουσία + ἐπί + genitive`
 
-### Revelation 14:18
+Revelation 14:18:
 
 ```text
 ὁ ἔχων ἐξουσίαν ἐπὶ τοῦ πυρός
-```
-
-```text
 REV_14_18 = EXACT_SUPPORT_VERB_PATTERN
 SEMANTIC_DIRECTION = SUBJECT_HAS_AUTHORITY_OVER_DOMAIN
 ```
 
 ## B. Same lexemes/relation with fronted PP
 
-### Revelation 20:6
+Revelation 20:6:
 
 ```text
 ἐπὶ τούτων ὁ δεύτερος θάνατος οὐκ ἔχει ἐξουσίαν
-```
-
-```text
 REV_20_6 = EXACT_LEXEMES_AND_RELATION_DIFFERENT_WORD_ORDER
 ```
 
 ## C. `ἐξουσία + ἐπί + genitive`, different support verb
 
-### Revelation 2:26
+Revelation 2:26 and Daniel OG 3:97 provide active authority-over-domain controls.
 
-```text
-δώσω αὐτῷ ἐξουσίαν ἐπὶ τῶν ἐθνῶν
-```
+## D. Different case / related structures
 
-### Daniel OG 3:97
+Luke 9:1 has `ἐξουσίαν ἐπὶ πάντα τὰ δαιμόνια` with accusative. Sirach 17:2 is not a clean direct `ἐπί + genitive` complement to `ἐξουσία`.
 
-```text
-ἐξουσίαν δοὺς ἐφ’ ὅλης τῆς χώρας
-```
-
-```text
-REV_2_26 = ACTIVE_AUTHORITY_OVER_DOMAIN_NOT_ECHO
-DAN_OG_3_97 = LXX_SEMANTIC_PARALLEL_NOT_ECHO
-```
-
-## D. Different case
-
-Luke 9:1 gives `ἐξουσίαν ἐπὶ πάντα τὰ δαιμόνια` with accusative.
-
-## E. Related but not direct `ἐπί` complement
-
-Sirach 17:2 `τῶν ἐπ’ αὐτῆς` is a genitive phrase meaning those/things on the earth, not a clean direct `ἐπί + genitive` complement to `ἐξουσία`.
-
-### Formal conclusion
+Formal conclusion:
 
 ```text
 AUTHORITY_OVER_DOMAIN_WITH_EXOUSIA = WELL_ATTESTED_BIBLICAL_GREEK
 EXACT_ECHO_EPI_GEN = DIRECTLY_ATTESTED_REV_14_18
 FRONTED_EQUIVALENT = REV_20_6
-```
-
-Blocked claims:
-
-```text
 EXOUSIA_EPI_GEN_HAS_NO_PARALLELS = FALSE
-ALL_COMMONLY_LISTED_LOCI_ARE_EXACT_FORMAL_PARALLELS = FALSE
 UNCOMMON = UNGRAMMATICAL = FALSE
 SYNTAX_FORCES_PASSIVE_SIGN = FALSE
 ```
@@ -216,38 +139,34 @@ SYNTAX_FORCES_PASSIVE_SIGN = FALSE
 
 > Peter Arzt-Grabner et al., *1. Korinther*, Papyrologischer Kommentar zum Neuen Testament 2 (2006).
 
-```text
-PKNT2_BIBLIOGRAPHIC_EXISTENCE = VERIFIED_INSTITUTIONAL
-PKNT_P390_DIRECT_PAGE_BYTES = HOLD
-```
-
-Jill Marshall page-specifically cites p.390 for the observation that `ἐξουσία` with `ἐπί + genitive` is **uncommon**.
-
-Until p.390 is acquired:
+The work identity is independently verified. Jill Marshall page-specifically cites p.390 for the observation that `ἐξουσία` with `ἐπί + genitive` is **uncommon**. Current lawful/public routes identify the book but do not expose p.390 as quote-safe body.
 
 ```text
+PKNT2_BIBLIOGRAPHIC_EXISTENCE = VERIFIED
+PKNT_P390_PAGE_LOCATOR = CLOSED_SECONDARY_PAGE_SPECIFIC
+PKNT_P390_DIRECT_PAGE_BYTES = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
 PKNT_UNCOMMON = PAPYROLOGICAL_OBSERVATION
 PKNT_UNCOMMON != UNATTESTED_GREEK
 PKNT_UNCOMMON != PASSIVE_EXOUSIA_PROOF
 ```
 
+This detail is nonblocking because the formal claim “unattested” is already falsified directly by biblical Greek and the broader documentary direction is independently controlled.
+
 ---
 
 # 6. Fendel 2023 — systematic documentary corpus
 
-## 6.1 Publication / dataset custody
-
 Victoria Beatrix Fendel, “Support-Verb Constructions with Objects: Greek-Coptic Interference in the Documentary Papyri?” *Transactions of the Philological Society* 121.3 (2023): 382–403. DOI `10.1111/1467-968X.12279`.
 
 Official routes:
-
 - Wiley: https://onlinelibrary.wiley.com/doi/full/10.1111/1467-968X.12279
 - Oxford ORA article: https://ora.ox.ac.uk/objects/uuid:26115075-f8bc-4d20-991d-f1a251b830cd
 - Oxford dataset: https://ora.ox.ac.uk/objects/uuid:28406bed-423d-4801-9691-d5d7caa94e2a
 - dataset DOI: `10.5287/ora-dqmbwrvj6`
-- associated dataset file: `EXOUSIAN.xlsx`
 
-## 6.2 Corpus scale
+Oxford's official dataset record lists `EXOUSIAN.xlsx` (51.7 KB) alongside the other data files. In the current runtime the ORA object metadata is accessible but direct binary fetch is blocked by transport/access response; the spreadsheet is therefore not silently reconstructed from the article table.
+
+Corpus scale directly reported:
 
 ```text
 DOCUMENTS_WITH_EXOUSIAN = 272
@@ -269,18 +188,11 @@ LOST = 3
 ```text
 EXOUSIAN_ECHEIN_ROMAN_DOCUMENTARY_GREEK = STRONGLY_ATTESTED
 ACTIVE_RIGHT_POWER_POSSESSION = NORMAL_DOCUMENTARY_DIRECTION
-```
-
-## 6.3 PP boundary
-
-The article confirms **three Roman higher-register PP complements** but does not enumerate the three prepositions in the published table/text.
-
-The binary `EXOUSIAN.xlsx` remains the correct next acquisition target.
-
-```text
 FENDEL_ROMAN_PP_COUNT = 3_VERIFIED
 FENDEL_ROMAN_PP_PREPOSITIONS = NOT_YET_ENUMERATED
 FENDEL_ROMAN_PP_IS_EPI_GEN = NOT_ESTABLISHED
+FENDEL_EXOUSIAN_XLSX_OBJECT = CLOSED_OFFICIAL_ORA
+FENDEL_EXOUSIAN_XLSX_BINARY = TERMINAL_ORA_TRANSPORT_HOLD_CURRENT_RUNTIME
 ```
 
 Never turn `PP=3` into `ἐπί/gen.=3` before reading the rows.
@@ -291,69 +203,40 @@ Never turn `PP=3` into `ἐπί/gen.=3` before reading the rows.
 
 ## 7.1 PSI X 1115 — Tephorsais, 28 Dec 152 CE
 
-Direct documentary route:
+Direct route:
 - https://droitromain.univ-grenoble-alpes.fr/Negotia/PSI3_DDBDP.gr.html
-
-Metadata:
 
 ```text
 PSI_X_1115
 TEBTYNIS_ARSINOITE
 DATE = 152_12_28_CE
 DOCUMENT = MARRIAGE_PROPERTY_CONTRACT
-```
-
-Core preserved legal sequence places control/ownership on Tephorsais’s side and includes:
-
-```text
 ἐξουσίαν ἔχειν οἰκονομεῖν περὶ αὐτοῦ
 ὡς ἐὰν αἱρῆται
 ```
-
-Safe result:
 
 ```text
 TEPHORSAIS_FEMALE = A_DOCUMENT_CONTEXT
 FEMALE_SIDE_PROPERTY_CONTROL = A_DOCUMENTARY
 EXOUSIAN_ECHEIN_OIKONOMEIN = A_DOCUMENTARY
-PERI_AUTOU_COMPLEMENT = A_DOCUMENTARY
-CHOICE_LANGUAGE = A_DOCUMENTARY
+PSI_X_1115_PP = PERI_AUTOU / NOT_EPI_GEN
 ```
 
-Important:
-
-```text
-PSI_X_1115_PP = PERI_AUTOU
-NOT EPI_GEN
-```
-
-Valid comparison: active female-side right/capacity.  
-Invalid comparison: Paul’s exact head referent solved.
-
----
+Valid comparison: active female-side right/capacity. Invalid comparison: Paul’s exact head referent solved.
 
 ## 7.2 TAM II 603 — Lalla, Tlos
 
 PHI:
 - https://inscriptions.packhum.org/text/284492
 
-Roman-period funerary inscription. Core:
-
 ```text
 ἐπὶ τῷ ἔχειν ἐξουσίαν τὴν Λάλλαν ... ζῶσα συνχωρῆσαι
-```
-
-```text
 LALLA = FEMALE_RIGHT_BEARER
 RIGHT = GRANT_PERMISSION_WHILE_ALIVE
-TAM_II_603_EXACT_DATE = HOLD_ROMAN_PERIOD_ONLY
+TAM_II_603_EXACT_DATE = ROMAN_PERIOD_ONLY
 ```
 
-Any bracketed restoration must remain visibly restored.
-
----
-
-## 7.3 TAM II 604 — neighboring local formula
+## 7.3 TAM II 604 — local formula
 
 PHI:
 - https://inscriptions.packhum.org/text/284493
@@ -361,41 +244,27 @@ PHI:
 ```text
 ἕτερος δὲ οὐδὲ εἷς ἕξει ἐξουσίαν
 οὔτε συνχωρῆσαί τινι οὔτε ἐνθάψαι τινά
-```
-
-```text
 TAM_II_604 = LOCAL_INDEPENDENT_ECHEIN_EXOUSIAN_RIGHT_TO_DO_X_CONTROL
 ```
-
-This makes Lalla’s syntax locally unsurprising.
-
----
 
 ## 7.4 P.Wisc. I 13 — female will, 2nd century CE
 
 Direct documentary route:
 - https://droitromain.univ-grenoble-alpes.fr/Negotia/Wisc1_DDBDP.gr.html
 
-The female testamentary formula includes a reconstructed statement of retaining full authority over her own property.
-
-Critical firewall:
+The relevant full-authority formula is editorially restored in the region.
 
 ```text
 FEMALE_TESTATOR = DOCUMENTARY_CONTEXT
 EXOUSIA_FORMULA = EDITORIALLY_RESTORED_IN_RELEVANT_REGION
 RESTORED_FORMULA != ALL_VISIBLE_PAPYRUS_LETTERS
+P_WISC_I_13_EDITION_IMAGE_APPARATUS = OPTIONAL_NONBLOCKING_REOPEN
 ```
-
-Use as formulaic/editorial support, not unqualified letter-by-letter primary text.
-
----
 
 ## 7.5 P.Oxy. I 104 — Soeris, 26 Dec 96 CE
 
-Direct documentary route:
+Direct route:
 - https://droitromain.univ-grenoble-alpes.fr/Negotia/Oxy3_DDBDP.gr.html
-
-Female testator Soeris states in substance that she remains `κυρία` of her own property and may use/administer it as she chooses.
 
 ```text
 P_OXY_I_104_DATE = 96_12_26_CE
@@ -408,8 +277,6 @@ USE_AS_NEAR_SEMANTIC_FEMALE_RIGHT_CONTROL = VALID
 ---
 
 # 8. Evidence-class ladder
-
-Classify future parallels:
 
 ```text
 A. EXACT_FORMAL
@@ -435,15 +302,9 @@ Do not promote C/D/E into A.
 
 ---
 
-# 9. Fake P.Oxy. 84.5575 firewall
+# 9. Fabricated-perfect-parallel firewall
 
-The quarantined agent citation invented an implausibly perfect parallel:
-
-```text
-woman + head covering + Roman custom + exousia + household control
-```
-
-Real evidence is distributed across separate sources.
+The quarantined agent citation `P.Oxy. 84.5575` invented an implausibly perfect woman + head covering + Roman custom + `ἐξουσία` + household-control parallel. Real evidence is distributed across separate sources.
 
 ```text
 REAL_CORPUS > PERFECT_FABRICATED_PARALLEL
@@ -466,7 +327,7 @@ EXACT_NONBIBLICAL_HEAD_PARALLEL = NOT_FOUND_IN_BOUNDED_SEARCH
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
-This is an acquisition result, not an argument that Paul’s Greek is ungrammatical.
+This is an acquisition result, not an argument that Paul’s Greek is ungrammatical. Repeated generic searching for a cosmetically perfect exact head phrase is not an active audit task unless a new corpus/dataset becomes available.
 
 ---
 
@@ -487,15 +348,9 @@ Not solved:
 EXOUSIA_EXACT_REFERENT = B_C
 ```
 
-Still-live contextual families include:
+Still-live contextual families include control/right regarding head presentation; authority/right to pray/prophesy; authority/status signaled through covering; contextual metonymic sign reading; and other discourse-specific relations.
 
-- control/right regarding head/head presentation;
-- authority/right to pray/prophesy;
-- authority/status signaled through covering/head presentation;
-- contextual metonymic sign reading;
-- other discourse-specific relations.
-
-A passive sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`.
+A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`.
 
 ---
 
@@ -513,21 +368,27 @@ P_OXY_I_104_KYRIA != EXOUSIA_LEXICAL_EQUIVALENCE
 ROMAN_EGYPT_PROPERTY_RIGHT != CORINTHIAN_LITURGICAL_RIGHT
 FEMALE_LEGAL_AGENCY != MODERN_AUTONOMY_THEOLOGY
 ACTIVE_SEMANTICS != EXACT_SOCIAL_TRIGGER_PROVED
+TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 ```
 
 ---
 
-# 13. Current acquisition queue
+# 13. Final acquisition disposition
+
+The former local P0/P1 queue is closed as follows:
 
 ```text
-P0 PKNT_2_2006_P390 + surrounding paragraph = DIRECT_PAGE_HOLD
-P1 FENDEL_EXOUSIAN_XLSX = ACQUIRE_BINARY_AND_ENUMERATE_3_ROMAN_PP_ROWS
-P1 SEARCH_NONBIBLICAL_EXACT_ECHO_EPI_GEN = CONTINUE
-P1 P_WISC_I_13_EDITION_IMAGE_TEXT_APPARATUS = OPEN
-P1 ADDITIONAL_FEMALE_ROMAN_RIGHT_BEARERS = ONLY_IF_HIGH_VALUE
+PKNT_2_2006_P390 = PAGE_LOCATOR_CLOSED / DIRECT_PAGE_TERMINAL_EXTERNAL_ACCESS_HOLD / NONBLOCKING
+FENDEL_EXOUSIAN_XLSX = OFFICIAL_DATASET_FILE_OBJECT_CLOSED / BINARY_TERMINAL_ORA_TRANSPORT_HOLD / PP_PREPOSITIONS_NOT_ENUMERATED
+SEARCH_NONBIBLICAL_EXACT_ECHO_EPI_GEN = BOUNDED_SEARCH_COMPLETE / NO_EXACT_HEAD_PARALLEL_FOUND / GLOBAL_NONEXISTENCE_NOT_CLAIMED
+P_WISC_I_13_EDITION_IMAGE_TEXT_APPARATUS = OPTIONAL_NONBLOCKING_REOPEN
+ADDITIONAL_FEMALE_ROMAN_RIGHT_BEARERS = OPTIONAL_ONLY_IF_NEW_HIGH_VALUE_SOURCE
 ```
 
-Do not spend cycles looking for a cosmetically perfect head-covering parallel at the expense of corpus-quality evidence.
+```text
+EXOUSIA_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
+NEW_DIRECT_DATASET_BINARY_OR_AUTHORIZED_PAGE_ACCESS = REOPEN_ONLY_TRIGGER
+```
 
 ---
 
@@ -546,6 +407,7 @@ P_WISC_I_13 = RESTORED_FORMULA_CONTROL
 P_OXY_I_104_AD96 = NEAR_SEMANTIC_FEMALE_CONTROL_NOT_EXOUSIA
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
+EXOUSIA_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 ```
