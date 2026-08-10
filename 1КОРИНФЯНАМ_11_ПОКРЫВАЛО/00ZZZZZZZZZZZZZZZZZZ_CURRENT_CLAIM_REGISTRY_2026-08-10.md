@@ -105,8 +105,8 @@ FOR_CURRENT_GRADE:
 | Source | Current status | Needed |
 |---|---|---|
 | Thiselton, NIGTC 2000 | `HOLD_FULL_SECTION` | pp.800–847 + notes |
-| Fee, NICNT Revised 2014 | `HOLD_FULL_SECTION` | approx pp.542–586 + notes/addendum |
-| Garland, BECNT 2nd ed. 2025 | `HOLD_FULL_SECTION` | complete current 11:2–16 section + notes |
+| Fee, NICNT Revised 2014 | `HOLD_FULL_SECTION` | approx pp.542–586 + notes/addendum; narrow p.576–578/n.123 remains a priority locator |
+| Garland, BECNT 2nd ed. 2025 | `SECTION_IDENTITY_CLOSED / PAGINATION_AND_BODY_HOLD` | 2025 second-edition pagination + complete current 11:2–16 section + notes; do not transfer 2003 pagination |
 | Ciampa/Rosner, PNTC 2010 | `MACRO_PARTIALLY_CLOSED / DETAIL_HOLD` | pp.503–540 + notes |
 | Reasoner, Brill 2025 | `DIRECT_BODY_HOLD` | Commentary 7, approx pp.432–451; authenticate positions/wording from body |
 | Starling, EBTC 2025 | `CONTENT_HOLD` | exact 1 Cor 11:2–16 section + notes |
