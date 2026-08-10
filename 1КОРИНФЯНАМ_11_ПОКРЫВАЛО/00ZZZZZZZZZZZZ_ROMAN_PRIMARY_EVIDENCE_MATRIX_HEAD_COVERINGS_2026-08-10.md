@@ -5,7 +5,7 @@
 
 ## 0. Purpose
 
-This canonical audit moves behind modern reconstructions to ask what ancient Roman evidence itself can establish.
+This canonical audit asks what ancient Roman evidence itself can establish before a modern reconstruction is imposed.
 
 ```text
 PRIMARY_FACT
@@ -94,17 +94,7 @@ Plutarch immediately asks why Saturn and Honor receive sacrifice with the **head
 
 ```text
 ROMAN_RITUAL_HEAD_COVERING_NOT_UNIVERSAL_ACROSS_ALL_CULTS = A_TEXTUAL
-```
-
-Forbidden:
-
-```text
-ALL_ROMAN_MALE_WORSHIP = CAPITE_VELATO
-```
-
-Safe:
-
-```text
+ALL_ROMAN_MALE_WORSHIP = CAPITE_VELATO = FALSE
 CAPITE_VELATO = WELL_ATTESTED_RECOGNIZABLE_ROMAN_RITUAL_MODE
 ```
 
@@ -121,7 +111,7 @@ PLUTARCH_Q14_MEN_PUBLICLY_UNCOVERED_AS_MORE_USUAL = A_PRIMARY_AUTHOR_STATEMENT
 
 This is a tendency, not an exceptionless law.
 
-In the same question Plutarch preserves an antiquarian tradition that formerly women were not allowed to cover the head and tells the Sulpicius Gallus divorce story with the wife punished because she **pulled her cloak over her head**.
+In the same question Plutarch preserves an antiquarian tradition that formerly women were not allowed to cover the head and tells the Sulpicius Galus divorce story with the wife punished because she **pulled her cloak over her head**.
 
 ```text
 PLUTARCH_Q14_FEMALE_CUSTOM = HISTORICALLY_VARIABLE_ANTIQUARIANLY_COMPLEX
@@ -129,7 +119,7 @@ PLUTARCH_Q14_FEMALE_CUSTOM = HISTORICALLY_VARIABLE_ANTIQUARIANLY_COMPLEX
 
 ---
 
-# 7. Valerius Maximus 6.3.10 — direct contradiction in the Gallus tradition
+# 7. Valerius Maximus 6.3.10 — direct contradiction in the Galus tradition
 
 PHI Latin route:
 - https://latin.packhum.org/loc/1038/1/75/2386-2389%2C5666-5669%2C6383-6386%2C6603-6606%2C7122-7125%2C7162-7165
@@ -143,7 +133,7 @@ uxorem dimisit, quod eam capite aperto foris versatam cognoverat
 The wife is punished for appearing outside **with head uncovered**.
 
 ```text
-VALERIUS_6_3_10_GALLUS_WIFE_UNCOVERED_IN_PUBLIC = A_PRIMARY_TEXT
+VALERIUS_6_3_10_GALUS_WIFE_UNCOVERED_IN_PUBLIC = A_PRIMARY_TEXT
 ```
 
 Compare:
@@ -156,13 +146,11 @@ VALERIUS_6_3_10 = wife uncovered outside -> divorce
 Therefore:
 
 ```text
-SULPICIUS_GALLUS_HEAD_STATE_TRADITION = INTERNALLY_CONTRADICTORY
+SULPICIUS_GALUS_HEAD_STATE_TRADITION = INTERNALLY_CONTRADICTORY
 WHICH_VERSION_IS_HISTORICALLY_ORIGINAL = OPEN
 ```
 
 This contradiction is a source-critical control, not noise to suppress.
-
-Consequences:
 
 ```text
 ONE_ROMAN_MORAL_ANECDOTE != DRESS_CENSUS
@@ -170,27 +158,42 @@ ANTIQUARIAN_EXEMPLUM != UNIVERSAL_SOCIAL_LAW
 LITERARY_DRESS_CLAIM_REQUIRES_VISUAL_EPIGRAPHIC_CONTROL
 ```
 
-## 7.1 Hilton & Matthews 2008 — specialist contradiction control
+## 7.1 Hilton & Matthews 2008 — direct specialist contradiction control
 
 J. L. Hilton and L. L. V. Matthews, “Veiled or Unveiled? (Plut. Quaest. Rom. 267B–C),” *Classical Quarterly* 58.1 (2008): 336–342. DOI `10.1017/S0009838808000323`.
 
-Direct publisher metadata:
-- Cambridge Core confirms article identity, authors, volume/issue, pages 336–342 and DOI.
+Direct routes:
+- Cambridge Core publisher record confirms article identity, issue, pages and DOI;
+- University of KwaZulu-Natal institutional repository exposes the complete eight-page publisher PDF (`Hilton_John_ 2008.pdf`, 574.86 KB), which was directly read in the current audit.
 
-The direct article body remains a custody HOLD in the current runtime. A later Macquarie University full-text treatment gives page-specific attribution to Hilton & Matthews p.341 n.22 and p.342: they examined the Valerius/Plutarch discrepancy, did not resolve it, and treated the broader question of routine Roman female head covering as too large for the short note.
+The article makes several points that must stay distinct:
 
-Calibrated status:
+1. Plutarch probably drew on Valerius Maximus or a related source tradition, but the relationship need not be simple or unmediated; Varro / related legal-antiquarian material may lie behind both.
+2. Valerius’ manuscript tradition itself varies between `capite aperto` and `capite operto`; this does not license silently selecting the reading needed by a modern theory.
+3. Plutarch’s Greek clearly presents Galus’ wife as **pulling on** her garment over the head, while Valerius’ received main text presents her as going outside **uncovered**.
+4. Because the original source has not survived, Hilton & Matthews state that it is impossible to know with certainty whether the historical divorce involved covering or uncovering. They judge the **uncovered-head** version the more natural possibility, but explicitly stop short of historical certainty.
+5. They argue that Valerius reshapes the anecdote in his own moralizing context of `pudicitia`, female beauty and dress; the purported speech of Galus uses post-Augustan vocabulary and is unlikely to preserve his actual words.
+6. Plutarch’s context is different: he is dialectically explaining funeral inversion, states that women in his own framing were more usually veiled in public, yet entertains an antiquarian early-Roman phase in which women may not have routinely covered.
+7. Their conclusion is not “Valerius wins” or “Plutarch wins”: the disagreement reflects the authors’ different contexts and is itself evidence for the **complexity** of Roman female veiling practice.
+
+Direct PDF body also notes that the wider question of whether Roman women routinely veiled cannot be fully addressed in the short note.
+
+The runtime attempted PDF page-image screenshots; the screenshot route cache-failed, so direct text-body custody is closed while a separate page-image capture is not claimed.
 
 ```text
 HILTON_MATTHEWS_2008_IDENTITY = DIRECT_PUBLISHER_VERIFIED
-HILTON_MATTHEWS_2008_DIRECT_BODY = HOLD
-HILTON_MATTHEWS_PP341_342_ATTRIBUTION = STRONG_SECONDARY_PAGE_SPECIFIC_CONTROL
+HILTON_MATTHEWS_2008_DIRECT_BODY = CLOSED_UKZN_INSTITUTIONAL_PDF
+HILTON_MATTHEWS_2008_PAGE_IMAGE_SCREENSHOT = RUNTIME_CACHE_HOLD
+HILTON_MATTHEWS_ORIGINAL_GALUS_HEAD_STATE = UNRESOLVED
+HILTON_MATTHEWS_UNCOVERED_VERSION = MORE_NATURAL_BUT_NOT_CERTAIN
+HILTON_MATTHEWS_VALERIUS_CONTEXT = MORALIZING_PUDICITIA_DRESS_FRAME
+HILTON_MATTHEWS_PLUTARCH_CONTEXT = FUNERAL_INVERSION_ANTIQUARIAN_DIALECTIC
 PLUTARCH_Q14_VS_VALERIUS_6_3_10 = REAL_PRIMARY_CONTRADICTION
 VALERIUS_AUTOMATICALLY_CORRECTS_PLUTARCH = NOT_ESTABLISHED
 ONE_ANECDOTE != UNIVERSAL_FEMALE_VEIL_LAW
 ```
 
-Do not upgrade a downstream paraphrase into direct article-body evidence until the *Classical Quarterly* pages themselves are acquired.
+This direct body supersedes the earlier secondary page-specific custody layer.
 
 ---
 
@@ -234,7 +237,8 @@ Do not flatten every ancient head-related artifact into one “veil”.
 | Plutarch RQ 10 | near/post-Paul | generalized Roman divine-service covering | exceptions follow |
 | Plutarch RQ 11/13 | near/post-Paul | uncovered-head cultic exceptions | proves non-universality |
 | Plutarch RQ 14 | near/post-Paul | gendered public norm + funeral inversion | historically complex |
-| Valerius 6.3.10 | early imperial | opposite Gallus head-state tradition | moral exemplum, not census |
+| Valerius 6.3.10 | early imperial | opposite Galus head-state tradition | moral exemplum, not census |
+| Hilton–Matthews 2008 | modern direct specialist control | source-context explanation; original event unresolved | explicitly non-universal |
 
 ```text
 ROMAN_MALE_RITUAL_HEAD_COVERING = A_HISTORICAL_BACKGROUND
@@ -295,7 +299,7 @@ ALL_FEMALE_RITUAL_COVERING = MARITAL_SUBMISSION_SYMBOL = false
 
 ## 12.1 Edsall 2013 — visual-evidence method control
 
-Edsall’s direct JGRChJ full text also supplies a useful visual-method firewall: he explicitly warns that the discrepancy between written costume evidence and uncovered portraiture cannot be resolved by treating a bust as a behavioural photograph. His material-covering lexical corpus is owned in the hair/`φύσις` audit; the methodological consequence belongs here.
+Edsall’s direct JGRChJ full text supplies a visual-method firewall: he warns that the discrepancy between written costume evidence and uncovered portraiture cannot be resolved by treating a bust as a behavioural photograph.
 
 ```text
 EDSALL_2013_DIRECT_FULL_BODY = CLOSED
@@ -315,7 +319,7 @@ Ordinary public presentation is commonly uncovered, while covered-head ritual pe
 
 ## Women
 
-Public covering has strong customary evidence, but elite portraiture frequently displays uncovered hairstyles and ritual contexts vary.
+Public covering has strong customary evidence, but elite portraiture frequently displays uncovered hairstyles and ritual contexts vary. Hilton–Matthews further show that even the most famous literary divorce exemplum survives in contradictory forms and was reshaped by authorial context.
 
 Therefore 1 Cor 11 cannot safely be reduced to one universal Roman dress code.
 
@@ -369,7 +373,7 @@ or:
 SHORT_OR_SHAVED_WOMAN = UNIVERSALLY_PROSTITUTE_OR_ADULTERESS
 ```
 
-Plutarch’s norm is a tendency; Gallus traditions contradict each other; elite portraits can be bareheaded; ritual images vary.
+Plutarch’s norm is a tendency; the Galus traditions contradict each other; elite portraits can be bareheaded; ritual images vary.
 
 Any universal equation requires specific first-century Corinthian evidence, not repeated commentary folklore.
 
@@ -395,11 +399,12 @@ THEREFORE_PAULINE_REASONING_IS_ONLY_CULTURAL = invalid_inference
 | Roman men sometimes worshipped `capite velato` | **A** | Lucretius/Virgil/Livy/Plutarch + visual corpus |
 | covered head could accompany prayer/augury/divination | **A** | Livy + Plutarch + Virgil/Lucretius |
 | Roman cultic practice had uncovered-head exceptions | **A** | Plutarch RQ 11, 13 |
-| Gallus female head-state tradition is contradictory | **A source-critical fact** | Plutarch Q14 vs Valerius 6.3.10 |
-| Hilton & Matthews 2008 direct article identity | **verified / body HOLD** | Cambridge metadata; page-specific later control only |
+| Galus female head-state tradition is contradictory | **A source-critical fact** | Plutarch Q14 vs Valerius 6.3.10 |
+| Hilton & Matthews 2008 direct article body | **closed** | UKZN institutional copy of publisher PDF |
+| historical original of Galus incident | **open** | direct article says source is lost; uncovered is more natural, not certain |
 | Corinth displayed male covered-sacrificer imperial imagery | **A/B** | published Corinth archaeology / ASCSA |
-| women were more commonly covered publicly than men in Plutarch’s framing | **B-high historical norm** | Plutarch Q14 |
-| every respectable woman always veiled | **D / false universalization** | contradicted by mixed evidence |
+| women were more commonly covered publicly than men in Plutarch’s framing | **B-high historical norm** | Plutarch Q14; not universal |
+| every respectable woman always veiled | **D / false universalization** | contradicted by mixed evidence and source conflict |
 | female ritual covering existed | **A/B** | visual/literary evidence |
 | female uncovered elite portraiture existed | **A/B** | published visual evidence |
 | v4 specifically = `capite velato` | **B/C** | strong fit, not lexical entailment |
@@ -416,8 +421,9 @@ ROMAN_CAPITE_VELATO_BACKGROUND = A
 PLUTARCH_Q10_MALE_RITUAL_COVERING = A_PRIMARY_LITERARY
 PLUTARCH_Q14_FEMALE_MORE_USUAL_COVERING = A_PRIMARY_AUTHOR_STATEMENT_WITH_COMPLEXITY
 VALERIUS_6_3_10_UNCOVERED_WIFE = A_PRIMARY_TEXT
-SULPICIUS_GALLUS_HEAD_STATE = CONTRADICTORY_SOURCE_TRADITION
-HILTON_MATTHEWS_2008_DIRECT_BODY = HOLD
+SULPICIUS_GALUS_HEAD_STATE = CONTRADICTORY_SOURCE_TRADITION
+HILTON_MATTHEWS_2008_DIRECT_BODY = CLOSED
+HILTON_MATTHEWS_UNCOVERED_VERSION = MORE_NATURAL_NOT_CERTAIN
 ROMAN_FEMALE_UNIVERSAL_VEIL_RULE = REJECTED
 V4_EXACT_CAPITE_VELATO = B_C
 CORE_GRADE_REVERSALS = 0
