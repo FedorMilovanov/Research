@@ -1,0 +1,49 @@
+{
+  "scope": "1 Corinthians 11:10 angels primary-corpus audit",
+  "date": "2026-08-10",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "grades": {
+    "angels_explicit_v10": "A_TEXT",
+    "heavenly_holy_angels_referent": "B_HIGH_LEADING",
+    "angels_cosmic_witness_present_assembly_function": "B_LEADING",
+    "exact_angelic_function": "B_C",
+    "watchers_background_exists": "A_BACKGROUND",
+    "watchers_v10_referent": "C_SERIOUS_ALTERNATIVE",
+    "watchers_sexual_threat_exact_mechanism": "C_LOW_TO_C",
+    "guardian_angels_v10": "C_LOW",
+    "human_messengers_v10": "D_C_LOW",
+    "clergy_bishops_v10": "D_C_LOW_RECEPTION",
+    "generic_demonic_angels_v10": "D_C_LOW"
+  },
+  "same_letter_controls": {
+    "1cor_4_9": "angels as cosmic audience/observers",
+    "1cor_6_3": "believers will judge angels",
+    "1cor_13_1": "humans and angels are distinct categories"
+  },
+  "second_temple_controls": {
+    "songs_of_sabbath_sacrifice": "angelic priesthood/praise/heavenly temple/liturgy",
+    "1QSa_2_5b_9a": "holy angels in/with congregation; presence linked to assembly restrictions",
+    "enoch_6_15": "Watchers desire women, take wives, defile themselves",
+    "qumran_enoch": "pre-Christian manuscript witness to sexual Watchers tradition"
+  },
+  "early_christian_controls": {
+    "1tim_5_21": "elect angels witness ecclesial charge; canonical Pauline tradition, authorship caveat",
+    "heb_12_22": "heavenly assembly with myriads of angels",
+    "jude_6_7": "rebellious angel tradition known",
+    "tertullian": "early explicit Watchers reception of 1 Cor 11:10"
+  },
+  "refinement": {
+    "old_label": "HOLY_LITURGICAL_ANGELS=B_LEADING",
+    "replace_with": [
+      "HEAVENLY_HOLY_ANGELS_REFERENT=B_HIGH_LEADING",
+      "ANGELS_AS_COSMIC_WITNESSES/PRESENT_ASSEMBLY=B_LEADING",
+      "EXACT_ANGELIC_FUNCTION=B_C",
+      "WATCHERS=C_SERIOUS_ALTERNATIVE"
+    ]
+  },
+  "core_synthesis_reversed": false,
+  "product_write": false,
+  "ui_implementation": false,
+  "site_publication": false,
+  "publication_hold": true
+}
