@@ -108,6 +108,9 @@ FOR_CURRENT_GRADE:
 | Fee, NICNT Revised 2014 | `HOLD_FULL_SECTION` | approx pp.542–586 + notes/addendum |
 | Garland, BECNT 2nd ed. 2025 | `HOLD_FULL_SECTION` | complete current 11:2–16 section + notes |
 | Ciampa/Rosner, PNTC 2010 | `MACRO_PARTIALLY_CLOSED / DETAIL_HOLD` | pp.503–540 + notes |
+| Reasoner, Brill 2025 | `DIRECT_BODY_HOLD` | Commentary 7, approx pp.432–451; authenticate positions/wording from body |
+| Starling, EBTC 2025 | `CONTENT_HOLD` | exact 1 Cor 11:2–16 section + notes |
+| Gorman, Eerdmans 2025 | `CONTENT_HOLD` | exact 1 Cor 11:2–16 section; use primarily as theological/pastoral control unless technical claims are directly verified |
 
 Do not ask the user for these unless agent-access routes are genuinely exhausted or the user already has them available.
 
