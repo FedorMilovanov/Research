@@ -7,9 +7,7 @@
 
 Это **стабильная человеческая точка входа** в корпус 1 Кор 11:2–16.
 
-Она создана потому, что исторически сохранённые `00ZZ...CURRENT_AUTHORITY_POINTER...` и многочисленные delta/overlay файлы полезны как provenance/receipts, но перестали быть удобной навигацией.
-
-Правило:
+Исторические `00ZZ...CURRENT_AUTHORITY_POINTER...` и многочисленные delta/overlay файлы остаются provenance/receipts, но не являются удобной текущей навигацией.
 
 ```text
 FOR_CURRENT_RESEARCH_STATE:
@@ -19,8 +17,6 @@ FOR_CURRENT_RESEARCH_STATE:
   4. USE OLD POINTERS AS PROVENANCE, NOT AS NAVIGATION
 ```
 
-Это не уничтожает исторические файлы и не меняет их содержимое.
-
 ---
 
 # 1. Current claim authority
@@ -28,8 +24,6 @@ FOR_CURRENT_RESEARCH_STATE:
 Главный реестр текущих claim grades:
 
 - [`00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md`](00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md)
-
-Для grade конкретного тезиса **реестр выше имеет приоритет перед старым общим summary**, а затем направляет в controlling specialized audit.
 
 Current Greek text-base / textual-risk contract:
 
@@ -42,8 +36,6 @@ Provenance / publication boundary baseline:
 ---
 
 # 2. Core textual / lexical / discourse controls
-
-Use these for claims about what the Greek text itself can or cannot say:
 
 - `00ZZZZZ_VERSE_BY_VERSE_ADVERSARIAL_AUDIT_1COR11_2_16_2026-08-10.md`
 - `00ZZZZZZ_MODEL_STRESS_TEST_MATRIX_1COR11_2_16_2026-08-10.md`
@@ -78,35 +70,26 @@ Do not infer current grade from filename recency; use current claim registry.
 
 - [`dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`](dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md)
 
-This dossier owns the comparative research question:
+It owns the comparative question:
 
 ```text
 what happens to head / hair / headwear
 when a person performs a ritual or prophetic role?
 ```
 
-It keeps separate:
-
-```text
-female prophetic role
-ritual headwear/hair regulation
-literary ecstatic imagery
-exact Corinthian reconstruction
-```
-
-Future discoveries on Tryphosa / Eirene / Didyma / Delphi / Claros / ritual head-hair codes should update that dossier instead of creating another `pass_N` or `00ZZZZ...` file.
+Future Tryphosa / Eirene / Didyma / Delphi / Claros / ritual head-hair discoveries should update this dossier, not create another pass file.
 
 ---
 
 # 4. `ἐξουσία` and documentary Greek
 
-Current branch direct-control family:
+Current direct-control family:
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_REAL_PAPYROLOGICAL_EPIGRAPHIC_EXOUSIA_ECHEIN_CORPUS_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_FEMALE_DOCUMENTARY_EXOUSIA_RIGHTS_ADDENDUM_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2025_EXOUSIA_EPI_GEN_FRESHNESS_CONTROL_2026-08-10.md`
 
-Current core remains controlled by claim registry:
+Current core:
 
 ```text
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
@@ -114,14 +97,14 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 ```
 
-Current syntax guardrail:
+Syntax guardrail:
 
 ```text
 ἐξουσία + ἐπί + genitive = DIRECTLY ATTESTED IN BIBLICAL GREEK
 UNCOMMON != UNATTESTED
 ```
 
-The exact nonbiblical phrase `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` remains `NOT_FOUND_IN_BOUNDED_SEARCH`; this is not a global nonexistence claim.
+Exact nonbiblical `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` remains `NOT_FOUND_IN_BOUNDED_SEARCH`; not a global nonexistence claim.
 
 ---
 
@@ -132,19 +115,40 @@ Primary Pauline / Second Temple control:
 - `00ZZZZZZZZZZZZZZ_ANGELS_PRIMARY_CORPUS_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZ_ANGEL_MODELS_STRESS_MATRIX_2026-08-10.md`
 
-Patristic/reception controls in current draft branch include:
+Current patristic/reception controls:
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_ANGEL_PRIMARY_TEXT_DELTA_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_SPEAKER_BOUNDARY_CONTROL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CLEMENT_IRENAEUS_EARLY_ANGEL_RECEPTION_PRIMARY_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CATENA_CRAMER_ATTRIBUTION_FIREWALL_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGEL_LOCATOR_DELTA_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGELS_ATTRIBUTION_RESOLUTION_2026-08-10.md` — **controlling Theodoret ownership/locator file**
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGEL_LOCATOR_DELTA_2026-08-10.md` — supporting provenance; do not use over the resolution file above
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CYRIL_CATENA_KYTILLOU_ATTRIBUTION_CORRECTION_2026-08-10.md`
+
+Current Theodoret state:
+
+```text
+THEODORET_GUARDIAN_ANGELS_ATTRIBUTION = VERIFIED_SOURCE_ATTRIBUTION
+PG82_LOCATOR = 312D_313A
+HILL_2001_LOCATOR = VOL1_P205
+DIRECT_GREEK_PAGE_AUTOPSY = HOLD
+```
+
+Current Photian state:
+
+```text
+PHOTIUS_1COR11 = CATENA_PRESERVED_SCHOLIA_PHOTIANA
+CRAMER = OWNER_LABEL_CONTROL
+PG118 = TRANSMISSIONAL_CONVERGENCE
+POSSIBLE_FULLER_PAULINE_COMMENTARY = LOST_COMMENTARY_HYPOTHESIS
+PG101_STANDALONE_SEARCH != REQUIRED_ENDPOINT
+```
 
 **Evergreen source-verification tooling:**
 
 - [`dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md`](dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md)
 
-The 2026 open PG OCR corpus is a locator engine, not a substitute for source-image verification. Current coverage includes PG118 but not PG74 or PG82, so it does not by itself close the Cyril/Theodoret page-image holds.
+The 2026 PG OCR corpus is a locator engine, not a substitute for source-image verification. PG118 is covered and has already located 1 Cor 11:10 / Clement on PDF p.409; PG74 and PG82 are not currently covered.
 
 Reception diversity must not be used as vote-counting for original Pauline meaning.
 
@@ -158,8 +162,19 @@ Reception diversity must not be used as vote-counting for original Pauline meani
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZ_PAULINE_QUOTATION_SLOGAN_CORPUS_CONTROL_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_VOLF_TWO_CONTEXT_REFINEMENT_STANDHARTINGER_FRESHNESS_2026-08-10.md` — **controlling Gundry-Volf refinement**
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_GIELEN_CHINESE_SCHOLARSHIP_SOURCE_CONTROL_2026-08-10.md` — broader provenance/source map
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2025_EXOUSIA_EPI_GEN_FRESHNESS_CONTROL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2026_AUTHOR_INTERVIEW_MATERIALITY_CONTROL_2026-08-10.md`
+
+Current Gundry-Volf source card:
+
+```text
+GUNDRY_VOLF != SIMPLE_HAIR_ONLY_LABEL
+GUNDRY_VOLF = HAIRSTYLE + TWO_SOCIAL_CONTEXTS + CULTURE/CREATION/IN_CHRIST_MODEL
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+HAIR_ONLY = C_SERIOUS_ALTERNATIVE_UNCHANGED
+```
 
 Current Drake source separation:
 
@@ -176,13 +191,9 @@ Published existence / peer review is not automatic grade promotion.
 
 # 7. Agent-output quarantine / source hygiene
 
-These are controls against AI-generated citation drift:
-
 - `00ZZZZZZZZZZZZZZZZZZZZ_AGENT_DUMP_48_TARGET_VERIFICATION_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`
-
-Rule:
 
 ```text
 AGENT_OUTPUT = DISCOVERY_ONLY
@@ -194,23 +205,15 @@ SECONDARY_QUOTE != DIRECT_CURRENT_EDITION_TEXT
 
 # 8. Navigation anti-sprawl rule
 
-Effective for future work on this corpus:
-
 ```text
 DO_NOT_CREATE_NEW_Z_LADDER_POINTER = true
 DO_NOT_CREATE_PASS_N_REPORT_IF_DOSSIER_EXISTS = true
 UPDATE_EVERGREEN_DOSSIER = preferred
 UPDATE_CURRENT_CLAIM_REGISTRY = only_if_claim_grade_or_owner_changes
-ADD_RECEIPT/LEDGER = only_if_machine/provenance need is distinct
+ADD_RECEIPT/LEDGER = only_if machine/provenance need is distinct
 ```
 
-Existing historical `00Z/00ZZ/...` files stay preserved for provenance and supersession history. They do **not** need to be renamed or deleted merely to make the tree look cleaner.
-
-If a new source only strengthens provenance without changing a grade:
-
-1. update the controlling dossier/source ledger;
-2. do not create another current-authority pointer;
-3. leave claim registry unchanged unless controlling ownership must change.
+Historical `00Z/00ZZ/...` files stay preserved for provenance. If a new source only strengthens provenance without changing a grade, update the controlling dossier/source ledger and this index only when navigation/ownership changes.
 
 ---
 
@@ -223,4 +226,4 @@ PUBLICATION_HOLD = true
 RESEARCH_CLOSURE != PRODUCT_APPROVAL
 ```
 
-This index is navigational authority only. It does not itself promote any disputed historical or exegetical claim.
+This index is navigational authority only. It does not itself promote disputed historical or exegetical claims.
