@@ -41,6 +41,9 @@ HONORIFIC_DRESS_LANGUAGE
 PHI_ORDINAL_NUMBER
 != AUTOMATICALLY_REHM_IDIDYMA_NUMBER
 
+PHI_ORDINAL_NUMBER
+!= AUTOMATICALLY_CURRENT_EDITION_NUMBER
+
 VISUAL_SOUNDING_WORD
 != MATERIAL_HEAD_OBJECT
 
@@ -54,7 +57,7 @@ ROMAN_GREEK_JEWISH_CHRISTIAN_COMPARAND
 
 | Node | Controlled evidence | Safe use | Head/hair code? |
 |---|---|---|---|
-| Tryphosa, Didyma | direct `προφῆτις` | strongest Didyma female mantic office | **No** |
+| Tryphosa, Didyma | direct `προφῆτις`; `PHI ordinal Didyma 450 = SEG 30.1286 = Didyma 708` crosswalk controlled | strongest Didyma female mantic office | **No** |
 | Eirene, Didyma orbit | direct `πρόμαντις` | female mantic title | **No** |
 | Cleopatra, Didyma | restored `[προφ]ήτιδι` | fragmentary candidate | **No** |
 | Didyma 235B | `καλὴ προφητίσκη` graffito | informal/ironic mantic language; office unproved | **No** |
@@ -83,7 +86,23 @@ GLOBAL_NONEXISTENCE = NOT_CLAIMED
 
 ## 3.1 Tryphosa — strongest direct Didyma prophetess control
 
-**PHI Didyma 450 / SEG 30.1286** preserves:
+The same inscription is exposed under **different numbering systems**:
+
+```text
+PHI_OBJECT_ID = 247445
+PHI_INTERFACE_ORDINAL = Didyma 450
+SEG_REFERENCE = SEG 30.1286
+CURRENT_DIDYMA_EDITION_REFERENCE = Didyma 708
+```
+
+Thus:
+
+```text
+PHI ordinal Didyma 450 = SEG 30.1286 = Didyma 708
+PHI_ORDINAL_450 != EDITION_ITEM_450
+```
+
+The PHI object preserves:
 
 ```text
 [ὑ]δροφόρος Ἀρτέμιδος Πυθίη[ς]
@@ -97,11 +116,14 @@ Primary route:
 
 The inscription directly establishes Tryphosa as `προφῆτις`. The often-used date around **5 CE** is prosopographical, not carved on the stone.
 
-Specialist control:
-- https://journals.openedition.org/kernos/2337
+Independent specialist controls:
+- https://journals.openedition.org/kernos/2337 — identifies Platainis Tryphosa (`SEG XXX 1286`) and her grandmother Tryphosa, prophetis ca. 5 CE;
+- Krzysztof Nawotka, “Prophetes, prophetis and the epigraphic culture of Miletos,” DOI `10.13173/9783447125116.111`, explicitly cross-references `SEG 30.1286 = Didyma 708`.
 
 ```text
 TRYPHOSA_PROPHETIS_EXISTENCE = A_EPIGRAPHIC
+TRYPHOSA_CROSSWALK_SEG30_1286_DIDYMA708 = STRONG_SPECIALIST_EXPLICIT
+TRYPHOSA_PHI_ORDINAL_450_OBJECT_ID_247445 = DIRECT_DATABASE_CONTROL
 TRYPHOSA_EARLY_FIRST_CENTURY_DATE = B_HIGH_PROSOPOGRAPHIC
 TRYPHOSA_HEAD_HAIR_CODE = NOT_ATTESTED
 ```
@@ -594,6 +616,7 @@ KEKOSMEMENE != HEAD_ADORNMENT
 MATRONA_STOLATA != HEAD_COVERING
 VISUAL_HONOUR != SURVIVING_PORTRAIT
 ARCHAIC_VEILED_WOMAN != FIRST_CENTURY_PROPHETESS
+PHI_ORDINAL_DIDYMA_450 != CURRENT_EDITION_ITEM_450
 ```
 
 ---
@@ -660,6 +683,7 @@ POSTMORTEM_ORACLE_STATUS != LIFETIME_PROPHETIC_OFFICE_AUTOMATICALLY
 LITERARY_TROPE != ETHNOGRAPHIC_FACT
 VISUAL_CULTURE_EXISTS != IDENTIFIED_PROPHETESS_PORTRAIT
 PHI_ORDINAL_NUMBER != AUTOMATICALLY_REHM_IDIDYMA_NUMBER
+PHI_ORDINAL_NUMBER != AUTOMATICALLY_CURRENT_EDITION_NUMBER
 VISUAL_SOUNDING_WORD != MATERIAL_HEAD_OBJECT
 OA_FILE_YEAR != PRINT_PUBLICATION_DATE_AUTOMATICALLY
 NEGATIVE_BOUNDED_SEARCH != GLOBAL_NONEXISTENCE
