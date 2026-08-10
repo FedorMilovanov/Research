@@ -149,6 +149,40 @@ Low-quality/popular webpages currently reproduce purported exact Reasoner page q
 - page numbers can be wrong or copied circularly;
 - excerpts can omit qualifications/notes.
 
+## 4.1 Direct falsification of some circulated page labels
+
+Google Books gives a hard pagination boundary:
+
+```text
+COMMENTARY_7_11_2_16_START = 321
+COMMENTARY_8_11_17_34_START = 432
+```
+
+Therefore **any claimed 11:2–16 quotation assigned to p.432 or later cannot have the cited page number correct in this edition**.
+
+At least two currently circulating web attributions fail this test:
+
+```text
+"Reasoner 2025 p.434" assigned to 1 Cor 11:2 = IMPOSSIBLE_PAGE_LABEL
+"Reasoner 2025 p.444" assigned to 1 Cor 11:8 = IMPOSSIBLE_PAGE_LABEL
+```
+
+Both pages fall after the direct Google Books start of Commentary 8 (11:17–34) at p.432.
+
+A circulated `p.343` attribution for v.3 at least falls inside the possible Commentary 7 span, but its wording still remains **unverified** because the Brill body itself has not been acquired.
+
+This demonstrates that the web quotation chain is not merely lower-quality in theory; its pagination is **proven corrupt in specific cases**.
+
+New firewall:
+
+```text
+REASONER_WEB_QUOTE_WITH_PAGE >= 432 AND CLAIMED_VERSE <= 11_16 = REJECT_PAGE_LABEL
+REASONER_WEB_QUOTE_INSIDE_321_431 = LOCATOR_ONLY_UNTIL_BRILL_TEXT
+LOW_QUALITY_EXACT_WORDING != QUOTE_SAFE
+```
+
+Do not “repair” an impossible page citation by silently changing the page number. Reacquire the primary text.
+
 Therefore do **not** promote from those sites claims such as:
 
 ```text
@@ -345,6 +379,8 @@ REASONER_CH7_START = P321_GOOGLE_BOOKS
 REASONER_NEXT_SECTION_START = P432_GOOGLE_BOOKS
 REASONER_APPROX_11_2_16_SPAN = P321_431_BOUNDARY_INFERENCE
 REASONER_BODY = HOLD
+REASONER_WEB_P434_AS_11_2 = REJECTED_IMPOSSIBLE_PAGE_LABEL
+REASONER_WEB_P444_AS_11_8 = REJECTED_IMPOSSIBLE_PAGE_LABEL
 
 GORMAN_2025 = VERIFIED_CURRENT_EERDMANS_COMMENTARY
 GORMAN_EVIDENCE_CLASS = THEOLOGICAL_PASTORAL_MISSIONAL
