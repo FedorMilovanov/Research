@@ -1,7 +1,7 @@
-# 1 Коринфянам 11:2–16 — current authority pointer after citation quarantine + direct-source + quotation stress test
+# 1 Коринфянам 11:2–16 — current authority pointer after citation quarantine + direct-source + corpus/visual controls
 
 **Дата:** 2026-08-10  
-**Статус:** `LATEST-AUTHORITY-POINTER / CITATION-QUARANTINE / DIRECT-SOURCE-RECENT-SCHOLARSHIP / QUOTATION-STRESS-TEST / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `LATEST-AUTHORITY-POINTER / CITATION-QUARANTINE / DIRECT-SOURCE / QUOTATION-STRESS / PRIMARY-CORPUS / MULTILINGUAL / VISUAL-ARCHAEOLOGY / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## Read order
 
@@ -13,14 +13,17 @@
 6. **`00ZZZZZZZZZZZZZZZZZZZZZ_MONTIER_SHAVED_HEAD_SOCIAL_MYTH_CONTROL_2026-08-10.md`** — direct open-fulltext control against the shaved-prostitute/temple-prostitute folklore claim.
 7. **`00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`** — stop-layer for fabricated/mis-cited fresh-source claims: P.Oxy. 5575, Kirk JBL 142.3, Ehrensperger/Al-Suadi ritual chapters, Chrysostom false quote, DeConick JBL/chapter attribution, Yung Suk Kim, Petterson and Punt bibliographic controls.
 8. **`00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`** — direct publisher/institutional source pass; Nõmmik access-map separation, Berglund 2025 provenance, Hooker/Fitzmyer Cambridge controls, Newberry 2019, Marshall 2019, Costa 2023/24, Salés 2024, Chadwick 2022 and Callon 2024.
-9. **`00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`** — current adversarial control for the large quotation/refutation family; full Costa argument stress-tested against `διὰ τοῦτο`, NA28 punctuation, v3 semantics, v16, Salés boundary, Marshall modified-tradition model and Newberry continuity model.
-10. Claim-specific primary/adversarial audits listed in the current registry.
+9. **`00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`** — current adversarial control for the large quotation/refutation family; Costa body stress-tested against `διὰ τοῦτο`, punctuation, v3 semantics, v16, Salés boundary, Marshall modified-tradition model and Newberry continuity model.
+10. **`00ZZZZZZZZZZZZZZZZZZZZZZZZ_PAULINE_QUOTATION_SLOGAN_CORPUS_CONTROL_2026-08-10.md`** — same-letter primary-corpus control: explicit opponent speech (1:12; 15:12), letter-source frame (7:1), disputed short slogans (6:12–13; 8:1/4; 10:23), quotation-boundary methodology, and no close verified analogue for a 6–8 verse hostile quotation with internal `γάρ` chain + `διὰ τοῦτο` pivot.
+11. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md`** — non-English/current control: Czech Hamplová 2025 full thesis, Portuguese Costa/Chadwick context, Swedish Berglund, German Lumesberger-Loisl 2025 bibliographic HOLD, plus Nicole Francis as a distinct recent model.
+12. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`** — object-level visual archaeology and rights: Corinth S-1116 Augustus `capite velato`, S-1088 disputed Julio-Claudian veiled male, ASCSA *Corinth XXII*, and CC BY-SA image candidates.
+13. Claim-specific primary/adversarial audits listed in the current registry.
 
-The quarantine/direct-source/quotation layers **do not supersede core claim grades** because no core grade changed. They supersede conflicting raw-agent `verified/gold/fully verified` labels, improve source ownership/provenance, and distinguish scholarly status from textual fit.
+These later layers **do not supersede core claim grades** because no core grade changed. They supersede conflicting raw-agent `verified/gold/fully verified` labels, improve source ownership/provenance, separate scholarly status from textual fit, and add archaeological/image-rights controls.
 
 ---
 
-## Current verified source-hygiene controls
+## Current verified source-hygiene and acquisition controls
 
 ```text
 FEE_FORMAL_2014_LABEL = REVISED_EDITION
@@ -44,6 +47,7 @@ NOMMIK_MODEL_DESCRIPTION = A_AUTHOR/INSTITUTIONAL_DESCRIPTION
 NOMMIK_HIDDEN_EVENTS = C_SERIOUS_RECONSTRUCTION
 NOMMIK_BACKGROUND_SUBSTRATE != NOMMIK_HIDDEN_TRIGGER
 NOMMIK_EXACT_PAGE_LOCATOR = EDITION_PIN_REQUIRED
+NOMMIK_DIVA_FULLTEXT_ROUTE = OFFICIALLY_ADVERTISED_BUT_RUNTIME_CACHE_HOLD
 BERGLUND_2025_PEER_REVIEWED = VERIFIED_INSTITUTIONAL
 BERGLUND_CITES_NOMMIK_81_150 = VERIFIED_DIRECT_JOURNAL_PAGE
 BERGLUND_AGENT_BODY_LEVEL_ENDORSEMENTS = LOCATOR_HOLD
@@ -60,6 +64,7 @@ NEWBERRY_1_ESDRAS_4_INTERTEXT = DIRECT_CAMBRIDGE_ABSTRACT
 NEWBERRY_V10_WOMAN_AUTHORITY = DIRECT_CAMBRIDGE_ABSTRACT
 MARSHALL_TWO_MODIFIED_TRADITIONS = DIRECT_BRILL_ABSTRACT
 MARSHALL_MODEL != LARGE_QUOTATION_MODEL
+
 COSTA_VV4_9_UNENDORSED_QUOTATION = REAL_B1_LINGUISTIC_PROPOSAL
 COSTA_BODY_ARGUMENT = SUBSTANTIALLY_READ_SAME_DOI_CC_BY_OBJECT
 COSTA_DIA_TOUTO_V10 = MAJOR_DISCOURSE_BURDEN
@@ -68,9 +73,29 @@ SALES_2024_ANDROPRIMACY_QUOTATION_MODEL = REAL_B1_ALTERNATIVE
 SALES_BOUNDARY = VV3_10
 COSTA_BOUNDARY = VV4_9
 LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
-LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW_TO_C_LOW
+LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
 LARGE_QUOTATION_LEADING_MODEL = false
-CHADWICK_2022_HAIR_ONLY = REAL_B1_ALTERNATIVE
+
+PAUL_EXPLICIT_OPPONENT_SPEECH_FRAMES = A_TEXT_1COR1_12_15_12
+PAUL_LETTER_SOURCE_FRAME = A_TEXT_1COR7_1
+UNMARKED_SLOGAN_CANDIDATES = REAL_BUT_BOUNDARIES/OWNERSHIP_DISPUTED
+SHORT_SLOGAN_PARALLEL != LONG_QUOTATION_PROOF
+CLOSE_6_8_VERSE_HOSTILE_QUOTE_ANALOGUE_IN_INSPECTED_1COR_CORPUS = NOT_FOUND
+ABSENCE_OF_QUOTATIVE_FORMULA_ALONE = NOT_DISPOSITIVE
+
+HAMPLOVA_2025_FULL_CZECH_THESIS = DIRECT_INSTITUTIONAL_OBJECT
+HAMPLOVA_V10_ACTIVE_WOMAN = CURRENT_RECEPTION_SUPPORT_NOT_NEW_LEXICAL_PROOF
+HAMPLOVA_CITES_GARLAND_2003_NOT_2025 = EDITION_FIREWALL
+FRANCIS_ROMAN_ANALOGY_NOT_DRESS_CODE = REAL_DISTINCT_RECENT_MODEL
+LUMESBERGER_LOISL_2025_GERMAN_CHAPTER = BIBLIOGRAPHIC_VERIFIED_CONTENT_HOLD
+
+CORINTH_S1116_AUGUSTUS_CAPITE_VELATO = A2_OBJECT/PROVENANCE
+CORINTH_S1116_FINDSPOT = JULIAN_BASILICA
+CORINTH_S1088_VEILED_JULIO_CLAUDIAN = STRONG_OBJECT_CONTROL
+CORINTH_S1088_PERSON_IDENTIFICATION = DISPUTED
+ASCSA_CORINTH_XXII_2022 = CURRENT_ASSEMBLAGE_CONTROL
+S1116_COMMONS_IMAGE = CC_BY_SA_4_0_PUBLICATION_CANDIDATE
+S1088_COMMONS_IMAGE = CC_BY_SA_4_0_PUBLICATION_CANDIDATE_WITH_ID_QUALIFICATION
 
 POXY_84_5575_1COR11_PARALLEL = REJECTED_FABRICATION
 POXY_5575_ACTUAL = VOL_87_2023_SAYINGS_OF_JESUS
@@ -126,7 +151,7 @@ D_C_LOW = CURRENT_TEXTUAL_FIT_GRADE
 NOT = CLAIM_THAT_NO_SERIOUS_SCHOLAR_ADVOCATES_IT
 ```
 
-Shoemaker/Costa/Salés establish a genuine published minority family. Marshall and Newberry demonstrate competing continuity models that explain the same tensions without a speaker change.
+Shoemaker/Costa/Salés establish a genuine published minority family. The same-letter corpus audit does not verify a close long-block parallel, while Marshall/Newberry demonstrate competing continuity models explaining the tension without speaker change.
 
 ---
 
@@ -140,20 +165,22 @@ Ciampa/Rosner PNTC 2010: pp.503–540 + notes
 Nõmmik DTH 9: full DiVA object + edition-pinned locators
 ```
 
-Costa is no longer merely an abstract-only target: the published same-DOI CC BY body was substantially inspected and the model now has a dedicated adversarial delta. Exact official-publisher PDF-byte custody can still be improved, but it is not needed to justify the current no-promotion verdict.
+Costa is no longer merely an abstract-only target: the same-DOI CC BY body was substantially inspected and the model has dedicated adversarial and same-letter corpus controls.
 
 ## Next agent-side high-value targets
 
 1. Garland 2025 complete pp.468–493 + notes.
 2. Ciampa/Rosner pp.503–540 + notes; replace quote chains with direct book text.
-3. Nõmmik DiVA full object, especially the transition from Roman evidence to hidden-event reconstruction and v10/angels.
-4. Direct discourse-corpus test of unmarked Pauline quotations comparable in length to the proposed vv4–9 / vv3–10 spans.
-5. Hooker 1964 complete article if a lawful direct route opens; Cambridge apparatus already pinned.
-6. Gundry-Volf full chapter.
-7. Olson 2008 / Fantham 2008 exact Roman female dress/portrait sections.
-8. DeConick *The Gnostic New Age*, ch.4 direct read only to test whether 1 Cor 11 is actually discussed.
-9. Punt, “Pauline Bodies and South African Bodies” direct read before any 1 Cor 11-specific attribution.
-10. Rights-safe visual ledger for capite-velato statues, reliefs and coins with museum/archive provenance.
+3. Nõmmik DiVA full object if runtime route opens; current official fulltext link remains cache-blocked.
+4. Direct full Watson & Culy criteria/1 Cor 11 discussion if lawfully accessible.
+5. Technical discourse corpus for `γάρ`, `καὶ γάρ`, `διὰ τοῦτο`, `πλὴν` in polyphonic/quoted discourse.
+6. Early reception control: whether any premodern reader independently perceived a Corinthian speaker boundary in vv3–10/vv4–9.
+7. Gundry-Volf full chapter.
+8. Olson/Fantham exact Roman female dress/portrait sections.
+9. DeConick *The Gnostic New Age*, direct chapter read only.
+10. Punt, “Pauline Bodies and South African Bodies,” direct read before 1 Cor 11-specific attribution.
+11. Expand rights-safe visual ledger to coins/reliefs and respectable female portraiture without turning images into dress-frequency statistics.
+12. Continue multilingual 2025–2026 search; bibliographic hits stay HOLD until content is directly checked.
 
 Do not ask the user for these while agent-side lawful access routes remain available.
 
@@ -169,6 +196,8 @@ RECENCY != AUTHORITY
 PEER_REVIEW != CORRECTNESS
 PUBLISHER_ABSTRACT != FULL_ARTICLE
 NUMBER_OF_ADVOCATES != TEXTUAL_PROOF
+VISUAL_OBJECT != EXEGETICAL_PROOF
+OBJECT_METADATA != IMAGE_RIGHTS
 DO_NOT_REQUEST_FROM_USER_IF_AGENT_CAN_ACCESS = true
 PRODUCT_WRITE = false
 UI_IMPLEMENTATION = false
