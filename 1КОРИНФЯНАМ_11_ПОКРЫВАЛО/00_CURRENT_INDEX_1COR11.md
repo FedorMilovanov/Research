@@ -70,7 +70,29 @@ EXACT_NONBIBLICAL_HEAD_PHRASE = NOT_FOUND_IN_BOUNDED_SEARCH
 
 - [`dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`](dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md)
 
-Owns Tryphosa, Eirene, Cleopatra, Didyma 235B, Agatho correction, Miletos 481, Didyma visual-honour culture, Delphi, archaic Didyma head objects and the bounded `prophetess + head/hair` search.
+Owns:
+
+```text
+Tryphosa / Eirene / Cleopatra
+Didyma 235B προφητίσκη firewall
+Agatho correction
+Miletos 481 female divine-manifestation channel
+Potta TAM V.1 535 external prophetis control
+Ammias TAM V,2 1055 Thyateira priestess/oracle-function control
+Ammia of Philadelphia early-Christian prophetess control
+Didyma visual-honour culture
+Delphi negative control
+archaic Didyma head objects
+bounded prophetess + head/hair search
+```
+
+Identity firewall:
+
+```text
+AMMIAS_THYATEIRA != AMMIA_PHILADELPHIA
+PRIESTESS_ORACLE_FUNCTION != DIRECT_PROPHETIS_TITLE
+ROLE != HEAD_CODE
+```
 
 Current bounded result:
 
@@ -84,21 +106,12 @@ GLOBAL_NONEXISTENCE = NOT_CLAIMED
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MASSEY_2015_ANDANIA_LYCOSURA_EPIGRAPHY_FULLTEXT_AUDIT_2026-08-10.md`
 
-It now consolidates:
+Owns Massey 2015, direct PHI/CGRN Andania, the date dispute, white `pilos` + separate hair/adornment rules, direct Lycosura, Voutiras, Karataş and the Dittenberger `[τοὺς ἄνδρας]` firewall.
 
 ```text
-MASSEY_2015_FULLTEXT
-ANDANIA_PHI_CGRN_DIRECT_TEXT
-ANDANIA_WHITE_PILOS + WOMEN_HAIR_ADORNMENT_RULES
-ANDANIA_DATE_DISPUTE_91BCE_VS_C23CE
-LYCOSURA_DIRECT_TEXT
-VOUTIRAS_1999
-KARATAS_2020
-DITTENBERGER_TOUS_ANDRAS_FIREWALL
 LYCOSURA_EXACT_GENDER_MAPPING = OPEN
+HAIR_AND_HEADWEAR_DISTINCT_REGULATORY_AXES = A_B_HIGH_COMPARATIVE
 ```
-
-The former separate Andania and Lycosura correction overlays were absorbed and removed.
 
 ---
 
@@ -138,7 +151,7 @@ PORTRAIT_SAMPLE != POPULATION_CENSUS
 - `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_UNBOUND_HAIR_PRIMARY_SOCIAL_CORPUS_2026-08-10.md`
 
-Andania/Lycosura ritual hair/headwear material is now owned by the single epigraphy owner in section 4 rather than separate overlays.
+Andania/Lycosura ritual hair/headwear material is owned by the single epigraphy owner in section 4.
 
 ---
 
@@ -153,7 +166,7 @@ Andania/Lycosura ritual hair/headwear material is now owned by the single epigra
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_ANGEL_PRIMARY_TEXT_DELTA_2026-08-10.md`
 
-Now owns Paczkowski’s specialist map plus primary ownership distinctions for Tertullian, Chrysostom, Ambrosiaster, Severian and the cross-map to author-specific owners.
+Owns Paczkowski’s specialist map plus primary ownership distinctions for Tertullian, Chrysostom, Ambrosiaster, Severian and cross-links to author-specific owners.
 
 ### Other current patristic owners
 
@@ -161,8 +174,6 @@ Now owns Paczkowski’s specialist map plus primary ownership distinctions for T
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CLEMENT_IRENAEUS_EARLY_ANGEL_RECEPTION_PRIMARY_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CATENA_CRAMER_ATTRIBUTION_FIREWALL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGELS_ATTRIBUTION_RESOLUTION_2026-08-10.md`
-
-The mixed late-antique/patristic delta was split into the proper patristic and female-visual owners and removed.
 
 ### PG/OCR workflow
 
@@ -177,13 +188,15 @@ OCR != SOURCE_IMAGE_AUTHORITY
 
 # 8. Recent / multilingual scholarship
 
-### Radar / source cards
+### Radar / acquisition controls
 
 - `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_REASONER_GORMAN_2025_COMMENTARIES.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md`
+
+The three acquisition domains remain distinct: broad direct-source acquisition, multilingual control and current commentary/archaeology acquisition.
 
 ### Gundry-Volf / Gielen / Hao Li / Standhartinger owner
 
@@ -196,21 +209,28 @@ LI_HAO = 2023_ORIGINAL / 2025_REPOST_BLOCKED
 STANDHARTINGER = 2002_ARTICLE / 2003_BOOK / 2025_PLATFORM_DATE_BLOCKED
 ```
 
+### Drake evergreen owner
+
+- [`dossiers/DRAKE_VEILING_MATERIALITY_SOURCE_CONTROL.md`](dossiers/DRAKE_VEILING_MATERIALITY_SOURCE_CONTROL.md)
+
+Owns:
+
+```text
+CAMBRIDGE_2025_BOOK_AND_CH2_PP70_89
+DIRECT_PUBLISHER_CHAPTER_SUMMARY
+NBN_2026_DIRECT_AUTHOR_INTERVIEW
+VEILING_MULTIVALENCE
+OUTER_GARMENT_VS_LATER_SEPARATE_VEIL_MATERIALITY
+HIDDEN_CORINTH_EVENT_EPISTEMIC_CAUTION
+SOURCE_TYPE_AND_DATE_FIREWALL
+```
+
+Formal `ἐξουσία` is delegated to the exousia dossier; Roman visual evidence remains with the visual owners. The two earlier Drake successor files were absorbed and removed.
+
 ### Quotation/refutation
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZ_PAULINE_QUOTATION_SLOGAN_CORPUS_CONTROL_2026-08-10.md`
-
-### Drake source-type separation
-
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2025_EXOUSIA_EPI_GEN_FRESHNESS_CONTROL_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2026_AUTHOR_INTERVIEW_MATERIALITY_CONTROL_2026-08-10.md`
-
-```text
-PUBLISHER_SUMMARY != FULL_BOOK_BODY
-AUTHOR_INTERVIEW != PEER_REVIEWED_BOOK_BODY
-REPOST_DATE != ORIGINAL_PUBLICATION_DATE
-```
 
 ---
 
@@ -224,6 +244,7 @@ GORMAN_2025_EERDMANS = P1_THEOLOGICAL_SECTION_HOLD
 THISELTON_2000_FULL_SECTION = HOLD
 FEE_REVISED_2014_FULL_SECTION = HOLD
 CIAMPA_ROSNER_2010_DETAIL = HOLD
+DRAKE_2025_CH2_PP70_89_BODY = HOLD
 ```
 
 ---
