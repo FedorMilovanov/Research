@@ -83,13 +83,30 @@ Future Tryphosa / Eirene / Didyma / Delphi / Claros / ritual head-hair discoveri
 
 # 4. `ἐξουσία` and documentary Greek
 
-Current direct-control family:
+**Evergreen controlling dossier:**
 
+- [`dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`](dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md)
+
+It now owns the current evidence map for:
+
+```text
+V10 ἐξουσίαν / κάλυμμα textual control
+ἐξουσίαν ἔχειν active semantic direction
+exact vs near ἐξουσία + ἐπί parallels
+Fendel documentary corpus
+female Roman documentary/epigraphic right-bearers
+bounded search for an exact extra-biblical head parallel
+PKNT p390 / Fendel XLSX acquisition holds
+```
+
+Historical provenance / receipts remain:
+
+- `00ZZZZZZZZZZZZZZZZZZZZ_V10_EXOUSIA_KALYMMA_VERSIONAL_PATRISTIC_TEXTUAL_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_REAL_PAPYROLOGICAL_EPIGRAPHIC_EXOUSIA_ECHEIN_CORPUS_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_FEMALE_DOCUMENTARY_EXOUSIA_RIGHTS_ADDENDUM_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2025_EXOUSIA_EPI_GEN_FRESHNESS_CONTROL_2026-08-10.md`
 
-Current core:
+Current core remains claim-registry-owned:
 
 ```text
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
@@ -97,14 +114,19 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 ```
 
-Syntax guardrail:
+Current formal guardrail:
 
 ```text
-ἐξουσία + ἐπί + genitive = DIRECTLY ATTESTED IN BIBLICAL GREEK
-UNCOMMON != UNATTESTED
+AUTHORITY_OVER_DOMAIN_WITH_EXOUSIA = WELL_ATTESTED_BIBLICAL_GREEK
+REV_14_18 = EXACT ἔχω + ἐξουσία + ἐπί/gen CONTROL
+REV_20_6 = SAME LEXEMES/RELATION WITH FRONTED ἐπί/gen
+REV_2_26 + DAN_OG_3_97 = δίδωμι, NOT ἔχω
+LUKE_9_1 = ἐπί + ACCUSATIVE
+SIR_17_2 = GENITIVE PHRASE CONTAINING INTERNAL ἐπί, NOT AN EXACT DIRECT COMPLEMENT
+UNCOMMON_IN_DOCUMENTARY_PAPYRI != UNATTESTED_OR_UNGRAMMATICAL
 ```
 
-Exact nonbiblical `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` remains `NOT_FOUND_IN_BOUNDED_SEARCH`; not a global nonexistence claim.
+Exact nonbiblical `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` remains `NOT_FOUND_IN_BOUNDED_SEARCH`; this is not a global nonexistence claim.
 
 ---
 
