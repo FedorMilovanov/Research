@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — Roman Corinth visual archaeology / `capite velato` custody ledger
 
 **Дата:** 2026-08-10  
-**Статус:** `VISUAL-ARCHAEOLOGY / CURRENT-ASSEMBLAGE / OBJECT-PROVENANCE / RIGHTS-CUSTODY / CHECKSUM-PINNED / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `VISUAL-ARCHAEOLOGY / CURRENT-ASSEMBLAGE / OBJECT-PROVENANCE / RIGHTS-CUSTODY / CHECKSUM-PINNED / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority rule
 
@@ -26,6 +26,7 @@ PHOTO_FILENAME != PERSON_IDENTIFICATION_CERTAINTY
 ARCHAEOLOGY_OF_CORINTH != SPECIFIC_1COR11_SUPPORT_AUTOMATICALLY
 ROMAN_CAPITE_VELATO_BACKGROUND = A
 V4_EXACT_CAPITE_VELATO = B_C
+TERMINAL_EXTERNAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 ```
 
 ---
@@ -140,14 +141,12 @@ COMMONS_FILENAME_NERO != CERTAIN_PERSON_IDENTIFICATION
 
 # 3. Direct archaeology literature chain
 
-## 3.1 Cynthia L. Thompson 1988 — direct local portraiture control
+## 3.1 Cynthia L. Thompson 1988
 
 > Cynthia L. Thompson, “Hairstyles, Head-Coverings, and St. Paul: Portraits from Roman Corinth,” *The Biblical Archaeologist* 51.2 (June 1988): 99–115. DOI `10.2307/3210030`.
 
 Direct publisher route:
 - https://www.journals.uchicago.edu/doi/10.2307/3210030
-
-The official abstract explicitly states that discussion of 1 Cor 11:2–16 had paid too little attention to relevant archaeological evidence and that material excavated at Corinth could clarify the historical setting.
 
 ```text
 THOMPSON_1988 = VERIFIED_DIRECT_ARCHAEOLOGY_B1
@@ -156,31 +155,29 @@ THOMPSON_SCOPE = ROMAN_CORINTH_PORTRAITURE_AND_1COR11
 
 Do not overstate a specific object-level conclusion beyond the directly read body.
 
-## 3.2 David W. J. Gill 1990 — Roman-colonial portraiture response
+## 3.2 David W. J. Gill 1990
 
 Direct open-fulltext route:
 - https://www.tyndalebulletin.org/article/30525-the-importance-of-roman-portraiture-for-head-coverings-in-1-corinthians-11-2-16
 
-Gill explicitly responds to Thompson and stresses that the Corinthian correspondence should be read against a Roman-colonial rather than merely generic Greek backdrop.
-
-Gill’s older catalogue usage also helps bridge Johnson nos.134/137 to the modern S-1116/S-1088 object tradition.
+Gill explicitly responds to Thompson and stresses that the Corinthian correspondence should be read against a Roman-colonial rather than merely generic Greek backdrop. His older catalogue usage also helps bridge Johnson nos.134/137 to the modern S-1116/S-1088 object tradition.
 
 ```text
 GILL_1990 = DIRECT_OPEN_ROMAN_PORTRAITURE_CONTROL
 GILL_ROMAN_COLONIAL_CONTEXT = STRONG_PUBLISHED_BACKGROUND
 ```
 
-## 3.3 ASCSA *Corinth XXII* 2022 — current assemblage owner
+## 3.3 ASCSA *Corinth XXII* 2022
 
 > Paul D. Scotton, Catherine de Grazia Vanderpool, Carolynn Roncaglia, *The Julian Basilica: Architecture, Sculpture, Epigraphy*, *Corinth* XXII (ASCSA, 2022).
-
-This current monograph is preferred over treating an isolated legacy photograph/caption as the complete archaeological context.
 
 ```text
 ASCSA_CORINTH_XXII_2022 = CURRENT_JULIAN_BASILICA_ASSEMBLAGE_CONTROL
 ```
 
-## 3.4 David A. deSilva 2025 — current visual synthesis acquisition target
+This current monograph is preferred over treating an isolated legacy photograph/caption as the complete archaeological context.
+
+## 3.4 David A. deSilva 2025 — current synthesis, terminal external body access
 
 Baker Academic verifies:
 
@@ -196,25 +193,17 @@ Published TOC/review control places:
 ROMAN_CORINTH = PP126_156
 ```
 
-Current preview/search has **not** established that these pages specifically discuss:
-
-```text
-1COR11_2_16
-S1116
-S1088
-JULIAN_BASILICA_HEAD_COVERING_ICONOGRAPHY
-```
-
-Therefore:
+The official/public routes checked do not expose pp.126–156 as readable direct body and therefore do not establish that deSilva specifically discusses 1 Cor 11:2–16, S-1116, S-1088, or Julian-Basilica head-covering iconography.
 
 ```text
 DESILVA_2025_ROMAN_CORINTH_CHAPTER = VERIFIED
-DESILVA_2025_1COR11_SPECIFIC_USE = LOCATOR_HOLD
-DESILVA_2025_S1116_SPECIFIC_USE = LOCATOR_HOLD
-DESILVA_2025 = P1_CURRENT_VISUAL_ARCHAEOLOGY_TARGET
+DESILVA_2025_ROMAN_CORINTH_PP126_156 = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
+DESILVA_2025_1COR11_SPECIFIC_USE = NOT_DIRECTLY_VERIFIED
+DESILVA_2025_S1116_SPECIFIC_USE = NOT_DIRECTLY_VERIFIED
+DESILVA_2025 = CURRENT_VISUAL_SYNTHESIS_IDENTITY_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 ```
 
-Do not cite deSilva as confirmation of the exact v4 `capite velato` reading until the relevant pages are directly read.
+This is nonblocking for the local-object case because S-1116/S-1088 and the Julian Basilica are owned independently through ASCSA/current archaeology. Do not cite deSilva as confirmation of the exact v4 `capite velato` reading until those pages are directly read.
 
 ---
 
@@ -227,7 +216,7 @@ THOMPSON_1988_LOCAL_PORTRAITS
 -> OSTER_1988_1992_ROMAN_RITUAL_ARCHAEOLOGY
 -> GILL_1990_ROMAN_PORTRAITURE_RESPONSE
 -> ASCSA_CORINTH_XXII_2022_CURRENT_ASSEMBLAGE
--> DESILVA_2025_CURRENT_VISUAL_SYNTHESIS_TARGET
+-> DESILVA_2025_CURRENT_VISUAL_SYNTHESIS
 ```
 
 This is a publication/interpretation chain, not five independent archaeological objects.
@@ -235,41 +224,10 @@ This is a publication/interpretation chain, not five independent archaeological 
 ```text
 ARCHAEOLOGICAL_PUBLICATION_STAGE != NEW_OBJECT
 CURRENT_SYNTHESIS != INDEPENDENT_FINDSPOT
-```
-
-Minimum strengthened background:
-
-```text
 ROMAN_CAPITE_VELATO_BACKGROUND = A
 CORINTH_LOCAL_ROMAN_ICONOGRAPHIC_BACKGROUND = A2_STRONG
-```
-
-Not newly proved:
-
-```text
-V4_EXACT_CAPITE_VELATO = A
-CHRISTIAN_MEN_WERE_IMITATING_IMPERIAL_CULT = true
-EXACT_CORINTH_TRIGGER = solved
-```
-
-Current remains:
-
-```text
 V4_EXACT_CAPITE_VELATO = B_C
 EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
-```
-
----
-
-# 5. Archaeological meaning of S-1116 / S-1088
-
-The pair is stronger for local background than generic Roman examples because both belong to Roman Corinth’s Julian Basilica/forum environment.
-
-Safe:
-
-```text
-CAPITE_VELATO_ICONOGRAPHY_PRESENT_IN_ROMAN_CORINTH = VERY_STRONG
-CORINTH_LOCAL_VISUAL_BACKGROUND = A2_STRONG
 ```
 
 Unsafe:
@@ -282,7 +240,7 @@ CHRISTIAN_MEN_WERE_COPYING_THE_IMPERIAL_STATUES = UNPROVED
 
 ---
 
-# 6. Legacy catalogue mapping
+# 5. Legacy catalogue mapping
 
 Older scholarship uses Franklin P. Johnson, *Corinth IX.1* (1931) numbers.
 
@@ -309,7 +267,7 @@ CURRENT_PERSON_ID = DISPUTED
 
 ## Peters 2013 dissertation bridge — p.282 narrowed
 
-Current Peters source genealogy identifies the exact work:
+Current source genealogy identifies:
 
 > Janelle Lynne Peters, “Leveling the Playing Field: Egalitarian Veils and Athletic Metaphors in 1 Corinthians.” PhD dissertation, Emory University, 2013.
 
@@ -324,23 +282,21 @@ CH7_VEILING_THE_BODY_OF_CHRIST = starts_p264
 CONCLUSION = starts_p301
 ```
 
-Therefore p.282 is deterministically **inside Peters’ veiling chapter**, not an unlocated page number.
-
-Later scholarship page-specifically cites Peters p.282 in connection with a Corinthian statue and F. P. Johnson, *Corinth IX.1*, pp.70–72. That downstream citation is useful as an acquisition locator but does not replace Peters’ own page.
+Therefore p.282 is deterministically **inside Peters’ veiling chapter**, not an unlocated page number. Later scholarship page-specifically cites Peters p.282 in connection with a Corinthian statue and F. P. Johnson, *Corinth IX.1*, pp.70–72. That downstream citation is only an acquisition locator.
 
 ```text
 PETERS_2013_DISSERTATION_OBJECT = DIRECT_INSTITUTIONAL_METADATA_CLOSED
 PETERS_2013_P282 = CH7_VEILING_BODY_OF_CHRIST_DETERMINISTIC_PAGE_TARGET
 PETERS_2013_P282_CORINTH_STATUE = SECONDARY_PAGE_LOCATOR
-PETERS_2013_P282_DIRECT_AUTOPSY = HOLD_RUNTIME_PRIMARY_PDF_ENDPOINT
-PETERS_P282_OBJECT_IDENTIFICATION = VERIFY_AGAINST_ASCSA_JOHNSON_CHAIN
+PETERS_2013_P282_DIRECT_AUTOPSY = TERMINAL_RUNTIME_PRIMARY_PDF_ENDPOINT_HOLD_CURRENT_ROUTE
+PETERS_P282_OBJECT_IDENTIFICATION = NOT_PROMOTED_BEYOND_ASCSA_JOHNSON_CHAIN
 ```
 
-Do not infer a modern inventory number or person identification from the downstream p.282 citation until Peters’ page itself is read. The archaeological objects remain owned by this ASCSA ledger, not by a secondary Peters citation.
+Do not infer a modern inventory number or person identification from the downstream p.282 citation until Peters’ page itself is read.
 
 ---
 
-# 7. Duplicate-counting firewall
+# 6. Duplicate-counting firewall
 
 ```text
 JOHNSON_NO134
@@ -366,7 +322,7 @@ MODERN_ASCSA_INVENTORY_ASSEMBLAGE > LEGACY_PERSON_LABEL_FOR_CURRENT_CAPTIONING
 
 ---
 
-# 8. Image-custody workflow
+# 7. Image-custody workflow
 
 ```text
 1. fetch original Commons binary
@@ -386,7 +342,7 @@ LICENSE != OBJECT_PROVENANCE
 
 ---
 
-# 9. Preferred visual pair
+# 8. Preferred visual pair
 
 ### Anchor
 **Augustus S-1116**
@@ -408,29 +364,35 @@ Preserve both even if the exact v4 reconstruction changes.
 
 ---
 
-# 10. Acquisition queue
+# 9. Final acquisition disposition
 
 ```text
-P1 DESILVA_2025_ROMAN_CORINTH_PP126_156 = DIRECT_BODY_HOLD
-P1 PETERS_2013_EMORY_QR46R105V_P282 = DIRECT_PAGE_HOLD
+DESILVA_2025_ROMAN_CORINTH_PP126_156 = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
+PETERS_2013_EMORY_QR46R105V_P282 = TERMINAL_RUNTIME_PRIMARY_PDF_ENDPOINT_HOLD_CURRENT_ROUTE
+VISUAL_ARCHAEOLOGY_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_ROUTES = EMPTY
+NEW_AUTHORIZED_OR_RENDERABLE_ROUTE = REOPEN_ONLY_TRIGGER
 ```
+
+`TERMINAL_*_HOLD` means the exact source/body/image remains unverified; it prevents repeating exhausted routes and does not manufacture evidence.
 
 ---
 
-# 11. Result
+# 10. Result
 
 ```text
 CORE_GRADE_REVERSALS = 0
 THOMPSON_1988_DIRECT_PUBLISHER_CONTROL = CLOSED
 GILL_1990_DIRECT_OPEN_CONTROL = CLOSED
 ASCSA_CORINTH_XXII_2022 = CURRENT_ASSEMBLAGE_OWNER
-DESILVA_2025 = CURRENT_SYNTHESIS_TARGET / SPECIFIC_LOCATOR_HOLD
+DESILVA_2025 = CURRENT_SYNTHESIS_IDENTITY_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 PETERS_2013_DISSERTATION_OBJECT = DIRECT_INSTITUTIONAL_METADATA_CLOSED
-PETERS_2013_P282 = DETERMINISTIC_CH7_PAGE_TARGET / DIRECT_PAGE_HOLD
+PETERS_2013_P282 = DETERMINISTIC_CH7_PAGE_TARGET / DIRECT_PAGE_TERMINAL_RUNTIME_ENDPOINT_HOLD
 CORINTH_S1116 = SECURE_LOCAL_CAPITE_VELATO_ANCHOR
 CORINTH_S1088 = SECURE_LOCAL_VEILED_MALE_OBJECT_PERSON_ID_OPEN
 IMAGE_RIGHTS_AND_CHECKSUMS = PINNED
 ROMAN_CAPITE_VELATO_BACKGROUND = A
 V4_EXACT_CAPITE_VELATO = B_C
+VISUAL_ARCHAEOLOGY_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_ROUTES = EMPTY
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
+```
