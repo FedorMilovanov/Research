@@ -59,6 +59,7 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #22 [Fantham 2008]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview id bYCCpqdgSAgC, pp.158–171 core claims; full body still external).
    - **Item #23 [Olson 2008]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview id l9wdU6ysZgEC; pp.25, 33–36, 51, 113; full body still external).
    - **Item #34 [Apphe]:** Önder 2022 FULL BODY READ 2026-08-10 — no Apphe/CIG 3796 discussion (comparison target inapplicable); CIG vol.4 preview id TU5FwAcnR9cC indices-only; printed page external.
+   - **Item #28 [Fendel EXOUSIAN.xlsx]:** `DATASET_CONTENT_READ_DIRECT` (2026-08-10, full 9-chunk table scan via ORA file render; three Roman-period PP rows enumerated: BGU.7.1655 ἀπό+gen, P.Oxy.8.1120 κατά+gen, P.Oxy.9.1205 εἰς+acc; **no ἐπί+genitive among them**).
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
@@ -487,8 +488,14 @@ DOI `10.5287/ora-dqmbwrvj6`.
 **Mandatory extraction:** identify the **three Roman-period prepositional-phrase rows** and record the actual prepositions/cases. Do not infer that any are `ἐπί + genitive` before reading rows.
 
 ```text
-STATUS = DATASET_FILE_OBJECT_CLOSED / XLSX_BINARY_TERMINAL_ORA_TRANSPORT_HOLD
-VERIFIED_RUNTIME_ROUTE = https://ora.ox.ac.uk/objects/uuid:28406bed-423d-4801-9691-d5d7caa94e2a/files/sd217qr12q (EXOUSIAN.xlsx, 51.7 KB, file id sd217qr12q)
+STATUS = DATASET_CONTENT_READ_DIRECT_2026_08_10 / THREE_ROMAN_PP_ROWS_ENUMERATED / XLSX_BINARY_ORIGINAL_TERMINAL_ORA_TRANSPORT_HOLD
+VERIFIED_RUNTIME_ROUTE = https://ora.ox.ac.uk/objects/uuid:28406bed-423d-4801-9691-d5d7caa94e2a/files/sd217qr12q (EXOUSIAN.xlsx, 51.7 KB; full 9-chunk table scan, "FINISHED 03 Mar 2023")
+ROMAN_PERIOD_PP_ROWS_EXOUSIAN_ECHEIN =
+  1) BGU.7.1655 (RG, Arsinoites, protocoll): "οὐδεὶς αὐτοῦ ἐξουσίαν ἕξει ἀπὸ τῶν κληρονόμων μου" — ἀπό + GENITIVE
+  2) P.Oxy.8.1120 (RG, Oxyrhynchos, petition): "μὴ ἔχων κατ' αὐτῆς ἐξουσίαν" — κατά + GENITIVE
+  3) P.Oxy.9.1205 (RG, Oxyrhynchos, contract): "μηδεμίαν τε ἐξουσίαν ἔχειν εἰς αὐτοὺς ἀπὸ τῆς ἐνεστώσης ἡμέρας" — εἰς + ACCUSATIVE
+NONE_IS_EPI_GENITIVE = TRUE (no ἐπί + genitive among the three Roman-period PP rows)
+NON_SV_PP_ROWS_NOT_COUNTED = P.Oxy.27.2474 (ὑπό+acc), P.Oxy.43.3126 (ἐπί+acc), P.Oxy.46.3311 (ὑπό+acc), P.Oxy.55.3794 (πρός+acc), P.Oxy.62.4345 (ἐπί+acc), SB.16.12692 (ἐπί+acc) — nominal/title uses without ἐξουσίαν ἔχειν
 ```
 
 ## 29. PG 118 — direct scan image p.409
