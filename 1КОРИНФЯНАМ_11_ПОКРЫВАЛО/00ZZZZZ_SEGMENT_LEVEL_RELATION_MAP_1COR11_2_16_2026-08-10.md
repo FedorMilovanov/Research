@@ -7,16 +7,23 @@
 ## 1. Типы связей
 
 ```text
-DIRECT_SYNTAX      = связь маркирована грамматикой/коннектором текста
-DIRECT_SEMANTIC    = связь необходима по непосредственному смыслу фразы
-INTERTEXT_STRONG   = ясная/широко признанная связь с Писанием
-INTERTEXT_PROPOSED = академически предложенный echo/allusion, но не explicit quotation
-EXEGETICAL_B       = leading interpretive relation
-EXEGETICAL_C       = serious competing relation
-HISTORICAL_B       = probable contextual reconstruction
-HISTORICAL_D       = edge/history-only reconstruction
-NEGATIVE_BOUNDARY  = связь, которую нельзя рисовать как установленную
+DIRECT_SYNTAX       = связь маркирована грамматикой/коннектором текста
+DIRECT_SEMANTIC     = связь необходима по непосредственному смыслу фразы
+DIRECT_DISCOURSE    = связь следует из локальной риторической/дискурсивной структуры
+DIRECT_THEOLOGICAL  = теологическое утверждение прямо выражено самим текстом
+INTERTEXT_STRONG    = ясная/широко признанная связь с Писанием
+INTERTEXT_PROPOSED  = академически предложенный echo/allusion, но не explicit quotation
+EXEGETICAL_B        = leading interpretive relation
+EXEGETICAL_C        = serious competing relation
+HISTORICAL_B_C      = plausible exact historical identification, but reconstruction remains material
+HISTORICAL_D_C      = published low-confidence historical reconstruction
+HISTORICAL_D        = edge/history-only reconstruction
+NEGATIVE_BOUNDARY   = связь, которую нельзя рисовать как установленную
 ```
+
+Confidence grades inside node-calibration blocks remain controlled by `CURRENT_CLAIM_REGISTRY`; relation type and claim grade are separate dimensions.
+
+---
 
 ## 2. Узлы
 
@@ -62,6 +69,8 @@ NEGATIVE_BOUNDARY  = связь, которую нельзя рисовать к
 | V16B | 16 | `τοιαύτην συνήθειαν` | custom referent crux |
 | V16C | 16 | we + churches of God | trans-local church appeal |
 
+---
+
 ## 3. Direct argument edges
 
 | From | To | Type | Почему |
@@ -90,6 +99,8 @@ NEGATIVE_BOUNDARY  = связь, которую нельзя рисовать к
 | V15A | V15B | DIRECT_SYNTAX | `ὅτι`: glory claim grounded in hair-as-covering relation |
 | V13B–V15B | V16A/V16B/V16C | DIRECT_DISCOURSE | v.16 closes dispute by appeal to shared practice; exact referent of `such custom` disputed |
 
+---
+
 ## 4. Strong intertextual edges
 
 | From | Target | Type | Calibration |
@@ -101,83 +112,105 @@ NEGATIVE_BOUNDARY  = связь, которую нельзя рисовать к
 | V12B | ordinary birth / Gen creation reversal in lived generation | DIRECT_SEMANTIC | men now come through women |
 | V12C | God as ultimate source | DIRECT_THEOLOGICAL | explicit statement, not merely intertext |
 
+---
+
 ## 5. Proposed intertextual edges — do not render as direct fact
 
 | From | Target | Type | Status |
 |---|---|---|---|
 | V07C–V12C | 1 Esdras 4:13–41 | INTERTEXT_PROPOSED | Julie Newberry: cumulative echo; useful B/C proposal, not explicit citation |
-| V10C | Qumran sacred-assembly angelology | INTERTEXT_PROPOSED / BACKGROUND_B | strengthens holy/liturgical angels; does not identify Paul's angels explicitly |
-| V10C | Gen 6 / Watchers tradition | INTERTEXT_PROPOSED_C | ancient Tertullian line, weaker |
-| V10B/V10C | 1 Cor 6:2–3 judging angels | INTERTEXT_PROPOSED_C | modern internal-Pauline proposal, possible but not explicit |
+| V10C | Qumran sacred-assembly angelology | INTERTEXT_PROPOSED | strong Second-Temple/heavenly-assembly background; supports `HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING`, but does not identify Paul's exact angelic function |
+| V10C | Gen 6 / Watchers tradition | INTERTEXT_PROPOSED | ancient Tertullian line; `WATCHERS = C_SERIOUS_ALTERNATIVE` |
+| V10B/V10C | 1 Cor 6:2–3 judging angels | INTERTEXT_PROPOSED | modern internal-Pauline proposal; possible, not explicit |
+
+---
 
 ## 6. Historical reconstruction edges
 
 | Text node | Historical proposal | Type | Rule |
 |---|---|---|---|
-| V04B | Roman male `capite velato` ritual/status | HISTORICAL_B | real background A; exact Corinth trigger B |
-| V04B | Judaizing male prayer covering | HISTORICAL_D/C | record, do not promote |
-| V05B/V06A | female veil as matronly/modesty/status marker | HISTORICAL_B | context supports significance, not one universal form |
+| V04B | Roman male `capite velato` ritual/status | HISTORICAL_B_C | `ROMAN_CAPITE_VELATO_BACKGROUND = A`; exact identification of v4 with this ritual = `B_C`; exact Corinthian trigger remains reconstruction |
+| V04B | Judaizing male prayer covering | HISTORICAL_D_C | record, do not promote |
+| V05B/V06A | female veil as matronly/modesty/status marker | HISTORICAL_B_C | contextual status significance is serious; no one universal female veil law or exact local trigger is proved |
 | V05D/V06B | shaved woman = prostitute/adulteress | NEGATIVE_BOUNDARY | do not universalize; evidence insufficient for blanket equation |
 | V14B | long male hair = specific homosexual role | HISTORICAL_D | Murphy-O'Connor/MacGregor edge model |
 | V05B/V14–15 | loose hair = Dionysiac/ecstatic cult | HISTORICAL_D | possible reconstruction, not demonstrated local trigger |
 | V10C | angels = bishops | HISTORICAL_D | Ambrosiaster reception, not Pauline lexical fact |
-| V10C | angels = human church messengers | HISTORICAL_D/C | Murphy-O'Connor; possible semantic use of `angelos`, weak contextually |
+| V10C | angels = human church messengers | HISTORICAL_D_C | Murphy-O'Connor; possible semantic use of `angelos`, weak contextually |
+
+---
 
 ## 7. Contested semantic nodes
 
 ### `κεφαλή` V03
 
 ```text
-HEADSHIP/AUTHORITY/PREDOMINANCE -> B leading
-SOURCE/ORIGIN ONLY             -> C viable
+HEADSHIP/AUTHORITY/PREDOMINANCE -> B_LEADING
+SOURCE/ORIGIN ONLY              -> C_VIABLE
 PROMINENCE                      -> C/B depending formulation
-ONE FIXED LEXICAL GLOSS         -> prohibited
+ONE_FIXED_LEXICAL_GLOSS         -> prohibited
 ```
 
 ### covering language V04–V06/V13
 
 ```text
-TEXTILE/MATERIAL COVERING -> B-high leading
-HAIR/HAIRSTYLE ONLY       -> C serious alternative
-EXACT MODERN GARMENT FORM -> HOLD / not reconstructable at A
+TEXTILE/MATERIAL_COVERING -> B_HIGH_LEADING
+HAIR/HAIRSTYLE_ONLY       -> C_SERIOUS_ALTERNATIVE
+EXACT_MODERN_GARMENT_FORM -> HOLD / not reconstructable at A
 ```
 
 ### `ἐξουσία` V10
 
 ```text
-WOMAN = GRAMMATICAL SUBJECT      -> A
-AUTHORITY/RIGHT/POWER LEXEME     -> A lexical core
-SIGN OF HUSBAND'S AUTHORITY      -> B/C contextual interpretation
-WOMAN'S OWN AUTHORITY/CONTROL    -> C/B serious alternative
-LEXICALLY = VEIL                 -> prohibited
+WOMAN = GRAMMATICAL_SUBJECT            -> A_SYNTAX
+AUTHORITY/RIGHT/POWER_SEMANTIC_CLASS   -> A_B_HIGH
+ACTIVE_WOMAN_BEARER_PULL               -> B_HIGH
+EXACT_REFERENT                         -> B_C
+SIGN_OF_HUSBAND'S_AUTHORITY_PARAPHRASE -> C_WITH_EXTRA_SEMANTIC_STEPS
+LEXICALLY = VEIL                       -> prohibited
+```
+
+Machine boundary:
+
+```text
+ACTIVE_WOMAN_BEARER_PULL != EXACT_OWN_HEAD_OR_MINISTRY_REFERENT_PROVED
 ```
 
 ### `angels` V10
 
 ```text
-ANGELS INVOKED                   -> A
-HOLY/LITURGICAL                  -> B leading
-WATCHERS/FALLEN                  -> C
-HUMAN/CLERGY/OTHER               -> D/C-low
-CERTAIN IDENTITY                 -> prohibited
+ANGELS_INVOKED                               -> A_TEXT
+HEAVENLY_HOLY_ANGELS_REFERENT               -> B_HIGH_LEADING
+ANGELS_AS_COSMIC_WITNESSES_PRESENT_ASSEMBLY -> B_LEADING
+EXACT_ANGELIC_FUNCTION                      -> B_C
+WATCHERS/FALLEN                             -> C_SERIOUS_ALTERNATIVE
+GUARDIAN_ANGELS                             -> C_LOW
+HUMAN_MESSENGERS                            -> D_C_LOW
+BISHOPS_CLERGY                              -> D_C_LOW_RECEPTION
+CERTAIN_IDENTITY_OR_FUNCTION                -> prohibited
 ```
 
 ### `φύσις` V14
 
 ```text
-SEX-DIFFERENTIATION/NATURAL PROPRIETY -> B
-PURE BIOLOGY ONLY                       -> overclaim
-PURE ARBITRARY CUSTOM ONLY              -> overclaim
-CULTURALLY CONSTRUED NATURALNESS        -> C/B serious explanatory model
+V14_15_EVALUATIVE_SEX_CODE          -> A_TEXT
+PHYSIS_SEXED_NATURALIZED_PROPRIETY  -> B_HIGH_LEADING
+EXACT_BIOLOGY_CULTURE_MIX           -> B_C
+PURE_BIOLOGY_ONLY                   -> rejected
+PURE_ARBITRARY_CUSTOM_ONLY          -> rejected
 ```
 
 ### `τοιαύτην συνήθειαν` V16
 
 ```text
-TRANS-LOCAL CHURCH PRACTICE APPEAL -> A
-EXACT REFERENT                       -> B/C
-CANCELS VV2-15                       -> D / discourse-incoherent
+TRANS_LOCAL_CHURCH_PRACTICE_APPEAL -> A_TEXT
+V16_NORMATIVE_FORCE                -> B_HIGH
+V16_NO_CONTRARY_ALTERNATIVE_PRACTICE -> B_LEADING
+EXACT_REFERENT                     -> B_C
+CANCELS_VV2_15                     -> D_C_LOW
 ```
+
+---
 
 ## 8. Macro-argument graph in Research terms
 
@@ -205,7 +238,16 @@ NATURE / HAIR ANALOGY (vv14-15)
 TRANS-LOCAL CHURCH PRACTICE CLOSURE (v16)
 ```
 
-**Critical warning:** стрелка `HEAD RELATIONS → exact garment meaning` не DIRECT_SYNTAX; она exegetical. Стрелка `Roman ritual → v4 exact problem` не direct; она historical B. `Qumran → holy angels` background B, not direct identity.
+**Critical warnings:**
+
+```text
+HEAD_RELATIONS -> EXACT_GARMENT_MEANING = NOT_DIRECT_SYNTAX
+ROMAN_CAPITE_VELATO -> V4_EXACT_PROBLEM = HISTORICAL_B_C, while the background fact itself is A
+QUMRAN_ANGELIC_ASSEMBLY -> PAULS_EXACT_ANGEL_FUNCTION = NOT_DIRECT_IDENTITY
+ACTIVE_EXOUSIA_SEMANTICS -> ONE_EXACT_SOCIAL_REFERENT = INVALID_SHORTCUT
+```
+
+---
 
 ## 9. Product handoff boundary
 
@@ -218,3 +260,11 @@ TRANS-LOCAL CHURCH PRACTICE CLOSURE (v16)
 - front-end component structure.
 
 Research определяет только **nodes, relation types, confidence and negative boundaries**.
+
+```text
+PRODUCT_WRITE = false
+SITE_PUBLICATION = false
+PUBLICATION_HOLD = true
+CURRENT_CLAIM_REGISTRY = CONTROLLING_FOR_GRADES
+THIS_MAP = MACHINE_FACING_RELATION_LAYER_NOT_GRADE_AUTHORITY
+```
