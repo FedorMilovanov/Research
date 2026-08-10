@@ -70,7 +70,7 @@ EXACT_NONBIBLICAL_HEAD_PHRASE = NOT_FOUND_IN_BOUNDED_SEARCH
 
 - `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
 
-Now owns both:
+Owns both:
 
 ```text
 LONG_HAIR / KOMAŌ / PHYSIS
@@ -146,7 +146,7 @@ Owns Massey, direct PHI/CGRN Andania, white `pilos`, separate hair/adornment rul
 
 - `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
 
-Now owns Virgil, Livy, Lucretius, Plutarch RQ 10–14, Valerius Maximus 6.3.10, Gallus source contradiction, funeral inversion and `infula/vitta` artifact separation.
+Owns Virgil, Livy, Lucretius, Plutarch RQ 10–14, Valerius Maximus 6.3.10, Gallus source contradiction, funeral inversion and `infula/vitta` artifact separation.
 
 ```text
 ROMAN_CAPITE_VELATO_BACKGROUND = A
@@ -200,15 +200,12 @@ OCR != SOURCE_IMAGE_AUTHORITY
 
 # 8. Recent / multilingual scholarship
 
-### Broad acquisition / radar
+### Current literature radar / acquisition
 
-- `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
+- `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md` — canonical 2024–2026 multilingual radar/ranking; includes Hamplová, Francis, Lumesberger-Loisl and false-freshness controls.
 - `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_REASONER_GORMAN_2025_COMMENTARIES.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md`
-
-These remain separate because they own different acquisition domains.
+- `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md` — direct-source acquisition details distinct from the radar.
 
 ### Gundry-Volf / Gielen / Hao Li / Standhartinger
 
