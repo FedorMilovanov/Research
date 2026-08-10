@@ -631,19 +631,51 @@ If hair functions as a natural analogue/corresponding covering that teaches the 
 
 The noun itself cannot decide the discourse relation.
 
-## 12.3. Testicle/physiology theory
+## 12.3. Testicle/physiology theory — Goodacre/Martin debate history
 
-Ancient physiological proposals linking `περιβόλαιον` to genital/testicular ideas do not fit the normal lexical evidence recovered here.
+Troy W. Martin’s 2004 JBL article proposed that `περιβόλαιον` in 1 Cor 11:15 means “testicle” inside an ancient physiological model connecting female hair and reproductive anatomy.
 
-The independent LXX/Hebrews uses are plainly wrap/garment imagery.
+Mark Goodacre’s direct author-hosted JBL article:
 
-Thus:
+> Mark Goodacre, “Does περιβόλαιον Mean ‘Testicle’ in 1 Corinthians 11:15?” *Journal of Biblical Literature* 130.2 (2011): 391–396.
+
+Direct author copy:
+- https://markgoodacre.org/peribolaionJBL.pdf
+
+The PDF was directly inspected. Goodacre’s lexical criticism is especially concrete:
+
+- in Euripides, *Heracles* 1269, `σαρκὸς περιβόλαια` is naturally a clothing/body metaphor — a garb/vesture of flesh — rather than evidence that the lexeme itself means testicle;
+- Achilles Tatius 1.15.2 uses plural `περιβολαί` for the overlapping/embracing of leaves inside erotic garden imagery; erotic context does not create a one-to-one anatomical lexeme;
+- both proposed parallels are plural, whereas Paul has singular `περιβόλαιον`;
+- even on a sexualized metaphorical reading of a whole phrase, that would not establish “testicle” as the normal lexical sense of the noun in isolation.
+
+Goodacre therefore directly strengthens the existing project conclusion that the lexical case is weak.
+
+But the dispute did **not** end in 2011. JSTOR’s direct JBL issue record verifies:
+
+> Troy W. Martin, “Περιβόλαιον as ‘Testicle’ in 1 Corinthians 11:15: A Response to Mark Goodacre,” *Journal of Biblical Literature* 132.2 (2013): 453–465, DOI `10.2307/23488022`.
+
+Martin’s response is a peer-reviewed published defense of the proposal. The current runtime verifies article identity, issue, pages and response relation from the direct journal/JSTOR record; it does not yet treat Martin’s full article body as directly autopsied.
+
+Therefore the correct historical calibration is not “Goodacre settled the debate,” but:
+
+```text
+GOODACRE_2011_DIRECT_FULL_BODY = CLOSED
+GOODACRE_2011_LEXICAL_REBUTTAL = DIRECT_B1_STRONG
+MARTIN_2013_RESPONSE_IDENTITY = DIRECT_JOURNAL_VERIFIED
+MARTIN_2013_DIRECT_FULL_BODY = HOLD
+PERIBOLAION_TESTICLE_THEORY = D_C_LOW_PUBLISHED_EDGE_MODEL
+GOODACRE_CRITIQUE != DEBATE_HISTORICALLY_CLOSED
+```
+
+The independent LXX/Hebrews corpus plus Goodacre’s direct critique keep ordinary covering/wrap semantics decisively better established as lexical semantics. Martin’s published reply means the specialized physiological reconstruction must remain represented in debate history rather than erased.
 
 ```text
 PERIBOLAION_TESTICLE_LEXICAL_MEANING = D_C_LOW/NOT_NORMAL_LEXEME_SENSE
+PERIBOLAION_TESTICLE_PHYSIOLOGICAL_RECONSTRUCTION = D_C_LOW_PUBLISHED_EDGE_MODEL
 ```
 
-A physiology theory would have to be a highly specialized metaphorical reconstruction, not a dictionary meaning of the word.
+A physiology theory would therefore have to succeed as a highly specialized contextual/metaphorical reconstruction, not as a dictionary meaning of the word.
 
 ---
 
@@ -820,7 +852,10 @@ KOMAO_LONG_HAIR = A
 KOME_HAIR = A
 PERIBOLAION_WRAP/COVERING/GARMENT = A
 ANTI_SUBSTITUTION/CORRESPONDENCE_RELATION = A
-PERIBOLAION_TESTICLE_THEORY = D_C_LOW
+PERIBOLAION_TESTICLE_THEORY = D_C_LOW_PUBLISHED_EDGE_MODEL
+GOODACRE_2011_DIRECT_FULL_BODY = CLOSED
+MARTIN_2013_RESPONSE_IDENTITY = DIRECT_JOURNAL_VERIFIED
+MARTIN_2013_DIRECT_FULL_BODY = HOLD
 ```
 
 No change to `PUBLICATION_HOLD`.
