@@ -3,35 +3,38 @@
 **Статус:** `HUMAN-READABLE-CURRENT-INDEX / NAVIGATION-AUTHORITY / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последнее обновление:** 2026-08-10
 
-## 0. Назначение
+## 0. Read order
 
-Это **стабильная человеческая точка входа** в корпус 1 Кор 11:2–16.
-
-Исторические `00ZZ...CURRENT_AUTHORITY_POINTER...` и многочисленные delta/overlay файлы остаются provenance/receipts, но не являются удобной текущей навигацией.
+This is the stable human entry point for the 1 Cor 11:2–16 corpus.
 
 ```text
-FOR_CURRENT_RESEARCH_STATE:
-  1. READ THIS INDEX
-  2. READ CURRENT_CLAIM_REGISTRY
-  3. OPEN ONLY THE CONTROLLING DOSSIER/AUDIT FOR THE CLAIM
-  4. USE OLD POINTERS AS PROVENANCE, NOT AS NAVIGATION
+1. READ THIS INDEX
+2. READ CURRENT_CLAIM_REGISTRY FOR THE GRADE
+3. OPEN THE CONTROLLING DOSSIER/AUDIT FOR THE CLAIM
+4. OPEN HISTORICAL RECEIPTS ONLY WHEN PROVENANCE IS NEEDED
 ```
+
+Do **not** infer authority from the number of `Z` characters or filename recency.
 
 ---
 
-# 1. Current claim authority
+# 1. Current claim / text authority
 
-Главный реестр текущих claim grades:
+### Claim grades
 
 - [`00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md`](00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md)
 
-Current Greek text-base / textual-risk contract:
+### Greek text / textual-risk contract
 
 - [`00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md`](00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md)
 
-Provenance / publication boundary baseline:
+### Provenance / publication boundary baseline
 
 - [`00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md`](00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md)
+
+### Legacy navigation path
+
+- `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` is now a **deprecated shim** preserved only for old backlinks; it no longer controls read order or grades.
 
 ---
 
@@ -44,194 +47,205 @@ Provenance / publication boundary baseline:
 - `00ZZZZZZZZZZZZZZZZ_GENESIS_CREATION_INTERTEXT_AUDIT_11_7_12_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZ_V16_CONVENTION_TRANSLOCAL_PRACTICE_AUDIT_2026-08-10.md`
 
-Do not infer current grade from filename recency; use current claim registry.
+---
+
+# 3. `ἐξουσία` / documentary Greek
+
+## Evergreen owner
+
+- [`dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`](dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md)
+
+It owns:
+
+```text
+V10 ἐξουσίαν / κάλυμμα textual separation
+ἐξουσίαν ἔχειν active semantic direction
+biblical exact/near ἐξουσία + ἐπί controls
+Fendel documentary corpus
+female Roman documentary/epigraphic right-bearers
+bounded exact-head-parallel search
+PKNT / XLSX acquisition holds
+```
+
+Current core remains claim-registry owned:
+
+```text
+EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
+EXOUSIA_EXACT_REFERENT = B_C
+EXACT_NONBIBLICAL_HEAD_PHRASE = NOT_FOUND_IN_BOUNDED_SEARCH
+```
+
+Historical source receipts remain available, but they are not separate current navigation owners.
 
 ---
 
-# 3. Historical / social / ritual background
+# 4. Ritual / prophecy / divination / head-state
 
-## Roman ritual and Corinth
+## Evergreen owner
+
+- [`dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`](dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md)
+
+It owns:
+
+```text
+Tryphosa / Eirene / Cleopatra
+Didyma 235B προφητίσκη firewall
+Agatho source-error correction
+Miletos 481 female divine-manifestation channel
+Didyma visual-honour culture
+British Museum archaic Didyma head objects
+Andania ritual headwear + hair separation
+Lycosura correction
+Virgil / Lucan / Diodorus / Plutarch / Iamblichus comparative layer
+Delphi negative object/personnel control
+DAI Inschriften von Didyma Supplement acquisition route
+bounded prophetess + head/hair search
+```
+
+Current bounded result:
+
+```text
+DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = NOT_VERIFIED
+IDENTIFIED_TRYPHOSA_EIRENE_PORTRAIT = NOT_FOUND
+GLOBAL_NONEXISTENCE = NOT_CLAIMED
+```
+
+---
+
+# 5. Roman ritual / Corinth archaeology / visual custody
+
+### General Roman head-covering evidence
 
 - `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
 - `00ZZZZZZZZZZZ_NOMMIK_OPEN_ROUTE_ADVERSARIAL_AUDIT_2026-08-10.md`
+
+### Single current Corinth object + image-custody ledger
+
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`
+
+The ledger now owns both object provenance **and** reusable-photo custody/checksums for:
+
+```text
+S1116 = Augustus capite velato, Julian Basilica
+S1088 = veiled Julio-Claudian male, person ID disputed
+Commons rights / original binary URLs / SHA1 pins
+Johnson 1931 legacy catalogue mappings
+Peters 2013 legacy-route HOLD
+```
+
+```text
+ROMAN_CAPITE_VELATO_BACKGROUND = A
+V4_EXACT_CAPITE_VELATO = B_C
+VISUAL_OBJECT != EXEGETICAL_PROOF
+```
+
+### Current-edition archaeology acquisition map
+
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CURRENT_EDITION_ARCHAEOLOGY_ACQUISITION_DELTA_2026-08-10.md`
 
-## Hair / physis / grooming
+---
+
+# 6. Hair / physis / grooming
 
 - `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_UNBOUND_HAIR_PRIMARY_SOCIAL_CORPUS_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZ_LYCOSURA_MASSEY_GENDER_CORRECTION_OVERLAY_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZ_ANDANIA_DIRECT_INSCRIPTION_HEADWEAR_HAIR_OVERLAY_2026-08-10.md`
 
-## Prophecy / divination / ritual performance state
-
-**Evergreen consolidated dossier:**
-
-- [`dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`](dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md)
-
-It owns the comparative question:
-
-```text
-what happens to head / hair / headwear
-when a person performs a ritual or prophetic role?
-```
-
-Future Tryphosa / Eirene / Didyma / Delphi / Claros / ritual head-hair discoveries should update this dossier, not create another pass file.
+The ritual dossier above owns the current cross-axis synthesis; these files remain source-specific controls.
 
 ---
 
-# 4. `ἐξουσία` and documentary Greek
+# 7. Angels / patristic reception
 
-**Evergreen controlling dossier:**
-
-- [`dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`](dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md)
-
-It now owns the current evidence map for:
-
-```text
-V10 ἐξουσίαν / κάλυμμα textual control
-ἐξουσίαν ἔχειν active semantic direction
-exact vs near ἐξουσία + ἐπί parallels
-Fendel documentary corpus
-female Roman documentary/epigraphic right-bearers
-bounded search for an exact extra-biblical head parallel
-PKNT p390 / Fendel XLSX acquisition holds
-```
-
-Historical provenance / receipts remain:
-
-- `00ZZZZZZZZZZZZZZZZZZZZ_V10_EXOUSIA_KALYMMA_VERSIONAL_PATRISTIC_TEXTUAL_DELTA_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_REAL_PAPYROLOGICAL_EPIGRAPHIC_EXOUSIA_ECHEIN_CORPUS_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_FEMALE_DOCUMENTARY_EXOUSIA_RIGHTS_ADDENDUM_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2025_EXOUSIA_EPI_GEN_FRESHNESS_CONTROL_2026-08-10.md`
-
-Current core remains claim-registry-owned:
-
-```text
-EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
-EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
-EXOUSIA_EXACT_REFERENT = B_C
-```
-
-Current formal guardrail:
-
-```text
-AUTHORITY_OVER_DOMAIN_WITH_EXOUSIA = WELL_ATTESTED_BIBLICAL_GREEK
-REV_14_18 = EXACT ἔχω + ἐξουσία + ἐπί/gen CONTROL
-REV_20_6 = SAME LEXEMES/RELATION WITH FRONTED ἐπί/gen
-REV_2_26 + DAN_OG_3_97 = δίδωμι, NOT ἔχω
-LUKE_9_1 = ἐπί + ACCUSATIVE
-SIR_17_2 = GENITIVE PHRASE CONTAINING INTERNAL ἐπί, NOT AN EXACT DIRECT COMPLEMENT
-UNCOMMON_IN_DOCUMENTARY_PAPYRI != UNATTESTED_OR_UNGRAMMATICAL
-```
-
-Exact nonbiblical `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` remains `NOT_FOUND_IN_BOUNDED_SEARCH`; this is not a global nonexistence claim.
-
----
-
-# 5. Angels / reception history
-
-Primary Pauline / Second Temple control:
+### Primary Pauline / Second Temple controls
 
 - `00ZZZZZZZZZZZZZZ_ANGELS_PRIMARY_CORPUS_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZ_ANGEL_MODELS_STRESS_MATRIX_2026-08-10.md`
 
-Current patristic/reception controls:
+### Current patristic owners
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_ANGEL_PRIMARY_TEXT_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_SPEAKER_BOUNDARY_CONTROL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CLEMENT_IRENAEUS_EARLY_ANGEL_RECEPTION_PRIMARY_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CATENA_CRAMER_ATTRIBUTION_FIREWALL_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGELS_ATTRIBUTION_RESOLUTION_2026-08-10.md` — **controlling Theodoret ownership/locator file**
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGEL_LOCATOR_DELTA_2026-08-10.md` — supporting provenance; do not use over the resolution file above
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CYRIL_CATENA_KYTILLOU_ATTRIBUTION_CORRECTION_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGELS_ATTRIBUTION_RESOLUTION_2026-08-10.md`
 
-Current Theodoret state:
+Theodoret retained owner now includes PG82 locators, Hill 2001 p.205, Biblissima/BnF manuscript route and catena separation. The earlier locator-delta has been consolidated and removed.
 
-```text
-THEODORET_GUARDIAN_ANGELS_ATTRIBUTION = VERIFIED_SOURCE_ATTRIBUTION
-PG82_LOCATOR = 312D_313A
-HILL_2001_LOCATOR = VOL1_P205
-DIRECT_GREEK_PAGE_AUTOPSY = HOLD
-```
+The Cramer firewall owns Cyril/Kytilou normalization and Photius local label tracking; the separate Cyril correction has been consolidated and removed.
 
-Current Photian state:
-
-```text
-PHOTIUS_1COR11 = CATENA_PRESERVED_SCHOLIA_PHOTIANA
-CRAMER = OWNER_LABEL_CONTROL
-PG118 = TRANSMISSIONAL_CONVERGENCE
-POSSIBLE_FULLER_PAULINE_COMMENTARY = LOST_COMMENTARY_HYPOTHESIS
-PG101_STANDALONE_SEARCH != REQUIRED_ENDPOINT
-```
-
-**Evergreen source-verification tooling:**
+### PG/OCR workflow
 
 - [`dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md`](dossiers/PATRISTIC_PG_OCR_VERIFICATION_WORKFLOW.md)
 
-The 2026 PG OCR corpus is a locator engine, not a substitute for source-image verification. PG118 is covered and has already located 1 Cor 11:10 / Clement on PDF p.409; PG74 and PG82 are not currently covered.
-
-Reception diversity must not be used as vote-counting for original Pauline meaning.
+```text
+OCR = LOCATOR_ENGINE
+OCR != SOURCE_IMAGE_AUTHORITY
+DIRECT_PAGE_IMAGE > OCR_FOR_PUBLICATION_QUOTE
+```
 
 ---
 
-# 6. Recent scholarship / adversarial models
+# 8. Recent / multilingual scholarship
+
+### Current literature radar / source cards
 
 - `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
-- `00ZZZZZZZZZ_SOURCE_CARD_REASONER_GORMAN_2025_COMMENTARIES.md` — **current 2025 commentary ingress; Reasoner technical P0/P1, Gorman theological P1**
+- `00ZZZZZZZZZ_SOURCE_CARD_REASONER_GORMAN_2025_COMMENTARIES.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md`
+
+### Gundry-Volf / Gielen / Hao Li / Standhartinger retained owner
+
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_GIELEN_CHINESE_SCHOLARSHIP_SOURCE_CONTROL_2026-08-10.md`
+
+It now owns the absorbed Gundry-Volf two-context refinement and Standhartinger false-freshness control.
+
+```text
+GUNDRY_VOLF = HAIRSTYLE + TWO_SOCIAL_CONTEXTS + CULTURE_CREATION_IN_CHRIST
+GIELEN = MODIFIED_SHORT_HAIR_NOT_SIMPLE_UNBOUND_HAIR
+LI_HAO = 2023_ORIGINAL / 2025_REPOST_BLOCKED
+STANDHARTINGER = 2002_ARTICLE / 2003_BOOK_VERSION / 2025_PLATFORM_DATE_BLOCKED
+```
+
+### Quotation/refutation controls
+
 - `00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZ_PAULINE_QUOTATION_SLOGAN_CORPUS_CONTROL_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_VOLF_TWO_CONTEXT_REFINEMENT_STANDHARTINGER_FRESHNESS_2026-08-10.md` — **controlling Gundry-Volf refinement**
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_GIELEN_CHINESE_SCHOLARSHIP_SOURCE_CONTROL_2026-08-10.md` — broader provenance/source map
+
+### Drake source-type separation
+
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2025_EXOUSIA_EPI_GEN_FRESHNESS_CONTROL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_DRAKE_2026_AUTHOR_INTERVIEW_MATERIALITY_CONTROL_2026-08-10.md`
 
-Current 2025 commentary acquisition queue:
-
 ```text
-GARLAND_2025_2E = P0_DIRECT_TEXT_HOLD
-REASONER_2025_BRILL_COMMENTARY_7 = P0/P1_DIRECT_CHAPTER_HOLD
-STARLING_2025_EBTC = P0/P1_SECTION_HOLD
-GORMAN_2025_EERDMANS = P1_THEOLOGICAL_SECTION_HOLD
+PUBLISHER_CHAPTER_SUMMARY != FULL_BOOK_BODY
+AUTHOR_INTERVIEW != PEER_REVIEWED_BOOK_BODY
+REPOST_DATE != ORIGINAL_PUBLICATION_DATE
 ```
-
-Reasoner-specific source-hygiene control:
-
-```text
-COMMENTARY_7_11_2_16_START = P321
-COMMENTARY_8_11_17_34_START = P432
-CIRCULATED_WEB_P434_AS_11_2 = IMPOSSIBLE_PAGE_LABEL / REJECT
-CIRCULATED_WEB_P444_AS_11_8 = IMPOSSIBLE_PAGE_LABEL / REJECT
-REASONER_DIRECT_BODY = HOLD
-```
-
-Current Gundry-Volf source card:
-
-```text
-GUNDRY_VOLF != SIMPLE_HAIR_ONLY_LABEL
-GUNDRY_VOLF = HAIRSTYLE + TWO_SOCIAL_CONTEXTS + CULTURE/CREATION/IN_CHRIST_MODEL
-MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
-HAIR_ONLY = C_SERIOUS_ALTERNATIVE_UNCHANGED
-```
-
-Current Drake source separation:
-
-```text
-CAMBRIDGE_2025_CHAPTER_SUMMARY = DIRECT_PUBLISHER_CONTROL
-DRAKE_2026_INTERVIEW = DIRECT_AUTHOR_SELF_DESCRIPTION
-INTERVIEW != BOOK_BODY
-DRAKE_CH2_PP70_89_BODY = HOLD
-```
-
-Published existence / peer review is not automatic grade promotion.
 
 ---
 
-# 7. Agent-output quarantine / source hygiene
+# 9. Current commentary acquisition queue
+
+```text
+GARLAND_2025_2E = P0_DIRECT_TEXT_HOLD
+REASONER_2025_BRILL_COMMENTARY_7 = P0_P1_DIRECT_CHAPTER_HOLD
+STARLING_2025_EBTC = P0_P1_SECTION_HOLD
+GORMAN_2025_EERDMANS = P1_THEOLOGICAL_SECTION_HOLD
+THISelton_2000_FULL_SECTION = HOLD
+FEE_REVISED_2014_FULL_SECTION = HOLD
+CIAMPA_ROSNER_2010_DETAIL = HOLD
+```
+
+Reasoner page-label firewall remains in its source card; do not propagate impossible circulated page claims before direct body acquisition.
+
+---
+
+# 10. Agent-output quarantine
 
 - `00ZZZZZZZZZZZZZZZZZZZZ_AGENT_DUMP_48_TARGET_VERIFICATION_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`
@@ -241,25 +255,27 @@ Published existence / peer review is not automatic grade promotion.
 AGENT_OUTPUT = DISCOVERY_ONLY
 BIBLIOGRAPHIC_EXISTENCE != CLAIM_VERIFICATION
 SECONDARY_QUOTE != DIRECT_CURRENT_EDITION_TEXT
+FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
 ```
 
 ---
 
-# 8. Navigation anti-sprawl rule
+# 11. Anti-sprawl / cleanup rule
 
 ```text
 DO_NOT_CREATE_NEW_Z_LADDER_POINTER = true
 DO_NOT_CREATE_PASS_N_REPORT_IF_DOSSIER_EXISTS = true
 UPDATE_EVERGREEN_DOSSIER = preferred
 UPDATE_CURRENT_CLAIM_REGISTRY = only_if_claim_grade_or_owner_changes
-ADD_RECEIPT/LEDGER = only_if machine/provenance need is distinct
+ADD_SEPARATE_RECEIPT = only_if_machine/provenance need is genuinely distinct
+PRESERVE_OLD_MAIN_PATH_AS_DEPRECATED_SHIM_IF_BACKLINKS_MAY_EXIST = true
 ```
 
-Historical `00Z/00ZZ/...` files stay preserved for provenance. If a new source only strengthens provenance without changing a grade, update the controlling dossier/source ledger and this index only when navigation/ownership changes.
+When a branch-only successor is fully absorbed by a retained owner, delete the successor from the branch rather than preserving duplicate current-state summaries.
 
 ---
 
-# 9. Current publication boundary
+# 12. Publication boundary
 
 ```text
 PRODUCT_WRITE = false
@@ -268,4 +284,4 @@ PUBLICATION_HOLD = true
 RESEARCH_CLOSURE != PRODUCT_APPROVAL
 ```
 
-This index is navigational authority only. It does not itself promote disputed historical or exegetical claims.
+This index controls navigation only; claim grades remain in the current claim registry.
