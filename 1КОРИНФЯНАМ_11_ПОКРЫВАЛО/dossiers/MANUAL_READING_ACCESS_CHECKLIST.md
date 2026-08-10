@@ -340,8 +340,8 @@ DOI `10.29635/JRCC.202312_(21).0012`.
 **Extract:** exact positions on creation order, reciprocity, veil/hair, v10, angels, cultural adaptation/challenge.
 
 ```text
-STATUS = CLOSED_DIRECT_RUNTIME_OPEN_ACCESS / DIRECT_DOWNLOAD_ROUTE_VERIFIED
-VERIFIED_RUNTIME_ROUTE = https://ccspub.cc/jrcc/article/download/38/36/1152
+STATUS = OFFICIAL_PDF_BODY_READ_PP267_296 / TAIL_PP296_318_BEYOND_RUNTIME_RENDER_CAP / RENDER_CAP_REVERIFIED_2026_08_10
+VERIFIED_RUNTIME_ROUTE = https://ccspub.cc/jrcc/article/download/38/36/1152 (7 chunks max; document renders pp.267–296; pp.296–318 not renderable in runtime)
 EXTRACTED_SUMMARY = "Creation order in 1 Cor 11:2-16 dialectically balances honor-shame cultural adaptation (female subordination symbol) and countercultural gospel reciprocity (mutual unity in the Lord, vv. 11-12); no timeless absolute subordination principle."
 ```
 
