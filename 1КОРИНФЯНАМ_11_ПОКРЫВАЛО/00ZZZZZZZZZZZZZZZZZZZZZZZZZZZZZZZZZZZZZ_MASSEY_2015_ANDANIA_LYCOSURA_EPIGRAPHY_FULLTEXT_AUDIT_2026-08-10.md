@@ -1,300 +1,387 @@
-# 1 Коринфянам 11:2–16 — Massey 2015 Andania/Lycosura epigraphy full-text audit
+# 1 Коринфянам 11:2–16 — Andania / Lycosura direct epigraphy + Massey 2015 owner
 
 **Дата:** 2026-08-10  
-**Статус:** `DIRECT-JOURNAL-FULLTEXT / EPIGRAPHY / HAIR-VS-VEIL / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `DIRECT-EPIGRAPHY-OWNER / MASSEY-FULLTEXT / ANDANIA-PHI-CGRN / LYCOSURA-CORRECTED / RESEARCH-ONLY / PUBLICATION-HOLD`
 
-## 0. Source and method
+## 0. Authority / self-correction rule
 
-Direct journal PDF:
+This is the single current owner for the Andania/Lycosura comparative epigraphy.
 
-> Preston T. Massey, “Dress Codes at Roman Corinth and Two Hellenic Sites: What do the Inscriptions at Andania and Lycosura Tell Us about 1 Corinthians 11.2–16?” *Journal of Greco-Roman Christianity and Judaism* 11 (2015): 51–81.
+It preserves three evidence levels separately:
 
-Journal PDF:
+```text
+DIRECT_INSCRIPTION_TEXT
+MODERN_EPIGRAPHIC_EDITION_TRANSLATION
+MASSEY_2015_INTERPRETATION
+```
 
+The earlier project shorthand that Lycosura **directly** says `men` are forbidden to cover is superseded inside this owner.
+
+```text
+DIRECT_TEXT > EDITORIAL_SUPPLEMENT > MODERN_RECONSTRUCTION
+HAIR_RULE != HEADWEAR_RULE
+COMPARATIVE_RITUAL_CODE != EXACT_CORINTH_TRIGGER
+```
+
+---
+
+# 1. Massey 2015 — direct journal full text
+
+> Preston T. Massey, “Dress Codes at Roman Corinth and Two Hellenic Sites: What do the Inscriptions at Andania and Lycosura Tell Us about 1 Corinthians 11.2–16?” *JGRChJ* 11 (2015): 51–81.
+
+Routes:
 - https://www.jgrchj.net/volume11/JGRChJ11-4_Massey.pdf
-
-Journal volume/abstract:
-
 - https://jgrchj.net/volume11/?mode=abstracts&page=volume11
 
-The PDF text was directly inspected. Browser screenshot rendering was also attempted for key pages but the screenshot endpoint returned a cache miss; therefore this dossier does **not** claim a successful pixel/image-page verification. The parsed journal PDF text and page locators remain direct-object controls.
+The journal PDF text was directly inspected. Screenshot rendering was attempted but not successfully completed in the earlier runtime, so pixel/page-image autopsy is not claimed.
 
 ```text
 MASSEY_2015_PDF = DIRECT_JOURNAL_OBJECT
-PDF_TEXT = DIRECTLY_INSPECTED
-PDF_SCREENSHOT_RENDER = ATTEMPTED_CACHE_MISS
+MASSEY_PDF_TEXT = DIRECTLY_INSPECTED
+MASSEY_SCREENSHOT_RENDER = NOT_COMPLETED
 ```
 
----
-
-# 1. What Massey is actually testing
-
-Massey targets two claims often bundled together in 1 Cor 11 literature:
-
-1. that Greek women in ritual contexts could appear without textile veils;
-2. that references to hair arrangement imply that a textile covering is absent.
-
-His key epigraphic comparanda are:
-
-- Andania sacred law, c.95–90 BCE;
-- Lycosura sacred law, broadly 2nd c. BCE, with later cultic continuity.
-
-He is explicit that proximity does **not** establish direct influence on Corinth:
-
-```text
-ANDANIA_TO_CORINTH_DIRECT_INFLUENCE = SPECULATION/UNPROVED
-LYCOSURA_TO_CORINTH_DIRECT_INFLUENCE = SPECULATION/UNPROVED
-```
-
-The valid use is comparative epigraphic/social-linguistic background.
-
----
-
-# 2. Andania — `ἀναπεπλεγμένη` is not “unbound hair”
-
-Massey focuses on the Andania hair prohibition and attacks an older translation tradition that treated `ἀναπεπλεγμένας` as hair “loosened” and hanging down.
-
-His lexical/literary comparison argues:
-
-```text
-ἀναπλέκω / ἀναπεπλεγμένη = braid / plait / curl / bind-up styling
-NOT = conventional Greek verb for loosening/unbinding hair
-```
-
-He adduces literary comparanda including Lucian and Athenaeus where the verb describes braided/plaited/curl-like or bound-up styles, frequently in contexts of elaboration, gold, luxury or sexual attractiveness.
-
-Key direct PDF locators:
-
-- pp.60–69, especially pp.61–69;
-- article PDF parsed page indices P9–P18.
-
-Safe result:
-
-```text
-ANDANIA_ANAPLEKO_AS_UNBOUND_HAIR = REJECTED_BY_MASSEY_LEXICAL_CASE
-ANDANIA_HAIR_RULE = HAIRSTYLE/ORNAMENTATION_RULE
-ANDANIA_HAIR_RULE != PROOF_OF_UNVEILING
-```
-
-This does not prove every woman at Andania wore a veil; it blocks using this term itself as evidence that hair was deliberately loosened and the head left materially uncovered.
-
----
-
-# 3. Hair arrangement and textile veil can coexist
-
-Massey’s most important methodological point is independent of whether one accepts every reconstruction he offers:
-
-> a hairstyle statement and a textile-covering statement are not mutually exclusive categories.
-
-He uses Homeric material to distinguish hair-binding accessories from an actual veil (`κρήδεμνον`). A woman can remove a veil without changing the underlying hairstyle, and can wear hair up/down/plaited while a separate veil remains present.
-
-Thus:
+Massey’s strongest durable methodological point is:
 
 ```text
 HAIR_STATE != TEXTILE_COVERING_STATE
-BRAIDED/PLAITED_HAIR != UNVEILED_HEAD
-UNBOUND_HAIR != NECESSARILY_UNVEILED_HEAD
+BRAIDED_PLAITED_HAIR != UNVEILED_HEAD
+TEXT_MENTIONS_HAIR != TEXT_CANNOT_ALSO_REGULATE_HEADWEAR
 ```
 
-This is an important adversarial control against arguments that infer:
+His lexical case also strongly challenges the older translation of `ἀναπλέκω` as ordinary “unbound/loose hair”.
+
+---
+
+# 2. Andania — direct PHI/CGRN control
+
+## 2.1 Object and dating
+
+Direct text:
+- PHI IG V,1 1390: https://epigraphy.packhum.org/text/31826
+- CGRN 222: https://cgrn.ulg.ac.be/file/222/
+- DOI `10.54510/CGRN222`
+
+Dating must remain explicit:
 
 ```text
-TEXT_MENTIONS_HAIR -> TEXT_CANNOT_ALSO_REFER_TO_VEIL
+PHI_TRADITIONAL_DATE = 92_91_BCE
+CGRN_CURRENT_PREFERRED_DATE = PROBABLY_23_CE
+EXACT_DATE = SCHOLARLY_DISPUTED
 ```
 
-Current project implication:
+Do not write either date as uncontested.
+
+---
+
+## 2.2 Explicit cult headwear
+
+The inscription assigns headwear to cult personnel:
 
 ```text
-HAIR_AS_NATURAL_ANALOGY = B_HIGH // unchanged
-MATERIAL_COVERING = B_HIGH_LEADING // provenance strengthened
-HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE // still live, but this epigraphic argument does not strengthen it
+στεφάνους δὲ ἐχόντω οἱ μὲν ἱεροὶ καὶ αἱ ἱεραὶ πῖλον λευκόν
+```
+
+and distinguishes first-time initiates’ headgear, followed by laurel-crowning at the prescribed stage.
+
+```text
+ANDANIA_HIEROI_WHITE_PILOS = A_EPIGRAPHIC
+ANDANIA_HIERAI_WHITE_PILOS = A_EPIGRAPHIC
+ANDANIA_PROTOMYSTAI_DISTINCT_HEADWEAR = A_EPIGRAPHIC
+ANDANIA_LAUREL_WREATH_STAGE = A_EPIGRAPHIC
+```
+
+This directly blocks:
+
+```text
+ANDANIA = UNIVERSAL_FEMALE_CULTIC_BAREHEADEDNESS
 ```
 
 ---
 
-# 4. Lycosura — hair prohibition and male covering prohibition are grammatically separable
+## 2.3 Women’s hair/adornment rules are separate
 
-The Lycosura sacred law includes a sequence that Massey prints and analyzes, including:
+The women’s procession/dress section includes:
 
 ```text
-μηδὲ τὰς τρίχας ἀμπεπλεγμένας,
-μηδὲ κεκαλυμμένος
+μηδὲ ἀνάδεμα
+μηδὲ τὰς τρίχας ἀνπεπλεγμένας
 ```
 
-Massey follows the grammatical gender distinction in reading the first prohibition as directed to women’s braided/plaited hair and the masculine `κεκαλυμμένος` as directed to a man not being covered.
-
-Article pp.69–73, especially the discussion around the inscription lines 10–11.
-
-Safe source-specific result:
+alongside gold/cosmetic restrictions.
 
 ```text
-LYCOSURA_FEMALE_BRAIDED_HAIR_PROHIBITION = DIRECT_EPIGRAPHIC_DISCUSSION
-LYCOSURA_MALE_HEAD_COVERING_PROHIBITION = DIRECT_EPIGRAPHIC_DISCUSSION
-HAIR_RULE_AND_COVERING_RULE_CAN_COEXIST_IN_ONE_RITUAL_CODE = STRONG_COMPARATIVE_CONTROL
+ANDANIA_WOMEN_ANADEMA_PROHIBITION = A_EPIGRAPHIC
+ANDANIA_WOMEN_ANAPLEKO_HAIR_PROHIBITION = A_EPIGRAPHIC
+ANDANIA_HAIR_RULE != PROOF_OF_NO_HEADWEAR
 ```
 
-This is particularly valuable for 1 Cor 11 because Paul likewise has:
-
-- a male covering rule;
-- a female head rule;
-- an explicit later hair argument.
-
-But:
+The same regulation therefore demonstrably has distinct axes:
 
 ```text
-LYCOSURA_RULE = PAULS_DIRECT_SOURCE = UNPROVED
-LYCOSURA = EXACT_CORINTH_TRIGGER = FALSE
+HEADWEAR_RULES
+HAIR_ORNAMENT_RULES
+HAIRSTYLE_RULES
+```
+
+within one ritual code.
+
+This is stronger and safer than inferring `hair mentioned -> textile impossible`.
+
+---
+
+## 2.4 Role/status differentiation
+
+Andania distinguishes female categories including private women, girls, enslaved women and female cult personnel.
+
+```text
+ANCIENT_RITUAL_FEMALE_DRESS_CAN_BE_ROLE_STATUS_DIFFERENTIATED = A_EPIGRAPHIC
+```
+
+This makes status-sensitive historical questions legitimate but does not prove any particular Corinthian wives/free-wives reconstruction.
+
+---
+
+## 2.5 `pilos` is not Paul’s object by definition
+
+```text
+ANDANIA_PILOS != PAULINE_OBJECT_PROVED
+ANDANIA_PILOS != ROMAN_PALLA
+ANDANIA_PILOS != TOGA_CAPITE_VELATO
+```
+
+The valid comparison is category-level: ancient ritual law could prescribe female headwear while separately regulating hair.
+
+---
+
+# 3. Massey on Andania — what survives
+
+Massey’s lexical comparison argues:
+
+```text
+ANAPLEKO = BRAID_PLAIT_CURL_BIND_UP_STYLING
+NOT_NORMAL_VERB_FOR_UNBINDING_HAIR
+```
+
+His broader conclusion — hairstyle and textile covering can coexist — is strengthened by the direct Andania headwear/hair separation.
+
+```text
+ANDANIA_ANAPLEKO_AS_UNBOUND_HAIR = STRONGLY_CHALLENGED
+HAIR_RULE != NO_TEXTILE_HEADWEAR = STRONG_COMPARATIVE_CONTROL
+```
+
+Do not jump from “hair rule does not exclude a veil” to “all women therefore wore a veil.”
+
+---
+
+# 4. Lycosura — direct text and correction
+
+## 4.1 Surviving wording
+
+Direct scholarly digital edition:
+- https://www.greek-language.gr/digitalResources/ancient_greek/anthology/inscriptions/page_079.html
+
+Key sequence:
+
+```text
+μηδὲ τὰς τ[ρί]-
+χας ἀμπεπλεγμένας μηδὲ κεκαλυμ-
+μένος, μηδὲ ἄνθεα παρφέρην
+```
+
+Direct minimum:
+
+```text
+LYCOSURA_HAIR_CONDITION_PROHIBITION = A_EPIGRAPHIC
+LYCOSURA_KEKALYMMENOS_FORM = A_EPIGRAPHIC
+LYCOSURA_EXPLICIT_TOUS_ANDRAS = FALSE
+LYCOSURA_EXPLICIT_MALE_ONLY_COVERING_RULE = NOT_IN_SURVIVING_TEXT
+```
+
+The masculine form `κεκαλυμμένος` is real. The male-only referent is not automatically proved by that form in this elliptical regulation.
+
+---
+
+## 4.2 Voutiras 1999 — autopsy-based epigraphic control
+
+> Emmanuel Voutiras, “Opfer für Despoina: Zur Kultsatzung des Heiligtums von Lykosura IG V 2, 514,” *Chiron* 29 (1999): 233–250.
+
+Official DAI PDF:
+- https://publications.dainst.org/journals/chiron/article/view/972/5339
+
+Voutiras treats lines 9–13 as elliptical and translates the relevant rule generically: hair braided / head covered, without inserting a separate male subject.
+
+```text
+VOUTIRAS_LYCOSURA_TRANSLATION = GENERIC_ENTRANT_HAIR_OR_HEAD_COVERING_PROHIBITION
+VOUTIRAS_MALE_ONLY_SPLIT = NOT_ADOPTED
+LYCOSURA_LINES_9_13 = ELLIPTICAL_SYNTAX
+```
+
+Parsed publisher PDF text is direct; pixel screenshot verification was not completed in the earlier runtime.
+
+---
+
+## 4.3 Massey / Dittenberger male-only split is interpretation, not inscription text
+
+Massey acknowledges the grammatical issue and follows a Dittenberger expansion supplying:
+
+```text
+[τοὺς ἄνδρας]
+```
+
+before the covering condition.
+
+That phrase is **not surviving inscription wording**.
+
+```text
+DITTENBERGER_TOUS_ANDRAS = EDITORIAL_PARAPHRASTIC_SUPPLEMENT
+MASSEY_MALE_ONLY_LYCOSURA = INTERPRETIVE_INFERENCE
+MASSEY_MALE_ONLY_LYCOSURA != DIRECT_EPIGRAPHIC_FACT
+```
+
+The earlier project statement `LYCOSURA_MALE_HEAD_COVERING_PROHIBITION = DIRECT` is therefore superseded.
+
+---
+
+## 4.4 Karataş 2020 — current specialist control
+
+> Aynur-Michèle-Sara Karataş, “Greek Cults and Their Sacred Laws on Dress-code: The Laws of Greek Sanctuaries for Hairstyles, Jewelry, Make-up, Belts, and Shoes,” *Classical World* 113.2 (2020): 147–170. DOI `10.1353/clw.2020.0001`.
+
+Karataş summarizes Lykosoura as prohibiting braided hair and a veiled/covered head without making the male-only split self-evident, while noting more generally that gender often must be inferred contextually in sacred dress laws.
+
+```text
+KARATAS_LYCOSURA = BRAIDED_HAIR_PLUS_COVERED_HEAD_PROHIBITIONS
+KARATAS_MALE_ONLY_SPLIT = NOT_USED
 ```
 
 ---
 
-# 5. Massey’s direct conclusion about the two inscriptions
+## 4.5 Current grammatical calibration
 
-At pp.79–81 Massey concludes that Andania/Lycosura do **not** provide conclusive evidence that married women in Greek cultic ritual appeared without veils merely because hair arrangement is discussed.
+Competing possibilities remain:
 
-He argues that hair and veil are not contradictory and that the shift in 1 Cor 11:13–15 to long hair can be understood as a related but distinct argument rather than as a redefinition of all earlier covering language.
-
-Source-specific claim:
+1. generic masculine referring to an entrant;
+2. male-specific switch as Dittenberger/Massey infer;
+3. irregular/elliptical redaction;
+4. older emendation to feminine — not the transmitted form.
 
 ```text
-MASSEY_2015_FINAL_MODEL = TEXTILE_VEIL + DISTINCT_HAIR_ARGUMENT
-MASSEY_2015_REJECTS_HAIR_REPLACES_VEIL
+LYCOSURA_KEKALYMMENOS_GRAMMATICAL_MASCULINE = A_TEXT
+LYCOSURA_REFERENT_MALE_ONLY = C_BC_INTERPRETIVE
+LYCOSURA_REFERENT_GENERIC_ENTRANT = B_C_VIABLE
+LYCOSURA_EXACT_GENDER_MAPPING = OPEN
 ```
 
-Project-level calibration remains more modest than Massey’s own final reconstruction:
+Do not silently insert `[τοὺς ἄνδρας]`; do not silently emend to feminine.
+
+---
+
+# 5. What survives from Lycosura for 1 Cor 11
+
+Strong surviving result:
 
 ```text
+LYCOSURA_HAIR_AND_COVERING_APPEAR_AS_DISTINCT_RULE_ITEMS = A_B_HIGH
+HAIR_RULE != AUTOMATIC_HAIR_ONLY_INTERPRETATION = STRONG
+```
+
+What does **not** survive as direct fact:
+
+```text
+LYCOSURA_MEN_ALONE_FORBIDDEN_TO_COVER = NOT_DIRECT
+LYCOSURA_WOMEN_THEREFORE_EXPECTED_TO_VEIL = NOT_DIRECT
+LYCOSURA_PROVES_WOMEN_VEILED = FALSE
+LYCOSURA_PROVES_WOMEN_UNVEILED = FALSE
+```
+
+Massey’s specific inference that women’s veiling is logically assumed is therefore downgraded to reconstruction.
+
+---
+
+# 6. Shared Andania/Lycosura conclusion
+
+The two inscriptions now serve complementary direct controls:
+
+```text
+ANDANIA:
+  female role/status categories
+  explicit female hair/adornment restrictions
+  explicit female cult-official headwear
+
+LYCOSURA:
+  hair and covered-head rules are distinct items
+  exact sex-specific mapping of covering rule is disputed
+```
+
+Safe combined historical statement:
+
+> Greek ritual dress codes can regulate hair and headwear as distinct but interacting axes; neither inscription supplies a universal rule for all women or Paul’s exact Corinthian artifact.
+
+```text
+HAIR_AND_HEADWEAR_DISTINCT_REGULATORY_AXES = A_B_HIGH_COMPARATIVE
+DIRECT_INFLUENCE_ON_CORINTH = UNPROVED
+EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
+```
+
+---
+
+# 7. Relation to actual unbound hair
+
+Massey’s lexical point must remain distinct from evidence about genuinely unbound/dishevelled hair.
+
+```text
+MASSEY = ANAPLEKO_IS_NOT_NORMAL_UNBINDING_VERB
+COSGROVE_2005 = SOCIAL_MEANINGS_OF_ACTUAL_UNBOUND_HAIR
+```
+
+Cosgrove remains a separate social-history control; do not use actual unbound-hair examples to redefine Andania’s `ἀναπλέκω`.
+
+---
+
+# 8. Current project impact
+
+```text
+CORE_GRADE_REVERSALS = 0
 MATERIAL_COVERING = B_HIGH_LEADING
 HAIR_ONLY = C_SERIOUS_ALTERNATIVE
 HAIR_AS_NATURAL_ANALOGY = B_HIGH
+EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
+WIVES_VS_ALL_WOMEN = OPEN_B_C
 ```
 
-No automatic promotion to A: an epigraphic comparative case is not a noun `veil` inserted into 1 Cor 11:4–6.
+The inscriptions strengthen evidence discipline and comparative complexity, not a single total model.
 
 ---
 
-# 6. Important limitation: Massey sometimes moves from “not excluded” to “likely assumed”
-
-Massey sometimes reasons that where an inscription tells men not to veil and gives women a hair prohibition, women’s veiling may be logically assumed.
-
-That inference is stronger than the inscriptional minimum.
-
-The project must separate:
+# 9. No-overclaim rules
 
 ```text
-INSCRIPTION_DOES_NOT_SAY_WOMEN_UNVEILED = STRONG
-FROM
-INSCRIPTION_PROVES_WOMEN_WERE_VEILED = STRONGER_RECONSTRUCTION
-```
-
-Therefore:
-
-```text
-MASSEY_LYCOSURA_WOMEN_VEILED = B_C_SOURCE_RECONSTRUCTION
-LYCOSURA_DOES_NOT_ESTABLISH_UNVEILED_WOMEN = B_HIGH_NEGATIVE_CONTROL
-```
-
-This keeps the audit adversarial rather than merely adopting Massey.
-
----
-
-# 7. Sexual/ostentatious hair-signaling — real background, exact Corinth trigger still open
-
-Massey assembles literary examples in which elaborate/plaited/curling hair participates in:
-
-- beauty display;
-- luxury/ostentation;
-- sexual attractiveness;
-- gendered presentation.
-
-This is compatible with the project’s existing background grade:
-
-```text
-GENDER/SEXUAL_SIGNALING_OF_GROOMING = B_HIGH_BACKGROUND
-```
-
-But it does not establish:
-
-```text
-CORINTHIAN_WOMEN_HAD_SEXUALLY_RISQUE_BRAIDS = FACT
-EXACT_CORINTH_TRIGGER = SOLVED
-```
-
-The local Christian conflict remains reconstruction-layer.
-
----
-
-# 8. Relation to Cosgrove 2005
-
-Charles H. Cosgrove, “A Woman’s Unbound Hair in the Greco-Roman World,” *JBL* 124.4 (2005): 675–692, is now bibliographically direct through JSTOR/SBL-era journal indexing and is a high-value next control for the **actual social meanings of genuinely unbound/dishevelled female hair**.
-
-This distinction matters:
-
-```text
-MASSEY: ANAPLEKO != UNBINDING
-COSGROVE: WHAT ACTUAL_UNBOUND_HAIR_SIGNIFIED
-```
-
-Future synthesis should not use literary examples of truly unbound hair to redefine epigraphic `ἀναπλέκω` as “unbound”.
-
-Acquisition status:
-
-```text
-COSGROVE_2005 = VERIFIED_BIBLIOGRAPHIC_B1
-COSGROVE_FULLTEXT = P1_CONTENT_HOLD
+ANDANIA_HAIR_RULE != NO_HEADWEAR
+ANDANIA_HIERAI_PILOS != ALL_WOMEN_SAME_HEADWEAR
+ANDANIA_DATE = DISPUTED_91BCE_VS_C23CE
+LYCOSURA_KEKALYMMENOS_MASCULINE != MALE_ONLY_REFERENT_PROVED
+DITTENBERGER_TOUS_ANDRAS != INSCRIPTION_TEXT
+MASSEY_MALE_SPLIT = SCHOLARLY_INFERENCE
+LYCOSURA != PROOF_WOMEN_VEILED
+LYCOSURA != PROOF_WOMEN_UNVEILED
+RITUAL_COMPARAND != PAULS_DIRECT_SOURCE
 ```
 
 ---
 
-# 9. Relation to current Roman female-dress visual controls
-
-The epigraphic result should be held together with:
-
-- Thompson 1988 — Roman Corinth portraits;
-- Gill 1990 — Roman-colonial portraiture control;
-- Olson 2008 — prescriptive literature vs visual evidence;
-- Hughes 2007 — mixed early-imperial funerary representations;
-- Stafford 2024 — later visual-method control;
-- Fantham 2008 — ritual/gender chapter, body HOLD;
-- ASCSA *Corinth XXII* 2022 — Julian Basilica assemblage.
-
-Together they block both simplistic universals:
-
-```text
-ALL_RESPECTABLE_WOMEN_ALWAYS_VEILED = REJECT
-GREEK_RITUAL_WOMEN_NORMALLY_UNVEILED = NOT_ESTABLISHED_AS_UNIVERSAL
-```
-
----
-
-# 10. Effect on Nõmmik / Roman-trigger models
-
-Massey 2015 is not evidence for Nõmmik’s specific hidden-event reconstruction, but it reinforces a broader methodological possibility:
-
-> multiple head/hair conventions can coexist within ritual dress codes without reducing the whole issue to one artifact.
-
-This fits the project separation:
-
-```text
-ROMAN_CAPITE_VELATO_BACKGROUND = A
-FEMALE_STATUS/HAIR/COVERING_BACKGROUND = COMPLEX
-NOMMIK_HIDDEN_CORINTH_EVENTS = C_SERIOUS_RECONSTRUCTION
-V4_EXACT_CAPITE_VELATO = B_C
-```
-
----
-
-# 11. Result
+# 10. Result
 
 ```text
 CORE_GRADE_REVERSALS = 0
 MASSEY_2015_DIRECT_FULLTEXT = CLOSED
-ANDANIA_UNBOUND_HAIR_TRANSLATION = STRONGLY_CHALLENGED
-LYCOSURA_HAIR_AND_MALE_COVERING_RULES = DIRECTLY_CONTROLLED
-HAIR_RULE != NO_TEXTILE_VEIL = STRONG_COMPARATIVE_CONTROL
-MATERIAL_COVERING = B_HIGH_LEADING
-HAIR_ONLY = C_SERIOUS_ALTERNATIVE
-EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
+ANDANIA_DIRECT_INSCRIPTION = CLOSED
+ANDANIA_HIERAI_WHITE_PILOS = A_EPIGRAPHIC
+ANDANIA_WOMEN_HAIR_ADORNMENT_RESTRICTIONS = A_EPIGRAPHIC
+ANDANIA_DATE = DISPUTED
+LYCOSURA_DIRECT_TEXT = CLOSED
+LYCOSURA_MALE_ONLY_DIRECT_FACT = REJECTED_OVERCLAIM
+LYCOSURA_EXACT_GENDER_MAPPING = OPEN
+HAIR_AND_HEADWEAR_DISTINCT_REGULATORY_AXES = A_B_HIGH_COMPARATIVE
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 ```
