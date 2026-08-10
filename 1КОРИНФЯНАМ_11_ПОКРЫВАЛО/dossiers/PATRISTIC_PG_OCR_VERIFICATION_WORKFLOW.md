@@ -1,6 +1,6 @@
 # Patristic PG OCR verification workflow — coverage-aware evidence control
 
-**Статус:** `EVERGREEN-DOSSIER / OCR-LOCATOR / PG118-LIVE-TEST / PATRISTIC-SOURCE-HYGIENE / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Статус:** `EVERGREEN-DOSSIER / OCR-LOCATOR / PG-SCAN-OBJECT-CONTROL / TERMINAL-IMAGE-TRANSPORT / PATRISTIC-SOURCE-HYGIENE / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последняя проверка:** 2026-08-10
 
 ## 0. Назначение
@@ -97,10 +97,7 @@ PG82_THEODORET = NOT_COVERED_CURRENTLY
 PG118_OECUMENIUS = COVERED_CURRENTLY
 ```
 
-Therefore PG2026 does **not** by itself close:
-
-- Cyril PG 74, 879–883 direct-image HOLD;
-- Theodoret PG 82, 312D–313A direct-image HOLD.
+Therefore PG2026 does **not** by itself close the direct-image layer for Cyril PG 74, 879–883 or Theodoret PG 82, 312D–313A.
 
 ---
 
@@ -257,41 +254,57 @@ PUBLIC_DOMAIN = true
 
 The Commons page exposes navigation through page 409 and the original PDF binary.
 
-Current runtime limitation:
+Current runtime disposition:
 
 ```text
 PG118_ORIGINAL_BINARY_IDENTIFIED = true
-PG118_PAGE409_SCREENSHOT_AUTOPSY = NOT_COMPLETED
+PG118_PAGE409_SCREENSHOT_AUTOPSY = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
 ```
 
-The web PDF fetch returned an internal transport error despite the Commons object being valid. Therefore visual verification is still HOLD.
-
-This is a **transport limitation**, not evidence against the OCR locator.
+The original scan object is real and public-domain, but the target page image is not renderable through the present binary transport. This is a **transport limitation**, not evidence against the OCR locator and not permission to promote OCR to image-verified text.
 
 ---
 
-# 7. Existing Cyril / Theodoret status remains separate
+# 7. Cyril / Theodoret original-scan disposition
 
-## Cyril
+## 7.1 Cyril — PG74 879–883
+
+Independent corpus/index controls locate Cyril’s 1 Corinthians fragment corpus at PG74 856–916, with the 1 Cor 11 angel block strongly located at **PG74 879–883**. The 2026 OCR corpus does not currently include PG74.
+
+Wikimedia Commons directly exposes the public-domain original object `Patrologia Graeca Vol. 074.pdf`:
 
 ```text
-Cyril 1 Cor fragment corpus = Pusey III 249–318 / PG74 856–916
-1 Cor 11 angel block = PG74 879–883 strongly located
-Cramer Kytilou -> Cyril = strong multi-route attribution
+PG74_ORIGINAL_SCAN_OBJECT = CLOSED_PUBLIC_DOMAIN_COMMONS
+PG74_SCAN_PAGES = 558
+PG74_SCAN_FILE_SIZE = 67.78_MB
+PG74_SCAN_SHA1 = db3109f7faf65140603eb488acf4491b55c0ecbc
+CYRIL_1COR_FRAGMENT_CORPUS = PG74_856_916
+CYRIL_1COR11_TARGET = PG74_879_883
+CRAMER_KYTILOU_TO_CYRIL = STRONG_MULTI_ROUTE_ATTRIBUTION
 PG74_IN_PG2026 = false
-DIRECT_PG74_IMAGE = HOLD
+DIRECT_PG74_879_883_RENDERED_IMAGE = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
 ```
 
-## Theodoret
+The scan object and target columns are therefore **identified**, but the target image itself is not claimed as visually inspected.
+
+## 7.2 Theodoret — PG82 312D–313A
+
+Independent work/index controls locate the standalone 1 Corinthians commentary at **PG82 225D–376A** and the v10 guardian-angels discussion at **PG82 312D–313A**. Modern translation control remains Hill 2001 p.205.
+
+Wikimedia Commons directly exposes the public-domain original object `Patrologia Graeca Vol. 082.pdf`:
 
 ```text
-Standalone 1 Cor commentary = PG82 225D–376A
-v10 locator = PG82 312D–313A
-modern translation = Hill 2001 p205
-assigned/guardian-angels reception = strong two-route page-located
+PG82_ORIGINAL_SCAN_OBJECT = CLOSED_PUBLIC_DOMAIN_COMMONS
+PG82_SCAN_PAGES = 854
+PG82_SCAN_FILE_SIZE = 107.37_MB
+THEODORET_1COR_COMMENTARY = PG82_225D_376A
+THEODORET_V10_TARGET = PG82_312D_313A
+THEODORET_GUARDIAN_ANGELS_RECEPTION = STRONG_TWO_ROUTE_PAGE_LOCATED
 PG82_IN_PG2026 = false
-DIRECT_PG82_IMAGE = HOLD
+DIRECT_PG82_312D_313A_RENDERED_IMAGE = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
 ```
+
+Again, exact source object + target columns are closed; direct visual inspection is not fabricated.
 
 ---
 
@@ -303,6 +316,9 @@ OCR_DISCOVERY
 
 OCR_IMAGE_LOCATED
   volume/page/line mapped and source binary identified
+
+SCAN_OBJECT_AND_COLUMNS_CLOSED
+  original public-domain scan object + exact target columns identified; target page not visually rendered
 
 DIRECT_IMAGE_VERIFIED
   source page visually inspected and Greek matched
@@ -324,15 +340,17 @@ Never collapse these into generic `VERIFIED`.
 
 ---
 
-# 9. Current project use cases
+# 9. Final project-use disposition
 
-Immediate useful targets:
+No patristic scan target remains in an undifferentiated “keep retrying the same route” state.
 
-1. obtain/render PG118 page 409 and visually verify Clement + surrounding author transitions;
-2. search PG118 for additional explicit named fragments around 1 Cor 11;
-3. search current covered PG volumes for reused formulas around `ἐξουσία`, `κεφαλή`, `κατακαλύπτω`, angels and ritual order;
-4. use OCR only to generate exact image locators;
-5. keep original scan / critical edition as quote authority.
+```text
+PG118_PAGE409 = OCR_IMAGE_LOCATED / ORIGINAL_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINAL_TRANSPORT_HOLD
+CYRIL_PG74_879_883 = WORK_AND_COLUMNS_CLOSED / ORIGINAL_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINAL_TRANSPORT_HOLD
+THEODORET_PG82_312D_313A = WORK_AND_COLUMNS_CLOSED / ORIGINAL_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINAL_TRANSPORT_HOLD
+```
+
+Reopen direct-image acquisition only if a genuinely new renderable public-domain scan route, critical-edition page image, or local binary becomes available.
 
 Not valid:
 
@@ -341,6 +359,8 @@ CORPUS_FREQUENCY = ORIGINAL_PAULINE_MEANING
 LATE_PATRISTIC_USAGE = FIRST_CENTURY_SEMANTICS
 OCR_MATCH = AUTHORIAL_AUTHENTICITY
 OCR_ABSENCE = FATHER_NEVER_SAID_X
+SCAN_OBJECT_IDENTIFIED = PAGE_VISUALLY_VERIFIED
+TERMINAL_TRANSPORT_HOLD = NEGATIVE_EVIDENCE
 ```
 
 ---
@@ -389,11 +409,14 @@ PG118_1COR11_OCR = CLOSED
 PG118_CLEMENT_FRAGMENT = OCR_IMAGE_LOCATED_PAGE409
 PG118_PHOTIUS_PARALLEL = STRONG_TRANSMISSIONAL_CONVERGENCE
 PG118_ORIGINAL_SCAN_SHA1 = ceaa386b11edb3e4ae01971ab15e66a433952998
-PG118_PAGE409_DIRECT_IMAGE = HOLD_TRANSPORT
+PG118_PAGE409_DIRECT_IMAGE = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
 
-CYRIL_DIRECT_IMAGE_HOLD = UNCHANGED
-THEODORET_DIRECT_IMAGE_HOLD = UNCHANGED
+CYRIL_PG74_SCAN_OBJECT = CLOSED_PUBLIC_DOMAIN
+CYRIL_PG74_879_883_DIRECT_IMAGE = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
+THEODORET_PG82_SCAN_OBJECT = CLOSED_PUBLIC_DOMAIN
+THEODORET_PG82_312D_313A_DIRECT_IMAGE = TERMINAL_TRANSPORT_HOLD_CURRENT_RUNTIME
 
+PATRISTIC_ACTIVE_IMAGE_ACQUISITION_QUEUE_FOR_CURRENT_ROUTES = EMPTY
 OCR_LOCATOR -> PRIMARY_IMAGE -> QUOTE_SAFE = REQUIRED
 OCR_ALONE -> QUOTE_SAFE = PROHIBITED
 CORE_GRADE_REVERSALS = 0
