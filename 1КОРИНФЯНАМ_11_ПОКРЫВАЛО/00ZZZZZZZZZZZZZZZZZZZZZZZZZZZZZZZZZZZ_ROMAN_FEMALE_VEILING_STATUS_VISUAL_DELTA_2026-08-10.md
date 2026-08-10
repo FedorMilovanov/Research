@@ -1,13 +1,13 @@
 # 1 Коринфянам 11:2–16 — Roman female veiling / status / visual-method owner
 
 **Дата:** 2026-08-10  
-**Статус:** `ROMAN-SOCIAL-HISTORY / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority rule
 
 This file owns the cross-period methodological question:
 
-> what can Roman / late-antique female dress and visual evidence safely tell us about social status, veiling and actual practice?
+> what can Greek comparative, Roman and late-antique female dress and visual evidence safely tell us about social status, veiling and actual practice?
 
 Keep distinct:
 
@@ -26,11 +26,73 @@ ONE_TEXT_OR_ONE_STATUE != UNIVERSAL_DRESS_RULE
 NORMATIVE_TEXT != BEHAVIORAL_CENSUS
 PORTRAIT_SAMPLE != POPULATION_CENSUS
 LATE_ANTIQUITY != FIRST_CENTURY_CORINTH
+GREEK_WIDE_ROUTINE != EXACT_CORINTHIAN_CHRISTIAN_TRIGGER
 ```
 
 ---
 
-# 1. Fantham 2008 — exact specialist chapter, body HOLD
+# 1. Llewellyn-Jones 2003 — foundational Greek comparative control
+
+> Lloyd Llewellyn-Jones, *Aphrodite’s Tortoise: The Veiled Woman of Ancient Greece* (Classical Press of Wales, 2003), 358 pp. JSTOR stable `j.ctv1n357p0`, DOI `10.2307/j.ctv1n357p0`.
+
+Direct JSTOR book object:
+- https://www.jstor.org/stable/j.ctv1n357p0
+
+JSTOR exposes book-level metadata and direct chapter previews sufficient to control three important claims without relying on later summaries.
+
+### 1.1 Scope and routine practice
+
+The opening chapter states that the book studies women’s veiling across the Greek world from roughly **900 BCE to 200 CE**, including mainland Greece, Asia Minor, Egypt and South Italy, using literary and iconographic evidence.
+
+The conclusion, pp.315–318, states that women’s veiling was **routine** in Greek culture from the archaic through Roman periods and was probably followed by most women in ordinary relevant public / unrelated-male contexts.
+
+```text
+LLEWELLYN_JONES_2003_BOOK_IDENTITY = DIRECT_JSTOR
+LLEWELLYN_JONES_SCOPE_900BCE_200CE = DIRECT_CHAPTER_PREVIEW
+GREEK_FEMALE_VEILING_ROUTINE = STRONG_FOUNDATIONAL_SOURCE_CLAIM
+```
+
+This makes material female head/face covering historically unsurprising in the broader Greek world. It does **not** tell us that every first-century Corinthian Christian woman always wore one fixed garment in every setting.
+
+### 1.2 Anti-monocausal semantic control
+
+Chapter 6, “Veiled and Ashamed,” pp.155–188, directly rejects a one-cause explanation. Its preview says there is no single definitive answer or model for why Greek women veiled; modesty, honour/shame, social invisibility, pollution and sexuality all contribute, and their relative importance varies.
+
+```text
+VEILING_ONE_FIXED_SOCIAL_MEANING = REJECT
+VEILING_SOCIAL_SEMANTICS = MULTIVALENT_CONTEXT_DEPENDENT
+GREEK_FEMALE_VEILING_UNIVERSAL_WITHOUT_EXCEPTION = REJECT
+```
+
+This is an important control against converting a strong **routine-practice** claim into a universal monocausal dress law.
+
+### 1.3 Iconography method
+
+Chapter 4, pp.85–120, explicitly criticizes treating vase painting and other iconography as faithful, near-photographic depictions of ordinary daily life without accounting for medium, audience and genre.
+
+```text
+ICONOGRAPHY != BEHAVIORAL_PHOTOGRAPH
+VISUAL_UNVEILED_IMAGE != DAILY_UNVEILED_BEHAVIOR_AUTOMATICALLY
+VISUAL_METHOD_REQUIRES_GENRE_AUDIENCE_CONTEXT = DIRECT_JSTOR_CONTROL
+```
+
+This independently converges with Olson, Edsall, Hughes and Stafford.
+
+### 1.4 Calibration for 1 Cor 11
+
+```text
+MATERIAL_FEMALE_VEILING_HISTORICAL_PLAUSIBILITY = STRENGTHENED
+MATERIAL_COVERING = B_HIGH_LEADING // grade unchanged
+ALL_RESPECTABLE_WOMEN_ALWAYS_VEILED = REJECT
+EXACT_CORINTH_FEMALE_TRIGGER = RECONSTRUCTION_LAYER
+CORE_GRADE_REVERSALS = 0
+```
+
+Use Llewellyn-Jones as a foundational Greek social/material control, not as direct evidence that a specific Corinthian church event occurred.
+
+---
+
+# 2. Fantham 2008 — exact specialist chapter, body HOLD
 
 > Elaine Fantham, “Covering the Head at Rome: Ritual and Gender,” in *Roman Dress and the Fabrics of Roman Culture*, ed. Jonathan Edmondson and Alison Keith (Toronto: University of Toronto Press, 2008), 158–171. DOI `10.3138/9781442689039-012`.
 
@@ -47,7 +109,7 @@ Do not attribute detailed conclusions to Fantham from tertiary paraphrase before
 
 ---
 
-# 2. Kelly Olson 2008 — dress as status/moral vocabulary, not uniform costume
+# 3. Kelly Olson 2008 — dress as status/moral vocabulary, not uniform costume
 
 Publisher route:
 - https://www.routledge.com/Dress-and-the-Roman-Woman-Self-Presentation-and-Society/Olson/p/book/9780203927625
@@ -69,7 +131,7 @@ This blocks the mechanical claim that every respectable Roman woman always wore 
 
 ---
 
-# 3. Lisa A. Hughes 2007 — early-imperial freedwomen corpus
+# 4. Lisa A. Hughes 2007 — early-imperial freedwomen corpus
 
 Official journal route:
 - https://www.tandfonline.com/doi/abs/10.2752/175183407X219750
@@ -102,7 +164,7 @@ Invalid use: infer percentages for all Roman women or for the Corinthian church.
 
 ---
 
-# 4. Grace Stafford 2024 — late-antique visual-method control
+# 5. Grace Stafford 2024 — late-antique visual-method control
 
 Official Oxford route:
 - https://academic.oup.com/past/article/263/1/3/7516952
@@ -145,7 +207,7 @@ but neither is direct Corinthian Christian evidence.
 
 ---
 
-# 5. Galter 2021 — broad cultural-history background only
+# 6. Galter 2021 — broad cultural-history background only
 
 > Hannes D. Galter, “Veil and Headscarf: Five Aspects of a Cultural Phenomenon” (2021), in *Headscarf and Veiling: Glimpses from Sumer to Islam*.
 
@@ -161,7 +223,7 @@ Use only to prevent narrow universal claims; direct Roman Corinth evidence remai
 
 ---
 
-# 6. What this does to respectable-matron / marriage-status models
+# 7. What this does to respectable-matron / marriage-status models
 
 Current evidence supports:
 
@@ -189,7 +251,7 @@ WIVES_VS_ALL_WOMEN = OPEN_B_C
 
 ---
 
-# 7. Male ritual covering remains a separate axis
+# 8. Male ritual covering remains a separate axis
 
 The local Corinth `capite velato` objects are controlled in:
 
@@ -205,7 +267,7 @@ FEMALE_PALLA_STATUS != PROOF_V4_MALE_TRIGGER
 
 ---
 
-# 8. Reception-development firewall
+# 9. Reception-development firewall
 
 Later Christian veiling development is historically important but not a frozen photograph of Paul.
 
@@ -230,7 +292,7 @@ without independent first-century evidence.
 
 ---
 
-# 9. Visual-method owner
+# 10. Visual-method owner
 
 Best method:
 
@@ -252,11 +314,12 @@ PORTRAIT_FUNERARY_REPRESENTATION != DAILY_BEHAVIOR_CENSUS
 PRESCRIPTIVE_MATRONAL_IDEAL != EVERYDAY_UNIFORM
 UNVEILED_WOMAN != UNIVERSALLY_PROSTITUTE
 COVERED_WOMAN != AUTOMATICALLY_MARRIED_FREEBORN_MATRON
+GREEK_WIDE_ROUTINE_VEILING != EXACT_CORINTHIAN_CHRISTIAN_EVENT
 ```
 
 ---
 
-# 10. Acquisition queue
+# 11. Acquisition queue
 
 ```text
 P1 FANTHAM_2008_PP158_171 = DIRECT_BODY_HOLD
@@ -268,10 +331,14 @@ Hughes p.227 remains highest-value because it can move the 113/67/46 counts from
 
 ---
 
-# 11. Result
+# 12. Result
 
 ```text
 CORE_GRADE_REVERSALS = 0
+LLEWELLYN_JONES_2003 = DIRECT_JSTOR_FOUNDATIONAL_GREEK_CONTROL
+GREEK_FEMALE_VEILING_ROUTINE = STRONG_FOUNDATIONAL_SOURCE_CLAIM
+VEILING_ONE_FIXED_SOCIAL_MEANING = REJECT
+ICONOGRAPHY_AS_DAILY_PHOTOGRAPH = REJECT_METHOD
 ROMAN_FEMALE_STATUS_DRESS_COMPLEXITY = STRENGTHENED
 HUGHES_EARLY_IMPERIAL_VISUAL_CORPUS = CONTROLLED
 STAFFORD_LATE_ANTIQUE_VISUAL_METHOD = CONTROLLED
