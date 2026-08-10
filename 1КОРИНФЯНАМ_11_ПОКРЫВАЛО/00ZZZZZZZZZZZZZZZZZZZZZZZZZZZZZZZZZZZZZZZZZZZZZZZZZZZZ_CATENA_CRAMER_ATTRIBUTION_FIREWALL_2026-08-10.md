@@ -1,24 +1,25 @@
 # 1 Коринфянам 11 — Cramer/Paris gr. 227 catena attribution firewall
 
 **Дата:** 2026-08-10  
-**Статус:** `PRIMARY-CATENA-EDITION / ATTRIBUTION-FIREWALL / PATRISTIC-RECEPTION / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `PRIMARY-CATENA-EDITION / ATTRIBUTION-FIREWALL / CYRIL-THEODORET-RECONCILED / PHOTIAN-SCHOLIA / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Why this file exists
 
-Catenae are unusually dangerous for source attribution. A page can preserve multiple excerpts under short author labels such as `Θεοδωρίτου`, `Ἰωάννου`, `Φωτίου`, followed by `Τοῦ Αὐτοῦ` (“of the same [author]”). If labels are not tracked linearly, a real ancient comment can easily be assigned to the wrong Father.
+Catenae are unusually dangerous for source attribution. A page can preserve excerpts under short labels such as `Θεοδωρίτου`, `Ἰωάννου`, `Φωτίου`, followed by `Τοῦ Αὐτοῦ` (“of the same [author]”). If labels are not tracked linearly, a real ancient comment can easily be assigned to the wrong Father.
 
-This file controls one such case in the Vatican-type catena on 1 Corinthians.
+This file is now reconciled with the later Cyril and Theodoret provenance deltas and with modern research on **Scholia Photiana**.
 
 ```text
 CATENA_TEXT != SINGLE_AUTHOR_COMMENTARY
-TOU_AUTOU = PREVIOUS_EXPLICIT_AUTHOR_LABEL
+TOU_AUTOU = PREVIOUS_CONTROLLING_EXPLICIT_AUTHOR_LABEL
 CATENA_LABEL != INDEPENDENT_AUTHENTICITY_PROOF
 DIGITAL_TRANSCRIPTION_LABEL != SILENTLY_NORMALIZE_WITHOUT_CONTROL
+CATENA_SCHOLION != LOST_STANDALONE_COMMENTARY_DIRECTLY_AVAILABLE
 ```
 
 ---
 
-# 1. Edition / object
+# 1. Edition / manuscript basis
 
 Scaife ATLAS exposes:
 
@@ -28,157 +29,227 @@ CTS URN:
 
 `urn:cts:greekLit:tlg4102.tlg012.1st1K-grc1`
 
-Scaife metadata identifies the source edition as:
+Scaife identifies the edition as:
 
-> J. A. Cramer (ed.), *Catenae Graecorum Patrum in Novum Testamentum*, vol. 5 (Oxford: Oxford University Press, 1841).
+> J. A. Cramer (ed.), *Catenae Graecorum Patrum in Novum Testamentum*, vol. 5 (Oxford, 1841).
 
-Direct routes:
+Routes:
 
-- work metadata: https://atlas.perseus.tufts.edu/library/urn:cts:greekLit:tlg4102.tlg012.1st1K-grc1/
-- passage containing 1 Cor 11: https://atlas.perseus.tufts.edu/library/passage/urn:cts:greekLit:tlg4102.tlg012.1st1K-grc1:6-7/
+- https://atlas.perseus.tufts.edu/library/urn:cts:greekLit:tlg4102.tlg012.1st1K-grc1/
+- https://atlas.perseus.tufts.edu/library/passage/urn:cts:greekLit:tlg4102.tlg012.1st1K-grc1:6-7/
 
-The catena is compiled reception evidence. It is not automatically the same thing as consulting a critical edition of each named Father’s original standalone commentary.
+Modern catena scholarship independently notes that for both Corinthian epistles Cramer principally used **Paris, BnF grec 227 (GA 1937)** and compared additional Oxford witnesses.
+
+Therefore:
+
+```text
+CRAMER_1COR_CATENA = REAL_MANUSCRIPT_BASED_EDITION
+CRAMER_CATENA != CRITICAL_EDITION_OF_EACH_FATHER
+```
 
 ---
 
-# 2. Theodoret: a real labelled reconstruction of the Corinthian situation
+# 2. Theodoret-labelled Corinth reconstruction
 
 Near the opening of the 1 Cor 11 unit, the catena explicitly labels a block:
 
 `Θεοδωρίτου.`
 
-The block states that Corinthian women had been accustomed not to cover their heads even at prayer, and that some, proud of eloquence, attempted to teach in church.
-
-This is important **as Theodoret-attributed reception/reconstruction**.
+The block reconstructs Corinthian women as praying uncovered and some women as attempting public teaching.
 
 Safe status:
 
 ```text
-CATENA_THEODORET_CORINTHIAN_WOMEN_UNCOVERED_AT_PRAYER = DIRECT_LABELLED_CATENA_RECEPTION
-CATENA_THEODORET_WOMEN_TRIED_TO_TEACH = DIRECT_LABELLED_CATENA_RECEPTION
-THEODORET_RECONSTRUCTION = NOT_INDEPENDENT_FIRST_CENTURY_CORINTH_EVIDENCE
+CATENA_THEODORET_CORINTH_RECONSTRUCTION = DIRECT_LABELLED_CATENA_RECEPTION
+THEODORET_RECONSTRUCTION != FIRST_CENTURY_CORINTH_EVIDENCE
 ```
 
-Do not use a fifth-century commentator’s reconstruction as though it were an archaeological report from first-century Corinth.
+Later work in this branch independently closed Theodoret’s **assigned/guardian-angels** interpretation through his standalone commentary at:
+
+```text
+PG82_312D_313A
+Hill 2001 p205
+```
+
+with Acts 12:15 and Matthew 18:10 as support texts.
+
+Thus the current distinction is:
+
+```text
+CATENA_THEODORET_TRIGGER_RECONSTRUCTION = CATENA_RECEPTION
+THEODORET_GUARDIAN_ASSIGNED_ANGELS = STRONG_TWO_ROUTE_PAGE_LOCATED_STANDALONE_RECEPTION
+DIRECT_PG82_PAGE_IMAGE = HOLD
+```
+
+Do not transfer neighboring catena angel fragments to Theodoret.
 
 ---
 
-# 3. The angels “established at the churches” block — author label is not safe to normalize yet
+# 3. `Κυτίλλου` is now strongly normalized to Cyril of Alexandria
 
-A later block begins in the Scaife/Cramer digital transcription with the explicit label:
+The Cramer/Scaife digital transcription repeatedly gives the odd label:
 
 `Κυτίλλου.`
 
-The same block continues through the statement that the woman should be covered because of the angels, glossing them as those:
+The associated 1 Cor 11 block interprets the angels as:
 
 `τοὺς ταῖς ἐκκλησίαις ἐνιδρυμένους παρὰ Θεοῦ`
 
-— those established by God at/among the churches — who are distressed if the rule of propriety is neglected.
+— those established by God at/over the churches — who are distressed when propriety is neglected.
 
-Critical source-hygiene point:
+The first pass correctly refused to normalize this label by guesswork alone.
 
-```text
-DIGITAL_LABEL = ΚΥΤΙΛΛΟΥ
-SILENT_NORMALIZATION_TO_CYRIL/KYRILLOS = NOT_AUTHORIZED_YET
-```
-
-The wording may reflect a transcription/OCR/edition issue, and the surrounding theology may suggest an identifiable Father, but this pass does **not** claim a normalized author until the printed Cramer page or manuscript label is directly checked.
-
-Therefore:
+Independent fragment-edition provenance later established:
 
 ```text
-ANGELS_ESTABLISHED_AT_CHURCHES_READING = DIRECT_CATENA_FRAGMENT
-EXACT_NORMALIZED_AUTHOR = ATTRIBUTION_HOLD
+CYRIL_1COR_FRAGMENT_CORPUS = Pusey III 249–318 / PG74 856–916
+CYRIL_1COR11_ANGEL_BLOCK = PG74 879–883 STRONGLY_LOCATED
 ```
 
-This corrects an intermediate overconfident working note that called the block “Cyril” before the label itself was inspected carefully.
+The same sequence and angel interpretation converge with the catena block.
+
+Current status therefore supersedes the old HOLD:
+
+```text
+CATENA_KYTILLOU = STRONGLY_IDENTIFIED_AS_CYRIL_OF_ALEXANDRIA
+EXPECTED_LABEL = ΚΥΡΙΛΛΟΥ
+DIGITAL_KYTILLOU = CORRUPT/TRANSCRIPTIONAL_OR_EDITIONAL_FORM
+DIRECT_PG74_PAGE_IMAGE = HOLD
+DIRECT_CRAMER_PRINT_LABEL_IMAGE = HOLD
+```
+
+Methodological lesson:
+
+```text
+ODD_LABEL -> DO_NOT_GUESS
+ODD_LABEL + INDEPENDENT_FRAGMENT_CORPUS + SAME_SEQUENCE = CALIBRATED_NORMALIZATION
+```
 
 ---
 
-# 4. `Ἰωάννου` block — do not confuse it with neighboring authors
+# 4. `Ἰωάννου` — do not create a new Chrysostom quote from a generic John label
 
-After the `Κυτίλλου` block the catena explicitly switches to:
+After the Cyril/Kytilou block the catena switches to:
 
 `Ἰωάννου.`
 
-The ensuing material interprets male head covering broadly enough to include both garment and long hair and treats female covering as a sign associated with subjection/authority.
+The material interprets male head covering broadly enough to include garment and long hair and treats female covering in an authority/subjection framework.
 
-Because the label itself says only “John” in the catena transcription, this file does not use this fragment to create a new independent Chrysostom quotation without cross-control from Chrysostom’s directly transmitted homily.
-
-Project rule:
+Because the catena label itself is only `John`, source ownership should be cross-controlled against directly transmitted Chrysostom before calling it Chrysostom.
 
 ```text
 CATENA_IOANNOU != AUTOMATIC_NEW_CHRYSOSTOM_QUOTE
-DIRECT_CHRYSOSTOM_HOMILY > CATENA_FOR_CHRYSOSTOM_ATTRIBUTION
+DIRECT_CHRYSOSTOM_HOMILY > CATENA_FOR_CHRYSOSTOM_OWNER
 ```
+
+This branch now has such a direct Chrysostom control for his main Homily 26 reconstruction, but the rule remains necessary for each specific scholion.
 
 ---
 
-# 5. Photius: `Τοῦ Αὐτοῦ` can be assigned securely by local label tracking
+# 5. Photius — secure local catena attribution
 
-Later, immediately before the v10 interpretive block, the catena explicitly labels material:
+Immediately before relevant interpretive material the catena explicitly labels:
 
 `Φωτίου.`
 
-The following paragraph begins:
+The following v10 paragraph begins:
 
 `Τοῦ Αὐτοῦ.`
 
-Because no intervening explicit author label occurs, `Τοῦ Αὐτοῦ` refers locally to **Photius**.
-
-This gives a directly controlled catena attribution for a substantive v10 interpretation.
+No intervening explicit author label occurs. Therefore `Τοῦ Αὐτοῦ` resolves locally to **Photius**.
 
 ## 5.1 Photius on `ἐξουσία`
 
-The fragment says the woman should have/display on her head the authority/lordship of the man to whom she is subject, realized through being covered; it explicitly treats the covering as something that may be called `ἐξουσία` because it indicates that authority.
-
-Safe reception statement:
+The scholion explains that the woman should have/display on her head the authority/lordship of the man to whom she is subject, realized through covering; the covering itself may be called `ἐξουσία` because it indicates male authority.
 
 ```text
 PHOTIUS_V10_PASSIVE_SIGN_READING = DIRECT_CATENA_ATTRIBUTION
 PHOTIUS_COVERING_AS_INDICATOR_OF_MALE_AUTHORITY = DIRECT_CATENA_ATTRIBUTION
 ```
 
-This is **reception history**, not lexical proof that `ἐξουσία` itself normally means “veil” or “symbol of another person’s authority.” The project’s lexical/syntactic controls remain unchanged.
+This is reception history, not lexical proof that `ἐξουσία` normally means `veil` or `symbol of someone else’s authority`.
 
 ## 5.2 Photius on the angels
 
-The same fragment says the angels are:
+The same scholion calls the angels:
 
 `μάρτυρες καὶ ἐπόπται`
 
-— witnesses and overseers/observers — of the woman’s subjection.
-
-Thus:
+— witnesses and observers/overseers — of the woman’s subjection.
 
 ```text
-PHOTIUS_ANGELS_AS_WITNESSES_OBSERVERS_OF_ORDER = DIRECT_CATENA_ATTRIBUTION
+PHOTIUS_ANGELS_AS_WITNESSES_OBSERVERS = DIRECT_CATENA_ATTRIBUTION
 ```
 
-This is a genuine ancient/medieval reception variant that belongs near the broader “cosmic witnesses / assembly observers” family, but it does not automatically prove the original Pauline function.
+## 5.3 PG118 gives independent transmission convergence
+
+The 2026 CGPG OCR corpus locates on PG118 PDF page 409 a substantially matching v10 block:
+
+- `ἐξουσία` explained as `κάλυμμα`;
+- covering as indication of male authority;
+- angels as `μάρτυρες καὶ ἐπόπται`.
+
+PG118 does not by itself label that entire block as Photius, so source ownership still comes from Cramer’s explicit `Φωτίου -> Τοῦ Αὐτοῦ` sequence.
+
+```text
+CRAMER = OWNER_CONTROL
+PG118 = INDEPENDENT_TRANSMISSIONAL_CONVERGENCE
+PG118_UNLABELLED_BLOCK != OECUMENIUS_PERSONAL_VIEW_AUTOMATICALLY
+```
 
 ---
 
-# 6. Theodoret guardian-angels claim remains HOLD
+# 6. Important correction: PG101 standalone search is not the right evidential target
 
-Crucially, the inspected Cramer catena passage does **not** directly close the previously reported claim that Theodoret reads the angels of 1 Cor 11:10 specifically as personal guardian angels.
+An attempted search for a standalone Photius commentary in PG101 produced access/index failures. Modern specialist research clarifies why that route should **not** be treated as the required endpoint.
 
-Theodoret-labelled material is present around vv7–16, but the directly inspected v10-region does not give a secure Theodoret-labelled guardian-angels gloss.
+## 6.1 Coppola 2021
+
+Chiara Coppola, University of Birmingham PhD:
+
+> *A new analysis of the Scholia Photiana in the Pseudo-Oecumenian catena tradition* (2021).
+
+Institutional route:
+
+- https://etheses.bham.ac.uk/id/eprint/11932
+
+Her abstract explains that Karl Staab edited numerous scholia ascribed to Photius from the **Typus Vaticanus** and **Erweiterte Typus** catena traditions and hypothesized that the scholia may derive from a more extended Pauline commentary by Photius that has since been **lost**.
 
 Therefore:
 
 ```text
-THEODORET_GUARDIAN_ANGELS = STRONG_SECONDARY_ATTRIBUTION / PRIMARY_LOCATOR_HOLD
-CATENA_DOES_NOT_CLOSE_THEODORET_GUARDIAN_ANGELS = true
+PHOTIAN_SCHOLIA_IN_CATENAE = REAL_TEXTUAL_TRADITION
+LOST_FULLER_PHOTIAN_PAUL_COMMENTARY = SCHOLARLY_HYPOTHESIS
+EXTANT_STANDALONE_PHOTIUS_1COR_COMMENTARY_REQUIRED = FALSE_ASSUMPTION
 ```
 
-Do not transfer the `Κυτίλλου` or Photius angel comments to Theodoret merely because Theodoret appears nearby in the catena.
+## 6.2 Marcon 2025
+
+Jacopo Marcon, *The Pseudo-Oecumenian Catena on Romans* (De Gruyter, 2025), devotes a full chapter to:
+
+> `The Scholia Photiana in the manuscripts of Staab’s Erweiterter Typus (CPG C165.3)`
+
+and separately studies relationships among the Pauline catena types, including Typus Vaticanus.
+
+Publisher route:
+
+- De Gruyter/Brill book DOI `10.1515/9783111437842`.
+
+This current scholarship supports treating **catena-preserved Photian scholia** as the primary surviving evidence class, rather than assuming that PG101 must contain a complete standalone Pauline commentary.
+
+Current rule:
+
+```text
+PHOTIUS_STANDALONE_PG101_SEARCH = WRONG_OR_UNNECESSARY_TARGET_FOR_THIS_SCHOLION
+PHOTIUS_1COR11_OWNER = CATENA_PRESERVED_SCHOLIA_PHOTIANA
+POSSIBLE_LOST_FULL_COMMENTARY != EXTANT_OBJECT
+```
+
+This improves provenance without proving that every Photian-labelled scholion is authorially authentic beyond question.
 
 ---
 
-# 7. Why this matters for the current angel map
-
-Current reception map now has more sharply separated owners:
+# 7. Current differentiated angel map
 
 ```text
 TERTULLIAN = WATCHERS/GEN6
@@ -186,12 +257,13 @@ CHRYSOSTOM = HEAVENLY_ANGELS_PRESENT_AT_WORSHIP
 AMBROSIASTER = BISHOPS
 SEVERIAN = REPORTS_SOME_SAY_CHURCH_PRIESTS
 CLEMENT_FRAGMENT = RIGHTEOUS/VIRTUOUS_HUMAN_OBSERVERS
+CYRIL = ANGELS_ESTABLISHED_AT/OVER_CHURCHES; ECCLESIAL_PROPRIETY
+THEODORET = ANGELS_ASSIGNED_OVER_HUMANS; CARE/OVERSIGHT
 PHOTIUS = ANGELS_AS_WITNESSES/OBSERVERS_OF_SUBJECTION
-CATENA_KYTILLOU_BLOCK = ANGELS_ESTABLISHED_AT_CHURCHES / NORMALIZED_AUTHOR_HOLD
-THEODORET_GUARDIAN_ANGELS = PRIMARY_LOCATOR_HOLD
+VALENTINIAN_RECEPTION = ACHAMOTH/SAVIOUR_ANGELIC_ATTENDANTS_REPORTED_BY_IRENAEUS
 ```
 
-This diversity supports the current project distinction:
+This diversity supports:
 
 ```text
 ANGEL_REFERENT != EXACT_ANGEL_FUNCTION
@@ -205,20 +277,23 @@ PATRISTIC_DIVERSITY != ORIGINAL_MEANING_BY_VOTE
 
 For every catena claim:
 
-1. identify the catena edition/manuscript basis;
-2. capture the **nearest preceding explicit author label**;
-3. track whether an intervening label occurs;
-4. resolve `Τοῦ Αὐτοῦ` only to the immediately controlling explicit label;
-5. do not silently normalize a corrupt/odd digital label;
-6. prefer a Father’s standalone critical text when available;
-7. separate `catena attributes X to author Y` from `author Y certainly wrote X` where authenticity/transmission is not independently controlled.
+1. identify catena edition and manuscript basis;
+2. capture the nearest controlling explicit author label;
+3. track every intervening label;
+4. resolve `Τοῦ Αὐτοῦ` only locally;
+5. do not silently normalize corrupt/odd labels;
+6. compare with independently edited fragments/standalone works where they exist;
+7. distinguish `catena attributes X to author Y` from `authorial authenticity independently closed`;
+8. do **not** demand a nonexistent standalone commentary when modern transmission scholarship identifies the scholia as catena-preserved remnants.
 
-Machine rule:
+Machine rules:
 
 ```text
 CATENA_NEARBY_NAME != CLAIM_OWNER
 TOU_AUTOU_WITHOUT_LABEL_TRACKING = NEVER_QUOTE_SAFE
 CATENA_ATTRIBUTION != AUTHORIAL_AUTHENTICITY_AUTOMATICALLY
+LOST_COMMENTARY_HYPOTHESIS != EXTANT_STANDALONE_SOURCE
+TRANSMISSIONAL_PARALLEL != INDEPENDENT_HISTORICAL_WITNESS
 ```
 
 ---
@@ -227,11 +302,16 @@ CATENA_ATTRIBUTION != AUTHORIAL_AUTHENTICITY_AUTOMATICALLY
 
 ```text
 CORE_GRADE_REVERSALS = 0
+
 PHOTIUS_V10_PASSIVE_SIGN_READING = DIRECT_CATENA_RECEPTION
 PHOTIUS_ANGELS_WITNESSES_OBSERVERS = DIRECT_CATENA_RECEPTION
-THEODORET_CORINTH_RECONSTRUCTION = DIRECT_CATENA_RECEPTION_NOT_FIRST_CENTURY_FACT
-THEODORET_GUARDIAN_ANGELS = STILL_PRIMARY_LOCATOR_HOLD
-KYTILLOU_BLOCK_NORMALIZED_AUTHOR = HOLD
+PHOTIUS_PG118_PARALLEL = STRONG_TRANSMISSIONAL_CONVERGENCE
+PHOTIAN_SCHOLIA_CATENA_TRADITION = MODERN_SPECIALIST_CONTROL
+PHOTIUS_STANDALONE_PG101_REQUIRED = REJECTED_ASSUMPTION
+
+CYRIL_KYTILLOU_NORMALIZATION = STRONG_MULTI_ROUTE
+THEODORET_GUARDIAN_ASSIGNED_ANGELS = STRONG_TWO_ROUTE_PAGE_LOCATED
+
 CATENA_ATTRIBUTION_FIREWALL = REQUIRED
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
