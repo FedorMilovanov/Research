@@ -28,6 +28,7 @@ SAME_LOCALITY != SAME_OBJECT_OR_PERSON
 ADJACENT_STELE_ICONOGRAPHY != TARGET_INSCRIPTION_ICONOGRAPHY
 PHI_ORDINAL != AUTOMATICALLY_REHM_OR_CURRENT_EDITION_NUMBER
 WORD_PROPHETIS_IN_AN_INSCRIPTION != FEMALE_PERSON_AUTOMATICALLY
+REFERENCE_LIST_ENTRY != VERIFIED_PROPHETESS_OBJECT_AUTOMATICALLY
 ROMAN_GREEK_JEWISH_CHRISTIAN_COMPARAND != EXACT_CORINTH_TRIGGER
 NEGATIVE_BOUNDED_SEARCH != GLOBAL_NONEXISTENCE
 ```
@@ -49,11 +50,12 @@ A new corpus-list item must pass **noun-bearer / syntax audit** before entering 
 | Ammias, Thyateira | direct priestess + vision-oracle formula | oracular priestly control, **not prophetis** | **No** |
 | Ammia, Philadelphia | Eusebian female prophetess | early-Christian reception | **No** |
 | Nanas, Phrygia | direct PHI-indexed `προφήτισα`; epitaph/tombstone | late female prophetess object | **No marker found** |
-| Apphe, Kalchedon | `IK Kalchedon 61 = CIG 3796`, Roman funerary inscription | external Apollo prophetis | **No marker found** |
+| Apphe, Kalchedon | `IK Kalchedon 61 = CIG 3796`, Roman funerary inscription; independent lexicon control | external Apollo prophetis | **No marker found** |
 | Miletos 481 | women among divine-manifestation channels | female divine information | **No** |
-| Eresos / IG XII Suppl.126 | sanctuary regulation includes priestess/prophetess office | institutional office control | **No named woman** |
+| Eresos / IG XII Suppl.126 | late-Hellenistic sanctuary regulation excepts priestess + prophetess from female temple-entry ban | direct institutional office control | **No named woman** |
 | Thera / IG XII.3 1349/863 | text refers to a Delphic `[προφ]ῆτις` sending oracle | anonymous/literary-epigraphic control | **No** |
 | IGLSyr 1 51 | `ἀναγραφή` itself called `προφήτις` | semantic false-positive control | **Not a woman** |
+| Athens / IG II² 13148 | direct PHI-indexed three-line female funerary epigram; no `προφῆτις` visible | reference-conflict control | **Not countable as prophetess** |
 | Nisyra / SEG 49.1624 | exact object pinned; target syntax/body incomplete | candidate-list HOLD | **Unknown** |
 | Termessos / TAM III,1 870 | exact list reference only | candidate-list HOLD | **Unknown** |
 | Andania / Lycosura | direct ritual hair/headwear regulation | separate regulatory axes | **Yes, but not prophetess** |
@@ -320,10 +322,12 @@ DATE = ROMAN_PERIOD
 RELATION = PATRONA_OF_ORBANILLA / ORBANILLA_AS_THREPTE
 ```
 
-The same study explicitly distinguishes Apphe from other Kalchedonian religious officials and treats the inscription as Roman-period funerary evidence.
+Independent lexical control also cites **CIG 3796 (Chalcedon)** as an epigraphic example of `προφῆτις`. The prosopographic study independently crosswalks `IK Kalchedon 61 = CIG 3796` and identifies Apphe as the Roman-period funerary bearer of that office.
 
 ```text
-APPHE_PROPHETIS = B_HIGH_EXACT_CORPUS_PROSOPOGRAPHIC_CONTROL
+APPHE_CIG3796_PROPHETIS_LEXICON_CONTROL = INDEPENDENT_DIRECT_REFERENCE
+APPHE_IK61_CIG3796_CROSSWALK = STRONG_SPECIALIST
+APPHE_PROPHETIS = B_HIGH_MULTISOURCE_CORPUS_CONTROL
 APPHE_DIRECT_CORPUS_BODY = HOLD
 APPHE_HEAD_HAIR_CODE = NOT_FOUND
 ```
@@ -334,7 +338,13 @@ No iconography/head-state is attributed until the exact object/edition is acquir
 
 # 5. `prophetis` candidate-list syntax audit
 
-Nawotka footnote 77 usefully supplies external epigraphic references, but **a list of texts containing `prophetis` is not automatically a list of historical women**.
+Nawotka footnote 77 supplies **ten external inscription references** as comparanda for prophetesses. That list is valuable for discovery but cannot be treated as ten verified historical women. Direct checking already produces both a semantic false positive and a reference conflict.
+
+```text
+NAWOTKA_FN77_TEN_REFERENCES = AUTHOR_LIST_COUNT
+TEN_REFERENCES != TEN_VERIFIED_HISTORICAL_PROPHETESSES
+REFERENCE_LIST_ENTRY_REQUIRES_NOUN_BEARER_AUDIT = true
+```
 
 ## 5.1 IGLSyr 1 51 — decisive false-person control
 
@@ -367,27 +377,58 @@ PHI exposes:
 
 Safe use: epigraphic mention of an anonymous Delphic prophetess transmitting an oracle. It is **not** a named Theran female-office prosopography entry and supplies no head-state.
 
-## 5.3 Eresos / Lesbos — `IG XII Suppl.126`
+## 5.3 Eresos / Lesbos — `IG XII Suppl.126 = Schwyzer DGE 633 = LSCG 124`
 
-Current specialist control treats this as a sanctuary-regulation context in which female priestly/prophetic office is institutionally recognized.
+A published sanctuary regulation from Eresos is preserved in a 22-line text and dated epigraphically to the **late second or early first century BCE**. The regulation governs ritual purity and access to the sanctuary. Its temple-entry rule excludes women **except the priestess and the prophetess**.
+
+Independent source genealogy:
 
 ```text
-ERESOS_PROPHETESS_OFFICE = INSTITUTIONAL_CONTROL
-NAMED_WOMAN = NO
-HEAD_HAIR_CODE = NO
+IG_XII_SUPPL_126
+= SCHWYZER_DGE_633
+= LSCG_124
+= ERESOS_SANCTUARY_REGULATION
 ```
 
-## 5.4 Nisyra — `SEG 49.1624`
+The office is therefore a real pre-Pauline institutional control, not a modern inference from a generic word search.
+
+```text
+ERESOS_PROPHETESS_OFFICE = A_B_HIGH_PUBLISHED_REGULATION_CONTROL
+ERESOS_DATE = LATE_2C_TO_EARLY_1C_BCE
+ERESOS_PROPHETESS_NAMED_WOMAN = NO
+ERESOS_HEAD_HAIR_CODE = NO
+```
+
+This strengthens the existence of a female mantic office in Greek ritual space without supplying a veil/headband/hair rule.
+
+## 5.4 Athens — `IG II² 13148 / PH15638`: reference conflict
+
+Nawotka footnote 77 lists `IG II² 13148` among the ten external prophetess-inscription references. Direct PHI indexing, however, exposes a short female funerary epigram whose preserved text concerns the deceased woman, her stele, her failure to enter the marriage chamber and the grief left to her nurses.
+
+The full PHI-indexed entry visible in the search corpus is only three lines, and **no `προφῆτις` title or mantic vocabulary is visible in that indexed text**.
+
+```text
+IGII2_13148_PHI_OBJECT = 15638
+IGII2_13148 = DIRECT_PHI_INDEXED_FEMALE_FUNERARY_EPIGRAM
+IGII2_13148_PROPHETIS_IN_INDEXED_TEXT = NOT_VISIBLE
+NAWOTKA_FN77_IGII2_13148 = STRONG_REFERENCE_CONFLICT
+COUNT_AS_SECURE_PROPHETESS = NO_PENDING_PRINT_EDITION_RESOLUTION
+```
+
+Do not silently “repair” the citation to a neighboring inscription. A print-edition or explicit erratum check is required before deciding whether this is a typographical reference error, an omitted/lost textual component, or another bibliographic problem.
+
+## 5.5 Nisyra — `SEG 49.1624`
 
 ```text
 PHI_OBJECT = 348429
+TRISMEGISTOS_ID = TM 949255
 LOCATION = NISYRA_LYDIA
 DIRECT_BODY_CURRENT_RUNTIME = CACHE_HOLD
 ```
 
-Search surface currently exposes only the opening dedication formula; it is insufficient to determine who/what bears `prophetis` in the full text.
+The PHI search surface exposes only the opening dedication formula beginning `Θεῷ Βασιλεῖ ...` and is insufficient to determine who/what bears `prophetis` in the complete text.
 
-Adjacent `SEG 49.1623` is a **different marble stele** (48/47 BCE) with olive branch and double axe above its inscription.
+Adjacent `SEG 49.1623` is a **different marble stele** (48/47 BCE) with olive branch and double axe above its inscription; the direct PHI page for 1623 confirms that description and full dedication to Apollo and Artemis.
 
 ```text
 SEG49_1623_ICONOGRAPHY != SEG49_1624_ICONOGRAPHY
@@ -395,12 +436,23 @@ NISYRA_1624_FEMALE_PERSON = HOLD_UNTIL_BODY
 NISYRA_1624_HEAD_STATE = UNKNOWN
 ```
 
-## 5.5 Termessos — `TAM III,1 870`
+## 5.6 Termessos — `TAM III,1 870`
 
-Exact reference is preserved as an acquisition target, but direct body / noun-bearer has not yet been acquired.
+Exact reference and deterministic PHI corpus mapping (`PH280975`) are preserved as acquisition targets, but direct body / noun-bearer has not yet been acquired.
 
 ```text
+TERMESSOS_TAMIII1_870_PH280975 = DETERMINISTIC_CORPUS_MAPPING
 TERMESSOS_TAMIII1_870 = BODY_AND_SYNTAX_HOLD
+DO_NOT_COUNT_AS_NAMED_FEMALE_PERSON_YET
+```
+
+## 5.7 Lebadeia — `IG VII 3111`
+
+Nawotka footnote 77 also lists `IG VII 3111`. A deterministic PHI corpus mapping (`PH146626`) has been identified, but the direct body remains unresolved in the current runtime.
+
+```text
+IGVII_3111_PH146626 = DETERMINISTIC_CORPUS_MAPPING
+IGVII_3111 = BODY_AND_NOUN_BEARER_HOLD
 DO_NOT_COUNT_AS_NAMED_FEMALE_PERSON_YET
 ```
 
@@ -516,6 +568,7 @@ AGATHO_WIFE_OF_PROPHET != AGATHO_PROPHETIS
 AMMIAS_THYATEIRA != AMMIA_PHILADELPHIA
 THYATEIRA_ORACLE_FUNCTION != PROPHETIS_TITLE
 IGLSYR_1_51_PROPHETIS != FEMALE_PERSON
+IGII2_13148_REFERENCE_LIST_ENTRY != VERIFIED_PROPHETESS
 VISUAL_HONOUR != SURVIVING_PORTRAIT
 ARCHAIC_VEILED_WOMAN != FIRST_CENTURY_PROPHETESS
 ADJACENT_NISYRA_STELE != TARGET_NISYRA_STELE
@@ -560,8 +613,11 @@ POTTA_HEAD_HAIR_CODE = NOT_ATTESTED
 AMMIAS_HEAD_HAIR_CODE = NOT_ATTESTED
 NANAS_HEAD_HAIR_CODE = NOT_FOUND
 APPHE_HEAD_HAIR_CODE = NOT_FOUND
+ERESOS_PROPHETESS_OFFICE = PRE_PAULINE_INSTITUTIONAL_NO_HEAD_CODE
+IGII2_13148 = REFERENCE_CONFLICT_NOT_SECURE_PROPHETESS
 NISYRA_1624 = SYNTAX_OBJECT_HOLD
 TERMESSOS_870 = SYNTAX_OBJECT_HOLD
+IGVII_3111 = SYNTAX_OBJECT_HOLD
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
@@ -577,6 +633,7 @@ HAIR_ONLY = C_SERIOUS_ALTERNATIVE
 EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
 
 FEMALE_DIVINE_MEDIATION_IN_ASIA_MINOR = A_B_HIGH
+PRE_PAULINE_GREEK_PROPHETESS_OFFICE_IN_RITUAL_SPACE = A_B_HIGH_CONTROL
 EARLY_CHRISTIAN_FEMALE_PROPHECY_AFTER_PAUL = STRONG_RECEPTION_CONTROL
 RITUAL_HEADWEAR_AND_HAIR_CAN_BE_SEPARATELY_REGULATED = A_PRIMARY
 RITUAL_ROLE_CAN_CARRY_VISUAL_OR_COSTUME_CODE = B_HIGH_COMPARATIVE
@@ -585,7 +642,7 @@ DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 
 Safe synthesis:
 
-> Female mantic/prophetic agency is directly attested in several Asia-Minor and early-Christian environments, while ritual rules can independently regulate headwear and hair. The broadened corpus now includes secure named women such as Tryphosa, Potta, Nanas and Apphe, but it also demonstrates why lexical hits cannot be counted mechanically (`IGLSyr 1 51`). No near-Pauline direct object has yet been verified in which the same identified prophetess/promantis bears a specific veil/headband/hair code capable of explaining Corinth.
+> Female mantic/prophetic agency is directly attested in several Greek, Asia-Minor and early-Christian environments, while ritual rules can independently regulate access, headwear and hair. The broadened corpus includes secure named women such as Tryphosa, Potta, Nanas and Apphe and a pre-Pauline institutional prophetess office at Eresos. But the same audit also demonstrates why reference lists and lexical hits cannot be counted mechanically: `IGLSyr 1 51` is a personified inscription, and `IG II² 13148` currently conflicts with the direct PHI-indexed funerary text. No near-Pauline direct object has yet been verified in which the same identified prophetess/promantis bears a specific veil/headband/hair code capable of explaining Corinth.
 
 ---
 
@@ -596,17 +653,18 @@ Safe synthesis:
 1. Potta `TAM V.1 535 / PH263959` direct body.
 2. Nanas `PH271564` + Tabbernee fig.77 / same-object image description.
 3. Apphe `IK Kalchedon 61 = CIG 3796` direct edition/object + iconography.
-4. Nisyra `SEG 49.1624 / PH348429` complete text, noun-bearer, object description.
-5. Termessos `TAM III,1 870` direct text, noun-bearer, object description.
-6. Didyma III.7 full body search for female mantic titles + head/hair terms.
-7. Didyma 235B direct stone/Rehm page.
+4. Nisyra `SEG 49.1624 / PH348429 / TM949255` complete text, noun-bearer, object description.
+5. Termessos `TAM III,1 870 / PH280975` direct text, noun-bearer, object description.
+6. Lebadeia `IG VII 3111 / PH146626` direct body + noun-bearer.
+7. Didyma III.7 full body search for female mantic titles + head/hair terms.
+8. Didyma 235B direct stone/Rehm page.
 
 ### P1
 
-8. Remaining Nawotka footnote-77 references through noun-bearer audit (`IG II² 13148`, `IG VII 3111`, etc.).
-9. Corrington 1991 direct full text.
-10. Claros personnel system with gender/status/object controls.
-11. Additional historical images/bases tied to named mantic women.
+9. Resolve `IG II² 13148 / PH15638` reference conflict against the printed IG edition / errata / explicit secondary discussion.
+10. Corrington 1991 direct full text.
+11. Claros personnel system with gender/status/object controls.
+12. Additional historical images/bases tied to named mantic women.
 
 ---
 
@@ -618,6 +676,7 @@ SITE_PUBLICATION = false
 PUBLICATION_HOLD = true
 AGENT_DISCOVERY != AUTHORITY
 DIRECT_OBJECT > SECONDARY_SUMMARY
+REFERENCE_LIST != VERIFIED_PERSON_LIST
 ROLE != HEAD_CODE
 PRIESTESS != PROPHETIS_AUTOMATICALLY
 LITERARY_TROPE != ETHNOGRAPHIC_FACT
