@@ -133,9 +133,9 @@ Key debate source: Joseph Fitzmyer, “Another Look at Kephale in 1 Corinthians 
 
 Preston Massey специально исследует `κατακαλύπτω` и `κατὰ κεφαλῆς ἔχων` и заключает в пользу textile covering: https://www.cambridge.org/core/journals/new-testament-studies/article/abs/meaning-of-and-in-1-corinthians-11216/3B94F4462B2AC39852FE16FBECD46E38
 
-### B — Roman ritual reconstruction
+### B/C — Roman ritual reconstruction
 
-Oster/Gill делают сильной гипотезу, что мужская проблема может быть связана с Roman `capite velato` worship/status practice. Сам такой Roman ritual background — historical A; то, что **именно это делали Corinthian Christian men**, остаётся B reconstruction.
+Oster/Gill делают сильной гипотезу, что мужская проблема может быть связана с Roman `capite velato` worship/status practice. Сам такой Roman ritual background — historical **A**; то, что **именно эту практику отражает v.4**, остаётся `B_C`, а конкретный Corinthian trigger — reconstruction-layer.
 
 Gill open full-text route: https://www.tyndalebulletin.org/article/30525-the-importance-of-roman-portraiture-for-head-coverings-in-1-corinthians-11-2-16
 
@@ -154,7 +154,9 @@ Hair/hairstyle reading: `having something down from the head` как длинн�
 ### Verdict
 
 `MATERIAL_COVERING_v4 = B_HIGH`  
-`ROMAN_CAPITE_VELATO_AS_EXACT_TRIGGER = B`  
+`ROMAN_CAPITE_VELATO_BACKGROUND = A`  
+`ROMAN_CAPITE_VELATO_AS_EXACT_v4 = B_C`  
+`EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER`  
 `HAIR_ONLY_v4 = C`
 
 ---
@@ -340,21 +342,34 @@ Recent rhetorical proposals make vv.4–9 a Corinthian quotation which Paul late
 
 Hooker's classic discussion records the difficulty of reading `ἐξουσία` as authority merely suffered from another: https://www.cambridge.org/core/journals/new-testament-studies/article/abs/authority-on-her-head-an-examination-of-i-cor-xi-10/947E8A98C64ACEA00D2BD815F0F8BDE5
 
-### B/C — leading conservative synthesis
+### B-high — semantic direction
+
+The active construction gives a strong semantic pull toward the woman as **bearer/possessor of authority/right/control**. That direction is not merely an egalitarian alternative; it is part of the current lexical baseline.
+
+```text
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
+```
+
+### B/C — exact referent / contextual synthesis
 
 A material covering can still function as an **authority-related sign**, but that is contextual interpretation, not lexical substitution `ἐξουσία = veil/sign of subjection`.
 
+Likewise, the active direction does not itself decide whether the exact referent is:
+
+- control/right regarding her head/head presentation;
+- authority/right to pray or prophesy;
+- authorized ministry;
+- a status/authority sign embodied in covering;
+- another discourse-specific relation.
+
 Conservative formulations must preserve woman's grammatical agency.
 
-### Strongest alternative
-
-Woman's **own authority/right/control over her head**, possibly authority to pray/prophesy or to arrange/cover her head. Newberry interprets v.10 as affirming woman's authority while holding together patriarchal vv.7–9 and mutuality vv.11–12.
+Newberry interprets v.10 as affirming woman's authority while holding together patriarchal vv.7–9 and mutuality vv.11–12.
 
 ### Lower alternatives
 
-- authority = authorized ministry;
-- authority = control of hairstyle;
-- veil as metonymic authority;
+- authority = control of hairstyle as the exact referent;
+- veil as purely passive metonym of another person's authority;
 - textual gloss `κάλυμμα` reflected in weak later evidence, not original control.
 
 ## 10c. `διὰ τοὺς ἀγγέλους`
@@ -363,31 +378,46 @@ Woman's **own authority/right/control over her head**, possibly authority to pra
 
 Paul invokes `the angels`; exact identity/function is unstated.
 
-### B leading
+### B-high leading referent
 
-Holy/liturgical angels present in sacred assembly. Fitzmyer's Qumran evidence strengthens this existing interpretation while explicitly recognizing many historical alternatives: https://www.cambridge.org/core/journals/new-testament-studies/article/feature-of-qumran-angelology-and-the-angels-of-i-cor-xi-10/59CE5686A3600CB7F51184CD960286F1
+The best current referent family is **heavenly/holy angels**. Same-letter angel language, especially 1 Cor 4:9, plus Qumran/heavenly-assembly controls make a celestial referent strongly preferable to human messengers or clergy.
 
-### C
+Fitzmyer's Qumran evidence strengthens this existing interpretation while explicitly recognizing historical alternatives: https://www.cambridge.org/core/journals/new-testament-studies/article/feature-of-qumran-angelology-and-the-angels-of-i-cor-xi-10/59CE5686A3600CB7F51184CD960286F1
 
-Watchers/fallen angels (Tertullian/Gen 6 reception). Ancient and real, but Paul never identifies them.
+Within that family, cosmic witness/presence is leading, while the **exact** liturgical/purity/decorum function remains open.
 
-### D/C-low
+```text
+HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
+ANGELS_AS_COSMIC_WITNESSES_PRESENT_ASSEMBLY = B_LEADING
+EXACT_ANGELIC_FUNCTION = B_C
+```
 
-- human messengers from other churches (Murphy-O'Connor);
-- bishops/church leaders (Ambrosiaster);
-- prophets;
-- betrothal messengers;
-- guardian angels;
-- angels who could be confused by human glory;
-- women who will judge angels therefore exercise authority (a modern intertextual proposal).
+### C serious
+
+Watchers/fallen angels (Tertullian/Gen 6 reception). Ancient background and reception are real, but Paul never identifies v10's angels as fallen.
+
+### Lower alternatives
+
+```text
+GUARDIAN_ANGELS = C_LOW
+HUMAN_MESSENGERS = D_C_LOW
+BISHOPS_CLERGY = D_C_LOW_RECEPTION
+HOOKER_MISDIRECTED_WORSHIP_FUNCTION = D_C_LOW_TO_C_PUBLISHED_ALTERNATIVE
+```
+
+Other low-evidence proposals include prophets, betrothal messengers and a modern intertextual proposal that women exercise authority because believers will judge angels.
 
 ### Verdict
 
-`EXOUSIA_WOMAN_SUBJECT = A`  
-`EXOUSIA_EXACT_REFERENT = B/C`  
-`HOLY_LITURGICAL_ANGELS = B_LEADING`  
-`WATCHERS = C`  
-`HUMAN/CLERGY_VARIANTS = D_OR_C_LOW`
+`EXOUSIA_WOMAN_SUBJECT = A_SYNTAX`  
+`EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH`  
+`EXOUSIA_EXACT_REFERENT = B_C`  
+`HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING`  
+`ANGELS_AS_COSMIC_WITNESSES_PRESENT_ASSEMBLY = B_LEADING`  
+`EXACT_ANGELIC_FUNCTION = B_C`  
+`WATCHERS = C_SERIOUS_ALTERNATIVE`  
+`GUARDIAN_ANGELS = C_LOW`  
+`HUMAN_MESSENGERS / BISHOPS_CLERGY = D_C_LOW`
 
 ---
 
@@ -479,13 +509,18 @@ The argument is not **only** culture: vv.3,7–12 invoke Christology/creation/an
 
 Paul appeals to `nature itself` and states that if a man `κομᾷ` (wears long hair / has long tresses), it is `ἀτιμία` for him.
 
-### B/C — what `φύσις` is doing
+### B-high leading model
 
-Leading conservative reading: perceived natural/creational sex differentiation expressed through culturally recognizable hair patterns. `φύσις` need not be reduced either to pure biology or pure arbitrary custom.
+Current primary-social corpus best explains `φύσις` here as **sexed naturalized propriety**: perceived embodied/created sexual difference is expressed through socially legible grooming and evaluated through honor/shame. This is neither raw follicular biology nor arbitrary local custom.
+
+```text
+PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
+EXACT_BIOLOGY_CULTURE_MIX = B_C
+```
 
 ### Strongest alternative
 
-`φύσις` = socially habituated sense of what is natural / convention internalized as propriety. Callon notes current scholarship commonly recognizes culturally construed nature in this passage.
+`φύσις` can be weighted more heavily toward socially habituated convention/internalized propriety. The lexical/corpus range keeps the exact biology/culture ratio open.
 
 ### Edge ancient-physiology reading
 
@@ -497,9 +532,11 @@ Murphy-O'Connor/MacGregor connect male long hair to homosexual gender coding. Pu
 
 ### Verdict
 
-`SEX_DIFFERENTIATION_ARGUMENT = B`  
-`PHYSIS_ONLY_BIOLOGY = OVERCLAIM`  
-`PHYSIS_ONLY_ARBITRARY_CUSTOM = OVERCLAIM`
+`V14_15_EVALUATIVE_SEX_CODE = A`  
+`PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING`  
+`EXACT_BIOLOGY_CULTURE_MIX = B_C`  
+`PHYSIS_ONLY_BIOLOGY = REJECTED`  
+`PHYSIS_ONLY_ARBITRARY_CUSTOM = REJECTED`
 
 ---
 
@@ -526,7 +563,7 @@ Massey's lexical case remains important here.
 
 ### D/C-low physiology
 
-`περιβόλαιον = testicle/reproductive organ` proposal is not controlling; Goodacre's critique blocks use as decisive interpretation.
+`περιβόλαιον = testicle/reproductive organ` proposal is not controlling; Goodacre's critique blocks use as decisive interpretation. Martin 2013 remains a direct-body published defense of a specialized contextual/euphemistic reconstruction, not evidence that “testicle” is the normal lexical sense.
 
 ### Translation caution
 
@@ -535,7 +572,8 @@ Massey's lexical case remains important here.
 ### Verdict
 
 `HAIR_AS_ANALOGICAL_NATURAL_COVERING = B_HIGH`  
-`HAIR_ONLY_FOR_WHOLE_PERICOPE = C_SERIOUS_ALTERNATIVE`
+`HAIR_ONLY_FOR_WHOLE_PERICOPE = C_SERIOUS_ALTERNATIVE`  
+`PERIBOLAION_TESTICLE_THEORY = D_C_LOW`
 
 ---
 
@@ -576,8 +614,10 @@ v.16 strengthens ecclesial/common-practice weight but still does not by itself d
 ### Verdict
 
 `CHURCH_WIDE_APPEAL = A`  
-`EXACT_REFERENT_OF_TOIAUTEN_SYNĒTHEIAN = B/C`  
-`v16_CANCELS_v2_15 = D/VERY_WEAK`
+`V16_NORMATIVE_FORCE = B_HIGH`  
+`V16_NO_CONTRARY_ALTERNATIVE_PRACTICE = B_LEADING`  
+`EXACT_REFERENT_OF_TOIAUTEN_SYNĒTHEIAN = B_C`  
+`v16_CANCELS_v2_15 = D_C_LOW`
 
 ---
 
@@ -599,11 +639,12 @@ v.16 strengthens ecclesial/common-practice weight but still does not by itself d
 - material/textile covering is the best reading of vv.4–6,13;
 - `κεφαλή` carries headship/authority/predominance force in v.3, though origin dimension remains relevant;
 - creation order is theological, therefore issue is not mere arbitrary fashion;
-- v.10 preserves woman's agency while remaining embedded in ordered creation argument;
-- holy/liturgical angels are the best historical-theological reading;
+- v.10 preserves woman's active authority/right-bearing semantic direction while leaving the exact referent B_C;
+- heavenly/holy angels are the leading referent family; cosmic witness/presence is leading while exact angelic function remains B_C;
 - vv.11–12 prevent hierarchy from becoming unilateral superiority;
-- nature/hair functions as analogical reinforcement of sex differentiation;
-- church-wide practice closes the argument.
+- `φύσις` is best modeled as sexed naturalized propriety, with exact biology/culture weighting open;
+- hair functions as analogical natural covering while hair-only remains a serious alternative;
+- church-wide practice has B_HIGH normative force, while the exact `τοιαύτην συνήθειαν` referent remains B_C.
 
 ## 3. Strongest alternatives that must remain visible (`C`)
 
@@ -611,7 +652,7 @@ v.16 strengthens ecclesial/common-practice weight but still does not by itself d
 - hair/hairstyle-only covering;
 - wives/free(d)-wives rather than all women;
 - private/non-assembly prayer/prophecy;
-- woman's own authority/control as primary v.10 meaning;
+- specific own-head/control/ministry construal of the exact v10 `ἐξουσία` referent;
 - Watchers;
 - culturally translated rather than identical-material modern application.
 
