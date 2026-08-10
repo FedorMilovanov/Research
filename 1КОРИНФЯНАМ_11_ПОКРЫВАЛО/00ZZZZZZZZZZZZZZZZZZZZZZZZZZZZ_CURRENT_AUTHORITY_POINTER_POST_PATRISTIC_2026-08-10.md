@@ -1,9 +1,9 @@
 # 1 Коринфянам 11:2–16 — post-patristic authority pointer
 
 **Дата:** 2026-08-10  
-**Статус:** `LATEST-BRANCH-AUTHORITY / ADDITIVE-SUCCESSOR-POINTER / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `LATEST-BRANCH-AUTHORITY / CURRENT-EDITION-ARCHAEOLOGY-ADVANCED / ADDITIVE-SUCCESSOR-POINTER / RESEARCH-ONLY / PUBLICATION-HOLD`
 
-This file is an additive successor to `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` on this branch. It exists because the later primary-corpus, multilingual, visual-archaeology and patristic controls were added after that pointer’s last full rewrite. It does **not** replace the current claim registry for grades.
+This file is an additive successor to `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` on this branch. It does **not** replace the current claim registry for grades.
 
 ## Controlling read order
 
@@ -17,7 +17,10 @@ This file is an additive successor to `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY
 8. `00ZZZZZZZZZZZZZZZZZZZZZZZZZ_MULTILINGUAL_RECENT_CONTROL_2026-08-10.md` — Czech/Portuguese/Swedish/German current controls.
 9. `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md` — Corinth object provenance + image-rights ledger.
 10. `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_SPEAKER_BOUNDARY_CONTROL_2026-08-10.md` — Tertullian/Chrysostom/Ambrosiaster speaker-boundary control.
-11. `data/1cor11-corpus-multilingual-visual-patristic-supplement-2026-08-10.json` — machine-readable supplement for the later controls.
+11. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CURRENT_EDITION_ARCHAEOLOGY_ACQUISITION_DELTA_2026-08-10.md`** — Starling 2025 current commentary target; deSilva 2025 Roman Corinth archaeology target; direct Thompson 1988 archaeology owner; current acquisition/HOLD map.
+12. **`00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ASSET_CUSTODY_CHECKSUM_SUPPLEMENT_2026-08-10.md`** — preferred open S-1116/S-1088 image files, original binary URLs, CC BY-SA 4.0 rights and SHA-1 identity pins.
+13. `data/1cor11-corpus-multilingual-visual-patristic-supplement-2026-08-10.json` — machine supplement for prior later controls.
+14. **`data/1cor11-current-edition-archaeology-acquisition-2026-08-10.json`** — machine receipt for the current-edition/archaeology acquisition pass.
 
 ## Current delta summary
 
@@ -39,7 +42,16 @@ ROMAN_CAPITE_VELATO_BACKGROUND = A
 CORINTH_S1116 = AUGUSTUS_CAPITE_VELATO / JULIAN_BASILICA / ASCSA_PROVENANCE
 CORINTH_S1088 = VEILED_JULIO_CLAUDIAN / PERSON_ID_DISPUTED
 S1116_S1088_OPEN_IMAGE_CANDIDATES = CC_BY_SA_4_0
+S1116_IMAGE_SHA1 = 5bd067867204a13353d3175fa2c704d60163359a
+S1088_IMAGE_SHA1 = 0752c9a5dbd0269f8da48449e288a3c1e44abfc4
 V4_EXACT_CAPITE_VELATO = B_C
+
+THOMPSON_1988 = DIRECT_PUBLISHER_ARCHAEOLOGY_B1
+ASCSA_CORINTH_XXII_2022 = CURRENT_JULIAN_BASILICA_ASSEMBLAGE_CONTROL
+DESILVA_2025_ROMAN_CORINTH_126_156 = CURRENT_ARCHAEOLOGY_TARGET
+DESILVA_2025_1COR11_SPECIFIC_USE = LOCATOR_HOLD
+STARLING_EBTC_2025 = VERIFIED_CURRENT_COMMENTARY
+STARLING_2025_1COR11_SECTION = CONTENT_HOLD
 
 NEWBERRY_2019 = REAL_B1_1_ESDRAS_INTERTEXT_CONTROL
 COSTA_2023_24 = REAL_B1_LINGUISTIC_QUOTATION_PROPOSAL
@@ -77,6 +89,19 @@ V16_EXACT_CUSTOM_REFERENT = B_C
 ONE_ESDRAS_4_INTERTEXT = B_C_SERIOUS_PROPOSED
 ```
 
+## Current high-value acquisition queue
+
+```text
+P0 Thiselton 2000 full section + notes = HOLD
+P0 Fee Revised 2014 full section + notes/addendum = HOLD
+P0 Garland 2025 pp468-493 + notes = HOLD
+P0 Ciampa/Rosner 2010 pp503-540 + notes = DETAIL_HOLD
+P0/P1 Starling EBTC 2025 exact 1 Cor 11 section = NEW_CONTENT_HOLD
+P1 Nommik DiVA full object = RUNTIME_HOLD
+P1 deSilva 2025 Roman Corinth pp126-156 = ACQUIRE_AND_TEST_SPECIFIC_1COR11_USE
+P1 Olson/Fantham female dress/portrait sections = HOLD
+```
+
 ## Fail-closed boundary
 
 ```text
@@ -84,9 +109,11 @@ AGENT_DUMP = DISCOVERY_ONLY
 FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
 DIRECT_QUOTE_FROM_AGENT = NEVER_QUOTE_SAFE_WITHOUT_DIRECT_TEXT
 PUBLISHED_MODEL != EQUALLY_PROBABLE_MODEL
+CURRENT_EDITION != POSITION_VERIFIED
 EARLY_RECEPTION != ORIGINAL_AUTHORIAL_INTENT
 VISUAL_OBJECT != EXEGETICAL_PROOF
 OBJECT_METADATA != IMAGE_RIGHTS
+COMMONS_FILENAME != ARCHAEOLOGICAL_IDENTIFICATION_CERTAINTY
 RECENCY != AUTHORITY
 PRODUCT_WRITE = false
 SITE_PUBLICATION = false
