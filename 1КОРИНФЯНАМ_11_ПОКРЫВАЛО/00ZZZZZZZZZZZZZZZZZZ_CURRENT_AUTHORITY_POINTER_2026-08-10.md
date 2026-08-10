@@ -1,0 +1,128 @@
+# 1 Коринфянам 11:2–16 — reconciled current authority pointer
+
+**Дата:** 2026-08-10  
+**Статус:** `LATEST-AUTHORITY-POINTER / RECONCILED-CLAIM-REGISTRY / RESEARCH-ONLY / PUBLICATION-HOLD`
+
+## Read this first for current status
+
+1. **`00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md`** — current grade for each claim and controlling specialized file.
+2. **`00ZZZZZZZZZZZZZZZZZZ_AUTHORITY_RECONCILIATION_AND_SUPERSESSION_2026-08-10.md`** — explains how later claim-specific audits supersede coarse 2026-08-09 labels without rewriting history.
+3. `00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md` — provenance/ownership/publication boundary.
+4. `00Z_FINAL_CLAIM_CALIBRATION_2026-08-09.md` — historical baseline calibration, superseded claim-by-claim where registry says so.
+
+## Specialized evidence order
+
+5. `00ZZZZZ_VERSE_BY_VERSE_ADVERSARIAL_AUDIT_1COR11_2_16_2026-08-10.md`
+6. `00ZZZZZZ_MODEL_STRESS_TEST_MATRIX_1COR11_2_16_2026-08-10.md`
+7. `00ZZZZZZZ_CANONICAL_BOUNDARY_AUDIT_11_5_14_34_35_1TIM2_2026-08-10.md`
+8. `00ZZZZZZZZ_SPEECH_FUNCTION_TAXONOMY_1COR11_14_1TIM2_2026-08-10.md`
+9. `00ZZZZZZZZZ_P0_OPEN_PREVIEW_DELTA_AUDIT_2026-08-10.md`
+10. `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
+11. `00ZZZZZZZZZZZ_NOMMIK_OPEN_ROUTE_ADVERSARIAL_AUDIT_2026-08-10.md`
+12. `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
+13. `00ZZZZZZZZZZZZZ_GREEK_LEXICAL_PRIMARY_CORPUS_AUDIT_2026-08-10.md`
+14. `00ZZZZZZZZZZZZZZ_ANGELS_PRIMARY_CORPUS_AUDIT_2026-08-10.md`
+15. `00ZZZZZZZZZZZZZZZ_V16_CONVENTION_TRANSLOCAL_PRACTICE_AUDIT_2026-08-10.md`
+16. `00ZZZZZZZZZZZZZZZZ_GENESIS_CREATION_INTERTEXT_AUDIT_11_7_12_2026-08-10.md`
+17. `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
+18. source ledgers/cards and older thematic dossiers as needed.
+
+---
+
+## Current core snapshot
+
+```text
+MATERIAL_COVERING = B_HIGH_LEADING
+HAIR_ONLY = C_SERIOUS_ALTERNATIVE
+HAIR_AS_NATURAL_ANALOGY = B_HIGH
+
+KEPHALE_HEADSHIP_AUTHORITY = B_LEADING
+KEPHALE_SOURCE_ONLY = C_VIABLE
+
+CREATION_ORDER/ASYMMETRY = B_HIGH
+GENESIS_IMAGO_SHARED_MALE_FEMALE = A_B_HIGH_PRIMARY_CONTROL
+CALIBRATED_CREATION_MUTUAL_ORDER_MODEL = B_HIGH_LEADING
+
+EXOUSIA_WOMAN_SUBJECT = A
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
+EXOUSIA_EXACT_REFERENT = B_C
+
+HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
+ANGELS_AS_COSMIC_WITNESSES/PRESENT_ASSEMBLY = B_LEADING
+EXACT_ANGELIC_FUNCTION = B_C
+WATCHERS = C_SERIOUS_ALTERNATIVE
+
+PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
+EXACT_BIOLOGY_CULTURE_MIX = B_C
+
+ROMAN_CAPITE_VELATO_BACKGROUND = A
+V4_EXACT_CAPITE_VELATO = B_C
+EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
+
+WIVES_VS_ALL_WOMEN = OPEN_B_C
+WOMEN_PRAY_PROPHESY_11_5 = A
+MUTUAL_INTERDEPENDENCE_11_11_12 = A
+ALL_THINGS_FROM_GOD_11_12 = A
+
+V16_TRANSLOCAL_CHURCH_PRACTICE_APPEAL = A
+V16_NORMATIVE_FORCE = B_HIGH
+V16_NO_CONTRARY/ALTERNATIVE_PRACTICE = B_LEADING
+V16_EXACT_CUSTOM_REFERENT = B_C
+```
+
+---
+
+## Most important supersession notes
+
+```text
+OLD_HOLY_LITURGICAL_ANGELS_B
+  -> split into identity B_HIGH, witness/presence B, exact function B_C
+
+OLD_EXACT_CAPITE_VELATO_B_RECONSTRUCTION
+  -> Roman background A, exact v4 identification B_C
+
+OLD_PHYSIS_BROAD_B_C
+  -> sexed naturalized propriety B_HIGH, exact biology/culture mix B_C
+
+OLD_EXOUSIA_ONLY_SYNTAX_A
+  -> syntax A + active woman-bearer semantic pull B_HIGH; exact referent B_C
+
+NO_OLD_EXPLICIT_IMAGO_GUARD
+  -> Genesis male+female imago A/B-high; female-not-image inference C-low
+
+OLD_V16_BROAD_REFERENT
+  -> translocal appeal A, normative force B-high, no-contrary-practice B-leading, exact ellipsis B/C
+```
+
+---
+
+## P0 closed-material boundary
+
+Still unresolved at full section+notes level:
+
+```text
+THISELTON_NIGTC_2000 = HOLD
+FEE_NICNT_REVISED_2014 = HOLD
+GARLAND_BECNT_2E_2025 = HOLD
+CIAMPA_ROSNER_PNTC_2010 = DETAIL_HOLD (macro partly closed)
+```
+
+Do not ask the user for material available through agent-access routes. If a P0 section later becomes directly available, produce a claim-by-claim delta receipt against the registry.
+
+---
+
+## Product TЗ boundary
+
+Future interactive Russian-front / Greek-flip analytical matrix remains preserved in:
+
+`00ZZZZZ_PRODUCT_HANDOFF_TZ_INTERACTIVE_GREEK_RUSSIAN_FLIP_MATRIX_2026-08-10.md`
+
+No UI implementation is authorized by this pointer.
+
+```text
+DO_NOT_REQUEST_FROM_USER_IF_AGENT_CAN_ACCESS = true
+PRODUCT_WRITE = false
+UI_IMPLEMENTATION = false
+SITE_PUBLICATION = false
+PUBLICATION_HOLD = true
+```

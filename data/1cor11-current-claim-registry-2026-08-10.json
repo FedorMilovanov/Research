@@ -1,0 +1,73 @@
+{
+  "scope": "1 Corinthians 11:2-16 current claim registry after 2026-08-10 primary/adversarial audits",
+  "date": "2026-08-10",
+  "status": "CURRENT_CLAIM_REGISTRY_RESEARCH_ONLY_PUBLICATION_HOLD",
+  "authority_rule": {
+    "provenance_owner": "00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md",
+    "historical_baseline": "00Z_FINAL_CLAIM_CALIBRATION_2026-08-09.md",
+    "current_grade_rule": "latest claim-specific audit wins for that claim only",
+    "silent_rewrite_historical_files": false
+  },
+  "core": {
+    "material_covering": "B_HIGH_LEADING",
+    "hair_only": "C_SERIOUS_ALTERNATIVE",
+    "hair_as_natural_analogy": "B_HIGH",
+    "kephale_headship_authority": "B_LEADING",
+    "kephale_source_only": "C_VIABLE",
+    "creation_order_asymmetry": "B_HIGH",
+    "genesis_imago_shared_male_female": "A_B_HIGH_PRIMARY_CONTROL",
+    "exousia_woman_subject": "A_SYNTAX",
+    "exousia_active_woman_bearer_pull": "B_HIGH",
+    "exousia_exact_referent": "B_C",
+    "heavenly_holy_angels_referent": "B_HIGH_LEADING",
+    "angels_cosmic_witness_present_assembly": "B_LEADING",
+    "exact_angelic_function": "B_C",
+    "watchers": "C_SERIOUS_ALTERNATIVE",
+    "physis_sexed_naturalized_propriety": "B_HIGH_LEADING",
+    "physis_exact_biology_culture_mix": "B_C",
+    "roman_capite_velato_background": "A",
+    "v4_exact_capite_velato": "B_C",
+    "exact_corinth_trigger": "RECONSTRUCTION_LAYER",
+    "wives_vs_all_women": "OPEN_B_C",
+    "women_pray_prophesy_11_5": "A",
+    "mutual_interdependence_11_11_12": "A",
+    "all_things_from_god_11_12": "A",
+    "v16_translocal_church_practice_appeal": "A",
+    "v16_normative_force": "B_HIGH",
+    "v16_no_contrary_alternative_practice": "B_LEADING",
+    "v16_exact_custom_referent": "B_C"
+  },
+  "specific_refinements": {
+    "sign_of_husbands_authority_literal_greek": "REJECTED",
+    "sign_of_husbands_authority_interpretation": "C_WITH_EXTRA_SEMANTIC_STEPS",
+    "v7_denies_female_imago_dei": "C_LOW_NOT_EXPLICIT",
+    "v11_12_cancel_creation_asymmetry": "C_LOW",
+    "v16_cancels_v2_15": "D_C_LOW",
+    "peribolaion_testicle_theory": "D_C_LOW",
+    "exact_homosexual_role_trigger": "D_C_LOW_TO_C",
+    "large_quotation_refutation": "D_C_LOW",
+    "interpolation_11_3b_15": "D_C_LOW",
+    "interpolation_14_34_35": "C_SERIOUS_TEXTUAL_HYPOTHESIS"
+  },
+  "current_models": {
+    "calibrated_creation_mutual_order": "B_HIGH_LEADING",
+    "nommik_ritual_uniformity_capite_velato": "C_SERIOUS_CURRENT_RECONSTRUCTION",
+    "peters_citizen_body": "C_SERIOUS_CURRENT_MODEL",
+    "callon_free_d_married_women": "B_C_SERIOUS_CURRENT_MODEL"
+  },
+  "p0_holds": {
+    "thiselton_2000": "pp.800-847 plus notes",
+    "fee_revised_2014": "approx pp.542-586 plus notes/addendum",
+    "garland_2025_second_edition": "complete current 11:2-16 section plus notes",
+    "ciampa_rosner_2010": "pp.503-540 plus notes; macro thesis partly closed"
+  },
+  "global_rules": {
+    "do_not_request_user_if_agent_can_access": true,
+    "recency_is_not_authority": true,
+    "secondary_quote_is_not_current_edition_evidence": true,
+    "product_write": false,
+    "ui_implementation": false,
+    "site_publication": false,
+    "publication_hold": true
+  }
+}
