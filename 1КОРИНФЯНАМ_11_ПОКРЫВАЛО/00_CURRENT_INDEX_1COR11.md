@@ -38,22 +38,9 @@ Do not infer authority from filename recency or the number of `Z` characters.
 
 # 3. `ἐξουσία`
 
-**Evergreen owner:**
-
 - `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`
 
-Owns:
-
-```text
-v10 ἐξουσίαν / κάλυμμα transmission
-formal ἐξουσία + ἐπί taxonomy
-Fendel 2023 documentary corpus
-female documentary/epigraphic right-bearers
-restoration/source-type firewalls
-bounded exact-head-parallel search
-```
-
-Current:
+Owns v10 `ἐξουσίαν/κάλυμμα`, formal `ἐξουσία + ἐπί`, Fendel 2023, female documentary right-bearers and bounded exact-head search.
 
 ```text
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
@@ -66,31 +53,15 @@ EXACT_NONBIBLICAL_HEAD_PHRASE = NOT_FOUND_IN_BOUNDED_SEARCH
 
 # 4. Hair / `φύσις` / hairstyle
 
-**Canonical primary-social owner:**
-
 - `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
 
-Owns both:
-
-```text
-LONG_HAIR / KOMAŌ / PHYSIS
-UNBOUND_DISHEVELLED_HAIR_POLYSEMY
-```
-
-Firewall:
+Owns both long-hair/`κομάω`/`φύσις` and unbound/dishevelled-hair polysemy.
 
 ```text
 LONG_HAIR != UNBOUND_HAIR
 UNBOUND_HAIR != ONE_FIXED_SOCIAL_MESSAGE
 UNBOUND_HAIR_CORPUS != PROOF_ANAPLEKO_MEANS_UNBOUND
-HAIR_SIGNALING != EXACT_CORINTH_TRIGGER
-```
-
-Current:
-
-```text
 PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING
-HAIR_AS_ANALOGICAL_NATURAL_COVERING = B_HIGH
 HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
 ```
 
@@ -98,55 +69,59 @@ HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
 
 # 5. Ritual / prophecy / divination / head-state
 
-**Evergreen owner:**
-
 - `dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`
 
-Owns:
-
-```text
-Tryphosa / Eirene / Cleopatra
-Didyma 235B προφητίσκη firewall
-Agatho correction
-Miletos 481
-Potta TAM V.1 535
-Ammias TAM V,2 1055
-Ammia of Philadelphia
-Didyma visual-honour culture
-Delphi negative control
-archaic Didyma head objects
-bounded prophetess + head/hair search
-```
+Owns Tryphosa/Eirene/Cleopatra, Didyma 235B, Agatho correction, Miletos 481, Potta, Ammias of Thyateira, Ammia of Philadelphia, Didyma visual-honour culture, Delphi and bounded `prophetess + head/hair` search.
 
 ```text
 AMMIAS_THYATEIRA != AMMIA_PHILADELPHIA
 PRIESTESS_ORACLE_FUNCTION != DIRECT_PROPHETIS_TITLE
-ROLE != HEAD_CODE
-```
-
-Current bounded result:
-
-```text
 DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = NOT_VERIFIED
-IDENTIFIED_TRYPHOSA_EIRENE_PORTRAIT = NOT_FOUND
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
-### Andania / Lycosura direct epigraphy
+### Andania / Lycosura
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MASSEY_2015_ANDANIA_LYCOSURA_EPIGRAPHY_FULLTEXT_AUDIT_2026-08-10.md`
 
-Owns Massey, direct PHI/CGRN Andania, white `pilos`, separate hair/adornment rules, date dispute, direct Lycosura, Voutiras, Karataş and the Dittenberger `[τοὺς ἄνδρας]` firewall.
+Owns Massey, direct PHI/CGRN Andania, date dispute, white `pilos`, separate hair/adornment rules, direct Lycosura, Voutiras, Karataş and the Dittenberger supplement firewall.
 
 ---
 
-# 6. Roman head-covering evidence / Corinth archaeology
+# 6. Quotation / refutation / speaker boundary
 
-**Canonical Roman primary matrix:**
+- `dossiers/QUOTATION_REFUTATION_SPEAKER_BOUNDARY.md`
+
+Single owner for:
+
+```text
+SHOEMAKER_COSTA_SALES_PUBLISHED_FAMILY
+MARSHALL_NEWBERRY_CONTINUOUS_CONTROLS
+1COR_SAME_LETTER_QUOTATION_SLOGAN_CORPUS
+OMANSON_WATSON_CULY_HOLLOWAY_METHOD
+DIA_TOUTO_PLEN_BOUNDARY_STRESS
+TERTULLIAN_CHRYSOSTOM_AMBROSIASTER_EARLY_RECEPTION
+PG118_TRANSMISSION_FIREWALL
+```
+
+Current:
+
+```text
+LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
+LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
+CLOSE_LONG_UNMARKED_ANALOGUE = NOT_FOUND_IN_INSPECTED_1COR
+EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
+```
+
+---
+
+# 7. Roman head-covering evidence / Corinth archaeology
+
+### Canonical Roman primary matrix
 
 - `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
 
-Owns Virgil, Livy, Lucretius, Plutarch RQ 10–14, Valerius Maximus 6.3.10, Gallus source contradiction, funeral inversion and `infula/vitta` artifact separation.
+Owns Virgil, Livy, Lucretius, Plutarch RQ 10–14, Valerius Maximus 6.3.10, Gallus source contradiction, funeral inversion and `infula/vitta` separation.
 
 ```text
 ROMAN_CAPITE_VELATO_BACKGROUND = A
@@ -154,7 +129,7 @@ V4_EXACT_CAPITE_VELATO = B_C
 SULPICIUS_GALLUS_HEAD_STATE = CONTRADICTORY_SOURCE_TRADITION
 ```
 
-### Local Corinth object + image custody
+### Local Corinth visual custody
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`
 
@@ -172,7 +147,7 @@ Owns Fantham, Olson, Hughes, Stafford and Galter.
 
 ---
 
-# 7. Angels / patristic reception
+# 8. Angels / patristic reception
 
 ### Pauline / Second Temple
 
@@ -181,8 +156,7 @@ Owns Fantham, Olson, Hughes, Stafford and Galter.
 
 ### Patristic owners
 
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_ANGEL_PRIMARY_TEXT_DELTA_2026-08-10.md` — cross-author map / primary ownership distinctions.
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_SPEAKER_BOUNDARY_CONTROL_2026-08-10.md`
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_PATRISTIC_ANGEL_PRIMARY_TEXT_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CLEMENT_IRENAEUS_EARLY_ANGEL_RECEPTION_PRIMARY_DELTA_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_CATENA_CRAMER_ATTRIBUTION_FIREWALL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_THEODORET_GUARDIAN_ANGELS_ATTRIBUTION_RESOLUTION_2026-08-10.md`
@@ -198,14 +172,14 @@ OCR != SOURCE_IMAGE_AUTHORITY
 
 ---
 
-# 8. Recent / multilingual scholarship
+# 9. Recent / multilingual scholarship
 
-### Current literature radar / acquisition
+### Current radar / acquisition
 
-- `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md` — canonical 2024–2026 multilingual radar/ranking; includes Hamplová, Francis, Lumesberger-Loisl and false-freshness controls.
+- `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md` — canonical multilingual 2024–2026 ranking; includes Hamplová, Francis, Lumesberger-Loisl and false-freshness controls.
 - `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_REASONER_GORMAN_2025_COMMENTARIES.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md` — direct-source acquisition details distinct from the radar.
+- `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
 
 ### Gundry-Volf / Gielen / Hao Li / Standhartinger
 
@@ -215,22 +189,15 @@ OCR != SOURCE_IMAGE_AUTHORITY
 
 - `dossiers/DRAKE_VEILING_MATERIALITY_SOURCE_CONTROL.md`
 
-Owns Cambridge 2025 chapter metadata/summary, NBN 2026 author interview, materiality/multivalence and source-type/date firewall. Formal `ἐξουσία` is delegated to the exousia dossier.
-
 ### Other specialist controls
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MAYORDOMO_2022_MASCULINITY_DIRECT_FULLTEXT_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_JANTSCH_DUTOIT_STUCKENBRUCK_2015_VOLUME_CONTROL_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_POLISH_RHETORIC_AND_FRESHNESS_CONTROL_2026-08-10.md`
 
-### Quotation/refutation
-
-- `00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZ_PAULINE_QUOTATION_SLOGAN_CORPUS_CONTROL_2026-08-10.md`
-
 ---
 
-# 9. Agent-output quarantine
+# 10. Agent-output quarantine
 
 - `00ZZZZZZZZZZZZZZZZZZZZ_AGENT_DUMP_48_TARGET_VERIFICATION_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`
@@ -244,7 +211,7 @@ FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
 
 ---
 
-# 10. Current high-value acquisition queue
+# 11. Current high-value acquisition queue
 
 ```text
 GARLAND_2025_2E = DIRECT_TEXT_HOLD
@@ -258,13 +225,14 @@ DRAKE_2025_CH2_PP70_89_BODY = HOLD
 DIDYMA_SUPPLEMENT_FULL_BODY = OPEN
 POTTA_TAM_V1_535_DIRECT_PHI_BODY = RUNTIME_CACHE_HOLD
 CORRINGTON_1991_DIRECT_FULLTEXT = HOLD
+WATSON_CULY_2018_1COR11_DISCUSSION = HOLD
 THEODORET_PG82_DIRECT_PAGE_IMAGE = HOLD
 CYRIL_PG74_DIRECT_PAGE_IMAGE = HOLD
 ```
 
 ---
 
-# 11. Anti-sprawl / cleanup rule
+# 12. Anti-sprawl / cleanup rule
 
 ```text
 DO_NOT_CREATE_NEW_Z_LADDER_POINTER = true
@@ -280,7 +248,7 @@ If a branch-only successor is fully absorbed by a retained owner, delete the suc
 
 ---
 
-# 12. Publication boundary
+# 13. Publication boundary
 
 ```text
 PRODUCT_WRITE = false
