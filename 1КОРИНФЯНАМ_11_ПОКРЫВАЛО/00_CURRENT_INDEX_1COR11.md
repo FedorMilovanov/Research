@@ -1,31 +1,34 @@
 # 1 Коринфянам 11:2–16 — CURRENT INDEX
 
-**Статус:** `HUMAN-READABLE-CURRENT-INDEX / NAVIGATION-AUTHORITY / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Статус:** `NAVIGATION-AUTHORITY / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последнее обновление:** 2026-08-10
 
 ## 0. Read order
 
 ```text
 1. THIS INDEX
-2. CURRENT_CLAIM_REGISTRY for grade
-3. CONTROLLING DOSSIER/AUDIT for evidence
-4. HISTORICAL RECEIPT only when provenance is needed
+2. CURRENT_CLAIM_REGISTRY for grades
+3. CONTROLLING CANONICAL AUDIT / EVERGREEN DOSSIER
+4. HISTORICAL OR MACHINE RECEIPT only for distinct provenance
 ```
 
-Do not infer authority from filename recency or the number of `Z` characters.
+```text
+FILENAME_RECENCY != AUTHORITY
+MORE_Z_CHARACTERS != MORE_CURRENT
+```
 
 ---
 
 # 1. Claim / Greek-text authority
 
 - `00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md` — current grades.
-- `00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md` — Greek text / textual-risk contract.
+- `00ZZZZZZZZZZZZZZZZZZZ_CURRENT_GREEK_TEXT_BASE_AND_TEXTUAL_RISK_AUDIT_2026-08-10.md` — Greek-text / textual-risk contract.
 - `00Z_MAIN_SYNTHESIS_AUTHORITY_AND_SUPERSESSION_2026-08-09.md` — provenance/publication baseline.
-- `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` — deprecated shim only.
+- `00ZZZZZZZZZZZZZZZZZZZZZ_CURRENT_AUTHORITY_POINTER_2026-08-10.md` — deprecated backlink shim only.
 
 ---
 
-# 2. Core passage / lexical / discourse audits
+# 2. Core passage / lexical / discourse
 
 - `00ZZZZZ_VERSE_BY_VERSE_ADVERSARIAL_AUDIT_1COR11_2_16_2026-08-10.md`
 - `00ZZZZZZ_MODEL_STRESS_TEST_MATRIX_1COR11_2_16_2026-08-10.md`
@@ -38,7 +41,7 @@ Do not infer authority from filename recency or the number of `Z` characters.
 
 # 3. `ἐξουσία`
 
-- `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`
+**Owner:** `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`
 
 ```text
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
@@ -47,13 +50,20 @@ EXOUSIA_EXACT_REFERENT = B_C
 EXACT_NONBIBLICAL_HEAD_PHRASE = NOT_FOUND_IN_BOUNDED_SEARCH
 ```
 
+Owns v10 transmission, formal `ἐξουσία + ἐπί`, Fendel documentary corpus, female right-bearers, restoration/source-type firewalls and bounded exact-head search.
+
 ---
 
 # 4. Hair / `φύσις` / hairstyle
 
-- `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
+**Owner:** `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
 
-Owns both long-hair/`κομάω`/`φύσις` and unbound/dishevelled-hair polysemy.
+Owns both:
+
+```text
+LONG_HAIR / KOMAŌ / PHYSIS
+UNBOUND_OR_DISHEVELLED_HAIR_POLYSEMY
+```
 
 ```text
 LONG_HAIR != UNBOUND_HAIR
@@ -64,20 +74,22 @@ HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
 
 ---
 
-# 5. Ritual / prophecy / divination / head-state
+# 5. Ritual / female mantic personnel / head-state
 
-- `dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`
+**Owner:** `dossiers/RITUAL_DIVINATION_PROPHETIC_HEAD_STATE.md`
 
-Owns Tryphosa/Eirene/Cleopatra, Didyma 235B, Agatho correction, Miletos 481, Potta, Ammias of Thyateira, Ammia of Philadelphia, Didyma visual-honour culture, Delphi and bounded `prophetess + head/hair` search.
+Owns Tryphosa, Eirene, Cleopatra, Didyma 235B, Agatho correction, Miletos 481, Potta, Ammias of Thyateira, Ammia of Philadelphia, Didyma visual-honour culture, Delphi controls and bounded `female mantic office + head/hair` search.
 
 ```text
 AMMIAS_THYATEIRA != AMMIA_PHILADELPHIA
 PRIESTESS_ORACLE_FUNCTION != DIRECT_PROPHETIS_TITLE
+SAME_LOCALITY != SAME_OBJECT
+ROLE != HEAD_CODE
 DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = NOT_VERIFIED
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
-### Andania / Lycosura
+### Andania / Lycosura direct epigraphy
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MASSEY_2015_ANDANIA_LYCOSURA_EPIGRAPHY_FULLTEXT_AUDIT_2026-08-10.md`
 
@@ -85,62 +97,46 @@ Owns Massey, direct PHI/CGRN Andania, white `pilos`, separate hair/adornment rul
 
 ---
 
-# 6. Quotation / refutation / speaker boundary
+# 6. Quotation / refutation / rhetorical continuity / speaker boundary
 
-- `dossiers/QUOTATION_REFUTATION_SPEAKER_BOUNDARY.md`
+**Owner:** `dossiers/QUOTATION_REFUTATION_SPEAKER_BOUNDARY.md`
 
-Owns modern quotation models, same-letter primary quotation/slogan corpus and early speaker-boundary reception.
+Owns:
+
+```text
+SHOEMAKER / COSTA / SALES quotation family
+MARSHALL / NEWBERRY continuity controls
+KOWALSKI_2020 continuous rhetorical model
+TORBUS_2009 rhetorical dispositio control
+1_CORINTHIANS same-letter quotation/slogan corpus
+OMANSON / WATSON_CULY / HOLLOWAY method controls
+TERTULLIAN / CHRYSOSTOM / AMBROSIASTER speaker-boundary reception
+PG118 transmission firewall
+```
 
 ```text
 LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
 LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
+CLOSE_LONG_UNMARKED_ANALOGUE = NOT_FOUND_IN_INSPECTED_1COR
 EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 ```
 
 ---
 
-# 7. Roman head-covering evidence / Corinth archaeology
+# 7. Angels
 
-### Canonical Roman primary matrix
-
-- `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
-
-```text
-ROMAN_CAPITE_VELATO_BACKGROUND = A
-V4_EXACT_CAPITE_VELATO = B_C
-SULPICIUS_GALLUS_HEAD_STATE = CONTRADICTORY_SOURCE_TRADITION
-```
-
-### Local Corinth visual / archaeology / image-custody owner
-
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`
-
-Owns:
-
-```text
-S1116 / S1088
-ASCSA_CORINTH_XXII_2022
-THOMPSON_1988
-GILL_1990
-DESILVA_2025_ROMAN_CORINTH_ACQUISITION
-COMMONS_RIGHTS_ORIGINALS_SHA1
-JOHNSON_LEGACY_MAPPING
-```
-
-### Female Roman / late-antique visual method
-
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_ROMAN_FEMALE_VEILING_STATUS_VISUAL_DELTA_2026-08-10.md`
-
-Owns Fantham, Olson, Hughes, Stafford and Galter.
-
----
-
-# 8. Angels / patristic reception
-
-### Pauline / Second Temple
+### Pauline / Second Temple corpus
 
 - `00ZZZZZZZZZZZZZZ_ANGELS_PRIMARY_CORPUS_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZ_ANGEL_MODELS_STRESS_MATRIX_2026-08-10.md`
+
+Angel-model matrix also owns Peerbolte 2000 source provenance (`pp.76–92`; direct body HOLD; secondary page-specific active-woman / Watchers controls).
+
+```text
+HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
+WATCHERS = C_SERIOUS
+PEERBOLTE_DIRECT_BODY = HOLD
+```
 
 ### Patristic owners
 
@@ -160,18 +156,56 @@ OCR != SOURCE_IMAGE_AUTHORITY
 
 ---
 
-# 9. Recent / current scholarship
+# 8. Roman head-covering evidence / Corinth archaeology
 
-### Canonical current radar
+### Roman primary matrix
+
+- `00ZZZZZZZZZZZZ_ROMAN_PRIMARY_EVIDENCE_MATRIX_HEAD_COVERINGS_2026-08-10.md`
+
+```text
+ROMAN_CAPITE_VELATO_BACKGROUND = A
+V4_EXACT_CAPITE_VELATO = B_C
+SULPICIUS_GALLUS_HEAD_STATE = CONTRADICTORY_SOURCE_TRADITION
+```
+
+### Local Corinth visual / archaeology / image custody
+
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZ_VISUAL_ARCHAEOLOGY_CAPITE_VELATO_LEDGER_2026-08-10.md`
+
+Owns:
+
+```text
+S1116 / S1088
+ASCSA_CORINTH_XXII_2022
+THOMPSON_1988
+GILL_1990
+DESILVA_2025_ROMAN_CORINTH_ACQUISITION
+COMMONS_ORIGINALS_RIGHTS_SHA1
+JOHNSON_LEGACY_MAPPING
+```
+
+### Female Roman / late-antique visual method
+
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_ROMAN_FEMALE_VEILING_STATUS_VISUAL_DELTA_2026-08-10.md`
+
+Owns Fantham, Olson, Hughes, Stafford and Galter.
+
+---
+
+# 9. Current / multilingual scholarship
+
+### Canonical 2024–2026 radar
 
 - `00ZZZZZZZZZZ_CURRENT_LITERATURE_RADAR_2024_2026_2026-08-10.md`
+
+Owns current ranking, Hamplová, Francis, Lumesberger-Loisl and false-freshness controls including Penner/Vander Stichele.
 
 ### Direct-source acquisition
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`
 - `00ZZZZZZZZZ_SOURCE_CARD_JANELLE_PETERS_CITIZEN_BODY_2025_2026.md`
 
-### Current 2025 commentary acquisition
+### Current commentary acquisition
 
 - `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md`
 
@@ -185,12 +219,20 @@ Owns Reasoner 2025, Gorman 2025 and Starling 2025, including corrected Reasoner 
 
 - `dossiers/DRAKE_VEILING_MATERIALITY_SOURCE_CONTROL.md`
 
+### Foundational archaeological / ritual-space model
+
+- `00ZZZZZZZZZ_SOURCE_CARD_OKLAND_2004_2005_SANCTUARY_SPACE.md`
+
+```text
+OKLAND_FOUNDATIONAL != CURRENT_2024_2026
+OKLAND_GENDERED_SANCTUARY_SPACE_MODEL = C_SERIOUS_FOUNDATIONAL_CONTEXTUAL_MODEL
+OKLAND_DIRECT_BODY_DETAIL = HOLD
+```
+
 ### Other specialist controls
 
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_MAYORDOMO_2022_MASCULINITY_DIRECT_FULLTEXT_AUDIT_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_JANTSCH_DUTOIT_STUCKENBRUCK_2015_VOLUME_CONTROL_2026-08-10.md`
-- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_POLISH_RHETORIC_AND_FRESHNESS_CONTROL_2026-08-10.md`
-- `00ZZZZZZZZZ_SOURCE_CARD_OKLAND_2004_2005_SANCTUARY_SPACE.md` — Økland’s distinct Corinth archaeology + gendered ritual/sanctuary-space model; exact veil/hair, `κεφαλή`, `ἐξουσία`, angels and exact trigger remain HOLD unless directly closed.
 
 ---
 
@@ -200,6 +242,9 @@ Owns Reasoner 2025, Gorman 2025 and Starling 2025, including corrected Reasoner 
 - `00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`
 - `00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`
 
+Structured machine owner retained:
+- `data/1cor11-agent-citation-quarantine-2026-08-10.json`
+
 ```text
 AGENT_OUTPUT = DISCOVERY_ONLY
 BIBLIOGRAPHIC_EXISTENCE != CLAIM_VERIFICATION
@@ -208,7 +253,7 @@ FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
 
 ---
 
-# 11. Current high-value acquisition queue
+# 11. High-value acquisition queue
 
 ```text
 GARLAND_2025_2E = DIRECT_TEXT_HOLD
@@ -220,6 +265,10 @@ FEE_REVISED_2014_FULL_SECTION = HOLD
 CIAMPA_ROSNER_2010_DETAIL = HOLD
 DRAKE_2025_CH2_PP70_89_BODY = HOLD
 DESILVA_2025_ROMAN_CORINTH_PP126_156 = HOLD
+OKLAND_2004_CH4_7 = BODY_HOLD
+KOWALSKI_2020_OFFICIAL_PDF_BYTES = RETRY
+TORBUS_2009_PP507_521 = HOLD
+PEERBOLTE_2000_PP76_92 = HOLD
 DIDYMA_SUPPLEMENT_FULL_BODY = OPEN
 POTTA_TAM_V1_535_DIRECT_PHI_BODY = RUNTIME_CACHE_HOLD
 CORRINGTON_1991_DIRECT_FULLTEXT = HOLD
@@ -230,19 +279,19 @@ CYRIL_PG74_DIRECT_PAGE_IMAGE = HOLD
 
 ---
 
-# 12. Anti-sprawl / cleanup rule
+# 12. Anti-sprawl rule
 
 ```text
 DO_NOT_CREATE_NEW_Z_LADDER_POINTER = true
 DO_NOT_CREATE_PASS_N_REPORT_IF_DOSSIER_EXISTS = true
 UPDATE_EVERGREEN_DOSSIER = preferred
 UPDATE_CANONICAL_MAIN_AUDIT_IF_NEW_DELTA_IS_SAME_EVIDENCE_DOMAIN = preferred
-UPDATE_CURRENT_CLAIM_REGISTRY = only_if_claim_grade_or_owner_changes
-ADD_SEPARATE_RECEIPT = onlyif machine/provenance need is genuinely distinct
+UPDATE_CURRENT_CLAIM_REGISTRY = only if grade or owner changes
+ADD_SEPARATE_RECEIPT = only if machine/provenance need is genuinely distinct
 PRESERVE_OLD_MAIN_PATH_AS_DEPRECATED_SHIM_IF_BACKLINKS_MAY_EXIST = true
 ```
 
-If a branch-only successor is fully absorbed by a retained owner, delete the successor instead of preserving duplicate current-state summaries.
+If a branch-only successor is fully absorbed by a retained owner, delete it instead of preserving duplicate current-state summaries.
 
 ---
 
