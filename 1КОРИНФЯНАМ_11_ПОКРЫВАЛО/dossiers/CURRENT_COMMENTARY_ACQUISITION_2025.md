@@ -257,7 +257,7 @@ No negative inference about their actual interpretation follows from preview non
 
 ## 4.3 Garland 2025 second edition
 
-Google Books and Baker controls verify a genuine second edition:
+Baker Academic, Logos, Google Books and Perlego controls verify a genuine second edition:
 
 ```text
 AUTHOR = David_E_Garland
@@ -265,18 +265,32 @@ TITLE = 1_Corinthians
 SERIES = BECNT
 EDITION = 2
 YEAR = 2025
-PAGES = 872
+PRINT_ISBN = 9781540962607
+EBOOK_ISBN = 9781493451692
+PRINT_LENGTH_CONTROL = 872_pages_in_Google_Books_Perlego / 850_Logos_digital_metadata
 ```
 
-The Google Books object was searched directly for `11:2` and `head covering`; neither was exposed in the accessible index.
+Perlego's 2025 ebook table of contents directly identifies:
+
+```text
+VII. Headdress in Public Worship (11:2–16)
+VIII. Divisions at the Lord's Supper (11:17–34)
+```
+
+The accessible 2025 preview/index surfaces do **not** expose a reliable second-edition page number for section VII or its body. The previously circulated/project-working locator `pp.468–493` was re-searched against Baker/Logos/Google/Perlego and was not verified.
+
+The older **first edition (2003)** is a separate evidence object. Its table of contents places “Headdress in Public Worship (11:2–16)” at pp.505–532, but those pages must **not** be silently transferred to the 2025 second edition.
 
 ```text
 GARLAND_2025_2E_BOOK_OBJECT = VERIFIED
-GARLAND_2025_2E_TARGET_SECTION_PREVIEW = NOT_EXPOSED
-GARLAND_2025_2E_PP468_493 = P0_DIRECT_TEXT_HOLD
+GARLAND_2025_2E_11_2_16_SECTION_IDENTITY = CLOSED
+GARLAND_2025_2E_11_2_16_PAGINATION = UNVERIFIED_HOLD
+GARLAND_2025_2E_TARGET_SECTION_BODY = HOLD
+GARLAND_2025_PP468_493 = RETRACT_AS_UNVERIFIED_LOCATOR
+GARLAND_2003_PP505_532 != GARLAND_2025_PAGINATION
 ```
 
-Do not reconstruct the 2025 revision by copying Garland’s older edition wording unless the edition continuity is directly checked.
+Do not reconstruct the 2025 revision by copying Garland’s older edition wording or pagination unless edition continuity is directly checked.
 
 ## 4.4 Thiselton 2000
 
@@ -295,7 +309,7 @@ A 2011 shorter commentary is a different evidence object and must not silently r
 # 5. Current commentary queue
 
 ```text
-GARLAND_2025_2E_PP468_493 = P0_DIRECT_TEXT_HOLD
+GARLAND_2025_2E_11_2_16 = P0_PAGINATION_AND_DIRECT_BODY_HOLD
 REASONER_2025_PP432_451 = P0_P1_DIRECT_CHAPTER_HOLD
 STARLING_2025_1COR11 = P0_P1_SECTION_HOLD
 GORMAN_2025_1COR11 = P1_SECTION_HOLD
@@ -336,6 +350,8 @@ SELF_CORRECTION > PRESERVING_A_CONVENIENT_REJECTION
 CURRENT_EDITION != POSITION_VERIFIED
 PREVIEW_NO_MATCH != ABSENCE_FROM_BOOK
 LICENSED_SAMPLE_ROUTE != TARGET_SECTION_READ
+EDITION_1_PAGINATION != EDITION_2_PAGINATION_AUTOMATICALLY
+PRECISE_UNVERIFIED_PAGE_RANGE > NO_LOCATOR_IS_FALSE_PRECISION
 ```
 
 ---
@@ -347,6 +363,7 @@ REASONER_2025 = VERIFIED_CURRENT_TECHNICAL_COMMENTARY
 REASONER_11_2_16 = APPROX_PP432_451 / DIRECT_BODY_HOLD
 GORMAN_2025 = VERIFIED_CURRENT_THEOLOGICAL_COMMENTARY / SECTION_HOLD
 STARLING_2025 = VERIFIED_CURRENT_COMMENTARY / 1COR11_CONTENT_HOLD
+GARLAND_2025_2E_11_2_16 = SECTION_IDENTITY_CLOSED / PAGINATION_HOLD / BODY_HOLD
 
 FEE_CIAMPA_GARLAND_THISELTON_LAWFUL_PREVIEW_ROUTES = TESTED_NO_TARGET_BODY_EXPOSED
 NEXT_PASS_FOR_THESE_TARGETS = CHANGE_TRANSPORT_NOT_REPEAT_METADATA_SEARCH
