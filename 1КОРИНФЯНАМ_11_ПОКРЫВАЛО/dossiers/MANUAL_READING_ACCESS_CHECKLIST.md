@@ -55,6 +55,10 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #36 [Nisyra — SEG 49.1624 / PH348429]:** `FULL_BODY_CLOSED_DIRECT_PHI` (2026-08-10, direct PHI read; **contains restored `διὰ προφή[τιδος]` — previous `NOT_FOUND / VERY_LIKELY_REFERENCE_ERROR` verdicts REVISED**).
    - **Item #38 [P.Wisc. I 13]:** `EDITION_TEXT_CLOSED_DDBDP` (2026-08-10; both `ἐξουσία` instances fully restored).
    - **Item #18 [Janelle Peters PhD, Emory]:** `PARTIAL` (2026-08-10: front matter + Introduction read direct; ch.6–7 and p.282 still require external read).
+   - **Item #43a [Odewole 2025]:** `CLOSED_FULLTEXT` (2026-08-10, OA QUAERENS PDF, all chunks read; traditional African complementarian view; no grade impact).
+   - **Item #22 [Fantham 2008]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview id bYCCpqdgSAgC, pp.158–171 core claims; full body still external).
+   - **Item #23 [Olson 2008]:** `PREVIEW_LEVEL_DIRECT_READ` (2026-08-10, Google Books preview id l9wdU6ysZgEC; pp.25, 33–36, 51, 113; full body still external).
+   - **Item #34 [Apphe]:** Önder 2022 FULL BODY READ 2026-08-10 — no Apphe/CIG 3796 discussion (comparison target inapplicable); CIG vol.4 preview id TU5FwAcnR9cC indices-only; printed page external.
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
@@ -394,7 +398,9 @@ STATUS = IDENTITY_CLOSED / DIRECT_FULLTEXT_TERMINAL_EXTERNAL_ACCESS_HOLD
 **Extract:** male/female ritual head-covering distinctions, status/ritual gender meanings, chronology.
 
 ```text
-STATUS = IDENTITY_AND_EXACT_LOCATOR_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = IDENTITY_AND_EXACT_LOCATOR_CLOSED / PREVIEW_LEVEL_DIRECT_READ_2026_08_10 / FULL_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_PREVIEW_ROUTE = Google Books limited preview id bYCCpqdgSAgC (SearchWithinVolume, pp.158–171)
+PREVIEW_EXTRACTS = "male covering with toga vs female palla; Plutarch QR 10 (uncovering avoids divine jealousy) and QR 11 (Saturn exception); vittae = woollen headbands of respectable girls/wives, from viere 'to bind'; infula = white wool fillet coiled like diadem, ribbons/vittae red+white (Serv. ad Aen. 10.538), symbol of inviolacy, more common on altars/tombs/sacrificial victims than as costume, worn by priests/Vestals; Aeneas first to cover head when sacrificing (altar of Saturn, Capitoline); wool vs linen specified; nodus coiffure with vitta woven in = married-woman status; p.171 contrast: eastern-province veiled women vs exposed beauty of empresses/benefactresses in portraits"
 ```
 
 ## 23. Kelly Olson, *Dress and the Roman Woman* (2008)
@@ -407,7 +413,9 @@ https://www.routledge.com/Dress-and-the-Roman-Woman-Self-Presentation-and-Societ
 **Extract:** palla/head-cover frequency, literary ideal vs visual practice, moral/status vocabulary.
 
 ```text
-STATUS = BOOK_AND_PAGE_LOCATORS_CLOSED / TARGET_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = BOOK_AND_PAGE_LOCATORS_CLOSED / PREVIEW_LEVEL_DIRECT_READ_2026_08_10 / FULL_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_PREVIEW_ROUTE = Google Books limited preview id l9wdU6ysZgEC (2012 ed.; SearchWithinVolume)
+PREVIEW_EXTRACTS = "p.25: 'over the head when the woman was out of doors, and hair bound with fillets' — modern-scholars description of everyday Roman matrona clothing; p.33: palla over the head, lower edge to knees (Wilson 1938: 148–9); p.33: palla appears far more often than stola, no ancient evidence that Augustus legislated return of stola+vittae (contra Sebesta 1997); p.34: palla + modesty/chastity, Ara Pacis; p.35: lower-class women much less likely to go veiled/mantled (palla hindrance to manual labor); p.36: palla (not stola) described as Roman wife's costume ca. 200 BCE (Plaut. Men. 167, 659; Nonius); p.51: palliola, amictus, amiculum, amictorium as generic wrap names; p.113: palla as ideal vs artistic evidence"
 ```
 
 ## 24. Lisa A. Hughes (2007)
@@ -461,6 +469,7 @@ STATUS = CHAPTER_IDENTITY_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 
 ```text
 STATUS = PAGE_LOCATOR_CLOSED / DIRECT_PAGE_TERMINAL_EXTERNAL_ACCESS_HOLD / NONBLOCKING
+VERIFIED_BIBLIO_2026_08_10 = V&R 2006, 575 pp., ISBN 3525510012 / 9783525510018; Google Books id eZdAjRCRXUIC = "No eBook available" (no preview); MDPI Religions 15.10 (2024) 1175 (Hill, OA) confirms PKNT 2 as key papyrological corpus control
 ```
 
 ---
@@ -563,6 +572,7 @@ STATUS = TEXT_BODY_CLOSED / TABBERNEE_FIG77_TERMINAL_EXTERNAL_IMAGE_HOLD
 
 ```text
 STATUS = FEMALE_NOUN_BEARER_SPECIALIST_CONTROL_CLOSED / ORIGINAL_PRINTED_PAGE_TERMINAL_BINARY_TRANSPORT_HOLD
+VERIFIED_2026_08_10 = Önder 2022 (Tarih Dergisi 77, 1–14, OA CC BY-NC) FULL BODY READ — article treats Apollo oracle at Kalkhedon (Pythaios/Khresterios, asylia decrees, numismatics) and does NOT discuss Apphe / IK 61 / CIG 3796 / προφῆτις; comparison target resolved as inapplicable. CIG vol. 4 (1859) = Google Books preview id TU5FwAcnR9cC (595 pp.; preview exposes indices only — name index RA2-PA71 confirms "3796. Ἄφφη"; main-text pages not in preview). HathiTrust 1977 Olms reprint = Limited (search only). Printed CIG/IK page remains external.
 ```
 
 ## 35. Termessos — TAM III,1 870 / PH280975
@@ -677,11 +687,11 @@ STATUS = OPTIONAL_EDITION_CONTINUITY_CONTROL
 
 These are not required to stabilize the current grade map, but may be read for exhaustive current-debate history:
 
-- Israel O. O. Odewole 2025, *QUAERENS* 7.1:18–33 — official journal route: https://jurnal.widyaagape.ac.id/index.php/quaerens/article/view/240 (OA PDF; intro+references read 2026-08-10; traditional view: veil = submission sign to male headship, angels/celestial powers, apostolic tradition, practice of all churches)
+- Israel O. O. Odewole 2025, *QUAERENS* 7.1:18–33 — official journal route: https://jurnal.widyaagape.ac.id/index.php/quaerens/article/view/240 (OA PDF; **FULL BODY READ 2026-08-10**; traditional African complementarian view: veil = submission sign to male headship; angels as "guardians of order" via Thiselton 2000: 838–844; creation order; church custom; equality in Christ via Gal 3:28; deculturization critique; Walker interpolation rejected)
 - Jason Garwood, *Paul & the Head Covering: A Biblical Reassessment* (2026) — current confessional/non-universalist edge model. Classified 2026-08-10: **quotation-family C-level** (author's kuyperian.com excerpt + Amazon metadata; 86 pp., Cross & Crown, 2026-04-23, ISBN 978-1734122893).
 
 ```text
-STATUS = OPTIONAL_LOW_WEIGHT_CURRENT_RECEPTION / ODEWOLE_PARTIAL_READ / GARWOOD_CLASSIFIED_QUOTATION_FAMILY_C
+STATUS = OPTIONAL_LOW_WEIGHT_CURRENT_RECEPTION / ODEWOLE_CLOSED_FULLTEXT_2026_08_10 / GARWOOD_CLASSIFIED_QUOTATION_FAMILY_C
 ```
 
 ---

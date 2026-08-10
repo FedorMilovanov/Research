@@ -308,7 +308,7 @@ TABBERNEE_FIG77_OBJECT_IMAGE = TERMINAL_EXTERNAL_IMAGE_HOLD_CURRENT_RUNTIME
 
 ## 4.5 Apphe of Kalchedon — female `prophetis`, office interpretation unresolved
 
-Prosopographic control and `IK Kalchedon 61 = CIG 3796` identify **Ἄπφη** as the female `προφῆτις` noun-bearer in a Roman-period funerary inscription. Selin Önder, “Oracle of Apollo in Kalkhedon,” *Tarih Dergisi* 77 (2022): 1–14, DOI `10.26650/iutd.1096605`, discusses the same funerary monument in the context of Apollo Khresterios and explicitly preserves an interpretive fork: `prophetis` has been taken as the **wife of a `prophetas`**, while an independent female oracular office analogous to the Pythian priestess is also possible.
+Prosopographic control and `IK Kalchedon 61 = CIG 3796` identify **Ἄπφη** as the female `προφῆτις` noun-bearer in a Roman-period funerary inscription. **Direct full-body read 2026-08-10:** Selin Önder Kaddar, “Oracle of Apollo in Kalkhedon,” *Tarih Dergisi* 77 (2022): 1–14, DOI `10.26650/iutd.1096605` (OA, CC BY-NC), treats the Apollo oracle at Kalkhedon (Pythaios/Khresterios epithets, asylia decrees, numismatics, topographical discussion) and **does not discuss Apphe, IK Kalchedon 61, CIG 3796 or any `προφῆτις`** — the earlier dossier attribution of an interpretive fork to this article is **REVOKED** as unsupported by the body. The interpretive fork itself (independent oracular office vs prophet's wife) remains a general specialist/lexicographic point (cf. LSJ `προφῆτις`: “prophet's wife, LXX Is.”; Moulton–Milligan on restored titles), not sourced to Önder 2022. The CIG vol. 4 (1859) Google Books preview (`TU5FwAcnR9cC`) exposes only the indices (name index confirms `3796. Ἄφφη`); the printed page of CIG 3796 remains external.
 
 ```text
 NAME = Ἄπφη
@@ -326,6 +326,8 @@ APPHE_PROPHET_WIFE_READING = SPECIALIST_POSSIBILITY
 APPHE_CIG_OFFICIAL_VOLUME_IDENTITY = CLOSED
 APPHE_DIRECT_CIG3796_PAGE_BODY = TERMINAL_BINARY_TRANSPORT_HOLD_CURRENT_RUNTIME
 APPHE_HEAD_HAIR_CODE = NOT_FOUND
+ONDER_2022_APPHE_DISCUSSION = NONE_FOUND_DIRECT_FULL_BODY_READ_2026_08_10
+CIG_VOL4_1859_GB_PREVIEW = INDICES_ONLY / NAME_INDEX_CONFIRMS_3796_APHE
 ```
 
 Critical ceiling:
