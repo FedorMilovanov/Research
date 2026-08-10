@@ -67,7 +67,7 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
    - **Agent Window B:** Claim **[M0] Item #2 — David E. Garland, 2nd ed. (2025)** (`Section VII, 11:2–16`).
-   - **Agent Window C:** Claim **[M0] Item #3 — Gordon D. Fee, NICNT Revised (2014)** (`pp. 542–586`).
+   - **Agent Window C:** Claim **[M0] Item #3 — Gordon D. Fee, NICNT Revised (2014)** (`pp. 542–586` or authorized Portuguese edition *1 Coríntios | Comentário Exegético*, Editora Vida Nova, 2019).
    - **Agent Window D:** Claim **[M0] Item #4 — Anthony C. Thiselton, NIGTC (2000)** (`pp. 800–847`).
    - **Agent Window E:** Claim **[M0] Item #5 — Ciampa & Rosner, PNTC (2010)** (`pp. 503–540`).
 4. **SINGLE AUTHORITY RULE — NO NEW DISPOSABLE LOG FILES:**
@@ -132,7 +132,8 @@ Highest-value internal targets:
 **Extract:** actual revised wording, edition changes vs 1987, v10 `ἐξουσία`, angels/Watchers, material practice, v13–16.
 
 ```text
-STATUS = EXACT_REVISED_RANGES_CLOSED / BODY_AND_NOTES_TERMINAL_EXTERNAL_ACCESS_HOLD
+STATUS = EXACT_REVISED_RANGES_CLOSED / BODY_AND_NOTES_TERMINAL_EXTERNAL_ACCESS_HOLD / PORTUGUESE_TRANSLATION_AUTHORIZED
+AUTHORIZED_TRANSLATION_ROUTE = "Portuguese edition of Gordon D. Fee, 1 Coríntios | Comentário Exegético (Editora Vida Nova, 2019, ISBN 9788527509268) is a lawful, valid direct-reading route for Agent Window C. Map Portuguese pages to English section structure (11:2-16, vv. 2-6, Addendum, vv. 7-12, vv. 13-16, n.123 angels/Watchers)."
 ```
 
 ## 4. Anthony C. Thiselton, NIGTC (2000)
