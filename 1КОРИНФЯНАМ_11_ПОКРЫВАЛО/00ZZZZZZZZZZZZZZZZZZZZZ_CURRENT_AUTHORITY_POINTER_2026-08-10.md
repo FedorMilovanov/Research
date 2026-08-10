@@ -1,7 +1,7 @@
-# 1 Коринфянам 11:2–16 — current authority pointer after citation quarantine + direct-source pass
+# 1 Коринфянам 11:2–16 — current authority pointer after citation quarantine + direct-source + quotation stress test
 
 **Дата:** 2026-08-10  
-**Статус:** `LATEST-AUTHORITY-POINTER / CITATION-QUARANTINE / DIRECT-SOURCE-RECENT-SCHOLARSHIP / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `LATEST-AUTHORITY-POINTER / CITATION-QUARANTINE / DIRECT-SOURCE-RECENT-SCHOLARSHIP / QUOTATION-STRESS-TEST / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## Read order
 
@@ -13,9 +13,10 @@
 6. **`00ZZZZZZZZZZZZZZZZZZZZZ_MONTIER_SHAVED_HEAD_SOCIAL_MYTH_CONTROL_2026-08-10.md`** — direct open-fulltext control against the shaved-prostitute/temple-prostitute folklore claim.
 7. **`00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`** — stop-layer for fabricated/mis-cited fresh-source claims: P.Oxy. 5575, Kirk JBL 142.3, Ehrensperger/Al-Suadi ritual chapters, Chrysostom false quote, DeConick JBL/chapter attribution, Yung Suk Kim, Petterson and Punt bibliographic controls.
 8. **`00ZZZZZZZZZZZZZZZZZZZZZZ_DIRECT_SOURCE_RECENT_SCHOLARSHIP_PASS_2026-08-10.md`** — direct publisher/institutional source pass; Nõmmik access-map separation, Berglund 2025 provenance, Hooker/Fitzmyer Cambridge controls, Newberry 2019, Marshall 2019, Costa 2023/24, Salés 2024, Chadwick 2022 and Callon 2024.
-9. Claim-specific primary/adversarial audits listed in the current registry.
+9. **`00ZZZZZZZZZZZZZZZZZZZZZZZ_QUOTATION_REFUTATION_ADVERSARIAL_DELTA_2026-08-10.md`** — current adversarial control for the large quotation/refutation family; full Costa argument stress-tested against `διὰ τοῦτο`, NA28 punctuation, v3 semantics, v16, Salés boundary, Marshall modified-tradition model and Newberry continuity model.
+10. Claim-specific primary/adversarial audits listed in the current registry.
 
-The quarantine/direct-source layers **do not supersede core claim grades** because no core grade changed. They supersede conflicting raw-agent `verified/gold/fully verified` labels and improve source ownership/provenance.
+The quarantine/direct-source/quotation layers **do not supersede core claim grades** because no core grade changed. They supersede conflicting raw-agent `verified/gold/fully verified` labels, improve source ownership/provenance, and distinguish scholarly status from textual fit.
 
 ---
 
@@ -60,7 +61,15 @@ NEWBERRY_V10_WOMAN_AUTHORITY = DIRECT_CAMBRIDGE_ABSTRACT
 MARSHALL_TWO_MODIFIED_TRADITIONS = DIRECT_BRILL_ABSTRACT
 MARSHALL_MODEL != LARGE_QUOTATION_MODEL
 COSTA_VV4_9_UNENDORSED_QUOTATION = REAL_B1_LINGUISTIC_PROPOSAL
+COSTA_BODY_ARGUMENT = SUBSTANTIALLY_READ_SAME_DOI_CC_BY_OBJECT
+COSTA_DIA_TOUTO_V10 = MAJOR_DISCOURSE_BURDEN
+COSTA_V13_V14_15 = REPUNCTUATION/DISCOURSE_REANALYSIS_BURDEN
 SALES_2024_ANDROPRIMACY_QUOTATION_MODEL = REAL_B1_ALTERNATIVE
+SALES_BOUNDARY = VV3_10
+COSTA_BOUNDARY = VV4_9
+LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
+LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW_TO_C_LOW
+LARGE_QUOTATION_LEADING_MODEL = false
 CHADWICK_2022_HAIR_ONLY = REAL_B1_ALTERNATIVE
 
 POXY_84_5575_1COR11_PARALLEL = REJECTED_FABRICATION
@@ -107,10 +116,17 @@ V16_TRANSLOCAL_CHURCH_APPEAL = A_TEXT
 V16_NORMATIVE_FORCE = B_HIGH
 V16_EXACT_CUSTOM_REFERENT = B_C
 ONE_ESDRAS_4_INTERTEXT = B_C_SERIOUS_PROPOSED
-LARGE_QUOTATION_REFUTATION = D_C_LOW
+LARGE_QUOTATION_REFUTATION = D_C_LOW_TEXTUAL_FIT
 ```
 
-Recent Costa/Salés support makes the quotation hypothesis worth a fresh adversarial stress test, but **does not yet authorize a grade change**. Marshall must be kept separate because her model uses modified traditions without requiring a large speaker-change quotation.
+Quotation-family clarification:
+
+```text
+D_C_LOW = CURRENT_TEXTUAL_FIT_GRADE
+NOT = CLAIM_THAT_NO_SERIOUS_SCHOLAR_ADVOCATES_IT
+```
+
+Shoemaker/Costa/Salés establish a genuine published minority family. Marshall and Newberry demonstrate competing continuity models that explain the same tensions without a speaker change.
 
 ---
 
@@ -122,15 +138,16 @@ Fee NICNT Revised 2014: approx pp.542–586 + notes; include pp.565–567 addend
 Garland BECNT 2nd ed. 2025: pp.468–493 + notes
 Ciampa/Rosner PNTC 2010: pp.503–540 + notes
 Nõmmik DTH 9: full DiVA object + edition-pinned locators
-Costa: full argument for vv4–9 quotation before any grade reconsideration
 ```
+
+Costa is no longer merely an abstract-only target: the published same-DOI CC BY body was substantially inspected and the model now has a dedicated adversarial delta. Exact official-publisher PDF-byte custody can still be improved, but it is not needed to justify the current no-promotion verdict.
 
 ## Next agent-side high-value targets
 
 1. Garland 2025 complete pp.468–493 + notes.
 2. Ciampa/Rosner pp.503–540 + notes; replace quote chains with direct book text.
 3. Nõmmik DiVA full object, especially the transition from Roman evidence to hidden-event reconstruction and v10/angels.
-4. Costa full-text adversarial matrix vs Peppiatt/Shoemaker/Marshall/current discourse audit.
+4. Direct discourse-corpus test of unmarked Pauline quotations comparable in length to the proposed vv4–9 / vv3–10 spans.
 5. Hooker 1964 complete article if a lawful direct route opens; Cambridge apparatus already pinned.
 6. Gundry-Volf full chapter.
 7. Olson 2008 / Fantham 2008 exact Roman female dress/portrait sections.
@@ -151,6 +168,7 @@ DIRECT_QUOTE_FROM_AGENT = NEVER_QUOTE_SAFE_WITHOUT_DIRECT_TEXT
 RECENCY != AUTHORITY
 PEER_REVIEW != CORRECTNESS
 PUBLISHER_ABSTRACT != FULL_ARTICLE
+NUMBER_OF_ADVOCATES != TEXTUAL_PROOF
 DO_NOT_REQUEST_FROM_USER_IF_AGENT_CAN_ACCESS = true
 PRODUCT_WRITE = false
 UI_IMPLEMENTATION = false
