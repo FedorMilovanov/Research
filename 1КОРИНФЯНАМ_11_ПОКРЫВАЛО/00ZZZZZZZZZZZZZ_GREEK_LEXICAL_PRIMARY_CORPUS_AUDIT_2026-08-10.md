@@ -649,33 +649,44 @@ The PDF was directly inspected. Goodacre’s lexical criticism is especially con
 - both proposed parallels are plural, whereas Paul has singular `περιβόλαιον`;
 - even on a sexualized metaphorical reading of a whole phrase, that would not establish “testicle” as the normal lexical sense of the noun in isolation.
 
-Goodacre therefore directly strengthens the existing project conclusion that the lexical case is weak.
+Goodacre therefore directly strengthens the existing project conclusion that the ordinary lexical case for `testicle` is weak.
 
 But the dispute did **not** end in 2011. JSTOR’s direct JBL issue record verifies:
 
 > Troy W. Martin, “Περιβόλαιον as ‘Testicle’ in 1 Corinthians 11:15: A Response to Mark Goodacre,” *Journal of Biblical Literature* 132.2 (2013): 453–465, DOI `10.2307/23488022`.
 
-Martin’s response is a peer-reviewed published defense of the proposal. The current runtime verifies article identity, issue, pages and response relation from the direct journal/JSTOR record; it does not yet treat Martin’s full article body as directly autopsied.
+The article’s complete 15-page PDF body was subsequently acquired through a public full-text mirror. Publication identity, issue, pagination and DOI are independently controlled by JSTOR; the mirror is therefore used for **body acquisition**, not bibliographic authority. The article’s first printed page was also visually checked in the runtime. Later-page screenshot calls cache-missed, so text-layer closure and visual-page closure remain explicitly distinct.
 
-Therefore the correct historical calibration is not “Goodacre settled the debate,” but:
+Martin’s actual rejoinder materially sharpens the history of the debate:
+
+- he relies on modern linguistic/contextual semantics to argue that an immediate context can establish a specialized meaning even when that meaning is not independently listed as an ordinary lexeme sense;
+- he explicitly makes the **specific context of 1 Cor 11:15** more decisive for his proposal than the existence of external lexical parallels;
+- he nevertheless defends his readings of Euripides *Heracles* 1269 and Achilles Tatius rather than abandoning them;
+- his response therefore functions primarily as a defense of a **context-specific/euphemistic physiological reading**, not as new evidence that `περιβόλαιον` ordinarily means “testicle” in Greek.
+
+That distinction resolves an important calibration problem. Goodacre is stronger on the ordinary corpus/lexical-sense question; Martin’s response shifts the burden to whether Paul’s immediate physiological context justifies an otherwise highly specialized euphemistic sense. Reading Martin directly therefore strengthens **debate-history custody**, not the lexical grade of the proposal.
 
 ```text
 GOODACRE_2011_DIRECT_FULL_BODY = CLOSED
 GOODACRE_2011_LEXICAL_REBUTTAL = DIRECT_B1_STRONG
 MARTIN_2013_RESPONSE_IDENTITY = DIRECT_JOURNAL_VERIFIED
-MARTIN_2013_DIRECT_FULL_BODY = HOLD
+MARTIN_2013_FULL_PDF_BODY = CLOSED_TEXT_LAYER
+MARTIN_2013_FIRST_ARTICLE_PAGE_VISUAL_AUTOPSY = CLOSED
+MARTIN_2013_LATER_PAGE_SCREENSHOTS = RUNTIME_CACHE_HOLD
+MARTIN_2013_CONTEXTUAL_SEMANTICS_ARGUMENT = DIRECT_BODY
+MARTIN_2013_EURIPIDES_ACHILLES_DEFENSE = DIRECT_BODY
 PERIBOLAION_TESTICLE_THEORY = D_C_LOW_PUBLISHED_EDGE_MODEL
 GOODACRE_CRITIQUE != DEBATE_HISTORICALLY_CLOSED
 ```
 
-The independent LXX/Hebrews corpus plus Goodacre’s direct critique keep ordinary covering/wrap semantics decisively better established as lexical semantics. Martin’s published reply means the specialized physiological reconstruction must remain represented in debate history rather than erased.
+The independent LXX/Hebrews corpus plus Goodacre’s direct critique keep ordinary covering/wrap semantics decisively better established as lexical semantics. Martin’s direct reply requires that the specialized physiological reconstruction remain represented as a real published contextual argument rather than erased.
 
 ```text
 PERIBOLAION_TESTICLE_LEXICAL_MEANING = D_C_LOW/NOT_NORMAL_LEXEME_SENSE
 PERIBOLAION_TESTICLE_PHYSIOLOGICAL_RECONSTRUCTION = D_C_LOW_PUBLISHED_EDGE_MODEL
 ```
 
-A physiology theory would therefore have to succeed as a highly specialized contextual/metaphorical reconstruction, not as a dictionary meaning of the word.
+A physiology theory therefore has to succeed as a highly specialized contextual/metaphorical reconstruction, not as the normal dictionary sense of the word.
 
 ---
 
@@ -855,7 +866,8 @@ ANTI_SUBSTITUTION/CORRESPONDENCE_RELATION = A
 PERIBOLAION_TESTICLE_THEORY = D_C_LOW_PUBLISHED_EDGE_MODEL
 GOODACRE_2011_DIRECT_FULL_BODY = CLOSED
 MARTIN_2013_RESPONSE_IDENTITY = DIRECT_JOURNAL_VERIFIED
-MARTIN_2013_DIRECT_FULL_BODY = HOLD
+MARTIN_2013_FULL_PDF_BODY = CLOSED_TEXT_LAYER
+MARTIN_2013_CONTEXTUAL_SEMANTICS_ARGUMENT = DIRECT_BODY
 ```
 
 No change to `PUBLICATION_HOLD`.
