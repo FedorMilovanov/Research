@@ -3,11 +3,11 @@
 **Статус:** `EVERGREEN-DOSSIER / COMPARATIVE-RITUAL-BACKGROUND / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последняя проверка:** 2026-08-10
 
-## 0. Зачем существует это досье
+## 0. Назначение и authority rule
 
 1 Кор 11:4–5 регулирует голову человека **во время конкретного религиозного действия**: `προσευχόμενος ἢ προφητεύων` / `προσευχομένη ἢ προφητεύουσα`.
 
-Поэтому исторический фон нельзя сводить только к двум вопросам:
+Поэтому исторический фон нельзя сводить только к:
 
 1. `textile covering ↔ hair/coiffure`;
 2. `gender/status ↔ man/woman, wife, free/slave, matron, citizen`.
@@ -16,41 +16,69 @@
 
 > **RITUAL PERFORMANCE STATE — как визуально регулировались тело, одежда, волосы и головные знаки именно при совершении религиозной функции?**
 
-Это досье не утверждает, что коринфские пророчицы подражали Пифии, Дидиме или мистериальным культам. Оно проверяет более ограниченный вопрос: существовал ли в близком античном мире отдельный visual/body code религиозной функции и существует ли прямая связь `female prophetic office + head/hair code`.
+Это evergreen dossier. Новые данные по этой оси **обновляют этот файл**, а не порождают новый `pass_N` или `00ZZZZ...` successor.
+
+Текущие claim grades остаются в `00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md`; этот dossier не повышает grade сам по себе.
 
 ---
 
-## 1. Жёсткое разделение уровней доказательства
+## 1. Fail-closed evidence boundaries
 
 ```text
 FEMALE_PROPHETIC_ROLE_ATTESTED
-!=
-HEAD_OR_HAIR_CODE_ATTESTED
+!= HEAD_OR_HAIR_CODE_ATTESTED
 
 RITUAL_HEAD_HAIR_REGULATION_ATTESTED
-!=
-PROPHETESS_HEAD_HAIR_REGULATION_ATTESTED
+!= PROPHETESS_HEAD_HAIR_REGULATION_ATTESTED
 
 LITERARY_ECSTATIC_HAIR
-!=
-FIRST_CENTURY_CORINTHIAN_PRACTICE
+!= FIRST_CENTURY_CORINTHIAN_PRACTICE
 
-ROMAN/GREEK_COMPARAND
-!=
-EXACT_CORINTH_TRIGGER
+VISUAL_HONOUR_CULTURE
+!= SURVIVING_IDENTIFIED_PROPHETESS_PORTRAIT
+
+HONORIFIC_DRESS_LANGUAGE
+!= DIRECT_HEADWEAR_DESCRIPTION
+
+PHI_ORDINAL_NUMBER
+!= AUTOMATICALLY_REHM_IDIDYMA_NUMBER
+
+ROMAN/GREEK/JEWISH_COMPARAND
+!= EXACT_CORINTH_TRIGGER
 ```
-
-Каждая запись ниже должна отвечать только за свой уровень.
 
 ---
 
-# 2. Дидима: реальная женская пророческая должность
+# 2. Current evidence matrix
 
-## 2.1 Tryphosa — эпиграфически засвидетельствованная `προφῆτις`
+| Node | What is directly controlled | Current use | Head/hair code? |
+|---|---|---|---|
+| Tryphosa | `προφῆτις`, Didyma | female mantic office | **No** |
+| Eirene | `πρόμαντις`, Milet/Didyma orbit | female mantic title | **No** |
+| Cleopatra | restored `[προφ]ήτιδι` | fragmentary candidate | **No** |
+| `προφητίσκη` | reported graffito | uncertain/possibly ironic | **No** |
+| Nannion | hydrophoros, 7/6 BCE, painted-image honour | female cult office + visual culture | **No** |
+| Miletos 481 | gods manifest through virgins/women/men/infants | female divine-information channel | **No** |
+| Andania | ritual `pilos` + separately regulated female hair/anadema | headwear/hair as separate axes | **Yes, but not prophetess** |
+| Lycosura | hair rule + covered-state rule | second separation control | **Yes, but exact gender mapping open** |
+| Virgil/Lucan | literary prophetic hair/head transformation | cultural prophetic-state imagery | **Literary only** |
+| Diodorus | role-specific Pythian costume | ritual role can override ordinary status dress | **Costume, not exact head-code** |
+| Delphi museum/Nawotka | Pythian procedure; no named Pythia currently known | negative object/personnel control | **No direct code found** |
 
-Прямой эпиграфический контроль: **Didyma 450 / SEG 30.1286 (= традиционно также Didyma 708 в литературе)**.
+Core result:
 
-Сохранившийся текст о гидрофоре Platainis говорит:
+```text
+DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = NOT_VERIFIED
+GLOBAL_NONEXISTENCE = NOT_CLAIMED
+```
+
+---
+
+# 3. Didyma/Miletos — female mantic roles
+
+## 3.1 Tryphosa — strongest female-prophetess object
+
+**PHI Didyma 450 / SEG 30.1286** preserves:
 
 ```text
 [ὑ]δροφόρος Ἀρτέμιδος Πυθίη[ς]
@@ -59,17 +87,13 @@ EXACT_CORINTH_TRIGGER
 Τρυφώσης ...
 ```
 
-То есть сама надпись прямо сохраняет предка `Τρυφῶσα ... προφῆτις`.
+Primary route:
+- `https://epigraphy.packhum.org/text/247445`
 
-Primary database route:
-- PHI Greek Inscriptions, Didyma 450: `https://epigraphy.packhum.org/text/247445`
-
-Хронология **не высечена прямо на надписи**. L.-M. Günther по просопографии датирует служение старшей Tryphosa примерно **около 5 г. н. э.**; *Epigraphic Bulletin for Greek Religion* суммирует эту реконструкцию и отмечает, что Tryphosa была либо замужней, либо вдовой при назначении и была избрана согласно оракулу Аполлона.
+The inscription directly establishes an ancestor **Tryphosa `προφῆτις`**. The often-used date around **5 CE** is not carved on the stone; it is a prosopographical reconstruction summarized by *Epigraphic Bulletin for Greek Religion*. That same specialist discussion reports her as married or widowed when appointed and connects the appointment with Apollo’s oracle.
 
 Control:
-- EBGR 2012, entry 72: `https://journals.openedition.org/kernos/2337`
-
-Безопасная формула:
+- `https://journals.openedition.org/kernos/2337`
 
 ```text
 TRYPHOSA_PROPHETIS_EXISTENCE = A_EPIGRAPHIC
@@ -78,24 +102,14 @@ TRYPHOSA_APPOINTMENT_BY_APOLLO_ORACLE = B_HIGH_SPECIALIST_RECONSTRUCTION
 TRYPHOSA_HEAD_HAIR_CODE = NOT_ATTESTED
 ```
 
-### Что это доказывает
-
-- институциональная женская mantic/divine-mediation role в Дидиме реальна;
-- её исторический горизонт может находиться близко к началу I века н. э.;
-- `προφητεύουσα` у Павла не обязана восприниматься как культурно немыслимая женская религиозная функция.
-
-### Чего это НЕ доказывает
-
-- покрытие головы Tryphosa;
-- распущенные волосы;
-- `mitra`, `anadema`, венок или veil;
-- происхождение коринфской практики из Дидимы.
+Safe use: near-Pauline comparative proof of a real female mantic office.  
+Unsafe use: “Tryphosa wore X on her head.”
 
 ---
 
-## 2.2 Eirene — прямой титул `πρόμαντις`
+## 3.2 Eirene — `πρόμαντις`
 
-**Milet VI,2 546** сохраняет краткую эпитафию:
+**Milet VI,2 546**:
 
 ```text
 Εἰρήνη
@@ -103,10 +117,10 @@ TRYPHOSA_HEAD_HAIR_CODE = NOT_ATTESTED
 τι χαῖρε.
 ```
 
-Primary database route:
-- PHI Greek Inscriptions, Milet VI,2 546: `https://inscriptions.packhum.org/text/351272`
+Primary route:
+- `https://inscriptions.packhum.org/text/351272`
 
-Antti Lampinen сопоставляет `πρόμαντις` с `προφῆτις` в дидимейской системе и считает связь с оракулом вероятной из-за места находки у Священной дороги; точная дата остаётся широкой, императорской.
+The title itself is direct. Association with the Didyma oracle is contextual/scholarly; exact date remains broadly imperial.
 
 ```text
 EIRENE_PROMANTIS_TITLE = A_EPIGRAPHIC
@@ -115,102 +129,22 @@ EIRENE_EXACT_DATE_NEAR_PAUL = NOT_ESTABLISHED
 EIRENE_HEAD_HAIR_CODE = NOT_ATTESTED
 ```
 
-Tryphosa и Eirene дают **два разных женских мантических титула** в одной милетско-дидимейской религиозной среде.
-
 ---
 
-## 2.3 Nannion — не пророчица, но важный хронологический культовый контроль
+## 3.3 Cleopatra — numbering crosswalk now controlled
 
-**Didyma 445 = I.Didyma 346**, 7/6 г. до н. э., прямо называет Nannion:
+Modern scholarship (Lampinen; JHS; Nawotka) cites the fragmentary woman-prophetess as **Rehm `I.Didyma 273`**.
 
-```text
-Ἀρτέμιδος Πυθείης ὑδροφόρος ... Νάννιον Ἰάσονος ...
-```
-
-Надпись также говорит, что она была почтена городом `εἰκόνι γραπτῇ` — painted image.
-
-Primary route:
-- PHI: `https://inscriptions.packhum.org/text/247440`
-
-```text
-NANNION_HYDROPHOROS = A_EPIGRAPHIC
-NANNION_DATE_7_6_BCE = A_EPIGRAPHIC_EDITION
-NANNION_PAINTED_IMAGE_HONOUR = A_EPIGRAPHIC
-NANNION_PROPHETESS = FALSE
-NANNION_VALUE = SAME_CULTIC_ECOLOGY_NEAR_PAULINE_HORIZON
-```
-
-Нельзя смешивать `hydrophoros` и `prophetis`; ценность Nannion — институциональная экология женской культовой службы.
-
----
-
-## 2.4 Дидимейская visual-honour culture существует, но портрет prophetis пока не найден
-
-**Didyma 511 / I.Didyma 394**, 54/53 г. до н. э., показывает, что prophet, hydrophoros, `hypochrēstēs`, храмовые служители и другие участники оракульного комплекса коллективно почтили Mousaios **painted portrait overlaid with gold**.
-
-Controls:
-- PHI Greek Inscriptions search, `Didyma 511`;
-- translation/control: `https://www.attalus.org/docs/other/inscr_2.html`.
-
-Дополнительно **Didyma 439 / I.Didyma 322**, раннеимперская hydrophoros-inscription, сохраняет фрагментарную формулу:
-
-```text
-ἥτις ἐτιμήθη [εἰκόνι] χρυ[σῇ ...]
-```
-
-и одновременно помещает женщину в семью, где дед и отец связаны с `προφητεύειν`. Здесь `εἰκόνι` восстановлено редактором, поэтому object-grade должен оставаться ниже полностью сохранившегося Nannion wording.
-
-Primary route:
-- PHI Didyma 439: `https://epigraphy.packhum.org/text/247434`.
-
-```text
-DIDYMA_CULT_PERSONNEL_PARTICIPATE_IN_PUBLIC_PORTRAIT_HONOURS = A/B_HIGH
-NANNION_PAINTED_IMAGE = A_PRIMARY_TEXT
-DIDYMA_439_GOLD_IMAGE = B_HIGH_EPIGRAPHIC_RESTORATION
-NEAR_PAULINE_VISUAL_HONOUR_CULTURE = ATTESTED
-SURVIVING_IDENTIFIED_PROPHETIS_PORTRAIT = NOT_FOUND
-```
-
-То есть отсутствие найденного портрета Tryphosa/Eirene нельзя превращать в утверждение, будто культовый персонал вообще не визуализировался.
-
-### Архаические статуи Священной дороги — только object-level control
-
-British Museum хранит реальные женские статуи из серии Didyma Sculptures со Священной дороги. Например:
-
-- BM `1859,1226.7`, архаическая эпоха: волосы описаны как короткие **или собранные под cap**;
-- BM `1859,1226.9`, около 520–510 BC: на плечах сохраняются lappets of an Ionic bonnet.
-
-Official object routes:
-- `https://www.britishmuseum.org/collection/object/G_1859-1226-7`
-- `https://www.britishmuseum.org/collection/object/G_1859-1226-9`
-
-Но:
-
-```text
-DIDYMA_ARCHAIC_FEMALE_HEADWEAR_OBJECTS = DIRECT_MUSEUM_OBJECTS
-DATE = ARCHAIC_CENTURIES_BEFORE_PAUL
-IDENTIFIED_AS_PROPHETESS = FALSE/NOT_ATTESTED
-USE_FOR_TRYPHOSA_HEAD_CODE = PROHIBITED
-```
-
-Они показывают, что визуальные head/hair forms в дидимейской среде материально засвидетельствованы, но находятся за века до Tryphosa и не принадлежат доказанной prophetis.
-
----
-
-## 2.5 Fragmentary prophetess candidates: Cleopatra, нумерационный crosswalk и `προφητίσκη`
-
-### Cleopatra — Rehm `I.Didyma 273`, PHI ordinal `Didyma 533`
-
-Нумерационная ловушка теперь **в основном разрешена**.
-
-Lampinen прямо ссылается на фрагментарную Cleopatra как **`I.Didyma 273`**; JHS также перечисляет prophetis как Rehm, *Didyma* II no. 273. Nawotka 2026 повторяет тот же номер. При этом текущий PHI search показывает под своим внутренним ordinal-заголовком **`Didyma 533`** уникальный тот же фрагмент:
+Current PHI search exposes the same unique fragment under its own ordinal heading **`Didyma 533`**:
 
 ```text
 [προφ]ήτιδι [τοῦ Διδυμέως?]
 [Κλεο]πάτρᾳ [τῇ θυγατρὶ ...]
 ```
 
-Отдельно PHI-страница, озаглавленная **`Didyma 273`**, прямо сообщает underlying edition number `*IDidyma 193` и содержит совершенно другую honorific inscription. Следовательно, PHI ordinal `Didyma N` нельзя автоматически читать как Rehm `I.Didyma N`.
+Meanwhile PHI ordinal **`Didyma 273`** identifies its underlying edition number as **`IDidyma 193`** and is a different honorific inscription.
+
+Therefore:
 
 ```text
 REHM_IDIDYMA_273 = CLEOPATRA_PROPHETIS_FRAGMENT
@@ -218,22 +152,22 @@ PHI_ORDINAL_DIDYMA_533 = SAME_CLEOPATRA_TEXT_BY_UNIQUE_TEXT_IDENTITY
 PHI_ORDINAL_DIDYMA_273 = UNDERLYING_IDIDYMA_193
 NUMBERING_SYSTEMS_ARE_DISTINCT = VERIFIED
 CROSSWALK_REHM_273_TO_PHI_533 = B_HIGH_TEXT_IDENTITY
-DIRECT_PHI_METADATA_FOR_533_UNDERLYING_NUMBER = NOT_EXPOSED_IN_CURRENT_SEARCH
 ```
 
-То есть старый общий `EDITION_NUMBER_CROSSWALK = HOLD` снимается как слишком грубый. Остаётся лишь узкий metadata-HOLD: текущий поисковый интерфейс PHI не показал нам строку metadata самого объекта `Didyma 533`, поэтому crosswalk фиксируется по **уникальному тексту + независимым edition citations**, а не выдаётся за прямую PHI metadata mapping.
+Narrow remaining HOLD: the current PHI search presentation has not exposed the underlying edition-number metadata line for ordinal `Didyma 533`; do not pretend it has.
 
-Сам объект всё равно фрагментарен: и титул, и имя частично **editorially restored**.
+The object remains fragmentary:
 
 ```text
-CLEOPATRA_REHM_IDIDYMA_273_PROPHETIS = B_C_FRAGMENTARY_RESTORATION
-CLEOPATRA_EXACT_DATE = SECOND_CENTURY_AD_IN_JHS_SUMMARY / DIRECT_EDITION_DATE_HOLD
+CLEOPATRA_PROPHETIS = B_C_FRAGMENTARY_RESTORATION
 CLEOPATRA_HEAD_HAIR_CODE = NOT_ATTESTED
 ```
 
-### Didyma 235B / `καλὴ προφητίσκη`
+---
 
-Lampinen и Nawotka сообщают об obscure graffito, где женщина, вероятно Γάϊς, названа/похвалена как `καλὴ προφητίσκη`; Lampinen отдельно отмечает, что у женщины **не дан официальный титул**, а формулировка может быть иронической.
+## 3.4 `Didyma 235B` / `καλὴ προφητίσκη`
+
+Lampinen/Nawotka report a graffito in which a woman, probably Γάϊς, is called/praised `καλὴ προφητίσκη`.
 
 ```text
 DIDYMA_235B_PROPHETISKE_WORDING = STRONG_SECONDARY_EDITION_REPORT
@@ -243,117 +177,241 @@ DIRECT_CURRENT_PHI_OBJECT = NOT_PINNED
 HEAD_HAIR_CODE = NOT_ATTESTED
 ```
 
-Эти fragmentary cases расширяют candidate list, но не равны Tryphosa по доказательной силе.
+Do not count this as equal to Tryphosa.
 
 ---
 
-## 2.6 Delphi — сильный negative control против переноса литературной Pythia в эпиграфику
+# 4. Female cult office + visual-honour culture
 
-Официальный Archaeological Site / Museum of Delphi описывает Pythia как пожизненную жрицу-прорицательницу, ритуальное очищение, жертвоприношение, лавр, спуск в adyton и выдачу оракула. Но этот официальный procedural summary **не даёт конкретного veil/headband/hair code** Pythia.
+These objects matter because they prove that women in the Didyma cultic ecology could be publicly visualized/honoured. They **do not** supply a surviving prophetess portrait.
 
-Official route:
-- `https://delphi.culture.gr/archaelogical-site/site-history/mythological-versions-of-the-foundation-of-the-oracle/`
+## 4.1 Nannion — 7/6 BCE
 
-Отдельно Krzysztof Nawotka в институциональном интервью University of Wrocław подчёркивает резкий контраст с Didyma: из Delphi **не известно ни одного имени prophetess/Pythia**, хотя сам титул Pythia известен и оракул функционировал столетиями.
+**PHI Didyma 445 = I.Didyma 346** names Nannion as `ὑδροφόρος Ἀρτέμιδος Πυθείης` and says she was honoured with `εἰκόνι γραπτῇ`.
 
-Это не превращается в абсолютное доказательство, что имя нигде и никогда не было записано; для проекта это specialist/institutional negative control:
+Primary route:
+- `https://inscriptions.packhum.org/text/247440`
 
 ```text
-DELPHI_PYTHIA_ROLE = WELL_ATTESTED
-DELPHI_NAMED_PYTHIA_IN_CURRENT_EPIGRAPHIC_KNOWLEDGE = NONE_KNOWN_PER_NAWOTKA
-DELPHI_OFFICIAL_PROCEDURAL_SUMMARY_HEAD_HAIR_CODE = NOT_FOUND
-DELPHI_LITERARY_PYTHIA_IMAGE != EPIGRAPHIC_PERSONNEL_PORTRAIT
+NANNION_HYDROPHOROS = A_EPIGRAPHIC
+NANNION_DATE_7_6_BCE = A_EPIGRAPHIC_EDITION
+NANNION_PAINTED_IMAGE_HONOUR = A_EPIGRAPHIC
+NANNION_PROPHETESS = FALSE
 ```
-
-Это усиливает главный методологический барьер досье: богатая литературная визуализация Pythia у Virgil/Lucan не должна подменять отсутствующий object-level head code конкретной исторической prophetess.
 
 ---
 
-# 3. Agatho — обязательная self-correction / quarantine
+## 4.2 Near-/post-Pauline image honours
 
-В доступной главе Krzysztof Nawotka 2026 Agatho представлена как ещё одна prophetess; английская формулировка связывает её с «prophetic garment / prophesying».
+### Didyma 444 — 17/6 BCE
 
-Но приведённый там же греческий **Didyma 302+303, ll. 10–11**:
+Hydrophoros inscription includes a restored gold-image honour `[εἰκόνι] χρυσῇ`.
+
+```text
+DIDYMA_444_GOLD_IMAGE = B_HIGH_EPIGRAPHIC_RESTORATION
+DATE = 17_6_BCE
+```
+
+### Didyma 439 — early imperial
+
+Hydrophoros inscription preserves/restores:
+
+```text
+ἥτις ἐτιμήθη [εἰκόνι] χρυ[σῇ ...]
+```
+
+The woman is also placed in a family in which male ancestors are associated with `προφητεύειν`.
+
+Primary route:
+- `https://epigraphy.packhum.org/text/247434`
+
+### Didyma 478 — AD 125/150
+
+PHI directly says of hydrophoros Apollonia that she was:
+
+```text
+τετειμῆσθαι εἰκόνι γραπτῇ
+```
+
+and that the painted image was to be set up in the sanctuary of Artemis Pythia.
+
+Primary route:
+- `https://epigraphy.packhum.org/text/247473`
+
+### Didyma 511 — 54/53 BCE
+
+Prophet, hydrophoros, `hypochrēstēs` and other cult personnel participate in an honour involving a painted portrait overlaid with gold.
+
+Current conclusion:
+
+```text
+DIDYMA_CULT_PERSONNEL_PUBLIC_IMAGE_HONOURS = A/B_HIGH
+VISUAL_HONOUR_CULTURE_NEAR_PAULINE_HORIZON = ATTESTED
+SURVIVING_IDENTIFIED_TRYPHOSA_EIRENE_PORTRAIT = NOT_FOUND
+```
+
+---
+
+## 4.3 Archaic Sacred Way statues — useful but far too early
+
+British Museum objects from the Didyma Sacred Way preserve female head/hair forms, including hair described as short or gathered under a cap and another figure with remnants of an Ionic bonnet.
+
+Official routes:
+- `https://www.britishmuseum.org/collection/object/G_1859-1226-7`
+- `https://www.britishmuseum.org/collection/object/G_1859-1226-9`
+
+```text
+DIDYMA_ARCHAIC_FEMALE_HEADWEAR_OBJECTS = DIRECT_MUSEUM_OBJECTS
+DATE = ARCHAIC_CENTURIES_BEFORE_PAUL
+IDENTIFIED_AS_PROPHETESS = FALSE/NOT_ATTESTED
+USE_FOR_TRYPHOSA_HEAD_CODE = PROHIBITED
+```
+
+---
+
+# 5. Semantic false-positive firewall: visual-sounding words are not automatically clothing
+
+## 5.1 Didyma 557 — `κεκοσμημένη` does not name a head object
+
+PHI **Didyma 557**, an elegiac hydrophoros inscription for Metrodora, says:
+
+```text
+ἀλλ’ οὔ [τ]ι[ς τοιῇδε] κεκοσμένη ὑδροφορείῃ
+ἠγάθε[ον Διδύμ]ων ἤλυθεν εἰς δάπεδον
+```
+
+The surrounding poem praises her hydrophoria, piety, sacrifices and libations. The text **does not name a garment, veil, cap, headband or hairstyle**.
+
+Primary route:
+- `https://epigraphy.packhum.org/text/247553`
+
+Safe control:
+
+```text
+DIDYMA_557_KEKOSMEMENE = HONORIFIC/OFFICE_CONTEXT
+DIRECT_HEADWEAR_OR_GARMENT_NOUN = NONE
+USE_AS_PROPHETESS_HEAD_CODE = PROHIBITED
+```
+
+Do not translate a visually suggestive participle into an invented artefact.
+
+---
+
+## 5.2 Didyma 493 — `matrona stolata` is late status-language, not head-code
+
+PHI **Didyma 493** names hydrophoros Julia Sellia Statilia Pythodoris:
+
+```text
+[Στατι]λία Πυθοδωρὶς ματρῶν[α]
+[στολᾶ]τα
+```
+
+The inscription is **3rd century, second half or later** and places her in an elite family; her father is a `προφήτης`.
+
+Primary route:
+- `https://epigraphy.packhum.org/text/247488`
+
+Even if `stolata` evokes Roman dress/status, this object is too late for direct Pauline background and **does not describe a head covering**.
+
+```text
+DIDYMA_493_MATRONA_STOLATA = LATE_ELITE_STATUS_DRESS_LANGUAGE
+DIRECT_HEAD_CODE = NONE
+USE_AS_NEAR_PAULINE_PROPHETESS_HEAD_CODE = PROHIBITED
+```
+
+---
+
+# 6. Miletos 481 — women as channels of divine manifestation in the same regional world
+
+**PHI Miletos 481 = I.Didyma 496** preserves a question by Alexandra, priestess of Demeter. She reports extraordinary divine manifestations and explicitly says they occurred:
+
+```text
+διὰ παρθένων καὶ γυναικῶν
+...
+δι’ ἀρρένων καὶ νηπίων
+```
+
+Primary route:
+- `https://epigraphy.packhum.org/text/252571`
+
+The text does **not** call these women `prophetides`, and it says nothing about their heads. Its value is narrower:
+
+```text
+MILETOS_481_FEMALE_DIVINE_MANIFESTATION_CHANNELS = A_PRIMARY_TEXT
+FORMAL_FEMALE_PROPHETIS_TITLE = NOT_THE_POINT
+HEAD_HAIR_CODE = NOT_ATTESTED
+DATE_PRECISION = IMPERIAL / DIRECT_NUMERIC_CENTURY_METADATA_NEEDS_EDITION_PIN
+```
+
+This independently strengthens the comparative category **female divine communication** within the same Miletos/Didyma religious environment.
+
+---
+
+# 7. Agatho — quarantine/self-correction
+
+Accessible Nawotka 2026 English wording presents Agatho as another prophetess and appears to turn the relevant text into “prophetic garment / prophesying”.
+
+But the cited Greek **Didyma 302+303** reads:
 
 ```text
 τὴν στ[οὰν τῆς προ]φητικῆς ἐστέ[γ]ασεν καὶ ἔχρεισ[εν]
 ```
 
-нормально относится к строительным работам: она покрыла кровлей / оштукатурила стою, связанную с prophet’s house.
-
-Независимый архитектурно-эпиграфический контроль классифицирует **Didyma 302–303** как строительное благодеяние вокруг дома пророка.
-
-Проектная формула:
+The verbs fit roofing/plastering/building work around the prophet’s house/portico, not putting on prophetic clothing.
 
 ```text
 AGATHO_AS_PROPHETIS = QUARANTINED
 AGATHO_BUILDING_BENEFACTION = STRONG_PRIMARY_TEXT_PLUS_INDEPENDENT_CONTROL
-NAWOTKA_ACCESSIBLE_ENGLISH_RENDERING = VERY_LIKELY_TEXTUAL/TRANSLATION_ERROR
+NAWOTKA_ACCESSIBLE_ENGLISH_RENDERING = VERY_LIKELY_TEXTUAL_OR_TRANSLATION_ERROR
 FINAL_PUBLISHER_OBJECT_CHECK = HOLD
 ```
 
-Agatho нельзя включать в число надёжно засвидетельствованных prophetides до закрытия финального издательского объекта.
+Do not count Agatho among secure female prophetesses until that final object is checked.
 
 ---
 
-# 4. Andania: самый сильный near-Pauline контроль отдельного ritual head/hair code
+# 8. Andania — strongest near-Pauline ritual head/hair separation control
 
-**CGRN 222 / IG V,1 1390** — регламент мистерий в Andania.
+**CGRN 222 / IG V,1 1390** regulates mysteries at Andania.
 
-Текущая CGRN датировка: **probably 23 AD**. CGRN при этом прямо сохраняет спор: традиционная/альтернативная датировка около 91 BC остаётся в литературе.
+CGRN currently prefers **probably 23 CE**, while preserving the older/traditional dating around 91 BCE as a live dating dispute.
 
-Authoritative file:
+Authoritative routes:
 - `https://cgrn.ulg.ac.be/file/222/`
-- DOI `10.54510/CGRN222`
+- PHI `https://epigraphy.packhum.org/text/31826`
 
-## 4.1 Headwear культовых мужчин и женщин
-
-Строки 13–14:
+For cult officials:
 
 ```text
 στεφάνους δὲ ἐχόντω οἱ μὲν ἱεροὶ καὶ αἱ ἱεραὶ πῖλον λευκόν
 ```
 
-То есть `hieroi` и `hierai` получают специальный **white pilos** как ритуальный головной знак.
-
-## 4.2 Женская причёска/повязка регулируется отдельно
-
-Строки 20–23 в processional dress code:
+For women, the same regulation separately includes:
 
 ```text
 μηδὲ ἀνάδεμα
 μηδὲ τὰς τρίχας ἀνπεπλεγμένας
 ```
 
-Женщинам запрещаются `anadema` и определённое состояние/укладка волос; PHI сохраняет текст непосредственно.
-
-Primary route:
-- PHI IG V,1 1390: `https://epigraphy.packhum.org/text/31826`
-
-Это особенно важно методологически:
+Therefore:
 
 ```text
 HEADWEAR_AXIS = EXPLICIT
 HAIR_ARRANGEMENT_AXIS = EXPLICIT
 SAME_RITUAL_REGULATION = TRUE
 HEADWEAR_AND_HAIR_ARE_NOT_COLLAPSED_INTO_ONE_THING = A_PRIMARY
-```
-
-Andania **не является пророческим культом Коринфа** и не объясняет Павла напрямую. Но она разрушает плохую предпосылку, будто античный ритуальный норматив обязательно регулировал «либо ткань, либо волосы», а не несколько визуальных параметров одновременно.
-
-```text
-ANDANIA_RITUAL_HEAD_HAIR_SEPARATE_AXES = A_PRIMARY
-ANDANIA_NEAR_PAULINE_DATE = B_HIGH_CURRENT_CGRN_WITH_DATE_DISPUTE
 ANDANIA_EXACT_1COR11_BACKGROUND = NOT_CLAIMED
 ```
 
+This is currently the strongest near-Pauline comparative control against forcing a false binary “either textile or hair”.
+
 ---
 
-# 5. Lycosura: второй контроль различения hair vs covered-state
+# 9. Lycosura — second ritual separation control
 
-В **IG V,2 514** рядом стоят запрет определённой укладки волос и `μηδὲ κεκαλυμμένος`.
+**IG V,2 514** places a hair-related rule and `μηδὲ κεκαλυμμένος` within the same ritual-regulatory environment.
 
-Важно: текущий PR уже исправил более раннее overclaim, будто надпись прямо пишет `τοὺς ἄνδρας`. Этого в сохранившемся тексте нет; мужская форма `κεκαλυμμένος` реальна, но точное гендерное распределение правила требует осторожности.
+Current project correction:
 
 ```text
 LYCOSURA_HAIR_AND_COVERING_DISTINCT_RULE_ITEMS = A_PRIMARY
@@ -361,177 +419,155 @@ LYCOSURA_EXACT_GENDER_MAPPING = OPEN
 LYCOSURA_MALE_ONLY_AS_OVERT_TEXT = REJECTED_OVERCLAIM
 ```
 
-Этот объект используется только как independent ritual-code control, не как прямое объяснение 1 Cor 11.
+The inscription has masculine `κεκαλυμμένος`, but the previously supplied `[τοὺς ἄνδρας]` is not surviving wording and must not be promoted as direct text.
 
 ---
 
-# 6. Литературный prophetic-state / role-costume corpus
+# 10. Literary prophetic-state / role-costume corpus
 
-Эта группа источников показывает **культурно читаемую семиотику вдохновения или специального costume роли**, но не заменяет эпиграфику.
+These sources show culturally intelligible **prophetic-state imagery** or **role-specific costume**. They do not replace epigraphy.
 
-## 6.1 Virgil, Aeneid 6
+## 10.1 Virgil, Aeneid 6
 
-При наступлении вдохновения Кумской Сивиллы:
+At the onset of Sibylline inspiration:
 
 ```text
 non comptae mansere comae
 ```
 
-То есть ранее упорядоченные волосы перестают сохранять прежнюю упорядоченность; одновременно меняются лицо, цвет, дыхание, голос и телесное состояние.
-
-Primary text:
-- Perseus, *Aeneid* 6, lines 45–50.
+Her previously ordered hair no longer remains ordered, alongside changes in face, colour, breath and voice.
 
 ```text
 VIRGIL_PROPHETIC_HAIR_TRANSFORMATION = A_PRIMARY_LITERARY
 ETHNOGRAPHIC_RULE = NOT_PROVED
 ```
 
-## 6.2 Lucan, Bellum Civile 5
+---
 
-Lucan (39–65 CE) особенно ценен хронологически как автор нероновского поколения.
+## 10.2 Lucan, Bellum Civile 5
 
-Перед истинным вдохновением литературная Pythia имеет:
+Lucan (39–65 CE) is chronologically near Paul. His literary Pythia has fillet/head-dress/laurel/hair imagery, and at true divine possession the state of those head/hair signs changes.
 
-- wreathed fillet binding the hair at the front;
-- hair streaming down the back;
-- white head-dress;
-- Phocaean laurel.
-
-При **ложном** изображении вдохновения Lucan прямо замечает отсутствие характерных признаков, включая hair-on-end. При **истинном** possession, около lines 169–173, она трясёт головой и сбрасывает с поднявшихся/вставших волос **fillets of the god and garlands of Phoebus**.
-
-Accessible primary-text control:
+Accessible text:
 - `https://pages.pomona.edu/~cmc24747/sources/lucan/BC_5.htm`
 
 ```text
 LUCAN_HEAD_HAIR_FILLET_LAUREL = A_PRIMARY_LITERARY
 LUCAN_TRUE_INSPIRATION_CHANGES_HEAD_HAIR_SIGNS = A_PRIMARY_LITERARY
-LUCAN_NEAR_PAULINE_CHRONOLOGY = A_BIOGRAPHICAL
 LUCAN_AS_REAL_DELPHIC_PROCEDURE_REPORT = REJECTED_OVERCLAIM
 ```
 
-## 6.3 Plutarch + Klem 2023 = antidote to literalizing Lucan
+---
 
-Matthew J. Klem (*Classical Quarterly* 73.1 [2023]: 311–319) shows that Plutarch distinguishes:
+## 10.3 Plutarch + Klem 2023
 
-- `possession prophecy` — prophetess as passive apparatus;
-- `stimulation prophecy` — divine impulse, but prophetess retains agency and formulates oracle through her faculties.
-
-Klem’s key result: Plutarch understands the Pythia as **stimulation**, not possession prophecy.
-
-Publisher full text:
-- Cambridge Core, DOI `10.1017/S0009838823000253`.
+Klem’s direct specialist study shows Plutarch distinguishes `possession prophecy` from `stimulation prophecy` and prefers a stimulation model for the Pythia.
 
 ```text
 LUCAN_ECSTATIC_POSSESSION_IMAGERY != AUTOMATIC_REAL_PYTHIA_PROCEDURE
 PLUTARCH_STIMULATION_MODEL = DIRECT_MODERN_SPECIALIST_CONTROL
 ```
 
-## 6.4 Iamblichus, De mysteriis 3.11 — late, but useful negative control
+---
 
-Iamblichus explicitly describes a woman at Branchidae/Didyma who:
+## 10.4 Diodorus Siculus 16.26.6 — role-specific prophetic costume
 
-- holds a staff;
-- may sit on a ritual apparatus;
-- dips feet or border of garment in water;
-- undergoes baths, fasting and adyton preparation.
+Diodorus reports the tradition that, after changing from a young virgin to an older woman as Pythia, Delphi retained **the costume of a virgin** for the office.
 
-Bilingual/direct text route:
-- `https://ldysinger.com/@texts/0302_iamblichus/02_Mysteries_01-4.htm`
+```text
+PROPHETIC_OFFICE_CAN_HAVE_ROLE_SPECIFIC_COSTUME = A_PRIMARY_LITERARY_TRADITION
+COSTUME_CAN_DIFFER_FROM_WEARERS_AGE_STATUS_CODE = A_PRIMARY_LITERARY_TRADITION
+DIODORUS_STORY_AS_EXACT_HISTORICAL_ORIGIN = NOT_REQUIRED_OR_PROVED
+DIODORUS_COSTUME_AS_1COR11_BACKGROUND = NOT_CLAIMED
+```
 
-Crucial negative observation:
+This blocks the assumption that a religious woman’s ritual appearance must always be reconstructed only from her ordinary age/marital/status dress.
+
+---
+
+## 10.5 Iamblichus, De mysteriis 3.11 — late negative control
+
+Iamblichus describes Branchidae/Didyma ritual preparation involving staff, seat/apparatus, water, garment edge, baths, fasting and adyton preparation.
 
 ```text
 IAMBLICHUS_DIDYMA_RITUAL_BODY_GARMENT_CODE = YES
 IAMBLICHUS_DIRECT_HEADBAND_VEIL_HAIR_CODE_IN_3_11 = NOT_FOUND
 ```
 
-Он поздний и не является фоном Павла; ценность — показать, что даже подробное описание ritual preparation не даёт нам желаемого head-code.
-
-## 6.5 Diodorus Siculus 16.26.6 — пророческая роль может иметь собственный costume
-
-Diodorus рассказывает традиционную этиологическую историю: первоначально в Дельфах пророчествовали девы; после злоупотребления было постановлено, чтобы оракул возвещала женщина около пятидесяти лет, **но одетая в costume девы**, как напоминание о прежней prophetess.
-
-Primary text:
-- Perseus, Diodorus, *Library* 16.26.6.
-
-Надёжный вывод ограничен устройством самой античной мысли о роли:
-
-```text
-PROPHETIC_OFFICE_CAN_HAVE_ROLE_SPECIFIC_COSTUME = A_PRIMARY_LITERARY_TRADITION
-COSTUME_CAN_DIFFER_FROM_WEARERS_AGE_STATUS_CODE = A_PRIMARY_LITERARY_TRADITION
-DIODORUS_STORY_AS_EXACT_HISTORICAL_ORIGIN = NOT_REQUIRED/NOT_PROVED
-DIODORUS_COSTUME_AS_1COR11_BACKGROUND = NOT_CLAIMED
-```
-
-Это сильный comparative control против предположения, что одежду религиозной женщины всегда надо реконструировать исключительно из её обычного возраста/семейного/социального статуса.
+Late source; not Pauline background. Useful because even a detailed ritual description does **not** hand us the desired head-code.
 
 ---
 
-# 7. Modern methodological and Jewish comparative bridge
+# 11. Delphi — negative control against converting literary Pythia into object evidence
 
-## 7.1 Matthew T. Sharp
+Official Delphi archaeological/museum material describes Pythian procedure: priestess/prophetess, ritual preparation, laurel, adyton and oracle performance. That procedural summary does **not** specify a veil/headband/hair rule.
 
-Sharp, *Divination and Philosophy in the Letters of Paul* (2023), рассматривает Павловы формы получения divine knowledge в более широком античном мире divination, а не в изоляции современной категорией “prophecy”.
+Official route:
+- `https://delphi.culture.gr/archaelogical-site/site-history/mythological-versions-of-the-foundation-of-the-oracle/`
 
-Это даёт методологическое право сравнивать 1 Cor 11 не только с обычной матроной/мужчиной на улице, но и с людьми, выполняющими divine communication.
+Nawotka’s institutional discussion contrasts Didyma with Delphi and states that no personal name of a Pythia/prophetess is currently known from Delphi.
+
+Project-safe calibration:
+
+```text
+DELPHI_PYTHIA_ROLE = WELL_ATTESTED
+DELPHI_NAMED_PYTHIA = NONE_KNOWN_PER_SPECIALIST_CURRENT_SUMMARY
+DELPHI_OFFICIAL_PROCEDURAL_SUMMARY_HEAD_HAIR_CODE = NOT_FOUND
+DELPHI_LITERARY_PYTHIA_IMAGE != EPIGRAPHIC_PERSONNEL_PORTRAIT
+```
+
+Do not turn mythological vase scenes or literary Pythias into portraits of an identified historical Pythia.
+
+---
+
+# 12. Modern methodological and Jewish comparative bridge
+
+## 12.1 Matthew T. Sharp
+
+*Divination and Philosophy in the Letters of Paul* (2023) supplies the methodological bridge for studying Pauline divine knowledge inside the wider ancient category of divination.
 
 ```text
 SHARP = METHODOLOGICAL_BRIDGE
 SHARP != PYTHIA_EXPLAINS_1COR11
 ```
 
-## 7.2 Gail Paterson Corrington 1991
+---
 
-Corrington, “The ‘Headless Woman’: Paul and the Language of the Body in 1 Cor 11:2–16,” *Perspectives in Religious Studies* 18 (1991): 223–231, остаётся важным предшественником ritual-body reading.
+## 12.2 Gail Paterson Corrington 1991
 
-Но в текущем поиске полный прямой текст не закрыт.
+Bibliographic identity is secure:
+
+> Gail Paterson Corrington, “The ‘Headless Woman’: Paul and the Language of the Body in 1 Cor 11:2–16,” *Perspectives in Religious Studies* 18 (1991): 223–231.
+
+Cambridge’s 2025 *Veiling in the Late Antique World* bibliography independently retains it. Search snippets also preserve secondary quotations, but a direct full article object has **not** been pinned in this pass.
 
 ```text
 CORRINGTON_BIBLIOGRAPHIC_EXISTENCE = VERIFIED
-CORRINGTON_DIRECT_BODY_LEVEL_CLAIMS = LOCATOR/FULLTEXT_HOLD
+CORRINGTON_DIRECT_BODY_LEVEL_CLAIMS = FULLTEXT_LOCATOR_HOLD
+SECONDARY_QUOTE_SNIPPET != DIRECT_ARTICLE_TEXT
 ```
-
-Не цитировать её точную реконструкцию по вторичным пересказам.
-
-## 7.3 Jewish line: женщины как получательницы divine information
-
-Hanna Tervanotko, “Women and Divine Dreams in Jewish Texts of the Greco-Roman Era,” в *Divination and Revelation in Later Antiquity* (Cambridge University Press, 2023), pp.120–135, исследует женские divine dreams в:
-
-- *Jubilees*;
-- *Liber antiquitatum biblicarum*;
-- Josephus, *Jewish War*;
-- *Jewish Antiquities*;
-- *Against Apion*.
-
-Официальный Cambridge summary формулирует минимальный вывод: примеров сохранилось немного, но они являются реальным свидетельством женщин как **recipients of divine information** в древнеиудейских текстах.
-
-Publisher route:
-- Cambridge Core, DOI `10.1017/9781009328777.007`.
-
-Tervanotko 2024 даёт прямой конкретный пример: **Rebecca’s dream in Jubilees 27:1**, где она узнаёт о намерении Esau убить Jacob.
-
-Дополнительный независимый corpus angle — Tervanotko, “Dice, Stars and Names: Women and Technical Divination in the Dead Sea Scrolls,” *Journal of Ancient Judaism* 12.1 (2021): 48–70, DOI `10.30965/21967954-BJA10002`. Авторский/институциональный abstract утверждает, что DSS дают важное свидетельство участия женщин в технических divinatory practices, особенно:
-
-- oracle of the lot;
-- astronomy;
-- physiognomy.
-
-```text
-JEWISH_GRECO_ROMAN_FEMALE_DIVINE_INFORMATION_RECIPIENTS = B1_DIRECT_PUBLISHER_SUMMARY
-REBECCA_JUB_27_1_DIVINE_DREAM = DIRECT_MODERN_SOURCE_EXAMPLE
-DSS_WOMEN_TECHNICAL_DIVINATION = B1_AUTHOR_INSTITUTIONAL_ABSTRACT
-JEWISH_FEMALE_DIVINE_COMMUNICATION_BACKGROUND = VERIFIED_COMPARATIVE
-JEWISH_FEMALE_HEAD_HAIR_CODE_FROM_THESE_SOURCES = NOT_ATTESTED
-```
-
-Этот материал полезен для широты female divine communication, но не должен служить заменой прямого head-code.
 
 ---
 
-# 8. Bounded negative search — результат тоже доказательство дисциплины
+## 12.3 Jewish female divine-information evidence
 
-На 2026-08-10 были отдельно проверены комбинации по PHI/CGRN, музейным каталогам и современным публикациям:
+Tervanotko’s work directly broadens the comparative background:
+
+- women as recipients of divine dreams/information in Greco-Roman Jewish texts;
+- women in technical divinatory practices in the Dead Sea Scrolls.
+
+```text
+JEWISH_FEMALE_DIVINE_INFORMATION_BACKGROUND = B1_COMPARATIVE
+JEWISH_FEMALE_HEAD_HAIR_CODE_FROM_THESE_SOURCES = NOT_ATTESTED
+```
+
+Do not use Jewish female divine-information evidence as a substitute for head-code evidence.
+
+---
+
+# 13. Bounded negative search ledger
+
+Searches have covered combinations of:
 
 ```text
 προφῆτις / προφῆτιδος
@@ -546,31 +582,40 @@ JEWISH_FEMALE_HEAD_HAIR_CODE_FROM_THESE_SOURCES = NOT_ATTESTED
 κεκαλυμ-
 ```
 
-В пределах этого поиска **не найден** near-Pauline direct object, где один и тот же надёжно идентифицированный материал связывает:
+across PHI/CGRN, Didyma/Miletos objects, museum catalogues and relevant scholarship.
+
+Current bounded result:
 
 ```text
-NAMED/IDENTIFIED FEMALE PROPHETIC OFFICE
+NAMED_OR_IDENTIFIED_FEMALE_PROPHETIC_OFFICE
 +
-SPECIFIC HEADBAND / VEIL / HAIR ARRANGEMENT
+SPECIFIC_HEADBAND_VEIL_HAIR_ARRANGEMENT
+=
+NOT_FOUND_IN_BOUNDED_SEARCH
 ```
 
-Также не найден surviving identified portrait Tryphosa/Eirene, который позволял бы безопасно извлечь их head/hair state.
-
-Это только bounded negative result:
+Also:
 
 ```text
-DIRECT_PROPHETESS_HEAD_CODE_FOUND = false
 IDENTIFIED_TRYPHOSA_EIRENE_PORTRAIT_FOUND = false
+DIRECT_DIDYMA_FEMALE_MANTIC_HEADWEAR_INSCRIPTION = false_in_bounded_search
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
-Не заполнять этот пробел Lucan/Virgil/Andania/архаическими статуями Дидимы автоматически.
+False-positive controls now explicitly include:
+
+```text
+KEKOSMEMENE != INVENTED_HEAD_ADORNMENT
+MATRONA_STOLATA != HEAD_COVERING
+VISUAL_HONOUR != SURVIVING_PORTRAIT
+ROLE_TITLE != HEAD_CODE
+```
 
 ---
 
-# 9. Что меняется для чтения 1 Cor 11:4–5
+# 14. Current implication for 1 Cor 11:4–5
 
-Новые данные **не меняют** core grades current claim registry:
+**No core grade reversal.**
 
 ```text
 MATERIAL_COVERING = B_HIGH_LEADING
@@ -578,46 +623,47 @@ HAIR_ONLY = C_SERIOUS_ALTERNATIVE
 EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
 ```
 
-Но они делают обязательной дополнительную историческую ось:
+New comparative axis:
 
 ```text
 FEMALE_DIVINE_MEDIATION_IN_ORACULAR_INSTITUTIONS = A/B_HIGH
+FEMALE_DIVINE_MANIFESTATION_CHANNELS_IN_MILETOS = A_PRIMARY
 RITUAL_HEADWEAR_AND_HAIR_CAN_BE_SEPARATELY_REGULATED = A_PRIMARY
 RITUAL_ROLE_CAN_CARRY_ITS_OWN_VISUAL_OR_COSTUME_CODE = B_HIGH_COMPARATIVE
-PROPHETIC_STATE_CAN_BE_LITERARILY_MARKED_BY_HAIR_HEAD_TRANSFORMATION = A_LITERARY
-JEWISH_FEMALE_DIVINE_INFORMATION_DIVINATION_BACKGROUND = B1_COMPARATIVE
+PROPHETIC_STATE_CAN_BE_LITERARILY_MARKED_BY_HEAD_HAIR_TRANSFORMATION = A_LITERARY
 DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 RITUAL_PERFORMANCE_STATE_RELEVANCE_TO_1COR11_4_5 = B_COMPARATIVE_RESEARCH_AXIS
 ```
 
 Safe synthesis:
 
-> Античные данные подтверждают, что женская divine-mediation role была институционально реальной и что ритуальные нормы могли отдельно регулировать головной убор и состояние волос. Античный автор мог также мыслить пророческую должность как роль со специальным costume, а литературная традиция могла изображать изменение волос/головных знаков как часть пророческого вдохновения. Иудейский материал греко-римского времени независимо подтверждает женщин как получательниц и участниц некоторых форм divine-information seeking. Однако прямого near-Pauline свидетельства `prophetis/promantis + конкретный head/hair code`, которое объясняло бы коринфскую практику, пока не найдено.
+> Античные данные подтверждают, что женская divine-mediation role была институционально реальной, а ритуальные нормы могли отдельно регулировать головной убор и состояние волос. Античные авторы также могли мыслить пророческую должность как роль со специальным costume и изображать изменение головы/волос как часть пророческого вдохновения. В милетской среде женщины прямо перечисляются среди возможных каналов божественных проявлений. Однако прямого near-Pauline свидетельства `prophetis/promantis + конкретный head/hair code`, которое объясняло бы коринфскую практику, пока не найдено.
 
 ---
 
-# 10. Приоритет следующего поиска
+# 15. Next-search queue
 
-Не создавать новый `pass_N` файл. Обновлять **это** досье.
+Не создавать новый pass-файл. Обновлять это dossier.
 
-P0:
-1. объектные каталоги Didyma 450 / Milet VI,2 546 / связанные bases, фотографии, squeeze/drawing и archaeology metadata;
-2. проверить, существовали ли изображения конкретных `prophetides/promanteis`, а не просто храмовый контекст;
-3. добить direct-object metadata для PHI ordinal `Didyma 533` / Rehm `I.Didyma 273`, отдельно direct edition для 235B `προφητίσκη`;
-4. финальный издательский объект Nawotka 2026 для Agatho self-correction;
-5. Delphi: искать object-level изображения/надписи Pythian personnel, но сохранять контроль `no named Pythia currently known` и не использовать мифологические vase scenes как портрет;
-6. Jewish primary layer: конкретные female divine-information episodes у Josephus / Jubilees / LAB / DSS, с тем же разделением `role != head code`.
+### P0
 
-P1:
-7. Claros — использовать прежде всего как comparative personnel system; не предполагать female prophetic personnel, если императорская функция там мужская;
-8. продолжить PHI/CGRN bounded search по head/hair lexemes;
-9. Corrington 1991 direct full text — locator closure;
-10. искать lost/surviving honorific image bases, где mantic title и изображение принадлежат одному идентифицированному лицу;
-11. Ammia / Potta и другие women-prophetess names вне Didyma не продвигать из вторичных списков до закрепления прямой inscription/edition.
+1. Direct metadata/autopsy for the Cleopatra object: PHI ordinal `Didyma 533` ↔ Rehm `I.Didyma 273`.
+2. Direct edition/object for `Didyma 235B` `προφητίσκη`.
+3. Final publisher object for Nawotka 2026 Agatho self-correction.
+4. Object-level Delphi material tied to **identified historical Pythian personnel**, not mythological scenes.
+5. Continue direct Didyma/Miletos search for explicit `head/hair object + female mantic title`.
+6. Jewish primary episodes: Josephus / Jubilees / LAB / DSS, keeping `divine communication != head code`.
+
+### P1
+
+7. Corrington 1991 direct full text.
+8. Claros personnel system; do not assume female personnel if the relevant imperial office is male.
+9. Other alleged women-prophetess names such as Ammia/Potta: do **not** promote until a direct inscription/edition is pinned.
+10. Lost/surviving honorific-image bases where a mantic title and image belong to the same identified woman.
 
 ---
 
-# 11. Publication / provenance boundary
+# 16. Publication / provenance boundary
 
 ```text
 PRODUCT_WRITE = false
@@ -629,7 +675,6 @@ ROLE != HEAD_CODE
 LITERARY_TROPE != ETHNOGRAPHIC_FACT
 VISUAL_CULTURE_EXISTS != IDENTIFIED_PROPHETESS_PORTRAIT
 PHI_ORDINAL_NUMBER != AUTOMATICALLY_REHM_IDIDYMA_NUMBER
+VISUAL_SOUNDING_WORD != MATERIAL_HEAD_OBJECT
 NEGATIVE_BOUNDED_SEARCH != GLOBAL_NONEXISTENCE
 ```
-
-Это evergreen dossier: будущие агенты должны обновлять его по мере появления прямого material/epigraphic evidence, а не создавать новый `00ZZZZ...` successor report.
