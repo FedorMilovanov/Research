@@ -84,6 +84,16 @@ SALES_BOUNDARY = VV3_10_CORINTHIAN_QUERY
 SALES_REJOINDER = VV11_16
 ```
 
+## Garwood 2026 (classified 2026-08-10)
+
+Jason M. Garwood, *Paul & the Head Covering: A Biblical Reassessment* (Cross & Crown Books, 2026-04-23; 86 pp. print / 55 pp. Kindle; ISBN 978-1734122893). Not read in book form (M3 low-weight); classification is based on the author's own kuyperian.com excerpt (2026-03, «Paul & the Head Covering: An Alternative Interpretation»: “Often called the ‘quotation theory,’ I believe this understanding of the passage best resolves the tensions in the text”) + publisher metadata.
+
+```text
+GARWOOD_2026_MODEL = QUOTATION_FAMILY_C_LEVEL / NON_UNIVERSALIST / NO_UNIVERSAL_HEAD_COVERING_LAW
+GARWOOD_2026_DIRECT_BOOK_BODY = EXTERNAL_ACCESS_HOLD / M3_LOW_WEIGHT
+GARWOOD_2026_GRADE_IMPACT = NONE_CURRENT
+```
+
 ## Peppiatt 2015
 
 Lucy Peppiatt, *Women and Worship at Corinth: Paul’s Rhetorical Arguments in 1 Corinthians* (2015).
@@ -115,6 +125,7 @@ Family disagreement is evidentially important:
 SHOEMAKER = CONTIGUOUS_LARGE_BLOCK_LINEAGE
 COSTA = VV4_9_QUOTATION
 SALES = VV3_10_QUOTATION
+GARWOOD = QUOTATION_FAMILY_C_LEVEL_NEW_2026
 PEPPIATT = MULTIPLE_ALTERNATING_SWITCHES
 AGREEMENT_QUOTATION_EXISTS != AGREEMENT_WHERE_QUOTATION_IS
 ```

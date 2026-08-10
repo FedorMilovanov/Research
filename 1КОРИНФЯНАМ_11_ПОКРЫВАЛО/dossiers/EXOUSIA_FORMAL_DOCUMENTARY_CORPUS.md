@@ -251,14 +251,23 @@ TAM_II_604 = LOCAL_INDEPENDENT_ECHEIN_EXOUSIAN_RIGHT_TO_DO_X_CONTROL
 
 Direct documentary route:
 - https://droitromain.univ-grenoble-alpes.fr/Negotia/Wisc1_DDBDP.gr.html
+- DDBDP edition page (closed direct 2026-08-10): https://papyri.info/editions/p.wisc/1/13
 
-The relevant full-authority formula is editorially restored in the region.
+The relevant full-authority formula is editorially restored in the region. **Both `ἐξουσία` instances are now read at edition-text level and are fully restored (square brackets)**:
+
+```text
+l.3: [ἐν ἀγυιᾷ. ἐφ' ὃν μὲν περίειμι χρόνον ἔχειν με τὴν τῶν ἰδίων ἐξουσίαν πᾶσα]ν
+l.8: [μου γένους ὄντων, μὴ οὔσης μηδενὶ τῷ καθόλου ἐξουσίας παραβαίνειν τι τούτων ἢ χωρὶς]
+```
+
+No surviving visible letters of the formula: the restored-vs-visible distinction is resolved at edition-text level; only the papyrus photo/apparatus remains external.
 
 ```text
 FEMALE_TESTATOR = DOCUMENTARY_CONTEXT
 EXOUSIA_FORMULA = EDITORIALLY_RESTORED_IN_RELEVANT_REGION
 RESTORED_FORMULA != ALL_VISIBLE_PAPYRUS_LETTERS
-P_WISC_I_13_EDITION_IMAGE_APPARATUS = OPTIONAL_NONBLOCKING_REOPEN
+P_WISC_I_13_BOTH_INSTANCES = RESTORED_BRACKETS / NO_VISIBLE_LETTERS / CLOSED_EDITION_TEXT_2026_08_10
+P_WISC_I_13_EDITION_IMAGE_APPARATUS = OPTIONAL_NONBLOCKING_REOPEN (photo only)
 ```
 
 ## 7.5 P.Oxy. I 104 — Soeris, 26 Dec 96 CE
@@ -381,7 +390,7 @@ The former local P0/P1 queue is closed as follows:
 PKNT_2_2006_P390 = PAGE_LOCATOR_CLOSED / DIRECT_PAGE_TERMINAL_EXTERNAL_ACCESS_HOLD / NONBLOCKING
 FENDEL_EXOUSIAN_XLSX = OFFICIAL_DATASET_FILE_OBJECT_CLOSED / BINARY_TERMINAL_ORA_TRANSPORT_HOLD / PP_PREPOSITIONS_NOT_ENUMERATED
 SEARCH_NONBIBLICAL_EXACT_ECHO_EPI_GEN = BOUNDED_SEARCH_COMPLETE / NO_EXACT_HEAD_PARALLEL_FOUND / GLOBAL_NONEXISTENCE_NOT_CLAIMED
-P_WISC_I_13_EDITION_IMAGE_TEXT_APPARATUS = OPTIONAL_NONBLOCKING_REOPEN
+P_WISC_I_13_EDITION_IMAGE_TEXT_APPARATUS = OPTIONAL_NONBLOCKING_REOPEN / EDITION_TEXT_LEVEL_CLOSED_2026_08_10
 ADDITIONAL_FEMALE_ROMAN_RIGHT_BEARERS = OPTIONAL_ONLY_IF_NEW_HIGH_VALUE_SOURCE
 ```
 

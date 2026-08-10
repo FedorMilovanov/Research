@@ -44,7 +44,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 | Cleopatra, Didyma | restored `[προφ]ήτιδι` | fragmentary candidate | **No** |
 | Didyma 235B | old `προφητίσκῃ` reading corrected by Robert/Günther to `προφητικῇ` | false-reading control; **not a prophetess attestation** | **No** |
 | Agatho, Didyma | prophet's wife + building benefaction | source-error negative control | **No** |
-| Potta, Maionia | `TAM V.1 535`, `προφῆτιν σώτειραν`; PHI target indexed with `laurus` | external Asia-Minor prophetis | **Target monument is a laurel-motif stele, not the neighboring veiled figure** |
+| Potta, Maionia | `TAM V.1 535`, `προφῆτιν σώτειραν`; **full body closed direct 2026-08-10 (PH263959)**; indexed with `laurus` | external Asia-Minor prophetis; full title/syntax read: `Ποτταν Μενεκράτου προφῆτιν σώτειραν γενομένην τοῦ Ἑρμογένου` | **Target monument is a laurel-motif stele, not the neighboring veiled figure** |
 | Ammias, Thyateira | direct priestess + postmortem vision-oracle formula | oracular priestly control, not prophetis | **No** |
 | Ammia, Philadelphia | Eusebian female prophetess | early-Christian reception | **No** |
 | Nanas, Phrygia | PHI-indexed `προφήτισα`; Poirier 2004 prints full epitaph | late prophetess / angelic-language comparator | **No marker found** |
@@ -53,8 +53,8 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 | Thera / IG XII.3 1349/863 | anonymous Delphic `[προφ]ῆτις` sends oracle | role control | **No** |
 | IGLSyr 1 51 | `ἀναγραφή` itself called `προφήτις` | false-person control | **Not a woman** |
 | Athens / IG II² 13148 | female funerary epigram, no mantic wording in indexed text | very likely reference error | **Not countable** |
-| Nisyra / SEG 49.1624 | PH348429 / TM949255; PHI indexed text is a two-line dedication without visible `προφῆτις` | **very likely reference error in Nawotka fn.77; do not count as secure prophetess** | **No target iconography established** |
-| Termessos / TAM III,1 870 | PH280975; corpus/cult context verified, target body unavailable on current public routes | candidate-list terminal body hold | **Unknown** |
+| Nisyra / SEG 49.1624 | PH348429 / TM949255; full body closed direct 2026-08-10: five-line dedication with **restored `διὰ προφή[τιδος]`** (l.3) | restored editorial title; **`NOT_FOUND`/`VERY_LIKELY_REFERENCE_ERROR` verdicts REVISED**; not a secure named prosopographical attestation | four standing relief figures in prayer posture; no head/hair marker |
+| Termessos / TAM III,1 870 | PH280975; full body closed direct 2026-08-10: `τό(πος) Αὐρ(ηλίας) Ὀρεστιανῆς, ἱ(ερῶν) Ἐλευσινίων προφήτιδος` | bearer Aurelia Orestiane (f.); Demeter Eleusinia verified in-body; τόπος-genre | no head/hair marker attested in body |
 | Lebadeia / IG VII 3111 | original IG VII 1892 text directly locates the object and preserves `...ΠΡΟΦΗΤΕΥΣΑΣΑ` | late female prophesying activity; **not automatically formal `προφῆτις` title** | **No marker attested** |
 | Claros | Imperial-period personnel study + Tacitus place the historically attested inspired seer in a male role | bounded negative control: mythic female seers ≠ historical female cult personnel | **No female same-object case** |
 | Andania / Lycosura | direct ritual headwear/hair regulation | separate regulatory axes | **Yes, not prophetess-specific** |
@@ -243,7 +243,8 @@ The PHI search index now exposes the target object itself (`TAM V,1 535`, Lydia:
 ```text
 POTTA_PROPHETIS = B_HIGH_EXACT_REFERENCE_PLUS_INDEPENDENT_OXFORD_CONTROL
 POTTA_PHI_TARGET_OBJECT_SEARCH_INDEX = CLOSED_PARTIAL_BODY
-POTTA_DIRECT_PHI_FULL_TITLE_LINE = TERMINAL_PUBLIC_ROUTE_HOLD_CURRENT_RUNTIME
+POTTA_DIRECT_PHI_FULL_BODY = CLOSED_DIRECT_2026_08_10
+POTTA_FULL_TITLE_SYNTAX = "Ἑρμογένης Μητροδώρου Διὶ Αριου κατ' ἐπιταγὴν σωτηρίας ἕνεκεν τῆς ἐκ τοῦ Διὸς Ποτταν Μενε[κ]ρ̣ά̣του προφῆτιν σώτειραν γενομένην τοῦ Ἑρμογένου"
 POTTA_TAM535_VISUAL_DESCRIPTION = LAURUS / LAUREL_LEAF_STELE
 POTTA_TAM535_SAME_OBJECT_FIGURAL_HEAD_HAIR = NOT_ATTESTED
 POTTA_HEAD_HAIR_CODE = NOT_ATTESTED
@@ -400,25 +401,31 @@ DO_NOT_GUESS_REPLACEMENT
 
 ## 5.4 Nisyra — `SEG 49.1624 / PH348429 / TM949255`
 
-PHI's own indexed search result exposes the target as a short two-line dedication:
+PHI's own indexed search result previously exposed the target as a short two-line dedication. **On 2026-08-10 the direct PHI object rendered fully** and the complete body is now read:
 
 ```text
-Θεῷ Βασιλεῖ Διονο[ι— μετὰ τῶν]
-ἰδίων πάντων κατ[ὰ ἐπιταγὴν]
+Θεῷ Βασιλεῖ Διονο[ι— μετὰ τῶν] ἰδίων πάντων κατ[ὰ ἐπιταγὴν]
+τοῦ θεοῦ διὰ προφή[τιδος — —]-λείης θρεπτῆς Αλ[— — — —]
+ἀνέστησαν ∙ ἔτους [— — —].
+Lydia — Nisyra (Saraçlar) — 2nd c. AD — H. Malay, Researches (1999) 130, 139
+Dedication to Theos Basileus. Lower left part of a marble stele; four standing
+relief figures in an attitude of prayer above the inscription.
 ```
 
-The indexed target contains no visible `προφῆτις`, female noun-bearer or mantic title. Trismegistos independently locks the object identity as `TM 949255 = SEG 49.1624`. Opening the direct PHI object currently returns a cache miss, so this audit does **not** infer an unknown intended replacement reference.
+The object is a **five-line dedication** and **does contain a restored `διὰ προφή[τιδος]`** (l.3: «…через пророчицу […]лею, воспитанницу (θρεπτή) Ал[…]»). The earlier `NOT_FOUND` verdict was an artifact of an incomplete render and is **revoked**. Trismegistos independently locks the object identity as `TM 949255 = SEG 49.1624` (crosswalk already closed). The `VERY_LIKELY_REFERENCE_ERROR` verdict for the Nawotka footnote is **revised**: the referenced inscription does in fact attest (in restoration) a female `προφῆτις`; the restoration is editorially supplied, so it is a restored-title object, not a secure prosopographical attestation of a named office-holder. The iconography remains as described by PHI: four standing relief figures in prayer posture, no head/hair marker in the text description.
 
 Adjacent `SEG 49.1623` is independently a different object: a dedication to Apollo and Artemis, with olive branch + double axe. Its iconography cannot be transferred to 1624.
 
 ```text
-NISYRA_1624_PHI_INDEXED_BODY = CLOSED_TWO_LINE_DEDICATION
+NISYRA_1624_PHI_INDEXED_BODY = CLOSED_FIVE_LINE_DEDICATION
 NISYRA_1624_TM949255_CROSSWALK = CLOSED
-NISYRA_1624_PROPHETIS_IN_INDEXED_BODY = NOT_FOUND
+NISYRA_1624_PROPHETIS_IN_INDEXED_BODY = FOUND_RESTORED_DIA_PROPHETIDOS
+NISYRA_1624_PROPHETIS_STATUS = RESTORED_EDITORIAL_TITLE / NOT_SECURE_PROSOGRAPHICAL_ATTESTATION
 NISYRA_1624_COUNT_AS_SECURE_PROPHETESS = NO
-NISYRA_1624_NAWOTKA_FN77_STATUS = VERY_LIKELY_REFERENCE_ERROR
-NISYRA_1624_DIRECT_OBJECT_PAGE = TERMINAL_PUBLIC_ROUTE_HOLD_CURRENT_RUNTIME
+NISYRA_1624_NAWOTKA_FN77_STATUS = REVISED_OBJECT_CONTAINS_RESTORED_PROPHETIS
+NISYRA_1624_DIRECT_OBJECT_PAGE = CLOSED_DIRECT_PHI_2026_08_10
 NISYRA_1624_INTENDED_REFERENCE = UNKNOWN
+NISYRA_1624_ICONOGRAPHY = FOUR_RELIEF_FIGURES_PRAYER_POSTURE / NO_HEAD_HAIR_MARKER
 DO_NOT_GUESS_NISYRA_REPLACEMENT = true
 SEG49_1623_ICONOGRAPHY != SEG49_1624_ICONOGRAPHY
 REGIONAL_ARCHAEOLOGY != TARGET_OBJECT_ICONOGRAPHY
@@ -426,16 +433,23 @@ REGIONAL_ARCHAEOLOGY != TARGET_OBJECT_ICONOGRAPHY
 
 ## 5.5 Termessos — `TAM III,1 870 / PH280975`
 
-Independent scholarship places `TAM III 870` in evidence for a local **Demeter Eleusinia** cult. Independent onomastic material also attests the male name `Ὀρέστης` in this exact inscription, demonstrating that the reference cannot be treated as an automatically female object from a citation list. The target PHI body itself remains unavailable on the current public route.
+Independent scholarship places `TAM III 870` in evidence for a local **Demeter Eleusinia** cult. Independent onomastic material also attests the male name `Ὀρέστης` in this exact inscription, demonstrating that the reference cannot be treated as an automatically female object from a citation list. **On 2026-08-10 the direct PHI body rendered fully and was read:**
+
+```text
+τό(πος) Αὐρ(ηλίας) Ὀρεστιανῆς, ἱ(ερῶν) Ἐλευσι-
+νίων προφή̣τ̣ι̣δ̣ο̣ς̣.
+```
+
+Noun-bearer: **Aurelia Orestiane** (female, gen.); genre: `τόπος` (plot/burial marker); syntax: `ἱερῶν Ἐλευσινίων προφήτιδος` — Demeter Eleusinia link verified **in-body** (not inferred from neighboring numbers). No head/hair marker is attested in the body.
 
 ```text
 TERMESSOS_870_CORPUS_IDENTITY = CLOSED
 TERMESSOS_870_DEMETER_ELEUSINIA_CULT_CONTEXT = VERIFIED_INDEPENDENT_SCHOLARLY
 TERMESSOS_870_ORESTES_NAME_CONTROL = VERIFIED_INDEPENDENT
-TERMESSOS_870_BODY = TERMINAL_PUBLIC_ROUTE_HOLD_CURRENT_RUNTIME
-TERMESSOS_870_NOUN_BEARER = NOT_DIRECTLY_CLOSED
-TERMESSOS_870_GENRE = NOT_DIRECTLY_CLOSED
-COUNT_AS_SECURE_FEMALE_PROPHETIS = NO_UNTIL_BODY
+TERMESSOS_870_BODY = CLOSED_DIRECT_PHI_2026_08_10
+TERMESSOS_870_NOUN_BEARER = CLOSED_AURELIA_ORESTIANE_FEMALE
+TERMESSOS_870_GENRE = CLOSED_TOPOS_MARKER
+COUNT_AS_SECURE_FEMALE_PROPHETIS = YES_NOUN_BEARER_DIRECT / FORMAL_ORACULAR_OFFICE_NOT_ASSERTED
 ```
 
 Neighboring `TAM III,1 872 = PH280977` belongs to a documented theatre-seat inscription corpus, but:

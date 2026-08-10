@@ -50,6 +50,11 @@ To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `
    - **Item #25 [Marcin Kowalski 2020]:** `CLOSED_DIRECT_RUNTIME_OPEN_ACCESS` (Direct Polish PDF read via KUL Repozytorium).
    - **Item #41 [Nicole Francis 2023]:** `CLOSED_DIRECT_RUNTIME_OPEN_ACCESS` (Direct English PDF read via BYU ScholarsArchive).
    - **Item #24 [Lisa A. Hughes 2007 Table 1]:** `TABLE_1_DATA_VERIFIED_VIA_PEER_REVIEWED_EXACT_CITATION` (`N=113`, `67 veiled / 59%`, `46 unveiled / 41%` confirmed via OUP *Past & Present* 263.1 fn. 66–67).
+   - **Item #32 [Potta — TAM V.1 535 / PH263959]:** `FULL_BODY_CLOSED_DIRECT_PHI` (2026-08-10, direct PHI read; full title/syntax; no head/hair info).
+   - **Item #35 [Termessos — TAM III,1 870 / PH280975]:** `FULL_BODY_CLOSED_DIRECT_PHI` (2026-08-10, direct PHI read; bearer Aurelia Orestiane; Demeter Eleusinia verified in-body).
+   - **Item #36 [Nisyra — SEG 49.1624 / PH348429]:** `FULL_BODY_CLOSED_DIRECT_PHI` (2026-08-10, direct PHI read; **contains restored `διὰ προφή[τιδος]` — previous `NOT_FOUND / VERY_LIKELY_REFERENCE_ERROR` verdicts REVISED**).
+   - **Item #38 [P.Wisc. I 13]:** `EDITION_TEXT_CLOSED_DDBDP` (2026-08-10; both `ἐξουσία` instances fully restored).
+   - **Item #18 [Janelle Peters PhD, Emory]:** `PARTIAL` (2026-08-10: front matter + Introduction read direct; ch.6–7 and p.282 still require external read).
 3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
    When the user provides scans or book access, each parallel agent window should claim one distinct item:
    - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
@@ -100,6 +105,7 @@ STATUS = CHAPTER_AND_PAGINATION_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 
 ```text
 STATUS = SECTION_IDENTITY_CLOSED / 2025_PAGINATION_AND_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_BOOK_METADATA = LOGOS_2025_2E_TOTAL_PAGES_850 / PRINT_ISBN_9781540962607 / EBOOK_ISBN_9781493451692 / SECTION_PAGINATION_STILL_UNVERIFIED
 ```
 
 ## 3. Gordon D. Fee, NICNT Revised Edition (2014)
@@ -183,6 +189,7 @@ https://www.cambridge.org/core/books/veiling-in-the-late-antique-world/veils-in-
 
 ```text
 STATUS = CH2_IDENTITY_PAGINATION_SUMMARY_CLOSED / FULL_BODY_AND_NOTES_TERMINAL_PUBLISHER_ACCESS_HOLD
+OFFICIAL_CUP_SUMMARY = "Corinthian women most likely veiled and unveiled for a variety of reasons having to do with beauty, comfort, status, virtue, and piety, not solely for theological, exegetical, or liberative purposes" (ch.2 abstract, CUP online 2025-11-26)
 ```
 
 ## 9. Aldar Nõmmik, *Robes, Romans, and Rituals in First Corinthians*
@@ -247,6 +254,7 @@ https://bakeracademic.com/products/9781540960955_archaeology-and-the-ministry-of
 
 ```text
 STATUS = CHAPTER_RANGE_CLOSED / BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_ROUTE = REVIEW (C. Burnett, 2025-10): "Roman Corinth" = pp.126–156 confirmed; no 1 Cor 11 / S-1116 / S-1088 / capite velato discussion visible in review text
 ```
 
 ## 13. Barbara Lumesberger-Loisl (2025)
@@ -333,7 +341,8 @@ TOC anchors:
 **Why p.282 matters:** downstream scholarship cites it for a Corinthian statue / F. P. Johnson *Corinth* IX.1 pp.70–72; direct page must verify which object and what claim Peters actually makes.
 
 ```text
-STATUS = INSTITUTIONAL_OBJECT_TOC_CLOSED / PRIMARY_PDF_AND_P282_TERMINAL_RUNTIME_ENDPOINT_HOLD
+STATUS = PRIMARY_PDF_OBJECT_CLOSED / FRONT_MATTER_AND_INTRODUCTION_READ_DIRECT / CH6_7_AND_P282_EXTERNAL_READ_REQUIRED
+VERIFIED_RUNTIME_ROUTE = https://etd.library.emory.edu/downloads/3r074v216 (Primary PDF, file_set 3r074v216; TOC confirmed: ch.6 p.228, ch.7 p.264, conclusion p.301, bibliography p.311)
 ```
 
 ## 19. L. J. Lietaert Peerbolte (2000)
@@ -360,7 +369,8 @@ DOI `10.2307/30041064`.
 **Extract:** actual evidence for meanings of genuinely unbound/dishevelled female hair; keep distinct from Andania `ἀναπλέκω`.
 
 ```text
-STATUS = BIBLIOGRAPHIC_CLOSED / DIRECT_FULLTEXT_CONTENT_HOLD_RUNTIME
+STATUS = BIBLIOGRAPHIC_CLOSED / FIRST_PAGE_DIRECT_PREVIEW / FULL_BODY_EXTERNAL_HOLD
+VERIFIED_ROUTE = ProQuest preview (docview/214613352) first page read directly: article focus = Luke 7:36–50; unbound hair = mourning, religious devotion, ecstatic experience, sexuality — no single fixed social message
 ```
 
 ## 21. Gail Paterson Corrington (1991)
@@ -469,6 +479,7 @@ DOI `10.5287/ora-dqmbwrvj6`.
 
 ```text
 STATUS = DATASET_FILE_OBJECT_CLOSED / XLSX_BINARY_TERMINAL_ORA_TRANSPORT_HOLD
+VERIFIED_RUNTIME_ROUTE = https://ora.ox.ac.uk/objects/uuid:28406bed-423d-4801-9691-d5d7caa94e2a/files/sd217qr12q (EXOUSIAN.xlsx, 51.7 KB, file id sd217qr12q)
 ```
 
 ## 29. PG 118 — direct scan image p.409
@@ -481,6 +492,7 @@ STATUS = DATASET_FILE_OBJECT_CLOSED / XLSX_BINARY_TERMINAL_ORA_TRANSPORT_HOLD
 
 ```text
 STATUS = OCR_IMAGE_LOCATED / ORIGINAL_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINAL_TRANSPORT_HOLD
+VERIFIED_RENDER_URL = https://commons.wikimedia.org/wiki/File:Patrologia_Graeca_Vol._118.pdf?page=409 (thumb page409-960px live; image bytes not retrievable in runtime)
 ```
 
 ## 30. Cyril of Alexandria — PG 74, cols.879–883
@@ -493,6 +505,7 @@ STATUS = OCR_IMAGE_LOCATED / ORIGINAL_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINA
 
 ```text
 STATUS = WORK_COLUMNS_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINAL_TRANSPORT_HOLD
+VERIFIED_RENDER_ROUTE = Wikimedia Commons page-render route verified live for Patrologia Graeca Vol. 074.pdf (exact page number for cols.879–883 TBD by human; image bytes not retrievable in runtime)
 ```
 
 ## 31. Theodoret — PG 82, cols.312D–313A
@@ -507,6 +520,8 @@ STATUS = WORK_COLUMNS_SCAN_OBJECT_CLOSED / TARGET_RENDER_TERMINAL_TRANSPORT_HOLD
 
 ```text
 STATUS = WORK_COLUMNS_SCAN_OBJECT_CLOSED / PG_IMAGE_TERMINAL_TRANSPORT_HOLD / HILL_P205_TERMINAL_EXTERNAL_ACCESS_HOLD
+VERIFIED_RENDER_ROUTE = Wikimedia Commons page-render route verified live for Patrologia Graeca Vol. 082.pdf (exact page number for cols.312D–313A TBD by human; image bytes not retrievable in runtime)
+HILL_VOL1_SCOPE = CONFIRMED_Romans_1_2_Corinthians_319pp (JECS review) / P205_IN_1COR11_RANGE
 ```
 
 ## 32. Potta — TAM V.1 535 / PH263959
@@ -518,7 +533,9 @@ STATUS = WORK_COLUMNS_SCAN_OBJECT_CLOSED / PG_IMAGE_TERMINAL_TRANSPORT_HOLD / HI
 **Verify:** complete title/syntax around `Ποτταν ... προφῆτιν σώτειραν`, object description, whether any additional head/hair information exists.
 
 ```text
-STATUS = PARTIAL_INDEX_BODY_AND_OFFICIAL_VOLUME_ROUTE_CLOSED / DIRECT_PAGE_TERMINAL_PUBLIC_ROUTE_HOLD
+STATUS = FULL_BODY_CLOSED_DIRECT_PHI / NO_HEAD_HAIR_INFO / PRINTED_PAGE_OPTIONAL
+VERIFIED_RUNTIME_ROUTE = https://inscriptions.packhum.org/text/263959
+EXTRACTED_SUMMARY = "Ἑρμογένης Μητροδώρου Διὶ Αριου κατ' ἐπιταγὴν σωτηρίας ἕνεκεν τῆς ἐκ τοῦ Διὸς Ποτταν Μενε[κ]ρ̣ά̣του προφῆτιν σώτειραν γενομένην τοῦ Ἑρμογένου — full title/syntax read directly; no head/hair information in object"
 ```
 
 ## 33. Nanas — same-object image
@@ -557,7 +574,9 @@ STATUS = FEMALE_NOUN_BEARER_SPECIALIST_CONTROL_CLOSED / ORIGINAL_PRINTED_PAGE_TE
 **Verify:** noun bearer, gender, syntax, genre, relation to Demeter Eleusinia; do not infer from neighboring TAM numbers.
 
 ```text
-STATUS = CORPUS_AND_CULT_CONTEXT_CLOSED / BODY_NOUN_BEARER_GENRE_TERMINAL_PUBLIC_ROUTE_HOLD
+STATUS = FULL_BODY_CLOSED_DIRECT_PHI / NOUN_BEARER_GENRE_SYNTAX_VERIFIED
+VERIFIED_RUNTIME_ROUTE = https://inscriptions.packhum.org/text/280975
+EXTRACTED_SUMMARY = "τό(πος) Αὐρ(ηλίας) Ὀρεστιανῆς, ἱ(ερῶν) Ἐλευσι-νίων προφή̣τ̣ι̣δ̣ο̣ς̣ — bearer Aurelia Orestiane (female); τόπος-genre; Demeter Eleusinia link verified in-body; no inference from neighboring numbers"
 ```
 
 ## 36. Nisyra — SEG 49.1624 / PH348429 / TM949255
@@ -566,10 +585,12 @@ STATUS = CORPUS_AND_CULT_CONTEXT_CLOSED / BODY_NOUN_BEARER_GENRE_TERMINAL_PUBLIC
 
 **Where:** PHI `PH348429`; Trismegistos `TM949255`; SEG 49.1624.
 
-**Purpose:** confirm the currently indexed two-line dedication and document the likely Nawotka-reference error; **do not guess a replacement inscription**.
+**Purpose:** confirm the currently indexed dedication and document the Nawotka-reference status; **do not guess a replacement inscription**.
 
 ```text
-STATUS = INDEXED_BODY_AND_TM_CROSSWALK_CLOSED / DIRECT_OBJECT_PAGE_TERMINAL_PUBLIC_ROUTE_HOLD / VERY_LIKELY_REFERENCE_ERROR
+STATUS = FULL_BODY_CLOSED_DIRECT_PHI / PROPHETIS_RESTORED_FOUND / NAWOTKA_VERDICT_REVISED
+VERIFIED_RUNTIME_ROUTE = https://inscriptions.packhum.org/text/348429
+EXTRACTED_SUMMARY = "5-line dedication to Theos Basileus with restored διὰ προφή[τιδος] (l.3: 'through the prophetess […]leia, fostling (θρεπτή) of Al[…]') — NOT a two-line dedication; previous NOT_FOUND / VERY_LIKELY_REFERENCE_ERROR verdicts REVISED (they were based on an incomplete render); iconography per PHI description = four standing relief figures in prayer posture above text, no head/hair marker"
 ```
 
 ## 37. Philokrateia — CGRN 232 direct page
@@ -595,7 +616,9 @@ then trace the edition image/apparatus through papyrological library resources.
 **Purpose:** distinguish restored formula from surviving visible letters.
 
 ```text
-STATUS = OPTIONAL_NONBLOCKING_REOPEN
+STATUS = EDITION_TEXT_CLOSED_DDBDP / BOTH_EXOUSIA_INSTANCES_RESTORED / PHOTO_IMAGE_OPTIONAL
+VERIFIED_RUNTIME_ROUTE = https://papyri.info/editions/p.wisc/1/13
+EXTRACTED_SUMMARY = "l.3 ἐξουσίαν and l.8 ἐξουσίας are both fully restored (square brackets); no surviving visible letters of the formula — restored vs visible distinction resolved at edition-text level"
 ```
 
 ---
@@ -612,6 +635,7 @@ STATUS = OPTIONAL_NONBLOCKING_REOPEN
 
 ```text
 STATUS = OPTIONAL_NONBLOCKING_IMAGE_CHECK
+VERIFIED_RUNTIME_ROUTE = https://archive.org/details/catengrcorump01cramgoog (Cramer vol.5, 497 pp., full-text OCR + page images; printed page image still external to runtime)
 ```
 
 ## 40. Martin 2013 — later PDF page screenshots
@@ -653,11 +677,11 @@ STATUS = OPTIONAL_EDITION_CONTINUITY_CONTROL
 
 These are not required to stabilize the current grade map, but may be read for exhaustive current-debate history:
 
-- Israel O. O. Odewole 2025, *QUAERENS* 7.1:18–33 — official journal route: https://jurnal.widyaagape.ac.id/index.php/quaerens/article/view/240
-- Jason Garwood, *Paul & the Head Covering: A Biblical Reassessment* (2026) — current confessional/non-universalist edge model.
+- Israel O. O. Odewole 2025, *QUAERENS* 7.1:18–33 — official journal route: https://jurnal.widyaagape.ac.id/index.php/quaerens/article/view/240 (OA PDF; intro+references read 2026-08-10; traditional view: veil = submission sign to male headship, angels/celestial powers, apostolic tradition, practice of all churches)
+- Jason Garwood, *Paul & the Head Covering: A Biblical Reassessment* (2026) — current confessional/non-universalist edge model. Classified 2026-08-10: **quotation-family C-level** (author's kuyperian.com excerpt + Amazon metadata; 86 pp., Cross & Crown, 2026-04-23, ISBN 978-1734122893).
 
 ```text
-STATUS = OPTIONAL_LOW_WEIGHT_CURRENT_RECEPTION
+STATUS = OPTIONAL_LOW_WEIGHT_CURRENT_RECEPTION / ODEWOLE_PARTIAL_READ / GARWOOD_CLASSIFIED_QUOTATION_FAMILY_C
 ```
 
 ---
