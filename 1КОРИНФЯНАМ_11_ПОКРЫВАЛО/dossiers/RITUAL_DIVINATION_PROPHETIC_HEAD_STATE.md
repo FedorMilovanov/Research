@@ -35,7 +35,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 
 | Node | Evidence status | Safe use | Same-object head/hair? |
 |---|---|---|---|
-| **Philokrateia, Argos** | direct `προμάντις`, c.92/91 BCE oracle tied to Mnasistratos, sacrifices and mysteries | named pre-Pauline female mantic official in linked Messenian-mystery dossier | **No** |
+| **Philokrateia, Argos** | direct `προμάντις`, c.92/91 BCE oracle tied to Mnasistratos, sacrifices and mysteries | named pre-Pauline female mantic official in linked Messenian-mystery dossier | **Direct p.445 photo: non-figural inscribed stele; no depicted head/hair** |
 | Tryphosa, Didyma | direct `προφῆτις`; PHI 247445 / ordinal 450 = SEG 30.1286 = Didyma 708 | near-Pauline Didyma woman | **No** |
 | Eresos / IG XII Suppl.126 | direct 2C BCE sanctuary regulation excepts priestess + prophetess from female temple-entry ban | pre-Pauline institutional office | **No named woman** |
 | Eirene, Miletos/Didyma | direct `πρόμαντις` | female mantic title | **No** |
@@ -80,10 +80,14 @@ The Argive oracle for the Messenians, conventionally placed around **92/91 BCE**
 The oracle records Mnasistratos the hierophant consulting concerning **sacrifices and the mysteries**.
 
 Controls / routes:
+- `CGRN 232` — exact modern corpus identifier for the Argive oracle; `CGRN 222` explicitly cross-references it from the Andania dossier;
 - `Syll.³ 735` — Oracle for the Messenians at Argos;
+- Wilhelm Vollgraff, *BCH* 33 (1909), pp. 171–200, DOI `10.3406/bch.1909.3213`; publication continued at pp. 445–466, DOI `10.3406/bch.1909.3222`;
+- Vollgraff 1909 p.445 — direct same-object photograph labelled `Inscr. n° 2 (ci-dessus, p. 175)`;
 - Nadine Deshours, *REG* 112 (1999): 463–484, DOI `10.3406/reg.1999.4380`;
-- OpenEdition, *Pausanias et les Mystères d’Andanie. Histoire d’une aporie* — Greek text + object discussion;
-- CGRN Andania dossier `CGRN 222`, cross-reference to the Argive oracle / related dossier (`CGRN 232`).
+- OpenEdition, *Pausanias et les Mystères d’Andanie. Histoire d’une aporie* — Greek text + object discussion.
+
+Direct p.445 page-image autopsy shows the target as an **inscribed stele without a figural portrait or depicted head/hair/headwear**. This closes the same-object photograph route, but it is not evidence for how Philokrateia herself dressed during ritual performance.
 
 ```text
 PHILOKRATEIA_PROMANTIS = A_EPIGRAPHIC_DIRECT
@@ -92,6 +96,9 @@ PHILOKRATEIA_ARGOS_APOLLO_PYTHAEUS_CONTEXT = A_OBJECT_CONTEXT
 PHILOKRATEIA_DATE_C92_91_BCE = B_HIGH_SPECIALIST_RECONSTRUCTION
 PHILOKRATEIA_MNASISTRATOS_SACRIFICES_MYSTERIES_LINK = A_TEXT
 PHILOKRATEIA_ANDANIA_REFORM_DOSSIER_LINK = B_HIGH_CONTEXTUAL
+PHILOKRATEIA_CGRN_232_OBJECT_ROUTE = CLOSED
+PHILOKRATEIA_VOLLGRAFF_1909_P445_SAME_OBJECT_PHOTO = CLOSED_DIRECT_IMAGE
+PHILOKRATEIA_P445_FIGURAL_HEAD_HAIR_MARKER = NOT_PRESENT
 PHILOKRATEIA_SAME_OBJECT_HEAD_HAIR_CODE = NOT_ATTESTED
 ```
 
@@ -103,6 +110,10 @@ PHILOKRATEIA_PROMANTIS
 RELATED_ANDANIA_HEAD_HAIR_RULES
 !=
 PHILOKRATEIA_WORE_THE_ANDANIA_HEADWEAR_OR_HAIRSTYLE
+
+NON_FIGURAL_STELE_PHOTO
+!=
+NEGATIVE_EVIDENCE_FOR_LIVE_RITUAL_DRESS
 ```
 
 This is a major upgrade for the **ritual-performance-state** axis, not a direct Corinthian dress rule.
@@ -419,6 +430,17 @@ PHILOKRATEIA_HEAD_HAIR_STATE
 
 # 7. Visual/object controls
 
+Philokrateia / Argos:
+- `CGRN 232` = exact corpus route for the Argive oracle;
+- Vollgraff 1909 p.445 = direct photograph of `Inscr. n° 2`, cross-referenced to p.175;
+- direct page-image autopsy = inscribed, non-figural stele; no depicted portrait/head/hair/headwear.
+
+```text
+PHILOKRATEIA_SAME_OBJECT_PHOTO = CLOSED_DIRECT_P445
+PHILOKRATEIA_P445_FIGURAL_HEAD_HAIR_MARKER = NOT_PRESENT
+NON_FIGURAL_STELE_PHOTO != LIVE_RITUAL_DRESS_EVIDENCE
+```
+
 Didyma public image honours:
 - Nannion, Didyma 445 / I.Didyma346, 7/6 BCE: `εἰκόνι γραπτῇ`;
 - Didyma 478, AD 125/150: Apollonia, `εἰκόνι γραπτῇ`;
@@ -498,7 +520,7 @@ DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 
 Safe synthesis:
 
-> The comparative case is now stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. These mutually reinforce a **ritual-performance-state** axis. They still do not yield a same-object rule saying that Philokrateia, Tryphosa, Eirene or another identified mantic woman wore a specific veil/headband/hairstyle, and therefore do not identify the Corinthian trigger.
+> The comparative case is now stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. These mutually reinforce a **ritual-performance-state** axis. The direct p.445 photograph closes Philokrateia's same-object image route but shows only a non-figural inscribed stele, not her appearance. The evidence still does not yield a same-object rule saying that Philokrateia, Tryphosa, Eirene or another identified mantic woman wore a specific veil/headband/hairstyle, and therefore does not identify the Corinthian trigger.
 
 **No core grade reversal.**
 
@@ -506,18 +528,24 @@ Safe synthesis:
 
 # 11. P0 queue
 
-1. Philokrateia: pin direct corpus/object identifier beyond `Syll.³ 735`; check same-object visual description.
-2. Potta `TAM V.1 535 / PH263959`: direct body.
-3. Nanas: Tabbernee fig.77 same-object image.
-4. Apphe `IK Kalchedon 61 = CIG 3796`: direct page/object.
-5. Nisyra `SEG 49.1624 / PH348429 / TM949255`: full text/noun-bearer; prove/disprove Malay no.137 crosswalk.
-6. Termessos `TAM III,1 870 / PH280975`: full text/noun-bearer/genre.
-7. Lebadeia `IG VII 3111 / PH146626`: full body/noun-bearer.
-8. Didyma III.7: full body search for female mantic titles + head/hair terms.
-9. Didyma 235B: direct stone/Rehm page.
-10. Nawotka `IG II² 13148`: explicit erratum/intended object only; **do not guess**.
-11. Corrington 1991 direct full text.
-12. Claros personnel system with gender/status/object controls.
+1. Potta `TAM V.1 535 / PH263959`: direct body.
+2. Nanas: Tabbernee fig.77 same-object image.
+3. Apphe `IK Kalchedon 61 = CIG 3796`: direct page/object.
+4. Nisyra `SEG 49.1624 / PH348429 / TM949255`: full text/noun-bearer; prove/disprove Malay no.137 crosswalk.
+5. Termessos `TAM III,1 870 / PH280975`: full text/noun-bearer/genre.
+6. Lebadeia `IG VII 3111 / PH146626`: full body/noun-bearer.
+7. Didyma III.7: full body search for female mantic titles + head/hair terms.
+8. Didyma 235B: direct stone/Rehm page.
+9. Nawotka `IG II² 13148`: explicit erratum/intended object only; **do not guess**.
+10. Corrington 1991 direct full text.
+11. Claros personnel system with gender/status/object controls.
+
+Closed from this queue:
+
+```text
+PHILOKRATEIA_CGRN_232_OBJECT_ROUTE = CLOSED
+PHILOKRATEIA_VOLLGRAFF_1909_P445_SAME_OBJECT_PHOTO = CLOSED_DIRECT_IMAGE
+```
 
 ---
 
