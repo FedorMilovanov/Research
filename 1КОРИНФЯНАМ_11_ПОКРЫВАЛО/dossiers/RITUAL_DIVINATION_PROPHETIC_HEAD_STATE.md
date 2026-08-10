@@ -197,39 +197,39 @@ USE_FOR_TRYPHOSA_HEAD_CODE = PROHIBITED
 
 ---
 
-## 2.5 Fragmentary prophetess candidates: Cleopatra, edition-number trap и `προφητίσκη`
+## 2.5 Fragmentary prophetess candidates: Cleopatra, нумерационный crosswalk и `προφητίσκη`
 
-### Cleopatra — PHI `Didyma 533`
+### Cleopatra — Rehm `I.Didyma 273`, PHI ordinal `Didyma 533`
 
-Текущий PHI search прямо показывает фрагмент:
+Нумерационная ловушка теперь **в основном разрешена**.
+
+Lampinen прямо ссылается на фрагментарную Cleopatra как **`I.Didyma 273`**; JHS также перечисляет prophetis как Rehm, *Didyma* II no. 273. Nawotka 2026 повторяет тот же номер. При этом текущий PHI search показывает под своим внутренним ordinal-заголовком **`Didyma 533`** уникальный тот же фрагмент:
 
 ```text
 [προφ]ήτιδι [τοῦ Διδυμέως?]
 [Κλεο]πάτρᾳ [τῇ θυγατρὶ ...]
 ```
 
-Это реальный кандидат, но и титул, и имя частично **editorially restored**.
+Отдельно PHI-страница, озаглавленная **`Didyma 273`**, прямо сообщает underlying edition number `*IDidyma 193` и содержит совершенно другую honorific inscription. Следовательно, PHI ordinal `Didyma N` нельзя автоматически читать как Rehm `I.Didyma N`.
 
 ```text
-CLEOPATRA_DIDYMA_533_PROPHETIS = B_C_FRAGMENTARY_RESTORATION
-CLEOPATRA_EXACT_DATE = HOLD
+REHM_IDIDYMA_273 = CLEOPATRA_PROPHETIS_FRAGMENT
+PHI_ORDINAL_DIDYMA_533 = SAME_CLEOPATRA_TEXT_BY_UNIQUE_TEXT_IDENTITY
+PHI_ORDINAL_DIDYMA_273 = UNDERLYING_IDIDYMA_193
+NUMBERING_SYSTEMS_ARE_DISTINCT = VERIFIED
+CROSSWALK_REHM_273_TO_PHI_533 = B_HIGH_TEXT_IDENTITY
+DIRECT_PHI_METADATA_FOR_533_UNDERLYING_NUMBER = NOT_EXPOSED_IN_CURRENT_SEARCH
+```
+
+То есть старый общий `EDITION_NUMBER_CROSSWALK = HOLD` снимается как слишком грубый. Остаётся лишь узкий metadata-HOLD: текущий поисковый интерфейс PHI не показал нам строку metadata самого объекта `Didyma 533`, поэтому crosswalk фиксируется по **уникальному тексту + независимым edition citations**, а не выдаётся за прямую PHI metadata mapping.
+
+Сам объект всё равно фрагментарен: и титул, и имя частично **editorially restored**.
+
+```text
+CLEOPATRA_REHM_IDIDYMA_273_PROPHETIS = B_C_FRAGMENTARY_RESTORATION
+CLEOPATRA_EXACT_DATE = SECOND_CENTURY_AD_IN_JHS_SUMMARY / DIRECT_EDITION_DATE_HOLD
 CLEOPATRA_HEAD_HAIR_CODE = NOT_ATTESTED
 ```
-
-### `Didyma 273` — не использовать без edition-number crosswalk
-
-Здесь обнаружена нумерационная ловушка. Современная scholarship (включая обсуждение храма и Nawotka/Lampinen) может ссылаться на `Didyma 273` как на женскую prophetis. Но **текущий PHI ordinal `Didyma 273`** — это другая, мужская/неидентифицированная honorific inscription, `IDidyma 193`, второго века.
-
-Следовательно:
-
-```text
-LITERATURE_DIDYMA_273_PROPHETIS_REFERENCE = REAL_SECONDARY_REFERENCE
-PHI_DIDYMA_273 = DIFFERENT_OBJECT/NUMBERING_SYSTEM
-EDITION_NUMBER_CROSSWALK = HOLD
-QUOTE_AS_DIRECT_PHI_PROPHETESS = PROHIBITED
-```
-
-До pinned crosswalk конкретного Rehm/Didyma edition number не писать просто «Didyma 273 proves a prophetess».
 
 ### Didyma 235B / `καλὴ προφητίσκη`
 
@@ -244,6 +244,28 @@ HEAD_HAIR_CODE = NOT_ATTESTED
 ```
 
 Эти fragmentary cases расширяют candidate list, но не равны Tryphosa по доказательной силе.
+
+---
+
+## 2.6 Delphi — сильный negative control против переноса литературной Pythia в эпиграфику
+
+Официальный Archaeological Site / Museum of Delphi описывает Pythia как пожизненную жрицу-прорицательницу, ритуальное очищение, жертвоприношение, лавр, спуск в adyton и выдачу оракула. Но этот официальный procedural summary **не даёт конкретного veil/headband/hair code** Pythia.
+
+Official route:
+- `https://delphi.culture.gr/archaelogical-site/site-history/mythological-versions-of-the-foundation-of-the-oracle/`
+
+Отдельно Krzysztof Nawotka в институциональном интервью University of Wrocław подчёркивает резкий контраст с Didyma: из Delphi **не известно ни одного имени prophetess/Pythia**, хотя сам титул Pythia известен и оракул функционировал столетиями.
+
+Это не превращается в абсолютное доказательство, что имя нигде и никогда не было записано; для проекта это specialist/institutional negative control:
+
+```text
+DELPHI_PYTHIA_ROLE = WELL_ATTESTED
+DELPHI_NAMED_PYTHIA_IN_CURRENT_EPIGRAPHIC_KNOWLEDGE = NONE_KNOWN_PER_NAWOTKA
+DELPHI_OFFICIAL_PROCEDURAL_SUMMARY_HEAD_HAIR_CODE = NOT_FOUND
+DELPHI_LITERARY_PYTHIA_IMAGE != EPIGRAPHIC_PERSONNEL_PORTRAIT
+```
+
+Это усиливает главный методологический барьер досье: богатая литературная визуализация Pythia у Virgil/Lucan не должна подменять отсутствующий object-level head code конкретной исторической prophetess.
 
 ---
 
@@ -581,16 +603,17 @@ Safe synthesis:
 P0:
 1. объектные каталоги Didyma 450 / Milet VI,2 546 / связанные bases, фотографии, squeeze/drawing и archaeology metadata;
 2. проверить, существовали ли изображения конкретных `prophetides/promanteis`, а не просто храмовый контекст;
-3. **закрыть edition-number crosswalk для literature “Didyma 273”**, отдельно проверить PHI `Didyma 533` Cleopatra и direct edition для 235B `προφητίσκη`;
+3. добить direct-object metadata для PHI ordinal `Didyma 533` / Rehm `I.Didyma 273`, отдельно direct edition для 235B `προφητίσκη`;
 4. финальный издательский объект Nawotka 2026 для Agatho self-correction;
-5. Delphi: датированные реальные изображения/надписи Pythian personnel, отдельно от мифологических vase scenes;
+5. Delphi: искать object-level изображения/надписи Pythian personnel, но сохранять контроль `no named Pythia currently known` и не использовать мифологические vase scenes как портрет;
 6. Jewish primary layer: конкретные female divine-information episodes у Josephus / Jubilees / LAB / DSS, с тем же разделением `role != head code`.
 
 P1:
 7. Claros — использовать прежде всего как comparative personnel system; не предполагать female prophetic personnel, если императорская функция там мужская;
 8. продолжить PHI/CGRN bounded search по head/hair lexemes;
 9. Corrington 1991 direct full text — locator closure;
-10. искать lost/surviving honorific image bases, где mantic title и изображение принадлежат одному идентифицированному лицу.
+10. искать lost/surviving honorific image bases, где mantic title и изображение принадлежат одному идентифицированному лицу;
+11. Ammia / Potta и другие women-prophetess names вне Didyma не продвигать из вторичных списков до закрепления прямой inscription/edition.
 
 ---
 
@@ -605,7 +628,7 @@ DIRECT_OBJECT > SECONDARY_SUMMARY
 ROLE != HEAD_CODE
 LITERARY_TROPE != ETHNOGRAPHIC_FACT
 VISUAL_CULTURE_EXISTS != IDENTIFIED_PROPHETESS_PORTRAIT
-EDITION_NUMBER_WITHOUT_CROSSWALK != DIRECT_OBJECT
+PHI_ORDINAL_NUMBER != AUTOMATICALLY_REHM_IDIDYMA_NUMBER
 NEGATIVE_BOUNDED_SEARCH != GLOBAL_NONEXISTENCE
 ```
 
