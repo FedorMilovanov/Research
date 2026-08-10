@@ -174,9 +174,19 @@ Major portion or whole 11:2–16 is secondary/non-Pauline. Walker/Mount-type pro
 - No direct evidence says the specific Christian men of Corinth were performing Roman sacrifice ritual in church.
 - Female portraiture is mixed; no universal veil rule follows.
 
+### Current calibration
+
+```text
+ROMAN_CAPITE_VELATO_BACKGROUND = A
+V4_EXACT_CAPITE_VELATO = B_C
+EXACT_ROMAN_RITUAL_STATUS_TRIGGER_IN_CORINTH = RECONSTRUCTION_LAYER
+```
+
+The first line is a grade for the **historical background fact**. The second and third concern its identification with Paul’s v4 and the hidden local cause. These levels must not be collapsed.
+
 ### Overall
 
-**Excellent background B model, bad candidate for total explanatory theory**. Must remain subordinate to textual exegesis.
+**Excellent A-level historical background; B_C/reconstruction-level exact trigger model.** It remains a bad candidate for a total explanatory theory and must stay subordinate to textual exegesis.
 
 ---
 
@@ -251,7 +261,7 @@ The most resilient synthesis at present is a **calibrated hybrid**:
 2. v.3 headship/authority remains B but not exclusive lexically;
 3. woman's active agency in v.10 must be retained;
 4. vv.11–12 are real counterbalance/interdependence, not decorative;
-5. Roman ritual/status is background, not master key;
+5. Roman `capite velato` is A-level historical background, while exact v4 identification remains B_C and the local trigger remains reconstruction;
 6. wives/free(d)-wives is a serious scope contender;
 7. hair functions explicitly in vv.14–15 but hair-only for the whole passage remains C;
 8. church-wide practice v.16 closes resistance, though exact referent remains B/C;
