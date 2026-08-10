@@ -14,6 +14,7 @@ Future discoveries update **this dossier**; do not create a `pass_N` / Z-success
 
 ```text
 FEMALE_PROPHETIC_ROLE != HEAD_OR_HAIR_CODE
+FEMALE_PROPHESYING_ACTIVITY != FORMAL_PROPHETIS_TITLE
 RITUAL_HEAD_HAIR_REGULATION != PROPHETESS_HEAD_HAIR_REGULATION
 LINKED_RITUAL_REFORM_CORPUS != SAME_OBJECT_HEAD_STATE
 PRIESTESS_ORACLE_FUNCTION != FORMAL_PROPHETIS_PROMANTIS_TITLE
@@ -53,7 +54,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 | Athens / IG II² 13148 | female funerary epigram, no mantic wording in indexed text | very likely reference error | **Not countable** |
 | Nisyra / SEG 49.1624 | PH348429 / TM949255; PHI indexed text is a two-line dedication without visible `προφῆτις` | **very likely reference error in Nawotka fn.77; do not count as secure prophetess** | **No target iconography established** |
 | Termessos / TAM III,1 870 | PH280975; cult context verified, body/genre incomplete | candidate-list HOLD | **Unknown** |
-| Lebadeia / IG VII 3111 | PH146626; body incomplete | candidate-list HOLD | **Unknown** |
+| Lebadeia / IG VII 3111 | original IG VII 1892 text directly locates the object and preserves `...ΠΡΟΦΗΤΕΥΣΑΣΑ` | late female prophesying activity; **not automatically formal `προφῆτις` title** | **No marker attested** |
 | Andania / Lycosura | direct ritual headwear/hair regulation | separate regulatory axes | **Yes, not prophetess-specific** |
 | Virgil / Lucan | prophetic head/hair imagery | literary comparison only | **Literary only** |
 
@@ -306,12 +307,13 @@ APPHE_HEAD_HAIR_CODE = NOT_FOUND
 
 # 5. External reference-list audit
 
-Nawotka explicitly states that outside Miletos/Didyma there are **“only ten inscriptions attesting prophetesses”** and footnote 77 supplies the ten references below. Item-by-item checking shows that the footnote cannot be used as a ready-made ten-prophetess prosopography: at least one entry is a grammatical non-person (`IGLSyr 1 51`), one is a female epitaph without mantic wording (`IG II² 13148`), and the accessible PHI indexed body for `SEG 49.1624` likewise does not attest a prophetess.
+Nawotka explicitly states that outside Miletos/Didyma there are **“only ten inscriptions attesting prophetesses”** and footnote 77 supplies the ten references below. Item-by-item checking shows that the footnote cannot be used as a ready-made ten-prophetess prosopography: at least one entry is a grammatical non-person (`IGLSyr 1 51`), one is a female epitaph without mantic wording (`IG II² 13148`), the accessible PHI indexed body for `SEG 49.1624` likewise does not attest a prophetess, while `IG VII 3111` does preserve female **prophesying activity** through `...ΠΡΟΦΗΤΕΥΣΑΣΑ` but not, on that basis alone, a formal `προφῆτις` title.
 
 ```text
 NAWOTKA_FN77_LIST_CLAIM = TEN_INSCRIPTIONS_ATTESTING_PROPHETESSES
 NAWOTKA_FN77_REFERENCE != VERIFIED_PROPHETESS_OBJECT
 ITEM_BY_ITEM_NOUN_BEARER_AUDIT = REQUIRED
+FEMALE_PROPHESYING_ACTIVITY != FORMAL_PROPHETIS_TITLE
 ```
 
 ## 5.1 IGLSyr 1 51 — false person
@@ -395,9 +397,25 @@ CULT_CONTEXT != PROPHETIS_NOUN_BEARER
 
 ## 5.6 Lebadeia — `IG VII 3111 / PH146626`
 
+The original *IG VII* (Dittenberger 1892) directly locates no.3111 at Lebadeia and places no.3112 immediately after it. In the capital transcription of no.3111, the prophetic form is preserved as:
+
 ```text
-IGVII_3111_BODY = HOLD
-IGVII_3111_NOUN_BEARER = HOLD
+...ΠΡΟΦΗΤΕΥΣΑΣΑ...
+```
+
+`προφητεύσασα` is the feminine nominative singular aorist active participle of `προφητεύω`. The editor's Latin note treats the monument as an epitaph probably erected by a wife for her husband and dates it to the later third or possibly fourth century CE.
+
+This closes the crucial noun-bearer/activity question but must not be inflated into a formal-title claim:
+
+```text
+IGVII_3111_OBJECT_IDENTITY = CLOSED_DIRECT_IGVII_1892
+IGVII_3111_BODY_PROPHECY_FORM = CLOSED_DIRECT_IGVII_TEXT
+IGVII_3111_PROPHETIC_FORM = ΠΡΟΦΗΤΕΥΣΑΣΑ / FEMININE_NOMINATIVE_SINGULAR
+IGVII_3111_FEMALE_PROPHESYING_ACTIVITY = VERIFIED
+IGVII_3111_FORMAL_PROPHETIS_TITLE = NOT_ESTABLISHED_BY_THIS_FORM
+IGVII_3111_DATE = LATE_3C_OR_POSSIBLY_4C_CE_EDITORIAL
+IGVII_3111_HEAD_HAIR_CODE = NOT_ATTESTED
+NAWOTKA_FN77_IGVII3111 = VALID_FOR_FEMALE_PROPHESYING_ACTIVITY
 DVC_3111_DODONA != IGVII_3111_LEBADEIA
 IGII2_3111_ATTICA != IGVII_3111_LEBADEIA
 ```
@@ -544,7 +562,7 @@ DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 
 Safe synthesis:
 
-> The comparative case is now stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. These mutually reinforce a **ritual-performance-state** axis. The direct p.445 photograph closes Philokrateia's same-object image route but shows only a non-figural inscribed stele, not her appearance. Potta's target monument is likewise controlled as a laurel-motif stele rather than the neighboring possibly veiled female figure. Item-by-item checking also shows that Nawotka's footnote 77 cannot be treated as ten automatically secure prophetess objects. The evidence still does not yield a same-object rule saying that Philokrateia, Tryphosa, Eirene, Potta or another identified mantic woman wore a specific veil/headband/hairstyle, and therefore does not identify the Corinthian trigger.
+> The comparative case is now stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. These mutually reinforce a **ritual-performance-state** axis. The direct p.445 photograph closes Philokrateia's same-object image route but shows only a non-figural inscribed stele, not her appearance. Potta's target monument is likewise controlled as a laurel-motif stele rather than the neighboring possibly veiled female figure. Item-by-item checking also shows that Nawotka's footnote 77 cannot be treated as ten automatically secure prophetess objects: Lebadeia 3111 is now positively verified for a woman described with `προφητεύσασα`, but this verbal/participial evidence is not automatically a formal `προφῆτις` title; other list entries include demonstrable or very likely miscitation problems. The evidence still does not yield a same-object rule saying that Philokrateia, Tryphosa, Eirene, Potta or another identified mantic woman wore a specific veil/headband/hairstyle, and therefore does not identify the Corinthian trigger.
 
 **No core grade reversal.**
 
@@ -556,13 +574,12 @@ Safe synthesis:
 2. Nanas: Tabbernee fig.77 same-object image.
 3. Apphe `IK Kalchedon 61 = CIG 3796`: direct page/object.
 4. Termessos `TAM III,1 870 / PH280975`: full text/noun-bearer/genre.
-5. Lebadeia `IG VII 3111 / PH146626`: full body/noun-bearer.
-6. Didyma III.7: full body search for female mantic titles + head/hair terms.
-7. Didyma 235B: direct stone/Rehm page.
-8. Nawotka `IG II² 13148`: explicit erratum/intended object only; **do not guess**.
-9. Nawotka `SEG 49.1624`: explicit erratum/intended object only; **do not guess**.
-10. Corrington 1991 direct full text.
-11. Claros personnel system with gender/status/object controls.
+5. Didyma III.7: full body search for female mantic titles + head/hair terms.
+6. Didyma 235B: direct stone/Rehm page.
+7. Nawotka `IG II² 13148`: explicit erratum/intended object only; **do not guess**.
+8. Nawotka `SEG 49.1624`: explicit erratum/intended object only; **do not guess**.
+9. Corrington 1991 direct full text.
+10. Claros personnel system with gender/status/object controls.
 
 Closed from the substantive candidate queue:
 
@@ -571,6 +588,7 @@ PHILOKRATEIA_CGRN_232_OBJECT_ROUTE = CLOSED
 PHILOKRATEIA_VOLLGRAFF_1909_P445_SAME_OBJECT_PHOTO = CLOSED_DIRECT_IMAGE
 NISYRA_1624_COUNT_AS_SECURE_PROPHETESS = NO
 POTTA_TAM535_SAME_OBJECT_VISUAL_MOTIF = LAUREL_LEAF
+IGVII_3111_FEMALE_PROPHESYING_ACTIVITY = VERIFIED
 ```
 
 ---
@@ -585,6 +603,7 @@ AGENT_DISCOVERY != AUTHORITY
 DIRECT_OBJECT > SECONDARY_SUMMARY
 REFERENCE_LIST != VERIFIED_PERSON_LIST
 NAWOTKA_FN77_REFERENCE != VERIFIED_PROPHETESS_OBJECT
+FEMALE_PROPHESYING_ACTIVITY != FORMAL_PROPHETIS_TITLE
 ROLE != HEAD_CODE
 PRIESTESS != PROPHETIS_PROMANTIS_AUTOMATICALLY
 LINKED_RITUAL_CORPUS != SAME_OBJECT_HEAD_STATE
