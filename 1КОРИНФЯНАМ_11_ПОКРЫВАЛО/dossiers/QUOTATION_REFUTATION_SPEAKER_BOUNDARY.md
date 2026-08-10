@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — quotation / refutation / speaker-boundary dossier
 
-**Статус:** `EVERGREEN-DOSSIER / MODERN-MODELS / PRIMARY-SAME-LETTER-CORPUS / RHETORICAL-CONTINUITY / EARLY-RECEPTION / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`  
-**Последнее обновление:** 2026-08-10
+**Статус:** `EVERGREEN-DOSSIER / MODERN-MODELS / MULTILINGUAL-REOPEN / PRIMARY-SAME-LETTER-CORPUS / RHETORICAL-CONTINUITY / EARLY-RECEPTION / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Последнее обновление:** 2026-08-11
 
 ## 0. Authority rule
 
@@ -25,6 +25,7 @@ ABSENCE_OF_EXPLICIT_QUOTATIVE_FORMULA != QUOTATION_IMPOSSIBLE
 SHORT_SLOGAN_PARALLEL != LONG_UNMARKED_BLOCK_PROOF
 NUMBER_OF_ADVOCATES != TEXTUAL_PROOF
 METHOD_AUTHOR != EVERY_DOWNSTREAM_APPLICATION_OF_METHOD
+PUBLISHER_OR_AUTHOR_SUMMARY != FULL_BOOK_BODY
 TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 ```
 
@@ -109,10 +110,52 @@ PEPPIATT_AUTHOR_CERTAINTY = HYPOTHESIS_NOT_CLAIMED_PROOF
 PEPPIATT_MODEL_STATUS = C_SERIOUS_PUBLISHED_ALTERNATIVE
 ```
 
-Family disagreement is evidentially important:
+## Schirrmacher 1993 / revised 2002 — newly recovered German-language precursor
+
+The multilingual German sweep located Thomas Schirrmacher’s own publication page plus exact library records for:
+
+> Thomas Schirrmacher, *Paulus im Kampf gegen den Schleier: Eine alternative Auslegung von 1. Korinther 11,2–16*.
+
+Edition history directly controlled from the author and Heidelberg catalogue:
+
+```text
+FIRST_EDITION = 1993_VKW_BONN
+EARLY_REPRINTS = 1994_1995_1997
+REVISED_5TH_EDITION = 2002_VTR_NUERNBERG
+REVISED_5TH_LENGTH = 130_pages
+REVISED_5TH_ISBN = 9783933372451
+ENGLISH_EDITION = Paul_in_Conflict_with_the_Veil_2002_2007
+HEIDELBERG_2002_COPY = VERIFIED_AVAILABLE_PHYSICAL_HOLDING
+```
+
+The author's own book summary directly attributes this model to the work:
+
+```text
+CORINTHIANS_DRAW_FALSE_VEILING_INFERENCES = YES
+PAUL_PRESENTS_CORINTHIAN_VEILING_TEACHING = YES
+IRONIC_AD_ABSURDUM = VV4_9_IN_AUTHOR_SUMMARY
+PAUL_CONTRADICTS = VV10_15_IN_AUTHOR_SUMMARY
+V16 = VEILING_NOT_BINDING_ALL_CHURCHES_IN_AUTHOR_SUMMARY
+```
+
+The author's English bibliography describes the revised book as a thirteen-thesis detailed exposition and says it follows an alternative view associated with John Lightfoot.
+
+Evidence ceiling:
+
+```text
+SCHIRRMACHER_1993_2002_MODEL_EXISTENCE = CLOSED_DIRECT_AUTHOR_AND_LIBRARY_METADATA
+SCHIRRMACHER_AUTHOR_SUMMARY_BOUNDARY = DIRECT_AUTHOR_SUMMARY
+SCHIRRMACHER_FULL_BOOK_BODY = NOT_YET_DIRECTLY_ACQUIRED
+SCHIRRMACHER_MODEL_TEXTUAL_GRADE = NOT_UPGRADED_FROM_SUMMARY_ALONE
+```
+
+This matters historically because it is a German-language monograph-length quotation/refutation model predating Peppiatt and the recent Costa/Salés formulations. It does **not** displace Padgett 1984 as the earlier modern rhetorical-inversion precursor already known in the wider project, and it does not by itself raise the textual-fit grade.
+
+Family disagreement remains evidentially important:
 
 ```text
 SHOEMAKER = CONTIGUOUS_LARGE_BLOCK_LINEAGE
+SCHIRRMACHER = CORINTHIAN_VEILING_INFERENCES_VV4_9 / PAULINE_REFUTATION_VV10_16_IN_AUTHOR_SUMMARY
 COSTA = VV4_9_QUOTATION
 SALES = VV3_10_QUOTATION
 PEPPIATT = MULTIPLE_ALTERNATING_SWITCHES
@@ -279,6 +322,14 @@ PEPPIATT_MULTIPLE_SWITCHES = ADDITIONAL_TEXTUAL_BURDEN
 PEPPIATT_EXPLANATORY_COHERENCE != SPEAKER_BOUNDARY_PROOF
 ```
 
+Schirrmacher:
+
+```text
+SCHIRRMACHER_AUTHOR_SUMMARY_ESTABLISHES_MODEL_EXISTENCE = true
+SCHIRRMACHER_AUTHOR_SUMMARY_DOES_NOT_SUPPLY_FULL_GREEK_BOUNDARY_ARGUMENT = true
+SCHIRRMACHER_V10_15_REFUTATION_REQUIRES_DIRECT_BOOK_STRESS_TEST = true
+```
+
 ---
 
 # 7. Early reception speaker-boundary control
@@ -322,9 +373,9 @@ NOT = SCHOLARLY_EXISTENCE_GRADE
 
 ---
 
-# 9. Final acquisition disposition
+# 9. Final acquisition disposition / multilingual reopen
 
-The former local P1 queue is closed:
+Previously known routes:
 
 ```text
 WATSON_CULY_2018_METHOD = CLOSED_AT_PUBLISHER_PLUS_LAWFUL_PREVIEW_LEVEL
@@ -332,16 +383,23 @@ WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED / DO_NOT_ASSUME_SUCH_S
 KOWALSKI_2020 = OFFICIAL_ABSTRACT_AND_OPEN_ACCESS_PDF_OBJECT_CLOSED / PDF_BYTES_TERMINAL_RUNTIME_ENDPOINT_HOLD
 TORBUS_2009_PP507_521 = CHAPTER_IDENTITY_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 TECHNICAL_GAR_KAI_GAR_DIA_TOUTO_PLEN_POLYPHONY_CORPUS = BOUNDED_CURRENT_AUDIT_COMPLETE / FUTURE_EXTENSION_OPTIONAL_NOT_CURRENT_AUDIT_DEBT
-CURRENT_MAJOR_COMMENTARY_RESPONSES = DELEGATED_TO_CURRENT_COMMENTARY_OWNER / FINAL_TERMINAL_DISPOSITIONS_CLOSED
+CURRENT_MAJOR_COMMENTARY_RESPONSES = DELEGATED_TO_CURRENT_COMMENTARY_OWNER
 ADDITIONAL_PREMODERN_SPEAKER_BOUNDARY_WITNESSES = OPTIONAL_ONLY_IF_SOURCE_SPECIFIC_NEW_HIGH_VALUE_WITNESS
 ```
 
+New German lane:
+
 ```text
-QUOTATION_REFUTATION_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
-NEW_DIRECT_FULLTEXT_OR_MATERIALLY_NEW_PRIMARY_CONTROL = REOPEN_ONLY_TRIGGER
+SCHIRRMACHER_1993_2002 = MODEL_AND_EDITION_HISTORY_CLOSED_DIRECT_AUTHOR_LIBRARY
+SCHIRRMACHER_HEIDELBERG_COPY = VERIFIED_AVAILABLE_PHYSICAL_HOLDING
+SCHIRRMACHER_FULL_BOOK_BODY = ACTIVE_ONLY_IF_LAWFUL_LIBRARY_OR_DIGITAL_BODY_BECOMES_RENDERABLE
 ```
 
-Accumulating additional advocates alone is not a reason to reopen.
+```text
+QUOTATION_REFUTATION_ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
+QUOTATION_REFUTATION_MULTILINGUAL_REOPEN = ACTIVE_ON_MATERIALLY_NEW_SOURCE
+ACCUMULATING_ADVOCATES_ALONE = NOT_REOPEN_REASON
+```
 
 ---
 
@@ -349,7 +407,7 @@ Accumulating additional advocates alone is not a reason to reopen.
 
 Safe synthesis:
 
-> A substantial Corinthian-quotation reading is a genuine published minority family, including both contiguous-block and alternating-voice proposals. Paul can quote or reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or repeated alternating unmarked switches; advocates disagree over span; modern rhetorical studies provide continuous readings; and checked early witnesses likewise read the passage as Paul’s continuous argument. Watson and Culy are retained as a method-control source; no direct application of their criteria to 11:2–16 is currently verified. The large-quotation family therefore belongs in the status quaestionis but remains low in textual fit.
+> A substantial Corinthian-quotation reading is a genuine published minority family, including contiguous-block, refutation, and alternating-voice proposals. The multilingual audit adds Schirrmacher’s German monograph-length refutation model as an independently published node, but its full argument still requires direct book access. Paul can quote or reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or repeated alternating unmarked switches; advocates disagree over span; modern rhetorical studies provide continuous readings; and checked early witnesses likewise read the passage as Paul’s continuous argument. Watson and Culy remain a method-control source; no direct application of their criteria to 11:2–16 is currently verified. The large-quotation family therefore belongs in the status quaestionis but remains low in textual fit.
 
 ---
 
@@ -360,6 +418,7 @@ CORE_GRADE_REVERSALS = 0
 LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
 LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
 LARGE_QUOTATION_LEADING_MODEL = false
+SCHIRRMACHER_1993_2002 = GERMAN_MONOGRAPH_LENGTH_REFUTATION_MODEL / AUTHOR_SUMMARY_DIRECT / FULL_BODY_HOLD
 PEPPIATT_2015 = ABSORBED_AS_DISTINCT_ALTERNATING_VOICE_MODEL
 WATSON_CULY_2018_METHOD = DIRECT_CONTROL
 WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
@@ -367,7 +426,7 @@ CLOSE_LONG_UNMARKED_ANALOGUE = NOT_FOUND_IN_INSPECTED_1COR
 EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 EARLY_CONTINUOUS_PAULINE_READING = STRONGLY_ATTESTED
 KOWALSKI_TORBUS_CONTINUITY_CONTROLS = ABSORBED
-QUOTATION_REFUTATION_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
+QUOTATION_REFUTATION_MULTILINGUAL_REOPEN = ACTIVE_ON_NEW_HIGH_VALUE_SOURCE
 TERMINAL_HOLD != VERIFIED_BODY
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
