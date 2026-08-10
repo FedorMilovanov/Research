@@ -1,18 +1,50 @@
 {
-  "date":"2026-08-10",
-  "pr":182,
-  "branch":"agent/1cor11-citation-quarantine-20260810",
-  "scope":[
-    "agent citation fabrication quarantine",
+  "date": "2026-08-10",
+  "pr": 182,
+  "branch": "agent/1cor11-citation-quarantine-20260810",
+  "status": "CURRENT_PR_SCOPE_RECEIPT",
+  "navigationAuthority": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00_CURRENT_INDEX_1COR11.md",
+  "claimGradeAuthority": "1КОРИНФЯНАМ_11_ПОКРЫВАЛО/00ZZZZZZZZZZZZZZZZZZ_CURRENT_CLAIM_REGISTRY_2026-08-10.md",
+  "scope": [
+    "agent citation fabrication quarantine and source-hygiene correction",
     "direct publisher/institutional source verification",
-    "recent scholarship acquisition",
-    "quotation/refutation adversarial stress test",
-    "same-letter Pauline quotation/slogan corpus control",
-    "multilingual recent scholarship control",
-    "rights-aware visual archaeology ledger",
-    "patristic speaker-boundary control"
+    "real documentary-papyrological and epigraphic exousia controls",
+    "Andania/Lycosura ritual-dress epigraphy with supersession correction",
+    "Roman Corinth archaeology and rights-aware visual custody",
+    "Roman female dress and primary literary contradiction controls",
+    "patristic source ownership, catena attribution firewall, and Theodoret resolution",
+    "quotation/refutation and same-letter discourse stress tests",
+    "multilingual and current 2024-2026 scholarship ingress",
+    "current technical commentary acquisition queue",
+    "ritual/divination/female-prophecy head-state dossier",
+    "anti-sprawl consolidation into stable current index and evergreen dossiers"
   ],
-  "coreGradeReversals":0,
-  "publicationHold":true,
-  "directTextHolds":["Garland 2025 pp468-493 + notes","Ciampa/Rosner pp503-540 + notes","Nommik DiVA full object"]
+  "antiSprawl": {
+    "stableCurrentIndex": true,
+    "preferEvergreenDossierUpdates": true,
+    "newZLadderPointersForbidden": true,
+    "historicalReceiptsAreNotCurrentAuthority": true
+  },
+  "coreGradeReversals": 0,
+  "publicationHold": true,
+  "productWrite": false,
+  "sitePublication": false,
+  "directTextHolds": [
+    "Thiselton 2000 full 1 Cor 11:2-16 section + notes",
+    "Fee Revised 2014 full 1 Cor 11:2-16 section + notes/addendum",
+    "Garland 2025 full current 1 Cor 11:2-16 section + notes",
+    "Ciampa/Rosner 2010 pp503-540 detail + notes",
+    "Reasoner 2025 Commentary 7 pp432-451 direct Brill body",
+    "Starling 2025 exact 1 Cor 11 section",
+    "Gorman 2025 exact 1 Cor 11:2-16 section",
+    "Nommik DiVA full object",
+    "Gundry-Volf 1997 full chapter",
+    "Gielen 1999 direct publisher body"
+  ],
+  "currentAuditCorrections": [
+    "Reasoner 2025 Commentary 7 pagination corrected from false p321-p431 to approximately p432-p451",
+    "Reasoner p434/p444 are pagination-plausible but wording remains unverified; p343 for v3 is a bad page label",
+    "Tryphosa numbering crosswalk pending evergreen dossier sync: PHI ordinal 450 / SEG 30.1286 / current-edition Didyma 708",
+    "claim-registry commentary HOLD table pending sync with stable current index"
+  ]
 }
