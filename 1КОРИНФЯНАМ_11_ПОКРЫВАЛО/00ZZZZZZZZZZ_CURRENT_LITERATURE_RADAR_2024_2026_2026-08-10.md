@@ -52,6 +52,24 @@ Current source card:
 PETERS_CITIZEN_BODY_MODEL = C_SERIOUS_CURRENT_MODEL
 ```
 
+## 1.3 Susanna Drake — Cambridge 2025
+
+> Susanna Drake, *Veiling in the Late Antique World* (Cambridge University Press, 2025), ch.2 “Veils in Corinth,” pp.70–89.
+
+Current source-control owner:
+- `dossiers/DRAKE_VEILING_MATERIALITY_SOURCE_CONTROL.md`
+
+Publisher-controlled chapter metadata and summary directly establish that Drake treats material veiling/unveiling as historically real and socially multivalent rather than reducible to one universal code. The chapter body itself remains paywalled/not fully autopsied in this branch.
+
+```text
+DRAKE_2025_CH2_IDENTITY = DIRECT_PUBLISHER_VERIFIED
+DRAKE_2025_CH2_PP = 70_89
+DRAKE_MATERIAL_VEILING_MULTIVALENT_SOCIAL_SEMANTICS = PUBLISHER_SUMMARY_VERIFIED
+DRAKE_CH2_FULL_BODY = HOLD
+```
+
+Use Drake as major current materiality/social-history pressure, but do not promote publisher-summary claims into page-specific chapter-body claims.
+
 ---
 
 # 2. Aldar Nõmmik — major current whole-model
@@ -283,14 +301,19 @@ Use in current-debate/history mapping, not technical grade-setting.
 
 ---
 
-# 9. False-freshness firewall — Penner / Vander Stichele
+# 9. False-freshness firewall — Penner / Vander Stichele / Standhartinger
 
 Search platforms can surface “Unveiling Paul: Gendering Ethos in 1 Corinthians 11:2–16” with 2025 repository metadata.
 
 Authoritative publication metadata instead gives older publication history; the PDF identifies *lectio difficilior* 2/2004 and university metadata places the work in the mid-2000s.
 
+Angela Standhartinger’s “Die Frau muss Vollmacht haben auf ihrem Haupt (1 Korinther 11,10)” is likewise **not a 2025 publication** despite current platform indexing. The author’s Philipps-Universität Marburg bibliography identifies the article as *lectio difficilior* 2 (2002), with a 2003 book version; the DOI itself also encodes the 2002 journal issue.
+
 ```text
 PENNER_VANDER_STICHELE_CURRENT_2025 = FALSE
+STANDHARTINGER_CURRENT_2025 = FALSE
+STANDHARTINGER_LECTIO_ORIGINAL = 2002
+STANDHARTINGER_BOOK_VERSION = 2003
 PLATFORM_REINDEX_DATE != ORIGINAL_PUBLICATION_DATE
 ```
 
@@ -311,6 +334,7 @@ CZECH:
 
 GERMAN:
   Lumesberger-Loisl 2025 = bibliographic verified / content HOLD
+  Standhartinger = original 2002, not current-2025
 
 CHINESE:
   Hao Li 2023 = direct official journal abstract / body acquisition separate
@@ -322,35 +346,60 @@ The purpose is to prevent an English-only status quaestionis, not to count langu
 
 ---
 
-# 11. Current radar ranking
+# 11. Current-commentary acquisition overlay
 
-## R1 — material current adversarial pressure
+The branch now has a dedicated evergreen owner:
+- `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md`
 
-1. Callon 2024 — wife/free-wife/status/slavery-body model.
-2. Peters 2025 — citizen-body model.
-3. Nõmmik 2025 — ritual-uniformity / `capite velato` whole-model.
-4. Garland 2025 2e — current technical commentary, direct-section HOLD.
+Current targets must remain visible in this radar because this file owns ranking, while the dossier owns acquisition detail.
 
-## R2 — theoretical / canonical pressure
+```text
+REASONER_2025_BRILL = CURRENT_TECHNICAL_COMMENTARY / DIRECT_BODY_HOLD
+REASONER_1COR11_2_16 = COMMENTARY_7_APPROX_PP432_451
+STARLING_2025_EBTC = CURRENT_COMMENTARY / EXACT_SECTION_HOLD
+GORMAN_2025_EERDMANS = CURRENT_THEOLOGICAL_PASTORAL_COMMENTARY / EXACT_SECTION_HOLD
+GARLAND_2025_2E = CURRENT_TECHNICAL_COMMENTARY / DIRECT_SECTION_HOLD
+```
 
-5. Salés 2024 — androprimacy + quotation/rejoinder; textual fit remains low.
-6. Gorman 2025 — current theological commentary, section HOLD.
-7. Francis 2023/24 — Roman analogy / not-primary-dress-code model, lower venue weight.
-
-## R3 — bibliography / reception / edge
-
-8. Hamplová 2025 — direct full Czech thesis.
-9. Lumesberger-Loisl 2025 — German bibliographic HOLD.
-10. Odewole 2025 — current reception.
-11. Garwood 2026 — current confessional/non-universalist edge.
+Do not attribute detailed positions to Reasoner/Starling/Gorman from catalog copy or secondary citations before the exact section is acquired.
 
 ---
 
-# 12. What this radar changes / does not change
+# 12. Current radar ranking
+
+## R1 — material current adversarial pressure / technical acquisition
+
+1. Callon 2024 — wife/free-wife/status/slavery-body model.
+2. Drake 2025 — major Cambridge material-veiling/social-history control; ch.2 body HOLD.
+3. Peters 2025 — citizen-body model.
+4. Nõmmik 2025 — ritual-uniformity / `capite velato` whole-model.
+5. Reasoner 2025 — current Brill technical commentary; Commentary 7 approx pp.432–451; direct body HOLD.
+6. Garland 2025 2e — current technical commentary; direct-section HOLD.
+
+## R2 — current commentary / theoretical / canonical pressure
+
+7. Starling 2025 — current EBTC commentary target; exact section HOLD.
+8. Salés 2024 — androprimacy + quotation/rejoinder; textual fit remains low.
+9. Gorman 2025 — current theological/pastoral commentary; useful control but below Reasoner/Garland for technical microclaims until direct section is closed.
+10. Francis 2023/24 — Roman analogy / not-primary-dress-code model, lower venue weight.
+
+## R3 — bibliography / reception / edge
+
+11. Hamplová 2025 — direct full Czech thesis.
+12. Lumesberger-Loisl 2025 — German bibliographic HOLD.
+13. Odewole 2025 — current reception.
+14. Garwood 2026 — current confessional/non-universalist edge.
+
+---
+
+# 13. What this radar changes / does not change
 
 Adds/retains:
 
 ```text
+DRAKE_2025 = R1_CURRENT_MATERIALITY_SOCIAL_HISTORY_CONTROL / CH2_BODY_HOLD
+REASONER_2025 = R1_CURRENT_TECHNICAL_COMMENTARY_ACQUISITION / BODY_HOLD
+STARLING_2025 = R2_CURRENT_COMMENTARY_ACQUISITION / SECTION_HOLD
 NOMMIK_RITUAL_UNIFORMITY_CAPITE_VELATO = C_SERIOUS_CURRENT_RECONSTRUCTION
 SALES_ANDROPRIMACY = C_CURRENT_THEORETICAL_NODE
 SALES_LARGE_QUOTATION = D_C_LOW
@@ -379,21 +428,25 @@ CORE_GRADE_REVERSALS = 0
 
 ---
 
-# 13. Acquisition priorities generated by radar
+# 14. Acquisition priorities generated by radar
 
 ```text
-P0 NOMMIK_DIVA_FULL_OBJECT = RETRY
+P0 REASONER_2025_COMMENTARY_7_PP432_451 = ACQUIRE_DIRECT_BODY
 P0 GARLAND_2025_1COR11_SECTION = HOLD
+P0 DRAKE_2025_CH2_PP70_89 = ACQUIRE_DIRECT_BODY
+P0 NOMMIK_DIVA_FULL_OBJECT = RETRY_URN_NBN_SE_THS_DIVA_2600
+P1 STARLING_2025_1COR11_SECTION = ACQUIRE
 P1 LUMESBERGER_LOISL_2025_BODY = ACQUIRE
 P1 HAMPLOVA_BIBLIOGRAPHY_MINE = ONLY_FOR_MISSING_SOURCES
 P1 FRANCIS_FULL_PDF = MODEL_STRESS_IF_NEEDED
+P2 GORMAN_2025_1COR11_SECTION = ACQUIRE_THEOLOGICAL_PASTORAL_CONTROL
 ```
 
 Do not create a new pass merely because a platform shows a newer date.
 
 ---
 
-# 14. Result
+# 15. Result
 
 ```text
 CURRENT_RADAR_2024_2026 = MULTILINGUAL
