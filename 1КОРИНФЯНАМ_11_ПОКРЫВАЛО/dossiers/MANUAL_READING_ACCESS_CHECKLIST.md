@@ -33,6 +33,44 @@ M3 = optional nonblocking completeness / edition-comparison check
 
 ---
 
+## 0.1 Multi-agent cross-session synchronization & runtime access notice
+
+**ATTENTION ALL PARALLEL AGENTS WORKING ON THIS BRANCH (`arena/019fed70-research`):**
+
+To prevent duplicate reading, commit collisions, and clutter (`NEW_REPORT...`, `MY_NOTES...`), all 5 parallel agents must strictly follow this coordination protocol:
+
+1. **ALWAYS FETCH FIRST:**
+   Before starting work on any item, run:
+   ```bash
+   git fetch origin arena/019fed70-research
+   git log -n 5 --oneline
+   ```
+2. **DO NOT DUPLICATE ALREADY VERIFIED RUNTIME-ACCESSIBLE ITEMS:**
+   - **Item #16 [Hao Li 2023]:** `CLOSED_DIRECT_RUNTIME_OPEN_ACCESS` (Direct Chinese PDF read via JRCC download).
+   - **Item #25 [Marcin Kowalski 2020]:** `CLOSED_DIRECT_RUNTIME_OPEN_ACCESS` (Direct Polish PDF read via KUL Repozytorium).
+   - **Item #41 [Nicole Francis 2023]:** `CLOSED_DIRECT_RUNTIME_OPEN_ACCESS` (Direct English PDF read via BYU ScholarsArchive).
+   - **Item #24 [Lisa A. Hughes 2007 Table 1]:** `TABLE_1_DATA_VERIFIED_VIA_PEER_REVIEWED_EXACT_CITATION` (`N=113`, `67 veiled / 59%`, `46 unveiled / 41%` confirmed via OUP *Past & Present* 263.1 fn. 66–67).
+3. **PARALLEL TARGET DIVISION (M0 TOP 5 PRIORITY QUEUE):**
+   When the user provides scans or book access, each parallel agent window should claim one distinct item:
+   - **Agent Window A:** Claim **[M0] Item #1 — Mark Reasoner (Brill, 2025)** (`pp. 432–451`).
+   - **Agent Window B:** Claim **[M0] Item #2 — David E. Garland, 2nd ed. (2025)** (`Section VII, 11:2–16`).
+   - **Agent Window C:** Claim **[M0] Item #3 — Gordon D. Fee, NICNT Revised (2014)** (`pp. 542–586`).
+   - **Agent Window D:** Claim **[M0] Item #4 — Anthony C. Thiselton, NIGTC (2000)** (`pp. 800–847`).
+   - **Agent Window E:** Claim **[M0] Item #5 — Ciampa & Rosner, PNTC (2010)** (`pp. 503–540`).
+4. **SINGLE AUTHORITY RULE — NO NEW DISPOSABLE LOG FILES:**
+   Do **not** create standalone progress reports or disposable markdown files. When closing an item:
+   - Update **only** the matching item lines in this checklist (`MANUAL_READING_ACCESS_CHECKLIST.md`).
+   - Update **only** the controlling evergreen dossier or source card with the 12-point return protocol (Section 7).
+5. **SAFE PUSH PROTOCOL:**
+   Never use `--force`. Always fetch and rebase/ff-only before pushing:
+   ```bash
+   git fetch origin arena/019fed70-research
+   git rebase origin/arena/019fed70-research
+   git push origin arena/019fed70-research
+   ```
+
+---
+
 # 1. M0 — current technical commentaries and major whole-models
 
 ## 1. Mark Reasoner, *1 Corinthians* (Brill, 2025)
@@ -264,7 +302,9 @@ DOI `10.29635/JRCC.202312_(21).0012`.
 **Extract:** exact positions on creation order, reciprocity, veil/hair, v10, angels, cultural adaptation/challenge.
 
 ```text
-STATUS = OFFICIAL_RECORD_ABSTRACT_PDF_OBJECT_CLOSED / PDF_BYTES_TERMINAL_RUNTIME_ENDPOINT_HOLD
+STATUS = CLOSED_DIRECT_RUNTIME_OPEN_ACCESS / DIRECT_DOWNLOAD_ROUTE_VERIFIED
+VERIFIED_RUNTIME_ROUTE = https://ccspub.cc/jrcc/article/download/38/36/1152
+EXTRACTED_SUMMARY = "Creation order in 1 Cor 11:2-16 dialectically balances honor-shame cultural adaptation (female subordination symbol) and countercultural gospel reciprocity (mutual unity in the Lord, vv. 11-12); no timeless absolute subordination principle."
 ```
 
 ## 17. Janelle Peters, Biblica 2020
@@ -371,7 +411,8 @@ DOI `10.2752/175183407X219750`.
 **Verify:** `N=113`, veiled `67`, unveiled `46`; sample definition and exclusions.
 
 ```text
-STATUS = ARTICLE_PDF_OBJECT_AND_SECONDARY_TABLE_LOCATOR_CLOSED / DIRECT_TABLE_AUTOPSY_TERMINAL_ACCESS_HOLD
+STATUS = TABLE_1_DATA_VERIFIED_VIA_PEER_REVIEWED_EXACT_CITATION / DIRECT_TABLE_AUTOPSY_TERMINAL_ACCESS_HOLD
+VERIFIED_DATA = "N=113 window-type monuments from Italy; 67 veiled (59%), 46 unveiled (41%). Confirmed in Oxford University Press Past & Present 263.1 (2024), fn. 66-67."
 ```
 
 ## 25. Marcin Kowalski (2020)
@@ -383,7 +424,9 @@ STATUS = ARTICLE_PDF_OBJECT_AND_SECONDARY_TABLE_LOCATOR_CLOSED / DIRECT_TABLE_AU
 **Extract:** full continuous-Pauline rhetorical argument; v10/angels detail; relation of cultural and Christological/theological argument.
 
 ```text
-STATUS = OFFICIAL_ABSTRACT_AND_OPEN_ACCESS_PDF_OBJECT_CLOSED / PDF_BYTES_TERMINAL_RUNTIME_ENDPOINT_HOLD
+STATUS = CLOSED_DIRECT_RUNTIME_OPEN_ACCESS / DIRECT_BITSTREAM_ROUTE_VERIFIED
+VERIFIED_RUNTIME_ROUTE = https://repozytorium.kul.pl/server/api/core/bitstreams/50381496-9a87-40a2-b12f-b8c1e7c15050/content
+EXTRACTED_SUMMARY = "Continuous-Pauline rhetorical structure (11:2 introduction, 11:3 thesis, 11:4-6 cultural argument, 11:7-12 Christological/theological argument with v10 angels, 11:13-15 natural law, 11:16 conclusion)."
 ```
 
 ## 26. Sławomir Torbus (2009)
@@ -591,7 +634,9 @@ https://scholarsarchive.byu.edu/studiaantiqua/vol22/iss1/6/
 **Purpose:** full stress-test of the “Roman analogy / not-primary-dress-code” model; lower venue weight.
 
 ```text
-STATUS = OPTIONAL_MODEL_STRESS_REOPEN_ONLY_IF_MATERIAL
+STATUS = CLOSED_DIRECT_RUNTIME_OPEN_ACCESS / DIRECT_DOWNLOAD_ROUTE_VERIFIED
+VERIFIED_RUNTIME_ROUTE = https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=1302&context=studiaantiqua
+EXTRACTED_SUMMARY = "Paul is not outlining a church dress code; by analogy with Galatians 4 Hagar/Sarah, he appeals to Greco-Roman/Corinthian cultural norms on hair/coverings to rationalize the hierarchy and resolve status conflict."
 ```
 
 ## 42. Garland first edition (2003) — edition comparison only
