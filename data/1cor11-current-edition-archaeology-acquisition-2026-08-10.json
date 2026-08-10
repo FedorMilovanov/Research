@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-08-10",
+  "topic": "1 Corinthians 11:2-16",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "coreGradeReversals": 0,
+  "currentEditionTargets": [
+    {
+      "id": "starling-2025-ebtc",
+      "author": "David I. Starling",
+      "title": "1 Corinthians",
+      "series": "Evangelical Biblical Theology Commentary",
+      "year": 2025,
+      "bibliographicState": "VERIFIED_DIRECT_PREVIEW",
+      "oneCor11SectionState": "CONTENT_HOLD",
+      "priority": "P0_P1_CURRENT_EDITION_TARGET"
+    }
+  ],
+  "archaeologyTargets": [
+    {
+      "id": "desilva-2025",
+      "author": "David A. deSilva",
+      "title": "Archaeology and the Ministry of Paul: A Visual Guide",
+      "year": 2025,
+      "publisher": "Baker Academic",
+      "romanCorinthPages": "126-156",
+      "bibliographicState": "VERIFIED",
+      "specificOneCor11Use": "LOCATOR_HOLD",
+      "specificS1116Use": "LOCATOR_HOLD"
+    },
+    {
+      "id": "thompson-1988",
+      "author": "Cynthia L. Thompson",
+      "title": "Hairstyles, Head-Coverings, and St. Paul: Portraits from Roman Corinth",
+      "journal": "The Biblical Archaeologist",
+      "volumeIssue": "51.2",
+      "pages": "99-115",
+      "doi": "10.2307/3210030",
+      "state": "VERIFIED_DIRECT_PUBLISHER_ARCHAEOLOGY_B1"
+    }
+  ],
+  "visualCustody": [
+    {
+      "object": "S-1116 Augustus",
+      "photographer": "George E. Koronaios",
+      "license": "CC BY-SA 4.0",
+      "dimensions": "4000x6000",
+      "sha1": "5bd067867204a13353d3175fa2c704d60163359a",
+      "rightsState": "OPEN_ATTRIBUTION_SHAREALIKE"
+    },
+    {
+      "object": "S-1088 veiled Julio-Claudian male",
+      "photographer": "George E. Koronaios",
+      "license": "CC BY-SA 4.0",
+      "dimensions": "4000x6000",
+      "sha1": "0752c9a5dbd0269f8da48449e288a3c1e44abfc4",
+      "personIdentification": "DISPUTED",
+      "rightsState": "OPEN_ATTRIBUTION_SHAREALIKE"
+    }
+  ],
+  "retainedHolds": {
+    "garland2025": "PP468_493_PLUS_NOTES_DIRECT_TEXT_HOLD",
+    "ciampaRosner2010": "PP503_540_PLUS_NOTES_DETAIL_HOLD",
+    "nommik": "DIVA_FULL_OBJECT_RUNTIME_HOLD",
+    "starling2025": "ONE_COR_11_SECTION_CONTENT_HOLD",
+    "desilva2025": "ONE_COR_11_SPECIFIC_LOCATOR_HOLD"
+  },
+  "currentGrades": {
+    "romanCapiteVelatoBackground": "A",
+    "v4ExactCapiteVelato": "B_C",
+    "exactCorinthTrigger": "RECONSTRUCTION_LAYER"
+  }
+}
