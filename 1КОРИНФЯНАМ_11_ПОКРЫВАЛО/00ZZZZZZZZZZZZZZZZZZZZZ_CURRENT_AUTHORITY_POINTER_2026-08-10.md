@@ -1,7 +1,7 @@
-# 1 Коринфянам 11:2–16 — current authority pointer after second agent-dump deep verification
+# 1 Коринфянам 11:2–16 — current authority pointer after citation-quarantine pass
 
 **Дата:** 2026-08-10  
-**Статус:** `LATEST-AUTHORITY-POINTER / SECOND-AGENT-DUMP-DEEP-VERIFIED / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `LATEST-AUTHORITY-POINTER / AGENT-CITATION-QUARANTINE-VERIFIED / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## Read order
 
@@ -11,13 +11,14 @@
 4. `00ZZZZZZZZZZZZZZZZZZZZ_AGENT_DUMP_48_TARGET_VERIFICATION_AUDIT_2026-08-10.md` — first uploaded agent-dump source-hygiene audit.
 5. **`00ZZZZZZZZZZZZZZZZZZZZZ_SECOND_AGENT_DUMP_DEEP_VERIFICATION_2026-08-10.md`** — second 48+ target source-specific reconciliation; current control for Fee/Garland/Ciampa-Rosner attribution, Nõmmik institutional summary, Finney direct abstract and Murphy-O’Connor human-messenger source status.
 6. **`00ZZZZZZZZZZZZZZZZZZZZZ_MONTIER_SHAVED_HEAD_SOCIAL_MYTH_CONTROL_2026-08-10.md`** — direct open-fulltext control against the shaved-prostitute/temple-prostitute folklore claim.
-7. Claim-specific primary/adversarial audits listed in the current registry.
+7. **`00ZZZZZZZZZZZZZZZZZZZZZZ_AGENT_CITATION_FABRICATION_QUARANTINE_2026-08-10.md`** — current stop-layer for fabricated or mis-cited fresh-source claims: P.Oxy. 5575, Kirk JBL 142.3, Ehrensperger/Al-Suadi ritual chapters, Chrysostom false quote, DeConick JBL/chapter attribution, Yung Suk Kim, Petterson and Punt bibliographic controls.
+8. Claim-specific primary/adversarial audits listed in the current registry.
 
-The new verification layer **does not supersede core claim grades** because no core grade changed. It supersedes only weaker source-attribution shorthand where specifically noted.
+The newest quarantine layer **does not supersede core claim grades** because no core grade changed. It supersedes any conflicting `verified/gold/fully verified` labels attached to the specific quarantined citations in raw agent dumps.
 
 ---
 
-## New verified source-hygiene controls
+## Current verified source-hygiene controls
 
 ```text
 FEE_FORMAL_2014_LABEL = REVISED_EDITION
@@ -43,6 +44,22 @@ NOMMIK_HIDDEN_EVENTS = C_SERIOUS_RECONSTRUCTION
 FINNEY_MODEL_DESCRIPTION = DIRECT_JSNT_ABSTRACT
 MURPHY_OCONNOR_HUMAN_MESSENGERS = DIRECT_OXFORD_ABSTRACT
 HUMAN_MESSENGERS_LIKELIHOOD = D_C_LOW_PUBLISHED_ALTERNATIVE
+
+POXY_84_5575_1COR11_PARALLEL = REJECTED_FABRICATION
+POXY_5575_ACTUAL = VOL_87_2023_SAYINGS_OF_JESUS
+KIRK_JBL_142_3_2023_509_530 = REJECTED_FALSE_CITATION
+EHRENSPERGER_JECH_13_1_2023 = REJECTED_FALSE_CITATION
+EHRENSPERGER_RITUAL_EMOTION_CHAPTER = REJECTED_FALSE_CITATION
+AL_SUADI_EARLY_CHRISTIAN_RITUAL_LIFE_1COR11 = REJECTED_FALSE_CITATION
+CHRYSOSTOM_ANGELS_PRIESTS_BISHOPS_QUOTE = REJECTED_FABRICATED_QUOTE
+DECONICK_JBL_140_3_2021_599_616 = REJECTED_FALSE_CITATION
+DECONICK_GNOSTIC_NEW_AGE_STANDALONE_CHAPTER = REJECTED_AS_CITED
+DECONICK_EXACT_1COR11_USE = HOLD_DIRECT_READ
+YUNG_SUK_KIM_2023_1COR_BOOK = QUARANTINE_NOT_LOCATED
+PETTERSON_BOOK = REAL_BUT_MISCITED
+PETTERSON_1COR11_SPECIALIST_USE = HOLD
+PUNT_REAL_SOURCE = TRUE_BUT_AGENT_CITATION_FALSE
+PUNT_SPECIFIC_1COR11_MODEL = HOLD_DIRECT_READ
 
 CORE_GRADE_REVERSALS = 0
 ```
@@ -92,6 +109,8 @@ Ciampa/Rosner PNTC 2010: pp.503–540 + notes
 4. Gundry-Volf full text.
 5. Olson 2008 exact Roman female dress/portrait discussion.
 6. Fantham 2008 full chapter on Roman head covering and gender.
+7. DeConick *The Gnostic New Age*, ch.4 direct read only to test whether 1 Cor 11 is actually discussed.
+8. Punt, “Pauline Bodies and South African Bodies” direct read before any 1 Cor 11-specific attribution.
 
 Do not ask the user for these while agent-side lawful access routes remain available.
 
@@ -101,6 +120,8 @@ Do not ask the user for these while agent-side lawful access routes remain avail
 
 ```text
 AGENT_DUMP = DISCOVERY_ONLY
+FALSE_OR_NOT_LOCATED_CITATION = NEVER_PROPAGATE
+DIRECT_QUOTE_FROM_AGENT = NEVER_QUOTE_SAFE_WITHOUT_DIRECT_TEXT
 DO_NOT_REQUEST_FROM_USER_IF_AGENT_CAN_ACCESS = true
 PRODUCT_WRITE = false
 UI_IMPLEMENTATION = false
