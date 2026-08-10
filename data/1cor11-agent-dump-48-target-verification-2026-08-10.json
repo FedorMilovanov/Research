@@ -1,0 +1,84 @@
+{
+  "schema": "1cor11-agent-dump-verification-v1",
+  "date": "2026-08-10",
+  "scope": "1 Corinthians 11:2-16 only",
+  "research_only": true,
+  "publication_hold": true,
+  "agent_dump_role": "discovery_only",
+  "verification_targets": 48,
+  "core_grade_reversals": 0,
+  "useful_locator_updates": [
+    {
+      "source": "David E. Garland, 1 Corinthians, 2nd ed., BECNT, 2025",
+      "section": "11:2-16",
+      "verified_locator": "pp.468-493",
+      "evidence_level": "official_publisher_toc",
+      "detail_status": "HOLD_FULL_SECTION_AND_NOTES"
+    },
+    {
+      "source": "Gordon D. Fee, The First Epistle to the Corinthians, Revised Edition, NICNT, 2014",
+      "section": "veiling-women addendum",
+      "verified_locator": "pp.565-567",
+      "evidence_level": "current_edition_academic_review",
+      "detail_status": "HOLD_FULL_SECTION_AND_NOTES"
+    }
+  ],
+  "source_status_updates": [
+    {
+      "claim": "Fee Revised 2014 is primarily hair-only on 11:2-16",
+      "verdict": "REJECTED_AGENT_MISATTRIBUTION",
+      "replacement": "academic current-edition review reports Fee again opts for external covering"
+    },
+    {
+      "claim": "Ciampa/Rosner clearly establish active own-authority exousia as their authorial position",
+      "verdict": "REJECTED_OVERSTATEMENT",
+      "replacement": "Blomberg reports their supplied 'sign of authority' wording and objects to 'sign of' on grammatical grounds"
+    },
+    {
+      "claim": "Stuckenbruck 2001 is a useful angel-status-quaestionis source",
+      "verdict": "VERIFIED",
+      "replacement": "peer-reviewed SCJ 4.2 (2001), 205-234; cosmic-order framing; good/bad angel dichotomy de-emphasized"
+    }
+  ],
+  "garland_2025_firewall": {
+    "official_toc_verified": true,
+    "section_text_directly_read": false,
+    "allow_first_edition_proxy_as_second_edition_evidence": false,
+    "blocked_unverified_specifics": [
+      "exact palla/stola identification in the 2025 section",
+      "exact angel interpretation in the 2025 section",
+      "exact kephale formulation in the 2025 section",
+      "specific Roman legal-protection construction",
+      "continuity from Garland 2003 without direct check"
+    ]
+  },
+  "current_core": {
+    "material_covering": "B_HIGH_LEADING",
+    "hair_only": "C_SERIOUS_ALTERNATIVE",
+    "kephale_headship_authority": "B_LEADING",
+    "kephale_source_only": "C_VIABLE",
+    "wives_vs_all_women": "OPEN_B_C",
+    "exousia_woman_subject": "A",
+    "exousia_active_woman_bearer_pull": "B_HIGH",
+    "exousia_referent": "B_C",
+    "heavenly_holy_angels_referent": "B_HIGH_LEADING",
+    "angels_cosmic_witness_present_assembly": "B_LEADING",
+    "exact_angelic_function": "B_C",
+    "watchers": "C_SERIOUS_ALTERNATIVE",
+    "roman_capite_velato_background": "A",
+    "v4_exact_capite_velato": "B_C",
+    "physis_sexed_naturalized_propriety": "B_HIGH_LEADING",
+    "v16_translocal_church_appeal": "A",
+    "v16_exact_custom_referent": "B_C"
+  },
+  "p0_after_verification": [
+    "Thiselton NIGTC 2000 pp.800-847 + notes",
+    "Fee NICNT Revised 2014 approx pp.542-586 + notes; include addendum pp.565-567",
+    "Garland BECNT 2nd ed. 2025 pp.468-493 + notes",
+    "Ciampa/Rosner PNTC 2010 pp.503-540 + notes"
+  ],
+  "do_not_request_from_user_if_agent_can_access": true,
+  "product_write": false,
+  "ui_implementation": false,
+  "site_publication": false
+}
