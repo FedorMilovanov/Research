@@ -1,4 +1,4 @@
-# 1 Коринфянам 11:4–5 — ritual/divination/proph​​etic head-state dossier
+# 1 Коринфянам 11:4–5 — ritual/divination/prophetic head-state dossier
 
 **Статус:** `EVERGREEN-DOSSIER / COMPARATIVE-RITUAL-BACKGROUND / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последняя проверка:** 2026-08-10
@@ -127,7 +127,7 @@ Tryphosa и Eirene дают **два разных женских мантиче�
 Ἀρτέμιδος Πυθείης ὑδροφόρος ... Νάννιον Ἰάσονος ...
 ```
 
-Надпись также говорит, что она была почтена городом `εἰκόνι γραπτῇ`.
+Надпись также говорит, что она была почтена городом `εἰκόνι γραπτῇ` — painted image.
 
 Primary route:
 - PHI: `https://inscriptions.packhum.org/text/247440`
@@ -135,11 +135,54 @@ Primary route:
 ```text
 NANNION_HYDROPHOROS = A_EPIGRAPHIC
 NANNION_DATE_7_6_BCE = A_EPIGRAPHIC_EDITION
+NANNION_PAINTED_IMAGE_HONOUR = A_EPIGRAPHIC
 NANNION_PROPHETESS = FALSE
 NANNION_VALUE = SAME_CULTIC_ECOLOGY_NEAR_PAULINE_HORIZON
 ```
 
 Нельзя смешивать `hydrophoros` и `prophetis`; ценность Nannion — институциональная экология женской культовой службы.
+
+---
+
+## 2.4 Дидимейская visual-honour culture существует, но портрет prophetis пока не найден
+
+**Didyma 511 / I.Didyma 394**, 54/53 г. до н. э., показывает, что prophet, hydrophoros, `hypochrēstēs`, храмовые служители и другие участники оракульного комплекса коллективно почтили Mousaios **painted portrait overlaid with gold**.
+
+Direct-search control:
+- PHI Greek Inscriptions, `Didyma 511` (searchable primary text)
+- translation/control: `https://www.attalus.org/docs/other/inscr_2.html`
+
+Это существенно для визуальной методологии:
+
+```text
+DIDYMA_CULT_PERSONNEL_PARTICIPATE_IN_PUBLIC_PORTRAIT_HONOURS = A/B_HIGH
+NEAR_PAULINE_VISUAL_HONOUR_CULTURE = ATTESTED
+SURVIVING_IDENTIFIED_PROPHETIS_PORTRAIT = NOT_FOUND
+```
+
+То есть отсутствие найденного портрета Tryphosa/Eirene нельзя превращать в утверждение, будто культовый персонал вообще не визуализировался.
+
+### Архаические статуи Священной дороги — только object-level control
+
+British Museum хранит реальные женские статуи из серии Didyma Sculptures со Священной дороги. Например:
+
+- BM `1859,1226.7`, около 520–510 BC: волосы описаны как короткие **или собранные под cap**;
+- BM `1859,1226.9`, около 520–510 BC: на плечах сохраняются lappets of an Ionic bonnet.
+
+Official object routes:
+- `https://www.britishmuseum.org/collection/object/G_1859-1226-7`
+- `https://www.britishmuseum.org/collection/object/G_1859-1226-9`
+
+Но:
+
+```text
+DIDYMA_ARCHAIC_FEMALE_HEADWEAR_OBJECTS = DIRECT_MUSEUM_OBJECTS
+DATE = ~520_510_BCE
+IDENTIFIED_AS_PROPHETESS = FALSE/NOT_ATTESTED
+USE_FOR_TRYPHOSA_HEAD_CODE = PROHIBITED
+```
+
+Они показывают, что визуальные head/hair forms в дидимейской среде материально засвидетельствованы, но находятся примерно за пять веков до Tryphosa и не принадлежат доказанной prophetis.
 
 ---
 
@@ -155,10 +198,7 @@ NANNION_VALUE = SAME_CULTIC_ECOLOGY_NEAR_PAULINE_HORIZON
 
 нормально относится к строительным работам: она покрыла кровлей / оштукатурила стою, связанную с prophet’s house.
 
-Независимый архитектурно-эпиграфический контроль OpenEdition классифицирует **Didyma 302–303** как `χρίω` — штукатурка колоннады вокруг дома пророка.
-
-Control:
-- `https://books.openedition.org/efa/11592` (Didyma 302–303 architectural benefaction context)
+Независимый архитектурно-эпиграфический контроль OpenEdition классифицирует **Didyma 302–303** как строительное благодеяние вокруг дома пророка.
 
 Проектная формула:
 
@@ -195,7 +235,7 @@ Authoritative file:
 
 ## 4.2 Женская причёска/повязка регулируется отдельно
 
-Строки 20–23 в процессуальном dress code:
+Строки 20–23 в processional dress code:
 
 ```text
 μηδὲ ἀνάδεμα
@@ -242,9 +282,9 @@ LYCOSURA_MALE_ONLY_AS_OVERT_TEXT = REJECTED_OVERCLAIM
 
 ---
 
-# 6. Литературный prophetic-state corpus
+# 6. Литературный prophetic-state / role-costume corpus
 
-Эта группа источников показывает **культурно читаемую семиотику вдохновения**, но не заменяет эпиграфику.
+Эта группа источников показывает **культурно читаемую семиотику вдохновения или специального costume роли**, но не заменяет эпиграфику.
 
 ## 6.1 Virgil, Aeneid 6
 
@@ -254,7 +294,10 @@ LYCOSURA_MALE_ONLY_AS_OVERT_TEXT = REJECTED_OVERCLAIM
 non comptae mansere comae
 ```
 
-То есть ранее упорядоченные волосы перестают сохранять прежнюю упорядоченность; одновременно меняются лицо, голос, дыхание и телесное состояние.
+То есть ранее упорядоченные волосы перестают сохранять прежнюю упорядоченность; одновременно меняются лицо, цвет, дыхание, голос и телесное состояние.
+
+Primary text:
+- Perseus, *Aeneid* 6, lines 45–50.
 
 ```text
 VIRGIL_PROPHETIC_HAIR_TRANSFORMATION = A_PRIMARY_LITERARY
@@ -272,13 +315,14 @@ Lucan (39–65 CE) особенно ценен хронологически ка
 - white head-dress;
 - Phocaean laurel.
 
-При истинном divine possession состояние головы/волос меняется, и внешние знаки перестают оставаться в прежнем состоянии.
+При **ложном** изображении вдохновения Lucan прямо замечает отсутствие характерных признаков, включая hair-on-end. При **истинном** possession, около lines 169–173, она трясёт головой и сбрасывает с поднявшихся/вставших волос **fillets of the god and garlands of Phoebus**.
 
-Accessible text control:
+Accessible primary-text control:
 - `https://pages.pomona.edu/~cmc24747/sources/lucan/BC_5.htm`
 
 ```text
 LUCAN_HEAD_HAIR_FILLET_LAUREL = A_PRIMARY_LITERARY
+LUCAN_TRUE_INSPIRATION_CHANGES_HEAD_HAIR_SIGNS = A_PRIMARY_LITERARY
 LUCAN_NEAR_PAULINE_CHRONOLOGY = A_BIOGRAPHICAL
 LUCAN_AS_REAL_DELPHIC_PROCEDURE_REPORT = REJECTED_OVERCLAIM
 ```
@@ -315,15 +359,33 @@ Bilingual/direct text route:
 Crucial negative observation:
 
 ```text
-IAMBLICHUS_DIDYMA_RITUAL_BODY/GARMENT_CODE = YES
-IAMBLICHUS_DIRECT_HEADBAND/VEIL/HAIR_CODE_IN_3_11 = NOT_FOUND
+IAMBLICHUS_DIDYMA_RITUAL_BODY_GARMENT_CODE = YES
+IAMBLICHUS_DIRECT_HEADBAND_VEIL_HAIR_CODE_IN_3_11 = NOT_FOUND
 ```
 
 Он поздний и не является фоном Павла; ценность — показать, что даже подробное описание ritual preparation не даёт нам желаемого head-code.
 
+## 6.5 Diodorus Siculus 16.26.6 — пророческая роль может иметь собственный costume
+
+Diodorus рассказывает традиционную этиологическую историю: первоначально в Дельфах пророчествовали девы; после злоупотребления было постановлено, чтобы оракул возвещала женщина около пятидесяти лет, **но одетая в costume девы**, как напоминание о прежней prophetess.
+
+Primary text:
+- Perseus, Diodorus, *Library* 16.26.6.
+
+Надёжный вывод ограничен устройством самой античной мысли о роли:
+
+```text
+PROPHETIC_OFFICE_CAN_HAVE_ROLE_SPECIFIC_COSTUME = A_PRIMARY_LITERARY_TRADITION
+COSTUME_CAN_DIFFER_FROM_WEARERS_AGE_STATUS_CODE = A_PRIMARY_LITERARY_TRADITION
+DIODORUS_STORY_AS_EXACT_HISTORICAL_ORIGIN = NOT_REQUIRED/NOT_PROVED
+DIODORUS_COSTUME_AS_1COR11_BACKGROUND = NOT_CLAIMED
+```
+
+Это сильный comparative control против предположения, что одежду религиозной женщины всегда надо реконструировать исключительно из её обычного возраста/семейного/социального статуса.
+
 ---
 
-# 7. Modern methodological bridge
+# 7. Modern methodological and Jewish comparative bridge
 
 ## 7.1 Matthew T. Sharp
 
@@ -349,11 +411,34 @@ CORRINGTON_DIRECT_BODY_LEVEL_CLAIMS = LOCATOR/FULLTEXT_HOLD
 
 Не цитировать её точную реконструкцию по вторичным пересказам.
 
+## 7.3 Jewish line: женщины как получательницы divine information
+
+Hanna Tervanotko, “Women and Divine Dreams in Jewish Texts of the Greco-Roman Era,” в *Divination and Revelation in Later Antiquity* (Cambridge University Press, 2023), pp.120–135, исследует женские divine dreams в:
+
+- *Jubilees*;
+- *Liber antiquitatum biblicarum*;
+- Josephus, *Jewish War*;
+- *Jewish Antiquities*;
+- *Against Apion*.
+
+Официальный Cambridge summary формулирует минимальный вывод: примеров сохранилось немного, но они являются реальным свидетельством женщин как **recipients of divine information** в древнеиудейских текстах.
+
+Publisher route:
+- Cambridge Core, DOI `10.1017/9781009328777.007`.
+
+```text
+JEWISH_GRECO_ROMAN_FEMALE_DIVINE_INFORMATION_RECIPIENTS = B1_DIRECT_PUBLISHER_SUMMARY
+JEWISH_FEMALE_DIVINE_COMMUNICATION_BACKGROUND = VERIFIED_COMPARATIVE
+JEWISH_FEMALE_HEAD_HAIR_CODE_FROM_THIS_SOURCE = NOT_ATTESTED
+```
+
+Этот материал полезен для широты female divine communication, но не должен служить заменой прямого head-code.
+
 ---
 
 # 8. Bounded negative search — результат тоже доказательство дисциплины
 
-На 2026-08-10 были отдельно проверены комбинации по PHI/CGRN и современным публикациям:
+На 2026-08-10 были отдельно проверены комбинации по PHI/CGRN, музейным каталогам и современным публикациям:
 
 ```text
 προφῆτις / προφῆτιδος
@@ -367,7 +452,7 @@ CORRINGTON_DIRECT_BODY_LEVEL_CLAIMS = LOCATOR/FULLTEXT_HOLD
 κεκαλυμ-
 ```
 
-В пределах этого поиска **не найден** near-Pauline direct object, где одна и та же надпись надёжно связывает:
+В пределах этого поиска **не найден** near-Pauline direct object, где один и тот же надёжно идентифицированный материал связывает:
 
 ```text
 NAMED/IDENTIFIED FEMALE PROPHETIC OFFICE
@@ -375,14 +460,17 @@ NAMED/IDENTIFIED FEMALE PROPHETIC OFFICE
 SPECIFIC HEADBAND / VEIL / HAIR ARRANGEMENT
 ```
 
+Также не найден surviving identified portrait Tryphosa/Eirene, который позволял бы безопасно извлечь их head/hair state.
+
 Это только bounded negative result:
 
 ```text
 DIRECT_PROPHETESS_HEAD_CODE_FOUND = false
+IDENTIFIED_TRYPHOSA_EIRENE_PORTRAIT_FOUND = false
 GLOBAL_NONEXISTENCE = NOT_CLAIMED
 ```
 
-Не заполнять этот пробел Lucan/Virgil/Andania автоматически.
+Не заполнять этот пробел Lucan/Virgil/Andania/архаическими статуями Дидимы автоматически.
 
 ---
 
@@ -401,15 +489,16 @@ EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
 ```text
 FEMALE_DIVINE_MEDIATION_IN_ORACULAR_INSTITUTIONS = A/B_HIGH
 RITUAL_HEADWEAR_AND_HAIR_CAN_BE_SEPARATELY_REGULATED = A_PRIMARY
-RITUAL_ROLE_CAN_CARRY_ITS_OWN_VISUAL_CODE = B_HIGH_COMPARATIVE
-PROPHETIC_STATE_CAN_BE_LITERARILY_MARKED_BY_HAIR/HEAD_TRANSFORMATION = A_LITERARY
+RITUAL_ROLE_CAN_CARRY_ITS_OWN_VISUAL_OR_COSTUME_CODE = B_HIGH_COMPARATIVE
+PROPHETIC_STATE_CAN_BE_LITERARILY_MARKED_BY_HAIR_HEAD_TRANSFORMATION = A_LITERARY
+JEWISH_FEMALE_RECIPIENTS_OF_DIVINE_INFORMATION = B1_COMPARATIVE
 DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 RITUAL_PERFORMANCE_STATE_RELEVANCE_TO_1COR11_4_5 = B_COMPARATIVE_RESEARCH_AXIS
 ```
 
 Safe synthesis:
 
-> Античные данные подтверждают, что женская divine-mediation role была институционально реальной и что ритуальные нормы могли отдельно регулировать головной убор и состояние волос. Литературная традиция также могла изображать изменение волос/головных знаков как часть пророческого вдохновения. Однако прямого near-Pauline свидетельства `prophetis/promantis + конкретный head/hair code`, которое объясняло бы коринфскую практику, пока не найдено.
+> Античные данные подтверждают, что женская divine-mediation role была институционально реальной и что ритуальные нормы могли отдельно регулировать головной убор и состояние волос. Античный автор мог также мыслить пророческую должность как роль со специальным costume, а литературная традиция могла изображать изменение волос/головных знаков как часть пророческого вдохновения. Однако прямого near-Pauline свидетельства `prophetis/promantis + конкретный head/hair code`, которое объясняло бы коринфскую практику, пока не найдено.
 
 ---
 
@@ -423,12 +512,13 @@ P0:
 3. `Didyma 273`, `Didyma 235B` и fragmentary `προφητίσκη` — direct edition / restoration audit;
 4. финальный издательский объект Nawotka 2026 для Agatho self-correction;
 5. Delphi: датированные реальные изображения/надписи Pythian personnel, отдельно от мифологических vase scenes;
-6. Jewish side: Philo / Josephus / Second Temple female divine communication, с тем же разделением `role != head code`.
+6. Jewish primary layer: не только modern summary, а конкретные female divine-information episodes у Josephus / Jubilees / LAB, с тем же разделением `role != head code`.
 
 P1:
 7. Claros — использовать прежде всего как comparative personnel system; не предполагать female prophetic personnel, если императорская функция там мужская;
 8. продолжить PHI/CGRN bounded search по head/hair lexemes;
-9. Corrington 1991 direct full text — locator closure.
+9. Corrington 1991 direct full text — locator closure;
+10. искать lost/surviving honorific image bases, где mantic title и изображение принадлежат одному идентифицированному лицу.
 
 ---
 
@@ -442,6 +532,7 @@ AGENT_DISCOVERY != AUTHORITY
 DIRECT_OBJECT > SECONDARY_SUMMARY
 ROLE != HEAD_CODE
 LITERARY_TROPE != ETHNOGRAPHIC_FACT
+VISUAL_CULTURE_EXISTS != IDENTIFIED_PROPHETESS_PORTRAIT
 NEGATIVE_BOUNDED_SEARCH != GLOBAL_NONEXISTENCE
 ```
 
