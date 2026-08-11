@@ -299,11 +299,13 @@ WON_2010_ARTICLE_BODY != WON_2010_THESIS_BODY_AUTOMATICALLY
 DO_NOT_PROMOTE_ISSUE_INFERENCE_TO_PRIMARY_ARTICLE_CARD
 ```
 
-## 15. Matos 2004 — Brazilian Portuguese official OA dissertation object
+## 15. Matos — 2004 dissertation custody + 2007 direct passage body
+
+### 15.1 2004 MA dissertation object
 
 Official PUC Goiás TEDE repeatedly records Keila Carvalho de Matos, *Protagonismo e resistência de mulheres no discurso de Paulo em 1 Coríntios 11 e 14*, MA dissertation, advisor Ivoni Richter Reimer, with defense date **2004-12-10**. Repository facets mark the object `Acesso Aberto` and `application/pdf`.
 
-A downstream date of `2007` conflicts with the university repository and is rejected for chronology. The repository still has not exposed the PDF bytes to the current runtime, so institutional object verification is kept distinct from body reading.
+A downstream date of `2007` conflicts with the university repository and is rejected for chronology. The dissertation PDF bytes remain unrendered in the current runtime.
 
 ```text
 MATOS_2004_OFFICIAL_TEDE_OBJECT = CLOSED_DIRECT_INSTITUTIONAL
@@ -312,6 +314,48 @@ MATOS_2004_OA_PDF_OBJECT = VERIFIED_BY_REPOSITORY_METADATA
 MATOS_2004_FULL_PDF_BODY = TRANSPORT_REOPEN
 MATOS_2004_DATE_2007_DOWNSTREAM = REJECTED
 ```
+
+### 15.2 2007 direct author passage article — body CLOSED
+
+A materially stronger route was found in PUC Goiás's own peer-reviewed OA journal:
+
+Keila Matos, “Exegese de 1Cor11, 2-16 em Relação a Usos e Costumes,” *Fragmentos de Cultura*, printed pp.979–992, DOI `10.18224/frag.v17i6.503`.
+
+The official journal PDF is directly open and readable as a 14-page publisher object. It closes Matos's published passage position independently of the still-unread 2004 thesis.
+
+Body-level controls include:
+
+```text
+MATOS_2007_DIRECT_OFFICIAL_PDF_BODY = CLOSED
+MATOS_KEPHALE = SOURCE_OR_ORIGIN_IN_AUTHOR_MODEL
+MATOS_PHYSIS = CULTURAL_NORM_OR_TRADITION_IN_AUTHOR_MODEL
+MATOS_WOMENS_PRAYER_PROPHECY = ACTIVE_MINISTRY_ACCEPTED
+MATOS_PAUL_DOES_NOT_CHALLENGE_WOMENS_CULTIC_PROTAGONISM = AUTHOR_CONCLUSION
+MATOS_TEXTILE_VS_HAIR = AUTHOR_LEAVES_READING_OPEN
+MATOS_V15_HAIR_IN_PLACE_OF_VEIL = ACKNOWLEDGED_READING
+MATOS_1COR11_USOS_COSTUMES_LOCALIZATION = DIRECT_AUTHOR_BODY
+MATOS_PASTORAL_NONUNIVERSALIZATION = DIRECT_AUTHOR_BODY
+```
+
+Matos treats loose hair as socially polysemous in the sources she uses (mourning, adultery/punishment, mystery-cult associations) rather than as one automatic code. Her proposed Corinthian freedom/house-church trigger remains historical reconstruction, not observed event evidence.
+
+```text
+MATOS_EXACT_CORINTH_FREEDOM_TRIGGER = RECONSTRUCTION_LAYER
+MATOS_HOUSE_CHURCH_UNCOVERED_TRIGGER = RECONSTRUCTION_LAYER
+```
+
+Metadata firewall: the official issue/DOI navigation labels the item under `v.17 n.6`, while the publisher PDF masthead itself prints `v.17, n.11/12, nov./dez. 2007` on the article pages. Preserve both until the journal resolves the discrepancy; do not silently normalize one from the other.
+
+```text
+MATOS_2007_OFFICIAL_ISSUE_ROUTE = V17_N6
+MATOS_2007_PDF_MASTHEAD = V17_N11_12 / NOV_DEZ_2007
+MATOS_2007_ISSUE_NUMBER = METADATA_CONFLICT / DO_NOT_GUESS
+```
+
+Substantive owner updated:
+- `00ZZZZZZZZZZZZZZZZZ_HAIR_PHYSIS_PRIMARY_SOCIAL_CORPUS_AUDIT_2026-08-10.md`
+
+The unread 2004 thesis remains useful for edition/provenance comparison, but it is no longer a P1 blocker for Matos's basic 1 Cor 11 model.
 
 ## 16. 2026 German radar — Bieberstein context node
 
@@ -333,14 +377,14 @@ GRADE_CHANGE = NO
 P0 REASONER_2025_FULL_BODY_AND_NOTES
 P0 TERMESSOS_TAMIII1_870_DIRECT_PRIMARY_BODY
 P0 KOWALSKI_2020_FULL_PDF_BODY
-P1 MATOS_2004_FULL_PDF_BODY
 P1 WON_2010_PRIMARY_ARTICLE_CARD_AND_BODY
 P1 WON_2010_MA_THESIS_KERIS_BODY
 P1 PARK_1990_JSTAGE_PDF_BODY
 P1 VIDOVIC_2024_FULL_CHAPTER_BODY
+P2 MATOS_2004_FULL_PDF_BODY_EDITION_COMPARISON
 ```
 
-Direct transport attempts in this runtime did not justify a body promotion for any of those still-open targets.
+Direct transport attempts in this runtime did not justify a body promotion for the remaining open targets. Matos 2007 is a genuine direct-body closure and therefore reduces the urgency of the still-unread 2004 thesis without conflating the two objects.
 
 ## 18. Search-state result
 
@@ -358,7 +402,8 @@ WON_2010_ISSUE_LINEAGE_NARROWED = YES
 WON_2010_PRIMARY_ARTICLE_CARD_CLOSED = NO
 WON_2010_MA_THESIS_ROUTE_FOUND = YES
 WON_2010_MA_THESIS_BODY_CLOSED = NO
-MATOS_2004_BODY_CLOSED = NO
+MATOS_2007_DIRECT_PASSAGE_BODY_CLOSED = YES
+MATOS_2004_DISSERTATION_BODY_CLOSED = NO
 VIDOVIC_2024_BODY_CLOSED = NO
 REASONER_2025_BODY_CLOSED = NO
 TERMESSOS_TAMIII1_870_PRIMARY_GREEK_CLOSED = NO
