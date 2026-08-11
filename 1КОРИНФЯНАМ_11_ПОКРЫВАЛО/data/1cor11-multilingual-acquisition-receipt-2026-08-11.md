@@ -237,7 +237,92 @@ GRADE_CHANGE_FROM_ABSTRACT_ALONE = NO
 
 A downstream Chinese full-text mirror is discovery-only until compared against the official journal PDF.
 
-## 12. Search-state result
+## 12. Park 1990 — Japanese J-STAGE exact article route
+
+Official J-STAGE directly verifies Heon-Wook Park / 朴憲郁, “礼拝共同体における κεφαλή の問題―Iコリント11:3–12について,” *New Testament Studies* / 『新約学研究』 18 (1990): 29–42, DOI `10.24758/jsnts.18.0_29`, with an open-access PDF route listed as 678 KB.
+
+The Japanese title controls the passage identity as **1 Corinthians 11:3–12**. J-STAGE's English issue-level auto-title currently displays `1 Corinthians 1:3-12`; this conflicts with the Japanese title and DOI/article page and is treated as a metadata typo, not as a passage conflict.
+
+```text
+PARK_1990_JAPANESE_ARTICLE_IDENTITY = CLOSED_DIRECT_OFFICIAL
+PARK_1990_JSTAGE = OPEN_ACCESS
+PARK_1990_PDF_ROUTE = 678_KB_OFFICIAL
+PARK_1990_BODY = TRANSPORT_REOPEN_CURRENT_RUNTIME
+PARK_1990_ENGLISH_TOC_1COR1_3_12 = METADATA_TYPO
+PARK_1990_KEPHALE_POSITION = NOT_INFERRED_FROM_TITLE
+```
+
+## 13. Vidović 2024 — Croatian exact chapter identity
+
+Croatian national bibliography/CIP and the national biblical bibliography converge on Marinko Vidović, “Muškarac i žena u bogoštovnom kontekstu (1 Kor 11, 2-16),” in *Ali riječ Boga našeg ostaje dovijeka: zbornik u čast prof. dr. sc. Marijanu Vugdeliji, OFM*, ed. Domagoj Runje (Split, 2024), pp.203–242.
+
+The national CIP fixes the volume at 376 pp. and ISBN `9789538460029`. No lawful full-chapter body was exposed by the present search routes.
+
+```text
+VIDOVIC_2024_CROATIAN_CHAPTER_IDENTITY = CLOSED_STRONG_NATIONAL_BIBLIOGRAPHIC
+VIDOVIC_2024_RANGE = 203_242
+VIDOVIC_2024_VOLUME_ISBN = 9789538460029
+VIDOVIC_2024_FULL_BODY = ACQUISITION_OPEN
+```
+
+## 14. Won Joongum 2010 — Korean self-citation control, publication form still open
+
+The official KCI/RISS record for the 2020 Kim Seongie Olivia + Won Joongum article gives a later self-citation by Won to her own 2010 exact passage study:
+
+`고린도전서 11:2-16에 대한 주석적 연구-아카타칼룹토스(akatakaluptos)를 중심으로`, `17:67–89`, 2010.
+
+Because Won is herself co-author of the 2020 article this is stronger provenance than an unrelated secondary bibliography. However, the bibliographic line does not expose the primary journal/serial title, and exact-title searching has not recovered a primary 2010 publication record or body.
+
+```text
+WON_2010_TITLE_PAGES_YEAR = STRONG_LATER_SELF_CITATION_CONTROL
+WON_2010_PUBLICATION_FORM = STILL_REOPEN
+WON_2010_FULL_BODY = REOPEN
+DO_NOT_INVENT_JOURNAL_TITLE_FROM_VOLUME_17
+```
+
+## 15. Matos 2004 — Brazilian Portuguese official OA dissertation object
+
+Official PUC Goiás TEDE repeatedly records Keila Carvalho de Matos, *Protagonismo e resistência de mulheres no discurso de Paulo em 1 Coríntios 11 e 14*, MA dissertation, advisor Ivoni Richter Reimer, with defense date **2004-12-10**. Repository facets mark the object `Acesso Aberto` and `application/pdf`.
+
+A downstream date of `2007` conflicts with the university repository and is rejected for chronology. The repository still has not exposed the PDF bytes to the current runtime, so institutional object verification is kept distinct from body reading.
+
+```text
+MATOS_2004_OFFICIAL_TEDE_OBJECT = CLOSED_DIRECT_INSTITUTIONAL
+MATOS_2004_DEFENSE_DATE = 2004_12_10
+MATOS_2004_OA_PDF_OBJECT = VERIFIED_BY_REPOSITORY_METADATA
+MATOS_2004_FULL_PDF_BODY = TRANSPORT_REOPEN
+MATOS_2004_DATE_2007_DOWNSTREAM = REJECTED
+```
+
+## 16. 2026 German radar — Bieberstein context node
+
+Katholische Universität Eichstätt-Ingolstadt's institutional repository records Sabine Bieberstein, “Anstößige Frisuren, provozierende Kleider und zu viel Schmuck: Neutestamentliche Blicke auf Haartracht, Schmuck und Kleider von Frauen,” *Welt und Umwelt der Bibel* 31 (Jan. 2026), no.119, pp.18–23.
+
+The institutional abstract explicitly says the article sketches 1 Cor 11:2–16 together with 1 Tim 2:9–15 and 1 Pet 3:3 in relation to clothing, hairstyles, gender roles, and power. The repository marks full text as not freely accessible and the journal as non-peer-reviewed.
+
+```text
+BIEBERSTEIN_2026_IDENTITY_ABSTRACT = CLOSED_DIRECT_INSTITUTIONAL
+BIEBERSTEIN_2026_FULL_BODY = NOT_OPEN
+BIEBERSTEIN_2026_PEER_REVIEW = NO
+BIEBERSTEIN_2026_ROLE = CONTEXT_RADAR_NOT_CORE_AUTHORITY
+GRADE_CHANGE = NO
+```
+
+## 17. Current reopen queue after this sweep
+
+```text
+P0 REASONER_2025_FULL_BODY_AND_NOTES
+P0 TERMESSOS_TAMIII1_870_DIRECT_PRIMARY_BODY
+P0 KOWALSKI_2020_FULL_PDF_BODY
+P1 MATOS_2004_FULL_PDF_BODY
+P1 WON_2010_PRIMARY_PUBLICATION_IDENTITY_AND_BODY
+P1 PARK_1990_JSTAGE_PDF_BODY
+P1 VIDOVIC_2024_FULL_CHAPTER_BODY
+```
+
+Direct transport attempts in this runtime did not justify a body promotion for any of those still-open targets.
+
+## 18. Search-state result
 
 ```text
 ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
@@ -248,6 +333,12 @@ NEW_AUTHORIZED_TRANSLATION_ROUTES_FOUND = YES
 NEW_LICENSED_EBOOK_ROUTES_FOUND = YES
 NEW_AUTHOR_FULL_PDF_ROUTES_FOUND = YES
 NEW_INSTITUTIONAL_OR_OFFICIAL_OA_PDF_ROUTES_FOUND = YES
+PARK_METADATA_TYPO_QUARANTINED = YES
+WON_2010_PRIMARY_PUBLICATION_FORM_CLOSED = NO
+MATOS_2004_BODY_CLOSED = NO
+VIDOVIC_2024_BODY_CLOSED = NO
+REASONER_2025_BODY_CLOSED = NO
+TERMESSOS_TAMIII1_870_PRIMARY_GREEK_CLOSED = NO
 CORE_GRADE_REVERSALS = 0
 ```
 
