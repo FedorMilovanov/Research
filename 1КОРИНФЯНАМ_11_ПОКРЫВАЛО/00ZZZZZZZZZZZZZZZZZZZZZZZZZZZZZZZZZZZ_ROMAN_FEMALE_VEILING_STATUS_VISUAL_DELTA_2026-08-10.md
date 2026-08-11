@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — Roman female veiling / status / visual-method owner
 
 **Дата:** 2026-08-11  
-**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / DIRECT-CALLON-BODY / DIRECT-MASSEY-BODY / DIRECT-BAUM-BODY / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / DIRECT-HUGHES-BODY / DIRECT-CALLON-BODY / DIRECT-MASSEY-BODY / DIRECT-BAUM-BODY / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority rule
 
@@ -102,38 +102,81 @@ This blocks the mechanical claim that every respectable Roman woman always wore 
 
 ---
 
-# 4. Lisa A. Hughes 2007 — early-imperial freedwomen corpus
+# 4. Lisa A. Hughes 2007 — direct author-profile full published body / early-imperial freedwomen corpus
 
 Official journal route:
 - https://www.tandfonline.com/doi/abs/10.2752/175183407X219750
 
+Author-profile published-body route:
+- https://www.academia.edu/90229682/Unveiling_the_veil_cultic_status_and_ethnic_representations_of_early_imperial_freedwomen
+
 > Lisa A. Hughes, “Unveiling the Veil: Cultic, Status, and Ethnic Representations of Early Imperial Freedwomen,” *Material Religion* 3.2 (2007): 218–241. DOI `10.2752/175183407X219750`.
 
-Taylor & Francis directly exposes the article identity, pages and abstract. The abstract itself rejects a simplistic one-standard-veil-rule methodology and emphasizes cultic, social and ethnic factors.
+Taylor & Francis directly controls article identity, pages and abstract. A materially stronger route now closes the body: the University of Calgary author profile for Lisa Hughes exposes the exact paper and a download action, while the linked Academia paper page renders the complete published article through its conclusion, notes and bibliography. This is classified as an **author-profile published body**, not as Taylor & Francis publisher-byte custody.
 
 ```text
-HUGHES_2007 = DIRECT_JOURNAL_B1
-HUGHES_CORPUS = EARLY_IMPERIAL_ITALIAN_FREEDWOMEN_FUNERARY_REPRESENTATION
-HUGHES_ONE_STANDARD_VEIL_RULE = REJECTED_BY_AUTHOR_METHOD
+HUGHES_2007_OFFICIAL_JOURNAL_IDENTITY = CLOSED_DIRECT_TAYLOR_FRANCIS
+HUGHES_2007_AUTHOR_PROFILE = CLOSED_DIRECT_AUTHOR_IDENTITY
+HUGHES_2007_AUTHOR_PROFILE_FULL_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD
+HUGHES_2007_PUBLISHER_PDF_BYTES = NOT_REQUIRED_FOR_BODY_CLAIM
+AUTHOR_PROFILE_PUBLISHED_BODY != PUBLISHER_BYTE_CUSTODY
 ```
 
-Grace Stafford 2024 supplies an exact secondary locator to Hughes table 1, p.227:
+Hughes's corpus is specifically a selected **Italian window-relief funerary corpus** depicting freedwomen, dated from the first quarter of the first century BCE to the first quarter of the first century CE. She explicitly warns that preservation and the cost of monuments constrain the sample and that the 113 reliefs represent only about one third of the total window-relief sample for the period.
+
+Direct Table 1 on printed p.227:
 
 ```text
-SAMPLE = 113 window-type Italian funerary monuments
+HUGHES_TABLE1_DIRECT_BODY = CLOSED
+SAMPLE = 113_ITALIAN_RELIEFS_DEPICTING_FREEDWOMEN
+DATE_RANGE = FIRST_QUARTER_1C_BCE_TO_FIRST_QUARTER_1C_CE
 VEILED = 67 / 59_PERCENT
 UNVEILED = 46 / 41_PERCENT
+TOTAL = 113 / 100_PERCENT
+SAMPLE_APPROX_SHARE_OF_PERIOD_WINDOW_RELIEFS = ONE_THIRD
 ```
 
-The journal TOC exposes a PDF object for the article, but the current accessible route does not provide the target p.227 table as directly readable body in this runtime.
+Direct Table 2 further separates inscription custody:
 
 ```text
-HUGHES_TABLE1_P227_N113 = STRONG_EXACT_SECONDARY_LOCATOR
-HUGHES_2007_PDF_OBJECT = CLOSED_DIRECT_JOURNAL
-HUGHES_TABLE1_P227_DIRECT_AUTOPSY = TERMINAL_EXTERNAL_OR_RUNTIME_PDF_ACCESS_HOLD_CURRENT_ROUTE
+VEILED_WITH_PRESERVED_INSCRIPTIONS = 26
+VEILED_WITHOUT_PRESERVED_INSCRIPTIONS = 41
+UNVEILED_WITH_PRESERVED_INSCRIPTIONS = 30
+UNVEILED_WITHOUT_PRESERVED_INSCRIPTIONS = 16
 ```
 
-Valid: both covered and uncovered representations are substantial in this selected funerary corpus. Invalid: infer these percentages for all Roman women or the Corinthian church.
+This matters methodologically because Hughes refuses to infer freed status from iconography alone where the inscription is lost. She explicitly combines inscription and iconography to assess legal/social status and motivations for representation.
+
+```text
+HUGHES_STATUS_METHOD = EPIGRAPHY_PLUS_ICONOGRAPHY
+HUGHES_NO_INSCRIPTION = STATUS_CAUTION
+HUGHES_PORTRAIT_CORPUS != POPULATION_CENSUS
+HUGHES_SMALL_SELECTED_SAMPLE = AUTHOR_CAUTION
+```
+
+The body directly rejects a one-standard-veiling rule. Hughes argues that veiling can carry cultic, social and ethnic meanings, while an unveiled representation does not automatically diminish status or piety. In the thirty unveiled reliefs with inscriptions, twenty-six (87%) meet her criteria for husband-wife representations; she therefore directly adduces respectable married freedwomen/matronae depicted unveiled. Her conclusion rejects the idea that freedwomen or legally married matronae were simply required by status to veil in public Rome.
+
+```text
+HUGHES_ONE_STANDARD_VEIL_RULE = REJECTED_DIRECT_AUTHOR_BODY
+HUGHES_UNVEILED_WOMAN = NOT_AUTOMATICALLY_IMMORAL_OR_LOW_STATUS
+HUGHES_UNVEILED_INSCRIBED_RELIEFS = 30
+HUGHES_UNVEILED_HUSBAND_WIFE_CASES = 26 / 87_PERCENT
+HUGHES_RESPECTABLE_MATRONAE_CAN_BE_UNVEILED = DIRECT_AUTHOR_BODY
+HUGHES_FREED_STATUS_REQUIRES_VEILING = REJECTED_DIRECT_AUTHOR_BODY
+HUGHES_CULTIC_AFFILIATION_AS_PRIMARY_GENERAL_DRIVER = NOT_SUPPORTED_IN_CORPUS
+HUGHES_ETHNIC_FOREIGN_BACKGROUND = PLAUSIBLE_CONTEXTUAL_FACTOR_NOT_UNIVERSAL
+```
+
+This is strong early-imperial visual/social evidence against turning Roman respectability language into a universal empirical rule. It does **not** tell us how frequently ordinary women in Corinth were veiled in daily life and does not identify the exact practice or trigger in the Corinthian assembly.
+
+```text
+HUGHES_EARLY_IMPERIAL_CORPUS = HIGH_VALUE_CHRONOLOGICAL_COMPARATOR
+HUGHES_ITALIAN_FUNERARY_CORPUS != CORINTHIAN_CHURCH_CENSUS
+HUGHES_VISUAL_SELF_REPRESENTATION != DAILY_BEHAVIOR_PHOTOGRAPH
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+EXACT_CORINTH_FEMALE_TRIGGER = RECONSTRUCTION_LAYER
+CORE_GRADE_REVERSALS = 0
+```
 
 ---
 
@@ -187,7 +230,7 @@ PALLA_COULD_FUNCTION_AS_HEAD_COVERING = B_HIGH_BACKGROUND
 COVERED_HEAD_COULD_PARTICIPATE_IN_RESPECTABILITY_LANGUAGE = B_HIGH_BACKGROUND
 ```
 
-Blocked universals:
+Blocked universals, now controlled directly by Hughes as well as broader visual method:
 
 ```text
 EVERY_RESPECTABLE_ROMAN_MARRIED_WOMAN_ALWAYS_COVERED_HEAD = REJECT_UNIVERSAL
@@ -249,7 +292,7 @@ V8_9 = GENESIS_MARRIAGE_RELATION
 V10 = WOMAN_HAS_AUTHORITY_OVER_HER_OWN_HEAD / WITH_SOCIAL_IMPLICATION_FOR_HUSBAND
 V11_12 = SPOUSAL_INTERDEPENDENCE
 V13 = EXPECTED_MODESTY_JUDGMENT_FITS_WIVES
-V14_15 = HAIR_AUTONOMY/ORNAMENT_ARGUMENT_FITS_FREE(D)_SPOUSES
+V14_15 = HAIR_AUTONOMY/ORNAMENT_ARGUMENT_FITS_FREE_D_SPOUSES
 V16 = OTHER_CHURCHES_SHARE_THE_VEILING_PRACTICE_IN_AUTHOR_MODEL
 ```
 
@@ -431,20 +474,22 @@ GREEK_WIDE_ROUTINE_VEILING != EXACT_CORINTHIAN_CHRISTIAN_EVENT
 
 # 10. Final acquisition disposition
 
-The former local P1 queue is closed for known public routes except for optional direct visual/page custody:
+The former local P1 queue is closed for known public routes except for optional direct publisher-byte/page-image custody:
 
 ```text
 CALLON_2024 = CLOSED_DIRECT_CAMBRIDGE_OA_FULL_BODY
 MASSEY_2013 = CLOSED_DIRECT_TYNDALE_FULL_PDF_TEXT / PAGE_IMAGE_CACHE_HOLD
 BAUM_2014 = CLOSED_DIRECT_AUTHOR_UPLOADED_PUBLISHED_FULL_BODY / OFFICIAL_TYNDALE_IDENTITY_CLOSED
+HUGHES_2007 = CLOSED_DIRECT_AUTHOR_PROFILE_FULL_PUBLISHED_BODY / TABLE1_TABLE2_DIRECT
 FANTHAM_2008_PP158_171 = IDENTITY_AND_EXACT_LOCATOR_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 OLSON_2008_PP22_25_34_41 = BOOK_IDENTITY_AND_PAGE_SPECIFIC_METHOD_CONTROLS_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
-HUGHES_2007_TABLE1_P227 = ARTICLE_AND_PDF_OBJECT_CLOSED / EXACT_SECONDARY_TABLE_LOCATOR_CLOSED / DIRECT_TABLE_AUTOPSY_TERMINAL_ACCESS_HOLD
 ```
 
 ```text
+HUGHES_DIRECT_TABLE1_METHOD_CONTEXT_SUBSTANTIVE_QUEUE = CLOSED
+HUGHES_PUBLISHER_PDF_BYTE_CUSTODY = OPTIONAL_ONLY
 ROMAN_FEMALE_VISUAL_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
-NEW_AUTHORIZED_BOOK_CHAPTER_OR_DIRECT_TABLE_ROUTE = REOPEN_ONLY_TRIGGER
+NEW_AUTHORIZED_FANTHAM_OLSON_BODY = REOPEN_ONLY_TRIGGER
 ```
 
 ---
@@ -458,7 +503,11 @@ GREEK_FEMALE_VEILING_ROUTINE = STRONG_FOUNDATIONAL_SOURCE_CLAIM
 VEILING_ONE_FIXED_SOCIAL_MEANING = REJECT
 ICONOGRAPHY_AS_DAILY_PHOTOGRAPH = REJECT_METHOD
 ROMAN_FEMALE_STATUS_DRESS_COMPLEXITY = STRENGTHENED
-HUGHES_EARLY_IMPERIAL_VISUAL_CORPUS = CONTROLLED
+HUGHES_2007 = DIRECT_AUTHOR_PROFILE_FULL_PUBLISHED_BODY
+HUGHES_TABLE1 = N113 / VEILED67_59PCT / UNVEILED46_41PCT / CLOSED_DIRECT
+HUGHES_TABLE2 = VEILED_INSCRIBED26 / VEILED_NOINSCR41 / UNVEILED_INSCRIBED30 / UNVEILED_NOINSCR16
+HUGHES_UNVEILED_INSCRIBED_MARRIED_CASES = 26_OF_30 / 87PCT
+HUGHES_RESPECTABLE_MATRONAE_CAN_BE_UNVEILED = DIRECT_AUTHOR_BODY
 STAFFORD_LATE_ANTIQUE_VISUAL_METHOD = CONTROLLED
 OLSON_PRESCRIPTION_VS_VISUAL_METHOD = CONTROLLED
 FANTHAM_EXACT_CHAPTER_LOCATOR = CLOSED
