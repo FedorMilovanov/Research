@@ -265,19 +265,38 @@ VIDOVIC_2024_VOLUME_ISBN = 9789538460029
 VIDOVIC_2024_FULL_BODY = ACQUISITION_OPEN
 ```
 
-## 14. Won Joongum 2010 — Korean self-citation control, publication form still open
+## 14. Won Joongum 2010 — Korean issue lineage + author-thesis route
 
 The official KCI/RISS record for the 2020 Kim Seongie Olivia + Won Joongum article gives a later self-citation by Won to her own 2010 exact passage study:
 
 `고린도전서 11:2-16에 대한 주석적 연구-아카타칼룹토스(akatakaluptos)를 중심으로`, `17:67–89`, 2010.
 
-Because Won is herself co-author of the 2020 article this is stronger provenance than an unrelated secondary bibliography. However, the bibliographic line does not expose the primary journal/serial title, and exact-title searching has not recovered a primary 2010 publication record or body.
+Because Won is herself co-author of the 2020 article this is stronger provenance than an unrelated secondary bibliography.
+
+The serial lineage can now be narrowed substantially without inventing a primary article card. Sahmyook University's Theological Research Institute directly states that it published `신학리뷰` volumes 1–17. An independent Kyobo Scholar issue record directly identifies `신학리뷰 제17집` as a December 2010 issue of the Sahmyook University Theological Research Institute. Thus the self-citation's `17:67–89 / 2010` is a very strong fit to `신학리뷰 제17집`, but the target workflow still has not located the article's own primary database record.
+
+A separate author-body route is also now closed at institutional-library identity level. The National Assembly Library of Korea directly records Won Joongum's MA thesis:
+
+`바울 서신의 여성 관련 구절들에 대한 주석적 연구 : 성 차별적으로 보이는 내용들을 중심으로`
+
+as a Sahmyook University Graduate School of Theology master's thesis, February 2010, call number `TM 220 -10-10`, electronic resource, with a KERIS full-text route plus TOC/abstract routes.
+
+The broader thesis and the narrower `67–89` article may be genetically related, but they are **not treated as the same publication or identical body without direct comparison**.
 
 ```text
 WON_2010_TITLE_PAGES_YEAR = STRONG_LATER_SELF_CITATION_CONTROL
-WON_2010_PUBLICATION_FORM = STILL_REOPEN
-WON_2010_FULL_BODY = REOPEN
-DO_NOT_INVENT_JOURNAL_TITLE_FROM_VOLUME_17
+SAHMYOOK_THEOLOGICAL_REVIEW_VOLS_1_17 = CLOSED_DIRECT_INSTITUTIONAL_HISTORY
+SAHMYOOK_THEOLOGICAL_REVIEW_ISSUE_17 = CLOSED_ISSUE_LEVEL / 2010_12
+WON_2010_ARTICLE_ISSUE17_MATCH = VERY_STRONG_LINEAGE_INFERENCE / NOT_PRIMARY_ARTICLE_CARD
+WON_2010_PRIMARY_ARTICLE_RECORD = REOPEN
+WON_2010_ARTICLE_FULL_BODY = REOPEN
+WON_2010_MA_THESIS_IDENTITY = CLOSED_DIRECT_NATIONAL_LIBRARY
+WON_2010_MA_THESIS_DATE = 2010_02
+WON_2010_MA_THESIS_CALL_NUMBER = TM_220_10_10
+WON_2010_MA_THESIS_KERIS_ROUTE = VERIFIED_ELECTRONIC_ROUTE
+WON_2010_MA_THESIS_BODY = ACQUISITION_REOPEN
+WON_2010_ARTICLE_BODY != WON_2010_THESIS_BODY_AUTOMATICALLY
+DO_NOT_PROMOTE_ISSUE_INFERENCE_TO_PRIMARY_ARTICLE_CARD
 ```
 
 ## 15. Matos 2004 — Brazilian Portuguese official OA dissertation object
@@ -315,7 +334,8 @@ P0 REASONER_2025_FULL_BODY_AND_NOTES
 P0 TERMESSOS_TAMIII1_870_DIRECT_PRIMARY_BODY
 P0 KOWALSKI_2020_FULL_PDF_BODY
 P1 MATOS_2004_FULL_PDF_BODY
-P1 WON_2010_PRIMARY_PUBLICATION_IDENTITY_AND_BODY
+P1 WON_2010_PRIMARY_ARTICLE_CARD_AND_BODY
+P1 WON_2010_MA_THESIS_KERIS_BODY
 P1 PARK_1990_JSTAGE_PDF_BODY
 P1 VIDOVIC_2024_FULL_CHAPTER_BODY
 ```
@@ -334,7 +354,10 @@ NEW_LICENSED_EBOOK_ROUTES_FOUND = YES
 NEW_AUTHOR_FULL_PDF_ROUTES_FOUND = YES
 NEW_INSTITUTIONAL_OR_OFFICIAL_OA_PDF_ROUTES_FOUND = YES
 PARK_METADATA_TYPO_QUARANTINED = YES
-WON_2010_PRIMARY_PUBLICATION_FORM_CLOSED = NO
+WON_2010_ISSUE_LINEAGE_NARROWED = YES
+WON_2010_PRIMARY_ARTICLE_CARD_CLOSED = NO
+WON_2010_MA_THESIS_ROUTE_FOUND = YES
+WON_2010_MA_THESIS_BODY_CLOSED = NO
 MATOS_2004_BODY_CLOSED = NO
 VIDOVIC_2024_BODY_CLOSED = NO
 REASONER_2025_BODY_CLOSED = NO
