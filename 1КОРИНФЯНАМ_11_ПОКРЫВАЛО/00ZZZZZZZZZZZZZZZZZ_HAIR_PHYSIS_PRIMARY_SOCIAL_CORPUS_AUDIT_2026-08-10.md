@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:13–15 — hair / `φύσις` / unbound-hair primary social corpus
 
 **Дата:** 2026-08-11  
-**Статус:** `PRIMARY-SOCIAL-CORPUS / PHYSIS-HAIR / MULTILINGUAL-DIRECT-SCHOLARSHIP / UNBOUND-HAIR-POLYSEMY / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `PRIMARY-SOCIAL-CORPUS / PHYSIS-HAIR / MULTILINGUAL-DIRECT-SCHOLARSHIP / DIRECT-HAIR-LEXICAL-COUNTERCONTROL / UNBOUND-HAIR-POLYSEMY / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Scope and lexical firewall
 
@@ -394,6 +394,95 @@ CORE_GRADE_REVERSALS = 0
 
 Matos’s 2004 MA dissertation remains a separate edition/body object. The direct 2007 article materially closes her published passage position but does **not** authorize silently treating dissertation pagination or wording as read.
 
+## 10.4 Christie Goulart Chadwick 2022 — direct official whole-passage hair model
+
+Christie Goulart Chadwick, “Headdress or Hairstyle? A Study of 1 Corinthians 11 and the Use of the Veil in Worship” / “Véu ou penteado? Um estudo de 1 Coríntios 11 e o uso do véu na adoração,” *Kerygma* 17.1 (2022), e01592, DOI `10.19141/1809-2454.kerygma.v17.n1.pe01592`.
+
+The official UNASP/*Kerygma* 18-page PDF is directly readable. Selected page-image screenshot attempts failed at the runtime/cache layer, so text custody and image autopsy remain distinct.
+
+```text
+CHADWICK_2022_DIRECT_OFFICIAL_FULL_BODY = CLOSED
+CHADWICK_PAGE_IMAGE_AUTOPSY = RUNTIME_CACHE_MISS
+```
+
+Chadwick prefers a **hairstyle** model over an external textile veil as the controlling referent. Her reconstruction is sex-differentiated on both sides: long/elaborately presented male hair is treated as socially feminizing, while the female problem is long hair left unbound rather than properly arranged/wrapped. She treats female unbound hair as socially polysemous rather than one fixed code and places public image/modesty at the center of the practical concern.
+
+```text
+CHADWICK_MODEL = MALE_LONG_HAIR + FEMALE_UNBOUND_HAIR
+CHADWICK_TEXTILE_VEIL_AS_PASSAGE_REFERENT = REJECTED_IN_AUTHOR_MODEL
+CHADWICK_PERIBOLAION = HAIR_WRAPPED_AROUND_HEAD_IN_PLAITS_MODEL
+CHADWICK_UNBOUND_HAIR_ONE_FIXED_MEANING = NO
+CHADWICK_UNBOUND_HAIR = EROTIC + MOURNING + DANGER + FRENZY + PAGAN_RITUAL_POLYSEMY
+CHADWICK_PUBLIC_IMAGE_MODESTY = CENTRAL_AUTHOR_MODEL
+CHADWICK_EXACT_HOMOSEXUAL_TRIGGER = RECONSTRUCTION_LAYER
+```
+
+Her use of male effeminacy/homosexuality-coded presentation and specific Corinthian social trigger remains reconstruction-layer. The direct body strengthens the representativeness of the hair alternative without converting social plausibility into lexical necessity.
+
+```text
+HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE_UNCHANGED
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+```
+
+## 10.5 A. Philip Brown II 2013 — direct author-uploaded published lexical countercontrol
+
+A. Philip Brown II, “Chrysostom and Epiphanius: Long Hair Prohibited as Covering in 1 Corinthians 11:4, 7,” *Bulletin for Biblical Research* 23.3 (2013): 365–376, DOI `10.2307/26424834`.
+
+Brown's God's Bible School and College Academia profile directly lists the published paper and exposes its complete published text/download route. The paper page reproduces the full BBR text and pagination. The binary download itself presently cache-misses, so custody is classified as complete author-profile published body, not publisher-byte custody.
+
+```text
+BROWN_2013_BBR_IDENTITY = CLOSED_PUBLISHED
+BROWN_2013_AUTHOR_PROFILE_FULL_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD
+BROWN_2013_BINARY_DOWNLOAD_CURRENT_RUNTIME = CACHE_MISS
+AUTHOR_UPLOADED_PUBLISHED_BODY != PUBLISHER_BYTE_CUSTODY
+```
+
+Brown is a direct adversarial response to the lexical claim associated with Witherington and Massey that `κατὰ κεφαλῆς ἔχων` necessarily denotes a material head covering. His corpus recheck makes several important distinctions:
+
+1. the exact Pauline construction without an explicit direct object is unusual and was not found by his TLG/DDbDP search outside quotations of Paul;
+2. several often-cited Plutarch/Dionysius examples do **not** concern head covering at all;
+3. where Plutarch/Dionysius do describe a garment on/drawn over the head with the relevant syntagmatic environment, an explicit object such as `ἱμάτιον` or `περιβολή` is present;
+4. therefore `κατὰ κεφαλῆς` by itself does not lexically encode textile covering;
+5. Classical/Hellenistic examples directly attest `κόμην/κόμας + ἔχω` for having long hair, so `κόμην` is at least a grammatically/lexically viable implied object for Paul's `ἔχων`;
+6. Esther 6:12 shows `κατὰ κεφαλῆς` can participate in a covered-head description, but Brown explicitly treats that as suggestive rather than conclusive because the Pauline construction differs.
+
+```text
+BROWN_EXACT_PAULINE_KATA_KEPHALES_ECHON = UNUSUAL_IN_AUTHOR_CORPUS_SEARCH
+BROWN_KATA_KEPHALES_ALONE = DOES_NOT_NECESSARILY_ENCODE_TEXTILE
+BROWN_MATERIAL_PARALLELS_WITH_ECHO_HELKO = EXPLICIT_GARMENT_OBJECTS_IN_AUTHOR_RECHECK
+BROWN_KOMEN_ECHEIN = DIRECTLY_ATTESTED_CLASSICAL_HELLENISTIC_CONSTRUCTION
+BROWN_HAIR_AS_IMPLIED_OBJECT = LEXICALLY_VIABLE_AUTHOR_ARGUMENT
+BROWN_MATERIAL_ONLY_LEXICAL_NECESSITY = REJECTED
+```
+
+Brown also adduces Chrysostom and Epiphanius as early native-Greek reception controls. His argument is calibrated more carefully than a slogan that “the Fathers taught hair only”: Chrysostom can distinguish material veiling from long hair and treats long hair as functionally equivalent to being covered for the male; Epiphanius repeatedly paraphrases v7 with `κομᾶν`, which Brown takes as evidence that `κατακαλύπτω` was not necessarily heard as textile-only.
+
+```text
+BROWN_CHRYSOSTOM = LONG_HAIR_INCLUDED_AS_FORBIDDEN_MALE_COVERING_EQUIVALENT
+BROWN_EPIPHANIUS = KOMAŌ_RECEPTION_OF_V7
+BROWN_TWO_NATIVE_GREEK_READERS != EARLY_UNANIMOUS_HAIR_CONSENSUS
+BROWN_PATRISTIC_CONTROL != PAULINE_LEXICAL_PROOF
+```
+
+Critical synthesis with Edsall:
+
+```text
+EDSALL_2013 = STRONG_MATERIAL_OBJECT_CORPUS_PRESSURE
+BROWN_2013 = DIRECT_PUBLISHED_ADVERSARIAL_RECHECK_OF_MATERIAL_NECESSITY
+BROWN_REFUTES_TEXTILE_AS_ONLY_POSSIBLE_LEXICAL_VALUE = SERIOUS_DIRECT_COUNTERCONTROL
+BROWN_PROVES_HAIR_IS_PAULS_ACTUAL_IMPLICIT_OBJECT = NO
+```
+
+Thus the strongest fail-closed result is not “Greek proves textile only” or “Greek proves hair,” but:
+
+```text
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE_UNCHANGED
+LEXICAL_TEXTILE_ONLY_NECESSITY = TOO_STRONG / REJECT_AS_PROJECT_SHORTCUT
+CORE_GRADE_REVERSALS = 0
+```
+
 ---
 
 # 11. Gender-crossing / sexual-role background
@@ -663,7 +752,7 @@ EXACT_SEXUAL_ROLE_MODEL = D_C_LOW_TO_C
 HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE
 ```
 
-Primary hair social data and Biguzzi’s direct Italian specialist synthesis keep it serious but do not overcome the distinct cover/uncover lexical field by themselves.
+Primary hair social data plus direct Biguzzi, Chadwick and Brown controls keep it serious, but none individually or collectively forces hair as the implicit referent of every covering expression.
 
 ---
 
@@ -729,6 +818,9 @@ BIGUZZI_2001_MONOGRAPH = IDENTITY_AND_LIBRARY_ROUTE_CLOSED / BODY_NOT_ACQUIRED
 MATOS_2007_DIRECT_OFFICIAL_PDF_BODY = CLOSED_DIRECT_PORTUGUESE_PASSAGE_CONTROL
 MATOS_PHYSIS_AS_CULTURAL_NORM = DIRECT_PUBLISHED_COUNTERMODEL
 MATOS_1COR11_USOS_COSTUMES_LOCALIZATION = DIRECT_AUTHOR_BODY
+CHADWICK_2022_DIRECT_OFFICIAL_FULL_BODY = CLOSED_DIRECT_HAIR_SIDE_WHOLE_PASSAGE_CONTROL
+BROWN_2013_AUTHOR_PROFILE_FULL_PUBLISHED_BODY = CLOSED_DIRECT_HAIR_SIDE_LEXICAL_COUNTERCONTROL
+BROWN_MATERIAL_ONLY_LEXICAL_NECESSITY = REJECTED_AS_PROJECT_SHORTCUT
 
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
