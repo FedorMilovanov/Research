@@ -80,6 +80,8 @@ APPHE_IK61_DIRECT_PHI_BODY = CLOSED_DIRECT
 APPHE_PROPHET_WIFE_READING_FROM_THIS_INSCRIPTION = NOT_SUPPORTED
 TERMESSOS_TAMIII1_870_DIRECT_PHI_INDEXED_BODY = CLOSED_DIRECT
 TERMESSOS_870_FEMALE_PROPHETIS_NOUN_BEARER = CLOSED_DIRECT
+POTTA_TAM_V1_535_DIRECT_PHI_INDEXED_BODY = CLOSED_DIRECT
+POTTA_TAM_V1_535_FEMALE_PROPHETIS_NOUN_BEARER = CLOSED_DIRECT
 P_WISC_I_13_EXOUSIA_LEXEME = FULLY_EDITORIALLY_RESTORED_IN_TARGET_FORMULA
 P_OXY_8_1120 = KATA_PLUS_GENITIVE_CONTROL
 P_OXY_9_1205 = EIS_PLUS_ACCUSATIVE_DIRECT_DDBDP
@@ -513,13 +515,21 @@ OPTIONAL = PG_IMAGE_AUTOPSY + HILL_P205_IF_NEW_ACCESS
 
 ## 32. Potta — TAM V.1 535 / PH263959
 
-PHI now directly returns the target `TAM V,1 535`, Lydia: Maionia, marks `laurus`, and exposes the beginning/end of the target text in its first-party search surface. The middle line containing the full `Ποτταν ... προφῆτιν σώτειραν` sequence still does not render directly through PHI in the current workflow. Independent specialist/full-transcription controls and a later Aydemir author-upload route converge on the complete wording, but the author-upload binary also remains transport-held.
+The first-party PHI Greek Inscriptions search surface now independently returns `TAM V,1 535`, Lydia: Maionia, and directly prints the formerly missing middle text:
 
 ```text
-STATUS = PARTIAL
-CLOSED = PHI_FIRST_PARTY_TARGET_OBJECT + MAIONIA + LAURUS + DIRECT_BEGINNING_END + STRONG_FULL_WORDING_CONVERGENCE
-OPEN = DIRECT_PHI_MIDDLE_PROPHETIS_LINE_OR_PRINTED_BODY
-DO_NOT_CALL_FULL_DIRECT_PHI_BODY_CLOSED = true
+τῆς ἐκ τοῦ Διὸς
+Ποτταν Μενε[κ]ρ̣ά̣-
+του προφῆτιν σώ-
+τειραν γενομένην
+```
+
+This closes Potta as the female `προφῆτις` noun-bearer and closes the `σώτειρα` wording at direct first-party indexed-text level. The exact object-page render / printed page remains optional custody only; it is no longer a substantive text blocker. The laurel-motif monument control remains separate from any neighboring veiled figure.
+
+```text
+STATUS = CLOSED_FOR_CLAIM
+CLOSED = DIRECT_PHI_INDEXED_TARGET_BODY + FEMALE_PROPHETIS_NOUN_BEARER + SOTEIRA_WORDING + OBJECT_IDENTITY
+OPTIONAL = DIRECT_OBJECT_PAGE_RENDER / PRINTED_PAGE_IMAGE / MONUMENT_CUSTODY
 ```
 
 ## 33. Nanas — same-object image
@@ -669,6 +679,7 @@ MILETOS_481 = CLOSED_DIRECT
 AMMIAS_THYATEIRA = CLOSED_DIRECT
 APPHE_IK61_TEXT = CLOSED_DIRECT_PHI
 TERMESSOS_TAMIII1_870_BODY = CLOSED_DIRECT_PHI_INDEXED_TARGET
+POTTA_TAM_V1_535_BODY = CLOSED_DIRECT_PHI_INDEXED_TARGET
 NISYRA_SEG49_1624_REFERENCE_ERROR_CONTROL = CLOSED_FOR_CURRENT_CLAIM
 P_WISC_I_13_RESTORATION_CEILING = CLOSED_DIRECT_DDBDP
 P_OXY_8_1120_CONSTRUCTION = CLOSED_DOCUMENTARY_CONTROL
@@ -727,7 +738,6 @@ PG82_312D_313A = SCAN_OBJECT_AND_COLUMNS_CLOSED / IMAGE_OPTIONAL_TRANSPORT
 ```text
 P0 REASONER_RICH_PREVIEW_OR_FULL_BODY_REPRODUCTION
 P0_P1 KOWALSKI_2020_FULL_PDF_BODY_OR_RENDERABLE_AUTHOR_2022_BODY
-P1 POTTA_DIRECT_PHI_MIDDLE_PROPHETIS_LINE_OR_PRINTED_BODY
 P1 PETERS_2020_FULL_BODY
 P1 PETERS_2013_CH6_7_P282_PRIMARY_PDF
 P1 WON_2010_PRIMARY_ARTICLE_AND_THESIS_BODY
@@ -740,6 +750,7 @@ P2 FANTHAM_OLSON_EXACT_PAGE_AUTOPSY
 Removed from the substantive reopen queue because the controlling owners are now closed:
 
 ```text
+POTTA_TAMV1_535 = CLOSED_DIRECT_PHI_INDEXED_BODY / PRINTED_PAGE_AND_OBJECT_RENDER_OPTIONAL
 TERMESSOS_870 = CLOSED_DIRECT_PHI
 FENDEL_XLSX = OPTIONAL_REPRODUCIBILITY_CUSTODY_ONLY
 HUGHES_2007 = CLOSED_DIRECT_AUTHOR_PROFILE_FULL_BODY
@@ -764,7 +775,7 @@ Hao Li 2023 and Wang 2022 remain removed from the substantive reading queue beca
 21 Fantham_Olson
 22 Kowalski
 23 PKNT_p390
-24 Potta_Nanas_objects
+24 Nanas_object / Potta_printed_page_optional_only
 25 M3_optional_controls
 ```
 
