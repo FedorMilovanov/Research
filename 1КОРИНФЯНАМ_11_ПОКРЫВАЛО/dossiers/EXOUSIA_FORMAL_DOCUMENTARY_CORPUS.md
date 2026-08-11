@@ -90,7 +90,7 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 ```
 
-Strong active direction does **not** prove modern autonomy theology or one exact social reconstruction. The direct Romerowski and Wang countermodels below keep two questions separate:
+Strong active direction does **not** prove modern autonomy theology or one exact social reconstruction. The direct Romerowski, Wang and Gatumu bodies below keep two questions separate:
 
 ```text
 Q1 = what does exousian_echein normally do in Greek?
@@ -259,6 +259,83 @@ WANG_SIGN_READING != EXOUSIA_LEXICALLY_MEANS_VEIL
 WANG_SIGN_READING != GRAMMATICAL_SUBJECT_REVERSAL
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX_UNCHANGED
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+```
+
+## 6.2 Kabiro/Kabiru wa Gatumu 2020 — direct official African full body
+
+Official St. Paul’s University / *African Multidisciplinary Journal of Research* object:
+- https://journals.spu.ac.ke/index.php/amjr/article/view/242
+- DOI `10.71064/spu.amjr.5.1.242`
+
+The OJS article page exposes the official PDF action; the exact journal PDF endpoint resolves in the target runtime as a 26-page PDF object whose masthead gives volume 5(1), 2020 and printed range `(79–105)`. Selected page-image screenshot requests failed with cache miss, so direct PDF text and image autopsy are kept separate.
+
+Metadata firewall:
+
+```text
+OJS_AUTHOR = Kabiro_wa_Gatumu
+PDF_MASTHEAD_AUTHOR = Kabiru_Wa_Gatumu
+GATUMU_AUTHOR_SPELLING = OFFICIAL_METADATA_MISMATCH / PRESERVE_BOTH
+PDF_OBJECT_PAGES = 26
+PDF_MASTHEAD_PRINTED_RANGE = 79_105
+DO_NOT_RECONCILE_OBJECT_PAGE_COUNT_WITH_PRINTED_RANGE_BY_GUESS
+```
+
+Custody:
+
+```text
+GATUMU_2020_OFFICIAL_OJS_OBJECT = CLOSED_DIRECT
+GATUMU_2020_OFFICIAL_PDF_TEXT = CLOSED_DIRECT
+GATUMU_2020_PAGE_IMAGE_AUTOPSY = RUNTIME_CACHE_MISS
+PDF_TEXT_LAYER != PAGE_IMAGE_AUTOPSY
+```
+
+Gatumu's body is especially useful because it argues the active semantics directly while refusing to turn them into a modern-context absolute.
+
+On printed pp.88–90 / PDF pp.9–11, he rejects translating `ἐξουσία` as `κάλυμμα` or adding “symbol/sign of authority” as though those words were in the Greek. He surveys `ἐξουσία` as freedom/right, ability/power, authority and domain, and concludes that the woman is the bearer of that authority. He explicitly allows several contextual implications — liberty to cover the head or retain long hair, authority to participate in worship, and authority to help maintain orderly worship — rather than male authority over her.
+
+```text
+GATUMU_EXOUSIA_ACTIVE_RIGHT_POWER = DIRECT_AUTHOR_BODY
+GATUMU_KALYMMA_SUBSTITUTION = REJECTED_AS_TEXTUALLY_UNSUPPORTED
+GATUMU_SYMBOL_SIGN_INSERTION = REJECTED_AS_TRANSLATION_OVERREACH
+GATUMU_WOMAN_AUTHORITY_BEARER = DIRECT_AUTHOR_BODY
+GATUMU_ACTIVE_SEMANTICS = MULTIPLE_CONTEXTUAL_APPLICATIONS_ACKNOWLEDGED
+```
+
+On printed pp.94–96 / PDF pp.15–17, he argues that `ἐπὶ τῆς κεφαλῆς` means authority “on” the woman's own head and that mutual interdependence in vv11–12 excludes using v10 as a grammatical statement that the woman is under male authority while praying/prophesying. He directly says women already prophesied and had authority to do so; Paul's issue was how that authority was exhibited in a gender-coded cultural environment.
+
+```text
+GATUMU_V10 = WOMAN_HAS_AUTHORITY_ON_OWN_HEAD_IN_AUTHOR_MODEL
+GATUMU_WOMEN_HAVE_AUTHORITY_TO_PROPHESY = DIRECT_AUTHOR_BODY
+GATUMU_MALE_AUTHORITY_OVER_WOMAN_AS_V10_GRAMMAR = REJECTED
+GATUMU_VV11_12_MUTUALITY = CENTRAL_CONTROL
+```
+
+His conclusion says Paul wanted women to have the right to decide whether to cover their heads, while counseling caution about public worship, gender distinction and social reception. He therefore does **not** derive exclusion from prayer, prophecy or leadership from the passage.
+
+```text
+GATUMU_HEAD_COVERING_CHOICE = WOMANS_RIGHT_IN_AUTHOR_MODEL
+GATUMU_PASTORAL_USE_OF_RIGHT = ORDER_AND_PUBLIC_RECEPTION
+GATUMU_WOMEN_PRAYER_PROPHECY_LEADERSHIP_EXCLUSION = REJECTED
+GATUMU_EXACT_CORINTH_MYSTERY_CULT_TRIGGER = RECONSTRUCTION_LAYER
+GATUMU_ROMAN_LAW_DRESS_TRIGGER = HISTORICAL_RECONSTRUCTION / NOT_PRIMARY_EVENT_RECORD
+```
+
+For `διὰ τοὺς ἀγγέλους`, Gatumu surveys Watchers/fallen angels, heavenly worship mediators, angels ruling nations and human-messenger/dress-policing proposals. His own direct conclusion is cautious: the exact role/referent of the angels in 1 Cor 11:10 remains unclear.
+
+```text
+GATUMU_ANGELS = MULTIPLE_MODELS_SURVEYED
+GATUMU_ANGELS_EXACT_REFERENT = UNRESOLVED_IN_AUTHOR_MODEL
+GATUMU_WATCHERS = DISCUSSED_NOT_ESTABLISHED_AS_AUTHOR_CONCLUSION
+```
+
+Project effect:
+
+```text
+GATUMU_2020 = DIRECT_OFFICIAL_AFRICAN_ACTIVE_RIGHT_COUNTERMODEL
+EXOUSIA_WOMAN_SUBJECT = A_SYNTAX_UNCHANGED
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_STRENGTHENED_PROVENANCE / GRADE_UNCHANGED
 EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
 CORE_GRADE_REVERSALS = 0
 ```
@@ -525,7 +602,7 @@ EXOUSIA_EXACT_REFERENT = B_C
 
 Still-live contextual families include control/right regarding head presentation; authority/right to pray/prophesy; authority/status signaled through covering; contextual metonymic sign reading; and other discourse-specific relations.
 
-A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`. Romerowski 2006 and Wang 2022 are direct full-body examples of contextual sign/metonymic readings and must be represented as serious countermodels rather than dismissed as lexically impossible.
+A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`. Romerowski 2006 and Wang 2022 are direct full-body examples of contextual sign/metonymic readings; Gatumu 2020 is a direct official full-body example of the opposite contextual direction, making the woman's own right/authority explicit. All must be represented as serious published controls rather than reduced to lexical slogans.
 
 ---
 
@@ -550,6 +627,9 @@ ROMEROWSKI_METONYMY != EXOUSIA_LEXICALLY_MEANS_VEIL
 ROMEROWSKI_HUSBAND_AUTHORITY = INTERPRETIVE_CONTEXTUAL_CONCLUSION_NOT_LEXICAL_DEFINITION
 WANG_AUTHORITY_SIGN != EXOUSIA_LEXICALLY_MEANS_VEIL
 WANG_AUTHOR_UPLOAD != PUBLISHER_BYTE_CUSTODY
+GATUMU_ACTIVE_RIGHT != MODERN_AUTONOMY_THEOLOGY_AUTOMATICALLY
+GATUMU_ROMAN_LAW_TRIGGER != DIRECT_CORINTH_EVENT_RECORD
+GATUMU_OJS_AUTHOR_SPELLING != PDF_MASTHEAD_SPELLING_AUTOMATICALLY
 TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 AGENT_BRANCH_CLOSED_DIRECT != TARGET_VERIFIED_BODY
 ```
@@ -567,6 +647,7 @@ P_OXY_8_1120 = KATA_GEN_DOCUMENTARY_CONTROL_CLOSED
 P_OXY_9_1205 = EIS_ACC_DIRECT_DDBDP_CLOSED
 ROMEROWSKI_2006_FULL_FRENCH_PDF = CLOSED_DIRECT_AUTHOR_HOSTED
 WANG_2022_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD / PUBLISHER_PDF_TRANSPORT_HOLD
+GATUMU_2020_FULL_AFRICAN_PDF = CLOSED_DIRECT_OFFICIAL_OJS / PAGE_IMAGE_AUTOPSY_CACHE_HOLD
 SEARCH_NONBIBLICAL_EXACT_ECHO_EPI_GEN = BOUNDED_SEARCH_COMPLETE / NO_EXACT_HEAD_PARALLEL_FOUND / GLOBAL_NONEXISTENCE_NOT_CLAIMED
 ADDITIONAL_FEMALE_ROMAN_RIGHT_BEARERS = OPTIONAL_ONLY_IF_NEW_HIGH_VALUE_SOURCE
 ```
@@ -600,6 +681,7 @@ P_WISC_I_13 = FULLY_RESTORED_EXOUSIA_LEXEME_IN_TARGET_FORMULA
 P_OXY_I_104_AD96 = NEAR_SEMANTIC_FEMALE_CONTROL_NOT_EXOUSIA
 ROMEROWSKI_2006 = DIRECT_FULL_BODY_SERIOUS_CONTEXTUAL_METONYMY_COUNTERMODEL
 WANG_2022 = DIRECT_AUTHOR_UPLOADED_PUBLISHED_BODY / MATERIAL_COVERING + AUTHORITY_SIGN_COUNTERMODEL
+GATUMU_2020 = DIRECT_OFFICIAL_FULL_BODY / ACTIVE_WOMAN_RIGHT_AND_CHOICE_COUNTERMODEL
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 PUBLICATION_HOLD = true
