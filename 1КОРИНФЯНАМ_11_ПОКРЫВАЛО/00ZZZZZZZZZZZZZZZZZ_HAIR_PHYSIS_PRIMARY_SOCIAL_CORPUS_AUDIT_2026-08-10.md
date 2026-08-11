@@ -344,6 +344,56 @@ CORE_GRADE_REVERSALS = 0
 
 This is precisely why multilingual discovery matters: it adds a direct specialist hair-side control without artificially converting it into a grade reversal.
 
+## 10.3 Keila Matos 2007 — direct Portuguese passage-body / culture-localization control
+
+Keila Matos, “Exegese de 1Cor11, 2-16 em Relação a Usos e Costumes,” *Fragmentos de Cultura* 17.11/12 (2007): 979–992, DOI `10.18224/frag.v17i6.503`.
+
+The official PUC Goiás journal object and its 14-page publisher PDF are directly open. This is a passage-specific author body, not an abstract, later bibliography, or dissertation summary.
+
+Directly controlled from the PDF:
+
+```text
+MATOS_2007_DIRECT_OFFICIAL_PDF_BODY = CLOSED
+MATOS_KEPHALE = SOURCE_OR_ORIGIN_IN_AUTHOR_MODEL / NOT_RULER
+MATOS_PHYSIS = CULTURAL_NORM_OR_TRADITION_IN_AUTHOR_MODEL
+MATOS_WOMEN_PRAY_AND_PROPHESY = ACTIVE_MINISTRY_ACCEPTED_IN_AUTHOR_MODEL
+MATOS_PAUL_DOES_NOT_CHALLENGE_WOMENS_CULTIC_PROTAGONISM = AUTHOR_CONCLUSION
+MATOS_PAUL_TRIES_TO_PERSUADE_WOMEN_TO_FOLLOW_SOCIOCULTURAL_PRESENTATION_NORMS = AUTHOR_CONCLUSION
+```
+
+Printed pp.985–988 distinguish several candidate social meanings for female hair/head presentation. Matos treats arranged/covered hair as dignified presentation, while loose hair can carry mourning, adultery/punishment, or mystery-cult associations in the sources she follows. She then explicitly keeps the textile/hair question open rather than collapsing it:
+
+```text
+MATOS_LOOSE_HAIR_ONE_FIXED_MEANING = NO
+MATOS_LOOSE_HAIR_CANDIDATE_CONTEXTS = MOURNING + ADULTERY_PUNISHMENT + ISIS_APHRODITE_DIONYSIAC_ASSOCIATIONS
+MATOS_TEXTILE_VS_HAIR = AUTHOR_LEAVES_READING_OPEN
+MATOS_V15_CAN_BE_READ_AS_LONG_HAIR_IN_PLACE_OF_VEIL = ACKNOWLEDGED
+```
+
+On pp.988–991 Matos reconstructs some Corinthian women as extending freedom in Christ beyond prevailing cultural/subordination expectations and treats household worship as a possible reason they could have regarded uncovered prayer as permissible. Those are historical reconstructions, not independently observed events.
+
+The conclusion on printed p.991 is explicit: in her linguistic/exegetical model the pericope is internally controversial/contradictory, and the veil/long-hair teaching concerns a first-century Corinthian tradition that need not be followed today in pastoral application.
+
+```text
+MATOS_EXACT_CORINTH_FREEDOM_TRIGGER = RECONSTRUCTION_LAYER
+MATOS_HOUSE_CHURCH_UNCOVERED_TRIGGER = RECONSTRUCTION_LAYER
+MATOS_1COR11_USOS_COSTUMES_LOCALIZATION = DIRECT_AUTHOR_BODY
+MATOS_PASTORAL_NONUNIVERSALIZATION = DIRECT_AUTHOR_BODY
+```
+
+Important calibration against the current corpus:
+
+```text
+MATOS_PHYSIS_AS_CULTURAL_NORM = REAL_DIRECT_PUBLISHED_COUNTERMODEL
+MATOS_PHYSIS_COUNTERMODEL != PRIMARY_CORPUS_GRADE_REVERSAL
+PHYSIS_SEXED_NATURALIZED_PROPRIETY = B_HIGH_LEADING_UNCHANGED
+HAIR_ONLY_WHOLE_PASSAGE = C_SERIOUS_ALTERNATIVE_UNCHANGED
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+```
+
+Matos’s 2004 MA dissertation remains a separate edition/body object. The direct 2007 article materially closes her published passage position but does **not** authorize silently treating dissertation pagination or wording as read.
+
 ---
 
 # 11. Gender-crossing / sexual-role background
@@ -676,6 +726,9 @@ EDSALL_2013_DIRECT_FULL_BODY = CLOSED
 EDSALL_KATA_KEPHALES_OBJECT_COVERING_CORPUS = DIRECT_B1_STRONG
 BIGUZZI_2009_DIRECT_SYNTHESIS = CLOSED_DIRECT_ITALIAN_HAIR_SIDE_CONTROL
 BIGUZZI_2001_MONOGRAPH = IDENTITY_AND_LIBRARY_ROUTE_CLOSED / BODY_NOT_ACQUIRED
+MATOS_2007_DIRECT_OFFICIAL_PDF_BODY = CLOSED_DIRECT_PORTUGUESE_PASSAGE_CONTROL
+MATOS_PHYSIS_AS_CULTURAL_NORM = DIRECT_PUBLISHED_COUNTERMODEL
+MATOS_1COR11_USOS_COSTUMES_LOCALIZATION = DIRECT_AUTHOR_BODY
 
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
