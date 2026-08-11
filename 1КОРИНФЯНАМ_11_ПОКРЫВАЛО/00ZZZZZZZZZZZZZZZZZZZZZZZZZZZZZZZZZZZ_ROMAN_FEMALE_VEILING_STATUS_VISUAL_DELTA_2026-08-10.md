@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — Roman female veiling / status / visual-method owner
 
-**Дата:** 2026-08-10  
-**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Дата:** 2026-08-11  
+**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / DIRECT-CALLON-BODY / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority rule
 
@@ -196,9 +196,88 @@ PALLA_ALWAYS_DRAWN_OVER_HEAD = REJECT_UNIVERSAL
 ONE_GARMENT_FORM = UNIVERSAL = REJECT
 ```
 
+## 7.1 Callie Callon 2024 — direct Cambridge OA full body / free(d)-wives model
+
+Callie Callon, “Authority Over Whose Head? Did Paul Instruct Wives or All Women to Cover Their Heads (1 Corinthians 11:2–16)?,” *Harvard Theological Review* 117.4 (2024): 699–719, DOI `10.1017/S0017816024000300`.
+
+Official Cambridge route:
+- https://www.cambridge.org/core/journals/harvard-theological-review/article/authority-over-whose-head-did-paul-instruct-wives-or-all-women-to-cover-their-heads-1-corinthians-11216/5D602D820F9CA0E6C55906BDF68466ED
+
+Cambridge exposes the complete article as OA HTML under CC BY 4.0. This closes Callon at direct publisher-body level rather than abstract/secondary-summary level.
+
 ```text
-CALLON_STATUS_BACKGROUND = CONTEXTUALLY_SERIOUS
+CALLON_2024_OFFICIAL_CAMBRIDGE_BODY = CLOSED_DIRECT_OA_HTML
+CALLON_2024_PAGES = 699_719
+CALLON_2024_DOI = 10.1017/S0017816024000300
+CALLON_2024_RECIPIENT_MODEL = FREE_OR_FREED_MARRIED_WOMEN
+```
+
+Callon explicitly presupposes the majority **material textile** reading rather than a hairstyle-only reading. In her model the relevant covering was most likely a `palla` / Greek `himation`, used as a status/modesty signal particularly intelligible for free(d) married women. That garment identification remains a historical model built from dress scholarship; it is not an overt garment noun in 1 Cor 11.
+
+```text
+CALLON_MATERIAL_TEXTILE = AUTHOR_MODEL
+CALLON_PALLA_HIMATION = AUTHOR_HISTORICAL_RECONSTRUCTION
+CALLON_PALLA_AS_OVERT_PAULINE_NOUN = FALSE
+CALLON_SEXUAL_MODESTY_STATUS_SIGNAL = CENTRAL_AUTHOR_MODEL
+```
+
+Her first major control is slavery/body autonomy. She argues that female slaves could lack practical sexual autonomy and that slaves of either sex could also lack control over hair length. She therefore regards a universal mandate, supported by a hair-length analogy, as difficult to apply to slaves. She adduces literary, social and visual evidence for short/shorn hair among some female slaves and imposed long hair among some male slaves, while explicitly avoiding the universal claim that all slaves followed one hairstyle.
+
+```text
+CALLON_SLAVE_BODILY_AUTONOMY_PROBLEM = DIRECT_AUTHOR_ARGUMENT
+CALLON_SLAVE_HAIR_AUTONOMY_PROBLEM = DIRECT_AUTHOR_ARGUMENT
+CALLON_ALL_FEMALE_SLAVES_SHORT_HAIR = NOT_AUTHOR_CLAIM
+CALLON_ALL_MALE_SLAVES_LONG_HAIR = NOT_AUTHOR_CLAIM
+SLAVE_HAIR_EVIDENCE != ONE_UNIVERSAL_SLAVE_HAIRSTYLE
+```
+
+Her second control is the reception of Genesis 1–2 as marriage material. She collects Second-Temple and later Jewish/Christian examples in which Genesis 1:27 and/or Genesis 2:18–24 function in discussions of marriage, permanence or husband-wife relations. This removes, in her model, the usual objection that Paul’s Genesis allusions necessarily force `γυνή` to mean every woman simply because the argument invokes creation texts.
+
+```text
+CALLON_GENESIS_MARRIAGE_RECEPTION = DIRECT_AUTHOR_ARGUMENT
+CALLON_GENESIS_TEXTS_CAN_FUNCTION_IN_MARRIAGE_ARGUMENT = SUPPORTED_HISTORICAL_CONTROL
+CALLON_GENESIS_MARRIAGE_RECEPTION != PAUL_MUST_MEAN_WIVES
+```
+
+She then stress-tests the husband/wife reading across the passage rather than stopping at a general social thesis:
+
+```text
+V3 = HUSBAND_WIFE_RELATION_PREFERRED_IN_AUTHOR_MODEL
+V5_6 = WIFE_SHAMES_HER_OWN_SOCIAL_HEAD/HUSBAND
+V7 = WIFE_AS_HUSBANDS_GLORY
+V8_9 = GENESIS_MARRIAGE_RELATION
+V10 = WOMAN_HAS_AUTHORITY_OVER_HER_OWN_HEAD / WITH_SOCIAL_IMPLICATION_FOR_HUSBAND
+V11_12 = SPOUSAL_INTERDEPENDENCE
+V13 = EXPECTED_MODESTY_JUDGMENT_FITS_WIVES
+V14_15 = HAIR_AUTONOMY/ORNAMENT_ARGUMENT_FITS_FREE(D)_SPOUSES
+V16 = OTHER_CHURCHES_SHARE_THE_VEILING_PRACTICE_IN_AUTHOR_MODEL
+```
+
+Especially important for the current `ἐξουσία` map: Callon does **not** use slavery to turn v10 into an external male possessor. Her preferred reading is active “authority over her own head.” Her slavery argument is that such a command presupposes bodily control a slave did not reliably possess.
+
+```text
+CALLON_V10_ACTIVE_WOMAN_AUTHORITY_OVER_OWN_HEAD = DIRECT_AUTHOR_MODEL
+CALLON_V10_EXTERNAL_MASTER_OR_HUSBAND_AS_GRAMMATICAL_POSSESSOR = NOT_AUTHOR_MODEL
+CALLON_V10_SLAVERY_EXCLUSION = CONTEXTUAL_RECIPIENT_ARGUMENT
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+```
+
+Callon also explicitly leaves women outside marriage able to pray/prophesy; the proposal is that Paul would not require those women to do so with the same marital-status covering. Thus:
+
+```text
+CALLON_WIVES_ONLY_COVERING_MANDATE != WOMEN_OUTSIDE_MARRIAGE_EXCLUDED_FROM_MINISTRY
+```
+
+Calibration against the visual/status corpus is essential. Hughes and Stafford prevent Callon’s reconstruction from becoming a universal empirical rule that every respectable Roman wife always veiled or that every unveiled woman was deviant. Callon supplies a coherent direct published **recipient/status model**, not a census of actual Corinthian dress.
+
+```text
+CALLON_FREE_D_MARRIED_WOMEN_MODEL = B_C_SERIOUS_CURRENT_MODEL
 WIVES_VS_ALL_WOMEN = OPEN_B_C
+CALLON_MODEL_DOES_NOT_CLOSE_RECIPIENT_QUESTION = TRUE
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+EXACT_CORINTH_FEMALE_TRIGGER = RECONSTRUCTION_LAYER
+CORE_GRADE_REVERSALS = 0
 ```
 
 ---
@@ -243,9 +322,10 @@ GREEK_WIDE_ROUTINE_VEILING != EXACT_CORINTHIAN_CHRISTIAN_EVENT
 
 # 10. Final acquisition disposition
 
-The former local P1 queue is closed:
+The former local P1 queue is closed for known public routes except for optional direct visual/page custody:
 
 ```text
+CALLON_2024 = CLOSED_DIRECT_CAMBRIDGE_OA_FULL_BODY
 FANTHAM_2008_PP158_171 = IDENTITY_AND_EXACT_LOCATOR_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 OLSON_2008_PP22_25_34_41 = BOOK_IDENTITY_AND_PAGE_SPECIFIC_METHOD_CONTROLS_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 HUGHES_2007_TABLE1_P227 = ARTICLE_AND_PDF_OBJECT_CLOSED / EXACT_SECONDARY_TABLE_LOCATOR_CLOSED / DIRECT_TABLE_AUTOPSY_TERMINAL_ACCESS_HOLD
@@ -271,8 +351,13 @@ HUGHES_EARLY_IMPERIAL_VISUAL_CORPUS = CONTROLLED
 STAFFORD_LATE_ANTIQUE_VISUAL_METHOD = CONTROLLED
 OLSON_PRESCRIPTION_VS_VISUAL_METHOD = CONTROLLED
 FANTHAM_EXACT_CHAPTER_LOCATOR = CLOSED
-ROMAN_FEMALE_VISUAL_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
+CALLON_2024 = DIRECT_CAMBRIDGE_FULL_BODY_FREE_D_WIVES_MODEL
+CALLON_V10 = ACTIVE_WOMAN_AUTHORITY_OVER_OWN_HEAD
+CALLON_SLAVERY_HAIR_AUTONOMY = DIRECT_AUTHOR_ARGUMENT
+CALLON_GENESIS_MARRIAGE_RECEPTION = DIRECT_AUTHOR_ARGUMENT
+CALLON_FREE_D_MARRIED_WOMEN_MODEL = B_C_SERIOUS_CURRENT_MODEL
 WIVES_VS_ALL_WOMEN = OPEN_B_C
+ROMAN_FEMALE_VISUAL_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
 ROMAN_CAPITE_VELATO_BACKGROUND = A
 V4_EXACT_CAPITE_VELATO = B_C
 TERMINAL_HOLD != VERIFIED_BODY
