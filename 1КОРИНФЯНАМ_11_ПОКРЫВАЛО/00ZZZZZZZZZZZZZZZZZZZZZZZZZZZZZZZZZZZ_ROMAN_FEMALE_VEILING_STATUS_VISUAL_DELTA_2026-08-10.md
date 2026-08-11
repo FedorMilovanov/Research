@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — Roman female veiling / status / visual-method owner
 
 **Дата:** 2026-08-11  
-**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / DIRECT-CALLON-BODY / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / DIRECT-CALLON-BODY / DIRECT-MASSEY-BODY / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority rule
 
@@ -280,6 +280,66 @@ EXACT_CORINTH_FEMALE_TRIGGER = RECONSTRUCTION_LAYER
 CORE_GRADE_REVERSALS = 0
 ```
 
+## 7.2 Preston T. Massey 2013 — direct Tyndale full body / marital-house-church predecessor
+
+Preston T. Massey, “Gender Versus Marital Concerns: Does 1 Corinthians 11:2–16 Address the Issues of Male/Female or Husband/Wife?”, *Tyndale Bulletin* 64.2 (2013): 239–256, DOI `10.53751/001c.29356`.
+
+Official Tyndale route:
+- https://www.tyndalebulletin.org/article/29356-gender-versus-marital-concerns-does-1-corinthians-11-2-16-address-the-issues-of-male-female-or-husband-wife
+- direct PDF: https://www.tyndalebulletin.org/article/29356.pdf
+
+The complete official 18-page PDF text is directly readable. Selected page-image screenshot attempts failed at the runtime/cache layer, so full PDF text custody and page-image autopsy remain separate.
+
+```text
+MASSEY_2013_DIRECT_OFFICIAL_TYNDALE_PDF_BODY = CLOSED
+MASSEY_2013_PAGE_IMAGE_AUTOPSY = RUNTIME_CACHE_MISS
+PDF_TEXT_LAYER != PAGE_IMAGE_AUTOPSY
+```
+
+Massey's core claim is primarily **marital**, not generic sex-class regulation. He nevertheless explicitly refuses to force one husband/wife gloss onto every `ἀνήρ/γυνή` token: v12, for example, requires man/woman. His argument is therefore contextual token-by-token narrowing rather than a lexical redefinition.
+
+```text
+MASSEY_RECIPIENT_MODEL = MARRIED_WOMEN_PRIMARY_APPLICATION
+MASSEY_GYNE_ANER_ONE_GLOSS_THROUGHOUT = REJECTED
+MASSEY_V12 = MAN_WOMAN_NOT_HUSBAND_WIFE_IN_AUTHOR_MODEL
+```
+
+For v5 he reads the praying/prophesying woman as a wife and the metaphorical “head” she shames as her own husband. He uses 1 Cor 7 as a contextual control for the husband/wife pairing and argues that Paul's omission of the explicit `ἄρσεν καὶ θῆλυ` formula makes a simple gender-class issue less likely in his model.
+
+```text
+MASSEY_V5 = WIFE_SHAMES_HER_OWN_HUSBAND_IN_AUTHOR_MODEL
+MASSEY_1COR7_HUSBAND_WIFE_CONTEXT_CONTROL = DIRECT_AUTHOR_ARGUMENT
+MASSEY_ARSEN_THELY_OMISSION = AUTHOR_ARGUMENT_AGAINST_PURE_GENDER_CLASS_MODEL
+```
+
+Massey uses a **material head-covering/veil** model and connects 11:2–16 with 14:34–35 through public marital decorum. His distinctive historical reconstruction is the house-church setting: worship is public assembly occurring in private domestic space. Married women accustomed to appearing unveiled and conversing freely at home may, in his model, have carried domestic liberty into the public church gathering.
+
+```text
+MASSEY_MATERIAL_HEAD_COVERING = AUTHOR_MODEL
+MASSEY_HOUSE_CHURCH = PUBLIC_WORSHIP_IN_PRIVATE_SPACE
+MASSEY_TRIGGER = DOMESTIC_PUBLIC_SPHERE_CONFUSION / RECONSTRUCTION_LAYER
+MASSEY_MARRIED_WOMEN_DOMESTIC_UNVEILING = HISTORICAL_RECONSTRUCTION
+```
+
+His conclusion explicitly prefers this private/public-sphere explanation over homosexuality or a general blurring of male/female sex identity. Thus his model and Callon's later model belong to the same broad recipient-status family but are not interchangeable:
+
+```text
+MASSEY_HOMOSEXUALITY_TRIGGER = REJECTED_IN_FAVOR_OF_MARITAL_SPACE_MODEL
+MASSEY_2013 = MARRIED_WOMEN + HOUSE_CHURCH_PUBLIC_PRIVATE_TRIGGER
+CALLON_2024 = FREE_D_MARRIED_WOMEN + SLAVERY_BODY_AUTONOMY_STATUS_TRIGGER
+MASSEY_2013 != CALLON_2024
+```
+
+Calibration:
+
+```text
+MASSEY_2013 = DIRECT_FULL_BODY_MARITAL_HOUSE_CHURCH_PREDECESSOR
+WIVES_VS_ALL_WOMEN = OPEN_B_C_UNCHANGED
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+EXACT_CORINTH_FEMALE_TRIGGER = RECONSTRUCTION_LAYER
+CORE_GRADE_REVERSALS = 0
+```
+
 ---
 
 # 8. Male ritual covering is a separate axis
@@ -326,6 +386,7 @@ The former local P1 queue is closed for known public routes except for optional 
 
 ```text
 CALLON_2024 = CLOSED_DIRECT_CAMBRIDGE_OA_FULL_BODY
+MASSEY_2013 = CLOSED_DIRECT_TYNDALE_FULL_PDF_TEXT / PAGE_IMAGE_CACHE_HOLD
 FANTHAM_2008_PP158_171 = IDENTITY_AND_EXACT_LOCATOR_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 OLSON_2008_PP22_25_34_41 = BOOK_IDENTITY_AND_PAGE_SPECIFIC_METHOD_CONTROLS_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 HUGHES_2007_TABLE1_P227 = ARTICLE_AND_PDF_OBJECT_CLOSED / EXACT_SECONDARY_TABLE_LOCATOR_CLOSED / DIRECT_TABLE_AUTOPSY_TERMINAL_ACCESS_HOLD
@@ -356,6 +417,8 @@ CALLON_V10 = ACTIVE_WOMAN_AUTHORITY_OVER_OWN_HEAD
 CALLON_SLAVERY_HAIR_AUTONOMY = DIRECT_AUTHOR_ARGUMENT
 CALLON_GENESIS_MARRIAGE_RECEPTION = DIRECT_AUTHOR_ARGUMENT
 CALLON_FREE_D_MARRIED_WOMEN_MODEL = B_C_SERIOUS_CURRENT_MODEL
+MASSEY_2013 = DIRECT_TYNDALE_FULL_BODY_MARRIED_WOMEN_HOUSE_CHURCH_MODEL
+MASSEY_TRIGGER = DOMESTIC_PUBLIC_SPHERE_CONFUSION_RECONSTRUCTION
 WIVES_VS_ALL_WOMEN = OPEN_B_C
 ROMAN_FEMALE_VISUAL_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
 ROMAN_CAPITE_VELATO_BACKGROUND = A
