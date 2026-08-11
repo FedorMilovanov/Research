@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:4–5 — ritual/divination/prophetic head-state dossier
 
-**Статус:** `EVERGREEN-DOSSIER / FEMALE-MANTIC-PERSONNEL / RITUAL-HEAD-STATE / OBJECT-IDENTITY / PARALLEL-BRANCH-RECHECKED / DIRECT-TERMESSOS-PHI / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Статус:** `EVERGREEN-DOSSIER / FEMALE-MANTIC-PERSONNEL / RITUAL-HEAD-STATE / OBJECT-IDENTITY / PARALLEL-BRANCH-RECHECKED / DIRECT-TERMESSOS-PHI / DIRECT-POTTA-PHI / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последняя проверка:** 2026-08-11
 
 ## 0. Authority / scope
@@ -44,7 +44,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 | Cleopatra, Didyma | restored `[προφ]ήτιδι` | fragmentary candidate only | no |
 | Didyma 235B | old `προφητίσκῃ` corrected to `προφητικῇ` | false-reading control | no |
 | Agatho, Didyma | wife of prophet + building benefaction | source-error negative control | no |
-| Potta, Maionia | `TAM V.1 535`, specialist/direct-index controls `προφῆτιν σώτειραν`; target indexed with `laurus` | external Asia-Minor prophetis | target monument = laurel-motif stele, not neighboring veiled figure |
+| **Potta, Maionia** | direct first-party PHI indexed body, `TAM V,1 535`: `Ποτταν ... προφῆτιν σώτειραν`; target indexed with `laurus` | secure external Asia-Minor female `prophetis` noun-bearer | target monument = laurel-motif stele, not neighboring veiled figure |
 | Ammias, Thyateira | direct priestess + postmortem vision-oracle formula | oracular priestly control, not prophetis | no |
 | Ammia, Philadelphia | Eusebian female prophetess | early-Christian reception | no |
 | Nanas, Phrygia | PHI-indexed `προφήτισα`; Poirier prints full epitaph | late prophetess / angelic-language comparator | no head marker found |
@@ -211,20 +211,27 @@ Miletos 481 primary:
 
 # 4. External named female mantic personnel
 
-## 4.1 Potta — `TAM V.1 535 / PH263959`
+## 4.1 Potta — `TAM V.1 535 / PH263959` — DIRECT PHI INDEX CLOSED
 
-Specialist/direct-index controls reproduce:
+The target-workflow first-party PHI Greek Inscriptions search surface now independently returns `TAM V,1 535`, Lydia: Maionia, and prints the formerly missing middle of the target text:
 
 ```text
-Ποτταν Μενε[κ]ρ̣άτου προφῆτιν σώτειραν
+τῆς ἐκ τοῦ Διὸς
+Ποτταν Μενε[κ]ρ̣ά̣-
+του προφῆτιν σώ-
+τειραν γενομένην
 ```
 
-The PHI target identity is independently anchored as `TAM V,1 535`, Lydia: Maionia, indexed with `laurus`. Independent epigraphic description identifies the same monument as a stele with laurel-leaf representation. The exact direct PHI target page has not independently rendered in the target workflow, so the parallel branch's `FULL_BODY_CLOSED_DIRECT_PHI` label is not copied blindly.
+This directly closes Potta as the female `προφῆτις` noun-bearer and independently confirms the `σώτειρα` wording. The direct object-page render may still be transport-sensitive, but that is no longer a substantive text blocker because the first-party PHI search surface itself prints the exact edition number and target lines.
+
+The same-object visual control remains separate: independent epigraphic description identifies the monument as a stele with a laurel-leaf representation. A neighboring Maionia object with a possibly veiled figure is not Potta's object and must not be transferred.
 
 ```text
-POTTA_PHI_OBJECT_IDENTITY = CLOSED_DIRECT_SEARCH_SURFACE
-POTTA_PROPHETIS_FULL_WORDING = STRONG_SPECIALIST_TRANSCRIPTION_CONTROL
-POTTA_DIRECT_PHI_TARGET_PAGE = STILL_REOPEN_TARGET
+POTTA_PHI_OBJECT_IDENTITY = CLOSED_DIRECT_FIRST_PARTY_PHI
+POTTA_TAM_V1_535_DIRECT_PHI_INDEXED_BODY = CLOSED_DIRECT_FIRST_PARTY_PHI
+POTTA_PROPHETIS_NOUN_BEARER = CLOSED_DIRECT
+POTTA_SOTEIRA_WORDING = CLOSED_DIRECT
+POTTA_DIRECT_OBJECT_PAGE_RENDER = OPTIONAL_TRANSPORT_CUSTODY
 POTTA_TAM535_SAME_OBJECT_VISUAL_MOTIF = LAUREL_LEAF
 POTTA_TAM535_FIGURAL_FEMALE_HEAD_HAIR = NOT_ATTESTED
 MAIONIA_533_POSSIBLY_VEILED != POTTA_TAM535
@@ -554,13 +561,14 @@ PRE_PAULINE_GREEK_PROPHETESS_OFFICE_IN_RITUAL_SPACE = A_EPIGRAPHIC_ERESOS
 FEMALE_DIVINE_MEDIATION_IN_ASIA_MINOR = A_B_HIGH
 RITUAL_HEADWEAR_AND_HAIR_CAN_BE_SEPARATELY_REGULATED = A_PRIMARY
 NAMED_FEMALE_MANTIC_PERSON_LINKED_TO_RITUAL_REFORM_DOSSIER = B_HIGH_COMPARATIVE
+POTTA_TAM_V1_535_FEMALE_PROPHETIS = A_DIRECT_PHI_INDEXED_BODY
 TERMESSSOS_870_FEMALE_PROPHETIS = A_DIRECT_PHI_INDEXED_BODY
 DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 ```
 
 Safe synthesis:
 
-> The comparative case is stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. Apphe is directly closed from PHI as the female `prophetis` noun-bearer herself, and Termessos 870 is now independently closed from the first-party PHI index as Aurelia Orestiane, `prophetis` of sacred Eleusinian rites. These strengthen the female ritual-prophetic personnel corpus, but no checked same-object source identifies a particular veil/headband/hairstyle for Philokrateia, Tryphosa, Eirene, Potta, Apphe or Orestiane. Nisyra remains a very likely reference error after direct PHI indexed-text control rejected the arena reversal. Therefore the ritual corpus still does not identify the exact Corinthian trigger or a direct near-Pauline prophetess head/hair code.
+> The comparative case is stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. Potta is now independently closed from the first-party PHI index as a Maionian `prophetis` and `soteira`; Apphe is directly closed from PHI as the female `prophetis` noun-bearer herself; and Termessos 870 is independently closed from the first-party PHI index as Aurelia Orestiane, `prophetis` of sacred Eleusinian rites. These strengthen the female ritual-prophetic personnel corpus, but no checked same-object source identifies a particular veil/headband/hairstyle for Philokrateia, Tryphosa, Eirene, Potta, Apphe or Orestiane. Nisyra remains a very likely reference error after direct PHI indexed-text control rejected the arena reversal. Therefore the ritual corpus still does not identify the exact Corinthian trigger or a direct near-Pauline prophetess head/hair code.
 
 **No core grade reversal.**
 
@@ -579,7 +587,9 @@ APPHE_PROPHET_WIFE_READING_FROM_THIS_INSCRIPTION = CLOSED_NOT_SUPPORTED
 TERMESSOS_TAMIII1_870_BODY = CLOSED_DIRECT_FIRST_PARTY_PHI_INDEX
 TERMESSOS_TAMIII1_870_FEMALE_PROPHETIS = CLOSED_DIRECT
 TERMESSOS_TAMIII1_870_SAME_OBJECT_IMAGE = NOT_AUTOPSIED_NONBLOCKING
-POTTA_TAM_V1_535_DIRECT_TARGET_PAGE = REOPEN_TARGET / SPECIALIST_WORDING_STRONG
+POTTA_TAM_V1_535_DIRECT_PHI_INDEXED_BODY = CLOSED_DIRECT_FIRST_PARTY_PHI
+POTTA_TAM_V1_535_FEMALE_PROPHETIS = CLOSED_DIRECT
+POTTA_TAM_V1_535_DIRECT_OBJECT_PAGE_RENDER = OPTIONAL_TRANSPORT_CUSTODY
 NANAS_TABBERNEE_FIG77 = TERMINAL_EXTERNAL_IMAGE_HOLD_CURRENT_RUNTIME
 IGII2_13148 = VERY_LIKELY_REFERENCE_ERROR / INTENDED_REFERENCE_UNKNOWN / DO_NOT_GUESS
 SEG49_1624 = VERY_LIKELY_REFERENCE_ERROR / ARENA_REVERSAL_REJECTED / INTENDED_REFERENCE_UNKNOWN / DO_NOT_GUESS
