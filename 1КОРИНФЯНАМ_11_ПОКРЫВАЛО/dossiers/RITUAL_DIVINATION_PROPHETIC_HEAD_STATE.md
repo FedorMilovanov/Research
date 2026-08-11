@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:4–5 — ritual/divination/prophetic head-state dossier
 
-**Статус:** `EVERGREEN-DOSSIER / FEMALE-MANTIC-PERSONNEL / RITUAL-HEAD-STATE / OBJECT-IDENTITY / PARALLEL-BRANCH-RECHECKED / RESEARCH-ONLY / PUBLICATION-HOLD`  
+**Статус:** `EVERGREEN-DOSSIER / FEMALE-MANTIC-PERSONNEL / RITUAL-HEAD-STATE / OBJECT-IDENTITY / PARALLEL-BRANCH-RECHECKED / DIRECT-TERMESSOS-PHI / RESEARCH-ONLY / PUBLICATION-HOLD`  
 **Последняя проверка:** 2026-08-11
 
 ## 0. Authority / scope
@@ -54,7 +54,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 | IGLSyr 1.51 | `ἀναγραφή` itself called `προφήτις` | false-person control | not a woman |
 | Athens / IG II² 13148 | female funerary epigram, no mantic wording in indexed text | very likely reference error | not countable |
 | Nisyra / SEG 49.1624 | PH348429 / TM949255 indexed target = short dedication without `προφῆτις` | very likely reference error; intended citation unknown | no secure target iconography |
-| Termessos / TAM III,1 870 | specialist list includes it among `prophetis` comparanda; exact target body not independently reopened | high-priority candidate, not yet secure noun-bearer control | unknown |
+| **Termessos / TAM III,1 870** | direct first-party PHI indexed body: `Αὐρηλίας Ὀρεστιανῆς ... Ἐλευσινίων προφήτιδος` | secure Roman female `prophetis` noun-bearer in Eleusinian sacred context | no head/hair marker in text; monument image not autopsied |
 | Lebadeia / IG VII 3111 | original IG VII preserves `...ΠΡΟΦΗΤΕΥΣΑΣΑ` | female prophesying activity, not automatically formal title | no marker attested |
 | Claros | checked Imperial personnel + Tacitus place historical inspired seer in male role | bounded negative control | no female same-object case |
 | Andania / Lycosura | direct ritual headwear/hair regulation | separate regulatory axes | yes, not prophetess-specific |
@@ -377,30 +377,39 @@ DO_NOT_GUESS_NISYRA_REPLACEMENT = true
 
 Adjacent `SEG 49.1623` is a different object; its iconography cannot be transferred to 1624.
 
-## 5.5 Termessos — `TAM III,1 870 / PH280975`
+## 5.5 Termessos — `TAM III,1 870 / PH280975` — DIRECT PHI INDEX CLOSED
 
-Independent source control confirms:
-- the edition `TAM III,1` is Heberdey's *Tituli Termessi et agri Termessensis*;
-- current specialist literature explicitly lists `TAM III,1 870 (Termessos)` among external `prophetis` comparanda;
-- Demeter/Eleusinian cult context is independently plausible in the Termessos dossier.
-
-Arena reports exact direct-PHI wording:
+The former arena-only line is now independently reproduced by the **first-party PHI Greek Inscriptions search index**. A PHI query for `#Ελευσ` returns `TAM III,1 870` in Pisidia and the target body itself:
 
 ```text
-τό(πος) Αὐρ(ηλίας) Ὀρεστιανῆς, ἱ(ερῶν) Ἐλευσι-
-νίων προφήτιδος.
+τό(πος) Αὐρ(ηλίας) Ὀρεστι-
+ανῆς, ἱ(ερῶν) Ἐλευσ ι-
+νίων προφήτ̣ι̣δ̣ο̣ς̣.
 ```
 
-However, the exact target PHI page/body has **not** independently rendered in the target workflow. Because the same arena branch produced the false Nisyra reversal, the Termessos body is not promoted solely on agent testimony.
+Direct first-party routes:
+- search surface: `https://epigraphy.packhum.org/search?first=800&patt=%23%CE%95%CE%BB%CE%B5%CF%85%CF%83`
+- target object exposed by PHI link: `https://epigraphy.packhum.org/text/280975?hs=78-85`
+
+The target-object click currently cache-misses in the runtime, but the PHI search surface itself is not a secondary snippet: it directly indexes and prints the target inscription under the exact edition number. The noun-bearer is therefore independently controlled outside the arena branch.
+
+Grammatically, `Αὐρ(ηλίας) Ὀρεστιανῆς ... προφήτιδος` is a female genitive noun-bearer: Aurelia Orestiane is identified as `prophetis` in relation to the sacred Eleusinian rites. The initial `τόπος` securely marks a locus/place text; exact monument morphology or same-object image has not been separately autopsied and is not invented.
 
 ```text
-TERMESSOS_870_CORPUS_IDENTITY = CLOSED
-TERMESSOS_870_SPECIALIST_PROPHETIS_REFERENCE = CORROBORATED
-TERMESSOS_870_DIRECT_BODY = HIGH_PRIORITY_ARENA_DISCOVERY_PENDING_PRIMARY_REOPEN
-TERMESSOS_870_NOUN_BEARER = NOT_DIRECTLY_CLOSED_IN_TARGET_WORKFLOW
-TERMESSOS_870_GENRE = NOT_DIRECTLY_CLOSED_IN_TARGET_WORKFLOW
-COUNT_AS_SECURE_FEMALE_PROPHETIS = NO_UNTIL_BODY
+TERMESSOS_870_CORPUS_IDENTITY = CLOSED_DIRECT_PHI
+TERMESSOS_870_PHI_OBJECT_ID = PH280975
+TERMESSOS_870_DIRECT_INDEXED_BODY = CLOSED_DIRECT_FIRST_PARTY_PHI
+TERMESSOS_870_NOUN_BEARER = AURELIA_ORESTIANE / FEMALE / CLOSED_DIRECT
+TERMESSOS_870_ROLE_TERM = PROPHETIS / CLOSED_DIRECT
+TERMESSOS_870_ELEUSINIAN_SACRED_CONTEXT = CLOSED_DIRECT_TEXT
+TERMESSOS_870_GENRE_MINIMUM = TOPOS_LOCUS_MARKER
+TERMESSOS_870_EXACT_MONUMENT_MORPHOLOGY = NOT_AUTOPSIED
+TERMESSOS_870_HEAD_HAIR_CODE = NOT_ATTESTED_IN_TEXT
+COUNT_AS_SECURE_FEMALE_PROPHETIS = YES
+ARENA_TERMESSOS_LINE_QUARANTINE = RELEASED_BY_INDEPENDENT_PHI_CONTROL
 ```
+
+This corrects the earlier fail-closed state without changing the separate rule that a `prophetis` title does not itself establish a particular ritual head/hair code.
 
 ## 5.6 Lebadeia — `IG VII 3111 / PH146626`
 
@@ -459,6 +468,7 @@ POTTA_TAM535_SAME_OBJECT_VISUAL_MOTIF = LAUREL_LEAF
 POTTA_NEIGHBORING_VEILED_FIGURE = DIFFERENT_OBJECT
 NANAS_TABBERNEE_FIG77 = TERMINAL_EXTERNAL_IMAGE_HOLD_CURRENT_RUNTIME
 APPHE_DIRECT_PHI_TEXT = CLOSED / PRINTED_CIG_IMAGE_OPTIONAL
+TERMESSOS_870_DIRECT_TEXT = CLOSED / SAME_OBJECT_IMAGE_NOT_AUTOPSIED
 GENERIC_STELE != TARGET_PERSON
 NONFIGURAL_STELE != LIVE_RITUAL_DRESS_EVIDENCE
 ```
@@ -544,12 +554,13 @@ PRE_PAULINE_GREEK_PROPHETESS_OFFICE_IN_RITUAL_SPACE = A_EPIGRAPHIC_ERESOS
 FEMALE_DIVINE_MEDIATION_IN_ASIA_MINOR = A_B_HIGH
 RITUAL_HEADWEAR_AND_HAIR_CAN_BE_SEPARATELY_REGULATED = A_PRIMARY
 NAMED_FEMALE_MANTIC_PERSON_LINKED_TO_RITUAL_REFORM_DOSSIER = B_HIGH_COMPARATIVE
+TERMESSSOS_870_FEMALE_PROPHETIS = A_DIRECT_PHI_INDEXED_BODY
 DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 ```
 
 Safe synthesis:
 
-> The comparative case is stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. These reinforce a ritual-performance-state axis, but no checked same-object source identifies a particular veil/headband/hairstyle for Philokrateia, Tryphosa, Eirene, Potta or Apphe. Apphe is now directly closed from PHI as the female `prophetis` noun-bearer herself; the old prophet-wife grammatical fork is superseded, while the narrower question of exactly what institutional office/status `prophetis` denotes remains open. Nisyra remains a very likely reference error after direct PHI indexed-text control rejected the arena reversal. Termessos remains promising but quarantined until the exact target body is independently reopened. Therefore the ritual corpus still does not identify the exact Corinthian trigger.
+> The comparative case is stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. Apphe is directly closed from PHI as the female `prophetis` noun-bearer herself, and Termessos 870 is now independently closed from the first-party PHI index as Aurelia Orestiane, `prophetis` of sacred Eleusinian rites. These strengthen the female ritual-prophetic personnel corpus, but no checked same-object source identifies a particular veil/headband/hairstyle for Philokrateia, Tryphosa, Eirene, Potta, Apphe or Orestiane. Nisyra remains a very likely reference error after direct PHI indexed-text control rejected the arena reversal. Therefore the ritual corpus still does not identify the exact Corinthian trigger or a direct near-Pauline prophetess head/hair code.
 
 **No core grade reversal.**
 
@@ -565,9 +576,11 @@ DIDYMA_235B_PROPHETIS = CLOSED_FALSE_OLD_READING
 DIDYMA_273_PROPHETIS = CLOSED_AS_FRAGMENTARY_EXEMPLI_GRATIA_RESTORATION
 APPHE_IK61_DIRECT_PHI_BODY = CLOSED_DIRECT
 APPHE_PROPHET_WIFE_READING_FROM_THIS_INSCRIPTION = CLOSED_NOT_SUPPORTED
+TERMESSOS_TAMIII1_870_BODY = CLOSED_DIRECT_FIRST_PARTY_PHI_INDEX
+TERMESSOS_TAMIII1_870_FEMALE_PROPHETIS = CLOSED_DIRECT
+TERMESSOS_TAMIII1_870_SAME_OBJECT_IMAGE = NOT_AUTOPSIED_NONBLOCKING
 POTTA_TAM_V1_535_DIRECT_TARGET_PAGE = REOPEN_TARGET / SPECIALIST_WORDING_STRONG
 NANAS_TABBERNEE_FIG77 = TERMINAL_EXTERNAL_IMAGE_HOLD_CURRENT_RUNTIME
-TERMESSOS_TAMIII1_870_BODY = HIGH_PRIORITY_PRIMARY_REOPEN / DO_NOT_COUNT_AS_SECURE_UNTIL_BODY
 IGII2_13148 = VERY_LIKELY_REFERENCE_ERROR / INTENDED_REFERENCE_UNKNOWN / DO_NOT_GUESS
 SEG49_1624 = VERY_LIKELY_REFERENCE_ERROR / ARENA_REVERSAL_REJECTED / INTENDED_REFERENCE_UNKNOWN / DO_NOT_GUESS
 CORRINGTON_1991_DIRECT_FULLTEXT = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
