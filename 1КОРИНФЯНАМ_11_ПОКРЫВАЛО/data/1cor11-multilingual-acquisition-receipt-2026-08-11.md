@@ -1,7 +1,8 @@
 # 1 Cor 11:2–16 — multilingual acquisition receipt — 2026-08-11
 
 **Type:** `PROVENANCE-RECEIPT / MULTILINGUAL-SEARCH / REGIONAL-ACCESS / NON-AUTHORITY`  
-**Controlling owners:** `00_CURRENT_INDEX_1COR11.md`, `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md`, domain-specific evergreen dossiers.
+**Controlling owners:** `00_CURRENT_INDEX_1COR11.md`, `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md`, domain-specific evergreen dossiers.  
+**Last sync:** 2026-08-12
 
 This receipt records genuinely distinct provenance introduced by the multilingual/regional acquisition method. It does **not** own grades.
 
@@ -351,13 +352,16 @@ Official J-STAGE directly verifies Heon-Wook Park / 朴憲郁, “礼拝共同�
 
 The Japanese title controls the passage identity as **1 Corinthians 11:3–12**. J-STAGE's English issue-level auto-title currently displays `1 Corinthians 1:3-12`; this conflicts with the Japanese title and DOI/article page and is treated as a metadata typo, not as a passage conflict.
 
+The official 14-page J-STAGE PDF has since been directly acquired and read in the target workflow; selected printed pp.29, 33 and 40 were visually checked. The multilingual discovery route is therefore no longer a body blocker.
+
 ```text
 PARK_1990_JAPANESE_ARTICLE_IDENTITY = CLOSED_DIRECT_OFFICIAL
 PARK_1990_JSTAGE = OPEN_ACCESS
 PARK_1990_PDF_ROUTE = 678_KB_OFFICIAL
-PARK_1990_BODY = TRANSPORT_REOPEN_CURRENT_RUNTIME
+PARK_1990_BODY = CLOSED_DIRECT_OFFICIAL_JSTAGE_FULL_BODY
+PARK_1990_PDF_BYTES = 693584
+PARK_1990_VISUAL_PAGE_CHECK = P29_P33_P40
 PARK_1990_ENGLISH_TOC_1COR1_3_12 = METADATA_TYPO
-PARK_1990_KEPHALE_POSITION = NOT_INFERRED_FROM_TITLE
 ```
 
 ## 13. Vidović 2024 — Croatian exact chapter identity
@@ -483,17 +487,27 @@ GRADE_CHANGE = NO
 
 ```text
 P0 REASONER_2025_FULL_BODY_AND_NOTES
-P0 TERMESSOS_TAMIII1_870_DIRECT_PRIMARY_BODY
-P0 KOWALSKI_2020_FULL_PDF_BODY
+P0_P1 KOWALSKI_2020_FULL_PDF_BODY_OR_RENDERABLE_AUTHOR_2022_BODY
+P1 PETERS_2020_FULL_BODY
+P1 PETERS_2013_CH6_7_P282_PRIMARY_PDF
 P1 WON_2010_PRIMARY_ARTICLE_CARD_AND_BODY
 P1 WON_2010_MA_THESIS_KERIS_BODY
-P1 PARK_1990_JSTAGE_PDF_BODY
 P1 VIDOVIC_2024_FULL_CHAPTER_BODY
 P1 FRANCIS_2023_FULL_PDF_BODY
+P2 GUNDRY_VOLF_1997 / GIELEN_1999 / PEERBOLTE_2000 / CORRINGTON_1991 DIRECT_BODIES
+P2 FANTHAM_OLSON_EXACT_PAGE_AUTOPSY
 P2 MATOS_2004_FULL_PDF_BODY_EDITION_COMPARISON
 ```
 
-Direct transport attempts in this runtime did not justify a body promotion for the remaining open targets. Matos 2007, Wang 2022, Łabuda 2019 and Hao Li 2023 are genuine direct-body closures through distinct lawful routes; none is used to conflate source editions, publisher-byte custody, or page-image autopsy.
+Removed from the substantive reopen queue after independent target-workflow closure:
+
+```text
+TERMESSOS_TAMIII1_870 = CLOSED_DIRECT_FIRST_PARTY_PHI_INDEXED_BODY
+POTTA_TAMV1_535 = CLOSED_DIRECT_FIRST_PARTY_PHI_INDEXED_BODY / PRINTED_PAGE_OPTIONAL
+PARK_1990 = CLOSED_DIRECT_OFFICIAL_JSTAGE_FULL_BODY
+```
+
+Direct transport attempts in this runtime did not justify a body promotion for the remaining open targets. Matos 2007, Wang 2022, Łabuda 2019, Hao Li 2023 and Park 1990 are genuine direct-body closures through distinct lawful routes; Termessos and Potta are direct first-party PHI indexed-body closures. None is used to conflate source editions, publisher-byte custody, page-image autopsy, or a primary object with a downstream transcription.
 
 ## 18. Search-state result
 
@@ -507,6 +521,7 @@ NEW_LICENSED_EBOOK_ROUTES_FOUND = YES
 NEW_AUTHOR_FULL_PDF_ROUTES_FOUND = YES
 NEW_INSTITUTIONAL_OR_OFFICIAL_OA_PDF_ROUTES_FOUND = YES
 PARK_METADATA_TYPO_QUARANTINED = YES
+PARK_1990_FULL_OFFICIAL_BODY_CLOSED = YES
 WON_2010_ISSUE_LINEAGE_NARROWED = YES
 WON_2010_PRIMARY_ARTICLE_CARD_CLOSED = NO
 WON_2010_MA_THESIS_ROUTE_FOUND = YES
@@ -519,7 +534,8 @@ LI_HAO_2023_FULL_OFFICIAL_PDF_TEXT_CLOSED = YES
 MATOS_2004_DISSERTATION_BODY_CLOSED = NO
 VIDOVIC_2024_BODY_CLOSED = NO
 REASONER_2025_BODY_CLOSED = NO
-TERMESSOS_TAMIII1_870_PRIMARY_GREEK_CLOSED = NO
+TERMESSOS_TAMIII1_870_PRIMARY_GREEK_CLOSED = YES
+POTTA_TAMV1_535_PRIMARY_GREEK_CLOSED = YES
 CORE_GRADE_REVERSALS = 0
 ```
 
