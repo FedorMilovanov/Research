@@ -78,15 +78,20 @@ Independently verified branch deltas already migrated to owners:
 ```text
 APPHE_IK61_DIRECT_PHI_BODY = CLOSED_DIRECT
 APPHE_PROPHET_WIFE_READING_FROM_THIS_INSCRIPTION = NOT_SUPPORTED
+TERMESSOS_TAMIII1_870_DIRECT_PHI_INDEXED_BODY = CLOSED_DIRECT
+TERMESSOS_870_FEMALE_PROPHETIS_NOUN_BEARER = CLOSED_DIRECT
 P_WISC_I_13_EXOUSIA_LEXEME = FULLY_EDITORIALLY_RESTORED_IN_TARGET_FORMULA
 P_OXY_8_1120 = KATA_PLUS_GENITIVE_CONTROL
 P_OXY_9_1205 = EIS_PLUS_ACCUSATIVE_DIRECT_DDBDP
 BGU_7_1655 = EXOUSIA_ECHEIN_DIRECT / APO_VS_EK_APPARATUS_CAUTION
+FENDEL_PUBLISHED_CORPUS_BODY = CLOSED_DIRECT_WILEY
 FENDEL_THREE_REPORTED_PP_DOCUMENTS = INDEPENDENTLY_CONTROLLED_AT_DOCUMENT_LEVEL
-FENDEL_XLSX_BINARY_TARGET_READ = NO
+FENDEL_XLSX_BINARY_TARGET_READ = NO_OPTIONAL_REPRODUCIBILITY_CUSTODY
 COSTA_FULL_OFFICIAL_UFMG_PDF = CLOSED_DIRECT
 KOWALSKI_KUL_ITEM_AND_PDF_FILE_OBJECT = CLOSED_INSTITUTIONAL / BODY_NOT_RENDERED
-HUGHES_TABLE1_COUNTS = CLOSED_EXACT_LATER_PEER_REVIEWED_CITATION
+HUGHES_2007_FULL_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_PROFILE
+HUGHES_TABLE1_AND_TABLE2 = CLOSED_DIRECT_BODY
+TORBUS_2023_FULL_PUBLISHED_BODY = CLOSED_DIRECT
 LI_HAO_2023_FULL_52_PAGE_PDF_TEXT = CLOSED_DIRECT
 WANG_2022_AUTHOR_UPLOADED_PUBLISHED_FULL_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD
 LABUDA_2019_FULL_OFFICIAL_PDF_TEXT = CLOSED_DIRECT
@@ -315,10 +320,13 @@ OPTIONAL = PAGE_IMAGE_AUTOPSY_IF_RENDERER_RECOVERS
 **Where:** Peeters / JSTOR 48653612 / DOI `10.2143/BIB.101.3.3288730`.  
 **Extract:** slavery/status mechanism; primary evidence; verse chain.
 
+A 2021 Michael Bird post points to the exact historical author-copy Academia URL, but that exact Peters page now returns 404. Bird reproduces the article's conclusion and confirms the broad equality/status direction, yet that secondary quotation is not a substitute for the full body.
+
 ```text
 STATUS = BODY_OPEN
-CLOSED = PUBLISHER_ABSTRACT
+CLOSED = PUBLISHER_ABSTRACT + HISTORICAL_EXACT_AUTHOR_COPY_PROVENANCE_TRACE
 OPEN = FULL_BODY
+OLD_AUTHOR_COPY_URL = CURRENTLY_404
 ```
 
 ## 18. Janelle Peters dissertation (Emory, 2013)
@@ -329,7 +337,7 @@ OPEN = FULL_BODY
 
 ```text
 STATUS = BODY_OPEN
-CLOSED = INSTITUTIONAL_OBJECT + TOC
+CLOSED = INSTITUTIONAL_OBJECT + TOC + OPEN_ACCESS_RIGHTS_ROUTE
 OPEN = CH6_7 + P282_DIRECT
 ```
 
@@ -353,8 +361,8 @@ OPEN = COMPLETE_DIRECT_BODY
 
 ```text
 STATUS = BODY_OPEN
-CLOSED = BIBLIOGRAPHY
-OPEN = FULL_BODY
+CLOSED = BIBLIOGRAPHY + JSTOR_XML_ENDPOINT_IDENTITY
+OPEN = FULL_BODY_XML_OR_PDF
 ```
 
 ## 21. Gail Paterson Corrington (1991)
@@ -395,14 +403,19 @@ OPEN = COMPLETE_DIRECT_BODY / EXACT_ARENA_PREVIEW_WORDING_REPRODUCTION
 
 ## 24. Lisa A. Hughes (2007)
 
-**Read:** full pp.218–241 if possible; mandatory direct autopsy of Table 1 p.227 + surrounding methodology.  
-**Where:** *Material Religion* / Taylor & Francis; DOI `10.2752/175183407X219750`.  
-**Already controlled by exact later peer-reviewed citation:** Table 1 p.227, `N=113`, `67 veiled (59%)`, `46 unveiled (41%)`.
+The complete published body is now directly controlled through Lisa Hughes's University of Calgary author profile / linked Academia paper page, in addition to Taylor & Francis article identity.
+
+Direct body includes:
+- Table 1 p.227: `N=113`, `67 veiled (59%)`, `46 unveiled (41%)`;
+- Table 2 inscription-preservation split;
+- sample/preservation/cost methodology;
+- direct evidence that respectable married freedwomen/matronae can be represented unveiled;
+- explicit rejection of one universal status-veiling rule.
 
 ```text
-STATUS = PARTIAL
-CLOSED = TABLE1_LOCATOR + N113 + 67_46 + 59_41_BY_EXACT_PEER_REVIEWED_LATER_CITATION
-OPEN = DIRECT_HUGHES_TABLE_IMAGE + SURROUNDING_METHODOLOGY + OPTIONAL_FULL_ARTICLE
+STATUS = CLOSED_FOR_CLAIM
+CLOSED = DIRECT_AUTHOR_PROFILE_FULL_PUBLISHED_BODY + TABLE1 + TABLE2 + METHODOLOGY + CONCLUSION
+OPTIONAL = TAYLOR_FRANCIS_PUBLISHER_PDF_BYTE_OR_PAGE_IMAGE_CUSTODY
 ```
 
 ## 25. Marcin Kowalski (2020)
@@ -411,22 +424,24 @@ OPEN = DIRECT_HUGHES_TABLE_IMAGE + SURROUNDING_METHODOLOGY + OPTIONAL_FULL_ARTIC
 **Where:** official KUL repository / APCZ; DOI `10.12775/BPTh.2020.003`.  
 **Already controlled:** KUL institutional item + PDF file object + abstract macrostructure (v2 intro; v3 Pauline thesis; vv4–6 cultural; vv7–12 Christological/theological; vv13–15 natural-law argument).
 
+A distinct author-upload route also exists for Kowalski's later 2022 chapter on changing gender roles and 1 Cor 11, but its attachment binary still does not render in the current runtime. Do not substitute route existence for body reading.
+
 ```text
 STATUS = PARTIAL
-CLOSED = KUL_ITEM + PDF_FILE_OBJECT + CONTINUOUS_PAULINE_ABSTRACT_STRUCTURE
-OPEN = FULL_PDF_BODY + V10_ANGELS_DETAIL
+CLOSED = KUL_ITEM + PDF_FILE_OBJECT + CONTINUOUS_PAULINE_ABSTRACT_STRUCTURE + AUTHOR_2022_DOWNLOAD_ROUTE_IDENTITY
+OPEN = FULL_2020_PDF_BODY_OR_RENDERABLE_AUTHOR_2022_BODY + V10_ANGELS_DETAIL
 ```
 
-## 26. Sławomir Torbus (2009)
+## 26. Sławomir Torbus — 2009 historical chapter / 2023 direct continuity body
 
-**Read:** pp.507–521.  
-**Where:** Brill, *New Chapters in the History of Rhetoric*.  
-**Extract:** exact dispositio; continuity; whether quotation/refutation models are directly addressed.
+Torbus 2009, “The Rhetorical Dispositio of 1 Cor. 11, 2–16 and the Problem of the Veil,” pp.507–521, remains useful only for exact historical/edition comparison.
+
+A materially stronger direct source now closes Torbus's substantive later position: his complete 2023 University of Wrocław / *Quaestiones Oralitatis* article, “Is 1 Corinthians 11:3b–15 an Interpolation?”, pp.41–53, is directly read under CC BY 4.0. It argues a coherent continuous 1 Cor 11:2–14:40 macrostructure, rejects interpolation, and directly reads v10 as the woman having control/right regarding her own head, while the proposed social mechanism remains reconstruction-layer.
 
 ```text
-STATUS = BODY_OPEN
-CLOSED = CHAPTER_IDENTITY
-OPEN = DIRECT_BODY
+STATUS = OPTIONAL
+CLOSED = TORBUS_2023_DIRECT_FULL_PUBLISHED_BODY + CONTINUITY_MODEL + V10_ACTIVE_WOMAN_CONTROL
+OPTIONAL = TORBUS_2009_PP507_521_HISTORICAL_EDITION_COMPARISON
 ```
 
 ## 27. Peter Arzt-Grabner et al., PKNT 2 (2006)
@@ -447,11 +462,9 @@ OPEN = DIRECT_P390
 
 ## 28. Fendel 2023 — `EXOUSIAN.xlsx`
 
-**Read/data-audit:** actual Oxford spreadsheet binary `EXOUSIAN.xlsx` (51.7 KB).  
-**Where:** Oxford Research Archive dataset, DOI `10.5287/ora-dqmbwrvj6`.  
-**Need from binary:** exact normalized rows/case labels and any row metadata.
+The actual Oxford spreadsheet binary `EXOUSIAN.xlsx` (51.7 KB) remains unopened in the current runtime, but it is no longer a substantive evidence blocker.
 
-The three underlying reported Roman-period PP documents have now been independently checked outside the XLSX:
+Why: Fendel's complete Wiley article is directly read and publishes the systematic corpus result (`272` documents, `290` `ἐξουσίαν` tokens, `190` `ἐξουσίαν ἔχω` instances plus complement distributions), and the three reported Roman-period PP documents have independently been checked at document level:
 
 ```text
 P_OXY_8_1120 = KATA + GENITIVE
@@ -461,58 +474,51 @@ NO_EPI_GENITIVE_AMONG_THE_THREE_DOCUMENT_LEVEL_CONTROLS = TRUE
 ```
 
 ```text
-STATUS = PARTIAL
-CLOSED = DATASET_OBJECT + FILE_IDENTITY + THREE_UNDERLYING_DOCUMENTS_AT_DOCUMENT_LEVEL
-OPEN = XLSX_BINARY_ITSELF
+STATUS = CLOSED_FOR_CLAIM
+CLOSED = DIRECT_WILEY_PUBLISHED_CORPUS + DATASET_OBJECT + FILE_IDENTITY + THREE_UNDERLYING_DOCUMENTS_AT_DOCUMENT_LEVEL
+OPTIONAL = XLSX_BINARY_EXACT_ROW_NORMALIZATION_FOR_REPRODUCIBILITY
 DO_NOT_CLAIM_XLSX_TARGET_READ = true
 ```
 
 ## 29. PG 118 — direct scan image p.409
 
-**Inspect:** original PG 118 PDF p.409.  
-**Where:** Wikimedia Commons `Patrologia Graeca Vol. 118.pdf`.  
-**Verify:** Clement fragment + Photius parallel against OCR; labels, Greek, punctuation, layout.
+The OCR locator and original public-domain scan object are closed. The target p.409 image remains a transport-only custody issue; the patristic scan owner has already terminalized the current route.
 
 ```text
-STATUS = BODY_OPEN_IMAGE
-CLOSED = ORIGINAL_SCAN_OBJECT + OCR_LOCATOR
-OPEN = TARGET_PAGE_IMAGE_AUTOPSY
+STATUS = CLAIM_CLOSED_IMAGE_OPTIONAL
+CLOSED = ORIGINAL_SCAN_OBJECT + OCR_LOCATOR + TARGET_PDF_PAGE_409
+OPTIONAL = TARGET_PAGE_IMAGE_AUTOPSY_IF_NEW_RENDERABLE_ROUTE_APPEARS
 ```
 
 ## 30. Cyril of Alexandria — PG 74 cols.879–883
 
-**Inspect:** original PG 74 scan at cols.879–883.  
-**Where:** Wikimedia Commons.  
-**Verify:** Cyril wording vs Cramer `Κυτίλλου`; image authority over OCR.
+The original public-domain PG74 scan object and exact target columns are closed. PG74 is not in the current 2026 OCR corpus; current Commons binary transport cannot render the target page.
 
 ```text
-STATUS = BODY_OPEN_IMAGE
-CLOSED = WORK/COLUMN/SCAN_OBJECT
-OPEN = TARGET_IMAGE_AUTOPSY
+STATUS = CLAIM_CLOSED_IMAGE_OPTIONAL
+CLOSED = WORK + TARGET_COLUMNS_879_883 + ORIGINAL_SCAN_OBJECT
+OPTIONAL = TARGET_IMAGE_AUTOPSY_IF_NEW_RENDERABLE_ROUTE_APPEARS
 ```
 
 ## 31. Theodoret — PG 82 cols.312D–313A
 
-**Inspect:** PG 82 cols.312D–313A; also Hill vol.1 (2001) p.205 if accessible.  
-**Where:** Wikimedia Commons + library.  
-**Verify:** assigned-angel/care wording; Acts 12:15 + Matt 18:10; Hill translation.
+The standalone commentary range, target columns and original public-domain PG82 object are closed; Hill p.205 remains a modern-translation comparison route if accessible.
 
 ```text
-STATUS = BODY_OPEN_IMAGE
-CLOSED = WORK/COLUMNS/SCAN_OBJECT
-OPEN = PG_IMAGE + HILL_P205
+STATUS = CLAIM_CLOSED_IMAGE_OPTIONAL
+CLOSED = WORK + TARGET_COLUMNS_312D_313A + ORIGINAL_SCAN_OBJECT + STRONG_TWO_ROUTE_PAGE_LOCATOR
+OPTIONAL = PG_IMAGE_AUTOPSY + HILL_P205_IF_NEW_ACCESS
 ```
 
 ## 32. Potta — TAM V.1 535 / PH263959
 
-**Read:** exact direct PHI target page / printed object.  
-**Where:** PHI `PH263959`; TAM V.1 no.535.  
-**Verify:** complete syntax around `Ποτταν ... προφῆτιν σώτειραν`; object description; head/hair absence/presence.
+PHI now directly returns the target `TAM V,1 535`, Lydia: Maionia, marks `laurus`, and exposes the beginning/end of the target text in its first-party search surface. The middle line containing the full `Ποτταν ... προφῆτιν σώτειραν` sequence still does not render directly through PHI in the current workflow. Independent specialist/full-transcription controls and a later Aydemir author-upload route converge on the complete wording, but the author-upload binary also remains transport-held.
 
 ```text
 STATUS = PARTIAL
-CLOSED = OBJECT_IDENTITY + STRONG_SPECIALIST_FULL_WORDING + LAUREL_MOTIF_CONTROL
-OPEN = DIRECT_PHI_TARGET_PAGE_OR_PRINTED_BODY
+CLOSED = PHI_FIRST_PARTY_TARGET_OBJECT + MAIONIA + LAURUS + DIRECT_BEGINNING_END + STRONG_FULL_WORDING_CONVERGENCE
+OPEN = DIRECT_PHI_MIDDLE_PROPHETIS_LINE_OR_PRINTED_BODY
+DO_NOT_CALL_FULL_DIRECT_PHI_BODY_CLOSED = true
 ```
 
 ## 33. Nanas — same-object image
@@ -547,16 +553,20 @@ OPEN = PRINTED_PAGE_IMAGE_ONLY
 
 ## 35. Termessos — TAM III,1 870 / PH280975
 
-**Read:** exact complete inscription body.  
-**Where:** PHI `PH280975` / TAM III,1 no.870 / library scan.  
-**Verify:** noun bearer; gender; syntax; genre; Eleusinian/Demeter relation.
-
-Arena reports a plausible exact line, but it is **not promoted** until target primary body reopens because the same arena branch produced the false Nisyra reversal.
+The target-workflow PHI search/index now independently returns the target inscription and exact line:
 
 ```text
-STATUS = BODY_OPEN_HIGH_PRIORITY
-CLOSED = CORPUS_IDENTITY + SPECIALIST_PROPHETIS_REFERENCE
-OPEN = DIRECT_TARGET_BODY + NOUN_BEARER + GENRE
+τό(πος) Αὐρ(ηλίας) Ὀρεστι-
+ανῆς, ἱ(ερῶν) Ἐλευσι-
+νίων προφήτ̣ι̣δ̣ο̣ς̣.
+```
+
+This directly closes Aurelia Oresteiane as the female `προφῆτις` noun-bearer in relation to the Eleusinian sacred context. `τόπος` is a place/locus marker and does not by itself prove detailed monument morphology. No head/hair code appears in the checked text.
+
+```text
+STATUS = CLOSED_FOR_CLAIM
+CLOSED = DIRECT_PHI_INDEXED_TARGET_BODY + FEMALE_PROPHETIS_NOUN_BEARER + ELEUSINIAN_RELATION
+OPTIONAL = PRINTED_EDITION_IMAGE / MONUMENT_MORPHOLOGY_CUSTODY
 ```
 
 ## 36. Nisyra — SEG 49.1624 / PH348429 / TM949255
@@ -657,6 +667,7 @@ IGLSYR_1_51 = CLOSED_DIRECT_FALSE_PERSON_CONTROL
 MILETOS_481 = CLOSED_DIRECT
 AMMIAS_THYATEIRA = CLOSED_DIRECT
 APPHE_IK61_TEXT = CLOSED_DIRECT_PHI
+TERMESSOS_TAMIII1_870_BODY = CLOSED_DIRECT_PHI_INDEXED_TARGET
 NISYRA_SEG49_1624_REFERENCE_ERROR_CONTROL = CLOSED_FOR_CURRENT_CLAIM
 P_WISC_I_13_RESTORATION_CEILING = CLOSED_DIRECT_DDBDP
 P_OXY_8_1120_CONSTRUCTION = CLOSED_DOCUMENTARY_CONTROL
@@ -667,7 +678,8 @@ SALES_2024 = CLOSED_OPEN_FULLTEXT
 COSTA_2023_2024 = CLOSED_DIRECT_FULL_OFFICIAL_UFMG_PDF
 ROMEROWSKI_2006 = CLOSED_DIRECT_AUTHOR_HOSTED_FULL_PDF
 STAFFORD_2024 = CLOSED_DIRECT_OXFORD
-HUGHES_TABLE1_COUNTS_VIA_STAFFORD_EXACT_CITATION = CLOSED_CONTROL
+HUGHES_2007_FULL_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_PROFILE
+HUGHES_TABLE1_TABLE2_METHOD = CLOSED_DIRECT_BODY
 THOMPSON_1988 = CLOSED_DIRECT_PUBLISHER_CONTROL
 GILL_1990 = CLOSED_DIRECT_OPEN
 ASCSA_CORINTH_XXII_OBJECT_CONTEXT = CLOSED_CURRENT_ASSEMBLAGE_CONTROL
@@ -675,12 +687,17 @@ GOODACRE_2011 = CLOSED_DIRECT_FULL_BODY
 MARTIN_2013 = CLOSED_DIRECT_TEXT_BODY
 HILTON_MATTHEWS_2008 = CLOSED_DIRECT_UKZN_PDF
 FENDEL_2023_ARTICLE_BODY_AND_CORPUS_COUNTS = CLOSED_DIRECT
+FENDEL_XLSX = OPTIONAL_ROW_REPRODUCIBILITY_ONLY
+TORBUS_2023_FULL_BODY = CLOSED_DIRECT
 PSI_X_1115 = CLOSED_DIRECT
 TAM_II_603_604 = CLOSED_DIRECT
 LI_HAO_2023_FULL_BODY = CLOSED_DIRECT_52_PAGE_PDF_TEXT
 WANG_2022_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD
 LABUDA_2019_FULL_BODY = CLOSED_DIRECT_OFFICIAL_PDF_TEXT
 GATUMU_2020_FULL_BODY = CLOSED_DIRECT_OFFICIAL_OJS_PDF_TEXT
+PG118_P409 = SCAN_OBJECT_AND_LOCATOR_CLOSED / IMAGE_OPTIONAL_TRANSPORT
+PG74_879_883 = SCAN_OBJECT_AND_COLUMNS_CLOSED / IMAGE_OPTIONAL_TRANSPORT
+PG82_312D_313A = SCAN_OBJECT_AND_COLUMNS_CLOSED / IMAGE_OPTIONAL_TRANSPORT
 ```
 
 ---
@@ -703,20 +720,33 @@ GATUMU_2020_FULL_BODY = CLOSED_DIRECT_OFFICIAL_OJS_PDF_TEXT
 11 Okland_ch4_7
 ```
 
-## B. Parallel-harvest/source-control reopen priorities
+## B. Highest-value remaining source/body reopen priorities
 
 ```text
-P0 TERMESSOS_TAMIII1_870_DIRECT_BODY
-P0 FENDEL_EXOUSIAN_XLSX_BINARY
 P0 REASONER_RICH_PREVIEW_OR_FULL_BODY_REPRODUCTION
-P0 KOWALSKI_FULL_PDF_BODY
-P1 POTTA_DIRECT_PHI_TARGET_PAGE
-P1 HUGHES_DIRECT_TABLE1_IMAGE_AND_METHOD_CONTEXT
+P0_P1 KOWALSKI_2020_FULL_PDF_BODY_OR_RENDERABLE_AUTHOR_2022_BODY
+P1 POTTA_DIRECT_PHI_MIDDLE_PROPHETIS_LINE_OR_PRINTED_BODY
+P1 PETERS_2020_FULL_BODY
+P1 PETERS_2013_CH6_7_P282_PRIMARY_PDF
+P1 WON_2010_PRIMARY_ARTICLE_AND_THESIS_BODY
+P1 PARK_1990_JSTAGE_PDF_BODY
+P1 VIDOVIC_2024_FULL_CHAPTER_BODY
 P1 FRANCIS_FULL_PDF
+P2 GUNDRY_VOLF_GIELEN_PEERBOLTE_CORRINGTON_DIRECT_BODIES
 P2 FANTHAM_OLSON_EXACT_PAGE_AUTOPSY
 ```
 
-Hao Li 2023 and Wang 2022 are removed from this substantive reading queue because their published bodies are now directly closed. Optional page-image/publisher-byte custody does not make them P1 body blockers.
+Removed from the substantive reopen queue because the controlling owners are now closed:
+
+```text
+TERMESSOS_870 = CLOSED_DIRECT_PHI
+FENDEL_XLSX = OPTIONAL_REPRODUCIBILITY_CUSTODY_ONLY
+HUGHES_2007 = CLOSED_DIRECT_AUTHOR_PROFILE_FULL_BODY
+TORBUS_CONTINUITY = CLOSED_DIRECT_TORBUS_2023
+PG118_PG74_PG82_CURRENT_IMAGE_ROUTES = TERMINALIZED_OPTIONAL_CUSTODY
+```
+
+Hao Li 2023 and Wang 2022 remain removed from the substantive reading queue because their published bodies are directly closed. Optional page-image/publisher-byte custody does not make them body blockers.
 
 ## C. Remaining specialist sequence
 
@@ -729,12 +759,11 @@ Hao Li 2023 and Wang 2022 are removed from this substantive reading queue becaus
 18 Peters_2013_ch6_7_p282
 19 Cosgrove_2005
 20 Corrington_1991
-21 Fantham_Olson_Hughes
-22 Kowalski_Torbus
+21 Fantham_Olson
+22 Kowalski
 23 PKNT_p390
-24 PG118_PG74_PG82_images
-25 Potta_Nanas_Termessos_objects
-26 M3_optional_controls
+24 Potta_Nanas_objects
+25 M3_optional_controls
 ```
 
 ---
