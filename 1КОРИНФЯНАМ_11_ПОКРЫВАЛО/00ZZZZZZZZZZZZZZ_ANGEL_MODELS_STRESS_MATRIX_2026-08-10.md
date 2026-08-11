@@ -1,6 +1,6 @@
 # Angel-model stress matrix — 1 Cor 11:10
 
-**Дата:** 2026-08-10  
+**Дата:** 2026-08-11  
 **Статус:** `MODEL-STRESS-TEST / PRIMARY-CORPUS-CONTROL / SOURCE-PROVENANCE / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Method
@@ -150,6 +150,52 @@ WATCHERS_GRADE_CHANGE = none
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
 ```
 
+## 4.2 Anderson Dias de Araújo 2008 — complete published Watchers argument recovered
+
+Anderson Dias de Araújo, “Anjos vigilantes e mulheres desveladas: Uma relação possível em 1 Coríntios 11,10?”, *Oracula* 4.8 (2008): 142–182, ISSN `1807-8222`.
+
+The original `oracula.com.br` PDF route is preserved in later scholarly references (`/numeros/022008/07_araujo.pdf`) but is not currently rendered by the target runtime. A preserved ePaper copy reproduces the **complete 41-page published article**, including the original *Oracula* masthead, continuous printed pagination 142–182, notes and bibliography. This closes the published article body while keeping original publisher-byte custody distinct.
+
+```text
+ARAUJO_2008_ORACULA_IDENTITY = CLOSED
+ARAUJO_2008_COMPLETE_PUBLISHED_BODY = CLOSED_PRESERVED_EPAPER
+ARAUJO_2008_ORIGINAL_ORACULA_PDF_BYTES = NOT_CURRENTLY_RENDERED
+PRESERVED_COMPLETE_PUBLISHED_BODY != ORIGINAL_PUBLISHER_BYTE_CUSTODY
+ARAUJO_2008_ARTICLE != ARAUJO_2009_DISSERTATION_AUTOMATICALLY
+```
+
+Direct body controls:
+
+1. Araújo treats the disputed practical issue as **external veiling**, not merely unbound hair. On printed pp.164–165 he argues that vv5–6 distinguish uncovered head from short/shorn hair and says the Isaksson/Murphy-O’Connor loose-hair hypothesis lacks sufficient linguistic support.
+2. He reads `ἐξουσία` actively. On pp.167–169 he rejects both a passive “someone has authority over her” reading and `ἐξουσία` as a metonym for veil. His preferred sense is that the woman must exercise authority/responsibility over **her own head / her own conduct**.
+3. Christian freedom is central to his Corinth reconstruction: women may have appealed to freedom to abandon conventional sex-differentiating head practice, but Paul requires freedom to be exercised responsibly and without causing scandal.
+4. His Watchers argument is explicit rather than merely bibliographic. In the conclusion he proposes two possible contact points with the Enochic Watchers tradition: unveiled women could provoke angelic sexual desire, and the woman’s responsibility over her own head may function to avoid contributing to an angelic transgression.
+5. He therefore combines **active female `ἐξουσία`** with a **material-veil + Watchers-danger** model; those are not mutually exclusive in his argument.
+
+```text
+ARAUJO_2008_MATERIAL_VEIL = DIRECT_BODY
+ARAUJO_2008_LOOSE_HAIR_ONLY = REJECTED_AS_INSUFFICIENT
+ARAUJO_2008_EXOUSIA_PASSIVE_EXTERNAL_AUTHORITY = REJECTED
+ARAUJO_2008_EXOUSIA_METONYM_VEIL = REJECTED
+ARAUJO_2008_EXOUSIA = ACTIVE_WOMAN_RESPONSIBILITY_OVER_OWN_HEAD
+ARAUJO_2008_CORINTH_FREEDOM_TRIGGER = RECONSTRUCTION_LAYER
+ARAUJO_2008_WATCHERS_CONTACT_1 = UNVEILED_WOMEN_MAY_PROVOKE_ANGELIC_DESIRE
+ARAUJO_2008_WATCHERS_CONTACT_2 = FEMALE_HEAD_RESPONSIBILITY_MAY_AVOID_ANGELIC_TRANSGRESSION
+```
+
+Calibration:
+
+```text
+ARAUJO_2008 = DIRECT_FULL_BODY_PUBLISHED_WATCHERS_MODEL
+WATCHERS_PUBLISHED_PROVENANCE = STRENGTHENED
+WATCHERS_REFERENT = C_SERIOUS_UNCHANGED
+SEXUAL_THREAT_MECHANISM = C_LOW_TO_C_UNCHANGED
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+```
+
+The full body improves representation of a serious alternative; it does **not** remove the local burdens listed above or promote the Watchers referent merely because the model is now directly read.
+
 ---
 
 # 5. Hooker 1964 — distinct angel model, not Watchers
@@ -258,6 +304,7 @@ HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
 ANGELS_AS_COSMIC_WITNESSES_PRESENT_ASSEMBLY = B_LEADING
 EXACT_ANGELIC_FUNCTION = B_C
 WATCHERS = C_SERIOUS
+ARAUJO_2008 = COMPLETE_PUBLISHED_WATCHERS_BODY_CLOSED_PRESERVED_EPAPER
 HOOKER_MISDIRECTED_WORSHIP_FUNCTION = D_C_LOW_TO_C_PUBLISHED_ALTERNATIVE
 GUARDIAN_ANGELS = C_LOW
 HUMAN_MESSENGERS = D_C_LOW
