@@ -214,7 +214,7 @@ ARAUJO_WATCHERS_MODEL = REAL_PORTUGUESE_SCHOLARLY_NODE
 WATCHERS_GRADE_CHANGE_FROM_ABSTRACT_ALONE = NO
 ```
 
-## 11. Nathanael Xuesheng Wang 2022 — Chinese official OA journal route
+## 11. Nathanael Xuesheng Wang 2022 — official object + author-uploaded published body
 
 Official *Journal of Research for Christianity in China* / 《中国基督教研究》 records:
 - 王学晟 / Nathanael Xuesheng Wang;
@@ -222,20 +222,41 @@ Official *Journal of Research for Christianity in China* / 《中国基督教研
 - no.19 (2022), pp.80–111;
 - DOI `10.29635/JRCC.202212_(19).0005`;
 - official journal article page + PDF route;
-- journal is open access and states CC BY-NC-ND 4.0 for its articles.
+- journal is open access under CC BY-NC-ND 4.0.
 
-The official abstract directly says the author reads 1 Cor 11:2–16 as Paul supporting women's prayer/prophecy while requiring head covering primarily because of the young church's social image, not as a restriction on women's ministry. It separately treats 1 Cor 14:34–35 as a later interpolation.
+The publisher PDF endpoint remains a runtime transport/cache hold. A materially distinct lawful route closes the published body: ResearchGate exposes the complete JRCC published PDF as **author content uploaded by Wang himself** on 2024-12-14. The journal masthead, issue, pages and DOI in that author-uploaded copy converge with the official JRCC object.
+
+Direct body controls:
 
 ```text
-WANG_2022_CHINESE_ARTICLE_IDENTITY = CLOSED_DIRECT_OFFICIAL_JOURNAL
+WANG_2022_OFFICIAL_JRCC_OBJECT = CLOSED_DIRECT_OFFICIAL_JOURNAL
 WANG_2022_OFFICIAL_OA_PDF_ROUTE = VERIFIED
-WANG_2022_ABSTRACT = CLOSED_DIRECT_OFFICIAL
-WANG_2022_FULL_PDF_BODY = NOT_YET_RENDERED_CURRENT_RUNTIME
-WANG_2022_MATERIAL_COVERING_SOCIAL_IMAGE_MODEL = REAL_CHINESE_SCHOLARLY_NODE
-GRADE_CHANGE_FROM_ABSTRACT_ALONE = NO
+WANG_2022_PUBLISHER_PDF_BYTES_CURRENT_RUNTIME = TRANSPORT_HOLD
+WANG_2022_AUTHOR_UPLOADED_PUBLISHED_FULL_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD
+WANG_2022_AUTHOR_UPLOAD != PUBLISHER_BYTE_CUSTODY_AUTOMATICALLY
+WANG_2022_GYNE = ALL_WOMEN_PREFERRED_IN_AUTHOR_MODEL
+WANG_2022_WOMEN_PRAY_PROPHESY = ACTIVE_GATHERED_MINISTRY_ALLOWED
+WANG_2022_AKATAKALYPTOS_LOOSE_HAIR_ONLY = REJECTED
+WANG_2022_MATERIAL_HEAD_COVERING = AUTHOR_PREFERRED
+WANG_2022_PUBLIC_IMAGE_HONOR_SHAME = CENTRAL_AUTHOR_MODEL
+WANG_2022_CORINTH_FREEDOM_DRESS_TRIGGER = RECONSTRUCTION_LAYER
+WANG_2022_V10 = AUTHORITY_SIGN_ON_HEAD_IN_AUTHOR_MODEL
+WANG_2022_V10_ACTIVE_WOMAN_RIGHT = NOT_AUTHOR_MODEL
 ```
 
-A downstream Chinese full-text mirror is discovery-only until compared against the official journal PDF.
+Wang's body explicitly rejects `ἀκατακάλυπτος` as merely unbound hair, preferring cloth/material covering; treats women generally rather than wives only; reads women's prayer/prophecy as permitted gathered ministry; and frames the head-covering problem through gender symbolism, honor/shame and the church's public/missionary image. His exact Corinthian freedom/dress scenario remains reconstruction-layer.
+
+Substantive v10 owner updated:
+- `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`
+
+```text
+WANG_SIGN_READING = REAL_DIRECT_PUBLISHED_CHINESE_COUNTERMODEL
+WANG_SIGN_READING != EXOUSIA_LEXICALLY_MEANS_VEIL
+EXOUSIA_WOMAN_SUBJECT = A_SYNTAX_UNCHANGED
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+```
 
 ## 12. Park 1990 — Japanese J-STAGE exact article route
 
@@ -384,7 +405,7 @@ P1 VIDOVIC_2024_FULL_CHAPTER_BODY
 P2 MATOS_2004_FULL_PDF_BODY_EDITION_COMPARISON
 ```
 
-Direct transport attempts in this runtime did not justify a body promotion for the remaining open targets. Matos 2007 is a genuine direct-body closure and therefore reduces the urgency of the still-unread 2004 thesis without conflating the two objects.
+Direct transport attempts in this runtime did not justify a body promotion for the remaining open targets. Matos 2007 and Wang 2022 are genuine direct-body closures through distinct lawful routes; neither closure is used to conflate source editions or publisher-byte custody.
 
 ## 18. Search-state result
 
@@ -403,6 +424,8 @@ WON_2010_PRIMARY_ARTICLE_CARD_CLOSED = NO
 WON_2010_MA_THESIS_ROUTE_FOUND = YES
 WON_2010_MA_THESIS_BODY_CLOSED = NO
 MATOS_2007_DIRECT_PASSAGE_BODY_CLOSED = YES
+WANG_2022_AUTHOR_UPLOADED_PUBLISHED_BODY_CLOSED = YES
+WANG_2022_PUBLISHER_PDF_BYTES_CLOSED = NO
 MATOS_2004_DISSERTATION_BODY_CLOSED = NO
 VIDOVIC_2024_BODY_CLOSED = NO
 REASONER_2025_BODY_CLOSED = NO
