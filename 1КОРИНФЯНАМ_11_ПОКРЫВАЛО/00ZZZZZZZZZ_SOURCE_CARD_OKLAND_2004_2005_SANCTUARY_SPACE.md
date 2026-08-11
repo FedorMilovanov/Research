@@ -1,7 +1,7 @@
 # Source card — Jorunn Økland, *Women in Their Place* (2004/2005)
 
-**Дата аудита:** 2026-08-10  
-**Статус:** `FOUNDATIONAL-SPECIALIST-MONOGRAPH / CORINTH-ARCHAEOLOGY / GENDERED-RITUAL-SPACE / DIRECT-PUBLISHER-METADATA / TERMINAL-BODY-ACCESS / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Дата аудита:** 2026-08-12  
+**Статус:** `FOUNDATIONAL-SPECIALIST-MONOGRAPH / CORINTH-ARCHAEOLOGY / GENDERED-RITUAL-SPACE / DIRECT-PUBLISHER-METADATA / DETAILED-LICENSED-TOC / TERMINAL-BODY-ACCESS / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Why this source matters
 
@@ -95,14 +95,62 @@ CH7 OBEDIENT_AND_SUBVERSIVE = p224
 Google Books route:
 - https://books.google.com/books/about/Women_in_Their_Place.html?id=kSkJ_LtXlj8C
 
-Perlego independently exposes the same chapter architecture but remains a subscription reading route, not public direct body.
+Licensed ebook retail/catalogue records independently expose a materially more precise subsection map for the same 2005 T&T Clark edition. This is useful for targeted reacquisition, but it is still **table-of-contents architecture, not chapter body**.
+
+```text
+CH4_p78:
+  INTRODUCTION = p78
+  DEMETER_AND_KORE = p80
+  DISCOURSE_OF_CONTAINMENT = p92
+  FRENZIED_FEMALE = p111
+  WIFE_OF_THE_ISRAELITE_GOD_OF_ISRAEL = p118
+  NO_PLACE_APOLLO = p122
+  GENDER_AND_RITUAL_SANCTUARY_SPACE_EARLY_ROMAN_CORINTH = p123
+
+CH5_p131:
+  CORINTHIAN_EKKLESIA_AS_SANCTUARY_SPACE = p131
+  TRACES_OF_RITUAL_AND_SANCTUARY_DISCOURSE = p133
+  EKKLESIA = p135
+  EKKLESIA_SPACE_VS_OIKIA_SPACE = p137
+  EKKLESIA_AS_RITUALLY_CONSTRUCTED_SPACE = p143
+  ONE_COR_14_34_35 = p149
+  EKKLESIA_SPACE_AS_SANCTUARY = p152
+  ONE_CORINTHIANS_IN_SANCTUARY_SPACE_DISCOURSES = p159
+  CONCLUSION = p166
+
+CH6_p168:
+  GENDER_IN_SANCTUARY_SPACE_OF_EKKLESIA = p168
+  COSMIC_GENDER_HIERARCHY = p170
+  MANIFESTATIONS_OF_COSMIC_STRUCTURE_IN_EKKLESIA_SPACE = p188
+  SPEECH_GENDERS_1COR14_33_37 = p201
+  ANTISTRUCTURE_OF_COMMUNITAS = p208
+  CONCLUSION_6_1_6_5 = p210
+  REPRESENTATION_OF_EKKLESIA_AS_MALE_SPACE = p211
+  INTEGRATION_SEGREGATION_SAMENESS_DIFFERENCE = p217
+
+CH7_p224:
+  SANCTUARY_SPACE_AS_REPRESENTATION_OF_COSMOS = p225
+  PAUL_AND_DISCOURSE_OF_GENDER_AND_SANCTUARY_SPACE = p230
+  TENSIONS_CONTRADICTIONS_ANCIENT_GENDER_MODELS = p235
+  ACTORS_IN_A_DISCOURSE = p241
+  EPILOGUE = p245
+```
+
+Independent licensed/retail TOC routes:
+- https://www.kriso.ee/db/97805670127082e.html
+- https://cincinnatistate.ecampus.com/women-place-paul-corinthian-discourse/bk/9780567084071
+
+Perlego independently exposes the chapter architecture but remains a subscription reading route, not public direct body.
 
 ```text
 OKLAND_TOC = CLOSED_DIRECT_PREVIEW
+OKLAND_DETAILED_CH4_7_TOC = CLOSED_LICENSED_BIBLIOGRAPHIC_ARCHITECTURE
+OKLAND_DETAILED_TOC != BODY_READ
+OKLAND_SUBSECTION_TITLE != SUBSECTION_ARGUMENT_VERIFIED
 OKLAND_CH4_7_FULL_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
 ```
 
-TOC is navigational evidence, not proof of page-level arguments.
+TOC is navigational evidence, not proof of page-level arguments. The detailed map should be used to target future lawful chapter access rather than to infer Økland’s exact veil/hair, `κεφαλή`, `ἐξουσία`, angels, `φύσις`, v16 or trigger positions.
 
 ---
 
@@ -155,24 +203,25 @@ OKLAND_V16_EXACT_POSITION = NOT_DIRECTLY_VERIFIED
 OKLAND_EXACT_CORINTH_TRIGGER = NOT_DIRECTLY_VERIFIED
 ```
 
-Secondary descriptions remain locators/control only.
+Secondary descriptions and TOC subsection titles remain locators/control only.
 
 ---
 
 # 8. Final acquisition disposition
 
-Public/publisher routes establish identity, description, thesis-control through review, and TOC; full monograph chapters remain behind purchase/subscription access.
+Public/publisher routes establish identity, description, thesis-control through review and TOC; licensed retailer records now sharpen the internal chapter/subsection acquisition map. Full monograph chapters remain behind purchase/subscription access.
 
 ```text
 OKLAND_BOOK_IDENTITY = CLOSED_DIRECT_PUBLISHER
 OKLAND_P1_THESIS = STRONG_PAGE_SPECIFIC_REVIEW_CONTROL
 OKLAND_TOC = CLOSED_DIRECT_GOOGLE_BOOKS
+OKLAND_DETAILED_CH4_7_TOC = CLOSED_LICENSED_BIBLIOGRAPHIC_ARCHITECTURE
 OKLAND_CH4_7_DIRECT_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
 OKLAND_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
 NEW_AUTHORIZED_INSTITUTIONAL_OR_DIRECT_BODY_ROUTE = REOPEN_ONLY_TRIGGER
 ```
 
-The former `P1/P2 OKLAND_2004_CH4_7_DIRECT_BODY` is therefore no longer an active audit item.
+The former `P1/P2 OKLAND_2004_CH4_7_DIRECT_BODY` is therefore no longer an active audit item. The new detailed TOC improves future reading precision but does not reopen the source as though body text had been acquired.
 
 ---
 
