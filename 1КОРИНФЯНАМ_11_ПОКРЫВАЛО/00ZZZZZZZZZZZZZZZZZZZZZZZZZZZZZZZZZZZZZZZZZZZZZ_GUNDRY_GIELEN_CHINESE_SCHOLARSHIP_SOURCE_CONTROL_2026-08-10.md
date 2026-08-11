@@ -1,16 +1,17 @@
-# 1 Коринфянам 11:2–16 — Gundry-Volf / Gielen / Hao Li / Standhartinger source control
+# 1 Коринфянам 11:2–16 — Gundry-Volf / Gielen / Hao Li / Matand Bulembat / Standhartinger source control
 
 **Дата:** 2026-08-11  
-**Статус:** `MULTILINGUAL-SCHOLARSHIP / MODEL-OWNERSHIP / DIRECT-CHINESE-FULL-BODY / FALSE-FRESHNESS-FIREWALL / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `MULTILINGUAL-SCHOLARSHIP / MODEL-OWNERSHIP / DIRECT-CHINESE-FULL-BODY / DIRECT-AFRICAN-GENESIS-FULL-BODY / FALSE-FRESHNESS-FIREWALL / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority rule
 
-This is the retained owner for four related source-control problems:
+This is the retained owner for five related source-control problems:
 
 1. Judith M. Gundry-Volf 1997;
 2. Marlis Gielen 1999 / 2009;
 3. Hao Li 2023;
-4. Angela Standhartinger 2002 / 2003 false-freshness control.
+4. Jean-Bosco Matand Bulembat 2022;
+5. Angela Standhartinger 2002 / 2003 false-freshness control.
 
 ```text
 OFFICIAL_METADATA != FULL_ARGUMENT
@@ -247,7 +248,72 @@ WEB_REPOST_DATE != SCHOLARLY_PUBLICATION_DATE
 
 ---
 
-# 4. Angela Standhartinger — freshness firewall
+# 4. Jean-Bosco Matand Bulembat 2022 — direct full-body Genesis/midrash countercontrol
+
+Official journal object:
+- https://czasopisma.kul.pl/index.php/ba/article/view/13563
+
+> Jean-Bosco Matand Bulembat, “Was Not the Woman Created in the Likeness of God? Pauline Midrashic Reading of Gen 1–3 in 1 Cor 11:7–12,” *The Biblical Annals* 12.3 (2022): 393–413. DOI `10.31743/biban.13563`.
+
+The KUL journal page directly controls article identity, pp.393–413, DOI, publication date, PDF action and CC BY 4.0 license. A public full-text rendering of the published PDF reproduces the journal masthead, printed pagination, DOI, complete argument, notes and bibliography. The body is therefore closed at published-text level; this is not an abstract-only inference.
+
+```text
+MATAND_2022_OFFICIAL_KUL_OBJECT = CLOSED_DIRECT
+MATAND_2022_PAGES = 393_413
+MATAND_2022_DOI = 10.31743/biban.13563
+MATAND_2022_LICENSE = CC_BY_4_0
+MATAND_2022_FULL_PUBLISHED_BODY = CLOSED_DIRECT_PUBLIC_FULLTEXT
+```
+
+Matand reads vv7–12 as a continuous Pauline midrashic use of Genesis 1–3 rather than as evidence that Paul denied woman's creation in the image of God. He explicitly notes that Gen 1:27 applies image-of-God creation to male and female and concludes that Paul's wording in v7 must not be interpreted as excluding woman from `imago Dei`.
+
+```text
+MATAND_WOMAN_NOT_IMAGE_OF_GOD = REJECTED_IN_AUTHOR_MODEL
+MATAND_MALE_AND_FEMALE_IMAGO_DEI = DIRECT_AUTHOR_BODY
+MATAND_V7_9 = MIDRASHIC_GEN1_GEN2_ARGUMENT
+MATAND_V7_9_FEMALE_ONTOLOGICAL_INFERIORITY = REJECTED
+```
+
+A distinctive contribution concerns `πλήν` at v11. Matand directly disputes the common assumption that `πλήν` necessarily introduces Paul's correction/reversal of vv7–10. Using Luke 22:21 as a comparative adverbial use, he argues that `πλήν` can introduce an additional/supplementary statement rather than a restriction. In his reading vv11–12 **add** reciprocal/procreative arguments to vv8–9 instead of cancelling the creation-order argument.
+
+```text
+MATAND_PLEN_V11 = ADDITION_SUPPLEMENT_PREFERRED_IN_AUTHOR_MODEL
+MATAND_PLEN_V11_CORRECTION_REVERSAL = REJECTED_AS_NECESSARY
+MATAND_VV11_12_CANCEL_VV7_10 = NO_IN_AUTHOR_MODEL
+MATAND_VV11_12 = SUPPLEMENTARY_RECIPROCAL_ARGUMENT
+```
+
+Matand also gives v12 a specific Genesis control: `man through woman` is read as a probable interpretation of **Gen 3:20**, where Eve is named the mother of all living. He therefore places Gen 2:7–23 and Gen 3:20 together: woman originates from man in the creation sequence, while subsequent men come to life through woman in procreation; `all things from God` closes the parallelism.
+
+```text
+MATAND_V12_MAN_THROUGH_WOMAN = PROCREATION_ORDER
+MATAND_V12_GEN3_20 = PROBABLE_AUTHOR_INTERTEXT
+MATAND_VV11_12 = CREATION_ORDER_PLUS_PROCREATION_ORDER
+MATAND_ALL_FROM_GOD = SYNTHETIC_CLOSURE_IN_AUTHOR_MODEL
+```
+
+The body therefore offers a useful countercontrol to two opposite simplifications. It rejects both the claim that vv7–10 establish female ontological inferiority and the claim that vv11–12 simply retract the preceding creation argument.
+
+```text
+MATAND_FEMALE_ONTOLOGICAL_INFERIORITY = REJECTED
+MATAND_VV11_12_AS_SIMPLE_RETRACTION = REJECTED
+MATAND_CREATION_AND_RECIPROCITY = CONTINUOUS_COMPLEMENTARY_ARGUMENT_IN_AUTHOR_MODEL
+```
+
+Project calibration:
+
+```text
+CREATION_ORDER_ASYMMETRY = B_HIGH_UNCHANGED
+MUTUAL_INTERDEPENDENCE_11_11_12 = A_UNCHANGED
+CALIBRATED_CREATION_MUTUAL_ORDER_MODEL = B_HIGH_LEADING_UNCHANGED
+PLEN_REQUIRES_SPEAKER_OR_THEOLOGY_REVERSAL = FALSE
+WOMAN_EXCLUDED_FROM_IMAGO_DEI_BY_V7 = REJECT_AS_PROJECT_SHORTCUT
+CORE_GRADE_REVERSALS = 0
+```
+
+---
+
+# 5. Angela Standhartinger — freshness firewall
 
 Author/university bibliography controls the publication history of:
 
@@ -265,12 +331,13 @@ Use it for history of interpretation/source genealogy, not as a 2025 breakthroug
 
 ---
 
-# 5. Combined implication
+# 6. Combined implication
 
 ```text
 GUNDRY_VOLF = hairstyle + two social contexts + creation/culture/in-Christ interplay
 GIELEN = modified short-hair + sex-role symbolism
 LI_HAO = material covering + active v10 + contextual creation-order asymmetry + reciprocity/unity
+MATAND_2022 = continuous Genesis midrash + imago-Dei inclusion + plen-as-addition + Gen3_20 procreation control
 STANDHARTINGER = history/genealogy of feminist interpretations
 ```
 
@@ -284,12 +351,13 @@ CORE_GRADE_REVERSALS = 0
 
 ---
 
-# 6. Final acquisition disposition
+# 7. Final acquisition disposition
 
 ```text
 GUNDRY_VOLF_1997_PP151_171 = BIBLIOGRAPHIC_AND_PAGE_LOCATORS_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 GIELEN_1999_PP220_249 = ARTICLE_IDENTITY_AND_MODEL_LOCATORS_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 LI_HAO_2023_PP267_318 = FULL_52_PAGE_PDF_TEXT_CLOSED_DIRECT / PAGE_IMAGE_AUTOPSY_RUNTIME_ERROR
+MATAND_2022_PP393_413 = FULL_PUBLISHED_BODY_CLOSED_DIRECT_PUBLIC_CC_BY_TEXT
 STANDHARTINGER_FRESHNESS = CLOSED
 ```
 
@@ -300,13 +368,17 @@ NEW_AUTHORIZED_CHAPTER_ARTICLE_OR_RENDERABLE_PDF_ROUTE = REOPEN_ONLY_TRIGGER
 
 ---
 
-# 7. Result
+# 8. Result
 
 ```text
 GUNDRY_VOLF_MODEL = HAIRSTYLE_PLUS_TWO_CONTEXTS
 GUNDRY_VOLF_HAIR_ONLY_SHORTHAND = REJECTED
 GIELEN_MODEL = MODIFIED_SHORT_HAIR_NOT_SIMPLE_UNBOUND_HAIR
 LI_HAO_2023_CHINESE_SPECIALIST_ARTICLE = FULL_DIRECT_52_PAGE_BODY_CLOSED
+MATAND_2022_AFRICAN_GENESIS_ARTICLE = FULL_PUBLISHED_BODY_CLOSED
+MATAND_PLEN_V11 = ADDITION_NOT_NECESSARY_CORRECTION
+MATAND_V12_GEN3_20 = PROBABLE_AUTHOR_INTERTEXT
+MATAND_WOMAN_IMAGO_DEI = AFFIRMED_IN_AUTHOR_MODEL
 LI_HAO_2025_FALSE_FRESHNESS = BLOCKED
 STANDHARTINGER_ORIGINAL_DATE = 2002
 STANDHARTINGER_2025_FALSE_FRESHNESS = BLOCKED
