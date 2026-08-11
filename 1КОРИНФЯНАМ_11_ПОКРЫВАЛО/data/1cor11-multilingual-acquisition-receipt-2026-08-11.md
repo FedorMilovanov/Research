@@ -13,6 +13,7 @@ LIBRARY_HOLDING != BODY_READ
 OFFICIAL_OR_LICENSED_SAMPLE_ROUTE != TARGET_BODY_READ
 AUTHOR_SUMMARY != FULL_MONOGRAPH_BODY
 SEARCH_SNIPPET != QUOTE_SAFE_BODY
+PDF_TEXT_LAYER != PAGE_IMAGE_AUTOPSY
 ```
 
 ## 1. Fee 1987 — Spanish direct body
@@ -181,15 +182,101 @@ LAMPE_2012_OFFICIAL_OA_PDF_ROUTE = VERIFIED
 LAMPE_2012_BODY = NOT_YET_DIRECTLY_READ
 ```
 
-## 9. Łabuda 2019 — Polish repository route
+## 9. Łabuda 2019 — Polish official full body CLOSED
 
-Institutional/journal repository verifies Piotr Łabuda, “1 Kor 11,2-16 wyrazem mizoginizmu św. Pawła?”, *Śląskie Studia Historyczno-Teologiczne* 52.1 (2019): 5–22, with repository PDF route and open-license metadata.
+Piotr Łabuda, “1Kor 11,2-16 wyrazem mizoginizmu św. Pawła?”, *Śląskie Studia Historyczno-Teologiczne* 52.1 (2019): 5–22, DOI `10.31261/SSHT.2019.52.1.01`.
+
+The University of Silesia journal object directly exposes the article and its CC BY-SA 4.0 PDF. The complete 18-page official publisher PDF text is readable in the current runtime. Repeated page-image screenshot requests for selected pages fail with the publisher PDF cache route, so text/body and page-image custody remain separate.
 
 ```text
-LABUDA_2019_OBJECT = CLOSED_INSTITUTIONAL_METADATA
-LABUDA_2019_ABSTRACT = CLOSED_DIRECT
-LABUDA_2019_PDF_ROUTE = VERIFIED
-LABUDA_2019_FULL_BODY = NOT_YET_DIRECTLY_READ
+LABUDA_2019_OBJECT = CLOSED_DIRECT_OFFICIAL_JOURNAL
+LABUDA_2019_LICENSE = CC_BY_SA_4_0
+LABUDA_2019_FULL_OFFICIAL_PDF_TEXT = CLOSED_DIRECT
+LABUDA_2019_PDF_PAGES = 18
+LABUDA_2019_PAGE_IMAGE_AUTOPSY = RUNTIME_CACHE_MISS
+PDF_TEXT_LAYER != PAGE_IMAGE_AUTOPSY
+```
+
+Body-level whole-model controls:
+
+```text
+LABUDA_WOMEN_PRAY_PROPHESY = ACTIVE_GATHERED_MINISTRY_APPROVED
+LABUDA_KEPHALE = SOURCE_ORIGIN_PLUS_AUTHORITY_HIERARCHY_NUANCE
+LABUDA_MATERIAL_HEAD_COVERING = AUTHOR_PREFERRED
+LABUDA_HAIR_ONLY = ENGAGED_NOT_PREFERRED
+LABUDA_V7_9 = REAL_CREATION_HIERARCHY_ORDER_IN_AUTHOR_MODEL
+LABUDA_V11_12 = MUTUAL_INTERDEPENDENCE_AND_EQUAL_DIGNITY_COUNTERBALANCE
+LABUDA_PHYSIS = SOCIALLY_EXPECTED_PROPRIETY / NATURALIZED_CULTURAL_NORM
+LABUDA_V16 = UNVEILED_PRAYER_PROPHECY_CONTRARY_TO_CHURCH_PRACTICE_IN_AUTHOR_MODEL
+LABUDA_PASTORAL_UNIVERSALIZATION = REJECTED / CULTURAL_CUSTOMARY_ORDER
+```
+
+The article gives a particularly useful v10 distinction. Łabuda explicitly notes that `ἐξουσία` normally denotes authority/power exercised by its bearer rather than submission to another authority. He considers a woman's right to speak as a possible reading but rejects that exact contextual referent. His preferred synthesis is that Paul gives the woman real authority/choice regarding her head and directs her how to use it: she should choose covering, which contextually functions as a sign of submission/order.
+
+```text
+LABUDA_EXOUSIA_ACTIVE_LEXICAL_DIRECTION = DIRECT_AUTHOR_BODY
+LABUDA_V10_WOMAN_HAS_REAL_CHOICE_AUTHORITY = AUTHOR_MODEL
+LABUDA_V10_EXACT_REFERENT = CHOICE_TO_COVER_HEAD_IN_AUTHOR_MODEL
+LABUDA_COVERING_SIGN_OF_SUBMISSION = CONTEXTUAL_AUTHOR_CONCLUSION
+LABUDA_ACTIVE_SEMANTICS != ACTIVE_RIGHT_TO_LEAD_ASSEMBLY
+LABUDA_SIGN_READING != EXOUSIA_LEXICALLY_MEANS_SUBMISSION
+```
+
+For `διὰ τοὺς ἀγγέλους`, Łabuda prefers heavenly angels as guardians of creation/liturgical order and symbols of divine presence. He treats the Watchers/angels-desiring-women explanation as difficult to accept.
+
+```text
+LABUDA_ANGELS = HEAVENLY_CREATION_LITURGY_ORDER_GUARDIANS_PREFERRED
+LABUDA_WATCHERS = REJECTED_AS_UNLIKELY
+```
+
+His conclusion is intentionally not reduced to a simple hierarchy vote: he rejects labeling the passage Pauline misogyny, affirms women's liturgical prayer/prophecy, retains sex differentiation/order in the local argument, and finally classifies the described sex-order/dress obligations as cultural/customary responses to the Corinthian situation rather than universal moral rules for all Christians.
+
+```text
+LABUDA_DIRECT_POLISH_WHOLE_PASSAGE_BODY = CLOSED
+CORE_GRADE_REVERSALS = 0
+```
+
+## 9.1 Hao Li 2023 — Chinese official 52-page full body CLOSED
+
+Hao Li, “Woman is Not Independent of Man. And Man is Not Independent of Woman: The Order of the Creation of Man and Woman in 1 Corinthians 11:2–16,” *Journal of Research for Christianity in China* 21 (2023): 267–318, DOI `10.29635/JRCC.202312_(21).0012`.
+
+The official JRCC article page closes identity, DOI, pages, abstract, OA license and PDF object. The Christianity and China Research Center — the founding institutional center for JRCC — exposes the exact 52-page journal PDF, which is directly readable in the current runtime. Selected screenshot requests returned an internal renderer error; this is recorded separately from the closed PDF text body.
+
+```text
+LI_HAO_2023_OFFICIAL_OBJECT = CLOSED_DIRECT_JRCC
+LI_HAO_2023_FULL_PDF_TEXT = CLOSED_DIRECT
+LI_HAO_2023_PDF_PAGES = 52
+LI_HAO_PAGE_IMAGE_AUTOPSY = RUNTIME_SCREENSHOT_ERROR
+```
+
+Direct body controls:
+
+```text
+LI_HAO_KEPHALE = AUTHORITY_PLUS_PROMINENCE_HONOR_IN_AUTHOR_MODEL
+LI_HAO_MATERIAL_COVERING = AUTHOR_PREFERRED
+LI_HAO_HAIR_MODEL = SERIOUSLY_ENGAGED_NOT_PREFERRED
+LI_HAO_EXOUSIA_ACTIVE = DIRECT_AUTHOR_BODY
+LI_HAO_V10 = WOMAN_CONTROLS_OWN_HEAD / COVERING_OBLIGATION_IN_AUTHOR_MODEL
+LI_HAO_ANGELS = HEAVENLY_WORSHIP_PARTICIPANTS_GUARDIANS_PREFERRED
+LI_HAO_PHYSIS = GRECO_ROMAN_CONVENTIONAL_SOCIAL_VALUE_IN_AUTHOR_MODEL
+LI_HAO_VV7_9_ASYMMETRY = REAL_IN_AUTHOR_MODEL
+LI_HAO_VV11_12_MUTUALITY = CENTRAL_COUNTERBALANCE
+LI_HAO_CREATION_ORDER_NORMATIVITY = CONTEXTUAL_NORMATIVITY
+LI_HAO_CREATION_ORDER_CROSS_CONTEXT_ABSOLUTE = REJECTED
+LI_HAO_MUTUAL_RECIPROCITY_UNITY = MAJOR_THEOLOGICAL_AIM
+```
+
+Substantive source owner updated:
+- `00ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_GUNDRY_GIELEN_CHINESE_SCHOLARSHIP_SOURCE_CONTROL_2026-08-10.md`
+
+```text
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+HAIR_ONLY = C_SERIOUS_ALTERNATIVE_UNCHANGED
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+CREATION_ORDER_ASYMMETRY = B_HIGH_UNCHANGED
+MUTUAL_INTERDEPENDENCE_11_11_12 = A_UNCHANGED
+CORE_GRADE_REVERSALS = 0
 ```
 
 ## 10. Anderson Dias de Araújo 2009 — Portuguese Watchers route
@@ -402,10 +489,11 @@ P1 WON_2010_PRIMARY_ARTICLE_CARD_AND_BODY
 P1 WON_2010_MA_THESIS_KERIS_BODY
 P1 PARK_1990_JSTAGE_PDF_BODY
 P1 VIDOVIC_2024_FULL_CHAPTER_BODY
+P1 FRANCIS_2023_FULL_PDF_BODY
 P2 MATOS_2004_FULL_PDF_BODY_EDITION_COMPARISON
 ```
 
-Direct transport attempts in this runtime did not justify a body promotion for the remaining open targets. Matos 2007 and Wang 2022 are genuine direct-body closures through distinct lawful routes; neither closure is used to conflate source editions or publisher-byte custody.
+Direct transport attempts in this runtime did not justify a body promotion for the remaining open targets. Matos 2007, Wang 2022, Łabuda 2019 and Hao Li 2023 are genuine direct-body closures through distinct lawful routes; none is used to conflate source editions, publisher-byte custody, or page-image autopsy.
 
 ## 18. Search-state result
 
@@ -426,6 +514,8 @@ WON_2010_MA_THESIS_BODY_CLOSED = NO
 MATOS_2007_DIRECT_PASSAGE_BODY_CLOSED = YES
 WANG_2022_AUTHOR_UPLOADED_PUBLISHED_BODY_CLOSED = YES
 WANG_2022_PUBLISHER_PDF_BYTES_CLOSED = NO
+LABUDA_2019_FULL_OFFICIAL_PDF_TEXT_CLOSED = YES
+LI_HAO_2023_FULL_OFFICIAL_PDF_TEXT_CLOSED = YES
 MATOS_2004_DISSERTATION_BODY_CLOSED = NO
 VIDOVIC_2024_BODY_CLOSED = NO
 REASONER_2025_BODY_CLOSED = NO
