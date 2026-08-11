@@ -24,6 +24,9 @@ ENGLISH_ROUTE_EXHAUSTED != MULTILINGUAL_ROUTE_EXHAUSTED
 LOCALIZED_INTERFACE != TRANSLATED_EDITION
 LIBRARY_HOLDING != BODY_READ
 FULL_TEXT_REPRINT != JOURNAL_PDF_IMAGE_AUTOPSY
+MIRROR_HOSTED_JOURNAL_PDF != OFFICIAL_JOURNAL_HOST
+AUTHOR_UPLOADED_FULLTEXT = BODY_CAPABLE_WHEN_OBJECT_IDENTITY_MATCHES
+PDF_TEXT_BODY != PAGE_IMAGE_SCREENSHOT_AUTOPSY
 ```
 
 Detailed current-commentary access is owned by `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md`. Direct-source acquisition remains in the direct-source recent-scholarship owner. This file owns the **current literature map and ranking**.
@@ -184,24 +187,25 @@ FRANCIS_FULL_PDF_BODY = TERMINAL_CURRENT_RUNTIME_TRANSPORT_HOLD
 
 ---
 
-# 6. Hao Li / 李浩 — 2023 Chinese full-text reprint upgrade
+# 6. Hao Li / 李浩 — 2023 journal-layout PDF body CLOSED
 
 > 李浩, “女也不是无男，男也不是无女：哥林多前书十一章2至16节对两性创造次序的援用,” *中国基督教研究 / Journal of Research for Christianity in China* 21 (2023): 267–318. DOI `10.29635/JRCC.202312_(21).0012`.
 
-Official JRCC controls the journal object, DOI, pages and Chinese PDF route. The official PDF itself remains a runtime cache/transport hold. A complete article-text republication is, however, publicly exposed by 汉语基督教研究网 / Chinese Christian Studies Network and identifies itself as the article from JRCC no.21 with the same author/title/DOI.
-
-Evidence ceiling:
+Official JRCC controls the article identity, DOI, pp.267–318 and Chinese PDF route. Chinese Christian Studies Network — a site that presents the journal issue and its downloadable article files — exposes a **52-page PDF of the journal-layout article itself**, with the JRCC masthead, ISSN, issue number and printed pagination beginning at p.267 and ending at p.318. The PDF is hosted on the CCSnet cloud object rather than the current `ccspub.cc` journal server, so host provenance is kept explicit.
 
 ```text
 HAO_LI_OFFICIAL_JRCC_OBJECT = CLOSED_DIRECT
 HAO_LI_OFFICIAL_PAGES = 267_318
 HAO_LI_OFFICIAL_PDF_ROUTE = VERIFIED
-HAO_LI_FULL_TEXT_REPRINT_BODY = CLOSED_DIRECT_TEXT_REPRINT
-HAO_LI_JOURNAL_PDF_IMAGE_AUTOPSY = NOT_CLOSED
-FULL_TEXT_REPRINT != OFFICIAL_PDF_PAGE_CUSTODY
+HAO_LI_CCSNET_JOURNAL_LAYOUT_PDF = CLOSED_DIRECT_PDF_BODY
+HAO_LI_CCSNET_PDF_PAGE_COUNT = 52
+HAO_LI_PRINT_PAGINATION_267_318 = CLOSED_DIRECT_PDF_LAYOUT
+HAO_LI_PDF_TEXT_BODY = CLOSED_DIRECT
+HAO_LI_PAGE_IMAGE_SCREENSHOT_AUTOPSY = CURRENT_RUNTIME_CACHE_MISS
+CCSNET_PDF_HOST != CURRENT_OFFICIAL_JRCC_HOST
 ```
 
-Body-level model control from the complete reprint:
+Body-level model control from the actual journal-layout PDF:
 
 ```text
 HAO_LI_SETTING = PUBLIC_WORSHIP
@@ -210,17 +214,25 @@ HAO_LI_HAIR_ONLY_ISAKSSON_HURLEY = DISCUSSED_BUT_REJECTED_AS_CULTURAL_BASE
 HAO_LI_MASSEY_GREEK_CONTROL = SUPPORTS_HEAD_COVERING_GARMENT
 HAO_LI_KEPHALE = AUTHORITY_PLUS_PREEMINENCE_HONOR_SHAME_SYNTHESIS
 HAO_LI_V10_PASSIVE_EXOUSIA = REJECTED_AS_WITHOUT_SECURE_BASIS
-HAO_LI_EXOUSIA_ACTIVE_SUBJECT_FORCE = AFFIRMED_IN_DISCUSSION
+HAO_LI_EXOUSIA_ACTIVE_SUBJECT_FORCE = AFFIRMED
+HAO_LI_V10_EXOUSIAN_ECHEIN_EPI = AUTHOR_GLOSSES_AS_WOMAN_EXERCISING_CONTROL_OVER_HER_HEAD
+HAO_LI_V10_HEAD_CONTROL = AUTHOR_CONNECTS_TO_COVERING_HER_HEAD
 HAO_LI_MALE_UNCOVERING = ROMAN_RITUAL_BACKGROUND_PREFERRED
 HAO_LI_FEMALE_COVERING = GRECO_ROMAN_HONOR_SHAME_CONTEXTUAL_ADAPTATION
 HAO_LI_V7_9 = CREATION_BASED_SUBORDINATION_CHAIN_IN_CONTEXT
 HAO_LI_V11_12 = PLEN_COUNTERBALANCE / MUTUAL_DEPENDENCE / COUNTERCULTURAL_CORRECTION
 HAO_LI_V10_DIA_TOUTO = SUMMARY_POINT_OF_PRECEDING_CREATION_ARGUMENT_IN_AUTHOR_STRUCTURE
+HAO_LI_ANGELS = HEAVENLY_ANGELS_PREFERRED
+HAO_LI_ANGEL_ROLE = WORSHIP_PARTICIPANTS_AND_GUARDIANS_OF_ORDER_PREFERRED
+HAO_LI_EVIL_ANGEL_WATCHERS = DISCUSSED_NOT_PREFERRED
+HAO_LI_HUMAN_MESSENGERS = DISCUSSED_NOT_PREFERRED
 HAO_LI_V13_15 = NATURE_ARGUMENT_CONTEXTUAL
 HAO_LI_V16 = CHURCH_CUSTOM_ARGUMENT
 HAO_LI_CREATION_ORDER = NOT_TRANS_CONTEXT_ABSOLUTE_SUBORDINATION_RULE
 HAO_LI_MAIN_AIM = MUTUAL_RECIPROCITY_AND_UNITY
 ```
+
+The article's table on printed p.300 explicitly classifies v10 (`διὰ τοῦτο`) as the summary of the Genesis 2 creation-order argument; its note there states that `ἐξουσίαν ἔχειν ἐπὶ` should be read actively and tentatively prefers heavenly angels as worship participants/guardians.
 
 Project calibration:
 
@@ -228,26 +240,30 @@ Project calibration:
 MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
 HAIR_ONLY = C_SERIOUS_ALTERNATIVE_UNCHANGED
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+ANGELS_EXACT_FUNCTION = INTERPRETIVE_UNCHANGED
 EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER_UNCHANGED
 CORE_GRADE_REVERSALS = 0
 ```
 
-Important limitation: the article's main research question is creation-order deployment, so it should not be mined for a detailed angel model unless that portion is directly recovered from the body/PDF.
-
 ---
 
-# 7. Nathanael Xuesheng Wang / 王学晟 — 2022 Chinese full-text reprint upgrade
+# 7. Nathanael Xuesheng Wang / 王学晟 — 2022 author-uploaded full journal text CLOSED
 
 > 王学晟, “蒙头祷告讲道还是闭口不言？——对哥林多前书中两段矛盾经文之探讨,” *中国基督教研究 / Journal of Research for Christianity in China* 19 (2022): 80–111. DOI `10.29635/JRCC.202212_(19).0005`.
 
-Official JRCC issue page directly controls author, title, pp.80–111, DOI and the Chinese PDF link. The PDF route currently returns a runtime cache miss. Chinese Christian Studies Network publicly exposes a complete textual republication and explicitly identifies it as the article from the 2022 no.19 issue.
+Official JRCC controls the author/title, DOI, pp.80–111 and Chinese PDF route. Chinese Christian Studies Network also republishes the full text. More importantly for provenance, ResearchGate exposes the **full journal text as author-uploaded content by Nathanael Xuesheng Wang himself**; the rendered body shows the journal masthead, ISSN, issue/date and printed page sequence beginning at p.80.
 
 ```text
 WANG_2022_OFFICIAL_JRCC_OBJECT = CLOSED_DIRECT
 WANG_2022_OFFICIAL_PAGES = 80_111
 WANG_2022_OFFICIAL_PDF_ROUTE = VERIFIED
-WANG_2022_FULL_TEXT_REPRINT_BODY = CLOSED_DIRECT_TEXT_REPRINT
-WANG_2022_JOURNAL_PDF_IMAGE_AUTOPSY = NOT_CLOSED
+WANG_2022_CCSNET_FULL_TEXT_REPRINT = CLOSED_DIRECT_TEXT_REPRINT
+WANG_2022_RESEARCHGATE_AUTHOR_CONTENT = CLOSED_DIRECT_AUTHOR_UPLOADED_FULLTEXT
+WANG_2022_AUTHOR_UPLOADED_JOURNAL_BODY = CLOSED_DIRECT_BODY
+WANG_2022_PRINT_PAGE_80_START = CLOSED_DIRECT_RENDERED_BODY
+WANG_2022_DOWNLOADABLE_PDF_BYTES_TARGET_RUNTIME = CACHE_MISS
+WANG_2022_PAGE_IMAGE_SCREENSHOT_AUTOPSY = NOT_CLOSED
 ```
 
 Body-level model control:
@@ -267,10 +283,13 @@ WANG_14_34_35 = LATE_INTERPOLATION_IN_AUTHOR_MODEL
 WANG_GENDER_EQUALITY = AUTHOR_THEOLOGICAL_CONCLUSION
 ```
 
+The author-uploaded journal text directly shows Wang rejecting the Isaksson/Hurley loose-hair reading: he argues that `κατακαλύπτω` across a long span of Greek usage refers to veiling/covering with cloth or similar material and concludes that `ἀκατακαλύπτῳ τῇ κεφαλῇ` means an uncovered head. He reconstructs women abandoning traditional covering as a Christian-freedom move and frames Paul's response primarily around honor/shame and the church's social image.
+
 Wang's detailed historical trigger remains a reconstruction and is not promoted into the project's exact Corinth trigger grade.
 
 ```text
 MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+HAIR_ONLY = C_SERIOUS_ALTERNATIVE_UNCHANGED
 EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER_UNCHANGED
 CORE_GRADE_REVERSALS = 0
 ```
@@ -357,8 +376,8 @@ POLISH:
   repository search included as standing lane; Kowalski 2020 institutional KUL item/PDF-object closed while binary body remains transport-held
 
 CHINESE:
-  Hao Li 2023 = official JRCC object + complete CCSnet text reprint body / journal PDF image hold
-  Wang 2022 = official JRCC object + complete CCSnet text reprint body / journal PDF image hold
+  Hao Li 2023 = official JRCC object + CCSnet journal-layout 52-page PDF body closed / page-image screenshot cache hold
+  Wang 2022 = official JRCC object + CCSnet full-text reprint + author-uploaded ResearchGate journal body closed / downloadable PDF bytes cache hold
 
 JAPANESE_CATALOG_LANE:
   university holdings used as lawful acquisition routes for untranslated English books; catalogue language does not make the book a Japanese translation
@@ -400,11 +419,15 @@ Do not attribute detailed positions from catalogue copy, publisher summaries, se
 # 13. Current result
 
 ```text
-CHINESE_FULL_TEXT_REPRINT_BREAKTHROUGH = HAO_LI_2023 + WANG_2022
-CHINESE_JOURNAL_PDF_IMAGE_AUTOPSY = STILL_OPEN
+CHINESE_BODY_BREAKTHROUGH = HAO_LI_2023 + WANG_2022
+HAO_LI_CCSNET_JOURNAL_LAYOUT_PDF_BODY = CLOSED
+HAO_LI_PAGE_IMAGE_SCREENSHOT = CURRENT_RUNTIME_CACHE_MISS
 HAO_LI_BODY_SUPPORTS_MATERIAL_COVERING = YES
 HAO_LI_BODY_SUPPORTS_ACTIVE_EXOUSIA_DIRECTION = YES
+HAO_LI_BODY_PREFERS_HEAVENLY_WORSHIP_ANGELS = YES
 HAO_LI_BODY_REJECTS_TRANS_CONTEXT_ABSOLUTE_CREATION_SUBORDINATION = YES
+WANG_AUTHOR_UPLOADED_JOURNAL_BODY = CLOSED
+WANG_DOWNLOADABLE_PDF_BYTES = CURRENT_RUNTIME_CACHE_MISS
 WANG_BODY_SUPPORTS_MATERIAL_COVERING = YES
 WANG_BODY_SUPPORTS_WOMEN_PRAYING_PROPHESYING_IN_ASSEMBLY = YES
 WANG_EXACT_TRIGGER = CONTEXTUAL_RECONSTRUCTION_ONLY
