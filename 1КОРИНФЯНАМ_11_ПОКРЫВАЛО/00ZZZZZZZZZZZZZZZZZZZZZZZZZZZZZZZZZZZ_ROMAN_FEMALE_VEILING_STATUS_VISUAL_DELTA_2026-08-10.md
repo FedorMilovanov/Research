@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — Roman female veiling / status / visual-method owner
 
 **Дата:** 2026-08-11  
-**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / DIRECT-CALLON-BODY / DIRECT-MASSEY-BODY / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Статус:** `ROMAN-SOCIAL-HISTORY / GREEK-COMPARATIVE-VEILING / FEMALE-DRESS / VISUAL-METHOD / CHRONOLOGY-FIREWALL / DIRECT-CALLON-BODY / DIRECT-MASSEY-BODY / DIRECT-BAUM-BODY / FINAL-ACCESS-DISPOSITION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority rule
 
@@ -340,6 +340,55 @@ EXACT_CORINTH_FEMALE_TRIGGER = RECONSTRUCTION_LAYER
 CORE_GRADE_REVERSALS = 0
 ```
 
+## 7.3 Armin D. Baum 2014 — direct author-uploaded full body / speech-permission countermodel
+
+Armin D. Baum, “Paul’s Conflicting Statements on Female Public Speaking (1 Cor. 11:5) and Silence (1 Cor. 14:34–35): A New Suggestion,” *Tyndale Bulletin* 65.2 (2014): 247–274, DOI `10.53751/001c.29377`.
+
+Official Tyndale controls the article identity, DOI, journal, volume and pagination; the journal explicitly keeps its pre-2021 archive open for non-commercial reading/download. A materially distinct route closes the actual body: ResearchGate exposes the complete published article as **author content uploaded by Armin D. Baum** on 2022-11-07, with the *Tyndale Bulletin* masthead, page sequence 247–274 and DOI visible in the rendered text.
+
+```text
+BAUM_2014_OFFICIAL_TYNDALE_IDENTITY = CLOSED_DIRECT_OFFICIAL
+BAUM_2014_PAGES = 247_274
+BAUM_2014_DOI = 10.53751/001c.29377
+BAUM_2014_AUTHOR_UPLOADED_PUBLISHED_FULL_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD
+AUTHOR_UPLOAD != OFFICIAL_PUBLISHER_BYTE_CUSTODY_AUTOMATICALLY
+```
+
+Baum treats 1 Cor 11:5 as **public gathered speech**, not private prayer/prophecy: in his model Paul accepts women praying and prophesying in the church gathering when the required head covering is present. He interprets that covering as a material dress-code marker carrying modesty/chastity and male-headship semantics in the surrounding culture. Those social meanings are Baum's historical reconstruction; they are not lexical meanings supplied by an explicit garment noun in v5.
+
+```text
+BAUM_11_5_SETTING = PUBLIC_CHURCH_GATHERING
+BAUM_WOMEN_PRAY_PROPHESY = ACTIVE_PUBLIC_SPEECH_ALLOWED_CONDITIONALLY
+BAUM_HEAD_COVERING = MATERIAL_DRESS_CODE_IN_AUTHOR_MODEL
+BAUM_COVERING_SOCIAL_MEANING = FEMALE_MODESTY_CHASTITY_PLUS_MALE_HEADSHIP_IN_AUTHOR_MODEL
+BAUM_SOCIAL_MEANING != OVERT_GARMENT_NOUN_IN_PAUL
+```
+
+His reconciliation with 14:34–35 is deliberately stronger than the common “only weighing prophecies” or “only disruptive questions” solutions. Baum argues that ancient readers would most naturally hear 14:34–35 as a general ban on female public speaking **in the hierarchical-conflict setting he reconstructs**, while 11:5 presupposes approval by husbands/church leaders and therefore permits the woman's public prayer/prophecy under a different social condition. He also rejects the need to solve the tension by treating 14:34–35 as a Corinthian slogan or a late scribal interpolation.
+
+```text
+BAUM_14_34_35_ONLY_PROPHECY_WEIGHING = REJECTED_IN_AUTHOR_MODEL
+BAUM_14_34_35_ONLY_DISRUPTIVE_QUESTIONS = REJECTED_IN_AUTHOR_MODEL
+BAUM_14_34_35_CORINTHIAN_SLOGAN = REJECTED_IN_AUTHOR_MODEL
+BAUM_14_34_35_INTERPOLATION = REJECTED_IN_AUTHOR_MODEL
+BAUM_COMMON_PRINCIPLE = PUBLIC_FEMALE_SPEECH_REQUIRES_PRESERVED_MALE_LEADERSHIP_AND_FEMALE_CHASTITY
+BAUM_11_5_PRESUPPOSED_MALE_APPROVAL = AUTHOR_HISTORICAL_RECONSTRUCTION
+BAUM_14_HIERARCHICAL_CONFLICT = AUTHOR_HISTORICAL_RECONSTRUCTION
+```
+
+This is useful as a direct countermodel because it simultaneously affirms actual female prayer/prophecy in 11:5 and reads the covering materially, yet it does **not** settle the project's recipient question or turn its male-consent mechanism into a grammatical fact. Callon, Massey and Baum therefore converge on material/public-status relevance while disagreeing on the exact recipient and social mechanism.
+
+```text
+BAUM_2014 = DIRECT_FULL_BODY_PUBLIC_SPEECH_STATUS_COUNTERMODEL
+BAUM_MODEL != CALLON_2024
+BAUM_MODEL != MASSEY_2013
+WOMEN_PRAYING_PROPHESYING_IN_11_5 = TEXTUAL_ACTIVITY_UNCHANGED
+WIVES_VS_ALL_WOMEN = OPEN_B_C_UNCHANGED
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+EXACT_CORINTH_FEMALE_TRIGGER = RECONSTRUCTION_LAYER
+CORE_GRADE_REVERSALS = 0
+```
+
 ---
 
 # 8. Male ritual covering is a separate axis
@@ -387,6 +436,7 @@ The former local P1 queue is closed for known public routes except for optional 
 ```text
 CALLON_2024 = CLOSED_DIRECT_CAMBRIDGE_OA_FULL_BODY
 MASSEY_2013 = CLOSED_DIRECT_TYNDALE_FULL_PDF_TEXT / PAGE_IMAGE_CACHE_HOLD
+BAUM_2014 = CLOSED_DIRECT_AUTHOR_UPLOADED_PUBLISHED_FULL_BODY / OFFICIAL_TYNDALE_IDENTITY_CLOSED
 FANTHAM_2008_PP158_171 = IDENTITY_AND_EXACT_LOCATOR_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 OLSON_2008_PP22_25_34_41 = BOOK_IDENTITY_AND_PAGE_SPECIFIC_METHOD_CONTROLS_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
 HUGHES_2007_TABLE1_P227 = ARTICLE_AND_PDF_OBJECT_CLOSED / EXACT_SECONDARY_TABLE_LOCATOR_CLOSED / DIRECT_TABLE_AUTOPSY_TERMINAL_ACCESS_HOLD
@@ -419,6 +469,9 @@ CALLON_GENESIS_MARRIAGE_RECEPTION = DIRECT_AUTHOR_ARGUMENT
 CALLON_FREE_D_MARRIED_WOMEN_MODEL = B_C_SERIOUS_CURRENT_MODEL
 MASSEY_2013 = DIRECT_TYNDALE_FULL_BODY_MARRIED_WOMEN_HOUSE_CHURCH_MODEL
 MASSEY_TRIGGER = DOMESTIC_PUBLIC_SPHERE_CONFUSION_RECONSTRUCTION
+BAUM_2014 = DIRECT_AUTHOR_UPLOADED_FULL_BODY_PUBLIC_SPEECH_STATUS_COUNTERMODEL
+BAUM_11_5 = PUBLIC_FEMALE_PRAYER_PROPHECY_WITH_COVERING_IN_AUTHOR_MODEL
+BAUM_14_34_35 = GENERAL_PUBLIC_SPEECH_RESTRICTION_IN_AUTHOR_MODEL
 WIVES_VS_ALL_WOMEN = OPEN_B_C
 ROMAN_FEMALE_VISUAL_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
 ROMAN_CAPITE_VELATO_BACKGROUND = A
