@@ -90,7 +90,7 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 ```
 
-Strong active direction does **not** prove modern autonomy theology or one exact social reconstruction. The direct Romerowski countermodel below keeps two questions separate:
+Strong active direction does **not** prove modern autonomy theology or one exact social reconstruction. The direct Romerowski and Wang countermodels below keep two questions separate:
 
 ```text
 Q1 = what does exousian_echein normally do in Greek?
@@ -205,6 +205,60 @@ WOMAN_IS_GRAMMATICAL_SUBJECT = UNAFFECTED_A
 ACTIVE_EXOUSIAN_ECHEIN_DOCUMENTARY_PULL = UNAFFECTED_B_HIGH
 ACTIVE_PULL_FORCES_V10_REFERENT = FALSE
 CONTEXTUAL_METONYMY_PASSIVE_SIGN_READING = REAL_PUBLISHED_COUNTERMODEL
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+```
+
+## 6.1 Nathanael Xuesheng Wang 2022 — author-uploaded published full body
+
+Nathanael Xuesheng Wang, “Praying and Prophesying with Coverings or Remaining Silent: A Probe into the Two Contradictory Periopae in 1 Corinthians,” *Journal of Research for Christianity in China* 19 (2022): 80–111, DOI `10.29635/JRCC.202212_(19).0005`.
+
+Custody is deliberately split:
+
+- the current JRCC / CCS Publishing article page directly verifies article identity, DOI, pp.80–111, OA status and the journal PDF route;
+- the publisher PDF endpoint itself remains a runtime transport/cache hold;
+- ResearchGate exposes the complete **published article PDF uploaded by Wang himself** and identifies it as author content uploaded on 2024-12-14.
+
+Thus:
+
+```text
+WANG_2022_OFFICIAL_JRCC_OBJECT = CLOSED_DIRECT_PUBLISHER_METADATA
+WANG_2022_OFFICIAL_PDF_ROUTE = VERIFIED
+WANG_2022_PUBLISHER_PDF_BYTES_CURRENT_RUNTIME = TRANSPORT_HOLD
+WANG_2022_AUTHOR_UPLOADED_PUBLISHED_FULL_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD
+WANG_2022_AUTHOR_UPLOAD != PUBLISHER_BYTE_CUSTODY_AUTOMATICALLY
+```
+
+Body-level 1 Cor 11 controls from the author-uploaded published PDF:
+
+1. `γυνή` in 11:5 is read as women generally, not only wives; Wang explicitly points to married, unmarried and widowed women in 1 Corinthians as context.
+2. women praying/prophesying is read as audible participation in the gathered assembly and as genuinely permitted ministry.
+3. Wang directly considers the Isaksson/Hurley loose-hair reading of `ἀκατακάλυπτος`, then rejects it as lexically implausible; he argues `κατακαλύπτω` across Greek usage denotes veiling/covering with cloth or similar material.
+4. he reconstructs some Corinthian women as applying Christian freedom to discard traditional dress/subordination symbols; this is explicitly a historical reconstruction, not an observed event record.
+5. he treats female head covering as a visible honor/gender/social sign and reads the passage's pastoral concern primarily through the church's public social image, worship order and mission.
+6. in his introductory v10 summary he describes women as removing an “authority sign” on the head in the name of freedom, i.e. a contextual sign-of-authority/subordination reading rather than an active-right referent.
+7. he invokes angels as observers of the church/worship in the argument summary, but does not make this article a dedicated angelology treatment.
+
+```text
+WANG_2022_GYNE = ALL_WOMEN_PREFERRED_IN_AUTHOR_MODEL
+WANG_2022_WOMEN_PRAY_PROPHESY = ACTIVE_GATHERED_MINISTRY_ALLOWED
+WANG_2022_AKATAKALYPTOS_LOOSE_HAIR_ONLY = REJECTED
+WANG_2022_MATERIAL_HEAD_COVERING = AUTHOR_PREFERRED
+WANG_2022_PUBLIC_IMAGE_HONOR_SHAME = CENTRAL_AUTHOR_MODEL
+WANG_2022_CORINTH_FREEDOM_DRESS_TRIGGER = RECONSTRUCTION_LAYER
+WANG_2022_V10 = AUTHORITY_SIGN_ON_HEAD_IN_AUTHOR_MODEL
+WANG_2022_V10_ACTIVE_WOMAN_RIGHT = NOT_AUTHOR_MODEL
+WANG_2022_ANGELS = WORSHIP_OBSERVER_SUMMARY
+```
+
+Effect on the v10 evidence map:
+
+```text
+WANG_SIGN_READING = REAL_DIRECT_PUBLISHED_CHINESE_COUNTERMODEL
+WANG_SIGN_READING != EXOUSIA_LEXICALLY_MEANS_VEIL
+WANG_SIGN_READING != GRAMMATICAL_SUBJECT_REVERSAL
+EXOUSIA_WOMAN_SUBJECT = A_SYNTAX_UNCHANGED
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
 EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
 CORE_GRADE_REVERSALS = 0
 ```
@@ -471,7 +525,7 @@ EXOUSIA_EXACT_REFERENT = B_C
 
 Still-live contextual families include control/right regarding head presentation; authority/right to pray/prophesy; authority/status signaled through covering; contextual metonymic sign reading; and other discourse-specific relations.
 
-A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`. Romerowski 2006 is a direct full-body example of such a contextual/metonymic argument and must be represented as a serious countermodel rather than dismissed as lexically impossible.
+A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`. Romerowski 2006 and Wang 2022 are direct full-body examples of contextual sign/metonymic readings and must be represented as serious countermodels rather than dismissed as lexically impossible.
 
 ---
 
@@ -494,6 +548,8 @@ ACTIVE_SEMANTICS != EXACT_SOCIAL_TRIGGER_PROVED
 ACTIVE_EXOUSIA_PULL != EXACT_V10_REFERENT_FORCED
 ROMEROWSKI_METONYMY != EXOUSIA_LEXICALLY_MEANS_VEIL
 ROMEROWSKI_HUSBAND_AUTHORITY = INTERPRETIVE_CONTEXTUAL_CONCLUSION_NOT_LEXICAL_DEFINITION
+WANG_AUTHORITY_SIGN != EXOUSIA_LEXICALLY_MEANS_VEIL
+WANG_AUTHOR_UPLOAD != PUBLISHER_BYTE_CUSTODY
 TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 AGENT_BRANCH_CLOSED_DIRECT != TARGET_VERIFIED_BODY
 ```
@@ -510,6 +566,7 @@ P_WISC_I_13 = RESTORATION_CEILING_CLOSED_DIRECT_DDBDP / IMAGE_OPTIONAL
 P_OXY_8_1120 = KATA_GEN_DOCUMENTARY_CONTROL_CLOSED
 P_OXY_9_1205 = EIS_ACC_DIRECT_DDBDP_CLOSED
 ROMEROWSKI_2006_FULL_FRENCH_PDF = CLOSED_DIRECT_AUTHOR_HOSTED
+WANG_2022_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD / PUBLISHER_PDF_TRANSPORT_HOLD
 SEARCH_NONBIBLICAL_EXACT_ECHO_EPI_GEN = BOUNDED_SEARCH_COMPLETE / NO_EXACT_HEAD_PARALLEL_FOUND / GLOBAL_NONEXISTENCE_NOT_CLAIMED
 ADDITIONAL_FEMALE_ROMAN_RIGHT_BEARERS = OPTIONAL_ONLY_IF_NEW_HIGH_VALUE_SOURCE
 ```
@@ -542,6 +599,7 @@ TAM_II_604 = A_EPIGRAPHIC_LOCAL_RIGHT_FORMULA
 P_WISC_I_13 = FULLY_RESTORED_EXOUSIA_LEXEME_IN_TARGET_FORMULA
 P_OXY_I_104_AD96 = NEAR_SEMANTIC_FEMALE_CONTROL_NOT_EXOUSIA
 ROMEROWSKI_2006 = DIRECT_FULL_BODY_SERIOUS_CONTEXTUAL_METONYMY_COUNTERMODEL
+WANG_2022 = DIRECT_AUTHOR_UPLOADED_PUBLISHED_BODY / MATERIAL_COVERING + AUTHORITY_SIGN_COUNTERMODEL
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 PUBLICATION_HOLD = true
