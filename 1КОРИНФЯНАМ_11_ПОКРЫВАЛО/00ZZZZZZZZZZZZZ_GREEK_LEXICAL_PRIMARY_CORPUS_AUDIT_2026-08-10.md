@@ -895,3 +895,76 @@ UI_IMPLEMENTATION = false
 SITE_PUBLICATION = false
 PUBLICATION_HOLD = true
 ```
+
+---
+
+# 20. Heon-Wook Park 1990 — direct J-STAGE body countercontrol
+
+Official journal object:
+
+> Heon-Wook Park (朴 憲郁), “礼拝共同体における κεφαλή の問題―Iコリント11:3–12について,” 1990, vol.18, pp.29–42, DOI `10.24758/jsnts.18.0_29`.
+
+The official J-STAGE article object and its OA PDF are directly controlled. The downloaded PDF is a 14-page scan (`693584` bytes) with a usable hidden text layer; article pp.29, 33 and 40 were additionally checked against rendered page images. This closes body acquisition while keeping direct-quotation promotion conservative.
+
+```text
+PARK_1990_OFFICIAL_JSTAGE_OBJECT = CLOSED_DIRECT
+PARK_1990_OFFICIAL_PDF = CLOSED_DIRECT_693584_BYTES_14_PAGES
+PARK_1990_FULL_BODY = CLOSED_DIRECT_TEXT_LAYER
+PARK_1990_VISUAL_PAGE_CHECK = P29_P33_P40
+PARK_1990_DIRECT_QUOTE_PROMOTION = HOLD_UNLESS_EXACT_JAPANESE_TRANSCRIPTION_RECHECKED
+```
+
+Park directly distinguishes the head covering from hair. In the opening argument he treats the disputed female head-state as removal/loss of a material covering and describes the relevant covering as an `himation`-type garment drawn over the head/shoulders. Hair remains a separate sex-differentiating datum rather than the sole physical referent of the covering language.
+
+```text
+PARK_MATERIAL_HEAD_COVERING = DIRECT_AUTHOR_BODY
+PARK_HAIR_DISTINCT_FROM_HEAD_COVERING = DIRECT_AUTHOR_BODY
+PARK_HAIR_ONLY_WHOLE_PASSAGE = REJECTED_IN_AUTHOR_MODEL
+PARK_PUBLIC_FEMALE_PRAYER_PROPHECY = AFFIRMED_IN_AUTHOR_MODEL
+```
+
+His proposed local trigger is intentionally weaker than the material identification. Park considers ecstatic/spiritual elevation as a possible reason a covering could fall or be removed as unnecessary, but he does not claim that deliberate imitation of neighboring cultic practice is established by Paul's argument. That mechanism therefore belongs only to the historical reconstruction layer.
+
+```text
+PARK_EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
+PARK_ECSTATIC_REMOVAL_MECHANISM = AUTHOR_HYPOTHESIS_NOT_TEXTUAL_FACT
+PARK_PAGAN_CULT_IMITATION = NOT_ESTABLISHED_BY_AUTHOR
+```
+
+Park's `κεφαλή` model is also a useful anti-reduction control. He distinguishes literal head in vv4–5 from metaphorical v3 and argues that, in the woman/man relation, Paul does not call the man the woman's `κύριος`; rather, the man functions as her origin/first in the Genesis 2 relation. At the same time Park explicitly retains an asymmetrical upper/lower ordering and later describes Christ's headship with both priority/superiority and origin dimensions. His position therefore cannot be reduced either to pure `source-only` or pure `authority-only` lexicography.
+
+```text
+PARK_KEPHALE_LITERAL_V4_5 = DIRECT_AUTHOR_BODY
+PARK_KEPHALE_V3_ORIGIN_FIRSTNESS = DIRECT_AUTHOR_BODY
+PARK_MAN_NOT_CALLED_WOMANS_KYRIOS = DIRECT_AUTHOR_BODY
+PARK_KEPHALE_ASYMMETRICAL_ORDERING = DIRECT_AUTHOR_BODY
+PARK_KEPHALE_SOURCE_ONLY_SHORTHAND = REJECTED_AS_INCOMPLETE_AUTHOR_MODEL
+PARK_KEPHALE_AUTHORITY_ONLY_SHORTHAND = REJECTED_AS_INCOMPLETE_AUTHOR_MODEL
+```
+
+Park reads vv11–12 as a real christological relativization of one-sided female subordination “in the Lord,” while explicitly denying that this simply abolishes the creation/natural order appealed to earlier. That is congruent with the project's existing distinction between real creation asymmetry and mandatory mutual interdependence.
+
+```text
+PARK_VV11_12_MUTUAL_RELATIVIZATION = DIRECT_AUTHOR_BODY
+PARK_VV11_12_CANCEL_CREATION_ORDER = NO_IN_AUTHOR_MODEL
+```
+
+Finally, Park's note on v10 surveys competing `ἐξουσία`/angel readings and reports Theissen's Gen 6 / Testament of Reuben interpretation. It is not Park's own developed lexical solution of `ἐξουσία`; it therefore supplies no basis for changing the current v10 grade.
+
+```text
+PARK_V10_THEISSEN_WATCHER_READING = REPORTED_SECONDARY_OPTION
+PARK_V10_EXOUSIA_EXACT_REFERENT = NOT_RESOLVED_BY_PARK
+```
+
+Project calibration after direct body:
+
+```text
+MATERIAL_COVERING = B_HIGH_LEADING_UNCHANGED
+HAIR_ONLY = C_SERIOUS_ALTERNATIVE_UNCHANGED
+KEPHALE_HEADSHIP_AUTHORITY_11_3 = B_LEADING_UNCHANGED
+KEPHALE_SOURCE_ONLY = C_VIABLE_UNCHANGED
+MUTUAL_INTERDEPENDENCE_11_11_12 = A_UNCHANGED
+EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+PUBLICATION_HOLD = true
+```
