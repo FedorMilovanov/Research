@@ -49,7 +49,7 @@ EARLY_CONTINUOUS_PAULINE_READING = STRONGLY_ATTESTED
 CORE_GRADE_REVERSALS = 0
 ```
 
-The 2026-08-11 branch harvest strengthens **source attribution** for Costa and **continuity control** for Kowalski; it does not raise the textual-fit grade.
+The 2026-08-11 branch harvest strengthens **source attribution** for Costa and **continuity control** for Kowalski and Torbus; it does not raise the textual-fit grade.
 
 ---
 
@@ -240,7 +240,7 @@ KOWALSKI_EXACT_V10_ANGELS_DETAILS = NOT_DIRECTLY_VERIFIED_IN_TARGET_WORKFLOW
 
 This supersedes the old statement that only the APCZ PDF object was known. It does **not** adopt the arena checklist's full-body-read label without independently rendering the PDF body.
 
-## 3.4 Torbus 2009
+## 3.4 Torbus 2009 — historical chapter identity
 
 Sławomir Torbus, “The Rhetorical Dispositio of 1 Cor. 11, 2–16 and the Problem of the Veil,” in *New Chapters in the History of Rhetoric* (Brill), 507–521.
 
@@ -248,7 +248,58 @@ Sławomir Torbus, “The Rhetorical Dispositio of 1 Cor. 11, 2–16 and the Prob
 TORBUS_2009 = VERIFIED_SPECIALIST_CHAPTER
 TORBUS_COHERENT_DISPOSITIO_MODEL = ABSTRACT_ATTESTED
 TORBUS_2009_PP507_521_DIRECT_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
-TORBUS_REFUTES_ANY_SPECIFIC_QUOTATION_MODEL_IN_DETAIL = NOT_ESTABLISHED
+TORBUS_REFUTES_ANY_SPECIFIC_QUOTATION_MODEL_IN_DETAIL = NOT_ESTABLISHED_FROM_2009_BODY
+```
+
+The 2009 body remains useful for edition/history comparison, but Torbus's substantive later continuity position is now directly controlled by his own open article below.
+
+## 3.5 Torbus 2023 — direct institutional/public full body continuity control
+
+Sławomir Torbus, “Is 1 Corinthians 11:3b–15 an Interpolation?”, *Quaestiones Oralitatis* VII (2023): 41–53, DOI as printed in the article `10.34616/151415`.
+
+University of Wrocław repository controls the article object and PDF-preview/download route. The parent 2023 issue is explicitly CC BY 4.0. The complete published text is publicly rendered and matches the journal masthead, volume, printed pp.41–53, Torbus's University of Wrocław affiliation/ORCID, and the printed DOI. A later platform/upload date must not be converted into publication year.
+
+```text
+TORBUS_2023_OFFICIAL_UWR_OBJECT = CLOSED_DIRECT_INSTITUTIONAL
+TORBUS_2023_ISSUE_YEAR = 2023
+TORBUS_2023_PAGES = 41_53
+TORBUS_2023_LICENSE = CC_BY_4_0
+TORBUS_2023_PRINTED_DOI = 10.34616/151415
+TORBUS_2023_FULL_PUBLISHED_BODY = CLOSED_DIRECT_PUBLIC_FULLTEXT
+PLATFORM_UPLOAD_OR_INDEX_DATE_2025 != PUBLICATION_YEAR
+```
+
+Torbus directly attacks Milinovich's interpolation thesis. His central positive case is structural continuity: 1 Cor 11:2–14:40 forms a coherent discourse around divisions/disorder in gathered worship, with chapter 13 at the centre, chapters 12 and 14:1–25 on diversity/unity of gifts, and 11:2–34 / 14:26–36 framing social/gender/property-status and worship-order problems. Thus removing 11:3b–15 is not required to make the macrostructure coherent.
+
+```text
+TORBUS_2023_11_2_14_40 = COHERENT_CONTINUOUS_DISCOURSE_IN_AUTHOR_MODEL
+TORBUS_2023_11_3B_15_INTERPOLATION = REJECTED_IN_AUTHOR_MODEL
+TORBUS_2023_14_34_35_INTERPOLATION = REJECTED_IN_AUTHOR_MODEL
+TORBUS_2023_MANUSCRIPT_SUPPORT_FOR_11_3B_15_OMISSION = NONE_IN_AUTHOR_ARGUMENT
+TORBUS_2023_RING_STRUCTURE = DIRECT_AUTHOR_ARGUMENT
+TORBUS_2023_GENDER_PROPERTY_DIVISIONS = AUTHOR_MACROSTRUCTURAL_MODEL
+```
+
+For the passage itself Torbus reads the problem as an attempted blurring of gender differences in gathered worship rather than a hidden Corinthian quotation. He does not use v10 to place authority grammatically in a husband/master. In the full body he explicitly glosses `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` as the woman having “control of their head”; he then proposes that women may voluntarily limit a real right/freedom to manifest a beyond-stereotype identity in Christ for the sake of communal unity, analogously to Paul's handling of rights elsewhere.
+
+```text
+TORBUS_2023_V10_ACTIVE_WOMAN_CONTROL_OF_HEAD = DIRECT_AUTHOR_BODY
+TORBUS_2023_EXOUSIA_AS_REAL_RIGHT_FREEDOM = AUTHOR_MODEL
+TORBUS_2023_VOLUNTARY_LIMITATION_FOR_COMMUNITY = AUTHOR_RECONSTRUCTION
+TORBUS_2023_V10_EXTERNAL_MALE_POSSESSOR = NOT_AUTHOR_MODEL
+TORBUS_2023_GAL3_28_GENDER_BLURRING_TRIGGER = RECONSTRUCTION_LAYER
+```
+
+Calibration:
+
+```text
+TORBUS_2023 = DIRECT_FULL_BODY_CONTINUITY_COUNTERMODEL
+TORBUS_2023_STRENGTHENS_CONTINUITY_PROVENANCE = YES
+TORBUS_2023_DOES_NOT_PROVE_NO_QUOTATION_CAN_EXIST = TRUE
+LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW_UNCHANGED
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+CORE_GRADE_REVERSALS = 0
 ```
 
 Continuity models are not votes; they demonstrate that tension does not uniquely imply speaker change.
@@ -415,7 +466,8 @@ COSTA_2023_2024_FULL_OFFICIAL_PDF = CLOSED_DIRECT
 WATSON_CULY_2018_METHOD = CLOSED_AT_PUBLISHER_PLUS_LAWFUL_PREVIEW_LEVEL
 WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
 KOWALSKI_2020 = OFFICIAL_KUL_ITEM_AND_PDF_FILE_OBJECT_CLOSED / FULL_BODY_TARGET_RUNTIME_RENDER_HOLD
-TORBUS_2009_PP507_521 = CHAPTER_IDENTITY_CLOSED / DIRECT_BODY_TERMINAL_EXTERNAL_ACCESS_HOLD
+TORBUS_2023 = OFFICIAL_UWR_OBJECT + COMPLETE_PUBLIC_PUBLISHED_BODY_CLOSED_DIRECT
+TORBUS_2009_PP507_521 = HISTORICAL_EDITION_COMPARISON_ONLY / DIRECT_BODY_STILL_EXTERNAL_HOLD
 SCHIRRMACHER_1993_2002 = MODEL_AND_EDITION_HISTORY_CLOSED_DIRECT_AUTHOR_LIBRARY / FULL_BOOK_BODY_HOLD
 TECHNICAL_GAR_KAI_GAR_DIA_TOUTO_PLEN_POLYPHONY_CORPUS = BOUNDED_CURRENT_AUDIT_COMPLETE
 CURRENT_MAJOR_COMMENTARY_RESPONSES = DELEGATED_TO_CURRENT_COMMENTARY_OWNER
@@ -435,7 +487,7 @@ NEW_RENDERABLE_KOWALSKI_BODY_OR_SCHIRRMACHER_BODY = REOPEN_TRIGGER
 
 Safe synthesis:
 
-> A substantial Corinthian-quotation reading is a genuine published minority family, including contiguous-block, refutation, and alternating-voice proposals. Costa's complete official article is now directly read and gives the strongest current linguistic full-body specimen in the project for a vv4–9 quotation / vv10–16 refutation model. The multilingual audit also adds Schirrmacher's German monograph-length refutation model as an independently published precursor, though its full book argument still requires direct access. Paul can quote or reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or repeated alternating switches; advocates disagree over span; modern rhetorical studies such as Kowalski provide continuous readings; and checked early witnesses likewise read the passage as Paul's continuous argument. Therefore the large-quotation family belongs fully in the status quaestionis but remains low in textual fit.
+> A substantial Corinthian-quotation reading is a genuine published minority family, including contiguous-block, refutation, and alternating-voice proposals. Costa's complete official article is now directly read and gives the strongest current linguistic full-body specimen in the project for a vv4–9 quotation / vv10–16 refutation model. The multilingual audit also adds Schirrmacher's German monograph-length refutation model as an independently published precursor, though its full book argument still requires direct access. Paul can quote or reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or repeated alternating switches; advocates disagree over span; direct continuity bodies including Torbus 2023 show that the tensions can be integrated into a coherent one-speaker macrostructure; and checked early witnesses likewise read the passage as Paul's continuous argument. Therefore the large-quotation family belongs fully in the status quaestionis but remains low in textual fit.
 
 ---
 
@@ -455,6 +507,8 @@ WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
 CLOSE_LONG_UNMARKED_ANALOGUE = NOT_FOUND_IN_INSPECTED_1COR
 EARLY_RECEPTION_SUPPORT_FOR_LARGE_QUOTATION = NOT_FOUND_IN_CHECKED_WITNESSES
 EARLY_CONTINUOUS_PAULINE_READING = STRONGLY_ATTESTED
+TORBUS_2023_FULL_BODY_CONTINUITY_CONTROL = CLOSED_DIRECT
+TORBUS_2023_V10_ACTIVE_WOMAN_CONTROL = DIRECT_AUTHOR_BODY
 KOWALSKI_KUL_INSTITUTIONAL_ROUTE = CLOSED_OBJECT / BODY_RENDER_HOLD
 KOWALSKI_TORBUS_CONTINUITY_CONTROLS = ABSORBED
 QUOTATION_REFUTATION_MULTILINGUAL_REOPEN = ACTIVE_ON_NEW_HIGH_VALUE_SOURCE
