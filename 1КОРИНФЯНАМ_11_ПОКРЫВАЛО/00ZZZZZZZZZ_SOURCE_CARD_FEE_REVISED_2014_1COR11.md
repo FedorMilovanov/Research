@@ -13,6 +13,7 @@ FEE_1994_SPANISH_TRANSLATION_OF_1987
 FEE_2014_REVISED_EDITION_MAIN_BODY
 FEE_2014_NEW_BIBLIOGRAPHIC_ADDENDA/FOOTNOTE_UPDATES
 FEE_2019_PORTUGUESE_TRANSLATION_OF_REVISED_2014
+FEE_2019_KOREAN_TRANSLATION_OF_REVISED_2014
 FEE_2024_SPANISH_TRANSLATION_OF_REVISED_2014
 ```
 
@@ -167,7 +168,53 @@ Do not confuse this with the Nueva Creación Spanish edition.
 
 ---
 
-# 5. First-edition firewall now strengthened by direct user copy
+# 5. New authorized route: Korean revised edition
+
+A materially distinct Korean licensed lane is now directly controlled.
+
+Official Logos/Biblia copyright metadata identifies:
+
+```text
+TITLE_KO = NICNT 고린도전서
+AUTHOR = Gordon_D_Fee
+TRANSLATOR = 최병필
+PUBLISHER = 부흥과개혁사 / Revival_and_Reformation_Press
+PRINT_YEAR = 2019
+PRINT_ISBN = 9788960925489
+LOGOS_RESOURCE = LLS:NICNT67CO1_2ED-KO
+ORIGINAL_TITLE = The_First_Epistle_to_the_Corinthians_Revised_Edition
+ORIGINAL_COPYRIGHT = 1987_2014_Gordon_D_Fee
+ORIGINAL_PUBLISHER = Eerdmans
+TRANSLATION_BASE = REVISED_ENGLISH_EDITION_2014
+RIGHTS = TRANSLATED_AND_USED_BY_PERMISSION_OF_EERDMANS
+```
+
+Biblia explicitly states that the Korean edition is translated and used by permission of Wm. B. Eerdmans Publishing Co. The licensed Korean print object is independently catalogued by Korean booksellers and Google Books as the translation of *NICNT The First Epistle to the Corinthians, Revised Edition*.
+
+The later licensed Korean ebook is also independently catalogued:
+
+```text
+EBOOK_YEAR = 2023
+EBOOK_ISBN = 9788960928206
+FORMAT = EPUB
+```
+
+The current public Biblia/retailer preview surfaces establish edition identity, rights and TOC/product metadata but do **not** expose the target 1 Cor 11:2–16 exposition deeply enough for body-level claims.
+
+```text
+FEE_KO_2019_EDITION_IDENTITY = CLOSED_DIRECT_OFFICIAL_BIBLIA
+FEE_KO_2019_TRANSLATES_REVISED_2014 = CLOSED_DIRECT_OFFICIAL_BIBLIA
+FEE_KO_2019_EERDMANS_PERMISSION = CLOSED_DIRECT_OFFICIAL_BIBLIA
+FEE_KO_2019_LOGOS_RESOURCE = VERIFIED
+FEE_KO_2023_LICENSED_EBOOK = VERIFIED
+FEE_KO_2019_11_2_16_TARGET_BODY = NOT_EXPOSED_CURRENT_PREVIEW
+```
+
+This route is acquisition-capable if the licensed preview/library surface later exposes the target section. Route existence does not itself close any Fee 2014 exegetical wording.
+
+---
+
+# 6. First-edition firewall now strengthened by direct user copy
 
 The user-provided PDF `Gordon D. Fee, Primera Epistola a Los Corintios.pdf` was page-autopsied. Its title/copyright pages establish:
 
@@ -193,7 +240,7 @@ This first-edition closure is valuable for later edition-delta comparison, but i
 
 ---
 
-# 6. What the 2014 Addendum is — and is not
+# 7. What the 2014 Addendum is — and is not
 
 A detailed review based on a 2014 review copy reports that the new addendum on 11:2–6 is primarily bibliographical material with a short introduction rather than a second substantive exposition. An independent DTS review likewise reports broad continuity alongside NIV/literature/footnote updating.
 
@@ -207,7 +254,7 @@ The direct Portuguese revised preface now independently confirms that substantia
 
 ---
 
-# 7. Current exact-body status for 11:2–16
+# 8. Current exact-body status for 11:2–16
 
 English routes already tested:
 
@@ -222,6 +269,7 @@ New language routes:
 ```text
 PORTUGUESE_VIDA_NOVA_CLC = AUTHORIZED_REVISED_TRANSLATION / OFFICIAL_52_PAGE_SAMPLE / PREFACE_AND_TOC_DIRECT / TARGET_BODY_NOT_IN_SAMPLE
 SPANISH_TESORO_BIBLICO_LOGOS = AUTHORIZED_REVISED_TRANSLATION / LICENSED_LOOK_INSIDE / TARGET_BODY_NOT_EXPOSED_CURRENT_PREVIEW
+KOREAN_RNR_LOGOS_BIBLIA = AUTHORIZED_REVISED_TRANSLATION / OFFICIAL_RESOURCE_AND_RIGHTS_CLOSED / TARGET_BODY_NOT_EXPOSED_CURRENT_PREVIEW
 ```
 
 Therefore the old global terminal wording is superseded:
@@ -237,7 +285,7 @@ No exact English quotation should be labelled `direct Fee 2014` unless the Engli
 
 ---
 
-# 8. Angels — strong locator, still not target-body closure
+# 9. Angels — strong locator, still not target-body closure
 
 Peer-reviewed scholarship places the revised Fee angel discussion at:
 
@@ -257,18 +305,19 @@ Current evidence class:
 FEE_2014_ANGELS_LOCATOR_576_578 = STRONG_PEER_REVIEWED_PAGE_LOCATOR
 FEE_2014_N123_WATCHERS_REJECTION = STRONG_SECONDARY_QUOTE_LOCATOR
 FEE_2014_N123_DIRECT_ENGLISH_PAGE = NOT_ACQUIRED
-FEE_2014_EQUIVALENT_PT_ES_ANGEL_SECTION = SEARCH_TARGET_ACTIVE
+FEE_2014_EQUIVALENT_PT_ES_KO_ANGEL_SECTION = SEARCH_TARGET_ACTIVE
 ```
 
 Do not promote the reproduced wording to quote-safe Fee text.
 
 ---
 
-# 9. Reopened target order
+# 10. Reopened target order
 
 ```text
 P0A = Portuguese 2019 target section around local pp616_667, especially v10/angels equivalent of English pp576_578/n123
-P0B = Spanish 2024 Logos revised target section, especially v10/angels
+P0B = Korean 2019/2023 Logos-Biblia revised target section, especially v10/angels
+P0C = Spanish 2024 Logos revised target section, especially v10/angels
 P1 = English revised pp576_578/n123 if a new lawful/institutional route appears
 P1 = English/translated complete 11:2-6 main body and Addendum
 P1 = translated/English vv13-16 body
@@ -278,7 +327,7 @@ Do not repeat the exhausted English preview endpoints as though they were new se
 
 ---
 
-# 10. Edition / translation firewall
+# 11. Edition / translation firewall
 
 ```text
 FEE_CITATION_WITH_YEAR_2014 + 1987_PAGE_NUMBER = VERIFY_BEFORE_USE
@@ -287,12 +336,14 @@ FEE_1987_WORDING != AUTOMATIC_2014_WORDING
 FEE_1987_PAGINATION != FEE_2014_PAGINATION
 FEE_PT_2019_PAGINATION != ENGLISH_2014_PAGINATION
 FEE_ES_2024_DIGITAL_LOCATOR != ENGLISH_2014_PRINT_PAGINATION
+FEE_KO_2019_PAGINATION != ENGLISH_2014_PAGINATION
+FEE_KO_2023_EBOOK_LOCATOR != ENGLISH_2014_PRINT_PAGINATION
 TRANSLATED_DIRECT_BODY != ORIGINAL_LANGUAGE_VERBATIM_QUOTE
 ```
 
 ---
 
-# 11. Relation to current project models
+# 12. Relation to current project models
 
 No grade reversal follows merely from the new acquisition routes.
 
@@ -310,7 +361,7 @@ Fee remains a high-weight technical pressure-test, not a vote that automatically
 
 ---
 
-# 12. Result
+# 13. Result
 
 ```text
 FEE_2014_REVISED_EDITION = VERIFIED
@@ -327,6 +378,11 @@ FEE_PT_2019_TOC = CLOSED_DIRECT
 FEE_PT_2019_11_2_16_TARGET_BODY = NOT_IN_OFFICIAL_SAMPLE
 FEE_ES_2024 = AUTHORIZED_TRANSLATION_OF_REVISED_2014
 FEE_ES_2024_TARGET_BODY = NOT_EXPOSED_CURRENT_PREVIEW
+FEE_KO_2019 = AUTHORIZED_TRANSLATION_OF_REVISED_2014
+FEE_KO_2019_LOGOS_RESOURCE = LLS:NICNT67CO1_2ED-KO
+FEE_KO_2019_RIGHTS = CLOSED_DIRECT_BIBLIA
+FEE_KO_2023_EBOOK = VERIFIED_LICENSED
+FEE_KO_TARGET_BODY = NOT_EXPOSED_CURRENT_PREVIEW
 
 ADDENDUM_AS_NEW_MAJOR_EXEGESIS = REJECTED_WORKING_ASSUMPTION
 FEE_ANGELS = PEER_REVIEWED_LOCATOR_PP576_578
