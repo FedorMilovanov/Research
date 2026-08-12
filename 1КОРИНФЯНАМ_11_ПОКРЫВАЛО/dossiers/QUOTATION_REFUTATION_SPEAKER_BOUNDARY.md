@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — quotation / refutation / speaker-boundary dossier
 
 **Статус:** `EVERGREEN-DOSSIER / MODERN-MODELS / MULTILINGUAL-REOPEN / PARALLEL-BRANCH-RECHECKED / PRIMARY-SAME-LETTER-CORPUS / RHETORICAL-CONTINUITY / EARLY-RECEPTION / RESEARCH-ONLY / PUBLICATION-HOLD`  
-**Последнее обновление:** 2026-08-11
+**Последнее обновление:** 2026-08-12
 
 ## 0. Authority rule
 
@@ -28,6 +28,7 @@ METHOD_AUTHOR != EVERY_DOWNSTREAM_APPLICATION_OF_METHOD
 PUBLISHER_OR_AUTHOR_SUMMARY != FULL_BOOK_BODY
 TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 AGENT_BRANCH_CLOSED_DIRECT != TARGET_VERIFIED_BODY
+LICENSED_BOOK_PREVIEW != COMPLETE_BOOK_BODY
 ```
 
 Future work updates this dossier; do not create quotation/slogan/speaker-boundary successors.
@@ -49,7 +50,7 @@ EARLY_CONTINUOUS_PAULINE_READING = STRONGLY_ATTESTED
 CORE_GRADE_REVERSALS = 0
 ```
 
-The 2026-08-11 branch harvest strengthens **source attribution** for Costa and **continuity control** for Kowalski and Torbus; it does not raise the textual-fit grade.
+The 2026-08-11/12 branch harvest strengthens **source attribution** for Costa and Schirrmacher and **continuity control** for Kowalski and Torbus; it does not raise the textual-fit grade.
 
 ---
 
@@ -141,11 +142,11 @@ PEPPIATT_AUTHOR_CERTAINTY = HYPOTHESIS_NOT_CLAIMED_PROOF
 PEPPIATT_MODEL_STATUS = C_SERIOUS_PUBLISHED_ALTERNATIVE
 ```
 
-## 2.5 Schirrmacher 1993 / revised 2002 — German precursor
+## 2.5 Schirrmacher 1993 / revised 2002 / English 2023 — direct licensed book preview
 
-Thomas Schirrmacher, *Paulus im Kampf gegen den Schleier: Eine alternative Auslegung von 1. Korinther 11,2–16*.
+Thomas Schirrmacher, *Paulus im Kampf gegen den Schleier: Eine alternative Auslegung von 1. Korinther 11,2–16*; English line *Paul in Conflict with the Veil*.
 
-Direct author/library control:
+Direct author/library/retail control:
 
 ```text
 FIRST_EDITION = 1993_VKW_BONN
@@ -153,32 +154,55 @@ EARLY_REPRINTS = 1994_1995_1997
 REVISED_5TH_EDITION = 2002_VTR_NUERNBERG
 REVISED_5TH_LENGTH = 130_pages
 REVISED_5TH_ISBN = 9783933372451
-ENGLISH_EDITION = Paul_in_Conflict_with_the_Veil_2002_2007
+ENGLISH_2007 = VTR / 136_pages / ISBN_9783933372451
+ENGLISH_2023 = LUVIRI_PRESS / 191_pages / ISBN_9789996066900
+AUTHOR = THOMAS_SCHIRRMACHER
 HEIDELBERG_2002_COPY = VERIFIED_AVAILABLE_PHYSICAL_HOLDING
+AUTHOR_PAGE = https://thomasschirrmacher.net/ethik/paul-in-conflict-with-the-veil/
+AUTHOR_2023_PDF_ROUTE = VERIFIED_AUTHOR_HOSTED / CURRENT_WEB_BINARY_CACHE_MISS
 ```
 
-Author summary attributes:
+A materially stronger lawful route now exposes substantial book body rather than only an author summary. Everand's licensed preview renders the 2023 English book from the opening argument through at least §1.3, Proposition 10, including Schirrmacher's alternative translation of 1 Cor 11:2–16 and his explicit proposition-by-proposition interpretation.
+
+Platform metadata requires a firewall: the Everand display currently labels the author as “Paul Schirrmacher” and reports a reflow page count of 307. Author, publisher/retail and library records independently identify **Thomas Schirrmacher**, while the Luviri print edition is 191 pages.
 
 ```text
-CORINTHIANS_DRAW_FALSE_VEILING_INFERENCES = YES
-PAUL_PRESENTS_CORINTHIAN_VEILING_TEACHING = YES
-IRONIC_AD_ABSURDUM = VV4_9_IN_AUTHOR_SUMMARY
-PAUL_CONTRADICTS = VV10_15_IN_AUTHOR_SUMMARY
-V16 = VEILING_NOT_BINDING_ALL_CHURCHES_IN_AUTHOR_SUMMARY
+SCHIRRMACHER_2023_EVERAND_LICENSED_BOOK_PREVIEW = CLOSED_DIRECT_BODY_PREVIEW
+SCHIRRMACHER_2023_PREVIEW_COVERAGE = SECTION_1_1 + SECTION_1_2 + SECTION_1_3_THROUGH_PROPOSITION_10
+EVERAND_DISPLAY_AUTHOR_PAUL_SCHIRRMACHER = PLATFORM_METADATA_ERROR
+EVERAND_REFLOW_PAGE_COUNT_307 != LUVIRI_PRINT_191_PAGES
+SCHIRRMACHER_FULL_BOOK_BODY = PARTIAL_NOT_CLOSED
 ```
 
+Direct preview body controls the internal model more strongly than the earlier author-summary route:
+
 ```text
-SCHIRRMACHER_MODEL_EXISTENCE = CLOSED_DIRECT_AUTHOR_AND_LIBRARY_METADATA
-SCHIRRMACHER_AUTHOR_SUMMARY_BOUNDARY = DIRECT_AUTHOR_SUMMARY
-SCHIRRMACHER_FULL_BOOK_BODY = NOT_YET_DIRECTLY_ACQUIRED
-SCHIRRMACHER_MODEL_TEXTUAL_GRADE = NOT_UPGRADED_FROM_SUMMARY_ALONE
+SCHIRRMACHER_VV4_9 = CORINTHIAN_POSITION_REPEATED_AND_DRIVEN_TO_EXTREMES_IN_AUTHOR_MODEL
+SCHIRRMACHER_VV10_15 = PAULINE_CONTRADICTION_REFUTATION_IN_AUTHOR_MODEL
+SCHIRRMACHER_V16 = VEILING_CUSTOM_REJECTED_AS_BINDING_IN_AUTHOR_MODEL
+SCHIRRMACHER_V10_EXOUSIA = WOMAN_HAS_AUTHORITY_OVER_OWN_HEAD_IN_AUTHOR_MODEL
+SCHIRRMACHER_VV11_12 = REFUTATION_OR_CORRECTION_OF_VV7_9_IN_AUTHOR_MODEL
+SCHIRRMACHER_V13_15 = DECLARATIVE_NOT_RHETORICAL_QUESTIONS_IN_AUTHOR_MODEL
+SCHIRRMACHER_V15 = HAIR_GIVEN_INSTEAD_OF_VEIL_IN_AUTHOR_MODEL
+SCHIRRMACHER_QUOTATION_REPETITION_PARALLELS = AUTHOR_ARGUMENT
+SCHIRRMACHER_ANGELS_PROPOSITION_9 = AUTHOR_SPECULATION / NOT_PROJECT_FACT
+```
+
+The preview also contains broader cultural/historical assertions. Those are recorded as **what Schirrmacher argues**, not promoted to independent evidence unless separately verified.
+
+```text
+SCHIRRMACHER_DIRECT_PREVIEW_INTERNAL_COHERENCE = REAL
+SCHIRRMACHER_DIRECT_PREVIEW_INTERNAL_COHERENCE != SPEAKER_BOUNDARY_PROOF
+SCHIRRMACHER_MODEL_TEXTUAL_GRADE = NOT_UPGRADED_BY_DIRECT_PREVIEW_ALONE
+LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW_UNCHANGED
+CORE_GRADE_REVERSALS = 0
 ```
 
 Family disagreement is itself important:
 
 ```text
 SHOEMAKER = CONTIGUOUS_LARGE_BLOCK_LINEAGE
-SCHIRRMACHER = VV4_9_CORINTHIAN_IN_AUTHOR_SUMMARY / VV10_15_REFUTATION
+SCHIRRMACHER = VV4_9_CORINTHIAN / VV10_15_REFUTATION_DIRECT_LICENSED_PREVIEW
 COSTA = VV4_9_QUOTATION
 SALES = VV3_10_QUOTATION
 PEPPIATT = MULTIPLE_ALTERNATING_SWITCHES
@@ -406,12 +430,14 @@ PEPPIATT_MULTIPLE_SWITCHES = ADDITIONAL_TEXTUAL_BURDEN
 PEPPIATT_EXPLANATORY_COHERENCE != SPEAKER_BOUNDARY_PROOF
 ```
 
-Schirrmacher:
+Schirrmacher after direct licensed preview:
 
 ```text
-SCHIRRMACHER_AUTHOR_SUMMARY_ESTABLISHES_MODEL_EXISTENCE = true
-SCHIRRMACHER_AUTHOR_SUMMARY_DOES_NOT_SUPPLY_FULL_GREEK_BOUNDARY_ARGUMENT = true
-SCHIRRMACHER_V10_15_REFUTATION_REQUIRES_DIRECT_BOOK_STRESS_TEST = true
+SCHIRRMACHER_DIRECT_LICENSED_PREVIEW_ESTABLISHES_INTERNAL_MODEL = true
+SCHIRRMACHER_V10_ACTIVE_WOMAN_AUTHORITY = DIRECT_LICENSED_PREVIEW
+SCHIRRMACHER_V13_16_PUNCTUATION_CUSTOM_ARGUMENT = DIRECT_LICENSED_PREVIEW
+SCHIRRMACHER_PREVIEW_INTERNAL_COHERENCE != BOUNDARY_PROOF
+SCHIRRMACHER_FULL_BOOK_GREEK_STRESS_TEST = STILL_PARTIAL
 ```
 
 ---
@@ -439,7 +465,7 @@ Early reception is reception evidence, not proof of original authorial intent.
 
 # 8. Combined calibration
 
-Why textual fit remains low despite Costa now being full-body direct:
+Why textual fit remains low despite Costa now being full-body direct and Schirrmacher being directly controlled through a substantial licensed book preview:
 
 1. no explicit source/quotative frame at proposed boundaries;
 2. advocates disagree over span and number of speaker switches;
@@ -468,7 +494,9 @@ WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
 KOWALSKI_2020 = OFFICIAL_KUL_ITEM_AND_PDF_FILE_OBJECT_CLOSED / FULL_BODY_TARGET_RUNTIME_RENDER_HOLD
 TORBUS_2023 = OFFICIAL_UWR_OBJECT + COMPLETE_PUBLIC_PUBLISHED_BODY_CLOSED_DIRECT
 TORBUS_2009_PP507_521 = HISTORICAL_EDITION_COMPARISON_ONLY / DIRECT_BODY_STILL_EXTERNAL_HOLD
-SCHIRRMACHER_1993_2002 = MODEL_AND_EDITION_HISTORY_CLOSED_DIRECT_AUTHOR_LIBRARY / FULL_BOOK_BODY_HOLD
+SCHIRRMACHER_2023 = AUTHOR_PAGE + AUTHOR_PDF_ROUTE_IDENTITY + LICENSED_DIRECT_BOOK_PREVIEW_CLOSED
+SCHIRRMACHER_AUTHOR_PDF_WEB_BINARY = CURRENT_CACHE_MISS
+SCHIRRMACHER_FULL_BOOK_BODY = STILL_PARTIAL
 TECHNICAL_GAR_KAI_GAR_DIA_TOUTO_PLEN_POLYPHONY_CORPUS = BOUNDED_CURRENT_AUDIT_COMPLETE
 CURRENT_MAJOR_COMMENTARY_RESPONSES = DELEGATED_TO_CURRENT_COMMENTARY_OWNER
 ADDITIONAL_PREMODERN_SPEAKER_BOUNDARY_WITNESSES = OPTIONAL_ONLY_IF_NEW_HIGH_VALUE_WITNESS
@@ -478,7 +506,7 @@ ADDITIONAL_PREMODERN_SPEAKER_BOUNDARY_WITNESSES = OPTIONAL_ONLY_IF_NEW_HIGH_VALU
 QUOTATION_REFUTATION_ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
 QUOTATION_REFUTATION_MULTILINGUAL_REOPEN = ACTIVE_ON_MATERIALLY_NEW_SOURCE
 ACCUMULATING_ADVOCATES_ALONE = NOT_REOPEN_REASON
-NEW_RENDERABLE_KOWALSKI_BODY_OR_SCHIRRMACHER_BODY = REOPEN_TRIGGER
+NEW_RENDERABLE_KOWALSKI_BODY_OR_SCHIRRMACHER_FULL_PDF = REOPEN_TRIGGER
 ```
 
 ---
@@ -487,7 +515,7 @@ NEW_RENDERABLE_KOWALSKI_BODY_OR_SCHIRRMACHER_BODY = REOPEN_TRIGGER
 
 Safe synthesis:
 
-> A substantial Corinthian-quotation reading is a genuine published minority family, including contiguous-block, refutation, and alternating-voice proposals. Costa's complete official article is now directly read and gives the strongest current linguistic full-body specimen in the project for a vv4–9 quotation / vv10–16 refutation model. The multilingual audit also adds Schirrmacher's German monograph-length refutation model as an independently published precursor, though its full book argument still requires direct access. Paul can quote or reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or repeated alternating switches; advocates disagree over span; direct continuity bodies including Torbus 2023 show that the tensions can be integrated into a coherent one-speaker macrostructure; and checked early witnesses likewise read the passage as Paul's continuous argument. Therefore the large-quotation family belongs fully in the status quaestionis but remains low in textual fit.
+> A substantial Corinthian-quotation reading is a genuine published minority family, including contiguous-block, refutation, and alternating-voice proposals. Costa's complete official article is directly read and gives the strongest current linguistic full-body specimen in the project for a vv4–9 quotation / vv10–16 refutation model. Schirrmacher's model is now also controlled beyond author-summary level: a licensed preview of the 2023 English book directly exposes his alternative translation and the argument through at least Proposition 10, including vv4–9 as the Corinthian position, vv10–15 as Pauline refutation, active authority for the woman in v10, and his declarative/punctuation reading of vv13–16. The complete book is still only partial in the target workflow because the author-hosted PDF binary has not rendered. Paul can quote or reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or repeated alternating switches; advocates disagree over span; direct continuity bodies including Torbus 2023 show that the tensions can be integrated into a coherent one-speaker macrostructure; and checked early witnesses likewise read the passage as Paul's continuous argument. Therefore the large-quotation family belongs fully in the status quaestionis but remains low in textual fit.
 
 ---
 
@@ -500,7 +528,9 @@ LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW
 LARGE_QUOTATION_LEADING_MODEL = false
 COSTA_FULL_OFFICIAL_PDF = CLOSED_DIRECT_BODY
 COSTA_VV4_9_QUOTATION_MODEL = DIRECT_BODY_CONTROLLED
-SCHIRRMACHER_1993_2002 = GERMAN_MONOGRAPH_LENGTH_REFUTATION_MODEL / AUTHOR_SUMMARY_DIRECT / FULL_BODY_HOLD
+SCHIRRMACHER_2023 = DIRECT_LICENSED_BOOK_BODY_PREVIEW / VV4_9_QUOTATION_PLUS_VV10_15_REFUTATION_CONTROLLED / FULL_BOOK_PARTIAL
+SCHIRRMACHER_V10 = ACTIVE_WOMAN_AUTHORITY_OVER_OWN_HEAD_IN_AUTHOR_MODEL
+SCHIRRMACHER_V13_16 = DIRECT_PREVIEW_PUNCTUATION_CUSTOM_ARGUMENT
 PEPPIATT_2015 = DISTINCT_ALTERNATING_VOICE_MODEL
 WATSON_CULY_2018_METHOD = DIRECT_CONTROL
 WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
