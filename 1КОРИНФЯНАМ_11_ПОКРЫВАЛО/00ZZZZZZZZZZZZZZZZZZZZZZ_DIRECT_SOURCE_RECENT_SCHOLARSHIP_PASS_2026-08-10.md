@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — direct-source / recent-scholarship pass
 
-**Дата:** 2026-08-10  
-**Статус:** `DIRECT-PUBLISHER-CONTROL / RECENT-SCHOLARSHIP / SOURCE-SEPARATION / RESEARCH-ONLY / PUBLICATION-HOLD`
+**Дата:** 2026-08-12  
+**Статус:** `DIRECT-PUBLISHER-CONTROL / DIRECT-AUTHOR-SELF-DESCRIPTION / RECENT-SCHOLARSHIP / SOURCE-SEPARATION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Purpose
 
@@ -12,6 +12,7 @@ Operational rules:
 ```text
 AGENT_DUMP = DISCOVERY_ONLY
 PUBLISHER_ABSTRACT != FULL_ARTICLE
+AUTHOR_SELF_DESCRIPTION != FULL_BOOK_BODY
 BOOK_DESCRIPTION != PROOF_OF_HIDDEN_HISTORICAL_EVENTS
 BIBLIOGRAPHIC_EXISTENCE != EXEGETICAL_CORRECTNESS
 PEER_REVIEW != PROBABILITY_PROMOTION_AUTOMATICALLY
@@ -22,6 +23,7 @@ NO_CORE_GRADE_CHANGE_WITHOUT_CLAIM_LEVEL_ADVERSARIAL_REVIEW = true
 The global repository evidence classes remain `A1/A2/A3/B1/C/D`. For the sources below:
 
 - official publisher/institutional metadata can establish bibliographic existence/provenance at `A2/A3` level;
+- direct institutional author self-description can establish what an author explicitly claims about the model, but is not a substitute for the complete argument/body;
 - the scholarly exegetical argument itself is normally `B1` unless independently grounded by primary textual/archaeological controls;
 - historical reconstruction remains reconstruction even when stated by the author or publisher.
 
@@ -38,6 +40,7 @@ Official/institutional controls verify the work:
 Current publication routes include:
 
 - Enskilda Högskolan Stockholm series page, which lists the dissertation and explicitly labels a `Fulltext i DiVA` route;
+- the EHS dissertation/disputation page, which identifies the dissertation, links the DiVA object and publishes a direct interview with Nõmmik plus an institutional summary of his thesis;
 - Wipf & Stock edition, published 2025-08-11, 374 pp., ISBN 9798385259823;
 - earlier 2024 BoD/EHS edition, 372 pp., ISBN 9789188906274;
 - Google Books limited preview exposing contents/selected pages and author/publisher description.
@@ -45,13 +48,57 @@ Current publication routes include:
 ### Routes
 
 - EHS series: https://ehs.se/forskning/dth/
+- EHS disputation / author interview: https://ehs.se/kalender/disputation-aldar-nommik/
+- DiVA object from EHS: https://urn.kb.se/resolve?urn=urn:nbn:se:ths:diva-2600
 - Wipf & Stock: https://wipfandstock.com/9798385259823/robes-romans-and-rituals-in-first-corinthians/
 - Google Books, Wipf edition: https://books.google.com/books?id=JjGFEQAAQBAJ
 - Google Books, 2024 edition: https://books.google.com/books?id=2KQ1EQAAQBAJ
 
-## 1.2 Separate the evidence substrate from the reconstructed Corinthian conflict
+## 1.2 Direct EHS author self-description — substantive model provenance CLOSED
 
-The Google Books contents and the independent 2025 Berglund citation permit an important **structural** refinement.
+The EHS dissertation page does more than list the work. It publishes direct answers from Nõmmik about what he regards as new in his interpretation and how it changes the reading of 1 Cor 11:2–16, followed by an institutional summary of the dissertation.
+
+Nõmmik directly presents `capite velato` as the central Roman ritual comparandum and describes his dissertation as, to his knowledge, the first comprehensive scholarly interpretation of 1 Cor 11:2–16 to make this Roman ritual the central argument. He says his aim is to solve the known difficulty in the `capite velato` proposal: why Paul tells men to stop the covered-head ritual but does not impose the same rule on women.
+
+He also directly characterizes the Corinthian side of the dispute as active rather than passive: in his model Paul is handling strong counterarguments and new practices developed by Corinthians in response to his teaching.
+
+The EHS summary makes the hidden-event reconstruction explicit as **the dissertation's claim**:
+
+- the conflict concerns correct ritual procedure, efficacy of prayer and access to divine knowledge;
+- some Corinthians are reconstructed as demanding ritual uniformity;
+- in that reconstruction all Christ-group members, including married women from different cultures, were to remove everything from their heads during prayer or pursuit of divine knowledge in order to match Roman men whom Paul had told not to pray with a garment over the head;
+- Paul's response, in Nõmmik's model, distinguishes male and female ritual propriety: a garment over the head is shameful for men, while women may retain head coverings and hair accessories during prayer and prophecy.
+
+This materially upgrades provenance for the internal model. It does **not** upgrade the historical probability of the reconstructed hidden Corinthian event merely because the author states it directly.
+
+```text
+NOMMIK_EHS_DISSERTATION_PAGE = CLOSED_DIRECT_INSTITUTIONAL
+NOMMIK_EHS_AUTHOR_INTERVIEW = CLOSED_DIRECT_INSTITUTIONAL_AUTHOR_SELF_DESCRIPTION
+NOMMIK_EHS_DIVA_LINK = CLOSED_DIRECT_INSTITUTIONAL_ROUTE
+NOMMIK_CAPITE_VELATO_CENTRALITY = DIRECT_AUTHOR_SELF_DESCRIPTION
+NOMMIK_CORINTHIAN_COUNTERARGUMENTS_NEW_PRACTICES = DIRECT_AUTHOR_SELF_DESCRIPTION
+NOMMIK_PRAYER_EFFICACY_DIVINE_KNOWLEDGE_CONFLICT = DIRECT_EHS_INSTITUTIONAL_SUMMARY_OF_AUTHOR_MODEL
+NOMMIK_UNIFORM_HEAD_STRIPPING_TRIGGER = DIRECTLY_ATTESTED_AUTHOR_RECONSTRUCTION
+NOMMIK_WOMEN_KEEP_COVERINGS_HAIR_ACCESSORIES = DIRECTLY_ATTESTED_AUTHOR_MODEL
+NOMMIK_FULL_DIVA_DISSERTATION_BODY = NOT_ACQUIRED_CURRENT_RUNTIME
+DIRECT_AUTHOR_SELF_DESCRIPTION != FULL_DISSERTATION_BODY
+AUTHOR_RECONSTRUCTION_DIRECTLY_ATTESTED != HIDDEN_EVENT_HISTORICALLY_PROVED
+```
+
+Calibration remains:
+
+```text
+ROMAN_CAPITE_VELATO_BACKGROUND = A
+NOMMIK_RITUAL_UNIFORMITY_CAPITE_VELATO_MODEL = C_SERIOUS_CURRENT_RECONSTRUCTION
+NOMMIK_HIDDEN_CORINTH_EVENTS = C_SERIOUS_RECONSTRUCTION
+V4_EXACT_CAPITE_VELATO = B_C
+EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
+CORE_GRADE_REVERSALS = 0
+```
+
+## 1.3 Separate the evidence substrate from the reconstructed Corinthian conflict
+
+The Google Books contents, direct EHS author/institutional description and the independent 2025 Berglund citation permit an important **structural** refinement.
 
 The 2024 edition contents expose a long pre-exegetical/background trajectory including:
 
@@ -69,20 +116,22 @@ This is enough to enforce the following separation:
 
 ```text
 NOMMIK_ROMAN_RITUAL_EVIDENCE_SUBSTRATE != NOMMIK_HIDDEN_CORINTH_TRIGGER
-NOMMIK_MODEL_DESCRIPTION = AUTHOR/INSTITUTIONALLY_VERIFIED
+NOMMIK_MODEL_DESCRIPTION = DIRECT_AUTHOR/INSTITUTIONALLY_VERIFIED
 NOMMIK_HIDDEN_CORINTH_EVENTS = C_SERIOUS_RECONSTRUCTION
 NOMMIK_BACKGROUND_AND_RECONSTRUCTION_MUST_BE_CITED_SEPARATELY = true
 ```
 
-This matters because the author/publisher description itself argues that some Corinthians sought ritual uniformity and pressed married women to remove head items. That is **what Nõmmik argues**, not direct evidence that the hidden event happened.
+This matters because the author/institutional description itself argues that some Corinthians sought ritual uniformity and pressed married women to remove head items. That is **what Nõmmik argues**, not direct evidence that the hidden event happened.
 
-## 1.3 Locator caution
+## 1.4 Locator caution
 
 The 2024 and 2025 Google Books renderings expose slightly different/garbled TOC pagination in search output. Therefore:
 
 ```text
 NOMMIK_EXACT_PRINT_PAGE_LOCATOR = LOCATOR_HOLD_UNLESS_EDITION_PINNED
 NOMMIK_2024_PAGE != AUTOMATICALLY_NOMMIK_2025_PAGE
+NOMMIK_GOOGLE_BOOKS_LIMITED_PREVIEW_ARCHITECTURE = DIRECT_PREVIEW_CONTROL
+NOMMIK_DIVA_FULL_BODY_PAGE_AUTOPSY = STILL_OPEN
 ```
 
 Do not quote a locator copied from search-snippet TOC output without checking the edition/object.
@@ -474,6 +523,10 @@ No quote-safe promotion.
 ## 12.1 New verified acquisitions
 
 ```text
+NOMMIK_EHS_AUTHOR_SELF_DESCRIPTION = ADD
+  function: direct institutional author statement of capite-velato centrality, Corinthian counterarguments and reconstructed ritual-uniformity trigger
+  ceiling: author model provenance, not full dissertation body or historical proof
+
 NEWBERRY_2019 = ADD
   function: 1 Esdras 4 + Genesis intertext / v10 authority / vv11-12 counterbalance
 
@@ -520,9 +573,9 @@ These should not be collapsed into one “egalitarian quotation model.”
 # 13. Next high-value actions
 
 ```text
-P0_1 = Garland 2025 complete pp.468-493 + notes, direct current edition
+P0_1 = Garland 2025 complete current section + notes, direct current edition
 P0_2 = Ciampa/Rosner pp.503-540 + notes, direct book
-P0_3 = Nõmmik DiVA full dissertation bytes, edition-pinned locators
+P0_3 = Nõmmik DiVA full dissertation bytes + page-level evidential chain + edition-pinned locators
 P0_4 = Costa full article adversarial discourse-marker audit
 P1_1 = Hooker complete 410-416 if lawful full text route opens
 P1_2 = Gundry-Volf full 151-171
