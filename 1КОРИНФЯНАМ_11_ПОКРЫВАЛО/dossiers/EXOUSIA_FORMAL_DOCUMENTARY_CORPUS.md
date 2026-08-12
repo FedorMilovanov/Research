@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:10 — `ἐξουσία` formal + documentary corpus
 
 **Статус:** `EVERGREEN-CONTROLLING-DOSSIER / TEXTUAL-LEXICAL-DOCUMENTARY / MULTILINGUAL-DIRECT-COUNTERMODEL / PARALLEL-BRANCH-RECHECKED / SOURCE-ROUTES-PINNED / RESEARCH-ONLY / PUBLICATION-HOLD`  
-**Последнее обновление:** 2026-08-11
+**Последнее обновление:** 2026-08-12
 
 ## 0. Authority rule
 
@@ -340,6 +340,64 @@ EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
 CORE_GRADE_REVERSALS = 0
 ```
 
+## 6.3 Sheila E. McGinn 1996 — direct author-profile rendered published body
+
+Sheila E. McGinn, “ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς: 1 Cor 11:10 and the Ecclesial Authority of Women,” *Listening* 31.2 (1996): 91–104.
+
+Custody and bibliographic control are independent:
+
+- McGinn's John Carroll University Academia author profile exposes the exact paper and renders the published article body through its conclusion and notes;
+- Julie Newberry's Cambridge *New Testament Studies* article independently cites McGinn, *Listening* 31 (1996): 91–104, especially 96–98.
+
+```text
+MCGINN_1996_BIBLIOGRAPHY = INDEPENDENTLY_CONTROLLED
+MCGINN_1996_AUTHOR_PROFILE = CLOSED_DIRECT_AUTHOR_IDENTITY
+MCGINN_1996_RENDERED_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_PROFILE
+MCGINN_1996_PUBLISHER_PDF_BYTES = NOT_REQUIRED_FOR_BODY_CLAIM
+AUTHOR_PROFILE_RENDERED_BODY != PUBLISHER_BYTE_CUSTODY
+```
+
+McGinn's body is valuable precisely because it separates active semantics from the much harder exact-referent problem.
+
+1. She treats women in 11:5 as genuine praying/prophesying participants and the passage as regulating dress rather than silencing their speech.
+2. She makes v10 the structural and interpretive center of 11:2–16.
+3. She rejects translation expansions that turn `ἐξουσία` itself into a veil, sign of submission, protection or male authority.
+4. She compares `ἐξουσίαν ἔχειν` with LXX Dan 4:17, 1 Macc 11:58 and 1 Esdras 8:22 and argues that the subject is the bearer/exerciser of the right or authority.
+5. She nevertheless does **not** stop at a generic active-right reading: taking `κεφαλή` metaphorically from v3, she proposes that the prophetic woman has authority over the male “head,” including her husband.
+6. Her `διὰ τοὺς ἀγγέλους` model treats angels as mediators of prophetic words/power in apocalyptic theology.
+7. She retains a material head covering and reconstructs it as a status/equality sign for baptized women across social classes.
+
+```text
+MCGINN_EXOUSIA_ACTIVE_WOMAN_BEARER = DIRECT_AUTHOR_BODY
+MCGINN_EXOUSIAN_ECHEIN_LXX_ACTIVE_PARALLELS = DIRECT_AUTHOR_ARGUMENT
+MCGINN_V10_PASSIVE_MALE_AUTHORITY_TRANSLATION = REJECTED_IN_AUTHOR_MODEL
+MCGINN_KEPHALE_IN_V10 = METAPHORICAL_MALE_HEAD_IN_AUTHOR_MODEL
+MCGINN_V10_EXACT_REFERENT = WOMANS_PROPHETIC_AUTHORITY_OVER_MALE_HEAD_IN_AUTHOR_MODEL
+MCGINN_ANGELS = MEDIATORS_OF_PROPHETIC_AUTHORITY_IN_AUTHOR_MODEL
+MCGINN_MATERIAL_HEAD_COVERING = YES_IN_AUTHOR_MODEL
+MCGINN_HEAD_COVERING_STATUS_EQUALITY_TRIGGER = HISTORICAL_SOCIAL_RECONSTRUCTION
+```
+
+Historical/social calibration is mandatory. McGinn's claim that uncovered women generally represented marginal groups such as prostitutes, slaves or lepers, and her proposal that Paul made covering a common baptized status-marker, are reconstructed social explanations rather than direct evidence of the hidden Corinthian event.
+
+```text
+MCGINN_UNCOVERED_OUTCAST_GENERALIZATION = AUTHOR_HISTORICAL_RECONSTRUCTION / NOT_PROJECT_FACT
+MCGINN_BAPTISMAL_STATUS_COVERING = AUTHOR_RECONSTRUCTION
+MCGINN_ACTIVE_SEMANTICS != MCGINN_EXACT_REFERENT_AUTOMATICALLY
+MCGINN_EXACT_REFERENT != PROJECT_EXACT_REFERENT
+```
+
+Project effect:
+
+```text
+MCGINN_1996 = DIRECT_PUBLISHED_ACTIVE_WOMAN_COUNTERMODEL
+EXOUSIA_WOMAN_SUBJECT = A_SYNTAX_UNCHANGED
+EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH_STRENGTHENED_PROVENANCE / GRADE_UNCHANGED
+EXOUSIA_EXACT_REFERENT = B_C_UNCHANGED
+EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+```
+
 ---
 
 # 7. Fendel 2023 — systematic documentary corpus
@@ -612,7 +670,7 @@ EXOUSIA_EXACT_REFERENT = B_C
 
 Still-live contextual families include control/right regarding head presentation; authority/right to pray/prophesy; authority/status signaled through covering; contextual metonymic sign reading; and other discourse-specific relations.
 
-A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`. Romerowski 2006 and Wang 2022 are direct full-body examples of contextual sign/metonymic readings; Gatumu 2020 is a direct official full-body example of the opposite contextual direction, making the woman's own right/authority explicit. All must be represented as serious published controls rather than reduced to lexical slogans.
+A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`. Romerowski 2006 and Wang 2022 are direct full-body examples of contextual sign/metonymic readings; Gatumu 2020 and McGinn 1996 are direct full-body examples of active-woman readings that nevertheless disagree over the **exact** referent. All must be represented as serious published controls rather than reduced to lexical slogans.
 
 ---
 
@@ -640,6 +698,9 @@ WANG_AUTHOR_UPLOAD != PUBLISHER_BYTE_CUSTODY
 GATUMU_ACTIVE_RIGHT != MODERN_AUTONOMY_THEOLOGY_AUTOMATICALLY
 GATUMU_ROMAN_LAW_TRIGGER != DIRECT_CORINTH_EVENT_RECORD
 GATUMU_OJS_AUTHOR_SPELLING != PDF_MASTHEAD_SPELLING_AUTOMATICALLY
+MCGINN_ACTIVE_WOMAN_BEARER != MCGINN_EXACT_REFERENT_PROVED
+MCGINN_AUTHORITY_OVER_MALE_HEAD = AUTHOR_INTERPRETIVE_MODEL / NOT_LEXICAL_DEFAULT
+MCGINN_UNCOVERED_OUTCAST_GENERALIZATION = HISTORICAL_RECONSTRUCTION / NOT_PROJECT_FACT
 TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 AGENT_BRANCH_CLOSED_DIRECT != TARGET_VERIFIED_BODY
 ```
@@ -659,6 +720,7 @@ P_OXY_9_1205 = EIS_ACC_DIRECT_DDBDP_CLOSED
 ROMEROWSKI_2006_FULL_FRENCH_PDF = CLOSED_DIRECT_AUTHOR_HOSTED
 WANG_2022_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_UPLOAD / PUBLISHER_PDF_TRANSPORT_HOLD
 GATUMU_2020_FULL_AFRICAN_PDF = CLOSED_DIRECT_OFFICIAL_OJS / PAGE_IMAGE_AUTOPSY_CACHE_HOLD
+MCGINN_1996_PUBLISHED_BODY = CLOSED_DIRECT_AUTHOR_PROFILE_RENDERED_BODY
 SEARCH_NONBIBLICAL_EXACT_ECHO_EPI_GEN = BOUNDED_SEARCH_COMPLETE / NO_EXACT_HEAD_PARALLEL_FOUND / GLOBAL_NONEXISTENCE_NOT_CLAIMED
 ADDITIONAL_FEMALE_ROMAN_RIGHT_BEARERS = OPTIONAL_ONLY_IF_NEW_HIGH_VALUE_SOURCE
 ```
@@ -694,6 +756,7 @@ P_OXY_I_104_AD96 = NEAR_SEMANTIC_FEMALE_CONTROL_NOT_EXOUSIA
 ROMEROWSKI_2006 = DIRECT_FULL_BODY_SERIOUS_CONTEXTUAL_METONYMY_COUNTERMODEL
 WANG_2022 = DIRECT_AUTHOR_UPLOADED_PUBLISHED_BODY / MATERIAL_COVERING + AUTHORITY_SIGN_COUNTERMODEL
 GATUMU_2020 = DIRECT_OFFICIAL_FULL_BODY / ACTIVE_WOMAN_RIGHT_AND_CHOICE_COUNTERMODEL
+MCGINN_1996 = DIRECT_AUTHOR_PROFILE_RENDERED_PUBLISHED_BODY / ACTIVE_WOMAN + DISTINCT_EXACT_REFERENT_COUNTERMODEL
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 PUBLICATION_HOLD = true
