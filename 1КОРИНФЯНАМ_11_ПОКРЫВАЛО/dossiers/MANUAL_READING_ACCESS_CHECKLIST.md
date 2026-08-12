@@ -219,13 +219,16 @@ OPEN = FULL_CH1_2_BODY_AND_NOTES
 ## 9. Aldar Nõmmik, *Robes, Romans, and Rituals in First Corinthians*
 
 **Read:** ideally complete dissertation/book, especially 1 Cor 11, Roman `capite velato`, ritual cognition/divine knowledge, v10, angels, creation, nature/custom.  
-**Where:** EHS/DiVA institutional object, URN `urn:nbn:se:ths:diva-2600`; Wipf & Stock edition.  
-**Extract:** full argument and evidential chain behind capite-velato reconstruction.
+**Where:** EHS/DiVA institutional object, URN `urn:nbn:se:ths:diva-2600`; Wipf & Stock edition; direct EHS dissertation interview/summary; Google Books limited preview.  
+**Extract:** complete primary-evidence chain and page-level argument behind the capite-velato / ritual-uniformity reconstruction, especially where the full body qualifies the direct author self-description.
+
+The EHS dissertation page now directly controls Nõmmik's own description of the model: `capite velato` is central; he frames Paul as handling Corinthian counterarguments/new practices; and the institutional summary explicitly reports his ritual-uniformity, prayer-efficacy/divine-knowledge and male/female head-state reconstruction. This is substantive author-model provenance, not full dissertation body.
 
 ```text
-STATUS = BODY_OPEN
-CLOSED = INSTITUTIONAL_OBJECT + FULLTEXT_ROUTE_IDENTITY
-OPEN = FULL_BODY_RENDER
+STATUS = PARTIAL
+CLOSED = INSTITUTIONAL_OBJECT + FULLTEXT_ROUTE_IDENTITY + DIRECT_EHS_AUTHOR_SELF_DESCRIPTION + GOOGLE_BOOKS_LIMITED_PREVIEW_ARCHITECTURE
+OPEN = FULL_BODY_RENDER + PAGE_LEVEL_EVIDENTIAL_CHAIN + EDITION_PINNED_LOCATORS
+DIRECT_AUTHOR_SELF_DESCRIPTION != FULL_DISSERTATION_BODY
 ```
 
 ## 10. Janelle Peters, *Paul and the Citizen Body* (Mohr Siebeck, 2025)
