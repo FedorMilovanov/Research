@@ -29,6 +29,7 @@ PUBLISHER_OR_AUTHOR_SUMMARY != FULL_BOOK_BODY
 TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 AGENT_BRANCH_CLOSED_DIRECT != TARGET_VERIFIED_BODY
 LICENSED_BOOK_PREVIEW != COMPLETE_BOOK_BODY
+JSTOR_MONOGRAPH_PREVIEW != COMPLETE_MONOGRAPH_BODY
 ```
 
 Future work updates this dossier; do not create quotation/slogan/speaker-boundary successors.
@@ -50,7 +51,7 @@ EARLY_CONTINUOUS_PAULINE_READING = STRONGLY_ATTESTED
 CORE_GRADE_REVERSALS = 0
 ```
 
-The 2026-08-11/12 branch harvest strengthens **source attribution** for Costa and Schirrmacher and **continuity control** for Kowalski and Torbus; it does not raise the textual-fit grade.
+The 2026-08-11/12 branch harvest strengthens **source attribution** for Costa, Schirrmacher and Peppiatt and **continuity control** for Kowalski and Torbus; it does not raise the textual-fit grade.
 
 ---
 
@@ -117,11 +118,34 @@ SALES_BOUNDARY = VV3_10_CORINTHIAN_QUERY
 SALES_REJOINDER = VV11_16
 ```
 
-## 2.4 Peppiatt 2015
+## 2.4 Peppiatt 2015 — direct JSTOR monograph-body preview
 
-Lucy Peppiatt, *Women and Worship at Corinth: Paul's Rhetorical Arguments in 1 Corinthians* (2015).
+Lucy Peppiatt, *Women and Worship at Corinth: Paul's Rhetorical Arguments in 1 Corinthians* (2015), 160 pp., JSTOR book object `j.ctvz0hc8w`.
 
-JSTOR controls the monograph/chapter architecture. A direct author interview separately describes her alternating-voice model:
+JSTOR now controls more than monograph identity and chapter architecture. Its current book surface directly renders author text from multiple chapters, including:
+
+- ch.1, “1 Corinthians 11:2–16: The Problems with the Women,” pp.21–43;
+- ch.2, “Men and Women before God,” pp.44–65, including the opening Greek text of vv7–9 and Peppiatt's description of the chapter's task;
+- ch.3, “A Rhetorical Reading Revisited,” pp.66–84, whose rendered opening directly reports Shoemaker's 11:2–10 Corinthian-perspective / 11:11–16 refutation model as the lineage Peppiatt is revisiting;
+- ch.4, “The Teaching of Paul,” pp.85–111, where JSTOR renders Peppiatt's own possible translation and the opening of her analysis;
+- ch.5, “The Value of Tongues and Prophecy,” pp.112–132, where she explicitly says she sees three crafted argumentative instances across the worship section with similar inconsistencies/contradictions;
+- concluding remarks, pp.133–138, where she explicitly concedes that nobody can prove her reconstruction of oppressive, bullying and childish Corinthian practices.
+
+JSTOR exposes a `Download XML` action for ch.1, but the XML and direct chapter routes still fail in the current runtime. The book surface is therefore classified as a **direct monograph-body preview**, not as full chapter/full book custody.
+
+```text
+PEPPIATT_2015_JSTOR_BOOK = CLOSED_DIRECT
+PEPPIATT_CHAPTER_ARCHITECTURE = CLOSED_DIRECT_JSTOR
+PEPPIATT_DIRECT_JSTOR_MONOGRAPH_BODY_PREVIEW = CLOSED
+PEPPIATT_DIRECT_PREVIEW_COVERAGE = CH1_OPENING + CH2_OPENING + CH3_OPENING + CH4_OPENING + CH5_OPENING + CONCLUDING_REMARKS_OPENING
+PEPPIATT_CH1_XML_ENDPOINT = VERIFIED_JSTOR_ACTION / CURRENT_CACHE_MISS
+PEPPIATT_COMPLETE_CH3_BODY = OPEN
+PEPPIATT_COMPLETE_MONOGRAPH_BODY = OPEN
+```
+
+The direct JSTOR preview strengthens two important provenance controls. First, the quotation/refutation model is demonstrably embedded in Peppiatt's own monograph argument, not merely reconstructed from interviews or later reception. Second, Peppiatt herself marks the historical reconstruction as unprovable; explanatory coherence is therefore not presented as documentary proof of the hidden Corinthian situation.
+
+A direct author interview separately provides the finer alternating-voice map that is **not fully reproduced by the current JSTOR snippets**:
 
 ```text
 vv2_3 = PAUL
@@ -137,9 +161,15 @@ v16 = DENIAL_OF_PROPOSED_CUSTOM_IN_HER_MODEL
 ```text
 PEPPIATT_2015 = REAL_MONOGRAPH_LENGTH_RHETORICAL_QUOTATION_REFUTATION_MODEL
 PEPPIATT_MODEL_FAMILY = ALTERNATING_VOICE
+PEPPIATT_EXACT_FINE_GRAIN_BOUNDARY_MAP = DIRECT_AUTHOR_INTERVIEW + PARTIAL_JSTOR_MONOGRAPH_CORROBORATION
+PEPPIATT_SHOEMAKER_LINEAGE = DIRECT_JSTOR_MONOGRAPH_PREVIEW
+PEPPIATT_OPPRESSIVE_CORINTH_RECONSTRUCTION = AUTHOR_HYPOTHESIS_EXPLICITLY_NOT_PROVABLE
 PEPPIATT_EXPLICIT_QUOTATION_MARKER_AT_V4_OR_V7 = ABSENT
 PEPPIATT_AUTHOR_CERTAINTY = HYPOTHESIS_NOT_CLAIMED_PROOF
+PEPPIATT_DIRECT_PREVIEW_INTERNAL_COHERENCE != SPEAKER_BOUNDARY_PROOF
 PEPPIATT_MODEL_STATUS = C_SERIOUS_PUBLISHED_ALTERNATIVE
+LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW_UNCHANGED
+CORE_GRADE_REVERSALS = 0
 ```
 
 ## 2.5 Schirrmacher 1993 / revised 2002 / English 2023 — direct licensed book preview
@@ -205,7 +235,7 @@ SHOEMAKER = CONTIGUOUS_LARGE_BLOCK_LINEAGE
 SCHIRRMACHER = VV4_9_CORINTHIAN / VV10_15_REFUTATION_DIRECT_LICENSED_PREVIEW
 COSTA = VV4_9_QUOTATION
 SALES = VV3_10_QUOTATION
-PEPPIATT = MULTIPLE_ALTERNATING_SWITCHES
+PEPPIATT = MULTIPLE_ALTERNATING_SWITCHES / DIRECT_JSTOR_MONOGRAPH_PREVIEW_PARTIAL
 AGREEMENT_QUOTATION_EXISTS != AGREEMENT_WHERE_QUOTATION_IS
 ```
 
@@ -423,11 +453,14 @@ PLEN_V11_SUPPORTS_REAL_CONTRAST = true
 PLEN_V11_PROVES_NEW_SPEAKER = false
 ```
 
-Peppiatt:
+Peppiatt after direct JSTOR monograph preview:
 
 ```text
 PEPPIATT_MULTIPLE_SWITCHES = ADDITIONAL_TEXTUAL_BURDEN
 PEPPIATT_EXPLANATORY_COHERENCE != SPEAKER_BOUNDARY_PROOF
+PEPPIATT_JSTOR_PREVIEW_CONFIRMS_MONOGRAPH_ARGUMENT = true
+PEPPIATT_HIDDEN_CORINTH_RECONSTRUCTION_PROVABLE = false_IN_AUTHOR_OWN_CONCLUDING_CAVEAT
+PEPPIATT_FINE_GRAIN_BOUNDARY_MAP_FULL_MONOGRAPH_STRESS_TEST = STILL_PARTIAL
 ```
 
 Schirrmacher after direct licensed preview:
@@ -465,7 +498,7 @@ Early reception is reception evidence, not proof of original authorial intent.
 
 # 8. Combined calibration
 
-Why textual fit remains low despite Costa now being full-body direct and Schirrmacher being directly controlled through a substantial licensed book preview:
+Why textual fit remains low despite Costa now being full-body direct, Schirrmacher being directly controlled through a substantial licensed book preview, and Peppiatt now being controlled from direct JSTOR monograph-body preview as well as her author interview:
 
 1. no explicit source/quotative frame at proposed boundaries;
 2. advocates disagree over span and number of speaker switches;
@@ -474,7 +507,8 @@ Why textual fit remains low despite Costa now being full-body direct and Schirrm
 5. `πλὴν` need not mark a new speaker;
 6. several forms require extra semantic/punctuation moves;
 7. multiple modern continuity models explain tension without hidden speakers;
-8. checked early reception is consistently continuous.
+8. checked early reception is consistently continuous;
+9. Peppiatt herself explicitly concedes that the reconstructed oppressive Corinthian practices cannot be proved.
 
 ```text
 D_C_LOW = TEXTUAL_FIT_GRADE
@@ -494,6 +528,7 @@ WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
 KOWALSKI_2020 = OFFICIAL_KUL_ITEM_AND_PDF_FILE_OBJECT_CLOSED / FULL_BODY_TARGET_RUNTIME_RENDER_HOLD
 TORBUS_2023 = OFFICIAL_UWR_OBJECT + COMPLETE_PUBLIC_PUBLISHED_BODY_CLOSED_DIRECT
 TORBUS_2009_PP507_521 = HISTORICAL_EDITION_COMPARISON_ONLY / DIRECT_BODY_STILL_EXTERNAL_HOLD
+PEPPIATT_2015 = DIRECT_JSTOR_MONOGRAPH_BODY_PREVIEW + AUTHOR_INTERVIEW_FINE_GRAIN_MAP / COMPLETE_CH3_AND_MONOGRAPH_STILL_OPEN
 SCHIRRMACHER_2023 = AUTHOR_PAGE + AUTHOR_PDF_ROUTE_IDENTITY + LICENSED_DIRECT_BOOK_PREVIEW_CLOSED
 SCHIRRMACHER_AUTHOR_PDF_WEB_BINARY = CURRENT_CACHE_MISS
 SCHIRRMACHER_FULL_BOOK_BODY = STILL_PARTIAL
@@ -506,7 +541,7 @@ ADDITIONAL_PREMODERN_SPEAKER_BOUNDARY_WITNESSES = OPTIONAL_ONLY_IF_NEW_HIGH_VALU
 QUOTATION_REFUTATION_ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
 QUOTATION_REFUTATION_MULTILINGUAL_REOPEN = ACTIVE_ON_MATERIALLY_NEW_SOURCE
 ACCUMULATING_ADVOCATES_ALONE = NOT_REOPEN_REASON
-NEW_RENDERABLE_KOWALSKI_BODY_OR_SCHIRRMACHER_FULL_PDF = REOPEN_TRIGGER
+NEW_RENDERABLE_KOWALSKI_BODY_OR_PEPPIATT_FULL_CH3_OR_SCHIRRMACHER_FULL_PDF = REOPEN_TRIGGER
 ```
 
 ---
@@ -515,7 +550,7 @@ NEW_RENDERABLE_KOWALSKI_BODY_OR_SCHIRRMACHER_FULL_PDF = REOPEN_TRIGGER
 
 Safe synthesis:
 
-> A substantial Corinthian-quotation reading is a genuine published minority family, including contiguous-block, refutation, and alternating-voice proposals. Costa's complete official article is directly read and gives the strongest current linguistic full-body specimen in the project for a vv4–9 quotation / vv10–16 refutation model. Schirrmacher's model is now also controlled beyond author-summary level: a licensed preview of the 2023 English book directly exposes his alternative translation and the argument through at least Proposition 10, including vv4–9 as the Corinthian position, vv10–15 as Pauline refutation, active authority for the woman in v10, and his declarative/punctuation reading of vv13–16. The complete book is still only partial in the target workflow because the author-hosted PDF binary has not rendered. Paul can quote or reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or repeated alternating switches; advocates disagree over span; direct continuity bodies including Torbus 2023 show that the tensions can be integrated into a coherent one-speaker macrostructure; and checked early witnesses likewise read the passage as Paul's continuous argument. Therefore the large-quotation family belongs fully in the status quaestionis but remains low in textual fit.
+> A substantial Corinthian-quotation reading is a genuine published minority family, including contiguous-block, refutation, and alternating-voice proposals. Costa's complete official article is directly read and gives the strongest current linguistic full-body specimen in the project for a vv4–9 quotation / vv10–16 refutation model. Schirrmacher's model is also controlled beyond author-summary level: a licensed preview of the 2023 English book directly exposes his alternative translation and the argument through at least Proposition 10, including vv4–9 as the Corinthian position, vv10–15 as Pauline refutation, active authority for the woman in v10, and his declarative/punctuation reading of vv13–16. Peppiatt is likewise now controlled beyond interview level: JSTOR directly renders author text from multiple chapters of her 2015 monograph, including the chapter in which she revisits the Shoemaker quotation/refutation lineage and her concluding acknowledgement that the reconstructed oppressive Corinthian practices cannot be proved. Her finer alternating-voice map still relies on the direct author interview plus only partial monograph corroboration because the complete chapter 3/XML body has not rendered. Paul can quote or reuse Corinthian language, and unmarked slogan hypotheses elsewhere in the letter are real. But the safest attributed speech is explicitly framed; classic unmarked slogan candidates are short and boundary-sensitive; no close same-letter analogue has been verified for the proposed long internally connected block or repeated alternating switches; advocates disagree over span; direct continuity bodies including Torbus 2023 show that the tensions can be integrated into a coherent one-speaker macrostructure; and checked early witnesses likewise read the passage as Paul's continuous argument. Therefore the large-quotation family belongs fully in the status quaestionis but remains low in textual fit.
 
 ---
 
@@ -531,7 +566,8 @@ COSTA_VV4_9_QUOTATION_MODEL = DIRECT_BODY_CONTROLLED
 SCHIRRMACHER_2023 = DIRECT_LICENSED_BOOK_BODY_PREVIEW / VV4_9_QUOTATION_PLUS_VV10_15_REFUTATION_CONTROLLED / FULL_BOOK_PARTIAL
 SCHIRRMACHER_V10 = ACTIVE_WOMAN_AUTHORITY_OVER_OWN_HEAD_IN_AUTHOR_MODEL
 SCHIRRMACHER_V13_16 = DIRECT_PREVIEW_PUNCTUATION_CUSTOM_ARGUMENT
-PEPPIATT_2015 = DISTINCT_ALTERNATING_VOICE_MODEL
+PEPPIATT_2015 = DIRECT_JSTOR_MONOGRAPH_BODY_PREVIEW + DIRECT_AUTHOR_INTERVIEW_FINE_GRAIN_MAP / FULL_CH3_OPEN
+PEPPIATT_HIDDEN_CORINTH_RECONSTRUCTION = AUTHOR_HYPOTHESIS_EXPLICITLY_NOT_PROVABLE
 WATSON_CULY_2018_METHOD = DIRECT_CONTROL
 WATSON_CULY_2018_DIRECT_1COR11_APPLICATION = NOT_VERIFIED
 CLOSE_LONG_UNMARKED_ANALOGUE = NOT_FOUND_IN_INSPECTED_1COR
