@@ -98,7 +98,7 @@
 
 - `prominence/preeminence` без прямого authority sense;
 - `source/person/head` mixed senses по разным членам chain;
-- marital-only chain (Christ-husband-wife) — возможна, но `παντὸς ἀνδρός` требует осторожности.
+- marital-only chain (Christ-husband-wife) — возможна, но `παντὸς ἀνδρός` и дальнейший v12 требуют осторожности.
 
 ### Failure modes
 
@@ -181,7 +181,18 @@ Leading contextual reading: речь о собранной общине/public w
 
 Open case-study summary: https://scholars.wlu.ca/consensus/vol7/iss1/2/
 
-### C — strongest conservative alternative
+### B — practical scope after cross-status stress
+
+The current project scope is **all women / sex-class practical scope = B-leading contextual**, not because `γυνή` can never mean wife, but because the whole vv7–12 discourse traverses woman/man more naturally than a rigid wife/husband gloss, while direct current controls include unmarried/celibate women and cross-status participation.
+
+Peters 2021 directly includes ascetic, unmarried and married persons within her reading of the 1 Cor 11 creation/body-of-Christ vision; Wang 2022 directly reads women rather than only wives. Massey/Callon preserve a serious wife/free(d)-wife reconstruction but require additional marital/status bridges.
+
+```text
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
+```
+
+### C — strongest conservative alternative on setting
 
 Некоторые консервативные авторы предлагают private/non-assembly setting, чтобы гармонизировать v.5 с 14:34–35 / 1 Tim 2. Holmyard специально защищал эту возможность. Она не невозможна, но требует объяснить literary movement 11–14 и normal communal role of prophecy.
 
@@ -199,6 +210,7 @@ Prophecy ≠ автоматически elder/pastor office. Отдельный 
 ### Verdict
 
 `WOMEN_PRAY_PROPHESY = A`  
+`ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL`  
 `PUBLIC_ASSEMBLY = B_LEADING`  
 `OFFICE_CONCLUSION = OUT_OF_SCOPE_FROM_v5_ALONE`
 
@@ -281,18 +293,27 @@ Newberry: https://www.cambridge.org/core/journals/new-testament-studies/article/
 
 The verse contributes a **creation-order/origin rationale** to the worship distinction. Это сильнее purely local fashion argument: Paul does not reason only from Corinthian etiquette.
 
-### Strongest alternative
+### C — strongest scope alternative
 
-Creation argument can concern **marital dyad** (husband/wife), not universal male authority, especially if `γυνή/ἀνήρ` read matrimonially. Callon 2024 strengthens this as a serious current option.
+Creation argument can be weighted toward the **marital dyad** (husband/wife), especially if `γυνή/ἀνήρ` are read matrimonially. Massey 2013 and Callon 2024 make this a serious model.
+
+However, this is no longer co-leading for practical scope. The same lexical pair reaches v12, where a rigid “wife from husband / husband through wife” reading becomes contextually awkward and even wife-focused models must broaden or switch the referent. Peters' cross-status/unmarried controls independently pressure exclusion of non-wives.
+
+```text
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+MARITAL_DYAD_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
+```
 
 ### Counterweight already anticipated
 
-v.12 will reverse the origin direction in lived generation: man is now `through woman`; therefore v.8 cannot be isolated into a one-direction ontology.
+v.12 will reverse the origin direction in lived generation: man is now `through woman`; therefore v.8 cannot be isolated into a one-direction ontology or used by itself to force every `γυνή/ἀνήρ` token into wife/husband.
 
 ### Verdict
 
 `GENESIS2_ORIGIN_ARGUMENT = A`  
-`UNIVERSAL_SCOPE_BEYOND_MARRIAGE = B/C, not automatic`
+`ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL`  
+`MARITAL_PRIMARY_SCOPE = C_SERIOUS`  
+`EVERY_WOMAN_FOR_EVERY_MAN = NOT_SUPPORTED`
 
 ---
 
@@ -308,7 +329,7 @@ Genesis 2's helper/relational purpose contributes to ordered male-female relatio
 
 ### Strongest alternative
 
-The verse may be narrowly **marital** and functional, not a universal statement that every woman exists for every man. Genesis 2 itself concerns the first pair and marriage formation.
+The verse may be narrowly **marital** and functional, not a universal statement that every woman exists for every man. Genesis 2 itself concerns the first pair and marriage formation. This remains a serious local observation even though the passage-wide practical scope is now B-leading all-women.
 
 ### Quotation/refutation edge
 
@@ -317,6 +338,8 @@ Recent rhetorical proposals make vv.4–9 a Corinthian quotation which Paul late
 ### Verdict
 
 `CREATION_PURPOSE_ARGUMENT = A textual`  
+`ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL`  
+`MARITAL_LOCAL_FORCE = C_SERIOUS`  
 `EVERY_WOMAN_FOR_EVERY_MAN = NOT_SUPPORTED`  
 `LARGE_QUOTATION_v4_9 = D/C_LOW`
 
@@ -476,6 +499,15 @@ Paul explicitly counterbalances first-creation origin with ordinary human genera
 
 Creation order remains real, but no male may turn it into autonomous superiority: subsequent men come through women, and **everything is from God**.
 
+### Scope control
+
+v12 is the strongest local control against forcing one rigid husband/wife gloss through the entire passage. A wife-focused practical model can survive by broadening this token to representative woman/man, but that additional move is exactly why **all-women / sex-class practical scope now carries fewer forced exceptions**.
+
+```text
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+RIGID_WIFE_HUSBAND_GLOSS_V12 = CONTEXTUALLY_AWKWARD
+```
+
 ### Strongest alternative
 
 Source/origin advocates use this verse as major support that `κεφαλή` v.3 may be source. This is contextually meaningful but does not prove source-only sense in v.3.
@@ -487,6 +519,7 @@ Newberry proposes echoes of 1 Esdras 4 alongside Genesis, strengthening a readin
 ### Verdict
 
 `INTERDEPENDENCE_AND_GOD_SOURCE = A`  
+`ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL`  
 `KEPHALE_SOURCE_ONLY_PROVEN_BY_v12 = NO`
 
 ---
@@ -612,11 +645,11 @@ The best contextual reading is that Paul rejects the **contrary/uncovered or con
 2. `no other practice` = the practice Paul has just described is the common church norm;
 3. `no such practice` = churches do not have the disputed uncovered/sex-confusing practice.
 
-The difference matters for translation, but all three major readings make v.16 a **closure against continued Corinthian resistance**, not a casual cancellation of vv.2–15.
+The difference matters for translation, but all three major continuity readings make v.16 a **closure against continued Corinthian resistance**, not a casual cancellation of vv.2–15. The exact antecedent remains a real discourse dispute.
 
 Peer-reviewed convention study exists: E. A. Judge, “The Appeal to convention in Paul” (Macquarie metadata): https://researchers.mq.edu.au/en/publications/the-appeal-to-convention-in-paul/
 
-A more passage-specific peer-reviewed rhetorical control is Joop F. M. Smit, “‘We Have no Such Custom’. A Rhetorical Analysis of 1 Corinthians 11,2–16,” *Ephemerides Theologicae Lovanienses* 97.1 (2021): 135–148. Peeters and KU Leuven independently expose the exact article identity and abstract. Smit analyzes the passage through `genus`, `inventio`, `dispositio`, and `elocutio`; the abstract's explicit result is that Paul urges the Corinthian women to wear a veil during prayer. Thus Smit is a direct publisher-level control against the **cancellation reading** of v.16.
+A passage-specific peer-reviewed rhetorical control is Joop F. M. Smit, “‘We Have no Such Custom’. A Rhetorical Analysis of 1 Corinthians 11,2–16,” *Ephemerides Theologicae Lovanienses* 97.1 (2021): 135–148. Peeters and KU Leuven independently expose the exact article identity and abstract. Smit analyzes the passage through `genus`, `inventio`, `dispositio`, and `elocutio`; the abstract's explicit result is that Paul urges the Corinthian women to wear a veil during prayer. Thus Smit is a direct publisher-level control against the **cancellation reading** of v.16.
 
 Current access boundary:
 
@@ -628,11 +661,50 @@ SMIT_2021_EXACT_TOIAUTEN_ANTECEDENT = NOT_CLOSED_FROM_ABSTRACT
 SMIT_2021_SUPPORTS_V16_CANCELLATION_REJECTION = YES
 ```
 
-This strengthens the anti-cancellation provenance but does **not** resolve which precise preceding practice `τοιαύτην` grammatically points to. Therefore `EXACT_REFERENT_OF_TOIAUTEN_SYNĒTHEIAN` remains `B_C`.
+### Fee Revised 2014 — normative force is not identical to formal command
+
+Fee’s revised TOC directly places vv13–16 at pp.580–586. The exact pages are still not directly acquired, but a page-specific secondary quotation chain pins his v16 discussion to pp.585–586. It reports two points that must be held together:
+
+- Fee treats the conclusion as church custom/practice and says the multi-part argument does not amount to a formal command **as such**;
+- he nevertheless takes “such practice” to refer to what the contentious opponents are advocating, not to a cancellation of everything just argued.
+
+```text
+FEE_REVISED_V16_PP585_586 = STRONG_SECONDARY_PAGE_LOCATOR
+FEE_REVISED_V16_CUSTOM_VS_FORMAL_COMMAND = STRONG_SECONDARY_ATTESTATION
+FEE_REVISED_V16_SUCH_PRACTICE = CONTENT_OF_CONTENTIOUS_POSITION_IN_ATTESTATION
+FEE_REVISED_V16_DIRECT_PAGE = HOLD
+```
+
+This is why the project distinguishes **ecclesial/exhortative normative force** from a claim that v16 itself creates a timeless formal command for one identical garment artifact.
+
+### Engberg-Pedersen / Edsall — direct specialist split on the antecedent
+
+Troels Engberg-Pedersen, “1 Corinthians 11:16 and the Character of Pauline Exhortation,” *JBL* 110.4 (1991): 679–689, is directly identified by JSTOR; the current XML/PDF body route cache-misses. Independent page-specific reception pins his distinctive p.684 reading: `τοιαύτην συνήθειαν` refers to the **habit of contentiousness**.
+
+Benjamin Edsall, in his published costume/social-context study, explicitly disagrees with Engberg-Pedersen on that point and takes the `custom` to concern head-coverings. Peters’ later work likewise identifies the Engberg-Pedersen p.684 position.
+
+```text
+ENGBERG_PEDERSEN_1991_IDENTITY = DIRECT_JSTOR_PP679_689
+ENGBERG_PEDERSEN_P684_CONTENTIOUSNESS = STRONG_PAGE_SPECIFIC_RECEPTION
+ENGBERG_PEDERSEN_DIRECT_BODY = CURRENT_CACHE_HOLD
+EDSALL_CUSTOM_HEAD_COVERING_ANTECEDENT = PUBLISHED_COUNTERCONTROL
+EXACT_REFERENT_OF_TOIAUTEN_SYNĒTHEIAN = B_C
+```
+
+This specialist disagreement strengthens the reason **not** to promote the exact antecedent merely because one continuity model is preferred.
+
+### Costa counter-control
+
+Costa's direct full body remains an important adversarial control: inside her broader quotation/refutation model, `τοιαύτην συνήθειαν` functions as an encapsulating anaphora that denies the Corinthian obligation woman-cover/man-uncover. This is direct linguistic pressure on the leading reading, but it depends on her more expensive unmarked speaker-shift model, whose overall textual fit remains D/C-low.
+
+```text
+COSTA_V16_DENIAL_MODEL = DIRECT_FULL_BODY
+COSTA_V16_ARGUMENT != LARGE_QUOTATION_TEXTUAL_FIT_UPGRADE
+```
 
 ### Weak reading to reject
 
-Paul spends vv.2–15 commanding a practice and then v.16 says “we have no such practice [that I just commanded], so ignore all of it.” This creates severe discourse incoherence and is not the leading grammatical/contextual solution.
+Paul spends vv.2–15 commanding a practice and then v.16 simply says “ignore all of it.” This remains a severe discourse burden. But rejecting that cancellation reading does **not** license the opposite overclaim that `συνήθεια` itself lexically means a formal, timeless command about an identical material form.
 
 ### Application question
 
@@ -641,9 +713,11 @@ v.16 strengthens ecclesial/common-practice weight but still does not by itself d
 ### Verdict
 
 `CHURCH_WIDE_APPEAL = A`  
-`V16_NORMATIVE_FORCE = B_HIGH`  
+`V16_ECCLESIAL_EXHORTATIVE_NORMATIVE_FORCE = B_HIGH`  
 `V16_NO_CONTRARY_ALTERNATIVE_PRACTICE = B_LEADING`  
 `EXACT_REFERENT_OF_TOIAUTEN_SYNĒTHEIAN = B_C`  
+`V16_FORMAL_COMMAND_AS_SUCH = NOT_ESTABLISHED_BY_SYNĒTHEIA_ALONE`  
+`IDENTICAL_TIMELESS_GARMENT_FORM = UNPROVED`  
 `v16_CANCELS_v2_15 = D_C_LOW`
 
 ---
@@ -661,23 +735,24 @@ v.16 strengthens ecclesial/common-practice weight but still does not by itself d
 7. vv.14–15 explicitly discuss hair; earlier verses use covering language.
 8. v.16 appeals beyond Corinth to broader church practice.
 
-## 2. Leading conservative synthesis (`B/B-high`)
+## 2. Leading synthesis (`B/B-high`)
 
 - material/textile covering is the best reading of vv.4–6,13;
+- practical scope is **all women / sex-class B-leading**, while free(d)-married-wives remains a serious C reconstruction;
 - `κεφαλή` carries headship/authority/predominance force in v.3, though origin dimension remains relevant;
 - creation order is theological, therefore issue is not mere arbitrary fashion;
 - v.10 preserves woman's active authority/right-bearing semantic direction while leaving the exact referent B_C;
 - heavenly/holy angels are the leading referent family; cosmic witness/presence is leading while exact angelic function remains B_C;
-- vv.11–12 prevent hierarchy from becoming unilateral superiority;
+- vv.11–12 prevent hierarchy from becoming unilateral superiority and serve as a scope control against rigid wife/husband glossing;
 - `φύσις` is best modeled as sexed naturalized propriety, with exact biology/culture weighting open;
 - hair functions as analogical natural covering while hair-only remains a serious alternative;
-- church-wide practice has B_HIGH normative force, while the exact `τοιαύτην συνήθειαν` referent remains B_C.
+- v16 has B_HIGH **ecclesial/exhortative** normative force, while the exact `τοιαύτην συνήθειαν` referent remains B_C and an identical timeless garment form is unproved.
 
 ## 3. Strongest alternatives that must remain visible (`C`)
 
 - source/origin-only `κεφαλή`;
 - hair/hairstyle-only covering;
-- wives/free(d)-wives rather than all women;
+- free(d)-married-wives as primary practical scope;
 - private/non-assembly prayer/prophecy;
 - specific own-head/control/ministry construal of the exact v10 `ἐξουσία` referent;
 - Watchers;
@@ -713,6 +788,9 @@ These remain in Research because people actually proposed them, not because the 
 13. E. A. Judge, convention in v.16 — https://researchers.mq.edu.au/en/publications/the-appeal-to-convention-in-paul/
 14. D. François Tolmie, direct OA angel-rhetoric control — https://hts.org.za/index.php/hts/article/view/825/1642
 15. Joop F. M. Smit, v.16/full-pericope rhetorical control — https://poj.peeters-leuven.be/content.php?issue=1&journal_code=etl&url=issue&vol=97
+16. Janelle Peters 2021, direct OA creation/gender scope control — https://www.degruyter.com/document/doi/10.1515/opth-2020-0161/html
+17. Troels Engberg-Pedersen 1991, v16 specialist identity — https://www.jstor.org/stable/3267665
+18. Gordon D. Fee Revised 2014 v16 p585–586 — page-specific secondary locator retained in Fee source card; direct revised page remains HOLD.
 
 ---
 
@@ -725,6 +803,7 @@ VERSE_AUDIT_COMPLETE_BASELINE = true
 PRODUCT_IMPLEMENTATION = false
 PUBLICATION_READY = false
 CLOSED_P0_COMMENTARIES_CAN_STILL_REFINE_B_C_GRADES = true
+SCOPE_GRADE_PROMOTIONS = 1_ALL_WOMEN
 ```
 
 Следующий Research шаг после этого файла: **segment-level relation map** (не UI): разметить внутри стихов syntactic/theological links так, чтобы спорные связи были отделены от прямых grammatical relations и могли быть машинно переданы будущему Product агенту.
