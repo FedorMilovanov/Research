@@ -384,7 +384,20 @@ The best current referent family is **heavenly/holy angels**. Same-letter angel 
 
 Fitzmyer's Qumran evidence strengthens this existing interpretation while explicitly recognizing historical alternatives: https://www.cambridge.org/core/journals/new-testament-studies/article/feature-of-qumran-angelology-and-the-angels-of-i-cor-xi-10/59CE5686A3600CB7F51184CD960286F1
 
-Within that family, cosmic witness/presence is leading, while the **exact** liturgical/purity/decorum function remains open.
+A second independent direct control now comes from D. François Tolmie, “Angels as arguments? The rhetorical function of references to angels in the Main Letters of Paul,” *HTS Teologiese Studies / Theological Studies* 67.1 (2011), Art. #825, DOI `10.4102/hts.v67i1.825`. The full OA body is available from HTS and SciELO:
+
+- https://hts.org.za/index.php/hts/article/view/825/1642
+- https://www.scielo.org.za/scielo.php?pid=S0259-94222011000100042&script=sci_arttext
+
+Tolmie treats v.10 as an angel reference used rhetorically to motivate women's head-related conduct and places it in a good/heavenly-angel, worship-presence field, but explicitly warns that the exact historical problem and precise role of the angels remain obscure. This is important because it independently supports both halves of the present calibration: **heavenly/worship presence is the best family, while exact function remains open**.
+
+```text
+TOLMIE_2011_DIRECT_OA_FULL_BODY = CLOSED_DIRECT
+TOLMIE_V10_ANGELS = RHETORICAL_MOTIVATION_FOR_HEAD_CONDUCT
+TOLMIE_EXACT_ROLE = EXPLICITLY_UNDETERMINED_FROM_V10
+```
+
+Within the heavenly family, cosmic witness/presence is leading, while the **exact** liturgical/purity/decorum function remains open.
 
 ```text
 HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
@@ -603,6 +616,20 @@ The difference matters for translation, but all three major readings make v.16 a
 
 Peer-reviewed convention study exists: E. A. Judge, “The Appeal to convention in Paul” (Macquarie metadata): https://researchers.mq.edu.au/en/publications/the-appeal-to-convention-in-paul/
 
+A more passage-specific peer-reviewed rhetorical control is Joop F. M. Smit, “‘We Have no Such Custom’. A Rhetorical Analysis of 1 Corinthians 11,2–16,” *Ephemerides Theologicae Lovanienses* 97.1 (2021): 135–148. Peeters and KU Leuven independently expose the exact article identity and abstract. Smit analyzes the passage through `genus`, `inventio`, `dispositio`, and `elocutio`; the abstract's explicit result is that Paul urges the Corinthian women to wear a veil during prayer. Thus Smit is a direct publisher-level control against the **cancellation reading** of v.16.
+
+Current access boundary:
+
+```text
+SMIT_2021_ARTICLE_IDENTITY = CLOSED_DIRECT_PEETERS_KUL
+SMIT_2021_ABSTRACT_RESULT = PAUL_URGES_WOMEN_TO_WEAR_VEIL_DURING_PRAYER
+SMIT_2021_FULL_BODY = NOT_ACQUIRED_CURRENT_RUNTIME
+SMIT_2021_EXACT_TOIAUTEN_ANTECEDENT = NOT_CLOSED_FROM_ABSTRACT
+SMIT_2021_SUPPORTS_V16_CANCELLATION_REJECTION = YES
+```
+
+This strengthens the anti-cancellation provenance but does **not** resolve which precise preceding practice `τοιαύτην` grammatically points to. Therefore `EXACT_REFERENT_OF_TOIAUTEN_SYNĒTHEIAN` remains `B_C`.
+
 ### Weak reading to reject
 
 Paul spends vv.2–15 commanding a practice and then v.16 says “we have no such practice [that I just commanded], so ignore all of it.” This creates severe discourse incoherence and is not the leading grammatical/contextual solution.
@@ -684,6 +711,8 @@ These remain in Research because people actually proposed them, not because the 
 11. Murphy-O'Connor on interpolation critique — https://academic.oup.com/book/8618/chapter/154572123
 12. Roger Humann open exegesis case study — https://scholars.wlu.ca/consensus/vol7/iss1/2/
 13. E. A. Judge, convention in v.16 — https://researchers.mq.edu.au/en/publications/the-appeal-to-convention-in-paul/
+14. D. François Tolmie, direct OA angel-rhetoric control — https://hts.org.za/index.php/hts/article/view/825/1642
+15. Joop F. M. Smit, v.16/full-pericope rhetorical control — https://poj.peeters-leuven.be/content.php?issue=1&journal_code=etl&url=issue&vol=97
 
 ---
 
