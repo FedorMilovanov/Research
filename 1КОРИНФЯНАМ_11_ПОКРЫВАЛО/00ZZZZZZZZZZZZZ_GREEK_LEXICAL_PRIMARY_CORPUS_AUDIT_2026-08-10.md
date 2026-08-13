@@ -274,15 +274,29 @@ At the same time:
 
 - shame toward “her head” can be relational/marital;
 - creation “woman from man” can shade into Adam/Eve and husband/wife paradigms;
-- Callon 2024 and Ciampa’s direct summary make marital status a serious contextual issue.
+- Callon 2024 and Massey 2013 make marital status a serious contextual issue.
 
-The word forms themselves do not decide the scope.
+The word forms themselves do not decide every token. The broader discourse, however, now gives an asymmetric contextual result after direct source stress:
+
+- v12 is difficult to keep in rigid husband/wife sense without switching the referent mid-passage;
+- Massey’s wife-focused model itself does not naturally maintain wife-sense at v12;
+- Peters 2021 direct open full text treats the 1 Cor 11 gender categories as men and women rather than a taxonomy of virgin/unmarried/married persons and explicitly preserves women’s worship status across marital status;
+- Peters’ 2020 slavery/status article and 2025 citizen-body trajectory independently pressure exclusion of enslaved or unmarried women from the practical scope;
+- Wang 2022 direct published body likewise reads `γυνή` as women rather than only wives.
+
+These controls do not make `wife` lexically impossible. They make **all-women / sex-class practical scope contextually leading** while preserving a serious marital/status reconstruction.
 
 ## 4.3. v12 is a control
 
 `ὥσπερ γὰρ ἡ γυνὴ ἐκ τοῦ ἀνδρός...` evokes the woman/man creation relation and makes a rigid translation “the wife from the husband” semantically awkward unless the Genesis representative sense is explained.
 
-That is why a model can argue wives are the primary practical addressees without claiming that **every token** must lexically mean wife/husband.
+A wife-focused model can therefore remain viable by arguing that the practical addressees are chiefly wives while some tokens broaden to representative woman/man. But this requires an additional token/scope distinction rather than following one simple lexical gloss throughout.
+
+```text
+V12_RIGID_WIFE_HUSBAND_GLOSS = CONTEXTUALLY_AWKWARD
+WIFE_FOCUSED_PRACTICAL_SCOPE = POSSIBLE_WITH_TOKEN_SCOPE_DISTINCTION
+ALL_WOMEN_SEX_CLASS_SCOPE = FEWER_FORCED_TOKEN_EXCEPTIONS
+```
 
 ## 4.4. Grade
 
@@ -291,8 +305,10 @@ GYNE_WOMAN = A_LEXICAL_OPTION
 GYNE_WIFE = A_LEXICAL_OPTION
 ANER_MAN = A_LEXICAL_OPTION
 ANER_HUSBAND = A_LEXICAL_OPTION
-WIVES_VS_ALL_WOMEN = OPEN_B_C_CONTEXT
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
 ALL_TOKENS_MUST_HAVE_ONE_ENGLISH_GLOSS = false
+ALL_WOMEN_SCOPE_B_LEADING != EVERY_TOKEN_UNAMBIGUOUSLY_NON_MARITAL
 ```
 
 ---
@@ -846,7 +862,8 @@ KEPHALE_SOURCE_ONLY = C_VIABLE
 
 GYNE_WOMAN_AND_WIFE_BOTH_LEXICAL = A
 ANER_MAN_AND_HUSBAND_BOTH_LEXICAL = A
-WIVES_VS_ALL_WOMEN = OPEN_B_C
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
 
 EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
 EXOUSIA_RIGHT/AUTHORITY/CONTROL_SEMANTIC_CLASS = A_B_HIGH
