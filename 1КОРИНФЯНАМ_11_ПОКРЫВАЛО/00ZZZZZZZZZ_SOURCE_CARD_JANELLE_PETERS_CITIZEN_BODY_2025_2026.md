@@ -1,7 +1,7 @@
 # Source card — Janelle Peters, *Paul and the Citizen Body* (2025) + direct antecedents
 
 **Дата аудита:** 2026-08-10  
-**Статус:** `CURRENT-SCHOLARSHIP-INGRESS / ADVERSARIAL-NODE / DIRECT-ANTECEDENT-CONTROL / FINAL-ACCESS-DISPOSITION / NOT-CORE-SUPERSESSION`
+**Статус:** `CURRENT-SCHOLARSHIP-INGRESS / ADVERSARIAL-NODE / DIRECT-ANTECEDENT-CONTROL / SCOPE-GRADE-CONTROL / FINAL-ACCESS-DISPOSITION / NOT-WHOLE-MODEL-SUPERSESSION`
 
 ## 0. Current node
 
@@ -117,14 +117,20 @@ Directly recoverable commitments include:
 - ritual veiling/interdependence;
 - community-internal judgment;
 - women’s authority at the worship meal in relation to v10/angels;
-- Second Temple creation/angel traditions, especially 4QInstruction, as comparandum.
+- Second Temple creation/angel traditions, especially 4QInstruction, as comparandum;
+- explicit inclusion of **ascetic, unmarried, and married persons** in the body-of-Christ vision generated from the 1 Cor 11 veiling/creation argument;
+- treatment of vv11–12 as interdependence of **men and women in creation generally**, rather than a requirement that every `ἀνήρ/γυνή` token remain husband/wife.
 
 ```text
 PETERS_2021 = DIRECT_OPEN_FULLTEXT
 PETERS_CREATION_INTERDEPENDENCE = DIRECT_AUTHOR_BODY
 PETERS_ANGELS_SECOND_TEMPLE_COMPARANDUM = DIRECT_AUTHOR_BODY
 PETERS_V10_WOMEN_AUTHORITY_AT_WORSHIP = DIRECT_AUTHOR_BODY
+PETERS_2021_ASCETIC_UNMARRIED_MARRIED_INCLUSION = DIRECT_AUTHOR_BODY
+PETERS_2021_MEN_WOMEN_GENERAL_INTERDEPENDENCE = DIRECT_AUTHOR_BODY
 ```
+
+The 2021 article therefore supplies direct author-body evidence that Peters' veiling/creation framework is **not limited to married women as a class**, even though this does not by itself settle every individual `γυνή` token.
 
 ---
 
@@ -175,6 +181,27 @@ PETERS_STATUS_DEMOCRATIZATION_TRAJECTORY = DIRECT_2013_INSTITUTIONAL + DIRECT_20
 
 The complete 2025 primary-evidence chain has not been page-by-page autopsied, so the whole-model project grade does not rise above C merely because the source genealogy is strong.
 
+## Scope consequence — separate from whole-model adoption
+
+The project now separates the probability of **Peters' whole citizen-body reconstruction** from the narrower question **who is practically in scope in 1 Cor 11:2–16**.
+
+Peters contributes materially to the scope question because:
+
+1. her 2020 publisher abstract explicitly puts enslaved men and women inside the veiling/status analysis;
+2. her 2021 direct OA body explicitly includes ascetic, unmarried, and married persons in the creation/body-of-Christ vision and treats vv11–12 as men/women interdependence generally;
+3. the 2025 publisher model again describes the Christian citizen body across social status;
+4. this independent cross-status trajectory directly pressures a rule that would exclude slaves/unmarried women merely because some Roman veiling signals were matronal.
+
+This does **not** mean Peters alone proves all-women scope. The project promotion comes from combining her cross-status controls with the internal v12 lexical/discourse burden on a rigid wife/husband reading, Wang's direct all-women reading, and the extra reconstruction steps required by Massey/Callon.
+
+```text
+PETERS_WHOLE_MODEL = C_SERIOUS_CURRENT_MODEL
+PETERS_CROSS_STATUS_SCOPE_CONTROL = B_HIGH_RELEVANCE
+PROJECT_ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+PROJECT_FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
+PETERS_SCOPE_CONTROL != PETERS_WHOLE_MODEL_ADOPTION
+```
+
 ---
 
 # 3. Source-genealogy continuity and firewall
@@ -192,6 +219,7 @@ SLAVERY + GENDERED_VEILING -> CLASS_COHESION
 
 2021:
 CREATION + ANGELS + INTERDEPENDENCE + WOMEN'S_AUTHORITY
++ ASCETIC/UNMARRIED/MARRIED_INCLUSION
 
 2025:
 AUTHORITY/CITIZENSHIP + BODILY_HEAD_CONTROL
@@ -238,7 +266,8 @@ Peters is not adopted wholesale. Compatible/pressure points:
 - genuine vv.11–12 interdependence;
 - female agency in `ἐξουσία`;
 - non-Watchers angel framework;
-- social-status reconfiguration rather than simple copying of elite codes.
+- social-status reconfiguration rather than simple copying of elite codes;
+- practical scope extending across marital/social status as a serious direct control.
 
 Tensions remain on:
 - exact force of `κεφαλή`/hierarchy;
@@ -309,17 +338,23 @@ PETERS_SOURCE_GENEALOGY =
 -> 2021_DIRECT_OPEN_FULLTEXT
 -> 2025_DIRECT_PUBLISHER_MODEL
 
+PETERS_CROSS_STATUS_SCOPE_CONTROL = B_HIGH_RELEVANCE
+PROJECT_ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+PROJECT_FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
+
 ROMAN_CONTEXT != ONE_SIMPLE_MODESTY_RULE
 ANGELS != NECESSARILY_WATCHERS
 CREATION_ORDER != FINAL_WORD_WITHOUT_V11_12
 EXOUSIA != AUTOMATIC_PASSIVE_SUBORDINATION_MARKER
 MATERIAL_VEILING != NECESSARILY_MERE_COPY_OF_ROMAN_ELITE_STATUS
+PETERS_SCOPE_CONTROL != PETERS_WHOLE_MODEL_ADOPTED
 PUBLISHER_ABSTRACT != FULL_ARTICLE_BODY
 INSTITUTIONAL_ABSTRACT != FULL_DISSERTATION_BODY
 SECONDARY_PAGE_LOCATOR != DIRECT_PAGE_AUTOPSY
 TERMINAL_HOLD != VERIFIED_BODY
 
 CORE_GRADE_REVERSALS = 0
+SCOPE_GRADE_PROMOTIONS = 1_ALL_WOMEN
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 SITE_PUBLICATION = false
