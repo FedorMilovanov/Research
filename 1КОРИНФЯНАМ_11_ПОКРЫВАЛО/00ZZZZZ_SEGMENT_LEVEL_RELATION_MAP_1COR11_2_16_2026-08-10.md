@@ -1,6 +1,7 @@
 # 1 Коринфянам 11:2–16 — segment-level relation map
 
 **Дата:** 2026-08-10  
+**Последнее обновление:** 2026-08-14  
 **Статус:** `SEMANTIC-RELATION-MAP / RESEARCH-ONLY / NOT-UI / PRODUCT-DATA-READY`  
 **Назначение:** отделить прямые textual/syntactic relations от intertextual inference и historical reconstruction. Это исследовательская карта аргумента, а не визуальный дизайн.
 
@@ -132,6 +133,7 @@ Confidence grades inside node-calibration blocks remain controlled by `CURRENT_C
 | V04B | Roman male `capite velato` ritual/status | HISTORICAL_B_C | `ROMAN_CAPITE_VELATO_BACKGROUND = A`; exact identification of v4 with this ritual = `B_C`; exact Corinthian trigger remains reconstruction |
 | V04B | Judaizing male prayer covering | HISTORICAL_D_C | record, do not promote |
 | V05B/V06A | female veil as matronly/modesty/status marker | HISTORICAL_B_C | contextual status significance is serious; no one universal female veil law or exact local trigger is proved |
+| V05A/V08A/V12A–B | free(d)-married-wives as primary practical scope | HISTORICAL_B_C | Callon/Massey provide a serious marital/status reconstruction, but practical all-women scope is now B-leading in the current registry and v12 resists one rigid wife/husband gloss |
 | V05D/V06B | shaved woman = prostitute/adulteress | NEGATIVE_BOUNDARY | do not universalize; evidence insufficient for blanket equation |
 | V14B | long male hair = specific homosexual role | HISTORICAL_D | Murphy-O'Connor/MacGregor edge model |
 | V05B/V14–15 | loose hair = Dionysiac/ecstatic cult | HISTORICAL_D | possible reconstruction, not demonstrated local trigger |
@@ -149,6 +151,22 @@ HEADSHIP/AUTHORITY/PREDOMINANCE -> B_LEADING
 SOURCE/ORIGIN ONLY              -> C_VIABLE
 PROMINENCE                      -> C/B depending formulation
 ONE_FIXED_LEXICAL_GLOSS         -> prohibited
+```
+
+### practical scope — `ἀνήρ / γυνή`
+
+```text
+ALL_WOMEN / SEX_CLASS PRACTICAL SCOPE -> B_LEADING
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE    -> C_SERIOUS_CURRENT_ALTERNATIVE
+V12_RIGID_WIFE_HUSBAND_GLOSS          -> contextually awkward
+EVERY_TOKEN_UNAMBIGUOUSLY_NON_MARITAL -> prohibited overclaim
+```
+
+Machine boundary:
+
+```text
+ALL_WOMEN_SCOPE_B_LEADING != EVERY_GYNE_TOKEN_CANNOT_MEAN_WIFE
+ALL_WOMEN_SCOPE_B_LEADING != PETERS_WHOLE_MODEL_ADOPTED
 ```
 
 ### covering language V04–V06/V13
@@ -170,10 +188,23 @@ SIGN_OF_HUSBAND'S_AUTHORITY_PARAPHRASE -> C_WITH_EXTRA_SEMANTIC_STEPS
 LEXICALLY = VEIL                       -> prohibited
 ```
 
-Machine boundary:
+Construction-level relation split owned by `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md`:
+
+```text
+EXOUSIA + EPI + DOMAIN                 -> well-attested Greek construction
+V10 HEAD/HEAD-STATE AS CONTROL DOMAIN  -> EXEGETICAL_B relation
+V10 HEAD-WORN METONYMIC/SIGN LOCATION  -> EXEGETICAL_C serious counterrelation
+EXACT_SOCIAL_REALIZATION               -> remains B_C claim-level question
+```
+
+This relation preference is grounded in same-letter/NT support-verb usage, exact biblical `ἐξουσία + ἐπί + genitive` authority-over-domain parallels and the documentary corpus. It does **not** convert one contextual model into A-level syntax. Romerowski/Wang preserve real locative/metonymic countermodels; Delobel/Murphy-O'Connor, Wu, Callon and related active-control readings preserve the competing control-domain family.
+
+Machine boundaries:
 
 ```text
 ACTIVE_WOMAN_BEARER_PULL != EXACT_OWN_HEAD_OR_MINISTRY_REFERENT_PROVED
+CONTROL_DOMAIN_RELATION_PREFERRED != EXACT_SOCIAL_REALIZATION_PROVED
+HEAD-WORN_SYMBOL_READING != EXOUSIA_LEXICALLY_MEANS_SIGN
 ```
 
 ### `angels` V10
@@ -203,11 +234,19 @@ PURE_ARBITRARY_CUSTOM_ONLY          -> rejected
 ### `τοιαύτην συνήθειαν` V16
 
 ```text
-TRANS_LOCAL_CHURCH_PRACTICE_APPEAL -> A_TEXT
-V16_NORMATIVE_FORCE                -> B_HIGH
-V16_NO_CONTRARY_ALTERNATIVE_PRACTICE -> B_LEADING
-EXACT_REFERENT                     -> B_C
-CANCELS_VV2_15                     -> D_C_LOW
+TRANS_LOCAL_CHURCH_PRACTICE_APPEAL       -> A_TEXT
+V16_ECCLESIAL_EXHORTATIVE_NORMATIVE_FORCE -> B_HIGH
+V16_NO_CONTRARY_ALTERNATIVE_PRACTICE     -> B_LEADING
+EXACT_REFERENT                            -> B_C
+CANCELS_VV2_15                            -> D_C_LOW
+```
+
+Machine boundaries:
+
+```text
+V16_NORMATIVE_FORCE != FORMAL_COMMAND_AS_SUCH
+TRANS_LOCAL_PRACTICE != IDENTICAL_TIMELESS_GARMENT_ARTIFACT
+REJECT_CANCELLATION_READING != EXACT_CUSTOM_ANTECEDENT_SOLVED
 ```
 
 ---
@@ -245,6 +284,8 @@ HEAD_RELATIONS -> EXACT_GARMENT_MEANING = NOT_DIRECT_SYNTAX
 ROMAN_CAPITE_VELATO -> V4_EXACT_PROBLEM = HISTORICAL_B_C, while the background fact itself is A
 QUMRAN_ANGELIC_ASSEMBLY -> PAULS_EXACT_ANGEL_FUNCTION = NOT_DIRECT_IDENTITY
 ACTIVE_EXOUSIA_SEMANTICS -> ONE_EXACT_SOCIAL_REFERENT = INVALID_SHORTCUT
+ALL_WOMEN_SCOPE -> EVERY_TOKEN_NON_MARITAL = INVALID_SHORTCUT
+V16_ECCLESIAL_NORM -> FORMAL_IDENTICAL_GARMENT_COMMAND = INVALID_SHORTCUT
 ```
 
 ---
