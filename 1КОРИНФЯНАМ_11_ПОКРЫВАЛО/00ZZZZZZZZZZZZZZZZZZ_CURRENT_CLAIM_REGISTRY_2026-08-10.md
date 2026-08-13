@@ -34,7 +34,8 @@ FOR_CURRENT_GRADE:
 | `κεφαλή` source/origin-only | **C_VIABLE** | Greek lexical audit | not refuted; not leading |
 | `γυνή` can mean woman or wife | **A lexical options** | Greek lexical audit | context decides tokens |
 | `ἀνήρ` can mean man or husband | **A lexical options** | Greek lexical audit | context decides tokens |
-| wives vs all women | **OPEN_B_C** | Callon open-fulltext closure + later audits | no scholarly closure claimed |
+| all women as practical scope | **B_LEADING** | Greek lexical audit + Peters source card + Callon open-fulltext closure + Massey scope stress | generic sex-class reading traverses vv7–12 with fewer forced token exceptions; Peters independently includes cross-status/unmarried women |
+| free(d) married wives as primary scope | **C_SERIOUS_CURRENT_ALTERNATIVE** | Callon open-fulltext closure + Massey 2013 | strong social/marital reconstruction, but depends on additional status/marital bridges and does not naturally control every token, especially v12 |
 | v7 local image/glory asymmetry | **A_TEXT** | Genesis audit | real Pauline asymmetry |
 | Genesis male+female imago control | **A_B_HIGH** | Genesis audit | Gen 1:27 primary control |
 | v7 explicitly denies woman imago Dei | **C_LOW / NOT EXPLICIT** | Genesis audit | omission != negation |
@@ -94,7 +95,7 @@ FOR_CURRENT_GRADE:
 | exact prohibited speech 14:34–35 | **B_C** | canonical-boundary audit | differentiated-functions model leading |
 | Nõmmik ritual-uniformity/capite-velato whole model | **C_SERIOUS_CURRENT_RECONSTRUCTION** | Nõmmik audit | strong v4, hidden causal chain |
 | Peters citizen-body model | **C_SERIOUS_CURRENT_MODEL** | Peters source card | current pressure-test, not adopted wholesale |
-| Callon free(d)-married-women model | **B_C_SERIOUS_CURRENT_MODEL** | Callon open-fulltext closure | strengthens marital question, no closure |
+| Callon free(d)-married-women model | **C_SERIOUS_CURRENT_ALTERNATIVE** | Callon open-fulltext closure | serious social-status model, but no longer scope co-leading after Peters/Wang/discourse stress |
 | large quotation/refutation in 11:3–10 etc. | **D_C_LOW** | verse/model/creation audits | no overt long-quotation marker |
 | interpolation of 11:3b–15 | **D_C_LOW** | earlier calibration/second audit | lacks omission-base |
 
@@ -137,6 +138,8 @@ OMISSION_OF_EIKON_V7 != WOMAN_NOT_IMAGE_OF_GOD
 MALE_LONG_HAIR_EXCEPTIONS != NO_GENERAL_PROPRIETY_NORM
 GENERAL_HAIR_NORM != BIOLOGICAL_IMPOSSIBILITY
 HAIR_AS_NATURAL_COVERING != HAIR_ONLY_WHOLE_PASSAGE
+ALL_WOMEN_SCOPE_B_LEADING != EVERY_TOKEN_UNAMBIGUOUSLY_NON_MARITAL
+ALL_WOMEN_SCOPE_B_LEADING != PETERS_WHOLE_MODEL_ADOPTED
 RECENCY != AUTHORITY
 PEER_REVIEW != CORRECTNESS
 SECONDARY_QUOTE != DIRECT_CURRENT_EDITION_EVIDENCE
