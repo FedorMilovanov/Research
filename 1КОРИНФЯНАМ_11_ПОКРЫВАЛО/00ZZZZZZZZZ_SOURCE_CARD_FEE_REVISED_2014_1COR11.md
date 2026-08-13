@@ -312,7 +312,51 @@ Do not promote the reproduced wording to quote-safe Fee text.
 
 ---
 
-# 10. Reopened target order
+# 10. v16 — exhortative force, custom and command-level firewall
+
+The direct revised TOC places 11:13–16 at pp.580–586. The exact English pages are still not directly acquired, but a page-specific secondary quotation chain now pins two Fee Revised observations to pp.585–586:
+
+1. Fee treats the conclusion as explicitly dealing with church **custom/practice**, not as though `συνήθεια` itself meant a formal command;
+2. he nevertheless reads the rejected “such practice” as the practice advocated by the contentious opponents, rather than taking v16 as a simple cancellation of the preceding argument.
+
+The strongest current page-specific chain is Harrison Perkins, “The Custom Of God’s Churches: Head Coverings And Cultural Appropriateness (Part 3),” which cites Fee Revised p.585 and pp.585–586 and reproduces short Fee wording. This is useful for locator/authentication, not a substitute for Fee’s own page image/body.
+
+```text
+FEE_2014_V16_RANGE = pp580_586_DIRECT_TOC
+FEE_2014_V16_P585_586 = STRONG_PAGE_SPECIFIC_SECONDARY_LOCATOR
+FEE_2014_V16_CUSTOM_NOT_FORMAL_COMMAND_DISTINCTION = STRONG_SECONDARY_ATTESTATION
+FEE_2014_V16_SUCH_PRACTICE = CONTENT_OF_CONTENTIOUS_POSITION_IN_SECONDARY_ATTESTATION
+FEE_2014_V16_DIRECT_ENGLISH_PAGE = NOT_ACQUIRED
+```
+
+The same page-specific discussion reports that Fee cites Troels Engberg-Pedersen’s specialist article:
+
+> “1 Corinthians 11:16 and the Character of Pauline Exhortation,” *Journal of Biblical Literature* 110.4 (1991): 679–689.
+
+JSTOR directly verifies Engberg-Pedersen’s article identity and pagination; its XML/body route remains a current runtime cache miss. Independent published reception pins his distinctive reading at p.684: `τοιαύτην συνήθειαν` refers to the **habit of contentiousness**, not to head-covering itself. Benjamin Edsall explicitly agrees with Engberg-Pedersen on the relevance of `συνήθεια` while rejecting that antecedent and preferring head-coverings; Peters 2025 likewise identifies Engberg-Pedersen’s p.684 position.
+
+```text
+ENGBERG_PEDERSEN_1991_IDENTITY_PP679_689 = DIRECT_JSTOR
+ENGBERG_PEDERSEN_P684_CONTENTIOUSNESS_ANTECEDENT = STRONG_INDEPENDENT_PAGE_SPECIFIC_RECEPTION
+ENGBERG_PEDERSEN_DIRECT_BODY = CURRENT_JSTOR_XML_PDF_CACHE_HOLD
+EDSALL_DISAGREES_ON_EXACT_ANTECEDENT = PUBLISHED_COUNTERCONTROL
+EXACT_V16_CUSTOM_ANTECEDENT = B_C_UNCHANGED
+```
+
+Project consequence:
+
+```text
+V16_ECCLESIAL_EXHORTATIVE_NORMATIVE_FORCE = B_HIGH_UNCHANGED
+V16_FORMAL_COMMAND_AS_SUCH = NOT_ESTABLISHED_BY_SYNĒTHEIA_ALONE
+V16_IDENTICAL_TIMELESS_GARMENT_FORM = UNPROVED
+V16_CANCELS_VV2_15 = D_C_LOW_UNCHANGED
+```
+
+This is a **label/calibration clarification**, not a downgrade of v16’s translocal ecclesial weight.
+
+---
+
+# 11. Reopened target order
 
 ```text
 P0A = Portuguese 2019 target section around local pp616_667, especially v10/angels equivalent of English pp576_578/n123
@@ -320,14 +364,14 @@ P0B = Korean 2019/2023 Logos-Biblia revised target section, especially v10/angel
 P0C = Spanish 2024 Logos revised target section, especially v10/angels
 P1 = English revised pp576_578/n123 if a new lawful/institutional route appears
 P1 = English/translated complete 11:2-6 main body and Addendum
-P1 = translated/English vv13-16 body
+P1 = English revised pp580_586 / translated vv13-16 body, especially direct p585-586
 ```
 
 Do not repeat the exhausted English preview endpoints as though they were new searches.
 
 ---
 
-# 11. Edition / translation firewall
+# 12. Edition / translation firewall
 
 ```text
 FEE_CITATION_WITH_YEAR_2014 + 1987_PAGE_NUMBER = VERIFY_BEFORE_USE
@@ -339,13 +383,14 @@ FEE_ES_2024_DIGITAL_LOCATOR != ENGLISH_2014_PRINT_PAGINATION
 FEE_KO_2019_PAGINATION != ENGLISH_2014_PAGINATION
 FEE_KO_2023_EBOOK_LOCATOR != ENGLISH_2014_PRINT_PAGINATION
 TRANSLATED_DIRECT_BODY != ORIGINAL_LANGUAGE_VERBATIM_QUOTE
+SECONDARY_FEE_PAGE_QUOTE != DIRECT_REVISED_BODY
 ```
 
 ---
 
-# 12. Relation to current project models
+# 13. Relation to current project models
 
-No grade reversal follows merely from the new acquisition routes.
+No grade reversal follows merely from the new acquisition routes or the v16 page-specific secondary control.
 
 ```text
 MATERIAL_COVERING = B_HIGH_LEADING
@@ -354,6 +399,9 @@ EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
 EXOUSIA_EXACT_REFERENT = B_C
 HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING
 WATCHERS = C_SERIOUS_ALTERNATIVE
+V16_ECCLESIAL_EXHORTATIVE_NORMATIVE_FORCE = B_HIGH
+V16_EXACT_CUSTOM_ANTECEDENT = B_C
+IDENTICAL_TIMELESS_GARMENT_FORM = UNPROVED
 CORE_GRADE_REVERSALS = 0
 ```
 
@@ -361,7 +409,7 @@ Fee remains a high-weight technical pressure-test, not a vote that automatically
 
 ---
 
-# 13. Result
+# 14. Result
 
 ```text
 FEE_2014_REVISED_EDITION = VERIFIED
@@ -387,6 +435,8 @@ FEE_KO_TARGET_BODY = NOT_EXPOSED_CURRENT_PREVIEW
 ADDENDUM_AS_NEW_MAJOR_EXEGESIS = REJECTED_WORKING_ASSUMPTION
 FEE_ANGELS = PEER_REVIEWED_LOCATOR_PP576_578
 FEE_WATCHERS_REJECTION = SECONDARY_LOCATOR_P576_N123
+FEE_V16 = STRONG_SECONDARY_LOCATOR_PP585_586 / DIRECT_PAGE_HOLD
+ENGBERG_PEDERSEN_1991 = DIRECT_JSTOR_IDENTITY / BODY_CACHE_HOLD
 
 ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
 FEE_MULTILINGUAL_REOPEN = ACTIVE
