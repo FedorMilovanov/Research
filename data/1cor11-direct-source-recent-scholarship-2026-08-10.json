@@ -88,8 +88,13 @@
       "type": "peer-reviewed/academic journal article",
       "evidenceClass": "B1",
       "newRelativeToUploadedDump": true,
-      "method": ["Textual Discourse Analysis", "Discursive Traditions", "Argumentative Semantics"],
-      "vv4to9UnendorsedQuotation": "DIRECT_OFFICIAL_ABSTRACT_PUBLISHED_PROPOSAL",
+      "method": [
+        "Textual Discourse Analysis",
+        "Discursive Traditions",
+        "Argumentative Semantics"
+      ],
+      "vv4to9UnendorsedQuotation": "DIRECT_OFFICIAL_FULL_BODY_PUBLISHED_PROPOSAL",
+      "directFullBody": "CLOSED_DIRECT_OFFICIAL_UFMG_PDF",
       "largeQuotationCurrentRegistryGrade": "D_C_LOW_UNCHANGED",
       "doi": "10.17851/2237-2083.31.3.1404-1446"
     },
@@ -122,7 +127,20 @@
       "title": "Authority Over Whose Head? Did Paul Instruct Wives or All Women to Cover Their Heads (1 Corinthians 11:2-16)?",
       "type": "peer-reviewed open-access journal article",
       "evidenceClass": "B1",
+      "directFullBody": "CLOSED_DIRECT_CAMBRIDGE_OPEN_ACCESS_HTML",
+      "bodySectionsRead": [
+        "Introduction",
+        "Brief Overview of Pertinent Literature",
+        "The Presence of Slaves in the Corinthian Community: The Lack of Autonomy Regarding Sexuality and Hair Length",
+        "Genesis 1:27 and 2:18-25 Interpreted as Pertaining Primarily to Marriage Rather Than to Creation in Some Ancient Thought",
+        "Testing the Theory that Paul Refers Specifically to Wives",
+        "Conclusions"
+      ],
+      "scopeConclusion": "FREE_D_MARRIED_WOMEN_PREFERRED_TENTATIVELY",
+      "materialCovering": "MAJORITY_TEXTILE_READING_ACCEPTED_IN_AUTHOR_MODEL",
+      "v10": "AUTHORITY_OVER_HER_OWN_HEAD_PREFERRED_WITH_SOCIAL_HEAD_IMPLICATIONS",
       "currentModelGrade": "B_C_SERIOUS_CURRENT_MODEL_UNCHANGED",
+      "wivesVsAllWomenGrade": "OPEN_B_C_UNCHANGED",
       "doi": "10.1017/S0017816024000300"
     }
   ],
@@ -130,7 +148,6 @@
     "garland2025": "HOLD_FULL_SECTION_PP468_493_NOT_DIRECTLY_ACQUIRED",
     "ciampaRosner2010": "DETAIL_HOLD_PP503_540_DIRECT_BOOK_NOT_ACQUIRED",
     "nommikFulltext": "P0_DIRECT_DIVA_BYTES_NOT_ACQUIRED_IN_BROWSER_PATH",
-    "costaFullArgument": "P0_ADVERSARIAL_FULLTEXT_REVIEW_NEEDED",
     "gundryVolf": "P1_FULLTEXT",
     "olsonFantham": "P1_DIRECT_SOCIAL_HISTORY_SECTIONS"
   }
