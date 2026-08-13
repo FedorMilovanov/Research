@@ -103,6 +103,36 @@ HEAVENLY_ANGEL_GRADE_CHANGE = none
 EXACT_FUNCTION_GRADE_CHANGE = none
 ```
 
+## 3.2 D. François Tolmie 2011 — direct OA rhetorical full-body control
+
+D. François Tolmie, “Angels as arguments? The rhetorical function of references to angels in the Main Letters of Paul,” *HTS Teologiese Studies / Theological Studies* 67.1 (2011), Art. #825. DOI `10.4102/hts.v67i1.825`.
+
+Direct full-text routes:
+- https://hts.org.za/index.php/hts/article/view/825/1642
+- https://www.scielo.org.za/scielo.php?pid=S0259-94222011000100042&script=sci_arttext
+
+The complete OA article provides a useful independent **rhetorical boundary** for 1 Cor 11:10 rather than another speculative angel identity proposal. Tolmie treats the angel reference as part of Paul's motivation for regulating the women's head-related conduct, and in his synthesis places 1 Cor 11:10 among references to good/heavenly angels and worship in their presence. At the same time, he explicitly says that the exact details remain obscure: the historical problem is uncertain and `διὰ τοὺς ἀγγέλους` itself does not disclose the precise role assigned to the angels.
+
+```text
+TOLMIE_2011_DIRECT_OA_FULL_BODY = CLOSED_DIRECT
+TOLMIE_V10_ANGELS = RHETORICAL_MOTIVATION_FOR_HEAD_CONDUCT
+TOLMIE_ANGELS = GOOD_HEAVENLY_FIELD_IN_AUTHOR_SYNTHESIS
+TOLMIE_WORSHIP_PRESENCE = AUTHOR_SYNTHESIS_SUPPORT
+TOLMIE_EXACT_ROLE = EXPLICITLY_UNDETERMINED_FROM_V10
+```
+
+Effect on the stress matrix:
+
+```text
+HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING_UNCHANGED
+ANGELS_AS_COSMIC_WITNESSES_PRESENT_ASSEMBLY = B_LEADING_UNCHANGED
+EXACT_ANGELIC_FUNCTION = B_C_UNCHANGED
+TOLMIE_FULL_BODY_SUPPORTS_FAIL_CLOSED_EXACT_FUNCTION_BOUNDARY = true
+CORE_GRADE_REVERSALS = 0
+```
+
+Tolmie therefore strengthens the provenance of the leading heavenly/worship-presence family **and** independently supports keeping the exact function open. It does not warrant turning “angels are present in worship” into a fully specified causal mechanism for the head state.
+
 ---
 
 # 4. Watchers / fallen-angel family
@@ -311,6 +341,7 @@ HUMAN_MESSENGERS = D_C_LOW
 BISHOPS_CLERGY = D_C_LOW_RECEPTION
 PEERBOLTE_DIRECT_BODY = HOLD
 FITZMYER_DIRECT_CAMBRIDGE_CONTROL = CLOSED
+TOLMIE_2011_DIRECT_OA_FULL_BODY = CLOSED
 HOOKER_DIRECT_CAMBRIDGE_APPARATUS_CONTROL = CLOSED
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
