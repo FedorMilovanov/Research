@@ -4,11 +4,15 @@
   "date": "2026-08-10",
   "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
   "coreGradeReversals": 0,
+  "currentKnownPublicAgentQueueEmpty": true,
+  "humanLibraryPurchaseLoginQueueNotEmpty": true,
   "method": {
     "agentDumpIsDiscoveryOnly": true,
     "publisherAbstractIsNotFullText": true,
     "peerReviewIsNotAutomaticProbabilityPromotion": true,
-    "directQuotePromotionRequiresObjectLocatorContext": true
+    "directQuotePromotionRequiresObjectLocatorContext": true,
+    "terminalExternalAccessHoldIsNotBodyRead": true,
+    "terminalExternalAccessHoldIsNotNegativeEvidence": true
   },
   "sources": [
     {
@@ -146,9 +150,9 @@
   ],
   "unresolved": {
     "garland2025": "SECTION_IDENTITY_CLOSED_PAGINATION_AND_BODY_HOLD_DO_NOT_TRANSFER_2003_PAGINATION",
-    "ciampaRosner2010": "DETAIL_HOLD_PP503_540_DIRECT_BOOK_NOT_ACQUIRED",
-    "nommikFulltext": "P0_DIRECT_DIVA_BYTES_NOT_ACQUIRED_IN_BROWSER_PATH",
-    "gundryVolf": "P1_FULLTEXT",
-    "olsonFantham": "P1_DIRECT_SOCIAL_HISTORY_SECTIONS"
+    "ciampaRosner2010": "TERMINAL_EXTERNAL_ACCESS_HOLD_TARGET_PP503_540_HUMAN_LIBRARY_OR_PURCHASE_QUEUE",
+    "nommikFulltext": "TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME_HUMAN_LIBRARY_OR_NEW_RENDERABLE_ROUTE",
+    "gundryVolf": "HUMAN_LIBRARY_FULLTEXT_HOLD",
+    "olsonFantham": "DIRECT_PREVIEW_PARTIAL_EXACT_BODY_PAGE_HOLD_HUMAN_LIBRARY_QUEUE"
   }
 }
