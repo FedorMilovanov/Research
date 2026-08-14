@@ -36,6 +36,7 @@ jobs:
           import json
           from collections import defaultdict
           from pathlib import Path
+
           p = Path('/tmp/1peter-handoff')
           required = {
               'chapter4-product-handoff.json', 'chapter5-product-handoff.json',
@@ -44,26 +45,61 @@ jobs:
               'ranking-audit.json', 'integrity-summary.json'
           }
           assert required == {x.name for x in p.iterdir()}, 'generated artifact set drift'
+
           s = json.loads((p/'integrity-summary.json').read_text())
+          assert s['schema_version'] == 2
+          assert len(s['authority_digest_sha256']) == 64
           assert s['chapter4'] == 72 and s['chapter5'] == 72
           assert s['current_holds'] == 0
           assert s['competitive_candidates'] == 0
           assert s['prototype_count'] == 64
+          assert sum(s['prototype_classification_counts'].values()) == 64
           assert s['overclaim_blacklist_records'] == 144
           assert s['ranking_admitted'] == 0
+          assert s['claim_source_inspection_edges'] > 0
+
+          ch4 = json.loads((p/'chapter4-product-handoff.json').read_text())
+          ch5 = json.loads((p/'chapter5-product-handoff.json').read_text())
+          claims = ch4['records'] + ch5['records']
+          assert len(claims) == 144
+          assert len({x['candidate_id'] for x in claims}) == 144
+          assert all(len(x['effective_claim_digest']) == 64 for x in claims)
+          assert all(x['ranking_possible'] is False for x in claims)
+
+          edges = json.loads((p/'claim-inspection-manifest.json').read_text())['records']
+          edge_ids = [x['claim_inspection_edge_id'] for x in edges]
+          assert len(edge_ids) == len(set(edge_ids)), 'claim inspection edge digest collision/duplicate'
+          assert all(x['evidence_status'] != x['access_state'] or x['evidence_status'] == 'NOT_EXPLICITLY_LABELED' for x in edges), 'access/evidence status collapse detected'
+          assert all(x.get('source_minimum_provenance') for x in edges)
+
+          identities = json.loads((p/'source-identity-package.json').read_text())['records']
+          forbidden_identity_keys = {'claim_id','claim_ready','ranking_ready','inspection_depth','strongest_evidence_status'}
+          assert all(not (forbidden_identity_keys & set(x)) for x in identities)
+
+          pa = json.loads((p/'prototype-audit.json').read_text())
+          assert len(pa['records']) == 64
+          assert all('wrong_option_risks' in x or x['classification'] == 'REJECT_AS_PRODUCT_TEMPLATE' for x in pa['records'])
+
+          rank = json.loads((p/'ranking-audit.json').read_text())['records']
+          discrepancies = [x['candidate_id'] for x in rank if x['discrepancy_candidate']]
+
           summary = (
               f"Ch4={s['chapter4']} Ch5={s['chapter5']} HOLD={s['current_holds']} "
               f"competitive={s['competitive_candidates']} prototypes={s['prototype_count']} "
               f"prototype_classes={s['prototype_classification_counts']} "
               f"blacklist={s['overclaim_blacklist_records']} ranking={s['ranking_admitted']} "
               f"ranking_discrepancies={s['ranking_discrepancy_candidates']} "
-              f"source_identities={s['source_identity_records']} inspection_edges={s['claim_source_inspection_edges']}"
+              f"source_identities={s['source_identity_records']} identity_variants={s['source_identity_variant_count']} "
+              f"inspection_edges={s['claim_source_inspection_edges']} authority_digest={s['authority_digest_sha256']}"
           )
           print(f"::notice title=1 Peter handoff audit summary::{summary}")
-          pa = json.loads((p/'prototype-audit.json').read_text())
+
           by_class = defaultdict(list)
           for row in pa['records']:
               by_class[row['classification']].append(row['prototype_id'])
           details = '; '.join(f"{k}={','.join(v)}" for k,v in sorted(by_class.items()))
           print(f"::notice title=Prototype classifications::{details}")
+          print(f"::notice title=Prototype rewrite risk counts::{s['prototype_rewrite_risk_counts']}")
+          print(f"::notice title=Ranking discrepancy candidates::{','.join(discrepancies) if discrepancies else 'NONE'}")
+          print(f"::notice title=Source identity variant IDs::{','.join(s['source_identity_variant_ids']) if s['source_identity_variant_ids'] else 'NONE'}")
           PY
