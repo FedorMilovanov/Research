@@ -23,7 +23,9 @@ That parent had:
 - 64 MCQ research prototypes;
 - exact combined correct-position counts `0=16, 1=16, 2=16, 3=16`.
 
-Wave 3n subsequently closed those four candidate-level HOLDs using the **already-authorized ECM-quality scholarly-treatment route**, not by weakening the standard.
+Wave 3n subsequently closed those four candidate-level HOLDs using the **already-authorized peer-reviewed ECM-based textual-critical treatment route**, not by weakening the standard.
+
+The publication-review route is recorded explicitly in `data/source-quorum-wave3n.json`: Bloomsbury Academic's external confidential peer-review policy controls the Williams–Horrell ICC publication route, while Stanojević is identified as a revised doctoral thesis and Gorgias states that doctoral dissertations receive external scholarly evaluation. This review-status metadata remains separate from passage evidence: `PEER_REVIEW_STATUS != PASSAGE_EVIDENCE`.
 
 New Wave-3n authority files:
 
@@ -175,6 +177,7 @@ SECONDARY_APPARATUS != ECM
 NAMED_MANUSCRIPT != ORIGINAL_TEXT_DECISION
 ECM_TEXT_DECISION != MANUSCRIPT_UNANIMITY
 ECM_BASED_COMMENTARY != DIRECT_DECM_READBACK
+PEER_REVIEW_STATUS != PASSAGE_EVIDENCE
 QUESTION_CANDIDATE_READY != PRODUCTION_READY
 MCQ_PROTOTYPE != RANKING_READY
 ZERO_RESEARCH_HOLDS != PRODUCTION_READY
