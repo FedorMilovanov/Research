@@ -8,9 +8,24 @@ Wave 3n closes the four textual-critical HOLDs left by Wave 3l **without relaxin
 The prior rule allowed closure by either:
 
 1. direct current ECM/dECM unit readback; or
-2. a sufficiently explicit current scholarly textual-critical treatment anchored in ECM data.
+2. a sufficiently explicit **peer-reviewed ECM-based textual-critical treatment**.
 
 This wave uses the second route. It does **not** claim a direct dECM witness-table readback where one was not obtained.
+
+## Peer-review criterion audit
+
+The publication-review status was checked separately from passage evidence:
+
+- Bloomsbury Academic states that book proposals it considers are sent for external, confidential peer review; T&T Clark operates within Bloomsbury's academic publishing programme. This supplies the publication-review control for Williams–Horrell's ICC volume.
+- An independent *Journal of Theological Studies* review identifies Stanojević's volume as a revised doctoral thesis. Gorgias Press states that doctoral dissertations receive external scholarly evaluation.
+
+These checks establish the review route required by the old HOLD criterion. They do **not** establish any textual reading by themselves.
+
+```text
+PEER_REVIEW_STATUS != PASSAGE_EVIDENCE
+```
+
+The actual closures below still depend on the inspected ECM-based passage notes and published ECM comparison data.
 
 ## New evidence quorum
 
@@ -144,6 +159,7 @@ ZERO_RESEARCH_HOLDS != COMPETITIVE_READY
 ZERO_RESEARCH_HOLDS != PUBLICATION_AUTHORIZED
 ECM_TEXT_DECISION != MANUSCRIPT_UNANIMITY
 ECM_BASED_COMMENTARY != DIRECT_DECM_READBACK
+PEER_REVIEW_STATUS != PASSAGE_EVIDENCE
 TEXTUAL_CRITICISM != SYSTEMATIC_THEOLOGY
 ```
 
