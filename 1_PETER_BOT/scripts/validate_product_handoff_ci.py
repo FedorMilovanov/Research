@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Fail-closed CI entrypoint for the Chapter 4–5 handoff audit.
 
-The core validator intentionally scans ledgers/quorums. PR #183 also has one explicit
-Wave3e source-upgrade authority; this wrapper adds that file as an inspection lane
-without pretending it is a global identity/depth ledger. It also proves that the
-Wave3l HOLD list is historical by matching those four IDs to Wave3n closures.
+The core validator scans ledgers/quorums. PR #183 also has one explicit Wave3e
+source-upgrade authority; this wrapper adds that file as an inspection lane without
+pretending it is a global identity/depth ledger. It also separates access state from
+claim-evidence status and proves that older HOLD files remain historical.
 """
 import sys
 
@@ -34,6 +34,56 @@ def read_sources_with_explicit_upgrades():
     return identity_lanes, inspection_lanes
 
 
+def inspection_for_exact_status(rec, identity_lanes, inspection_lanes):
+    rows = []
+    for sid in rec.get("source_minimum") or []:
+        owner, why = core.choose_owner(rec, sid, identity_lanes, inspection_lanes)
+        source = owner["record"]
+        rows.append({
+            "source_id": sid,
+            "evidence_status": source.get("evidence_status") or source.get("evidenceStatus") or "NOT_EXPLICITLY_LABELED",
+            "access_state": core.norm_access(source),
+            "inspection_scope": core.norm_scope(source),
+            "owning_lane": owner["path"],
+            "claim_limit": core.norm_limit(source),
+            "owner_resolution": why,
+        })
+    core.fail(not rows, f"{core.cid(rec)}: no source_minimum")
+    return rows
+
+
+def exact_claim_ready_with_access(rows):
+    bad_scope = ("catalog", "metadata", "abstract", "page_inspected", "unspecified", "link_only")
+    for row in rows:
+        scope = row["inspection_scope"].lower()
+        access = row.get("access_state", "UNSPECIFIED").lower()
+        if any(marker in scope for marker in bad_scope):
+            return False
+        if "catalog" in access or "link" in access or "unspecified" in access:
+            return False
+        if not any(marker in scope for marker in ("exact_", "full_", "relevant_", "partial_text_inspected", "author_uploaded_published_text")):
+            return False
+    return True
+
+
+def source_identity_package_bibliographic_only(identity_lanes, inspection_lanes):
+    rows = []
+    for sid in sorted(inspection_lanes):
+        lane = identity_lanes.get(sid, [inspection_lanes[sid][0]])[0]
+        source = lane["record"]
+        title = source.get("title")
+        rows.append({
+            "source_id": sid,
+            "title": title,
+            "author": source.get("author") or core.author_from_title(title),
+            "year": source.get("year") or core.year_from_title(title),
+            "type": core.norm_role(source),
+            "stable_locator": source.get("url"),
+            "identity_verification_status": "BIBLIOGRAPHIC_IDENTITY_RECORDED_FROM_RESEARCH_AUTHORITY",
+        })
+    return rows
+
+
 def validate_hold_history():
     old = core.load(core.DATA / "remaining-holds-wave3l.json")
     current = core.load(core.DATA / "remaining-holds-wave3n.json")
@@ -58,6 +108,9 @@ if __name__ == "__main__":
     try:
         validate_hold_history()
         core.read_sources = read_sources_with_explicit_upgrades
+        core.inspection_for = inspection_for_exact_status
+        core.exact_claim_ready = exact_claim_ready_with_access
+        core.source_identity_package = source_identity_package_bibliographic_only
         core.main()
     except core.AuditError as exc:
         print(f"HANDOFF_AUDIT_FAIL: {exc}", file=sys.stderr)
