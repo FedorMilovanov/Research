@@ -99,6 +99,16 @@ jobs:
               by_class[row['classification']].append(row['prototype_id'])
           details = '; '.join(f"{k}={','.join(v)}" for k,v in sorted(by_class.items()))
           print(f"::notice title=Prototype classifications::{details}")
+          reject_details = '; '.join(
+              f"{row['prototype_id']}:{','.join(row.get('reasons', []))}"
+              for row in pa['records'] if row['classification'] == 'REJECT_AS_PRODUCT_TEMPLATE'
+          ) or 'NONE'
+          print(f"::notice title=Prototype reject reasons::{reject_details}")
+          low_alignment = ','.join(
+              row['prototype_id'] for row in pa['records']
+              if row.get('claim_alignment_signal', {}).get('signal') == 'LOW_REQUIRES_HUMAN_SEMANTIC_CHECK'
+          ) or 'NONE'
+          print(f"::notice title=Low automated claim-alignment signals::{low_alignment}")
           print(f"::notice title=Prototype rewrite risk counts::{s['prototype_rewrite_risk_counts']}")
           print(f"::notice title=Ranking discrepancy candidates::{','.join(discrepancies) if discrepancies else 'NONE'}")
           print(f"::notice title=Source identity variant IDs::{','.join(s['source_identity_variant_ids']) if s['source_identity_variant_ids'] else 'NONE'}")
