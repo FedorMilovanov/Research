@@ -42,31 +42,38 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
+          import base64
+          import hashlib
           import io
           import json
           import tarfile
           from pathlib import Path
 
           digest = '1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d'
+          decoded_sha = '2810acfc23c8476a0adbd224500f910612b29d438fbcdf489e7552420a983122'
           root = Path('/tmp/1peter-immutable-handoff')
           release = root / 'releases' / digest
           pointer = json.loads((root / 'CURRENT_RELEASE.json').read_text(encoding='utf-8'))
           manifest = json.loads((release / 'release-manifest.json').read_text(encoding='utf-8'))
           index = json.loads((release / 'bundle-index.json').read_text(encoding='utf-8'))
-          bundle = (release / 'handoff-release.tar.xz').read_bytes()
 
-          with tarfile.open(fileobj=io.BytesIO(bundle), mode='r:xz') as tar:
-              members = {m.name: tar.extractfile(m).read() for m in tar.getmembers() if m.isfile()}
-          claims = json.loads(members['claim-digests.json'])
-          edges = json.loads(members['claim-source-edge-ids.json'])
-          summary = json.loads(members['integrity-summary.json'])
-          prototypes = json.loads(members['prototype-audit.json'])['records']
-          ranking = json.loads(members['ranking-audit.json'])['records']
+          chunks = []
+          for record in index['segments']:
+              path = release / record['name']
+              payload = path.read_bytes()
+              assert hashlib.sha256(payload).hexdigest() == record['sha256']
+              assert len(payload) == record['bytes']
+              text = payload.decode('ascii').strip()
+              assert len(text) == record['base64_chars']
+              chunks.append(text)
+          bundle = base64.b64decode(''.join(chunks), validate=True)
+          actual_decoded_sha = hashlib.sha256(bundle).hexdigest()
 
           assert pointer['research_authority_sha'] == '0142430af8ba80f28e0fd9cde669d32611a1d2af'
           assert pointer['authority_digest_sha256'] == digest
           assert pointer['whole_authority_sha256'] == digest
-          assert pointer['bundle_sha256'] == index['bundle_sha256']
+          assert pointer['storage_encoding'] == 'ordered-base64-segments'
+          assert pointer['decoded_bundle_sha256'] == decoded_sha == actual_decoded_sha
           assert manifest['immutable'] is True
           assert manifest['authority_digest_sha256'] == digest
           assert manifest['whole_authority_sha256'] == digest
@@ -86,13 +93,39 @@ jobs:
               'NONCOMPETITIVE_ONLY': 12,
               'REJECT_AS_PRODUCT_TEMPLATE': 5,
           }
+          assert index['decoded_bundle_sha256'] == decoded_sha
+          assert index['segment_count'] == len(index['segments'])
+          assert index['segment_count'] == 8
           assert index['member_count'] == 12
           assert index['deterministic_bundle_two_run_byte_equivalent'] is True
+          assert index['segment_round_trip_verified'] is True
+
+          with tarfile.open(fileobj=io.BytesIO(bundle), mode='r:xz') as tar:
+              members = {m.name: tar.extractfile(m).read() for m in tar.getmembers() if m.isfile()}
+          assert sorted(members) == sorted(index['members'])
+          for name, expected_sha in index['expanded_member_sha256'].items():
+              assert hashlib.sha256(members[name]).hexdigest() == expected_sha
+
+          claims = json.loads(members['claim-digests.json'])
+          edges = json.loads(members['claim-source-edge-ids.json'])
+          identities = json.loads(members['source-identity-package.json'])['records']
+          summary = json.loads(members['integrity-summary.json'])
+          prototypes = json.loads(members['prototype-audit.json'])['records']
+          ranking = json.loads(members['ranking-audit.json'])['records']
+
           assert claims['count'] == 144
           assert len({x['candidate_id'] for x in claims['records']}) == 144
           assert all(len(x['effective_claim_digest']) == 64 for x in claims['records'])
           assert edges['count'] == 282
           assert len({x['claim_inspection_edge_id'] for x in edges['records']}) == 282
+          assert len(identities) == 112
+          forbidden_identity_keys = {
+              'claim_id', 'claim_confidence', 'claim_position', 'claim_ready',
+              'passage_exegesis_proved', 'ranking_ready', 'inspection_depth',
+              'strongest_evidence_status'
+          }
+          assert all(row.get('identity_only') is True for row in identities)
+          assert all(forbidden_identity_keys.isdisjoint(row) for row in identities)
 
           rejects = sorted(
               row['prototype_id'] for row in prototypes
