@@ -1,0 +1,13 @@
+{
+  "authority_digest_sha256": "1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d",
+  "bundle_index_path": "releases/1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d/bundle-index.json",
+  "decoded_bundle_sha256": "2810acfc23c8476a0adbd224500f910612b29d438fbcdf489e7552420a983122",
+  "immutable_release": true,
+  "ranking_disposition_w3q_123": "NO_PRODUCT_RANKING_ADMISSION",
+  "release_format_version": 1,
+  "release_path": "releases/1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d",
+  "research_authority_sha": "0142430af8ba80f28e0fd9cde669d32611a1d2af",
+  "schema_version": 2,
+  "storage_encoding": "ordered-base64-segments",
+  "whole_authority_sha256": "1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "research_authority_sha": "0142430af8ba80f28e0fd9cde669d32611a1d2af",
+  "status": "IMMUTABLE_HANDOFF_BOUNDARY_ANCHORS",
+  "rule": "These anchors constrain positive effective-claim text. do_not_claim remains a negative guard and is intentionally not scanned as a positive assertion.",
+  "anchors": [
+    {
+      "id": "ECM_BASED_NOT_DIRECT_DECM",
+      "candidate_ids": ["w3q_031", "w3q_050", "w3q_051", "w3q_075", "w3q_121", "w3q_123"],
+      "forbidden_positive_claim_regex": [
+        "\\bdirect\\s+dECM\\s+readback\\b",
+        "\\bdirect[_ -]?dECM\\b",
+        "непосредственн\\w*\\s+(?:чтени\\w*|readback)\\s+dECM"
+      ],
+      "boundary": "ECM_BASED_COMMENTARY != DIRECT_DECM_READBACK"
+    },
+    {
+      "id": "NAMED_MANUSCRIPT_NOT_UNANIMITY",
+      "candidate_ids": ["w3q_031", "w3q_075", "w3q_137", "w3q_139", "w3q_143"],
+      "forbidden_positive_claim_regex": [
+        "\\ball\\s+manuscripts\\s+read\\b",
+        "\\bmanuscript\\s+unanimity\\s+(?:is|was)\\s+(?:proved|established)\\b",
+        "все\\s+рукописи\\s+читают",
+        "рукописн\\w*\\s+единоглас\\w*\\s+доказ\\w*"
+      ],
+      "boundary": "NAMED_MANUSCRIPT != MANUSCRIPT_UNANIMITY"
+    }
+  ],
+  "project_position_anchors": [
+    {
+      "candidate_id": "w3q_013",
+      "position": "project",
+      "boundary": "PROJECT_POSITION != NEUTRAL_FACT",
+      "separate_authority_required_to_change": true
+    }
+  ]
+}

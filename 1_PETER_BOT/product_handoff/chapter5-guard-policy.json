@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "chapter": 5,
+  "authority_parent": "0142430af8ba80f28e0fd9cde669d32611a1d2af",
+  "status": "RESEARCH_HANDOFF_CONTROL_NOT_PRODUCT_APPROVAL",
+  "default_ranking_possible": false,
+  "guard_records": [
+    {
+      "candidate_id": "w3q_050",
+      "reference": "5:2",
+      "unit": "ἐπισκοποῦντες",
+      "guard": "INDEPENDENT_TEXTUAL_UNIT_5_2A",
+      "prohibited_overclaim": "Do not infer all-manuscript unanimity, full witness distribution, direct dECM readback, or import evidence from κατὰ θεόν."
+    },
+    {
+      "candidate_id": "w3q_051",
+      "reference": "5:2",
+      "unit": "κατὰ θεόν",
+      "guard": "INDEPENDENT_TEXTUAL_UNIT_5_2B",
+      "prohibited_overclaim": "Do not import the ἐπισκοποῦντες evidence lane, call the two units synonymous, claim manuscript unanimity, or claim direct dECM readback."
+    },
+    {
+      "candidate_id": "w3q_068",
+      "reference": "5:10",
+      "unit": "καταρτίσει, στηρίξει, σθενώσει, θεμελιώσει",
+      "guard": "EDITION_BOUNDED_FOUR_VERB_SET",
+      "prohibited_overclaim": "Teach the four-verb sequence only for the inspected/effective edition basis. Do not convert it into a claim that every manuscript or every critical edition has an identical list without an apparatus-specific lane."
+    },
+    {
+      "candidate_id": "w3q_069",
+      "reference": "5:10",
+      "unit": "four-verb morphology",
+      "guard": "MORPHOLOGY_NOT_PROMISE_TIMING",
+      "prohibited_overclaim": "The MorphGNT future-active-indicative parse does not prove immediate relief, a timetable, prosperity, or a complete exegetical account of the promise."
+    },
+    {
+      "candidate_id": "w3q_075",
+      "reference": "5:12",
+      "unit": "στῆτε / ἑστήκατε",
+      "guard": "ECM_DECISION_BOUNDARY_5_12",
+      "prohibited_overclaim": "Do not claim all witnesses read στῆτε, give a witness list from memory, or describe the Wave3n closure as direct dECM witness readback."
+    },
+    {
+      "match_reference": "5:13",
+      "unit": "Babylon",
+      "guard": "TOPONYM_NOT_IDENTIFICATION",
+      "prohibited_overclaim": "Βαβυλών is a textual toponym; Babylon=Rome, literal Mesopotamian Babylon, and Egyptian Babylon are historical-literary identifications. Do not state any identification as morphology or as certainty beyond the cited argument."
+    },
+    {
+      "match_claim_type": "history",
+      "guard": "HISTORICAL_MAP_NOT_CURRENT_CONSENSUS",
+      "prohibited_overclaim": "A history-of-interpretation map does not assign equal probability to old proposals and does not establish current consensus."
+    }
+  ],
+  "separation_assertions": [
+    ["w3q_050", "w3q_051", "MUST_NOT_SHARE_TEXTUAL_EVIDENCE_BY_PROXIMITY"]
+  ]
+}

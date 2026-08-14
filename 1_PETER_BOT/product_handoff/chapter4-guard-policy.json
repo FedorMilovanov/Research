@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "chapter": 4,
+  "authority_parent": "0142430af8ba80f28e0fd9cde669d32611a1d2af",
+  "status": "RESEARCH_HANDOFF_CONTROL_NOT_PRODUCT_APPROVAL",
+  "default_ranking_possible": false,
+  "guard_records": [
+    {
+      "match_reference": "4:6",
+      "guard": "DEAD_IN_4_6_DISPUTED",
+      "required_position_handling": "Preserve neutral dispute separately from any project/course position.",
+      "prohibited_overclaim": "Do not state that the dead in 4:6 are certainly one identified group, or use morphology of εὐηγγελίσθη to decide chronology, location, audience identity, or post-mortem preaching."
+    },
+    {
+      "match_reference_prefix": "4:12",
+      "guard": "MALACHI_BACKGROUND_NOT_QUOTATION",
+      "required_position_handling": "A Malachi 3 relationship may be taught only as an attributed/proposed intertextual model at the depth actually inspected.",
+      "prohibited_overclaim": "Do not state as neutral fact that Peter quotes Malachi, depends on Malachi, or that Malachi is the uniquely established controlling intertext."
+    },
+    {
+      "match_reference": "4:14",
+      "guard": "ECM_DECISION_BOUNDARY_4_14",
+      "required_position_handling": "Teach only the edition-bounded textual decision recorded by the effective Wave3n override.",
+      "prohibited_overclaim": "Do not claim manuscript unanimity, complete witness distribution, or direct dECM readback."
+    },
+    {
+      "match_claim_type": "greek",
+      "guard": "MORPHOLOGY_NOT_EXEGESIS",
+      "required_position_handling": "Greek form and morphology may be stated only as form/parse claims unless a separate exegetical lane is owned and inspected.",
+      "prohibited_overclaim": "Do not turn a parse into chronology, theology, authorial motive, social reconstruction, or the only possible interpretation."
+    },
+    {
+      "match_claim_type": "history",
+      "guard": "HISTORICAL_PLAUSIBILITY_NOT_TEXT",
+      "required_position_handling": "Attribute reconstructed background to its source and preserve confidence limits.",
+      "prohibited_overclaim": "Do not present a social/legal reconstruction as something the Petrine text itself directly states."
+    }
+  ]
+}
