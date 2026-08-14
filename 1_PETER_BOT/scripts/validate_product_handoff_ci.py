@@ -6,14 +6,15 @@ Wave3e source-upgrade authority; this wrapper adds that file as an inspection la
 without pretending it is a global identity/depth ledger. It also proves that the
 Wave3l HOLD list is historical by matching those four IDs to Wave3n closures.
 """
-from collections import defaultdict
 import sys
 
 import validate_product_handoff as core
 
+ORIGINAL_READ_SOURCES = core.read_sources
+
 
 def read_sources_with_explicit_upgrades():
-    identity_lanes, inspection_lanes = core.read_sources()
+    identity_lanes, inspection_lanes = ORIGINAL_READ_SOURCES()
     upgrade_files = [core.DATA / "source-upgrade-wave3e.json"]
     for path in upgrade_files:
         core.fail(not path.exists(), f"missing explicit source-upgrade authority {path.name}")
