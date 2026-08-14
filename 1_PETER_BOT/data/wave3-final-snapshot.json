@@ -14,7 +14,9 @@
     "date": "2026-08-14",
     "criterion_relaxed": false,
     "direct_decm_witness_readback_claimed": false,
-    "closure_route": "pre-existing sufficiently explicit ECM-based scholarly textual-critical treatment route",
+    "peer_review_route_verified": true,
+    "peer_review_status_is_not_passage_evidence": true,
+    "closure_route": "pre-existing sufficiently explicit peer-reviewed ECM-based textual-critical treatment route",
     "artifacts": [
       "28_WAVE3N_ECM_CLOSURE_2026-08-14.md",
       "data/source-quorum-wave3n.json",
@@ -111,6 +113,7 @@
     "NAMED_MANUSCRIPT_NE_ORIGINAL_TEXT_DECISION",
     "ECM_TEXT_DECISION_NE_MANUSCRIPT_UNANIMITY",
     "ECM_BASED_COMMENTARY_NE_DIRECT_DECM_READBACK",
+    "PEER_REVIEW_STATUS_NE_PASSAGE_EVIDENCE",
     "QUESTION_CANDIDATE_READY_NE_PRODUCTION_READY",
     "MCQ_PROTOTYPE_NE_RANKING_READY",
     "ZERO_RESEARCH_HOLDS_NE_PRODUCTION_READY",
