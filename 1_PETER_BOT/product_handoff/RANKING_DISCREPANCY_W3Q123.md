@@ -2,9 +2,9 @@
 
 ## Disposition
 
-**NO AUTOMATIC PROMOTION.**
+**`NO_PRODUCT_RANKING_ADMISSION`**
 
-Research candidate `w3q_123` remains `competitive_candidate=false` / `READY_NONCOMPETITIVE`. This file records why the adversarial Chapter-3-style prefilter surfaced it and why that is only a reviewer discrepancy, not ranking authority.
+No automatic promotion is authorized. Research candidate `w3q_123` remains `competitive_candidate=false` / `READY_NONCOMPETITIVE`. This file records why the adversarial Chapter-3-style prefilter surfaced it and why that is only a reviewer discrepancy, not ranking authority.
 
 ## Claim
 
@@ -24,23 +24,25 @@ The claim is narrow: it is an edition-attribution fact. It does not claim manusc
 - `intf_catholic_changes` supplies institutional critical-edition/CBGM control.
 - No project theology is required to answer the narrow edition-attribution question.
 
-## Why Agent E does not promote it
+## Why Research does not promote it
 
 1. The candidate itself is explicitly `READY_NONCOMPETITIVE` and `competitive_candidate=false`.
 2. The underlying 4:16 unit is genuinely text-critical (`ὀνόματι / μέρει`); an objective edition-attribution fact is not the same as an undisputed base-text fact.
 3. Its `do_not_claim` boundary specifically forbids inventing the complete ECM witness list without direct apparatus readback.
 4. The inspected Kok/de Winter article is secondary scholarly exposition of ECM/CBGM, not direct dECM apparatus access.
 5. Competitive distractors would need their own product review to ensure they test edition attribution without teaching false witness-distribution or “one Greek text” claims.
-6. Chapter-3 ranking admission is a separate authority action; matching several structural criteria cannot itself create that authority.
+6. Product ranking admission is a separate authority action; matching structural criteria cannot itself create that authority.
 
-## Required product reviewer decision
+## Future review boundary
 
-If a future product reviewer wants to consider this claim for ranking, the review must separately decide whether an edition-attribution fact inside a known textual-variation unit satisfies the product ranking policy. It must pin the exact Research claim digest and claim-inspection edges and must not reuse this discrepancy file as approval.
+If a future product reviewer wants to consider this claim for ranking, that review must be separate and explicit. It must decide whether an edition-attribution fact inside a known textual-variation unit satisfies product ranking policy, pin the exact immutable Research authority release, exact effective claim digest, and exact claim-inspection edge IDs, and independently review competitive distractors.
 
-Until that decision exists:
+The Research validator is not permitted to convert that possible future review into admission. The immutable handoff therefore records only:
 
-`ranking_possible = false`
-
-`Research competitive candidate = false`
-
-`product ranking authority = absent`
+```text
+disposition = NO_PRODUCT_RANKING_ADMISSION
+ranking_possible = false
+research_competitive_candidate = false
+product_ranking_authority = absent
+future_product_ranking_review = separate_explicit_gate_only
+```
