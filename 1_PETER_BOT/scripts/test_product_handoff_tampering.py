@@ -58,7 +58,8 @@ def main() -> None:
     assert core.inspection_depth_class(access_only) == baseline_class
 
     # 4. The same source ID in a later/stronger lane does not lend its depth to a claim
-    # whose effective source_minimum was authored in an earlier lane.
+    # whose effective source_minimum was authored in an earlier lane. layer_of()/
+    # provenance_layer() normalize wave3g -> 3g and wave3n -> 3n.
     fake_claim = {
         "id": "w3q_fake_depth_boundary",
         "source_minimum": ["shared_source"],
@@ -70,7 +71,7 @@ def main() -> None:
         "shared_source": [
             {
                 "path": "data/source-quorum-wave3g.json",
-                "layer": "wave3g",
+                "layer": "3g",
                 "record": {
                     "source_id": "shared_source",
                     "evidence_status": "BIBLIOGRAPHIC_ONLY",
@@ -82,7 +83,7 @@ def main() -> None:
             },
             {
                 "path": "data/source-quorum-wave3n.json",
-                "layer": "wave3n",
+                "layer": "3n",
                 "record": {
                     "source_id": "shared_source",
                     "evidence_status": "INSPECTED_FULL_TEXT",
