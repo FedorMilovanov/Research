@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3N-ECM-QUALITY-SOURCE-QUORUM-2026-08-14",
+  "status": "RESEARCH_ONLY_ECM_QUALITY_CLOSURE",
+  "sources": [
+    {
+      "source_id": "w3n_williams_horrell_icc_v2_2023",
+      "title": "Travis B. Williams and David G. Horrell, 1 Peter: A Critical and Exegetical Commentary, Volume 2: Chapters 3–5 (ICC, T&T Clark, 2023)",
+      "url": "https://www.bloomsbury.com/us/1-peter-9780567710604/",
+      "source_role": "current_major_critical_commentary_ecm_cbgm_based",
+      "inspection_scope": "publisher_metadata_and_method_confirmed; exact_text_critical_notes_for_1Pet_4_14_5_2_5_12_inspected_via_indexed_text; 4_14_explicitly_cites_ECM_182; 5_2_episkopountes_explicitly_cites_ECM_188_189; 5_12_note_inspected_with_external_and_internal_reasoning",
+      "claim_limit": "May support Williams-Horrell's textual judgments at 4:14, 5:2, and 5:12 and the fact that their commentary explicitly works with ECM/CBGM. It is not an open-license text, does not authorize wholesale reproduction, and does not convert a commentary into direct dECM witness readback.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PERMISSION_REQUIRED",
+      "holds": []
+    },
+    {
+      "source_id": "w3n_stanojevic_ecm_2021",
+      "title": "Jovan Stanojević, Orthodox New Testament Textual Scholarship: Antoniades, Lectionaries, and the Catholic Epistles (Gorgias Press, 2021)",
+      "url": "https://gorgiaspress.com/orthodox-new-testament-textual-scholarship",
+      "source_role": "academic_direct_comparison_with_ecm_catholic_epistles",
+      "inspection_scope": "publisher_metadata_confirmed; Chapter_4_method_confirmed_as_detailed_comparison_with_ECM; exact_indexed_collation_entries_inspected_for_1Pet_4_14_21_5_2_26_28_and_5_12_46",
+      "claim_limit": "May support the exact ECM-side readings represented in Stanojević's published ECM-versus-Antoniades collation, including 1 Pet 4:14/21 omission of the power addition, 5:2/26–28 presence of κατὰ θεόν, and 5:12/46 στῆτε. It does not by itself supply the full ECM apparatus or replace editorial reasoning.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PERMISSION_REQUIRED",
+      "holds": []
+    },
+    {
+      "source_id": "w3n_intf_ecm_catholic_controls",
+      "title": "INTF, Online Tools for the ECM — Catholic Letters / CBGM institutional controls",
+      "url": "https://ntvmr.uni-muenster.de/de_DE/intfblog/-/blogs/1568191",
+      "source_role": "official_ecm_method_and_edition_authority",
+      "inspection_scope": "official_INTF_Catholic_Letters_ECM_and_CBGM_method_pages_inspected",
+      "claim_limit": "May support that ECM Catholic Letters underlies the NA28 Catholic-Letters text, that its second edition uses full witness transcriptions and CBGM resources, and that ECM is the relevant current critical-edition authority for these units. It is contextual authority, not a substitute for the passage-specific evidence supplied by the two academic treatments above.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": []
+    }
+  ],
+  "closure_rule": "PREEXISTING_HOLD_CRITERION_SATISFIED_BY_EXPLICIT_ECM_BASED_SCHOLARLY_TREATMENT; NO_CRITERION_RELAXATION",
+  "global_rules": [
+    "SECONDARY_APPARATUS_NE_ECM",
+    "NAMED_WITNESS_NE_EDITORIAL_DECISION",
+    "ECM_TEXT_DECISION_NE_MANUSCRIPT_UNANIMITY",
+    "CRITICAL_COMMENTARY_NE_DIRECT_DECM_READBACK",
+    "TEXTUAL_CLOSURE_NE_PRODUCTION_AUTHORIZATION"
+  ]
+}
