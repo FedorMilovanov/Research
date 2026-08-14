@@ -1,25 +1,35 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "prototype_total_required": 64,
   "chapter4_required": 32,
   "chapter5_required": 32,
   "classifications": {
-    "SAFE_TEMPLATE": "Bounded neutral high-confidence Research template with valid structure and source-owner trace. Still not a product card.",
-    "NEEDS_REWRITE": "Question/options/explanation/reference drift from effective authority or violate structural authoring invariants.",
-    "COURSE_POSITION_ONLY": "Effective candidate is project-position material; it may not be neutralized.",
-    "NONCOMPETITIVE_ONLY": "Authority is contested, interpretive, historical, application-level, medium confidence, or READY_NONCOMPETITIVE.",
-    "REJECT_AS_PRODUCT_TEMPLATE": "Orphan/invalid/HOLD/unresolvable evidence-owner template."
+    "SAFE_TEMPLATE": "Structurally bounded neutral high-confidence text/Greek research template with no detected false-certainty distractor risk. Still not a product card or ranking authorization.",
+    "NEEDS_REWRITE": "A structurally linked prototype contains a distractor certainty/evidence-laundering risk or other wording/alignment issue that prevents use as a product template without editorial rewrite.",
+    "COURSE_POSITION_ONLY": "Effective candidate is project-position material, visibly remains project-position, and has no higher-precedence rewrite/reject defect.",
+    "NONCOMPETITIVE_ONLY": "Authority is contested, interpretive, historical, application/intertext/lexical/text-critical, medium confidence, or READY_NONCOMPETITIVE, with no higher-precedence rewrite/reject defect.",
+    "REJECT_AS_PRODUCT_TEMPLATE": "Orphan/invalid/HOLD/unresolvable evidence-owner or structurally corrupt template."
   },
   "checks": [
-    "candidate_id resolves after all candidate overrides",
+    "candidate_id resolves after the complete candidate override chain",
     "exactly four unique nonempty options",
     "correct index is 0..3",
     "explanation equals keyed option",
     "prototype reference equals effective candidate reference",
-    "source contract resolves through effective candidate source_minimum",
+    "prototype source contract resolves only through effective candidate source_minimum",
+    "source ownership is bound to source_minimum field provenance, not merely latest candidate override",
     "project position is not relabeled neutral",
     "Research noncompetitive state is not upgraded",
-    "correct-index distribution remains 16/16/16/16 without overriding semantic checks"
+    "wrong answer options are scanned for false-certainty and evidence-laundering language",
+    "automated keyed-answer/effective-claim lexical alignment signal is recorded for human audit",
+    "correct-index distribution remains 16/16/16/16 but can never override semantic/evidence defects"
   ],
-  "rule": "Classification is recomputed by scripts/validate_product_handoff.py; older Wave3j/Wave3m self-audits are inputs/history, not current approval."
+  "precedence": [
+    "REJECT_AS_PRODUCT_TEMPLATE",
+    "NEEDS_REWRITE",
+    "COURSE_POSITION_ONLY",
+    "NONCOMPETITIVE_ONLY",
+    "SAFE_TEMPLATE"
+  ],
+  "rule": "Classification is recomputed from the exact effective Research authority and prototype content by scripts/validate_product_handoff.py. Older Wave3j/Wave3m self-audits and answer-position balancing are historical inputs, not current product approval."
 }
