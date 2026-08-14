@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:10 — `ἐξουσία` formal + documentary corpus
 
 **Статус:** `EVERGREEN-CONTROLLING-DOSSIER / TEXTUAL-LEXICAL-DOCUMENTARY / MULTILINGUAL-DIRECT-COUNTERMODEL / PARALLEL-BRANCH-RECHECKED / SOURCE-ROUTES-PINNED / RESEARCH-ONLY / PUBLICATION-HOLD`  
-**Последнее обновление:** 2026-08-12
+**Последнее обновление:** 2026-08-14
 
 ## 0. Authority rule
 
@@ -97,6 +97,14 @@ Q1 = what does exousian_echein normally do in Greek?
 Q2 = how does the complete phrase function in this particular sentence?
 ```
 
+The formal corpus below adds a third question that must be kept separate from both:
+
+```text
+Q3 = what relation does exousia + epi normally establish between bearer and domain?
+```
+
+The current evidence supports a construction-level preference without pretending that the resulting **social implementation** is already solved.
+
 ---
 
 # 4. Formal taxonomy: `ἐξουσία` + `ἐπί`
@@ -134,10 +142,21 @@ Formal result:
 AUTHORITY_OVER_DOMAIN_WITH_EXOUSIA = WELL_ATTESTED_BIBLICAL_GREEK
 EXACT_ECHO_EPI_GEN = DIRECTLY_ATTESTED_REV_14_18
 FRONTED_EQUIVALENT = REV_20_6
+EXOUSIA_EPI_DOMAIN_CONSTRUCTION = A_CORPUS_CONSTRUCTION
 EXOUSIA_EPI_GEN_HAS_NO_PARALLELS = FALSE
 UNCOMMON = UNGRAMMATICAL = FALSE
 SYNTAX_FORCES_PASSIVE_SIGN = FALSE
 ```
+
+Construction-level application to 1 Cor 11:10:
+
+```text
+V10_HEAD_HEAD_STATE_AS_CONTROL_DOMAIN = B_LEADING_CONSTRUCTION
+V10_HEAD_WORN_LOCATIVE_METONYMIC_SIGN = C_SERIOUS_COUNTERRELATION
+EXOUSIA_EXACT_SOCIAL_REALIZATION = B_C
+```
+
+This is **not** an A-level claim that the woman has one already-identified modern or ancient social right. It is a relation-level preference: the formal construction normally makes the grammatical subject the authority bearer and the `ἐπί` phrase the domain. Romerowski/Wang show that a locative/metonymic head-worn sign analysis remains a genuine published counterrelation and therefore prevents overpromotion.
 
 ---
 
@@ -656,6 +675,8 @@ Strengthened:
 ```text
 WOMAN_IS_SUBJECT = A
 ACTIVE_RIGHT_POWER_SEMANTIC_PULL = B_HIGH
+EXOUSIA_EPI_DOMAIN_CONSTRUCTION = A_CORPUS_CONSTRUCTION
+V10_HEAD_HEAD_STATE_AS_CONTROL_DOMAIN = B_LEADING_CONSTRUCTION
 ACTIVE_AUTHORITY_OVER_DOMAIN_SYNTAX = ATTESTED
 EXOUSIAN_ECHEIN_IN_ROMAN_DOCUMENTARY_GREEK = STRONGLY_ATTESTED
 FEMALE_RIGHT_BEARERS_IN_ROMAN_DOCUMENTS = DIRECTLY_ATTESTED
@@ -666,9 +687,18 @@ Not solved:
 
 ```text
 EXOUSIA_EXACT_REFERENT = B_C
+EXOUSIA_EXACT_SOCIAL_REALIZATION = B_C
 ```
 
 Still-live contextual families include control/right regarding head presentation; authority/right to pray/prophesy; authority/status signaled through covering; contextual metonymic sign reading; and other discourse-specific relations.
+
+Current relation calibration:
+
+```text
+HEAD_HEAD_STATE_AS_CONTROL_DOMAIN = B_LEADING_CONSTRUCTION
+HEAD_WORN_LOCATIVE_METONYMIC_SIGN = C_SERIOUS_COUNTERRELATION
+CONTROL_DOMAIN_B_LEADING != EXACT_OWN_HEAD_COVERING_OR_MINISTRY_IMPLEMENTATION_PROVED
+```
 
 A passive-sign interpretation requires contextual/metonymic argument; it is not the default lexical value of `ἐξουσίαν ἔχειν`. Romerowski 2006 and Wang 2022 are direct full-body examples of contextual sign/metonymic readings; Gatumu 2020 and McGinn 1996 are direct full-body examples of active-woman readings that nevertheless disagree over the **exact** referent. All must be represented as serious published controls rather than reduced to lexical slogans.
 
@@ -691,6 +721,7 @@ ROMAN_EGYPT_PROPERTY_RIGHT != CORINTHIAN_LITURGICAL_RIGHT
 FEMALE_LEGAL_AGENCY != MODERN_AUTONOMY_THEOLOGY
 ACTIVE_SEMANTICS != EXACT_SOCIAL_TRIGGER_PROVED
 ACTIVE_EXOUSIA_PULL != EXACT_V10_REFERENT_FORCED
+CONTROL_DOMAIN_RELATION != EXACT_SOCIAL_REALIZATION_PROVED
 ROMEROWSKI_METONYMY != EXOUSIA_LEXICALLY_MEANS_VEIL
 ROMEROWSKI_HUSBAND_AUTHORITY = INTERPRETIVE_CONTEXTUAL_CONCLUSION_NOT_LEXICAL_DEFINITION
 WANG_AUTHORITY_SIGN != EXOUSIA_LEXICALLY_MEANS_VEIL
@@ -757,8 +788,13 @@ ROMEROWSKI_2006 = DIRECT_FULL_BODY_SERIOUS_CONTEXTUAL_METONYMY_COUNTERMODEL
 WANG_2022 = DIRECT_AUTHOR_UPLOADED_PUBLISHED_BODY / MATERIAL_COVERING + AUTHORITY_SIGN_COUNTERMODEL
 GATUMU_2020 = DIRECT_OFFICIAL_FULL_BODY / ACTIVE_WOMAN_RIGHT_AND_CHOICE_COUNTERMODEL
 MCGINN_1996 = DIRECT_AUTHOR_PROFILE_RENDERED_PUBLISHED_BODY / ACTIVE_WOMAN + DISTINCT_EXACT_REFERENT_COUNTERMODEL
+EXOUSIA_WOMAN_SUBJECT = A_SYNTAX
 EXOUSIA_ACTIVE_WOMAN_BEARER_PULL = B_HIGH
+EXOUSIA_EPI_DOMAIN_CONSTRUCTION = A_CORPUS_CONSTRUCTION
+V10_HEAD_HEAD_STATE_AS_CONTROL_DOMAIN = B_LEADING_CONSTRUCTION
+V10_HEAD_WORN_LOCATIVE_METONYMIC_SIGN = C_SERIOUS_COUNTERRELATION
 EXOUSIA_EXACT_REFERENT = B_C
+EXOUSIA_EXACT_SOCIAL_REALIZATION = B_C
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 SITE_PUBLICATION = false
