@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3L-4_6-PROJECT-OVERRIDE-2026-08-14",
+  "status": "RESEARCH_OVERRIDE_NOT_PRODUCTION",
+  "overrides": [
+    {
+      "id": "w3q_013",
+      "supersedes_fields": ["stem", "keyed_concept", "confidence", "status", "source_minimum", "tested_distinction", "do_not_claim"],
+      "stem": "Какую интерпретацию 1 Пет 4:6 курс принимает как project position, сохраняя scholarly dispute?",
+      "keyed_concept": "Project position: νεκροῖς — верующие, которым Евангелие было возвещено при жизни и которые к моменту письма уже умерли. MacArthur и Storms прямо представляют это чтение; Horrell защищает серьёзную postmortem alternative, поэтому project choice не маркируется neutral consensus.",
+      "confidence": "contested",
+      "status": "READY_NONCOMPETITIVE",
+      "source_minimum": ["sblgnt", "w3l_gty_1p4_2_6", "w3_storms_1peter", "w3l_horrell_4_6_2003"],
+      "tested_distinction": "explicit project interpretation vs neutral scholarly consensus",
+      "do_not_claim": "Не говорить, что morphology/νεκροῖς лексически доказывают выбранную хронологию; не выдавать MacArthur/Storms reading за academic consensus; не делать speculative martyrdom detail factual audience history."
+    }
+  ]
+}

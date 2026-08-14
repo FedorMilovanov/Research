@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3L-REMAINING-HOLDS-2026-08-14",
+  "status": "FAIL_CLOSED",
+  "candidate_corpus_after_overrides": {
+    "total": 144,
+    "chapter4": 72,
+    "chapter5": 72,
+    "ready": 52,
+    "ready_noncompetitive": 88,
+    "hold": 4
+  },
+  "closed_in_wave3l": {
+    "candidate_id": "w3q_013",
+    "passage": "1 Peter 4:6",
+    "transition": "HOLD -> READY_NONCOMPETITIVE",
+    "closure_type": "PROJECT_POSITION_ONLY",
+    "neutral_dispute_closed": false,
+    "project_position": "believers_evangelized_while_alive_and_now_dead"
+  },
+  "remaining_holds": [
+    {
+      "hold_id": "HOLD-TC-4-14",
+      "candidate_id": "w3q_031",
+      "passage": "1 Peter 4:14",
+      "issue": "Spirit/glory expansion textual unit",
+      "already_verified": [
+        "SBLGNT short/base wording",
+        "Codex Sinaiticus includes καὶ τῆς δυνάμεως αὐτοῦ",
+        "secondary apparatus confirms expansion traditions exist"
+      ],
+      "closes_with": [
+        "direct current ECM/dECM variation-unit readback",
+        "or bounded peer-reviewed ECM-based textual-critical treatment explicit enough to establish the current unit"
+      ],
+      "does_not_close_with": [
+        "Sinaiticus alone",
+        "STEP or other secondary apparatus alone",
+        "TR/traditional wording",
+        "commentary assertion without apparatus inspection"
+      ],
+      "competitive_candidate": false
+    },
+    {
+      "hold_id": "HOLD-TC-5-2A",
+      "candidate_id": "w3q_050",
+      "passage": "1 Peter 5:2",
+      "issue": "ἐπισκοποῦντες official ECM closure",
+      "already_verified": [
+        "SBLGNT prints ἐπισκοποῦντες",
+        "Codex Sinaiticus omits it",
+        "secondary apparatus shows complex combinations with κατὰ θεόν"
+      ],
+      "closes_with": [
+        "direct ECM/dECM 5:2 unit with current editorial state/reasoning",
+        "or bounded peer-reviewed textual-critical treatment explicitly anchored in ECM data"
+      ],
+      "does_not_close_with": [
+        "SBLGNT alone",
+        "one early manuscript",
+        "STEP alone",
+        "majority/TR tradition",
+        "polity/systematic preference"
+      ],
+      "competitive_candidate": false
+    },
+    {
+      "hold_id": "HOLD-TC-5-2B",
+      "candidate_id": "w3q_051",
+      "passage": "1 Peter 5:2",
+      "issue": "κατὰ θεόν official ECM closure",
+      "already_verified": [
+        "SBLGNT prints κατὰ θεόν",
+        "Codex Sinaiticus retains it while omitting ἐπισκοποῦντες",
+        "secondary apparatus shows independent variation"
+      ],
+      "closes_with": [
+        "direct ECM/dECM 5:2 unit with current editorial state/reasoning",
+        "or bounded peer-reviewed textual-critical treatment explicitly anchored in ECM data"
+      ],
+      "does_not_close_with": [
+        "treating both 5:2 elements as one binary variant",
+        "one manuscript",
+        "translation preference",
+        "polity/systematic reasoning"
+      ],
+      "competitive_candidate": false
+    },
+    {
+      "hold_id": "HOLD-TC-5-12",
+      "candidate_id": "w3q_075",
+      "passage": "1 Peter 5:12",
+      "issue": "στῆτε / ἑστήκατε official ECM reasoning",
+      "already_verified": [
+        "SBLGNT/MorphGNT print στῆτε",
+        "Codex Sinaiticus has στῆτε",
+        "secondary apparatus reports στῆτε in multiple early witnesses and ἑστήκατε in Byzantine/other lines"
+      ],
+      "closes_with": [
+        "direct current ECM/dECM apparatus/editorial reasoning",
+        "or sufficiently explicit peer-reviewed ECM-based textual-critical treatment"
+      ],
+      "does_not_close_with": [
+        "witness counting alone",
+        "oldest-manuscript-wins reasoning",
+        "SBLGNT choice alone",
+        "Byzantine/TR familiarity"
+      ],
+      "competitive_candidate": false
+    }
+  ],
+  "global_rule": "SECONDARY_APPARATUS_AND_NAMED_WITNESSES_CAN_TEACH_VARIATION_WITHOUT_CLOSING_OFFICIAL_ECM_HOLDS"
+}

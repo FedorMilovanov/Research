@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3L-SOURCE-QUORUM-2026-08-14",
+  "status": "RESEARCH_ONLY_FAIL_CLOSED",
+  "sources": [
+    {
+      "source_id": "w3l_gty_1p4_2_6",
+      "title": "John MacArthur, The Memory That Shuns Sin, Part 2 — 1 Peter 4:2–6",
+      "url": "https://www.gty.org/sermons/60-40/the-memory-that-shuns-sin-part-2",
+      "source_role": "project_exposition_passage_level",
+      "inspection_scope": "full_web_sermon_relevant_lines_94_120_inspected; verse_6_lines_113_116_exact",
+      "claim_limit": "May support MacArthur's explicit interpretation that the dead in 1 Peter 4:6 are believers who heard the gospel and are now dead, plus his pastoral argument that physical death cannot defeat their life before God. His speculative possibility that some were martyrs may be attributed to him but not converted into audience fact.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": []
+    },
+    {
+      "source_id": "w3l_horrell_4_6_2003",
+      "title": "David G. Horrell, Who are ‘The Dead’ and When was the Gospel Preached to Them?",
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/who-are-the-dead-and-when-was-the-gospel-preached-to-them-the-interpretation-of-1-pet-46/66D1EF6323D7CD9AEEA78CF9AF8309AF",
+      "source_role": "peer_reviewed_counterposition_abstract",
+      "inspection_scope": "official_Cambridge_abstract_inspected",
+      "claim_limit": "May support that the now-dead/evangelized-while-alive reading had become increasingly widely accepted in recent English commentary and that Horrell argues serious problems remain and defends proclamation to people already dead as more plausible than recent commentators allow. Cannot support details beyond the abstract.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": []
+    },
+    {
+      "source_id": "w3l_intf_ecm_tools_2021",
+      "title": "INTF, Online Tools for the ECM — Catholic Letters controls",
+      "url": "https://ntvmr.uni-muenster.de/de_DE/intfblog/-/blogs/1568191",
+      "source_role": "official_textual_criticism_infrastructure",
+      "inspection_scope": "official_blog_full_relevant_Catholic_Letters_section_inspected",
+      "claim_limit": "May support that ECM Catholic Letters underlies the NA28 Catholic-Letters text, that the ECM uses full witness transcriptions/CBGM resources, and general split-line/textual-change infrastructure. It does not expose the specific 4:14, 5:2, or 5:12 units in this indexed route and therefore cannot close them.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": []
+    },
+    {
+      "source_id": "w3l_intf_ecm_page_confirmation_2024",
+      "title": "INTF forum — ECM Page Contents confirmation for Catholic Letters",
+      "url": "https://ntvmr.uni-muenster.de/forum/-/message_boards/view_message/1988400",
+      "source_role": "official_institutional_method_context",
+      "inspection_scope": "Greg_Paulson_2024_reply_inspected",
+      "claim_limit": "May support the specific institutional clarification that the ECM page displays the Greek text of ECM Catholic Letters, which is also the NA28 text. It cannot supply unexposed apparatus units or editorial reasoning.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": []
+    }
+  ]
+}
