@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3N-REMAINING-HOLDS-2026-08-14",
+  "status": "RESEARCH_HOLDS_CLOSED_NOT_PRODUCTION",
+  "candidate_corpus_after_overrides": {
+    "total": 144,
+    "chapter4": 72,
+    "chapter5": 72,
+    "ready": 52,
+    "ready_noncompetitive": 92,
+    "hold": 0,
+    "competitive_candidates": 0
+  },
+  "closed_in_wave3n": [
+    {
+      "hold_id": "HOLD-TC-4-14",
+      "candidate_id": "w3q_031",
+      "passage": "1 Peter 4:14",
+      "transition": "HOLD -> READY_NONCOMPETITIVE",
+      "closure_basis": "Williams-Horrell 2023 explicitly cites ECM 182 for the variant forms and prefers the shorter reading; Stanojevic 2021 independently records the ECM-side reading at 1 Pet 4:14/21 without the power addition."
+    },
+    {
+      "hold_id": "HOLD-TC-5-2A",
+      "candidate_id": "w3q_050",
+      "passage": "1 Peter 5:2",
+      "transition": "HOLD -> READY_NONCOMPETITIVE",
+      "closure_basis": "Williams-Horrell 2023 explicitly cites ECM 188-189, weighs omission and inclusion, and prefers retaining episkopountes."
+    },
+    {
+      "hold_id": "HOLD-TC-5-2B",
+      "candidate_id": "w3q_051",
+      "passage": "1 Peter 5:2",
+      "transition": "HOLD -> READY_NONCOMPETITIVE",
+      "closure_basis": "Williams-Horrell 2023 treats kata theon as an independent unit and prefers retention; Stanojevic 2021 records the ECM-side reading at 1 Pet 5:2/26-28 with kata theon."
+    },
+    {
+      "hold_id": "HOLD-TC-5-12",
+      "candidate_id": "w3q_075",
+      "passage": "1 Peter 5:12",
+      "transition": "HOLD -> READY_NONCOMPETITIVE",
+      "closure_basis": "Stanojevic 2021 records the exact ECM comparison unit 1 Pet 5:12/46 with stete on the ECM side; Williams-Horrell 2023 independently prefer stete using external and internal textual reasoning."
+    }
+  ],
+  "remaining_holds": [],
+  "criterion_audit": {
+    "criterion_relaxed": false,
+    "old_rule": "Direct current ECM/dECM evidence OR sufficiently explicit ECM-based scholarly textual-critical treatment",
+    "satisfaction": "The second pre-existing route is satisfied passage-by-passage; 5:12 additionally has an exact published ECM comparison address.",
+    "direct_decm_witness_readback_claimed": false
+  },
+  "global_rule": "ZERO_RESEARCH_HOLDS_NE_PRODUCTION_READY_AND_NE_RANKING_READY"
+}
