@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3J2-MCQ-SELF-AUDIT-2026-08-14",
+  "status": "RESEARCH_EDITORIAL_VALIDATION_NOT_PRODUCTION",
+  "base_prototype_count": 32,
+  "override_count": 9,
+  "overridden_prototypes": ["w3mcq_008","w3mcq_009","w3mcq_011","w3mcq_013","w3mcq_017","w3mcq_020","w3mcq_022","w3mcq_024","w3mcq_029"],
+  "correct_position_sequence_unchanged": [2,0,3,1,1,3,0,2,3,2,1,0,0,1,2,3,2,3,1,0,1,0,3,2,0,2,1,3,3,1,2,0],
+  "correct_position_counts": {"0":8,"1":8,"2":8,"3":8},
+  "effective_bank_requirements": {
+    "prototype_ids_unique": true,
+    "candidate_links_preserved": true,
+    "four_nonempty_options_each": true,
+    "normalized_options_unique": true,
+    "valid_correct_index": true,
+    "explanation_equals_keyed_option": true,
+    "all_competitive_candidate_false": true,
+    "all_four_positions_used": true,
+    "exact_8_8_8_8_distribution": true,
+    "no_three_identical_correct_positions_in_a_row": true,
+    "not_simple_0123_cycle": true,
+    "substantive_key_not_changed_by_override": true,
+    "source_depth_not_upgraded_by_override": true,
+    "hold_not_promoted_by_override": true
+  },
+  "manual_editorial_findings": {
+    "length_or_verbosity_leakage_found_in_initial_readback": true,
+    "artificial_distractors_found_in_initial_readback": true,
+    "corrective_overrides_added": true,
+    "answer_position_rebalancing_not_needed": true
+  },
+  "production_boundary": "A passing Wave-3j2 research audit still does not authorize runtime registration, ranking, competitive=True, or publication."
+}
