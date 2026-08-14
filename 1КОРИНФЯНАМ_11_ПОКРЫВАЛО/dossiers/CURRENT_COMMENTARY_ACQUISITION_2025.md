@@ -16,6 +16,7 @@ PREVIEW_EXISTS != TARGET_SECTION_EXPOSED
 LIBRARY_HOLDING != BODY_READ
 LICENSED_FULLTEXT_RECORD != RUNTIME_FULLTEXT_BODY
 PDF_FILE_OBJECT != BODY_READ
+OFFICIAL_PDF_GALLEY_ROUTE != BODY_READ
 TERMINAL_EXTERNAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 ```
 
@@ -324,6 +325,27 @@ LABUDA_2019_FULL_BODY = CLOSED_DIRECT_OFFICIAL_PDF
 
 The former `TERMINAL_RUNTIME_FETCH_HOLD` state is superseded. Full body has been read and absorbed into the substantive owners; page-image custody remains a separate optional renderer concern.
 
+## 4.6 Marcin Kowalski 2020 — official publisher OA galley route
+
+The earlier KUL institutional object remains valid, but an independently stronger first-party publisher route is now directly controlled:
+
+```text
+TITLE = Miedzy_darem_Bozym_a_konstruktem_spolecznym_Wczesnochrzescijanskie_rozumienie_plciowosci_na_podstawie_1_Kor_11_2_16
+JOURNAL = Biblica_et_Patristica_Thoruniensia_13_1
+PAGES = 59_104
+DOI = 10.12775/BPTh.2020.003
+KOWALSKI_APCZ_ARTICLE_PAGE = CLOSED_DIRECT_OFFICIAL_PUBLISHER
+KOWALSKI_APCZ_LICENSE = CC_BY_ND_4_0_AS_CURRENT_ARTICLE_PAGE_REPORTS
+KOWALSKI_APCZ_PDF_GALLEY = EXACT_OFFICIAL_LINK_ID_25039
+KOWALSKI_APCZ_PDF_GALLEY_ROUTE = VERIFIED_OFFICIAL_OA_ROUTE
+KOWALSKI_APCZ_PDF_RENDER = CURRENT_RUNTIME_CACHE_MISS
+KOWALSKI_KUL_ITEM = CLOSED_DIRECT_INSTITUTIONAL
+KOWALSKI_KUL_PDF_FILE_OBJECT = CLOSED_DIRECT_INSTITUTIONAL
+KOWALSKI_FULL_ARTICLE_BODY = NOT_DIRECTLY_READ_CURRENT_RUNTIME
+```
+
+The official APCZ page directly renders article identity, DOI, abstract, full bibliography, printed pagination, OA license and a `PDF` download action. The PDF galley itself still does not render in the current runtime. Therefore this closes publisher/source custody and the exact body route, **not** the full body text.
+
 ---
 
 # 5. Specialist human-access queue
@@ -331,7 +353,7 @@ The former `TERMINAL_RUNTIME_FETCH_HOLD` state is superseded. Full body has been
 These exact bodies remain useful, but current public routes have already been classified:
 
 ```text
-KOWALSKI_2020 = KUL_OA_ITEM + PDF_FILE_OBJECT / CURRENT_RUNTIME_BINARY_HOLD
+KOWALSKI_2020 = APCZ_OFFICIAL_OA_ARTICLE + EXACT_PDF_GALLEY_25039 + KUL_OA_ITEM_AND_PDF_FILE_OBJECT / BODY_RUNTIME_CACHE_HOLD
 KOWALSKI_2022 = AUTHOR_ACADEMIA_PAPER_92939709 + ATTACHMENT_95816093 / CURRENT_RUNTIME_BINARY_HOLD
 PETERS_2020 = PEETERS_EXACT_ARTICLE + FIRST_PAGE_PREVIEW / PURCHASE_OR_LIBRARY_HOLD
 PETERS_2013 = EMORY_OA_OBJECT_QR46R105V + PRIMARY_PDF_LABEL / CURRENT_RUNTIME_BINARY_HOLD
@@ -404,7 +426,7 @@ NEXT_SPECIALIST_LIBRARY_UPGRADES:
   NOMMIK_FULLTEXT
   PETERS_2025_FULL_MONOGRAPH
   OKLAND_CH4_7
-  KOWALSKI_2020_OR_AUTHOR_2022_BODY
+  KOWALSKI_2020_BODY_FROM_ALREADY_CLOSED_OFFICIAL_OA_GALLEY_ROUTE_OR_AUTHOR_2022_BODY
   PETERS_2020_FULL_BODY
   PETERS_2013_CH6_7_P282
   WON_2010_ARTICLE_AND_MA_THESIS
