@@ -44,8 +44,10 @@
   "remaining_holds": [],
   "criterion_audit": {
     "criterion_relaxed": false,
-    "old_rule": "Direct current ECM/dECM evidence OR sufficiently explicit ECM-based scholarly textual-critical treatment",
-    "satisfaction": "The second pre-existing route is satisfied passage-by-passage; 5:12 additionally has an exact published ECM comparison address.",
+    "old_rule": "Direct current ECM/dECM evidence OR sufficiently explicit peer-reviewed ECM-based textual-critical treatment",
+    "satisfaction": "The second pre-existing route is satisfied passage-by-passage. The academic publication-review routes for Williams-Horrell and Stanojevic were independently verified; review status is metadata and does not substitute for passage-level ECM evidence. 5:12 additionally has an exact published ECM comparison address.",
+    "peer_review_route_verified": true,
+    "peer_review_status_is_not_passage_evidence": true,
     "direct_decm_witness_readback_claimed": false
   },
   "global_rule": "ZERO_RESEARCH_HOLDS_NE_PRODUCTION_READY_AND_NE_RANKING_READY"
