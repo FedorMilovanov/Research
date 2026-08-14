@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "RESEARCH_HANDOFF_GUARDRAILS",
   "rule": "These patterns supplement each effective candidate's do_not_claim field. Matching language is prohibited unless a distinct owning evidence lane explicitly proves the stronger proposition.",
   "patterns": [
@@ -18,10 +18,16 @@
     {"id":"ABSTRACT_FULL_ARGUMENT","danger":"abstract metadata is used as if the full article argument was inspected","boundary":"ABSTRACT != FULL_TEXT_EVIDENCE"},
     {"id":"PEER_REVIEW_EVIDENCE","danger":"peer-review status is used as passage-level evidence","boundary":"PEER_REVIEW_STATUS != PASSAGE_EVIDENCE"},
     {"id":"READY_PRODUCT","danger":"Research READY/HOLD=0 is presented as production authorization","boundary":"ZERO_RESEARCH_HOLDS != PRODUCTION_READY"},
-    {"id":"READY_RANKING","danger":"Research READY or competitive=false/true metadata is used as ranking authorization","boundary":"READY != RANKING_READY"},
+    {"id":"READY_RANKING","danger":"Research READY or competitive metadata is used as ranking authorization","boundary":"READY != RANKING_READY"},
     {"id":"PROTOTYPE_PRODUCT","danger":"Research MCQ prototype is copied as an approved product card without product review trace","boundary":"MCQ_PROTOTYPE != PRODUCT_CARD"},
     {"id":"GREEN_PUBLICATION","danger":"validator success is presented as publication approval","boundary":"GREEN_VALIDATOR != PUBLICATION_APPROVAL"},
     {"id":"FIVE_TWO_CROSS_UNIT","danger":"5:2 ἐπισκοποῦντες evidence is reused for κατὰ θεόν or vice versa","boundary":"independent textual units require independent owning evidence"},
-    {"id":"FIVE_TEN_UNIVERSAL","danger":"the four-verb 5:10 sequence is asserted for every manuscript/edition","boundary":"effective teaching is edition-bounded unless apparatus-specific evidence proves more"}
+    {"id":"FIVE_TEN_UNIVERSAL","danger":"the four-verb 5:10 sequence is asserted for every manuscript/edition","boundary":"effective teaching is edition-bounded unless apparatus-specific evidence proves more"},
+    {"id":"FIVE_TWELVE_UNANIMITY","danger":"5:12 στῆτε is presented as the reading of all manuscripts or as a directly read full dECM witness list","boundary":"bounded ECM-side/editorial conclusion != manuscript unanimity or direct dECM readback"},
+    {"id":"ACCESS_AS_EVIDENCE","danger":"FULL_OBJECT/PARTIAL_OBJECT/access state is relabeled as claim evidence","boundary":"ACCESS_STATE != CLAIM_EVIDENCE"},
+    {"id":"SOURCE_ID_DEPTH_LAUNDERING","danger":"a repeated source_id inherits the deepest inspection from another claim/lane","boundary":"SAME_SOURCE_ID != SAME_INSPECTION_DEPTH"},
+    {"id":"LATEST_OVERRIDE_DEPTH_LAUNDERING","danger":"a later status/keyed-concept override is used to move source ownership to a later quorum even though source_minimum came from an earlier layer","boundary":"SOURCE_OWNER_FOLLOWS_SOURCE_MINIMUM_FIELD_PROVENANCE"},
+    {"id":"CLAIM_ID_WITHOUT_DIGEST","danger":"product pins only w3q ID/SHA but does not verify the exact effective claim/authority digest imported for review","boundary":"IDENTITY_PIN != CONTENT_INTEGRITY_PIN"},
+    {"id":"DISTRACTOR_FALSE_CERTAINTY","danger":"a wrong MCQ option teaches an absolute manuscript/lexical/consensus/grammar claim merely because it is intended to be rejected","boundary":"DISTRACTOR != LICENSE_TO_TEACH_FALSE_CERTAINTY"}
   ]
 }
