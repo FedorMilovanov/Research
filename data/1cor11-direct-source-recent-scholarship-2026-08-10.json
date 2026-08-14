@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "topic": "1 Corinthians 11:2-16",
-  "date": "2026-08-10",
+  "date": "2026-08-14",
   "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
   "coreGradeReversals": 0,
   "currentKnownPublicAgentQueueEmpty": true,
@@ -140,11 +140,13 @@
         "Testing the Theory that Paul Refers Specifically to Wives",
         "Conclusions"
       ],
-      "scopeConclusion": "FREE_D_MARRIED_WOMEN_PREFERRED_TENTATIVELY",
+      "scopeConclusion": "FREE_D_MARRIED_WOMEN_PREFERRED_TENTATIVELY_IN_CALLON_MODEL",
       "materialCovering": "MAJORITY_TEXTILE_READING_ACCEPTED_IN_AUTHOR_MODEL",
       "v10": "AUTHORITY_OVER_HER_OWN_HEAD_PREFERRED_WITH_SOCIAL_HEAD_IMPLICATIONS",
-      "currentModelGrade": "B_C_SERIOUS_CURRENT_MODEL_UNCHANGED",
-      "wivesVsAllWomenGrade": "OPEN_B_C_UNCHANGED",
+      "currentModelGrade": "C_SERIOUS_CURRENT_ALTERNATIVE",
+      "currentProjectScopeGrade": "ALL_WOMEN_PRACTICAL_SCOPE_B_LEADING",
+      "wivesVsAllWomenGrade": "ALL_WOMEN_B_LEADING__FREE_D_MARRIED_WIVES_C_SERIOUS_CURRENT_ALTERNATIVE",
+      "scopeCalibrationNote": "Callon's tentative author preference is preserved as a serious countermodel; source preference does not own the project grade.",
       "doi": "10.1017/S0017816024000300"
     }
   ],
