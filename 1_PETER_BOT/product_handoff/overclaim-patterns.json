@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "RESEARCH_HANDOFF_GUARDRAILS",
+  "rule": "These patterns supplement each effective candidate's do_not_claim field. Matching language is prohibited unless a distinct owning evidence lane explicitly proves the stronger proposition.",
+  "patterns": [
+    {"id":"LEXICAL_EXACTNESS","danger":"греческое слово означает именно / единственно","boundary":"LEXICON_RANGE != PASSAGE_EXEGESIS"},
+    {"id":"MORPHOLOGY_EXEGESIS","danger":"грамматическая форма доказывает хронологию, референта, богословие или авторский мотив","boundary":"MORPHOLOGY != EXEGESIS"},
+    {"id":"ALL_MANUSCRIPTS","danger":"все рукописи / ни одна рукопись","boundary":"ECM_TEXT_DECISION != MANUSCRIPT_UNANIMITY"},
+    {"id":"NAMED_WITNESS_GLOBAL","danger":"чтение одного названного манускрипта доказывает исходный текст или всю традицию","boundary":"NAMED_MANUSCRIPT != TEXT_DECISION"},
+    {"id":"DIRECT_DECM_LAUNDERING","danger":"ECM/dECM прямо показывает witnesses when closure came through ECM-based commentary/collation","boundary":"ECM_BASED_COMMENTARY != DIRECT_DECM_READBACK"},
+    {"id":"SECONDARY_APPARATUS_ECM","danger":"secondary apparatus or commentary is described as the ECM apparatus itself","boundary":"SECONDARY_APPARATUS != ECM"},
+    {"id":"MALACHI_QUOTATION","danger":"Пётр цитирует Малахию / зависит от Малахии as neutral fact","boundary":"proposed/thematic background != formal quotation"},
+    {"id":"DEAD_4_6_CERTAINTY","danger":"мертвые в 4:6 — это точно одна конкретная группа","boundary":"neutral scholarly dispute remains open; project position must stay labeled"},
+    {"id":"BABYLON_CERTAINTY","danger":"Вавилон в 5:13 — это точно Рим / точно Месопотамия / morphology proves location","boundary":"textual toponym != historical-literary identification"},
+    {"id":"ROMAN_LAW_FROM_PLAUSIBILITY","danger":"древнеримский закон требовал X when lane supplies only social/legal plausibility","boundary":"HISTORICAL_PLAUSIBILITY != TEXT"},
+    {"id":"ONE_SCHOLAR_CONSENSUS","danger":"one commentator/article is presented as scholarly consensus","boundary":"ONE_COMMENTATOR != CONSENSUS"},
+    {"id":"PROJECT_NEUTRALIZATION","danger":"course/project theological position is presented as neutral fact","boundary":"PROJECT_POSITION != NEUTRAL_FACT"},
+    {"id":"ABSTRACT_FULL_ARGUMENT","danger":"abstract metadata is used as if the full article argument was inspected","boundary":"ABSTRACT != FULL_TEXT_EVIDENCE"},
+    {"id":"PEER_REVIEW_EVIDENCE","danger":"peer-review status is used as passage-level evidence","boundary":"PEER_REVIEW_STATUS != PASSAGE_EVIDENCE"},
+    {"id":"READY_PRODUCT","danger":"Research READY/HOLD=0 is presented as production authorization","boundary":"ZERO_RESEARCH_HOLDS != PRODUCTION_READY"},
+    {"id":"READY_RANKING","danger":"Research READY or competitive=false/true metadata is used as ranking authorization","boundary":"READY != RANKING_READY"},
+    {"id":"PROTOTYPE_PRODUCT","danger":"Research MCQ prototype is copied as an approved product card without product review trace","boundary":"MCQ_PROTOTYPE != PRODUCT_CARD"},
+    {"id":"GREEN_PUBLICATION","danger":"validator success is presented as publication approval","boundary":"GREEN_VALIDATOR != PUBLICATION_APPROVAL"},
+    {"id":"FIVE_TWO_CROSS_UNIT","danger":"5:2 ἐπισκοποῦντες evidence is reused for κατὰ θεόν or vice versa","boundary":"independent textual units require independent owning evidence"},
+    {"id":"FIVE_TEN_UNIVERSAL","danger":"the four-verb 5:10 sequence is asserted for every manuscript/edition","boundary":"effective teaching is edition-bounded unless apparatus-specific evidence proves more"}
+  ]
+}
