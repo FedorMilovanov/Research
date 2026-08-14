@@ -23,7 +23,7 @@ jobs:
         run: |
           rm -rf /tmp/1peter-handoff
           set +e
-          OUTPUT="$(python 1_PETER_BOT/scripts/validate_product_handoff.py --emit-dir /tmp/1peter-handoff 2>&1)"
+          OUTPUT="$(python 1_PETER_BOT/scripts/validate_product_handoff_ci.py --emit-dir /tmp/1peter-handoff 2>&1)"
           CODE=$?
           set -e
           printf '%s\n' "$OUTPUT"
@@ -50,4 +50,13 @@ jobs:
           assert s['prototype_count'] == 64
           assert s['overclaim_blacklist_records'] == 144
           assert s['ranking_admitted'] == 0
+          summary = (
+              f"Ch4={s['chapter4']} Ch5={s['chapter5']} HOLD={s['current_holds']} "
+              f"competitive={s['competitive_candidates']} prototypes={s['prototype_count']} "
+              f"prototype_classes={s['prototype_classification_counts']} "
+              f"blacklist={s['overclaim_blacklist_records']} ranking={s['ranking_admitted']} "
+              f"ranking_discrepancies={s['ranking_discrepancy_candidates']} "
+              f"source_identities={s['source_identity_records']} inspection_edges={s['claim_source_inspection_edges']}"
+          )
+          print(f"::notice title=1 Peter handoff audit summary::{summary}")
           PY
