@@ -40,7 +40,7 @@
       "role": "official_textual_criticism_control",
       "inspectionScope": "official_intf_pages_inspected",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "INTF-level statements about ECM Catholic Letters, NA28 changes, split primary lines and CBGM; not a substitute for exact apparatus inspection at a specific verse."
     },
     {
@@ -50,7 +50,7 @@
       "role": "textual_criticism_method",
       "inspectionScope": "official_method_page_inspected",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "Methodological guidance; Acts examples do not directly prove Catholic-Letters readings."
     },
     {
@@ -140,7 +140,7 @@
       "role": "peer_reviewed_isaiah_text_critical_control",
       "inspectionScope": "official_journal_issue_abstract_and_conclusion_summary_inspected",
       "accessState": "PARTIAL_OBJECT",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "Six target Isaiah quotations and article-level conclusion may be described; detailed argument/page attribution requires article-body inspection."
     },
     {
@@ -160,7 +160,7 @@
       "role": "peer_reviewed_mission_audience_control",
       "inspectionScope": "open_fulltext_article_page_inspected",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "Supports Stenschke's Gentile-audience/mission/identity argument as scholarship; does not make that reconstruction a direct textual fact."
     },
     {
@@ -170,7 +170,7 @@
       "role": "peer_reviewed_ot_ethics_control",
       "inspectionScope": "open_fulltext_route_verified",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "OT/ethics scholarly control; exact claims require section-level citation."
     },
     {
@@ -180,7 +180,7 @@
       "role": "cbgm_methodological_control",
       "inspectionScope": "open_dissertation_summary_inspected",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "Summary-level methodological criticism; not a substitute for ECM data and not a claim that CBGM is invalid."
     },
     {
@@ -270,7 +270,7 @@
       "role": "evangelical_peer_reviewed_proposed_intertext",
       "inspectionScope": "official_jets_bibliographic_and_pdf_route_verified_body_render_failed",
       "accessState": "LINK_ONLY",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "Title/topic verified; Malachi-3 detailed argument remains full-body HOLD."
     },
     {
@@ -280,7 +280,7 @@
       "role": "project_theology_anchor",
       "inspectionScope": "official_current_statement_inspected",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "Institutional/project theology including church-Israel distinction, millennial kingdom, Israel future and elder doctrine; not neutral lexical evidence."
     },
     {
@@ -290,7 +290,7 @@
       "role": "project_hermeneutics_discovery",
       "inspectionScope": "official_archive_index_inspected",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "Article identities/themes verified from archive; article-specific argument requires body inspection."
     },
     {
@@ -300,7 +300,7 @@
       "role": "project_israel_eschatology_position",
       "inspectionScope": "official_current_page_inspected",
       "accessState": "FULL_OBJECT_VERIFIED",
-      "rightsState": "REFERENCE",
+      "rightsState": "RIGHTS_UNKNOWN",
       "claimLimit": "Institutional statement of futuristic/dispensational/premillennial teaching perspective only."
     }
   ],
