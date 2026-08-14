@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3J-MCQ-MANIFEST-2026-08-14",
+  "status": "RESEARCH_PROTOTYPES_NOT_PRODUCTION",
+  "candidate_corpus": {
+    "total": 144,
+    "chapter4": 72,
+    "chapter5": 72,
+    "ready": 52,
+    "ready_noncompetitive": 86,
+    "hold": 6
+  },
+  "prototype_corpus": {
+    "total": 32,
+    "chapter4": 16,
+    "chapter5": 16,
+    "all_competitive_candidate_false": true,
+    "files": [
+      "data/mcq-prototypes-wave3j-001-008.json",
+      "data/mcq-prototypes-wave3j-009-016.json",
+      "data/mcq-prototypes-wave3j-017-024.json",
+      "data/mcq-prototypes-wave3j-025-032.json"
+    ]
+  },
+  "correct_position_sequence": [2,0,3,1,1,3,0,2,3,2,1,0,0,1,2,3,2,3,1,0,1,0,3,2,0,2,1,3,3,1,2,0],
+  "correct_position_counts": {"0":8,"1":8,"2":8,"3":8},
+  "invariants": {
+    "exactly_four_options_per_prototype": true,
+    "all_four_correct_positions_used": true,
+    "exact_balance_8_8_8_8": true,
+    "no_three_identical_correct_positions_consecutively": true,
+    "not_simple_0123_repeating_cycle": true,
+    "runtime_randomness_not_required": true,
+    "source_contract_inherited_from_effective_candidate": true,
+    "candidate_overrides_must_be_applied_before_authoring": true,
+    "prototype_cannot_upgrade_source_inspection_depth": true,
+    "prototype_cannot_remove_do_not_claim_boundary": true,
+    "prototype_is_not_ranking_authorization": true,
+    "prototype_is_not_production_authorization": true
+  },
+  "excluded_hold_topics": [
+    "4:6 final project interpretation",
+    "4:14 official apparatus closure",
+    "4:12-19 final Malachi-3 classification",
+    "5:2 official ECM closure for ἐπισκοποῦντες",
+    "5:2 official ECM closure for κατὰ θεόν",
+    "5:12 official ECM reasoning for στῆτε / ἑστήκατε"
+  ],
+  "authoring_policy": {
+    "wrong_options_are_nearby_misconceptions": true,
+    "absurd_distractors_forbidden": true,
+    "morphology_must_not_become_exegesis": true,
+    "edition_specific_claims_must_name_edition": true,
+    "ot_reuse_must_not_be_flattened_to_verbatim_quotation": true,
+    "project_theology_must_remain_labeled_project": true
+  }
+}
