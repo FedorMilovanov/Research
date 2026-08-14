@@ -33,7 +33,7 @@ jobs:
           if [[ -f 1_PETER_BOT/product_handoff/CURRENT_RELEASE.json ]]; then
             VERIFY_ARGS=(--verify-root 1_PETER_BOT/product_handoff)
           fi
-          python 1_PETER_BOT/scripts/build_product_handoff_release.py \
+          python 1_PETER_BOT/scripts/package_product_handoff_release.py \
             --output-root /tmp/1peter-immutable-handoff \
             "${VERIFY_ARGS[@]}"
       - name: Run adversarial tamper suite
@@ -42,7 +42,9 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
+          import io
           import json
+          import tarfile
           from pathlib import Path
 
           digest = '1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d'
@@ -50,15 +52,21 @@ jobs:
           release = root / 'releases' / digest
           pointer = json.loads((root / 'CURRENT_RELEASE.json').read_text(encoding='utf-8'))
           manifest = json.loads((release / 'release-manifest.json').read_text(encoding='utf-8'))
-          summary = json.loads((release / 'integrity-summary.json').read_text(encoding='utf-8'))
-          claims = json.loads((release / 'claim-digests.json').read_text(encoding='utf-8'))
-          edges = json.loads((release / 'claim-source-edge-ids.json').read_text(encoding='utf-8'))
-          prototypes = json.loads((release / 'prototype-audit.json').read_text(encoding='utf-8'))['records']
-          ranking = json.loads((release / 'ranking-audit.json').read_text(encoding='utf-8'))['records']
+          index = json.loads((release / 'bundle-index.json').read_text(encoding='utf-8'))
+          bundle = (release / 'handoff-release.tar.gz').read_bytes()
+
+          with tarfile.open(fileobj=io.BytesIO(bundle), mode='r:gz') as tar:
+              members = {m.name: tar.extractfile(m).read() for m in tar.getmembers() if m.isfile()}
+          claims = json.loads(members['claim-digests.json'])
+          edges = json.loads(members['claim-source-edge-ids.json'])
+          summary = json.loads(members['integrity-summary.json'])
+          prototypes = json.loads(members['prototype-audit.json'])['records']
+          ranking = json.loads(members['ranking-audit.json'])['records']
 
           assert pointer['research_authority_sha'] == '0142430af8ba80f28e0fd9cde669d32611a1d2af'
           assert pointer['authority_digest_sha256'] == digest
           assert pointer['whole_authority_sha256'] == digest
+          assert pointer['bundle_sha256'] == index['bundle_sha256']
           assert manifest['immutable'] is True
           assert manifest['authority_digest_sha256'] == digest
           assert manifest['whole_authority_sha256'] == digest
@@ -78,6 +86,8 @@ jobs:
               'NONCOMPETITIVE_ONLY': 12,
               'REJECT_AS_PRODUCT_TEMPLATE': 5,
           }
+          assert index['member_count'] == 12
+          assert index['deterministic_bundle_two_run_byte_equivalent'] is True
           assert claims['count'] == 144
           assert len({x['candidate_id'] for x in claims['records']}) == 144
           assert all(len(x['effective_claim_digest']) == 64 for x in claims['records'])
