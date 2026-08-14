@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "corpus": "1_PETER_BOT",
+  "drive_folder_id": "10kZrOw2cB1vAiAsaIwcWb-RDJKUn6s9h",
+  "drive_folder_title": "1 Peter Bot — Source Materials",
+  "status": "ACQUISITION_CANDIDATES_ONLY / NO_BYTES_CLAIMED",
+  "rule": "Do not upload merely because a file is downloadable. Verify public-domain/open rights, exact edition, bytes, and durable-custody value first. Stable public web text normally remains a link rather than a Drive duplicate.",
+  "candidates": [
+    {"source_id":"leighton_1peter","priority":"medium","reason":"Large public-domain pastoral/historical commentary useful for reception and devotional exposition.","status":"LINK_ONLY / RIGHTS_CHECK_BEFORE_ACQUISITION"},
+    {"source_id":"lillie_peter","priority":"high","reason":"500+ page public-domain First/Second Peter commentary suitable for page-pinned historical comparison.","status":"LINK_ONLY / RIGHTS_CHECK_BEFORE_ACQUISITION"},
+    {"source_id":"calvin_catholic_epistles","priority":"medium","reason":"Stable public-domain CCEL web text; durable Drive duplication currently adds little value.","status":"WEB_SUFFICIENT"},
+    {"source_id":"ames_peter","priority":"low","reason":"Historical reception source with stable discovery route; acquire only if exact bytes/locators become useful.","status":"WEB_SUFFICIENT"},
+    {"source_id":"brown_1peter","priority":"high","reason":"About 800 pages; major public-domain First Peter exposition with potential for page-pinned historical witness work.","status":"PARTIAL_OBJECT / RIGHTS_CHECK_BEFORE_ACQUISITION"},
+    {"source_id":"bigg_icc","priority":"high","reason":"350+ page public-domain historical critical commentary; useful for history of exegesis and older Greek discussion.","status":"LINK_ONLY / RIGHTS_CHECK_BEFORE_ACQUISITION"},
+    {"source_id":"hort_1peter","priority":"medium","reason":"About 190 pages of Greek commentary on 1 Peter 1:1–2:17; useful for historical textual/exegetical comparison.","status":"PARTIAL_OBJECT / RIGHTS_CHECK_BEFORE_ACQUISITION"}
+  ],
+  "forbidden_shortcuts": [
+    "Drive presence does not establish rights.",
+    "A public-domain text does not automatically make every modern scan or edition unrestricted.",
+    "Do not mirror modern copyrighted commentaries merely because an unauthorized PDF can be found online.",
+    "Do not claim a durable byte receipt until the exact file has actually been acquired and read back."
+  ]
+}
