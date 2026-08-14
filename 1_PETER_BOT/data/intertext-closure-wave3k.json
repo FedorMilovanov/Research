@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3K-MALACHI-INTERTEXT-CLOSURE-2026-08-14",
+  "passage": "1 Peter 4:12-19",
+  "proposed_background": "Malachi 3:1-5",
+  "classification": "SERIOUS_PROPOSED_PROPHETIC_IMAGERY_BACKGROUND",
+  "confidence": "contested",
+  "formal_quotation": false,
+  "sustained_verbatim_lxx_reuse": false,
+  "exclusive_substructure_established": false,
+  "competitive_candidate": false,
+  "observable_comparison": [
+    {
+      "theme": "fire/testing",
+      "malachi_lxx": "πῦρ χωνευτηρίου / refining-purifying imagery",
+      "first_peter": "πύρωσις πρὸς πειρασμόν",
+      "relationship": "conceptual_and_imagery_overlap_not_same_phrase"
+    },
+    {
+      "theme": "God's dwelling",
+      "malachi_lxx": "ναός",
+      "first_peter": "οἶκος τοῦ θεοῦ",
+      "relationship": "conceptual_temple_house_proposal_not_same_lexeme"
+    },
+    {
+      "theme": "judgment",
+      "malachi_lxx": "κρίσις family in 3:5",
+      "first_peter": "κρίμα in 4:17",
+      "relationship": "related_judgment_semantic_field_not_verbatim_reproduction"
+    }
+  ],
+  "proposal_map": [
+    {
+      "id": "johnson_malachi",
+      "status": "SERIOUS_PUBLISHED_PROPOSAL",
+      "bounded_evidence": "Proctor's accessible peer-reviewed summary precisely maps Johnson's thesis; Johnson full body remains uninspected in current route."
+    },
+    {
+      "id": "liebengood_zechariah",
+      "status": "SERIOUS_ALTERNATIVE_PROPOSAL",
+      "bounded_evidence": "St Andrews official repository abstract explicitly argues Zechariah 9-14 as the substructure for Petrine suffering theology."
+    }
+  ],
+  "effective_candidate_override": "w3q_038",
+  "hold_transition": "HOLD -> READY_NONCOMPETITIVE",
+  "remaining_hold_count": 5,
+  "do_not_claim": [
+    "Peter formally quotes Malachi 3 in 1 Peter 4:12-19",
+    "πύρωσις lexically proves Malachi 3",
+    "οἶκος is the same Greek temple lexeme as Malachi 3 ναός",
+    "Johnson full article was inspected",
+    "Liebengood full critique is card evidence in this wave",
+    "Zechariah 9-14 is therefore proven as the exclusive alternative"
+  ]
+}

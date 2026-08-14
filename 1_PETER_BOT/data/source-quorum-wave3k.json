@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3K-MALACHI-SOURCES-2026-08-14",
+  "status": "RESEARCH_ONLY_FAIL_CLOSED",
+  "sources": [
+    {
+      "source_id": "w3k_lxx_mal3_dbg",
+      "title": "Septuaginta — Malachias 3, Deutsche Bibelgesellschaft web text",
+      "url": "https://www.die-bibel.de/en/bible/LXX%2CKJV/MAL.3",
+      "source_role": "primary_lxx_text",
+      "inspection_scope": "Malachi_3_1_5_full_web_text_inspected",
+      "claim_limit": "May support exact observable LXX wording in Malachi 3:1-5: ναός, πῦρ χωνευτηρίου, refining/purifying language, and κρίσις. May not prove literary dependence of 1 Peter.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PERMISSION_REQUIRED",
+      "holds": []
+    },
+    {
+      "source_id": "w3k_johnson_malachi_1986_partial",
+      "title": "Dennis E. Johnson, Fire in God's House: Imagery from Malachi 3 in Peter's Theology of Suffering",
+      "url": "https://www.galaxie.com/article/jets29-3-04",
+      "source_role": "peer_reviewed_article_partial_body",
+      "inspection_scope": "article_identity_and_opening_methodological_section_inspected_pages_285_to_opening_286",
+      "claim_limit": "May support article identity and Johnson's accessible methodological framing about context and conscious OT allusion. Detailed later argument is not treated as directly inspected through this route.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": ["EVIDENCE_HOLD"]
+    },
+    {
+      "source_id": "w3k_proctor_johnson_summary_1993",
+      "title": "John Proctor, Fire in God's House: Influence of Malachi 3 in the NT",
+      "url": "https://www.galaxie.com/article/jets36-1-02",
+      "source_role": "peer_reviewed_secondary_summary",
+      "inspection_scope": "open_page_9_relevant_summary_section_inspected",
+      "claim_limit": "May support Proctor's explicit summary of Johnson's 1 Peter/Malachi thesis: refining fire in 1:6-7, oikos/temple construal, convergence in 4:12-19, divine presence/purification and judgment moving outward. Full Proctor article beyond the open section remains subscription-blocked.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": []
+    },
+    {
+      "source_id": "w3k_liebengood_standrews_abstract",
+      "title": "Kelly D. Liebengood, Zechariah 9-14 as the substructure of 1 Peter's eschatological program — St Andrews repository",
+      "url": "https://research-repository.st-andrews.ac.uk/handle/10023/1858",
+      "source_role": "institutional_repository_abstract_of_phd_thesis",
+      "inspection_scope": "official_repository_HTML_abstract_and_metadata_inspected",
+      "claim_limit": "May support only what the repository abstract explicitly states: Liebengood argues dependence on Zechariah 9-14 for 1 Peter's suffering theology and says this proposal explains fiery trials, 4:14, the 4:12-19 to 5:1-4 transition and oikos tou theou. It is used only to establish a substantive alternative proposal. Detailed thesis-section criticism of Johnson is not card evidence in this wave because screenshot readback of the PDF failed.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "rights_note": "Repository states items are copyright protected unless otherwise indicated; the PDF is available for personal/research use. No republication claim is made.",
+      "holds": []
+    },
+    {
+      "source_id": "w3k_liebengood_pdf_context_only",
+      "title": "Kelly D. Liebengood PhD thesis PDF — context-only parsed readback",
+      "url": "https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/1858/KellyLiebengoodPhDThesis.pdf?isAllowed=y&sequence=3",
+      "source_role": "research_context_not_card_evidence",
+      "inspection_scope": "parsed_text_relevant_lines_available; mandatory screenshot attempted pages 129-130 but failed with cache miss",
+      "claim_limit": "May guide further research and identify the location of Liebengood's critique of Johnson. Must not be promoted to screenshot-verified passage evidence in this wave.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PRIVATE_STUDY_ONLY",
+      "holds": ["EVIDENCE_HOLD","PUBLICATION_HOLD"]
+    }
+  ]
+}
