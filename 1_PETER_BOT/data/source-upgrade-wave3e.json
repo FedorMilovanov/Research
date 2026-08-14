@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3E-SOURCE-UPGRADE-2026-08-14",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "sources": [
+    {
+      "id": "w3_brown_allotriepiskopos_2006",
+      "title": "Jeannine K. Brown, Just a Busybody? A Look at the Greco-Roman Topos of Meddling for Defining allotriepiskopos in 1 Peter 4:15, Journal of Biblical Literature 125.3 (2006), 549–568",
+      "url": "https://www.researchgate.net/publication/270520565_Just_a_Busybody_A_Look_at_the_Greco-Roman_Topos_of_Meddling_for_Defining_allotriepiskopos_in_1_Peter_415",
+      "role": "peer_reviewed_lexical_social_context_control_4_15",
+      "inspectionScope": "author_uploaded_published_text_relevant_sections_and_conclusion_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Author-uploaded published text was inspected at the introduction, lexical discussion, Greco-Roman meddling analysis, and conclusion. Brown argues that the meddling/interference constellation is the best semantic-social frame and that the term likely concerns movement outside culturally appropriate social boundaries with possible political ramifications. Her proposal is one peer-reviewed argument, not consensus; narrower labels such as informer, revolutionary, embezzler, or errant bishop are not treated as lexically certain. The copyrighted article is not mirrored or reproduced wholesale."
+    }
+  ],
+  "rules": [
+    "AUTHOR_UPLOADED_FULL_TEXT_NE_OPEN_LICENSE",
+    "PEER_REVIEWED_ARTICLE_NE_CONSENSUS",
+    "SOCIAL_TOPOS_NE_NARROW_LEXICAL_EQUIVALENT",
+    "ARTICLE_INSPECTION_NE_PERMISSION_TO_MIRROR"
+  ]
+}
