@@ -40,7 +40,7 @@ CHAPTER_5_MCQS = 32
 CORRECT_POSITION_COUNTS = 16 / 16 / 16 / 16
 ```
 
-The four former textual HOLDs were closed in Wave 3n through the pre-existing ECM-quality scholarly-treatment route. The criterion was not relaxed, and direct dECM witness-table readback is not claimed where it was not performed.
+The four former textual HOLDs were closed in Wave 3n through the pre-existing **peer-reviewed ECM-based textual-critical treatment** route. The criterion was not relaxed, the publication-review route is recorded separately from passage evidence, and direct dECM witness-table readback is not claimed where it was not performed.
 
 ## Source-control principles
 
@@ -52,6 +52,7 @@ The four former textual HOLDs were closed in Wave 3n through the pre-existing EC
 - A named manuscript never decides the initial text by itself.
 - Secondary apparatus never silently becomes ECM.
 - An ECM textual decision does not mean manuscript unanimity.
+- Peer-review status does not substitute for passage evidence.
 - TMS/GTY may define the project's theological position, but never a neutral lexical or manuscript fact.
 
 ## Effective-record rule
