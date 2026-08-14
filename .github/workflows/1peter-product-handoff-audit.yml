@@ -34,6 +34,7 @@ jobs:
           fi
           python - <<'PY'
           import json
+          from collections import defaultdict
           from pathlib import Path
           p = Path('/tmp/1peter-handoff')
           required = {
@@ -59,4 +60,10 @@ jobs:
               f"source_identities={s['source_identity_records']} inspection_edges={s['claim_source_inspection_edges']}"
           )
           print(f"::notice title=1 Peter handoff audit summary::{summary}")
+          pa = json.loads((p/'prototype-audit.json').read_text())
+          by_class = defaultdict(list)
+          for row in pa['records']:
+              by_class[row['classification']].append(row['prototype_id'])
+          details = '; '.join(f"{k}={','.join(v)}" for k,v in sorted(by_class.items()))
+          print(f"::notice title=Prototype classifications::{details}")
           PY
