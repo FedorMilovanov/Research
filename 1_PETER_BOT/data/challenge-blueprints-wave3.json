@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3D-CHALLENGE-BLUEPRINTS-2026-08-14",
+  "status": "RESEARCH_BLUEPRINTS_NOT_FINAL_OPTIONS",
+  "blueprintCount": 16,
+  "blueprints": [
+    {
+      "id": "w3ch_001",
+      "reference": "4:1",
+      "basis": ["w3q_003", "w3q_004"],
+      "skill": "morphology_vs_exegesis",
+      "correctNucleus": "πέπαυται has secure perfect-middle parsing; that parsing alone does not prove sinless perfection.",
+      "distractorFamilies": ["perfect tense automatically means permanent sinlessness", "suffering itself earns forgiveness", "the verb can only mean physical death"],
+      "fairnessGuard": "Every option must distinguish a real grammatical or exegetical inference; no caricature of holiness theology."
+    },
+    {
+      "id": "w3ch_002",
+      "reference": "4:4",
+      "basis": ["w3q_009", "w3q_045"],
+      "skill": "context_sensitive_semantics",
+      "correctNucleus": "Atkinson treats ἐν ᾧ in 4:4 causally; the construction does not have one mechanical function everywhere in 1 Peter.",
+      "distractorFamilies": ["one fixed English gloss in every occurrence", "causal force derived from morphology alone", "4:4 automatically controls 3:19"],
+      "fairnessGuard": "Attribute Atkinson specifically; do not present abstract-level analysis as consensus."
+    },
+    {
+      "id": "w3ch_003",
+      "reference": "4:6",
+      "basis": ["w3q_011", "w3q_012", "w3q_013"],
+      "skill": "disputed_passage_epistemology",
+      "correctNucleus": "νεκροῖς and εὐηγγελίσθη do not by morphology settle when or where the gospel was preached; serious interpretations remain.",
+      "distractorFamilies": ["dative plural proves postmortem evangelization", "aorist passive proves preaching while alive", "4:6 is grammatically identical to 3:19"],
+      "fairnessGuard": "Challenge may ask what the grammar does NOT prove, but must not ask which disputed interpretation is certainly correct."
+    },
+    {
+      "id": "w3ch_004",
+      "reference": "4:7",
+      "basis": ["w3q_015", "w3q_017", "w3q_099"],
+      "skill": "eschatology_text_vs_systematics",
+      "correctNucleus": "ἤγγικεν is secure perfect morphology; the verse's explicit response is sober prayer, not a complete eschatological timetable.",
+      "distractorFamilies": ["perfect tense proves preterism", "near means a calculable date", "verse directly specifies rapture timing"],
+      "fairnessGuard": "Project eschatology may be discussed only as project-level synthesis, never as the lexical answer."
+    },
+    {
+      "id": "w3ch_005",
+      "reference": "4:8 / Prov 10:12",
+      "basis": ["w3q_019", "w3q_100"],
+      "skill": "ot_reuse_classification",
+      "correctNucleus": "1 Pet 4:8 strongly reuses a proverbial/scriptural maxim but visibly differs from LXX Prov 10:12 and should not be called mechanical verbatim quotation.",
+      "distractorFamilies": ["fully verbatim LXX quotation", "no scriptural relation at all", "direct MT translation proven by wording alone"],
+      "fairnessGuard": "Wrong options should differ in reuse classification, not in unrelated verse references."
+    },
+    {
+      "id": "w3ch_006",
+      "reference": "4:10–11",
+      "basis": ["w3q_025", "w3q_091", "w3q_102"],
+      "skill": "gift_stewardship_vs_taxonomy",
+      "correctNucleus": "Speaking and serving organize the exhortation around stewardship and God's glory; the passage does not state that exactly two gifts exist.",
+      "distractorFamilies": ["exactly two spiritual gifts exist", "gift ownership conveys personal status", "divine strength removes human responsibility to serve"],
+      "fairnessGuard": "Do not force cessationism/continuationism into a direct-text card."
+    },
+    {
+      "id": "w3ch_007",
+      "reference": "4:14",
+      "basis": ["w3q_031", "w3q_092", "w3q_093"],
+      "skill": "stable_text_vs_variant_hold",
+      "correctNucleus": "Stable base-text content and morphology can be taught while the expanded Spirit/glory textual unit remains apparatus HOLD.",
+      "distractorFamilies": ["variant expansion is part of checked base text", "one disputed phrase makes whole verse unusable", "ἀναπαύεται parsing determines manuscript originality"],
+      "fairnessGuard": "The correct answer must never require uninspected witness distribution."
+    },
+    {
+      "id": "w3ch_008",
+      "reference": "4:16",
+      "basis": ["w3q_034", "w3q_035", "w3q_036"],
+      "skill": "history_vs_dating_overclaim",
+      "correctNucleus": "Χριστιανός is real social-historical evidence but does not by itself choose Nero/Domitian/Trajan or one official empire-wide persecution regime.",
+      "distractorFamilies": ["term itself proves Trajanic date", "term itself proves Nero", "term has no historical value at all"],
+      "fairnessGuard": "Do not turn Byrley's preferred persecution model into consensus."
+    },
+    {
+      "id": "w3ch_009",
+      "reference": "4:18 / Prov 11:31",
+      "basis": ["w3q_039", "w3q_040"],
+      "skill": "close_lxx_reproduction",
+      "correctNucleus": "4:18 is a very close LXX reproduction and is materially stronger as quotation-level reuse than 4:8.",
+      "distractorFamilies": ["mere thematic echo", "same loose category as 4:8", "close wording proves salvation by works"],
+      "fairnessGuard": "Separate the textual relationship from theological interpretation of μόλις."
+    },
+    {
+      "id": "w3ch_010",
+      "reference": "5:2–3",
+      "basis": ["w3q_048", "w3q_050", "w3q_051", "w3q_106"],
+      "skill": "polity_vs_textual_apparatus",
+      "correctNucleus": "The shepherding command and anti-domination ethics are stable; advanced claims built on ἐπισκοποῦντες or κατὰ θεόν remain apparatus-sensitive.",
+      "distractorFamilies": ["ποιμάνατε alone proves complete denominational polity", "ἐπισκοποῦντες is unqualified original-text certainty", "anti-domination abolishes elder authority"],
+      "fairnessGuard": "No witness list may appear unless exact ECM/critical apparatus was inspected."
+    },
+    {
+      "id": "w3ch_011",
+      "reference": "5:5 / Prov 3:34",
+      "basis": ["w3q_058", "w3q_059", "w3q_107"],
+      "skill": "close_reuse_with_adaptation",
+      "correctNucleus": "The reuse is very close but changes the subject from κύριος in LXX to ὁ θεός in 1 Peter; the motive for that adaptation is not established by the wording alone.",
+      "distractorFamilies": ["fully verbatim including subject", "only thematic similarity", "subject change proves a known authorial motive"],
+      "fairnessGuard": "Test visible wording, not speculative motive."
+    },
+    {
+      "id": "w3ch_012",
+      "reference": "5:6–7",
+      "basis": ["w3q_061", "w3q_062", "w3q_094", "w3q_108"],
+      "skill": "syntax_and_pastoral_guardrail",
+      "correctNucleus": "Casting anxiety is tied to humility and God's care; the text does not say a faithful believer never feels anxiety or must refuse human help.",
+      "distractorFamilies": ["anxiety proves absence of faith", "seeking help contradicts casting care on God", "participle parsing alone proves every syntactic nuance"],
+      "fairnessGuard": "Avoid mental-health shaming disguised as a Bible question."
+    },
+    {
+      "id": "w3ch_013",
+      "reference": "5:8–9",
+      "basis": ["w3q_064", "w3q_088", "w3q_109"],
+      "skill": "explicit_metaphor_vs_background_source",
+      "correctNucleus": "The adversary/devil and roaring-lion metaphor are explicit; one exclusive Jewish, Greco-Roman, arena, or OT background is not textually mandatory.",
+      "distractorFamilies": ["one OT lion passage is grammatically required", "ad bestias is established as the single source", "because devil is named the lion image has no background significance"],
+      "fairnessGuard": "Hallstrom remains abstract/opening-bounded; Byrley is one full evangelical study, not consensus."
+    },
+    {
+      "id": "w3ch_014",
+      "reference": "5:12",
+      "basis": ["w3q_073", "w3q_074", "w3q_075", "w3q_111"],
+      "skill": "epistolary_role_vs_grammar",
+      "correctNucleus": "διὰ Σιλουανοῦ does not by itself prove that Silvanus composed the Greek as Peter's secretary; carrier and amanuensis models require historical argument.",
+      "distractorFamilies": ["διά + person grammatically proves secretary", "polished Greek proves Silvanus composed the letter", "carrier is grammatically impossible"],
+      "fairnessGuard": "Richards/NET preferences must be attributed, not converted into neutral fact."
+    },
+    {
+      "id": "w3ch_015",
+      "reference": "5:13",
+      "basis": ["w3q_076", "w3q_077", "w3q_078", "w3q_080"],
+      "skill": "grammar_history_location_layers",
+      "correctNucleus": "Βαβυλών is the written place-name and συνεκλεκτή is feminine singular; Rome identification and church/woman referent are historical-exegetical questions, not morphology.",
+      "distractorFamilies": ["Βαβυλών lexically means Rome", "feminine form proves Peter's wife", "three historical location theories imply equal probability"],
+      "fairnessGuard": "Do not make a disputed historical identification a faithfulness test."
+    },
+    {
+      "id": "w3ch_016",
+      "reference": "4:6",
+      "basis": ["w3q_013"],
+      "skill": "source_quorum_awareness",
+      "correctNucleus": "A responsible advanced learner should know that the now-dead-after-lifetime-evangelization reading has substantial support, while Horrell 2003 defends a serious postmortem-proclamation alternative; course closure remains HOLD.",
+      "distractorFamilies": ["all serious scholarship agrees on now-dead reading", "all serious scholarship agrees on postmortem preaching", "one recent CC article settles the issue"],
+      "fairnessGuard": "This may become a dispute-awareness card, never a competitive 'which interpretation is true?' card while the project position is HOLD."
+    }
+  ]
+}
