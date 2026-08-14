@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "RESEARCH_HANDOFF_CONTROL",
+  "invariant": "SOURCE_IDENTITY_PACKAGE != CLAIM_INSPECTION_LEDGER",
+  "source_identity_package_fields": [
+    "source_id", "title", "author", "year", "type", "stable_locator", "identity_verification_status"
+  ],
+  "forbidden_identity_fields": [
+    "claim_id", "claim_confidence", "claim_position", "claim_ready", "passage_exegesis_proved", "ranking_ready"
+  ],
+  "claim_inspection_edge_fields": [
+    "candidate_id", "source_id", "evidence_status", "inspection_scope", "owning_lane", "claim_limit", "owner_resolution"
+  ],
+  "owner_resolution": {
+    "MATCHING_OVERRIDE_QUORUM": "A candidate's latest override layer explicitly matches a quorum lane that owns the same source ID.",
+    "BASE_LEDGER_NO_DEPTH_INHERITANCE": "No matching override quorum owns this claim; use the base ledger record and do not inherit a later/deeper lane merely because source_id matches.",
+    "SOLE_EXPLICIT_SOURCE_LANE": "The source exists in exactly one explicit source-control lane."
+  },
+  "fail_closed_conditions": [
+    "candidate source_id resolves nowhere",
+    "multiple same-layer quorum owners for one candidate/source edge",
+    "multiple ledger identity owners with no unambiguous authority",
+    "multiple quorum inspection lanes with no provenance match and no base owner",
+    "product card cannot identify an owning inspection lane"
+  ]
+}
