@@ -1,14 +1,16 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "INDEPENDENT_AUDIT_CONTROL_NOT_AUTHORING",
   "purpose": "Detect product-template distractors that teach false certainty or evidence-laundering even when structurally valid.",
   "rule": "A research prototype may remain useful as research scaffolding while still being NEEDS_REWRITE as a product template. Correct-index balance never excuses a risky distractor.",
   "risk_patterns": [
     {"id":"ABSOLUTE_ALWAYS_NEVER","severity":"rewrite","regex":"(?i)(\\bвсегда\\b|\\bникогда\\b|\\balways\\b|\\bnever\\b)"},
     {"id":"ABSOLUTE_CERTAINTY","severity":"rewrite","regex":"(?i)(несомненно|бесспорно|точно\\b|однозначно|certainly|undisputedly)"},
+    {"id":"GENERIC_PROOF_CLAIM","severity":"rewrite","regex":"(?i)(\\bдоказывает\\b|\\bдоказывают\\b|\\bproves\\b)"},
     {"id":"LEXICAL_EXCLUSIVITY","severity":"rewrite","regex":"(?i)(обязательно означает|исключительно означает|означает исключительно|единственн(?:ый|ая|ое|ую) смысл|lexically requires)"},
     {"id":"GRAMMAR_REQUIRES_EXEGESIS","severity":"rewrite","regex":"(?i)(грамматически требует|morphology .*требует|морфологически требует|grammar requires)"},
     {"id":"AUTOMATIC_PROOF","severity":"rewrite","regex":"(?i)(автоматически доказывает|автоматически устанавливает|само по себе доказывает|automatically proves)"},
+    {"id":"EXCLUSION_CERTAINTY","severity":"rewrite","regex":"(?i)(обязательно исключает|исключает любые|полностью исключает|necessarily excludes)"},
     {"id":"MANUSCRIPT_UNANIMITY","severity":"rewrite","regex":"(?i)(все(?:х)? (?:древн(?:их|ие) )?рукопис|all manuscripts|every manuscript)"},
     {"id":"CONSENSUS_TOTALIZATION","severity":"rewrite","regex":"(?i)(все серь[её]зные исследователи|академический consensus|scholarly consensus .*един|all serious scholars)"},
     {"id":"APPARATUS_UNNEEDED","severity":"rewrite","regex":"(?i)(apparatus больше не нужен|аппарат(?:ус)? больше не нужен|аппарат не нужен)"},
