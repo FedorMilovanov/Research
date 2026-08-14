@@ -1,6 +1,6 @@
 # Angel-model stress matrix — 1 Cor 11:10
 
-**Дата:** 2026-08-11  
+**Дата:** 2026-08-14  
 **Статус:** `MODEL-STRESS-TEST / PRIMARY-CORPUS-CONTROL / SOURCE-PROVENANCE / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Method
@@ -132,6 +132,43 @@ CORE_GRADE_REVERSALS = 0
 ```
 
 Tolmie therefore strengthens the provenance of the leading heavenly/worship-presence family **and** independently supports keeping the exact function open. It does not warrant turning “angels are present in worship” into a fully specified causal mechanism for the head state.
+
+## 3.3 Mieczysław C. Paczkowski 2023 — direct patristic-reception full-body control
+
+Mieczysław C. Paczkowski OFM, “Wątki angelologiczne w egzegezie patrystycznej 1Kor 11,10,” *Vox Patrum* 88 (2023): 195–226. DOI `10.31743/vp.15533`.
+
+The official KUL / *Vox Patrum* full PDF text has been directly acquired and read. Paczkowski is especially useful as a **reception-provenance control**, because the article maps more than one ancient Christian trajectory rather than collapsing the history into a single explanation of Paul.
+
+Body-level synthesis supports at least two important early streams:
+
+1. a Genesis 6 / fallen-angels trajectory, especially in Tertullianic reception;
+2. a heavenly-angels-present-at-worship trajectory, notably in Origenian reception;
+3. later reception also develops authority/guardian and related angelological specializations.
+
+This creates a deliberate fail-closed boundary:
+
+```text
+PACZKOWSKI_2023_OFFICIAL_FULL_PDF_TEXT = CLOSED_DIRECT
+PACZKOWSKI_2023 = PATRISTIC_RECEPTION_SYNTHESIS
+PACZKOWSKI_GEN6_FALLEN_ANGEL_STREAM = DIRECT_SYNTHESIS_CONTROL
+PACZKOWSKI_HEAVENLY_ANGELS_WORSHIP_STREAM = DIRECT_SYNTHESIS_CONTROL
+PACZKOWSKI_LATER_GUARDIAN_AUTHORITY_STREAMS = DIRECT_SYNTHESIS_CONTROL
+PACZKOWSKI_SYNTHESIS != PRIMARY_FATHER_TEXT
+PATRISTIC_MULTIPLICITY != PAULINE_EXACT_FUNCTION_SOLVED
+```
+
+Effect on the current model map:
+
+```text
+HEAVENLY_HOLY_ANGELS_REFERENT = B_HIGH_LEADING_UNCHANGED
+ANGELS_AS_COSMIC_WITNESSES_PRESENT_ASSEMBLY = B_LEADING_UNCHANGED
+WATCHERS = C_SERIOUS_UNCHANGED
+GUARDIAN_ANGELS = C_LOW_UNCHANGED
+EXACT_ANGELIC_FUNCTION = B_C_UNCHANGED
+CORE_GRADE_REVERSALS = 0
+```
+
+Paczkowski therefore strengthens provenance for **multiple ancient competing interpretations**. That is evidence against false certainty about the exact causal mechanism, not a reason to average the models or promote a reception stream merely because it is ancient.
 
 ---
 
@@ -335,6 +372,8 @@ ANGELS_AS_COSMIC_WITNESSES_PRESENT_ASSEMBLY = B_LEADING
 EXACT_ANGELIC_FUNCTION = B_C
 WATCHERS = C_SERIOUS
 ARAUJO_2008 = COMPLETE_PUBLISHED_WATCHERS_BODY_CLOSED_PRESERVED_EPAPER
+PACZKOWSKI_2023_OFFICIAL_FULL_PDF_TEXT = CLOSED_DIRECT
+PACZKOWSKI_2023 = PATRISTIC_PROVENANCE_CONTROL / MULTIPLE_ANCIENT_STREAMS / NO_EXACT_FUNCTION_PROMOTION
 HOOKER_MISDIRECTED_WORSHIP_FUNCTION = D_C_LOW_TO_C_PUBLISHED_ALTERNATIVE
 GUARDIAN_ANGELS = C_LOW
 HUMAN_MESSENGERS = D_C_LOW
