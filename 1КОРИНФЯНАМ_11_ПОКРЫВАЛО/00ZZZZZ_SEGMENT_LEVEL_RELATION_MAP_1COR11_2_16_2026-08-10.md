@@ -126,12 +126,14 @@ Confidence grades inside node-calibration blocks remain controlled by `CURRENT_C
 
 ---
 
-## 6. Historical reconstruction edges
+## 6. Historical/contextual reconstruction edges
 
-| Text node | Historical proposal | Type | Rule |
+| Text node | Historical/contextual proposal | Type | Rule |
 |---|---|---|---|
 | V04B | Roman male `capite velato` ritual/status | HISTORICAL_B_C | `ROMAN_CAPITE_VELATO_BACKGROUND = A`; exact identification of v4 with this ritual = `B_C`; exact Corinthian trigger remains reconstruction |
 | V04B | Judaizing male prayer covering | HISTORICAL_D_C | record, do not promote |
+| V05A | public gathered-church prayer/prophecy setting | EXEGETICAL_B | `PUBLIC_GATHERED_CHURCH_SETTING_11_5 = B_HIGH_LEADING`; supported by 11–14 literary context, congregational function of prophecy and independent Baum 2014 direct-body control |
+| V05A | private/nonchurch prayer/prophecy setting | EXEGETICAL_C | `C_SERIOUS_HARMONIZING_ALTERNATIVE`; real Holmyard-type countermodel, but depends materially on harmonization with broader speech-restriction texts rather than an explicit private-setting signal in v5 |
 | V05B/V06A | female veil as matronly/modesty/status marker | HISTORICAL_B_C | contextual status significance is serious; no one universal female veil law or exact local trigger is proved |
 | V05A/V08A/V12A–B | free(d)-married-wives as primary practical scope | HISTORICAL_B_C | Callon/Massey provide a serious marital/status reconstruction, but practical all-women scope is now B-leading in the current registry and v12 resists one rigid wife/husband gloss |
 | V05D/V06B | shaved woman = prostitute/adulteress | NEGATIVE_BOUNDARY | do not universalize; evidence insufficient for blanket equation |
@@ -142,15 +144,41 @@ Confidence grades inside node-calibration blocks remain controlled by `CURRENT_C
 
 ---
 
-## 7. Contested semantic nodes
+## 7. Contested semantic/contextual nodes
 
 ### `κεφαλή` V03
 
 ```text
-HEADSHIP/AUTHORITY/PREDOMINANCE -> B_LEADING
-SOURCE/ORIGIN ONLY              -> C_VIABLE
-PROMINENCE                      -> C/B depending formulation
-ONE_FIXED_LEXICAL_GLOSS         -> prohibited
+RELATIONAL_HEADSHIP/PROMINENCE/REPRESENTATION -> B_LEADING
+EXACT_NARROW_AUTHORITY_OVER                    -> B_C
+SOURCE/ORIGIN_ONLY                             -> C_VIABLE
+ONE_FIXED_LEXICAL_GLOSS                        -> prohibited
+```
+
+Machine boundaries:
+
+```text
+KEPHALE_RELATIONAL_HEADSHIP_B_LEADING != KEPHALE_LEXICALLY_MEANS_AUTHORITY_OVER
+KEPHALE_SOURCE_DIMENSION_IN_VV8_12 != KEPHALE_SOURCE_ONLY_PROVED_IN_V3
+```
+
+### 11:5 setting and speech-function boundary
+
+```text
+WOMAN_PRAYS_OR_PROPHESIES                 -> A_TEXT
+PUBLIC_GATHERED_CHURCH_SETTING            -> B_HIGH_LEADING
+PRIVATE_OR_NONCHURCH_SETTING              -> C_SERIOUS_HARMONIZING_ALTERNATIVE
+PASTOR_ELDER_ORDINATION_FROM_V5_ALONE     -> REJECTED_SCOPE_ERROR
+```
+
+Baum 2014 is useful here precisely because his own canonical model is not built on an unrestricted-female-speech premise: he can read 14:34–35 as a broad restriction in its reconstructed conflict while still reading 11:5 as actual public female prayer/prophecy in the gathered church. That makes public setting an independent contextual control rather than a conclusion imported from one modern office debate.
+
+Machine boundaries:
+
+```text
+PUBLIC_GATHERED_SETTING_B_HIGH != OFFICE_CONCLUSION
+PUBLIC_GATHERED_SETTING_B_HIGH != EVERY_PUBLIC_SPEECH_FUNCTION_IDENTICAL
+PRIVATE_SETTING_C != TEXT_EXPLICITLY_SAYS_PRIVATE
 ```
 
 ### practical scope — `ἀνήρ / γυνή`
@@ -183,7 +211,8 @@ EXACT_MODERN_GARMENT_FORM -> HOLD / not reconstructable at A
 WOMAN = GRAMMATICAL_SUBJECT            -> A_SYNTAX
 AUTHORITY/RIGHT/POWER_SEMANTIC_CLASS   -> A_B_HIGH
 ACTIVE_WOMAN_BEARER_PULL               -> B_HIGH
-EXACT_REFERENT                         -> B_C
+HEAD/HEAD-STATE_AS_CONTROL_DOMAIN      -> B_LEADING_RELATION
+EXACT_SOCIAL_REALIZATION/REFERENT      -> B_C
 SIGN_OF_HUSBAND'S_AUTHORITY_PARAPHRASE -> C_WITH_EXTRA_SEMANTIC_STEPS
 LEXICALLY = VEIL                       -> prohibited
 ```
@@ -221,6 +250,12 @@ BISHOPS_CLERGY                              -> D_C_LOW_RECEPTION
 CERTAIN_IDENTITY_OR_FUNCTION                -> prohibited
 ```
 
+Paczkowski 2023 now supplies direct full-body **patristic-reception provenance** for multiple ancient trajectories, including fallen-angel and worship-presence streams. It does not select the exact Pauline function.
+
+```text
+PACZKOWSKI_PATRISTIC_MULTIPLICITY != PAULINE_EXACT_FUNCTION_SOLVED
+```
+
 ### `φύσις` V14
 
 ```text
@@ -234,11 +269,11 @@ PURE_ARBITRARY_CUSTOM_ONLY          -> rejected
 ### `τοιαύτην συνήθειαν` V16
 
 ```text
-TRANS_LOCAL_CHURCH_PRACTICE_APPEAL       -> A_TEXT
+TRANS_LOCAL_CHURCH_PRACTICE_APPEAL        -> A_TEXT
 V16_ECCLESIAL_EXHORTATIVE_NORMATIVE_FORCE -> B_HIGH
-V16_NO_CONTRARY_ALTERNATIVE_PRACTICE     -> B_LEADING
-EXACT_REFERENT                            -> B_C
-CANCELS_VV2_15                            -> D_C_LOW
+V16_NO_CONTRARY_ALTERNATIVE_PRACTICE      -> B_LEADING
+EXACT_REFERENT                             -> B_C
+CANCELS_VV2_15                             -> D_C_LOW
 ```
 
 Machine boundaries:
@@ -281,8 +316,10 @@ TRANS-LOCAL CHURCH PRACTICE CLOSURE (v16)
 
 ```text
 HEAD_RELATIONS -> EXACT_GARMENT_MEANING = NOT_DIRECT_SYNTAX
+KEPHALE_RELATIONAL_HEADSHIP -> NARROW_AUTHORITY_OVER_LEXICAL_GLOSS = INVALID_SHORTCUT
+PUBLIC_GATHERED_SETTING_11_5 -> PASTOR_ELDER_ORDINATION = INVALID_SHORTCUT
 ROMAN_CAPITE_VELATO -> V4_EXACT_PROBLEM = HISTORICAL_B_C, while the background fact itself is A
-QUMRAN_ANGELIC_ASSEMBLY -> PAULS_EXACT_ANGEL_FUNCTION = NOT_DIRECT_IDENTITY
+QUMRAN_OR_PATRISTIC_ANGEL_STREAM -> PAULS_EXACT_ANGEL_FUNCTION = NOT_DIRECT_IDENTITY
 ACTIVE_EXOUSIA_SEMANTICS -> ONE_EXACT_SOCIAL_REFERENT = INVALID_SHORTCUT
 ALL_WOMEN_SCOPE -> EVERY_TOKEN_NON_MARITAL = INVALID_SHORTCUT
 V16_ECCLESIAL_NORM -> FORMAL_IDENTICAL_GARMENT_COMMAND = INVALID_SHORTCUT
