@@ -19,9 +19,19 @@ jobs:
         with:
           python-version: '3.12'
       - name: Derive and validate effective handoff
+        shell: bash
         run: |
           rm -rf /tmp/1peter-handoff
-          python 1_PETER_BOT/scripts/validate_product_handoff.py --emit-dir /tmp/1peter-handoff
+          set +e
+          OUTPUT="$(python 1_PETER_BOT/scripts/validate_product_handoff.py --emit-dir /tmp/1peter-handoff 2>&1)"
+          CODE=$?
+          set -e
+          printf '%s\n' "$OUTPUT"
+          if [ "$CODE" -ne 0 ]; then
+            ONE_LINE="$(printf '%s' "$OUTPUT" | tr '\n' ' ' | head -c 3000)"
+            echo "::error title=1 Peter handoff audit failed::$ONE_LINE"
+            exit "$CODE"
+          fi
           python - <<'PY'
           import json
           from pathlib import Path
