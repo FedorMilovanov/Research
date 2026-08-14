@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3I-MANUSCRIPT-SOURCES-2026-08-14",
+  "status": "RESEARCH_ONLY_FAIL_CLOSED",
+  "sources": [
+    {
+      "source_id": "w3i_sinaiticus_1p4_5",
+      "title": "Codex Sinaiticus official transcription — 1 Peter 4:1–5:13, BL folio 320b",
+      "url": "https://codexsinaiticus.org/en/manuscript.aspx?book=53&chapter=4&verse=15",
+      "source_role": "primary_manuscript_transcription",
+      "inspection_scope": "official_continuous_transcription_relevant_lines_inspected_1Peter4_14_4_16_5_2_5_10_5_12_5_13",
+      "claim_limit": "May support exactly what Codex Sinaiticus reads in the inspected units, including the 4:14 power expansion, 4:16 ὀνόματι, omission of ἐπισκοποῦντες with retention of κατὰ θεόν at 5:2, four verbs at 5:10, στῆτε at 5:12, and the explicit ἐκκλησία in 5:13. It cannot establish the full manuscript distribution or the reconstructed Ausgangstext by itself.",
+      "access_state": "FULL_OBJECT_VERIFIED",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": ["PUBLICATION_HOLD"]
+    },
+    {
+      "source_id": "w3i_sinaiticus_1p5_13_14",
+      "title": "Codex Sinaiticus official transcription — 1 Peter 5:13–14 / 2 Peter opening, BL folio 321",
+      "url": "https://codexsinaiticus.org/en/manuscript.aspx?__VIEWSTATEGENERATOR=01FB804F&dir=next&folioNo=4&lid=en&quireNo=89&side=v&zoomSlider=0",
+      "source_role": "primary_manuscript_transcription",
+      "inspection_scope": "official_transcription_1Peter5_13_14_inspected",
+      "claim_limit": "May support the continuation of Sinaiticus 5:13–14, including βαβυλῶνι ἐκκλησία συνεκλεκτή and the kiss-of-love ending. It is a named-witness fact, not a critical-text decision.",
+      "access_state": "FULL_OBJECT_VERIFIED",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": ["PUBLICATION_HOLD"]
+    }
+  ]
+}
