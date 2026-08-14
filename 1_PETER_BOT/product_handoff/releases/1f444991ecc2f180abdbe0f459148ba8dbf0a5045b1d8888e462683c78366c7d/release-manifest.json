@@ -1,0 +1,51 @@
+{
+  "authority_digest_definition": "SHA-256 stable hash of the ordered 144 (candidate_id, effective_claim_digest) pairs derived from effective Research records.",
+  "authority_digest_sha256": "1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d",
+  "counts": {
+    "chapter4": 72,
+    "chapter5": 72,
+    "claim_source_inspection_edges": 282,
+    "competitive_candidates": 0,
+    "current_holds": 0,
+    "source_identity_records": 112,
+    "total": 144
+  },
+  "determinism": "TWO_INDEPENDENT_CANONICAL_GENERATOR_RUNS_BYTE_EQUIVALENT",
+  "generator": "1_PETER_BOT/scripts/build_product_handoff_release.py",
+  "immutable": true,
+  "payload_file_sha256": {
+    "chapter4-product-handoff.json": "a424578365cf5fc88d634a471e1502ae4aaa89e8af9ec53fd880ab05c887a631",
+    "chapter5-product-handoff.json": "07d4283650c7f989a5cb7d982de177c248133a748ea0fec94d97998db43a6a47",
+    "claim-digests.json": "19371e2a8ee53a1da1454145a1db143315f22d36625f1c87db63630afda17e06",
+    "claim-inspection-manifest.json": "97777e6babe54a8e9da3c521e56966a93f7246b22181a5c1d3760eabae46d7f2",
+    "claim-overclaim-blacklist.json": "c1f561d5fc3c6c0309bf189923fb44532db5cb2e5b2871ee46683d56277e67d8",
+    "claim-source-edge-ids.json": "8c4a16d66c6794bcc7669e4ab327596782af582ce8164b058802f738ccf88a6c",
+    "integrity-summary.json": "df5b4106e4e8d6da1f0905ebf89337d07e24f2a4f5177d0e7636595a079c0188",
+    "prototype-audit.json": "01b394343d05f4b90c6178436a4e3e1280a5ce4e1642ca8bdfe75b1c28464b31",
+    "ranking-audit.json": "7ee4865ad2e08fc576f016bcae5966788ae27ea250d86ec4a3ceaeff86f76926",
+    "semantic-boundary-policy.json": "24c4793290c452e6032430ea82b3aecc8140dd3d06e16b3c052c45aa122bc2ca",
+    "source-identity-package.json": "4f772b57bd2900af4ff5fe635ff51a74345261a8b537f08e228029ddacf12524"
+  },
+  "prototype_disposition_counts": {
+    "COURSE_POSITION_ONLY": 2,
+    "NEEDS_REWRITE": 19,
+    "NONCOMPETITIVE_ONLY": 12,
+    "REJECT_AS_PRODUCT_TEMPLATE": 5,
+    "SAFE": 26
+  },
+  "reference_drift_prototype_ids": [
+    "w3mcq_003",
+    "w3mcq_020",
+    "w3mcq_027",
+    "w3mcq_037",
+    "w3mcq_047"
+  ],
+  "release_format_version": 1,
+  "release_id": "1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d",
+  "release_path": "1_PETER_BOT/product_handoff/releases/1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d",
+  "release_payload_sha256": "8c1c1f73e9cd2de92be61ff6d551c3b839359cfd125059ff035dea5f2c389bdf",
+  "research_authority_sha": "0142430af8ba80f28e0fd9cde669d32611a1d2af",
+  "schema_version": 2,
+  "w3q_123_disposition": "NO_PRODUCT_RANKING_ADMISSION",
+  "whole_authority_sha256": "1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d"
+}
