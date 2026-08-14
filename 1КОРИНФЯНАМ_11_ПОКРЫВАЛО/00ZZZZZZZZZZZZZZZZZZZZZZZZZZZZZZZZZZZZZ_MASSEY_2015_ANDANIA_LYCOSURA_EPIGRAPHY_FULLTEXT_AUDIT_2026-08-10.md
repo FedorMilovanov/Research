@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:2–16 — Andania / Lycosura direct epigraphy + Massey 2015 owner
 
-**Дата:** 2026-08-10  
+**Дата:** 2026-08-14  
 **Статус:** `DIRECT-EPIGRAPHY-OWNER / MASSEY-FULLTEXT / ANDANIA-PHI-CGRN / LYCOSURA-CORRECTED / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority / self-correction rule
@@ -342,14 +342,16 @@ Cosgrove remains a separate social-history control; do not use actual unbound-ha
 
 ```text
 CORE_GRADE_REVERSALS = 0
+SCOPE_GRADE_PROMOTIONS = 1_ALL_WOMEN
 MATERIAL_COVERING = B_HIGH_LEADING
 HAIR_ONLY = C_SERIOUS_ALTERNATIVE
 HAIR_AS_NATURAL_ANALOGY = B_HIGH
 EXACT_CORINTH_TRIGGER = RECONSTRUCTION_LAYER
-WIVES_VS_ALL_WOMEN = OPEN_B_C
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
 ```
 
-The inscriptions strengthen evidence discipline and comparative complexity, not a single total model.
+The inscriptions strengthen evidence discipline and comparative complexity, not a single total model. Status-sensitive comparative evidence keeps the marital/free(d)-wives reconstruction serious, but it no longer owns a co-leading `OPEN_B_C` project state after the broader discourse/cross-status stress.
 
 ---
 
@@ -373,6 +375,7 @@ RITUAL_COMPARAND != PAULS_DIRECT_SOURCE
 
 ```text
 CORE_GRADE_REVERSALS = 0
+SCOPE_GRADE_PROMOTIONS = 1_ALL_WOMEN
 MASSEY_2015_DIRECT_FULLTEXT = CLOSED
 ANDANIA_DIRECT_INSCRIPTION = CLOSED
 ANDANIA_HIERAI_WHITE_PILOS = A_EPIGRAPHIC
@@ -382,6 +385,8 @@ LYCOSURA_DIRECT_TEXT = CLOSED
 LYCOSURA_MALE_ONLY_DIRECT_FACT = REJECTED_OVERCLAIM
 LYCOSURA_EXACT_GENDER_MAPPING = OPEN
 HAIR_AND_HEADWEAR_DISTINCT_REGULATORY_AXES = A_B_HIGH_COMPARATIVE
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
 ```
