@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:2–16 — current commentary acquisition 2025
 
 **Статус:** `EVERGREEN-DOSSIER / CURRENT-COMMENTARIES / MULTILINGUAL-ACQUISITION / REGIONAL-LIBRARY-ROUTES / PAGINATION-CONTROL / TRANSPORT-LEDGER / RESEARCH-ONLY / PUBLICATION-HOLD`  
-**Последнее обновление:** 2026-08-11
+**Последнее обновление:** 2026-08-14
 
 ## 0. Authority rule
 
@@ -26,13 +26,24 @@ TERMINAL_EXTERNAL_ACCESS_HOLD != CLAIM_REFUTED
 TERMINAL_EXTERNAL_ACCESS_HOLD = STOP_REPEATING_THE_SAME_TESTED_ROUTE
 ```
 
-## 0.1 Multilingual acquisition rule — ACTIVE 2026-08-11
+## 0.1 Multilingual / regional acquisition protocol — KNOWN-ROUTE SWEEP DISPOSITIONED 2026-08-14
 
-The English-first audit reached real route-level ceilings, but Fee/Winter and later regional-catalog discoveries show that an English public-preview ceiling is not a global acquisition ceiling.
+The English-first audit reached real route-level ceilings, and Fee/Winter plus later regional-catalog discoveries demonstrated that an English public-preview ceiling is not automatically a global acquisition ceiling. Those materially distinct language/regional routes have now themselves been tested and classified. They remain valuable provenance and human-access lanes, but they no longer constitute an active agent search queue.
 
 ```text
-ENGLISH_PUBLIC_ROUTE_EXHAUSTED != MULTILINGUAL_ROUTE_EXHAUSTED
-ENGLISH_PUBLIC_ROUTE_EXHAUSTED != REGIONAL_LIBRARY_ROUTE_EXHAUSTED
+ENGLISH_KNOWN_ROUTE_AUDIT = DISPOSITION_COMPLETE
+MULTILINGUAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+REGIONAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+CURRENT_KNOWN_PUBLIC_AGENT_QUEUE_EMPTY = true
+NEW_USER_PROVIDED_BODY = REOPEN_TRIGGER
+NEW_RENDERABLE_AUTHORIZED_ROUTE = REOPEN_TRIGGER
+NEW_MATERIALLY_DISTINCT_SOURCE = REOPEN_TRIGGER
+REPEATING_ALREADY_TESTED_ROUTE = NOT_REOPEN_TRIGGER
+```
+
+```text
+ENGLISH_PUBLIC_ROUTE_EXHAUSTED != MULTILINGUAL_ROUTE_EXHAUSTED_IN_PRINCIPLE
+ENGLISH_PUBLIC_ROUTE_EXHAUSTED != REGIONAL_LIBRARY_ROUTE_EXHAUSTED_IN_PRINCIPLE
 LANGUAGE_OF_ACCESS != SOURCE_EDITION
 LANGUAGE != EVIDENCE_GRADE
 PUBLISHED_TRANSLATION_OF_VERIFIED_TARGET_EDITION = AUTHOR_POSITION_BODY_CAPABLE
@@ -51,7 +62,7 @@ A published translation can close the author's substantive position for the edit
 
 ### Search lanes
 
-Every high-value terminal target receives a bounded reopen pass using:
+When a genuinely new reopen trigger appears, use a bounded pass such as:
 
 ```text
 SPANISH = muestra | vista previa | edición revisada | texto completo | biblioteca | préstamo
@@ -83,7 +94,7 @@ Query construction combines at least two of:
 6. ILL / Subito / licensed-fulltext record as an access route, not as body evidence
 7. Google Books only for metadata / TOC / locator navigation unless actual target pages render
 8. quote author only after direct target body is visible
-9. terminalize a LANGUAGE/REGIONAL LANE only after materially distinct lawful routes are tested
+9. terminalize a LANGUAGE/REGIONAL LANE after materially distinct lawful routes are tested
 ```
 
 Do not infer a translation from a localized interface. A Spanish/Portuguese/German UI around an English book is still the English edition unless the bibliographic object says otherwise.
@@ -124,9 +135,9 @@ Commentary 7 = Hair and Head Coverings in the Assembly (11:2–16)
 
 English Brill/Google routes expose architecture, not readable pp.432–451.
 
-### 1.1 New German regional-library lane
+### 1.1 German regional-library lane
 
-IxTheo now supplies a materially distinct route for the exact 2025 book:
+IxTheo supplies a materially distinct route for the exact 2025 book:
 
 ```text
 IXTHEO_RECORD = 1 Corinthians / Reasoner, Mark / Brill 2025
@@ -139,20 +150,20 @@ SUBITO_DELIVERY = AVAILABLE_ROUTE
 TABLE_OF_CONTENTS = LINKED
 ```
 
-This is not target body in the current runtime, but it is a **new institutional acquisition lane** that was not represented by the earlier publisher-preview sweep.
+This is not target body in the current runtime; it is a verified institutional acquisition lane rather than body closure.
 
 ```text
 REASONER_OFFICIAL_CHAPTER_IDENTITY = CLOSED
 REASONER_DIRECT_11_2_16_BODY = NOT_YET_ACQUIRED
 REASONER_ENGLISH_PUBLIC_PREVIEW_LANE = TERMINAL
-REASONER_GERMAN_REGIONAL_ILL_LANE = VERIFIED_NEW_ROUTE
+REASONER_GERMAN_REGIONAL_ILL_LANE = VERIFIED_ROUTE / HUMAN_OR_INSTITUTIONAL_ACCESS
 REASONER_VEIL_HAIR_POSITION = NOT_DIRECTLY_VERIFIED
 REASONER_KEPHALE_POSITION = NOT_DIRECTLY_VERIFIED
 REASONER_EXOUSIA_POSITION = NOT_DIRECTLY_VERIFIED
 REASONER_ANGELS_POSITION = NOT_DIRECTLY_VERIFIED
 REASONER_PHYSIS_POSITION = NOT_DIRECTLY_VERIFIED
 REASONER_V16_POSITION = NOT_DIRECTLY_VERIFIED
-REASONER_MULTILINGUAL_REGIONAL_REOPEN = ACTIVE
+REASONER_MULTILINGUAL_REGIONAL_REOPEN = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 ```
 
 Circulated p.434/p.444 wording remains unverified. A secondary p.343 claim cannot belong to 11:3 in this edition and stays quarantined.
@@ -194,10 +205,10 @@ GORMAN_VEIL_HAIR_POSITION = NOT_DIRECTLY_VERIFIED
 GORMAN_KEPHALE_POSITION = NOT_DIRECTLY_VERIFIED
 GORMAN_EXOUSIA_POSITION = NOT_DIRECTLY_VERIFIED
 GORMAN_ANGELS_POSITION = NOT_DIRECTLY_VERIFIED
-GORMAN_MULTILINGUAL_REGIONAL_REOPEN = ACTIVE
+GORMAN_MULTILINGUAL_REGIONAL_REOPEN = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 ```
 
-First Spanish/Portuguese title-author passes found no verified translated edition. That is bounded only.
+First Spanish/Portuguese title-author passes found no verified translated edition. That result is bounded only.
 
 ---
 
@@ -226,7 +237,7 @@ STARLING_SPANISH_LOGOS_UI = SAME_ENGLISH_RESOURCE / NOT_TRANSLATION
 STARLING_PREVIEW_TARGET_SECTION = NOT_EXPOSED
 STARLING_2025_1COR11_POSITION = NOT_DIRECTLY_VERIFIED
 STARLING_DIRECT_QUOTE = FORBIDDEN_UNTIL_SECTION_ACQUIRED
-STARLING_MULTILINGUAL_REGIONAL_REOPEN = ACTIVE
+STARLING_MULTILINGUAL_REGIONAL_REOPEN = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 ```
 
 First Portuguese/Spanish translation searches found no verified translated edition.
@@ -310,7 +321,7 @@ FEE_1987_FIRST_EDITION_DIRECT_BODY = CLOSED_DIRECT
 FEE_1987_SPANISH_1994 != FEE_2014_REVISED_BODY
 FEE_1987_PAGINATION != FEE_2014_PAGINATION
 FEE_1987_WORDING != FEE_2014_WORDING_AUTOMATICALLY
-FEE_2014_MULTILINGUAL_REOPEN = ACTIVE
+FEE_2014_MULTILINGUAL_REOPEN = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 FEE_2014_TARGET_EXPOSITION_BODY = STILL_NOT_DIRECTLY_ACQUIRED
 ```
 
@@ -328,7 +339,7 @@ CIAMPA_ROSNER_2010_PP503_540 = TARGET_RANGE
 
 First Spanish/Portuguese title-author search found no verified published translation of the volume.
 
-### 4.2.1 New IxTheo licensed/institutional lane
+### 4.2.1 IxTheo licensed/institutional lane
 
 IxTheo has an exact electronic-book record:
 
@@ -346,10 +357,10 @@ The record exposes a long publisher-supplied contents map, but the target body i
 
 ```text
 CIAMPA_ROSNER_ENGLISH_PUBLIC_PREVIEW_LANE = TERMINAL_FOR_TARGET
-CIAMPA_ROSNER_IXTHEO_LICENSED_FULLTEXT_ROUTE = VERIFIED_NEW_ROUTE
-CIAMPA_ROSNER_GERMAN_REGIONAL_ILL_ROUTE = VERIFIED_NEW_ROUTE
+CIAMPA_ROSNER_IXTHEO_LICENSED_FULLTEXT_ROUTE = VERIFIED_ROUTE
+CIAMPA_ROSNER_GERMAN_REGIONAL_ILL_ROUTE = VERIFIED_ROUTE / HUMAN_OR_INSTITUTIONAL_ACCESS
 CIAMPA_ROSNER_DIRECT_11_2_16_BODY = NOT_YET_ACQUIRED
-CIAMPA_ROSNER_MULTILINGUAL_REGIONAL_REOPEN = ACTIVE
+CIAMPA_ROSNER_MULTILINGUAL_REGIONAL_REOPEN = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 NO_TRANSLATION_FOUND_IN_FIRST_PASS != NO_TRANSLATION_EXISTS
 ```
 
@@ -371,7 +382,7 @@ GARLAND_2003_PP505_532 != GARLAND_2025_PAGINATION
 
 Logos/Verbum exposes an official `See Inside` route but current indexed preview still does not expose the target section body.
 
-### 4.3.1 New Japanese university-holdings lane
+### 4.3.1 Japanese university-holdings lane
 
 CiNii directly records the exact 2025 second edition and identifies physical holdings at two Japanese universities:
 
@@ -388,9 +399,9 @@ This is a genuine regional institutional route, not direct body.
 
 ```text
 GARLAND_2025_PUBLIC_PREVIEW_LANE = TERMINAL_FOR_TARGET
-GARLAND_2025_JAPAN_UNIVERSITY_HOLDINGS = VERIFIED_NEW_ROUTE
+GARLAND_2025_JAPAN_UNIVERSITY_HOLDINGS = VERIFIED_ROUTE / HUMAN_OR_INSTITUTIONAL_ACCESS
 GARLAND_2025_TARGET_BODY = NOT_YET_ACQUIRED
-GARLAND_2025_MULTILINGUAL_REGIONAL_REOPEN = ACTIVE
+GARLAND_2025_MULTILINGUAL_REGIONAL_REOPEN = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 ```
 
 First Spanish/Portuguese pass found other Garland works and unrelated translated 1 Corinthians books but no verified translation of the 2025 BECNT second edition.
@@ -415,12 +426,12 @@ THISELTON_OVERDRIVE_SAMPLE_ROUTE = VERIFIED_LICENSED_ROUTE
 THISELTON_LIBBY_LIBRARY_SEARCH = VERIFIED_ROUTE
 THISELTON_PBTS_PHYSICAL_COPY = VERIFIED_AVAILABLE_HOLDING
 THISELTON_TARGET_BODY = NOT_YET_ACQUIRED_CURRENT_RUNTIME
-THISELTON_MULTILINGUAL_REGIONAL_REOPEN = ACTIVE
+THISELTON_MULTILINGUAL_REGIONAL_REOPEN = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 ```
 
 ---
 
-# 5. Reopened contextual target — Bruce W. Winter
+# 5. Contextual target — Bruce W. Winter
 
 The multilingual pass found a publisher-authorized Portuguese translation of Winter's *After Paul Left Corinth*:
 
@@ -452,7 +463,7 @@ WINTER_PT_2026_EDITION_IDENTITY = CLOSED_DIRECT_PUBLISHER
 WINTER_PT_OFFICIAL_SAMPLE_ROUTE = VERIFIED_ROUTE / RUNTIME_RENDER_HOLD
 WINTER_PT_LICENSED_TOC_PREVIEW = CLOSED_DIRECT_PREVIEW
 WINTER_CH6_TARGET_BODY = NOT_YET_DIRECTLY_ACQUIRED
-WINTER_MULTILINGUAL_REOPEN = ACTIVE
+WINTER_MULTILINGUAL_REOPEN = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 ```
 
 ---
@@ -498,7 +509,7 @@ OKLAND_PERLEGO_LICENSED_PDF_ROUTE = VERIFIED
 OKLAND_TARGET_CH4_7_BODY = NOT_DIRECTLY_ACQUIRED_CURRENT_RUNTIME
 ```
 
-## 6.4 Peter Lampe 2012 — newly surfaced German OA route
+## 6.4 Peter Lampe 2012 — German OA route
 
 Heidelberg University repository directly records:
 - Peter Lampe, `Paulus und die erotischen Reize der Korintherinnen (1 Kor 11,2–16)`;
@@ -517,7 +528,7 @@ LAMPE_2012_PDF_RENDER = TERMINAL_RUNTIME_ANTIBOT_HOLD_CURRENT_ROUTE
 LAMPE_2012_ARGUMENT = NOT_YET_DIRECTLY_READ
 ```
 
-## 6.5 Piotr Łabuda 2019 — newly surfaced Polish repository route
+## 6.5 Piotr Łabuda 2019 — Polish repository route
 
 The Theo-logos/KUL repository directly records:
 - Piotr Łabuda, `1 Kor 11,2-16 wyrazem mizoginizmu św. Pawła?`;
@@ -540,29 +551,31 @@ These two nodes are search-method gains; they do not change core grades without 
 
 ---
 
-# 7. Queue semantics after multilingual/regional reopening
+# 7. Queue semantics after multilingual/regional route sweep
 
-The former sentence `CURRENT_COMMENTARY_ACTIVE_ACQUISITION_QUEUE = EMPTY_FOR_CURRENT_PUBLIC_ROUTES` remains historically true for the bounded English/public routes audited on 2026-08-10, but is too broad as a current global statement.
+The former bounded-English statement `CURRENT_COMMENTARY_ACTIVE_ACQUISITION_QUEUE = EMPTY_FOR_CURRENT_PUBLIC_ROUTES` was reopened on 2026-08-11 after materially distinct language/regional routes were found. Those routes have now been individually classified as direct body, preview/route-only, human/institutional access, or terminal runtime/body HOLD. Therefore the known-route sweep is again disposition-complete.
 
 Use:
 
 ```text
 ENGLISH_KNOWN_ROUTE_AUDIT = DISPOSITION_COMPLETE
-MULTILINGUAL_REOPEN_SWEEP = ACTIVE
-REGIONAL_LIBRARY_REOPEN_SWEEP = ACTIVE
+MULTILINGUAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+REGIONAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
 MULTILINGUAL_NEW_AUTHORIZED_ROUTES_FOUND = YES
 REGIONAL_INSTITUTIONAL_NEW_ROUTES_FOUND = YES
 FEE_2014_PT_ES = AUTHORIZED_REVISED_EDITION_ROUTES_FOUND / TARGET_EXPOSITION_NOT_YET_EXPOSED
 WINTER_2001_PT_2026 = AUTHORIZED_TRANSLATION_ROUTE_FOUND / CH6_BODY_NOT_YET_EXPOSED
-REASONER_2025_IXTHEO_ILL = NEW_ROUTE
-CIAMPA_ROSNER_IXTHEO_LICENSED_ILL = NEW_ROUTE
-GARLAND_2025_CINII_HOLDINGS = NEW_ROUTE
-THISELTON_OVERDRIVE_PBTS = NEW_ROUTE
-CURRENT_COMMENTARY_ACTIVE_ACQUISITION_QUEUE = ACTIVE_ONLY_FOR_MATERIALLY_NEW_LANGUAGE_OR_REGIONAL_ROUTES
+REASONER_2025_IXTHEO_ILL = VERIFIED_ROUTE / HUMAN_OR_INSTITUTIONAL_ACCESS
+CIAMPA_ROSNER_IXTHEO_LICENSED_ILL = VERIFIED_ROUTE / HUMAN_OR_INSTITUTIONAL_ACCESS
+GARLAND_2025_CINII_HOLDINGS = VERIFIED_ROUTE / HUMAN_OR_INSTITUTIONAL_ACCESS
+THISELTON_OVERDRIVE_PBTS = VERIFIED_ROUTE / HUMAN_OR_INSTITUTIONAL_ACCESS
+CURRENT_COMMENTARY_ACTIVE_ACQUISITION_QUEUE = EMPTY_FOR_CURRENT_KNOWN_PUBLIC_ROUTES
+CURRENT_COMMENTARY_REOPEN = ONLY_NEW_USER_BODY_OR_NEW_RENDERABLE_AUTHORIZED_OR_MATERIALLY_DISTINCT_SOURCE
 REPEAT_EXHAUSTED_ENGLISH_PREVIEW_ROUTE = NO
+REPEAT_ALREADY_CLASSIFIED_LANGUAGE_REGIONAL_ROUTE = NO
 ```
 
-A target returns to terminal status only after the newly discovered language/regional lane itself is exhausted or classified.
+A classified human/library/purchase/login route remains useful for source-custody improvement but is not an active agent web-search blocker. Reopen only if a genuinely new renderable authorized route, user-provided body, or materially distinct source appears.
 
 ---
 
@@ -608,9 +621,14 @@ WINTER_PORTUGUESE_2026 = AUTHORIZED_TRANSLATION_ROUTE / CH6_TOC_CLOSED / BODY_NO
 LAMPE_2012_GERMAN_OA_ROUTE = VERIFIED / RUNTIME_ANTIBOT_HOLD
 LABUDA_2019_POLISH_REPOSITORY_ROUTE = VERIFIED / ABSTRACT_DIRECT / PDF_RUNTIME_FETCH_HOLD
 
-ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
-MULTILINGUAL_REOPEN_SWEEP = ACTIVE
-REGIONAL_LIBRARY_REOPEN_SWEEP = ACTIVE
+ENGLISH_KNOWN_ROUTE_AUDIT = DISPOSITION_COMPLETE
+MULTILINGUAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+REGIONAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+CURRENT_KNOWN_PUBLIC_AGENT_QUEUE_EMPTY = true
+HUMAN_LIBRARY_PURCHASE_LOGIN_QUEUE = NOT_EMPTY
+NEW_USER_PROVIDED_BODY = REOPEN_TRIGGER
+NEW_RENDERABLE_AUTHORIZED_ROUTE = REOPEN_TRIGGER
+NEW_MATERIALLY_DISTINCT_SOURCE = REOPEN_TRIGGER
 CORE_GRADE_REVERSALS = 0
 PUBLICATION_HOLD = true
 PRODUCT_WRITE = false
