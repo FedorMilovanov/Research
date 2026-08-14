@@ -1,0 +1,43 @@
+name: 1 Peter product handoff integrity
+
+on:
+  pull_request:
+    paths:
+      - '1_PETER_BOT/**'
+      - '.github/workflows/1peter-product-handoff-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  handoff-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Derive and validate effective handoff
+        run: |
+          rm -rf /tmp/1peter-handoff
+          python 1_PETER_BOT/scripts/validate_product_handoff.py --emit-dir /tmp/1peter-handoff
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('/tmp/1peter-handoff')
+          required = {
+              'chapter4-product-handoff.json', 'chapter5-product-handoff.json',
+              'claim-overclaim-blacklist.json', 'source-identity-package.json',
+              'claim-inspection-manifest.json', 'prototype-audit.json',
+              'ranking-audit.json', 'integrity-summary.json'
+          }
+          assert required == {x.name for x in p.iterdir()}, 'generated artifact set drift'
+          s = json.loads((p/'integrity-summary.json').read_text())
+          assert s['chapter4'] == 72 and s['chapter5'] == 72
+          assert s['current_holds'] == 0
+          assert s['competitive_candidates'] == 0
+          assert s['prototype_count'] == 64
+          assert s['overclaim_blacklist_records'] == 144
+          assert s['ranking_admitted'] == 0
+          PY
