@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:2–16 — direct-source / recent-scholarship pass
 
-**Дата:** 2026-08-12  
+**Дата:** 2026-08-14  
 **Статус:** `DIRECT-PUBLISHER-CONTROL / DIRECT-AUTHOR-SELF-DESCRIPTION / RECENT-SCHOLARSHIP / SOURCE-SEPARATION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Purpose
@@ -343,19 +343,19 @@ This distinction matters for future syntheses.
 
 ---
 
-# 7. Alessandra Castilho da Costa 2023/2024 — significant Portuguese linguistic support for a quotation model
+# 7. Alessandra Castilho da Costa 2023/2024 — Portuguese linguistic quotation model, complete official body CLOSED
 
 ## 7.1 Verified source
 
 Alessandra Castilho da Costa, “Identificando citações em 1 Coríntios 11:3–16: uma análise da orientação argumentativa e do ponto de vista,” *Revista de Estudos da Linguagem* 31.3: 1404–1446. DOI `10.17851/2237-2083.31.3.1404-1446`.
 
-The official UFMG journal page identifies the author (Universidade Federal do Rio Grande do Norte) and directly states the method and result.
+The official UFMG journal page identifies the author (Universidade Federal do Rio Grande do Norte), method and abstract result. The journal also exposes the official PDF object.
 
 Route:
 
 - https://periodicos.ufmg.br/index.php/relin/article/view/55158
 
-## 7.2 Method and direct abstract result
+## 7.2 Direct body result and calibration
 
 Costa approaches the question **linguistically**, combining:
 
@@ -366,34 +366,33 @@ Costa approaches the question **linguistically**, combining:
 
 The official abstract says the analysis finds antagonistic Pauline and Corinthian points of view and concludes that **vv.4–9 function as quotations not endorsed by the apostle**.
 
-This is a valuable independent method because it is not merely another confessional replay of Peppiatt.
+The complete official 43-page PDF was subsequently rendered/read and is now owned in `dossiers/QUOTATION_REFUTATION_SPEAKER_BOUNDARY.md`.
 
-However:
-
-```text
-COSTA_VV4_9_UNENDORSED_QUOTATION = B1_PUBLISHED_LINGUISTIC_PROPOSAL
-LARGE_QUOTATION_REFUTATION_CURRENT_GRADE = D_C_LOW // no automatic promotion
-```
-
-Why no promotion yet:
-
-1. only the official abstract/result was directly inspected in this pass;
-2. the full argumentative chain has not yet been adversarially audited against discourse markers, vv.2/10/11/16 and known Pauline quotation practice;
-3. the current registry’s low grade is based on broader textual/discourse controls, so one new B1 proposal is evidence for re-opening a stress test, not a license to overwrite the registry.
-
-### Action
-
-Create a future adversarial mini-matrix:
+Direct body map:
 
 ```text
-COSTA_2023/24
-vs PEPPIATT_2015
-vs SHOEMAKER_1987
-vs MARSHALL_2019
-vs CURRENT_VERSE_AUDIT
+COSTA_V3 = PAULINE_POV
+COSTA_VV4_9 = CORINTHIAN_POV_QUOTATION_NOT_ENDORSED_BY_PAUL
+COSTA_VV10_16 = PAULINE_POV_REFUTATION
+COSTA_V10_EXOUSIAN_ECHEIN = ACTIVE_WOMAN_AUTHORITY_READING
+COSTA_V10_DIA_TOUTO = AUTHOR_LINKS_BACK_OVER_PRIOR_ARGUMENT_BLOCKS
+COSTA_ANGELS = HUMAN_MESSENGER_PROPHETESS_GROUP_MODEL_IN_AUTHOR_ARGUMENT
+COSTA_V14_15 = DECLARATIVE_NOT_RHETORICAL_QUESTION_IN_AUTHOR_MODEL
+COSTA_V16 = AUTHOR_READS_AS_DENIAL_OF_CORINTHIAN_OBLIGATION_WOMAN_COVER_MAN_UNCOVER
+COSTA_FULL_OFFICIAL_PDF = CLOSED_DIRECT
 ```
 
-and test exact boundaries: `vv4–9`, `vv3–10`, or modified traditions without speaker change.
+Critical calibration:
+
+```text
+COSTA_MODEL_EXISTENCE_AND_INTERNAL_ARGUMENT = DIRECT_FULL_BODY
+LARGE_QUOTATION_PUBLISHED_SCHOLARLY_FAMILY = C_SERIOUS_MULTIPLE_B1
+LARGE_QUOTATION_TEXTUAL_FIT = D_C_LOW_UNCHANGED
+```
+
+The direct body materially improves representation of the alternative but does **not** promote textual fit merely because the model is now fully read. The independent burdens remain: unmarked boundary, local causal cohesion, v10 `διὰ τοῦτο`, same-letter continuity controls and early reception.
+
+The former “future Costa mini-matrix” action is therefore closed: the complete Costa argument has already been absorbed into the evergreen quotation owner and stress-tested there against continuity controls.
 
 ---
 
@@ -474,14 +473,16 @@ Route:
 
 - https://www.cambridge.org/core/journals/harvard-theological-review/article/authority-over-whose-head-did-paul-instruct-wives-or-all-women-to-cover-their-heads-1-corinthians-11216/5D602D820F9CA0E6C55906BDF68466ED
 
-Current registry remains correctly calibrated:
+Callon's **author-level preference** and the **current project grade** must be kept separate. Later discourse/cross-status stress did not refute her model; it moved it from an open co-leading scope state to a serious current alternative.
 
 ```text
-WIVES_VS_ALL_WOMEN = OPEN_B_C
-CALLON_FREE_D_MARRIED_WOMEN_MODEL = B_C_SERIOUS_CURRENT_MODEL
+CALLON_AUTHOR_SCOPE_PREFERENCE = FREE_D_MARRIED_WOMEN_TENTATIVE
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
+CALLON_FREE_D_MARRIED_WOMEN_MODEL = C_SERIOUS_CURRENT_ALTERNATIVE
 ```
 
-No change.
+This is a project-level calibration change, not a rewriting of Callon's own conclusion.
 
 ---
 
@@ -530,8 +531,9 @@ NOMMIK_EHS_AUTHOR_SELF_DESCRIPTION = ADD
 NEWBERRY_2019 = ADD
   function: 1 Esdras 4 + Genesis intertext / v10 authority / vv11-12 counterbalance
 
-COSTA_2023_2024 = ADD
-  function: independent linguistic support for unendorsed quotation vv4-9
+COSTA_2023_2024 = CLOSED_DIRECT_OFFICIAL_FULL_PDF
+  function: independent linguistic full-body quotation model / vv4-9 unendorsed in author analysis
+  project textual-fit effect: NONE; D_C_LOW unchanged after adversarial stress
 
 SALES_2024 = ADD
   function: current rhetorical/ideological quotation-model reception
@@ -556,32 +558,39 @@ FITZMYER_1957 = SOURCE_SPECIFIC_UPGRADE
 
 ```text
 CORE_GRADE_REVERSALS = 0
+SCOPE_GRADE_PROMOTIONS = 1_ALL_WOMEN
 ```
 
-The current registry remains controlling.
+The current registry remains controlling; source acquisition does not own project grades.
 
-The most interesting **future stress test** is now the large quotation/refutation hypothesis, because it has at least three distinguishable modern forms:
+The large quotation/refutation family remains represented by distinguishable modern forms:
 
 1. `Shoemaker/Peppiatt/Salés` — larger Corinthian quotation/refutation;
-2. `Costa` — vv4–9 as unendorsed quotation on linguistic discourse grounds;
+2. `Costa` — vv4–9 as unendorsed quotation on linguistic discourse grounds, now direct full body;
 3. `Marshall` — modified Pauline traditions with different perspectives, without requiring a speaker-change theory.
 
-These should not be collapsed into one “egalitarian quotation model.”
+These are not collapsed into one “egalitarian quotation model.”
 
 ---
 
-# 13. Next high-value actions
+# 13. Current acquisition disposition
+
+The former P0/P1 web-search list in this file is superseded by the current index and `dossiers/CURRENT_COMMENTARY_ACQUISITION_2025.md`. Repeating the same known public routes is not active research work.
 
 ```text
-P0_1 = Garland 2025 complete current section + notes, direct current edition
-P0_2 = Ciampa/Rosner pp.503-540 + notes, direct book
-P0_3 = Nõmmik DiVA full dissertation bytes + page-level evidential chain + edition-pinned locators
-P0_4 = Costa full article adversarial discourse-marker audit
-P1_1 = Hooker complete 410-416 if lawful full text route opens
-P1_2 = Gundry-Volf full 151-171
-P1_3 = Olson/Fantham Roman female dress/portrait direct sections
-P1_4 = rights-safe visual source ledger for capite-velato statues/coins/reliefs
+CURRENT_KNOWN_PUBLIC_AGENT_QUEUE = EMPTY
+ENGLISH_KNOWN_ROUTE_AUDIT = DISPOSITION_COMPLETE
+MULTILINGUAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+REGIONAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+
+HUMAN_LIBRARY_PURCHASE_LOGIN_QUEUE = NOT_EMPTY
+NEW_USER_PROVIDED_BODY = REOPEN_TRIGGER
+NEW_RENDERABLE_AUTHORIZED_ROUTE = REOPEN_TRIGGER
+NEW_MATERIALLY_DISTINCT_SOURCE = REOPEN_TRIGGER
+REPEATING_ALREADY_FAILED_ROUTE = NOT_REOPEN_TRIGGER
 ```
+
+High-value bodies such as Garland 2025, Ciampa/Rosner, Nõmmik full text and other current commentary/specialist holds remain valuable **human/library/access upgrades**, not invitations to repeat exhausted preview/search routes.
 
 For visual work, keep **object identity, museum/archive source, date, findspot/provenance, rights and exact interpretive function** as separate fields. An image of a covered Roman figure demonstrates a depicted practice; it does not by itself prove Paul’s exact local target.
 
