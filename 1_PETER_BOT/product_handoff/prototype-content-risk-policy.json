@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "INDEPENDENT_AUDIT_CONTROL_NOT_AUTHORING",
+  "purpose": "Detect product-template distractors that teach false certainty or evidence-laundering even when structurally valid.",
+  "rule": "A research prototype may remain useful as research scaffolding while still being NEEDS_REWRITE as a product template. Correct-index balance never excuses a risky distractor.",
+  "risk_patterns": [
+    {"id":"ABSOLUTE_ALWAYS_NEVER","severity":"rewrite","regex":"(?i)(\\bвсегда\\b|\\bникогда\\b|\\balways\\b|\\bnever\\b)"},
+    {"id":"ABSOLUTE_CERTAINTY","severity":"rewrite","regex":"(?i)(несомненно|бесспорно|точно\\b|однозначно|certainly|undisputedly)"},
+    {"id":"LEXICAL_EXCLUSIVITY","severity":"rewrite","regex":"(?i)(обязательно означает|исключительно означает|означает исключительно|единственн(?:ый|ая|ое|ую) смысл|lexically requires)"},
+    {"id":"GRAMMAR_REQUIRES_EXEGESIS","severity":"rewrite","regex":"(?i)(грамматически требует|morphology .*требует|морфологически требует|grammar requires)"},
+    {"id":"AUTOMATIC_PROOF","severity":"rewrite","regex":"(?i)(автоматически доказывает|автоматически устанавливает|само по себе доказывает|automatically proves)"},
+    {"id":"MANUSCRIPT_UNANIMITY","severity":"rewrite","regex":"(?i)(все(?:х)? (?:древн(?:их|ие) )?рукопис|all manuscripts|every manuscript)"},
+    {"id":"CONSENSUS_TOTALIZATION","severity":"rewrite","regex":"(?i)(все серь[её]зные исследователи|академический consensus|scholarly consensus .*един|all serious scholars)"},
+    {"id":"APPARATUS_UNNEEDED","severity":"rewrite","regex":"(?i)(apparatus больше не нужен|аппарат(?:ус)? больше не нужен|аппарат не нужен)"},
+    {"id":"CBGM_AUTOMATION_MYTH","severity":"rewrite","regex":"(?i)(CBGM автоматически|CBGM .*полностью устраняет|CBGM .*вычисляет оригинал)"},
+    {"id":"EDITION_IDENTITY_COLLAPSE","severity":"rewrite","regex":"(?i)(ECM и SBLGNT полностью одинаков|все критические издания одинаков|all critical editions are identical)"},
+    {"id":"FORMAL_QUOTATION_OVERCLAIM","severity":"rewrite","regex":"(?i)(доказанн(?:ая|ую) формальн(?:ая|ую) цитат|формально цитирует один конкретный|proven formal quotation)"},
+    {"id":"ONLY_POSSIBLE_RECONSTRUCTION","severity":"rewrite","regex":"(?i)(единственн(?:ая|ый|ое) возможн(?:ая|ый|ое)|другие варианты никогда не предлагались|only possible reconstruction)"},
+    {"id":"TOTAL_EVIDENCE_DISMISSAL","severity":"rewrite","regex":"(?i)(вообще не имеет значения|вообще нет никакой связи|вообще не встречается|no evidence matters)"},
+    {"id":"HISTORICAL_LEGAL_CERTAINTY","severity":"rewrite","regex":"(?i)(юридически обязан|доказывает Нероново преследование|римский закон требовал|Roman law required)"},
+    {"id":"TEXTUAL_INSERTION_CERTAINTY","severity":"rewrite","regex":"(?i)(поздн(?:яя|ей) .*вставк|внесено .*переписчик|late scribal insertion)"},
+    {"id":"PROJECT_AS_NEUTRAL_CONSENSUS","severity":"rewrite","regex":"(?i)(neutral consensus|нейтральн(?:ый|ая) консенсус|как neutral consensus)"},
+    {"id":"MAXIMAL_SCOPE_WARNING","severity":"warning","regex":"(?i)(^|[ :;,])(только|любой|каждый|все)(?:\\s|$)"}
+  ],
+  "non_trigger_rule": "Patterns are evaluated on distractors only. The keyed answer may quote or describe an overclaim when the question itself asks what must NOT be claimed.",
+  "classification_precedence": [
+    "REJECT_AS_PRODUCT_TEMPLATE",
+    "NEEDS_REWRITE",
+    "COURSE_POSITION_ONLY",
+    "NONCOMPETITIVE_ONLY",
+    "SAFE_TEMPLATE"
+  ]
+}
