@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3-PASSAGE-CLOSURE-2026-08-14",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "parentHead": "e9f3a007b99f121dfa0d670816c45644a506955c",
+  "targets": [
+    {
+      "id": "w3-tc-1p2-2",
+      "reference": "1 Peter 2:2",
+      "unit": "εἰς σωτηρίαν",
+      "baseTextStatus": "PINNABLE_FROM_NAMED_EDITION",
+      "alternativeStatus": "EDITION_DIFFERENCE_VERIFIED",
+      "officialECMWitnessStatus": "HOLD",
+      "editorialReasonStatus": "HOLD",
+      "publicationState": "BLOCKED",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-tc-1p2-25",
+      "reference": "1 Peter 2:25",
+      "unit": "ἀλλά elision / orthography",
+      "baseTextStatus": "VERIFIED_OFFICIAL_INTF",
+      "alternativeStatus": "ORTHOGRAPHIC_DIFFERENCE_VERIFIED",
+      "officialECMWitnessStatus": "NOT_REQUIRED_FOR_CURRENT_PEDAGOGICAL_CLAIM",
+      "editorialReasonStatus": "VERIFIED_OFFICIAL_INTF_ORTHOGRAPHIC_ONLY",
+      "publicationState": "REFERENCE",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-tc-1p3-15",
+      "reference": "1 Peter 3:15",
+      "unit": "Lord / Christ wording tradition",
+      "baseTextStatus": "SBLGNT_WORDING_VERIFIED",
+      "alternativeStatus": "VARIANT_DISCOVERY_VERIFIED",
+      "officialECMWitnessStatus": "HOLD",
+      "editorialReasonStatus": "HOLD",
+      "publicationState": "BLOCKED",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-tc-1p3-18",
+      "reference": "1 Peter 3:18",
+      "unit": "ἔπαθεν / ἀπέθανεν",
+      "baseTextStatus": "SBLGNT_ECM_NA28_SELECTED_ἔπαθεν",
+      "alternativeStatus": "ἀπέθανεν_ALTERNATIVE_VERIFIED_DISCOVERY",
+      "officialECMWitnessStatus": "HOLD_EXACT_LIST",
+      "editorialReasonStatus": "HOLD",
+      "publicationState": "BLOCKED_FOR_MANUSCRIPT_CLAIMS",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-tc-1p5-2a",
+      "reference": "1 Peter 5:2",
+      "unit": "ἐπισκοποῦντες",
+      "baseTextStatus": "NAMED_EDITION_READING_PINNABLE",
+      "alternativeStatus": "INCLUSION_OMISSION_UNIT_CONFIRMED_DISCOVERY",
+      "officialECMWitnessStatus": "P0_HOLD",
+      "editorialReasonStatus": "P0_HOLD",
+      "publicationState": "BLOCKED_FOR_POLITY_PROOF",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-tc-1p5-2b",
+      "reference": "1 Peter 5:2",
+      "unit": "κατὰ θεόν",
+      "baseTextStatus": "NAMED_EDITION_READING_PINNABLE",
+      "alternativeStatus": "INCLUSION_OMISSION_UNIT_CONFIRMED_DISCOVERY",
+      "officialECMWitnessStatus": "P0_HOLD",
+      "editorialReasonStatus": "P0_HOLD",
+      "publicationState": "BLOCKED_FOR_EXEGETICAL_WEIGHT",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-int-1p4-12-19",
+      "reference": "1 Peter 4:12-19",
+      "unit": "Malachi 3 imagery proposal",
+      "source": "Dennis E. Johnson, JETS 29.3 (1986)",
+      "sourceIdentity": "VERIFIED_OFFICIAL_ETS_ARCHIVE",
+      "pdfRoute": "VERIFIED_OFFICIAL_10_PAGE_PDF",
+      "bodyInspection": "HOLD_SCREENSHOT_CACHE_MISS",
+      "relationshipClass": "PROPOSED_INTERTEXT",
+      "publicationState": "BLOCKED_FOR_DETAILED_ATTRIBUTION",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-hist-1p5-1-5-elliott",
+      "reference": "1 Peter 5:1-5",
+      "unit": "elder / oversight / shepherd / flock leadership cluster",
+      "source": "John H. Elliott 2008",
+      "sourceIdentity": "VERIFIED_OFFICIAL_HTS",
+      "access": "OPEN_FULLTEXT_CC_BY_4_0",
+      "inspection": "ARTICLE_ROUTE_AND_ABSTRACT_VERIFIED_BODY_TARGETED_READ_PENDING",
+      "publicationState": "REFERENCE",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-hist-1p5-1-4-breed",
+      "reference": "1 Peter 4:7-11; 5:1-4",
+      "unit": "elder diakonia and chapter-context connection",
+      "source": "Gert Breed 2016",
+      "sourceIdentity": "VERIFIED_OFFICIAL_AOSIS",
+      "access": "OPEN_FULLTEXT_CC_BY",
+      "inspection": "HTML_ABSTRACT_AND_FULLTEXT_ROUTE_VERIFIED_TARGETED_BODY_READ_PENDING",
+      "publicationState": "REFERENCE",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "w3-disp-1p4-6",
+      "reference": "1 Peter 4:6",
+      "unit": "gospel preached to the dead",
+      "directTextStatus": "READY_FOR_GREEK_MORPHOLOGY_LAYER",
+      "interpretationStatus": "CONTESTED",
+      "requiredReadingFamilies": [
+        "evangelized_while_alive_now_dead",
+        "postmortem_or_descensus_related",
+        "historical_spiritually_dead_reading",
+        "contextual_judgment_related_variants"
+      ],
+      "projectPosition": "HOLD",
+      "publicationState": "BLOCKED_FOR_RANKING",
+      "competitiveCandidate": false
+    }
+  ],
+  "methodRules": [
+    "OFFICIAL_TITLE_ROUTE_NE_FULL_TEXT_INSPECTION",
+    "SECONDARY_APPARATUS_NE_ECM",
+    "BASE_EDITION_READING_NE_MANUSCRIPT_DISTRIBUTION",
+    "THEOLOGY_MUST_NOT_SELECT_TEXTUAL_READING",
+    "FAILED_RENDER_PRESERVES_HOLD",
+    "NON_CLOSURE_WITH_REASON_IS_VALID_RESEARCH_OUTPUT"
+  ]
+}

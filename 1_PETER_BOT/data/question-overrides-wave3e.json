@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3E-QUESTION-OVERRIDES-2026-08-14",
+  "status": "CURRENT_OVERRIDE_RESEARCH_ONLY",
+  "overrides": [
+    {
+      "id": "w3q_033",
+      "supersedesFields": ["keyed_concept", "source_minimum", "do_not_claim"],
+      "keyed_concept": "Jeannine Brown's inspected JBL study gives substantial Greco-Roman support for the meddling/interference family and argues that ἀλλοτριεπίσκοπος likely concerns movement outside culturally appropriate social boundaries. The term remains obscure enough that narrower proposals such as informer, revolutionary, embezzler, or errant bishop must not be treated as lexically certain.",
+      "source_minimum": ["sblgnt", "w3_brown_allotriepiskopos_2006", "w3_ubs_handbook_1peter"],
+      "do_not_claim": "Do not reduce Brown's broader meddling/social-boundary thesis to the claim that the word lexically means 'revolutionary', 'informer', 'embezzler', or a specific ecclesiastical office. Do not convert one JBL article into consensus."
+    }
+  ],
+  "rule": "For listed IDs, this override controls the named fields over the earlier candidate chunk while preserving the original ID, metadata, status, stem, and tested_distinction."
+}

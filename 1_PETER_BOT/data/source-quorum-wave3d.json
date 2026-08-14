@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3D-SOURCE-QUORUM-2026-08-14",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "sourceCount": 2,
+  "sources": [
+    {
+      "id": "w3_horrell_4_6_2003",
+      "title": "David G. Horrell, Who are 'The Dead' and When was the Gospel Preached to Them?: The Interpretation of 1 Pet 4.6, New Testament Studies 49.1 (2003), 70–89",
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/who-are-the-dead-and-when-was-the-gospel-preached-to-them-the-interpretation-of-1-pet-46/66D1EF6323D7CD9AEEA78CF9AF8309AF",
+      "role": "peer_reviewed_counterposition_4_6",
+      "inspectionScope": "publisher_abstract_inspected",
+      "accessState": "PARTIAL_OBJECT",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Cambridge abstract inspected only. It supports that Horrell reports the 'heard while alive, now dead' reading as increasingly accepted in English commentaries but argues that a proclamation to people already dead is more plausible. Detailed argumentation, subclaims and responses in the full article are not treated as inspected."
+    },
+    {
+      "id": "w3_kerugma_4_6_2025",
+      "title": "Henderson Bara Pratama Tarigan Silangit, Yunita Stella, and Sri Binar, The Meaning of the Clause 'The Gospel Was Preached Also to the Dead' in 1 Peter 4:6, Theological Journal Kerugma 8.2 (2025), 258–268",
+      "url": "https://jurnal.sttii-surabaya.ac.id/index.php/kerugma/article/view/582",
+      "role": "recent_open_evangelical_4_6_witness",
+      "inspectionScope": "publisher_metadata_abstract_and_license_inspected_full_pdf_not_inspected",
+      "accessState": "PARTIAL_OBJECT",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "license": "CC BY 4.0",
+      "claimLimit": "Publisher/search metadata, abstract and license were inspected; the linked full PDF was not successfully read in this wave. The abstract supports the authors' conclusion that the dead are people who heard and responded to the gospel during life and had died by the time of writing. This recent article is one witness and not consensus."
+    }
+  ],
+  "quorumDecision": {
+    "reference": "1 Peter 4:6",
+    "state": "DISPUTE_MAP_STRENGTHENED_PROJECT_POSITION_STILL_HOLD",
+    "reason": "Storms/Forbes and the 2025 Kerugma abstract represent the now-dead-after-lifetime-evangelization family, while Horrell 2003 supplies a peer-reviewed counterposition favoring proclamation to people already dead. The existence of serious published counterpositions makes a competitive single-answer interpretation unsafe without a broader inspected commentary quorum."
+  },
+  "rules": [
+    "ABSTRACT_NE_FULL_ARTICLE",
+    "RECENT_ARTICLE_NE_CONSENSUS",
+    "COUNTERPOSITION_FOUND_NE_COUNTERPOSITION_PROVED_IN_DETAIL",
+    "DISPUTE_MAP_READY_NE_PROJECT_POSITION_CLOSED"
+  ]
+}

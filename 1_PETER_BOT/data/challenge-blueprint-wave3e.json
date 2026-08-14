@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3E-CHALLENGE-BLUEPRINT-2026-08-14",
+  "status": "RESEARCH_BLUEPRINT_NOT_FINAL_OPTIONS",
+  "blueprints": [
+    {
+      "id": "w3ch_017",
+      "reference": "4:15",
+      "basis": ["w3q_032", "w3q_033"],
+      "skill": "rare_lexeme_social_context_without_false_precision",
+      "correctNucleus": "ἀλλοτριεπίσκοπος is genuinely obscure, but Brown's inspected JBL study gives strong Greco-Roman support to the meddling/interference/social-boundary family; narrower labels are not lexically compulsory.",
+      "distractorFamilies": [
+        "the word certainly means revolutionary",
+        "the word certainly means informer/spy",
+        "because it is a hapax no contextual semantic conclusion is possible at all"
+      ],
+      "fairnessGuard": "The correct option should preserve both positive evidence for the meddling family and uncertainty about a narrower one-word reconstruction. Do not make Brown's thesis consensus or quote the copyrighted article at length."
+    }
+  ]
+}

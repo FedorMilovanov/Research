@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3G-QUESTION-OVERRIDES-2026-08-14",
+  "status": "RESEARCH_OVERRIDES_NOT_PRODUCTION",
+  "overrides": [
+    {
+      "id": "w3q_036",
+      "supersedes_fields": ["stem", "keyed_concept", "confidence", "status", "source_minimum", "do_not_claim"],
+      "stem": "Какое чтение 4:16 принимает ECM/NA28, и чем это отличается от SBLGNT?",
+      "keyed_concept": "ECM/NA28 принимает ἐν τῷ μέρει τούτῳ; SBLGNT имеет ἐν τῷ ὀνόματι τούτῳ. Это edition-level textual fact, а не лицензия смешать издания.",
+      "confidence": "high",
+      "status": "READY_NONCOMPETITIVE",
+      "source_minimum": ["sblgnt", "w3g_kok_dewinter_4_16_2017", "intf_catholic_changes"],
+      "do_not_claim": "Не считать полный direct ECM witness list прочитанным; closure относится к принятому ECM/NA28 reading и опубликованному scholarly analysis."
+    },
+    {
+      "id": "w3q_068",
+      "supersedes_fields": ["stem", "keyed_concept", "tested_distinction", "do_not_claim"],
+      "stem": "Какие четыре будущих глагола печатает SBLGNT в 5:10?",
+      "keyed_concept": "καταρτίσει, στηρίξει, σθενώσει, θεμελιώσει.",
+      "tested_distinction": "exact SBLGNT sequence vs transmission-wide claim",
+      "do_not_claim": "Не говорить, что вся рукописная традиция имеет ровно эти четыре формы; secondary apparatus показывает сокращённые/иные последовательности."
+    },
+    {
+      "id": "w3q_069",
+      "supersedes_fields": ["stem", "keyed_concept", "tested_distinction", "do_not_claim"],
+      "stem": "Что общего у четырёх глаголов, напечатанных в SBLGNT 5:10, по MorphGNT?",
+      "keyed_concept": "Все четыре размечены как 3FAI-S: future active indicative, 3-е лицо ед. ч.",
+      "tested_distinction": "morphological pattern within a named edition",
+      "do_not_claim": "MorphGNT описывает SBLGNT forms; это не утверждение, что каждый древний свидетель содержит тот же четырёхглагольный список."
+    }
+  ]
+}

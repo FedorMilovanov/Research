@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3K-MALACHI-OVERRIDE-2026-08-14",
+  "status": "RESEARCH_OVERRIDE_NOT_PRODUCTION",
+  "overrides": [
+    {
+      "id": "w3q_038",
+      "supersedes_fields": ["stem", "keyed_concept", "confidence", "status", "source_minimum", "tested_distinction", "do_not_claim"],
+      "stem": "Как сейчас безопаснее всего классифицировать связь Мал 3 с 1 Пет 4:12–19?",
+      "keyed_concept": "Как серьёзно предложенный prophetic/imagery background вокруг огня, Божьего жилища/народа и суда; степень зависимости спорна, sustained/formal quotation не установлена, а независимая Zechariah 9–14 substructure proposal явно существует.",
+      "confidence": "contested",
+      "status": "READY_NONCOMPETITIVE",
+      "source_minimum": ["sblgnt", "w3k_lxx_mal3_dbg", "w3k_proctor_johnson_summary_1993", "w3k_liebengood_standrews_abstract"],
+      "tested_distinction": "serious proposed prophetic background vs established formal/exclusive intertext",
+      "do_not_claim": "Не называть Mal 3 формальной цитатой или доказанной исключительной зависимостью. St Andrews abstract доказывает существование альтернативной Zechariah proposal, но не используется как passage-level proof всех деталей Liebengood; PDF screenshot readback этой волны не удался."
+    }
+  ]
+}

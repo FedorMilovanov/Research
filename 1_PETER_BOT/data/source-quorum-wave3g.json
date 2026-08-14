@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3G-TEXTUAL-CRITICISM-SOURCES-2026-08-14",
+  "status": "RESEARCH_ONLY_FAIL_CLOSED",
+  "sources": [
+    {
+      "source_id": "w3g_kok_dewinter_4_16_2017",
+      "title": "Jacobus Kok & Bastiaan A. de Winter, What's in the name? 1 Peter 4:16 text-critical investigation",
+      "url": "https://indieskriflig.org.za/index.php/skriflig/article/view/2103/4367",
+      "source_role": "peer_reviewed_textual_criticism",
+      "inspection_scope": "full_html_relevant_sections_inspected",
+      "claim_limit": "May support that ECM/NA28 adopts ἐν τῷ μέρει τούτῳ at 1 Peter 4:16, the article's external/internal evidence discussion, CBGM/genealogical-coherence explanation, and the contrast with ὀνόματι. It is a secondary scholarly exposition of ECM/CBGM, not a substitute for directly reading the official dECM apparatus.",
+      "access_state": "FULL_OBJECT_VERIFIED",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "rights_note": "Article page states CC BY 4.0 / Creative Commons Attribution.",
+      "holds": []
+    },
+    {
+      "source_id": "w3g_step_varapp_1p5",
+      "title": "STEP Bible VarApp — 1 Peter 5",
+      "url": "https://www.stepbible.org/?q=version%3DVarApp%40reference%3D1Pet.5",
+      "source_role": "secondary_open_textual_apparatus",
+      "inspection_scope": "full_web_section_inspected_1Peter5",
+      "claim_limit": "May support open secondary witness maps for 1 Peter 5:2, 5:10, 5:12, 5:13 and related units. Must not be cited as direct ECM apparatus, must not be used to claim ECM editorial reasoning, and must not override an explicit official-ECM HOLD.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "RIGHTS_UNKNOWN",
+      "holds": ["PUBLICATION_HOLD"]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3-FINAL-SNAPSHOT-2026-08-14",
+  "status": "RESEARCH_WAVE_COMPLETE_ZERO_HOLDS_NOT_PRODUCTION",
+  "branch": "agent/1peter-source-marathon",
+  "reviewed_parent_sha": "b2a0f806a6bc8f0d9a25f74f7833713f2ad139e6",
+  "reviewed_parent_gate": {
+    "workflow": "Repository authority integrity",
+    "run_number": 931,
+    "conclusion": "success"
+  },
+  "closure_extension": {
+    "wave": "3n",
+    "date": "2026-08-14",
+    "criterion_relaxed": false,
+    "direct_decm_witness_readback_claimed": false,
+    "peer_review_route_verified": true,
+    "peer_review_status_is_not_passage_evidence": true,
+    "closure_route": "pre-existing sufficiently explicit peer-reviewed ECM-based textual-critical treatment route",
+    "artifacts": [
+      "28_WAVE3N_ECM_CLOSURE_2026-08-14.md",
+      "data/source-quorum-wave3n.json",
+      "data/question-overrides-wave3n.json",
+      "data/remaining-holds-wave3n.json"
+    ]
+  },
+  "scope": {
+    "repository": "FedorMilovanov/Research",
+    "pull_request": 183,
+    "all_changed_paths_under": "1_PETER_BOT/**",
+    "product_write": false,
+    "main_write": false,
+    "publication_authorized": false,
+    "ranking_authorized": false
+  },
+  "candidate_corpus": {
+    "total": 144,
+    "chapter4": 72,
+    "chapter5": 72,
+    "ready": 52,
+    "ready_noncompetitive": 92,
+    "hold": 0,
+    "competitive_candidates": 0
+  },
+  "mcq_prototype_corpus": {
+    "total": 64,
+    "chapter4": 32,
+    "chapter5": 32,
+    "correct_position_counts": {
+      "0": 16,
+      "1": 16,
+      "2": 16,
+      "3": 16
+    },
+    "production_cards": false,
+    "ranking_cards": false
+  },
+  "effective_resolution_order": [
+    "base_candidate",
+    "candidate_override_chain_including_wave3n",
+    "source_upgrade_or_quorum_chain_including_wave3n",
+    "mcq_prototype",
+    "mcq_editorial_override"
+  ],
+  "remaining_holds": [],
+  "closed_in_wave3n": [
+    {
+      "hold_id": "HOLD-TC-4-14",
+      "candidate_id": "w3q_031",
+      "effective_status": "READY_NONCOMPETITIVE",
+      "closure": "Williams-Horrell 2023 explicitly cites ECM 182 and prefers the shorter 4:14 reading; Stanojevic 2021 independently records the ECM-side unit without the power addition."
+    },
+    {
+      "hold_id": "HOLD-TC-5-2A",
+      "candidate_id": "w3q_050",
+      "effective_status": "READY_NONCOMPETITIVE",
+      "closure": "Williams-Horrell 2023 explicitly cites ECM 188-189 and prefers retaining episkopountes after external and internal analysis."
+    },
+    {
+      "hold_id": "HOLD-TC-5-2B",
+      "candidate_id": "w3q_051",
+      "effective_status": "READY_NONCOMPETITIVE",
+      "closure": "Williams-Horrell 2023 treats kata theon independently and prefers retention; Stanojevic 2021 records the ECM-side unit with the phrase present."
+    },
+    {
+      "hold_id": "HOLD-TC-5-12",
+      "candidate_id": "w3q_075",
+      "effective_status": "READY_NONCOMPETITIVE",
+      "closure": "Stanojevic 2021 records exact ECM comparison address 1 Pet 5:12/46 with stete; Williams-Horrell 2023 independently prefer stete with external and internal reasoning."
+    }
+  ],
+  "closed_or_hardened_highlights": {
+    "1Peter4_6_project_position": "believers_evangelized_while_alive_and_now_dead; neutral dispute remains open",
+    "1Peter4_14": "short current critical reading preferred; ancient power expansion retained as textual-criticism literacy, noncompetitive",
+    "1Peter4_16": "edition-transparent SBLGNT onomati vs ECM/NA28 merei; no fake direct dECM witness readback",
+    "1Peter4_12_19_malachi": "serious proposed prophetic/imagery background; not formal quotation",
+    "1Peter5_2_episkopountes": "ECM-based current treatment prefers retention; polity inference remains separately bounded",
+    "1Peter5_2_kata_theon": "independent textual unit; ECM-aligned evidence prefers retention",
+    "1Peter5_10": "four-verb teaching explicitly bounded to SBLGNT rather than claimed for all manuscripts",
+    "1Peter5_12": "current critical line stete closed by exact published ECM comparison plus independent current textual reasoning",
+    "lexical_rule": "LEXICON_RANGE_NE_PASSAGE_EXEGESIS"
+  },
+  "global_guards": [
+    "SOURCE_FOUND_NE_CLAIM_PROVED",
+    "ABSTRACT_NE_FULL_TEXT",
+    "CATALOG_NE_PASSAGE_EVIDENCE",
+    "MORPHOLOGY_NE_EXEGESIS",
+    "LEXICON_GLOSS_NE_COMPLETE_CONTEXT",
+    "HISTORICAL_PLAUSIBILITY_NE_BIBLICAL_TEXT_STATEMENT",
+    "ONE_SCHOLAR_NE_CONSENSUS",
+    "PROJECT_POSITION_NE_NEUTRAL_FACT",
+    "SECONDARY_APPARATUS_NE_ECM",
+    "NAMED_MANUSCRIPT_NE_ORIGINAL_TEXT_DECISION",
+    "ECM_TEXT_DECISION_NE_MANUSCRIPT_UNANIMITY",
+    "ECM_BASED_COMMENTARY_NE_DIRECT_DECM_READBACK",
+    "PEER_REVIEW_STATUS_NE_PASSAGE_EVIDENCE",
+    "QUESTION_CANDIDATE_READY_NE_PRODUCTION_READY",
+    "MCQ_PROTOTYPE_NE_RANKING_READY",
+    "ZERO_RESEARCH_HOLDS_NE_PRODUCTION_READY",
+    "GREEN_VALIDATOR_NE_PUBLICATION_APPROVAL"
+  ],
+  "next_stage": "separate product-side integration/editorial authoring and source audit",
+  "wave_closed": true
+}

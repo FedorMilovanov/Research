@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3H-LEXICAL-SOURCES-2026-08-14",
+  "status": "RESEARCH_ONLY_FAIL_CLOSED",
+  "policy": {
+    "lexicon_gloss_is_not_exegesis": true,
+    "public_domain_is_not_current_authority": true,
+    "mirror_page_is_inspection_route_not_rights_source": true,
+    "bdag_not_replaced_by_old_open_lexica": true
+  },
+  "sources": [
+    {
+      "source_id": "w3h_abbott_smith_project",
+      "title": "Abbott-Smith Manual Greek Lexicon — maintained TEI project",
+      "url": "https://translatable-exegetical-tools.github.io/Abbott-Smith/",
+      "source_role": "public_domain_lexicon_authority_and_rights_control",
+      "inspection_scope": "project_readme_and_rights_status_inspected",
+      "claim_limit": "May establish edition identity, public-domain status of the marked-up lexicon, release/completion history, and the rule to prefer the checked/current release over raw OCR.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_abbott_smith_oikonomos",
+      "title": "Abbott-Smith s.v. οἰκονόμος",
+      "url": "https://www.studylight.org/lexicons/eng/greek/3623.html",
+      "source_role": "public_domain_lexicon_entry",
+      "inspection_scope": "Abbott-Smith_entry_section_inspected_via_web_mirror",
+      "claim_limit": "May support household/estate manager and broader steward/administrator range and Abbott-Smith's explicit application to Christians generally in 1 Peter 4:10. Does not establish a church office in 4:10.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "rights_note": "Underlying Abbott-Smith 1922 lexicon is public domain; mirror is an inspection route. No proprietary surrounding lexicon text is to be republished.",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_abbott_smith_logion",
+      "title": "Abbott-Smith s.v. λόγιον",
+      "url": "https://www.studylight.org/lexicons/eng/greek/3051.html",
+      "source_role": "public_domain_lexicon_entry",
+      "inspection_scope": "Abbott-Smith_entry_section_inspected_via_web_mirror",
+      "claim_limit": "May support oracle/divine-utterance lexical range and the 1 Peter 4:11 citation. Does not by itself establish a doctrine of inspiration or make every Christian utterance canonical Scripture.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_abbott_smith_pyrosis",
+      "title": "Abbott-Smith s.v. πύρωσις",
+      "url": "https://www.studylight.org/lexicons/eng/greek/4451.html",
+      "source_role": "public_domain_lexicon_entry",
+      "inspection_scope": "Abbott-Smith_entry_section_inspected_via_web_mirror",
+      "claim_limit": "May support literal burning and metaphorical refining/trial-by-fire range, including 1 Peter 4:12 and LXX Proverbs 27:21 background. Cannot identify Malachi 3 as Peter's source.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_abbott_smith_ktistes",
+      "title": "Abbott-Smith s.v. κτίστης",
+      "url": "https://www.studylight.org/lexicons/eng/greek/2939.html",
+      "source_role": "public_domain_lexicon_entry",
+      "inspection_scope": "Abbott-Smith_entry_section_inspected_via_web_mirror",
+      "claim_limit": "May support founder/creator range and creator-of-God use at 1 Peter 4:19. Does not make every extra-biblical κτίστης a cosmic-creation title.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_abbott_smith_enkomboomai",
+      "title": "Abbott-Smith s.v. ἐγκομβόομαι",
+      "url": "https://www.studylight.org/lexicons/eng/greek/1463.html",
+      "source_role": "public_domain_lexicon_entry",
+      "inspection_scope": "Abbott-Smith_entry_section_inspected_via_web_mirror",
+      "claim_limit": "May support put-on/gird-on clothing imagery in 1 Peter 5:5 and etymological garment background. Does not prove a unique exact slave-apron reconstruction.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_mm_enkomboomai",
+      "title": "Moulton–Milligan s.v. ἐγκομβόομαι",
+      "url": "https://www.studylight.org/lexicons/eng/greek/1463.html",
+      "source_role": "public_domain_documentary_lexicon_entry",
+      "inspection_scope": "Moulton-Milligan_entry_excerpt_inspected; public-domain_full-scan_route_verified",
+      "claim_limit": "May support that Moulton–Milligan found no instance of the rare verb in their documentary sources and cited a later lexical/comic parallel for girding something on oneself. This negative corpus observation does not prove no ancient example existed.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "rights_note": "Underlying 1914–1929 work is public domain; public-domain scan route separately verified.",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_abbott_smith_antidikos",
+      "title": "Abbott-Smith s.v. ἀντίδικος",
+      "url": "https://www.studylight.org/lexicons/eng/greek/476.html",
+      "source_role": "public_domain_lexicon_entry",
+      "inspection_scope": "Abbott-Smith_entry_section_inspected_via_web_mirror",
+      "claim_limit": "May support opponent-in-a-lawsuit/adversary range and application to 1 Peter 5:8. Does not establish a literal courtroom scene.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_mm_antidikos",
+      "title": "Moulton–Milligan s.v. ἀντίδικος (p. 47)",
+      "url": "https://www.sermonindex.net/strongs/greek/g476/",
+      "source_role": "public_domain_documentary_lexicon_entry",
+      "inspection_scope": "Moulton-Milligan_entry_excerpt_inspected_page_locator_47; public-domain_full-scan_route_verified",
+      "claim_limit": "May support common legal-word documentary usage and Moulton–Milligan's explicit note that wider adversary use fits 1 Peter 5:8. Does not establish a heavenly-court scenario.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_abbott_smith_sthenoo",
+      "title": "Abbott-Smith s.v. σθενόω",
+      "url": "https://www.studylight.org/lexicons/eng/greek/4599.html",
+      "source_role": "public_domain_lexicon_entry",
+      "inspection_scope": "Abbott-Smith_entry_section_inspected_via_web_mirror",
+      "claim_limit": "May support strengthen as the lexical meaning and the 1 Peter 5:10 reference. Cannot resolve whether the form is present in every witness; textual presence remains a textual-critical question.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_abbott_smith_suneklektos",
+      "title": "Abbott-Smith s.v. συνεκλεκτός",
+      "url": "https://www.studylight.org/lexicons/eng/greek/4899.html",
+      "source_role": "public_domain_lexicon_entry",
+      "inspection_scope": "Abbott-Smith_entry_section_inspected_via_web_mirror",
+      "claim_limit": "May support chosen-together-with/co-elect range and the 1 Peter 5:13 feminine form. Does not identify the historical referent as a particular woman or a church.",
+      "access_state": "PARTIAL_OBJECT",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    },
+    {
+      "source_id": "w3h_mm_public_domain_scan",
+      "title": "Moulton & Milligan, Vocabulary of the Greek Testament — public-domain scan route",
+      "url": "https://gospelstudies.org.uk/biblicalstudies/book_vocabulary-of-the-greek-testament_moulton-milligan.html",
+      "source_role": "public_domain_fulltext_route",
+      "inspection_scope": "bibliographic_identity_rights_and_full_pdf_route_verified",
+      "claim_limit": "May establish the public-domain status, 1914–1929 publication identity and 705-page full-PDF route. Individual lexical claims require an inspected entry/excerpt or page locator.",
+      "access_state": "FULL_OBJECT_VERIFIED",
+      "rights_state": "PUBLICATION_ELIGIBLE",
+      "holds": []
+    }
+  ]
+}

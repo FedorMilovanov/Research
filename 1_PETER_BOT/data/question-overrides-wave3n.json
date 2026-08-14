@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE3N-FINAL-TEXTUAL-CLOSURE-OVERRIDES-2026-08-14",
+  "status": "RESEARCH_OVERRIDE_NOT_PRODUCTION",
+  "overrides": [
+    {
+      "id": "w3q_031",
+      "supersedes_fields": ["stem", "keyed_concept", "confidence", "status", "source_minimum", "tested_distinction", "do_not_claim"],
+      "stem": "Как current ECM-based textual criticism оценивает расширение с δύναμις в 1 Пет 4:14?",
+      "keyed_concept": "Краткое чтение без добавления καὶ (τῆς) δυνάμεως (αὐτοῦ) предпочтительно. Расширение древнее и реально засвидетельствовано, но Williams–Horrell, с прямой ссылкой на ECM 182, объясняют разнообразные формы добавления как вторичные; Stanojević независимо фиксирует ECM-сторону узла 4:14/21 как отсутствие καὶ δυνάμεως.",
+      "confidence": "high",
+      "status": "READY_NONCOMPETITIVE",
+      "source_minimum": ["sblgnt", "w3n_williams_horrell_icc_v2_2023", "w3n_stanojevic_ecm_2021", "w3n_intf_ecm_catholic_controls"],
+      "tested_distinction": "current critical-text decision vs existence of ancient expansion variants",
+      "do_not_claim": "Не говорить, что расширение позднее в абсолютном смысле, что один свидетель решает вопрос, или что ECM устраняет историю варианта. Не превращать текстологическое решение в доктринальный аргумент о силе Духа."
+    },
+    {
+      "id": "w3q_050",
+      "supersedes_fields": ["stem", "keyed_concept", "confidence", "status", "source_minimum", "tested_distinction", "do_not_claim"],
+      "stem": "Каков current ECM-based status ἐπισκοποῦντες в 1 Пет 5:2?",
+      "keyed_concept": "Форма действительно имеет серьёзную историю омиссии, но Williams–Horrell, прямо привлекая ECM 188–189 и внешние/внутренние данные, считают ἐπισκοποῦντες частью исходного текста и предпочитают её сохранение. Поэтому вариант закрыт для учебного textual-criticism слоя, но остаётся noncompetitive и не решает церковную polity одним словом.",
+      "confidence": "high",
+      "status": "READY_NONCOMPETITIVE",
+      "source_minimum": ["sblgnt", "w3n_williams_horrell_icc_v2_2023", "w3n_intf_ecm_catholic_controls"],
+      "tested_distinction": "ECM-based textual decision vs denominational polity inference",
+      "do_not_claim": "Не говорить, что омиссия незначительна, что א/B автоматически ошибочны, или что наличие причастия само по себе доказывает полную тождественность позднейших должностей elder/overseer."
+    },
+    {
+      "id": "w3q_051",
+      "supersedes_fields": ["stem", "keyed_concept", "confidence", "status", "source_minimum", "tested_distinction", "do_not_claim"],
+      "stem": "Каков current ECM-based status κατὰ θεόν в 1 Пет 5:2?",
+      "keyed_concept": "κατὰ θεόν — отдельный от ἐπισκοποῦντες вариативный узел. Williams–Horrell считают фразу подлинной и предпочитают её сохранение; Stanojević в прямой ECM-versus-Antoniades колляции фиксирует ECM чтение 1 Пет 5:2/26–28 с κατὰ θεόν. Этот вывод не зависит от решения по причастию.",
+      "confidence": "high",
+      "status": "READY_NONCOMPETITIVE",
+      "source_minimum": ["sblgnt", "w3n_williams_horrell_icc_v2_2023", "w3n_stanojevic_ecm_2021", "w3n_intf_ecm_catholic_controls"],
+      "tested_distinction": "independent textual unit vs conflation with episkopountes",
+      "do_not_claim": "Не склеивать два узла 5:2 в один бинарный вариант, не выводить текст из богословской предпочтительности фразы и не использовать один перевод как apparatus evidence."
+    },
+    {
+      "id": "w3q_075",
+      "supersedes_fields": ["stem", "keyed_concept", "confidence", "status", "source_minimum", "tested_distinction", "do_not_claim"],
+      "stem": "Каков current ECM-based status στῆτε / ἐστήκατε в 1 Пет 5:12?",
+      "keyed_concept": "Current critical line prefers στῆτε. Stanojević's published direct comparison with ECM records the exact unit as 1 Pet 5:12/46 στῆτε against Antoniades ἑστήκατε; Williams–Horrell independently prefer the imperative στῆτε on external and internal grounds, explaining the later indicative as an easier declarative reading in a relative clause.",
+      "confidence": "high",
+      "status": "READY_NONCOMPETITIVE",
+      "source_minimum": ["sblgnt", "w3n_stanojevic_ecm_2021", "w3n_williams_horrell_icc_v2_2023", "w3n_intf_ecm_catholic_controls"],
+      "tested_distinction": "ECM current line plus textual reasoning vs witness counting",
+      "do_not_claim": "Не аргументировать по принципу oldest-manuscript-wins или majority-wins; не утверждать, что вариант не существует; не превращать imperatival reading в отдельную богословскую доктрину."
+    }
+  ],
+  "competitive_candidates": 0,
+  "closure_note": "All four transitions are HOLD -> READY_NONCOMPETITIVE. This is research closure only; no ranking or publication authorization is implied."
+}
