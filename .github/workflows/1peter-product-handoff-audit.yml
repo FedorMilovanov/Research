@@ -14,13 +14,17 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   handoff-integrity:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -94,8 +98,7 @@ jobs:
               'REJECT_AS_PRODUCT_TEMPLATE': 5,
           }
           assert index['decoded_bundle_sha256'] == decoded_sha
-          assert index['segment_count'] == len(index['segments'])
-          assert index['segment_count'] == 8
+          assert index['segment_count'] == len(index['segments']) == 8
           assert index['member_count'] == 12
           assert index['deterministic_bundle_two_run_byte_equivalent'] is True
           assert index['segment_round_trip_verified'] is True
@@ -146,6 +149,49 @@ jobs:
           assert summary['source_depth_boundaries_machine_enforced'] is True
           print('IMMUTABLE_HANDOFF_MACHINE_CONTRACT_OK')
           PY
+      - name: Publish verified immutable release on canonical handoff branch
+        if: ${{ github.event_name == 'pull_request' && github.head_ref == 'agent/1peter-product-handoff-audit' }}
+        shell: bash
+        env:
+          INITIAL_HEAD: ${{ github.event.pull_request.head.sha }}
+          TARGET_BRANCH: ${{ github.head_ref }}
+        run: |
+          set -euo pipefail
+          if [[ -f 1_PETER_BOT/product_handoff/CURRENT_RELEASE.json ]]; then
+            echo 'Committed immutable release already exists; publish step is a no-op.'
+            exit 0
+          fi
+
+          git fetch origin "${TARGET_BRANCH}"
+          REMOTE_HEAD="$(git rev-parse "origin/${TARGET_BRANCH}")"
+          if [[ "${REMOTE_HEAD}" != "${INITIAL_HEAD}" ]]; then
+            echo "Refusing stale release publication: remote=${REMOTE_HEAD}, validated=${INITIAL_HEAD}" >&2
+            exit 1
+          fi
+
+          DIGEST='1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d'
+          RELEASE_ROOT='1_PETER_BOT/product_handoff'
+          mkdir -p "${RELEASE_ROOT}/releases"
+          cp /tmp/1peter-immutable-handoff/CURRENT_RELEASE.json "${RELEASE_ROOT}/CURRENT_RELEASE.json"
+          cp -a "/tmp/1peter-immutable-handoff/releases/${DIGEST}" "${RELEASE_ROOT}/releases/${DIGEST}"
+
+          git add "${RELEASE_ROOT}/CURRENT_RELEASE.json" "${RELEASE_ROOT}/releases/${DIGEST}"
+          python - <<'PY'
+          import subprocess
+          digest = '1f444991ecc2f180abdbe0f459148ba8dbf0a5045b1d8888e462683c78366c7d'
+          names = subprocess.check_output(['git', 'diff', '--cached', '--name-only'], text=True).splitlines()
+          allowed_prefix = f'1_PETER_BOT/product_handoff/releases/{digest}/'
+          allowed_pointer = '1_PETER_BOT/product_handoff/CURRENT_RELEASE.json'
+          assert names, 'publish step produced no staged immutable files'
+          assert all(name == allowed_pointer or name.startswith(allowed_prefix) for name in names), names
+          assert allowed_pointer in names
+          print('PUBLISH_SCOPE_OK', len(names))
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Publish immutable 1 Peter Ch4-5 handoff release'
+          git push origin "HEAD:${TARGET_BRANCH}"
       - name: Upload deterministic handoff release candidate
         uses: actions/upload-artifact@v4
         with:
