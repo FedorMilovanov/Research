@@ -1,33 +1,41 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "RESEARCH_HANDOFF_CONTROL",
   "invariant": "SOURCE_IDENTITY_PACKAGE != CLAIM_INSPECTION_LEDGER",
   "source_identity_package_fields": [
-    "source_id", "title", "author", "year", "type", "stable_locator", "identity_verification_status"
+    "source_id", "title", "author", "year", "type", "stable_locator", "identity_verification_status",
+    "known_titles", "known_locators", "known_types", "identity_lane_paths", "identity_variant_flag"
   ],
-  "identity_verification_semantics": "BIBLIOGRAPHIC_IDENTITY_RECORDED_FROM_RESEARCH_AUTHORITY is identity-only. It does not certify claim inspection, full text access, or passage evidence.",
+  "identity_verification_semantics": "Identity records are bibliographic/work-identity controls only. Multiple title/locator/type variants are exposed rather than collapsed into a strongest evidence record. Identity never certifies claim inspection, full-text access, passage support, or ranking readiness.",
   "forbidden_identity_fields": [
-    "claim_id", "claim_confidence", "claim_position", "claim_ready", "passage_exegesis_proved", "ranking_ready"
+    "claim_id", "claim_confidence", "claim_position", "claim_ready", "passage_exegesis_proved",
+    "ranking_ready", "inspection_depth", "strongest_evidence_status"
   ],
   "claim_inspection_edge_fields": [
-    "candidate_id", "source_id", "evidence_status", "access_state", "inspection_scope", "owning_lane", "claim_limit", "owner_resolution"
+    "claim_inspection_edge_id", "candidate_id", "source_id", "evidence_status", "access_state",
+    "inspection_scope", "inspection_depth_class", "owning_lane", "owning_lane_kind", "claim_limit",
+    "owner_resolution", "source_minimum_provenance"
   ],
   "status_semantics": {
-    "evidence_status": "Use an explicit evidence_status/evidenceStatus from the owning source record. If absent, emit NOT_EXPLICITLY_LABELED. Never substitute access state.",
+    "evidence_status": "Use explicit evidence_status/evidenceStatus from the owning source record. If absent, emit NOT_EXPLICITLY_LABELED. Never substitute access_state.",
     "access_state": "Object/link/catalog/full-object availability only. ACCESS_STATE != CLAIM_EVIDENCE.",
-    "inspection_scope": "The exact depth recorded by the owning lane; it must not be inherited across claims merely because source_id matches."
+    "inspection_scope": "Exact depth recorded by the owning lane. It must not be inherited across claims merely because source_id matches.",
+    "inspection_depth_class": "Conservative normalized audit class derived from the owning edge; unknown schemas fail closed for ranking/product-objective authoring.",
+    "claim_inspection_edge_id": "Stable digest of candidate/source/owner/depth/limit/provenance. Product review should pin this edge instead of recreating depth from source identity."
   },
+  "field_provenance_rule": "Source ownership is selected from the provenance of the effective source_minimum field, not from the candidate's latest unrelated override. A later status/keyed_concept/do_not_claim override must not cause an older source reference to inherit a later quorum lane.",
   "owner_resolution": {
-    "MATCHING_OVERRIDE_QUORUM": "A candidate's latest override layer explicitly matches a quorum lane that owns the same source ID.",
-    "BASE_LEDGER_NO_DEPTH_INHERITANCE": "No matching override quorum owns this claim; use the base ledger record and do not inherit a later/deeper lane merely because source_id matches.",
-    "SOLE_EXPLICIT_SOURCE_LANE": "The source exists in exactly one explicit source-control lane."
+    "MATCHING_SOURCE_MINIMUM_PROVENANCE_LANE": "The layer that last authored source_minimum contains exactly one explicit quorum/inspection-upgrade owner for this source ID.",
+    "SOLE_IDENTITY_LEDGER_NO_DEPTH_INHERITANCE": "No matching source_minimum provenance lane owns the edge; one identity ledger exists and no later claim depth is inherited.",
+    "SOLE_EXPLICIT_INSPECTION_LANE": "No identity ledger exists and exactly one explicit source-control lane exists for this source ID."
   },
   "fail_closed_conditions": [
     "candidate source_id resolves nowhere",
-    "multiple same-layer quorum owners for one candidate/source edge",
-    "multiple ledger identity owners with no unambiguous authority",
-    "multiple quorum inspection lanes with no provenance match and no base owner",
+    "multiple matching source_minimum-provenance inspection owners",
+    "multiple identity ledgers for a referenced source without an explicit claim owner",
+    "multiple inspection lanes with no source_minimum provenance match and no unique identity owner",
     "access_state is relabeled as evidence_status",
-    "product card cannot identify an owning inspection lane"
+    "latest candidate override is used as a proxy for source_minimum provenance",
+    "product card cannot identify an exact claim_inspection_edge_id and owning lane"
   ]
 }
