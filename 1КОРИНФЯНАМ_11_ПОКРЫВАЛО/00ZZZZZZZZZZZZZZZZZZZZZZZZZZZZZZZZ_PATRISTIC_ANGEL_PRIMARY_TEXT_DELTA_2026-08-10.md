@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:10 — patristic angel reception / primary-text owner
 
-**Дата:** 2026-08-10  
+**Дата:** 2026-08-14  
 **Статус:** `PATRISTIC-RECEPTION-OWNER / PRIMARY-TEXT-ATTRIBUTION / MODERN-MAP-CONTROL / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 ## 0. Authority rule
@@ -16,7 +16,7 @@ ANCIENTNESS != EXEGETICAL_PROBABILITY
 
 ---
 
-# 1. Paczkowski 2023 — modern specialist map
+# 1. Paczkowski 2023 — direct specialist full-body reception map
 
 Official journal control:
 
@@ -25,23 +25,25 @@ Official journal control:
 Route:
 - https://czasopisma.kul.pl/index.php/vp/article/view/15533
 
-The official abstract verifies a broad reception range including:
+The official KUL / *Vox Patrum* full PDF text has been directly acquired and read. Paczkowski is therefore stronger than an abstract-only modern map: he supplies a directly controlled **published reception synthesis** across multiple patristic trajectories.
+
+Body-level synthesis supports at least:
+
+1. a Genesis 6 / fallen-angels trajectory, especially in Tertullianic reception;
+2. a heavenly-angels-present-at-worship trajectory, notably in Origenian reception;
+3. later authority/guardian and related angelological specializations.
 
 ```text
-CELESTIAL_HEAVENLY_BEINGS
-FALLEN_ANGELS_GEN6
-LITURGICAL_CELEBRANTS_OR_PARTICIPANTS
-OUTSIDER_OBSERVERS
+PACZKOWSKI_2023_OFFICIAL_FULL_PDF_TEXT = CLOSED_DIRECT
+PACZKOWSKI_2023 = PATRISTIC_RECEPTION_SYNTHESIS
+PACZKOWSKI_GEN6_FALLEN_ANGEL_STREAM = DIRECT_SYNTHESIS_CONTROL
+PACZKOWSKI_HEAVENLY_ANGELS_WORSHIP_STREAM = DIRECT_SYNTHESIS_CONTROL
+PACZKOWSKI_LATER_GUARDIAN_AUTHORITY_STREAMS = DIRECT_SYNTHESIS_CONTROL
+PACZKOWSKI_SYNTHESIS != PRIMARY_FATHER_TEXT
+PATRISTIC_MULTIPLICITY != PAULINE_EXACT_FUNCTION_SOLVED
 ```
 
-It also describes later historical development in which veiling increasingly accumulated ecclesial/social/liturgical meanings and eventually associations with consecrated virginity.
-
-```text
-PACZKOWSKI_2023 = DIRECT_SPECIALIST_MAP
-PACZKOWSKI_MAP != PRIMARY_OWNER_FOR_EACH_FATHER
-```
-
-The rest of this file pressure-tests source ownership where primary wording is available.
+Paczkowski remains a modern synthesis, not the primary owner for each father. The rest of this file therefore pressure-tests source ownership where primary wording is available.
 
 ---
 
@@ -223,14 +225,15 @@ GUARDIAN_ANGELS = C_LOW
 CORE_GRADE_REVERSALS = 0
 ```
 
-Source ownership improved; no ancient reading is promoted by vote-counting.
+Paczkowski's direct full body strengthens provenance for **multiple ancient competing interpretations** but does not alter these Pauline grades by vote-counting.
 
 ---
 
 # 12. No-overclaim rules
 
 ```text
-PACZKOWSKI_SUMMARY != PRIMARY_AUTHOR_OWNERSHIP
+PACZKOWSKI_SYNTHESIS != PRIMARY_AUTHOR_OWNERSHIP
+PACZKOWSKI_FULL_BODY != PAULINE_EXACT_FUNCTION_SOLVED
 SEVERIAN_TINES_PHASIN = REPORT_OF_OTHERS
 AMBROSIASTER_BISHOPS = DIRECT_ENDORSEMENT
 TERTULLIAN_WATCHERS = DIRECT_RECEPTION_FACT
