@@ -146,7 +146,7 @@ This source strengthens representation of the alternative; recency and peer revi
 Direct Kregel product metadata:
 
 ```text
-AUTHORS = Michael_H_Burer + David_B_Kieffer
+AUTHORS = Michael_H_Burer + David_B_KIEFFER
 PUBLICATION_DATE = 2026_04_21
 PAGES = 336
 ISBN_OFFICIAL_KREGEL = 9780825453816
@@ -449,14 +449,38 @@ LUMESBERGER_LOISL_2025_BODY = STILL_HOLD
 
 # 10. Other current reception / edge nodes
 
-## Israel O. O. Odewole — 2025
+## Israel O. O. Odewole — 2025 — complete published body closed
 
-> “FEMINIST AGENDA: Paul’s View of Women in 1 Corinthians 11:2–16,” *QUAERENS* 7.1 (2025): 18–33.
+> “FEMINIST AGENDA: Paul’s View of Women in 1 Corinthians 11:2–16,” *QUAERENS: Journal of Theology and Christianity Studies* 7.1 (2025): 18–33. DOI `10.46362/quaerens.v7i1.240`.
+
+The official QUAERENS article page independently controls author, journal, issue, DOI, pp.18–33, publication date and CC BY-NC-SA 4.0 license. Its direct journal PDF route cache-misses in the current runtime, but a public ResearchGate full-text copy renders the complete journal-layout body from printed p.18 through p.33, including QUAERENS masthead, DOI, pagination, conclusion and references. The author is not claimed on ResearchGate, so provenance is recorded as **official publisher identity + matching public licensed published body**, not as an author-upload.
+
+Body-level model:
+
+```text
+ODEWOLE_2025_OFFICIAL_JOURNAL_IDENTITY = CLOSED_DIRECT_PUBLISHER
+ODEWOLE_2025_PUBLIC_FULL_PUBLISHED_BODY = CLOSED_MATCHING_JOURNAL_LAYOUT
+ODEWOLE_2025_LICENSE = CC_BY_NC_SA_4_0
+ODEWOLE_2025_WOMEN_PRAY_PROPHESY = AFFIRMED_IN_GATHERED_WORSHIP
+ODEWOLE_2025_MATERIAL_HEAD_COVERING = AUTHOR_PREFERRED
+ODEWOLE_2025_V10 = SUBMISSION_TO_APPOINTED_AUTHORITY_IN_AUTHOR_MODEL
+ODEWOLE_2025_ANGELS = CELESTIAL_GUARDIANS_OF_ORDER_AND_WORSHIP_PARTICIPANTS_IN_AUTHOR_MODEL
+ODEWOLE_2025_V16 = CHURCH_CUSTOM_NORM_IN_AUTHOR_MODEL
+ODEWOLE_2025_GENDER_CONCLUSION = EQUAL_DIGNITY_WITH_DISTINCT_COMPLEMENTARY_FUNCTIONS_AND_MALE_HEADSHIP_IN_AUTHOR_MODEL
+ODEWOLE_2025_CULTURAL_PASTORAL_APPLICATION = AFRICAN_CONTEXTUAL_HERMENEUTICAL_LAYER
+```
+
+Weight/calibration:
 
 ```text
 ODEWOLE_2025 = P3_CURRENT_RECEPTION_NODE
+ODEWOLE_2025_BODY_CUSTODY = CLOSED
 EVIDENTIAL_GRADE_FOR_CORE_CLAIMS = D_C_LOW
+ODEWOLE_2025_CORE_GRADE_CHANGE = NONE
+CORE_GRADE_REVERSALS = 0
 ```
+
+The body is now directly represented, but it mostly synthesizes older commentary and pastoral/cultural discussion rather than adding new primary Greek, documentary, archaeological or textual evidence. It therefore closes a current-reception body gap without moving the evidence graph.
 
 ## Jason Garwood — 2026 edge-reading
 
@@ -520,11 +544,14 @@ GERMAN:
   Standhartinger = original 2002, not current-2025
 
 POLISH:
-  repository search included as standing lane; Kowalski 2020 institutional KUL item/PDF-object closed while binary body remains transport-held
+  repository search included as standing lane; Kowalski 2020 official APCZ OA article + exact PDF-galley route and KUL institutional file-object are closed while body rendering remains transport-held
 
 CHINESE:
   Hao Li 2023 = official JRCC object + CCSnet journal-layout 52-page PDF body closed / page-image screenshot cache hold
   Wang 2022 = official JRCC object + CCSnet full-text reprint + author-uploaded ResearchGate journal body closed / downloadable PDF bytes cache hold
+
+ENGLISH_CURRENT_EDGE:
+  Odewole 2025 = official QUAERENS identity + matching public full journal-layout body closed / low-weight current reception, no grade change
 
 ENGLISH_RETROSPECTIVE:
   Rongxi Wu 2020 Sheffield PhD = official White Rose 289-page direct PDF / missed direct-body control now absorbed
@@ -579,6 +606,7 @@ CURRENT_MAJOR_DIRECT_BODY_CONTROLS =
   PETERS_2021
   WU_2020_RETROSPECTIVE
 
+CURRENT_LOW_WEIGHT_FULL_BODY_EDGE = ODEWOLE_2025
 CURRENT_KEPHALE_COUNTERCONTROL = GONZAGA_SILVA_2024_AUTHOR_PROFILE_PUBLISHED_BODY
 CURRENT_2026_COMMENTARY_LAYER = BURER_KIEFFER_2026_KERUX
 
@@ -600,6 +628,9 @@ HAO_LI_BODY_SUPPORTS_ACTIVE_EXOUSIA_DIRECTION = YES
 HAO_LI_BODY_PREFERS_HEAVENLY_WORSHIP_ANGELS = YES
 WANG_BODY_SUPPORTS_MATERIAL_COVERING = YES
 WANG_BODY_SUPPORTS_WOMEN_PRAYING_PROPHESYING_IN_ASSEMBLY = YES
+ODEWOLE_BODY_SUPPORTS_WOMEN_PRAYING_PROPHESYING = YES_LOW_WEIGHT
+ODEWOLE_BODY_SUPPORTS_MATERIAL_COVERING = YES_LOW_WEIGHT
+ODEWOLE_BODY_PREFERS_HEAVENLY_ORDER_ANGELS = YES_LOW_WEIGHT
 
 CORE_GRADE_REVERSALS = 0
 SCOPE_GRADE_PROMOTIONS = 1_ALL_WOMEN
