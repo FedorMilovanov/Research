@@ -1,6 +1,6 @@
 # Source card — Gordon D. Fee, *The First Epistle to the Corinthians*, Revised Edition (2014), 1 Cor 11:2–16
 
-**Дата аудита:** 2026-08-11  
+**Дата аудита:** 2026-08-14  
 **Статус:** `TECHNICAL-COMMENTARY / REVISED-EDITION-CALIBRATION / MULTILINGUAL-ACQUISITION / EXACT-TOC-CLOSED / TARGET-BODY-HOLD / RESEARCH-ONLY`
 
 ## 0. Purpose
@@ -210,7 +210,7 @@ FEE_KO_2023_LICENSED_EBOOK = VERIFIED
 FEE_KO_2019_11_2_16_TARGET_BODY = NOT_EXPOSED_CURRENT_PREVIEW
 ```
 
-This route is acquisition-capable if the licensed preview/library surface later exposes the target section. Route existence does not itself close any Fee 2014 exegetical wording.
+This route remains acquisition-capable **only if** the licensed preview/library surface later exposes the target section or another materially new authorized route appears. Route existence does not itself close any Fee 2014 exegetical wording.
 
 ---
 
@@ -264,7 +264,7 @@ GOOGLE_BOOKS = METADATA_TOC_SELECTED_MATERIAL / TARGET_BODY_NOT_EXPOSED
 GOOGLE_PLAY = SAMPLE_OBJECT / TARGET_BODY_NOT_EXPOSED
 ```
 
-New language routes:
+Known translated/licensed routes already tested:
 
 ```text
 PORTUGUESE_VIDA_NOVA_CLC = AUTHORIZED_REVISED_TRANSLATION / OFFICIAL_52_PAGE_SAMPLE / PREFACE_AND_TOC_DIRECT / TARGET_BODY_NOT_IN_SAMPLE
@@ -272,13 +272,17 @@ SPANISH_TESORO_BIBLICO_LOGOS = AUTHORIZED_REVISED_TRANSLATION / LICENSED_LOOK_IN
 KOREAN_RNR_LOGOS_BIBLIA = AUTHORIZED_REVISED_TRANSLATION / OFFICIAL_RESOURCE_AND_RIGHTS_CLOSED / TARGET_BODY_NOT_EXPOSED_CURRENT_PREVIEW
 ```
 
-Therefore the old global terminal wording is superseded:
+Current disposition:
 
 ```text
 FEE_2014_ENGLISH_KNOWN_ROUTES = TERMINAL_EXTERNAL_ACCESS_HOLD
-FEE_2014_MULTILINGUAL_REOPEN = ACTIVE
+FEE_2014_MULTILINGUAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+FEE_2014_CURRENT_PUBLIC_AGENT_QUEUE = EMPTY
 FEE_2014_PP542_586_OR_EQUIVALENT_TRANSLATED_TARGET_BODY = NOT_YET_DIRECTLY_ACQUIRED
 FEE_2014_NOTES_11_2_16 = NOT_YET_DIRECTLY_ACQUIRED
+NEW_USER_PROVIDED_REVISED_BODY = REOPEN_TRIGGER
+NEW_RENDERABLE_AUTHORIZED_REVISED_ROUTE = REOPEN_TRIGGER
+REPEATING_PT_ES_KO_KNOWN_PREVIEW_ROUTE = NOT_REOPEN_TRIGGER
 ```
 
 No exact English quotation should be labelled `direct Fee 2014` unless the English page itself is acquired. A published revised translation can establish Fee's substantive position for the 2014 edition if its target body is acquired, but must be cited as translation evidence.
@@ -305,7 +309,7 @@ Current evidence class:
 FEE_2014_ANGELS_LOCATOR_576_578 = STRONG_PEER_REVIEWED_PAGE_LOCATOR
 FEE_2014_N123_WATCHERS_REJECTION = STRONG_SECONDARY_QUOTE_LOCATOR
 FEE_2014_N123_DIRECT_ENGLISH_PAGE = NOT_ACQUIRED
-FEE_2014_EQUIVALENT_PT_ES_KO_ANGEL_SECTION = SEARCH_TARGET_ACTIVE
+FEE_2014_EQUIVALENT_PT_ES_KO_ANGEL_SECTION = TERMINAL_CURRENT_KNOWN_PREVIEW_ROUTES / REOPEN_ON_NEW_BODY_ROUTE
 ```
 
 Do not promote the reproduced wording to quote-safe Fee text.
@@ -356,18 +360,25 @@ This is a **label/calibration clarification**, not a downgrade of v16’s transl
 
 ---
 
-# 11. Reopened target order
+# 11. Conditional reopen order
+
+The previously discovered Portuguese, Korean and Spanish routes have all been dispositioned for the current runtime. They are **not active repeated-search targets**. If a genuinely new renderable/authorized body route appears, prioritize:
 
 ```text
 P0A = Portuguese 2019 target section around local pp616_667, especially v10/angels equivalent of English pp576_578/n123
-P0B = Korean 2019/2023 Logos-Biblia revised target section, especially v10/angels
-P0C = Spanish 2024 Logos revised target section, especially v10/angels
-P1 = English revised pp576_578/n123 if a new lawful/institutional route appears
+P0B = Korean 2019/2023 revised target section, especially v10/angels
+P0C = Spanish 2024 revised target section, especially v10/angels
+P1 = English revised pp576_578/n123
 P1 = English/translated complete 11:2-6 main body and Addendum
 P1 = English revised pp580_586 / translated vv13-16 body, especially direct p585-586
 ```
 
-Do not repeat the exhausted English preview endpoints as though they were new searches.
+```text
+CONDITIONAL_PRIORITY_LIST != ACTIVE_ACQUISITION_QUEUE
+REPEAT_EXHAUSTED_PREVIEW_ROUTE = NO
+NEW_RENDERABLE_AUTHORIZED_ROUTE = REOPEN_TRIGGER
+USER_PROVIDED_REVISED_BODY = REOPEN_TRIGGER
+```
 
 ---
 
@@ -439,7 +450,10 @@ FEE_V16 = STRONG_SECONDARY_LOCATOR_PP585_586 / DIRECT_PAGE_HOLD
 ENGBERG_PEDERSEN_1991 = DIRECT_JSTOR_IDENTITY / BODY_CACHE_HOLD
 
 ENGLISH_KNOWN_ROUTE_AUDIT = COMPLETE
-FEE_MULTILINGUAL_REOPEN = ACTIVE
+FEE_MULTILINGUAL_KNOWN_ROUTE_SWEEP = DISPOSITION_COMPLETE_FOR_CURRENT_KNOWN_ROUTES
+FEE_CURRENT_PUBLIC_AGENT_QUEUE = EMPTY
+NEW_RENDERABLE_AUTHORIZED_ROUTE = REOPEN_TRIGGER
+NEW_USER_PROVIDED_REVISED_BODY = REOPEN_TRIGGER
 TERMINAL_EXTERNAL_ACCESS_HOLD != VERIFIED_BODY
 TERMINAL_EXTERNAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 PUBLICATION_HOLD = true
