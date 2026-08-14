@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-SOURCE-LEDGER-WAVE2-2026-08-14",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "sources": [
+    {
+      "id": "w2_dbg_na29",
+      "title": "Novum Testamentum Graece NA29 — official product record",
+      "url": "https://shop.die-bibel.de/Novum-Testamentum-Graece-NA29./5320",
+      "role": "current_critical_edition_status",
+      "inspectionScope": "official_publisher_product_page_inspected",
+      "accessState": "CATALOG_ONLY",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Edition identity, forthcoming status, publisher date and edition-level features only; no book/apparatus body inspection."
+    },
+    {
+      "id": "w2_dbg_gnt6",
+      "title": "Greek New Testament GNT6 — official product record",
+      "url": "https://shop.die-bibel.de/Greek-New-Testament-GNT6.-Standardausgabe/5310",
+      "role": "current_greek_edition_status",
+      "inspectionScope": "official_publisher_product_page_inspected",
+      "accessState": "CATALOG_ONLY",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Publisher-level claims about current GNT6, relation to future NA29, apparatus purpose and newly included papyri only."
+    },
+    {
+      "id": "w2_houghton_textual_commentary",
+      "title": "H. A. G. Houghton, A Textual Commentary on the Greek New Testament",
+      "url": "https://shop.die-bibel.de/A-Textual-Commentary-on-the-Greek-New-Testament/5331",
+      "role": "current_textual_commentary",
+      "inspectionScope": "official_publisher_product_page_inspected",
+      "accessState": "CATALOG_ONLY",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Book scope and intended relation to GNT6/NA28/NA29 only; no individual 1 Peter entry treated as inspected."
+    },
+    {
+      "id": "w2_intf_ecm_catholic_letters",
+      "title": "INTF — ECM Catholic Letters textual changes and CBGM information",
+      "url": "https://ntvmr.uni-muenster.de/en_US/intfblog",
+      "role": "official_textual_criticism_control",
+      "inspectionScope": "official_intf_pages_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "REFERENCE",
+      "claimLimit": "INTF-level statements about ECM Catholic Letters, NA28 changes, split primary lines and CBGM; not a substitute for exact apparatus inspection at a specific verse."
+    },
+    {
+      "id": "w2_intf_commentary_method",
+      "title": "INTF online textual commentary guidelines",
+      "url": "https://ntvmr.uni-muenster.de/en_US/commentary-intro",
+      "role": "textual_criticism_method",
+      "inspectionScope": "official_method_page_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "REFERENCE",
+      "claimLimit": "Methodological guidance; Acts examples do not directly prove Catholic-Letters readings."
+    },
+    {
+      "id": "w2_constable_1peter",
+      "title": "Thomas L. Constable, Notes on 1 Peter",
+      "url": "https://www.soniclight.com/constable/notes/pdf/1peter.pdf",
+      "role": "dispensational_exposition",
+      "inspectionScope": "official_route_identity_verified_body_not_fully_inspected_wave2",
+      "accessState": "LINK_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "claimLimit": "Official route and work identity; passage claims require direct section inspection."
+    },
+    {
+      "id": "w2_constable_portuguese",
+      "title": "Comentários Bíblicos Expositivos Constable — Portuguese official corpus",
+      "url": "https://soniclight.com/constable-notes-portuguese/",
+      "role": "multilingual_dispensational_exposition",
+      "inspectionScope": "official_index_and_rights_policy_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "claimLimit": "Confirms official Portuguese 1 Pedro route and stated study/teaching permissions; does not license wholesale bot republication or alteration."
+    },
+    {
+      "id": "w2_hort_1898",
+      "title": "F. J. A. Hort, The First Epistle of St Peter I.1–II.17",
+      "url": "https://biblicalstudies.org.uk/articles_0hi.php",
+      "role": "public_domain_historical_greek_commentary",
+      "inspectionScope": "host_bibliographic_record_and_public_domain_status_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Public-domain availability and bibliographic identity established; passage-level claims require reading exact pages."
+    },
+    {
+      "id": "w2_lillie_1869",
+      "title": "John Lillie, Lectures on the First and Second Epistles of Peter",
+      "url": "https://commons.wikimedia.org/wiki/File:Lectures_on_the_First_and_Second_epistles_of_Peter_(IA_lecturesonfirsts00lill).pdf",
+      "role": "public_domain_historical_commentary",
+      "inspectionScope": "object_metadata_rights_and_extent_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Public-domain scan identity/extent; exact exegetical claims require targeted page inspection."
+    },
+    {
+      "id": "w2_leighton_pd",
+      "title": "Robert Leighton, Practical Commentary upon the First Epistle General of Peter",
+      "url": "https://commons.wikimedia.org/wiki/File:Practical_commentary_upon_the_first_Epistle_general_of_Peter;_to_which_is_prefixed_a_brief_memoir_of_the_author_(IA_1864practicalcom02leiguoft).pdf",
+      "role": "public_domain_reception_commentary",
+      "inspectionScope": "object_metadata_and_public_domain_status_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Historical/pastoral source; not modern textual or social-history authority."
+    },
+    {
+      "id": "w2_abbott_smith_1922",
+      "title": "G. Abbott-Smith, A Manual Greek Lexicon of the New Testament",
+      "url": "https://openlibrary.org/",
+      "role": "public_domain_greek_lexical_bridge",
+      "inspectionScope": "public_domain_catalog_and_scan_routes_verified",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Historic lexicon; useful legal lexical control but not a replacement for BDAG/current lexical scholarship."
+    },
+    {
+      "id": "w2_robertson_grammar",
+      "title": "A. T. Robertson, A Grammar of the Greek New Testament in the Light of Historical Research",
+      "url": "https://commons.wikimedia.org/",
+      "role": "public_domain_historical_grammar",
+      "inspectionScope": "public_domain_object_route_and_extent_verified",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Historic reference grammar; individual syntactic claims still require exact page/context and modern control for nontrivial conclusions."
+    },
+    {
+      "id": "w2_moulton_milligan",
+      "title": "Moulton and Milligan, Vocabulary of the Greek Testament",
+      "url": "https://openlibrary.org/",
+      "role": "public_domain_documentary_papyri_lexical_control",
+      "inspectionScope": "early_public_domain_edition_route_verified",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Papyri parallels can inform semantic range; documentary parallel does not determine meaning in 1 Peter by itself."
+    },
+    {
+      "id": "w2_marcar_isaiah_2016",
+      "title": "Katie Marcar, The Quotations of Isaiah in 1 Peter: A Text-Critical Analysis",
+      "url": "https://www.jbtc.org/v21/index.html",
+      "role": "peer_reviewed_isaiah_text_critical_control",
+      "inspectionScope": "official_journal_issue_abstract_and_conclusion_summary_inspected",
+      "accessState": "PARTIAL_OBJECT",
+      "rightsState": "REFERENCE",
+      "claimLimit": "Six target Isaiah quotations and article-level conclusion may be described; detailed argument/page attribution requires article-body inspection."
+    },
+    {
+      "id": "w2_breed_exodus_2025",
+      "title": "Douw G. Breed, The use of Exodus 19–24 in 1 Peter 1:2",
+      "url": "https://indieskriflig.org.za/index.php/skriflig/article/view/3151",
+      "role": "peer_reviewed_proposed_intertext",
+      "inspectionScope": "open_fulltext_page_available_and_article_metadata_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "A serious proposal for Exodus background in 1:2; not promoted to explicit quotation without independent analysis."
+    },
+    {
+      "id": "w2_stenschke_2009",
+      "title": "Christoph Stenschke, Reading First Peter in the Context of Early Christian Mission",
+      "url": "https://www.tyndalebulletin.org/article/29266-reading-first-peter-in-the-context-of-early-christian-mission",
+      "role": "peer_reviewed_mission_audience_control",
+      "inspectionScope": "open_fulltext_article_page_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "REFERENCE",
+      "claimLimit": "Supports Stenschke's Gentile-audience/mission/identity argument as scholarship; does not make that reconstruction a direct textual fact."
+    },
+    {
+      "id": "w2_green_1990",
+      "title": "Gene L. Green, The Use of the Old Testament for Christian Ethics in 1 Peter",
+      "url": "https://www.tyndalebulletin.org/article/31657",
+      "role": "peer_reviewed_ot_ethics_control",
+      "inspectionScope": "open_fulltext_route_verified",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "REFERENCE",
+      "claimLimit": "OT/ethics scholarly control; exact claims require section-level citation."
+    },
+    {
+      "id": "w2_gurry_cbgm_2017",
+      "title": "Peter J. Gurry, A Critical Examination of the Coherence-Based Genealogical Method in the Catholic Epistles",
+      "url": "https://www.tyndalebulletin.org/article/29441-a-critical-examination-of-the-coherence-based-genealogical-method-in-the-catholic-epistles",
+      "role": "cbgm_methodological_control",
+      "inspectionScope": "open_dissertation_summary_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "REFERENCE",
+      "claimLimit": "Summary-level methodological criticism; not a substitute for ECM data and not a claim that CBGM is invalid."
+    },
+    {
+      "id": "w2_elliott_elders_2008",
+      "title": "John H. Elliott, Elders as leaders in 1 Peter and the early Church",
+      "url": "https://hts.org.za/index.php/hts/article/view/44",
+      "role": "peer_reviewed_elders_social_exegesis",
+      "inspectionScope": "open_article_page_and_fulltext_route_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Leadership-vocabulary/exegetical control; broader ecclesiological reconstruction remains the author's analysis."
+    },
+    {
+      "id": "w2_breed_elder_2016",
+      "title": "Gert Breed, The diakonia of the elder according to 1 Peter",
+      "url": "https://indieskriflig.org.za/index.php/skriflig/article/view/2102/3914",
+      "role": "peer_reviewed_elders_exegesis",
+      "inspectionScope": "open_fulltext_article_inspected_at_page_level_summary",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Supports the author's connection of 4:7–11 and 5:1–4 and shepherd/oversight analysis; do not turn one article into polity consensus."
+    },
+    {
+      "id": "w2_watson_oxford_2024",
+      "title": "Duane F. Watson, 1 Peter: Contested Issues",
+      "url": "https://academic.oup.com/edited-volume/57514/chapter-abstract/467936100",
+      "role": "current_contested_issues_map",
+      "inspectionScope": "publisher_abstract_and_metadata_only",
+      "accessState": "CATALOG_ONLY",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "May identify the chapter's surveyed issues and abstract-level framing only; no detailed attribution without chapter body."
+    },
+    {
+      "id": "w2_williams_persecution_2012",
+      "title": "Travis B. Williams, Suffering from a Critical Oversight: The Persecutions of 1 Peter within Modern Scholarship",
+      "url": "https://journals.sagepub.com/doi/10.1177/1476993X10389802",
+      "role": "persecution_scholarship_history",
+      "inspectionScope": "publisher_abstract_only",
+      "accessState": "PARTIAL_OBJECT",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Abstract supports the statement that a localized/sporadic-hostility consensus exists and that Williams critiques its history; detailed alternative model remains HOLD."
+    },
+    {
+      "id": "w2_king_exiles_2024",
+      "title": "Fergus J. King, Exiles, Not Enemies: Petrine Self-Determination in the Face of Empire",
+      "url": "https://www.mdpi.com/2077-1444/15/11/1370",
+      "role": "open_social_political_interpretation",
+      "inspectionScope": "open_access_identity_abstract_and_license_verified",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "claimLimit": "Recent historical/social interpretation; not direct evidence that Peter's addressees held a specific Roman legal exile status."
+    },
+    {
+      "id": "w2_poh_social_world_1998",
+      "title": "Chu Luan Poh, The social world of 1 Peter: socio-historical and exegetical studies",
+      "url": "https://kclpure.kcl.ac.uk/portal/en/studentTheses/the-social-world-of-1-peter-socio-historical-and-exegetical-studi",
+      "role": "large_open_sociohistorical_thesis",
+      "inspectionScope": "institutional_metadata_and_pdf_object_route_verified_body_not_read",
+      "accessState": "LINK_ONLY",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Acquisition/read queue only until targeted body inspection."
+    },
+    {
+      "id": "w2_bynum_exile_2026",
+      "title": "William J. Bynum, Ongoing Exile in 1 Peter",
+      "url": "https://digitalcommons.liberty.edu/doctoral/8138/",
+      "role": "current_evangelical_dissertation_exile",
+      "inspectionScope": "institutional_metadata_and_abstract_inspected",
+      "accessState": "PARTIAL_OBJECT",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Current dissertation proposal/argument from abstract; not peer-reviewed consensus."
+    },
+    {
+      "id": "w2_hales_identity_2021",
+      "title": "Ian James Hales, Anchored in Identity: Opposition and the Identity of the People of God in 1 Peter",
+      "url": "https://repository.sbts.edu/handle/10392/6679",
+      "role": "evangelical_open_project_identity",
+      "inspectionScope": "institutional_abstract_and_pdf_route_verified",
+      "accessState": "LINK_ONLY",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "claimLimit": "Useful conservative thematic control; exact chapter claims require body reading."
+    },
+    {
+      "id": "w2_johnson_fire_1986",
+      "title": "Dennis E. Johnson, Fire in God's House: Imagery from Malachi 3 in Peter's Theology of Suffering (1 Pet 4:12–19)",
+      "url": "https://etsjets.org/jets-volume/jets29/",
+      "role": "evangelical_peer_reviewed_proposed_intertext",
+      "inspectionScope": "official_jets_bibliographic_and_pdf_route_verified_body_render_failed",
+      "accessState": "LINK_ONLY",
+      "rightsState": "REFERENCE",
+      "claimLimit": "Title/topic verified; Malachi-3 detailed argument remains full-body HOLD."
+    },
+    {
+      "id": "w2_tms_doctrinal_statement",
+      "title": "The Master's Seminary Doctrinal Statement",
+      "url": "https://tms.edu/doctrinal-statement/",
+      "role": "project_theology_anchor",
+      "inspectionScope": "official_current_statement_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "REFERENCE",
+      "claimLimit": "Institutional/project theology including church-Israel distinction, millennial kingdom, Israel future and elder doctrine; not neutral lexical evidence."
+    },
+    {
+      "id": "w2_tms_journal_archive",
+      "title": "The Master's Seminary Journal Archive",
+      "url": "https://tms.edu/educational-resources/journal/archive/",
+      "role": "project_hermeneutics_discovery",
+      "inspectionScope": "official_archive_index_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "REFERENCE",
+      "claimLimit": "Article identities/themes verified from archive; article-specific argument requires body inspection."
+    },
+    {
+      "id": "w2_tms_israel_study",
+      "title": "TMS Israel Study Trip doctrinal perspective",
+      "url": "https://tms.edu/academics/center-for-israeli-studies/israel-study-trip/",
+      "role": "project_israel_eschatology_position",
+      "inspectionScope": "official_current_page_inspected",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "rightsState": "REFERENCE",
+      "claimLimit": "Institutional statement of futuristic/dispensational/premillennial teaching perspective only."
+    }
+  ],
+  "globalRules": [
+    "SOURCE_FOUND_NE_CLAIM_PROVED",
+    "CATALOG_ONLY_NE_PASSAGE_INSPECTED",
+    "OPEN_FULLTEXT_NE_MODERN_CONSENSUS",
+    "PUBLIC_DOMAIN_NE_CURRENT_TEXTUAL_AUTHORITY",
+    "PROJECT_POSITION_NE_NEUTRAL_FACT"
+  ]
+}

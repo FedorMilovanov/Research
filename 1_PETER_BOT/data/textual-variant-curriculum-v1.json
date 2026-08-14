@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "authority": "1PETER-WAVE2-TEXTUAL-VARIANT-CURRICULUM-2026-08-14",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "baseTextPolicy": {
+    "openReproducibleBase": "SBLGNT",
+    "currentNestleAland": "NA28",
+    "currentUBS": "GNT6",
+    "forthcomingNestleAland": "NA29",
+    "catholicLettersCriticalControl": "ECM Catholic Letters",
+    "manuscriptEnvironment": "NTVMR"
+  },
+  "items": [
+    {
+      "id": "1p-tc-001",
+      "reference": "1 Peter 2:2",
+      "unit": "εἰς σωτηρίαν inclusion/omission",
+      "priority": "P1",
+      "currentState": "EDITION_DIFFERENCE_VERIFIED_MANUSCRIPT_HOLD",
+      "learnerValue": "inclusion/omission and exegetical nuance without doctrinal sensationalism",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-002",
+      "reference": "1 Peter 2:25",
+      "unit": "orthographic elision previously counted among NA28 changes",
+      "priority": "P1",
+      "currentState": "INTF_EXPLANATION_VERIFIED",
+      "learnerValue": "not every textual difference is substantively meaningful",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-003",
+      "reference": "1 Peter 3:15",
+      "unit": "Christ/God wording in the Lord-Christ phrase tradition",
+      "priority": "P0",
+      "currentState": "DISCOVERY_VERIFIED_ECM_GNT6_WITNESS_HOLD",
+      "learnerValue": "text criticism meets Isaiah 8 reuse and Christology",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-004",
+      "reference": "1 Peter 3:18",
+      "unit": "ἔπαθεν / ἀπέθανεν",
+      "priority": "P0",
+      "currentState": "BASE_AND_EDITION_DIFFERENCE_VERIFIED_WITNESS_HOLD",
+      "learnerValue": "separate exact wording from the later θανατωθείς clause and from atonement systematics",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-005",
+      "reference": "1 Peter 3:18",
+      "unit": "pronoun variation around whom Christ brings to God",
+      "priority": "P1",
+      "currentState": "DISCOVERY_ONLY_ECM_HOLD",
+      "learnerValue": "person/pronoun transmission and audience reference",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-006",
+      "reference": "1 Peter 3:21",
+      "unit": "relative/pronominal wording around baptismal analogy",
+      "priority": "P1",
+      "currentState": "DISCOVERY_ONLY_ECM_HOLD",
+      "learnerValue": "small forms can interact with syntax but do not settle baptismal theology",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-007",
+      "reference": "1 Peter 4:1",
+      "unit": "expansion including ὑπὲρ ἡμῶν in some traditions",
+      "priority": "P1",
+      "currentState": "EDITION_COMPARISON_CANDIDATE_MANUSCRIPT_HOLD",
+      "learnerValue": "theologically familiar wording cannot be preferred merely because it is true elsewhere",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-008",
+      "reference": "1 Peter 4:14",
+      "unit": "expanded Spirit/glory wording in parts of the tradition",
+      "priority": "P2",
+      "currentState": "EDITION_COMPARISON_CANDIDATE_MANUSCRIPT_HOLD",
+      "learnerValue": "expansion and harmonization patterns",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-009",
+      "reference": "1 Peter 4:16",
+      "unit": "ὀνόματι / μέρει",
+      "priority": "P1",
+      "currentState": "EDITION_COMPARISON_CANDIDATE_MANUSCRIPT_HOLD",
+      "learnerValue": "lexically visible alternative with translation impact",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-010",
+      "reference": "1 Peter 5:2",
+      "unit": "ἐπισκοποῦντες inclusion/omission",
+      "priority": "P0",
+      "currentState": "POLITY_VARIANT_APPARATUS_HOLD",
+      "learnerValue": "text-critical prerequisite before using overseer terminology as a polity proof",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-011",
+      "reference": "1 Peter 5:2",
+      "unit": "κατὰ θεόν inclusion/omission",
+      "priority": "P0",
+      "currentState": "POLITY_VARIANT_APPARATUS_HOLD",
+      "learnerValue": "translation and pastoral-exposition impact",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-012",
+      "reference": "1 Peter 5:12",
+      "unit": "στῆτε / ἑστήκατε",
+      "priority": "P1",
+      "currentState": "DISCOVERY_ONLY_APPARATUS_HOLD",
+      "learnerValue": "textual criticism plus imperative/indicative morphology",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-013",
+      "reference": "1 Peter 5:13",
+      "unit": "Babylon and rare Rome-related later readings",
+      "priority": "P1",
+      "currentState": "DISCOVERY_VERIFIED_EXACT_WITNESS_HOLD",
+      "learnerValue": "distinguish text reading from interpretation of Babylon as Rome",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-014",
+      "reference": "1 Peter 5:14",
+      "unit": "ending/benediction variation",
+      "priority": "P2",
+      "currentState": "DISCOVERY_ONLY_APPARATUS_HOLD",
+      "learnerValue": "manuscript endings and liturgical expansion",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-015",
+      "reference": "1 Peter 1–5",
+      "unit": "P72 as an actual early manuscript object",
+      "priority": "P0",
+      "currentState": "DIGITAL_OBJECT_ROUTE_VERIFIED_PASSAGE_LEVEL_WORK_PENDING",
+      "learnerValue": "teach manuscript object, transcription, correction and coverage concepts",
+      "competitiveCandidate": false
+    },
+    {
+      "id": "1p-tc-016",
+      "reference": "1 Peter 1–3",
+      "unit": "P81 and P125 fragmentary coverage",
+      "priority": "P1",
+      "currentState": "CATALOG_COVERAGE_VERIFIED_EXACT_VARIANT_WORK_PENDING",
+      "learnerValue": "a witness cannot testify where its surviving fragment has no text",
+      "competitiveCandidate": false
+    }
+  ],
+  "admissionContract": {
+    "requiresExactReference": true,
+    "requiresPinnedBaseReading": true,
+    "requiresPinnedAlternativeReading": true,
+    "manuscriptClaimsRequireApparatusInspection": true,
+    "editorialReasonClaimsRequireEditorialCommentaryOrMethodInspection": true,
+    "defaultCompetitiveCandidate": false
+  }
+}
