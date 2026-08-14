@@ -1,7 +1,7 @@
 # 1 Коринфянам 11:4–5 — ritual/divination/prophetic head-state dossier
 
 **Статус:** `EVERGREEN-DOSSIER / FEMALE-MANTIC-PERSONNEL / RITUAL-HEAD-STATE / OBJECT-IDENTITY / PARALLEL-BRANCH-RECHECKED / DIRECT-TERMESSOS-PHI / DIRECT-POTTA-PHI / RESEARCH-ONLY / PUBLICATION-HOLD`  
-**Последняя проверка:** 2026-08-11
+**Последняя проверка:** 2026-08-14
 
 ## 0. Authority / scope
 
@@ -24,6 +24,7 @@ SEQUENTIAL_EDITOR_NUMBERING != OBJECT_CROSSWALK_PROOF
 CULT_CONTEXT != PROPHETIS_NOUN_BEARER
 ADJACENT_OBJECT != TARGET_OBJECT
 PDF_TEXT_LAYER != PAGE_IMAGE_AUTOPSY
+PRINTED_TEXT_PAGE_AUTOPSY != SAME_OBJECT_ARTIFACT_PHOTO
 LATE_MANTIC_ANGELIC_LANGUAGE != DIRECT_1COR11_ANGELS_BACKGROUND
 NEGATIVE_BOUNDED_SEARCH != GLOBAL_NONEXISTENCE
 AGENT_BRANCH_CLOSED_DIRECT != TARGET_VERIFIED_BODY
@@ -37,7 +38,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 
 | Node | Evidence status | Safe use | Same-object head/hair? |
 |---|---|---|---|
-| **Philokrateia, Argos** | direct `προμάντις`, c.92/91 BCE oracle tied to Mnasistratos, sacrifices and mysteries | named pre-Pauline female mantic official in linked Messenian-mystery dossier | direct p.445 photo = non-figural stele; no depicted head/hair |
+| **Philokrateia, Argos** | direct `προμάντις`, c.92/91 BCE oracle tied to Mnasistratos, sacrifices and mysteries | named pre-Pauline female mantic official; relation to the Andania regulation is chronology-dependent | direct p.445 photo = non-figural stele; no depicted head/hair |
 | Tryphosa, Didyma | direct `προφῆτις`; PHI 247445 / SEG 30.1286 = Didyma 708; Didyma III.7 body direct | near-Pauline Didyma woman | Taf.18 n.708 = non-figural inscribed marble plate |
 | Eresos / IG XII Suppl.126 | direct 2C BCE sanctuary regulation excepts priestess + prophetess from female temple-entry ban | pre-Pauline institutional office | no named woman |
 | Eirene, Miletos/Didyma | direct `πρόμαντις` | female mantic title | no |
@@ -47,7 +48,7 @@ Every external candidate must pass **noun-bearer + syntax + object identity + ch
 | **Potta, Maionia** | direct first-party PHI indexed body, `TAM V,1 535`: `Ποτταν ... προφῆτιν σώτειραν`; target indexed with `laurus` | secure external Asia-Minor female `prophetis` noun-bearer | target monument = laurel-motif stele, not neighboring veiled figure |
 | Ammias, Thyateira | direct priestess + postmortem vision-oracle formula | oracular priestly control, not prophetis | no |
 | Ammia, Philadelphia | Eusebian female prophetess | early-Christian reception | no |
-| Nanas, Phrygia | PHI-indexed `προφήτισα`; Poirier prints full epitaph | late prophetess / angelic-language comparator | no head marker found |
+| Nanas, Phrygia | PHI-indexed `προφήτισα`; Poirier official PDF prints full epitaph | late prophetess / angelic-language comparator | printed inscription has no head/hair wording; same-object artifact image still requires Tabbernee fig.77 |
 | **Apphe, Kalchedon** | direct PHI `Ἄπφης προφήτιδος` in funerary text | Roman female `prophetis`; Apphe herself bears title | no head/hair marker |
 | Miletos 481 | women among divine-manifestation channels | female divine-information control | no |
 | Thera / IG XII.3 1349/863 | anonymous Delphic `[προφ]ῆτις` sends oracle | role control | no |
@@ -97,12 +98,14 @@ PHILOKRATEIA_NAMED_WOMAN = A_TEXT
 PHILOKRATEIA_ARGOS_APOLLO_PYTHAEUS_CONTEXT = A_OBJECT_CONTEXT
 PHILOKRATEIA_DATE_C92_91_BCE = B_HIGH_SPECIALIST_RECONSTRUCTION
 PHILOKRATEIA_MNASISTRATOS_SACRIFICES_MYSTERIES_LINK = A_TEXT
-PHILOKRATEIA_ANDANIA_REFORM_DOSSIER_LINK = B_HIGH_CONTEXTUAL
+PHILOKRATEIA_ANDANIA_REFORM_DOSSIER_LINK = B_CONTEXTUAL_CHRONOLOGY_DEPENDENT
 PHILOKRATEIA_CGRN_232_OBJECT_ROUTE = CLOSED
 PHILOKRATEIA_VOLLGRAFF_1909_P445_SAME_OBJECT_PHOTO = CLOSED_DIRECT_IMAGE
 PHILOKRATEIA_P445_FIGURAL_HEAD_HAIR_MARKER = NOT_PRESENT
 PHILOKRATEIA_SAME_OBJECT_HEAD_HAIR_CODE = NOT_ATTESTED
 ```
+
+The bridge from this oracle/Mnasistratos dossier to the specific Andania regulation `IG V,1 1390` must remain below B-high because the regulation itself has a live dating dispute (`91 BCE` vs `c.23 CE`). The direct Philokrateia oracle facts do not depend on solving that dispute; the **cross-document reform-dossier linkage does**.
 
 ```text
 PHILOKRATEIA_PROMANTIS + RELATED_ANDANIA_HEAD_HAIR_RULES
@@ -245,12 +248,20 @@ Direct priestess + postmortem vision-oracle formula. Safe use: oracular priestly
 
 PHI-indexed `προφήτισα`; Poirier 2004 prints full epitaph. Religious identity and interpretation of angelic-visitation language remain disputed.
 
+Official source:
+- John C. Poirier, “The Montanist Nature of the Nanas Inscription (Steinepigramme 16/41/15),” *Epigraphica Anatolica* 37 (2004): 151–159;
+- University of Cologne / Institut für Altertumskunde official journal PDF: `037151_Poirier_The_Montanist_Nature_of_the_Nanas_Inscription__Steinepigramme_16-41-15_.pdf`.
+
+The official PDF body is directly readable. Its printed p.151 page was visually inspected and contains Poirier's complete edited inscription. That page contains no veil/headband/hair term. This closes **printed-text page autopsy**, not the visual appearance of the stone itself. Poirier explicitly points to Tabbernee fig.77 for epigraphical/image details, and that same-object artifact image remains separately unrendered.
+
 ```text
 NANAS_RELIGIOUS_IDENTITY = DISPUTED
 NANAS_ANGELIC_VISITATION_SPEECH_LANGUAGE = DIRECT_TEXT_WITH_DISPUTED_INTERPRETATION
 NANAS_ANGELIC_LANGUAGE_AS_DIRECT_1COR11_ANGELS_BACKGROUND = PROHIBITED
-NANAS_SAME_OBJECT_HEAD_HAIR_MARKER = NOT_FOUND
-NANAS_PDF_PAGE_IMAGE_AUTOPSY = TERMINAL_PUBLIC_ROUTE_HOLD_CURRENT_RUNTIME
+NANAS_POIRIER_2004_OFFICIAL_PDF_BODY = CLOSED_DIRECT_UNIVERSITY_OF_COLOGNE
+NANAS_POIRIER_COMPLETE_INSCRIPTION_PRINTED_PAGE_AUTOPSY = CLOSED_VISUAL_TEXT_PAGE
+NANAS_PRINTED_INSCRIPTION_HEAD_HAIR_WORDING = NOT_PRESENT
+NANAS_SAME_OBJECT_ARTIFACT_HEAD_HAIR_VISUAL = NOT_CLOSED_WITHOUT_TABBERNEE_FIG77
 TABBERNEE_FIG77_OBJECT_IMAGE = TERMINAL_EXTERNAL_IMAGE_HOLD_CURRENT_RUNTIME
 ```
 
@@ -454,16 +465,16 @@ LYCOSURA_HAIR_AND_COVERING_DISTINCT_RULE_ITEMS = A_PRIMARY
 LYCOSURA_EXACT_GENDER_MAPPING = OPEN
 ```
 
-CGRN links the Argive oracle received through the Mnasistratos mission to the wider Messenian mystery-reform dossier:
+CGRN links the Argive oracle received through the Mnasistratos mission to the wider Messenian mystery-reform dossier, but the strength of the bridge to the **specific Andania regulation** depends on the disputed date of `IG V,1 1390`:
 
 ```text
 PHILOKRATEIA = NAMED_PRE_PAULINE_PROMANTIS
 MESSENIAN_MYSTERY_REFORM_ORACLE = DIRECT_TEXT
 ANDANIA_HEADWEAR_HAIR_REGULATION = DIRECT_TEXT
-ORACLE_REFORM_DOSSIER_LINK = B_HIGH_CONTEXTUAL
+ORACLE_ANDANIA_REGULATION_DOSSIER_LINK = B_CONTEXTUAL_CHRONOLOGY_DEPENDENT
 ```
 
-But contextual dossier linkage is not same-person dress evidence.
+Contextual dossier linkage is not same-person dress evidence, and the two direct objects remain independently useful even if their tighter reform-stage synchronization is not established.
 
 Visual controls:
 
@@ -473,6 +484,7 @@ PHILOKRATEIA_P445_FIGURAL_HEAD_HAIR_MARKER = NOT_PRESENT
 TRYPHOSA_TAF18_N708_SAME_OBJECT_IMAGE = CLOSED_NONFIGURAL
 POTTA_TAM535_SAME_OBJECT_VISUAL_MOTIF = LAUREL_LEAF
 POTTA_NEIGHBORING_VEILED_FIGURE = DIFFERENT_OBJECT
+NANAS_POIRIER_PRINTED_INSCRIPTION_PAGE = CLOSED_VISUAL_TEXT_PAGE
 NANAS_TABBERNEE_FIG77 = TERMINAL_EXTERNAL_IMAGE_HOLD_CURRENT_RUNTIME
 APPHE_DIRECT_PHI_TEXT = CLOSED / PRINTED_CIG_IMAGE_OPTIONAL
 TERMESSOS_870_DIRECT_TEXT = CLOSED / SAME_OBJECT_IMAGE_NOT_AUTOPSIED
@@ -560,7 +572,7 @@ NAMED_PRE_PAULINE_FEMALE_MANTIC_PERSON = A_EPIGRAPHIC_DIRECT_PHILOKRATEIA
 PRE_PAULINE_GREEK_PROPHETESS_OFFICE_IN_RITUAL_SPACE = A_EPIGRAPHIC_ERESOS
 FEMALE_DIVINE_MEDIATION_IN_ASIA_MINOR = A_B_HIGH
 RITUAL_HEADWEAR_AND_HAIR_CAN_BE_SEPARATELY_REGULATED = A_PRIMARY
-NAMED_FEMALE_MANTIC_PERSON_LINKED_TO_RITUAL_REFORM_DOSSIER = B_HIGH_COMPARATIVE
+PHILOKRATEIA_ANDANIA_REGULATION_BRIDGE = B_CONTEXTUAL_CHRONOLOGY_DEPENDENT
 POTTA_TAM_V1_535_FEMALE_PROPHETIS = A_DIRECT_PHI_INDEXED_BODY
 TERMESSSOS_870_FEMALE_PROPHETIS = A_DIRECT_PHI_INDEXED_BODY
 DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
@@ -568,7 +580,7 @@ DIRECT_NEAR_PAULINE_PROPHETESS_HEAD_HAIR_CODE = HOLD_NOT_VERIFIED
 
 Safe synthesis:
 
-> The comparative case is stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania directly separates ritual headwear and hair rules. Potta is now independently closed from the first-party PHI index as a Maionian `prophetis` and `soteira`; Apphe is directly closed from PHI as the female `prophetis` noun-bearer herself; and Termessos 870 is independently closed from the first-party PHI index as Aurelia Orestiane, `prophetis` of sacred Eleusinian rites. These strengthen the female ritual-prophetic personnel corpus, but no checked same-object source identifies a particular veil/headband/hairstyle for Philokrateia, Tryphosa, Eirene, Potta, Apphe or Orestiane. Nisyra remains a very likely reference error after direct PHI indexed-text control rejected the arena reversal. Therefore the ritual corpus still does not identify the exact Corinthian trigger or a direct near-Pauline prophetess head/hair code.
+> The comparative case is stronger than a generic “women could prophesy” claim. Philokrateia supplies a named pre-Pauline `promantis` in an Argive oracle tied directly to Mnasistratos, sacrifices and the Messenian mysteries; Eresos independently proves a pre-Pauline female prophetic office inside sanctuary-space regulation; Andania independently separates ritual headwear and hair rules. The **tighter Philokrateia-oracle ↔ Andania-regulation reform-stage bridge remains chronology-dependent** because the Andania regulation is dated either to 91 BCE or around 23 CE in competing reconstructions. Potta is independently closed from the first-party PHI index as a Maionian `prophetis` and `soteira`; Apphe is directly closed from PHI as the female `prophetis` noun-bearer herself; and Termessos 870 is independently closed from the first-party PHI index as Aurelia Orestiane, `prophetis` of sacred Eleusinian rites. These strengthen the female ritual-prophetic personnel corpus, but no checked same-object source identifies a particular veil/headband/hairstyle for Philokrateia, Tryphosa, Eirene, Potta, Apphe or Orestiane. Poirier's printed Nanas inscription is now visually controlled and contains no head/hair wording, while Tabbernee fig.77 remains the separate same-object artifact-image hold. Nisyra remains a very likely reference error after direct PHI indexed-text control rejected the arena reversal. Therefore the ritual corpus still does not identify the exact Corinthian trigger or a direct near-Pauline prophetess head/hair code.
 
 **No core grade reversal.**
 
@@ -590,6 +602,8 @@ TERMESSOS_TAMIII1_870_SAME_OBJECT_IMAGE = NOT_AUTOPSIED_NONBLOCKING
 POTTA_TAM_V1_535_DIRECT_PHI_INDEXED_BODY = CLOSED_DIRECT_FIRST_PARTY_PHI
 POTTA_TAM_V1_535_FEMALE_PROPHETIS = CLOSED_DIRECT
 POTTA_TAM_V1_535_DIRECT_OBJECT_PAGE_RENDER = OPTIONAL_TRANSPORT_CUSTODY
+NANAS_POIRIER_2004_OFFICIAL_PDF_BODY = CLOSED_DIRECT_UNIVERSITY_OF_COLOGNE
+NANAS_POIRIER_COMPLETE_INSCRIPTION_PRINTED_PAGE_AUTOPSY = CLOSED_VISUAL_TEXT_PAGE
 NANAS_TABBERNEE_FIG77 = TERMINAL_EXTERNAL_IMAGE_HOLD_CURRENT_RUNTIME
 IGII2_13148 = VERY_LIKELY_REFERENCE_ERROR / INTENDED_REFERENCE_UNKNOWN / DO_NOT_GUESS
 SEG49_1624 = VERY_LIKELY_REFERENCE_ERROR / ARENA_REVERSAL_REJECTED / INTENDED_REFERENCE_UNKNOWN / DO_NOT_GUESS
@@ -597,7 +611,8 @@ CORRINGTON_1991_DIRECT_FULLTEXT = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
 ```
 
 ```text
-RITUAL_CURRENT_PUBLIC_ROUTE_QUEUE = ACTIVE_ONLY_FOR_GENUINELY_NEW_RENDERABLE_PRIMARY_ROUTE
+RITUAL_CURRENT_PUBLIC_ROUTE_QUEUE = EMPTY_CURRENT_KNOWN_ROUTES
+RITUAL_REOPEN = ONLY_NEW_RENDERABLE_PRIMARY_ROUTE_OR_MATERIALLY_DISTINCT_SOURCE
 REPEAT_EXHAUSTED_ROUTE = NO
 TERMINAL_ACCESS_HOLD != NEGATIVE_EVIDENCE
 NEW_DIRECT_CORPUS_OR_AUTHORIZED_ACCESS = REOPEN_TRIGGER
