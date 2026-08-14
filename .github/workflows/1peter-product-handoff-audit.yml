@@ -53,9 +53,9 @@ jobs:
           pointer = json.loads((root / 'CURRENT_RELEASE.json').read_text(encoding='utf-8'))
           manifest = json.loads((release / 'release-manifest.json').read_text(encoding='utf-8'))
           index = json.loads((release / 'bundle-index.json').read_text(encoding='utf-8'))
-          bundle = (release / 'handoff-release.tar.gz').read_bytes()
+          bundle = (release / 'handoff-release.tar.xz').read_bytes()
 
-          with tarfile.open(fileobj=io.BytesIO(bundle), mode='r:gz') as tar:
+          with tarfile.open(fileobj=io.BytesIO(bundle), mode='r:xz') as tar:
               members = {m.name: tar.extractfile(m).read() for m in tar.getmembers() if m.isfile()}
           claims = json.loads(members['claim-digests.json'])
           edges = json.loads(members['claim-source-edge-ids.json'])

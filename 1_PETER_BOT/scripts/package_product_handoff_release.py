@@ -2,10 +2,10 @@
 from __future__ import annotations
 
 import argparse
-import gzip
 import hashlib
 import io
 import json
+import lzma
 import shutil
 import sys
 import tarfile
@@ -14,7 +14,7 @@ from pathlib import Path
 import build_product_handoff_release as build
 import validate_product_handoff as core
 
-BUNDLE_NAME = "handoff-release.tar.gz"
+BUNDLE_NAME = "handoff-release.tar.xz"
 INDEX_NAME = "bundle-index.json"
 MANIFEST_NAME = "release-manifest.json"
 
@@ -29,33 +29,31 @@ def sha256_bytes(payload: bytes) -> str:
 
 def deterministic_bundle(files: dict[str, bytes]) -> bytes:
     raw = io.BytesIO()
-    with gzip.GzipFile(filename="", mode="wb", fileobj=raw, compresslevel=9, mtime=0) as gz:
-        with tarfile.open(fileobj=gz, mode="w", format=tarfile.USTAR_FORMAT) as tar:
-            for name in sorted(files):
-                payload = files[name]
-                info = tarfile.TarInfo(name=name)
-                info.size = len(payload)
-                info.mode = 0o644
-                info.uid = 0
-                info.gid = 0
-                info.uname = ""
-                info.gname = ""
-                info.mtime = 0
-                tar.addfile(info, io.BytesIO(payload))
-    return raw.getvalue()
+    with tarfile.open(fileobj=raw, mode="w", format=tarfile.USTAR_FORMAT) as tar:
+        for name in sorted(files):
+            payload = files[name]
+            info = tarfile.TarInfo(name=name)
+            info.size = len(payload)
+            info.mode = 0o644
+            info.uid = 0
+            info.gid = 0
+            info.uname = ""
+            info.gname = ""
+            info.mtime = 0
+            tar.addfile(info, io.BytesIO(payload))
+    return lzma.compress(raw.getvalue(), format=lzma.FORMAT_XZ, preset=9)
 
 
 def bundle_members(payload: bytes) -> dict[str, bytes]:
     result: dict[str, bytes] = {}
-    with gzip.GzipFile(fileobj=io.BytesIO(payload), mode="rb") as gz:
-        with tarfile.open(fileobj=gz, mode="r:") as tar:
-            for member in tar.getmembers():
-                if not member.isfile():
-                    raise build.ReleaseError(f"non-file member in immutable bundle: {member.name}")
-                extracted = tar.extractfile(member)
-                if extracted is None:
-                    raise build.ReleaseError(f"cannot read immutable bundle member: {member.name}")
-                result[member.name] = extracted.read()
+    with tarfile.open(fileobj=io.BytesIO(payload), mode="r:xz") as tar:
+        for member in tar.getmembers():
+            if not member.isfile():
+                raise build.ReleaseError(f"non-file member in immutable bundle: {member.name}")
+            extracted = tar.extractfile(member)
+            if extracted is None:
+                raise build.ReleaseError(f"cannot read immutable bundle member: {member.name}")
+            result[member.name] = extracted.read()
     return result
 
 
@@ -79,7 +77,7 @@ def compact_release(files: dict[str, bytes]) -> tuple[bytes, bytes, bytes, bytes
         "release_payload_sha256": manifest["release_payload_sha256"],
         "bundle_name": BUNDLE_NAME,
         "bundle_sha256": bundle_sha,
-        "bundle_format": "tar+gzip; gzip_mtime=0; sorted USTAR members; uid=gid=0; mtime=0",
+        "bundle_format": "tar+xz; sorted USTAR members; uid=gid=0; mtime=0; XZ preset=9",
         "member_count": len(files),
         "members": sorted(files),
         "expanded_member_sha256": {
@@ -173,6 +171,6 @@ def main() -> None:
 if __name__ == "__main__":
     try:
         main()
-    except (build.ReleaseError, core.AuditError, AssertionError, OSError, ValueError, tarfile.TarError) as exc:
+    except (build.ReleaseError, core.AuditError, AssertionError, OSError, ValueError, lzma.LZMAError, tarfile.TarError) as exc:
         print(f"IMMUTABLE_COMPACT_HANDOFF_RELEASE_FAIL: {exc}", file=sys.stderr)
         sys.exit(2)
