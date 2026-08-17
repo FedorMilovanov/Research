@@ -29,9 +29,17 @@ SOURCE_PATH_RE = re.compile(
     r"источник|литератур|библиограф|рукопис|архив",
     re.I,
 )
-TEMPLATE_RE = re.compile(r"\$\{?|\{\{|%[A-Z_]+%|<[^>]+>|\*\.")
+TEMPLATE_RE = re.compile(r"\$\{?|\{\{|\{[A-Za-z_][A-Za-z0-9_]*|%[A-Z_]+%|<[^>]+>|\*\.")
+CSV_METADATA_SUFFIX_RE = re.compile(r",(?:Official|Contemporary|physical|reproduced|\d{1,5})$", re.I)
 METADATA_DOMAINS = {"samizdat.library.utoronto.ca", "almanah.bogomysliye.com", "repository.up.ac.za"}
 LEGACY_PROJECT_DOMAINS = {"raw.githubusercontent.com", "github.com"}
+BAPTIST_COLLECTIONS = (
+    (re.compile(r"utren(?:nyaya|niaia)[-_]?zvezda", re.I), "https://baptist.org.ru/izdania/utrenniiazvezda"),
+    (re.compile(r"bratsk(?:iy|ii)[-_]?vestnik", re.I), "https://baptist.org.ru/izdania/bratskiivestnik"),
+    (re.compile(r"khristianin|hristianin", re.I), "https://baptist.org.ru/izdania/hristianin"),
+    (re.compile(r"(?:^|[/_-])baptist[-_]?(?:18|19|20)\d{2}", re.I), "https://baptist.org.ru/izdania/baptist"),
+)
+_COLLECTION_CACHE: dict[str, dict] = {}
 
 
 def read_rows() -> list[dict[str, str]]:
@@ -56,6 +64,9 @@ def unbalanced(url: str) -> bool:
 
 def clean_metadata_suffix(url: str, domain: str) -> tuple[str, str]:
     value = html.unescape(url).strip()
+    metadata_match = CSV_METADATA_SUFFIX_RE.search(value)
+    if metadata_match:
+        return value[:metadata_match.start()], "comma-separated ledger metadata removed"
     if domain in METADATA_DOMAINS and "," in value:
         return value.split(",", 1)[0], "comma-separated ledger metadata removed"
     if ";Telegram" in value:
@@ -118,6 +129,29 @@ def check(url: str) -> dict:
     return last
 
 
+def recover_baptist_collection(url: str, domain: str) -> tuple[str, dict | None]:
+    if domain != "baptist.org.ru":
+        return "", None
+    try:
+        path = urlsplit(url).path
+    except Exception:
+        return "", None
+    # The old `_service` PDF endpoints were retired, while the official Union
+    # still exposes issue indexes for these historical periodicals. Treat a
+    # live collection index as recoverable institutional custody, not as a
+    # vanished source. Exact dead deep links remain visible in the full CSV.
+    if "/_service/" not in path.lower():
+        return "", None
+    for pattern, collection_url in BAPTIST_COLLECTIONS:
+        if pattern.search(path):
+            result = _COLLECTION_CACHE.get(collection_url)
+            if result is None:
+                result = check(collection_url)
+                _COLLECTION_CACHE[collection_url] = result
+            return collection_url, result
+    return "", None
+
+
 def main() -> int:
     classified: list[dict] = []
     for row in read_rows():
@@ -162,7 +196,17 @@ def main() -> int:
         elif result["status"] in {"SERVER_ERROR", "REQUEST_ERROR"}:
             classification = "TEMPORARY_OR_NETWORK_RETRY"
         elif result["status"] == "DEAD":
-            if SOURCE_PATH_RE.search(row["example_paths"]):
+            collection_url, collection_result = recover_baptist_collection(cleaned, domain)
+            if collection_result and collection_result["status"] in {"OK", "RESTRICTED"}:
+                classification = "RECOVERABLE_OFFICIAL_COLLECTION_MIGRATION"
+                clean_reason = (
+                    f"retired deep PDF endpoint; official collection index is {collection_result['status']}: {collection_url}"
+                )
+                result = {
+                    **result,
+                    "final_url": collection_result.get("final_url") or collection_url,
+                }
+            elif SOURCE_PATH_RE.search(row["example_paths"]):
                 classification = "TRUE_DEAD_SOURCE_REPAIR"
             else:
                 classification = "DEAD_NON_SOURCE_REFERENCE_REVIEW"
@@ -190,6 +234,7 @@ def main() -> int:
         "",
         f"- raw refined-DEAD rows: **{len(classified)}**",
         f"- true dead source repair candidates after recheck: **{len(true_dead)}**",
+        f"- recoverable official collection migrations: **{counts['RECOVERABLE_OFFICIAL_COLLECTION_MIGRATION']}**",
         "",
         "| Classification | Count |",
         "|---|---:|",
@@ -199,6 +244,8 @@ def main() -> int:
     report += [
         "",
         "`TRUE_DEAD_SOURCE_REPAIR` is still a repair queue, not proof that the cited claim is false. Replace with a current institutional landing page, archived copy, DOI, catalog record or a different primary witness; do not silently delete evidence.",
+        "",
+        "`RECOVERABLE_OFFICIAL_COLLECTION_MIGRATION` means the old deep item endpoint is retired but a live official institutional issue index was verified during this run. The old URL remains recorded in the full classification CSV for eventual deep-link normalization.",
     ]
     (OUT / "DEAD_URL_CLASSIFICATION.md").write_text("\n".join(report) + "\n", encoding="utf-8")
     (OUT / "summary.json").write_text(json.dumps({"total": len(classified), "counts": dict(counts)}, ensure_ascii=False, indent=2), encoding="utf-8")
