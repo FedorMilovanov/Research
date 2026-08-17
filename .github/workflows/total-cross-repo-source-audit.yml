@@ -65,7 +65,20 @@ jobs:
           MAX_NEW_DEAD: '0'
           MAX_NEW_MISSING_LOCAL: '0'
           MAX_NEW_PUBLICATION_PROVENANCE: '0'
-        run: python SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py
+        run: |
+          set +e
+          python SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py
+          code=$?
+          set -e
+          mkdir -p total-audit-output
+          printf '%s\n' "$code" > total-audit-output/RAW_AUDIT_EXIT_CODE.txt
+          if [ "$code" -ne 0 ] && [ "$code" -ne 2 ]; then
+            echo "::error::raw source auditor crashed with unexpected exit code $code"
+            exit "$code"
+          fi
+          if [ "$code" -eq 2 ]; then
+            echo "::notice::raw heuristic gate reported a classified-baseline mismatch; authoritative enforcement is deferred to the committed refined/classifier outputs below"
+          fi
 
       - name: Run refined source-only audit
         env:
@@ -76,19 +89,55 @@ jobs:
       - name: Classify true dead sources
         run: python SOURCE_LIBRARY/tools/classify_dead_source_urls.py
 
-      - name: Enforce actionable true-dead baseline
+      - name: Evaluate classified source baseline
         run: |
           python - <<'PY'
-          import csv, json
           from pathlib import Path
+          import json
+
+          root = Path('total-audit-output')
           baseline = json.loads(Path('SOURCE_LIBRARY/audit-baseline.json').read_text(encoding='utf-8'))
-          queue = Path('total-audit-output/dead-url-classification/true_dead_source_repair_queue.csv')
-          with queue.open(encoding='utf-8-sig', newline='') as handle:
-              current = sum(1 for _ in csv.DictReader(handle))
-          expected = int(baseline['true_dead_source_repair'])
-          if current > expected:
-              raise SystemExit(f'new true-dead source records: {current} > baseline {expected}')
-          print(f'true-dead gate: {current} <= {expected}')
+          refined = json.loads((root / 'refined' / 'refined_summary.json').read_text(encoding='utf-8'))
+          dead = json.loads((root / 'dead-url-classification' / 'summary.json').read_text(encoding='utf-8'))
+          raw = json.loads((root / 'summary.json').read_text(encoding='utf-8'))
+          raw_exit = int((root / 'RAW_AUDIT_EXIT_CODE.txt').read_text(encoding='utf-8').strip())
+
+          metrics = {
+              'high_priority_dead': int(refined.get('high_priority_dead', 0)),
+              'true_dead_source_repair': int(dead.get('counts', {}).get('TRUE_DEAD_SOURCE_REPAIR', 0)),
+              'likely_missing_file_references': int(refined.get('missing_classification', {}).get('LIKELY_MISSING_FILE_REFERENCE', 0)),
+              'publication_assets_without_provenance': int(refined.get('asset_classification', {}).get('PUBLICATION_ASSET_ADD_PROVENANCE_LEDGER', 0)),
+          }
+          limits = {
+              'high_priority_dead': int(baseline['dead_urls']),
+              'true_dead_source_repair': int(baseline['true_dead_source_repair']),
+              'likely_missing_file_references': int(baseline['missing_local_links']),
+              'publication_assets_without_provenance': int(baseline['publication_assets_without_provenance']),
+          }
+          failures = [
+              f'{key}: {metrics[key]} > baseline {limits[key]}'
+              for key in metrics
+              if metrics[key] > limits[key]
+          ]
+          receipt = {
+              'schemaVersion': 1,
+              'authority': baseline.get('authority'),
+              'raw_audit_exit_code': raw_exit,
+              'raw_diagnostic_counts': {
+                  'dead': int(raw.get('url_status', {}).get('DEAD', 0)),
+                  'missing_local': int(raw.get('missing_local', 0)),
+                  'publication_assets_without_provenance': int(raw.get('publication_assets_without_provenance', 0)),
+              },
+              'classified_metrics': metrics,
+              'classified_limits': limits,
+              'failures': failures,
+              'ok': not failures,
+          }
+          (root / 'CLASSIFIED_BASELINE_GATE.json').write_text(
+              json.dumps(receipt, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+          print('CLASSIFIED_BASELINE_EVALUATION', json.dumps(receipt, ensure_ascii=False))
           PY
 
       - name: Show executive reports
@@ -98,6 +147,29 @@ jobs:
           sed -n '1,240p' total-audit-output/refined/REFINED_TOTAL_SOURCE_AUDIT.md
           printf '\n--- DEAD URL CLASSIFICATION ---\n'
           cat total-audit-output/dead-url-classification/DEAD_URL_CLASSIFICATION.md
+          printf '\n--- CLASSIFIED BASELINE GATE ---\n'
+          cat total-audit-output/CLASSIFIED_BASELINE_GATE.json
+
+      - name: Show actionable gate queues
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          missing_path = Path('total-audit-output/refined/classified_missing_local_links.csv')
+          dead_path = Path('total-audit-output/dead-url-classification/true_dead_source_repair_queue.csv')
+
+          print('--- LIKELY_MISSING_FILE_REFERENCE rows ---')
+          with missing_path.open(encoding='utf-8-sig', newline='') as handle:
+              for row in csv.DictReader(handle):
+                  if row.get('classification') == 'LIKELY_MISSING_FILE_REFERENCE':
+                      print('ACTIONABLE_MISSING', json.dumps(row, ensure_ascii=False, sort_keys=True))
+
+          print('--- TRUE_DEAD_SOURCE_REPAIR rows ---')
+          with dead_path.open(encoding='utf-8-sig', newline='') as handle:
+              for row in csv.DictReader(handle):
+                  print('ACTIONABLE_DEAD', json.dumps(row, ensure_ascii=False, sort_keys=True))
+          PY
 
       - name: Build reproducibility manifest
         run: |
@@ -105,6 +177,7 @@ jobs:
           cp SOURCE_LIBRARY/tools/refine_total_cross_repo_audit.py total-audit-output/
           cp SOURCE_LIBRARY/tools/classify_dead_source_urls.py total-audit-output/
           cp requirements/source-audit.lock total-audit-output/
+          cp SOURCE_LIBRARY/audit-baseline.json total-audit-output/
           git rev-parse HEAD > total-audit-output/RESEARCH_COMMIT.txt
           python -m pip freeze > total-audit-output/PIP_FREEZE.txt
           sha256sum requirements/source-audit.lock > total-audit-output/DEPENDENCY_LOCK_SHA256.txt
@@ -132,9 +205,23 @@ jobs:
         run: git diff --exit-code
 
       - name: Upload total audit evidence
+        if: always()
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
         with:
           name: total-cross-repo-source-audit
           path: total-audit-output/
           if-no-files-found: error
           retention-days: 30
+
+      - name: Enforce classified source baseline
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          receipt = json.loads(Path('total-audit-output/CLASSIFIED_BASELINE_GATE.json').read_text(encoding='utf-8'))
+          if not receipt.get('ok'):
+              for failure in receipt.get('failures', []):
+                  print(f'GATE_FAILURE: {failure}')
+              raise SystemExit(2)
+          print('CLASSIFIED_BASELINE_GATE_OK', json.dumps(receipt['classified_metrics'], ensure_ascii=False))
+          PY

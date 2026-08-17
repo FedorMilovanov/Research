@@ -38,7 +38,8 @@ CONTENT_PATH_RE = re.compile(
 ARCHIVE_PATH_RE = re.compile(r"(^|/)(archive|incoming|stale-incoming|_build-tools)(/|$)", re.I)
 PROCESS_DOC_RE = re.compile(r"migration|session.crash|constraints|priority|changelog|readme", re.I)
 STATUS_SUFFIX_RE = re.compile(r",(?=[A-Z][A-Z0-9_ -]{2,}(?:,|$))")
-TEMPLATE_RE = re.compile(r"\$\{|\{\{|%BASE_URL%|<[^>]+>|\[\*\]|\*\.")
+CSV_METADATA_SUFFIX_RE = re.compile(r",(?:Official|Contemporary|physical|reproduced|\d{1,5})$", re.I)
+TEMPLATE_RE = re.compile(r"\$\{|\{\{|\{[A-Za-z_][A-Za-z0-9_]*|%BASE_URL%|<[^>]+>|\[\*\]|\*\.")
 LOCAL_RE = re.compile(r"^https?://(?:127\.0\.0\.1|localhost|0\.0\.0\.0)(?::\d+)?", re.I)
 DOC_EXAMPLE_RE = re.compile(r"(?:^|/)(docs?|examples?|fixtures?|tests?|qa|scripts?)(?:/|$)", re.I)
 PUBLISH_ASSET_RE = re.compile(r"^public/images/", re.I)
@@ -64,6 +65,10 @@ def clean_url(raw: str) -> tuple[str, str]:
     if match:
         value = value[: match.start()]
         reason = "cut_csv_status_suffix"
+    metadata_match = CSV_METADATA_SUFFIX_RE.search(value)
+    if metadata_match:
+        value = value[: metadata_match.start()]
+        reason = reason or "cut_csv_metadata_suffix"
     # Common unquoted source ledgers append a semicolon + human label.
     if ";" in value:
         left, right = value.split(";", 1)
@@ -140,16 +145,17 @@ def audit_url(url: str) -> dict:
 
 
 def classify_missing(row: dict) -> str:
-    repo = row["repo"]
     path = row["source_path"]
     target = row["target"]
-    if TEMPLATE_RE.search(target):
+    if TEMPLATE_RE.search(target) or "\\/" in target or "\\.\\/" in target:
         return "TEMPLATE_OR_PATTERN_FALSE_POSITIVE"
-    if repo == "AuditRepo" and ARCHIVE_PATH_RE.search(path):
+    if ARCHIVE_PATH_RE.search(path):
         return "ARCHIVED_EVIDENCE_NO_FIX"
     if DOC_EXAMPLE_RE.search(path) and re.search(r"foo|example|sample", target, re.I):
         return "DOCUMENTATION_EXAMPLE_NO_FIX"
-    if target.startswith("/"):
+    if target.startswith("/") or target.lstrip("./").endswith("_app/index.html"):
+        return "DYNAMIC_SITE_ROUTE_REVIEW"
+    if path.endswith(".astro") and not target.startswith(("../", "./")):
         return "DYNAMIC_SITE_ROUTE_REVIEW"
     if path.endswith((".astro", ".tsx", ".ts", ".js", ".mjs")) and target.startswith(("../", "./")):
         return "SOURCE_RELATIVE_ASSET_OR_IMPORT_REVIEW"
@@ -331,7 +337,7 @@ def main() -> int:
         "",
         "1. Add a project-owned/archive-derived provenance ledger for the 13 production images in `TheLegendaryPoet/public/images`.",
         "2. Add citations to `baptisty-rossii/research/75-orthodoxy-baptists-and-why-the-sect-label-stuck-2026-06-21.md`.",
-        "3. Review only `LIKELY_MISSING_FILE_REFERENCE` rows; do not treat Astro routes or archived evidence as broken files.",
+        "3. Review only `LIKELY_MISSING_FILE_REFERENCE` rows; do not treat Astro routes, regex literals or archived evidence as broken files.",
         "4. Replace or archive high-priority `DEAD` source URLs using institutional catalogs, web archives or newer official landing pages.",
         "5. Add package/capture provenance to the one Research ZIP and three AuditRepo evidence images.",
         "6. Keep duplicate cleanup conservative: deployment copies and audit evidence may be intentional.",

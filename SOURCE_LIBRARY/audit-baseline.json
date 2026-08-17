@@ -6,5 +6,5 @@
   "true_dead_source_repair": 45,
   "missing_local_links": 24,
   "publication_assets_without_provenance": 0,
-  "notes": "The raw DEAD ceiling is the 234-row recheck set from the closeout. The actionable true-dead baseline is 45 and is enforced by the classifier workflow. Production provenance gaps were closed and therefore remain zero-tolerance."
+  "notes": "Classified closeout baseline. dead_urls is the refined/high-priority DEAD recheck ceiling, not the raw summary.json DEAD count. missing_local_links is the refined LIKELY_MISSING_FILE_REFERENCE count, not the raw missing_local_links.csv row count. true_dead_source_repair is the post-recheck TRUE_DEAD_SOURCE_REPAIR queue ceiling. publication_assets_without_provenance is the refined publication-provenance gap ceiling and remains zero-tolerance. Raw scan counts are diagnostic and must not be compared directly with these classified ceilings."
 }
