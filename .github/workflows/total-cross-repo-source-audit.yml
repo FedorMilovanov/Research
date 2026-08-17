@@ -150,6 +150,27 @@ jobs:
           printf '\n--- CLASSIFIED BASELINE GATE ---\n'
           cat total-audit-output/CLASSIFIED_BASELINE_GATE.json
 
+      - name: Show actionable gate queues
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          missing_path = Path('total-audit-output/refined/classified_missing_local_links.csv')
+          dead_path = Path('total-audit-output/dead-url-classification/true_dead_source_repair_queue.csv')
+
+          print('--- LIKELY_MISSING_FILE_REFERENCE rows ---')
+          with missing_path.open(encoding='utf-8-sig', newline='') as handle:
+              for row in csv.DictReader(handle):
+                  if row.get('classification') == 'LIKELY_MISSING_FILE_REFERENCE':
+                      print('ACTIONABLE_MISSING', json.dumps(row, ensure_ascii=False, sort_keys=True))
+
+          print('--- TRUE_DEAD_SOURCE_REPAIR rows ---')
+          with dead_path.open(encoding='utf-8-sig', newline='') as handle:
+              for row in csv.DictReader(handle):
+                  print('ACTIONABLE_DEAD', json.dumps(row, ensure_ascii=False, sort_keys=True))
+          PY
+
       - name: Build reproducibility manifest
         run: |
           cp SOURCE_LIBRARY/tools/total_cross_repo_source_audit.py total-audit-output/
