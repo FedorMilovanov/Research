@@ -1,6 +1,6 @@
-# Ubuntu 24.04 x86_64 / CPython 3.12.8 deterministic audit environment.
+# Ubuntu 24.04 x86_64 / CPython 3.12.8 deterministic audit/acquisition environment.
 # Hashes are the exact PyPI wheel SHA-256 values for the selected artifacts.
-# Keep this lock limited to the runtime HTTP stack imported by the committed auditors.
+# This lock is shared by the source auditors and the committed PDF/image acquisition workflows.
 
 certifi==2026.7.22 \
     --hash=sha256:62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775
@@ -12,3 +12,7 @@ requests==2.34.2 \
     --hash=sha256:2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0
 urllib3==2.7.0 \
     --hash=sha256:9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897
+Pillow==12.3.0 \
+    --hash=sha256:78cb2c6865a35ab8ff8b75fd122f6033b92a62c82801110e48ddd6c936a45d91
+pypdf==6.7.4 \
+    --hash=sha256:527d6da23274a6c70a9cb59d1986d93946ba8e36a6bc17f3f7cce86331492dda
