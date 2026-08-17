@@ -59,19 +59,19 @@ BAPTIST_COLLECTIONS = (
             r"(?:utren(?:nyaya|niaia)[-_]?zvezda|(?:^|[/_-])uz(?:18|19|20)\d{2}(?:[_-]|\.))",
             re.I,
         ),
-        "https://baptist.org.ru/izdania/utrenniiazvezda",
+        "https://baptist.org.ru/izdaniya/utrennyaya-zvezda/",
     ),
     (
         re.compile(r"bratsk(?:iy|ii)[-_]?vestnik", re.I),
-        "https://baptist.org.ru/izdania/bratskiivestnik",
+        "https://baptist.org.ru/izdaniya/bratskij-vestnik/",
     ),
     (
         re.compile(r"khristianin|hristianin", re.I),
-        "https://baptist.org.ru/izdania/hristianin",
+        "https://baptist.org.ru/izdaniya/hristianin/",
     ),
     (
         re.compile(r"(?:^|[/_-])baptist[-_]?(?:18|19|20)\d{2}", re.I),
-        "https://baptist.org.ru/izdania/baptist",
+        "https://baptist.org.ru/izdaniya/baptist/",
     ),
 )
 
@@ -250,16 +250,10 @@ def check(url: str, *, browser_fallback: bool = False) -> dict:
 
 def baptist_issue_identity(path: str) -> tuple[str, str] | None:
     filename = path.rsplit("/", 1)[-1]
-    match = re.search(
-        r"(?P<year>(?:18|19|20)\d{2})[_-](?P<issue>\d{1,2}(?:-\d{1,2})?)",
-        filename,
-    )
+    match = re.search(r"(?P<year>(?:18|19|20)\d{2})[_-](?P<issue>\d{1,2}(?:-\d{1,2})?)", filename)
     if match:
         return match.group("year"), str(int(match.group("issue").split("-", 1)[0]))
-    match = re.search(
-        r"(?P<issue>\d{1,2}(?:-\d{1,2})?)[_-](?P<year>(?:18|19|20)\d{2})",
-        filename,
-    )
+    match = re.search(r"(?P<issue>\d{1,2}(?:-\d{1,2})?)[_-](?P<year>(?:18|19|20)\d{2})", filename)
     if match:
         return match.group("year"), str(int(match.group("issue").split("-", 1)[0]))
     return None
@@ -306,12 +300,7 @@ def fetch_collection_page(collection_url: str) -> dict:
     return result
 
 
-def collection_confirms_issue(
-    body: str,
-    page_url: str,
-    target_url: str,
-    identity: tuple[str, str] | None,
-) -> bool:
+def collection_confirms_issue(body: str, page_url: str, target_url: str, identity: tuple[str, str] | None) -> bool:
     if not body:
         return False
 
@@ -342,10 +331,7 @@ def collection_confirms_issue(
     return False
 
 
-def recover_baptist_collection(
-    url: str,
-    domain: str,
-) -> tuple[str, dict | None, bool]:
+def recover_baptist_collection(url: str, domain: str) -> tuple[str, dict | None, bool]:
     if domain != "baptist.org.ru":
         return "", None, False
     try:
@@ -475,15 +461,8 @@ def main() -> int:
         elif result["status"] in {"SERVER_ERROR", "REQUEST_ERROR"}:
             classification = "TEMPORARY_OR_NETWORK_RETRY"
         elif result["status"] == "DEAD":
-            collection_url, collection_result, confirmed = recover_baptist_collection(
-                cleaned,
-                domain,
-            )
-            if (
-                collection_result
-                and collection_result["status"] in {"OK", "RESTRICTED"}
-                and confirmed
-            ):
+            collection_url, collection_result, confirmed = recover_baptist_collection(cleaned, domain)
+            if collection_result and collection_result["status"] in {"OK", "RESTRICTED"} and confirmed:
                 classification = "RECOVERABLE_OFFICIAL_COLLECTION_MIGRATION"
                 clean_reason = (
                     "direct PDF transport returned DEAD to the runner, but the live official Union "
