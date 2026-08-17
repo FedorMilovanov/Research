@@ -10,7 +10,7 @@ import re
 import time
 from collections import Counter
 from pathlib import Path
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import unquote, urlsplit, urlunsplit
 
 import requests
 
@@ -30,11 +30,17 @@ SOURCE_PATH_RE = re.compile(
     re.I,
 )
 TEMPLATE_RE = re.compile(r"\$\{?|\{\{|\{[A-Za-z_][A-Za-z0-9_]*|%[A-Z_]+%|<[^>]+>|\*\.")
-CSV_METADATA_SUFFIX_RE = re.compile(r",(?:Official|Contemporary|physical|reproduced|\d{1,5})$", re.I)
+CSV_METADATA_SUFFIX_RE = re.compile(
+    r",(?:Official|Contemporary|physical|reproduced|Complete|\d{1,5})$",
+    re.I,
+)
 METADATA_DOMAINS = {"samizdat.library.utoronto.ca", "almanah.bogomysliye.com", "repository.up.ac.za"}
 LEGACY_PROJECT_DOMAINS = {"raw.githubusercontent.com", "github.com"}
 BAPTIST_COLLECTIONS = (
-    (re.compile(r"utren(?:nyaya|niaia)[-_]?zvezda", re.I), "https://baptist.org.ru/izdania/utrenniiazvezda"),
+    (
+        re.compile(r"(?:utren(?:nyaya|niaia)[-_]?zvezda|(?:^|[/_-])uz(?:18|19|20)\d{2}(?:[_-]|\.))", re.I),
+        "https://baptist.org.ru/izdania/utrenniiazvezda",
+    ),
     (re.compile(r"bratsk(?:iy|ii)[-_]?vestnik", re.I), "https://baptist.org.ru/izdania/bratskiivestnik"),
     (re.compile(r"khristianin|hristianin", re.I), "https://baptist.org.ru/izdania/hristianin"),
     (re.compile(r"(?:^|[/_-])baptist[-_]?(?:18|19|20)\d{2}", re.I), "https://baptist.org.ru/izdania/baptist"),
@@ -87,6 +93,30 @@ def root_only(url: str) -> bool:
         return False
 
 
+def known_non_item_endpoint(url: str, domain: str) -> bool:
+    """Exact service/directory roots observed in ledgers, not item citations."""
+    try:
+        path = urlsplit(url).path.rstrip("/") or "/"
+    except Exception:
+        return False
+    return (domain, path.lower()) in {
+        ("upload.wikimedia.org", "/wikipedia/commons"),
+    }
+
+
+def known_linewrap_fragment(url: str, domain: str) -> bool:
+    """Exact URL fragments created by line-wrapped source text extraction."""
+    try:
+        path = urlsplit(url).path.rstrip("/") or "/"
+    except Exception:
+        return False
+    return (domain, path.lower()) in {
+        ("dhi.ac.uk", "/protestantizm/section/do"),
+        ("dhi.ac.uk", "/protestantizm/section/doc"),
+        ("pravenc.ru", "/text"),
+    }
+
+
 def https_upgrade(url: str) -> str:
     try:
         parts = urlsplit(url)
@@ -133,13 +163,15 @@ def recover_baptist_collection(url: str, domain: str) -> tuple[str, dict | None]
     if domain != "baptist.org.ru":
         return "", None
     try:
-        path = urlsplit(url).path
+        path = unquote(urlsplit(url).path)
     except Exception:
         return "", None
     # The old `_service` PDF endpoints were retired, while the official Union
     # still exposes issue indexes for these historical periodicals. Treat a
     # live collection index as recoverable institutional custody, not as a
-    # vanished source. Exact dead deep links remain visible in the full CSV.
+    # vanished source. Decode percent-escaped filenames before matching so
+    # `%2B` and similar transport encoding cannot hide the periodical identity.
+    # Exact dead deep links remain visible in the full CSV.
     if "/_service/" not in path.lower():
         return "", None
     for pattern, collection_url in BAPTIST_COLLECTIONS:
@@ -177,10 +209,13 @@ def main() -> int:
         if unbalanced(original):
             classified.append({**base, "classification": "TRUNCATED_URL_FALSE_POSITIVE", "reason": "unbalanced brackets/parentheses from Markdown or CSV extraction"})
             continue
+        if known_linewrap_fragment(original, domain):
+            classified.append({**base, "classification": "TRUNCATED_URL_FALSE_POSITIVE", "reason": "known line-wrapped source extraction fragment; the URL continues on the following source-text line"})
+            continue
         if technical_only(row["example_paths"]):
             classified.append({**base, "classification": "TECHNICAL_OR_ARCHIVED_REFERENCE", "reason": "all occurrences are scripts/audit/incoming/archive/design references"})
             continue
-        if root_only(original):
+        if root_only(original) or known_non_item_endpoint(original, domain):
             classified.append({**base, "classification": "ROOT_OR_SERVICE_ENDPOINT_NOT_SOURCE_ITEM", "reason": "domain root/service endpoint is not an item citation"})
             continue
         if domain in LEGACY_PROJECT_DOMAINS and "FedorMilovanov/gospod-bog" in original:
