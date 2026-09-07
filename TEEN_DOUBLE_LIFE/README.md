@@ -177,6 +177,16 @@ Boredom and loneliness as vulnerability/coping factors; family routines/meals wi
 
 PPU, CSBD, self-perceived addiction, moral incongruence, adolescent compulsivity, coping, biblical slavery-to-sin vs psychiatric diagnosis.
 
+### 27 — Sextortion / image abuse / suicide risk
+`27_SEXTORTION_IMAGE_BASED_ABUSE_SUICIDE_RISK_AND_EMERGENCY_RESPONSE_2026-09-07.md`
+
+Current NCMEC/FBI threat data, boys 14–17, suicidality, AI-fabricated images, sadistic exploitation, emergency safety and disclosure pathways.
+
+### 28 — Parental response to confession/disclosure
+`28_PARENTAL_RESPONSE_TO_DISCLOSURE_BEHAVIOR_CRITICISM_PERSON_SHAME_AND_TRUTH_CHANNEL_2026-09-07.md`
+
+Fresh 2026 disclosure-response evidence; behavior-critical vs person-critical response, consequences, guilt/shame, preserving truth channel without minimizing sin.
+
 ---
 
 ## Evidence discipline
@@ -203,6 +213,8 @@ The corpus must preserve these guards:
 18. Family religious practices are real socialization/formation means but empirical measures do not prove regeneration.
 19. Safeguarding disclosure must not be collapsed into church discipline; victims need protection and statutory/competent pathways where required.
 20. Boredom/loneliness can be vulnerability/maintenance factors without becoming excuses for voluntary sin.
+21. Sextortion is an emergency safeguarding/crime context; any prior voluntary sexual action does not make the subsequent extortion the child’s guilt.
+22. Person-condemning parental reactions should not be confused with biblical seriousness about sin; behavior-focused truth and real consequences can coexist with relational presence.
 
 ---
 
@@ -213,8 +225,8 @@ The corpus must preserve these guards:
 - Christian youth groups: when peer contagion becomes positive counter-formation vs hidden church subculture;
 - age/device-specific pornography exposure pathways by platform and country;
 - repentance fruit / restoration evidence and pastoral models;
-- parental response after discovering pornography: which responses preserve truth channel while enforcing consequences;
-- suicide/self-harm risk after sextortion/sexual-image crises and appropriate emergency safeguards;
+- long-term outcomes after parental pornography discovery and different family responses;
+- direct exegesis on parental discipline/anger (Eph. 6:4; Col. 3:21; Heb. 12) in relation to strong boundaries;
 - a final claim-by-claim evidence ledger grading evidence quality and causal language;
 - direct exegesis ledger for all major texts before publication.
 
