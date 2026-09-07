@@ -38,7 +38,7 @@ Part VII includes officers/key employees as well as directors; presence on the l
 
 ### FY2024
 
-Reported Part VII names include:
+An IRS-derived Part VII parser reports:
 
 - Scott Aniol — Vice President
 - Virgil Walker — VP of Ministry Relations
@@ -48,9 +48,11 @@ Reported Part VII names include:
 - Buck Braswell — Director
 - Adam Burrell — Director
 - Matt Broome — Director
-- Jonathan Frazier — also reported in the filing's people list
+- Jonathan Frazier — Director
 
-The filing reports **7 voting governing-body members, 6 independent**. Therefore the nine Part VII names cannot all simply be described as simultaneous voting directors without reconstructing the filing columns/status indicators.
+This closes Frazier's FY2024 **reported Part VII title** more strongly than the earlier generic `people list` wording, but the raw IRS XML remains the primary-grade authority.
+
+The filing reports **7 voting governing-body members, 6 independent**. Therefore the nine Part VII names cannot all simply be described as simultaneous voting directors/officers without reconstructing the filing columns and status indicators.
 
 Other reported governance features:
 
@@ -75,13 +77,30 @@ The Aniol title annotation must **not** be used to rewrite the formal succession
 
 Equally important, the FY2025 return describes a calendar-year period ending Dec. 2025. It cannot establish the exact governing board at the time of the August 2026 crisis.
 
-## May–July 2025 — board after Buice
+## May–July 2025 — Tom Buck exit window is now materially narrower
 
-Public reporting around the May 2025 crisis identifies a board including several figures outside Pray’s Mill, including Tom Buck, Chip Thornton, Buck Braswell, Adam Burrell, Matt Broome and Jonathan Frazier.
+Contemporaneous reporting on **2025-05-12** explicitly listed the post-Buice G3 board as:
+
+- Tom Buck
+- Chip Thornton
+- Buck Braswell
+- Adam Burrell
+- Matt Broome
+- Jonathan Frazier
+
+The same report reproduces Buck's own contemporaneous public reaction thanking `all the men on the G3 Board` and saying he stood behind `our decision`. This is strong evidence that Buck still understood himself to be participating in the G3 board's action at the time of the Buice crisis.
+
+A later **2026-09-05** interview with Protestia publisher David Morrill supplies a materially narrower secondary timeline. Morrill says Buck `stepped off the board after the Josh Buice thing happened and before Scott Aniol was brought on as president`; he repeats that Buck left before Aniol became president. Because G3's own appointment announcement dates Aniol's presidency to **2025-07-09**, the current best non-primary window is:
+
+**after 2025-05-12 and before 2025-07-09.**
+
+This is a useful correction to the earlier, looser polemical claim that Buck left sometime in `late 2025 or early 2026`.
+
+**Evidence boundary:** Morrill is an investigative reporter/recipient, not Buck and not the G3 board secretary. The exact resignation date, resignation instrument, board minutes and Buck's stated reason are still unacquired. Protestia separately describes his departure as amid concerns over post-Buice leadership; that motive must remain reporter reconstruction unless Buck or a primary corporate record confirms it.
 
 By July 2025 G3’s official presidential appointment announcement identifies **Jonathan Frazier as board chairman** while Scott Aniol becomes president effective 2025-07-09.
 
-This is important evidence that the immediate post-Buice response was not formally run only by Pray’s Mill elders.
+This matters institutionally: the immediate post-Buice response was not formally run only by Pray’s Mill elders, and the governance transition toward the later configuration may have begun earlier than our first reconstruction suggested.
 
 ## Late 2025–2026 — unresolved contraction / concentration question
 
@@ -94,11 +113,17 @@ A polemical secondary source claims that the most recently archived G3 board pag
 - Dylan Joyner
 - Ron Mooney
 
-The same source says Tom Buck was no longer on the board sometime between late 2025 and early 2026. These are useful archive-discovery claims, not primary proof.
+That six-name roster remains useful archive-discovery evidence but is not primary proof. Direct searches of currently indexed official G3 pages have **not** yet surfaced individual board-title pages for Norton, Joyner, Mooney or Broome sufficient to reconstruct the whole roster.
 
-This is currently `C / ARCHIVE_HOLD` until an archived **official G3 page** is acquired and timestamped.
+Buck Braswell is different: an official G3 page dated **2025-12-22** expressly identifies him as a member of the G3 Ministries Board, so his own late-2025 board status is primary-anchored.
 
-If confirmed, the change is institutionally significant because Jon Norton, Matt Sikes and Dylan Joyner were Pray’s Mill elders, while Scott Aniol was both G3 president and a Pray’s Mill elder. It would indicate a materially greater Pray’s Mill concentration than the broader 2023–2025 configuration.
+Protestia's August 2026 investigation independently describes Jon Norton as a `current G3 board member`; this is B1 investigative testimony, not a substitute for the missing official board page. Current official G3 material establishes Matt Sikes' ministry/teaching role and PMBC role, but not his corporate fiduciary status.
+
+The earlier claim that Tom Buck remained until late 2025/early 2026 should no longer be treated as the best working timeline. The narrower May–July 2025 B1 window above now controls the research narrative unless primary evidence contradicts it.
+
+The six-person late roster therefore stays `ARCHIVE_HOLD` until an archived **official G3 page** is acquired and timestamped.
+
+If the roster is confirmed, the change is institutionally significant because Jon Norton, Matt Sikes and Dylan Joyner were Pray’s Mill elders, while Scott Aniol was both G3 president and a Pray’s Mill elder. It would indicate a materially greater Pray’s Mill concentration than the broader 2023–May 2025 configuration.
 
 If not confirmed, the institutional-concentration hypothesis must be revised.
 
@@ -109,13 +134,13 @@ If not confirmed, the institutional-concentration hypothesis must be revised.
 | Josh Buice | founder / president / early CEO-CFO | pastor/elder | public conference leader | exact board/officer transitions 2019–2025 |
 | Scott Aniol | EVP/editor, later president | elder/pastor | GBTS faculty until Sep 2026 | official presidency effective 2025-07-09; exact voting-board status by year |
 | Virgil Walker | ministry-relations executive | not PMBC elder in current reconstruction | podcast/ministry figure | exit June 2025 |
-| Jonathan Frazier | director / board chairman | relationship to PMBC to verify | — | confirmed board chair July 2025; exact exit date unresolved |
-| Tom Buck | director | FBC Lindale pastor | conference speaker | still Part VII in FY2024; exact late-2025/early-2026 departure unresolved |
-| Chip Thornton | director | external church role | — | Part VII FY2024; exact exit unresolved |
-| Buck Braswell | director | church affiliation to map | — | Part VII FY2024 and visible FY2025 filing; possible late-board continuity |
-| Adam Burrell | director | external affiliation | — | Part VII FY2024; exact exit unresolved |
+| Jonathan Frazier | FY2024 Director / later board chairman | relationship to PMBC to verify | — | FY2024 Part VII title B1-anchored; confirmed board chair July 2025; exact exit date unresolved |
+| Tom Buck | director | FBC Lindale pastor | conference speaker | board status strongly anchored on 2025-05-12; current B1 exit window is after May 12 and before Aniol presidency on Jul 9; exact primary resignation date/reason unresolved |
+| Chip Thornton | director | external church role | — | Part VII FY2024 and May 2025 board reporting; exact exit unresolved |
+| Buck Braswell | director | church affiliation to map | — | Part VII FY2024; official G3 board identity 2025-12-22; possible late-board continuity |
+| Adam Burrell | director | external affiliation | — | Part VII FY2024 and May 2025 board reporting; exact exit unresolved |
 | Matt Broome | director/secretary | affiliation to map | — | Part VII FY2024; Secretary visible FY2025 filing; possible late-board continuity |
-| Jon Norton | alleged late director | PMBC elder | — | archived official board proof required |
+| Jon Norton | alleged late director | PMBC elder | — | B1 Protestia calls him current board Aug 2026; archived official board proof still required |
 | Matt Sikes | alleged late director | PMBC elder | — | G3 Pastor-Theologian/workshop role verified; board status needs archive proof |
 | Dylan Joyner | alleged late director | PMBC elder | — | archived official board proof required |
 | Ron Mooney | alleged late director | affiliation to map | — | archived official board proof required |
