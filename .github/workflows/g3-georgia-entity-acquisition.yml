@@ -5,6 +5,7 @@ on:
   pull_request:
     paths:
       - 'G3_HISTORY/tools/acquire_ga_entity_status.py'
+      - 'G3_HISTORY/tools/acquire_ga_entity_status_v2.py'
       - '.github/workflows/g3-georgia-entity-acquisition.yml'
       - 'data/artifact-custody-policy-v2.json'
 
@@ -25,10 +26,10 @@ jobs:
           python-version: '3.12.8'
 
       - name: Compile acquisition tool
-        run: python -m py_compile G3_HISTORY/tools/acquire_ga_entity_status.py
+        run: python -m py_compile G3_HISTORY/tools/acquire_ga_entity_status_v2.py
 
       - name: Acquire Georgia current entity record
-        run: python G3_HISTORY/tools/acquire_ga_entity_status.py --output g3-georgia-entity-output
+        run: python G3_HISTORY/tools/acquire_ga_entity_status_v2.py --output g3-georgia-entity-output
 
       - name: Record ephemeral custody context
         if: always()
@@ -37,11 +38,10 @@ jobs:
           git rev-parse HEAD > g3-georgia-entity-output/RESEARCH_COMMIT.txt
           printf '%s\n' "${GITHUB_RUN_ID}" > g3-georgia-entity-output/WORKFLOW_RUN_ID.txt
           printf '%s\n' "${GITHUB_RUN_ATTEMPT}" > g3-georgia-entity-output/WORKFLOW_RUN_ATTEMPT.txt
-          sha256sum G3_HISTORY/tools/acquire_ga_entity_status.py > g3-georgia-entity-output/ACQUISITION_TOOL_SHA256.txt
+          sha256sum G3_HISTORY/tools/acquire_ga_entity_status_v2.py > g3-georgia-entity-output/ACQUISITION_TOOL_SHA256.txt
           sha256sum data/artifact-custody-policy-v2.json > g3-georgia-entity-output/CUSTODY_POLICY_SHA256.txt
           python - <<'PY'
-          import json
-          import os
+          import json, os
           from pathlib import Path
           root = Path('g3-georgia-entity-output')
           receipt = {
