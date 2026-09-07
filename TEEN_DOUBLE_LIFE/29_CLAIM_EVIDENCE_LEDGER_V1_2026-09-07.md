@@ -4,9 +4,13 @@
 **Дата:** 2026-09-07  
 **Назначение:** превратить широкий corpus в проверяемые утверждения и заранее ограничить causal/rhetorical overreach.
 
+> **GLOBAL EVIDENCE POLICY CONTROL (2026-09-08):** repository evidence semantics are governed by `data/repository-evidence-policy-v2.json` and current `AGENT_RULES.md`. Historical `Grade: A/B/C` labels below are retained only as **study-strength/provenance annotations** and are **SUPERSEDED AS evidenceClass vocabulary**. They must never be read as repository `evidenceClass=A/B/C`. Any claim/source actually transferred toward publication must carry the global independent fields `evidenceClass`, `accessState`, `locatorState`, `rightsState`, `publicationState`, and any HOLDs.
+
 ---
 
-## 0. Шкала evidence
+## 0. Historical study-strength annotations — SUPERSEDED AS evidenceClass
+
+These labels describe methodological strength inside this historical ledger only:
 
 - **A / STRONG** — meta-analysis/systematic review, strong longitudinal/large official surveillance, replicated result.
 - **B / MODERATE** — good observational/longitudinal evidence but limitations/heterogeneity.
@@ -14,7 +18,22 @@
 - **T / THEOLOGICAL** — claim grounded primarily in Scripture/confessional synthesis, not empirical science.
 - **R / RHETORICAL** — explanatory line/metaphor; must be anchored by several verified claims and never masquerade as measurement.
 
-Causal language gate:
+These are **not** repository source classes.
+
+### Repository-global source/evidence fields
+
+Use only the global vocabulary from `data/repository-evidence-policy-v2.json`:
+
+- `evidenceClass`: `A1 | A2 | A3 | B1 | C | D`;
+- `accessState`: `FULL_OBJECT_VERIFIED | PARTIAL_OBJECT | CATALOG_ONLY | LINK_ONLY | NOT_ACQUIRED`;
+- `locatorState`: `EXACT_LOCATOR_VERIFIED | COARSE_LOCATOR_ONLY | LOCATOR_MISSING`;
+- `rightsState`: `PUBLICATION_ELIGIBLE | STORAGE_ONLY | PRIVATE_STUDY_ONLY | PERMISSION_REQUIRED | RIGHTS_UNKNOWN`;
+- `publicationState`: `PROMOTE | REFERENCE | SUPERSEDED | BLOCKED`;
+- HOLDs: `EVIDENCE_HOLD | LOCATOR_HOLD | ARCHIVE_HOLD | RIGHTS_HOLD | PUBLICATION_HOLD`.
+
+`HOLD` is never a source class. `B1` cannot be sole support for a disputed quote-safe claim. Direct quotations require exact locator/context/version according to the global policy.
+
+Causal language gate remains:
 
 - `causes / leads to` only when design supports it;
 - otherwise use `associated with`, `predicts over time`, `may contribute`, `can function as`, `is a pathway/risk factor`.
@@ -31,7 +50,7 @@ Causal language gate:
 **Forbidden:** «environment irrelevant because heart is sinful.»
 
 ## A02 — Parenting is formative but not deterministic
-**Grade:** A/B + T  
+**Historical study-strength:** A/B + T  
 **Claim:** parenting is associated longitudinally with self-control, risk behavior, disclosure, religiosity; no parenting technique guarantees regeneration.  
 **Sources:** parenting/self-control meta-analysis PMID 31491364; parental monitoring meta-analysis PMID 26620067; faith-transmission literature PMID 34149869.  
 **Language:** `formative`, `protective/risk association`, not `causes saved child`.
@@ -58,19 +77,19 @@ Causal language gate:
 # B. Peer world / status / double life
 
 ## B01 — Peer influence changes behavior over time
-**Grade:** A  
+**Historical study-strength:** A  
 **Evidence:** meta-analysis 60 independent longitudinal studies / 233 effects; cross-lagged peer influence β≈.08.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/34855429/  
 **Language:** small but robust average peer influence; not total determination.
 
 ## B02 — Peer norms exert meaningful immediate experimental influence
-**Grade:** A  
+**Historical study-strength:** A  
 **Evidence:** 2026 meta-analysis 79 reports / >9,500 participants; overall g≈.47; norm manipulations especially important.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/42383466/  
 **Language:** norms can influence behavior/choices; substantial heterogeneity.
 
 ## B03 — Perceived sexual descriptive norms are strongly related to adolescent sexual activity
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** peer sexual-norm meta-analysis; descriptive norms ~r=.40, injunctive ~.22, direct pressure ~.10.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/25217363/  
 **Guard:** selection effects matter; peers are both chosen and socializing.
@@ -81,25 +100,25 @@ Causal language gate:
 **Forbidden:** present as validated diagnostic model.
 
 ## B05 — Deviancy training is a real peer reinforcement mechanism
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Source:** https://pmc.ncbi.nlm.nih.gov/articles/PMC3523739/  
 **Claim:** peer reactions can reinforce deviant talk/behavior.  
 **Application guard:** church youth group inference is plausible but not directly proven by delinquency literature.
 
 ## B06 — Sexual status/reputation can be gendered
-**Grade:** B  
+**Historical study-strength:** B  
 **Evidence:** network/status studies show number of partners can have opposite acceptance associations for boys/girls; popular-peer sexting perceptions strongly relate to own sexting.  
 **Sources:** PMID 25484478; PMID 31841872.  
 **Guard:** no universal male/female stereotype.
 
 ## B07 — Hidden role can become more habitual/identity-loaded without being scientifically “true self”
-**Grade:** B/C + R  
+**Historical study-strength:** B/C + R  
 **Evidence:** habit review; adolescent false-self literature; online self-presentation discrepancy studies; moral-disengagement literature.  
 **Allowed:** repeated/rewarded hidden behavior may feel more spontaneous/identity-congruent than deliberately maintained public role.  
 **Forbidden:** science proves the sinful persona is the person’s metaphysical “real self.”
 
 ## B08 — Moral disengagement is a plausible bridge from acknowledged wrongdoing to normalized wrongdoing
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** 2023 review/meta-analytic synthesis, 157 eligible studies / N=118,501; moral disengagement associated with transgressive behavior and shaped by individual/environmental factors.  
 **Guard:** moral disengagement ≠ biblical hardening; psychology describes mechanism, Scripture supplies moral-spiritual category.
 
@@ -108,35 +127,35 @@ Causal language gate:
 # C. Parents: connectedness, monitoring, disclosure
 
 ## C01 — Parent-child connectedness is a meaningful protective factor
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** 2026 meta-analysis 18 studies / 78,284 participants; connectedness associated with lower odds of intercourse, unprotected sex, unintended pregnancy; heterogeneity.  
 **Use:** protective factor, not guarantee.
 
 ## C02 — Monitoring/rule enforcement is associated with delayed/lower sexual risk
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** meta-analysis; overall monitoring delayed intercourse OR≈.74; knowledge .81; rule enforcement .67.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/26620067/  
 **Guard:** mostly observational/cross-sectional components.
 
 ## C03 — Psychological control and behavioral control should not be collapsed
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** 2026 meta-analysis 55 studies/58,124 adolescents; psych control associated higher problematic Internet use, behavioral control lower; longitudinal psych control T1→PIU T2 β≈.12.  
 **Source:** PMID 41100031.  
 **Allowed line:** strong rule is not automatically psychological control.
 
 ## C04 — Covert/intrusive monitoring can undermine disclosure
-**Grade:** B  
+**Historical study-strength:** B  
 **Evidence:** secrecy/disclosure studies: covert monitoring/privacy invasion associated lower disclosure and higher secrecy.  
 **Use:** warn against blanket secret surveillance.  
 **Guard:** safeguarding emergency may justify investigation/device access.
 
 ## C05 — Voluntary adolescent disclosure is a major source of parental knowledge
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** classic/longitudinal disclosure literature; support predicts disclosure, secrecy reciprocal with delinquency.  
 **Use:** `knowledge is not produced only by surveillance`.
 
 ## C06 — Behavior-focused correction may preserve truth better than person condemnation
-**Grade:** C/B emerging  
+**Historical study-strength:** C/B emerging  
 **Evidence:** 2026 youth disclosure vignette study; behavior-critical responses reduced expected misconduct with less suppression of future disclosure than person-critical responses in most domains.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/42484288/  
 **Guard:** expected/vignette outcomes, not long-term intervention trial.
@@ -158,28 +177,28 @@ Causal language gate:
 # D. Father / mother / sexual communication
 
 ## D01 — Parent-adolescent sexual communication has a small protective association
-**Grade:** A  
+**Historical study-strength:** A  
 **Evidence:** meta-analysis 52 articles / 25,314 adolescents; safer sex overall r≈.10; stronger girls/mothers in available literature.  
 **Guard:** public-health safer-sex outcome ≠ biblical chastity.
 
 ## D02 — Fathers contribute meaningfully to sexual socialization
-**Grade:** B/C  
+**Historical study-strength:** B/C  
 **Evidence:** 2024 interviews with 43 U.S. fathers; sexual behavior, risk, dating, consent; use personal/media contexts.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/38032651/  
 **Guard:** qualitative mechanism, not population effect size.
 
 ## D03 — General father-son communication predicts sexuality communication
-**Grade:** B  
+**Historical study-strength:** B  
 **Evidence:** N=155 fathers; general communication/contact among predictors explaining information/value-sharing.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/16123842/
 
 ## D04 — Parents often lack practical ability to discuss pornography
-**Grade:** B  
+**Historical study-strength:** B  
 **Evidence:** 2024 mixed-method parent study n=408 quantitative phase; practical ability largest barrier; fathers less likely to see discussion as socially acceptable.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/38726390/
 
 ## D05 — Parent sexual communication can moderate pornography-associated behavior
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** U.S. probability sample + direct replication: interaction with condomless sex.  
 **Sources:** PMID 31403326; PMID 39104215.  
 **Guard:** narrow outcome; do not say communication `neutralizes porn`.
@@ -189,19 +208,19 @@ Causal language gate:
 # E. Family faith transmission
 
 ## E01 — Family religious socialization predicts later religious practice/importance
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** longitudinal NSYR; stronger transmission partly explained by intensive family socialization + congregational involvement.  
 **Source:** https://pmc.ncbi.nlm.nih.gov/articles/PMC8204683/  
 **Guard:** religiosity ≠ regeneration.
 
 ## E02 — Parent religious practice is strongly related to teen practice
-**Grade:** A descriptive  
+**Historical study-strength:** A descriptive  
 **Evidence:** Pew parent-teen paired survey; parental attendance/importance tied to teen attendance/prayer.  
 **Sources:** Pew 2020 family religious practices / teens religious practices.  
 **Guard:** cross-sectional/descriptive.
 
 ## E03 — Home faith discussion may be especially important
-**Grade:** C/B  
+**Historical study-strength:** C/B  
 **Evidence:** small 3-year qualitative UK Christian-family study; Canadian Baptist replication literature suggests home discussion/encouragement adds predictive value.  
 **Sources:** DOI 10.1080/1756073X.2023.2184152; Springer 2024 Canadian Baptist article.  
 **Guard:** do not rank Scripture/prayer as `less important` from a 26-family qualitative sample.
@@ -217,101 +236,153 @@ Causal language gate:
 **Forbidden:** numeric `×20` moral coefficient.
 
 ## F02 — Persuasive design can increase unplanned/repeated engagement
-**Grade:** B/C  
+**Historical study-strength:** B/C  
 **Evidence:** Ofcom 2026 qualitative children/parents research; impulse, reward, dissociative, social influence features.  
 **Guard:** not a causal estimate of moral harm.
 
 ## F03 — Unstructured peer time is associated with delinquency/risk
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** 2026 international 58,425 adolescents/21 countries + prior genetically informed/after-school studies.  
 **Guard:** independent time ≠ inherently dangerous; structure/context matter.
 
 ## F04 — Boredom is a meaningful digital-overuse vulnerability
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** 2026 meta-analysis 25 studies/N=15,152, r=.38.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/42285161/  
 **Guard:** direction/reciprocity unresolved.
 
 ## F05 — Loneliness is related to problematic Internet/smartphone use
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** meta-analysis 21 studies/N=27,843, r=.252.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/37261719/  
 **Guard:** vulnerability, not excuse/cause certainty.
 
 ## F06 — Modern change is better described as a shift/expansion of sexual opportunity, not universal rise in offline sex
-**Grade:** A descriptive + structural  
+**Historical study-strength:** A descriptive + structural  
 **Evidence:** current U.S. youth surveillance shows declines in several physical-sex indicators while digital sexual exposure/sexting/image abuse/porn pathways exist at scale.  
 **Forbidden:** `today’s teens have more sex in every sense than earlier cohorts`.
+
+## F07 — AI assistants/companions add a persistent private conversational pathway
+**Claim:** adolescent digital opportunity architecture now includes relationship-like conversational systems used by some teens for casual conversation, emotional support, advice, and, on some services/interactions, sexualized conversation/content.  
+**Sources:**
+- Pew Research Center 2026: https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/
+- Australian eSafety Commissioner 2026: https://www.esafety.gov.au/research/talking-to-machines-childrens-experiences-with-ai-assistants-and-companions
+- eSafety transparency findings: https://www.esafety.gov.au/industry/basic-online-safety-expectations/ai-services/findings-october-2025
+
+**Allowed:** `AI can create an additional private conversational environment`; `a measurable minority of U.S. teens report casual/emotional-support chatbot use`; `official Australian child-safety research documents some sexualized/harmful interactions`.  
+**Forbidden:** `most teens have AI partners`; `AI companions inevitably displace human relationships`; `using a chatbot is itself sexual sin`.
+
+**eSafety global evidence state:**  
+- `evidenceClass`: `A2`  
+- `accessState`: `FULL_OBJECT_VERIFIED`  
+- `locatorState`: `COARSE_LOCATOR_ONLY`  
+- `rightsState`: `PUBLICATION_ELIGIBLE`  
+- `publicationState`: `REFERENCE`  
+- `holds`: `[LOCATOR_HOLD]` for exact quotation/table-level claims.
+
+**Pew global evidence state:**  
+- `evidenceClass`: `B1`  
+- `accessState`: `FULL_OBJECT_VERIFIED`  
+- `locatorState`: `COARSE_LOCATOR_ONLY`  
+- `rightsState`: `PUBLICATION_ELIGIBLE`  
+- `publicationState`: `REFERENCE`  
+- `holds`: `[LOCATOR_HOLD]` for direct table-level quotation.
 
 ---
 
 # G. Smartphone timing / sleep
 
 ## G01 — Early smartphone ownership has concerning early-adolescent associations
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** ABCD N=10,588; at age12 ownership associated depression OR1.31, obesity1.40, insufficient sleep1.62; earlier acquisition associated obesity/sleep; new acquisition by13 linked psychopathology/sleep after baseline controls.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/41324306/  
 **Guard:** observational.
 
 ## G02 — Acquisition age is not a universal deterministic threshold
-**Grade:** A synthesis  
+**Historical study-strength:** A synthesis  
 **Evidence:** 2022 5-year prospective N=263 null after FDR; 2026 N=1,179 weak/nonlinear timing associations; JAMA 2026 age13 acquisition mostly sleep, while usage intensity associated broader outcomes.  
 **Sources:** PMID 36056573; PMID 42467321; PMID 42258187.
 
 ## G03 — Keeping smartphone outside bedroom is a concrete supported boundary
-**Grade:** B  
+**Historical study-strength:** B  
 **Evidence:** JAMA 2026; phone outside bedroom associated lower odds insufficient sleep OR.64.  
 **Guard:** association, not randomized trial.
 
 ---
 
-# H. Pornography / sexual media
+# H. Pornography / sexual media / coercive sexual digital harm
 
 ## H01 — Adolescent pornography exposure is common in surveyed populations and often early
-**Grade:** A descriptive  
+**Historical study-strength:** A descriptive  
 **Evidence:** Children’s Commissioner England; Common Sense U.S.; wide prevalence variation by measure/country.  
 **Guard:** never universalize a single national percentage globally.
 
 ## H02 — Pornography pathways extend beyond dedicated adult sites
-**Grade:** A descriptive  
+**Historical study-strength:** A descriptive  
 **Evidence:** Children’s Commissioner and platform/online-safety reports identify mainstream social/media pathways and accidental exposure.  
 **Allowed:** `can arrive through feeds/messages/mainstream platforms`.
 
 ## H03 — Longitudinal pornography-outcome evidence is heterogeneous
-**Grade:** A  
+**Historical study-strength:** A  
 **Evidence:** 2025 rapid systematic review 44 longitudinal studies; varied sexual/psychological outcomes and designs.  
 **Source:** PMID 40631652.  
 **Use:** reason to reject simplistic universal causal claims.
 
 ## H04 — Online pornography use correlates with adolescent psychopathological symptoms
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** 2026 systematic review/meta-analysis 14 studies/12 meta-analyzed; moderate positive correlation.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/41081900/  
 **Guard:** correlation, possible coping/reciprocity.
 
 ## H05 — Not every pornography user is clinically addicted
-**Grade:** A clinical  
+**Historical study-strength:** A clinical  
 **Evidence:** ICD-11 CSBD criteria: impaired control + persistent pattern + distress/impairment; high frequency or moral distress alone insufficient.  
 **Guard:** clinical non-diagnosis says nothing about moral permissibility.
 
 ## H06 — PPU psychotherapy evidence is promising but still limited
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** 2025 meta-analysis 20 studies / 2,021 participants found psychotherapy improvements; earlier systematic review judged much evidence low/very-low; 2026 CBT scoping review identifies recurring components and dropout limitations.  
 **Sources:** PMID 40126561; PMID 37880509; PMID 42044011.  
 **Guard:** mostly adult/clinical evidence; do not directly claim adolescent Christian-family efficacy.
+
+## H07 — Coercive sexting/cyber dating violence is distinct from both voluntary sexting and stranger sextortion
+**Claim:** adolescent sexual digital harm can involve romantic/peer pressure, threats, control, nonconsensual sharing, and cyber dating violence; moral assessment must distinguish voluntary conduct from coercion and later victimization.  
+**Sources:**
+- 49-study systematic review/meta-analysis: https://pubmed.ncbi.nlm.nih.gov/39283366/
+- 2026 U.S. national adolescent sexting/nonconsensual-sharing/sextortion study, N=3,466 ages 13–17: https://pubmed.ncbi.nlm.nih.gov/41653178/
+- systematic sexting-outcomes context: https://pubmed.ncbi.nlm.nih.gov/34454257/
+
+**Allowed:** `cyber dating violence is a documented adolescent risk category`; `nonconsensual sharing and sextortion can follow sexting`; `consent/coercion context materially changes safeguarding analysis`.  
+**Forbidden:** treating every sext as coerced; treating prior voluntary sin as making later abuse the victim’s fault; using abstract prevalence without exact table/denominator verification.
+
+**Global evidence state for PMID 39283366:**  
+- `evidenceClass`: `B1`  
+- `accessState`: `PARTIAL_OBJECT`  
+- `locatorState`: `COARSE_LOCATOR_ONLY`  
+- `rightsState`: `PUBLICATION_ELIGIBLE`  
+- `publicationState`: `REFERENCE`  
+- `holds`: `[LOCATOR_HOLD]` for exact effect-size claims.
+
+**Global evidence state for PMID 41653178:**  
+- `evidenceClass`: `B1`  
+- `accessState`: `PARTIAL_OBJECT`  
+- `locatorState`: `COARSE_LOCATOR_ONLY`  
+- `rightsState`: `PUBLICATION_ELIGIBLE`  
+- `publicationState`: `REFERENCE`  
+- `holds`: `[LOCATOR_HOLD]` until exact prevalence/denominator tables are retrieved if used.
 
 ---
 
 # I. Accountability / repentance / recovery
 
 ## I01 — Accountability is a plausible recovery mechanism, but adolescent direct evidence is limited
-**Grade:** C/B  
+**Historical study-strength:** C/B  
 **Evidence:** 2026 qualitative PPU recovery study N=27 identified accountability, sincerity, group mirror effect, relapse-prevention and identity transformation as salient perceived mechanisms.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/42356013/  
 **Guard:** qualitative/adult-heavy; not an RCT or adolescent-specific efficacy estimate.
 
 ## I02 — Proactive temptation avoidance can be a self-control strategy
-**Grade:** B  
+**Historical study-strength:** B  
 **Evidence:** strategic self-control/proactive avoidance literature.  
 **Allowed:** good self-control can consist in not entering high-conflict situations.  
 **Guard:** not proof that all avoidance is healthy or sufficient.
@@ -371,7 +442,7 @@ Causal language gate:
 **Forbidden:** claim every pleasure is sin.
 
 ## K02 — Immediate reward vs delayed cost has a psychological analogue
-**Grade:** A/B  
+**Historical study-strength:** A/B  
 **Evidence:** delay-discounting literature/meta-analysis across risky behaviors.  
 **Use:** describe temporal decision architecture.  
 **Guard:** do not reduce eternal judgment/new birth to delay-discounting psychology.
@@ -394,9 +465,12 @@ Causal language gate:
 
 Before any claim enters `gb-is-my-strength`:
 
-1. assign a grade/type;
-2. attach strongest source/text;
-3. list strongest counter-evidence/limitation;
-4. choose exact causal language;
-5. distinguish empirical observation from theological judgment;
-6. check whether reader could misapply it to abuse, abandonment, false assurance or final heart-reading.
+1. identify whether the claim is **biblical/theological**, **empirical**, or **editorial/rhetorical synthesis**;
+2. for every empirical/historical source actually retained, assign repository-global `evidenceClass`;
+3. record `accessState`, `locatorState`, `rightsState`, `publicationState`, and any HOLDs;
+4. attach the strongest source/text;
+5. list strongest counter-evidence/limitation;
+6. choose exact causal language;
+7. distinguish empirical observation from theological judgment;
+8. check whether reader could misapply it to abuse, abandonment, false assurance or final heart-reading;
+9. treat every historical `Grade A/B/C` in this file as study-strength provenance only, never as the repository evidence class.
