@@ -5,6 +5,7 @@ on:
   pull_request:
     paths:
       - 'G3_HISTORY/tools/acquire_wayback_late_board.py'
+      - 'G3_HISTORY/tools/acquire_wayback_late_board_v2.py'
       - 'G3_HISTORY/EVIDENCE_BATCH_2026-09-07_PASS10.md'
       - '.github/workflows/g3-wayback-late-board-acquisition.yml'
       - 'data/artifact-custody-policy-v2.json'
@@ -24,9 +25,9 @@ jobs:
         with:
           python-version: '3.12.8'
       - name: Compile acquisition tool
-        run: python -m py_compile G3_HISTORY/tools/acquire_wayback_late_board.py
+        run: python -m py_compile G3_HISTORY/tools/acquire_wayback_late_board_v2.py
       - name: Acquire late-board archive objects
-        run: python G3_HISTORY/tools/acquire_wayback_late_board.py --output g3-wayback-late-board-output
+        run: python G3_HISTORY/tools/acquire_wayback_late_board_v2.py --output g3-wayback-late-board-output
       - name: Record ephemeral custody context
         if: always()
         run: |
@@ -34,7 +35,7 @@ jobs:
           git rev-parse HEAD > g3-wayback-late-board-output/RESEARCH_COMMIT.txt
           printf '%s\n' "${GITHUB_RUN_ID}" > g3-wayback-late-board-output/WORKFLOW_RUN_ID.txt
           printf '%s\n' "${GITHUB_RUN_ATTEMPT}" > g3-wayback-late-board-output/WORKFLOW_RUN_ATTEMPT.txt
-          sha256sum G3_HISTORY/tools/acquire_wayback_late_board.py > g3-wayback-late-board-output/ACQUISITION_TOOL_SHA256.txt
+          sha256sum G3_HISTORY/tools/acquire_wayback_late_board_v2.py > g3-wayback-late-board-output/ACQUISITION_TOOL_SHA256.txt
           sha256sum data/artifact-custody-policy-v2.json > g3-wayback-late-board-output/CUSTODY_POLICY_SHA256.txt
           python - <<'PY'
           import json, os

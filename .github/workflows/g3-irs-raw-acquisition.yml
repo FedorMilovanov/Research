@@ -6,6 +6,7 @@ on:
     paths:
       - 'G3_HISTORY/tools/acquire_irs_raw_xml.py'
       - 'G3_HISTORY/tools/acquire_irs_raw_xml_v2.py'
+      - 'G3_HISTORY/tools/acquire_irs_raw_xml_v3.py'
       - 'G3_HISTORY/IRS_RAW_XML_ACQUISITION_GATE.md'
       - '.github/workflows/g3-irs-raw-acquisition.yml'
       - 'data/artifact-custody-policy-v2.json'
@@ -27,11 +28,11 @@ jobs:
           python-version: '3.12.8'
 
       - name: Compile acquisition tool
-        run: python -m py_compile G3_HISTORY/tools/acquire_irs_raw_xml_v2.py
+        run: python -m py_compile G3_HISTORY/tools/acquire_irs_raw_xml_v3.py
 
       - name: Acquire exact IRS e-file XML objects
         id: acquire
-        run: python G3_HISTORY/tools/acquire_irs_raw_xml_v2.py --output g3-irs-acquisition-output
+        run: python G3_HISTORY/tools/acquire_irs_raw_xml_v3.py --output g3-irs-acquisition-output
 
       - name: Record ephemeral custody context
         if: always()
@@ -40,7 +41,7 @@ jobs:
           git rev-parse HEAD > g3-irs-acquisition-output/RESEARCH_COMMIT.txt
           printf '%s\n' "${GITHUB_RUN_ID}" > g3-irs-acquisition-output/WORKFLOW_RUN_ID.txt
           printf '%s\n' "${GITHUB_RUN_ATTEMPT}" > g3-irs-acquisition-output/WORKFLOW_RUN_ATTEMPT.txt
-          sha256sum G3_HISTORY/tools/acquire_irs_raw_xml_v2.py > g3-irs-acquisition-output/ACQUISITION_TOOL_SHA256.txt
+          sha256sum G3_HISTORY/tools/acquire_irs_raw_xml_v3.py > g3-irs-acquisition-output/ACQUISITION_TOOL_SHA256.txt
           sha256sum data/artifact-custody-policy-v2.json > g3-irs-acquisition-output/CUSTODY_POLICY_SHA256.txt
           python - <<'PY'
           import json, os
