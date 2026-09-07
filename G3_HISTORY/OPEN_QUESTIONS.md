@@ -14,7 +14,12 @@ The goal is not metaphysical “100% knowledge.” The achievable target is **pr
 - FY2024: `202541359349304489`, filed 2025-05-15;
 - FY2025: `202641339349303874`, filed 2026-05-13.
 
-Each e-file manifest exposes an `IRS990ScheduleL` object. ProPublica's XML-download links and rendered Schedule L routes are known, and the official IRS bulk XML archive is confirmed as the authoritative acquisition route. Exact rows have not yet been successfully retrieved in the current research environment.
+Each e-file manifest exposes an `IRS990ScheduleL` object. Exact rendered routes are known:
+
+- `/full_text/202541359349304489/IRS990ScheduleL`
+- `/full_text/202641339349303874/IRS990ScheduleL`
+
+Both currently redirect to temporary signed S3 HTML objects that the research web boundary refuses to open. IRS XML links are likewise not directly retrievable in the current environment. This is an acquisition/tooling blocker, not evidence that the schedules are empty.
 
 **Needed:** raw XML/PDF rows for Schedule L Parts I–IV; interested person, relationship, transaction type, amount, approval terms.
 
@@ -22,15 +27,15 @@ Each e-file manifest exposes an `IRS990ScheduleL` object. ProPublica's XML-downl
 
 ### Q002 — What caused the FY2023 expense jump from ~$1.010m to ~$2.072m?
 
-**Progress 2026-09-07:** FY2023 exact e-file object identified as `202411429349300611`, filed 2024-05-21. Known summary values confirm $2,071,986 total expense and $292,784 other salaries/wages (14.1%). FY2024 Part IX is now bounded at ~84% program / 7% management / 9% fundraising with ~$483k salaries-benefits-payroll, but this does not explain the prior-year spike.
+**Progress 2026-09-07:** FY2023 exact e-file object identified as `202411429349300611`, filed 2024-05-21. Known summary values confirm $2,071,986 total expense and $292,784 other salaries/wages (14.1%). IRS-derived parser evidence indicates FY2023 was reported approximately/all as program-service allocation, strongly weakening an administrative-bloat explanation without identifying the actual program categories.
 
 **Needed:** full FY2023 Part IX functional-expense lines + Schedule O descriptions + event/publishing context.
 
-**Current status:** `EVIDENCE_HOLD`. Current over-expansion explanation remains hypothesis.
+**Current status:** `EVIDENCE_HOLD`. Deliberate scale-up/event/ecosystem explanation remains hypothesis, not fact.
 
 ### Q003 — What was the exact G3 governing board immediately before the August 2026 crisis?
 
-**Progress 2026-09-07:** FY2025 Form 990 visibly identifies Scott Aniol, Buck Braswell and Matt Broome among Part VII officers/directors, but the publicly rendered summary hides additional names and the filing covers FY2025, not the August 2026 crisis date. A secondary archived-board report continues to claim Braswell/Broome/Norton/Sikes/Joyner/Mooney.
+**Progress 2026-09-07:** FY2025 Form 990 visibly identifies Scott Aniol, Buck Braswell and Matt Broome among Part VII officers/directors, but the publicly rendered summary hides additional names and the filing covers FY2025, not the August 2026 crisis date. G3’s own Dec. 22, 2025 author page independently confirms Buck Braswell was still described as a board member then. A secondary archived-board report continues to claim Braswell/Broome/Norton/Sikes/Joyner/Mooney.
 
 **Needed:** archived official `g3min.org` board page with timestamp and exact names; ideally multiple snapshots showing additions/removals.
 
@@ -38,7 +43,7 @@ Each e-file manifest exposes an `IRS990ScheduleL` object. ProPublica's XML-downl
 
 ### Q004 — When and why did Tom Buck, Jonathan Frazier, Chip Thornton, Adam Burrell and others leave the G3 board?
 
-**Progress:** FY2024 filing confirms Buck, Thornton and Burrell were still reported in Part VII; July 2025 G3 announcement identifies Jonathan Frazier as board chairman. FY2025 visible summary identifies Braswell and Broome but does not expose the complete roster.
+**Progress:** FY2024 filing confirms Buck, Thornton and Burrell were still reported in Part VII; July 2025 G3 announcement identifies Jonathan Frazier as board chairman; Dec. 2025 official page anchors Braswell. FY2025 visible summary identifies Braswell and Broome but does not expose the complete roster.
 
 **Needed:** full FY2025 Part VII, archived board pages, board minutes/statements or first-person accounts.
 
@@ -54,13 +59,15 @@ Each e-file manifest exposes an `IRS990ScheduleL` object. ProPublica's XML-downl
 
 ### Q006 — What happened to G3 Press, G3+, trademarks, subscriber relationships and other IP/assets?
 
-**Progress 2026-09-07:** Aug. 27 subscriber reporting supports only that G3+ was to be acquired/transitioned to an unnamed `another ministry`; secondary reporting says the same unnamed ministry may receive/acquire G3 Press. No primary source names the transferee. Public speculation about Right Response Ministries is unverified and must not be promoted.
+**Progress 2026-09-07:** Aug. 27 subscriber reporting supports only that G3+ was to be acquired/transitioned to an unnamed `another ministry`; secondary reporting says the same unnamed ministry may receive/acquire G3 Press. No primary source names the transferee. Public speculation about Right Response Ministries remains unverified and must not be promoted.
 
-A new operational artifact complicates the timeline: Google Play shows the G3+ Android app updated on **2026-09-04**, after the shutdown announcement, while still listing `G3 Ministries for the Church`, `admin@g3min.org`, the Douglasville address and G3 branding. Apple storefronts likewise still list G3 Ministries For The Church, Inc. as seller/developer. This proves continued public platform identity/maintenance, not beneficial ownership or completion/non-completion of a transfer.
+Google Play continues to list G3 developer/support identity, `admin@g3min.org`, the Douglasville address and G3 branding. **However, the exact update date is now a data conflict:** a current search surface displays `Updated on Sep 4, 2026`, while an opened/crawled storefront snapshot for the same package displays `Updated on Jul 23, 2026`. Therefore the earlier exact `Sep. 4 update` claim is withdrawn from verified status until a fresh controlled platform capture resolves the discrepancy.
 
-**Needed:** primary subscriber notice, board/corporate announcement, asset-transfer agreement or recipient ministry announcement; consideration/value if any; platform seller/developer change history.
+Apple storefront material likewise has shown G3 Ministries For The Church, Inc. as seller/developer. Platform identity proves a dated public metadata state, not beneficial ownership or completion/non-completion of a transfer.
 
-**Current status:** `EVIDENCE_HOLD`. Transferee, terms and legal completion unresolved.
+**Needed:** primary subscriber notice, board/corporate announcement, asset-transfer agreement or recipient ministry announcement; consideration/value if any; platform seller/developer change history; controlled fresh app-store capture with timestamp/locale.
+
+**Current status:** `EVIDENCE_HOLD`. Transferee, terms, legal completion and exact post-shutdown app update timing unresolved.
 
 ## P1 — blocks strong narrative wording
 
@@ -90,7 +97,9 @@ Build item-level matrix:
 
 ### Q010 — Did deacons/congregation request the four PMBC elders’ resignations, or were resignations volunteered before such a request?
 
-Need contemporaneous PMBC documentation or direct statements from authorized church representatives.
+Their reproduced letter says all four voluntarily resigned; Michelle Lesley reports three were required by deacons and Dylan Joyner resigned voluntarily. These accounts may be procedurally reconcilable, but no primary PMBC deacon/congregational record has been acquired.
+
+**Needed:** contemporaneous PMBC documentation or direct statement from authorized church representatives.
 
 ### Q011 — Was the stated motive correction/accountability, retaliation, institutional self-protection, or a mixture?
 
@@ -105,6 +114,8 @@ Official G3 statement says no. No contrary primary evidence currently acquired.
 ### Q013 — Quantify G3’s ideological shift rather than describe it impressionistically
 
 Construct a dated content sample from 2012–2026 across categories: gospel/church/Scripture, social justice/CRT, gender/sexuality, state/politics, Christian nationalism, worship, missions, education.
+
+Current qualitative evidence already rejects a one-directional `ever farther right` narrative: social-justice/CRT became a stronger boundary after 2018, while 2023 G3/Scott Aniol material explicitly resisted Christian Nationalism/theonomy and drew criticism from the right flank.
 
 ### Q014 — Reconstruct conference attendance using primary/contemporary records
 
@@ -138,9 +149,16 @@ Compare board structure, policies, reporting mechanisms, conflict separation and
 
 ### Q019 — What remains online, who controls domains/apps and which pages are stale?
 
-As of 2026-09-07 search indexes still expose a pre-shutdown G3 site advertising the 2027 conference, Network, Press and Plus. `plus.g3min.org` still resolves to the app frontend, and Google Play shows a Sep. 4 update under G3 identity. These are live/cached technical artifacts, not proof that the ministry reversed its announced wind-down.
+The evidence layers now visibly conflict in useful ways:
 
-Need DNS/domain ownership, hosting transitions, app-store seller history and post-transfer site state.
+- direct `https://g3min.org/` request on 2026-09-07 returns HTTP 503;
+- older crawled/indexed deep G3 pages still expose pre-shutdown 2027 conference, Network, Press and Plus links;
+- Google Play still exposes G3 developer/support identity, but its exact update date is conflicting across search/crawl surfaces;
+- Pray’s Mill’s current `Our Leaders` page, crawled 2026-09-07, still lists Matt Sikes, Dylan Joyner, Jon Norton and Scott Aniol as pastors and still describes Aniol as G3 president / GBTS professor, despite stronger event-specific resignation evidence and GBTS’s later faculty statement.
+
+These artifacts are evidence of **stale or lagging digital state**, not proof that resignations, shutdown or institutional changes were reversed.
+
+**Needed:** DNS/domain ownership, hosting transitions, app-store seller history, fresh platform captures, archived versions of PMBC/G3 pages and timestamps for when stale leadership pages are corrected.
 
 ### Q020 — What is the status of authors’ rights and inventory at G3 Press?
 
@@ -148,7 +166,15 @@ Secondary reporting says Dave Jenkins and Darrell Harrison publicly requested re
 
 ### Q021 — What is Scott Aniol’s post-G3 institutional status beyond GBTS?
 
-GBTS officially says he no longer serves on faculty. Other alleged/announced positions require current primary confirmation; do not infer disciplinary causation without statements.
+GBTS officially says he no longer serves on faculty. Pray’s Mill’s current page still says he is professor, but that page is demonstrably stale against the later event-specific GBTS statement and cannot control present status. Other alleged/announced positions require current primary confirmation; do not infer disciplinary causation without statements.
+
+### Q022 — When did Pray’s Mill update its public leadership records after the August resignations?
+
+As of the 2026-09-07 crawl, the official PMBC leaders page still presents the four resigned men as pastors. This creates a bounded communications/archive question, not an office-status question.
+
+**Needed:** archive snapshots before/after correction, any PMBC public explanation, and page modification evidence if available.
+
+**Current status:** `ARCHIVE_HOLD`.
 
 ## Closure definition
 
@@ -159,4 +185,5 @@ The corpus can be considered **article-ready** only when:
 3. financial and board tables have source/version locators;
 4. quotes meet repository quote-safe contract;
 5. media has item-level rights decisions;
-6. article draft preserves the distinction between fact, testimony, interpretation, theological judgment and legal conclusion.
+6. article draft preserves the distinction between fact, testimony, interpretation, theological judgment and legal conclusion;
+7. stale website/search/app metadata is explicitly dated and never substituted for event-specific evidence.
