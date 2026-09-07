@@ -17,19 +17,25 @@
 | G3-M010 | Pray’s Mill Baptist Church exterior / auditorium | PMBC official/public mapping sources to be acquired | origin and institutional overlap | RIGHTS_HOLD | prefer self-owned/press/official image with clear permission path |
 | G3-M011 | 2026 shutdown screenshots: G3 statement / network dissolution / site state | screenshots in news reports and archived social posts | final chapter | RIGHTS_UNKNOWN | factual content can be cited; screenshot republication requires rights analysis |
 | G3-M012 | G3 website stale/cached 2027 conference promotion vs live shutdown/cancellation state | G3 official/search cache/event backend | illustrate archival-state conflict | RIGHTS_UNKNOWN | better recreate as quoted factual timeline than republish screenshots unless needed |
+| G3-M013 | 2022 G3 regional panel: Scott Aniol, James White, Steve Lawson, Josh Buice, Darrell Harrison, Virgil Walker | Flickr, Jerry Heitschmidt; taken 2022-09-15, uploaded 2022-12-15; page explicitly says `All rights reserved` | visually documents coalition composition immediately before 2023 right-flank conflict | PERMISSION_REQUIRED | strong historically identified image; do not copy. Seek photographer permission/license if used. |
+| G3-M014 | `That They May All Be One` Christian-unity event promotional artwork | official G3/Webconnex event asset | evidence of planned post-crisis conference programming and visual identity | RIGHTS_UNKNOWN | use as source artifact only; avoid publication until asset ownership/permission is clear |
+| G3-M015 | Pray’s Mill `Our Leaders` page showing all four resigned pastors still listed, including stale Aniol G3/GBTS bio | official PMBC page, observed 2026-09-07 | digital-forensics illustration of stale institutional web state | RIGHTS_UNKNOWN | prefer an original editorial reconstruction/table with dated quotations rather than republishing full screenshot; if screenshot is essential, perform fair-use/editorial rights review |
+| G3-M016 | Google Play G3+ storefront showing G3 developer/support identity | Google Play / developer-provided metadata | asset-transfer / digital-state chapter | RIGHTS_UNKNOWN | factual metadata should normally be represented as our own dated text/table; storefront screenshot only if editorial necessity justifies rights/platform review |
 
-## Preferred visual package for final article
+## Preferred visual package for final article / dossier
 
 A publication-safe version should ideally contain:
 
 1. **2013 early conference / Pray’s Mill** — establishes humble origin.
 2. **2020/2021 large auditorium** — demonstrates growth.
-3. **2023 national conference wide shot** — peak institutional scale.
-4. **Josh Buice portrait/pulpit** — founder and 2025 crisis.
-5. **Scott Aniol G3 podium** — attempted reset / succession.
-6. **G3 Press / G3+ / Network visual** — ecosystem, not merely personalities.
-7. **2026 PMBC workshop or church image** — role overlap immediately before final scandal.
-8. **Non-copyright-heavy original graphic** generated from verified data: timeline, revenue/expense chart, board-role map. Prefer these for publication because we control the graphic while facts remain sourced.
+3. **2022 coalition panel** — shows the real people/network before the 2023 ideological-right conflict; use only if photographer permission is obtained.
+4. **2023 national conference wide shot** — peak institutional scale.
+5. **Josh Buice portrait/pulpit** — founder and 2025 crisis.
+6. **Scott Aniol G3 podium** — attempted reset / succession.
+7. **G3 Press / G3+ / Network visual** — ecosystem, not merely personalities.
+8. **2026 PMBC workshop or church image** — role overlap immediately before final scandal.
+9. **Original data graphics** — 2011–2026 timeline, revenue/expense/net-assets chart, attendance curve, board/officer evolution and PMBC↔G3 role graph.
+10. **Digital-state graphic** — our own dated diagram showing `live root 503` vs stale indexed pages vs stale PMBC leadership page vs app-store metadata, instead of reproducing copyrighted screenshots where unnecessary.
 
 ## Rights workflow
 
@@ -44,5 +50,12 @@ For every image promoted from this ledger, record:
 - required credit line;
 - immutable local acquisition hash only when repository policy permits storage;
 - final `PUBLICATION_ELIGIBLE` decision.
+
+For screenshots of websites/platforms, also record:
+
+- capture timestamp/timezone;
+- whether the capture reflects live HTTP state, search-index state or a cached crawl;
+- what factual proposition the screenshot is necessary to prove;
+- whether the same proposition can be conveyed by a rights-safer original table/graphic.
 
 Until that closure, **no discovered photograph is copied into the public GitHub repository**.
