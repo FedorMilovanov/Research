@@ -5,6 +5,8 @@
 **Architecture:** Part I of recommended three-part core series.  
 **Purpose:** give the future drafter a deliberately small, verified source set for the first article rather than exposing the draft to the full Research corpus.
 
+> **2026-09-08 delta:** AI-companion and coercive-sexting/cyber-dating-violence evidence has been integrated as **optional structural/safety support**, not as new main sections. Global source states are controlled by `29`/`64` plus `data/repository-evidence-policy-v2.json`.
+
 ---
 
 # 0. Part I promise
@@ -105,7 +107,7 @@ Bridge from internal desire to social formation.
 
 ### Guard
 
-Immediate chapter context concerns denial of resurrection and the social effect of such error. The proverb-like warning legitimately establishes corrupting companionship, but do not pretend Paul is directly discussing teenage group chats.
+Immediate chapter context concerns denial of resurrection and the social effect of such error. The proverb-like warning legitimately establishes corrupting companionship, but do not pretend Paul is directly discussing teenage group chats or AI companions.
 
 ---
 
@@ -160,7 +162,7 @@ Paul includes believers’ former condition as foolish/disobedient/deceived and 
 
 ### Publication use
 
-Short text for user’s specific correction:
+Short text for the specific correction:
 
 > the sinner may not be conducting a philosophical debate about whether his lust is “normal”; he can simply be living in slavery to passions/pleasures.
 
@@ -181,25 +183,27 @@ Use sparingly because the passage is theologically heavy.
 
 ### Critical guard
 
-Do not use God’s `gave them over` as a parental technique (“we should give the child over exactly as God did”).
+Do not use God’s `gave them over` as a parental technique.
 
 Do not collapse every individual teen sin into the full corporate/idolatrous argument of Romans 1.
 
 ---
 
-## J. 1 John 1:5–10 — darkness / light / confession
+## J. 1 John 1:5–2:2 — darkness / light / confession / Christ the Advocate
 
 ### Direct claim
 
-Claiming fellowship while walking in darkness is contradicted by conduct; walking in light involves truthful relation to sin, and confession rests on God’s faithfulness/justice in forgiveness.
+Claiming fellowship while walking in darkness is contradicted by conduct; walking in light involves truthful relation to sin, confession is joined to forgiveness/cleansing, and the movement continues to Jesus Christ the righteous Advocate.
 
 ### Publication use
 
-End Part I by moving from hidden life toward light, setting up Part II.
+End Part I by moving from hidden life toward light **and Christ**, setting up Part II without making exposure/accountability the functional gospel.
 
 ### Guard
 
-Do not make walking in light mean sinlessness; vv.8–10 explicitly reject that.
+Do not make walking in light mean sinlessness; 1 John 1:8–10 explicitly rejects that.
+
+Do not imply that merely saying “I confess” mechanically proves regeneration.
 
 ---
 
@@ -232,7 +236,6 @@ Use **one short direct quotation at most** plus paraphrase.
 Historical/public-domain scan/transcription already verified in Research source ledger; reopen exact edition before final quotation.
 
 Candidate verification URL:
-
 - https://www.apuritansmind.com/wp-content/uploads/FREEEBOOKS/PreciousRemediesAgainstSatansDevices-ThomasBrooks.pdf
 
 ### Guard
@@ -245,39 +248,30 @@ Satan’s devices do not erase James 1 personal desire/responsibility.
 
 ### Primary verified source
 
-CCEL, Chapter VII:
-
+CCEL:
 - https://www.ccel.org/ccel/owen/temptation.i.x.html
+- https://www.ccel.org/ccel/owen/temptation.i.vii.html
 
 ### High-value verified claims
 
-Owen explicitly urges the believer to:
+Owen urges the believer to:
 
 - know his own heart;
-- know natural frame/temper;
 - identify peculiar lusts/corruptions and weaknesses;
 - keep distance from occasions suited to those weaknesses;
 - watch specific companies, retirements, employments, and opportunities that provoke the corruption.
 
-### Additional high-value section
-
-- https://www.ccel.org/ccel/owen/temptation.i.vii.html
-
-Owen argues that when a particular lust meets a fitting occasion/opportunity, the person is already in a dangerous state of temptation; he rejects confidence that one can keep combustible corruption beside suitable opportunity without being affected.
+He argues that when a particular lust meets a fitting occasion/opportunity, the person is already in a dangerous state of temptation.
 
 ### Publication use
-
-Part I:
 
 - individual susceptibility;
 - why access matters without being root cause;
 - why “I can handle it” is not spiritual maturity.
 
-Part II will later use this more heavily for boundaries.
-
 ### Guard
 
-Do not present Owen’s seventeenth-century examples as if he were discussing digital technology directly.
+Do not present Owen’s seventeenth-century examples as if he were discussing smartphones or AI directly.
 
 ---
 
@@ -286,35 +280,23 @@ Do not present Owen’s seventeenth-century examples as if he were discussing di
 ### Primary verified source
 
 CCEL:
-
 - https://ccel.org/ccel/owen/indwellingsin/indwellingsin.i.xii.html
 - https://ccel.org/ccel/owen/indwellingsin/indwellingsin.i.xv.html
 - https://ccel.org/ccel/owen/indwellingsin/indwellingsin.i.xvi.html
 
 ### High-value verified structure
 
-Owen describes sin’s deceit as operating progressively through:
-
-1. drawing the mind away from due sense/duty;
-2. entangling the affections with the bait;
-3. obtaining consent of the will;
-4. bringing forth actual sin unless providentially restrained.
-
-He also explicitly connects Heb. 3:13 with the hardening effect of sin’s deceit.
-
-### Especially relevant observation
-
-He notes a danger in which earlier emotional conviction against sin fades and, unless truth gains deeper rule in the mind/judgment, the person can increasingly lose practical sensitivity.
+Owen describes sin’s deceit as operating progressively through mind, affections and will and connects Heb. 3:13 with hardening through sin’s deceit.
 
 ### Publication use
 
-This is the strongest classical support for the user’s correction:
+Strong classical support for:
 
-> not necessarily “he has concluded the sin is normal”; he may retain correct doctrine while the truth exercises less practical government over desire/action.
+> not necessarily “he has concluded the sin is normal”; he may retain correct doctrine while truth exercises less practical government over desire/action.
 
 ### Guard
 
-Owen’s treatise concerns indwelling sin in believers in substantial sections. Do not automatically transfer every statement as a diagnosis of an unregenerate teenager. Use the described moral dynamics with the correct theological subject stated.
+Owen’s treatise concerns indwelling sin in believers in substantial sections. Do not automatically transfer every statement as a diagnosis of an unregenerate teenager.
 
 ---
 
@@ -326,7 +308,7 @@ Owen’s treatise concerns indwelling sin in believers in substantial sections. 
 
 ### High-value verified claim
 
-Flavel traces temptation through early motions toward consultation, choice, and full engagement of the will, stressing that the first motions are easier to stop than a temptation already allowed to gather force.
+Flavel traces temptation through early motions toward consultation, choice, and fuller engagement, stressing that temptation is easier checked early than after it gathers force.
 
 ### Publication use
 
@@ -336,174 +318,177 @@ A short supporting reference for:
 
 ### Guard
 
-Do not convert Flavel into a deterministic five-stage psychological model.
+Do not convert Flavel into a deterministic psychological stage model.
 
 ---
 
 # 3. Modern factual packet — only facts that materially add
 
-## 3.1 Pew Research Center — U.S. teens, 2024
+## 3.1 Pew Research Center — U.S. teens, 2024 internet baseline
 
 Source:
-
 - https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/
 
 ### Study details
 
-- online survey;
 - 1,391 U.S. teens;
 - ages 13–17;
-- conducted Sept. 18–Oct. 10, 2024;
-- probability-based recruitment via parents/KnowledgePanel;
-- weighted to represent U.S. teens 13–17 living with parents.
+- Sept.–Oct. 2024;
+- probability-based panel.
 
 ### Verified facts
 
-- 96% reported using the internet daily;
-- nearly half reported being online almost constantly;
-- 95% reported having/access to a smartphone at home;
-- one-third used at least one of five measured major platforms almost constantly.
+- 96% daily internet use;
+- nearly half online almost constantly;
+- 95% smartphone access.
 
-### Allowed publication wording
+### Use
 
-> “In Pew’s 2024 U.S. survey, 96% of 13–17-year-olds said they used the internet daily, and nearly half said they were online almost constantly.”
+One compact structural baseline only.
 
-### Forbidden wording
+### Guard
 
-- “96% are addicted to the internet”;
-- universalizing U.S. numbers to all countries;
-- using access as proof of moral harm.
-
-### Note
-
-Pew page now points readers to a 2025 survey as newer platform-use data. Before actual publication, recheck whether 2025 data better serve the same structural claim.
+U.S.-specific; access ≠ addiction or moral harm.
 
 ---
 
-## 3.2 WHO/HBSC — continuous online contact, 2022 data published 2024
+## 3.2 WHO/HBSC — continuous online contact
 
 Source:
-
 - https://www.who.int/europe/news-room/25-09-2024-teens--screens-and-mental-health
 
-### Study details
+### Scope
 
-- HBSC;
-- almost 280,000 young people;
+- nearly 280,000 young people;
 - ages 11, 13, 15;
-- 44 countries/regions in Europe, Central Asia, and Canada;
-- survey year 2022.
+- 44 countries/regions;
+- 2022 data.
 
-### Verified facts
+### Verified fact
 
-- 36% reported continuous online contact with friends;
-- 11% showed the study’s pattern of problematic social-media behavior;
-- problematic-use result is distinct from ordinary high use.
+- 36% reported continuous online contact with friends.
 
 ### Best Part I use
 
-Use **36% continuous online contact** to establish the structural reality that the peer group can remain present after physical separation.
+Establish that the peer group can remain present after physical separation.
 
-### Forbidden wording
+### Guard
 
-- “36% are addicted”;
-- “constant contact proves social media caused the behavior.”
+Continuous contact ≠ problematic use/addiction.
 
 ---
 
 ## 3.3 Children’s Commissioner for England — pornography exposure/pathways
 
 Sources:
-
 - https://www.childrenscommissioner.gov.uk/resource/a-lot-of-it-is-actually-just-abuse-young-people-and-pornography/
 - https://www.childrenscommissioner.gov.uk/resource/pornography-and-harmful-sexual-behaviour/
-- 2025 follow-up PDF: `Sex is kind of broken now: Children and Pornography`.
 
-### Original sample guard
+### Use
 
-2023 findings came from a survey of more than 1,000 people aged 16–21 plus focus groups with teenagers.
+Establish that pornography/sexual material may arrive through mainstream platforms and accidental exposure, not only deliberate adult-site search.
 
-### Verified reported facts among the surveyed group
+### Guard
 
-- average first exposure age 13;
-- 27% had seen pornography by age 11;
-- 10% by age 9;
-- pornography exposure was not confined to dedicated adult sites; mainstream social platforms were reported pathways.
-
-### 2025 follow-up
-
-Reported that:
-
-- 70% of respondents had seen online pornography;
-- average first exposure remained 13;
-- 27% by age 11;
-- accidental exposure was reported more often than deliberate seeking in that survey (59% vs 35%).
-
-### Publication use
-
-Use primarily to establish **access pathway / accidental exposure / mainstream-platform exposure**, not as universal world prevalence.
-
-### Forbidden wording
-
-- “the average child worldwide first sees porn at 13”;
-- “27% of all children everywhere see porn by 11.”
+Any age/prevalence number must carry sample/geography limits. Do not universalize England/UK findings globally.
 
 ---
 
-## 3.4 UNICEF — *Through Children’s Eyes* (September 2026)
+## 3.4 UNICEF — technology-facilitated sexual exploitation/abuse
 
 Primary source:
-
 - https://www.unicef.org/innocenti/reports/through-childrens-eyes
 
-Press release:
+### Use
 
-- https://www.unicef.org/press-releases/1-5-children-across-21-countries-have-experienced-tech-facilitated-sexual
+Optional short safety paragraph: modern digital spaces can contain coercion/exploitation as well as voluntary temptation.
 
-### Verified scope
+### Critical guard
 
-- 21 countries;
-- children ages 12–17 who use the internet;
-- estimated 20 million, almost 1 in 5, experienced at least one form of technology-facilitated sexual exploitation/abuse in a single year across those countries;
-- more than half of abuse reportedly occurred on mainstream social-media platforms;
-- less than 1% of experiences were reported to police/social worker/helpline;
-- more than 4 in 10 were disclosed to no one.
-
-### Critical moral-category guard
-
-This is **victimization/exploitation data**, not a prevalence estimate of voluntary sexual sin among children.
-
-### Part I use
-
-A short safety paragraph showing that mainstream digital spaces can contain not only voluntary temptation but also coercion/exploitation.
-
-Do not let this become the central statistic of the sin/hypocrisy article.
+Victimization data are **not** prevalence data for voluntary sexual sin.
 
 ---
 
-## 3.5 NCMEC — financial sextortion, 2025 reports
+## 3.5 NCMEC — financial sextortion
 
 Source:
-
 - https://www.ncmec.org/blog/2026/ncmec-releases-new-sextortion-data-2025
 
-### Verified fact
+### Use
 
-NCMEC states that in 2025 it received:
+Sidebar/callout or one sentence only if sextortion survives compression.
 
-- more than 50,000 reports of financially motivated sextortion;
-- average 137 reports per day;
-- up from more than 36,000 reports in 2024.
+### Guard
 
-### Publication category
+Report volume ≠ population prevalence.
 
-**REPORT VOLUME, NOT PREVALENCE.**
+---
+
+## 3.6 AI assistants/companions — optional structural delta, not a new main section
+
+Sources:
+- Pew Research Center 2026: https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/
+- Australian eSafety Commissioner 2026: https://www.esafety.gov.au/research/talking-to-machines-childrens-experiences-with-ai-assistants-and-companions
+- eSafety transparency findings: https://www.esafety.gov.au/industry/basic-online-safety-expectations/ai-services/findings-october-2025
+
+### Verified/high-value use
+
+Pew reports among U.S. teens 13–17:
+- 64% had used chatbots;
+- 16% used them for casual conversation;
+- 12% for emotional support/advice.
+
+eSafety’s Australian child-safety research documents AI use for companion-like purposes, sharing of personal information, potentially harmful interactions, and a smaller sexualized-interaction subset.
 
 ### Best Part I use
 
-Probably sidebar/callout or one sentence only.
+One short addition inside **Pocket infrastructure of secrecy**:
 
-The primary adolescent article should not drift into an emergency manual; a later safeguarding tool can go deeper.
+> The private digital world no longer always requires another human to be online. Some teenagers now use chatbots as conversational or emotional-support spaces, creating an additional persistent private channel.
+
+Optional synthesis term:
+
+> **peerless hidden companionship**.
+
+### Guard
+
+Do not claim:
+- most teens have AI romantic partners;
+- AI companionship inevitably replaces human relationships;
+- chatbot use itself is sinful;
+- AI is a “fourth spiritual enemy.”
+
+### Evidence transfer
+
+Use global states in `29`/`64`; exact numerical use retains `LOCATOR_HOLD` until final table/method locator is pinned.
+
+---
+
+## 3.7 Coercive sexting / cyber dating violence — optional safety delta
+
+Sources:
+- 49-study systematic review/meta-analysis: https://pubmed.ncbi.nlm.nih.gov/39283366/
+- 2026 U.S. national adolescent study, N=3,466 ages 13–17: https://pubmed.ncbi.nlm.nih.gov/41653178/
+
+### Best Part I use
+
+Strengthen the optional safety sidebar, not the main sin/hardening spine.
+
+The article may distinguish:
+
+`voluntary sexual message/image`
+
+from
+
+`pressure/coercion → nonconsensual sharing → threats/extortion`.
+
+### Required moral line
+
+> A teenager may bear responsibility for one voluntary act and still become the victim of another person’s later coercion, threat or distribution.
+
+### Guard
+
+Do not infer exact prevalence until full-table denominators are retrieved. Both sources remain `B1/REFERENCE` with `LOCATOR_HOLD` for exact numerical claims beyond already verified metadata/sample scope.
 
 ---
 
@@ -519,11 +504,11 @@ Unless a specific paragraph later requires them, keep out:
 - clinical PPU/CSBD diagnostic debate;
 - detailed parental-monitoring literature;
 - exact self-control experiments;
-- every peer-norm meta-analysis.
+- every peer-norm meta-analysis;
+- a long AI-safety excursus;
+- a detailed cyber-dating-violence taxonomy.
 
-These sources served Research by preventing false claims.
-
-They do not need to become visible scaffolding in Part I.
+These sources served Research by preventing false claims. They do not need to become visible scaffolding in Part I.
 
 ---
 
@@ -531,13 +516,17 @@ They do not need to become visible scaffolding in Part I.
 
 Use no more than roughly **4–5 modern numerical anchors** in normal prose.
 
-Recommended shortlist:
+Core shortlist remains:
 
-1. Pew — `96% daily / nearly half almost constantly` (U.S. 13–17, 2024).
-2. WHO/HBSC — `36% continuous online contact` (11/13/15, 44 countries/regions, 2022 data).
-3. Children’s Commissioner — exposure pathway/age fact with England/sample disclaimer.
-4. UNICEF — one exploitation/safety fact with explicit victimization label.
-5. NCMEC — only if sextortion paragraph survives compression.
+1. Pew 2024 — internet/smartphone baseline.
+2. WHO/HBSC — continuous online contact.
+3. Children’s Commissioner — pornography pathway/age fact if needed.
+4. One safety anchor — UNICEF **or** NCMEC if the safety sidebar survives.
+5. One additional anchor only if it materially earns its place.
+
+### AI/coercion budget rule
+
+AI companions and coercive sexting are **reserve deltas**, not mandatory extra percentages. Prefer one qualitative/paraphrased sentence unless the final paragraph specifically needs the statistic.
 
 Do not use all available percentages merely because they are verified.
 
@@ -550,12 +539,12 @@ Maximum **2–3 direct classical quotations**.
 Priority candidates:
 
 1. Brooks — bait/hook image;
-2. Owen — know own heart / peculiar lust / occasions;
+2. Owen — peculiar lust / occasions;
 3. Owen or Flavel — early temptation / hardening mechanism.
 
 Everything else paraphrase.
 
-Exact quote wording must be reopened at publication time and translated into Russian according to product editorial-source policy; do not paste long English quotations into the Russian article.
+Exact quote wording must be reopened at publication time and translated into Russian according to product editorial-source policy.
 
 ---
 
@@ -566,13 +555,13 @@ Exact quote wording must be reopened at publication time and translated into Rus
 | Not a new species of sinner | Mark 7; James 1 | none needed | none |
 | Why the fruit is sweet | Prov. 9; Heb. 11 | Brooks | none |
 | Peer world follows home | 1 Cor. 15:33 | Owen optional | WHO/HBSC |
-| Pocket infrastructure of secrecy | James 1 guard | Owen on occasions | Pew; Children’s Commissioner |
+| Pocket infrastructure of secrecy | James 1 guard | Owen on occasions | Pew 2024; Children’s Commissioner; **optional Pew/eSafety AI** |
 | Pornography without fake neuroscience | Matt. 5 thematic only if needed | none | strongest porn review + CCo pathway fact |
-| How second life learns to hide | Ps./Prov. truth texts if selected later | Brooks/Owen paraphrase | none necessary |
+| How second life learns to hide | truth/light texts if selected | Brooks/Owen paraphrase | none necessary |
 | Conscience knows but barely interrupts | Heb. 3; Eph. 4; Titus 3; Rom. 1 sparingly | Owen *Indwelling Sin* | none |
-| Is every such child unbelieving? | 1 John 1; perseverance texts | 1689 ch.17 later | none |
-| Come into the light | 1 John 1; Heb. 3 | none | none |
-| Safety edge: exploitation | moral-category guard | none | UNICEF/NCMEC |
+| Is every such child unbelieving? | 1 John 1; perseverance texts | 1689 ch.17 | none |
+| Come into the light | 1 John 1–2; Heb. 3 | none | none |
+| Safety edge: exploitation/coercion | moral-category guard | none | UNICEF/NCMEC; **optional cyber-dating/sexting studies** |
 
 ---
 
@@ -585,7 +574,8 @@ Exact quote wording must be reopened at publication time and translated into Rus
 - repeated moral knowledge does not guarantee practical obedience;
 - modern devices greatly reduce friction/access barriers and allow near-continuous peer contact;
 - pornography/sexual material can reach children through mainstream digital spaces;
-- technology-facilitated sexual exploitation is a serious documented risk;
+- private conversational AI creates an additional digital pathway without changing the source of sin;
+- technology-facilitated sexual exploitation, coercion and nonconsensual sharing are documented risks and must be distinguished from voluntary sin;
 - unregenerate and regenerate categories cannot be diagnosed merely by one discovered act.
 
 ---
@@ -599,6 +589,9 @@ Exact quote wording must be reopened at publication time and translated into Rus
 - every pornography user is clinically addicted;
 - every user escalates to harder content;
 - profanity directly causes sexual sin;
+- most teens have AI romantic companions;
+- AI use itself is a spiritual category parallel to world/flesh/devil;
+- every sexting case is fully voluntary or fully coerced;
 - a repeated sexual fall proves the child is unregenerate;
 - a past profession proves the child is regenerate;
 - a callous conscience is necessarily permanently seared;
@@ -616,8 +609,8 @@ A publication-grade Part I can be built primarily from:
 - Brooks;
 - Owen (`Temptation` + `Indwelling Sin`);
 - Flavel as secondary support;
-- 4–5 carefully scoped modern sources.
+- 4–5 carefully scoped modern anchors.
 
-Everything else remains reserve evidence for challenge, nuance, and fact-checking.
+AI-companion and coercive-sexting evidence now exist in the packet as **controlled reserve evidence**, so no additional broad research pass is required before drafting.
 
-**Next compression task:** convert this packet into a section-level claim ledger with one sentence of claim, one source set, one forbidden overclaim, and one transition per section—still in Research, not yet product prose.
+**Next action is no longer more compression research:** use `89` as the section-level contract, perform live product preflight, then draft Part I only and reopen exact locators/quotes only for claims that survive into manuscript prose.
