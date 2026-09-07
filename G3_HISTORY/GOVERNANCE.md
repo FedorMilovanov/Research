@@ -10,7 +10,9 @@ The current evidence supports asking this question. It does **not yet** support 
 
 ## 2019–2020 — founder-centric corporate officer structure
 
-Georgia annual-registration material identifies Josh Buice in overlapping CEO/CFO roles in the early nonprofit period, with David Crowe as secretary. This supports a founder-centric early officer model.
+Georgia records establish the nonprofit on 2019-06-06. The original Articles identify Josh Buice as registered agent at 4979 Highway 5, Douglasville. Annual-registration material identifies Buice in overlapping CEO/CFO roles in the early nonprofit period, with David Crowe as secretary. This supports a founder-centric early officer model.
+
+The Articles also matter for the 2026 end-state: the board may cease corporate activities and dissolve by a two-thirds vote, after which liabilities are addressed and residual assets are to be used for qualifying exempt purposes.
 
 **Do not overstate:** corporate officer overlap in a young nonprofit is not by itself proof of autocracy or financial impropriety.
 
@@ -36,19 +38,19 @@ Part VII includes officers/key employees as well as directors; presence on the l
 
 ### FY2024
 
-Reported names include:
+Reported Part VII names include:
 
-- Scott Aniol
-- Virgil Walker
-- Joshua Buice
-- Tom Buck
-- Chip Thornton
-- Buck Braswell
-- Adam Burrell
-- Matt Broome
-- Jonathan Frazier
+- Scott Aniol — Vice President
+- Virgil Walker — VP of Ministry Relations
+- Joshua Buice — President
+- Tom Buck — Director
+- Chip Thornton — Director
+- Buck Braswell — Director
+- Adam Burrell — Director
+- Matt Broome — Director
+- Jonathan Frazier — also reported in the filing's people list
 
-The filing reports **7 voting governing-body members, 6 independent**.
+The filing reports **7 voting governing-body members, 6 independent**. Therefore the nine Part VII names cannot all simply be described as simultaneous voting directors without reconstructing the filing columns/status indicators.
 
 Other reported governance features:
 
@@ -58,13 +60,26 @@ Other reported governance features:
 - whistleblower policy: no
 - document-retention/destruction policy: no
 
-These facts cut against a simplistic narrative that G3 had no formal governance at all.
+These facts cut against a simplistic narrative that G3 had no formal governance at all, while the missing policies remain legitimate governance observations.
+
+## FY2025 filing — useful but not an August 2026 board roster
+
+The FY2025 Form 990 was filed 2026-05-13. The currently visible extracted summary identifies at least:
+
+- Scott Aniol — `President As Of 05/2025` in the filing's extracted title field;
+- Buck Braswell — Director;
+- Matt Broome — Secretary;
+- additional people hidden by the summary interface.
+
+The Aniol title annotation must **not** be used to rewrite the formal succession date. G3’s own July 2025 announcement states that Aniol's appointment as president was effective **2025-07-09**. The Form 990 label may be a retrospective filing annotation, a transition shorthand or an extraction artifact; until raw Part VII is acquired, the official event-specific announcement controls the exact appointment date.
+
+Equally important, the FY2025 return describes a calendar-year period ending Dec. 2025. It cannot establish the exact governing board at the time of the August 2026 crisis.
 
 ## May–July 2025 — board after Buice
 
 Public reporting around the May 2025 crisis identifies a board including several figures outside Pray’s Mill, including Tom Buck, Chip Thornton, Buck Braswell, Adam Burrell, Matt Broome and Jonathan Frazier.
 
-By July 2025 G3’s official presidential appointment announcement identifies **Jonathan Frazier as board chairman** while Scott Aniol becomes president.
+By July 2025 G3’s official presidential appointment announcement identifies **Jonathan Frazier as board chairman** while Scott Aniol becomes president effective 2025-07-09.
 
 This is important evidence that the immediate post-Buice response was not formally run only by Pray’s Mill elders.
 
@@ -79,9 +94,11 @@ A polemical secondary source claims that the most recently archived G3 board pag
 - Dylan Joyner
 - Ron Mooney
 
-This is currently `C / EVIDENCE_HOLD` until an archived **official G3 page** is acquired and timestamped.
+The same source says Tom Buck was no longer on the board sometime between late 2025 and early 2026. These are useful archive-discovery claims, not primary proof.
 
-If confirmed, the change is institutionally significant because Jon Norton, Matt Sikes and Dylan Joyner were Pray’s Mill elders, while Scott Aniol was both G3 president and a Pray’s Mill elder. It would indicate a materially greater Pray’s Mill concentration than the broader 2023–2025 board configuration.
+This is currently `C / ARCHIVE_HOLD` until an archived **official G3 page** is acquired and timestamped.
+
+If confirmed, the change is institutionally significant because Jon Norton, Matt Sikes and Dylan Joyner were Pray’s Mill elders, while Scott Aniol was both G3 president and a Pray’s Mill elder. It would indicate a materially greater Pray’s Mill concentration than the broader 2023–2025 configuration.
 
 If not confirmed, the institutional-concentration hypothesis must be revised.
 
@@ -90,18 +107,18 @@ If not confirmed, the institutional-concentration hypothesis must be revised.
 | Person | G3 role(s) | PMBC role | Other role | Key date issues |
 |---|---|---|---|---|
 | Josh Buice | founder / president / early CEO-CFO | pastor/elder | public conference leader | exact board/officer transitions 2019–2025 |
-| Scott Aniol | EVP/editor, later president | elder/pastor | GBTS faculty until Sep 2026 | exact voting-board status by year |
+| Scott Aniol | EVP/editor, later president | elder/pastor | GBTS faculty until Sep 2026 | official presidency effective 2025-07-09; exact voting-board status by year |
 | Virgil Walker | ministry-relations executive | not PMBC elder in current reconstruction | podcast/ministry figure | exit June 2025 |
-| Jonathan Frazier | director / board chairman | relationship to PMBC to verify | — | exact exit from board |
-| Tom Buck | director | FBC Lindale pastor | conference speaker | exact date/reason of board departure |
-| Chip Thornton | director | external church role | — | exact exit |
-| Buck Braswell | director | church affiliation to map | — | continuity into late board? |
-| Adam Burrell | director | external affiliation | — | exact exit |
-| Matt Broome | director/secretary | affiliation to map | — | late-board continuity |
-| Jon Norton | alleged late director | PMBC elder | — | archived board proof required |
-| Matt Sikes | alleged late director | PMBC elder | — | archived board proof required |
-| Dylan Joyner | alleged late director | PMBC elder | — | archived board proof required |
-| Ron Mooney | alleged late director | affiliation to map | — | archived board proof required |
+| Jonathan Frazier | director / board chairman | relationship to PMBC to verify | — | confirmed board chair July 2025; exact exit date unresolved |
+| Tom Buck | director | FBC Lindale pastor | conference speaker | still Part VII in FY2024; exact late-2025/early-2026 departure unresolved |
+| Chip Thornton | director | external church role | — | Part VII FY2024; exact exit unresolved |
+| Buck Braswell | director | church affiliation to map | — | Part VII FY2024 and visible FY2025 filing; possible late-board continuity |
+| Adam Burrell | director | external affiliation | — | Part VII FY2024; exact exit unresolved |
+| Matt Broome | director/secretary | affiliation to map | — | Part VII FY2024; Secretary visible FY2025 filing; possible late-board continuity |
+| Jon Norton | alleged late director | PMBC elder | — | archived official board proof required |
+| Matt Sikes | alleged late director | PMBC elder | — | G3 Pastor-Theologian/workshop role verified; board status needs archive proof |
+| Dylan Joyner | alleged late director | PMBC elder | — | archived official board proof required |
+| Ron Mooney | alleged late director | affiliation to map | — | archived official board proof required |
 
 ## G3 Church Network governance problem
 
