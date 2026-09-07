@@ -2,7 +2,8 @@
 
 **Статус:** ACTIVE CORRECTION OVERLAY / FAIL-CLOSED
 **Дата:** 2026-09-07
-**Research base:** `e8e6b98787019d43a2ffd10eb55bdde04ebfb747`
+**Origin research base:** `e8e6b98787019d43a2ffd10eb55bdde04ebfb747`
+**Current authority baseline:** `b1bf88e653245155b8d6d3f04c99217b126e9a86`
 **Исторический документ:** `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/31_SCRIPTURE_TEXTS_MANIPULATED.md`
 **Исторический blob:** `719a2edfb1ff5af4634e14c3c0f0d09e582f9214`
 
