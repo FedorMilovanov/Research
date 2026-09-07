@@ -2,10 +2,13 @@
 """Acquire exact G3 IRS Form 990 e-file XML objects with custody metadata.
 
 Research-only acquisition helper. It validates each known object ID against the
-official IRS annual index before attempting the IRS public S3 XML object route.
-Downloaded bytes are written only to the requested output directory and are
-intended for an ephemeral GitHub Actions artifact unless separately promoted by
-repository custody policy.
+official IRS annual index, reads the authoritative XML_BATCH_ID from that row,
+downloads the corresponding official IRS TEOS batch ZIP, and extracts only the
+exact return XML member. Large annual indexes and batch ZIPs are not retained in
+the final Actions artifact; their hashes, sizes, URLs, and matched rows are.
+
+Downloaded evidence remains an EPHEMERAL_ACTION_ARTIFACT unless separately
+promoted under the repository custody policy.
 """
 
 from __future__ import annotations
@@ -15,12 +18,12 @@ import csv
 import hashlib
 import io
 import json
-import os
 import sys
 import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+import zipfile
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -51,7 +54,7 @@ TARGETS = [
 ]
 
 USER_AGENT = (
-    "FedorMilovanov-Research-G3-IRS-Acquisition/1.0 "
+    "FedorMilovanov-Research-G3-IRS-Acquisition/1.1 "
     "(research-only; contact via repository FedorMilovanov/Research)"
 )
 
@@ -64,17 +67,20 @@ def local_name(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
 
 
-def fetch(url: str, timeout: int = 120) -> tuple[bytes, dict[str, Any]]:
-    req = urllib.request.Request(
+def request(url: str) -> urllib.request.Request:
+    return urllib.request.Request(
         url,
         headers={
             "User-Agent": USER_AGENT,
             "Accept": "*/*",
         },
     )
+
+
+def fetch(url: str, timeout: int = 180) -> tuple[bytes, dict[str, Any]]:
     started = time.time()
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as response:
+        with urllib.request.urlopen(request(url), timeout=timeout) as response:
             body = response.read()
             meta = {
                 "requested_url": url,
@@ -90,6 +96,37 @@ def fetch(url: str, timeout: int = 120) -> tuple[bytes, dict[str, Any]]:
     except urllib.error.HTTPError as exc:
         raise RuntimeError(f"HTTP {exc.code} for {url}: {exc.reason}") from exc
     except urllib.error.URLError as exc:
+        raise RuntimeError(f"URL error for {url}: {exc.reason}") from exc
+
+
+def fetch_to_path(url: str, path: Path, timeout: int = 300) -> dict[str, Any]:
+    started = time.time()
+    digest = hashlib.sha256()
+    total = 0
+    try:
+        with urllib.request.urlopen(request(url), timeout=timeout) as response, path.open("wb") as out:
+            while True:
+                chunk = response.read(1024 * 1024)
+                if not chunk:
+                    break
+                out.write(chunk)
+                digest.update(chunk)
+                total += len(chunk)
+            return {
+                "requested_url": url,
+                "final_url": response.geturl(),
+                "status": getattr(response, "status", None),
+                "content_type": response.headers.get("Content-Type"),
+                "content_length_header": response.headers.get("Content-Length"),
+                "bytes": total,
+                "sha256": digest.hexdigest(),
+                "elapsed_seconds": round(time.time() - started, 3),
+            }
+    except urllib.error.HTTPError as exc:
+        path.unlink(missing_ok=True)
+        raise RuntimeError(f"HTTP {exc.code} for {url}: {exc.reason}") from exc
+    except urllib.error.URLError as exc:
+        path.unlink(missing_ok=True)
         raise RuntimeError(f"URL error for {url}: {exc.reason}") from exc
 
 
@@ -132,6 +169,56 @@ def locate_index_row(csv_bytes: bytes, object_id: str) -> dict[str, str]:
                     )
             return clean
     raise RuntimeError(f"Object {object_id} not found in IRS index")
+
+
+def batch_id_from_row(row: dict[str, str]) -> str:
+    for key, value in row.items():
+        if normalize_key(key) == "XMLBATCHID" and value.strip():
+            return value.strip()
+    raise RuntimeError("Matched IRS index row has no XML_BATCH_ID")
+
+
+def batch_url_candidates(year: int, batch_id: str) -> list[str]:
+    base = f"https://apps.irs.gov/pub/epostcard/990/xml/{year}/"
+    names: list[str] = []
+    for candidate in (batch_id, batch_id.upper(), batch_id[:-1] + batch_id[-1:].upper()):
+        if candidate and candidate not in names:
+            names.append(candidate)
+    return [base + name + ".zip" for name in names]
+
+
+def acquire_batch(year: int, batch_id: str, archive_path: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    attempts: list[dict[str, Any]] = []
+    for url in batch_url_candidates(year, batch_id):
+        try:
+            meta = fetch_to_path(url, archive_path)
+            attempts.append({"url": url, "success": True, **meta})
+            return meta, attempts
+        except Exception as exc:
+            attempts.append({"url": url, "success": False, "error": str(exc)})
+    raise RuntimeError(f"Could not acquire IRS batch ZIP {batch_id}; attempts={attempts}")
+
+
+def extract_exact_xml(archive_path: Path, object_id: str) -> tuple[bytes, dict[str, Any]]:
+    try:
+        with zipfile.ZipFile(archive_path) as archive:
+            candidates = [name for name in archive.namelist() if object_id in Path(name).name]
+            if not candidates:
+                raise RuntimeError(f"Object {object_id} not present in IRS batch ZIP")
+            preferred = [name for name in candidates if Path(name).name == f"{object_id}_public.xml"]
+            member = preferred[0] if preferred else sorted(candidates)[0]
+            xml_bytes = archive.read(member)
+            info = archive.getinfo(member)
+            return xml_bytes, {
+                "member": member,
+                "member_compressed_bytes": info.compress_size,
+                "member_uncompressed_bytes": info.file_size,
+                "member_crc32": f"{info.CRC:08x}",
+                "member_sha256": sha256_bytes(xml_bytes),
+                "matching_members": candidates,
+            }
+    except zipfile.BadZipFile as exc:
+        raise RuntimeError(f"IRS batch download is not a valid ZIP: {exc}") from exc
 
 
 def iter_named(root: ET.Element, wanted: str) -> Iterable[ET.Element]:
@@ -190,34 +277,37 @@ def acquire_target(target: dict[str, Any], out_root: Path) -> dict[str, Any]:
 
     index_url = f"https://apps.irs.gov/pub/epostcard/990/xml/{year}/index_{year}.csv"
     index_bytes, index_meta = fetch(index_url)
-    (target_dir / f"index_{year}.csv").write_bytes(index_bytes)
     row = locate_index_row(index_bytes, object_id)
+    batch_id = batch_id_from_row(row)
     write_json(target_dir / "IRS_INDEX_ROW.json", row)
     write_json(target_dir / "IRS_INDEX_FETCH.json", index_meta)
 
-    xml_candidates = [
-        f"https://s3.amazonaws.com/irs-form-990/{object_id}_public.xml",
-        f"https://s3.amazonaws.com/irs-form-990/{object_id}.xml",
-    ]
-    xml_bytes: bytes | None = None
-    xml_meta: dict[str, Any] | None = None
-    attempts: list[dict[str, Any]] = []
-    for url in xml_candidates:
-        try:
-            body, meta = fetch(url)
-            attempts.append({"url": url, "success": True, **meta})
-            xml_bytes = body
-            xml_meta = meta
-            break
-        except Exception as exc:  # record every deterministic acquisition attempt
-            attempts.append({"url": url, "success": False, "error": str(exc)})
-
-    write_json(target_dir / "XML_FETCH_ATTEMPTS.json", attempts)
-    if xml_bytes is None or xml_meta is None:
-        raise RuntimeError(f"Could not acquire XML for {label} object {object_id}")
+    # Do not retain the very large annual index in the uploaded Actions artifact.
+    # Its exact URL, size, hash and matched row are enough to reproduce validation.
+    archive_path = target_dir / f"{batch_id}.zip"
+    batch_attempts: list[dict[str, Any]] = []
+    try:
+        batch_meta, batch_attempts = acquire_batch(year, batch_id, archive_path)
+        write_json(target_dir / "BATCH_FETCH_ATTEMPTS.json", batch_attempts)
+        write_json(target_dir / "BATCH_FETCH.json", batch_meta)
+        xml_bytes, member_meta = extract_exact_xml(archive_path, object_id)
+        write_json(target_dir / "BATCH_MEMBER.json", member_meta)
+    finally:
+        # Batch archives can be hundreds of MB. Preserve provenance/checksum, not
+        # the whole container ZIP, in the ephemeral evidence package.
+        archive_path.unlink(missing_ok=True)
+        if batch_attempts and not (target_dir / "BATCH_FETCH_ATTEMPTS.json").exists():
+            write_json(target_dir / "BATCH_FETCH_ATTEMPTS.json", batch_attempts)
 
     xml_path = target_dir / f"{object_id}_public.xml"
     xml_path.write_bytes(xml_bytes)
+    xml_meta = {
+        "file": xml_path.name,
+        "bytes": len(xml_bytes),
+        "sha256": sha256_bytes(xml_bytes),
+        "source_batch_id": batch_id,
+        "source_member": member_meta["member"],
+    }
     write_json(target_dir / "XML_FETCH.json", xml_meta)
 
     try:
@@ -247,13 +337,13 @@ def acquire_target(target: dict[str, Any], out_root: Path) -> dict[str, Any]:
                 }
             )
 
-    all_top_level = []
+    all_irs_tags: list[str] = []
     for elem in root.iter():
         lname = local_name(elem.tag)
-        if lname.startswith("IRS") and lname not in all_top_level:
-            all_top_level.append(lname)
+        if lname.startswith("IRS") and lname not in all_irs_tags:
+            all_irs_tags.append(lname)
     write_json(target_dir / "COMPONENT_SUMMARY.json", component_summary)
-    write_json(target_dir / "IRS_TAG_INVENTORY.json", all_top_level)
+    write_json(target_dir / "IRS_TAG_INVENTORY.json", all_irs_tags)
 
     custody = {
         "label": label,
@@ -263,10 +353,13 @@ def acquire_target(target: dict[str, Any], out_root: Path) -> dict[str, Any]:
         "research_use": target["research_use"],
         "index": index_meta,
         "index_row": row,
-        "xml": {
-            **xml_meta,
-            "file": xml_path.name,
+        "batch": {
+            **batch_meta,
+            "xml_batch_id": batch_id,
+            "archive_retained": False,
         },
+        "batch_member": member_meta,
+        "xml": xml_meta,
         "components": component_summary,
         "state": "EPHEMERAL_ACTION_ARTIFACT",
         "publication_eligible": False,
@@ -313,7 +406,8 @@ def main() -> int:
     for target in run_summary["targets"]:
         print(
             f"ACQUIRED {target['label']} {target['object_id']} "
-            f"{target['xml']['bytes']} bytes sha256={target['xml']['sha256']}"
+            f"{target['xml']['bytes']} bytes sha256={target['xml']['sha256']} "
+            f"batch={target['batch']['xml_batch_id']}"
         )
     return 0
 
