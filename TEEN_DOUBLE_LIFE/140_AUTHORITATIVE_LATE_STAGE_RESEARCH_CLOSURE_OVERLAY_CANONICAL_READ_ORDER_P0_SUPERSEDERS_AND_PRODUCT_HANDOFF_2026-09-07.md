@@ -1,10 +1,12 @@
-# Authoritative Late-Stage Research Closure Overlay
+# Corpus-Specific Authoritative Late-Stage Research Closure Overlay
 ## Canonical Read Order, P0 Superseders, Remaining Gates, and Product Handoff
 
-**Status:** AUTHORITATIVE LATE-STAGE HANDOFF / RESEARCH CLOSURE CONTROL / NOT PUBLICATION  
-**Date:** 2026-09-07  
+**Status:** CORPUS-SPECIFIC AUTHORITATIVE HANDOFF / RESEARCH CLOSURE CONTROL / NOT REPOSITORY ROOT AUTHORITY / NOT PUBLICATION  
+**Date:** 2026-09-07; governance/delta reconciliation 2026-09-08  
 **Target later:** `FedorMilovanov/gb-is-my-strength`  
 **Research lane:** `research/teen-double-life-digital-sin-20260907`  
+
+> **Repository-root authority guard (2026-09-08):** this file is authoritative only for **TEEN_DOUBLE_LIFE intra-corpus handoff, superseders and drafting controls**. It is **not** the Research repository root authority. Resolve repository authority through `CURRENT_AUTHORITY.md` → `data/research-authority-registry-v1.json` → the registry-selected authority. Current `AGENT_RULES.md` and `data/repository-evidence-policy-v2.json` supersede any incompatible local workflow/evidence convention in this corpus.
 
 ---
 
@@ -12,11 +14,11 @@
 
 This file exists because the original `TEEN_DOUBLE_LIFE/README.md` was created before the late-stage compression, product-transfer, exegesis-correction, gospel-center, and trust-restoration passes.
 
-The historical README remains useful as an index of the early corpus.
+`TEEN_DOUBLE_LIFE/README.md` has now been refreshed as the current corpus index. This file remains the **corpus-specific P0 superseder/handoff layer** where late drafting corrections are concentrated.
 
-For **handoff/read-order and publication-critical corrections**, this file is authoritative over the older README wherever the two differ.
+Within this corpus, for handoff/read-order and publication-critical corrections, this file and the later exact continuity appendices (`153`, `162`, `170`) supersede unsafe/incomplete formulations in earlier TEEN_DOUBLE_LIFE files. None of them supersedes repository-root governance.
 
-Do **not** delete or rewrite historical Research files simply because a later correction exists. Preserve provenance and apply the superseder rules below.
+Do **not** delete or rewrite historical Research files simply because a later correction exists. Preserve provenance and apply superseder/HISTORICAL rules.
 
 ### Exact-filename rule
 
@@ -32,6 +34,15 @@ This branch contains legitimate duplicate numeric prefixes produced by parallel 
 **Numeric prefix alone is never an identifier. Exact filename is authoritative.**
 
 Do not renumber the corpus for cosmetic tidiness.
+
+### 2026-09-08 modern-delta integration
+
+Two narrow contemporary gaps identified during total audit were integrated **in place**, not by creating new `171+` pass-through reports:
+
+1. AI assistants/companions as a new private conversational pathway — integrated into `18`, `29`, `64`, `88`, `89`.
+2. Coercive sexting/cyber dating violence/nonconsensual sharing as the missing middle between voluntary sexting and stranger sextortion — integrated into `27`, `29`, `64`, `88`, `89`.
+
+These do **not** reopen the governing research framework or change the selected publication architecture.
 
 ---
 
@@ -60,6 +71,8 @@ Use modern research mainly for:
 - digital access/opportunity architecture;
 - current platform/use context;
 - pornography/sexting evidence where carefully selected;
+- AI assistants/companions where the private-conversation pathway materially matters;
+- coercive sexting/cyber dating violence only where safety/consent distinctions matter;
 - sextortion/image-based abuse/safeguarding;
 - limited parent/peer/disclosure facts.
 
@@ -81,7 +94,7 @@ The late trust-restoration lane `130–132` adds sufficient depth after sustaine
 
 ## Gospel / Christological center
 
-**CLOSED BY `131_CROSS_PART_GOSPEL_CENTER...` AS A P0 DRAFTING CONTROL.**
+**CLOSED BY exact `131_CROSS_PART_GOSPEL_CENTER...` AS A P0 DRAFTING CONTROL.**
 
 ## Product transfer
 
@@ -124,7 +137,7 @@ Older files such as `49`, `91_PART_III`, and `100_PART_III` may retain `Psalm 50
 
 ## P0-2 — product Bible translation contract
 
-Current inspected product Bible-data policy:
+Current inspected product Bible-data policy at the historical product audit point:
 
 - Old Testament default: **Synodal**;
 - New Testament default: **Kassian**.
@@ -142,6 +155,8 @@ Russian prose stays Russian.
 Greek/Hebrew should appear only where lexical/exegetical precision materially requires it.
 
 English Puritan/Reformed quotations should be translated for the Russian reader with the original source cited according to product policy.
+
+**Live product authority/schema must be rechecked before mutation; this historical Research snapshot does not override a newer product rule.**
 
 ---
 
@@ -304,13 +319,14 @@ Digital infrastructure can amplify:
 - repetition;
 - peer presence;
 - opportunity;
-- delivery.
+- delivery;
+- conversational availability.
 
-It does not remove personal desire/responsibility and must not be mystified as intrinsically demonic technology.
+It does not remove personal desire/responsibility and must not be mystified as intrinsically demonic technology. This guard applies equally to social platforms, pornography delivery systems, algorithms and AI companions.
 
 ### Authority
 
-`117_WORLD_FLESH_DEVIL_DIGITAL_TEMPTATION...`
+`117_WORLD_FLESH_DEVIL_DIGITAL_TEMPTATION...`; 2026 AI delta in `18/29/64/88/89`.
 
 ---
 
@@ -437,21 +453,45 @@ Time does not create repentance; it gives fruit or lack of fruit room to become 
 
 ---
 
-# 3. Canonical common pre-draft control stack
+## P0-16 — voluntary sexual sin and another person’s coercion must not be collapsed
 
-Before drafting **any** article in this project, read in this order:
+A teenager may be responsible for a voluntary sexual message/image and later become the victim of:
 
-1. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY...` — this file.
+- romantic/peer pressure;
+- threats/control;
+- nonconsensual redistribution;
+- sextortion;
+- grooming or other exploitation.
+
+Earlier folly/sin does not transfer the later abuser’s guilt onto the victim. Conversely, later victimization does not require declaring every earlier voluntary action morally neutral.
+
+### Authority
+
+`27_SEXTORTION_IMAGE_BASED_ABUSE_SUICIDE_RISK_AND_EMERGENCY_RESPONSE...` plus current `29/64/88/89` evidence controls.
+
+### Publication guard
+
+Do not infer consent merely from romantic status. Do not infer coercion merely from the existence of sexting. Establish facts proportionately and keep safeguarding distinct from amateur sexual interrogation.
+
+---
+
+# 3. Corpus-specific common pre-draft control stack
+
+**Repository root authority/current rules must be read first.** Then before drafting any article in this project, read:
+
+1. this `140` — corpus-specific P0 superseder/handoff.
 2. `131_CROSS_PART_GOSPEL_CENTER...` — mandatory Christ/justification architecture.
 3. `105_BIBLE_QUOTATION_NUMBERING_TRANSLATION_AND_ORIGINAL_LANGUAGE_POLICY...` — Russian Bible/translation rules.
 4. `106_FINAL_EXEGESIS_CROSSCHECK...` — application limits.
 5. `108_1689_EXACT_PARAGRAPH_AUDIT...` — confessional precision.
 6. `109_CONSCIENCE_HARDENING...` — conscience guards.
 7. `110_FEAR_OF_GOD_VS_FEAR_OF_PARENTS...` — fear-of-God distinction.
-8. `115_LATE_EXEGESIS_DELTA_105_110_INTEGRATION...` — earlier late-stage integration map.
-9. `116–119` exact late biblical topic files.
-10. `130–132` exact trust-restoration files when repentance/trust/access are discussed.
-11. `102_SELECTED_EXACT_QUOTE_LEDGER...` only when choosing direct historical quotations.
+8. `115_LATE_EXEGESIS_DELTA_105_110_INTEGRATION...`.
+9. exact `116–119` late biblical topic files.
+10. exact `130–132` trust-restoration files when repentance/trust/access are discussed.
+11. `153`, `162`, `170` when their late P0 categories are relevant.
+12. `29`/`64` for current evidence/source-state semantics.
+13. `102_SELECTED_EXACT_QUOTE_LEDGER...` only when choosing direct historical quotations.
 
 Do not assume a numeric range means one sequential stream; use exact names.
 
@@ -475,6 +515,7 @@ Do not assume a numeric range means one sequential stream; use exact names.
 9. `118_PROVERBS_5_7_SEXUAL_SEDUCTION...`
 10. `119_SPEECH_PROFANITY_SEXUAL_JOKING...`
 11. `131_CROSS_PART_GOSPEL_CENTER...`
+12. 2026 AI/coercion deltas already integrated into `18/27/29/64/88/89`; do not make them separate article sections unless manuscript need proves it.
 
 ## Required Part I ending
 
@@ -500,14 +541,17 @@ Move:
 ## Mandatory late deltas
 
 4. `106_FINAL_EXEGESIS_CROSSCHECK...` — Eph. 6 / 2 Cor. 7 controls.
-5. `108_1689_EXACT_PARAGRAPH_AUDIT...` — law/worship/role distinction where relevant.
+5. `108_1689_EXACT_PARAGRAPH_AUDIT...`.
 6. `110_FEAR_OF_GOD_VS_FEAR_OF_PARENTS...`.
-7. `118_PROVERBS_5_7_SEXUAL_SEDUCTION...` — parental sexual instruction and distance from occasions.
+7. `118_PROVERBS_5_7_SEXUAL_SEDUCTION...`.
 8. `119_SPEECH_PROFANITY_SEXUAL_JOKING...` where language culture is discussed.
-9. `131_CROSS_PART_GOSPEL_CENTER...` — mandatory.
+9. `131_CROSS_PART_GOSPEL_CENTER...`.
 10. `130_REBUILDING_TRUST...`.
 11. `131_TRUST_RESTORATION_DOMAIN_MATRIX...`.
 12. `132_LOVE_BELIEVES_ALL_THINGS...`.
+13. `165_CONFESSION_SCOPE_ACCOUNTABILITY_PRIVACY...`.
+14. `168_CONSCIENCE_RESTORATION...`.
+15. `169_PUT_OFF_PUT_ON_FLEE_PURSUE...`.
 
 ## Operational decision tree
 
@@ -533,8 +577,9 @@ Do not replace it with a generic psychology checklist.
 7. `106_FINAL_EXEGESIS_CROSSCHECK...`.
 8. `109_CONSCIENCE_HARDENING...` where conscience language appears.
 9. `119_SPEECH_PROFANITY_SEXUAL_JOKING...`.
-10. `131_CROSS_PART_GOSPEL_CENTER...` — mandatory.
+10. `131_CROSS_PART_GOSPEL_CENTER...`.
 11. `130–132` exact trust files if restoration/access is discussed.
+12. `150–170` exact late gospel-light/church-response/P0 modules as the section requires, especially `157`, `158`, `159`, `164`, `166`, `167`.
 
 ## Required distinction
 
@@ -561,7 +606,7 @@ Do not replace it with a generic psychology checklist.
 6. `130_REBUILDING_TRUST...` where long-term deception matters.
 7. `131_TRUST_RESTORATION_DOMAIN_MATRIX...`.
 8. `132_LOVE_BELIEVES_ALL_THINGS...`.
-9. `131_CROSS_PART_GOSPEL_CENTER...` — mandatory.
+9. `131_CROSS_PART_GOSPEL_CENTER...`.
 10. `102_SELECTED_EXACT_QUOTE_LEDGER...` only for direct historical quotation selection.
 
 ### Required ending orientation
@@ -586,6 +631,8 @@ Do **not** start another general pass on:
 - generic identity/false-self psychology;
 - generic deconstruction/deconversion literature;
 - generic parent-monitoring literature;
+- generic AI-companion panic/replacement-of-humanity claims;
+- generic cyber-dating-violence expansion beyond a concrete manuscript need;
 - more Puritan names merely to increase authority density;
 - more Bible prooftexts merely to increase verse count.
 
@@ -625,8 +672,9 @@ Do not verify hundreds of unused quotations again.
 
 For every numerical/current empirical claim actually retained:
 
-- reopen the official/primary current source;
+- reopen the strongest permitted current source;
 - verify year/sample/denominator/geography;
+- clear applicable locator/evidence HOLDs;
 - preserve correlation/causality limits.
 
 ## GATE D — legal/safeguarding jurisdiction
@@ -653,6 +701,7 @@ Before release, check:
 - no universal seared-conscience diagnosis;
 - no platform-access = salvation equation;
 - no forgiveness = instant trust equation;
+- no victim-blaming/confusion of coercion with consent;
 - Christ/justification explicitly present.
 
 ---
@@ -663,29 +712,32 @@ Before release, check:
 |---|---:|---|
 | sinful heart / desire / temptation | 0 | closed |
 | digital opportunity / peer amplification | 0 | closed |
+| AI-companion/private-conversation pathway | 0 | integrated in existing dossiers |
 | pleasure / lust / sexual temptation | 0 | closed |
 | profanity / sexualized speech | 0 | closed |
+| pornography | 0 | closed with clinical/causality guards |
+| coercive sexting / cyber dating violence | 0 | integrated with locator holds for exact numerical claims |
+| sextortion / image abuse | 0 | closed at research level |
 | conscience / hardening | 0 | closed |
 | fear of God vs fear of exposure | 0 | closed |
 | world / flesh / devil | 0 | closed |
 | regeneration / child responsibility | 0 | closed |
+| greater gospel light / baptism candidacy / minor membership | 0 | closed |
 | parenting / means / boundaries | 0 | closed |
 | discovery / repentance | 0 | closed |
 | trust / re-entrustment | 0 | closed |
 | church / choir / youth access | 0 | closed |
 | safeguarding category distinction | 0 | closed |
 | adult-child/prodigal | 0 | closed |
-| gospel / justification / Christ center | 0 | closed by `131_CROSS_PART_GOSPEL_CENTER...` |
-| Bible translation / Psalm numbering | 0 | closed by `105/107` |
+| gospel / justification / Christ center | 0 | closed by exact `131_CROSS_PART_GOSPEL_CENTER...` |
+| Bible translation / Psalm numbering | 0 | closed by `105/107`, subject to live product recheck |
 | publication architecture | 0 Research blockers | product preflight still required |
 
 ### Research verdict
 
-**KNOWN RESEARCH BLOCKERS: 0.**
+**KNOWN BROAD RESEARCH BLOCKERS: 0.**
 
-This does not mean every future sentence is pre-verified.
-
-It means no known missing broad research lane must be completed before drafting can begin.
+This does not mean every future sentence is pre-verified. It means no known missing broad research lane must be completed before drafting can begin.
 
 ---
 
@@ -725,4 +777,4 @@ The corpus is research evidence/control, not publication copy.
 
 # 13. Final handoff sentence
 
-> **The project no longer needs more breadth. It needs faithful compression. Draft from the late authoritative stack, let Scripture govern every inference, keep Christ—not parental control, church procedure, psychological technique, or visible fruit—as the ground of hope, and verify only the claims that survive into the actual manuscript.**
+> **The project no longer needs more breadth. It needs faithful compression and manuscript work. Draft from the late corpus-specific stack under the repository’s current root authority, let Scripture govern every inference, keep Christ—not parental control, church procedure, psychological technique, AI panic, or visible fruit—as the ground of hope, distinguish voluntary sin from coercion precisely, and verify only the claims that survive into the actual manuscript.**
