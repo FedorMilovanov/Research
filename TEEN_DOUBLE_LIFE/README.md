@@ -5,13 +5,15 @@
 **Lane:** `research/teen-double-life-digital-sin-20260907`  
 **Phase:** **SCRIPTURE-FIRST AUDITOR / PURITAN-REFORMED BIBLICAL COUNSELING / EMPIRICAL PRUNING**
 
+> **Concurrency note:** parallel agents produced complementary files with overlapping numeric prefixes `59–65`. Do not delete or renumber them casually. Use exact filenames. New modules should continue at `67+`.
+
 ---
 
 ## 1. Governing method
 
 1. **Scripture in historical-grammatical context** governs sin, heart, conscience, worship, repentance, parental duty, church duty and human responsibility.
 2. **1689 LBCF** supplies confessional synthesis/guards.
-3. **Puritan/Reformed practical theology** is subordinate help: Owen, Watson, Brooks, Baxter, Flavel, Sibbes, Bunyan, Charnock, Spurgeon, Calvin.
+3. **Puritan/Reformed practical theology** is subordinate help: Owen, Watson, Brooks, Baxter, Flavel, Sibbes, Bunyan, Charnock, Spurgeon, Calvin, Gouge, Gill, Edwards; historical illustrations such as Augustine/Monica remain non-binding.
 4. **Conservative biblical counseling** may be used selectively under Scripture.
 5. **Empirical/public-health research** is secondary and mainly answers modern factual questions: prevalence, digital pathways, platform mechanics, sextortion/safeguarding, sleep and limited behavioural associations.
 
@@ -43,6 +45,12 @@
 - safeguarding/victimization must never be collapsed into moral/church-discipline categories.
 - Deut. 21 judicial penalties are not modern household sanctions; 1689 19.4 general-equity guard applies.
 - minors must never be made homeless as discipline; adult household boundaries are a separate prudential/legal category.
+- **adulthood changes parental jurisdiction, not God’s moral law or the existence of family relation**.
+- release of child-level control does not require release of love, prayer, truthful admonition, reasonable contact or non-enabling good.
+- Luke 15 is not a modern parental contact schedule; narrative silence cannot establish either mandatory no-contact or digital pursuit.
+- parents need not finance a competent adult child’s “far country,” but non-enabling is not cruelty and does not forbid every humane good.
+- formal church discipline does not erase natural family duties; Owen, Gill and Edwards converge on this historically.
+- Rom. 12 joins genuine love with abhorrence of evil, non-retaliation, peace where possible and concrete good; James 5 supplies a category of restorative initiative toward a wanderer.
 - psychology no longer governs the main architecture; `dopamine damage`, universal pornography escalation, generic reward-neuroscience and metaphysical “false self” claims are rejected/demoted.
 
 ---
@@ -95,7 +103,7 @@
 - `40` Scripture-first Puritan/biblical-counseling framework.
 - `41` pastoral response matrix for outsiders/strugglers/corrupters/professing hypocrites.
 
-### Children / church / primary Puritan source lane
+### Children / church / primary Puritan lane
 - `42` children, holiness, singing, choir, visible ministry.
 - `43` unregenerate children, law/gospel/discipline, no neutral zone.
 - `44` Puritan/Reformed source pass 2.
@@ -111,39 +119,54 @@
 - `54` continuity appendix for modules `46–53`.
 - `55` Scripture-first parent + pastor post-discovery decision tree.
 - `56` Owen, *Indwelling Sin* — deceit through mind/affections/will and hardening.
-
-### Closing verification / compression lane
 - `57` deep exegesis: Heb. 3; Rom. 1/6/8; Matt. 5/7; 2 Cor. 7; 1 John 1.
 - `58` parental strictness/love/non-provocation/no-indulgence synthesis.
-- `59` corrupting company, youth groups, small groups and positive counter-formation.
-- `60` empirical-material pruning and Scripture-first publication priority.
-- `61` struggling sinner vs settled impenitence; repentance fruit without heart-reading.
-- `62` Puritan source pass 3: Flavel, Sibbes, Bunyan.
-- `63` **authoritative continuity appendix for modules `55–62` and closing audit direction**.
-- `64` source-verification ledger: Watson/Baxter/Owen/Brooks/Flavel/Sibbes/Bunyan/Spurgeon/1689 + official modern facts.
-- `65` research-phase closure audit and publication-readiness gates.
+
+### Parallel stream A — closing adolescent/children verification
+- `59_CORRUPTING_COMPANY...` — corrupting company, youth/small groups, positive counter-formation.
+- `60_EMPIRICAL_MATERIAL_PRUNING...` — what modern science remains in main text vs notes/removal.
+- `61_STRUGGLING_SINNER_SETTLED_IMPENITENCE...` — repentance fruit without heart-reading.
+- `62_PURITAN_SOURCE_PASS_3_FLAVEL_SIBBES_BUNYAN...` — watchfulness, weak grace, false profession.
+- `63_CONTINUITY_APPENDIX_MODULES_55_62_CLOSING...` — continuity for stream A.
+- `64_SOURCE_VERIFICATION_LEDGER...` — primary Puritan/confessional + official modern fact verification.
+- `65_RESEARCH_PHASE_CLOSURE_AUDIT...` — closure/readiness verdict.
+
+### Parallel stream B — adult-child departure / prodigal / family relation
+- `59_LUKE15_PRODIGAL_SON_EXEGESIS...` — Luke 15 literary context, rebellion, consequences, return, mercy, anti-misuse guard.
+- `60_ADULT_CHILD_SECRET_DEPARTURE_CONTACT_RELEASE_NONENABLING_AND_HOUSEHOLD_BOUNDARIES...` — changed jurisdiction, contact matrix, non-enabling, household/younger-sibling protection.
+- `61_PURITAN_REFORMED_CONSERVATIVE_SOURCE_PASS_3_PRODIGALS_ADULT_CHILDREN_BOUNDARIES...` — Gouge/Baxter/Watson/Flavel/Augustine + conservative counseling source bank.
+- `62_CONTINUITY_APPENDIX_ADULT_CHILD_DEPARTURE_PRODIGAL_EXEGESIS_AND_USER_REQUIREMENTS...` — authoritative adult-child continuity addendum.
+- `64_OWEN_GILL_EDWARDS_CHURCH_DISCIPLINE_FAMILY_RELATIONS_AND_NO_TOTAL_SHUNNING...` — primary verification that church censure does not dissolve natural/civil family duties.
+- `65_EXEGESIS_ROMANS12_JAMES5_TRUTHFUL_LOVE_DOING_GOOD_PEACE_AND_TURNING_WANDERERS...` — positive post-departure ethic: truthful love, no revenge, doing good, peace, restorative initiative.
+
+### Reconciliation
+- `66_PARALLEL_LANE_RECONCILIATION_ADULT_CHILD_PRODIGAL_AND_CLOSING_AUDIT_2026-09-07.md` — **authoritative reconciliation of both parallel streams; numbering-collision rule and unified next-phase instruction**.
 
 ---
 
 ## 4. Main source controls
 
 ### Biblical anchors
-Mark 7; James 1; Prov. 9/13/22; Ps. 50; Isa. 1; Amos 5; Matt. 5/7/15; Rom. 1/6/8/13; 1 Cor. 5/6/11/14/15; 2 Cor. 7; Eph. 4/6; Col. 3; Heb. 3/11/12; 1 John 1; 2 Tim. 2/3; Titus 3.
+Mark 7; James 1/5; Prov. 9/13/22; Ps. 50; Isa. 1; Amos 5; Luke 15; Matt. 5/7/15; Rom. 1/6/8/12/13; 1 Cor. 5/6/11/14/15; 2 Cor. 7; Eph. 4/6; Col. 3; Heb. 3/11/12; 1 John 1; 2 Tim. 2/3; Titus 3.
 
 ### 1689 controls
-Chs. 5, 6, 9, 10, 14, 15, 16, 17, 18, 19, 22, 26.
+Chs. 5, 6, 9, 10, 14, 15, 16, 17, 18, 19, 21, 22, 26, 27.
 
 ### Puritan/Reformed controls
-- Owen — indwelling sin, mortification, temptation, occasions.
+- Owen — indwelling sin, mortification, temptation, occasions, church discipline/family duties.
 - Brooks — Satan’s devices.
-- Watson — repentance.
-- Baxter — family government/children/company.
+- Watson — repentance, fifth-commandment/family duty.
+- Baxter — family government/children/company/changing degree of adult-child government.
+- Gouge — grown children, honor and continuing parental care with historical-jurisdiction guard.
 - Flavel — keeping heart/watchfulness.
 - Sibbes — tenderness toward weak grace.
 - Bunyan — fruitless/formal profession with ecclesial guard.
 - Charnock — restraint vs regeneration.
-- Spurgeon — child conversion/no inherited religion/no delayed gospel.
+- Spurgeon — child conversion/no inherited religion/no delayed gospel; prodigal preaching.
+- Gill — Baptist church discipline/natural relations.
+- Edwards — discipline, humane good and family duties.
 - Calvin — historical Reformed exegesis.
+- Augustine/Monica — historical illustration only, not normative source.
 
 ---
 
@@ -169,11 +192,13 @@ Any future agent/chat must read before writing:
 
 1. `45_CONTINUITY_HANDOFF_MASTER...`
 2. `54_CONTINUITY_APPENDIX...`
-3. `63_CONTINUITY_APPENDIX...`
-4. this `README.md`
-5. `29`, `30`, `31`
-6. `50`, `55`, `57`, `60`, `61`, `64`, `65`
-7. PR #187 exact head/status.
+3. `62_CONTINUITY_APPENDIX_ADULT_CHILD_DEPARTURE...`
+4. `63_CONTINUITY_APPENDIX_MODULES_55_62_CLOSING...`
+5. `66_PARALLEL_LANE_RECONCILIATION...`
+6. this `README.md`
+7. `29`, `30`, `31`, `50`, `55`, `57`
+8. both `60` files, both `61` files, both `64` files, both `65` files
+9. PR #187 exact head/status.
 
 Do **not** recreate the branch or open a duplicate PR. Use CAS-safe updates because concurrent activity has already occurred.
 
@@ -183,6 +208,8 @@ Do **not** recreate the branch or open a duplicate PR. Use CAS-safe updates beca
 
 **Exploratory breadth: complete enough.**  
 **Scripture-first theological frame: strong.**  
+**Children/choir/youth-access lane: strong with direct-vs-prudential distinction locked.**  
+**Adult-child/prodigal lane: now covered and reconciled.**  
 **Puritan/Reformed source base: strong; exact quote-level check only for quotations actually selected.**  
 **Modern factual base: sufficient and pruned.**  
 **Publication architecture/prose: intentionally not started.**
