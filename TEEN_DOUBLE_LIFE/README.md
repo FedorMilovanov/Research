@@ -22,6 +22,9 @@
 `+ boredom / loneliness / coping`  
 `+ attention economy / algorithms / persuasive design`  
 `+ opportunity / privacy / low friction`  
+`+ secrecy / false-self / impression management`  
+`+ accountability / truth channels / help-seeking`  
+`+ household authority / church discipline`  
 `+ safeguarding / victimization distinctions`  
 `+ human responsibility`  
 `+ sovereign grace / ordained means`.
@@ -37,6 +40,14 @@
 Третья формула:
 
 > **Сильная внешняя граница и психологический контроль — не одно и то же. Родитель может радикально перекрыть конкретный путь к тяжёлому греху, не унижая ребёнка и не манипулируя любовью; и может, наоборот, почти ничего не запрещать, оставаясь эмоционально контролирующим.**
+
+Четвёртая формула:
+
+> **Невозрождение объясняет необходимость нового сердца, но не отменяет нравственной ответственности: моральный закон связывает человека как Божье творение до и после обращения, хотя только благодать производит saving obedience из нового сердца.**
+
+Пятая формула:
+
+> **Церковь должна отличать грешника, который приходит услышать Слово, от professing member, который требует признания в добром состоянии, одновременно упорно защищая тяжёлый грех: attendance, membership, Table и leadership — не одна категория.**
 
 ---
 
@@ -187,6 +198,46 @@ Current NCMEC/FBI threat data, boys 14–17, suicidality, AI-fabricated images, 
 
 Fresh 2026 disclosure-response evidence; behavior-critical vs person-critical response, consequences, guilt/shame, preserving truth channel without minimizing sin.
 
+### 29 — Claim evidence ledger v1
+`29_CLAIM_EVIDENCE_LEDGER_V1_2026-09-07.md`
+
+Claim-level grades (`A/B/C/T/R`), causal-language gates and publication-safe formulations.
+
+### 30 — Auditor layer / assertion stress test
+`30_AUDITOR_LAYER_V1_ASSERTION_STRESS_TEST_2026-09-07.md`
+
+Adversarial review of central claims: countertrends, overclaim guards, church-discipline category correction, OT judicial-law guard, unregenerate-child responsibility.
+
+### 31 — Exegesis ledger v1
+`31_EXEGESIS_LEDGER_V1_DISCIPLINE_MORTIFICATION_RESPONSIBILITY_2026-09-07.md`
+
+Context/allowed/forbidden-use ledger for Mark 7, James 1, Matt 5, 2 Tim 2, 1 Cor 5/6/11/14, Eph 4/6, Rom 13, Heb 3, Prov 22, Deut 21, 2 Cor 7 and related texts.
+
+### 32 — Desire / double life / false self / identity entrenchment
+`32_DESIRE_DOUBLE_LIFE_FALSE_SELF_IDENTITY_ENTRENCHMENT_2026-09-07.md`
+
+Why immediate pleasure wins, conflict recognition, habit, moral disengagement, false-self distinctions, repeated hidden role and identity entrenchment.
+
+### 33 — Voluntary accountability / trust / help-seeking
+`33_VOLUNTARY_ACCOUNTABILITY_TRUST_HELP_SEEKING_AND_TRUTH_CHANNELS_2026-09-07.md`
+
+Discovery vs confession vs proactive disclosure, why trust ≠ immunity from consequences, accountability evidence, shame/help-seeking and truth-channel design.
+
+### 34 — Unregenerate child / household authority / adult children
+`34_UNREGENERATE_CHILD_RESPONSIBILITY_HOUSEHOLD_AUTHORITY_AND_ADULT_CHILDREN_2026-09-07.md`
+
+Why fallen inability ≠ innocence, moral law binds all, unregenerate minors remain under lawful household authority, adult-child boundary distinctions, Deut 21 general-equity guard.
+
+### 35 — Church discipline / attendance / membership / Table
+`35_CHURCH_DISCIPLINE_ATTENDANCE_MEMBERSHIP_TABLE_AND_UNREPENTANT_SIN_2026-09-07.md`
+
+1 Cor 5, Matt 18, 2 Thess 3, 1 Cor 14 and 1 Cor 11 distinctions; outsider attendance vs professing-member discipline; restorative purpose; safeguarding guard.
+
+### 36 — Change / recovery / repentance fruit
+`36_CHANGE_RECOVERY_REPENTANCE_FRUIT_AND_WHEN_EXTRA_HELP_IS_NEEDED_2026-09-07.md`
+
+Environment design, replacement goods, PPU psychotherapy evidence, when professional help is warranted, being caught vs repentance, relapse vs settled peace with sin, voluntary costly fruit.
+
 ---
 
 ## Evidence discipline
@@ -197,24 +248,32 @@ The corpus must preserve these guards:
 2. Peer influence ≠ removal of personal responsibility.
 3. Parenting influence ≠ parental determinism.
 4. Sovereign regeneration ≠ upbringing irrelevance.
-5. External restraint ≠ heart change.
-6. Victimization/coercion ≠ voluntary sexual sin; mixed cases require separating the child’s voluntary action from what was done to the child.
-7. Pornography exposure ≠ universal addiction.
-8. Self-perceived pornography addiction ≠ automatically CSBD/clinical disorder.
-9. Moral incongruence can amplify distress/self-labeling but cannot adjudicate whether pornography is morally right or wrong.
-10. No invented `internet ×20` coefficient.
-11. No universal «dopamine damage» / irreversible brain damage rhetoric.
-12. No automatic diagnosis «conscience permanently seared».
-13. No claim that modern adolescents have more physical sex across the board; US surveillance shows important declines in some offline sexual behaviors.
-14. No claim that all restrictions are good; psychological control/reactance and secrecy literature requires distinction.
-15. No claim that all restrictions are bad; monitoring/rule enforcement can be protective, and radical safety boundaries may be morally required.
-16. Matthew 5:29–30 supports ruthless dealing with occasions of sin, not bodily self-harm or parental abuse.
-17. First-smartphone age is not a scientifically established universal threshold; use intensity, night access, platform powers and individual readiness matter.
-18. Family religious practices are real socialization/formation means but empirical measures do not prove regeneration.
-19. Safeguarding disclosure must not be collapsed into church discipline; victims need protection and statutory/competent pathways where required.
-20. Boredom/loneliness can be vulnerability/maintenance factors without becoming excuses for voluntary sin.
-21. Sextortion is an emergency safeguarding/crime context; any prior voluntary sexual action does not make the subsequent extortion the child’s guilt.
-22. Person-condemning parental reactions should not be confused with biblical seriousness about sin; behavior-focused truth and real consequences can coexist with relational presence.
+5. Fallen inability / unregeneration ≠ innocence or release from God’s moral law.
+6. External restraint ≠ heart change.
+7. Victimization/coercion ≠ voluntary sexual sin; mixed cases require separating the child’s voluntary action from what was done to the child.
+8. Pornography exposure ≠ universal addiction.
+9. Self-perceived pornography addiction ≠ automatically CSBD/clinical disorder.
+10. Moral incongruence can amplify distress/self-labeling but cannot adjudicate whether pornography is morally right or wrong.
+11. No invented `internet ×20` coefficient.
+12. No universal «dopamine damage» / irreversible brain damage rhetoric.
+13. No automatic diagnosis «conscience permanently seared».
+14. No claim that modern adolescents have more physical sex across the board; US surveillance shows important declines in some offline sexual behaviors.
+15. No claim that all restrictions are good; psychological control/reactance and secrecy literature requires distinction.
+16. No claim that all restrictions are bad; monitoring/rule enforcement can be protective, and radical safety boundaries may be morally required.
+17. Matthew 5:29–30 supports ruthless dealing with occasions of sin, not bodily self-harm or parental abuse.
+18. First-smartphone age is not a scientifically established universal threshold; use intensity, night access, platform powers and individual readiness matter.
+19. Family religious practices are real socialization/formation means but empirical measures do not prove regeneration.
+20. Safeguarding disclosure must not be collapsed into church discipline; victims need protection and statutory/competent pathways where required.
+21. Boredom/loneliness can be vulnerability/maintenance factors without becoming excuses for voluntary sin.
+22. Sextortion is an emergency safeguarding/crime context; any prior voluntary sexual action does not make the subsequent extortion the child’s guilt.
+23. Person-condemning parental reactions should not be confused with biblical seriousness about sin; behavior-focused truth and real consequences can coexist with relational presence.
+24. Legitimate privacy ≠ active secrecy around serious moral/risk behavior.
+25. Being caught ≠ repentance; apology ≠ demonstrated restoration of trust.
+26. Repeated temptation/relapse ≠ automatically settled impenitence; settled defense/concealment/refusal of correction is a different pattern.
+27. Deut 21 judicial penalty is not a household sanction today; 1689 19.4 general-equity control applies.
+28. Excommunication / loss of good-standing membership ≠ universal ban from hearing public preaching; attendance, membership, Table and leadership must be distinguished.
+29. An unbaptized/unprofessing teen is not automatically a 1 Cor 5 “brother” discipline case; safety/household/youth-program boundaries still may apply.
+30. For minors, homelessness/abandonment must never be used as discipline; adult household boundaries are a different prudential/legal category.
 
 ---
 
@@ -224,11 +283,12 @@ The corpus must preserve these guards:
 - stronger longitudinal evidence on vulgarity/sexual humor as status signal;
 - Christian youth groups: when peer contagion becomes positive counter-formation vs hidden church subculture;
 - age/device-specific pornography exposure pathways by platform and country;
-- repentance fruit / restoration evidence and pastoral models;
 - long-term outcomes after parental pornography discovery and different family responses;
-- direct exegesis on parental discipline/anger (Eph. 6:4; Col. 3:21; Heb. 12) in relation to strong boundaries;
-- a final claim-by-claim evidence ledger grading evidence quality and causal language;
-- direct exegesis ledger for all major texts before publication.
+- adolescent-specific accountability/recovery evidence rather than adult PPU extrapolation;
+- adult-child household boundary literature and cross-jurisdiction legal caution if publication gives concrete housing advice;
+- sharpen criteria distinguishing struggling repentance from settled impenitence without pretending infallible heart-reading;
+- final adversarial pass over all A/B claims and strongest counter-evidence;
+- publication architecture only after the audit pass is complete.
 
 ---
 
