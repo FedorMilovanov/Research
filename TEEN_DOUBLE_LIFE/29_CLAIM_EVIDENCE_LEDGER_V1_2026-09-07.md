@@ -47,6 +47,12 @@ Causal language gate:
 **Sources:** TGC Proverbs commentary; broad intergenerational transmission data.  
 **Language:** `general pattern/principle`, not `promise that every godly-raised child will be converted`.
 
+## A05 — Unregeneration/fallen inability does not remove moral obligation
+**Type:** T  
+**Control:** 1689 LBCF 19.5; moral law binds all by Creator authority.  
+**Allowed:** unregenerate minor remains accountable for truthfulness, chastity, honoring lawful authority, harm to others, and is commanded to repent/believe.  
+**Forbidden:** `he is unregenerate, therefore rules/responsibility are spiritually pointless`.
+
 ---
 
 # B. Peer world / status / double life
@@ -86,6 +92,17 @@ Causal language gate:
 **Sources:** PMID 25484478; PMID 31841872.  
 **Guard:** no universal male/female stereotype.
 
+## B07 — Hidden role can become more habitual/identity-loaded without being scientifically “true self”
+**Grade:** B/C + R  
+**Evidence:** habit review; adolescent false-self literature; online self-presentation discrepancy studies; moral-disengagement literature.  
+**Allowed:** repeated/rewarded hidden behavior may feel more spontaneous/identity-congruent than deliberately maintained public role.  
+**Forbidden:** science proves the sinful persona is the person’s metaphysical “real self.”
+
+## B08 — Moral disengagement is a plausible bridge from acknowledged wrongdoing to normalized wrongdoing
+**Grade:** A/B  
+**Evidence:** 2023 review/meta-analytic synthesis, 157 eligible studies / N=118,501; moral disengagement associated with transgressive behavior and shaped by individual/environmental factors.  
+**Guard:** moral disengagement ≠ biblical hardening; psychology describes mechanism, Scripture supplies moral-spiritual category.
+
 ---
 
 # C. Parents: connectedness, monitoring, disclosure
@@ -116,13 +133,25 @@ Causal language gate:
 ## C05 — Voluntary adolescent disclosure is a major source of parental knowledge
 **Grade:** A/B  
 **Evidence:** classic/longitudinal disclosure literature; support predicts disclosure, secrecy reciprocal with delinquency.  
-**Use:** «knowledge is not produced only by surveillance.»
+**Use:** `knowledge is not produced only by surveillance`.
 
 ## C06 — Behavior-focused correction may preserve truth better than person condemnation
 **Grade:** C/B emerging  
 **Evidence:** 2026 youth disclosure vignette study; behavior-critical responses reduced expected misconduct with less suppression of future disclosure than person-critical responses in most domains.  
 **Source:** https://pubmed.ncbi.nlm.nih.gov/42484288/  
 **Guard:** expected/vignette outcomes, not long-term intervention trial.
+
+## C07 — Trust ≠ consequence-free disclosure
+**Type:** R/B synthesis  
+**Evidence:** disclosure/secrecy literature + C06.  
+**Allowed line:** a trustworthy home can make truth relationally safer while still reducing freedoms after serious misconduct.  
+**Forbidden:** promise `tell us and there will be no consequences`.
+
+## C08 — Discovery, forced admission and proactive disclosure are different states
+**Type:** conceptual + B/C evidence  
+**Evidence:** adolescent disclosure/secrecy literature; PPU accountability qualitative evidence.  
+**Use:** voluntary disclosure before acting is a stronger target than forensic confession after evidence is found.  
+**Guard:** direct adolescent pornography trials are lacking.
 
 ---
 
@@ -153,7 +182,7 @@ Causal language gate:
 **Grade:** A/B  
 **Evidence:** U.S. probability sample + direct replication: interaction with condomless sex.  
 **Sources:** PMID 31403326; PMID 39104215.  
-**Guard:** narrow outcome; do not say communication «neutralizes porn».
+**Guard:** narrow outcome; do not say communication `neutralizes porn`.
 
 ---
 
@@ -175,7 +204,7 @@ Causal language gate:
 **Grade:** C/B  
 **Evidence:** small 3-year qualitative UK Christian-family study; Canadian Baptist replication literature suggests home discussion/encouragement adds predictive value.  
 **Sources:** DOI 10.1080/1756073X.2023.2184152; Springer 2024 Canadian Baptist article.  
-**Guard:** do not rank Scripture/prayer as «less important» from a 26-family qualitative sample.
+**Guard:** do not rank Scripture/prayer as `less important` from a 26-family qualitative sample.
 
 ---
 
@@ -209,6 +238,11 @@ Causal language gate:
 **Source:** https://pubmed.ncbi.nlm.nih.gov/37261719/  
 **Guard:** vulnerability, not excuse/cause certainty.
 
+## F06 — Modern change is better described as a shift/expansion of sexual opportunity, not universal rise in offline sex
+**Grade:** A descriptive + structural  
+**Evidence:** current U.S. youth surveillance shows declines in several physical-sex indicators while digital sexual exposure/sexting/image abuse/porn pathways exist at scale.  
+**Forbidden:** `today’s teens have more sex in every sense than earlier cohorts`.
+
 ---
 
 # G. Smartphone timing / sleep
@@ -241,7 +275,7 @@ Causal language gate:
 ## H02 — Pornography pathways extend beyond dedicated adult sites
 **Grade:** A descriptive  
 **Evidence:** Children’s Commissioner and platform/online-safety reports identify mainstream social/media pathways and accidental exposure.  
-**Allowed:** «can arrive through feeds/messages/mainstream platforms.»
+**Allowed:** `can arrive through feeds/messages/mainstream platforms`.
 
 ## H03 — Longitudinal pornography-outcome evidence is heterogeneous
 **Grade:** A  
@@ -258,160 +292,111 @@ Causal language gate:
 ## H05 — Not every pornography user is clinically addicted
 **Grade:** A clinical  
 **Evidence:** ICD-11 CSBD criteria: impaired control + persistent pattern + distress/impairment; high frequency or moral distress alone insufficient.  
-**Sources:** PMC5775124; PMC13132360.  
-**Theological guard:** non-clinical ≠ morally permissible.
+**Guard:** clinical non-diagnosis says nothing about moral permissibility.
 
-## H06 — Moral incongruence can affect self-perceived addiction
-**Grade:** A adult / B adolescent relevance  
-**Evidence:** broad MI literature; religiosity/moral disapproval predict self-labeling independently of frequency; adolescent longitudinal evidence complicates picture.  
-**Guard:** do not dismiss Christian conscience as pathology.
-
----
-
-# I. Sexting / secret accounts / exploitation
-
-## I01 — Sexting is not rare and has risk associations
-**Grade:** A  
-**Evidence:** multiple meta-analyses in base dossier.  
-**Guard:** distinguish consensual peer behavior, coercion, forwarding and victimization.
-
-## I02 — Secret accounts exist but are not universal
-**Grade:** B/C  
-**Evidence:** one recent early-adolescent U.S. study: 6.3% social-media users reported secret account unknown to parents.  
-**Guard:** do not treat secret account as proof of sexual sin.
-
-## I03 — Financial sextortion is a rapidly growing child-safety threat
-**Grade:** A current descriptive  
-**Evidence:** NCMEC 2025 >50,000 reports / 137 per day, higher than 2024.  
-**Source:** https://www.ncmec.org/blog/2026/ncmec-releases-new-sextortion-data-2025  
-**Guard:** reports ≠ unique prevalence.
-
-## I04 — Sextortion can be associated with suicide/self-harm
+## H06 — PPU psychotherapy evidence is promising but still limited
 **Grade:** A/B  
-**Evidence:** FBI/NCMEC documented deaths; 2026 national U.S. adolescent study specifically examines association with suicidality.  
-**Source:** PMID 41825108.  
-**Use:** emergency-response section required in publication.
-
-## I05 — AI can create sexual-image victimization without genuine nude image
-**Grade:** A current threat/descriptive  
-**Evidence:** FBI warnings + Common Sense 2026 exposure data.  
-**Guard:** distinguish synthetic victimization from voluntary image creation.
+**Evidence:** 2025 meta-analysis 20 studies / 2,021 participants found psychotherapy improvements; earlier systematic review judged much evidence low/very-low; 2026 CBT scoping review identifies recurring components and dropout limitations.  
+**Sources:** PMID 40126561; PMID 37880509; PMID 42044011.  
+**Guard:** mostly adult/clinical evidence; do not directly claim adolescent Christian-family efficacy.
 
 ---
 
-# J. Hardening, conscience, repentance
+# I. Accountability / repentance / recovery
 
-## J01 — Repeated sin can harden/deceive spiritually
-**Type:** T  
-**Texts:** Heb. 3:12–15; Eph. 4:17–19.  
-**Allowed:** serious warning about deception/callousness.  
-**Forbidden:** invent neurologic diagnosis or irreversible timeline.
+## I01 — Accountability is a plausible recovery mechanism, but adolescent direct evidence is limited
+**Grade:** C/B  
+**Evidence:** 2026 qualitative PPU recovery study N=27 identified accountability, sincerity, group mirror effect, relapse-prevention and identity transformation as salient perceived mechanisms.  
+**Source:** https://pubmed.ncbi.nlm.nih.gov/42356013/  
+**Guard:** qualitative/adult-heavy; not an RCT or adolescent-specific efficacy estimate.
 
-## J02 — 1 Tim. 4 «seared conscience» is not a universal porn diagnosis
-**Type:** T  
-**Context:** apostasy, deceitful spirits/teachings, hypocritical liars.  
-**Allowed:** category of profoundly damaged moral conscience exists.  
-**Forbidden:** «teen watched porn repeatedly = permanently seared forever».
-
-## J03 — Romans 1 includes divine judicial giving-over
-**Type:** T  
-**Allowed:** Scripture knows judgment where God gives sinners over to desires.  
-**Forbidden:** identify a specific teen as definitively judicially abandoned without revelation.
-
-## J04 — Godly grief and worldly grief differ
-**Type:** T  
-**Text:** 2 Cor. 7:8–11.  
-**Markers:** earnestness, eagerness to clear wrong, indignation, fear, longing, zeal, justice/action; not mere tears/being caught.  
-**Use:** repentance fruit develops over time.  
-**Guard:** do not create salvation checklist from emotions.
-
-## J05 — True believers can fall grievously yet be restored
-**Type:** T/confessional  
-**Control:** 1689 ch. 17.  
-**Allowed:** grievous fall does not mechanically prove never-regenerate.  
-**Forbidden:** use perseverance doctrine to reassure unrepentant habitual sin.
-
-## J06 — False profession/false assurance is real
-**Type:** T/confessional  
-**Control:** Matt. 7; 1 John; 1689 ch.18.  
-**Allowed:** church upbringing/profession not automatic proof of regeneration.
-
----
-
-# K. Radical boundaries / discipline
-
-## K01 — Matthew 5:29–30 warrants costly removal of occasions of sin
-**Type:** T  
-**Context:** lust/adultery of heart.  
-**Interpretation:** not literal mutilation; radical mortification.  
-**Use:** good/useful access can be surrendered if persistent pathway to grave sin.  
-**Forbidden:** self-harm, parental abuse, universal device ban.
-
-## K02 — Fleeing is a biblical response to sexual/youthful passions
-**Type:** T  
-**Texts:** 1 Cor. 6:18; 2 Tim. 2:22.  
-**Use:** maturity is not proven by deliberate proximity to temptation.
-
-## K03 — «Make no provision for flesh» supports logistics-level wisdom
-**Type:** T  
-**Text:** Rom. 13:14.  
-**Use:** do not deliberately preserve known repeat pathway to lust.  
-**Guard:** application, not direct smartphone command.
-
-## K04 — Parental discipline must be strong without provoking/despairing child
-**Type:** T + empirical consonance  
-**Texts:** Eph. 6:4; Col. 3:21; Heb.12.  
-**Use:** discipline + instruction, not indulgence; avoid arbitrary, humiliating, impossible expectations.
-
----
-
-# L. Positive counter-formation
-
-## L01 — Significant nonparent adult mentoring is associated with better youth outcomes
-**Grade:** A/B  
-**Evidence:** natural mentoring meta-analysis; overall association ~r=.106, relationship quality ~r=.208.  
-**Use:** church needs admired adults, not merely events.
-
-## L02 — Prosocial/godly peers can also exert peer influence
+## I02 — Proactive temptation avoidance can be a self-control strategy
 **Grade:** B  
-**Evidence:** longitudinal religious-peer influence and broader prosocial peer literature.  
-**Use:** replace dangerous belonging with better belonging, not isolation only.
+**Evidence:** strategic self-control/proactive avoidance literature.  
+**Allowed:** good self-control can consist in not entering high-conflict situations.  
+**Guard:** not proof that all avoidance is healthy or sufficient.
 
-## L03 — Recovery should add positive pursuits, not only subtraction
-**Type:** T + empirical synthesis  
-**Texts:** 2 Tim.2:22 (`flee` + `pursue` + `with`).  
-**Empirical anchors:** mentoring, connectedness, boredom, structured activity.  
-**Allowed:** positive life scaffolding; not promise that sport/activities produce holiness.
+## I03 — Being caught is not equivalent to repentance
+**Type:** T + empirical consonance  
+**Control:** 2 Cor 7:8–11; behavior-change/disclosure literature.  
+**Allowed:** distinguish fear of consequence/reputation loss from moral turning against sin.  
+**Forbidden:** infer repentance from tears/apology alone.
 
----
+## I04 — Relapse does not by itself prove settled impenitence
+**Type:** T/pastoral synthesis  
+**Control:** 1689 ch17 grievous falls/perseverance; repentance fruit over time.  
+**Stronger warning signs:** doctrinal defense, planned concealment, refusal of correction, new secret channels, harm to others.  
+**Guard:** no infallible heart-reading.
 
-# M. Claims explicitly prohibited in publication
-
-1. `Internet made sin 20x stronger` as measured fact.
-2. `Porn permanently destroys dopamine receptors/brain` as universal fact.
-3. `Every porn user escalates to more extreme content`.
-4. `A seared conscience can never be restored` applied to a teen.
-5. `Good Christian parenting guarantees regeneration`.
-6. `Sovereign election means parenting has little importance`.
-7. `Modern teens have more physical sex by every measure`.
-8. `All strict rules produce rebellion`.
-9. `All privacy is secrecy`.
-10. `Secret account proves sexual misconduct`.
-11. `Victim who initially sent image is responsible for sextortion`.
-12. `Clinical non-addiction means pornography is morally okay`.
-13. `Religious guilt proves pathology`.
-14. `One relapse proves false conversion`.
-15. `Childhood profession guarantees true conversion despite persistent unrepentant life`.
+## I05 — Costly voluntary surrender can be evidence of seriousness without functioning as penance
+**Type:** T/R  
+**Control:** Matt 5:29–30; Rom 13:14; 2 Tim 2:22.  
+**Examples:** surrendering app/account/private device context/relationship/status pathway.  
+**Guard:** costly action does not earn forgiveness or prove regeneration by itself.
 
 ---
 
-## Next ledger task
+# J. Church / household categories
 
-For publication candidate:
+## J01 — OT rebellious-son judicial penalty is not a direct household sanction today
+**Type:** T  
+**Control:** Deut 21:18–21 + 1689 LBCF 19.4.  
+**Allowed general equity:** persistent hardened rebellion is serious; parents were not private magistrates; public judicial process mattered.  
+**Forbidden:** stoning, violence, abandonment of minors, private imitation of Israelite civil sanction.
 
-1. choose 25–35 claims maximum;
-2. assign exact source(s) + sample/design;
-3. mark `causal / longitudinal-predictive / associative / descriptive / theological`;
-4. write Russian publication wording;
-5. run contradiction search for each high-stakes claim;
-6. only then choose one article vs series structure.
+## J02 — Church discipline must distinguish attendance, membership, Table and leadership
+**Type:** T  
+**Control:** 1 Cor 5:9–13; 1 Cor 14:23–25; 1 Cor 11:27–32; Matt 18; 2 Thess 3.  
+**Allowed:** unrepentant professing member can lose good-standing recognition/Table fellowship while still being permitted to hear public Word absent safety/disruption reasons.  
+**Forbidden:** `excommunication means never allowed to enter a preaching service`.
+
+## J03 — Church discipline targets professing insiders in a way different from outsiders
+**Type:** T  
+**Control:** 1 Cor 5 explicitly distinguishes `those outside` from one `called a brother`.  
+**Guard:** unbaptized/unprofessing minor is not automatically the same membership case.
+
+## J04 — Adult-child household boundaries and minor custodial duties must be distinguished
+**Type:** T/prudential + legal guard  
+**Allowed:** lawful household conditions for an adult resident; persistent refusal may justify separate residence in some circumstances.  
+**Forbidden:** using homelessness as punishment for a minor; jurisdiction-specific eviction advice without legal verification.
+
+---
+
+# K. Fleeting pleasure / narrow path
+
+## K01 — Scripture explicitly acknowledges temporary sinful pleasure
+**Type:** T  
+**Texts:** Prov 9:17–18; Heb 11:25; James 1:14–15.  
+**Allowed:** sin can offer genuine short-term pleasure while hiding cost/end.  
+**Forbidden:** claim every pleasure is sin.
+
+## K02 — Immediate reward vs delayed cost has a psychological analogue
+**Grade:** A/B  
+**Evidence:** delay-discounting literature/meta-analysis across risky behaviors.  
+**Use:** describe temporal decision architecture.  
+**Guard:** do not reduce eternal judgment/new birth to delay-discounting psychology.
+
+## K03 — The narrow/broad way is discipleship/kingdom language, not generic asceticism
+**Type:** T  
+**Control:** Matt 7:13–14 in Sermon on Mount context.  
+**Allowed:** majority/ease/popularity do not validate path morally.  
+**Forbidden:** equating any difficult lifestyle choice with the narrow way.
+
+## K04 — Spirit-enabled mortification is not a technique for the unregenerate
+**Type:** T  
+**Control:** Gal 5:16–24; Rom 8:5–13.  
+**Allowed:** for believers, mortification is by Spirit; for unregenerate, command repentance/faith plus lawful external restraint/teaching.  
+**Forbidden:** psychologize sanctification into generic impulse-control training.
+
+---
+
+# Publication rule
+
+Before any claim enters `gb-is-my-strength`:
+
+1. assign a grade/type;
+2. attach strongest source/text;
+3. list strongest counter-evidence/limitation;
+4. choose exact causal language;
+5. distinguish empirical observation from theological judgment;
+6. check whether reader could misapply it to abuse, abandonment, false assurance or final heart-reading.
