@@ -35,7 +35,19 @@ Research presence, Drive presence, URL reachability и bibliographic record са
 
 ## Основные текущие corpus entrypoints
 
-- Бытие 6 / Иуда / 1–2 Петра: [`ТРУДНЫЕ ТЕКСТЫ/00_GENESIS6_MASTER_AUTHORITY_INDEX_AND_SUPERSESSION_MAP_XLII.md`](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_MASTER_AUTHORITY_INDEX_AND_SUPERSESSION_MAP_XLII.md).
+### Бытие 6 / Иуда / 1–2 Петра
+
+Genesis 6 имеет собственный machine-guarded authority graph. Его root-навигация обязана сохранять не только master index, но и три обязательных publication overlays:
+
+- [`ТРУДНЫЕ ТЕКСТЫ/00_GENESIS6_MASTER_AUTHORITY_INDEX_AND_SUPERSESSION_MAP_XLII.md`](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_GENESIS6_MASTER_AUTHORITY_INDEX_AND_SUPERSESSION_MAP_XLII.md) — master authority/supersession map;
+- [`ТРУДНЫЕ ТЕКСТЫ/00_ARTICLES_6_9_XLIX_PUBLICATION_CORRECTION_OVERLAY.md`](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_XLIX_PUBLICATION_CORRECTION_OVERLAY.md) — textual/publication corrections;
+- [`ТРУДНЫЕ ТЕКСТЫ/00_ARTICLES_6_9_L_RIGHTS_GATE_RESOLUTION_AND_PUBLICATION_DECISION.md`](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_L_RIGHTS_GATE_RESOLUTION_AND_PUBLICATION_DECISION.md) — image-rights/open-alternative decisions;
+- [`ТРУДНЫЕ ТЕКСТЫ/00_ARTICLES_6_9_LI_PRECISION_AUTHORITY_OVERLAY.md`](%D0%A2%D0%A0%D0%A3%D0%94%D0%9D%D0%AB%D0%95%20%D0%A2%D0%95%D0%9A%D0%A1%D0%A2%D0%AB/00_ARTICLES_6_9_LI_PRECISION_AUTHORITY_OVERLAY.md) — wording/confidence authority.
+
+Эти ссылки являются corpus-specific publication inputs из `data/genesis6-authority-manifest.json`; они не конкурируют с корневым `CURRENT_AUTHORITY.md` за межкорпусную root-authority.
+
+### Другие корпуса
+
 - «Серия Сердце»: [`СЕРИЯ СЕРДЦЕ/00_CURRENT_AUTHORITY_2026-08-02.md`](%D0%A1%D0%95%D0%A0%D0%98%D0%AF%20%D0%A1%D0%95%D0%A0%D0%94%D0%A6%D0%95/00_CURRENT_AUTHORITY_2026-08-02.md).
 - Библейский атлас: [`БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md`](%D0%91%D0%98%D0%91%D0%9B%D0%95%D0%99%D0%A1%D0%9A%D0%98%D0%99%20%D0%90%D0%A2%D0%9B%D0%90%D0%A1/00_CURRENT_AUTHORITY_2026-08-02.md).
 - Баптистские архивы: [`RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md`](RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md).
@@ -54,4 +66,4 @@ Corpus-specific current authority остаётся владельцем свое
 python3 scripts/validate_research_root_authority.py
 ```
 
-Validator read-only и fail-closed: проверяет единственный root owner, существование transitive authority paths и отсутствие прямых dated-root ссылок в operational entrypoints.
+Validator read-only и fail-closed: проверяет единственный root owner, существование transitive authority paths и отсутствие прямых dated-root ссылок в operational entrypoints. Corpus validators дополнительно защищают свои обязательные root links и authority graphs.
