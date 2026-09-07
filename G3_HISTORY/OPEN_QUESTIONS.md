@@ -7,41 +7,60 @@ The goal is not metaphysical “100% knowledge.” The achievable target is **pr
 
 ### Q001 — What exactly appears in Schedule L for FY2024 and FY2025?
 
-**Why it matters:** IRS-derived pages flag interested-person transactions. This can range from ordinary disclosed business to serious governance concern. The summary flag alone proves neither.
+**Why it matters:** IRS-derived pages identify reportable interested-person transactions. This can range from ordinary disclosed business to serious governance concern. Schedule presence alone proves neither.
+
+**Progress 2026-09-07:** exact IRS/ProPublica e-file objects identified:
+
+- FY2024: `202541359349304489`, filed 2025-05-15;
+- FY2025: `202641339349303874`, filed 2026-05-13.
+
+Each e-file manifest exposes an `IRS990ScheduleL` object. ProPublica's XML-download links and rendered Schedule L routes are known, and the official IRS bulk XML archive is confirmed as the authoritative acquisition route. Exact rows have not yet been successfully retrieved in the current research environment.
 
 **Needed:** raw XML/PDF rows for Schedule L Parts I–IV; interested person, relationship, transaction type, amount, approval terms.
 
-**Current status:** `EVIDENCE_HOLD`.
+**Current status:** `EVIDENCE_HOLD` — schedule existence verified; transaction substance unresolved.
 
 ### Q002 — What caused the FY2023 expense jump from ~$1.010m to ~$2.072m?
 
-**Needed:** full Part IX functional expense lines + Schedule O descriptions + event/publishing context.
+**Progress 2026-09-07:** FY2023 exact e-file object identified as `202411429349300611`, filed 2024-05-21. Known summary values confirm $2,071,986 total expense and $292,784 other salaries/wages (14.1%). FY2024 Part IX is now bounded at ~84% program / 7% management / 9% fundraising with ~$483k salaries-benefits-payroll, but this does not explain the prior-year spike.
+
+**Needed:** full FY2023 Part IX functional-expense lines + Schedule O descriptions + event/publishing context.
 
 **Current status:** `EVIDENCE_HOLD`. Current over-expansion explanation remains hypothesis.
 
 ### Q003 — What was the exact G3 governing board immediately before the August 2026 crisis?
 
+**Progress 2026-09-07:** FY2025 Form 990 visibly identifies Scott Aniol, Buck Braswell and Matt Broome among Part VII officers/directors, but the publicly rendered summary hides additional names and the filing covers FY2025, not the August 2026 crisis date. A secondary archived-board report continues to claim Braswell/Broome/Norton/Sikes/Joyner/Mooney.
+
 **Needed:** archived official `g3min.org` board page with timestamp and exact names; ideally multiple snapshots showing additions/removals.
 
-**Current status:** `ARCHIVE_HOLD`. Secondary reports claim Braswell/Broome/Norton/Sikes/Joyner/Mooney.
+**Current status:** `ARCHIVE_HOLD`. Do not treat the secondary six-name list as established fact.
 
 ### Q004 — When and why did Tom Buck, Jonathan Frazier, Chip Thornton, Adam Burrell and others leave the G3 board?
 
-**Needed:** Form 990 dates, archived board pages, board minutes/statements or first-person accounts.
+**Progress:** FY2024 filing confirms Buck, Thornton and Burrell were still reported in Part VII; July 2025 G3 announcement identifies Jonathan Frazier as board chairman. FY2025 visible summary identifies Braswell and Broome but does not expose the complete roster.
+
+**Needed:** full FY2025 Part VII, archived board pages, board minutes/statements or first-person accounts.
 
 **Why it matters:** determines whether 2026 represented governance concentration and whether conflict actors held G3 fiduciary roles at the relevant time.
 
 ### Q005 — Was G3 legally dissolved in Georgia or merely operationally wound down?
 
+**Progress 2026-09-07:** 2019 Georgia incorporation record is primary and exact. The corporation's Articles expressly permit dissolution by a two-thirds board vote and constrain residual assets to qualifying exempt purposes. Current IRS-derived BMF sources still describe federal 501(c)(3) status as active. No post-August-2026 Georgia Articles/Notice of Dissolution or current Georgia entity-status record for G3 has been acquired.
+
 **Needed:** current Georgia Secretary of State entity status plus any Notice/Articles of Dissolution filed after Aug. 2026.
 
-**Current status:** no dissolution filing acquired.
+**Current status:** `EVIDENCE_HOLD`. Federal exempt-status display must not be substituted for Georgia corporate status.
 
 ### Q006 — What happened to G3 Press, G3+, trademarks, subscriber relationships and other IP/assets?
 
-**Needed:** primary subscriber notice, board/corporate announcement, asset-transfer agreement or recipient ministry announcement; consideration/value if any.
+**Progress 2026-09-07:** Aug. 27 subscriber reporting supports only that G3+ was to be acquired/transitioned to an unnamed `another ministry`; secondary reporting says the same unnamed ministry may receive/acquire G3 Press. No primary source names the transferee. Public speculation about Right Response Ministries is unverified and must not be promoted.
 
-**Current status:** reports say another ministry is acquiring/receiving G3+ and possibly Press; transferee/terms not established.
+A new operational artifact complicates the timeline: Google Play shows the G3+ Android app updated on **2026-09-04**, after the shutdown announcement, while still listing `G3 Ministries for the Church`, `admin@g3min.org`, the Douglasville address and G3 branding. Apple storefronts likewise still list G3 Ministries For The Church, Inc. as seller/developer. This proves continued public platform identity/maintenance, not beneficial ownership or completion/non-completion of a transfer.
+
+**Needed:** primary subscriber notice, board/corporate announcement, asset-transfer agreement or recipient ministry announcement; consideration/value if any; platform seller/developer change history.
+
+**Current status:** `EVIDENCE_HOLD`. Transferee, terms and legal completion unresolved.
 
 ## P1 — blocks strong narrative wording
 
@@ -119,11 +138,13 @@ Compare board structure, policies, reporting mechanisms, conflict separation and
 
 ### Q019 — What remains online, who controls domains/apps and which pages are stale?
 
-As of 2026-09-07 search engines still surface pre-shutdown G3 pages, while live-state behavior is unstable. Search cache must not be mistaken for operational activity.
+As of 2026-09-07 search indexes still expose a pre-shutdown G3 site advertising the 2027 conference, Network, Press and Plus. `plus.g3min.org` still resolves to the app frontend, and Google Play shows a Sep. 4 update under G3 identity. These are live/cached technical artifacts, not proof that the ministry reversed its announced wind-down.
+
+Need DNS/domain ownership, hosting transitions, app-store seller history and post-transfer site state.
 
 ### Q020 — What is the status of authors’ rights and inventory at G3 Press?
 
-Identify title-by-title rights return, transfer or continued exploitation where relevant.
+Secondary reporting says Dave Jenkins and Darrell Harrison publicly requested return of rights. Acquire their original statements and identify title-by-title rights return, transfer or continued exploitation where relevant.
 
 ### Q021 — What is Scott Aniol’s post-G3 institutional status beyond GBTS?
 
