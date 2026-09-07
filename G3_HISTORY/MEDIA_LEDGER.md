@@ -13,7 +13,7 @@
 | G3-M006 | Josh Buice / G3 2025 news image with Voddie Baucham inset | The Roys Report graphic | anonymous-account/Baucham episode | PERMISSION_REQUIRED | TRR-owned composite; do not copy without license/permission |
 | G3-M007 | Early G3 / Pray’s Mill conference photographs, 2013–2017 | NOT YET ACQUIRED | early church-centered era | RIGHTS_HOLD | high-priority acquisition; prefer participant/official archival images with clear credit |
 | G3-M008 | G3 logo evolution: original conference logo → 2025 renewed logo | G3 official site/archive | institutional identity / post-Buice attempted reset | RIGHTS_UNKNOWN | use logo only if editorial/trademark analysis supports; archive exact versions |
-| G3-M009 | G3 2023 national conference wide crowd | NOT YET PRIMARY-PINNED; multiple participant/blog images exist | peak scale / 8,000+ period | RIGHTS_HOLD | find official event photographer or G3-owned publicity image |
+| G3-M009 | G3 2023 national conference crowd / auditorium / bookstore scenes | Elizabeth Prata, *The End Time*, contemporaneous `G3 Conference 2023: Day 1`, published 2023-09-21; page describes 8,200 attendees and embeds multiple conference photographs | peak institutional scale / eyewitness visual record | PERMISSION_REQUIRED | strong dated candidate; seek author permission and exact photo credit before use; do not copy binary |
 | G3-M010 | Pray’s Mill Baptist Church exterior / auditorium | PMBC official/public mapping sources to be acquired | origin and institutional overlap | RIGHTS_HOLD | prefer self-owned/press/official image with clear permission path |
 | G3-M011 | 2026 shutdown screenshots: G3 statement / network dissolution / site state | screenshots in news reports and archived social posts | final chapter | RIGHTS_UNKNOWN | factual content can be cited; screenshot republication requires rights analysis |
 | G3-M012 | G3 website stale/cached 2027 conference promotion vs live shutdown/cancellation state | G3 official/search cache/event backend | illustrate archival-state conflict | RIGHTS_UNKNOWN | better recreate as quoted factual timeline than republish screenshots unless needed |
@@ -21,15 +21,16 @@
 | G3-M014 | `That They May All Be One` Christian-unity event promotional artwork | official G3/Webconnex event asset | evidence of planned post-crisis conference programming and visual identity | RIGHTS_UNKNOWN | use as source artifact only; avoid publication until asset ownership/permission is clear |
 | G3-M015 | Pray’s Mill `Our Leaders` page showing all four resigned pastors still listed, including stale Aniol G3/GBTS bio | official PMBC page, observed 2026-09-07 | digital-forensics illustration of stale institutional web state | RIGHTS_UNKNOWN | prefer an original editorial reconstruction/table with dated quotations rather than republishing full screenshot; if screenshot is essential, perform fair-use/editorial rights review |
 | G3-M016 | Google Play G3+ storefront showing G3 developer/support identity | Google Play / developer-provided metadata | asset-transfer / digital-state chapter | RIGHTS_UNKNOWN | factual metadata should normally be represented as our own dated text/table; storefront screenshot only if editorial necessity justifies rights/platform review |
+| G3-M017 | Wide G3 2020 `Worship` conference audience facing G3 stage/screens | Church Works Media, `My Two Cents on the G3 Conference`, 2020-01-30; page-hosted `G3-audience-wide.jpg` | growth/scale visual between early church-hosted era and 2021 institutional expansion | PERMISSION_REQUIRED | seek Church Works Media / photographer permission or identify explicit license; do not copy binary |
 
 ## Preferred visual package for final article / dossier
 
 A publication-safe version should ideally contain:
 
 1. **2013 early conference / Pray’s Mill** — establishes humble origin.
-2. **2020/2021 large auditorium** — demonstrates growth.
+2. **2020 wide auditorium** — G3-M017 is now a concrete candidate for the growth era, permission required.
 3. **2022 coalition panel** — shows the real people/network before the 2023 ideological-right conflict; use only if photographer permission is obtained.
-4. **2023 national conference wide shot** — peak institutional scale.
+4. **2023 national conference wide shot** — G3-M009 is now source-pinned to a contemporaneous eyewitness page, permission required.
 5. **Josh Buice portrait/pulpit** — founder and 2025 crisis.
 6. **Scott Aniol G3 podium** — attempted reset / succession.
 7. **G3 Press / G3+ / Network visual** — ecosystem, not merely personalities.
