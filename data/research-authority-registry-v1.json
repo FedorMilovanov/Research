@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "RESEARCH-ROOT-AUTHORITY-REGISTRY-V1",
+  "stableEntrypoint": "CURRENT_AUTHORITY.md",
+  "rootAuthority": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
+  "controlPlaneAuthority": "00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md",
+  "evidencePolicy": "data/repository-evidence-policy-v2.json",
+  "publicProjectionAuthority": "data/public-projection-current-2026-08-02.json",
+  "artifactCustodyPolicy": "data/artifact-custody-policy-v2.json",
+  "formerRootAuthorities": [
+    {
+      "path": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md",
+      "rootStatus": "superseded-as-root",
+      "currentRole": "supporting-upstream-for-explicit-corpus-and-public-projection-claims"
+    }
+  ],
+  "policy": {
+    "exactlyOneRootAuthority": true,
+    "datedAuthorityMustNotBeOperationalEntrypoint": true,
+    "formerRootMayRemainSupportingEvidence": true,
+    "researchClosureIsNotPublicationApproval": true,
+    "validatorMustBeReadOnly": true
+  }
+}
