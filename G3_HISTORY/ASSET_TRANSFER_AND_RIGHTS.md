@@ -9,6 +9,23 @@ What happened to the economically and editorially meaningful assets of G3 after 
 
 The current evidence supports a more granular answer than `everything transferred` or `nothing transferred`.
 
+## 0. Pre-wind-down scale — these were non-trivial ministry/product surfaces
+
+An official G3 presidential-announcement page dated **2025-07-14** gives unusually useful scale markers for the ecosystem immediately after the Buice crisis and before the 2026 collapse. G3 itself said that under Scott Aniol's prior leadership:
+
+- **G3 Press had expanded to more than 50 titles**;
+- **G3 Plus had grown to more than 10,000 users**;
+- **the G3 Church Network had grown to more than 200 churches**.
+
+Official locator:
+- https://g3min.org/scott-aniol-named-president-of-g3-ministries/
+
+These are institutional self-reported scale claims, not an independent valuation. They nevertheless matter for the asset question: the later transfer/wind-down concerned an established catalog, digital user base and church-network ecosystem rather than an empty corporate shell.
+
+IRS-derived FY2025 program reporting independently describes continuing publishing/digital/network activity, including **18 new G3 Press books**, more than **500 audiobooks available on G3+**, and roughly **210 network churches**. Because that layer is derivative until raw filing text is acquired, the official 2025 G3 page controls the cleaner public scale wording while the tax-derived data functions as corroboration.
+
+**Do not infer market value** from user/title/church counts. They establish operational scale, not transaction price or ownership value.
+
 ## 1. G3+ — intended transfer is reported, transferee remains unknown
 
 A screenshot supplied by a G3+ subscriber and reproduced by Michelle Lesley reports that subscribers were told another ministry would acquire/continue the G3+ service while preserving subscription/library access. Lesley explicitly says she has **no insider knowledge** of the acquiring ministry.
@@ -197,6 +214,6 @@ Increasingly plausible because Jenkins appears to have recovered/reissued one ti
 
 ## 10. Article-safe wording today
 
-> G3 announced that its subscription platform would transition to another, unnamed ministry, but the recipient and transaction terms have not been publicly verified. The digital aftermath is mixed: G3+ still carries G3 developer metadata, while the G3 Press storefront remains publicly accessible with books, merchandise and commerce controls. At least one former G3 Press author, Dave Jenkins, is now selling *The Word Matters* under his own Theology for Life Publishing imprint, strongly corroborating reports that G3 returned the rights to that title. These facts point toward a potentially piecemeal wind-down—platform transition, author-right reversions and still-visible inventory—but the legal disposition of G3 Press, G3+, cash, trademarks and other assets remains unresolved.
+> By July 2025 G3 itself reported an ecosystem of more than 50 Press titles, more than 10,000 G3+ users and more than 200 Network churches. After the 2026 collapse, subscribers were told the subscription platform would transition to another, unnamed ministry, but the recipient and transaction terms have not been publicly verified. The digital aftermath is mixed: G3+ still carries G3 developer metadata, while the G3 Press storefront remains publicly accessible with books, merchandise and commerce controls. At least one former G3 Press author, Dave Jenkins, is now selling *The Word Matters* under his own Theology for Life Publishing imprint, strongly corroborating reports that G3 returned the rights to that title. These facts point toward a potentially piecemeal wind-down—platform transition, author-right reversions and still-visible inventory—but the legal disposition of G3 Press, G3+, cash, trademarks and other assets remains unresolved.
 
 **Do not upgrade `potentially piecemeal` to a factual transaction structure until primary transfer records are acquired.**
