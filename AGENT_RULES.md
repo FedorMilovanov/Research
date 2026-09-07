@@ -3,7 +3,10 @@
 ## 1. Единственная политика доказательств
 
 Каноническая машинная схема: [`data/repository-evidence-policy-v2.json`](data/repository-evidence-policy-v2.json).
-Текущая межкорпусная власть: [`00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md`](00_RESEARCH_CURRENT_AUTHORITY_2026-08-01.md).
+Стабильная межкорпусная точка входа: [`CURRENT_AUTHORITY.md`](CURRENT_AUTHORITY.md).
+Машинный root-authority SSOT: [`data/research-authority-registry-v1.json`](data/research-authority-registry-v1.json).
+
+Не выбирай current authority по дате или имени файла. Текущий root определяется registry; датированные authority могут оставаться corpus-specific/supporting evidence и не получают root-власть автоматически.
 
 Класс источника и операционный статус **не смешиваются**.
 

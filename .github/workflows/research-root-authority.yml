@@ -1,0 +1,51 @@
+name: Research root authority
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'AGENT_RULES.md'
+      - 'CURRENT_AUTHORITY.md'
+      - '00_RESEARCH_CURRENT_AUTHORITY_*.md'
+      - '00_RESEARCH_CONTROL_PLANE_AUTHORITY_*.md'
+      - 'data/research-authority-registry-v1.json'
+      - 'data/repository-evidence-policy-v2.json'
+      - 'data/public-projection-current-*.json'
+      - 'data/artifact-custody-policy-v2.json'
+      - 'scripts/validate_research_root_authority.py'
+      - '.github/workflows/research-root-authority.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'AGENT_RULES.md'
+      - 'CURRENT_AUTHORITY.md'
+      - '00_RESEARCH_CURRENT_AUTHORITY_*.md'
+      - '00_RESEARCH_CONTROL_PLANE_AUTHORITY_*.md'
+      - 'data/research-authority-registry-v1.json'
+      - 'data/repository-evidence-policy-v2.json'
+      - 'data/public-projection-current-*.json'
+      - 'data/artifact-custody-policy-v2.json'
+      - 'scripts/validate_research_root_authority.py'
+      - '.github/workflows/research-root-authority.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Compile validator
+        run: python3 -m py_compile scripts/validate_research_root_authority.py
+
+      - name: Validate root authority graph
+        run: python3 scripts/validate_research_root_authority.py
+
+      - name: Assert validator is read-only
+        run: git diff --exit-code
