@@ -2,7 +2,7 @@
 
 **Status:** PRE-DRAFT EDITORIAL CONTROL / RESEARCH ONLY / NOT PUBLICATION  
 **Date:** 2026-09-07  
-**Depends on:** modules `80`, `85`, `87`, `88`.  
+**Depends on:** modules `80`, `85`, `87`, `88`; 2026-09-08 deltas in `18`, `27`, `29`, `64`.  
 **Goal:** freeze what each section is actually allowed to prove before any polished prose is written.
 
 ---
@@ -19,6 +19,8 @@ Every section must have:
 6. **one transition that advances the argument rather than repeating it**.
 
 If a paragraph cannot be assigned to a section-level claim, it is likely research residue rather than publication material.
+
+The 2026 AI-companion and coercive-sexting deltas **do not create new numbered main sections**. They attach only where they sharpen an already-owned claim.
 
 ---
 
@@ -154,21 +156,29 @@ What precisely has the smartphone/internet changed without changing the human he
 
 ## Primary claim
 
-> The digital age drastically lowers friction around access, privacy, repetition, peer presence, recommendation, and concealment.
+> The digital age drastically lowers friction around access, privacy, repetition, peer presence, recommendation, concealment—and now can also provide persistent private conversation even when no human peer is online.
 
 ## Modern anchors
 
-Pew 2024, U.S. teens 13–17:
+Core:
 
+Pew 2024, U.S. teens 13–17:
 - 96% daily internet use;
 - nearly half online almost constantly;
 - 95% smartphone access.
 
 Children’s Commissioner:
-
 - pornography may be encountered on mainstream platforms;
 - accidental exposure is documented;
 - age-of-first-exposure numbers must carry sample/geography guard.
+
+Optional 2026 delta if the paragraph needs one sentence on conversational AI:
+
+Pew/eSafety:
+- a measurable minority of teens use chatbots for casual conversation/emotional support;
+- official child-safety research documents companion-like use and some harmful/sexualized interactions.
+
+Do **not** automatically add another percentage if the structural sentence works without it.
 
 ## Structural list
 
@@ -176,21 +186,29 @@ Keep short in prose:
 
 `access / privacy / persistence / repetition / recommendation / concealment`.
 
-Scale and redistribution may be added where sexting is discussed.
+Possible additional concept:
+
+`peerless hidden companionship` — private relationship-like AI conversation without a real peer online.
+
+This is editorial synthesis, not a diagnostic or prevalence category.
 
 ## Required theological sentence
 
 > New opportunity is not new depravity.
 
+AI does not become a fourth spiritual enemy beside world/flesh/devil.
+
 ## Forbidden
 
 - `internet ×20`;
 - “algorithm causes lust”;
-- “phone is the fourth enemy beside world/flesh/devil.”
+- “phone is the fourth enemy beside world/flesh/devil”;
+- “most teenagers now have AI girlfriends/boyfriends”;
+- “talking to AI is itself sin.”
 
 ## Transition
 
-> No modern pathway shows that combination more clearly than pornography: old lust, unprecedented logistics.
+> No modern pathway shows the marriage of old desire and lowered friction more clearly than pornography: old lust, unprecedented logistics.
 
 ---
 
@@ -374,11 +392,11 @@ What is the first direction of escape before Part II discusses parents, boundari
 
 ## Primary claim
 
-> The double life begins to break where protected secrecy is surrendered to truth, confession, exhortation, and real help.
+> The double life begins to break where protected secrecy is surrendered to truth, confession, exhortation, and real help—and Christian hope rests finally in Christ, not in successful exposure.
 
 ## Biblical center
 
-- 1 John 1:5–10;
+- 1 John 1:5–2:2;
 - Heb. 3:13.
 
 ## Part I scope
@@ -391,7 +409,8 @@ Name:
 - confession;
 - help;
 - refusing isolation;
-- taking temptation seriously early.
+- taking temptation seriously early;
+- Christ the righteous Advocate / cleansing.
 
 Then send reader to Part II.
 
@@ -399,7 +418,7 @@ Then send reader to Part II.
 
 The article must not end Part I as though exposure itself saves.
 
-God forgives/cleanses; Christ is not merely a better accountability system.
+Exposure, consequences and accountability do not atone. Christ is not merely a better accountability system.
 
 ## Transition to Part II
 
@@ -414,14 +433,21 @@ God forgives/cleanses; Christ is not merely a better accountability system.
 A child may be:
 
 - foolish/sexually sinful in one action;
-- then coerced, extorted, groomed, or victimized in another.
+- pressured or coerced inside a peer/romantic relationship;
+- subjected to nonconsensual redistribution;
+- extorted, groomed, stalked, threatened, or otherwise victimized later.
 
 These moral categories must not be collapsed.
 
 ## Modern anchors
 
+Core official safety evidence:
 - UNICEF 2026;
 - NCMEC sextortion reports.
+
+Optional 2026 context:
+- 49-study cyber dating violence systematic review/meta-analysis, PMID 39283366;
+- U.S. national teen sexting/nonconsensual-sharing/sextortion study, N=3,466 ages 13–17, PMID 41653178.
 
 ## Best placement
 
@@ -431,9 +457,29 @@ Sidebar/callout, not full main section unless narrative naturally requires it.
 
 > Victimization is not transformed into the child’s guilt because the child previously acted foolishly or sinfully.
 
+And:
+
+> A romantic relationship does not turn pressure, threats, stalking or nonconsensual sharing into consent.
+
+## Fact-finding guard
+
+If a real case is being discussed, distinguish:
+
+- creation of the material;
+- voluntary vs pressured/coerced sending;
+- scope of consent;
+- later redistribution;
+- threats/blackmail/control;
+- age/identity of the other person;
+- current safety risk.
+
+Do not turn this into graphic amateur forensic interrogation.
+
 ## Forbidden
 
-Using UNICEF “1 in 5” as a statistic for voluntary sexual behavior.
+- using UNICEF “1 in 5” as a statistic for voluntary sexual behavior;
+- treating every sexting case as coerced;
+- exact cyber-dating prevalence/effect claims while the research sources retain `LOCATOR_HOLD`.
 
 ---
 
@@ -441,7 +487,7 @@ Using UNICEF “1 in 5” as a statistic for voluntary sexual behavior.
 
 This is **not final prose**; it is the editorial logic test:
 
-> The hidden adolescent life begins with no new anthropology: the fallen heart desires what God forbids, and sin can be genuinely sweet for a moment while hiding death. Companionship gives those desires a social world, and the digital age gives that world unusual persistence, privacy, access, and concealment. Pornography and sexualized communication become especially powerful not because the device manufactures depravity but because it places fitting occasions beside existing lust. To preserve the pleasure, the child may learn to manage truth—what parents see, what church sees, what peers see. Sin’s deceit can then harden him until correct doctrine remains in memory while it exerts little practical rule in the moment. Yet observers must not confuse every grievous fall with final apostasy. Scripture calls both false professors and fallen believers away from darkness and into the light. Part II must then ask what parents are responsible to do with that truth.
+> The hidden adolescent life begins with no new anthropology: the fallen heart desires what God forbids, and sin can be genuinely sweet for a moment while hiding death. Companionship gives those desires a social world, and the digital age gives that world unusual persistence, privacy, access, and concealment; in the AI era, even private relationship-like conversation no longer always requires another human to be online. Pornography and sexualized communication become especially powerful not because devices manufacture depravity but because they place fitting occasions beside existing lust. To preserve the pleasure, the child may learn to manage truth—what parents see, what church sees, what peers see. Sin’s deceit can then harden him until correct doctrine remains in memory while it exerts little practical rule in the moment. Yet observers must not confuse every grievous fall with final apostasy, and they must not confuse a child’s voluntary sin with another person’s later coercion or abuse. Scripture calls sinners away from darkness and into the light, where Christ—not exposure—is the refuge. Part II must then ask what parents are responsible to do with that truth.
 
 If future prose cannot preserve this chain, revise the outline before drafting.
 
@@ -455,7 +501,9 @@ Do not repeat:
 - “internet is not root” more than 2–3 strategic times;
 - clinical caveats after every pornography mention;
 - false-profession guard in every hardening paragraph;
-- modern statistics in theological sections.
+- modern statistics in theological sections;
+- AI as a new theme in multiple sections;
+- coercion/safeguarding details outside the safety sidebar unless directly necessary.
 
 Each distinction gets one primary home.
 
@@ -463,15 +511,17 @@ Each distinction gets one primary home.
 
 # 13. Part I pre-draft readiness verdict
 
-**The argument is now specific enough to draft later without reopening broad research.**
+**The argument is specific enough to move to product preflight and drafting. Broad Research is closed.**
 
-Still required before product prose:
+Still required before/while writing product prose:
 
-1. product owner lane / PR-overlap check;
-2. selected exact Bible translation/quotation policy;
-3. exact short Brooks/Owen quotations chosen and reverified;
-4. current replacement check for Pew 2024 vs newer Pew 2025 data;
-5. exact strongest pornography systematic/longitudinal source chosen from Research;
-6. final title/slug after product taxonomy review.
+1. live product owner-lane / open-PR overlap check;
+2. re-read current product content/source rules at exact `main`;
+3. selected exact Bible translation/reference policy (`105/107` controls; current product authority wins if changed);
+4. exact short Brooks/Owen quotation(s) chosen and reverified only if actually retained;
+5. exact strongest pornography systematic/longitudinal source chosen if a modern outcome claim survives;
+6. exact locator reopening for any numerical AI/coercive claim that survives (`LOCATOR_HOLD` must be cleared first);
+7. final title/slug after current product taxonomy review;
+8. final Gospel-center/red-team using `131_CROSS_PART_GOSPEL_CENTER...` and late P0 controls.
 
-No other broad psychology pass is required for Part I.
+No other broad psychology/digital-risk pass is required for Part I.
