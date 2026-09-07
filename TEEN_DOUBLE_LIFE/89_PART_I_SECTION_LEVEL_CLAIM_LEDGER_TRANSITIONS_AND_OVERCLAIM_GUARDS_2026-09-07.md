@@ -216,7 +216,7 @@ AI does not become a fourth spiritual enemy beside world/flesh/devil.
 
 ## Governing question
 
-How can the article speak with biblical severity about pornography without borrowing questionable addiction/neuroscience rhetoric?
+How can the article speak with biblical severity about pornography without borrowing questionable addiction/neuroscience rhetoric or teaching the reader to hear “sex/body” as synonymous with “dirty”?
 
 ## Primary claim
 
@@ -225,7 +225,22 @@ How can the article speak with biblical severity about pornography without borro
 ## Biblical center
 
 - Matt. 5:27–30 may be introduced briefly but developed in Part II;
-- 1 Cor. 6 / 1 Thess. 4 may be candidate texts if final exegesis packet chooses them.
+- 1 Cor. 6 / 1 Thess. 4 may be candidate texts if final exegesis packet chooses them;
+- Prov. 5 supplies the positive canonical counterweight: sexual desire and delight are not treated as dirty in themselves but ordered covenantally within marriage.
+
+## Required positive sexual-ethics guard
+
+Part I must contain at least one clear reader-facing sentence establishing the positive side:
+
+> **Biblical sexual ethics is not hostility to the body, attraction, desire, or marital intimacy. The same wisdom tradition that warns fiercely against adulterous seduction also celebrates sexual delight within marriage; the evil is not that God made sexuality good, but that sinners detach the gift from God’s order and turn another person into an object of lust, status, secrecy, exploitation, or self-gratification.**
+
+This is synthesis, not a direct quotation. Keep it concise enough that Part I does not become a marriage-theology excursus.
+
+Why this is P0 rather than decorative balance:
+
+- without it, a long pornography/sexual-danger section can accidentally catechize the reader into `sexuality = danger/dirt`;
+- shame-driven families may already lack a healthy language for attraction/body/desire;
+- the project’s anti-pornography argument is stronger, not weaker, when it distinguishes corruption of a good gift from condemnation of the gift itself.
 
 ## Modern evidence
 
@@ -245,7 +260,10 @@ Moral guilt does not require a clinical disorder.
 - universal escalation;
 - irreversible brain damage;
 - fixed exposure count = addiction;
-- shame = proof of disorder.
+- shame = proof of disorder;
+- “sexual desire itself is dirty”;
+- “a godly teenager should have no sexual attraction”;
+- using pornography’s corruption as proof that embodiment or marital sexuality is suspect.
 
 ## Transition
 
@@ -487,7 +505,7 @@ Do not turn this into graphic amateur forensic interrogation.
 
 This is **not final prose**; it is the editorial logic test:
 
-> The hidden adolescent life begins with no new anthropology: the fallen heart desires what God forbids, and sin can be genuinely sweet for a moment while hiding death. Companionship gives those desires a social world, and the digital age gives that world unusual persistence, privacy, access, and concealment; in the AI era, even private relationship-like conversation no longer always requires another human to be online. Pornography and sexualized communication become especially powerful not because devices manufacture depravity but because they place fitting occasions beside existing lust. To preserve the pleasure, the child may learn to manage truth—what parents see, what church sees, what peers see. Sin’s deceit can then harden him until correct doctrine remains in memory while it exerts little practical rule in the moment. Yet observers must not confuse every grievous fall with final apostasy, and they must not confuse a child’s voluntary sin with another person’s later coercion or abuse. Scripture calls sinners away from darkness and into the light, where Christ—not exposure—is the refuge. Part II must then ask what parents are responsible to do with that truth.
+> The hidden adolescent life begins with no new anthropology: the fallen heart desires what God forbids, and sin can be genuinely sweet for a moment while hiding death. Companionship gives those desires a social world, and the digital age gives that world unusual persistence, privacy, access, and concealment; in the AI era, even private relationship-like conversation no longer always requires another human to be online. Pornography and sexualized communication become especially powerful not because devices manufacture depravity but because they place fitting occasions beside existing lust. Biblical sexual ethics therefore must name pornography severely without teaching that the body, attraction, desire, or marital sexuality are themselves dirty: pornography corrupts a good created gift by severing it from God’s order and turning persons into objects of lust and use. To preserve the pleasure, the child may learn to manage truth—what parents see, what church sees, what peers see. Sin’s deceit can then harden him until correct doctrine remains in memory while it exerts little practical rule in the moment. Yet observers must not confuse every grievous fall with final apostasy, and they must not confuse a child’s voluntary sin with another person’s later coercion or abuse. Scripture calls sinners away from darkness and into the light, where Christ—not exposure—is the refuge. Part II must then ask what parents are responsible to do with that truth.
 
 If future prose cannot preserve this chain, revise the outline before drafting.
 
@@ -503,7 +521,8 @@ Do not repeat:
 - false-profession guard in every hardening paragraph;
 - modern statistics in theological sections;
 - AI as a new theme in multiple sections;
-- coercion/safeguarding details outside the safety sidebar unless directly necessary.
+- coercion/safeguarding details outside the safety sidebar unless directly necessary;
+- positive-sexuality guard so often that it derails Part I into a marriage article.
 
 Each distinction gets one primary home.
 
@@ -521,7 +540,8 @@ Still required before/while writing product prose:
 4. exact short Brooks/Owen quotation(s) chosen and reverified only if actually retained;
 5. exact strongest pornography systematic/longitudinal source chosen if a modern outcome claim survives;
 6. exact locator reopening for any numerical AI/coercive claim that survives (`LOCATOR_HOLD` must be cleared first);
-7. final title/slug after current product taxonomy review;
-8. final Gospel-center/red-team using `131_CROSS_PART_GOSPEL_CENTER...` and late P0 controls.
+7. verify that reader-facing Part I contains the concise positive sexual-ethics counterweight required in §5;
+8. final title/slug after current product taxonomy review;
+9. final Gospel-center/red-team using `131_CROSS_PART_GOSPEL_CENTER...` and late P0 controls.
 
 No other broad psychology/digital-risk pass is required for Part I.
