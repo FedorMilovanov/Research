@@ -1,11 +1,11 @@
 # Часть 4 — correction overlay к teacher-taxonomy dossier 30
 
-**Статус:** ACTIVE CORRECTION OVERLAY / FAIL-CLOSED  
-**Дата:** 2026-09-07  
-**Current Research baseline:** `56fca4d5a3dbbc4ddb68d4ed5708e91649be8086`  
-**Исторический документ:** `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/30_TEACHER_TAXONOMY_MASTER_AND_CUNNING_AXIS.md`  
-**Исторический blob:** `783676b4b009dbbbeef189486fecf6e09da471d3`  
-**Current evidence policy:** `AGENT_RULES.md` + `data/repository-evidence-policy-v2.json`  
+**Статус:** ACTIVE CORRECTION OVERLAY / FAIL-CLOSED
+**Дата:** 2026-09-07
+**Current Research baseline:** `56fca4d5a3dbbc4ddb68d4ed5708e91649be8086`
+**Исторический документ:** `ОБРАТНАЯ СТОРОНА КАФЕДРЫ СЕРИЯ/30_TEACHER_TAXONOMY_MASTER_AND_CUNNING_AXIS.md`
+**Исторический blob:** `783676b4b009dbbbeef189486fecf6e09da471d3`
+**Current evidence policy:** `AGENT_RULES.md` + `data/repository-evidence-policy-v2.json`
 
 ## 1. Назначение и граница
 
