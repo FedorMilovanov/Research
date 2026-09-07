@@ -35,13 +35,71 @@ The future article should quantify this difference through a dated content sampl
 
 ## 2018–2021 — social justice / CRT becomes a practical fellowship boundary
 
-The June 2018 Dallas meeting and September 2018 `Statement on Social Justice and the Gospel` were important inflection points. The statement’s signers included Josh Buice, Tom Buck, Tom Ascol, Voddie Baucham, John MacArthur, Phil Johnson, James White, Michael O’Fallon and others later important in the G3 network.
+### June 19, 2018 — the Dallas meeting is primary-anchored
+
+The official `Statement on Social Justice and the Gospel` history says the statement grew out of a meeting on **June 19, 2018** at Herb's House coffee shop in Dallas. It says:
+
+- **fourteen men** met;
+- they shared concern about developments under the banner of `Social Justice` in evangelicalism;
+- **Josh Buice organized the meeting**;
+- Michael O'Fallon helped facilitate it with Phil Johnson;
+- the group decided to formulate a theological statement.
+
+Official source:
+
+`https://statementonsocialjustice.com/`
+
+This is materially stronger than later shorthand that Buice was merely one signer among many. He was an organizer of the initiating meeting.
 
 The statement’s own framing presents the dispute as doctrinal/biblical: sufficiency of Scripture, anthropology, sin, salvation, race/ethnicity, complementarianism and the church. Its existence does not itself prove that every application made in its name was sound.
+
+### August–September 2018 — Buice publicly campaigns on the issue while still identified primarily as G3 Conference director
+
+A contemporaneous August 31, 2018 *Iron Sharpens Iron* program identifies Buice as pastor of Pray's Mill and **founder/director of the G3 Conference** and devotes the main interview to `What Is Social Justice?`.
+
+This is useful chronology because it shows the social-justice dispute becoming part of Buice's public G3-era identity immediately around the statement's release, before G3 Ministries later developed its full publishing/network infrastructure.
+
+The existence of a radio interview does not prove an institutional G3 policy by itself. Its value is participant chronology.
+
+### January 2019 — the dispute becomes an explicit G3 conference-program layer
+
+Contemporaneous records establish a **G3 Social Justice & the Gospel preconference** in connection with the 2019 G3 event. Surviving session material includes:
+
+- Voddie Baucham — `Defining Social Justice`;
+- James White — examination of the `Woke Church` movement;
+- Josh Buice — `Brave New Religion: Intersectionality`;
+- Tom Ascol — `White Privilege: The New Original Sin`;
+- a `Statement Framers Panel` with Buice, White, Baucham, Tom Buck, Phil Johnson and Tom Ascol, moderated by Michael O'Fallon.
+
+Sovereign Nations preserves the session set and participant identities; separate contemporary resource lists also identify it as the **2019 G3 Social Justice Preconference**.
+
+This is the strongest current programmatic marker for the transition:
+
+> `2018 Dallas organizer/statement → 2019 G3 preconference → later partnership/platform boundary`.
+
+The social-justice controversy therefore did not merely coexist somewhere in Buice's personal media. By 2019 it had an explicit G3 conference-program expression.
+
+### Coalition complexity remains important
+
+The 2019 main G3 conference itself still included figures who were criticized from G3's own right for not signing or aligning with the Dallas Statement. Contemporary polemical reporting complained about speakers such as David Platt, Mark Dever, Albert Mohler, John Piper and Ligon Duncan appearing in the broader conference ecosystem.
+
+That criticism is useful reception evidence because it shows the coalition did **not** become instantly uniform after the Dallas Statement. It should not be treated as a neutral description of those speakers' theology.
+
+### By 2021 the boundary affects platform partnership directly
 
 G3’s own later writing makes clear that social-justice alignment affected practical partnership/platform decisions. The strongest participant evidence now comes from Tim Challies’ first-person retrospective: before the 2021 conference, he says Josh Buice told him he was no longer sufficiently aligned with G3 and that reconsideration would require signing the Dallas Statement and ceasing to promote/quote certain Christians. Challies declined.
 
 This establishes **coalition narrowing as an experienced institutional fact**. It does not prove that signing the statement was formally required of every speaker, exhibitor or network church, nor does it by itself adjudicate whether G3’s boundary was theologically right or wrong.
+
+### Working periodization
+
+The best current chronology is therefore not simply `after 2018 G3 became anti-CRT` but:
+
+1. **June 2018** — Buice organizes Dallas meeting;
+2. **Sep. 2018** — statement released / public campaign expands;
+3. **Jan. 2019** — G3-associated social-justice preconference makes the dispute an explicit conference layer;
+4. **2019–2020** — broad coalition persists with growing friction;
+5. **2021** — participant evidence shows alignment now functioning as a real platform/partnership boundary.
 
 ## 2021–2022 — a self-conscious conservative institutional ecosystem
 
@@ -90,6 +148,12 @@ Aniol’s review of Doug Wilson’s *Mere Christendom*, also published through G
 
 The journal object is especially valuable because it is an institutional publication rather than an ephemeral social-media exchange.
 
+### Official 2023 national-conference theme remains theological
+
+Official G3 material now directly anchors the 2023 National Conference under the thematic banner **`The Sovereignty of God`**. A G3 curriculum says it was built from sermons preached at that national conference, while a contemporaneous G3 article immediately before the event says the conference would contain thirteen main sessions and fifteen breakout sessions under that sovereignty theme.
+
+This prevents another retrospective distortion: the appearance of explicit political-theology programming in 2023 did not mean the main national conference had ceased to have a theological/doctrine-of-God frame.
+
 ### Official 2023 pre-conference program
 
 G3’s own schedule placed political theology at the center of a dedicated pre-conference day:
@@ -99,10 +163,11 @@ G3’s own schedule placed political theology at the center of a dedicated pre-c
 - Scott Aniol — higher kingdom / church and worship;
 - panel explicitly described as a friendly debate over **Christian Nationalism, theonomy and postmillennialism**.
 
-Therefore two claims can be true at once:
+Therefore three claims can be true at once:
 
-1. political/culture questions had become much more explicit in G3 programming;
-2. G3 was not simply adopting the Christian-nationalist/theonomic position—it was debating and, in Aniol’s case, rejecting it as the New Testament prescription.
+1. the main national conference remained framed around a classic theological topic, God's sovereignty;
+2. political/culture questions had become much more explicit in G3 programming;
+3. G3 was not simply adopting the Christian-nationalist/theonomic position—it was debating and, in Aniol’s case, rejecting it as the New Testament prescription.
 
 ## Michael O’Fallon’s June 2023 departure — stronger chronology, causal HOLD
 
@@ -152,10 +217,11 @@ The better historical description is **boundary conflict on two flanks**.
 
 1. **2011–2017 — broad conservative-Reformed theological conference**
 2. **persistent anti-pragmatism / local-church / sufficiency identity**
-3. **2018–2021 — social-justice/CRT becomes a stronger fellowship boundary**
-4. **2021–2022 — institutional ecosystem expansion around that identity**
-5. **2023 — political theology becomes explicit, while G3 refuses the Christian-nationalist/theonomic right flank**
-6. **2023 onward — increasingly distinctive position inside conservative evangelical conflict rather than a one-axis left/right progression**
+3. **2018–2019 — Dallas Statement formation and explicit G3 social-justice programming**
+4. **2021 — social-justice/CRT alignment becomes a demonstrated partnership/platform boundary**
+5. **2021–2022 — institutional ecosystem expansion around that identity**
+6. **2023 — political theology becomes explicit, while G3 refuses the Christian-nationalist/theonomic right flank**
+7. **2023 onward — increasingly distinctive position inside conservative evangelical conflict rather than a one-axis left/right progression**
 
 ## Quantification still required
 
@@ -193,6 +259,6 @@ Do not write:
 
 Potentially supportable wording:
 
-> G3’s coalition narrowed after 2018 as social-justice and CRT questions became important practical boundaries for partnership and platforming. Yet that narrowing did not produce a simple march toward the political right. In 2023 Scott Aniol used G3’s own platform to reject Christian Nationalism as the New Testament prescription and to critique modern Christendom projects, while G3 devoted a pre-conference program to debating Christian Nationalism, theonomy and postmillennialism. The result was a new conflict with part of the ministry’s own right flank. Michael O’Fallon resigned from G3’s board during that controversy, although the evidence does not establish political theology as the sole internal cause of his departure.
+> G3’s coalition narrowed in stages after Josh Buice organized the June 2018 Dallas meeting that produced the Statement on Social Justice and the Gospel. By January 2019 the dispute had an explicit G3 preconference expression, and by 2021 participant testimony shows Dallas-Statement alignment functioning as a real partnership/platform boundary. Yet that narrowing did not produce a simple march toward the political right. In 2023 Scott Aniol used G3’s own platform to reject Christian Nationalism as the New Testament prescription and to critique modern Christendom projects, while G3 devoted a pre-conference program to debating Christian Nationalism, theonomy and postmillennialism. The result was a new conflict with part of the ministry’s own right flank. Michael O’Fallon resigned from G3’s board during that controversy, although the evidence does not establish political theology as the sole internal cause of his departure.
 
 This framing best fits the current primary and participant evidence.
