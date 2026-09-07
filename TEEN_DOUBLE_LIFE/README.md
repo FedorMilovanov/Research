@@ -14,12 +14,15 @@
 `+ невозрождение / реальность истинного обращения`  
 `+ характер и воспитание`  
 `+ отец / мать / семейная connectedness`  
+`+ домашнее Писание / молитва / разговор о вере`  
 `+ церковь / наставники / godly peers`  
 `+ peer norms / status / sexual scripts`  
 `+ современная массовая культура`  
 `+ pornography / sexting / hidden accounts`  
+`+ boredom / loneliness / coping`  
 `+ attention economy / algorithms / persuasive design`  
 `+ opportunity / privacy / low friction`  
+`+ safeguarding / victimization distinctions`  
 `+ human responsibility`  
 `+ sovereign grace / ordained means`.
 
@@ -30,6 +33,10 @@
 Вторая обязательная формула:
 
 > **Родители не возрождают ребёнка, но это не делает воспитание нейтральным: Бог действует суверенно и при этом реально пользуется средствами, а характер, self-control, нормы, отношения и opportunity structure действительно формируются.**
+
+Третья формула:
+
+> **Сильная внешняя граница и психологический контроль — не одно и то же. Родитель может радикально перекрыть конкретный путь к тяжёлому греху, не унижая ребёнка и не манипулируя любовью; и может, наоборот, почти ничего не запрещать, оставаясь эмоционально контролирующим.**
 
 ---
 
@@ -140,6 +147,36 @@ Structural comparison: portability, privacy, recommendations, scale, production 
 
 Matthew 5:29–30, 2 Timothy 2:22, 1 Corinthians 6:18, Romans 13:14; strong boundaries without confusing restraint with regeneration.
 
+### 21 — Father→son pornography/lust communication
+`21_FATHER_SON_PORNOGRAPHY_LUST_AND_SEXUAL_COMMUNICATION_2026-09-07.md`
+
+Direct father-teen sex-talk literature, pornography-discussion barriers, father-specific gaps, repeated language before crisis and father integrity.
+
+### 22 — First smartphone timing / readiness
+`22_AGE_OF_FIRST_SMARTPHONE_TIMING_USE_INTENSITY_AND_INDIVIDUAL_READINESS_2026-09-07.md`
+
+2026 ABCD/Pediatrics and JAMA evidence, mixed/null studies, timing vs intensity/night use, no magical universal age, staged transfer of powers.
+
+### 23 — Family Scripture / prayer / faith discussion
+`23_FAMILY_SCRIPTURE_PRAYER_FAITH_DISCUSSION_AND_RELIGIOUS_TRANSMISSION_2026-09-07.md`
+
+NSYR/Pew/Baptist evidence on home religious socialization; Scripture, prayer, discussion and ordinary means without equating practice with regeneration.
+
+### 24 — Church disclosure / safeguarding
+`24_CHURCH_DISCLOSURE_SAFEGUARDING_CONFESSION_AND_ABUSE_RESPONSE_2026-09-07.md`
+
+Voluntary sin vs coercion/victimization vs mixed cases; church disclosure response, reporting, no amateur investigation, ECAP standards, repentance ≠ restored access.
+
+### 25 — Boredom / loneliness / embodied ordinary life
+`25_BOREDOM_LONELINESS_EMBODIED_FAMILY_LIFE_AND_HEALTHY_STRUCTURE_2026-09-07.md`
+
+Boredom and loneliness as vulnerability/coping factors; family routines/meals with confounding guards; sleep, offline competence and rebuilding a positive life rather than only subtracting screens.
+
+### 26 — Pornography compulsivity / moral incongruence / clinical guards
+`26_PORNOGRAPHY_COMPULSIVITY_MORAL_INCONGRUENCE_ENSLAVEMENT_AND_CLINICAL_GUARDS_2026-09-07.md`
+
+PPU, CSBD, self-perceived addiction, moral incongruence, adolescent compulsivity, coping, biblical slavery-to-sin vs psychiatric diagnosis.
+
 ---
 
 ## Evidence discipline
@@ -151,30 +188,34 @@ The corpus must preserve these guards:
 3. Parenting influence ≠ parental determinism.
 4. Sovereign regeneration ≠ upbringing irrelevance.
 5. External restraint ≠ heart change.
-6. Victimization/coercion ≠ voluntary sexual sin.
+6. Victimization/coercion ≠ voluntary sexual sin; mixed cases require separating the child’s voluntary action from what was done to the child.
 7. Pornography exposure ≠ universal addiction.
-8. No invented `internet ×20` coefficient.
-9. No universal «dopamine damage» / irreversible brain damage rhetoric.
-10. No automatic diagnosis «conscience permanently seared».
-11. No claim that modern adolescents have more physical sex across the board; US surveillance shows important declines in some offline sexual behaviors.
-12. No claim that all restrictions are good; psychological control/reactance and secrecy literature requires distinction.
-13. No claim that all restrictions are bad; monitoring/rule enforcement can be protective, and radical safety boundaries may be morally required.
-14. Matthew 5:29–30 supports ruthless dealing with occasions of sin, not bodily self-harm or parental abuse.
+8. Self-perceived pornography addiction ≠ automatically CSBD/clinical disorder.
+9. Moral incongruence can amplify distress/self-labeling but cannot adjudicate whether pornography is morally right or wrong.
+10. No invented `internet ×20` coefficient.
+11. No universal «dopamine damage» / irreversible brain damage rhetoric.
+12. No automatic diagnosis «conscience permanently seared».
+13. No claim that modern adolescents have more physical sex across the board; US surveillance shows important declines in some offline sexual behaviors.
+14. No claim that all restrictions are good; psychological control/reactance and secrecy literature requires distinction.
+15. No claim that all restrictions are bad; monitoring/rule enforcement can be protective, and radical safety boundaries may be morally required.
+16. Matthew 5:29–30 supports ruthless dealing with occasions of sin, not bodily self-harm or parental abuse.
+17. First-smartphone age is not a scientifically established universal threshold; use intensity, night access, platform powers and individual readiness matter.
+18. Family religious practices are real socialization/formation means but empirical measures do not prove regeneration.
+19. Safeguarding disclosure must not be collapsed into church discipline; victims need protection and statutory/competent pathways where required.
+20. Boredom/loneliness can be vulnerability/maintenance factors without becoming excuses for voluntary sin.
 
 ---
 
 ## High-value remaining research gates
 
-- direct father→son communication about pornography/masturbation/sexual boasting;
-- mother/father differences in disclosure after discovery;
-- church safeguarding and disclosure response standards;
-- longitudinal evidence on vulgarity/sexual humor as status signal;
-- stronger historical comparison of pornography access before/after broadband/smartphones;
-- evidence on age of first personal smartphone and later risk pathways;
-- protective impact of family worship/Scripture practices beyond generic religiosity measures;
+- mother/father differences in disclosure after discovery and rebuilding trust;
+- stronger longitudinal evidence on vulgarity/sexual humor as status signal;
 - Christian youth groups: when peer contagion becomes positive counter-formation vs hidden church subculture;
+- age/device-specific pornography exposure pathways by platform and country;
 - repentance fruit / restoration evidence and pastoral models;
-- full claim-by-claim evidence ledger;
+- parental response after discovering pornography: which responses preserve truth channel while enforcing consequences;
+- suicide/self-harm risk after sextortion/sexual-image crises and appropriate emergency safeguards;
+- a final claim-by-claim evidence ledger grading evidence quality and causal language;
 - direct exegesis ledger for all major texts before publication.
 
 ---
