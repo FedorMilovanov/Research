@@ -24,7 +24,7 @@ These are three different dates and must not be collapsed into a single `founded
 | 2017 | 1,300+ for major Horn–White debate | PARTIAL | Debate audience, not necessarily whole-conference attendance. Do not use as total conference figure. |
 | 2020 | ~5,000–5,600 | CORROBORATED | Contemporary participant accounts place it around 5,000; later G3-linked histories give 5,600. Treat as range until original official attendance statement is pinned. |
 | 2021 | ~6,500 | VERIFIED_PRIMARY + CORROBORATED | FY2021 Form 990 program description says conference attendance increased to 6,500; independent participant histories agree. |
-| 2023 | ~8,000–8,400 | CORROBORATED | Multiple contemporary participant/exhibitor reports exceed 8,000; exact official final attendance remains to be pinned. |
+| 2023 | ~8,200; reports range above 8,000 | CORROBORATED | Contemporaneous attendee Elizabeth Prata reports 8,200; other participant/exhibitor reports exceed 8,000. Exact official final attendance remains to be pinned. |
 
 ## Phase 1 — 2013–2017: church-hosted annual conference
 
@@ -43,6 +43,8 @@ Tim Challies’ 2025 first-person retrospective says:
 - the first couple of conferences were hosted **in and by Pray’s Mill Baptist Church**.
 
 This is unusually useful participant evidence for both date and host-church character.
+
+A surviving third-party media catalog also preserves a coherent 2013 G3 conference recording set, including sessions by Paul Washer, Donald Whitney, Voddie Baucham and Joel Beeke. It is useful corroboration for session identity but is not treated as the source of truth where the official G3 archive exists.
 
 ### 2014 — Doctrine of the Church
 
@@ -63,6 +65,8 @@ Official session archive:
 `https://g3min.org/archives/?conf=2014`
 
 contains preaching on church, discipleship, ecclesiology, worship, mission and biblical preaching.
+
+A contemporary 2014 Founders Journal advertisement independently places the Jan. 23–25 conference at Pray's Mill Baptist Church and gives the theme as `The Church: From a Biblical Perspective`, providing a useful contemporaneous cross-check of host, dates and ecclesiological focus.
 
 ### 2015 — The Bible is the Word of God
 
@@ -114,6 +118,8 @@ Tim Challies’ Jan. 20, 2020 first-person report says he had just spoken at the
 
 By 2020, participant accounts put attendance around 5,000; later G3-linked historical material says 5,600. **Publication wording: roughly 5,000–5,600** until the original official attendance record is acquired.
 
+A concrete 2020 wide-audience photograph is now source-pinned in `MEDIA_LEDGER.md` to a contemporaneous Church Works Media report, but remains `PERMISSION_REQUIRED`.
+
 ## Phase 3 — 2021: 6,500 and formal institutional scale
 
 Official archive:
@@ -133,15 +139,33 @@ This is stronger than blog estimates because it is the organization’s own fede
 
 Tim Challies adds a different kind of primary evidence: before the 2021 event, Buice told him he was no longer sufficiently aligned with G3 and that renewed invitation would require signing the Dallas Statement and ceasing promotion/quotation of certain Christians. Challies declined. This is direct participant evidence of coalition narrowing after the broad first-eight-year era; it does not by itself adjudicate whether the boundary was theologically justified.
 
-## Phase 4 — 2023: apparent attendance peak and a new right-flank dispute
+## Phase 4 — 2023: attendance peak, sovereignty theme and a new right-flank dispute
+
+### Main conference theme now primary-anchored
+
+The main 2023 G3 National Conference theme is now directly anchored as **`The Sovereignty of God`** rather than merely inferred from associated content.
+
+Official G3 study page:
+
+`https://g3min.org/library-resources/the-sovereignty-of-god-study/`
+
+states that the curriculum was based on sermons preached at the **2023 G3 National Conference** and points readers to `The Sovereignty of God: The 2023 G3 National Conference` presentations.
+
+A contemporaneous official G3 article published immediately before the conference likewise states that attendees would gather under the thematic banner of **God's sovereignty**, with **13 main sessions and 15 breakout sessions**.
+
+This matters historically: political theology had become an explicit conference subject by 2023, but the national event's main thematic frame remained a recognizably theological doctrine-of-God theme.
+
+### Attendance
 
 Contemporary sources report:
 
 - 8,000+ registered shortly before the conference;
-- >8,200 attendees during the event;
-- one exhibitor reports a crowd of over **8,400**.
+- Elizabeth Prata, attending and photographing the event, reports **8,200 attendees**;
+- another exhibitor/participant report gives a figure above 8,000.
 
-Exact G3 final attendance remains `COARSE_LOCATOR_ONLY` until a primary event record is acquired.
+Exact G3 final attendance remains `COARSE_LOCATOR_ONLY` until a primary event record is acquired. The prudent publication formulation is **roughly 8,200 / more than 8,000**, attributed to contemporaneous attendee reporting rather than to G3's own final count.
+
+### Political-theology dispute
 
 An official G3 pre-conference schedule is especially important for ideological history. It contains:
 
@@ -152,10 +176,12 @@ An official G3 pre-conference schedule is especially important for ideological h
 
 This is evidence that by 2023 political theology had become an explicit G3 conference subject. Combined with Aniol’s published opposition to Christian Nationalism/theonomic prescriptions, it also blocks the opposite caricature that G3 simply became a Christian-nationalist institution.
 
+The resulting historical picture is not `theological conference → political conference`. A better model is **theological core + increasingly explicit culture/political boundary disputes layered around it**.
+
 ## Theme sequence — official/primary anchors now substantially stronger
 
 - **2013** — The Gospel: Message and Mission — official archive
-- **2014** — The Doctrine of the Church / Church from a Biblical Perspective — official announcement + archive
+- **2014** — The Doctrine of the Church / Church from a Biblical Perspective — official announcement + archive + contemporary Founders ad
 - **2015** — The Bible is the Word of God — official review
 - **2016** — The Trinity — official announcement + archive
 - **2017** — Reformation 500 — official archive
@@ -163,9 +189,9 @@ This is evidence that by 2023 political theology had become an explicit G3 confe
 - **2019** — The Mission of God — official archive + G3 curriculum
 - **2020** — Worship — official archive + Challies first-person report
 - **2021** — Christ — official archive + Form 990 scale evidence
-- **2023** — Sovereignty of God period; political-theology pre-conference explicitly includes Christian Nationalism/theonomy debate — exact main-conference theme schedule still to be pinned at the same primary depth as earlier years
+- **2023** — **The Sovereignty of God** — official G3 curriculum + contemporaneous official conference article
 
-The thematic record demonstrates a primarily theological/ecclesial national-conference identity for much of G3’s history. It does **not** mean G3’s broader media ministry was apolitical or free of culture-war content.
+The thematic record demonstrates a primarily theological/ecclesial national-conference identity across the full pre-collapse history. It does **not** mean G3’s broader media ministry was apolitical or free of culture-war content.
 
 ## Local-church motif
 
