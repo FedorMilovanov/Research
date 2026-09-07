@@ -4,15 +4,30 @@
 **Date:** 2026-09-07  
 **Purpose:** identify which sources are strong enough for direct quotation, which are safe mainly for paraphrase, and which modern empirical claims remain eligible for main-text use.
 
+> **GLOBAL EVIDENCE POLICY CONTROL (2026-09-08):** repository evidence semantics are governed by `data/repository-evidence-policy-v2.json` and current `AGENT_RULES.md`. Historical labels `P1/P2/C1/M1/S` below are preserved only as **local source-role / verification-provenance labels**. They are **not** repository `evidenceClass` values. Any source actually transferred toward publication must also carry global `evidenceClass`, `accessState`, `locatorState`, `rightsState`, `publicationState`, and applicable HOLDs.
+
 ---
 
-## 0. Verification classes
+## 0. Historical local verification-role labels — not repository evidenceClass
 
 - **P1 — PRIMARY/NEAR-PRIMARY VERIFIED:** original/early text, institutional transcription, scan or authoritative author/archive presentation; suitable for direct quotation after final wording check.
 - **P2 — RELIABLE HISTORICAL EDITION/TRANSCRIPTION:** suitable for paraphrase and usually quotation, but final quote should be compared against a scan/critical edition where feasible.
 - **C1 — CONFESSIONAL PRIMARY TEXT VERIFIED:** stable text of 1689 LBCF from multiple presentations.
 - **M1 — MODERN OFFICIAL PRIMARY DATA:** official institution/report page; strong for exact contemporary factual claim with scope/sample stated.
 - **S — SECONDARY:** commentary/orientation; do not prefer over primary text for direct quotation.
+
+### Global transfer rule
+
+For publication-bound sources, use only repository-global values:
+
+- `evidenceClass`: `A1 | A2 | A3 | B1 | C | D`;
+- `accessState`: `FULL_OBJECT_VERIFIED | PARTIAL_OBJECT | CATALOG_ONLY | LINK_ONLY | NOT_ACQUIRED`;
+- `locatorState`: `EXACT_LOCATOR_VERIFIED | COARSE_LOCATOR_ONLY | LOCATOR_MISSING`;
+- `rightsState`: `PUBLICATION_ELIGIBLE | STORAGE_ONLY | PRIVATE_STUDY_ONLY | PERMISSION_REQUIRED | RIGHTS_UNKNOWN`;
+- `publicationState`: `PROMOTE | REFERENCE | SUPERSEDED | BLOCKED`;
+- HOLDs: `EVIDENCE_HOLD | LOCATOR_HOLD | ARCHIVE_HOLD | RIGHTS_HOLD | PUBLICATION_HOLD`.
+
+A local `P1`, `P2`, `C1`, or `M1` therefore never substitutes for the global fields.
 
 ---
 
@@ -292,7 +307,9 @@ Use as confessional synthesis, not as substitute for biblical exegesis.
 
 # 10. Modern empirical facts retained for main-text eligibility
 
-## WHO/HBSC digital contact — M1 VERIFIED
+> The historical `M1` wording below is a local role label only. Global source-class/state fields govern publication transfer.
+
+## WHO/HBSC digital contact — local M1 VERIFIED
 
 Official WHO 2024 report/news page:
 - https://www.who.int/europe/news-room/25-09-2024-teens--screens-and-mental-health
@@ -313,9 +330,9 @@ Guard:
 
 ---
 
-## Pew U.S. teen internet use — M1 VERIFIED
+## Pew U.S. teen internet use — local modern survey VERIFIED
 
-Official Pew 2024:
+Pew 2024:
 - https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/
 
 Scope:
@@ -331,9 +348,17 @@ Verified:
 Guard:
 - U.S.-specific; do not universalize globally.
 
+Global transfer state when retained:
+- `evidenceClass`: `B1`;
+- `accessState`: `FULL_OBJECT_VERIFIED`;
+- `locatorState`: `COARSE_LOCATOR_ONLY` pending exact table/method locator for a retained numerical claim;
+- `rightsState`: `PUBLICATION_ELIGIBLE` for factual paraphrase/citation subject to product policy;
+- `publicationState`: `REFERENCE`;
+- `holds`: `[LOCATOR_HOLD]` until selected exact statistic is pinned.
+
 ---
 
-## UNICEF 2026 tech-facilitated sexual exploitation/abuse — M1 VERIFIED
+## UNICEF 2026 tech-facilitated sexual exploitation/abuse — local M1 VERIFIED
 
 Official report/press release:
 - https://www.unicef.org/innocenti/reports/through-childrens-eyes
@@ -358,7 +383,7 @@ Critical guard:
 
 ---
 
-## NCMEC financial sextortion — M1 VERIFIED
+## NCMEC financial sextortion — local M1 VERIFIED
 
 Official NCMEC:
 - https://www.ncmec.org/blog/2026/ncmec-releases-new-sextortion-data-2025
@@ -376,7 +401,7 @@ Critical guard:
 
 ---
 
-## Children’s Commissioner for England — pornography exposure — M1 VERIFIED
+## Children’s Commissioner for England — pornography exposure — local M1 VERIFIED
 
 Official report pages:
 - https://www.childrenscommissioner.gov.uk/resource/a-lot-of-it-is-actually-just-abuse-young-people-and-pornography/
@@ -397,7 +422,115 @@ Guard:
 
 ---
 
-# 11. Publication quote policy after verification
+## Australian eSafety Commissioner 2026 — AI assistants/companions
+
+Official regulator research:
+- https://www.esafety.gov.au/research/talking-to-machines-childrens-experiences-with-ai-assistants-and-companions
+- https://www.esafety.gov.au/industry/basic-online-safety-expectations/ai-services/findings-october-2025
+
+Verified scope/results recorded in module `18`:
+- demographically representative survey of 1,950 Australian children ages 10–17;
+- 79% had ever used an AI assistant or AI companion;
+- 8% had ever used an AI companion specifically;
+- 54% of users reported at least one companion-type purpose;
+- 22% reported chatting about feelings/challenges;
+- 20% sought mental-health/wellbeing advice;
+- 20% reported at least one potentially inappropriate/harmful interaction;
+- 32% had shared personal or potentially sensitive information;
+- prior eSafety transparency findings for teen users 13–17 included 4% reporting chat about kissing/sex and 3% sexual image/video output.
+
+### Global evidence state
+
+- `evidenceClass`: `A2`;
+- `accessState`: `FULL_OBJECT_VERIFIED`;
+- `locatorState`: `COARSE_LOCATOR_ONLY`;
+- `rightsState`: `PUBLICATION_ELIGIBLE` for factual paraphrase/citation subject to product policy;
+- `publicationState`: `REFERENCE`;
+- `holds`: `[LOCATOR_HOLD]` for any exact quotation/table-level claim until the final retained claim is pinned.
+
+### Publication guard
+
+Use to establish a **new private conversational pathway**, not to claim that most teens have AI romantic partners or that AI use itself is sinful.
+
+---
+
+## Pew Research Center 2026 — teen chatbot use
+
+Source:
+- https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/
+
+Verified scope/results recorded in module `18`:
+- U.S. teens ages 13–17, survey Sept.–Oct. 2025;
+- 64% had used AI chatbots;
+- 16% reported casual-conversation use;
+- 12% reported emotional-support/advice use.
+
+### Global evidence state
+
+- `evidenceClass`: `B1`;
+- `accessState`: `FULL_OBJECT_VERIFIED`;
+- `locatorState`: `COARSE_LOCATOR_ONLY`;
+- `rightsState`: `PUBLICATION_ELIGIBLE` for factual paraphrase/citation subject to product policy;
+- `publicationState`: `REFERENCE`;
+- `holds`: `[LOCATOR_HOLD]` for exact table-level publication use.
+
+### Publication guard
+
+Do not infer emotional dependence, romantic attachment, or sexual use from the 12% emotional-support/advice figure.
+
+---
+
+## Cyber dating violence systematic review/meta-analysis — publication-eligible reference with locator hold
+
+Source:
+- https://pubmed.ncbi.nlm.nih.gov/39283366/
+
+Verified at abstract/metadata level:
+- systematic review/meta-analysis;
+- 49 studies;
+- cyber dating violence perpetration/victimization associated with multiple offline dating-violence factors and mental-health symptoms.
+
+### Global evidence state
+
+- `evidenceClass`: `B1`;
+- `accessState`: `PARTIAL_OBJECT`;
+- `locatorState`: `COARSE_LOCATOR_ONLY`;
+- `rightsState`: `PUBLICATION_ELIGIBLE` for ordinary paraphrase/citation subject to product policy;
+- `publicationState`: `REFERENCE`;
+- `holds`: `[LOCATOR_HOLD]` for exact effect-size claims.
+
+### Publication guard
+
+Use the category-level finding only unless full-text tables/effect sizes are reopened and pinned.
+
+---
+
+## 2026 U.S. national teen sexting / nonconsensual sharing / sextortion study
+
+Source:
+- https://pubmed.ncbi.nlm.nih.gov/41653178/
+
+Verified at abstract/metadata level:
+- national U.S. sample;
+- N=3,466 adolescents ages 13–17;
+- examines sexting and harms including nonconsensual sharing and sextortion.
+
+### Global evidence state
+
+- `evidenceClass`: `B1`;
+- `accessState`: `PARTIAL_OBJECT`;
+- `locatorState`: `COARSE_LOCATOR_ONLY`;
+- `rightsState`: `PUBLICATION_ELIGIBLE` for ordinary paraphrase/citation subject to product policy;
+- `publicationState`: `REFERENCE`;
+- `holds`: `[LOCATOR_HOLD]` until exact prevalence/denominator tables are retrieved if numerical claims beyond the sample size are retained.
+
+### Publication guard
+
+Use it to support the existence of the coercive/nonconsensual layer; do not invent prevalence beyond the verified abstract/metadata.
+
+---
+
+# 11. Publication quote/source policy after verification
 
 ### Direct-quote preferred sources
 
@@ -421,6 +554,10 @@ Guard:
 - AI-generated summaries;
 - psychology terminology as doctrinal authority.
 
+### Mandatory global transfer gate
+
+Before any retained source crosses into `gb-is-my-strength`, record/check its current global evidence state. A source being present in Research or labeled locally `P1/P2/M1` is not itself publication authorization.
+
 ---
 
 # 12. Final source-quality conclusion
@@ -432,6 +569,11 @@ It is independently supported by:
 - Scripture in context;
 - 1689 confessional synthesis;
 - multiple independent Puritan/Reformed pastoral witnesses across the seventeenth–nineteenth centuries;
-- modern official data only where contemporary scale/technology/safeguarding claims require it.
+- modern official/high-quality data only where contemporary scale, digital pathways and safeguarding claims require it.
 
-Remaining source work before publication should be **quote-level precision**, not a search for a new governing framework.
+The 2026 delta adds two narrow contemporary pathways without reopening the governing framework:
+
+1. AI assistants/companions as a private conversational environment;
+2. coercive sexting/cyber dating violence as a distinct layer between voluntary sexting and stranger sextortion.
+
+Remaining source work before publication should be **selected-claim locator/quote precision**, not a search for a new governing framework.
