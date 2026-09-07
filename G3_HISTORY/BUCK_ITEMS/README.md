@@ -33,21 +33,21 @@ Additional required field: **ATTRIBUTION_CONTEXT** — whether Buck names/cites 
 | 11 | Romans 7:1–6 | 2024-01-07 | Hughes, *Romans* | dossier + archive lead | HOLD | HOLD | NOT_STARTED | — |
 | 12 | Romans 15:1–6 | 2025-10-19 | Hughes, *Romans* | dossier + archive lead | HOLD | HOLD | NOT_STARTED | — |
 | 13 | Romans 16:25–27 | 2025-12-21 | Hughes, *Romans* | dossier + archive lead | HOLD | HOLD | NOT_STARTED | — |
-| 14 | Joshua 1:1–9 | 2026-01-18 | David Jackman, *Joshua* | dossier + archive lead | HOLD | HOLD | QUEUED | KNOW/OBEY/MEDITATE structural claim requires source-specificity control |
+| 14 | Joshua 1:1–9 | 2026-01-18 | David Jackman, *Joshua* | dossier + archive lead | HOLD | HOLD | ACTIVE | [`14_JOSHUA_1_1_9_STRUCTURE_SPECIFICITY.md`](14_JOSHUA_1_1_9_STRUCTURE_SPECIFICITY.md) — bare KNOW/OBEY/MEDITATE overlap downgraded to low-specificity C/S pending exact wording/source |
 | 15 | Joshua 2:1–24 | 2026-02-08 | Jackman, *Joshua* | dossier + archive lead | HOLD | HOLD | NOT_STARTED | — |
 | 16 | Joshua 3:1–17 | 2026-02-15 | Jackman, *Joshua* | dossier + archive lead | HOLD | HOLD | NOT_STARTED | — |
 | 17 | Joshua 4:1–24 | 2026-03-01 | Jackman, *Joshua* | dossier + archive lead | HOLD | HOLD | QUEUED | distinctive-phrase claim requires original audio/source page |
 
 ## Progress interpretation
 
-`2 item files exist` does **not** mean `2 sermons proven plagiarized`.
+`3 item files exist` does **not** mean `3 sermons proven plagiarized`.
 
 At present:
 
 - **17/17** are identified by the accusation dossier;
 - official FBC archive identities are independently visible for multiple sermons and will be normalized across all 17;
 - **0/17** have all four closure gates independently completed in this research environment;
-- item 01 and item 08 have already produced important **source-specificity corrections** to the dossier's binary framing;
+- items 01, 08 and 14 have already produced important **source-specificity corrections** to the dossier's binary framing;
 - item 10 has strong pre-Buck source-lineage evidence but original Buck audio remains unverified.
 
 No global numerical verdict (`45 proven instances`, `% plagiarized`, etc.) is permitted until the item matrix is complete.
