@@ -11,10 +11,12 @@
 Каждый сильный тезис проходит пять вопросов:
 
 1. **Что именно утверждаем?** Empirical / theological / pastoral inference / rhetoric.
-2. **Какое самое сильное доказательство?** Meta-analysis, longitudinal, experiment, official surveillance, Scripture/context.
+2. **Какое самое сильное доказательство?** Scripture/context first for moral/theological claims; confession/Puritan application second; empirical research where its subject competence is relevant.
 3. **Что могло бы опровергнуть или ослабить тезис?** Countertrend, selection effect, confounding, genre/context.
 4. **Какая формулировка запрещена?** Causal overreach, diagnosis, universalization, false dichotomy.
 5. **Какой practical conclusion реально следует?** Не больше того, что доказано.
+
+**Method correction:** future article is Scripture-first and biblical-counseling/Puritan in moral anthropology. Psychology/public-health research is secondary and primarily retained for modern exposure mechanisms, prevalence, safeguarding and limited behavioural evidence.
 
 ---
 
@@ -183,6 +185,70 @@ Civil adulthood changes custodial authority; it does not abolish God’s moral l
 
 ---
 
+## AUD-19 — «Если он знает, что это грех, то перед каждым падением обязательно внутренне решает, что грех нормален»
+**Verdict:** **REJECT OVER-INTELLECTUALIZED MODEL.**
+
+Scripture allows a more serious description: known truth may be suppressed (Rom 1), conscience may be defiled/calloused, and a person may be enslaved to passions and pleasures (Titus 3:3) without constructing a new explicit sexual ethic before each act.
+
+Owen describes long-indulged lust as becoming familiar to mind and conscience, darkening mind, weakening convictions and obtaining habitual access to will/affections.
+
+**Safe:**
+> Человек может сохранять формальное знание «это грех» и при этом почти перестать practically deliberate about it: желание получило привычный проход, а сопротивление стало слабым, эпизодическим или почти отсутствующим.
+
+**Forbidden:** neurological claim «brain switched off» unless literal medical evidence exists.
+
+Puritan sources:
+- https://ccel.org/ccel/owen/mort/mort.i.ix.html
+- https://ccel.org/ccel/owen/mort/mort.i.xii.html
+
+---
+
+## AUD-20 — «Известному неверующему лицемеру нужно сказать: вообще не пой Богу, пока не спасёшься»
+**Verdict:** **NEEDS CONFESSIONAL REFORMULATION.**
+
+Psalm 50, Isaiah 1 and Amos 5 condemn hypocritical worship and religious form used while cherishing rebellion. But 1689 16.7 states that works of the unregenerate cannot please God as works of faith while neglect of commanded duties is even more sinful; 1689 22.3 says prayer is required of all people.
+
+**Safe:**
+> Не используй песню/молитву как прикрытие и доказательство, что у тебя всё хорошо с Богом. Бог отвергает лицемерную форму. Покайся, приди ко Христу и поклоняйся истинно.
+
+**Forbidden:** make silence itself the spiritual cure or imply God no longer commands the creature to worship/repent.
+
+Sources:
+- https://www.biblegateway.com/verse/en/Psalm%2050%3A16
+- https://biblehub.com/amos/5-23.htm
+- https://www.creeds.net/baptists/1689/kerkham/1689.htm
+
+---
+
+## AUD-21 — «Раз неверующий может присутствовать на проповеди, его нужно без ограничений пускать во все малые/молодёжные группы»
+**Verdict:** **NON SEQUITUR.**
+
+1 Cor 14:23–25 supports outsider presence at public assembly/hearing. It does not create entitlement to every confidential discipleship, youth, trip, private chat or influence context.
+
+Where concrete corrupting conduct is known (porn distribution, grooming, recruiting into secret sexualized chats, teaching deception, exploiting church dating access), leaders may prudentially restrict close-group access while keeping a path to public Word hearing and direct admonition.
+
+**Guard:** outsider restriction is not 1 Cor 5 excommunication fiction; it is shepherding/safeguarding prudence. Rumor alone is insufficient.
+
+**Safe:**
+> Слово оставлять открытым; развращающее влияние не оставлять бесконтрольным.
+
+---
+
+## AUD-22 — «Чтобы человек продолжал приходить, лучше пока не называть его известный грех»
+**Verdict:** **REJECT AS GENERAL PASTORAL STRATEGY.**
+
+Scripture repeatedly joins hearing with admonition/repentance. Baxter argues ministers must reprove and admonish those living offensively/impenitently and that neglect of discipline harms both offender and congregation.
+
+A person may leave when confronted; the goal is not to force departure, but neither may attendance be purchased by silence.
+
+**Safe:**
+> Evangelistic patience is compatible with moral clarity. The church should seek repentance, protect others, and refuse to let mere attendance function as tacit assurance.
+
+Source:
+https://www.preceptaustin.org/the-reformed-pastor-richard-baxter
+
+---
+
 # 3. Remaining adversarial targets
 
 1. long-term outcomes after parental discovery of pornography/double life;
@@ -191,16 +257,16 @@ Civil adulthood changes custodial authority; it does not abolish God’s moral l
 4. church youth counter-formation vs hidden subculture;
 5. adult-child household boundaries across cultures/jurisdictions if practical advice becomes concrete;
 6. markers of repentance vs temporary compliance without heart-reading;
-7. vulgar/sexual humor as status mechanism longitudinally;
-8. age/platform-specific exposure pathways;
-9. strongest counter-evidence against each A/B claim;
+7. strongest Scripture/Puritan treatment of deliberate hypocrisy without collapsing all struggling sinners into hypocrites;
+8. age/platform-specific exposure pathways where modern factual data are actually needed;
+9. strongest counter-evidence against each remaining A/B empirical claim and removal of low-value psych framing;
 10. publication-level source verification.
 
 ---
 
 # 4. Key sources in auditor phase
 
-Empirical:
+Empirical (secondary/supportive):
 - https://pubmed.ncbi.nlm.nih.gov/24037754/
 - https://www.sciencedirect.com/science/article/pii/S0273229723000370
 - https://eric.ed.gov/?id=EJ697108
@@ -208,26 +274,20 @@ Empirical:
 - https://pubmed.ncbi.nlm.nih.gov/19573902/
 - https://pubmed.ncbi.nlm.nih.gov/42529927/
 - https://pubmed.ncbi.nlm.nih.gov/42484288/
-- https://pubmed.ncbi.nlm.nih.gov/22149456/
-- https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.01231/full
-- https://www.sciencedirect.com/science/article/pii/S2352250X24000939
-- https://pmc.ncbi.nlm.nih.gov/articles/PMC11176966/
-- https://pubmed.ncbi.nlm.nih.gov/8625718/
-- https://pubmed.ncbi.nlm.nih.gov/39604620/
-- https://pubmed.ncbi.nlm.nih.gov/41693692/
 - https://pubmed.ncbi.nlm.nih.gov/42356013/
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC8799752/
-- https://pubmed.ncbi.nlm.nih.gov/40126561/
-- https://pubmed.ncbi.nlm.nih.gov/37880509/
-- https://pubmed.ncbi.nlm.nih.gov/42044011/
-- https://pubmed.ncbi.nlm.nih.gov/30148386/
 
-Theological/exegetical controls:
-- https://www.creeds.net/baptists/1689/original/1689bc19.html
+Primary theological/exegetical/Puritan controls:
+- https://www.creeds.net/baptists/1689/kerkham/1689.htm
 - https://www.esv.org/verses/1%2BCorinthians%2B5%3A9%E2%80%9313/
 - https://www.thegospelcoalition.org/themelios/article/exclusion-from-the-people-of-god-an-examination-of-pauls-use-of-the-old-testament-in-1-corinthians-5/
-- https://learn.ligonier.org/devotionals/discipline-of-the-church
 - https://biblehub.com/commentaries/1_corinthians/14-23.htm
 - https://biblehub.com/commentaries/calvin/1_corinthians/11.htm
-- https://biblehub.com/commentaries/hebrews/11-25.htm
-- https://www.biblegateway.com/passage/?search=Proverbs+9%3A17-18&version=NET
+- https://www.biblegateway.com/verse/en/Psalm%2050%3A16
+- https://biblehub.com/amos/5-23.htm
+- https://ccel.org/ccel/owen/mort/mort.i.ix.html
+- https://ccel.org/ccel/owen/mort/mort.i.xii.html
+- https://ccel.org/ccel/owen/mort/mort.i.xiv.html
+- https://ccel.org/ccel/watson/commandments/commandments.vi.ii.html
+- https://banneroftruth.org/us/store/christian-living/precious-remedies-against-satans-devices/
+- https://www.preceptaustin.org/the-reformed-pastor-richard-baxter
