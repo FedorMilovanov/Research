@@ -15,6 +15,12 @@
 
 Первоначальная неразумность или даже грех подростка не делает последующее вымогательство его виной.
 
+Также нельзя строить только бинарную модель:
+
+`добровольный sexting` vs `криминальный sextortion`.
+
+Между ними существует важная зона **романтического/peer coercion и cyber dating violence**: давление партнёра, угрозы, контроль, nonconsensual sharing и цифровое сексуальное принуждение. Эта зона требует собственной моральной дифференциации.
+
 ---
 
 ## 2. Масштаб финансового sextortion быстро вырос
@@ -157,6 +163,87 @@ is now technologically obsolete.
 
 ---
 
+## 7A. Coercive sexting and cyber dating violence: the missing middle category
+
+Not all harmful sexual-image situations begin with a stranger running a financial scam. A boyfriend, girlfriend, romantic interest or peer can also use digital communication for pressure, monitoring, threats, humiliation or nonconsensual redistribution.
+
+### 2025 systematic review/meta-analysis
+
+A systematic review and meta-analysis published in *Journal of Youth and Adolescence* included **49 studies** on cyber dating violence among youth/adolescents.
+
+It found significant relationships between cyber dating violence perpetration/victimization and multiple offline dating-violence factors, including physical, psychological, sexual, verbal/emotional and threat-related forms, as well as associations with depression, anxiety and other mental-health symptoms.
+
+Source:
+- https://pubmed.ncbi.nlm.nih.gov/39283366/
+
+### 2026 U.S. national adolescent study
+
+A 2026 *Journal of Adolescent Health* study used a national sample of **3,466 U.S. adolescents ages 13–17** to examine sexting and harms including **nonconsensual sharing** and **sextortion**, with particular attention to sexting outside current romantic relationships.
+
+Source:
+- https://pubmed.ncbi.nlm.nih.gov/41653178/
+
+### Earlier qualitative/systematic context
+
+Systematic reviews of adolescent sexting outcomes and lived experience show that sexting is not a morally or clinically uniform event. Context matters, including whether conduct is:
+
+- voluntary;
+- reciprocally consensual;
+- pressured;
+- coerced;
+- redistributed without consent;
+- connected to threats/abuse.
+
+Sources:
+- https://pubmed.ncbi.nlm.nih.gov/34454257/
+- https://pubmed.ncbi.nlm.nih.gov/37157169/
+- https://pubmed.ncbi.nlm.nih.gov/34791584/
+
+### Practical taxonomy for the future article
+
+Do not ask only:
+
+> «Did you send a photo?»
+
+Ask enough to distinguish:
+
+1. Was the image/message actually created by the child?
+2. Was sending voluntary, manipulated, pressured or coerced?
+3. Was consent specific to one recipient, and was it later redistributed?
+4. Are there threats, blackmail, stalking, location/password control or demands for more content?
+5. Is the other person a peer, romantic partner, adult, anonymous offender or group?
+6. Is anyone else currently at risk?
+
+This is a safeguarding fact-finding frame, not permission for graphic or repeated amateur forensic interrogation.
+
+### Moral distinction
+
+A teenager may have genuine responsibility for a voluntary sexual act and still be a victim of a second person’s later coercion or distribution.
+
+Likewise, being victimized in one part of a sequence does not require pretending that every earlier voluntary choice was morally neutral.
+
+> **Biblical truthfulness requires enough precision to say whose sin is whose.**
+
+### Evidence-policy state
+
+**Cyber dating violence systematic review/meta-analysis (PMID 39283366)**  
+- `evidenceClass`: `B1`  
+- `accessState`: `PARTIAL_OBJECT` (abstract/metadata verified; publication-time full-text extraction still required if exact effect sizes are retained)  
+- `locatorState`: `COARSE_LOCATOR_ONLY`  
+- `rightsState`: `PUBLICATION_ELIGIBLE` for ordinary paraphrase/citation subject to product policy  
+- `publicationState`: `REFERENCE`  
+- `holds`: `[LOCATOR_HOLD]` for exact numerical effect-size claims.
+
+**U.S. national sexting/nonconsensual-sharing/sextortion study (PMID 41653178)**  
+- `evidenceClass`: `B1`  
+- `accessState`: `PARTIAL_OBJECT`  
+- `locatorState`: `COARSE_LOCATOR_ONLY`  
+- `rightsState`: `PUBLICATION_ELIGIBLE` for ordinary paraphrase/citation subject to product policy  
+- `publicationState`: `REFERENCE`  
+- `holds`: `[LOCATOR_HOLD]` until exact prevalence/denominator tables are retrieved if numerical claims beyond sample size are retained.
+
+---
+
 ## 8. Sadistic online exploitation adds an even darker pathway
 
 NCMEC 2025 data recorded >3,000 reports concerning sadistic online exploitation, more than 125% increase over prior year (with reporting-system changes/enhanced industry reporting noted).
@@ -249,6 +336,14 @@ Also no, where real voluntary wrongdoing occurred.
 
 > protect the victim from the offender **and** later address the child’s own choices truthfully, without collapsing categories.
 
+For romantic/peer coercion add a third refusal:
+
+### False message C
+
+> «Он/она твой парень или девушка, значит давление внутри отношений — просто ваша личная проблема.»
+
+No. Romantic status does not convert coercion, threats, stalking, nonconsensual sharing or sexual pressure into consent.
+
 ---
 
 ## 13. Publication-ready claims
@@ -265,8 +360,11 @@ Also no, where real voluntary wrongdoing occurred.
 **Claim D:** child disclosure to parents may function protectively in sexting-risk contexts.  
 **Strength:** emerging observational evidence.
 
+**Claim E:** adolescent digital sexual harm includes a distinct coercive/relationship-violence layer, including pressure, nonconsensual sharing and cyber dating violence; it should not be collapsed into either fully voluntary sexting or stranger financial sextortion.  
+**Strength:** 49-study meta-analysis + 2026 national adolescent study + systematic review context; exact prevalence claims remain held pending table-level extraction.
+
 ---
 
 ## 14. Strong conclusion
 
-> **Сексуальный грех подростка может быть серьёзным; но шантажист всё равно остаётся шантажистом, а жертва — жертвой преступления. В момент sextortion родителю важнее сначала сохранить ребёнка живым, вывести его из изоляции и остановить преступное давление. Покаяние не требует путать вину; справедливость требует различать её точно.**
+> **Сексуальный грех подростка может быть серьёзным; но шантажист всё равно остаётся шантажистом, давящий партнёр — ответственным за своё давление, а жертва — жертвой чужого зла. В момент sextortion или coercive sexual abuse родителю важнее сначала сохранить ребёнка в безопасности, вывести его из изоляции и остановить давление. Покаяние не требует путать вину; справедливость требует различать её точно.**
