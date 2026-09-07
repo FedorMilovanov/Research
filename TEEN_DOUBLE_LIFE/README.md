@@ -39,6 +39,20 @@
 
 > **Attendance ≠ membership ≠ Lord’s Supper ≠ leadership. Церковь не должна подтверждать упорного professing sinner как брата в добром состоянии, но excommunication не равна универсальному запрету услышать публичную проповедь.**
 
+> **Публичное слышание Слова и unrestricted close fellowship — не одно и то же. Известное развращающее влияние можно и иногда нужно ограничивать в youth/small-group среде, продолжая призывать человека слушать Слово и каяться.**
+
+> **Нам нужна не статья, где Библия украшает психологический отчёт стихами, а библейское исследование сердца, где эмпирические данные помогают прежде всего измерять современные обстоятельства, масштабы и технические механизмы.**
+
+---
+
+## Method priority
+
+1. **Scripture** — moral anthropology, sin, conscience, worship, repentance, church/parental duty.
+2. **1689 LBCF** — confessional synthesis/guards.
+3. **Puritan practical theology** — Owen, Watson, Brooks, Baxter as subordinate pastoral/exegetical aids.
+4. **Conservative biblical counseling** — selective application checked against Scripture.
+5. **Empirical/public-health research** — prevalence, digital pathways, platform mechanics, sleep, safeguarding, specific behavioural associations; never the authority defining sin/regeneration/repentance/worship.
+
 ---
 
 ## Module map
@@ -81,6 +95,10 @@
 - `35` — church discipline: attendance, membership, Table, unrepentant sin.
 - `36` — change/recovery, repentance fruit, relapse, professional help.
 - `37` — fleeting pleasure, “stolen waters,” narrow way, flesh and delayed cost.
+- `38` — unrepentant hypocrisy, unacceptable religious facade, admonition and differentiated youth/small-group access.
+- `39` — passions, habitual lust, callous conscience and living with little/no inner moral debate; Owen-centered correction of over-psychologized language.
+- `40` — Puritan/biblical-counseling framework: Scripture → 1689 → Owen/Watson/Brooks/Baxter → limited empirical support.
+- `41` — pastoral response matrix: outsider/seeker vs corrupting influence vs struggling believer vs settled professing hypocrite; public gathering vs small group vs youth vs ministry platform.
 
 Full filenames are numbered under `TEEN_DOUBLE_LIFE/` and intentionally sortable.
 
@@ -115,20 +133,27 @@ Full filenames are numbered under `TEEN_DOUBLE_LIFE/` and intentionally sortable
 25. “Hidden persona feels more real” is a phenomenological/identity-entrenchment hypothesis, not scientific proof of a person’s metaphysical “true self.”
 26. The biblical “flesh” is not identical with body/sexuality, and Spirit-enabled mortification must not be reduced to generic self-control psychology.
 27. Sin may provide real short-term pleasure; its temporary reward does not negate its guilt/destructive end.
+28. `Knows it is wrong` does not imply active inner debate at every episode; habitual lust may coexist with retained doctrinal knowledge and greatly reduced practical resistance.
+29. Do not equate biblical hardening/callousness with a neurological “brain switched off” claim.
+30. Do not teach unregenerate people that cessation of prayer/song is the cure. 1689 16.7/22 requires a more precise call: outward duty cannot make rebellion acceptable; repent and worship truly.
+31. Public hearing of the Word does not create an automatic entitlement to every confidential/small-group/youth/ministry context.
+32. Restrictions on an outsider for concrete corrupting/safeguarding risk are prudential shepherding, not a fiction that the outsider is already a church member under 1 Cor 5 discipline.
+33. A known struggling/confessing sinner must not be collapsed into the same category as one who defends, recruits others into, and refuses correction regarding sin.
+34. Rumor/suspicion is insufficient for punitive exclusion; facts, conversation, due process and safeguarding distinctions matter.
 
 ---
 
 ## Remaining high-value gates
 
 - mother/father differences after discovery and in rebuilding trust;
-- stronger longitudinal evidence on vulgarity/sexual humor as status signal;
 - Christian youth groups: positive counter-formation vs hidden church subculture;
 - age/device/platform-specific pornography exposure pathways by country;
 - long-term outcomes after parental discovery and different response patterns;
 - adolescent-specific accountability/recovery evidence rather than adult PPU extrapolation;
-- adult-child household boundary literature and jurisdiction-specific legal checks if concrete housing advice is ever published;
 - sharpen criteria distinguishing struggling repentance from settled impenitence without pretending infallible heart-reading;
-- adversarial pass over every `A/B` empirical claim;
+- deepen Puritan primary-source lane: Brooks on temptation/occasions/company, Owen on indwelling sin/mortification, Watson on repentance, Baxter on pastoral discipline;
+- build a Scripture-first pastoral flow for parent + pastor after discovery;
+- adversarial pass over every `A/B` empirical claim and downgrade/remove psychology that adds little;
 - final source/exegesis verification before publication architecture.
 
 ---
