@@ -47,18 +47,30 @@ Calvin focuses less on demographic proof and more on the householder’s duty: L
 
 ### Direct
 
-- salvation promise is announced to jailer and household in relation to faith;
-- Word of the Lord is spoken to him and **all in his house**;
-- he and all his are baptized;
-- the household rejoices in connection with belief.
+- the command to believe is addressed to the jailer, with salvation announced in household horizon (`you and your household`);
+- the Word of the Lord is spoken to him and **all in his house**;
+- he and all his household are baptized;
+- v.34 says that he rejoiced `πανοικεὶ` — with his whole household — after `πεπιστευκὼς τῷ θεῷ`.
+
+### Greek precision guard
+
+`πεπιστευκὼς` is a **nominative masculine singular** participle and therefore grammatically predicates `having believed` directly of the jailer. `πανοικεὶ` is an adverb meaning `with the whole household`; translations and interpreters vary over how tightly it scopes the household into the believing clause rather than the rejoicing clause.
+
+Therefore the direct narrative data are strong but should not be overstated:
+
+`WORD SPOKEN TO ALL IN HOUSE -> HOUSEHOLD BAPTISM -> HOUSEHOLD REJOICING AROUND THE JAILER'S BELIEF`.
+
+The verse does **not** grammatically require the sentence:
+
+> `Luke explicitly says every individual household member personally believed.`
 
 ### Baptist strength
 
-There is positive narrative linkage among hearing, faith and baptism across the household. This is more favorable to credobaptism than an argument from mere silence.
+There is still positive narrative linkage among household hearing, household baptism, household rejoicing, and the jailer’s explicit faith. This is more favorable to a credobaptist cumulative argument than an inference from mere silence, but it is not an age census or an explicit statement of individual faith for every member.
 
 ### Remaining guard
 
-Do not claim Luke supplies an age census. The text’s theological focus is household reception of the gospel.
+Do not claim Luke supplies an age census. The text’s theological focus is household reception of the gospel around the jailer’s conversion.
 
 ## 4. Stephanas — 1 Cor 1:16; 16:15–18
 
@@ -118,7 +130,7 @@ The correct distinction is not Christian order vs personal freedom; it is lawful
 
 Recommended:
 
-> **Новозаветные “домашние крещения” показывают, насколько семейно-домашним было распространение Евангелия, но сами по себе не сообщают возраст каждого члена дома. В отдельных рассказах — особенно о темничном страже и доме Стефана — Лука и Павел связывают дом также со слышанием, верой и служением. Поэтому эти тексты разумнее использовать как часть совокупного спора о крещении, а не как фотографию младенца в купели или доказательство его отсутствия.**
+> **Новозаветные “домашние крещения” показывают, насколько семейно-домашним было распространение Евангелия, но сами по себе не сообщают возраст каждого члена дома. В рассказе о темничном страже Слово обращено ко всем в доме, дом крестится и вместе радуется после явно названной веры самого стража; грамматика 16:34 не требует утверждения, что Лука отдельно предицирует личную веру каждому члену дома. Дом Стефана позднее прямо связан с деятельным служением святым. Поэтому эти тексты разумнее использовать как часть совокупного спора о крещении, а не как фотографию младенца в купели или доказательство его отсутствия.**
 
 ## 8. Verdict
 
@@ -126,6 +138,10 @@ Recommended:
 
 `INFANT PRESENCE = NOT ESTABLISHED`.
 
-`PERSONAL HEARING/FAITH DATA IN JAILER + STEPHANAS = CREDOBAPTIST-WEIGHTED`.
+`JAILER HOUSEHOLD HEARING + BAPTISM + REJOICING = DIRECT`.
+
+`JAILER EXPLICIT PERSONAL FAITH OF EVERY HOUSEHOLD MEMBER = NOT GRAMMATICALLY ESTABLISHED`.
+
+`STEPHANAS LATER HOUSEHOLD SERVICE = CREDOBAPTIST-WEIGHTED`.
 
 `HOUSEHOLD GOVERNMENT APPLICATION = STRONG FOR SERIES`.
