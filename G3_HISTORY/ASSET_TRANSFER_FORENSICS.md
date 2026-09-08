@@ -88,11 +88,30 @@ Therefore:
 
 is an invalid inference.
 
-## 4. Living Heritage hypothesis
+## 4. Living Heritage — separation is primary-verified; 2026 transferee identity is not
 
-Living Heritage currently offers access in which Premium membership includes G3+ access/content. This is a real commercial/access continuity signal.
+A controlled exact-head acquisition of the official FY2025 IRS e-file object materially upgrades one narrow point.
 
-It does **not**, standing alone, prove that Living Heritage acquired:
+Raw object:
+
+- IRS object `202641339349303874`;
+- source member `202641339349303874_public.xml`;
+- raw XML SHA-256 `48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2`.
+
+Exact-head workflow run `34233453690` on Research head `1f75d2b831666128ccff025fc9f5a93c8a6dfd53` searched all **401** Form 990 leaves for `Living`, `Heritage`, `Homeschool` and `separat`. It returned exactly **one** matching leaf:
+
+`IRS990/Desc`.
+
+That filed narrative states that during 2025 G3 separated **Living Heritage Homeschool as an independent entity from G3 Ministries**. The same narrative also describes 2025 G3 Press publishing, continued G3 Plus operation, leadership transition and other program changes.
+
+### What is now VERIFIED_PRIMARY
+
+- G3's FY2025 filed narrative says Living Heritage Homeschool was separated as an independent entity from G3 Ministries during 2025.
+- Cause IQ's similar wording is therefore a derivative rendering/cross-check of the filing, not a new independent evidence family.
+
+### What remains UNVERIFIED
+
+Living Heritage currently offers access in which Premium membership includes G3+ access/content. That later commercial/access continuity does **not** establish that Living Heritage subsequently acquired:
 
 - G3+ as an asset;
 - G3 Press;
@@ -103,6 +122,8 @@ It does **not**, standing alone, prove that Living Heritage acquired:
 - G3 Press inventory;
 - author publishing rights;
 - G3 corporate liabilities.
+
+The 2025 separation fact and the 2026 G3+ bundling are compatible with multiple legal/technical arrangements. They cannot be collapsed into the proposition `Living Heritage = the unnamed successor ministry`.
 
 Until a recipient-side primary object names the acquisition or the platform/merchant legal identity changes to a named successor, `Living Heritage acquired G3+` remains a hypothesis rather than a finding.
 
@@ -147,7 +168,8 @@ Likewise, a live store, live streaming application and active corporate registra
 | G3 publicly/through subscriber communication contemplated transition of G3+ to another ministry | **PARTIALLY_VERIFIED / reported** | subscriber-reporting family; primary named recipient absent |
 | A specific named ministry has been proved to be the G3+ transferee | **UNVERIFIED** | no primary recipient/transaction object |
 | G3 Press definitely transferred with G3+ | **UNVERIFIED** | secondary reporting only; no agreement/recipient announcement |
-| Living Heritage acquired G3+ | **UNVERIFIED** | access continuity is not title evidence |
+| FY2025 G3 filing says Living Heritage Homeschool was separated as an independent entity from G3 | **VERIFIED_PRIMARY** | raw FY2025 `IRS990/Desc`, exact IRS object/SHA acquired |
+| Living Heritage acquired G3+ in the 2026 wind-down | **UNVERIFIED** | 2025 separation + later access bundling are not assignment/title evidence |
 | App-store seller identity remained G3 on Sep. 8 | **VERIFIED_PRIMARY as platform state** | Apple/Google current listings |
 | G3 Press storefront remained live on Sep. 8 | **VERIFIED_PRIMARY as website state** | direct storefront observation |
 | G3+ web app remained reachable on Sep. 8 | **VERIFIED_PRIMARY as website state** | direct web-app observation |
@@ -172,12 +194,13 @@ The next useful evidence must be one or more of:
 
 Until one of those gates closes, the article-safe statement is:
 
-> G3 announced an operational wind-down while G3+ and G3 Press remained publicly reachable. Reporting indicated that another ministry was expected to take over G3+ and possibly G3 Press, but the acquiring ministry and transaction terms had not been established by a primary public record as of Sep. 8, 2026. App-store seller metadata still displayed G3, which documents platform state but does not prove that a private transfer did or did not close.
+> G3 announced an operational wind-down while G3+ and G3 Press remained publicly reachable. G3's FY2025 tax filing separately states that Living Heritage Homeschool had been separated as an independent entity during 2025. Reporting later indicated that another ministry was expected to take over G3+ and possibly G3 Press, but the acquiring ministry and transaction terms had not been established by a primary public record as of Sep. 8, 2026. Current Living Heritage bundling and app-store seller metadata document service/platform state; neither establishes the 2026 transferee by itself.
 
 ## 9. Evidence-family reconciliation
 
 This dossier reconciles, rather than duplicates, the existing canonical families:
 
+- `G3-S002` — raw IRS filing family, now including the FY2025 Living Heritage separation narrative;
 - `G3-S019` — transfer discovery/subscriber-reporting family;
 - `G3-S032` / `G3-S050` — Google Play platform identity family;
 - `G3-S033` — Apple platform identity family;
@@ -186,4 +209,6 @@ This dossier reconciles, rather than duplicates, the existing canonical families
 - `G3-C030` — named-successor claim;
 - `G3-C056`–`G3-C060` — platform/live-state guardrails.
 
-`EVIDENCE_BATCH_2026-09-08_PASS18.md` remains the dated acquisition/reconciliation record; this file is the canonical analytical surface for Q006.
+Cause IQ's Living Heritage wording is derivative of the FY2025 filing and must not be counted as independent corroboration of the same separation fact.
+
+`EVIDENCE_BATCH_2026-09-08_PASS18.md` remains a dated acquisition/reconciliation record; this file is the canonical analytical surface for Q006.
