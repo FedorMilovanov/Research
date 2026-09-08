@@ -88,11 +88,22 @@ This documents **archive-search exhaustion for that exact path/window**. It does
 
 ### Q004 — When and why did Tom Buck, Jonathan Frazier, Chip Thornton, Adam Burrell and others leave the G3 board?
 
-**Progress:** raw FY2024 Part VII directly identifies Buck, Thornton, Braswell, Burrell, Broome and Frazier as directors, with Joshua Buice as president/director. Raw FY2025 Part VII contains dated/transition-style role labels for Scott Aniol, Joshua Buice, Jonathan Frazier, Jon Norton, Buck Braswell, Matt Broome, Tom Buck, Chip Thornton and Adam Burrell, while the filing reports only **4 voting governing-body members, all 4 independent**. Thus Part VII is a reportable-person/role-history list, not a simple four- or nine-person snapshot.
+**Status:** `OPEN / MATERIALLY NARROWED / KNOWN OFFICIAL ARCHIVE ROUTES EXHAUSTED`.
+
+Raw FY2024 Part VII directly identifies Buck, Thornton, Braswell, Burrell, Broome and Frazier as directors, with Joshua Buice as president/director. Raw FY2025 Part VII contains dated/transition-style role labels for Scott Aniol, Joshua Buice, Jonathan Frazier, Jon Norton, Buck Braswell, Matt Broome, Tom Buck, Chip Thornton and Adam Burrell, while the filing reports only **4 voting governing-body members, all 4 independent**. Thus Part VII is a reportable-person/role-history list, not a simple four- or nine-person snapshot.
 
 Contemporaneous evidence keeps Tom Buck on the board at the May 12, 2025 Buice-crisis decision point. Current B1 testimony places his exit after May 12 and before Aniol’s official presidency effective July 9, 2025.
 
-**Needed:** board minutes, resignation instruments, archived transition pages or first-person statements establishing exact departure dates and reasons. In particular, do not infer motives from later conflict narratives.
+Two identified official historical roster paths have now been independently tested for **2025-05-01 through 2025-07-20**:
+
+- `/about/who-we-are/` — successful bounded run `34228201641`: May, June and Jul. 1–20 each `VALID_EMPTY_CDX`;
+- `/vision/leadership/` — successful exact-head run `34232494274` on `ddaddeb8ac03892660dfb017ec9946b9379e33d5`: May, June and Jul. 1–20 each `VALID_EMPTY_CDX`, combined `VALID_EMPTY_ALL_LEGACY_SEGMENTS`.
+
+Later retries of the legacy path encountered Archive.org HTTP 503 / TLS timeout transport failures. Those failures do not negate the successful acquisition and are not historical evidence.
+
+**Search-route closure:** both known official roster-page paths are exhausted for this window. Do not repeat them absent evidence of a different historical URL or a material archive-state change.
+
+**Needed:** board minutes, resignation instruments, first-person resignation statements, appointment records, authenticated internal communications, or another newly identified primary surface establishing exact departure/start dates and reasons. In particular, do not infer motives from later conflict narratives.
 
 ### Q005 — Was G3 legally dissolved in Georgia or merely operationally wound down?
 
@@ -112,17 +123,23 @@ The Georgia Secretary of State official Business Search result for control no. `
 
 ### Q006 — What happened to G3 Press, G3+, trademarks, subscriber relationships and other IP/assets?
 
-**Status:** `OPEN / EVIDENCE_HOLD`.
+**Status:** `OPEN / LIVING HERITAGE 2025 SEPARATION CLOSED / 2026 TRANSFEREE EVIDENCE_HOLD`.
 
 Subscriber reporting supports that G3+ was to be acquired/transitioned to an unnamed `another ministry`; secondary reporting says the same unnamed ministry may receive/acquire G3 Press. No primary source currently names the transferee or supplies transaction terms.
 
 Fresh Sep. 8 searches still do not surface a recipient-side announcement naming the acquirer. The most current reporting continues to describe `another`, as-yet-unnamed ministry. This is a negative search result, not proof that no transfer closed privately.
 
-Current platform evidence shows G3-branded/storefront continuity and Treefort technical-platform involvement, but platform seller/developer metadata cannot establish beneficial ownership, asset-transfer completion, consideration or transaction counterparties. Living Heritage currently offers access that includes G3+ and has historic institutional ties to G3; its own May 17, 2026 privacy policy separately described G3 Ministries as the operator of G3+ while Living Heritage was a separate curriculum publisher. That pre-crisis separation plus current bundling supports a supplier/access relationship, **not proof that Living Heritage acquired G3+ or G3 Press**.
+One related institutional fact is now **VERIFIED_PRIMARY** from the raw FY2025 IRS filing rather than merely inferred from policy/derivative pages. Exact-head workflow run `34233453690` on Research head `1f75d2b831666128ccff025fc9f5a93c8a6dfd53` acquired the unchanged FY2025 IRS object `202641339349303874` (raw XML SHA-256 `48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2`) and searched all **401** Form 990 leaves. Exactly one matching `IRS990/Desc` leaf states that in 2025 G3 **separated Living Heritage Homeschool as an independent entity from G3 Ministries**.
+
+Cause IQ’s similar wording is therefore derivative of the same filing and must not be counted as independent corroboration.
+
+Current platform evidence shows G3-branded/storefront continuity and G3 developer/support identity. Living Heritage currently offers access that includes G3+, while the live G3 Press storefront remains G3-branded and linked to G3 Ministries/G3 Plus. These facts document commercial/service/platform continuity; they do **not** establish beneficial ownership, asset-transfer completion, consideration or transaction counterparties.
+
+The 2025 Living Heritage separation and later G3+ bundling cannot be collapsed into `Living Heritage = Ministry X`. No recipient-side primary object currently establishes that Living Heritage acquired G3+, G3 Press, subscriber contracts, domains, app-store accounts, trademarks, inventory or publishing rights in 2026.
 
 The FY2024/FY2025 Schedule L records do **not** identify a Living Heritage/G3+ transfer; they disclose the salary transaction described in Q001. Do not use Schedule L as circumstantial proof of the asset-transfer theory.
 
-**Needed:** primary subscriber notice, board/corporate announcement, recipient-ministry announcement, transfer agreement, exact asset schedule, consideration/value, conflicts/recusals and closing date. Keep title-level author-rights reversions separate from platform/catalog ownership.
+**Needed:** primary subscriber notice, board/corporate announcement, recipient-ministry announcement, transfer/assignment agreement, exact asset schedule, consideration/value, conflicts/recusals and closing date. Keep title-level author-rights reversions separate from platform/catalog ownership.
 
 ### Q006A — What happened to the donated FY2022 real estate and the FY2023 note/receivable?
 
@@ -235,9 +252,9 @@ Compare board structure, policies, reporting mechanisms, conflict separation and
 
 The evidence layers visibly conflict in useful ways:
 
-- direct `https://g3min.org/` returned HTTP 503 on the controlled Sep. 7 observation;
-- older crawled/indexed deep pages still exposed pre-shutdown event/product links;
-- app-store surfaces retained G3 developer/seller metadata;
+- direct `https://g3min.org/` returned HTTP 503 on controlled Sep. 7 and Sep. 8 observations;
+- older/current crawled/indexed deep pages can still expose pre-shutdown event/product links and even cancelled future-event promotion;
+- app-store surfaces retain G3 developer/seller metadata while displayed update-date fields have conflicted across captures;
 - Pray’s Mill’s Sep. 7 leaders-page capture still listed resigned leaders and stale institutional bios.
 
 These are evidence of **stale or lagging digital state**, not proof that resignations, shutdown or institutional changes were reversed.
