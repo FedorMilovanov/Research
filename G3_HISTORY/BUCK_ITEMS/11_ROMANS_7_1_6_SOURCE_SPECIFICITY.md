@@ -4,7 +4,7 @@
 **Dossier item:** sermon 11 of 17  
 **Buck sermon:** Tom Buck, `Romans 7:1–6`, 2024-01-07  
 **Claimed comparator:** R. Kent Hughes, *Romans: Righteousness from Heaven*, pp. 137–146  
-**Current verdict:** `SERMON_IDENTITY_VERIFIED / STRONG PRE-BUCK SOURCE-SEQUENCE ANCHOR / TEXT-DRIVEN ANALOGY SEPARATED / AUDIO_BOOK_HOLD`
+**Current verdict:** `SERMON_IDENTITY_VERIFIED / ORIGINAL_MEDIA_MACHINE_CONFIRMS_DISSOLVED-RELATIONSHIP_AND_ANTITHESIS_BLOCKS / TEXT-DRIVEN_ANALOGY_SEPARATED / HUMAN_AUDIO_EXACT_BOOK_WIDER_ATTRIBUTION_HOLD`
 
 ## 1. Sermon identity and accusation object
 
@@ -23,91 +23,44 @@ Primary accusation object:
 
 Romans 7:1–4 itself states that the married woman is bound while the husband lives and freed by death, then applies death-language to the believer's relation to the Law and union with Christ.
 
-Independent Romans exposition routinely makes this connection. Therefore:
-
-- `death dissolves marriage`
-- `the believer died to the Law`
-- `the believer now belongs to Christ`
-
-are not literary fingerprints by themselves.
+Independent Romans exposition routinely makes this connection. Therefore `death dissolves marriage`, `the believer died to the Law`, and `the believer now belongs to Christ` are not literary fingerprints by themselves.
 
 **Working grade:** `C` for the basic analogy/propositions.
 
 ## 3. Strong pre-Buck anchor for the Hughes-like wording
 
-A Romans lesson published in 2020 contains, in immediate sequence:
+A Romans lesson published in 2020 contains, in immediate sequence, the marriage-to-Law relationship being dissolved by identification with Christ's death, then despair/joy, bondage/freedom, death/life and Law/Christ antitheses. This substantially matches the source-side text shown in the accusation dossier and predates Buck's 2024 sermon by years.
 
-- `our marriage to [the Law] has been dissolved by our identification with the death of Christ`;
-- as a result we are married to Christ and the Law has no claims on us;
-- `Instead of despair, there is joy!`
-- `Instead of bondage, there is freedom!`
-- `Instead of death there is life!`
-- `We no longer belong to the Law but to Christ.`
+It strongly establishes that the rhetoric was circulating before Buck. It does not yet prove which exact text Buck used: Hughes directly, a Hughes-derived study/sermon, or another shared downstream source.
 
-This sequence substantially matches the source-side text shown in the accusation dossier and predates Buck's 2024 sermon by years.
+## 4. Original FBC media confirms the two source-specific Buck blocks
 
-A separate 2023 church order-of-service document also reproduces substantially the same `marriage dissolved` and three-antithesis sequence before Buck's sermon.
+Exact-head acquisition run `34262005804`, job `acquire (11)`, ephemerally acquired two bounded windows from the official FBC sermon page and deleted all audio before artifact upload.
 
-### What this does and does not prove
+Custody:
 
-It strongly establishes that the rhetoric was **circulating before Buck** and that the dossier did not invent the source-side sequence after the fact.
+- official FBC page: `https://fbclindale.com/resources/sermons/romans-71-6/`;
+- expected Vimeo ID: `900633606`;
+- `16:30–19:35` SHA-256: `f687a171bd039d090f0a08a56d5294f77f585cc3bc75fcc72cb7fbdd46a7f56e`;
+- `31:50–33:10` SHA-256: `f09ad601f40d6da795245bdb8c550fa771cc78c4c5beefeaf0aa4f7b3c45d573`;
+- artifact digest: `sha256:b91e404bc0c250f329986dcc3d05bc3d108e0f49803df82d2b83f2a8e0dad36c`;
+- audio retained: `false`;
+- transcripts: `MACHINE_TRANSCRIPT_ONLY`.
 
-It does not yet prove which exact text Buck used:
+The first original-media window hears Buck twice say in substance that the believer's **relationship with the Law has been dissolved by union with Christ in his death and resurrection**. That is materially more specific than merely explaining Romans 7's death/marriage analogy.
 
-- Hughes directly;
-- a study/sermon derived from Hughes;
-- another shared downstream source.
+The second window hears, in immediate sequence, `despair → joy`, `death → life`, `no longer bound by the Law`, and marriage/belonging to Christ. This independently confirms the dossier's important structural observation while showing that Buck does not reproduce every member of the longer source-side sequence.
 
-The item is therefore better framed as a **source-family/dependence question** than a claim that every individual theological idea belongs uniquely to Hughes.
+## 5. First row remains low-specificity
 
-## 4. `marriage dissolved by identification with Christ's death`
+The original-media window also confirms Buck discusses Jewish/Roman law, marriage as lifetime obligation and death releasing the wife. That verifies the dossier transcript at factual level but does not make the row source-specific: it is historical/background exposition tied directly to Paul's analogy.
 
-This wording is more specific than the underlying Romans 7 doctrine. The pre-Buck 2020 lesson reproduces it essentially verbatim.
+## 6. Attribution boundary
 
-If Buck original audio matches the dossier and attribution is absent, this is a serious `B` candidate for unattributed dependence on the Hughes-derived source tradition.
+The acquired windows do not machine-detect `Hughes` or explicit attribution for these blocks. This is only a bounded observation. Do **not** publish `Buck did not cite Hughes` until wider original-media context is human-checked, because attribution could appear before/after the windows or be missed by STT.
 
-**Working grade:** `U → likely B if audio verifies`.
+`BOUNDED_WINDOWS_NO_MACHINE_DETECTED_HUGHES_ATTRIBUTION / WIDER_CONTEXT_HOLD`.
 
-## 5. Three-part antithetical sequence
+## Current verdict
 
-The dossier source side reads in substance:
-
-- despair → joy;
-- bondage → freedom;
-- death → life;
-- no longer Law → Christ.
-
-Buck is alleged to reproduce the same structure while omitting only the middle bondage/freedom member.
-
-The exact multi-part rhetorical construction is much more probative than the doctrine that believers are free from condemnation of the Law.
-
-Because the full sequence is independently documented pre-Buck, this is another strong source-dependence candidate if original audio confirms it.
-
-**Working grade:** `U → likely B`, with possible higher weight only after exact book/audio comparison.
-
-## 6. First row: Roman/Jewish marital law
-
-The statement that both Roman and Jewish legal settings generally bound the married woman while her husband lived is historical/background exposition. It can contribute cumulatively if wording/order follows Hughes, but is substantially less source-specific than the rhetorical block above.
-
-**Working grade:** `C → possible B in cumulative sequence`.
-
-## 7. Methodological result
-
-Item 11 illustrates a useful distinction:
-
-- **text-driven analogy** = weak literary evidence;
-- **close rhetorical wording and ordered antitheses** = materially stronger;
-- **pre-Buck downstream copies** can prove a source-family existed before Buck even when the exact proximate source remains unresolved.
-
-This matters for the future article because `Buck copied Hughes` may sometimes need the more precise formulation `Buck appears to have used language from a Hughes-derived commentary/teaching tradition` until exact source custody closes.
-
-## 8. Remaining gates
-
-1. Acquire original Buck audio/video for 2024-01-07.
-2. Human-check dossier timestamps ~17:02, ~19:00 and ~32:23.
-3. Acquire exact Hughes pp. 137–146.
-4. Determine whether the 2020/2023 downstream materials explicitly cite Hughes or themselves derive from another intermediate source.
-5. Check Buck's immediate attribution context.
-6. Grade the two rhetorical blocks separately from the generic marriage analogy.
-
-`SERMON_IDENTITY_VERIFIED / STRONG PRE-BUCK RHETORICAL-SOURCE FAMILY / GENERIC ROMANS-7 ANALOGY DOWNGRADED / ORIGINAL_AUDIO_AND_EXACT_HUGHES_OBJECT_HOLD`.
+`SERMON_IDENTITY_VERIFIED / ORIGINAL_MEDIA_MACHINE_CONFIRMS_DISSOLVED-RELATIONSHIP_AND_ANTITHESIS_BLOCKS / STRONG_PRE-BUCK_SOURCE_FAMILY / GENERIC_ROMANS7_ANALOGY_DOWNGRADED / HUMAN_AUDIO_EXACT_HUGHES_WIDER_ATTRIBUTION_HOLD / ITEM_VERIFIED_FALSE`.
