@@ -30,11 +30,16 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          ffmpeg -version | head -n 1
+
       - name: Install read-only acquisition dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install --upgrade yt-dlp openai-whisper
-          ffmpeg -version | head -n 1
 
       - name: Acquire public Vimeo metadata and ephemeral audio segment
         run: |
