@@ -1,299 +1,215 @@
 # G3 HISTORY — open questions / proof-closure backlog
 
-**Status:** ACTIVE / FAIL-CLOSED  
-The goal is not metaphysical “100% knowledge.” The achievable target is **proof-complete reconstruction against an explicit claim set**, with every remaining uncertainty named rather than hidden.
+**Status:** ACTIVE / FAIL-CLOSED / ROUTE-RECONCILED  
+**Cutoff:** 2026-09-08  
+**Canonical evidence batches:** PASS22–PASS23.
 
-## P0 — blocks major conclusions
+The target is not metaphysical “100% knowledge.” It is **proof-complete reconstruction against an explicit claim set**. A question is closed when the requested fact is primary-verified/refuted, or when the current public route is demonstrably exhausted/access-controlled and the remaining uncertainty is explicitly named.
 
-### Q001 — What exactly appears in Schedule L for FY2024 and FY2025?
+Detailed evidence belongs in the specialized canonical files; this file is the current backlog/state machine rather than a duplicate narrative dossier.
 
-**Status:** `CLOSED / VERIFIED_PRIMARY` for the filed transaction rows; **misconduct inference remains prohibited**.
+## P0 — major factual conclusions
 
-Exact IRS raw e-file objects were acquired on exact Research head `8a5fedc6a60965d27c472a2a6643fb4e9b1dfe08` by workflow run `34208135511`:
+### Q001 — FY2024/FY2025 Schedule L
 
-- FY2024 object `202541359349304489`, raw XML SHA-256 `c14f511cf66051b916748440594586b4db1ecdb0d07ab14ef05e01e92524aca3`;
-- FY2025 object `202641339349303874`, raw XML SHA-256 `48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2`.
+**State:** `CLOSED / VERIFIED_PRIMARY`.
 
-Each return contains one `IRS990ScheduleL` business-transaction record involving an interested person.
+Raw IRS objects directly disclose salary paid to `KARIS L BUICE`, relationship `Daughter of Board Member`, $30,409 in FY2024 and $31,880 in FY2025. The filings do not establish fraud, self-dealing or excess benefit and do not name the parent.
 
-| Filing | Interested person as filed | Relationship as filed | Transaction | Amount | Revenue sharing |
-|---|---|---|---|---:|---|
-| FY2024 | `KARIS L BUICE` | `Daughter of Board Member` | `SALARY` | **$30,409** | `false` |
-| FY2025 | `KARIS L BUICE` | `Daughter of Board Member` | `SALARY` | **$31,880** | `false` |
+### Q002 — FY2023 expense reversal
 
-Both Form 990 objects report `EngagedInExcessBenefitTransInd=false`, `BusinessRlnWithFamMemInd=true`, a conflict-of-interest policy, annual disclosure, regular monitoring/enforcement and a compensation-review process. Schedule O says board members discuss potential conflicts and that independent board members determine officer salaries according to market rates and standards.
+**State:** `CLOSED / VERIFIED_PRIMARY AT PART IX CATEGORY LEVEL`.
 
-**Allowed conclusion:** G3 disclosed salary paid to a person identified in the filing as the daughter of a board member. The amount and relationship are now primary filing facts.
+Raw FY2022→FY2023 Part IX reconciles the +$1,061,800 increase principally to conferences/meetings (+$817,283) and advertising (+$246,511), with occupancy falling materially. Filing classification is self-reported accounting evidence, not an audit of prudence/vendor pricing.
 
-**Not allowed:** converting Schedule L disclosure into `self-dealing`, `fraud`, `embezzlement`, `private enrichment` or an excess-benefit finding. The filing itself marks the excess-benefit indicator false. Also, Schedule L says only `Daughter of Board Member`; do not infer the specific parent from surname alone without separate evidence.
+### Q003 — exact board immediately before the Aug. 2026 crisis
 
-### Q002 — What caused the FY2023 expense jump from ~$1.010m to ~$2.072m?
+**State:** `PARTIAL CLOSURE / JULY-21 PRIMARY VERIFIED / CRISIS-DAY DOCUMENT_HOLD`.
 
-**Status:** `CLOSED / VERIFIED_PRIMARY` at the Form 990 Part IX category-delta level.
+Official G3 `Who We Are` capture `20260721102641` lists Buck Braswell, Matt Broome, Jon Norton, Matt Sikes, Dylan Joyner and Ron Mooney as Board of Directors.
 
-The exact FY2023 raw IRS object `202411429349300611` and the amended FY2022 comparator were acquired. Both filings classified **100% of functional expenses as program services**, with management/general and fundraising reported as zero.
+Exact-head run `34270062889` queried that official path for 2026-07-21 through 2026-08-31 and returned only the July 21 capture. The target-page Wayback route is therefore exhausted for that window. Archive absence is not continuity evidence.
 
-Exact row reconstruction:
+**New evidence required:** a different dated primary surface, minutes, resignation/appointment record or participant/corporate record after July 21.
 
-| Part IX category | FY2022 | FY2023 | Delta |
-|---|---:|---:|---:|
-| Conferences / meetings | $436,274 | $1,253,557 | **+$817,283** |
-| Advertising | $61,063 | $307,574 | **+$246,511** |
-| Other salaries / wages | $289,120 | $292,784 | +$3,664 |
-| Accounting | $5,400 | $8,995 | +$3,595 |
-| Office | $52,793 | $57,252 | +$4,459 |
-| Occupancy | $109,578 | $6,627 | **−$102,951** |
-| Travel | $12,047 | $25,636 | +$13,589 |
-| Depreciation | $11,177 | $15,138 | +$3,961 |
-| Workshop / honorarium family | $13,500 | $23,988 | +$10,488 |
-| Donor expenses | $11,875 | $10,000 | −$1,875 |
-| Information technology | $0 | $28,707 | +$28,707 |
-| Payroll taxes | $0 | $41,728 | +$41,728 |
-| Dues / subscriptions | $7,359 | $0 | −$7,359 |
-| **Total** | **$1,010,186** | **$2,071,986** | **+$1,061,800** |
+### Q004 — exact 2025 director transition dates/reasons
 
-The category deltas reconcile exactly to the total increase. Conference/meeting spending rose by **$817,283** and advertising by **$246,511**; together their increase slightly exceeds the total net increase because other categories, especially occupancy, moved downward.
+**State:** `OPEN / MATERIALLY NARROWED / KNOWN PUBLIC ROUTES EXHAUSTED OR ACCESS-CONTROLLED`.
 
-**Allowed conclusion:** the filed expense jump was overwhelmingly a conference/event-and-advertising expansion at the Part IX row level. Payroll did not drive the reversal, and the filings do not show an administrative/fundraising-overhead spike.
+Raw FY2024/FY2025 IRS roles and May/July participant/institutional anchors materially narrow the chronology. Both known historical G3 roster paths have successful bounded empty-CDX results for the critical May–Jul. 20 window. The current Georgia BusinessInformation detail/history route is exactly identified but returns 403 unauthenticated.
 
-**Boundary:** Form 990 classification is self-reported accounting evidence, not an independent forensic audit of prudence, pricing or arm’s-length terms.
+A later Wayback rerun that receives 503 is transport failure and does not erase prior valid-empty acquisitions.
 
-**Asset follow-up now materially closed:** FY2022 Schedule M/D report one **$590,000 commercial-real-estate contribution**, consisting of $354,000 land + $236,000 buildings. Exact FY2023 raw Form 990 then reports `GrossAmountSalesAssetsGrp/OtherAmt = $550,000`, `LessCostOthBasisSalesExpnssGrp/OtherAmt = $590,000`, and `GainOrLossGrp/OtherAmt = −$40,000`; the $590,000 land/building balance disappears and only equipment remains. Thus the filings identify the FY2023 disposition of the donated $590,000 real-estate accounting object for **$550,000 gross proceeds with a $40,000 loss**. Counterparty, exact parcel and financing terms remain Q006A rather than Q002.
+**New evidence required:** minutes, resignation instruments, appointment records, first-person statements, directly accessible later Georgia filing locators, or authorized filing-history access.
 
-### Q003 — What was the exact G3 governing board immediately before the August 2026 crisis?
+### Q005 — Georgia legal dissolution status
 
-**Status:** `PARTIAL CLOSURE / VERIFIED_PRIMARY AS OF 2026-07-21 / LATE-AUGUST CONTINUITY IRREDUCIBLE ON CURRENT WAYBACK PATH`.
+**State:** `CLOSED AS OF 2026-09-08 / VERIFIED_PRIMARY`.
 
-The exact official G3 `Who We Are` Wayback snapshot at timestamp `20260721102641` has been acquired and decoded. It explicitly labels **Board of Directors** and names:
+Georgia Secretary of State current search listed `G3 Ministries for the Church, Inc.` as `Active/Compliance` on the dated acquisition. Operational wind-down is not formal corporate dissolution. A later filing can reopen this time-sensitive answer.
 
-- Buck Braswell;
-- Matt Broome;
-- Jon Norton;
-- Matt Sikes;
-- Dylan Joyner;
-- Ron Mooney.
+### Q006 — G3+, G3 Press, subscriber relationships and successor
 
-The archived payload and decoded HTML were independently hashed in the acquisition lane. The six-name roster is therefore no longer a secondary claim: it is **primary official-page evidence for July 21, 2026**.
+**State:** `PARTIAL CLOSURE / G3+ ACQUISITION-IN-PROGRESS REPRESENTATION VERIFIED / TRANSFEREE + CLOSING HOLD`.
 
-A corrected Wayback continuity acquisition removed `collapse=digest` and queried the exact official path `g3min.org/about/who-we-are/` from **2026-07-21 through 2026-08-31**. Exact-head run `34219682146` returned:
+A recipient-supplied G3+ subscriber email screenshot dated Aug. 27 is now directly controlled at:
 
-- `CDX_CAPTURE_COUNT = 1`;
-- only timestamp `20260721102641`;
-- one digest;
-- all six names present in that sole capture.
+`PRIMARY_SOURCE_G3PLUS_SUBSCRIBER_EMAIL_2026-08-27.md`.
 
-This documents **archive-search exhaustion for that exact path/window**. It does **not** prove that the roster remained unchanged through the late-August crisis; absence of a later snapshot is not continuity evidence.
+The visible G3-branded email represents that G3 Plus **was being acquired by another ministry**, that the name was not yet being shared, and that a follow-up would come when the transition became final.
 
-**Remaining proof gate:** another primary object dated after July 21 — board minutes, resignation/appointment record, a different archived official surface, participant communication or equivalent — is required to say that the exact late-August board was unchanged.
+Therefore:
 
-### Q004 — When and why did Tom Buck, Jonathan Frazier, Chip Thornton, Adam Burrell and others leave the G3 board?
+- `G3+ acquisition-in-progress represented to subscribers` — **RECIPIENT_ARTIFACT_VERIFIED**;
+- `named transferee` — **UNVERIFIED**;
+- `legal closing completed` — **UNVERIFIED**;
+- `transaction terms/consideration/board approval` — **UNVERIFIED**;
+- `G3 Press included in the same transaction` — **PARTIALLY_VERIFIED / recipient-secondary reporting only**, not established by the visible G3+ email itself.
 
-**Status:** `OPEN / MATERIALLY NARROWED / KNOWN PUBLIC ARCHIVE + GEORGIA DETAIL ROUTES EXHAUSTED`.
+FY2025 raw IRS evidence separately verifies that Living Heritage Homeschool was separated from G3 during 2025. Later service bundling does not establish `Living Heritage = 2026 successor`. Treefort/platform evidence likewise does not establish `Treefort = successor`.
 
-Raw FY2024 Part VII directly identifies Buck, Thornton, Braswell, Burrell, Broome and Frazier as directors, with Joshua Buice as president/director. Raw FY2025 Part VII contains dated/transition-style role labels for Scott Aniol, Joshua Buice, Jonathan Frazier, Jon Norton, Buck Braswell, Matt Broome, Tom Buck, Chip Thornton and Adam Burrell, while the filing reports only **4 voting governing-body members, all 4 independent**. Thus Part VII is a reportable-person/role-history list, not a simple four- or nine-person snapshot.
+**New evidence required:** final-transition follow-up email, recipient ministry announcement, G3 board/corporate notice, agreement/assignment/closing statement, post-transfer legal-provider record or equivalent.
 
-Contemporaneous evidence keeps Tom Buck on the board at the May 12, 2025 Buice-crisis decision point. Current B1 testimony places his exit after May 12 and before Aniol’s official presidency effective July 9, 2025.
+### Q006A — donated FY2022 real estate / FY2023 sale / receivable
 
-Two identified official historical roster paths have now been independently tested for **2025-05-01 through 2025-07-20**:
+**State:** `PARTIAL CLOSURE / SALE VERIFIED_PRIMARY / PARCEL + COUNTERPARTY + NOTE LINKAGE ACCESS/DOCUMENT_HOLD`.
 
-- `/about/who-we-are/` — successful bounded run `34228201641`: May, June and Jul. 1–20 each `VALID_EMPTY_CDX`;
-- `/vision/leadership/` — successful exact-head run `34232494274` on `ddaddeb8ac03892660dfb017ec9946b9379e33d5`: May, June and Jul. 1–20 each `VALID_EMPTY_CDX`, combined `VALID_EMPTY_ALL_LEGACY_SEGMENTS`.
+Raw IRS evidence verifies:
 
-Later retries of the legacy path encountered Archive.org HTTP 503 / TLS timeout transport failures. Those failures do not negate the successful acquisition and are not historical evidence.
+- FY2022 one $590,000 commercial-real-estate contribution;
+- FY2023 $550,000 gross sale, $590,000 basis, $40,000 loss;
+- the donated $590,000 land/building accounting object disappears;
+- a $416,227 notes/loans receivable appears and then declines to $251,197 and $153,000.
 
-The Georgia corporate-record route was also tightened. Official early filing locators are now pinned as Articles `17370469` (2019-06-06), 2019 Annual Registration `17449198` (2019-07-16), and 2020/2021 Annual Registration `18903966` (2020-03-30). The latter two identify the early Buice CEO/CFO + David Crowe Secretary structure; the 2020/2021 filing also records Buice as filing authorizer with title `Director`.
+The accounting-object sale is primary-closed. Seller financing remains plausible but not transaction-identified.
 
-More importantly, the current official Business Search result exposes internal `businessId=2751672` through `navigateToBusinessInfo(...)`. The acquisition parser was corrected to recognize that live markup and reproduce the site's official POST to `/BusinessSearch/BusinessInformation` with `businessId=2751672`, `businessType=Domestic Nonprofit Corporation`, `fromSearch=true`. Exact-head run `34244820320` verified the search row but the official detail/history POST returned **HTTP 403**; query/path GET fallbacks also returned 403.
+Exact-head Douglas run `34270062808` establishes the current public-access boundary:
 
-**Search-route closure:** both known official roster-page paths and the unauthenticated Georgia BusinessInformation detail/history route are exhausted. Do not repeat them absent a different historical URL, a material archive/access-state change, an exact later official `DownloadFile?filingNo=` locator, or authorized filing-history access.
+- county/Georgia routing surfaces reachable;
+- GSCCCA name-search form reachable but result posts resolve to login/session shell;
+- qPublic search/address/parcel queries return Cloudflare 403.
 
-**Needed:** board minutes, resignation instruments, first-person resignation statements, appointment records, authenticated internal communications, a directly accessible later Georgia filing document, or another newly identified primary surface establishing exact departure/start dates and reasons. In particular, do not infer motives from later conflict narratives.
+**Do not identify 4979 Highway 5 as the donated/sold asset without deed proof.**
 
-### Q005 — Was G3 legally dissolved in Georgia or merely operationally wound down?
+**New evidence/access required:** deed/legal description, donor/grantor, purchaser/grantee, cash-at-close, note/security instrument, terms/collateral, authorization/conflict record and ultimate receivable disposition.
 
-**Status:** `CLOSED AS OF 2026-09-08 ACQUISITION / VERIFIED_PRIMARY`.
+## P1 — strong allegation / quote-safe gates
 
-The Georgia Secretary of State official Business Search result for control no. `19085916` lists:
+### Q007 — independently reproduce strongest Buck examples from original media
 
-- `G3 Ministries for the Church, Inc.`;
-- Domestic Nonprofit Corporation;
-- status **`Active/Compliance`**;
-- principal office `4979 Highway 5, Douglasville, GA 30135`;
-- registered/designated agent `Scott Aniol`;
-- internal current result ID `businessId=2751672`.
+**State:** `ACTIVE / LATE ITEMS ACQUISITION CLOSED / HUMAN REVIEW HOLD`.
 
-Exact-head run `34244820320` reproduced the official BusinessInformation detail POST contract but received HTTP 403. This does not weaken the accessible current search-row evidence and does not establish absence of later filings.
+Items 11–17 have 7/7 successful bounded original-FBC-media acquisition and machine-transcript diagnostics. Item files now distinguish strong, mixed and negative-control outcomes.
 
-**Allowed conclusion:** at the dated official acquisition, G3 was **not shown as formally dissolved in Georgia** even though operations had publicly wound down.
+Machine STT is not quote-safe human listening. Human review plus exact source object and attribution context remain mandatory.
 
-**Boundary:** corporate status is time-sensitive. A later dissolution filing can change this answer and should be monitored. Federal tax-exempt status is a separate layer and must not be substituted for Georgia corporate status. The current detail/history surface is access-blocked, so no exact date for the registered-agent change may be inferred from the present row alone.
+### Q008 — severity distribution across the dossier
 
-### Q006 — What happened to G3 Press, G3+, trademarks, subscriber relationships and other IP/assets?
+**State:** `ACTIVE / 17/17 ITEM FILES / 0/17 ITEM_VERIFIED`.
 
-**Status:** `OPEN / LIVING HERITAGE 2025 SEPARATION CLOSED / 2026 TRANSFEREE EVIDENCE_HOLD`.
+No global `45 proven instances`, percentage, or `17 sermons plagiarized` conclusion is allowed until row-level human-audio/source/attribution closure.
 
-Subscriber reporting supports that G3+ was to be acquired/transitioned to an unnamed `another ministry`; secondary reporting says the same unnamed ministry may receive/acquire G3 Press. No primary source currently names the transferee or supplies transaction terms.
+### Q009 — physical packet preparation/mailing chain
 
-Fresh Sep. 8 searches still do not surface a recipient-side announcement naming the acquirer. The most current reporting continues to describe `another`, as-yet-unnamed ministry. This is a negative search result, not proof that no transfer closed privately.
+**State:** `PARTIALLY_VERIFIED / DOCUMENT_HOLD`.
 
-One related institutional fact is now **VERIFIED_PRIMARY** from the raw FY2025 IRS filing rather than merely inferred from policy/derivative pages. Exact-head workflow run `34233453690` on Research head `1f75d2b831666128ccff025fc9f5a93c8a6dfd53` acquired the unchanged FY2025 IRS object `202641339349303874` (raw XML SHA-256 `48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2`) and searched all **401** Form 990 leaves. Exactly one matching `IRS990/Desc` leaf states that in 2025 G3 **separated Living Heritage Homeschool as an independent entity from G3 Ministries**.
+Anonymous external circulation and recipient evidence for at least one Texas-postmarked/deceptive-return-address package are supportable. Exact physical actor chain, gloves and forensic intent are not primary-closed.
 
-Cause IQ’s similar wording is therefore derivative of the same filing and must not be counted as independent corroboration.
+### Q010 — PMBC resignation mechanics
 
-Current platform evidence shows G3-branded/storefront continuity and G3 developer/support identity. Living Heritage currently offers access that includes G3+, while the live G3 Press storefront remains G3-branded and linked to G3 Ministries/G3 Plus. These facts document commercial/service/platform continuity; they do **not** establish beneficial ownership, asset-transfer completion, consideration or transaction counterparties.
+**State:** `DISPUTED / PRIMARY PMBC DOCUMENT_HOLD`.
 
-The 2025 Living Heritage separation and later G3+ bundling cannot be collapsed into `Living Heritage = Ministry X`. No recipient-side primary object currently establishes that Living Heritage acquired G3+, G3 Press, subscriber contracts, domains, app-store accounts, trademarks, inventory or publishing rights in 2026.
+The reproduced participant letter says all four voluntarily resigned. Secondary reporting says three were required/pressed by deacons and Dylan Joyner resigned voluntarily. The Aug. 16 Matt Sikes primary announcement predates the resignation event and does not settle this contradiction.
 
-The FY2024/FY2025 Schedule L records do **not** identify a Living Heritage/G3+ transfer; they disclose the salary transaction described in Q001. Do not use Schedule L as circumstantial proof of the asset-transfer theory.
+**New evidence required:** PMBC minutes, deacon/congregational statement, resignation instruments or authorized direct participant record.
 
-**Needed:** primary subscriber notice, board/corporate announcement, recipient-ministry announcement, transfer/assignment agreement, exact asset schedule, consideration/value, conflicts/recusals and closing date. Keep title-level author-rights reversions separate from platform/catalog ownership.
+### Q011 — motive in the 2026 Buck campaign
 
-### Q006A — What happened to the donated FY2022 real estate and the FY2023 note/receivable?
+**State:** `INFERENCE ONLY`.
 
-**Status:** `PARTIAL CLOSURE / SALE VERIFIED_PRIMARY / PARCEL + COUNTERPARTY + NOTE LINKAGE OPEN`.
+Conduct can be documented without inventing revenge, institutional self-protection or other motive. Motive requires communications/confession/participant testimony.
 
-Raw FY2022 Schedule M reports one **$590,000 commercial-real-estate donation**; Schedule D reports **$354,000 land + $236,000 buildings = $590,000**.
+### Q012 — prior knowledge of Buice anonymous accounts
 
-Exact FY2023 raw Form 990 reports:
+**State:** `UNVERIFIED CONTRARY TO OFFICIAL DENIAL`.
 
-- gross amount from sale of `Other` assets: **$550,000**;
-- cost/basis of those assets: **$590,000**;
-- gain/loss: **−$40,000**;
-- beginning net land/building/equipment: **$621,915**;
-- ending net land/building/equipment: **$16,777**, fully accounted for by remaining equipment;
-- new `OthNotesLoansReceivableNetGrp/EOYAmt`: **$416,227**.
+Official G3 statement says others did not know before May 2025. No contrary primary evidence is acquired.
 
-Because FY2022 contains a single $590,000 commercial-real-estate contribution and exactly $590,000 of land/building value, while FY2023 reports a $590,000-basis asset sale and the entire land/building amount disappears, the filings identify the disposition of that donated real-estate accounting object in FY2023 for **$550,000 gross proceeds and a $40,000 loss**.
+## P2 — institutional/history interpretation
 
-A common rendered summary labels this only as `Sales of Assets −$40,000`; that **−$40,000 is the loss, not the sale price**.
+### Q013 — quantify ideological/content change
 
-The simultaneously appearing **$416,227 notes/loans receivable** makes seller financing plausible, but the raw filing does not name the debtor or explicitly connect the note to the sale. The difference between $550,000 gross proceeds and $416,227 receivable is $133,773, but arithmetic coexistence is not transaction identity.
+**State:** `DATASET_REQUIRED`.
 
-**Official-record acquisition status:** Douglas County/Georgia DOR authority pages are reachable. qPublic is Cloudflare-blocked in the research runtime. The GSCCCA public Real Estate Name Search form was acquired with its real Douglas County parameters and submitted unauthenticated, but each result is automatically redirected into `frmLogin`; no subscription/login/payment bypass was attempted. Wayback/search failure and registry access gates are not negative evidence.
+No quantitative ideological percentage may be published until a reproducible dated content/session corpus and coding protocol are complete. Existing qualitative evidence already blocks a simplistic one-directional political narrative.
 
-**Needed now:** exact parcel/legal description, donor/grantor, purchaser/grantee, cash at closing, note/security instrument, interest/maturity/collateral, subsequent receivable collection/write-down, board authorization and conflict handling. Related-party or wrongdoing conclusions remain prohibited until those records exist.
+### Q014 — conference attendance chronology
 
-## P1 — blocks strong narrative wording
+**State:** `PRIMARY/CONTEMPORARY YEAR-BY-YEAR DATA REQUIRED`.
 
-### Q007 — Can the strongest Buck plagiarism examples be independently reproduced from original sermon audio?
+Distinguish registrations, announced attendance and actual attendance.
 
-Priority: Titus 2:11–15, Aug. 6, 2023, including cited marriage illustration around ~34:09.
+### Q015 — relationship network
 
-**Needed:** original FBC/Vimeo audio and source commentary edition/page, exact transcript locator.
+**State:** `ACTIVE MAPPING / CONTROL INFERENCE BLOCKED`.
 
-### Q008 — How many of the dossier’s ~45 alleged parallels are severe, moderate, weak or ordinary commentary dependence?
+Map speaker/friendship/institutional overlap without converting overlap into formal control or denominational jurisdiction.
 
-All 17 accusation-sermon items now have dedicated forensic files. **0/17 are declared `ITEM_VERIFIED`** because human-checked original audio, exact source edition and attribution context remain common closure gates.
+### Q016 — January 2021 MacArthur `live` episode
 
-Continue the row-level classification:
+**State:** `PARTIALLY_VERIFIED / ARCHIVE_HOLD / INTENT_UNPROVED`.
 
-- verbatim extended borrowing;
-- near-verbatim borrowing;
-- appropriation of unique/personal illustration;
-- close paraphrase;
-- exegetical sequencing;
-- structural similarity;
-- commonplace theological overlap.
+Exact-phrase/archive searches still converge on the same adversarial compilation. Repetition of that compilation is not corroboration.
 
-No global `45 proven instances`, `X% plagiarized` or `17 sermons plagiarized` verdict is permitted until those gates close.
+The `live` terminology has a platform-premiere semantic defense; the `few weeks` versus early-October chronology discrepancy is cleaner if the reproduced artifacts are authentic. Original email/social/archive objects remain required.
 
-### Q009 — Who physically prepared and mailed the 2026 packets?
+### Q017 — Michael O'Fallon departure
 
-**Established:** anonymous external circulation; recipient evidence for Texas postmark/false return address; participants admitted improper anonymous action.
+**State:** `PARTIAL CLOSURE`.
 
-**Not established:** every person’s physical act, use of gloves, exact mailing chain, source of return-address data.
+His participant statement establishes that he resigned. `G3 removed O'Fallon` is blocked. Exact board mechanics/motive remain open.
 
-### Q010 — Did deacons/congregation request the four PMBC elders’ resignations, or were resignations volunteered before such a request?
+### Q018 — did the 2025 renewed vision change governance?
 
-Their reproduced letter says all four voluntarily resigned; Michelle Lesley reports three were required by deacons and Dylan Joyner resigned voluntarily. These accounts may be procedurally reconcilable, but no primary PMBC deacon/congregational record has been acquired.
+**State:** `ANALYTICAL / ENDPOINTS STRENGTHENED`.
 
-**Needed:** contemporaneous PMBC documentation or direct statement from authorized church representatives.
-
-### Q011 — Was the stated motive correction/accountability, retaliation, institutional self-protection, or a mixture?
-
-Motive requires communications or participant testimony. Conduct can be established without inventing motive.
-
-### Q012 — Did any G3 board/staff member know about Josh Buice’s anonymous accounts before May 2025?
-
-Official G3 statement says no. No contrary primary evidence currently acquired.
-
-## P2 — history / institutional interpretation
-
-### Q013 — Quantify G3’s ideological shift rather than describe it impressionistically
-
-Construct a dated content sample from 2012–2026 across categories: gospel/church/Scripture, social justice/CRT, gender/sexuality, state/politics, Christian nationalism, worship, missions, education.
-
-Current qualitative evidence already rejects a one-directional `ever farther right` narrative: social-justice/CRT became a stronger boundary after 2018, while 2023 G3/Scott Aniol material explicitly resisted Christian Nationalism/theonomy and drew criticism from the right flank.
-
-### Q014 — Reconstruct conference attendance using primary/contemporary records
-
-Need year-by-year numbers, venue changes and whether registrations vs actual attendance are being compared.
-
-### Q015 — Reconstruct G3’s relationship network
-
-Map G3 ↔ Pray’s Mill ↔ Founders ↔ Grace Community Church/TMS ↔ GBTS ↔ Just Thinking ↔ Religious Affections ↔ T4G-era speakers. Distinguish friendship/speaker overlap from formal institutional control.
-
-### Q016 — January 2021 MacArthur “live” episode
-
-Need independent copies/archives of:
-
-- G3 promotional email calling event live;
-- G3Conference tweets;
-- Buice Oct. 4, 2020 post establishing recording timing;
-- Jan. 7, 2021 Buice replies (“few weeks” / “early October”);
-- any correction/explanation issued by G3.
-
-Current source is polemical compilation; episode stays below quote-safe threshold.
-
-### Q017 — What happened institutionally after Michael O’Fallon left in June 2023?
-
-O’Fallon’s own participant post establishes that **he resigned** from G3 (along with other organizational roles). Therefore wording such as `G3 removed O’Fallon` is blocked. Exact board action and causal relationship to Christian-nationalism disputes remain unresolved.
-
-### Q018 — Did G3’s 2025 “renewed vision” change actual governance or mostly messaging/products?
-
-Compare board structure, policies, reporting mechanisms, conflict separation and decision-making before/after May 2025. Raw FY2025 filing and the primary July 2026 board page now provide stronger endpoints for this comparison.
+Raw FY2025 filing and July 2026 primary board page supply stronger endpoints; governance-effectiveness conclusions remain comparative interpretation.
 
 ## P3 — shutdown / legacy
 
-### Q019 — What remains online, who controls domains/apps and which pages are stale?
+### Q019 — online/platform/domain control after wind-down
 
-The evidence layers visibly conflict in useful ways:
+**State:** `DATED DIGITAL-STATE PARTIALLY VERIFIED / OWNERSHIP HOLD`.
 
-- direct `https://g3min.org/` returned HTTP 503 on controlled Sep. 7 and Sep. 8 observations;
-- older/current crawled/indexed deep pages can still expose pre-shutdown event/product links and even cancelled future-event promotion;
-- app-store surfaces retain G3 developer/seller metadata while displayed update-date fields have conflicted across captures;
-- Pray’s Mill’s Sep. 7 leaders-page capture still listed resigned leaders and stale institutional bios.
+Direct root, stale indexed pages, app-store metadata, G3+ web app, G3 Press storefront and stale PMBC leader page must remain distinct dated layers. Platform visibility is not beneficial ownership.
 
-These are evidence of **stale or lagging digital state**, not proof that resignations, shutdown or institutional changes were reversed.
+### Q020 — G3 Press author rights/inventory
 
-**Needed:** DNS/domain ownership, hosting transitions, app-store seller history, fresh controlled captures and archived page-change timestamps.
+**State:** `TITLE-BY-TITLE PARTIAL CLOSURE`.
 
-### Q020 — What is the status of authors’ rights and inventory at G3 Press?
+Dave Jenkins' title has observable post-G3 republication under his current ecosystem; other rights-return requests are less complete. Continue title-by-title contract/inventory/license reconstruction. Do not assume one monolithic transfer.
 
-Dave Jenkins publicly reported title-level rights return for *The Word Matters* and his current publishing ecosystem now carries the title. Darrell Harrison’s public statement establishes a request/intention to recover rights, not completed reversion. Justin Peters/Andrew Rappaport content-removal requests concern hosting/licensing and must not be conflated with book copyright ownership.
+### Q021 — Scott Aniol post-G3 status
 
-Continue title-by-title rights/inventory reconstruction and obtain legal/primary transfer objects where possible.
+**State:** `GBTS DEPARTURE VERIFIED_PRIMARY / OTHER ROLES CURRENT-PRIMARY REQUIRED`.
 
-### Q021 — What is Scott Aniol’s post-G3 institutional status beyond GBTS?
+Stale PMBC bios cannot override event-specific later institutional statements.
 
-GBTS officially says he no longer serves on faculty. Pray’s Mill’s captured page still said he was professor, but that page is demonstrably stale against the later event-specific GBTS statement and cannot control present status. Other alleged/announced positions require current primary confirmation; do not infer disciplinary causation without statements.
+### Q022 — PMBC public leadership-page correction timing
 
-### Q022 — When did Pray’s Mill update its public leadership records after the August resignations?
+**State:** `ARCHIVE_HOLD`.
 
-As of the 2026-09-07 crawl, the official PMBC leaders page still presented the four resigned men as pastors. This creates a bounded communications/archive question, not an office-status question.
-
-**Needed:** archive snapshots before/after correction, any PMBC public explanation, and page modification evidence if available.
-
-**Current status:** `ARCHIVE_HOLD`.
+Sep. 7 official page still displayed resigned men. This is a web-communications question, not evidence that resignations did not occur.
 
 ## Closure definition
 
-The corpus can be considered **article-ready** only when:
+The Research checkpoint can be considered **proof-route complete for the current public evidence universe** when:
 
-1. all P0 questions are either verified or explicitly irreducible with documented search effort;
-2. every high-impact allegation in `CLAIMS_LEDGER.md` is `VERIFIED_PRIMARY`, `CORROBORATED`, `REFUTED`, or intentionally presented as uncertainty;
-3. financial and board tables have source/version locators;
-4. quotes meet repository quote-safe contract;
-5. media has item-level rights decisions;
-6. article draft preserves the distinction between fact, testimony, interpretation, theological judgment and legal conclusion;
-7. stale website/search/app metadata is explicitly dated and never substituted for event-specific evidence.
+1. all P0 facts are either primary-closed or explicitly `NEW_PRIMARY_EVIDENCE / AUTHORIZED_ACCESS REQUIRED` with documented route exhaustion;
+2. every high-impact claim preserves its verified/corroborated/disputed/refuted/inference state;
+3. all strong Buck quotations remain blocked until human media/source/attribution review;
+4. media/publication rights remain item-level decisions;
+5. stale web/app/search metadata is dated and never substituted for event-specific evidence;
+6. future updates reopen questions only when genuinely new primary evidence, access or changed platform/corporate state appears.
+
+`PUBLICATION_HOLD` is independent of Research checkpoint completion.
