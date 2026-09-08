@@ -9,6 +9,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 WF = REPO / ".github" / "workflows"
 SETUP_PYTHON_V7 = "5fda3b95a4ea91299a34e894583c3862153e4b97"
+UPLOAD_ARTIFACT_V7 = "043fb46d1a93c77aae656e7c1c64a875d1fc6a0a"
 
 ACQUISITION_WORKFLOWS = [
     "g3-buck-media-windows.yml",
@@ -44,6 +45,12 @@ def main() -> int:
         if "research/g3-history-20260907" in text:
             errors.append(f"{name}: references retired G3 branch")
 
+        upload_refs = re.findall(r"actions/upload-artifact@([^\s#]+)", text)
+        if upload_refs != [UPLOAD_ARTIFACT_V7]:
+            errors.append(
+                f"{name}: upload-artifact refs {upload_refs!r}, expected only {UPLOAD_ARTIFACT_V7}"
+            )
+
     for name in PYTHON_WORKFLOWS:
         path = WF / name
         if not path.is_file():
@@ -65,7 +72,8 @@ def main() -> int:
         "G3_WORKFLOW_RUNTIME=PASS "
         f"acquisition_workflows={len(ACQUISITION_WORKFLOWS)} "
         f"python_workflows={len(PYTHON_WORKFLOWS)} "
-        f"setup_python={SETUP_PYTHON_V7}"
+        f"setup_python={SETUP_PYTHON_V7} "
+        f"upload_artifact={UPLOAD_ARTIFACT_V7}"
     )
     return 0
 
