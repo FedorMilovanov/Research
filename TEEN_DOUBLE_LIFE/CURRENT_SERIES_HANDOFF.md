@@ -16,7 +16,7 @@
 
 Resolve repository-root authority, current `AGENT_RULES.md`, and evidence policy first. Then read:
 
-`45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 233 → 234 → 235 → 236 → 237 → 238 → 239 → 265 → 271 → 140`
+`45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 233 → 234 → 235 → 236 → 237 → 238 → 239 → 265 → 271 → 276 → 280 → 286 → 292 → 295 → 140`
 
 Use exact filenames.
 
@@ -33,13 +33,18 @@ Key late controls:
 - `238_LATE_ROUTING_SHAME_ANGER_FAMILY_SECRETS_SIBLING_WITNESS...` — earlier partial routing for `266–269`;
 - `239_ARCHITECTURE_AND_LATE_ROUTING_RECONCILIATION_188_237_238_271...` — resolves architecture/routing ownership;
 - `265_LATE_CORE_ROUTING...` — routing owner for `259–264`;
-- `271_LATE_ROUTING_266_270...` — **current** routing owner for `266–270`, superseding `238` only as the routing entrypoint.
+- `271_LATE_ROUTING_266_270...` — routing owner for `266–270`, superseding `238` only as that routing entrypoint;
+- `276_LATE_REPENTANCE_TRUTH_ROUTING_272_275_EVIDENCE_BOUNDED_CONFESSION_GODLY_SORROW_AND_MIRROR_GUARDS...` — routing owner for `272–275`;
+- `280_RECONCILIATION_ROUTING_277_279_CASE_MATRIX_SPIRITUALIZED_CLOSURE_AND_PARENTAL_GRIEF...` — routing owner for `277–279`;
+- `286_LATE_TRUTH_EVIDENCE_ROUTING_281_285_MATERIAL_COMPLETENESS_CHURCH_EVIDENCE_RECORDS_SILENCE_AND_NARRATIVE_REPAIR...` — routing owner for `281–285`;
+- `292_ADVERSARIAL_EVIDENCE_ROUTING_287_291_COORDINATED_DECEPTION_PARENTAL_ERROR_SPLIT_THRESHOLDS_DIGITAL_PROVENANCE_AND_SOURCE_LINEAGE...` — routing owner for `287–291`;
+- `295_SAFE_REPORTING_ROUTING_293_294_RETALIATION_CROSS_FAMILY_DISCLOSURE_OTHER_MINORS_AND_JURISDICTION...` — routing owner for `293–294`.
 
-For late Part II/core routing use:
+For late Part II/core truth-evidence routing use:
 
-`224[245/246/249/250] → 230[251–255] → 234[256–258] → 265[259–264] → 271[266–270]`.
+`224[245/246/249/250] → 230[251–255] → 234[256–258] → 265[259–264] → 271[266–270] → 276[272–275] → 280[277–279] → 286[281–285] → 292[287–291] → 295[293–294]`.
 
-`235` reconciles the `234/265` overlap. `239` reconciles `188/237` and `238/271`.
+`235` reconciles the `234/265` overlap. `239` reconciles `188/237` and `238/271`. Later routing owners are additive and do not promote their source modules into automatic Product sections.
 
 For owner-intent completeness use `233`.
 
@@ -47,7 +52,7 @@ For adult/family-government publication claim ownership use `237`.
 
 For specialized post-core gap companions use `188`; `188` and `237` are complementary, not competing.
 
-`140` is the older core-series late-stage handoff and **must not supersede later owner-intent/family-government appendices**. Its sequencing guard `Part I → Part II → Part III → adult material` remains useful.
+`140` is the older core-series late-stage handoff and **must not supersede later owner-intent/family-government appendices or later routing owners**. Its sequencing guard `Part I → Part II → Part III → adult material` remains useful.
 
 ---
 
@@ -161,6 +166,31 @@ Do not claim burned dopamine receptors, inevitability, irreversible loss of lawf
 - `ACCOUNTABILITY ≠ SURVEILLANCE`; temporary inspection after serious deception ≠ permanent stigma;
 - parent-led oversight of a minor ≠ universal adult parental data access.
 
+### Late truth / evidence / reporting guards
+
+These controls from `276 → 280 → 286 → 292 → 295` must travel together when the discovery/repentance material is compressed:
+
+- `MATERIAL COMPLETENESS ≠ EXHAUSTIVE OMNISCIENCE`;
+- truth should be materially sufficient for safety, repair, stewardship and jurisdiction without endless archaeology;
+- `LOW CREDIBILITY ≠ PROVED GUILT OF EVERY SUSPICION`;
+- `SILENCE ≠ ADMISSION`; noncooperation can affect re-entrustment without proving the suspected act;
+- `SELF-CONFESSION ≠ ONLY POSSIBLE EVIDENCE`; `PARENTAL REPORT ≠ AUTOMATIC ECCLESIAL VERDICT`;
+- `PRECAUTION ≠ CONVICTION`;
+- `NEED-TO-KNOW ≠ NEED-TO-POSSESS`; `PRESERVE A CASE ≠ MULTIPLY THE IMAGE`;
+- `FALSE NARRATIVE REPAIR ≠ PUBLIC SEXUAL CONFESSION`;
+- `KNOWING ≠ ACCOMPLICE`; `SIMILARITY ≠ COLLUSION`;
+- `PRIOR DECEPTION CAN EXPLAIN SUSPICION; IT CANNOT MAKE A FALSE FACT TRUE`;
+- `PARENTAL UNITY ≠ PRETENDING IDENTICAL CONFIDENCE`; different confidence levels must not create competing household verdicts;
+- `DIGITAL ARTIFACT ≠ SELF-INTERPRETING FACT`; `SCREENSHOT ≠ COMPLETE RECORD`; `DISPLAY NAME ≠ PROVED IDENTITY`;
+- `THREE REPETITIONS OF ONE SOURCE ≠ THREE INDEPENDENT SOURCES`; `SECONDHAND ≠ WORTHLESS`;
+- `NEW REPORTER ≠ NEW EVIDENCE AUTOMATICALLY`;
+- `REPORTING DANGER ≠ BETRAYAL`; `ANTI-RETALIATION ≠ AUTOMATIC BELIEF OF EVERY ALLEGATION`;
+- `UNSUBSTANTIATED ≠ PROVED FALSE`;
+- `OTHER PARENT MAY NEED TO KNOW ≠ OTHER PARENT ALWAYS SAFE TO TELL FIRST`;
+- `PARENT-TO-PARENT CONTACT ≠ SAFEGUARDING PROCESS`;
+- `PRIVATE FAMILY AGREEMENT ≠ LEGAL / SAFEGUARDING CLEARANCE`;
+- ordinary investigation needs a stopping rule; a genuinely new material source can reopen a bounded question.
+
 ### Conscience/category guard
 
 Never collapse:
@@ -179,7 +209,7 @@ Locked:
 - false guilt should be corrected; true guilt should not be therapeutically explained away;
 - `ADIAPHORA ≠ MORAL VACUUM`; lawful ≠ always wise; parental dislike ≠ proof of sin; genre label ≠ moral verdict.
 
-Use `261`, `264`, `265`, `271`.
+Use `261`, `264`, `265`, `271`, `276`, `280`, `286`, `292`, `295`.
 
 ---
 
@@ -284,6 +314,13 @@ Mirror guard is equally binding:
 - where there is actual abuse, violence, forced marriage, dangerous confinement or command to sin, intervention/refuge may be righteous;
 - choose what God calls true before choosing “parents” or “child” as a party.
 
+Late cross-boundary controls additionally require:
+
+- `FIRST STORY HEARD ≠ MULTIPLE INDEPENDENT SOURCES` merely because it was repeated;
+- legitimate reporting must not be punished as betrayal merely because it crosses family/church reputation boundaries;
+- another minor/family may require truthful disclosure, but unsafe-home, retaliation, evidence-preservation and competent safeguarding concerns can change recipient/order;
+- no private mediation or family settlement may be treated as automatic civil/safeguarding clearance.
+
 ---
 
 ## 9. Owner-requirements closure
@@ -296,11 +333,13 @@ Current verdict:
 
 Research-layer publication architecture is resolved by `237` and reconciled with the specialized `188` ring by `239`.
 
-Late `266–270` material is routed by `271`.
+Late parenting/truth/evidence/reporting material is routed through:
+
+`271 → 276 → 280 → 286 → 292 → 295`.
 
 Remaining items are explicit targeted archival HOLDs or jurisdiction-dependent applications — not forgotten requirements.
 
-The main residual risk is now **compression error**: losing evidence class, jurisdiction, status distinction, mirror guard or an explicit owner concern while drafting.
+The main residual risk is now **compression error**: losing evidence class, jurisdiction, status distinction, source-lineage/provenance guard, mirror guard or an explicit owner concern while drafting.
 
 ---
 
