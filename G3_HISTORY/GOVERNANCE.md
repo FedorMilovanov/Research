@@ -6,144 +6,222 @@
 
 Was the 2025–2026 collapse primarily the result of unrelated personal sins, or did G3’s institutional design create recurring vulnerabilities through founder centrality, overlapping church/parachurch roles, narrowed decision-making, or insufficient accountability?
 
-The current evidence supports asking this question. It does **not yet** support a final causal answer.
+The evidence now supports a much denser chronology of governance change. It still does **not** prove a single institutional-causation theory.
 
 ## 2019–2020 — founder-centric corporate officer structure
 
-Georgia records establish the nonprofit on 2019-06-06. The original Articles identify Josh Buice as registered agent at 4979 Highway 5, Douglasville. Annual-registration material identifies Buice in overlapping CEO/CFO roles in the early nonprofit period, with David Crowe as secretary. This supports a founder-centric early officer model.
+Georgia records establish the nonprofit on 2019-06-06. The original Articles identify Josh Buice as registered agent at 4979 Highway 5, Douglasville. Annual-registration material identifies Buice in overlapping CEO/CFO roles in the early nonprofit period, with David Crowe as secretary.
 
-The Articles also matter for the 2026 end-state: the board may cease corporate activities and dissolve by a two-thirds vote, after which liabilities are addressed and residual assets are to be used for qualifying exempt purposes.
+This supports a founder-centric early officer model.
 
-**Do not overstate:** corporate officer overlap in a young nonprofit is not by itself proof of autocracy or financial impropriety.
+The Articles also matter for the 2026 end-state: the board may dissolve the corporation by a two-thirds vote, after liabilities are addressed and residual assets are directed to qualifying exempt purposes.
 
-## 2021–2024 — broader governance
+**Do not overstate:** officer overlap in a young nonprofit is not by itself proof of autocracy, private control or financial impropriety.
 
-Public IRS-derived records indicate a broader multi-church set of directors/officers than a simple `Pray’s Mill inner circle` model would suggest.
+## 2021–2023 — governance broadens
 
-### FY2023 Part VII names currently reconstructed
+Raw IRS filings show that G3 did not remain a simple one-man legal structure.
 
-- Scott Aniol
-- Jeff Pate
-- Virgil Walker
-- Jonathan Frazier
-- McLain Henry
-- Ronald Broome
-- Adam Burrell
-- Tom Buck
-- Chip Thornton
-- Buck Braswell
-- Josh Buice
+### FY2022 amended return
 
-Part VII includes officers/key employees as well as directors; presence on the list must not automatically be equated with a voting board seat.
+The amended FY2022 Form 990 reports:
 
-### FY2024
+- **9 voting governing-body members**;
+- **9 independent**;
+- no listed-person reportable compensation from G3 in Part VII;
+- conflict-of-interest policy = yes;
+- annual disclosure = yes;
+- regular monitoring/enforcement = yes;
+- whistleblower policy = no;
+- document-retention policy = no.
 
-An IRS-derived Part VII parser reports:
+Part VII includes directors/officers such as Chipley Thornton, Michael O’Fallon, Anthony Mathenia, David Braswell, Ronald M. Broome, Adam Burrell, Robert T. Buck, David Crowe and Joshua Buice.
 
-- Scott Aniol — Vice President
-- Virgil Walker — VP of Ministry Relations
-- Joshua Buice — President
-- Tom Buck — Director
-- Chip Thornton — Director
-- Buck Braswell — Director
-- Adam Burrell — Director
-- Matt Broome — Director
-- Jonathan Frazier — Director
+### FY2023
 
-This closes Frazier's FY2024 **reported Part VII title** more strongly than the earlier generic `people list` wording, but the raw IRS XML remains the primary-grade authority.
+The raw FY2023 filing also reports **9 voting / 9 independent members**. Its Part VII reportable-person set includes Scott Aniol, Jeff Pate, Virgil Walker, Jonathan Frazier, McLain Henry, Ronald Broome, Adam Burrell, Tom Buck, Chip Thornton, Buck Braswell and Josh Buice across officer/director/key-employee style rows.
 
-The filing reports **7 voting governing-body members, 6 independent**. Therefore the nine Part VII names cannot all simply be described as simultaneous voting directors/officers without reconstructing the filing columns and status indicators.
+**Important:** Part VII includes more categories than voting directors. The count of names in Part VII must never be substituted for `VotingMembersGoverningBodyCnt`.
 
-Other reported governance features:
+This evidence materially weakens any blanket claim that G3 was throughout its history merely Josh Buice’s personal legal instrument.
 
-- conflict-of-interest policy: yes
-- process for compensation review: reported
-- family/business relationships among officers/directors: none reported
-- whistleblower policy: no
-- document-retention/destruction policy: no
+## FY2024 — primary raw Part VII and governance controls
 
-These facts cut against a simplistic narrative that G3 had no formal governance at all, while the missing policies remain legitimate governance observations.
+The exact raw FY2024 IRS object `202541359349304489` was acquired from the official TEOS XML archive. It reports:
 
-## FY2025 filing — useful but not an August 2026 board roster
+- **7 voting governing-body members**;
+- **6 independent**;
+- conflict-of-interest policy: yes;
+- annual disclosure for covered persons: yes;
+- regular monitoring/enforcement: yes;
+- compensation process for CEO/top management: yes;
+- compensation process for other officers/key employees: yes.
 
-The FY2025 Form 990 was filed 2026-05-13. The currently visible extracted summary identifies at least:
+Raw Part VII identifies:
 
-- Scott Aniol — `President As Of 05/2025` in the filing's extracted title field;
-- Buck Braswell — Director;
-- Matt Broome — Secretary;
-- additional people hidden by the summary interface.
+- Scott Aniol — `VICE PRESIDENT` — $137,941 reportable compensation + $19,833 other compensation;
+- Virgil Walker — `VP of Ministry Relations` — $126,075 reportable compensation + $20,462 other compensation;
+- Joshua Buice — `PRESIDENT`, director/officer — $0 reportable compensation in that row;
+- Tom Buck — `DIRECTOR` — $0;
+- Chip Thornton — `DIRECTOR` — $0;
+- Buck Braswell — `DIRECTOR` — $0;
+- Adam Burrell — `DIRECTOR` — $0;
+- Matt Broome — `DIRECTOR` — $0;
+- Jonathan Frazier — `DIRECTOR` — $0.
 
-The Aniol title annotation must **not** be used to rewrite the formal succession date. G3’s own July 2025 announcement states that Aniol's appointment as president was effective **2025-07-09**. The Form 990 label may be a retrospective filing annotation, a transition shorthand or an extraction artifact; until raw Part VII is acquired, the official event-specific announcement controls the exact appointment date.
+Again, nine Part VII people do not equal nine voting members; the filing itself says 7 voting / 6 independent.
 
-Equally important, the FY2025 return describes a calendar-year period ending Dec. 2025. It cannot establish the exact governing board at the time of the August 2026 crisis.
+### FY2024 family-member transaction context
 
-## May–July 2025 — Tom Buck exit window is now materially narrower
+Schedule L reports one interested-person business transaction:
+
+- `KARIS L BUICE`;
+- relationship: `Daughter of Board Member`;
+- transaction: `SALARY`;
+- amount: **$30,409**;
+- revenue sharing: false.
+
+The same filing reports `EngagedInExcessBenefitTransInd=false` and `BusinessRlnWithFamMemInd=true`.
+
+This is a disclosed family-member salary transaction. It is **not** by itself proof of self-dealing or excess benefit. The filing does not identify the parent by name in the relationship field; do not infer the specific parent from surname alone.
+
+## May–July 2025 — crisis and transition window
 
 Contemporaneous reporting on **2025-05-12** explicitly listed the post-Buice G3 board as:
 
-- Tom Buck
-- Chip Thornton
-- Buck Braswell
-- Adam Burrell
-- Matt Broome
-- Jonathan Frazier
+- Tom Buck;
+- Chip Thornton;
+- Buck Braswell;
+- Adam Burrell;
+- Matt Broome;
+- Jonathan Frazier.
 
-The same report reproduces Buck's own contemporaneous public reaction thanking `all the men on the G3 Board` and saying he stood behind `our decision`. This is strong evidence that Buck still understood himself to be participating in the G3 board's action at the time of the Buice crisis.
+The same report reproduces Buck’s public reaction thanking `all the men on the G3 Board` and saying he stood behind `our decision`, strongly anchoring his board participation at the Buice-crisis decision point.
 
-A later **2026-09-05** interview with Protestia publisher David Morrill supplies a materially narrower secondary timeline. Morrill says Buck `stepped off the board after the Josh Buice thing happened and before Scott Aniol was brought on as president`; he repeats that Buck left before Aniol became president. Because G3's own appointment announcement dates Aniol's presidency to **2025-07-09**, the current best non-primary window is:
+G3’s own later announcement identifies **Jonathan Frazier as board chairman** and Scott Aniol as president effective **2025-07-09**.
+
+A 2026 interview with David Morrill says Buck left after the Buice crisis and before Aniol became president. Combined with the two event anchors, the best current non-primary Buck exit window is:
 
 **after 2025-05-12 and before 2025-07-09.**
 
-This is a useful correction to the earlier, looser polemical claim that Buck left sometime in `late 2025 or early 2026`.
+**Still missing:** Buck’s resignation instrument, exact date, board minutes and first-person explanation of motive.
 
-**Evidence boundary:** Morrill is an investigative reporter/recipient, not Buck and not the G3 board secretary. The exact resignation date, resignation instrument, board minutes and Buck's stated reason are still unacquired. Protestia separately describes his departure as amid concerns over post-Buice leadership; that motive must remain reporter reconstruction unless Buck or a primary corporate record confirms it.
+## FY2025 raw filing — transition history, not a one-date board snapshot
 
-By July 2025 G3’s official presidential appointment announcement identifies **Jonathan Frazier as board chairman** while Scott Aniol becomes president effective 2025-07-09.
+The exact raw FY2025 object `202641339349303874` was acquired. It reports:
 
-This matters institutionally: the immediate post-Buice response was not formally run only by Pray’s Mill elders, and the governance transition toward the later configuration may have begun earlier than our first reconstruction suggested.
+- **4 voting governing-body members**;
+- **4 independent**;
+- conflict-of-interest policy = yes;
+- annual disclosure = yes;
+- regular monitoring/enforcement = yes;
+- compensation-process indicators = yes.
 
-## Late 2025–2026 — unresolved contraction / concentration question
+Part VII contains reportable role rows for more than four people, including:
 
-A polemical secondary source claims that the most recently archived G3 board page showed:
+- Scott Aniol — `PRESIDENT AS OF 05/2025` — $135,657 reportable compensation;
+- Buck Braswell — `DIRECTOR`;
+- Matt Broome — `SECRETARY` / director indicator;
+- Jonathan Frazier — `CHAIR` / director indicator;
+- Jon Norton — `DIRECTOR`;
+- Joshua Buice — `PRESIDENT THROUGH 05/2025` / director/officer;
+- Tom Buck — `DIRECTOR`;
+- Chip Thornton — `DIRECTOR`;
+- Adam Burrell — `DIRECTOR`.
 
-- Buck Braswell
-- Matt Broome
-- Jon Norton
-- Matt Sikes
-- Dylan Joyner
-- Ron Mooney
+This is crucial: **Part VII is not a nine-person board snapshot at one moment.** It records reportable people who held relevant positions during the tax period while the filing’s governing-body count is four.
 
-That six-name roster remains useful archive-discovery evidence but is not primary proof. Direct searches of currently indexed official G3 pages have **not** yet surfaced individual board-title pages for Norton, Joyner, Mooney or Broome sufficient to reconstruct the whole roster.
+### Date-conflict firewall
 
-Buck Braswell is different: an official G3 page dated **2025-12-22** expressly identifies him as a member of the G3 Ministries Board, so his own late-2025 board status is primary-anchored.
+The tax-return title `PRESIDENT AS OF 05/2025` must not silently rewrite G3’s formal event-specific announcement that Aniol’s presidency became effective **2025-07-09**. The filing wording may be retrospective shorthand, preparer wording or a transition label. For the exact formal appointment date, the event-specific G3 announcement remains controlling unless stronger primary corporate records supersede it.
 
-Protestia's August 2026 investigation independently describes Jon Norton as a `current G3 board member`; this is B1 investigative testimony, not a substitute for the missing official board page. Current official G3 material establishes Matt Sikes' ministry/teaching role and PMBC role, but not his corporate fiduciary status.
+### FY2025 Schedule L
 
-The earlier claim that Tom Buck remained until late 2025/early 2026 should no longer be treated as the best working timeline. The narrower May–July 2025 B1 window above now controls the research narrative unless primary evidence contradicts it.
+The same filing repeats the family-member salary disclosure:
 
-The six-person late roster therefore stays `ARCHIVE_HOLD` until an archived **official G3 page** is acquired and timestamped.
+- `KARIS L BUICE`;
+- `Daughter of Board Member`;
+- `SALARY`;
+- **$31,880**;
+- revenue sharing false.
 
-If the roster is confirmed, the change is institutionally significant because Jon Norton, Matt Sikes and Dylan Joyner were Pray’s Mill elders, while Scott Aniol was both G3 president and a Pray’s Mill elder. It would indicate a materially greater Pray’s Mill concentration than the broader 2023–May 2025 configuration.
+Again `EngagedInExcessBenefitTransInd=false` and `BusinessRlnWithFamMemInd=true`.
 
-If not confirmed, the institutional-concentration hypothesis must be revised.
+## July 21, 2026 — late board roster is now primary
 
-## Role matrix requiring exact-date reconstruction
+The former `ARCHIVE_HOLD` on the six-name late roster has been materially closed.
 
-| Person | G3 role(s) | PMBC role | Other role | Key date issues |
-|---|---|---|---|---|
-| Josh Buice | founder / president / early CEO-CFO | pastor/elder | public conference leader | exact board/officer transitions 2019–2025 |
-| Scott Aniol | EVP/editor, later president | elder/pastor | GBTS faculty until Sep 2026 | official presidency effective 2025-07-09; exact voting-board status by year |
-| Virgil Walker | ministry-relations executive | not PMBC elder in current reconstruction | podcast/ministry figure | exit June 2025 |
-| Jonathan Frazier | FY2024 Director / later board chairman | relationship to PMBC to verify | — | FY2024 Part VII title B1-anchored; confirmed board chair July 2025; exact exit date unresolved |
-| Tom Buck | director | FBC Lindale pastor | conference speaker | board status strongly anchored on 2025-05-12; current B1 exit window is after May 12 and before Aniol presidency on Jul 9; exact primary resignation date/reason unresolved |
-| Chip Thornton | director | external church role | — | Part VII FY2024 and May 2025 board reporting; exact exit unresolved |
-| Buck Braswell | director | church affiliation to map | — | Part VII FY2024; official G3 board identity 2025-12-22; possible late-board continuity |
-| Adam Burrell | director | external affiliation | — | Part VII FY2024 and May 2025 board reporting; exact exit unresolved |
-| Matt Broome | director/secretary | affiliation to map | — | Part VII FY2024; Secretary visible FY2025 filing; possible late-board continuity |
-| Jon Norton | alleged late director | PMBC elder | — | B1 Protestia calls him current board Aug 2026; archived official board proof still required |
-| Matt Sikes | alleged late director | PMBC elder | — | G3 Pastor-Theologian/workshop role verified; board status needs archive proof |
-| Dylan Joyner | alleged late director | PMBC elder | — | archived official board proof required |
-| Ron Mooney | alleged late director | affiliation to map | — | archived official board proof required |
+Wayback acquisition obtained the exact official G3 `Who We Are` snapshot:
+
+- URL: `http://g3min.org/about/who-we-are/`;
+- timestamp: **`20260721102641`**;
+- raw archived payload SHA-256: `a946cafd2e02252ebbf83deb19ee59015ca1a808cb7a214b85fb3468f71b5865`;
+- decoded HTML SHA-256: `30908b37854208516bc7681d8a33e089e1335e611cc1c3fc9bcc8314250b5dd7`.
+
+The page explicitly labels **Board of Directors** and names:
+
+- Buck Braswell;
+- Matt Broome;
+- Jon Norton;
+- Matt Sikes;
+- Dylan Joyner;
+- Ron Mooney.
+
+Therefore this roster is **VERIFIED_PRIMARY as of 2026-07-21**.
+
+**Remaining boundary:** July 21 is not automatically the exact board roster on the late-August crisis day. A later official capture or primary continuity record is still desirable.
+
+## What the July 2026 roster changes analytically
+
+The late roster confirms a genuine governance contraction/change relative to the broader FY2024/May-2025 configuration.
+
+It also confirms corporate-board presence for several people whose roles previously rested only on ministry overlap or secondary reporting:
+
+- Jon Norton — primary late-board confirmation;
+- Matt Sikes — primary late-board confirmation;
+- Dylan Joyner — primary late-board confirmation;
+- Ron Mooney — primary late-board confirmation;
+- Buck Braswell and Matt Broome — primary continuity into the late board.
+
+Because Norton, Sikes and Joyner were Pray’s Mill elders, the July 2026 corporate board had materially greater Pray’s Mill role overlap than the broader earlier board.
+
+### What this does and does not prove
+
+**Allowed:** `By July 21, 2026, G3’s official board page listed a six-person board that included three Pray’s Mill elders—Norton, Sikes and Joyner—alongside Braswell, Broome and Mooney.`
+
+**Allowed as inference:** governance had become more concentrated around people with Pray’s Mill overlap than in the FY2024/May-2025 configuration.
+
+**Not proved:** that this concentration was intentionally engineered to enable later misconduct, that every board decision was controlled by Pray’s Mill, or that G3 legally became a denomination/extension of PMBC.
+
+## Current role matrix
+
+| Person | Primary G3 anchors | PMBC / other role | Remaining date issue |
+|---|---|---|---|
+| Josh Buice | founder; early CEO/CFO; FY2024 president/director; FY2025 transition row | PMBC pastor/elder | exact corporate resignation/removal mechanics May 2025 |
+| Scott Aniol | FY2024 VP; FY2025 president-transition row; official presidency effective 2025-07-09 | PMBC elder/pastor; former GBTS faculty | voting-board status at each transition date |
+| Virgil Walker | FY2024 ministry-relations executive | external ministry figure | exact corporate exit mechanics June 2025 |
+| Jonathan Frazier | FY2024 director; FY2025 chair row; official board chairman July 2025 | relationship mapping separate | exact exit date before July 2026 roster |
+| Tom Buck | FY2024 director; board participant May 12, 2025; FY2025 reportable director row | FBC Lindale pastor | exact resignation date/reason; current B1 window May 12→Jul 9 |
+| Chip Thornton | FY2024 director; May 2025 board reporting; FY2025 reportable row | external church role | exact exit date |
+| Buck Braswell | FY2024 director; official late-2025 board bio; FY2025 raw row; July 2026 official board | affiliation to map | continuity through crisis day |
+| Adam Burrell | FY2024 director; May 2025 board reporting; FY2025 reportable row | external affiliation | exact exit date |
+| Matt Broome | FY2024 director; FY2025 secretary row; July 2026 official board | affiliation to map | continuity through crisis day |
+| Jon Norton | FY2025 raw director row; July 2026 official board | PMBC elder | exact start date and continuity through crisis day |
+| Matt Sikes | July 2026 official board | PMBC elder; G3 Pastor-Theologian/workshop teacher | exact board start date |
+| Dylan Joyner | July 2026 official board | PMBC elder | exact board start date |
+| Ron Mooney | July 2026 official board | affiliation to map | exact board start date |
+
+## Georgia status after operational wind-down
+
+Official Georgia Secretary of State Business Search acquired on 2026-09-08 lists G3 Ministries for the Church, Inc. as **`Active/Compliance`**, not formally dissolved, with Scott Aniol as registered/designated agent.
+
+Thus:
+
+- operational wind-down — supported;
+- Church Network dissolution — supported;
+- Georgia corporate dissolution — **not true as of the dated official status observation**.
+
+A later filing can change that status.
 
 ## G3 Church Network governance problem
 
@@ -155,31 +233,63 @@ The network publicly emphasized:
 - church discipline;
 - cooperation rather than denominational control.
 
-The 2026 admissions are therefore institutionally significant because the leaders themselves acknowledged improper intervention in another autonomous church’s disciplinary process.
+The 2026 participant admissions are institutionally significant because leaders acknowledged improper intervention in another autonomous church’s disciplinary process.
 
 **Precise conclusion allowed now:** there is a documented contradiction between professed respect for local-church autonomy and the admitted conduct in the Buck matter.
 
-**Conclusion not yet allowed:** G3 Church Network secretly functioned as a denomination exercising formal jurisdiction over member churches.
+**Conclusion not allowed:** G3 Church Network secretly exercised formal denominational jurisdiction over member churches.
 
 ## Recurring anonymity question
 
-Two separate crises involve anonymous conduct:
+Two separate crises involve anonymous conduct.
 
 ### 2025 — Josh Buice
-Official G3 statement says Buice operated multiple anonymous social/email/Substack identities for roughly three years and denied connection when questioned before confession.
+
+Official G3/PMBC statements say Buice operated multiple anonymous social/email/Substack identities for roughly three years and denied connection when questioned before confession.
 
 ### 2026 — PMBC/G3-associated leaders
-The later group admits anonymous external distribution/interference in the Buck matter.
 
-This creates a legitimate institutional-culture question: why did deceptive/anonymous accusation recur under different actors after the first crisis?
+The later participant statement admits anonymous external distribution/interference in the Buck matter.
 
-**But:** recurrence alone does not prove a common conspiracy, shared motive, or that the second group knew of Buice’s hidden conduct before May 2025.
+This recurrence creates a legitimate institutional-culture question.
 
-## Governance hypotheses on HOLD
+**But recurrence alone does not prove:**
 
-- `H-GOV-01`: governance broadened after incorporation but later re-concentrated around Pray’s Mill leadership.
-- `H-GOV-02`: overlapping local-church and parachurch roles weakened conflict separation in the Buck matter.
-- `H-GOV-03`: G3’s doctrinal emphasis on local church was stronger than its operational mechanisms for preventing role conflict.
-- `H-GOV-04`: repeated anonymous accusation behavior may indicate a cultural vulnerability rather than two wholly unrelated accidents.
+- a common conspiracy;
+- shared motive;
+- prior knowledge by the second group of Buice’s hidden conduct;
+- that anonymity was formally encouraged by G3 governance.
 
-Each hypothesis requires additional primary evidence. None is a current factual verdict.
+## Governance hypotheses — updated states
+
+### `H-GOV-01` — governance broadened after incorporation but later re-concentrated around Pray’s Mill leadership
+
+**Status:** `STRONGLY SUPPORTED AS STRUCTURAL CHANGE / CAUSAL MEANING STILL INFERENCE`.
+
+The raw filings and July 2026 official board snapshot establish the structural change. What that change caused remains a separate question.
+
+### `H-GOV-02` — overlapping local-church and parachurch roles weakened conflict separation in the Buck matter
+
+**Status:** `PLAUSIBLE / CAUSAL HOLD`.
+
+Role overlap is primary-verified; causal effect requires internal communications/process evidence.
+
+### `H-GOV-03` — G3’s doctrinal emphasis on local church was stronger than its operational mechanisms for preventing role conflict
+
+**Status:** `SUPPORTED INTERPRETATION / NOT PURE FACT`.
+
+Institutional teaching and admitted conduct can be juxtaposed; the systemic explanation remains interpretive.
+
+### `H-GOV-04` — repeated anonymous accusation behavior indicates a cultural vulnerability
+
+**Status:** `INFERENCE / HOLD`.
+
+Recurrence is factual; institutional-culture causation is not yet directly evidenced.
+
+## Next governance acquisitions
+
+1. exact resignation instruments/minutes for Buck, Thornton, Burrell, Frazier and other 2025 departures;
+2. primary start dates for Norton/Sikes/Joyner/Mooney on the board;
+3. a post-2026-07-21 official continuity record through the late-August crisis;
+4. internal conflict-recusal/minutes evidence for the Buck matter if obtainable lawfully;
+5. durable corporate records showing what board authorized the post-G3 asset transfers, if any.
