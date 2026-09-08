@@ -8,6 +8,7 @@ on:
       - 'G3_HISTORY/tools/acquire_irs_raw_xml_v2.py'
       - 'G3_HISTORY/tools/acquire_irs_raw_xml_v3.py'
       - 'G3_HISTORY/tools/acquire_irs_raw_xml_v4.py'
+      - 'G3_HISTORY/tools/summarize_irs_acquisition.py'
       - 'G3_HISTORY/IRS_RAW_XML_ACQUISITION_GATE.md'
       - '.github/workflows/g3-irs-raw-acquisition.yml'
       - 'data/artifact-custody-policy-v2.json'
@@ -34,12 +35,20 @@ jobs:
         with:
           python-version: '3.12.8'
 
-      - name: Compile acquisition tool
-        run: python -m py_compile G3_HISTORY/tools/acquire_irs_raw_xml_v4.py
+      - name: Compile acquisition and evidence-summary tools
+        run: |
+          python -m py_compile G3_HISTORY/tools/acquire_irs_raw_xml_v4.py
+          python -m py_compile G3_HISTORY/tools/summarize_irs_acquisition.py
 
       - name: Acquire exact IRS e-file XML object
         run: >-
           python G3_HISTORY/tools/acquire_irs_raw_xml_v4.py
+          --label "${{ matrix.label }}"
+          --output g3-irs-acquisition-output
+
+      - name: Emit deterministic IRS evidence summary
+        run: >-
+          python G3_HISTORY/tools/summarize_irs_acquisition.py
           --label "${{ matrix.label }}"
           --output g3-irs-acquisition-output
 
@@ -52,6 +61,7 @@ jobs:
           printf '%s\n' "${GITHUB_RUN_ATTEMPT}" > g3-irs-acquisition-output/WORKFLOW_RUN_ATTEMPT.txt
           printf '%s\n' "${{ matrix.label }}" > g3-irs-acquisition-output/TARGET_LABEL.txt
           sha256sum G3_HISTORY/tools/acquire_irs_raw_xml_v4.py > g3-irs-acquisition-output/ACQUISITION_TOOL_SHA256.txt
+          sha256sum G3_HISTORY/tools/summarize_irs_acquisition.py > g3-irs-acquisition-output/SUMMARY_TOOL_SHA256.txt
           sha256sum data/artifact-custody-policy-v2.json > g3-irs-acquisition-output/CUSTODY_POLICY_SHA256.txt
           python - <<'PY'
           import json, os
