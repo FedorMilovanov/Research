@@ -1,0 +1,72 @@
+{
+  "schema": "g3-durable-custody-receipts-v1",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "cutoff": "2026-09-08",
+  "rule": "Git preserves durable receipts, locators, object IDs and cryptographic hashes. Action artifacts remain ephemeral. Raw third-party/media bytes are not promoted into Git merely to make custody durable; publication requires a separate item-level rights decision.",
+  "receipts": [
+    {
+      "id": "IRS-FY2022-AMENDED",
+      "sourceId": "G3-S002",
+      "objectId": "202322939349300637_public.xml",
+      "sha256": "678b391e948adb6090107435369e175cf2694c69705e107f13be6befe361bc03",
+      "durableReceipt": true,
+      "rawBytesInGit": false
+    },
+    {
+      "id": "IRS-FY2023",
+      "sourceId": "G3-S002",
+      "objectId": "202411429349300611",
+      "sha256": "c8eb0baa2265eadef2b6798c68868f91f8fde6ca9fbffe40e138877df92ce5c0",
+      "durableReceipt": true,
+      "rawBytesInGit": false
+    },
+    {
+      "id": "IRS-FY2024",
+      "sourceId": "G3-S002",
+      "objectId": "202541359349304489",
+      "sha256": "c14f511cf66051b916748440594586b4db1ecdb0d07ab14ef05e01e92524aca3",
+      "durableReceipt": true,
+      "rawBytesInGit": false
+    },
+    {
+      "id": "IRS-FY2025",
+      "sourceId": "G3-S002",
+      "objectId": "202641339349303874",
+      "sha256": "48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2",
+      "durableReceipt": true,
+      "rawBytesInGit": false
+    },
+    {
+      "id": "WAYBACK-LATE-BOARD-20260721102641-RAW",
+      "sourceId": "G3-S096",
+      "objectId": "20260721102641",
+      "sha256": "a946cafd2e02252ebbf83deb19ee59015ca1a808cb7a214b85fb3468f71b5865",
+      "durableReceipt": true,
+      "rawBytesInGit": false
+    },
+    {
+      "id": "WAYBACK-LATE-BOARD-20260721102641-DECODED",
+      "sourceId": "G3-S096",
+      "objectId": "20260721102641-decoded-html",
+      "sha256": "30908b37854208516bc7681d8a33e089e1335e611cc1c3fc9bcc8314250b5dd7",
+      "durableReceipt": true,
+      "rawBytesInGit": false
+    },
+    {
+      "id": "BUCK-TITUS2-SEGMENT-003230-003630",
+      "sourceId": "G3-S013",
+      "objectId": "FBC-Lindale-2023-08-06-00:32:30-00:36:30",
+      "sha256": "954041ea7b697ed98c27db8a852c8bb798db14ec44f69ec6e634046a2bd9729a",
+      "durableReceipt": true,
+      "rawBytesInGit": false
+    },
+    {
+      "id": "FBC-LINDALE-RSS-CENSUS",
+      "sourceId": null,
+      "objectId": "https://feedpress.me/fbc-lindale",
+      "sha256": "47297b27f9818dd24059851c0c6210b407c4637816a29b99d18fc68f77afb7f5",
+      "durableReceipt": true,
+      "rawBytesInGit": false
+    }
+  ]
+}
