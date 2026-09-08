@@ -23,12 +23,13 @@ Colossians 3:20–21 supplies a parallel household command.
 
 ### Children are present moral hearers
 
-Paul does not postpone moral agency until:
+Paul does not postpone moral address until:
 
-- baptism;
-- personal testimony;
+- a later personal testimony;
 - legal adulthood;
 - a church membership interview.
+
+The text itself does **not** state the baptismal status of the addressed children. Therefore do not turn Eph 6 into an argument from silence that their moral duty specifically precedes baptism. The project’s stronger claim — that moral/filial duty exists before baptism — is independently grounded in Creator-creature obligation, the moral law and the parent-child relation.
 
 ### Christian parental formation is presently mandated
 
@@ -41,6 +42,8 @@ Gill emphasizes that obedience is due because it is right under God’s law and 
 This is one of the strongest direct biblical controls against the project’s target error:
 
 > “He is unsaved, so what Christian conduct can we demand?”
+
+The force here comes from the direct moral address and the parent’s religious duty, not from an inferred baptismal status.
 
 ## 3. Paedobaptist inference
 
@@ -68,20 +71,22 @@ The Baptist must not use nonmembership to make the apostolic address disappear.
 
 Even if an unbaptized child is not a member under church keys, the congregation still reads a letter in which Christ’s apostle directly speaks to children.
 
-Therefore a Baptist church must have a theological category for:
+Therefore a Baptist church needs a theological/pastoral category for:
 
 > **nonmember children who are nevertheless direct hearers of the Word in the assembled Christian community.**
+
+This conclusion is a **strong pastoral inference**, not a claim that Eph 6 identifies the children’s formal membership status.
 
 This is precisely where weak Baptist practice can become incoherent:
 
 - it brings children every week;
-- Paul speaks directly to them;
+- Paul speaks directly to children;
 - parents are commanded to form them in the Lord;
-- yet church practice may treat them as spiritually undefined until they seek baptism.
+- yet church practice may treat church-raised nonmembers as spiritually undefined until they seek baptism.
 
 ## 6. Age and capacity
 
-The command presupposes a child able to receive meaningful instruction. It does not supply one universal chronological threshold.
+The command presupposes children able to receive meaningful instruction. It does not supply one universal chronological threshold.
 
 Thus:
 
@@ -108,9 +113,9 @@ Possible structure:
 
 The church should ask:
 
-> If the apostolic letter directly addresses our children, how can our pastoral practice treat them as nobody’s responsibility until a membership application?
+> If the apostolic letter directly addresses children in our hearing, how can our pastoral practice treat church-raised nonmembers as nobody’s responsibility until a membership application?
 
-This does not create formal membership, but it creates a strong obligation of teaching and direct exhortation.
+This does not create formal membership, but together with the church’s teaching vocation and the parents’ member relation it strongly supports direct teaching and exhortation.
 
 ## 9. Final verdict
 
@@ -118,8 +123,12 @@ This does not create formal membership, but it creates a strong obligation of te
 
 `PRESENT CHRISTIAN PARENTAL FORMATION = DIRECT`.
 
+`BAPTISMAL STATUS OF THE ADDRESSED CHILDREN = NOT STATED`.
+
+`MORAL / FILIAL DUTY BEFORE BAPTISM = SECURE FROM INDEPENDENT BIBLICAL GROUNDS, NOT FROM EPH 6 BAPTISMAL SILENCE`.
+
 `AGE 18 THRESHOLD = NO BIBLICAL BASIS`.
 
 `FORMAL COVENANT MEMBERSHIP FROM EPH 6 ALONE = NOT ESTABLISHED`.
 
-`BAPTIST PASTORAL OWNERSHIP OF NONMEMBER CHILDREN = STRONG CANONICAL INFERENCE`.
+`BAPTIST PASTORAL OWNERSHIP OF NONMEMBER CHILDREN = STRONG CANONICAL / ECCLESIAL INFERENCE, NOT DIRECT MEMBERSHIP EXEGESIS`.
