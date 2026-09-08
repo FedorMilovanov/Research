@@ -1,0 +1,80 @@
+name: G3 Wayback 2025 board transition acquisition
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'G3_HISTORY/tools/acquire_wayback_2025_board_transition.py'
+      - '.github/workflows/g3-wayback-2025-board-transition.yml'
+      - 'data/artifact-custody-policy-v2.json'
+
+permissions:
+  contents: read
+
+jobs:
+  acquire:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.8'
+
+      - name: Compile acquisition tool
+        run: python -m py_compile G3_HISTORY/tools/acquire_wayback_2025_board_transition.py
+
+      - name: Acquire May-July 2025 board snapshots
+        run: >-
+          python G3_HISTORY/tools/acquire_wayback_2025_board_transition.py
+          --output g3-wayback-2025-board-output
+
+      - name: Record ephemeral custody context
+        if: always()
+        run: |
+          mkdir -p g3-wayback-2025-board-output
+          git rev-parse HEAD > g3-wayback-2025-board-output/RESEARCH_COMMIT.txt
+          printf '%s\n' "${GITHUB_RUN_ID}" > g3-wayback-2025-board-output/WORKFLOW_RUN_ID.txt
+          printf '%s\n' "${GITHUB_RUN_ATTEMPT}" > g3-wayback-2025-board-output/WORKFLOW_RUN_ATTEMPT.txt
+          sha256sum G3_HISTORY/tools/acquire_wayback_2025_board_transition.py > g3-wayback-2025-board-output/ACQUISITION_TOOL_SHA256.txt
+          sha256sum data/artifact-custody-policy-v2.json > g3-wayback-2025-board-output/CUSTODY_POLICY_SHA256.txt
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path('g3-wayback-2025-board-output')
+          receipt = {
+              'state': 'EPHEMERAL_ACTION_ARTIFACT',
+              'publicationEligible': False,
+              'retentionDays': 7,
+              'durableReceiptPresent': False,
+              'policy': 'data/artifact-custody-policy-v2.json',
+              'workflow': '.github/workflows/g3-wayback-2025-board-transition.yml',
+              'runId': os.environ.get('GITHUB_RUN_ID'),
+              'runAttempt': os.environ.get('GITHUB_RUN_ATTEMPT'),
+              'repository': os.environ.get('GITHUB_REPOSITORY'),
+              'ref': os.environ.get('GITHUB_REF'),
+              'eventSha': os.environ.get('GITHUB_SHA'),
+              'checkedOutSha': (root / 'RESEARCH_COMMIT.txt').read_text(encoding='utf-8').strip(),
+              'warning': 'Archived web bytes are research evidence only; Actions retention is not durable custody and does not authorize publication.'
+          }
+          (root / 'ACTION_CUSTODY.json').write_text(json.dumps(receipt, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+
+      - name: Upload temporary archive evidence
+        if: always()
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        with:
+          name: g3-wayback-2025-board-${{ github.run_id }}-${{ github.run_attempt }}
+          path: g3-wayback-2025-board-output/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Ensure acquisition lane is read-only
+        if: always()
+        run: git diff --exit-code
