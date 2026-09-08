@@ -151,7 +151,7 @@ A corrected CDX continuity query removed `collapse=digest` and searched the exac
 
 **Remaining gate:** another dated primary object after July 21 — minutes, resignation/appointment record, another archived official surface or participant document.
 
-## 6. Q005 — Georgia current status CLOSED AS OF ACQUISITION
+## 6. Q005 — Georgia current status CLOSED AS OF ACQUISITION; detail/history route now exact-bounded
 
 Official Georgia Secretary of State Business Search for control no. `19085916` reported:
 
@@ -161,11 +161,17 @@ Official Georgia Secretary of State Business Search for control no. `19085916` r
 - principal office `4979 Highway 5, Douglasville, GA 30135`;
 - registered/designated agent `Scott Aniol`.
 
+The current result row embeds internal `businessId=2751672` in the official JavaScript navigation call. The acquisition parser was corrected to recognize that current markup and to reproduce the site's own detail POST contract.
+
+Exact-head run `34244820320` on Research head `3d9b30ff4b0845b0def019a02c76584028926b8e` verified the search row and internal business ID. It then POSTed to `/BusinessSearch/BusinessInformation` with the official fields `businessId=2751672`, `businessType=Domestic Nonprofit Corporation`, `fromSearch=true`. The detail endpoint returned **HTTP 403**; query/path GET fallbacks also returned 403.
+
 **Finding:** on the dated Sep. 8 acquisition G3 was not shown as formally dissolved in Georgia despite operational wind-down.
 
-**Boundary:** later corporate filings can change this state.
+**Acquisition boundary:** current search-row state is primary-accessible; the detail/filing-history route is now exactly resolved but access-blocked. The absence of later filing IDs in the corpus is no longer attributable to an untested navigation method or parser omission.
 
-## 7. Q004 — governance chronology materially narrowed; known May–July archive paths CLOSED AS SEARCH ROUTES
+**Boundary:** later corporate filings can change the current status; detail-route 403 does not prove later filings do not exist.
+
+## 7. Q004 — governance chronology materially narrowed; public archive + Georgia detail routes exhausted
 
 Raw FY2024 reports **7 voting governing-body members, 6 independent** and directly identifies Buice/Buck/Thornton/Braswell/Burrell/Broome/Frazier in director/officer roles.
 
@@ -180,7 +186,15 @@ For May 1–July 20, 2025, both identified official historical roster paths have
 
 A later Archive.org timeout/503 rerun is transport failure and does not negate those successful acquisitions.
 
-**Finding:** both known official roster-path searches are exhausted for this transition window. The exact director transition dates remain open because archive absence is not resignation evidence.
+The Georgia corporate family now also has exact early locators:
+
+- Articles — filing `17370469`, 2019-06-06;
+- 2019 Annual Registration — filing `17449198`, 2019-07-16, Buice CEO/CFO, Crowe Secretary, Buice registered agent;
+- 2020/2021 Annual Registration — filing `18903966`, 2020-03-30, same officer/agent structure and Buice as filing authorizer with title `Director`.
+
+These strengthen the early founder-centric corporate chronology but do not date 2025 exits/appointments. As documented in Q005, the current Georgia detail/history route is now exactly reproduced and 403-blocked.
+
+**Finding:** both known official G3 roster-path searches and the unauthenticated Georgia detail/history route are exhausted as public transition-discovery paths. The exact director transition dates remain open because archive absence/access denial is not resignation or appointment evidence.
 
 ## 8. Q006 — G3+/G3 Press/IP transferee remains OPEN; Living Heritage 2025 separation CLOSED
 
@@ -205,8 +219,8 @@ FY2024/FY2025 Schedule L contains only the family-member salary disclosure descr
 | Q001 FY2024/FY2025 Schedule L | **CLOSED / VERIFIED_PRIMARY** | misconduct inference separately unsupported |
 | Q002 FY2023 expense jump | **CLOSED / VERIFIED_PRIMARY** | vendor/project prudence is a finer-grained question |
 | Q003 late-2026 board | **PARTIAL CLOSURE** | July 21 verified; exact-path Wayback exhausted; other late-Aug primary continuity needed |
-| Q004 director transition chronology | **OPEN / materially narrowed** | both known May–July archive routes exhausted; resignation/minutes/transition records needed |
-| Q005 Georgia dissolution status | **CLOSED AS OF ACQUISITION** | only later status change can reopen |
+| Q004 director transition chronology | **OPEN / materially narrowed** | both known May–July archive routes + unauthenticated Georgia detail route exhausted; resignation/minutes/appointment records or authorized filing history needed |
+| Q005 Georgia dissolution status | **CLOSED AS OF ACQUISITION** | only later status change can reopen; detail history presently 403-blocked |
 | Q006 G3+/Press/IP transferee and terms | **OPEN / Living Heritage subclaim closed** | 2025 separation verified; named 2026 transferee + transaction documents still absent |
 | Q006A FY2022 real estate / FY2023 receivable | **PARTIAL CLOSURE** | sale closed at filing level; parcel/counterparty/note linkage remains |
 
@@ -223,6 +237,8 @@ Current important canonical promotions completed:
 - FY2023 $550,000 sale / $590,000 basis / $40,000 loss and multi-year receivable trace → financial/open-question/checkpoint layers;
 - late-2026 exact-path Wayback exhaustion → open-question/checkpoint layers;
 - both known May–July 2025 historical roster paths → director-transition/checkpoint layers;
+- Georgia search-result `businessId=2751672`, official detail POST contract and 403 access boundary → director-transition/checkpoint layers;
+- exact early Georgia filing locators `17370469`, `17449198`, `18903966` → director-transition/checkpoint provenance;
 - FY2025 Living Heritage separation → asset-transfer/checkpoint layers using the existing raw-IRS source family rather than a duplicate Cause IQ evidence family.
 
 Repository-structure work remaining at this checkpoint is no longer evidence reconciliation debt. The remaining items are substantive proof gates listed above, plus PR metadata/exact-head validation. `PUBLICATION_HOLD=true` remains intentional until a later journalism/product handoff pins an immutable Research commit and frozen claim/source set.
