@@ -1,119 +1,57 @@
-# Buck dossier item 12 — Romans 15:1–6 / strong Hughes-derived sequence vs circulating church-unity joke
+# Buck dossier item 12 — Romans 15:1–6 / strong source-family sequence vs circulating church-unity joke
 
 **Status:** ACTIVE / PUBLICATION_HOLD  
 **Dossier item:** sermon 12 of 17  
 **Buck sermon:** Tom Buck, `Romans 15:1–6`, 2025-10-19  
 **Claimed comparator:** R. Kent Hughes, *Romans: Righteousness from Heaven*, ch. 30, pp. 278–285  
-**Current verdict:** `SERMON_IDENTITY_VERIFIED / STRONG PRE-BUCK HUGHES-DERIVED RHETORICAL BLOCK / ILLUSTRATION ORIGIN CORRECTED / AUDIO_BOOK_HOLD`
+**Current verdict:** `ORIGINAL_MEDIA_MACHINE_CONFIRMS_STRONG_CHRIST-EXAMPLE_GLORY_BLOCK / PRE-BUCK_HUGHES-INCLUSIVE_SOURCE_FAMILY / CIRCULATING-ILLUSTRATION_CORRECTION / HUMAN_AUDIO_EXACT_BOOK_WIDER_ATTRIBUTION_HOLD`
 
-## 1. Accusation rows
+## 1. Dossier scope
 
-The dossier alleges close dependence across several blocks:
+The packet alleges several parallels, but they are not equally probative. The strongest cluster is the `preceding fourteen chapters` + Christ-example + preincarnate-glory block. Other rows include unity/worship, same-mind application, `cater to the narrowest`, and the `trespasses/debts` church-merger joke.
 
-1. Jesus repeatedly prayed for Christian oneness/unity;
-2. two struggling congregations fail to merge over `trespasses` vs `debts` in the Lord's Prayer;
-3. Paul does something not done in the previous fourteen chapters of Romans by holding up Christ as the example;
-4. Christ existed in indescribable glory/fellowship of the Godhead and left it for lost humanity;
-5. `cater to the narrowest` Christian / sub-biblical legalism;
-6. `same mind` means Christ-focused regard rather than identical opinions;
-7. worship will not be what it should be without unity.
+## 2. Circulating illustration correction
 
-Primary accusation object:
-- https://protestia.com/wp-content/uploads/2026/08/June2026-Packet-compressed-120.pdf
+The `trespasses/debts` church-merger story circulated publicly years before Buck and outside the Hughes commentary context. It cannot be treated as Hughes's original literary property. It may contribute to proximate-source analysis only if embedded inside a larger distinctive source sequence.
 
-## 2. `Trespasses and debts` story is not Hughes-original
+## 3. Pre-Buck source-family anchor
 
-The dossier describes density of matching phrasing as suggesting Hughes was Buck's immediate source. That remains possible. But literary ownership of the anecdote must be corrected.
+A 2021 Romans 15 exposition reproduces in substance the source-side sequence about Paul doing something not done in the preceding fourteen chapters, holding up Christ's example, and then describing Christ's eternal glory/fellowship before leaving it for lost humanity.
 
-The same church-merger joke was publicly circulating long before Buck's 2025 sermon and outside the Hughes commentary context:
+The same study discloses use of several Romans commentaries, including Hughes, Courson, Wiersbe, Boice and Stott. That establishes pre-Buck circulation in a Hughes-inclusive source family, but not unique Hughes authorship of every sentence until the exact claimed Hughes pages are acquired.
 
-- SermonCentral posted the illustration under `Trespasses and Debts` in 2011;
-- Chuck Swindoll used substantially the same anecdote and punchline in a 2021 devotional;
-- other sermon-illustration databases reproduce it independently.
+## 4. Original FBC media confirms the strongest combined block
 
-Therefore:
+Exact-head run `34262005804`, job `acquire (12)`, acquired two bounded original-media windows and deleted all audio before artifact upload.
 
-- the anecdote/punchline is not shown to be Hughes's original creative property;
-- Buck using it does not by itself prove dependence on Hughes;
-- close wording/order alongside multiple Hughes-specific paragraphs may still make Hughes or a Hughes-derived source the **proximate** source.
+Custody:
 
-**Working grade:** `C` as literary-originality claim / `U → possible B` only as cumulative proximate-dependence evidence.
+- FBC page: `https://fbclindale.com/resources/sermons/romans-151-6/`;
+- Vimeo ID: `1128676834`;
+- `15:30–18:30` SHA-256: `562f9de0af30d716dc9908a7d850ca37f9f4b1a1cfde35360794c5ed7e3e8753`;
+- `40:30–41:35` SHA-256: `95c6ec79da2fb42c4d1f8323a91a7b7564f954dc149232ae45918fdc02a2a1dc`;
+- artifact digest: `sha256:9c2ef3af0768894142ecdc8094c45258573e32199909704a96ae556f290d136d`;
+- transcripts: `MACHINE_TRANSCRIPT_ONLY`;
+- audio retained: `false`.
 
-## 3. Strong pre-Buck anchor: `preceding fourteen chapters` + Christ example
+The machine transcript independently hears Buck say that Paul does something he has not done in the preceding fourteen chapters of Romans and, for the first time, holds up the example of Christ to enforce his argument.
 
-A 2021 Romans 15 exposition, four years before Buck's sermon, reproduces essentially the Hughes source-side paragraph:
+Immediately thereafter Buck says in substance that Jesus existed in **absolute glory from all eternity**, in **fellowship with the Godhead in perfect holiness**, and **left all of that for the sake of lost mankind**. The lexical substitutions predicted from the source-family (`absolute`; `mankind`) are present.
 
-- Paul is intensely concerned that believers forego rights for unity/building others;
-- he does something not done in the preceding fourteen chapters of Romans;
-- he holds up Christ's example to enforce the argument.
+This materially strengthens the dependence candidate while still not proving the exact proximate source or attribution state.
 
-This is a much more source-specific exegetical/rhetorical sequence than the generic doctrine that Christ is our example.
+## 5. Worship/unity row remains lower-specificity
 
-If Buck audio verifies the dossier's close version without attribution, this is a serious `B` dependence candidate.
+The second original-media window confirms Buck's conclusion in substance that worship will not be what it is meant to be unless there is unity. That verifies occurrence but does not make the proposition a unique literary fingerprint; it remains a common pastoral inference from Romans 15.
 
-**Working grade:** `U → likely B`.
+## 6. Other rows remain separately gated
 
-## 4. Strong adjacent creative sentence: Christ's preincarnate glory
+The bounded acquisition did not silently adjudicate every dossier row. `cater to the narrowest`, same-mind language, John 17 unity observations and other blocks retain their own specificity/source gates.
 
-The same 2021 exposition immediately continues with substantially the full Hughes sentence:
+## 7. Attribution boundary
 
-- Christ existed in `indescribable glory` from all eternity;
-- rejoiced in the fellowship of the Godhead in perfect holiness;
-- left all that for lost humanity.
+The acquired windows do not machine-detect `Hughes` or explicit attribution for the strong Christ-example/glory block. That is a bounded negative observation only. Wider human review remains mandatory.
 
-The dossier alleges Buck uses nearly the same sentence, changing only a few lexical items (`indescribable` → `absolute`, `humanity` → `mankind`).
+## Current verdict
 
-Because the full creative sequence is independently documented before Buck and immediately follows the previous Hughes-linked paragraph, this is one of Item 12's strongest literary-dependence candidates.
-
-**Working grade:** `U → likely B / possible A depending original audio, exact Hughes object and attribution context`.
-
-## 5. `cater to the narrowest member` is Hughes-linked wording
-
-Current source checking finds the formulation explicitly quoted as Kent Hughes:
-
-- not catering to the narrowest member of fellowship;
-- not yielding to Christians hardened in sub-biblical legalism.
-
-The concepts of Christian liberty and not submitting to legalism are common. The unusual `cater to the narrowest` / `sub-Biblical legalism` wording is more source-specific.
-
-**Working grade:** `U → potential B`.
-
-## 6. `worship ... unless there is unity` is lower-specificity than dossier suggests
-
-The relation between congregational unity and worship is a common pastoral inference from Romans 15:5–7. Similar wording appears in independent church exposition.
-
-Therefore the sentence may support cumulative dependence if it appears amid a sustained Hughes-derived sequence, but it should not be treated as a unique creative fingerprint by itself.
-
-**Working grade:** `C → possible B cumulatively`.
-
-## 7. `same mind` as Christ-focused orientation
-
-The interpretation that `same mind` does not require identical opinions but Christ-centered harmony is standard Pauline exegesis. Exact wording may reveal dependence, but the interpretive move itself is not uniquely Hughes.
-
-**Working grade:** `C/B depending exact language and sequence`.
-
-## 8. `Jesus repeatedly prayed for our oneness`
-
-John 17 naturally yields the observation that Jesus prayed for the unity/oneness of his disciples. The dossier's close sentence structure can contribute to a cumulative case but is less probative than the long creative block at pp. 280–281.
-
-**Working grade:** `C → possible B in sequence`.
-
-## 9. Methodological result
-
-Item 12 is important because it contains both:
-
-- a **circulating sermon joke** that should not be attributed to Hughes as literary property;
-- a **long, tightly ordered and independently pre-Buck Hughes-derived rhetorical sequence** that is much harder to explain as generic shared exegesis.
-
-This is precisely why the final article must report source lineage and dependence grade rather than a flat allegation count.
-
-## 10. Remaining gates
-
-1. Acquire original Buck 2025-10-19 audio/video and human-check dossier timestamps.
-2. Acquire exact Hughes ch. 30, pp. 278–285.
-3. Check attribution context around the long Christ-example block.
-4. Determine whether the 2021 exposition explicitly cites Hughes or derives through another intermediate source.
-5. Treat the `trespasses/debts` illustration as a circulating source unless a proximate-source chain is established.
-6. Grade each block separately and preserve cumulative-order analysis.
-
-`SERMON_IDENTITY_VERIFIED / STRONG PRE-BUCK HUGHES-DERIVED BLOCK / CIRCULATING-ILLUSTRATION CORRECTION / ORIGINAL_AUDIO_AND_EXACT_HUGHES_OBJECT_HOLD`.
+`SERMON_IDENTITY_VERIFIED / ORIGINAL_MEDIA_MACHINE_CONFIRMS_STRONG_CHRIST-EXAMPLE_GLORY_BLOCK / PRE-BUCK_HUGHES-INCLUSIVE_SOURCE_FAMILY / WORSHIP-UNITY_LOW_SPECIFICITY / CIRCULATING-ILLUSTRATION_CORRECTION / HUMAN_AUDIO_EXACT_HUGHES_WIDER_ATTRIBUTION_HOLD / ITEM_VERIFIED_FALSE`.
