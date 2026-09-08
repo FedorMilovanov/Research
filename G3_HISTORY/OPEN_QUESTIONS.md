@@ -58,11 +58,11 @@ The category deltas reconcile exactly to the total increase. Conference/meeting 
 
 **Boundary:** Form 990 classification is self-reported accounting evidence, not an independent forensic audit of prudence, pricing or arm’s-length terms.
 
-**Follow-up asset question:** FY2022 Schedule M reports one **$590,000 commercial real-estate noncash contribution** valued by `BROKER ESTIMATION`; Schedule D reports $354,000 land + $236,000 buildings, plus equipment, for $621,915 total net land/building/equipment. By FY2023 net land/building/equipment had fallen sharply and a $416,227 notes/loans receivable balance appeared. The disposition/counterparty/receivable terms remain a separate asset-movement investigation and must not be inferred from Part IX.
+**Asset follow-up now materially closed:** FY2022 Schedule M/D report one **$590,000 commercial-real-estate contribution**, consisting of $354,000 land + $236,000 buildings. Exact FY2023 raw Form 990 then reports `GrossAmountSalesAssetsGrp/OtherAmt = $550,000`, `LessCostOthBasisSalesExpnssGrp/OtherAmt = $590,000`, and `GainOrLossGrp/OtherAmt = −$40,000`; the $590,000 land/building balance disappears and only equipment remains. Thus the filings identify the FY2023 disposition of the donated $590,000 real-estate accounting object for **$550,000 gross proceeds with a $40,000 loss**. Counterparty, exact parcel and financing terms remain Q006A rather than Q002.
 
 ### Q003 — What was the exact G3 governing board immediately before the August 2026 crisis?
 
-**Status:** `PARTIAL CLOSURE / VERIFIED_PRIMARY AS OF 2026-07-21`.
+**Status:** `PARTIAL CLOSURE / VERIFIED_PRIMARY AS OF 2026-07-21 / LATE-AUGUST CONTINUITY IRREDUCIBLE ON CURRENT WAYBACK PATH`.
 
 The exact official G3 `Who We Are` Wayback snapshot at timestamp `20260721102641` has been acquired and decoded. It explicitly labels **Board of Directors** and names:
 
@@ -75,7 +75,16 @@ The exact official G3 `Who We Are` Wayback snapshot at timestamp `20260721102641
 
 The archived payload and decoded HTML were independently hashed in the acquisition lane. The six-name roster is therefore no longer a secondary claim: it is **primary official-page evidence for July 21, 2026**.
 
-**Remaining proof gate:** July 21 must not silently be equated with the exact late-August crisis date. Seek a later official snapshot or other primary continuity evidence covering the final weeks before the crisis.
+A corrected Wayback continuity acquisition removed `collapse=digest` and queried the exact official path `g3min.org/about/who-we-are/` from **2026-07-21 through 2026-08-31**. Exact-head run `34219682146` returned:
+
+- `CDX_CAPTURE_COUNT = 1`;
+- only timestamp `20260721102641`;
+- one digest;
+- all six names present in that sole capture.
+
+This documents **archive-search exhaustion for that exact path/window**. It does **not** prove that the roster remained unchanged through the late-August crisis; absence of a later snapshot is not continuity evidence.
+
+**Remaining proof gate:** another primary object dated after July 21 — board minutes, resignation/appointment record, a different archived official surface, participant communication or equivalent — is required to say that the exact late-August board was unchanged.
 
 ### Q004 — When and why did Tom Buck, Jonathan Frazier, Chip Thornton, Adam Burrell and others leave the G3 board?
 
@@ -107,7 +116,9 @@ The Georgia Secretary of State official Business Search result for control no. `
 
 Subscriber reporting supports that G3+ was to be acquired/transitioned to an unnamed `another ministry`; secondary reporting says the same unnamed ministry may receive/acquire G3 Press. No primary source currently names the transferee or supplies transaction terms.
 
-Current platform evidence shows G3-branded/storefront continuity and Treefort technical-platform involvement, but platform seller/developer metadata cannot establish beneficial ownership, asset-transfer completion, consideration or transaction counterparties. Living Heritage currently offers access that includes G3+ and has historic institutional ties to G3, but that continuity is **not proof that Living Heritage acquired G3+ or G3 Press**.
+Fresh Sep. 8 searches still do not surface a recipient-side announcement naming the acquirer. The most current reporting continues to describe `another`, as-yet-unnamed ministry. This is a negative search result, not proof that no transfer closed privately.
+
+Current platform evidence shows G3-branded/storefront continuity and Treefort technical-platform involvement, but platform seller/developer metadata cannot establish beneficial ownership, asset-transfer completion, consideration or transaction counterparties. Living Heritage currently offers access that includes G3+ and has historic institutional ties to G3; its own May 17, 2026 privacy policy separately described G3 Ministries as the operator of G3+ while Living Heritage was a separate curriculum publisher. That pre-crisis separation plus current bundling supports a supplier/access relationship, **not proof that Living Heritage acquired G3+ or G3 Press**.
 
 The FY2024/FY2025 Schedule L records do **not** identify a Living Heritage/G3+ transfer; they disclose the salary transaction described in Q001. Do not use Schedule L as circumstantial proof of the asset-transfer theory.
 
@@ -115,11 +126,28 @@ The FY2024/FY2025 Schedule L records do **not** identify a Living Heritage/G3+ t
 
 ### Q006A — What happened to the donated FY2022 real estate and the FY2023 note/receivable?
 
-**Status:** `OPEN / PRIMARY ASSET-MOVEMENT FOLLOW-UP`.
+**Status:** `PARTIAL CLOSURE / SALE VERIFIED_PRIMARY / PARCEL + COUNTERPARTY + NOTE LINKAGE OPEN`.
 
-Raw FY2022 Schedule M reports a $590,000 commercial real-estate donation; Schedule D reports $354,000 land and $236,000 buildings. At FY2022 year end, net land/building/equipment was $621,915. By FY2023 it was $16,777 while a $416,227 notes/loans receivable balance appeared.
+Raw FY2022 Schedule M reports one **$590,000 commercial-real-estate donation**; Schedule D reports **$354,000 land + $236,000 buildings = $590,000**.
 
-**Needed:** property/title records, sale or disposition document, counterparty, proceeds, note terms, subsequent collection/write-down and any board authorization. The balance-sheet movement is real; a related-party transaction or wrongdoing is **not** established by the movement itself.
+Exact FY2023 raw Form 990 reports:
+
+- gross amount from sale of `Other` assets: **$550,000**;
+- cost/basis of those assets: **$590,000**;
+- gain/loss: **−$40,000**;
+- beginning net land/building/equipment: **$621,915**;
+- ending net land/building/equipment: **$16,777**, fully accounted for by remaining equipment;
+- new `OthNotesLoansReceivableNetGrp/EOYAmt`: **$416,227**.
+
+Because FY2022 contains a single $590,000 commercial-real-estate contribution and exactly $590,000 of land/building value, while FY2023 reports a $590,000-basis asset sale and the entire land/building amount disappears, the filings identify the disposition of that donated real-estate accounting object in FY2023 for **$550,000 gross proceeds and a $40,000 loss**.
+
+A common rendered summary labels this only as `Sales of Assets −$40,000`; that **−$40,000 is the loss, not the sale price**.
+
+The simultaneously appearing **$416,227 notes/loans receivable** makes seller financing plausible, but the raw filing does not name the debtor or explicitly connect the note to the sale. The difference between $550,000 gross proceeds and $416,227 receivable is $133,773, but arithmetic coexistence is not transaction identity.
+
+**Official-record acquisition status:** Douglas County/Georgia DOR authority pages are reachable. qPublic is Cloudflare-blocked in the research runtime. The GSCCCA public Real Estate Name Search form was acquired with its real Douglas County parameters and submitted unauthenticated, but each result is automatically redirected into `frmLogin`; no subscription/login/payment bypass was attempted. Wayback/search failure and registry access gates are not negative evidence.
+
+**Needed now:** exact parcel/legal description, donor/grantor, purchaser/grantee, cash at closing, note/security instrument, interest/maturity/collateral, subsequent receivable collection/write-down, board authorization and conflict handling. Related-party or wrongdoing conclusions remain prohibited until those records exist.
 
 ## P1 — blocks strong narrative wording
 
