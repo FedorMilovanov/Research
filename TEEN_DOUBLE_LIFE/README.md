@@ -12,7 +12,8 @@
 1. Resolve repository-root authority through `CURRENT_AUTHORITY.md` → authority registry → selected authority.
 2. Read current `AGENT_RULES.md` and repository evidence policy.
 3. Read **[`CURRENT_SERIES_HANDOFF.md`](./CURRENT_SERIES_HANDOFF.md)** and follow its exact mandatory chain.
-4. Only then open claim-specific/source modules.
+4. Until the shared handoff is safely reconciled with the newest late modules, immediately read **[`301_CONTINUITY_PATCH_LATE_298_300_PRODUCT_TRANSFER_AND_COMPANION_A_PREFLIGHT_2026-09-08.md`](./301_CONTINUITY_PATCH_LATE_298_300_PRODUCT_TRANSFER_AND_COMPANION_A_PREFLIGHT_2026-09-08.md)** as a mandatory additive delta.
+5. Only then open claim-specific/source modules.
 
 Do **not** infer current project phase from historical closure/compression files. Do **not** begin Part I again merely because an older document says “Part I drafting.” Product work already exists and must be live-fetched independently in `FedorMilovanov/gb-is-my-strength` before any Product mutation.
 
@@ -30,7 +31,22 @@ Core adolescent series remains:
 2. Part II — parents;
 3. Part III — church.
 
-Adult/prodigal and daughter/father/marriage/family-government material is separate and remains under `ARCHITECTURE_REVIEW_REQUIRED` before Product drafting/splitting.
+Research-layer architecture for the adult/family-government material is **resolved** by `237`, reconciled by `239`:
+
+4. Companion A — adult child in rebellion: departure, contact, waiting, repentance and return;
+5. Companion B — house, money and consequences;
+6. Companion C — adulthood and parental authority;
+7. Companion D — daughter, father, courtship and marriage.
+
+This is claim ownership, **not automatic Product authorization**. Every companion still requires live Product ownership/collision preflight, evidence-class review, source selection and exact-head CI. Do not draft all companions simultaneously.
+
+The older `99_ADULT_CHILD_COMPANION_SELECTED_SOURCE_PACKET...` remains a useful source packet but does not supersede the later `237/239` ownership split.
+
+## Late continuity / Product transfer
+
+Late disclosure/evidence Research is saturated at the category level by `299`; normal next work is compression/routing/Product readiness, not creating a new module for each hypothetical edge case.
+
+`300_PRODUCT_READINESS_TRANSFER_MATRIX...` is the current late transfer control. In particular, it leaves a compact core delta for Part II (`293–294`) and Part III (`293–297`). Read `301...` for the temporary handoff correction until those late files are folded into `CURRENT_SERIES_HANDOFF.md` itself.
 
 ## Concurrency / filenames
 
@@ -42,9 +58,10 @@ Before every write:
 
 - re-fetch live PR/branch head;
 - re-fetch shared-file blob SHA;
-- prefer additive modules;
+- prefer additive modules where a shared-file edit is not necessary;
 - never overwrite concurrent changes blindly;
-- route material deltas through `CURRENT_SERIES_HANDOFF.md` / late routing controls rather than importing every research file wholesale into Product.
+- route material deltas through `CURRENT_SERIES_HANDOFF.md`, `301...` and the late routing controls rather than importing every research file wholesale into Product;
+- do not force/rebase active shared lanes merely to make history look linear.
 
 ## Publication state
 
