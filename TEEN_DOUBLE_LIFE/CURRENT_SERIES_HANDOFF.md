@@ -8,7 +8,7 @@
 
 > This file is the current continuity entrypoint for the TEEN_DOUBLE_LIFE project. It does **not** supersede repository-root governance. Resolve root authority first through `CURRENT_AUTHORITY.md` → `data/research-authority-registry-v1.json` → the registry-selected authority, then current `AGENT_RULES.md` and `data/repository-evidence-policy-v2.json`.
 
-> This file fixes a handoff defect discovered after Part I/II drafting: the late `140...` control correctly compressed P0 drafting rules but did not require future agents to read the files that preserve the user's explicit project requirements (`45`, `54`, `62`, `78`). A compressed source packet is not allowed to silently erase a user requirement.
+> This file fixes a handoff defect discovered after Part I/II drafting: late compression controls can preserve evidence while still silently dropping an explicit user requirement. A compressed source packet is never allowed to erase a user requirement. The original continuity chain is now extended by the 2026-09-08 household / false-repentance / daughter-authority appendix `176`.
 
 ---
 
@@ -22,11 +22,12 @@ Read in this order before changing Research or drafting the next Product article
 4. `54_CONTINUITY_APPENDIX_MODULES_46_53_AND_CURRENT_SCRIPTURE_FIRST_DIRECTION_2026-09-07.md` — Scripture/Puritan direction, children/choir/ministry controls;
 5. `62_CONTINUITY_APPENDIX_ADULT_CHILD_DEPARTURE_PRODIGAL_EXEGESIS_AND_USER_REQUIREMENTS_2026-09-07.md` — user's adult-child departure scenario and questions;
 6. `78_CONTINUITY_APPENDIX_MODULES_68_77_ADULT_PRODIGAL_PARENTAL_DUTY_REPENTANCE_AND_SOURCE_AUDIT_2026-09-07.md` — adult-child continuation and mode-change controls;
-7. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md` — late P0/exegesis/product-transfer superseders;
-8. exact late appendices `153`, `162`, `170` where relevant;
-9. part-specific selected packets/claim ledgers.
+7. `176_CONTINUITY_APPENDIX_USER_REQUIREMENTS_CORESIDENCE_FALSE_REPENTANCE_RELATIONAL_RUPTURE_AND_DAUGHTER_AUTHORITY_2026-09-08.md` — mandatory 2026-09-08 user requirements on counterfeit repentance, co-residence, relational rupture, OT separation analogies and daughter/father/marriage authority;
+8. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md` — late P0/exegesis/product-transfer superseders;
+9. exact late appendices `153`, `162`, `170` where relevant;
+10. part-specific selected packets/claim ledgers, including `171–175` for the new adult-household/daughter lanes.
 
-**Rule:** `45/54/62/78` preserve user intent; `140/153/162/170` correct unsafe or incomplete formulations. If they appear to conflict, preserve the user requirement while applying the later exegetical/evidence guard rather than silently deleting the requirement.
+**Rule:** `45/54/62/78/176` preserve user intent; `140/153/162/170` correct unsafe or incomplete formulations. If they appear to conflict, preserve the user requirement while applying the later exegetical/evidence guard rather than silently deleting the requirement.
 
 Use exact filenames. Duplicate numeric prefixes exist and numeric prefix alone is never an identifier.
 
@@ -239,7 +240,7 @@ Until that decision is recorded against an actual manuscript, this item is `EDIT
 
 ## 12. Adult child / prodigal companion — controlling user scenario
 
-This is a separate unnumbered companion after the three-part adolescent core unless the user reprioritizes it.
+This is a separate unnumbered companion after the three-part adolescent core unless a later architecture review splits the material for clarity.
 
 Preserve the concrete scenario:
 
@@ -314,7 +315,7 @@ Questions can include:
 - influence on younger siblings;
 - applicable civil/tenancy law.
 
-Parents do not owe an adult child use of the home as infrastructure for gross rebellion. They also must not turn eviction/homelessness into a conversion technique. Jurisdiction-specific legal instructions require live legal verification.
+Parents do not owe a competent adult child use of the home as infrastructure for gross rebellion. They also must not turn eviction/homelessness into a conversion technique. Jurisdiction-specific legal instructions require live legal verification.
 
 Protect younger siblings. Love for one prodigal does not require knowingly exposing minors to pornography, sexual corruption, drugs, violence, predatory friends, secret-chat recruitment or systematic deception.
 
@@ -328,7 +329,139 @@ No universal tablet/timeline exists. Decisions branch by age/jurisdiction, safet
 
 ---
 
-## 13. Parents' own sin remains in scope
+## 13. 2026-09-08 P0 expansion — false repentance, chronic deceit, relational rupture, OT separation, daughter/father authority
+
+The user's later requirements are controlled by `176` and researched in `171–175`. They are **mandatory**, not optional appendices.
+
+### 13.1. Hope in God ≠ confidence in the current repentance claim
+
+A repeated pattern can look like:
+
+`caught → fear/tears → confession/promises → temporary compliance → restored comfort/access → rebuilt concealment → new discovery → revised confession`.
+
+Do not infer that every relapse proves counterfeit repentance. Do not infer that tears prove genuine repentance.
+
+Preserve the distinction:
+
+- **gospel hope:** God can save and restore the hardened liar;
+- **interpretive confidence:** the present repentance claim may have weak credibility;
+- **trust/access:** must be calibrated to observable truth and fruit.
+
+> **Christian hope is not a duty to falsify present evidence.**
+
+Use `171_FALSE_REPENTANCE_REPEATED_DECEPTION_WORLDLY_SORROW_CONFESSION_FRUIT_AND_HOPE_CALIBRATION_2026-09-08.md`.
+
+### 13.2. Chronic deceit can make co-residence itself the stewardship problem
+
+For an adult/near-adult living at home, the question can become not only “did he sin again?” but:
+
+> **Can the household remain truthful, governable and safe under the present arrangement?**
+
+Evaluate:
+
+- repeated serious deception;
+- use of home/resources as infrastructure for sin;
+- refusal of lawful household rules;
+- work/responsibility where adult and able;
+- corruption/endangerment of siblings;
+- violence/drugs/theft/predation;
+- whether mercy functions as a predictable reset for the same hidden system;
+- whether the household requires permanent total surveillance to remain governable;
+- duties toward spouse and other children.
+
+Separate residence may become a legitimate household boundary for a competent adult. It must never be preached as a conversion sacrament.
+
+**Minor/legally dependent children are not the same case.** Do not use adult co-residence logic to authorize unlawful neglect or expulsion of a minor. Operational removal/eviction remains subject to current law and safeguarding duties.
+
+Use `172_CORESIDENCE_UNDER_REPEATED_DECEIT_WHEN_TO_END_SHARED_HOUSEHOLD_AND_WHEN_TO_PERSEVERE_2026-09-08.md`.
+
+### 13.3. Relational change is not automatically revenge
+
+As honesty collapses, relationships can legitimately change in:
+
+- credibility;
+- trust;
+- sensitive access;
+- money/property use;
+- co-residence;
+- ministry/church role;
+- closeness/frequency of voluntary fellowship.
+
+Preserve:
+
+`RELATION ≠ TRUST ≠ FELLOWSHIP ≠ ACCESS ≠ APPROVAL`.
+
+The goal is **not** to make the rebel subjectively uncomfortable. The goal is truth/light without participation, approval or connivance in sin. Discomfort can be a natural consequence when protected darkness meets truthful Christian life.
+
+> **The church should be safe for the sinner to hear the truth, not safe for the sin from the truth.**
+
+Natural parent-child relation and genuine kindness remain. Forgiveness does not require pretending that nothing happened.
+
+Use `173_RELATIONAL_RUPTURE_TRUTH_LIGHT_CHOSEN_SIN_CHURCH_FELLOWSHIP_AND_NO_FALSE_COMFORT_2026-09-08.md`.
+
+### 13.4. Post-departure ordinary contact without false normality
+
+If the adult child still writes/calls, parents may discuss ordinary family life, health, work and practical needs without moral compromise.
+
+> **Not every conversation must be about repentance; no conversation requires parents to pretend repentance is unnecessary.**
+
+Carry forward `69/71`: **MODE CHANGE, NOT TRUTH CHANGE**.
+
+### 13.5. Old Testament removals require jurisdiction audit
+
+The user explicitly requested cases of removal/exile/separation.
+
+High-value bounded analogies include:
+
+- Ps. 100/101: deceit and trusted royal-house/court presence;
+- David/Absalom: distance, return and graded access do not produce repentance;
+- Eli: affection must not nullify real stewardship;
+- Israel: repeated warning and later severe consequences can coexist.
+
+Do **not** directly transfer Mosaic civil penalties, Hagar/Ishmael, Ezra 10, ritual outside-camp rules or covenant exile into a modern parental eviction procedure.
+
+Before applying an OT text, identify actor, jurisdiction, offense, procedure, covenant setting and New Covenant transfer.
+
+Use `174_OT_HOUSEHOLD_REMOVAL_EXILE_SEPARATION_DAVID_ABSALOM_PS101_AND_MODERN_APPLICATION_GUARDS_2026-09-08.md`.
+
+### 13.6. Daughter / father / marriage authority — preserve the user question and the evidence boundary
+
+The user explicitly asked whether an unmarried daughter remains under her father until marriage rather than becoming an autonomous independent unit at 18, and how this relates to husband headship, work and gifts.
+
+Mandatory findings:
+
+- Scripture rejects absolute autonomous self-ownership for men and women;
+- fifth-commandment honour does not expire at civil adulthood;
+- dependent children/residents remain under real parental/household authority;
+- adulthood changes the form/degree of parental government;
+- civil age 18 is not a biblical sacramental threshold, but current civil law matters;
+- wife submission to **her own husband** and husband headship are direct NT marital teaching;
+- marriage creates a new primary household relation;
+- Scripture/Puritan theology give parents, including fathers, a substantial role in marriage and parental consent/blessing;
+- Numbers 30 proves real paternal household/vow authority in Israel but the extension to every mature unmarried daughter is interpretively disputed;
+- Genesis 24 combines strong family arrangement with Rebekah's own affirmative answer;
+- 1 Cor. 7:36–38 has a real guardian/daughter vs fiancé/fiancée interpretive dispute;
+- Gouge and Baxter strongly defend parental consent while also distinguishing grown children from children under earlier government;
+- Gill explicitly describes parental power as less when children are grown and reports an age-bound reading of Numbers 30;
+- “daughter as property transferred to husband” is not safe Christian language;
+- female work, competence and gifts are not inherently rebellion against biblical authority.
+
+If a future article argues for a stronger father-guardianship-until-marriage model, label it as a specific inference and prove it; do not present it as an undisputed NT rule.
+
+Use `175_DAUGHTER_FATHER_AUTHORITY_MARRIAGE_CONSENT_NUM30_GEN24_1COR7_PURITAN_AND_COMPLEMENTARIAN_AUDIT_2026-09-08.md`.
+
+### 13.7. Architecture review required before Product drafting of the expanded adult material
+
+The adult-child corpus may now be too dense for one companion article. Before Product drafting, review whether to keep one long adult-child companion or split:
+
+1. stays/leaves/returns — deception, false repentance, co-residence, separation, contact, restoration;
+2. adult daughter/family government — adulthood, father, marriage consent, husband headship, work/gifts.
+
+This is `ARCHITECTURE_REVIEW_REQUIRED`, **not** permission for an agent to change the Product series automatically.
+
+---
+
+## 14. Parents' own sin remains in scope
 
 The series must not become a weapon only against youth.
 
@@ -338,58 +471,35 @@ Parental guilt does not morally baptize the child's pornography, fornication, de
 
 ---
 
-## 14. Current publication architecture — locked unless a new constraint appears
+## 15. Current publication architecture — core remains locked; adult expansion requires explicit review
 
 1. **Part I — Hidden life:** heart/desire → temporary pleasure → peer/digital world → pornography/sexualized communication → secrecy/lying → hardening → false-profession guard → light/Christ.
 2. **Part II — Parents:** sovereignty + means → formation → individualized boundaries → truth channel → discovery → repentance → trust/re-entrustment.
 3. **Part III — Church:** child responsibility → worship/hypocrisy → public Word vs trusted roles → choir/youth/small groups → corrupting influence → discipline/safeguarding → restoration.
-4. **Unnumbered adult-child/prodigal companion:** changed jurisdiction → contact/non-enabling → household boundaries → younger siblings → return/restoration.
+4. **Adult material:** at minimum one unnumbered companion; `176` requires an explicit architecture review because the new daughter/family-government lane may warrant a distinct companion.
 
-Do not reopen 1-vs-3-vs-5 architecture merely because a new agent arrives.
-
----
-
-## 15. Current Product snapshot and required live checks
-
-Snapshot audited on 2026-09-08; **always re-fetch live state before mutation**.
-
-### Part I — Product PR #1877
-
-- branch: `article/teen-double-life-part-1`;
-- audited head before this handoff: `8015a197ccdc566e83a6530baa2c32078553a0fb`;
-- one MDX permanent diff;
-- Draft / noindex;
-- content reconciled through Research #187 @ `92dda7c09350973879bf8f7640957a7fb67e99a2`;
-- old PR-body claim `behind=0 / 10-of-10 final green` became stale after Product `main` advanced;
-- a later Shared Files Guard run failed closed because the PR merge-ref base parent no longer matched the live target;
-- therefore Part I requires a fresh safe sync with current `main`, collision check and new exact-head CI before any closure/release claim.
-
-### Part II — Product PR #1895
-
-- branch: `article/teen-double-life-part-2`;
-- audited head before this handoff: `423eb905f9c9902ee058ee53ce1a8bcbe0ecb780`;
-- one MDX permanent diff;
-- Draft / noindex;
-- review debt at audit: zero;
-- it had diverged from current Product `main`;
-- Source Authority failed at `git diff --check` because of trailing whitespace in the MDX, so downstream Source Authority proof was skipped;
-- fix hygiene, sync safely with current `main`, verify bounded one-file diff, then obtain a fresh exact-head CI cycle.
-
-### Part III
-
-Not yet created in Product at this snapshot. Before drafting, **mandatory** read: this file + `45/54` + `140` + Part III packets. The choir/worship/unbelieving-attendee/corrupting-access requirements are P0 project intent and may not be compressed away.
-
-### Adult-child companion
-
-Not yet created in Product at this snapshot. Before drafting, **mandatory** read: this file + `62/78` + `140` + adult companion packet/source controls.
-
-### Release architecture
-
-Still separate: route/landing/prev-next/series registry/publication-state release. Do not remove Draft/noindex merely because content prose is complete.
+Do not reopen the three-part adolescent core merely because a new agent arrives. Do not split adult material without the explicit architecture review.
 
 ---
 
-## 16. Parallel-agent rules
+## 16. Product state — live fetch required; do not preserve stale heads here
+
+Product state changes independently and is not maintained as a duplicate mutable census in this handoff.
+
+Before any Product mutation:
+
+- fetch current `FedorMilovanov/gb-is-my-strength` `main`;
+- fetch Part I / Part II / Part III exact branches and PRs (if present);
+- inspect collision/ownership for the intended path;
+- preserve Draft/noindex until explicit publication release;
+- require exact-head applicable CI after every moved Product head;
+- keep route/landing/prev-next/series registry/publication-state release separate from content drafting unless an explicit Product owner lane says otherwise.
+
+Historical Product hashes in older Research appendices are provenance snapshots only.
+
+---
+
+## 17. Parallel-agent rules
 
 A parallel agent may change Research #187 or Product PRs at any time.
 
@@ -397,7 +507,7 @@ Before every write:
 
 - re-fetch exact branch/PR head;
 - re-fetch current blob SHA for an existing file;
-- compare against current `main`;
+- compare against current `main` where the mutation depends on ancestry;
 - never overwrite a changed blob blindly;
 - use additive or reconciled changes;
 - preserve exact filenames and duplicate-prefix provenance;
@@ -408,7 +518,7 @@ If Research head moves, reconcile the delta against the actual manuscript; do no
 
 ---
 
-## 17. Final continuity rule
+## 18. Final continuity rule
 
 A future agent must not reconstruct this project from generic memory or from one compressed source packet.
 
