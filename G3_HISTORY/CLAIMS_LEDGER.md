@@ -82,9 +82,11 @@ To avoid collision with PASS3–PASS15 provisional claim IDs, the following new 
 - FY2022 Schedule M: one commercial-real-estate noncash contribution, **$590,000**, valuation method `BROKER ESTIMATION`;
 - FY2022 Schedule D: land $354,000 + buildings $236,000 + equipment net $31,915 = $621,915 L/B/E;
 - the land + building amounts exactly equal the $590,000 reported commercial-real-estate donation;
-- FY2023 later shows sharply lower L/B/E and a **$416,227 notes/loans receivable** balance; disposition/counterparty/note terms are **OPEN**, not a related-party finding.
+- FY2023 later shows sharply lower L/B/E and a **$416,227 notes/loans receivable** balance; disposition/counterparty/note terms are **OPEN**, not a related-party finding;
+- FY2025 raw Form 990 `IRS990/Desc` states that G3 separated **Living Heritage Homeschool as an independent entity from G3 Ministries during 2025** — **VERIFIED_PRIMARY** through G3-S002/G3-S028;
+- that 2025 separation does **not** identify Living Heritage as the 2026 G3+/G3 Press transferee; `Living Heritage acquired G3+ in the wind-down` remains **UNVERIFIED** under G3-C030/Q006.
 
-These facts are canonical in `FINANCIAL_FORENSICS_2023.md` and `OPEN_QUESTIONS.md` Q006A pending the next non-colliding claim-ID allocation pass.
+The financial/property facts are canonical in `FINANCIAL_FORENSICS_2023.md` and `OPEN_QUESTIONS.md` Q006A. The Living Heritage separation/transferee split is canonical in `ASSET_TRANSFER_FORENSICS.md`, `OPEN_QUESTIONS.md` Q006 and `SOURCE_LEDGER.md`. These remain unnumbered here pending the next non-colliding claim-ID allocation pass.
 
 ## Rule for the future article
 
