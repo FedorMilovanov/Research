@@ -29,13 +29,14 @@ Read before changing Research or drafting Product:
 11. `198_CONTINUITY_APPENDIX_CASE_MATRIX_REFORMATION_CONSENT_STATUS_JURISDICTION_HOUSEHOLD_GOVERNMENT_FEMINISM_RUSSIAN_ECB_2026-09-08.md`;
 12. `209_CONTINUITY_APPENDIX_ADULT_HOUSEHOLD_AUTHORITY_MARRIAGE_REFUSAL_SEX_SPECIFIC_JURISDICTION_RUSSIAN_ECB_AND_PRACTICAL_INDEPENDENCE_2026-09-08.md`;
 13. `214_CONTINUITY_APPENDIX_RELATIONAL_DISTANCE_ADMONITION_MODE_FALSE_REPENTANCE_OT_REMOVAL_TRANSFER_2026-09-08.md`;
-14. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
-15. exact late appendices `153`, `162`, `170` where relevant;
-16. part-specific selected source packets / claim ledgers.
+14. `217_CONTINUITY_APPENDIX_PARENTAL_REPENTANCE_RETURN_HOME_RECEPTION_RESTITUTION_REENTRUSTMENT_AND_CONCURRENT_240_2026-09-08.md`;
+15. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
+16. exact late appendices `153`, `162`, `170` where relevant;
+17. part-specific selected source packets / claim ledgers.
 
-For expanded adult/family-government work, use exact filenames in `171–214`, plus Particular Baptist controls `199–201` and the relevant older source packets (`90–99`).
+For expanded adult/family-government work, use exact filenames in `171–218`, plus Particular Baptist controls `199–201`, the concurrent cross-domain `240_CULTURAL_FAMILY_MYTHS...`, and the relevant older source packets (`90–99`).
 
-**Owner-intent chain:** `45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214`.
+**Owner-intent chain:** `45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217`.
 
 ---
 
@@ -99,13 +100,15 @@ It may not disappear silently.
 
 ## 6. Adult/prodigal hard cases — mandatory
 
-Use especially `210–214` for the latest controls.
+Use especially `210–217` for the latest controls.
 
 - false/ambiguous repentance and repeated deception while still at home;
 - **hope in God ≠ confidence in the current repentance claim**;
 - `REPENTANCE FRUIT ≠ JUSTIFICATION-BY-PROBATION`;
 - tears/remorse/consequence-fear/admission do not self-authenticate repentance;
 - relapse does not automatically prove repentance false; distinguish warfare from defended/planned concealment;
+- `PARENTAL REPENTANCE ≠ MORAL CAPITULATION` and `CHILD'S SIN ≠ PARENTAL IMMUNITY`;
+- a parent may confess anger, humiliation, false accusation or overreach without calling the child's sexual sin, deceit or rebellion righteous;
 - co-residence can become a stewardship problem for a competent adult;
 - separate residence may become a legitimate boundary but never a conversion technique;
 - minors / legally dependent children are a different legal-stewardship case;
@@ -119,6 +122,10 @@ Use especially `210–214` for the latest controls.
 - non-enabling without manufactured “rock bottom”;
 - younger siblings must be protected;
 - return/homecoming ≠ repentance;
+- `RECEIVE THE PERSON ≠ RESTORE EVERY PREVIOUS PRIVILEGE IMMEDIATELY`;
+- `MERCY MAY BE IMMEDIATE; RE-ENTRUSTMENT MAY BE GRADUAL`;
+- restitution may be a real fruit/duty where real harm was done, but it is not the price of forgiveness;
+- trust is domain-specific; past deception does not justify permanent universal distrust;
 - `relationship ≠ co-residence ≠ money ≠ trust ≠ ministry privilege`;
 - no universal timeline/tablet;
 - legal/tenancy/safeguarding operations require current jurisdiction verification.
@@ -155,7 +162,7 @@ Recent physical departure does not instantly erase a still-live family relation.
 
 ## 8. Family-government / daughter / marriage P0s
 
-Use `175`, `177–214` and exact claim-specific sources.
+Use `175`, `177–218` and exact claim-specific sources.
 
 Preserve together:
 
@@ -200,13 +207,16 @@ Every stronger claim must prove its actual relation, domain, New Covenant transf
 
 ## 9. Particular Baptist / 1689 evidence boundary
 
-Use `199–201`.
+Use `199–201` and `218`.
 
 Located strongly:
 
 - 1689 ch. 25 explicitly requires competent marital consent and marriage in the Lord;
 - Hercules Collins preserves strong fifth-commandment authority theology;
 - Benjamin Keach preserves serious child obedience, parental nurture and parental non-provocation;
+- John Gill **directly** teaches that marriage properly includes consent of parents/guardians under whose care single persons may be, while especially preserving the parties' own voluntary consent and rejecting forced marriage;
+- Gill separately says parental power is **less when children are grown**, though filial reverence/observance remain;
+- Samuel Stennett is located through a scholarly source with an exact primary page locator advising young people around the age of `sui juris` to consider the `concurrence of parents and friends`, without endorsing arranged unions;
 - early Particular Baptist marriage was publicly/ecclesially significant.
 
 Not located:
@@ -218,13 +228,15 @@ Not located:
 
 `PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = LOCATOR_HOLD`.
 
-> **Strong parental involvement is Particular Baptist-compatible; detailed Westminster-style procedure must be correctly attributed unless separately demonstrated from Baptist primary sources.**
+`KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = LOCATOR_HOLD`.
+
+> **Direct parental-consent teaching is demonstrably present in mature eighteenth-century Particular Baptist practical theology. It must no longer be described as merely a Presbyterian/Westminster borrowing. But the Westminster Directory's exact procedure may not be attributed to 1689, Keach or the General Assembly without a located primary text.**
 
 ---
 
 ## 10. Marriage consent / unjust parental refusal
 
-Use `193`, `203`.
+Use `193`, `203`, `218`.
 
 Historic Reformed evidence is strong:
 
@@ -232,7 +244,9 @@ Historic Reformed evidence is strong:
 - Westminster Directory expects parental consent even for adults at first marriage;
 - the same Westminster rule requires free consent of those marrying and forbids parents to force marriage or refuse without just cause;
 - Baxter strongly resists secret/self-willed marriage but allows categories where sinful/destructive parental refusal ceases to bind in that specific point;
-- Calvin/Poole on the traditional 1 Cor. 7 father/daughter reading include anti-tyranny limits.
+- Calvin/Poole on the traditional 1 Cor. 7 father/daughter reading include anti-tyranny limits;
+- Gill supplies direct Particular Baptist parental/guardian-consent evidence while preserving voluntary consent;
+- Stennett supplies a second Baptist witness for parental/friend concurrence around marriage by persons treated as `sui juris`.
 
 If parents say **no**, ordinary pastoral sequence is:
 
@@ -342,7 +356,7 @@ Do not say `старые русские баптисты доказанно уч
 
 ## 15. Third parties / suitors — P0
 
-Use `179`, `181`, `193`, `194`, `203`.
+Use `179`, `181`, `193`, `194`, `203`, `218`.
 
 Where parents are substantially faithful and confronting real sin, outsiders must not build a Christian-looking alternative household whose practical function is helping the child avoid truth/consequences.
 
@@ -383,6 +397,8 @@ Do **not** attack as sinful/feminist merely in themselves: female education, pro
 
 The alternative to feminist/individualist flattening is not male self-will or paternal absolutism.
 
+Concurrent `240_CULTURAL_FAMILY_MYTHS...` is a cross-domain red-team control: reject both child-centered permissiveness and parental self-deification; preserve marital covenant priority, dependent-child protection, real authority, anti-manipulation and safeguarding without making psychological literature the anthropology of the project.
+
 ---
 
 ## 17. Adult publication architecture
@@ -391,8 +407,8 @@ The alternative to feminist/individualist flattening is not male self-will or pa
 
 Likely review split:
 
-1. **adult/prodigal companion** — remain / leave / return, false repentance, co-residence, contact, relational rupture, restoration;
-2. **daughter / father / marriage / family-government companion** — adulthood, fifth commandment, parental consent, OT/traditional approaches, marriage transition, husband headship, work/competence, third-party ethics, autonomy/feminism;
+1. **adult/prodigal companion** — remain / leave / return, false repentance, co-residence, contact, relational rupture, parental repentance, reception/restitution/re-entrustment, restoration;
+2. **daughter / father / marriage / family-government companion** — adulthood, fifth commandment, parental consent, OT/traditional/Particular Baptist approaches, marriage transition, husband headship, work/competence, third-party ethics, autonomy/feminism;
 3. optional historical/exegetical sidebar/appendix rather than overloading reader-facing prose.
 
 Do not create/split Product automatically. Re-fetch live Product ownership/collision/CI before Product mutation.
