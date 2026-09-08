@@ -10,7 +10,12 @@ The evidence now supports a much denser chronology of governance change. It stil
 
 ## 2019–2020 — founder-centric corporate officer structure
 
-Georgia records establish the nonprofit on 2019-06-06. The original Articles identify Josh Buice as registered agent at 4979 Highway 5, Douglasville. Annual-registration material identifies Buice in overlapping CEO/CFO roles in the early nonprofit period, with David Crowe as secretary.
+Georgia records establish the nonprofit on 2019-06-06. The original Articles, filing `17370469`, identify Josh Buice as registered agent at 4979 Highway 5, Douglasville.
+
+The early annual registrations are now pinned to exact official filing locators rather than a generic registration summary:
+
+- filing `17449198`, filed **2019-07-16** — Joshua S. Buice listed as **CEO** and **CFO**, David Crowe as **Secretary**, and Josh Buice as registered agent;
+- filing `18903966`, filed **2020-03-30** for registration period 2020–2021 — the same officer/agent structure, with Joshua S. Buice also recorded as filing authorizer with title **Director**.
 
 This supports a founder-centric early officer model.
 
@@ -213,15 +218,19 @@ Because Norton, Sikes and Joyner were Pray’s Mill elders, the July 2026 corpor
 
 ## Georgia status after operational wind-down
 
-Official Georgia Secretary of State Business Search acquired on 2026-09-08 lists G3 Ministries for the Church, Inc. as **`Active/Compliance`**, not formally dissolved, with Scott Aniol as registered/designated agent.
+Official Georgia Secretary of State Business Search acquired on 2026-09-08 lists G3 Ministries for the Church, Inc. as **`Active/Compliance`**, not formally dissolved, with Scott Aniol as registered/designated agent. The current result row exposes internal `businessId=2751672`.
+
+The acquisition code was corrected to follow the live Georgia markup and exact official detail navigation contract. Exact-head run `34244820320` reproduced the site's POST to `/BusinessSearch/BusinessInformation` with `businessId=2751672`, `businessType=Domestic Nonprofit Corporation`, and `fromSearch=true`; that detail/filing-history endpoint returned **HTTP 403**, as did query/path GET fallbacks.
 
 Thus:
 
 - operational wind-down — supported;
 - Church Network dissolution — supported;
-- Georgia corporate dissolution — **not true as of the dated official status observation**.
+- Georgia corporate dissolution — **not true as of the dated official status observation**;
+- current search-row state — primary-accessible;
+- later detail/filing-history surface — exactly resolved but access-blocked.
 
-A later filing can change that status.
+A later filing can change the status. The detail 403 does not prove that later filings do not exist and does not provide exact 2025 director-transition dates.
 
 ## G3 Church Network governance problem
 
@@ -291,5 +300,6 @@ Recurrence is factual; institutional-culture causation is not yet directly evide
 1. exact resignation instruments/minutes for Buck, Thornton, Burrell, Frazier and other 2025 departures;
 2. primary start dates for Norton/Sikes/Joyner/Mooney on the board;
 3. a post-2026-07-21 official continuity record through the late-August crisis;
-4. internal conflict-recusal/minutes evidence for the Buck matter if obtainable lawfully;
-5. durable corporate records showing what board authorized the post-G3 asset transfers, if any.
+4. a directly accessible later Georgia `DownloadFile?filingNo=` locator or authorized filing-history access if available; do not repeat the current unauthenticated detail POST absent an access-state change;
+5. internal conflict-recusal/minutes evidence for the Buck matter if obtainable lawfully;
+6. durable corporate records showing what board authorized the post-G3 asset transfers, if any.
