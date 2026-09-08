@@ -37,9 +37,13 @@ Also lock:
 - `PRECAUTION ≠ CONVICTION`;
 - `PARENT REPORT ≠ AUTOMATIC ECCLESIAL VERDICT`;
 - `PCA BAPTIZED MEMBER UNDER FORMAL DISCIPLINE = DIRECT CURRENT POLITY`;
-- `PCA NONCOMMUNICANT ORDINARY TECHNICAL JUDICIAL PROCESS = DO NOT GENERALIZE / BCO 29.1 CONTROLS`.
+- `PCA NONCOMMUNICANT ORDINARY TECHNICAL JUDICIAL PROCESS = DO NOT GENERALIZE / BCO 29.1 CONTROLS`;
+- `EPH 6 PRESENT CHILD MORAL ADDRESS = DIRECT; ADDRESSED CHILDREN'S BAPTISM / REGENERATION STATUS = NOT STATED`;
+- `ACTS 16:34 HOUSEHOLD HEARING / BAPTISM / REJOICING = DIRECT; PERSON-BY-PERSON FAITH OF EVERY HOUSEHOLD MEMBER = DO NOT CLAIM FROM πεπιστευκὼς`.
 
-### PCA precision correction — 2026-09-08 red-team
+### Red-team corrections now reconciled — 2026-09-08
+
+#### PCA process precision
 
 Current PCA BCO must be stated with both sides intact:
 
@@ -52,9 +56,17 @@ Therefore:
 
 > **formal pre-profession church discipline/government = yes; ordinary technical judicial process for a non-professing child must not be inferred from 27.1–27.2 alone.**
 
-This correction strengthens source fidelity without changing the governing comparative thesis.
-
 OPC remains distinguishable: its current Book of Discipline expressly subjects members by virtue of baptism only to both administrative and judicial discipline. URCNA likewise retains its distinct Article 59 exclusion mechanism for mature baptized members. Do not flatten these polity differences into one generic `Presbyterian/Reformed discipline` model.
+
+#### Philippian jailer precision
+
+Acts 16:31–34 gives household hearing, household baptism and household participation in rejoicing. In v.34 `πεπιστευκὼς` is masculine singular and directly predicates belief of the jailer. Do not state as a direct grammatical fact that Luke explicitly predicates personal faith of every household member in v.34. The narrative remains credobaptist-weighted without this overclaim.
+
+#### Ephesians 6 precision
+
+Eph 6 directly establishes present child moral address and present parental Christian formation. It does not disclose the baptismal or regeneration status of the addressed children. Pre-baptism/pre-conversion moral duty is independently secure from Creator, moral-law, filial-authority and gospel-command evidence; do not infer that narrower status proposition from silence in Eph 6.
+
+`275` is now reconciled against targeted owners `279–283`; where a targeted owner states a narrower claim class, the targeted owner controls.
 
 ---
 
@@ -64,12 +76,12 @@ Use exact filenames.
 
 - `273_COVENANT_CHILDREN_PAEDOBAPTIST_VS_1689_RESPONSIBILITY_VISIBLE_CHURCH_DISCIPLINE_2026-09-08.md` — governing comparative shell.
 - `274_DENOMINATIONAL_MATRIX_PCA_OPC_URCNA_CRC_1689_SBC_RUSSIAN_ECB_CHILD_STATUS_ACCOUNTABILITY_2026-09-08.md` — corrected denominational matrix; **current PCA BCO 29.1 precision correction is authoritative here**.
-- `275_EXEGESIS_STRESS_TEST_ACTS2_39_1COR7_14_EPH6_HOUSEHOLDS_HEB8_COVENANT_CHILDREN_2026-09-08.md` — broad exegesis stress test.
+- `275_EXEGESIS_STRESS_TEST_ACTS2_39_1COR7_14_EPH6_HOUSEHOLDS_HEB8_COVENANT_CHILDREN_2026-09-08.md` — broad exegesis stress test, reconciled against `279–283`.
 - `279_1COR7_14_HOLY_CHILDREN_GILL_SCHREINER_REFORMED_READINGS_AND_BAPTISMAL_INFERENCE_GUARD_2026-09-08.md` — 1 Cor 7:14 targeted owner.
 - `280_HEBREWS8_JEREMIAH31_NEW_COVENANT_MEMBERSHIP_REGENERATE_CHURCH_AND_PAEDOBAPTIST_RESPONSE_2026-09-08.md` — Jer 31 / Heb 8 fork.
 - `281_ACTS2_39_PROMISE_CHILDREN_CALLING_CALVIN_GILL_AND_PUBLICATION_GUARDS_2026-09-08.md` — Acts 2:39.
-- `282_HOUSEHOLD_BAPTISMS_LYDIA_JAILER_STEPHANAS_EVIDENCE_LIMITS_AND_HOUSEHOLD_GOVERNMENT_2026-09-08.md` — household baptisms.
-- `283_EPH6_CHILDREN_DIRECT_APOSTOLIC_ADDRESS_MORAL_AGENCY_COVENANT_MEMBERSHIP_INFERENCE_GUARD_2026-09-08.md` — Eph 6.
+- `282_HOUSEHOLD_BAPTISMS_LYDIA_JAILER_STEPHANAS_EVIDENCE_LIMITS_AND_HOUSEHOLD_GOVERNMENT_2026-09-08.md` — household baptisms; jailer grammar correction authoritative here.
+- `283_EPH6_CHILDREN_DIRECT_APOSTOLIC_ADDRESS_MORAL_AGENCY_COVENANT_MEMBERSHIP_INFERENCE_GUARD_2026-09-08.md` — Eph 6; direct-vs-inference correction authoritative here.
 - `284_PASTORAL_FAILURE_MODES_COVENANT_PRESUMPTION_VS_BAPTIST_ECCLESIAL_VACUUM_2026-09-08.md` — adversarial failure modes.
 - `285_CHILD_ACCOUNTABILITY_AGE_DISCRETION_CAPACITY_AND_NO_MAGIC_18_THRESHOLD_2026-09-08.md` — age/capacity.
 - `286_CHURCH_CHILDREN_MEMBERSHIP_VS_PASTORAL_OWNERSHIP_KEYS_JURISDICTION_AND_CARE_2026-09-08.md` — membership vs pastoral ownership.
@@ -102,9 +114,25 @@ Do not make one silently supersede the other.
 
 ---
 
-## 5. Product preflight — COMPLETE
+## 5. Research PR review surface
 
-Live Product owners were inspected:
+`FedorMilovanov/Research#194` is the bounded Draft review surface for this overlay.
+
+At the latest verified pre-handoff state:
+
+- PR open / Draft / mergeable;
+- base = `research/teen-double-life-digital-sin-20260907`;
+- permanent diff = exactly **24 child-owned files**;
+- child branch `behind=0` against live parent;
+- parent coordination / Companion A files are inherited through ordinary two-parent merges and are not part of the PR diff;
+- category saturation remains in force;
+- mergeability or green CI alone is **not** merge authorization.
+
+Always re-fetch live heads and exact-head workflow state before any later merge/review decision.
+
+---
+
+## 6. Product preflight — COMPLETE, late CORE transfer still pending until Product mutation
 
 ### Part II
 
@@ -114,12 +142,11 @@ Owner path:
 
 `src/content/articles/podrostok-za-kadrom-roditelyam-posle-razoblacheniya.mdx`
 
-Verified before any new transfer edit:
+Verified historical baseline before any new transfer edit:
 
 - one-file Draft/noindex lane;
-- branch `behind=0` against Product `main@f17376bd807cf77ae8c5e62c1d2519c040dae711`;
-- exact head `7d8fe0fa5a351012862b52f4ec0e9ce37ea92b7e`;
-- exact-head CI **11/11 terminal success**;
+- exact head `7d8fe0fa5a351012862b52f4ec0e9ce37ea92b7e` at the preflight checkpoint;
+- exact-head CI **11/11 terminal success** at that checkpoint;
 - existing manuscript already includes no moral waiting room, sovereign regeneration + real means, evidence humility, source-lineage restraint, stopping rule and `WITNESS ≠ SPY`.
 
 Remaining material delta:
@@ -138,12 +165,11 @@ Owner path:
 
 `src/content/articles/podrostok-za-kadrom-chto-delat-tserkvi.mdx`
 
-Verified before any new transfer edit:
+Verified historical baseline before any new transfer edit:
 
 - one-file Draft/noindex lane;
-- branch `behind=0` against Product `main@f17376bd807cf77ae8c5e62c1d2519c040dae711`;
-- exact head `46bda0bbcc330fa962e76717685f15929b509832`;
-- exact-head CI **11/11 terminal success**;
+- exact head `46bda0bbcc330fa962e76717685f15929b509832` at the preflight checkpoint;
+- exact-head CI **11/11 terminal success** at that checkpoint;
 - current manuscript already preserves `never-member ≠ excommunicable member`, `no member-censure jurisdiction ≠ no pastoral responsibility`, family authority ≠ church keys, role/access/safeguarding distinctions and compressed evidence/due-process guards.
 
 Remaining material delta:
@@ -154,11 +180,11 @@ Remaining material delta:
 4. **CORE-MUST / strong signpost:** when another minor/unsafe caregiver is involved, identify a safe responsible recipient or safeguarding route rather than assuming immediate parent-to-parent contact is always correct.
 5. **OPTIONAL / DROP-FIRST:** a very short PCA/OPC/URCNA institutional comparison may sharpen the question of sustained pastoral ownership before Baptist membership. If used, preserve the denomination-specific process distinctions above; especially do not describe PCA non-communing discipline as though its technical judicial pathway were identical to OPC or URCNA.
 
-No Product head was moved in this Research pass merely to preserve these notes. Any later Product mutation invalidates the 11/11 baseline and requires a fresh exact-head cycle.
+The exact Product baselines above are historical checkpoints only. Re-fetch live Product heads before any mutation; after any Product head movement, a fresh exact-head CI cycle is mandatory.
 
 ---
 
-## 6. Historical source-grade state
+## 7. Historical source-grade state
 
 ### Product-ready direct/high
 
@@ -174,7 +200,7 @@ No Product head was moved in this Research pass merely to preserve these notes. 
 
 ---
 
-## 7. What is locked at Research level
+## 8. What is locked at Research level
 
 - baptism does not create moral responsibility;
 - civil age 18 is not a biblical moral-on switch;
@@ -184,6 +210,8 @@ No Product head was moved in this Research pass merely to preserve these notes. 
 - PCA: all baptized members are under formal discipline; do not generalize an ordinary technical judicial process for non-professing children against BCO 29.1;
 - OPC: members by virtue of baptism only are expressly subject to administrative and judicial discipline under the current Book of Discipline;
 - URCNA: Article 59 provides a distinct exclusion mechanism for mature baptized members;
+- Acts 16 household-baptism evidence is cumulative and bounded; do not overstate v.34 as explicit person-by-person household faith;
+- Eph 6 directly establishes present child moral address and parental Christian formation, not baptism/regeneration status;
 - 1689 has strong resources for high child accountability before conversion/membership;
 - Particular Baptist history shows intensive child formation before baptism is not a modern invention;
 - a church-raised nonmember need not be pastorally anonymous;
@@ -192,7 +220,7 @@ No Product head was moved in this Research pass merely to preserve these notes. 
 
 ---
 
-## 8. Remaining bounded holds
+## 9. Remaining bounded holds
 
 These do **not** block the secure high-accountability thesis:
 
@@ -203,9 +231,11 @@ These do **not** block the secure high-accountability thesis:
 5. Any jurisdiction-specific safeguarding/reporting/recording/custody operation — current-law refresh at Product time.
 6. Any platform-specific procedure — current-platform refresh at Product time.
 
+These are **bounded holds, not unfinished Research modules**. Do not reopen them without a real downstream requirement.
+
 ---
 
-## 9. Saturation / stop rule
+## 10. Saturation / stop rule
 
 The late evidence/disclosure parent lane has declared category-level saturation. This comparative lane independently reached the same practical stop condition.
 
@@ -222,9 +252,11 @@ Otherwise update transfer/source/authority owners rather than expanding the corp
 
 ---
 
-## 10. Current architecture verdict
+## 11. Current architecture verdict
 
 `NEW CORE ARTICLE = NO`.
+
+`COMPARATIVE RESEARCH = CATEGORY-SATURATED / RED-TEAM RECONCILED`.
 
 `PART II = SMALL CORE-MUST SAFEGUARDING DELTA + RECOMMENDED BAPTIST HISTORICAL RECOVERY`.
 
@@ -238,6 +270,6 @@ Otherwise update transfer/source/authority owners rather than expanding the corp
 
 ---
 
-## 11. Current master thesis
+## 12. Current master thesis
 
 > **The choice is not between baptizing children and taking them seriously, or refusing infant baptism and leaving them morally neutral until a later conversion. The strongest paedobaptist traditions give believers’ children an objective visible-church covenant status with catechesis, oversight and discipline while still demanding personal faith. The Particular Baptist tradition rejects inherited baptism and membership but historically demands present obedience, prayer, catechesis, correction, Scripture, means of grace and urgent conversion while refusing to counterfeit regeneration. The live Baptist problem is therefore not credobaptism itself but the ecclesial vacuum that appears when “not yet a member” is allowed to mean “not really our pastoral responsibility.”**
