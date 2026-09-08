@@ -22,7 +22,8 @@ Important exact-head runs:
 
 - `34208135511` — FY2022/FY2024/FY2025 raw acquisition + deterministic Schedule L/Part IX readback;
 - `34220049227` — FY2023 asset-sale readback on exact head `a5bb664578ad4c238fc7edbd821285a6647f3d53`;
-- `34220835523` — four-year raw acquisition/receivable trace on exact head `c8bc08d44406c3bd461369f90accb3d1c43cf4fc`, all four matrix jobs green.
+- `34220835523` — four-year raw acquisition/receivable trace on exact head `c8bc08d44406c3bd461369f90accb3d1c43cf4fc`, all four matrix jobs green;
+- `34233453690` — exact-head FY2025 full-leaf keyword trace on `1f75d2b831666128ccff025fc9f5a93c8a6dfd53`, establishing the Living Heritage separation narrative directly from raw `IRS990/Desc`.
 
 The FY2022 target-object ID / ZIP-member basename mismatch remains preserved in custody metadata rather than silently normalized.
 
@@ -105,7 +106,7 @@ A derivative summary that displays `Sales of Assets −$40,000` is showing the *
 
 ### Notes/loans receivable trace
 
-Raw balance sheets then show a continuous receivable:
+Raw balance sheets show a continuous receivable:
 
 | Filing | BOY other notes/loans receivable | EOY other notes/loans receivable | Annual change | Reported investment income |
 |---|---:|---:|---:|---:|
@@ -117,7 +118,7 @@ The carry-forward identity is exact: FY2023 EOY = FY2024 BOY; FY2024 EOY = FY202
 
 **Finding:** the $416,227 amount is a real continuing notes/loans receivable that was paid down or otherwise reduced across the next two filings.
 
-**Linkage status:** seller financing from the $550,000 property sale is now **materially strengthened but still unverified**. The filings do not name the debtor, note date, interest rate, maturity, collateral or explicit transaction link. The FY2024/FY2025 investment-income amounts are likewise not identified as interest from this note.
+**Linkage status:** seller financing from the $550,000 property sale is **materially strengthened but still unverified**. The filings do not name the debtor, note date, interest rate, maturity, collateral or explicit transaction link. The FY2024/FY2025 investment-income amounts are likewise not identified as interest from this note.
 
 **Remaining gate:** exact parcel/legal description, donor/grantor, purchaser/grantee, cash at closing, note/security instrument, interest/maturity/collateral, board approval/conflicts and subsequent disposition of the remaining $153,000.
 
@@ -140,14 +141,7 @@ Official archived G3 `Who We Are` snapshot:
 - raw archived payload SHA-256: `a946cafd2e02252ebbf83deb19ee59015ca1a808cb7a214b85fb3468f71b5865`;
 - decoded HTML SHA-256: `30908b37854208516bc7681d8a33e089e1335e611cc1c3fc9bcc8314250b5dd7`.
 
-It labels **Board of Directors** and names:
-
-- Buck Braswell;
-- Matt Broome;
-- Jon Norton;
-- Matt Sikes;
-- Dylan Joyner;
-- Ron Mooney.
+It labels **Board of Directors** and names Buck Braswell, Matt Broome, Jon Norton, Matt Sikes, Dylan Joyner and Ron Mooney.
 
 The roster is `VERIFIED_PRIMARY` as of **2026-07-21**.
 
@@ -171,7 +165,7 @@ Official Georgia Secretary of State Business Search for control no. `19085916` r
 
 **Boundary:** later corporate filings can change this state.
 
-## 7. Q004 — governance chronology upgraded, not closed
+## 7. Q004 — governance chronology materially narrowed; known May–July archive paths CLOSED AS SEARCH ROUTES
 
 Raw FY2024 reports **7 voting governing-body members, 6 independent** and directly identifies Buice/Buck/Thornton/Braswell/Burrell/Broome/Frazier in director/officer roles.
 
@@ -179,13 +173,26 @@ Raw FY2025 reports **4 voting governing-body members, all 4 independent**, while
 
 Therefore Part VII is not a one-date board snapshot. Exact resignation/start dates and motives still require minutes, resignation instruments or first-person records.
 
-## 8. Q006 — G3+/G3 Press/IP transferee remains OPEN
+For May 1–July 20, 2025, both identified official historical roster paths have successful bounded empty-CDX acquisitions:
+
+- `/about/who-we-are/` — successful run `34228201641`, all three monthly segments `VALID_EMPTY_CDX`;
+- `/vision/leadership/` — successful run `34232494274` on head `ddaddeb8ac03892660dfb017ec9946b9379e33d5`, all three monthly segments `VALID_EMPTY_CDX`, combined state `VALID_EMPTY_ALL_LEGACY_SEGMENTS`.
+
+A later Archive.org timeout/503 rerun is transport failure and does not negate those successful acquisitions.
+
+**Finding:** both known official roster-path searches are exhausted for this transition window. The exact director transition dates remain open because archive absence is not resignation evidence.
+
+## 8. Q006 — G3+/G3 Press/IP transferee remains OPEN; Living Heritage 2025 separation CLOSED
 
 No acquired primary source names the 2026 acquiring ministry or supplies transaction terms for G3+ / G3 Press.
 
 Fresh searches through Sep. 8 still surface only `another ministry` / an unnamed ministry. This is a documented negative search result, not proof that no private closing occurred.
 
-Living Heritage pre-crisis policy material separately describes Living Heritage as a curriculum publisher and G3 Ministries as operator of G3+. Current Living Heritage access bundling therefore supports commercial/service continuity, not ownership. Treefort remains a technical white-label platform/vendor. App-store seller/developer metadata is platform state, not beneficial ownership.
+The FY2025 raw Form 990 now closes one related but distinct fact. Exact-head run `34233453690` searched all 401 `IRS990` leaves and found one relevant `IRS990/Desc` leaf. The filed narrative says G3 **separated Living Heritage Homeschool as an independent entity from G3 Ministries** during 2025.
+
+**Verified primary:** 2025 Living Heritage separation from G3.
+
+**Still unverified:** that Living Heritage was the unnamed ministry that acquired G3+, G3 Press or other G3 assets in the 2026 wind-down. Current G3+ access bundling is commercial/service continuity, not assignment/title evidence. App-store seller/developer metadata is likewise platform state, not beneficial ownership.
 
 FY2024/FY2025 Schedule L contains only the family-member salary disclosure described in Q001; it does not reveal a G3+/Press transfer.
 
@@ -198,30 +205,24 @@ FY2024/FY2025 Schedule L contains only the family-member salary disclosure descr
 | Q001 FY2024/FY2025 Schedule L | **CLOSED / VERIFIED_PRIMARY** | misconduct inference separately unsupported |
 | Q002 FY2023 expense jump | **CLOSED / VERIFIED_PRIMARY** | vendor/project prudence is a finer-grained question |
 | Q003 late-2026 board | **PARTIAL CLOSURE** | July 21 verified; exact-path Wayback exhausted; other late-Aug primary continuity needed |
-| Q004 director transition chronology | **OPEN / materially narrowed** | resignation/minutes/transition records |
+| Q004 director transition chronology | **OPEN / materially narrowed** | both known May–July archive routes exhausted; resignation/minutes/transition records needed |
 | Q005 Georgia dissolution status | **CLOSED AS OF ACQUISITION** | only later status change can reopen |
-| Q006 G3+/Press/IP transferee and terms | **OPEN** | named primary transferee + transaction documents |
+| Q006 G3+/Press/IP transferee and terms | **OPEN / Living Heritage subclaim closed** | 2025 separation verified; named 2026 transferee + transaction documents still absent |
 | Q006A FY2022 real estate / FY2023 receivable | **PARTIAL CLOSURE** | sale closed at filing level; parcel/counterparty/note linkage remains |
 
 ## 10. Structural reconciliation state
 
-Staging evidence now extends through **PASS17**. These files preserve acquisition history and corrections; they are not a second independent evidence system.
+Staging evidence extends through **PASS18**. These files preserve acquisition history and corrections; they are not a second independent evidence system.
 
-Current important canonical promotions already completed:
+Current important canonical promotions completed:
 
 - raw Schedule L findings → master financial/open-question/claims layers;
 - FY2022→FY2023 exact Part IX delta → master financial/open-question layers;
 - July 21 official board roster → governance/open-question layers;
 - Georgia `Active/Compliance` → open-question/claims layers;
-- FY2023 $550,000 sale / $590,000 basis / $40,000 loss → financial/open-question layers;
-- Wayback exact-path exhaustion → open-question layer;
-- PASS17 preserves the multi-year receivable trace pending final master wording normalization.
+- FY2023 $550,000 sale / $590,000 basis / $40,000 loss and multi-year receivable trace → financial/open-question/checkpoint layers;
+- late-2026 exact-path Wayback exhaustion → open-question/checkpoint layers;
+- both known May–July 2025 historical roster paths → director-transition/checkpoint layers;
+- FY2025 Living Heritage separation → asset-transfer/checkpoint layers using the existing raw-IRS source family rather than a duplicate Cause IQ evidence family.
 
-Remaining structural work before article-ready status:
-
-1. normalize the multi-year receivable trace consistently across `FINANCIAL_FORENSICS_2023.md`, `OPEN_QUESTIONS.md`, master claims/source notes and article outline;
-2. reconcile staging PASS3–PASS17 without double-counting aliases/access upgrades;
-3. normalize legacy rights/publication-state columns;
-4. preserve durable custody metadata for decisive acquired objects under repository policy;
-5. refresh PR #188 body/counts against the resulting exact head and re-check branch/base/CI;
-6. keep `PUBLICATION_HOLD=true`.
+Repository-structure work remaining at this checkpoint is no longer evidence reconciliation debt. The remaining items are substantive proof gates listed above, plus PR metadata/exact-head validation. `PUBLICATION_HOLD=true` remains intentional until a later journalism/product handoff pins an immutable Research commit and frozen claim/source set.
