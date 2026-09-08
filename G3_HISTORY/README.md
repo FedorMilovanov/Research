@@ -1,9 +1,12 @@
 # G3 Ministries — evidence reconstruction corpus
 
 **Corpus ID:** `G3-HISTORY-2026-09-07`  
-**Status:** `RESEARCH CHECKPOINT / NOT PUBLICATION-AUTHORIZED`  
-**Research branch:** `research/g3-history-20260907`  
-**Research PR:** `#188`  
+**Status:** `MERGED RESEARCH CHECKPOINT / NOT PUBLICATION-AUTHORIZED`  
+**Current authority:** `main`  
+**Research PR:** `#188` — merged 2026-09-08  
+**Research merge commit:** `d88b146e6ebbf3182f9d16ff59f4ae0f97aa70e2`  
+**Historical research head:** `02e4a191c87884771158afc38846d09a98ae6422`  
+**Historical branch:** `research/g3-history-20260907` — retired after merge  
 **Research cutoff:** 2026-09-08  
 **Scope:** history, theology, governance, finances, institutional development, crises, operational wind-down and unresolved legacy/asset questions involving G3 Ministries / G3 Church Network.
 
@@ -15,6 +18,9 @@ Repository evidence authority:
 
 - [`../data/repository-evidence-policy-v2.json`](../data/repository-evidence-policy-v2.json)
 - [`../00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md`](../00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md)
+- [`ENGINEERING_HARDENING_2026-09-08.md`](ENGINEERING_HARDENING_2026-09-08.md)
+- [`DURABLE_CUSTODY_POLICY.md`](DURABLE_CUSTODY_POLICY.md)
+- [`DURABLE_CUSTODY_MANIFEST.json`](DURABLE_CUSTODY_MANIFEST.json)
 
 ## Non-negotiable research rules
 
@@ -140,6 +146,9 @@ See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) and [`P0_CLOSURE_CHECKPOINT_2026-09
 - [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md)
 - [`P0_CLOSURE_CHECKPOINT_2026-09-08.md`](P0_CLOSURE_CHECKPOINT_2026-09-08.md)
 - [`IRS_RAW_XML_ACQUISITION_GATE.md`](IRS_RAW_XML_ACQUISITION_GATE.md)
+- [`ENGINEERING_HARDENING_2026-09-08.md`](ENGINEERING_HARDENING_2026-09-08.md)
+- [`DURABLE_CUSTODY_POLICY.md`](DURABLE_CUSTODY_POLICY.md)
+- [`DURABLE_CUSTODY_MANIFEST.json`](DURABLE_CUSTODY_MANIFEST.json)
 
 ### Finance / governance / assets
 
