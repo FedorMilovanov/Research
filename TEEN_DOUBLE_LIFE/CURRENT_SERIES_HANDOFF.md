@@ -16,7 +16,7 @@
 
 Resolve repository-root authority, current `AGENT_RULES.md`, and evidence policy first. Then read:
 
-`45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 233 → 234 → 235 → 236 → 265 → 140`
+`45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 233 → 234 → 235 → 236 → 237 → 265 → 140`
 
 Use exact filenames.
 
@@ -28,6 +28,7 @@ Key late controls:
 - `234_LATE_PARENTING_ROUTING...` — routing owner for `256–258`;
 - `235_ROUTING_RECONCILIATION_234_VS_265...` — resolves routing overlap;
 - `236_EDITORIAL_HOLD_RESOLUTION_LAWFUL_LIFE_FEELS_FLAT...` — resolves the old “ordinary lawful life feels flat” editorial HOLD as `KEEP_WITH_CONTROLLED_WORDING`;
+- `237_PUBLICATION_ARCHITECTURE_REVIEW...` — resolves Research-layer publication architecture for the core trilogy and adult/family-government companions;
 - `265_LATE_CORE_ROUTING...` — later/more complete routing owner for `259–264`.
 
 For late Part II/core routing use:
@@ -36,7 +37,9 @@ For late Part II/core routing use:
 
 For owner-intent completeness use `233`.
 
-`140` is the older core-series late-stage handoff and **must not supersede later owner-intent/family-government appendices**.
+For publication claim ownership / splitting use `237`.
+
+`140` is the older core-series late-stage handoff and **must not supersede later owner-intent/family-government appendices**. Its sequencing guard `Part I → Part II → Part III → adult material` remains useful; `237` supersedes only its now-too-coarse assumption that all later adult/family-government material belongs in one generic companion.
 
 ---
 
@@ -54,17 +57,32 @@ Psychology/developmental evidence may describe modern patterns, prevalence or co
 
 ---
 
-## 3. Locked publication architecture
+## 3. Locked publication architecture — Research layer resolved
 
-Core adolescent series:
+`ARCHITECTURE_REVIEW_REQUIRED = RESOLVED_AT_RESEARCH_LAYER` by `237`.
+
+This resolves **claim ownership and article boundaries**, not Product authorization. Product `main`, open PRs, collisions, exact sources, metadata and CI must still be re-fetched before any new Product mutation.
+
+### Core adolescent trilogy — unchanged
 
 1. **Part I — Hidden life**: heart/desire → temporary pleasure → peer/digital/romantic world → pornography/sexualized communication → secrecy/lying → hardening → false-profession guard → light/Christ.
 2. **Part II — Parents**: sovereignty + means → formation → differentiated boundaries → truth channel → discovery → repentance → consequences → trust/re-entrustment.
 3. **Part III — Church**: child responsibility → worship/hypocrisy → public Word vs trusted roles → choir/youth/small groups → corrupting influence → discipline/safeguarding → restoration.
 
-Adult/prodigal and daughter/father/marriage/family-government material remains separate. `ARCHITECTURE_REVIEW_REQUIRED` remains active before creating/splitting new Product articles.
+### Selected companions after the core
 
-High-prefix research modules are **overlays**, not automatic new chapters.
+4. **Adult child in rebellion — departure, contact, waiting, repentance and return.**
+5. **House, money and consequences — co-residence, separate residence, resources, mediation and third parties.**
+6. **Adulthood and parental authority — what changes, what remains, and why civil age 18 is not a biblical sacrament.**
+7. **Daughter, father, courtship and marriage — consent, transition to husband, work/gifts and competing family-order models.**
+
+Default sequencing remains:
+
+`Part I → Part II → Part III → companions`, unless the owner explicitly reprioritizes.
+
+Do not draft all companions simultaneously.
+
+High-prefix research modules are **overlays**, not automatic new chapters/articles. Use `237` for exact claim ownership and cross-link rules.
 
 ---
 
@@ -145,7 +163,7 @@ Use `261`, `264`, `265`.
 
 ## 6. Adult/prodigal hard cases
 
-Use `210–236` plus exact older adult packets where needed.
+Use `210–237` plus exact older adult packets where needed.
 
 Locked:
 
@@ -179,6 +197,8 @@ Locked:
 
 Non-enabling does not cancel ordinary Christian good. Exact estate/tenancy/legal implementation is jurisdiction-dependent.
 
+See `237` for ownership split between the relational/return companion and the house/resources companion.
+
 ---
 
 ## 7. Daughter / father / marriage / family-government
@@ -211,6 +231,8 @@ The proposition
 
 remains `CUMULATIVE_INFERENCE`, not an undisputed explicit NT statute.
 
+See `237` for the split between the general adulthood/parental-authority companion and the daughter/courtship/marriage companion.
+
 ---
 
 ## 8. Third parties / mediation
@@ -240,7 +262,9 @@ Current verdict:
 
 > **No major owner theme identified in the successive instructions is missing from Research.**
 
-Remaining items are explicit archival HOLDs, jurisdiction-dependent applications, or publication-architecture decisions — not forgotten requirements.
+Research-layer publication architecture is now additionally resolved by `237`.
+
+Remaining items are explicit archival HOLDs or jurisdiction-dependent applications — not forgotten requirements.
 
 The main residual risk is now **compression error**: losing evidence class, jurisdiction, status distinction, mirror guard or an explicit owner concern while drafting.
 
@@ -251,10 +275,11 @@ The main residual risk is now **compression error**: losing evidence class, juri
 - `PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = LOCATOR_HOLD`;
 - `KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = LOCATOR_HOLD`;
 - `RUSSIAN_BAPTIST_ADULT_PARENTAL_CONSENT_RULE = ARCHIVAL_LOCATOR_HOLD`;
-- exact modern eviction/tenancy/guardianship/reporting/estate operations require current-jurisdiction verification;
-- expanded adult/family-government publication split remains `ARCHITECTURE_REVIEW_REQUIRED`.
+- exact modern eviction/tenancy/guardianship/reporting/estate operations require current-jurisdiction verification.
 
-The former `ordinary lawful life becomes bland/flat` editorial HOLD is **resolved KEEP_WITH_CONTROLLED_WORDING** in `236` and is no longer an unresolved item.
+The former `ordinary lawful life becomes bland/flat` editorial HOLD is **resolved KEEP_WITH_CONTROLLED_WORDING** in `236`.
+
+The former expanded-publication `ARCHITECTURE_REVIEW_REQUIRED` is **resolved at the Research layer** in `237`; Product preflight/ownership/collision/CI remain separate gates.
 
 ---
 
