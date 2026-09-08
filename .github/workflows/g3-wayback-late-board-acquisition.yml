@@ -104,10 +104,7 @@ jobs:
                   'Known locator fallback never counts as a CDX continuity result.'
               ),
           }
-          (root / 'ACQUISITION_CLASSIFICATION.json').write_text(
-              json.dumps(classification, ensure_ascii=False, indent=2),
-              encoding='utf-8',
-          )
+          (root / 'ACQUISITION_CLASSIFICATION.json').write_text(json.dumps(classification, ensure_ascii=False, indent=2), encoding='utf-8')
           print('ACQUISITION_CLASSIFICATION', state)
           PY
 
@@ -144,7 +141,7 @@ jobs:
 
       - name: Upload temporary archive evidence
         if: always()
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: g3-wayback-late-board-${{ github.run_id }}-${{ github.run_attempt }}
           path: g3-wayback-late-board-output/
