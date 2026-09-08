@@ -16,30 +16,38 @@
 
 Resolve repository-root authority, current `AGENT_RULES.md`, and evidence policy first. Then read:
 
-`45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 233 → 234 → 235 → 236 → 237 → 265 → 140`
+`45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 233 → 234 → 235 → 236 → 237 → 238 → 239 → 265 → 271 → 140`
 
 Use exact filenames.
 
 Key late controls:
 
+- `218B_TARGETED_ARCHIVAL_PASS_KEACH_ASSEMBLIES_STENNETT_AND_RUSSIAN_BAPTIST_MARRIAGE_CONSENT_HOLDS...` — current targeted archive status for the three marriage-consent locator HOLDs;
 - `231_ADVERSARIAL_CLAIM_LEVEL_EVIDENCE_LADDER...` — certainty/overclaim gate for adult/family-government claims;
 - `232_CONTINUITY_APPENDIX_CLAIM_EVIDENCE_LADDER_WARM_AUTHORITY...` — continuity + `258` warm-authority overlay;
 - `233_OWNER_REQUIREMENTS_CLOSURE_AUDIT...` — audit of whether the user's successive requirements were preserved;
 - `234_LATE_PARENTING_ROUTING...` — routing owner for `256–258`;
-- `235_ROUTING_RECONCILIATION_234_VS_265...` — resolves routing overlap;
-- `236_EDITORIAL_HOLD_RESOLUTION_LAWFUL_LIFE_FEELS_FLAT...` — resolves the old “ordinary lawful life feels flat” editorial HOLD as `KEEP_WITH_CONTROLLED_WORDING`;
-- `237_PUBLICATION_ARCHITECTURE_REVIEW...` — resolves Research-layer publication architecture for the core trilogy and adult/family-government companions;
-- `265_LATE_CORE_ROUTING...` — later/more complete routing owner for `259–264`.
+- `235_ROUTING_RECONCILIATION_234_VS_265...` — resolves `234/265` overlap;
+- `236_EDITORIAL_HOLD_RESOLUTION_LAWFUL_LIFE_FEELS_FLAT...` — resolves old “ordinary lawful life feels flat” HOLD as `KEEP_WITH_CONTROLLED_WORDING`;
+- `237_PUBLICATION_ARCHITECTURE_REVIEW...` — adult/prodigal/family-government companion ownership;
+- `238_LATE_ROUTING_SHAME_ANGER_FAMILY_SECRETS_SIBLING_WITNESS...` — earlier partial routing for `266–269`;
+- `239_ARCHITECTURE_AND_LATE_ROUTING_RECONCILIATION_188_237_238_271...` — resolves architecture/routing ownership;
+- `265_LATE_CORE_ROUTING...` — routing owner for `259–264`;
+- `271_LATE_ROUTING_266_270...` — **current** routing owner for `266–270`, superseding `238` only as the routing entrypoint.
 
 For late Part II/core routing use:
 
-`224 → 230 → 232 → 234[256–258] → 265[259–264]`.
+`224[245/246/249/250] → 230[251–255] → 234[256–258] → 265[259–264] → 271[266–270]`.
+
+`235` reconciles the `234/265` overlap. `239` reconciles `188/237` and `238/271`.
 
 For owner-intent completeness use `233`.
 
-For publication claim ownership / splitting use `237`.
+For adult/family-government publication claim ownership use `237`.
 
-`140` is the older core-series late-stage handoff and **must not supersede later owner-intent/family-government appendices**. Its sequencing guard `Part I → Part II → Part III → adult material` remains useful; `237` supersedes only its now-too-coarse assumption that all later adult/family-government material belongs in one generic companion.
+For specialized post-core gap companions use `188`; `188` and `237` are complementary, not competing.
+
+`140` is the older core-series late-stage handoff and **must not supersede later owner-intent/family-government appendices**. Its sequencing guard `Part I → Part II → Part III → adult material` remains useful.
 
 ---
 
@@ -59,7 +67,7 @@ Psychology/developmental evidence may describe modern patterns, prevalence or co
 
 ## 3. Locked publication architecture — Research layer resolved
 
-`ARCHITECTURE_REVIEW_REQUIRED = RESOLVED_AT_RESEARCH_LAYER` by `237`.
+`ARCHITECTURE_REVIEW_REQUIRED = RESOLVED_AT_RESEARCH_LAYER` by `237` + reconciliation `239`.
 
 This resolves **claim ownership and article boundaries**, not Product authorization. Product `main`, open PRs, collisions, exact sources, metadata and CI must still be re-fetched before any new Product mutation.
 
@@ -69,20 +77,28 @@ This resolves **claim ownership and article boundaries**, not Product authorizat
 2. **Part II — Parents**: sovereignty + means → formation → differentiated boundaries → truth channel → discovery → repentance → consequences → trust/re-entrustment.
 3. **Part III — Church**: child responsibility → worship/hypocrisy → public Word vs trusted roles → choir/youth/small groups → corrupting influence → discipline/safeguarding → restoration.
 
-### Selected companions after the core
+### Adult/family-government companion ring — `237`
 
 4. **Adult child in rebellion — departure, contact, waiting, repentance and return.**
 5. **House, money and consequences — co-residence, separate residence, resources, mediation and third parties.**
 6. **Adulthood and parental authority — what changes, what remains, and why civil age 18 is not a biblical sacrament.**
 7. **Daughter, father, courtship and marriage — consent, transition to husband, work/gifts and competing family-order models.**
 
+### Specialized gap-companion ring — `188`
+
+`188` separately owns proposed specialized subjects such as positive sexual formation, child-on-child sexual harm, scrupulosity/tender conscience, assurance/shame, secret romance/cyber dating abuse, institutional integrity, fractured households/siblings, masturbation/conscience, and synthetic/purchased intimacy/deepfake/AI.
+
+`188 ≠ SUPERSEDED_BY_237` and `237 ≠ SUPERSEDED_BY_188`.
+
+Research architecture coverage does **not** commit Product to publishing every proposed companion.
+
 Default sequencing remains:
 
-`Part I → Part II → Part III → companions`, unless the owner explicitly reprioritizes.
+`Part I → Part II → Part III → selected companions`, unless the owner explicitly reprioritizes.
 
 Do not draft all companions simultaneously.
 
-High-prefix research modules are **overlays**, not automatic new chapters/articles. Use `237` for exact claim ownership and cross-link rules.
+High-prefix research modules are **overlays**, not automatic new chapters/articles.
 
 ---
 
@@ -137,7 +153,13 @@ Do not claim burned dopamine receptors, inevitability, irreversible loss of lawf
 - `HONOR ≠ IMAGE MANAGEMENT`; family/church reputation never justifies concealment of real evil;
 - Scripture requires real discipline, but `PAIDEIA ≠ SPANKING ONLY` and one physical method is not an orthodoxy test;
 - true biblical standard remains true when a parent fails it, but parental authority does not confer hypocrisy immunity;
-- `IMPERFECT PARENT ≠ DEFENDED HYPOCRITE`; parental repentance models the gospel better than pretense.
+- `IMPERFECT PARENT ≠ DEFENDED HYPOCRITE`; parental repentance models the gospel better than pretense;
+- `DISCIPLINE ≠ HUMILIATION`; `CONFESSION ≠ PUBLICATION`;
+- `AUTHORITY ≠ INTIMIDATION`; `REVERENCE ≠ PANIC`; seriousness ≠ rage;
+- `PRIVACY ≠ DECEPTION`; `CONFIDENTIALITY ≠ DANGEROUS SECRECY`; loyalty ≠ concealment of danger;
+- `WITNESS ≠ SPY`; reporting danger ≠ tattling; siblings must not be recruited as child investigators;
+- `ACCOUNTABILITY ≠ SURVEILLANCE`; temporary inspection after serious deception ≠ permanent stigma;
+- parent-led oversight of a minor ≠ universal adult parental data access.
 
 ### Conscience/category guard
 
@@ -157,13 +179,13 @@ Locked:
 - false guilt should be corrected; true guilt should not be therapeutically explained away;
 - `ADIAPHORA ≠ MORAL VACUUM`; lawful ≠ always wise; parental dislike ≠ proof of sin; genre label ≠ moral verdict.
 
-Use `261`, `264`, `265`.
+Use `261`, `264`, `265`, `271`.
 
 ---
 
 ## 6. Adult/prodigal hard cases
 
-Use `210–237` plus exact older adult packets where needed.
+Use `210–239` plus exact older adult packets where needed.
 
 Locked:
 
@@ -216,6 +238,8 @@ Preserve together:
 - 1 Cor. 7:36–38 has substantial father/guardian and fiancé readings and cannot carry a universal doctrine alone;
 - historic Reformed tradition contains strong parental-consent practice while also condemning forced marriage and arbitrary/unjust refusal;
 - Gill supplies direct Particular Baptist parental/guardian-consent evidence plus indispensable voluntary consent and says parental power is less when children are grown;
+- Stennett remains `LOCATED_SECONDARY_WITH_EXACT_PRIMARY_LOCATOR` for `concurrence of parents and friends` and must not be upgraded to direct-primary transcription until the page is inspected;
+- Russian ECB historical material strongly supports filial honour/family order and directly protects the voluntary desire of the marrying persons, but does not yet yield a universal adult parental-consent rule;
 - female education, productive work, property competence, gifts and substantial unmarried/widowed agency are not intrinsically rebellion;
 - the alternative to feminist/individualist autonomy is not paternal absolutism, male self-will or permanent childhood.
 
@@ -231,7 +255,15 @@ The proposition
 
 remains `CUMULATIVE_INFERENCE`, not an undisputed explicit NT statute.
 
-See `237` for the split between the general adulthood/parental-authority companion and the daughter/courtship/marriage companion.
+### Current archival status — use `218B`
+
+- `PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = TARGETED_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD`;
+- `KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = TARGETED_EEBO_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD`;
+- `RUSSIAN_BAPTIST_ADULT_PARENTAL_CONSENT_RULE = TARGETED_ARCHIVE_SEARCH_NO_EXACT_LOCATOR / ARCHIVAL_LOCATOR_HOLD`.
+
+`TARGETED_SEARCH_NO_EXACT_LOCATOR ≠ HISTORICAL_DISPROOF`.
+
+See `237` for the split between general adulthood/parental-authority and daughter/courtship/marriage companions.
 
 ---
 
@@ -262,9 +294,11 @@ Current verdict:
 
 > **No major owner theme identified in the successive instructions is missing from Research.**
 
-Research-layer publication architecture is now additionally resolved by `237`.
+Research-layer publication architecture is resolved by `237` and reconciled with the specialized `188` ring by `239`.
 
-Remaining items are explicit archival HOLDs or jurisdiction-dependent applications — not forgotten requirements.
+Late `266–270` material is routed by `271`.
+
+Remaining items are explicit targeted archival HOLDs or jurisdiction-dependent applications — not forgotten requirements.
 
 The main residual risk is now **compression error**: losing evidence class, jurisdiction, status distinction, mirror guard or an explicit owner concern while drafting.
 
@@ -272,14 +306,14 @@ The main residual risk is now **compression error**: losing evidence class, juri
 
 ## 10. Explicit unresolved items
 
-- `PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = LOCATOR_HOLD`;
-- `KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = LOCATOR_HOLD`;
-- `RUSSIAN_BAPTIST_ADULT_PARENTAL_CONSENT_RULE = ARCHIVAL_LOCATOR_HOLD`;
+- `PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = TARGETED_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD`;
+- `KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = TARGETED_EEBO_SEARCH_NO_EXACT_LOCATOR / LOCATOR_HOLD`;
+- `RUSSIAN_BAPTIST_ADULT_PARENTAL_CONSENT_RULE = TARGETED_ARCHIVE_SEARCH_NO_EXACT_LOCATOR / ARCHIVAL_LOCATOR_HOLD`;
 - exact modern eviction/tenancy/guardianship/reporting/estate operations require current-jurisdiction verification.
 
 The former `ordinary lawful life becomes bland/flat` editorial HOLD is **resolved KEEP_WITH_CONTROLLED_WORDING** in `236`.
 
-The former expanded-publication `ARCHITECTURE_REVIEW_REQUIRED` is **resolved at the Research layer** in `237`; Product preflight/ownership/collision/CI remain separate gates.
+The former expanded-publication `ARCHITECTURE_REVIEW_REQUIRED` is **resolved at the Research layer** in `237`; `239` reconciles it with `188`. Product preflight/ownership/collision/CI remain separate gates.
 
 ---
 
