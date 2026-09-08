@@ -6,15 +6,13 @@
 **Draft PR:** #187  
 **Target Product:** `FedorMilovanov/gb-is-my-strength`
 
-> This file is the canonical project index after any context reset. It does **not** supersede repository-root authority. Resolve `CURRENT_AUTHORITY.md` → authority registry → selected authority, then current `AGENT_RULES.md` and evidence policy before using this corpus.
+> Canonical project index after any context reset. It does **not** supersede repository-root authority. Resolve `CURRENT_AUTHORITY.md` → registry-selected authority → current `AGENT_RULES.md` → evidence policy first.
 
-> Detailed requirements live in the numbered continuity/source modules below. This file deliberately avoids duplicating every paragraph of those files; compression may shorten the index, but it may not erase a user requirement.
+> Detailed user requirements live in continuity/source modules. Compression may shorten this index; it may not erase the owner's questions.
 
 ---
 
 ## 1. Mandatory read order after context reset
-
-Read in this order before changing Research or drafting Product:
 
 1. repository-root authority + current agent/evidence policy;
 2. **this file**;
@@ -24,17 +22,18 @@ Read in this order before changing Research or drafting Product:
 6. `78_CONTINUITY_APPENDIX_MODULES_68_77_ADULT_PRODIGAL_PARENTAL_DUTY_REPENTANCE_AND_SOURCE_AUDIT_2026-09-07.md`;
 7. `176_CONTINUITY_APPENDIX_USER_REQUIREMENTS_CORESIDENCE_FALSE_REPENTANCE_RELATIONAL_RUPTURE_AND_DAUGHTER_AUTHORITY_2026-09-08.md`;
 8. `181_CONTINUITY_APPENDIX_DAUGHTER_TRADITIONS_THIRD_PARTY_NON_UNDERMINING_MEDIATION_AND_RIGHTEOUS_INTERVENTION_2026-09-08.md`;
-9. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
-10. exact late appendices `153`, `162`, `170` where relevant;
-11. part-specific selected packets/claim ledgers.
+9. `186_CONTINUITY_APPENDIX_FIFTH_COMMANDMENT_1COR7_EVANGELICAL_MODELS_ANCIENT_ISRAEL_FEMINISM_AND_AUTONOMY_2026-09-08.md`;
+10. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
+11. exact late appendices `153`, `162`, `170` where relevant;
+12. part-specific source packets/claim ledgers.
 
-For the 2026-09-08 adult/family-government expansion, also read exact source modules:
+For expanded adult/family-government work also read exact modules:
 
-`171 → 172 → 173 → 174 → 175 → 177 → 178 → 179 → 180`.
+`171 → 172 → 173 → 174 → 175 → 177 → 178 → 179 → 180 → 182 → 183 → 184 → 185`.
 
-**Authority rule:** `45/54/62/78/176/181` preserve user intent. Later exegesis/evidence controls correct unsafe formulations but may not silently delete the underlying user question.
+**Authority rule:** `45/54/62/78/176/181/186` preserve user intent. Later evidence/exegesis controls may correct unsafe wording but may not silently delete the underlying requirement.
 
-Use exact filenames because duplicate numeric prefixes exist.
+Use exact filenames; duplicate numeric prefixes exist in earlier corpus history.
 
 ---
 
@@ -43,27 +42,41 @@ Use exact filenames because duplicate numeric prefixes exist.
 Required hierarchy:
 
 1. Scripture in historical-grammatical/canonical context;
-2. 1689 LBCF as confessional synthesis/guard;
-3. Puritan/Reformed practical theology — especially Owen, Watson, Brooks, Baxter; also Gouge, Flavel, Charnock, Calvin, Spurgeon, Gill, Edwards where materially useful;
-4. conservative biblical counseling selectively;
-5. empirical/public-health research only where Scripture does not quantify a modern fact.
+2. 1689 LBCF as confessional synthesis/guard where directly applicable;
+3. high-value Reformed relational-authority controls such as Westminster Larger Catechism 124–132;
+4. Puritan/Reformed practical theology — Owen, Watson, Brooks, Baxter, Gouge, Calvin, Gill, Poole, Flavel, Charnock, Edwards, Spurgeon where useful;
+5. conservative biblical counseling selectively;
+6. ancient-Israel / historical scholarship for descriptive context;
+7. empirical/public-health research only for modern facts Scripture does not quantify.
 
-Do **not** drift back to psychology-led anthropology.
+Do not drift back to psychology-led anthropology.
 
 Controlling anthropology:
 
 `total depravity + sovereign regeneration + ordained means + full human responsibility`.
 
-Psychology must not define sin, guilt, conscience, regeneration, repentance, worship, church participation or heart motives.
+Psychology must not define sin, guilt, conscience, regeneration, repentance, worship, family authority or church participation.
 
 ---
 
-## 3. Core adolescent series — subjects that must not be compressed away
+## 3. Core adolescent series — locked architecture
 
-Especially children of believing parents can develop a hidden/double life involving:
+1. **Part I — Hidden life:** heart/desire → temporary pleasure → peer/digital world → pornography/sexualized communication → secrecy/lying → hardening → false-profession guard → light/Christ.
+2. **Part II — Parents:** sovereignty + means → formation → individualized boundaries → truth channel → discovery → repentance → trust/re-entrustment.
+3. **Part III — Church:** child responsibility → worship/hypocrisy → public Word vs trusted roles → choir/youth/small groups → corrupting influence → discipline/safeguarding → restoration.
+
+Do not reopen this three-part core merely because a new agent arrives.
+
+Adult/family-government material remains separate and has `ARCHITECTURE_REVIEW_REQUIRED` before Product drafting.
+
+---
+
+## 4. Teen hidden-life P0s
+
+Must preserve:
 
 - peer approval/status/being “cool”;
-- profanity, obscene humor and sexualized speech;
+- profanity, obscene humour and sexualized speech;
 - pornography/lust;
 - sexualized chats/sexting;
 - hidden accounts/groups/DMs;
@@ -73,75 +86,55 @@ Especially children of believing parents can develop a hidden/double life involv
 - conscience becoming less practically sensitive;
 - fear of exposure replacing fear of God;
 - corrupting/recruiting peers;
-- digital access making the hidden peer world persistent, private and portable.
+- digital infrastructure making the hidden peer world persistent/private/portable.
 
-Digital technology does not create the fallen heart. It reduces friction around access, secrecy, repetition, peer presence, recommendation and redistribution.
+Digital technology does not create the fallen heart; it lowers friction around access, secrecy, repetition, peer presence and redistribution.
 
-Never publish an invented `internet ×20` coefficient.
+Never publish an invented `internet ×20` coefficient or universal dopamine-damage claim.
 
-AI-companion material remains reserve evidence unless an actual manuscript sentence needs it.
-
----
-
-## 4. Correct model of advanced hidden sin
-
-Do **not** force a stage where the teenager must consciously decide that sexual sin is “normal.”
-
-A person may still know it is wrong while practically ceasing to debate it:
+Do not force a stage where the teenager consciously decides sexual sin is “normal.” He may still know it is wrong while practically ceasing to debate it:
 
 `desire → yield → hide → repeat`.
 
-Prefer biblical categories:
-
-- slavery to passions/pleasures;
-- deceitfulness of sin;
-- hardening;
-- callousness/loss of sensitivity;
-- giving oneself to sensuality;
-- suppression of known truth;
-- habitual practical rule of lust.
-
-Do not use “brain switched off” as a technical explanation. Do not diagnose irreversible searing from ordinary teenage sexual sin.
+Use biblical categories: slavery to passions, deceitfulness of sin, hardening, callousness, suppression of known truth, habitual practical rule of lust.
 
 ---
 
-## 5. Pleasure, rival love and religious form
+## 5. Pleasure / rival love / religious form
 
 Preserve:
 
-- Prov. 9 — stolen waters are sweet while death is hidden;
+- Prov. 9 — stolen waters sweet while death hidden;
 - Heb. 11 — fleeting pleasures of sin;
 - James 1 — desire entices;
 - Brooks — bait shown / hook hidden;
-- 2 Tim. 3:4–5 — love of pleasure can rival love of God while a form of godliness remains.
+- 2 Tim. 3:4–5 — love of pleasure can rival love of God while form of godliness remains.
 
-The issue is not merely “strong stimulation” but allegiance/love.
+The deepest issue is allegiance/love, not merely stimulation.
 
 One serious fall does not automatically prove false conversion.
 
 ---
 
-## 6. Parenting, restraint and regeneration
+## 6. Parenting / restraint / regeneration
 
 Locked distinctions:
 
 - God alone regenerates;
-- godly parenting does not mechanically produce regeneration;
+- godly parenting does not mechanically regenerate;
 - therefore parenting is **not** irrelevant;
 - Scripture, prayer, discipline, example, companionship and boundaries are real means/formative influences;
 - `unregenerate ≠ innocent`;
-- outward restraint is not new birth but can still be required;
-- equal love does not require identical exposure/freedom for every child;
-- strong boundaries must coexist with Eph. 6:4 / Col. 3:21 non-provocation;
-- radical removal of occasions must be followed by `put off → put on / flee → pursue` formation.
+- outward restraint is not new birth but can be required/useful;
+- equal love does not require identical freedom/exposure for every child;
+- strong boundaries coexist with Eph. 6:4 / Col. 3:21 non-provocation;
+- restriction must be followed by `put off → put on / flee → pursue` formation.
 
-Never write fatalism such as “election decides everything, so upbringing makes little difference.”
+Never write practical fatalism.
 
 ---
 
-## 7. Discovery, repentance, trust
-
-Mandatory distinctions:
+## 7. Discovery / repentance / trust
 
 `caught` ≠ `admitted after proof` ≠ `voluntarily disclosed` ≠ `asked for help before falling`.
 
@@ -157,17 +150,15 @@ Do not heart-read, but distinguish observable patterns:
 
 Forgiveness ≠ reconciliation ≠ credibility ≠ trust ≠ access ≠ role ≠ safeguarding.
 
-Fruit is evidence of repentance, not the price of justification. Exposure, punishment and consequences do not atone. Christ alone grounds pardon/righteousness.
+Fruit is evidence of repentance, not the price of justification. Christ alone grounds pardon/righteousness.
 
 ---
 
-## 8. Part III P0 — children, worship, choir and church access
+## 8. Part III P0 — children / worship / choir / church access
 
 Children do not receive a lower doctrine of holiness because they are children.
 
-Locked distinction:
-
-`PUBLIC HEARING OF THE WORD`
+`PUBLIC HEARING OF WORD`
 ≠ `MEMBERSHIP / TABLE`
 ≠ `CONGREGATIONAL/CATECHETICAL PARTICIPATION`
 ≠ `FORMAL CHOIR / PUBLIC PLATFORM`
@@ -177,9 +168,9 @@ Locked distinction:
 
 **WORSHIP DUTY ≠ CHOIR ENTITLEMENT.**
 
-There is no explicit NT children’s-choir admission statute; exact policy is prudence. But known defended/corrupting conduct may justify removal from representative/trusted access.
+There is no explicit NT children’s-choir admission statute; exact policy is prudential. Known defended/corrupting conduct may justify restricting representative/trusted access.
 
-Do not teach an unregenerate child simply to stop all prayer/singing. Expose the contradiction and call to true worship, repentance and faith.
+Do not tell an unregenerate child simply to stop all prayer/singing. Expose contradiction and summon to true worship, repentance and faith.
 
 Russian Psalm-numbering guard: historical English Psalm 50:16–21 = Synodal **Пс. 49:16–21**.
 
@@ -189,58 +180,26 @@ Russian Psalm-numbering guard: historical English Psalm 50:16–21 = Synodal **�
 
 “Unbelieving” is not moral exemption.
 
-If leaders know of deliberate sexual/profane rebellion, lying, recruitment, obscene material, or use of youth access for corrupting/romantic purposes, admonish and protect proportionately.
+If leaders know deliberate sexual/profane rebellion, lying, recruitment, obscene material or corrupting/romantic misuse of youth access, admonish and protect proportionately.
 
 Public hearing of Word remains open where safety permits; unrestricted trusted access does not follow.
 
 > **Retention of attendance is not a higher good than truthful admonition.**
 
-Formal 1 Cor. 5 discipline applies to professing insiders, not juridically to a never-member. Pastoral admonition/stewardship/safeguarding still apply to outsiders.
+Formal 1 Cor. 5 discipline applies to professing insiders, not juridically to never-members. Pastoral admonition/stewardship/safeguarding still exist for outsiders.
 
 ---
 
-## 10. Sexual sin / coercion / victimization
-
-Keep distinct:
-
-- voluntary sexual sin/foolishness;
-- peer/romantic pressure and control;
-- grooming;
-- nonconsensual redistribution;
-- sextortion;
-- stalking/threats/abuse.
-
-Romantic status does not turn pressure into consent.
-
-A teenager may bear responsibility for a voluntary act and still become victim of another person’s later abuse.
-
-Safeguarding is not replaced by church discipline or moral lecture.
-
----
-
-## 11. Editorial HOLD — “ordinary life becomes bland”
-
-The owner’s original concern that repeated pornographic/sexualized/profane stimulation can make lawful ordinary life feel increasingly flat must not disappear silently.
-
-Before final release record one decision:
-
-- **KEEP** using biblical/pastoral appetite/love/enslavement language without speculative neuroscience; or
-- **CUT WITH REASON** if it merely duplicates stronger claims or requires weak scaffolding.
-
-Until then: `EDITORIAL_HOLD`.
-
----
-
-## 12. Adult child / prodigal — mandatory hard cases
+## 10. Adult child / prodigal — mandatory hard cases
 
 Preserve:
 
-- believing-home upbringing and prior double-life discoveries;
-- false/ambiguous repentance and repeated deception while still at home;
+- believing-home upbringing and prior discoveries;
+- false/ambiguous repentance and repeated deception while at home;
 - civil adulthood and changed parental jurisdiction;
 - sudden/secret departure, open contact or blocking;
 - Luke 15 as repentance/mercy text, **not** universal contact/no-contact protocol;
-- reasonable immediate safety/fact clarification after sudden departure;
+- reasonable initial safety/fact clarification after sudden departure;
 - `MODE CHANGE, NOT TRUTH CHANGE` in repeated admonition;
 - non-enabling without manufactured suffering;
 - co-residence conditions and protection of younger siblings;
@@ -249,31 +208,29 @@ Preserve:
 
 `relationship ≠ co-residence ≠ money ≠ trust ≠ ministry privilege`.
 
-Do not manufacture “rock bottom.” Do not finance the far country merely to remove every consequence.
+Do not manufacture “rock bottom.” Do not finance the far country merely to erase every consequence.
 
-Legal/tenancy/safeguarding procedures require current jurisdiction verification.
+Legal/tenancy/safeguarding procedure requires current jurisdiction verification.
 
 ---
 
-## 13. False repentance / chronic deception / co-residence
+## 11. False repentance / chronic deception / co-residence
 
 Controls: `171`, `172`.
 
-P0:
-
 > **Hope in God ≠ confidence in the current repentance claim.**
 
-Repeated pattern:
+Repeated pattern
 
 `caught → fear/tears → confession → temporary compliance → restored comfort/access → rebuilt concealment → new discovery`
 
-can legitimately reduce credibility without proving the heart permanently unreachable.
+can legitimately reduce credibility without proving permanent reprobation.
 
-For a competent adult, the question may become:
+For a competent adult ask:
 
 > **Can this household remain truthful, governable and safe under the present arrangement?**
 
-Separate residence may become a legitimate boundary where chronic deceit, corruption of siblings, use of home/resources as sin infrastructure, refusal of lawful household order, danger, or permanent-surveillance burden make co-residence untenable.
+Separate residence may become a legitimate boundary where chronic deceit, corruption of siblings, use of home/resources as sin infrastructure, refusal of lawful household order, danger or permanent-surveillance burden make co-residence untenable.
 
 Separate residence is not a conversion technique.
 
@@ -281,13 +238,13 @@ Minors/legally dependent children are a different stewardship/legal case.
 
 ---
 
-## 14. Relational rupture / post-departure contact
+## 12. Relational rupture / post-departure contact
 
 Control: `173` plus earlier `69/71`.
 
 `RELATION ≠ TRUST ≠ FELLOWSHIP ≠ ACCESS ≠ APPROVAL`.
 
-The goal is not to manufacture discomfort. Christians must live in truth/light and refuse false moral comfort or connivance.
+Goal is not manufactured discomfort. Christians live in truth/light and refuse false moral comfort or connivance.
 
 > **The church should be safe for the sinner to hear truth, not safe for the sin from truth.**
 
@@ -295,11 +252,11 @@ After departure:
 
 > **Not every conversation must be about repentance; no conversation requires parents to pretend repentance is unnecessary.**
 
-Ordinary kindness/contact can remain while trust, access, money, co-residence or ministry privileges change.
+Ordinary kindness/contact may remain while trust, access, money, co-residence or ministry privileges change.
 
 ---
 
-## 15. OT removal/separation analogies
+## 13. OT separation/removal analogies
 
 Control: `174`.
 
@@ -307,38 +264,30 @@ Useful bounded analogies:
 
 - Ps. 100/101 — deceit and trusted royal-house/court presence;
 - David/Absalom — distance, return and graded access do not create repentance;
-- Eli — affection must not nullify real stewardship;
-- Israel — patient repeated warning and later severe consequences can coexist.
+- Eli — affection must not nullify stewardship;
+- Israel — repeated warning and later severe consequences can coexist.
 
-Do **not** turn:
+Do not turn Mosaic civil penalties, Hagar/Ishmael, Ezra 10, ritual outside-camp rules or covenant exile into direct modern parental eviction procedures.
 
-- Mosaic civil penalties;
-- Hagar/Ishmael;
-- Ezra 10;
-- ritual outside-camp rules;
-- covenant exile
-
-into direct modern parental eviction procedures.
-
-Always audit actor, jurisdiction, offense, procedure, covenant setting and New Covenant transfer.
+Audit actor, jurisdiction, offense, procedure, covenant setting and NT transfer.
 
 ---
 
-## 16. Daughter / father / marriage / adulthood
+## 14. Daughter / father / adulthood / marriage
 
-Controls: `175`, `177`, `178`, `180`.
+Controls: `175`, `177`, `178`, `180`, `182–186`.
 
 Locked findings:
 
 - Scripture is far less individualistic than modern Western autonomy;
-- ancient Israelite household (`bet ha-av`) was kinship/corporate rather than atomistic;
-- family/parental involvement in marriage is substantial in Scripture;
-- Genesis 24 combines strong family negotiation with Rebekah’s own affirmative answer;
-- Exodus 22 gives father real standing in its Mosaic civil-law marriage case;
+- ancient Israelite household was kinship/corporate rather than atomistic;
+- family/parental involvement in marriage is substantial;
+- Genesis 24 combines strong family negotiation with Rebekah’s affirmative answer;
+- Exodus 22 gives father real standing in its Mosaic civil-law case;
 - Numbers 30 gives real paternal/husband household authority, but its extension to every mature unmarried daughter is interpretively disputed;
-- Gill/Jewish age tradition reads paternal vow-annulment as minority-bound; Poole reads broader continuing unmarried-household jurisdiction;
-- later Jewish Kiddushin distinguishes minor daughter from adult daughter regarding paternal betrothal authority;
-- Gouge/Baxter/Gill strongly resist individualist bypass, while also distinguishing grown children from earlier child-government;
+- Gill/Jewish age tradition limits paternal vow-annulment after maturity; Poole reads broader unmarried-household jurisdiction;
+- later Jewish Kiddushin distinguishes minor/adult daughter regarding paternal betrothal authority;
+- Gouge/Baxter/Calvin/Gill strongly resist individualist bypass while recognizing maturity/jurisdiction changes;
 - fifth-commandment honour persists;
 - adulthood changes form/degree of parental government;
 - civil age 18 is not a biblical sacrament, but civil law matters;
@@ -349,190 +298,264 @@ Locked findings:
 - “daughter as transferable property” is unsafe Christian language;
 - female work/competence/gifts are not inherently rebellion.
 
-If advocating a stronger father-guardianship-until-marriage model, label it as an inference and prove it; do not present it as undisputed NT law.
+If a stronger father-guardianship-until-marriage model is advocated, label it as an inference and prove it; do not present it as undisputed NT law.
 
 ---
 
-## 17. Comparative traditions / Russian ECB context
+## 15. Fifth-commandment relational authority — P0 deep control
 
-Control: `178`, source ledger `180`.
+Control: `182`.
 
-Map rather than flatten:
+Westminster Larger Catechism 124–132 gives the project a crucial grammar:
 
-- strong father-led/courtship models;
-- Puritan/Reformed household-government models with maturity transition;
-- modern conservative complementarian/biblical-counseling models;
-- modern individualist dating model.
+- real superiors/inferiors/equals;
+- duties according to **several relations**;
+- obedience/deference to **lawful** commands and counsels;
+- authority received from God and bounded by relation/place;
+- superiors sin through unlawful commands, sinful encouragement, excessive correction, provocation, unjust rigor or remissness.
 
-Official Russian ECB sources support:
+Therefore reject both:
 
-- family primacy;
-- parents as principal educators;
-- church/school/other institutions assisting rather than replacing parents;
-- father’s real role in upbringing;
-- continuing importance of family ties.
+`18 => parents have no special moral claim`
 
-They do **not** establish one detailed national adult-daughter/courtship protocol. Local Russian Baptist practice is heterogeneous; do not present a local custom as Union doctrine.
+and
+
+`parent => unlimited command jurisdiction forever`.
+
+Calvin requires strong deference, even to difficult/inconvenient lawful parental demands, but God remains the ceiling.
+
+Gill explicitly says parental power is less when children are grown while gratitude/reverence continue.
+
+> **Reduced power is not dissolved relationship; enduring honour is not perpetual childhood.**
 
 ---
 
-## 18. P0 — third parties must not undermine righteous parents
+## 16. 1 Corinthians 7 — P0 deep control
+
+Control: `183`.
+
+The chapter contains evidence that prevents simplistic slogans:
+
+- unmarried woman/virgin is a direct servant of the Lord concerned with holiness;
+- vv. 36–38 have a substantial traditional father/guardian reading supporting strong parental marriage authority;
+- Calvin/Poole still limit tyranny and require regard for daughter's welfare/desire;
+- alternative fiancé reading is exegetically substantial;
+- v. 39 describes a widow free to marry whom she wishes, only in the Lord.
+
+Therefore 1 Cor. 7 cannot honestly prove either:
+
+`parental involvement is unbiblical`
+
+or
+
+`every adult unmarried woman requires a male human governor for all major decisions`.
+
+Popular `male covering` language is not a controlling biblical phrase. Use actual relations: child/parent, wife/her own husband, member/elders, citizen/magistrate, believer/Christ.
+
+---
+
+## 17. Modern evangelical models — distinguish, do not caricature
+
+Control: `184`.
+
+At minimum distinguish:
+
+### Evangelical egalitarian/mutualist
+
+Mutualizes Eph. 5 authority and rejects sex-based marital/church hierarchy.
+
+### Mainstream complementarian
+
+Affirms husband headship/wife submission and male eldership while usually treating adult parental blessing as very important but not absolute.
+
+### Strong household/father-guardianship
+
+Often teaches adult unmarried daughter remains under father until marriage and courtship should be father-governed.
+
+The project is conservative/complementarian but must critique each actual argument rather than invent a binary.
+
+Danvers/CBMW does **not** itself establish the strongest adult-daughter guardianship model.
+
+Piper is a useful witness that serious complementarianism can treat parental marriage blessing as weighty but nonabsolute for a competent adult after prolonged prayer/counsel.
+
+---
+
+## 18. Feminism / autonomy — precision required
+
+Controls: `184–186`.
+
+Do not use `feminism` as one undifferentiated bucket.
+
+Distinguish:
+
+1. civil/legal women's rights;
+2. broader Western expressive/atomistic individualism;
+3. sexual-revolution feminism;
+4. evangelical egalitarian theology;
+5. radical anti-patriarchal ideology.
+
+The project may strongly oppose (3)/(4)/(5) where they conflict with Scripture and may critique the autonomous self behind much modern culture.
+
+Do **not** claim education, property ownership, paid work, financial competence or female gifts are inherently feminist rebellion.
+
+Prov. 31 and ancient household economics prevent that simplification.
+
+Preferred cultural thesis:
+
+> **Modern Western individualism, reinforced by important feminist currents, often treats inherited dependence and asymmetrical authority as presumptively suspect in a way foreign to Scripture’s relational/covenantal social imagination.**
+
+Avoid monocausal rhetoric such as `feminism invented independent daughters`.
+
+---
+
+## 19. Ancient Israel / feminist scholarship / presentism
+
+Control: `185`.
+
+Historical scholarship strongly supports:
+
+- patrilineal/patrilocal kinship;
+- household as primary social/economic unit;
+- marriage as family/kinship transition;
+- real paternal authority;
+- substantial female household labour/economic competence;
+- diverse father-daughter relations;
+- age/status distinctions with legal significance;
+- female agency alongside hierarchy.
+
+Use feminist/ideological-critical scholarship for descriptive reconstruction where sound; do not import its normative theology automatically.
+
+Presentism has two forms:
+
+- liberal: ancient hierarchy differs from current equality ideals, therefore obsolete;
+- conservative: ancient Israel had a form, therefore Christians must recreate the entire civil/household form.
+
+Both are unsafe.
+
+For every transfer ask: category, jurisdiction, prescription/description, covenant setting, NT continuation/abrogation/general equity.
+
+> **The biblical alternative to modern individualism is not erasure of the woman as a person; it is restoration of persons to God-ordained relations.**
+
+---
+
+## 20. Third parties — do not undermine righteous parents
 
 Controls: `179`, `181`.
 
-This includes friends, relatives, youth leaders, pastors, mentors and suitors.
+Includes friends, relatives, pastors, youth leaders, mentors and suitors.
 
-Where parents are substantially faithful and confronting real sin, a third party must not build a Christian-looking alternative household whose practical function is to help the child avoid truth/consequences.
+Where parents are substantially faithful and confronting real sin, outsiders must not build a Christian-looking alternative household whose function is avoiding truth/consequences.
 
-Wrong patterns can include:
+Wrong patterns:
 
 - secret romantic alliance against parents;
-- secret housing/resources mainly to preserve rebellion;
+- secret housing/resources mainly preserving rebellion;
 - teaching concealment of family-relevant facts;
-- labeling parents “legalists/abusers” merely because they confront fornication/pornography/lying/profanity;
+- calling parents `legalists/abusers` merely for confronting fornication/pornography/lying/profanity;
 - hearing one side and treating it as adjudicated fact;
-- replacing lawful parental limits simply because another adult can be nicer.
+- replacing lawful limits because another adult can be nicer.
 
 > **Do not build a Christian-looking escape hatch from righteous parental correction.**
 
-Where the young person is minor/dependent/recently departed/still in active family contact, outsiders should ordinarily respect the live family relation and work transparently through parents where appropriate.
+Where young person is minor/dependent/recently departed/still in active family contact, outsiders should ordinarily respect the live family relation and work transparently through parents where appropriate.
 
-Especially: romance, travel, housing, finances, private mentoring, youth access and plans directly affecting household rules.
-
-For competent adults this is respect/transparency/mediation, not perpetual parental ownership.
+For competent adults this means respect/transparency/mediation, not perpetual parental ownership.
 
 ---
 
-## 19. P0 — third parties must also resist sinful parents
+## 21. Third parties — do not baptize sinful parents as authority
 
 Supporting parental authority is Christian only while authority remains under God.
 
-Do **not** preserve:
+Do not preserve:
 
 - sexual/physical abuse;
 - violence/threats;
-- coercive confinement;
 - forced marriage;
-- commands to sin;
-- suppression of obedience to Christ;
-- serious exploitation;
-- arbitrary adult-conscience domination falsely presented as Scripture.
+- demands to sin/lie/deny Christ;
+- dangerous confinement;
+- manipulative claims of divine authority over matters Scripture leaves to lawful adult conscience.
 
-In such cases faithful outsiders may need to:
+`left home` alone does not identify the moral case.
 
-- protect the child/young adult;
-- challenge parents;
-- involve elders/pastors;
-- involve lawful safeguarding/civil authorities;
-- support separate living where necessary.
+Distinguish:
 
-> **Do not choose “the parents” or “the child” as your party before facts. Choose what God calls true.**
+1. rebellion-preserving departure;
+2. escape from genuine abuse/tyranny;
+3. mixed case where child and parents both sin.
 
-`left home` alone does not prove rebellion. Distinguish:
+> **Do not choose “parents” or “child” as a party before facts; choose what God calls true.**
 
-- departure to preserve sin;
-- escape from abuse/tyranny;
-- mixed cases where both sides need repentance.
-
-Use Prov. 18:13,17 logic: hear before adjudicating.
+When safety/abuse is real, lawful safeguarding/protection is not rebellion.
 
 ---
 
-## 20. P0 — mediation before coalition
+## 22. Suitor / romantic interest
 
-Where safe and appropriate:
+Before marriage there is no spouse covenant granting a suitor priority over a still-functioning family relation.
 
-- hear both sides;
-- contact relevant parents/pastors;
-- distinguish facts from interpretations;
-- use mutually credible mediation;
-- avoid secret partisan coalitions;
-- do not promise secrecy that requires participation in serious deception/harm.
+Where parents are substantially faithful, transparent family engagement is normally a virtue.
 
-9Marks/IBCD material in `179/180` supports cross-party pastoral cooperation rather than two permanently one-sided stories.
+Do not create a secret pseudo-marriage in which emotional allegiance to a boyfriend/girlfriend becomes the mechanism for evading parents before any covenant exists.
 
-For suitors/romantic interests: before marriage there is no spouse covenant giving the romantic interest household priority. Where parents are substantially faithful, transparent family engagement is normally a virtue.
-
-Parents can still be wrong; adult consent is real; forced marriage is wrong.
+At the same time, parents may not force marriage or claim ownership of adult conscience.
 
 ---
 
-## 21. Parents’ own sin remains in scope
+## 23. Editorial HOLD — “ordinary life becomes bland”
 
-Parents must examine:
+Owner's original concern about repeated pornographic/sexualized/profane stimulation making lawful ordinary life feel flat must receive explicit final decision:
 
-- harshness;
-- hypocrisy;
-- reputation-idolatry;
-- unjust control;
-- humiliation;
-- gossip;
-- favoritism;
-- neglect;
-- manipulation;
-- refusal to admit wrong.
+- **KEEP** in biblical appetite/love/enslavement language without speculative neuroscience; or
+- **CUT WITH REASON** if duplicative/weakly supported.
 
-Parental guilt does not baptize the child’s pornography, fornication, deception or rebellion. A guilty parent needs repentance, not penance through permissiveness.
+Until then: `EDITORIAL_HOLD`.
 
 ---
 
-## 22. Current publication architecture
+## 24. Adult publication architecture
 
-Core remains:
+`ARCHITECTURE_REVIEW_REQUIRED` remains active.
 
-1. **Part I — Hidden life**;
-2. **Part II — Parents**;
-3. **Part III — Church**.
+Likely review split:
 
-Adult material has `ARCHITECTURE_REVIEW_REQUIRED` before Product drafting because it may need two companions:
+1. adult/prodigal companion — remain / leave / return, false repentance, co-residence, contact, relational rupture, restoration;
+2. daughter / father / marriage / family-government companion — adulthood, fifth commandment, parental consent, OT/traditional approaches, husband headship, work/gifts, third-party ethics, modern autonomy/feminism.
 
-1. remain / leave / return — false repentance, co-residence, contact, rupture, restoration;
-2. daughter / father / marriage / family government — adulthood, parental consent, traditions, third-party ethics.
-
-Do not split Product automatically; owner/Product constraint decides.
+Do not change Product architecture automatically.
 
 ---
 
-## 23. Product state — live fetch required
+## 25. Product-state rule
 
-Do not preserve moving Product heads here as a duplicate census.
+Do not store moving Product heads here as a duplicate mutable census.
 
-Before any Product mutation:
+Before any Product mutation fetch live:
 
-- fetch current `gb-is-my-strength` `main`;
-- fetch relevant PR/branch exact heads;
-- inspect path/owner collision;
-- preserve Draft/noindex until explicit release;
-- require applicable exact-head CI after every moved head;
-- keep route/landing/prev-next/series registry/publication-state work separate unless explicitly owned.
+- Product `main`;
+- relevant Part I/II/III PR/branch heads;
+- collision/ownership;
+- exact-head applicable CI.
 
-Historical Product hashes in older Research files are provenance only.
+Keep Draft/noindex and release/route/series-registry work separate unless explicitly owned.
 
 ---
 
-## 24. Parallel-agent rule
+## 26. Parallel-agent rule
 
 Before every write:
 
-- re-fetch exact Research PR/branch head;
-- re-fetch current blob SHA for existing file;
-- never overwrite a changed blob blindly;
-- prefer additive/reconciled work;
-- preserve exact filenames and duplicate-prefix provenance;
-- do not create duplicate Research PR;
-- do not mark Draft ready/merge merely because one lane is content-complete.
-
-If Research moves, reconcile material deltas into actual manuscript claims; do not import every new source as a new section.
+- re-fetch Research PR/branch head;
+- re-fetch current blob SHA for shared files;
+- never overwrite a concurrent change blindly;
+- prefer additive modules for new research;
+- reconcile material deltas rather than importing every source into Product prose;
+- do not merge or mark ready merely because one lane is content-complete.
 
 ---
 
-## 25. Final continuity rule
+## 27. Final continuity synthesis
 
-A future agent must not reconstruct this series from generic memory or one compressed packet.
+> **The biblical alternative to feminist individualism is not paternal absolutism. It is ordered creaturely dependence under God: real fathers and mothers, real adult responsibility, real female agency, real husband headship in marriage, real church authority, real limits on every human authority, and lifelong obligations of truth, honour, love and holiness.**
 
-**User requirements are part of project authority.**
-
-The project is governed by Scripture, exact exegesis, Reformed Baptist confession, Puritan/Reformed pastoral theology, conservative biblical counseling used carefully, Christ-centered hope, and refusal of both:
-
-- permissive hypocrisy;
-- coercive counterfeit Christianity.
+New agents must preserve both sides of this statement.
