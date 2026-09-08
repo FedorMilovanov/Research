@@ -53,6 +53,9 @@ jobs:
       - name: Validate G3 evidence graph and workflow hardening
         run: python3 G3_HISTORY/tools/validate_g3_corpus_integrity.py
 
+      - name: Validate durable cryptographic custody receipts
+        run: python3 G3_HISTORY/tools/validate_g3_durable_custody.py
+
       - name: Ensure validation is read-only
         run: |
           git diff --exit-code

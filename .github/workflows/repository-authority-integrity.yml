@@ -74,6 +74,7 @@ jobs:
               print('COMPILED', path)
           PY
           python3 G3_HISTORY/tools/validate_g3_corpus_integrity.py
+          python3 G3_HISTORY/tools/validate_g3_durable_custody.py
 
       - name: Validate repository control plane
         working-directory: Research
