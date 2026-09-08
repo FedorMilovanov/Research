@@ -12,6 +12,7 @@ SETUP_PYTHON_V7 = "5fda3b95a4ea91299a34e894583c3862153e4b97"
 UPLOAD_ARTIFACT_V7 = "043fb46d1a93c77aae656e7c1c64a875d1fc6a0a"
 
 ACQUISITION_WORKFLOWS = [
+    "g3-archive-content-inventory-acquisition.yml",
     "g3-buck-media-windows.yml",
     "g3-buck-rss-media-inventory.yml",
     "g3-buck-titus-media-acquisition.yml",
