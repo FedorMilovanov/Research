@@ -16,7 +16,7 @@ BASE='https://ecorp.sos.ga.gov'
 SEARCH=BASE+'/BusinessSearch'
 CONTROL='19085916'
 EXPECTED_NAME='G3 Ministries for the Church, Inc.'
-UA='FedorMilovanov-Research-G3-Georgia-Acquisition/3.0 (research-only)'
+UA='FedorMilovanov-Research-G3-Georgia-Acquisition/3.1 (research-only)'
 
 def sha(b): return hashlib.sha256(b).hexdigest()
 def writej(p,o): p.write_text(json.dumps(o,ensure_ascii=False,indent=2,sort_keys=True),encoding='utf-8')
@@ -61,7 +61,15 @@ def candidate_payloads():
     ]
 
 def business_ids(s):
-    pats=[r'BusinessInformation\?businessId=(\d+)',r'businessId[=:"\']+(\d+)',r'/BusinessSearch/BusinessInformation/(\d+)']
+    # Georgia's current search-result grid navigates via JavaScript rather than
+    # exposing a literal BusinessInformation?businessId=... href. Preserve the
+    # older patterns too because the public markup has changed over time.
+    pats=[
+        r'navigateToBusinessInfo\(\s*(\d+)\s*,',
+        r'BusinessInformation\?businessId=(\d+)',
+        r'businessId[=:"\']+(\d+)',
+        r'/BusinessSearch/BusinessInformation/(\d+)',
+    ]
     out=[]
     for p in pats:
         for m in re.findall(p,s,re.I):
@@ -140,6 +148,7 @@ def main():
     writej(out/'SUMMARY.json',summary)
     print('ACQUIRED Georgia current status:',verified_row['status'],
           'agent=',verified_row['registered_agent'],
+          'business_ids=',','.join(found) if found else 'none',
           'detail_upgrade=',bool(details))
     return 0
 
