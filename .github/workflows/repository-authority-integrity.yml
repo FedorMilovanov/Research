@@ -61,6 +61,22 @@ jobs:
             python3 -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]); compile(p.read_text(encoding="utf-8"), str(p), "exec")' "$path"
           done
 
+      - name: Validate every G3 Python tool and evidence graph
+        working-directory: Research
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          paths = sorted(Path('G3_HISTORY/tools').glob('*.py'))
+          if not paths:
+              raise SystemExit('No G3 tools found')
+          for path in paths:
+              compile(path.read_text(encoding='utf-8'), str(path), 'exec')
+              print('COMPILED', path)
+          PY
+          python3 G3_HISTORY/tools/validate_g3_corpus_integrity.py
+          python3 G3_HISTORY/tools/validate_g3_workflow_runtime.py
+          python3 G3_HISTORY/tools/validate_g3_durable_custody.py
+
       - name: Validate repository control plane
         working-directory: Research
         env:

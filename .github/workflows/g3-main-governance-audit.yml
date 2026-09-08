@@ -1,0 +1,48 @@
+name: G3 main governance audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'G3_HISTORY/**'
+      - '.github/workflows/g3-*.yml'
+      - '.github/workflows/repository-authority-integrity.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: g3-main-governance-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-merge-provenance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact main commit with parents
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 2
+          persist-credentials: false
+
+      - name: Reject direct single-parent G3 mutations on main
+        if: github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          parents="$(git show -s --format=%P HEAD)"
+          count="$(wc -w <<<"$parents" | tr -d ' ')"
+          echo "HEAD=$GITHUB_SHA"
+          echo "PARENTS=$parents"
+          echo "PARENT_COUNT=$count"
+          if [ "$count" -lt 2 ]; then
+            echo "::error::G3 main mutation is not a two-parent merge commit. Repository admin protection is still required to prevent the write before it lands."
+            exit 2
+          fi
+
+      - name: Record governance boundary
+        run: |
+          echo "G3_MAIN_GOVERNANCE_AUDIT=PASS"
+          echo "NOTE=This detector cannot replace GitHub branch protection/rulesets; it makes an unprotected direct G3 push terminal-red after the fact."

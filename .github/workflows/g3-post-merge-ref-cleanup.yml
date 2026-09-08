@@ -1,0 +1,60 @@
+name: G3 post-merge temporary-ref cleanup
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/g3-post-merge-ref-cleanup.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: g3-post-merge-ref-cleanup
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact merged main commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Delete only allowlisted refs already merged into main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for branch in noop-temp hardening/g3-zero-close-20260908; do
+            ref="refs/heads/$branch"
+            sha="$(git ls-remote --heads origin "$ref" | awk '{print $1}')"
+            if [ -z "$sha" ]; then
+              echo "REF_ABSENT $branch"
+              continue
+            fi
+
+            git cat-file -e "$sha^{commit}" 2>/dev/null || git fetch --no-tags --depth=1 origin "$ref"
+            if ! git merge-base --is-ancestor "$sha" "$GITHUB_SHA"; then
+              echo "::error::Ref $branch at $sha is not an ancestor of merged main $GITHUB_SHA; refusing deletion."
+              exit 2
+            fi
+
+            echo "DELETE_MERGED_REF branch=$branch sha=$sha"
+            gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$branch"
+          done
+
+      - name: Verify allowlisted temporary refs are absent
+        run: |
+          set -euo pipefail
+          for branch in noop-temp hardening/g3-zero-close-20260908; do
+            if git ls-remote --exit-code --heads origin "refs/heads/$branch" >/dev/null 2>&1; then
+              echo "::error::Temporary ref still exists: $branch"
+              exit 2
+            fi
+            echo "REF_CLEAN $branch"
+          done

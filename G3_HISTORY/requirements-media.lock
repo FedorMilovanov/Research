@@ -1,0 +1,4 @@
+# Direct runtime pins for G3 media acquisition.
+# Transitive environment is captured by `pip freeze` in every action artifact.
+yt-dlp==2026.8.19
+openai-whisper==20250625

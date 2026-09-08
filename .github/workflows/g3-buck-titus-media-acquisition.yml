@@ -1,15 +1,25 @@
 name: G3 Buck Titus original-media acquisition
 
 on:
-  push:
-    branches:
-      - research/g3-history-20260907
+  workflow_dispatch:
+  pull_request:
     paths:
       - G3_HISTORY/tools/acquire_buck_titus_media.py
+      - G3_HISTORY/requirements-media.lock
+      - .github/workflows/g3-buck-titus-media-acquisition.yml
+  push:
+    branches: [main]
+    paths:
+      - G3_HISTORY/tools/acquire_buck_titus_media.py
+      - G3_HISTORY/requirements-media.lock
       - .github/workflows/g3-buck-titus-media-acquisition.yml
 
 permissions:
   contents: read
+
+concurrency:
+  group: g3-buck-titus-media-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 env:
   G3_MEDIA_EVIDENCE_OUT: g3-media-evidence
@@ -17,29 +27,30 @@ env:
 
 jobs:
   acquire:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
-      - name: Checkout exact branch head
-        uses: actions/checkout@v4
+      - name: Checkout exact event head
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
-          python-version: '3.12'
+          python-version: '3.12.8'
 
-      - name: Install ffmpeg
+      - name: Install ffmpeg and pinned Python media tools
         run: |
+          set -euo pipefail
           sudo apt-get update
           sudo apt-get install -y ffmpeg
+          python -m pip install --disable-pip-version-check -r G3_HISTORY/requirements-media.lock
           ffmpeg -version | head -n 1
 
-      - name: Install read-only acquisition dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install --upgrade yt-dlp openai-whisper
+      - name: Compile acquisition tool
+        run: python -m py_compile G3_HISTORY/tools/acquire_buck_titus_media.py
 
       - name: Acquire public Vimeo metadata and ephemeral audio segment
         run: |
@@ -56,11 +67,14 @@ jobs:
           test -f "$G3_MEDIA_EVIDENCE_OUT/ACQUISITION_RECEIPT.json"
           test -f "$G3_MEDIA_EVIDENCE_OUT/metadata.json"
 
-      - name: Record exact GitHub provenance
+      - name: Record exact runtime provenance
         run: |
+          ffmpeg -version | head -n 1 > "$G3_MEDIA_EVIDENCE_OUT/FFMPEG_VERSION.txt"
+          python -m pip freeze | sort > "$G3_MEDIA_EVIDENCE_OUT/PYTHON_DEPENDENCIES.txt"
           cat > "$G3_MEDIA_EVIDENCE_OUT/GITHUB_PROVENANCE.txt" <<EOF
           repository=$GITHUB_REPOSITORY
           sha=$GITHUB_SHA
+          checked_out_sha=$(git rev-parse HEAD)
           run_id=$GITHUB_RUN_ID
           run_attempt=$GITHUB_RUN_ATTEMPT
           workflow=$GITHUB_WORKFLOW
@@ -69,7 +83,7 @@ jobs:
           EOF
 
       - name: Upload transcript and custody receipt only
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: g3-buck-titus-media-evidence-${{ github.sha }}
           path: g3-media-evidence/

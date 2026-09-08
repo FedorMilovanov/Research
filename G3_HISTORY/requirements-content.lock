@@ -1,0 +1,2 @@
+# Direct runtime pin for G3 metadata-only content acquisition.
+requests==2.34.2

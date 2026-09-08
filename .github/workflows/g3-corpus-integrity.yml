@@ -1,0 +1,65 @@
+name: G3 corpus integrity
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'G3_HISTORY/**'
+      - '.github/workflows/g3-*.yml'
+      - '.github/workflows/repository-authority-integrity.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'G3_HISTORY/**'
+      - '.github/workflows/g3-*.yml'
+      - '.github/workflows/repository-authority-integrity.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: g3-corpus-integrity-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact event head
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.8'
+
+      - name: Compile every G3 Python tool without writing bytecode
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          paths = sorted(Path('G3_HISTORY/tools').glob('*.py'))
+          if not paths:
+              raise SystemExit('No G3 tools found')
+          for path in paths:
+              compile(path.read_text(encoding='utf-8'), str(path), 'exec')
+              print('COMPILED', path)
+          PY
+
+      - name: Validate G3 evidence graph and workflow hardening
+        run: python3 G3_HISTORY/tools/validate_g3_corpus_integrity.py
+
+      - name: Validate G3 workflow runtime pins and main triggers
+        run: python3 G3_HISTORY/tools/validate_g3_workflow_runtime.py
+
+      - name: Validate durable cryptographic custody receipts
+        run: python3 G3_HISTORY/tools/validate_g3_durable_custody.py
+
+      - name: Ensure validation is read-only
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
