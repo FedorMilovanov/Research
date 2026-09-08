@@ -14,7 +14,7 @@
 
 | Tradition/body | Child of believer before personal profession | Baptism | Visible-church status | Formal ecclesial accountability before profession | Profession / Table transition | Regeneration presumption guard |
 |---|---|---|---|---|---|---|
-| PCA (current 2026 BCO) | Covenant child; non-communing member by covenant/right of birth | Infant baptism | Member of visible church / non-communing member | **Yes.** BCO 27.2 says all baptized persons, being members, are subject to church discipline; ch. 28 specifically governs non-communing members. Discipline includes broad government/training and, in its restricted sense, judicial process. Exact application/censure must still be capacity- and case-sensitive. | At ability/years of discretion the child is urged to personal faith/confession; communing status follows credible profession under church order | Westminster doctrine explicitly denies that every baptized person is certainly regenerated |
+| PCA (current 2026 BCO) | Covenant child; non-communing member by covenant/right of birth | Infant baptism | Member of visible church / non-communing member | **Yes.** BCO 27.2 says all baptized persons, being members, are subject to church discipline; ch. 28 specifically governs non-communing members. BCO 27.1 distinguishes broad government/training from technical judicial process, while BCO 29.1 defines the proper object of judicial process in terms of a church member **professing faith in Christ**. Therefore formal pre-profession discipline/government is direct, but an ordinary technical judicial pathway for a non-professing child must not be inferred from 27.1–27.2 alone. | At ability/years of discretion the child is urged to personal faith/confession; communing status follows credible profession under church order | Westminster doctrine explicitly denies that every baptized person is certainly regenerated |
 | OPC / Westminster | Professors and their children comprise visible church; baptized children are noncommunicant members | Infant baptism | Noncommunicant member | **Yes, with an exact current removal pathway.** Session gives ongoing exhortation to profess Christ; if a noncommunicant neglects this and rejects covenantal submission to home/church, session may after prior notification erase the name from the roll (BD II.B.3.d(6)); erasure is an act of discipline without full process | Noncommunicant -> communicant only by confession of faith | WCF 28.5 explicitly denies that all baptized are undoubtedly regenerated |
 | URCNA (Three Forms / Church Order) | Covenant child; baptized member | Infant baptism | Baptized member | **Very explicit.** Article 59: mature baptized members delinquent in doctrine/life are admonished and, if persistent, excluded from the church after classis advice | Public profession -> professing/full-communion status; excluded baptized member returns via public profession under Article 60 | Synodical material rejects simple presumption that baptized children are regenerate until proved otherwise |
 | CRCNA | Covenant child / baptized member | Infant baptism | Baptized member | Elder oversight; exact local discipline pathway must not be generalized from URCNA | Current CRC practice may admit baptized members to Table on age-/ability-appropriate faith and obedience under elder supervision; one formal profession route is not made absolute | Baptism not identical with guaranteed salvation; local/form language varies |
@@ -40,26 +40,37 @@ Primary current source:
 - BCO 27.1 defines discipline in a **broad** sense (government, inspection, training, guardianship, control) and a **restricted technical** sense (judicial process);
 - BCO 27.2: **all baptized persons, being members of the Church, are subject to its discipline**;
 - current Part II contains a dedicated chapter 28, `Disciplining of Non-communing Members`;
+- BCO 29.1 defines an offense as a proper object of judicial process in terms of a church member **professing faith in Christ**;
 - parents carry primary spiritual nurture/training and are accountable to the church for that duty;
 - church should maintain relation with children, encourage profession at discretion, and reclaim the wayward.
 
 ### Correction to an earlier provisional reading
 
-Do **not** summarize current PCA polity as:
+Two opposite summaries are unsafe.
 
-> `non-communing children receive only soft pastoral care; judicial discipline belongs only to professing members`.
+First, do **not** say:
 
-That formulation is too weak. Current BCO 27.2 expressly places **all baptized members** under discipline, and 27.1 defines discipline broadly enough to include both formative/governmental and judicial categories.
+> `non-communing children receive only soft pastoral care and are outside formal church discipline`.
 
-Historical Southern Presbyterian discussions sometimes placed tighter limits on judicial prosecution of non-professing baptized youth. That history is relevant for development, but it must not be silently substituted for the current PCA BCO.
+That is too weak. Current BCO 27.2 expressly places **all baptized members** under church discipline, and chapter 28 gives non-communing members a formal nurture/government/reclamation framework.
 
-### Still required guard
+Second, do **not** infer from BCO 27.1–27.2 that an ordinary technical judicial prosecution necessarily applies to a non-professing child in the same way it applies to a professing communicant. BCO 29.1 is a real limiting control: the proper object of judicial process is framed as the conduct of a church member **professing faith in Christ**.
 
-Do **not** make the opposite overstatement:
+Historical Southern Presbyterian discussions about limits on judicial prosecution may illuminate development, but the current conclusion should rest on the current PCA text itself rather than substituting older debates for it.
 
-> `a baptized toddler receives an identical judicial process and identical censures to an adult communicant`.
+### Required guard
 
-Current polity establishes real membership and discipline; actual process remains conditioned by age, capacity, status, facts, and the applicable chapters.
+The safe current statement is:
+
+> **PCA non-communing children are real members under formal church discipline, instruction, government and reclamation; technical judicial process must be stated only where the applicable BCO provisions actually establish it, and BCO 29.1 prevents treating 27.2 as a blanket proof of ordinary judicial prosecution before profession.**
+
+Therefore do not write either:
+
+> `PCA has no formal discipline before profession`,
+
+or:
+
+> `a baptized toddler receives the same technical judicial process and censures as an adult communicant`.
 
 ### Project significance
 
@@ -249,7 +260,7 @@ The final Russian article may criticize permissive Baptist practice without fals
 
 `CHILD HAS AN ECCLESIAL ADDRESS`.
 
-The membership roll, baptismal vows, session/consistory, catechesis duty and discipline process give the child a named institutional relation before personal profession.
+The membership roll, baptismal vows, session/consistory, catechesis duty and formal discipline give the child a named institutional relation before personal profession. The exact process attached to that discipline remains polity- and status-specific.
 
 ### Paedobaptist structural danger
 
@@ -297,7 +308,8 @@ This comparative overlay must remain consistent with the parallel `281–292` tr
 
 ### Current certainty labels
 
-- `PCA BAPTIZED MEMBERS UNDER DISCIPLINE = DIRECT CURRENT POLITY`.
+- `PCA BAPTIZED MEMBERS UNDER FORMAL DISCIPLINE = DIRECT CURRENT POLITY`.
+- `PCA NONCOMMUNICANT ORDINARY TECHNICAL JUDICIAL PROCESS = DO NOT GENERALIZE / BCO 29.1 CONTROLS`.
 - `OPC NONCOMMUNICANT ERASURE PATH = DIRECT CURRENT POLITY`.
 - `URCNA MATURE BAPTIZED EXCLUSION = DIRECT CURRENT POLITY`.
 - `URCNA ALL CALGARY-2026 AMENDMENTS FINAL = FORBIDDEN / RATIFICATION-STATE DEPENDENT`.
