@@ -1,13 +1,15 @@
 # 1 Corinthians 7:14 — Holy Children
-## Gill, Schreiner, Reformed Readings, and the Baptismal-Inference Guard
+## Gill, Calvin, Schreiner, Academic Alternatives, and the Baptismal-Inference Guard
 
-**Status:** RESEARCH / TARGETED EXEGESIS / NOT PUBLICATION
-**Date:** 2026-09-08
-**Depends on:** `150`, `273–278`
+**Status:** RESEARCH / TARGETED EXEGESIS / NOT PUBLICATION  
+**Date:** 2026-09-08  
+**Depends on:** `150`, `273–278`, `284`, `298`
 
-> This targeted file exists because 1 Cor 7:14 is more important to the child-accountability project than a simple baptism proof-text battle. It may establish a special status/privilege of children around Christian faith even if infant baptism is rejected.
+> This targeted file exists because 1 Cor 7:14 matters to the child-accountability project beyond a baptism proof-text battle. It may establish a real set-apart relation of children around Christian faith even if infant baptism is rejected. Do not claim more precision than the text/source base warrants.
 
-## 1. Textual problem
+---
+
+# 1. Textual problem
 
 Paul states that:
 
@@ -16,114 +18,283 @@ Paul states that:
 - otherwise the children would be `ἀκάθαρτα`;
 - but now they are `ἅγια`.
 
-The sanctification/holiness language is real. The context also makes clear that the unbelieving spouse is not thereby automatically saved (cf. v.16).
+The sanctification/holiness vocabulary is not editorial paraphrase; it is the Greek text.
 
-## 2. Three major options relevant to this project
+The same paragraph also makes clear that the unbelieving spouse is not thereby certainly saved (v.16).
 
-### A. Civil/legal legitimacy — classic Gill
+Therefore at minimum distinguish:
 
-Gill reads marital `sanctification` as lawful espousal and the children’s holiness as legitimate birth.
+`RELATIONAL / SET-APART HOLINESS`
 
-**Strength:** closely ties the conclusion to Paul’s question about whether a mixed marriage remains valid/should continue.
+from
 
-**Weakness:** requires a specialized sense of `holy/unclean` and must explain why children of unbelieving unions would otherwise be `unclean` in the relevant sense. It should not be treated as self-evident merely because it is historically Baptist.
+`PERSONAL SAVING SANCTIFICATION`.
 
-### B. Covenant/visible-church holiness — classic Reformed
+---
 
-Children are relatively holy because a believing parent places them within the covenant/visible-church sphere; this is then linked to baptism.
+# 2. Immediate context — mixed marriage, purity, continuation
 
-**Strength:** takes holiness vocabulary at full religious weight and fits the Reformed confessional child-inclusion system.
+The paragraph answers whether a believer should remain with an unbelieving spouse willing to continue the marriage.
 
-**Weakness:** the verse itself never mentions baptism; an additional premise is necessary:
+The logic is surprising against a simple contamination model:
 
-`RELATIVE COVENANT HOLINESS -> RIGHT TO NEW-COVENANT INITIATORY SIGN`.
+- the believer is not defiled by the unbeliever;
+- instead holiness language reaches the unbelieving spouse and children;
+- therefore the mixed union is not treated as a contaminating relation requiring dissolution.
 
-That premise must be established from broader covenant/baptism theology.
+This context must control any covenant/baptism inference.
 
-### C. Real sphere-of-holiness without baptismal entitlement — Schreiner
+### Guard
 
-Thomas Schreiner (2024) grants more than the legitimacy-only reading:
+Do not detach `the children are holy` from Paul’s actual mixed-marriage problem and treat it as an isolated systematic slogan.
 
-- the unbelieving spouse is genuinely placed in a sphere/realm affected by the believer’s holiness;
-- the children are likewise genuinely holy in a relational/set-apart sense;
-- neither status means saving union/regeneration;
-- because the unbelieving spouse is sanctified but not thereby baptism-eligible, the children’s semantically related holiness does not by itself imply baptism either.
+---
 
-This reading allows a credobaptist to affirm **special religious privilege/status** without formal infant membership.
+# 3. Option A — civil / legal legitimacy (classic Gill and related interpreters)
 
-## 3. Why option C matters to `150_NOT_AN_ORDINARY_UNBELIEVER`
+Gill reads the marriage as lawfully sanctified and the children as legitimate rather than bastards/unclean offspring.
 
-The project previously reached a similar conclusion via gospel-light texts:
+Hercules Collins uses the same broad solution in his anti-paedobaptist polemic.
 
-> an unregenerate church-raised child can be materially different in privilege/accountability from a minimally exposed outsider.
+### Strength
 
-1 Cor 7:14 may add a more direct household-theological datum:
+It ties Paul’s conclusion closely to the question whether the mixed marriage remains lawful and should continue.
 
-> the presence of a believer creates a genuinely set-apart household relation affecting spouse/children, even without making them regenerate.
+### Weakness
 
-This can strengthen the series while avoiding both errors:
+Calvin directly objects that merely calling the children legitimate cannot sufficiently distinguish them, because children of unbelievers are not thereby simply illegitimate.
+
+Modern scholarship also shows that the holy/unclean terminology has substantial religious/purity weight, making a purely civil gloss too reductionistic unless carefully defended.
+
+### Research disposition
+
+`LEGITIMACY READING = HISTORICALLY IMPORTANT / NOT LOCKED AS THE BAPTIST OWNER`.
+
+Do not write publicly:
+
+> `1 Cor 7:14 simply means legitimate children.`
+
+Current evidence does not warrant that flattening.
+
+---
+
+# 4. Option B — covenant / visible-church holiness (Calvin / classic Reformed)
+
+Calvin explicitly rejects the mere-legitimacy interpretation.
+
+He argues that:
+
+- children of believers possess a special privilege;
+- they are set apart / reckoned holy in the church;
+- this covenant holiness does not deny natural sinfulness;
+- the special privilege flows from covenant blessing;
+- because the children are admitted/set apart by God’s covenant, Calvin then asks why the covenant sign should be withheld.
+
+### Strength
+
+This reading takes `ἅγια` seriously as religious/covenantal vocabulary and integrates it naturally with Calvin’s wider Abrahamic-continuity system.
+
+It also directly explains why historic Reformed theology regards believers’ children as objectively different from the world before personal profession.
+
+### Weakness / inferential boundary
+
+The verse itself never says:
+
+- `baptize`;
+- `member of the New Covenant`;
+- `circumcision has become baptism`.
+
+Calvin’s baptism conclusion therefore depends on a **broader covenant-continuity premise**:
+
+`RELATIVE COVENANT HOLINESS -> CHILD-INCLUSIVE VISIBLE CHURCH -> RIGHT TO INITIATORY SIGN`.
+
+That premise is argued elsewhere; it is not simply the lexical meaning of `ἅγια`.
+
+---
+
+# 5. Option C — real sphere/realm of holiness without baptismal entitlement (Schreiner 2024)
+
+Thomas Schreiner’s 2024 treatment is especially useful because it refuses the weakest Baptist response.
+
+He argues:
+
+- holiness is “contagious” in the paragraph rather than impurity flowing from unbeliever to believer;
+- the unbelieving spouse is genuinely sanctified/set in a holy realm through the believer;
+- the child is likewise holy;
+- this does **not** mean either unbelieving spouse or yet-unbelieving child is saved by association;
+- v.16 prevents a saving-status inference for the unbelieving spouse;
+- the presence of the believer creates greater gospel opportunity/hope;
+- because the unbelieving spouse is sanctified without thereby becoming baptism-eligible, the related holiness predicate on the children does not by itself create baptismal entitlement.
+
+Primary article:
+
+https://www.desiringgod.org/articles/should-we-baptize-holy-infants
+
+### Project significance
+
+This reading gives a contemporary credobaptist route to affirm:
+
+> **the child of a believer is genuinely located in a special holy/gospel sphere without yet being treated as a baptized member.**
+
+This is more useful to `150` and the present accountability project than denying the religious weight of the verse.
+
+### Guard
+
+Schreiner himself admits uncertainty over the exact nature of the sanctification. Do not convert his cautious `realm of the holy / greater opportunity` account into a metaphysically precise new Baptist covenant category.
+
+---
+
+# 6. Option D — holiness as incorporation / community participation / ethical-social location
+
+Modern scholarship offers further readings that do not map cleanly onto the classic `legitimate vs covenant member` binary.
+
+Examples include arguments that:
+
+- the children’s holiness is connected with actual incorporation into the Christian community’s holy social space;
+- children of mixed marriages were treated as participating in the community rather than excluded as contaminating offspring;
+- the text’s purity logic may reflect Jewish concerns about illicit unions/unclean offspring while Paul reverses the expected direction of contamination.
+
+This family of readings strengthens one point relevant to the project:
+
+> **`HOLY` should not casually be reduced to a meaningless family-status adjective.**
+
+But it does **not** automatically establish infant baptism. Community participation, relative holiness, covenant status, baptismal status and saving faith remain distinguishable propositions.
+
+### Evidence guard
+
+Do not import one modern scholarly reconstruction of Jewish purity background as a settled consensus. Use it as evidence that the semantic/exegetical field is broader than the old two-option polemic.
+
+---
+
+# 7. Why the spouse/child parallel is powerful but not deductively complete
+
+### Baptist pressure
+
+The same sentence says:
+
+- unbelieving spouse is sanctified;
+- children are holy.
+
+Both expressions use the same holiness word-family.
+
+Thus:
+
+> **HOLINESS LANGUAGE ALONE CANNOT MEAN “THEREFORE BAPTIZE,”**
+
+because no Reformed paedobaptist proposes baptizing the unbelieving spouse merely from `ἡγίασται`.
+
+### Paedobaptist response
+
+Spouse and child stand in different biblical relations:
+
+- marriage covenant relation;
+- generational/filial relation with Abrahamic promise background.
+
+Therefore the child can have further covenant implications from other texts even if the spouse does not.
+
+### Reconciled verdict
+
+The spouse parallel blocks a **lexical shortcut** to baptism.
+
+It does not by itself defeat a **cumulative covenant argument** built from Gen 17 / Acts 2 / Rom 4 / Col 2 / covenant continuity.
+
+This is the exact boundary Product should preserve.
+
+---
+
+# 8. Why option C/D matter to `150_NOT_AN_ORDINARY_UNBELIEVER`
+
+Research already established by other texts that a church-raised unregenerate youth can differ from a minimally exposed outsider in:
+
+- gospel knowledge;
+- prior Christian identification;
+- repeated admonition;
+- hardening against known truth;
+- influence inside the church/youth ecology.
+
+1 Cor 7:14 can add a household-theological datum:
+
+> **Christian faith inside a household creates a real holy/set-apart relation around spouse and children even where personal saving faith is absent.**
+
+This helps reject two errors:
 
 - `Christian parentage means nothing until conversion`;
-- `Christian parentage proves covenant membership/baptism without further argument`.
+- `Christian parentage itself proves saving covenant membership and baptism`.
 
-## 4. What the text certainly does not allow
+---
 
-### Not automatic salvation
+# 9. What the text certainly does not allow
 
-V.16 explicitly leaves the unbelieving spouse’s salvation unresolved/future. Association is not saving faith.
+## Not automatic salvation
 
-### Not moral neutrality
+V.16 leaves the unbelieving spouse’s salvation unresolved/future.
 
-If the household relation is genuinely touched by holiness rather than contamination, the child cannot be described as having no meaningful spiritual relation to the believer’s Christian household.
+Association is not saving faith.
 
-### Not standalone infant-baptism proof
+## Not simple moral neutrality
 
-No baptism, sign, command, or administration appears in the immediate paragraph.
+The paragraph positively uses holiness rather than defilement language around the believer’s household relation.
 
-## 5. A difficult paedobaptist challenge to Schreiner
+## Not standalone infant-baptism proof
 
-A paedobaptist may reply that spouse and child need not have identical covenant status merely because `sanctified/holy` share a semantic field. Marriage relation and filial relation are different biblical institutions, and covenant promises elsewhere are specifically generational.
+No baptismal administration appears in the immediate paragraph.
 
-Therefore the Baptist argument:
+## Not standalone credobaptist proof either
 
-> “spouse sanctified but not baptized, therefore child holy but not baptized”
+The fact that baptism is absent from this paragraph does not itself prove children should not be baptized; the wider covenant/baptism argument still has to be made.
 
-is **strong but not deductively complete** unless the broader covenant case is addressed.
+---
 
-The final argument must be cumulative.
+# 10. Responsibility consequence — use cautiously
 
-## 6. A difficult Baptist challenge to paedobaptism
+Do **not** argue:
 
-Even if `holy` means covenantally set apart, the move to baptism still needs positive warrant. An Old Testament pattern of covenant sign administration may supply that warrant only if continuity between Abrahamic circumcision and New Covenant baptism is established rather than assumed.
+> `Paul calls the child holy; therefore the child has more basic moral duty than an unbeliever’s child.`
 
-Therefore:
+All image-bearers are already accountable to God.
 
-`HOLY CHILD` does not lexically equal `BAPTIZE THIS CHILD`.
+Better:
 
-## 7. Recommended project language
+> **The verse may establish a special household relation/privilege around a believer. Greater privilege and gospel proximity can then matter to formation and, together with other texts, to aggravated responsibility for knowingly rejected light.**
+
+This keeps `moral duty` and `special privilege` distinct.
+
+---
+
+# 11. Recommended project language
 
 ### Avoid
 
-> “1 Кор. 7:14 просто говорит, что дети законные.”
+> `1 Кор. 7:14 просто говорит, что дети законные.`
 
-Too strong at current evidence state.
+Too strong.
 
 ### Avoid
 
-> “Павел прямо называет детей членами Нового Завета и поэтому велит их крестить.”
+> `Павел прямо называет детей членами Нового Завета и поэтому велит их крестить.`
 
 The verse does not explicitly say this.
 
-### Safer
+### Prefer
 
-> **Павел действительно говорит о детях верующего родителя языком особой святости/отделённости, не сводимой к личному спасению. Реформаты видят здесь подтверждение заветного статуса детей; баптисты спорят, следует ли из этой относительной святости право на крещение. Но для нашей темы важен уже общий минимум: ребёнок внутри христианского дома не изображён как духовно безразличный посторонний.**
+> **Павел действительно говорит о детях верующего родителя языком святости/отделённости, который нельзя свести к личному спасению. Реформатская традиция видит здесь подтверждение заветного статуса детей и соединяет его с более широким аргументом о крещении. Сильный баптистский ответ не обязан отрицать саму особую святость: он может признать реальную сферу христианской привилегии и всё же спорить, что из неё без дополнительного новозаветного аргумента не следует право на крещение.**
 
-## 8. Research verdict
+---
 
-`SPECIAL SET-APART STATUS = STRONG`.
+# 12. Research verdict
 
-`SAVING STATUS = REJECT`.
+`GREEK HOLINESS / UNCLEANNESS VOCABULARY = DIRECT`.
 
-`INFANT-BAPTISM ENTITLEMENT FROM THIS VERSE ALONE = NOT ESTABLISHED`.
+`AUTOMATIC SAVING STATUS = REJECT`.
 
-`VALUE FOR CHILD ACCOUNTABILITY / GOSPEL PRIVILEGE = HIGH`.
+`PURE LEGITIMACY AS CERTAIN EXHAUSTIVE MEANING = NOT ESTABLISHED`.
+
+`REAL RELATIONAL / SET-APART HOLINESS = STRONG`.
+
+`CALVIN COVENANT-CHILD INFERENCE = HISTORICALLY STRONG / SYSTEM-DEPENDENT`.
+
+`SCHREINER REALM-OF-HOLY CREDOBAPTIST READING = STRONG MODERN OPTION / CAUTIOUS`.
+
+`INFANT-BAPTISM ENTITLEMENT FROM VERSE ALONE = NOT ESTABLISHED`.
+
+`VALUE FOR HOUSEHOLD PRIVILEGE / CHILD ACCOUNTABILITY FRAME = HIGH`.
