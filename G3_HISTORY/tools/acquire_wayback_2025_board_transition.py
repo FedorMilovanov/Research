@@ -3,11 +3,10 @@
 
 Research-only, read-only acquisition. The lane queries every Wayback CDX timestamp
 (no digest collapse) for the official G3 board page from 2025-05-01 through
-2025-07-20, fetches a bounded set of captures that preserves every digest change,
-decodes archived payloads, and records person-name hits plus nearby board text.
-
-A successful run proves only what the archive returned. Zero captures is an archive
-coverage result, not evidence that the board/page did not exist or did not change.
+2025-07-20. CDX acquisition is sharded by month to avoid the broad-query gateway
+timeouts observed on this route. Every shard must return valid JSON; transport or
+parse failure in any shard fails closed. A valid empty shard is only a bounded
+archive-coverage result, never evidence that the board/page did not exist or change.
 """
 from __future__ import annotations
 
@@ -27,9 +26,12 @@ from pathlib import Path
 
 TARGET = "http://g3min.org/about/who-we-are/"
 CDX_TARGET = "g3min.org/about/who-we-are/"
-FROM = "20250501"
-TO = "20250720"
-UA = "FedorMilovanov-Research-G3-2025-Board-Transition/1.1 (research-only)"
+WINDOWS = [
+    ("20250501", "20250531", "2025-05"),
+    ("20250601", "20250630", "2025-06"),
+    ("20250701", "20250720", "2025-07-01_20"),
+]
+UA = "FedorMilovanov-Research-G3-2025-Board-Transition/1.2 (research-only)"
 ZSTD_MAGIC = b"\x28\xb5\x2f\xfd"
 
 NAMES = [
@@ -115,6 +117,49 @@ def decode_payload(raw: bytes):
     return raw, "identity"
 
 
+def parse_cdx_rows(data: bytes, label: str) -> tuple[list[dict], str]:
+    rows = json.loads(data.decode("utf-8"))
+    if not isinstance(rows, list):
+        raise RuntimeError(f"{label}: CDX JSON root is not a list")
+    if not rows:
+        return [], "VALID_EMPTY_CDX"
+    header = rows[0]
+    if not isinstance(header, list) or "timestamp" not in header:
+        raise RuntimeError(f"{label}: CDX response has an invalid header row")
+    captures = [
+        dict(zip(header, row))
+        for row in rows[1:]
+        if isinstance(row, list) and len(row) == len(header)
+    ]
+    return captures, "CAPTURES_PRESENT" if captures else "VALID_HEADER_ZERO_ROWS"
+
+
+def query_segment(out: Path, start: str, end: str, label: str) -> tuple[list[dict], dict]:
+    params = {
+        "url": CDX_TARGET,
+        "from": start,
+        "to": end,
+        "output": "json",
+        "fl": "timestamp,original,statuscode,mimetype,digest,length",
+        "filter": "statuscode:200",
+    }
+    url = "https://web.archive.org/cdx/search/cdx?" + urllib.parse.urlencode(params)
+    data, meta = fetch(url, 60)
+    safe = label.replace("/", "_")
+    (out / f"CDX_{safe}.json").write_bytes(data)
+    write_json(out / f"CDX_{safe}_FETCH.json", meta)
+    captures, state = parse_cdx_rows(data, label)
+    return captures, {
+        "label": label,
+        "from": start,
+        "to": end,
+        "state": state,
+        "capture_count": len(captures),
+        "timestamps": [item.get("timestamp") for item in captures],
+        "fetch": meta,
+    }
+
+
 def select_captures(captures: list[dict]) -> list[dict]:
     """Preserve first, last and every digest transition without duplicate timestamps."""
     rows = sorted(captures, key=lambda item: item.get("timestamp", ""))
@@ -141,7 +186,6 @@ def select_captures(captures: list[dict]) -> list[dict]:
 
 
 def board_context(text: str) -> str:
-    """Return bounded text around the first board heading/name cluster for audit logs."""
     lines = text.splitlines()
     needles = ("board of directors", "board", "tom buck", "jonathan frazier")
     first = None
@@ -164,57 +208,45 @@ def main() -> int:
     out = Path(args.output)
     out.mkdir(parents=True, exist_ok=True)
 
-    params = {
-        "url": CDX_TARGET,
-        "from": FROM,
-        "to": TO,
-        "output": "json",
-        "fl": "timestamp,original,statuscode,mimetype,digest,length",
-        "filter": "statuscode:200",
-    }
-    cdx_url = "https://web.archive.org/cdx/search/cdx?" + urllib.parse.urlencode(params)
     summary = {
         "target": TARGET,
-        "window": {"from": FROM, "to": TO},
+        "windows": [{"from": a, "to": b, "label": c} for a, b, c in WINDOWS],
         "state": "EPHEMERAL_ACTION_ARTIFACT",
         "publication_eligible": False,
         "negative_result_boundary": (
             "Archive coverage is not evidence of board continuity, absence, resignation, or non-resignation."
         ),
         "errors": [],
+        "segments": [],
         "captures": [],
     }
 
     captures: list[dict] = []
-    try:
-        cdx_bytes, cdx_meta = fetch(cdx_url, 90)
-        (out / "CDX.json").write_bytes(cdx_bytes)
-        write_json(out / "CDX_FETCH.json", cdx_meta)
-        rows = json.loads(cdx_bytes.decode("utf-8"))
-        if not isinstance(rows, list):
-            raise RuntimeError("CDX JSON root is not a list")
-        if rows:
-            header = rows[0]
-            if not isinstance(header, list) or "timestamp" not in header:
-                raise RuntimeError("CDX response has an invalid header row")
-            captures = [
-                dict(zip(header, row))
-                for row in rows[1:]
-                if isinstance(row, list) and len(row) == len(header)
-            ]
-        else:
-            # Wayback returns [] when the query is valid but has zero captures.
-            # This is a bounded archive-coverage result, not a transport failure.
-            captures = []
-            summary["coverage_state"] = "VALID_EMPTY_CDX"
-    except Exception as exc:
-        captures = []
-        summary["errors"].append("CDX: " + str(exc))
+    for start, end, label in WINDOWS:
+        try:
+            segment_captures, segment_meta = query_segment(out, start, end, label)
+            captures.extend(segment_captures)
+            summary["segments"].append(segment_meta)
+        except Exception as exc:
+            summary["errors"].append(f"CDX {label}: {exc}")
+            summary["segments"].append(
+                {"label": label, "from": start, "to": end, "state": "ERROR", "error": str(exc)}
+            )
 
-    captures = sorted(captures, key=lambda item: item.get("timestamp", ""))
+    # Deduplicate only identical timestamps after every segment has been acquired.
+    by_ts: dict[str, dict] = {}
+    for item in captures:
+        ts = item.get("timestamp", "")
+        if ts:
+            by_ts.setdefault(ts, item)
+    captures = sorted(by_ts.values(), key=lambda item: item.get("timestamp", ""))
+
     summary["cdx_capture_count"] = len(captures)
     summary["cdx_timestamps"] = [item.get("timestamp") for item in captures]
     summary["distinct_digests"] = len({item.get("digest") for item in captures if item.get("digest")})
+    if not summary["errors"] and not captures:
+        summary["coverage_state"] = "VALID_EMPTY_ALL_SEGMENTS"
+
     selected = select_captures(captures)
     summary["selected_capture_timestamps"] = [item.get("timestamp") for item in selected]
 
@@ -255,10 +287,19 @@ def main() -> int:
             )
         except Exception as exc:
             record["error"] = str(exc)
+            summary["errors"].append(f"snapshot {ts}: {exc}")
         summary["captures"].append(record)
 
     write_json(out / "SUMMARY.json", summary)
 
+    for segment in summary["segments"]:
+        print(
+            "CDX_SEGMENT",
+            segment.get("label"),
+            segment.get("state"),
+            "count=",
+            segment.get("capture_count", 0),
+        )
     print("CDX_CAPTURE_COUNT", summary["cdx_capture_count"])
     print("CDX_TIMESTAMPS", ",".join(ts or "" for ts in summary["cdx_timestamps"]))
     print("DISTINCT_DIGESTS", summary["distinct_digests"])
@@ -271,8 +312,6 @@ def main() -> int:
         else:
             print("SNAPSHOT_ERROR", record.get("snapshot_url"), record.get("error"), file=sys.stderr)
 
-    # CDX transport/parse failure is technical failure. A successful empty [] is
-    # deliberately green because it documents a bounded archive-coverage gap.
     if summary["errors"]:
         for error in summary["errors"]:
             print("ERROR", error, file=sys.stderr)
