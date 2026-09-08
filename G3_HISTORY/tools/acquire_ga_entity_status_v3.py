@@ -4,8 +4,8 @@
 The Georgia search-result page itself is treated as sufficient current-state
 government evidence when it returns the exact control number and a parsable
 row. BusinessInformation detail acquisition remains a best-effort upgrade;
-absence of an internal businessId must not turn a valid official search result
-into a false-negative workflow failure.
+absence of an internal businessId or an inaccessible detail response must not
+turn a valid official search result into a false-negative workflow failure.
 """
 from __future__ import annotations
 import argparse, hashlib, http.cookiejar, json, re, sys, time, urllib.error, urllib.parse, urllib.request
@@ -14,9 +14,11 @@ from pathlib import Path
 
 BASE='https://ecorp.sos.ga.gov'
 SEARCH=BASE+'/BusinessSearch'
+DETAIL=BASE+'/BusinessSearch/BusinessInformation'
 CONTROL='19085916'
 EXPECTED_NAME='G3 Ministries for the Church, Inc.'
-UA='FedorMilovanov-Research-G3-Georgia-Acquisition/3.1 (research-only)'
+EXPECTED_TYPE='Domestic Nonprofit Corporation'
+UA='FedorMilovanov-Research-G3-Georgia-Acquisition/3.2 (research-only)'
 
 def sha(b): return hashlib.sha256(b).hexdigest()
 def writej(p,o): p.write_text(json.dumps(o,ensure_ascii=False,indent=2,sort_keys=True),encoding='utf-8')
@@ -92,6 +94,18 @@ def parse_result_row(t):
                 return row
     return None
 
+def detail_candidates(bid,business_type):
+    post=urllib.parse.urlencode({
+        'businessId':bid,
+        'businessType':business_type or EXPECTED_TYPE,
+        'fromSearch':'true',
+    }).encode()
+    return [
+        ('official_post',DETAIL,'POST',post),
+        ('query_get',DETAIL+f'?businessId={bid}','GET',None),
+        ('path_get',DETAIL+f'/{bid}','GET',None),
+    ]
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--output',default='g3-georgia-entity-output')
@@ -130,19 +144,23 @@ def main():
 
     summary['verified_search_result']=verified_row
     summary['business_ids']=found
-    details=[]
+    details=[]; detail_attempts=[]
     for bid in found[:5]:
-        for u in [BASE+f'/BusinessSearch/BusinessInformation?businessId={bid}',
-                  BASE+f'/BusinessSearch/BusinessInformation/{bid}']:
-            b,m=do(op,u,'GET',None,SEARCH); txt=textify(b)
+        for route,url,method,payload in detail_candidates(bid,verified_row.get('business_type')):
+            b,m=do(op,url,method,payload,SEARCH); txt=textify(b)
+            detail_attempts.append({'business_id':bid,'route':route,'response':m,
+                                    'control_present':CONTROL in txt,
+                                    'name_present':'G3 Ministries' in txt})
             if CONTROL in txt or 'G3 Ministries' in txt:
-                (out/f'BUSINESS_INFORMATION_{bid}.html').write_bytes(b)
-                (out/f'BUSINESS_INFORMATION_{bid}.txt').write_text(txt,encoding='utf-8')
-                details.append({'business_id':bid,'url':u,'fetch':m,
+                stem=f'BUSINESS_INFORMATION_{bid}_{route}'
+                (out/f'{stem}.html').write_bytes(b)
+                (out/f'{stem}.txt').write_text(txt,encoding='utf-8')
+                details.append({'business_id':bid,'route':route,'url':url,'fetch':m,
                                 'control_present':CONTROL in txt,
                                 'name_present':'G3 Ministries' in txt,
                                 'text_sha256':sha(txt.encode())})
                 break
+    summary['detail_attempts']=detail_attempts
     summary['details']=details
     summary['detail_upgrade_acquired']=bool(details)
     writej(out/'SUMMARY.json',summary)
