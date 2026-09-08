@@ -12,7 +12,7 @@ The 2025 governance transition is easy to misstate because several evidence type
 - a later official G3 announcement identifies Jonathan Frazier as board chairman and Scott Aniol as president;
 - the FY2025 Form 990 contains reportable-person role-history rows but reports only four voting governing-body members;
 - later testimony says Tom Buck stepped off the board between the Buice crisis and Aniol's presidency;
-- the official `Who We Are` path has no Wayback captures for the critical May–July interval.
+- both identified historical official leadership/board paths lack Wayback captures for the critical May–July interval.
 
 These layers can narrow a window. They do not supply an exact resignation instrument.
 
@@ -80,25 +80,20 @@ Do not upgrade this to `VERIFIED_PRIMARY exact resignation date` without:
 - dated corporate board record;
 - or another contemporaneous primary object explicitly recording the departure.
 
-## 5. Official-page Wayback acquisition — bounded negative result
+## 5. Official-page Wayback acquisition — both known historical roster paths exhausted
 
-A dedicated exact-head Research lane tested the official historical page:
+Two identified official historical paths have now been tested over the same transition window:
 
-`http://g3min.org/about/who-we-are/`
+1. `http://g3min.org/about/who-we-are/`
+2. `http://g3min.org/vision/leadership/`
 
-for the transition window.
+### Path A — `/about/who-we-are/`
 
-Workflow:
+Dedicated exact-head acquisition run:
 
-`G3 Wayback 2025 board transition acquisition`
-
-Successful run:
-
-`34228201641`
-
-Exact Research head:
-
-`a4d53a1a1e6be488d60dc607d61ace68c3cba903`
+- workflow: `G3 Wayback 2025 board transition acquisition`;
+- successful run: `34228201641`;
+- exact Research head: `a4d53a1a1e6be488d60dc607d61ace68c3cba903`.
 
 The CDX query was split into independent monthly segments after a broad query produced a gateway timeout. Each segment completed with valid JSON and no captures:
 
@@ -111,21 +106,44 @@ The CDX query was split into independent monthly segments after a broad query pr
 
 Distinct digests: **0**.
 
-### What this means
+### Path B — `/vision/leadership/`
 
-The exact official `Who We Are` path has no Wayback coverage in the tested May 1–July 20, 2025 interval.
+The alternate official legacy leadership path was then tested independently.
+
+Successful exact-head acquisition:
+
+- run: `34232494274`;
+- exact Research head: `ddaddeb8ac03892660dfb017ec9946b9379e33d5`;
+- acquisition included bounded retry/backoff for transient transport/5xx while preserving fail-closed behavior for invalid responses.
+
+Result:
+
+| Segment | CDX state | Captures |
+|---|---|---:|
+| 2025-05-01 → 2025-05-31 | `VALID_EMPTY_CDX` | 0 |
+| 2025-06-01 → 2025-06-30 | `VALID_EMPTY_CDX` | 0 |
+| 2025-07-01 → 2025-07-20 | `VALID_EMPTY_CDX` | 0 |
+| **Combined** | `VALID_EMPTY_ALL_LEGACY_SEGMENTS` | **0** |
+
+Distinct digests: **0**.
+
+A later rerun on head `1f75d2b831666128ccff025fc9f5a93c8a6dfd53` encountered Archive.org transport failures after retries (June timeout; July HTTP 503). That later failure is **transport state**, not contradictory evidence. It does not erase the earlier successful exact-head acquisition of the same path/window and must not be converted into either positive or negative historical evidence.
+
+### What the successful acquisitions mean
+
+For both identified official roster paths, the tested May 1–July 20, 2025 interval has no Wayback captures in the successful bounded acquisitions.
 
 ### What this does NOT mean
 
 It does not prove:
 
-- that the board page did not exist;
+- that a board page did not exist somewhere else;
 - that no board change occurred;
 - that Buck remained or departed on any specific date;
 - that Frazier's chair role began on any specific date before the July announcement;
-- that Wayback has no relevant material at a different historical URL.
+- that Archive.org has no relevant material under some still-undiscovered URL.
 
-The exact-path search is now **exhausted** and should not be repeated absent evidence that the historical URL differed.
+The two known official-path searches are now **exhausted** and should not be repeated absent evidence of a different historical URL or a material archive-state change.
 
 ## 6. FY2025 Form 990 — role history, not a roster snapshot
 
@@ -192,7 +210,7 @@ FY2025 raw Part VII contains a director row; July 21, 2026 official page confirm
 
 ### Matt Sikes / Dylan Joyner / Ron Mooney
 
-July 21, 2026 official board page confirms all three. Exact board start dates remain open because the tested May–July 2025 exact path has no Wayback coverage and no separate appointment instrument has yet been acquired.
+July 21, 2026 official board page confirms all three. Exact board start dates remain open because both identified official roster paths lack Wayback captures for May–July 2025 and no separate appointment instrument has yet been acquired.
 
 ## 10. Current transition matrix
 
@@ -211,11 +229,11 @@ July 21, 2026 official board page confirms all three. Exact board start dates re
 
 ## 11. Next material proof gates
 
-Do not repeat the exhausted May–July 2025 exact-path CDX search.
+Do not repeat either exhausted May–July 2025 official-path CDX search.
 
 Material progress now requires one of:
 
-1. a historical alternate G3 board-page URL with archive captures;
+1. evidence identifying a different historical G3 board-page URL with archive captures;
 2. Buck/Thornton/Burrell/Frazier first-person resignation statements;
 3. board minutes or corporate resolutions;
 4. dated appointment announcements for Norton/Sikes/Joyner/Mooney;
