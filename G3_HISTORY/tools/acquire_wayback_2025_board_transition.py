@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Acquire official G3 Who-We-Are captures around the May–July 2025 board transition.
+"""Acquire legacy G3 leadership-page captures around the May–July 2025 transition.
 
-Research-only, read-only acquisition. The lane queries every Wayback CDX timestamp
-(no digest collapse) for the official G3 board page from 2025-05-01 through
-2025-07-20. CDX acquisition is sharded by month to avoid the broad-query gateway
-timeouts observed on this route. Every shard must return valid JSON; transport or
-parse failure in any shard fails closed. A valid empty shard is only a bounded
-archive-coverage result, never evidence that the board/page did not exist or change.
+The current-era `/about/who-we-are/` path has already been exhaustively tested for
+2025-05-01 through 2025-07-20 and returned three valid empty monthly CDX shards.
+Search indexes independently expose the historical official route
+`/vision/leadership/` with title `Who We Are`. This version tests that concrete
+legacy route only; it does not repeat the exhausted current-era path.
+
+Research-only, read-only acquisition. CDX is sharded by month. Every shard must
+return valid JSON; any transport/parse failure fails closed. A valid empty result is
+archive coverage only, never evidence of board continuity or absence.
 """
 from __future__ import annotations
 
@@ -24,20 +27,22 @@ import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 
-TARGET = "http://g3min.org/about/who-we-are/"
-CDX_TARGET = "g3min.org/about/who-we-are/"
+TARGET = "http://g3min.org/vision/leadership/"
+CDX_TARGET = "g3min.org/vision/leadership/"
 WINDOWS = [
     ("20250501", "20250531", "2025-05"),
     ("20250601", "20250630", "2025-06"),
     ("20250701", "20250720", "2025-07-01_20"),
 ]
-UA = "FedorMilovanov-Research-G3-2025-Board-Transition/1.2 (research-only)"
+UA = "FedorMilovanov-Research-G3-2025-Legacy-Leadership/2.0 (research-only)"
 ZSTD_MAGIC = b"\x28\xb5\x2f\xfd"
 
 NAMES = [
     "Joshua Buice",
+    "Josh Buice",
     "Tom Buck",
     "Chip Thornton",
+    "Chipley Thornton",
     "Buck Braswell",
     "Adam Burrell",
     "Matt Broome",
@@ -146,8 +151,8 @@ def query_segment(out: Path, start: str, end: str, label: str) -> tuple[list[dic
     url = "https://web.archive.org/cdx/search/cdx?" + urllib.parse.urlencode(params)
     data, meta = fetch(url, 60)
     safe = label.replace("/", "_")
-    (out / f"CDX_{safe}.json").write_bytes(data)
-    write_json(out / f"CDX_{safe}_FETCH.json", meta)
+    (out / f"CDX_LEGACY_{safe}.json").write_bytes(data)
+    write_json(out / f"CDX_LEGACY_{safe}_FETCH.json", meta)
     captures, state = parse_cdx_rows(data, label)
     return captures, {
         "label": label,
@@ -161,7 +166,6 @@ def query_segment(out: Path, start: str, end: str, label: str) -> tuple[list[dic
 
 
 def select_captures(captures: list[dict]) -> list[dict]:
-    """Preserve first, last and every digest transition without duplicate timestamps."""
     rows = sorted(captures, key=lambda item: item.get("timestamp", ""))
     if not rows:
         return []
@@ -187,7 +191,14 @@ def select_captures(captures: list[dict]) -> list[dict]:
 
 def board_context(text: str) -> str:
     lines = text.splitlines()
-    needles = ("board of directors", "board", "tom buck", "jonathan frazier")
+    needles = (
+        "board of directors",
+        "board chairman",
+        "board",
+        "tom buck",
+        "jonathan frazier",
+        "leadership",
+    )
     first = None
     for idx, line in enumerate(lines):
         low = line.casefold()
@@ -196,9 +207,7 @@ def board_context(text: str) -> str:
             break
     if first is None:
         return ""
-    start = max(0, first - 8)
-    end = min(len(lines), first + 80)
-    return "\n".join(lines[start:end])
+    return "\n".join(lines[max(0, first - 10):min(len(lines), first + 110)])
 
 
 def main() -> int:
@@ -210,30 +219,30 @@ def main() -> int:
 
     summary = {
         "target": TARGET,
+        "target_kind": "LEGACY_INDEX_DISCOVERED_WHO_WE_ARE_ROUTE",
         "windows": [{"from": a, "to": b, "label": c} for a, b, c in WINDOWS],
         "state": "EPHEMERAL_ACTION_ARTIFACT",
         "publication_eligible": False,
-        "negative_result_boundary": (
-            "Archive coverage is not evidence of board continuity, absence, resignation, or non-resignation."
-        ),
         "errors": [],
         "segments": [],
         "captures": [],
+        "negative_result_boundary": (
+            "Archive coverage is not evidence of board continuity, absence, resignation, or non-resignation."
+        ),
     }
 
     captures: list[dict] = []
     for start, end, label in WINDOWS:
         try:
-            segment_captures, segment_meta = query_segment(out, start, end, label)
-            captures.extend(segment_captures)
-            summary["segments"].append(segment_meta)
+            rows, meta = query_segment(out, start, end, label)
+            captures.extend(rows)
+            summary["segments"].append(meta)
         except Exception as exc:
             summary["errors"].append(f"CDX {label}: {exc}")
             summary["segments"].append(
                 {"label": label, "from": start, "to": end, "state": "ERROR", "error": str(exc)}
             )
 
-    # Deduplicate only identical timestamps after every segment has been acquired.
     by_ts: dict[str, dict] = {}
     for item in captures:
         ts = item.get("timestamp", "")
@@ -245,7 +254,7 @@ def main() -> int:
     summary["cdx_timestamps"] = [item.get("timestamp") for item in captures]
     summary["distinct_digests"] = len({item.get("digest") for item in captures if item.get("digest")})
     if not summary["errors"] and not captures:
-        summary["coverage_state"] = "VALID_EMPTY_ALL_SEGMENTS"
+        summary["coverage_state"] = "VALID_EMPTY_ALL_LEGACY_SEGMENTS"
 
     selected = select_captures(captures)
     summary["selected_capture_timestamps"] = [item.get("timestamp") for item in selected]
@@ -259,16 +268,16 @@ def main() -> int:
         record = {"cdx": item, "snapshot_url": snapshot_url}
         try:
             raw, meta = fetch(snapshot_url, 120)
-            raw_name = f"{ts}_who-we-are.raw"
+            raw_name = f"{ts}_legacy-leadership.raw"
             (out / raw_name).write_bytes(raw)
             decoded, method = decode_payload(raw)
-            html_name = f"{ts}_who-we-are.html"
+            html_name = f"{ts}_legacy-leadership.html"
             (out / html_name).write_bytes(decoded)
             text = extract_text(decoded)
-            text_name = f"{ts}_who-we-are.txt"
+            text_name = f"{ts}_legacy-leadership.txt"
             (out / text_name).write_text(text, encoding="utf-8")
             context = board_context(text)
-            (out / f"{ts}_board-context.txt").write_text(context, encoding="utf-8")
+            (out / f"{ts}_legacy-board-context.txt").write_text(context, encoding="utf-8")
             hits = {name: (name.casefold() in text.casefold()) for name in NAMES}
             record.update(
                 {
@@ -281,8 +290,8 @@ def main() -> int:
                     "text_file": text_name,
                     "text_sha256": sha(text.encode()),
                     "name_hits": hits,
-                    "board_heading_present": bool(re.search(r"board(?: of directors)?", text, re.I)),
-                    "board_context": context[:12000],
+                    "board_heading_present": bool(re.search(r"board(?: of directors| chairman)?", text, re.I)),
+                    "board_context": context[:14000],
                 }
             )
         except Exception as exc:
@@ -292,14 +301,9 @@ def main() -> int:
 
     write_json(out / "SUMMARY.json", summary)
 
+    print("TARGET", TARGET)
     for segment in summary["segments"]:
-        print(
-            "CDX_SEGMENT",
-            segment.get("label"),
-            segment.get("state"),
-            "count=",
-            segment.get("capture_count", 0),
-        )
+        print("CDX_SEGMENT", segment.get("label"), segment.get("state"), "count=", segment.get("capture_count", 0))
     print("CDX_CAPTURE_COUNT", summary["cdx_capture_count"])
     print("CDX_TIMESTAMPS", ",".join(ts or "" for ts in summary["cdx_timestamps"]))
     print("DISTINCT_DIGESTS", summary["distinct_digests"])
@@ -309,6 +313,10 @@ def main() -> int:
         if record.get("fetch"):
             present = [name for name, hit in record.get("name_hits", {}).items() if hit]
             print("ACQUIRED", record["cdx"].get("timestamp"), "NAMES", " | ".join(present))
+            if record.get("board_context"):
+                print("BOARD_CONTEXT_BEGIN", record["cdx"].get("timestamp"))
+                print(record["board_context"][:6000])
+                print("BOARD_CONTEXT_END", record["cdx"].get("timestamp"))
         else:
             print("SNAPSHOT_ERROR", record.get("snapshot_url"), record.get("error"), file=sys.stderr)
 
