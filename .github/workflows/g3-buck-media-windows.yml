@@ -1,0 +1,84 @@
+name: G3 Buck bounded original-media windows
+
+on:
+  push:
+    branches:
+      - research/g3-history-20260907
+    paths:
+      - G3_HISTORY/tools/acquire_buck_media_windows.py
+      - .github/workflows/g3-buck-media-windows.yml
+
+permissions:
+  contents: read
+
+env:
+  G3_BUCK_MEDIA_OUT: g3-buck-media-evidence
+  WHISPER_MODEL: base.en
+
+jobs:
+  acquire:
+    strategy:
+      fail-fast: false
+      matrix:
+        item: [11, 12, 13, 14, 15, 16, 17]
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout exact branch head
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install ffmpeg and read-only media tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade yt-dlp openai-whisper
+
+      - name: Compile acquisition tool
+        run: python -m py_compile G3_HISTORY/tools/acquire_buck_media_windows.py
+
+      - name: Acquire bounded public FBC media windows
+        run: |
+          set -euo pipefail
+          python G3_HISTORY/tools/acquire_buck_media_windows.py --item ${{ matrix.item }}
+
+      - name: Assert no audio or video binary enters artifact
+        run: |
+          set -euo pipefail
+          test -f "$G3_BUCK_MEDIA_OUT/item-$(printf '%02d' '${{ matrix.item }}')/ACQUISITION_RECEIPT.json"
+          if find "$G3_BUCK_MEDIA_OUT" -type f \( -iname '*.wav' -o -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.mp4' -o -iname '*.webm' \) | grep -q .; then
+            echo 'Unexpected media binary present in artifact staging' >&2
+            exit 1
+          fi
+
+      - name: Record exact GitHub provenance
+        run: |
+          d="$G3_BUCK_MEDIA_OUT/item-$(printf '%02d' '${{ matrix.item }}')"
+          cat > "$d/GITHUB_PROVENANCE.txt" <<EOF
+          repository=$GITHUB_REPOSITORY
+          sha=$GITHUB_SHA
+          run_id=$GITHUB_RUN_ID
+          run_attempt=$GITHUB_RUN_ATTEMPT
+          workflow=$GITHUB_WORKFLOW
+          item=${{ matrix.item }}
+          authentication_used=false
+          audio_binary_retained=false
+          machine_transcript_only=true
+          publication_authorized=false
+          item_verified=false
+          EOF
+
+      - name: Upload transcript/custody evidence only
+        uses: actions/upload-artifact@v4
+        with:
+          name: g3-buck-media-item-${{ matrix.item }}-${{ github.sha }}
+          path: g3-buck-media-evidence/item-*/
+          retention-days: 7
+          if-no-files-found: error
