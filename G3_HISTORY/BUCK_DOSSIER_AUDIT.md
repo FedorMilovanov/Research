@@ -10,10 +10,10 @@
 
 Four propositions must be kept separate:
 
-1. **There was a real attribution problem.** This is supported not only by the anonymous dossier but by Phil Johnson's first-person review, Protestia's independent review and the statement attributed to FBC Lindale leadership that Tom Buck had used commentary material in sermons without proper citation.
-2. **The dossier contains materially strong examples.** Some rows show extended verbal correspondence, distinctive illustrations, invented details or recognizable verbal sequencing that cannot responsibly be dismissed as generic exegetical overlap.
+1. **There was a real attribution problem.** This is supported not only by the anonymous dossier but by Phil Johnson's original first-person review, Protestia's independent review and the statement attributed to FBC Lindale leadership that Tom Buck had used commentary material in sermons without proper citation.
+2. **The dossier contains materially strong examples.** Some rows show extended verbal correspondence, distinctive illustrations or recognizable verbal sequencing that cannot responsibly be dismissed as generic exegetical overlap.
 3. **The dossier's method does not make every listed row equally probative.** It groups verbatim language, near-verbatim wording, paraphrase, common exegetical observations, argumentative similarity, illustrative material and structural frameworks under one global accusation. Those categories require different evidentiary and moral weight.
-4. **The currently acquired evidence does not establish that Buck routinely purchased, copied or preached other preachers' complete finished sermons as his own.** Multiple reviewers who saw the materials distinguish commentary incorporation from finished-sermon appropriation.
+4. **The currently acquired evidence does not establish that Buck routinely purchased, copied or preached other preachers' complete finished sermons as his own.** Reviewers who saw the materials distinguish commentary incorporation from finished-sermon appropriation.
 
 Therefore the defensible historical description is presently: **recurrent insufficient attribution / unattributed commentary borrowing is supported; the severity of individual examples varies; “complete-sermon theft” is unsupported; ecclesial disqualification is a separate theological/governance judgment.**
 
@@ -32,43 +32,49 @@ The authors say sermon audio was obtained from FBC Lindale's public recordings, 
 ### Evidentiary status of those methodological claims
 
 - The PDF itself is a primary accusation object (`A1` as participant-created record), not an independent finding.
-- The FBC public archive independently confirms at least the sermon identities/dates checked so far.
+- The FBC public archive independently confirms sermon identities/dates for the audited corpus and exposes direct media objects for multiple sermons.
 - Automated transcript accuracy must be checked against original audio for quote-level claims.
 - Published-book text must be checked against identified editions/pages before exact quotation.
 - A dossier author's label `verbatim`, `plagiarism`, `distinctive`, etc. is an assessment, not self-proving evidence.
 
-## Complete sermon inventory in the dossier
+## Complete sermon inventory — reconciled state
 
-| # | Buck sermon | Date | Claimed source | Current item status |
+All **17/17 accusation sermons now have dedicated forensic files** under `BUCK_ITEMS/`. None is declared `ITEM_VERIFIED`, because item closure requires original-media/human transcript, exact source object/edition and immediate attribution context in addition to source-lineage work.
+
+| # | Buck sermon | Date | Claimed source | Current audit state |
 |---|---|---|---|---|
-| 1 | Exodus 4:10–17 | 2017-03-05 | Philip Graham Ryken, *Exodus*, ch. 9, pp. 112–123 | dossier text acquired; audio/source-book exact verification pending |
-| 2 | Exodus 5:1–9 | 2017-03-26 | Ryken, *Exodus*, ch. 11, pp. 136–147 | pending item audit |
-| 3 | Exodus 5:10–21 | 2017-04-02 | Ryken, *Exodus*, ch. 12, pp. 148–159 | pending item audit |
-| 4 | Ephesians 4:1–6 | 2022-09-18 | R. Kent Hughes, *Ephesians*, ch. 14 | pending item audit |
-| 5 | Ephesians 5:25–33 | 2022-11-20 | Hughes, *Ephesians*, ch. 22, pp. 189–195 | pending item audit |
-| 6 | Ephesians 6:5–9 | 2022-12-04 | Hughes, *Ephesians*, ch. 24, pp. 205–212 | pending item audit |
-| 7 | Romans 4:1–12 | 2023-04-30 | Hughes, *Romans*, ch. 9, pp. 89–96 | pending item audit |
-| 8 | Romans 5:6–11 | 2023-06-04 | Hughes, *Romans*, ch. 11, pp. 105–112 | contains long historical/narrative parallel; high-priority verification |
-| 9 | Titus 1:1–4 | 2023-06-18 | Hughes & Chapell, *1 & 2 Timothy and Titus*, pp. 274–289 | pending item audit |
-| 10 | Titus 2:11–15 | 2023-08-06 | Hughes & Chapell, same volume, ch. 38, pp. 337–351 | **high-priority / strong authorship issue if audio confirms dossier transcript** |
-| 11 | Romans 7:1–6 | 2024-01-07 | Hughes, *Romans*, pp. 137–146 | pending item audit |
-| 12 | Romans 15:1–6 | 2025-10-19 | Hughes, *Romans*, ch. 30, pp. 278–285 | pending item audit |
-| 13 | Romans 16:25–27 | 2025-12-21 | Hughes, *Romans*, pp. 310–312 | pending item audit |
-| 14 | Joshua 1:1–9 | 2026-01-18 | David Jackman, *Joshua*, pp. 15–44 | structural + verbal claims; high-priority verification |
-| 15 | Joshua 2:1–24 | 2026-02-08 | Jackman, *Joshua*, pp. 33–40 | pending item audit |
-| 16 | Joshua 3:1–17 | 2026-02-15 | Jackman, *Joshua*, pp. 41–49 | pending item audit |
-| 17 | Joshua 4:1–24 | 2026-03-01 | Jackman, *Joshua*, pp. 51–57 | repeated distinctive-phrase claims; high-priority verification |
+| 1 | Exodus 4:10–17 | 2017-03-05 | Ryken, *Exodus*, ch. 9, pp. 112–123 | forensic file complete; distinctive wording candidates; audio/book gate open |
+| 2 | Exodus 5:1–9 | 2017-03-26 | Ryken, *Exodus*, ch. 11, pp. 136–147 | forensic file complete; source-specificity analysis done; audio/book gate open |
+| 3 | Exodus 5:10–21 | 2017-04-02 | Ryken, *Exodus*, ch. 12, pp. 148–159 | forensic file complete; source-lineage analysis done; audio/book gate open |
+| 4 | Ephesians 4:1–6 | 2022-09-18 | Hughes, *Ephesians*, ch. 14 | forensic file complete; source-specificity analysis done; audio/edition gate open |
+| 5 | Ephesians 5:25–33 | 2022-11-20 | Hughes, *Ephesians*, ch. 22, pp. 189–195 | forensic file complete; source-lineage analysis done; audio/edition gate open |
+| 6 | Ephesians 6:5–9 | 2022-12-04 | Hughes, *Ephesians*, ch. 24, pp. 205–212 | forensic file complete; historical-source lineage separated from generic overlap; audio gate open |
+| 7 | Romans 4:1–12 | 2023-04-30 | Hughes, *Romans*, ch. 9, pp. 89–96 | forensic file complete; generic `logizomai`/David material separated from stronger source wording; audio gate open |
+| 8 | Romans 5:6–11 | 2023-06-04 | Hughes, *Romans*, ch. 11, pp. 105–112 | forensic file complete; Peter Miller historical-narrative parallel remains high priority; audio/source gate open |
+| 9 | Titus 1:1–4 | 2023-06-18 | Hughes & Chapell, *1 & 2 Timothy and Titus*, pp. 274–289 | forensic file complete; source-specificity analysis done; audio/edition gate open |
+| 10 | Titus 2:11–15 | 2023-08-06 | Hughes & Chapell, ch. 38, pp. 337–351 | forensic file complete; Chapell-1998 source object verified; Jennifer-2022 biography primary-anchored; Buck audio/attribution gate open |
+| 11 | Romans 7:1–6 | 2024-01-07 | Hughes, *Romans*, pp. 137–146 | forensic file complete; stronger pre-Buck source-family sequence identified; audio/edition gate open |
+| 12 | Romans 15:1–6 | 2025-10-19 | Hughes, *Romans*, ch. 30, pp. 278–285 | forensic file complete; circulating `trespasses/debts` joke separated from stronger Christ-language block; audio gate open |
+| 13 | Romans 16:25–27 | 2025-12-21 | Hughes, *Romans*, pp. 310–312 | forensic file complete; long source-side gospel sequence distinguished from common `sons/daughters` language; audio gate open |
+| 14 | Joshua 1:1–9 | 2026-01-18 | Jackman, *Joshua*, pp. 15–44 | forensic file complete; structure/verbal specificity separated; audio/source gate open |
+| 15 | Joshua 2:1–24 | 2026-02-08 | Jackman, *Joshua*, pp. 33–40 | forensic file complete; official publisher/distributor sample materially strengthens source-object side; Buck audio gate open |
+| 16 | Joshua 3:1–17 | 2026-02-15 | Jackman, *Joshua*, pp. 41–49 | forensic file complete; source-lineage analysis done; audio/source gate open |
+| 17 | Joshua 4:1–24 | 2026-03-01 | Jackman, *Joshua*, pp. 51–57 | forensic file complete; repeated distinctive-phrase question preserved; audio/source gate open |
+
+**Corpus state:** `17/17 FORENSIC_FILES_COMPLETE / 0/17 ITEM_VERIFIED`.
+
+The existence of 17 forensic files must not be confused with 17 proved plagiarism verdicts. The item files are evidence-grade analyses precisely because they preserve weak/common-source rows, counterevidence and unresolved gates as well as strong candidates.
 
 ## Severity framework for item-level audit
 
-The dossier's binary `plagiarism / not plagiarism` framing is too coarse for forensic reconstruction. Each parallel will be normalized into the following categories.
+The dossier's binary `plagiarism / not plagiarism` framing is too coarse for forensic reconstruction. Each parallel is normalized into the following categories.
 
 ### A — high-probative authorship appropriation
 
 Examples include:
 
 - extended exact or near-exact language;
-- another author's clearly personal/autobiographical illustration presented in first person;
+- another author's clearly personal/autobiographical wording presented in first person;
 - distinctive invented detail or memorable narrative wording reproduced without attribution;
 - sustained multi-sentence sequence whose independent recreation is implausible.
 
@@ -101,64 +107,66 @@ Structure can matter cumulatively but is weaker than distinctive verbal appropri
 
 Dossier transcription/source comparison exists, but exact original audio and/or identified published edition has not yet been checked.
 
-## Item 1 — Exodus 4:10–17
+## Selected item findings
 
-The dossier's first sermon is useful because it demonstrates why row-level classification is necessary. The side-by-side page contains multiple very close formulations attributed to Ryken, including equivalents of:
+### Item 1 — Exodus 4:10–17
 
-- Moses as a reporter rather than an orator;
-- the message being more important than the man;
-- an `obedience problem` rather than a speech problem;
-- a creative `fifteen minutes` imagined exchange with God;
-- Moses `mouthing off`.
+The dossier's first sermon is useful because it demonstrates why row-level classification is necessary. The side-by-side page contains multiple very close formulations attributed to Ryken, including equivalents of Moses as a reporter rather than an orator, the message being more important than the man, an `obedience problem` rather than a speech problem, a creative `fifteen minutes` imagined exchange with God and Moses `mouthing off`.
 
-Several of these are more probative than generic statements about Moses' speech weakness because they involve distinctive phrasing or invented rhetorical details. If the FBC audio and Ryken edition confirm the dossier, Item 1 likely contains multiple `B` parallels and possibly stronger rows.
+Several are more probative than generic statements about Moses' speech weakness because they involve distinctive phrasing or invented rhetorical detail.
 
-**Current status:** `U → likely B`, pending original audio/book verification.
+**Current status:** strong candidates preserved; original audio/book gate remains.
 
-## Item 8 — Romans 5:6–11
+### Item 8 — Romans 5:6–11
 
-The dossier identifies a lengthy historical narrative/illustration parallel involving Peter Miller and George Washington. Long narrative borrowing is potentially more probative than shared exegesis because the selection, sequence and wording of a secondary historical anecdote are source-dependent.
+The dossier identifies a lengthy historical narrative/illustration parallel involving Peter Miller and George Washington. Long narrative borrowing is potentially more probative than shared exegesis because selection, sequence and wording of a secondary historical anecdote are source-dependent.
 
-**Current status:** `U / high priority`. Need original sermon audio plus Hughes text before classifying A/B.
+**Current status:** high-priority source/audio closure remains.
 
-## Item 10 — Titus 2:11–15 marriage illustration
+### Item 10 — Titus 2:11–15 marriage illustration
 
 This is the most sensitive example and must be worded precisely.
 
-### What is independently anchored
+#### Source-side primary object
 
-- FBC Lindale's own sermon page identifies `Titus 2:11–15`, Tom Buck, **2023-08-06**, and embeds Vimeo video `852173553` under FBC Lindale Media.
-- The dossier locates the disputed passage around **34:09**.
-- The wording/source tradition attributed to Hughes & Chapell can be traced earlier to Bryan Chapell's 1998 article `“Intolerant” Grace: Titus 2:11-15`, which contains Chapell's first-person discussion of marriage. This establishes that the personal formulation belonged to Chapell's published material years before Buck's sermon.
+Bryan Chapell's `“Intolerant” Grace: Titus 2:11–15`, *Reformation & Revival* 7.3 (Summer 1998), pp. 67–93 is now identified as a full PDF article object (`G3-S036`). This closes the former reliance on a later quotation/reference site for the existence and chronology of Chapell's pre-Buck autobiographical source tradition.
 
-### What remains unclosed
+The exact 2000 Hughes/Chapell edition/page used by the dossier remains useful for immediate-source comparison, but Chapell's pre-2000 source provenance is no longer speculative.
 
-The current web research environment exposes the Vimeo identity but not a reliable timestamp transcript. Therefore the dossier transcription at 34:09 has not yet been independently checked against the audio byte stream.
+#### Buck-side official media object
 
-### Jennifer Buck's response matters
+FBC Lindale's own sermon page identifies `Titus 2:11–15`, Tom Buck, **2023-08-06**, and embeds Vimeo video `852173553` under FBC Lindale Media. Vimeo itself identifies the media as `Titus 2:11-15 - Dr. Tom Buck - 8/6/23`, FBC Lindale Media.
 
-A secondary report reproduces Jennifer Buck's objection that the underlying marital circumstances described were also true of Tom and Jennifer roughly 35 years earlier. That claim has not yet been acquired from Jennifer's original post.
+The current research web transport exposes the media identity but not a reliable text track/transcript. Public player/config and downloader routes tested in the current environment did not yield an independently readable transcript. Therefore the dossier's ~34:09 transcript remains unclosed against the actual media byte stream.
 
-If Jennifer's account is accurate, it changes an important formulation:
+#### Pre-controversy Jennifer Buck primary control
 
-- **Allowed if audio verifies the dossier:** Buck used another author's published autobiographical wording/formulation without attribution and adapted it to his own wife's name / analogous personal circumstances.
-- **Not established:** Buck fabricated the underlying marital experience or falsely claimed an event that never occurred in his own marriage.
+Jennifer Buck's own G3 article `A Story of Restorative Grace`, published **2022-04-07**, predates both the 2023 sermon and the 2026 plagiarism controversy. It publicly describes serious problems in the Bucks' early marriage: anger/control, damaging verbal conduct, a physical escalation incident, counseling and restoration.
 
-The authorship/attribution problem and the truth/falsity of the underlying life experience are separate questions.
+Canonical source dossier: `G3-S103` / `PRIMARY_SOURCE_JENNIFER_BUCK_2022_RESTORATIVE_GRACE.md`.
 
-**Current status:** source-lineage strong; sermon transcript remains `U`; allegation of fabricated biography blocked.
+Exact original G3 URL and an exact historical Wayback locator (`20220613172451`) are known. The current G3 page is unstable/503 and the Wayback body has not yet been read back and hashed through the research transport, so archive-body custody remains a separate technical hold.
 
-## Item 14 — Joshua 1:1–9
+#### Correct forensic split
+
+- **Live question:** did Buck use distinctive Chapell/Hughes autobiographical wording/formulation without adequate attribution?
+- **Blocked claim:** the Titus example proves Buck invented a marriage history that never happened to him and Jennifer.
+
+The second claim is contradicted by Jennifer's pre-controversy authored record; this does not answer the first.
+
+**Current status:** `CHAPELL_SOURCE_OBJECT_VERIFIED / PRECONTROVERSY_BIOGRAPHY_PRIMARY_ANCHORED / BUCK_AUDIO_AND_ATTRIBUTION_CONTEXT_HOLD`.
+
+### Item 14 — Joshua 1:1–9
 
 The dossier argues that a KNOW / OBEY / MEDITATE framework mirrors Jackman's treatment. Structural identity is relevant but inherently less probative than distinctive multi-sentence wording, especially in expository preaching where textual sequence may independently produce similar divisions.
 
-**Current status:** evaluate under `S`, then ask whether verbal correspondences independently elevate specific rows to B.
+**Current status:** evaluate structure under `S`; specific verbal rows may independently rise to B only if media/source objects confirm them.
 
-## Item 17 — Joshua 4:1–24
+### Item 17 — Joshua 4:1–24
 
 The dossier includes repeated wording such as the proposition that `spiritual memories are very short` and additional near-verbatim comparisons. Repetition of a distinctive non-biblical formulation can become probative cumulatively.
 
-**Current status:** `U → possible B`, pending source/audio verification.
+**Current status:** possible material verbal dependence; original media/source closure remains.
 
 ## Church response and independent reviewers
 
@@ -170,7 +178,9 @@ The statement is currently reproduced by Protestia. A directly hosted 2026 FBC c
 
 ### Phil Johnson
 
-Johnson says Buck personally sent him the packet on March 27 and FBC elders contacted him the same day. After reviewing it, Johnson distinguished two findings:
+Johnson's **original** Aug. 19, 2026 Pyromaniacs article `Haman's Gallows` is now directly acquired at `G3-S012`, rather than relying on a republication.
+
+He says Buck personally sent him the packet on March 27 and FBC elders contacted him the same day. After reviewing it, Johnson distinguishes two findings:
 
 - he saw no evidence Buck was preaching sermons written by others and believed Buck was doing his own biblical study;
 - he did see wording taken directly from commentaries without attribution, which Johnson himself regards as plagiarism and told Buck to correct.
@@ -181,7 +191,7 @@ This testimony is unusually important because it cuts against both extreme narra
 
 Protestia says it independently checked the cited source material and sermons and confirmed direct/insufficiently attributed wording, but concluded the anonymous dossier substantially overstated what the evidence established. It also reports FBC's investigation, Buck's recusal and consultation with outside pastors.
 
-Because Protestia is a polemical participant in exposing the anonymous campaign, its evaluative judgments are `B1`, not neutral primary findings. Its independent comparison remains useful corroboration.
+Because Protestia is a polemical participant in exposing the anonymous campaign, its evaluative judgments are `B1`, not neutral primary findings. Its comparison remains useful corroboration.
 
 ### Plagiarism Today
 
@@ -211,7 +221,7 @@ Jonathan Bailey explicitly declines to decide whether Buck plagiarized because h
 
 ## Remaining item-level work
 
-For all 17 sermons, build an auditable matrix with:
+For all 17 sermons, the remaining closure matrix requires where applicable:
 
 - sermon page URL;
 - video/audio ID;
@@ -225,4 +235,4 @@ For all 17 sermons, build an auditable matrix with:
 - whether the parallel concerns words, ideas, illustration, structure or life narrative;
 - independent reviewer notes.
 
-No final count such as `45 proven plagiarism instances` should be published until that matrix is complete. A secondary news source reports approximately 45 alleged instances, but allegation count is not equivalent to verified-instance count.
+No final count such as `45 proven plagiarism instances` should be published until that matrix is complete. An allegation count is not equivalent to a verified-instance count.
