@@ -30,9 +30,89 @@ jobs:
         run: python -m py_compile G3_HISTORY/tools/acquire_wayback_2025_board_transition.py
 
       - name: Acquire May-July 2025 board snapshots
+        id: acquire
+        continue-on-error: true
         run: >-
           python G3_HISTORY/tools/acquire_wayback_2025_board_transition.py
           --output g3-wayback-2025-board-output
+
+      - name: Classify acquisition outcome
+        env:
+          ACQUIRE_OUTCOME: ${{ steps.acquire.outcome }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import sys
+          from pathlib import Path
+
+          root = Path('g3-wayback-2025-board-output')
+          summary_path = root / 'SUMMARY.json'
+          if not summary_path.exists():
+              print('::error::Acquisition produced no SUMMARY.json; this is an acquisition defect, not a transport hold.')
+              raise SystemExit(2)
+
+          try:
+              summary = json.loads(summary_path.read_text(encoding='utf-8'))
+          except Exception as exc:
+              print(f'::error::SUMMARY.json is unreadable: {exc}')
+              raise SystemExit(2)
+
+          errors = summary.get('errors')
+          if not isinstance(errors, list):
+              print('::error::SUMMARY.json errors field is not a list.')
+              raise SystemExit(2)
+
+          outcome = os.environ.get('ACQUIRE_OUTCOME', '')
+          retryable_http = re.compile(r'\bHTTP (?:429|500|502|503|504)\b')
+
+          def is_transport_hold(message: object) -> bool:
+              text = str(message)
+              return bool(
+                  retryable_http.search(text)
+                  or 'URL error ' in text
+                  or 'Timeout url=' in text
+              )
+
+          if outcome == 'success':
+              if errors:
+                  print('::error::Acquisition step succeeded but SUMMARY.json contains errors.')
+                  for error in errors:
+                      print('ERROR', error)
+                  raise SystemExit(2)
+              state = 'ACQUISITION_SUCCEEDED'
+          else:
+              if not errors:
+                  print('::error::Acquisition step failed without structured errors; fail closed.')
+                  raise SystemExit(2)
+              unexpected = [error for error in errors if not is_transport_hold(error)]
+              if unexpected:
+                  print('::error::Acquisition failed for a non-transport reason; fail closed.')
+                  for error in unexpected:
+                      print('UNEXPECTED_ERROR', error)
+                  raise SystemExit(2)
+              state = 'TRANSPORT_HOLD'
+              print('::warning::Wayback acquisition exhausted only retryable transport failures. Historical evidence state is unchanged; see artifact classification.')
+
+          classification = {
+              'state': state,
+              'acquireStepOutcome': outcome,
+              'transportErrors': errors if state == 'TRANSPORT_HOLD' else [],
+              'semanticEvidenceChanged': False if state == 'TRANSPORT_HOLD' else None,
+              'publicationEligible': False,
+              'rule': (
+                  'Only exhausted retryable HTTP 429/5xx, URL transport errors, or timeouts may become TRANSPORT_HOLD. '
+                  'Missing/unreadable summaries, parse/schema failures, non-retryable HTTP failures and all unclassified errors fail CI.'
+              ),
+          }
+          root.mkdir(parents=True, exist_ok=True)
+          (root / 'ACQUISITION_CLASSIFICATION.json').write_text(
+              json.dumps(classification, ensure_ascii=False, indent=2),
+              encoding='utf-8',
+          )
+          print('ACQUISITION_CLASSIFICATION', state)
+          PY
 
       - name: Record ephemeral custody context
         if: always()
