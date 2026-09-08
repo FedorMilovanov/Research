@@ -75,6 +75,16 @@ def emit_component_objects(kind_prefix: str, objects: list[dict[str, Any]]) -> N
             emit(f"{kind_prefix}_leaf", {"object_ordinal": obj["object_ordinal"], "ordinal": idx, **leaf})
 
 
+def relevant_asset_leaf(leaf: dict[str, Any]) -> bool:
+    """Select FY2023 balance-sheet / asset-sale leaves without schema guessing."""
+    hay = (leaf.get("path", "") + " " + leaf.get("tag", "")).casefold()
+    terms = (
+        "sale", "asset", "gain", "loss", "receiv", "note", "loan",
+        "land", "building", "equipment", "depreci", "property", "mortgage",
+    )
+    return any(term in hay for term in terms)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--output", default="g3-irs-acquisition-output")
@@ -141,14 +151,22 @@ def main() -> int:
         emit("irs990_leaf_count", len(leaves))
         for idx, leaf in enumerate(leaves, 1):
             emit("irs990_leaf", {"ordinal": idx, **leaf})
-
-        # The acquisition target originally required only IRS990, but the raw
-        # return also contains attached schedules. Expose Schedule D/M/O here
-        # directly from the already acquired raw bytes; no second source or
-        # network request is introduced.
         components = raw_components(root, custody, {"IRS990ScheduleD", "IRS990ScheduleM", "IRS990ScheduleO"})
         emit_component_objects("schedule_d", components["IRS990ScheduleD"])
         emit_component_objects("schedule_m", components["IRS990ScheduleM"])
+        emit_component_objects("schedule_o", components["IRS990ScheduleO"])
+
+    elif label == "FY2023":
+        form = root / "IRS990_LEAVES.json"
+        if not form.exists():
+            raise SystemExit(f"missing IRS990 leaves: {form}")
+        leaves = read_json(form)
+        selected = [leaf for leaf in leaves if relevant_asset_leaf(leaf)]
+        emit("fy2023_asset_leaf_count", len(selected))
+        for idx, leaf in enumerate(selected, 1):
+            emit("fy2023_asset_leaf", {"ordinal": idx, **leaf})
+        components = raw_components(root, custody, {"IRS990ScheduleD", "IRS990ScheduleO"})
+        emit_component_objects("schedule_d", components["IRS990ScheduleD"])
         emit_component_objects("schedule_o", components["IRS990ScheduleO"])
     else:
         raise SystemExit(f"unsupported summary label: {args.label}")
