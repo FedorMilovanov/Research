@@ -33,12 +33,14 @@ Resolve repository-root authority / current `AGENT_RULES.md` / evidence policy f
 15. `226_CONTINUITY_APPENDIX_CONCURRENT_GAP_ROUTING_AND_LONG_TERM_PARENTAL_WAITING_2026-09-08.md`;
 16. `229_CONTINUITY_APPENDIX_FINANCIAL_STEWARDSHIP_THIRD_PARTY_HOUSING_AND_NON_UNDERMINING_2026-09-08.md`;
 17. `230_LATE_CORE_ROUTING_FAVORITISM_ACHIEVEMENT_REPUTATION_DISCIPLINE_AND_DISCLOSURE_2026-09-08.md`;
-18. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
-19. exact late appendices `153`, `162`, `170` and part-specific selected source packets / claim ledgers as relevant.
+18. `231_ADVERSARIAL_CLAIM_LEVEL_EVIDENCE_LADDER_FAMILY_GOVERNMENT_ADULT_CHILD_DAUGHTER_MARRIAGE_HOUSEHOLD_2026-09-08.md`;
+19. `232_CONTINUITY_APPENDIX_CLAIM_EVIDENCE_LADDER_WARM_AUTHORITY_AND_PRODUCT_OVERCLAIM_GUARD_2026-09-08.md`;
+20. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
+21. exact late appendices `153`, `162`, `170` and part-specific selected source packets / claim ledgers as relevant.
 
-**Owner-intent/late chain:** `45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 140`.
+**Owner-intent/late chain:** `45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 140`.
 
-For adult/family-government claim work, use exact source modules `171–229`, Particular Baptist controls `199–201` + `218`, older adult packets `90–99`, and concurrent cross-domain controls such as `240_CULTURAL_FAMILY_MYTHS...` where relevant.
+For adult/family-government claim work, use exact source modules `171–232`, Particular Baptist controls `199–201` + `218`, older adult packets `90–99`, and concurrent cross-domain controls such as `240_CULTURAL_FAMILY_MYTHS...` where relevant.
 
 ---
 
@@ -64,7 +66,7 @@ Psychology/developmental research may describe patterns or consequences; it does
 
 Adult/family-government material remains separate. `ARCHITECTURE_REVIEW_REQUIRED` stays active before Product drafting/splitting.
 
-Parallel high-prefix gap files are overlays, not automatic new chapters. Use `224` for `245/246/249/250` routing and `230` for `251–255` routing.
+Parallel high-prefix gap files are overlays, not automatic new chapters. Use `224` for `245/246/249/250` routing, `230` for `251–255` routing, and `232` for the mandatory `258_PARENT_AS_FRIEND...` warm-authority overlay plus the claim-level evidence ladder.
 
 ---
 
@@ -93,7 +95,10 @@ Parallel high-prefix gap files are overlays, not automatic new chapters. Use `22
 - `HIGH STANDARDS ≠ CONDITIONAL LOVE`; spiritual achievement must not become a family trophy;
 - `HONOR ≠ IMAGE MANAGEMENT`; family/church reputation never justifies concealment of real evil;
 - Scripture requires real discipline; `PAIDEIA ≠ SPANKING ONLY`; one physical method is not an orthodoxy test;
-- removal of corrupt influence must include positive pursuit/community (`2 Tim. 2:22`: flee + pursue + with), without turning mentoring into private unsupervised adult-teen intimacy.
+- removal of corrupt influence must include positive pursuit/community (`2 Tim. 2:22`: flee + pursue + with), without turning mentoring into private unsupervised adult-teen intimacy;
+- `WARMTH ≠ PERMISSIVENESS`; `AUTHORITY ≠ COLDNESS`; `SAFE TO TELL ≠ SAFE FROM MORAL TRUTH`;
+- `CHILD DISAPPROVAL ≠ PARENTAL FAILURE`; a parent must be able to risk temporary displeasure for truthful love;
+- `PARENTAL FEAR CANNOT SUBSTITUTE FOR FEAR OF GOD`; `REPENTANT AUTHORITY ≠ ABANDONED AUTHORITY`.
 
 Russian Psalm-numbering guard: historical English Psalm 50:16–21 = Synodal **Пс. 49:16–21**.
 
@@ -114,7 +119,7 @@ It may not disappear silently.
 
 ## 6. Adult/prodigal hard cases — mandatory
 
-Use especially `210–229` and continuity `214 / 217 / 223 / 226 / 229`.
+Use especially `210–232` and continuity `214 / 217 / 223 / 226 / 229 / 232`.
 
 Locked distinctions:
 
@@ -232,6 +237,14 @@ But:
 is **CUMULATIVE_INFERENCE**, not an undisputed NT statute.
 
 Every stronger claim must prove actual relation, domain, New Covenant transfer, age/status boundary, sex asymmetry and preservation of adult consent.
+
+### Claim-level certainty guard
+
+Use `231` + `232` before any strong Product sentence in this lane. Classify the claim as:
+
+`DIRECT_SCRIPTURE → CANONICAL_SYNTHESIS → CONFESSIONAL_EXPLICIT → CLASSICAL_EXEGESIS_STRONG → HISTORICAL_PRACTICE_STRONG → CUMULATIVE_INFERENCE → PRUDENTIAL_APPLICATION → CIVIL_OR_SAFEGUARDING_DEPENDENT → HOLD`.
+
+Never promote a lower evidence class merely because the conclusion fits the project's theological direction. Never demote a direct duty because modern culture dislikes it.
 
 ---
 
