@@ -76,7 +76,6 @@ def emit_component_objects(kind_prefix: str, objects: list[dict[str, Any]]) -> N
 
 
 def relevant_asset_leaf(leaf: dict[str, Any]) -> bool:
-    """Select balance-sheet / asset-sale leaves without schema guessing."""
     hay = (leaf.get("path", "") + " " + leaf.get("tag", "")).casefold()
     terms = (
         "sale", "asset", "gain", "loss", "receiv", "note", "loan",
@@ -95,7 +94,6 @@ def emit_asset_trace(label: str, leaves: list[dict[str, Any]]) -> None:
 
 
 def relevant_program_service_leaf(leaf: dict[str, Any]) -> bool:
-    """Select Part III mission/program-service narrative fields conservatively."""
     hay = (leaf.get("path", "") + " " + leaf.get("tag", "")).casefold()
     terms = (
         "programserviceaccomplishment",
@@ -115,6 +113,24 @@ def emit_program_service_trace(label: str, leaves: list[dict[str, Any]]) -> None
     emit(f"{prefix}_program_service_leaf_count", len(selected))
     for idx, leaf in enumerate(selected, 1):
         emit(f"{prefix}_program_service_leaf", {"ordinal": idx, **leaf})
+
+
+def emit_keyword_trace(label: str, leaves: list[dict[str, Any]], terms: tuple[str, ...]) -> None:
+    """Search every leaf value/path for named investigative terms without schema assumptions."""
+    hits = []
+    folded_terms = tuple(term.casefold() for term in terms)
+    for leaf in leaves:
+        hay = " ".join(
+            str(leaf.get(key, "")) for key in ("path", "tag", "text")
+        ).casefold()
+        matched = [term for term, folded in zip(terms, folded_terms) if folded in hay]
+        if matched:
+            hits.append({"matched_terms": matched, **leaf})
+    prefix = label.casefold()
+    emit(f"{prefix}_keyword_trace_terms", list(terms))
+    emit(f"{prefix}_keyword_trace_hit_count", len(hits))
+    for idx, leaf in enumerate(hits, 1):
+        emit(f"{prefix}_keyword_trace_hit", {"ordinal": idx, **leaf})
 
 
 def main() -> int:
@@ -177,6 +193,11 @@ def main() -> int:
             emit_asset_trace(label, leaves)
             if label == "FY2025":
                 emit_program_service_trace(label, leaves)
+                emit_keyword_trace(
+                    label,
+                    leaves,
+                    ("Living", "Heritage", "Homeschool", "separat"),
+                )
 
     elif label == "FY2022_LATER":
         form = root / "IRS990_LEAVES.json"
