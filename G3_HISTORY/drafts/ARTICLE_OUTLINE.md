@@ -7,7 +7,7 @@ This is an architecture, not finished prose. Section titles may change as eviden
 
 G3 did not begin as a scandal machine. It began as a locally rooted Reformed theology conference with a sincere emphasis on gospel, Scripture, preaching and the local church, while its wider media environment also carried cultural-political polemics from very early on. Over roughly thirteen years it grew into a broad parachurch ecosystem—conference, publishing, streaming, journal and church network. As ideological boundaries narrowed and the institution scaled, governance and financial complexity increased. A major financial reversal began by 2023. In 2025 the founder’s long-running anonymous attacks produced the first leadership crisis; G3 then attempted a real local-church/anti-celebrity reset. In 2026 a different set of leaders nevertheless admitted improper anonymous intervention in another church’s disciplinary process. The final scandal struck an already weakened institution and triggered the dissolution of the Church Network and announced conclusion of operations. The central lesson is not that all thirteen years were fraudulent, nor that every accusation against G3’s critics was false, but that correct doctrine and genuine ministry fruit do not substitute for transparent governance, role separation, truthful communication and practiced accountability.
 
-**Thesis status:** interpretive / HOLD until P0 governance and finance questions close.
+**Thesis status:** interpretive / PUBLICATION_HOLD. Major Form 990 financial-category questions are now primary-closed; remaining P0 uncertainty concerns transaction counterparties/terms, exact late-board continuity and director-transition mechanics rather than the existence of the documented financial reversal.
 
 ---
 
@@ -119,11 +119,23 @@ Chart FY2019–FY2025:
 
 Key finding: crisis begins financially in 2023.
 
-### Needed before final prose
-- FY2023 Part IX
-- Schedule L FY2024/FY2025
+### Primary closures already available for final prose
 
-Explicitly rebut unsupported “financial scam” claim unless evidence changes.
+- FY2022→FY2023 Part IX reconciles exactly: total expenses **$1,010,186 → $2,071,986** (**+$1,061,800**), dominated by conferences/meetings **+$817,283** and advertising **+$246,511**;
+- both FY2022 and FY2023 classify all functional expenses as program services and report zero management/general and fundraising;
+- FY2024/FY2025 Schedule L primary rows disclose salary to `KARIS L BUICE`, identified only as `Daughter of Board Member`, at **$30,409** and **$31,880** respectively;
+- both filings mark the excess-benefit indicator false; disclosure must not be converted into fraud/self-dealing/private-enrichment allegations;
+- FY2022’s $590,000 donated real-estate accounting object is disposed in FY2023 for **$550,000 gross proceeds** with a **$40,000 loss**;
+- the new FY2023 notes/loans receivable of **$416,227** carries forward to **$251,197** and then **$153,000**, materially strengthening but not proving seller financing.
+
+### Remaining financial/transaction gate
+
+- parcel and counterparty identity;
+- deed/security instrument;
+- explicit linkage of the receivable to the property sale;
+- note terms, board authorization/conflicts and ultimate collection/write-down.
+
+Explicitly rebut unsupported “financial scam” or “$40,000 sale price” claims unless stronger evidence changes the ledger.
 
 ## 10. Governance: from founder centrality to board breadth—and perhaps back again
 
@@ -131,10 +143,13 @@ Explicitly rebut unsupported “financial scam” claim unless evidence changes.
 - 2023/24 broad board
 - 7 voting / 6 independent in FY2024
 - formal policies and missing policies
-- 2025 post-Buice board
-- late-2026 board concentration question
+- 2025 post-Buice transition
+- FY2025 filing reports 4 voting governing-body members, all independent, while Part VII preserves multiple role-history rows and must not be treated as a one-date nine-person board
+- official July 21, 2026 `Who We Are` snapshot primary-verifies the six-person board: Buck Braswell, Matt Broome, Jon Norton, Matt Sikes, Dylan Joyner and Ron Mooney
+- exact late-August continuity remains open; absence of a later Wayback capture is not continuity evidence
+- both identified May–July 2025 official roster paths (`/about/who-we-are/` and `/vision/leadership/`) are archive-exhausted for that transition window, so exact resignation/start dates require different primary records
 
-Use role-network diagram.
+Use role-network diagram. Describe `concentration` as comparative interpretation, not a filing-level fact.
 
 ## 11. Conflict on both ideological flanks
 
@@ -238,6 +253,7 @@ Do not turn moral wrong into criminal conviction by rhetoric.
 - autonomous church language
 - resignation from PMBC pastoral roles
 - distinguish confession from secondary embellishments
+- resignation mechanics remain disputed where the reproduced joint letter and secondary reporting differ; do not state deacon compulsion as fact without PMBC primary records
 
 ## 21. The deepest institutional contradiction
 
@@ -263,7 +279,7 @@ Ask why doctrine failed to govern practice.
 - social/site changes
 - announced conclusion of operations
 
-Use exact dates, not dramatized “overnight” language.
+Use exact dates, not dramatized “overnight” language. Distinguish operational wind-down from formal corporate dissolution: Georgia Secretary of State still showed `G3 Ministries for the Church, Inc.` as **Active/Compliance** on the Sep. 8, 2026 acquisition.
 
 ## 23. Was Buck the cause of G3’s fall?
 
@@ -282,15 +298,27 @@ Causal wording remains proportional to evidence.
 
 ## 24. What happened to the assets?
 
-- G3+
-- Press
-- rights
-- subscribers
-- trademarks/domains
-- cash/assets/liabilities
-- Georgia corporation
+Separate what is primary-closed from what remains open.
 
-Do not finish final article until transfer/legal status is reasonably closed.
+### Primary-closed / dated state
+
+- FY2025 raw Form 990 says G3 separated **Living Heritage Homeschool as an independent entity from G3 Ministries during 2025**;
+- this separation predates the 2026 wind-down and is not evidence that Living Heritage later acquired G3+ or G3 Press;
+- G3 Press storefront remained publicly reachable under G3 branding after the wind-down announcement;
+- G3+ app/web surfaces retained G3 platform identity on dated observations;
+- Georgia corporation remained `Active/Compliance` on the Sep. 8 official acquisition;
+- the FY2022 donated real-estate accounting object was sold in FY2023 at the filing level; counterparty/note linkage remains separate.
+
+### Still open / article must say so
+
+- named 2026 transferee for G3+ and/or G3 Press;
+- exact transferred assets: subscriber contracts, domains, app-store accounts, trademarks, copyrights, inventory and publishing agreements;
+- consideration, closing date, board approval/conflicts and assumption of liabilities;
+- title-by-title G3 Press rights/inventory disposition;
+- parcel/deed/note details for the earlier real-estate transaction;
+- domain/app/platform continuity must not be converted into beneficial-ownership conclusions.
+
+Do not identify Living Heritage—or any other ministry—as the 2026 successor without a recipient-side or G3 primary transaction object.
 
 ---
 
