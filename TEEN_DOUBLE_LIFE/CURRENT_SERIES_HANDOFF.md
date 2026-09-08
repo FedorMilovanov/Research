@@ -16,7 +16,7 @@
 
 Resolve repository-root authority, current `AGENT_RULES.md`, and evidence policy first. Then read:
 
-`45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 233 → 234 → 235 → 265 → 140`
+`45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214 → 217 → 223 → 226 → 229 → 230 → 231 → 232 → 233 → 234 → 235 → 236 → 265 → 140`
 
 Use exact filenames.
 
@@ -24,9 +24,10 @@ Key late controls:
 
 - `231_ADVERSARIAL_CLAIM_LEVEL_EVIDENCE_LADDER...` — certainty/overclaim gate for adult/family-government claims;
 - `232_CONTINUITY_APPENDIX_CLAIM_EVIDENCE_LADDER_WARM_AUTHORITY...` — continuity + `258` warm-authority overlay;
-- `233_OWNER_REQUIREMENTS_CLOSURE_AUDIT...` — authoritative audit of whether the user's successive requirements were preserved;
-- `234_LATE_PARENTING_ROUTING...` — routing owner for `256–258`, with compact bridge into later parenting files;
+- `233_OWNER_REQUIREMENTS_CLOSURE_AUDIT...` — audit of whether the user's successive requirements were preserved;
+- `234_LATE_PARENTING_ROUTING...` — routing owner for `256–258`;
 - `235_ROUTING_RECONCILIATION_234_VS_265...` — resolves routing overlap;
+- `236_EDITORIAL_HOLD_RESOLUTION_LAWFUL_LIFE_FEELS_FLAT...` — resolves the old “ordinary lawful life feels flat” editorial HOLD as `KEEP_WITH_CONTROLLED_WORDING`;
 - `265_LATE_CORE_ROUTING...` — later/more complete routing owner for `259–264`.
 
 For late Part II/core routing use:
@@ -81,11 +82,23 @@ High-prefix research modules are **overlays**, not automatic new chapters.
 - voluntary sexual sin ≠ coercion ≠ grooming ≠ nonconsensual redistribution ≠ sextortion;
 - `ROMANTIC INTENSITY ≠ COVENANT STATUS`; boyfriend/girlfriend ≠ spouse;
 - `GROWING AGENCY ≠ MORAL AUTONOMY`; privacy ≠ right to deception; conflict ≠ maturity;
-- `WORSHIP DUTY ≠ CHOIR ENTITLEMENT`;
+- **WORSHIP DUTY ≠ CHOIR ENTITLEMENT**;
 - public Word hearing ≠ membership/Table ≠ choir/platform ≠ leadership ≠ trusted youth/vulnerable-person access;
 - retention of attendance is not a higher good than truthful admonition;
 - child obedience cannot be used to authorize grooming, forced intimate affection, unsafe secrecy or abuse;
 - removal of corrupt company must be paired with positive pursuit/community (`2 Tim. 2:22`: flee + pursue + with).
+
+### Resolved appetite/“flat life” thesis
+
+`ORDINARY_LAWFUL_LIFE_BLAND_FLAT = KEEP_WITH_CONTROLLED_WORDING` via `236`.
+
+Safe center:
+
+> **Не обязательно мир становится пресным; аппетит может стать испорченнее.**
+
+Repeatedly provisioned sinful desire can acquire increasing comparative attractiveness in the affections; quiet lawful duties/joys may then subjectively seem less attractive. Treat this as `CANONICAL_SYNTHESIS / PASTORAL_APPLICATION`, not universal neuroscience.
+
+Do not claim burned dopamine receptors, inevitability, irreversible loss of lawful pleasure or universal escalation.
 
 ---
 
@@ -132,7 +145,7 @@ Use `261`, `264`, `265`.
 
 ## 6. Adult/prodigal hard cases
 
-Use `210–235` plus exact older adult packets where needed.
+Use `210–236` plus exact older adult packets where needed.
 
 Locked:
 
@@ -227,19 +240,21 @@ Current verdict:
 
 > **No major owner theme identified in the successive instructions is missing from Research.**
 
-Remaining items are explicit HOLDs, jurisdiction-dependent applications, or publication-architecture decisions — not forgotten requirements.
+Remaining items are explicit archival HOLDs, jurisdiction-dependent applications, or publication-architecture decisions — not forgotten requirements.
 
 The main residual risk is now **compression error**: losing evidence class, jurisdiction, status distinction, mirror guard or an explicit owner concern while drafting.
 
 ---
 
-## 10. Explicit HOLDs
+## 10. Explicit unresolved items
 
 - `PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = LOCATOR_HOLD`;
 - `KEACH_UNIVERSAL_ADULT_MARRIAGE_PERMISSION_RULE = LOCATOR_HOLD`;
 - `RUSSIAN_BAPTIST_ADULT_PARENTAL_CONSENT_RULE = ARCHIVAL_LOCATOR_HOLD`;
-- ordinary lawful life becoming `bland/flat` after repeated sinful stimulation = `EDITORIAL_HOLD`; final Product must `KEEP` using defensible biblical appetite/enslavement language or `CUT WITH REASON` — never silently lose it;
-- exact modern eviction/tenancy/guardianship/reporting/estate operations require current-jurisdiction verification.
+- exact modern eviction/tenancy/guardianship/reporting/estate operations require current-jurisdiction verification;
+- expanded adult/family-government publication split remains `ARCHITECTURE_REVIEW_REQUIRED`.
+
+The former `ordinary lawful life becomes bland/flat` editorial HOLD is **resolved KEEP_WITH_CONTROLLED_WORDING** in `236` and is no longer an unresolved item.
 
 ---
 
