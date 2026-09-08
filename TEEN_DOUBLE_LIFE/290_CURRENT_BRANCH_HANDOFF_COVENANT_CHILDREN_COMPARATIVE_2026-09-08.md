@@ -35,7 +35,26 @@ Also lock:
 - `PASTORAL OWNERSHIP ≠ CHURCH KEYS`;
 - `COVENANT / PASTORAL ACCOUNTABILITY ≠ LOWER EVIDENCE THRESHOLD`;
 - `PRECAUTION ≠ CONVICTION`;
-- `PARENT REPORT ≠ AUTOMATIC ECCLESIAL VERDICT`.
+- `PARENT REPORT ≠ AUTOMATIC ECCLESIAL VERDICT`;
+- `PCA BAPTIZED MEMBER UNDER FORMAL DISCIPLINE = DIRECT CURRENT POLITY`;
+- `PCA NONCOMMUNICANT ORDINARY TECHNICAL JUDICIAL PROCESS = DO NOT GENERALIZE / BCO 29.1 CONTROLS`.
+
+### PCA precision correction — 2026-09-08 red-team
+
+Current PCA BCO must be stated with both sides intact:
+
+- BCO 27.2 places **all baptized persons, being members**, under church discipline;
+- BCO 27.1 distinguishes broad discipline/government/training from the restricted technical category of judicial process;
+- chapter 28 gives a real formal non-communing-member nurture/government/reclamation framework;
+- BCO 29.1 defines the proper object of judicial process in terms of conduct of a church member **professing faith in Christ**.
+
+Therefore:
+
+> **formal pre-profession church discipline/government = yes; ordinary technical judicial process for a non-professing child must not be inferred from 27.1–27.2 alone.**
+
+This correction strengthens source fidelity without changing the governing comparative thesis.
+
+OPC remains distinguishable: its current Book of Discipline expressly subjects members by virtue of baptism only to both administrative and judicial discipline. URCNA likewise retains its distinct Article 59 exclusion mechanism for mature baptized members. Do not flatten these polity differences into one generic `Presbyterian/Reformed discipline` model.
 
 ---
 
@@ -44,7 +63,7 @@ Also lock:
 Use exact filenames.
 
 - `273_COVENANT_CHILDREN_PAEDOBAPTIST_VS_1689_RESPONSIBILITY_VISIBLE_CHURCH_DISCIPLINE_2026-09-08.md` — governing comparative shell.
-- `274_DENOMINATIONAL_MATRIX_PCA_OPC_URCNA_CRC_1689_SBC_RUSSIAN_ECB_CHILD_STATUS_ACCOUNTABILITY_2026-09-08.md` — corrected denominational matrix.
+- `274_DENOMINATIONAL_MATRIX_PCA_OPC_URCNA_CRC_1689_SBC_RUSSIAN_ECB_CHILD_STATUS_ACCOUNTABILITY_2026-09-08.md` — corrected denominational matrix; **current PCA BCO 29.1 precision correction is authoritative here**.
 - `275_EXEGESIS_STRESS_TEST_ACTS2_39_1COR7_14_EPH6_HOUSEHOLDS_HEB8_COVENANT_CHILDREN_2026-09-08.md` — broad exegesis stress test.
 - `279_1COR7_14_HOLY_CHILDREN_GILL_SCHREINER_REFORMED_READINGS_AND_BAPTISMAL_INFERENCE_GUARD_2026-09-08.md` — 1 Cor 7:14 targeted owner.
 - `280_HEBREWS8_JEREMIAH31_NEW_COVENANT_MEMBERSHIP_REGENERATE_CHURCH_AND_PAEDOBAPTIST_RESPONSE_2026-09-08.md` — Jer 31 / Heb 8 fork.
@@ -133,7 +152,7 @@ Remaining material delta:
 2. **CORE-MUST:** delayed/partial disclosure, recantation or anonymity is not a magic proof/disproof switch; such information may justify a safety check without becoming a final verdict.
 3. **CORE-MUST:** preserve materially important initial words accurately, distinguish quotation from adult paraphrase/inference, and do not repeatedly lead/probe a child when competent safeguarding process should take over.
 4. **CORE-MUST / strong signpost:** when another minor/unsafe caregiver is involved, identify a safe responsible recipient or safeguarding route rather than assuming immediate parent-to-parent contact is always correct.
-5. **OPTIONAL / DROP-FIRST:** a very short PCA/OPC/URCNA institutional comparison may sharpen the question of sustained pastoral ownership before Baptist membership. Do not turn the core article into a baptism controversy.
+5. **OPTIONAL / DROP-FIRST:** a very short PCA/OPC/URCNA institutional comparison may sharpen the question of sustained pastoral ownership before Baptist membership. If used, preserve the denomination-specific process distinctions above; especially do not describe PCA non-communing discipline as though its technical judicial pathway were identical to OPC or URCNA.
 
 No Product head was moved in this Research pass merely to preserve these notes. Any later Product mutation invalidates the 11/11 baseline and requires a fresh exact-head cycle.
 
@@ -161,7 +180,10 @@ No Product head was moved in this Research pass merely to preserve these notes. 
 - civil age 18 is not a biblical moral-on switch;
 - real responsibility is capacity/light/status-sensitive;
 - serious paedobaptism does not equal guaranteed regeneration;
-- PCA/OPC/URCNA give baptized children real pre-profession ecclesial status/accountability with polity-specific mechanisms;
+- PCA/OPC/URCNA give baptized children real pre-profession ecclesial status/accountability, **but their discipline/judicial mechanics differ and must be stated separately**;
+- PCA: all baptized members are under formal discipline; do not generalize an ordinary technical judicial process for non-professing children against BCO 29.1;
+- OPC: members by virtue of baptism only are expressly subject to administrative and judicial discipline under the current Book of Discipline;
+- URCNA: Article 59 provides a distinct exclusion mechanism for mature baptized members;
 - 1689 has strong resources for high child accountability before conversion/membership;
 - Particular Baptist history shows intensive child formation before baptism is not a modern invention;
 - a church-raised nonmember need not be pastorally anonymous;
