@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        label: [FY2022_LATER, FY2024, FY2025]
+        label: [FY2022_LATER, FY2023, FY2024, FY2025]
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
