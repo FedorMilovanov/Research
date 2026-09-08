@@ -79,11 +79,13 @@ These claim states do **not** replace the repository-global evidence classes.
 - Raw FY2025 `IRS990/Desc` states that G3 separated **Living Heritage Homeschool as an independent entity from G3 Ministries during 2025**. This is `VERIFIED_PRIMARY`; it does **not** identify Living Heritage as the unnamed 2026 G3+/G3 Press successor.
 - The May 2025 Josh Buice crisis is supported by G3’s own statement and must be treated separately from the 2026 Buck controversy. Founders and recipient-journalism records independently sharpen target identity and the Voddie Baucham anonymous-email episode.
 - Tom Buck is strongly anchored as a G3 board participant at the May 2025 Buice-crisis decision point. Current evidence places his departure after that episode and before Scott Aniol’s presidency became effective July 9, 2025, but exact resignation date/instrument and motive remain open.
-- Both identified official May–July 2025 board-roster archive paths are exhausted for that transition window. Archive absence does not prove a resignation date.
+- Both identified official May–July 2025 board-roster archive paths are exhausted for that transition window. Georgia’s public result row is acquired and its current internal business ID/official detail POST contract are resolved, but the finer BusinessInformation/filing-history request returns HTTP 403. Exact transition dates therefore require a genuinely new primary object or authorized filing-history access rather than another parser fix.
 - An official archived G3 `Who We Are` snapshot on **July 21, 2026** primary-verifies a six-person Board of Directors: Buck Braswell, Matt Broome, Jon Norton, Matt Sikes, Dylan Joyner and Ron Mooney. Exact continuity through the late-August crisis remains open because no later primary roster object has been acquired.
-- In 2026, real insufficient attribution by Tom Buck and overbroad/misleading aspects of the anonymous dossier can both be true simultaneously. All 17 accusation-sermon items have forensic files, but **0/17** are declared fully `ITEM_VERIFIED` pending the common human-audio/source/attribution gates.
+- In 2026, real insufficient attribution by Tom Buck and overbroad/misleading aspects of the anonymous dossier can both be true simultaneously. All **17/17** accusation-sermon items now have dedicated forensic files, but **0/17** are declared `ITEM_VERIFIED` pending human-audio/source/attribution gates.
+- Phil Johnson’s **original** Aug. 19, 2026 Pyromaniacs article is now directly acquired: he describes real unattributed commentary wording while distinguishing that from preaching others’ finished sermons. This cuts against both total-exoneration and `complete-sermon theft` narratives.
+- The Titus 2 source-side chronology is materially stronger: a full PDF object of Bryan Chapell’s 1998 Titus article is identified, and Jennifer Buck’s own **April 7, 2022** G3 article publicly described serious analogous early-marriage circumstances before both Buck’s 2023 sermon and the 2026 plagiarism controversy. Therefore `Buck fabricated a marital history that never happened` is `REFUTED`; the separate wording/attribution question remains open pending original Buck audio and immediate attribution context.
 - FBC Lindale’s response to the Buck allegations cannot accurately be reduced to `they did nothing`; available testimony and reproduced institutional material indicate review, outside consultation and corrective measures.
-- Four Pray’s Mill pastors associated with G3 acknowledged improper anonymous external action, mischaracterization of Lindale’s process without all details, and interference with another autonomous church’s disciplinary process. The exact mechanics of their resignations remain disputed pending PMBC primary records.
+- Four Pray’s Mill pastors associated with G3 acknowledged improper anonymous external action, mischaracterization of Lindale’s process without all details, and interference with another autonomous church’s disciplinary process. The exact original G3 X status locator is now known (`2092237885915201773`), but its body is currently inaccessible after account removal/403; materially identical contemporaneous reproductions remain one underlying participant statement, not multiple independent witnesses. The exact mechanics of the pastors’ resignations remain disputed pending PMBC primary records.
 - Claims about latex gloves, proven revenge motive, or federal mail-fraud liability remain below publication threshold.
 - G3 Church Network dissolution and wider operational wind-down are supported, but the Georgia Secretary of State official acquisition on **Sep. 8, 2026** still listed `G3 Ministries for the Church, Inc.` as **Active/Compliance**. Operational wind-down therefore must not be described as completed formal Georgia corporate dissolution as of that observation.
 - G3+/G3 Press disposition remains a genuine P0 question. Current storefront/app/access state shows continuity, not beneficial ownership. No acquired primary object yet names the 2026 transferee or supplies the transaction agreement, asset schedule, consideration, closing date or board approval/conflict record.
@@ -112,22 +114,23 @@ These claim states do **not** replace the repository-global evidence classes.
 - [`FINANCES.md`](FINANCES.md) — current overview of the Form 990 series, exact FY2023 delta, Schedule L, property disposition and receivable trace
 - [`FINANCIAL_FORENSICS_2023.md`](FINANCIAL_FORENSICS_2023.md) — detailed raw FY2022/FY2023 Part IX and asset-sale reconstruction
 - [`GOVERNANCE.md`](GOVERNANCE.md) — board/officer/PMBC overlap reconstruction
-- [`DIRECTOR_TRANSITION_FORENSICS_2025.md`](DIRECTOR_TRANSITION_FORENSICS_2025.md) — date-bounded 2025 director-transition reconstruction and exhausted archive routes
+- [`DIRECTOR_TRANSITION_FORENSICS_2025.md`](DIRECTOR_TRANSITION_FORENSICS_2025.md) — date-bounded 2025 director-transition reconstruction and exhausted archive/Georgia public-detail routes
 - [`ASSET_TRANSFER_AND_RIGHTS.md`](ASSET_TRANSFER_AND_RIGHTS.md) — platform/storefront/author-rights evidence and discovery ledger
 - [`ASSET_TRANSFER_FORENSICS.md`](ASSET_TRANSFER_FORENSICS.md) — canonical Q006 analysis: Living Heritage separation vs unresolved 2026 G3+/Press transferee
 
-### Crisis dossiers
+### Crisis dossiers / primary controls
 
 - [`BUICE_2025.md`](BUICE_2025.md) — founder anonymous-identity crisis and post-crisis institutional response
 - [`BUCK_2026.md`](BUCK_2026.md) — 2026 Buck / PMBC / G3 crisis reconstruction
-- [`BUCK_DOSSIER_AUDIT.md`](BUCK_DOSSIER_AUDIT.md) — 17-sermon accusation-object methodology and item-level audit framework
+- [`BUCK_DOSSIER_AUDIT.md`](BUCK_DOSSIER_AUDIT.md) — reconciled 17-sermon accusation-object methodology and corpus state
 - [`BUCK_ITEMS/README.md`](BUCK_ITEMS/README.md) — item registry for all 17 accusation-sermon forensic files
+- [`PRIMARY_SOURCE_JENNIFER_BUCK_2022_RESTORATIVE_GRACE.md`](PRIMARY_SOURCE_JENNIFER_BUCK_2022_RESTORATIVE_GRACE.md) — `G3-S103`, pre-controversy first-person marital-history control for Titus item 10
 - [`2021_MACARTHUR_LIVE_EPISODE.md`](2021_MACARTHUR_LIVE_EPISODE.md) — early communication-integrity warning lead; original-object archive hold remains
 - [`PRAYS_MILL_AUTHORITY_AND_DISCIPLINE_LEADS.md`](PRAYS_MILL_AUTHORITY_AND_DISCIPLINE_LEADS.md) — PMBC authority/process leads and primary-record boundaries
 
 ### Evidence staging / forensic log
 
-- `EVIDENCE_BATCH_2026-09-07_PASS2.md` through `EVIDENCE_BATCH_2026-09-08_PASS18.md` — append-only acquisition/reconciliation history; not a second evidence system
+- `EVIDENCE_BATCH_2026-09-07_PASS2.md` through `EVIDENCE_BATCH_2026-09-08_PASS19.md` — append-only acquisition/reconciliation history; not a second evidence system
 - [`EVIDENCE_RECONCILIATION_PASS3_PASS11.md`](EVIDENCE_RECONCILIATION_PASS3_PASS11.md) — historical reconciliation record for earlier staging identities
 - [`RESEARCH_LOG_2026-09-07_P0.md`](RESEARCH_LOG_2026-09-07_P0.md) — acquisition attempts, blockers and P0 forensic log
 
