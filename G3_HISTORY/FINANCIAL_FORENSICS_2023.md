@@ -1,6 +1,6 @@
 # FY2023 financial forensics — G3 Ministries
 
-**Status:** PRIMARY FY2022/FY2023 PART IX DELTA CLOSED / ASSET-MOVEMENT FOLLOW-UP OPEN  
+**Status:** PRIMARY FY2022/FY2023 PART IX DELTA CLOSED / $590K REAL-ESTATE SALE CLOSED AT FILING LEVEL / COUNTERPARTY + RECEIVABLE TERMS OPEN  
 **Entity:** G3 Ministries for the Church, Inc. — EIN 84-2403597
 
 ## Why FY2023 matters
@@ -32,9 +32,11 @@ The exact FY2023 e-file was acquired from the official IRS TEOS XML distribution
 - acquired components include `IRS990`, `IRS990ScheduleA`, `IRS990ScheduleD`, `IRS990ScheduleO`
 - **no `IRS990ScheduleL` component appears in FY2023**
 
+The asset-level readback was repeated on exact Research head `a5bb664578ad4c238fc7edbd821285a6647f3d53` in workflow run `34220049227`; it acquired the same raw FY2023 object and the same raw SHA-256 before emitting the balance-sheet and asset-sale leaves used below.
+
 ### FY2022 amended comparator
 
-The later FY2022 return was acquired from official IRS batch `2023_TEOS_XML_10A` in exact-head workflow run `34208135511`. The return identifies itself as amended (`AmendedReturnInd = X`) and reports the authoritative FY2022 totals used in the series: $1,735,978 revenue and $1,010,186 expenses.
+The later FY2022 return was acquired from official IRS batch `2023_TEOS_XML_10A`. The return identifies itself as amended (`AmendedReturnInd = X`) and reports the authoritative FY2022 totals used in the series: $1,735,978 revenue and $1,010,186 expenses.
 
 - acquisition target object ID: `202340569349300209`
 - discovered IRS batch member name: `202322939349300637_public.xml`
@@ -121,9 +123,9 @@ FY2023 contains no Schedule L, and the relevant Part IV related-party/excess-ben
 
 FY2024/FY2025 Schedule L disclosures are later-year transactions and must not be back-projected into FY2023.
 
-## FY2022 donated real estate — a newly closed provenance layer
+## FY2022 donated real estate — primary provenance
 
-The amended FY2022 raw return exposes an important balance-sheet event that was previously only visible indirectly.
+The amended FY2022 raw return exposes the origin of the large property balance.
 
 ### Schedule M
 
@@ -142,33 +144,78 @@ The same return reports:
 - equipment: $45,974 cost, $14,059 accumulated depreciation, $31,915 book value;
 - total net land/building/equipment: **$621,915**.
 
-The land + building values sum exactly to **$590,000**, aligning with the commercial-real-estate contribution reported on Schedule M. This strongly anchors the source of the large FY2022 property balance without requiring speculation.
+The land + building values sum exactly to **$590,000**, aligning with the single commercial-real-estate contribution reported on Schedule M.
 
 Schedule O states the return was amended because of a **missing asset fair-market value that had been donated prior to year end**.
 
-## New asset-movement question: FY2022 → FY2023
+## FY2023 disposition — the filing now reports the sale
 
-At FY2022 year end:
+The exact FY2023 raw Form 990 closes the former question of whether the $590,000 property balance merely disappeared through an accounting reclassification.
 
-- net land/building/equipment: **$621,915**.
+The asset-sale group reports:
 
-At FY2023 year end, the later raw filing shows:
+| Raw Form 990 field | FY2023 value |
+|---|---:|
+| `GrossAmountSalesAssetsGrp/OtherAmt` | **$550,000** |
+| `LessCostOthBasisSalesExpnssGrp/OtherAmt` | **$590,000** |
+| `GainOrLossGrp/OtherAmt` | **−$40,000** |
+| `NetGainOrLossInvestmentsGrp/TotalRevenueColumnAmt` | **−$40,000** |
 
-- net land/building/equipment: **$16,777**;
-- a new notes/loans receivable balance of approximately **$416,227**;
-- higher liabilities, including conference-related liabilities identified in Schedule D.
+The balance sheet simultaneously reports:
 
-This is a real and material asset movement. It now deserves its own forensic lane.
+- net land/building/equipment at beginning of year: **$621,915**;
+- net land/building/equipment at end of year: **$16,777**;
+- end-of-year equipment cost/basis: **$45,974**;
+- accumulated depreciation: **$29,197**;
+- end-of-year equipment book value: **$16,777**.
 
-**What is not established:**
+Thus the surviving $16,777 is fully explained by equipment. The FY2022 **$354,000 land + $236,000 building = $590,000** property balance is gone, while FY2023 reports an `Other` asset sale with **exactly $590,000 basis**, **$550,000 gross proceeds** and **$40,000 loss**.
 
-- that the donated property was sold to a related party;
-- that the $416,227 receivable was the sale note for that property;
-- that consideration was inadequate;
-- that any director/officer benefited;
-- that the transaction violated nonprofit law.
+**Primary reconstruction allowed:** the filings identify the FY2023 $550,000 asset sale as the disposition of the $590,000 donated commercial-real-estate asset at the accounting-object level. This is much stronger than the earlier inference from the falling L/B/E balance alone.
 
-**Needed next:** Georgia/local property records, deed/grantor-grantee history, any sale price, counterparty, note terms, board authorization and subsequent receivable collection/write-down.
+**Important correction:** a rendered summary that displays only `Sales of Assets −$40,000` can be misunderstood. In the raw return, **−$40,000 is the loss**, not the sale proceeds; the gross sale amount is **$550,000**.
+
+## The $416,227 receivable — linkage remains open
+
+The same FY2023 raw Form 990 reports a new end-of-year field:
+
+- `OthNotesLoansReceivableNetGrp/EOYAmt` = **$416,227**.
+
+This creates an obvious seller-financing hypothesis because it appears in the same year as the $550,000 real-estate disposition. The arithmetic difference is **$133,773** (`$550,000 − $416,227`).
+
+However, the filing does **not** identify the debtor, note date, interest rate, maturity, collateral or transaction linkage in the acquired Schedule D/O content. The current raw filing therefore does **not yet prove** that the $416,227 receivable is the unpaid balance of the $550,000 property sale.
+
+**Current classification:** `SELLER_FINANCING_HYPOTHESIS / NOT YET VERIFIED`.
+
+### What remains open
+
+- exact parcel / legal description of the donated-and-sold real estate;
+- donor/grantor into G3;
+- purchaser/grantee from G3;
+- cash received at closing, if any;
+- whether the $416,227 receivable is purchaser financing or an unrelated note;
+- note interest, maturity, collateral and later payments/write-down;
+- board authorization and any conflicts;
+- whether any counterparty was related to an officer/director.
+
+No related-party, inadequate-consideration or nonprofit-law conclusion may be drawn without those records.
+
+## Property-record acquisition boundary
+
+The research has now tested the available official public routes rather than relying on a secondary parcel mirror:
+
+- Douglas County Clerk and Georgia DOR authority pages are reachable;
+- Douglas qPublic is Cloudflare-blocked in the research runtime (`403`);
+- GSCCCA Real Estate Name Search form and exact Douglas County parameters are publicly readable, but submitting the unauthenticated Name Search returns an automatic `frmLogin` interstitial rather than deed results;
+- therefore no subscription/login/payment bypass is attempted.
+
+A secondary property index describes `4979 Highway 5` as a 9.03-acre Pray’s Mill church/cemetery parcel with a much higher 2022 market-value projection. This remains a useful **counterboundary**, not title proof.
+
+Accordingly, **4979 Highway 5 must not be identified as the $590,000 donated-and-sold property merely because G3 used that address as its corporate/principal address.** Parcel identity still requires deed/assessor evidence.
+
+## Form 8282 guardrail
+
+FY2023 Form 990 reports `Form8282PropertyDisposedOfInd=false`. That field must not be converted into a filing-compliance accusation concerning this real-estate sale. The Form 990 question mapped to that indicator concerns disposal of tangible personal property for which Form 8282 was required; the object reconstructed here is commercial real estate. Whether a separate Form 8282 filing obligation applied or was satisfied cannot be inferred from this checkbox alone.
 
 ## FY2024/FY2025 Schedule L boundary
 
@@ -201,24 +248,36 @@ Advertising increased **$246,511**.
 
 IT, travel, workshops and payroll taxes all increased, while the filing reports G3+ launch, publishing, workshops, tour and network expansion. The return does not provide a project ledger tying every dollar to each initiative.
 
-### H4 — payroll / executive compensation caused most of the spike
+### H4 — the donated commercial-real-estate asset was disposed in FY2023 for $550,000 against $590,000 basis
+
+**Status: VERIFIED_PRIMARY AS FILING-LEVEL RECONSTRUCTION.**
+
+FY2022 contains one $590,000 commercial-real-estate contribution and exactly $590,000 of land/building book value. FY2023 reports an `Other` asset sale with $590,000 basis, $550,000 gross amount and a $40,000 loss, while the land/building balance disappears and only equipment remains.
+
+### H5 — the $416,227 receivable is seller financing from that sale
+
+**Status: PLAUSIBLE / UNVERIFIED.**
+
+Temporal coexistence and arithmetic are suggestive but not transaction identity. Trace the receivable through FY2024/FY2025 and obtain deed/note evidence.
+
+### H6 — payroll / executive compensation caused most of the expense spike
 
 **Status: REFUTED AS PRINCIPAL DRIVER.**
 
 Wage delta is only +$3,664; payroll taxes add $41,728.
 
-### H5 — administrative/fundraising bloat caused most of the spike
+### H7 — administrative/fundraising bloat caused most of the expense spike
 
 **Status: CONTRADICTED BY FILED FUNCTIONAL CLASSIFICATION.**
 
 Both comparator years report zero management/general and zero fundraising.
 
-### H6 — fraud / diversion / personal enrichment
+### H8 — fraud / diversion / personal enrichment
 
 **Status: UNSUPPORTED.**
 
-The acquired FY2022/FY2023 filings do not establish diversion or embezzlement. Later Schedule L disclosures are ordinary disclosure objects until evidence establishes more.
+The sale/loss and receivable are accounting facts, not evidence by themselves of diversion, improper consideration or personal benefit. Counterparty and transaction terms remain unknown.
 
-## Article-safe financial wording after closure
+## Article-safe financial wording after current closure
 
-> G3’s financial reversal began in 2023 not because revenue collapsed, but because expenses roughly doubled while revenue remained almost flat. The raw IRS filings now allow the increase to be reconciled category by category: conference and meeting costs rose by about $817,000, while advertising rose by about $247,000. Those two increases account for essentially the entire net rise in spending, partly offset by lower occupancy expense. Both 2022 and 2023 returns classified all functional expenses as program services and reported no management/general or fundraising allocation. That does not prove every expenditure was prudent or efficiently priced, but it rules out portraying the filings as evidence of a million-dollar administrative-payroll surge. A separate unresolved question concerns the large property/receivable movement between 2022 and 2023.
+> G3’s financial reversal began in 2023 not because revenue collapsed, but because expenses roughly doubled while revenue remained almost flat. The raw IRS filings reconcile the increase category by category: conference and meeting costs rose by about $817,000 and advertising by about $247,000. A separate balance-sheet event is now clearer as well. G3 reported receiving commercial real estate valued at $590,000 in 2022; the 2023 raw return reports an asset sale for $550,000 against a $590,000 basis, producing a $40,000 loss, while the corresponding land-and-building balance disappears. The same return shows a new $416,227 notes/loans receivable, but the filing does not identify the debtor or explicitly link that receivable to the property sale. Deed and note records are therefore still required before naming the property, purchaser or financing terms.
