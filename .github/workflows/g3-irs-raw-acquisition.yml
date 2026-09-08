@@ -106,7 +106,7 @@ jobs:
 
       - name: Upload temporary raw-XML acquisition evidence
         if: always()
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: g3-irs-${{ matrix.label }}-${{ github.run_id }}-${{ github.run_attempt }}
           path: g3-irs-acquisition-output/
