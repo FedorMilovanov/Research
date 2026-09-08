@@ -88,7 +88,7 @@ This documents **archive-search exhaustion for that exact path/window**. It does
 
 ### Q004 — When and why did Tom Buck, Jonathan Frazier, Chip Thornton, Adam Burrell and others leave the G3 board?
 
-**Status:** `OPEN / MATERIALLY NARROWED / KNOWN OFFICIAL ARCHIVE ROUTES EXHAUSTED`.
+**Status:** `OPEN / MATERIALLY NARROWED / KNOWN PUBLIC ARCHIVE + GEORGIA DETAIL ROUTES EXHAUSTED`.
 
 Raw FY2024 Part VII directly identifies Buck, Thornton, Braswell, Burrell, Broome and Frazier as directors, with Joshua Buice as president/director. Raw FY2025 Part VII contains dated/transition-style role labels for Scott Aniol, Joshua Buice, Jonathan Frazier, Jon Norton, Buck Braswell, Matt Broome, Tom Buck, Chip Thornton and Adam Burrell, while the filing reports only **4 voting governing-body members, all 4 independent**. Thus Part VII is a reportable-person/role-history list, not a simple four- or nine-person snapshot.
 
@@ -101,9 +101,13 @@ Two identified official historical roster paths have now been independently test
 
 Later retries of the legacy path encountered Archive.org HTTP 503 / TLS timeout transport failures. Those failures do not negate the successful acquisition and are not historical evidence.
 
-**Search-route closure:** both known official roster-page paths are exhausted for this window. Do not repeat them absent evidence of a different historical URL or a material archive-state change.
+The Georgia corporate-record route was also tightened. Official early filing locators are now pinned as Articles `17370469` (2019-06-06), 2019 Annual Registration `17449198` (2019-07-16), and 2020/2021 Annual Registration `18903966` (2020-03-30). The latter two identify the early Buice CEO/CFO + David Crowe Secretary structure; the 2020/2021 filing also records Buice as filing authorizer with title `Director`.
 
-**Needed:** board minutes, resignation instruments, first-person resignation statements, appointment records, authenticated internal communications, or another newly identified primary surface establishing exact departure/start dates and reasons. In particular, do not infer motives from later conflict narratives.
+More importantly, the current official Business Search result exposes internal `businessId=2751672` through `navigateToBusinessInfo(...)`. The acquisition parser was corrected to recognize that live markup and reproduce the site's official POST to `/BusinessSearch/BusinessInformation` with `businessId=2751672`, `businessType=Domestic Nonprofit Corporation`, `fromSearch=true`. Exact-head run `34244820320` verified the search row but the official detail/history POST returned **HTTP 403**; query/path GET fallbacks also returned 403.
+
+**Search-route closure:** both known official roster-page paths and the unauthenticated Georgia BusinessInformation detail/history route are exhausted. Do not repeat them absent a different historical URL, a material archive/access-state change, an exact later official `DownloadFile?filingNo=` locator, or authorized filing-history access.
+
+**Needed:** board minutes, resignation instruments, first-person resignation statements, appointment records, authenticated internal communications, a directly accessible later Georgia filing document, or another newly identified primary surface establishing exact departure/start dates and reasons. In particular, do not infer motives from later conflict narratives.
 
 ### Q005 — Was G3 legally dissolved in Georgia or merely operationally wound down?
 
@@ -115,11 +119,14 @@ The Georgia Secretary of State official Business Search result for control no. `
 - Domestic Nonprofit Corporation;
 - status **`Active/Compliance`**;
 - principal office `4979 Highway 5, Douglasville, GA 30135`;
-- registered/designated agent `Scott Aniol`.
+- registered/designated agent `Scott Aniol`;
+- internal current result ID `businessId=2751672`.
+
+Exact-head run `34244820320` reproduced the official BusinessInformation detail POST contract but received HTTP 403. This does not weaken the accessible current search-row evidence and does not establish absence of later filings.
 
 **Allowed conclusion:** at the dated official acquisition, G3 was **not shown as formally dissolved in Georgia** even though operations had publicly wound down.
 
-**Boundary:** corporate status is time-sensitive. A later dissolution filing can change this answer and should be monitored. Federal tax-exempt status is a separate layer and must not be substituted for Georgia corporate status.
+**Boundary:** corporate status is time-sensitive. A later dissolution filing can change this answer and should be monitored. Federal tax-exempt status is a separate layer and must not be substituted for Georgia corporate status. The current detail/history surface is access-blocked, so no exact date for the registered-agent change may be inferred from the present row alone.
 
 ### Q006 — What happened to G3 Press, G3+, trademarks, subscriber relationships and other IP/assets?
 
