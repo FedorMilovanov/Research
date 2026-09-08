@@ -5,6 +5,7 @@ on:
   pull_request:
     paths:
       - 'G3_HISTORY/tools/acquire_g3_archive_content_inventory.py'
+      - 'G3_HISTORY/tools/acquire_g3_archive_content_inventory_v3.py'
       - '.github/workflows/g3-archive-content-inventory-acquisition.yml'
       - 'G3_HISTORY/tools/validate_g3_workflow_runtime.py'
       - 'G3_HISTORY/tools/validate_g3_corpus_integrity.py'
@@ -13,6 +14,7 @@ on:
     branches: [main]
     paths:
       - 'G3_HISTORY/tools/acquire_g3_archive_content_inventory.py'
+      - 'G3_HISTORY/tools/acquire_g3_archive_content_inventory_v3.py'
       - '.github/workflows/g3-archive-content-inventory-acquisition.yml'
       - 'G3_HISTORY/tools/validate_g3_workflow_runtime.py'
       - 'G3_HISTORY/tools/validate_g3_corpus_integrity.py'
@@ -42,15 +44,16 @@ jobs:
           python-version: '3.12.8'
 
       - name: Compile archive metadata acquisition tool
-        run: python -m py_compile G3_HISTORY/tools/acquire_g3_archive_content_inventory.py
+        run: python -m py_compile G3_HISTORY/tools/acquire_g3_archive_content_inventory_v3.py
 
       - name: Acquire archive URL metadata only
         id: acquire
         continue-on-error: true
         run: |
-          python G3_HISTORY/tools/acquire_g3_archive_content_inventory.py \
+          python G3_HISTORY/tools/acquire_g3_archive_content_inventory_v3.py \
             --output g3-archive-content-inventory \
-            --limit 5000 \
+            --limit 1000 \
+            --max-pages 30 \
             --sleep-ms 75
 
       - name: Classify acquisition outcome
@@ -106,7 +109,7 @@ jobs:
               print('::warning::Wayback transport unavailable after bounded retries; denominator remains open.')
           elif overflow:
               state = 'OVERFLOW_HOLD'
-              print('::warning::At least one month reached the CDX row cap; denominator remains open.')
+              print('::warning::CDX pagination safety bound was reached; denominator remains open.')
           elif outcome == 'success' and receipt.get('acquisition_result') == 'ARCHIVE_URL_INVENTORY_ACQUIRED':
               state = 'ARCHIVE_URL_INVENTORY_ACQUIRED'
           else:
@@ -124,9 +127,9 @@ jobs:
               'quantitativeLanguageAuthorized': False,
               'publicationEligible': False,
               'rule': (
-                  'This artifact is a metadata-only archive URL inventory. Transport or overflow holds '
+                  'This artifact is a metadata-only archive URL inventory. Transport or pagination holds '
                   'cannot become negative historical evidence. Even a complete planned CDX frame is not '
-                  'an article denominator until route adjudication/deduplication and coding gates close.'
+                  'an article denominator until domain-era attribution, route adjudication and coding gates close.'
               ),
           }
           (root / 'ACQUISITION_CLASSIFICATION.json').write_text(
@@ -151,7 +154,7 @@ jobs:
           git rev-parse HEAD > g3-archive-content-inventory/RESEARCH_COMMIT.txt
           printf '%s\n' "${GITHUB_RUN_ID}" > g3-archive-content-inventory/WORKFLOW_RUN_ID.txt
           printf '%s\n' "${GITHUB_RUN_ATTEMPT}" > g3-archive-content-inventory/WORKFLOW_RUN_ATTEMPT.txt
-          sha256sum G3_HISTORY/tools/acquire_g3_archive_content_inventory.py > g3-archive-content-inventory/ACQUISITION_TOOL_SHA256.txt
+          sha256sum G3_HISTORY/tools/acquire_g3_archive_content_inventory_v3.py > g3-archive-content-inventory/ACQUISITION_TOOL_SHA256.txt
           sha256sum data/artifact-custody-policy-v2.json > g3-archive-content-inventory/CUSTODY_POLICY_SHA256.txt
           python - <<'PY'
           import json, os
@@ -159,10 +162,7 @@ jobs:
           root=Path('g3-archive-content-inventory')
           receipt={
               'state':'EPHEMERAL_ACTION_ARTIFACT',
-              'metadataOnly':True,
-              'articleBodiesStored':False,
               'publicationEligible':False,
-              'quantitativeLanguageAuthorized':False,
               'retentionDays':7,
               'durableReceiptPresent':False,
               'policy':'data/artifact-custody-policy-v2.json',
@@ -173,7 +173,10 @@ jobs:
               'ref':os.environ.get('GITHUB_REF'),
               'eventSha':os.environ.get('GITHUB_SHA'),
               'checkedOutSha':(root/'RESEARCH_COMMIT.txt').read_text(encoding='utf-8').strip(),
-              'warning':'CDX URL metadata is research acquisition evidence only; it is not a frozen article denominator or publication authorization.'
+              'metadataOnly':True,
+              'articleBodiesStored':False,
+              'quantitativeLanguageAuthorized':False,
+              'warning':'CDX URL metadata is research evidence only; Actions artifact retention is not durable custody and does not authorize quantitative publication.'
           }
           (root/'ACTION_CUSTODY.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2),encoding='utf-8')
           PY
