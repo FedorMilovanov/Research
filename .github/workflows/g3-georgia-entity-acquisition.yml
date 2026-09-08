@@ -45,7 +45,89 @@ jobs:
         run: python -m py_compile G3_HISTORY/tools/acquire_ga_entity_status_v3.py
 
       - name: Acquire Georgia current entity record
+        id: acquire
+        continue-on-error: true
         run: python G3_HISTORY/tools/acquire_ga_entity_status_v3.py --output g3-georgia-entity-output
+
+      - name: Classify acquisition outcome
+        env:
+          ACQUIRE_OUTCOME: ${{ steps.acquire.outcome }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          root = Path('g3-georgia-entity-output')
+          summary_path = root / 'SUMMARY.json'
+          if not summary_path.exists():
+              print('::error::Georgia acquisition produced no SUMMARY.json; fail closed.')
+              raise SystemExit(2)
+
+          try:
+              summary = json.loads(summary_path.read_text(encoding='utf-8'))
+          except Exception as exc:
+              print(f'::error::Georgia SUMMARY.json unreadable: {exc}')
+              raise SystemExit(2)
+
+          errors = summary.get('errors')
+          attempts = summary.get('attempts')
+          if not isinstance(errors, list) or not isinstance(attempts, list):
+              print('::error::Georgia SUMMARY.json schema invalid; fail closed.')
+              raise SystemExit(2)
+
+          outcome = os.environ.get('ACQUIRE_OUTCOME', '')
+          if outcome == 'success':
+              if errors:
+                  print('::error::Georgia acquisition succeeded but summary contains errors.')
+                  raise SystemExit(2)
+              state = 'ACQUISITION_SUCCEEDED'
+          else:
+              allowed_error = errors == ['Exact G3 search-result row was not acquired from public BusinessSearch']
+              statuses = []
+              parsed_rows = 0
+              for attempt in attempts:
+                  if not isinstance(attempt, dict):
+                      print('::error::Georgia attempt is not an object; fail closed.')
+                      raise SystemExit(2)
+                  response = attempt.get('response')
+                  if not isinstance(response, dict):
+                      print('::error::Georgia attempt lacks response object; fail closed.')
+                      raise SystemExit(2)
+                  status = response.get('status')
+                  if isinstance(status, int):
+                      statuses.append(status)
+                  if attempt.get('parsed_result') is not None:
+                      parsed_rows += 1
+
+              access_signal = any(s in {403, 429, 500, 502, 503, 504} for s in statuses)
+              if allowed_error and access_signal and parsed_rows == 0:
+                  state = 'ACCESS_HOLD'
+                  print('::warning::Georgia public BusinessSearch access/5xx responses prevented acquisition of the exact row. Historical entity state is unchanged; see artifact classification.')
+              else:
+                  print('::error::Georgia acquisition failed without a narrowly classified public-access hold; fail closed.')
+                  print('ERRORS', errors)
+                  print('STATUSES', statuses)
+                  print('PARSED_ROWS', parsed_rows)
+                  raise SystemExit(2)
+
+          classification = {
+              'state': state,
+              'acquireStepOutcome': outcome,
+              'semanticEvidenceChanged': False if state == 'ACCESS_HOLD' else None,
+              'publicationEligible': False,
+              'rule': (
+                  'ACCESS_HOLD requires the exact known missing-row error, zero parsed result rows, and at least one '
+                  '403/429/5xx public-access signal. A clean 200-only no-row result, schema defect, unknown error, or '
+                  'changed parsed row remains a hard CI failure.'
+              ),
+          }
+          root.mkdir(parents=True, exist_ok=True)
+          (root / 'ACQUISITION_CLASSIFICATION.json').write_text(
+              json.dumps(classification, ensure_ascii=False, indent=2), encoding='utf-8'
+          )
+          print('ACQUISITION_CLASSIFICATION', state)
+          PY
 
       - name: Record ephemeral custody context
         if: always()
@@ -80,7 +162,7 @@ jobs:
 
       - name: Upload temporary Georgia entity evidence
         if: always()
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: g3-georgia-entity-${{ github.run_id }}-${{ github.run_attempt }}
           path: g3-georgia-entity-output/
