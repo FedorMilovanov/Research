@@ -28,13 +28,14 @@ Read before changing Research or drafting Product:
 10. `191_CONTINUITY_APPENDIX_NEW_HOUSEHOLD_UNMARRIED_FEMALE_AGENCY_MODERN_AUTONOMY_GENEALOGY_AND_HISTORICAL_THEOLOGY_2026-09-08.md`;
 11. `198_CONTINUITY_APPENDIX_CASE_MATRIX_REFORMATION_CONSENT_STATUS_JURISDICTION_HOUSEHOLD_GOVERNMENT_FEMINISM_RUSSIAN_ECB_2026-09-08.md`;
 12. `209_CONTINUITY_APPENDIX_ADULT_HOUSEHOLD_AUTHORITY_MARRIAGE_REFUSAL_SEX_SPECIFIC_JURISDICTION_RUSSIAN_ECB_AND_PRACTICAL_INDEPENDENCE_2026-09-08.md`;
-13. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
-14. exact late appendices `153`, `162`, `170` where relevant;
-15. part-specific selected source packets / claim ledgers.
+13. `214_CONTINUITY_APPENDIX_RELATIONAL_DISTANCE_ADMONITION_MODE_FALSE_REPENTANCE_OT_REMOVAL_TRANSFER_2026-09-08.md`;
+14. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
+15. exact late appendices `153`, `162`, `170` where relevant;
+16. part-specific selected source packets / claim ledgers.
 
-For expanded adult/family-government work, use exact filenames in `171–180`, `182–205`, `206–208`, plus Particular Baptist controls `199–201` and the relevant older source packets (`90–99`).
+For expanded adult/family-government work, use exact filenames in `171–214`, plus Particular Baptist controls `199–201` and the relevant older source packets (`90–99`).
 
-**Owner-intent chain:** `45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209`.
+**Owner-intent chain:** `45 → 54 → 62 → 78 → 176 → 181 → 186 → 191 → 198 → 209 → 214`.
 
 ---
 
@@ -98,16 +99,23 @@ It may not disappear silently.
 
 ## 6. Adult/prodigal hard cases — mandatory
 
+Use especially `210–214` for the latest controls.
+
 - false/ambiguous repentance and repeated deception while still at home;
 - **hope in God ≠ confidence in the current repentance claim**;
+- `REPENTANCE FRUIT ≠ JUSTIFICATION-BY-PROBATION`;
+- tears/remorse/consequence-fear/admission do not self-authenticate repentance;
+- relapse does not automatically prove repentance false; distinguish warfare from defended/planned concealment;
 - co-residence can become a stewardship problem for a competent adult;
 - separate residence may become a legitimate boundary but never a conversion technique;
 - minors / legally dependent children are a different legal-stewardship case;
 - sudden/secret departure may justify reasonable initial safety/fact clarification;
 - Luke 15 is repentance/mercy text, not a universal contact/no-contact manual;
 - `MODE CHANGE, NOT TRUTH CHANGE` in repeated admonition;
-- `RELATION ≠ TRUST ≠ FELLOWSHIP ≠ ACCESS ≠ APPROVAL`;
+- Scripture requires patient correction and also avoidance of circular/foolish strife;
+- `RELATION ≠ VOLUNTARY CLOSENESS ≠ TRUST ≠ FELLOWSHIP ≠ ACCESS ≠ APPROVAL ≠ ROLE`;
 - ordinary contact can remain without pretending repentance is unnecessary;
+- do not manufacture misery; stop making defended sin artificially comfortable;
 - non-enabling without manufactured “rock bottom”;
 - younger siblings must be protected;
 - return/homecoming ≠ repentance;
@@ -115,7 +123,9 @@ It may not disappear silently.
 - no universal timeline/tablet;
 - legal/tenancy/safeguarding operations require current jurisdiction verification.
 
-OT removal/separation texts require actor/jurisdiction/covenant/procedure audit. Do not turn Mosaic civil sanctions, Hagar/Ishmael, Ezra 10, ritual exclusion or covenant exile into direct modern eviction instructions.
+OT removal/separation texts require actor/jurisdiction/covenant/procedure audit. Do not turn Mosaic civil sanctions, Hagar/Ishmael, Ezra 10, Nehemiah's gubernatorial reforms, ritual exclusion or covenant exile into direct modern eviction instructions.
+
+Modern separate-residence decisions should be argued cumulatively from adult status + lawful household order + persistent refusal + non-enabling + protection + stewardship + proportionality + civil law, not from a copied OT sanction.
 
 ---
 
@@ -145,7 +155,7 @@ Recent physical departure does not instantly erase a still-live family relation.
 
 ## 8. Family-government / daughter / marriage P0s
 
-Use `175`, `177–209` and exact claim-specific sources.
+Use `175`, `177–214` and exact claim-specific sources.
 
 Preserve together:
 
@@ -234,7 +244,7 @@ Do not jump directly to secret romance or to parental absolutism.
 
 ## 11. Adult under parents' roof / household government
 
-Use `172`, `195`, `202`, `205`.
+Use `172`, `195`, `202`, `205`, `213`.
 
 A competent adult living in the parental home is neither:
 
