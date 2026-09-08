@@ -1,0 +1,66 @@
+name: G3 public content inventory acquisition
+
+on:
+  push:
+    branches:
+      - research/g3-history-20260907
+    paths:
+      - G3_HISTORY/tools/acquire_g3_content_inventory.py
+      - .github/workflows/g3-content-inventory-acquisition.yml
+
+permissions:
+  contents: read
+
+env:
+  G3_CONTENT_OUT: g3-content-inventory
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact branch head
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install metadata-only dependency
+        run: python -m pip install --upgrade requests
+
+      - name: Acquire sitemap and WordPress metadata only
+        run: |
+          set -euo pipefail
+          python G3_HISTORY/tools/acquire_g3_content_inventory.py
+
+      - name: Assert no article bodies are staged
+        run: |
+          set -euo pipefail
+          test -f "$G3_CONTENT_OUT/ACQUISITION_RECEIPT.json"
+          test -f "$G3_CONTENT_OUT/sitemap_urls.csv"
+          test -f "$G3_CONTENT_OUT/wp_posts_metadata.csv"
+          ! find "$G3_CONTENT_OUT" -type f -name '*.html' | grep -q .
+
+      - name: Record exact GitHub provenance
+        run: |
+          cat > "$G3_CONTENT_OUT/GITHUB_PROVENANCE.txt" <<EOF
+          repository=$GITHUB_REPOSITORY
+          sha=$GITHUB_SHA
+          run_id=$GITHUB_RUN_ID
+          run_attempt=$GITHUB_RUN_ATTEMPT
+          workflow=$GITHUB_WORKFLOW
+          metadata_only=true
+          publication_authorized=false
+          EOF
+
+      - name: Upload metadata inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: g3-content-inventory-${{ github.sha }}
+          path: g3-content-inventory/
+          retention-days: 7
+          if-no-files-found: error
