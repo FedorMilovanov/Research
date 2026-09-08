@@ -145,6 +145,60 @@ It does not prove:
 
 The two known official-path searches are now **exhausted** and should not be repeated absent evidence of a different historical URL or a material archive-state change.
 
+## 5A. Georgia corporate-record route — exact search contract fixed; detail/history remains access-blocked
+
+The Georgia corporate-record family has now been tested more precisely than the earlier generic Business Search observation.
+
+### Early exact filing locators
+
+Official Secretary of State documents directly expose:
+
+- Articles of Incorporation — filing `17370469`, filed **2019-06-06**;
+- 2019 Annual Registration — filing `17449198`, filed **2019-07-16**;
+- 2020/2021 Annual Registration — filing `18903966`, filed **2020-03-30** for registration period 2020–2021.
+
+The 2019 Annual Registration identifies Joshua S. Buice as **CEO** and **CFO**, David Crowe as **Secretary**, and Josh Buice as registered agent. The 2020/2021 registration repeats those officer/agent roles and identifies Joshua S. Buice as the filing authorizer with title **Director**.
+
+These are exact primary locators for the early founder-centric corporate structure. They are not evidence about 2025 transition dates.
+
+### Current search-row internal ID
+
+The official Sep. 8, 2026 Business Search result renders the entity through JavaScript call:
+
+`navigateToBusinessInfo(2751672, 'Domestic Nonprofit Corporation')`
+
+Earlier acquisition code did not parse that current markup. Research head `3d9b30ff4b0845b0def019a02c76584028926b8e` corrected the parser and the official detail navigation contract.
+
+Exact-head workflow run `34244820320` then verified:
+
+- internal `businessId`: **2751672**;
+- control number: **19085916**;
+- business type: **Domestic Nonprofit Corporation**;
+- status: **Active/Compliance**;
+- registered/designated agent: **Scott Aniol**.
+
+### Official detail POST contract and access boundary
+
+The search-result HTML itself shows that the detail page is submitted as a POST to:
+
+`/BusinessSearch/BusinessInformation`
+
+with fields:
+
+- `businessId=2751672`;
+- `businessType=Domestic Nonprofit Corporation`;
+- `fromSearch=true`.
+
+The corrected acquisition reproduced that official POST exactly. The server returned **HTTP 403**. Query-string and path GET fallbacks also returned 403.
+
+Therefore the current evidence state is:
+
+`CURRENT SEARCH ROW = VERIFIED_PRIMARY / DETAIL-FILING-HISTORY ROUTE = EXACTLY RESOLVED BUT ACCESS-BLOCKED`.
+
+This matters methodologically: the absence of later annual-registration/download filing IDs in the corpus is no longer attributable to a parser bug or an untested navigation method. It is an access boundary on the detail/history surface.
+
+**Do not infer:** that later filings do not exist, that the current registered-agent change occurred on a particular date, or that Georgia filing history supports any exact 2025 director resignation/start date.
+
 ## 6. FY2025 Form 990 — role history, not a roster snapshot
 
 The raw FY2025 return reports:
@@ -229,7 +283,7 @@ July 21, 2026 official board page confirms all three. Exact board start dates re
 
 ## 11. Next material proof gates
 
-Do not repeat either exhausted May–July 2025 official-path CDX search.
+Do not repeat either exhausted May–July 2025 official-path CDX search or the now-exhausted unauthenticated Georgia BusinessInformation detail request without a material access-state change.
 
 Material progress now requires one of:
 
@@ -237,7 +291,7 @@ Material progress now requires one of:
 2. Buck/Thornton/Burrell/Frazier first-person resignation statements;
 3. board minutes or corporate resolutions;
 4. dated appointment announcements for Norton/Sikes/Joyner/Mooney;
-5. Georgia corporate records that identify directors/officers at a finer date resolution;
+5. later Georgia corporate filing documents surfaced through a directly accessible official download locator or an authorized detail-history session;
 6. authenticated internal/subscriber communications that explicitly date board changes.
 
 Until then, the article should use date-bounded wording rather than an invented day-by-day board chronology.
