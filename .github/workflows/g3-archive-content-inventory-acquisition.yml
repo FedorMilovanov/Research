@@ -1,0 +1,193 @@
+name: G3 archive content inventory acquisition
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'G3_HISTORY/tools/acquire_g3_archive_content_inventory.py'
+      - '.github/workflows/g3-archive-content-inventory-acquisition.yml'
+      - 'G3_HISTORY/tools/validate_g3_workflow_runtime.py'
+      - 'G3_HISTORY/tools/validate_g3_corpus_integrity.py'
+      - 'data/artifact-custody-policy-v2.json'
+  push:
+    branches: [main]
+    paths:
+      - 'G3_HISTORY/tools/acquire_g3_archive_content_inventory.py'
+      - '.github/workflows/g3-archive-content-inventory-acquisition.yml'
+      - 'G3_HISTORY/tools/validate_g3_workflow_runtime.py'
+      - 'G3_HISTORY/tools/validate_g3_corpus_integrity.py'
+      - 'data/artifact-custody-policy-v2.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: g3-archive-content-inventory-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  inventory:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout exact event head
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.8'
+
+      - name: Compile archive metadata acquisition tool
+        run: python -m py_compile G3_HISTORY/tools/acquire_g3_archive_content_inventory.py
+
+      - name: Acquire archive URL metadata only
+        id: acquire
+        continue-on-error: true
+        run: |
+          python G3_HISTORY/tools/acquire_g3_archive_content_inventory.py \
+            --output g3-archive-content-inventory \
+            --limit 5000 \
+            --sleep-ms 75
+
+      - name: Classify acquisition outcome
+        env:
+          ACQUIRE_OUTCOME: ${{ steps.acquire.outcome }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          root = Path('g3-archive-content-inventory')
+          receipt_path = root / 'ACQUISITION_RECEIPT.json'
+          if not receipt_path.exists():
+              print('::error::Archive census produced no ACQUISITION_RECEIPT.json; fail closed.')
+              raise SystemExit(2)
+
+          try:
+              receipt = json.loads(receipt_path.read_text(encoding='utf-8'))
+          except Exception as exc:
+              print(f'::error::ACQUISITION_RECEIPT.json is unreadable: {exc}')
+              raise SystemExit(2)
+
+          errors = receipt.get('errors')
+          transport = receipt.get('transport_holds')
+          overflow = receipt.get('overflow_holds')
+          summary = receipt.get('summary')
+          if not all(isinstance(value, list) for value in (errors, transport, overflow)):
+              print('::error::Receipt hold/error fields are not lists.')
+              raise SystemExit(2)
+          if not isinstance(summary, dict):
+              print('::error::Receipt summary is missing or invalid.')
+              raise SystemExit(2)
+          if receipt.get('metadata_only') is not True or receipt.get('archived_html_bodies_fetched') is not False:
+              print('::error::Metadata-only/body-fetch firewall is invalid.')
+              raise SystemExit(2)
+          if summary.get('article_denominator_closed') is not False:
+              print('::error::Acquisition must not self-promote to an article denominator.')
+              raise SystemExit(2)
+          if summary.get('quantitative_language_authorized') is not False:
+              print('::error::Acquisition must not authorize quantitative publication language.')
+              raise SystemExit(2)
+
+          outcome = os.environ.get('ACQUIRE_OUTCOME', '')
+          if errors:
+              print('::error::Archive census contains semantic/non-transport defects.')
+              for error in errors:
+                  print('ERROR', error)
+              raise SystemExit(2)
+
+          if transport:
+              state = 'TRANSPORT_HOLD'
+              print('::warning::Wayback transport unavailable after bounded retries; denominator remains open.')
+          elif overflow:
+              state = 'OVERFLOW_HOLD'
+              print('::warning::At least one month reached the CDX row cap; denominator remains open.')
+          elif outcome == 'success' and receipt.get('acquisition_result') == 'ARCHIVE_URL_INVENTORY_ACQUIRED':
+              state = 'ARCHIVE_URL_INVENTORY_ACQUIRED'
+          else:
+              print('::error::Acquisition failed without a recognized hold or success state; fail closed.')
+              raise SystemExit(2)
+
+          classification = {
+              'state': state,
+              'acquireStepOutcome': outcome,
+              'transportHolds': transport,
+              'overflowHolds': overflow,
+              'denominatorCompleteForPlannedCdxFrame': summary.get('denominator_complete_for_planned_cdx_frame'),
+              'articleDenominatorClosed': False,
+              'topicCodingAuthorized': False,
+              'quantitativeLanguageAuthorized': False,
+              'publicationEligible': False,
+              'rule': (
+                  'This artifact is a metadata-only archive URL inventory. Transport or overflow holds '
+                  'cannot become negative historical evidence. Even a complete planned CDX frame is not '
+                  'an article denominator until route adjudication/deduplication and coding gates close.'
+              ),
+          }
+          (root / 'ACQUISITION_CLASSIFICATION.json').write_text(
+              json.dumps(classification, ensure_ascii=False, indent=2), encoding='utf-8'
+          )
+          print('ACQUISITION_CLASSIFICATION', state)
+          PY
+
+      - name: Assert no archived article bodies are staged
+        if: always()
+        run: |
+          set -euo pipefail
+          test -f g3-archive-content-inventory/ACQUISITION_RECEIPT.json
+          test -f g3-archive-content-inventory/cdx_capture_witnesses.csv
+          test -f g3-archive-content-inventory/normalized_url_inventory.csv
+          ! find g3-archive-content-inventory -type f \( -name '*.html' -o -name '*.htm' -o -name '*.warc' -o -name '*.warc.gz' \) | grep -q .
+
+      - name: Record ephemeral custody context
+        if: always()
+        run: |
+          mkdir -p g3-archive-content-inventory
+          git rev-parse HEAD > g3-archive-content-inventory/RESEARCH_COMMIT.txt
+          printf '%s\n' "${GITHUB_RUN_ID}" > g3-archive-content-inventory/WORKFLOW_RUN_ID.txt
+          printf '%s\n' "${GITHUB_RUN_ATTEMPT}" > g3-archive-content-inventory/WORKFLOW_RUN_ATTEMPT.txt
+          sha256sum G3_HISTORY/tools/acquire_g3_archive_content_inventory.py > g3-archive-content-inventory/ACQUISITION_TOOL_SHA256.txt
+          sha256sum data/artifact-custody-policy-v2.json > g3-archive-content-inventory/CUSTODY_POLICY_SHA256.txt
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path('g3-archive-content-inventory')
+          receipt={
+              'state':'EPHEMERAL_ACTION_ARTIFACT',
+              'metadataOnly':True,
+              'articleBodiesStored':False,
+              'publicationEligible':False,
+              'quantitativeLanguageAuthorized':False,
+              'retentionDays':7,
+              'durableReceiptPresent':False,
+              'policy':'data/artifact-custody-policy-v2.json',
+              'workflow':'.github/workflows/g3-archive-content-inventory-acquisition.yml',
+              'runId':os.environ.get('GITHUB_RUN_ID'),
+              'runAttempt':os.environ.get('GITHUB_RUN_ATTEMPT'),
+              'repository':os.environ.get('GITHUB_REPOSITORY'),
+              'ref':os.environ.get('GITHUB_REF'),
+              'eventSha':os.environ.get('GITHUB_SHA'),
+              'checkedOutSha':(root/'RESEARCH_COMMIT.txt').read_text(encoding='utf-8').strip(),
+              'warning':'CDX URL metadata is research acquisition evidence only; it is not a frozen article denominator or publication authorization.'
+          }
+          (root/'ACTION_CUSTODY.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+
+      - name: Upload temporary archive metadata inventory
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: g3-archive-content-inventory-${{ github.run_id }}-${{ github.run_attempt }}
+          path: g3-archive-content-inventory/
+          if-no-files-found: error
+          compression-level: 6
+          retention-days: 7
+
+      - name: Ensure acquisition lane is read-only
+        if: always()
+        run: git diff --exit-code
