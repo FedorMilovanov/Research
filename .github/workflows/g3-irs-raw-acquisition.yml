@@ -1,0 +1,107 @@
+name: G3 IRS raw XML acquisition
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'G3_HISTORY/tools/acquire_irs_raw_xml.py'
+      - 'G3_HISTORY/tools/acquire_irs_raw_xml_v2.py'
+      - 'G3_HISTORY/tools/acquire_irs_raw_xml_v3.py'
+      - 'G3_HISTORY/tools/acquire_irs_raw_xml_v4.py'
+      - 'G3_HISTORY/tools/summarize_irs_acquisition.py'
+      - 'G3_HISTORY/IRS_RAW_XML_ACQUISITION_GATE.md'
+      - '.github/workflows/g3-irs-raw-acquisition.yml'
+      - 'data/artifact-custody-policy-v2.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: g3-irs-raw-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  acquire:
+    strategy:
+      fail-fast: false
+      matrix:
+        label: [FY2022_LATER, FY2023, FY2024, FY2025]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.8'
+
+      - name: Compile acquisition and evidence-summary tools
+        run: |
+          python -m py_compile G3_HISTORY/tools/acquire_irs_raw_xml_v4.py
+          python -m py_compile G3_HISTORY/tools/summarize_irs_acquisition.py
+
+      - name: Acquire exact IRS e-file XML object
+        run: >-
+          python G3_HISTORY/tools/acquire_irs_raw_xml_v4.py
+          --label "${{ matrix.label }}"
+          --output g3-irs-acquisition-output
+
+      - name: Emit deterministic IRS evidence summary
+        run: >-
+          python G3_HISTORY/tools/summarize_irs_acquisition.py
+          --label "${{ matrix.label }}"
+          --output g3-irs-acquisition-output
+
+      - name: Record ephemeral custody context
+        if: always()
+        run: |
+          mkdir -p g3-irs-acquisition-output
+          git rev-parse HEAD > g3-irs-acquisition-output/RESEARCH_COMMIT.txt
+          printf '%s\n' "${GITHUB_RUN_ID}" > g3-irs-acquisition-output/WORKFLOW_RUN_ID.txt
+          printf '%s\n' "${GITHUB_RUN_ATTEMPT}" > g3-irs-acquisition-output/WORKFLOW_RUN_ATTEMPT.txt
+          printf '%s\n' "${{ matrix.label }}" > g3-irs-acquisition-output/TARGET_LABEL.txt
+          sha256sum G3_HISTORY/tools/acquire_irs_raw_xml_v4.py > g3-irs-acquisition-output/ACQUISITION_TOOL_SHA256.txt
+          sha256sum G3_HISTORY/tools/summarize_irs_acquisition.py > g3-irs-acquisition-output/SUMMARY_TOOL_SHA256.txt
+          sha256sum data/artifact-custody-policy-v2.json > g3-irs-acquisition-output/CUSTODY_POLICY_SHA256.txt
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path('g3-irs-acquisition-output')
+          receipt = {
+              'state': 'EPHEMERAL_ACTION_ARTIFACT',
+              'publicationEligible': False,
+              'retentionDays': 7,
+              'durableReceiptPresent': False,
+              'policy': 'data/artifact-custody-policy-v2.json',
+              'workflow': '.github/workflows/g3-irs-raw-acquisition.yml',
+              'targetLabel': os.environ.get('TARGET_LABEL'),
+              'runId': os.environ.get('GITHUB_RUN_ID'),
+              'runAttempt': os.environ.get('GITHUB_RUN_ATTEMPT'),
+              'repository': os.environ.get('GITHUB_REPOSITORY'),
+              'ref': os.environ.get('GITHUB_REF'),
+              'eventSha': os.environ.get('GITHUB_SHA'),
+              'checkedOutSha': (root / 'RESEARCH_COMMIT.txt').read_text(encoding='utf-8').strip(),
+              'warning': 'Downloaded IRS bytes are research evidence only. Actions artifact retention is not durable custody and does not authorize publication.'
+          }
+          (root / 'ACTION_CUSTODY.json').write_text(json.dumps(receipt, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+        env:
+          TARGET_LABEL: ${{ matrix.label }}
+
+      - name: Upload temporary raw-XML acquisition evidence
+        if: always()
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        with:
+          name: g3-irs-${{ matrix.label }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: g3-irs-acquisition-output/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Ensure acquisition lane does not modify tracked files
+        if: always()
+        run: git diff --exit-code

@@ -1,0 +1,70 @@
+name: G3 Buck RSS media locator inventory
+
+on:
+  push:
+    branches:
+      - research/g3-history-20260907
+    paths:
+      - G3_HISTORY/tools/acquire_buck_rss_media_inventory.py
+      - .github/workflows/g3-buck-rss-media-inventory.yml
+
+permissions:
+  contents: read
+
+env:
+  G3_BUCK_RSS_OUT: g3-buck-rss-media-inventory
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact branch head
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile metadata-only acquisition tool
+        run: python -m py_compile G3_HISTORY/tools/acquire_buck_rss_media_inventory.py
+
+      - name: Acquire official RSS media locators only
+        run: |
+          set -euo pipefail
+          python G3_HISTORY/tools/acquire_buck_rss_media_inventory.py
+
+      - name: Assert no sermon binary or body is staged
+        run: |
+          set -euo pipefail
+          test -f "$G3_BUCK_RSS_OUT/ACQUISITION_RECEIPT.json"
+          test -f "$G3_BUCK_RSS_OUT/dossier_media_matches.csv"
+          test -f "$G3_BUCK_RSS_OUT/rss_items_metadata.csv"
+          if find "$G3_BUCK_RSS_OUT" -type f \( -iname '*.wav' -o -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.mp4' -o -iname '*.webm' -o -iname '*.html' \) | grep -q .; then
+            echo 'Unexpected sermon/body binary in metadata-only artifact' >&2
+            exit 1
+          fi
+
+      - name: Record exact GitHub provenance
+        run: |
+          cat > "$G3_BUCK_RSS_OUT/GITHUB_PROVENANCE.txt" <<EOF
+          repository=$GITHUB_REPOSITORY
+          sha=$GITHUB_SHA
+          run_id=$GITHUB_RUN_ID
+          run_attempt=$GITHUB_RUN_ATTEMPT
+          workflow=$GITHUB_WORKFLOW
+          metadata_only=true
+          audio_downloaded=false
+          publication_authorized=false
+          EOF
+
+      - name: Upload locator inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: g3-buck-rss-media-inventory-${{ github.sha }}
+          path: g3-buck-rss-media-inventory/
+          retention-days: 7
+          if-no-files-found: error
