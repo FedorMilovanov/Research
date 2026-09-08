@@ -1,7 +1,8 @@
 # G3 Press / G3+ — asset transfer, author rights, and post-wind-down digital state
 
-**Status:** ACTIVE / P0 EVIDENCE_HOLD  
-**Research date:** 2026-09-07
+**Status:** ACTIVE / P0 EVIDENCE_HOLD / PUBLICATION_HOLD  
+**Cutoff:** 2026-09-08  
+**Canonical Q006 authority:** [`ASSET_TRANSFER_FORENSICS.md`](ASSET_TRANSFER_FORENSICS.md). This file retains the broader title-level rights, storefront and discovery reconstruction.
 
 ## Question
 
@@ -9,32 +10,52 @@ What happened to the economically and editorially meaningful assets of G3 after 
 
 The current evidence supports a more granular answer than `everything transferred` or `nothing transferred`.
 
-## 0. Pre-wind-down scale — these were non-trivial ministry/product surfaces
+## 0. Pre-wind-down scale — non-trivial ministry/product surfaces
 
-An official G3 presidential-announcement page dated **2025-07-14** gives unusually useful scale markers for the ecosystem immediately after the Buice crisis and before the 2026 collapse. G3 itself said that under Scott Aniol's prior leadership:
+An official G3 presidential-announcement page dated **2025-07-14** reported that:
 
 - **G3 Press had expanded to more than 50 titles**;
 - **G3 Plus had grown to more than 10,000 users**;
 - **the G3 Church Network had grown to more than 200 churches**.
 
-Official locator:
-- https://g3min.org/scott-aniol-named-president-of-g3-ministries/
+These are institutional self-reported scale claims, not an independent valuation. They nevertheless establish that the later wind-down concerned an established catalog, digital user base and church-network ecosystem rather than an empty corporate shell.
 
-These are institutional self-reported scale claims, not an independent valuation. They nevertheless matter for the asset question: the later transfer/wind-down concerned an established catalog, digital user base and church-network ecosystem rather than an empty corporate shell.
-
-IRS-derived FY2025 program reporting independently describes continuing publishing/digital/network activity, including **18 new G3 Press books**, more than **500 audiobooks available on G3+**, and roughly **210 network churches**. Because that layer is derivative until raw filing text is acquired, the official 2025 G3 page controls the cleaner public scale wording while the tax-derived data functions as corroboration.
+The raw FY2025 IRS Form 990 object is now acquired. Its `IRS990/Desc` program-history narrative reports continued G3 Press/G3+ activity and states that G3 **separated Living Heritage Homeschool as an independent entity from G3 Ministries during 2025**. Cause IQ and similar renderers of that wording are derivative of the same filing family, not independent corroboration.
 
 **Do not infer market value** from user/title/church counts. They establish operational scale, not transaction price or ownership value.
 
-## 1. G3+ — intended transfer is reported, transferee remains unknown
+## 1. Living Heritage — 2025 separation is primary-closed; 2026 successor identity is not
+
+Raw FY2025 IRS object:
+
+- object `202641339349303874`;
+- raw XML SHA-256 `48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2`.
+
+Exact-head IRS acquisition/readback found the Living Heritage narrative at `IRS990/Desc`.
+
+**VERIFIED_PRIMARY:** during 2025 G3 reported separating Living Heritage Homeschool as an independent entity from G3 Ministries.
+
+This fact must remain distinct from the later 2026 wind-down. Current Living Heritage offerings include G3+ access/content, creating a real commercial/service-continuity lead. But neither the 2025 separation nor later bundling proves that Living Heritage acquired:
+
+- G3+ itself;
+- G3 Press;
+- subscriber contracts;
+- domains or app-store accounts;
+- trademarks;
+- inventory;
+- publishing rights;
+- corporate liabilities.
+
+`Living Heritage = the unnamed successor ministry` remains **UNVERIFIED** until a recipient-side or G3 primary transaction object establishes it.
+
+## 2. G3+ — intended transition is reported, transferee remains unknown
 
 A screenshot supplied by a G3+ subscriber and reproduced by Michelle Lesley reports that subscribers were told another ministry would acquire/continue the G3+ service while preserving subscription/library access. Lesley explicitly says she has **no insider knowledge** of the acquiring ministry.
 
 Current evidence therefore supports only:
 
-- an announced/intended transition or acquisition of G3+ to an unnamed ministry;
-- subscriber continuity was represented as the goal;
-- public speculation identifying Right Response Ministries is not verified.
+- a reported intended transition/acquisition of G3+ to an unnamed ministry;
+- subscriber continuity was represented as the goal.
 
 It does **not** establish:
 
@@ -43,112 +64,83 @@ It does **not** establish:
 - purchase price / donation / license structure;
 - liabilities assumed;
 - treatment of subscriber personal data;
-- whether the transfer has legally completed.
+- whether a private transfer legally completed.
 
-## 2. G3+ platform identity remains under G3 metadata
+Public speculation identifying any specific ministry is not proof.
 
-Google Play continues to display:
+## 3. G3+ platform identity remains under G3 metadata
 
-- developer: `G3 Ministries for the Church`;
-- support email: `admin@g3min.org`;
-- Douglasville address;
-- G3 branding/content description.
+Google Play continues to expose G3-linked developer/support identity, including `admin@g3min.org` and the Douglasville address. Apple listing surfaces likewise identify `G3 Ministries For The Church, Inc.` as developer/seller.
 
-Apple storefront material has likewise displayed G3 Ministries For The Church, Inc. as developer/seller.
+This is dated **platform-state evidence**. It does **not** prove beneficial ownership or disprove a private transfer.
 
-This is dated platform-state evidence. It does **not** prove beneficial ownership.
+### Exact Google Play update-date conflict
 
-### Exact update-date conflict
+Do not publish `G3+ was updated Sep. 4, 2026` as established fact.
 
-Do not publish the earlier exact claim `G3+ was updated Sep. 4, 2026` as fact.
+Different Google surfaces have displayed **Sep. 4, 2026** and **Jul. 23, 2026** for the same package. Re-checks have continued to expose the conflict.
 
-- one Google search surface reports `Updated on Sep 4, 2026`;
-- an opened/crawled Play storefront snapshot for the same package reports `Updated on Jul 23, 2026`.
+**State:** `DISPUTED / platform field conflict`.
 
-**State:** `DATA_CONFLICT / EVIDENCE_HOLD`.
+The developer/support identity is the useful dated fact; the exact displayed update date is not a stable ownership or transaction signal.
 
-A fresh controlled capture is required before using the exact date.
+## 4. G3 Press storefront remains publicly reachable
 
-## 3. G3 Press storefront is still publicly serving a commerce interface
-
-Direct current access to:
-
-`https://shop.g3min.org/`
-
-returns a functioning Shopify-style public storefront rather than the 503 currently returned by the main `g3min.org` root.
-
-Observed on 2026-09-07:
-
-- cart and checkout controls are rendered;
-- the storefront says `© 2026 G3 Press`;
-- the home page presents G3 Press books and G3 Ministries merchandise;
-- the catalog route exposes hundreds of product entries and current prices;
-- the storefront links back to G3 Ministries, Events and G3 Plus;
-- examples include current product pages for Scott Aniol titles and Darrell Harrison/Virgil Walker titles.
+Direct observations through Sep. 8 show `shop.g3min.org` continuing to render a commerce surface under G3 Press branding, with cart/checkout controls, catalog/product pages and links into the G3 ecosystem.
 
 ### What this proves
 
-It proves that a public commerce surface under the G3 Press domain/subdomain remains technically available and presents inventory/pricing under G3 branding after the wider ministry wind-down.
+A public commerce surface under G3 Press branding remained reachable after the wider operational wind-down announcement.
 
 ### What this does NOT prove
 
 - that every displayed item is physically in stock;
-- that checkout would successfully settle and fulfill an order;
+- that every order would be fulfilled;
 - who currently receives merchant proceeds;
-- who owns the Shopify account/domain;
+- who legally owns the storefront/domain/account;
+- who owns each title or inventory lot;
 - that G3 Ministries reversed its operational wind-down;
-- that no acquisition/transition is underway;
-- that the corporate entity remains the beneficial owner of inventory/IP.
+- that no transfer or servicing arrangement exists.
 
-Do **not** conduct a purchase merely to test ownership without a separate authorized transaction plan.
+Do not conduct a purchase merely to test ownership without a separate authorized transaction plan.
 
-## 4. Dave Jenkins — one title-level rights return/republication is now strongly corroborated
+## 5. Dave Jenkins — title-level post-G3 republication is strongly corroborated
 
 ### Original G3 relationship
 
-G3’s own historical author/material pages identify Dave Jenkins’ *The Word Matters: Defending Biblical Authority Against the Spirit of the Age* as a G3 Press title.
+Historical G3 material identifies Dave Jenkins’ *The Word Matters: Defending Biblical Authority Against the Spirit of the Age* as a G3 Press title.
 
-### Contemporaneous post-crisis report
+### Reported rights return
 
-Secondary reporting reproduces a public statement attributed to Jenkins saying G3 had returned the rights to *The Word Matters* and that he and Sarah would prepare a new cover and make the book available through the Servants of Grace publishing imprint.
+Secondary reporting reproduces a participant statement that G3 returned the rights and that Jenkins intended to reissue the title through his own publishing ecosystem.
 
 ### Observable current result
 
-Servants of Grace now serves a product page for the same title that identifies:
-
-- `By Dave Jenkins`;
-- publisher/category: **Theology for Life Publishing**;
-- public price: `$14.99`.
-
-This is materially stronger than a mere report of a request.
+Servants of Grace / Theology for Life Publishing now exposes a current sales surface for the same title under Jenkins’ publishing ecosystem.
 
 ### Current conclusion
 
-> At least one former G3 Press title—Dave Jenkins’ *The Word Matters*—has an observable post-G3 republication/sales surface under Jenkins’ own Theology for Life Publishing ecosystem, strongly corroborating the reported return of that title’s rights.
+> At least one former G3 Press title has an observable post-G3 republication/sales presence under the author’s current publishing ecosystem, materially corroborating the reported title-level rights return.
 
-This still does not disclose the legal instrument, effective date or whether all ancillary rights/remaining G3 inventory were returned.
+This still does not supply the assignment/reversion instrument, exact effective date, residual G3 inventory treatment or every ancillary right.
 
-## 5. Darrell Harrison — request supported, return not yet proven
+## 6. Darrell Harrison — request supported, completed reversion not proved
 
-Secondary reports reproduce a public comment attributed to Darrell Harrison asking Jenkins how he obtained his rights back and saying Harrison had two co-authored G3 books for which he wanted rights returned.
+Secondary reporting reproduces a public comment attributed to Darrell Harrison asking how Jenkins obtained his rights back and referring to co-authored G3 books for which he wanted rights returned.
 
-Meanwhile, G3 Press storefront pages remain publicly visible for Harrison/Walker titles including:
-
-- *Why Are You Afraid?*;
-- *A Biblical Theology of Climate Change*;
-- other Just Thinking/G3 Press material.
+G3 Press product surfaces have remained publicly visible for Harrison/Walker titles.
 
 Therefore:
 
-- `Harrison requested/inquired about rights return` — supported by reproduced participant statement;
-- `Harrison's rights were returned` — **not yet verified**;
+- `Harrison requested/inquired about rights return` — supported at participant-reporting level;
+- `Harrison's rights were returned` — **UNVERIFIED**;
 - continued storefront display is **not** proof that rights were not returned, because inventory sell-off, licensing or stale product state are possible.
 
-## 6. Other author/content exits — useful but separate asset classes
+## 7. Other author/content exits — separate asset classes
 
-Reports indicate Justin Peters and Jim Osman requested removal of freely licensed/hosted G3 content. This is a content-license/platform question and should not be conflated automatically with publishing copyright ownership.
+Reports that creators requested removal of hosted/licensed G3 content concern platform/content licenses and must not automatically be converted into publishing-copyright conclusions.
 
-For each creator/title, classify separately:
+For every creator/title classify separately:
 
 - copyright/author rights;
 - publisher publication license;
@@ -158,30 +150,29 @@ For each creator/title, classify separately:
 - marketing/product-page rights;
 - trademark/brand rights.
 
-One creator exiting one layer does not establish the disposition of every layer.
+One creator exiting one layer does not establish the disposition of every layer or of the whole G3 Press catalog.
 
-## 7. Nonprofit-law constraint
+## 8. Georgia corporate-status / nonprofit-law boundary
 
-G3’s 2019 Georgia Articles establish:
+G3’s 2019 Georgia Articles establish a nonprofit-purpose and dissolution framework, including restrictions on residual assets after liabilities.
 
-- 501(c)(3)-purpose restrictions;
-- no-private-inurement language;
-- board authority to dissolve by two-thirds vote;
-- after liabilities, residual dissolution assets must be directed to qualifying exempt purposes/organizations.
+Separately, the official Georgia Secretary of State Business Search acquired on **2026-09-08** still listed `G3 Ministries for the Church, Inc.` as **Active/Compliance**, with Scott Aniol as registered/designated agent.
 
-This creates a legal-document baseline for evaluating a transfer if/when terms are acquired.
+Therefore:
 
-It does **not** establish that:
+- announced operational wind-down — supportable;
+- Church Network dissolution — supportable;
+- completed formal Georgia corporate dissolution by Sep. 8 — **REFUTED by the dated official status observation**.
 
-- a formal dissolution vote occurred;
-- a transfer occurred as part of formal dissolution;
-- a particular recipient was qualified;
-- any particular consideration was fair or unfair;
-- directors breached or satisfied fiduciary duties.
+Neither the articles nor current corporate status identifies the 2026 G3+/Press transferee or transaction terms.
 
-Those require the actual transaction/corporate record.
+## 9. Schedule L is no longer an asset-transfer discovery hold
 
-## 8. Transaction hypotheses — all on HOLD
+Raw FY2024/FY2025 Schedule L rows are acquired. They disclose the family-member salary transactions recorded in the financial masters and **do not identify a G3+/G3 Press/Living Heritage asset transfer**.
+
+Do not use Schedule L as circumstantial evidence for a successor theory merely because it concerns interested-person transactions.
+
+## 10. Transaction hypotheses — all remain subordinate to primary documents
 
 ### H-ASSET-01 — sale to another ministry
 
@@ -189,7 +180,7 @@ Possible; subscriber wording is compatible with acquisition. Price/recipient unk
 
 ### H-ASSET-02 — donation/charitable transfer
 
-Possible for a nonprofit wind-down. No instrument acquired.
+Possible in a nonprofit wind-down. No instrument acquired.
 
 ### H-ASSET-03 — license/operations handoff without asset sale
 
@@ -197,23 +188,29 @@ Possible, especially for G3+/software/content operations. No contract acquired.
 
 ### H-ASSET-04 — partial transfer with author-right reversions and retained inventory
 
-Increasingly plausible because Jenkins appears to have recovered/reissued one title while the G3 Press storefront still serves a broad catalog. This remains a model, not a proven complete transaction structure.
+Plausible because title-level post-G3 republication and still-visible G3 Press catalog state coexist. This is an explanatory model, not a proved transaction structure.
 
-## 9. Highest-value next acquisitions
+### H-ASSET-05 — Living Heritage became the 2026 successor because it had been separated in 2025
 
-1. Original Aug. 27 G3+ subscriber email as a durable artifact with headers/provenance.
-2. Any recipient-ministry announcement naming itself as G3+/G3 Press successor.
-3. G3 board/corporate notice about asset transfer.
-4. Asset purchase / donation / license agreement or closing statement.
-5. Shopify legal/merchant identity if publicly disclosed without transacting.
-6. Domain/DNS/registrant transition evidence where lawfully public.
-7. Title-by-title author statements on rights return.
-8. Current G3 Press catalog snapshot + later diff to see which authors/titles disappear or move.
+**UNSUPPORTED.** The 2025 separation and later G3+ access bundling are compatible with several supplier/license/affiliate/transition arrangements and do not establish asset title.
+
+## 11. Highest-value next acquisitions
+
+1. Original G3+ subscriber notice/email as a durable artifact with provenance.
+2. Recipient-ministry primary announcement naming itself as G3+/G3 Press successor.
+3. G3 board/corporate notice naming the recipient and approved asset disposition.
+4. Asset purchase / donation / assignment / license agreement or closing statement.
+5. Public post-transfer Terms/Privacy/merchant identity naming a different legal provider, if such a surface appears.
+6. Authoritative domain/RDAP or account-transition evidence where lawfully public and current.
+7. Title-by-title author statements and assignment/reversion instruments.
+8. Current G3 Press catalog snapshot + later diffs to track title/inventory migration.
 9. Publisher/imprint records for reissued books.
-10. Georgia corporate-status/dissolution filings and any relevant Schedule L/R/O disclosures.
+10. Later Georgia corporate filings if status changes.
 
-## 10. Article-safe wording today
+Repeated observation of the same unchanged app-store/storefront metadata is low-value unless the state changes.
 
-> By July 2025 G3 itself reported an ecosystem of more than 50 Press titles, more than 10,000 G3+ users and more than 200 Network churches. After the 2026 collapse, subscribers were told the subscription platform would transition to another, unnamed ministry, but the recipient and transaction terms have not been publicly verified. The digital aftermath is mixed: G3+ still carries G3 developer metadata, while the G3 Press storefront remains publicly accessible with books, merchandise and commerce controls. At least one former G3 Press author, Dave Jenkins, is now selling *The Word Matters* under his own Theology for Life Publishing imprint, strongly corroborating reports that G3 returned the rights to that title. These facts point toward a potentially piecemeal wind-down—platform transition, author-right reversions and still-visible inventory—but the legal disposition of G3 Press, G3+, cash, trademarks and other assets remains unresolved.
+## 12. Article-safe wording
 
-**Do not upgrade `potentially piecemeal` to a factual transaction structure until primary transfer records are acquired.**
+> G3’s FY2025 tax filing states that Living Heritage Homeschool was separated as an independent entity from G3 Ministries during 2025. After G3’s 2026 operational wind-down, reporting indicated that another ministry was expected to take over G3+ and possibly G3 Press, but no acquired primary public record names that ministry or supplies the transaction terms. Current Living Heritage G3+ bundling, G3-linked app-store metadata and the still-visible G3 Press storefront document service/platform continuity; none by itself establishes beneficial ownership. Title-level disposition may differ across authors: Dave Jenkins’ *The Word Matters* has an observable post-G3 publishing presence under his current ecosystem, while other rights-return claims remain less complete. The legal disposition of G3+, G3 Press, subscriber contracts, domains, trademarks, inventory and other rights therefore remains unresolved at the current evidence cutoff.
+
+**Do not identify a 2026 successor or upgrade `potentially piecemeal` into a factual transaction structure until primary transfer records are acquired.**
