@@ -8,8 +8,10 @@ Search indexes independently expose the historical official route
 legacy route only; it does not repeat the exhausted current-era path.
 
 Research-only, read-only acquisition. CDX is sharded by month. Every shard must
-return valid JSON; any transport/parse failure fails closed. A valid empty result is
-archive coverage only, never evidence of board continuity or absence.
+return valid JSON. Transient transport/HTTP failures receive a small bounded retry
+budget; exhausted transport retries, non-retryable HTTP responses and parse/schema
+failures fail closed. A valid empty result is archive coverage only, never evidence
+of board continuity or absence.
 """
 from __future__ import annotations
 
@@ -34,8 +36,10 @@ WINDOWS = [
     ("20250601", "20250630", "2025-06"),
     ("20250701", "20250720", "2025-07-01_20"),
 ]
-UA = "FedorMilovanov-Research-G3-2025-Legacy-Leadership/2.0 (research-only)"
+UA = "FedorMilovanov-Research-G3-2025-Legacy-Leadership/2.1 (research-only)"
 ZSTD_MAGIC = b"\x28\xb5\x2f\xfd"
+RETRYABLE_HTTP = {429, 500, 502, 503, 504}
+RETRY_DELAYS = (2, 6)
 
 NAMES = [
     "Joshua Buice",
@@ -80,29 +84,48 @@ def extract_text(data: bytes) -> str:
     return "\n".join(parser.parts)
 
 
-def fetch(url: str, timeout: int = 120):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
-    started = time.time()
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as response:
-            data = response.read()
-            return data, {
-                "requested_url": url,
-                "final_url": response.geturl(),
-                "status": getattr(response, "status", None),
-                "content_type": response.headers.get("Content-Type"),
-                "content_encoding": response.headers.get("Content-Encoding"),
-                "bytes": len(data),
-                "sha256": sha(data),
-                "elapsed_seconds": round(time.time() - started, 3),
-            }
-    except urllib.error.HTTPError as exc:
-        body = exc.read()
-        raise RuntimeError(
-            f"HTTP {exc.code} {exc.reason} url={url} body_sha256={sha(body)} bytes={len(body)}"
-        ) from exc
-    except urllib.error.URLError as exc:
-        raise RuntimeError(f"URL error {exc.reason} url={url}") from exc
+def fetch(url: str, timeout: int = 120, attempts: int = 3):
+    """Fetch with bounded retries for transient transport/5xx failures only."""
+    for attempt in range(1, attempts + 1):
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+        started = time.time()
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as response:
+                data = response.read()
+                return data, {
+                    "requested_url": url,
+                    "final_url": response.geturl(),
+                    "status": getattr(response, "status", None),
+                    "content_type": response.headers.get("Content-Type"),
+                    "content_encoding": response.headers.get("Content-Encoding"),
+                    "bytes": len(data),
+                    "sha256": sha(data),
+                    "elapsed_seconds": round(time.time() - started, 3),
+                    "attempt": attempt,
+                    "max_attempts": attempts,
+                }
+        except urllib.error.HTTPError as exc:
+            body = exc.read()
+            message = (
+                f"HTTP {exc.code} {exc.reason} url={url} "
+                f"body_sha256={sha(body)} bytes={len(body)} attempt={attempt}/{attempts}"
+            )
+            if exc.code not in RETRYABLE_HTTP or attempt >= attempts:
+                raise RuntimeError(message) from exc
+        except urllib.error.URLError as exc:
+            message = f"URL error {exc.reason} url={url} attempt={attempt}/{attempts}"
+            if attempt >= attempts:
+                raise RuntimeError(message) from exc
+        except TimeoutError as exc:
+            message = f"Timeout url={url} attempt={attempt}/{attempts}"
+            if attempt >= attempts:
+                raise RuntimeError(message) from exc
+
+        delay = RETRY_DELAYS[min(attempt - 1, len(RETRY_DELAYS) - 1)]
+        print("TRANSIENT_RETRY", f"attempt={attempt}/{attempts}", f"sleep={delay}s", url, file=sys.stderr)
+        time.sleep(delay)
+
+    raise RuntimeError(f"fetch exhausted unexpectedly url={url}")
 
 
 def decode_payload(raw: bytes):
@@ -149,7 +172,7 @@ def query_segment(out: Path, start: str, end: str, label: str) -> tuple[list[dic
         "filter": "statuscode:200",
     }
     url = "https://web.archive.org/cdx/search/cdx?" + urllib.parse.urlencode(params)
-    data, meta = fetch(url, 60)
+    data, meta = fetch(url, 45)
     safe = label.replace("/", "_")
     (out / f"CDX_LEGACY_{safe}.json").write_bytes(data)
     write_json(out / f"CDX_LEGACY_{safe}_FETCH.json", meta)
@@ -267,7 +290,7 @@ def main() -> int:
         snapshot_url = f"https://web.archive.org/web/{ts}id_/{original}"
         record = {"cdx": item, "snapshot_url": snapshot_url}
         try:
-            raw, meta = fetch(snapshot_url, 120)
+            raw, meta = fetch(snapshot_url, 90)
             raw_name = f"{ts}_legacy-leadership.raw"
             (out / raw_name).write_bytes(raw)
             decoded, method = decode_payload(raw)
