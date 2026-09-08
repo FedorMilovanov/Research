@@ -2,9 +2,9 @@
 
 **Status:** RESEARCH / EXEGESIS STRESS TEST / NOT PUBLICATION
 **Date:** 2026-09-08
-**Depends on:** `273`, `274`
+**Depends on:** `273`, `274`; reconciled against targeted owners `279–283`
 
-> Purpose: identify what the major texts actually establish before importing a complete paedobaptist or credobaptist system into them. Historical interpreters are witnesses to readings, not substitutes for exegesis.
+> Purpose: identify what the major texts actually establish before importing a complete paedobaptist or credobaptist system into them. Historical interpreters are witnesses to readings, not substitutes for exegesis. Where `279–283` state a narrower claim class or textual guard, those targeted owners control this broad stress-test summary.
 
 ## 0. Thesis control
 
@@ -118,7 +118,9 @@ That fits `150_NOT_AN_ORDINARY_UNBELIEVER` exceptionally well.
 
 ## Direct observation
 
-Paul directly commands children to obey parents and fathers to raise children in the Lord’s discipline/instruction. Children are therefore treated as moral hearers of apostolic teaching now, not as beings whose Christian moral relevance begins at conversion or age 18.
+Paul directly commands children to obey parents and fathers to raise children in the Lord’s discipline/instruction. Children are therefore treated as present moral hearers of apostolic teaching, and fathers receive a present explicitly Christian formation duty.
+
+The passage itself does **not** disclose the baptismal or regeneration status of the addressed children. Therefore it should not be used, from silence, as direct proof that moral duty exists specifically *before baptism* or *before conversion*. That larger pre-baptism/pre-conversion duty is independently secure from Creator, moral-law, filial-authority and gospel-command owners elsewhere in the Research corpus.
 
 Gill grounds obedience in natural right, God’s law and the Lord’s command; Calvin on Col 3 treats parental authority as providentially ordained while limited by God.
 
@@ -128,15 +130,15 @@ Because Paul addresses children within letters to churches and couches their dut
 
 ## Baptist counter
 
-Direct apostolic address does not logically entail baptism or formal membership. Children can be present in Christian households/assemblies, addressed under God’s Word, and obligated to obey without having received the initiatory ordinance.
+Direct apostolic address does not logically entail baptism or formal membership. Children can be present in Christian households/assemblies, addressed under God’s Word, and obligated to obey without the text itself identifying their initiatory-ordinance status.
 
 A notable older critical commentary (Meyer) explicitly says infant baptism does not follow from Eph 6:1 and that children can stand in a holy household relation without baptism.
 
 ## Stress-test verdict
 
-`EPH 6 = DECISIVE AGAINST MORAL-WAITING-ROOM / NON-DECISIVE ON INFANT BAPTISM`.
+`EPH 6 = DIRECT PRESENT CHILD MORAL ADDRESS + DIRECT PARENTAL CHRISTIAN FORMATION / NON-DECISIVE ON BAPTISM OR REGENERATION STATUS`.
 
-This text is one of the strongest controls for the user’s practical concern regardless of which baptism position wins.
+This text remains one of the strongest controls for the user’s practical concern regardless of which baptism position wins, but it must not be made to prove more than it states.
 
 ---
 
@@ -150,7 +152,16 @@ Calvin’s application is strongly household-governance oriented: the godly hous
 
 ## Philippian jailer — Acts 16:31–34
 
-The word is spoken to the jailer **and to all in his house**; the household is baptized and the narrative connects rejoicing/believing with the house. Gill therefore argues that this household is positive evidence for hearers/believers rather than infants.
+Direct narrative data must be separated carefully:
+
+- the word of the Lord is spoken to the jailer **and to all in his house**;
+- the baptism has household scope;
+- the household participates in the rejoicing;
+- in v.34 `πεπιστευκὼς` is masculine singular, so belief is grammatically predicated directly of the jailer; the adverb `πανοικεὶ` gives household scope to the surrounding rejoicing construction but should not be turned into an uncontested person-by-person statement that every member is explicitly said to believe.
+
+### Baptist weight
+
+The account still gives stronger credobaptist data than a bare household noun: all in the house hear the word, baptism follows immediately, and the house participates in the gospel response. But do **not** write `Luke explicitly says every member of the jailer’s household personally believed` as a direct grammatical fact from v.34.
 
 ## Stephanas — 1 Corinthians 1:16 + 16:15
 
@@ -163,9 +174,10 @@ Paul baptized the household of Stephanas. Later that household is described as f
 Do not write:
 
 - “households prove infant baptism”;
-- “households prove there were no infants.”
+- “households prove there were no infants”;
+- “Acts 16:34 explicitly predicates personal faith of every household member.”
 
-The first overreads silence; the second also overreads silence. Jailer/Stephanas contexts do, however, provide positive faith/hearing data that strengthens the credobaptist reading in those specific households.
+The first overreads silence; the second also overreads silence; the third overstates the grammar. Jailer and Stephanas remain credobaptist-weighted for different positive reasons: the jailer narrative gives household hearing/baptism/rejoicing with explicit belief of the jailer, while Stephanas later gives active Christian-service data for the household.
 
 ---
 
@@ -247,7 +259,7 @@ The Baptist must explain why an explicitly child-inclusive covenant structure ro
 
 Several propositions survive both strong systems:
 
-1. A child is presently accountable to God before conversion.
+1. A child is presently accountable to God before conversion — secured from the wider moral-law / Creator / filial / gospel-command case, not from baptismal silence in Eph 6.
 2. Parents have present authority/duty to instruct and discipline.
 3. Children under sustained gospel light occupy a materially different pastoral history from a minimally exposed outsider.
 4. Neither baptism nor Christian parentage proves regeneration.
@@ -265,8 +277,8 @@ These common conclusions are strategically important: the series can strongly at
 |---|---|---|
 | Acts 2:39 | explicit intergenerational promise language + divine calling | infant baptism / automatic covenant salvation |
 | 1 Cor 7:14 | real set-apart/holy relation around believing spouse/parent | saving holiness; automatic baptism entitlement |
-| Eph 6:1–4 | present child moral duty + parental Christian formation | formal church membership / baptism |
-| Household baptisms | household scope of gospel/baptism narratives | actual infant presence or absence in every case |
+| Eph 6:1–4 | present child moral address + parental Christian formation | addressed children’s baptism/regeneration status; formal church membership |
+| Household baptisms | household scope of gospel/baptism narratives; in the jailer account, Word spoken to all in the house | actual infant presence/absence; explicit person-by-person faith of every household member from Acts 16:34 |
 | Gen 17 | explicit Abrahamic child inclusion + covenant sign | direct identity of circumcision recipients with NT baptism recipients without further argument |
 | Jer 31 / Heb 8 | profound New Covenant internalization, knowledge, forgiveness, superiority | by itself, uncontested polity for visible membership before consummation |
 
