@@ -76,13 +76,22 @@ def emit_component_objects(kind_prefix: str, objects: list[dict[str, Any]]) -> N
 
 
 def relevant_asset_leaf(leaf: dict[str, Any]) -> bool:
-    """Select FY2023 balance-sheet / asset-sale leaves without schema guessing."""
+    """Select balance-sheet / asset-sale leaves without schema guessing."""
     hay = (leaf.get("path", "") + " " + leaf.get("tag", "")).casefold()
     terms = (
         "sale", "asset", "gain", "loss", "receiv", "note", "loan",
         "land", "building", "equipment", "depreci", "property", "mortgage",
+        "cash", "saving", "investment",
     )
     return any(term in hay for term in terms)
+
+
+def emit_asset_trace(label: str, leaves: list[dict[str, Any]]) -> None:
+    selected = [leaf for leaf in leaves if relevant_asset_leaf(leaf)]
+    prefix = label.casefold()
+    emit(f"{prefix}_asset_leaf_count", len(selected))
+    for idx, leaf in enumerate(selected, 1):
+        emit(f"{prefix}_asset_leaf", {"ordinal": idx, **leaf})
 
 
 def main() -> int:
@@ -142,6 +151,7 @@ def main() -> int:
             emit("governance_context_leaf_count", len(context))
             for idx, leaf in enumerate(context, 1):
                 emit("governance_context_leaf", {"ordinal": idx, **leaf})
+            emit_asset_trace(label, leaves)
 
     elif label == "FY2022_LATER":
         form = root / "IRS990_LEAVES.json"
@@ -161,10 +171,7 @@ def main() -> int:
         if not form.exists():
             raise SystemExit(f"missing IRS990 leaves: {form}")
         leaves = read_json(form)
-        selected = [leaf for leaf in leaves if relevant_asset_leaf(leaf)]
-        emit("fy2023_asset_leaf_count", len(selected))
-        for idx, leaf in enumerate(selected, 1):
-            emit("fy2023_asset_leaf", {"ordinal": idx, **leaf})
+        emit_asset_trace(label, leaves)
         components = raw_components(root, custody, {"IRS990ScheduleD", "IRS990ScheduleO"})
         emit_component_objects("schedule_d", components["IRS990ScheduleD"])
         emit_component_objects("schedule_o", components["IRS990ScheduleO"])
