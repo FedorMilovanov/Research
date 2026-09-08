@@ -4,111 +4,99 @@
 **Dossier item:** sermon 16 of 17  
 **Buck sermon:** Tom Buck, `Joshua 3:1–17`, 2026-02-15  
 **Claimed comparator:** David Jackman, *Joshua: People of God's Purpose*, pp. 41–49  
-**Current verdict:** `SERMON_IDENTITY_VERIFIED / MULTIPLE SOURCE-SPECIFIC CANDIDATES / EXACT JACKMAN PAGES AND BUCK AUDIO HOLD`
+**Current verdict:** `SERMON_IDENTITY_VERIFIED / ORIGINAL_MEDIA MACHINE-CONFIRMED / DENSE MIXED CLUSTER WITH STRONG CAUSAL+HERMENEUTICAL CANDIDATES / EXACT JACKMAN PAGES + HUMAN_AUDIO + ATTRIBUTION HOLD`
 
-## 1. Primary accusation object
+## 1. Accusation cluster
 
-The directly accessible 31-page packet identifies Item 16 and gives the claimed Jackman source pages plus Buck timestamps.
+The packet alleges a sustained set of parallels concerning:
 
-Primary accusation object:
-- https://protestia.com/wp-content/uploads/2026/08/June2026-Packet-compressed-120.pdf
-
-The packet alleges a sustained cluster rather than one isolated phrase, including:
-
-- Jordan as a dangerous flood rather than a gentle stream;
-- the whole nation with families, animals and baggage;
-- God choosing an improbable time/place to develop trust;
-- wonders for consecrated people;
+- the Jordan as a dangerous flood rather than a gentle stream;
+- the nation crossing with families, animals and baggage;
+- an improbable time/place chosen to develop trust;
+- consecration and wonders;
 - the next step of obedience preceding the promised miracle;
 - the crossing as only the beginning of a longer journey;
 - God's continuing presence;
 - a hermeneutical question about what the narrative teaches about God;
 - adversity producing dependence;
-- seeing only the next step and walking by faith;
+- seeing only the next step / walking by faith;
 - divine power explaining what lies beyond human ability.
 
-## 2. Source-object limitation
+## 2. Original FBC media is now acquired and machine-confirmed
 
-The acquired publisher sample of Jackman's 2014 Crossway volume verifies the book identity and table of contents, but the exposed sample material reaches the Joshua 2 chapter and does not provide the full claimed pp. 41–49 for controlled line-by-line Item 16 verification.
+Exact-head workflow run `34262005804` on Research head `82a0d5995469bf1af5df6f170100a3aae859ef1c` acquired three bounded windows covering the high-density Joshua 3 allegations.
 
-Therefore **SOURCE_OBJECT is not yet closed** for this item even though the edition identity itself is anchored.
+Artifact:
 
-## 3. `most improbable time and location ... develop trust` — strong source-lineage candidate
+- `g3-buck-media-item-16-82a0d5995469bf1af5df6f170100a3aae859ef1c`
+- artifact id `10071395903`
+- artifact digest `sha256:e0f601f4c9168d0d05ae4ca3afbe567ff3a1f15d31565b171eda486f9b86c399`
+- acquisition result: `SEGMENTS_ACQUIRED_EPHEMERALLY`
+- requested/acquired segments: `3/3`
+- `audio_binary_retained=false`
+- `machine_transcript_only=true`
+- `item_verified=false`
 
-The dossier attributes to Jackman a distinctive causal sentence: God chose an improbable time and location because his deeper purpose was to develop his people's trust.
+The machine transcript independently confirms much of the alleged Buck-side cluster.
 
-Buck is alleged to use a very close causal construction around 34:03.
+## 3. Flood/logistics material is confirmed but remains partly factual/text-driven
 
-The construction is much more specific than the generic claim that trials build faith. It combines:
+Original media confirms that Buck emphasizes that the Jordan was not a gentle/babbling stream but a flood, and that the whole nation included wives, children, animals and baggage crossing the riverbed.
 
-1. divine choice;
-2. improbability of both time and location;
-3. a stated deeper purpose;
-4. development of Israel's trust.
+Those facts may contribute to a cumulative case when wording/order matches, but flood-stage danger and national logistics are not literary property unique to Jackman.
 
-Independent public sermon material reproduces this Jackman-like construction, supporting that this is a recognizable source-family formulation rather than a phrase invented by the dossier authors.
+**Working grade:** individual facts `C`; sustained distinctive bundle `possible B` only after exact source comparison.
 
-**Working grade:** `U → likely B` if exact Jackman pages and Buck audio both confirm it without attribution.
+## 4. `next step of obedience` is confirmed, but concept specificity remains limited
 
-## 4. `what is God teaching us about God here?` — Jackman authorial habit, not book-exclusive fingerprint
+Original media confirms a formulation in which the priests take the next step of obedience into the raging river and the promised miracle follows.
 
-This formulation is independently associated with David Jackman's teaching long before Buck. A 2005 sermon transcript records Jackman asking substantially the same hermeneutical question, and his 2012 devotional instruction likewise emphasizes asking what a passage teaches about God before centering ourselves.
+Joshua 3 naturally connects priestly movement/obedience with the stopping of the Jordan. Therefore the theological idea remains text-driven; only distinctive wording/order can raise the dependence grade.
 
-A 2024 review of *Joshua: People of God's Purpose* quotes the same question from the book and connects it with the proposition that what God reveals about himself in narrative remains true because his character is unchanging.
+**Working grade:** concept `C`; distinctive source-matched construction `possible B`.
 
-This is important in two directions:
+## 5. `most improbable time ... increase Israel's trust` — strongest causal candidate
 
-- it strongly supports a **Jackman source-family** lineage;
-- but it is not unique to the Joshua commentary, because Jackman used the question as a broader hermeneutical habit.
+Original media independently confirms a notably specific causal construction: God chose the worst/most improbable time because his purpose was to display his presence/power and increase Israel's trust.
 
-If Buck reproduces the question plus the surrounding Jackman explanation, dependence becomes more probative than the question alone.
+This is substantially more source-specific than the generic statement that trials build faith. It combines divine choice, improbability of timing, deeper purpose and trust-development.
 
-**Working grade:** question alone `C/B-borderline`; sustained explanation `U → potential B`.
+Independent pre-Buck public material also exposes this Jackman-family formulation.
 
-## 5. Flood depth / nation logistics — factual-expository cluster
+**Working grade:** `likely B candidate`, but exact Jackman pp. 41–49 remain required before final source attribution.
 
-Descriptions of the Jordan at flood stage, families/animals/baggage and the physical danger of crossing are partly historical/narrative exposition. Some individual details may circulate broadly in Joshua commentaries.
+## 6. `what is God teaching about himself here?` — Jackman-family candidate now confirmed in Buck media
 
-The dossier's near-verbatim labels therefore require source criticism: exact wording and ordering may support proximate dependence, while the underlying facts themselves are not proprietary to Jackman.
+Original media confirms that Buck asks essentially the same hermeneutical question: what God is teaching about himself in the Old Testament narrative, followed by the principle that what God reveals about himself remains true today.
 
-**Working grade:** individual facts `C`; sustained matching sequence `U → possible B`.
+This question is independently documented as a broader David Jackman hermeneutical habit before Buck; it is therefore meaningful source-family evidence but not a book-exclusive fingerprint by itself.
 
-## 6. Consecration / obedience / promised miracle — partly text-driven
+**Working grade:** question alone `C/B-borderline`; question plus sustained explanation `potential B`.
 
-Joshua 3 explicitly contains consecration, priestly movement and the promised stopping of the Jordan. Sermons naturally connect obedient stepping with the miracle.
+## 7. dependence / faith / longer-journey material is cumulative, not individually decisive
 
-The source-specific issue is not the theological idea but whether Buck reproduces Jackman's distinctive sentence construction and sequence.
+The original media also confirms themes of growing dependence on God, walking by faith, continuing beyond the Jordan crossing, and trusting God when the whole path is not visible.
 
-**Working grade:** idea `C`; distinctive formulation `U → possible B`.
+These motifs were widely present in Joshua 3 exposition before Buck and remain common Christian vocabulary. They should not receive the same evidentiary weight as the unusual causal/question pair.
 
-## 7. `next step / trust what cannot be seen / walk by faith` — potentially cumulative
+## 8. Source-object limitation remains real
 
-The dossier attributes a compact Jackman progression from seeing the next step to trusting what cannot yet be seen and walking by faith rather than sight.
+The acquired publisher sample anchors Jackman's book identity and earlier Joshua material, but the controlled source object does not expose the full claimed pp. 41–49 needed for line-by-line closure of Item 16.
 
-Each element is common Christian vocabulary. The full ordered progression may nevertheless indicate source use if exact wording matches over several clauses.
+Therefore `SOURCE_OBJECT` remains partial even though original Buck media is no longer unacquired.
 
-**Working grade:** clauses individually `C`; ordered block `U → possible B`.
+## 9. Current closure matrix
 
-## 8. Current closure matrix
+- **SERMON_IDENTITY:** `VERIFIED_PRIMARY`.
+- **ORIGINAL_MEDIA_ACCESS:** `VERIFIED_PRIMARY`; three bounded FBC windows acquired.
+- **MACHINE_TRANSCRIPT:** confirms the dense Buck-side cluster; diagnostic only.
+- **HUMAN_AUDIO:** `HOLD`.
+- **SOURCE_OBJECT:** `PARTIAL`; exact Jackman pp. 41–49 required.
+- **DEPENDENCE_ANALYSIS:** strongest on improbable-time/trust and hermeneutical-question formulations; many surrounding rows remain text-driven/common.
+- **ATTRIBUTION_CONTEXT:** `HOLD`.
 
-- **SERMON_IDENTITY:** verified through FBC archive/media identity.
-- **ORIGINAL_AUDIO:** HOLD; dossier STT is not a substitute for human listening.
-- **SOURCE_OBJECT:** PARTIAL; book/edition identity anchored, claimed pp. 41–49 not yet acquired directly.
-- **DEPENDENCE_ANALYSIS:** ACTIVE; several source-specific candidates identified, but no final grade until both sides are primary-checked.
-- **ATTRIBUTION_CONTEXT:** HOLD.
+## Current verdict
 
-## Immediate next acquisitions
+Item 16 is materially stronger than its former `BUCK_AUDIO_HOLD` state, but density is not uniform probative weight. Original media confirms the Buck-side cluster; exact Jackman pages, human listening and attribution context remain necessary before any final dependence grade or `ITEM_VERIFIED` promotion.
 
-1. Exact Jackman pp. 41–49 from a lawful preview/library/source object.
-2. Original FBC/Vimeo Joshua 3 media and human transcript at dossier timestamps.
-3. Buck attribution context before and after each alleged parallel.
-4. Upstream-source search for flood-depth statistics and any illustrations.
-5. Clause-level separation of Jackman-authorial wording from ordinary Joshua 3 exposition.
-
-## Current item verdict
-
-Item 16 contains a **dense cumulative dependence case**, but density is not itself proof. Several rows are text-driven or factual; several other formulations appear genuinely Jackman-specific or Jackman-family-specific.
-
-The correct present status is:
-
-`SERMON_IDENTITY_VERIFIED / MULTIPLE STRONG SOURCE-LINEAGE CANDIDATES / EXACT_SOURCE_PAGES_AND_ORIGINAL_AUDIO_HOLD`.
+`ORIGINAL_MEDIA MACHINE-CONFIRMED / STRONG CAUSAL + JACKMAN-FAMILY HERMENEUTICAL CANDIDATES / SURROUNDING COMMON ROWS DOWNWEIGHTED / EXACT_SOURCE + HUMAN_AUDIO + ATTRIBUTION HOLD`.

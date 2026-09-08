@@ -4,103 +4,85 @@
 **Dossier item:** sermon 15 of 17  
 **Buck sermon:** Tom Buck, `Joshua 2:1–24`, 2026-02-08  
 **Claimed comparator:** David Jackman, *Joshua: People of God's Purpose*, pp. 33–40  
-**Current verdict:** `SERMON_IDENTITY_VERIFIED / SOURCE_OBJECT_PARTIALLY_PRIMARY_CLOSED / MIXED_SPECIFICITY / BUCK_AUDIO_HOLD`
+**Current verdict:** `SERMON_IDENTITY_VERIFIED / JACKMAN SOURCE SIDE PRIMARY-ANCHORED / ORIGINAL_MEDIA MACHINE-CONFIRMED / MULTIPLE STRONG + MULTIPLE LOW-SPECIFICITY ROWS / HUMAN_AUDIO + ATTRIBUTION HOLD`
 
 ## 1. Evidence objects now acquired
 
-The primary accusation packet is directly accessible and identifies Item 15, its sermon date, claimed Jackman page range and allegation timestamps.
+The primary accusation packet identifies Item 15, its sermon date, claimed Jackman page range and allegation timestamps.
 
-Primary accusation object:
-- https://protestia.com/wp-content/uploads/2026/08/June2026-Packet-compressed-120.pdf
+A publisher/distributor sample of Jackman's 2014 Crossway volume directly exposes the Joshua 2 chapter and relevant wording. It identifies David Jackman as author, Crossway as publisher, first printing 2014, ISBN 978-1-4335-1197-4, and places `Inside Enemy Territory (2:1–24)` at p. 33.
 
-A publisher/distributor sample of Jackman's 2014 Crossway volume is also directly accessible. It identifies the edition and contains the relevant Joshua 2 chapter/pages, so the source side of multiple Item 15 rows no longer depends solely on the accusation packet.
+The source side for several Item 15 rows therefore no longer depends solely on the accusation packet.
 
-Publisher sample:
-- https://g.christianbook.com/ns/pdf/sample/511974.pdf
+## 2. Original FBC media is now acquired and machine-confirmed
 
-The sample identifies David Jackman as author, Crossway as publisher, first printing 2014, ISBN 978-1-4335-1197-4, and places `Inside Enemy Territory (2:1–24)` at p. 33.
+Exact-head workflow run `34262005804` on Research head `82a0d5995469bf1af5df6f170100a3aae859ef1c` acquired four bounded windows covering the high-value Joshua 2 allegation timestamps.
 
-## 2. `enemy in front / river in full flood behind` — source-specific candidate
+Artifact:
 
-Jackman's publisher sample directly contains the distinctive compressed description of Israel's vulnerability: Jericho ahead and the Jordan in flood behind.
+- `g3-buck-media-item-15-82a0d5995469bf1af5df6f170100a3aae859ef1c`
+- artifact id `10071268587`
+- artifact digest `sha256:a0e579732a9251fde2d02563df994e9e6943177c738cb010674f9812fb0f706b`
+- acquisition result: `SEGMENTS_ACQUIRED_EPHEMERALLY`
+- requested/acquired segments: `4/4`
+- `audio_binary_retained=false`
+- `machine_transcript_only=true`
+- `item_verified=false`
 
-The dossier attributes a closely matching Buck formulation to approximately 5:18.
+The machine transcript independently confirms the Buck side of several dossier rows.
 
-This is more probative than merely saying Israel faced Jericho after crossing the Jordan because the paired-front/back construction and wording are literary compression rather than the bare biblical text.
+## 3. `Jericho in front / river in full flood behind` — materially strong candidate
 
-**Working grade:** `U → likely B` if original Buck audio confirms the dossier transcript and no attribution occurs.
+The Jackman sample contains the distinctive compressed front/back construction. The original Buck media independently contains closely matching imagery: Jericho's force ahead and the river in full flood behind.
 
-## 3. `inept spies / naive king's men / wild goose chase` — mixed specificity
+This is more probative than the generic fact that Israel faced Jericho after crossing the Jordan.
 
-The publisher sample directly contains Jackman's sequence:
+**Working grade:** `likely B candidate`, pending human listening and attribution context.
 
-- spies characterized as inept;
-- the king's men characterized as naive;
-- the pursuit described with the idiom `wild goose chase`.
+## 4. spies / king's men / `wild goose chase` bundle — cumulative, not idiom-only
 
-The dossier attributes Buck a related sequence at roughly 7:20 and 10:29.
+The Jackman sample contains the ordered sequence of poor spy performance, naive king's men and a `wild goose chase` description. Buck's original bounded media confirms the same narrative bundle/order family.
 
-`wild goose chase` by itself is an ordinary English idiom and cannot serve as a strong fingerprint. The evidentiary weight comes from the **bundle and order** of judgments attached to the same narrative episode.
+`wild goose chase` alone is an ordinary idiom and remains low-specificity; evidentiary weight comes from the bundle and placement.
 
-**Working grade:** idiom alone `C`; bundled sequence `U → possible B`.
+**Working grade:** idiom alone `C`; bundle `possible B`.
 
-## 4. `neutrality is impossible` — not unique enough standing alone
+## 5. `Neutrality is not an option` remains weak standing alone
 
-Jackman's publisher sample explicitly develops two reactions to God's acts—submission or resistance—and concludes that neutrality is impossible in the face of God's purposes.
+Buck's original media confirms the sentence in the context of two responses to God's righteous wrath: continued rebellion or submission.
 
-The dossier gives Buck the shorter `Neutrality is not an option` at approximately 20:39.
-
-The concept and even the broad phrase family are common in Christian polemical/theological writing. Therefore this is not a high-value plagiarism marker standing alone.
-
-It may support dependence if it occurs within a larger Jackman-specific sequence.
+Jackman develops a similar two-response framework. But the neutrality phrase family is common Christian polemical language, so this row should not be treated as a unique fingerprint by itself.
 
 **Working grade:** `C → possible cumulative B`.
 
-## 5. Rahab mercy / living-God material — mostly text-driven unless wording accumulates
+## 6. Rahab mercy / living-God material remains mostly text-driven
 
-The dossier also compares:
+Buck's original media confirms statements that no one is beyond God's mercy/salvation and develops Rahab's faith in the true/living God. These are deeply rooted in Joshua 2 and ordinary Christian application.
 
-- Rahab as evidence no one is beyond divine mercy;
-- alignment by faith with the true and living God;
-- the cost of breaking with her background.
+They may contribute cumulatively if exact wording/order is sustained, but the ideas themselves remain low-specificity.
 
-These ideas are deeply rooted in Joshua 2 and ordinary Christian application. They should not be scored as strong literary fingerprints merely because both expositions make them.
+**Working grade:** generally `C` at concept level.
 
-Exact sustained wording may still show dependence; the ideas themselves are low-specificity.
+## 7. `constant offense against God` — strong verbal candidate now confirmed on both sides
 
-**Working grade:** generally `C`, subject to clause-level audio comparison.
+The Jackman sample contains the unusual phrase family describing Rahab's former life as a constant offense against God. Buck's original bounded media independently contains the close formulation that her life had been a constant offense against the Holy God.
 
-## 6. `constant offense against God` — stronger phrase candidate
+This is materially more source-specific than a generic statement that prostitution is sinful.
 
-The publisher sample directly contains the unusual formulation describing Rahab's former way of life as a `constant offense against God`.
+**Working grade:** `likely B candidate`, pending human audio and attribution.
 
-The dossier attributes Buck a close formulation around 33:09.
+## 8. Current closure matrix
 
-This is more source-specific than generic statements that prostitution is sinful. If Buck audio confirms the distinctive phrase without attribution, it is a meaningful verbal-dependence candidate.
+- **SERMON_IDENTITY:** `VERIFIED_PRIMARY`.
+- **ORIGINAL_MEDIA_ACCESS:** `VERIFIED_PRIMARY`; four bounded FBC windows acquired.
+- **MACHINE_TRANSCRIPT:** confirms multiple dossier rows; diagnostic only.
+- **SOURCE_OBJECT:** strong/primary-anchored for the relevant Joshua 2 sample wording.
+- **HUMAN_AUDIO:** `HOLD`.
+- **DEPENDENCE_ANALYSIS:** mixed; at least two materially source-specific candidates plus cumulative and text-driven rows.
+- **ATTRIBUTION_CONTEXT:** `HOLD`.
 
-**Working grade:** `U → likely B`.
+## Current verdict
 
-## 7. What is now primary-closed and what is not
+Item 15 is now one of the strongest late-item mixed cases because both source-side wording and Buck-side original media are independently anchored for several rows. It is still not a uniform block of equally strong parallels and still cannot be declared `ITEM_VERIFIED` without human audio/attribution review.
 
-### Closed strongly
-
-- identity of the Jackman edition represented by the sample;
-- authorship/publisher/year/ISBN;
-- actual source wording for multiple Joshua 2 allegations;
-- fact that the accusation packet makes the listed comparisons and timestamps.
-
-### Still open
-
-- original Buck audio at every cited timestamp;
-- human transcript of Buck wording;
-- attribution context in the sermon;
-- whether additional upstream sources account for any distinctive Jackman wording;
-- exact severity of each parallel after the audio gate closes.
-
-## Current item verdict
-
-Item 15 is **not** a uniform block of equally strong parallels. It contains at least two materially source-specific Jackman candidates, several cumulative/contextual candidates and several text-driven/common theological observations.
-
-Because the Jackman source side is now partially verified from the publisher sample, the remaining critical gate is Buck's original audio and attribution context.
-
-`SERMON_IDENTITY_VERIFIED / JACKMAN_JOSHUA2_SOURCE_OBJECT_PRIMARY-ANCHORED / MULTIPLE POTENTIAL-B CANDIDATES / ORIGINAL_AUDIO_HOLD`.
+`JACKMAN SOURCE SIDE PRIMARY-ANCHORED / ORIGINAL_MEDIA MACHINE-CONFIRMED / MULTIPLE LIKELY-B CANDIDATES + LOW-SPECIFICITY ROWS / HUMAN_AUDIO + ATTRIBUTION HOLD`.

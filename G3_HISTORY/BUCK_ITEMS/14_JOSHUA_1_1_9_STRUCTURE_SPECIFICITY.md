@@ -4,69 +4,73 @@
 **Dossier item:** sermon 14 of 17  
 **Buck sermon:** Tom Buck, `Joshua 1:1–9`, 2026-01-18  
 **Claimed comparison source:** David Jackman, *Joshua: People of God's Purpose*, pp. 15–44  
-**Current verdict:** `STRUCTURAL_SIMILARITY_LOW_SPECIFICITY_UNLESS_EXTENDED_WORDING_CONFIRMS`
+**Current verdict:** `SERMON_IDENTITY_VERIFIED / ORIGINAL_MEDIA_MACHINE_CONFIRMED / STRUCTURAL_SIMILARITY REMAINS LOW-SPECIFICITY / HUMAN_AUDIO + EXACT_SOURCE + ATTRIBUTION HOLD`
 
-## Core allegation
+## 1. Core allegation
 
 The dossier highlights a `KNOW / OBEY / MEDITATE` framework and structural/verbal correspondences between Buck's Joshua 1 sermon and Jackman's exposition.
 
-This requires special caution because Joshua 1:7–8 itself tightly joins:
+This requires special caution because Joshua 1:7–8 itself tightly joins God's written word, meditation, careful obedience and successful faithful action.
 
-- God's law/word;
-- knowing/keeping it before the speaker;
-- meditating on it day and night;
-- carefully obeying/doing what is written;
-- prosperity/success/wisdom flowing from that obedience.
+## 2. Original FBC media is now acquired
 
-A sermon outline that contains `know`, `meditate` and `obey` can therefore arise naturally from the biblical text without literary dependence on Jackman.
+Exact-head workflow run `34262005804` on Research head `82a0d5995469bf1af5df6f170100a3aae859ef1c` acquired two bounded windows around the dossier's Joshua 1 timestamps.
 
-## Independent pre-Buck parallels
+Artifact:
 
-A 2014 sermon outline on Joshua 1:6–8, years before Buck's 2026 sermon, separately organizes the passage around:
+- `g3-buck-media-item-14-82a0d5995469bf1af5df6f170100a3aae859ef1c`
+- artifact id `10071183292`
+- artifact digest `sha256:06bfa49f0a42745bac44a0aebe98a6533d10fe24bf9336d70bfeec1868c62df6`
+- acquisition result: `SEGMENTS_ACQUIRED_EPHEMERALLY`
+- requested/acquired segments: `2/2`
+- `audio_binary_retained=false`
+- `machine_transcript_only=true`
+- `item_verified=false`
 
-- obeying God's Word;
-- expressing/speaking God's Word;
-- knowing God's Word;
-- meditating on it in order to obey.
+The machine transcript confirms that Buck develops:
 
-A 2015 Bible-study treatment of Joshua 1:8 likewise emphasizes that study/knowledge is incomplete until the learned Word is applied/obeyed and explicitly connects meditation with obedience.
+- dependence on the written word of God;
+- decisions controlled by God's word;
+- disciplined study and careful obedience;
+- `know and do` language;
+- meditation day and night so that one may carefully do what is written.
 
-Other Joshua 1 commentary/sermon material repeatedly develops `meditate → know/understand → obey/do` because that causal sequence is explicit in verse 8.
+## 3. Acquisition does not materially strengthen the plagiarism allegation
 
-## Evidentiary consequence
+These confirmed concepts and their basic causal relation remain substantially text-driven from Joshua 1:7–8. Independent pre-Buck Joshua 1 sermons and Bible studies likewise organize the passage around knowing/studying, meditating on, speaking and obeying God's word.
 
-The following inference is blocked:
+No new long, non-obvious Jackman-specific verbal fingerprint emerged from the bounded machine transcripts sufficient to overcome that low-specificity baseline.
 
-> `Buck has KNOW / OBEY / MEDITATE; Jackman has the same concepts; therefore the outline was copied from Jackman.`
+Therefore the acquisition is an important **negative control**: obtaining original media does not automatically promote an accusation.
 
-At the concept level, these are text-driven categories.
-
-### Concept/structure alone
+### Concept/structure level
 
 **Current classification:** `C/S LOW-SPECIFICITY`.
 
-### Potential Jackman-specific dependence
+### Potential source-specific dependence
 
-The allegation can become materially stronger only if a controlled comparison shows one or more of:
+A stronger grade would still require one or more of:
 
-- an unusual **ordering** not naturally dictated by the text;
-- identical or near-identical heading wording;
-- a distinctive analogy or illustration attached to the same heading;
-- sustained sentence-level verbal correspondence;
-- the same non-obvious transition sequence;
-- a bundle of source-specific details that other independent Joshua 1 sermons do not share.
+- unusual ordering not naturally dictated by Joshua 1;
+- distinctive heading wording;
+- sustained sentence-level correspondence;
+- a source-specific analogy/illustration;
+- non-obvious transitions or bundled details reproduced from Jackman.
 
-Those elements require exact Buck audio and exact Jackman pages.
+Those require exact source pages and human listening.
 
-## Current gaps
+## 4. Current closure matrix
 
-1. Original FBC sermon media for 2026-01-18 has not yet been human-transcribed in this corpus.
-2. Exact Jackman pp. 15–44 have not yet been acquired as a controlled source object.
-3. The dossier's side-by-side claims must be decomposed into concept, heading, wording, illustration and sequence rather than scored globally.
-4. Attribution context in Buck's sermon remains unverified.
+- **SERMON_IDENTITY:** `VERIFIED_PRIMARY`.
+- **ORIGINAL_MEDIA_ACCESS:** `VERIFIED_PRIMARY`; two bounded FBC windows acquired.
+- **MACHINE_TRANSCRIPT:** confirms the text-driven KNOW/OBEY/MEDITATE material.
+- **HUMAN_AUDIO:** `HOLD`.
+- **SOURCE_OBJECT:** exact controlled Jackman pages for all alleged rows remain incomplete.
+- **DEPENDENCE_ANALYSIS:** concept/structure remains low-specificity.
+- **ATTRIBUTION_CONTEXT:** `HOLD`.
 
 ## Current verdict
 
-`KNOW / OBEY / MEDITATE` by itself is **not a strong plagiarism marker** because Joshua 1:7–8 and independent pre-Buck exposition naturally generate the same relationship.
+Item 14 is now a stronger methodological control than before: original-media acquisition confirms the sermon content but does **not** justify promoting the bare KNOW/OBEY/MEDITATE overlap to a strong literary-dependence claim.
 
-Item 14 therefore remains open for **specific verbal/structural dependence**, but the bare three-part conceptual overlap is downgraded to `C/S LOW-SPECIFICITY` pending controlled source/audio comparison.
+`ORIGINAL_MEDIA_MACHINE_CONFIRMED / STRUCTURAL-CONCEPT OVERLAP STILL LOW-SPECIFICITY / HUMAN_AUDIO + EXACT_JACKMAN + ATTRIBUTION HOLD`.
