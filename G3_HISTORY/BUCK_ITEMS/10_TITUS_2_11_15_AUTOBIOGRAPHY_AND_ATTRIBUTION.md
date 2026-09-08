@@ -4,7 +4,7 @@
 **Dossier item:** sermon 10 of 17  
 **Buck sermon:** Tom Buck, `Titus 2:11–15`, 2023-08-06  
 **Claimed comparator:** R. Kent Hughes & Bryan Chapell, *1 & 2 Timothy and Titus: To Guard the Deposit*, ch. 38, pp. 337–351  
-**Current verdict:** `SERMON_IDENTITY_VERIFIED / SOURCE_LINEAGE_STRONG / BIOGRAPHICAL-FABRICATION CLAIM BLOCKED / BUCK_AUDIO_HOLD`
+**Current verdict:** `SERMON_IDENTITY_VERIFIED / CHAPELL_SOURCE_OBJECT_VERIFIED / PRECONTROVERSY_BUCK_BIOGRAPHY_PRIMARY_ANCHORED / BIOGRAPHICAL-FABRICATION CLAIM BLOCKED / BUCK_AUDIO_HOLD`
 
 ## 1. Why this item requires four separate questions
 
@@ -28,17 +28,21 @@ A visual inspection of the relevant dossier page confirms that the packet presen
 
 This establishes **what the accusers alleged and what transcript they supplied**. It does not independently verify Buck's audio.
 
-## 3. Source lineage predates Buck by decades
+## 3. Chapell source object predates Buck by decades
 
 Bryan Chapell published `“Intolerant” Grace: Titus 2:11–15` in *Reformation and Revival* 7.3 (Summer 1998), pp. 67–93.
 
-Current public locators include:
-- https://www.galaxie.com/article/rar07-3-06
+A full article PDF scan is now directly identified:
 - https://biblicalstudies.org.uk/pdf/ref-rev/07-3/7-3_chapell.pdf
 
-The article predates the 2000 Hughes/Chapell commentary and the 2023 Buck sermon. Therefore the autobiographical/source-side formulation belongs to a documented Chapell publication tradition years before Buck.
+Independent journal metadata is also available at:
+- https://www.galaxie.com/article/rar07-3-06
 
-**State:** source lineage `CORROBORATED` and chronologically strong; exact controlled page comparison to the 2000 book still preferred for the final item matrix.
+The 1998 article predates the 2000 Hughes/Chapell commentary and the 2023 Buck sermon. Therefore the autobiographical/source-side formulation belongs to a documented Chapell publication tradition years before Buck.
+
+**State:** `SOURCE_OBJECT_VERIFIED / SOURCE_LINEAGE_STRONG` for the 1998 article. Exact controlled page comparison to the 2000 Hughes/Chapell book remains useful for proving which immediate edition the dossier/Buck wording most closely follows, but the pre-Buck Chapell source tradition is no longer dependent on a later quotation site.
+
+Publication/quotation rights for the hosted scan remain a separate issue from textual provenance.
 
 ## 4. Other wording rows also require grading
 
@@ -55,14 +59,31 @@ Some of these appear as sustained literary sequences and may be meaningful depen
 
 No flat `all rows = A` classification is permitted.
 
-## 5. Jennifer Buck counterevidence blocks the fabrication claim
+## 5. Pre-controversy Jennifer Buck primary account blocks the fabricated-biography claim
 
-A secondary report by Janet Mefferd reproduces Jennifer Buck's response that the accusation made it sound as though Tom had adopted someone else's life experience, whereas Jennifer says analogous words/circumstances described Tom and Jennifer roughly 35 years earlier.
+A much stronger biographical control now exists independently of the 2026 rebuttal cycle.
 
-Current locator:
-- https://www.janetmefferd.com/p/how-a-qualified-pastor-can-ruin-you
+On **2022-04-07**, Jennifer Buck published `A Story of Restorative Grace` on G3 Ministries under her own byline:
 
-Independent 2022 reporting also documents that Tom and Jennifer had a long marriage history and publicly discussed serious early-life/marital history years before the 2026 plagiarism controversy.
+- exact URL: `https://g3min.org/a-story-of-restorative-grace/`;
+- author: Jennifer Buck;
+- publication date: 2022-04-07.
+
+The current direct G3 root/article transport is unstable and the exact article URL returned 503 on a Sep. 8, 2026 direct fetch, but the indexed G3 page preserves the authored article text and metadata.
+
+Jennifer's 2022 account states, among other things, that:
+
+- she and Tom were approaching 35 years of marriage;
+- their early years were very difficult;
+- Tom struggled with anger and controlling behavior;
+- his words could be abusive and destructive;
+- the situation worsened during seminary;
+- an incident involving a cold Coke can and a flash of anger became a decisive point at which Tom recognized he needed help;
+- an older couple then counseled them and the marriage was gradually restored.
+
+This article predates the 2023 sermon and the 2026 plagiarism dispute. It therefore constitutes a **primary pre-controversy biographical anchor** that analogous serious early-marriage circumstances were publicly claimed by Jennifer years before the dossier.
+
+A later secondary report by Janet Mefferd also reproduces Jennifer Buck's 2026 response arguing that the dossier misleadingly made it sound as though Tom had appropriated someone else's life experience. That later response is useful but no longer carries the entire biographical counterevidence burden.
 
 This does **not** erase a wording-attribution problem. It changes the proposition that can responsibly be made.
 
@@ -70,7 +91,7 @@ This does **not** erase a wording-attribution problem. It changes the propositio
 
 > Buck fabricated a marriage experience that never happened to him and falsely presented Chapell's life as his own.
 
-Current evidence does not establish that.
+The pre-controversy Jennifer Buck article makes that formulation unsupported.
 
 ### Potentially supportable formulation after audio closure
 
@@ -95,14 +116,15 @@ Until then the Buck side remains `U` for quote-level adjudication.
 | Question | Current state |
 |---|---|
 | Sermon identity/date | `VERIFIED_PRIMARY` |
-| Chapell pre-Buck source lineage | `CORROBORATED / STRONG` |
+| Chapell 1998 source object | `FULL SOURCE OBJECT LOCATED / SOURCE LINEAGE STRONG` |
+| Pre-controversy Buck marital-history anchor | `VERIFIED_PRIMARY AUTHORIAL ACCOUNT (2022) / LIVE URL CURRENTLY 503` |
 | Exact Buck wording at ~34:09 | `HOLD` |
 | Exact attribution context | `HOLD` |
-| Claim that analogous marital circumstances were false | `REFUTED_AS_UNSUPPORTED / COUNTEREVIDENCE PRESENT` |
+| Claim that analogous marital circumstances were false | `REFUTED_AS_UNSUPPORTED / PRIMARY PRECONTROVERSY COUNTEREVIDENCE` |
 | Claim that wording dependence may still be real | `CORROBORATED AS A LIVE QUESTION`, final grade pending audio |
 
 ## Current item verdict
 
-Item 10 remains one of the strongest **potential textual-attribution** examples in the packet because the source-side autobiographical wording clearly predates Buck and the dossier alleges a sustained first-person reproduction. But the sensational claim that Buck simply invented a marriage history is not supported by the current evidence and must not be published as fact.
+Item 10 remains one of the strongest **potential textual-attribution** examples in the packet because the source-side autobiographical wording clearly predates Buck and the dossier alleges a sustained first-person reproduction. But the sensational claim that Buck simply invented a marriage history is contradicted by a first-person Jennifer Buck account published on G3 in 2022, before both the sermon and the plagiarism controversy, and must not be published as fact.
 
-`SERMON_IDENTITY_VERIFIED / CHAPELL_SOURCE_LINEAGE_STRONG / FABRICATED-BIOGRAPHY CLAIM BLOCKED / ORIGINAL_AUDIO_AND_ATTRIBUTION_CONTEXT_HOLD`.
+`SERMON_IDENTITY_VERIFIED / CHAPELL_SOURCE_OBJECT_VERIFIED / PRECONTROVERSY_BIOGRAPHY_PRIMARY_ANCHORED / FABRICATED-BIOGRAPHY CLAIM BLOCKED / ORIGINAL_AUDIO_AND_ATTRIBUTION_CONTEXT_HOLD`.
