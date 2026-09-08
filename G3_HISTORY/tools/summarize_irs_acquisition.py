@@ -94,6 +94,29 @@ def emit_asset_trace(label: str, leaves: list[dict[str, Any]]) -> None:
         emit(f"{prefix}_asset_leaf", {"ordinal": idx, **leaf})
 
 
+def relevant_program_service_leaf(leaf: dict[str, Any]) -> bool:
+    """Select Part III mission/program-service narrative fields conservatively."""
+    hay = (leaf.get("path", "") + " " + leaf.get("tag", "")).casefold()
+    terms = (
+        "programserviceaccomplishment",
+        "programserviceaccom",
+        "programsrvcaccom",
+        "missiondesc",
+        "activityormission",
+        "significantnewprogram",
+        "significantchange",
+    )
+    return any(term in hay for term in terms)
+
+
+def emit_program_service_trace(label: str, leaves: list[dict[str, Any]]) -> None:
+    selected = [leaf for leaf in leaves if relevant_program_service_leaf(leaf)]
+    prefix = label.casefold()
+    emit(f"{prefix}_program_service_leaf_count", len(selected))
+    for idx, leaf in enumerate(selected, 1):
+        emit(f"{prefix}_program_service_leaf", {"ordinal": idx, **leaf})
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--output", default="g3-irs-acquisition-output")
@@ -152,6 +175,8 @@ def main() -> int:
             for idx, leaf in enumerate(context, 1):
                 emit("governance_context_leaf", {"ordinal": idx, **leaf})
             emit_asset_trace(label, leaves)
+            if label == "FY2025":
+                emit_program_service_trace(label, leaves)
 
     elif label == "FY2022_LATER":
         form = root / "IRS990_LEAVES.json"
