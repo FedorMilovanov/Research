@@ -1,160 +1,155 @@
 # G3 HISTORY — IRS raw XML acquisition gate
 
-**Status:** P0 / ACQUISITION_GATE / PUBLICATION_HOLD  
+**Status:** PRIMARY BYTES ACQUIRED / P0 FINANCIAL GATES CLOSED / PUBLICATION_HOLD  
 **Last updated:** 2026-09-08  
-**Authority goal:** acquire and checksum the exact IRS e-file XML objects needed to close FY2023 Part IX/Schedule O and FY2024/FY2025 Schedule L without relying on derivative web parsers.
+**Authority:** official IRS TEOS bulk XML, exact-head acquisition workflow.
 
 ## Why this file exists
 
-The research no longer has an identification problem. The exact IRS/ProPublica object IDs and schedule families are known. The remaining problem is transport: current web PDF renderers and signed-S3 schedule renderers return 403 or are blocked after redirect, while the local container cannot resolve/download the public IRS/ProPublica hosts.
+This file began as a transport-blocker runbook because ProPublica/CauseIQ renderers and signed-S3 schedule routes were inaccessible from the research web/container boundary. That blocker has now been bypassed correctly through the official IRS TEOS bulk XML archives.
 
-This file turns that blocker into a deterministic acquisition task rather than a recurring search exercise.
+The old state `RAW_OBJECT_ACQUISITION_HOLD` is **superseded** for FY2022/FY2023 Part IX and FY2024/FY2025 Schedule L.
 
-## Target returns
+## Exact acquired returns
 
-| Fiscal year | Filed | EIN | Exact e-file object ID | Required objects | Current status |
-|---|---|---|---|---|---|
-| FY2023 | 2024-05-21 | `842403597` | `202411429349300611` | `IRS990` Part IX; `IRS990ScheduleO` if present; Part IV schedule manifest | OBJECT_ID_VERIFIED / RAW_XML_NOT_ACQUIRED |
-| FY2024 | 2025-05-15 | `842403597` | `202541359349304489` | `IRS990`; `IRS990ScheduleL`; `IRS990ScheduleO`; Schedule J if relevant to compensation-only questions | OBJECT_ID_VERIFIED / SCHEDULE_L_ROUTE_VERIFIED / RAW_XML_NOT_ACQUIRED |
-| FY2025 | 2026-05-13 | `842403597` | `202641339349303874` | `IRS990`; `IRS990ScheduleL`; `IRS990ScheduleO` | OBJECT_ID_VERIFIED / SCHEDULE_L_ROUTE_VERIFIED / RAW_XML_NOT_ACQUIRED |
+| Fiscal year | IRS object / target | Exact-head acquisition result | Primary use | Status |
+|---|---|---|---|---|
+| FY2022 amended | target `202340569349300209`; matched IRS member `202322939349300637_public.xml` | raw XML SHA-256 `678b391e948adb6090107435369e175cf2694c69705e107f13be6befe361bc03` | Part IX comparator; Schedules D/M/O | **ACQUIRED** |
+| FY2023 | `202411429349300611` | raw XML SHA-256 `c8eb0baa2265eadef2b6798c68868f91f8fde6ca9fbffe40e138877df92ce5c0` | Part IX, Schedule O, balance sheet | **ACQUIRED** |
+| FY2024 | `202541359349304489` | raw XML SHA-256 `c14f511cf66051b916748440594586b4db1ecdb0d07ab14ef05e01e92524aca3` | Schedule L, Part VII/governance, Schedule O | **ACQUIRED** |
+| FY2025 | `202641339349303874` | raw XML SHA-256 `48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2` | Schedule L, Part VII/governance, Schedule O | **ACQUIRED** |
 
-## Official IRS acquisition authority
+The decisive exact-head workflow is `G3 IRS raw XML acquisition` run **`34208135511`** on Research head **`8a5fedc6a60965d27c472a2a6643fb4e9b1dfe08`**. All matrix jobs (`FY2022_LATER`, `FY2024`, `FY2025`) completed successfully and checked out the exact PR head rather than the synthetic PR merge commit.
 
-IRS states that its Form 990 series download page provides the most recent 990-series filings in **XML**, organized by year/month. Current official public families include:
+Actions artifacts remain **ephemeral research custody**, not publication authorization. The durable corpus therefore preserves object IDs, hashes, component hashes, run/head identity and derived factual rows while raw-byte storage remains governed separately by repository custody policy.
 
-### 2024
+## Q001 — FY2024 / FY2025 Schedule L closure
 
-Index:
-`https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv`
+Both raw filings contain one `IRS990ScheduleL` `BusTrInvolveInterestedPrsnGrp` object.
 
-Monthly archives:
-`2024_TEOS_XML_01A.zip` through `2024_TEOS_XML_12A.zip`.
+| Filing | Interested person | Relationship as filed | Amount | Transaction | Revenue sharing |
+|---|---|---|---:|---|---|
+| FY2024 | `KARIS L BUICE` | `Daughter of Board Member` | **$30,409** | `SALARY` | `false` |
+| FY2025 | `KARIS L BUICE` | `Daughter of Board Member` | **$31,880** | `SALARY` | `false` |
 
-### 2025
+The same raw Form 990 context reports in both years:
 
-Index:
-`https://apps.irs.gov/pub/epostcard/990/xml/2025/index_2025.csv`
+- `EngagedInExcessBenefitTransInd = false`;
+- `BusinessRlnWithFamMemInd = true`;
+- conflict-of-interest policy = true;
+- annual disclosure = true;
+- regular monitoring/enforcement = true;
+- compensation-review process indicators = true.
 
-Monthly archives include `2025_TEOS_XML_01A.zip` through `12A.zip`, with additional `11B`, `11C`, and `11D` shards.
+Schedule O says board members discuss potential conflicts and that independent board members determine officer/key-employee salaries according to market rates and standards.
 
-### 2026
+### Evidence classification
 
-Index:
-`https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv`
+- `DISCLOSURE_EXISTS` — **VERIFIED_PRIMARY**.
+- `TRANSACTION_FACTS_VERIFIED` — **VERIFIED_PRIMARY**.
+- `CONFLICT_POLICY_CONTEXT_VERIFIED` — **VERIFIED_PRIMARY as self-reported governance procedure**.
+- `MISCONDUCT` — **NOT ESTABLISHED**.
 
-Current archives include `2026_TEOS_XML_01A.zip`, `02A`, `03A`, `04A`, `05A`, `05B`, `06A`, and `07A`.
+Do **not** infer the identity of the parent from surname alone. The filing says only `Daughter of Board Member`.
 
-Do **not** guess the target ZIP solely from filing month. Read the official index and use the row/object mapping.
+## Q002 — FY2022 → FY2023 Part IX closure
 
-## Index selection algorithm
+Both raw returns classify all functional expenses as program services and report zero management/general and zero fundraising.
 
-For each target filing:
+| Part IX category | FY2022 | FY2023 | Delta |
+|---|---:|---:|---:|
+| Conferences / meetings | $436,274 | $1,253,557 | **+$817,283** |
+| Advertising | $61,063 | $307,574 | **+$246,511** |
+| Other salaries / wages | $289,120 | $292,784 | +$3,664 |
+| Accounting | $5,400 | $8,995 | +$3,595 |
+| Office | $52,793 | $57,252 | +$4,459 |
+| Occupancy | $109,578 | $6,627 | **−$102,951** |
+| Travel | $12,047 | $25,636 | +$13,589 |
+| Depreciation | $11,177 | $15,138 | +$3,961 |
+| Workshop / honorarium family | $13,500 | $23,988 | +$10,488 |
+| Donor expenses | $11,875 | $10,000 | −$1,875 |
+| Information technology | $0 | $28,707 | +$28,707 |
+| Payroll taxes | $0 | $41,728 | +$41,728 |
+| Dues / subscriptions | $7,359 | $0 | −$7,359 |
+| **Total** | **$1,010,186** | **$2,071,986** | **+$1,061,800** |
 
-1. Acquire the official annual `index_YYYY.csv`.
-2. Filter for EIN `842403597`.
-3. Match the exact `Object ID` already known from the table above.
-4. Preserve the complete matching index row, including return/form type, tax period, submission date, taxpayer/organization name, DLN and object ID fields exposed by the current IRS index schema.
-5. Use the index mapping / object identity to locate the corresponding XML in the correct annual/monthly archive.
-6. Do not substitute another filing for the same tax period unless amendment/resubmission status is explicitly reconciled.
+The delta reconciles exactly. Conference/meeting and advertising growth are the dominant filed category changes. Payroll and administrative-overhead narratives do not explain the reversal at the Part IX level.
 
-## Required custody receipt
+This remains a self-reported tax-return classification, not an independent audit of whether every expenditure was prudent or arm’s-length.
 
-For each acquired archive and extracted XML object record:
+## FY2022 donated-real-estate provenance
 
-- source URL;
-- acquisition UTC timestamp;
-- HTTP status;
-- content length;
-- archive filename;
-- archive SHA-256;
-- member filename/path containing the target object;
-- extracted XML byte length;
-- extracted XML SHA-256;
-- exact object ID;
-- EIN;
-- tax period;
-- parser/tool version used;
-- whether the object is original raw XML or a transformed rendering.
+The amended FY2022 raw return also closes a previously unclear balance-sheet origin:
 
-A successful HTML render, screenshot, parser page or API summary is **not** a raw-XML custody receipt.
+### Schedule M
 
-## FY2024 / FY2025 Schedule L parse gate
+- commercial real estate noncash contribution;
+- contribution count: 1;
+- Form 990 amount: **$590,000**;
+- valuation method: `BROKER ESTIMATION`.
 
-After raw XML acquisition, inspect the actual `IRS990ScheduleL` object and record, without editorial inference:
+### Schedule D
 
-1. which Schedule L part(s) are present;
-2. each interested-person/business name exactly as filed;
-3. relationship / reason for interested-person status where the schema supplies it;
-4. transaction type/category;
-5. amount, balance or assistance value fields;
-6. whether the transaction was corrected;
-7. descriptive fields / Schedule O cross-references if any;
-8. whether any named person is also a Part VII officer/director/key employee in the same filing;
-9. whether the same transaction/person recurs in the adjacent filing year.
+- land: **$354,000**;
+- buildings: **$236,000**;
+- equipment net book value: **$31,915**;
+- total net land/building/equipment: **$621,915**.
 
-Then classify separately:
+The $354,000 land + $236,000 buildings sum exactly to the $590,000 commercial-real-estate contribution. Schedule O says the FY2022 return was amended because of a missing fair-market value for an asset donated before year end.
 
-- `DISCLOSURE_EXISTS`;
-- `TRANSACTION_FACTS_VERIFIED`;
-- `CONFLICT_POLICY_CONTEXT_VERIFIED`;
-- `MISCONDUCT` — **never inferred automatically** from Schedule L presence.
+This creates a separate follow-up: by FY2023 land/building/equipment had fallen sharply while a $416,227 notes/loans receivable balance appeared. Counterparty, disposition, consideration and note terms remain unresolved; no related-party or wrongdoing inference is permitted from the balance-sheet movement alone.
 
-## FY2023 Part IX closure gate
+## FY2024 governance context from raw filing
 
-The FY2023 question is not merely `program ratio`. Parse the full functional-expense rows:
+The raw FY2024 return reports:
 
-- total expenses (col A);
-- program services (col B);
-- management/general (col C);
-- fundraising (col D);
-- compensation/officer lines;
-- salaries/wages;
-- payroll taxes/employee benefits if reported;
-- professional fees;
-- occupancy;
-- travel;
-- conferences/conventions/meetings if present;
-- printing/publications;
-- information technology;
-- other expenses and Schedule O descriptions;
-- any material row that explains the ~$1.062m FY2022→FY2023 expense increase.
+- 7 voting governing-body members;
+- 6 independent;
+- Part VII includes Scott Aniol, Virgil Walker, Joshua Buice, Tom Buck, Chip Thornton, Buck Braswell, Adam Burrell, Matt Broome and Jonathan Frazier;
+- Part VII reportable-person count must not be equated mechanically with voting-board count.
 
-Create a direct FY2022-vs-FY2023 row delta table. Do not attribute the increase until the row delta is computed from source data.
+Reported compensation includes:
 
-## Known renderer dead ends — do not repeat as if they were new work
+- Scott Aniol: $137,941 reportable compensation + $19,833 other compensation;
+- Virgil Walker: $126,075 reportable compensation + $20,462 other compensation;
+- listed directors/officers in the remaining rows show $0 reportable compensation from G3 in those rows.
 
-### ProPublica
+## FY2025 governance context from raw filing
 
-- FY2024 PDF `display_990` object resolves but returns HTTP 403 in current browser transport.
-- exact FY2024/FY2025 `IRS990ScheduleL` e-file routes resolve to signed `pp-990-rendered` S3 URLs that the safety/web transport cannot fetch.
-- ProPublica organization/API summary is useful for cross-checks but is not the complete Schedule L body.
+The raw FY2025 return reports:
 
-### Cause IQ
+- 4 voting governing-body members;
+- all 4 independent;
+- Part VII includes transition/history rows for Scott Aniol, Buck Braswell, Matt Broome, Jonathan Frazier, Jon Norton, Joshua Buice, Tom Buck, Chip Thornton and Adam Burrell.
 
-Exact `View PDF` objects for FY2023/FY2024/FY2025 were identified; all returned HTTP 403 in the current web transport.
+Part VII therefore cannot be read as a single-date nine-person board snapshot. It contains persons who held reportable roles during the tax period.
 
-### Local container
+Notable filed titles include:
 
-Direct network retrieval of the relevant IRS/ProPublica hosts is unavailable in the current runtime. Do not treat DNS/network failure as source absence.
+- Scott Aniol — `PRESIDENT AS OF 05/2025`;
+- Joshua Buice — `PRESIDENT THROUGH 05/2025`;
+- Jonathan Frazier — `CHAIR`;
+- Jon Norton — `DIRECTOR`;
+- Buck Braswell — `DIRECTOR`;
+- Matt Broome — `SECRETARY`.
 
-## Current derivative cross-checks — useful but not closure authority
+G3’s event-specific July 2025 announcement remains the stronger source for the formal effective date of Aniol’s presidency (`2025-07-09`). Tax-return title shorthand must not silently rewrite that event date.
 
-- ProPublica summary: both FY2024 and FY2025 report conflict-of-interest transactions / Schedule L presence.
-- Philanthropy.org FY2024 parser: approximately 84% program / 7% management-general / 9% fundraising; one reported program-service account around $1.2m for four pastor workshops + two large conferences / 2,000+ attendees.
-- Cause IQ FY2025 parser: 18 new G3 Press books; catalogue >50; G3+ 500+ audiobooks; two local workshops; Church Network 210 churches; Pastor-Theologian Collective; conference-model transition.
+## Historical renderer dead ends — retained only to prevent repeated work
 
-These are cross-checks of the filing family, not independent witnesses.
+The following routes were useful for discovery but are no longer blockers:
 
-## Completion criteria
+- ProPublica PDF/full-filing Schedule L renderers returned 403 or signed-S3 redirects inaccessible to the research transport;
+- Cause IQ PDF routes returned 403;
+- the local container could not directly retrieve the same hosts.
 
-`Q001 Schedule L` may be marked closed only when raw filing content (or an exact faithful primary rendering with full rows) is acquired and the transaction rows are recorded with custody evidence.
+The official IRS TEOS bulk route solved the acquisition problem. Future agents should **not reopen Q001/Q002 merely because those renderers remain inaccessible**.
 
-`Q002 FY2023 Part IX` may be marked closed only when full row-level FY2023 expense data and the relevant Schedule O descriptions are acquired and compared against FY2022.
+## Current completion state
 
-Until then:
+- `Q001 Schedule L` — **CLOSED / VERIFIED_PRIMARY** for the filed rows and governance context; misconduct remains unproved.
+- `Q002 FY2023 Part IX` — **CLOSED / VERIFIED_PRIMARY** including exact FY2022 comparator delta.
+- donated-real-estate / FY2023 receivable disposition — **OPEN FOLLOW-UP**.
+- raw-byte artifact retention — **EPHEMERAL CUSTODY**, governed separately from factual closure and publication authority.
 
-- no interested-person name or amount from inference;
-- no `self-dealing`, `fraud`, `embezzlement`, `private enrichment`, or similar language;
-- no claim that the 2023 expense jump was administrative, personal, or alternatively fully explained by program activity.
-
-The correct status is **RAW_OBJECT_ACQUISITION_HOLD**.
+`PUBLICATION_HOLD` remains in force for the overall G3 corpus.
