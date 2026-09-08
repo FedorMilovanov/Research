@@ -1,6 +1,6 @@
 # FY2023 financial forensics — G3 Ministries
 
-**Status:** PRIMARY PART IX ACQUIRED / FY2022 CATEGORY-DELTA HOLD  
+**Status:** PRIMARY FY2022/FY2023 PART IX DELTA CLOSED / ASSET-MOVEMENT FOLLOW-UP OPEN  
 **Entity:** G3 Ministries for the Church, Inc. — EIN 84-2403597
 
 ## Why FY2023 matters
@@ -17,53 +17,61 @@ versus:
 - FY2023 expenses: **$2,071,986**
 - FY2023 result: **−$366,297**
 
-Revenue therefore remained almost flat while spending increased by approximately **$1.062m / 105%** year over year.
+Revenue remained almost flat while spending increased by exactly **$1,061,800**, or about **105%** year over year.
 
 ## Primary acquisition closure
 
-The exact FY2023 e-file has now been acquired from the official IRS TEOS XML distribution rather than inferred from a nonprofit aggregator.
+### FY2023
+
+The exact FY2023 e-file was acquired from the official IRS TEOS XML distribution rather than inferred from a nonprofit aggregator.
 
 - EIN: `842403597`
 - object ID: `202411429349300611`
-- official annual index: `https://apps.irs.gov/pub/epostcard/990/xml/2024/index_2024.csv`
-- IRS index batch: `2024_TEOS_XML_05a`
-- batch member: `2024_TEOS_XML_05A/202411429349300611_public.xml`
+- IRS batch: `2024_TEOS_XML_05A`
 - raw XML SHA-256: `c8eb0baa2265eadef2b6798c68868f91f8fde6ca9fbffe40e138877df92ce5c0`
-- raw XML bytes: `27,791`
-- source batch SHA-256: `8bf438490091c07a26105bfb9deedaeef062266990c14ad84ac7ea36199d54e8`
-- acquired components: `IRS990`, `IRS990ScheduleA`, `IRS990ScheduleD`, `IRS990ScheduleO`
-- **no `IRS990ScheduleL` component appears in this FY2023 object**
+- acquired components include `IRS990`, `IRS990ScheduleA`, `IRS990ScheduleD`, `IRS990ScheduleO`
+- **no `IRS990ScheduleL` component appears in FY2023**
 
-The Actions package remains `EPHEMERAL_ACTION_ARTIFACT`; acquisition does not by itself authorize publication of any raw object.
+### FY2022 amended comparator
 
-## Exact FY2023 Part IX
+The later FY2022 return was acquired from official IRS batch `2023_TEOS_XML_10A` in exact-head workflow run `34208135511`. The return identifies itself as amended (`AmendedReturnInd = X`) and reports the authoritative FY2022 totals used in the series: $1,735,978 revenue and $1,010,186 expenses.
 
-The filing reports **all $2,071,986 of functional expenses as program services**:
+- acquisition target object ID: `202340569349300209`
+- discovered IRS batch member name: `202322939349300637_public.xml`
+- raw XML SHA-256: `678b391e948adb6090107435369e175cf2694c69705e107f13be6befe361bc03`
 
-| Part IX category | Total | Program services | Share of total |
+**Provenance note:** the target object ID and the member basename differ. The acquisition matched the official-index target to an IRS batch member by exact EIN/tax period and financial identity. Preserve this mismatch in custody records rather than silently rewriting either identifier. The return content itself is explicitly amended and its totals match the FY2022 authoritative snapshot.
+
+The Actions packages remain `EPHEMERAL_ACTION_ARTIFACT`; acquisition does not by itself authorize publication of the raw objects.
+
+## Exact FY2022 → FY2023 Part IX reconstruction
+
+Both filings classify **100% of functional expenses as program services**, with management/general and fundraising reported as zero.
+
+| Part IX category | FY2022 | FY2023 | Delta |
 |---|---:|---:|---:|
-| Conferences / meetings | $1,253,557 | $1,253,557 | 60.5% |
-| Advertising | $307,574 | $307,574 | 14.8% |
-| Other salaries and wages | $292,784 | $292,784 | 14.1% |
-| Office expenses | $57,252 | $57,252 | 2.8% |
-| Payroll taxes | $41,728 | $41,728 | 2.0% |
-| Information technology | $28,707 | $28,707 | 1.4% |
-| Travel | $25,636 | $25,636 | 1.2% |
-| Workshops | $23,988 | $23,988 | 1.2% |
-| Depreciation / depletion | $15,138 | $15,138 | 0.7% |
-| Donor expenses | $10,000 | $10,000 | 0.5% |
-| Accounting | $8,995 | $8,995 | 0.4% |
-| Occupancy | $6,627 | $6,627 | 0.3% |
-| **Total** | **$2,071,986** | **$2,071,986** | **100.0%** |
+| Conferences / meetings | $436,274 | $1,253,557 | **+$817,283** |
+| Advertising | $61,063 | $307,574 | **+$246,511** |
+| Other salaries and wages | $289,120 | $292,784 | +$3,664 |
+| Accounting | $5,400 | $8,995 | +$3,595 |
+| Office expenses | $52,793 | $57,252 | +$4,459 |
+| Occupancy | $109,578 | $6,627 | **−$102,951** |
+| Travel | $12,047 | $25,636 | +$13,589 |
+| Depreciation / depletion | $11,177 | $15,138 | +$3,961 |
+| Workshop / honorarium family | $13,500 | $23,988 | +$10,488 |
+| Donor expenses | $11,875 | $10,000 | −$1,875 |
+| Information technology | $0 | $28,707 | +$28,707 |
+| Payroll taxes | $0 | $41,728 | +$41,728 |
+| Dues / subscriptions | $7,359 | $0 | −$7,359 |
+| **Total** | **$1,010,186** | **$2,071,986** | **+$1,061,800** |
 
-The same Part IX reports:
+The row deltas reconcile **exactly** to the total increase.
 
-- management and general: **$0**;
-- fundraising: **$0**.
+Conference/meeting expense rose by **$817,283**. Advertising rose by **$246,511**. Their combined increase was **$1,063,794**, slightly larger than the total net expense increase because other rows partially offset it, most notably occupancy at **−$102,951**.
 
-This is now a primary filing fact, not a derivative ratio inference.
+This closes the old question `what category drove the increase?` at the filed Part IX level.
 
-## What the filing itself says G3 did in FY2023
+## What the FY2023 filing says G3 did
 
 Part III describes the year as including:
 
@@ -75,104 +83,142 @@ Part III describes the year as including:
 - publication of twelve books and one music recording;
 - growth of the church network to 211 churches.
 
-This program narrative is important context for the Part IX composition. It proves reported activity; it does not prove every cost was prudent, arm's-length, or economically efficient.
+This program narrative is context for the expense pattern. It proves what the organization reported doing; it does not prove every cost was prudent, efficiently priced or arm’s-length.
 
-## Schedule O / amendment context
-
-The raw Schedule O says the return was amended because of a **missing fair-market value for an asset donated before year end**. It does not say the amendment was made to revise functional expenses.
-
-Schedule O also states that:
-
-- the Form 990 was provided to board members for review, discussion and approval;
-- board members discussed potential conflicts during board meetings;
-- independent board members determined officer/key-employee compensation according to market rates and standards;
-- the change in net assets included adding PayPal and Stripe accounts.
-
-These are statements made by the organization in its filing, not independent verification that the procedures were always followed perfectly.
-
-## Related-party / diversion boundary for FY2023
-
-The FY2023 filing does **not** contain Schedule L. Part IV also reports `false` for the principal related-party/excess-benefit indicators exposed in the XML, including:
-
-- `EngagedInExcessBenefitTransInd`;
-- `LoanOutstandingInd`;
-- `GrantToRelatedPersonInd`;
-- `BusinessRlnWithOrgMemInd`;
-- `BusinessRlnWithFamMemInd`;
-- `BusinessRlnWith35CtrlEntInd`;
-- `MaterialDiversionOrMisuseInd`.
-
-This does not prove that no questionable decision could have occurred. It does mean that a claim of a **reported FY2023 Schedule-L/interested-person transaction** would be false on the acquired filing.
-
-## What is now ruled out or materially narrowed
+## What the exact delta rules out or materially narrows
 
 ### `Payroll caused the 2023 collapse`
 
-**Unsupported as the primary explanation.**
+**Refuted as the principal Part IX driver.**
 
-Other salaries/wages were **$292,784**, and payroll taxes were **$41,728**. Together they are far below the roughly $1.062m year-over-year increase in total expenses.
+Other salaries/wages increased only **$3,664** year over year. Payroll taxes add a new **$41,728** line in FY2023. Those movements are far too small to explain the $1.062m increase.
 
-### `The missing million mainly went into management/fundraising overhead`
+### `Administrative/fundraising overhead caused most of the spike`
 
-**Contradicted by the filed Part IX classification.**
+**Contradicted by the filed functional classification.**
 
-The organization reported **$0 management/general and $0 fundraising** and classified all expenses as program services.
+Both FY2022 and FY2023 report:
 
-This classification is not a judgment that every expense was wise or correctly priced. But an article cannot accurately characterize the 2023 filing as showing a million-dollar administrative-overhead spike.
+- management and general: **$0**;
+- fundraising: **$0**;
+- program services: **100% of functional expenses**.
+
+This is self-reported accounting classification, not an external audit judgment. But an article cannot accurately describe the filings as showing a million-dollar administrative-overhead expansion.
+
+### `The 2023 increase was mainly unexplained`
+
+**No longer supportable at the Part IX category level.**
+
+The increase is mathematically reconciled. The dominant expansion is conferences/meetings and advertising.
+
+What remains unknown is not the category allocation but finer-grained questions such as individual vendors, contracts, event economics and whether costs were prudent or arm’s-length.
 
 ### `The 2023 filing itself reports a related-party transaction / Schedule L`
 
 **Refuted.**
 
-The acquired FY2023 XML has no Schedule L component and the relevant Part IV indicators are false.
+FY2023 contains no Schedule L, and the relevant Part IV related-party/excess-benefit indicators are false.
 
-## Working explanation hierarchy after primary Part IX acquisition
+FY2024/FY2025 Schedule L disclosures are later-year transactions and must not be back-projected into FY2023.
 
-### H1 — conference / event costs were the dominant FY2023 expense category
+## FY2022 donated real estate — a newly closed provenance layer
 
-**Status: VERIFIED AS COMPOSITION / YEAR-OVER-YEAR DELTA STILL OPEN.**
+The amended FY2022 raw return exposes an important balance-sheet event that was previously only visible indirectly.
 
-Conferences/meetings alone were **$1,253,557**, or **60.5% of all FY2023 expenses**. This is no longer a speculative hypothesis about the composition of FY2023 spending.
+### Schedule M
 
-What remains to prove is how much this category increased from FY2022. The raw FY2022 Part IX must be acquired before writing that the *increase itself* was mainly conference-driven.
+The filing reports one noncash contribution in the category **commercial real estate**:
 
-### H2 — broader ecosystem expansion contributed materially
+- contribution count: **1**;
+- value reported on Form 990: **$590,000**;
+- valuation method: **`BROKER ESTIMATION`**.
 
-**Status: STRONGLY PLAUSIBLE / causal allocation not fully separable.**
+### Schedule D
 
-The filing itself reports the G3+ launch, publishing, workshops, a tour and church-network expansion. Advertising, IT, workshops and other program rows are visible separately, but the return does not provide a project-level cost ledger tying every dollar to each initiative.
+The same return reports:
 
-### H3 — payroll / executive compensation caused most of the spike
+- land: **$354,000** book value;
+- buildings: **$236,000** book value;
+- equipment: $45,974 cost, $14,059 accumulated depreciation, $31,915 book value;
+- total net land/building/equipment: **$621,915**.
 
-**Status: LOW / unsupported.**
+The land + building values sum exactly to **$590,000**, aligning with the commercial-real-estate contribution reported on Schedule M. This strongly anchors the source of the large FY2022 property balance without requiring speculation.
 
-Visible wage and payroll-tax lines are too small relative to the increase.
+Schedule O states the return was amended because of a **missing asset fair-market value that had been donated prior to year end**.
 
-### H4 — administrative/fundraising bloat caused most of the spike
+## New asset-movement question: FY2022 → FY2023
+
+At FY2022 year end:
+
+- net land/building/equipment: **$621,915**.
+
+At FY2023 year end, the later raw filing shows:
+
+- net land/building/equipment: **$16,777**;
+- a new notes/loans receivable balance of approximately **$416,227**;
+- higher liabilities, including conference-related liabilities identified in Schedule D.
+
+This is a real and material asset movement. It now deserves its own forensic lane.
+
+**What is not established:**
+
+- that the donated property was sold to a related party;
+- that the $416,227 receivable was the sale note for that property;
+- that consideration was inadequate;
+- that any director/officer benefited;
+- that the transaction violated nonprofit law.
+
+**Needed next:** Georgia/local property records, deed/grantor-grantee history, any sale price, counterparty, note terms, board authorization and subsequent receivable collection/write-down.
+
+## FY2024/FY2025 Schedule L boundary
+
+Raw IRS Schedule L content has now also been acquired for later years. The filings report one interested-person business transaction in each year:
+
+- FY2024: `KARIS L BUICE` — `Daughter of Board Member` — `SALARY` — **$30,409**;
+- FY2025: same filed relationship/transaction description — **$31,880**.
+
+Both returns report `EngagedInExcessBenefitTransInd=false` and `BusinessRlnWithFamMemInd=true`.
+
+This establishes disclosed family-member salary transactions. It does **not** establish self-dealing, excess benefit, fraud or private enrichment. The specific parent must not be inferred from surname alone because the Schedule L relationship field says only `Daughter of Board Member`.
+
+## Current explanation hierarchy
+
+### H1 — conference/event expansion drove the FY2023 expense reversal
+
+**Status: VERIFIED_PRIMARY at the Part IX category-delta level.**
+
+Conference/meeting expense increased **$817,283**, by far the single largest positive delta.
+
+### H2 — advertising expansion was the second major driver
+
+**Status: VERIFIED_PRIMARY at the Part IX category-delta level.**
+
+Advertising increased **$246,511**.
+
+### H3 — broader ecosystem expansion contributed through smaller categories
+
+**Status: SUPPORTED / project-level causal allocation incomplete.**
+
+IT, travel, workshops and payroll taxes all increased, while the filing reports G3+ launch, publishing, workshops, tour and network expansion. The return does not provide a project ledger tying every dollar to each initiative.
+
+### H4 — payroll / executive compensation caused most of the spike
+
+**Status: REFUTED AS PRINCIPAL DRIVER.**
+
+Wage delta is only +$3,664; payroll taxes add $41,728.
+
+### H5 — administrative/fundraising bloat caused most of the spike
 
 **Status: CONTRADICTED BY FILED FUNCTIONAL CLASSIFICATION.**
 
-The Part IX columns report 100% program services and zero management/fundraising.
+Both comparator years report zero management/general and zero fundraising.
 
-### H5 — fraud / diversion / personal enrichment
+### H6 — fraud / diversion / personal enrichment
 
 **Status: UNSUPPORTED.**
 
-No acquired FY2023 filing component supports diversion or embezzlement, and the return has no Schedule L. Later FY2024/FY2025 Schedule L objects are separate research questions and cannot be back-projected into 2023.
+The acquired FY2022/FY2023 filings do not establish diversion or embezzlement. Later Schedule L disclosures are ordinary disclosure objects until evidence establishes more.
 
-## Remaining proof gate: exact FY2022 category delta
+## Article-safe financial wording after closure
 
-To explain the **change**, not merely FY2023 composition, acquire the raw FY2022 filing and compare the same Part IX rows category by category.
-
-Current acquisition target:
-
-- primary candidate object: `202322939349300637`;
-- a second FY2022 filing object also exists: `202340569349300209` and must be used as an amendment/resubmission control if the first object's totals do not match the authoritative FY2022 snapshot.
-
-The target comparison is:
-
-`FY2023 category amount − FY2022 category amount = exact category contribution to the ~$1.062m increase`.
-
-Until that comparison is acquired, article-safe wording is:
-
-> G3's financial reversal began in 2023 because expenses roughly doubled while revenue stayed almost flat. The raw IRS filing now shows that G3 classified every dollar of FY2023 expense as program service, with conferences and meetings alone accounting for about $1.254 million, or 60.5% of total spending. Payroll and payroll taxes were far too small to explain the increase by themselves. The remaining question is not what dominated FY2023 spending, but how much each category increased from FY2022; that requires the raw FY2022 Part IX comparison.
+> G3’s financial reversal began in 2023 not because revenue collapsed, but because expenses roughly doubled while revenue remained almost flat. The raw IRS filings now allow the increase to be reconciled category by category: conference and meeting costs rose by about $817,000, while advertising rose by about $247,000. Those two increases account for essentially the entire net rise in spending, partly offset by lower occupancy expense. Both 2022 and 2023 returns classified all functional expenses as program services and reported no management/general or fundraising allocation. That does not prove every expenditure was prudent or efficiently priced, but it rules out portraying the filings as evidence of a million-dollar administrative-payroll surge. A separate unresolved question concerns the large property/receivable movement between 2022 and 2023.
