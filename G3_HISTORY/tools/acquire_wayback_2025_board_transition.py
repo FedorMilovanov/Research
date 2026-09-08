@@ -29,7 +29,7 @@ TARGET = "http://g3min.org/about/who-we-are/"
 CDX_TARGET = "g3min.org/about/who-we-are/"
 FROM = "20250501"
 TO = "20250720"
-UA = "FedorMilovanov-Research-G3-2025-Board-Transition/1.0 (research-only)"
+UA = "FedorMilovanov-Research-G3-2025-Board-Transition/1.1 (research-only)"
 ZSTD_MAGIC = b"\x28\xb5\x2f\xfd"
 
 NAMES = [
@@ -185,15 +185,28 @@ def main() -> int:
         "captures": [],
     }
 
+    captures: list[dict] = []
     try:
         cdx_bytes, cdx_meta = fetch(cdx_url, 90)
         (out / "CDX.json").write_bytes(cdx_bytes)
         write_json(out / "CDX_FETCH.json", cdx_meta)
         rows = json.loads(cdx_bytes.decode("utf-8"))
-        if not isinstance(rows, list) or not rows:
-            raise RuntimeError("CDX response has no header row")
-        header = rows[0]
-        captures = [dict(zip(header, row)) for row in rows[1:] if len(row) == len(header)]
+        if not isinstance(rows, list):
+            raise RuntimeError("CDX JSON root is not a list")
+        if rows:
+            header = rows[0]
+            if not isinstance(header, list) or "timestamp" not in header:
+                raise RuntimeError("CDX response has an invalid header row")
+            captures = [
+                dict(zip(header, row))
+                for row in rows[1:]
+                if isinstance(row, list) and len(row) == len(header)
+            ]
+        else:
+            # Wayback returns [] when the query is valid but has zero captures.
+            # This is a bounded archive-coverage result, not a transport failure.
+            captures = []
+            summary["coverage_state"] = "VALID_EMPTY_CDX"
     except Exception as exc:
         captures = []
         summary["errors"].append("CDX: " + str(exc))
@@ -249,6 +262,8 @@ def main() -> int:
     print("CDX_CAPTURE_COUNT", summary["cdx_capture_count"])
     print("CDX_TIMESTAMPS", ",".join(ts or "" for ts in summary["cdx_timestamps"]))
     print("DISTINCT_DIGESTS", summary["distinct_digests"])
+    if summary.get("coverage_state"):
+        print("COVERAGE_STATE", summary["coverage_state"])
     for record in summary["captures"]:
         if record.get("fetch"):
             present = [name for name, hit in record.get("name_hits", {}).items() if hit]
@@ -256,8 +271,8 @@ def main() -> int:
         else:
             print("SNAPSHOT_ERROR", record.get("snapshot_url"), record.get("error"), file=sys.stderr)
 
-    # CDX transport failure is a technical failure. A successful zero-capture CDX
-    # response is a valid bounded negative archive result and exits green.
+    # CDX transport/parse failure is technical failure. A successful empty [] is
+    # deliberately green because it documents a bounded archive-coverage gap.
     if summary["errors"]:
         for error in summary["errors"]:
             print("ERROR", error, file=sys.stderr)
