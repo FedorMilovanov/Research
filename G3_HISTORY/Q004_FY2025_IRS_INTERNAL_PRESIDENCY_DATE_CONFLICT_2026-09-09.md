@@ -1,15 +1,15 @@
-# Q004 — FY2025 IRS internal presidency-date conflict, 2026-09-09
+# Q004 — 2025 presidential transition primary closure and FY2025 IRS internal date conflict
 
-**Status:** VERIFIED_PRIMARY INTERNAL FILING CONFLICT / EXACT MECHANICS HOLD / PUBLICATION_HOLD  
+**Status:** PRESIDENTIAL TRANSITION DATES VERIFIED_PRIMARY / IRS INTERNAL FIELD CONFLICT PRESERVED / BROADER DIRECTOR MECHANICS HOLD / PUBLICATION_HOLD  
 **Raw IRS object:** `202641339349303874_public.xml`  
 **Raw XML SHA-256:** `48846b93808c2ffcacac6dc1995fb7890a630ccef9f711fa8a27cd4445541ac2`  
 **Post-merge acquisition witness:** workflow run `34282122035`, FY2025 artifact `10078056865`, artifact digest `sha256:002b35b94360a14d48581e31125c555922bed5b47c23ed5463651cdca5358e7f`.
 
-## 1. Why this file exists
+## 1. Discovery and raw-filing verification
 
-A fresh ProPublica rendering exposed Scott Aniol as `President As Of 05/2025`. That wording was treated only as a discovery lead. The post-merge raw IRS acquisition artifact was then re-read directly.
+A fresh ProPublica rendering exposed Scott Aniol as `President As Of 05/2025`. That wording was treated only as a discovery lead and checked against the post-merge FY2025 raw IRS artifact.
 
-The lead is real: the conflicting dates are present in the **same primary FY2025 filing**, not created by ProPublica.
+The lead is real: the conflicting month field is present in the **primary FY2025 filing**, not created by ProPublica.
 
 ## 2. Part VII title rows
 
@@ -20,14 +20,14 @@ The raw FY2025 Form 990 XML contains these exact officer-title fields:
 
 These rows are part of the filed Part VII officer/director reporting.
 
-## 3. Same filing's program-history narrative
+## 3. Same filing's narrative says July
 
-The same raw XML contains a program-history `Desc` stating, in substance and explicitly, that:
+The same raw XML contains a program-history `Desc` stating that:
 
-- founder and president Josh Buice resigned **in May 2025**;
-- Dr. Scott Aniol **was appointed president in July 2025**.
+- founder and president Josh Buice resigned in May 2025;
+- Dr. Scott Aniol was appointed president in **July 2025**.
 
-Thus the raw primary object contains an internal chronology tension:
+Thus the raw filing itself contains a chronology tension:
 
 `PART_VII_TITLE_FIELD: ANIOL AS OF 05/2025`
 
@@ -35,48 +35,77 @@ versus
 
 `PROGRAM_NARRATIVE: ANIOL APPOINTED IN JULY 2025`.
 
-## 4. Evidentiary consequence
+## 4. Independent first-party board records resolve the presidential transition dates
 
-The correct conclusion is **not** to choose whichever date best fits an external chronology.
+### Buice resignation
 
-The filing itself proves:
+Official G3 Board statement:
 
-1. Buice's presidency is represented as ending in May 2025;
-2. Aniol is represented as succeeding him during 2025;
-3. the exact month/effective mechanics are internally inconsistent within the filing (`05/2025` title row versus `July 2025` narrative).
+`https://g3min.org/statement-regarding-josh-buice/`
 
-Therefore a sentence such as `the FY2025 Form 990 proves Aniol became president in July 2025` is too strong unless it explicitly identifies the July date as the filing's narrative representation and discloses the conflicting Part VII field.
+Dated May 12, 2025, it states that on **May 8**, after some board members privately encouraged Josh Buice to resign, the board received and **unanimously accepted his resignation as President of G3**.
 
-Likewise, `the Form 990 proves Aniol became president in May 2025` is too strong for the same reason.
+This is a direct institutional/board statement about the action and date.
 
-## 5. Correct Q004 state
+### Aniol appointment
 
-`SUCCESSION_ENDPOINT = VERIFIED_PRIMARY`.
+Official G3 Board announcement:
 
-`BUICE_PRESIDENCY_ENDED_IN_MAY_2025 = VERIFIED_PRIMARY_AS_FILED_REPRESENTATION`.
+`https://g3min.org/scott-aniol-named-president-of-g3-ministries/`
 
-`ANIOL_PRESIDENCY_EFFECTIVE_MONTH = INTERNALLY_CONFLICTED_IN_PRIMARY_FILING`.
+Dated July 14, 2025, it states:
 
-`EXACT_APPOINTMENT_DATE / BOARD_ACTION / EFFECTIVE_DATE = DOCUMENT_HOLD`.
+- the Board of Directors appointed Dr. Scott Aniol President of G3 Ministries;
+- the appointment was **effective Wednesday, July 9**.
 
-This strengthens the reason Q004 cannot be closed from Part VII alone.
+This is a direct institutional/board statement with an explicit effective date.
 
-## 6. How to write it safely
+## 5. Evidentiary consequence
 
-Article-safe wording:
+The presidential succession no longer needs to remain date-open merely because Part VII contains `AS OF 05/2025`.
 
-> G3's FY2025 Form 990 records the 2025 presidential transition but is internally inconsistent about its timing: Part VII labels Scott Aniol `President as of 05/2025` and Josh Buice `President through 05/2025`, while the same filing's program narrative says Buice resigned in May and Aniol was appointed president in July. The filing therefore establishes the succession but not a single unambiguous effective month; minutes, appointment instruments or another direct corporate record would be needed to resolve the mechanics.
+The better evidence hierarchy is:
 
-## 7. Reopen/closure evidence
+1. direct board statement on resignation acceptance — May 8;
+2. direct board announcement on appointment/effective date — July 9;
+3. FY2025 narrative — consistent with a July appointment;
+4. FY2025 Part VII title field — inconsistent `AS OF 05/2025`, preserved as an internal filing defect/tension rather than used to overwrite the direct board record.
 
-To resolve the conflict, seek a materially distinct primary object:
+Therefore:
 
-- board minutes/resolution;
-- signed appointment/acceptance record;
-- direct G3 announcement with effective date;
-- corporate filing identifying effective officer change;
-- first-person statement specifically distinguishing selection, appointment, start-of-service or public announcement dates.
+`BUICE_RESIGNATION_ACCEPTED = 2025-05-08 / VERIFIED_PRIMARY`.
 
-Do not use a secondary renderer to break a conflict already present in the primary filing.
+`ANIOL_PRESIDENCY_EFFECTIVE = 2025-07-09 / VERIFIED_PRIMARY`.
+
+`FY2025_PART_VII_ANIOL_AS_OF_05_2025 = VERIFIED_PRIMARY_AS_FILED_FIELD / INTERNALLY_INCONSISTENT_WITH_NARRATIVE_AND_BOARD_ANNOUNCEMENT`.
+
+## 6. What Q004 is now closed for — and what remains open
+
+### Closed
+
+The **presidential transition endpoints/dates** are primary-closed at the institutional-record level:
+
+- Buice resignation accepted May 8, 2025;
+- Aniol appointment effective July 9, 2025.
+
+### Still open
+
+Q004 is broader than the presidency. The following remain document-held unless separately primary-closed:
+
+- exact Tom Buck resignation/removal/effective date;
+- exact dates/mechanics for other director departures/additions;
+- board vote/minutes beyond what the public statements disclose;
+- any interim presidential/acting authority between May 8 and July 9;
+- whether selection, internal approval and public announcement occurred on different dates before the effective date.
+
+## 7. Article-safe wording
+
+> G3's Board said it unanimously accepted Josh Buice's resignation as president on May 8, 2025, and later announced Scott Aniol's appointment as president effective July 9. The organization's FY2025 Form 990 broadly corroborates that transition but contains an internal timing defect: Part VII labels Aniol `President as of 05/2025`, while the same filing's narrative says he was appointed in July. The direct board records therefore control the presidential effective dates; broader director-transition mechanics still require separate records.
+
+## 8. Research control
+
+Do not silently normalize the Part VII field. Preserve the contradiction because it is part of the filed primary object and matters when auditing derivative renderers.
+
+Do not extend the presidential-date closure to every 2025 board transition.
 
 `PUBLICATION_HOLD = true`.
