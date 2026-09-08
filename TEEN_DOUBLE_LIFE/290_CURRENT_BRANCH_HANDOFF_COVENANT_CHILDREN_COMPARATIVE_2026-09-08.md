@@ -1,25 +1,53 @@
 # Current Branch Handoff — Covenant Children Comparative Overlay
 
-**Status:** CURRENT LANE HANDOFF / RESEARCH ONLY / NOT PUBLICATION  
+**Status:** CURRENT LANE HANDOFF / RESEARCH CLOSURE + PRODUCT-TRANSFER CONTROL / NOT PUBLICATION APPROVAL  
 **Date:** 2026-09-08  
 **Branch:** `research/covenant-children-comparative-20260908`  
 **Base target:** `research/teen-double-life-digital-sin-20260907`
 
-> This is the sole current handoff for the bounded covenant-children comparative lane. Do not infer Product authorization from Research completeness. Always re-fetch live branch heads before write/merge; exact filenames, not numeric prefixes, are authoritative during active parallel work.
+> This is the sole current handoff for the bounded covenant-children comparative lane. Exact filenames, not numeric prefixes, are authoritative while parallel work remains active. Re-fetch live branch heads before every write, merge, or Product mutation.
 
 ---
 
-## 1. Purpose
+# 1. Current lane state
 
-Deepen the existing Teen Double Life / children / parents / church series by comparing:
+The comparative question has reached **category-level Research closure for the current assignment**.
 
-- Westminster/PCA/OPC child-covenant membership and discipline;
-- Dutch Reformed/URCNA/CRC baptized-member structures;
-- Heidelberg / Belgic / Dort covenant-child theology;
-- 1689 Particular Baptist regenerate-church/credobaptist structure;
-- contemporary SBC and Russian ECB comparators;
-- historic Calvin/Owen plus Particular Baptist Collins/Keach/Gill/Spurgeon material;
-- the practical question of child accountability before personal profession and before civil adulthood.
+Normal expansion is now paused.
+
+The lane has moved from:
+
+`COMPARATIVE DISCOVERY`
+
+through
+
+`PRIMARY-SOURCE / POLITY / EXEGESIS STRESS TEST`
+
+through
+
+`HISTORICAL BAPTIST SOURCE CLOSURE`
+
+into
+
+`PRODUCT SELECTION / COMPRESSION / TRANSFER`.
+
+The parallel late evidence/disclosure lane has independently reached the same operational conclusion: Research complexity is now sufficient and the next quality gain comes from selection, source refresh where genuinely current, and Product preflight rather than another hypothetical case module.
+
+### Locked stop rule
+
+`NEW QUESTION ≠ NEW CATEGORY`.
+
+`NEW EDGE CASE ≠ NEW MODULE`.
+
+Create a new substantive comparative Research owner only if one of the following becomes true:
+
+1. materially new primary evidence changes a controlling proposition;
+2. an existing P0/P1 claim is shown to be wrong;
+3. two current owners actually conflict rather than complement one another;
+4. a genuinely distinct theological/jurisdictional category is discovered;
+5. a direct owner instruction opens a bounded new question.
+
+Otherwise update, compress, route, or leave the evidence beneath Product.
 
 ---
 
@@ -29,393 +57,515 @@ Deepen the existing Teen Double Life / children / parents / church series by com
 
 Both strong traditions can affirm present child duty.
 
-Paedobaptist polity gives believers’ children a formal ecclesial address earlier. 1689 Baptist polity reserves membership/baptism for credible professors but historically has strong resources for intensive household formation and present child duty before membership.
+Paedobaptist polity ordinarily gives believers’ children a formal ecclesial address before personal profession. A 1689 Baptist polity reserves baptism/member status for credible professors but historically has strong resources for intensive household formation, present moral duty, gospel summons, catechesis and pastoral care before membership.
+
+The false binary is therefore rejected:
+
+> `either baptize the child as covenant member or treat the unbaptized child as a morally/pastorally ordinary outsider until later conversion`.
 
 ---
 
-# 3. Five-axis control
+# 3. Permanent category separations
 
 Never collapse:
 
 1. **creaturely moral responsibility**;
-2. **filial/household responsibility**;
+2. **filial / household responsibility**;
 3. **gospel-light aggravated responsibility**;
-4. **ecclesial/covenant status and formal jurisdiction**;
-5. **soteriological condition/credibility**.
+4. **ecclesial / covenant status and formal jurisdiction**;
+5. **soteriological condition / credibility**.
 
-A single label such as `unbelieving child`, `covenant child`, `baptized child`, or `minor` cannot answer all five axes.
+`299_PRIVILEGE_OBLIGATION_JURISDICTION_ASSURANCE_MATRIX...` further separates:
 
-Also lock:
+- providential/household privilege;
+- gospel-light privilege;
+- covenant/ecclesial status;
+- baptismal entitlement;
+- Table privilege;
+- formal discipline;
+- saving assurance.
 
-> **REAL RESPONSIBILITY ≠ EQUAL ADULT CULPABILITY / IDENTICAL PROCESS.**
+### P0 locks
 
-Responsibility is real but must be assessed with capacity, understanding, intent, received light, coercion, age and actual jurisdiction in view.
+`MORAL DUTY ≠ MEMBER STATUS`.
+
+`PASTORAL OWNERSHIP ≠ CHURCH KEYS`.
+
+`BAPTISM / MEMBERSHIP ≠ REGENERATION`.
+
+`REAL RESPONSIBILITY ≠ IDENTICAL ADULT CULPABILITY / PROCESS`.
+
+`18 ≠ BIBLICAL MORAL-ON SWITCH`.
+
+`AUTHORITY / JURISDICTION ≠ PROOF`.
+
+`PRECAUTION ≠ CONVICTION`.
+
+`ABSENCE OF MEMBER JURISDICTION ≠ ABSENCE OF SAFEGUARDING RESPONSIBILITY`.
 
 ---
 
-# 4. Current polity findings — corrected and current
+# 4. Modern polity findings — current controlled state
 
 ## PCA
 
-Current 2026 BCO:
+Current 2026 BCO supports:
 
-- believers’ children are non-communing members;
-- all baptized persons, being members, are subject to church discipline (`27-2`);
-- `discipline` has both broad/formative and restricted/judicial senses (`27-1`);
-- Part II contains a dedicated `Chapter 28 — Disciplining of Non-communing Members`;
-- parents have primary spiritual nurture responsibility but are accountable to church;
-- wayward children are to be reclaimed, not treated as ecclesially unrelated.
+- children of believers as non-communing members;
+- baptism, pastoral oversight, instruction and government;
+- all baptized persons, being members, under church discipline;
+- Chapter 28 care/disciplining of non-communing members;
+- parents as primary spiritual nurturers who are accountable to church;
+- active reclamation rather than ecclesial anonymity.
 
-### Correction locked
+### Precision guard
 
-Do **not** describe current PCA as providing only informal/soft pastoral oversight to non-communing children. Earlier Southern Presbyterian discussions about limits on judicial prosecution are historical evidence, not a substitute for the current PCA BCO.
-
-### Guard
-
-Do not infer identical censure/process at every age merely from `all baptized are under discipline`.
+PCA `discipline` includes broad/formative government as well as technical judicial categories. Do not write that every non-communing child is processed identically to a professing communicant. BCO 29-1 must remain in view when technical judicial language is used.
 
 ## OPC
 
-Current exact gap is now closed.
+Current exact constitutional mechanics are closed strongly enough for the comparative claim:
 
-OPC Book of Discipline II.B.3.d(6) gives a direct noncommunicant pathway:
-
-- ongoing sessional exhortation to profess faith in Christ;
-- rejection of covenantal responsibility of submission to home/church;
-- prior notification;
-- session may erase the noncommunicant’s name from the roll.
-
-The Book of Discipline separately identifies erasure as an act of discipline without full process.
-
-### Locked
-
-`OPC NONCOMMUNICANT DISCIPLINE / ERASURE = DIRECT CURRENT POLITY`.
+- communicant and noncommunicant members are real members under oversight/instruction/government;
+- baptism-only members are subject to ecclesiastical discipline;
+- current Book of Discipline provides a pathway for erasure of a persistently resistant noncommunicant after sustained exhortation and notice.
 
 `ERASURE ≠ FULL-PROCESS EXCOMMUNICATION`.
 
-The old handoff `OPC mechanics open hold` is **CLOSED**.
-
 ## URCNA
 
-Article 59’s mature-baptized-member mechanism is established:
+Article 59 supplies a mature-baptized-member sequence:
 
-`delinquent in doctrine/life -> admonition -> persistence -> classis advice -> exclusion`.
+`delinquency in doctrine/life → admonition → persistence → classis advice → exclusion`.
 
-Article 60 governs return by public profession.
+Article 60 governs restoration through public profession.
 
-### 2026 ratification guard
+### 2026 guard
 
-The official URCNA publication page dated 2026-08-26 explicitly warns that some Calgary 2026 amendments shown in the current edition remain highlighted pending ratification. The substantive Article 59 exclusion category predates the 2026 cleanup; the 2026 proposal regarding Appendix 8 must not be represented as though it created the category.
-
-Lock:
-
-`ARTICLE 59 CORE = CURRENT`.
-
-`ALL CALGARY 2026 AMENDMENTS FINAL = FORBIDDEN`.
+Do not claim every Calgary 2026 amendment is final merely because it appears in the current publication. The substantive Article 59 category predates the current amendment-cleanup issue.
 
 ## CRCNA
 
-Retain as a distinct comparator; do not treat all Dutch Reformed bodies as having identical profession/Table/discipline sequencing.
+Retain as a separate comparator. Do not generalize PCA/OPC/URCNA mechanics to CRCNA without a current exact need.
+
+### Remaining CRC hold
+
+Exact baptized-nonprofessor discipline mechanics remain a **low-priority publication hold only if Product names them precisely**. They do not block the comparative thesis.
 
 ---
 
 # 5. Continental confessional depth
 
-The paedobaptist institutional model is not merely administrative.
+The paedobaptist institutional structure is downstream from substantive covenant theology, not merely administration.
 
-### Heidelberg Q74
+Controlled evidence includes:
 
-Believers’ children are included in covenant/people and are to be incorporated into the Christian church by baptism.
-
-### Belgic Article 34
-
-Believers’ children receive the covenant sign, with an explicit continuity line from circumcision to baptism.
-
-### Canons of Dort I.17
-
-Children of believers are described as holy by gracious covenant rather than nature; the canon gives comfort concerning children of believers dying in infancy.
-
-### Westminster Larger Catechism 165–167
-
-Baptism solemnly admits into the visible church; infants of one or both professing parents are regarded as within the covenant in the relevant sense and are to be baptized; baptism carries professed engagement to be the Lord’s and is to be improved throughout life.
+- Heidelberg Catechism Q74;
+- Belgic Confession Article 34;
+- Canons of Dort I.17;
+- Westminster baptism/visible-church controls.
 
 ### Transfer guard
 
-A Baptist may learn from the **institutional seriousness** of covenant-child care, but may not silently use `covenant child` as a confessionally neutral synonym for `child raised in church`. In Westminster/Three Forms traditions it carries substantive ecclesial/sacramental claims.
+Technical `covenant child` language is not confessionally neutral. A Baptist may learn from the institutional seriousness of child care without silently importing the premise that believers’ children possess inherited visible-church membership and baptismal entitlement.
 
 ---
 
-# 6. Particular Baptist historical deepening — NEW 298
+# 6. Particular Baptist historical recovery — source-closed core
 
-`298_PARTICULAR_BAPTIST_HIGH_ACCOUNTABILITY_CHILD_FORMATION_COLLINS_KEACH_BUNYAN_GILL_SPURGEON...` is now the dedicated primary-source deepening.
+The central historical thesis is now source-supported rather than impressionistic:
+
+> **High-accountability credobaptism has real Baptist historical pedigree.**
+
+Primary/high-value controls:
 
 ## Hercules Collins
 
-### *Orthodox Catechism* (1680)
-
-The preface urges:
-
-- love for children’s souls;
-- prayer for children;
-- Abraham-like instruction;
-- good parental example;
-- catechetical learning for youth;
-- serious concern for children’s everlasting welfare.
-
-The same catechism retains believer-only baptism based on actual profession.
-
-### *Believers-baptism from heaven...*
-
-Collins explicitly grants that children of godly parents possess a **real advantage** through good education, prayer and example, while denying that this privilege by itself gives infant-baptism entitlement.
-
-### Major project value
-
-This gives early Particular Baptist pedigree for:
-
-`SPECIAL HOUSEHOLD PRIVILEGE / FORMATION`
-
-without
-
-`INHERITED BAPTISM / MEMBERSHIP`.
+- *Orthodox Catechism* Preface: prayer, instruction, good example, catechetical formation and concern for children’s everlasting welfare;
+- *Believers-baptism from heaven*, pp. 47–48: children of godly parents possess real advantages through education, prayer and example while Collins still denies infant-baptism entitlement.
 
 ## Baptist Catechism
 
-Fifth-commandment questions preserve real honor/duty in ordered relations; Baptist catechesis did not postpone filial obligation until baptism.
+Q68–71 preserves real fifth-commandment duties in ordered relations; filial obligation is not created by baptism.
 
 ## Benjamin Keach
 
-- *Instructions for Children* has explicit archival/title-page evidence of fatherly godly advice, spiritual education of children and Scripture catechesis;
-- *War with the Devil* is explicitly aimed at youth and sharply distinguishes impressive outward reformation from inward conversion.
+- *Instructions for Children*: title/subtitle/purpose strongly verified bibliographically as child/parent spiritual education; body-quotation locator remains open;
+- *War with the Devil*, p. 35: direct located distinction between impressive outward reform and inward heart change.
 
 ## John Gill
 
-Gill provides the strongest mature Particular Baptist synthesis:
+Direct mature Particular Baptist synthesis:
 
-- real child obedience/honor/reverence;
-- parental spiritual instruction;
-- good example;
-- protection from corrupting company;
-- early confrontation of lying and vice;
-- prayer with/for children;
-- Scripture and means of grace;
-- teaching sin, natural misery and salvation through Christ;
-- **and** rejection of manufactured religious profession that teaches children to say `I believe` before real knowledge/faith.
+- child obedience/honor;
+- parental Scripture, prayer, example, correction and means of grace;
+- early confrontation of vice/lying;
+- warning against teaching children to speak first-person faith before actual knowledge/faith.
 
-Project synthesis:
+Editorial synthesis:
 
 > **Teach the child Christianity before conversion; do not teach the child to counterfeit conversion.**
 
 ## Spurgeon
 
-Immediate child conversion should be sought; child profession is examined, not automatically certified or automatically distrusted; same real repentance/faith is required in kind without demanding adult maturity.
+Seek genuine child conversion now; examine profession without either premature certification or arbitrary child-age disbelief.
 
-### Historical verdict
+### Source authority
 
-> **High-accountability credobaptism has real Baptist historical pedigree.**
+`301_HISTORICAL_BAPTIST_SOURCE_GRADE_AUDIT...` is the source-closure ledger.
 
-The modern cure for Baptist passivity is not necessarily to import paedobaptist membership; it may begin by recovering neglected Baptist household/catechetical theology.
+The only meaningful historical source hold left is:
 
----
+`KEACH INSTRUCTIONS BODY QUOTATION = HOLD / NON-BLOCKING`.
 
-# 7. Existing-owner reconciliation — COMPLETED
-
-### `95_OWEN_CHURCH_CARE_CHILDREN...`
-
-`CONFIRM + DEEPEN`.
-
-Already owns Owen’s strong child-care / parent-advice / catechesis / admonition model with paedobaptist transfer guard.
-
-### `96_1689_CONFESSIONAL_CONTROL...`
-
-`CONFIRM + DEEPEN`, not correction.
-
-Already owns `child ministry ≠ child membership` and the Baptist re-grounding of Owen.
-
-### `108_1689_EXACT_PARAGRAPH_AUDIT...`
-
-`CONFIRM / NO DUPLICATION`.
-
-Owns 16.7 / 19.5 / 22.3 / 22.5 / 26.2 / 26.6 and `WORSHIP DUTY ≠ CHOIR ENTITLEMENT`.
-
-### Reconciliation conclusion
-
-`95/96/108 CONFLICT = NONE FOUND`.
-
-`OLD OWNER REPLACEMENT = NO`.
-
-`NEW LANE ROLE = COMPARATIVE EVIDENCE + ECCLESIAL-STATUS AXIS + HISTORICAL BAPTIST DEEPENING + INSTITUTIONAL SYNTHESIS`.
+Do not delay a core Product claim for this hold; Collins + Gill (+ existing Spurgeon) already prove the historical point.
 
 ---
 
-# 8. Exegesis weighting
+# 7. Exegesis status
 
-- **Eph 6 / Col 3:** direct and strong for present child duty/parent formation; not direct baptism proof.
-- **Acts 2:39:** strong intergenerational promise datum; infant-baptism right remains cumulative inference.
-- **1 Cor 7:14:** real set-apart/holy relation is a serious reading; saving status rejected; baptismal inference disputed. Do not make Gill’s legitimacy reading the sole Baptist answer.
-- **Household baptisms:** household scope is real; infant presence is not established; jailer/Stephanas contain positive hearing/faith/service data.
-- **Jer 31 / Heb 8:** highest-leverage covenant-membership fork; regenerate-church Baptist admission principle vs paedobaptist outward-administration/already-not-yet/Abrahamic-continuity responses.
-- **Gen 17:** foundational continuity/discontinuity dispute; not responsibly solved by slogans.
+### Strong / direct for present accountability
+
+- Eph. 6 / Col. 3: children directly addressed as morally responsible; parent formation is commanded.
+
+### Genuine disputed theological forks
+
+- Acts 2:39;
+- 1 Cor. 7:14;
+- household baptisms;
+- Gen. 17 continuity/discontinuity;
+- Jer. 31 / Heb. 8 New Covenant membership.
+
+Targeted owners remain `275`, `279–283`.
+
+### Nonblocking conclusion
+
+These disputes matter for sacramental/ecclesiological truth, but they do **not** block the secure child-accountability conclusion.
 
 ### Argumentation P0
 
 `PASTORAL UTILITY ≠ SACRAMENTAL PROOF`.
 
-A polity’s usefulness can expose inconsistent practice; it cannot replace exegesis.
+Do not argue:
+
+`paedobaptist child oversight is institutionally strong → therefore infant baptism is true`.
+
+Do not argue the mirror shortcut:
+
+`profession-first membership reduces presumption → therefore credobaptism is true`.
+
+The sacramental question remains exegetical.
 
 ---
 
-# 9. Evidence / due-process integration from parallel Research
+# 8. Parallel evidence / due-process lane — integrated, not duplicated
 
-The current parent lane now contains a major `281–292` truth/evidence chain on:
+The parent Research lane now owns the late evidence/disclosure architecture through its current routing and saturation controls, including:
 
-- material completeness / investigation stopping;
-- parental evidence and church due process;
-- evidence preservation;
-- silence / noncooperation;
+- material completeness / stopping investigation;
+- church response to parental evidence;
+- preservation/minimization;
+- silence/noncooperation;
 - correcting false narratives;
 - coordinated deception;
 - parental false accusation;
-- differing parental confidence;
-- digital artifact provenance;
-- source lineage / independent corroboration;
-- adversarial routing.
+- split parental confidence;
+- digital provenance;
+- source lineage;
+- retaliation after disclosure;
+- cross-family / other-minor safe disclosure;
+- delayed/partial/recanted/anonymous disclosure;
+- exact-word / paraphrase / no-leading-reconstruction controls;
+- category-level saturation audit;
+- Product-readiness transfer matrix.
 
-The covenant-child overlay must incorporate the controlling implication:
+### Comparative implication
 
 > **COVENANT / PASTORAL ACCOUNTABILITY ≠ LOWER EVIDENCE THRESHOLD.**
-
-Strong authority must not turn suspicion into proved fact.
 
 Lock:
 
 - `PARENT REPORT ≠ AUTOMATIC ECCLESIAL VERDICT`;
 - `SILENCE ≠ CONFESSION`;
-- `PRECAUTION ≠ CONVICTION`;
-- `REPEATED RUMOR ≠ INDEPENDENT CORROBORATION`;
+- `PREVIOUS DECEPTION ≠ AUTHENTICATION OF A NEW ALLEGATION`;
+- `REPEATED SAME-SOURCE REPORT ≠ INDEPENDENT CORROBORATION`;
 - `SCREENSHOT ≠ SELF-INTERPRETING COMPLETE RECORD`;
-- prior deception may rationally lower trust but cannot make a new false claim true.
+- `REPORTING DANGER ≠ AUTOMATIC REBELLION`;
+- `ANTI-RETALIATION ≠ AUTOMATIC PROOF OF GUILT`;
+- `SAFEGUARDING ACTION ≠ FINAL DISCIPLINARY VERDICT`.
 
-This is especially important if the public article praises stronger Presbyterian/Reformed institutional child accountability: **greater church ownership must mean greater truthful stewardship, not greater coercive certainty**.
-
----
-
-# 10. Current comparative-lane files retained
-
-- `273` — governing comparative shell.
-- `274` — **current corrected** denominational matrix.
-- `275` — broad exegesis stress test.
-- `276` — Calvin/Gill/Spurgeon broad historical comparison.
-- `277` — high-accountability 1689 pastoral model.
-- `278` — integration map into existing series.
-- `279` — 1 Cor 7:14 targeted analysis.
-- `280` — Heb 8 / Jer 31 covenant-membership fork.
-- `281` — Acts 2:39 targeted analysis.
-- `282` — household baptism evidence limits.
-- `283` — Eph 6 child-hearer responsibility.
-- `284` — adversarial failure modes.
-- `285` — age/discretion/capacity; no magic 18 threshold.
-- `286` — membership vs sustained pastoral ownership.
-- `287` — parent accountability to church.
-- `288` — Russian ECB local application.
-- `290` — this sole current lane handoff.
-- `291` — controlled future-publication thesis bank.
-- `298` — Particular Baptist high-accountability historical primary-source deepening.
-
-Numeric-prefix collisions with files from the parallel parent lane are intentional/allowed under current coordination. **Do not normalize filenames while concurrent work is active. Use exact paths.**
+Greater institutional church ownership must mean greater truthful stewardship, not coercive certainty.
 
 ---
 
-# 11. Ownership / routing after 298
+# 9. Current comparative evidence owners
 
-Existing owners remain:
+Core comparative/evidence owners retained:
+
+- `273` — governing comparative shell;
+- `274` — corrected denominational matrix;
+- `275` — broad exegesis stress test;
+- `276` — broad Calvin/Gill/Spurgeon historical comparison;
+- `277` — high-accountability 1689 pastoral model;
+- `278` — integration map;
+- `279` — 1 Cor. 7:14;
+- `280` — Heb. 8 / Jer. 31;
+- `281` — Acts 2:39;
+- `282` — household baptisms;
+- `283` — Eph. 6 child-hearer responsibility;
+- `284` — comparative pastoral failure modes;
+- `285` — age/discretion/capacity;
+- `286` — membership vs sustained pastoral ownership;
+- `287` — parent accountability to church;
+- `288` — Russian ECB local application;
+- `291` — controlled publication thesis bank;
+- `298_PARTICULAR_BAPTIST...` — Baptist historical deepening;
+- `299_PRIVILEGE_OBLIGATION_JURISDICTION_ASSURANCE_MATRIX...` — system matrix;
+- `300_EDGE_CASE_STRESS_TEST...` — comparative red-team;
+- `301_HISTORICAL_BAPTIST_SOURCE_GRADE_AUDIT...` — historical source closure;
+- `302_PRODUCT_TRANSFER_READINESS_PART_II_PART_III_COVENANT_CHILDREN_COMPARATIVE_DELTA...` — comparative Product preflight;
+- `303_PRODUCT_INSERTION_CANDIDATES_PART_II_PART_III_MINIMAL_COMPARATIVE_COPY...` — minimal insertion candidates.
+
+Parallel parent transfer owner also present on this branch:
+
+- `300_PRODUCT_READINESS_TRANSFER_MATRIX_LATE_RESEARCH_TO_PART_II_PART_III_COMPANIONS_AND_DO_NOT_IMPORT...` — late evidence/safeguarding Product selection.
+
+Numeric-prefix collisions are expected under active parallel coordination. **Exact full filenames are authoritative. Do not normalize them merely for aesthetics.**
+
+---
+
+# 10. Existing-owner reconciliation
+
+Existing owners remain authoritative where their topic is older/broader:
 
 - `34`, `43` — unregenerate responsibility / no moral neutral zone;
 - `95` — Owen child-care / paedobaptist transfer;
-- `96`, `108` — exact 1689 control and worship/role guard;
+- `96`, `108` — exact 1689 confessional control and worship/role guard;
 - `150` — gospel-light/status/jurisdiction;
 - `159` — baptized Baptist minor dual stewardship;
 - `160` — required worship/instruction without forced profession;
 - `161` — false assurance/premature certification.
 
-`298` contributes historical corroboration but does **not** supersede them:
+`95/96/108` were explicitly reconciled.
 
-- `34/43`: real child duty before conversion;
-- `150`: special Christian-household privilege without inherited membership;
-- `160`: means/instruction before conversion without false profession;
-- `161`: outward performance/reform does not certify regeneration;
-- Part II: Collins/Keach/Gill parental formation;
-- Part III: Baptist ecclesial-vacuum correction after independent church-care grounding.
+`CONFLICT = NONE FOUND`.
+
+The comparative lane **deepens** rather than supersedes them.
 
 ---
 
-# 12. Open holds — narrowed
+# 11. Product preflight — COMPLETED at Research level
 
-### CLOSED
+Product repo checked:
 
-- `95/96/108 reconciliation` — closed.
-- `OPC exact noncommunicant discipline/removal mechanics` — closed at current polity level.
-- `PCA all baptized under discipline` — direct current BCO.
+`FedorMilovanov/gb-is-my-strength`.
 
-### REMAIN OPEN / BOUNDED
+At preflight, Product main was:
 
-1. **CRCNA exact local baptized-nonprofessor discipline mechanics** — lower priority unless public comparison makes a precise claim.
-2. **1 Cor 7:14** — genuine exegetical dispute remains.
-3. **Jer 31 / Heb 8** — genuine covenant-theology dispute remains.
-4. **Keach `Instructions for Children` exact body quotations** — title/bibliographic purpose verified; exact quote locators still require scan inspection before Product quotation.
-5. **Product architecture** — no public companion/article decision has been authorized.
+`f17376bd807cf77ae8c5e62c1d2519c040dae711`.
 
-These holds do not weaken the secure high-accountability thesis.
+## Part II
+
+Open Draft PR `#1895`  
+Branch: `article/teen-double-life-part-2`  
+Owned path only:
+
+`src/content/articles/podrostok-za-kadrom-roditelyam-posle-razoblacheniya.mdx`.
+
+At audit:
+
+- `behind main = 0`;
+- one-file permanent scope;
+- `draft:true` / `noindex:true` / `sourcesRequired:true`;
+- core theology already strong;
+- substantial evidence/trust material through earlier routing already compressed into the manuscript.
+
+### Comparative delta
+
+`IMPORT = YES / SMALL / HISTORICAL BAPTIST RECOVERY`.
+
+Best reader-facing addition:
+
+`COLLINS + GILL (+ EXISTING SPURGEON)`.
+
+Target budget:
+
+`~120–220 Russian words`, preferably shorter if pace requires.
+
+`303` contains exact candidate copy and source additions.
+
+### Parallel late-evidence delta
+
+Parent transfer matrix additionally identifies a small remaining post-292 need around:
+
+- anti-retaliation after necessary truth-telling;
+- other-minor / safe-recipient handling;
+- optionally exact repair of a specific parental false factual accusation.
+
+Do **not** turn these into a family-forensics section.
+
+## Part III
+
+Open Draft PR `#1921`  
+Branch: `article/teen-double-life-part-3`  
+Owned path only:
+
+`src/content/articles/podrostok-za-kadrom-chto-delat-tserkvi.mdx`.
+
+At audit:
+
+- `behind main = 0`;
+- one-file permanent scope;
+- core ecclesiology already preserves `never-member ≠ excommunicable member`, `no member-censure jurisdiction ≠ no pastoral responsibility`, family authority ≠ church keys and safeguarding/role/access distinctions.
+
+### Comparative delta
+
+`IMPORT = OPTIONAL / SMALL`.
+
+A short membership-vs-pastoral-ownership comparison may help, but omission is **not** a theological defect.
+
+If used, keep:
+
+`pastoral ownership ≠ church keys`.
+
+No PCA/OPC/URCNA excursus and no Acts 2 / 1 Cor. 7 / Heb. 8 controversy inside the core article.
+
+`303` contains exact optional copy.
+
+### Parallel late-evidence delta
+
+Parent transfer matrix identifies a more material small safeguarding import from `293–297`:
+
+- anti-retaliation / confidentiality ≠ gag order;
+- other-minor / unsafe-caregiver safe recipient;
+- delayed/partial/recanted/anonymous disclosure is not a magic truth switch;
+- preserve materially important initial words and distinguish quotation from adult reconstruction;
+- church should not become an amateur forensic lab.
+
+Compress this rather than importing the research taxonomy.
+
+## Product comments already posted
+
+Nonblocking transfer notes were posted to:
+
+- Product PR `#1895` — comparative historical Baptist delta;
+- Product PR `#1921` — optional comparative ecclesial delta.
+
+No Product MDX was mutated during this Research preflight, so current exact-head CI was not invalidated by the comparative lane.
 
 ---
 
-# 13. What is strong enough to lock at Research level
+# 12. Product transfer status — UPDATED
 
-- baptism does not create moral responsibility;
-- civil age 18 is not a biblical moral-on switch;
-- responsibility is real but capacity/light/status-sensitive;
-- serious paedobaptism distinguishes visible covenant membership from guaranteed regeneration;
-- PCA/OPC/URCNA provide real formal pre-profession ecclesial accountability, with different mechanisms;
-- 1689 has ample resources for high child accountability before conversion/membership;
-- Particular Baptist history shows strong child formation before baptism is not a modern invention;
-- weak Baptist `what can you expect from an unbeliever?` practice is not confessionally or historically necessary;
-- paedobaptist polity has a genuine institutional strength in named child oversight/catechesis/reclamation;
-- Baptist churches can learn that institutional lesson without importing infant membership by distinguishing church membership from sustained pastoral ownership;
-- Eph 6 directly destroys a moral waiting-room concept;
-- stronger authority never licenses weaker evidence standards.
+Old state:
+
+`PRODUCT TRANSFER = HOLD until Product-side architecture/current-source check`.
+
+That state is superseded.
+
+Current state:
+
+`PRODUCT PREFLIGHT = COMPLETE FOR CURRENT COMPARATIVE QUESTION`.
+
+`PRODUCT SELECTION = DEFINED`.
+
+`PRODUCT MDX MUTATION = NOT YET EXECUTED BY THIS LANE`.
+
+This is transaction discipline, not substantive uncertainty.
+
+Before any Product write:
+
+1. re-fetch live Product main and PR head;
+2. confirm `behind=0` or perform normal reconciliation;
+3. confirm no concurrent owner changed the MDX;
+4. preserve one-file scope;
+5. apply only the bounded delta selected above;
+6. add only sources actually used;
+7. update the manuscript’s Research authority note to the exact handoff/commit used;
+8. rerun exact-head Product CI;
+9. preserve Draft/noindex;
+10. do not merge merely because CI is green.
 
 ---
 
-# 14. Provisional publication architecture
+# 13. Companion architecture
 
 `NEW CORE ARTICLE = NO`.
 
-`PART II = SELECTIVE PRINCIPLES + HISTORICAL BAPTIST RECOVERY`.
+`PART II = SMALL HISTORICAL BAPTIST RECOVERY + EXISTING CORE`.
 
-`PART III = STRONGEST INTEGRATION HOME FOR ECCLESIAL OWNERSHIP`.
+`PART III = EXISTING CORE + OPTIONAL SHORT COMPARATIVE FRAME + SMALL SAFEGUARDING DELTA`.
 
-`THEOLOGICAL COMPANION ON COVENANT CHILDREN = POSSIBLE, NOT COMMITTED`.
+`THEOLOGICAL COMPANION ON COVENANT CHILDREN = POSSIBLE / NOT REQUIRED / DO NOT AUTO-CREATE`.
 
-`PRODUCT TRANSFER = HOLD` until Product-side architecture/current-source check.
+A companion is justified only if the intended readership genuinely needs the disputed covenant/baptism argument in depth:
 
-Research closure and Product publication eligibility remain separate boundaries.
+- Acts 2:39;
+- 1 Cor. 7:14;
+- household baptisms;
+- Gen. 17;
+- Jer. 31 / Heb. 8;
+- Westminster / Heidelberg / Belgic / Dort;
+- PCA / OPC / URCNA polity;
+- 1689 New Covenant / membership logic.
+
+`RICH RESEARCH CORPUS ≠ OBLIGATION TO PUBLISH ALL OF IT`.
+
+---
+
+# 14. Current real holds
+
+### Nonblocking theological disputes
+
+1. `1 Cor. 7:14` — genuine exegetical dispute;
+2. `Jer. 31 / Heb. 8` — genuine covenant-theology dispute.
+
+These do not block the present moral/pastoral thesis.
+
+### Nonblocking source hold
+
+3. Keach, *Instructions for Children* body quotation — bibliographic/title-page purpose closed; exact body quotation still requires scan inspection if ever used.
+
+### Conditional publication hold
+
+4. CRCNA exact baptized-nonprofessor discipline mechanics — only if Product later makes a precise CRCNA procedural claim.
+
+### Current-law/platform holds
+
+5. Exact reporting/recording/custody/platform procedures must be refreshed only if Product makes operational claims dependent on current jurisdiction/platform behavior.
+
+### Not holds anymore
+
+- `95/96/108 reconciliation` — closed;
+- OPC current noncommunicant mechanics — closed strongly enough for current comparison;
+- historical Baptist high-accountability pedigree — source-supported;
+- Product core routing — preflighted and selected.
 
 ---
 
 # 15. Current master thesis
 
-> **The choice is not between baptizing children and taking them seriously, or refusing infant baptism and leaving them morally neutral until a later conversion. The strongest paedobaptist traditions give believers’ children an objective visible-church covenant status with catechesis, oversight and discipline while still demanding personal faith. The Particular Baptist tradition rejects inherited baptism and membership but historically demands present obedience, prayer, catechesis, correction, Scripture, means of grace and urgent conversion while refusing to counterfeit regeneration. The live Baptist problem is therefore not credobaptism itself but the ecclesial vacuum that appears when “not yet a member” is allowed to mean “not really our pastoral responsibility.”**
+> **The choice is not between baptizing children and taking them seriously, or refusing infant baptism and leaving them morally neutral until a later conversion. The strongest paedobaptist traditions give believers’ children an objective visible-church covenant status with catechesis, oversight and real polity consequences while still demanding personal faith. The Particular Baptist tradition rejects inherited baptism and membership but historically demands present obedience, prayer, catechesis, correction, Scripture, means of grace and urgent conversion while refusing to counterfeit regeneration. The live Baptist problem is therefore not credobaptism itself but the ecclesial vacuum that appears when “not yet a member” is allowed to mean “not really our pastoral responsibility.”**
+
+And the evidentiary mirror:
+
+> **The stronger we make parental or ecclesial accountability, the more carefully we must speak only according to what is actually established. Authority is not evidence, suspicion is not conviction, and safeguarding responsibility remains real even where member-discipline jurisdiction does not exist.**
 
 ---
 
-# 16. Stop / continuation rule
+# 16. Recommended next action
 
-Do not create additional covenant-child modules for nuances already owned above.
+The next normal move is **not** another comparative Research module.
 
-Further files require one of:
+Priority order:
 
-- materially new primary evidence;
-- correction of a substantive overclaim;
-- high-risk unresolved issue that cannot fit an existing owner;
-- direct owner request for a new bounded question.
+1. keep this handoff synchronized with live parent drift;
+2. finish exact Product CI/review-state observation on #1895/#1921 without treating queued/in-progress as green;
+3. when a Product owner chooses to mutate, apply the small bounded insertions from `303` plus the parent late-evidence CORE-MUST deltas, each on its existing one-file branch;
+4. rerun exact-head Product gates;
+5. keep Draft/noindex until the separate publication owner authorizes release;
+6. create no covenant-child companion unless explicitly selected after another Product architecture preflight.
 
-Otherwise update/consolidate existing owners.
+### Final stop condition
+
+> **Research complexity now exists so Product can be simpler without becoming false. Preserve that asymmetry.**
