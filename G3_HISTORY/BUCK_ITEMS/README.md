@@ -17,7 +17,7 @@ A sermon is not `ITEM_VERIFIED` until all applicable gates are closed:
 
 A source-lineage or specificity finding can strengthen or weaken an allegation without closing the original-audio/attribution gates.
 
-## Reconciled registry — 2026-09-08
+## Reconciled registry — 2026-09-08 / PASS22
 
 | # | Sermon | Date | Claimed comparator | Current forensic state | Remaining principal gate(s) | Item file |
 |---:|---|---|---|---|---|---|
@@ -30,24 +30,26 @@ A source-lineage or specificity finding can strengthen or weaken an allegation w
 | 07 | Romans 4:1–12 | 2023-04-30 | Hughes, *Romans* | `SERMON_IDENTITY_VERIFIED / HUGHES_SPECIFIC_SEQUENCE_CANDIDATE / MULTIPLE_DISTINCTIVENESS_CLAIMS_DOWNGRADED` | audio + exact book object + attribution | [`07_ROMANS_4_1_12_SOURCE_SPECIFICITY.md`](07_ROMANS_4_1_12_SOURCE_SPECIFICITY.md) |
 | 08 | Romans 5:6–11 | 2023-06-04 | Hughes, *Romans* | `SERMON_IDENTITY_VERIFIED / STORY_SOURCE_NONUNIQUE` | exact verbal audio/source comparison + attribution | [`08_ROMANS_5_6_11_PETER_MILLER.md`](08_ROMANS_5_6_11_PETER_MILLER.md) |
 | 09 | Titus 1:1–4 | 2023-06-18 | Hughes & Bryan Chapell | `SERMON_IDENTITY_VERIFIED / ONE_STRONGLY_HUGHES_CHAPELL_LINKED_FORMULATION / OTHER_ROWS_LOWER_SPECIFICITY` | audio + exact book object + attribution | [`09_TITUS_1_1_4_SOURCE_SPECIFICITY.md`](09_TITUS_1_1_4_SOURCE_SPECIFICITY.md) |
-| 10 | Titus 2:11–15 | 2023-08-06 | Hughes & Chapell | `SERMON_IDENTITY_VERIFIED / SOURCE_LINEAGE_STRONG / BIOGRAPHICAL_FABRICATION_CLAIM_BLOCKED` | Buck audio + attribution; original Chapell/Jennifer objects for quote-safe closure | [`10_TITUS_2_11_15_AUTOBIOGRAPHY_AND_ATTRIBUTION.md`](10_TITUS_2_11_15_AUTOBIOGRAPHY_AND_ATTRIBUTION.md) |
-| 11 | Romans 7:1–6 | 2024-01-07 | Hughes, *Romans* | `SERMON_IDENTITY_VERIFIED / STRONG_PRE_BUCK_SOURCE_SEQUENCE_ANCHOR / TEXT_DRIVEN_ANALOGY_SEPARATED` | audio + exact book object + attribution | [`11_ROMANS_7_1_6_SOURCE_SPECIFICITY.md`](11_ROMANS_7_1_6_SOURCE_SPECIFICITY.md) |
-| 12 | Romans 15:1–6 | 2025-10-19 | Hughes, *Romans* | `SERMON_IDENTITY_VERIFIED / STRONG_PRE_BUCK_HUGHES_DERIVED_RHETORICAL_BLOCK / ILLUSTRATION_ORIGIN_CORRECTED` | audio + exact book object + attribution | [`12_ROMANS_15_1_6_SOURCE_LINEAGE.md`](12_ROMANS_15_1_6_SOURCE_LINEAGE.md) |
-| 13 | Romans 16:25–27 | 2025-12-21 | Hughes, *Romans* | `SERMON_IDENTITY_VERIFIED / ONE_STRONG_PRE_BUCK_RHETORICAL_SEQUENCE_CANDIDATE / ONE_LOW_SPECIFICITY_ROW` | audio + exact book object + attribution | [`13_ROMANS_16_25_27_SOURCE_SPECIFICITY.md`](13_ROMANS_16_25_27_SOURCE_SPECIFICITY.md) |
-| 14 | Joshua 1:1–9 | 2026-01-18 | David Jackman, *Joshua* | `STRUCTURAL_SIMILARITY_LOW_SPECIFICITY_UNLESS_EXTENDED_WORDING_CONFIRMS` | exact Buck audio + exact Jackman wording/attribution | [`14_JOSHUA_1_1_9_STRUCTURE_SPECIFICITY.md`](14_JOSHUA_1_1_9_STRUCTURE_SPECIFICITY.md) |
-| 15 | Joshua 2:1–24 | 2026-02-08 | Jackman, *Joshua* | `SERMON_IDENTITY_VERIFIED / SOURCE_OBJECT_PARTIALLY_PRIMARY_CLOSED / MIXED_SPECIFICITY` | Buck audio + attribution; remaining source rows | [`15_JOSHUA_2_1_24_SOURCE_OBJECT_AND_SPECIFICITY.md`](15_JOSHUA_2_1_24_SOURCE_OBJECT_AND_SPECIFICITY.md) |
-| 16 | Joshua 3:1–17 | 2026-02-15 | Jackman, *Joshua* | `SERMON_IDENTITY_VERIFIED / MULTIPLE_SOURCE_SPECIFIC_CANDIDATES` | exact Jackman pages + Buck audio + attribution | [`16_JOSHUA_3_1_17_SOURCE_LINEAGE.md`](16_JOSHUA_3_1_17_SOURCE_LINEAGE.md) |
-| 17 | Joshua 4:1–24 | 2026-03-01 | Jackman, *Joshua* | `SERMON_IDENTITY_VERIFIED / JACKMAN_PHRASE_SOURCE_SPECIFIC` | Buck audio + exact source/attribution context | [`17_JOSHUA_4_1_24_MEMORY_PHRASE.md`](17_JOSHUA_4_1_24_MEMORY_PHRASE.md) |
+| 10 | Titus 2:11–15 | 2023-08-06 | Hughes & Chapell | `ORIGINAL_MEDIA_SEGMENT_ACQUIRED / MACHINE_TRANSCRIPT_CONFIRMS_MARRIAGE_BLOCK / SOURCE_LINEAGE_STRONG / BIOGRAPHICAL_FABRICATION_CLAIM_BLOCKED` | human audio + wider attribution; exact immediate source where needed | [`10_TITUS_2_11_15_AUTOBIOGRAPHY_AND_ATTRIBUTION.md`](10_TITUS_2_11_15_AUTOBIOGRAPHY_AND_ATTRIBUTION.md) |
+| 11 | Romans 7:1–6 | 2024-01-07 | Hughes, *Romans* | `ORIGINAL_MEDIA_MACHINE_CONFIRMS_DISSOLVED-RELATIONSHIP_AND_ANTITHESIS_BLOCKS / TEXT-DRIVEN_ANALOGY_SEPARATED` | human audio + exact Hughes object + wider attribution | [`11_ROMANS_7_1_6_SOURCE_SPECIFICITY.md`](11_ROMANS_7_1_6_SOURCE_SPECIFICITY.md) |
+| 12 | Romans 15:1–6 | 2025-10-19 | Hughes, *Romans* | `ORIGINAL_MEDIA_MACHINE_CONFIRMS_STRONG_CHRIST-EXAMPLE_GLORY_BLOCK / CIRCULATING-ILLUSTRATION_CORRECTION` | human audio + exact Hughes object + wider attribution; remaining rows separately | [`12_ROMANS_15_1_6_SOURCE_LINEAGE.md`](12_ROMANS_15_1_6_SOURCE_LINEAGE.md) |
+| 13 | Romans 16:25–27 | 2025-12-21 | Hughes, *Romans* | `ORIGINAL_MEDIA_MACHINE_CONFIRMS_FIVE-ELEMENT_SEQUENCE / ONE_LOW-SPECIFICITY_ROW` | human audio + exact Hughes object + wider attribution | [`13_ROMANS_16_25_27_SOURCE_SPECIFICITY.md`](13_ROMANS_16_25_27_SOURCE_SPECIFICITY.md) |
+| 14 | Joshua 1:1–9 | 2026-01-18 | David Jackman, *Joshua* | `ORIGINAL_MEDIA_CONFIRMS_TEXT-DRIVEN_KNOW_OBEY_MEDITATE_MATERIAL / NEGATIVE_CONTROL_LOW_SPECIFICITY` | exact Jackman wording + human audio/attribution if stronger verbal claim pursued | [`14_JOSHUA_1_1_9_STRUCTURE_SPECIFICITY.md`](14_JOSHUA_1_1_9_STRUCTURE_SPECIFICITY.md) |
+| 15 | Joshua 2:1–24 | 2026-02-08 | Jackman, *Joshua* | `EXACT_JACKMAN_JOSHUA2_SAMPLE_PRIMARY-ANCHORED / ORIGINAL_MEDIA_MACHINE_CONFIRMS_MULTIPLE_STRONG_AND_WEAK_ROWS / MIXED_SPECIFICITY` | human audio + wider attribution; upstream controls where needed | [`15_JOSHUA_2_1_24_SOURCE_OBJECT_AND_SPECIFICITY.md`](15_JOSHUA_2_1_24_SOURCE_OBJECT_AND_SPECIFICITY.md) |
+| 16 | Joshua 3:1–17 | 2026-02-15 | Jackman, *Joshua* | `ORIGINAL_MEDIA_MACHINE_CONFIRMS_DENSE_CLUSTER / STRONG_CAUSAL_AND_HERMENEUTICAL_SOURCE-FAMILY_ROWS / COMMON_ROWS_DOWNGRADED` | exact Jackman pp. 41–49 + human audio + wider attribution | [`16_JOSHUA_3_1_17_SOURCE_LINEAGE.md`](16_JOSHUA_3_1_17_SOURCE_LINEAGE.md) |
+| 17 | Joshua 4:1–24 | 2026-03-01 | Jackman, *Joshua* | `ORIGINAL_MEDIA_MACHINE_CONFIRMS_DISTINCTIVE_MEMORY_PHRASE / JACKMAN-PHRASE_SOURCE-SPECIFIC` | human audio + exact Jackman pp. 51–57 + wider attribution | [`17_JOSHUA_4_1_24_MEMORY_PHRASE.md`](17_JOSHUA_4_1_24_MEMORY_PHRASE.md) |
 
-## Progress interpretation
+## Progress interpretation after PASS22
 
-- **17/17** accusation-sermon items now have dedicated forensic files.
-- **0/17** are currently declared `ITEM_VERIFIED` because the common original-audio / human timestamp / attribution gate remains open, and several items still require exact source-edition closure.
-- The item audits have already produced both **strengthening evidence** and **material corrections/downgrades** to the accusation dossier. The corpus therefore cannot honestly be summarized as either `all allegations proved` or `all allegations disproved`.
-- Long/source-specific rhetorical sequences can be probative when original audio confirms them; ordinary exegetical observations, circulating illustrations and upstream quotations must not be falsely credited as unique to the claimed commentary.
-- Item 10 expressly blocks the leap from a textual-attribution problem to the factual claim that Buck fabricated his own marriage experience.
-- Item 15 has a major source-side upgrade through an identified Jackman publisher/distributor sample, but the Buck-side audio gate remains open.
+- **17/17** accusation-sermon items have dedicated forensic files.
+- PASS22 original-media matrix for Items **11–17 completed 7/7 success** on exact head `82a0d599…`.
+- Items **10–17** now have an official original-media acquisition result or acquired bounded segment in the evidence chain.
+- All acquired audio was used ephemerally and removed before artifact upload; retained artifacts contain receipts, hashes and machine transcripts only.
+- The late original-media pass produced **strong upgrades, mixed results and a negative control**, not a one-way accusation confirmation.
+- **0/17** are declared `ITEM_VERIFIED`: human listening, exact source objects and wider attribution remain open where applicable.
+- Item 10 continues to block the leap from a textual-attribution question to the factual claim that Buck fabricated an analogous marriage history.
+- Item 14 is a key anti-bias control: original audio confirms the conceptual content but does not make text-driven Joshua 1 structure a strong literary fingerprint.
 
 ## Numerical-verdict firewall
 
-No global numerical verdict such as `45 proven instances`, `X% plagiarized`, or `17 sermons plagiarized` is permitted until the row-level matrix has human-checked audio, exact source objects, attribution context and dependence classification. Item-file coverage is a **research coverage metric**, not a misconduct count.
+No global numerical verdict such as `45 proven instances`, `X% plagiarized`, or `17 sermons plagiarized` is permitted until the row-level matrix has human-checked audio, exact source objects, attribution context and dependence classification. Item-file coverage and media acquisition are **research coverage metrics**, not misconduct counts.
