@@ -6,15 +6,15 @@
 **Draft PR:** #187  
 **Target Product:** `FedorMilovanov/gb-is-my-strength`
 
-> This is the canonical **index**, not the full research corpus. It does not supersede repository-root authority. Resolve repository authority/current agent/evidence policy first.
+> This is the canonical **index**, not the full corpus. Resolve repository-root authority, current `AGENT_RULES.md`, and current evidence policy first.
 
-> User requirements are project authority. They may be compressed in publication prose; they may not be silently deleted from Research or reinterpreted by a new agent from generic memory.
+> User requirements are project authority. Publication may compress them; Research may not silently delete or redefine them. Exact filenames matter because parallel agents legitimately created duplicate numeric prefixes.
 
 ---
 
 ## 1. Mandatory continuity chain after any context reset
 
-Read in this order before changing Research or drafting Product:
+Read before changing Research or drafting Product:
 
 1. repository-root authority + current agent/evidence policy;
 2. **this file**;
@@ -26,27 +26,25 @@ Read in this order before changing Research or drafting Product:
 8. `181_CONTINUITY_APPENDIX_DAUGHTER_TRADITIONS_THIRD_PARTY_NON_UNDERMINING_MEDIATION_AND_RIGHTEOUS_INTERVENTION_2026-09-08.md`;
 9. `186_CONTINUITY_APPENDIX_FIFTH_COMMANDMENT_1COR7_EVANGELICAL_MODELS_ANCIENT_ISRAEL_FEMINISM_AND_AUTONOMY_2026-09-08.md`;
 10. `191_CONTINUITY_APPENDIX_NEW_HOUSEHOLD_UNMARRIED_FEMALE_AGENCY_MODERN_AUTONOMY_GENEALOGY_AND_HISTORICAL_THEOLOGY_2026-09-08.md`;
-11. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
-12. exact late appendices `153`, `162`, `170` where relevant;
-13. part-specific source packets/claim ledgers.
+11. `198_CONTINUITY_APPENDIX_CASE_MATRIX_REFORMATION_CONSENT_STATUS_JURISDICTION_HOUSEHOLD_GOVERNMENT_FEMINISM_RUSSIAN_ECB_2026-09-08.md`;
+12. `200_ADVERSARIAL_STRESS_TEST_STRONG_FATHER_LED_MODEL_EPH6_NUM30_1COR7_GILL_CALVIN_POOLE_AND_LIMITS_2026-09-08.md`;
+13. `140_AUTHORITATIVE_LATE_STAGE_RESEARCH_CLOSURE_OVERLAY_CANONICAL_READ_ORDER_P0_SUPERSEDERS_AND_PRODUCT_HANDOFF_2026-09-07.md`;
+14. exact late appendices `153`, `162`, `170` where relevant;
+15. part-specific source packets/claim ledgers.
 
-For adult/family-government work also read exact source modules:
+For adult/family-government work also read by **full filename**:
 
-`171 → 172 → 173 → 174 → 175 → 177 → 178 → 179 → 180 → 182 → 183 → 184 → 185 → 187 → 188 → 189 → 190`.
+`171–180`, `182–185`, `187–197`, `199`.
 
-**Authority rule:** `45/54/62/78/176/181/186/191` preserve owner intent. Later exegesis/evidence controls may correct an unsafe formulation but may not silently erase the underlying question.
-
-Use exact filenames because older duplicate numeric prefixes exist.
+**Authority rule:** `45/54/62/78/176/181/186/191/198` preserve owner intent. Later evidence/exegesis/adversarial controls may narrow unsafe wording but may not erase the underlying question.
 
 ---
 
 ## 2. Locked method
 
-`Scripture historical-grammatical/canonical context → 1689 LBCF/confessional guard → Puritan/Reformed practical theology → conservative biblical counseling → historical/empirical material only for the claims it can establish.`
+`Scripture historical-grammatical/canonical context → 1689 LBCF/confessional guard → Particular Baptist + Puritan/Reformed practical theology → conservative biblical counseling → historical/empirical material only for claims it can establish.`
 
-High-value Reformed authority grammar such as Westminster Larger Catechism 124–132 may be used as historical/confessional witness without replacing 1689 as project confession.
-
-Do not drift into psychology-led anthropology.
+Do not drift back to psychology-led anthropology.
 
 Controlling anthropology:
 
@@ -60,26 +58,26 @@ Controlling anthropology:
 2. **Part II — Parents:** sovereignty + means → formation → individualized boundaries → truth channel → discovery → repentance → trust/re-entrustment.
 3. **Part III — Church:** child responsibility → worship/hypocrisy → public Word vs trusted roles → choir/youth/small groups → corrupting influence → discipline/safeguarding → restoration.
 
-Adult/family-government material remains separate. `ARCHITECTURE_REVIEW_REQUIRED` is active before Product drafting.
+Adult/family-government material remains separate. `ARCHITECTURE_REVIEW_REQUIRED` remains active before Product drafting.
 
 ---
 
 ## 4. High-risk P0s — teen / parents / church
 
-Future agents must preserve:
+Preserve:
 
-- `unregenerate ≠ innocent`;
-- children do not receive a lower doctrine of holiness because they are children;
-- a teenager may still know sin is wrong while practically ceasing to debate it and living by passions/desires;
+- `unregenerate ≠ innocent`; childhood is not a moral waiting room;
+- children do not receive a lower holiness standard because they are children;
+- advanced hidden sin may mean the teenager still knows wrong is wrong but practically ceases to debate it and lives by passions/desires;
 - temporary pleasure of sin is real; deeper issue is rival love/allegiance, not merely stimulation;
 - `caught ≠ admitted after proof ≠ voluntarily disclosed ≠ asked for help before falling`;
 - repeated struggle + truth/warfare/help-seeking ≠ planned concealment/defense/recruitment/refusal of correction;
 - forgiveness ≠ reconciliation ≠ credibility ≠ trust ≠ access ≠ role ≠ safeguarding;
 - Christ/justification must not be displaced by punishment, improvement or trust rebuilding;
-- no invented `internet ×20`, universal dopamine damage, universal porn escalation or automatic `seared conscience forever` diagnosis;
+- no invented `internet ×20`, universal dopamine damage, universal porn escalation, or automatic `seared conscience forever` diagnosis;
 - voluntary sexual sin ≠ coercion ≠ grooming ≠ nonconsensual sharing ≠ sextortion;
 - **WORSHIP DUTY ≠ CHOIR ENTITLEMENT**;
-- public Word hearing ≠ membership/Table ≠ formal choir/platform ≠ leadership ≠ confidential youth access ≠ unsupervised access to vulnerable children;
+- public Word hearing ≠ membership/Table ≠ choir/platform ≠ leadership ≠ confidential youth access ≠ unsupervised access to vulnerable children;
 - `retention of attendance is not a higher good than truthful admonition`;
 - church should remain open for hearing truth where safe without becoming safe for defended sin from truth.
 
@@ -89,7 +87,7 @@ Russian Psalm-numbering guard: historical English Psalm 50:16–21 = Synodal **�
 
 ## 5. Editorial HOLD — ordinary life becomes “bland”
 
-Owner's original concern that repeated pornographic/sexualized/profane stimulation can make lawful ordinary life feel progressively flat remains `EDITORIAL_HOLD`.
+Owner's original concern that repeated pornographic/sexualized/profane stimulation can make lawful ordinary life feel increasingly flat remains `EDITORIAL_HOLD`.
 
 Before final release record explicit:
 
@@ -107,7 +105,7 @@ Preserve:
 - false/ambiguous repentance and repeated deception while still at home;
 - **hope in God ≠ confidence in the current repentance claim**;
 - co-residence can become a stewardship problem for a competent adult;
-- separate residence may become legitimate boundary but never conversion technique;
+- separate residence may become a legitimate boundary but never a conversion technique;
 - minors/legally dependent children are a different legal/stewardship case;
 - sudden/secret departure may justify reasonable initial safety/fact clarification;
 - Luke 15 is repentance/mercy text, not universal contact/no-contact manual;
@@ -121,50 +119,95 @@ Preserve:
 - no universal timeline/tablet;
 - legal/tenancy/safeguarding operations require current jurisdiction verification.
 
-OT separation/removal texts require actor/jurisdiction/covenant/procedure audit. Do not turn Mosaic civil penalties, Hagar/Ishmael, Ezra 10, ritual exclusion or covenant exile into direct modern parental eviction instructions.
+OT separation/removal texts require actor/jurisdiction/covenant/procedure audit. Do not turn Mosaic civil penalties, Hagar/Ishmael, Ezra 10, ritual exclusion or covenant exile into direct modern eviction instructions.
 
 ---
 
-## 7. Daughter / father / adulthood / marriage — mandatory
+## 7. Status-sensitive adulthood — P0
 
-The project must resist modern atomistic autonomy **without** inventing unbounded paternal sovereignty.
+Use `194`.
 
-Locked findings:
+Never counsel from the word **adult** alone. Distinguish:
+
+- minor at home;
+- legally adult but resident/dependent;
+- recently/secretly departed after live family conflict;
+- competent long-independent adult;
+- unmarried adult daughter at home;
+- engaged/serious courtship;
+- married son/daughter;
+- widow;
+- defended gross sin.
+
+Locked synthesis:
+
+> **Biblical adulthood is a transition in jurisdiction and responsibility, not emancipation from every inherited obligation.**
+
+`GROWN => LESS PARENTAL POWER` does not imply `NO FILIAL DUTY`.
+
+`ENGAGED ≠ MARRIED`.
+
+Recent physical departure does not instantly erase a still-live family relation.
+
+---
+
+## 8. Daughter / father / adulthood / marriage — mandatory
+
+Use `175`, `177`, `182–200` as applicable.
+
+Preserve together:
 
 - fifth-commandment honour persists beyond childhood;
 - adulthood changes form/degree of parental government;
-- civil age 18 is not a biblical sacrament, but civil law changes lawful jurisdiction;
+- civil age 18 is not a biblical sacrament, though civil law changes lawful jurisdiction;
 - ancient Israelite household was corporate/kinship-oriented, not atomistic;
 - family involvement in marriage is substantial in Scripture and historic Protestant theology;
-- Genesis 24 combines strong family negotiation with Rebekah's own affirmative answer;
-- Exodus 22 gives father real standing in its Mosaic civil-law case;
-- Numbers 30 gives real paternal/husband authority but adult-daughter extension is historically/exegetically disputed;
-- later Jewish tradition distinguishes minor and adult daughter in paternal betrothal/vow authority;
-- Gouge/Baxter/Calvin/Gill strongly resist casual individualist bypass while distinguishing maturity/status changes;
-- wife submission is to **her own husband**; husband headship is a direct marital relation;
-- fatherhood is not identical to husband-headship-in-waiting;
+- Genesis 24 combines strong family process with Rebekah's affirmative answer;
+- daughters of Zelophehad show real legal agency; Numbers 36 gives **choice inside objective covenantal bounds** (`CHOICE ≠ AUTONOMY`);
+- Achsah/Ruth/Hannah/Abigail/Michal supply differentiated case controls; exceptional necessity does not abolish ordinary order;
+- Numbers 30 gives real paternal/husband authority but its mature-unmarried-daughter extension is disputed;
+- 1 Cor. 7:36–38 has substantial father/guardian and fiancé readings; it cannot bear a universal doctrine alone;
+- on the traditional father reading, Poole/Calvin themselves limit paternal power where the daughter's welfare/need for marriage requires it;
+- Gill applies filial duty across ages but explicitly says parental power is **less when grown**;
+- Calvin demands real deference even in difficult/non-sinful matters while limiting all human authority under God;
+- wife submission is to **her own husband**; fatherhood is not identical to husband-headship-in-waiting;
 - marriage creates a new primary one-flesh household relation while filial honour remains;
 - forced marriage is not justified;
 - `daughter as transferable property` is unsafe Christian language;
-- female work, property competence, education and gifts are not inherently rebellion;
+- female education/work/property competence/gifts are not inherently rebellion;
 - unmarried/widowed women can have direct Godward calling and substantial agency without requiring a generic private male governor;
 - popular `male covering` language is not a controlling biblical phrase; use actual God-ordained relations.
 
-If advocating a stronger father-guardianship-until-marriage model, label it as a cumulative inference and prove it. Do not present it as undisputed NT law.
+### Strong father-led model — current evidence class
+
+A strong model has serious cumulative support, especially for:
+
+- a daughter still resident/dependent in the parental household;
+- courtship/marriage;
+- family-affecting commitments;
+- transparency and non-bypass of substantially faithful parents.
+
+But the universal proposition
+
+> `every mature unmarried daughter remains under husband-like paternal government over all major decisions until marriage`
+
+is **CUMULATIVE_INFERENCE**, not an undisputed NT statute.
+
+If Product advocates it more strongly, it must prove the New Covenant transfer, son/daughter asymmetry, age/status boundaries, and preserve adult consent.
 
 ---
 
-## 8. Fifth-commandment relational authority — P0
+## 9. Fifth-commandment relational authority — anti-autonomy and anti-tyranny
 
-Use `182` and `186`.
+Use `182`, `186`, `200`.
 
-Westminster Larger Catechism 124–132 supplies a valuable historic Reformed grammar:
+Historic Reformed authority grammar preserves:
 
 - real superiors/inferiors/equals;
 - duties according to **several relations**;
 - obedience/deference to lawful commands/counsels;
 - authority received from God and bounded by relation/place;
-- superiors themselves sin through unlawful demands, sinful encouragement, excessive correction, provocation, unjust rigor or remissness.
+- superiors sin through unlawful demands, sinful encouragement, excessive correction, provocation, unjust rigor or remissness.
 
 Reject both:
 
@@ -178,105 +221,117 @@ and
 
 ---
 
-## 9. Marriage transition — P0
+## 10. Marriage / parental consent — Scripture, Reformed history, 1689 control
 
-Use `187`.
+Use `193`, `199`.
 
-Gen. 2:24 is repeated by Jesus and Paul. Calvin and Chrysostom treat marriage as a distinct, extraordinarily strong relation.
+Historic Reformed evidence is strong:
 
-> **Marriage reorders relational priority while filial duty remains.**
+- Luther opposed secret engagement without parental consent while also opposing parental compulsion/unjust obstruction;
+- Second Helvetic explicitly expects parental consent;
+- Westminster Directory applies parental-consent procedure even to adults with living parents in **first marriage**, while requiring free consent and forbidding parents to force/refuse without just cause;
+- Gouge/Baxter preserve strong parental marriage involvement.
 
-Do not frame this as ownership transfer.
+But project confession is 1689, not Westminster.
 
-Do not use `leave and cleave` to abandon needy parents; Mark 7 / 1 Tim. 5 retain real family duties.
+### Particular Baptist control
 
----
+1689 LBCF ch. 25 explicitly requires parties able **with judgment to give their consent**, marriage `in the Lord`, and morally qualified unions. It does **not** itself contain Westminster Directory's adult-first-marriage parental-consent clause.
 
-## 10. 1 Corinthians 7 / unmarried-widowed female agency — P0
+Hercules Collins' *Orthodox Catechism* preserves strong fifth-commandment authority language. Benjamin Keach demands child obedience “in all things in the Lord,” serious parental nurture, and condemns indulgence of sinful desires while also condemning harsh/bitter provocation.
 
-Use `183`, `188`.
+Therefore:
 
-Preserve together:
+> **Strong parental authority and involvement are genuinely Particular Baptist-compatible; a specific Westminster marriage procedure must be labeled broader historic Reformed evidence unless separately demonstrated from Particular Baptist sources.**
 
-- 1 Cor. 7:34 — unmarried woman/virgin directly concerned with the Lord and holiness;
-- 1 Cor. 7:36–38 — substantial traditional father/guardian reading **and** substantial fiancé reading;
-- even Calvin/Poole father-reading limits tyranny and requires regard for daughter's welfare;
-- 1 Cor. 7:39 — widow free to marry whom she wishes, `only in the Lord`;
-- 1 Tim. 5 / Anna / Lydia / Prov. 31 show women with direct spiritual calling, household/economic agency and differentiated status.
-
-Therefore neither `parental involvement is unbiblical` nor `every adult unmarried woman requires a private male governor for all major decisions` is a safe universal claim.
+`PARTICULAR_BAPTIST_GENERAL_ASSEMBLY_ADULT_PARENTAL_CONSENT_RULE = LOCATOR_HOLD` until exact evidence is found.
 
 ---
 
-## 11. Modern evangelical models — distinguish
+## 11. Household government / connivance — P0
 
-Use `184`.
+Use `172`, `195`.
 
-At minimum distinguish:
+Eli, 1 Tim. 3, Titus 1, Psalm 101, Joshua 24 and Reformed family-worship practice support a real doctrine of household stewardship, with jurisdiction guards.
+
+Parents are not responsible to regenerate an adult child. They can still be responsible for what they knowingly authorize, finance, platform, conceal or refuse to restrain inside their actual sphere.
+
+> **A Christian parent cannot save a rebel by controlling the house. A Christian parent also cannot evade responsibility for the house merely by saying the rebel is an adult.**
+
+“Love/patience” may become connivance when it predictably preserves the infrastructure, role, access, concealment or danger of defended serious sin.
+
+`MY HOUSE, MY RULES` is insufficient by itself. Christian household conditions must be lawful, related to actual stewardship, proportionate, truthful, non-retaliatory, status-sensitive and protective of others.
+
+Physical proximity is not automatically a higher good than truthful household government.
+
+---
+
+## 12. Modern evangelical models / feminism / autonomy — precision required
+
+Use `184`, `189`, `196`, `197`.
+
+Distinguish at least:
 
 1. evangelical egalitarian/mutualist;
 2. mainstream complementarian;
-3. strong household/father-guardianship.
+3. strong household/father-guardianship;
+4. secular/liberal/expressive autonomy.
 
-Project remains conservative/complementarian but must critique actual arguments.
+Project remains conservative/complementarian, but critique actual doctrines rather than stereotypes.
 
-Danvers/CBMW does not itself establish the strongest adult-daughter guardianship model. Strong father-guardianship may be argued only with additional exegesis/inference.
+Legitimate targets can include:
 
----
+- flattening/denial of husband headship;
+- hierarchy treated as oppression by definition;
+- adulthood treated as emancipation from inherited moral relations;
+- private-couple marriage/courtship that treats family/church as morally irrelevant;
+- role equality equated with role identity;
+- expressive self-authorship as source of obligation.
 
-## 12. Modern autonomy / feminism — precision required
+Do **not** attack as sinful/feminist merely in themselves:
 
-Use `184`, `185`, `189`, `191`.
+- female education;
+- productive work;
+- property competence;
+- adult consent in marriage;
+- refusal of forced marriage;
+- protection from abuse;
+- substantial unmarried/widowed female agency before Christ.
 
-Do not use `feminism` as one undifferentiated cause.
+> **Biblical anti-autonomy applies to fathers, husbands, sons and daughters.**
 
-Distinguish:
-
-- civil/legal women's rights;
-- liberal/expressive/atomistic individualism;
-- industrialization/wage labour/urban mobility;
-- sexual-revolution feminism;
-- evangelical egalitarian theology;
-- radical anti-patriarchal ideology;
-- feminist `relational autonomy` approaches that themselves reject atomistic self-sufficiency.
-
-Preferred cultural thesis:
-
-> **Modern Western adulthood often treats emancipation from inherited authority as maturity. Scripture presents maturity instead as increasing capacity to bear responsibility faithfully under God within the relations He actually gives.**
-
-And:
-
-> **Modern Western individualism, reinforced by important feminist currents, often treats inherited dependence and asymmetrical authority as presumptively suspect in ways foreign to Scripture's relational/covenantal social imagination.**
-
-Do not claim feminism alone invented independent daughters.
-
-Economic/legal capacity ≠ moral autonomy. Dependence ≠ holiness by itself.
+The answer to feminist/individualist flattening is not male self-will or paternal absolutism.
 
 ---
 
-## 13. Historical-context transfer guard
+## 13. Russian ECB context — evidence, not final authority
 
-Use `177`, `185`, `190`.
+Use `197`.
 
-Ancient Israel/historic Christianity strongly contradict modern flat individualism, but not every historical patriarchal form is automatically a New Covenant command.
+Accessible Union-hosted Russian ECB material combines:
 
-For each claim audit:
+- strong family primacy;
+- parental spiritual responsibility;
+- significant father role;
+- husband-headship/complementarian language;
 
-1. creation ordinance / moral law / Mosaic civil / ceremonial / wisdom / narrative / apostolic command / custom;
-2. actor and jurisdiction;
-3. age/status;
-4. prescription vs description;
-5. NT continuation/transformation/abrogation/general equity.
+with a modern developmental model:
 
-Use feminist/historical scholarship for descriptive claims it can establish without importing its normative theology.
+`dependence → increasing responsibility → adult cooperation → full independence`, while lifelong honour remains.
 
-Use strong-patriarchal writers as witnesses to a tradition without letting tradition replace exegesis.
+Do not say `РС ЕХБ официально учит феминизму`.
+
+Do not say `российские баптисты всегда учили father-guardianship до брака`.
+
+Use the tension as evidence that contemporary conservative evangelical practice itself needs biblical evaluation.
+
+> **Current evangelical custom is evidence about our culture, not the final standard of God's command.**
 
 ---
 
 ## 14. Third parties / suitors — P0
 
-Use `179`, `181`.
+Use `179`, `181`, `193`, `194`.
 
 Where parents are substantially faithful and confronting real sin, outsiders must not build a Christian-looking alternative household whose practical function is helping the child avoid truth/consequences.
 
@@ -304,10 +359,10 @@ Distinguish:
 
 Likely review split:
 
-1. adult/prodigal companion — remain / leave / return, false repentance, co-residence, contact, relational rupture, restoration;
-2. daughter / father / marriage / family-government companion — adulthood, fifth commandment, parental consent, OT/traditional approaches, marriage transition, husband headship, work/gifts, third-party ethics, autonomy/feminism.
+1. **adult/prodigal companion** — remain / leave / return, false repentance, co-residence, contact, relational rupture, restoration;
+2. **daughter / father / marriage / family-government companion** — adulthood, fifth commandment, parental consent, OT/traditional approaches, marriage transition, husband headship, work/gifts, third-party ethics, autonomy/feminism.
 
-Do not create/split Product automatically. Re-fetch live Product ownership/CI before mutation.
+Do not create/split Product automatically. Re-fetch live Product ownership/CI before any Product mutation.
 
 ---
 
@@ -316,14 +371,20 @@ Do not create/split Product automatically. Re-fetch live Product ownership/CI be
 Before every write:
 
 - re-fetch exact Research PR/branch head;
-- re-fetch current blob SHA for any shared file;
+- re-fetch current blob SHA for a shared file;
 - never overwrite a concurrent change blindly;
-- prefer additive modules for new research;
+- prefer additive research modules;
 - reconcile material deltas rather than importing every source into publication;
-- do not merge or mark ready merely because a lane is content-complete.
+- do not merge or mark ready merely because one lane is content-complete.
+
+Parallel `*_GAP_EXPANSION_*` files may share numeric prefixes with family-government modules. Numeric prefix alone is never an identifier.
 
 ---
 
 ## 17. Final synthesis
 
-> **The biblical alternative to feminist individualism is not paternal absolutism. It is ordered creaturely dependence under God: real fathers and mothers, real adult responsibility, real female agency, real husband headship in marriage, real church authority, real limits on every human authority, and lifelong obligations of truth, honour, love and holiness.**
+> **The biblical alternative to feminist individualism is not paternal absolutism. It is ordered creaturely dependence under God: real fathers and mothers, real adult responsibility, real female agency, real husband headship in marriage, real church authority, real household stewardship, real limits on every human authority, and lifelong obligations of truth, honour, love and holiness.**
+
+And:
+
+> **The strongest conservative case gains credibility by refusing both cultural autonomy and exegetical overreach.**
