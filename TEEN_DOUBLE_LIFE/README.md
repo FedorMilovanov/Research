@@ -11,11 +11,12 @@
 
 1. Resolve repository-root authority through `CURRENT_AUTHORITY.md` → authority registry → selected authority.
 2. Read current `AGENT_RULES.md` and repository evidence policy.
-3. Read **[`CURRENT_SERIES_HANDOFF.md`](./CURRENT_SERIES_HANDOFF.md)** and follow its exact mandatory chain. The canonical handoff now includes the late `298 → 299 → 300 → 301 → 302 → 303` sequence directly.
-4. For Companion A provenance/preflight, the exact `302` file is **[`302_COMPANION_A_PRODUCT_PREFLIGHT_CLAIM_LEDGER_COLLISION_VERDICT_EVIDENCE_CLASSES_AND_SOURCE_SELECTION_2026-09-08.md`](./302_COMPANION_A_PRODUCT_PREFLIGHT_CLAIM_LEDGER_COLLISION_VERDICT_EVIDENCE_CLASSES_AND_SOURCE_SELECTION_2026-09-08.md)** and the mandatory direct-owner supplement is **[`303_COMPANION_A_DIRECT_OWNER_REQUIREMENTS_SUPPLEMENT_ISRAEL_ANALOGY_MODERN_ECONOMY_SOCIAL_CONTACT_2026-09-08.md`](./303_COMPANION_A_DIRECT_OWNER_REQUIREMENTS_SUPPLEMENT_ISRAEL_ANALOGY_MODERN_ECONOMY_SOCIAL_CONTACT_2026-09-08.md)**.
-5. Only then open claim-specific/source modules.
+3. Read **[`CURRENT_SERIES_HANDOFF.md`](./CURRENT_SERIES_HANDOFF.md)** and follow its exact mandatory chain.
+4. Until the shared handoff is safely reconciled with the newest late modules, immediately read **[`301_CONTINUITY_PATCH_LATE_298_300_PRODUCT_TRANSFER_AND_COMPANION_A_PREFLIGHT_2026-09-08.md`](./301_CONTINUITY_PATCH_LATE_298_300_PRODUCT_TRANSFER_AND_COMPANION_A_PREFLIGHT_2026-09-08.md)** as a mandatory additive delta.
+5. Before any Product drafting of Companion A, read **[`302_COMPANION_A_PRODUCT_PREFLIGHT_CLAIM_LEDGER_OWNERSHIP_COLLISION_AND_SOURCE_BUDGET_2026-09-08.md`](./302_COMPANION_A_PRODUCT_PREFLIGHT_CLAIM_LEDGER_OWNERSHIP_COLLISION_AND_SOURCE_BUDGET_2026-09-08.md)** and **[`303_COMPANION_A_DIRECT_OWNER_REQUIREMENTS_SUPPLEMENT_ISRAEL_ANALOGY_MODERN_ECONOMY_SOCIAL_CONTACT_2026-09-08.md`](./303_COMPANION_A_DIRECT_OWNER_REQUIREMENTS_SUPPLEMENT_ISRAEL_ANALOGY_MODERN_ECONOMY_SOCIAL_CONTACT_2026-09-08.md)**.
+6. Only then open claim-specific/source modules.
 
-Do **not** infer current project phase from historical closure/compression files. Do **not** begin Part I or Companions A–D again merely because an older document says “draft next.” All seven primary Product content owners already exist as separate Draft/noindex lanes and must be live-fetched independently in `FedorMilovanov/gb-is-my-strength` before any Product mutation.
+Do **not** infer current project phase from historical closure/compression files. Do **not** begin Part I again merely because an older document says “Part I drafting.” Product work already exists and must be live-fetched independently in `FedorMilovanov/gb-is-my-strength` before any Product mutation.
 
 ## Locked method
 
@@ -38,7 +39,7 @@ Research-layer architecture for the adult/family-government material is **resolv
 6. Companion C — adulthood and parental authority;
 7. Companion D — daughter, father, courtship and marriage.
 
-This is claim ownership, **not automatic publication authorization**. The seven primary Product drafts are already materialized; their remaining gates are live reconciliation, review/CI closure and publication/release engineering.
+This is claim ownership, **not automatic Product authorization**. Every companion still requires live Product ownership/collision preflight, evidence-class review, source selection and exact-head CI. Do not draft all companions simultaneously.
 
 The older `99_ADULT_CHILD_COMPANION_SELECTED_SOURCE_PACKET...` remains a useful source packet but does not supersede the later `237/239` ownership split.
 
@@ -46,7 +47,9 @@ The older `99_ADULT_CHILD_COMPANION_SELECTED_SOURCE_PACKET...` remains a useful 
 
 Late disclosure/evidence Research is saturated at the category level by `299`; normal next work is compression/routing/Product readiness, not creating a new module for each hypothetical edge case.
 
-`300_PRODUCT_READINESS_TRANSFER_MATRIX...` is the late transfer control. `301...` records the historical continuity repair now integrated into `CURRENT_SERIES_HANDOFF.md` itself. `302...` and `303...` preserve Companion A preflight and the direct owner requirements concerning the guarded Israel analogy, the changed economic reality of a working modern eighteen-year-old compared with Luke 15's inheritance narrative, and social-media/blocking/contact questions without turning parental concern into covert surveillance.
+`300_PRODUCT_READINESS_TRANSFER_MATRIX...` is the current late transfer control. In particular, it leaves a compact core delta for Part II (`293–294`) and Part III (`293–297`). Read `301...` for the temporary handoff correction until those late files are folded into `CURRENT_SERIES_HANDOFF.md` itself.
+
+For the first adult companion, `302...` is the live Product preflight/claim ledger and `303...` is a mandatory direct-owner supplement. `303...` prevents architectural compression from dropping three user-controlled parts of the original case: the strictly guarded Israel warning/consequence/restoration analogy, the changed economic reality of a working modern eighteen-year-old compared with Luke 15's inheritance narrative, and social-media/blocking/contact questions without turning parental concern into covert surveillance.
 
 ## Concurrency / filenames
 
@@ -60,8 +63,7 @@ Before every write:
 - re-fetch shared-file blob SHA;
 - prefer additive modules where a shared-file edit is not necessary;
 - never overwrite concurrent changes blindly;
-- route material deltas through `CURRENT_SERIES_HANDOFF.md` and the late routing controls rather than importing every research file wholesale into Product;
-- live-fetch existing Product owners before editing; do not create competing Part I/II/III or A/B/C/D lanes;
+- route material deltas through `CURRENT_SERIES_HANDOFF.md`, `301...`, `302...`, `303...` and the late routing controls rather than importing every research file wholesale into Product;
 - do not force/rebase active shared lanes merely to make history look linear.
 
 ## Publication state
