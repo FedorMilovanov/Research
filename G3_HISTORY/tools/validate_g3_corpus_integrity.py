@@ -39,6 +39,7 @@ REQUIRED_FILES = [
 ]
 
 G3_WORKFLOWS = [
+    "g3-archive-content-inventory-acquisition.yml",
     "g3-buck-media-windows.yml",
     "g3-buck-rss-media-inventory.yml",
     "g3-buck-titus-media-acquisition.yml",
