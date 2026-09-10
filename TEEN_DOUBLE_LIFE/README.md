@@ -2,20 +2,23 @@
 
 **Status:** RESEARCH-ONLY / NOT PUBLICATION  
 **Target product:** `FedorMilovanov/gb-is-my-strength`  
-**Lane:** `research/teen-double-life-digital-sin-20260907`  
-**Draft PR:** #187
+**Current Research authority:** `main@01da44a31544646111294b83cb2c36b3852687ac` — merged clean successors #201 + #202  
+**Historical drafting lane:** `research/teen-double-life-digital-sin-20260907` / PR #187 — closed unmerged, provenance only  
+**Active teen Research production PR:** none
 
 > This README is only a directory entrypoint. It is **not** repository-root authority and it is **not** the current continuity specification.
+
+> If an older header inside `CURRENT_SERIES_HANDOFF.md` still names the historical #187 lane, treat that header as stale historical metadata. The merged Research `main` state produced by clean successors #201 + #202 is the current corpus authority. The handoff body remains the canonical continuity specification until its header is repaired directly.
 
 ## Start here after any context reset
 
 1. Resolve repository-root authority through `CURRENT_AUTHORITY.md` → authority registry → selected authority.
 2. Read current `AGENT_RULES.md` and repository evidence policy.
-3. Read **[`CURRENT_SERIES_HANDOFF.md`](./CURRENT_SERIES_HANDOFF.md)** and follow its exact mandatory chain. The canonical handoff now includes the late `298 → 299 → 300 → 301 → 302 → 303` sequence directly.
+3. Read **[`CURRENT_SERIES_HANDOFF.md`](./CURRENT_SERIES_HANDOFF.md)** and follow its exact mandatory chain. The canonical handoff includes the late `298 → 299 → 300 → 301 → 302 → 303` sequence directly; do not infer an active #187 lane from its stale header metadata.
 4. For Companion A provenance/preflight, the exact `302` file is **[`302_COMPANION_A_PRODUCT_PREFLIGHT_CLAIM_LEDGER_COLLISION_VERDICT_EVIDENCE_CLASSES_AND_SOURCE_SELECTION_2026-09-08.md`](./302_COMPANION_A_PRODUCT_PREFLIGHT_CLAIM_LEDGER_COLLISION_VERDICT_EVIDENCE_CLASSES_AND_SOURCE_SELECTION_2026-09-08.md)** and the mandatory direct-owner supplement is **[`303_COMPANION_A_DIRECT_OWNER_REQUIREMENTS_SUPPLEMENT_ISRAEL_ANALOGY_MODERN_ECONOMY_SOCIAL_CONTACT_2026-09-08.md`](./303_COMPANION_A_DIRECT_OWNER_REQUIREMENTS_SUPPLEMENT_ISRAEL_ANALOGY_MODERN_ECONOMY_SOCIAL_CONTACT_2026-09-08.md)**.
 5. Only then open claim-specific/source modules.
 
-Do **not** infer current project phase from historical closure/compression files. Do **not** begin Part I or Companions A–D again merely because an older document says “draft next.” All seven primary Product content owners already exist as separate Draft/noindex lanes and must be live-fetched independently in `FedorMilovanov/gb-is-my-strength` before any Product mutation.
+Do **not** infer current project phase from historical closure/compression files. Do **not** begin Part I or Companions A–D again merely because an older document says “draft next.” Product PR #1939 admitted all seven canonical Draft/noindex MDX to `FedorMilovanov/gb-is-my-strength` `main`; they are not publication-ready merely because they are admitted. Live-fetch current Product polish/foundation/release owners before any Product mutation.
 
 ## Locked method
 
@@ -38,7 +41,7 @@ Research-layer architecture for the adult/family-government material is **resolv
 6. Companion C — adulthood and parental authority;
 7. Companion D — daughter, father, courtship and marriage.
 
-This is claim ownership, **not automatic publication authorization**. The seven primary Product drafts are already materialized; their remaining gates are live reconciliation, review/CI closure and publication/release engineering.
+This is claim ownership, **not automatic publication authorization**. The seven primary Product drafts are already admitted on Product `main`; remaining gates are reader-facing reconciliation/polish, foundation/release engineering, exact-head review/CI and an explicit later publication transaction.
 
 The older `99_ADULT_CHILD_COMPANION_SELECTED_SOURCE_PACKET...` remains a useful source packet but does not supersede the later `237/239` ownership split.
 
@@ -66,4 +69,6 @@ Before every write:
 
 ## Publication state
 
-Research volume is not publication approval. PR #187 remains Research Draft unless live GitHub state says otherwise. Product article heads, routes, CI, `draft/noindex` and release state belong to the Product repository and must be checked there separately.
+Research volume is not publication approval. Historical Research PR #187 is closed unmerged and superseded by clean merged successors #201 + #202; current Research authority is the merged `main` state above.
+
+Product PR #1939 has admitted the seven canonical articles to Product `main`, but they remain Draft/noindex. Product article heads, polish, foundation, routes, CI, `draft/noindex` transition and publication release belong to the Product repository and must be checked there live.
