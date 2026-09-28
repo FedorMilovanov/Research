@@ -1,0 +1,78 @@
+name: Lawson final import v3
+'on':
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/lawson-final-import-v3.yml'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Guard triggering state
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD^)" = "019fcff53271f3c3355bb370690c70ce4d3e3687"
+          test "$(git diff --name-only HEAD^ HEAD)" = ".github/workflows/lawson-final-import-v3.yml"
+      - name: Download verified overlay
+        shell: bash
+        env:
+          SHARE_URL: https://firestorage.ai/ja/f/LvETJULr-MrE
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/pw
+          cd /tmp/pw
+          npm init -y >/dev/null 2>&1
+          npm install --no-save playwright >/dev/null 2>&1
+          npx playwright install chromium >/dev/null 2>&1
+          cat > download.cjs <<'NODE'
+          const { chromium } = require('playwright');
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ acceptDownloads: true });
+            await page.goto(process.env.SHARE_URL, { waitUntil: 'networkidle', timeout: 60000 });
+            const pending = page.waitForEvent('download', { timeout: 30000 });
+            await page.getByText(/ダウンロード|Download/i).first().click();
+            const download = await pending;
+            await download.saveAs('/tmp/lawson.zip');
+            await browser.close();
+          })();
+          NODE
+          node download.cjs
+          echo "a420d4d69e364325e3edb7444a4420ecc957c950d97ef4ed92f3fdf6068bf351  /tmp/lawson.zip" | sha256sum -c -
+      - name: Verify and stage exact overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/lawson-overlay
+          mkdir -p /tmp/lawson-overlay
+          unzip -q /tmp/lawson.zip -d /tmp/lawson-overlay
+          cd /tmp/lawson-overlay
+          sha256sum -c MANIFEST.sha256
+          test "$(find STEVE_LAWSON STEVEN_LAWSON_2024_2026 -type f | wc -l)" -eq 27
+          cd "$GITHUB_WORKSPACE"
+          cp -a /tmp/lawson-overlay/STEVE_LAWSON/. STEVE_LAWSON/
+          cp -a /tmp/lawson-overlay/STEVEN_LAWSON_2024_2026/. STEVEN_LAWSON_2024_2026/
+          git rm .github/workflows/lawson-final-import-v2.yml
+          git rm .github/workflows/lawson-final-import-v3.yml
+          git add STEVE_LAWSON STEVEN_LAWSON_2024_2026
+          bad="$(git diff --cached --name-only | grep -Ev '^(\.github/workflows/lawson-final-import-v[23]\.yml|STEVE_LAWSON/|STEVEN_LAWSON_2024_2026/)' || true)"
+          test -z "$bad"
+          grep -Fq PUBLICATION_READY_WITH_GUARDRAILS STEVE_LAWSON/00_AUTHORITY_AND_SCOPE_2026-09-27.md
+          grep -Fq PUBLICATION_READY_WITH_GUARDRAILS STEVE_LAWSON/17_ARTICLE_RU_REFINED_V4_2026-09-28.md
+          grep -Fq RESEARCH_LANE_SUBSTANTIALLY_CLOSED STEVE_LAWSON/20_FINAL_CLAIM_SOURCE_AUDIT_2026-09-28.md
+      - name: Commit final state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'research(lawson): import verified bundle state and close publication audit'
+          git push origin HEAD:main
