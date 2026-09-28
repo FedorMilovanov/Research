@@ -130,6 +130,22 @@ This source is more severe than a generic "we all sin" response, but it must als
 
 That restraint is important because it actually sharpens the theological point: **MacArthur treated moral qualification as independently decisive even where doctrinal soundness had appeared intact.**
 
+**Timestamp closure (2026-09-27).** The official audio of the same program is publicly downloadable, and the Lawson discussion occupies approximately 19:00–24:00:
+
+| Time | Point |
+|---|---|
+| ≈19:00 | Busenitz's question; MacArthur immediately names Lawson. |
+| 19:03 | "I say that with the deepest agony in my soul." |
+| 19:16–19:25 | The exposure of someone in a position he had no right to be in; this is God blessing the church. |
+| 19:31 | "To purify the church." |
+| ≈19:33–19:50 | Tolerating such behavior in leadership is fatal to a church; "For Grace Church, that's enough. For The Master's Seminary, that's enough." |
+| 21:52 | A corrupting influence while apparently having a positive influence. |
+| 22:45 | "I don't love him any less than I've loved him for twenty-five years." |
+| 22:52–23:01 | "I don't know how you preach past your conscience unless it's completely scarred over." |
+| 23:49 | Heart crushed for the sinner, grateful for the Savior who purifies His church. |
+
+Custody: `_work/gty70-58.mp3` (56 345 173 bytes; sha256 `24162964450f397b43663b7674d80965557c23ff6a4265cee3131cfb24ada4dc`); coarse transcript map `_work/gty70-58.asr.json` (815 segments); precision windows `_work/win0.wav`, `_work/win1.wav`, `_work/w_cons.wav`. Machine transcription was used only to locate the utterances; the quotable wording remains the official Grace to You transcript.
+
 ### A relevant earlier MacArthur category: doctrinal and moral heresy
 
 In another official Grace to You interview, MacArthur argues that church leaders are judged by fidelity to the Word in both speech and life, then says:
@@ -378,6 +394,17 @@ Those questions are not voyeurism. They are precisely the questions that could m
 
 ---
 
+## V-bis. 2026 public status (added 2026-09-27)
+
+Two 2026 episodes belong in the record, both now sourced:
+
+1. **July 2026 — conference listing episode.** Lawson briefly appeared as a featured speaker on the website of the *Contending for the Faith* conference ("Be Ye Steadfast", Southaven, MS, 3–5 November 2026, presented by the Tennessee Baptist Missionary & Educational Convention), including workshop slots on sermon preparation, and was removed within hours. Reporting and the organizers' own correction state that the listing was premature: they had invited him but advertised him before receiving an answer, and when Lawson learned of it he declined. The episode must not be retold as an attempted comeback. Sources: Protestia 2026-07-20 (article + update + follow-up), ChurchLeaders 2026-07-20, JubileeCast 2026-07-21.
+2. **September 2026 — book authorship confirmation.** On 23 September Phil Johnson (pastor and elder, Grace Community Church) publicly confirmed that *Mercy in the Wilderness* is genuinely Lawson's book, while adding that re-inserting himself into public discussion would not win back the trust of those he betrayed and that selling the ~$15 book was a bad look. Reported by WORLD/The Sift, 2026-09-24. Earlier AI-authorship suspicion (Justin Peters and others) remains a `C`-class public disagreement, not a finding.
+
+Also recorded as page-state only: all five Ligonier London-2023 pages featuring Lawson currently return 404 while non-Lawson pages return 200, and the GCC 2017 Shepherds' Conference catalogue no longer lists Session 14 or Lawson's seminar session. No motive is inferred.
+
+---
+
 ## VI. Disputed claims and what not to flatten
 
 ### Five-year duration
@@ -411,7 +438,7 @@ The leaked-meeting report and its later correction are a textbook reason to pres
 1. **Lawson's moral failure was not treated by his ministries as a minor lapse.** Trinity removed him; OnePassion called the sin disqualifying; TMS reportedly called the disqualification permanent.
 2. **MacArthur explicitly refused to let sound theology neutralize disqualifying conduct.** He named the theology as sound while calling the behavior intolerable in leadership and potentially corrupting.
 3. **MacArthur's conscience language was exceptionally severe.** He wondered how Lawson could preach past his conscience unless it were scarred over.
-4. **Lawson had himself preached categories strikingly relevant to his own case.** The 2023 Ligonier session is the clearest currently preserved example: hypocrisy, lies, and 1 Timothy 4:2's branded conscience.
+4. **Lawson had himself preached categories strikingly relevant to his own case.** The recovered 2017 General Session 14 is now the strongest verified example — on the original recording he asked whether his hearers were true shepherds because false shepherds exist, and warned that one may preach, study, admire, and point to the Door and still be "an unconverted shepherd" (68:17–68:23). The 2023 Ligonier session (hypocrisy, lies, 1 Timothy 4:2's branded conscience) corroborates the same pattern, though its verbatim text remains under acquisition hold.
 5. **Lawson's 2025 confession is real evidence of public responsibility-taking.** It should not be caricatured as no confession at all.
 6. **The confession did not explain the sustained contradiction.** It named sin and repentance more than mechanisms and chronology.
 7. **The 2026 book reportedly adds some concrete self-indictment, especially rejected marriage counseling, but still leaves major accountability questions unanswered.**
@@ -431,11 +458,37 @@ That thesis is severe, sourced, and does not require pretending to know more tha
 
 ## IX. Outstanding acquisition tasks
 
+Completed 2026-09-27 (see `06_PRIMARY_OBJECT_AND_STATUS_AUDIT_2026-09-27.md`):
+
+- ✅ exact timestamp locators for the Lawson discussion in GTY 70-58 (official audio + official transcript);
+- ✅ original conference audio for Shepherds' Conference 2017, General Session 14, with the closing appeal verified (67:01–68:41; "unconverted shepherd" 68:17–68:23);
+- ✅ original OnePassion statement preserved as an archived institutional object.
+
+Still outstanding:
+
 - Acquire direct/archived Trinity September 19, 2024 announcement.
-- Acquire direct/archived OnePassion September 2024 statement.
 - Acquire TMS/Busenitz original communication if publicly preservable.
-- Capture exact timestamp for the Lawson discussion in GTY sermon 70-58.
-- Acquire direct Ligonier/YouTube video and exact transcript/timestamps for Lawson's 2023 *Preach the Word*.
+- Acquire direct Ligonier/YouTube video and exact transcript/timestamps for Lawson's 2023 *Preach the Word* (live pages 404; archived pages carry no video id or transcript).
 - Acquire full 2026 *Mercy in the Wilderness* object or page-verified lawful excerpts.
 - Locate official OnePassion/Romans audio for Romans 2 passages before using Lawson quotations from third-party transcript/index sources.
-- Preserve Lawson's March 12, 2025 statement as a durable primary artifact if the original X object remains accessible.
+- Preserve Lawson's March 12, 2025 statement as a durable primary artifact (archive.today rate-limited; no Wayback capture found).
+- 2026 accountability questions: who reviewed the book before publication; who currently holds spiritual authority over Lawson; disposition of proceeds.
+
+
+---
+
+## Проходы 27–28 сентября 2026 года: указатель и главные результаты
+
+Пять последовательных проходов добавили в корпус новые файлы (`13_`–`16_`), разделы ledger §U–§Y и claims L-070…L-113. Ниже — сжатый указатель: что именно установлено и где это лежит.
+
+**Проход 1 (`13_`). Спор о членстве.** В ноябре 2024 года вокруг роли Лоусона в Trinity развернулся публичный спор: подкаст *With All Wisdom* утверждал, что он не был ни пастором, ни старейшиной, ни формальным членом церкви; G3 Ministries заявила обратное («the facts are clear»), ссылаясь на два источника внутри церкви; сама церковь публично вопрос не комментировала. Независимо подтверждается только часть «не старейшина» — по её собственной странице «Leadership» он был указан как **Lead Preacher** вне списка старейшин.
+
+**Проход 2 (`14_`). Книга и 2026 год.** *Mercy in the Wilderness* — print-on-demand, But God Press, ISBN 9798996167302, по каталогу 124 страницы, 14,99 доллара, без электронной версии; постраничных локаторов нет, поэтому цитаты книги идут только через рецензию. Эпизод с конференцией в Саутхейвене (июль 2026) документирован как «приглашён, отказался»; публичный статус 2026 года — Нэшвилл, Stephens Valley Church, без руководящих позиций.
+
+**Проход 3 (`15_`). Институциональный след.** Собственные страницы организаций датируют их решения окнами: у Ligonier между 16 и 23 сентября 2024 года сняты титулы, а между 27 сентября и 9 октября появилась её собственная формулировка «His content is no longer featured due to violations of our content policy» (страница жива и сегодня); страница Семинарии Мастерс 200 (10.07.2024) → 404 (с 20.09.2024); страница Reformation Bible College снята; в списке Shepherds Conference SC2024 он был, с SC2025 — нет.
+
+**Проход 4 (`16_`). Первичное аудио стороны A.** Подкаст *With All Wisdom* вёл не один эпизод, а серию из семи (#96–#102, 21.10–27.11.2024). Получены и расшифрованы эпизоды #96, #97, #98, #101, #102; ключевые фрагменты сохранены вырезками. Третий голос в споре о членстве — пастор Stephens Valley Church Джим Бахман (The Roys Report, 24.01.2025).
+
+**Проход 5 (`16_` §10). Хронологическая правка.** 21 октября 2024 года тезис о нечленстве ещё звучал как чужой («some have said»); собственным утверждением стороны A он становится 4 ноября 2024 года после контакта с сотрудником церкви. Тогда же изнутри стороны A документирована хронология спора: «exactly 10 days» до заявления G3 и «eight days» без публичного ответа Trinity.
+
+**Правила, закреплённые по итогам проходов** (`00_`, `README`): членство не подаётся как факт ни в одну сторону; «unfaithful leaders» у МакАртура — общее утверждение, не личный ярлык; формулировка Ligonier цитируется без конкретизации; изменения страниц подаются окнами дат; Amazon-биографии и рейтинги не используются; ошибочное отождествление корреспондентки с участницей отношений не воспроизводится.

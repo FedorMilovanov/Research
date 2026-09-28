@@ -1,5 +1,8 @@
 # Steven J. Lawson — pre-fall self-deception / false-shepherd addendum
 
+> **Status note (2026-09-28):** This is a dated pre-acquisition snapshot. Its P0/P1 queue is not current; later passes closed or reclassified several items. Current queue authority: `19_CURRENT_STATUS_AND_ACQUISITION_QUEUE_2026-09-28.md`.
+
+
 **Corpus:** `LAWSON-2024-2026`  
 **Snapshot:** `2026-09-27`  
 **Status:** `ACTIVE / PUBLICATION_HOLD`  
@@ -84,6 +87,8 @@ Title in surviving objects: *Jesus, The Good Shepherd* / *Shepherd's Conference 
 Text: John 10:11–18  
 Date/time on contemporaneous notes: Friday, March 3, 2017, 3:30 p.m.
 
+> **Update 2026-09-27 (supersedes the derivative-object status below):** the **original conference recording** of this session was recovered and transcribed — official audio `https://s3.amazonaws.com/media.shepherdsconference.org/2017/SC17-GS-2017-03-03-1530-LAWSONS.mp3` (70:23; sha256 `195a8c44acc9383b6fc04f27eaef353839d8bfaf8046b3d36bdc34f5de696595`). The "unconverted shepherd" sentence is confirmed on the original at **68:17–68:23**, together with the whole closing appeal (67:01–68:41). The lilys.ai locator (≈01:11:35) does **not** map to the official audio timeline and is retained only as a discovery lead. See `06_PRIMARY_OBJECT_AND_STATUS_AUDIT_2026-09-27.md` §2 for the full verified passage. The classification of this quotation is upgraded from derivative `C/B1` to **quote-safe `A2` with exact locator**. Additionally, the current Grace Community Church 2017 conference catalogue page no longer lists Session 14 (or Lawson's seminar session); Wayback captures of Dec 2024 / Mar 2025 show the same state. That is recorded as a page-state observation only — no motive is inferred, and the official MP3 itself remains publicly downloadable.
+
 ### Evidence classification
 
 - Current GCC series page: `A2` for the conference catalog as it exists now, but it **currently does not display Lawson / Session 14** among the listed 2017 messages. The page jumps from General Session 13 to other Friday sessions and General Session 15. This catalog state must not be interpreted as evidence of why a session is absent.
@@ -122,12 +127,12 @@ The same distinction is central to the later Lawson question. The man's ability 
 
 ### Article-safe formulation
 
-Until the original Session 14 recording is acquired, final public copy should distinguish two levels:
+With the original recording now acquired, public copy may quote the closing appeal directly at the verified locators:
 
-- quote-safe from contemporaneous notes: Lawson asked, in effect, whether he was a true shepherd because false shepherds exist;
-- stronger but derivative transcript: Lawson warned that one may preach about Christ, point others to Christ, attend Shepherds' Conference and still be an "unconverted shepherd."
+- quote-safe (`A2`, exact locator): Lawson asked whether the hearer is a true shepherd because false shepherds exist (67:01–67:18), then said it is possible "to even be at the shepherd's conference and to be an unconverted shepherd" (68:17–68:23);
+- the contemporaneous notes remain valid corroboration of the session, its text and its pastoral application.
 
-Do not present the latter as an official GCC transcript until the original object is recovered.
+The derivative transcript must no longer be cited as the source of this quotation. The same guardrail as before applies: this is a general warning to pastors, not a self-description.
 
 ---
 
@@ -223,8 +228,8 @@ The resulting thesis is sharper:
 
 ### P0
 
-- Recover the original audio/video for Steve Lawson, Shepherds' Conference 2017, Session 14, *Jesus, The Good Shepherd*, and pin the closing appeal around 01:11:35–01:14:32.
-- Preserve a durable copy of the official 2022 Christian Worldview transcript with hash/page locator inside the Research custody system.
+- ~~Recover the original audio/video for Steve Lawson, Shepherds' Conference 2017, Session 14~~ — **DONE 2026-09-27**: official MP3 acquired (see §2 update and `06` §2); closing appeal pinned at 67:01–68:41, "unconverted shepherd" at 68:17–68:23.
+- Preserve a durable copy of the official 2022 Christian Worldview transcript with hash/page locator inside the Research custody system. *(still open)*
 
 ### P1
 

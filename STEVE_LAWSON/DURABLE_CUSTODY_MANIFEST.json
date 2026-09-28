@@ -1,0 +1,1062 @@
+{
+  "schema": "lawson-durable-custody-receipts-v1",
+  "corpus": "LAWSON-2024-2026",
+  "status": "RESEARCH_ONLY_PUBLICATION_HOLD",
+  "cutoff": "2026-09-27",
+  "rule": "Git preserves durable receipts (locator, class, byte length, SHA-256) and no raw third-party bytes are promoted into Git. Audio, archived HTML and ASR derivatives are re-acquirable from the recorded locators; a full SHA-256 proves which bytes were acquired on this pass. Machine transcription (ASR) is a locating derivative only and is never the wording authority. PUBLICATION_HOLD is independent of custody completeness.",
+  "acquisitionSession": {
+    "date": "2026-09-27",
+    "environment": "linux sandbox; curl; PyAV 18.x decode; faster-whisper base.en int8 chunked (600 s, 16 kHz mono)",
+    "workingCache": "/home/user/_work (ephemeral acquisition cache, not part of the repository)"
+  },
+  "receipts": [
+    {
+      "id": "LAWSON-GTY-7058-AUDIO",
+      "sourceId": "SL-A08",
+      "class": "A2",
+      "object": "Grace to You program 70-58, official MP3 (H.264-free audio, 128 kbps 44.1 kHz mono, container duration 3519 s)",
+      "locator": "https://mic-development-us5p473zyq-core-4j1au-mediabucket-6bjazokcoje1.s3.us-east-1.amazonaws.com/Audio%2FSermons%2F70_58_db35a2d1dc.mp3",
+      "bytes": 56345173,
+      "sha256": "24162964450f397b43663b7674d80965557c23ff6a4265cee3131cfb24ada4dc",
+      "role": "Timestamp locating for the 2024-10-20 Lawson segment (≈19:00–24:00); wording authority remains the official transcript",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-GTY-7058-TRANSCRIPT",
+      "sourceId": "SL-A01",
+      "class": "A2",
+      "object": "Official Grace to You transcript page text (extracted, 44 403 bytes)",
+      "locator": "https://www.gty.org/sermons/70-58/thinking-biblically-about-current-events-a-conversation-with-john-macarthur",
+      "sha256": "007802b59749cfdb8c35b9291a5d4d0145eb86779fb96688626ed49e6a144a3b",
+      "role": "Quotable wording source for the MacArthur-on-Lawson passage",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-GTY-7058-ASR",
+      "sourceId": "SL-A08-D1",
+      "class": "derivative (locating only)",
+      "object": "faster-whisper transcription of the official MP3, 815 segments",
+      "sha256": "e388d641940b0d42194da4d6bbba651237976babd3232499dd022790d2785de5",
+      "role": "Locating derivative only; not quote-safe",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-SC17-GS14-AUDIO",
+      "sourceId": "SL-A09",
+      "class": "A2",
+      "object": "Shepherds' Conference 2017, General Session 14, Steven J. Lawson, Jesus, The Good Shepherd, 2017-03-03 15:30 — official conference MP3 (128 kbps 44.1 kHz joint stereo, container duration 4223 s)",
+      "locator": "https://s3.amazonaws.com/media.shepherdsconference.org/2017/SC17-GS-2017-03-03-1530-LAWSONS.mp3",
+      "bytes": 67576229,
+      "sha256": "195a8c44acc9383b6fc04f27eaef353839d8bfaf8046b3d36bdc34f5de696595",
+      "role": "Original object for the closing appeal (67:01–68:41) and the unconverted-shepherd sentence (68:17–68:23); quote-safe with exact locator",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-SC17-GS14-ASR",
+      "sourceId": "SL-A09-D1",
+      "class": "derivative (locating only)",
+      "object": "faster-whisper transcription of the Session 14 MP3, 824 segments, second-level timestamps",
+      "sha256": "04b0fe3336d36842e551401460162d69d09f9a353f50fb37a13b001b6c1da9f8",
+      "role": "Locating derivative only; not quote-safe",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-ONEPASSION-20240920",
+      "sourceId": "SL-A10",
+      "class": "A3",
+      "object": "OnePassion Ministries statement page as archived (Internet Archive capture 20240920233142, 172 771 bytes)",
+      "locator": "https://web.archive.org/web/20240920233142/https://onepassion.org/",
+      "sha256": "a2b350d16e665070884e9165307bee15febcf64c36a48b8eefb88c0d1f60cea5",
+      "role": "Institutional statement text (confession of an inappropriate relationship that disqualified him, resignation from all duties, cancellation of engagements)",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-LIGONIER-PTW-20240927",
+      "sourceId": "SL-A11",
+      "class": "A2 (archived official page; title/attribution only, JS shell)",
+      "object": "Ligonier Preach the Word pre-conference page capture (645 084 bytes)",
+      "locator": "https://web.archive.org/web/20240927034417/https://www.ligonier.org/learn/conferences/pilgrims-and-exiles-2023-london-conference/preach-the-word-pre-conference",
+      "sha256": "31612e40d409200a2f45f36136d8f68892128cea8955b4200534a7972c5e7334",
+      "role": "Proves title, speaker and page history; contains no video id or transcript",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-LIGONIER-WOGE-20240927",
+      "sourceId": "SL-A11",
+      "class": "A2 (archived official page; title/attribution only, JS shell)",
+      "object": "Ligonier The Word of God for Exiles page capture (645 046 bytes)",
+      "locator": "https://web.archive.org/web/20240927115455/https://www.ligonier.org/learn/conferences/pilgrims-and-exiles-2023-london-conference/the-word-of-god-for-exiles",
+      "sha256": "9950ac3cd66ccb8aac38f64040aaebaa5e9faccfbcae966901c72d46fc7c7204",
+      "role": "Proves title, speaker and page history; contains no video id or transcript",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TT00027-MARRIAGE-AUDIO",
+      "sourceId": "SL-M01",
+      "class": "A3/B1 (third-party published episode carrying Lawson's own audio)",
+      "object": "Truth Transforms episode «Should I Marry Her? | Steve Lawson Answers | Men's Bible Study Q&A», 2022-05-09, m4a 21:32 (1291.75 s)",
+      "locator": "https://static1.squarespace.com/static/5ff63894442a67244970bd76/t/62794039421dcd1504730dca/1652727046014/TT00027_Lawson+on+Marriage_FINAL.m4a",
+      "bytes": 18799442,
+      "sha256": "5fbac8e8bcaae69eb0d3a06066ae3b8c2b6fa4b5676f42402e171595cc03f49e",
+      "role": "Top-priority 2022 marriage Q&A audio; carrier caveat; human verification pending",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TT00027-MARRIAGE-ASR",
+      "sourceId": "SL-M01-D1",
+      "class": "derivative (locating only)",
+      "object": "faster-whisper transcription of the episode (255 segments)",
+      "sha256": "5643d683018447d15dd59a5c15a06ec0fb1d57a2f9a71c9e8c225d0852d5f179",
+      "role": "Locating derivative only; not quote-safe",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-CAP-MFNYGZ-2017QA",
+      "sourceId": "SL-M02",
+      "class": "A2",
+      "object": "Ligonier 2017 National Conference Q&A, publisher captions with speaker labels (50 313 B)",
+      "locator": "https://www.youtube.com/watch?v=MfnYgz_e17M",
+      "sha256": "c657340d09df5d687a8951a4ea68f5e9a884bdb8eeacf30d30474ca15caa3e61",
+      "role": "Basis of the 2017 attribution correction (L-038)",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-CAP-WUX-LONDON23Q",
+      "sourceId": "SL-M07",
+      "class": "A2",
+      "object": "Ligonier London 2023 pre-conference Q&A, publisher captions (42 592 B)",
+      "locator": "https://www.youtube.com/watch?v=wuxWNjRANB8",
+      "sha256": "e9acc3e2f27f57d8ac541d4fad4f7d215283d9877f951058458b087a66f0edd9",
+      "role": "Full-text scan found no 1 Tim 4:2 / conscience content",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-CAP-QZ5-MARRIAGE-VIDEO",
+      "sourceId": "SL-M01-D2",
+      "class": "derivative (auto-captions)",
+      "object": "Video derivative of the same episode «Should I Marry Her?» (161 577 B)",
+      "locator": "https://www.youtube.com/watch?v=q-Z5ozrJ4QY",
+      "sha256": "28b7a7c08a5a72f3e91061b134c475cd70e39e7f1dea943fbb5ceb56560dfe1f",
+      "role": "Locating derivative; same content as SL-M01",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-CAP-EY7-EXILES-REUPLOAD",
+      "sourceId": "SL-M04",
+      "class": "B1 (auto-captions)",
+      "object": "Re-upload «The Word of God for Exiles - Dr. Steve Lawson», auto-captions (291 633 B)",
+      "locator": "https://www.youtube.com/watch?v=Ey7kYHEpcyo",
+      "sha256": "482540e26906776c406c4bdc9a097d448759685b6036ffeabedc1603d3a8f99e",
+      "role": "Research lead for the missing London-2023 main session; not quote-safe",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-CAP-4KIW-WASHER",
+      "sourceId": "SL-M05",
+      "class": "C (auto-captions)",
+      "object": "Paul Washer commentary on the 2026 book, auto-captions (80 726 B)",
+      "locator": "https://www.youtube.com/watch?v=4kiWzPN7RbU",
+      "sha256": "2ee42ec77530fb55cb1ab4328626a1bff4d7a6dbeb705a55c59ebb70f0aeba2d",
+      "role": "Reception/opinion tier only",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TT-RSS",
+      "sourceId": "SL-M06",
+      "class": "A3/B1",
+      "object": "Truth Transforms RSS feed (82 items; 477 091 B)",
+      "locator": "https://preachingforgodsglory.org/truth-transforms?format=rss",
+      "sha256": "12d0bd8d1fb0dd2e63e19901673b7c5af375a1f066a2c95dc028bb2f553fdb9f",
+      "role": "Publication receipt (date, title, enclosure URL)",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-PLAYLIST-LONDON23",
+      "sourceId": "SL-M03",
+      "class": "B1 (observation)",
+      "object": "Ligonier «Pilgrims and Exiles» playlist item snapshot (13 items)",
+      "locator": "https://www.youtube.com/playlist?list=PL30acyfm60fU3GItDZp4LYNpsHQeuiSs1",
+      "sha256": "de1a38c20623168fd669b4296f32263122368ba0ad7c1a3f5908657d66a83d8e",
+      "role": "Page/playlist-state observation; no motive claimed",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-CAP-XALK-LONDON23QA1",
+      "sourceId": "SL-M08",
+      "class": "A2 (publisher captions, speaker labels)",
+      "object": "Ligonier London 2023 Q&A #1 captions (45 825 B)",
+      "locator": "https://www.youtube.com/watch?v=XALK0OG3odQ",
+      "sha256": "4b0d69d8b0cc6d7a732e74d8fbfd19b61c4d5b59c9bc785a2b73de262d86c90c",
+      "role": "Pre-fall (Sept 2023) Q&A content: gospel definition; assurance of salvation",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-CAP-R8XO-LONDON23QA2",
+      "sourceId": "SL-M09",
+      "class": "A2 (publisher captions, speaker labels)",
+      "object": "Ligonier London 2023 Q&A #2 captions (41 203 B)",
+      "locator": "https://www.youtube.com/watch?v=r8xOZqxjBLY",
+      "sha256": "6e690e07e92c8cf8b8fef1365df8fb12a0277b6309bf1058c5118d8fcb8b08c5",
+      "role": "Pre-fall content: heresy scope; perseverance of the elect; judgment/rewards; Trinitarian resurrection",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-SA-EXILES-PAGE",
+      "sourceId": "SL-M10",
+      "class": "B1 (catalogue page state)",
+      "object": "SermonAudio sermon page for The Word of God for Exiles (214 969 B)",
+      "locator": "https://www.sermonaudio.com/sermons/10122311204054",
+      "sha256": "8e202f68b750ae5846b4c8fa2299cc29bc3b07197c414ab6d526e8b437277b68",
+      "role": "Second independent third-party carrier of the same-titled 44:28 message; media host 502 at capture",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-SA-SPEAKER-PAGE",
+      "sourceId": "SL-M11",
+      "class": "B1 (catalogue page state)",
+      "object": "SermonAudio speaker catalogue page, 296 entries (162 540 B)",
+      "locator": "https://www.sermonaudio.com/speakers/15262/",
+      "sha256": "e3f773f6bc626d9c17b00a6fa046274061c0574f9fa88eee8a06c4540d0e0e82",
+      "role": "Navigation index; lists the 44:28 message dated 2023-10-11",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-SA-EXILES-AUDIO",
+      "sourceId": "SL-M10",
+      "class": "B1 (third-party broadcast copy)",
+      "object": "Audio of The Word of God for Exiles (32 173 613 B; MPEG layer III 96 kbps mono; 2668.16 s)",
+      "locator": "https://cloud.sermonaudio.com/media/audio/high/10122311204054.mp3?ts=1730472502&language=eng",
+      "sha256": "6c9681093d756ddcd77af2b30e25efd98ebecf50f09f1bdbd6c70b98666f6415",
+      "role": "Full audio copy; identity vs the YouTube re-upload verified by duration and four sampled windows; official Ligonier object still missing",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-PROTESTIA-BOOK-SAMPLE-PAGES-2026-09-21",
+      "sourceId": "SL-N01",
+      "class": "B1 (outlet-mediated verbatim book text)",
+      "object": "Protestia article page reproducing the released sample pages of Mercy in the Wilderness (367 030 B) plus extracted quote block (10 678 chars)",
+      "locator": "https://protestia.com/2026/09/21/steve-lawson-releases-unflinching-confession-book-detailing-road-to-adulterous-affair/",
+      "sha256": "440f5b2b314174e9b9c242aa4d0f1461271b823269a9feb7e4610d061a9337ef",
+      "derivativeSha256": "7b798d1913d6e5ded0be1ab3e63820d45571f52a467398e9fe7013e28b3fbdf9",
+      "role": "Verbatim book text (sample pages); no page numbers available; cite only as released sample pages",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-PROTESTIA-REVIEW-SNAPSHOT-2026-09-25",
+      "sourceId": "SL-N02",
+      "class": "B1",
+      "object": "Protestia review page snapshot (286 037 B)",
+      "locator": "https://protestia.com/2026/09/25/mercy-in-the-wilderness-a-public-testimony-that-says-too-little/",
+      "sha256": "f47c184e4cede5d9564cf3521e5c4a70a7e4c76fb3645dd33c51224a69cec610",
+      "role": "Durable snapshot of the review already registered as SL-G07",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-WARTBURGWATCH-SNAPSHOT-2026-09-23",
+      "sourceId": "SL-N03",
+      "class": "B1/C",
+      "object": "Wartburg Watch commentary page snapshot (136 765 B)",
+      "locator": "https://thewartburgwatch.com/2026/09/23/steven-lawson-does-what-these-guys-often-do-he-wrote-a-book-was-it-a-confession-or-an-excuse/",
+      "sha256": "efa25c7758eeb1a89398ea07d42ac8a3aa6d960aac8fb0e8b8294c3409d735ee",
+      "role": "Secondary commentary; comment-level claims stay class C and are not promoted",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-EVANGELICALDARKWEB-SNAPSHOT-2026-09-21",
+      "sourceId": "SL-N04",
+      "class": "B1/C",
+      "object": "Evangelical Dark Web article page snapshot (259 488 B)",
+      "locator": "https://evangelicaldarkweb.org/2026/09/21/steve-lawson-returns-with-new-book/",
+      "sha256": "cae843c86888a4bb98cb13e55a90736fbe101360c932ab850a9aee1538d19502",
+      "role": "Print-only format observation; publisher has no public web presence (as observed)",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TRINITY-STATEMENT-CARRIERS-2024-09",
+      "sourceId": "SL-O01",
+      "class": "A3 via B1 carriers",
+      "object": "Carrier snapshots of the Trinity September 2024 statement text (Christian Post 63 998 B; CHVN 66 962 B; The Independent 244 770 B)",
+      "locator": "christianpost.com/news/dallas-pastor-steve-lawson-removed-from-ministry.html ; chvnradio.com/articles/lead-pastor-of-trinity-bible-church-of-dallas-removed-due-to-inappropriate-relationship ; independent.co.uk/news/world/americas/dallas-pastor-steve-lawson-removed-inappropriate-relationship-b2616329.html",
+      "sha256": "895f5ba1075f0d85dba9fc5e1a2d41e00fe4400826aba436135eb908737036d1 (CP); 8e11ca2c590d6b8ff7180ecf787cb2975060800f656e4628d2c81290367e25b4 (CHVN); 877c444f40066c3559c5fa03ee05eaa25d9300ff3affdd5c90910866cbcd3f24 (Independent)",
+      "role": "Per-sentence reconstruction of the statement (points 1-8; points 5-8 were absent from the corpus before)",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-BANNEROFTRUTH-COMMENTARY-2024-10-14",
+      "sourceId": "SL-O02",
+      "class": "B1",
+      "object": "Banner of Truth article text (obtained via text extraction; direct curl blocked with HTTP 403)",
+      "locator": "https://banneroftruth.org/us/resources/announcements/2024/when-a-christian-leader-falls/",
+      "sha256": null,
+      "role": "Institutional commentary quoting both statements; balance framing for the article (fraud note: no byte snapshot available)",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-X-STATEMENT-WAYBACK-MEMENTOS",
+      "sourceId": "SL-O03",
+      "class": "A1 carrier (URL), text not preserved",
+      "object": "Wayback mementos of the X post URL: first 20250314055735 (218 696 B) and 20250321195137 (252 771 B) are JS shells; snapshots 20250706011853 (5 855 B) and 20250816121707 (5 852 B) return X page-does-not-exist view",
+      "locator": "http://web.archive.org/web/20250314055735/https://x.com/DrStevenJLawson/status/1899912459521319253",
+      "sha256": "599bf50c973dc46c1684f25cbf11a6cf99c7cbd87b372f00b8b6e417bb0a8ef3 (first memento shell); 0d1326b6ea5af319030a2900f8ac38b0e8799e7b561b57eeb200042e3683738b (03-21 shell); de64040fd7f2513cbd0f6134d224e5f8f9daf17b1d213cea582a2fdb237f77e6 (07-06 page-not-exist); 95ad49b65a3a510a889c30d001a0989faa67e12c94fcbd96312a1bafc5c86791 (08-16 page-not-exist)",
+      "role": "Establishes URL-level archive and the absence of text-level preservation; body wording still relies on B1 carriers",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-ONEPASSION-STATEMENT-2025-01-23",
+      "sourceId": "SL-O05",
+      "class": "A3 page-state",
+      "object": "Wayback capture of the OnePassion Public Statement page (77 097 B)",
+      "locator": "http://web.archive.org/web/20250123081434/https://onepassion.org",
+      "sha256": "90a450edbfab7eceba457d279ed465d338bccd9849b0f43ba063c2494a4bf667",
+      "role": "Second independent memento proving the statement stayed published at least until 23 January 2025",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TRINITY-ORIGINAL-STATEMENT-2024-09-19",
+      "sourceId": "SL-P01",
+      "class": "A3 (archived official page)",
+      "object": "Internet Archive capture of the Trinity Bible Church of Dallas homepage carrying the STATEMENT block (47 823 B)",
+      "locator": "http://web.archive.org/web/20240919170126/https://www.trinitybibledallas.org/",
+      "sha256": "5c5e1b98b9cad34a36b005e43b72249af9cd8cd79fbfa901377626a3b47ef91d",
+      "role": "ORIGINAL statement object (published as an ANNOUNCEMENT block on the homepage); closes the P0 item for the Trinity original",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TRINITY-PREFALL-PAGESTATE-2024-09-14",
+      "sourceId": "SL-P02",
+      "class": "A3 page-state",
+      "object": "Internet Archive capture of the church homepage before the announcement (43 451 B); Latest Sermon listed as Lawson, Luke 7:18-23, 8 September 2024",
+      "locator": "http://web.archive.org/web/20240914142145/https://www.trinitybibledallas.org/",
+      "sha256": "86d38d8fa48ab8b3499910bcb521f511665d55f64a7622b3015ec154d25f2328",
+      "role": "Pre-fall page-state pair with the announcement capture",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TRINITY-STATEMENT-VERBATIM-TEXT",
+      "sourceId": "SL-P04",
+      "class": "derived verbatim text",
+      "object": "Extracted statement block, 1 494 chars, identical across four captures (2024-09-19 through 2024-10-01)",
+      "locator": "_work/custody_20260927c/TRINITY_STATEMENT_VERBATIM_2024-09-19.txt",
+      "sha256": "a858c3bacc9162cc77f4a9e86d24e967abeaa8cfc283b24aee3950bc133f3187",
+      "role": "Wording authority for the statement; contains two sentences absent from all news carriers",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-X-OEMBED-UNAVAILABLE-2026-09-27",
+      "sourceId": "SL-P05",
+      "class": "platform state",
+      "object": "X oEmbed responses: post 404; account @DrStevenJLawson 404; control live tweet 200; control account 200",
+      "locator": "https://publish.twitter.com/oembed",
+      "sha256": null,
+      "role": "Establishes that neither the post nor the handle is publicly retrievable via X's own embed service on 2026-09-27; deletion attribution not claimed",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-ONEPASSION-PODCAST-FEED-DEAD-2026-09-27",
+      "sourceId": "SL-P06",
+      "class": "page-state",
+      "object": "https://feeds.simplecast.com/XFCLnrvQ returns HTTP 404 (372 B); catalogues list the last episode as 2024-09-12",
+      "locator": "https://feeds.simplecast.com/XFCLnrvQ",
+      "sha256": "9dbc92df25126912...",
+      "role": "Weekly teaching podcast stopped around the fall; Romans episodes survive on third-party platforms as locators only",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TRINITY-LEADERSHIP-PRESTATE-2024-08-14",
+      "sourceId": "SL-Q01",
+      "class": "A3 page-state",
+      "object": "Archived Leadership page listing Lawson as Lead Preacher ahead of the elders (38 560 B)",
+      "locator": "http://web.archive.org/web/20240814210908/https://www.trinitybibledallas.org/leadership",
+      "sha256": "5d4f7a967373ffea19bea58edaeb3893c795ecfe551ff8ada3c4069dc1d13efc",
+      "role": "Institutional confirmation that the church itself distinguished Lead Preacher from Elder",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TRINITY-LEADERSHIP-DAYOF-2024-09-19",
+      "sourceId": "SL-Q02",
+      "class": "A3 page-state",
+      "object": "Leadership page capture at 2024-09-19 17:01 UTC with Lawson's entry removed; elders and deacons unchanged (37 901 B)",
+      "locator": "http://web.archive.org/web/20240919170126/https://www.trinitybibledallas.org/leadership",
+      "sha256": "b75bb03c32ff26f5c499981a61359dc5de60ada1e2c771e00c804094cf08084c",
+      "role": "Dated boundary: the card was removed no later than publication of the statement",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-TRINITY-ANNOUNCEMENT-LIFECYCLE",
+      "sourceId": "SL-Q03",
+      "class": "A3 page-state",
+      "object": "Homepage captures: statement present 2024-09-19/10-01/10-06/10-08 (last 2024-10-08 20:38 UTC, sha256 94f79c80ad...) and absent 2024-10-15 03:19 UTC (sha256 7ee8619435...)",
+      "locator": "http://web.archive.org/web/20241008203824/https://www.trinitybibledallas.org/ ; .../20241015031912/",
+      "sha256": "94f79c80ad0bdf3c5a04cff8ee47168b53318c36e4d67ecd4c8cb929405c92f9 (last present); 7ee861943516437fb9d090b321f77374012499d73895eb1345991571af5caa07 (first absent)",
+      "role": "Documented lifecycle of the institutional statement on the homepage (removed between 8 and 15 October 2024)",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-PROTESTIA-NOT-A-MEMBER-2024-11-08",
+      "sourceId": "SL-U01",
+      "class": "B1/C",
+      "object": "Article page snapshot (400 033 B) quoting the With All Wisdom podcast verbatim",
+      "locator": "https://protestia.com/2024/11/08/steve-lawson-was-not-a-pastor-elder-or-even-a-member-at-trinity-bible-church-an-update/",
+      "sha256": "1bd163da39a4eb4c9fad8ddfb286f0381f44c7ccc324499635b8f1fb3a3fe63c",
+      "role": "Side A position (podcast) with verbatim quotes",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-WAW-OWN-STATEMENT-2024-11-14",
+      "sourceId": "SL-U02",
+      "class": "B1 (podcast's own site)",
+      "object": "withallwisdom.org post snapshot (214 999 B)",
+      "locator": "https://withallwisdom.org/2024/11/14/regarding-g3s-statement-about-steve-lawson/",
+      "sha256": "ff3d59f68214d344317ccd02447ed08c99e0bf5cc54fce9dcfdd58bd38cd8cf2",
+      "role": "Side A clarifies it means formal membership; states a member could not verify Lawson went through the formal process",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-G3-STATEMENT-VIA-CARRIERS-2024-11-14",
+      "sourceId": "SL-U03",
+      "class": "B1 via carriers (original g3min.org returns HTTP 403; no Wayback capture of this statement)",
+      "object": "Verbatim G3 statement text as quoted by Evangelical Dark Web (266 323 B) and ChurchLeaders (369 608 B)",
+      "locator": "https://evangelicaldarkweb.org/2024/11/15/g3-ministries-insists-steve-lawson-was-member-of-trinity-bible-church/ ; https://churchleaders.com/news/500768-rumors-g3-ministries-founder-josh-buice-verifies-that-steven-lawson-is-a-member-of-trinity-bible-church.html",
+      "sha256": "9ac5afaef5164485037f85abcba2c9e7457065d260ded3ef5b6a59ec91bb045c (EWD); 3063f7d52a1b2c7f571c6fa46277bbdfc71eaf4f3acd3e13366a0c7ab9849798 (CL)",
+      "role": "Side B position: 'The facts are clear - Steven Lawson and his wife are members of Trinity Bible Church'",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-PROTESTIA-RUBBING-SALT-2024-11-15",
+      "sourceId": "SL-U05",
+      "class": "B1/C",
+      "object": "Article snapshot (528 841 B)",
+      "locator": "https://protestia.com/2024/11/15/rubbing-salt-in-the-wounds/",
+      "sha256": "e96584e01a8391b10b4d8bcc1d3ebd4dc7994e142a94f87c4e089b8ffa8e7c90",
+      "role": "Records that only membership was disputed, not the absence of eldership",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-PROTESTIA-MATTHEW18-2024-11-27",
+      "sourceId": "SL-U06",
+      "class": "B1/C",
+      "object": "Article snapshot (325 811 B) with the podcast's three main points and quotes",
+      "locator": "https://protestia.com/2024/11/27/trinity-bible-church-not-doing-matthew-18-on-steve-lawson-some-updates/",
+      "sha256": "2bf2064c5d6b3536e7610aaaeccc750ec806f5f31edc97edc1b9a58f64f51ce8",
+      "role": "Side A reiteration; rotating-guest-teachers claim",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-G3-STATEMENT-ON-BUICE-2025-05-12",
+      "sourceId": "SL-U07",
+      "class": "A3 (archived official statement)",
+      "object": "Wayback capture of g3min.org statement on Josh Buice (222 057 B)",
+      "locator": "http://web.archive.org/web/20250512145032/https://g3min.org/statement-regarding-josh-buice/",
+      "sha256": "a4c55bd1876e61f2a81231a33bd1c4d666e2701b2967a18b0db1b9299934ad99",
+      "role": "Context about the author of the G3 membership statement; not evidence about the truth of that statement",
+      "rawBytesInGit": false,
+      "durableReceipt": true
+    },
+    {
+      "id": "LAWSON-BOOK-CATALOG-RECORD",
+      "sourceId": "SL-V01",
+      "class": "B1 commercial catalog",
+      "object": "Library catalog record for the paperback with schema.org metadata (But God Press, POD, 124 pp, ISBN 9798996167302)",
+      "locator": "https://www.yes24.com/product/goods/196694745",
+      "role": "Book metadata: publisher, format, ISBN, print-on-demand",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": null
+    },
+    {
+      "id": "LAWSON-BOOK-PROTESTIA-ANNOUNCE-2026-09-21",
+      "sourceId": "SL-V02",
+      "class": "B1/C",
+      "object": "Article snapshot",
+      "locator": "https://protestia.com/2026/09/21/steve-lawson-releases-unflinching-confession-book-detailing-road-to-adulterous-affair/",
+      "role": "Release announcement",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "266a3bc1385a5b96d75fd7a98b79bee3b150297cd85eceb1bd7e4e80c9bcb9b7",
+      "bytes": 367274
+    },
+    {
+      "id": "LAWSON-BOOK-EWD-2026-09-21",
+      "sourceId": "SL-V03",
+      "class": "B1/C",
+      "object": "Article snapshot",
+      "locator": "https://evangelicaldarkweb.org/2026/09/21/steve-lawson-returns-with-new-book/",
+      "role": "Price/pages, publisher obscurity, summer return attempt",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "f80656df325f5f2d5c1854e8173ed026a67acf6f5dda6f449e492d87862c58a1",
+      "bytes": 259488
+    },
+    {
+      "id": "LAWSON-BOOK-CHURCHLEADERS-2026-09-21",
+      "sourceId": "SL-V04",
+      "class": "B1",
+      "object": "Article snapshot",
+      "locator": "https://churchleaders.com/news/2222895-steven-lawson-new-book.html",
+      "role": "Release coverage",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "56626ecd5969531d1e6282ed1dab1be7fbd52ca359ccc57a8585d90166d84ddb",
+      "bytes": 359066
+    },
+    {
+      "id": "LAWSON-BOOK-JUBILEECAST-2026-09-21",
+      "sourceId": "SL-V05",
+      "class": "B1",
+      "object": "Article snapshot",
+      "locator": "https://www.jubileecast.com/articles/39601/20260921/pastor-steven-lawson-committed-adultery-now-he-wants-to-tell-all-in-a-new-book-but-is-this-repentance-or-a-comeback.htm",
+      "role": "For-giveness vs restoration framing",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "e6068751cfb6019cefa16409bd806764238ef9ca342acb91d4bac65504ebff91",
+      "bytes": 62738
+    },
+    {
+      "id": "LAWSON-BOOK-WARTBURGWATCH-2026-09-23",
+      "sourceId": "SL-V06",
+      "class": "B1/C",
+      "object": "Article snapshot",
+      "locator": "https://thewartburgwatch.com/2026/09/23/steven-lawson-does-what-these-guys-often-do-he-wrote-a-book-was-it-a-confession-or-an-excuse/",
+      "role": "Reaction; volatile Amazon rating claim",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "5af118152a801120fe4db0012bf0d15f982b07540904966acd461d8fc9c1551f",
+      "bytes": 143901
+    },
+    {
+      "id": "LAWSON-BOOK-REVIEW-PROTESTIA-2026-09-25",
+      "sourceId": "SL-V07",
+      "class": "B1 review",
+      "object": "Review snapshot with book quotes (opening line; refusal of marriage counseling)",
+      "locator": "https://protestia.com/2026/09/25/mercy-in-the-wilderness-a-public-testimony-that-says-too-little/",
+      "role": "Only substantive review; book quotes through a carrier; two-Amazon-authors hazard",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "4927a00aae9dbb9f28830d1e4fadb05579fb2ae39f2bec4756f6b3daf304be82",
+      "bytes": 286489
+    },
+    {
+      "id": "LAWSON-CONFERENCE-PROTESTIA-2026-07-20",
+      "sourceId": "SL-V08",
+      "class": "B1/C + organizers' statement",
+      "object": "Article snapshot incl. update with organizers' statement",
+      "locator": "https://protestia.com/2026/07/20/steve-lawson-briefly-appears-as-conference-speaker-then-is-purged-from-website/",
+      "role": "Invited, advertised without consent, declined, removed (26 to 24)",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "5b0bb59f879db5f5653b266d467873dc52fdb9fd1e5316da5facbe043cb41d66",
+      "bytes": 317299
+    },
+    {
+      "id": "LAWSON-CONFERENCE-CHURCHLEADERS-2026-07-20",
+      "sourceId": "SL-V09",
+      "class": "B1",
+      "object": "Article snapshot",
+      "locator": "https://churchleaders.com/news/2220300-steven-lawson-contending-for-the-faith-speaking.html",
+      "role": "Independent confirmation of the episode",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "c49ae2c9f36baf6bdb9a31fc6220303d20182dbb372cc3125dc9f5f7a86a2c27",
+      "bytes": 359875
+    },
+    {
+      "id": "LAWSON-CONFERENCE-JUBILEECAST-2026-07-21",
+      "sourceId": "SL-V10",
+      "class": "B1",
+      "object": "Article snapshot",
+      "locator": "https://www.jubileecast.com/articles/38109/20260721/steven-lawson-quietly-removed-from-pastors-conference-after-organizers-mistake.htm",
+      "role": "Third independent confirmation",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "c9e0dbb9e29dedd0f9864bc5f342e0ba2a87d3bd61183a94f185905289c0e14c",
+      "bytes": 61070
+    },
+    {
+      "id": "LAWSON-STATUS-CHURCHLEADERS-2026-09-22",
+      "sourceId": "SL-V11",
+      "class": "B1",
+      "object": "Article snapshot",
+      "locator": "https://churchleaders.com/pastors/2222668-fallen-pastors-where-are-they-now.html",
+      "role": "2026 status: Nashville, Stephens Valley Church, no leadership role",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "74028d0f0dc0b580597a320a2f7a1e1cfc68ce25fdd17169d40747b92e86b279",
+      "bytes": 363500
+    },
+    {
+      "id": "LAWSON-GTY-70-58-LAWSON-SEGMENT-TEXT",
+      "sourceId": "SL-V12",
+      "class": "A2 official transcript (segment text retrieved and stored)",
+      "object": "Verbatim segment text of the official Grace to You transcript",
+      "locator": "https://www.gty.org/sermons/70-58/thinking-biblically-about-current-events-a-conversation-with-john-macarthur",
+      "role": "Paragraph-level locators for the MacArthur material; source of the 'unfaithful leaders' boundary",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "eff2072ae7e658cb670bdd54720bbd2a2014075c0431079c7b96e66352405b4f",
+      "bytes": 7010
+    },
+    {
+      "id": "LAWSON-PROTESTIA-MACARTHUR-2024-10-20",
+      "sourceId": "SL-V13",
+      "class": "B1/C",
+      "object": "Article snapshot",
+      "locator": "https://protestia.com/2024/10/20/john-macarthur-speaks-out-on-steve-lawson-the-lord-said-thats-enough/",
+      "role": "Retelling checked against the official transcript",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "9c9e1c1f1170df1d393a7ab8ca7c0bfebbadf424b1650f5f961e5346f0aa7f25",
+      "bytes": 294460
+    },
+    {
+      "id": "LAWSON-JOHNSON-EMAIL-TRR-2024-10-30",
+      "sourceId": "SL-V14",
+      "class": "B1 carrier of correspondence",
+      "object": "Article snapshot",
+      "locator": "https://roysreport.com/steve-lawson-began-his-adulterous-affair-with-woman-when-she-was-a-student-at-the-masters-university-gcc-pastor-admits/",
+      "role": "Attributed-only correspondence details (TMU student during the affair; Grace Books 2021)",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "5297428a159853368ff1c7f302c374e622f314ed8027cf858a6008313f13e1d6",
+      "bytes": 439650
+    },
+    {
+      "id": "LAWSON-CHRISTIANPOST-2024-11-11",
+      "sourceId": "SL-V15",
+      "class": "B1",
+      "object": "Article snapshot",
+      "locator": "https://www.christianpost.com/news/photo-emerges-of-woman-with-steve-lawson-at-macarthurs-church.html",
+      "role": "Correspondence details AND the misidentification hazard (Staats)",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "82c272a2bf47da4c7c82d77c5649426877015b3c4061939612a3b21d890bfa01",
+      "bytes": 65192
+    },
+    {
+      "id": "LAWSON-YOUTUBE-CHANNEL-STATE-2026-09-27",
+      "sourceId": "SL-V16",
+      "class": "A1 platform observation",
+      "object": "Channel page snapshot (59 videos, 234 subscribers, last uploads ~4 years ago)",
+      "locator": "https://www.youtube.com/channel/UCU_TblQ1tflE58vJT2IeG5g/videos",
+      "role": "Negative result: no active official channel activity",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "d4cdf344268c4679164d42a532a9ad3ad9cb4cd0f919dc60260c179b1fbca8f7",
+      "bytes": 1193287
+    },
+    {
+      "id": "LAWSON-MINISTRYWATCH-2024-09-20",
+      "sourceId": "SL-V17",
+      "class": "B1",
+      "object": "Article snapshot",
+      "locator": "https://ministrywatch.com/steven-lawson-removed-from-ministry-for-inappropriate-relationship/",
+      "role": "Only found carrier for the Ligonier action (teaching fellow removed; writings withdrawn)",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "41ff04c901394bc7a640aea5b66eaf1ef3c8f88c8e5ef911365d9a89531105fb",
+      "bytes": 113005
+    },
+    {
+      "id": "LAWSON-LIGONIER-TEACHER-2024-09-16",
+      "sourceId": "SL-W01",
+      "class": "A3 archived own page",
+      "object": "Ligonier teacher page capture with full bio (teaching fellow; TMS professor/dean)",
+      "locator": "http://web.archive.org/web/20240916060125/https://www.ligonier.org/learn/teachers/steven-lawson/",
+      "role": "Before-state of the Ligonier page",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "b1856691430b6dcde0a10e853e076df083474bc48427c2c305bb05d86c5187dd",
+      "bytes": 653858
+    },
+    {
+      "id": "LAWSON-LIGONIER-TEACHER-2024-09-23",
+      "sourceId": "SL-W02",
+      "class": "A3 archived own page",
+      "object": "Same page with titles stripped",
+      "locator": "http://web.archive.org/web/20240923013439/https://www.ligonier.org/learn/teachers/steven-lawson/",
+      "role": "Dated change: titles removed between 16 and 23 Sep 2024",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "629f8b55f8fd8599d746e49bfc21ad9c61c6ec551c05509bb8f4c60037477365",
+      "bytes": 658080
+    },
+    {
+      "id": "LAWSON-LIGONIER-TEACHER-2024-10-09",
+      "sourceId": "SL-W04",
+      "class": "A3 archived own page (official wording)",
+      "object": "Notice: 'His content is no longer featured due to violations of our content policy.'",
+      "locator": "http://web.archive.org/web/20241009163109/https://www.ligonier.org/learn/teachers/steven-lawson/",
+      "role": "The organization's own official formulation; closes the P1 Ligonier item",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "0906da965db6acbb7086265fc727ae45d88915dd398fd16f2b6ab3115526250d",
+      "bytes": 657103
+    },
+    {
+      "id": "LAWSON-LIGONIER-TEACHER-LIVE-2026-09-28",
+      "sourceId": "SL-W05",
+      "class": "A3 live own page",
+      "object": "Live page with the same notice and '0 Results'",
+      "locator": "https://learn.ligonier.org/teachers/steven-lawson",
+      "role": "Current state: page kept, content removed",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "6863709586c1bb50affe368381f055c1902154aac01d6c84a267ed102208e8b5",
+      "bytes": 101583
+    },
+    {
+      "id": "LAWSON-TMS-FACULTY-2024-07-10",
+      "sourceId": "SL-W07",
+      "class": "A3 archived own page",
+      "object": "TMS faculty page 200 with Professor of Preaching & Dean of D.Min.",
+      "locator": "http://web.archive.org/web/20240710074611/https://tms.edu/faculty/steven-j-lawson/",
+      "role": "Before-state for the TMS removal window",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "370e0828c56bc3de78fc02f86e0654355a79b364e9ecf40be7ca43b7578eff2f",
+      "bytes": 168762
+    },
+    {
+      "id": "LAWSON-TMS-FACULTY-2024-09-20",
+      "sourceId": "SL-W08",
+      "class": "A3 archived own page",
+      "object": "TMS faculty page 404",
+      "locator": "http://web.archive.org/web/20240920160956/https://tms.edu/faculty/steven-j-lawson/",
+      "role": "After-state; window 10 Jul - 20 Sep 2024",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "d8531a1ac331414d357ac014ac8813b93c2c0ea1756542ad8bacb6d352ed4891",
+      "bytes": 60
+    },
+    {
+      "id": "LAWSON-RBC-FACULTY-2024-09-11",
+      "sourceId": "SL-W10",
+      "class": "A3 archived own page",
+      "object": "Reformation Bible College page 200, 'Visiting Professor'",
+      "locator": "http://web.archive.org/web/20240911224618/https://reformationbiblecollege.org/faculty/steven-j-lawson",
+      "role": "Last capture; live URL now 404",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "25f7705c66df370613a9537b9a3a8c4bb5540922ce336e7b8680a50eece8c429",
+      "bytes": 110575
+    },
+    {
+      "id": "LAWSON-SHEPHERDS-SPEAKERS-2024-02-25",
+      "sourceId": "SL-W12",
+      "class": "A3 archived own page",
+      "object": "Shepherds Conference speakers page listing 'Steve Lawson - President, OnePassion Ministries'",
+      "locator": "http://web.archive.org/web/20240225143712/https://shepherdsconference.org/speakers",
+      "role": "Presence in the SC2024 list",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "73367217319f6401fcabd70f6f5ffe49ace4cdffa7f2b3430c536bed6c405eff",
+      "bytes": 32740
+    },
+    {
+      "id": "LAWSON-SHEPHERDS-SPEAKERS-2025-01-14",
+      "sourceId": "SL-W13",
+      "class": "A3 archived own page",
+      "object": "Shepherds Conference speakers page without Lawson",
+      "locator": "http://web.archive.org/web/20250114025116/https://shepherdsconference.org/speakers",
+      "role": "Absence by Jan 2025",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "ba6a81ea674a2170ee5cc6b125bffa2362996e3e3559da296782d8cafd41ceda",
+      "bytes": 21664
+    },
+    {
+      "id": "LAWSON-WAW-PODCAST-RSS",
+      "sourceId": "SL-X01",
+      "class": "A1 publisher feed",
+      "object": "Official podcast RSS feed (144 items) enumerating the seven-episode Lawson series",
+      "locator": "https://feeds.buzzsprout.com/1484452.rss",
+      "role": "Series enumeration: #96-#102",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "49ee70d231f7f66a7532a1ae6c8d75d63695da9a8239d60a5f489c16a153d841",
+      "bytes": 240842
+    },
+    {
+      "id": "LAWSON-WAW-98-ASR",
+      "sourceId": "SL-X03",
+      "class": "A1 primary audio (machine transcript as locator)",
+      "object": "Episode #98 transcript, 563 segments",
+      "locator": "https://www.buzzsprout.com/1484452/episodes/16039055-episode-98-updates-on-the-steve-lawson-situation.mp3",
+      "role": "Verbatim locators for 'not a pastor... not a member... waffled... because they can't'",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "ab2353293ca1cc1e6c7f33fcb40702c9aea1dc1b8ea68161fc714a7a0777479e",
+      "bytes": 43401
+    },
+    {
+      "id": "LAWSON-WAW-98-CLIP-NOT-A-PASTOR",
+      "sourceId": "SL-X04",
+      "class": "A1 primary audio excerpt",
+      "object": "Audio excerpt 704-770 s",
+      "locator": "same episode URL",
+      "role": "Audible verification of the central Side A claim",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "f4268228485b41bb70c62f7f19803e0f2731dc43bfba08454c955b930b8f6a0a",
+      "bytes": 198513
+    },
+    {
+      "id": "LAWSON-WAW-98-CLIP-1TIM5-20",
+      "sourceId": "SL-X05",
+      "class": "A1 primary audio excerpt",
+      "object": "Audio excerpt 965-1000 s (James 3:1; 1 Tim 5:20 public rebuke demand)",
+      "locator": "same episode URL",
+      "role": "Side A's accountability demand",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "583c1039d478becc27e50a39fd487ff475212dcbc2469fdb466ca4b4b11dc935",
+      "bytes": 105525
+    },
+    {
+      "id": "LAWSON-WAW-102-ASR",
+      "sourceId": "SL-X07",
+      "class": "A1 primary audio (machine transcript as locator)",
+      "object": "Episode #102 transcript, 681 segments",
+      "locator": "https://www.buzzsprout.com/1484452/episodes/16159052-episode-102-steve-lawson-ecclesiology-and-a-word-to-trinity-bible-church.mp3",
+      "role": "Ecclesiology argument verbatim",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "2cc83dbc316e6384e76d312a4cc70f2d70eefe29fbd03a7b1faa1770313b68ad",
+      "bytes": 49805
+    },
+    {
+      "id": "LAWSON-WAW-102-CLIP-STRUCTURE",
+      "sourceId": "SL-X08",
+      "class": "A1 primary audio excerpt",
+      "object": "Audio excerpt 68-215 s",
+      "locator": "same episode URL",
+      "role": "'expose Trinity's church structure'; 'dynamic guest preachers'",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "d808d1c490e9989d7185f38bc2f6f5d513dbe83ba2b8491220dd7d7e7e1c4ef8",
+      "bytes": 441513
+    },
+    {
+      "id": "LAWSON-WAW-102-CLIP-MANDATE",
+      "sourceId": "SL-X09",
+      "class": "A1 primary audio excerpt",
+      "object": "Audio excerpt 460-512 s",
+      "locator": "same episode URL",
+      "role": "Mandate of preaching belongs to elders, not guest preachers",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "4f6f94ea6341a17552435e735b97ac9c0b11806d159d445fc3f2f0082d2fb0e5",
+      "bytes": 156501
+    },
+    {
+      "id": "LAWSON-TRR-STEPHENS-VALLEY-2025-01-24",
+      "sourceId": "SL-X10",
+      "class": "B1 (interview carrier)",
+      "object": "Article snapshot with Bachmann interview",
+      "locator": "https://roysreport.com/steve-lawson-attends-nashville-church-pastor-believes-he-can-be-restored/",
+      "role": "Third voice on membership; SVC cannot discipline; counseling and elders; still no Trinity statement",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "c4c6aa3f36efeaec63c065e5619ac7994fa2b36818afc04a7e9fc210f3888020",
+      "bytes": 393542
+    },
+    {
+      "id": "LAWSON-WAW-96-ASR",
+      "sourceId": "SL-Y01",
+      "class": "A1 primary audio (machine transcript as locator)",
+      "object": "Episode #96 transcript, 629 segments",
+      "locator": "https://www.buzzsprout.com/1484452/episodes/15951117-episode-96-why-are-we-talking-about-steve-lawson-part-1.mp3",
+      "role": "Original formulation of the allegations, sourced to Phil Johnson; membership claim still attributed to others ('some have said')",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "bb60fa1610b1019015a7fb3b868a411df4ca95df618c977123f5650fa6b93654",
+      "bytes": 45827
+    },
+    {
+      "id": "LAWSON-WAW-97-ASR",
+      "sourceId": "SL-Y02",
+      "class": "A1 primary audio (machine transcript as locator)",
+      "object": "Episode #97 transcript, 521 segments",
+      "locator": "https://www.buzzsprout.com/1484452/episodes/15951101-episode-97-why-are-we-talking-about-steve-lawson-part-2.mp3",
+      "role": "'Not an elder, so no accountability' line; critique of the 'trust the elders' argument",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "e3094dd94839d95359b30f12d5c3c850ddcb4362e24a7b30563efb6cf1f48b1c",
+      "bytes": 40339
+    },
+    {
+      "id": "LAWSON-WAW-101-ASR",
+      "sourceId": "SL-Y05",
+      "class": "A1 primary audio (machine transcript as locator)",
+      "object": "Episode #101 transcript, 724 segments",
+      "locator": "https://www.buzzsprout.com/1484452/episodes/16159042-episode-101-are-we-still-talking-about-steve-lawson-yes.mp3",
+      "role": "Side A's own chronology: their report, 'exactly 10 days later' the G3 statement, their brief response, then 'eight days' with no answer from Trinity",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "c08d78b3c55663cdafdf3b57d58af4f4b42bcecf3429365000a4f9707a4c265c",
+      "bytes": 54494
+    },
+    {
+      "id": "LAWSON-CRI-EQUIP-2024-10-02",
+      "sourceId": "SL-Y07",
+      "class": "B1 institutional commentary (labelled Viewpoint by the publisher)",
+      "object": "Christian Research Institute article on terminology ('moral failing', 'inappropriate relationship')",
+      "locator": "https://www.equip.org/articles/a-christians-response-to-pastor-lawsons-moral-failure/",
+      "role": "External editorial support for the corpus's terminology discipline; not evidence about Lawson",
+      "rawBytesInGit": false,
+      "durableReceipt": true,
+      "sha256": "b956db68c41ebdebef324de9a860d5d665330224b68701f043ef8044a218c6be",
+      "bytes": 219844
+    }
+  ],
+  "pageStateObservations": [
+    {
+      "date": "2026-09-27",
+      "observation": "gracechurch.org 2017 Shepherds' Conference catalogue lists General Sessions 1–13 and 15 but not Session 14, and does not list Lawson's seminar session; Wayback captures 20241203112858 and 20250317203624 show the same state; the official Session 14 MP3 remains reachable.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "All five ligonier.org pages for the 2023 London conference featuring Lawson return HTTP 404; non-Lawson session pages return 200.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "Official Ligonier YouTube playlist for the 2023 London conference (13 items) retains Lawson's Q&A/panel appearances but omits both of his solo sessions («The Word of God for Exiles»; «Preach the Word»); the corresponding ligonier.org pages return 404.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "SermonAudio catalogue shows a broadcast titled The Word of God for Exiles (Sermon ID 10122311204054; 44:28; card date 2023-10-11; Category: Conference; Bible Text 1 Peter 1:23; 2 Timothy 3:16-17; Broadcaster Grace Audio Treasures; Series Puritan Devotional) whose duration is identical to the third-party YouTube re-upload Ey7kYHEpcyo (2668 s). Media host returned 502 at capture; identity of the recordings is NOT asserted.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "Audio for the SermonAudio broadcast of The Word of God for Exiles was obtained later on 2026-09-27 (32 173 613 B; 2668.16 s; ID3 album Grace Audio Treasures, comment Puritan Devotional). Four sampled windows transcribe to the same text as the auto-captions of the YouTube re-upload Ey7kYHEpcyo, including the Word of God possesses the right to bind our conscience (14:09). Identity of the two third-party copies is verified; the official Ligonier object remains absent.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "On 2026-09-27 evening the Internet Archive web endpoints returned 'Internet Archive: Temporarily Offline' (HTTP 503) for onepassion.org CDX queries and an empty CDX result for trinitybiblechurchofdallas.com; archive.today was unreachable (HTTP 000) from the sandbox; Google Books API returned HTTP 429; OpenLibrary has no record of the book. These are infrastructure/search negatives, not evidence of absence.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "Ligonier's official conference programme pages confirm both 2023 London sessions by Lawson (pre-conference 'Preach the Word'; main 'The Word of God for Exiles', Westminster Chapel, 8-9 September 2023), but no official media objects were located; the former event page returns HTTP 404.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "The published sample pages of Mercy in the Wilderness (as reproduced by Protestia on 2026-09-21) are now in custody with hashes; they carry verbatim self-description but no page numbers, so book quotations remain limited to 'released sample pages' framing.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "On 2026-09-27 the Internet Archive came back online for URL-level queries. Wayback holds at least eight mementos of the X statement URL (first capture 2025-03-14, two days after posting), but the March captures are JavaScript shells containing no statement text; captures of 2025-07-06 and 2025-08-16 return X's own page-does-not-exist view. No conclusion about who removed the post is drawn; the durable wording remains via outlet carriers.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "The Trinity September 2024 statement text was reconstructed sentence by sentence from six carriers. Sentences 5-8 (Christ remains Head of the church; the Lord was building Trinity long before and after Steve Lawson; the 1 Cor 10:12 appeal) were absent from the corpus before this pass. The original church page object is still missing; the church domain has only a 2019 Wayback snapshot.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "OnePassion's public statement page was still published on 2025-01-23 (second memento), i.e., the institutional text persisted for months, unlike the personal X post.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "The Trinity September 2024 statement was located as an archived capture of the church homepage (2024-09-19 17:01 UTC). The statement block is byte-identical across four captures through 2024-10-01 (no edits). The full text contains two sentences absent from all news carriers: the ministry start date January 5, 2018, and the primacy-of-exposition sentence about various men filling the pulpit each week. The pre-fall capture of 2024-09-14 lists Lawson's 8 September 2024 sermon as the latest and carries no announcement.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "On 2026-09-27 X's public oEmbed service returned 404 for both the statement post and the @DrStevenJLawson handle while returning 200 for control tweets/accounts. The account and post are not publicly retrievable via that service; no claim is made about who removed them or when. The text of the statement remains documented through outlet carriers and the archived church page.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "The OnePassion podcast feed (feeds.simplecast.com/XFCLnrvQ) returns 404; third-party catalogues list the last episode as 2024-09-12 with status Idle. Romans-series episodes survive on third-party platforms as locators, not as citation objects.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "The Trinity Leadership page listed Dr. Steven J. Lawson as Lead Preacher (distinct from the elders) on 2024-08-14; his entry was gone in the capture of 2024-09-19 17:01 UTC, the same moment the statement appeared, with elders and deacons unchanged. The homepage ANNOUNCEMENT block remained present in captures from 2024-09-19 through 2024-10-08 (last known present: 2024-10-08 20:38 UTC) and was gone by 2024-10-15 03:19 UTC - removed between 8 and 15 October 2024. Recorded as page states; no motive inferred.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "A public dispute over Lawson's membership at Trinity Bible Church ran through November 2024: the With All Wisdom podcast asserted he was neither pastor, elder nor (formally) a member, citing a staff member and church members; G3 Ministries stated that the facts are clear and that Lawson and his wife are members, citing two sources inside the church. Trinity itself never publicly addressed membership or discipline. The corpus now records both sides with verbatim quotes, publication rules requiring both positions, and the 2025-05-12 G3 statement about its then-president as context about the author of side B, explicitly not as evidence on the merits.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-27",
+      "observation": "Pass 2 (book, conference, current status): the September 2026 wave around *Mercy in the Wilderness* is fully recorded (metadata with But God Press/print-on-demand; one substantive review whose book quotes stay carrier-bound; volatile Amazon rating excluded from publication). The July 2026 Contending for the Faith episode is established by three independent carriers plus the organizers' statement: he was invited, advertised without his consent, declined, and was removed (26 to 24) - the correct wording is 'invited, declined', never 'tried to return'. The 2026 status (Nashville, Stephens Valley Church, no leadership role) is recorded as reported. The official GTY 70-58 transcript adds paragraph-level locators and a new binding boundary: 'unfaithful leaders are being exposed' is a general statement in a passage naming other cases, not a personal label for Lawson. Two publication hazards are now explicit: the Christian Post misidentification of the correspondent Casey Staats as the woman, and the two 'Steven J. Lawson' author profiles on Amazon. No official Ligonier statement exists; the action is carried by MinistryWatch only. Russian-language material (including the VK article lead) remains unfound.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-28",
+      "observation": "Pass 3 (institutional trail): the organizations' own pages now document the response in dated steps. Ligonier kept its teacher page but (a) stripped his titles between 16 and 23 Sep 2024 (teaching fellow; professor of preaching and dean of D.Min. at TMS; teacher for the Institute for Expository Preaching; author list) and (b) added between 27 Sep and 9 Oct 2024 the notice 'His content is no longer featured due to violations of our content policy' - which remains on the live page today with '0 Results'. That notice is the first official Ligonier object in the case and closes the open P1 item previously carried only by MinistryWatch. The Master's Seminary faculty page moved from 200 (last capture 10 Jul 2024) to 404 (captures from 20 Sep 2024) and stays 404, with no Lawson in the faculty index; Reformation Bible College's 'Visiting Professor' page is gone (last 200 capture 11 Sep 2024; live 404); Shepherds Conference listed him in the SC2024 speakers page and no longer lists him by Jan 2025 or today. OnePassion's site currently fails to serve on our routes (TLS handshake failure, Cloudflare 409, no homepage captures after January 2025) - recorded as an infrastructure observation with an explicit caveat and no inference. All changes are recorded as dated windows with no motive claims, and the Ligonier wording must never be expanded into a specification of what the violations were.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-28",
+      "observation": "Pass 4 (accountability and ecclesiology): the Side A podcast was not one episode but a seven-episode series (#96-#102, 21 Oct - 27 Nov 2024) per its own RSS feed, and its central claims are now verified verbatim from its own audio with timecodes ('he was not a pastor. He was not an elder... He was not a member of that church' ~704-714s; 'kind of waffled when I said, was he a member' ~735-740s; 'the elders... are not the ones managing the Matthew 18 process... because they can't' ~741-754s), which upgrades these from a Protestia retelling to Side A's own primary publication while leaving them contested (the only source is an unnamed staff member). Episode #102 adds a coherent ecclesiological argument: the guest-preacher model itself is treated as partly responsible, with 'dynamic guest preachers' quoted from Trinity's own 'what to expect' page as of late Nov 2024. Side A's interpretation 'lead guest preacher' and 'Trinity admits we can't do anything' are marked as their characterisations, never as church statements. The Roys Report (24 Jan 2025) adds a third voice to the membership dispute: Stephens Valley pastor Jim Bachmann says Lawson attends SVC (where his brother is a member), is not an SVC member so SVC cannot discipline him, meets two professional counselors and elders regularly, moved to give his wife space and visited her in Dallas in January; and Bachmann believes Lawson was and still is a member of Trinity and is not under Trinity's discipline, with no contact from Trinity leadership and no response to TRR's request. Recorded as one pastor's attributed opinion, not a resolution. Full MP3s were deleted after transcription to respect workspace limits; hashes, sizes and URLs are recorded.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-28",
+      "observation": "Pass 5 (series completion): episodes #96, #97 and #101 of the With All Wisdom series were acquired and transcribed, completing the primary-audio coverage of the Side A chronology. Two findings matter for discipline. First, on 21 Oct 2024 (#96) the membership claim was still attributed to others ('some have verified... some have said that he was not even a member of the church'), while the hosts' own assertion dates from 4 Nov 2024 (#98) after contact with a staff member - so the corpus must not date Side A's assertion earlier than 4 Nov. Second, episode #101 (25 Nov 2024) documents from Side A's own mouth the exact sequence the corpus previously held only through documents: their report, 'exactly 10 days later' the G3 counter-statement, their brief response citing a staff member, and 'eight days' later still no public answer from Trinity; it also records their formal-vs-default membership distinction and their 'we are not upset at G3' statement. Episode #96 confirms the allegation details (five years, late twenties, father confronted, 'no literal fornication') are sourced to Phil Johnson's X posts, which the corpus already attributes that way. The Christian Research Institute's Viewpoint article (Christian Research Journal 47:4, 2 Oct 2024, updated 2026) is added as external editorial support for terminology discipline, explicitly not as evidence about Lawson.",
+      "motiveClaimed": false
+    },
+    {
+      "date": "2026-09-28",
+      "observation": "Corpus consolidation pass: the canonical Russian draft was advanced to v4 (file 17_) absorbing all five passes, the evidence dossier 01 gained a dated pass index, and a full cross-corpus reconciliation (file 18_) fixed the publication base and recorded four publication-safety defects in the parallel VK article: membership asserted as fact (the church never publicly said it), an unattributed 'permanently disqualified' attribution, a translated book title presented as if it were the book's title, and review-dependent claims that must keep their attribution. Seven items from the VK article (the August-September 2024 sermon sequence, Clint Archer's account, the Benzinger testimony, two Lawson quotes, Mohler/Piper/9Marks/Carson material, the favorable review, and the March 2025 accountability wording) are recorded as leads to migrate only after their own objects are obtained. No previously held claim, quote or rule was weakened; editorial history (03 -> 05 -> 07 -> 17) is preserved.",
+      "motiveClaimed": false
+    }
+  ],
+  "custodyStorageNote": "Raw capture bytes are not committed to Git. Bulky carrier HTML files acquired on 2026-09-27/28 were pruned from the workspace on 2026-09-28 to keep the delivery snapshot within limits; every pruned object keeps its locator, byte size and SHA-256 in this manifest, so it can be re-acquired deterministically. Retained locally: compact text extracts, the GTY segment text, the With All Wisdom transcripts and the audio excerpts of episodes #98/#102 (_work/custody_20260928g/). Full podcast MP3s were deleted after transcription: #98 sha256 920ccdfb5a7a8dfe396b3224…, 24 634 300 B; #102 sha256 c7b36a4cbe7442df28a3b4f7…, 29 081 912 B."
+}
