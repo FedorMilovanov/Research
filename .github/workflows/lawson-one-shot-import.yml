@@ -1,0 +1,114 @@
+name: Lawson one-shot final import
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/lawson-one-shot-import.yml
+
+permissions:
+  contents: write
+
+jobs:
+  import-lawson:
+    if: github.event.head_commit.message == 'chore(lawson): one-shot import runner'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      EXPECT_BASE: b7cd8a8b11a3b2405e0d6cc727ebb68fac36abf1
+      SHARE_URL: https://firestorage.ai/ja/f/LvETJULr-MrE
+      ZIP_SHA256: a420d4d69e364325e3edb7444a4420ecc957c950d97ef4ed92f3fdf6068bf351
+      RUNNER_PATH: .github/workflows/lawson-one-shot-import.yml
+    steps:
+      - name: Checkout triggering commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Guard exact base and runner-only commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD^)" = "$EXPECT_BASE"
+          test "$(git diff --name-only HEAD^ HEAD)" = "$RUNNER_PATH"
+
+      - name: Download verified overlay from firestorage
+        shell: bash
+        run: |
+          set -euo pipefail
+          work=/tmp/lawson-playwright
+          mkdir -p "$work"
+          cd "$work"
+          npm init -y >/dev/null 2>&1
+          npm install --no-save playwright >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null
+          cat > download.cjs <<'NODE'
+          const { chromium } = require('playwright');
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ acceptDownloads: true });
+            await page.goto(process.env.SHARE_URL, { waitUntil: 'networkidle', timeout: 60000 });
+            const candidates = [
+              page.getByRole('link', { name: /ダウンロード|Download/i }),
+              page.getByRole('button', { name: /ダウンロード|Download/i }),
+              page.getByText(/ダウンロード|Download/i)
+            ];
+            let saved = false;
+            for (const locator of candidates) {
+              if (await locator.count()) {
+                try {
+                  const wait = page.waitForEvent('download', { timeout: 20000 });
+                  await locator.first().click();
+                  const download = await wait;
+                  await download.saveAs('/tmp/lawson_repo_overlay.zip');
+                  saved = true;
+                  break;
+                } catch (_) {}
+              }
+            }
+            await browser.close();
+            if (!saved) throw new Error('No downloadable file was produced by the firestorage share page');
+          })();
+          NODE
+          node download.cjs
+          echo "$ZIP_SHA256  /tmp/lawson_repo_overlay.zip" | sha256sum -c -
+
+      - name: Verify inner manifest and overlay repository files
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/lawson-overlay
+          mkdir -p /tmp/lawson-overlay
+          unzip -q /tmp/lawson_repo_overlay.zip -d /tmp/lawson-overlay
+          cd /tmp/lawson-overlay
+          sha256sum -c MANIFEST.sha256
+          test "$(find STEVE_LAWSON STEVEN_LAWSON_2024_2026 -type f | wc -l)" -eq 27
+
+      - name: Apply overlay and self-remove runner
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp -a /tmp/lawson-overlay/STEVE_LAWSON/. STEVE_LAWSON/
+          cp -a /tmp/lawson-overlay/STEVEN_LAWSON_2024_2026/. STEVEN_LAWSON_2024_2026/
+          git rm "$RUNNER_PATH"
+          git add STEVE_LAWSON STEVEN_LAWSON_2024_2026
+          git diff --cached --check
+          bad="$(git diff --cached --name-only | grep -Ev '^(\.github/workflows/lawson-one-shot-import\.yml|STEVE_LAWSON/|STEVEN_LAWSON_2024_2026/)' || true)"
+          test -z "$bad"
+          test "$(git diff --cached --name-only | wc -l)" -eq 28
+          grep -Fq 'PUBLICATION_READY_WITH_GUARDRAILS' STEVE_LAWSON/00_AUTHORITY_AND_SCOPE_2026-09-27.md
+          grep -Fq 'PUBLICATION_READY_WITH_GUARDRAILS' STEVE_LAWSON/17_ARTICLE_RU_REFINED_V4_2026-09-28.md
+          grep -Fq 'RESEARCH_LANE_SUBSTANTIALLY_CLOSED' STEVE_LAWSON/20_FINAL_CLAIM_SOURCE_AUDIT_2026-09-28.md
+          grep -Fq 'Global PUBLICATION_HOLD:** `REMOVED`' STEVE_LAWSON/20_FINAL_CLAIM_SOURCE_AUDIT_2026-09-28.md
+
+      - name: Commit and fast-forward main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'research(lawson): import verified bundle state and close publication audit' \
+            -m 'Reconciles the verified 12-commit thin-bundle state b7cd8a8..13c5ecf, then applies the final housekeeping and claim/source audit. Canonical status: PUBLICATION_READY_WITH_GUARDRAILS; remaining work is archival P1/P2.'
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = "$GITHUB_SHA"
+          git push origin HEAD:main
