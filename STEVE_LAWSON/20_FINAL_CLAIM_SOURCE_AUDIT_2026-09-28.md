@@ -1,20 +1,43 @@
 # Steven J. Lawson — final claim-to-source and publication-safety audit
 
 **Corpus:** `LAWSON-2024-2026`  
-**Snapshot:** `2026-09-28`  
+**Original snapshot:** `2026-09-28`  
+**Control update:** `2026-09-29`  
 **Draft audited:** `17_ARTICLE_RU_REFINED_V4_2026-09-28.md`  
-**Status:** `PASS_WITH_GUARDRAILS / RESEARCH_LANE_SUBSTANTIALLY_CLOSED`  
+**Historical status:** `PASS_WITH_GUARDRAILS / RESEARCH_LANE_SUBSTANTIALLY_CLOSED`  
+**Current status:** `SUPERSEDED AT MEMBERSHIP/DISCIPLINE CLAIM CLUSTER — SEE 21_CONTROL_RESEARCH_2026-09-29.md`  
 **Current queue authority:** `19_CURRENT_STATUS_AND_ACQUISITION_QUEUE_2026-09-28.md`
 
-## 1. Verdict
+## 0. Sep 29 control-pass supersession note
 
-The canonical v4 article is **publication-ready at the evidence-architecture level**. No unresolved source hunt independently requires a global `PUBLICATION_HOLD`.
+The 28 Sep audit remains valid for the great majority of the corpus, but **one high-risk claim cluster materially changed** after a control pass located and integrated carriers of the Dec 11, 2024 Trinity church-wide fellowship-meeting audio.
 
-This does **not** mean every historical question is resolved. It means the claims retained in v4 can be published at their present level of specificity if the article preserves the attribution, privacy and wording guardrails below. The remaining P1/P2 items are evidence upgrades or genuinely unresolved public questions, not excuses to turn absence of evidence into a fact.
+The following 28 Sep conclusions are superseded:
 
-## 2. What this audit checked
+- `Trinity formal membership = PASS AS DISPUTED / never state membership as fact in either direction`;
+- `no Trinity resolution of membership/discipline` as the current final state;
+- the resulting membership wording in canonical v4.
 
-The final pass compared the canonical article against:
+Current classification:
+
+- **Formal membership:** `STRONGLY ESTABLISHED VIA PRIMARY-EVENT RECORD PRESERVED BY MULTIPLE CARRIERS`. According to carriers of the Dec 11 meeting audio, Trinity elders told their congregation that Steve and Anne were members and had completed the formal membership process.
+- **Role:** unchanged — Lawson was `Lead Preacher`, not elder/pastor.
+- **Discipline:** Trinity elders themselves, according to the same meeting carriers, said they had disciplined Lawson and identified exposure/removal/termination of compensation/permanent ministry disqualification as disciplinary actions. Whether that exhausted every Matthew 18 / 1 Tim 5 responsibility and how accountability continued remains a separate question.
+- **Canonical v4:** `TARGETED REVISION REQUIRED BEFORE PUBLICATION`.
+
+The control pass also adds the verified 2019-uploaded Lawson purity Q&A, the Didaché argument audit, the book-wilderness critique, the Adam Markley direct-contact claim, and fresh Sep 24–29 reaction coverage. See `21_` for complete provenance and guardrails.
+
+There is still **no global PUBLICATION_HOLD**. This is a claim-level correction, not a reopening of the entire research lane.
+
+## 1. Verdict of the original Sep 28 audit
+
+At the time of the Sep 28 snapshot, canonical v4 was publication-ready at the evidence-architecture level under the then-current membership guardrail. No unresolved source hunt independently required a global `PUBLICATION_HOLD`.
+
+That broad verdict survives, except that publication must now wait for the targeted membership/discipline rewrite recorded above.
+
+## 2. What the Sep 28 audit checked
+
+The pass compared the canonical article against:
 
 - the claim matrix in `00_AUTHORITY_AND_SCOPE_2026-09-27.md`;
 - the source/object ledger in `02_SOURCE_LEDGER_2026-09-27.md`, including the 2026-09-28 external closure block;
@@ -22,120 +45,131 @@ The final pass compared the canonical article against:
 - the membership dispute file `13_`;
 - the cross-corpus reconciliation in `18_`;
 - the current operational queue in `19_`;
-- fresh public checks of the Ligonier Lawson page, Ligonier's 2023 London stream post, the current 2026 Contending for the Faith schedule/speaker list, Clint Archer's first-person article, the preserved Benzinger thread, the two substantive 2026 book reviews, and the contextual Carson/Piper/9Marks/Mohler sources recorded as `SL-AA01`–`SL-AA14`.
+- public checks of the Ligonier Lawson page, Ligonier's 2023 London stream post, the 2026 Contending for the Faith schedule/speaker list, Clint Archer's first-person article, the preserved Benzinger thread, the substantive 2026 book reviews, and contextual Carson/Piper/9Marks/Mohler sources.
 
 The audit concentrated on claims with the highest publication risk: direct quotation, disputed membership/discipline, private-person detail, institutional attribution, book claims without page locators, negative-search claims, and statements that could be mistaken for a verdict on Lawson's conversion or motives.
 
-## 3. High-risk claim matrix
+## 3. High-risk claim matrix — current after Sep 29 control update
 
-| Claim cluster in v4 | Evidence basis | Result | Publication rule |
+| Claim cluster | Evidence basis | Current result | Publication rule |
 |---|---|---|---|
-| Trinity's September 2024 removal statement | archived capture of the official church homepage (`SL-P01` etc.) | **PASS / primary institutional object** | Quote/describe Trinity itself; do not expand “inappropriate relationship” beyond the source when relying on this object alone. |
-| Lawson's role at Trinity | archived `Leadership` page: `Lead Preacher` outside the elders list + dated removal | **PASS / page-state** | “Lead Preacher, not an elder/pastor” is supportable; do not infer formal membership from the role page. |
+| Trinity Sept 2024 removal statement | archived official homepage | **PASS / primary institutional object** | Quote/describe Trinity itself; do not expand the initial “inappropriate relationship” wording from this object alone. |
+| Lawson role at Trinity | archived `Leadership` page | **PASS / Lead Preacher, not elder/pastor** | Role and formal membership are separate questions. |
+| Trinity formal membership | Nov WAW/G3 dispute + Dec 11 church-wide meeting preserved by multiple carriers | **STRONGLY ESTABLISHED VIA PRIMARY-EVENT RECORD PRESERVED BY CARRIERS** | Preserve the chronology; do not claim Trinity issued a separate public web statement. |
+| Trinity discipline | Dec 11 elder-meeting carriers | **ELDERS' OWN REPORTED POSITION ACQUIRED** | May say elders themselves described removal/exposure/compensation termination as discipline; adequacy/continuation remains a separate question. |
 | OnePassion response | archived institutional statement | **PASS / primary institutional object** | Its disqualification language may be attributed to OnePassion. |
-| TMS / Busenitz “permanently disqualified” | contemporary carriers of the TMS communication; Austin Duncan wording also independently preserved by multiple carriers | **PASS WITH CARRIER ATTRIBUTION** | Do not pretend the corpus possesses a public TMS statement/recording it does not have. |
-| MacArthur on Lawson, GTY 70-58 | official GTY transcript + official audio with second-level locators | **PASS / quote-safe** | Preserve the difference between what MacArthur actually said about Lawson and his broader categories about unfaithful/moral-heretic leaders. |
-| MacArthur “moral heretic” principle | separate official GTY interview | **PASS / contextual** | Never rewrite the general principle as a personal label MacArthur applied to Lawson after the scandal. |
-| Shepherds' Conference 2017 Session 14 | official conference MP3, exact closing locators | **PASS / quote-safe** | The “unconverted shepherd” warning is a general pastoral warning, not a self-confession by Lawson. |
-| 2022 Christian Worldview self-deception material | official program + official transcript | **PASS / primary transcript** | Supports Lawson's pre-fall theology of self-deception; not a verdict on Lawson's own regeneration. |
-| 2023 `Preach the Word` | official Ligonier stream post + surviving Ligonier-attributed HopeLife video card | **PASS FOR EXISTENCE/SUBJECT; NO VERBATIM LAWSON QUOTE** | Paraphrase the session description only until direct media/transcript and a precise locator are recovered. |
-| March 2025 confession | Lawson statement preserved in full by stable carriers; original X route is publicly unavailable | **PASS WITH PRESERVATION NOTE** | Attribute the confession to Lawson; the dead/unavailable X route does not erase the preserved text. |
-| Book authenticity / metadata | catalog objects, publisher/review wave, Phil Johnson confirmation object | **PASS** | Keep catalog conflicts (122/124 pages etc.) visible rather than harmonizing them. |
-| Book's counseling/refusal episode | substantive review reports the admission; no page locator in corpus | **PASS ONLY AS REVIEWER-MEDIATED** | Current v4 correctly says “по рецензии”; do not turn it into “Lawson writes on p. X” without the page. |
-| Book reception | critical Protestia review + more sympathetic ResponsiveReiding review | **PASS / balanced reception** | Reviews are evidence of reception/reading, not primary proof of disputed historical facts. |
-| Phil Johnson reaction to the 2026 book | preserved X/oEmbed object | **PASS** | v4 now uses only a short key quotation and paraphrases the remainder. |
-| Ligonier current status | live Ligonier teacher page + archived page-state window | **PASS / current first-party wording** | Quote “violations of our content policy” without inventing what the violations were; do not say the page was deleted. |
-| TMS/RBC/Shepherds institutional page changes | dated archived/live page-state pairs | **PASS AS PAGE-STATE** | Record what disappeared/404'd and when; do not infer motive. |
-| Trinity formal membership | conflicting WAW/G3/Bachmann evidence; no Trinity resolution | **PASS AS DISPUTED** | Never state membership as fact in either direction. |
-| WAW membership/accountability account | primary podcast audio + ASR locators | **PASS AS PARAPHRASE** | v4 was changed to paraphrase the #98 position instead of publishing ASR-derived verbatim wording without an ear-check. |
-| G3 membership statement | exact wording preserved by contemporary carriers; original G3 object unavailable | **PASS WITH CARRIER ATTRIBUTION** | Say the original is unavailable; do not upgrade carrier-preserved wording to a first-party object. |
-| Jim Bachmann / Stephens Valley | direct interview in The Roys Report | **PASS AS ATTRIBUTED THIRD-PARTY POSITION** | It is Bachmann's view, not a Trinity or SVC institutional adjudication of Lawson's membership. |
-| 2026 Mississippi conference episode | contemporary report + organizer clarification + current official speaker/schedule pages | **PASS** | “Listed/invited in error, then declined” is supportable; do not call it Lawson's attempted comeback. |
-| 2018 “28 consequences” lecture | preserved Benzinger first-person witness through carriers | **PASS AT WITNESS LEVEL ONLY** | It establishes that Benzinger says he heard such a lecture; it does not establish all 28 points. |
-| Clint Archer accountability account | Archer's own published first-person article | **PASS AS ATTRIBUTED ACCOUNT** | Useful for counseling/accountability/relocation/returned advances; does not resolve the Trinity membership dispute. |
-| Carson/Piper/9Marks/Mohler restoration/accountability material | first-party/publisher objects | **PASS AS CONTEXTUAL THEOLOGY** | Keep these sources separate from factual claims about Lawson. They also disagree in some details about restoration to office; do not manufacture consensus. |
+| TMS / Busenitz permanent-disqualification position | contemporary carriers; Austin Duncan wording independently preserved | **PASS WITH CARRIER ATTRIBUTION** | Do not pretend the corpus possesses a public TMS statement/recording it does not have. |
+| MacArthur on Lawson, GTY 70-58 | official transcript + official audio | **PASS / quote-safe** | Preserve the difference between what MacArthur actually said and his broader categories. |
+| MacArthur “moral heretic” principle | separate official GTY interview | **PASS / contextual** | Never rewrite the general principle as a personal Lawson label. |
+| Shepherds' Conference 2017 Session 14 | official MP3 | **PASS / quote-safe** | “Unconverted shepherd” is a general pastoral warning, not Lawson self-confession. |
+| 2022 Christian Worldview self-deception material | official program + transcript | **PASS / primary transcript** | Supports Lawson's pre-fall theology; not a verdict on regeneration. |
+| 2019-uploaded purity Q&A `bIt15eRjAHU` | direct YouTube object + full transcript | **PASS FOR CONTENT / RECORDING DATE OPEN** | Use Lawson's own forgiveness-versus-forfeiture standard; do not state the recording certainly occurred after the affair began. |
+| 2018 “28 consequences” lecture | Benzinger first-person witness | **PASS AT WITNESS LEVEL ONLY** | Keep distinct from the later `~26 things` Q&A until the original lecture is recovered. |
+| 2023 `Preach the Word` | official Ligonier stream post + surviving Ligonier-attributed video card | **PASS FOR EXISTENCE/SUBJECT; NO VERBATIM LAWSON QUOTE** | Paraphrase until direct media/transcript and locator are recovered. |
+| March 2025 confession | participant statement preserved by stable carriers | **PASS WITH PRESERVATION NOTE** | Attribute the confession to Lawson; original X route is unavailable. |
+| Book authenticity / metadata | catalogs + review wave + Phil Johnson + additional contact claims | **VERY STRONGLY ESTABLISHED** | Catalog conflicts remain visible. |
+| AI assistance/ghostwriting | stylistic suspicions from critics | **UNVERIFIED** | Never state AI authorship as fact. |
+| Book counseling/refusal episode | substantive review, no page locator in custody | **PASS ONLY AS REVIEWER-MEDIATED** | Keep explicit reviewer attribution until page-level object acquired. |
+| Book wilderness comparison | visually shown sample page + multiple critics | **PASS AS BOOK-SAMPLE CONTENT; INTERPRETATION REQUIRES EXEGESIS** | Critique category confusion carefully; especially distinguish Christ's sinless wilderness. |
+| Book reception | critical + sympathetic + fresh Sep 24–29 responses | **PASS / multi-perspective reception** | Reviews establish reception/argument, not disputed facts. |
+| Phil Johnson reaction | preserved X/oEmbed object | **PASS** | Short quote/paraphrase only. |
+| Adam Markley alleged Lawson email | Markley verbal testimony; no screenshot/headers/address shown | **ATTRIBUTED DIRECT-CONTACT CLAIM** | May report only “Markley says Lawson confirmed…”; not an authenticated primary email object. |
+| Current marriage/reconciliation | conflicting secondary reports; no current primary object | **UNRESOLVED** | Do not state divorce, reconciliation, or current living arrangement as fact. |
+| Ligonier current status | live Ligonier teacher page + archived state | **PASS / current first-party wording** | Quote content-policy phrase without inventing its meaning; page is live. |
+| TMS/RBC/Shepherds page changes | archived/live pairs | **PASS AS PAGE-STATE** | No motive inference. |
+| 2026 Mississippi conference episode | report + organizer clarification + current official pages | **PASS** | “Listed/invited in error, then declined”; do not call it a proven comeback attempt. |
+| Clint Archer accountability account | first-person published article | **PASS AS ATTRIBUTED ACCOUNT** | Useful for counseling/accountability; not a substitute for current institutional status. |
+| Carson/Piper/9Marks/Mohler contextual material | first-party/publisher objects | **PASS AS CONTEXTUAL THEOLOGY** | Do not manufacture consensus. |
 
 ## 4. Direct-quotation audit
 
 ### Quote-safe primary anchors
 
-The article's most consequential direct quotations now rest on primary or first-party objects with usable locators:
+The most consequential direct quotations remain grounded in primary/first-party objects with usable locators:
 
 - GTY 70-58 / MacArthur: official transcript + official audio;
 - Shepherds' Conference 2017 Session 14 / Lawson: official MP3 + exact time window;
 - The Christian Worldview 2022 / Lawson: official transcript;
-- Trinity September 2024: archived official church homepage;
+- Trinity Sept 2024: archived official church homepage;
 - Ligonier content-policy wording: current official Ligonier page.
 
-### Quotes that remain carrier-dependent
+The new purity Q&A is a direct video object with transcript, but exact quotation should still be checked against audio if a high-stakes phrase is used; the recording date remains unknown.
 
-These are permitted only with explicit carrier/reviewer attribution:
+### Carrier-dependent material
 
-- the book's “details … are not important” opening as reported by the substantive review;
-- the G3 membership wording preserved by contemporary carriers;
-- other deleted social-media wording preserved by journalists or archive carriers.
+Carrier attribution remains mandatory for:
 
-### Quotes deliberately downgraded to paraphrase
+- book interior statements not visible in an acquired page/sample;
+- Dec 11 Trinity elder-meeting wording until raw audio is in custody;
+- G3 membership wording where original object remains unavailable;
+- deleted social-media wording preserved by journalists;
+- Adam Markley's alleged direct Lawson email, because the email itself is not shown.
 
-The final audit removed verbatim WAW #98 wording from v4 because the current local transcript is ASR-derived and the corpus itself says the audio must be checked by ear before treating the machine wording as authoritative. The factual position and time windows remain in the article as attributed paraphrase.
+### Paraphrase rules
 
-The long Phil Johnson 2026 quotation was also shortened to the essential phrase and the remainder paraphrased. This reduces quotation/copyright exposure without losing the evidentiary point.
+WAW ASR-derived wording remains paraphrase unless ear-checked. Long quotations from commentary/reviews should be avoided; use concise quotation only when it materially adds evidence.
 
 ## 5. Negative-result audit
 
-The article/corpus may say that a particular public object was **not found through the documented routes**. It may not convert that search result into claims such as:
+Do not convert search results into omniscient facts. In particular, the corpus may not say:
 
-- “Trinity never disciplined him”;
+- “Trinity never disciplined him” — superseded by the elders' own Dec 11 position;
+- “Lawson was not a member” — superseded by stronger Dec 11 evidence;
 - “no accountability exists”;
-- “Ligonier issued no statement” (superseded — its teacher page contains its own wording);
-- “the `Preach the Word` object does not exist” (superseded — existence/distribution and a surviving video card are established);
-- “Lawson is returning to ministry” (not established; the 2026 conference episode ended in a decline and current official pages omit him).
-
-The wording in v4 was tightened accordingly: broad negatives are now framed as **what the current corpus has or has not verified**, not omniscient claims about everything that may exist privately.
+- “Ligonier issued no wording” — its teacher page has official wording;
+- “the `Preach the Word` object does not exist”;
+- “Lawson has returned to ministry” — no verified return to pulpit/elder office/seminary/conference teaching is established;
+- “Lawson and Anne are divorced/reconciled” — current status unresolved;
+- “AI wrote the book” — unverified.
 
 ## 6. Privacy and personal-status audit
 
-**PASS.** The canonical v4 does not identify the woman. The article may discuss the public moral-disqualification event and source conflicts, but it must not add identifying details from gossip, screenshots, social-media sleuthing or mistaken identity chains.
+The privacy rule remains binding. The woman is not identified. No source authorizes an infallible verdict on Lawson's regeneration, motives, psychiatric state, or current marriage status.
 
-No source in the corpus authorizes an infallible verdict on Lawson's regeneration, hidden motives, psychiatric state, or the present state of his marriage. The article correctly treats repentance as professed and subject to fruit/time rather than as either proven or disproven by reputation.
+Fresh Sep 2026 commentary increases rhetoric around marriage, money, and AI, but **does not increase the evidence class** enough to turn those claims into facts.
 
-## 7. Membership/accountability correction made in this audit
+## 7. Membership/accountability correction — superseded twice
 
-The final pass changed three sentences because their logic exceeded the evidence:
+### Sep 28 correction
 
-1. WAW exact ASR quotations were replaced by attributed paraphrase pending ear verification.
-2. The later Josh Buice episode was removed from v4's membership section because it is collateral character evidence and contributes little to deciding the truth of the 2024 membership assertion.
-3. “If Lawson was not a Trinity member, nobody had a duty to discipline him” was corrected. Non-membership would only mean Trinity's **membership discipline** does not follow automatically from membership; other church, board, counselor or spiritual-authority relationships still have to be established separately.
+The Sep 28 pass correctly fixed several logical overstatements: WAW verbatim ASR was downgraded, collateral Josh Buice material was removed from v4, and non-membership was no longer equated with absence of all accountability.
 
-These corrections materially improve the ecclesiological precision of the article.
+### Sep 29 correction
 
-## 8. Current-status checks on 2026-09-28
+The Sep 29 control pass adds the missing later evidence: multiple carriers of the Dec 11 Trinity meeting report that the elders said Steve and Anne were formal members and described actions they regarded as church discipline.
 
-- Ligonier's live Steven Lawson page still states that his content is no longer featured because of violations of its content policy.
-- The official Contending for the Faith 2026 site currently lists the November 3–5 schedule and speaker roster without Lawson.
-- Ligonier's own September 19, 2023 post still states that the London conference messages were made available to stream and lists Lawson's `Preach the Word` among the pre-conference sessions.
+Therefore the Sep 28 endpoint — “membership remains unresolved in either direction” — is itself superseded.
 
-These checks support v4's current-status wording; they are snapshot facts and should be rechecked only if publication is materially delayed.
+## 8. Current-status checks through 2026-09-29
 
-## 9. Remaining backlog after research closure
+- Ligonier's live Steven Lawson page still says his content is no longer featured because of violations of its content policy.
+- Current official Contending for the Faith 2026 speaker and schedule pages omit Lawson.
+- No new official Sep 24–29 Trinity/TMS/Ligonier/OnePassion announcement or verified new Lawson preaching/teaching appointment was located in the control pass.
+- Publishing the book is a public authorial act, but it is not evidence of reinstatement to pastoral/elder/seminary/conference office.
 
-The following remain worth acquiring but do not justify holding the present article by themselves:
+## 9. Remaining backlog after control update
 
-- direct/original `Preach the Word` media/transcript and exact 1 Tim. 4:2 locator;
-- a public Trinity object resolving formal membership/discipline, if one ever appears;
-- WAW #99/#100 primary transcription;
-- original G3 2024-11-14 object;
-- official OnePassion/broadcaster Romans 2 objects;
-- original/public TMS/Busenitz communication or Men of the Word recording;
-- original 2018 “28 consequences” lecture/material;
-- a lawful complete copy of *Mercy in the Wilderness* for page-level upgrading;
-- any public, sourceable 2026 accountability-chain information (book review/approval, final spiritual authority, proceeds).
+High-value remaining acquisitions:
 
-## 10. Closure decision
+- raw Dec 11, 2024 Trinity fellowship-meeting audio with speaker/time locators;
+- original 2018 `28 Tragic Consequences` lecture/material;
+- actual recording date/provenance beyond upload metadata for `bIt15eRjAHU`;
+- direct/original `Preach the Word` media/transcript and exact locator;
+- WAW #99/#100 transcription;
+- original G3 Nov 14 / TMS-Busenitz / OnePassion Romans objects;
+- lawful complete *Mercy in the Wilderness* for page-level upgrade;
+- public first-party evidence, if voluntarily disclosed, concerning current accountability/book approval/proceeds or marital status;
+- actual email/object underlying Adam Markley's contact claim.
+
+None of these creates a global research hold by itself.
+
+## 10. Closure decision after Sep 29 control pass
 
 **Research status:** `SUBSTANTIALLY CLOSED`  
-**Publication status:** `READY WITH GUARDRAILS`  
+**Control pass:** `COMPLETE`  
+**Publication status:** `READY AFTER TARGETED CLAIM-LEVEL REVISION`  
+**Canonical v4:** `DO NOT PUBLISH AS-IS — MEMBERSHIP/DISCIPLINE SECTION REQUIRES REVISION`  
 **Archival/evidence-upgrade backlog:** `OPEN`  
-**Global PUBLICATION_HOLD:** `REMOVED`
+**Global PUBLICATION_HOLD:** `NOT REOPENED`
 
-A future source can improve or correct the corpus, but the current article no longer needs an open-ended “keep searching until everything is known” lane. New work should be triggered by a specific claim, new primary object, or post-publication correction—not by source-count targets alone.
+The next normal step is to revise the article against `21_CONTROL_RESEARCH_2026-09-29.md`. New research should be triggered by a specific new primary object or a claim that remains genuinely unsupported, not by a source-count target.
