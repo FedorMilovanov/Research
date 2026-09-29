@@ -1,7 +1,7 @@
 # Steven J. Lawson — personal life of the preacher vs. ministry workaholism self-witness
 
-**Snapshot:** 2026-09-29  
-**Status:** `MULTI-SOURCE PRE-SCANDAL SELF-WITNESS / PERSONAL HOLINESS BEFORE PUBLIC MINISTRY / DIRECT PARALLEL TO 2026 “TOO BUSY FOR GOD” ROOT CAUSE / BOOK WORDING STILL READER-DERIVED`
+**Snapshot:** 2026-09-30  
+**Status:** `MULTI-SOURCE PRE-SCANDAL SELF-WITNESS / 2020 DIRECT SELF-DIAGNOSIS ADDED / PERSONAL HOLINESS BEFORE PUBLIC MINISTRY / DIRECT PARALLEL TO 2026 “TOO BUSY FOR GOD” ROOT CAUSE / BOOK WORDING STILL READER-DERIVED`
 
 ## 1. Research question
 
@@ -21,9 +21,9 @@ Source:
 
 The relevant historical question is:
 
-> Had Lawson previously taught that the preacher's own soul, holiness, worship and private life must come before public ministry productivity?
+> Had Lawson previously taught that the preacher's own soul, holiness, worship and private life must come before public ministry productivity — and had he ever recognized elements of the overwork problem in himself before 2024?
 
-The answer is emphatically yes.
+The answer to both questions is yes, with different evidence strengths.
 
 ---
 
@@ -154,7 +154,56 @@ The current carrier is a third-party transcript/reproduction. It identifies Laws
 
 ---
 
-## 7. The pre-scandal framework is remarkably consistent
+## 7. July 2020: Lawson had already diagnosed prayer/work/rest imbalance in himself
+
+The strongest upgrade from the legacy corpus is not another abstract sermon principle. It is Lawson's own public self-assessment in the official **Ask Ligonier with Steven Lawson** event on July 28, 2020.
+
+When asked what mistakes he had made as a young minister and what he had learned, the surviving transcript of the Ligonier Ministries video records Lawson saying:
+
+- `I should've prayed more`;
+- `I was such a driven person in work ethic`;
+- `I should have taken more vacation time`;
+- `I should have taken time to have rested more`.
+
+Surviving searchable transcript carrier:
+- https://filmot.com/sidebyside/Fouczzg3yhg/en/auto.en/English/English%2B%28auto-generated%29/Ask%2BLigonier%2Bwith%2BSteven%2BLawson
+
+Official-event provenance and the same 2020 session are separately documented in:
+- `37_ASK_LIGONIER_2020_ANNE_MARRIAGE_SELF_WITNESS_2026-09-29.md`.
+
+### Why this is materially stronger than the generic teaching parallel
+
+The earlier corpus establishes Lawson's public theological norm:
+
+> private godliness must precede and sustain public ministry.
+
+The 2020 Q&A adds something different:
+
+> **Lawson had already recognized in his own life that prayer, work intensity, vacation and rest were out of balance.**
+
+Therefore the 2026 workaholism diagnosis cannot safely be framed as though excessive ministerial drivenness, too little prayer and insufficient rest were categories he first discovered only after the 2024 collapse.
+
+### What it does not prove
+
+The source does **not** establish that:
+
+- Lawson in July 2020 understood any connection between this pattern and the illicit relationship;
+- the relationship had definitely begun before the Q&A on the basis of this source alone;
+- his answer was a coded confession;
+- workload caused the sexual sin;
+- his later book adds nothing new to the diagnosis.
+
+The safe conclusion is narrower:
+
+> **at least the prayer/work/rest imbalance was already publicly recognized by Lawson himself in 2020.**
+
+### Publication guardrail
+
+The event provenance is official, but the currently searchable wording is carried by a derivative auto-caption transcript. For final article prose, prefer paraphrase unless the original Ligonier video/audio is durably captured and the exact passage is human-checked with timecodes.
+
+---
+
+## 8. The pre-scandal framework is remarkably consistent
 
 Across approximately 2010–2022, Lawson repeatedly taught variants of the same order:
 
@@ -173,11 +222,18 @@ Across approximately 2010–2022, Lawson repeatedly taught variants of the same 
 ### Before ministry effectiveness
 - pursue personal holiness.
 
-This is not an isolated quotation selected after the scandal. It is a recurrent theme in his preaching/ministry instruction.
+And by 2020 he had publicly recognized in himself:
+
+- insufficient prayer;
+- excessive drivenness in work;
+- insufficient vacation;
+- insufficient rest.
+
+This is not an isolated quotation selected after the scandal. It is a recurrent ministry principle plus a direct pre-scandal self-diagnosis.
 
 ---
 
-## 8. Relation to the 2026 root cause: “Too busy for God”
+## 9. Relation to the 2026 root cause: “Too busy for God”
 
 Current Goodreads text from a reader with the physical book reports Lawson's first causal factor as:
 
@@ -201,44 +257,46 @@ Source:
 ### Current evidence hierarchy
 
 - Lawson's older teaching: multiple strong pre-scandal carriers, some near-primary/quoted-print provenance.
+- Lawson's 2020 prayer/work/rest self-assessment: official-event provenance, derivative searchable transcript carrier.
 - 2026 root-cause wording: reader/reviewer-derived until the exact book pages are acquired.
 
 Therefore avoid quotation-mark precision about the 2026 root cause in final article copy until the physical pages are in custody.
 
 ---
 
-## 9. Strongest article formulation
+## 10. Strongest article formulation
 
-> For years Lawson taught that a preacher's personal spirituality and godliness are the foundation on which public preaching stands. He said God must prepare the preacher before the preacher prepares the message, that the Word must first grip the expositor's own heart, and that a pastor must preach the gospel to himself before calling others to repent. That was not a peripheral theme; it recurred in his ministry instruction for more than a decade. Readers of *Mercy in the Wilderness* now report that Lawson describes the opposite trajectory in his own life: ministry became workaholism, public service expanded, communion with God withered, and his private life went unguarded. The significance is not that Lawson lacked the theological category. He had taught it repeatedly. The question raised by his own retrospective account is how public ministry came to displace the very private godliness he had long said must sustain it.
+> For years Lawson taught that a preacher's personal spirituality and godliness are the foundation on which public preaching stands. He said God must prepare the preacher before the preacher prepares the message, that the Word must first grip the expositor's own heart, and that a pastor must preach the gospel to himself before calling others to repent. More importantly, in a July 2020 Ask Ligonier session he had already applied part of the diagnosis to himself: he said he should have prayed more, had been excessively driven in his work ethic, and should have taken more vacation and rest. Readers of *Mercy in the Wilderness* now report that Lawson describes a still more serious version of that trajectory in his own life: ministry became workaholism, public service expanded, communion with God withered, and his private life went unguarded. The significance is therefore not merely that Lawson possessed the theological category. At least part of the practical diagnosis had already reached his own self-assessment years before the public collapse. The question raised by his retrospective account is why recognition did not become sufficient correction.
 
-This is stronger and fairer than simply calling him a hypocrite because it identifies the precise public norm and the later self-described failure without claiming access to motive.
+This is stronger and fairer than simply calling him a hypocrite because it identifies both the public norm and the prior self-diagnosis without claiming access to motive.
 
 ---
 
-## 10. What this does NOT establish
+## 11. What this does NOT establish
 
 Do not infer that:
 
 - every busy season in Lawson's ministry was spiritually unhealthy;
 - his 2010–2018 statements were knowingly fraudulent;
+- the 2020 self-assessment was a covert admission of the illicit relationship;
 - ministry workload caused the illicit relationship in a deterministic sense;
 - Anne or OnePassion forced the excessive schedule;
 - the reported first root cause in the 2026 book has been independently page-verified yet;
-- the older teaching proves false repentance now.
+- the older teaching or 2020 self-assessment proves false repentance now.
 
-The evidence establishes a documented public standard and a later reported self-description of violating it.
+The evidence establishes a documented public standard, a documented pre-scandal self-diagnosis of part of the problem, and a later reported self-description of a deeper failure to live under that standard.
 
 ---
 
-## 11. Acquisition targets
+## 12. Acquisition targets
 
 1. Acquire the exact 2026 pages for the `Too busy for God` root cause.
-2. Trace the 2010 Lawson quotations to their original publication/book source.
-3. Acquire *Called to Preach* page 165 / final chapter directly.
-4. Recover the original object for *The Costly Discipline of a Godly Pastor*.
-5. Search Lawson's own teaching on prayer, devotional life and ministry overwork for even closer phrasing.
+2. Capture/human-check the relevant July 28, 2020 Ask Ligonier passage from the original Ligonier video/audio and register exact timecodes.
+3. Trace the 2010 Lawson quotations to their original publication/book source.
+4. Acquire *Called to Preach* page 165 / final chapter directly.
+5. Recover the original object for *The Costly Discipline of a Godly Pastor*.
 6. Compare his historical travel/speaking schedule with the book's workload account only after avoiding the fallacy that a full schedule by itself proves spiritual neglect.
 
 ## Research conclusion
 
-> **LAWSON'S PRE-SCANDAL TEACHING MAKES THE 2026 “MINISTRY WORKAHOLISM” CONFESSION ESPECIALLY SIGNIFICANT. FOR MORE THAN A DECADE HE REPEATEDLY TAUGHT THAT GOD MUST PREPARE THE PREACHER BEFORE THE MESSAGE, THAT THE PREACHER'S PERSONAL SPIRITUALITY AND GODLINESS ARE THE FOUNDATION OF PUBLIC PREACHING, THAT SCRIPTURE MUST FIRST ENGAGE HIS OWN HEART, AND THAT A PASTOR MUST PREACH THE GOSPEL TO HIMSELF BEFORE CALLING OTHERS TO REPENT. THE LATER BOOK, ACCORDING TO CURRENT READERS, DESCRIBES A LIFE IN WHICH PUBLIC MINISTRY EXPANDED WHILE THOSE PRIVATE PRIORITIES COLLAPSED. THIS IS A DOCUMENTED INTERNAL CONTRAST, NOT A CLAIM ABOUT LAWSON'S SECRET MOTIVE.**
+> **LAWSON'S PRE-SCANDAL RECORD MAKES THE 2026 “MINISTRY WORKAHOLISM” CONFESSION ESPECIALLY SIGNIFICANT. FOR MORE THAN A DECADE HE REPEATEDLY TAUGHT THAT GOD MUST PREPARE THE PREACHER BEFORE THE MESSAGE, THAT THE PREACHER'S PERSONAL SPIRITUALITY AND GODLINESS ARE THE FOUNDATION OF PUBLIC PREACHING, THAT SCRIPTURE MUST FIRST ENGAGE HIS OWN HEART, AND THAT A PASTOR MUST PREACH THE GOSPEL TO HIMSELF BEFORE CALLING OTHERS TO REPENT. IN JULY 2020 HE ALSO PUBLICLY SAID THAT HE SHOULD HAVE PRAYED MORE, HAD BEEN TOO DRIVEN IN HIS WORK ETHIC, AND SHOULD HAVE TAKEN MORE VACATION AND REST. THE LATER BOOK, ACCORDING TO CURRENT READERS, DESCRIBES A LIFE IN WHICH PUBLIC MINISTRY EXPANDED WHILE THOSE PRIVATE PRIORITIES COLLAPSED. THE CENTRAL CONTRAST IS THEREFORE NOT ONLY TEACHING VERSUS LATER FAILURE, BUT PARTIAL PRE-FALL SELF-DIAGNOSIS VERSUS INSUFFICIENT CORRECTION. THIS REMAINS A DOCUMENTED INTERNAL CONTRAST, NOT A CLAIM ABOUT LAWSON'S SECRET MOTIVE.**
