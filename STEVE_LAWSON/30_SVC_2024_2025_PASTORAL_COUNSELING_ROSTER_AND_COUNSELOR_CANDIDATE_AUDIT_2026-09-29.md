@@ -1,7 +1,7 @@
 # Steven J. Lawson — Stephens Valley 2024–2025 pastoral/counseling roster and counselor-candidate audit
 
 **Snapshot:** 2026-09-29  
-**Status:** `HISTORICAL ROSTER CONSTRAINED / KING COUNTS = PLAUSIBLE INSTITUTIONAL COUNSELOR CANDIDATE / DIRECT LAWSON ROLE UNPROVEN / TWO COUNSELORS STILL UNIDENTIFIED`
+**Status:** `PRIMARY SVC BULLETINS ACQUIRED / KING COUNTS CONFIRMED PASTOR BEFORE LAWSON CRISIS / BENNY COLLINS CONFIRMED PASTOR BY 2024-09-01 / COUNSELOR IDENTITIES STILL UNRESOLVED`
 
 ## 1. Research question
 
@@ -9,37 +9,105 @@ Early-2025 reporting says Steven Lawson was seeing **two professional counselors
 
 Those categories cannot be silently merged.
 
-This audit asks a narrower historical question:
+This audit asks:
 
-> Who was actually serving in Stephens Valley Church's pastoral/counseling structure during the September 2024–March 2025 recovery period, and does any named person fit the public description closely enough to become a research candidate?
+> Who was actually serving in Stephens Valley Church's pastoral/counseling environment immediately before and during the September 2024–March 2025 Lawson recovery period, and can any named person be responsibly identified as one of Lawson's unnamed counselors or pastors?
 
-The objective is **candidate constraining, not identification by inference**.
+The answer remains: **the roster is now much better constrained, but no individual has yet been directly identified as one of the two professional counselors or two pastors.**
 
-## 2. Jim Bachmann — directly tied to Lawson, but not identified as a professional counselor
+## 2. Critical correction to the first pass
 
-The public record strongly establishes Rev. Jim Bachmann as Stephens Valley's senior/lead pastor during the relevant period.
+The initial version of this file relied too heavily on an indexed Aug. 28, 2024 SVC social post about two new staff members and treated King Counts as possibly one of those new arrivals.
 
-The Roys Report's January 2025 reporting identifies Bachmann as the SVC pastor speaking directly about Lawson and says Lawson had attended SVC for several months.
+That inference was wrong.
+
+Primary SVC bulletins now show:
+
+- **King Counts was already functioning as “Pastor King Counts” by Aug. 25, 2024**, before Lawson's public September crisis.
+- The two newly welcomed staff members in the Aug. 25 bulletin were **Benny Collins and Zach Young**, not Counts.
+- **Benny Collins was already functioning liturgically as “Pastor Benny Collins” by Sept. 1, 2024.**
+
+This correction materially improves the chronology and removes any suggestion that Counts was brought into SVC specifically because of Lawson.
+
+## 3. Primary object: SVC bulletin, Aug. 25, 2024
+
+Stephens Valley's own Aug. 25, 2024 worship bulletin is publicly archived in the church's Church Center bulletin index and Google Drive.
+
+Church Center index:
+- https://stephens-valley-church-469943.churchcenter.com/pages/order-of-service
+
+Direct bulletin:
+- https://drive.google.com/file/d/1trMv8l3xJFKqA5sKU_y0LO42JhPN-wQk/view?usp=sharing
+
+The bulletin explicitly assigns the Lord's Supper to:
+
+> **“Sacrament of the Lord’s Supper — Pastor King Counts”**
+
+It also assigns the prayer of adoration to **Pastor Jim Bachmann**.
+
+Most importantly, the announcements contain a signed thank-you from the two recently welcomed staff members:
+
+> **“—Benny Collins and Zach Young”**
+
+The note says a recent reception affirmed their calling to the church and thanks SVC for welcoming them and their families. Their wives are identified in the same note as Kim and Stephanie.
+
+### Evidentiary result
+
+This establishes from an A2/A3-like first-party church object that:
+
+- King Counts was already a pastor at SVC by Aug. 25, 2024;
+- Jim Bachmann was already functioning as pastor;
+- Benny Collins and Zach Young were the newly called/welcomed staff pair around that date.
+
+Therefore:
+
+> **King Counts's SVC pastoral role predates the public Lawson scandal.**
+
+No causal inference from Lawson to Counts's hiring is supportable.
+
+## 4. Primary object: SVC bulletin, Sept. 1, 2024
+
+Direct bulletin:
+- https://drive.google.com/file/d/1FfVoFrhXDa04ULRe3Y_A-IL0WUKcAYXF/view?usp=sharing
+
+The Sept. 1 order of worship assigns:
+
+> **“Prayer of Adoration — Pastor Benny Collins”**
+
+and the sermon to:
+
+> **“Pastor Jim Bachmann”**
+
+Thus Collins is not merely a later December 2024 preacher; he is already functioning publicly as an SVC pastor on Sept. 1, 2024.
+
+The same bulletin still lists Angela Counts in children's Sunday school, adding ordinary congregational continuity for the Counts family, though that fact is not needed to establish King's pastoral office.
+
+### Revised Collins classification
+
+> **BENNY COLLINS: CONFIRMED SVC PASTOR BY 2024-09-01 / DIRECT LAWSON ACCOUNTABILITY ROLE NOT ESTABLISHED / PROFESSIONAL-COUNSELOR STATUS NOT ESTABLISHED.**
+
+The exact employment-start date may precede Aug. 25 slightly, but the primary bulletin already closes the important question of whether he was in the pastoral environment at the opening of the Lawson period.
+
+## 5. Jim Bachmann — direct Lawson pastoral contact, not identified as a professional counselor
+
+The Roys Report's January 2025 reporting identifies Bachmann as the SVC pastor who spoke directly about Lawson and says Lawson had attended SVC for several months.
 
 Source:
 - https://roysreport.com/steve-lawson-attends-nashville-church-pastor-believes-he-can-be-restored/
 
-The same report distinguishes several categories:
+The report distinguishes:
 
 - two **professional counselors**;
-- regular meetings with church elders for friendship/support/advice/prayer;
+- regular meetings with SVC elders for friendship/support/advice/prayer;
 - Bachmann's own pastoral contact with Lawson.
-
-Therefore Bachmann is a direct pastoral-contact source but is **not publicly identified as one of the two professional counselors**.
-
-Current SVC staff page:
-- https://stephensvalleychurch.com/new-here/
 
 Current classification:
 
-> **BACHMANN: DIRECT LAWSON PASTORAL CONTACT ESTABLISHED / PROFESSIONAL-COUNSELOR ROLE NOT ESTABLISHED.**
+> **BACHMANN: DIRECT LAWSON PASTORAL CONTACT ESTABLISHED / ONE OF THE PROFESSIONAL COUNSELORS NOT ESTABLISHED.**
 
-## 3. Dr. King A. Counts — the strongest institutional candidate located so far
+He remains a plausible candidate for one of Lawson's later-described “two pastors,” but no source currently says so.
+
+## 6. Dr. King A. Counts — strongest professional-counselor candidate, but still unproven
 
 Current official Stephens Valley material identifies **Dr. King Counts** as an assistant pastor / minister of pastoral care and counseling.
 
@@ -47,129 +115,70 @@ Official SVC pages:
 - https://stephensvalleychurch.com/new-here/
 - https://stephensvalleychurch.com/pastoral-counseling/
 
-The pastoral-counseling page describes Counts as both:
+The church's counseling page describes him as both:
 
 - a pastor;
 - a licensed therapist.
 
-It says he provides biblically grounded guidance and practical help for relational struggles and invites both members and people from the Nashville community to schedule confidential conversations with him.
-
-Current professional-directory evidence is even more specific. Psychology Today lists:
+Current professional-directory evidence lists:
 
 - **Dr. King A Counts**;
 - `Marriage & Family Therapist, DMin, LMFT`;
-- Nashville practice;
-- an additional location at **Stephens Valley Church, 6000 Pasquo Road, Nashville**;
-- specialties including marital/premarital issues, family conflict, divorce, relationship issues, and **infidelity**.
+- a Nashville practice;
+- an additional location at **Stephens Valley Church, 6000 Pasquo Road**;
+- specialties including marital/premarital issues, family conflict, divorce, relationship problems, and **infidelity**.
 
 Source:
 - https://www.psychologytoday.com/us/therapists/king-a-counts-fairview-tn/715334
 
-The public directory also describes him as highly experienced in marriage/family therapy and as an AAMFT supervisor.
+This combination makes Counts the strongest **publicly visible institutional candidate** when asking who might fit the phrase “professional counselor.”
 
-### Why Counts is a materially stronger candidate than an ordinary elder
+But the key negative finding remains:
 
-Counts uniquely satisfies the visible institutional combination:
+> **No public source located so far says King Counts counseled Steven Lawson.**
 
-1. SVC pastoral office;
-2. professional mental-health licensure;
-3. marriage/family counseling specialization;
-4. physical counseling location at the SVC address;
-5. ministry category explicitly called Pastoral Care & Counseling.
+Therefore article copy may identify him as part of SVC's professional pastoral-counseling environment, but may not identify him as Lawson's counselor.
 
-That means he is a legitimate **candidate to investigate** when the public record says Lawson received professional counseling in Nashville while being shepherded at SVC.
+## 7. What the primary August bulletin changes about Counts
 
-It does **not** mean he has been identified as Lawson's counselor.
+The earlier hypothesis was that Counts may have arrived immediately before the Lawson recovery period.
 
-## 4. Was Counts already at SVC during the Lawson recovery period?
+The Aug. 25 bulletin replaces that with a firmer and safer fact:
 
-A fresh historical search materially strengthens the chronology.
+> **Counts was already functioning as an SVC pastor before Lawson's public scandal.**
 
-A Stephens Valley social-media item indexed with the date **August 28, 2024** announces that the church was welcoming **two new staff members and their families** and describes the additions as including a new assistant pastor and a music director.
+This matters because it eliminates one speculative narrative:
 
-Indexed SVC social object:
-- https://www.instagram.com/p/C_OjDeshza9/
+- there is no basis to suggest Counts was recruited in response to Lawson;
+- there is no basis to imply SVC created a counseling role for Lawson;
+- Counts's pastoral presence was independently established beforehand.
 
-This lies immediately before Lawson's September 2024 removal and move to Nashville.
+The remaining question is only whether an already-present LMFT pastor later became involved in Lawson's recovery.
 
-Search-index evidence also places Counts in the Stephens Valley ministry stream during the ensuing 2024–2025 period, and later dated SVC material unambiguously identifies him as pastor/counseling minister.
+## 8. No second public SVC therapist identified
 
-### Evidence limitation
-
-The currently accessible indexed snippet for the Aug. 28 post does not expose enough first-party text to quote a sentence explicitly pairing the name **King Counts** with the title in the body. It is therefore a strong historical locator, not yet the perfect archival object.
-
-The correct present conclusion is:
-
-> **Counts appears to have joined the SVC staff immediately before the Lawson recovery period and is strongly supported as present during the relevant months, but the direct August appointment object should still be archived if possible.**
-
-Do not upgrade this into a claim that SVC hired him because of Lawson. There is zero evidence of such causation.
-
-## 5. Benny Collins — definitely in the pastoral roster by December 2024; exact start date still open
-
-Current SVC material lists **Rev. Benny Collins** as Assistant Pastor of Outreach / Interim Youth Pastor.
-
-Official current page:
-- https://stephensvalleychurch.com/new-here/
-
-A dated SVC sermon object establishes Collins serving/preaching at Stephens Valley by **December 8, 2024**:
-
-- `Sermon | Unto Us a Child Is Born - Pastor Benny Collins`
-- dated Dec. 8, 2024 in the SVC video archive/search record.
-
-Locator:
-- https://www.youtube.com/watch?v=Wm8wPqgEYi8
-
-Older public material establishes that Collins had previously served at Evangel Presbyterian Church in Alabama.
-
-Source:
-- https://byfaithonline.com/church-is-changed-by-serving-the-fatherless/
-
-### Classification
-
-> **COLLINS: PRESENT IN SVC PASTORAL ROSTER BY DEC. 8, 2024 / DIRECT LAWSON CONNECTION NOT LOCATED / PROFESSIONAL COUNSELOR STATUS NOT ESTABLISHED.**
-
-His exact SVC appointment/start date remains an acquisition target.
-
-## 6. Dr. David Lawrence — SVC-affiliated teacher, not established as one of the relevant pastors/counselors
-
-SVC materials place Dr. David Lawrence in the church's Geneva Class / scholar role around the relevant period.
-
-Examples:
-- https://stephensvalleychurch.com/sundayschool/
-- SVC YouTube Geneva Class materials.
-
-This demonstrates SVC affiliation but does not establish:
-
-- ordained pastoral office in the recovery chain;
-- professional counseling credentials;
-- direct Lawson contact.
-
-Therefore he should not be treated as a candidate merely because he was active in the congregation.
-
-## 7. No second public SVC therapist has yet been identified
-
-The current official Pastoral Counseling page names only **Dr. King Counts** as the person to contact for confidential pastoral counseling.
+The current official Pastoral Counseling page names only **Dr. King Counts** as the public contact for confidential pastoral counseling.
 
 Source:
 - https://stephensvalleychurch.com/pastoral-counseling/
 
-Current therapist directories likewise show Counts practicing at the Stephens Valley address.
+Therapist directories likewise show Counts practicing at the Stephens Valley address.
 
 Additional locator:
 - https://therapyfinder.com/therapist/dr-king-counts-licensed-marriage-and-family-therapist-nashville-tn
 
-A fresh search did **not** identify a second licensed counselor publicly attached to the SVC address during the Sep. 2024–Mar. 2025 period.
+A fresh search has not identified a second licensed counselor publicly attached to SVC during the Sep. 2024–Mar. 2025 period.
 
-This negative result matters because the Roys/Bachmann report says **two professional counselors**. Possible models therefore remain:
+Because Bachmann reported **two professional counselors**, several models remain possible:
 
-1. Counts was one counselor and the second counselor was external;
-2. both counselors were external to SVC;
-3. Counts was not involved and SVC pastoral care was separate from both professionals;
-4. the professional-counselor category changed over time.
+1. Counts was one counselor and the second was external;
+2. both counselors were external;
+3. Counts was uninvolved and SVC pastoral care was separate from both professional counselors;
+4. the counseling structure changed over time.
 
-The corpus presently cannot choose among these.
+The corpus cannot choose among these.
 
-## 8. Direct searches for Lawson ↔ Counts / Collins
+## 9. Direct Lawson-name searches remain negative
 
 Targeted searches for combinations including:
 
@@ -179,25 +188,17 @@ Targeted searches for combinations including:
 - `Steve Lawson Benny Collins`;
 - `Steven Lawson Jim Bachmann King Counts`;
 
-have not produced a reliable public object directly identifying Counts or Collins as Lawson's counselor, pastor-accountability partner, or accountability-team member.
+have not produced a reliable public object directly identifying Counts or Collins as:
 
-This is an important **negative verification result**.
+- Lawson's professional counselor;
+- one of his weekly-accountability pastors;
+- a member of the accountability team.
 
-### Publication rule
+This negative verification is important.
 
-Do not write:
+## 10. Relationship to Lawson's March 12 categories
 
-- “King Counts was one of Lawson's counselors”;
-- “Counts treated Lawson for infidelity”;
-- “Benny Collins was one of the two pastors”;
-- “Bachmann and Counts were the two pastors”;
-- “the two professional counselors were SVC staff.”
-
-None of those propositions is currently established.
-
-## 9. Relationship to Lawson's March 12 categories
-
-Lawson wrote that he was under:
+Lawson said he was under:
 
 - weekly accountability to **two pastors**;
 - the elders of a local congregation;
@@ -206,64 +207,51 @@ Lawson wrote that he was under:
 Preserved statement:
 - https://thechristianworldview.org/wp-content/uploads/2025/03/Steven-Lawson-statement.pdf
 
-Early reporting separately describes:
+Other sources separately describe:
 
-- **two professional counselors**;
+- two professional counselors;
 - several men experienced in counseling fallen pastors;
 - SVC elders;
 - Trinity elders;
 - OnePassion reporting/accountability.
 
-The historical SVC roster now makes some names plausible for future investigation, but still does not map those unnamed categories onto people.
+The primary SVC bulletins now establish that **Bachmann, Counts, and Collins all existed in the SVC pastoral environment at the opening of the relevant period**, but they still do not map those men to Lawson's unnamed categories.
 
-The categories must stay separate until a source explicitly links them.
+## 11. Candidate matrix — revised after primary bulletins
 
-## 10. Why Counts matters even if he ultimately proves not to be Lawson's counselor
-
-The discovery changes the background model of SVC.
-
-Stephens Valley was not merely a congregation with friendly lay elders around Lawson. It had, at least by the relevant period/current institutional continuity, a pastoral-care structure containing a **licensed marriage-and-family therapist in pastoral office**.
-
-That makes the Nashville support environment more professionally substantial than a description of informal church friendship alone would suggest.
-
-But it also sharpens the unresolved question:
-
-> If Lawson had two professional counselors, and SVC had an LMFT pastor specializing in marriage/family problems and infidelity, was he involved — or were the professional counselors deliberately external to the church's pastoral chain?
-
-That question is worth pursuing. It is not yet answerable.
-
-## 11. Candidate matrix
-
-| Person | Present in SVC relevant period | Professional counselor credentials | Direct Lawson connection | Candidate status |
+| Person | Confirmed in SVC pastoral environment | Professional counselor credentials | Direct Lawson connection | Candidate status |
 |---|---:|---:|---:|---|
-| Jim Bachmann | Yes | Not established | Yes | Pastoral-contact source; not identified as counselor |
-| King Counts, DMin, LMFT | Strongly supported | Yes | No direct public tie found | **Highest-value counselor candidate; unproven** |
-| Benny Collins | Yes by 2024-12-08 | Not established | No direct public tie found | Possible pastoral-roster candidate only |
-| David Lawrence | SVC-affiliated | Not established | No direct public tie found | Not presently a meaningful counselor candidate |
+| Jim Bachmann | Yes, before 2024-09 | Not established | **Yes** | Direct pastoral-contact source; possible unnamed pastor, unproven |
+| King Counts, DMin, LMFT | **Yes by 2024-08-25** | **Yes** | No direct public tie found | **Highest-value professional-counselor candidate; unproven** |
+| Benny Collins | **Yes by 2024-09-01** | Not established | No direct public tie found | Possible unnamed-pastor candidate only; unproven |
+| David Lawrence | SVC teacher/scholar | Not established | No direct public tie found | Not presently a meaningful counselor candidate |
 
-## 12. Canonical article/research wording
+## 12. Publication guardrail
 
 Safe:
 
-> Stephens Valley's pastoral environment included Dr. King Counts, an assistant pastor and licensed marriage-and-family therapist whose public professional profile lists the church as a counseling location and includes marital conflict and infidelity among his specialties. That makes Counts an obvious research candidate when asking who provided Lawson's professional counseling. But no public source located so far identifies him as one of Lawson's two counselors, and the names of both professionals remain undisclosed.
+> Stephens Valley already had Dr. King Counts functioning as a pastor before Lawson's September 2024 fall. Counts is also a licensed marriage-and-family therapist whose public professional profile lists SVC as a counseling location and includes infidelity among his specialties. That makes him an obvious candidate for further investigation, but no public source yet identifies him as one of Lawson's two professional counselors.
 
 Unsafe:
 
-> Lawson was counseled by King Counts.
+> Lawson's counselor was King Counts.
 
-The latter remains an inference, not a fact.
+Also unsafe:
 
-## 13. Next acquisition targets
+> SVC brought Counts in to counsel Lawson.
 
-1. Archive the full Aug. 28, 2024 SVC staff-welcome object and identify the two staff members explicitly from the post/image/caption.
-2. Extract individual Sep. 2024–Mar. 2025 SVC bulletin PDFs and compare staff rosters month by month.
-3. Find Counts's appointment announcement, employment start, ordination/call record, or dated professional-profile change to Stephens Valley.
-4. Find Benny Collins's formal SVC call/start announcement.
-5. Search Tennessee LMFT / provider-directory historical snapshots for Counts's SVC practice-location start date.
-6. Search podcasts/interviews/local church material for any first-person Counts discussion of counseling a fallen pastor without breaching confidentiality.
-7. Find any direct statement that identifies either of Lawson's two professional counselors.
-8. Find any direct statement mapping Bachmann / Counts / Collins to Lawson's “two pastors.”
+The primary Aug. 25 bulletin directly cuts against the latter insinuation.
+
+## 13. Remaining acquisition targets
+
+1. Search earlier 2024 SVC bulletins to establish the earliest first-party date on which Counts is called “Pastor King Counts.”
+2. Establish Counts's original call/appointment date to SVC from a church, presbytery, or professional object.
+3. Determine when his **licensed therapy practice** began using the SVC address, which is distinct from his pastoral-role start date.
+4. Search individual Sep. 2024–Mar. 2025 bulletins for any explicit pastoral-care/counseling announcements.
+5. Identify the second professional counselor, if Counts proves to have been one of the two.
+6. Find any direct statement mapping Bachmann / Counts / Collins to Lawson's “two pastors.”
+7. Find any public roster or direct-source description of the accountability team.
 
 ## 14. Research conclusion
 
-> **THE COUNSELOR-IDENTITY PROBLEM IS NOT CLOSED. HOWEVER, THE SVC HISTORICAL ROSTER IS NOW MATERIALly BETTER CONSTRAINED. DR. KING COUNTS IS THE FIRST NAMED PERSON FOUND WHO FITS BOTH SIDES OF THE PUBLIC DESCRIPTION — PASTORAL OFFICE AT STEPHENS VALLEY AND PROFESSIONAL MARRIAGE/FAMILY THERAPY — AND HE APPEARS TO HAVE JOINED THE STAFF IMMEDIATELY BEFORE LAWSON'S NASHVILLE RECOVERY PERIOD. THAT MAKES HIM A HIGH-VALUE CANDIDATE FOR FURTHER VERIFICATION, NOT AN IDENTIFIED COUNSELOR. JIM BACHMANN IS DIRECTLY TIED TO LAWSON AS PASTORAL SUPPORT; BENNY COLLINS WAS IN THE PASTORAL ROSTER BY DECEMBER 2024; NO DIRECT PUBLIC SOURCE YET MAPS ANY OF THEM TO LAWSON'S UNNAMED TWO COUNSELORS OR TWO PASTORS.**
+> **THE PRIMARY SVC BULLETINS NOW ESTABLISH THE HISTORICAL PASTORAL ENVIRONMENT WITHOUT RETROSPECTIVE GUESSING. KING COUNTS WAS ALREADY FUNCTIONING AS “PASTOR KING COUNTS” ON AUG. 25, 2024, BEFORE LAWSON'S PUBLIC CRISIS. BENNY COLLINS WAS FUNCTIONING AS “PASTOR BENNY COLLINS” BY SEPT. 1, 2024. JIM BACHMANN WAS THE SENIOR PASTOR AND LATER DIRECTLY DISCUSSED LAWSON'S CARE. COUNTS REMAINS THE STRONGEST PROFESSIONAL-COUNSELOR CANDIDATE BECAUSE HE IS AN LMFT AND SVC PASTOR, BUT NO SOURCE YET IDENTIFIES HIM AS LAWSON'S COUNSELOR. THE TWO PROFESSIONAL COUNSELORS, THE TWO WEEKLY-ACCOUNTABILITY PASTORS, AND THE ACCOUNTABILITY-TEAM ROSTER REMAIN UNRESOLVED.**
