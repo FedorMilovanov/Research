@@ -18,7 +18,7 @@
 9. [`70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`](70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md) — which remaining biography questions can actually change V6.
 10. [`71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`](71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md) — confirms the canonical claims currently align.
 11. [`72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md`](72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md) — current Trinity legacy pages are not proof of Lawson's return.
-12. [`73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) — polished V6 insertion staging with exact V5 anchors, recovered 2013 marriage baseline and final Tier-A-delta guardrails.
+12. [`73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) — polished V6 insertion staging with exact V5 anchors, recovered 2013 marriage baseline, recovered 2020 prayer/work/rest self-diagnosis and final Tier-A-delta guardrails.
 
 ## Live biography lane
 
@@ -81,8 +81,9 @@ Older branches:
 Semantic salvage was checked rather than relying on Git ancestry alone:
 
 - the 2022 `Should I Marry Her?` object from the old lead/source files is **already preserved in current main** at [`08_QA_TRANSCRIPT_AND_LIGONIER_STATE_2026-09-27.md`](08_QA_TRANSCRIPT_AND_LIGONIER_STATE_2026-09-27.md), including carrier metadata, audio hash, machine-transcript locators and publication limitations;
-- the old 2020 Ask Ligonier / Anne material is superseded and strengthened by `37_` plus the workaholism/self-witness corpus;
-- one useful pre-fall marriage baseline had fallen out of the newer canonical synthesis: Lawson's March 2013 *Tabletalk* article `His Heart Trusts in Her` / later `The Blessing of an Excellent Wife`. Its publication is independently traceable through *Tabletalk* and Ligonier indexes and surviving text carriers. It has now been restored, conservatively paraphrased, into [`73_...`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) for V6;
+- the old 2020 Ask Ligonier / Anne material is superseded and strengthened by `37_`;
+- the same July 2020 Ask Ligonier session also contained a stronger workaholism lead that had fallen out of the newer synthesis: Lawson publicly said he should have prayed more, had been too driven in work, and should have taken more vacation and rest. This has now been restored to the canonical workaholism evidence file [`39_...`](39_PERSONAL_LIFE_OF_PREACHER_VS_MINISTRY_WORKAHOLISM_SELF_WITNESS_2026-09-29.md) and staged as `MICRO-EDIT A2` in [`73_...`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md);
+- one useful pre-fall marriage baseline had likewise fallen out of the newer canonical synthesis: Lawson's March 2013 *Tabletalk* article `His Heart Trusts in Her` / later `The Blessing of an Excellent Wife`. Its publication is independently traceable through *Tabletalk* and Ligonier indexes and surviving text carriers. It has now been restored, conservatively paraphrased, into `73_` for V6;
 - weaker historical leads (for example title-only sermon leads or later commentator applications) remain available in Git history / `lawson-final-import-20260928`, but they do not outrank the stronger evidence already in the current canonical corpus and are not V6 blockers.
 
 Therefore **none of these legacy branches should be merged into `main`**. Keep them as provenance/history unless branch cleanup is undertaken separately.
