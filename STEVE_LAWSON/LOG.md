@@ -329,3 +329,14 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E135, обновлены SL-E101/SL-E102 и очередь задачи 21; README и LOG обновлены. Raw PDF/сканы в Git не добавлялись.
 - **Проверки проходов 31–32:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` clean; реестр — 135 уникальных ID `SL-E`, дубликатов нет, новые строки SL-E134–SL-E135 имеют по 8 ячеек.
 - **SHA-256 dossier 28_ после прохода 32:** `129e0be4dfbeac85fe6700fd5b376c0ec8cb42cdbcb0dd3aa79d4c3746092504`.
+
+
+## Проход 33 (29.09.2026) — ABN-1981: полный текст выпуска 30.07
+
+- **Article 1067 (30.07, item 61; SL-E136):** получены и просмотрены все 9 чанков 0–8; последний сообщает `hasMore=false`. Целевой Steve/Steven Lawson и результат поиска/назначение преемника Jesse S. Reed не выявлены в доступном тексте.
+- **Кадровая оговорка:** объявление `Nominations sought for boards, committees` просит рекомендации для комитетов и советов ABSC к съезду; это не вакансия директора евангелизации и не сообщение о преемнике Reed. История Eldred Taylor относится к SBC Executive Committee и Kentucky Baptist Board of Child Care, не к ABSC. В статье о миссионерской поездке Arkansas Baptists в Indiana соответствующего штатного назначения также нет.
+- **Ловушка:** Lawson Hatfield в выпуске не обнаружен; десять подтверждённых выпусков остаются прежним числом (SL-E101).
+- **Дальше:** 06.08.1981 (article 1068/item 60; ранее чтение чанков не отмечено).
+- **Файлы:** `28_` — добавлен SL-E136, SL-E102 и очередь задачи 21 обновлены; README и LOG обновлены. Raw PDF/сканы в Git не добавлялись.
+- **Проверки прохода 33:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` clean; реестр — 136 уникальных ID `SL-E`, дубликатов нет, SL-E136 содержит 8 ячеек.
+- **SHA-256 dossier 28_ после прохода 33:** `633cacc242c60015c64ee9e3780190e1600a1472c4f4ede2f391022e01384b0a`.
