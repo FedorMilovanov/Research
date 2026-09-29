@@ -1,7 +1,7 @@
 # Steven J. Lawson — six 2026 book root causes vs. pre-fall self-witness evidence matrix
 
-**Snapshot:** 2026-09-29  
-**Status:** `ALL SIX READER-REPORTED ROOT CAUSES MAPPED / PRE-FALL COUNTERPARTS STRONG FOR 1,2,3,6 / ATTRIBUTED FOR 4 / BALANCED-THEOLOGY CONTRAST FOR 5 / EXACT BOOK PAGES STILL NEEDED`
+**Snapshot:** 2026-09-30  
+**Status:** `ALL SIX READER-REPORTED ROOT CAUSES MAPPED / 2020 DIRECT WORK-REST SELF-DIAGNOSIS ADDED / 2013+2020 MARRIAGE BASELINE STRENGTHENED / PRE-FALL COUNTERPARTS STRONG FOR 1,2,3,6 / ATTRIBUTED FOR 4 / BALANCED-THEOLOGY CONTRAST FOR 5 / EXACT BOOK PAGES STILL NEEDED`
 
 ## 1. Purpose
 
@@ -31,12 +31,12 @@ This matrix exists to prevent two errors:
 
 | # | Reader-reported 2026 root cause | Best pre-fall evidence | Strength of old evidence | Current classification |
 |---|---|---|---|---|
-| 1 | **Too busy for God** / ministry workaholism | Lawson repeatedly taught private godliness must precede public ministry; preacher must first be prepared by God and preach gospel to himself | Strong multi-source self-witness | **STRONG INTERNAL CONTRAST** |
+| 1 | **Too busy for God** / ministry workaholism | Repeated teaching that private godliness precedes public ministry **plus July 2020 Ask Ligonier self-assessment: more prayer needed, excessive work drivenness, too little vacation/rest** | Strong multi-source self-witness + official-event self-diagnosis with derivative transcript carrier | **VERY STRONG INTERNAL CONTRAST / PARTIAL PRE-FALL SELF-DIAGNOSIS** |
 | 2 | **Ignoring warning signs** / blind to Scripture / deaf to conscience | 2017 Romans 2 teaching: conscience as alarm/brakes; repeated passage through God's stop signs wears brakes down | Strong Lawson teaching with traced OnePassion provenance | **VERY STRONG INTERNAL CONTRAST** |
 | 3 | **Failing to recognize the greatest enemy — me** / public truth, unguarded private life | 2017 Shepherds original audio: even a preacher may be an unconverted shepherd; 2022 official interview on self-deceived church members; repeated personal-holiness framework | Primary/official Lawson objects | **VERY STRONG CATEGORY CONTRAST** |
 | 4 | **Living as if in peacetime** / guard down / bullet-proof | Robert Jeffress publicly attributes to friend Steve Lawson a pre-2010 warning that Christians are most vulnerable after success, when tired, alone, and waiting on God | Strong early attributed witness; original Lawson source not yet found | **STRONG PARALLEL, NOT DIRECT SELF-QUOTE** |
 | 5 | **More law than grace; more retribution than restoration** | 2023–24 Lawson explicitly teaches grace, mercy, peace, truth/love, mercy, peacemaking, acceptance; also strong doctrinal boundaries | Strong public teaching; social-media pattern not independently quantified | **PRACTICE-VS-TEACHING CONTRAST / DATA GAP ON X** |
-| 6 | **Neglecting my wife** | 2020 Ligonier Q&A: Lawson praises Anne's spiritual character, feedback and sacrificial support; admits he is still learning to be a better husband | Direct public Lawson Q&A | **VERY STRONG RELATIONAL CONTRAST** |
+| 6 | **Neglecting my wife** | 2013 *Tabletalk* marriage teaching: wise wife merits trust and complements weakness; 2020 Ligonier Q&A: Lawson praises Anne's spiritual character, feedback and sacrificial support; admits he is still learning to be a better husband | 2013 publication provenance + surviving republications; 2020 direct public Lawson Q&A | **VERY STRONG RELATIONAL CONTRAST** |
 
 ---
 
@@ -65,21 +65,36 @@ The acquired historical record includes Lawson teaching that:
 - a pastor must preach the gospel to himself before calling others to repentance;
 - the minister must pay attention to himself as well as his doctrine.
 
+### July 2020 direct self-assessment
+
+The strongest upgrade is Lawson's own public self-assessment in the official **Ask Ligonier with Steven Lawson** event on July 28, 2020. In the surviving searchable transcript of the Ligonier Ministries video, when asked about mistakes he had made as a young minister, Lawson says in substance that:
+
+- he should have prayed more;
+- he had been excessively driven in his work ethic;
+- he should have taken more vacation;
+- he should have rested more.
+
+Official-event provenance and carrier details are preserved in `39_` and `37_`. The event is official; the currently searchable exact wording is carried by a derivative auto-caption transcript, so final publication should prefer paraphrase until the original recording is durably human-checked with timecodes.
+
 ### Evidence conclusion
 
-This is not merely ironic word matching. It is a repeated Lawson ministry principle spanning years:
+This is not merely ironic word matching. It is a repeated Lawson ministry principle spanning years **plus a partial pre-fall self-diagnosis**:
 
 > **private spiritual life is upstream from public ministry.**
 
-His reported 2026 account describes the reverse trajectory:
+and, by 2020:
+
+> **his own prayer/work/rest balance needed correction.**
+
+His reported 2026 account describes the more serious reverse trajectory:
 
 > **public ministry expanded while private spiritual life was crowded out.**
 
-Classification: **STRONG INTERNAL CONTRAST**.
+Classification: **VERY STRONG INTERNAL CONTRAST / PARTIAL PRE-FALL SELF-DIAGNOSIS**.
 
 ### Guardrail
 
-Do not claim workload itself caused the sexual sin or that every busy season was spiritually unhealthy.
+Do not claim workload itself caused the sexual sin, that every busy season was spiritually unhealthy, that Lawson in 2020 understood the connection to the illicit relationship, or that his answer was a coded confession.
 
 ---
 
@@ -327,10 +342,23 @@ Other readers/reviewers additionally report:
 
 The exact physical pages remain an acquisition target.
 
-## 15. 2020 direct Lawson Q&A about Anne
+## 15. 2013 marriage principle + 2020 direct Lawson Q&A about Anne
 
 Canonical research file:
 - `37_ASK_LIGONIER_2020_ANNE_MARRIAGE_SELF_WITNESS_2026-09-29.md`
+
+### 2013: wise-wife / trust baseline
+
+In the March 2013 *Tabletalk* piece **His Heart Trusts in Her** (later circulated as **The Blessing of an Excellent Wife**), Lawson presents the Proverbs 31 wife as a source of wisdom and strength whose husband can trust her; surviving text carriers preserve the argument that her strengths can complement his weaknesses and increase his usefulness in serving the Lord.
+
+Publication provenance:
+- *Tabletalk* category index lists `His Heart Trusts in Her — Steven Lawson — March 2013`;
+- Ligonier's `Best of 2016` index lists Lawson's `The Blessing of an Excellent Wife`;
+- full text survives in independent republications.
+
+Because the original current Ligonier/Tabletalk text page is not the carrier now in custody, final article use should prefer paraphrase rather than long exact quotation.
+
+### 2020: Anne specifically
 
 In a public Ligonier Q&A Lawson speaks in unusually strong positive terms about Anne:
 
@@ -343,16 +371,25 @@ In a public Ligonier Q&A Lawson speaks in unusually strong positive terms about 
 
 This is not evidence that Lawson claimed to be a perfect husband. He explicitly acknowledged ongoing growth.
 
-But it does establish that he publicly understood:
+But the combined 2013 + 2020 record establishes that he publicly understood:
 
-- Anne's spiritual value;
+- the spiritual value of a wise wife;
+- the principle that a husband should trust such wisdom;
+- Anne's own spiritual value;
 - her sacrificial role in his ministry life;
-- the need to listen to her feedback;
+- the importance of her feedback;
 - his own responsibility to grow as a husband.
 
-That makes the reader-reported 2026 confession of marital neglect materially sharper.
+That makes the reader-reported 2026 confession of marital neglect materially sharper. If the reported counseling episode is accurate, the issue was not absence of the conceptual category “a wise wife can expose and complement a husband's weakness.” That category already existed in Lawson's public teaching.
 
 Classification: **VERY STRONG RELATIONAL CONTRAST**.
+
+### Guardrails
+
+- The reported marriage-counseling refusal remains reviewer/reader-derived until the physical book page is acquired.
+- Do not infer that Anne knew of the illicit relationship in 2013 or 2020.
+- Do not claim the 2013 article proves Lawson's private conduct then.
+- Do not use the 2013 teaching to infer Anne's current views, marital status, or position on the 2026 book.
 
 ---
 
@@ -360,18 +397,18 @@ Classification: **VERY STRONG RELATIONAL CONTRAST**.
 
 The six roots are not six examples of Lawson lacking the right theological vocabulary.
 
-In at least five of the six categories, the pre-fall record shows he already possessed and publicly taught the relevant warning:
+In at least five of the six categories, the pre-fall record shows he already possessed and publicly taught the relevant warning; in the first category the archive now also contains a partial direct self-diagnosis:
 
-- private communion must precede public ministry;
+- private communion must precede public ministry, and by 2020 Lawson had publicly acknowledged too little prayer/rest and excessive work drivenness;
 - conscience must not be ignored;
 - public ministry identity does not guarantee private reality;
 - temptation vigilance is necessary, especially around success/fatigue/isolation (attributed by Jeffress);
 - mercy, love and peacemaking belong to Christian life;
-- marriage and one's wife require serious priority and listening.
+- a wise wife merits trust, and Lawson publicly identified Anne as spiritually mature and helpful in correction.
 
 This creates a much stronger article thesis than generic “hypocrisy” rhetoric:
 
-> **The striking feature is not that Lawson lacked categories capable of diagnosing his danger. His public ministry supplied those categories repeatedly. The later book, if accurately represented by current reader transcriptions, is in large measure an admission that he failed to live under warnings he had already taught others.**
+> **The striking feature is not that Lawson lacked categories capable of diagnosing his danger. His public ministry supplied those categories repeatedly, and in at least one major area he had already applied part of the diagnosis to himself before the collapse. The later book, if accurately represented by current reader transcriptions, is therefore not simply a discovery of previously unknown principles but an admission that known warnings and partially recognized problems did not become sufficient correction.**
 
 This is an evidence-based internal critique, not mind-reading.
 
@@ -391,7 +428,7 @@ This is an evidence-based internal critique, not mind-reading.
 ### Medium confidence
 
 - Jeffress's repeated early attribution of a temptation framework to Lawson;
-- third-party carriers accurately quoting Lawson books/articles where original is not yet in custody.
+- third-party carriers accurately reproducing Lawson books/articles where original is not yet in custody, including the 2013 marriage article text.
 
 ### Current weak link
 
@@ -413,17 +450,19 @@ The six-factor list is now strongly located, but publication-grade exact quotati
 
 4. Recover the original source behind Jeffress's pre-2010 Lawson temptation framework.
 5. Directly transcribe/verify the strongest Matthew 5:7 / 5:9 audio portions.
-6. Acquire original sources behind older “prepare the preacher first” quotations where current carriers are secondary.
+6. Capture/human-check the July 28, 2020 Ask Ligonier prayer/work/rest passage from the original Ligonier recording with exact timecodes.
+7. Acquire the original/current primary text object for the 2013 Lawson marriage article if available.
+8. Acquire original sources behind older “prepare the preacher first” quotations where current carriers are secondary.
 
 ### P1 — social-media forensics
 
-7. Recover Lawson's old X/Twitter status IDs and engagement counts.
-8. Build a representative sample, not a cherry-picked one.
-9. Test the book's reported “provocative posts got more engagement” claim independently.
+9. Recover Lawson's old X/Twitter status IDs and engagement counts.
+10. Build a representative sample, not a cherry-picked one.
+11. Test the book's reported “provocative posts got more engagement” claim independently.
 
 ### P2 — article synthesis
 
-10. Revise the canonical article only after distinguishing:
+12. Revise the canonical article only after distinguishing:
    - book self-report;
    - direct pre-fall Lawson teaching;
    - attributed Lawson teaching;
@@ -434,8 +473,8 @@ The six-factor list is now strongly located, but publication-grade exact quotati
 
 ## 19. Article-ready synthesis
 
-> Current readers report that Lawson organizes his fall around six causal failures: ministry workaholism, ignored warning signs, failure to recognize himself as the chief danger, peacetime complacency, a punitive rather than restorative posture, and neglect of his wife. The remarkable feature is that the pre-fall archive already contains close counterparts to nearly every diagnosis. Lawson had taught that private godliness must sustain public preaching, compared conscience to moral brakes that can be worn down by ignored warnings, warned pastors that public ministry does not prove spiritual reality, taught mercy and peacemaking, and publicly praised his wife's spiritual wisdom and contribution to his life. Robert Jeffress was even attributing to Lawson, as early as material dated to 2010, a warning that success, fatigue and isolation make believers especially vulnerable to temptation. These parallels do not prove hidden motives, nor do they prove Lawson was unconverted. They establish something narrower and more disturbing: the categories needed to diagnose the danger were already present in his own public teaching.
+> Current readers report that Lawson organizes his fall around six causal failures: ministry workaholism, ignored warning signs, failure to recognize himself as the chief danger, peacetime complacency, a punitive rather than restorative posture, and neglect of his wife. The remarkable feature is that the pre-fall archive already contains close counterparts to nearly every diagnosis. Lawson had taught that private godliness must sustain public preaching, compared conscience to moral brakes that can be worn down by ignored warnings, warned pastors that public ministry does not prove spiritual reality, taught mercy and peacemaking, and publicly praised his wife's spiritual wisdom and contribution to his life. The archive is now sharper still: in July 2020 Lawson publicly acknowledged that he should have prayed more, had been excessively driven in work, and needed more vacation and rest; and his 2013 marriage teaching had already presented a wise wife's strengths as something a husband should trust rather than ignore. Robert Jeffress was even attributing to Lawson, as early as material dated to 2010, a warning that success, fatigue and isolation make believers especially vulnerable to temptation. These parallels do not prove hidden motives, nor do they prove Lawson was unconverted. They establish something narrower and more disturbing: the categories needed to diagnose the danger were already present in his own public teaching, and part of the work/rest diagnosis had already reached his own public self-assessment.
 
 ## Research conclusion
 
-> **ALL SIX READER-REPORTED ROOT CAUSES ARE NOW MAPPED AGAINST THE PRE-FALL CORPUS. THE RESULT IS NOT THAT LAWSON LACKED THE RIGHT THEOLOGY; IN MOST CATEGORIES HE HAD ALREADY TAUGHT THE RELEVANT WARNING WITH STRIKING CLARITY. THE CENTRAL EVIDENTIARY CONTRAST IS THEREFORE KNOWLEDGE/TEACHING VERSUS LIVED VIGILANCE. THE OLD SIDE OF THE COMPARISON IS STRONGEST FOR PRIVATE GODLINESS, CONSCIENCE, SELF-DECEPTION/PUBLIC MINISTRY, AND MARRIAGE; THE PEACETIME/BULLET-PROOF PARALLEL REMAINS JEFFRESS-ATTRIBUTED UNTIL THE ORIGINAL LAWSON SOURCE IS FOUND; THE LAW-VS-GRACE SOCIAL-MEDIA SUBCLAIM REMAINS LAWSON SELF-REPORT UNTIL HISTORICAL ENGAGEMENT DATA ARE RECOVERED. THE NEXT MAJOR UPGRADE IS PHOTOGRAPHIC CUSTODY OF THE SIX BOOK SECTIONS THEMSELVES.**
+> **ALL SIX READER-REPORTED ROOT CAUSES ARE NOW MAPPED AGAINST THE PRE-FALL CORPUS. THE RESULT IS NOT THAT LAWSON LACKED THE RIGHT THEOLOGY; IN MOST CATEGORIES HE HAD ALREADY TAUGHT THE RELEVANT WARNING WITH STRIKING CLARITY. FOR ROOT 1, THE EVIDENCE NOW GOES FURTHER: IN JULY 2020 HE PUBLICLY ACKNOWLEDGED TOO LITTLE PRAYER, EXCESSIVE WORK DRIVENNESS AND INSUFFICIENT VACATION/REST. FOR ROOT 6, THE 2013 MARRIAGE TEACHING AND 2020 ANNE Q&A SHOW BOTH THE GENERAL PRINCIPLE OF TRUSTING A WISE WIFE AND THE PERSONAL RECOGNITION OF ANNE'S SPIRITUAL VALUE AND FEEDBACK. THE CENTRAL EVIDENTIARY CONTRAST IS THEREFORE NOT MERELY KNOWLEDGE/TEACHING VERSUS LIVED VIGILANCE, BUT IN PART PRIOR SELF-DIAGNOSIS VERSUS INSUFFICIENT CORRECTION. THE PEACETIME/BULLET-PROOF PARALLEL REMAINS JEFFRESS-ATTRIBUTED UNTIL THE ORIGINAL LAWSON SOURCE IS FOUND; THE LAW-VS-GRACE SOCIAL-MEDIA SUBCLAIM REMAINS LAWSON SELF-REPORT UNTIL HISTORICAL ENGAGEMENT DATA ARE RECOVERED. THE NEXT MAJOR UPGRADE IS PHOTOGRAPHIC CUSTODY OF THE SIX BOOK SECTIONS THEMSELVES.**
