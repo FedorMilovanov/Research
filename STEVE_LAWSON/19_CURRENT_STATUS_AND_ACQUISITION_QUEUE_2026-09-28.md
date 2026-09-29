@@ -160,6 +160,11 @@ The following remain closed at the level already recorded in `20_` and earlier f
 22. **CFL-медиа (SL-E36):** S3-аудио и Vimeo мертвы — искать перезаливы подкаста (архивы, Spotify-превью), либо писать в CFL; страницы эпизодов живы, аннотации сохранены.
 23. **H.B. Charles, видео на Vimeo (SL-E35):** вытащить Vimeo-ID из архивного HTML страниц 2015 года (или из старого сайта) и проверить доступность видео; это разговор «о жизни, вере и служении».
 
+24. **H.B. Charles, «Conversations» ч. 1–2 (SL-E37/SL-E38)** — получить байты видео (`_lfMPojsEVg`, `pkQGl76edz8`), проставить таймкоды к ключевым цитатам; установить дату записи (в части 2 — реплика «on this your birthday»).
+25. **Юридическая школа/адвокат (SL-E39)** — Texas Tech School of Law (списки 1973–76), архивы *Lubbock Avalanche-Journal* 1977–79; подтвердить или снять реконструкцию «Кент Ханс».
+26. **Southwestern Seminary / DTS (SL-E37)** — каталоги студентов ~1977–1984: закрыть «пять лет» и годы Th.M.
+27. **Billy Graham crusade (SL-E41)** — архив BGEA/*Decision*: подтвердить его роль «preach to the preachers before crusades».
+
 ### P2 — archival completeness / passive monitoring
 
 - preserve current Ligonier/Trinity/TMS/Contending page states when materially changed;
