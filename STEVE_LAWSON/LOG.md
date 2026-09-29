@@ -20,3 +20,7 @@ SHA-256 ядра: 28_ on 0257676 → `6e6c8d31…a233d`; после правки
 Ветка `arena/01a0ea6e-research` **запушена** в origin (на момент `c194e24`; далее см. этот коммит).
 
 Новое: SL-E31 — транскрипт Q&A 2012 West Coast Conference («Standing Firm»): Лоусон о жене «I married up… we're almost unequally yoked; she's so up there»; Спроул: «the greatest blessing God ever gave to you» вне обращения; тогда же — «It's “the woman Thou hast given me”» и эпизод с камерой Энн из первого ряда. SL-E32 — RBC Q&A (машинный транскрипт, атрибуция говорящих не подтверждена): «battleship vs rowboat», «gas pedal», рассказ о смерти отца. SL-E33 — повторно подтверждён URL SC2007 GS8 MP3. SL-E34 — метод: `youtubetotranscript.com` работает для публичных видео Лигонье/RBC; объект Ask Ligonier 28.07.2020 остаётся приватным.
+
+## Обновление 28.09.2026 — проход 4
+
+SL-E35: интервью H.B. Charles (февраль 2015) было **видео на Vimeo** («a joy to interview Dr. Lawson about his life, faith, and ministries»), анонс сохранён в Wayback; аудио #017/#018 закрыто премиум-Libsyn, текущий RSS их не содержит. SL-E36: медиа CFL по «Life Story» (обе части) недоступно — S3 AccessDenied (оба хоста, с `?updated=` и без), Vimeo «does not exist», в фиде эпизодов февраля 2024 нет; страницы и аннотации живы. Зафиксировано как page-state.

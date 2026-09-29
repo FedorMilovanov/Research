@@ -157,6 +157,9 @@ The following remain closed at the level already recorded in `20_` and earlier f
 20. **RBC Q&A (SL-E32)** — сверить по аудио, кому принадлежат реплики о «линкоре» и о смерти отца; до этого — `EVIDENCE_HOLD`.
 21. **Поиск цитаты «лучший христианин из всех, кого я знаю»** — продолжать только по печатным носителям Лигонье/Tabletalk и по аудио-архивам Q&A 2013–2019; YouTube-объект 2020 приватён.
 
+22. **CFL-медиа (SL-E36):** S3-аудио и Vimeo мертвы — искать перезаливы подкаста (архивы, Spotify-превью), либо писать в CFL; страницы эпизодов живы, аннотации сохранены.
+23. **H.B. Charles, видео на Vimeo (SL-E35):** вытащить Vimeo-ID из архивного HTML страниц 2015 года (или из старого сайта) и проверить доступность видео; это разговор «о жизни, вере и служении».
+
 ### P2 — archival completeness / passive monitoring
 
 - preserve current Ligonier/Trinity/TMS/Contending page states when materially changed;
