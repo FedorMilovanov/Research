@@ -952,6 +952,7 @@
     }
   ],
   "pageStateObservations": [
+    {"date": "2026-09-28", "observation": "Pass 8 (early-life lane, file 28_): two dated public retellings of the Dauphin Way exit are now documented - the Shepherds' Conference 2006 GS7 Q&A (03.03.2006) eyewitness account by Fred Butler (Hip and Thigh, full text via Wayback snapshot 20160604044239: 'kicked him out of the Church for being Calvinistic') and the SC2007 GS8 Q&A lead; the SC2006 GS7 MP3 byte locator is established from the open S3 listing (md5 ef39c0a214a09ea78e843c53debd738e, 15,594,935 bytes). Lawson's own full BGEA account (The Cripplegate, 22.02.2018) is obtained, with external corroboration of the September 1989 Little Rock crusade (War Memorial Stadium, seven nights) but not of his personal role; the RTS D.Min. dissertation is absent from TREN (0 hits for the exact author). Internet Archive inside-search for Men Who Win (1992) is closed on every tested route (private derivatives; archivelab HTTP 500; fulltext endpoint 'item not available'; Open Library captcha). Correction recorded: Butler's 'weeping' passage refers to S. Lewis Johnson, not to the Dauphin Way recounting."},
     {
       "date": "2026-09-27",
       "observation": "gracechurch.org 2017 Shepherds' Conference catalogue lists General Sessions 1–13 and 15 but not Session 14, and does not list Lawson's seminar session; Wayback captures 20241203112858 and 20250317203624 show the same state; the official Session 14 MP3 remains reachable.",

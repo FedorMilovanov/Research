@@ -36,3 +36,18 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 ## Обновление 28.09.2026 — проход 7
 
 Найдена живая оригинальная публикация *The Alabama Baptist* от 06.02.2003 (URL в SL-E06): добавлены пик ~9 000 членов в конце 1980-х при Даррелле Робинсоне, «около 5 000» в годы Лоусона, посещаемость ~600 после отставок и 10 новых членов, «более 500 первые восемь недель как Christian fellowship», а также цитата Уитфилда «if he could get the church down to 500, then he thought he could build a church». Плюс связь: Даррелл Робинсон (пастор Dauphin Way 1980-х) — со-пастор Dayspring 1999–2001 (некролог Alabama Baptist, 26.01.2024).
+
+## Обновление 28.09.2026 — проход 8 (SC2006/2007, BGEA-линия, негативы)
+
+Получено и внесено:
+- **SL-E20 переписан:** полный текст Фреда Батлера (Hip and Thigh, 06.03.2006) через Wayback (`20160604044239`): Q&A-панель SC2006 (Спроул, Молер, Девер, Лоусон) — «heartbreaking trial with Dauphin Way… kicked him out… for being Calvinistic»; уточнено, что эпизод «до слёз» — про S. Lewis Johnson.
+- **SL-E21:** установлен MP3-объект `https://s3.amazonaws.com/media.shepherdsconference.org/2006/SC-2006-GS07-PANELK.mp3` (md5 `ef39c0a214a09ea78e843c53debd738e`, 15 594 935 байт); карта бакета: годы 2000–2019, 2022–2026; в Wayback — только 2015-е файлы.
+- **SL-E31 дополнен:** чанки 1 и 6 транскрипта 2012 («standing firm» в вопросе; ответ о Евангелии; «does wonders for his being a husband… being a father»).
+- **SL-E44:** Homiletix «How I Preach» (19.09.2016) — автопортрет (34 года пасторства, уход в 2014, Роджерс/МакАртур/Спроул, интроверт, рукописи, ПО «None», «elder boards»).
+- **SL-E45:** Cripplegate, 22.02.2018 — его полный рассказ о BGEA (1989, 3 000 консультантов, 10 лет crusade'ов, диссертация, уход из-за Шуллера).
+- **SL-E46:** внешнее подтверждение Литл-Рокского crusade 1989 (сентябрь, War Memorial Stadium, 7 вечеров; familycouncil.org / KARK / справка стадиона).
+- **SL-E47:** негатив по тексту *Men Who Win* на IA (производные `private`, inside-search закрыт, Open Library — капча).
+- SL-E41: статус `PARTIAL` (рассказ получен полностью; роль и диссертация — self-report); TREN по автору «Lawson, Steven (J.)» — 0 записей.
+- §4: абзац о датированных публичных пересказах 2006/2007; §7: два новых пункта; хронология: строка 03.03.2006; HOLD-таблица и очередь (`19_`, пункты 27–30) обновлены.
+
+Маршруты, закрытые в этом проходе (не повторять): inside-search IA для `menwhowinpursuin00laws` (archivelab 500, ia-petabox пусто, `fulltext/inside.php` — «item not available»), `openlibrary.org/search/inside` (капча), TREN exact-author по Steven Lawson.
