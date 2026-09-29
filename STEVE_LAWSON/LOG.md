@@ -352,3 +352,16 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E137, обновлены SL-E102 и задача 21; `README` и `LOG` обновлены. Raw PDF/сканы не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; source ledger — 137 уникальных ID `SL-E`, дубликатов нет, SL-E137 содержит 8 ячеек.
 - **SHA-256 dossier 28_ после прохода 34:** `3ca88e846d8d5ebec215d7816e5f4959ad25a289fe0d4d60fc2e0b0ac4ff60d0`.
+
+
+## Проход 35 (29.09.2026) — ABN-1981: полный доступный текст выпуска 13.08
+
+- **Article 1069 (13.08, item 59; SL-E138):** получены и просмотрены все 9 текстовых чанков (0–8); chunk 8 сообщает `hasMore=false`. Целевой Steve/Steven Lawson и объявление/результат поиска преемника Jesse S. Reed не выявлены в возвращённом тексте.
+- **Новая подтверждённая ловушка:** статья `Teach the Bible to win the lost` в `Your state convention at work → Sunday School` подписана `Lawson Hatfield, state Sunday School director`. Это одиннадцатый отдельный выпуск с его именем (SL-E101); это не Steven J. Lawson.
+- **Clarence Shell Jr.:** `Revival objectives` в рубрике `Your state convention at work → Evangelism` завершается подписью Shell. Подтверждено его авторство ещё одного материала рубрики, но его должность/назначение преемником Reed не указаны.
+- **Разграничение должностей и имён:** Gene Ellis назван первым director of missions Garland County Association и планирует евангелизационные встречи — это ассоциативный, не штатный пост ABSC. Отставка A. A. Brady касается Caddo River Association. `Steve Goss` — officer Baptist Student Union при UAMS, не целевой Lawson.
+- **Покрытие:** полные доступные текстовые выдачи просмотрены для 32 из 50 выпусков 1981 года: 31 последовательно от 01.01 до 13.08 плюс 24.12 отдельно. 18 выпусков ещё не просмотрены; общего отрицательного вывода по году нет.
+- **Дальше:** следующий по хронологии — 20.08.1981, article 1070/item 58.
+- **Файлы:** `28_` — добавлен SL-E138, обновлены SL-E101, SL-E102 и задача 21; `README` и `LOG` обновлены. Raw PDF/сканы не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; source ledger — 138 уникальных ID `SL-E`, дубликатов нет, SL-E138 содержит 8 ячеек.
+- **SHA-256 dossier 28_ после прохода 35:** `c1cc342eead5f208f84025fe534892135358a10700b87b5c940ceb482caa858e`.
