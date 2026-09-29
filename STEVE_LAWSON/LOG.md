@@ -91,3 +91,16 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - Файлы: `28_` — SL-E63…SL-E67, §10, задачи 22–25; `19_` — пункты 38–40; манифест — наблюдение 25.
 
 Смысл прохода: вопрос «его роль в красаде 1989» переведён из разряда «нет источников» в «источники есть, но на бумаге и по записи в архив».
+
+## Обновление 29.09.2026 — проход 12 (Monergism-интервью, личный сайт 2007, SermonAudio-детали, ловушка-4)
+
+Найдено и внесено:
+- **SL-E68 — интервью Monergism (Дж. У. Хендрикс, ≈2007), полный текст.** Ключевое: его собственный ответ по «церкви, откуда его выгнали» — «The greatest trial that I have endured in the ministry is **being put out of the previous church that I pastored**. The last six years of my pastorate there…»; поводы: экспозиция, господство Христа, церковная дисциплина, суверенная благодать и **«marrying only two believers»**. Также: «Sunday by Sunday for five years» под С. Льюисом Джонсоном; Спроул — «a former professor of mine»; Бойс дважды проповедовал в его церкви, «when I was a young pastor»; пятничные 6:00-мужские занятия — исток серии *A Long Line of Godly Men*.
+- **SL-E69 — личный сайт New Reformation Ministries (Wayback 17.12.2007).** Био («twenty-seven years» пасторства; полные имена детей; Самарская семинария; Distinguished Scholars 2004); «Dr. Lawson's Welcome» 23.10.2007; бесплатный архив проповедей — локатор эпохи Мобила.
+- **SL-E70 — SermonAudio:** 296 проповедей; «Testimony & Call to Ministry» (`12152314092159`, 20:04, категория Testimony, Staff Pick, Foundations Conference 2023) — транскрипт есть в UI, но машинно недоступен; **наблюдение:** 19.08.2024 под его именем опубликован материал («The Gospel: Our Greatest Need», Daily United Prayer) — через пять месяцев после удаления из служения.
+- **SL-E71 — более полный текст «дани» Грэму** через враждебную перепечатку (Surph's Side, 04.03.2018): добавлены фразы «God was using me to help prepare and motivate many hundreds of people…», «I was often privileged to sit on the platform behind Dr. Graham… I would step into the pulpit and oversee the response to the altar call» и **«I eventually left my work with the Graham organization — partially as a response to the interview he gave with Robert Schuler [1997]»**.
+- **SL-E72 — ловушка-4** (пастор Steve Brian Lawson, 1965–2021, Дентон/Гринвилл) и **библиографический каркас** по Open Library: 103 записи, годы первых изданий с 1992 (*Men Who Win*) до 2000-х; *The Legacy* (1998) — книга о наследии отца.
+- **SL-E73 — негативы прохода:** архив cfbcmobile.org (каркас без био), RTS-каталог LS2 (логин/JS), транскрипты SermonAudio (502), Wayback availability API (429; работает прямой формат URL).
+- Файлы: `28_` — SL-E68…SL-E73, §11, правки §3/§4/§6/§7, хронология (≈1997–2003, 1998, ≈2007, 23.10.2007, 19.08.2024), задачи P1-B 13–16, таблица открытых вопросов; `19_` — пункты 41–43; манифест — наблюдение 26.
+
+Смысл прохода: вопрос «за что его выгнали» получил его собственную формулировку и перечень поводов; линия BGEA получила датированный конец (1997); ранняя семейная линия получила печатную цель (*The Legacy*, 1998).
