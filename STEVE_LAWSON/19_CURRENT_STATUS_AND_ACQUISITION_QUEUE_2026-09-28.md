@@ -129,6 +129,26 @@ The following remain closed at the level already recorded in `20_` and earlier f
 9. **WAW #99/#100:** acquire/transcribe, especially #100 `How to Avoid a Ministry Shipwreck`.
 10. **Original G3 Nov 14 statement / TMS-Busenitz / OnePassion Romans objects:** upgrades to existing carrier-based claims.
 
+### P1-A — ранняя биография (новая линия, открыта 2026-09-28)
+
+Отдельное досье линии: [`28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md`](28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md). Линия **не** входит в claim-матрицу 2024–2026 и не меняет publication verdict; она собирает проверяемую первую половину биографии (1951–2018) и принудительный уход из Dauphin Way (2003).
+
+1. **Shepherds' Conference 2007, GS8 Q&A** — получить `https://s3.amazonaws.com/media.shepherdsconference.org/2007/SC-2007-GS08-PANELK.mp3`; найти рассказ Лоусона об уходе из Dauphin Way; таймкоды. Параллельно подтвердить URL его сессии (GS2).
+2. **«Life Story of Steven Lawson» (Church & Family Life, февраль 2024), части 1–N** — получить видео/аудио и аннотации всех частей, транскрибировать (детство, обращение, брак, Литл-Рок, 2003).
+3. **Ask Ligonier, 28.07.2020 (`Fouczzg3yhg`)** — транскрипт; проверить цитаты об Энн; восстановить отсутствующий файл-аудит `08_ASK_LIGONIER_2020_…` (broken reference) или заменить ссылку.
+4. **Газетный объект 1981** — полная полоса *The Tampa Times*, 20.04.1981, с. 14 (часть 1 объявления), дубли в *Tampa Tribune*; имена родителей невесты, место и служитель венчания.
+5. **Степени** — подтвердить годы Th.M. (DTS) и D.Min. (RTS); снять неопределённость B.B.A./B.A.
+6. **Проверить «sportswriter for the Texas Rangers and Dallas Cowboys»** (издательская био 1992) — студенческая пресса Texas Tech, газеты Далласа/Мемфиса. Учитывать ловушку однофамильца-бейсболиста (Steve Lawson, р. 28.12.1950).
+7. **Оригинал Mobile Register, 10.01.2003** и полный текст *The Alabama Baptist*, 06.02.2003.
+8. **Pulpit Aflame (2016), глава 1** — Dustin Benge, «Steven J. Lawson: Knowing the Man and His Message» — легальная копия/превью.
+9. **BCLR 1981–1995 и профиль о приезде в Dauphin Way (1995)** — приходские материалы, газетные профили.
+
+10. **CFL-интервью (обе части)** — читать страницы через `?_data=1`; получить аудио по шаблону `cfl-mango.s3.amazonaws.com/assets/podcastEpisodes/<id>/audio.mp3` (Vimeo-превью 1792596948 / 1795656674); транскрибировать (обращение в 17 лет, Мемфис, брак, Литл-Рок, 2003).
+11. **SC2006 GS7 Q&A (03.03.2006)** — `gracechurch.org/sermons/287`; установить MP3 в бакете `media.shepherdsconference.org/2006/` и получить аудио (рассказ о Dauphin Way «до слёз» по свидетельству 2017 г.).
+12. **Ask Ligonier:** YouTube `Fouczzg3yhg` (28.07.2020) теперь **приватён**; искать аудио/расшифровки на `ask.ligonier.org` и в фидах Ligonier (эпизоды с Лоусоном 2020–2021 уже подтверждены).
+13. **Степени:** годы B.B.A. (1973?), Th.M. (1980?), D.Min. (1990?) пока только `C`-источники; нужен первичный документ.
+14. **Texas Tech football:** ростеры 1969–1972 Lawson не содержат — проверить по студенческой прессе и программам.
+
 ### P2 — archival completeness / passive monitoring
 
 - preserve current Ligonier/Trinity/TMS/Contending page states when materially changed;
