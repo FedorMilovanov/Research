@@ -1,41 +1,48 @@
 # Steven J. Lawson — current status and acquisition queue
 
 **Corpus:** `LAWSON-2024-2026`  
-**Snapshot:** `2026-09-29`  
-**Status:** `CANONICAL OPERATIONAL STATUS / READY AFTER CLAIM-LEVEL REVISION`  
+**Snapshot:** `2026-09-30`
+**Status:** `CANONICAL OPERATIONAL STATUS / V4.1 TARGETED REVISION APPLIED / READY WITH GUARDRAILS`
 **Publication draft:** `17_ARTICLE_RU_REFINED_V4_2026-09-28.md`  
 **Latest control pass:** `21_CONTROL_RESEARCH_2026-09-29.md`
 
 ## Authority of this file
 
-This file is the **single current operational status** for the Lawson corpus as of 2026-09-29. It supersedes earlier queue labels in `00_`, `02_`, `06_`, `11_`, `13_`, `16_`, `18_`, the 2026-09-28 version of this file, and the parallel `STEVEN_LAWSON_2024_2026/00_CURRENT_AUTHORITY_2026-09-27.md` where those dated snapshots conflict with later evidence.
+This file is the **single current operational status** for the Lawson corpus as of 2026-09-30. It supersedes earlier queue labels in `00_`, `02_`, `06_`, `11_`, `13_`, `16_`, `18_`, the 2026-09-28 version of this file, and the parallel `STEVEN_LAWSON_2024_2026/00_CURRENT_AUTHORITY_2026-09-27.md` where those dated snapshots conflict with later evidence.
 
 Historical files remain valid records of what was known at each pass. They are not current queue authority when a later object closes, weakens, or reclassifies a claim.
 
 ## Current publication verdict
 
-There is still **no unconditional global source blocker**, but canonical v4 is **not publication-safe as-is after the Sep 29 control pass**. One claim cluster materially changed:
+There is **no unconditional global source blocker**. The Sep 29 control pass made the then-canonical v4 unsafe to publish as-is; the required claim-level correction is now applied in [`17_ARTICLE_RU_REFINED_V4_2026-09-28.md`](17_ARTICLE_RU_REFINED_V4_2026-09-28.md) as **v4.1 (30 Sep 2026)**.
 
-- the membership section currently ends in excessive agnosticism;
-- a Dec 11, 2024 Trinity church-wide fellowship-meeting audio, preserved through multiple carriers, records the elders as saying Steve and Anne were members and had gone through the formal membership process;
-- the same meeting records the elders' own claim that exposure/removal/cessation of compensation constituted discipline.
+The revised article now:
 
-Therefore v4 requires a **targeted factual rewrite** of the Trinity membership/discipline section before publication. This is a claim-level editorial correction, **not** a reopening of the entire research project.
+- weighs the Dec 11, 2024 Trinity meeting record, as preserved by multiple carriers, as strong evidence of formal membership rather than ending in equal WAW/G3 uncertainty;
+- attributes the elders' own account of discipline and keeps adequacy, continuation, and post-move jurisdiction as separate open questions;
+- adds Lawson's 2019-uploaded purity Q&A while explicitly noting that the recording date is unknown;
+- keeps the Q&A recollection of “about 26” consequences distinct from Jon Benzinger's witness to a 2018 “28” lecture;
+- addresses the Christ-wilderness category problem using only the sample page actually shown and attributed reviewer analysis;
+- distinguishes giftedness, qualification, trust, and platform, while retaining the privacy and attribution guardrails.
+
+The raw Dec 11 meeting audio remains the highest-value acquisition upgrade, but its absence does not require withholding v4.1 because the article identifies the carriers and does not pretend to possess the audio or a verbatim official transcript. Other open research lanes remain backlog unless a particular claim is added or strengthened.
 
 The controlling evidence and wording rules are in `21_CONTROL_RESEARCH_2026-09-29.md`.
 
-## Required editorial changes before release
+## Targeted v4.1 revision completed (2026-09-30)
 
-1. **Rewrite Trinity membership.** Preserve the November WAW/G3 dispute as chronology, but do not end by saying membership remains equally unresolved. Current evidence status: `STRONGLY ESTABLISHED VIA PRIMARY-EVENT RECORD PRESERVED BY MULTIPLE CARRIERS`.
-2. **Rewrite Trinity discipline.** State that the elders themselves, according to the Dec 11 meeting carriers, described exposure/removal/termination of compensation as discipline. Whether that exhausted Matthew 18 / 1 Tim 5 duties or how accountability continued after relocation remains a separate question.
-3. Add the verified old purity-Q&A object (`bIt15eRjAHU`) and preserve the date guardrail: uploaded 28 Nov 2019; recording date unknown; overlap with the reported relationship is plausible but not date-proven.
-4. Keep the 2018 Benzinger `28 Tragic Consequences` witness distinct from Lawson's later recollection of `~26 things` until the original lecture is recovered.
-5. Add the book's `wilderness` category problem with careful exegesis. The strongest objection is the correlation with Christ's wilderness, which was not a consequence of Christ's sin.
-6. Preserve the distinction between gift/ability, elder qualification, trust, and entitlement to public platform.
-7. Do **not** publish `money grab`, present estrangement/divorce, or AI authorship as fact. Motive, marital status, and AI assistance remain unverified at the required level.
-8. Preserve the privacy rule for the unnamed woman.
-9. Keep MacArthur's general moral-heretic/unfaithful-leader categories distinct from anything he personally said about Lawson.
-10. Keep Ligonier's current wording verbatim and unexplained: Lawson's content is no longer featured due to violations of its content policy; the page itself remains live.
+1. ✅ **Trinity membership:** the November WAW/G3 positions remain part of the chronology, but the article now reflects the stronger Dec 11 meeting record carried by Protestia and ChurchLeaders.
+2. ✅ **Trinity discipline:** the elders' reported description of exposure, removal, compensation termination, and permanent disqualification is attributed to them; adequacy, continuation, and jurisdiction remain open.
+3. ✅ **Purity Q&A:** YouTube object `bIt15eRjAHU` is added; upload date is distinguished from unknown recording date.
+4. ✅ **“26” vs “28”:** the Q&A recollection and Benzinger's 2018 lecture witness remain separate until the original lecture is obtained.
+5. ✅ **Wilderness:** the Christ-wilderness category problem is included with explicit limits on the sample-page evidence and on what the critique proves.
+6. ✅ **Gift/platform:** ability, elder qualification, trust, and public platform are separated; book authorship is not equated with pastoral reinstatement.
+7. ✅ Motive (`money grab`), estrangement/divorce, and AI authorship are not stated as facts.
+8. ✅ Privacy rule for the unnamed woman is preserved.
+9. ✅ MacArthur's general categories remain distinct from personal statements about Lawson.
+10. ✅ Ligonier's current wording remains verbatim and unexplained; its live page is not described as deleted.
+
+Remaining acquisition work is recorded below as research backlog or evidence upgrades, not as an unconditional publication hold.
 
 ## Materially closed or reclassified by the Sep 29 pass
 
@@ -132,32 +139,35 @@ The following remain closed at the level already recorded in `20_` and earlier f
 ### P1-A — ранняя биография (новая линия, открыта 2026-09-28)
 
 Отдельное досье линии: [`28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md`](28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md). Линия **не** входит в claim-матрицу 2024–2026 и не меняет publication verdict; она собирает проверяемую первую половину биографии (1951–2018) и принудительный уход из Dauphin Way (2003).
+**P1-A update (pass 46, 30.09.2026):** официальная программа Texas Tech от 12.05.1973 помещает Steven James Lawson в B.B.A.; это сильно поддерживает B.B.A. 1973 и перевешивает газетную вариацию SL-E92, но major/home-town не выводить из невыверенного OCR. Установлены два S3-объекта GS2 2007, однако аудио не получено/не сравнено. CFL: обе аннотации доступны через актуальный route-data loader, но ни аудио/видео, ни транскрипты не получены. Newspapers.com index подтверждает заголовки Part 1/2/3 и фото, не содержание; Part 1/скан открыт. Машинный транскрипт McCarty найден, но сильно искажён; надёжный анализ оригинала остаётся открытым. См. SL-E159–SL-E161 и dossier pass 13.
+**P1-A update (pass 47, 30.09.2026):** GS2: две near-contemporary публикации помещают Steve Lawson в Session II 07.03.2007, Acts 2:14–21 (Walters ссылается на Challies); SermonAudio `31918179251` совпадает по дате/выступающему/близкому названию, но аудио не сверено и transcript не получен. Старый OnePassion результат с 28.02/80 минутами остаётся отдельным и неоднозначным. CFL Part 1: точный YouTube ID `dyP6ihi8znw`; direct watch/embed недоступны, timedtext — HTTP 500, причина не установлена, captions этим не опровергнуты. Газетный index перечисляет шесть записей, включая `Wed Article (pt 1)`, но скана/нового текста нет; найден FSU Film NP 367 (*The Tampa Times*, Jan 1947–Aug 1982), однако это только физический локатор. Никаких новых audio/video/scan receipts; GS2, CFL и газетная полоса остаются acquisition-open. См. SL-E159–SL-E163 и dossier pass 14.
+**P1-A update (pass 48, 30.09.2026):** новый CFL locator lead: на страницах других выпусков виден first-party pattern `/s3/assets/podcasts/{episodeId}/audio.mp3`; применение этого шаблона к Lawson Parts даёт candidate URLs — `https://churchandfamilylife.com/s3/assets/podcasts/65b01c4fad65a9d0a93e4e34/audio.mp3` и `https://churchandfamilylife.com/s3/assets/podcasts/65ba8d2a33d020a85626fd6e/audio.mp3`. Jina Reader сообщает о начале download для обоих, как и для текущего контрольного эпизода; фиктивный ID даёт S3 403. Это locator/download signal, не полученные или прослушанные байты. `fetch_page` одинаково не прочитал целевые и контрольный MP3; guessed transcript paths также inconclusive. В текущем срезе официального RSS chunks 22–31 из 52 Lawson Parts не выявлены. Apple lookup показывает `trackCount=282`, но `resultCount=201` (collection + 200 episodes); видимый срез 19.02–22.01 не содержит Parts, `limit=500` всё ещё возвращает 201 result, а проверенный `offset=200` не сдвинул первую запись. Вывод ограничен этими выдачами, не полным каталогом. Vimeo-числа — poster IDs, не подтверждённые video IDs. Ни acquisition не закрыт; GS2 и газетный скан без изменений. См. SL-E63 и dossier pass 15.
 
-1. **Shepherds' Conference 2007, GS8 Q&A** — получить `https://s3.amazonaws.com/media.shepherdsconference.org/2007/SC-2007-GS08-PANELK.mp3`; найти рассказ Лоусона об уходе из Dauphin Way; таймкоды. Параллельно подтвердить URL его сессии (GS2).
-2. **«Life Story of Steven Lawson» (Church & Family Life, февраль 2024), части 1–N** — получить видео/аудио и аннотации всех частей, транскрибировать (детство, обращение, брак, Литл-Рок, 2003).
+1. **Shepherds' Conference 2007, GS8 Q&A** — получить `https://s3.amazonaws.com/media.shepherdsconference.org/2007/SC-2007-GS08-PANELK.mp3`; найти рассказ Лоусона об уходе из Dauphin Way; таймкоды. Отдельная GS2 2007 теперь сильно идентифицирована как Session II 07.03.2007 по двум near-contemporary reports (Acts 2:14–21); SermonAudio `31918179251` — сильный, но не проверенный по аудио кандидат, а две S3-записи остаются различными объектами и не получены/не сравнены (SL-E160/163). URL-метаданные не закрывают acquisition.
+2. **«Life Story of Steven Lawson» (Church & Family Life, февраль 2024), части 1–N** — получить видео/аудио и транскрипт; полные издательские аннотации обеих известных частей доступны через `?_data=routes%2Fpodcasts%2F%24slug%2F%24episodeId` (SL-E05/17/93), но не заменяют media. Точный YouTube ID Part 1: `dyP6ihi8znw`; прямые watch/embed-страницы недоступны, проверенные timedtext-маршруты дали HTTP 500, причина не установлена (SL-E63). Part 2 page ID `65ba8d2a33d020a85626fd6e` известен, но YouTube ID и транскрипт не подтверждены. Candidate first-party audio route записан в SL-E63; download-start signal без полученных байтов не закрывает acquisition.
 3. **Ask Ligonier, 28.07.2020 (`Fouczzg3yhg`)** — транскрипт; проверить цитаты об Энн; восстановить отсутствующий файл-аудит `08_ASK_LIGONIER_2020_…` (broken reference) или заменить ссылку.
-4. **Газетный объект 1981** — полная полоса *The Tampa Times*, 20.04.1981, с. 14 (часть 1 объявления), дубли в *Tampa Tribune*; имена родителей невесты, место и служитель венчания.
-5. **Степени** — подтвердить годы Th.M. (DTS) и D.Min. (RTS); снять неопределённость B.B.A./B.A.
+4. **Газетный объект 1981** — Newspapers.com page index `newspage/334527740` перечисляет шесть связанных записей, включая `Wed Article (pt 1)` и фото; viewer/image route не дал scan pixels, thumbnails — HTTP 500; доступные same-date calendar results были obituary indexes, не полным содержимым выпусков (SL-E159). FSU Film NP 367 содержит *The Tampa Times* за Jan 1947–Aug 1982, включая дату 20.04.1981, но это физический локатор, не скан; remote digitization не подтверждена (SL-E162). Получить полосу/Part 1 и проверить дубли в *Tampa Tribune*; имена родителей невесты, место и служитель венчания остаются открыты.
+5. **Степени** — B.B.A. 1973 сильно поддержан официальной программой выпускников Texas Tech от 12.05.1973: Steven James Lawson указан в разделе B.B.A. (SL-E161); газетное wording SL-E92 сохранить как точную формулировку источника, но не считать равновесным опровержением. Не утверждать major без визуальной проверки. Открыто: первичные подтверждения Th.M. 1980 (DTS) и D.Min. 1990 (RTS), а также оригинал/диплом TTU для визуальной сверки.
 6. **Проверить «sportswriter for the Texas Rangers and Dallas Cowboys»** (издательская био 1992) — студенческая пресса Texas Tech, газеты Далласа/Мемфиса. Учитывать ловушку однофамильца-бейсболиста (Steve Lawson, р. 28.12.1950).
 7. **Оригинал Mobile Register, 10.01.2003** и полный текст *The Alabama Baptist*, 06.02.2003.
 8. **Pulpit Aflame (2016), глава 1** — Dustin Benge, «Steven J. Lawson: Knowing the Man and His Message» — легальная копия/превью.
 9. **BCLR 1981–1995 и профиль о приезде в Dauphin Way (1995)** — приходские материалы, газетные профили.
 
-10. **CFL-интервью (обе части)** — читать страницы через `?_data=1`; получить аудио по шаблону `cfl-mango.s3.amazonaws.com/assets/podcastEpisodes/<id>/audio.mp3` (Vimeo-превью 1792596948 / 1795656674); транскрибировать (обращение в 17 лет, Мемфис, брак, Литл-Рок, 2003).
+10. **CFL-интервью (обе части)** — получить аудио/видео и транскрипт; обе издательские аннотации доступны через актуальный route-data loader (SL-E05/17/93), но не заменяют медиа. Part 1 YouTube ID `dyP6ihi8znw`; Part 2 page ID `65ba8d2a33d020a85626fd6e`, YouTube ID не подтверждён. Прямые watch/embed-проверки сообщают о недоступности, timedtext — HTTP 500, причина не установлена (SL-E63). Новый candidate audio endpoint для обеих частей — `https://churchandfamilylife.com/s3/assets/podcasts/{episodeId}/audio.mp3`; Jina download-start signal без байтов/идентификации не закрывает acquisition. Poster IDs 1792596948 / 1795656674 и S3-шаблоны — локаторы, не доказательство полученного аудио/видео.
 11. **SC2006 GS7 Q&A (03.03.2006)** — `gracechurch.org/sermons/287`; MP3 установлен: `https://s3.amazonaws.com/media.shepherdsconference.org/2006/SC-2006-GS07-PANELK.mp3` (md5 `ef39c0a214a09ea78e843c53debd738e`, 15 594 935 байт); получить аудио (рассказ о Dauphin Way; уточнить, что «слёзы» у Ф. Батлера — про S. Lewis Johnson).
 12. **Ask Ligonier:** YouTube `Fouczzg3yhg` (28.07.2020) теперь **приватён**; искать аудио/расшифровки на `ask.ligonier.org` и в фидах Ligonier (эпизоды с Лоусоном 2020–2021 уже подтверждены).
-13. **Степени:** годы B.B.A. (1973?), Th.M. (1980?), D.Min. (1990?) пока только `C`-источники; нужен первичный документ. → **частично закрыто 29.09.2026:** приходская био 2001 (SL-E48, A2) называет B.B.A. 1973 / Th.M. 1980 / D.Min. 1990; остаётся первичный документ и расхождение B.A./B.B.A.
+13. **Степени:** B.B.A. 1973 теперь сильно поддержан официальной программой выпускников TTU (SL-E161) и A2-био SL-E48; формулировку газетного OCR SL-E92 не стирать. Th.M. 1980 и D.Min. 1990 остаются пока на уровне приходской A2-био — искать registrar/alumni records; PDF commencement не сохранён/не визуален, major не назначать.
 14. **Texas Tech football:** в доступных онлайн-ростерах/поиске за 1969–1972 Lawson не найден; отдельный матчевый буклет 17.10.1970 тоже не включает его в напечатанный численный ростер (SL-E104). Это только roster-level negative, не опровержение стипендии и не проверка Picadors/freshman team; физические pressbooks и Picadors теперь имеют точные локаторы Box 1 Folder 4 и Box 2 Folders 1–2 (SL-E105).
 15. **Переходное письмо 16.06.2014 и «Origin» Christ Fellowship** — получены через Wayback (A3): даты служения 2003–2014, «eleven years», OnePassion «в Далласе» уже в середине 2014; сохранить текстовые извлечения и хэши в манифесте.
 16. **H.B. Charles, The On Preaching Podcast #017/#018 (февраль 2015)** — интервью о «background, conversion, education, formal training, and pastoral ministry»; аудио на Libsyn заблокировано платной подпиской → искать зеркала/архив (iTunes-фид шоу, аккаунты-перезаливы).
-17. **Shepherds' Conference 2007 GS8 (09.03.2007) и SC 2006 GS7 (03.03.2006)** — объекты наводок о рассказе Лоусона про Dauphin Way; MP3-URLs установлены: `…/2007/SC-2007-GS08-PANELK.mp3` и `…/2006/SC-2006-GS07-PANELK.mp3` (md5 — см. SL-E21); получить байты и таймкоды.
+17. **Shepherds' Conference 2007 GS8 (09.03.2007) и SC 2006 GS7 (03.03.2006)** — объекты-наводки о рассказе Лоусона про Dauphin Way; байты GS8 и SC2006 GS7 всё ещё нужны. Для отдельной GS2 установлены две независимые привязки к Session II 07.03.2007; SermonAudio `31918179251` — вероятный catalog match, но запись не сверена, а два S3-ключа остаются разными и не получены (SL-E160/163).
 18. **Книга `Mercy in the Wilderness` (09.2026)** — получить экземпляр: там его собственная версия семейной динамики (жена просила консультацию, отказ из гордости) — до этого только пересказ (SL-E30).
 
 19. **Ligonier Q&A 2012 (SL-E31)** — взять байты видео/аудио (`85HV-VcvXQo` / `m0QZ-QpOWto` / стор Ligonier, пароль `SEA12MC`) и проставить таймкод к обмену «I married up».
 20. **RBC Q&A (SL-E32)** — сверить по аудио, кому принадлежат реплики о «линкоре» и о смерти отца; до этого — `EVIDENCE_HOLD`.
 21. **Поиск цитаты «лучший христианин из всех, кого я знаю»** — продолжать только по печатным носителям Лигонье/Tabletalk и по аудио-архивам Q&A 2013–2019; YouTube-объект 2020 приватён.
 
-22. **CFL-медиа (SL-E36):** S3-аудио и Vimeo мертвы — искать перезаливы подкаста (архивы, Spotify-превью), либо писать в CFL; страницы эпизодов живы, аннотации сохранены.
+22. **CFL-медиа (SL-E36/63):** обе аннотации доступны через route-data loader, но не заменяют аудио/видео/транскрипт. Старый direct bucket URL отвечает `AccessDenied`, Vimeo oEmbed — 404; watch/embed Part 1 (`dyP6ihi8znw`) недоступны, timedtext — HTTP 500, и эти результаты не доказывают отсутствие captions/копий. Кандидатные URL, выведенные из first-party pattern `/s3/assets/podcasts/{episodeId}/audio.mp3` на других страницах, для IDs Parts 1/2 вызывают Jina download-start signal, как current positive control; фиктивный ID даёт 403. Ни байты, ни duration/hash/identity пока не получены, а `fetch_page` не читает даже контрольный current MP3. Следующее действие — получить именно эти URLs как файлы в рабочем download-capable окружении, затем проверить/транскрибировать; acquisition остаётся открытым.
 23. **H.B. Charles, видео на Vimeo (SL-E35):** вытащить Vimeo-ID из архивного HTML страниц 2015 года (или из старого сайта) и проверить доступность видео; это разговор «о жизни, вере и служении».
 
 24. **H.B. Charles, «Conversations» ч. 1–2 (SL-E37/SL-E38)** — получить байты видео (`_lfMPojsEVg`, `pkQGl76edz8`), проставить таймкоды к ключевым цитатам; установить дату записи (в части 2 — реплика «on this your birthday»).
@@ -172,14 +182,14 @@ The following remain closed at the level already recorded in `20_` and earlier f
 32. **BCLR 1981–1995:** точные даты пастората и материалы (бюллетени, годовщины, пресса Литл-Рока); учесть, что приходская био 2001 умалчивает BCLR.
 33. **«Truth For Today» (WBHY-840, Мобил, 2001–2003):** архив эфиров/расписаний через `goforth.org/840WBHY/840m-f.htm` и Wayback.
 34. **Shepherds’ Conference ≈1983 («23 года»):** верификация ранних лет; SC2006 GS7 / SC2007 GS8 байты — только внешний канал (см. п. 30).
-35. **H.D. McCarty, «Memories from University Baptist Church» (YouTube `QrQQKsQcK64`, 2016):** транскрипт 29.09.2026 не получен (YouTube блокирует сервис) — повторить другими маршрутами: возможны воспоминания о Лоусоне как колледж-пасторе UBC (1980–81).
+35. **H.D. McCarty, «Memories from University Baptist Church» (YouTube `QrQQKsQcK64`, 2016):** машинный транскрипт получен в проходе 46, но он сильно искажён и не позволяет надёжных выводов о присутствии/роли Lawson. Получение текстового дериватива закрыто; для содержательного ответа нужно прослушивание оригинального видео или надёжная расшифровка (SL-E66).
 36. **Texas Tech (ежегодник *La Ventana*, студенческая пресса):** с этого хоста маршруты закрыты — Portal to Texas History отдаёт Altcha-капчу, Google Books API с квотой 0, на IA ежегодников TTU нет, Elephind Флориду 1981 не покрывает. Внешний канал: Texas Tech Libraries / Southwest Collection. **Новый маршрут по футболу:** отдельная цифровая коллекция дала одну программу 1970 года, где Lawson не значится в численном roster; физические pressbooks/Picadors каталогизированы (Box 1 Folder 4; Box 2 Folders 1–2), см. `28_` SL-E104–E106. Это не подтверждение и не опровержение scholarship.
-37. **Флорида-1981 (газета свадьбы):** *Tampa Tribune*/*St. Petersburg Times* — платные архивы; Elephind не покрывает. Держать как `LOCATOR_HOLD`.
+37. **Флорида-1981 (газета свадьбы):** Newspapers.com page index для *The Tampa Times* 20.04.1981, p.14, содержит шесть связанных записей, включая `Wed Article (pt 1)`, Parts 1–3 и фото; полного Part 1 текста/скана нет (SL-E159). FSU Film NP 367 покрывает 1947–1982 и включает целевую дату, но не доказывает удалённую выдачу/скан (SL-E162). Продолжать lawful access к целевой полосе; дубли *Tampa Tribune*/*St. Petersburg Times* остаются непроверенными по полным выпускам.
 38. **АРХИВЫ (внешний канал, приоритет A):** (1) Wheaton College, Evangelism & Missions Archives, **CN 074, папки 8-2/8-3** — «scrapbooks of clippings from the 1989 Arkansas Crusade» (Clinton, W.O. Vaught); (2) **Billy Graham Archive & Research Center** (Charlotte) — **CN 6** (BGEA Crusades: executive committees, follow-up, School of Evangelism), **CN 24** (Schools of Evangelism), **CN 25** (Telephone Counseling), **CN 35** (Oral History, 1 500+ интервью); опись — PDF `s3.theark.cloud/…/BillyGrahamArchiveAndResearchCenter-FindingAid.pdf`. Запись в BGARC — минимум за 14 дней.
 39. **SermonAudio:** «**Testimony & Call to Ministry**» (13.12.2023, ≈20 мин) и источник «OnePassion Ministries» с датами 2006 года (Мобил); серии `77170`, `144832`; страница говорящего `speakers/15262`.
-40. **CFL «Life Story» (SL-E63):** видео публично недоступно (Vimeo oEmbed 404; YouTube-копия удалена; Buzzsprout-фид пуст); новые локаторы — Spotify `7yj8FPOYR7xdlkfrBHAcLd`, Apple `id1740627064`, YouTube-плейлист `PLmQNE6P9JaK75u9v3eW5Ys9NtzZw1wibK`. Искать байты только через внешний канал/запрос к CFL.
+40. **CFL «Life Story» (SL-E63):** известны Spotify `7yj8FPOYR7xdlkfrBHAcLd`, Apple `id1740627064`, YouTube playlist `PLmQNE6P9JaK75u9v3eW5Ys9NtzZw1wib` и Part 1 YouTube ID `dyP6ihi8znw`. Прямые watch/embed-проверки показывают недоступность, но причина (удаление/приватность/регион/иная) не установлена. Vimeo oEmbed — 404, S3-аудио — `AccessDenied`; получить именно аудио/видео и надёжный транскрипт.
 41. **Диссертация RTS (~1990) — заголовок/текст.** Каталог RTS (LS2 PAC, `library.rts.edu`) требует логина; `media.sermonaudio.com/transcripts` — 502. Маршруты: запрос в библиотеку RTS (там же «listing of prior RTS D.Min. projects»), ATLA/TREN, ProQuest. Ценность: первоисточник о роли в красаде-1989 (ср. Cripplegate, SL-E63) — **высокая для темы «кому и как он служил в BGEA»**.
-42. **Аудио «Testimony & Call to Ministry»** (SermonAudio `12152314092159`, 13.12.2023): транскрипт в UI есть, но машине недоступен (ссылка = сама страница). Внешний канал: Ask!/Vault SermonAudio, поддержка сервиса, возможно — аудио через подписчика.
+42. **Аудио «Testimony & Call to Ministry»** (SermonAudio `12152314092159`, 13.12.2023): повторно подтверждены Lawson, 20:04 и раздел Documents с `Raw Transcript` / `Plain Text (TXT)`, но после проверки обоих текстовых чанков страницы содержимое/URL всё ещё не раскрывается; прямые `/text/{id}.pdf` и `.txt` маршруты отвечают `unable to find this media`. Одноимённый ID `121723135749103` — Dr. Joel Beeke, 7:36, не Lawson. Аудио/транскрипт не получены; внешний канал остаётся (SL-E158).
 43. **Книга *The Legacy* (1998, ISBN 1576733297) и *Men Who Win* (1992, ISBN по Open Library)** — читательские экземпляры (букинистика/библиотеки): семейный слой (наследие отца, дети) — печатные свидетельства эпохи, которых нет в сети. Источник локаторов — Open Library (SL-E72).
 44. **Shepherds’ Conference 2022/2023/2024 — объекты S3 (SL-E76):** `2022/SC-2022-03-11-1300-LAWSONS.mp3` (md5 `d4b329ca51a71fb5d0d2155b2b247d82`), `2022/…-1600-LAWSONS.mp3` (`57b878a7d70982e555936e1b308c389d`), `2023/SC-2023-03-08-1000-LAWSONS.mp3` (`c99d8248b6b315fa78c2552a196553c2`), `2023/…-1400-LAWSONS.mp3` (`7334974f5d00f83a6c6a5a31c81562f2`), `2024/SC-2024-03-06-1400-LAWSONS.mp3` (`71eaad95be6e2304f0b5726834c69a08`), `2024/SC-2024-03-08-1530-LAWSONS.mp3` (`f222d3a53a64ba9e0f26c153a8717207`); в листинге **2025 года файлов с его именем нет** (последнее выступление — 08.03.2024). Получение байтов — внешний канал.
 45. **Foundations Conference 2023 (Нью-Йорк, 12–13.12.2023):** официальный отчёт организатора (`sermonaudio.com/news/2023-foundations-conference`, 23.12.2023) — контекст свидетельства: шестая конференция, тема «молитва и проповедь», протест у здания в первый день, смерть К. Секстон; жанр сессий — «conversion and call to ministry».
@@ -208,18 +218,15 @@ The Sep 24–29 reaction wave now includes:
 
 ## Cross-corpus rule
 
-`STEVE_LAWSON/17_` remains the canonical article draft **historically**, but after `21_` it carries the state:
-
-`V4 / TARGETED REVISION REQUIRED BEFORE PUBLICATION`.
-
-Do not promote the old `STEVEN_LAWSON_2024_2026/ARTICLE_VK.md` as a replacement; it has older, larger defects. The next article revision must be derived from v4 + `21_`, not from the legacy article.
+`STEVE_LAWSON/17_` remains the canonical article draft and is now **v4.1 (30 Sep 2026)**, incorporating the claim-level changes directed by `21_`. The legacy `STEVEN_LAWSON_2024_2026/ARTICLE_VK.md` is not publication-safe as-is; do not promote it as a replacement. Any later revision must preserve the v4.1 source boundaries and be derived from `17_` plus the current control record, not from the legacy article.
 
 ## Definition of done after control pass
 
 **Control research:** `COMPLETE AS OF 2026-09-29`  
+**Operational snapshot:** `2026-09-30`
 **Global research lane:** `SUBSTANTIALLY CLOSED`  
-**Canonical v4:** `TARGETED REVISION REQUIRED`  
-**Publication posture:** `READY AFTER CLAIM-LEVEL REVISION / GUARDRAILS REMAIN`  
+**Canonical article:** `v4.1 TARGETED REVISION APPLIED`
+**Publication posture:** `READY WITH GUARDRAILS / OPTIONAL SOURCE UPGRADES REMAIN`
 **Global PUBLICATION_HOLD:** `NOT REOPENED`
 
-The next normal step is article revision, not another indefinite research marathon. Reopen research only for a specific new primary object or a claim that cannot be responsibly resolved from the present corpus.
+The next normal step is selective P1-A acquisition or final editorial copy-edit of v4.1, not another indefinite research marathon. Reopen the main article research only for a specific new primary object or a claim that cannot be responsibly resolved from the present corpus.
