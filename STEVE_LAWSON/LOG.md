@@ -402,3 +402,14 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E141, обновлены SL-E102/SL-E113, задача 21 и статус охвата; README и LOG обновлены. Реестр ожидаемо содержит 141 уникальный ID `SL-E`. Raw PDF/сканы не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; реестр — 141 уникальный `SL-E` ID без дублей, SL-E141 — 8 ячеек; SHA сверён с LOG.
 - **SHA-256 dossier 28_ после прохода 38:** `a4b8aff713616b25dd157069d744d921fbceb1b4979672c2be55abc5002947a3`.
+
+
+## Проход 39 (29.09.2026) — ABN-1981: полный доступный текст 10.09
+
+- **Article 1073 (10.09, item 55; SL-E142):** получены и просмотрены все 10 текстовых чанков (0–9); chunk 9 сообщает `hasMore=false`. Steve/Steven Lawson как целевое лицо не выявлен.
+- **Ложный hit:** Lawson Hatfield прямо указан как `state Sunday School director` в материале Sunday School Leadership Diploma; это четырнадцатый отдельный выпуск-ловушка (SL-E101).
+- **Clarence Shell:** материал `Your state convention at work → Evangelism` об Area Evangelism Conferences подписан `— Clarence Shell, Evangelism director`. Это независимое подтверждение должности, установленной прямым сообщением об избрании/преемстве в SL-E141; нового результата поиска нет.
+- **Покрытие:** 36 из 50 выпусков — непрерывно 01.01–10.09 (35) и 24.12 отдельно; остаются 14. Следующий по хронологии — 17.09.1981 (article 1074/item 54). Преемник Reed установлен; газетный проход по Lawson остаётся открытым.
+- **Файлы:** `28_` — добавлен SL-E142, обновлены SL-E101, SL-E102, задача 21 и статус охвата; README и LOG обновлены. Реестр ожидаемо содержит 142 уникальных ID `SL-E`. Raw PDF/сканы не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; реестр — 142 уникальных `SL-E` ID без дублей, SL-E142 — 8 ячеек; SHA сверён с LOG.
+- **SHA-256 dossier 28_ после прохода 39:** `092098dc8e1a2180b617e6356e36df39337e2009b115d3aefd1ec3f98cf76530`.
