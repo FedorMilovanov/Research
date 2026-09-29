@@ -1,221 +1,107 @@
-# Steven J. Lawson — V6 biography insert drafts
+# Steven J. Lawson — V6 biography insert staging — CONSUMED
 
 **Snapshot:** 2026-09-30  
-**Status:** `EDITORIAL STAGING / PROSE POLISHED / EXACT V5 ANCHORS LOCKED / FINAL TIER-A DELTA CHECK STILL REQUIRED`  
-**Target:** `64_ARTICLE_RU_REFINED_V5_2026-09-29.md` → future V6  
-**Plan:** `69_ARTICLE_RU_V6_BIOGRAPHY_INTEGRATION_PLAN_2026-09-30.md`  
-**Freeze criteria:** `70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`
+**Status:** `CONSUMED / SUPERSEDED BY CANONICAL V6 / DO NOT REBUILD ARTICLE FROM THIS FILE`  
+**Canonical article:** `74_ARTICLE_RU_REFINED_V6_2026-09-30.md`  
+**Final audit:** `75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md`  
+**Frozen biography reference:** `arena/01a0ee73-research` @ `58a008b59834200f3f5474c52f9d98c0dad5e515` / pass 37
+
+## Purpose of this file now
+
+This file was the editorial staging area used to assemble V6 from V5.
+
+Its full pre-consumption draft remains permanently available in Git history at blob:
+
+- `f0c52755bac1b4be78910248f423626933e01482`
+
+No information required by publication was discarded:
+
+- final approved prose is incorporated into `74_`;
+- evidence classifications live in the canonical research files (`37_`, `39_`, `42_`, `62_`, `68_`, `70_` etc.);
+- the full early-biography dossier remains preserved on the frozen arena commit;
+- the final claim/source verification is recorded in `75_`.
+
+Do **not** use this file to create another `V6-beta`, `V6-final-2` or parallel article.
 
 ---
 
-## INSERT A — long-arc opening frame
+## Staged edits that were consumed into V6
 
-### Exact V5 placement
+### 1. Long-arc opening frame — incorporated
 
-Вставить после вводного абзаца, заканчивающегося словами:
+V6 now includes the concise April-1981 marriage/ministry baseline and the decades-long public ministry arc through March 2024.
 
-> `...рядом с Джоном МакАртуром и другими лидерами американского консервативного евангельского мира.`
+### 2. July-2020 work/prayer/rest self-diagnosis — incorporated
 
-и до абзаца:
+V6 section `3.1` now records, by paraphrase, Lawson's July 28, 2020 Ask Ligonier admission that he should have prayed more, had been excessively driven in work, and should have taken more vacation/rest.
 
-> `Затем Trinity Bible Church of Dallas объявила...`
+Guardrail retained:
 
-### Publication-ready draft prose
+- this does not prove he then connected the problem to the specific hidden relationship;
+- exact wording remains tied to a derivative searchable transcript carrier until the original recording is human-checked with timecodes.
 
-История Лоусона важна ещё и потому, что его публичная служительская идентичность возникла не вчера и не была продуктом одной удачной конференционной эпохи. Современная событиям газетная запись уже весной 1981 года называет его служителем церкви в Фейетвилле, выпускником Texas Tech и Dallas Theological Seminary. В том же свадебном объявлении появляется Энн Кроуэлл, с которой Лоусон в апреле 1981 года вступил в брак: выпускница Converse College, работавшая тогда в Campus Crusade for Christ.
+### 3. Anne / 1981 / 2013 / 2020 baseline — incorporated
 
-Дальше последовали десятилетия пасторского и преподавательского служения: The Bible Church of Little Rock, Dauphin Way, Christ Fellowship, OnePassion, книги, институты экспозиционной проповеди, Ligonier, The Master's Seminary, Shepherds' Conference. Архив Shepherds' Conference показывает Лоусона на большой публичной площадке ещё в марте 2024 года — примерно за полгода до того, как его скрытый грех стал публичным.
+V6 section `3.6` now integrates:
 
-Поэтому осенью 2024 года рухнула не просто репутация популярного проповедника. Было разрушено доверие к духовной достоверности, которая перед церковной аудиторией формировалась более сорока лет. Именно это делает вопрос о последующем доверии сложнее обычного вопроса: «извинился ли человек после скандала?»
+- April 1981 contemporary marriage/ministry context;
+- 2013 *Tabletalk* wise-wife/trust teaching, conservatively paraphrased;
+- 2020 direct public praise of Anne and acknowledgment of Lawson's own need to grow as a husband;
+- the reported marriage-counseling refusal remains reviewer-attributed until the physical book page is acquired.
 
-### Evidence lock
+### 4. Memoir-calibration section — incorporated
 
-До финального reconcile factual anchors остаются:
+V6 section `5` now states the evidence rule:
 
-- contemporary Tampa wedding notice, Apr. 1981;
-- biography-lane ministry chronology;
-- official Shepherds' Conference archive through Mar. 2024.
+> autobiography is primary evidence for what its author says/remembers/interprets, but not independent corroboration of its own externally checkable claims.
 
-Не добавлять точные даты ранних пасторатов, если final branch delta их не фиксирует или не корректирует.
+The 1989 Billy Graham and 2003 Dauphin Way examples are included with explicit anti-overclaim guardrails.
 
----
+### 5. Governance transition — incorporated
 
-## MICRO-EDIT A2 — 2020 workaholism self-diagnosis
+V6 section `13` explicitly connects:
 
-### Exact V5 placement
+- real post-fall counseling/pastoral/accountability structures;
+- January-2025 publicly described interview gatekeeping;
+- the absence of comparably transparent public disclosure about the finished-book approval/review chain.
 
-В разделе `3.1. «Слишком занят для Бога»` вставить после предложения:
+Guardrail retained:
 
-> `Но Лоусон годами учил обратному порядку.`
+> opacity is not evidence of bypass, rebellion or absence of private review.
 
-и до абзаца:
+### 6. Long-arc trust paragraph — incorporated
 
-> `Он говорил, что личная духовность и благочестие проповедника — фундамент публичной проповеди.`
-
-### Publication-ready draft prose
-
-Более того, летом 2020 года он уже частично применял этот диагноз к самому себе. В официальном Ask Ligonier 28 июля, отвечая на вопрос об ошибках молодого служителя, Лоусон сказал, что ему следовало больше молиться; признал, что был чрезмерно движим трудовой этикой; добавил, что должен был брать больше отпусков и больше отдыхать. Это не доказывает, что в тот момент он понимал связь такого режима с конкретным скрытым грехом. Но означает нечто более узкое и важное: перегрузка, недостаток молитвы и недостаток отдыха не были для него совершенно новым открытием после падения.
-
-### Evidence lock / guardrail
-
-- event: official `Ask Ligonier with Steven Lawson`, 2020-07-28;
-- surviving searchable carrier: Filmot transcript of the Ligonier Ministries channel video: https://filmot.com/sidebyside/Fouczzg3yhg/en/auto.en/English/English%2B%28auto-generated%29/Ask%2BLigonier%2Bwith%2BSteven%2BLawson
-- exact searchable wording includes: `I should've prayed more`; `I was such a driven person in work ethic`; `I should have taken more vacation time`; `I should have taken time to have rested more`;
-- для публикации лучше парафразировать, пока исходное видео/официальный текст не закреплены отдельным durable object с точными таймкодами;
-- не утверждать, что Лоусон в 2020 году уже осознавал связь перегрузки с конкретной ненадлежащей связью или что вопрос был скрытым исповеданием.
+V6 section `16` now explains that four decades of former public identity do not create a biblical forty-year waiting period, but do make renewed credibility a question of durable observed fruit and meaningful external judgment rather than mere literary/theological quality of a retrospective narrative.
 
 ---
 
-## INSERT B — Anne / 1981 baseline
+## Biography delta that closed this staging phase
 
-### Exact V5 placement
+The old staging plan expected a final check after pass 21 (`4768115...`). That check is complete.
 
-В разделе `3.6. «Я пренебрегал женой»` вставить **перед** нынешним первым абзацем:
+The biography lane continued under `arena/01a0ee73-research` to:
 
-> `В публичном Ligonier Q&A 2020 года Лоусон говорит об Энн с очень большой теплотой.`
+- `58a008b59834200f3f5474c52f9d98c0dad5e515`;
+- pass 37;
+- 21 direct continuation commits beyond the old pass-21 HEAD.
 
-После вставки объединить её с существующим блоком 2020 года так, чтобы не повторять одну и ту же оценку Энн дважды.
+`70_` classifies passes 22–37:
 
-### Publication-ready draft prose
+- Tier-A V6 corrections: **0**;
+- article-changing contradiction: **0**;
+- archival/negative-control improvement: substantial.
 
-Энн появляется в документируемой истории служения Лоусона задолго до его поздней известности. Газетное свадебное объявление апреля 1981 года описывает Энн Кроуэлл как выпускницу Converse College по политологии, работавшую тогда в Campus Crusade for Christ. Иными словами, её собственная христианская служительская среда присутствует в источниках уже у самого начала брака, задолго до скандала 2024 года.
-
-Но важен не только этот биографический фон. Ещё в мартовском *Tabletalk* 2013 года Лоусон писал о Притчах 31, что жена способна глубоко влиять на духовную жизнь мужа, а мудрая жена достойна его доверия; её сильные стороны могут восполнять его слабости и помогать ему лучше служить Господу. Существование статьи *His Heart Trusts in Her* подтверждается индексом *Tabletalk* и архивом Ligonier; сам текст сохранился в нескольких независимых републикациях.
-
-Спустя семь лет, в публичном Ligonier Q&A 2020 года, сам Лоусон говорил уже непосредственно об Энн с очень высокой оценкой: называл её зрелой христианкой, ценил её обратную связь и признавал, сколько свободы для учёбы, письма и служения дала ему её поддержка. При этом он не изображал себя идеальным супругом и прямо говорил, что ещё должен становиться лучшим мужем.
-
-Именно поэтому позднейшее признание о пренебрежении женой нельзя объяснить отсутствием понимания её духовной ценности или самой идеи доверия к мудрой коррекции жены. Эти категории присутствовали в его публичном учении задолго до падения. Если рецензенты точно передают и другой эпизод книги — что Энн просила его обратиться к семейному консультированию, а он отказался из гордости, — проблема становится ещё конкретнее: предупреждение существовало не только в его богословском знании, но и внутри его дома.
-
-### Evidence lock
-
-2013 baseline:
-- Tabletalk category index — `His Heart Trusts in Her`, Steven Lawson, March 2013: https://tabletalkmagazine.com/posts/category/strength/
-- Ligonier `Best of 2016` index — `The Blessing of an Excellent Wife` by Steven Lawson: https://www.ligonier.org/posts/best-2016-ligonier-blog
-- surviving text carrier: https://effectualgrace.com/2016/04/21/an-excellent-wife/
-- surviving text carrier: https://lean-into-god.com/Scripture/September/Sept-16.html
-
-### Guardrails
-
-- Эпизод о family/marriage counseling остаётся явно атрибутированным рецензентам до получения соответствующей страницы книги как первичного объекта.
-- Контекст 1981 года не используется для вывода о нынешней позиции Энн, её готовности к примирению или текущем юридическом статусе брака.
-- Работа Энн в Campus Crusade for Christ не превращается в более широкий недоказанный тезис о её последующей официальной церковной роли.
-- Для статьи 2013 года предпочтителен парафраз. Точный текст сейчас подтверждается сохранившимися републикациями, тогда как исходная страница Ligonier/Tabletalk не используется как прямой доступный текстовый объект.
-- Старый 2022 `Should I Marry Her?` не потерян: он уже находится в `08_QA_TRANSCRIPT_AND_LIGONIER_STATE_2026-09-27.md` с аудио-метаданными, SHA-256 и таймкодами. Не повышать его до quote-safe primary evidence до человеческой прослушки и/или нахождения исходной записи Men's Bible Study.
+Therefore the staging phase is closed.
 
 ---
 
-## INSERT C — memoir calibration bridge
+## Canonical rule going forward
 
-### Exact V5 placement
+For publication/editorial work:
 
-Вставить **между** концом раздела `4. Главный вывод из шести причин: проблема была не в отсутствии богословского словаря` и нынешним заголовком:
+1. read `74_`, not this file;
+2. use `75_` for the final claim/source verdict;
+3. use `CURRENT.md` / `_START_HERE.md` for operational state;
+4. reopen article editing only for a genuinely new primary object that changes a P1 or Tier-A claim.
 
-> `## 5. Что известно о самом падении — и где нужно остановиться`
-
-После вставки выполнить единое перенумерование последующих разделов только в финальной V6.
-
-### Heading
-
-## Автобиография — источник, но не собственная проверка
-
-### Publication-ready draft prose
-
-Здесь возникает ещё одно важное правило чтения *Mercy in the Wilderness*.
-
-Автобиографическое свидетельство — настоящий первичный источник. Книга позволяет узнать, что Лоусон сегодня признаёт, что считает корнями своего падения, какие эпизоды считает существенными и каким образом сам связывает их в единый рассказ. Нельзя обесценивать эти данные только потому, что рассказчиком является сам участник событий.
-
-Но первичный источник не становится от этого независимой проверкой самого себя.
-
-Биографическое исследование ранних периодов Лоусона уже показывает, почему такое различение необходимо. Например, в более позднем воспоминании об евангелизационной кампании Билли Грэма в Литл-Роке он использовал цифры примерно в три тысячи консультантов и пятьдесят тысяч собравшихся. Современная событиям баптистская печать сообщает более 2 100 сертифицированных консультантов к началу сентября и среднюю посещаемость более 35 000 человек.
-
-Это не даёт права обвинять Лоусона во лжи. Категории могут различаться: количество обученных или задействованных за весь период не обязано совпадать с числом сертифицированных к конкретной дате, а пиковая посещаемость одного вечера — со средней посещаемостью кампании. Позднее воспоминание также может округлять цифры. Но именно поэтому ретроспективный рассказ нужно сверять с документами своего времени.
-
-Похожая осторожность нужна и к истории ухода из Dauphin Way в 2003 году. Позднее её легко пересказать одной формулой — конфликт из-за кальвинизма. Современные материалы показывают более сложную церковную драму: организованную оппозицию, письмо недовольных членов, петицию, отставку Лоусона и штатных сотрудников, а затем формирование нового собрания вокруг сотен людей, ушедших вместе с ним. Доктринальный конфликт был реальным, но одна формула не исчерпывает институциональную историю.
-
-Так же следует читать и книгу 2026 года. Она имеет большую ценность именно как свидетельство Лоусона о самом себе. Но там, где речь идёт не только о его внутреннем признании, а о внешних фактах — состоянии брака, действиях других людей, оценке процесса восстановления, степени согласия пасторов и консультантов, — книга не может служить независимым подтверждением собственных утверждений.
-
-Поэтому вопрос не в том, доверять ли мемуару целиком или отвергать его целиком. Правильнее другое: **слушать его как первичное свидетельство и проверять по независимым данным всё, что допускает независимую проверку.**
-
-Именно этот принцип становится особенно важным, когда Лоусон через книгу снова обращается к публике не просто как человек, рассказывающий свою историю, а как богослов, объясняющий духовный смысл собственного падения и последующего процесса восстановления.
-
-### Guardrails
-
-- Если final biography delta разрешит denominators 1989 года или существенно изменит contemporary account 2003 года, пример корректируется либо удаляется до insertion.
-- Различия в поздних воспоминаниях не называются ложью, обманом или сознательным преувеличением без прямого доказательства намерения.
-- Формула `книга — первичный источник, но не независимое подтверждение самой себя` применяется только к проверяемым внешним утверждениям; внутреннее признание автора остаётся прямым источником его собственного нынешнего свидетельства.
-
----
-
-## INSERT D — governance transition
-
-### Exact V5 placement
-
-Не создавать отдельный новый раздел. Вставить как короткую рамку **в начале нынешнего раздела 12**:
-
-> `# 12. Самый важный вопрос после книги: что изменилось между январём 2025 и сентябрём 2026?`
-
-непосредственно перед абзацем:
-
-> `24 января 2025 года Клинт Арчер описал предполагаемое интервью с Лоусоном.`
-
-### Publication-ready draft prose
-
-Здесь соединяются две половины дела. Если главной проблемой Лоусона было не отсутствие богословского знания, то сам факт, что после падения он способен богословски точно объяснить опасность гордости, заглушённой совести или пренебрежения браком, ещё не решает проблему доверия. Но и противоположная карикатура неверна: публичные данные показывают, что Лоусон не проходил этот период в одиночку. Вокруг него действительно существовали профессиональные консультанты, пасторы, старейшины и структуры подотчётности.
-
-Поэтому вопрос теперь не в том, были ли рядом с ним люди. Они были. Вопрос другой: **какое внешнее суждение сопровождало момент, когда личное исповедание и рассказ о восстановлении снова стали публичным духовным голосом?** Именно здесь особенно важна разница между подробно описанным Клинтом Арчером порядком согласования предполагаемого интервью в январе 2025 года и пока не раскрытой сопоставимой цепочкой внешней проверки готовой книги в 2026 году.
-
-### Guardrails
-
-- `не раскрыта` означает только отсутствие найденного публичного disclosure, а не отсутствие самой проверки.
-- Не писать, что Лоусон обошёл пасторов, консультантов, OnePassion, Trinity, SVC или семью.
-- Не превращать January-2025 interview gate в универсальное правило, которое доказанно обязано было юридически или церковно применяться к книге.
-
----
-
-## INSERT E — long-arc conclusion line
-
-### Exact V5 placement
-
-В разделе `15. Прощение, восстановление, должность, доверие и платформа — это не одно и то же` вставить после абзаца:
-
-> `Она приглашает читателя снова доверять его интерпретации духовной реальности — теперь уже его собственной.`
-
-и до абзаца:
-
-> `А скандал как раз показал, что богословская убедительность Лоусона когда-то могла существовать одновременно с тяжёлой скрытой неправдой.`
-
-### Publication-ready draft prose
-
-Есть ещё одна причина, почему здесь недостаточно оценить литературное качество исповеди. *Mercy in the Wilderness* вышла после публичной служительской идентичности, строившейся более четырёх десятилетий. Никто не обязан ждать математически симметричные сорок лет, прежде чем признать плод покаяния; Писание не устанавливает такого срока. Но многолетнее доверие, разрушенное длительным скрытым противоречием, не восстанавливается самим фактом двухлетнего ретроспективного рассказа. Убедительность такого рассказа возрастает прежде всего там, где он подтверждается жизнью под светом, церковной подотчётностью, наблюдаемым плодом и суждением тех, кто действительно видит эту жизнь вблизи.
-
-### Guardrails
-
-- Не вводить искусственный библейский waiting period.
-- Не утверждать, что десятилетия прежнего служения требуют сопоставимых десятилетий молчания.
-- Не утверждать, что публикация книги сама по себе запрещена или доказывает восстановление к пасторскому офису.
-- Не утверждать, что внешнее одобрение само по себе доказывает истинность покаяния.
-
----
-
-## Final editorial rule
-
-Эти блоки намеренно ограничены по объёму. V6 должна остаться статьёй о:
-
-- известной истине и фактическом послушании;
-- покаянии, пастырской заботе и подотчётности;
-- возвращении публичного духовного влияния;
-- различии между собственным свидетельством и внешней проверкой.
-
-Она не должна превращаться в биографию «от рождения до 2026 года».
-
-После freeze биографической ветки:
-
-1. зафиксировать final HEAD;
-2. проверить только новую дельту после `4768115996a06397af8fd59547bceee102ed67a8` по Tier A из `70_`;
-3. скорректировать затронутые факты в пяти основных вставках и micro-edit A2, если такая коррекция действительно появилась;
-4. встроить изменения в `64_` одним проходом;
-5. единожды перенумеровать заголовки и устранить повторы на стыках;
-6. выполнить финальный claim/source audit;
-7. выпустить одну каноническую V6 и обновить `CURRENT.md` + `_START_HERE.md`.
-
-До freeze не создавать параллельную «V6-beta» и не плодить новые article drafts.
+This file is now an archival receipt, not an active draft.
