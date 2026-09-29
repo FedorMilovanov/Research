@@ -32,3 +32,7 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 ## Обновление 28.09.2026 — проход 6
 
 Проверка цитат: повторно прочитан чанк 0 Q&A 2012 (`85HV-VcvXQo`) — обмен «the woman Thou hast given me» → «Which outside of your conversion was the greatest blessing God ever gave to you» → «I married up» → «almost unequally yoked» → «It may be 'altogether'» подтверждён дословно (SL-E31 верно). По Энн: новых первичных данных нет — добавлены негативный результат проверки архивов женского служения Christ Fellowship (SL-E43), слабое блог-свидетельство о её женской библейской группе в Далласе (SL-E42, класс C) и ловушка-заглушка ReformedWiki «Anne Lawson». Поиски по Converse College и Campus Crusade безрезультатны; вывод: её собственного рассказа об обращении в открытом доступе нет.
+
+## Обновление 28.09.2026 — проход 7
+
+Найдена живая оригинальная публикация *The Alabama Baptist* от 06.02.2003 (URL в SL-E06): добавлены пик ~9 000 членов в конце 1980-х при Даррелле Робинсоне, «около 5 000» в годы Лоусона, посещаемость ~600 после отставок и 10 новых членов, «более 500 первые восемь недель как Christian fellowship», а также цитата Уитфилда «if he could get the church down to 500, then he thought he could build a church». Плюс связь: Даррелл Робинсон (пастор Dauphin Way 1980-х) — со-пастор Dayspring 1999–2001 (некролог Alabama Baptist, 26.01.2024).
