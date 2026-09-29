@@ -172,6 +172,7 @@ The following remain closed at the level already recorded in `20_` and earlier f
 32. **BCLR 1981–1995:** точные даты пастората и материалы (бюллетени, годовщины, пресса Литл-Рока); учесть, что приходская био 2001 умалчивает BCLR.
 33. **«Truth For Today» (WBHY-840, Мобил, 2001–2003):** архив эфиров/расписаний через `goforth.org/840WBHY/840m-f.htm` и Wayback.
 34. **Shepherds’ Conference ≈1983 («23 года»):** верификация ранних лет; SC2006 GS7 / SC2007 GS8 байты — только внешний канал (см. п. 30).
+35. **H.D. McCarty, «Memories from University Baptist Church» (YouTube `QrQQKsQcK64`, 2016):** транскрипт 29.09.2026 не получен (YouTube блокирует сервис) — повторить другими маршрутами: возможны воспоминания о Лоусоне как колледж-пасторе UBC (1980–81).
 
 ### P2 — archival completeness / passive monitoring
 
