@@ -301,3 +301,13 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлены SL-E131–E132, обновлены SL-E101/E102 и очередь; README и LOG обновлены. Raw PDF/сканы в Git не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` clean; source ledger — 132 уникальных ID `SL-E`, дубликатов нет, каждая новая строка SL-E131–E132 имеет 8 ячеек.
 - **SHA-256 dossier 28_ после прохода 29:** `41b6504a2248ae4896bb5293cddc33aa6f99987839f37d93861309b73e1d31b5`.
+
+
+## Проход 30 (29.09.2026) — ABN-1981: выпуск 02.07
+
+- **Article 1064 (02.07, item 64; SL-E133):** все 9 чанков 0–8 получены/просмотрены. Целевой Steve/Steven Lawson и объявление о преемнике Jesse S. Reed не выявлены. Randy M. Cash назван новым Director of Language Missions Arkansas Baptist State Convention, избранным Executive Board и приступившим к должности 01.06; это не директор евангелизации. Bill Fleming только вошёл в поле евангелизации, без штатного назначения.
+- **Ловушки:** `Steve Harbour` и `Steven Sowell` в выпуске — другие люди; `Hatfield, First` в таблице ежегодных ассоциативных встреч — церковь/место, не Lawson Hatfield (SL-E101 не расширяется).
+- **Дальше:** ближайший номер — 16.07 (article 1065/item 63). Ранее был прочитан только chunk 1 (SL-E102); получить остальные доступные чанки, снова проверить целевого Lawson и кадровые сообщения.
+- **Файлы:** `28_` — добавлен SL-E133 и обновлена очередь; README и LOG обновлены. Raw PDF/сканы в Git не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` clean; source ledger — 133 уникальных ID `SL-E`, дубликатов нет, новая строка SL-E133 имеет 8 ячеек.
+- **SHA-256 dossier 28_ после прохода 30:** `ebba0a50799ffb83f75a6b4bf5ad784e23b91020ac3fecf6080aa14228a2ca58`.
