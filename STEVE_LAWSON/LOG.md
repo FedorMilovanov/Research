@@ -434,3 +434,13 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E144, обновлены SL-E102, задача 21 и статус охвата; README и LOG обновлены. Реестр ожидаемо содержит 144 уникальных ID `SL-E`. Raw PDF/сканы не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; реестр — 144 уникальных `SL-E` ID без дублей, SL-E144 — 8 ячеек; SHA сверён с LOG.
 - **SHA-256 dossier 28_ после прохода 41:** `556b886e38c3e74d2049aa6a93c71a99101df30f638bb60d19fb1a8e17074acd`.
+
+
+## Проход 42 (29.09.2026) — ABN-1981: полный доступный текст 01.10
+
+- **Article 1076 (01.10, item 52; SL-E145):** получены и просмотрены все 10 текстовых чанков (0–9); chunk 9 сообщает `hasMore=false`. Steve/Steven Lawson и Lawson Hatfield не выявлены.
+- В `Your state convention at work → Evangelism` продолжается `Organizing the association`, серия материалов Clarence Shell о подготовке к simultaneous revivals; Shell подписан `director`. Текст распределяет associational steering committee роли и указывает на руководство в State Evangelism Department; заключительная часть III обещана далее. Это подтверждает роль и работу Shell, не новое решение о преемнике.
+- **Покрытие:** 39 из 50 выпусков — непрерывно 01.01–01.10 (38) и 24.12 отдельно; остаются 11. Следующий по хронологии — 08.10.1981 (article 1077/item 51). Преемник Reed установлен в SL-E141; сплошной проход по целевому Lawson остаётся открытым.
+- **Файлы:** `28_` — добавлен SL-E145, обновлены SL-E102, задача 21 и статус охвата; README и LOG обновлены. Реестр ожидаемо содержит 145 уникальных ID `SL-E`. Raw PDF/сканы не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; реестр — 145 уникальных `SL-E` ID без дублей, SL-E145 — 8 ячеек; SHA сверён с LOG.
+- **SHA-256 dossier 28_ после прохода 42:** `a1254bcb0fbf9dada6812661b962da4ca42f51c41ce0a5a47f183bf4b5b80947`.
