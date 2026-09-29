@@ -1,113 +1,192 @@
 # Steven J. Lawson — CURRENT
 
 **Snapshot:** 2026-09-30  
-**Corpus:** `LAWSON-2024-2026` + live early-biography lane  
-**Status:** `PUBLIC-WEB RESEARCH SATURATED / ARTICLE V5 BUILT / BIOGRAPHY LANE LIVE AND NOT YET MERGED / CORE THESIS STABLE`
+**Corpus:** `LAWSON-2024-2026` + frozen early-biography public-web phase  
+**Status:** `PUBLIC-WEB RESEARCH SATURATED / BIOGRAPHY PASS 37 PRACTICALLY FROZEN FOR V6 / CORE THESIS STABLE / FINAL ARTICLE INTEGRATION NEXT`
 
 ## Start here
 
-Do **not** resume from the old 2026-09-28 queue or article v4 alone.
+Do **not** resume from the old 2026-09-28 queue, article v4, or the old biography pass-21 HEAD.
 
 Canonical current stack:
 
-1. **Research verdict:** `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`
-2. **Editorial migration logic:** `63_ARTICLE_RU_V5_REVISION_BLUEPRINT_2026-09-29.md`
-3. **Current Russian article:** `64_ARTICLE_RU_REFINED_V5_2026-09-29.md`
-4. **Book P1 closure:** `65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md`
-5. **OnePassion-president P1 update:** `66_TOM_GIBSON_PRESIDENT_CANDIDATE_STRENGTHENED_AND_RESTORATION_SERMON_AUDIT_2026-09-29.md`
-6. **Anne/marital-status P1 closure:** `67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md`
-7. **Biography integration bridge:** `68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md`
+1. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
+2. `64_ARTICLE_RU_REFINED_V5_2026-09-29.md` — current full Russian article before V6 integration.
+3. `65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md` — physical-page/acknowledgments P1 status.
+4. `66_TOM_GIBSON_PRESIDENT_CANDIDATE_STRENGTHENED_AND_RESTORATION_SERMON_AUDIT_2026-09-29.md` — OnePassion successor candidate.
+5. `67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md` — Anne/marital-status guardrail.
+6. `68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md` — canonical main-branch projection of the frozen biography lane.
+7. `69_ARTICLE_RU_V6_BIOGRAPHY_INTEGRATION_PLAN_2026-09-30.md` — V6 edit map.
+8. `70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md` — pass-37 triage and practical-freeze decision.
+9. `71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md` — consistency audit.
+10. `72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md` — false-current Trinity-page guardrail.
+11. `73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md` — publication-ready insertion staging.
+12. `_START_HERE.md` — canonical handoff/navigation.
 
-`17_ARTICLE_RU_REFINED_V4_2026-09-28.md` is retained only as editorial history/prose source and is superseded by `64_`.
+`17_ARTICLE_RU_REFINED_V4_2026-09-28.md` is editorial history only.
 
-## Live biography branch — do not merge yet
+---
 
-Active branch:
+## Biography lane — V6 dependency closed
+
+The old observed branch was:
 
 - `arena/01a0ea6e-research`
-- last observed HEAD: `4768115996a06397af8fd59547bceee102ed67a8`
-- latest observed pass: **21**
-- main/branch comparison at integration snapshot: branch `ahead 29 / behind 65`, merge base `8c21307eff34f184759011c29f692b202080ac13`.
+- `4768115996a06397af8fd59547bceee102ed67a8`
+- pass 21.
 
-The branch is a separate evidence-led lane for Lawson's early life, marriage/family context, education, early pastorates, Billy Graham crusade material, Dauphin Way 2003, and archival negatives/corrections.
+The work actually continued under:
 
-**Do not blind-merge it while active.** It contains stale versions of shared README/queue files and is far behind current main. Use its already-supported A/B-class findings as research input; after the agent finishes, freeze HEAD, compare against then-current main, and replay/reconcile biography-specific files plus manifest evidence once.
+- `arena/01a0ee73-research`
+- `58a008b59834200f3f5474c52f9d98c0dad5e515`
+- pass 37.
+
+GitHub comparison establishes that `58a008b...` is a direct 21-commit continuation of `4768115...` (`ahead 21 / behind 0`).
+
+### Passes 22–37 classification
+
+The continuation is dominated by:
+
+- Texas Tech roster/archive checks;
+- large issue-by-issue *Arkansas Baptist Newsmagazine* 1981 sweep;
+- namesake/false-hit controls;
+- a direct ABSC answer to the Clarence Shell/Jesse Reed side question;
+- an important archive-quality finding that the cataloged 8 October 1981 object points to an internally 1 October issue and therefore cannot be counted as a valid negative search.
+
+It produces **no Tier-A correction** to the article.
+
+`70_` therefore records:
+
+> **PRACTICAL FREEZE FOR V6 = YES at `58a008b...` / pass 37.**
+
+The full branch dossier remains preserved at that immutable ref. It is intentionally not copied verbatim into main because its fork-era view of later main evidence is partly stale. `68_` is the cleaned canonical projection.
+
+If later arena commits appear, treat them as future biography work. Reopen V6 only for a genuine Tier-A correction under `70_`.
+
+---
 
 ## Current integrated conclusion
 
-The central evidentiary result remains:
+The central evidentiary result is now sharper than V5:
 
-> Lawson's pre-fall ministry already contained most of the theological categories that his 2026 book reportedly uses to diagnose his fall. The strongest critique is therefore not lack of doctrine but the gap between doctrine/warning and lived obedience.
+> Lawson's pre-fall ministry already contained most of the theological categories that his 2026 book reportedly uses to diagnose his fall. The strongest critique is therefore not lack of doctrine but the gap between known warning and lived obedience.
+
+For root 1, the archive goes beyond generic old teaching:
+
+> In the July 28, 2020 Ask Ligonier event, Lawson publicly said he should have prayed more, had been excessively driven in work, and should have taken more vacation and rest. Thus at least part of the later workaholism diagnosis had already reached his own self-assessment before the public collapse.
+
+For root 6, the pre-fall baseline is also broader:
+
+> Lawson's 2013 marriage teaching presented a wise wife's strengths as worthy of a husband's trust and as capable of complementing his weaknesses. In 2020 he applied unusually high spiritual praise to Anne personally, valued her feedback and acknowledged his need to become a better husband. The later reported counseling-refusal episode therefore cannot be explained simply by absence of the category of wise marital correction.
 
 The biography lane adds a methodological conclusion:
 
-> Lawson's first-person retrospective accounts should be treated as real primary testimony but externally calibrated wherever contemporary records exist. Earlier biography already gives examples where later simplified numbers or narratives require qualification rather than automatic acceptance or dismissal.
+> Lawson's first-person retrospective accounts are real primary testimony about what he now says/remembers/interprets, but external historical facts should be calibrated against contemporary records where possible.
 
 Post-fall:
 
-> A real counseling/pastoral/accountability process existed. The public evidence does not support saying Lawson simply self-restored in isolation. But the exact personnel, ecclesial jurisdiction and especially the finished-book public-output approval chain remain incompletely disclosed.
+> A real counseling/pastoral/accountability process existed. The evidence does not support saying Lawson simply self-restored in isolation. But exact personnel, ecclesial jurisdiction, current marital outcome and especially the finished-book public-output approval chain remain incompletely disclosed.
 
-The strongest governance question is still:
+The strongest governance question remains:
 
-> In January 2025 Clint Archer publicly described release of a contemplated Lawson interview as requiring agreement from family, counselors, OnePassion board and TBC elders. By September 2026 a full first-person theological book had been published, but the public record does not identify an equivalent finished-manuscript approval/review chain. This is a transparency finding, not proof of defiance.
+> In January 2025 Clint Archer publicly described release of a contemplated Lawson interview as requiring agreement from family, counselors, OnePassion board and TBC elders. By September 2026 a full first-person theological book had been published, but the public record does not identify an equivalent finished-manuscript approval/review chain. This is a transparency finding, not proof of defiance or bypass.
+
+---
 
 ## Three-layer article logic
 
-The combined corpus now works best in three layers:
+### 1. Formation and public identity
 
-1. **Formation and public identity** — marriage and family context, long pastorates, Reformed/expository identity, institutional and conference network, major church conflicts, decades of public credibility.
-2. **Self-warning before the fall** — private godliness, conscience, self-deception, vulnerability to temptation, grace/restoration and responsibility toward Anne were already present in Lawson's own teaching.
-3. **Post-fall care and renewed public voice** — real counseling/shepherding existed, but roles/jurisdiction remain distributed and the public-output gate for the 2026 book is not transparently documented.
+- marriage and family context from April 1981;
+- long pastorates and institutional/conference network;
+- Reformed/expository public identity;
+- Dauphin Way as a complex historical conflict rather than a one-line persecution story;
+- public continuity through March 2024.
 
-This yields the article's clearest question:
+### 2. Self-warning before the fall
 
-> **When theological knowledge was not the missing element, and when the scandal itself was a prolonged disparity between public teaching and private life, renewed public spiritual credibility cannot logically be established by theological fluency or autobiographical eloquence alone. It requires observable fruit and meaningful external judgment.**
+Lawson had already publicly articulated:
 
-## Biography findings already strong enough to inform editing
+- private godliness before public ministry;
+- conscience as alarm/brakes/stop signs;
+- self-deception beneath correct doctrine and ministry proximity;
+- vulnerability around success/fatigue/isolation (Jeffress attribution);
+- grace, mercy, peacemaking and restoration;
+- trust in a wise wife and Anne's spiritual value;
+- by July 2020, a partial self-diagnosis of prayer/work/rest imbalance.
 
-The live lane currently supports, with its own evidence-class/hold system:
+### 3. Post-fall care and renewed public voice
 
-- contemporary April 1981 press documenting Lawson's marriage to Anne Crowell;
-- Anne described there as a Converse College political-science graduate working with **Campus Crusade for Christ**;
-- Lawson described then as minister at University Baptist Church, Fayetteville, with Texas Tech/DTS education;
-- a long early-ministry arc through Arkansas, Dauphin Way and Christ Fellowship;
-- contemporaneous 2003 material showing the Dauphin Way exit was a major congregational conflict with an organized petition and resignation, not safely reducible to the slogan `expelled solely for Calvinism`;
-- contemporaneous 1989 Billy Graham crusade records that do not literally reproduce all figures in Lawson's later recollection (`2,100+ certified counselors` in the pre-crusade contemporary report versus later `3,000`; `35,000+` average attendance versus later reference to a `50,000` crowd), requiring category/date/peak-vs-average caution rather than an accusation of lying;
-- Shepherds' Conference archival continuity through March 2024.
+- real counseling/shepherding/accountability existed;
+- no verified return to pastor/elder office is established;
+- current marital outcome remains unresolved publicly;
+- role/jurisdiction map remains distributed;
+- the 2026 memoir is an author-controlled first-person public return;
+- no comparably transparent finished-book approval gate is publicly documented.
 
-These findings should humanize and calibrate the article, not turn it into an exhaustive biography.
+This yields the clearest V6 question:
+
+> **When theological knowledge was not the missing element, and when the scandal itself was a prolonged disparity between public teaching and private life, renewed public spiritual credibility cannot logically be established by theological fluency or autobiographical eloquence alone. It requires durable observable fruit and meaningful external judgment.**
+
+---
+
+## Biography findings approved for V6
+
+Use briefly:
+
+- April 1981 marriage to Anne Crowell;
+- Anne as Converse College political-science graduate working with Campus Crusade for Christ;
+- Lawson then identified as a minister at University Baptist Church, Fayetteville;
+- long public ministry arc;
+- Dauphin Way 2003 contemporary complexity;
+- 1989 crusade numerical categories only as a memoir-calibration example, with explicit denominator/peak-vs-average guardrail;
+- Shepherds' Conference continuity through March 2024.
+
+Do **not** load V6 with:
+
+- exhaustive childhood material;
+- unverified football/sportswriter claims;
+- every 1981 periodical negative;
+- children/private-family details;
+- archive dead ends.
+
+---
 
 ## Stable post-2024 findings
 
 - Trinity's Dec. 2024 record strongly supports that Steve and Anne completed the formal TBC membership process.
-- Jan. 2025 SVC care was real: two professional counselors + elder care (Bachmann); a few experienced counseling men (Archer); broader male fellowship/prayer circle (Protestia).
-- Mar. 12, 2025 Lawson: two pastors + local elders + accountability team.
-- These role sets may overlap but are **not publicly identified as identical**.
+- Jan. 2025 SVC care was real: two professional counselors + elder care (Bachmann); a few experienced counseling men (Archer); broader male fellowship/prayer circle (secondary reporting).
+- Mar. 12, 2025 Lawson publicly described two pastors + local elders + an accountability team.
+- These role sets may overlap but are not publicly identified as identical.
 - Jim Bachmann is a confirmed direct member of Lawson's SVC pastoral-counseling circle.
-- King Counts is a strong counselor-profile candidate (SVC pastor + LMFT in the correct period) but no direct Lawson counseling link has been acquired.
-- Terry Warren was Clerk of SVC Elder Council / elder Class of 2025 before the scandal; the dedication to Beverly & Terry Warren personally links the book to Lawson's Nashville/SVC support environment, but does not prove counseling/review/approval.
-- No public TBC→SVC membership transfer/release has been located through the research snapshot.
-- OnePassion's public ministry operation effectively stopped after Sept. 2024, but the entity/governance continued and OnePassion remained relevant to Lawson's accountability/public-output gate.
-- A post-Lawson OnePassion president existed according to Clint Archer. Tom/Thomas Gibson is the dominant public candidate, but no direct `Gibson = President` title object has been acquired.
-- Book copyright page: Copyright © 2026 Steven Lawson; Published by But God Press; cover design and layout Caleb Faires; print ISBN `979-8-9961673-0-2`; ebook ISBN `979-8-9961673-1-9`.
-- ISBN block is a tiny 10-number U.S. registrant block. Amazon currently says Publisher: Steven Lawson while the book/distribution feeds say But God Press. Strongly consistent with an author-controlled micro-imprint structure; legal registrant/owner unresolved.
-- Global Register/Bowker route is known but registry lookup was blocked/unavailable in the current tooling state; registrant remains unresolved, not guessed.
-- Goodreads exposes the six-root structure in reader transcription; exact root-cause pages remain a physical-page acquisition target.
+- King Counts is a strong counselor-profile candidate but no direct Lawson counseling link is acquired.
+- Terry Warren was an SVC elder/governance figure and is personally linked to the book dedication/support environment, but this does not prove counseling, accountability-team membership, manuscript review or approval.
+- No public TBC→SVC membership transfer/release object is acquired.
+- OnePassion's public ministry operation effectively stopped after Sept. 2024 while entity/governance continuity remained relevant.
+- A post-Lawson OnePassion president existed according to Clint Archer. Tom/Thomas Gibson remains the dominant public candidate but is not directly proven by title object.
+- Copyright page: Copyright © 2026 Steven Lawson; Published by But God Press; cover design/layout Caleb Faires; print ISBN `979-8-9961673-0-2`; ebook ISBN `979-8-9961673-1-9`.
+- The tiny ISBN block and retail metadata remain strongly consistent with an author-controlled micro-imprint structure; legal registrant/owner remains unresolved.
+- Goodreads exposes the six-root structure in reader transcription; exact six-root pages remain a physical-page acquisition target.
 - No public acknowledgments/end matter naming a substantive editor, theological reviewer, counselor, pastor or finished-manuscript approver has been acquired.
-- No direct relevant public statement from Anne Lawson about separation, reconciliation, divorce, repentance or the book has been acquired.
-- Marriage reconciliation not publicly established; divorce not publicly established; current legal marital status unresolved.
-- No verified return to pastor/elder office has been established through the current snapshot.
+- Justin Hoke / CCRMin reports that an unnamed elder involved in Lawson's restoration said church companions encouraged Lawson to **write**. This remains useful direct-contact reporting but does not identify the elder/church and does not establish approval to **publish**. `ENCOURAGED TO WRITE ≠ APPROVED TO PUBLISH`.
+- No direct relevant public statement from Anne about separation, reconciliation, divorce, repentance or the book is acquired.
+- Marriage reconciliation is not publicly established; divorce is not publicly established; current legal marital status is unresolved.
+- No verified return to pastor/elder office is established.
 
-## Six-root evidence matrix
+---
 
-See `42_`, `62_`, `64_`, and `65_`.
+## Six-root evidence matrix — current state
 
-1. **Too busy for God** → pre-fall Lawson repeatedly taught private godliness must precede public ministry. Strong internal contrast.
-2. **Ignoring Scripture/conscience** → 2017 Romans 2 alarm/brakes/stop-sign teaching. Very strong internal contrast.
-3. **Greatest enemy = self / unguarded private life** → 2017 Shepherds unconverted-shepherd warning + self-deception corpus. Very strong category contrast.
-4. **Peacetime / bullet-proof** → early Robert Jeffress attribution to Lawson: vulnerable after success, when tired, alone, waiting. Strong attributed parallel; original Lawson object missing.
-5. **More law than grace / retribution than restoration** → pre-fall Lawson also clearly taught mercy, peace, love and reconciliation. Best reading is practice/public-posture self-diagnosis, not absence of grace theology. Historical social engagement not independently quantified.
-6. **Neglecting wife** → 2020 Ligonier Q&A establishes that Lawson understood Anne's spiritual value/support and admitted need to grow as husband. The 1981 biography lane now adds that Anne was already publicly identified as a Christian ministry worker at the beginning of the marriage.
+See `42_`, `62_`, `64_`, `65_`.
+
+1. **Too busy for God** → old teaching + July 2020 direct self-assessment on prayer/work/vacation/rest. **Very strong internal contrast / partial pre-fall self-diagnosis.**
+2. **Ignoring Scripture/conscience** → 2017 Romans 2 alarm/brakes/stop-sign teaching. **Very strong internal contrast.**
+3. **Greatest enemy = self / unguarded private life** → 2017 Shepherds unconverted-shepherd warning + self-deception corpus. **Very strong category contrast.**
+4. **Peacetime / bullet-proof** → early Jeffress attribution to Lawson: vulnerability after success, when tired, alone, waiting. **Strong attributed parallel; original Lawson object missing.**
+5. **More law than grace / retribution than restoration** → Lawson also clearly taught mercy, peace, love and reconciliation before the fall. **Practice/public-posture self-diagnosis, not absence of grace theology.** Historical X-engagement effect is not independently quantified.
+6. **Neglecting wife** → 2013 wise-wife/trust teaching + 2020 direct Anne Q&A. **Very strong relational contrast.** Counseling-refusal wording remains reviewer/reader-derived until the book page is acquired.
+
+---
 
 ## Do not regress into these claims
 
@@ -122,53 +201,62 @@ Do not state as fact that:
 - Tom Gibson is definitively OnePassion president;
 - Gibson's Mar. 5 sermon was about Lawson;
 - Lawson bypassed his accountability team;
-- TBC/OnePassion/SVC/family opposed the book;
+- TBC/OnePassion/SVC/family opposed or approved the finished book without direct evidence;
 - the book was AI-written;
 - the book was a money grab;
 - the Jan. 2025 Archer interview was definitely recorded and suppressed;
-- all of Lawson's pre-fall ministry was legalistic;
-- exact social-media engagement effect has been independently measured;
-- the 1989 numerical differences prove Lawson deliberately exaggerated;
-- the 2003 Dauphin Way exit was simply a formal expulsion for Calvinism;
-- unresolved sportswriter/football claims from the biography lane are independently verified.
+- all pre-fall Lawson ministry was legalistic;
+- exact historical social-media engagement has been independently measured;
+- 1989 number differences prove deliberate exaggeration;
+- the Dauphin Way exit was simply a formal expulsion for Calvinism;
+- a single 1970 Texas Tech varsity roster disproves the football story;
+- the 1981 Arkansas Baptist sweep is physically exhaustive, especially given the identified 8 October archive mismatch.
 
-## Remaining P1 acquisition
+---
 
-Broad generic Lawson web research is now low-return. Upgrade only on genuinely new primary objects or the completed biography lane:
+## Remaining P1 acquisition — evidence upgrades, not V6 blockers
 
-1. photographed pages containing the six root causes;
+Generic Lawson web searching is now low-return. Upgrade only on genuinely new primary objects:
+
+1. photographed pages containing all six root causes;
 2. acknowledgments/end matter of the physical book;
 3. direct identity of the two professional counselors;
 4. direct identity of the two pastors/accountability-team roster;
-5. name of CCRMin/Justin Hoke's restoration elder source;
-6. Bowker/Global Register registrant for `979-8-9961673` once registry service is available;
-7. direct public Anne Lawson statement, if one appears;
+5. identity of CCRMin/Justin Hoke's restoration-elder source;
+6. Bowker/Global Register registrant for `979-8-9961673` if registry access becomes available;
+7. direct public Anne statement, if one appears;
 8. formal TBC→SVC transfer/release object, if public;
-9. primary post-Lawson OnePassion president/Jan-2025 board record;
+9. direct post-Lawson OnePassion president / Jan-2025 board record;
 10. direct finished-book review/approval statement from an actual restoration stakeholder;
-11. final frozen HEAD of `arena/01a0ea6e-research`, followed by one clean biography reconciliation pass.
+11. original/human-checked July 2020 Ask Ligonier timecodes;
+12. any later biography delta that actually meets Tier A in `70_`.
+
+---
 
 ## Publication state
 
-`64_ARTICLE_RU_REFINED_V5_2026-09-29.md` remains the current full publication draft.
+`64_ARTICLE_RU_REFINED_V5_2026-09-29.md` remains the last complete article version.
 
-The biography lane is not an absolute publication blocker. Its already-supported findings justify a later **V6 editorial revision** adding a concise historical frame and a memoir-calibration principle. Do not repeatedly rewrite the full article while the biography branch is still active; integrate once after the branch freezes unless a genuinely material correction emerges first.
+Biography is **no longer a reason to delay V6**.
+
+Next sequence:
+
+1. execute one V6 from `64_` using `69_` + `73_`;
+2. remove duplicate prose at insertion seams and renumber once;
+3. run final claim/source audit;
+4. update `CURRENT.md` and `_START_HERE.md` to `PUBLICATION_READY_WITH_GUARDRAILS`;
+5. publish.
 
 ## Stop rule
 
-Do not spend more cycles on generic searches that reproduce the same Jan. 2025 reports, Mar. 2025 confession and Sep. 2026 review wave.
+Do not spend more cycles on generic searches reproducing the same Jan. 2025, Mar. 2025 and Sept. 2026 material.
 
-Resume substantive public-web research only when:
+Reopen substantive research only when:
 
 - a new primary/public document appears;
-- a blocked registry becomes available;
-- physical book pages are supplied/acquired lawfully;
+- physical book pages are lawfully supplied/acquired;
 - an identified restoration participant speaks on record;
-- a new filing/official church/ministry record changes an unresolved governance question.
+- a registry/filing/official church or ministry record resolves a current P1;
+- a future biography commit contains a genuine Tier-A correction.
 
-For now, continue productive work by:
-
-- monitoring the live biography lane without interfering with it;
-- reconciling it when finished;
-- protecting the current evidence hierarchy;
-- preparing one coherent V6 rather than proliferating speculative addenda.
+The current task is now **editorial completion**, not open-ended research.
