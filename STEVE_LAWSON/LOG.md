@@ -78,3 +78,16 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - Файлы: `28_` — SL-E60/SL-E61/SL-E62, новый §9, правки §1 (арминианская церковь), §4 (цифры 2003), §6 (ловушка 1a), §7 (три цитаты), хронология (1960-е), задачи 19–21; `19_` — пункты 36–37.
 
 Итог по линии: чтение Q&A 2012 закрыто полностью; из «открытых тумблеров» остались только те, что требуют внешнего канала (газеты Флориды 1981, TTU-архив, BGEA-архив, RTS-диссертация).
+
+## Обновление 29.09.2026 — проход 11 (архивные адреса BGEA/1989, page-state CFL, SermonAudio, негативы)
+
+Получено и внесено:
+- **SL-E64 — главное: найдены конкретные архивные адреса.** Wheaton College, Evangelism & Missions Archives, **CN 074**: «Folders 8-2 and 8-3 contain scrapbooks of clippings from the **1989 Arkansas Crusade**, including stories about Governor Bill Clinton and W.O. Vaught» — два скрапбука современной прессы о красаде в Литл-Роке (чтение в читальном зале). **Billy Graham Archive & Research Center** (Charlotte), Finding Aid PDF: **CN 6** «BGEA Crusades» (sample books / executive committees / follow-up / School of Evangelism), **CN 24** (Schools of Evangelism Office), **CN 25** (Telephone Counseling Ministry), **CN 35** (Oral History Project, 1 500+ интервью). Запись в BGARC — минимум за 14 дней.
+- **SL-E65 — контекст красада:** W.O. Vaught (Immanuel Baptist, Литл-Рок, пастор 1945–1983, ум. 25.12.1989); по *Just As I Am* (с. 652) Клинтон в 1989 просил Грэма встретиться с Вогтом, и тот проповедовал им из постели 30–40 минут.
+- **SL-E63 — page-state CFL «Life Story» (уточнение «мертвого» маршрута):** страницы Part 1 (05.02.2024) и Part 2 — «Come to Christ! — …(Part 2)» (12.02.2024) живы; постеры Vimeo на CDN живы (`i.vimeocdn.com/video/1792596948-…` и `1795656674-…`), но **oEmbed обоих → 404** (видео недоступно); YouTube-копия Part 1 (`dyP6ihi8znw`) удалена; Buzzsprout-фид `1373881` — «0 episodes». Новые локаторы: Spotify `7yj8FPOYR7xdlkfrBHAcLd`, Apple `id1740627064`, YouTube-плейлист `PLmQNE6P9JaK75u9v3eW5Ys9NtzZw1wibK`.
+- **SL-E66 — негативный результат:** машинный транскрипт воспоминаний H.D. McCarty (`QrQQKsQcK64`, 04.10.2016) получен; **Лоусон не упомянут**; контекст: при Маккарти UBC вырос с «одной из самых маленьких церквей города» до «самой большой церкви города» (транскрипт искажён, оговорка внесена).
+- **SL-E67 — SermonAudio:** страница говорящего `speakers/15262`; серия `77170` («Lawson», 129 проповедей, 2009–2019); серия `144832` («The Bible Study», 208 записей 2023–2024); источник «OnePassion Ministries» — 148 записей по Марку с датами **2006 года**; **«Testimony & Call to Ministry»** (SermonAudio Classics, Foundations Conference, 13.12.2023, ≈20 мин) — компактное собственное свидетельство о призвании.
+- **Негативы:** `archives.wheaton.edu` (поиск/описи) — Cloudflare Turnstile (Human Check); старые справочники `www2.wheaton.edu/bgc/archives/GUIDES/*` — 404; Vimeo oEmbed обоих постеров — 404.
+- Файлы: `28_` — SL-E63…SL-E67, §10, задачи 22–25; `19_` — пункты 38–40; манифест — наблюдение 25.
+
+Смысл прохода: вопрос «его роль в красаде 1989» переведён из разряда «нет источников» в «источники есть, но на бумаге и по записи в архив».

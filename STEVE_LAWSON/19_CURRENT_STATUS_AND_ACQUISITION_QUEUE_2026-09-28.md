@@ -175,6 +175,9 @@ The following remain closed at the level already recorded in `20_` and earlier f
 35. **H.D. McCarty, «Memories from University Baptist Church» (YouTube `QrQQKsQcK64`, 2016):** транскрипт 29.09.2026 не получен (YouTube блокирует сервис) — повторить другими маршрутами: возможны воспоминания о Лоусоне как колледж-пасторе UBC (1980–81).
 36. **Texas Tech (ежегодник *La Ventana*, студенческая пресса):** с этого хоста маршруты закрыты — Portal to Texas History отдаёт Altcha-капчу, Google Books API с квотой 0, на IA ежегодников TTU нет, Elephind Флориду 1981 не покрывает. Внешний канал: Texas Tech Libraries / Southwest Collection.
 37. **Флорида-1981 (газета свадьбы):** *Tampa Tribune*/*St. Petersburg Times* — платные архивы; Elephind не покрывает. Держать как `LOCATOR_HOLD`.
+38. **АРХИВЫ (внешний канал, приоритет A):** (1) Wheaton College, Evangelism & Missions Archives, **CN 074, папки 8-2/8-3** — «scrapbooks of clippings from the 1989 Arkansas Crusade» (Clinton, W.O. Vaught); (2) **Billy Graham Archive & Research Center** (Charlotte) — **CN 6** (BGEA Crusades: executive committees, follow-up, School of Evangelism), **CN 24** (Schools of Evangelism), **CN 25** (Telephone Counseling), **CN 35** (Oral History, 1 500+ интервью); опись — PDF `s3.theark.cloud/…/BillyGrahamArchiveAndResearchCenter-FindingAid.pdf`. Запись в BGARC — минимум за 14 дней.
+39. **SermonAudio:** «**Testimony & Call to Ministry**» (13.12.2023, ≈20 мин) и источник «OnePassion Ministries» с датами 2006 года (Мобил); серии `77170`, `144832`; страница говорящего `speakers/15262`.
+40. **CFL «Life Story» (SL-E63):** видео публично недоступно (Vimeo oEmbed 404; YouTube-копия удалена; Buzzsprout-фид пуст); новые локаторы — Spotify `7yj8FPOYR7xdlkfrBHAcLd`, Apple `id1740627064`, YouTube-плейлист `PLmQNE6P9JaK75u9v3eW5Ys9NtzZw1wibK`. Искать байты только через внешний канал/запрос к CFL.
 
 ### P2 — archival completeness / passive monitoring
 
