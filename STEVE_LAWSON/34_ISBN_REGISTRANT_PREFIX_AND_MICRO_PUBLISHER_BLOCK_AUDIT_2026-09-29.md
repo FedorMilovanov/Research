@@ -1,11 +1,11 @@
 # Steven J. Lawson — ISBN registrant prefix / micro-publisher block audit
 
 **Snapshot:** 2026-09-29  
-**Status:** `OFFICIAL ISBN STRUCTURE VERIFIED / U.S. REGISTRANT = 979-8-9961673 / 10-NUMBER CAPACITY / REGISTRANT NAME STILL UNRESOLVED`
+**Status:** `OFFICIAL ISBN STRUCTURE VERIFIED / U.S. REGISTRANT = 979-8-9961673 / 10-NUMBER CAPACITY / PRINT + EBOOK SLOTS 0–1 PRIMARY-CONFIRMED / REGISTRANT NAME STILL UNRESOLVED`
 
 ## 1. Executive finding
 
-The ISBN printed across the public retail record for *Mercy in the Wilderness* is:
+The print ISBN for *Mercy in the Wilderness* is:
 
 - `9798996167302`
 
@@ -21,15 +21,21 @@ where:
 - `0` = one-digit publication element;
 - `2` = check digit.
 
-The result is important because the International ISBN standard explicitly ties registrant-element length to anticipated publisher output: **larger publishers receive shorter registrant elements; smaller-output publishers receive longer ones.**
+The International ISBN standard explicitly ties registrant-element length to anticipated publisher output: **larger publishers receive shorter registrant elements; smaller-output publishers receive longer ones.**
 
-A seven-digit U.S. registrant element is therefore at the smallest-output end of the ISBN allocation structure.
+A seven-digit U.S. registrant element is therefore at the smallest-output end of the ISBN allocation structure. Because only one digit remains for the publication element, this particular registrant prefix can structurally identify **10 publication numbers: 0–9**.
 
-Because only one digit remains for the publication element, this particular registrant prefix can structurally identify **10 publication numbers: 0–9**.
+A later-acquired photograph of the book's copyright page now confirms that the first two slots are actually assigned:
 
-That is highly consistent with a very small independent/self-publisher allocation rather than the prefix architecture of a high-output established publishing house.
+- publication element `0` → print ISBN `979-8-9961673-0-2`;
+- publication element `1` → ebook ISBN `979-8-9961673-1-9`.
 
-It does **not** by itself reveal whether the registrant's legal/publisher-of-record name is `Steven Lawson`, `But God Press`, or another entity.
+Primary-object audit:
+- `35_BOOK_COPYRIGHT_PAGE_PRIMARY_OBJECT_2026-09-29.md`
+
+Thus this is not merely a theoretical prefix decomposition: the physical book itself uses the prefix consistently across two format-specific ISBNs.
+
+It still does **not** by itself reveal whether the registrant's legal/publisher-of-record name is `Steven Lawson`, `But God Press`, or another entity.
 
 ---
 
@@ -59,7 +65,7 @@ Therefore the seven-digit registrant boundary is not guessed from typography or 
 
 ## 3. Formal parse
 
-Raw ISBN:
+Raw print ISBN:
 
 `9798996167302`
 
@@ -89,19 +95,30 @@ Full publisher prefix / first three ISBN components:
 
 > **`979-8-9961673`**
 
-### Publication element
+### Print publication element
 
 After `979` + `8` + seven-digit registrant, one digit remains before the final check digit:
 
 > Publication element = `0`
 
-### Check digit
+### Print check digit
 
 > `2`
 
-### Result
+### Print result
 
 > **ISBN 979-8996167302 = 979-8-9961673-0-2**
+
+### Ebook result — primary object
+
+The book's own copyright page states:
+
+> **Ebook ISBN: 979-8-9961673-1-9**
+
+Direct photographed object:
+- https://pbs.twimg.com/media/HSs94M9XkAAocYE?format=png&name=small
+
+This independently validates the registrant boundary: the same prefix `979-8-9961673` is followed by publication element `1` and its proper check digit `9` for a second format.
 
 ---
 
@@ -145,14 +162,14 @@ An ISBN-13 contains exactly 13 digits:
 - variable publication element;
 - 1-digit check digit.
 
-For this ISBN:
+For this prefix:
 
 - prefix = 3 digits (`979`)
 - group = 1 digit (`8`)
 - registrant = 7 digits (`9961673`)
-- check digit = 1 digit (`2`)
+- check digit = 1 digit
 
-That consumes 12 of 13 positions, leaving exactly **one digit** for the publication element.
+That leaves exactly **one digit** for the publication element.
 
 A one-digit decimal publication element has ten possible values:
 
@@ -160,7 +177,7 @@ A one-digit decimal publication element has ten possible values:
 
 Thus the publisher prefix `979-8-9961673` structurally supports **10 ISBN publication identifiers**.
 
-This follows directly from the official ISBN structure and the official current range boundary.
+The first two are now primary-object confirmed as print (`0`) and ebook (`1`). Slots `2–9` remain unverified and must not be described as assigned or unused merely from web-search silence.
 
 ## 6. Bowker independently confirms the small-block model
 
@@ -191,41 +208,52 @@ This independently fits the mathematical result above: `979-8-9961673` behaves a
 
 ### Guardrail
 
-The presence of a 10-number block does not prove Lawson purchased it personally or when it was acquired. It proves only the scale and structure of the registrant allocation.
+The presence of a 10-number block does not prove Lawson purchased it personally or when it was acquired. It proves the scale and structure of the registrant allocation. The copyright page proves two format ISBNs were assigned under it, not that all ten slots have been or will be used.
 
 ---
 
-## 7. Why this matters for `But God Press` vs. `Steven Lawson`
+## 7. Primary copyright page changes the evidentiary model
 
-The prior publishing-chain audit established a metadata split for exactly the same ISBN:
+The acquired copyright page says:
+
+- Copyright © 2026 by **Steven Lawson**;
+- **Published by But God Press, 2026**;
+- Cover design and layout by **Caleb Faires**;
+- Print ISBN `979-8-9961673-0-2`;
+- Ebook ISBN `979-8-9961673-1-9`.
+
+Primary-object audit:
+- `35_BOOK_COPYRIGHT_PAGE_PRIMARY_OBJECT_2026-09-29.md`
+
+This proves `But God Press` is not merely a downstream retailer-data artifact: it is the publisher/imprint name printed inside the work.
+
+It also proves Steven Lawson is the named copyright holder.
+
+What it still does **not** prove is who Bowker identifies as the publisher-of-record for the prefix or who legally owns/operates the `But God Press` name.
+
+---
+
+## 8. Why this matters for `But God Press` vs. `Steven Lawson`
+
+The evidence stack now has three distinct layers:
+
+### Primary book object
+- Copyright holder: **Steven Lawson**
+- Published by: **But God Press**
 
 ### Amazon current state
-
-Current Amazon product details say:
-
-> Publisher: **Steven Lawson**
+- Publisher: **Steven Lawson**
 
 ### Broad independent distribution feeds
-
-Multiple retailers/catalogs say:
-
-> Publisher: **But God Press**
+- Publisher: **But God Press**
 
 ### ISBN structure
+- a U.S. registrant with only a **10-number block**;
+- at least two format-specific numbers already assigned inside the book.
 
-The prefix now independently shows:
+These facts align naturally with an author-controlled micro-imprint/self-publisher model.
 
-> a U.S. registrant with only a **10-number block**.
-
-These three facts align naturally with an author-controlled micro-imprint/self-publisher model:
-
-1. very small U.S. ISBN allocation;
-2. author shown directly as publisher on Amazon;
-3. a one-title public imprint shown in downstream distribution feeds.
-
-This is much more consistent with a micro-publisher or author-created imprint than with a traditional high-output Christian publishing house.
-
-But it still does not answer the final legal/bibliographic identity question:
+But they still do not answer the final bibliographic identity question:
 
 > **Who does Bowker / the Global Register actually name as registrant for `979-8-9961673`?**
 
@@ -233,7 +261,7 @@ That remains the key missing primary object.
 
 ---
 
-## 8. Global Register of Publishers: the exact lookup we still need
+## 9. Global Register of Publishers: the exact lookup we still need
 
 The International ISBN Agency's Global Register of Publishers says anyone can perform simple searches by:
 
@@ -241,37 +269,34 @@ The International ISBN Agency's Global Register of Publishers says anyone can pe
 - complete ISBN;
 - publisher name.
 
-It explicitly notes that some small publishers may receive single ISBNs rather than full blocks.
-
 Official search guidance:
 - https://grp.isbn-international.org/node/357
 
-The target queries are therefore:
+The target queries are:
 
-- complete ISBN: `9798996167302`
+- complete print ISBN: `9798996167302`
+- complete ebook ISBN: `9798996167319`
 - prefix: `979-8-9961673`
 - publisher: `But God Press`
 - publisher: `Steven Lawson`
 
-At the time of this audit the GRP endpoint was not reliably returning an actionable result through the available noninteractive retrieval paths, and the interactive browser route was unavailable because the connected browser-automation wallet had no balance.
+At the time of this audit the GRP endpoint was returning HTTP 503 through available noninteractive retrieval paths, and the connected interactive browser automation could not run because its wallet had no balance.
 
 Therefore the **registrant name remains unresolved**, not guessed.
 
-## 9. Publisher-of-record implications
+## 10. Publisher-of-record implications
 
 Bowker says the U.S. ISBN Agency database establishes the publisher of record associated with each prefix.
 
-That makes the eventual GRP/Bowker registrant result highly probative.
-
-Possible outcomes:
+Possible outcomes remain:
 
 ### A. Registrant = Steven Lawson
 
-This would provide direct publisher-of-record support for the current Amazon field and strongly indicate `But God Press` is an imprint/label under Lawson's publisher identity.
+This would directly support the current Amazon field and strongly indicate `But God Press` is an imprint/label under Lawson's publisher identity.
 
 ### B. Registrant = But God Press
 
-This would establish the imprint itself as Bowker's publisher-of-record name; the remaining question would then be who legally owns or operates it.
+This would establish the imprint itself as Bowker's publisher-of-record name; the remaining question would be who legally owns or operates it.
 
 ### C. Registrant = another person/entity
 
@@ -281,17 +306,39 @@ Until the actual record is acquired, the corpus must not choose among A/B/C.
 
 ---
 
-## 10. Scale conclusion
+## 11. Ebook status: assigned ISBN ≠ demonstrated public release
 
-The allocation architecture itself is now established:
+The copyright page assigns the ebook ISBN `9798996167319`, but targeted current searches do not locate an actual Lawson ebook storefront/catalog object on Kobo, Apple Books, Google Play Books, Barnes & Noble ebook, or ordinary indexed web results.
+
+Sept. 21 reporting likewise observed that only the paperback appeared publicly available at that time.
+
+Source:
+- https://evangelicaldarkweb.org/2026/09/21/steve-lawson-returns-with-new-book/
+
+Therefore the precise status is:
+
+> **EBOOK ISBN ASSIGNED IN PRIMARY BOOK OBJECT / PUBLIC EBOOK RELEASE NOT YET LOCATED.**
+
+Possible explanations — planned edition, delayed edition, withdrawn edition, private metadata, or unindexed distribution — remain hypotheses only.
+
+---
+
+## 12. Scale conclusion
+
+The allocation architecture is established:
 
 > **U.S. registrant prefix `979-8-9961673` / seven-digit registrant / one-digit publication element / ten-number capacity.**
+
+Primary evidence also establishes at least two assigned formats:
+
+- `...0-2` print;
+- `...1-9` ebook.
 
 This is an **ultra-small publisher allocation** in structural terms.
 
 Safe article wording:
 
-> The book's ISBN is not merely a generic retail identifier. Current International ISBN Agency range rules parse it as `979-8-9961673-0-2`: a U.S. publisher prefix with a seven-digit registrant element, leaving only a one-digit publication element. The ISBN standard assigns longer registrant elements to lower-output publishers, and this prefix structurally allows ten publication numbers. That independently supports the picture of a very small/self-publishing-style operation. It does not yet tell us whether Bowker names the registrant as Steven Lawson, But God Press, or another entity.
+> Current International ISBN Agency range rules parse Lawson's print ISBN as `979-8-9961673-0-2`: a U.S. publisher prefix with a seven-digit registrant element, leaving only a one-digit publication element and therefore ten possible publication numbers. The book's own copyright page confirms the next number in that same block as its ebook ISBN. The standard assigns longer registrant elements to lower-output publishers, which independently supports the picture of a very small author-controlled/micro-publisher operation. The unresolved question is whether Bowker names the registrant as Steven Lawson, But God Press, or another entity.
 
 Unsafe:
 
@@ -299,20 +346,21 @@ Unsafe:
 - “But God Press has published exactly ten books.”
 - “Lawson bought ten ISBNs.”
 - “All ten numbers have been used.”
+- “Slots 2–9 are unused.”
 
-None of those follows from the prefix alone.
+None of those follows from the evidence currently acquired.
 
 ---
 
-## 11. Next acquisition targets
+## 13. Next acquisition targets
 
-1. Obtain the Global Register / Bowker publisher record for `9798996167302` or `979-8-9961673`.
-2. Search the other nine possible publication elements under the prefix for assigned/live titles, without assuming every slot is or will be used.
-3. Acquire the physical copyright page, where ISBN.org says ISBN and publisher information are normally printed.
-4. Search U.S. Copyright Office records for the title/author/claimant.
-5. Search Library of Congress / library catalog records for publisher and copyright statement.
+1. Obtain the Global Register / Bowker publisher record for `9798996167302`, `9798996167319`, or prefix `979-8-9961673`.
+2. Search publication elements `2–9` only as discovery leads, with a positive-control catalog before interpreting silence.
+3. Continue U.S. Copyright Office CPRS lookup by title/ISBN/author; a direct API endpoint has now been identified but its JSON body still needs extraction through a compatible client.
+4. Search Library of Congress / library catalog records for publisher/copyright statements.
+5. Determine whether the assigned ebook was ever actually released.
 6. Correlate any registrant name with state DBA/corporate records only after the name is known.
 
 ## Research conclusion
 
-> **THE ISBN ITSELF NOW PROVIDES INDEPENDENT STRUCTURAL EVIDENCE THAT *MERCY IN THE WILDERNESS* COMES FROM A VERY SMALL U.S. PUBLISHER ALLOCATION. CURRENT INTERNATIONAL ISBN RANGE RULES PARSE `9798996167302` AS `979-8-9961673-0-2`: A SEVEN-DIGIT REGISTRANT ELEMENT WITH ONLY A ONE-DIGIT PUBLICATION ELEMENT, I.E. TEN POSSIBLE PUBLICATION IDENTIFIERS IN THAT BLOCK. INTERNATIONAL ISBN GUIDANCE EXPLICITLY STATES THAT LONGER REGISTRANT ELEMENTS CORRESPOND TO LOWER ANTICIPATED PUBLISHER OUTPUT. THIS STRONGLY REINFORCES THE AUTHOR-CONTROLLED/MICRO-PUBLISHER MODEL ALREADY SUGGESTED BY AMAZON'S `PUBLISHER: STEVEN LAWSON` FIELD AND DOWNSTREAM `BUT GOD PRESS` METADATA. THE REGISTRANT'S ACTUAL NAME REMAINS THE CRITICAL UNRESOLVED PRIMARY RECORD.**
+> **THE ISBN AND PRIMARY COPYRIGHT PAGE NOW REINFORCE EACH OTHER. *MERCY IN THE WILDERNESS* USES THE TINY U.S. PUBLISHER PREFIX `979-8-9961673`; ITS PRINT FORMAT OCCUPIES PUBLICATION ELEMENT `0`, AND THE BOOK ITSELF ASSIGNS ELEMENT `1` TO AN EBOOK. THE SAME PRIMARY PAGE NAMES STEVEN LAWSON AS COPYRIGHT HOLDER AND BUT GOD PRESS AS PUBLISHER. THIS STRONGLY SUPPORTS AN AUTHOR-CONTROLLED MICRO-IMPRINT/SELF-PUBLISHING STRUCTURE, WHILE THE BOWKER/GRP REGISTRANT NAME AND LEGAL OWNERSHIP OF THE IMPRINT REMAIN UNRESOLVED.**
