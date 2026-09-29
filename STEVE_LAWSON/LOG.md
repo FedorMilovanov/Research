@@ -424,3 +424,13 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E143, обновлены SL-E101, SL-E102, задача 21 и статус охвата; README и LOG обновлены. Реестр ожидаемо содержит 143 уникальных ID `SL-E`. Raw PDF/сканы не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; реестр — 143 уникальных `SL-E` ID без дублей, SL-E143 — 8 ячеек; SHA сверён с LOG.
 - **SHA-256 dossier 28_ после прохода 40:** `cece69e65b6728256cd9ff74aa7d06ee0bffbdfb2d7110ce6b78d2a2ba7e6dba`.
+
+
+## Проход 41 (29.09.2026) — ABN-1981: полный доступный текст 24.09
+
+- **Article 1075 (24.09, item 53; SL-E144):** получены и просмотрены все 10 текстовых чанков (0–9); chunk 9 сообщает `hasMore=false`. Steve/Steven Lawson и Lawson Hatfield не выявлены.
+- В `Your state convention at work → Evangelism` Clarence Shell подписывает `Organizing the association` как `director`; текст посвящён организации ассоциаций для simultaneous revivals и говорит, что подготовительное руководство доступно в State Evangelism Department. Это подтверждает роль Shell/отдела как источника материалов, но не сообщает новый результат о преемнике (он прямо установлен в SL-E141).
+- **Покрытие:** 38 из 50 выпусков — непрерывно 01.01–24.09 (37) и 24.12 отдельно; остаются 12. Следующий по хронологии — 01.10.1981 (article 1076/item 52). Счёт ловушки «Lawson Hatfield» остаётся пятнадцать отдельных выпусков; в этом номере он не встречается.
+- **Файлы:** `28_` — добавлен SL-E144, обновлены SL-E102, задача 21 и статус охвата; README и LOG обновлены. Реестр ожидаемо содержит 144 уникальных ID `SL-E`. Raw PDF/сканы не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; реестр — 144 уникальных `SL-E` ID без дублей, SL-E144 — 8 ячеек; SHA сверён с LOG.
+- **SHA-256 dossier 28_ после прохода 41:** `556b886e38c3e74d2049aa6a93c71a99101df30f638bb60d19fb1a8e17074acd`.
