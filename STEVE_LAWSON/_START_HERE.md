@@ -2,148 +2,128 @@
 
 **Updated:** 2026-09-30  
 **Canonical operational handoff:** [`CURRENT.md`](CURRENT.md)  
-**State:** `BIOGRAPHY PRACTICALLY FROZEN FOR V6 / CORE THESIS STABLE / FINAL INTEGRATION PHASE`
+**State:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / OPEN-ENDED RESEARCH CLOSED`
 
-> **Do not resume from old README labels, the 2026-09-28 queue, article v4, or the old pass-21 arena HEAD.** The corpus has moved past exploratory research.
+> **Start with `74_` and `75_`. Do not resume from old README labels, V4/V5, the pass-21 arena ref, or the consumed V6 staging file.**
 
-## Current reading order
+## Canonical reading order
 
-1. [`CURRENT.md`](CURRENT.md) — current state and remaining P1 evidence upgrades.
-2. [`62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`](62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md) — stable core conclusion.
-3. [`64_ARTICLE_RU_REFINED_V5_2026-09-29.md`](64_ARTICLE_RU_REFINED_V5_2026-09-29.md) — current full Russian article before final V6 integration.
-4. [`65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md`](65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md) — book-page / acknowledgments evidence status.
-5. [`66_TOM_GIBSON_PRESIDENT_CANDIDATE_STRENGTHENED_AND_RESTORATION_SERMON_AUDIT_2026-09-29.md`](66_TOM_GIBSON_PRESIDENT_CANDIDATE_STRENGTHENED_AND_RESTORATION_SERMON_AUDIT_2026-09-29.md) — OnePassion successor candidate; still not directly proven.
-6. [`67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md`](67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md) — Anne/current marital-status guardrail.
-7. [`68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md`](68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md) — **canonical main-branch projection of the frozen pass-37 biography lane**.
-8. [`69_ARTICLE_RU_V6_BIOGRAPHY_INTEGRATION_PLAN_2026-09-30.md`](69_ARTICLE_RU_V6_BIOGRAPHY_INTEGRATION_PLAN_2026-09-30.md) — one-pass V6 edit map.
-9. [`70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`](70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md) — pass-37 triage and practical-freeze decision.
-10. [`71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`](71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md) — canonical stack consistency audit.
-11. [`72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md`](72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md) — legacy Trinity pages are not current-ministry proof.
-12. [`73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) — polished V6 insertion staging, including recovered 2013 marriage baseline and July-2020 work/rest self-diagnosis.
+1. [`74_ARTICLE_RU_REFINED_V6_2026-09-30.md`](74_ARTICLE_RU_REFINED_V6_2026-09-30.md) — **canonical Russian publication article**.
+2. [`75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md`](75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md) — final claim/source audit: PASS.
+3. [`CURRENT.md`](CURRENT.md) — operational state, remaining P1 upgrades and hard guardrails.
+4. [`62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`](62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md) — stable research verdict.
+5. [`68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md`](68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md) — reconciled canonical projection of early-biography findings.
+6. [`70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`](70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md) — pass-37 freeze/impact audit.
+7. [`71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`](71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md) — pre-V6 stack consistency audit.
+8. [`65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md`](65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md) — six-root / physical-book P1.
+9. [`67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md`](67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md) — Anne/marital-status guardrail.
+10. [`72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md`](72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md) — legacy Trinity page-state guardrail.
 
-## Biography lane — frozen reference for V6
+Editorial history only:
 
-The biography work continued beyond the old handoff under a second arena ref.
+- `64_ARTICLE_RU_REFINED_V5_2026-09-29.md` — superseded by `74_`;
+- `69_ARTICLE_RU_V6_BIOGRAPHY_INTEGRATION_PLAN_2026-09-30.md` — executed plan;
+- `73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md` — consumed staging; incorporated into `74_`.
 
-### Old baseline
+## Final biography reference
 
-- branch: `arena/01a0ea6e-research`
-- HEAD: `4768115996a06397af8fd59547bceee102ed67a8`
-- pass: 21
+The biography lane continued beyond the old pass-21 handoff.
 
-### Actual continuation / frozen V6 reference
+Old ref:
 
-- branch: `arena/01a0ee73-research`
-- HEAD: `58a008b59834200f3f5474c52f9d98c0dad5e515`
-- pass: 37
+- `arena/01a0ea6e-research` @ `4768115996a06397af8fd59547bceee102ed67a8`
+- pass 21.
 
-GitHub comparison establishes that the new HEAD is a **direct continuation** of the old one:
+Frozen V6 reference:
 
-- `ahead_by = 21`;
-- `behind_by = 0`;
-- merge base = old `4768115...` HEAD.
+- `arena/01a0ee73-research` @ `58a008b59834200f3f5474c52f9d98c0dad5e515`
+- pass 37.
 
-The pass-22→37 delta touches only:
+The latter is a direct 21-commit continuation of the former, not a competing branch.
 
-1. `19_CURRENT_STATUS_AND_ACQUISITION_QUEUE_2026-09-28.md`;
-2. `28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md`;
-3. `LOG.md`;
-4. `README.md`.
+`70_` classifies passes 22–37 as:
 
-There is no new custody-manifest change in that delta.
+- Tier-A corrections to V6: **0**;
+- article-changing contradiction: **0**;
+- archival/negative-control improvement: substantial.
 
-### Freeze verdict
+The full early-biography dossier remains preserved at that immutable arena ref. `68_` is its cleaned main-branch projection; do not wholesale-merge the arena branch because its fork-era assessments of later main evidence are partly stale.
 
-`70_` records:
+## What V6 now establishes
 
-> **PRACTICAL FREEZE FOR V6 = YES at `58a008b...` / pass 37.**
+The article's central documented contrast is no longer merely:
 
-Passes 22–37 contain substantial archival-negative work — especially the 1981 *Arkansas Baptist* sweep and Texas Tech roster checks — but no Tier-A correction that changes the V6 article architecture.
+> Lawson knew correct theology but sinned against it.
 
-The complete branch dossier is preserved at the exact arena commit. It is intentionally **not copied verbatim into main**, because its fork-era control statements are partly stale. `68_` is the cleaned canonical projection.
+The stronger, source-bounded conclusion is:
 
-## Reconcile traps
+> **Lawson had already taught nearly all of the relevant warning categories, and by July 2020 had publicly recognized part of the work/prayer/rest problem in himself. The 2026 book therefore reads not simply as discovery of previously unknown principles, but as an account of known warnings and partially recognized danger that did not become sufficient correction.**
 
-### Ask Ligonier 2020
+The biography layer adds:
 
-The arena dossier still contains old language saying the Anne / Ask Ligonier node lacks a verified audit.
+- April 1981 marriage/ministry context;
+- Anne's documented Christian-ministry context at the beginning of the marriage;
+- a more complex contemporary account of Dauphin Way 2003;
+- a concrete demonstration that retrospective autobiography should be calibrated against contemporary records without being dismissed or treated as dishonest by default;
+- the long arc of public spiritual credibility through March 2024.
 
-That is stale.
+Post-fall evidence adds the counterweight:
 
-Current main now has:
+> **Real counseling, pastoral care and accountability existed.**
 
-- [`37_ASK_LIGONIER_2020_ANNE_MARRIAGE_SELF_WITNESS_2026-09-29.md`](37_ASK_LIGONIER_2020_ANNE_MARRIAGE_SELF_WITNESS_2026-09-29.md) — official-event provenance + surviving transcript carrier;
-- [`39_PERSONAL_LIFE_OF_PREACHER_VS_MINISTRY_WORKAHOLISM_SELF_WITNESS_2026-09-29.md`](39_PERSONAL_LIFE_OF_PREACHER_VS_MINISTRY_WORKAHOLISM_SELF_WITNESS_2026-09-29.md) — July 2020 self-assessment: more prayer needed, excessive work drivenness, too little vacation/rest;
-- [`42_SIX_ROOT_CAUSES_PRE_FALL_SELF_WITNESS_EVIDENCE_MATRIX_2026-09-29.md`](42_SIX_ROOT_CAUSES_PRE_FALL_SELF_WITNESS_EVIDENCE_MATRIX_2026-09-29.md) — updated six-root matrix with that self-diagnosis and the 2013 marriage baseline.
+Therefore V6 does **not** portray Lawson as simply self-restoring in isolation.
 
-Rule:
+But the governance question remains:
 
-> **Biography facts move forward; stale fork-era assessments of newer main evidence do not.**
+> **January-2025 interview gatekeeping was publicly described with broad stakeholder agreement; a comparably transparent finished-book review/approval chain is not publicly disclosed for the 2026 book.**
 
-### Pass-37 archival negatives
-
-Do not turn negative issue scans into stronger claims than they support:
-
-- one 1970 Texas Tech varsity roster without Lawson does not disprove a scholarship or freshman/Picadors participation;
-- no Lawson hit in extracted 1981 *Arkansas Baptist* text does not override the contemporary Tampa wedding/ministry notice;
-- archive item 51 is mislabeled/mismatched: catalog says 8 October 1981, but archived file content is the 1 October issue. Do not count it as a negative search of the genuine 8 October issue.
-
-## Historical Lawson branch archaeology
-
-Do not merge these old refs:
-
-- `tmp/lawson-biography-integration-20260930`
-- `tmp/lawson-biography-integration-20260930-2`
-
-Both point to `7b0979c7...`, already an ancestor of main.
-
-Also:
-
-- `lawson-bundle-bootstrap-20260928` is historical ancestry;
-- `lawson-finalize-20260928` is a direct ancestor of current main;
-- `lawson-final-import-20260928` is a divergent technical import-runner branch, not a second canonical evidence line.
-
-Semantic salvage from the old import state is already completed:
-
-- 2022 `Should I Marry Her?` is preserved in current `08_` with audio/hash/transcript locators;
-- old Ask Ligonier material is superseded by `37_` + `39_`;
-- March 2013 `His Heart Trusts in Her` / `The Blessing of an Excellent Wife` has been recovered conservatively into V6 staging and the six-root matrix.
-
-## Core thesis
-
-> Lawson's pre-fall ministry already contained most of the theological categories that his 2026 book uses to diagnose his collapse. The central documented contradiction is therefore not ignorance followed by enlightenment, but known warning and partially recognized danger versus lived obedience. Post-fall, real counseling, pastoral care and accountability existed, so solitary self-restoration is an inaccurate caricature. Yet the finished-book external review/approval chain remains publicly opaque. Because the scandal itself was a prolonged disparity between public theological competence and private life, renewed public spiritual credibility cannot be established by theological fluency or autobiographical eloquence alone. It requires durable observable fruit and meaningful external pastoral judgment.
+This is a transparency finding, not proof of rebellion, bypass or disobedience.
 
 ## Hard guardrails
 
 Do not state as fact that:
 
 - Lawson is unregenerate;
+- MacArthur explicitly called Lawson a moral heretic or false teacher;
 - Lawson is divorced;
-- Anne supports or opposes the book;
+- Anne approved or opposed the book;
 - King Counts counseled Lawson;
-- Terry Warren was on the accountability team or reviewed the manuscript;
+- Terry Warren was on the accountability team or reviewed/approved the manuscript;
 - Tom Gibson is definitively the post-Lawson OnePassion president;
 - Lawson bypassed counselors/elders;
-- TBC/SVC/OnePassion/family approved or opposed the finished book without a direct source;
+- TBC/SVC/OnePassion/family approved or opposed the finished book without direct evidence;
+- the January 2025 interview was definitely recorded and suppressed;
 - the book was AI-written;
 - the book was a money grab;
-- old live Trinity ministry pages prove current teaching ministry;
-- old autobiographical-number differences prove intentional dishonesty;
-- the 1970 Texas Tech roster disproves Lawson's football story;
-- the incomplete/mismatched 1981 archive sweep is exhaustive proof of absence.
+- 1989 number differences prove intentional dishonesty;
+- a single 1970 Texas Tech varsity roster disproves Lawson's football story;
+- the 1981 Arkansas Baptist sweep is physically exhaustive;
+- current-looking legacy Trinity pages prove current Lawson teaching ministry.
 
-## Endgame
+## Remaining P1 — upgrades only
 
-Research expansion is no longer the critical path.
+The article does not wait for these, but new primary objects may improve the corpus:
 
-Remaining sequence:
+1. photographed pages for all six book roots;
+2. physical acknowledgments/end matter;
+3. direct counselor / two-pastor / accountability-team identities;
+4. identity of CCRMin's unnamed restoration elder;
+5. Bowker/Global Register registrant if accessible;
+6. direct current Anne statement;
+7. formal TBC→SVC transfer/release object;
+8. direct post-Lawson OnePassion president record;
+9. direct finished-book review/approval statement from a restoration stakeholder;
+10. original/human-checked July 2020 Ask Ligonier timecodes;
+11. any future biography delta that genuinely meets Tier A in `70_`.
 
-1. biography pass-37 freeze — **DONE**;
-2. pass-22→37 Tier-A triage — **DONE; no Tier-A correction**;
-3. canonical biography projection into main (`68_`) — **DONE**;
-4. execute one V6 using `69_` + `73_`;
-5. final claim/source audit;
-6. update `CURRENT.md` and this handoff to publication-ready state;
-7. publish.
+## Stop rule
 
-Reopen biography-driven article editing only if a later arena delta contains a genuine Tier-A correction under `70_`.
+The Lawson project has reached a logical stopping point.
+
+Do **not** restart generic searches that reproduce the same 2024–2026 reporting or keep scanning biography material that cannot change the article.
+
+Resume only if a genuinely new primary object changes a P1/Tier-A question.
+
+Canonical publication verdict from `75_`:
+
+> **PASS / PUBLICATION_READY_WITH_GUARDRAILS / NO MATERIAL CLAIM-SOURCE REGRESSION FOUND.**
