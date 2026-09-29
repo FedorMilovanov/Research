@@ -18,7 +18,7 @@
 9. [`70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`](70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md) — which remaining biography questions can actually change V6.
 10. [`71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`](71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md) — confirms the canonical claims currently align.
 11. [`72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md`](72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md) — current Trinity legacy pages are not proof of Lawson's return.
-12. [`73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) — ready-to-integrate Russian V6 prose after biography freeze.
+12. [`73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) — polished V6 insertion staging with exact V5 anchors and final Tier-A-delta guardrails.
 
 ## Live biography lane
 
@@ -27,10 +27,39 @@ Branch:
 
 Last observed HEAD:
 - `4768115996a06397af8fd59547bceee102ed67a8`
+- commit date: `2026-09-29T18:33:37Z`
+- latest observed pass: **21**
+
+Latest comparison against main after the V6-staging polish:
+- biography branch `ahead 29 / behind 74`;
+- merge base `8c21307eff34f184759011c29f692b202080ac13`;
+- the branch differs through only six paths:
+  1. `STEVEN_LAWSON_2024_2026/README.md`
+  2. `STEVE_LAWSON/19_CURRENT_STATUS_AND_ACQUISITION_QUEUE_2026-09-28.md`
+  3. `STEVE_LAWSON/28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md`
+  4. `STEVE_LAWSON/DURABLE_CUSTODY_MANIFEST.json`
+  5. `STEVE_LAWSON/LOG.md`
+  6. `STEVE_LAWSON/README.md`
 
 Rule:
 - **do not blind-merge while the agent is still working**;
-- after freeze, inspect delta, classify under `70_`, replay/reconcile biography-specific files, then produce one V6 article revision.
+- after freeze, inspect only the delta after `4768115996a...` first and classify it under `70_`;
+- replay the biography-specific dossier and log, and merge only the biography additions to the custody manifest;
+- do **not** overwrite the newer main copies of `19_`, either README, `CURRENT.md`, article files or the canonical handoff;
+- then produce one V6 article revision.
+
+### Reconcile trap already identified
+
+The live biography dossier was forked before several Sept. 29 main-corpus upgrades. Therefore some of its statements about what the main corpus lacks are now stale even though the biography evidence itself remains useful.
+
+The clearest known example:
+
+- the branch dossier still says the 2020 Ask Ligonier / Anne node lacks a checked primary-audit object and treats the old missing `08_ASK_LIGONIER...` path as a live evidentiary weakness;
+- current main now contains [`37_ASK_LIGONIER_2020_ANNE_MARRIAGE_SELF_WITNESS_2026-09-29.md`](37_ASK_LIGONIER_2020_ANNE_MARRIAGE_SELF_WITNESS_2026-09-29.md), which establishes the official-event provenance and recovers the searchable Ligonier-channel transcript through a derivative carrier, with explicit publication guardrails.
+
+At final reconcile, preserve the historical broken-link observation if useful, but **remove the stale inference that the Anne/Ligonier evidentiary node remains unacquired**. Main's newer `37_` governs that question.
+
+This is the model for the whole merge: biography facts move forward; stale fork-era assessments of the newer main corpus do not.
 
 ## Core thesis
 
@@ -60,8 +89,12 @@ The project is no longer searching for a missing grand theory.
 Remaining work is:
 
 1. let/finalize the biography lane;
-2. inspect any Tier-A correction;
-3. reconcile once;
-4. execute V6 using `69_` + `73_`;
-5. final claim/source audit;
-6. publish.
+2. inspect only the post-`4768115...` Tier-A delta;
+3. reconcile the three biography-bearing payloads (`28_EARLY...`, `LOG.md`, manifest additions) without replaying stale shared control files;
+4. correct any fork-era statements invalidated by newer main evidence (known example: Ask Ligonier 2020 → `37_`);
+5. execute V6 using `69_` + polished `73_`;
+6. final claim/source audit;
+7. update `CURRENT.md` and this handoff once;
+8. publish.
+
+Do not create parallel V6-beta drafts while the biography lane is live.
