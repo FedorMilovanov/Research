@@ -1,189 +1,175 @@
 # Steven J. Lawson — biography lane integration bridge
 
 **Snapshot:** 2026-09-30  
-**Status:** `LIVE AGENT LANE INSPECTED / DO NOT MERGE YET / HIGH-CONFIDENCE BIOGRAPHICAL FINDINGS HARVESTED FOR EDITORIAL INTEGRATION / CORE VERDICT REFINED`  
-**Live biography branch observed:** `arena/01a0ea6e-research` @ `4768115996a06397af8fd59547bceee102ed67a8`  
-**Main observed during integration:** `main` @ `7b0979c7f2acdad0c4c279929e97277b5d16706a`  
-**Branch divergence at snapshot:** `ahead 29 / behind 65`, merge base `8c21307eff34f184759011c29f692b202080ac13`.
+**Status:** `BIOGRAPHY PUBLIC-WEB PHASE PRACTICALLY FROZEN / PASS 37 RECONCILED / CANONICAL PROJECTION FOR MAIN`  
+**Frozen biography ref:** `arena/01a0ee73-research` @ `58a008b59834200f3f5474c52f9d98c0dad5e515`  
+**Full branch dossier:** `STEVE_LAWSON/28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md` at that exact ref  
+**Previous pass-21 ref:** `arena/01a0ea6e-research` @ `4768115996a06397af8fd59547bceee102ed67a8`
 
-## 1. Integration decision
+## 1. Reconciliation result
 
-The active biography lane should **not** be merged into `main` while the agent is still extending it.
+The biography lane is no longer an unresolved editorial dependency for V6.
 
-Reasons:
+The apparent second arena branch is not a competing research line. GitHub comparison establishes that `58a008b...` is a **direct 21-commit continuation** of `4768115...`, with the old HEAD as merge base and no divergence. The lane advanced from pass 21 to pass 37.
 
-1. it is a live research branch with continuing passes and corrections;
-2. it diverged before the large Sept. 29 main expansion and is now substantially behind `main`;
-3. its principal file (`28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md`) is still marked `NEW LANE / EVIDENCE-LED / ACQUISITION REQUIRED`;
-4. the agent is still converting leads into A/B-class evidence and recording negatives;
-5. a direct merge now would mix an unfinished archival lane with the already stabilized 2024–2026 publication corpus and create avoidable conflict/noise.
+The post-pass-21 delta changes only:
 
-Therefore the correct workflow is:
+- `19_CURRENT_STATUS_AND_ACQUISITION_QUEUE_2026-09-28.md`;
+- `28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md`;
+- `LOG.md`;
+- `README.md`.
 
-> **harvest only already-supported findings for editorial reasoning now; leave the branch untouched; after the agent finishes, rebase/reconcile once and then import the canonical dossier.**
+There is no new custody-manifest change in passes 22–37.
 
-This bridge does not copy the branch wholesale and does not supersede it.
+The full branch dossier remains preserved immutably at the frozen commit. It should **not** be copied verbatim into `main`, because it was forked before later main-corpus upgrades and therefore contains stale assessments of what the main corpus had or lacked. This file is the canonical cleaned projection for article integration.
+
+Rule:
+
+> **Preserve the arena dossier as provenance; project only reconciled facts into main. Do not replay stale branch control-state.**
 
 ---
 
-## 2. What the biography lane materially adds to the main case
+## 2. Biography facts retained for V6
 
-The biography work is not merely decorative background. It adds three analytically important layers.
+### A. April 1981 marriage/ministry baseline
 
-### A. A human chronology before the scandal
+Contemporary Tampa press supports the following narrow frame:
 
-The current main corpus is strongest from 2024 onward. The biography lane supplies a much longer, sourced frame:
+- Steve Lawson and Anne Crowell married in April 1981;
+- Anne is described as a Converse College political-science graduate working with **Campus Crusade for Christ**;
+- Lawson is described as a minister at **University Baptist Church, Fayetteville, Arkansas**;
+- the notice also records his Texas Tech / Dallas Theological Seminary background as understood at the time.
 
-- April 1981 marriage to Anne Crowell is documented in contemporary Tampa press;
-- the wedding notice identifies Anne as a Converse College political-science graduate working with **Campus Crusade for Christ**;
-- the same notice identifies Lawson as a minister at **University Baptist Church, Fayetteville, Arkansas**, and records his Texas Tech and Dallas Seminary education as understood at the time;
-- the lane then tracks the long Little Rock pastorate, the family's formation, Dauphin Way, Christ Fellowship, OnePassion and the later conference/teaching network.
+Editorial significance:
 
-Editorial value:
+> Anne is documented inside a Christian ministry context at the beginning of the marriage, decades before the 2024 scandal.
 
-> Anne is not merely a post-scandal supporting character. She appears in the record from the beginning as a Christian ministry worker and long-term partner through the entire rise of Lawson's public ministry.
+Do not expand this into claims about her present views, current marital status or later official ministry roles.
 
-This strengthens the article's existing marriage/root-cause section without using private family details.
+### B. Long public-ministry arc
 
-### B. Independent contemporaneous records can correct or qualify later autobiographical narration
+The biography evidence supports a decades-long sequence through Arkansas, Dauphin Way, Christ Fellowship, OnePassion, publishing, institutes and major conference/institutional networks.
 
-The biography lane produces an important methodological result from the 1989 Billy Graham crusade material.
+The exact early chronology still has minor archival gaps, but none changes the article-level proposition:
 
-Lawson later described his role with figures including roughly:
+> Lawson's public spiritual identity was built over more than four decades, not shortly before his fall.
+
+Shepherds' Conference records continue that public arc through March 2024, approximately six months before the scandal became public.
+
+### C. Dauphin Way 2003 requires a complex, contemporaneous account
+
+The usable synthesis remains:
+
+- serious doctrinal and leadership conflict;
+- organized opposition and a petition reported with more than 300 names;
+- Lawson and full-time staff resigned in January 2003;
+- hundreds subsequently gathered with him and formed the Christ Fellowship nucleus;
+- later descriptions that he was simply `ousted for Calvinism` preserve part of the doctrinal story but compress a more complex institutional crisis.
+
+Do not rewrite this as either a persecution-only narrative or a claim that Lawson simply split the church. Contemporary sources support a contested, multi-factor congregational conflict.
+
+### D. 1989 Billy Graham crusade is a calibration example, not a dishonesty finding
+
+Later Lawson recollection uses figures of roughly:
 
 - `3,000 counselors`;
 - a `50,000` crowd.
 
-The contemporaneous *Arkansas Baptist* material located by the agent reports:
+Contemporary Arkansas Baptist material located in the biography lane reports:
 
-- **more than 2,100 certified crusade counselors** before the event;
-- average attendance **more than 35,000**;
-- 6,677 decisions, with approximately 3,500 reported as salvation decisions.
+- `2,100+` certified counselors before the event;
+- `35,000+` average attendance;
+- 6,677 decisions, about 3,500 reported as salvation decisions.
 
-These are not necessarily direct contradictions in the sense of proving falsehood:
+These quantities need not be direct contradictions because denominators/date/peak-vs-average may differ.
 
-- `trained/overseen` may not equal `certified at the date of the report`;
-- a `50,000` single-night crowd may coexist with a `35,000+` average;
-- memory and later rhetorical rounding may differ from contemporaneous reporting.
+Correct use:
 
-But the methodological conclusion is strong:
+> retrospective narration should be checked against contemporaneous records where possible.
 
-> **Lawson's first-person retrospective narration should be treated as evidence that requires external calibration, not as an automatically self-verifying record.**
+Incorrect use:
 
-That principle is directly relevant to *Mercy in the Wilderness*.
-
-The book should neither be dismissed because it is autobiographical nor accepted as sufficient proof of its own interpretation. Its claims about causes, repentance, relationships and restoration should be cross-checked wherever external records exist.
-
-### C. The 2003 Dauphin Way story is more complex than a simple persecution narrative
-
-Later sympathetic retellings often compress the 2003 exit into a formula such as:
-
-> Lawson was ousted because of Calvinism / doctrinal convictions.
-
-The biography lane has now anchored the event in contemporary material:
-
-- an anonymous `Concerned Members` letter;
-- a petition reported with more than 300 signatures seeking resignation;
-- Lawson's resignation in January 2003;
-- resignation of the full-time staff in the same crisis;
-- hundreds then gathering with him outside Dauphin Way and forming the nucleus of Christ Fellowship.
-
-Lawson's own later description of doctrinal pressures remains relevant. So does Clint Archer's later summary that he was ousted for Calvinism.
-
-But the contemporary record requires a more precise formulation:
-
-> **The exit was a severe congregational conflict involving doctrine, leadership and a large organized opposition, resolved through resignation rather than a clean formal expulsion solely on one doctrinal issue.**
-
-This matters because it again illustrates the difference between:
-
-- a later coherent personal narrative;
-- and the messier contemporary institutional record.
-
-The point is not to portray Lawson as deceptive. The point is to keep the article's historical method symmetrical: sympathetic and critical narratives are both checked against records from the time.
+> numerical differences prove Lawson knowingly lied or exaggerated.
 
 ---
 
-## 3. The new logical model: three layers, not one scandal story
+## 3. Passes 22–37: what changed after the old handoff
 
-The combined main + biography evidence now supports a clearer structure for the eventual article/series.
+The continuation is dominated by archival-negative work rather than article-changing discoveries.
 
-### Layer 1 — Formation and public identity
+### Texas Tech roster
 
-Lawson's public identity was built over decades, not created by the 2024 scandal:
+An official Texas Tech game program for 17 October 1970 contains a printed varsity numerical roster without Steve/Steven Lawson.
 
-- early conversion/call narrative;
-- theological education;
-- long pastorates;
-- family life and Anne's long-term ministry/support presence;
-- exposition/Reformed identity;
-- Billy Graham crusade involvement;
-- conflicts over doctrine/church direction;
-- expanding conference, publishing and institutional networks.
+This is a valid negative for that roster only. It neither proves nor disproves a football scholarship, Picadors/freshman participation or another season. Official finding aids show physical Picadors/football pressbooks that remain unread.
 
-This layer explains why the fall carried such force: the public persona was not a recent celebrity shell but the product of a very long ministry arc.
+**Article classification:** Tier C; do not use in V6.
 
-### Layer 2 — Self-warning before the fall
+### Arkansas Baptist 1981 sweep
 
-The main Sept. 29 research establishes that Lawson already taught the categories later used to diagnose himself:
+The lane performs a large issue-by-issue sweep across 1981 and repeatedly finds no target Steve/Steven Lawson in the extracted text while carefully excluding false hits such as `Lawson Hatfield` and `Linda Lawson`.
 
-- private godliness before public ministry;
-- conscience as an alarm/braking system;
-- self-deception beneath correct doctrine;
-- vulnerability after success, in exhaustion and isolation;
-- grace, mercy and restoration;
-- the spiritual value of Anne and the need to grow as a husband.
+This strengthens archival saturation but does not undercut the direct contemporary wedding/ministry notice.
 
-This is the central moral-theological paradox.
+**Article classification:** Tier B4/C; no V6 prose change.
 
-### Layer 3 — Post-fall repentance, care and renewed public voice
+### Clarence Shell / Jesse Reed
 
-The 2024–2026 record shows:
+The 3 September 1981 issue establishes that Clarence Shell Jr. was unanimously elected Arkansas Baptist State Convention Director of Evangelism on 25 August, succeeding Jesse S. Reed, after 24 candidates were considered.
 
-- real counseling and pastoral care;
-- real accountability structures;
-- prolonged withdrawal from ordinary ministerial office/platform;
-- unresolved public mapping of exact roles/jurisdiction;
-- unresolved public marital outcome;
-- a 2026 autobiographical theological book released through a tiny author-controlled publication structure;
-- no publicly established finished-book approval chain equivalent to the broad stakeholder gate publicly proposed for a possible 2025 interview.
+Useful archival closure, but not materially about Lawson.
 
-The article's central question therefore becomes more precise:
+**Article classification:** Tier C.
 
-> **How should renewed public spiritual credibility be evaluated when the man's theological knowledge was never the missing element, his own retrospective narration requires ordinary historical cross-checking, and the post-fall process is real but incompletely transparent at the point where his public voice returns?**
+### October 8 archive mismatch
 
-That is stronger than arguing from scandal emotion, motive speculation or a binary `repentant/unrepentant` verdict.
+The archive catalog labels item 51/article 1077 as 8 October 1981, but the linked archived file is internally the 1 October issue (`VOLUME 80 NUMBER 38`). The branch correctly refuses to count it as a negative search of the genuine 8 October / expected no. 39 issue.
+
+The 15 October issue (`VOLUME 80 NUMBER 40`) was separately checked.
+
+This is valuable fail-closed methodology and evidence that the branch did not manufacture completeness from a mislabeled archive object.
+
+**Article classification:** methodology/archival control; no V6 blocker.
+
+### Net result
+
+Passes 22–37 produce:
+
+- Tier-A corrections to V6: **0**;
+- article-relevant contradiction: **0**;
+- substantial archival/negative-control improvement: **yes**.
+
+This is the basis for the practical freeze recorded in `70_`.
 
 ---
 
-## 4. What biography evidence should enter the next article revision
+## 4. Main-corpus upgrades that supersede stale branch assessments
 
-The following can materially improve the article once the branch is finalized/reconciled.
+The branch dossier's facts must be separated from its old view of the main corpus.
 
-### Include, briefly
+### Ask Ligonier 2020 / Anne
 
-1. **1981 marriage context** — Anne as a Christian ministry worker before the major public-ministry years.
-2. **Long ministry arc** — Little Rock → Dauphin Way → Christ Fellowship → OnePassion / conference network.
-3. **2003 conflict with contemporary correction** — avoid the simplistic `expelled only for Calvinism` formula.
-4. **1989 crusade as a methodological example** — use only if space permits, to show why memoir figures are cross-checked against contemporaneous sources.
-5. **Last pre-fall platform continuity** — Shepherds' Conference 2024 confirms the long public arc continued until roughly six months before the scandal.
+The branch still contains fork-era language treating the July 2020 Anne node as unverified or lacking an audit.
 
-### Do not overload the main article with
+Current main supersedes that assessment with:
 
-- every childhood anecdote;
-- sports claims not independently verified;
-- family details unnecessary to the thesis;
-- names/dates of children;
-- archival dead ends;
-- every Arkansas Baptist issue-map detail;
-- numerical crusade discrepancies presented as proof of dishonesty.
+- `37_ASK_LIGONIER_2020_ANNE_MARRIAGE_SELF_WITNESS_2026-09-29.md` — official-event provenance plus surviving searchable transcript carrier and publication guardrails;
+- `39_PERSONAL_LIFE_OF_PREACHER_VS_MINISTRY_WORKAHOLISM_SELF_WITNESS_2026-09-29.md` — restored July 2020 self-assessment that Lawson should have prayed more, was excessively driven in work, and should have taken more vacation/rest;
+- `42_SIX_ROOT_CAUSES_PRE_FALL_SELF_WITNESS_EVIDENCE_MATRIX_2026-09-29.md` — integrates the 2020 self-diagnosis and the 2013 wise-wife teaching into the six-root comparison.
 
-Those belong in the research dossier or a separate biography article.
+Therefore the final article must not repeat the branch's stale claim that this evidentiary node remains unacquired.
+
+### 2013 marriage baseline
+
+Current V6 staging also restores Lawson's March 2013 *Tabletalk* teaching (`His Heart Trusts in Her` / later `The Blessing of an Excellent Wife`) as a conservative paraphrase: a wise wife is worthy of trust and her strengths can complement her husband's weaknesses.
+
+Together with the 2020 Anne Q&A, this sharpens root 6 without implying knowledge of private motives.
 
 ---
 
-## 5. New methodological rule for *Mercy in the Wilderness*
+## 5. Methodological contribution to *Mercy in the Wilderness*
 
-The biography lane sharpens how the 2026 book should be treated.
+The biography lane's strongest article-level contribution is methodological rather than anecdotal.
 
 ### Wrong extremes
 
@@ -197,65 +183,87 @@ Do not say:
 The book is:
 
 - primary evidence for what Lawson now says, admits, remembers and interprets;
-- primary evidence for the narrative he wants to place in the public record;
-- **not automatically independent evidence** for disputed external facts;
-- strongest when corroborated by contemporary records, named witnesses or institutional documents;
-- weakest where it alone resolves disputed motives, relationship outcomes, accountability judgments or historical numbers.
+- primary evidence for the narrative he has chosen to put in the public record;
+- not independent corroboration of disputed external facts merely because the author states them;
+- strongest where outside records, named witnesses or institutions corroborate it;
+- weakest where it alone resolves relationship outcomes, institutional judgments, historical numbers or the quality/completion of restoration.
 
-This rule is now supported not only by generic historical method but by concrete examples in Lawson's own earlier retrospective biography.
-
----
-
-## 6. Effect on the canonical verdict in `62_`
-
-The core verdict in `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` remains correct and becomes stronger:
-
-> **The fundamental pre-fall problem was not absence of theological categories but failure of lived obedience beneath known doctrine.**
-
-The biography lane adds a second methodological clause:
-
-> **Because Lawson's public life has repeatedly been narrated retrospectively in simplified autobiographical form, his 2026 first-person account should be evaluated with the same source discipline used for every earlier period: respect first-person testimony, but distinguish it from independent corroboration.**
-
-And a third contextual clause:
-
-> **The 2024 fall occurred at the end of a ministry identity built over more than four decades. That makes quiet, long-observed post-fall fruit especially relevant: the issue is not merely whether a two-year narrative is theologically articulate, but whether a decades-old public identity is being rebuilt under transparent external judgment rather than principally through the subject's own interpretive voice.**
-
-This does not create a biblical numeric waiting period and does not deny forgiveness.
+This rule is standard historical method and is concretely illustrated by Lawson's own earlier retrospective narratives.
 
 ---
 
-## 7. What remains provisional until the biography agent finishes
+## 6. Three-layer article model after reconciliation
 
-Do **not** merge or promote these to main-corpus fact solely from the live branch until its final pass/reconciliation:
+### Layer 1 — formation and public identity
 
-- unverified sportswriter/football claims;
-- exact childhood conversion chronology where the source is only later self-report;
-- exact early pastorate start/end dates not fixed by contemporaneous records;
-- exact BGEA committee title for Lawson in 1989;
-- the original Lawson source behind every later crusade number;
-- any claim that the numerical differences prove intentional exaggeration;
-- details held behind `EVIDENCE_HOLD`, `LOCATOR_HOLD`, `RIGHTS_HOLD` or `ARCHIVE_HOLD` in the branch.
+- long ministry chronology;
+- April 1981 marriage/ministry context;
+- Reformed/expository identity;
+- pastorates, publishing and institutional network;
+- Dauphin Way as a complex historical conflict;
+- public continuity through early 2024.
 
-The branch's own negative-audit discipline should be preserved at merge time.
+### Layer 2 — self-warning before the fall
+
+The main corpus establishes that Lawson had already taught or articulated categories later used to diagnose his own collapse:
+
+- private godliness before public productivity;
+- conscience as an alarm/braking system;
+- self-deception beneath correct public doctrine;
+- vulnerability around success/fatigue/isolation;
+- grace, mercy and restoration;
+- trust in a wise wife and the spiritual value of Anne;
+- by July 2020, a partial self-diagnosis of excessive work drivenness, insufficient prayer, vacation and rest.
+
+### Layer 3 — post-fall care and renewed public voice
+
+The 2024–2026 record shows:
+
+- real counseling and pastoral care;
+- real accountability structures;
+- no verified return to pastor/elder office;
+- unresolved exact role/jurisdiction mapping;
+- unresolved public marital outcome;
+- a 2026 first-person theological memoir through a tiny author-controlled publishing structure;
+- no publicly established finished-manuscript approval chain comparable in transparency to the broad stakeholder gate Clint Archer described for a contemplated January 2025 interview.
+
+This yields the central V6 question:
+
+> **When theological knowledge was not the missing element, and when the scandal itself was a prolonged disparity between public teaching and private life, renewed public spiritual credibility cannot be established by theological fluency or autobiographical eloquence alone. It requires durable observable fruit and meaningful external pastoral judgment.**
 
 ---
 
-## 8. Merge plan after the agent stops
+## 7. What remains outside the V6 critical path
 
-When `arena/01a0ea6e-research` is complete:
+Keep open for future biography/archive work:
 
-1. freeze its final HEAD;
-2. compare against then-current `main`;
-3. rebase/replay only the biography-specific files/manifest changes, not stale versions of shared queue/README files;
-4. resolve numbering/file-name coexistence explicitly (`28_EARLY...` can coexist with `28_TENNESSEAN...` because filenames differ, but index clarity matters);
-5. preserve its evidence IDs (`SL-E01...`) and correction history;
-6. update `README.md` and `CURRENT.md` once, after reconciliation;
-7. then decide whether `64_ARTICLE_RU_REFINED_V5` needs a V6 incorporating the short biography frame.
+- exact RTS dissertation object/title;
+- exact early pastorate dates where still archival;
+- football scholarship/Picadors verification;
+- sportswriter and law-school details;
+- remaining 1981 periodical completeness;
+- physical early books;
+- detailed father/employer history;
+- full early autobiography audio objects;
+- any rights-held newspaper images.
 
-Do not merge the live branch blindly.
+These may improve a later biography. They do not justify holding V6.
 
 ---
 
-## 9. Integrated research verdict
+## 8. Reconciliation policy
 
-> **The biography lane should be kept and ultimately merged because it changes the quality of the Lawson project from a scandal dossier into a historical account. Its strongest contribution is not trivia about childhood or institutions. It shows the long construction of Lawson's public identity, gives Anne and the marriage a documented pre-scandal history, and demonstrates with contemporary records why autobiographical recollection must be externally calibrated. Combined with the main corpus, the case is now logically coherent: Lawson possessed and publicly taught the theology needed to warn against his own fall; his later book admits failures that correspond to those earlier warnings; a real post-fall shepherding process existed; yet the renewed public narrative is largely Lawson's own author-controlled account and its final external approval chain remains publicly opaque. Therefore the responsible question is not whether grace is possible, but what kind of observable, externally judged fruit is sufficient to make renewed public spiritual influence credible after a decades-long public ministry and a years-long private contradiction.**
+For future agents:
+
+1. Treat `58a008b59834200f3f5474c52f9d98c0dad5e515` as the frozen V6 biography reference.
+2. The complete branch dossier remains preserved at that exact Git object; do not pretend it was deleted because it is not on `main`.
+3. Use this `68_` file as the canonical main-branch projection of biography findings.
+4. Do not wholesale-merge `arena/01a0ee73-research` or the older `arena/01a0ea6e-research`.
+5. Reopen V6 only for a genuinely material Tier-A correction as defined in `70_`.
+6. Proceed to one V6 revision using `69_` + `73_`, then one claim/source audit.
+
+---
+
+## 9. Integrated verdict
+
+> **The biography lane has done enough for the current article. Its real contribution is not trivia about childhood, sports or every denominational-news issue. It establishes the long construction of Lawson's public identity, gives Anne and the marriage a documented pre-scandal history, complicates the 2003 church-conflict narrative with contemporary evidence, and demonstrates why later autobiographical recollection should be externally calibrated without being dismissed. Passes 22–37 add substantial archival discipline but no Tier-A correction to V6. Combined with the main corpus, the case is now logically coherent: Lawson possessed and publicly taught the theology needed to warn against his own fall; in at least the work/rest area he had partly diagnosed the problem in himself before the collapse; a real post-fall shepherding process existed; yet the renewed public narrative is largely Lawson's own author-controlled account and its finished external approval chain remains publicly opaque. The next task is no longer research expansion. It is final V6 integration and publication audit.**
