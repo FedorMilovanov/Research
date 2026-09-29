@@ -30,16 +30,18 @@ Last observed HEAD:
 - commit date: `2026-09-29T18:33:37Z`
 - latest observed pass: **21**
 
-Latest comparison against main after the V6-staging polish:
-- biography branch `ahead 29 / behind 74`;
-- merge base `8c21307eff34f184759011c29f692b202080ac13`;
-- the branch differs through only six paths:
+Stable branch-delta facts:
+- merge base: `8c21307eff34f184759011c29f692b202080ac13`;
+- biography branch has **29 commits** after that merge base;
+- its own delta touches only six paths:
   1. `STEVEN_LAWSON_2024_2026/README.md`
   2. `STEVE_LAWSON/19_CURRENT_STATUS_AND_ACQUISITION_QUEUE_2026-09-28.md`
   3. `STEVE_LAWSON/28_EARLY_LIFE_AND_FAMILY_DOSSIER_2026-09-28.md`
   4. `STEVE_LAWSON/DURABLE_CUSTODY_MANIFEST.json`
   5. `STEVE_LAWSON/LOG.md`
   6. `STEVE_LAWSON/README.md`
+
+Do **not** use the branch's `behind main` count as a durable handoff datum. `main` is concurrently active in unrelated research lanes, so that number can grow without any change to Lawson evidence. Recompute it only at freeze if needed for mechanics.
 
 Rule:
 - **do not blind-merge while the agent is still working**;
