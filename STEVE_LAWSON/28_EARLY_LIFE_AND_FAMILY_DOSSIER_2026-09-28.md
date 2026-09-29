@@ -54,6 +54,13 @@
 | SL-E23 | «Steven Lawson: Former Agnostic; revert» — The Coming Home Network (2013): католик из Буффало, Нью-Йорк, бывший агностик | D (для нашего кейса — однофамилец, другое лицо) | OBTAINED (зафиксировано) | EXACT (URL, дата) | — | не использовать как материал о Лоусоне; хранить только как предупреждение о смешении | — |
 | SL-E24 | Owen Strachan, X, 25.01.2025: «Steve Lawson's wife is presently staying by him—praise God. What faithfulness!» | B1 (публичное утверждение третьего лица без указания источника) | TEXT VIA SEARCH INDEX (страница не открывалась) | COARSE | — | только с атрибуцией и датой; спор о текущем статусе брака не разрешает (см. `22_`) | `EVIDENCE_HOLD` |
 
+| SL-E25 | Christ Fellowship Baptist Church (Mobile), страница «Origin» (архив 08.01.2014, `web.archive.org/…/cfmobile.org/origin`): «On January 26, 2003, Christ Fellowship was birthed in a very unusual place—an empty warehouse. Amid an abandoned building, over 400 people came together that first Sunday…»; далее — senior center, первый служба на Azalea Road в канун Рождества 2003, спортзал, освящение зала 19.12.2004 | A3 (собственная история церкви) | OBTAINED | EXACT (архивная копия, дата) | цитирование допустимо | допустимо как «история церкви по её собственному изложению» | — |
+| SL-E26 | Steven J. Lawson, «Dr. Steven J. Lawson's Transition», блог Christ Fellowship, **16.06.2014** (архив 06.10.2014): «For the past eleven years, my wife, Anne, and I have had the immense honor of serving the people of Christ Fellowship Baptist Church… On March 2, 2014, I officially announced my retirement from pastoral ministry, effective July 1»; OnePassion «based in Dallas, Texas»; план переезда в Даллас | A3 (его собственное письмо, опубликованное церковью) | OBTAINED | EXACT (архивная копия, дата публикации) | цитирование допустимо | цитировать как письмо от 16.06.2014; это первичный источник по датам | — |
+| SL-E27 | Christ Fellowship, страница «Pastors & Staff» (архив 08.01.2014): его приходская био — «Steve and his wife Anne have three sons and a daughter»; девятнадцать книг; совет Alliance of Confessing Evangelicals | A3 | OBTAINED | EXACT | — | допустимо | — |
+| SL-E28 | The On Preaching Podcast (H.B. Charles Jr.), эпизоды **#017 и #018, февраль 2015** — интервью с Лоусоном: «In the first part of our conversation, we talk about Dr. Lawson's background, conversion, education, formal training, and pastoral ministry». Аудио на Libsyn за платной подпиской; страница #017 в текущем виде 404 | B1 (описание эпизода) / объект — A-класс first-person | DESCRIPTION OBTAINED; AUDIO LOCKED (libsyn premium) | EXACT (шоу, номера, даты) | — | только описание; цитат из аудио нет | `EVIDENCE_HOLD`, `LOCATOR_HOLD` |
+| SL-E29 | Goodreads, отзыв на *Pulpit Aflame* (07.06.2016): «Pastor John asked Steve Lawson to share about his departure from Dauphin Way Baptist Church in Mobile, Alabama. I vividly remember tears welling up in my eyes as Lawson recounted the animosity he experienced when he preached about the doctrines of grace. Eventually, Lawson resigned and move on to plant Christ Fellowship Baptist Church.» | B1 (воспоминание читателя/слушателя) | OBTAINED | COARSE | — | не цитировать; использовать как наводку на SC-2007-GS08 (SL-E09) | `EVIDENCE_HOLD` |
+| SL-E30 | Protestia, рецензия на книгу *Mercy in the Wilderness* (25.09.2026): среди признаний — перегрузка, «neglect of his wife», и «his wife asked him to seek marriage counseling and that he refused because he was too proud» | B1 (пересказ книги третьим лицом) | OBTAINED (repro) | COARSE (нет страниц книги) | — | только как «по пересказу книги»; до получения книги — не цитировать | `EVIDENCE_HOLD` |
+
 ---
 
 ## Ответы, отрицания и альтернативные объяснения
@@ -90,6 +97,8 @@
   - он — «minister for **University Baptist Church, Fayetteville, Ark.**»;
   - шафер — «Dr. J.W. Lawson»; свидетельница (matron of honor) — «Mrs. Tracey C. Smith» (SL-E02).
 - **Дата 18 апреля** как день свадьбы подтверждается косвенно: пост в X от 2024 года («married for 43 years, as of April 18th (1981)») и его собственный твит к 32-й годовщине, сохранённый вторичным носителем: «Today is my anniversary, 32 years married to my wife, Anne. She is the most precious helpmate any man could have.» (оба — B1-носители его слов). Для статьи безопасная формулировка: **«поженились в апреле 1981 года»**.
+- **Семейная динамика по книге 2026 года (по пересказу; книга не получена).** По рецензии Protestia (SL-E30): он пишет о перегрузке, пренебрежении женой и о том, что **жена просила его пойти на консультацию по браку, а он отказался из гордости**. Это единственный публичный пункт, где Энн действует как инициатор (просит помощи), а он — как отказывающий; до получения книги формулировать только с двойной атрибуцией.
+- **Письмо 2014 года как семейный документ.** В письме о переходе (SL-E26) он говорит не «я», а «my wife, Anne, and I»: служение в Christ Fellowship описано как совместное, одиннадцать лет; там же — намерение продать дом и переехать в Даллас. Для темы «каким он был в семье» это единственный его собственный документ подобного рода в ранней линии.
 - **Уточнение по срокам (28.09.2026).** Пресса 2024–2025 пишет «married for over 40 years» — это округление вниз; от апреля 1981 к 2024-му — 43 года. Его собственный пост 2013 года («32 years married») согласуется с 1981-м. Формулировка для статьи: «поженились в апреле 1981 года»; сроки «40 лет» пересчитывать самим.
 - **Свидетельство третьей стороны об Энн (2025).** Owen Strachan в X (25.01.2025): «Steve Lawson's wife is presently staying by him—praise God. What faithfulness!» (SL-E24). Это утверждение без источника; статус брака по `22_` — `UNRESOLVED`, такими носителями он не разрешается.
 - **Дети:** официальная био OnePassion — **три сына (Andrew, James, John) и дочь (Grace Anne)** (SL-E03); все общекорпусные носители говорят «четверо взрослых детей» (SL-E13 и материалы 2024 года). Дочь — **Grace Anne Bills**, в предскандальные годы — координатор/вице-президент OnePassion (SL-E13).
@@ -151,7 +160,7 @@
 4. **Broken reference внутри корпуса.** Файл `STEVEN_LAWSON_2024_2026/09_…` ссылается на `08_ASK_LIGONIER_2020_ANNE_AND_SELF_DIAGNOSIS_PRIMARY_AUDIT_2026-09-27.md`, **которого в репозитории нет** (проверено по всей истории git). То есть целый «узел» корпуса про Энн держится на цитате из отсутствующего аудита. До получения первичного объекта (SL-E16) формулировки об Энн должны идти как «по корпусному узлу, первичная проверка не завершена» — либо не идти вовсе.
 
 5. **Однофамилец-католик:** *The Coming Home Network* (2013), «Steven Lawson: Former Agnostic; revert» — католик из Буффало (NY), бывший агностик (SL-E23). Это **другое лицо**; его автобиографические детали (католическая семья, месса, Буффало) к нашему Лоусону не относятся и не должны попадать ни в один черновик.
-6. **Ложная атрибуция из WWUTT / Gabe Hughes.** В опубликованном транскрипте WWUTT 2250 (themajestysmen.com, 24.09.2024) фраза «he lied to everyone… he even at one point said to me that he would rather take his chances with God than be reconciled to his wife» относится **не к Лоусону**, а к бывшему состарейшине самого Гейба (контекст: «the elder who was a close friend of mine»). Проверено 28.09.2026: на Лоусона не переносить.
+6. **Риск ложной атрибуции из WWUTT / Gabe Hughes.** В транскрипте WWUTT 2250 (themajestysmen.com, 24.09.2024) абзац построен как воспоминание автора о собственном опыте с состарейшиной («the elder who was a close friend of mine»), и прямая строка «He lied, that elder lied—he lied to everyone» указывает на того же человека; далее идут слова про «resistant to correction», «estranged from his family» и «he would rather take his chances with God than be reconciled to his wife». Уточнение этого прохода (28.09.2026): фразу **нельзя** использовать как свидетельство о Лоусоне, хотя её легко так прочитать вне контекста абзаца; в корпусе 2024 года она ходила именно в таком чтении. Правило: из этого текста для линии Лоусона допустимы только прямые высказывания автора о Лоусоне.
 7. **Заголовки 2024 года о «fired».** The Daily Beast / Chron пишут «fired from his Dallas church» (Trinity, сентябрь 2024). Это отдельный эпизод от «церкви, откуда его выгнали» в смысле 2003 года; в статье эти два события нельзя сливать в формулу «его выгоняли из церквей».
 
 ### 7. Странности и «золото» для статей (без выводов)
@@ -212,9 +221,12 @@
 |дек.2002–янв.2003 | Анонимное письмо «Concerned Members»; более 300 подписей за отставку | SL-E06, SL-E07 |
 | 19.01.2003 | Отставка Лоусона и всего полновременного штата; резолюция — голосование после службы | SL-E06 |
 | 26.01.2003 | Проповедь в арендованном помещении ~550 слушателям | SL-E06 |
-| 2003 | Рождение Christ Fellowship Baptist Church (Мобил) из ушедшей группы; «склад», ~400–550 человек | SL-E06, SL-E08 |
+| 26.01.2003 | Первое воскресенье Christ Fellowship: пустой склад, «over 400 people» (собственная история церкви); *The Alabama Baptist* называет ~550 в арендованном помещении; в письме 2014 года датой начала названо 25.01.2003 (расхождение внутри одного источника) | SL-E25, SL-E06, SL-E26 |
 | 09.03.2007 | Shepherds' Conference 2007, GS8 Q&A — предположительно рассказ Лоусона об уходе из Dauphin Way (наводка; объект — MP3) | SL-E09 |
-| 2014–2015 | Уход с пасторства в Christ Fellowship; OnePassion / itinerant | SL-E08, SL-E10 |
+| 02.03.2014 | Объявляет об уходе с пасторства (эффективно 01.07.2014) | SL-E26 |
+| 16.06.2014 | Письмо о переходе: «eleven years» в Christ Fellowship; OnePassion уже существует и «базируется в Далласе»; планы переезда | SL-E26 |
+| 01.07.2014 | Складывает пасторство Christ Fellowship (Мобил → Даллас) | SL-E26 |
+| 2015 | Распространённая официальная дата основания OnePassion — при том, что письмом 06.2014 OnePassion уже существует; **расхождение сохраняем** | SL-E26, ср. SL-E08/SL-E10 |
 | 2016 | Юбилейный сборник *Pulpit Aflame* с биографической главой | SL-E10 |
 | 2018 | Trinity Bible Church of Dallas (вне рамок файла) | см. `24_` |
 
@@ -254,12 +266,25 @@
 11. Проверить, где именно родилась серия «Long Line of Godly Men» — «Friday morning men's teaching» (Tabletalk-2014) относится к Christ Fellowship, а не к Литл-Року; уточнить.
 12. Следить за страницей CFL: доступность видео-интервью 2024 года (обе части) — page-state.
 
+### Открытые вопросы, которые остаются открытыми после двух проходов (и почему)
+
+| Вопрос | Статус | Что нужно |
+|---|---|---|
+| Место рождения | `UNRESOLVED` | документ (свидетельство/перепись/школьная запись); «Арканзас» и «Техас» — по разным `C`-источникам |
+| Как познакомились Стив и Энн | `NOT ESTABLISHED` | аудио CFL (обе части) или H.B. Charles #017/#018; газетная часть 1 |
+| Как и где Энн пришла к Богу | `NOT ESTABLISHED` (публично — только «сотрудница Campus Crusade for Christ» на 1981) | её собственные слова; до этого — не писать |
+| Годы степеней (1973/1980/1990) | только `C` | регистратор/альманах/каталог выпускников |
+| Даты рождения детей, число внуков | `D`/не установлено | закрытые источники; в статью не идёт |
+| Был ли он когда-либо уволен из церкви до 2003 года | **свидетельств не найдено** | все проверенные биографии и церковные истории говорят о переходах, не об увольнениях; «церковь, откуда его выгнали» = Dauphin Way 2003 (давление петиции) и Trinity 2024 (удаление) — не ранняя биография |
+| Стефен-Льюис-Джонсон как датировка ДТС | гипотеза | Джонсон преподавал в ДТС до перехода в Believers Chapel (1977); «learning under S. Lewis Johnson» (SL-E05) косвенно помещает учёбу Лоусона в середину 1970-х — это **вывод, а не факт** |
+
 **P1-B (добавлено 28.09.2026, проход 2):**
 
 1. **CFL-страницы читать через `?_data=1`** — параметр отдаёт полный текст страницы (включая тела эпизодов) там, где обычный URL возвращает пустую оболочку. Получены: Part 1 (`65b01c4fad65a9d0a93e4e34`) и Part 2 (`65ba8d2a33d020a85626fd6e`).
 2. **Аудио обеих частей:** шаблон из Apple-фида — `cfl-mango.s3.amazonaws.com/assets/podcastEpisodes/<episode-id>/audio.mp3`; получить, сохранить хэши, прослушать/транскрибировать: там вероятен рассказ о знакомстве/браке и о Мемфисе. Vimeo-превью: Part 1 — `1792596948`, Part 2 — `1795656674`.
 3. **Ligonier / Ask Ligonier:** YouTube-объект `Fouczzg3yhg` (28.07.2020) на 28.09.2026 **приватён** (page-state). Подтверждённые расшифровки эпизодов с Лоусоном: `ask.ligonier.org/podcast-episodes/…` (27.08.2020, 03.12.2020, 13.05.2021 и др.). Проверить, публиковался ли эфир 28.07.2020 как аудио/расшифровка.
 4. **SC2006 GS7 Q&A (03.03.2006)** — `gracechurch.org/sermons/287`; установить точный MP3-URL в бакете `media.shepherdsconference.org/2006/` и получить аудио: по свидетельству Ф. Батлера (SL-E20), это рассказ Лоусона о Dauphin Way «до слёз».
+5a. **Переходный документ и история CF** (SL-E25–SL-E27) — уже получены; при работе над «Мобилом» использовать их как A3-скелет и сверять с *The Alabama Baptist* и Клинтом Арчером (SL-E06, SL-E08).
 5. **Texas Tech:** ростеры 1969–1972 (sports-reference) Lawson не содержат; проверить студенческую прессу и футбольные программы (freshman-команда?) — до этого «футбольная стипендия» остаётся его собственным словом без внешнего подтверждения.
 6. **Отец:** искать «James W. Lawson, Ph.D.» в Мемфисе 1960–70-х (университетские каталоги, газеты); зацепка — шафер «Dr. J.W. Lawson» (1981). Без смешения с правозащитником Джеймсом Лоусоном.
 7. **Газета 1981, часть 1:** Newspapers.com-поиск и общий индекс её не находят; следующий путь — *Tampa Tribune* (апрель 1981) в архивных базах.

@@ -148,6 +148,10 @@ The following remain closed at the level already recorded in `20_` and earlier f
 12. **Ask Ligonier:** YouTube `Fouczzg3yhg` (28.07.2020) теперь **приватён**; искать аудио/расшифровки на `ask.ligonier.org` и в фидах Ligonier (эпизоды с Лоусоном 2020–2021 уже подтверждены).
 13. **Степени:** годы B.B.A. (1973?), Th.M. (1980?), D.Min. (1990?) пока только `C`-источники; нужен первичный документ.
 14. **Texas Tech football:** ростеры 1969–1972 Lawson не содержат — проверить по студенческой прессе и программам.
+15. **Переходное письмо 16.06.2014 и «Origin» Christ Fellowship** — получены через Wayback (A3): даты служения 2003–2014, «eleven years», OnePassion «в Далласе» уже в середине 2014; сохранить текстовые извлечения и хэши в манифесте.
+16. **H.B. Charles, The On Preaching Podcast #017/#018 (февраль 2015)** — интервью о «background, conversion, education, formal training, and pastoral ministry»; аудио на Libsyn заблокировано платной подпиской → искать зеркала/архив (iTunes-фид шоу, аккаунты-перезаливы).
+17. **Shepherds' Conference 2007 GS8 (09.03.2007) и SC 2006 GS7 (03.03.2006)** — объекты наводок о рассказе Лоусона про Dauphin Way; установить MP3 в бакете `media.shepherdsconference.org` и получить аудио.
+18. **Книга `Mercy in the Wilderness` (09.2026)** — получить экземпляр: там его собственная версия семейной динамики (жена просила консультацию, отказ из гордости) — до этого только пересказ (SL-E30).
 
 ### P2 — archival completeness / passive monitoring
 
