@@ -18,7 +18,7 @@
 9. [`70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`](70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md) — which remaining biography questions can actually change V6.
 10. [`71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`](71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md) — confirms the canonical claims currently align.
 11. [`72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md`](72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md) — current Trinity legacy pages are not proof of Lawson's return.
-12. [`73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) — polished V6 insertion staging with exact V5 anchors and final Tier-A-delta guardrails.
+12. [`73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) — polished V6 insertion staging with exact V5 anchors, recovered 2013 marriage baseline and final Tier-A-delta guardrails.
 
 ## Live biography lane
 
@@ -62,6 +62,30 @@ The clearest known example:
 At final reconcile, preserve the historical broken-link observation if useful, but **remove the stale inference that the Anne/Ligonier evidentiary node remains unacquired**. Main's newer `37_` governs that question.
 
 This is the model for the whole merge: biography facts move forward; stale fork-era assessments of the newer main corpus do not.
+
+## Historical Lawson branch archaeology — completed 2026-09-30
+
+Several branch names can look like unmerged Lawson work but are **not** additional live research lanes:
+
+- `tmp/lawson-biography-integration-20260930`
+- `tmp/lawson-biography-integration-20260930-2`
+
+Both point to exactly the same commit, `7b0979c7f2acdad0c4c279929e97277b5d16706a`. That commit is a direct ancestor of current `main`; the two temporary refs contain **zero unique commits**. Do not merge or replay them.
+
+Older branches:
+
+- `lawson-bundle-bootstrap-20260928` (`b7cd8a8...`) is an ancestor of the finalized Lawson line;
+- `lawson-finalize-20260928` (`dff6e36...`) is a direct ancestor of current `main`;
+- `lawson-final-import-20260928` (`f30ff8b...`) is a divergent historical import-runner branch, not a second canonical research line. Its five post-bootstrap commits are the import-runner sequence and bot import used during the Sept. 28 reconstruction.
+
+Semantic salvage was checked rather than relying on Git ancestry alone:
+
+- the 2022 `Should I Marry Her?` object from the old lead/source files is **already preserved in current main** at [`08_QA_TRANSCRIPT_AND_LIGONIER_STATE_2026-09-27.md`](08_QA_TRANSCRIPT_AND_LIGONIER_STATE_2026-09-27.md), including carrier metadata, audio hash, machine-transcript locators and publication limitations;
+- the old 2020 Ask Ligonier / Anne material is superseded and strengthened by `37_` plus the workaholism/self-witness corpus;
+- one useful pre-fall marriage baseline had fallen out of the newer canonical synthesis: Lawson's March 2013 *Tabletalk* article `His Heart Trusts in Her` / later `The Blessing of an Excellent Wife`. Its publication is independently traceable through *Tabletalk* and Ligonier indexes and surviving text carriers. It has now been restored, conservatively paraphrased, into [`73_...`](73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md) for V6;
+- weaker historical leads (for example title-only sermon leads or later commentator applications) remain available in Git history / `lawson-final-import-20260928`, but they do not outrank the stronger evidence already in the current canonical corpus and are not V6 blockers.
+
+Therefore **none of these legacy branches should be merged into `main`**. Keep them as provenance/history unless branch cleanup is undertaken separately.
 
 ## Core thesis
 
