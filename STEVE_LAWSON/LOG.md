@@ -377,3 +377,16 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E139, обновлены SL-E101, SL-E102 и задача 21; `README` и `LOG` обновлены. Raw PDF/сканы не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; source ledger — 139 уникальных ID `SL-E`, дубликатов нет, SL-E139 содержит 8 ячеек.
 - **SHA-256 dossier 28_ после прохода 36:** `864be53b26e03ba92069904fdaa28ae6e2a90ea429af8808a3fbec903f934ea6`.
+
+
+## Проход 37 (29.09.2026) — ABN-1981: полный доступный текст выпуска 27.08
+
+- **Article 1071 (27.08, item 57; SL-E140):** получены и просмотрены все 10 текстовых чанков (0–9); chunk 9 сообщает `hasMore=false`. Целевой Steve/Steven Lawson и опубликованный результат поиска/назначение преемника Jesse S. Reed не выявлены.
+- **Lawson Hatfield:** в плане `Fastest growing recognition plan` он подписан `state Sunday School director`; подтверждённое число выпусков с этой ловушкой увеличено до тринадцати (SL-E101).
+- **Clarence Shell Jr.:** статья `Why simultaneous revivals?` находится в `Your state convention at work → Evangelism` и подписана Shell. Текст цитирует C. E. Matthews, бывшего директора евангелизации Home Mission Board, как исторический источник; должность Shell и его преемничество не указаны.
+- **Разграничение зацепок:** Area Evangelism Conferences перечисляют Clifford Palmer как preacher и Huber Drumwright как Bible teacher, не нового директора ABSC. Открытое письмо Jack J. Bledsoe собирает предложения для номинаций в советы, учреждения и комитеты, а не для должности директора евангелизации. Ray Wells назначен Family Ministry Consultant Louisiana Baptist Convention, не ABSC.
+- **Покрытие:** полные текстовые выдачи просмотрены для 34 из 50 выпусков 1981 года: 33 подряд от 01.01 до 27.08 плюс 24.12 отдельно. 16 выпусков ещё не просмотрены; общего отрицательного вывода по году нет.
+- **Дальше:** следующий по хронологии — 03.09.1981, article 1072/item 56.
+- **Файлы:** `28_` — добавлен SL-E140, обновлены SL-E101, SL-E102 и задача 21; `README` и `LOG` обновлены. Raw PDF/сканы не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; source ledger — 140 уникальных ID `SL-E`, дубликатов нет, SL-E140 содержит 8 ячеек.
+- **SHA-256 dossier 28_ после прохода 37:** `c60db028128fdc2571459781c47d44c3c644bf6534a913ef4612318774914b11`.
