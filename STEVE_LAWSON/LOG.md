@@ -68,3 +68,13 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **SL-E59:** негативы — Wayback без снимков SC-аудио (`archived_snapshots: {}`), IA advancedsearch 0, HathiTrust заблокирован (Cloudflare).
 - Файлы: `28_` — 12 новых строк SL-E48…SL-E59, новый §8, правки §2/§3, хронология (≈1983, 15.02.2004), обновление задач; `19_` — правки пунктов 13/28/29/30 и новые пункты 31–34.
 
+## Обновление 29.09.2026 — проход 10 (полное чтение Q&A 2012, газетный слой 2003, новые негативы)
+
+Получено и внесено:
+- **SL-E60:** Q&A 2012 (Ligonier, `85HV-VcvXQo`) дочитан полностью — добавлены чанки 2–5. Личные высказывания: «I grew up in an **Arminian church**… No one ever hit the brick wall of Calvinism harder than I hit it»; «I thought I was doing God a wild favor by leaving the bank and going to seminary… it was the total other way around»; «when I graduated from seminary, I believed more Presbyterian doctrine than the Presbyterians believed». Колорит: Спроул — «Steve already gave my message on justification… I can take a nap». Замечание по цитированию: в транскрипте модератор Chris Larson записан как «LARSON».
+- **SL-E61:** *The Alabama Baptist* 06.02.2003, дополнительный слой: Уитфилд — «part-time minister of senior adults and congregational care»; посещаемость «from about 1,600 to around 600»; «more than 100 active senior adult members» ушли за пять лет; «30 or 40 families … every quarter»; вместе с Лоусоном уходят Бенни Райли и «minister of children Chuck Finster» (в *Mobile Register* — «young adults and children»).
+- **SL-E62:** негативы прохода: Portal to Texas History — Altcha-капча; Google Books API — квота 0; IA — нет ежегодников *La Ventana* (TTU); Elephind — нет Флориды 1981 (по «Anne Crowell» 81 совпадение, все посторонние).
+- **Новая ловушка:** NFL-гард **Stephen Wendell Lawson** (р. 04.01.1949; Kansas → Bengals/Vikings/49ers) — третий однофамилец, к которому ведёт запрос «Steve Lawson football».
+- Файлы: `28_` — SL-E60/SL-E61/SL-E62, новый §9, правки §1 (арминианская церковь), §4 (цифры 2003), §6 (ловушка 1a), §7 (три цитаты), хронология (1960-е), задачи 19–21; `19_` — пункты 36–37.
+
+Итог по линии: чтение Q&A 2012 закрыто полностью; из «открытых тумблеров» остались только те, что требуют внешнего канала (газеты Флориды 1981, TTU-архив, BGEA-архив, RTS-диссертация).

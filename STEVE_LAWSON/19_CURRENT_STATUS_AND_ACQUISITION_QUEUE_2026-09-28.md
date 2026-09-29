@@ -173,6 +173,8 @@ The following remain closed at the level already recorded in `20_` and earlier f
 33. **«Truth For Today» (WBHY-840, Мобил, 2001–2003):** архив эфиров/расписаний через `goforth.org/840WBHY/840m-f.htm` и Wayback.
 34. **Shepherds’ Conference ≈1983 («23 года»):** верификация ранних лет; SC2006 GS7 / SC2007 GS8 байты — только внешний канал (см. п. 30).
 35. **H.D. McCarty, «Memories from University Baptist Church» (YouTube `QrQQKsQcK64`, 2016):** транскрипт 29.09.2026 не получен (YouTube блокирует сервис) — повторить другими маршрутами: возможны воспоминания о Лоусоне как колледж-пасторе UBC (1980–81).
+36. **Texas Tech (ежегодник *La Ventana*, студенческая пресса):** с этого хоста маршруты закрыты — Portal to Texas History отдаёт Altcha-капчу, Google Books API с квотой 0, на IA ежегодников TTU нет, Elephind Флориду 1981 не покрывает. Внешний канал: Texas Tech Libraries / Southwest Collection.
+37. **Флорида-1981 (газета свадьбы):** *Tampa Tribune*/*St. Petersburg Times* — платные архивы; Elephind не покрывает. Держать как `LOCATOR_HOLD`.
 
 ### P2 — archival completeness / passive monitoring
 
