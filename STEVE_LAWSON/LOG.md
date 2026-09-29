@@ -14,3 +14,9 @@ SHA-256 ядра: 28_ on 0257676 → `6e6c8d31…a233d`; после правки
 - Не получено (зафиксировано как page-state/lock): S3-аудио CFL (AccessDenied), Vimeo-видео (не существует/приватно), YouTube Ask Ligonier 28.07.2020 (приватён), Libsyn #017/#018 (премиум).
 
 Открытые вопросы после двух проходов: место рождения; знакомство с Энн; обращение Энн; годы степеней; даты рождения детей/число внуков. Все — с маршрутами в `28_` §«Открытые вопросы».
+
+## Обновление 28.09.2026 — проход 3 (Ligonier Q&A, пуш)
+
+Ветка `arena/01a0ea6e-research` **запушена** в origin (на момент `c194e24`; далее см. этот коммит).
+
+Новое: SL-E31 — транскрипт Q&A 2012 West Coast Conference («Standing Firm»): Лоусон о жене «I married up… we're almost unequally yoked; she's so up there»; Спроул: «the greatest blessing God ever gave to you» вне обращения; тогда же — «It's “the woman Thou hast given me”» и эпизод с камерой Энн из первого ряда. SL-E32 — RBC Q&A (машинный транскрипт, атрибуция говорящих не подтверждена): «battleship vs rowboat», «gas pedal», рассказ о смерти отца. SL-E33 — повторно подтверждён URL SC2007 GS8 MP3. SL-E34 — метод: `youtubetotranscript.com` работает для публичных видео Лигонье/RBC; объект Ask Ligonier 28.07.2020 остаётся приватным.

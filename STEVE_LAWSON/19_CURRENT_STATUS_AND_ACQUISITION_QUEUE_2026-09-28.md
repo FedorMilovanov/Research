@@ -153,6 +153,10 @@ The following remain closed at the level already recorded in `20_` and earlier f
 17. **Shepherds' Conference 2007 GS8 (09.03.2007) и SC 2006 GS7 (03.03.2006)** — объекты наводок о рассказе Лоусона про Dauphin Way; установить MP3 в бакете `media.shepherdsconference.org` и получить аудио.
 18. **Книга `Mercy in the Wilderness` (09.2026)** — получить экземпляр: там его собственная версия семейной динамики (жена просила консультацию, отказ из гордости) — до этого только пересказ (SL-E30).
 
+19. **Ligonier Q&A 2012 (SL-E31)** — взять байты видео/аудио (`85HV-VcvXQo` / `m0QZ-QpOWto` / стор Ligonier, пароль `SEA12MC`) и проставить таймкод к обмену «I married up».
+20. **RBC Q&A (SL-E32)** — сверить по аудио, кому принадлежат реплики о «линкоре» и о смерти отца; до этого — `EVIDENCE_HOLD`.
+21. **Поиск цитаты «лучший христианин из всех, кого я знаю»** — продолжать только по печатным носителям Лигонье/Tabletalk и по аудио-архивам Q&A 2013–2019; YouTube-объект 2020 приватён.
+
 ### P2 — archival completeness / passive monitoring
 
 - preserve current Ligonier/Trinity/TMS/Contending page states when materially changed;
