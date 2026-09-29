@@ -311,3 +311,21 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E133 и обновлена очередь; README и LOG обновлены. Raw PDF/сканы в Git не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` clean; source ledger — 133 уникальных ID `SL-E`, дубликатов нет, новая строка SL-E133 имеет 8 ячеек.
 - **SHA-256 dossier 28_ после прохода 30:** `ebba0a50799ffb83f75a6b4bf5ad784e23b91020ac3fecf6080aa14228a2ca58`.
+
+
+## Проход 31 (29.09.2026) — ABN-1981: полный текст выпуска 16.07
+
+- **Article 1065 (16.07, item 63; SL-E134):** после прежнего чтения только chunk 1 получены и просмотрены все 10 чанков 0–9 (последний сообщает `hasMore=false`). Целевой Steve/Steven Lawson не найден; результат поиска/назначение преемника Jesse S. Reed в доступном тексте не объявлены.
+- **Зацепка Clarence Shell Jr.:** статья `Bold Mission revivals` в `Your state convention at work → Evangelism` говорит, что программу одновременных возрождений организует и продвигает evangelism department. Под повторным заголовком `News about missionaries` парсер далее выдаёт текст о statewide simultaneous revival, завершающийся подписью Shell и обещанием дальнейших статей об евангелизационных принципах. Из-за порядка извлечения подпись не приписывается автоматически заголовку `Bold Mission revivals`; в номере должность Shell и его преемничество не названы. `Steve Williams` отдельно указан как консультант Church Training Department Baptist Sunday School Board — не целевой Lawson.
+- **Дальше:** для проверки связи Shell прочитан следующий соседний номер 23.07 (article 1066/item 62; проход 32). Следующий по хронологии выпуск — 30.07 (article 1067/item 61; ранее известен только chunk 1/мастхед).
+- **Файлы:** `28_` — добавлен SL-E134, SL-E102 обновлён; `README` и `LOG` обновлены. Raw PDF/сканы в Git не добавлялись.
+
+## Проход 32 (29.09.2026) — ABN-1981: полный текст выпуска 23.07 и проверка зацепки Shell
+
+- **Article 1066 (23.07, item 62; SL-E135):** все 10 чанков 0–9 получены и просмотрены (chunk 9 сообщает `hasMore=false`). Целевой Steve/Steven Lawson и сообщение о преемнике Jesse S. Reed не выявлены в доступной текстовой выдаче.
+- **Соседняя проверка Shell:** в `Your state convention at work → Evangelism` статья `Who institutes simultaneous efforts?` подписана `Clarence Shell Jr.`. В тексте кампания характеризуется как statewide effort, утверждённый Executive Board, осуществляемый ассоциациями и местными церквями; сказано, что это не проект Evangelism Department, хотя state Evangelism Department готов помогать. Shell не получает должности и не объявляется директором/преемником Reed. Формулировка 23.07 («not an Evangelism Department project») отличается от текста 16.07 о планировании/продвижении отделом; оба высказывания сохранены без попытки согласовать их смысл. Это подтверждает его авторство в евангелизационной рубрике и организационную близость, но не формальный пост. Уточнение важно рядом с 16.07: не выводить из упоминания Evangelism Department, что Shell им руководил.
+- **Ложное совпадение:** в Baptist Press byline есть `Linda Lawson` (материал `Bury hatchets, pick up Bibles, Smith urges`); это не искомый Steve Lawson. SL-E101 обновлён, число подтверждённых выпусков с Lawson Hatfield осталось десять.
+- **Дальше:** 30.07.1981 (article 1067/item 61; ранее проверен только chunk 1/мастхед). Реестр содержит 135 уникальных ID `SL-E`.
+- **Файлы:** `28_` — добавлен SL-E135, обновлены SL-E101/SL-E102 и очередь задачи 21; README и LOG обновлены. Raw PDF/сканы в Git не добавлялись.
+- **Проверки проходов 31–32:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` clean; реестр — 135 уникальных ID `SL-E`, дубликатов нет, новые строки SL-E134–SL-E135 имеют по 8 ячеек.
+- **SHA-256 dossier 28_ после прохода 32:** `129e0be4dfbeac85fe6700fd5b376c0ec8cb42cdbcb0dd3aa79d4c3746092504`.
