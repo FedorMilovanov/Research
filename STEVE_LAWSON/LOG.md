@@ -413,3 +413,14 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E142, обновлены SL-E101, SL-E102, задача 21 и статус охвата; README и LOG обновлены. Реестр ожидаемо содержит 142 уникальных ID `SL-E`. Raw PDF/сканы не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; реестр — 142 уникальных `SL-E` ID без дублей, SL-E142 — 8 ячеек; SHA сверён с LOG.
 - **SHA-256 dossier 28_ после прохода 39:** `092098dc8e1a2180b617e6356e36df39337e2009b115d3aefd1ec3f98cf76530`.
+
+
+## Проход 40 (29.09.2026) — ABN-1981: полный доступный текст 17.09
+
+- **Article 1074 (17.09, item 54; SL-E143):** получены и просмотрены все 9 текстовых чанков (0–8); chunk 8 сообщает `hasMore=false`. Целевой Steve/Steven Lawson не выявлен.
+- **Ложные совпадения:** Lawson Hatfield подписал вопрос о значении `8.5 by '85` как `director` в блоке о Sunday School Convention — пятнадцатый отдельный выпуск-ловушка (SL-E101). `Linda Lawson` — byline Baptist Press; `Steve Roberts` — отдельный пастор, ординированный в Crossett; целевыми лицами не являются.
+- Новый результат о преемнике Reed в выпуске отсутствует; назначение Clarence Shell Jr. документировано прямым сообщением в SL-E141.
+- **Покрытие:** 37 из 50 выпусков — непрерывно 01.01–17.09 (36) и 24.12 отдельно; остаются 13. Следующий по хронологии — 24.09.1981 (article 1075/item 53). Полный проход по целевому Lawson остаётся открытым.
+- **Файлы:** `28_` — добавлен SL-E143, обновлены SL-E101, SL-E102, задача 21 и статус охвата; README и LOG обновлены. Реестр ожидаемо содержит 143 уникальных ID `SL-E`. Raw PDF/сканы не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; реестр — 143 уникальных `SL-E` ID без дублей, SL-E143 — 8 ячеек; SHA сверён с LOG.
+- **SHA-256 dossier 28_ после прохода 40:** `cece69e65b6728256cd9ff74aa7d06ee0bffbdfb2d7110ce6b78d2a2ba7e6dba`.
