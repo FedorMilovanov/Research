@@ -146,7 +146,7 @@ The following remain closed at the level already recorded in `20_` and earlier f
 10. **CFL-интервью (обе части)** — читать страницы через `?_data=1`; получить аудио по шаблону `cfl-mango.s3.amazonaws.com/assets/podcastEpisodes/<id>/audio.mp3` (Vimeo-превью 1792596948 / 1795656674); транскрибировать (обращение в 17 лет, Мемфис, брак, Литл-Рок, 2003).
 11. **SC2006 GS7 Q&A (03.03.2006)** — `gracechurch.org/sermons/287`; MP3 установлен: `https://s3.amazonaws.com/media.shepherdsconference.org/2006/SC-2006-GS07-PANELK.mp3` (md5 `ef39c0a214a09ea78e843c53debd738e`, 15 594 935 байт); получить аудио (рассказ о Dauphin Way; уточнить, что «слёзы» у Ф. Батлера — про S. Lewis Johnson).
 12. **Ask Ligonier:** YouTube `Fouczzg3yhg` (28.07.2020) теперь **приватён**; искать аудио/расшифровки на `ask.ligonier.org` и в фидах Ligonier (эпизоды с Лоусоном 2020–2021 уже подтверждены).
-13. **Степени:** годы B.B.A. (1973?), Th.M. (1980?), D.Min. (1990?) пока только `C`-источники; нужен первичный документ.
+13. **Степени:** годы B.B.A. (1973?), Th.M. (1980?), D.Min. (1990?) пока только `C`-источники; нужен первичный документ. → **частично закрыто 29.09.2026:** приходская био 2001 (SL-E48, A2) называет B.B.A. 1973 / Th.M. 1980 / D.Min. 1990; остаётся первичный документ и расхождение B.A./B.B.A.
 14. **Texas Tech football:** ростеры 1969–1972 Lawson не содержат — проверить по студенческой прессе и программам.
 15. **Переходное письмо 16.06.2014 и «Origin» Christ Fellowship** — получены через Wayback (A3): даты служения 2003–2014, «eleven years», OnePassion «в Далласе» уже в середине 2014; сохранить текстовые извлечения и хэши в манифесте.
 16. **H.B. Charles, The On Preaching Podcast #017/#018 (февраль 2015)** — интервью о «background, conversion, education, formal training, and pastoral ministry»; аудио на Libsyn заблокировано платной подпиской → искать зеркала/архив (iTunes-фид шоу, аккаунты-перезаливы).
@@ -164,9 +164,14 @@ The following remain closed at the level already recorded in `20_` and earlier f
 25. **Юридическая школа/адвокат (SL-E39)** — Texas Tech School of Law (списки 1973–76), архивы *Lubbock Avalanche-Journal* 1977–79; подтвердить или снять реконструкцию «Кент Ханс».
 26. **Southwestern Seminary / DTS (SL-E37)** — каталоги студентов ~1977–1984: закрыть «пять лет» и годы Th.M.
 27. **Billy Graham crusade (SL-E41, SL-E45, SL-E46)** — его полный рассказ получен (Cripplegate, 22.02.2018); crusade-1989 подтверждён внешне; личная роль — нет. Остаётся: архив BGEA / *Decision* / программы; **диссертация RTS** — TREN: 0 записей по автору (28.09.2026).
-28. **Диссертация RTS (тема BGEA — evangelistic counseling/follow-up models)** — TREN проверен: 0 записей по автору «Lawson, Steven» и «Lawson, Steven J.» (28.09.2026); маршруты: RIM (ATLA), WorldCat/OCLC, каталог библиотеки RTS, ProQuest Dissertations.
-29. **Тексты книг на Internet Archive** — *Men Who Win* (1992, `menwhowinpursuin00laws`): производные `private`, inside-search недоступен (SL-E47); обходные маршруты: HathiTrust, Google Books, печатный экземпляр (ILL/покупка).
-30. **SC2006 GS7 Q&A — байты** — `https://s3.amazonaws.com/media.shepherdsconference.org/2006/SC-2006-GS07-PANELK.mp3` (md5 `ef39c0a214a09ea78e843c53debd738e`): получить аудио; зафиксировать рассказ о Dauphin Way и уточнить, что «слёзы» у Батлера — про S. Lewis Johnson.
+28. **Диссертация RTS (тема BGEA — evangelistic counseling/follow-up models)** — TREN проверен: 0 записей по автору «Lawson, Steven» и «Lawson, Steven J.» (28.09.2026); маршруты: RIM (ATLA), WorldCat/OCLC, каталог библиотеки RTS, ProQuest Dissertations. → добавить: HathiTrust (`catalog.hathitrust.org`) блокирует этот IP (Cloudflare); маршрут — RIM/ATLA, WorldCat, каталог RTS, ProQuest.
+29. **Тексты книг на Internet Archive** — *Men Who Win* (1992, `menwhowinpursuin00laws`): производные `private`, inside-search недоступен (SL-E47); обходные маршруты: HathiTrust, Google Books, печатный экземпляр (ILL/покупка). → HathiTrust также закрыт (Cloudflare, 29.09.2026): путь к текстам — Google Books / бумажные копии / рецензии.
+30. **SC2006 GS7 Q&A — байты** — `https://s3.amazonaws.com/media.shepherdsconference.org/2006/SC-2006-GS07-PANELK.mp3` (md5 `ef39c0a214a09ea78e843c53debd738e`): получить аудио; зафиксировать рассказ о Dauphin Way и уточнить, что «слёзы» у Батлера — про S. Lewis Johnson. → Wayback `available` (29.09.2026): `archived_snapshots: {}` — снимков нет; прямые fetch к S3 дают HTTP 500; байтовый маршрут с этого хоста закрыт, остаётся внешний канал.
+
+31. **Печатные артефакты Dauphin Way (eBay):** лоты 304808176098 (директория 1996), 305471637842 (1967), 336461066260 и 377202374342 (History, 1904–1979) — внешняя покупка/сканы; `RIGHTS_HOLD` для изображений.
+32. **BCLR 1981–1995:** точные даты пастората и материалы (бюллетени, годовщины, пресса Литл-Рока); учесть, что приходская био 2001 умалчивает BCLR.
+33. **«Truth For Today» (WBHY-840, Мобил, 2001–2003):** архив эфиров/расписаний через `goforth.org/840WBHY/840m-f.htm` и Wayback.
+34. **Shepherds’ Conference ≈1983 («23 года»):** верификация ранних лет; SC2006 GS7 / SC2007 GS8 байты — только внешний канал (см. п. 30).
 
 ### P2 — archival completeness / passive monitoring
 

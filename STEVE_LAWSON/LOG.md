@@ -51,3 +51,20 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - §4: абзац о датированных публичных пересказах 2006/2007; §7: два новых пункта; хронология: строка 03.03.2006; HOLD-таблица и очередь (`19_`, пункты 27–30) обновлены.
 
 Маршруты, закрытые в этом проходе (не повторять): inside-search IA для `menwhowinpursuin00laws` (archivelab 500, ia-petabox пусто, `fulltext/inside.php` — «item not available»), `openlibrary.org/search/inside` (капча), TREN exact-author по Steven Lawson.
+
+## Обновление 29.09.2026 — проход 9 (приходская био 2001, дети, Shepherds’ Conference, артефакты)
+
+Получено и внесено:
+- **SL-E48:** приходская официальная био на сайте Dauphin Way Baptist Church (`dwbc.org/lawsonbio.htm`, снимок Wayback `20011211193434`) — годы степеней (B.B.A. Texas Tech 1973; Th.M. DTS 1980; D.Min. RTS 1990), BGEA-роли (crusade-спикер, Franklin Graham, School of Evangelism), восемь книг с годами, «sportswriter for the Texas Rangers and the Dallas Cowboys», «lettered in football» в Texas Tech, Young Life Director и FCA President, UBC Fayetteville 1980–81 с капелланством Razorbacks; дети на декабрь 2001: близнецы 18 (Andrew, James), дочь 14 (Grace Anne), сын 11 (John). Странность: био умалчивает 14 лет в BCLR (1981–1995).
+- **SL-E49:** другие страницы сайта 2001 — приветствие старшего пастора «Steven J. Lawson» (`welcome.htm`), слоган «Where Faith Grows Strong» и радиотелепередача **«Truth For Today»** на WBHY-840 (`index.htm`), кассетное служение (`tapeministry.htm`), портреты `lawson.jpg`/`lawson24.jpg`.
+- **SL-E50:** `index.php` 2004 — Рев. Клинт Прессли становится 18-м пастором Dauphin Way с 15.02.2004; тогда же столетие церкви (осн. 1904).
+- **SL-E51:** ранний снимок Hip and Thigh (28.05.2006) — полнее снимка 2016: пятничная панель «more personal and pastoral», вопрос о наставниках, С. Льюис Джонсон «as his seminary professor when he was a student at Dallas Theological Seminary», слёзы; «the congregation essentially kicked him out of the Church for being Calvinistic».
+- **SL-E52:** первоисточник рассказа о BGEA — onepassion.org (слаг 2018-02-23; Cripplegate — перепечатка): 50 000 слушателей за семь вечеров, «ten years at every Billy Graham crusade in North America», аэропортный анекдот, уход из-за интервью Шуллеру.
+- **SL-E53/SL-E54:** Чаллис, liveblog SC2006 — состав панели GS7 подтверждён (MacArthur спрашивает Dever, Sproul, Mohler, Lawson; «This format does not lend itself to blogging»); в тот же день: «each year for the past twenty three years» (⇒ ≈1983), «For me, this is the one time in the year when everything seems right», Неемия 8:1–12.
+- **SL-E55:** pjtibayan (2009) — семинар 2007 «On the Shoulders of Giants: … John Calvin», 3/8/2007, 128Kbps; запись GS7 2006 в списке заказов.
+- **SL-E56:** the-end-time.org (07.11.2024, подкаст №98) — C/D-рецепция; 990: «Anne Lawson … 1 hour per week … $30,000»; женщина 2024 не названа.
+- **SL-E57:** eBay — директория 1996 (портреты Лоусона и штата), директория 1967, «History of DWBC 1904–1979» (лоты 304808176098, 305471637842, 336461066260, 377202374342) — печатные локаторы.
+- **SL-E58:** живая страница истории BCLR — перечень пасторов с Лоусоном без дат.
+- **SL-E59:** негативы — Wayback без снимков SC-аудио (`archived_snapshots: {}`), IA advancedsearch 0, HathiTrust заблокирован (Cloudflare).
+- Файлы: `28_` — 12 новых строк SL-E48…SL-E59, новый §8, правки §2/§3, хронология (≈1983, 15.02.2004), обновление задач; `19_` — правки пунктов 13/28/29/30 и новые пункты 31–34.
+
