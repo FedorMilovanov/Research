@@ -278,3 +278,14 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлены SL-E126–E128, обновлены SL-E101 и очередь; README и LOG обновлены. Raw PDF/сканы в Git не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` clean; source ledger — 128 уникальных ID `SL-E`, дубликатов нет, каждая новая строка SL-E126–E128 имеет 8 ячеек.
 - **SHA-256 dossier 28_ после прохода 27:** `6386858429ade25f12ecd6e12444e55813d9df816281a329e0667d7d38368130`.
+
+
+## Проход 28 (29.09.2026) — ABN-1981: выпуски 04.06 и 11.06
+
+- **Article 1062 (04.06, item 66; SL-E129):** первоначально была прочитана только колонка `Arkansas all over`; теперь повторный запрос вернул все 10 чанков 0–9, просмотренных целиком. Целевой Steve/Steven Lawson и преемник Рида не выявлены. Заголовок «Black River names new director» касается Marvin Robert Reynolds — director of missions Black River Association, а не должности директора евангелизации ABSC. Wally Ferguson сообщает о выходе на поле евангелизации, без штатного назначения.
+- **Article 1058 (11.06, item 70; SL-E130):** все 9 чанков 0–8 получены/просмотрены; целевой Lawson и объявление преемника не найдены. Lawson Hatfield назван Director of the Sunday School Department for ABSC и featured speaker в Springdale Caudle Avenue — ложный hit, добавлен к SL-E101.
+- **Хронология:** article 1058/item 70 датирован 11.06 и проверен после 04.06 (article 1062/item 66), невзирая на меньший article ID. Lawson Hatfield теперь подтверждён в девяти выпусках: 08.01, 22.01, 19.02, 12.03, 26.03, 23.04, 07.05, 21.05 и 11.06.
+- **Дальше:** 18.06.1981, article 1042/item 86; в предыдущей проверке получен только chunk 0, нужно отдельно попробовать доступные снимки/чанки.
+- **Файлы:** `28_` — добавлены SL-E129–E130, обновлены SL-E101/E102 и очередь; README и LOG обновлены. Raw PDF/сканы в Git не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` clean; source ledger — 130 уникальных ID `SL-E`, дубликатов нет, каждая новая строка SL-E129–E130 имеет 8 ячеек.
+- **SHA-256 dossier 28_ после прохода 28:** `0f172092a560f08487614f386840997a278b70c58fd9cf533e9703863968fd62`.
