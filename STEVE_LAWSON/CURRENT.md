@@ -1,18 +1,21 @@
 # Steven J. Lawson — CURRENT
 
 **Snapshot:** 2026-09-30  
-**Corpus:** `LAWSON-2024-2026` + reconciled early-biography public-web phase  
-**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PASS 37 FROZEN FOR V6 / OPEN-ENDED RESEARCH STOPPED`
+**Corpus:** `LAWSON-2024-2026` + reconciled early-biography public-web phase + fresh targeted P1/gold pass  
+**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / FRESH 100+ LINK PASS COMPLETE / BIOGRAPHY PASS 37 FROZEN FOR V6 / OPEN-ENDED RESEARCH STOPPED`
 
 ## Canonical publication stack
 
 1. **Canonical article:** `74_ARTICLE_RU_REFINED_V6_2026-09-30.md`
 2. **Final V6 claim/source audit:** `75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md`
-3. **Stable research verdict:** `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`
-4. **Biography reconciliation bridge:** `68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md`
-5. **Biography freeze/impact audit:** `70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`
-6. **Canonical-stack consistency audit:** `71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`
-7. **Operational navigation:** `_START_HERE.md`
+3. **Fresh 100+ link P1/gold pass:** `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md`
+4. **July-2026 false-comeback / declined-invitation guardrail:** `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md`
+5. **Book metadata/POD distribution audit:** `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md`
+6. **Stable research verdict:** `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`
+7. **Biography reconciliation bridge:** `68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md`
+8. **Biography freeze/impact audit:** `70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`
+9. **Canonical-stack consistency audit:** `71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`
+10. **Operational navigation:** `_START_HERE.md`
 
 Superseded for publication:
 
@@ -45,6 +48,93 @@ The central evidentiary contrast is therefore:
 > **known warning — and in one area partial self-diagnosis — versus insufficient lived correction.**
 
 This is stronger and more precise than a generic charge of hypocrisy.
+
+---
+
+## Fresh targeted 100+ link pass — what actually changed
+
+After V6 freeze, a deliberately targeted fresh-web pass reviewed **100+ returned result URLs** across the unresolved P1 and newest-data lanes rather than repeating generic Lawson searches.
+
+The pass produced **two material new nodes**, plus strengthened negative saturation on the unresolved governance/family questions.
+
+### New node A — July 2026 conference listing is a false-comeback trap
+
+Canonical file:
+- `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md`
+
+Lawson was genuinely and briefly advertised for sermon-preparation workshops at the 2026 Contending for the Faith conference.
+
+But contemporaneous Protestia reporting, citing sources close to the matter, says:
+
+- organizers invited him;
+- advertised him before receiving an acceptance;
+- the listing was without his knowledge/consent;
+- when he learned of it, he **declined**;
+- organizers removed him.
+
+ChurchLeaders carried the correction and said it sought direct comment from organizers and Lawson.
+
+The current official conference site has 24 speakers and a full schedule with **no Lawson**.
+
+Evidence ceiling:
+
+> the non-participation state is official/current; the act/reason of declining is strong sourced reporting, not yet a first-person Lawson or signed-organizer statement.
+
+Therefore:
+
+> **DO NOT USE THE JULY 2026 WEBSITE SCREENSHOT AS PROOF THAT LAWSON HAD CHOSEN TO RESUME PUBLIC CONFERENCE TEACHING.**
+
+If the sourced account is accurate, he had a concrete teaching invitation and did not take it.
+
+A separate alleged September-2025 Contending listing surfaced only in a later secondary blog during this pass and remains unconfirmed. Do not merge it with the well-documented July-2026 event.
+
+### New node B — book metadata split + explicit POD signal
+
+Canonical file:
+- `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md`
+
+Multiple unrelated international retailers expose a coherent record:
+
+- Publisher: **But God Press**;
+- date: **Aug. 20, 2026**;
+- **124 pages**;
+- ISBN 9798996167302;
+- consistent dimensions/weight.
+
+Goodreads/Amazon/AbeBooks-facing layers instead expose Sep. 1 / 122 pages and have displayed `Steven Lawson` as publisher.
+
+The strongest production upgrade is Yes24, which explicitly labels the title **POD / made-to-order**.
+
+Thus the public evidence now supports:
+
+> **very small author-controlled or author-adjacent imprint + print-on-demand distribution characteristic**.
+
+It still does **not** establish:
+
+- legal owner of But God Press;
+- Bowker registrant;
+- specific POD provider (Ingram/Lightning Source/KDP/etc.);
+- two physical editions;
+- Aug. 20 as first public on-sale date.
+
+The photographed copyright page in `35_` remains primary for Lawson copyright + But God Press publisher/imprint + ISBNs.
+
+### What the pass did NOT close
+
+Despite the large targeted sweep, no new direct public object identified:
+
+- the two professional counselors;
+- the two pastors / accountability-team roster;
+- CCRMin's unnamed restoration elder;
+- an Anne Lawson current statement;
+- formal TBC→SVC transfer/release;
+- a direct `Tom Gibson = post-Lawson OnePassion president` title record;
+- a substantive editor/theological reviewer named in acknowledgments/end matter;
+- a finished-manuscript approval statement from SVC/TBC/OnePassion/family/counselors;
+- photographed custody of all six root-cause book sections;
+- an actual publicly indexed ebook object for ISBN `9798996167319`.
+
+The fresh pass therefore strengthens the conclusion that these are genuine public-record gaps rather than merely untried obvious searches.
 
 ---
 
@@ -132,13 +222,14 @@ More than four decades of public spiritual identity do not create a biblical for
 - OnePassion's public ministry output effectively stopped, while entity/governance significance continued.
 - A post-Lawson OnePassion president existed according to Clint Archer; Tom/Thomas Gibson remains a strong candidate, not a proven title fact.
 - Copyright page establishes Steven Lawson copyright, But God Press, Caleb Faires design/layout and the two ISBNs.
-- The ISBN/retail pattern is consistent with an author-controlled micro-imprint/self-publishing-style structure; legal registrant/ownership/revenue remain unresolved.
+- International distribution metadata plus Yes24's POD label strengthen an author-controlled micro-imprint / print-on-demand-style production model; legal registrant, exact POD backend, ownership and revenue remain unresolved.
 - The six-root structure is strongly reader/reviewer located but exact pages are not all in photographed custody.
 - No public acknowledgments/end matter identifying a substantive editor/theological reviewer/pastoral manuscript approver has been acquired.
 - CCRMin / Justin Hoke reports that an unnamed elder involved in restoration said church companions encouraged Lawson to **write**. This does not establish finished-manuscript approval to **publish**.
 - No direct relevant current Anne statement has been acquired.
 - Divorce is not established; completed reconciliation is not established; current legal marital status remains unresolved.
 - No verified return to pastor/elder office is established.
+- July 2026 conference advertising is not safe proof of an attempted teaching comeback; sourced reporting says Lawson declined the invitation, and the current official roster/schedule omit him.
 
 ---
 
@@ -164,7 +255,13 @@ Do not state as fact that:
 - Dauphin Way 2003 was simply a formal expulsion solely for Calvinism;
 - one 1970 Texas Tech roster disproves the football story;
 - the 1981 Arkansas Baptist sweep is physically exhaustive;
-- old live Trinity ministry pages prove Lawson has returned to current teaching.
+- old live Trinity ministry pages prove Lawson has returned to current teaching;
+- Lawson accepted the July 2026 conference invitation or withdrew only because of backlash;
+- the July conference listing proves a Lawson-initiated comeback;
+- the alleged Sept. 2025 Contending listing is established fact;
+- the book is proven to have two physical editions because of 122/124-page metadata;
+- Aug. 20 is proven to be the first public sale date;
+- Yes24's POD label identifies a specific manufacturer such as Ingram/Lightning Source or KDP.
 
 ---
 
@@ -177,14 +274,16 @@ Only reopen substantive research for genuinely new primary objects:
 3. direct identities of the professional counselors / two pastors / accountability roster;
 4. identity of CCRMin's unnamed restoration elder;
 5. Bowker/Global Register registrant for `979-8-9961673` if access becomes available;
-6. direct current Anne statement;
-7. formal TBC→SVC transfer/release object;
-8. direct post-Lawson OnePassion president record;
-9. direct finished-book review/approval statement from an actual restoration stakeholder;
-10. original/human-checked July 2020 Ask Ligonier timecodes;
-11. a future biography delta only if it meets Tier A in `70_`.
+6. distributor/ONIX/POD-backend identity for the Aug-20/124-page record;
+7. direct current Anne statement;
+8. formal TBC→SVC transfer/release object;
+9. direct post-Lawson OnePassion president record;
+10. direct finished-book review/approval statement from an actual restoration stakeholder;
+11. original/human-checked July 2020 Ask Ligonier timecodes;
+12. direct Lawson/organizer documentation for the July 2026 invitation/decline;
+13. a future biography delta only if it meets Tier A in `70_`.
 
-Generic web searching is no longer a justified critical path.
+Another generic 100-link search is not a justified critical path after `78_`; use only trigger-driven searches from the targets above.
 
 ---
 
@@ -194,8 +293,10 @@ Generic web searching is no longer a justified critical path.
 
 > **PASS / PUBLICATION_READY_WITH_GUARDRAILS / NO MATERIAL CLAIM-SOURCE REGRESSION FOUND.**
 
+Fresh pass `78_` found no contradiction requiring V7.
+
 Canonical article:
 
 > `74_ARTICLE_RU_REFINED_V6_2026-09-30.md`
 
-The Lawson research/article project is now at a logical stopping point. Continue only on a genuinely new primary evidence delta, not by reopening already saturated search loops.
+The Lawson research/article project remains at a logical stopping point after the fresh 100+ link pass. Continue only on a genuinely new primary evidence delta, not by reopening already saturated search loops.
