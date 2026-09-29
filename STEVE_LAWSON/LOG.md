@@ -365,3 +365,15 @@ SL-E35: интервью H.B. Charles (февраль 2015) было **виде�
 - **Файлы:** `28_` — добавлен SL-E138, обновлены SL-E101, SL-E102 и задача 21; `README` и `LOG` обновлены. Raw PDF/сканы не добавлялись.
 - **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; source ledger — 138 уникальных ID `SL-E`, дубликатов нет, SL-E138 содержит 8 ячеек.
 - **SHA-256 dossier 28_ после прохода 35:** `c1cc342eead5f208f84025fe534892135358a10700b87b5c940ceb482caa858e`.
+
+
+## Проход 36 (29.09.2026) — ABN-1981: выпуск 20.08 и несогласованность счётчика чанков
+
+- **Article 1070 (20.08, item 58; SL-E139):** проверены все уникальные индексы чанков 0–15; chunk 15 сообщает `hasMore=false`. При этом первый запрос через Wayback redirect сообщил `totalChunks=17`, прямые запросы к каноническому снимку — `totalChunks=16`, а запрос `chunkIndex=16` разрешился повторным `chunkIndex=15`. Уникального дополнительного чанка 16 не обнаружено; несогласованность сохранена в учёте, а отрицательный вывод ограничен текстом индексов 0–15.
+- **Результат поиска:** Steve/Steven Lawson и сообщение о результате поиска/назначении преемника Jesse S. Reed не выявлены. Lawson Hatfield вновь явно назван как Assembly Director и Director, Sunday School Department, ABSC; это двенадцатый отдельный выпуск-ловушка (SL-E101).
+- **Сходные, но иные назначения:** H. Dean Preuett возглавляет Central Arkansas Special Missions Ministries (совместный проект Missions Department ABSC и SBC Home Mission Board), не отдел евангелизации. Isam E. Ballenger сменяет J. D. Hughey на Foreign Mission Board, не Reed. W. G. Dove описан как retired pastor, продолжающий евангелистское служение; это тоже не назначение директором ABSC.
+- **Покрытие:** полные/доступные текстовые выдачи просмотрены для 33 из 50 выпусков 1981 года: 32 последовательно от 01.01 до 20.08 плюс 24.12 отдельно. 17 выпусков ещё не просмотрены; общий отрицательный вывод по году не делается.
+- **Дальше:** следующий по хронологии — 27.08.1981, article 1071/item 57.
+- **Файлы:** `28_` — добавлен SL-E139, обновлены SL-E101, SL-E102 и задача 21; `README` и `LOG` обновлены. Raw PDF/сканы не добавлялись.
+- **Проверки:** `validate_research_root_authority.py` PASS; `validate_repository_authority_integrity.py` PASS; `git diff --check` PASS; source ledger — 139 уникальных ID `SL-E`, дубликатов нет, SL-E139 содержит 8 ячеек.
+- **SHA-256 dossier 28_ после прохода 36:** `864be53b26e03ba92069904fdaa28ae6e2a90ea429af8808a3fbec903f934ea6`.
