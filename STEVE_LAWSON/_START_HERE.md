@@ -4,7 +4,7 @@
 **Canonical operational handoff:** [`CURRENT.md`](CURRENT.md)  
 **State:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PUBLIC-WEB CLOSED / MAIN AUTHORITATIVE / ARENA RETIRED / OUTBOUND ACQUISITIONS ACTIVE`
 
-> **Start with `74_`, `75_`, `81_`, `83_`, `84_`, then `CURRENT.md`. Main is authority. Do not resume from V4/V5, arena control files, consumed staging, or generic search loops.**
+> **Start with `74_`, `75_`, `81_`, `83_`, `84_`, `85_`, then `CURRENT.md`. Main is authority. Do not resume from V4/V5, arena control files, consumed staging, or generic search loops.**
 
 ## Canonical reading order
 
@@ -13,27 +13,28 @@
 3. [`81_CANONICAL_BIOGRAPHY_CLOSURE_AND_PRIMARY_SOURCE_UPGRADES_2026-09-30.md`](81_CANONICAL_BIOGRAPHY_CLOSURE_AND_PRIMARY_SOURCE_UPGRADES_2026-09-30.md) — canonical biography authority in main.
 4. [`82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md`](82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md) — exhausted public-web routes and exact external-only remainder.
 5. [`83_POST_BIOGRAPHY_CLOSURE_V6_CONSISTENCY_AUDIT_2026-09-30.md`](83_POST_BIOGRAPHY_CLOSURE_V6_CONSISTENCY_AUDIT_2026-09-30.md) — post-closure audit: **PASS / no V7 trigger**.
-6. [`84_EXTERNAL_ACQUISITION_OUTREACH_AND_GRACE_MEDIA_FIRST_PARTY_UPGRADE_2026-09-30.md`](84_EXTERNAL_ACQUISITION_OUTREACH_AND_GRACE_MEDIA_FIRST_PARTY_UPGRADE_2026-09-30.md) — **active acquisition ledger, 11 dispatched holder requests, first-party Grace media upgrade**.
-7. [`CURRENT.md`](CURRENT.md) — current operational authority and hard guardrails.
-8. [`80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md`](80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md) — final arena-push provenance reconciliation (`34152fe...`, pass 48).
-9. [`78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md`](78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md) — targeted 100+ result P1 pass.
-10. [`79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md`](79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md) — GRP/POD/endmatter/named-support pass.
-11. [`76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md`](76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md) — July-2026 false-comeback guardrail.
-12. [`77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md`](77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md) — metadata split + explicit POD signal.
-13. [`62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`](62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md) — stable research verdict.
+6. [`84_EXTERNAL_ACQUISITION_OUTREACH_AND_GRACE_MEDIA_FIRST_PARTY_UPGRADE_2026-09-30.md`](84_EXTERNAL_ACQUISITION_OUTREACH_AND_GRACE_MEDIA_FIRST_PARTY_UPGRADE_2026-09-30.md) — active acquisition ledger, 11 dispatched holder requests, first-party Grace media upgrade.
+7. [`85_OUTBOUND_ACQUISITION_DELIVERY_CHECKPOINT_2026-09-30.md`](85_OUTBOUND_ACQUISITION_DELIVERY_CHECKPOINT_2026-09-30.md) — **delivery control: FSU ticket #58057; no immediate delivery failure observed for the rest; substantive responses pending**.
+8. [`CURRENT.md`](CURRENT.md) — current operational authority and hard guardrails.
+9. [`80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md`](80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md) — final arena-push provenance reconciliation (`34152fe...`, pass 48).
+10. [`78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md`](78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md) — targeted 100+ result P1 pass.
+11. [`79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md`](79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md) — GRP/POD/endmatter/named-support pass.
+12. [`76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md`](76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md) — July-2026 false-comeback guardrail.
+13. [`77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md`](77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md) — metadata split + explicit POD signal.
+14. [`62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`](62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md) — stable research verdict.
 
 Historical only: `64_`, `68_`, `69_`, `70_`, `71_`, `73_` and arena control files.
 
 ---
 
-## Biography is now owned by main
+## Biography ownership
 
 Final arena provenance checkpoint:
 
 - `arena/01a0ee73-research @ 34152fe42cd93f5db03f2a5ddab8332218ee3814`;
 - pass 48.
 
-Do **not** wholesale-merge that branch. `80_` reconciles its final delta; `81_` is the cleaned canonical biography; `82_` records the public-search stop rule; `83_` proves V6 remains sound; `84_` activates the exact external acquisitions.
+Do **not** wholesale-merge that branch. `80_` reconciles its final delta; `81_` is the cleaned canonical biography; `82_` records the public-search stop rule; `83_` proves V6 remains sound; `84_` activates the exact external acquisitions; `85_` records actual delivery state.
 
 > **Main = authority. Arena = provenance. New evidence is semantically integrated into main, never replayed by branch overwrite.**
 
@@ -79,6 +80,16 @@ Thus event/session provenance is first-party. MP3 bytes/transcripts remain acces
 10. **Texas Rangers Publications/Communications** — historical writer/byline/credential check; pitcher namesake explicitly excluded.
 11. **Dallas Cowboys** — routing to historical/communications/publications records for the same sportswriter question.
 
+### Delivery state
+
+`85_` records the first delivery checkpoint:
+
+- **FSU Special Collections = received/ticketed, #58057**;
+- **no immediate bounce/undeliverable observed** across the dispatched set;
+- **no other substantive holder response observed yet** at that checkpoint.
+
+Do not convert silence into proof that every address was accepted or that research is underway.
+
 Operational rule:
 
 > **Do not rerun generic searches for these exact objects while holder requests are pending. On response, preserve the original source/attachment, classify it, and update only what the response actually proves.**
@@ -120,7 +131,7 @@ Do not launch another generic 100-link crawl without a new trigger.
 > **BIOGRAPHY PUBLIC-WEB WORK = CLOSED**  
 > **MAIN = CANONICAL AUTHORITY**  
 > **ARENA = PROVENANCE ONLY**  
-> **EXACT ARCHIVE/MEDIA REQUESTS = DISPATCHED / AWAITING HOLDERS**  
+> **EXACT ARCHIVE/MEDIA REQUESTS = DISPATCHED / FSU TICKETED / AWAITING HOLDERS**  
 > **V6 = PASS / PUBLICATION READY WITH GUARDRAILS**  
 > **V7 TRIGGER = NONE**
 
