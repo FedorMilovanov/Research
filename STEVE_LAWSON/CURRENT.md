@@ -1,216 +1,196 @@
 # Steven J. Lawson — CURRENT
 
 **Snapshot:** 2026-09-30  
-**Corpus:** `LAWSON-2024-2026` + reconciled early-biography lane + targeted post-V6 P1 passes  
-**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY PASS 48 RECONCILED / OPEN-ENDED RESEARCH STOPPED`
+**Corpus:** `LAWSON-2024-2026` + canonical biography closure + targeted post-V6 P1 passes  
+**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY MAIN-CANONICAL CLOSED / ARENA RETIRED AS WORKING AUTHORITY / EXTERNAL ACQUISITIONS TRIGGER-DRIVEN`
 
-## Canonical publication stack
+## Canonical stack
 
-1. **Canonical article:** `74_ARTICLE_RU_REFINED_V6_2026-09-30.md`
-2. **Final V6 claim/source audit:** `75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md`
-3. **Latest biography reconciliation:** `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md`
-4. **Fresh 100+ link P1/gold pass:** `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md`
-5. **Narrow GRP / POD backend / endmatter / named-support pass:** `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md`
-6. **July-2026 false-comeback guardrail:** `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md`
-7. **Book metadata/POD distribution audit:** `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md`
-8. **Stable research verdict:** `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`
-9. **Pass-37 biography bridge:** `68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md` — historical reconciliation layer, now extended by `80_`.
-10. **Biography Tier-A/freeze criteria:** `70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md` — criteria remain governing; its old pass-37 checkpoint is superseded by `80_`.
-11. **Operational navigation:** `_START_HERE.md`
+1. `74_ARTICLE_RU_REFINED_V6_2026-09-30.md` — canonical Russian publication article.
+2. `75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md` — final claim/source audit: PASS.
+3. `81_CANONICAL_BIOGRAPHY_CLOSURE_AND_PRIMARY_SOURCE_UPGRADES_2026-09-30.md` — **current canonical biography authority in main**.
+4. `82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md` — final archive-only remainder / negative-search receipt.
+5. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — provenance reconciliation for the last arena push.
+6. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
+7. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
+8. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
+9. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
+10. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
+11. `_START_HERE.md` — operational navigation.
 
-Editorial history only:
-- `64_ARTICLE_RU_REFINED_V5_2026-09-29.md`;
-- `69_ARTICLE_RU_V6_BIOGRAPHY_INTEGRATION_PLAN_2026-09-30.md`;
-- `73_ARTICLE_RU_V6_BIOGRAPHY_INSERT_DRAFTS_2026-09-30.md`.
+Historical reconciliation layers only:
+- `68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md` — pass-37 layer;
+- `70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md` — Tier-A criteria; checkpoint superseded by `80_`/`81_`;
+- `64_`, `69_`, `73_` — V5/V6 planning/staging history.
 
-Do **not** regenerate V6 from old staging or promote arena `17_`/`19_` over current main.
+Do **not** regenerate V6 from historical staging or promote arena `17_`/`19_`/README over current main.
 
 ---
 
-## Canonical thesis
+## Biography ownership and merge policy
 
-The strongest documented problem is not lack of theological categories.
+The arena agent is no longer a dependency.
+
+Final arena provenance checkpoint:
+
+- branch: `arena/01a0ee73-research`;
+- HEAD: `34152fe42cd93f5db03f2a5ddab8332218ee3814`;
+- pass 48.
+
+That branch remains historical provenance only. It contains useful evidence work but also stale/parallel control files and the older `17_ v4.1` article line.
+
+Canonical rule:
+
+> **Main is authority. Preserve arena provenance; semantically reconcile evidence; never wholesale-merge arena control state.**
+
+`80_` reconciled pass 48. `81_` then completed the biography with stronger public/institutional sources and became the canonical main biography layer. `82_` records the exact archive-only remainder and final public-search stop rule.
+
+---
+
+## Canonical biography verdict
+
+The long biography arc is now sufficiently established for publication and future research work.
+
+### Education
+
+- Texas Tech official commencement, 12 May 1973: `Steven James Lawson` under Bachelor of Business Administration — **B.B.A. 1973 strongly established**.
+- Official Ligonier biography independently gives `B.B.A. Texas Tech / Th.M. Dallas Theological Seminary / D.Min. Reformed Theological Seminary`.
+- Official RTS Fall 2013 alumni profile confirms D.Min. from RTS while Lawson was a pastor in Little Rock.
+- Preserved RTS institutional-newsletter wording repeatedly gives `D.Min. '90` — 1990 strongly supported.
+- Exact RTS D.Min. project title remains archive-only; no public title has been safely identified.
+
+### Formation / preaching call
+
+RTS 2013 and Lawson's direct 2016 Homiletix interview together establish:
+
+- upbringing in Memphis;
+- his own description of a liberal church background without strong biblical preaching;
+- preaching beginning while he was in college;
+- post-college exposure to Adrian Rogers at Bellevue Baptist Church;
+- Lawson's own statement that this was where God called him into ministry;
+- Rogers, MacArthur and Sproul as three major direct preaching influences.
+
+### Texas Tech football
+
+Official RTS 2013 biography calls Lawson a former college football player and states that colleges recruited him as a quarterback before he shifted to wide receiver at Texas Tech.
+
+Classification:
+
+> **basic Texas Tech football participation = high-confidence institutional/first-person biography; exact scholarship terms, season, varsity letter and Picadors mechanics = physical-archive refinement.**
+
+One 1970 varsity game-program roster that does not list him is a roster-specific negative only and does not disprove the football history.
+
+### Early pastoral chronology
+
+- April 1981 contemporary Tampa record: minister at University Baptist Church, Fayetteville.
+- Lawson's own 2018 article: pastor of The Bible Church of Little Rock in 1989.
+- 1992 *Men Who Win* publisher biography: BCLR senior pastor for over ten years.
+- 1995 Dauphin Way start remains strongly supported through the Alabama Baptist carrier chain.
+- 2003 Christ Fellowship planting is institutionally supported by RTS 2013 and the existing contemporary/Wayback corpus.
+- 2016 Lawson says he had stepped down from his last pastorate almost two years earlier after 34 years as a pastor.
+
+Article-level conclusion:
+
+> **a roughly 1980–2014 continuous pastoral career and a public spiritual identity built across more than four decades are strongly supported.**
+
+Exact UBC/BCLR installation/release dates remain archive precision, not a missing chronology theory.
+
+### 1989 Billy Graham crusade
+
+Lawson's own 2018 account establishes his claimed role as counseling/follow-up chairman while pastoring BCLR. Contemporary Arkansas Baptist records give differently framed numerical totals.
+
+Use:
+
+> **retrospective narrative should be calibrated against contemporary records.**
+
+Do not use numerical differences as proof of deliberate dishonesty.
+
+### Sportswriter claim
+
+The 1992 *Men Who Win* publisher biography says Lawson was a former sportswriter for the Texas Rangers and Dallas Cowboys.
+
+This establishes that the claim existed in a near-contemporary publisher biography; it is not modern AI-slop.
+
+But no direct byline, staff record, outlet or employment classification was found.
+
+Classification:
+
+> **Tier B period publisher-biography claim; direct byline/employment proof remains archive-only.**
+
+### Namesake traps
+
+Searches are heavily polluted by:
+- Steven George Lawson, MLB pitcher for the 1972 Texas Rangers;
+- a separate Steve Lawson, NFL offensive lineman.
+
+Never merge those identities into preacher Steven J. Lawson.
+
+### Marriage/family baseline
+
+The April 1981 marriage/ministry record, 2013 wise-wife teaching and 2020 Anne Q&A are sufficient for the article's historical contrast.
+
+They do not establish current marital status, divorce, completed reconciliation, or Anne's view of the 2026 book.
+
+---
+
+## Biography public-web closure
+
+`82_` records a final targeted pass for the residual exact questions.
+
+Public-web searching is now **closed** for:
+
+1. RTS D.Min. project title;
+2. exact Texas Tech football scholarship/letter/season/Picadors status;
+3. sportswriter outlet/bylines;
+4. exact University Baptist appointment/release dates;
+5. exact Bible Church of Little Rock installation date;
+6. full-resolution Tampa Times 20 Apr 1981 target page.
+
+Failure to find these publicly does not mean the records do not exist. The correct next channel is an exact archive/database/source-byte acquisition.
+
+External-only routes are documented in `81_` and `82_`.
+
+---
+
+## Media acquisition remainder
+
+CFL Parts 1/2 candidate first-party MP3 routes from pass 48 remain exact technical leads, not verified receipts.
+
+The authorized Remote Desktop device was checked on 30 Sep 2026 and was offline, so it could not provide alternate network egress.
+
+Shepherds' Conference GS2/GS7/GS8 likewise remain exact source-byte acquisitions.
+
+Rule:
+
+> **Retry only from a working download-capable environment. If acquired, record bytes, SHA-256, duration, identity and human-checked transcript. Network failure is not evidence of source absence.**
+
+These media are no longer conceptual biography blockers because the material long-arc propositions are independently supported.
+
+---
+
+## Central article thesis remains stable
 
 Before the fall Lawson had already publicly taught or articulated:
 - private godliness before public ministry;
 - conscience as alarm/brakes/stop signs;
 - self-deception beneath correct public doctrine;
-- vulnerability around success/fatigue/isolation (Jeffress attribution);
+- vulnerability around success/fatigue/isolation;
 - grace, mercy, peacemaking and restoration;
 - the spiritual value of a wise wife and Anne's feedback/support.
 
-On July 28, 2020 he also publicly acknowledged that he should have prayed more, had been excessively driven in work, and should have taken more vacation and rest.
+On July 28, 2020 he also publicly acknowledged that he should have prayed more, had been excessively driven in work, and needed more vacation/rest.
 
-Therefore the central source-bounded contrast is:
+Therefore:
 
 > **known warning — and in one area partial self-diagnosis — versus insufficient lived correction.**
 
-Post-fall, real counseling, pastoral care and accountability existed. The corpus therefore rejects a caricature of solitary self-restoration.
+Post-fall counseling, pastoral care and accountability really existed. The corpus rejects a caricature of solitary self-restoration.
 
 But the strongest governance asymmetry remains:
 
 > **January-2025 interview gatekeeping was publicly described with broad stakeholder agreement; a comparably transparent finished-book review/approval chain is not publicly disclosed for the 2026 book.**
 
-This is a transparency finding, not proof of defiance, bypass or disobedience.
-
----
-
-## Biography lane — pass 48 reconciled
-
-Previous practical freeze:
-- `arena/01a0ee73-research` @ `58a008b59834200f3f5474c52f9d98c0dad5e515`, pass 37.
-
-Current reconciled provenance checkpoint:
-- `arena/01a0ee73-research` @ `34152fe42cd93f5db03f2a5ddab8332218ee3814`, pass 48.
-
-GitHub comparison establishes that `34152fe...` is a **direct one-commit descendant** of `58a008b...`, with no divergence. The single push contains accumulated passes 45–48 plus pre-existing arena edits to `17_` that were swept into the commit.
-
-`80_` is the governing reconciliation receipt for this delta.
-
-### Net pass-48 result
-
-**Tier-A corrections to V6:** `0`  
-**Article-changing contradictions:** `0`  
-**Tier-B biography improvements:** `yes`  
-**New source-byte acquisition in pass 48:** `0`
-
-### Strongest positive biography upgrade — Texas Tech 1973
-
-The official Texas Tech commencement program of **12 May 1973** lists `Steven James Lawson` under `Bachelor of Business Administration (Continued)` in the College of Business Administration graduate list.
-
-Current conclusion:
-
-> **B.B.A., Texas Tech, 1973 is strongly supported by an official institutional commencement record plus the existing identity chain.**
-
-Guardrails:
-- do not infer a specific Finance major or Memphis hometown from separated OCR fields without visual verification;
-- retain the exact wording of the 1981 newspaper source rather than silently rewriting it;
-- V6 presently says only that Lawson was a Texas Tech graduate, so no prose correction is required.
-
-### Arkansas Baptist 1981
-
-The arena completed all **50/50 mapped issues at the level of available text extraction**.
-
-- Target Steve/Steven Lawson was not found in the returned text.
-- `Lawson Hatfield` is confirmed as a recurring false-match trap in 23 issues.
-- The 8 October archive mismatch was resolved through a distinct correct Wayback capture.
-
-This is archival saturation, **not visual page-by-page completeness** and not a contradiction of the contemporary Tampa wedding/ministry record.
-
-### Shepherds' Conference 2007 GS2
-
-Two near-contemporary reports place Lawson in **Session II, 7 March 2007**, with the Acts 2 apostolic-preaching session. SermonAudio `31918179251` is a strong catalog match.
-
-But neither S3 object was acquired/compared and no transcript was obtained.
-
-Classification:
-
-> **strong locator/identity improvement; audio acquisition still open.**
-
-### CFL Life Story
-
-Pass 48 derives two candidate first-party audio routes from the pattern used by other live CFL episodes:
-
-- Part 1: `https://churchandfamilylife.com/s3/assets/podcasts/65b01c4fad65a9d0a93e4e34/audio.mp3`
-- Part 2: `https://churchandfamilylife.com/s3/assets/podcasts/65ba8d2a33d020a85626fd6e/audio.mp3`
-
-Jina Reader reports download-start behavior for both candidates and a known current control, while a dummy ID returns S3 denial. No target bytes, duration, hash, identity check or transcript were acquired.
-
-Classification:
-
-> **high-value acquisition lead, not a source receipt.**
-
-### McCarty correction
-
-The earlier negative inference from the H.D. McCarty machine transcript is withdrawn. The transcript is too garbled to support reliable positive or negative conclusions.
-
-Rule:
-
-> **bad ASR is not negative evidence.**
-
-### Tampa Times 1981
-
-Newspaper index/physical-film locators improved, but the actual page/Part 1 scan is still not acquired.
-
----
-
-## Arena `17_` v4.1 in the pass-48 commit — do not replay as a new article
-
-The `34152fe...` push also includes pre-existing arena edits to `17_`:
-- Dec. 11, 2024 Trinity membership/discipline carrier evidence;
-- 2019-uploaded Lawson purity Q&A and `~26` vs Benzinger `28` distinction;
-- Didaché / Mark Jones wilderness-category critique;
-- giftedness / qualification / trust / platform distinction.
-
-These are **not pass-48 discoveries**. The underlying research already exists in current main, especially `21_CONTROL_RESEARCH_2026-09-29.md` and later synthesis files; V6 already contains the central giftedness/qualification/trust/platform distinction.
-
-Therefore:
-
-> **Do not replace canonical V6 (`74_`) with arena `17_`, and do not restore arena `19_` or README as current authority.**
-
-The Trinity Dec. 11 carrier evidence remains a valid research fact even though V6 does not need a long membership excursus for its current thesis.
-
----
-
-## Fresh targeted P1 results retained after V6
-
-### July 2026 conference
-
-Lawson was briefly advertised for sermon-preparation workshops at the 2026 Contending for the Faith conference. Contemporary sourced reporting says organizers listed him before receiving acceptance and that Lawson declined after learning of the listing. The current official roster/schedule omit him.
-
-Guardrail:
-
-> **Do not use the July-2026 screenshot as proof that Lawson chose to resume conference teaching.**
-
-### Book metadata / POD
-
-A broad international retailer cluster carries:
-- But God Press;
-- Aug. 20, 2026;
-- 124 pages;
-- ISBN `9798996167302`.
-
-Goodreads/Amazon/AbeBooks-facing layers carry Sep. 1 / 122 pages and have displayed `Steven Lawson` as publisher.
-
-Yes24 explicitly labels the title **POD / made-to-order**.
-
-The photographed copyright page remains primary for Lawson copyright, But God Press, Caleb Faires, and the print/ebook ISBNs.
-
-### GRP/Bowker
-
-The official Global Register of Publishers is confirmed as the correct route for the ISBN registrant. The interactive result was not acquired because current interactive-tool access was credit-blocked and the result is not ordinarily indexed.
-
-> **Registrant remains unresolved. Do not infer it from Amazon, copyright ownership or the imprint line.**
-
-### POD backend
-
-POD is established at the retailer layer. No ISBN-linked public object establishes Ingram, Lightning Source, KDP or another provider.
-
-> **POD = established. Specific provider/printer/wholesaler = unresolved.**
-
-### End matter
-
-No physical acknowledgments/end-matter page was acquired.
-
-> **No acknowledgments page acquired ≠ no acknowledgments exist.**
-
-### Todd C. Leonard
-
-Todd C. Leonard is strongly identified as the Pensacola Micah Mandate / Micah 6:8 Ministries leader whose Sept. 20 post said he had spent time recently with Lawson and promoted the book.
-
-No public bridge places him in SVC, Trinity, OnePassion governance, Lawson's counseling/pastoral/accountability team or manuscript review.
-
-Classification:
-
-> **named recent personal contact/public supporter; not a proven restoration stakeholder.**
-
-### Current SVC role continuity
-
-Current SVC officer state identifies:
-- Jim Bachmann — Moderator of the Elder Council;
-- Terry Warren — Reserve Elder.
-
-These roles confirm institutional continuity only; they do not prove manuscript approval, counseling or accountability-team membership.
+This is a transparency finding, not proof of defiance or bypass.
 
 ---
 
@@ -219,80 +199,80 @@ These roles confirm institutional continuity only; they do not prove manuscript 
 - A real counseling/pastoral/accountability process existed.
 - Jim Bachmann is a confirmed direct pastoral-care figure and current SVC Elder Council moderator.
 - King Counts remains a plausible counselor-profile candidate, not a proven Lawson counselor.
-- Terry Warren is a current SVC reserve elder and support-environment link, not a proven counselor/accountability-team member/manuscript reviewer.
-- Trinity formal membership is strongly supported by the Dec. 11, 2024 meeting record as preserved by multiple carriers; adequacy/continuation of discipline and later jurisdiction remain separate questions.
-- Practical pastoral care shifted strongly toward Nashville/SVC; formal public TBC→SVC transfer/release remains unestablished.
-- OnePassion's public ministry output effectively stopped while entity/governance significance continued.
+- Terry Warren is a current SVC reserve elder/support-environment link, not a proven counselor/accountability-team member/manuscript reviewer.
+- Trinity formal membership is strongly supported by the Dec. 11, 2024 meeting record as preserved by multiple carriers; adequacy/continuation of discipline and later jurisdiction are separate questions.
+- Practical pastoral care shifted strongly toward Nashville/SVC; a formal public TBC→SVC transfer/release remains unestablished.
 - A post-Lawson OnePassion president existed according to Clint Archer; Tom/Thomas Gibson remains the dominant candidate, not a proven title fact.
 - Copyright page establishes Lawson copyright, But God Press, Caleb Faires design/layout, and print+ebook ISBNs.
-- POD/made-to-order is explicitly documented at the retailer layer; legal registrant and exact backend remain unresolved.
-- The six-root structure is strongly reader/reviewer located but exact physical pages are not all in custody.
-- No public acknowledgments/end matter naming a substantive editor/theological reviewer/pastoral manuscript approver has been acquired.
-- No direct relevant current Anne statement has been acquired.
-- Divorce is not established; completed reconciliation is not established; current legal marital status remains unresolved.
+- POD/made-to-order is explicitly documented at retailer level; legal ISBN registrant and exact backend remain unresolved.
+- No acquired public acknowledgments/end matter names a substantive editor/theological reviewer/pastoral manuscript approver.
+- No direct current Anne statement has been acquired.
+- Divorce is not established; completed reconciliation is not established.
 - No verified return to pastor/elder office is established.
-- July 2026 conference advertising is not safe proof of an attempted teaching comeback.
+- July 2026 conference advertising is not safe proof of a Lawson-initiated comeback.
 - Todd C. Leonard is a named recent personal contact/supporter, not a demonstrated restoration stakeholder.
 
 ---
 
-## Hard guardrails — do not regress
+## Hard guardrails
 
 Do not state as fact that:
-- Lawson is unregenerate;
-- MacArthur explicitly called Lawson a moral heretic or false teacher;
-- Lawson is divorced;
-- Anne approved or opposed the book;
+- Lawson is unregenerate or MacArthur explicitly called him a moral heretic/false teacher;
+- Lawson is divorced or Anne approved/opposed the book;
 - King Counts counseled Lawson;
 - Terry Warren was on the accountability team or reviewed/approved the manuscript;
 - Tom Gibson is definitively OnePassion president;
-- Gibson's March 5 sermon was about Lawson;
 - Lawson bypassed counselors/elders;
 - TBC/SVC/OnePassion/family approved or opposed the finished book without direct evidence;
-- the January 2025 Archer interview was definitely recorded and suppressed;
-- the book was AI-written;
-- the book was a money grab;
+- the January-2025 interview was definitely recorded/suppressed;
+- the book was AI-written or a money grab;
 - 1989 number differences prove deliberate exaggeration;
 - Dauphin Way 2003 was simply a formal expulsion solely for Calvinism;
-- one 1970 Texas Tech roster disproves the football story;
-- the 50/50 ABN text-extraction sweep is equivalent to visual physical completeness;
-- old live Trinity pages prove current Lawson teaching ministry;
-- Lawson accepted the July 2026 conference invitation or withdrew only because of backlash;
-- the July conference listing proves a Lawson-initiated comeback;
-- the alleged Sept. 2025 Contending listing is established fact;
-- 122/124-page metadata proves two physical editions;
-- Aug. 20 is proven to be the first public sale date;
-- Yes24's POD label identifies Ingram/Lightning Source/KDP;
-- Amazon's `Publisher: Steven Lawson` field proves the Bowker registrant;
-- Todd Leonard is a restoration stakeholder or manuscript reviewer;
-- absence of an acquired acknowledgments page proves no acknowledgments exist;
-- the candidate CFL MP3 URLs are acquired/verified audio files before bytes and identity are checked;
-- the garbled McCarty machine transcript proves Lawson was absent from the memories.
+- one 1970 Texas Tech roster disproves Lawson's football history;
+- Lawson's exact football scholarship/letter/season is established;
+- his Texas Tech major was Finance based only on separated OCR;
+- his D.Min. project title is known;
+- the sportswriter claim proves a particular full-time employment relationship;
+- exact BCLR/UBC dates are proven by generic biography pages;
+- the 50/50 ABN text-extraction sweep equals visual physical completeness;
+- candidate CFL MP3 URLs equal acquired audio;
+- garbled ASR proves Lawson was absent from a source;
+- network failure proves a media object is absent;
+- POD means Ingram/Lightning Source/KDP;
+- Amazon's publisher field proves the Bowker registrant;
+- Todd Leonard is a restoration stakeholder/manuscript reviewer;
+- no acquired acknowledgments page proves no acknowledgments exist.
 
 ---
 
 ## Remaining P1 — trigger-driven only
 
-The article does not wait for these. Reopen substantive research only for a genuinely new primary object or newly accessible route:
+The article does not wait for these. Reopen only on a genuinely new primary object or exact accessible route:
 
-1. photographed pages containing all six book root causes;
-2. physical acknowledgments/end matter;
-3. direct identities of professional counselors / two pastors / accountability roster;
-4. identity of CCRMin's unnamed restoration elder;
-5. live GRP/Bowker result for `9798996167302` / `979-8-9961673`;
-6. direct distributor/ONIX/POD-backend or physical printer/manufacturing mark;
-7. direct current Anne statement;
-8. formal TBC→SVC transfer/release object;
-9. direct post-Lawson OnePassion president record;
-10. direct finished-book review/approval statement from an actual restoration stakeholder;
-11. original/human-checked July 2020 Ask Ligonier timecodes;
-12. direct Lawson/organizer documentation for July-2026 invitation/decline;
-13. verified acquisition of the CFL Part 1/2 candidate MP3s and transcript;
-14. acquired/verified GS2/GS8 or related early-autobiography audio only if it materially changes biography;
-15. actual Tampa Times 20 Apr 1981 page/Part 1 scan;
-16. a future biography delta **after `34152fe...`** only if it meets Tier A in `70_`.
+### Post-fall/book/governance
+- photographed pages containing all six root causes;
+- physical acknowledgments/end matter;
+- direct identities of professional counselors / two pastors / accountability roster;
+- identity of CCRMin's unnamed restoration elder;
+- live GRP/Bowker registrant result;
+- direct POD backend/printer/manufacturing mark;
+- direct current Anne statement;
+- formal TBC→SVC transfer/release;
+- direct post-Lawson OnePassion president record;
+- direct finished-book review/approval statement from an actual restoration stakeholder;
+- original/human-checked July 2020 Ask Ligonier timecodes;
+- direct Lawson/organizer documentation for the July-2026 invitation/decline.
 
-Another generic 100-link crawl is **not** a justified critical path after `78_`, `79_`, and `80_`.
+### Biography external acquisitions
+- RTS D.Min. project title from a library/catalog/registrar object;
+- Texas Tech physical football/Picadors records if exact season/lettering is needed;
+- sportswriter byline/outlet record;
+- UBC/BCLR exact church record;
+- Tampa Times target-page image;
+- CFL/Shepherds source bytes only from a working download route;
+- BGEA/Wheaton final 1989 administrative objects if exact totals/role precision becomes material.
+
+Another generic web crawl is **not** justified.
 
 ---
 
@@ -302,10 +282,10 @@ Another generic 100-link crawl is **not** a justified critical path after `78_`,
 
 > **PASS / PUBLICATION_READY_WITH_GUARDRAILS / NO MATERIAL CLAIM-SOURCE REGRESSION FOUND.**
 
-The pass-48 biography delta produced no Tier-A correction and no V7 trigger.
+The completed biography closure strengthens V6's historical frame and creates no V7 trigger.
 
 Canonical article remains:
 
 > `74_ARTICLE_RU_REFINED_V6_2026-09-30.md`
 
-Continue only on a genuinely new primary evidence delta; do not reopen saturated search loops.
+**Biography web investigation is closed. Main is authoritative. Arena is provenance. External archives are trigger-driven only.**
