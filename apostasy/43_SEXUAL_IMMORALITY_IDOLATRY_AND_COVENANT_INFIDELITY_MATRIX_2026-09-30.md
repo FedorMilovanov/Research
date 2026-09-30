@@ -9,12 +9,7 @@
 
 ## 1. Цель и антиошибочное ограничение
 
-Писание часто соединяет:
-
-- сексуальную нечистоту;
-- идолопоклонство;
-- нарушение заветной исключительности;
-- ложное учение, которое легитимирует оба вида компромисса.
+Писание часто соединяет сексуальную нечистоту, идолопоклонство, нарушение заветной исключительности и ложное учение, которое легитимирует оба вида компромисса.
 
 Но это не означает:
 
@@ -25,9 +20,9 @@
 - тяжёлую сексуальную вину с покаянием и восстановлением (Давид);
 - церковную дисциплину, направленную на спасение согрешившего (1 Кор. 5);
 - восстановление заблудшего (Гал. 6; Иак. 5);
-- и, с другой стороны, сексуально-идолопоклоннические системы, которые становятся выражением устойчивой covenant disloyalty.
+- и сексуально-идолопоклоннические системы, которые становятся выражением устойчивой covenant disloyalty.
 
-Поэтому нужно различать:
+Поэтому различать:
 
 1. отдельный тяжёлый сексуальный грех;
 2. привычную сексуальную нечистоту;
@@ -39,33 +34,23 @@
 
 ---
 
-# 2. Тора: исключительная заветная лояльность уже описывается языком супружеской неверности
+# 2. Исход 34: исключительная covenant loyalty
 
-## 2.1. Исх. 34:12–16
-
-После золотого тельца Израиль получает предупреждение:
+После золотого тельца Израиль предупреждён:
 
 - не заключать covenant-компромисс с народами земли;
 - не участвовать в их жертвенных трапезах;
 - не допускать брачных связей, через которые сыновья будут уведены вслед за чужими богами.
 
-Глагольный образ «блудодействовать вслед богов» уже соединяет:
+Образ «блудодействовать вслед богов» соединяет религиозную измену, брачно-сексуальную метафору и реальные отношения, способные перенаправить worship.
 
-- религиозную измену;
-- брачно-сексуальную метафору;
-- реальные социально-семейные связи, способные перенаправить worship.
-
-### Контроль
-
-Не всякий mixed marriage автоматически тождествен идолопоклонству. Опасность текста именно в том, что союз **уводит от исключительной верности YHWH к другим богам**.
+**Контроль:** не всякий mixed marriage автоматически тождествен идолопоклонству. Опасность текста именно в том, что союз уводит от исключительной верности YHWH к другим богам.
 
 ---
 
 # 3. Числа 25 — Баал-Фегор: физическая и религиозная неверность в одном событии
 
-Чис. 25 — главный исторический узел.
-
-## 3.1. Последовательность
+Последовательность:
 
 - Израиль вступает в сексуальные отношения с моавитянками;
 - женщины приглашают к жертвам своих богов;
@@ -74,149 +59,87 @@
 - Израиль «прилепляется / впрягается» к Ваал-Фегору;
 - вспыхивает Божий гнев.
 
-### Здесь связь не метафорическая только
+Здесь связь не только метафорическая: sexual immorality и idolatry происходят в одном историческом комплексе. Современный TGC commentary также отмечает совместный физический и духовный смысл apostasy-language в этом эпизоде; точные ссылки сохранены в source ledger ниже.
 
-Сексуальная нечистота и идолопоклонство происходят **в одном историческом комплексе**.
+## Валаамов мост
 
-Современный TGC commentary подчёркивает: до этой точки wilderness generation много бунтовал, но здесь впервые в этой истории фактически обращается к иным богам; терминология «whoring» уместно охватывает и физический, и духовный уровень. citeturn433249search4
-
-## 3.2. Валаамов мост
-
-Чис. 31:16 позже связывает эту катастрофу с советом Валаама.
-
-Это важно для 2 Пет. 2 / Иуд. / Откр. 2:
+Чис. 31:16 позже связывает катастрофу с советом Валаама. Это важно для 2 Пет. 2 / Иуд. / Откр. 2:
 
 `корысть false teacher → стратегия соблазна → сексуальная нечистота + идолопоклонство → падение Божьего народа`.
 
-Деньги и сексуальность в apostasy corpus часто не два независимых искушения, а части одной эксплуатационной системы.
+Деньги и сексуальность в apostasy corpus нередко оказываются частями одной эксплуатационной системы.
 
 ---
 
-# 4. Второзаконие: сердце уводится через брачные и религиозные связи
+# 4. Второзаконие и Соломон: привязанность, изменяющая worship
 
-Второзаконие запрещает отношения, которые приведут к следованию иным богам.
-
-Поздняя история Соломона показывает исполнение именно этой опасности.
-
-### Принцип
-
-Писание не демонизирует романтическую любовь как таковую.
-
-Проблема начинается там, где человеческая привязанность получает право **переписать worship allegiance**.
-
-Это станет основной логикой 1 Kings 11.
-
----
-
-# 5. Соломон — любовь, которая изменила поклонение
+Второзаконие запрещает отношения, которые приведут к следованию иным богам. Поздняя история Соломона показывает исполнение именно этой опасности.
 
 1 Kings 11 говорит:
 
 - Соломон любил многих чужеземных женщин;
 - прилепился к ним любовью;
 - в старости они отклонили его сердце к иным богам;
-- он не остался целиком с YHWH;
-- строит культовую инфраструктуру чужим богам.
+- сердце уже не было всецело с YHWH;
+- он строит культовую инфраструктуру чужим богам.
 
-### Здесь важна последовательность
+Траектория:
 
 `affection → divided heart → religious accommodation → public/idolatrous infrastructure`.
 
-### Это больше, чем частный сексуальный проступок
+Это больше частного сексуального проступка: компромисс становится государственно-религиозной архитектурой.
 
-Соломонов компромисс становится государственно-религиозной архитектурой.
-
-### Но не путать причины
-
-1 Kings не сводит всё к сексуальному желанию. Важны:
-
-- международные браки;
-- политические связи;
-- умножение жён;
-- любовь;
-- сердце;
-- поклонение.
-
-То есть это **комплекс лояльностей**, а не одно либидо как универсальное объяснение.
+**Контроль:** 1 Kings не сводит всё к libido. Важны международные браки, политические связи, умножение жён, любовь, сердце и поклонение. Это комплекс лояльностей.
 
 ---
 
-# 6. Осия — spiritual adultery как центральная covenant metaphor
+# 5. Осия — spiritual adultery как covenant metaphor
 
-## 6.1. Брак Осии как prophetic sign-act
-
-Отношение Осии и Гомери становится живым образом отношения YHWH и Израиля.
+Брак Осии и Гомери становится живым образом отношения YHWH и Израиля.
 
 Смысл книги — не voyeuristic biography пророка, а covenant indictment:
 
 - YHWH — верный covenant Lord/husband;
 - Израиль ищет иных «любовников»;
-- другие боги получают благодарность за хлеб, воду, шерсть, лён, масло и питьё;
-- Божьи собственные дары используются в служении Ваалу.
+- другим богам приписываются хлеб, вода, шерсть, лён, масло и питьё;
+- Божьи дары используются в служении Ваалу.
 
-TGC commentary подчёркивает: Израиль оставляет Господа и идёт к fertility gods, потому что считает их более эффективными источниками безопасности и процветания. citeturn433249search0
-
-## 6.2. Почему сексуальная метафора теологически точна
-
-Брак предполагает **эксклюзивную лояльность**.
-
-Идолопоклонство — не просто интеллектуальная ошибка «выбрал неверную религиозную гипотезу».
-
-Это предательство отношений.
-
-### Формула
+Брачная метафора теологически точна, потому что брак предполагает эксклюзивную лояльность. Idolatry — не просто ошибочная религиозная гипотеза, а предательство отношений.
 
 > **Idolatry is covenant adultery because another lord receives trust, love, gratitude and allegiance that belong to YHWH.**
 
-## 6.3. Фактическая сексуальная практика и метафора
+В Осии есть и основания видеть реальную sexual immorality в cult context (особенно 4:11–14), но publication-version обязана различать:
 
-В Осии есть основания видеть реальную сексуальную распущенность и культовые практики в контексте Баала, особенно 4:11–14.
-
-Но публикация должна различать:
-
-- фактический сексуальный грех;
+- фактический sexual sin;
 - пророческую метафору духовного блуда;
-- спорные реконструкции конкретных Canaanite fertility rites.
+- спорные реконструкции Canaanite fertility rites.
 
-Не все популярные утверждения о «священной проституции» одинаково надёжны исторически; этот вопрос требует отдельного academic source check перед финальной публикацией.
+Не все популярные утверждения о «священной проституции» исторически одинаково надёжны; вопрос остаётся P0 academic check.
 
 ---
 
-# 7. Иеремия — измена Господу под религиозной видимостью
+# 6. Иеремия 2–3: covenant adultery и реальный призыв вернуться
 
-Иер. 2–3 использует брачно-сексуальный язык для описания ухода Израиля к иным богам.
-
-## 7.1. Иер. 2
-
-Народ:
+Иеремия описывает народ, который:
 
 - оставляет источник живой воды;
 - ищет иных господ;
-- описывается через образы распущенности и неудержимого поиска lovers.
+- представлен через образы распущенности и lovers;
+- нарушает covenant marriage.
 
-## 7.2. Иер. 3
-
-Отступление Израиля и Иудеи описывается как adultery.
-
-Но именно там же звучит:
+Но в Иер. 3 звучит одновременно:
 
 > «вернитесь, отступившие дети… Я исцелю ваше отступничество».
 
-### Значение
-
-Брачная метафора усиливает реальность измены, но не означает, что всякий адресат уже находится за пределами призыва к восстановлению.
-
-Это важный контроль против terminal-overreading.
+Брачная метафора усиливает реальность измены, но не означает, что всякий адресат уже вне призыва к восстановлению. Это важный контроль против terminal-overreading.
 
 ---
 
-# 8. Иезекииль 16 и 23 — наиболее графическая covenant-adultery imagery
+# 7. Иезекииль 16 и 23: графическая covenant-adultery imagery
 
-## 8.1. Иез. 16
+## Иез. 16
 
-Иерусалим изображён как жена, которой YHWH дал жизнь, украсил и вступил с ней в covenant relationship.
-
-Затем она:
+Иерусалим изображён как жена, которой YHWH дал жизнь, украсил и связал covenant relationship. Затем она:
 
 - доверяется собственной красоте;
 - использует дары для идолопоклонства;
@@ -224,85 +147,64 @@ TGC commentary подчёркивает: Израиль оставляет Го�
 - вступает в политические союзы;
 - приносит детей идолам.
 
-TGC commentary отмечает, что любовники включают Египет, Ассирию и Вавилон как политические alliances; сексуальный язык является мощной метафорой политико-религиозной измены. citeturn433249search10
+Современные комментарии справедливо учитывают, что «любовники» включают политические alliances с Египтом, Ассирией и Вавилоном: sexual language служит метафорой политико-религиозной измены.
 
-## 8.2. Иез. 23
+## Иез. 23
 
-Самария и Иерусалим изображены как две неверные сестры.
+Самария и Иерусалим представлены как две неверные сестры. Образы описывают языческое желание, политические союзы, идолопоклонство и повторение прежних patterns.
 
-Сексуальная образность описывает:
-
-- языческое желание;
-- политические союзы;
-- идолопоклонство;
-- повторение прежних паттернов.
-
-### Герменевтический контроль
-
-Нельзя буквально превращать каждую сексуальную деталь пророческой метафоры в утверждение о конкретном историческом половом акте.
-
-Пророк сознательно использует шокирующий язык, чтобы показать **мерзость covenant betrayal**.
+**Герменевтический контроль:** нельзя превращать каждую сексуальную деталь метафоры в утверждение о конкретном историческом половом акте. Пророк сознательно использует shock rhetoric, чтобы показать мерзость covenant betrayal.
 
 ---
 
-# 9. Давид — критический контрпример против формулы «сексуальный грех = final apostasy»
+# 8. Давид — контрпример формуле «sexual sin = final apostasy»
 
 2 Цар. 11–12 показывает:
 
 - прелюбодеяние;
-- злоупотребление царской властью;
+- злоупотребление властью;
 - обман;
 - убийство Урии;
 - сокрытие;
-- тяжёлый Божий суд и дисциплину.
+- тяжёлый Божий суд и discipline.
 
-Но 2 Цар. 12 также показывает:
+Но затем:
 
 - пророческое обличение;
-- признание «согрешил я пред Господом»;
-- заверение Нафана о снятии вины в смысле немедленной смертной санкции;
-- реальные дальнейшие последствия.
+- «согрешил я пред Господом»;
+- Божье прощение в контексте;
+- реальные продолжающиеся последствия.
 
-Пс. 51 развивает покаянное измерение при принятой традиционной связи с эпизодом.
+Пс. 51 развивает покаянное измерение при традиционной связи с эпизодом.
 
-### Значение
+Следовательно, corpus обязан сохранять категорию:
 
-В corpus обязательно сохраняется категория:
+> **тяжелейший сексуально-нравственный провал истинного верующего с реальным покаянием, дисциплиной и восстановлением.**
 
-> **тяжелейший сексуально-нравственный провал истинного верующего с реальным покаянием, дисциплиной и восстановлением**.
-
-Поэтому нельзя каждый сексуальный скандал автоматически классифицировать как Heb 6 / terminal apostasy.
-
-И нельзя, наоборот, использовать восстановление Давида для минимизации тяжести греха: последствия были катастрофическими.
+Нельзя каждый sexual scandal классифицировать как Heb-6 terminal apostasy. И нельзя использовать восстановление Давида для минимизации последствий.
 
 ---
 
-# 10. 1 Коринфянам 5 — тяжёлый сексуальный грех внутри видимой церкви и дисциплина ради спасения
+# 9. 1 Коринфянам 5 — severe sexual sin и discipline ради спасения
 
 Человек имеет жену своего отца, а церковь проявляет самодовольную терпимость.
 
-Павел требует:
+Павел требует удалить нечестивого и предать такого сатане для разрушения плоти, с прямо названной целью:
 
-- удалить нечестивого из среды;
-- предать такого сатане для разрушения плоти;
-- с указанной целью: чтобы дух был спасён в день Господа.
+> чтобы дух был спасён в день Господа.
 
-### Значение
+Текст не поддерживает две ошибки:
 
-Текст не поддерживает две противоположные ошибки:
+1. «раз он в церкви/называется братом, discipline не нужна»;
+2. «раз грех чудовищный, church уже может объявить всякую возможность спасения закрытой».
 
-1. «раз он называется братом/в церкви, дисциплина не нужна»;
-2. «раз грех чудовищный, церковь уже может объявить всякую возможность спасения закрытой».
-
-Discipline выступает как **суровое спасительное средство**, а не простое подтверждение безнадёжности.
+Discipline здесь — суровое спасительное средство, а не простое подтверждение безнадёжности.
 
 ---
 
-# 11. 1 Коринфянам 6 — тело принадлежит Христу
+# 10. 1 Коринфянам 6 — тело принадлежит Христу
 
-1 Кор. 6:12–20 даёт глубокую позитивную антропологию сексуальной верности.
-
-Павел аргументирует не только правилом «это запрещено», но identity:
+Павел аргументирует identity:
 
 - тела принадлежат Господу;
 - тела — члены Христа;
@@ -310,58 +212,30 @@ Discipline выступает как **суровое спасительное �
 - соединяющийся с Господом — один дух;
 - тело — храм Святого Духа;
 - вы не свои;
-- вы куплены ценой;
+- куплены ценой;
 - прославляйте Бога в теле.
 
-### Почему это важно для apostasy
-
-Sexual sin способен выражать **конкурирующую телесную лояльность**.
-
-Но Павел обращает эту аргументацию к церкви именно как средство святости, а не как доказательство, что каждый падший уже перестал принадлежать Христу.
+Sexual sin способен выражать конкурирующую телесную лояльность. Но Павел обращает аргумент к церкви как средство святости, а не как доказательство, что каждый падший уже перестал принадлежать Христу.
 
 ---
 
-# 12. 1 Коринфянам 10 — сам Павел соединяет Exodus, idolatry, sex и warning to church
+# 11. 1 Коринфянам 10 — Numbers 25 как church warning
 
-Это главный NT hermeneutical control для Numbers 25.
-
-## 12.1. Привилегии
-
-Павел перечисляет общие wilderness privileges:
+Павел перечисляет shared wilderness privileges:
 
 - облако;
 - море;
 - крещение в Моисея;
-- духовная пища;
-- духовное питьё.
+- spiritual food;
+- spiritual drink.
 
-Но «с большинством» Бог не был благоволен.
+Но с большинством Бог не был благоволен.
 
-### Принцип
+История дана **нам в пример**. Павел включает злые желания, idolatry, sexual immorality (Numbers 25), искушение Господа и ропот.
 
-Shared covenant privileges ≠ automatic guarantee of final salvation for every participant.
-
-## 12.2. 10:6–12
-
-История дана **нам в пример**.
-
-Павел включает:
-
-- злые желания;
-- идолопоклонство;
-- сексуальную нечистоту (Numbers 25);
-- искушение Господа;
-- ропот.
-
-TGC commentary прямо отмечает historical connection between idolatry and sexual immorality at Baal Peor. citeturn433249search1
-
-## 12.3. 10:12
+Затем:
 
 > «кто думает, что стоит, берегись, чтобы не упасть».
-
-Warning directed to church destroys presumption.
-
-## 12.4. 10:13
 
 Но warning не заканчивается despair:
 
@@ -369,73 +243,48 @@ Warning directed to church destroys presumption.
 - не допустит испытания сверх сил;
 - даст выход.
 
-### Whole-series synthesis
+И далее:
+
+> «убегайте идолослужения».
+
+Whole-series synthesis:
 
 `warning + divine faithfulness + commanded flight` находятся рядом.
 
-## 12.5. 10:14–22
-
-«Итак, возлюбленные мои, убегайте идолослужения».
-
-Павел аргументирует через communion/table fellowship:
-
-- чаша Господня;
-- стол Господень;
-- жертвенные трапезы;
-- невозможность сознательно участвовать в обоих господствах.
-
-Это covenant allegiance expressed through embodied table participation.
-
 ---
 
-# 13. 2 Коринфянам 11 — церковь как обручённая девица и страх духовной неверности
+# 12. 2 Коринфянам 11 — bridal fidelity и doctrinal apostasy
 
 Павел ревнует о коринфянах Божьей ревностью:
 
 - обручил их одному Мужу — Христу;
-- боится, что как змей обольстил Еву, их мысли будут повреждены и уклонятся от искренней/чистой преданности Христу;
-- опасность выражается через принятие «другого Иисуса», иного духа, иного благовестия.
+- боится, что мысли будут повреждены и уклонятся от чистой преданности Христу;
+- опасность выражается через «другого Иисуса», иной дух, иное благовестие.
 
-### Значение
+NT продолжает marriage/covenant imagery: doctrinal apostasy может быть описано как нарушение bridal fidelity Христу.
 
-NT продолжает marriage/covenant imagery:
-
-> doctrinal apostasy может быть описано как нарушение bridal fidelity Христу.
-
-Сексуальная метафора здесь не означает буквальную sexual immorality. Это ещё один guardrail против смешения метафоры и события.
+**Guardrail:** здесь sexual metaphor не означает literal sexual immorality.
 
 ---
 
-# 14. Ефесянам 5 и Колоссянам 3 — сексуальная нечистота, корысть и идолопоклонство
+# 13. Ефесянам 5 и Колоссянам 3 — desire и idolatry
 
-## Еф. 5:3–5
+Еф. 5:3–5 связывает sexual immorality и covetousness с жизнью, несовместимой со святостью; covetous person назван idolater.
 
-Сексуальная нечистота и корысть перечисляются как несовместимые с жизнью святых; корыстолюбец назван идолослужителем.
+Кол. 3:5 соединяет блуд, нечистоту, страсть, злое желание и covetousness, «которое есть идолослужение».
 
-## Кол. 3:5
+**Грамматический контроль:** прямое приложение «которая есть идолослужение» относится прежде всего к covetousness; не нужно без аргумента превращать каждое слово списка в идентичную грамматическую конструкцию.
 
-Павел связывает:
-
-- блуд;
-- нечистоту;
-- страсть;
-- злое желание;
-- корысть, которая есть идолослужение.
-
-### Важное различение
-
-Текст прямо называет **корысть** идолопоклонством; не нужно грамматически утверждать, будто каждое отдельное слово списка получает идентичное приложение «которая есть идолослужение».
-
-Но весь список показывает disordered desire как сферу, которую надо умерщвлять в новой жизни.
+Но весь список показывает disordered desire как сферу, которую новая жизнь должна умерщвлять.
 
 ---
 
-# 15. 2 Петра 2 — ложная свобода, сексуальный соблазн и корысть
+# 14. 2 Петра 2 — ложная свобода, sensuality и greed
 
-2 Пет. 2 соединяет несколько механизмов:
+2 Пет. 2 соединяет:
 
 - false teaching;
-- отрицание Господина;
+- denial of Master;
 - sensuality;
 - greed;
 - trained eyes/desires;
@@ -443,13 +292,9 @@ NT продолжает marriage/covenant imagery:
 - promise of freedom;
 - slavery to corruption.
 
-### Почему это важно
+Лжеучитель может легитимировать sexual desire **богословией свободы**.
 
-Лжеучитель может легитимировать сексуальное желание **богословией свободы**.
-
-То есть doctrine становится rationalization engine для страсти.
-
-### Apostasy mechanism
+Траектория:
 
 `desire → doctrine that authorizes desire → recruitment of vulnerable people → normalization → bondage called freedom`.
 
@@ -457,11 +302,11 @@ NT продолжает marriage/covenant imagery:
 
 ---
 
-# 16. Иуда — sensuality + false teaching + Balaam gain
+# 15. Иуда — grace distorted into license
 
-Иуд. 4 говорит о людях, которые превращают благодать Бога в повод к распутству и отвергают единственного Владыку и Господа.
+Иуд. 4 говорит о людях, которые превращают Божью благодать в повод к распутству и отвергают единственного Владыку и Господа.
 
-Дальше письмо связывает:
+Письмо далее соединяет:
 
 - sexual corruption;
 - rejection of authority;
@@ -470,34 +315,26 @@ NT продолжает marriage/covenant imagery:
 - following desires;
 - division.
 
-### Принцип
-
 Grace-language может быть украдена от gospel и использована как **ideological permission structure for desire**.
 
-Это особенно важный современный diagnostic category:
+Формула, которую Иуда разрушает:
 
 > «Благодать означает, что Божьи нравственные требования больше не могут предупреждать меня».
 
-Иуда говорит противоположное.
-
 ---
 
-# 17. Откровение 2 — Валаам и Иезавель возвращаются внутри церквей
+# 16. Откровение 2 — Валаам и Иезавель внутри церквей
 
-## 17.1. Пергам — Откр. 2:14
+## Пергам
 
 Некоторые держатся «учения Валаама»:
 
 - идоложертвенное;
-- сексуальная нечистота.
+- sexual immorality.
 
 Христос читает Numbers 25 типологически для church context.
 
-### Ключевой факт
-
-OT sexual-idolatry complex не объявлен устаревшей проблемой Израиля; он становится моделью внутреннего соблазна для новозаветной церкви.
-
-## 17.2. Фиатира — Откр. 2:20–23
+## Фиатира
 
 Церковь имеет реальные достоинства:
 
@@ -511,73 +348,63 @@ OT sexual-idolatry complex не объявлен устаревшей пробл
 
 - называет себя пророчицей;
 - учит;
-- вводит рабов Христа в сексуальную нечистоту;
-- ведёт к идоложертвенному.
+- вводит рабов Христа в sexual immorality;
+- ведёт к idol-food compromise.
 
-TGC commentary подчёркивает сочетание heresy and immorality и контраст с Ефесом, который правильно отвергал подобное учение. citeturn433249search7
+Критический нюанс:
 
-## 17.3. Важнейший нюанс — дано время покаяться
+> Христос дал ей время покаяться, но она не хочет.
 
-Христос говорит, что дал ей время покаяться, но она не хочет.
-
-Это один из ярких текстов проекта о **reaction-to-repentance window**:
+Траектория:
 
 `грех/ложное учение → время и призыв к покаянию → отказ → усиливающийся суд`.
 
-### Не путать терпение с добродетелью
-
-Фиатирская церковь терпит то, что Христос требует перестать терпеть.
-
-Иногда «толерантность» к разрушительному учению — не любовь, а failure of shepherding.
+Не всякая «толерантность» есть любовь: терпеть teaching, которое Христос осуждает, может быть failure of shepherding.
 
 ---
 
-# 18. Marriage imagery в конце канона: верность имеет положительный телос
+# 17. Положительный телос: Невеста Агнца
 
-Откровение не только предупреждает о «Вавилонской блуднице».
+Откровение не заканчивается «Вавилонской блудницей».
 
-Оно направляет историю к:
+История направлена к:
 
 - браку Агнца;
 - приготовленной Невесте;
 - Новому Иерусалиму.
 
-### Поэтому сексуально-брачная метафора не является только негативной
+Поэтому каноническая альтернатива spiritual adultery — **exclusive bridal fidelity to Christ**.
 
-Каноническая альтернатива spiritual adultery — **exclusive bridal fidelity to Christ**.
-
-Это даёт позитивный центр темы:
-
-> цель не просто избежать «нечистоты», а принадлежать Христу как Его святой народ.
+Цель не просто избежать «нечистоты», а принадлежать Христу как Его святой народ.
 
 ---
 
-# 19. Сравнительная матрица
+# 18. Сравнительная матрица
 
-| Текст | Сексуальный слой | Идолопоклоннический слой | Тип связи | Apostasy relevance |
+| Текст | Sexual layer | Idolatry layer | Тип связи | Apostasy relevance |
 |---|---|---|---|---|
 | Исх. 34 | intermarriage | иные боги | отношения ведут к worship shift | covenant warning |
-| Чис. 25 | реальная sexual immorality | Baal Peor worship | один исторический комплекс | severe corporate apostasy |
+| Чис. 25 | реальная sexual immorality | Baal Peor worship | один historical complex | severe corporate apostasy |
 | 1 Kings 11 | marriage/affection | foreign gods/high places | love bends heart | late royal apostasy |
-| Осия | реальная/образная sexual infidelity | Baal/covenant breach | marriage metaphor + cult context | corporate covenant adultery |
+| Осия | real/metaphorical infidelity | Baal/covenant breach | marriage metaphor + cult context | corporate covenant adultery |
 | Иер. 2–3 | primarily metaphorical adultery | other gods | covenant marriage metaphor | apostasy + return call |
 | Иез. 16/23 | graphic metaphor + historical abominations | idols/alliances | political-religious infidelity depicted sexually | severe corporate apostasy |
-| Давид | adultery | no cult apostasy required | moral fall | recoverable grievous fall |
-| 1 Cor. 5 | severe sexual sin | not necessary cult idolatry | church discipline | rescue/discipline category |
-| 1 Cor. 6 | union with prostitute | allegiance to Christ bodily | body theology | holiness warning to believers |
+| Давид | adultery | cult apostasy не требуется | moral fall | recoverable grievous fall |
+| 1 Cor. 5 | severe sexual sin | not necessarily cultic | church discipline | rescue/discipline category |
+| 1 Cor. 6 | union with prostitute | allegiance to Christ bodily | body theology | holiness warning |
 | 1 Cor. 10 | Num 25 sexual sin | explicit idolatry | OT example for church | warning + divine faithfulness |
-| 2 Cor. 11 | metaphorical bridal fidelity | false gospel/other Jesus | doctrinal betrayal as marital infidelity | doctrinal apostasy warning |
+| 2 Cor. 11 | bridal metaphor | false gospel/other Jesus | doctrinal betrayal as marital infidelity | doctrinal apostasy warning |
 | 2 Pet. 2 | sensuality | false teaching/Balaam | doctrine legitimizes desire | false-teacher apostasy |
-| Jude | sensuality | denying Master / Balaam pattern | grace distorted to license | terminal false teachers |
+| Jude | sensuality | denying Master/Balaam pattern | grace distorted to license | terminal false teachers |
 | Rev. 2 | sexual immorality | idol-food/Balaam/Jezebel | teaching institutionalizes compromise | church warning/judgment |
 
 ---
 
-# 20. Механизм: как sexual desire становится apostasy-engine
+# 19. Как sexual desire становится apostasy-engine
 
-Не каждый случай проходит все стадии, но канон показывает повторяемую траекторию:
+Не каждый case проходит все стадии, но канон показывает повторяемую траекторию:
 
-1. **желание** становится доминирующим;
+1. желание становится доминирующим;
 2. Божья граница ощущается как препятствие;
 3. появляется relational/political/religious compromise;
 4. сердце разделяется;
@@ -585,115 +412,60 @@ TGC commentary подчёркивает сочетание heresy and immorality
 6. грех получает community permission;
 7. обличители объявляются проблемой;
 8. ложная свобода заменяет святость;
-9. worship allegiance фактически смещается;
-10. отказ от покаяния приводит к judgment.
+9. worship allegiance смещается;
+10. refusal of repentance ведёт к judgment.
 
-### Самый опасный этап
-
-Не само наличие сильного искушения, а момент, когда человек **изменяет богословие, чтобы больше не называть своё желание грехом**.
-
-Именно это видно в 2 Пет. 2 / Иуд. / Откр. 2.
+Самый опасный этап — не наличие сильного искушения, а момент, когда человек **изменяет богословие, чтобы больше не называть своё желание грехом**.
 
 ---
 
-# 21. Anti-error controls
+# 20. Anti-error controls
 
-## Ошибка 1. «Всякий sexual sin = apostasy»
-
-Нет. Давид, 1 Кор. 5 и restorative corpus запрещают это.
-
-## Ошибка 2. «Sexual sin — только частная мораль, не вопрос worship»
-
-Нет. Numbers 25, 1 Cor 6/10, Rev 2 показывают, что тело и worship allegiance могут быть тесно связаны.
-
-## Ошибка 3. «Все пророческие сексуальные изображения буквальны»
-
-Нет. Hosea/Ezekiel/Jeremiah активно используют covenant-marriage metaphor.
-
-## Ошибка 4. «Если церковь показывает любовь и служение, она может терпеть sexual false teaching»
-
-Нет. Thyatira опровергает это.
-
-## Ошибка 5. «Grace отменяет moral warning»
-
-Jude прямо осуждает превращение благодати в разрешение на распутство.
-
-## Ошибка 6. «Если Бог даёт время покаяться, грех не очень серьёзен»
-
-Rev 2 показывает обратное: терпение Бога является mercy-window, а отказ усиливает суд.
-
-## Ошибка 7. «Если человек пал сексуально, восстановление означает отсутствие последствий»
-
-Давид показывает тяжёлые продолжающиеся последствия даже при прощении.
+1. **«Всякий sexual sin = apostasy» — нет.** Давид, 1 Кор. 5 и restoration corpus запрещают.
+2. **«Sexual sin — только частная мораль, не worship» — нет.** Num 25, 1 Cor 6/10, Rev 2 показывают связь.
+3. **«Все prophetic sexual images буквальны» — нет.** Hosea/Ezekiel/Jeremiah активно используют covenant-marriage metaphor.
+4. **«Любящая/служащая церковь может терпеть sexual false teaching» — нет.** Thyatira опровергает.
+5. **«Grace отменяет moral warning» — нет.** Jude прямо осуждает это.
+6. **«Если Бог даёт время покаяться, грех несерьёзный» — нет.** Rev 2 показывает mercy-window перед судом.
+7. **«Restoration означает отсутствие последствий» — нет.** David показывает обратное.
 
 ---
 
-# 22. Anti-apostasy means
+# 21. Anti-apostasy means
 
-## Exclusive worship
-
-«Не будет у тебя других богов» — foundational loyalty.
-
-## Guarding affections
-
-Соломон показывает, что love can bend worship.
-
-## Fleeing, not negotiating
-
-1 Кор. 6:18 — убегайте блуда. 1 Кор. 10:14 — убегайте идолослужения.
-
-Замечательно, что Павел использует одинаковую pastoral logic: некоторые искушения требуют не диалога, а выхода.
-
-## Body identity
-
-Тело принадлежит Христу и куплено ценой.
-
-## Church discipline
-
-1 Кор. 5 — любовь к согрешившему и святость общины требуют реального действия.
-
-## Doctrinal vigilance
-
-Откр. 2 — нельзя терпеть учение, которое институционализирует immorality.
-
-## Repentance while the call remains
-
-Иер. 3; Осия; Откр. 2.
-
-## Gospel restoration
-
-Божья covenant faithfulness, очищение и возвращение дают надежду не через минимизацию греха, а через Божью милость.
+- **Exclusive worship:** базовая covenant loyalty.
+- **Guarding affections:** Solomon показывает, что love can bend worship.
+- **Fleeing, not negotiating:** 1 Кор. 6:18; 10:14.
+- **Body identity:** тело принадлежит Христу и куплено ценой.
+- **Church discipline:** 1 Кор. 5 — любовь и святость требуют действия.
+- **Doctrinal vigilance:** Откр. 2 — нельзя институционализировать immorality учением.
+- **Repentance while call remains:** Иер. 3; Осия; Откр. 2.
+- **Gospel restoration:** милость не минимизирует грех, а исцеляет и возвращает.
 
 ---
 
-# 23. Систематический синтез
+# 22. Систематический синтез
 
-Сексуальная нечистота становится apostasy-механизмом особенно там, где она:
+Sexual immorality становится apostasy-механизмом особенно там, где она:
 
 - перенаправляет любовь от Бога;
-- связывает человека с конкурирующим worship system;
+- связывает с конкурирующим worship system;
 - требует переписать Божью мораль;
-- создаёт ложное учение для оправдания желания;
+- создаёт false teaching для оправдания желания;
 - вовлекает других в компромисс;
-- сопротивляется покаянию и коррекции.
+- сопротивляется repentance и correction.
 
-Но библейская категория шире и точнее, чем slogan:
+Но категория точнее slogan:
 
 > **Apostasy is not defined by sexual failure alone; it is defined by a trajectory of covenant disloyalty, unbelief and repudiation. Sexual sin can be one powerful vehicle of that trajectory, while Scripture also knows grievous sexual falls from which God restores the repentant.**
 
-В реформатском синтезе это помогает удержать одновременно:
-
-- реальность sanctification;
-- необходимость church discipline;
-- силу warning texts;
-- возможность restoration;
-- сохранение святых не как permission to sin, а как Божье действие через покаяние, дисциплину, Слово и Духа.
+Реформатский synthesis должен удержать одновременно sanctification, church discipline, силу warnings, возможность restoration и preservation saints через repentance, discipline, Word и Spirit.
 
 ---
 
-# 24. Source-hardening ledger
+# 23. Source-hardening ledger
 
-1. TGC Biblical Commentary, Numbers — Num 25 as low point: physical/spiritual whoring, Baal Peor:  
+1. TGC Biblical Commentary, Numbers — Num 25 as low point; physical/spiritual whoring; Baal Peor:  
    https://www.thegospelcoalition.org/commentary/numbers/
 2. TGC “Introduction to Numbers” — 1 Cor 10 uses Num 25 as warning to church; Jude/Rev use Balaam:  
    https://www.thegospelcoalition.org/course/numbers/
@@ -701,13 +473,13 @@ Rev 2 показывает обратное: терпение Бога явля�
    https://www.thegospelcoalition.org/commentary/hosea/
 4. TGC “Knowing the Bible: Hosea” — whoredom/idolatry and covenant breaking:  
    https://www.thegospelcoalition.org/course/knowing-the-bible-hosea/
-5. TGC, “Why Did God Command Hosea to Marry an Immoral Woman?” — Exodus 34 / Deut 31 / Hosea covenant-adultery bridge:  
+5. TGC, “Why Did God Command Hosea to Marry an Immoral Woman?” — Exodus 34 / Deut 31 / Hosea bridge:  
    https://www.thegospelcoalition.org/article/god-command-hosea-marry-immoral-woman/
 6. TGC Biblical Commentary, Ezekiel — Ezek 16 sexual imagery, alliances, idols, forgetting God:  
    https://www.thegospelcoalition.org/commentary/ezekiel/
 7. TGC Biblical Commentary, 1 Corinthians — 1 Cor 10 Num 25 link between idolatry and sexual immorality:  
    https://www.thegospelcoalition.org/commentary/1-corinthians/
-8. TGC Biblical Commentary, 2 Peter — false teachers, sexual desire, greed, Balaam, false freedom:  
+8. TGC Biblical Commentary, 2 Peter — false teachers, desire, greed, Balaam, false freedom:  
    https://www.thegospelcoalition.org/commentary/2-peter/
 9. TGC Biblical Commentary, Jude — sensuality, Balaam gain, false shepherds, judgment:  
    https://www.thegospelcoalition.org/commentary/jude/
@@ -716,18 +488,18 @@ Rev 2 показывает обратное: терпение Бога явля�
 
 ---
 
-# 25. Remaining P0 before publication
+# 24. Remaining P0 before publication
 
 - [ ] Exact Hebrew study of Num 25 (`זנה`, `צמד`) and Ps 106:28 “joined/yoked to Baal of Peor”.
-- [ ] Academic verification of claims about ancient Canaanite “cult prostitution”; avoid repeating older reconstructions as settled fact.
-- [ ] Hosea 1–3: competing interpretations of Gomer and precise relationship between literal marriage and prophetic metaphor.
-- [ ] Ezek 16/23: genre/rhetoric study, political alliances vs literal sexual acts; avoid abusive or sensational reuse of prophetic imagery.
-- [ ] 1 Kings 11: exact link of `אהב / דבק / נטה לב` to Deuteronomy covenant vocabulary.
+- [ ] Academic verification of ancient Canaanite “cult prostitution”; do not repeat older reconstructions as settled fact.
+- [ ] Hosea 1–3: competing interpretations of Gomer and literal marriage/prophetic metaphor.
+- [ ] Ezek 16/23: genre/rhetoric study, political alliances vs literal sexual acts; avoid sensational reuse.
+- [ ] 1 Kings 11: exact link `אהב / דבק / נטה לב` to Deuteronomy covenant vocabulary.
 - [ ] 1 Cor 5: major commentary comparison on “destruction of flesh / spirit saved” and disciplinary purpose.
-- [ ] 1 Cor 6: lexical/contextual work on union/body argument, without overclaiming metaphysical mechanics.
-- [ ] 1 Cor 10: resolve 23,000/24,000 Numbers count issue carefully and explain without defensive harmonization shortcuts.
-- [ ] 2 Pet 2 / Jude: distinguish sexual sin of false teachers, their followers and typological OT examples.
-- [ ] Rev 2: study whether `πορνεία` is literal sexual immorality, metaphorical idolatry, or deliberately both in Balaam/Jezebel contexts.
-- [ ] Add restoration-after-sexual-fall dossier (David + Corinth) before any public pastoral application.
+- [ ] 1 Cor 6: lexical/contextual work on union/body argument.
+- [ ] 1 Cor 10: resolve 23,000/24,000 Numbers count issue without defensive harmonization shortcuts.
+- [ ] 2 Pet 2 / Jude: distinguish sexual sin of false teachers, followers and typological OT examples.
+- [ ] Rev 2: study whether `πορνεία` is literal sexual immorality, metaphorical idolatry, or deliberately both.
+- [ ] Add restoration-after-sexual-fall dossier (David + Corinth) before public pastoral application.
 
 **Publication status remains `HOLD`.**
