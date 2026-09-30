@@ -1,7 +1,7 @@
 # Деяния 7 — сердце, вернувшееся в Египет; идолопоклонство; Божье предание; сопротивление Духу
 
 **Дата:** 2026-09-30  
-**Статус:** `SOURCE-HARDENED DRAFT / PUBLICATION_HOLD`  
+**Статус:** `SOURCE-HARDENED DRAFT / QUOTATION ISSUE PARTIALLY CLOSED / PUBLICATION_HOLD`  
 **Scope:** Деян. 7:35–43, 51–53  
 **Parent:** `49_P0B_THEMATIC_MATRIX_CLOSURE_AND_P0A_SOURCE_HARDENING_LEDGER_2026-09-30.md`  
 **Source policy:** `49A_SOURCE_TRUST_CONFESSIONAL_AND_EXEGETICAL_FILTER_2026-09-30.md`
@@ -18,22 +18,15 @@
 
 - тело Израиля уже вышло из Египта;
 - но сердце может **вернуться** туда;
-- внутреннее направление быстро становится публичным worship;
+- внутреннее направление становится публичным worship;
 - persistent rejection получает форму judicial handing-over;
-- Стефан связывает прошлое с нынешним rejection Messiah.
+- Стефан связывает прошлое с нынешним rejection of the Righteous One.
 
 ---
 
 # 2. Stephen’s speech is not random OT survey
 
-Обвинение против Стефана связано с:
-
-- Моисеем;
-- законом;
-- храмом;
-- Богом.
-
-Его защита показывает повторяющуюся историю:
+Обвинение против Стефана связано с Моисеем, законом, храмом и Богом. Его защита показывает повторяющуюся redemptive-historical pattern:
 
 - Божьего посланника сначала отвергают;
 - Бог всё же использует его как deliverer;
@@ -41,10 +34,18 @@
 - народ сопротивляется;
 - religious institution itself does not guarantee obedience.
 
-David G. Peterson справедливо подчёркивает, что ложные обвинения против Stephen нельзя механически принять как точное описание его theology; его речь скорее разворачивает обвинение против собственных обвинителей — их неверность закону/Богу и rejection of God’s messenger.
+David G. Peterson в своей работе по Acts подчёркивает, что речь Стефана разворачивает обвинение обратно против его обвинителей: проблема не в неверности Стефана Моисею и Богу, а в исторически повторяющемся rejection of God’s messengers.
 
-Verified article:
+Accessible Peterson entry point:
 https://davidgpeterson.wordpress.com/acts/gospel-and-transformation-in-acts/
+
+Brian J. Tabb в консервативной evangelical работе по Acts также разбирает Stephen’s defense как часть истории страдания и преследования Божьих свидетелей; в опубликованной книге *Suffering in Ancient Worldview* Stephen’s defense speech занимает pp. 132–136, а section “Suffering and Persecution in Israel’s History” — pp. 133–135.
+
+Bibliographic verification:
+https://andynaselli.com/suffering-in-ancient-worldview-an-interview-with-brian-tabb
+
+TOC verification:
+https://www.kriso.ee/suffering-ancient-worldview-luke-seneca-4-db-9780567684868.html
 
 ---
 
@@ -66,42 +67,25 @@ Key elements:
 Greek text/morphology:
 https://biblehub.com/text/acts/7-39.htm
 
-Parallel witnesses:
-https://www.biblehub.com/texts/acts/7-39.htm
-
-NET technical note:
+NET technical witness:
 https://classic.net.bible.org/verse.php?book=Act&chapter=7&tab=commentaries&theme=false&verse=39
-
----
 
 ## 3.1. `ἐστράφησαν` does not require bodily return
 
-The phrase explicitly qualifies the movement:
-
-> **in their hearts**.
+The phrase explicitly qualifies the movement: **in their hearts**.
 
 Therefore “return” language may denote interior allegiance/direction even when physical location has not changed.
 
-This is a crucial control for the whole return/back/again concordance.
+This is a decisive control for the whole return/back/again concordance:
 
-### False inference blocked
-
-One cannot reason:
-
-> «if Scripture says “returned,” they must physically or soteriologically have occupied the destination before in exactly the same sense».
-
-Acts 7:39 itself shows metaphorical/moral directional usage.
-
----
+> the presence of a “return” verb does not by itself prove prior occupation of the destination in the same physical or soteriological sense.
 
 ## 3.2. Calvin’s useful distinction
 
-Calvin on 7:38–41 says they “returned” not bodily but in mind/heart to Egypt’s corruptions; he treats the phrase as stubborn inward reversal followed by calf-idolatry.
+Calvin reads the “return” not bodily but as a return of mind/heart to Egypt’s corruptions, immediately embodied in calf-idolatry.
 
 Primary:
 https://ccel.org/ccel/calvin/calcom36/calcom36.xiv.viii.html
-
-This is especially valuable because Calvin does not reduce the phrase to nostalgia: the next verse demonstrates what heart-return means religiously.
 
 ---
 
@@ -114,17 +98,11 @@ Acts 7:40–41:
 - sacrifice to the idol;
 - rejoice in the works of their own hands.
 
-This is the enacted form of the inward direction in v.39.
-
-### Trajectory
+Trajectory:
 
 `heart direction → alternative mediator/gods → image → sacrifice → joy in human-made worship`.
 
-The movement begins internally but does not remain private.
-
-This strengthens the project’s rule:
-
-> **heart apostasy precedes and feeds visible apostasy.**
+Thus heart apostasy is not a harmless internal feeling; it becomes visible worship and allegiance.
 
 Canonical parallels:
 
@@ -137,109 +115,124 @@ Canonical parallels:
 
 # 5. Moses rejection motif
 
-NET notes correctly observe that `ἀπώσαντο` repeats the earlier rejection pattern.
+The rejection verb/pattern recurs:
 
-Acts 7:27:
+- Acts 7:27 — Moses is pushed aside;
+- Acts 7:35 — the rejected Moses is nevertheless God’s ruler/deliverer;
+- Acts 7:39 — the fathers again reject him.
 
-> Moses is pushed aside.
-
-Acts 7:35:
-
-> the rejected Moses is the very one God sends as ruler and redeemer.
-
-Acts 7:39:
-
-> ancestors again push him aside.
-
-Thus Stephen builds a typological/redemptive-historical pattern:
+Stephen therefore establishes:
 
 > **human rejection of God’s appointed deliverer does not invalidate the deliverer; it indicts the rejecters.**
 
-This prepares the accusation concerning the Righteous One in vv.52–53.
+This prepares vv.52–53 and the rejection of the Righteous One.
 
 ---
 
-# 6. Acts 7:42 — startling reversal: the people turn; God turns
+# 6. Acts 7:42 — the people turn; God turns and gives over
 
-After v.39 says Israel **turned** in heart to Egypt, v.42 says:
+After v.39 says Israel **turned** in heart to Egypt, v.42 says God turned and `παρέδωκεν` them to worship the host of heaven.
 
-> **God turned and gave them over** to worship the host of heaven.
+This rhetorical reversal is central:
 
-NET rendering:
-https://classic.net.bible.org/verse.php/verse.php?book=Act&chapter=7&verse=42
+`Israel turns from God → God turns away / gives over`.
 
-This rhetorical reversal matters:
+Canonical judicial-handing-over controls:
 
-`Israel turns from God → God turns away and gives them over`.
-
-### Judicial handing-over
-
-`παρέδωκεν` / “gave them over” belongs to a broader biblical judgment pattern.
-
-Strong canonical resonance exists with:
-
-- Ps 81:11–12 — God gives stubborn Israel over to its own counsels;
-- Rom 1:24,26,28 — God gives idolatrous humanity over;
-- 2 Thess 2:10–12 — refusal of truth and judicial delusion.
+- Ps 81:11–12;
+- Rom 1:24,26,28;
+- 2 Thess 2:10–12.
 
 ### Guardrail
 
-Acts 7 itself does not say every act of idolatry instantly triggers irreversible individual reprobation.
-
-It narrates a corporate-historical judicial response within Israel’s long rebellion.
+Acts 7 narrates corporate-historical judgment. It does not teach that every individual act of idolatry instantly becomes an irreversible decree about each participant’s eternal state.
 
 ---
 
 # 7. Stephen quotes Amos 5:25–27
 
-Acts 7:42–43 invokes the book of the prophets and quotes Amos.
+Acts 7:42–43 invokes Amos to extend the indictment beyond the golden calf:
 
-The point is not merely:
+`wilderness idolatry → astral/other idolatry → prophetic indictment → exile`.
 
-> «Israel once made one calf».
-
-Stephen shows prolonged idolatrous trajectory culminating in exile.
-
-Thus:
-
-`wilderness idolatry → celestial/idolatrous worship → prophetic indictment → exile`.
-
-This connects Acts 7 with the Amos dossier, but note:
-
-- Acts 7 quotes **Amos 5**, not Amos 4;
-- nevertheless both passages belong to the same prophetic theology of religious activity without true covenant return.
+Acts 7 quotes **Amos 5**, not Amos 4. Nevertheless both texts participate in the same prophetic theology: ritual history and covenant privilege do not cancel rebellion or divine judgment.
 
 ---
 
-# 8. Acts 7:43 textual / quotation problem — Babylon vs Damascus
+# 8. Acts 7:43 — “Babylon” vs Amos “Damascus”: source-hardening
 
-This must not be hidden.
+This issue must remain explicit.
 
-Amos 5:27 MT and LXX have **beyond Damascus**.
+## 8.1. Secure textual facts
 
-Acts 7:43 has **beyond Babylon** in the standard Greek text.
+Amos 5:27 MT and LXX speak of exile **beyond Damascus**.
 
-Possible explanations in interpretation history include:
+Acts 7:43 standard Greek text reads:
 
-1. Stephen/Luke intentionally amplifies the quotation in light of historical fulfilment;
-2. contextual updating from Damascus-threat to actual exile horizon;
-3. quotation from memory / traditional textual form;
-4. scribal/textual explanation proposed by some older interpreters.
+`καὶ μετοικιῶ ὑμᾶς ἐπέκεινα Βαβυλῶνος`
 
-Older commentaries differ.
+— **beyond Babylon**.
 
-Accessible comparison:
-https://biblehub.com/commentaries/acts/7-43.htm
+Greek Acts witness:
+https://biblehub.com/text/acts/7-43.htm
 
-### Project rule
+NET confirms that Acts 7:43 is quoting Amos 5:25–27 while reading “Babylon” in Acts.
 
-Do **not** casually state one solution as certain until Bock / Peterson / Schnabel and textual-critical literature are checked with exact locators.
+https://classic.net.bible.org/passage.php?passage=Act+7%3A43
 
-For current synthesis, what is secure is:
+## 8.2. The difference is broader than one place-name
 
-- Stephen deliberately invokes Amos’s exile judgment;
-- idolatry and exile are linked;
-- exact reason for “Babylon” rather than “Damascus” remains `P0 LOCATOR / TEXTUAL-QUOTATION CHECK`.
+A technical comparison of Acts 7:42–43 with LXX Amos 5:25–27 notes several modifications:
+
+- verbal reordering;
+- `τοὺς τύπους` rather than `τοὺς τύπους αὐτῶν`;
+- addition of `προσκυνεῖν`;
+- replacement of `ἑαυτοῖς` with `αὐτοῖς`;
+- **Damascus → Babylon**.
+
+Technical comparative source:
+https://dokumen.pub/scripture-and-its-readers-readings-of-israels-story-in-nehemiah-9-ezekiel-20-and-acts-7-9781575067209.html
+
+This makes an intentional/adaptive quotation explanation more plausible than pretending Acts merely reproduces the LXX verbatim.
+
+## 8.3. Strong working explanation
+
+Several modern treatments read “Babylon” as a purposeful extension/update of Amos’s exile horizon so Stephen’s summary embraces the later Judah/Babylon catastrophe as well as northern Israel’s Assyrian exile.
+
+Brian Tabb’s Acts treatment explicitly says Amos warned of exile beyond Damascus but Stephen modifies the citation to Babylon, especially poignant for a Jerusalem/Judaean audience and the destruction of Solomon’s temple.
+
+Conservative background on Tabb:
+https://bcsmn.edu/bcs-news-article/tabb-doctoral-dissertation/
+
+Alan J. Thompson likewise argues that Stephen’s change to “beyond Babylon” extends the exile judgment to the southern kingdom and temple destruction. Because the source is TGC-hosted, it is used **author-specifically and only as secondary corroboration**, not as blanket authority.
+
+https://www.thegospelcoalition.org/commentary/acts/
+
+A separate scholarly treatment of Stephen’s speech also reads Acts 7:43 as reorienting Amos from northern-kingdom deportation beyond Damascus toward Babylonian exile, fitting the Jerusalem audience’s collective memory.
+
+https://www.degruyterbrill.com/document/doi/10.1515/opth-2020-0162/html
+
+## 8.4. What remains unresolved
+
+The project should **not** yet claim certainty about the mechanism:
+
+- Stephen’s own deliberate adaptation;
+- Luke’s editorial adaptation;
+- a traditional quotation form;
+- memory-based alteration;
+- textual history.
+
+Older Cambridge/Ellicott witnesses explicitly preserve more than one possibility.
+
+https://www.bibliaplus.org/en/commentaries/236/cambridge-greek-testament-for-schools-and-colleges-commentary/acts/7/43
+
+### Current adjudication
+
+**GREEN:** Acts intentionally/actually reads Babylon while Amos MT/LXX reads Damascus; exile judgment is the theological point.  
+**GREEN:** “Babylon” naturally expands the historical exile horizon to Judah/Jerusalem.  
+**AMBER:** exact compositional mechanism for the alteration.
+
+This reduces the former P0 from “quotation problem broadly unresolved” to a narrower compositional question.
 
 ---
 
@@ -252,7 +245,7 @@ Greek:
 Morphology:
 https://biblehub.com/text/acts/7-51.htm
 
-Key terms:
+Key covenant vocabulary:
 
 - `σκληροτράχηλοι` — stiff-necked;
 - `ἀπερίτμητοι καρδίαις καὶ τοῖς ὠσίν` — uncircumcised in hearts and ears;
@@ -260,70 +253,52 @@ Key terms:
 - `ἀντιπίπτετε` — resist/oppose;
 - `τῷ πνεύματι τῷ ἁγίῳ` — the Holy Spirit.
 
-## 9.1. OT matrix behind the indictment
-
-### Stiff-necked
+OT controls:
 
 - Exod 32:9;
 - Deut 9:6,13;
-- 2 Chr 30:8;
-- Neh 9:16–17,29;
-- Jer 7:26.
-
-### Uncircumcised heart
-
 - Lev 26:41;
 - Deut 10:16;
-- Jer 4:4;
-- Jer 9:25–26.
+- Jer 4:4; 7:26; 9:25–26;
+- Neh 9:16–17,29.
 
-### Unhearing ears
+Stephen’s accusation is therefore covenant-prophetic, not free-floating insult.
 
-Prophetic refusal-to-hear language throughout Jeremiah / Zechariah.
+## 9.1. “Resisting the Holy Spirit” in context
 
-Thus Stephen’s accusation is saturated in covenant vocabulary.
-
----
-
-## 9.2. “Resisting the Holy Spirit” in context
-
-Calvin rightly cautions that Acts 7:51 specifically concerns resisting the Spirit **speaking through the prophetic ministry/Word** rather than offering a complete abstract pneumatology of every mode of resistance.
+Calvin rightly narrows the immediate reference: resistance to the Spirit is concretely resistance to the Spirit speaking through God’s prophets/Word.
 
 Primary:
 https://ccel.org/ccel/calvin/calcom36/calcom36.xiv.xi.html
 
-That is a valuable precision.
-
 Stephen’s logic:
 
 - God sent prophets;
-- fathers persecuted them;
-- present leaders have betrayed/murdered the Righteous One;
+- the fathers persecuted them;
+- the present leaders betrayed/murdered the Righteous One;
 - they received law but did not keep it.
 
-So “resist the Holy Spirit” is not a mystical feeling ignored.
-
-It is concrete opposition to God’s revealed word and messengers.
+Thus the passage does not primarily describe ignoring a private impression; it describes entrenched opposition to divine revelation.
 
 ---
 
-# 10. MacArthur / Shepherds-compatible conservative control
+# 10. MacArthur / conservative pastoral control
 
-MacArthur’s Acts exposition reads vv.51–53 as the climax of Stephen’s historical indictment: the present leaders reproduce the fathers’ resistance to God, law and prophets.
+MacArthur’s Acts exposition reads vv.51–53 as the climax of Stephen’s historical indictment: present leaders reproduce the fathers’ resistance to God, law and prophets.
 
-Verified GCC/GTY:
-- https://www.gty.org/sermons/44-26/stephens-old-testament-defense-of-christ-part-2
-- https://www.gty.org/sermons/print/1723/stephens-powerful-sermon-part-2
+Verified GTY:
 
-The useful pastoral point is the continuity:
+https://www.gty.org/sermons/44-26/stephens-old-testament-defense-of-christ-part-2
+
+https://www.gty.org/sermons/print/1723/stephens-powerful-sermon-part-2
+
+Pastoral implication:
 
 > long possession of Scripture and religious heritage can coexist with entrenched resistance to the God who speaks in Scripture.
 
 ### Guardrail
 
-Do not convert the rhetoric into ethnic condemnation of Jews as such.
-
-Stephen himself is Jewish and repeatedly says “our fathers.” The indictment targets covenant rebellion replicated by his present hearers.
+Do not convert Stephen’s rhetoric into ethnic condemnation of Jews. Stephen himself is Jewish and repeatedly says “our fathers.” The indictment is covenant rebellion reproduced by his present hearers.
 
 ---
 
@@ -335,7 +310,7 @@ deliverance from Egypt → calf/idolatry.
 
 ## Deuteronomy
 
-warning against return to Egypt / idolatry / hard heart.
+warning against idolatry / hard heart / covenant rebellion.
 
 ## Prophets
 
@@ -343,7 +318,7 @@ persistent idolatry → refusal to hear → exile.
 
 ## Acts 7
 
-Stephen compresses this trajectory and applies it to rejection of Christ.
+Stephen compresses this trajectory and applies it to rejection of the Righteous One.
 
 ## Hebrews 3–4
 
@@ -353,16 +328,9 @@ same wilderness generation becomes church warning:
 
 ### Synthesis
 
-The biblical problem is not geographical Egypt alone.
-
 > **Egypt can persist as a direction of the heart after the feet have left it.**
 
-And persistent inward return can become:
-
-- false worship;
-- rejection of God’s messengers;
-- judicial handing-over;
-- hardened resistance.
+Persistent inward return can become false worship, rejection of God’s messengers, judicial handing-over and hardened resistance.
 
 ---
 
@@ -372,38 +340,46 @@ And persistent inward return can become:
 
 - “return” can be inward/moral rather than physical;
 - heart direction can precede visible idolatry;
-- external possession of “living oracles” does not equal obedience;
+- possession of “living oracles” does not equal obedience;
 - rejection of God’s messenger can recur across generations;
 - persistent idolatry can result in divine handing-over;
-- resisting prophetic revelation is described as resisting Holy Spirit;
-- religious succession/history does not justify present rebellion.
+- resistance to prophetic revelation is described as resistance to Holy Spirit;
+- religious history does not justify present rebellion;
+- Stephen’s Amos quotation deliberately/actually broadens the exile horizon to Babylon in the received Acts text.
 
 ## Does not prove by itself
 
-- that every member of wilderness congregation was regenerate;
+- that every wilderness Israelite was regenerate;
 - that every resistance to Spirit is the unpardonable sin;
-- that corporate judicial handing-over maps one-to-one onto each individual’s eternal state;
-- that Acts 7:43 “Babylon” question has one obvious solution;
-- that ancestry itself transmits guilt apart from reproducing the fathers’ rebellion.
+- that corporate handing-over maps one-to-one onto each individual eternal state;
+- which exact compositional mechanism produced “Babylon” in Acts 7:43;
+- that ancestry transmits guilt apart from reproducing the fathers’ rebellion.
 
 ---
 
-# 13. Modern technical source closure still needed
+# 13. Modern technical source closure status
 
-Exact locators required before publication:
+## Newly strengthened
+
+- Brian J. Tabb, *Suffering in Ancient Worldview*, Stephen’s defense speech pp. 132–136; Israel’s persecution history pp. 133–135 — exact section locator now verified.
+- technical Acts/LXX-Amos comparison source documents the actual wording modifications in Acts 7:42–43.
+- modern scholarly treatment independently supports the Jerusalem/Babylon reorientation reading.
+
+## Still P0 exact-book locators
+
+Before flagship publication still attach exact pages for:
 
 - Darrell L. Bock, *Acts*, BECNT — Acts 7:35–43, 51–53;
-- David G. Peterson, *The Acts of the Apostles*, Pillar — same units;
-- Eckhard J. Schnabel, *Acts*, ZECNT — same units;
-- possible textual/quotation specialist on Acts 7:43 / Amos 5:27.
+- David G. Peterson, *The Acts of the Apostles*, PNTC — same;
+- Eckhard J. Schnabel, *Acts*, ZECNT — same.
 
-These are `P0 LOCATOR`, not optional garnish.
+These remain desirable because they are stronger modern evangelical technical controls than generic web commentaries.
 
 ---
 
 # 14. Publication-safe synthesis
 
-> «Стефан описывает одно из самых наглядных внутренних отступлений Писания: Израиль уже физически вышел из Египта, но “сердцами обратился в Египет” (Деян. 7:39). Следующий стих показывает, что это значит: внутренний поворот становится требованием иных богов, затем золотым тельцом, жертвой и радостью в деле собственных рук. После человеческого “поворота” Лука описывает Божий судебный “поворот”: Бог отвратился и предал их служению небесному воинству. В конце речи Стефан соединяет всю историю в обвинении “вы всегда противитесь Духу Святому; как отцы ваши, так и вы”. Поэтому отступление здесь — не магическое значение одного слова, а направление сердца, которое отвергает Божье слово, создаёт замену истинному поклонению и, при упорном сопротивлении, оказывается под Божьим судом.»
+> «Стефан описывает одно из самых наглядных внутренних отступлений Писания: Израиль уже физически вышел из Египта, но “сердцами обратился в Египет” (Деян. 7:39). Следующий стих показывает, что это значит: внутренний поворот становится требованием иных богов, затем золотым тельцом, жертвой и радостью в деле собственных рук. После человеческого “поворота” Лука описывает Божий судебный ответ: Бог отвратился и предал их служению небесному воинству. Стефан затем цитирует Амоса, но расширяет формулу изгнания “за Дамаск” до “за Вавилон”, тем самым связывая многовековую идолопоклонническую траекторию уже и с катастрофой Иуды/Иерусалима. В конце речи вся история собирается в обвинении: “вы всегда противитесь Духу Святому; как отцы ваши, так и вы”. Отступление здесь — не магическое значение одного слова, а направление сердца, которое отвергает Божье слово, создаёт замену истинному поклонению и при упорном сопротивлении оказывается под Божьим судом.»
 
 ---
 
@@ -414,6 +390,9 @@ Heart-return → calf trajectory: **GREEN**
 God turned / gave over: **GREEN**  
 OT stiff-neck / uncircumcised-heart matrix: **GREEN**  
 Calvin + MacArthur conservative controls: **GREEN**  
-Bock/Peterson/Schnabel exact locators: **AMBER / P0**  
-Acts 7:43 Babylon/Damascus quotation problem: **AMBER / P0**  
-Publication: **HOLD**.
+Brian Tabb section locator: **GREEN**  
+Acts 7:43 Babylon vs Damascus factual/textual difference: **GREEN**  
+Acts 7:43 theological exile-extension reading: **GREEN / multiple independent supports**  
+Exact compositional mechanism of alteration: **AMBER**  
+Bock/Peterson/Schnabel exact print locators: **AMBER / P0**  
+Publication: **HOLD pending preferred modern technical page closure.**
