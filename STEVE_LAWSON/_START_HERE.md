@@ -2,29 +2,30 @@
 
 **Updated:** 2026-09-30  
 **Canonical operational handoff:** [`CURRENT.md`](CURRENT.md)  
-**State:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY MAIN-CANONICAL CLOSED / ARENA RETIRED / EXTERNAL ACQUISITIONS TRIGGER-DRIVEN`
+**State:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY MAIN-CANONICAL CLOSED / POST-CLOSURE AUDIT PASS / ARENA RETIRED / EXTERNAL ACQUISITIONS TRIGGER-DRIVEN`
 
-> **Start with `74_`, `75_`, `81_`, `82_`, then `CURRENT.md`. Main is authority. Do not resume from V4/V5, arena control files, consumed staging, or generic search loops.**
+> **Start with `74_`, `75_`, `81_`, `82_`, `83_`, then `CURRENT.md`. Main is authority. Do not resume from V4/V5, arena control files, consumed staging, or generic search loops.**
 
 ## Canonical reading order
 
 1. [`74_ARTICLE_RU_REFINED_V6_2026-09-30.md`](74_ARTICLE_RU_REFINED_V6_2026-09-30.md) — canonical Russian publication article.
-2. [`75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md`](75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md) — final claim/source audit: PASS.
+2. [`75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md`](75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md) — original final V6 claim/source audit: PASS.
 3. [`81_CANONICAL_BIOGRAPHY_CLOSURE_AND_PRIMARY_SOURCE_UPGRADES_2026-09-30.md`](81_CANONICAL_BIOGRAPHY_CLOSURE_AND_PRIMARY_SOURCE_UPGRADES_2026-09-30.md) — **canonical biography authority**: education, football, formation, pastoral chronology, BGEA, sportswriter claim, archive boundary.
 4. [`82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md`](82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md) — exact remaining archive items, exhausted public-web routes and namesake traps.
-5. [`CURRENT.md`](CURRENT.md) — current operational authority and hard guardrails.
-6. [`80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md`](80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md) — last arena-push provenance reconciliation (`34152fe...`, pass 48).
-7. [`78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md`](78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md) — targeted 100+ result P1 pass.
-8. [`79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md`](79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md) — GRP/POD/endmatter/named-support pass.
-9. [`76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md`](76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md) — July-2026 false-comeback guardrail.
-10. [`77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md`](77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md) — metadata split + explicit POD signal.
-11. [`62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`](62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md) — stable research verdict.
-12. [`68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md`](68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md) — historical pass-37 reconciliation layer only.
-13. [`70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`](70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md) — Tier-A criteria; old checkpoint superseded by `80_`/`81_`.
-14. [`71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`](71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md) — earlier canonical-stack audit.
-15. [`65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md`](65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md) — six-root/physical-book P1.
-16. [`67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md`](67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md) — Anne/marital-status guardrail.
-17. [`72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md`](72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md) — false-current Trinity page-state guardrail.
+5. [`83_POST_BIOGRAPHY_CLOSURE_V6_CONSISTENCY_AUDIT_2026-09-30.md`](83_POST_BIOGRAPHY_CLOSURE_V6_CONSISTENCY_AUDIT_2026-09-30.md) — **post-closure V6 audit: PASS / no V7 trigger**.
+6. [`CURRENT.md`](CURRENT.md) — current operational authority and hard guardrails.
+7. [`80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md`](80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md) — last arena-push provenance reconciliation (`34152fe...`, pass 48).
+8. [`78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md`](78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md) — targeted 100+ result P1 pass.
+9. [`79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md`](79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md) — GRP/POD/endmatter/named-support pass.
+10. [`76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md`](76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md) — July-2026 false-comeback guardrail.
+11. [`77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md`](77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md) — metadata split + explicit POD signal.
+12. [`62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md`](62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md) — stable research verdict.
+13. [`68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md`](68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md) — historical pass-37 reconciliation layer only.
+14. [`70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md`](70_BIOGRAPHY_LANE_IMPACT_TRIAGE_AND_FREEZE_CRITERIA_2026-09-30.md) — Tier-A criteria; old checkpoint superseded by `80_`/`81_`.
+15. [`71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md`](71_CANONICAL_STACK_CONSISTENCY_AUDIT_2026-09-30.md) — earlier canonical-stack audit.
+16. [`65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md`](65_BOOK_SIX_ROOT_PUBLIC_TRANSCRIPTION_AND_ACKNOWLEDGMENTS_P1_PASS_2026-09-29.md) — six-root/physical-book P1.
+17. [`67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md`](67_ANNE_LAWSON_DIRECT_PUBLIC_STATEMENT_AND_MARITAL_STATUS_P1_NEGATIVE_AUDIT_2026-09-29.md) — Anne/marital-status guardrail.
+18. [`72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md`](72_TBC_LEGACY_LAWSON_PAGE_STATE_FALSE_CURRENT_TRAP_2026-09-30.md) — false-current Trinity page-state guardrail.
 
 Editorial history only:
 - `64_ARTICLE_RU_REFINED_V5_2026-09-29.md`;
@@ -42,7 +43,7 @@ Final arena provenance checkpoint:
 
 Do **not** wholesale-merge that branch. It contains useful evidence provenance plus stale/parallel control files and the older `17_ v4.1` article line.
 
-`80_` reconciles the last push. `81_` is now the cleaned canonical biography in main. `82_` records every residual exact question and why it is archive/source-byte only.
+`80_` reconciles the last push. `81_` is now the cleaned canonical biography in main. `82_` records every residual exact question and why it is archive/source-byte only. `83_` verifies that the completed biography strengthens V6 and creates no V7 trigger.
 
 Rule:
 
@@ -140,10 +141,12 @@ Do not launch another generic 100-link crawl without a new trigger.
 
 ## Final state
 
-Canonical verdict remains:
+Canonical verdict:
 
 > **PASS / PUBLICATION_READY_WITH_GUARDRAILS / NO MATERIAL CLAIM-SOURCE REGRESSION FOUND.**
 
-The biography closure strengthens V6 and does not create a V7 trigger.
+Post-biography closure audit:
+
+> **PASS / V6 REMAINS CANONICAL / NO V7 TRIGGER.**
 
 > **BIOGRAPHY WEB INVESTIGATION CLOSED. MAIN AUTHORITY COMPLETE. ARENA RETIRED TO PROVENANCE. EXTERNAL ARCHIVES ONLY WHEN AN EXACT OBJECT BECOMES ACCESSIBLE.**
