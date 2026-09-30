@@ -2,21 +2,22 @@
 
 **Snapshot:** 2026-09-30  
 **Corpus:** `LAWSON-2024-2026` + canonical biography closure + targeted post-V6 P1 passes  
-**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY MAIN-CANONICAL CLOSED / ARENA RETIRED AS WORKING AUTHORITY / EXTERNAL ACQUISITIONS TRIGGER-DRIVEN`
+**Status:** `PUBLICATION_READY_WITH_GUARDRAILS / V6 CANONICAL / BIOGRAPHY MAIN-CANONICAL CLOSED / POST-CLOSURE AUDIT PASS / ARENA RETIRED AS WORKING AUTHORITY / EXTERNAL ACQUISITIONS TRIGGER-DRIVEN`
 
 ## Canonical stack
 
 1. `74_ARTICLE_RU_REFINED_V6_2026-09-30.md` — canonical Russian publication article.
-2. `75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md` — final claim/source audit: PASS.
+2. `75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md` — original final claim/source audit: PASS.
 3. `81_CANONICAL_BIOGRAPHY_CLOSURE_AND_PRIMARY_SOURCE_UPGRADES_2026-09-30.md` — **current canonical biography authority in main**.
 4. `82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md` — final archive-only remainder / negative-search receipt.
-5. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — provenance reconciliation for the last arena push.
-6. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
-7. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
-8. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
-9. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
-10. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
-11. `_START_HERE.md` — operational navigation.
+5. `83_POST_BIOGRAPHY_CLOSURE_V6_CONSISTENCY_AUDIT_2026-09-30.md` — **post-closure audit: PASS / V6 canonical / no V7 trigger**.
+6. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — provenance reconciliation for the last arena push.
+7. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
+8. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
+9. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
+10. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
+11. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
+12. `_START_HERE.md` — operational navigation.
 
 Historical reconciliation layers only:
 - `68_BIOGRAPHY_LANE_INTEGRATION_BRIDGE_2026-09-30.md` — pass-37 layer;
@@ -43,13 +44,13 @@ Canonical rule:
 
 > **Main is authority. Preserve arena provenance; semantically reconcile evidence; never wholesale-merge arena control state.**
 
-`80_` reconciled pass 48. `81_` then completed the biography with stronger public/institutional sources and became the canonical main biography layer. `82_` records the exact archive-only remainder and final public-search stop rule.
+`80_` reconciled pass 48. `81_` then completed the biography with stronger public/institutional sources and became the canonical main biography layer. `82_` records the exact archive-only remainder and final public-search stop rule. `83_` verifies that this closure does not require a V7.
 
 ---
 
 ## Canonical biography verdict
 
-The long biography arc is now sufficiently established for publication and future research work.
+The long biography arc is sufficiently established for publication and future research work.
 
 ### Education
 
@@ -247,7 +248,7 @@ Do not state as fact that:
 
 ## Remaining P1 — trigger-driven only
 
-The article does not wait for these. Reopen only on a genuinely new primary object or exact accessible route:
+The article does not wait for these. Reopen only on a genuinely new primary object or exact accessible route.
 
 ### Post-fall/book/governance
 - photographed pages containing all six root causes;
@@ -278,11 +279,13 @@ Another generic web crawl is **not** justified.
 
 ## Publication verdict
 
-`75_ARTICLE_RU_V6_FINAL_CLAIM_SOURCE_AUDIT_2026-09-30.md` remains:
+Original V6 audit:
 
 > **PASS / PUBLICATION_READY_WITH_GUARDRAILS / NO MATERIAL CLAIM-SOURCE REGRESSION FOUND.**
 
-The completed biography closure strengthens V6's historical frame and creates no V7 trigger.
+Post-biography closure audit (`83_`):
+
+> **PASS / V6 REMAINS CANONICAL / NO V7 TRIGGER / BIOGRAPHY CLOSURE STRENGTHENS RATHER THAN CORRECTS THE ARTICLE.**
 
 Canonical article remains:
 
