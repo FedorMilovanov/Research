@@ -11,14 +11,15 @@
 3. `81_CANONICAL_BIOGRAPHY_CLOSURE_AND_PRIMARY_SOURCE_UPGRADES_2026-09-30.md` — canonical biography authority in main.
 4. `82_FINAL_BIOGRAPHY_OPEN_ITEMS_AND_NEGATIVE_SEARCH_RECEIPT_2026-09-30.md` — exhausted public routes / exact external-only remainder.
 5. `83_POST_BIOGRAPHY_CLOSURE_V6_CONSISTENCY_AUDIT_2026-09-30.md` — post-closure audit: PASS / no V7 trigger.
-6. `84_EXTERNAL_ACQUISITION_OUTREACH_AND_GRACE_MEDIA_FIRST_PARTY_UPGRADE_2026-09-30.md` — **current acquisition authority: first-party Grace media upgrade + dispatched holder requests**.
-7. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — last arena-push provenance reconciliation.
-8. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
-9. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
-10. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
-11. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
-12. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
-13. `_START_HERE.md` — operational navigation.
+6. `84_EXTERNAL_ACQUISITION_OUTREACH_AND_GRACE_MEDIA_FIRST_PARTY_UPGRADE_2026-09-30.md` — current acquisition authority: first-party Grace media upgrade + 11 dispatched holder requests.
+7. `85_OUTBOUND_ACQUISITION_DELIVERY_CHECKPOINT_2026-09-30.md` — **delivery-state control: FSU ticket #58057 confirmed; immediate bounce check clean; no other substantive response yet**.
+8. `80_BIOGRAPHY_PASS48_RECONCILIATION_2026-09-30.md` — last arena-push provenance reconciliation.
+9. `78_FRESH_100_PLUS_LINK_P1_GOLD_PASS_2026-09-30.md` — fresh targeted P1/gold pass.
+10. `79_GRP_POD_BACKEND_ENDMATTER_AND_NAMED_SUPPORT_TARGETED_PASS_2026-09-30.md` — GRP/POD/endmatter/named-support pass.
+11. `76_CONTENDING_2026_DECLINED_INVITATION_PLATFORM_RETURN_GUARDRAIL_2026-09-30.md` — July-2026 false-comeback guardrail.
+12. `77_BOOK_DISTRIBUTION_METADATA_SPLIT_AUDIT_2026-09-30.md` — book metadata/POD audit.
+13. `62_LOGICAL_SYNTHESIS_AND_RESEARCH_VERDICT_2026-09-29.md` — stable research verdict.
+14. `_START_HERE.md` — operational navigation.
 
 Historical reconciliation/planning only: `64_`, `68_`, `69_`, `70_`, `71_`, `73_` and arena control files.
 
@@ -52,7 +53,7 @@ Final arena provenance checkpoint:
 - HEAD `34152fe42cd93f5db03f2a5ddab8332218ee3814`;
 - pass 48.
 
-`80_` reconciles that delta. `81_` supersedes arena as the working biography authority. `82_` closes generic public searching and reduces every residual question to an exact external object. `84_` converts those residual questions from passive backlog into active requests to the holders.
+`80_` reconciles that delta. `81_` supersedes arena as the working biography authority. `82_` closes generic public searching and reduces every residual question to an exact external object. `84_` converts those residual questions from passive backlog into active requests to the holders. `85_` records actual delivery state without promoting silence into acceptance.
 
 ### Stable biography findings
 
@@ -100,6 +101,20 @@ On 2026-09-30 exact source requests were dispatched. Governing ledger: `84_`.
 9. **Church & Family Life** — verified audio/video/transcripts for the two February 2024 Lawson Life Story episodes and confirmation/rejection of the two candidate first-party MP3 routes.
 10. **Texas Rangers Publications/Communications** — archival check for Steve/Steven J. Lawson as writer/reporter/contributor ca. 1971–1974; the pitcher namesake was explicitly excluded.
 11. **Dallas Cowboys** — routing to communications/publications/history for any comparable sportswriter credential/byline record.
+
+### Delivery checkpoint
+
+`85_` records the immediate delivery control:
+
+- FSU Special Collections returned an automated receipt and assigned **ticket #58057** for the Tampa Times request;
+- no bounce/undeliverable object was observed in the immediate cross-domain check;
+- no other substantive holder response had arrived at that checkpoint.
+
+Correct interpretation:
+
+> **FSU = received/ticketed; other requests = sent, no immediate delivery failure observed, substantive response pending.**
+
+Do not promote silence into `accepted` or `research in progress` without a holder message.
 
 Operational rule:
 
@@ -189,7 +204,7 @@ Do not state as fact that:
 **Self-service/public-web biography work:** `CLOSED`  
 **Canonical biography in main:** `COMPLETE FOR CURRENT ARTICLE`  
 **Arena dependency:** `RETIRED`  
-**Exact external acquisitions:** `DISPATCHED / AWAITING HOLDER RESPONSES`  
+**Exact external acquisitions:** `DISPATCHED / FSU TICKETED / AWAITING HOLDER RESPONSES`  
 **V6 publication state:** `PASS / READY WITH GUARDRAILS`  
 **V7 trigger:** `NONE`
 
