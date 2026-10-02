@@ -3,7 +3,8 @@
 **Дата актуализации:** 2026-10-02  
 **Статус корпуса:** `RESEARCH-MATURE / FIVE DRAFTS PUBLICATION-CANDIDATE / PRODUCT HANDOFF READY`  
 **Canonical directory:** `apostasy/`  
-**Current handoff:** `111_RESEARCH_TO_PRODUCT_HANDOFF_APOSTATES_FIVE_PART_SERIES_2026-10-02.md`
+**Current handoff:** `111_RESEARCH_TO_PRODUCT_HANDOFF_APOSTATES_FIVE_PART_SERIES_2026-10-02.md`  
+**Latest integrity audit:** `112_FINAL_RESEARCH_INTEGRITY_AUDIT_AND_CITATION_CORRECTIONS_2026-10-02.md` — two reader-facing citation defects corrected in Parts I/II/V (`ded80da1…`); all publication locks re-verified; no RED blocker.
 
 **Authority rule:** lowercase `apostasy/` is the canonical spine. Uppercase/legacy/salvage directories are evidence inputs, not parallel authorities. Later adjudication in this directory supersedes earlier queues when they conflict.
 
@@ -17,7 +18,7 @@ For the present state, do **not** start with the old P0 queues from September 30
 
 Read in this order:
 
-1. `111_RESEARCH_TO_PRODUCT_HANDOFF_APOSTATES_FIVE_PART_SERIES_2026-10-02.md` — exact Product intake contract.
+1. `111_RESEARCH_TO_PRODUCT_HANDOFF_APOSTATES_FIVE_PART_SERIES_2026-10-02.md` — exact Product intake contract. Product must take Parts I/II/V at/after `ded80da14a66f8d42a984e22213ef4e8cc81d398` (see `112_...`).
 2. `110_FIVE_READER_DRAFTS_PUBLICATION_CANDIDATE_MERGE_CHECK_2026-10-02.md` — confirms all five reader drafts are patched/source-annotated.
 3. `109_CROSS_SERIES_CONTRADICTION_OVERCLAIM_AND_WORDING_AUDIT_2026-10-02.md` — records seven wording/overclaim defects and their rationale.
 4. `108_FIVE_PART_FINAL_SOURCE_EDITORIAL_PUBLICATION_GATE_2026-10-02.md` — final Research-side source/editorial gate.
@@ -254,6 +255,8 @@ Current authorized next wave is Product intake under `111_...`:
 5. preserve all final-state, hard-text, textual-variant, pastoral and source-policy locks;
 6. run Product build/accessibility/internal-link checks;
 7. obtain release witness before live publication.
+
+**Research-side status:** final integrity audit `112_...` is closed with no RED blocker; only the Parts I/II/V citation corrections in `ded80da1…` changed the source-of-truth prose. Take those three files at/after that commit.
 
 Do **not** resume by:
 
