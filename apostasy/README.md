@@ -258,6 +258,8 @@ Current authorized next wave is Product intake under `111_...`:
 
 **Research-side status:** final integrity audit `112_...` is closed with no RED blocker; only the Parts I/II/V citation corrections in `ded80da1…` changed the source-of-truth prose. Take those three files at/after that commit.
 
+**New authorized research wave (2026-10-02, user-requested):** `113_UNTOUCHED_APOSTASY_THEMES_AND_NEXT_RESEARCH_WAVE_INVENTORY_2026-10-02.md` (complete evidence-based list of uncovered themes) and `114_IRREVERSIBLE_APOSTASY_SEMINARY_DOSSIER_2026-10-02.md` (seminary-level treatment of irreversible apostasy, built on frozen owners `60`–`65`, `45`, `47`). These are research-only supplements: they change no reader draft, no map and no frozen lock. Product intake of the five-part series proceeds independently.
+
 Do **not** resume by:
 
 - another 66-book sweep;
