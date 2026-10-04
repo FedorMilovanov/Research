@@ -153,7 +153,7 @@
 | Обновленчество: ВЦУ, 1922, поддержка гос. органов, 37/73 епископов к авг. 1922, анафема Тихона, массовое возвращение 1923+ | Исторический (несколько независимых описаний) | HIGH для фактов, MEDIUM для чисел |
 | Декларация Сергия: 29 июля 1927, лояльность, требование подписки от зарубежных, катакомбники | PRIMARY (текст декларации) + описания | HIGH |
 | Оценки «сергианства» расходятся | Факт разногласия | HIGH |
-| «Немецкие христиане»: Мюллер — рейхс-епископ 1933; Шпортпаласт; Бармен 1934 | Обзорные источники | MEDIUM-HIGH (требует первичной сверки) |
+| «Немецкие христиане»: Мюллер — рейхс-епископ 1933; Шпортпаласт; Бармен 1934 | Обзорные источники; первичный текст Бармена найден онлайн 04.10.2026 (EKD) | MEDIUM-HIGH |
 | Ни один случай не даёт нам права произносить вердикт о вечности его участников | SYSTEMATIC (см. `118`) | HIGH |
 
 ---
@@ -164,6 +164,7 @@
 - Shepherd of Hermas, Commandment 4 — https://sacred-texts.com/bib/lbob/lbob27.htm ; цитата также у sharperiron.org (Lexham, Brannan).
 - Tertullian, De Pudicitia — https://www.ewtn.com/catholicism/library/on-modesty-de-pudicitia-11403 ; PDF-версия Schaff: documentacatholicaomnia.eu.
 - Декларация Сергия 1927 — https://dvagrada.ru/wiki/Декларация_1927_года ; https://www.ostrova.org/history/sergii/
+- Барменская декларация (Barmer Theologische Erklärung), 31.05.1934 — текст (нем.): https://www.uni-frankfurt.de/117383284/Barmer_Theologische_Erklärung.pdf (EKD); https://www.evangelisch.de/inhalte/113515/15-09-2012/die-barmer-theologische-erklarung-1934 — проверено 04.10.2026.
 
 **Исторические обзоры (Tier 3 по `49A`):**
 - Обновленчество: ru.wikipedia.org; drevo-info.ru/articles/2451.html; экспозиция РНБ (expositions.nlr.ru/ve/RA9758); cyberleninka (Астраханский край); akrateia.info (РПЦ 1920–1990-е).
