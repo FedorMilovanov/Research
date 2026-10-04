@@ -152,7 +152,7 @@
 
 ## Долг
 
-1. Печатные издания: Ignatius (Lightfoot), Martyrdom of Polycarp (ANF/Lightfoot), Tertullian Apologeticus (CCSL/ANF) — **сканы Lightfoot найдены онлайн 04.10.2026**: «The Apostolic Fathers», pt. II (S. Ignatius, S. Polycarp, 1885) и pt. I (S. Clement, 1890) на archive.org (напр. `apostolicfather00smyrgoog`, `apostolicfather01lighgoog`); постраничная сверка цитат по сканам — при публикационном использовании.
+1. Печатные издания: Ignatius (Lightfoot), Martyrdom of Polycarp (ANF/Lightfoot), Tertullian Apologeticus (CCSL/ANF) — **сканы Lightfoot найдены онлайн 04.10.2026**: «The Apostolic Fathers», pt. II (S. Ignatius, S. Polycarp, 1885) и pt. I (S. Clement, 1890) на archive.org (напр. `apostolicfather00smyrgoog`, `apostolicfather01lighgoog`; ср. однотомник 1891 г. — `apostolicfathers00lighuoft`, включающий «Пастыря» Ерма); постраничная сверка цитат по сканам — при публикационном использовании.
 2. 1 Тим. 6:12–13; Мф. 5:10–12; Лк. 9:23–26; Мф. 26:52; Ин. 18:36; Рим. 12:1; 1 Пет. 2:21 — ✔ сверено 03.10.2026 (SBLGNT; см. `139` §7 №14; Лк. 9:25 — №22).
 3. Современные данные о гонениях: Open Doors WWL-2025 — прочитан 04.10.2026 (`139` §7 №33): методика (шкала на 100 баллов; violence + pressure в 5 сферах; внешний аудит IIRF), данные (1 из 7 христиан — «high-level»; 209 771 перемещённых; 54 780 пострадавших; №1 — КНДР). Tier 3 — только как фон.
 4. Связь с русским архивным материалом (отречения/стойкость евангельских верующих) — лид остаётся за русской серией (`124` §3.3, `132` §5.7).
