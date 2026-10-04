@@ -1,7 +1,8 @@
 # Ин. 17:12 — «данные Отцом», Иуда и «сын погибели»: technical dossier
 
-**Дата:** 2026-09-30  
-**Статус:** `P0 JUDAS EXEGESIS / RESEARCH-ONLY / PUBLICATION_HOLD`  
+**Дата создания:** 2026-09-30<br>
+**Последнее обновление:** 2026-10-05 (W35; added Lioy, with limits of use)<br>
+**Статус:** `P0 JUDAS EXEGESIS / RESEARCH-ONLY / PUBLICATION_HOLD`
 **Canonical owner:** будущая статья `/articles/iuda-izbrannyy-apostol-no-ne-spasennyy/`  
 **Parent:** `apostasy/02_JUDAS_ISCARIOT_EXEGETICAL_DOSSIER_2026-09-29.md`  
 **Readiness:** `apostasy/25_PUBLICATION_READINESS_AND_CLAIM_LEDGER_2026-09-30.md`
@@ -409,6 +410,13 @@ Adam Kubiś, “Judas or Jesus’ Other Disciples? The Old Testament or Jesus’
 - p.137 surveys Moloney’s Judas-inclusive/nonfinal reading and objections;
 - conclusion pp. 170–171 rechecked on 2026-10-04 in the author-uploaded full-text copy on ResearchGate (page labels verified in the text): general Scriptural tenor; possible double horizon (Hebrew Scriptures + Jesus’ prophetic words); possible reference to both Judas and the other disciples. Kubiś calls von Wahlde’s Prov. 24:22a proposal “very attractive” if one seeks a specific text, but presents it conditionally rather than as an established sole referent. The publisher PDF endpoint was also opened, but the available parser returned only the opening portion, not pp. 170–171; no print collation;
 - cites Michaels NICNT p.870 and Keener p.1059 for important modern positions.
+
+**Dan Lioy**, “Denial Versus Betrayal: A Case Study Analysis of Simon Peter and Judas Iscariot in the Fourth Gospel,” *Conspectus* 32/1 (2021), 125–143, DOI 10.54725/conspectus.2021.2.7.
+
+- The full journal PDF was read directly; the article identifies CC BY 4.0. In §5, p.136, Lioy discusses John 6:64–71 and reports Craig Keener’s observation (Keener 2003, p.697) that Judas’s mention beside Peter’s confession sets apostasy and confession as alternatives. That Keener sentence remains **Lioy’s report**, not a direct check of Keener’s page.
+- Lioy’s Johannine reading continues through John 13 on pp.136–137; footnote 53 to John 17:12 is on p.138. His §6 begins p.138 and applies 2 Cor 7:10–11 to the divergent Peter/Judas outcomes (conclusion, pp.138–142).
+- Use as a focused comparative theological/pastoral study, not as a modern commentary on the syntax of `εἰ μὴ`, the `ᾧ/οὓς` variant, or the identity of the “given ones.” His claim that Judas’s grief was chiefly about consequences is an inference and sits uneasily with Matt 27:4’s explicit confession of sin and innocent blood; do not import it as a textual fact.
+- Lioy’s bibliography prints Ryan as *Journal of Religious Education* 67(5):223–237. That issue number is erroneous: the correct record is 67, no. 3; see `139` §7 №65.
 
 ### Classical/interpretive contrast
 
