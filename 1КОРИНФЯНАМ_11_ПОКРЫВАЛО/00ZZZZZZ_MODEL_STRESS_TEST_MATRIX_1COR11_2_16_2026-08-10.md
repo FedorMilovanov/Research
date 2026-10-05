@@ -1,8 +1,8 @@
 # 1 Коринфянам 11:2–16 — whole-model adversarial stress-test matrix
 
-**Дата:** 2026-08-10  
+**Дата:** 2026-08-14  
 **Статус:** `MODEL-STRESS-TEST / ADVERSARIAL / CONSERVATIVE-WEIGHTED / NO-VOTE-COUNTING / RESEARCH-ONLY`  
-**База:** verse-by-verse adversarial audit + segment-level relation map.
+**База:** current verse-by-verse adversarial audit + segment-level relation map + evergreen evidence owners through 2026-08-14.
 
 ## 1. Зачем этот слой
 
@@ -21,13 +21,13 @@
 
 ## 2. Тестируемые модели
 
-### M1 — Material covering + headship/order
+### M1 — Material covering + relational headship/order
 
-Классический conservative synthesis:
+Calibrated conservative synthesis:
 - vv.4–6,13 — textile/material head covering;
-- v.3 — headship/authority/predominance;
+- v.3 — relational headship / prominence / representation, without equating `κεφαλή` with one narrow lexical gloss `authority over`;
 - vv.7–9 — creation-order rationale;
-- v.10 — authority-related head sign with woman's grammatical agency preserved;
+- v.10 — woman remains active `ἐξουσία` bearer, with head/head-state as the leading constructional control domain; exact social realization remains open;
 - vv.11–12 — mutuality counterbalance, not cancellation;
 - vv.14–15 — hair as natural analogy;
 - v.16 — trans-local church-practice closure.
@@ -35,9 +35,9 @@
 ### M2 — Material covering + woman's authority/interdependence emphasis
 
 Текстильное покрытие сохраняется, но:
-- v.10 primarily affirms woman's own `ἐξουσία` to pray/prophesy/control head;
-- vv.11–12 strongly redirect from hierarchy to interdependence;
-- v.3 may be broader head/source relation rather than direct male authority claim.
+- v.10 primarily emphasizes woman's own `ἐξουσία` / responsibility / control concerning the head/head-state;
+- vv.11–12 strongly redirect from unilateral hierarchy to interdependence;
+- v.3 may be broader relational head/source/prominence rather than a narrow direct male-authority gloss.
 
 Watson/Hooker/Newberry-related family, without assuming they are identical.
 
@@ -58,7 +58,7 @@ Oster/Gill/Finney family.
 
 ### M5 — Wives / free(d) wives scope
 
-`γυνή/ἀνήρ` predominantly wife/husband, especially instructions directed to married free/freed women; Callon 2024 develops this with slave bodily-autonomy and Genesis/marriage evidence.
+`γυνή/ἀνήρ` predominantly wife/husband, especially instructions directed to married free/freed women; Callon 2024 develops this with slave bodily-autonomy and Genesis/marriage evidence. This remains a **tested serious alternative**, not the current project-leading practical scope.
 
 ### M6 — Large quotation/refutation
 
@@ -72,19 +72,21 @@ Major portion or whole 11:2–16 is secondary/non-Pauline. Walker/Mount-type pro
 
 # 3. Matrix
 
-| Test node | M1 Material+headship | M2 Material+authority/interdependence | M3 Hair-only | M4 Roman trigger | M5 Wives/free wives | M6 Quote/refute | M7 Interpolation |
+| Test node | M1 Material+relational order | M2 Material+authority/interdependence | M3 Hair-only | M4 Roman trigger | M5 Wives/free wives | M6 Quote/refute | M7 Interpolation |
 |---|---|---|---|---|---|---|---|
 | v2 traditions/praise | NATURAL | NATURAL | COMPATIBLE | COMPATIBLE | COMPATIBLE | TENSION | MAJOR_TENSION |
-| v3 three `κεφαλή` relations | NATURAL | COMPATIBLE | N/A | N/A | COMPATIBLE | MAJOR_TENSION if quoted span includes v3 | solved only by removal, not exegesis |
-| v4 `κατὰ κεφαλῆς ἔχων` | NATURAL | NATURAL | TENSION after Massey lexical case | NATURAL as historical trigger | COMPATIBLE | depends quotation boundary | removed rather than explained |
-| v5 woman praying/prophesying | NATURAL | NATURAL | COMPATIBLE | COMPATIBLE | COMPATIBLE | COMPATIBLE | removed rather than explained |
+| v3 three `κεφαλή` relations | NATURAL if relational rather than one-gloss | NATURAL/COMPATIBLE | N/A | N/A | COMPATIBLE | MAJOR_TENSION if quoted span includes v3 | solved only by removal, not exegesis |
+| v4 `κατὰ κεφαλῆς ἔχων` | NATURAL | NATURAL | TENSION after Massey/Edsall lexical case | NATURAL as historical trigger | COMPATIBLE | depends quotation boundary | removed rather than explained |
+| v5 woman praying/prophesying | NATURAL | NATURAL/STRONG | COMPATIBLE | COMPATIBLE | COMPATIBLE | COMPATIBLE | removed rather than explained |
+| v5 gathered-church setting | NATURAL | NATURAL | COMPATIBLE | COMPATIBLE | NATURAL/COMPATIBLE in house-church/public models | COMPATIBLE | removed rather than explained |
 | vv5–6 covering vs shaving | NATURAL as two distinct states | NATURAL | TENSION: must make covering-language hairstyle | N/A | COMPATIBLE | depends speaker allocation | removed rather than explained |
 | v7 image/glory | NATURAL | COMPATIBLE | N/A | N/A | COMPATIBLE | MAJOR_TENSION if attributed to Corinthians | removed |
-| vv8–9 Genesis origin/purpose | NATURAL | COMPATIBLE but must integrate hierarchy pressure | N/A | N/A | NATURAL if marital Genesis frame | MAJOR_TENSION if non-Pauline quotation | removed |
+| vv8–9 Genesis origin/purpose | NATURAL | COMPATIBLE but must integrate order pressure | N/A | N/A | NATURAL if marital Genesis frame | MAJOR_TENSION if non-Pauline quotation | removed |
 | v10 `διὰ τοῦτο` continuity | NATURAL | NATURAL | COMPATIBLE | N/A | COMPATIBLE | TENSION if v10 suddenly begins Paul's response | removed |
-| v10 woman subject of `ἐξουσία` | COMPATIBLE only if sign-language does not erase agency | NATURAL | NATURAL/COMPATIBLE if control-of-hair | N/A | COMPATIBLE | NATURAL in some refutation models | removed |
+| v10 active woman bearer + control-domain construction | COMPATIBLE only if sign-language preserves woman as bearer and control-domain relation | NATURAL/STRONG | NATURAL/COMPATIBLE if control-of-hair | N/A | COMPATIBLE | NATURAL in some refutation models | removed |
+| v10 exact social realization remains B/C | COMPATIBLE | COMPATIBLE | COMPATIBLE | N/A | COMPATIBLE | COMPATIBLE | removed |
 | v10 angels | COMPATIBLE | COMPATIBLE | COMPATIBLE | N/A | COMPATIBLE | COMPATIBLE | removed |
-| vv11–12 interdependence | NATURAL as counterbalance | NATURAL/STRONG | COMPATIBLE | N/A | COMPATIBLE | NATURAL as corrective turn | removed |
+| vv11–12 interdependence | NATURAL as counterbalance | NATURAL/STRONG | COMPATIBLE | N/A | COMPATIBLE but v12 pressures rigid marital gloss | NATURAL as corrective turn | removed |
 | v13 propriety appeal | NATURAL | NATURAL | COMPATIBLE | COMPATIBLE | COMPATIBLE | COMPATIBLE | removed |
 | vv14–15 explicit hair vocabulary | NATURAL as analogy | NATURAL as analogy | NATURAL/STRONG | N/A | COMPATIBLE | COMPATIBLE | removed |
 | v15 `ἀντὶ περιβολαίου` | COMPATIBLE as analogy | COMPATIBLE | NATURAL/STRONG | N/A | COMPATIBLE | COMPATIBLE | removed |
@@ -96,26 +98,27 @@ Major portion or whole 11:2–16 is secondary/non-Pauline. Walker/Mount-type pro
 
 # 4. Adversarial findings by model
 
-## M1 — Material covering + headship/order
+## M1 — Material covering + relational headship/order
 
 ### Best explanatory wins
 
 - Explains lexical distinction between covering verbs vv.4–6 and explicit hair vocabulary vv.14–15 without collapsing them.
 - Reads `γάρ`, `διὰ τοῦτο`, `πλὴν`, `ὥσπερ...οὕτως` as one continuous Pauline argument.
 - Takes creation reasoning seriously rather than treating it as disposable local fashion.
-- Explains why vv.11–12 are needed: real order creates risk of unilateral over-reading, so Paul explicitly restores mutual dependence.
+- Explains why vv.11–12 are needed: real relational/order pressure creates risk of unilateral over-reading, so Paul explicitly restores mutual dependence.
 - Fits early material-covering reception.
+- Can absorb the active v10 construction if it refuses the traditional shortcut `ἐξουσία = passive sign of somebody else's authority`.
 
 ### Main pressure points
 
-1. `ἐξουσία` v.10: traditional English “symbol of authority over her” can violate active syntax. M1 survives only in its **calibrated** form, where woman remains subject and sign-of-headship is contextual, not lexical.
-2. `κεφαλή`: authority must remain B, not be declared lexically exclusive.
+1. `ἐξουσία` v.10: traditional English “symbol of authority over her” can violate active syntax. M1 survives only in its **calibrated** form, where the woman remains bearer and the B-leading control-domain relation is preserved; an authority-related sign is contextual and the exact social realization remains `B_C`.
+2. `κεφαλή`: the broad relational headship/prominence/representation reading is B-leading, but the **exact narrow lexical claim** `authority over` is only `B_C`; neither authority-only nor source-only may be declared lexically exclusive.
 3. historical trigger: cannot depend on universal-prostitute/shaving folklore.
 4. application: theological rationale does not automatically prove one identical modern garment shape.
 
 ### Overall
 
-**Leading whole-pericope synthesis**, but only after removal of traditional overclaims.
+**Leading whole-pericope synthesis**, but only in calibrated relational form after removal of traditional overclaims.
 
 ---
 
@@ -123,20 +126,21 @@ Major portion or whole 11:2–16 is secondary/non-Pauline. Walker/Mount-type pro
 
 ### Best explanatory wins
 
-- Handles active `ἐξουσία` syntax very naturally.
-- Gives full weight to women actually praying/prophesying.
+- Handles active `ἐξουσία` syntax and the B-leading head/head-state control-domain construction very naturally.
+- Gives full weight to women actually praying/prophesying in the gathered church.
 - Treats vv.11–12 as structurally significant rather than appendix.
 - Retains textile lexical evidence and therefore avoids M3's biggest burden.
+- Does not need a narrow `κεφαλή = authority over` lexical gloss to preserve real relational/order force.
 
 ### Pressure points
 
 - Must still explain why v.10 begins `διὰ τοῦτο` after vv.7–9 creation/glory reasoning.
-- If it effectively erases ordering force in v.3/7–9, it underreads explicit argumentative pressure.
-- A woman's-own-authority reading does not by itself identify what “authority on/over her head” concretely is.
+- If it effectively erases all ordering/relational force in v.3/7–9, it underreads explicit argumentative pressure.
+- A woman's active authority/control reading does not by itself identify the **exact social realization** of “authority on/over her head”.
 
 ### Overall
 
-**Strongest major alternative/corrective family** to a crude hierarchical reading; several elements are incorporated into calibrated conservative synthesis rather than rejected.
+**Strongest major corrective family** to a crude hierarchical reading; several of its strongest controls are now incorporated into the calibrated leading synthesis rather than treated as mutually exclusive with it.
 
 ---
 
@@ -150,7 +154,7 @@ Major portion or whole 11:2–16 is secondary/non-Pauline. Walker/Mount-type pro
 
 ### Major burdens
 
-- Massey's lexical study specifically argues `κατακαλύπτω` permits textile covering, challenging hairstyle-only translation.
+- Massey's lexical study and Edsall's direct corpus both pressure a hairstyle-only construal of earlier covering language.
 - vv.5–6 read naturally as uncovered state compared with cutting/shaving; hair-only must turn these into different hairstyle operations while explaining the covering verbs.
 - Early reception strongly reads material covering.
 
@@ -174,9 +178,19 @@ Major portion or whole 11:2–16 is secondary/non-Pauline. Walker/Mount-type pro
 - No direct evidence says the specific Christian men of Corinth were performing Roman sacrifice ritual in church.
 - Female portraiture is mixed; no universal veil rule follows.
 
+### Current calibration
+
+```text
+ROMAN_CAPITE_VELATO_BACKGROUND = A
+V4_EXACT_CAPITE_VELATO = B_C
+EXACT_ROMAN_RITUAL_STATUS_TRIGGER_IN_CORINTH = RECONSTRUCTION_LAYER
+```
+
+The first line is a grade for the **historical background fact**. The second and third concern its identification with Paul’s v4 and the hidden local cause. These levels must not be collapsed.
+
 ### Overall
 
-**Excellent background B model, bad candidate for total explanatory theory**. Must remain subordinate to textual exegesis.
+**Excellent A-level historical background; B_C/reconstruction-level exact trigger model.** It remains a bad candidate for a total explanatory theory and must stay subordinate to textual exegesis.
 
 ---
 
@@ -186,18 +200,25 @@ Major portion or whole 11:2–16 is secondary/non-Pauline. Walker/Mount-type pro
 
 - `γυνή/ἀνήρ` genuinely allow wife/husband senses.
 - Genesis 2 has obvious marriage relevance.
-- Callon 2024 gives new explanatory force via slaves' lack of bodily/hair/sexual autonomy and free/freed matronly status.
-- Avoids assuming one head-covering norm applied socially to every female status group.
+- Callon 2024 gives explanatory force via slaves' lack of bodily/hair/sexual autonomy and free/freed matronly status.
+- Massey supplies a distinct marital/house-church public-private reconstruction.
+- Avoids assuming one head-covering social rationale applied identically to every female status group.
 
 ### Pressure points
 
-- v.12 uses woman/man language in origin/generation in a way that resists mechanically translating every occurrence “wife/husband”.
-- No scholarly consensus; Callon herself frames proposal as likely/tentative, not settled.
-- Must explain unmarried free women and other women participating in Christian prophecy if present.
+- v.12 uses woman/man language in origin/generation in a way that resists mechanically translating every occurrence “wife/husband”; even marital models must broaden/switch the token there.
+- Direct Peters 2021 and Wang 2022 controls independently include or read women beyond a wives-only class.
+- Must explain unmarried/celibate/free and other women participating in Christian prayer/prophecy without making their presence irrelevant to the practical scope.
+- Callon's own preference remains tentative; one strong social reconstruction does not own the project grade.
 
 ### Overall
 
-**OPEN B/C scope model**; significantly stronger after Callon, still not exclusive A.
+```text
+ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
+```
+
+M5 remains a **serious current C alternative**, not a co-leading `OPEN B/C` scope state.
 
 ---
 
@@ -247,15 +268,17 @@ The matrix does **not** prove M1 by counting `NATURAL` cells. It shows where exp
 
 The most resilient synthesis at present is a **calibrated hybrid**:
 
-1. textile/material covering remains B-high;
-2. v.3 headship/authority remains B but not exclusive lexically;
-3. woman's active agency in v.10 must be retained;
-4. vv.11–12 are real counterbalance/interdependence, not decorative;
-5. Roman ritual/status is background, not master key;
-6. wives/free(d)-wives is a serious scope contender;
-7. hair functions explicitly in vv.14–15 but hair-only for the whole passage remains C;
-8. church-wide practice v.16 closes resistance, though exact referent remains B/C;
-9. quotation/interpolation models remain mapped but low-weight.
+1. textile/material covering remains `B_HIGH_LEADING`;
+2. v.3 relational headship/prominence/representation remains `B_LEADING`, while exact narrow `authority over` is `B_C` and source-only remains `C_VIABLE`;
+3. v.5 women really pray/prophesy (`A_TEXT`) and the gathered-church setting is `B_HIGH_LEADING`; private/nonchurch setting remains a serious harmonizing C alternative;
+4. woman is the active v10 `ἐξουσία` bearer (`A_SYNTAX` / `B_HIGH` semantic pull); head/head-state as control domain is `B_LEADING`, while the exact social realization remains `B_C`;
+5. heavenly/holy angels remain the leading referent family, while exact angelic function remains `B_C`; reception multiplicity does not solve Paul's exact mechanism;
+6. vv.11–12 are real counterbalance/interdependence, not decorative;
+7. Roman `capite velato` is A-level historical background, while exact v4 identification remains `B_C` and the local trigger remains reconstruction;
+8. all-women / sex-class practical scope is `B_LEADING_CONTEXTUAL`; free(d)-married-wives remains a serious current C alternative;
+9. hair functions explicitly in vv.14–15 but hair-only for the whole passage remains C;
+10. church-wide practice v.16 closes resistance, though exact referent remains B/C;
+11. quotation/interpolation models remain mapped but low-weight.
 
 This is more conservative **and** more defensible than a brittle model that needs every traditional sub-claim to be certain.
 
@@ -281,4 +304,5 @@ MODEL_MATRIX != VOTE
 MODEL_MATRIX != UI
 PRODUCT_WRITE = false
 SITE_PUBLICATION = false
+PUBLICATION_HOLD = true
 ```

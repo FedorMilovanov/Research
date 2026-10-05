@@ -1,258 +1,361 @@
-# Source card — Janelle Peters, *Paul and the Citizen Body* (2025) + open antecedent article
+# Source card — Janelle Peters, *Paul and the Citizen Body* (2025) + direct antecedents
 
 **Дата аудита:** 2026-08-10  
-**Статус:** `CURRENT-SCHOLARSHIP-INGRESS / ADVERSARIAL-NODE / NOT-CORE-SUPERSESSION`
+**Статус:** `CURRENT-SCHOLARSHIP-INGRESS / ADVERSARIAL-NODE / DIRECT-ANTECEDENT-CONTROL / SCOPE-GRADE-CONTROL / FINAL-ACCESS-DISPOSITION / NOT-WHOLE-MODEL-SUPERSESSION`
 
----
-
-## 1. Почему источник добавлен
-
-В ходе P0 open-preview pass обнаружен актуальный монографический вклад, напрямую посвящённый veiling instructions в 1 Corinthians:
+## 0. Current node
 
 **Janelle Peters, *Paul and the Citizen Body: Egalitarian Athletics and Veiling Instructions in 1 Corinthians*, WUNT II 625, Mohr Siebeck, 2025.**
 
 Official publisher route:
+- https://www.mohrsiebeck.com/en/book/paul-and-the-citizen-body-9783161601637
 
-https://www.mohrsiebeck.com/en/book/paul-and-the-citizen-body-9783161601637
+```text
+YEAR = 2025
+PAGES = 183
+SERIES = WUNT_II_625
+PRINT_ISBN = 9783161601637
+EBOOK_DOI = 10.1628/978-3-16-160164-4
+PETERS_CITIZEN_BODY_MODEL = C_SERIOUS_CURRENT_MODEL
+```
 
-Publisher data:
+The publisher summary situates athletics and veiling inside ancient authority/citizenship, where control over body/head matters, and presents Paul as constructing an alternative Christian citizen body across social status. Google Books independently confirms volume structure and places “Creation in the Pauline House-Churches” at p.113.
 
-- 2025;
-- 183 pages;
-- WUNT II 625;
-- print ISBN 978-3-16-160163-7;
-- ebook DOI/ISBN route also available;
-- author: Janelle Peters.
-
-The publisher summary directly says the study situates athletics and veiling within ancient authority/citizenship, where **control over one’s body and head** was important, and argues that Paul constructs an alternative Christian citizen body accessible across social status.
-
-This is not merely a generic gender study. It intersects directly with:
-
-- head/veil symbolism;
-- `ἐξουσία` and bodily control;
-- Roman/Greek citizenship and prestige;
-- social status;
-- creation and communal identity.
+```text
+PETERS_2025_MOHR_SUMMARY = DIRECT_PUBLISHER
+PETERS_2025_GOOGLE_BOOKS_TOC = DIRECT_BOOK_METADATA_PREVIEW
+PETERS_2025_FULL_MONOGRAPH_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
+PUBLISHER_SUMMARY != VERSE_LEVEL_BODY
+```
 
 ---
 
-## 2. Open full-text antecedent by the same author
+# 1. Direct source genealogy by the same author
 
-Open article:
+The 2025 monograph is a mature stage of a project directly traceable to 2013, not a model first invented in 2025.
 
-**Janelle Peters, “Creation, Angels, and Gender in Paul, Philo, and the Dead Sea Scrolls,” Open Theology 7 (2021): 248–255.**
+## 1.1 Emory dissertation 2013
 
-DOI: https://doi.org/10.1515/opth-2020-0161
+**Janelle Lynne Peters, “Leveling the Playing Field: Egalitarian Veils and Athletic Metaphors in 1 Corinthians.” PhD dissertation, Emory University, 2013.**
 
-Open full text is licensed CC BY 4.0 and is accessible through publisher/ResearchGate routes.
+Direct institutional repository:
+- persistent object ID `qr46r105v`;
+- repository status: **Open Access**;
+- degree: PhD;
+- fields: Ancient History / Biblical Studies / Classical Literature.
 
-The article is useful because it exposes several interpretive commitments that later connect naturally with the 2025 monograph’s citizen-body thesis.
+The repository exposes abstract and complete TOC. The present runtime has not successfully resolved the `Primary PDF` binary endpoint.
+
+```text
+PETERS_2013_DISSERTATION_EXISTENCE = DIRECT_INSTITUTIONAL
+PETERS_2013_ABSTRACT_TOC = DIRECT_INSTITUTIONAL
+PETERS_2013_PRIMARY_PDF_ROUTE = OPEN_ACCESS_OBJECT
+PETERS_2013_PRIMARY_PDF_BYTES = TERMINAL_RUNTIME_PRIMARY_PDF_ENDPOINT_HOLD_CURRENT_ROUTE
+```
+
+Direct TOC anchors:
+
+```text
+CH6_CREATION_IN_CORINTHIAN_HOUSE_CHURCHES_AND_ROMAN_EMPIRE = starts_p228
+CH7_VEILING_THE_BODY_OF_CHRIST = starts_p264
+CONCLUSION = starts_p301
+```
+
+The institutional abstract directly establishes a citizen-body / socioeconomic-status / athletic-imagery / veiling / imperial-visual-status / creation-ideology research program.
+
+```text
+PETERS_CITIZEN_BODY_MODEL_EXISTS_BY_2013 = A_SOURCE_GENEALOGY
+PETERS_VEILING_PLUS_VISUAL_STATUS_MODEL_EXISTS_BY_2013 = DIRECT_INSTITUTIONAL_ABSTRACT
+PETERS_CREATION_PLUS_IMPERIAL_IDEOLOGY_MODEL_EXISTS_BY_2013 = DIRECT_INSTITUTIONAL_ABSTRACT
+```
+
+### p.282 locator
+
+Later scholarship cites dissertation p.282 in connection with a Corinthian statue and F. P. Johnson, *Corinth* IX.1, pp.70–72. Since chapter 7 starts p.264 and the conclusion starts p.301, p.282 is deterministically inside the veiling chapter.
+
+```text
+PETERS_2013_P282 = DETERMINISTIC_CH7_PAGE_TARGET
+PETERS_2013_P282_CORINTH_STATUE = SECONDARY_PAGE_LOCATOR
+PETERS_2013_P282_DIRECT_BODY = TERMINAL_RUNTIME_PRIMARY_PDF_ENDPOINT_HOLD_CURRENT_ROUTE
+ARCHAEOLOGICAL_OBJECT_CLAIMS = VERIFY_IN_ASCSA_LEDGER_NOT_FROM_SECONDARY_PETERS_CITATION
+```
 
 ---
 
-# 3. Directly recoverable Peters claims
+## 1.2 Biblica 2020
 
-## 3.1. Veiling is real in her reading
+**Janelle Peters, “Slavery and the Gendered Construction of Worship Veils in 1 Corinthians,” *Biblica* 101.3 (2020): 431–443.** DOI `10.2143/BIB.101.3.3288730`.
 
-Peters repeatedly describes Paul’s instructions as **veiling instructions** and treats female veiling as an enacted practice rather than reducing the passage to hair length alone.
+Peeters directly verifies article identity/pages. JSTOR independently identifies stable item `48653612`; the available XML/body route does not expose quote-safe full text in the current runtime.
 
-Calibration:
+```text
+PETERS_2020_BIBLICA_EXISTENCE = DIRECT_PUBLISHER_VERIFIED
+PETERS_2020_DOI_PAGES = DIRECT_PUBLISHER_VERIFIED
+PETERS_2020_FULL_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
+```
+
+The official abstract directly establishes analysis of veiling at the intersection of **slavery and gender**, with class cohesion and benefit to enslaved men and women.
+
+```text
+PETERS_2020_GENDER_OVER_CLASS_COHESION = DIRECT_PUBLISHER_ABSTRACT
+PETERS_2020_ENSLAVED_MEN_WOMEN_BENEFIT = DIRECT_PUBLISHER_ABSTRACT
+PETERS_2020_EXACT_VERSE_BY_VERSE_CHAIN = NOT_DIRECTLY_VERIFIED
+```
+
+A secondary reproduction of a purported article conclusion remains discovery-only and is not promoted to direct article body.
+
+---
+
+## 1.3 Open Theology 2021 — direct open full text
+
+**Janelle Peters, “Creation, Angels, and Gender in Paul, Philo, and the Dead Sea Scrolls,” *Open Theology* 7 (2021): 248–255.** DOI `10.1515/opth-2020-0161`.
+
+The De Gruyter/Brill page exposes complete open article text.
+
+Directly recoverable commitments include:
+- creational order as reason for veiling instructions;
+- ritual veiling/interdependence;
+- community-internal judgment;
+- women’s authority at the worship meal in relation to v10/angels;
+- Second Temple creation/angel traditions, especially 4QInstruction, as comparandum;
+- explicit inclusion of **ascetic, unmarried, and married persons** in the body-of-Christ vision generated from the 1 Cor 11 veiling/creation argument;
+- treatment of vv11–12 as interdependence of **men and women in creation generally**, rather than a requirement that every `ἀνήρ/γυνή` token remain husband/wife.
+
+```text
+PETERS_2021 = DIRECT_OPEN_FULLTEXT
+PETERS_CREATION_INTERDEPENDENCE = DIRECT_AUTHOR_BODY
+PETERS_ANGELS_SECOND_TEMPLE_COMPARANDUM = DIRECT_AUTHOR_BODY
+PETERS_V10_WOMEN_AUTHORITY_AT_WORSHIP = DIRECT_AUTHOR_BODY
+PETERS_2021_ASCETIC_UNMARRIED_MARRIED_INCLUSION = DIRECT_AUTHOR_BODY
+PETERS_2021_MEN_WOMEN_GENERAL_INTERDEPENDENCE = DIRECT_AUTHOR_BODY
+```
+
+The 2021 article therefore supplies direct author-body evidence that Peters' veiling/creation framework is **not limited to married women as a class**, even though this does not by itself settle every individual `γυνή` token.
+
+---
+
+# 2. Directly recoverable Peters claims
+
+## Material veiling
+
+Across the 2013 dissertation title/abstract, 2020 article title/abstract, 2021 open body and 2025 book title/summary, Peters consistently treats Paul’s instructions as enacted **veiling instructions**, not hair-only.
 
 ```text
 PETERS_MATERIAL_VEILING = B_HIGH_AUTHOR_POSITION
 ```
 
-This is an author-position grade, not a project truth grade.
-
-## 3.2. Creation reasoning has theological force
-
-The 2021 article explicitly says Paul uses creational order as a proof/reason for the veiling instructions and reads Genesis 1–2 throughout vv.3, 7–12.
-
-The 2025 publisher summary likewise says the citizen-body argument is not merely political expediency but tied to Paul’s construction of the body/community.
-
-Calibration:
+## Creation + interdependence
 
 ```text
 PETERS_CREATION_ARGUMENT_REAL = A_AUTHOR_POSITION
-```
-
-This supports the project’s refusal to reduce 11:2–16 to a purely arbitrary local dress code.
-
-## 3.3. Creation order is not her final word: interdependence matters
-
-Peters reads vv.11–12 as a genuine interdependence move and highlights the closing `πάντα ἐκ τοῦ θεοῦ`.
-
-She argues that Paul’s creational reasoning does not simply end at vv.8–9 hierarchy/order but moves into male/female interdependence.
-
-Calibration:
-
-```text
 PETERS_V11_12_INTERDEPENDENCE = A_AUTHOR_POSITION
 ```
 
-This aligns with the project’s own `MUTUAL_INTERDEPENDENCE_11_11_12 = A` textual judgment.
+The open 2021 body makes both directly visible.
 
-## 3.4. Angels need not be fallen Watchers
+## Angels
 
-The 2021 article explicitly says that the presence of angels does **not** require an Enochic/fallen-angel explanation.
-
-Peters instead explores Second Temple Jewish creation/angel traditions, especially 4QInstruction, as a comparandum for gender, creation and spiritual authority/interdependence.
-
-Calibration:
+The 2021 article does not require a fallen-Watchers explanation and instead explores creation/angel traditions including 4QInstruction.
 
 ```text
 PETERS_WATCHERS_NOT_REQUIRED = A_AUTHOR_POSITION
 PETERS_SECOND_TEMPLE_CREATION_ANGEL_COMPARANDUM = B_PROPOSED
 ```
 
-This gives an important modern independent reason to keep:
+## `ἐξουσία`
 
-```text
-WATCHERS = C
-```
-
-rather than promoting Watchers to the leading explanation merely because angels and women co-occur.
-
-## 3.5. `ἐξουσία` / authority is connected to women rather than simply erased
-
-Peters’ 2021 discussion associates v.10 with authority and female spiritual agency; the 2025 monograph’s official summary makes bodily/head control central to its citizenship framework.
-
-However the full 2025 lexical argument on `ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς` has not yet been fully read in a verified direct route.
-
-Therefore:
+The open 2021 article relates v10’s authority/head/angel language to women’s authority at worship; the 2025 publisher summary independently makes bodily/head control central to the citizenship framework.
 
 ```text
 PETERS_EXOUSIA_WOMAN_AGENCY = B_HIGH_AUTHOR_TRAJECTORY
-PETERS_EXOUSIA_EXACT_LEXICAL_PARSE_2025 = HOLD_FULL_MONOGRAPH_SECTION
+PETERS_2021_V10_WOMEN_AUTHORITY = DIRECT_OPEN_BODY
+PETERS_EXOUSIA_EXACT_LEXICAL_PARSE_2025 = NOT_DIRECTLY_VERIFIED / MONOGRAPH_BODY_TERMINAL_ACCESS_HOLD
 ```
 
-Do not turn the publisher summary into a pretend verse-level quotation.
-
-## 3.6. Social status / citizenship model
-
-The 2025 official publisher description says Peters rejects a simple model in which Christian veiling merely reproduces Roman status restrictions. Instead, she argues that Pauline bodily/veiling discipline constructs a new citizen body drawing on Roman/Greek prestige concepts while extending participation across status.
-
-This creates a serious alternative to two simplifications:
-
-1. `veil = only female subordination under Roman patriarchy`;
-2. `veil = only arbitrary local modesty custom`.
-
-Calibration:
+## Social status / citizenship
 
 ```text
 PETERS_CITIZEN_BODY_MODEL = C_SERIOUS_CURRENT_MODEL
+PETERS_STATUS_DEMOCRATIZATION_TRAJECTORY = DIRECT_2013_INSTITUTIONAL + DIRECT_2020_ABSTRACT + DIRECT_2021_BODY + DIRECT_2025_PUBLISHER
 ```
 
-Why C rather than B project-wide:
+The complete 2025 primary-evidence chain has not been page-by-page autopsied, so the whole-model project grade does not rise above C merely because the source genealogy is strong.
 
-- it is a substantial new scholarly reconstruction;
-- it coheres with real Roman/Greek status/citizenship evidence;
-- but the complete monographic chain has not yet been adversarially verified page-by-page against primary ancient evidence in this project.
+## Scope consequence — separate from whole-model adoption
+
+The project now separates the probability of **Peters' whole citizen-body reconstruction** from the narrower question **who is practically in scope in 1 Cor 11:2–16**.
+
+Peters contributes materially to the scope question because:
+
+1. her 2020 publisher abstract explicitly puts enslaved men and women inside the veiling/status analysis;
+2. her 2021 direct OA body explicitly includes ascetic, unmarried, and married persons in the creation/body-of-Christ vision and treats vv11–12 as men/women interdependence generally;
+3. the 2025 publisher model again describes the Christian citizen body across social status;
+4. this independent cross-status trajectory directly pressures a rule that would exclude slaves/unmarried women merely because some Roman veiling signals were matronal.
+
+This does **not** mean Peters alone proves all-women scope. The project promotion comes from combining her cross-status controls with the internal v12 lexical/discourse burden on a rigid wife/husband reading, Wang's direct all-women reading, and the extra reconstruction steps required by Massey/Callon.
+
+```text
+PETERS_WHOLE_MODEL = C_SERIOUS_CURRENT_MODEL
+PETERS_CROSS_STATUS_SCOPE_CONTROL = B_HIGH_RELEVANCE
+PROJECT_ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+PROJECT_FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
+PETERS_SCOPE_CONTROL != PETERS_WHOLE_MODEL_ADOPTION
+```
 
 ---
 
-# 4. Relation to existing Roman-background models
+# 3. Source-genealogy continuity and firewall
 
-Peters does **not** simply duplicate Gill/Oster/Winter.
+```text
+2013:
+CITIZEN_BODY
++ SOCIOECONOMIC_SCHISMS
++ ATHLETIC_METAPHORS
++ VEILING_AS_VISUAL_STATUS
++ CREATION/IMPERIAL_IDEOLOGY
 
-Existing project distinctions:
+2020:
+SLAVERY + GENDERED_VEILING -> CLASS_COHESION
 
-- Roman `capite velato` male sacrificial practice = A historical background;
-- exact Corinthian trigger = B reconstruction;
-- Gill/Finney-type elite male status signaling = B/C reconstruction;
-- Winter new-woman/unveiling context = historical reconstruction, not universal rule.
+2021:
+CREATION + ANGELS + INTERDEPENDENCE + WOMEN'S_AUTHORITY
++ ASCETIC/UNMARRIED/MARRIED_INCLUSION
 
-Peters contributes a different organizing concept:
+2025:
+AUTHORITY/CITIZENSHIP + BODILY_HEAD_CONTROL
+-> CHRISTIAN_CITIZEN_BODY_ACCESSIBLE_ACROSS_STATUS
+```
+
+Continuity does **not** license word-for-word transfer between editions/articles.
+
+```text
+PUBLISHER_ABSTRACT != FULL_ARTICLE_BODY
+INSTITUTIONAL_ABSTRACT != FULL_DISSERTATION_BODY
+SECONDARY_PAGE_LOCATOR != DIRECT_PAGE_AUTOPSY
+2013_WORDING != AUTOMATIC_2025_WORDING
+```
+
+---
+
+# 4. Relation to Roman-background models
+
+Peters is not merely Gill/Oster/Winter repeated. Her organizing concept is:
 
 ```text
 ROMAN_GREEK_CITIZENSHIP + BODILY_CONTROL + PRESTIGE
         -> PAULINE_RECONFIGURATION
-        -> ECCLESIAL / HEAVENLY CITIZEN BODY
+        -> ECCLESIAL / HEAVENLY CITIZEN_BODY
 ```
 
-The model can therefore be layered with, but must not be conflated with, `capite velato` or matronal-modesty reconstructions.
+Current project distinctions remain:
+
+```text
+ROMAN_CAPITE_VELATO_MALE_SACRIFICIAL_PRACTICE = A_BACKGROUND
+EXACT_CORINTHIAN_TRIGGER = RECONSTRUCTION
+PETERS_SPECIFIC_CORINTH_STATUARY_USE = CHECK_AGAINST_ASCSA_LEDGER
+```
 
 ---
 
 # 5. Relation to conservative synthesis
 
-Peters is not adopted wholesale. But several elements actually **strengthen the project against shallow anti-covering arguments**:
+Peters is not adopted wholesale. Compatible/pressure points:
 
-- she treats veiling as real;
-- she treats creation reasoning as real theological reasoning;
-- she does not reduce everything to temporary fashion;
-- she treats vv.11–12 as real, not an embarrassment to be minimized;
-- she keeps `ἐξουσία` connected to female agency;
-- she offers a non-Watchers angelic background.
+- material veiling;
+- theological force of creation;
+- genuine vv.11–12 interdependence;
+- female agency in `ἐξουσία`;
+- non-Watchers angel framework;
+- social-status reconfiguration rather than simple copying of elite codes;
+- practical scope extending across marital/social status as a serious direct control.
 
-Tension with the leading conservative synthesis remains on:
-
+Tensions remain on:
 - exact force of `κεφαλή`/hierarchy;
-- how much the practice itself is universal versus culturally instantiated;
-- exact relation between authority, citizenship, bodily control and the textile sign;
-- whether her broader egalitarian citizen-body framework overreads the local social evidence.
-
-Thus:
+- universal practice vs cultural instantiation;
+- exact relation between authority, citizenship, bodily control and textile sign;
+- whether citizen-body egalitarianism overreads local evidence;
+- whether status/gender differentiation is the historical trigger or theological reuse.
 
 ```text
 PETERS_COMPATIBLE_WITH_MATERIAL_COVERING = yes
 PETERS_COMPATIBLE_WITH_CREATION_FORCE = yes
 PETERS_COMPATIBLE_WITH_V11_12_INTERDEPENDENCE = yes
-PETERS_COMPATIBLE_WITH_STRONG_SIMPLE_HEADSHIP_MODEL = partial/tension
+PETERS_COMPATIBLE_WITH_STRONG_SIMPLE_HEADSHIP_MODEL = partial_tension
 PETERS_WHOLE_MODEL_ADOPTION = no
 ```
 
 ---
 
-# 6. New adversarial questions Peters forces us to keep open
+# 6. Adversarial questions retained
 
-1. Does `ἐξουσία` in v.10 function partly in the ancient semantic world of **bodily/head control** associated with civic status?
-2. Does a church-wide veil practice transform Roman status signals rather than merely copy them?
-3. Can Paul simultaneously preserve sex differentiation and democratize honor/status across free/slave/marital distinctions?
-4. Does the angel clause belong more naturally to creation/interdependence than to sexual-threat/Watchers narratives?
-5. Are vv.11–12 a corrective qualification of vv.7–10, or the intended telos of the whole creation argument?
+The following are **questions for model testing**, not acquisition debts:
 
-These are now `ACTIVE_ADVERSARIAL_QUESTIONS`, not settled conclusions.
-
----
-
-# 7. Acquisition status
-
-The 2025 monograph is current and valuable, but the project already has:
-
-- official publisher thesis;
-- Google Books TOC/index route;
-- open 2021 antecedent article with substantial direct argument.
-
-Therefore do **not** immediately burden the user with it.
+1. Does `ἐξουσία` partly inhabit an ancient bodily/head-control status semantic world?
+2. Does church-wide veiling transform Roman status signals rather than merely copy them?
+3. Can Paul preserve sex differentiation while democratizing honor/status across free/slave/marital distinctions?
+4. Does the angel clause fit creation/interdependence better than Watchers sexual-threat models?
+5. Are vv.11–12 corrective qualification or telos of the creation argument?
+6. Does the slavery/gender model survive mixed Roman visual evidence?
+7. Which 2013 statuary identifications survive modern ASCSA recontextualization?
+8. What changed between 2013 chapters 6–7 and the shorter 2025 monograph?
 
 ```text
-PETERS_2025_USER_ACQUISITION = SELF_EXHAUST_FIRST
-PETERS_2025_FULL_MONOGRAPH = P1_IF_ACCESSIBLE
+ACTIVE_ADVERSARIAL_QUESTIONS != ACTIVE_SOURCE_ACQUISITION_QUEUE
 ```
-
-It is not moved above the four P0 technical commentaries, because those are direct verse-by-verse commentary controls and Peters is a thematic monograph.
 
 ---
 
-# 8. Final calibration delta
+# 7. Final acquisition disposition
 
-No existing core claim is reversed.
+```text
+PETERS_2013_EMORY_ABSTRACT_TOC = CLOSED_DIRECT_INSTITUTIONAL
+PETERS_2013_PRIMARY_PDF = OPEN_ACCESS_OBJECT / TERMINAL_RUNTIME_PRIMARY_PDF_ENDPOINT_HOLD_CURRENT_ROUTE
+PETERS_2013_P282 = DETERMINISTIC_CH7_TARGET / DIRECT_PAGE_TERMINAL_RUNTIME_ENDPOINT_HOLD
+PETERS_2020_BIBLICA_ABSTRACT = CLOSED_DIRECT_PUBLISHER
+PETERS_2020_BODY = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
+PETERS_2021_OPEN_THEOLOGY = CLOSED_DIRECT_OPEN_FULLTEXT
+PETERS_2025_MOHR_SUMMARY = CLOSED_DIRECT_PUBLISHER
+PETERS_2025_GOOGLE_BOOKS_TOC = CLOSED_DIRECT_METADATA_PREVIEW
+PETERS_2025_FULL_MONOGRAPH = TERMINAL_EXTERNAL_ACCESS_HOLD_CURRENT_RUNTIME
+```
 
-New node:
+```text
+PETERS_ACTIVE_ACQUISITION_QUEUE_FOR_CURRENT_KNOWN_ROUTES = EMPTY
+NEW_AUTHORIZED_MONOGRAPH_ARTICLE_OR_EMORY_BINARY_ROUTE = REOPEN_ONLY_TRIGGER
+```
+
+No user-copy request is needed to complete the current audit disposition.
+
+---
+
+# 8. Final calibration
 
 ```text
 PETERS_CITIZEN_BODY_MODEL = C_SERIOUS_CURRENT_MODEL
-```
+PETERS_SOURCE_GENEALOGY =
+2013_DIRECT_EMORY_DISSERTATION_ABSTRACT_TOC
+-> 2020_DIRECT_BIBLICA_ABSTRACT
+-> 2021_DIRECT_OPEN_FULLTEXT
+-> 2025_DIRECT_PUBLISHER_MODEL
 
-Reinforced safeguards:
+PETERS_CROSS_STATUS_SCOPE_CONTROL = B_HIGH_RELEVANCE
+PROJECT_ALL_WOMEN_PRACTICAL_SCOPE = B_LEADING_CONTEXTUAL
+PROJECT_FREE_D_MARRIED_WIVES_PRIMARY_SCOPE = C_SERIOUS_CURRENT_ALTERNATIVE
 
-```text
 ROMAN_CONTEXT != ONE_SIMPLE_MODESTY_RULE
 ANGELS != NECESSARILY_WATCHERS
 CREATION_ORDER != FINAL_WORD_WITHOUT_V11_12
 EXOUSIA != AUTOMATIC_PASSIVE_SUBORDINATION_MARKER
 MATERIAL_VEILING != NECESSARILY_MERE_COPY_OF_ROMAN_ELITE_STATUS
-```
+PETERS_SCOPE_CONTROL != PETERS_WHOLE_MODEL_ADOPTED
+PUBLISHER_ABSTRACT != FULL_ARTICLE_BODY
+INSTITUTIONAL_ABSTRACT != FULL_DISSERTATION_BODY
+SECONDARY_PAGE_LOCATOR != DIRECT_PAGE_AUTOPSY
+TERMINAL_HOLD != VERIFIED_BODY
 
-Keep `PUBLICATION_HOLD=true`.
+CORE_GRADE_REVERSALS = 0
+SCOPE_GRADE_PROMOTIONS = 1_ALL_WOMEN
+PUBLICATION_HOLD = true
+PRODUCT_WRITE = false
+SITE_PUBLICATION = false
+```

@@ -1,6 +1,6 @@
 # 1 Коринфянам 11:2–16 — current claim registry
 
-**Дата:** 2026-08-10  
+**Дата:** 2026-08-14  
 **Статус:** `CURRENT-CLAIM-REGISTRY / SINGLE-ENTRY-CALIBRATION / RESEARCH-ONLY / PUBLICATION-HOLD`
 
 This file is the **current claim-grade registry**. It does not replace source dossiers; it tells future agents which specialized file owns each current grade.
@@ -19,6 +19,8 @@ FOR_CURRENT_GRADE:
 | Claim | Current grade | Controlling file | Supersession note |
 |---|---|---|---|
 | women pray/prophesy in 11:5 | **A** | `00ZZZZZ_VERSE_BY_VERSE_ADVERSARIAL_AUDIT_1COR11_2_16_2026-08-10.md`; canonical boundary | unchanged textual fact |
+| public gathered-church setting for 11:5 | **B_HIGH_LEADING** | verse-by-verse audit + segment relation map + same-letter assembly context | leading contextual setting; not an A-level overt location noun |
+| private/nonchurch setting for 11:5 | **C_SERIOUS_HARMONIZING_ALTERNATIVE** | verse-by-verse audit + canonical boundary | possible harmonizing model, but carries greater contextual burden |
 | 11:5 alone settles pastorate/ordination | **REJECTED SCOPE ERROR** | canonical-boundary + speech-function taxonomy | separate functions/canonical texts required |
 | material covering | **B_HIGH_LEADING** | Greek lexical audit + hair/physis audit | old B-high retained/strengthened |
 | hair-only whole-passage | **C_SERIOUS_ALTERNATIVE** | Greek lexical audit + hair/physis audit | viable but bears higher lexical burden |
@@ -30,11 +32,13 @@ FOR_CURRENT_GRADE:
 | Corinthian familiarity with Roman ritual idiom | **B_HIGH historical** | Roman primary + Nõmmik audit | local recognition highly plausible, not explicit |
 | exact Corinthian trigger | **RECONSTRUCTION LAYER** | model stress + Roman/Nõmmik/current-literature layers | multiple competing B/C/C models; no monopoly |
 | `κεφαλή` can function in leadership/prominence metaphor | **A corpus possibility** | Greek lexical audit | blocks “philologically impossible” claim |
-| `κεφαλή` headship/authority in v3 | **B_LEADING** | Greek lexical audit + Genesis audit | current conservative leading reading |
+| `κεφαλή` relational headship/prominence/representation in v3 | **B_LEADING** | Greek lexical audit + Genesis audit + relation/model owners | leading contextual relation without collapsing the lexeme to a narrow authority gloss |
+| `κεφαλή` exact narrow authority-over in v3 | **B_C** | Greek lexical audit + relation/model owners | contextual possibility remains live, but narrower than the current B-leading relational claim |
 | `κεφαλή` source/origin-only | **C_VIABLE** | Greek lexical audit | not refuted; not leading |
 | `γυνή` can mean woman or wife | **A lexical options** | Greek lexical audit | context decides tokens |
 | `ἀνήρ` can mean man or husband | **A lexical options** | Greek lexical audit | context decides tokens |
-| wives vs all women | **OPEN_B_C** | Callon open-fulltext closure + later audits | no scholarly closure claimed |
+| all women as practical scope | **B_LEADING** | Greek lexical audit + Peters source card + Callon open-fulltext closure + Massey scope stress | generic sex-class reading traverses vv7–12 with fewer forced token exceptions; Peters independently includes cross-status/unmarried women |
+| free(d) married wives as primary scope | **C_SERIOUS_CURRENT_ALTERNATIVE** | Callon open-fulltext closure + Massey 2013 | strong social/marital reconstruction, but depends on additional status/marital bridges and does not naturally control every token, especially v12 |
 | v7 local image/glory asymmetry | **A_TEXT** | Genesis audit | real Pauline asymmetry |
 | Genesis male+female imago control | **A_B_HIGH** | Genesis audit | Gen 1:27 primary control |
 | v7 explicitly denies woman imago Dei | **C_LOW / NOT EXPLICIT** | Genesis audit | omission != negation |
@@ -51,7 +55,10 @@ FOR_CURRENT_GRADE:
 | woman grammatical subject of `ἐξουσίαν ἔχειν` | **A_SYNTAX** | Greek lexical audit | mandatory |
 | `ἐξουσία` right/authority/control semantic class | **A_B_HIGH** | Greek lexical audit | same-letter Pauline controls |
 | active woman bearer/possessor semantic pull | **B_HIGH** | Greek lexical audit | stronger than mere subject observation |
-| exact v10 `ἐξουσία` referent | **B_C** | Greek lexical audit | still unresolved |
+| `ἐξουσία + ἐπί + domain` as a control/domain construction | **A_CORPUS_CONSTRUCTION** | `dossiers/EXOUSIA_FORMAL_DOCUMENTARY_CORPUS.md` + Greek lexical audit | formal corpus relation is directly controlled; this does not identify one social implementation |
+| v10 head/head-state as the woman's control-domain relation | **B_LEADING_CONSTRUCTION** | EXOUSIA dossier + Greek lexical audit + relation/model owners | construction-level leading relation; distinct from exact textile/ministry/sign realization |
+| v10 head-worn locative/metonymic sign relation | **C_SERIOUS_COUNTERRELATION** | EXOUSIA dossier; Romerowski/Wang and reception countermodels | serious alternative relation, but not the leading constructional fit |
+| exact v10 `ἐξουσία` social realization/referent | **B_C** | EXOUSIA dossier + Greek lexical audit | covering-control, ministry/right, locative/metonymic and traditional sign implementations remain underdetermined |
 | “sign of husband’s authority over her” as literal Greek | **REJECTED** | lexical overclaim gates | “sign” + external possessor are supplied |
 | traditional “sign of husband’s authority” interpretation | **C_WITH_EXTRA_SEMANTIC_STEPS** | Greek lexical audit | may be argued contextually, not lexical replacement |
 | angels explicitly invoked v10 | **A_TEXT** | angels audit | minimum fact |
@@ -94,7 +101,7 @@ FOR_CURRENT_GRADE:
 | exact prohibited speech 14:34–35 | **B_C** | canonical-boundary audit | differentiated-functions model leading |
 | Nõmmik ritual-uniformity/capite-velato whole model | **C_SERIOUS_CURRENT_RECONSTRUCTION** | Nõmmik audit | strong v4, hidden causal chain |
 | Peters citizen-body model | **C_SERIOUS_CURRENT_MODEL** | Peters source card | current pressure-test, not adopted wholesale |
-| Callon free(d)-married-women model | **B_C_SERIOUS_CURRENT_MODEL** | Callon open-fulltext closure | strengthens marital question, no closure |
+| Callon free(d)-married-women model | **C_SERIOUS_CURRENT_ALTERNATIVE** | Callon open-fulltext closure | serious social-status model, but no longer scope co-leading after Peters/Wang/discourse stress |
 | large quotation/refutation in 11:3–10 etc. | **D_C_LOW** | verse/model/creation audits | no overt long-quotation marker |
 | interpolation of 11:3b–15 | **D_C_LOW** | earlier calibration/second audit | lacks omission-base |
 
@@ -105,9 +112,12 @@ FOR_CURRENT_GRADE:
 | Source | Current status | Needed |
 |---|---|---|
 | Thiselton, NIGTC 2000 | `HOLD_FULL_SECTION` | pp.800–847 + notes |
-| Fee, NICNT Revised 2014 | `HOLD_FULL_SECTION` | approx pp.542–586 + notes/addendum |
-| Garland, BECNT 2nd ed. 2025 | `HOLD_FULL_SECTION` | complete current 11:2–16 section + notes |
+| Fee, NICNT Revised 2014 | `HOLD_FULL_SECTION` | approx pp.542–586 + notes/addendum; narrow p.576–578/n.123 remains a priority locator |
+| Garland, BECNT 2nd ed. 2025 | `SECTION_IDENTITY_CLOSED / PAGINATION_AND_BODY_HOLD` | 2025 second-edition pagination + complete current 11:2–16 section + notes; do not transfer 2003 pagination |
 | Ciampa/Rosner, PNTC 2010 | `MACRO_PARTIALLY_CLOSED / DETAIL_HOLD` | pp.503–540 + notes |
+| Reasoner, Brill 2025 | `DIRECT_BODY_HOLD` | Commentary 7, approx pp.432–451; authenticate positions/wording from body |
+| Starling, EBTC 2025 | `CONTENT_HOLD` | exact 1 Cor 11:2–16 section + notes |
+| Gorman, Eerdmans 2025 | `CONTENT_HOLD` | exact 1 Cor 11:2–16 section; use primarily as theological/pastoral control unless technical claims are directly verified |
 
 Do not ask the user for these unless agent-access routes are genuinely exhausted or the user already has them available.
 
@@ -134,6 +144,8 @@ OMISSION_OF_EIKON_V7 != WOMAN_NOT_IMAGE_OF_GOD
 MALE_LONG_HAIR_EXCEPTIONS != NO_GENERAL_PROPRIETY_NORM
 GENERAL_HAIR_NORM != BIOLOGICAL_IMPOSSIBILITY
 HAIR_AS_NATURAL_COVERING != HAIR_ONLY_WHOLE_PASSAGE
+ALL_WOMEN_SCOPE_B_LEADING != EVERY_TOKEN_UNAMBIGUOUSLY_NON_MARITAL
+ALL_WOMEN_SCOPE_B_LEADING != PETERS_WHOLE_MODEL_ADOPTED
 RECENCY != AUTHORITY
 PEER_REVIEW != CORRECTNESS
 SECONDARY_QUOTE != DIRECT_CURRENT_EDITION_EVIDENCE
