@@ -148,6 +148,51 @@
     "schaffDortEnglishColumnCheckNote": "CCEL creeds3.txt chunks 163 (Head I artt. XVI-XVIII + Rejectio I-VIII), 164 (delegate subscriptions), 165 (Head II artt. I-IX + Rejectio I-VII) are all Latin: no English column exists in this TXT. Do not search for it again.",
     "calvinII12Chunk": 155,
     "calvinII16Chunk": 168,
+  "printedPageLocators": {
+    "resolvedOn": "2026-10-07 (second wave)",
+    "method": "phrase search inside public-domain scans on archive.org plus a publisher's printed table of contents; NOT the Drive PDFs (extraction cap) and NOT a physical copy verified page by page",
+    "level": "chapter or section start, not line-level",
+    "schaffVolumeIII1919": {
+      "item": "TheCreedsOfChristendomV3",
+      "edition": "Schaff, The Creeds of Christendom, vol. III (1919, 6th ed., preface dated 1931), 983 pp.",
+      "canonsOfDortBegins": 550,
+      "canonsSectionEnds": 597,
+      "rejectioErrorumHeading": 577,
+      "wcfBegins": 600,
+      "wcfChapter8OfChristTheMediator": 633,
+      "wcfChapter8EndsBefore": 674,
+      "checks": [
+        "table of contents of the volume (item description) gives: The Canons of the Synod of Dort, A.D. 1619 - 550; The Westminster Confession of Faith, A.D. 1647, with the American Alterations - 600; facsimile pages 598-599 and 674-675",
+        "inside.php search: 'Of Christ the Mediator.' -> page 633",
+        "inside.php search: 'Rejectio Errorum.' -> page 577",
+        "inside.php searches with no match, which therefore tell us the volume prints the Canons in Latin: 'SECOND HEAD OF DOCTRINE', 'Rejection of Errors', 'abundantly sufficient to expiate the sins of the whole world', 'Secundum Doctrinae Caput', 'impetrationis et applicationis'"
+      ],
+      "notResolved": "which chapter's Rejectio the heading on p. 577 belongs to; page per article inside WCF ch. VIII (633-674)"
+    },
+    "owenGooldVolumeX": {
+      "edition": "William Goold (ed.), The Works of John Owen, vol. X (Banner of Truth reprint, 624 pp., ISBN 9780851510644)",
+      "source": "published contents of volume X on the publisher's page, matched against the chapter titles recorded from the CCEL text in 14 §2.2-2.3",
+      "deathOfDeathBegins": 140,
+      "toTheReader": 149,
+      "bookII": "200-235",
+      "bookIIchapter4ImpetrationAndApplication": 222,
+      "bookIII": "236-290",
+      "bookIVchapter3WorldTexts": 330,
+      "bookIVchapter4AllEveryTexts": 343,
+      "bookIVchapter5BoughtAndPerish": 359,
+      "bookIVchapter6More": 368,
+      "bookIVchapter7": 404,
+      "covers": "Book IV ch. IV (p. 343) = 1 Tim 2:4,6; 2 Pet 3:9; Heb 2:9; 2 Cor 5:14-15; 1 Cor 15:22; Rom 5:18 (CCEL chunks 80-84). Book IV ch. V (p. 359) = Rom 14:15; 1 Cor 8:11; 2 Pet 2:1; Heb 10:29 (CCEL chunks 86-89)",
+      "notResolved": "page of the individual locus inside the chapter; Goold 1826 pagination vs the Banner reprint"
+    },
+    "calvinBeveridgeVolumeII": {
+      "item": "institutesofchribeve02calv",
+      "edition": "Calvin, Institutes, tr. Henry Beveridge, Calvin Translation Society, 1845, vol. II",
+      "iii2416": "619-620",
+      "quoteAnchor": "'16. The second passage adduced is that in which Paul says that \"God will have all men to be saved,\" (1 Tim. ii. 4.)' - p. 619; the 2 Pet 3:9 discussion continues on p. 620",
+      "notResolved": "exact boundary of §15 (p. 618) and §17 (pp. 620-621)"
+    }
+  },
     "calvinII17Chunks": [176, 177],
     "calvinBeveridgeTxt": "https://www.ccel.org/ccel/calvin/institutes/cache/institutes.txt",
     "calvinIII24Chunks": [330, 331],
@@ -246,6 +291,45 @@
     },
     "driveCalvinPdfExtractFailedBytes": 45351929,
     "driveOwenPdfExtractFailedBytes": 42084171
+  },
+  "parallelAgents": {
+    "briefsPath": "ИСКУПЛЕНИЕ/agents/",
+    "index": "ИСКУПЛЕНИЕ/agents/README.md",
+    "domains": [
+      {
+        "agent": 1,
+        "brief": "ИСКУПЛЕНИЕ/agents/01_AGENT_BRIEF_OLD_TESTAMENT.md",
+        "subCorpus": "ИСКУПЛЕНИЕ/ot/",
+        "owns": "Old Testament: vocabulary, cult, covenants, types, LXX rendering"
+      },
+      {
+        "agent": 2,
+        "brief": "ИСКУПЛЕНИЕ/agents/02_AGENT_BRIEF_NEW_TESTAMENT.md",
+        "subCorpus": "ИСКУПЛЕНИЕ/nt/",
+        "owns": "New Testament: lexemes, syntax, pericopes, live readings"
+      },
+      {
+        "agent": 3,
+        "brief": "ИСКУПЛЕНИЕ/agents/03_AGENT_BRIEF_CHURCH_FATHERS.md",
+        "subCorpus": "ИСКУПЛЕНИЕ/fathers/",
+        "owns": "Church Fathers and early conciliar theology; anachronism guards"
+      },
+      {
+        "agent": 4,
+        "brief": "ИСКУПЛЕНИЕ/agents/04_AGENT_BRIEF_SYNTHESIS_AND_SERIES.md",
+        "subCorpus": "ИСКУПЛЕНИЕ/synthesis/",
+        "owns": "cross-layer synthesis, conflict ledger, series plan and article count, drafts (no Product HTML)"
+      }
+    ],
+    "rules": [
+      "each agent owns only its sub-corpus and never edits another agent's files",
+      "the atonement verdict stays with ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "root authority 00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md is never changed and never registered as root",
+      "EVIDENCE_HOLD on 'limited atonement proved' is not lifted by any agent wave",
+      "conflicts between layers go into a conflict ledger and into the report, never resolved by silent edits",
+      "one branch and one PR per session; no main, no .github, no force/reset; commits under ~400 lines; keep the Co-authored-by trailer",
+      "report template: СДЕЛАНО / ПРОВЕРЕНО / НЕ ПРОВЕРЕНО / СРЕДА / РЕШЕНИЯ САМ / branch+SHA+PR+CI / what the owner should do"
+    ]
   },
   "driveMirrors": {
     "file00": "1g14vi4BJGamKO_pGyOnOf1VEwVuqlIjgK-Zp2H9lLDU",

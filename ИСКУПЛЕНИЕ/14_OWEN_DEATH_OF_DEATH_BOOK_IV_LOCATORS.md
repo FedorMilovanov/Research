@@ -18,7 +18,29 @@
 | CCEL HTML reader | login-wall 2026-10-07 (`deathofdeath.i.html`) — не ретраить |
 | Print basis шапки CCEL | Banner of Truth 1967. **Не цитировать** Packer 1959 intro, если он в этом файле. Тело Оуэна и Goold prefatory note XIX в. — PD |
 | Drive *Works* PDF | `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` (42 MB). Extraction cap 25 MB → **страница Goold в этом PDF по-прежнему `unchecked`** |
-| Quote-safe для Product | **NO** до (a) Goold vol/page **или** (b) явного item-level решения по CCEL TXT + номер главы |
+| **Печатная страница (закрыто 2026-10-07, вторая волна)** | **Goold, *The Works of John Owen*, vol. X** (перепечатка Banner of Truth, 624 с., ISBN 9780851510644): полная карта глав с страницами — см. §0.1. Страница из *нашего* 42 MB PDF по-прежнему не извлекаема; страница по *изданию* теперь есть |
+| Quote-safe для Product | **NO** до (a) Goold vol/page **или** (b) явного item-level решения по CCEL TXT + номер главы. Пункт (a) **закрыт на уровне главы** (vol. X + страница начала главы); точная страница внутри главы — открытый локатор |
+
+### 0.1 Страницы Goold / Banner, vol. X
+
+Источник: публичное оглавление тома X на странице издателя (banneroftruth.org, «CONTENTS OF VOLUME X»), сверенное с заголовками глав в CCEL TXT. Нумерация CCEL глав в Book IV **совпадает** с этим оглавлением по названиям (см. §2.2 и §2.3), поэтому отождествление глав надёжно.
+
+| Глава | С. | Что там |
+|---|---|---|
+| *A Display of Arminianism* (I–XIV) | 2–129 | — |
+| Death of Death: предисловие редактора / посвящение / attestations / «To the Reader» | 140 / 145 / 147 / 149 | — |
+| Book I (I–VIII) | 157–199 | конец, замысел, действие Отца/Сына/Духа, обличение+ходатайство как одно средство |
+| Book II (I–V) | 200–235 | **IV. «Of the distinction of impetration and application» — с. 222**; V. «Of application and impetration» — 232 |
+| Book III (I–XI) | 236–290 | аргументы против всеобщности: искупление 258, примирение 261, удовлетворение 265, заслуга 286 |
+| **Book IV, III** | **330** | «An unfolding of the remaining texts of Scripture produced for the confirmation of the first general argument for universal redemption» — голова 1, тексты о *мире* (1 Ин. 2:2; Ин. 6:51; 2 Кор. 5:19) |
+| **Book IV, IV** | **343** | «Answer to the second general argument for the universality of redemption» — голова 2, тексты *all / every*: **1 Тим. 2:4, 6**; 2 Пет. 3:9; Евр. 2:9; 2 Кор. 5:14–15; 1 Кор. 15:22; Рим. 5:18 (CCEL chunks 80–84) |
+| **Book IV, V** | **359** | «The last argument from Scripture answered» — голова 3, купленные гибнущие: Рим. 14:15; 1 Кор. 8:11; **2 Пет. 2:1**; Евр. 10:29 (CCEL chunks 86–89) |
+| Book IV, VI / VII | 368 / 404 | ответ гл. XX «The Universality of God's Free Grace» (Мур) / прочие возражения |
+| Testimonies of the Ancients / Appendix (Sprigge) | 422 / 425 | — |
+
+**Как это стыкуется с корпусом:** Owen Book II.IV (с. 222) — та же ось, что Rejectio VI Дорта; Book IV.IV (с. 343) закрывает 1 Тим. 2:4–6; Book IV.V (с. 359) закрывает 2 Пет. 2:1.
+
+**Чего это не даёт:** (1) точной страницы внутри главы (например, «1 Тим. 2:4 — с. 34?» — нет, только начало главы); (2) пагинации издания Goold 1826 против перепечатки Banner 1967 (оглавление издателя воспроизводит нумерацию тома X, но постраничного сличения двух печатей не было); (3) права цитировать — `PUBLICATION_HOLD` и item-level решение остаются.
 
 Это **не** ingest полного трактата в Git. Git держит локаторы. Drive `01` — зеркало этого файла, не 42 MB.
 

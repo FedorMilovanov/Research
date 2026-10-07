@@ -16,6 +16,7 @@
 | Чанки тела | **330–331** = Book III, Chapter 24, §§15–17 (далее Ch. 25) |
 | Drive PDF | `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ`, 45 351 929 bytes, md5 `a2755d55b53972ddd0fbf4b68a5d1643` |
 | Extraction | Drive `read_file_text` отказал: **> 25 MB cap**. Страница *этого* PDF = по-прежнему `unchecked` |
+| **Печатная страница (закрыто 2026-10-07, вторая волна)** | Beveridge, *Institutes*, Calvin Translation Society 1845, **vol. II** (IA `institutesofchribeve02calv`): **§16 = с. 619–620** («16. The second passage adduced is that in which Paul says that "God will have all men to be saved," (1 Tim. ii. 4.)» — с. 619; разбор 2 Пет. 3:9 — с. 620). §15 — конец с. 618, §17 — с. 620–621 (точная граница не проверена) |
 | Осторожность | В начале того же CCEL TXT стоит **Introduction by John Murray** — copyright. **Не цитировать, не ingest в Git.** Только тело Кальвина |
 
 Quote-safe для Product: **NO** до page в нашем Drive PDF *или* явного решения «Beveridge CCEL + book.chapter.section». Для research III.24.16–17 теперь **не LEAD**.
@@ -114,6 +115,7 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 | Скан | archive.org item **`articlesofsynodo1841syno`**, 392 листа, открытый доступ, права PD (издание 1841) |
 | Где начинается раздел | содержание (лист 9): «ARTICLES OF THE SYNOD OF DORT, &c. — **257**». Head II = **с. 282–286** |
 | Чем проверено | `search-inside` JSON (OCR-текст + координаты на листе) **и** `articlesofsynodo1841syno_page_numbers.json` (лист → печатная страница, confidence 96). Совпадение лист−страница: 288→282, 289→283, 290→284, 291→285, 292→286 |
+| **Печатная страница тома Шаффа (закрыто 2026-10-07, вторая волна)** | Schaff, *Creeds of Christendom*, vol. III (1919, 6th ed.; IA `TheCreedsOfChristendomV3`): **Каноны Дорта — с. 550** (по оглавлению тома; раздел идёт до с. 597, далее факсимиле Вестминстерского исповедания 598–599); **заголовок «Rejectio Errorum.» — с. 577** (найдено поиском по скану). Какая именно это Rejectio (I или II главы) — по OCR не подтверждено: запросы латинских фраз из Head II (`Secundum Doctrinae Caput`, `impetrationis et applicationis`) совпадений не дали, английского текста Канонов в этом томе нет (запросы `SECOND HEAD OF DOCTRINE`, `Rejection of Errors`, `abundantly sufficient to expiate` — ноль совпадений), т.е. Шафф печатает Каноны по-латыни, как и в CCEL |
 
 | Статья Head II | Печ. с. | Лист | OCR-якорь (Scott 1841) |
 |---|---|---|---|
@@ -288,6 +290,7 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 | Где глава | **Chapter VIII / Cap. VIII — Of Christ the Mediator / De Christo Mediatore**: начинается в **chunk 182** (арт. I–IV), заканчивается в **chunk 183** (арт. V–VIII; далее Cap. IX «Of Free-will») |
 | Язык издания | WCF у Шаффа идёт **двумя колонками EN + LA** (предложение EN, затем LA) — в отличие от Дорта, где только латынь |
 | Drive PDF | `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`, **16 179 601 bytes**, md5 `c992905d7f02a04c8cc33fbf4731529b`. `read_file_text` → `extraction_status: empty` («no text layer», скан). Страница этого PDF извлечением **не проверяема**: не ретраить и не угадывать |
+| **Печатная страница (закрыто 2026-10-07, вторая волна)** | Schaff, *Creeds of Christendom*, vol. III (1919, 6th ed.; IA `TheCreedsOfChristendomV3`, 983 с.): **Исповедание начинается с. 600** (по оглавлению тома), **гл. VIII «Of Christ the Mediator» — с. 633** (подтверждено поиском по скану: заголовок «Of Christ the Mediator.» на с. 633). Глава идёт до с. 674 (далее — факсимиле Большого катехизиса) |
 
 EN-якоря (номера сносок Шаффа в квадратных скобках):
 
@@ -300,7 +303,7 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 
 Что даёт / чего не даёт:
 
-- Даёт: PD-текст WCF 8 на EN **и** LA с проверенным локатором уровня «чанк + номер статьи + номер сноски Шаффа». По оси текста `locatorState = verified`.
-- Не даёт: **печатную страницу** тома Шаффа (в TXT пагинации нет) и **страницу нашего Drive PDF** (скан без текстового слоя). Обе оси остаются `unchecked`.
+- Даёт: PD-текст WCF 8 на EN **и** LA с проверенным локатором уровня «чанк + номер статьи + номер сноски Шаффа». По оси текста `locatorState = verified`. **Плюс печатная страница: vol. III (1919), гл. VIII — с. 633** (вторая волна 2026-10-07).
+- Не даёт: **страницу нашего Drive PDF** (скан без текстового слоя) и **постатейную разбивку внутри с. 633–674** (какой именно артикул на какой странице — не проверено). Первая ось остаётся `unchecked` принципиально; вторая — открытый локатор.
 - Не даёт права публиковать: серия под `PUBLICATION_HOLD`, item-level решения по WCF EN не принималось.
 - Порядок чтения тот же, что у Дорта: 8.5 и 8.8 без 8.1 («given to him») и без 8.6 («unto the elect») — не цитировать как «Вестминстер об объёме».
