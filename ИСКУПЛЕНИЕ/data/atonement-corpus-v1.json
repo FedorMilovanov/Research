@@ -73,29 +73,29 @@
     "indexesPresent": false,
     "translatorNamed": false,
     "englishPageLocators": {
-    "state": "secondary-B1",
-    "editionPaged": "Eerdmans 1955 / 2015 reprint, 192 pp. (Banner reset pagination NOT verified)",
-    "partI": "1-78",
-    "i1Necessity": "5-13",
-    "i2Nature": "14-20 (obedience as the inclusive category; 'pure passivity' at 16); four categories 20-48 (redemption 43-44; summary 40)",
-    "i3Perfection": "49-56 (historical objectivity 50; finality 51; uniqueness 53; intrinsic efficacy 55)",
-    "i4Extent": "57-74",
-    "i5Conclusion": "75-78",
-    "partIIchapters1to5": "81-138",
-    "ii1Order": "83-85 (Jn 3:3 at 83; 1 Jn 3:9 at 83; Rom 8:28,30 at 85; ordo list at 87; 'repentance is the twin sister of faith' at 89)",
-    "ii2EffectualCalling": "91-98 (sovereign act of God alone at 97; operative grace at 100)",
-    "ii3Regeneration": "100-109 (102; 103-104; fruits inseparable 108-109)",
-    "ii4FaithAndRepentance": "111-122 (definition 112; knowledge 115; assent 116; trust 117; 119)",
-    "ii5Justification": "123-138 ('faith alone, but not by a faith that is alone' 137-138)",
-    "discrepancy": "the 1962 Beacon Lights review gives Part II ch. 1 as pp. 79-87 while the DTS guide gives 81-138 for ch. 1-5 and 83-85 for the Order itself; the offset (part-title/flyleaf pages) is unresolved",
-    "sources": [
-      "Dead Theologians' Society teacher guides for RAA (Part I: 01-Redemption-Accomplished-and-Applied-t-39.pdf; Part II: 03-Redemption-Accomplished-and-Applied-t-20.pdf), edition labelled '1955, 2015'",
-      "Beacon Lights vol. 22 no. 3 (April 1962) review of the Eerdmans 192 pp. edition, which gives Part II ch. 1 = pp. 79-87"
-    ],
-    "notResolved": "pages for the individual hard texts inside I.4 (1 Tim 2:4-6; 2 Pet 2:1; 1 John 2:2; Rom 5:18; John 3:16; Heb 2:9); pagination of the Banner of Truth reset"
-  },
-  "internetArchiveItem": "redemptionaccomp00murr",
-  "internetArchiveSearchInside": "BLOCKED 2026-10-07: the item exists (Eerdmans 1955 scan, 200 pp., sanfrancisco, noindex:true, all text derivatives private:true) but the search-inside endpoint returns 'Item not available. The item is not available due to issues with the item's content.' Do not retry; api.archivelab.org does not answer for this identifier.",
+      "state": "secondary-B1",
+      "editionPaged": "Eerdmans 1955 / 2015 reprint, 192 pp. (Banner reset pagination NOT verified)",
+      "partI": "1-78",
+      "i1Necessity": "5-13",
+      "i2Nature": "14-20 (obedience as the inclusive category; 'pure passivity' at 16); four categories 20-48 (redemption 43-44; summary 40)",
+      "i3Perfection": "49-56 (historical objectivity 50; finality 51; uniqueness 53; intrinsic efficacy 55)",
+      "i4Extent": "57-74",
+      "i5Conclusion": "75-78",
+      "partIIchapters1to5": "81-138",
+      "ii1Order": "83-85 (Jn 3:3 at 83; 1 Jn 3:9 at 83; Rom 8:28,30 at 85; ordo list at 87; 'repentance is the twin sister of faith' at 89)",
+      "ii2EffectualCalling": "91-98 (sovereign act of God alone at 97; operative grace at 100)",
+      "ii3Regeneration": "100-109 (102; 103-104; fruits inseparable 108-109)",
+      "ii4FaithAndRepentance": "111-122 (definition 112; knowledge 115; assent 116; trust 117; 119)",
+      "ii5Justification": "123-138 ('faith alone, but not by a faith that is alone' 137-138)",
+      "discrepancy": "the 1962 Beacon Lights review gives Part II ch. 1 as pp. 79-87 while the DTS guide gives 81-138 for ch. 1-5 and 83-85 for the Order itself; the offset (part-title/flyleaf pages) is unresolved",
+      "sources": [
+        "Dead Theologians' Society teacher guides for RAA (Part I: 01-Redemption-Accomplished-and-Applied-t-39.pdf; Part II: 03-Redemption-Accomplished-and-Applied-t-20.pdf), edition labelled '1955, 2015'",
+        "Beacon Lights vol. 22 no. 3 (April 1962) review of the Eerdmans 192 pp. edition, which gives Part II ch. 1 = pp. 79-87"
+      ],
+      "notResolved": "pages for the individual hard texts inside I.4 (1 Tim 2:4-6; 2 Pet 2:1; 1 John 2:2; Rom 5:18; John 3:16; Heb 2:9); pagination of the Banner of Truth reset"
+    },
+    "internetArchiveItem": "redemptionaccomp00murr",
+    "internetArchiveSearchInside": "BLOCKED 2026-10-07: the item exists (Eerdmans 1955 scan, 200 pp., sanfrancisco, noindex:true, all text derivatives private:true) but the search-inside endpoint returns 'Item not available. The item is not available due to issues with the item's content.' Do not retry; api.archivelab.org does not answer for this identifier.",
     "custody": "PRIVATE_STUDY_ONLY",
     "rightsHold": true,
     "publicationHold": true,
@@ -106,7 +106,12 @@
     "hubRouteProposal": "/iskuplenie/",
     "articleCountFrozen": false,
     "startWith": "terms-and-nature-not-tulip",
-    "layers": ["A-foundation", "B-extent-and-nuance", "C-application", "D-reserve"]
+    "layers": [
+      "A-foundation",
+      "B-extent-and-nuance",
+      "C-application",
+      "D-reserve"
+    ]
   },
   "murrayOtherWorks": {
     "bookletAtonement": {
@@ -123,7 +128,13 @@
       "id": "M24",
       "url": "https://opc.org/GA/free_offer.html",
       "axis": "offer-not-extent",
-      "loci": ["Ezek 18:23,32", "Ezek 33:11", "Matt 23:37", "Isa 45:22", "2 Pet 3:9"],
+      "loci": [
+        "Ezek 18:23,32",
+        "Ezek 33:11",
+        "Matt 23:37",
+        "Isa 45:22",
+        "2 Pet 3:9"
+      ],
       "notAConfession": true
     },
     "romansNICNT": {
@@ -138,71 +149,116 @@
   "pdLocators": {
     "owenCcelTxt": "https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.txt",
     "owenBookIVStartChunk": 70,
-    "owen1Tim2Chunks": [80, 81],
-    "owen2Pet21Chunks": [87, 88],
-    "owenHead3Chunks": [86, 87, 88, 89],
-    "owenAllTextsChunks": [80, 81, 82, 83, 84, 86, 87, 88, 89],
+    "owen1Tim2Chunks": [
+      80,
+      81
+    ],
+    "owen2Pet21Chunks": [
+      87,
+      88
+    ],
+    "owenHead3Chunks": [
+      86,
+      87,
+      88,
+      89
+    ],
+    "owenAllTextsChunks": [
+      80,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89
+    ],
     "schaffDortLatinChunk": 165,
-    "schaffDortLatinChunksVerified": [163, 164, 165],
+    "schaffDortLatinChunksVerified": [
+      163,
+      164,
+      165
+    ],
     "schaffDortEnglishColumnPresent": false,
     "schaffDortEnglishColumnCheckNote": "CCEL creeds3.txt chunks 163 (Head I artt. XVI-XVIII + Rejectio I-VIII), 164 (delegate subscriptions), 165 (Head II artt. I-IX + Rejectio I-VII) are all Latin: no English column exists in this TXT. Do not search for it again.",
     "calvinII12Chunk": 155,
     "calvinII16Chunk": 168,
-  "printedPageLocators": {
-    "resolvedOn": "2026-10-07 (second wave)",
-    "method": "phrase search inside public-domain scans on archive.org plus a publisher's printed table of contents; NOT the Drive PDFs (extraction cap) and NOT a physical copy verified page by page",
-    "level": "chapter or section start, not line-level",
-    "schaffVolumeIII1919": {
-      "item": "TheCreedsOfChristendomV3",
-      "edition": "Schaff, The Creeds of Christendom, vol. III (1919, 6th ed., preface dated 1931), 983 pp.",
-      "canonsOfDortBegins": 550,
-      "canonsSectionEnds": 597,
-      "rejectioErrorumHeading": 577,
-      "wcfBegins": 600,
-      "wcfChapter8OfChristTheMediator": 633,
-      "wcfChapter8EndsBefore": 674,
-      "checks": [
-        "table of contents of the volume (item description) gives: The Canons of the Synod of Dort, A.D. 1619 - 550; The Westminster Confession of Faith, A.D. 1647, with the American Alterations - 600; facsimile pages 598-599 and 674-675",
-        "inside.php search: 'Of Christ the Mediator.' -> page 633",
-        "inside.php search: 'Rejectio Errorum.' -> page 577",
-        "inside.php searches with no match, which therefore tell us the volume prints the Canons in Latin: 'SECOND HEAD OF DOCTRINE', 'Rejection of Errors', 'abundantly sufficient to expiate the sins of the whole world', 'Secundum Doctrinae Caput', 'impetrationis et applicationis'"
-      ],
-      "notResolved": "which chapter's Rejectio the heading on p. 577 belongs to; page per article inside WCF ch. VIII (633-674)"
+    "printedPageLocators": {
+      "resolvedOn": "2026-10-07 (second wave)",
+      "method": "phrase search inside public-domain scans on archive.org plus a publisher's printed table of contents; NOT the Drive PDFs (extraction cap) and NOT a physical copy verified page by page",
+      "level": "chapter or section start, not line-level",
+      "schaffVolumeIII1919": {
+        "item": "TheCreedsOfChristendomV3",
+        "edition": "Schaff, The Creeds of Christendom, vol. III (1919, 6th ed., preface dated 1931), 983 pp.",
+        "canonsOfDortBegins": 550,
+        "canonsSectionEnds": 597,
+        "rejectioErrorumHeading": 577,
+        "wcfBegins": 600,
+        "wcfChapter8OfChristTheMediator": 633,
+        "wcfChapter8EndsBefore": 674,
+        "checks": [
+          "table of contents of the volume (item description) gives: The Canons of the Synod of Dort, A.D. 1619 - 550; The Westminster Confession of Faith, A.D. 1647, with the American Alterations - 600; facsimile pages 598-599 and 674-675",
+          "inside.php search: 'Of Christ the Mediator.' -> page 633",
+          "inside.php search: 'Rejectio Errorum.' -> page 577",
+          "inside.php searches with no match, which therefore tell us the volume prints the Canons in Latin: 'SECOND HEAD OF DOCTRINE', 'Rejection of Errors', 'abundantly sufficient to expiate the sins of the whole world', 'Secundum Doctrinae Caput', 'impetrationis et applicationis'"
+        ],
+        "notResolved": "which chapter's Rejectio the heading on p. 577 belongs to; page per article inside WCF ch. VIII (633-674)"
+      },
+      "owenGooldVolumeX": {
+        "edition": "William Goold (ed.), The Works of John Owen, vol. X (Banner of Truth reprint, 624 pp., ISBN 9780851510644)",
+        "source": "published contents of volume X on the publisher's page, matched against the chapter titles recorded from the CCEL text in 14 §2.2-2.3",
+        "deathOfDeathBegins": 140,
+        "toTheReader": 149,
+        "bookII": "200-235",
+        "bookIIchapter4ImpetrationAndApplication": 222,
+        "bookIII": "236-290",
+        "bookIVchapter3WorldTexts": 330,
+        "bookIVchapter4AllEveryTexts": 343,
+        "bookIVchapter5BoughtAndPerish": 359,
+        "bookIVchapter6More": 368,
+        "bookIVchapter7": 404,
+        "covers": "Book IV ch. IV (p. 343) = 1 Tim 2:4,6; 2 Pet 3:9; Heb 2:9; 2 Cor 5:14-15; 1 Cor 15:22; Rom 5:18 (CCEL chunks 80-84). Book IV ch. V (p. 359) = Rom 14:15; 1 Cor 8:11; 2 Pet 2:1; Heb 10:29 (CCEL chunks 86-89)",
+        "notResolved": "page of the individual locus inside the chapter; Goold 1826 pagination vs the Banner reprint"
+      },
+      "calvinBeveridgeVolumeII": {
+        "item": "institutesofchribeve02calv",
+        "edition": "Calvin, Institutes, tr. Henry Beveridge, Calvin Translation Society, 1845, vol. II",
+        "iii2416": "619-620",
+        "quoteAnchor": "'16. The second passage adduced is that in which Paul says that \"God will have all men to be saved,\" (1 Tim. ii. 4.)' - p. 619; the 2 Pet 3:9 discussion continues on p. 620",
+        "notResolved": "exact boundary of §15 (p. 618) and §17 (pp. 620-621)"
+      }
     },
-    "owenGooldVolumeX": {
-      "edition": "William Goold (ed.), The Works of John Owen, vol. X (Banner of Truth reprint, 624 pp., ISBN 9780851510644)",
-      "source": "published contents of volume X on the publisher's page, matched against the chapter titles recorded from the CCEL text in 14 §2.2-2.3",
-      "deathOfDeathBegins": 140,
-      "toTheReader": 149,
-      "bookII": "200-235",
-      "bookIIchapter4ImpetrationAndApplication": 222,
-      "bookIII": "236-290",
-      "bookIVchapter3WorldTexts": 330,
-      "bookIVchapter4AllEveryTexts": 343,
-      "bookIVchapter5BoughtAndPerish": 359,
-      "bookIVchapter6More": 368,
-      "bookIVchapter7": 404,
-      "covers": "Book IV ch. IV (p. 343) = 1 Tim 2:4,6; 2 Pet 3:9; Heb 2:9; 2 Cor 5:14-15; 1 Cor 15:22; Rom 5:18 (CCEL chunks 80-84). Book IV ch. V (p. 359) = Rom 14:15; 1 Cor 8:11; 2 Pet 2:1; Heb 10:29 (CCEL chunks 86-89)",
-      "notResolved": "page of the individual locus inside the chapter; Goold 1826 pagination vs the Banner reprint"
-    },
-    "calvinBeveridgeVolumeII": {
-      "item": "institutesofchribeve02calv",
-      "edition": "Calvin, Institutes, tr. Henry Beveridge, Calvin Translation Society, 1845, vol. II",
-      "iii2416": "619-620",
-      "quoteAnchor": "'16. The second passage adduced is that in which Paul says that \"God will have all men to be saved,\" (1 Tim. ii. 4.)' - p. 619; the 2 Pet 3:9 discussion continues on p. 620",
-      "notResolved": "exact boundary of §15 (p. 618) and §17 (pp. 620-621)"
-    }
-  },
-    "calvinII17Chunks": [176, 177],
+    "calvinII17Chunks": [
+      176,
+      177
+    ],
     "calvinBeveridgeTxt": "https://www.ccel.org/ccel/calvin/institutes/cache/institutes.txt",
-    "calvinIII24Chunks": [330, 331],
+    "calvinIII24Chunks": [
+      330,
+      331
+    ],
     "dortCrcnaReadingCopy": "https://www.crcna.org/welcome/beliefs/confessions/canons-dort",
-    "schaffWcf8Chunks": [182, 183],
+    "schaffWcf8Chunks": [
+      182,
+      183
+    ],
     "schaffWcf8Articles": {
-      "8.1": [1180, 1181],
-      "8.5": [1240, 1241],
-      "8.6": [1244],
-      "8.8": [1250, 1254],
+      "8.1": [
+        1180,
+        1181
+      ],
+      "8.5": [
+        1240,
+        1241
+      ],
+      "8.6": [
+        1244
+      ],
+      "8.8": [
+        1250,
+        1254
+      ],
       "columns": "EN+LA",
       "chapterTitle": "Chapter VIII / Cap. VIII — Of Christ the Mediator / De Christo Mediatore"
     },
@@ -226,38 +282,38 @@
         "II.5": 284,
         "II.8": 285,
         "rejectioStartsPage": 286,
-      "nextRejectioPage": 305,
-      "rejectionPages": {
-        "I": 287,
-        "II": 288,
-        "III": "288-289",
-        "IV": 289,
-        "V": 290,
-        "VI": "291-292",
-        "VII": 292
+        "nextRejectioPage": 305,
+        "rejectionPages": {
+          "I": 287,
+          "II": 288,
+          "III": "288-289",
+          "IV": 289,
+          "V": 290,
+          "VI": "291-292",
+          "VII": 292
+        },
+        "transcription": {
+          "where": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md §B.5",
+          "collation": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md §B.6",
+          "covers": "Head II Articles I-IX and Rejection of Errors I-VII, English, with page anchors",
+          "source": "articlesofsynodo1841syno_djvu.txt chunks 52-54 (OCR) + table of contents (chunk 0)",
+          "method": "manual transfer from OCR output; OCR artifacts preserved verbatim",
+          "accessState": "transcribed-from-OCR + collated",
+          "collatedAgainst": [
+            "articlesofsynodo1841syno_djvu.xml chunks 43-45: second OCR rendering of the same scan, printed pages 280-297; zero divergence from the transfer except three recorded corrections (perseveringiy->perseveringly, garbled 'Man' in art. IV, letter 'S.' as the article-8 numeral)",
+            "Schaff/CCEL creeds3.txt chunk 165: Latin original of Head II artt. I-IX + Rejectio I-VII; each preserved OCR artifact resolved against the Latin",
+            "English translation of 1840 (Reformed Protestant Dutch Church): independent second English witness for Articles I-IX, now in Git as ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md"
+          ],
+          "collationFindings": [
+            "Rejectio IV as printed by Scott is ABRIDGED: the Latin closing clause 'Et cum impio Socino, novam et peregrinam hominis coram Deo justificationem, contra totius Ecclesiae consensum, inducunt' is absent; full text only in Latin",
+            "Rejectio III: the Schaff/CCEL Latin reads 'nullis certo meruisse', an artifact of that edition; Scott's English and the sense require 'non certo meruisse' - here the English controls the Latin",
+            "Rejectio I: Latin 'in Dei Patris sapientiam' vs Scott 'the wisdom of God' - translational difference, not doctrinal",
+            "Article III: Latin 'unica'; the 1840 translation has 'the only and most perfect sacrifice', Scott has 'a single and most perfect sacrifice' - quote 'only', not 'single'",
+            "Article VIII, the key line for 13 §1.2: Latin, Scott 1841 and the 1840 translation agree that the efficacy is 'in all the elect ... to them alone'"
+          ],
+          "notDone": "no collation with the page images (unreachable from the sandbox: only text renderings of archive.org are reachable and no browser tool exists in this session); Scott's own footnotes omitted except bracketed Scripture references"
+        }
       },
-      "transcription": {
-        "where": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md §B.5",
-        "collation": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md §B.6",
-        "covers": "Head II Articles I-IX and Rejection of Errors I-VII, English, with page anchors",
-        "source": "articlesofsynodo1841syno_djvu.txt chunks 52-54 (OCR) + table of contents (chunk 0)",
-        "method": "manual transfer from OCR output; OCR artifacts preserved verbatim",
-        "accessState": "transcribed-from-OCR + collated",
-        "collatedAgainst": [
-          "articlesofsynodo1841syno_djvu.xml chunks 43-45: second OCR rendering of the same scan, printed pages 280-297; zero divergence from the transfer except three recorded corrections (perseveringiy->perseveringly, garbled 'Man' in art. IV, letter 'S.' as the article-8 numeral)",
-          "Schaff/CCEL creeds3.txt chunk 165: Latin original of Head II artt. I-IX + Rejectio I-VII; each preserved OCR artifact resolved against the Latin",
-          "English translation of 1840 (Reformed Protestant Dutch Church): independent second English witness for Articles I-IX, now in Git as ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md"
-        ],
-        "collationFindings": [
-          "Rejectio IV as printed by Scott is ABRIDGED: the Latin closing clause 'Et cum impio Socino, novam et peregrinam hominis coram Deo justificationem, contra totius Ecclesiae consensum, inducunt' is absent; full text only in Latin",
-          "Rejectio III: the Schaff/CCEL Latin reads 'nullis certo meruisse', an artifact of that edition; Scott's English and the sense require 'non certo meruisse' - here the English controls the Latin",
-          "Rejectio I: Latin 'in Dei Patris sapientiam' vs Scott 'the wisdom of God' - translational difference, not doctrinal",
-          "Article III: Latin 'unica'; the 1840 translation has 'the only and most perfect sacrifice', Scott has 'a single and most perfect sacrifice' - quote 'only', not 'single'",
-          "Article VIII, the key line for 13 §1.2: Latin, Scott 1841 and the 1840 translation agree that the efficacy is 'in all the elect ... to them alone'"
-        ],
-        "notDone": "no collation with the page images (unreachable from the sandbox: only text renderings of archive.org are reachable and no browser tool exists in this session); Scott's own footnotes omitted except bracketed Scripture references"
-      }
-    },
       "leafToPrintedPage": {
         "288": 282,
         "289": 283,
@@ -329,19 +385,21 @@
       "conflicts between layers go into a conflict ledger and into the report, never resolved by silent edits",
       "one branch and one PR per session; no main, no .github, no force/reset; commits under ~400 lines; keep the Co-authored-by trailer",
       "report template: СДЕЛАНО / ПРОВЕРЕНО / НЕ ПРОВЕРЕНО / СРЕДА / РЕШЕНИЯ САМ / branch+SHA+PR+CI / what the owner should do"
-    ]
+    ],
+    "driveFolder": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
+    "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
   },
   "driveMirrors": {
-    "file00": "1g14vi4BJGamKO_pGyOnOf1VEwVuqlIjgK-Zp2H9lLDU",
-    "file00readme": "1mLLQ_XYyi7HnJ1CcRU7P43hyIrIKToFSdGj0mun3j8g",
+    "file00": "1wVDEcDfi-yhKTclVxjJSz5VD_k3JCp3H6KJQX0FLaNc",
+    "file00readme": "1pb3R5SCru_tqkZZxnPOxpQU1zeWIw0sjgcZn5YPNk-E",
     "file05": "1V7ujL3oqtbIwQfZp_5xxpBfY4rohg6a6cbulQl-zDIY",
-    "file07": "11F4fNThCAC1nAJpgFrYBUWlCaz8b69PmwDFBC3vgDho",
+    "file07": "1SJ4NR9R29HYFnsfyTa5as7sGkPjmzSNL2tUmdjOjo2s",
     "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
     "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
     "file12": "1PRePtwasQqHSX0C1j5hwD4WM-lG3vflz",
     "file13": "1edopfq2CxCIduWIdlmaF0fNawNVE8q0c",
-    "file14": "1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw",
-    "file15": "1yx_gigFWN1JQA7N8am2E-VrlIPlOUlvE",
+    "file14": "1-B5i3tf2CCOV6zewjz63WqKBoxecc8bXBwmo1SwccDc",
+    "file15": "1RrX7Wge82D1tNnM5GqAMqY2YV9akkbB5bsrsemAPMnU",
     "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path; superseded IDs are trashed. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json."
   },
