@@ -142,7 +142,29 @@
       "rom5_18": "secondary-p203-not-quote-safe"
     }
   },
-  "hardTextsCards": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+  "hardTextsCards": {
+    "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+    "murrayCitationForm": {
+      "status": "B1; RIGHTS_HOLD and PUBLICATION_HOLD not lifted",
+      "allowedForm": "Murray, Redemption Accomplished and Applied I.4 (Eerdmans 1955/2015, pp. 57-74)",
+      "otherSections": {
+        "I.1": "5-13",
+        "I.2": "14-48",
+        "I.3": "49-56",
+        "I.4": "57-74",
+        "I.5": "75-78",
+        "Part II": "81-138"
+      },
+      "mandatoryDisclaimer": "page comes from a secondary source (study guides + a 1962 review); the book has not been in hand; Banner reset pagination unverified",
+      "forbidden": "bare \"Murray, p. N\" without that disclaimer",
+      "locusPagesInsideI4": "empty - see the worksheet in 08 §7.1",
+      "separateObjects": [
+        "brochure The Atonement (§D/§E/§V)",
+        "OPC 1948 report (Murray/Stonehouse) - a public report, RAA pages do not apply to it"
+      ]
+    },
+    "owenPassagePagesAdded": "2026-10-07 third wave: CCEL chunk references in the cards now also carry the Goold 1850 vol. X printed page (1 John 2:2 = 330; 1 Tim 2:4 = 343; 2 Pet 3:9 = 348; Heb 2:9 = 349; 2 Cor 5:14-15 = 350-352; 2 Pet 2:1 = 362-363). Book IV ch. IV range 343-358, ch. V 359-367."
+  },
   "historicalControl": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
   "owenBookIV": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
   "calvinDortLocators": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
