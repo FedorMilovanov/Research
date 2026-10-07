@@ -1,9 +1,12 @@
 # Source card — John Murray, *Redemption Accomplished and Applied*
 
 **ID:** `M01`  
-**Дата карточки:** 2026-10-07  
-**Статус:** BIBLIOGRAPHIC / LINK_ONLY / RIGHTS_HOLD / ARCHIVE_HOLD / NOT QUOTE-SAFE  
-**Drive-папка для легального экземпляра:** [02 — COPYRIGHT…](https://drive.google.com/drive/folders/1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI) (`1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI`)
+**Дата карточки:** 2026-10-07; intake 2026-10-07  
+**Статус:** PRIVATE_STUDY_ONLY / RIGHTS_HOLD / PUBLICATION_HOLD / NOT QUOTE-SAFE  
+**ARCHIVE_HOLD на наличие тела:** снят (владелецский RU HTML).  
+**Drive-папка:** [02 — COPYRIGHT…](https://drive.google.com/drive/folders/1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI) (`1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI`)
+
+Полный акт: [`09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md`](09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md). Карта аргумента: [`10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md`](10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md).
 
 ## 1. Идентификация
 
@@ -14,7 +17,8 @@
 | Первое издание | Eerdmans, 1955 |
 | Известные переиздания | многократные; Banner of Truth reset 2009/2014, 200 pp., ISBN 9781848714946; Eerdmans 2015 с предисловием Carl Trueman, ISBN 9780802873095 |
 | Жанр | сжатый догматический трактат, не полемика масштаба Owen |
-| Права | in copyright; полный файл агентом не размещается |
+| Права | in copyright; полный английский PDF агентом не добывался |
+| Владельческий объект | `s3516.htm.zip` → RU HTML дамп 1955, тело полное |
 
 Публичные страницы (навигация, не текст книги):
 
@@ -74,13 +78,20 @@ Index of Scripture; Index of Subjects.
 - Читать PD-предшественников, на которых Мюррей стоит: Calvin, Owen, Hodge, Вестминстер.
 - Не имитировать его фирменные формулы по памяти.
 
-## 6. Что делает владелец, когда книга куплена
+## 6. Владельческий intake 2026-10-07
 
-1. Кладет файл/скан в Drive `02`.
-2. Пишет сюда: дата, ISBN конкретного экземпляра, `accessState=acquired`.
-3. Только тогда можно снимать `ARCHIVE_HOLD` на этот объект.
-4. `RIGHTS_HOLD` на публикацию цитат остаётся, пока не будет отдельного решения.
-5. Первая сверка: гл. I.1–4 (necessity–extent) с локаторами; затем II.1 и II.9.
+Сделано. Файл был `s3516.htm.zip` в корне My Drive.
+
+- Переименован и перенесён: [`174vd9LfrbuLiamdRHlK9nBasgqAMn7dl`](https://drive.google.com/file/d/174vd9LfrbuLiamdRHlK9nBasgqAMn7dl/view)
+- UTF-8 HTML для чтения: [`1SKSoLDuwzSpn8GmPCAseu3swJqSGmxvC`](https://drive.google.com/file/d/1SKSoLDuwzSpn8GmPCAseu3swJqSGmxvC/view)
+- Тело: предисловие 24 мая 1955 + 15 глав, ~45 700 слов. **Вся книга 1955 по главам.**
+- Нет: указатели, страницы Banner, имя переводчика, предисловие Trueman 2015.
+- Сноски свалены в конец. Набор с опечатками.
+- Git полный текст не содержит.
+
+`RIGHTS_HOLD` на публикацию цитат остаётся. Для Product нужен ещё английский экземпляр с страницей, либо отдельное item-level решение по unnamed RU translation.
+
+Бумажный Banner/Eerdmans всё ещё желателен как page-locator.
 
 ## 7. Связанные карточки очереди
 

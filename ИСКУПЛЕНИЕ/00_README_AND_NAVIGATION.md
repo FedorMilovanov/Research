@@ -18,6 +18,8 @@
 7. [`06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG.md`](06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG.md) — предложение по сайту; не внедрять до research close.
 8. [`07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md`](07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md) — библиотека Drive, права, HOLD.
 9. [`08_MURRAY_RAA_SOURCE_CARD.md`](08_MURRAY_RAA_SOURCE_CARD.md) — карточка Джона Мюррея, *Redemption Accomplished and Applied*.
+10. [`09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md`](09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md) — акт приёмки `s3516.htm.zip`.
+11. [`10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md`](10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md) — карта аргумента по полному RU телу.
 
 Машинный локальный реестр: [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json).
 

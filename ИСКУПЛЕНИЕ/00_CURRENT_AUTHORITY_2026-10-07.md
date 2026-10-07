@@ -20,12 +20,12 @@
    - Calvin, *Institutes* — [`1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ`](https://drive.google.com/file/d/1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ/view);
    - Goodwin, *Works* — [`1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M`](https://drive.google.com/file/d/1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M/view);
    - Westminster Confession — [`1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`](https://drive.google.com/file/d/1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4/view).
-6. Джон Мюррей, *Redemption Accomplished and Applied* (1955): библиография, TOC и маршрут легальной добычи зафиксированы. **Полный PDF не размещён.** `RIGHTS_HOLD` + `ARCHIVE_HOLD`. Custody = `LINK_ONLY`, пока владелец не положит легально купленный экземпляр.
+6. Джон Мюррей, *Redemption Accomplished and Applied* (1955): владелец загрузил русский HTML-дамп `s3516.htm.zip`. Тело 1955 **полное** (предисловие + 15 глав). Переименован и лежит в Drive `02` как `PRIVATE_STUDY_ONLY`. `ARCHIVE_HOLD` на наличие текста снят. `RIGHTS_HOLD` + `PUBLICATION_HOLD` на цитаты остаются. Английский Banner/Eerdmans с страницами по-прежнему отсутствует. См. `09_…INTAKE…` и `10_…ARGUMENT_MAP…`.
 
 ## 2. Что не доказано
 
 - Ни одна читательская статья не готова.
-- Ни один современный учебник (Мюррей, Пакер intro к Owen, Gibson & Gibson, Morris, Stott, Letham, Berkhof, Bavinck EN) не quote-safe.
+- Мюррей RU HTML доступен для private study, но **не quote-safe** для Product (unnamed translation, нет page locator, copyright). Пакер, Gibson, Morris, Stott, Letham, Berkhof, Bavinck EN — по-прежнему без полного объекта.
 - PD-копии Owen/Calvin/Goodwin/WCF имеют `accessState=acquired-copy`, но `locatorState=unchecked` до постраничной сверки нужных локусов.
 - Product-route `/iskuplenie/` не предложен к внедрению.
 - Корневой Research stage registry этот корпус ещё не включает; это сознательно. Смена root authority этим стартом не производится.
@@ -35,7 +35,7 @@
 | Флаг | Объект | Почему |
 |---|---|---|
 | `RIGHTS_HOLD` | Murray RAA; Packer 1959 intro; *From Heaven He Came and Sought Her*; Morris; Stott; Letham; Berkhof; Bavinck English; Grudem; Frame; Schreiner | авторское право XX–XXI вв. |
-| `ARCHIVE_HOLD` | те же | полного легального объекта в корпусе нет |
+| `ARCHIVE_HOLD` | Packer 1959; Gibson 2013; Morris; Stott; современные ST | полного объекта нет. Murray RU HTML — исключение: тело есть |
 | `LOCATOR_HOLD` | Owen *Death of Death* внутри *Works* PDF; Calvin II.16–17; Dort II; WCF 8 | копия есть, страница/том не сверены |
 | `PUBLICATION_HOLD` | вся серия | research ≠ publication |
 | `EVIDENCE_HOLD` | любой тезис об «ограниченном искуплении» как о единственном библейском выводе | экзегеза и honest opposing case ещё не закрыты |
@@ -45,7 +45,8 @@
 - «Мы уже доказали ограниченное искупление».
 - «Кальвин учил тому же, что Оуэн, слово в слово».
 - «Всеобщее искупление = либерализм / неверие».
-- «Мюррей выложен на Drive полным текстом».
+- «Мюррей quote-safe / готов для сайта».
+- «Владельческий HTML = английский критический текст».
 - «Серия закрыта / готова на сайт».
 - Любая прямая цитата Мюррея, Пакера, Гибсона, Морриса, Стотта без легального экземпляра и локатора.
 

@@ -30,13 +30,18 @@
 
 Это `ACQUIRED_DURABLE` относительно байтов копии только после независимого SHA-readback. На старте фиксируем: **копия создана через Drive copy_file; SHA-256 readback не выполнялся.** Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой политике. Не заявлять forensic acquisition.
 
-## 3. Чего нет и не будет без прав
+## 3. Мюррей — владельческий RU HTML (не английский PDF)
 
-Джон Мюррей, *Redemption Accomplished and Applied* (1955, © Eerdmans / Banner of Truth reprints) **не выкладывается**. Автор умер в 1975; книга в США/UK всё ещё под охраной.
+Владелец загрузил `s3516.htm.zip`. Это полный русский HTML 1955, не Banner PDF.
 
-То же: Packer 1959 intro; Gibson & Gibson 2013; Morris; Stott; Letham; Macleod; Berkhof ST; Bavinck English; Grudem; Frame.
+| Объект | ID | Права | Замечание |
+|---|---|---|---|
+| ZIP (переименован, папка 02) | `174vd9LfrbuLiamdRHlK9nBasgqAMn7dl` | copyright / PRIVATE_STUDY | SHA-256 `e2adc9d8…` |
+| UTF-8 HTML копия | `1SKSoLDuwzSpn8GmPCAseu3swJqSGmxvC` | то же | для чтения |
 
-В `02` живут **карточки, TOC, маршруты покупки**. Если владелец покупает бумагу/легальный eBook — он сам кладёт файл в `02` с пометкой `PRIVATE_STUDY_ONLY`. Агент не добывает пиратские PDF.
+Тело полное. В Git не кладётся. Цитаты на сайт — нет.
+
+Остальные авторские XX–XXI вв. по-прежнему без полного файла: Packer 1959 intro; Gibson & Gibson 2013; Morris; Stott; Letham; Macleod; Berkhof ST; Bavinck English; Grudem; Frame. Агент не добывает пиратские PDF.
 
 ## 4. Как класть новые книги
 
@@ -62,8 +67,8 @@
 
 Канон остаётся Git-файлами в `ИСКУПЛЕНИЕ/`. Docs — зеркало для чтения на Drive.
 
-## 6. Что владелец может сделать сегодня руками
+## 6. Что владелец может сделать дальше
 
-1. Купить Murray RAA (Banner 9781848714946 или Eerdmans 9780802873095) и положить скан/законный файл в `02`.
+1. Бумажный Banner/Eerdmans Мюррея всё ещё полезен: английские страницы как locator.
 2. Купить *From Heaven He Came and Sought Her*.
-3. Если уже есть бумажный Мюррей — достаточно фото титула + владельческая пометка; полный скан — по его решению и местному fair-use/private study, не для сайта.
+3. Не выкладывать владельческий HTML в публичный Product.
