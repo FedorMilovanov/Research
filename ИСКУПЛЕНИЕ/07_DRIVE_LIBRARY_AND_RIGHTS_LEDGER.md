@@ -67,8 +67,8 @@
 | 11 Murray other works (md, папка 02) | `1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd` |
 | 12 HARD cards (md, папка 05) | `1wz5vC0-0EroWw7i5mAAVY4jtMtlWzpzf` |
 | 13 Dort/Calvin/Owen (md, папка 04) | `1KGtaHM7POs0aTZ8PgPPymhDxllvMB6qV` |
-| 14 Owen Book IV locators (md, папка 01) | `1xMSSeI70FPLyJgfEgPRJzCg85QDjpOUY` |
-| 15 Calvin III.24 + Dort II (md, папка 04) | `1aIcZhShC1ZNWlFfy-zGxJ_v2vGdcalJG` |
+| 14 Owen Book IV locators (md, папка 01) | `1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw` |
+| 15 Calvin III.24 + Dort II (md, папка 04) | `1QCk0y3lXDf7DImLBdqiBbVhR2ET1LWqA` |
 
 Канон остаётся Git-файлами в `ИСКУПЛЕНИЕ/`. Docs — зеркало для чтения на Drive.
 
