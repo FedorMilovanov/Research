@@ -123,7 +123,7 @@ LEAD. Не заполнять памятью. Когда откроется CCEL
 - Archive: https://archive.org/details/deathofdeathinde00owen
 - Drive *Works* PDF `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` — обычно Goold vol. 10; **том/страница не сверены**.
 
-`R03`/`R04`: quote-safe NO until Goold page. **Содержание Book IV** — [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md). CCEL TXT открыт (358 чанков). Dedicated **1 Тим. 2:4, 6** = chunks 80–81; 2 Пет. 3:9 / Евр. 2:9 = 82; 2 Кор. 5:14 = 83; Рим. 5:18 = 84. Drive *Works* 42 MB не извлекается. 2 Пет. 2:1 прямой чанк ещё открыт.
+`R03`/`R04`: quote-safe NO until Goold page. **Содержание Book IV** — [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md). CCEL TXT открыт (358 чанков). Dedicated **1 Тим. 2:4, 6** = 80–81; 2 Пет. 3:9 / Евр. 2:9 = 82; 2 Кор. 5:14 = 83; Рим. 5:18 = 84; **2 Пет. 2:1 / Рим. 14:15 / 1 Кор. 8:11 / Евр. 10:29 = 86–89**. Drive *Works* 42 MB не извлекается.
 
 ### 3.1 Устройство трактата (навигация)
 
@@ -140,7 +140,7 @@ Packer 1959 intro (M02) — лучший педагогический мост; 
 - Book IV три головы: world / all / купленные гибнущие — CCEL TXT chunk 70.
 - 1 Ин. 2:2, Ин. 6:51, 2 Кор. 5:19 — chunk 78.
 - Евр. 2:9, 1 Тим. 2:6 в ответе Муру — chunk 90.
-- 2 Пет. 2:1 Book IV Ch. V: аргумент сверен (δεσπότης; ἀγοράζω без крови; претензия); TXT-чанк главы не пойман; Product-цитата всё равно NO.
+- 2 Пет. 2:1 Book IV Ch. V — chunks **87–88** (голова 3 целиком 86–89). Product-цитата всё равно NO.
 - Dedicated 1 Тим. 2:4–6 (TXT heading «Chapter IV» ≠ PDF TOC «Ch. III») — chunks 80–81.
 - Не смешивать Goold pagination и Banner 1967 (Packer).
 
@@ -169,7 +169,7 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 | 1 Ин. 2:2 | II.3 ценность мира; не экзегеза стиха | комментарий: не sufficient/efficient сюда; мир = церковь/будущие верные; **страница не в руках** | Book IV ожидается | I.4 этническое/exclusive/abiding |
 | 1 Тим. 2:4 | II.5 проповедь всем | Inst. III.24.16 «все роды»; Beveridge 330 | Book IV chunks 80–81 | молчание |
 | 1 Тим. 2:6 | II.8 действительное искупление данных Сыну | LEAD | Book IV | лексика λύτρον + список universal terms |
-| 2 Пет. 2:1 | нет прямого | LEAD / wall | Book IV UNVERIFIED | только purchase-lexeme |
+| 2 Пет. 2:1 | нет прямого | LEAD / wall | chunks 87–88 | только purchase-lexeme |
 | 2 Пет. 3:9 | II.5 рядом по оси | цитата в OPC 1948: евангельская рука; Inst. III.24.16 = покаяние в руке Божьей | chunk 82: `us` = elect | OPC majority = Мюррей |
 | Евр. 2:9 | — | LEAD | chunk 82: сыны к славе | universe of discourse = сыны |
 | 2 Кор. 5:14 | — | LEAD | chunk 83: все, за кого умер, мертвы | «все умерли» |
