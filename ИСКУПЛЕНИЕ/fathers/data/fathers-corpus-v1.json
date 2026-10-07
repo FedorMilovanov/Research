@@ -51,6 +51,18 @@
       "accessState": "READABLE"
     },
     {
+      "id": "OPEN-APOSTOLIC-FATHERS",
+      "kind": "original-language Greek (transcriptions)",
+      "urls": [
+        "https://github.com/jtauber/apostolic-fathers"
+      ],
+      "localCopy": "/tmp/apf (не в снапшоте)",
+      "provenance": "Tauber & Macdonald 2019, по изданию Lake (1-2 Clem, Ignatius, Barnabas, Didache, Hermas, Polycarp, Diognetus)",
+      "rights": "RIGHTS_UNCLEAR: README заявляет CC BY-SA 4.0, license API — None",
+      "accessState": "READABLE",
+      "caveat": "только короткие фразы; полный текст не публиковать до выяснения прав"
+    },
+    {
       "id": "LATIN-LIBRARY",
       "kind": "latin transcriptions",
       "urls": [

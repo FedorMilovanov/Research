@@ -36,7 +36,8 @@
 | PD-перевод EN | NPNF (Nicene and Post-Nicene Fathers), серия 1 (Chrysostom/Augustine) | CCEL `.../npnf1_NN/cache/npnf1_NN.txt` | public domain |
 | PD-перевод EN | NPNF серия 2 (Athanasius, Greg. Nyssa, Nazianzen, Basil, Hilary, Damasc., Ambrose, Cassian, Leo, Chalcedon) | CCEL `.../npnf2_NN/cache/npnf2_NN.txt` | public domain |
 | Рабочая копия | клон зеркала Schaff-сета (CCEL-выгрузки) — рабочая, вне git | `/tmp/cf/ccel_fathers_complete/downloads/<VOL>/<VOL>.txt` | public domain |
-| Греческий текст | Open Apostolic Fathers (Tauber & Macdonald 2019), по изданию Lake | `https://github.com/jtauber/apostolic-fathers` | CC BY-SA 4.0 — атрибуция обязательна |
+| Греческий текст | Open Apostolic Fathers (Tauber & Macdonald 2019), по изданию Lake | `https://github.com/jtauber/apostolic-fathers` | README репозитория заявляет CC BY-SA 4.0, но GitHub license API вернул `None` (файла лицензии нет) → до публикации статус `RIGHTS_UNCLEAR`: цитируются только короткие фразы, полный текст не выкладывается |
+| Греческий текст | First1KGreek (OpenGreekAndLatin): Lake 1912; Archambault 1909; Harvey 1857; Robertson 1893; Mason 1899; Pusey 1868 | `https://github.com/OpenGreekAndLatin/First1KGreek` | сами издания — PD; цифровая разметка репозитория — CC BY-SA 4.0, атрибуция обязательна |
 | Греческий текст | First Thousand Years of Greek (OGL) — Афанасий, Григорий Богослов, Ориген | `https://github.com/OpenGreekAndLatin/First1KGreek` (CTS URN в карточках) | CC BY-SA 4.0 — атрибуция обязательна |
 | Латинский текст | The Latin Library — Тертуллиан (Adv. Marc., De carne Christi, De paenitentia), Анзельм, Лев, Амвросий, Августин | `https://www.thelatinlibrary.com/tertullian.html` и др. | PD-текст; **транскрипция, не критическое издание** |
 
