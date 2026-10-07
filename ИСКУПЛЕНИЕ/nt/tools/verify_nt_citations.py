@@ -30,6 +30,7 @@ from pathlib import Path
 DEFAULT_SBLGNT = "/home/user/nt-corpus/py-sblgnt-master/pysblgnt/sblgnt"
 CARD_DIR = Path(__file__).resolve().parent.parent
 GREEK = re.compile(r"[\u0370-\u03FF\u1F00-\u1FFF]")
+CYRILLIC = re.compile(r"[\u0400-\u04FF]")
 
 
 def norm(s: str) -> str:
@@ -82,6 +83,10 @@ def main() -> int:
                 continue
             if raw.rstrip().endswith("-"):
                 skipped += 1
+                continue
+            # смешение письма: norm() срезает кириллицу, поэтому смотрим raw
+            if CYRILLIC.search(raw):
+                failures.append(f"{md.name}: MIXED SCRIPT (Cyrillic inside Greek) -> {raw!r}")
                 continue
             for frag in segments(raw):
                 checked += 1
