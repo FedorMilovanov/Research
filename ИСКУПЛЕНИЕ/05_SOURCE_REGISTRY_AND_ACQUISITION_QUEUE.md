@@ -34,8 +34,8 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 
 | ID | Tier | Source | URL | Supports | Status | Quote-safe | Custody |
 |---|---|---|---|---|---|---|---|
-| C01 | P-CONFESSION | Canons of Dort, Second Head | CRCNA reading copy (chunks 3–4, 1986 trans copyright — не dump); **Schaff Latin chunk 165** https://www.ccel.org/ccel/schaff/creeds3/cache/creeds3.txt ; карта `15` | sufficiency/efficiency; Rejection I–VII | LATIN PD LOCATED chunk 165 | Latin YES for research; EN Product NO until chosen edition | LINK_ONLY |
-| C02 | P-CONFESSION | Westminster Confession ch. 8, 11 | Drive copy `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`; CCEL | Посредник; оправдание | ACQUIRED_COPY / locator unchecked | NO | ACQUIRED_DURABLE copy; locator HOLD |
+| C01 | P-CONFESSION | Canons of Dort, Second Head | **Schaff Latin chunk 165** https://www.ccel.org/ccel/schaff/creeds3/cache/creeds3.txt (EN-колонки в этом TXT **нет**: чанки 163–165 — латынь, проверено 2026-10-07); **Scott 1841 EN с. 282–286** — *The Articles of the Synod of Dort…*, пер. Thomas Scott, 1841, archive.org item `articlesofsynodo1841syno`, PD; CRCNA chunks 3–4 — reading copy, перевод 1986 copyright, не dump; карта `15` | sufficiency/efficiency; Rejection I–VII | LATIN PD LOCATED chunk 165; **EN PD EDITION SELECTED** = Scott 1841 (partial: OCR-выдачи) | Latin YES for research; EN — издание выбрано, но Product NO до item-level сверки OCR со страницей | LINK_ONLY |
+| C02 | P-CONFESSION | Westminster Confession ch. 8, 11 | Drive copy `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` (**16 179 601 bytes**, скан без текстового слоя: `read_file_text` → `empty`; страница не извлекаема, не ретраить); **Schaff/CCEL chunks 182–183** = Chapter VIII EN+LA; карта `15` §D | Посредник; объём (8.1 / 8.5 / 8.6 / 8.8); оправдание | **TEXT LOCATED**: Schaff chunks 182–183 (EN+LA, постатейно); Drive PDF page unchecked | NO до item-level решения | ACQUIRED_DURABLE copy; locator HOLD **по странице** (не по тексту) |
 | C03 | P-CONFESSION | WLC 38–59 | CCEL / same WCF volume | личность и дело Христа | LEAD | NO | LINK_ONLY |
 | C04 | P-CONFESSION | Second London 1689 ch. 8, 11 | открытые транскрипции; сверять с факсимиле | баптистский twin | LEAD | NO | LINK_ONLY |
 | C05 | P-CONFESSION | Belgic Confession art. 20–22 | CCEL Schaff | удовлетворение / вера | LEAD | NO | LINK_ONLY |
@@ -133,12 +133,14 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 2. Anselm *Cur Deus Homo* (CCEL).
 3. Athanasius *De Incarnatione*.
 4. Hodge ST vol. 3 (CCEL).
-5. Dort English+Latin (Schaff Creeds III) — выделить Second Head отдельным документом.
+5. Dort Head II отдельным документом: **Scott 1841 с. 282–286** (EN, скан + транскрипция; сейчас только OCR-фрагменты) **плюс** Schaff chunk 165 (латынь). Schaff EN-колонки не существует — проверено по чанкам 163–165, не искать её снова.
 6. 1689 ch. 8 факсимиле/PD transcript.
 7. Warfield “Atonement” / “Plan of Salvation” если PD.
 8. Dabney loci.
 9. Witsius relevant chapters.
 10. Spurgeon PD sermons: particular redemption + gospel offer pair.
+11. WCF ch. VIII: текст уже локализован (Schaff chunks 182–183). Следующий шаг по этой карточке — **печатная страница** тома Schaff (*Creeds of Christendom* III, издание 1919, PD на archive.org); в CCEL TXT пагинации нет.
+12. Scott 1841 (`articlesofsynodo1841syno`): полная транскрипция с. 282–286 (артикулы II.1–9) и расписать по страницам Rejectio I–VII — сейчас закрыто только латынью Schaff 165.
 
 Не качать и не класть: Murray, Packer 1959, Gibson 2013, Morris, Stott, Berkhof, Bavinck EN.
 
