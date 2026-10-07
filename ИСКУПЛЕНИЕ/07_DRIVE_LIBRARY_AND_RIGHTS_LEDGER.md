@@ -71,14 +71,15 @@
 | Terms | `14EwvFHHCY3OlaMJ_tKQH7mGbr3Z3Fc5CqBNGrQNZO7A` |
 | Biblical corpus | `1xMwEx6UA2W4N8sE3b9DKRifRnko8T4-RNZfO0_IB-Cs` |
 | Question map | `1GFVUswVklNLz5VCtZRclMFj9b06nA4WUj1pjbIrtNaA` |
-| Source registry | `1yRVrEg-BglE8442TvZ5iIvr3WGGmEe5TOXADRtlmE4c` |
-| Rights ledger | `1a1OFbfqzHEQfGS-WBPBRRfJR-a8hu6IMfRJwx9C5-UY` |
+| Source registry | `1M1k9Esr8zs7uCBmwvu992aiVLJiQ21H67E-Lzq3aByQ` |
+| Rights ledger (этот файл) | зеркало — Google Doc `07 DRIVE LIBRARY AND RIGHTS LEDGER` в папке `06`; ID — в `driveMirrors.file07` реестра [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json) |
+| `atonement-corpus-v1.json` (папка `05`) | зеркало реестра; залито волной 2026-10-07b |
 | Murray card | `1k2iVUPhMXwtV9hrAaZwlOM0YPW-V4JPCf8q4eR43zsA` |
 | 11 Murray other works (md, папка 02) | `1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd` |
 | 12 HARD cards (md, папка 05) | `1PRePtwasQqHSX0C1j5hwD4WM-lG3vflz` |
-| 13 Dort/Calvin/Owen (md, папка 04) | `1dtUisVbGsTyq3j91vqIaQXd8XPkDvUN2` |
+| 13 Dort/Calvin/Owen (md, папка 04) | `1XdjShzMY2uvavoPxBZmDd9ei2yxqFDy4` |
 | 14 Owen Book IV locators (md, папка 01) | `1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw` |
-| 15 Calvin III.24 + Dort II (md, папка 04) | `1_fy4_k8HmtbxKVJz58pE4mBDvGenhrqB` |
+| 15 Calvin III.24 + Dort II (md, папка 04) | `1aAKDv3duR5RedvOAfpzbEFXIMBMJT5hb` |
 
 Канон остаётся Git-файлами в `ИСКУПЛЕНИЕ/`. Docs — зеркало для чтения на Drive.
 

@@ -23,6 +23,8 @@ CCEL reader (Schaff Creeds III, Calvin Catholic Epistles) 2026-10-07 часто 
 
 **Английское PD-издание выбрано (2026-10-07):** Scott 1841 (`articlesofsynodo1841syno`), Head II = **с. 282–286**, постранично в [`15` §B.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md). Schaff/CCEL даёт Дорт **только по-латыни** — проверено по чанкам 163–165. Quote-safe Product **всё равно NO**: OCR-выдачи без item-level сверки, серия под `PUBLICATION_HOLD`.
 
+**Второй английский PD-источник найден там же:** на Drive `01` лежит W0-пак `10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md` (id `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo`) с **полным английским текстом Head II artt. I–IX** (перевод 1840 г., Wikisource-транскрипция), но **без Rejection of Errors**; в Git файл не перенесён. Разбор и рабочее правило — [`15` §B.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+
 ### 1.1 Что синод делает (порядок важен)
 
 II.1–2: Бог милосерд и правосуден; мы не можем удовлетворить; Он дал Сына как поручителя.

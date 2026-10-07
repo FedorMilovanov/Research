@@ -176,18 +176,32 @@
       ],
       "publicationState": "PUBLICATION_HOLD — OCR not yet collated with the page image; item-level decision pending"
     },
+    "dortEnglishAlternateW0Pack": {
+      "driveId": "1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo",
+      "driveFolder": "01 — PUBLIC DOMAIN LIBRARY (1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t)",
+      "name": "10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md",
+      "translation": "Reformed Protestant Dutch Church (1840), Wikisource transcription",
+      "covers": "Head II Articles I-IX in English, full text present (bytes verified 2026-10-07)",
+      "doesNotCover": "Rejection of Errors — that edition does not contain them (per the file's own source card)",
+      "locator": "chapter + article number; printed page not verified",
+      "rights": "public-domain (canons text + 19th c. translation)",
+      "fileStatus": "PRIMARY-TEXT-VERIFIED / QUOTE-SAFE WITHIN THIS FILE ONLY; publication HOLD",
+      "inGit": false,
+      "openQuestion": "Git is the canon per 07, but this pack lives only on Drive; transfer to ИСКУПЛЕНИЕ/ awaits the owner's decision.",
+      "alsoClaims": "a read fragment of Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — not re-read byte-wise in this wave"
+    },
     "driveCalvinPdfExtractFailedBytes": 45351929,
     "driveOwenPdfExtractFailedBytes": 42084171
   },
   "driveMirrors": {
     "file00": "1FSjtZ2vFN8AU_RS2v-5huKzUF8dqr5lnXtb4D5x1rfM",
-    "file05": "1wMAinyoPKn78Yuc7le8exxPHLnGNFjTUQsU-1op9GC8",
-    "file07": "1wqzqmhhqyRP29pB15RBVWJOg05lIaErYws7pVN0Kn2Y",
+    "file05": "1M1k9Esr8zs7uCBmwvu992aiVLJiQ21H67E-Lzq3aByQ",
+    "file07": "1eEz0NqOT_74REtb9DVt4MboukCIJr_6_HHcnFwtElaw",
     "file11": "1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd",
     "file12": "1PRePtwasQqHSX0C1j5hwD4WM-lG3vflz",
-    "file13": "1dtUisVbGsTyq3j91vqIaQXd8XPkDvUN2",
+    "file13": "1XdjShzMY2uvavoPxBZmDd9ei2yxqFDy4",
     "file14": "1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw",
-    "file15": "1_fy4_k8HmtbxKVJz58pE4mBDvGenhrqB",
+    "file15": "1aAKDv3duR5RedvOAfpzbEFXIMBMJT5hb",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path; superseded IDs are trashed. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json."
   },
   "doNot": [
