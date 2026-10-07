@@ -211,14 +211,14 @@
     "driveOwenPdfExtractFailedBytes": 42084171
   },
   "driveMirrors": {
-    "file00": "1FSjtZ2vFN8AU_RS2v-5huKzUF8dqr5lnXtb4D5x1rfM",
-    "file05": "1M1k9Esr8zs7uCBmwvu992aiVLJiQ21H67E-Lzq3aByQ",
-    "file07": "1eEz0NqOT_74REtb9DVt4MboukCIJr_6_HHcnFwtElaw",
+    "file00": "1C0cPyukrgA9xykYXj2D9tLq5zOqm9sU8AOjhMsxK0cw",
+    "file05": "1Kd_IB7OVxjaX3zKpFbwDre_XaKA0ACprEHz9Oe77Ksw",
+    "file07": "1QYUCagVyh6KIXEejVeYSg_m0Y6-vYOv-AJSN7H68Hqo",
     "file11": "1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd",
     "file12": "1PRePtwasQqHSX0C1j5hwD4WM-lG3vflz",
-    "file13": "1XdjShzMY2uvavoPxBZmDd9ei2yxqFDy4",
+    "file13": "1pKGCNBahIt9ITsHGo5jpeDY2nZQuQWfk",
     "file14": "1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw",
-    "file15": "1aAKDv3duR5RedvOAfpzbEFXIMBMJT5hb",
+    "file15": "1qLSeqSU8KE-8NXfO6p3Lwe0Y5vdCib2X",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path; superseded IDs are trashed. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json."
   },
   "doNot": [
