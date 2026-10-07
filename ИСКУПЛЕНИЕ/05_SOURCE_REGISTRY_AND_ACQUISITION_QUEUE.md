@@ -27,6 +27,11 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | S02 | P-BIBLE | BHS / WLC OT | то же | еврейский ВЗ | LEAD | NO | LINK_ONLY |
 | S03 | P-BIBLE | LXX Rahlfs/Göttingen | то же | Септуагинта `ἱλάσκομαι` / `λύτρον` | LEAD | NO | LINK_ONLY |
 | S04 | P-BIBLE | Синодальный / сопоставление русских | reader-facing цитаты только с указанием перевода | русская публикация | OPEN | YES with edition | LINK_ONLY |
+| S05 | P-BIBLE | Studylight Interlinear (LXX Greek + BHS/WLC Hebrew на одной странице) | studylight.org/interlinear-study-bible/greek/{книга}/{гл-стих}.html: Быт. 32:20; Исх. 25:17; 30:12; Лев. 4:20; 17:11; Числ. 16:46; 35:33; Пс. 49:7 | MT и LXX для карточки `ot/01` | CHECKED (1z; издание LXX не указано) | NO until edition | LINK_ONLY |
+| S06 | P-BIBLE | Blue Letter Bible LXX | blueletterbible.org/lxx/lev/17/1/ | второе зеркало Лев. 17:11 (LXX) | CHECKED (2z для Лев. 17:11) | NO | LINK_ONLY |
+| S07 | P-BIBLE | Biblehub multilingual (Swete LXX; MT; переводы) | biblehub.com/multi/leviticus/17-11.htm | второе зеркало Лев. 17:11 | CHECKED (2z) | NO | LINK_ONLY |
+| S08 | P-BIBLE | Sefaria API (MT; Revised JPS 2023 EN) | sefaria.org/api/texts/Leviticus.17.11 | MT Лев. 17:11 | CHECKED (MT only) | NO (JPS 2023 — под охраной; только иврит) | LINK_ONLY |
+| S09 | EXCLUDED | Вторичный комментарий к LXX Leviticus (Brill), найденный только на пиратском хосте | хост не указан; **не открывался и не используется** | — | EXCLUDED | NO | NOT_STORED; нужен легальный экземпляр владельца |
 
 ---
 
