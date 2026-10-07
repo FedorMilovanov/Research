@@ -53,6 +53,7 @@ Genesis 6 имеет собственный machine-guarded authority graph. Е�
 - Баптистские архивы: [`RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md`](RUSSIAN_BAPTISTS_ARCHIVE/SCAN_ACQUISITION_CURRENT_AUTHORITY_2026-08-02.md).
 - Джон Гилл: [`Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md`](%D0%94%D0%B6%D0%BE%D0%BD%20%D0%93%D0%B8%D0%BB%D0%BB/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md).
 - Source Library: [`SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md`](SOURCE_LIBRARY/CURRENT_SOURCE_URL_AUTHORITY_2026-08-02.md).
+- Искупление (особое/всеобщее умилостивление): [`ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md`](%D0%98%D0%A1%D0%9A%D0%A3%D0%9F%D0%9B%D0%95%D0%9D%D0%98%D0%95/00_CURRENT_AUTHORITY_2026-10-07.md) — Wave 0, `CLOSED_WITH_HOLDS`, `publicationEligible = false`; индекс: [`ИСКУПЛЕНИЕ/README.md`](%D0%98%D0%A1%D0%9A%D0%A3%D0%9F%D0%9B%D0%95%D0%9D%D0%98%D0%95/README.md).
 
 Corpus-specific current authority остаётся владельцем своего evidence graph. Корневой registry определяет навигацию и stage boundary, но не переписывает corpus-specific evidence.
 

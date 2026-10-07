@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "REDEMPTION-CORPUS-AUTHORITY-2026-10-07",
+  "status": "WAVE0_OPEN_CHARTER_TERMINOLOGY_REGISTRY_PRIMARYTEXT_NO_PUBLICATION",
+  "corpus": "ИСКУПЛЕНИЕ",
+  "openedAt": "2026-10-07",
+  "lastVerifiedAt": "2026-10-07",
+  "governance": {
+    "evidencePolicy": "data/repository-evidence-policy-v2.json",
+    "agentRules": "AGENT_RULES.md",
+    "allowedSourceClasses": [
+      "A1",
+      "A2",
+      "A3",
+      "B1",
+      "C",
+      "D"
+    ],
+    "independentAxes": [
+      "evidenceClass",
+      "accessState",
+      "locatorState",
+      "rightsState",
+      "publicationState"
+    ],
+    "holdFlags": [
+      "EVIDENCE",
+      "LOCATOR",
+      "ARCHIVE",
+      "RIGHTS",
+      "PUBLICATION"
+    ],
+    "b1CannotSolelySupportDisputedQuote": true,
+    "failClosed": true,
+    "validatorsReadOnly": true
+  },
+  "researchQuestion": {
+    "readerQuestion": "За кого умер Христос — и что вообще значит «умер за», «искупил», «умилостивил»?",
+    "subQuestions": [
+      "RQ-1",
+      "RQ-2",
+      "RQ-3",
+      "RQ-4",
+      "RQ-5",
+      "RQ-6"
+    ],
+    "subQuestionFiles": {
+      "RQ-1": "ИСКУПЛЕНИЕ/02_W0_SCRIPTURE_CORPUS_FOR_WHOM_2026-10-07.md",
+      "RQ-2": "ИСКУПЛЕНИЕ/01_W0_INTRODUCTION_AND_TERMINOLOGY_2026-10-07.md",
+      "RQ-3": "ИСКУПЛЕНИЕ/04_W0_COMPETING_MODELS_TAXONOMY_2026-10-07.md",
+      "RQ-4": "ИСКУПЛЕНИЕ/04_W0_COMPETING_MODELS_TAXONOMY_2026-10-07.md",
+      "RQ-5": "ИСКУПЛЕНИЕ/00_MASTER_RESEARCH_MAP_AND_CHARTER_2026-10-07.md",
+      "RQ-6": "ИСКУПЛЕНИЕ/06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG_2026-10-07.md"
+    }
+  },
+  "waves": [
+    {
+      "id": "W0",
+      "name": "Каркасный wave: charter, термины, инвентарь текстов, реестр источников, первый verified primary text",
+      "status": "OPEN_CURRENT"
+    },
+    {
+      "id": "W1",
+      "name": "Лексический слой: иврит/греческий ряды по проверенным словарям",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "W2",
+      "name": "Экзегетический слой по 12 приоритетным locus с трёхполевым допуском",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "W3",
+      "name": "Историко-догматический слой: Дорт, Remonstrance, Amyraut, Davenant, Owen-Baxter",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "W4",
+      "name": "Систематический слой: учебники и модели (O-1…O-6)",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "W5",
+      "name": "Пастырский слой: уверенность, скорбь, дерзновение, проповедь",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "W6",
+      "name": "Gate: publication-candidate сборка, сверка цитат и прав, handoff в Product",
+      "status": "GATE_NOT_OPEN"
+    },
+    {
+      "id": "W7",
+      "name": "Post-publication: новые статьи только из закрытых досье, номерация не переиспользуется",
+      "status": "NOT_STARTED"
+    }
+  ],
+  "scriptureInventory": {
+    "file": "ИСКУПЛЕНИЕ/02_W0_SCRIPTURE_CORPUS_FOR_WHOM_2026-10-07.md",
+    "groups": {
+      "A": 22,
+      "B": 23,
+      "C": 12,
+      "D": 7,
+      "TC": 7
+    },
+    "total": 71,
+    "originalLanguageStringsVerified": 0,
+    "verificationFieldsRequiredBeforeW2": [
+      "LEXEME_VERIFIED",
+      "MORPHOLOGY_VERIFIED",
+      "APPARATUS_CHECKED"
+    ],
+    "synodalQuotationsAllowed": false,
+    "synodalBlockReason": "BIBLE_CORPUS closure dependency: ../BIBLE_CORPUS/00_BIBLE_CORPUS_RIGHTS_PROVENANCE_AUTHORITY_2026-08-06.md"
+  },
+  "sourceRegistry": {
+    "file": "ИСКУПЛЕНИЕ/03_W0_SOURCE_REGISTRY_2026-10-07.md",
+    "recordCount": 113,
+    "layers": {
+      "P-confessions-and-acts": 10,
+      "O-scripture-texts": 6,
+      "L-lexica": 10,
+      "C-commentaries-and-primary-authors": 32,
+      "M-modern-monographs-and-textbooks": 42,
+      "R-russian-reception": 9,
+      "X-secondary-surveys": 5
+    },
+    "recordsWithFullAccess": 2,
+    "recordsWithVerifiedLocator": 2,
+    "modernBooksInDrive": 0
+  },
+  "primaryTexts": [
+    {
+      "id": "RED-PRIMARY-001",
+      "title": "Canons of the Synod of Dort, Second Head of Doctrine, Articles I–IX",
+      "file": "ИСКУПЛЕНИЕ/10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md",
+      "evidenceClass": "A3",
+      "accessState": "fetched_page",
+      "locatorState": "LOCATOR_PARTIAL",
+      "rightsState": "PD (перевод 1840; редакторский аппарат не проверялся)",
+      "publicationState": "HOLD",
+      "verifiedArticles": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "VI",
+        "VII",
+        "VIII",
+        "IX"
+      ],
+      "missing": "Errors of the Remonstrants + Rejection of Errors by Second Head (не содержатся в проверенном издании)"
+    },
+    {
+      "id": "RED-PRIMARY-002",
+      "title": "John Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1–2",
+      "file": "ИСКУПЛЕНИЕ/10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md",
+      "evidenceClass": "A1",
+      "accessState": "fetched_page",
+      "locatorState": "LOCATOR_PARTIAL",
+      "rightsState": "PD (перевод XIX в.; титульные данные издания фиксируются при цитировании)",
+      "publicationState": "HOLD"
+    }
+  ],
+  "claims": [
+    {
+      "id": "RED-CLM-001",
+      "status": "SUPPORTED_BY_VERIFIED_PRIMARY_TEXT"
+    },
+    {
+      "id": "RED-CLM-002",
+      "status": "SUPPORTED_BY_VERIFIED_PRIMARY_TEXT"
+    },
+    {
+      "id": "RED-CLM-003",
+      "status": "SUPPORTED_BY_VERIFIED_PRIMARY_TEXT"
+    },
+    {
+      "id": "RED-CLM-004",
+      "status": "SUPPORTED_BY_VERIFIED_PRIMARY_TEXT"
+    },
+    {
+      "id": "RED-CLM-005",
+      "status": "SUPPORTED_BY_VERIFIED_PRIMARY_TEXT"
+    },
+    {
+      "id": "RED-CLM-006",
+      "status": "SUPPORTED_BY_VERIFIED_PRIMARY_TEXT"
+    },
+    {
+      "id": "RED-CLM-007",
+      "status": "SUPPORTED_BY_VERIFIED_PRIMARY_TEXT"
+    }
+  ],
+  "models": {
+    "axes": [
+      "O-1",
+      "O-2",
+      "O-3",
+      "O-4",
+      "O-5",
+      "O-6"
+    ],
+    "file": "ИСКУПЛЕНИЕ/04_W0_COMPETING_MODELS_TAXONOMY_2026-10-07.md",
+    "ids": [
+      "M-01",
+      "M-02",
+      "M-03",
+      "M-04",
+      "M-05",
+      "M-06",
+      "M-07",
+      "M-08",
+      "M-09",
+      "M-10"
+    ]
+  },
+  "acquisitionFamilies": [
+    "RED-FAM-DORT-ACTS",
+    "RED-FAM-REMONSTRANCE",
+    "RED-FAM-OWEN",
+    "RED-FAM-MURRAY",
+    "RED-FAM-GIBSON-ANTHOLOGY",
+    "RED-FAM-DAVENANT",
+    "RED-FAM-AMYRAUT",
+    "RED-FAM-BAXTER-MANTON",
+    "RED-FAM-LEX",
+    "RED-FAM-NT-COMM",
+    "RED-FAM-RUSSIAN",
+    "RED-FAM-GILL",
+    "RED-FAM-RECEIPT-AUDIT"
+  ],
+  "acquisitionState": {
+    "families": 13,
+    "verifiedFileReceipts": 1,
+    "quoteReadyFamilies": 1,
+    "directQuotesFromCopyrightedBooks": 0,
+    "userPlacedFilesInDrive": 0,
+    "receiptPolicy": {
+      "receivedRequires": [
+        "file_name",
+        "byte_size",
+        "sha256",
+        "received_at",
+        "durable_storage_receipt"
+      ],
+      "driveNameAloneIsReceipt": false,
+      "previewAloneIsFullText": false,
+      "bibliographyAloneSupportsClaim": false
+    }
+  },
+  "drive": {
+    "provider": "Google Drive",
+    "rootName": "07 — СЕРИЯ «ИСКУПЛЕНИЕ»",
+    "rootId": "1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV",
+    "subfolders": [
+      {
+        "name": "00 — INDEX, AUTHORITY & SERIES MAP",
+        "id": "1BAdPEiguZbar-Dg5Z3IfWWk0E-vaEnpL"
+      },
+      {
+        "name": "01 — PUBLIC DOMAIN LIBRARY — Owen, Calvin, Goodwin, Confessions",
+        "id": "1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t"
+      },
+      {
+        "name": "02 — COPYRIGHT BIBLIOGRAPHY & ACQUISITION — Murray and moderns",
+        "id": "1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI"
+      },
+      {
+        "name": "03 — SCRIPTURE, LEXICA & COMMENTARIES",
+        "id": "17BZ9SUu5zp5VVFd5a0t8mFX8wEodHcIv"
+      },
+      {
+        "name": "04 — CONFESSIONS & HISTORICAL THEOLOGY",
+        "id": "1ZTD2idu9oFO9Et1MSgfgtKMZZg63yUTw"
+      },
+      {
+        "name": "05 — SOURCE LEDGERS & CLAIM MAPS",
+        "id": "13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ"
+      },
+      {
+        "name": "06 — RIGHTS, HOLD & PROVENANCE",
+        "id": "1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy"
+      }
+    ],
+    "policy": {
+      "fullTextAllowedOnlyWhenRightsVerified": true,
+      "copyrightedFullTextUploadAllowed": false,
+      "legacyCorpusFolderNote": "ранее созданный каталог '01 — ИСКУПЛЕНИЕ …' (id 1BxmgovCZawdtK21q4JYXNNq05raOu1gH) является предшественником; новые загрузки идут только в 07-дерево, параллельная третья структура запрещена"
+    },
+    "mirror": {
+      "receiptFile": "ИСКУПЛЕНИЕ/07_W0_DRIVE_MIRROR_RECEIPT_2026-10-07.md",
+      "objectsMirrored": 11,
+      "mirroredAt": "2026-10-07",
+      "conversionToGoogleDocs": false,
+      "canonicalDirection": "repository → Drive (Drive-правка не меняет корпус)",
+      "bookFullTextsMirrored": 0,
+      "receiptSelfMirror": {
+        "fileId": "1r4UNqlNv4xgBYf_vCI-R-hjyihyal-jr",
+        "parentFolderId": "1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy",
+        "note": "receipt uploaded after generation; total objects in the 07 tree = 12, mirrored spine objects = 11"
+      }
+    }
+  },
+  "introductions": [
+    {
+      "file": "ИСКУПЛЕНИЕ/01_W0_INTRODUCTION_AND_TERMINOLOGY_2026-10-07.md",
+      "role": "SOLE_TERMINOLOGY_OWNER",
+      "status": "CURRENT",
+      "note": "введение, определения, русско-языковой терминологический узел, различения 4.1–4.8, architecture вводной статьи, очередь проверки RED-T-01…10"
+    }
+  ],
+  "publicationArchitecture": {
+    "status": "PROPOSAL_DO_NOT_IMPLEMENT_UNTIL_W6",
+    "file": "ИСКУПЛЕНИЕ/06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG_2026-10-07.md",
+    "proposedHubRoute": "/redemption/",
+    "proposedLaunchArticles": 12,
+    "articleCountIsOpenEnded": true,
+    "requiresProductSchemaChange": true,
+    "schemaChange": "section enum в src/content.config.ts не допускает новое значение без правки схемы; решение за Product-lane через owner PR",
+    "productRepo": "FedorMilovanov/gb-is-my-strength",
+    "directPushToProductMainAllowed": false
+  },
+  "holds": {
+    "EVIDENCE": [
+      "все формулировки об Amyraut/Davenant до сверки с первичными трактатами",
+      "все лексические утверждения до словарных страниц (W1)",
+      "любой пересказ Rejection of Errors по Второй главе Дорта"
+    ],
+    "LOCATOR": [
+      "страницы в RED-SRC-0401…0442 (современные книги: оглавления есть, страницы у选择性 глав — нет)",
+      "печатная пагинация перевода канонов 1840 г.",
+      "титульные данные перевода комментария Кальвина"
+    ],
+    "ARCHIVE": [
+      "полнотекстовые издания Оуэна, Кальвина, Гудвина, Турретина — по проверенному PD-каналу",
+      "русско-язычный слой (Толковая Библия, протестантская энциклопедия, дореволюционная периодика)"
+    ],
+    "RIGHTS": [
+      "все современные книги (Мюррей, Gibson, Stott, Morris, Pinnock, Amyx, Bavinck, Carson и др.)",
+      "русские переводы PD-оригиналов (перевод — производное произведение)",
+      "библейские переводы: Synodal-кандидат не ingested, Cassianov — PERMISSION_REQUIRED"
+    ],
+    "PUBLICATION": [
+      "весь корпус: 0 опубликованных материалов",
+      "ни одна цитата не переносится в Product до W6 и owner PR"
+    ]
+  },
+  "verification": {
+    "corpusFilesExist": true,
+    "filesVerifiedCount": 0,
+    "quotationsPageVerified": 0,
+    "publicationEligible": false,
+    "closureStatement": "Wave 0 открыт как каркас; тема не закрыта; публичный статус корпуса — CLOSED_WITH_HOLDS для любых внешних материалов, кроме зафиксированных в primaryTexts"
+  },
+  "spineHistory": {
+    "note": "в предыдущей сессии проекта описывались ещё три файла корпуса; в этом checkout их не оказалось, поэтому spine переписана явно и без молчаливого удаления истории: статусная карточка воссоздана как 00_CURRENT_AUTHORITY_2026-10-07.md, роль введения закреплена за 01_W0_INTRODUCTION_AND_TERMINOLOGY_2026-10-07.md (единственный терминологический владелец), роль архитектурного handoff — за 06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG_2026-10-07.md",
+    "notCarriedOver": [
+      "ИСКУПЛЕНИЕ/01_VVEDENIE_TERMINY_I_OPREDULENIYA_2026-10-07.md",
+      "ИСКУПЛЕНИЕ/100_PRODUKT_ARHITEKTURA_I_HANDOFF_2026-10-07.md"
+    ],
+    "reestablished": [
+      "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md"
+    ],
+    "ruleIfTheyReappear": "появившийся извне файл принимается как input и сверяется со spine; второй параллельная authority не создаётся, расхождение разрешается явной записью"
+  }
+}
