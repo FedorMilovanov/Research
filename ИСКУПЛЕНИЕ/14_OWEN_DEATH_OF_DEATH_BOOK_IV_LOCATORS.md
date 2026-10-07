@@ -19,7 +19,8 @@
 | Print basis шапки CCEL | Banner of Truth 1967. **Не цитировать** Packer 1959 intro, если он в этом файле. Тело Оуэна и Goold prefatory note XIX в. — PD |
 | Drive *Works* PDF | `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` (42 MB). Extraction cap 25 MB → **страница Goold в этом PDF по-прежнему `unchecked`** |
 | **Печатная страница (закрыто 2026-10-07, вторая волна)** | **Goold, *The Works of John Owen*, vol. X** (перепечатка Banner of Truth, 624 с., ISBN 9780851510644): полная карта глав с страницами — см. §0.1. Страница из *нашего* 42 MB PDF по-прежнему не извлекаема; страница по *изданию* теперь есть |
-| Quote-safe для Product | **NO** до (a) Goold vol/page **или** (b) явного item-level решения по CCEL TXT + номер главы. Пункт (a) **закрыт на уровне главы** (vol. X + страница начала главы); точная страница внутри главы — открытый локатор |
+| **Страница внутри главы (закрыто 2026-10-07, третья волна)** | Скан **Goold, vol. X (London: Johnstone and Hunter, 1850)** — IA `worksofjohnowe185010owen`, 650 листов, `NOT_IN_COPYRIGHT`, `page_number_confidence: 100`. Страница **абзаца**, а не только начала главы: см. §0.2. Совпадение начал глав (294 / 316 / 330 / 343 / 359 / 368 / 404, Testimonies 422) с оглавлением тома X означает, что перепечатка Banner воспроизводит пагинацию Goold 1850–53 |
+| Quote-safe для Product | **NO** до (a) Goold vol/page **или** (b) явного item-level решения по CCEL TXT + номер главы. Пункт (a) **закрыт на уровне абзаца** (vol. X + страница обсуждения локуса). `PUBLICATION_HOLD` и item-level решение остаются |
 
 ### 0.1 Страницы Goold / Banner, vol. X
 
@@ -40,7 +41,33 @@
 
 **Как это стыкуется с корпусом:** Owen Book II.IV (с. 222) — та же ось, что Rejectio VI Дорта; Book IV.IV (с. 343) закрывает 1 Тим. 2:4–6; Book IV.V (с. 359) закрывает 2 Пет. 2:1.
 
-**Чего это не даёт:** (1) точной страницы внутри главы (например, «1 Тим. 2:4 — с. 34?» — нет, только начало главы); (2) пагинации издания Goold 1826 против перепечатки Banner 1967 (оглавление издателя воспроизводит нумерацию тома X, но постраничного сличения двух печатей не было); (3) права цитировать — `PUBLICATION_HOLD` и item-level решение остаются.
+**Чего это не даёт:** (1) ~~точной страницы внутри главы~~ — снято, см. §0.2; (2) пагинации издания Goold **1826** против перепечатки Banner 1967: том X издания 1826 на IA (`worksofjohnowe10owen`) — это *A Display of Arminianism* и другие трактаты, *Death of Death* в нём нет (поиск `Arminianism`, `Salus electorum` — ноль совпадений), поэтому сличать не с чем; том X издания 1850–53 сличен и совпал; (3) права цитировать — `PUBLICATION_HOLD` и item-level решение остаются.
+
+### 0.2 Страницы внутри глав: скан Goold, vol. X (1850)
+
+| Локус | Печатная с. | Глава (начало) |
+|---|---|---|
+| impetration / application — заголовок главы | **222** | Book II, IV |
+| Ин. 3:16 | **319** | Book IV, II (316) |
+| 1 Ин. 2:2 | **330** (ответ и Августин — 332) | Book IV, III (330) |
+| 1 Тим. 2:4 («God will have all men to be saved», разбор «все = некоторые из всех родов») | **343** | Book IV, IV (343) |
+| 2 Пет. 3:9 («not willing that any should perish» — «us-ward») | **348** | Book IV, IV |
+| Евр. 2:9 («taste death for every man», ὑπέρ = commutation) | **349** | Book IV, IV |
+| 2 Кор. 5:14–15 | **350–352** | Book IV, IV |
+| 1 Кор. 15:22 | **352** | Book IV, IV |
+| Рим. 5:18 | **353** | Book IV, IV |
+| Рим. 14:15 | **360** | Book IV, V (359) |
+| 1 Кор. 8:11 | **361** | Book IV, V |
+| **2 Пет. 2:1** | **362–363** | Book IV, V |
+| Евр. 10:29 | **364–365** | Book IV, V |
+| Сводка возражения «Proof 16» (Иуд. 4; Евр. 10:29; 2 Пет. 2:1; 1 Кор. 8:11) | **401** | Book IV, VI (368) |
+| Августин, «totus mundus est ecclesia» | **424** | Testimonies of the Ancients (422) |
+
+**Как получено.** Поиск фраз по OCR скана (`…/fulltext/inside.php?item_id=worksofjohnowe185010owen&doc=…&path=/30/items/…`): `then were all dead` (2 Кор. 5:14), `taste death for every man` (Евр. 2:9), `for whom Christ died` (Рим. 14:15 / 1 Кор. 8:11), `bought them` (2 Пет. 2:1), `trodden under foot` (Евр. 10:29), `not willing that any should perish` (2 Пет. 3:9), `not for ours only` (1 Ин. 2:2), `God so loved the world` (Ин. 3:16), `impetration` (Book II.IV).
+
+**Смещение лист → страница: −16.** Проверено трижды: колонтитул «294 THE DEATH OF DEATH [BOOK IV.» = лист 310; «344 …» = лист 360; оглавление тома (лист 12): «IV. — Of the distinction of impetration and application … 222» = лист 238.
+
+**Ограничения.** (1) Уровень — абзац, не строка: указана страница, на которой стоит обсуждение локуса. (2) OCR — ABBYY FineReader 8, неровный: фраза `constraineth us` не индексируется вовсе, поэтому 2 Кор. 5:14 привязан по `then were all dead`; короткие фразы надёжнее длинных. (3) Это не ingest трактата в Git: Git держит локаторы.
 
 Это **не** ingest полного трактата в Git. Git держит локаторы. Drive `01` — зеркало этого файла, не 42 MB.
 

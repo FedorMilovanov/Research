@@ -185,9 +185,9 @@
     "calvinII12Chunk": 155,
     "calvinII16Chunk": 168,
     "printedPageLocators": {
-      "resolvedOn": "2026-10-07 (second wave)",
+      "resolvedOn": "2026-10-07 (second wave) + 2026-10-07 (third wave: passage level)",
       "method": "phrase search inside public-domain scans on archive.org plus a publisher's printed table of contents; NOT the Drive PDFs (extraction cap) and NOT a physical copy verified page by page",
-      "level": "chapter or section start, not line-level",
+      "level": "chapter or section start (second wave); passage inside the chapter for Owen (third wave). Not line-level, not collated against page images.",
       "schaffVolumeIII1919": {
         "item": "TheCreedsOfChristendomV3",
         "edition": "Schaff, The Creeds of Christendom, vol. III (1919, 6th ed., preface dated 1931), 983 pp.",
@@ -201,9 +201,32 @@
           "table of contents of the volume (item description) gives: The Canons of the Synod of Dort, A.D. 1619 - 550; The Westminster Confession of Faith, A.D. 1647, with the American Alterations - 600; facsimile pages 598-599 and 674-675",
           "inside.php search: 'Of Christ the Mediator.' -> page 633",
           "inside.php search: 'Rejectio Errorum.' -> page 577",
-          "inside.php searches with no match, which therefore tell us the volume prints the Canons in Latin: 'SECOND HEAD OF DOCTRINE', 'Rejection of Errors', 'abundantly sufficient to expiate the sins of the whole world', 'Secundum Doctrinae Caput', 'impetrationis et applicationis'"
+          "inside.php searches with no match, which therefore tell us the volume prints the Canons in Latin: 'SECOND HEAD OF DOCTRINE', 'Rejection of Errors', 'abundantly sufficient to expiate the sins of the whole world', 'Secundum Doctrinae Caput', 'impetrationis et applicationis'",
+          "inside.php search: 'de morte Christi' -> page 577, with the text of error VI of the Head II Rejectio ('Qui docent, Christum per suam satisfactionem, nullis certo meruisse ipsam salutem et fidem... Hi enim de morte Christi nimis abjecte sentiunt') - this settles that p. 577 is the Rejectio of Head II",
+          "inside.php search: 'Errorum' -> pages 570, 577, 583, 588; the fourth carries the subheading 'Rejectio Errorum circa Doctrinam de Perseverantia Sanctorum', i.e. four Rejections because Dort's heads III and IV are combined",
+          "inside.php search: 'unica et perfectissima' -> page 575 (Head II art. 3, Latin)",
+          "inside.php searches for WCF ch. VIII articles: 'It pleased God, in his eternal purpose' -> 633; 'The Son of God, the second person in the Trinity' -> 633; 'was sanctified and anointed with the Holy Spirit' -> 634; 'This office the Lord Jesus did most willingly undertake' -> 634; 'which he through the eternal Spirit' -> 635; 'the virtue, efficacy, and benefits thereof' -> 635; 'acteth according to both natures' -> 636; 'To all those for whom Christ hath purchased redemption' -> 636"
         ],
-        "notResolved": "which chapter's Rejectio the heading on p. 577 belongs to; page per article inside WCF ch. VIII (633-674)"
+        "notResolved": "inferences only (not direct hits): Head II articles run about 573-577 and its Rejectio about 577-582. Page-per-line inside an article is not resolved.",
+        "rejectioErrorumHeadingIsHeadII": true,
+        "rejectioErrorumHeadII": 577,
+        "rejectioErrorumPages": {
+          "headI": 570,
+          "headII": 577,
+          "headIIIandIV": 583,
+          "headV": 588
+        },
+        "dortHeadIIarticle3Latin": 575,
+        "wcfChapter8ByArticle": {
+          "8.1": 633,
+          "8.2": 633,
+          "8.3": 634,
+          "8.4": 634,
+          "8.5": 635,
+          "8.6": 635,
+          "8.7": 636,
+          "8.8": 636
+        }
       },
       "owenGooldVolumeX": {
         "edition": "William Goold (ed.), The Works of John Owen, vol. X (Banner of Truth reprint, 624 pp., ISBN 9780851510644)",
@@ -219,7 +242,53 @@
         "bookIVchapter6More": 368,
         "bookIVchapter7": 404,
         "covers": "Book IV ch. IV (p. 343) = 1 Tim 2:4,6; 2 Pet 3:9; Heb 2:9; 2 Cor 5:14-15; 1 Cor 15:22; Rom 5:18 (CCEL chunks 80-84). Book IV ch. V (p. 359) = Rom 14:15; 1 Cor 8:11; 2 Pet 2:1; Heb 10:29 (CCEL chunks 86-89)",
-        "notResolved": "page of the individual locus inside the chapter; Goold 1826 pagination vs the Banner reprint"
+        "notResolved": "Goold 1826 vs Banner pagination: not comparable - volume X of the 1826 edition on IA (worksofjohnowe10owen) does not contain Death of Death (searches for Arminianism and Salus electorum return nothing). Line-level page inside a passage is not resolved.",
+        "thirdWave": {
+          "item": "worksofjohnowe185010owen",
+          "edition": "Goold (ed.), The Works of John Owen, vol. X, London: Johnstone and Hunter, 1850 (the edition the Banner of Truth reprint reproduces)",
+          "rights": "NOT_IN_COPYRIGHT (no notice; stated date 1850); 650 page images; page_number_confidence 100",
+          "scanToPrintedOffset": -16,
+          "offsetChecks": [
+            "running head '294 THE DEATH OF DEATH [BOOK IV.' = scan leaf 310",
+            "running head '344 ...' = scan leaf 360",
+            "volume contents leaf 12: 'IV. - Of the distinction of impetration and application ... 222' = scan leaf 238"
+          ],
+          "bannerPaginationMatchesGoold1850": true,
+          "level": "passage (the page on which the discussion of a locus stands), not line",
+          "byLocus": {
+            "impetrationAndApplicationHeading": 222,
+            "John 3:16": 319,
+            "1 John 2:2": 330,
+            "1 John 2:2 answer / Augustine": 332,
+            "1 Tim 2:4": 343,
+            "2 Pet 3:9": 348,
+            "Heb 2:9": 349,
+            "2 Cor 5:14-15": "350-352",
+            "1 Cor 15:22": 352,
+            "Rom 5:18": 353,
+            "Rom 14:15": 360,
+            "1 Cor 8:11": 361,
+            "2 Pet 2:1": "362-363",
+            "Heb 10:29": "364-365",
+            "Proof 16 recapitulation (Jude 4; Heb 10:29; 2 Pet 2:1; 1 Cor 8:11)": 401,
+            "Augustine totus mundus est ecclesia (Testimonies)": 424
+          },
+          "searchPhrases": [
+            "then were all dead",
+            "taste death for every man",
+            "for whom Christ died",
+            "bought them",
+            "trodden under foot",
+            "not willing that any should perish",
+            "not for ours only",
+            "God so loved the world",
+            "impetration"
+          ],
+          "limits": [
+            "ABBYY FineReader 8 OCR is uneven: 'constraineth us' is not indexed at all, so 2 Cor 5:14 was located through 'then were all dead'",
+            "short phrases are more reliable than long ones"
+          ]
+        }
       },
       "calvinBeveridgeVolumeII": {
         "item": "institutesofchribeve02calv",
