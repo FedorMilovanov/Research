@@ -1,7 +1,7 @@
 # Кальвин Inst. III.24 и Дорт II — локаторы (PD / церковный текст)
 
 **Дата:** 2026-10-07  
-**Статус:** `RESEARCH LOCATOR / CALVIN II.12+II.16+II.17+III.24 ПО CCEL BEVERIDGE / DORT II LATIN SCHAFF 165 / NOT PRODUCT`  
+**Статус:** `RESEARCH LOCATOR / CALVIN II.12+II.16+II.17+III.24 ПО CCEL BEVERIDGE / DORT II LATIN SCHAFF 165 + DORT II EN SCOTT 1841 С. 282–286 / WCF 8 SCHAFF CHUNKS 182–183 / NOT PRODUCT`  
 **Соседи:** [`13_…`](13_DORT_II_CALVIN_OWEN_EXTENT.md), [`12_…`](12_HARD_TEXTS_EXTENT_CARDS.md), [`14_…`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md)
 
 ---
@@ -61,9 +61,10 @@ Quote-safe для Product: **NO** до page в нашем Drive PDF *или* я�
 
 | Издание | Права | Статус 2026-10-07 |
 |---|---|---|
-| Латынь 1619 / Schaff Creeds III | PD | TXT 557 чанков. **chunk 165** = *Secundum Doctrinæ Caput* artt. I–IX + Rejectio I–VII. Quote-safe латинский текст. EN колонка в этом чанке не выпала. Чанк 220 = Savoy, не Дорт |
-| CRCNA EN (совр. церк. текст) | перевод XX в., **copyright CRCNA** | https://www.crcna.org/welcome/beliefs/confessions/canons-dort чанки 3–4 прочитаны **как reading copy**. Не класть полный современный текст в Git как «наше издание» |
-| Drive `04` | пусто по Дорту | следующий ingest: Schaff Head II extract, не CRCNA dump |
+| Латынь 1619 / Schaff Creeds III | PD | TXT 557 чанков. **chunk 165** = *Secundum Doctrinæ Caput* artt. I–IX + Rejectio I–VII. Quote-safe латинский текст. **Английской колонки в этом TXT нет** — проверено 2026-10-07 по трём чанкам: **163** (Head I artt. XVI–XVIII + Rejectio I–VIII, латынь), **164** (конец Rejectio Head I + подписи делегатов, латынь), **165** (Head II artt. I–IX + Rejectio I–VII, латынь). Чанк 220 = Savoy, не Дорт |
+| Scott 1841 EN | **PD** (издание 1841) | **выбранное английское PD-издание**, локатор по страницам — §B.4. Заменяет CRCNA как «английский, на который можно ссылаться» |
+| CRCNA EN (совр. церк. текст) | перевод XX в., **copyright CRCNA** | https://www.crcna.org/welcome/beliefs/confessions/canons-dort чанки 3–4 прочитаны **как reading copy**. Не класть полный современный текст в Git как «наше издание». После Scott 1841 — не единственный английский в работе |
+| Drive `04` | пусто по Дорту | следующий ingest: Scott 1841 pp. 282–286 (скан/транскрипция) + Schaff Head II extract, не CRCNA dump |
 
 Quote-safe для Product: артикулы можно **называть по номеру**. Латынь Schaff chunk 165 — PD; длинный английский — не CRCNA dump. Короткие латинские якоря:
 
@@ -103,6 +104,33 @@ II.3 **без** II.5–8 и без Rejection I/VI = мем. II.8 **без** II.5
 
 Брошюра §V: общие блага репробатам от креста ≠ «искупление как искупление за репробатов»; отказывается говорить «умер за всех». Дорт II.3 говорит о **ценности** для всего мира, не о substitution каждого. Мюррей ближе к II.8, чем к популярному слогану II.3. Не выдавать его за «дортскую формулу слово в слово».
 
+### B.4 Английское PD-издание Дорта выбрано: Scott 1841 (pp. 282–286)
+
+Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). Английское PD-издание найдено и выбрано 2026-10-07:
+
+| Поле | Значение |
+|---|---|
+| Объект | *The Articles of the Synod of Dort, and its Rejection of Errors…*, перевод **Thomas Scott** (1747–1821); титул по каталогу archive.org — `The articles of the Synod of Dort`, **1841**, Presbyterian Church in the U.S.A. (Old School). Board of Publication |
+| Скан | archive.org item **`articlesofsynodo1841syno`**, 392 листа, открытый доступ, права PD (издание 1841) |
+| Где начинается раздел | содержание (лист 9): «ARTICLES OF THE SYNOD OF DORT, &c. — **257**». Head II = **с. 282–286** |
+| Чем проверено | `search-inside` JSON (OCR-текст + координаты на листе) **и** `articlesofsynodo1841syno_page_numbers.json` (лист → печатная страница, confidence 96). Совпадение лист−страница: 288→282, 289→283, 290→284, 291→285, 292→286 |
+
+| Статья Head II | Печ. с. | Лист | OCR-якорь (Scott 1841) |
+|---|---|---|---|
+| II.1 | **282** | 288 | «God is not only supremely merciful, but also supremely just. And his justice requires… that our sins committed against his infinite majesty, should be punished, not only with temporal, but also with eternal sufferings — of soul as well as of body…» |
+| II.3 | **283** | 289 | «This death of the Son of God is a single and most perfect sacrifice and satisfaction for sins; of infinite value and price, **abundantly sufficient to expiate the sins of the whole world**» |
+| II.5 | **284** | 290 | «the promise of the gospel is, that whosoever believeth in Christ crucified, shall not perish, but have everlasting life. Which promise ought to be announced and proposed, **promiscuously and indiscriminately, to all nations and men** to whom God, in his good pleasure, hath sent the gospel, with the command to repent and believe» |
+| II.8 | **285** | 291 | «For this was the most free counsel, and gracious will and intention of God the Father, that the life-giving and saving efficacy, of the most precious death of his own Son, should exert itself **in all the elect**, in order to give them alone justifying faith… God willed that Christ, through the blood of the cross… should, out of every people, tribe, nation, and language, **efficaciously redeem all those, and those only, who were from eternity chosen to salvation, and given to him by the Father**; that he should confer on them the gift of faith; (which… he obtained by his death;)… and at length present them glorious before himself without any spot and blemish» |
+| Rejectio (Head II) — начало | **286** | 292 | «The orthodox doctrine having been explained, the Synod rejects the errors of those,» |
+| Следующая Rejectio (Head III/IV) | 305 | 311 | та же формула → Rejectio Head II умещается в **286–304** |
+
+Честные границы:
+
+1. В руках — **OCR-выдачи `search-inside`**, не полная транскрипция страниц в Git/Drive. `accessState = partial` (не `acquired-copy`).
+2. Страницы отдельных **Rejectio I–VII по-английски не расписаны**: запросы по `impetration` и `determinate counsel` в OCR 1841 не матчатся (у Скотта иная формулировка). Содержание Rejection по-прежнему закрыто латынью Schaff chunk 165.
+3. Печатная страница выведена из `page_numbers.json` (confidence 96, по листу) — сильная машинная привязка, но не сверка глазами по изображению страницы.
+4. До product-цитаты по-английски нужна item-level сверка OCR с изображением страницы. `PUBLICATION_HOLD` на серии не снят. CRCNA по-прежнему не источник для цитат.
+
 ---
 
 ## C. Что снято / что нет
@@ -112,7 +140,36 @@ II.3 **без** II.5–8 и без Rejection I/VI = мем. II.8 **без** II.5
 | Calvin III.24.16–17 (1 Тим. 2:4, 2 Пет. 3:9) | LEAD / страница unchecked | **Beveridge CCEL chunk 330–331**; Drive PDF page still unchecked |
 | Calvin II.12, II.16, II.17 nature/merit | unchecked | **Beveridge chunks 155, 168, 176–177** |
 | Calvin 1 Ин. 2:2 comm. | реконструкция | без изменения (wall) |
-| Dort II articles | карта по памяти | CRCNA reading copy chunks 3–4 **и** Schaff Latin chunk 165 |
-| Dort Rejection I–VII | «не нумеровать по памяти» | Latin I–VII в Schaff 165; CRCNA EN как reading copy |
+| Dort II articles | карта по памяти | CRCNA reading copy chunks 3–4 **и** Schaff Latin chunk 165 **и** Scott 1841 EN pp. 282–286 (§B.4) |
+| Dort Rejection I–VII | «не нумеровать по памяти» | Latin I–VII в Schaff 165; CRCNA EN как reading copy; EN-начало Rejectio = Scott 1841 p. 286, страницы отдельных Rejectio EN **не расписаны** |
+| Dort **EN PD edition** | «EN Product NO until chosen edition» | **издание выбрано**: Scott 1841 (`articlesofsynodo1841syno`), Head II pp. 282–286; OCR partial. Schaff/CCEL EN-колонки не существует — проверено по чанкам 163–165 |
+| WCF 8 (ch. VIII «Of Christ the Mediator») | Drive PDF, locator unchecked | **Schaff/CCEL chunks 182–183** (EN+LA, постатейно) — см. §D. Drive PDF `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` = скан без текстового слоя, страница **не** извлекаема |
 
 `EVIDENCE_HOLD` не снят. Product HTML нет.
+
+---
+
+## D. Вестминстерское исповедание, гл. VIII — локатор (Schaff / CCEL)
+
+| Поле | Значение |
+|---|---|
+| Текст | Schaff, *Creeds of Christendom* III = CCEL TXT https://www.ccel.org/ccel/schaff/creeds3/cache/creeds3.txt (557 чанков) |
+| Где глава | **Chapter VIII / Cap. VIII — Of Christ the Mediator / De Christo Mediatore**: начинается в **chunk 182** (арт. I–IV), заканчивается в **chunk 183** (арт. V–VIII; далее Cap. IX «Of Free-will») |
+| Язык издания | WCF у Шаффа идёт **двумя колонками EN + LA** (предложение EN, затем LA) — в отличие от Дорта, где только латынь |
+| Drive PDF | `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`, **16 179 601 bytes**, md5 `c992905d7f02a04c8cc33fbf4731529b`. `read_file_text` → `extraction_status: empty` («no text layer», скан). Страница этого PDF извлечением **не проверяема**: не ретраить и не угадывать |
+
+EN-якоря (номера сносок Шаффа в квадратных скобках):
+
+- **8.1** «…whom he did, from all eternity, give a people to be his seed, and to be by him in time redeemed, called, justified, sanctified, and glorified.» [1180–1181]
+- **8.5** «The Lord Jesus, by his perfect obedience and sacrifice of himself, which he through the eternal Spirit once offered up unto God, hath fully satisfied the justice of his Father, and purchased not only reconciliation, but an everlasting inheritance in the kingdom of heaven, **for all those whom the Father hath given unto him**.» [1240–1241]
+- **8.6** «…the virtue, efficacy, and benefits thereof were communicated **unto the elect**, in all ages successively from the beginning of the world…» [1244]
+- **8.8** «**To all those for whom Christ hath purchased redemption** he doth certainly and effectually apply and communicate the same; making intercession for them…» [1250–1254]
+
+LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; verum etiam æternam hæreditatem in regno coelorum acquisivit*; 8.8 — *Pro quibus Christus redemptionem acquisivit, iis omnibus certo quidem ac efficaciter eam applicat impertitque*.
+
+Что даёт / чего не даёт:
+
+- Даёт: PD-текст WCF 8 на EN **и** LA с проверенным локатором уровня «чанк + номер статьи + номер сноски Шаффа». По оси текста `locatorState = verified`.
+- Не даёт: **печатную страницу** тома Шаффа (в TXT пагинации нет) и **страницу нашего Drive PDF** (скан без текстового слоя). Обе оси остаются `unchecked`.
+- Не даёт права публиковать: серия под `PUBLICATION_HOLD`, item-level решения по WCF EN не принималось.
+- Порядок чтения тот же, что у Дорта: 8.5 и 8.8 без 8.1 («given to him») и без 8.6 («unto the elect») — не цитировать как «Вестминстер об объёме».
