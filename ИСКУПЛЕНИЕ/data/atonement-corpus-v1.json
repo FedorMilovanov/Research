@@ -110,10 +110,23 @@
   },
   "hardTextsCards": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
   "historicalControl": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+  "owenBookIV": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
+  "calvinDortLocators": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+  "pdLocators": {
+    "owenCcelTxt": "https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.txt",
+    "owenBookIVStartChunk": 70,
+    "calvinBeveridgeTxt": "https://www.ccel.org/ccel/calvin/institutes/cache/institutes.txt",
+    "calvinIII24Chunks": [330, 331],
+    "dortCrcnaReadingCopy": "https://www.crcna.org/welcome/beliefs/confessions/canons-dort",
+    "driveCalvinPdfExtractFailedBytes": 45351929,
+    "driveOwenPdfExtractFailedBytes": 42084171
+  },
   "driveMirrors": {
     "file11": "1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd",
     "file12": "1wz5vC0-0EroWw7i5mAAVY4jtMtlWzpzf",
-    "file13": "1KGtaHM7POs0aTZ8PgPPymhDxllvMB6qV"
+    "file13": "1KGtaHM7POs0aTZ8PgPPymhDxllvMB6qV",
+    "file14": "1R7LhytnAXbTjp6iOARBkdMLFXzZ7bU25",
+    "file15": "1Au1ykvia5zWdHxt0OxbQaCRFPb0B9KH2"
   },
   "doNot": [
     "pirate-copyrighted-pdfs",

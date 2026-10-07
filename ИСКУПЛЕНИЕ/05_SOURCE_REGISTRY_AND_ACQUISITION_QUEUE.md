@@ -34,7 +34,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 
 | ID | Tier | Source | URL | Supports | Status | Quote-safe | Custody |
 |---|---|---|---|---|---|---|---|
-| C01 | P-CONFESSION | Canons of Dort, Second Head | https://www.ccel.org/ccel/schaff/creeds3.iv.xvi.html ; карта статей в `13_DORT_II_CALVIN_OWEN_EXTENT.md` | sufficiency/efficiency; отвержение ремонстрантов | TEXT_OPEN / CCEL reader часто login-wall / locator unchecked | NO until article+page in Drive `04` | LINK_ONLY |
+| C01 | P-CONFESSION | Canons of Dort, Second Head | CRCNA reading copy https://www.crcna.org/welcome/beliefs/confessions/canons-dort (chunks 3–4, 1986 trans copyright — не dump); Schaff TXT https://www.ccel.org/ccel/schaff/creeds3/cache/creeds3.txt (Head II chunk не пойман); карта `15` | sufficiency/efficiency; Rejection I–VII | ARTICLES MAPPED / Schaff page open | NO until Schaff article+page | LINK_ONLY |
 | C02 | P-CONFESSION | Westminster Confession ch. 8, 11 | Drive copy `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`; CCEL | Посредник; оправдание | ACQUIRED_COPY / locator unchecked | NO | ACQUIRED_DURABLE copy; locator HOLD |
 | C03 | P-CONFESSION | WLC 38–59 | CCEL / same WCF volume | личность и дело Христа | LEAD | NO | LINK_ONLY |
 | C04 | P-CONFESSION | Second London 1689 ch. 8, 11 | открытые транскрипции; сверять с факсимиле | баптистский twin | LEAD | NO | LINK_ONLY |
@@ -59,7 +59,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 
 | ID | Tier | Source | URL / Drive | Supports | Status | Quote-safe | Custody |
 |---|---|---|---|---|---|---|---|
-| R01 | P-REFORMED | Calvin, *Institutes* II.16–17; III | Drive `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ`; https://www.ccel.org/ccel/calvin/institutes | природа искупления; Calvin-extent = HARD | ACQUIRED_COPY / locator unchecked | NO | copy of existing PD PDF |
+| R01 | P-REFORMED | Calvin, *Institutes* II.16–17; III.24 | Drive `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` (45 MB, extract cap fail); Beveridge TXT chunks 330–331 = III.24.15–17 | природа; 1 Тим. 2:4 / 2 Пет. 3:9 | III.24 LOCATED in CCEL TXT; Drive page unchecked; II.16–17 open | NO for Product | copy + CCEL TXT |
 | R02 | P-REFORMED | Calvin commentaries: Isa 53, John 3, 1 John 2, 1 Tim 2, Heb 2, 2 Pet | CCEL Catholic Epistles reader 2026-10-07 login-wall (`calcom45.iv.iii.html` пуст — не ретраить). 1 Ин. 2:2 реконструирован по открытым разборам в `13`. 2 Пет. 3:9 — цитата Кальвина внутри OPC 1948 | extent texts | LEAD / wall | NO | LINK_ONLY |
 | R03 | P-REFORMED | Owen, *Works* (Goold) | Drive `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` | Death of Death обычно vol. 10 | ACQUIRED_COPY / volume-page unchecked | NO | copy |
 | R04 | P-REFORMED | Owen, *Death of Death* standalone | https://www.ccel.org/ccel/owen/deathofdeath ; https://ccel.org/ccel/owen/deathofdeath/deathofdeath.i.html ; PDF https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.pdf ; Archive https://archive.org/details/deathofdeathinde00owen | extent polemic | OPEN_ROUTE | NO until ingested+locator | LINK_ONLY until dedicated ingest |

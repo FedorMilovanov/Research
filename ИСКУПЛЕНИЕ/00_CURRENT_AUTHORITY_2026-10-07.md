@@ -22,6 +22,7 @@
    - Westminster Confession — [`1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`](https://drive.google.com/file/d/1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4/view).
 6. Джон Мюррей, *Redemption Accomplished and Applied* (1955): владелец загрузил русский HTML-дамп `s3516.htm.zip`. Тело 1955 **полное** (предисловие + 15 глав). Переименован и лежит в Drive `02` как `PRIVATE_STUDY_ONLY`. `ARCHIVE_HOLD` на наличие текста снят. `RIGHTS_HOLD` + `PUBLICATION_HOLD` на цитаты остаются. Английский Banner/Eerdmans с страницами по-прежнему отсутствует. См. `09_…INTAKE…` и `10_…ARGUMENT_MAP…`.
 7. HARD-тексты объёма: карта Мюррея **вне** RAA (`11`), рабочие карточки локусов (`12`), Дорт II / Кальвин / Оуэн (`13`). Закрыто как research-map, не как вердикт. 1 Тим. 2:4 и 2 Пет. 2:1 у Мюррея по-прежнему не разобраны; брошюра *The Atonement* §V — конденсат I.4; OPC 1948 закрывает ось offer (2 Пет. 3:9), не extent.
+8. Локаторы PD 2026-10-07: Оуэн Book IV (`14`, CCEL TXT); Кальвин Inst. III.24.15–17 (`15`, Beveridge chunks 330–331); Дорт II.1–9 + Rejection I–VII как карта статей (CRCNA reading copy; Schaff PD chunk не пойман). Drive PDF Calvin 45 MB / Owen 42 MB — extraction cap 25 MB, страница Goold/Beveridge в *этих* файлах unchecked.
 
 ## 2. Что не доказано
 
@@ -37,7 +38,7 @@
 |---|---|---|
 | `RIGHTS_HOLD` | Murray RAA; Packer 1959 intro; *From Heaven He Came and Sought Her*; Morris; Stott; Letham; Berkhof; Bavinck English; Grudem; Frame; Schreiner | авторское право XX–XXI вв. |
 | `ARCHIVE_HOLD` | Packer 1959; Gibson 2013; Morris; Stott; современные ST | полного объекта нет. Murray RU HTML — исключение: тело есть |
-| `LOCATOR_HOLD` | Owen *Death of Death* внутри *Works* PDF; Calvin II.16–17; Dort II; WCF 8 | копия есть, страница/том не сверены |
+| `LOCATOR_HOLD` | Owen Goold page в Drive *Works* PDF (42 MB); Calvin Drive PDF page (45 MB); Calvin II.16–17; Schaff Dort page; WCF 8 | копии/TXT есть; страница издания не сверена. Содержание Book IV и Inst. III.24 — в `14`/`15` |
 | `PUBLICATION_HOLD` | вся серия | research ≠ publication |
 | `EVIDENCE_HOLD` | любой тезис об «ограниченном искуплении» как о единственном библейском выводе | экзегеза и honest opposing case ещё не закрыты |
 
@@ -53,9 +54,9 @@
 
 ## 5. Следующий допустимый lane
 
-1. Ingest PD: Owen *Death of Death* (CCEL PDF) в Drive `01`; Schaff Dort Head II в `04`; page-check Calvin Institutes II.16–17 и III.24 в уже лежащем PDF.
-2. Не заполнять 1 Тим. 2:4 / 2 Пет. 2:1 «ещё Мюрреем» — комментария нет. Дальше Оуэн Book IV + Гилл + competing readings в `12`.
-3. Бумажный Banner/Eerdmans RAA и NICNT Romans — по желанию владельца, в `02`. CW 1:59–85 не пиратить.
+1. Добить Оуэн Book IV Ch. III (1 Тим. 2:4) прямым CCEL TXT-чанком; Schaff Creeds III — чанк Head II (PD цитата вместо CRCNA dump).
+2. Calvin II.16–17 nature — следующий Beveridge чанк. Drive PDF >25 MB не извлекать целиком.
+3. Бумажный Banner/Eerdmans RAA и NICNT Romans — по желанию владельца, в `02`. CW / Packer 1959 не пиратить.
 4. Не начинать Product HTML. `EVIDENCE_HOLD` на «ограниченное искупление доказано» остаётся.
 
 ## 6. Связь с root
