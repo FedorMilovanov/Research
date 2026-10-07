@@ -19,7 +19,7 @@ CCEL reader (Schaff Creeds III, Calvin Catholic Epistles) 2026-10-07 часто 
 - Официальные церкви, держащие Каноны (CRCNA и др.) — английский церковный текст.
 - Латынь — control против мемов.
 
-`C01` в [`05`](05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md): TEXT_OPEN / locator unchecked / quote-safe **NO** до article+page в нашем файле. Этот раздел — **карта статей**, не цитатник.
+`C01` в [`05`](05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md): Schaff Latin **chunk 165** = Head II artt. I–IX + Rejectio I–VII. CRCNA EN — reading copy, не dump. Quote-safe Product EN **NO** до выбранного издания. Этот раздел — **карта статей** + латинские якоря в [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
 
 ### 1.1 Что синод делает (порядок важен)
 
@@ -74,7 +74,7 @@ II.9: это совет совершится; церковь собиралас�
 
 | Locus | Зачем |
 |---|---|
-| II.16–17 | природа искупления, священство, заслуга Христа |
+| II.12, II.16 | природа / необходимость Посредника; penal/propitiation; «народ Свой» (Мф. 1:21). Beveridge chunks **155**, **168**. II.17 ещё открыт |
 | III.21–24 | избрание; III.24 — внешний призыв |
 | III.24.16–17 | классическое место по 1 Тим. 2:4: Бог хочет, чтобы спаслись все *роды* людей; «все» не каждый индивид без исключения |
 
@@ -123,7 +123,7 @@ LEAD. Не заполнять памятью. Когда откроется CCEL
 - Archive: https://archive.org/details/deathofdeathinde00owen
 - Drive *Works* PDF `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` — обычно Goold vol. 10; **том/страница не сверены**.
 
-`R03`/`R04`: quote-safe NO until Goold page. **Содержание Book IV по головам и по 1 Ин. 2:2 / 2 Кор. 5:19 / Евр. 2:9 / 2 Пет. 2:1** — [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md). CCEL TXT открыт (358 чанков). Drive *Works* 42 MB не извлекается. Dedicated 1 Тим. 2:4 (Book IV Ch. III) ещё не вынут вербатим.
+`R03`/`R04`: quote-safe NO until Goold page. **Содержание Book IV** — [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md). CCEL TXT открыт (358 чанков). Dedicated **1 Тим. 2:4, 6** = chunks 80–81; 2 Пет. 3:9 / Евр. 2:9 = 82; 2 Кор. 5:14 = 83; Рим. 5:18 = 84. Drive *Works* 42 MB не извлекается. 2 Пет. 2:1 прямой чанк ещё открыт.
 
 ### 3.1 Устройство трактата (навигация)
 
@@ -141,7 +141,7 @@ Packer 1959 intro (M02) — лучший педагогический мост; 
 - 1 Ин. 2:2, Ин. 6:51, 2 Кор. 5:19 — chunk 78.
 - Евр. 2:9, 1 Тим. 2:6 в ответе Муру — chunk 90.
 - 2 Пет. 2:1 Book IV Ch. V: аргумент сверен (δεσπότης; ἀγοράζω без крови; претензия); TXT-чанк главы не пойман; Product-цитата всё равно NO.
-- Dedicated 1 Тим. 2:4 (Ch. III) вербатим не вынут.
+- Dedicated 1 Тим. 2:4–6 (TXT heading «Chapter IV» ≠ PDF TOC «Ch. III») — chunks 80–81.
 - Не смешивать Goold pagination и Banner 1967 (Packer).
 
 ---
@@ -167,12 +167,12 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 | Локус | Дорт | Кальвин (нынешний доступ) | Оуэн | Мюррей |
 |---|---|---|---|---|
 | 1 Ин. 2:2 | II.3 ценность мира; не экзегеза стиха | комментарий: не sufficient/efficient сюда; мир = церковь/будущие верные; **страница не в руках** | Book IV ожидается | I.4 этническое/exclusive/abiding |
-| 1 Тим. 2:4 | II.5 проповедь всем | Inst. III.24 «все роды»; страница не сверена | Book IV ожидается | молчание |
+| 1 Тим. 2:4 | II.5 проповедь всем | Inst. III.24.16 «все роды»; Beveridge 330 | Book IV chunks 80–81 | молчание |
 | 1 Тим. 2:6 | II.8 действительное искупление данных Сыну | LEAD | Book IV | лексика λύτρον + список universal terms |
 | 2 Пет. 2:1 | нет прямого | LEAD / wall | Book IV UNVERIFIED | только purchase-lexeme |
-| 2 Пет. 3:9 | II.5 рядом по оси | цитата в OPC 1948: евангельская рука | другая ось | OPC majority = Мюррей |
-| Евр. 2:9 | — | LEAD | Book IV | universe of discourse = сыны |
-| 2 Кор. 5:14 | — | LEAD | Book IV | «все умерли» |
+| 2 Пет. 3:9 | II.5 рядом по оси | цитата в OPC 1948: евангельская рука; Inst. III.24.16 = покаяние в руке Божьей | chunk 82: `us` = elect | OPC majority = Мюррей |
+| Евр. 2:9 | — | LEAD | chunk 82: сыны к славе | universe of discourse = сыны |
+| 2 Кор. 5:14 | — | LEAD | chunk 83: все, за кого умер, мертвы | «все умерли» |
 | Рим. 8:32 | Rejection I цитирует Рим. 8:32 в Head V (perseverance) как цепь | Institutes / comm. Romans LEAD | да, цепь | главный proof |
 | Ин. 3:16 | II.5 обещание верующему | LEAD | Book IV | любовь-источник + certitude |
 
@@ -182,7 +182,7 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 
 Закрыто:
 
-- Дорт II как **карта статей** (1–9) и Rejection I–VII (CRCNA reading copy, chunks 3–4). Запрет читать II.3 без II.5–8. Schaff PD chunk Head II ещё не пойман. [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+- Дорт II как **карта статей** (1–9) и Rejection I–VII (CRCNA reading copy, chunks 3–4) **плюс** Schaff Latin chunk 165. Запрет читать II.3 без II.5–8. [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
 - Кальвин 1 Ин. 2:2 как *известная* позиция комментария, с честным «не первоисточник в руках».
 - Кальвин 2 Пет. 3:9 через публичный OPC-отчёт.
 - Оуэн как обязательный следующий ingest, не как уже процитированный.
@@ -190,7 +190,7 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 
 Не закрыто (`LOCATOR_HOLD`):
 
-- постраничный Calvin Institutes II.16–17, III.24;
+- постраничный Calvin Drive PDF (II.16 TXT = chunk 168; II.17 ещё не вынут);
 - Calvin Catholic Epistles (1 Ин. 2:2; 2 Пет. 2:1);
 - Owen Goold vol. 10 / CCEL PDF Book IV;
 - Schaff page-numbers Дорта в нашем Drive `04`;

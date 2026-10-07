@@ -1,7 +1,7 @@
 # Кальвин Inst. III.24 и Дорт II — локаторы (PD / церковный текст)
 
 **Дата:** 2026-10-07  
-**Статус:** `RESEARCH LOCATOR / CALVIN III.24 СНЯТ С UNCHECKED ПО CCEL BEVERIDGE / DORT II КАК КАРТА СТАТЕЙ / NOT PRODUCT`  
+**Статус:** `RESEARCH LOCATOR / CALVIN II.12+II.16+III.24 ПО CCEL BEVERIDGE / DORT II LATIN SCHAFF 165 / NOT PRODUCT`  
 **Соседи:** [`13_…`](13_DORT_II_CALVIN_OWEN_EXTENT.md), [`12_…`](12_HARD_TEXTS_EXTENT_CARDS.md), [`14_…`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md)
 
 ---
@@ -45,7 +45,13 @@ Quote-safe для Product: **NO** до page в нашем Drive PDF *или* я�
 
 1 Ин. 2:2 в Institutes здесь **нет**. Комментарий на 1 Ин. 2:2 остаётся реконструкцией (`13`), не страницей.
 
-II.16–17 (природа искупления) этим файлом **не** закрыты. Следующий чанк Beveridge.
+### A.4 Institutes II.12 и II.16 — природа / необходимость (Beveridge)
+
+**II.12** (chunk **155**): Посредник должен быть истинным Богом и истинным человеком. Необходимость **не** simple/absolute, а *from the divine decree*. Ни человек, ни ангел не достаточны. 1 Тим. 2:5 привлекается как «человек Христос Иисус» — близость плоти, не как extent-текст. Совпадает с Мюрреем I.1 (consequent necessity), не с карикатурой «Бог не мог иначе».
+
+**II.16** (chunk **168**): «осуждённые, мёртвые и погибшие в себе, должны в Нём искать праведность, избавление, жизнь». Имя Иисус = Мф. 1:21 «спасёт **народ Свой**». Без удовлетворения нет уверенности: грешник под гневом, пока не освобождён от вины. §2: кажущееся противоречие (Бог враг / уже дал Сына в любви) — модус Писания приспособлен к нашей ёмкости. Христос «взял наказание на Себя», «Своей кровью искупил грехи, делавшие их ненавистными Богу», «этим умилостивлением удовлетворил и умилостивил Отца», «основал мир». Это **nature** penal/propitiatory, не трактат об объёме. Extent здесь только через «народ Свой».
+
+II.17 (священство / merit) — следующий чанк, ещё не вынут.
 
 ---
 
@@ -55,12 +61,15 @@ II.16–17 (природа искупления) этим файлом **не** 
 
 | Издание | Права | Статус 2026-10-07 |
 |---|---|---|
-| Латынь 1619 | PD | Schaff Creeds III TXT есть (557 чанков); чанк 220 = Savoy, **не** Дорт. Страница Schaff под Дорт II ещё не поймана |
-| Schaff EN 1877 | PD | то же: TXT открыт, Head II chunk **не** вынут |
+| Латынь 1619 / Schaff Creeds III | PD | TXT 557 чанков. **chunk 165** = *Secundum Doctrinæ Caput* artt. I–IX + Rejectio I–VII. Quote-safe латинский текст. EN колонка в этом чанке не выпала. Чанк 220 = Savoy, не Дорт |
 | CRCNA EN (совр. церк. текст) | перевод XX в., **copyright CRCNA** | https://www.crcna.org/welcome/beliefs/confessions/canons-dort чанки 3–4 прочитаны **как reading copy**. Не класть полный современный текст в Git как «наше издание» |
 | Drive `04` | пусто по Дорту | следующий ingest: Schaff Head II extract, не CRCNA dump |
 
-Quote-safe для Product: артикулы можно **называть по номеру** (II.3, II.5, II.8). Длинная английская цитата — только из PD (Schaff), когда чанк пойман.
+Quote-safe для Product: артикулы можно **называть по номеру**. Латынь Schaff chunk 165 — PD; длинный английский — не CRCNA dump. Короткие латинские якоря:
+
+- II.3: *abunde sufficiens ad totius mundi peccata expianda*
+- II.5: *promiscue et indiscriminatim annunciari … cum resipiscentiæ et fidei mandato*
+- II.8: *eos omnes et solos, qui ab æterno ad salutem electi, et a Patre ipsi dati sunt, efficaciter redimeret*
 
 ### B.2 Содержание Head II (карта, не цитатник CRCNA)
 
@@ -101,9 +110,9 @@ II.3 **без** II.5–8 и без Rejection I/VI = мем. II.8 **без** II.5
 | Объект | Было | Стало |
 |---|---|---|
 | Calvin III.24.16–17 (1 Тим. 2:4, 2 Пет. 3:9) | LEAD / страница unchecked | **Beveridge CCEL chunk 330–331**; Drive PDF page still unchecked |
-| Calvin II.16–17 nature | unchecked | всё ещё unchecked |
+| Calvin II.12, II.16 nature | unchecked | **Beveridge chunks 155, 168**. II.17 ещё не вынут |
 | Calvin 1 Ин. 2:2 comm. | реконструкция | без изменения (wall) |
-| Dort II articles | карта по памяти | **reading copy CRCNA chunks 3–4**; Schaff PD chunk не пойман |
-| Dort Rejection I–VII | «не нумеровать по памяти» | **нумерация I–VII подтверждена** CRCNA chunk 4; PD-цитата ещё нет |
+| Dort II articles | карта по памяти | CRCNA reading copy chunks 3–4 **и** Schaff Latin chunk 165 |
+| Dort Rejection I–VII | «не нумеровать по памяти» | Latin I–VII в Schaff 165; CRCNA EN как reading copy |
 
 `EVIDENCE_HOLD` не снят. Product HTML нет.

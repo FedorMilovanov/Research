@@ -79,7 +79,7 @@ Reader-facing названия — черновик. Slug — английски
 |---|---|---|
 | B1 | За кого умер Христос? Как правильно поставить вопрос | не «limited vs unlimited» как ярлыки, а intent/efficiency/sufficiency |
 | B2 | «Мир», «все», «многие»: трудные тексты | research-cards 2026-10-07: `12_HARD_TEXTS_EXTENT_CARDS.md`. Статья не писать. 1 Тим. 2:4 и 2 Пет. 2:1 у Мюррея не закрыты (`11`) |
-| B3 | Дорт, sufficiency/efficiency и что синод *не* сказал | II.1–9 + Rejection I–VII mapped (`15`); Schaff PD chunk не пойман |
+| B3 | Дорт, sufficiency/efficiency и что синод *не* сказал | II.1–9 + Rejection I–VII mapped (`15`); Schaff Latin chunk 165 |
 | B4 | Кальвин, Оуэн, гипотетический универсализм, Амиральд | Inst. III.24.15–17 Beveridge chunks 330–331 (`15`); Оуэн Book IV (`14`); 1 Ин. 2:2 comm. — реконструкция |
 | B5 | Свободное предложение Евангелия и определённое искупление | OPC 1948 majority прочитан (публичный HTML); minority на столе; не исповедание |
 | B6 | Кальвинизм без карикатуры: пять пунктов как система, не как драка | TULIP только после A+B1 |
@@ -144,7 +144,7 @@ Reader-facing названия — черновик. Slug — английски
 2. **Патристика** — выкуп/победа, recapitulatio, penal notes у Августина и др.; не читать всех Отцов как penal substitutionists и не читать их как противников замещения.
 3. **Ансельм** — *Cur Deus Homo*: satisfactio, не «коммерческий платёж сатане».
 4. **Аквинат** — meritum, satisfactio, *sufficientia/efficientia* уже в схоластике.
-5. **Реформация** — Calvin *Institutes* II.16–17; не решать заранее тождество Calvin = later particularism во всех формулировках. Это отдельный hard case.
+5. **Реформация** — Calvin *Institutes* II.12 (chunk 155) / II.16 (chunk 168); II.17 ещё открыт; не решать заранее тождество Calvin = later particularism во всех формулировках. Это отдельный hard case.
 6. **Дорт 1618–19** — Второй раздел; sufficiency for all / efficacy for elect; отвержение ремонстрантских ошибок.
 7. **Amyraut / Saumur** — hypothetical universalism внутри реформатства.
 8. **Английские гипотетические универсалисты** — Davenant, Ussher, Calamy; не путать с Арминием.

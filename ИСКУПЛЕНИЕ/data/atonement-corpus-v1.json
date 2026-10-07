@@ -115,6 +115,11 @@
   "pdLocators": {
     "owenCcelTxt": "https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.txt",
     "owenBookIVStartChunk": 70,
+    "owen1Tim2Chunks": [80, 81],
+    "owenAllTextsChunks": [80, 81, 82, 83, 84],
+    "schaffDortLatinChunk": 165,
+    "calvinII12Chunk": 155,
+    "calvinII16Chunk": 168,
     "calvinBeveridgeTxt": "https://www.ccel.org/ccel/calvin/institutes/cache/institutes.txt",
     "calvinIII24Chunks": [330, 331],
     "dortCrcnaReadingCopy": "https://www.crcna.org/welcome/beliefs/confessions/canons-dort",
@@ -125,8 +130,8 @@
     "file11": "1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd",
     "file12": "1wz5vC0-0EroWw7i5mAAVY4jtMtlWzpzf",
     "file13": "1KGtaHM7POs0aTZ8PgPPymhDxllvMB6qV",
-    "file14": "1R7LhytnAXbTjp6iOARBkdMLFXzZ7bU25",
-    "file15": "1Au1ykvia5zWdHxt0OxbQaCRFPb0B9KH2"
+    "file14": "1xMSSeI70FPLyJgfEgPRJzCg85QDjpOUY",
+    "file15": "1aIcZhShC1ZNWlFfy-zGxJ_v2vGdcalJG"
   },
   "doNot": [
     "pirate-copyrighted-pdfs",
