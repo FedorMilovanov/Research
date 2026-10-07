@@ -10,7 +10,12 @@
   "rootAuthorityUnchanged": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
   "publicationBoundary": "Research presence is not Product write and not publication approval.",
   "settledVerdict": false,
-  "axes": ["extent", "nature", "application", "offer"],
+  "axes": [
+    "extent",
+    "nature",
+    "application",
+    "offer"
+  ],
   "textWitnesses": [
     {
       "id": "S1",
@@ -29,7 +34,9 @@
       "sha256OfDataset": "f95833b147bb182786750700423625528dcb38f1508ea7585bce52e730a352f9",
       "bytes": 9822443,
       "committedToGit": false,
-      "holds": ["LOCATOR_HOLD:apparatus"]
+      "holds": [
+        "LOCATOR_HOLD:apparatus"
+      ]
     },
     {
       "id": "S2",
@@ -127,9 +134,19 @@
         "ὑπέρ-tokens": 149,
         "ἀντί-tokens": 22,
         "ἀντί-governing-genitive": 19,
-        "ἀντί-genitive-atonement-loci": ["Mt 20:28", "Mk 10:45"],
+        "ἀντί-genitive-atonement-loci": [
+          "Mt 20:28",
+          "Mk 10:45"
+        ],
         "περί-tokens": 332,
-        "περί-genitive-of-hamartia": 14
+        "περί-genitive-of-hamartia": 14,
+        "ὑπέρ-lemma": 150,
+        "ὑπέρ-prepositional-P-": 149,
+        "ὑπέρ-adverbial-D-2Co11:23": 1,
+        "ὑπέρ-genitive-death/giving/offering-clauses": 48,
+        "ἀντί-genitive": 20,
+        "ἀντί-accusative": 1,
+        "ἀντί-adverbial": 1
       }
     },
     {
@@ -145,7 +162,11 @@
         "πᾶς": 1244,
         "κόσμος": 185,
         "κόσμος-in-John-gospel": 78,
-        "κόσμος-in-1John": 23
+        "κόσμος-in-1John": 23,
+        "ὅλος": 108,
+        "πᾶς-πάντες-NPM": 178,
+        "πᾶς-with-ἄνθρωπος-verses": 71,
+        "κόσμος-with-ὅλος-or-πᾶς-verses": 33
       }
     },
     {
@@ -158,21 +179,39 @@
         "ἐκκλησία": 114,
         "περιποιέομαι": 3,
         "δεσπότης": 10,
-        "κύριος": 713
+        "κύριος": 713,
+        "περιποίησις": 5,
+        "ἴδιος": 114
       }
     }
   ],
   "pericopeCards": [
-    {"file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md", "group": "synoptics-and-john", "cards": 14},
-    {"file": "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md", "group": "acts-and-paul", "cards": 18},
-    {"file": "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLIC_APOCALYPSE.md", "group": "hebrews-catholic-apocalypse", "cards": 19}
+    {
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "group": "synoptics-and-john",
+      "cards": 17
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md",
+      "group": "acts-and-paul",
+      "cards": 30
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+      "group": "hebrews-catholics-apocalypse",
+      "cards": 34
+    }
   ],
   "threeColumnTable": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
   "verifiedTextualNotes": [
     {
       "ref": "Heb 2:9",
       "S1reading": "χωρὶς θεοῦ",
-      "TRreadings": {"S2": "χάριτι θεοῦ", "S3": "χάριτι θεοῦ", "S4": "χάριτι θεοῦ"},
+      "TRreadings": {
+        "S2": "χάριτι θεοῦ",
+        "S3": "χάριτι θεοῦ",
+        "S4": "χάριτι θεοῦ"
+      },
       "sblApparatusSiglumPresent": true,
       "note": "Textual variant sits directly on an extent-HARD locus. Cards quote S1 and mark the variant; no argument is built silently on either side.",
       "locatorState": "verse-level, two text traditions compared"
@@ -180,7 +219,11 @@
     {
       "ref": "Acts 20:28",
       "S1reading": "τὴν ἐκκλησίαν τοῦ θεοῦ ἣν περιεποιήσατο διὰ τοῦ αἵματος τοῦ ἰδίου",
-      "TRreadings": {"S2": "τὴν ἐκκλησίαν τοῦ θεοῦ ... διὰ τοῦ ἰδίου αἵματος", "S3": "identical to S2", "S4": "identical to S2"},
+      "TRreadings": {
+        "S2": "τὴν ἐκκλησίαν τοῦ θεοῦ ... διὰ τοῦ ἰδίου αἵματος",
+        "S3": "identical to S2",
+        "S4": "identical to S2"
+      },
       "sblApparatusSiglumPresent": true,
       "note": "SBL marks a siglum on θεοῦ and a word-order siglum on αἵματος τοῦ ἰδίου. All three TR witnesses read θεοῦ and τοῦ ἰδίου αἵματος; the difference from S1 here is word order, not θεοῦ vs κυρίου. The rival reading κυρίου is NOT verified in this wave.",
       "locatorState": "verse-level; apparatus not acquired (LOCATOR_HOLD)"
@@ -188,7 +231,11 @@
     {
       "ref": "John 12:32",
       "S1reading": "πάντας ἑλκύσω",
-      "TRreadings": {"S2": "πάντας", "S3": "πάντας", "S4": "πάντας"},
+      "TRreadings": {
+        "S2": "πάντας",
+        "S3": "πάντας",
+        "S4": "πάντας"
+      },
       "sblApparatusSiglumPresent": false,
       "note": "No SBL apparatus siglum on πάντας in S1; all three TR witnesses agree with πάντας. The commonly cited πάντά reading is not attested in any witness held here.",
       "locatorState": "verse-level"
@@ -196,7 +243,11 @@
     {
       "ref": "1 Tim 3:16",
       "S1reading": "Ὃς ἐφανερώθη ἐν σαρκί",
-      "TRreadings": {"S2": "θεὸς ἐφανερώθη ἐν σαρκί", "S3": "θεὸς", "S4": "θεὸς"},
+      "TRreadings": {
+        "S2": "θεὸς ἐφανερώθη ἐν σαρκί",
+        "S3": "θεὸς",
+        "S4": "θεὸς"
+      },
       "sblApparatusSiglumPresent": true,
       "note": "Recorded for completeness; not an extent locus.",
       "locatorState": "verse-level"
@@ -204,7 +255,11 @@
     {
       "ref": "2 Pet 2:1",
       "S1reading": "τὸν ἀγοράσαντα αὐτοὺς δεσπότην ἀρνούμενοι",
-      "TRreadings": {"S2": "identical wording", "S3": "identical wording", "S4": "identical wording"},
+      "TRreadings": {
+        "S2": "identical wording",
+        "S3": "identical wording",
+        "S4": "identical wording"
+      },
       "sblApparatusSiglumPresent": false,
       "note": "No textual escape from the purchase wording: all four witnesses have ἀγοράσαντα + δεσπότην about the false teachers.",
       "locatorState": "verse-level"
@@ -212,7 +267,11 @@
     {
       "ref": "1 John 2:2",
       "S1reading": "περὶ ὅλου τοῦ κόσμου",
-      "TRreadings": {"S2": "περὶ ὅλου τοῦ κόσμου", "S3": "identical", "S4": "identical"},
+      "TRreadings": {
+        "S2": "περὶ ὅλου τοῦ κόσμου",
+        "S3": "identical",
+        "S4": "identical"
+      },
       "sblApparatusSiglumPresent": false,
       "note": "No textual variant on the extent phrase; the dispute is exegetical, not textual.",
       "locatorState": "verse-level"
