@@ -407,6 +407,25 @@
       ]
     },
     {
+      "cardId": "CYRA-1",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Кирилл Александрийский, In XII Prophetas: In Osee VII §18; In Ionam I §66; In Sophoniam II §64",
+      "genre": "экзегетический комментарий",
+      "primaryLocators": [
+        "Pusey 1868 (First1K tlg4090.tlg001), In Osee VII.18; In Ionam I.66; In Sophoniam II.64"
+      ],
+      "evidenceClass": "A1-original (греч.)",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED / VERIFIED_ORIGINAL",
+      "rightsState": "издание PD (1868); цифровая разметка First1KGreek CC BY-SA 4.0",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "«все» — риторическое целое; доктрины объёма у Кирилла нет",
+        "PG-колонки — LOCATOR_HOLD; Contra Nestorium / In Ioannem — HOLD"
+      ]
+    },
+    {
       "cardId": "CAS-1",
       "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
       "subject": "Кассиан, Conferences (Мк 10:45)",
@@ -615,6 +634,11 @@
       "locus": "Tertullian, De paenitentia 5.9; 7.14; 8.9; 9.2",
       "source": "Latin Library (Tertullian, De paenitentia)",
       "phrase": "domino satisfacere … habes cui satisfacias … confessio satisfactionis consilium … satisfactio confessione disponitur"
+    },
+    {
+      "locus": "Cyril of Alexandria, In Osee VII.18; In Ionam I.66; In Sophoniam II.64",
+      "source": "Pusey 1868 (First1K tlg4090.tlg001)",
+      "phrase": "δοὺς ἑαυτὸν ἀντίλυτρον ὑπὲρ πάντων / ὑπὲρ μικροῦ καὶ μεγάλου … Ἰουδαίου καὶ Ἕλληνος / ὑπὲρ ἡμῶν"
     }
   ],
   "falseFriendRegister": [
