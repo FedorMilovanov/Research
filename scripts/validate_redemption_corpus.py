@@ -161,9 +161,11 @@ req(
 
 # ---------------------------------------------------------- source registry ---
 sources = texts["sources"]
-records = re.findall(r"`RED-SRC-(\d{4})`", sources)
-req(len(set(records)) == EXPECTED_SOURCE_RECORDS, f"source registry record drift: {len(set(records))}")
-req(not [r for r, n in Counter(records).items() if n > 1], "source registry: duplicate record ids")
+record_rows = re.findall(r"^\|\s*`(RED-SRC-\d{4})`", sources, re.M)
+records = re.findall(r"`(RED-SRC-\d{4})`", sources)
+req(len(set(record_rows)) == EXPECTED_SOURCE_RECORDS, f"source registry record drift: {len(set(record_rows))}")
+req(len(record_rows) == len(set(record_rows)), "source registry: duplicate record rows")
+req(set(records) == set(record_rows), "source registry: cross-reference to an unregistered record id")
 rows = re.findall(r"^\|\s*`RED-SRC-\d{4}`\s*\|(.*?)\|\s*$", sources, re.M)
 req(len(rows) >= 60, f"source registry: too few parseable rows ({len(rows)})")
 for row in rows:
@@ -216,7 +218,9 @@ req(
 state = data.get("acquisitionState", {})
 req(state.get("families") == EXPECTED_FAMILIES, "registry: family count drift")
 req(state.get("directQuotesFromCopyrightedBooks") == 0, "registry: copyrighted-quote count must stay 0")
-req(state.get("userPlacedFilesInDrive") == 0, "registry: Drive intake count drift")
+req(state.get("userPlacedFilesInDrive") == 4, "registry: Drive intake count drift")
+req(state.get("objectsPresentInDriveRequiringHashVerification") == 4, "registry: unverified-object count drift")
+req(state.get("verifiedFileReceipts") == 1, "registry: presence must never be counted as a receipt")
 for key in ("driveNameAloneIsReceipt", "previewAloneIsFullText", "bibliographyAloneSupportsClaim"):
     req(state.get("receiptPolicy", {}).get(key) is False, f"registry: receipt policy {key} must be false")
     req(key in acq, f"acquisition dossier lost receipt policy {key}")
@@ -252,6 +256,14 @@ req(
 )
 pt = data.get("primaryTexts", [])
 req(len(pt) == 2, "registry: primary text count drift")
+pre = data.get("drive", {}).get("preexistingObjects", {})
+req(len(pre.get("bookCopies", [])) == 4, "registry: pre-existing book copies must be accounted for")
+for b in pre.get("bookCopies", []):
+    req(re.fullmatch(r"[0-9A-Za-z_-]{28,}", b.get("fileId", "")) is not None, "registry: book copy id shape drift")
+    req(b.get("publicationState") == "HOLD" and b.get("rightsState") == "PD-CLAIM-UNVERIFIED", "registry: book copy boundary drift")
+    req(b.get("bytes", 0) > 1_000_000, "registry: book copy byte size drift")
+req("RECEIVED_UNHASHED" in texts["mirror"], "mirror receipt must record pre-existing books as unhashed")
+req("не является" in texts["mirror"] and "sha256" in texts["mirror"], "mirror receipt lost the presence-is-not-receipt rule")
 for entry in pt:
     req(entry.get("evidenceClass") in ALLOWED_CLASSES, "registry: primary text class drift")
     req(entry.get("publicationState") == "HOLD", "registry: primary text must stay on PUBLICATION_HOLD")
@@ -261,12 +273,18 @@ for entry in pt:
 mirror = texts["mirror"]
 req(len(set(re.findall(r"`([0-9A-Za-z_-]{28,})`", mirror))) >= 11, "mirror receipt: drive-id column drift")
 req(len(re.findall(r"`[0-9a-f]{64}`", mirror)) >= 11, "mirror receipt: sha256 column drift")
-req(re.search(r"BOOKS RECEIVED\s*=\s*0", mirror) is not None, "mirror receipt must state that no books were received")
+req(re.search(r"BOOKS RECEIVED\s*=\s*4 PD-COPIES PRESENT, 0 hash-verified RECEIVED receipts", mirror) is not None,
+    "mirror receipt must state that book copies are present but zero are hash-verified receipts")
 req(re.search(r"COPYRIGHTED FULL TEXT PLACED\s*=\s*0", mirror) is not None, "mirror receipt lost the no-copyrighted-full-text boundary")
 req(mirror.count("| `") >= 11, "mirror receipt: fewer rows than mirrored objects")
 req("не является" in mirror.lower() and "приёмк" in mirror.lower(), "mirror receipt must disclaim being an acquisition receipt")
 mirror_state = data.get("drive", {}).get("mirror", {})
 req(mirror_state.get("objectsMirrored") == 11, "registry: mirror object count drift")
+req(mirror_state.get("rowsInReceiptTable") == 12, "registry: mirror table row count drift")
+req(mirror_state.get("staleObjects") == 0, "registry: a stale mirror must be declared, not hidden")
+req(len(mirror_state.get("objectsBehindByOneRevision", [])) == 3, "registry: mirror-lag declaration drift")
+req("MIRROR-LAG" in texts["mirror"], "mirror receipt must name the lagging objects explicitly")
+req("STALE" in texts["mirror"], "mirror receipt must state the stale-object verdict")
 req(mirror_state.get("bookFullTextsMirrored") == 0, "registry: mirror must not count books")
 req(mirror_state.get("conversionToGoogleDocs") is False, "registry: mirror conversion drift")
 req(Path(mirror_state.get("receiptFile", "")).exists(), "registry: mirror receipt file missing")

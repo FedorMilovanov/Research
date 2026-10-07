@@ -66,6 +66,7 @@
 CHARTER, TERMINOLOGY, INVENTORY, SOURCE REGISTRY, DRIVE SKELETON = OPENED (Wave 0)
 PRIMARY TEXTS VERIFIED BY BYTES                     = 1 (Canons of Dort, Head II, Arts I–IX)
 QUOTE-SAFE CLAIMS                                   = 0
+PD BOOK COPIES PRESENT IN Drive (unhashed, unread)  = 4  (Owen Works, Goodwin, Calvin Institutes, WCF)
 READER-READY DRAFTS                                 = 0
 PRODUCT IMPLEMENTATION                              = NOT STARTED
 ```

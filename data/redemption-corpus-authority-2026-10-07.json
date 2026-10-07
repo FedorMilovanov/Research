@@ -237,7 +237,7 @@
     "verifiedFileReceipts": 1,
     "quoteReadyFamilies": 1,
     "directQuotesFromCopyrightedBooks": 0,
-    "userPlacedFilesInDrive": 0,
+    "userPlacedFilesInDrive": 4,
     "receiptPolicy": {
       "receivedRequires": [
         "file_name",
@@ -249,7 +249,9 @@
       "driveNameAloneIsReceipt": false,
       "previewAloneIsFullText": false,
       "bibliographyAloneSupportsClaim": false
-    }
+    },
+    "objectsPresentInDriveRequiringHashVerification": 4,
+    "preexistingObjectsNote": "четыре PD-копии книг принадлежат владельцу аккаунта (created 2026-10-07T15:58Z); presence ≠ receipt: sha256 не вычислен, страницы не сверены, права на конкретную вёрстку не проверены"
   },
   "drive": {
     "provider": "Google Drive",
@@ -301,7 +303,60 @@
         "fileId": "1r4UNqlNv4xgBYf_vCI-R-hjyihyal-jr",
         "parentFolderId": "1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy",
         "note": "receipt uploaded after generation; total objects in the 07 tree = 12, mirrored spine objects = 11"
-      }
+      },
+      "rowsInReceiptTable": 12,
+      "mirrorRefreshAt": "2026-10-07T16:27:27Z",
+      "objectsBehindByOneRevision": [
+        "README.md",
+        "03_W0_SOURCE_REGISTRY_2026-10-07.md",
+        "redemption-corpus-authority-2026-10-07.json"
+      ],
+      "staleObjects": 0,
+      "lagPolicy": "расхождение разрешается в пользу локального canonical-файла; зеркало обновляется целиком на следующем шаге волны, частичных правок в Drive нет"
+    },
+    "preexistingObjects": {
+      "bookCopies": [
+        {
+          "fileId": "1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY",
+          "name": "Owen, John — The Works of John Owen (PD copy).pdf",
+          "bytes": 42084171,
+          "parentFolderId": "1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t",
+          "rightsState": "PD-CLAIM-UNVERIFIED",
+          "locatorState": "LOCATOR_HOLD",
+          "publicationState": "HOLD",
+          "defect": "originalFilename содержит черновое самоназвание 'wait no' — правит владелец"
+        },
+        {
+          "fileId": "1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M",
+          "name": "Goodwin, Thomas — The Works of Thomas Goodwin (PD copy).pdf",
+          "bytes": 27215853,
+          "parentFolderId": "1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t",
+          "rightsState": "PD-CLAIM-UNVERIFIED",
+          "locatorState": "LOCATOR_HOLD",
+          "publicationState": "HOLD"
+        },
+        {
+          "fileId": "1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ",
+          "name": "Calvin, John — Institutes of the Christian Religion (PD copy).pdf",
+          "bytes": 45351929,
+          "parentFolderId": "1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t",
+          "rightsState": "PD-CLAIM-UNVERIFIED",
+          "locatorState": "LOCATOR_HOLD",
+          "publicationState": "HOLD"
+        },
+        {
+          "fileId": "1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4",
+          "name": "Westminster Confession of Faith (PD copy).pdf",
+          "bytes": 16179601,
+          "parentFolderId": "1ZTD2idu9oFO9Et1MSgfgtKMZZg63yUTw",
+          "rightsState": "PD-CLAIM-UNVERIFIED",
+          "locatorState": "LOCATOR_HOLD",
+          "publicationState": "HOLD"
+        }
+      ],
+      "earlierWaveSummaries": 10,
+      "earlierWaveSummariesStatus": "SUPERSEDED-BY-MIRROR (kept in place, not deleted by agent; canonical = repository markdown)",
+      "legacyFolderQueryResult": "каталог '01 — ИСКУПЛЕНИЕ …' (1BxmgovCZawdtK21q4JYXNNq05raOu1gH) не разрешился (Drive: File not found) 2026-10-07 — второй структуры нет"
     }
   },
   "introductions": [

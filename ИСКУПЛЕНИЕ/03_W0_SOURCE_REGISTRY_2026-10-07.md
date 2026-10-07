@@ -176,6 +176,10 @@ PUB        ALLOWED / HOLD
 | `RED-SRC-0604` | Roger Nicole, «For Whom Did Christ Die?» (эссе; точное издание и страницы подтвердить) | B1 | NONE | COPYRIGHT | HOLD | классический краткий аргумент «многоуровневой» логики extent |
 | `RED-SRC-0605` | John Owen, *Death of Death* — историко-текстологические обзоры (Parker? Flood? «A Quest for God's Glory»?) — точные данные подтверждать | B1 | NONE | COPYRIGHT | HOLD | рецепция Оуэна |
 
+## 7a. Поступление объектов в Drive (2026-10-07)
+
+В `07 — СЕРИЯ «ИСКУПЛЕНИЕ» / 01 — PUBLIC DOMAIN LIBRARY` и `/ 04 — CONFESSIONS & HISTORICAL THEOLOGY` находятся четыре PDF-копии (Оуэн, Гудвин, Кальвин «Institutes», Вестминстерское исповедание), принадлежащие владельцу аккаунта. Их наличие меняет статус строк `RED-SRC-0005`, `RED-SRC-0303`, `RED-SRC-0304…0306`, `RED-SRC-0308` с `ACCESS: NONE` на `ACCESS: OBJECT-PRESENT-UNREAD`, и **ничего больше**: `LOCATOR` остаётся `NO`, `RIGHTS` — `PD-CLAIM-UNVERIFIED` (название файла «PD copy» не доказывает, что конкретный набор/вёрстка не защищены), `PUB` — `HOLD`. Побайтный контроль (sha256) этих объектов ещё не выполнялся, поэтому formal `RECEIVED`-state им не присваивается; учёт лежит в `07_W0_DRIVE_MIRROR_RECEIPT_2026-10-07.md` §0a.
+
 ## 8. Правила, которые защищают этот реестр от превращения в «много ссылок»
 
 1. **Количество записей не является прогрессом.** Прогресс = закрытые строки `ACCESS: FULL + LOCATOR: YES` для *конкретного claim* (см. claim-регистр в `05_...` и machine JSON).
