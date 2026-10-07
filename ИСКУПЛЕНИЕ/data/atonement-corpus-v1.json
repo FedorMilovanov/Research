@@ -481,16 +481,16 @@
     "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
   },
   "driveMirrors": {
-    "file00": "1wVDEcDfi-yhKTclVxjJSz5VD_k3JCp3H6KJQX0FLaNc",
+    "file00": "1AG1egmEOqwczMR6mUcmkCfp2CpVp5c2UvVUTXtcobyk",
     "file00readme": "1pb3R5SCru_tqkZZxnPOxpQU1zeWIw0sjgcZn5YPNk-E",
     "file05": "1V7ujL3oqtbIwQfZp_5xxpBfY4rohg6a6cbulQl-zDIY",
-    "file07": "1SJ4NR9R29HYFnsfyTa5as7sGkPjmzSNL2tUmdjOjo2s",
+    "file07": "134drcyzXWT7HcLNrhOcxFwqowIO0v3SCtaUSfZyWIA4",
     "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
     "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
-    "file12": "1PRePtwasQqHSX0C1j5hwD4WM-lG3vflz",
+    "file12": "1YrHM6pqfqCbLgQCbDjKYrs33so-xKhwa0uvs2P_mHhE",
     "file13": "1edopfq2CxCIduWIdlmaF0fNawNVE8q0c",
-    "file14": "1-B5i3tf2CCOV6zewjz63WqKBoxecc8bXBwmo1SwccDc",
-    "file15": "1RrX7Wge82D1tNnM5GqAMqY2YV9akkbB5bsrsemAPMnU",
+    "file14": "1Dp9Wk_q3Dz1mjIBqsKkyJrXXwZI4l_-aSepUh2BKbBY",
+    "file15": "1QkGGEdEi7bcI_77Z4oCjaYe6JqdMeXIZ7gGWnIEa4Rw",
     "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path; superseded IDs are trashed. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json."
   },
