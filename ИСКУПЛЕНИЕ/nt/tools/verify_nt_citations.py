@@ -92,7 +92,20 @@ def main() -> int:
 
     declared: list[tuple[str, str, int]] = []
     for md in files:
+        in_lemma_table = False
         for line in md.read_text(encoding="utf-8").splitlines():
+            if line.startswith("|"):
+                # заголовок таблицы решает, декларация ли это подсчёта лемм
+                if re.match(r"^\|\s*Лемма\s*\|", line):
+                    in_lemma_table = True
+                    continue
+                if in_lemma_table and set(line.replace("|", "").strip()) <= {"-", " ", ":"}:
+                    continue
+            else:
+                in_lemma_table = False
+                continue
+            if not in_lemma_table:
+                continue
             m = re.match(r"^\|\s*`([^`]+)`[^|]*\|\s*\**(\d+)\**\s*\|", line)
             if m and GREEK.search(m.group(1)):
                 declared.append((md.name, m.group(1), int(m.group(2))))
