@@ -19,7 +19,9 @@ CCEL reader (Schaff Creeds III, Calvin Catholic Epistles) 2026-10-07 часто 
 - Официальные церкви, держащие Каноны (CRCNA и др.) — английский церковный текст.
 - Латынь — control против мемов.
 
-`C01` в [`05`](05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md): Schaff Latin **chunk 165** = Head II artt. I–IX + Rejectio I–VII. CRCNA EN — reading copy, не dump. Quote-safe Product EN **NO** до выбранного издания. Этот раздел — **карта статей** + латинские якоря в [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+`C01` в [`05`](05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md): Schaff Latin **chunk 165** = Head II artt. I–IX + Rejectio I–VII. CRCNA EN — reading copy, не dump. Этот раздел — **карта статей** + латинские якоря в [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+
+**Английское PD-издание выбрано (2026-10-07):** Scott 1841 (`articlesofsynodo1841syno`), Head II = **с. 282–286**, постранично в [`15` §B.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md). Schaff/CCEL даёт Дорт **только по-латыни** — проверено по чанкам 163–165. Quote-safe Product **всё равно NO**: OCR-выдачи без item-level сверки, серия под `PUBLICATION_HOLD`.
 
 ### 1.1 Что синод делает (порядок важен)
 
@@ -148,7 +150,7 @@ Packer 1959 intro (M02) — лучший педагогический мост; 
 
 ## 4. Вестминстер / 1689 — короткий control
 
-WCF 8 (Drive `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`, locator unchecked):
+WCF 8 — текст теперь **проверен по PD-изданию** (Schaff/CCEL chunks **182–183**, EN+LA; подробно в [`15` §D](15_CALVIN_III24_AND_DORT_II_LOCATORS.md)). Drive `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` = скан без текстового слоя (`read_file_text` → `empty`), его страница по-прежнему `unchecked`:
 
 - 8.5: Господь Иисус, совершенным послушанием и жертвой, раз и навсегда предложенной, приобрёл примирение и вечное наследие **для всех тех, кого Отец дал Ему**.
 - 8.6: добродетель искупления сообщалась и ветхозаветным святым.
@@ -182,7 +184,9 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 
 Закрыто:
 
-- Дорт II как **карта статей** (1–9) и Rejection I–VII (CRCNA reading copy, chunks 3–4) **плюс** Schaff Latin chunk 165. Запрет читать II.3 без II.5–8. [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+- Дорт II как **карта статей** (1–9) и Rejection I–VII (CRCNA reading copy, chunks 3–4) **плюс** Schaff Latin chunk 165 **плюс** Scott 1841 EN pp. 282–286. Запрет читать II.3 без II.5–8. [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+- **Английское PD-издание Дорта выбрано** (Scott 1841). До этого единственным quote-safe текстом Канонов была латынь; теперь есть EN с постраничным локатором, но `accessState = partial` (OCR-выдачи search-inside, не транскрипция страниц в Git/Drive).
+- WCF 8 как **текст с локатором**: Schaff/CCEL chunks 182–183, английский и латинский, постатейно (8.1 / 8.5 / 8.6 / 8.8).
 - Кальвин 1 Ин. 2:2 как *известная* позиция комментария, с честным «не первоисточник в руках».
 - Кальвин 2 Пет. 3:9 через публичный OPC-отчёт.
 - Оуэн как обязательный следующий ingest, не как уже процитированный.
@@ -194,6 +198,8 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 - Calvin Catholic Epistles (1 Ин. 2:2; 2 Пет. 2:1);
 - Owen Goold vol. 10 / CCEL PDF Book IV;
 - Schaff page-numbers Дорта в нашем Drive `04`;
-- WCF 8 page в Drive PDF.
+- **печатная страница** WCF 8 в томе Шаффа (в TXT пагинации нет) и **страница нашего Drive PDF** WCF (скан без текстового слоя, извлечение невозможно) — текст при этом локализован по чанкам 182–183;
+- страницы отдельных **Rejectio I–VII по-английски** (Scott 1841; OCR-запросы по `impetration` / `determinate counsel` не матчатся — у Скотта другая формулировка);
+- полная транскрипция pp. 282–286 Scott 1841 (сейчас только фрагменты OCR).
 
 Не делать: Product HTML; пиратский Packer 1959; объявлять P1 победителем потому что «Дорт сказал».
