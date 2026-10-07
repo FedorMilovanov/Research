@@ -120,21 +120,75 @@
     "owenHead3Chunks": [86, 87, 88, 89],
     "owenAllTextsChunks": [80, 81, 82, 83, 84, 86, 87, 88, 89],
     "schaffDortLatinChunk": 165,
+    "schaffDortLatinChunksVerified": [163, 164, 165],
+    "schaffDortEnglishColumnPresent": false,
+    "schaffDortEnglishColumnCheckNote": "CCEL creeds3.txt chunks 163 (Head I artt. XVI-XVIII + Rejectio I-VIII), 164 (delegate subscriptions), 165 (Head II artt. I-IX + Rejectio I-VII) are all Latin: no English column exists in this TXT. Do not search for it again.",
     "calvinII12Chunk": 155,
     "calvinII16Chunk": 168,
     "calvinII17Chunks": [176, 177],
     "calvinBeveridgeTxt": "https://www.ccel.org/ccel/calvin/institutes/cache/institutes.txt",
     "calvinIII24Chunks": [330, 331],
     "dortCrcnaReadingCopy": "https://www.crcna.org/welcome/beliefs/confessions/canons-dort",
+    "schaffWcf8Chunks": [182, 183],
+    "schaffWcf8Articles": {
+      "8.1": [1180, 1181],
+      "8.5": [1240, 1241],
+      "8.6": [1244],
+      "8.8": [1250, 1254],
+      "columns": "EN+LA",
+      "chapterTitle": "Chapter VIII / Cap. VIII — Of Christ the Mediator / De Christo Mediatore"
+    },
+    "driveWcfPdfId": "1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4",
+    "driveWcfPdfBytes": 16179601,
+    "driveWcfPdfExtraction": "empty-no-text-layer",
+    "driveWcfPdfExtractionNote": "16.18 MB is below the 25 MB cap, so the cap is not the obstacle; read_file_text returned extraction_status=empty (image-only scan). The page of THIS file is not verifiable by extraction: do not retry, do not guess. Printed page of the Schaff volume is also not in the TXT (no pagination).",
+    "dortEnglishPdEdition": {
+      "selected": true,
+      "title": "The Articles of the Synod of Dort, and its Rejection of Errors…",
+      "translator": "Thomas Scott (1747-1821)",
+      "year": 1841,
+      "publisherPerArchiveOrg": "Presbyterian Church in the U.S.A. (Old School). Board of Publication",
+      "archiveOrgItem": "articlesofsynodo1841syno",
+      "leaves": 392,
+      "rights": "public-domain",
+      "articlesSectionStartsPage": 257,
+      "headIIPages": {
+        "II.1": 282,
+        "II.3": 283,
+        "II.5": 284,
+        "II.8": 285,
+        "rejectioStartsPage": 286,
+        "nextRejectioPage": 305
+      },
+      "leafToPrintedPage": {
+        "288": 282,
+        "289": 283,
+        "290": 284,
+        "291": 285,
+        "292": 286,
+        "311": 305
+      },
+      "verification": "archive.org search-inside JSON (OCR text + page boxes) + articlesofsynodo1841syno_page_numbers.json (confidence 96)",
+      "accessState": "partial (OCR snippets from search-inside; no full transcription in Git/Drive)",
+      "openLocators": [
+        "printed pages of Rejectio I-VII in English (Scott's wording differs: 'impetration' / 'determinate counsel' do not match the 1841 OCR)",
+        "full transcription of pp. 282-286"
+      ],
+      "publicationState": "PUBLICATION_HOLD — OCR not yet collated with the page image; item-level decision pending"
+    },
     "driveCalvinPdfExtractFailedBytes": 45351929,
     "driveOwenPdfExtractFailedBytes": 42084171
   },
   "driveMirrors": {
+    "file00": "1FSjtZ2vFN8AU_RS2v-5huKzUF8dqr5lnXtb4D5x1rfM",
+    "file05": "1wMAinyoPKn78Yuc7le8exxPHLnGNFjTUQsU-1op9GC8",
+    "file07": "1wqzqmhhqyRP29pB15RBVWJOg05lIaErYws7pVN0Kn2Y",
     "file11": "1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd",
-    "file12": "1wz5vC0-0EroWw7i5mAAVY4jtMtlWzpzf",
-    "file13": "1KGtaHM7POs0aTZ8PgPPymhDxllvMB6qV",
+    "file12": "1PRePtwasQqHSX0C1j5hwD4WM-lG3vflz",
+    "file13": "1dtUisVbGsTyq3j91vqIaQXd8XPkDvUN2",
     "file14": "1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw",
-    "file15": "1QCk0y3lXDf7DImLBdqiBbVhR2ET1LWqA"
+    "file15": "1_fy4_k8HmtbxKVJz58pE4mBDvGenhrqB",
+    "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path; superseded IDs are trashed. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json."
   },
   "doNot": [
     "pirate-copyrighted-pdfs",
@@ -142,6 +196,9 @@
     "claim-limited-atonement-proved",
     "implement-product-html-this-wave",
     "change-research-root-authority",
-    "claim-murray-closed-1Tim2-or-2Pet2-1"
+    "claim-murray-closed-1Tim2-or-2Pet2-1",
+    "search-schaff-dort-english-column-again",
+    "retry-drive-wcf-pdf-text-extraction",
+    "quote-scott-1841-or-wcf-8-in-product-before-item-level-collation"
   ]
 }
