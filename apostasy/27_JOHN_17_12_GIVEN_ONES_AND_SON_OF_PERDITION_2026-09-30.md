@@ -1,7 +1,8 @@
 # Ин. 17:12 — «данные Отцом», Иуда и «сын погибели»: technical dossier
 
-**Дата:** 2026-09-30  
-**Статус:** `P0 JUDAS EXEGESIS / RESEARCH-ONLY / PUBLICATION_HOLD`  
+**Дата создания:** 2026-09-30<br>
+**Последнее обновление:** 2026-10-05 (W35; added Lioy, with limits of use)<br>
+**Статус:** `P0 JUDAS EXEGESIS / RESEARCH-ONLY / PUBLICATION_HOLD`
 **Canonical owner:** будущая статья `/articles/iuda-izbrannyy-apostol-no-ne-spasennyy/`  
 **Parent:** `apostasy/02_JUDAS_ISCARIOT_EXEGETICAL_DOSSIER_2026-09-29.md`  
 **Readiness:** `apostasy/25_PUBLICATION_READINESS_AND_CLAIM_LEDGER_2026-09-30.md`
@@ -252,7 +253,7 @@ A dedicated 2019 study by Adam Kubiś (*The Biblical Annals* 9/1, 131–176) sur
 - or the **general tenor of Scripture** rather than one verse;
 - a minority proposal also hears Jesus’ own prior prophetic words (6:39, 6:70–71), especially in light of 18:9.
 
-Kubiś finally prefers, with J. Ramsey Michaels, a general Scriptural pattern rather than insisting on one exact OT proof text, while allowing Johannine double entendre / correspondence with Jesus’ own prophetic word.
+**Сверка заключения 04.10.2026 по авторской полнотекстовой цифровой копии на ResearchGate, страницы с печатной нумерацией 170–171:** Кубиш считает возможным, что в стихе одновременно подразумеваются участь Иуды и участь остальных учеников; соглашается с Дж. Рэмзи Майклсом, что один определённый библейский текст не цитируется, а вызывается общий tenor Писания; и допускает, что `γραφή` может охватывать как Еврейские Писания, так и пророческие слова Иисуса. В качестве одного конкретного возможного референта он называет предложение Ю. фон Вальде о Притч. 24:22a «очень привлекательным», но формулирует это условно, не как установленный единственный источник. Иными словами, его итог — вероятнее обобщённая перспектива исполнения с возможной двойной отсылкой, а не доказанный единственный proof-text. Источник страниц 170–171 — полнотекстовая цифровая копия, загруженная автором на [ResearchGate](https://www.researchgate.net/publication/330777094_Judas_or_Jesus'_Other_Disciples_The_Old_Testament_or_Jesus'_Word_A_Mysterious_Reference_to_the_Scripture_in_John_1712); [издательская запись](https://czasopisma.kul.pl/index.php/ba/article/view/284) подтверждает публикацию и пагинацию 131–176. Издательский PDF endpoint доступен, но текущий парсер вернул только начальную часть статьи, а не страницы 170–171; поэтому page-level сверка заявляется по авторской копии, не по publisher-hosted PDF или печатному экземпляру.
 
 ### Why this matters for Judas
 
@@ -319,6 +320,16 @@ In scholarship surveyed by Kubiś, Francis Moloney pushes further and resists tr
 **Pressure:** difficult to reconcile with `υἱὸς τῆς ἀπωλείας`, 6:64/70, 13:18, 13:27 and the Gospel’s sustained negative characterization.
 
 For our conservative Product this should be presented as a scholarly alternative, not adopted.
+
+### Model D — conditional security applied directly to Judas (Dale Moody, via Schreiner)
+
+This is a more direct modern counter-reading than the general claim that apostasy is possible. In “Perseverance and Assurance: A Survey and a Proposal,” *Southern Baptist Journal of Theology* 2/1 (Spring 1998), Thomas R. Schreiner summarizes Dale Moody’s reading of John 6:37: the promise that those who come will not be cast out does not exclude apostasy, because Judas was “given by the Father to the Son,” later abandoned Jesus, and was cursed. Schreiner’s endnotes 11–12 identify Moody’s primary locator as *The Word of Truth: A Summary of Christian Doctrine Based on Biblical Revelation* (Eerdmans, 1981), pp. 356–57; Moody’s argument reads John 6:66–71 against the wilderness generation and treats Judas as one of the given disciples who turned back. The Schreiner article itself directly addresses this counterexample in its section on John 6:37–40 and rejects it: he takes 6:64–65 to place Judas among those who did not believe and had not been granted coming to Jesus, then appeals to John 13:10–11 and the whole preservation argument. This is a substantive modern conditional-security interpretation, not merely the later Alford/Ellicott grammatical option.
+
+**Source-status caveat:** Schreiner’s full article was directly read in an open digital reproduction (the journal record identifies *SBJT* 2/1, 1998, pp. 32–62). The exact printed page mapping for the Judas discussion remains unverified; cite its “The Loss of Salvation View” / John 6:37–40 section and endnotes 11–12 rather than the provisional pp. 49–50 search lead. Moody’s cited pp. 356–57 were not directly collated in a print/licensed copy in this pass; the primary wording is available in a later web transcription, but that is only a secondary lead, not a substitute for the book. Google Books’ 1981 record has no preview, and Internet Archive borrowing/page-level access was unavailable. Until direct readback, attribute the position as “Moody, as summarized by Schreiner,” not as a direct quotation from Moody (see `139` §7 №61). For a second academic control, I. Howard Marshall’s “The Problem of Apostasy in New Testament Theology,” *Perspectives in Religious Studies* 14 (1987), 65–80, directly argues that the NT presents real danger of apostasy; in its “Election and Preservation” discussion he says Judas fell away from the Twelve as an example of appointment to service not guaranteeing obedience. Marshall does **not**, in that discussion, explicitly say Judas had saving faith, so do not enlist him as direct proof of Judas’s regeneration. See `02` §4 and source log `139` §7 №61–62.
+
+**Strength:** Moody’s specific reading takes the Father-giving language and the reality of New Testament warnings with full force; it cannot be dismissed as a mere lexical misunderstanding.
+
+**Pressure:** the reading must still account for John 6:64’s placement of the future betrayer beside “those who do not believe,” the `διὰ τοῦτο` link to 6:65, the no-loss/raising promises in 6:37–40, and John 13:10–11/17:12. The exact scope of the “some do not believe” group and the syntax of 17:12 remain points for argument, not shortcuts. A primary readback of Moody pp. 356–57 is required before the Product presents his exegesis as directly checked.
 
 ---
 
@@ -397,16 +408,26 @@ Adam Kubiś, “Judas or Jesus’ Other Disciples? The Old Testament or Jesus’
 - full journal/repository metadata verified;
 - CC/open repository object available;
 - p.137 surveys Moloney’s Judas-inclusive/nonfinal reading and objections;
-- conclusion pp.170–171 favors general Scriptural tenor / possible double reference rather than forcing one proof text;
+- conclusion pp. 170–171 rechecked on 2026-10-04 in the author-uploaded full-text copy on ResearchGate (page labels verified in the text): general Scriptural tenor; possible double horizon (Hebrew Scriptures + Jesus’ prophetic words); possible reference to both Judas and the other disciples. Kubiś calls von Wahlde’s Prov. 24:22a proposal “very attractive” if one seeks a specific text, but presents it conditionally rather than as an established sole referent. The publisher PDF endpoint was also opened, but the available parser returned only the opening portion, not pp. 170–171; no print collation;
 - cites Michaels NICNT p.870 and Keener p.1059 for important modern positions.
+
+**Dan Lioy**, “Denial Versus Betrayal: A Case Study Analysis of Simon Peter and Judas Iscariot in the Fourth Gospel,” *Conspectus* 32/1 (2021), 125–143, DOI 10.54725/conspectus.2021.2.7.
+
+- The full journal PDF was read directly; the article identifies CC BY 4.0. In §5, p.136, Lioy discusses John 6:64–71 and reports Craig Keener’s observation (Keener 2003, p.697) that Judas’s mention beside Peter’s confession sets apostasy and confession as alternatives. That Keener sentence remains **Lioy’s report**, not a direct check of Keener’s page.
+- Lioy’s Johannine reading continues through John 13 on pp.136–137; footnote 53 to John 17:12 is on p.138. His §6 begins p.138 and applies 2 Cor 7:10–11 to the divergent Peter/Judas outcomes (conclusion, pp.138–142).
+- Use as a focused comparative theological/pastoral study, not as a modern commentary on the syntax of `εἰ μὴ`, the `ᾧ/οὓς` variant, or the identity of the “given ones.” His claim that Judas’s grief was chiefly about consequences is an inference and sits uneasily with Matt 27:4’s explicit confession of sin and innocent blood; do not import it as a textual fact.
+- Lioy’s bibliography prints Ryan as *Journal of Religious Education* 67(5):223–237. That issue number is erroneous: the correct record is 67, no. 3; see `139` §7 №65.
 
 ### Classical/interpretive contrast
 
-- Calvin: Judas had office/dignity appearance but was not of true flock/elect in saving sense.
-- Alford: strongly inclusionist exception reading; useful historic counter-witness.
-- Godet/Pulpit: `εἰ μή` need not place Judas within every preceding class predicate; compare Luke 4:26–27.
+- **Calvin, direct commentary on John 17:12–13** ([CCEL](https://www.ccel.org/ccel/calvin/calcom35/calcom35.vii.iii.html)): Judas’s office gave him the appearance of belonging to the flock, but he was not one of the elect/true flock in the saving sense. Calvin explicitly concedes that, under ordinary grammatical rules, the exception is awkward/“incorrect”; he reads Jesus as accommodating ordinary human appearances. He also denies that scriptural fulfillment caused Judas’s ruin or removed his agency. This is a historical Reformed reading, not a neutral grammatical datum.
+- Calvin on **John 6:65–71** ([CCEL](https://www.ccel.org/ccel/calvin/calcom34/calcom34.xii.xi.html)) and **John 13:18–29** ([13:18–20](https://www.ccel.org/ccel/calvin/calcom35/calcom35.iii.iv.html); [13:21–29](https://www.ccel.org/ccel/calvin/calcom35/calcom35.iii.v.html)): distinguishes apostolic choice from saving election and interprets the post-sop “entry” as the culmination of a prior satanic influence. His reading that the sop was an occasion but not the cause is historical reception, not the only possible description of the Johannine mechanics.
+- **Augustine, *Tractate* XXVII.10–11** on John 6:60–72 ([New Advent](https://www.newadvent.org/fathers/1701027.htm)): reads Judas as the “devil” among the Twelve and warns that sacramental participation without abiding does not secure life. **Tractate LXII.1–6** on John 13:26–31 ([New Advent](https://www.newadvent.org/fathers/1701062.htm)) distinguishes prior temptation from fuller entry after the sop and argues—by harmonizing Luke 22:19–21—that Judas had already received the sacrament of Christ’s body and blood before the morsel. Both are NPNF English translation witnesses, not a fresh check of Augustine’s Latin.
+- **Chrysostom, *Homily* 72 on John, §§2–3** (John 13:20–31; [New Advent](https://www.newadvent.org/fathers/240172.htm)): reads Jesus’ manner of giving the sop and not publicly naming Judas as an admonition intended to shame/correct him; the disciples fail to infer the betrayal. Useful reception history and pastoral restraint, not a lexical resolution of John 17:12.
+- **Alford:** strongly inclusionist reading of `εἰ μή`; useful historic counter-witness, but not a substitute for a modern conditional-security source.
+- **Godet/Pulpit:** argue that `εἰ μή` need not place Judas within every preceding class predicate; compare Luke 4:26–27.
 
-Direct Product quotation from modern copyrighted commentaries still requires original-edition locator verification under repository policy.
+These patristic/Calvin locators were read in open digital English translations only; no printed edition or original-language text was collated in this pass. Direct Product quotation from modern copyrighted commentaries still requires original-edition locator verification under repository policy.
 
 ---
 

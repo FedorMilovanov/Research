@@ -79,6 +79,8 @@ Preferred H1:
 
 `STRUCTURE-LOCKED / RESEARCH-MATURE / EVIDENCE-HARDENING / DRAFT-HOLD`
 
+**Research-only update 2026-10-04 (W34):** the existing Judas network now has a targeted source/locator pass in `02`, `27`, `21`, and `139` (digital English texts; print/original-language verification is explicitly not claimed). Kubiś’s conclusion is checked at its printed pp. 170–171 in the author-uploaded ResearchGate full text; the publisher PDF endpoint was opened, but the available parser exposed only the opening portion, so the page-level check is not attributed to the publisher PDF or a print copy. Rows `139` §7 №61–62 now register a direct conditional-security reading of Judas as reported by Schreiner from Dale Moody, plus Marshall’s broader real-apostasy argument with the explicit caveat that Marshall does not say Judas was regenerate; Moody’s original pp. 356–57 remain a primary-source debt. The Synoptic Supper question is calibrated as probable physical presence but no explicit sentence that Judas consumed both elements. Matthew/Acts death-and-field differences are preserved rather than harmonized as fact. No new dossier was created; frozen reader draft `97` remains untouched. `28`, `35`, and `70` remain canonical owners for their existing questions.
+
 ### Claims already strong enough for research synthesis
 
 1. Иуда реально был одним из Двенадцати и имел реальную долю апостольского служения (Acts 1:17; Matt 10).
@@ -89,22 +91,24 @@ Preferred H1:
 6. `μεταμεληθείς` in Matt 27 cannot by itself prove “not repentance”; narrative direction matters more than a lexical slogan.
 7. Judas is therefore strongest as **office/service/privilege ≠ saving union**, not default example of Luke 8 temporary faith.
 
-### P0 blockers
+### P0 blockers — status after W34
 
-- John 17:12 “those you gave me / son of perdition” must receive a dedicated exact argument rather than footnote treatment.
-- Exact primary locators for Augustine/Calvin/Watson/Spurgeon used reader-facing.
-- Modern Johannine critical commentary exact pages on John 6/13/17.
-- Counter-reading that Judas may have once possessed saving faith must be represented from a serious scholarly/conditional-security source, not only rebutted indirectly.
-- Synoptic chronology of Judas at Supper must not be used for doctrinal claims unless separately established.
+- **John 17:12 conceptual analysis:** closed for research synthesis in `27` §§1, 5, 7, 9–10; exact Kubiś conclusion pp. 170–171 now verified. Remaining: final Product Greek-edition choice and any print apparatus check. Do not create another John 17 dossier.
+- **Historical primary locators:** Calvin, Augustine, Chrysostom, Watson, and Brooks were directly read in online English texts/translations and exact sections recorded in `02`/`27`/`139` §7 №56–60. Spurgeon’s earlier locator remains a source item to recheck before any reader-facing quotation; none of these online checks equals print/original-language verification.
+- **Modern commentary audit:** exact pages on John 6/13/17 from Carson, Köstenberger, Keener, Ridderbos/Michaels remain open; avoid implying licensed/original pages were checked.
+- **Serious counter-reading:** no longer unlocated. Schreiner’s 1998 *SBJT* article reports Moody’s direct application of conditional security to Judas (Judas given by the Father, then apostatized), citing *The Word of Truth*, pp. 356–57; Marshall’s 1987 academic article supports real apostasy generally and distinguishes apostolic service from obedience. However, Moody’s primary pp. 356–57 have not been directly read in print/licensed form, and Marshall does not explicitly call Judas regenerate. Keep the alternative labelled `secondary-reported` until Moody’s original pages are verified; do not turn the broad conditional-security doctrine into a claim about Marshall’s view of Judas.
+- **Supper chronology:** source map now distinguishes probable physical presence from explicit consumption; remains non-load-bearing.
+- **Matthew/Acts death-field tradition:** recorded without forced harmonization; exact mechanism/sequence remains unstated.
 
 ### No-go duplication
 
-- Temporary faith article may compare Judas in one section but must **link here**, not repeat biography.
+- Temporary faith article may compare Judas briefly but must **link here**, not repeat biography.
 - Flagship gets only 1–2 paragraph category summary.
+- Keep reader draft `97` frozen; source/research updates belong in existing dossiers/indexes.
 
 ### Next exact action
 
-`JOHN_17_12_GIVEN_ONES_AND_SON_OF_PERDITION` mini-dossier + modern Johannine locator pass.
+First seek a direct copy of Moody, *The Word of Truth*, pp. 356–57 (the conditional-security reading is currently verified only through Schreiner’s scholarly report and a secondary transcription); then do the targeted modern-commentary pass on John 6/13/17. Update `02`/`27` only where this closes a concrete claim-level gap, then advance the existing queue autonomously. No new Judas file unless an independently bounded question truly requires one.
 
 ---
 
@@ -776,7 +780,7 @@ Then, if needed, child dossiers for:
 
 Order by likely first publication:
 
-1. Judas → John17:12 + locators.
+1. Judas → targeted modern John 6/13/17 commentary + serious conditional-security counter-reading; John 17:12 conceptual and Kubiś locator work are already closed in `27`.
 2. Temporary Faith → Synoptic/Acts/1John modern sources.
 3. Heb6 → modern scholarly locator matrix.
 4. Heb10 → `ἡγιάσθη` evidence matrix.
