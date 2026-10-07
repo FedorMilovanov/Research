@@ -67,6 +67,7 @@ def main() -> int:
         print(f"NT corpus not found at {root}; set NT_SBLGNT_DIR")
         return 2
     lemma_count, blob = load_corpus(root)
+    blob_cf = blob.casefold()
     total_forms = sum(lemma_count.values())
     print(f"S1 loaded: {total_forms} word forms, {len(lemma_count)} lemmas")
 
@@ -85,6 +86,9 @@ def main() -> int:
             for frag in segments(raw):
                 checked += 1
                 if frag in blob or frag in lemma_count:
+                    continue
+                # заглавная буква в начале предложения — орфография, не лексика
+                if blob_cf and frag.casefold() in blob_cf:
                     continue
                 failures.append(f"{md.name}: NOT IN S1 -> {raw!r}")
                 break
