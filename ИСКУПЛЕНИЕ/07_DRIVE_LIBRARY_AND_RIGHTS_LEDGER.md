@@ -1,0 +1,69 @@
+# Искупление — Google Drive library и права
+
+**Дата:** 2026-10-07  
+**Родитель:** [07 — СЕРИЯ «ИСКУПЛЕНИЕ»](https://drive.google.com/drive/folders/1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV) (`1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV`)  
+**Политика:** [`data/artifact-custody-policy-v2.json`](../data/artifact-custody-policy-v2.json)  
+**Правило:** Drive presence ≠ quote-safe ≠ publication approval ≠ снятие HOLD.
+
+## 1. Дерево
+
+| Папка | ID | Ссылка |
+|---|---|---|
+| 00 — INDEX, AUTHORITY & SERIES MAP | `1BAdPEiguZbar-Dg5Z3IfWWk0E-vaEnpL` | [открыть](https://drive.google.com/drive/folders/1BAdPEiguZbar-Dg5Z3IfWWk0E-vaEnpL) |
+| 01 — PUBLIC DOMAIN LIBRARY | `1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t` | [открыть](https://drive.google.com/drive/folders/1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t) |
+| 02 — COPYRIGHT BIBLIOGRAPHY & ACQUISITION | `1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI` | [открыть](https://drive.google.com/drive/folders/1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI) |
+| 03 — SCRIPTURE, LEXICA & COMMENTARIES | `17BZ9SUu5zp5VVFd5a0t8mFX8wEodHcIv` | [открыть](https://drive.google.com/drive/folders/17BZ9SUu5zp5VVFd5a0t8mFX8wEodHcIv) |
+| 04 — CONFESSIONS & HISTORICAL THEOLOGY | `1ZTD2idu9oFO9Et1MSgfgtKMZZg63yUTw` | [открыть](https://drive.google.com/drive/folders/1ZTD2idu9oFO9Et1MSgfgtKMZZg63yUTw) |
+| 05 — SOURCE LEDGERS & CLAIM MAPS | `13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ` | [открыть](https://drive.google.com/drive/folders/13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) |
+| 06 — RIGHTS, HOLD & PROVENANCE | `1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy` | [открыть](https://drive.google.com/drive/folders/1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy) |
+
+Родитель висит в Research backend: `03 — Research — ИССЛЕДОВАТЕЛЬСКИЙ БЭКЕНД` (`1Eb8qglwGIqeJY-02J8eXNpDaQfdkmozs`). Копии PD-книг **не удаляют** оригиналы из общей PDF-библиотеки.
+
+## 2. Уже положенные объекты (копии существующих PD)
+
+| Объект | Drive ID | Источник копии | Rights | locatorState | publicationState |
+|---|---|---|---|---|---|
+| Owen, *Works* | `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` | `1e1rTdQH8bBrDh8NeEufhtVcBhbzWqyFK` | PD | unchecked | HOLD |
+| Calvin, *Institutes* | `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` | `1Pj5iUMrf8OlRuTowMVt7tRoHejpHY1_6` | PD | unchecked | HOLD |
+| Goodwin, *Works* | `1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M` | `1q_D74eAj1x1J_rgE9qL1Y_N3kRPpMrSL` | PD | unchecked | HOLD |
+| Westminster Confession | `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` | `1zbqz-EaFN5Fwnqo3a8ynVG4B1MpqVVVX` | PD | unchecked | HOLD |
+
+Это `ACQUIRED_DURABLE` относительно байтов копии только после независимого SHA-readback. На старте фиксируем: **копия создана через Drive copy_file; SHA-256 readback не выполнялся.** Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой политике. Не заявлять forensic acquisition.
+
+## 3. Чего нет и не будет без прав
+
+Джон Мюррей, *Redemption Accomplished and Applied* (1955, © Eerdmans / Banner of Truth reprints) **не выкладывается**. Автор умер в 1975; книга в США/UK всё ещё под охраной.
+
+То же: Packer 1959 intro; Gibson & Gibson 2013; Morris; Stott; Letham; Macleod; Berkhof ST; Bavinck English; Grudem; Frame.
+
+В `02` живут **карточки, TOC, маршруты покупки**. Если владелец покупает бумагу/легальный eBook — он сам кладёт файл в `02` с пометкой `PRIVATE_STUDY_ONLY`. Агент не добывает пиратские PDF.
+
+## 4. Как класть новые книги
+
+1. Проверить PD / rights.
+2. PD → `01` или `04`, provenance card в `06`.
+3. Copyright → только карточка в `02`, либо легальный экземпляр владельца.
+4. Не двигать чужие оригиналы; только copy.
+5. После copy — записать ID в этот ledger, не плодить мелкие отчёты.
+
+## 5. Загруженные Google Docs (навигация, не первоисточники)
+
+| Doc | ID |
+|---|---|
+| README | `1qXjocuWb3xm747BLhtmDBNY4Pd_EhbgZbAlFVgZDqSk` |
+| Current authority | `1bI3GKw5tpAV3uDHUxGwz42WmAa2i2giGkpT49USkMVM` |
+| Master map | `1_0I6d9OiRapJWQ9RzsgIAu73dxeArTJSI7ViRBMPlNw` |
+| Terms | `14EwvFHHCY3OlaMJ_tKQH7mGbr3Z3Fc5CqBNGrQNZO7A` |
+| Biblical corpus | `1xMwEx6UA2W4N8sE3b9DKRifRnko8T4-RNZfO0_IB-Cs` |
+| Question map | `1GFVUswVklNLz5VCtZRclMFj9b06nA4WUj1pjbIrtNaA` |
+| Source registry | `1yRVrEg-BglE8442TvZ5iIvr3WGGmEe5TOXADRtlmE4c` |
+| Rights ledger | `1a1OFbfqzHEQfGS-WBPBRRfJR-a8hu6IMfRJwx9C5-UY` |
+| Murray card | `1k2iVUPhMXwtV9hrAaZwlOM0YPW-V4JPCf8q4eR43zsA` |
+
+Канон остаётся Git-файлами в `ИСКУПЛЕНИЕ/`. Docs — зеркало для чтения на Drive.
+
+## 6. Что владелец может сделать сегодня руками
+
+1. Купить Murray RAA (Banner 9781848714946 или Eerdmans 9780802873095) и положить скан/законный файл в `02`.
+2. Купить *From Heaven He Came and Sought Her*.
+3. Если уже есть бумажный Мюррей — достаточно фото титула + владельческая пометка; полный скан — по его решению и местному fair-use/private study, не для сайта.

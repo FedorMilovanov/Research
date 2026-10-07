@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "ATONEMENT-CORPUS-AUTHORITY-2026-10-07",
+  "status": "CURRENT / CORPUS-SPECIFIC / ACTIVE RESEARCH / NOT PUBLICATION-READY",
+  "corpusPath": "ИСКУПЛЕНИЕ",
+  "stableEntrypoint": "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
+  "currentAuthority": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+  "rootAuthorityUnchanged": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
+  "publicationBoundary": "Research presence is not Product write and not publication approval.",
+  "drive": {
+    "parentId": "1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV",
+    "parentName": "07 — СЕРИЯ «ИСКУПЛЕНИЕ»",
+    "parentUrl": "https://drive.google.com/drive/folders/1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV",
+    "folders": {
+      "index": "1BAdPEiguZbar-Dg5Z3IfWWk0E-vaEnpL",
+      "publicDomainLibrary": "1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t",
+      "copyrightAcquisition": "1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI",
+      "scripture": "17BZ9SUu5zp5VVFd5a0t8mFX8wEodHcIv",
+      "confessions": "1ZTD2idu9oFO9Et1MSgfgtKMZZg63yUTw",
+      "ledgers": "13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ",
+      "rights": "1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy"
+    },
+    "acquiredCopies": [
+      {
+        "id": "1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY",
+        "name": "Owen, John — The Works of John Owen (PD copy).pdf",
+        "rights": "public-domain",
+        "locatorState": "unchecked",
+        "sha256Readback": false
+      },
+      {
+        "id": "1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ",
+        "name": "Calvin, John — Institutes of the Christian Religion (PD copy).pdf",
+        "rights": "public-domain",
+        "locatorState": "unchecked",
+        "sha256Readback": false
+      },
+      {
+        "id": "1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M",
+        "name": "Goodwin, Thomas — The Works of Thomas Goodwin (PD copy).pdf",
+        "rights": "public-domain",
+        "locatorState": "unchecked",
+        "sha256Readback": false
+      },
+      {
+        "id": "1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4",
+        "name": "Westminster Confession of Faith (PD copy).pdf",
+        "rights": "public-domain",
+        "locatorState": "unchecked",
+        "sha256Readback": false
+      }
+    ]
+  },
+  "holds": [
+    "PUBLICATION_HOLD",
+    "RIGHTS_HOLD",
+    "ARCHIVE_HOLD",
+    "LOCATOR_HOLD",
+    "EVIDENCE_HOLD"
+  ],
+  "murrayRAA": {
+    "id": "M01",
+    "title": "Redemption Accomplished and Applied",
+    "author": "John Murray",
+    "firstPub": 1955,
+    "fullTextOnDrive": false,
+    "custody": "LINK_ONLY",
+    "rightsHold": true,
+    "publicTocSource": "https://banneroftruth.org/us/store/theology-books/redemption-accomplished-and-applied/"
+  },
+  "seriesWorkingMap": {
+    "hubRouteProposal": "/iskuplenie/",
+    "articleCountFrozen": false,
+    "startWith": "terms-and-nature-not-tulip",
+    "layers": ["A-foundation", "B-extent-and-nuance", "C-application", "D-reserve"]
+  },
+  "doNot": [
+    "pirate-copyrighted-pdfs",
+    "start-series-with-TULIP",
+    "claim-limited-atonement-proved",
+    "implement-product-html-this-wave",
+    "change-research-root-authority"
+  ]
+}
