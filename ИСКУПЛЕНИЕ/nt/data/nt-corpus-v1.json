@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "ATONEMENT-NT-SUBCORPUS-AUTHORITY-2026-10-07",
+  "status": "CURRENT / SUB-CORPUS-SPECIFIC / ACTIVE RESEARCH / NO SETTLED VERDICT / NOT PUBLICATION-READY",
+  "corpusPath": "ИСКУПЛЕНИЕ/nt",
+  "parentCorpusPath": "ИСКУПЛЕНИЕ",
+  "parentAuthority": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+  "parentAuthorityId": "ATONEMENT-CORPUS-AUTHORITY-2026-10-07",
+  "stableEntrypoint": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+  "rootAuthorityUnchanged": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
+  "publicationBoundary": "Research presence is not Product write and not publication approval.",
+  "settledVerdict": false,
+  "axes": ["extent", "nature", "application", "offer"],
+  "textWitnesses": [
+    {
+      "id": "S1",
+      "name": "MorphGNT / SBL Greek New Testament with morphological parsing",
+      "role": "primary critical text, lemma and case source for every Greek citation in this sub-corpus",
+      "evidenceClass": "A1",
+      "accessState": "acquired-full",
+      "locatorState": "verse-level; apparatus NOT acquired",
+      "rightsState": "MorphGNT data; full dataset not committed to Git",
+      "publicationState": "not-approved",
+      "repository": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "commitDate": "2017-03-20T00:51:01Z",
+      "files": 27,
+      "parsedWordForms": 137554,
+      "sha256OfDataset": "f95833b147bb182786750700423625528dcb38f1508ea7585bce52e730a352f9",
+      "bytes": 9822443,
+      "committedToGit": false,
+      "holds": ["LOCATOR_HOLD:apparatus"]
+    },
+    {
+      "id": "S2",
+      "name": "Scrivener 1894 Textus Receptus (Robinson edition, text only)",
+      "role": "TR witness for variant notes",
+      "evidenceClass": "A1",
+      "accessState": "acquired-full",
+      "locatorState": "verse-level",
+      "rightsState": "public-domain per repository README",
+      "publicationState": "not-approved",
+      "repository": "byztxt/greektext-scrivener",
+      "commit": "6049a43b135ed870f843b83eb6a04764fc796678",
+      "commitDate": "2017-05-23T18:30:39Z",
+      "sha256OfDataset": "783e510d672d9bcca764172772d3f934bab6c06de2d32e9f14e9fd6e4cab5bdb",
+      "bytes": 1036814,
+      "encodingNote": "ASCII betacode transliteration, not Greek letters",
+      "committedToGit": false,
+      "holds": []
+    },
+    {
+      "id": "S3",
+      "name": "Robert Estienne (Stephens) 1550 Textus Receptus",
+      "role": "second TR witness",
+      "evidenceClass": "A1",
+      "accessState": "acquired-full",
+      "locatorState": "verse-level",
+      "rightsState": "public-domain per repository README",
+      "publicationState": "not-approved",
+      "repository": "byztxt/greektext-stephens",
+      "commit": "4314af2042d9e77b2ce5c1c86d0c49325dd81684",
+      "commitDate": "2023-09-02T19:37:17Z",
+      "sha256OfDataset": "8f5bc4b8897a6224dc5b45585fa33ec195b2d4a8d7f3c9737841a6d55f122131",
+      "bytes": 2621667,
+      "committedToGit": false,
+      "holds": []
+    },
+    {
+      "id": "S4",
+      "name": "Elzevir Textus Receptus",
+      "role": "third TR witness",
+      "evidenceClass": "A1",
+      "accessState": "acquired-full",
+      "locatorState": "verse-level",
+      "rightsState": "public-domain per repository README",
+      "publicationState": "not-approved",
+      "repository": "byztxt/greektext-elzevir",
+      "commit": "94f31e2d2e8bd451d4d2f9739d13c419f7ce86c2",
+      "commitDate": "2017-05-23T18:29:23Z",
+      "sha256OfDataset": "e7c730b9099581b710e631a62931143b543c0543cbb31b4600931af364056902",
+      "bytes": 1042867,
+      "committedToGit": false,
+      "holds": []
+    }
+  ],
+  "lexicalFields": [
+    {
+      "id": "L1",
+      "card": "ИСКУПЛЕНИЕ/nt/01_NT_LEXICAL_FIELD_REDEMPTION.md",
+      "field": "λυτρόω / λύτρον / ἀντίλυτρον / ἀπολύτρωσις / λυτρωτής / ἀγοράζω / ἐξαγοράζω",
+      "axisPrimary": "nature",
+      "axisSecondary": "extent",
+      "computedCounts": {
+        "λυτρόομαι": 3,
+        "λύτρον": 2,
+        "ἀντίλυτρον": 1,
+        "λύτρωσις": 3,
+        "ἀπολύτρωσις": 10,
+        "λυτρωτής": 1,
+        "ἀγοράζω": 30,
+        "ἐξαγοράζω": 4
+      }
+    },
+    {
+      "id": "L2",
+      "card": "ИСКУПЛЕНИЕ/nt/02_NT_LEXICAL_FIELD_PROPITIATION_RECONCILIATION.md",
+      "field": "ἱλάσκομαι / ἱλασμός / ἱλαστήριον / καταλλάσσω / καταλλαγή / ἀποκαταλλάσσω",
+      "axisPrimary": "nature",
+      "axisSecondary": "application",
+      "computedCounts": {
+        "ἱλάσκομαι": 2,
+        "ἱλασμός": 2,
+        "ἱλαστήριον": 2,
+        "καταλλάσσω": 6,
+        "καταλλαγή": 4
+      }
+    },
+    {
+      "id": "L3",
+      "card": "ИСКУПЛЕНИЕ/nt/03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md",
+      "field": "αἷμα and the prepositional formulas ὑπέρ / ἀντί / περί",
+      "axisPrimary": "nature",
+      "axisSecondary": "extent",
+      "computedCounts": {
+        "αἷμα": 97,
+        "ὑπέρ-tokens": 149,
+        "ἀντί-tokens": 22,
+        "ἀντί-governing-genitive": 19,
+        "ἀντί-genitive-atonement-loci": ["Mt 20:28", "Mk 10:45"],
+        "περί-tokens": 332,
+        "περί-genitive-of-hamartia": 14
+      }
+    },
+    {
+      "id": "L4",
+      "card": "ИСКУПЛЕНИЕ/nt/04_NT_LEXICAL_FIELD_QUANTIFIERS.md",
+      "field": "πολλοί / πᾶς / πάντες / ὅλος / κόσμος and the article",
+      "axisPrimary": "extent",
+      "axisSecondary": "offer",
+      "computedCounts": {
+        "πολύς": 415,
+        "πολύς-plural-forms": 267,
+        "πολύς-plural-with-preceding-article": 25,
+        "πᾶς": 1244,
+        "κόσμος": 185,
+        "κόσμος-in-John-gospel": 78,
+        "κόσμος-in-1John": 23
+      }
+    },
+    {
+      "id": "L5",
+      "card": "ИСКУПЛЕНИЕ/nt/05_NT_LEXICAL_FIELD_EKKLESIA_AND_OWN.md",
+      "field": "ἐκκλησία / ἴδιος / πρόβατα / λαός and the possessive formulas",
+      "axisPrimary": "extent",
+      "axisSecondary": "application",
+      "computedCounts": {
+        "ἐκκλησία": 114,
+        "περιποιέομαι": 3,
+        "δεσπότης": 10,
+        "κύριος": 713
+      }
+    }
+  ],
+  "pericopeCards": [
+    {"file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md", "group": "synoptics-and-john", "cards": 14},
+    {"file": "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md", "group": "acts-and-paul", "cards": 18},
+    {"file": "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLIC_APOCALYPSE.md", "group": "hebrews-catholic-apocalypse", "cards": 19}
+  ],
+  "threeColumnTable": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+  "verifiedTextualNotes": [
+    {
+      "ref": "Heb 2:9",
+      "S1reading": "χωρὶς θεοῦ",
+      "TRreadings": {"S2": "χάριτι θεοῦ", "S3": "χάριτι θεοῦ", "S4": "χάριτι θεοῦ"},
+      "sblApparatusSiglumPresent": true,
+      "note": "Textual variant sits directly on an extent-HARD locus. Cards quote S1 and mark the variant; no argument is built silently on either side.",
+      "locatorState": "verse-level, two text traditions compared"
+    },
+    {
+      "ref": "Acts 20:28",
+      "S1reading": "τὴν ἐκκλησίαν τοῦ θεοῦ ἣν περιεποιήσατο διὰ τοῦ αἵματος τοῦ ἰδίου",
+      "TRreadings": {"S2": "τὴν ἐκκλησίαν τοῦ θεοῦ ... διὰ τοῦ ἰδίου αἵματος", "S3": "identical to S2", "S4": "identical to S2"},
+      "sblApparatusSiglumPresent": true,
+      "note": "SBL marks a siglum on θεοῦ and a word-order siglum on αἵματος τοῦ ἰδίου. All three TR witnesses read θεοῦ and τοῦ ἰδίου αἵματος; the difference from S1 here is word order, not θεοῦ vs κυρίου. The rival reading κυρίου is NOT verified in this wave.",
+      "locatorState": "verse-level; apparatus not acquired (LOCATOR_HOLD)"
+    },
+    {
+      "ref": "John 12:32",
+      "S1reading": "πάντας ἑλκύσω",
+      "TRreadings": {"S2": "πάντας", "S3": "πάντας", "S4": "πάντας"},
+      "sblApparatusSiglumPresent": false,
+      "note": "No SBL apparatus siglum on πάντας in S1; all three TR witnesses agree with πάντας. The commonly cited πάντά reading is not attested in any witness held here.",
+      "locatorState": "verse-level"
+    },
+    {
+      "ref": "1 Tim 3:16",
+      "S1reading": "Ὃς ἐφανερώθη ἐν σαρκί",
+      "TRreadings": {"S2": "θεὸς ἐφανερώθη ἐν σαρκί", "S3": "θεὸς", "S4": "θεὸς"},
+      "sblApparatusSiglumPresent": true,
+      "note": "Recorded for completeness; not an extent locus.",
+      "locatorState": "verse-level"
+    },
+    {
+      "ref": "2 Pet 2:1",
+      "S1reading": "τὸν ἀγοράσαντα αὐτοὺς δεσπότην ἀρνούμενοι",
+      "TRreadings": {"S2": "identical wording", "S3": "identical wording", "S4": "identical wording"},
+      "sblApparatusSiglumPresent": false,
+      "note": "No textual escape from the purchase wording: all four witnesses have ἀγοράσαντα + δεσπότην about the false teachers.",
+      "locatorState": "verse-level"
+    },
+    {
+      "ref": "1 John 2:2",
+      "S1reading": "περὶ ὅλου τοῦ κόσμου",
+      "TRreadings": {"S2": "περὶ ὅλου τοῦ κόσμου", "S3": "identical", "S4": "identical"},
+      "sblApparatusSiglumPresent": false,
+      "note": "No textual variant on the extent phrase; the dispute is exegetical, not textual.",
+      "locatorState": "verse-level"
+    },
+    {
+      "ref": "Mark 14:24",
+      "S1reading": "τὸ ἐκχυννόμενον ὑπὲρ πολλῶν",
+      "sblApparatusSiglumPresent": true,
+      "note": "SBL carries a siglum over ἐκχυννόμενον ... πολλῶν (word-order / omission class). Mt 26:28 carries sigla on μου and τῆς; Lk 22:19-20 carries a siglum on καί (the well-known longer/shorter text). Cards note these and build on S1.",
+      "locatorState": "verse-level; apparatus not acquired (LOCATOR_HOLD)"
+    }
+  ],
+  "holds": [
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD",
+    "ARCHIVE_HOLD",
+    "PUBLICATION_HOLD"
+  ],
+  "baselineValidators": {
+    "date": "2026-10-07",
+    "head": "eee46241208c04e8f7aea792681c18fbd674c2c5",
+    "scripts/validate_research_root_authority.py": "PASS",
+    "scripts/validate_repository_authority_integrity.py": "PASS (without PRODUCT_REPO; reduced local path)",
+    "scripts/validate_genesis6_authority_manifest.py": "FAIL: authorityBaseCommit unavailable b654c5375a7b212ff9b42c08bb0193eeaad70746",
+    "genesis6FailureExpected": true,
+    "genesis6FailureCause": "shallow clone (.git/shallow present, is-shallow-repository=true)",
+    "manifestNotModified": true
+  },
+  "doNot": [
+    "claim-limited-atonement-proved",
+    "claim-universal-atonement-proved",
+    "say-pas-always-means",
+    "say-kosmos-always-means",
+    "say-polloi-equals",
+    "pass-off-frequency-count-as-exegesis",
+    "mix-extent-nature-application-offer-axes",
+    "attribute-authorial-intent-without-textual-ground",
+    "build-silently-on-a-variant-reading",
+    "commit-the-greek-corpora-into-git",
+    "pirate-copyrighted-pdfs",
+    "start-series-with-TULIP",
+    "implement-product-html-this-wave",
+    "change-research-root-authority"
+  ]
+}
