@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "ATONEMENT-OT-AUTHORITY-2026-10-08",
+  "status": "CURRENT / SUB-CORPUS / ACTIVE RESEARCH / NOT PUBLICATION-READY",
+  "corpusPath": "ИСКУПЛЕНИЕ/ot",
+  "stableEntrypoint": "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md",
+  "parentCorpusAuthority": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+  "rootAuthorityUnchanged": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
+  "publicationBoundary": "Research presence is not Product write and not publication approval.",
+  "agent": {
+    "id": 1,
+    "role": "OLD_TESTAMENT",
+    "brief": "Google Drive: '01 AGENT BRIEF — OLD TESTAMENT' (folder '08 — PARALLEL AGENT BRIEFS')",
+    "branch": "arena/13e971a8-research"
+  },
+  "holds": [
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "PUBLICATION_HOLD",
+    "RIGHTS_HOLD",
+    "ARCHIVE_HOLD"
+  ],
+  "baseline": {
+    "date": "2026-10-08",
+    "head": "eee46241208c04e8f7aea792681c18fbd674c2c5",
+    "clone": "shallow (fetch-depth 1)",
+    "validators": {
+      "scripts/validate_research_root_authority.py": "PASS",
+      "scripts/validate_repository_authority_integrity.py": "PASS",
+      "scripts/validate_genesis6_authority_manifest.py": "FAIL: authorityBaseCommit unavailable: b654c5375a7b212ff9b42c08bb0193eeaad70746 (known local shallow-clone FAIL; manifest not edited)"
+    }
+  },
+  "cards": [
+    {
+      "id": "01",
+      "file": "ИСКУПЛЕНИЕ/ot/01_LEX_KPR_KIPPER_FAMILY.md",
+      "topic": "כפר: kipper / kopher / kapporet",
+      "status": "DONE_WAVE1",
+      "evidenceClass": "A1",
+      "accessState": "full verse text (MT and LXX) for listed loci",
+      "rightsState": "original-language text; short quotations only; no file uploads",
+      "publicationState": "research only",
+      "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD"],
+      "verses": [
+        {
+          "ref": "Lev 17:11",
+          "mt": "לְכַפֵּר / יְכַפֵּר; הַדָּם בַּנֶּפֶשׁ יְכַפֵּר",
+          "lxx": "ἐξιλάσκεσθαι; ἀντὶ τῆς ψυχῆς ἐξιλάσεται",
+          "hosts": ["studylight", "blueletterbible-lxx", "biblehub-multi-swete", "sefaria-mt"],
+          "locatorState": "2z-plus"
+        },
+        {
+          "ref": "Lev 4:20",
+          "mt": "וְכִפֶּר עֲלֵהֶם הַכֹּהֵן וְנִסְלַח לָהֶם",
+          "lxx": "ἐξιλάσεται περὶ αὐτῶν ὁ ἱερεύς, καὶ ἀφεθήσεται αὐτοῖς ἡ ἁμαρτία",
+          "hosts": ["studylight"],
+          "locatorState": "1z"
+        },
+        {
+          "ref": "Exod 25:17",
+          "mt": "כַּפֹּרֶת",
+          "lxx": "ἱλαστήριον ἐπίθεμα",
+          "hosts": ["studylight"],
+          "locatorState": "1z"
+        },
+        {
+          "ref": "Exod 30:12",
+          "mt": "כֹּפֶר נַפְשׁוֹ",
+          "lxx": "λύτρα τῆς ψυχῆς αὐτοῦ",
+          "hosts": ["studylight"],
+          "locatorState": "1z"
+        },
+        {
+          "ref": "Num 16:46 (MT 17:11)",
+          "mt": "וְכַפֵּר עֲלֵיהֶם; כִּי־יָצָא הַקֶּצֶף",
+          "lxx": "ἐξίλασαι περὶ αὐτῶν; ἐξῆλθεν γὰρ ὀργὴ",
+          "hosts": ["studylight"],
+          "locatorState": "1z"
+        },
+        {
+          "ref": "Num 35:33",
+          "mt": "וְלָאָרֶץ לֹא־יְכֻפַּר לַדָּם",
+          "lxx": "οὐκ ἐξιλασθήσεται ἡ γῆ ἀπὸ τοῦ αἵματος",
+          "hosts": ["studylight"],
+          "locatorState": "1z"
+        },
+        {
+          "ref": "Ps 49:7 (MT 49:8; LXX 48:8)",
+          "mt": "לֹא־יִתֵּן לֵאלֹהִים כָּפְרוֹ",
+          "lxx": "οὐ δώσει τῷ θεῷ ἐξίλασμα αὐτοῦ",
+          "hosts": ["studylight"],
+          "locatorState": "1z"
+        },
+        {
+          "ref": "Gen 32:20 (MT 32:21)",
+          "mt": "אֲכַפְּרָה פָנָיו בַּמִּנְחָה",
+          "lxx": "ἐξιλάσομαι τὸ πρόσωπον αὐτοῦ ἐν τοῖς δώροις",
+          "hosts": ["studylight"],
+          "locatorState": "1z"
+        }
+      ],
+      "openChecks": [
+        "two-host check for Exod 25:17, Exod 30:12, Lev 4:20, Num 16:46, Num 35:33, Ps 49:7, Gen 32:20",
+        "LXX edition (Göttingen / Swete) for variant readings: Lev 17:11 ἐξιλάσεται vs ἐξειλάσεται; Num 35:33 ἐξιλασθήσεται",
+        "lexicon glosses (BDB / Thayer / LSJ public-domain copies only)",
+        "additional kipper loci: Lev 16:16, 16:20, 16:30; Exod 21:30; Ezek 16:63; Ps 78:38 (LXX 77:38); 2 Sam 21:3; Prov 16:6"
+      ]
+    }
+  ],
+  "plannedCards": [
+    {"id": "02", "topic": "גאל ga'al; פדה padah; פִּדְיוֹן", "status": "NOT_STARTED"},
+    {"id": "03", "topic": "אָשָׁם asham vs חַטָּאת hattat; עָוֹן / פֶּשַׁע / חַטָּאת", "status": "NOT_STARTED"},
+    {"id": "04", "topic": "דָּם dam (полная карточка; Lev 17:11 частично в 01)", "status": "PARTIAL_IN_01"},
+    {"id": "05", "topic": "צֶדֶק / צְדָקָה; שְׁלָמִים, עֹלָה, מִנְחָה, תָּמִיד", "status": "NOT_STARTED"},
+    {"id": "06", "topic": "Исх. 12 — пасха", "status": "NOT_STARTED"},
+    {"id": "07", "topic": "Лев. 1–7 — система жертв", "status": "NOT_STARTED"},
+    {"id": "08", "topic": "Лев. 16 — День очищения; два козла; לַעֲזָאזֵל (пять живых чтений)", "status": "NOT_STARTED"},
+    {"id": "09", "topic": "Числ. 19 — красная телица", "status": "NOT_STARTED"},
+    {"id": "10", "topic": "Исх. 24 (кровь завета); Быт. 22 (Мориа)", "status": "NOT_STARTED"},
+    {"id": "11", "topic": "Ис. 52:13–53:12 (אָשָׁם 53:10; רַבִּים 53:11–12)", "status": "NOT_STARTED"},
+    {"id": "12", "topic": "Дан. 9:24–27 (לְכַפֵּר; LXX vs Theodotion)", "status": "NOT_STARTED"},
+    {"id": "13", "topic": "Зах. 3; 12:10; 13:1; Пс. 22; 40; 69; 130 (LXX 129)", "status": "NOT_STARTED"},
+    {"id": "14", "topic": "Иер. 31:31–34; Иов 19:25; 33:24", "status": "NOT_STARTED"},
+    {"id": "15", "topic": "Ос. 13:14; Мих. 6:6–8; Ис. 1:11–17; Ам. 5; Пс. 51/50:16–17", "status": "NOT_STARTED"}
+  ],
+  "sourceRegistryRows": ["S05", "S06", "S07", "S08", "S09"],
+  "doNot": [
+    "pirate-copyrighted-pdfs",
+    "use-pirate-host-copies-of-commentaries",
+    "claim-substitution-or-penal-proved-from-OT",
+    "claim-limited-atonement-proved",
+    "change-research-root-authority",
+    "close-EVIDENCE_HOLD-in-ot-subcorpus",
+    "commit-google_drive-scratch-exports"
+  ]
+}
