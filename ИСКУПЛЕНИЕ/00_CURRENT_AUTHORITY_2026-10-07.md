@@ -21,6 +21,7 @@
    - Goodwin, *Works* — [`1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M`](https://drive.google.com/file/d/1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M/view);
    - Westminster Confession — [`1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`](https://drive.google.com/file/d/1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4/view).
 6. Джон Мюррей, *Redemption Accomplished and Applied* (1955): владелец загрузил русский HTML-дамп `s3516.htm.zip`. Тело 1955 **полное** (предисловие + 15 глав). Переименован и лежит в Drive `02` как `PRIVATE_STUDY_ONLY`. `ARCHIVE_HOLD` на наличие текста снят. `RIGHTS_HOLD` + `PUBLICATION_HOLD` на цитаты остаются. Английский Banner/Eerdmans с страницами по-прежнему отсутствует. См. `09_…INTAKE…` и `10_…ARGUMENT_MAP…`.
+7. HARD-тексты объёма: карта Мюррея **вне** RAA (`11`), рабочие карточки локусов (`12`), Дорт II / Кальвин / Оуэн (`13`). Закрыто как research-map, не как вердикт. 1 Тим. 2:4 и 2 Пет. 2:1 у Мюррея по-прежнему не разобраны; брошюра *The Atonement* §V — конденсат I.4; OPC 1948 закрывает ось offer (2 Пет. 3:9), не extent.
 
 ## 2. Что не доказано
 
@@ -52,10 +53,10 @@
 
 ## 5. Следующий допустимый lane
 
-1. Закрыть словарь и библейский корпус как research-map, не как статью.
-2. Добыть PD-тексты: Owen *Death of Death* (CCEL/Archive), Hodge ST III, Dabney, Shedd, Warfield PD articles, Anselm *Cur Deus Homo*, Athanasius *De Incarnatione*, Canons of Dort (Schaff), 1689.
-3. Владелец кладёт легальный Murray RAA в Drive `02 — COPYRIGHT…`, после чего снимается только `ARCHIVE_HOLD` на этот объект; `RIGHTS_HOLD` на публикацию цитат остаётся до item-level решения.
-4. Не начинать Product HTML.
+1. Ingest PD: Owen *Death of Death* (CCEL PDF) в Drive `01`; Schaff Dort Head II в `04`; page-check Calvin Institutes II.16–17 и III.24 в уже лежащем PDF.
+2. Не заполнять 1 Тим. 2:4 / 2 Пет. 2:1 «ещё Мюрреем» — комментария нет. Дальше Оуэн Book IV + Гилл + competing readings в `12`.
+3. Бумажный Banner/Eerdmans RAA и NICNT Romans — по желанию владельца, в `02`. CW 1:59–85 не пиратить.
+4. Не начинать Product HTML. `EVIDENCE_HOLD` на «ограниченное искупление доказано» остаётся.
 
 ## 6. Связь с root
 

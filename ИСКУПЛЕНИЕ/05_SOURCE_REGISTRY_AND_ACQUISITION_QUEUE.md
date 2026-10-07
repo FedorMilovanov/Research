@@ -34,7 +34,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 
 | ID | Tier | Source | URL | Supports | Status | Quote-safe | Custody |
 |---|---|---|---|---|---|---|---|
-| C01 | P-CONFESSION | Canons of Dort, Second Head | https://www.ccel.org/ccel/schaff/creeds3.iv.xvi.html | sufficiency/efficiency; отвержение ремонстрантов | TEXT_OPEN / locator unchecked | NO until article+page | LINK_ONLY |
+| C01 | P-CONFESSION | Canons of Dort, Second Head | https://www.ccel.org/ccel/schaff/creeds3.iv.xvi.html ; карта статей в `13_DORT_II_CALVIN_OWEN_EXTENT.md` | sufficiency/efficiency; отвержение ремонстрантов | TEXT_OPEN / CCEL reader часто login-wall / locator unchecked | NO until article+page in Drive `04` | LINK_ONLY |
 | C02 | P-CONFESSION | Westminster Confession ch. 8, 11 | Drive copy `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`; CCEL | Посредник; оправдание | ACQUIRED_COPY / locator unchecked | NO | ACQUIRED_DURABLE copy; locator HOLD |
 | C03 | P-CONFESSION | WLC 38–59 | CCEL / same WCF volume | личность и дело Христа | LEAD | NO | LINK_ONLY |
 | C04 | P-CONFESSION | Second London 1689 ch. 8, 11 | открытые транскрипции; сверять с факсимиле | баптистский twin | LEAD | NO | LINK_ONLY |
@@ -60,7 +60,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | ID | Tier | Source | URL / Drive | Supports | Status | Quote-safe | Custody |
 |---|---|---|---|---|---|---|---|
 | R01 | P-REFORMED | Calvin, *Institutes* II.16–17; III | Drive `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ`; https://www.ccel.org/ccel/calvin/institutes | природа искупления; Calvin-extent = HARD | ACQUIRED_COPY / locator unchecked | NO | copy of existing PD PDF |
-| R02 | P-REFORMED | Calvin commentaries: Isa 53, John 3, 1 John 2, 1 Tim 2, Heb 2 | CCEL | extent texts | LEAD | NO | LINK_ONLY |
+| R02 | P-REFORMED | Calvin commentaries: Isa 53, John 3, 1 John 2, 1 Tim 2, Heb 2, 2 Pet | CCEL Catholic Epistles reader 2026-10-07 login-wall (`calcom45.iv.iii.html` пуст — не ретраить). 1 Ин. 2:2 реконструирован по открытым разборам в `13`. 2 Пет. 3:9 — цитата Кальвина внутри OPC 1948 | extent texts | LEAD / wall | NO | LINK_ONLY |
 | R03 | P-REFORMED | Owen, *Works* (Goold) | Drive `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` | Death of Death обычно vol. 10 | ACQUIRED_COPY / volume-page unchecked | NO | copy |
 | R04 | P-REFORMED | Owen, *Death of Death* standalone | https://www.ccel.org/ccel/owen/deathofdeath ; https://ccel.org/ccel/owen/deathofdeath/deathofdeath.i.html ; PDF https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.pdf ; Archive https://archive.org/details/deathofdeathinde00owen | extent polemic | OPEN_ROUTE | NO until ingested+locator | LINK_ONLY until dedicated ingest |
 | R05 | P-REFORMED | Goodwin, *Works* | Drive `1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M` | Christ / redemption applied | ACQUIRED_COPY / locator unchecked | NO | copy |
@@ -83,7 +83,12 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 
 | ID | Tier | Work | Why needed | Rights | Status | Quote-safe | Custody |
 |---|---|---|---|---|---|---|---|
-| M01 | MODERN-COPYRIGHT | John Murray, *Redemption Accomplished and Applied*, Eerdmans 1955; Banner 2014 ISBN 9781848714946; Eerdmans 2015 9780802873095 | педагогический хребет серии; necessity/nature/perfection/extent + ordo | in copyright | CARD ONLY; owner may place legally purchased copy in Drive `02` | NO | LINK_ONLY |
+| M01 | MODERN-COPYRIGHT | John Murray, *Redemption Accomplished and Applied*, Eerdmans 1955; Banner 2014 ISBN 9781848714946; Eerdmans 2015 9780802873095 | педагогический хребет серии; necessity/nature/perfection/extent + ordo | in copyright | PRIVATE_STUDY RU HTML on Drive `02`; EN pages still missing | NO | PRIVATE_STUDY_ONLY |
+| M21 | MODERN-COPYRIGHT | John Murray, *The Atonement* (P&R 1976 / Encyclopedia of Christianity) | конденсат RAA; §V Extent называет 2 Кор. 5; 1 Тим. 2:6; Евр. 2:9; 1 Ин. 2:2; 2 Пет. 2:1 только как purchase-lexeme | in copyright | публичная HTML https://www.the-highway.com/atonement_murray.html прочитана 2026-10-07; paraphrase only | NO | LINK_ONLY |
+| M22 | MODERN-COPYRIGHT | Murray, «The Atonement and the Free Offer of the Gospel», *Collected Writings* 1:59–85 | definite atonement ↔ offer | in copyright | тела нет; Books at a Glance paywall | NO | LINK_ONLY |
+| M23 | MODERN-COPYRIGHT | Murray, «The Atonement», CW 2:142–150 | короткий очерк | in copyright | тела нет | NO | LINK_ONLY |
+| M24 | P-CONFESSION-adj | OPC, *The Free Offer of the Gospel* (Murray/Stonehouse/Kuschke majority, 1948) | B5: Иез. 18/33; Мф. 23:37; Ис. 45:22; 2 Пет. 3:9. Не extent. Minority Young/Hamilton на той же странице | церковный отчёт, публично | https://opc.org/GA/free_offer.html прочитан (чанки 0–6/8) | paraphrase YES; не исповедание | LINK_ONLY |
+| M25 | MODERN-COPYRIGHT | Murray, *The Epistle to the Romans* NICNT I (Eerdmans 1960) | Рим. 5:18 «все люди»; Рим. 8:32 | in copyright | страниц нет; вторичка p. 203 | NO | LINK_ONLY |
 | M02 | MODERN-COPYRIGHT | J.I. Packer, Introductory Essay to Owen *Death of Death* (1959) | лучшее популярное объяснение, почему extent важен для евангелия | in copyright | CARD | NO | LINK_ONLY |
 | M03 | MODERN-COPYRIGHT | David & Jonathan Gibson, eds., *From Heaven He Came and Sought Her* (Crossway 2013) | современная карта definite atonement, 21+ авторов | in copyright | CARD | NO | LINK_ONLY |
 | M04 | MODERN-COPYRIGHT | Leon Morris, *The Apostolic Preaching of the Cross* | ἱλασμός, λύτρον, καταλλαγή | in copyright | CARD | NO | LINK_ONLY |
@@ -116,7 +121,9 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | O02 | SCHOLARLY-OPEN | Archive.org Owen 1792 | https://archive.org/details/deathofdeathinde00owen | PD scan | after page |
 | O03 | SECONDARY | Banner of Truth Murray product | https://banneroftruth.org/us/store/theology-books/redemption-accomplished-and-applied/ | TOC verified 2026-10-07 via public page | NO |
 | O04 | SECONDARY | Gill corpus in this repo | `Джон Гилл/27_…`, `12_CAUSE…`, `23_SECTION_LVII…`, `48_SOTERIOLOGY…` | не дублировать | follow Gill quote state |
-| O05 | SECONDARY | Apostasy corpus | `apostasy/08_SOURCE_REGISTRY…` | Heb 6/10 не решать заново | follow apostasy |
+| O05 | SECONDARY | Apostasy corpus | `apostasy/08_SOURCE_REGISTRY…`; `apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md` | Heb 6/10 не решать заново; 2 Пет. 2:1 не решать системой искупления до экзегезы письма | follow apostasy |
+| O06 | SECONDARY | Highway Murray *The Atonement* | https://www.the-highway.com/atonement_murray.html | copyright; paraphrase in `11` | NO |
+| O07 | SCHOLARLY-OPEN | OPC Free Offer 1948 | https://opc.org/GA/free_offer.html | majority+minority; B5 | paraphrase of public church paper |
 
 ---
 

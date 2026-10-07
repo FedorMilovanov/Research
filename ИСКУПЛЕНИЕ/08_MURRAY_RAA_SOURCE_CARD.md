@@ -71,6 +71,7 @@ Index of Scripture; Index of Subjects.
 - Даже после появления легального экземпляра: `PRIVATE_STUDY_ONLY` до item-level publication decision. Fair-use короткие цитаты на русском сайте — отдельное юридическое решение, не «раз файл есть».
 - Union with Christ у него в Part II.9; возможное напряжение с «союз как центр» нужно будет разобрать по его же тексту, когда текст будет.
 - Extent-глава — одна; для наших HARD-текстов её недостаточно. Owen + экзегеза всё равно нужны.
+- Другие работы Мюррея **не** закрывают 1 Тим. 2:4 и 2 Пет. 2:1. См. [`11_MURRAY_OTHER_WORKS_HARD_TEXTS.md`](11_MURRAY_OTHER_WORKS_HARD_TEXTS.md).
 
 ## 5. Что можно делать до книги
 
@@ -97,3 +98,13 @@ Index of Scripture; Index of Subjects.
 
 Packer intro to Owen (M02) — читать *после* или *вместе* с Owen, не вместо Писания.  
 Gibson & Gibson 2013 (M03) — современный scholarly symposium по definite atonement; не первая волна цитирования.
+
+Другие работы того же Мюррея (не путать с RAA):
+
+| ID | Работа | Заметка |
+|---|---|---|
+| M21 | *The Atonement* (Highway HTML) | конденсат I.4; 2 Пет. 2:1 = purchase vocab |
+| M22 | CW 1:59–85 | тела нет |
+| M23 | CW 2:142–150 | тела нет |
+| M24 | OPC Free Offer 1948 | B5, не extent |
+| M25 | Romans NICNT | Рим. 5:18 по вторичке |

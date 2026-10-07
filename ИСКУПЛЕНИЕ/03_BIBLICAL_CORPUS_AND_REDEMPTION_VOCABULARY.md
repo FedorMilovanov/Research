@@ -20,7 +20,7 @@
 - **C — analogy / caution**
 - **HARD** — отдельное exegetical dossier до любой сильной формулы на сайте
 
-Это карта, не экзегеза. Экзегеза Wave 1–4.
+Это карта, не экзегеза. Первые рабочие карточки HARD-локусов объёма: [`12_HARD_TEXTS_EXTENT_CARDS.md`](12_HARD_TEXTS_EXTENT_CARDS.md). Вердикта нет.
 
 ---
 

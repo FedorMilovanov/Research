@@ -20,6 +20,9 @@
 9. [`08_MURRAY_RAA_SOURCE_CARD.md`](08_MURRAY_RAA_SOURCE_CARD.md) — карточка Джона Мюррея, *Redemption Accomplished and Applied*.
 10. [`09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md`](09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md) — акт приёмки `s3516.htm.zip`.
 11. [`10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md`](10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md) — карта аргумента по полному RU телу.
+12. [`11_MURRAY_OTHER_WORKS_HARD_TEXTS.md`](11_MURRAY_OTHER_WORKS_HARD_TEXTS.md) — Мюррей вне RAA: брошюра, OPC 1948, CW, NICNT.
+13. [`12_HARD_TEXTS_EXTENT_CARDS.md`](12_HARD_TEXTS_EXTENT_CARDS.md) — карточки 1 Ин. 2:2; 1 Тим. 2; 2 Пет. 2:1; Ин. 3:16; Евр. 2:9; 2 Кор. 5; Рим. 5:18; 8:32; 2 Пет. 3:9.
+14. [`13_DORT_II_CALVIN_OWEN_EXTENT.md`](13_DORT_II_CALVIN_OWEN_EXTENT.md) — Дорт II, Кальвин, Оуэн как historical control.
 
 Машинный локальный реестр: [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json).
 
@@ -65,4 +68,4 @@
 
 ## Следующий исследовательский ход
 
-Не писать сразу HTML. Закрыть словарь, библейский корпус, карту позиций и добычу ключевых книг. Первая читательская статья — введение «Что такое искупление», не «пять пунктов кальвинизма».
+Не писать HTML. HARD-карта Мюррея вне RAA и карточки локусов + Дорт II уже лежат в `11`–`13`. Дальше: ingest PD Owen *Death of Death* и Schaff Dort в Drive `01`/`04` с локаторами; page-check Calvin Institutes II.16–17 и III.24. Первая читательская статья по-прежнему «Что такое искупление», не TULIP.

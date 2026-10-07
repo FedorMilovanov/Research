@@ -64,8 +64,13 @@
 | Source registry | `1yRVrEg-BglE8442TvZ5iIvr3WGGmEe5TOXADRtlmE4c` |
 | Rights ledger | `1a1OFbfqzHEQfGS-WBPBRRfJR-a8hu6IMfRJwx9C5-UY` |
 | Murray card | `1k2iVUPhMXwtV9hrAaZwlOM0YPW-V4JPCf8q4eR43zsA` |
+| 11 Murray other works (md, папка 02) | `1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd` |
+| 12 HARD cards (md, папка 05) | `1wz5vC0-0EroWw7i5mAAVY4jtMtlWzpzf` |
+| 13 Dort/Calvin/Owen (md, папка 04) | `1KGtaHM7POs0aTZ8PgPPymhDxllvMB6qV` |
 
 Канон остаётся Git-файлами в `ИСКУПЛЕНИЕ/`. Docs — зеркало для чтения на Drive.
+
+После волны HARD (2026-10-07) канон Git: `11_MURRAY_OTHER_WORKS_HARD_TEXTS.md`, `12_HARD_TEXTS_EXTENT_CARDS.md`, `13_DORT_II_CALVIN_OWEN_EXTENT.md`. Зеркала на Drive — в `05` (ledgers), не вместо Git.
 
 ## 6. Что владелец может сделать дальше
 

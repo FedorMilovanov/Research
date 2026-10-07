@@ -85,11 +85,42 @@
     "startWith": "terms-and-nature-not-tulip",
     "layers": ["A-foundation", "B-extent-and-nuance", "C-application", "D-reserve"]
   },
+  "murrayOtherWorks": {
+    "bookletAtonement": {
+      "id": "M21",
+      "publicHtml": "https://www.the-highway.com/atonement_murray.html",
+      "readDate": "2026-10-07",
+      "extentSection": "V",
+      "closes1Tim2_4": false,
+      "closes2Pet2_1": false,
+      "2Pet2_1Status": "purchase-lexeme-only",
+      "rights": "copyright-paraphrase-only"
+    },
+    "opcFreeOffer1948": {
+      "id": "M24",
+      "url": "https://opc.org/GA/free_offer.html",
+      "axis": "offer-not-extent",
+      "loci": ["Ezek 18:23,32", "Ezek 33:11", "Matt 23:37", "Isa 45:22", "2 Pet 3:9"],
+      "notAConfession": true
+    },
+    "romansNICNT": {
+      "id": "M25",
+      "rom5_18": "secondary-p203-not-quote-safe"
+    }
+  },
+  "hardTextsCards": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+  "historicalControl": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+  "driveMirrors": {
+    "file11": "1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd",
+    "file12": "1wz5vC0-0EroWw7i5mAAVY4jtMtlWzpzf",
+    "file13": "1KGtaHM7POs0aTZ8PgPPymhDxllvMB6qV"
+  },
   "doNot": [
     "pirate-copyrighted-pdfs",
     "start-series-with-TULIP",
     "claim-limited-atonement-proved",
     "implement-product-html-this-wave",
-    "change-research-root-authority"
+    "change-research-root-authority",
+    "claim-murray-closed-1Tim2-or-2Pet2-1"
   ]
 }
