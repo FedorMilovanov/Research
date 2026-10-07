@@ -1,7 +1,7 @@
 # Кальвин Inst. III.24 и Дорт II — локаторы (PD / церковный текст)
 
 **Дата:** 2026-10-07  
-**Статус:** `RESEARCH LOCATOR / CALVIN II.12+II.16+III.24 ПО CCEL BEVERIDGE / DORT II LATIN SCHAFF 165 / NOT PRODUCT`  
+**Статус:** `RESEARCH LOCATOR / CALVIN II.12+II.16+II.17+III.24 ПО CCEL BEVERIDGE / DORT II LATIN SCHAFF 165 / NOT PRODUCT`  
 **Соседи:** [`13_…`](13_DORT_II_CALVIN_OWEN_EXTENT.md), [`12_…`](12_HARD_TEXTS_EXTENT_CARDS.md), [`14_…`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md)
 
 ---
@@ -51,7 +51,7 @@ Quote-safe для Product: **NO** до page в нашем Drive PDF *или* я�
 
 **II.16** (chunk **168**): «осуждённые, мёртвые и погибшие в себе, должны в Нём искать праведность, избавление, жизнь». Имя Иисус = Мф. 1:21 «спасёт **народ Свой**». Без удовлетворения нет уверенности: грешник под гневом, пока не освобождён от вины. §2: кажущееся противоречие (Бог враг / уже дал Сына в любви) — модус Писания приспособлен к нашей ёмкости. Христос «взял наказание на Себя», «Своей кровью искупил грехи, делавшие их ненавистными Богу», «этим умилостивлением удовлетворил и умилостивил Отца», «основал мир». Это **nature** penal/propitiatory, не трактат об объёме. Extent здесь только через «народ Свой».
 
-II.17 (священство / merit) — следующий чанк, ещё не вынут.
+**II.17** (chunks **176–177**): *Christ rightly and properly said to have merited grace and salvation for us.* Merit Христа **не** противостоит милости Отца: начало — *good pleasure* / ordination Бога; merit — accessory. «Князь жизни» (Деян. 3:15), не просто инструмент. §2: Ин. 3:16 — любовь Отца как first cause, вера во Христа как proximate; ἱλασμός (1 Ин. 4:10) снимает препятствие любви. §3–5: послушание до смерти = цена; кровь = expiation/satisfaction (Евр. 9; Гал. 3:13 curse; Ис. 53; 1 Пет. 2:24; Рим. 3:24–25; 1 Тим. 2:5–6 как *ransom*, не как extent-трактат). Совпадает с Мюрреем I (necessity/nature), не закрывает объём. Schoolmen §6 в этом вынимании не нужен.
 
 ---
 
@@ -110,7 +110,7 @@ II.3 **без** II.5–8 и без Rejection I/VI = мем. II.8 **без** II.5
 | Объект | Было | Стало |
 |---|---|---|
 | Calvin III.24.16–17 (1 Тим. 2:4, 2 Пет. 3:9) | LEAD / страница unchecked | **Beveridge CCEL chunk 330–331**; Drive PDF page still unchecked |
-| Calvin II.12, II.16 nature | unchecked | **Beveridge chunks 155, 168**. II.17 ещё не вынут |
+| Calvin II.12, II.16, II.17 nature/merit | unchecked | **Beveridge chunks 155, 168, 176–177** |
 | Calvin 1 Ин. 2:2 comm. | реконструкция | без изменения (wall) |
 | Dort II articles | карта по памяти | CRCNA reading copy chunks 3–4 **и** Schaff Latin chunk 165 |
 | Dort Rejection I–VII | «не нумеровать по памяти» | Latin I–VII в Schaff 165; CRCNA EN как reading copy |

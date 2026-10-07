@@ -144,7 +144,7 @@ Reader-facing названия — черновик. Slug — английски
 2. **Патристика** — выкуп/победа, recapitulatio, penal notes у Августина и др.; не читать всех Отцов как penal substitutionists и не читать их как противников замещения.
 3. **Ансельм** — *Cur Deus Homo*: satisfactio, не «коммерческий платёж сатане».
 4. **Аквинат** — meritum, satisfactio, *sufficientia/efficientia* уже в схоластике.
-5. **Реформация** — Calvin *Institutes* II.12 (chunk 155) / II.16 (chunk 168); II.17 ещё открыт; не решать заранее тождество Calvin = later particularism во всех формулировках. Это отдельный hard case.
+5. **Реформация** — Calvin *Institutes* II.12 (155) / II.16 (168) / II.17 (176–177); не решать заранее тождество Calvin = later particularism во всех формулировках. Это отдельный hard case.
 6. **Дорт 1618–19** — Второй раздел; sufficiency for all / efficacy for elect; отвержение ремонстрантских ошибок.
 7. **Amyraut / Saumur** — hypothetical universalism внутри реформатства.
 8. **Английские гипотетические универсалисты** — Davenant, Ussher, Calamy; не путать с Арминием.

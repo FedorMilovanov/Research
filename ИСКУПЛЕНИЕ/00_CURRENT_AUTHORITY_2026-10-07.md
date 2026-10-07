@@ -22,7 +22,7 @@
    - Westminster Confession — [`1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`](https://drive.google.com/file/d/1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4/view).
 6. Джон Мюррей, *Redemption Accomplished and Applied* (1955): владелец загрузил русский HTML-дамп `s3516.htm.zip`. Тело 1955 **полное** (предисловие + 15 глав). Переименован и лежит в Drive `02` как `PRIVATE_STUDY_ONLY`. `ARCHIVE_HOLD` на наличие текста снят. `RIGHTS_HOLD` + `PUBLICATION_HOLD` на цитаты остаются. Английский Banner/Eerdmans с страницами по-прежнему отсутствует. См. `09_…INTAKE…` и `10_…ARGUMENT_MAP…`.
 7. HARD-тексты объёма: карта Мюррея **вне** RAA (`11`), рабочие карточки локусов (`12`), Дорт II / Кальвин / Оуэн (`13`). Закрыто как research-map, не как вердикт. 1 Тим. 2:4 и 2 Пет. 2:1 у Мюррея по-прежнему не разобраны; брошюра *The Atonement* §V — конденсат I.4; OPC 1948 закрывает ось offer (2 Пет. 3:9), не extent.
-8. Локаторы PD 2026-10-07: Оуэн Book IV (`14`, CCEL TXT chunks 70–90; 1 Тим. 2:4 = 80–81); Кальвин Inst. II.12 / II.16 / III.24.15–17 (`15`, Beveridge 155 / 168 / 330–331); Дорт II.1–9 + Rejection I–VII (CRCNA reading copy **и** Schaff Latin chunk 165). Drive PDF Calvin 45 MB / Owen 42 MB — extraction cap 25 MB, страница Goold/Beveridge в *этих* файлах unchecked. 2 Пет. 2:1 у Оуэна — прямой чанк ещё открыт.
+8. Локаторы PD 2026-10-07: Оуэн Book IV (`14`, CCEL TXT chunks 70–90; 1 Тим. 2:4 = 80–81; **2 Пет. 2:1 = 87–88**); Кальвин Inst. II.12 / II.16 / II.17 / III.24.15–17 (`15`, Beveridge 155 / 168 / **176–177** / 330–331); Дорт II.1–9 + Rejection I–VII (CRCNA reading copy **и** Schaff Latin chunk 165). Drive PDF Calvin 45 MB / Owen 42 MB — extraction cap 25 MB, страница Goold/Beveridge в *этих* файлах unchecked.
 
 ## 2. Что не доказано
 
@@ -38,7 +38,7 @@
 |---|---|---|
 | `RIGHTS_HOLD` | Murray RAA; Packer 1959 intro; *From Heaven He Came and Sought Her*; Morris; Stott; Letham; Berkhof; Bavinck English; Grudem; Frame; Schreiner | авторское право XX–XXI вв. |
 | `ARCHIVE_HOLD` | Packer 1959; Gibson 2013; Morris; Stott; современные ST | полного объекта нет. Murray RU HTML — исключение: тело есть |
-| `LOCATOR_HOLD` | Owen Goold page в Drive *Works* PDF (42 MB); Calvin Drive PDF page (45 MB); Calvin II.17; Schaff Dort **English** column; WCF 8; Owen 2 Pet 2:1 TXT chunk | копии/TXT есть; страница издания не сверена. Содержание Book IV, Inst. II.12/16/III.24, Dort Latin — в `14`/`15` |
+| `LOCATOR_HOLD` | Owen Goold page в Drive *Works* PDF (42 MB); Calvin Drive PDF page (45 MB); Schaff Dort **English** column; WCF 8 | копии/TXT есть; страница издания не сверена. Содержание Book IV (включая 2 Пет. 2:1), Inst. II.12/16/17/III.24, Dort Latin — в `14`/`15` |
 | `PUBLICATION_HOLD` | вся серия | research ≠ publication |
 | `EVIDENCE_HOLD` | любой тезис об «ограниченном искуплении» как о единственном библейском выводе | экзегеза и honest opposing case ещё не закрыты |
 
@@ -54,9 +54,9 @@
 
 ## 5. Следующий допустимый lane
 
-1. Прямой CCEL TXT чанк Оуэна на 2 Пет. 2:1 (голова 3). Calvin II.17. Schaff EN колонка Дорта, если понадобится сверх латыни chunk 165.
-2. Drive PDF >25 MB не извлекать целиком. Banner/Eerdmans RAA — по желанию владельца в `02`. Packer 1959 не пиратить.
-3. Не начинать Product HTML. `EVIDENCE_HOLD` остаётся.
+1. Schaff EN колонка Дорта, если понадобится сверх латыни chunk 165. WCF 8 page в Drive PDF. Не резать Calvin/Owen PDF >25 MB целиком.
+2. Banner/Eerdmans RAA — по желанию владельца в `02`. Packer 1959 не пиратить.
+3. Не начинать Product HTML. `EVIDENCE_HOLD` остаётся. Первая читательская статья — «Что такое искупление», не TULIP. Не объявлять 1 Тим. 2:4 / 2 Пет. 2:1 закрытыми *Мюрреем*.
 
 ## 6. Связь с root
 

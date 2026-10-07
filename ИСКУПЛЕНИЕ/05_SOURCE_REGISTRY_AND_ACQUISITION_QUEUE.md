@@ -59,10 +59,10 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 
 | ID | Tier | Source | URL / Drive | Supports | Status | Quote-safe | Custody |
 |---|---|---|---|---|---|---|---|
-| R01 | P-REFORMED | Calvin, *Institutes* II.12, II.16; III.24 | Drive 45 MB extract fail; Beveridge TXT: II.12 chunk 155; II.16 chunk 168; III.24.15–17 chunks 330–331 | природа/необходимость; 1 Тим. 2:4 / 2 Пет. 3:9 | LOCATED in CCEL TXT; Drive page unchecked; II.17 open | NO for Product | copy + CCEL TXT |
+| R01 | P-REFORMED | Calvin, *Institutes* II.12, II.16, II.17; III.24 | Drive 45 MB extract fail; Beveridge TXT: II.12 = 155; II.16 = 168; II.17 = 176–177; III.24.15–17 = 330–331 | природа/необходимость/merit; 1 Тим. 2:4 / 2 Пет. 3:9 | LOCATED in CCEL TXT; Drive page unchecked | NO for Product | copy + CCEL TXT |
 | R02 | P-REFORMED | Calvin commentaries: Isa 53, John 3, 1 John 2, 1 Tim 2, Heb 2, 2 Pet | CCEL Catholic Epistles reader 2026-10-07 login-wall (`calcom45.iv.iii.html` пуст — не ретраить). 1 Ин. 2:2 реконструирован по открытым разборам в `13`. 2 Пет. 3:9 — цитата Кальвина внутри OPC 1948 | extent texts | LEAD / wall | NO | LINK_ONLY |
 | R03 | P-REFORMED | Owen, *Works* (Goold) | Drive `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` | Death of Death обычно vol. 10 | ACQUIRED_COPY / volume-page unchecked | NO | copy |
-| R04 | P-REFORMED | Owen, *Death of Death* standalone | CCEL TXT https://ccel.org/ccel/owen/deathofdeath/cache/deathofdeath.txt ; PDF/HTML те же URL; карта `14` | extent polemic | Book IV chunks 70–90 LOCATED (1 Tim 2:4 = 80–81; 2 Pet 3:9 / Heb 2:9 = 82; 2 Cor 5:14 = 83; Rom 5:18 = 84). 2 Pet 2:1 still open | NO until Goold page | LINK_ONLY + research map `14` |
+| R04 | P-REFORMED | Owen, *Death of Death* standalone | CCEL TXT https://ccel.org/ccel/owen/deathofdeath/cache/deathofdeath.txt ; PDF/HTML те же URL; карта `14` | extent polemic | Book IV chunks 70–90 LOCATED (1 Tim 2:4 = 80–81; 2 Pet 2:1 = 87–88; Heb 10:29 = 88–89). Goold page open | NO until Goold page | LINK_ONLY + research map `14` |
 | R05 | P-REFORMED | Goodwin, *Works* | Drive `1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M` | Christ / redemption applied | ACQUIRED_COPY / locator unchecked | NO | copy |
 | R06 | P-REFORMED | Turretin, *Institutio* (Latin PD; English P&R copyright) | Latin open; EN = RIGHTS_HOLD | elenctic loci on atonement | LEAD | Latin maybe; EN no | LINK_ONLY |
 | R07 | P-REFORMED | Witsius, *Economy of the Covenants* | PD English 19c | covenant / suretyship | LEAD | NO | LINK_ONLY |
