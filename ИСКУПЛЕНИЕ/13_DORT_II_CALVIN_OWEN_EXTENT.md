@@ -23,7 +23,7 @@ CCEL reader (Schaff Creeds III, Calvin Catholic Epistles) 2026-10-07 часто 
 
 **Английское PD-издание выбрано (2026-10-07):** Scott 1841 (`articlesofsynodo1841syno`), Head II = **с. 282–286**, постранично в [`15` §B.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md). Schaff/CCEL даёт Дорт **только по-латыни** — проверено по чанкам 163–165. Quote-safe Product **всё равно NO**: OCR-выдачи без item-level сверки, серия под `PUBLICATION_HOLD`.
 
-**Второй английский PD-источник найден там же:** на Drive `01` лежит W0-пак `10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md` (id `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo`) с **полным английским текстом Head II artt. I–IX** (перевод 1840 г., Wikisource-транскрипция), но **без Rejection of Errors**; в Git файл не перенесён. Разбор и рабочее правило — [`15` §B.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+**Второй английский PD-источник — теперь в Git:** [`16`](16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md) (перевод 1840 г., Wikisource-транскрипция), перенесён из W0-пака на Drive `01` (`10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md`, id `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo`). Даёт **полный английский текст Head II artt. I–IX**, но **без Rejection of Errors**. Разбор, рабочее правило и сличение двух переводов по латыни — [`15` §B.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md) и [`15` §B.6](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
 
 ### 1.1 Что синод делает (порядок важен)
 
@@ -187,7 +187,7 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 Закрыто:
 
 - Дорт II как **карта статей** (1–9) и Rejection I–VII (CRCNA reading copy, chunks 3–4) **плюс** Schaff Latin chunk 165 **плюс** Scott 1841 EN pp. 282–286. Запрет читать II.3 без II.5–8. [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
-- **Английское PD-издание Дорта выбрано** (Scott 1841). До этого единственным quote-safe текстом Канонов была латынь; теперь есть EN с постраничным локатором, но `accessState = partial` (OCR-выдачи search-inside, не транскрипция страниц в Git/Drive).
+- **Английское PD-издание Дорта выбрано и сличено** (Scott 1841). Есть EN с постраничным локатором (**282–292**), полный текст артикулов и Rejectio — [`15` §B.5](15_CALVIN_III24_AND_DORT_II_LOCATORS.md); `accessState = transcribed-from-OCR + collated` ([`15` §B.6](15_CALVIN_III24_AND_DORT_II_LOCATORS.md)): вторая OCR-выдача того же скана, латинский оригинал, второй английский перевод (1840 г., `16`). Известное следствие сличения: **Rejectio IV у Скотта сокращена**, полный текст — по латыни.
 - WCF 8 как **текст с локатором**: Schaff/CCEL chunks 182–183, английский и латинский, постатейно (8.1 / 8.5 / 8.6 / 8.8).
 - **Rejectio I–VII по-английски с страницами**: Scott 1841, с. 287–292 (I — 287, II — 288, III — 288–289, IV — 289, V — 290, VI — 291–292, VII — 292), полный текст в [`15` §B.5](15_CALVIN_III24_AND_DORT_II_LOCATORS.md). До этой волны по-английски было только начало Rejectio, содержание держалось на латыни Schaff 165. Rejectio VI (равное намерение / impetration–application) и VII (карикатура «избранным не нужно») теперь доступны по-английски — это и есть обе границы §1.2–1.3.
 - Кальвин 1 Ин. 2:2 как *известная* позиция комментария, с честным «не первоисточник в руках».

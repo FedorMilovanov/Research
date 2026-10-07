@@ -31,7 +31,7 @@
 
 | ID | Работа | Год / место | Права | Статус доступа 2026-10-07 | Зачем HARD |
 |---|---|---|---|---|---|
-| M01 | *Redemption Accomplished and Applied* | Eerdmans 1955 | copyright | RU HTML private study; EN страниц нет | I.4 — главный extent |
+| M01 | *Redemption Accomplished and Applied* | Eerdmans 1955 | copyright | RU HTML private study; EN страницы — **вторичная привязка** (I.4 = с. 57–74, Eerdmans 1955/2015), точные страницы под локусы — нет; см. [`08` §7](08_MURRAY_RAA_SOURCE_CARD.md) | I.4 — главный extent |
 | M21 | *The Atonement* (брошюра / ст. энциклопедии) | P&R 1976; позже *Encyclopedia of Christianity*; зеркало Highway | copyright | публичная HTML-страница прочитана целиком (9 чанков) | §V Extent = конденсат I.4 + списки universal terms |
 | M22 | «The Atonement and the Free Offer of the Gospel» | *Collected Writings* 1:59–85 | copyright Banner | полного текста нет; премиум-саммари Books at a Glance обрывается | отношение definite atonement ↔ offer |
 | M23 | «The Atonement» | *Collected Writings* 2:142–150 | copyright | полного текста нет | короткий очерк природы |
@@ -207,7 +207,7 @@ Cripplegate (навигация) по Рим. 8:31–39: «нас всех» = �
 
 - экзегеза локусов (→ `12`);
 - Дорт II, Кальвин 1 Ин. 2:2 / 1 Тим. 2:4, Оуэн Book IV (→ `13`);
-- quote-safe английские страницы;
+- quote-safe английские страницы (частично снято: **вторичная** постраничная привязка RAA есть — I.4 = с. 57–74 по Eerdmans 1955/2015; точные страницы под отдельные локусы внутри главы и пагинация Banner reset — нет, см. [`08` §7.1](08_MURRAY_RAA_SOURCE_CARD.md));
 - Product HTML;
 - вердикт P1 vs P5.
 

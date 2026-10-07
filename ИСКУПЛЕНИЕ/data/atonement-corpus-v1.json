@@ -72,7 +72,30 @@
     "bodyComplete1955": true,
     "indexesPresent": false,
     "translatorNamed": false,
-    "englishPageLocators": false,
+    "englishPageLocators": {
+    "state": "secondary-B1",
+    "editionPaged": "Eerdmans 1955 / 2015 reprint, 192 pp. (Banner reset pagination NOT verified)",
+    "partI": "1-78",
+    "i1Necessity": "5-13",
+    "i2Nature": "14-20 (obedience as the inclusive category; 'pure passivity' at 16); four categories 20-48 (redemption 43-44; summary 40)",
+    "i3Perfection": "49-56 (historical objectivity 50; finality 51; uniqueness 53; intrinsic efficacy 55)",
+    "i4Extent": "57-74",
+    "i5Conclusion": "75-78",
+    "partIIchapters1to5": "81-138",
+    "ii1Order": "83-85 (Jn 3:3 at 83; 1 Jn 3:9 at 83; Rom 8:28,30 at 85; ordo list at 87; 'repentance is the twin sister of faith' at 89)",
+    "ii2EffectualCalling": "91-98 (sovereign act of God alone at 97; operative grace at 100)",
+    "ii3Regeneration": "100-109 (102; 103-104; fruits inseparable 108-109)",
+    "ii4FaithAndRepentance": "111-122 (definition 112; knowledge 115; assent 116; trust 117; 119)",
+    "ii5Justification": "123-138 ('faith alone, but not by a faith that is alone' 137-138)",
+    "discrepancy": "the 1962 Beacon Lights review gives Part II ch. 1 as pp. 79-87 while the DTS guide gives 81-138 for ch. 1-5 and 83-85 for the Order itself; the offset (part-title/flyleaf pages) is unresolved",
+    "sources": [
+      "Dead Theologians' Society teacher guides for RAA (Part I: 01-Redemption-Accomplished-and-Applied-t-39.pdf; Part II: 03-Redemption-Accomplished-and-Applied-t-20.pdf), edition labelled '1955, 2015'",
+      "Beacon Lights vol. 22 no. 3 (April 1962) review of the Eerdmans 192 pp. edition, which gives Part II ch. 1 = pp. 79-87"
+    ],
+    "notResolved": "pages for the individual hard texts inside I.4 (1 Tim 2:4-6; 2 Pet 2:1; 1 John 2:2; Rom 5:18; John 3:16; Heb 2:9); pagination of the Banner of Truth reset"
+  },
+  "internetArchiveItem": "redemptionaccomp00murr",
+  "internetArchiveSearchInside": "BLOCKED 2026-10-07: the item exists (Eerdmans 1955 scan, 200 pp., sanfrancisco, noindex:true, all text derivatives private:true) but the search-inside endpoint returns 'Item not available. The item is not available due to issues with the item's content.' Do not retry; api.archivelab.org does not answer for this identifier.",
     "custody": "PRIVATE_STUDY_ONLY",
     "rightsHold": true,
     "publicationHold": true,
@@ -170,11 +193,24 @@
       },
       "transcription": {
         "where": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md §B.5",
+        "collation": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md §B.6",
         "covers": "Head II Articles I-IX and Rejection of Errors I-VII, English, with page anchors",
         "source": "articlesofsynodo1841syno_djvu.txt chunks 52-54 (OCR) + table of contents (chunk 0)",
         "method": "manual transfer from OCR output; OCR artifacts preserved verbatim",
-        "accessState": "transcribed-from-OCR",
-        "notDone": "no collation with the page images; Scott's own footnotes omitted except bracketed Scripture references"
+        "accessState": "transcribed-from-OCR + collated",
+        "collatedAgainst": [
+          "articlesofsynodo1841syno_djvu.xml chunks 43-45: second OCR rendering of the same scan, printed pages 280-297; zero divergence from the transfer except three recorded corrections (perseveringiy->perseveringly, garbled 'Man' in art. IV, letter 'S.' as the article-8 numeral)",
+          "Schaff/CCEL creeds3.txt chunk 165: Latin original of Head II artt. I-IX + Rejectio I-VII; each preserved OCR artifact resolved against the Latin",
+          "English translation of 1840 (Reformed Protestant Dutch Church): independent second English witness for Articles I-IX, now in Git as ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md"
+        ],
+        "collationFindings": [
+          "Rejectio IV as printed by Scott is ABRIDGED: the Latin closing clause 'Et cum impio Socino, novam et peregrinam hominis coram Deo justificationem, contra totius Ecclesiae consensum, inducunt' is absent; full text only in Latin",
+          "Rejectio III: the Schaff/CCEL Latin reads 'nullis certo meruisse', an artifact of that edition; Scott's English and the sense require 'non certo meruisse' - here the English controls the Latin",
+          "Rejectio I: Latin 'in Dei Patris sapientiam' vs Scott 'the wisdom of God' - translational difference, not doctrinal",
+          "Article III: Latin 'unica'; the 1840 translation has 'the only and most perfect sacrifice', Scott has 'a single and most perfect sacrifice' - quote 'only', not 'single'",
+          "Article VIII, the key line for 13 §1.2: Latin, Scott 1841 and the 1840 translation agree that the efficacy is 'in all the elect ... to them alone'"
+        ],
+        "notDone": "no collation with the page images (unreachable from the sandbox: only text renderings of archive.org are reachable and no browser tool exists in this session); Scott's own footnotes omitted except bracketed Scripture references"
       }
     },
       "leafToPrintedPage": {
@@ -186,12 +222,12 @@
         "311": 305
       },
       "verification": "archive.org search-inside JSON (OCR text + page boxes) + articlesofsynodo1841syno_page_numbers.json (confidence 96)",
-      "accessState": "transcribed-from-OCR (full English text of Arts I-IX and Rejection I-VII is in Git at 15 §B.5; not collated with the page images)",
+      "accessState": "transcribed-from-OCR + collated (full English text of Arts I-IX and Rejection I-VII is in Git at 15 §B.5; collated at article level against a second OCR rendering, the Latin original and the 1840 English translation - 15 §B.6; NOT collated with the page images)",
       "openLocators": [
-        "collation of the 15 §B.5 transcription with the page images (the OCR was transferred by hand, artifacts preserved)",
+        "collation of the 15 §B.5 transcription with the page images (text-to-text collation is done; the raster itself is unreachable from the sandbox)",
         "printed page of the Schaff volume for Dort (English axis closed by Scott 1841, Latin axis by chunk 165)"
       ],
-      "publicationState": "PUBLICATION_HOLD — OCR not yet collated with the page image; item-level decision pending"
+      "publicationState": "PUBLICATION_HOLD — text collation done, so quoting is permitted with the §B.6 caveats (Rejectio IV abridged in Scott; 'unica' = only); the series-wide publication gate is still closed"
     },
     "dortEnglishAlternateW0Pack": {
       "driveId": "1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo",
@@ -203,22 +239,26 @@
       "locator": "chapter + article number; printed page not verified",
       "rights": "public-domain (canons text + 19th c. translation)",
       "fileStatus": "PRIMARY-TEXT-VERIFIED / QUOTE-SAFE WITHIN THIS FILE ONLY; publication HOLD",
-      "inGit": false,
-      "openQuestion": "Git is the canon per 07, but this pack lives only on Drive; transfer to ИСКУПЛЕНИЕ/ awaits the owner's decision.",
-      "alsoClaims": "a read fragment of Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — not re-read byte-wise in this wave"
+      "inGit": true,
+      "gitPath": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+      "transfer": "2026-10-07 second wave: the primary-text blocks (Dort Head II Articles I-IX, translation of 1840; Calvin on 1 John 2:1-2, CCEL 19th c.) were read from the Drive file byte-wise and transferred into the Git canon; the W0 verification scaffolding was not transferred, it belongs to another corpus",
+      "alsoTransferred": "Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — read and transferred in the same wave"
     },
     "driveCalvinPdfExtractFailedBytes": 45351929,
     "driveOwenPdfExtractFailedBytes": 42084171
   },
   "driveMirrors": {
-    "file00": "1C0cPyukrgA9xykYXj2D9tLq5zOqm9sU8AOjhMsxK0cw",
-    "file05": "1Kd_IB7OVxjaX3zKpFbwDre_XaKA0ACprEHz9Oe77Ksw",
-    "file07": "1QYUCagVyh6KIXEejVeYSg_m0Y6-vYOv-AJSN7H68Hqo",
-    "file11": "1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd",
+    "file00": "1g14vi4BJGamKO_pGyOnOf1VEwVuqlIjgK-Zp2H9lLDU",
+    "file00readme": "1mLLQ_XYyi7HnJ1CcRU7P43hyIrIKToFSdGj0mun3j8g",
+    "file05": "1V7ujL3oqtbIwQfZp_5xxpBfY4rohg6a6cbulQl-zDIY",
+    "file07": "11F4fNThCAC1nAJpgFrYBUWlCaz8b69PmwDFBC3vgDho",
+    "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
+    "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
     "file12": "1PRePtwasQqHSX0C1j5hwD4WM-lG3vflz",
-    "file13": "1pKGCNBahIt9ITsHGo5jpeDY2nZQuQWfk",
+    "file13": "1edopfq2CxCIduWIdlmaF0fNawNVE8q0c",
     "file14": "1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw",
-    "file15": "1qLSeqSU8KE-8NXfO6p3Lwe0Y5vdCib2X",
+    "file15": "1yx_gigFWN1JQA7N8am2E-VrlIPlOUlvE",
+    "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path; superseded IDs are trashed. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json."
   },
   "doNot": [
@@ -230,6 +270,11 @@
     "claim-murray-closed-1Tim2-or-2Pet2-1",
     "search-schaff-dort-english-column-again",
     "retry-drive-wcf-pdf-text-extraction",
-    "quote-scott-1841-or-wcf-8-in-product-before-item-level-collation"
+    "quote-scott-1841-rejectio-iv-without-noting-the-abridgement",
+    "quote-dort-ii-3-as-'single'-instead-of-'only'-from-the-latin-unica",
+    "quote-dort-rejectio-ignoring-that-the-latin-is-the-full-text-and-scott-is-a-translation",
+    "fetch-third-party-full-text-pdfs-of-murray-raa",
+    "retry-internet-archive-search-inside-for-redemptionaccomp00murr",
+    "cite-murray-raa-page-numbers-as-if-verified-in-the-book-itself"
   ]
 }

@@ -104,7 +104,7 @@ II.3 **без** II.5–8 и без Rejection I/VI = мем. II.8 **без** II.5
 
 Брошюра §V: общие блага репробатам от креста ≠ «искупление как искупление за репробатов»; отказывается говорить «умер за всех». Дорт II.3 говорит о **ценности** для всего мира, не о substitution каждого. Мюррей ближе к II.8, чем к популярному слогану II.3. Не выдавать его за «дортскую формулу слово в слово».
 
-### B.4 Английское PD-издание Дорта выбрано: Scott 1841 (pp. 282–286)
+### B.4 Английское PD-издание Дорта выбрано: Scott 1841 (pp. 282–292)
 
 Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). Английское PD-издание найдено и выбрано 2026-10-07:
 
@@ -126,30 +126,32 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 
 Честные границы:
 
-1. В руках — **OCR-выдача**: сначала фрагменты `search-inside`, затем полный текст артикулов I–IX **и** Rejectio I–VII перенесён в §B.5. `accessState = transcribed-from-OCR` — это не транскрипция с изображения страницы и не форензическая копия (не `acquired-copy`).
-2. Страницы **Rejectio I–VII по-английски расписаны** (I — 287, II — 288, III — 288–289, IV — 289, V — 290, VI — 291–292, VII — 292), текст — §B.5. Первые точечные запросы не матчались из-за формулировки Скотта («destined his own Son», «usurp the distinction of impetration and application»), поэтому текст взят напрямую из `articlesofsynodo1841syno_djvu.txt` (чанки 52–54).
-3. Печатная страница выведена из `page_numbers.json` (confidence 96, по листу) — сильная машинная привязка, но не сверка глазами по изображению страницы.
-4. До product-цитаты по-английски нужна item-level сверка OCR с изображением страницы. `PUBLICATION_HOLD` на серии не снят. CRCNA по-прежнему не источник для цитат.
+1. В руках — **OCR-выдача**: сначала фрагменты `search-inside`, затем полный текст артикулов I–IX **и** Rejectio I–VII перенесён в §B.5 из `articlesofsynodo1841syno_djvu.txt` (чанки 52–54) и сличён со второй выдачей `…_djvu.xml` (чанки 43–45), с латынью (Schaff 165) и с переводом 1840 г. `accessState = transcribed-from-OCR + collated` (см. §B.6). Это не транскрипция с изображения страницы и не форензическая копия (не `acquired-copy`).
+2. Страницы **Rejectio I–VII по-английски расписаны** (I — 287, II — 288, III — 288–289, IV — 289, V — 290, VI — 291–292, VII — 292), текст — §B.5; колонтитулы подтверждены на двух выдачах. Первые точечные запросы не матчались из-за формулировки Скотта («destined his own Son», «usurp the distinction of impetration and application»), поэтому текст взят напрямую из полной OCR-выдачи.
+3. Печатная страница выведена из `page_numbers.json` (confidence 96, по листу) **и** подтверждена бегущими колонтитулами в обеих выдачах — сильная машинная привязка, но не сверка глазами по изображению страницы.
+4. Item-level сличение выполнено на уровне **текста** (§B.6): каждый артефакт прочтён по латыни, артикулы I–IX подтверждены двумя независимыми английскими переводами, Rejectio I–VII — латынью. Сверка с изображением страницы из этой среды невозможна и остаётся открытым локатором. `PUBLICATION_HOLD` на серии не снят. CRCNA по-прежнему не источник для цитат.
 
 #### Три английских PD-источника Head II — что каждый даёт
 
 | Источник | Покрытие | Что в руках | Локатор | Права / статус |
 |---|---|---|---|---|
 | **Schaff/CCEL chunk 165** | Head II artt. I–IX **+ Rejectio I–VII** | полный текст | чанк 165 | PD, **латынь** |
-| **W0-пак** — Drive `01`, `10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md`, id `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo` | Head II artt. I–IX, **без Rejection** («это издание их не содержит» — карта файла) | **полный английский текст артикулов I–IX** (проверено по байтам файла 2026-10-07) | глава + номер статьи; бумажная страница не проверялась | PD: текст канонов + перевод 1840 г. (Reformed Protestant Dutch Church; Wikisource-транскрипция). Статус файла: `PRIMARY-TEXT-VERIFIED / QUOTE-SAFE WITHIN THIS FILE ONLY`, publication `HOLD` |
-| **Scott 1841** — archive.org `articlesofsynodo1841syno` | Head II artt. I–IX **+ Rejectio** (начало с. 286; III/IV Rejectio — с. 305) | OCR-выдачи по artt. 1, 3, 5, 8 и по началу Rejectio | **печатная страница 282–286** | PD (1841) |
+| **Перевод 1840 г.** — Git [`16`](16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md), перенесён из Drive `01` (`10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md`, id `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo`) | Head II artt. I–IX, **без Rejection** («это издание их не содержит» — карта файла) | **полный английский текст артикулов I–IX** (прочитан по байтам файла 2026-10-07, перенесён в Git во второй волне) | глава + номер статьи; бумажная страница не проверялась | PD: текст канонов + перевод 1840 г. (Reformed Protestant Dutch Church; Wikisource-транскрипция). Статус файла: `PRIMARY-TEXT-VERIFIED / QUOTE-SAFE WITHIN THIS FILE ONLY`, publication `HOLD` |
+| **Scott 1841** — archive.org `articlesofsynodo1841syno` | Head II artt. I–IX **+ Rejectio I–VII** (начало с. 286; III/IV Rejectio — с. 305) | полный английский текст артикулов и Rejectio — §B.5; сличение — §B.6 | **печатная страница 282–292** | PD (1841) |
 
-Рабочее правило этой волны:
+Рабочее правило (обновлено во второй волне):
 
-- **текст артикула по-английски** брать из W0-пака (полный текст I–IX) с перекрёстной сверкой по латыни Schaff 165;
-- **страницу** давать по Scott 1841;
-- **Rejection I–VII** — только Schaff 165 (латынь), пока не расшифрованы английские с. 286–304.
+- **текст артикула по-английски** брать из `16` (перевод 1840 г., полный текст I–IX) с перекрёстной сверкой по латыни Schaff 165 и по Скотту; для арт. III писать «only» (лат. *unica*), а не Скоттово «single»;
+- **страницу** давать по Scott 1841 (`16` страниц не даёт);
+- **Rejection I–VII** — Scott 1841 §B.5 (английский) с контролем по латыни Schaff 165; **Rejectio IV у Скотта сокращена** (нет заключительной анти-социнианской клаузулы), полный текст — по латыни.
 
 ### B.5 Scott 1841 — полный английский текст Head II: артикулы I–IX и Rejectio I–VII, по страницам
 
 **Источник текста:** OCR-выдача `articlesofsynodo1841syno_djvu.txt` (чанки 52–54); страницы — по бегущим колонтитулам скана и по оглавлению издания (чанк 0: «Chapter II. … in nine articles … 282»; «Rejection of Errors on the Second Chapter, in seven articles … 286»; «Chapters III and IV … 292»).
 
-**Честный статус переноса:** текст набран с OCR-выдачи вручную, артефакты распознавания **сохранены как в выдаче** (`hitpself`, `verv`, `prx aliis`, `inditferenlly`, `etltictually`, `sarta fecta`, `insutficiency`, `condemniiation`). Это **не** форензически точная копия и **не** сверка с изображением страницы. Сноски Скотта не включены, кроме библейских ссылок в скобках. Перед product-цитатой — item-level сверка (см. §B.4 п. 4).
+**Честный статус переноса:** текст набран с OCR-выдачи вручную, артефакты распознавания **сохранены как в выдаче** (`hitpself`, `verv`, `prx aliis`, `inditferenlly`, `etltictually`, `sarta fecta`, `insutficiency`, `condemniiation`). Сноски Скотта не включены, кроме библейских ссылок в скобках.
+
+**Статус после сличения (2026-10-07, вторая волна): `TRANSCRIBED-OCR + COLLATED`.** Текст §B.5 сличён построчно со второй выдачей того же скана (`…_djvu.xml`, чанки 43–45), с латинским оригиналом (Schaff/CCEL `creeds3.txt` чанк 165) и — для артикулов I–IX — с переводом 1840 г. (`16`). Подробности и три исправленных артефакта — **§B.6**. Не снято: сверка с изображением страницы (из этой среды недостижимо).
 
 #### Глава II, артикулы I–IX (с. 282–286)
 
@@ -204,7 +206,61 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 - **Rejectio VII** отсекает противоположную карикатуру («избранным смерть не нужна»). Синод режет в обе стороны — это и есть граница дозволенной формулировки.
 - Английская страница теперь есть у каждой из семи Rejectio: **I — 287, II — 288, III — 288–289, IV — 289, V — 290, VI — 291–292, VII — 292**.
 
-Ограничение канона: W0-пак лежит **только на Drive** (папка `01`), в Git не перенесён, хотя каноном по `07` объявлены Git-файлы `ИСКУПЛЕНИЕ/`. В этой волне перенос не производился: файл PD и небольшой (~16 KB), но это решение владельца. До переноса ссылаться на него как на Drive-объект. В том же файле заявлен прочитанный фрагмент комментария Кальвина на 1 Ин. 2:1–2 (CCEL, перевод XIX в.) — сами цитаты в этой волне **не** перечитывались, см. §4 файла.
+### B.6 Сличение §B.5: вторая OCR-выдача того же скана, латынь Шаффа, перевод 1840 г.
+
+**Что сличалось (2026-10-07, вторая волна).** (1) Вторая независимая выдача того же скана — `articlesofsynodo1841syno_djvu.xml`, чанки 43–45 (с. 280–297). (2) Латинский оригинал — Schaff/CCEL `creeds3.txt`, чанк 165: *Secundum Doctrinæ Caput, de Morte Christi* арт. I–IX и *Rejectio Errorum* I–VII. (3) Для артикулов I–IX — английский перевод 1840 г. (Reformed Protestant Dutch Church), перенесённый в Git файлом `16`.
+
+**1. Страницы подтверждены на двух выдачах** (колонтитулы совпадают: `282/284/286/288/290/292 ARTICLES OF THE` и `SYNOD OF DORT. 283/287/289/291`):
+
+| Объект | С. | Объект | С. |
+|---|---|---|---|
+| Chapter II, заголовок + арт. 1 | 282 | Rejectio I | 287 |
+| Арт. 2–3 | 283 | Rejectio II | 288 |
+| Арт. 4–5 | 284 | Rejectio III | 288–289 |
+| Арт. 6–7 | 285 | Rejectio IV | 289 |
+| Арт. 8 | 285 | Rejectio V | 290 |
+| Арт. 9 + аббревиатура Тилена/Хейлина + заголовок Rejectio | 286 | Rejectio VI | 291 (сноска переходит на 292) |
+| — | — | Rejectio VII + Chapters III–IV | 292 |
+
+**2. Расхождение переноса со второй выдачей — ноль**, кроме трёх артефактов, которые я исправил молча при переносе и теперь фиксирую:
+
+| В выдаче | Написано в §B.5 | Основание |
+|---|---|---|
+| `perseveringiy` (арт. 9) | *perseveringly* | лат. *perseveranter colat* |
+| `]\Ian` (арт. 4) | *holy Man* | лат. *verus et perfecte sanctus homo* |
+| `S.` как номер артикула 8 | *8.* | лат. *VIII*, порядок артикулов |
+
+Снятые переносы строк (`indiscriminate-ly` → *indiscriminately*) не влияют на текст.
+
+**3. Артефакты OCR, сохранённые в §B.5, и их прочтение по латыни:**
+
+| Артефакт в §B.5 | Чтение | Латинское подтверждение (чанк 165) |
+|---|---|---|
+| `hitpself` | himself | *Cum posuerit se sacrificium pro reatu* (Is. liii. 10, в Rejectio I) |
+| `verv deed` | very deed | *reipsa sanciret* (Rejectio II) |
+| `prx aliis` | præ aliis | *præ aliis* (Rejectio VI, дважды) |
+| `inditferenlly` | indifferently | *gratiam indifferenter oblatam* (VI) |
+| `etltictually` | effectually | *efficaciter in illis operante* (VI) |
+| `sarta fecta` | sarta tecta | *sarta tecta* (Rejectio I) |
+| `insutficiency` | insufficiency | *insufficientia* (арт. VI) |
+| `condemniiation` | condemnation | лат. *interitu*; английское слово выбора Скотта — condemnation |
+| `applyhig` | applying | *se ad gratiam … applicante* (VI) |
+| `otTered` | offered | *oblatam* (VI) |
+
+**4. Содержательные находки сличения (важнее артефактов):**
+
+1. **Rejectio IV у Скотта сокращена.** Латинский текст заканчивается: *«Et cum impio Socino, novam et peregrinam hominis coram Deo justificationem, contra totius Ecclesiæ consensum, inducunt»* — у Скотта этой фразы **нет** (английский текст обрывается на Rom. iii. 24, 25). Цитировать Rejectio IV по Скотту без пометки «сокращённый перевод» нельзя; полная формула — только по латыни.
+2. **Rejectio III: английский контролирует латынь, а не наоборот.** Выдача Шаффа даёт *«Christum per suam satisfactionem, nullis certo meruisse»* — `nullis` здесь артефакт издания/распознавания: Скотт читает *«did not with certainty (certo) merit»*, т.е. *non certo meruisse*. Для этой статьи английский Скотта — контроль над латинской выдачей.
+3. **Rejectio I: расхождение перевода.** Лат. *in Dei Patris sapientiam* («премудрость Бога Отца»), у Скотта — *the wisdom of God*. Различие перевода, не доктрины; при точной цитате брать латынь или 1840.
+4. **Арт. III: `unica`.** Лат. *unica et perfectissima … victima*; Скотт — *a single and most perfect sacrifice*, перевод 1840 — *the only and most perfect sacrifice*. Для product-цитаты брать «only» (1840) либо давать латинское *unica*: «single» по-английски читается двусмысленно.
+5. **Ключевая строка `13` §1.2 подтверждена трёхкратно.** Арт. VIII: лат. *in omnibus electis, ad eos solos fide justificante donandos* — Скотт *«should exert itself in all the elect, in order to give them alone justifying faith»*, 1840 *«should extend to all the elect, for bestowing upon them alone the gift of justifying faith»*. Два независимых перевода и оригинал согласны.
+6. **Rejectio VI подтверждена пословно.** Лат. *Deum, quantum ad se attinet, omnibus hominibus ex æquo ea beneficia voluisse conferre, quæ per mortem Christi acquiruntur* — Скотт *«that God, as far as pertained to him, had willed to confer equally upon all men the benefits which were acquired by the death of Christ»*. Ни одно слово английского перевода не добавляет того, чего нет в латыни; спор идёт о различении impetration/application, а не о его формулировке.
+
+**5. Чего это сличение не даёт.** Это сличение **текста с текстом**. Изображение страницы с. 282–292 не просмотрено: из этой среды доступны только текстовые выдачи archive.org, браузерного инструмента в сессии нет. Поэтому: (а) артефакты из таблицы п. 3 прочтены по латыни, а не по скану — прочтение надёжное, но не визуально подтверждённое; (б) колонтитулы подтверждены дважды, но отсканированная страница под ними не проверена; (с) для окончательной product-цитаты по-прежнему действует `PUBLICATION_HOLD` и правило `00` §5. Прямой цитате это уже не препятствует с пометками пп. 1–4.
+
+---
+
+Ограничение канона снято (2026-10-07, вторая волна): W0-пак перенесён в Git файлом [`16`](16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md) — английский перевод 1840 г. (артикулы I–IX) и прочитанный фрагмент комментария Кальвина на 1 Ин. 2:1–2. Теперь оба английских PD-свидетеля Head II лежат в каноне, а не только на Drive.
 
 ---
 
