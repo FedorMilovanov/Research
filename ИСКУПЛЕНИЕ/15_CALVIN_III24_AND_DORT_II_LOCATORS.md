@@ -126,8 +126,8 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 
 Честные границы:
 
-1. В руках — **OCR-выдачи `search-inside`**, не полная транскрипция страниц в Git/Drive. `accessState = partial` (не `acquired-copy`).
-2. Страницы отдельных **Rejectio I–VII по-английски не расписаны**: запросы по `impetration` и `determinate counsel` в OCR 1841 не матчатся (у Скотта иная формулировка). Содержание Rejection по-прежнему закрыто латынью Schaff chunk 165.
+1. В руках — **OCR-выдача**: сначала фрагменты `search-inside`, затем полный текст артикулов I–IX **и** Rejectio I–VII перенесён в §B.5. `accessState = transcribed-from-OCR` — это не транскрипция с изображения страницы и не форензическая копия (не `acquired-copy`).
+2. Страницы **Rejectio I–VII по-английски расписаны** (I — 287, II — 288, III — 288–289, IV — 289, V — 290, VI — 291–292, VII — 292), текст — §B.5. Первые точечные запросы не матчались из-за формулировки Скотта («destined his own Son», «usurp the distinction of impetration and application»), поэтому текст взят напрямую из `articlesofsynodo1841syno_djvu.txt` (чанки 52–54).
 3. Печатная страница выведена из `page_numbers.json` (confidence 96, по листу) — сильная машинная привязка, но не сверка глазами по изображению страницы.
 4. До product-цитаты по-английски нужна item-level сверка OCR с изображением страницы. `PUBLICATION_HOLD` на серии не снят. CRCNA по-прежнему не источник для цитат.
 
@@ -145,6 +145,65 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 - **страницу** давать по Scott 1841;
 - **Rejection I–VII** — только Schaff 165 (латынь), пока не расшифрованы английские с. 286–304.
 
+### B.5 Scott 1841 — полный английский текст Head II: артикулы I–IX и Rejectio I–VII, по страницам
+
+**Источник текста:** OCR-выдача `articlesofsynodo1841syno_djvu.txt` (чанки 52–54); страницы — по бегущим колонтитулам скана и по оглавлению издания (чанк 0: «Chapter II. … in nine articles … 282»; «Rejection of Errors on the Second Chapter, in seven articles … 286»; «Chapters III and IV … 292»).
+
+**Честный статус переноса:** текст набран с OCR-выдачи вручную, артефакты распознавания **сохранены как в выдаче** (`hitpself`, `verv`, `prx aliis`, `inditferenlly`, `etltictually`, `sarta fecta`, `insutficiency`, `condemniiation`). Это **не** форензически точная копия и **не** сверка с изображением страницы. Сноски Скотта не включены, кроме библейских ссылок в скобках. Перед product-цитатой — item-level сверка (см. §B.4 п. 4).
+
+#### Глава II, артикулы I–IX (с. 282–286)
+
+> **CHAPTER II. ON THE DOCTRINE OF THE DEATH OF CHRIST, AND THROUGH IT THE REDEMPTION OF MEN.** (с. 282)
+>
+> **1.** God is not only supremely merciful, but also supremely just. And his justice requires, (according as he hath revealed himself in the word,) that our sins committed against his infinite majesty, should be punished, not only with temporal, but also with eternal sufferings — of soul as well as of body; which punishment we cannot escape, unless the justice of God be satisfied. (Isa. xlv. 21. Rom. iii. 25, 26.)
+>
+> **2.** (с. 283) But as we cannot satisfy it, and deliver ourselves from the wrath of God, God of infinite mercy gave to us his only begotten Son as a Surety, who, that he might make satisfaction for us, was made sin and a curse on the cross for us, or in our stead.
+>
+> **3.** This death of the Son of God is a single and most perfect sacrifice and satisfaction for sins; of infinite value and price, **abundantly sufficient to expiate the sins of the whole world**.
+>
+> **4.** But this death is of so much value and price on this account; because the person who endured it is not only, truly and perfectly a holy Man, but also, the only begotten Son of God, of the same eternal and infinite essence with God the Father and the Holy Spirit, such as it behoved our Saviour to be. Finally, because his death was conjoined with the feeling of the wrath and curse of God, which we by our sins had deserved.
+>
+> **5.** (с. 284) Moreover, the promise of the gospel is, that whosoever believeth in Christ crucified, shall not perish, but have everlasting life. Which promise ought to be announced and proposed, **promiscuously and indiscriminately, to all nations and men** to whom God, in his good pleasure, hath sent the gospel, with the command to repent and believe.
+>
+> **6.** But because many who are called by the gospel do not repent, nor believe in Christ, but perish in unbelief; this doth not arise from defect or insutficiency of the sacrifice offered by Christ upon the cross, but from their own fault. (John iii. 19, 20. v. 44. Heb. iii. 5.)
+>
+> **7.** But to as many as truly believe, and through the death of Christ are delivered and saved from sin and condemniiation, this benefit comes from the sole grace of God, which he owes to no man, given them in Christ from eternity.
+>
+> **8.** (с. 285) For this was the most free counsel, and gracious will and intention of God the Father, that the life-giving and saving efficacy, of the most precious death of his own Son, should exert itself **in all the elect**, in order to give them alone justifying faith, and thereby to lead them to eternal life: that is, God willed that Christ, through the blood of the cross, (by which he confirmed the new covenant,) should, out of every people, tribe, nation, and language, **efficaciously redeem all those, and those only, who were from eternity chosen to salvation, and given to him by the Father**; that he should confer on them the gift of faith; (which, as well as other saving gifts of the Holy Spirit, he obtained by his death;) that he should cleanse them by his own blood from all sins, both original and actual, committed after, as well as before faith; that he should preserve them faithfully to the end; and at length present them glorious before himself without any spot and blemish.
+>
+> **9.** (с. 286) This counsel, having proceeded from eternal love to the Elect, from the beginning of the world to this present time, the gates of hell in vain striving against it, has been mightily fulfilled, and will henceforth also be fulfilled: so that indeed the elect may in their time be gathered together in one, and that there may always be some church of believers founded in the blood of Christ, who may constantly love the Saviour, who for her, as a Bridegroom for his bride, gave up his soul upon the cross; and perseveringly worship and celebrate him, here and to all eternity.
+
+**Как те же девять артикулов сократили оппоненты** (Тилен / Хейлин, с. 286) — цитата важна, чтобы видеть, из чего вырос мем:
+
+> **These nine articles are thus abbreviated by Tilenus and Heylin.** Art. II. Of the Merit and Effect of Christ's Death. «That Jesus Christ hath not suffered death, but for those elect only; having neither any intent nor commandment from the Father, to make satisfaction for the sins of the whole world.» (See Articles iv. v.)
+
+Аббревиатура стирает II.3 (достаточность для всего мира) и II.5 (проповедь всем без различия) — ровно то, что `13` §1.2 запрещает вырывать.
+
+#### REJECTION OF ERRORS ON THE SECOND CHAPTER (с. 286–292)
+
+Вступление (с. 286): «The orthodox doctrine having been explained, the Synod rejects the errors of those,»
+
+> **1.** (с. 287) Who teach, «That God the Father destined his own Son unto the death of the cross without a certain and definite counsel of saving any one by name, (*nominatim*), (Rev. xiii, S. xvii. 8. xx. 15,) so that its own necessity, utility, and meritoriousness, (*dignitas*) might be established unimpaired (*sarta fecta*) to the benefit obtained (*impetrationi*) by the death of Christ, and be perfect in its measures (*numeris*,) and complete and entire, even if the obtained redemption had not, in fact, been applied to any individual.» For this assertion is contumelious to the wisdom of God and the merit of Jesus Christ, and is contrary to Scripture; as the Saviour says: «I lay down my life for the sheep, and I know them,» John x. 15, 27. And the prophet Isaiah concerning the Saviour: «When he shall give hitpself a sacrifice for sin, he shall see his seed, he shall prolong his days, and the will of Jehovah shall prosper in his hand.» Is. liii. 10. And finally it overturns the article of faith by which we «believe the church.»
+>
+> **2.** (с. 288) Who teach «That this was not the end of the death of Christ, that he might, in verv deed, confirm the new covenant of grace through his blood; but only that he might acquire a bare right to the Father of entering again into some covenant with men, either of grace or of works.» For this contradicts the Scripture, which teaches, that «Christ is become the Surety and Mediator of a better covenant.» Heb. vii. 22. And a testament is at length ratified in those that are dead. Heb. ix. 15, 17.
+>
+> **3.** (с. 288–289) Who teach that «Christ, by his satisfaction did not with certainty (*certo*) merit that very salvation and faith, by which this satisfaction of Christ may be effectually applied unto salvation; but only that he acquired to the Father, power, and a plenary will, of acting anew with men, and of prescribing whatever new conditions he willed, the performance of which might depend on the free will of man: and therefore it might so happen either that none or that all might fulfil them.» Now these think far too meanly of the death of Christ; they in no wise acknowledge the principal fruit, or benefit obtained by it, and recall from hell the Pelagian heresy.
+>
+> **4.** (с. 289) Who teach that «That new covenant of grace, which God the Father, through the intervention of the death of Christ, hath ratified with men, does not consist in this, that by faith, so far as it apprehends the merit of Christ, we are justified before God and saved; but in this, that God, having abrogated the exaction of perfect legal obedience, imputes (*reputet*) faith itself, and the imperfect obedience of faith, for the perfect obedience of the law, and graciously reckons it as deserving of the reward of eternal life.» For these contradict the Scripture: «They are justified freely by his grace, through the redemption made in Jesus Christ, whom God hath set forth as a propitiation, through faith in his blood.» Rom. iii. 24, 25.
+>
+> **5.** (с. 290) Who teach that «All men are taken into a state of reconciliation and the grace of the covenant; so that no one on account of original sin is liable to damnation, or to be damned; but that all are exempt from the condemnation of this sin.» For this opinion opposes the Scripture, affirming, that «By nature we are the children of wrath.»
+>
+> **6.** (с. 291–292) Who usurp the distinction of **impetration and application**, that they may instil this opinion into the unwary and inexperienced; that God, as far as pertained to him, **had willed to confer equally upon all men the benefits which were acquired by the death of Christ**: and that some rather than others (*prx aliis*) should be partakers of the remission of sins and eternal life, this discrimination depended on their free will, applyhig to themselves of the grace inditferenlly otTered; not from an especial gift of mercy operating etltictually in them, that they, rather than others, should apply to themselves this grace. For these, while they pretend to propose to themselves this distinction in a wholesome sense, endeavour to give the people a taste of the pernicious poison of Pelagianism.
+>
+> **7.** (с. 292) Who teach that «Christ neither could nor ought to die, neither did he die, for those whom God especially (*summe*) loved and chose to eternal life, when to such there was no need of the death of Christ.» For they contradict the apostle, saying, «Christ loved me, and gave himself for me.» Gal. ii. 20. Also, «Who can lay any thing to the charge of God's elect? It is God that justifieth. Who is he that condemneth? It is Christ who died:» Rom. viii. 32, 34, doubtless, for them. And the Saviour who declared, «I lay down my life for my sheep.» John x. 15. And, «This is my command, that ye love one another, as I have loved you; greater love hath no man than this, that he lay down his life for his friends.» John xv. 12, 13.
+
+**Что это даёт карточке `13` §1.2–1.3 (ничего сверх текста):**
+
+- **Rejectio I** отсекает «достаточность без определённого замысла» (ценность жертвы не зависит от применения — но отрицать *замысел спасти поимённо* нельзя).
+- **Rejectio VI** — прямой удар по чтению «sufficient for all» как **равному намерению** Бога дать всем плоды смерти; различение impetration/application само по себе не отвергнуто, отвергнуто его использование в пользу «равной воли + свободного выбора».
+- **Rejectio VII** отсекает противоположную карикатуру («избранным смерть не нужна»). Синод режет в обе стороны — это и есть граница дозволенной формулировки.
+- Английская страница теперь есть у каждой из семи Rejectio: **I — 287, II — 288, III — 288–289, IV — 289, V — 290, VI — 291–292, VII — 292**.
+
 Ограничение канона: W0-пак лежит **только на Drive** (папка `01`), в Git не перенесён, хотя каноном по `07` объявлены Git-файлы `ИСКУПЛЕНИЕ/`. В этой волне перенос не производился: файл PD и небольшой (~16 KB), но это решение владельца. До переноса ссылаться на него как на Drive-объект. В том же файле заявлен прочитанный фрагмент комментария Кальвина на 1 Ин. 2:1–2 (CCEL, перевод XIX в.) — сами цитаты в этой волне **не** перечитывались, см. §4 файла.
 
 ---
@@ -157,7 +216,7 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 | Calvin II.12, II.16, II.17 nature/merit | unchecked | **Beveridge chunks 155, 168, 176–177** |
 | Calvin 1 Ин. 2:2 comm. | реконструкция | без изменения (wall) |
 | Dort II articles | карта по памяти | CRCNA reading copy chunks 3–4 **и** Schaff Latin chunk 165 **и** Scott 1841 EN pp. 282–286 (§B.4) |
-| Dort Rejection I–VII | «не нумеровать по памяти» | Latin I–VII в Schaff 165; CRCNA EN как reading copy; EN-начало Rejectio = Scott 1841 p. 286, страницы отдельных Rejectio EN **не расписаны** |
+| Dort Rejection I–VII | «не нумеровать по памяти» | Latin I–VII в Schaff 165; **EN I–VII полностью с страницами**: Scott 1841 с. 287–292 (I — 287, II — 288, III — 288–289, IV — 289, V — 290, VI — 291–292, VII — 292), текст в §B.5; CRCNA EN — только reading copy |
 | Dort **EN PD edition** | «EN Product NO until chosen edition» | **издание выбрано**: Scott 1841 (`articlesofsynodo1841syno`), Head II pp. 282–286; OCR partial. Schaff/CCEL EN-колонки не существует — проверено по чанкам 163–165 |
 | WCF 8 (ch. VIII «Of Christ the Mediator») | Drive PDF, locator unchecked | **Schaff/CCEL chunks 182–183** (EN+LA, постатейно) — см. §D. Drive PDF `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` = скан без текстового слоя, страница **не** извлекаема |
 
