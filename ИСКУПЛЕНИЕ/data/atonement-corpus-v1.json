@@ -728,16 +728,16 @@
     "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
   },
   "driveMirrors": {
-    "file00": "1A4mEuCO4-0g8kxqMm_RQ_upDZFALVyC6nrX8tAwitnc",
+    "file00": "1IeTc1fgDvPoFJ-lWvm8uovSkwtWS27bN0Vi79c8jpuY",
     "file00readme": "1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs",
-    "file05": "1JgWb9J3t16ZUB0TwQQiJBLENEEfefxDiBTmLg3ff7lQ",
-    "file07": "16G1Nd9Gy61TvcWky1DPlm038Bu7gkNMPZNSbqkyno1E",
+    "file05": "15i2GEHWfM-zxqFmDNyiQaSEGMBWd10hPxg4IdJEMOEg",
+    "file07": "1910KRnHOEFylSVWNIfUspZRI92rC1OjD0ALv6_BgFMw",
     "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
     "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
-    "file12": "1Q-G30kId4KL2kYWIOUBqEaBovioySS-Q2dHGhYjtzyE",
+    "file12": "1wrBw5mKN0VOj2-YsGhy-Tx_k1Ytb-AlGdgyDUf4QCEs",
     "file13": "1jMpfpjP-ThrWCXLx13wb-d4aOBH9PH39",
-    "file14": "1TfN5bHenUTkmXZq8lG2JX03oOVOq6kByN7yLdoaUpNw",
-    "file15": "1zwyRmoTiRQVMKpfNkngINwuTzbpcpebUL1M1IyO9OfU",
+    "file14": "1en18-MR3lXgNdgVVz24UXN9fAxDlOsiuUWsbSTnTv2A",
+    "file15": "11OYvutqx9z-V5Vcesp3_NUw8Hgccgl47FQ43UkOUMoI",
     "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path. Since 2026-10-08 superseded copies are NOT trashed: they are moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd), so previously published IDs keep resolving. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json.",
     "supersededIds2026-10-08": {
@@ -768,7 +768,30 @@
       "file12Prev2026-10-08e": "1UYZf-spro65daGmGyvmglkqDouGTPvUjpktXm6jCM3o",
       "file15Prev2026-10-08e": "1njhmkSQVlwtov30vd5STMkNvzf8tnmCTTzx4KQjgv_g",
       "synthesisConflictLedgerPrev2026-10-08e": "151yu6HTO2j6RSkwNCk5YnbQY2XuO7g8H",
-      "synthesisRegistryJsonPrev2026-10-08e": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_"
+      "synthesisRegistryJsonPrev2026-10-08e": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
+      "prev2026-10-08f_file00": [
+        "1prouh0VlgO6AhcnfULTDRckOnwXJLwBGOuJjzkfjwPQ",
+        "1A4mEuCO4-0g8kxqMm_RQ_upDZFALVyC6nrX8tAwitnc"
+      ],
+      "prev2026-10-08f_file05": [
+        "1GCEkkJKbWTDyWp-6YzMk590SdIVwn8lndXys-jg1AX4",
+        "1JgWb9J3t16ZUB0TwQQiJBLENEEfefxDiBTmLg3ff7lQ"
+      ],
+      "prev2026-10-08f_file07": [
+        "1bNSXY3j7JQ4YaWj1prngLqO_OKCoCi28pmh30reQMmU",
+        "16G1Nd9Gy61TvcWky1DPlm038Bu7gkNMPZNSbqkyno1E"
+      ],
+      "prev2026-10-08f_file12": [
+        "1AR8vNpNeg1uZidegeZfWu8qdGC3rQxjTz6dvGk8793o",
+        "1Q-G30kId4KL2kYWIOUBqEaBovioySS-Q2dHGhYjtzyE"
+      ],
+      "prev2026-10-08f_file14": [
+        "1Dp9Wk_q3Dz1mjIBqsKkyJrXXwZI4l_-aSepUh2BKbBY",
+        "1TfN5bHenUTkmXZq8lG2JX03oOVOq6kByN7yLdoaUpNw"
+      ],
+      "prev2026-10-08f_file15": [
+        "1zwyRmoTiRQVMKpfNkngINwuTzbpcpebUL1M1IyO9OfU"
+      ]
     },
     "file03": "1Bu5d-44UP1XEz7gvcXuazUjfP4HyDJtOCA39iQmg64w",
     "synthesis": {
@@ -857,22 +880,5 @@
       "ssot": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
       "fallbackReadme": "1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko"
     }
-  },
-  "supersededIds2026-10-08": {
-    "file00": [
-      "1prouh0VlgO6AhcnfULTDRckOnwXJLwBGOuJjzkfjwPQ"
-    ],
-    "file05": [
-      "1GCEkkJKbWTDyWp-6YzMk590SdIVwn8lndXys-jg1AX4"
-    ],
-    "file07": [
-      "1bNSXY3j7JQ4YaWj1prngLqO_OKCoCi28pmh30reQMmU"
-    ],
-    "file12": [
-      "1AR8vNpNeg1uZidegeZfWu8qdGC3rQxjTz6dvGk8793o"
-    ],
-    "file14": [
-      "1Dp9Wk_q3Dz1mjIBqsKkyJrXXwZI4l_-aSepUh2BKbBY"
-    ]
   }
 }
