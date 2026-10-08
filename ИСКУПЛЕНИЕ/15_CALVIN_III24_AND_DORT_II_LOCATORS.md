@@ -42,11 +42,78 @@ Quote-safe для Product: **NO** до page в нашем Drive PDF *или* я�
 | Иез. 18:23 | готов простить кающегося; не против избрания | desire абсолютен, включая тех, кто умрёт в беззаконии | — |
 | Мф. 23:37 | антропопатия + не сорванный совет | Богочеловек желал собрать; revelatory of divine will | — |
 
-Честный зазор: OPC majority **сильнее** говорит о желании спасения даже тех, кого Бог не декретировал спасти. Кальвин III.24.16–17 осторожнее на 2 Пет. 3:9 (покаяние даётся) и на 1 Тим. 2:4 (сословия). Не склеивать «Кальвин = отчёт 1948». Комментарий на 2 Пет. 3:9, который цитирует OPC, больше не за login-wall: **CTS 1855, с. 419–420** (IA `commentariesonca00calv`) — см. [`13` §2.3](13_DORT_II_CALVIN_OWEN_EXTENT.md); там же 2 Пет. 2:1 — **с. 393**.
+Честный зазор: OPC majority **сильнее** говорит о желании спасения даже тех, кого Бог не декретировал спасти. Кальвин III.24.16–17 осторожнее на 2 Пет. 3:9 (покаяние даётся) и на 1 Тим. 2:4 (сословия). Комментарий на 1 Тим. 2:4–6 — **не за login-wall и не пересказ**: CTS 1856, с. 54–56 и 61 (IA `commentariesonep00calvuoft`), см. §A.4. Не склеивать «Кальвин = отчёт 1948». Комментарий на 2 Пет. 3:9, который цитирует OPC, больше не за login-wall: **CTS 1855, с. 419–420** (IA `commentariesonca00calv`) — см. [`13` §2.3](13_DORT_II_CALVIN_OWEN_EXTENT.md); там же 2 Пет. 2:1 — **с. 393**.
 
 1 Ин. 2:2 в Institutes здесь **нет**. Комментарий на 1 Ин. 2:2 — больше не реконструкция: с 2026-10-08 есть PD-страница (**CTS 1855, с. 169 / 172–173**, IA `commentariesonca00calv`), см. [`13` §2.2](13_DORT_II_CALVIN_OWEN_EXTENT.md).
 
-### A.4 Institutes II.12 и II.16 — природа / необходимость (Beveridge)
+### A.4 Комментарий на Пастырские послания (CTS 1856) — 1 Тим. 2:4–6 и Тит. 2:11
+
+**Объект:** Calvin, *Commentaries on the Epistles to Timothy, Titus, and Philemon*. Edinburgh: Calvin Translation Society, **1856**. IA `commentariesonep00calvuoft`, `possible-copyright-status: NOT_IN_COPYRIGHT`, 430 листов. Полнотекстовый поиск: `https://ia600808.us.archive.org/fulltext/inside.php?item_id=commentariesonep00calvuoft&doc=commentariesonep00calvuoft&path=/21/items/commentariesonep00calvuoft&q=…`
+
+**Зачем:** до 2026-10-08 по 1 Тим. 2:4 в корпусе стоял только *Institutes* III.24.16 (Beveridge, сословия) и Гилл XLV. Своего комментария на locus classicus у Кальвина в каноне не было — был пересказ. Теперь он есть, со страницей. По **Тит. 2:11** не было вообще ничего (см. новую карточку **H10** в `12`).
+
+**Смещение «печатная страница ↔ лист скана» — НЕ константа.** В этом скане несколько листов не несут печатного номера (24–25, 36–37, 56–57, 74–75, 302–303, 368–371), поэтому смещение ступенчато растёт: **−4** в начале, **−10** в районе 1 Тим. 2 (листы 58–73), **−16…−18** в районе Тита. Карту лист→страница даёт `commentariesonep00calvuoft_page_numbers.json`; ниже — привязки, сверенные **двумя** независимыми способами (колонтитул с номером страницы на самом листе **и** предметный указатель тома):
+
+| Привязка | Лист | Печатная страница |
+|---|---|---|
+| «14 THE ARGUMENT.» | 18 | 14 |
+| «THE ARGUMENT. 15» | 19 | 15 |
+| «CHAP. I. 15. THE FIRST EPISTLE TO TIMOTHY. 39» | 47 | 39 |
+| **«THE FIRST EPISTLE TO TIMOTHY. 49»** | 59 | **49** |
+| «CHAP. II. 2, THE FIRST EPISTLE TO TIMOTHY. 51» | 61 | 51 |
+| «CHAP. II. 5. THE FIRST EPISTLE TO TIMOTHY. 57» | 67 | 57 |
+| Указатель тома: «Christ is the one Mediator between God and men, 56.» | 66 | **56** |
+| Указатель тома: «was revealed at the appointed time, 61.» | 71 | **61** |
+| «278 THE ARGUMENT ON THE EPISTLE TO TITUS.» | 294 | 278 |
+| «CHAP. II. 10. THE EPISTLE TO TITUS. 315» | 333 | **315** |
+| «CHAP. II. 12. THE EPISTLE TO TITUS. 319» | 337 | 319 |
+
+**Локусы:**
+
+| Локус | Печатная страница | Лист |
+|---|---|---|
+| 1 Тим. 2:1 — стих и начало раздела | 49 | 59 |
+| 1 Тим. 2:4 — стих | 49 | 59 |
+| 1 Тим. 2:4 — начало разбора | **54** | 64 |
+| 1 Тим. 2:4 — ключевая фраза «classes of men» | **55** | 65 |
+| 1 Тим. 2:5 — «плод жертвы простирается на всех» | **56** | 66 |
+| 1 Тим. 2:6 — «благо всеобщее и постоянное» | **61** | 71 |
+| Тит. 2:11 — стих | **316** | 334 |
+| Тит. 2:11 — разбор Кальвина | **317** | 335 |
+| Тит. 2:11 — сноска переводчика (Fr. Ser.) | **317–318** | 335–336 |
+
+**Verbatim. 1 Тим. 2:4, с. 54:**
+
+> **4. Who wishes that all men may be saved.** Here follows a confirmation of the second argument; and what is more reasonable than that all our prayers should be in conformity with this decree of God?
+
+**Verbatim. 1 Тим. 2:4, с. 55** (абзац начинается на с. 54, здесь — его вторая половина):
+
+> …be proclaimed to all without exception. Now the preaching of the gospel gives life; and hence he justly concludes that God invites all equally to partake salvation. **But the present discourse relates to classes of men, and not to individual persons**; for his sole object is, to include in this number princes and foreign nations. That God wishes the doctrine of salvation to be enjoyed by them as well as others, is evident from the passages already quoted, and from other passages of a similar nature. Not without good reason was it said, "Now, kings, understand," and again, in the same Psalm, "I will give thee the Gentiles for an inheritance, and the ends of the earth for a possession." (Ps. ii. 8, 10.)
+
+**Verbatim. 1 Тим. 2:5, с. 56** (OCR обрывается на сгибе страницы — конец фразы на с. 57 не прочитан):
+
+> And one Mediator between God and men. This clause is of a similar import with the former; for, as there is one God, the Creator and Father of all, so he says that there is but one Mediator, through whom we have access to the Father; and that this Mediator was given, not only to one nation, or to a small number of persons of some particular rank, but to all; **because the fruit of the sacrifice, by which he made atonement for sins, extends to all**. More especially because a large portion of the world was at that time alienated from… [обрыв OCR на нижнем поле с. 56]
+
+**Verbatim. 1 Тим. 2:6, с. 61:**
+
+> Besides, when the Apostle calls him ἀντίλυτρον, "a ransom," he overthrows all other satisfactions. Yet I am not ignorant of the injurious devices of the Papists, who pretend that the price of redemption, which Christ paid by his death, is applied to us in baptism, so that original sin is effaced, and that afterwards we are reconciled to God by satisfactions. In this way they limit to a small period of time, and to a single class, **that benefit which was universal and perpetual**. But a full illustration of this subject will be found in the Institutes.
+
+**Verbatim. Тит. 2:11, с. 317:**
+
+> **11. For the grace of God\* hath appeared.** He argues from the design of redemption, which he shews to be a desire to live a godly and upright life. Hence it follows, that the duty of a good teacher is rather to exhort to a holy life than to occupy the minds of men with useless questions. "He hath redeemed us," says Zacharias in his song,—"that we may serve him in holiness and righteousness all the days of our life." (Luke i. 74, 75.) For the same reason Paul says, the grace of God hath appeared, teaching us; for he means that it ought to hold the place of instruction to us to regulate our life well. What is proclaimed concerning the mercy of God is seized by some as an occasion of licentiousness; while others are hindered by slothfulness from meditating on "newness of life." But the manifestation of the grace of God unavoidably carries along with it exhortations to a holy life.
+
+**Сноска переводчика на с. 317–318 — НЕ текст комментария.** Она цитирует *French Sermons* (подпись «—Fr. Ser.») и потому относится к Кальвину-проповеднику, а не к Кальвину-комментатору на Тита. Цитировать только с этой пометой:
+
+> \* «We now see why Paul speaks of all men, and thus we may judge of the folly of some who pretend to expound the Holy Scriptures, and do not understand their style, when they say, "And God wishes that every person should be saved; the grace of God hath appeared for the salvation of every person; it follows, then, that there is free-will, that there is no election, that none have been predestinated to salvation." If those men spoke, it ought to be with a little more caution. Paul did not mean in this passage, **or in 1 Tim. ii. 6**, anything else than that the great are called by God, though they are unworthy of it; that men of low condition, though they are despised, are nevertheless adopted by God, who stretches out his hand to receive them. At that time, because kings and magistrates were mortal enemies of the gospel, it might be thought that God had rejected them, and that they cannot obtain salvation. But Paul says that the door must not be shut against them, and that, eventually, God may choose some of this company, though their case appear to be desperate. … Thus we see that this word is highly significant, when it is said that the grace of God hath appeared fully to all men.» —*Fr. Ser.*
+
+**Что это меняет в корпусе:**
+
+1. По 1 Тим. 2:4 у Кальвина теперь есть собственная формула — **«classes of men, and not to individual persons»** (с. 55), и она острее пересказа из *Institutes* III.24.16. Чтение **H2-e** в `12`.
+2. По 1 Тим. 2:5 у Кальвина есть фраза, которая **сопротивляется** упрощённому particular-чтению: «плод жертвы… простирается на всех» (с. 56). Чтение **H2-f** в `12`. Замазывать её — значит лгать о первоисточнике.
+3. По Тит. 2:11 Кальвин-комментатор **вообще не обсуждает объём**: он читает стих через *design* искупления (жизнь в благочестии). Карточка **H10** в `12`.
+4. Стык 1 Тим. 2:6 и Тит. 2:11 сделан самим изданием (сноска Fr. Ser.), и стык этот — «все = знатные и низкие», с прямым отвержением вывода «нет избрания».
+
+### A.5 Institutes II.12 и II.16 — природа / необходимость (Beveridge)
 
 **II.12** (chunk **155**): Посредник должен быть истинным Богом и истинным человеком. Необходимость **не** simple/absolute, а *from the divine decree*. Ни человек, ни ангел не достаточны. 1 Тим. 2:5 привлекается как «человек Христос Иисус» — близость плоти, не как extent-текст. Совпадает с Мюрреем I.1 (consequent necessity), не с карикатурой «Бог не мог иначе».
 
