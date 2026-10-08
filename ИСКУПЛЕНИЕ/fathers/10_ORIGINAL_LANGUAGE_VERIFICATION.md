@@ -1,6 +1,6 @@
 # Сверка с оригиналом (греческий/латинский): что проверено в этой волне
 
-**Дата:** 2026-10-07
+**Дата:** 2026-10-07 (обновлено 2026-10-08 — §11, §12)
 **Статус:** `VERIFICATION LOG / NO VERDICT / EVIDENCE_HOLD / PUBLICATION_HOLD`
 **Назначение:** §3.3 брифа требует по каждой карточке «оригинал короткой цитатой + перевод». Здесь собраны **фактически сверенные** оригиналы. Где сверки нет — в карточках стоит `ORIGINAL_TEXT_HOLD`, и перевод не выдаётся за оригинал.
 
@@ -115,8 +115,41 @@
 | Григорий Нисский, Or. cat. (греч.) | греческий текст не найден в проверенных каналах |
 | Лев Великий, Письма/Томос (лат.) | доступны только Sermones Quadragesimales I–II (Latin Library), нужных писем нет |
 | Златоуст, гомилии (греч.) | греческого текста в проверенных каналах нет (только NPNF-англ.) |
-| Августин (лат.) | индекс Latin Library проверен, конкретные loci (De Trin. XIII, Tract. in Io.) не сверены в этой волне |
+| Августин (лат.), *Tract. in Io.* | **De Trin. XIII сверен** (§12); гомилии на Ин. — нет |
 | Кирилл Иерусалимский, Оглашения (греч.) | не сверено |
 | Дамаскин (греч.) | не сверено |
 
 **Следующий шаг:** для каждого пункта — либо найти PD-издание оригинала (Lake/Robertson/Mason/PG-скан), либо оставить `ORIGINAL_TEXT_HOLD` и цитировать только как перевод с указанием переводчика.
+
+---
+
+## 11. Очередь сверок и каналы: приёмка 2026-10-08
+
+Проверка каналов выполнена через метаданные archive.org (поиск по каталогу). **Приёмка канала ≠ прочитанный локус**: ниже — что доступно, с каким идентификатором и что остаётся сделать.
+
+| Что нужно сверить | Канал (PD) | Идентификаторы archive.org | Статус |
+|---|---|---|---|
+| Ириней, лат. (*recapitulans* III.18.1; «не насилием, но убеждением» V.1.1) | Harvey, *S. Irenaei … Libros quinque adversus haereses*, 1857, vol. 2 (кн. III–V) | `sanctiirenaeiep00harvgoog`, `sanctiirenaeili00irengoog` (vol. 1 — `sanctiirenilibr01irengoog`, `sanctiirenaeiep01harvgoog`) | `ARCHIVE_AVAILABLE` — чтение (OCR) не выполнено → `ORIGINAL_TEXT_HOLD` сохраняется |
+| Григорий Великий, *Moralia in Job* (лат./англ.) | «Morals on the Book of Job», Library of Fathers, 1844–50 | `moralsonbookofjo01greguoft`, `moralsonbookjob01igoog`, `moralsonbookofj234greguoft`, `moralsonbookofjo32greg`, серия V21/V23/V31 | `ARCHIVE_AVAILABLE`; карточка не собрана |
+| Кирилл Александрийский, *In D. Joannis Evangelium* (греч.+лат., Pusey 1872) | Pusey 1872, 3 т. | `sanctipatrisnos00–03pusegoog`, `indjoannisevang00pusegoog` | `ARCHIVE_AVAILABLE` (был `ARCHIVE_HOLD`); `Contra Nestorium` — в том же корпусе, отдельной проверки требует |
+| Анзельм, *Cur Deus Homo* (лат./англ. Deane 1903) | Deane 1903 / ун-т Торонто 1903 | `stanselmproslogu0000dean`, `stanselmeproslog00anseuoft`, `cu31924014583540` | `ARCHIVE_AVAILABLE`; карточка ANS-1 сверяется по латыни отдельно |
+| Лев Великий, Томос/Письма (лат., PL 54) | Migne, Patrologia Latina 1–221 (html-база) | `patrologia-latina_1-221` (описание: ed. 1844–1855, 1862–1865) | `ARCHIVE_AVAILABLE` с оговоркой: томную привязку (PL 54) проверять по файлам объекта; Latin Library для Льва бесполезна |
+| Григорий Богослов, Or. 45.22 (греч.) | First1KGreek, tlg2022 | каталог: tlg003, 007, 008, 009, 010, 011, 060 — **Or. 45 нет** | `ARCHIVE_HOLD` (нет канала в проверенных) — остаётся NPNF-перевод |
+| Нисский Or. cat.; Златоуст (греч.); Кирилл Иерус. (греч.); Дамаскин (греч.) | First1K: `tlg2017`, `tlg2062`, `tlg2110`, `tlg2934` | **Not Found** в каталоге репозитория | `ARCHIVE_HOLD` — только переводы ANF/NPNF, с указанием переводчика |
+
+**Методическая заметка.** Приёмка канала Doc'ом не создаёт цитируемости: строка «есть скан» не заменяет «прочитан локус». Для каждого пункта следующего шага — либо локус с линией OCR, либо честный `ORIGINAL_TEXT_HOLD`.
+
+## 12. Августин, *De Trinitate* XIII (лат.) — сверено 2026-10-08
+
+Источник транскрипции: thelatinlibrary.com/augustine/trin13.shtml (PD-транскрипция без аппарата; издание не указано — `LOCATOR_HOLD` по печатной странице).
+
+- **XIII.12.16:** «Si ergo **commissio peccatorum per iram dei iustam hominem subdidit diabolo, profecto remissio peccatorum per reconciliationem dei benignam eruit hominem a diabolo**.»
+- **XIII.13.17:** «**Non autem diabolus potentia dei sed iustitia superandus fuit.**»
+
+**Что это даёт карточке AUG-1:** центральная формула (диавол побеждён не властью, а праведностью) подтверждена по латыни, а не только по NPNF-переводу. См. [`05_…`](05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md), AUG-1 и [`11_…`](11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md), раздел сверки.
+
+## 13. Проверка F-13 (Варнава) — выполнено 2026-10-08
+
+- Гл. VII Послания Варнавы: `ANF01.txt:L12344` — «Chapter VII.—Fasting, and the goat sent away, were types of Christ»; текст о козле — `L12374–12400`.
+- Указанный в брифе `ANF01.txt:L12154–12156` лежит **внутри гл. V** (заголовок `L12113`; гл. VI — `L12191`), т.е. это другой locus (§5.13).
+- Границы глав: V — `L12113`, VI — `L12191`, VII — `L12344`, VIII — `L12434`. Итог: ложный локус брифа зафиксирован в `09_`, F-13.

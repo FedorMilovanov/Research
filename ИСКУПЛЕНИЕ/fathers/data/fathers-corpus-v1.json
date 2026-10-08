@@ -102,6 +102,54 @@
       "rights": "PD",
       "accessState": "READABLE",
       "caveat": "/tmp не персистентен: при потере — перекачать sparse-клоном"
+    },
+    {
+      "id": "ARCHIVE-HARVEY-IRENAEUS",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD-скан (1857): Harvey, S. Irenaei libros quinque adversus haereses, vol. 2 (кн. III–V)",
+      "locator": "archive.org: sanctiirenaeiep00harvgoog, sanctiirenaeili00irengoog (vol. 1 — sanctiirenilibr01irengoog, sanctiirenaeiep01harvgoog)",
+      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "ARCHIVE-MORALIA-BLISS",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD-англ. (1844–50): Morals on the Book of Job, Library of Fathers",
+      "locator": "archive.org: moralsonbookofjo01greguoft, moralsonbookjob01igoog, moralsonbookofj234greguoft, moralsonbookofjo32greg; серия V21/V23/V31",
+      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "ARCHIVE-CYRIL-JOHN-PUSEY",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD (1872): Pusey, Cyrilli In D. Joannis Evangelium (греч.+лат.)",
+      "locator": "archive.org: sanctipatrisnos00–03pusegoog, indjoannisevang00pusegoog",
+      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "ARCHIVE-ANSELM-DEANE",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD (1903): Deane, St. Anselm (Proslogium… and Cur Deus Homo)",
+      "locator": "archive.org: stanselmproslogu0000dean, stanselmeproslog00anseuoft, cu31924014583540",
+      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "ARCHIVE-MIGNE-PL",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD: Migne, Patrologia Latina 1–221 (html-база, ed. 1844–55/1862–65)",
+      "locator": "archive.org: patrologia-latina_1-221 (томную привязку проверять)",
+      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "FIRST1K-CATALOG-CHECK-2026-10-08",
+      "kind": "проверка каталога",
+      "title": "First1KGreek: наличие нужных греч. авторов",
+      "locator": "tlg2022 = tlg003/007/008/009/010/011/060 (Or. 45 нет); tlg2017, tlg2062, tlg2110, tlg2934 — Not Found",
+      "accessState": "ARCHIVE_HOLD для Нисского, Златоуста, Кирилла Иерус., Дамаскина (греч.)",
+      "rightsState": "CC BY-SA 4.0 (разметка), текст PD"
     }
   ],
   "cards": [
@@ -246,7 +294,8 @@
       "quoteSafe": true,
       "falseFriendFlags": [
         "F-4: «выкуп диаволу у Иринея» — неверно (право/убеждение)",
-        "ORIGINAL_TEXT_HOLD: лат. recapitulans не сверен"
+        "ORIGINAL_TEXT_HOLD: лат. recapitulans не сверен",
+        "ARCHIVE-HARVEY-IRENAEUS (vol. 2 = кн. III–V) принят как канал для лат. сверки; локус III.18.1 всё ещё на ORIGINAL_TEXT_HOLD"
       ]
     },
     {
@@ -467,7 +516,7 @@
       "primaryLocators": "NPNF2_12.txt:L9829-9831, L9930-9934, L10023-10025; Томос — NPNF2_12.txt:L4586, акты NPNF2_14",
       "evidenceClass": "A1-PD-translation",
       "accessState": "READABLE",
-      "locatorState": "LOCATED",
+      "locatorState": "LOCATED | лат. канал: Migne PL 1–221 (patrologia-latina_1-221) принят, томную привязку PL 54 проверять",
       "rightsState": "PD",
       "publicationState": "RESEARCH_ONLY",
       "quoteSafe": true,

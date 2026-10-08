@@ -106,11 +106,13 @@
 
 | Локус | ANF01 (EN) | Греческий (OAF) |
 |---|---|---|
-| Barn 5.1 | `ANF01.txt:L12113–12117` | `012-barnabas.txt:39` |
+| Barn 5.1 | `ANF01.txt:L12113` (заголовок гл. V), текст `L12113–12117` | `012-barnabas.txt:39` |
 | Barn 5.5 | `ANF01.txt:L12130–12134` | `012-barnabas.txt:43` |
-| Barn 5.13 | `ANF01.txt:L12154–12156` | `012-barnabas.txt:51` |
-| Barn 7.2 | `ANF01.txt:L12348–12352` | `012-barnabas.txt:73` |
-| Barn 7.4–7.8 (козёл отпущения) | `ANF01.txt:L12374–12400` | `012-barnabas.txt:76–79` |
+| Barn 5.13 | `ANF01.txt:L12154–12156` (внутри гл. V: заголовок `L12113`, гл. VI — `L12191`) | `012-barnabas.txt:51` |
+| Barn 7.2 | `ANF01.txt:L12348–12352` (гл. VII — `L12344`) | `012-barnabas.txt:73` |
+| Barn 7.4–7.8 (козёл отпущения) | `ANF01.txt:L12374–12400` (гл. VIII — `L12434`) | `012-barnabas.txt:76–79` |
+
+**Сверка границ глав (2026-10-08, ANF01):** гл. V — `L12113`, гл. VI — `L12191`, гл. VII — `L12344` («Fasting, and the goat sent away, were types of Christ»), гл. VIII — `L12434`. Локатор брифа для «двух козлов» указывал на гл. V — это другой locus (см. `09_`, F-13).
 
 **Оригинал (Barn 5.1):** «Εἰς τοῦτο γὰρ ὑπέμεινεν ὁ κύριος παραδοῦναι τὴν σάρκα εἰς καταφθοράν, ἵνα τῇ ἀφέσει τῶν ἁμαρτιῶν ἁγνισθῶμεν, ὅ ἐστιν ἐν τῷ αἵματι τοῦ ῥαντίσματος αὐτοῦ.»
 **Перевод (ANF):** «For to this end the Lord endured to deliver up His flesh to corruption, that we might be sanctified through the remission of sins, which is effected by His blood of sprinkling.»

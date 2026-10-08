@@ -1,6 +1,6 @@
 # Святые отцы об искуплении — authority под-корпуса
 
-**Дата:** 2026-10-07
+**Дата:** 2026-10-07 (обновлено 2026-10-08: карточки `11_`, приёмка PD-каналов)
 **Authority ID:** `ATONEMENT-FATHERS-AUTHORITY-2026-10-07`
 **Статус:** `CURRENT / SUB-CORPUS / ACTIVE RESEARCH / NOT PUBLICATION-READY`
 **Родительская corpus-authority:** [`../00_CURRENT_AUTHORITY_2026-10-07.md`](../00_CURRENT_AUTHORITY_2026-10-07.md) → root `00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md`
@@ -70,6 +70,7 @@
 | `LOCATOR_HOLD` | печатная пагинация ANF/NPNF (vol/page), колонки PG/PL для всех карточек | CCEL .txt не несёт пагинации; нужен PDF/скан |
 | `RIGHTS_HOLD` | современные переводы и монографии (Melito *Peri Pascha* в совр. переводах, Cyril Alex. в совр. переводах, Theodoret comm., Peter Chrysologus, Photius, Theophylact, Феофилакт) | XX–XXI вв. |
 | `ARCHIVE_HOLD` | Melito *Peri Pascha* (editio princeps 1940), Gregory the Great *Moralia* (PD-англ. 1844–50, archive.org), Cyril of Alexandria (PD-англ. Pusey, archive.org), Basil *Hom. in Ps. 48* (PD-англ. нет в ANF/NPNF) | полного объекта в этой волне нет |
+| `ARCHIVE_AVAILABLE` (приёмка каналов 2026-10-08) | конкретные PD-сканы archive.org найдены и приняты как канал: **Irenaeus, Harvey 1857, vol. 2 (кн. III–V)** — `sanctiirenaeiep00harvgoog`, `sanctiirenaeili00irengoog` (vol. 1: `sanctiirenilibr01irengoog`, `sanctiirenaeiep01harvgoog`); **Gregory the Great, *Morals on the Book of Job* (Library of Fathers, 1844–50)** — `moralsonbookofjo01greguoft`, `moralsonbookjob01igoog`, `moralsonbookofj234greguoft`, `moralsonbookofjo32greg`, серия: V21/V23/V31; **Cyril Alex., *In D. Joannis Evangelium* (Pusey 1872, греч.+лат.)** — `sanctipatrisnos00–03pusegoog`, `indjoannisevang00pusegoog`; **Anselm, *Cur Deus Homo* (Deane 1903)** — `stanselmproslogu0000dean`, `stanselmeproslog00anseuoft`; **Migne PL (1–221)** — `patrologia-latina_1-221` (html-база, томную привязку проверять отдельно) | канал принят ≠ локус прочитан: чтение и локаторы — отдельная работа (см. `10_`, §9) |
 | `EVIDENCE_HOLD` | любой вывод об объёме искупления «по отцам» | не снят; корпус решает экзегезу, не вердикт |
 | `PUBLICATION_HOLD` | весь под-корпус | research ≠ publication |
 
