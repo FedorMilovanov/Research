@@ -116,8 +116,9 @@
       "kind": "PD-скан/транскрипция (archive.org)",
       "title": "PD-англ. (1844–50): Morals on the Book of Job, Library of Fathers",
       "locator": "archive.org: moralsonbookofjo01greguoft, moralsonbookjob01igoog, moralsonbookofj234greguoft, moralsonbookofjo32greg; серия V21/V23/V31",
-      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
-      "rightsState": "PD (издание XIX в.)"
+      "accessState": "ARCHIVE_READ (vol. 1 verified; vols. 2-3 ARCHIVE_AVAILABLE)",
+      "rightsState": "PD (издание XIX в.)",
+      "note": "vol. 1 (moralsonbookofjo01greguoft) прочитан и верифицирован 2026-10-08: host ia601405, полнотекстовый поиск работает; листы 44/166/168/207. 'ransom' = 0 вхождений в vol. 1."
     },
     {
       "id": "ARCHIVE-CYRIL-JOHN-PUSEY",
@@ -150,6 +151,14 @@
       "locator": "tlg2022 = tlg003/007/008/009/010/011/060 (Or. 45 нет); tlg2017, tlg2062, tlg2110, tlg2934 — Not Found",
       "accessState": "ARCHIVE_HOLD для Нисского, Златоуста, Кирилла Иерус., Дамаскина (греч.)",
       "rightsState": "CC BY-SA 4.0 (разметка), текст PD"
+    },
+    {
+      "id": "ARCHIVE-LACTANTIUS-EDUARDUS",
+      "kind": "PD-скан (archive.org)",
+      "title": "Lactantius, Div. Inst. lib. 6 (De vero cultu), rec. Eduardus a S. Xaverio, Neapoli 1757",
+      "locator": "archive.org: bub_gb_Z44TVJoaQNUC (host ia601608; 335 leaves; полнотекстовый поиск работает)",
+      "accessState": "ARCHIVE_READ (leaves 48, 151 verified 2026-10-08)",
+      "rightsState": "PD (pre-1857 printed edition; scan itself PD)"
     }
   ],
   "cards": [
@@ -710,6 +719,23 @@
         "«debt of death» ≠ анзельмов долг чести (F-19)",
         "ORIGINAL_TEXT_HOLD (греч. не сверен)"
       ]
+    },
+    {
+      "cardId": "GRG-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Gregory the Great (c. 540-604), Moralia in Iob (Books I-XII, Part I)",
+      "genre": "exegetical-ascetical commentary",
+      "primaryLocators": [
+        "Moralia vol. 1, Bliss 1844, scan-leaves 44, 166, 168, 207 (ARCHIVE-MORALIA-BLISS)"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "OPEN",
+      "locatorState": "LOCATOR_HOLD (книга/глава/PL-колонки не верифицированы; scan-leaf указан)",
+      "rightsState": "PD",
+      "publicationState": "PUBLICATION_HOLD",
+      "quoteSafe": false,
+      "falseFriendFlags": [],
+      "notes": "Kenosis-victory without ransom-terminology in vol. 1: 'without price' (leaf 44), 'form of accursed man in the work of their redemption' (166), 'given up into the hands of Satan... set us free both outwardly and inwardly' (168), apostate angel 'driven down to a farther depth' (207). 'ransom' = 0 in vol. 1 (full-text search). Not 'ransom to devil' and not Anselmian 'satisfaction'. PL 75-76 ORIGINAL_TEXT_HOLD."
     }
   ],
   "maps": [
@@ -880,6 +906,24 @@
       "locus": "Ambrose, De Officiis III.19 (лат. — не сверено; перевод NPNF)",
       "source": "NPNF2_10.txt:L8263–8264",
       "phrase": "Christ the Lord, Who died for all, will grieve that the price of His blood was paid in vain"
+    },
+    {
+      "cardId": "LAC-1",
+      "locus": "Div. Inst. VI.3",
+      "source": "Eduardus a S. Xaverio 1757 (bub_gb_Z44TVJoaQNUC), leaf 48",
+      "phrase": "Deus, qui ejus viae dux est, immortalitatem nulli homini nato negat."
+    },
+    {
+      "cardId": "LAC-1",
+      "locus": "Div. Inst. VI.12",
+      "source": "Eduardus a S. Xaverio 1757 (bub_gb_Z44TVJoaQNUC), leaf 151",
+      "phrase": "Captivorum redemptio magnum atque praeclarum justitiae munus est. Quod idem ipse Tullius approbavit..."
+    },
+    {
+      "cardId": "GRG-1",
+      "locus": "Moralia vol. 1 (Bliss 1844), scan-leaves 44/166/168/207",
+      "source": "moralsonbookofjo01greguoft (host ia601405)",
+      "phrase": "...without price... form of accursed man in the work of their redemption... given up into the hands of Satan... set us free both outwardly and inwardly... apostate angel driven down to a farther depth."
     }
   ],
   "falseFriendRegister": [
@@ -1126,6 +1170,11 @@
     "Добрать лат. оригиналы через принятые каналы: Irenaeus (Harvey, далее V.1.1 «suadela»), Lactantius (CSEL/PL 6–7), Hilary (PL 10), Jerome (PL 23), Ambrose (PL 16).",
     "Приёмка моралий/Кирилла/Псевдо-Дионисия/Феодорита и карточки по ним.",
     "Греч. сверки: Or. 45.22, Нисский, Златоуст, Кирилл Иер., Дамаскин (см. 10_).",
-    "Свести счётчики JSON (falseFriendRegister/silences) с F/S-реестрами 09_ и обновить заголовок PR."
+    "Свести счётчики JSON (falseFriendRegister/silences) с F/S-реестрами 09_ и обновить заголовок PR.",
+    "Lactantius PL 6 (Migne) — колонки/страницы для Div. Inst. VI.3 и VI.12 (LOCATOR_HOLD до сверки).",
+    "Gregory the Great PL 75-76 — латинский оригинал Moralia (ORIGINAL_TEXT_HOLD); Bliss-перевод vol. 1 верифицирован, vols. 2-3 ждут чтения.",
+    "Hilary PL 10 (De Trinitate) — printed-locator verification.",
+    "Jerome PL 23-30 — printed-locator verification.",
+    "Ambrose PL 14-17 — printed-locator verification."
   ]
 }

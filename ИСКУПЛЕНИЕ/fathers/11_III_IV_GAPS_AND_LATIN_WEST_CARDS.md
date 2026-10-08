@@ -151,10 +151,42 @@
 
 Индекс тома Harvey vol. 2: «Suadela — 6, 7, 301; **ii. 315**» (без префикса = vol. I; «ii.» = vol. II), т.е. интересующая формулировка «не насилием, но убеждением» стоит в vol. II ок. p. 315 (кн. V). Полнотекстовый поиск по телу тома совпадений не дал (OCR/индексные страницы) → F-4 сохраняет оговорку «локус требует отдельной сверки». См. [`09_…`](09_SILENCES_AND_FALSE_FRIENDS.md).
 
+### Лактанций, Div. Inst. VI.3 и VI.12 — латынь сверена (2026-10-08)
+
+**Источник:** *De vero cultu seu Divinarum institutionum liber sextus*, recensuit F. Eduardus a S. Xaverio, Neapoli 1757 — archive.org item `bub_gb_Z44TVJoaQNUC` (host `ia601608`), 335 л.; текст получен **полнотекстовым поиском внутри скана** (`…/fulltext/inside.php?item_id=…&q=…`).
+**VI.3, лист 48:** «…quia Deus, qui ejus viae dux est, **immortalitatem nulli homini nato negat**. Forma quoque ipsarum viarum non ita est, ut illi putaverunt.» — перевод ANF07 «denies immortality to no human being» = *nulli homini nato* («ни одному рождённому человеку»), т. е. всеобщий доступ к пути/пути, а не «всеобщее искупление».
+**VI.12, лист 151:** «**Captivorum redemptio magnum atque praeclarum justitiae munus est.** Quod idem ipse Tullius approbavit, cum ait: *munificentiae ac beneficentiae maxime proprium est…*» — речь о милосердии/милостыне, идиома *redemptio captivorum* = выкуп пленных как социальное дело (цитата из Цицерона); см. F-18.
+**Что это меняет:** LAC-1 п. 1 («denies immortality to no human being») и п. 2 («ransoming of captives») подтверждены по латыни — перевод ANF адекватен, а контекст — именно о пути и о милосердии, а не о сотериологии креста.
+**Ограничение:** издание 1757 г. (не критическое: нет apparatus criticus, нет сверки с рукописями); PL 6 — `LOCATOR_HOLD` (колонки не верифицированы).
+
+---
+
+## GRG-1. Григорий Великий (ок. 540–604), *Moralia in Iob* — уничижение и победа «без цены»
+
+**Канал:** *Morals on the Book of Job by S. Gregory the Great*, vol. 1 (Books I–XII, Part I), trans. [Bliss], Oxford 1844 — archive.org item `moralsonbookofjo01greguoft` (host `ia601405`); PD (OUP pre-1928).
+**Локусы (скан-листы):** 44, 166, 168, 207 (точные листы даны по полнотекстовому поиску внутри скана; печатные страницы и PL-колонки — `LOCATOR_HOLD`).
+
+| Лист | Цитата (Bliss, 1844) | Значение |
+|---|---|---|
+| 44 | «The Only-begotten was made Man **without price** [without a price]… that all were partakers of the gift of His Incarnation» | уничижение (kenosis) как дар «без цены» — **не** выкуп-платёж |
+| 166 | «He took upon Him the **form of accursed man in the work of their redemption**» | уничижение в форме проклятого человека ради искупления |
+| 168 | «…given up into the hands of Satan… that **He might set us free both outwardly and inwardly**» | отдание во власть сатаны (Иов 2:6) — не платёж ему, а путь к освобождению изнутри и извне |
+| 207 | «the apostate angel… was **driven down to a farther depth**» | победа над отступником = унижение его (не сделка с ним) |
+
+**Жанр:** экзегетико-аскетический комментарий (моралии на Иова).
+**Что утверждает:** уничижение Сына как дар (без «цены», уплачиваемой диаволу или Отцу); Христос принимает форму проклятого человека; сатана — субъект, которого «сгоняют глубже», а не кредитор.
+**Что не утверждает:** полнотекстовый поиск по тому: **«ransom» = 0 вхождений**, «price paid to the devil» = 0, «satisfaction» (в юридическом смысле) = 0. В языке *Moralia* vol. 1 — искупление через уничижение-победу, не через платёж.
+**Анахронизм (важно):** читать *Moralia* как «выкуп диаволу» — противоречит тексту; как «удовлетворение правосудия Отца» — противоречит тексту (термина нет); как «удовлетворение по Анзельму» — тем более (Ансельм = XII в.).
+**Пометки:** `LOCATOR_HOLD` (книга/глава/PL); `ORIGINAL_TEXT_HOLD` (латынь PL 75–76 не сверена); перевод XIX в. — проверен по оригинальному английскому Bliss 1844, но не по латинскому оригиналу Григория.
+
+---
+
 ### Что сверилось и что нет (2-я волна)
 
-- **Сверилось:** Ириней III.18.1 (лат., Harvey vol. 2, p. 106); Августин *De Trin.* XIII.12.16/13.17 (Latin Library).
-- **Не сверилось (осталось на переводе ANF/NPNF):** HIP-1, METH-1, ALX-1 (греч.), LAC-1, HIL-1, JER-1, AMB-1, EUS-1 (оригиналы) — см. [`10_…`](10_ORIGINAL_LANGUAGE_VERIFICATION.md), дополнение 2-й волны.
+- **Сверилось:** Ириней III.18.1 (лат., Harvey vol. 2, p. 106); Августин *De Trin.* XIII.12.16/13.17 (Latin Library); **Лактанций Div. Inst. VI.3 (лист 48) и VI.12 (лист 151) — латынь по изд. Eduardus a S. Xaverio 1757 (archive.org `bub_gb_Z44TVJoaQNUC`)**.
+- **Подтвердилось как «ложный друг»:** F-17 (редакторская вставка ANF у Лактанция — подтверждена лат. «nulli homini nato» о пути), F-18 (*redemptio captivorum* = милостыня — подтверждена лат. «captivorum redemptio» и цитатой Цицерона).
+- **Прочитан канал:** GRG-1 (*Moralia* vol. 1, Bliss 1844): уничижение-победа, «без цены», 0 вхождений «ransom» в томе; `LOCATOR_HOLD` / `ORIGINAL_TEXT_HOLD`.
+- **Не сверилось (осталось на переводе ANF/NPNF):** HIP-1, METH-1, ALX-1 (греч.), HIL-1, JER-1, AMB-1, EUS-1 (оригиналы) — см. [`10_…`](10_ORIGINAL_LANGUAGE_VERIFICATION.md), дополнение 2-й волны.
 - **Ловушки этой волны:** F-17 (редакторская вставка ANF у Лактанция), F-18 (*redemptio captivorum* = милостыня), «долг смерти» у Александра Александрийского ≠ *debitum* Анзельма, `redemption` в Еф. 1:14 у Златоуста (F-20).
 
 ---
@@ -168,8 +200,9 @@
 | Амвросий — `LOCATOR_HOLD` | **AMB-1** (De officiis III.3; De Spiritu Sancto I.12.126) |
 | Иероним — `ARCHIVE_HOLD` (том не выгружен) | **JER-1** (Adv. Jovinianum I.11) |
 | Евсевий — не начат | **EUS-1** (Oration XV) + *DE* = `ARCHIVE_HOLD` |
-| III в.: Григорий Чудотворец, Мефодий, Лактанций | **THA-1** (молчание), **MET-1**, **LAC-1** |
+| III в.: Григорий Чудотворец, Мефодий, Лактанций | **THA-1** (молчание), **MET-1**, **LAC-1** + **латынь VI.3/VI.12 сверена** |
 | Александр Александрийский — не заявлен | **ALX-1** |
 | Августин De Trin. XIII — только перевод | **латынь сверена** (XIII.12.16; XIII.13.17) |
+| Григорий Великий — `ARCHIVE_HOLD` | **GRG-1** (*Moralia* vol. 1, Bliss 1844; `LOCATOR_HOLD`/`ORIGINAL_TEXT_HOLD`) |
 
-**Остаётся открытым:** печатные локаторы (ANF/NPNF том + страница; PG/PL) для всех карточек этого файла; греческие оригиналы Мефодия, Ипполита, Александра; Кирилл Алекс. (`Contra Nestorium`, `In Ioannem`) — `ARCHIVE_HOLD`; Григорий Великий (*Moralia*, Bliss) — `ARCHIVE_HOLD`; Феофилакт, Фотий — `RIGHTS_HOLD`; Анзельм (Deane 1903) — `ARCHIVE_HOLD`.
+**Остаётся открытым:** печатные локаторы (ANF/NPNF том + страница; PG/PL) для всех карточек этого файла; греческие оригиналы Мефодия, Ипполита, Александра; латынь PL 6 для Лактанция, PL 75–76 для Григория Вел., PL 10 для Илария; Кирилл Алекс. (`Contra Nestorium`, `In Ioannem`) — `ARCHIVE_HOLD`; Феофилакт, Фотий — `RIGHTS_HOLD`; Анзельм (Deane 1903) — `ARCHIVE_HOLD`.
