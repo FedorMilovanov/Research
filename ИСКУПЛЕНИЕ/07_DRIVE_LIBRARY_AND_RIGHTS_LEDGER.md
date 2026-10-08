@@ -72,6 +72,37 @@
 
 ## 5. Загруженные Google Docs (навигация, не первоисточники)
 
+### 5.0 Актуальные зеркала — проверено 2026-10-09
+
+Таблица ниже собрана запросом к Drive и сверена с `driveMirrors` реестра. **SSOT по ID — `driveMirrors` в [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json)**; эта таблица — для человека.
+
+| Объект | ID | Папка |
+|---|---|---|
+| 00 — AUTHORITY — MIRROR (актуальное) | `1KD-8pMP_Jnk1lmsb2h3JbXxqpWLQgacdBMH57krdy_s` | 00 |
+| 00 — README AND NAVIGATION — ИСКУПЛЕНИЕ | `1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs` | 00 |
+| 01 — MASTER RESEARCH MAP AND SERIES ARCHITECTURE | `1_0I6d9OiRapJWQ9RzsgIAu73dxeArTJSI7ViRBMPlNw` | 00 |
+| 02 — TERMS, DEFINITIONS AND WHAT IS ATONEMENT | `14EwvFHHCY3OlaMJ_tKQH7mGbr3Z3Fc5CqBNGrQNZO7A` | 00 |
+| 06 — PUBLICATION ARCHITECTURE FOR GOSPOD-BOG — DO NOT IMPLEMENT YET | `1mxYsP0RPDM8yNq_XCEJQXpDit96QP2z2KKww7psPcKs` | 00 |
+| 03 — BIBLICAL CORPUS AND REDEMPTION VOCAB — MIRROR | `1Bu5d-44UP1XEz7gvcXuazUjfP4HyDJtOCA39iQmg64w` | 03 |
+| 04 — LIMITED VS UNIVERSAL QUESTION MAP — NO VERDICT — MIRROR | `1GFVUswVklNLz5VCtZRclMFj9b06nA4WUj1pjbIrtNaA` | 05 |
+| 05 — SOURCE REGISTRY AND ACQUISITION QUEUE — MIRROR | `15i2GEHWfM-zxqFmDNyiQaSEGMBWd10hPxg4IdJEMOEg` | 05 |
+| 12 — HARD TEXTS EXTENT CARDS — MIRROR (актуальное) | `18pdqqDj-oJK8hDTmD0OwVZufdJyXPCf5zq181DYFXsU` | 05 |
+| atonement-corpus-v1.json — SSOT (актуальный) | `1Kf78F9i0v9yE0UELBDupkWesz6RiIArw` | 05 |
+| 07 — RIGHTS LEDGER — MIRROR (актуальное, этот файл) | не фиксируется здесь — см. `driveMirrors.file07` в реестре | 06 |
+| 10 — PRIMARY TEXT — DORT HEAD II AND CALVIN — MIRROR | `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo` | 01 |
+| 14 — OWEN BOOK IV LOCATORS — MIRROR (актуальное) | `1EUIv9AU4AE51xXcpSPPBBusCVJKaP33sbp1gHsthgEE` | 01 |
+| Owen, *Works* (PD PDF) | `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` | 01 |
+| Calvin, *Institutes* (PD PDF) | `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` | 01 |
+| Goodwin, *Works* (PD PDF) | `1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M` | 01 |
+| 13 — DORT II, CALVIN, OWEN EXTENT — MIRROR | `1jMpfpjP-ThrWCXLx13wb-d4aOBH9PH39` | 04 |
+| 15 — CALVIN III.24 AND DORT II LOCATORS — MIRROR | `11OYvutqx9z-V5Vcesp3_NUw8Hgccgl47FQ43UkOUMoI` | 04 |
+| 16 — DORT HEAD II ENGLISH 1840 — PRIMARY TEXT (независимый свидетель) | `1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0` | 04 |
+| Westminster Confession of Faith (PD PDF) | `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` | 04 |
+
+**Почему у этого файла нет собственного ID в таблице.** Строка о зеркале `07` лежит внутри самого `07`, поэтому любой перезалив делает её устаревшей в момент публикации — самоссылка. ID живого зеркала `07` — только в `driveMirrors.file07` реестра, и это единственный случай такого рода в таблице.
+
+**Таблица ниже — исторический журнал, не навигация.** Часть ID в ней уже **в корзине** (вытеснены волнами 2026-10-07b–e, до изменения правила) и открывать их не надо. Проверка 2026-10-09: в папках `00`/`01`/`03`/`04`/`05`/`06` лежат 20 живых объектов и **46 объектов в корзине** — корзина видна только через фильтр `trashed = true`, в самой папке она не мешает. Ничего из корзины не удалялось: по правилу владельца удаления без прямой команды не делаются.
+
 | Doc | ID |
 |---|---|
 | README | `1qXjocuWb3xm747BLhtmDBNY4Pd_EhbgZbAlFVgZDqSk` |
