@@ -51,5 +51,7 @@
 
 27. **[27_pan_european_reformed_controversies_and_saumur_condemnation.md](./27_pan_european_reformed_controversies_and_saumur_condemnation.md)** — Общеевропейская рецепция и осуждение Сомюрского гипотетического универсализма (1634–1725): история дебатов и синодов в Швейцарии (Formula Consensus Helvetica 1675), Нидерландах (Спангейм, Риве, Воеций), Франции (суды в Алансоне и Шарантоне), Англии (WCF VIII.8 против Калами), Шотландии (Marrow Controversy) и Германии.
 
+28. **[28_revised_dispensationalism_chou_tms_and_atonement.md](./28_revised_dispensationalism_chou_tms_and_atonement.md)** — Пересмотренный (модифицированный) диспенсационализм школы The Master's Seminary (Абнер Чау, Джон МакАртур) и доктрина искупления: почему герменевтика Чау органически требует Definite Atonement, преодоление сотериологии Чейфера, внутренний кризис позиции А. Прокопенко и тонкости европейских споров (двойная воля Бога, Free Offer и Common Grace).
+
 ---
 *Исследовательская группа догматики, истории церкви и патристики.*
