@@ -25,7 +25,7 @@
 14. [`13_DORT_II_CALVIN_OWEN_EXTENT.md`](13_DORT_II_CALVIN_OWEN_EXTENT.md) — Дорт II, Кальвин, Оуэн как historical control.
 15. [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md) — Оуэн Book IV: world / all / купленные гибнущие.
 16. [`15_CALVIN_III24_AND_DORT_II_LOCATORS.md`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md) — Inst. III.24.15–17; Дорт II.1–9 + Rejection I–VII.
-17. [`ot/00_OT_AUTHORITY_2026-10-08.md`](ot/00_OT_AUTHORITY_2026-10-08.md) — ветхозаветный слой под-корпуса (агент 1): authority, SSOT `ot/data/`, карточка 01 (семейство כפר).
+17. [`ot/00_OT_AUTHORITY_2026-10-08.md`](ot/00_OT_AUTHORITY_2026-10-08.md) — ветхозаветный слой под-корпуса (агент 1): authority, SSOT `ot/data/`, карточки 01–04 (כפר; גאל / פדה; אשם / חטאת; דם).
 
 Машинный локальный реестр: [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json).
 
