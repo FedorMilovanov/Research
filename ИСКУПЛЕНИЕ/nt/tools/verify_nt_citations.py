@@ -76,6 +76,14 @@ def main() -> int:
     checked = 0
     skipped = 0
     files = sorted(CARD_DIR.glob("*.md"))
+    # NT_EXTRA_CARDS — дополнительные файлы верхнего уровня, где под-корпус
+    # оставил греческие цитаты (04_, 12_). Проверяются тем же правилом.
+    extra = [Path(x) for x in os.environ.get("NT_EXTRA_CARDS", "").split(":") if x]
+    for e in extra:
+        if e.is_file():
+            files.append(e)
+        else:
+            print(f"NT_EXTRA_CARDS: не найден {e}")
     for md in files:
         text = md.read_text(encoding="utf-8")
         for raw in re.findall(r"`([^`]+)`", text):
