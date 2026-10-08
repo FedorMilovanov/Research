@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "authorityId": "ATONEMENT-OT-AUTHORITY-2026-10-08",
   "status": "CURRENT / SUB-CORPUS / ACTIVE RESEARCH / NOT PUBLICATION-READY",
   "corpusPath": "ИСКУПЛЕНИЕ/ot",
@@ -20,6 +20,11 @@
     "RIGHTS_HOLD",
     "ARCHIVE_HOLD"
   ],
+  "locatorStateDefinitions": {
+    "1z": "one mirror of the text",
+    "2z": "two independent mirrors (different hosts or transcriptions) agree",
+    "2z-plus": "2z plus a check against apparatus or a second edition"
+  },
   "baseline": {
     "date": "2026-10-08",
     "head": "eee46241208c04e8f7aea792681c18fbd674c2c5",
@@ -30,80 +35,166 @@
       "scripts/validate_genesis6_authority_manifest.py": "FAIL: authorityBaseCommit unavailable: b654c5375a7b212ff9b42c08bb0193eeaad70746 (known local shallow-clone FAIL; manifest not edited)"
     }
   },
+  "wave2": {
+    "date": "2026-10-08",
+    "scope": "card 01 verification: morphology, LXX mirrors, Swete 1887 apparatus spot-checks, lexicon glosses, NT lemma search",
+    "resultsSummary": [
+      "Num 16:46: MT imperative (HC/Vpv2ms); LXX ἐξιλάσεται in B vs ἐξίλασαι in A and F (Swete 1887 apparatus, OCR) — LOCATOR_HOLD on the reading",
+      "Lev 17:11: Swete 1909 digital transcription (Sollupulo) has transcription errors (ψυχὴ, ἐχιλάσεται); other mirrors agree on ἀντὶ τῆς ψυχῆς ἐξιλάσεται; Swete 1887 apparatus records only F omitting τῆς",
+      "Exod 25:17 (MT) = LXX 25:16 in Swete 1909 and eliranwong; LSJ cites 'LXX Ex.25.16(17)'",
+      "Exod 30:12: article variant (Swete: Κυρίῳ; Studylight: τῷ κυρίῳ) — LOCATOR_HOLD",
+      "Lev 17:11 'ἐξειλάσεται B*' from wave 1 NOT supported by Swete 1887 apparatus at 17:11; the B* spelling variant is recorded at Num 16:46 instead",
+      "NT: ἐξιλάσκομαι absent from NT (lemma search, SBLGNT via MorphGNT); ἱλάσκομαι Lk 18:13, Heb 2:17; ἱλασμός 1 Jn 2:2, 4:10; ἱλαστήριον Rom 3:25, Heb 9:5; λύτρον Mt 20:28, Mk 10:45; ἀντίλυτρον 1 Tim 2:6",
+      "BDB: כפר has several entries under Strong 3722 (kipper; denominative 'pitch' Gen 6:14); כֹּפֶר homonyms (ransom; pitch; henna); כַּפֹּרֶת: 'lid' rejected by BDB 1906"
+    ]
+  },
   "cards": [
     {
       "id": "01",
       "file": "ИСКУПЛЕНИЕ/ot/01_LEX_KPR_KIPPER_FAMILY.md",
       "topic": "כפר: kipper / kopher / kapporet",
-      "status": "DONE_WAVE1",
+      "status": "DONE_WAVE1_WAVE2_VERIFIED_PARTIAL",
       "evidenceClass": "A1",
-      "accessState": "full verse text (MT and LXX) for listed loci",
-      "rightsState": "original-language text; short quotations only; no file uploads",
+      "accessState": "full verse text (MT and LXX) for listed loci; apparatus checks for Lev 17:11 and Num 16:46–47 only",
+      "rightsState": "original-language text; short quotations only; no file uploads; mirror transcriptions used for verification only",
       "publicationState": "research only",
       "holds": ["EVIDENCE_HOLD", "LOCATOR_HOLD", "PUBLICATION_HOLD"],
       "verses": [
         {
-          "ref": "Lev 17:11",
-          "mt": "לְכַפֵּר / יְכַפֵּר; הַדָּם בַּנֶּפֶשׁ יְכַפֵּר",
-          "lxx": "ἐξιλάσκεσθαι; ἀντὶ τῆς ψυχῆς ἐξιλάσεται",
-          "hosts": ["studylight", "blueletterbible-lxx", "biblehub-multi-swete", "sefaria-mt"],
-          "locatorState": "2z-plus"
+          "ref": "Gen 32:20 (MT 32:21)",
+          "numbering": "LXX 32:20 = MT 32:21",
+          "mt": "אֲכַפְּרָה פָנָיו בַּמִּנְחָה",
+          "mtMorph": "HVph1cs (lemma 3722 a): piel cohortative 1cs",
+          "lxx": "ἐξιλάσομαι τὸ πρόσωπον αὐτοῦ ἐν τοῖς δώροις",
+          "lxxVariants": [],
+          "hosts": ["studylight", "swete-1909-sollupulo (1.Gen.32.20)", "swete-1930-eliranwong"],
+          "apparatusCheck": "not done",
+          "locatorState": "2z"
         },
         {
-          "ref": "Lev 4:20",
-          "mt": "וְכִפֶּר עֲלֵהֶם הַכֹּהֵן וְנִסְלַח לָהֶם",
-          "lxx": "ἐξιλάσεται περὶ αὐτῶν ὁ ἱερεύς, καὶ ἀφεθήσεται αὐτοῖς ἡ ἁμαρτία",
-          "hosts": ["studylight"],
-          "locatorState": "1z"
-        },
-        {
-          "ref": "Exod 25:17",
+          "ref": "Exod 25:17 (MT)",
+          "numbering": "Swete 1909 and eliranwong: ἱλαστήριον ἐπίθεμα is LXX 25:16 (= MT 25:17); LXX 25:17 = cherubim (MT 25:18); LSJ cites 'Ex.25.16(17)'",
           "mt": "כַּפֹּרֶת",
+          "mtMorph": "HNcfsc (lemma 3727): noun, feminine singular, construct",
           "lxx": "ἱλαστήριον ἐπίθεμα",
-          "hosts": ["studylight"],
-          "locatorState": "1z"
+          "lxxVariants": [],
+          "hosts": ["studylight", "swete-1909-sollupulo (2.Exod.25.16)", "swete-1930-eliranwong (Exo.25:16)", "lsj (Perseus)"],
+          "apparatusCheck": "not done",
+          "locatorState": "2z"
         },
         {
           "ref": "Exod 30:12",
-          "mt": "כֹּפֶר נַפְשׁוֹ",
-          "lxx": "λύτρα τῆς ψυχῆς αὐτοῦ",
-          "hosts": ["studylight"],
-          "locatorState": "1z"
+          "numbering": "MT = LXX",
+          "mt": "כֹּפֶר נַפְשׁוֹ; נֶגֶף",
+          "mtMorph": "HNcmsc (lemma 3724) for כֹּפֶר; HNcmsa (lemma 5063) for נֶגֶף",
+          "lxx": "λύτρα τῆς ψυχῆς αὐτοῦ (Studylight: τῷ κυρίῳ); (Swete: Κυρίῳ); πτῶσις",
+          "lxxVariants": [{"where": "after λύτρα…ψυχῆς αὐτοῦ", "note": "article τῷ present in Studylight, absent in Swete 1909 and Swete 1930 (and LSJ quotation)", "status": "LOCATOR_HOLD"}],
+          "hosts": ["studylight", "swete-1909-sollupulo (2.Exod.30.12)", "swete-1930-eliranwong", "lsj (Perseus)"],
+          "apparatusCheck": "not done",
+          "locatorState": "2z"
+        },
+        {
+          "ref": "Lev 4:20",
+          "numbering": "MT = LXX",
+          "mt": "וְכִפֶּר עֲלֵהֶם הַכֹּהֵן וְנִסְלַח לָהֶם",
+          "mtMorph": "HC/Vpq3ms (lemma 3722 a): piel sequential perfect 3ms; HC/VNq3ms (lemma 5545): niphal sequential perfect 3ms",
+          "lxx": "ἐξιλάσεται περὶ αὐτῶν ὁ ἱερεύς, καὶ ἀφεθήσεται αὐτοῖς ἡ ἁμαρτία",
+          "lxxVariants": [],
+          "hosts": ["studylight", "swete-1909-sollupulo (3.Lev.4.20)", "swete-1930-eliranwong"],
+          "apparatusCheck": "not done",
+          "locatorState": "2z"
+        },
+        {
+          "ref": "Lev 17:11",
+          "numbering": "MT = LXX",
+          "mt": "לְכַפֵּר עַל־נַפְשֹׁתֵיכֶם; כִּי־הַדָּם הוּא בַּנֶּפֶשׁ יְכַפֵּר",
+          "mtMorph": "HR/Vpc (lemma 3722 a): piel infinitive construct with lamed; HVpi3ms (lemma 3722 a): piel imperfect 3ms",
+          "lxx": "ἐξιλάσκεσθαι περὶ τῶν ψυχῶν ὑμῶν; ἀντὶ τῆς ψυχῆς ἐξιλάσεται",
+          "lxxVariants": [
+            {"where": "Swete 1909 digital transcription (Sollupulo, 3.Lev.17.11)", "note": "transcription errors: 'ψυχὴ' for 'ψυχῆς', 'ἐχιλάσεται' for 'ἐξιλάσεται'", "status": "transcription error; do not use for orthography"},
+            {"where": "Swete 1887 apparatus (OCR)", "note": "one note: 'της ψυχης] om της F' (F omits the article τῆς); no note against ἀντὶ τῆς ψυχῆς in B or A", "status": "OCR; sigla to verify against image"},
+            {"where": "wave 1 claim 'ἐξειλάσεται (B*)'", "note": "NOT found in Swete 1887 apparatus at 17:11; the B* spelling ἐξειλ- is recorded at Num 16:46 instead", "status": "withdrawn; unverified"}
+          ],
+          "hosts": ["studylight", "blueletterbible-lxx", "biblehub-multi-swete", "sefaria-mt", "swete-1909-sollupulo (with errors)", "swete-1930-eliranwong", "swete-1887-apparatus-ocr (archive.org)"],
+          "apparatusCheck": "done (Swete 1887 OCR)",
+          "locatorState": "2z-plus"
         },
         {
           "ref": "Num 16:46 (MT 17:11)",
-          "mt": "וְכַפֵּר עֲלֵיהֶם; כִּי־יָצָא הַקֶּצֶף",
-          "lxx": "ἐξίλασαι περὶ αὐτῶν; ἐξῆλθεν γὰρ ὀργὴ",
-          "hosts": ["studylight"],
-          "locatorState": "1z"
+          "numbering": "MT 17:11 = LXX 16:46",
+          "mt": "וְכַפֵּר עֲלֵיהֶם כִּי־יָצָא הַקֶּצֶף",
+          "mtMorph": "HC/Vpv2ms (lemma 3722 a): piel imperative 2ms with waw",
+          "lxx": "καὶ ἐξιλάσεται περὶ αὐτῶν (Swete 1909; eliranwong; Swete 1887 B text); καὶ ἐξίλασαι περὶ αὐτῶν (Studylight)",
+          "lxxVariants": [
+            {"where": "Swete 1887 apparatus (OCR)", "note": "main text ἐξιλάσεται (B); A and F read ἐξίλασαι; B* spells ἐξειλ-, corrected to ἐξιλ- by a corrector", "status": "substantive (mood and tense); LOCATOR_HOLD; OCR sigla to verify against image"},
+            {"where": "Swete 1887 apparatus (OCR)", "note": "ἀπένεγκε: A and F read ἀπενεγκαι", "status": "minor"}
+          ],
+          "hosts": ["studylight", "swete-1909-sollupulo (4.Num.16.46)", "swete-1930-eliranwong", "swete-1887-apparatus-ocr (archive.org)"],
+          "apparatusCheck": "done (Swete 1887 OCR)",
+          "locatorState": "2z-plus (text); LOCATOR_HOLD (reading)"
+        },
+        {
+          "ref": "Num 16:47 (MT 17:12)",
+          "numbering": "MT 17:12 = LXX 16:47",
+          "mt": "וַיְכַפֵּר עַל הָעָם",
+          "mtMorph": "HC/Vpw3ms (lemma 3722 a): piel, waw-consecutive imperfect 3ms",
+          "lxx": "ἐπέβαλεν τὸ θυμίαμα καὶ ἐξιλάσατο περὶ τοῦ λαοῦ",
+          "lxxVariants": [{"where": "Swete 1887 apparatus (OCR)", "note": "notes to ἐνῆρκται and ἐπέβαλεν only; none to ἐξιλάσατο", "status": "OCR"}],
+          "hosts": ["swete-1887-apparatus-ocr (archive.org)", "swete-1930-eliranwong"],
+          "apparatusCheck": "done (Swete 1887 OCR)",
+          "locatorState": "2z"
         },
         {
           "ref": "Num 35:33",
-          "mt": "וְלָאָרֶץ לֹא־יְכֻפַּר לַדָּם",
-          "lxx": "οὐκ ἐξιλασθήσεται ἡ γῆ ἀπὸ τοῦ αἵματος",
-          "hosts": ["studylight"],
-          "locatorState": "1z"
+          "numbering": "MT = LXX",
+          "mt": "וְלָאָרֶץ לֹא־יְכֻפַּר לַדָּם; וְלֹא תַחֲנִיפוּ אֶת־הָאָרֶץ; יַחֲנִיף אֶת־הָאָרֶץ",
+          "mtMorph": "HVPi3ms (lemma 3722 a): pual imperfect 3ms; HVhi2mp and HVhi3ms (lemma 2610): hiphil",
+          "lxx": "οὐκ ἐξιλασθήσεται ἡ γῆ ἀπὸ τοῦ αἵματος; μὴ φονοκτονήσητε; φονοκτονεῖ",
+          "lxxVariants": [],
+          "hosts": ["studylight", "swete-1909-sollupulo (4.Num.35.33)", "swete-1930-eliranwong"],
+          "apparatusCheck": "not done",
+          "locatorState": "2z"
         },
         {
           "ref": "Ps 49:7 (MT 49:8; LXX 48:8)",
+          "numbering": "MT 49:8 = LXX 48:8",
           "mt": "לֹא־יִתֵּן לֵאלֹהִים כָּפְרוֹ",
-          "lxx": "οὐ δώσει τῷ θεῷ ἐξίλασμα αὐτοῦ",
-          "hosts": ["studylight"],
-          "locatorState": "1z"
-        },
-        {
-          "ref": "Gen 32:20 (MT 32:21)",
-          "mt": "אֲכַפְּרָה פָנָיו בַּמִּנְחָה",
-          "lxx": "ἐξιλάσομαι τὸ πρόσωπον αὐτοῦ ἐν τοῖς δώροις",
-          "hosts": ["studylight"],
-          "locatorState": "1z"
+          "mtMorph": "HNcmsc/Sp3ms (lemma 3724) for כָּפְרוֹ; HVqa (lemma 6299) for פָּדֹה; HVqi3ms (lemma 6299) for יִפְדֶּה",
+          "lxx": "ἀδελφὸς οὐ λυτροῦται· λυτρώσεται ἄνθρωπος οὐ δώσει τῷ θεῷ ἐξίλασμα αὐτοῦ",
+          "lxxVariants": [],
+          "hosts": ["studylight", "swete-1930-eliranwong (Psa.48:8)"],
+          "apparatusCheck": "not done (Göttingen Psalter not available; see ARCHIVE_HOLD)",
+          "locatorState": "2z"
         }
       ],
+      "lexicon": [
+        {"source": "BDB (HebrewLexicon, openscriptures)", "entry": "k.ct.ac (Strong 3722, Pi.)", "gloss": "cover over (fig.), pacify, make propitiation; cover over, atone for sin, without sacrifice; cover over, atone for sin and persons by legal rites", "status": "checked; BDB 1906", "license": "text PD; compilation CC BY 4.0"},
+        {"source": "BDB", "entry": "k.ct.ab (כֹּפֶר)", "gloss": "the price of a life, ransom", "status": "checked", "license": "text PD; compilation CC BY 4.0"},
+        {"source": "BDB", "entry": "k.cu.ab (כֹּ֫פֶר, Strong 3724)", "gloss": "pitch (Gen 6:14)", "status": "checked; homonym", "license": "text PD; compilation CC BY 4.0"},
+        {"source": "BDB", "entry": "k.cv.ac (כֹּ֫פֶר, Strong 3724)", "gloss": "name of a plant, henna", "status": "checked; homonym", "license": "text PD; compilation CC BY 4.0"},
+        {"source": "BDB", "entry": "k.cu.ac (כָּפַר, Strong 3722)", "gloss": "vb. denom.; Gen 6:14 'pitch'", "status": "checked; separate verb entry", "license": "text PD; compilation CC BY 4.0"},
+        {"source": "BDB", "entry": "k.ct.ae (כַּפֹּרֶת, Strong 3727)", "gloss": "propitiatory, late technical word; the older explanation 'cover, lid' has no justification in usage", "status": "checked; disputed by modern translations; HALOT not checked", "license": "text PD; compilation CC BY 4.0"},
+        {"source": "LSJ (Perseus)", "entry": "e)cila/skomai (ἐξιλάσκομαι)", "gloss": "propitiate, appease; atone for; Pass.; abs. make atonement; LXX Ex 30.15, 32.30; Ez 45.17", "status": "checked", "license": "MPL 1.1 per repository README"},
+        {"source": "LSJ (Perseus)", "entry": "e)cilasmo/s (ἐξιλασμός)", "gloss": "= ἐξίλασις; LXX Lev 23:27 (Day of Atonement)", "status": "checked", "license": "MPL 1.1 per repository README"},
+        {"source": "LSJ (Perseus)", "entry": "e)ci/lasma (ἐξίλασμα)", "gloss": "ransom, propitiatory offering; LXX 1 Ki 12.3; Ps 48(49):8", "status": "checked", "license": "MPL 1.1 per repository README"},
+        {"source": "LSJ (Perseus)", "entry": "i(lasth/rios (ἱλαστήριον)", "gloss": "the mercy-seat, covering of the ark in the Holy of Holies; LXX Ex 25.16(17); Lev 16:2; Heb 9:5; propitiatory gift or offering (Rom 3:25)", "status": "checked", "license": "MPL 1.1 per repository README"},
+        {"source": "LSJ (Perseus)", "entry": "lu/tron (λύτρον)", "gloss": "price of release, ransom; LXX Ex 30.12; NT sg. Mt 20:28, Mk 10:45; atonement", "status": "checked", "license": "MPL 1.1 per repository README"}
+      ],
+      "nt": [
+        {"lemma": "ἐξιλάσκομαι", "refs": [], "linkType": "absent from NT (lemma search, 27 books)"},
+        {"lemma": "ἱλάσκομαι", "refs": ["Lk 18:13", "Heb 2:17"], "linkType": "lexical proximity; not a quotation"},
+        {"lemma": "ἱλασμός", "refs": ["1 Jn 2:2", "1 Jn 4:10"], "linkType": "concept; different lexeme; 1 Jn 2:2 has 'whole world' (scope — not decided here)"},
+        {"lemma": "ἱλαστήριον", "refs": ["Rom 3:25", "Heb 9:5"], "linkType": "Heb 9:5 allusion to the object (ark cover); Rom 3:25 lexical continuity without the ark"},
+        {"lemma": "λύτρον", "refs": ["Mt 20:28", "Mk 10:45"], "linkType": "lexical proximity to V3/V8 (ransom); different lexeme; 'ἀντὶ πολλῶν' — scope not decided here"},
+        {"lemma": "λύτρωσις / λυτρόομαι / ἀντίλυτρον", "refs": ["Lk 1:68", "Heb 9:12", "1 Tim 2:6"], "linkType": "family 'ransom'; 1 Tim 2:6 ἀντίλυτρον ὑπὲρ πάντων — universal wording, pointer for agent 2 only"},
+        {"lemma": "Heb 9:22 (phrase)", "refs": ["Heb 9:22"], "linkType": "NT interpretation of Tora ('almost all things are cleansed with blood'), not a quotation of Lev"}
+      ],
       "openChecks": [
-        "two-host check for Exod 25:17, Exod 30:12, Lev 4:20, Num 16:46, Num 35:33, Ps 49:7, Gen 32:20",
-        "LXX edition (Göttingen / Swete) for variant readings: Lev 17:11 ἐξιλάσεται vs ἐξειλάσεται; Num 35:33 ἐξιλασθήσεται",
-        "lexicon glosses (BDB / Thayer / LSJ public-domain copies only)",
-        "additional kipper loci: Lev 16:16, 16:20, 16:30; Exod 21:30; Ezek 16:63; Ps 78:38 (LXX 77:38); 2 Sam 21:3; Prov 16:6"
+        "Swete 1887 apparatus (archive.org OCR, fragments): Gen 32:20, Exod 25:16–17, Exod 30:12, Lev 4:20, Num 35:33, Ps 48:8",
+        "Göttingen (owner's legal access): Lev 17:11 spelling B*, Num 16:46 mood, Exod 30:12 article (LOCATOR_HOLD)",
+        "HALOT (not open): כפר denominative; כַּפֹּרֶת 'lid' vs 'propitiatory'; כֹּפֶר homonyms",
+        "Context check V4 (Lev 4:13–14) and V6 (Num 16:41–48): referent of 'for them'",
+        "Additional kipper loci (queue for card 08 and others): Lev 16:16, 16:20, 16:30; Lev 23:27 (LSJ ἐξιλασμός); Exod 21:30; Ezek 16:63; Ps 78:38 (LXX 77:38); 2 Sam 21:3; Prov 16:6"
       ]
     }
   ],
@@ -114,7 +205,7 @@
     {"id": "05", "topic": "צֶדֶק / צְדָקָה; שְׁלָמִים, עֹלָה, מִנְחָה, תָּמִיד", "status": "NOT_STARTED"},
     {"id": "06", "topic": "Исх. 12 — пасха", "status": "NOT_STARTED"},
     {"id": "07", "topic": "Лев. 1–7 — система жертв", "status": "NOT_STARTED"},
-    {"id": "08", "topic": "Лев. 16 — День очищения; два козла; לַעֲזָאזֵל (пять живых чтений)", "status": "NOT_STARTED"},
+    {"id": "08", "topic": "Лев. 16 — День очищения; два козла; לַעֲזָאזֵל (пять живых чтений); LXX Lev 16:2 ἱλαστήριον; Lev 23:27 ἐξιλασμός в очереди", "status": "NOT_STARTED"},
     {"id": "09", "topic": "Числ. 19 — красная телица", "status": "NOT_STARTED"},
     {"id": "10", "topic": "Исх. 24 (кровь завета); Быт. 22 (Мориа)", "status": "NOT_STARTED"},
     {"id": "11", "topic": "Ис. 52:13–53:12 (אָשָׁם 53:10; רַבִּים 53:11–12)", "status": "NOT_STARTED"},
@@ -123,7 +214,20 @@
     {"id": "14", "topic": "Иер. 31:31–34; Иов 19:25; 33:24", "status": "NOT_STARTED"},
     {"id": "15", "topic": "Ос. 13:14; Мих. 6:6–8; Ис. 1:11–17; Ам. 5; Пс. 51/50:16–17", "status": "NOT_STARTED"}
   ],
-  "sourceRegistryRows": ["S05", "S06", "S07", "S08", "S09"],
+  "sourceRegistryRows": ["S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12", "S13", "S14", "S15", "S16", "S17", "S18", "S19", "S20"],
+  "sources": [
+    {"id": "S10", "class": "P-BIBLE", "name": "Swete 1909 LXX — digital transcription (Sollupulo/Swete-1909-LXX)", "locator": "github.com/Sollupulo/Swete-1909-LXX (1.Genesis, 2.Exodus, 3.Leviticus, 4.Numbers)", "usedFor": "LXX Gen 32:20; Exod 25:16–17, 30:12; Lev 4:20, 17:11; Num 16:46, 35:33", "status": "CHECKED (2z; transcription errors at Lev 17:11)", "evidenceClass": "A1 (text)", "accessState": "body text, no apparatus", "locatorState": "2z", "rightsState": "CC BY-SA 4.0 (digital); print PD", "publicationState": "not published; locators only", "storage": "NOT_STORED"},
+    {"id": "S11", "class": "P-BIBLE", "name": "LXX Swete 1930 — word-level transcription (eliranwong/LXX-Swete-1930)", "locator": "github.com/eliranwong/LXX-Swete-1930 (02-…word_without_punctuations.csv; 00-…versification.csv)", "usedFor": "verification of all eight loci; Num 16:47; Ps 48:8", "status": "CHECKED (verification only)", "evidenceClass": "A1 (text)", "accessState": "word CSV + versification", "locatorState": "2z", "rightsState": "GPL-3.0 (data); NOT redistributed", "publicationState": "not published", "storage": "NOT_STORED"},
+    {"id": "S12", "class": "P-BIBLE", "name": "Swete 1887, vol. I (Genesis–IV Kings), with apparatus", "locator": "archive.org/details/oldtestamentingr01swet (djvu.txt; OCR tesseract; fragments 90, 94–95, 119–121 checked)", "usedFor": "apparatus: Lev 17:11; Num 16:46–47; (Lev 13 apparatus presence)", "status": "CHECKED by hand (OCR sigla to verify against image)", "evidenceClass": "A1 (critical edition, 1887)", "accessState": "OCR text", "locatorState": "2z-plus", "rightsState": "PD (1887)", "publicationState": "OCR not copied; locators only", "storage": "LINK_ONLY"},
+    {"id": "S13", "class": "P-BIBLE", "name": "MT morphology — openscriptures/morphhb (wlc OSIS XML)", "locator": "github.com/openscriptures/morphhb (wlc/Gen.xml, Exod.xml, Lev.xml, Num.xml, Ps.xml)", "usedFor": "lemma and morphology for V1–V8 and Num 17:12", "status": "CHECKED", "evidenceClass": "A1 (annotated text)", "accessState": "full OSIS", "locatorState": "2z", "rightsState": "WLC public domain; annotation CC BY 4.0 (attribution required)", "publicationState": "attribution required", "storage": "NOT_STORED"},
+    {"id": "S14", "class": "P-LEX", "name": "BDB — openscriptures/HebrewLexicon (BrownDriverBriggs.xml, LexicalIndex.xml)", "locator": "github.com/openscriptures/HebrewLexicon (readme.md)", "usedFor": "glosses k.ct.ac, k.ct.ab, k.cu.ab, k.cu.ac, k.cv.ac, k.ct.ae", "status": "CHECKED", "evidenceClass": "B1 (lexicon; 1906)", "accessState": "full XML", "locatorState": "1z", "rightsState": "text of BDB public domain; compilation CC BY 4.0", "publicationState": "short glosses with attribution", "storage": "LINK_ONLY"},
+    {"id": "S15", "class": "P-LEX", "name": "LSJ — Perseus via cltk/greek_lexica_perseus (greek_english_lexicon_lsj_1.xml)", "locator": "github.com/cltk/greek_lexica_perseus (README: MPL 1.1)", "usedFor": "e)cila/skomai; e)cilasmo/s; e)ci/lasma; i(lasth/rios; lu/tron", "status": "CHECKED", "evidenceClass": "B1 (lexicon; 1843/1940)", "accessState": "full XML (beta-code keys)", "locatorState": "1z", "rightsState": "MPL 1.1 (per README)", "publicationState": "short glosses with attribution", "storage": "LINK_ONLY"},
+    {"id": "S16", "class": "P-BIBLE", "name": "NT Greek — morphgnt/sblgnt (MorphGNT lemma column; SBLGNT text)", "locator": "github.com/morphgnt/sblgnt (61-…-morphgnt.txt to 87-Re)", "usedFor": "lemma search (ἐξιλάσκομαι absent; ἱλάσκομαι, ἱλασμός, ἱλαστήριον, λύτρον, ἀντίλυτρον); Heb 9:22", "status": "CHECKED", "evidenceClass": "A1 (text) for NT locators", "accessState": "full text (annotated)", "locatorState": "2z? (single annotated edition; no second NT mirror checked)", "rightsState": "annotation CC BY-SA 3.0; SBLGNT text under SBLGNT EULA", "publicationState": "locators and short phrases only", "storage": "NOT_STORED"},
+    {"id": "S17", "class": "P-LIB", "name": "Göttingen Septuaginta — volume status (Gen 1974; Exod 1991; Lev 1986; Num 1982; Psalter — project since 2020)", "locator": "adw-goe.de/en/research/completed-research-projects/academies-programme/septuaginta/ ; Brill bibliography; SearchWorks; CCAT IOSCS", "usedFor": "ARCHIVE_HOLD; identifying which critical edition would decide the variants", "status": "CHECKED (bibliography); text not opened", "evidenceClass": "n/a", "accessState": "none (no legal open copy found)", "locatorState": "n/a", "rightsState": "copyrighted print edition", "publicationState": "not published", "storage": "LINK_ONLY"},
+    {"id": "S18", "class": "P-LIB", "name": "Göttingen 'Text History' volumes (MSU XI, XVI, XIX, XXI) — PDF downloads listed on ADW page", "locator": "adw-goe.de (same page; 'PDF-Download' links for Gen 1974, Num 1982, Lev 1986, Exod 1992)", "usedFor": "candidate open route for variant history (not yet opened)", "status": "NOT_OPENED", "evidenceClass": "B1 (secondary) if used", "accessState": "listed, not opened", "locatorState": "n/a", "rightsState": "unknown: check licence before downloading", "publicationState": "n/a", "storage": "NOT_STORED"},
+    {"id": "S19", "class": "EXCLUDED", "name": "eliranwong/LXX-Rahlfs-1935 (Rahlfs text, no licence)", "locator": "github.com/eliranwong/LXX-Rahlfs-1935", "usedFor": "none", "status": "EXCLUDED (no licence; Rahlfs text is copyrighted)", "evidenceClass": "n/a", "accessState": "not used", "locatorState": "n/a", "rightsState": "unclear / protected", "publicationState": "NO", "storage": "NOT_STORED"},
+    {"id": "S20", "class": "CANDIDATE", "name": "Holmes–Parsons, Vetus Testamentum Graecum cum variis lectionibus (1798–1827)", "locator": "not opened (scans on archive.org / Google Books — to check)", "usedFor": "possible open apparatus for variants (wider than Swete 1887)", "status": "NOT_OPENED", "evidenceClass": "A1 (edition, 18th–19th c.)", "accessState": "not checked", "locatorState": "n/a", "rightsState": "PD (expected; verify)", "publicationState": "n/a", "storage": "NOT_STORED"}
+  ],
   "doNot": [
     "pirate-copyrighted-pdfs",
     "use-pirate-host-copies-of-commentaries",
@@ -131,6 +235,8 @@
     "claim-limited-atonement-proved",
     "change-research-root-authority",
     "close-EVIDENCE_HOLD-in-ot-subcorpus",
-    "commit-google_drive-scratch-exports"
+    "commit-google_drive-scratch-exports",
+    "copy-transcriptions-with-copyleft-or-unlicensed-data-into-repo",
+    "cite-Lev-17:11-ἐξειλάσεται-B*-without-image-check"
   ]
 }
