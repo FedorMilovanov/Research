@@ -60,6 +60,19 @@
       "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.3 по номеру; Мюррей I.2 — пересказ B1 через 10_ с пометкой, без цитат"
     },
     {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "role": "черновик статьи A4 (совершенство): раз и навсегда; не полемика ради полемики; узел definiteness без коммерческой карикатуры",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.3/II.4 + Rejection I/VI по номерам; Мюррей I.3 — пересказ B1 через 10_ с пометкой, без цитат"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "role": "черновик статьи B1 (постановка вопроса об объёме): правильные вопросы, оси, позиции P1–P8 без карикатур, история спора, ось offer; вердикт не вынесен",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.3/II.5/II.8 + Rejection по номерам; Кальвин III.24.16–17 — пересказ по chunks 330–331; OPC 1948 — пересказ; без цитат современных авторов",
+      "note": "B1 — первая статья слоя B; ставит вопрос, не выносит вердикт (EVIDENCE_HOLD). B2 не начинать до закрытия HARD-досье"
+    },
+    {
       "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
       "role": "SSOT под-корпуса (этот файл)",
       "status": "DONE"
