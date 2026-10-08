@@ -85,7 +85,7 @@
 
 | Локус | Локатор | Текст |
 |---|---|---|
-| *De officiis* III.3 (§19) | `NPNF2_10.txt:L8263–8264` | «…the whole community of the human race [is] disturbed in one man… **Christ the Lord, also, Who died for all, will grieve that the price of His blood was paid in vain.**» |
+| *De officiis* III.19 (кн. III, гл. III = §19; гл. III с `L8192`, гл. IV с `L8336`) | `NPNF2_10.txt:L8263–8264` | «…the whole community of the human race [is] disturbed in one man… **Christ the Lord, also, Who died for all, will grieve that the price of His blood was paid in vain.**» |
 | *De Spiritu Sancto* I.12.126 | `NPNF2_10.txt:L11952–11954` | «The peace and grace of the Father, the Son, and the Holy Spirit are one, so also is Their charity one, **which showed itself chiefly in the redemption of man**.» |
 | *De officiis* (о выкупе пленных) | `NPNF2_10.txt:L7650, L7690–7694` | «the redemption of captives» — милостыня, а не учение о кресте (лат. идиома, см. LAC-1) |
 
@@ -139,6 +139,23 @@
 - **XIII.13.17**: «**Non autem diabolus potentia dei sed iustitia superandus fuit.** … placuit deo ut **propter eruendum hominem de diaboli potestate non potentia diabolus sed iustitia uinceretur**, atque ita et homines imitantes Christum iustitia quaererent diabolum uincere non potentia.»
   (Осторожно с чтением: в транскрипции «non potentia diabolus sed iustitia uinceretur»; NPNF-перевод даёт «не силой Бога, но Его праведностью» — см. [`05_`](05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md), AUG-1.)
 **Что это меняет:** центральная формула AUG-1 («праведностью, не властью») теперь подтверждена по латыни, а не только по переводу XIX в.
+
+### Ириней, *Adv. haer.* III.18.1 — латынь найдена (2-я волна, 2026-10-08)
+
+**Источник:** Irenaeus, *Libros quinque adversus haereses*, ed. W. W. Harvey, vol. 2 (Cantabrigiae 1857) — archive.org item `sanctiirenaeiep00harvgoog`; текст получен **полнотекстовым поиском внутри скана** (`…/fulltext/inside.php?item_id=…&q=…`), скан-страница 106.
+**Цитата (лат.):** «…sed quando incarnatus est, et homo factus, **longam hominum expositionem in seipso recapitulavit**, in compendio nobis salutem praestans, ut quod perdideramus in Adam, id est, secundum imaginem et similitudinem esse Dei, hoc in Christo Jesu reciperemus.»
+**Аппарат:** скан-стр. 452 (дополнения тома): «longam hominum expositionem **denuo instauravit** (*Int.* ?in seipso recapitulavit])» — сирийское чтение «начал заново» против латинского «recapitulavit»; ср. ANF01, сноска [3633] («So the Syriac. The Latin has, 'in seipso recapitulavit'»).
+**Итог:** вторая половина F-16 закрыта — латинское `recapitulavit` в III.18.1 подтверждено по печатному изданию (скан), а не по переводу. Ограничение: латынь *Adv. haer.* — древний перевод; греческий оригинал книги III в PD-каналах отсутствует.
+
+### Ириней, кн. V — проверка F-4 (частично)
+
+Индекс тома Harvey vol. 2: «Suadela — 6, 7, 301; **ii. 315**» (без префикса = vol. I; «ii.» = vol. II), т.е. интересующая формулировка «не насилием, но убеждением» стоит в vol. II ок. p. 315 (кн. V). Полнотекстовый поиск по телу тома совпадений не дал (OCR/индексные страницы) → F-4 сохраняет оговорку «локус требует отдельной сверки». См. [`09_…`](09_SILENCES_AND_FALSE_FRIENDS.md).
+
+### Что сверилось и что нет (2-я волна)
+
+- **Сверилось:** Ириней III.18.1 (лат., Harvey vol. 2, p. 106); Августин *De Trin.* XIII.12.16/13.17 (Latin Library).
+- **Не сверилось (осталось на переводе ANF/NPNF):** HIP-1, METH-1, ALX-1 (греч.), LAC-1, HIL-1, JER-1, AMB-1, EUS-1 (оригиналы) — см. [`10_…`](10_ORIGINAL_LANGUAGE_VERIFICATION.md), дополнение 2-й волны.
+- **Ловушки этой волны:** F-17 (редакторская вставка ANF у Лактанция), F-18 (*redemptio captivorum* = милостыня), «долг смерти» у Александра Александрийского ≠ *debitum* Анзельма, `redemption` в Еф. 1:14 у Златоуста (F-20).
 
 ---
 

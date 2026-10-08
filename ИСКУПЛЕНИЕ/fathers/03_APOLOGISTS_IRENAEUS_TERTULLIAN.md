@@ -143,7 +143,7 @@
 
 ---
 
-## H-1. Ипполит Римский (→ карточка [`11_…`](11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md), HIP-1)
+## H-1. Ипполит Римский — см. карточку HIP-1 в [`11_…`](11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md) (→ карточка [`11_…`](11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md), HIP-1)
 
 **Статус:** `LOCATOR_HOLD` — в этой волне конкретный искупительный локус **не локализован**.
 **Что есть:** ANF05 (Hippolytus: Philosophumena, «On Christ and Antichrist» и др.) — PD, доступен целиком.

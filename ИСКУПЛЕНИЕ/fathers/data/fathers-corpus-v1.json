@@ -108,7 +108,7 @@
       "kind": "PD-скан/транскрипция (archive.org)",
       "title": "PD-скан (1857): Harvey, S. Irenaei libros quinque adversus haereses, vol. 2 (кн. III–V)",
       "locator": "archive.org: sanctiirenaeiep00harvgoog, sanctiirenaeili00irengoog (vol. 1 — sanctiirenilibr01irengoog, sanctiirenaeiep01harvgoog)",
-      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "accessState": "VERIFIED_READ (III.18.1, скан-стр. 106; ссылка на apparatus скан-стр. 452)",
       "rightsState": "PD (издание XIX в.)"
     },
     {
@@ -288,7 +288,7 @@
       "primaryLocators": "ANF01.txt:L42404-42408 (III.18.1); L50490-50512 (V.1.1)",
       "evidenceClass": "A1-PD-translation",
       "accessState": "READABLE",
-      "locatorState": "LOCATED",
+      "locatorState": "LOCATED; лат. recapitulavit (III.18.1) — VERIFIED (Harvey vol. 2, 1857, скан-стр. 106, archive.org sanctiirenaeiep00harvgoog, полнотекстовый поиск); греч. оригинал III кн. — отсутствует",
       "rightsState": "PD",
       "publicationState": "RESEARCH_ONLY",
       "quoteSafe": true,
@@ -447,7 +447,7 @@
       "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
       "subject": "Златоуст: 1 Тим. Hom. VI; Евр. Hom. IV",
       "genre": "экзегетические гомилии",
-      "primaryLocators": "NPNF1_13.txt:L37320, L37667, L37683-37685; NPNF1_14.txt:L36693-36712; NPNF1_13.txt:L2519 (гл. III толк. на Гал.), L2802–2810 (Гал. 3:13); NPNF1_13.txt:L5069 (Homily I), L5321–5331 (Еф. 1:6, «how high a price»); NPNF1_13.txt:L5750–5756 (Еф. 1:14, «absolute redemption» в конце; F-20)",
+      "primaryLocators": "NPNF1_13.txt:L37320, L37667, L37683-37685; NPNF1_14.txt:L36693-36712; NPNF1_13.txt:L2519 (гл. III толк. на Гал.), L2802–2810 (Гал. 3:13); NPNF1_13.txt:L5069 (Homily I), L5321–5331 (Еф. 1:6, «how high a price»); NPNF1_13.txt:L5750–5756 (Еф. 1:14, «absolute redemption» в конце; F-20); NPNF1_13.txt:L5069/L5321–5331 (Hom. I на Еф. 1:6); NPNF1_13.txt:L2519/L2802–2810 (толк. на Гал. 3:13 — «обмен проклятий»)",
       "evidenceClass": "A1-PD-translation",
       "accessState": "READABLE",
       "locatorState": "LOCATED",
@@ -456,7 +456,8 @@
       "quoteSafe": true,
       "falseFriendFlags": [
         "ORIGINAL_TEXT_HOLD (греч. не сверен)",
-        "«redemption» в Еф. 1:14 у Златоуста = будущее избавление (F-20)"
+        "«redemption» в Еф. 1:14 у Златоуста = будущее избавление (F-20)",
+        "F-20: «redemption» в Еф. 1:14 — эсхатологическое избавление, не крестный выкуп"
       ]
     },
     {
@@ -467,7 +468,7 @@
       "primaryLocators": "NPNF1_07.txt:L29050, L29105-29125, L37573, L37904-37922; NPNF1_03.txt:L14020, L14835-14860",
       "evidenceClass": "A1-PD-translation",
       "accessState": "READABLE",
-      "locatorState": "LOCATED",
+      "locatorState": "LOCATED; лат. loci De Trin. XIII (10.13/12.16/13.17) — VERIFIED по транскрипции Latin Library (печатное издание — LOCATOR_HOLD)",
       "rightsState": "PD",
       "publicationState": "RESEARCH_ONLY",
       "quoteSafe": true,
@@ -502,7 +503,7 @@
       "primaryLocators": "NPNF2_11.txt:L34372-34375",
       "evidenceClass": "A1-PD-translation",
       "accessState": "READABLE",
-      "locatorState": "LOCATED — Conferences IX (Abbot Isaac, о молитве), гл. XXXIV (L33218 конференция, L34273 гл. XXXIV, L34463 гл. XXXV); печатная страница — LOCATOR_HOLD",
+      "locatorState": "Conferences IX (Abbot Isaac), гл. XXXIV (L33218/L34273/L34463); печатная страница — LOCATOR_HOLD",
       "rightsState": "PD",
       "publicationState": "RESEARCH_ONLY",
       "quoteSafe": true,
@@ -648,7 +649,7 @@
       "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
       "subject": "Амвросий: De officiis III.3; De Spiritu Sancto I.12.126",
       "genre": "этико-пастырский и догматический трактаты",
-      "primaryLocators": "NPNF2_10.txt:L8263–8264; NPNF2_10.txt:L11952–11954; L7650, L7690–7694 (redemptio captivorum)",
+      "primaryLocators": "De Officiis III.19 (кн. III, гл. III); NPNF2_10.txt:L8263–8264, L7690–7691, L11954 (De Spiritu Sancto I.12)",
       "evidenceClass": "A1-PD-translation",
       "accessState": "READABLE",
       "locatorState": "LOCATED",
@@ -864,6 +865,21 @@
       "locus": "Augustine, De Trinitate XIII.12.16; XIII.13.17",
       "source": "thelatinlibrary.com/augustine/trin13.shtml (транскрипция без аппарата)",
       "phrase": "commissio peccatorum per iram dei iustam hominem subdidit diabolo, profecto remissio peccatorum per reconciliationem dei benignam eruit hominem a diabolo; Non autem diabolus potentia dei sed iustitia superandus fuit"
+    },
+    {
+      "locus": "Irenaeus, Adv. haer. III.18.1 (лат.)",
+      "source": "Harvey 1857, vol. 2 (archive.org: sanctiirenaeiep00harvgoog), скан-стр. 106 — полнотекстовый поиск",
+      "phrase": "sed quando incarnatus est, et homo factus, longam hominum expositionem in seipso recapitulavit, in compendio nobis salutem praestans (аппарат там же, скан-стр. 452: сир. «denuo instauravit»)"
+    },
+    {
+      "locus": "Augustine, De Trinitate XIII.12.16; XIII.17 (лат.)",
+      "source": "thelatinlibrary.com/augustine/trin13.shtml (транскрипция без аппарата)",
+      "phrase": "Quadam iustitia dei in potestatem diaboli traditum est genus humanum; non potentia diabolus sed iustitia uinceretur"
+    },
+    {
+      "locus": "Ambrose, De Officiis III.19 (лат. — не сверено; перевод NPNF)",
+      "source": "NPNF2_10.txt:L8263–8264",
+      "phrase": "Christ the Lord, Who died for all, will grieve that the price of His blood was paid in vain"
     }
   ],
   "falseFriendRegister": [
@@ -1106,10 +1122,10 @@
     "declare-verdict-on-extent"
   ],
   "nextSteps": [
-    "Печатные локаторы: ANF/NPNF том + страница; PG/PL колонки (для всех карточек, включая 11_).",
-    "Греческие оригиналы III в.: Ипполит (фрагм.), Мефодий (гомилия), Александр Александрийский; лат. Илария (De Trinitate).",
-    "Приёмка PD-каналов: Григорий Великий (Moralia, Bliss), Кирилл Алекс. (Contra Nestorium/In Ioannem), Феодорит, Пётр Хрисолог, Пс.-Дионисий, Анзельм (Deane).",
-    "B1-сличения по именам (Aulén, Rashdall, Kelly) — постранично, без дампа.",
-    "Отчёт §9 владельцу; PR — обновить описание при новых коммитах."
+    "Сверить печатные страницы ключевых цитат (LOCATOR_HOLD) и §-номера ANF/NPNF/PL.",
+    "Добрать лат. оригиналы через принятые каналы: Irenaeus (Harvey, далее V.1.1 «suadela»), Lactantius (CSEL/PL 6–7), Hilary (PL 10), Jerome (PL 23), Ambrose (PL 16).",
+    "Приёмка моралий/Кирилла/Псевдо-Дионисия/Феодорита и карточки по ним.",
+    "Греч. сверки: Or. 45.22, Нисский, Златоуст, Кирилл Иер., Дамаскин (см. 10_).",
+    "Свести счётчики JSON (falseFriendRegister/silences) с F/S-реестрами 09_ и обновить заголовок PR."
   ]
 }
