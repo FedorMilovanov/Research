@@ -1,5 +1,8 @@
 # Искупление — план серии: состав, порядок, оценка объёма
 
+> **ВНИМАНИЕ, ВЛАДЕЛЕЦ СЛОЯ — НЕ ЭТА ВЕТКА.** Синтетический слой `synthesis/` ведёт **агент 4**, его authority — **PR #213** (ветка `arena/5fe5b33f-research`). Копии файлов в этой ветке — **устаревший черновик**, расходящийся с #213 на 11–25 строк в каждом файле. По вопросам синтеза, плана серии и реестра конфликтов читать **#213**, не эту ветку. Эта ветка владеет только слоем первоисточников Реформации (`00`–`16`). См. `00_CURRENT_AUTHORITY_2026-10-07.md`, раздел «Разделение слоёв».
+
+
 **Дата:** 2026-10-07
 **Статус:** `WORKING PLAN / NOT FROZEN / RESEARCH / PUBLICATION_HOLD`
 **Родители:** [`../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md`](../01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md) (слои A/B/C/D), [`../06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG.md`](../06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG.md) (hub `/iskuplenie/`, минимальный набор §3), [`00_SYNTHESIS_AUTHORITY_2026-10-07.md`](00_SYNTHESIS_AUTHORITY_2026-10-07.md) (карта тезисов)
