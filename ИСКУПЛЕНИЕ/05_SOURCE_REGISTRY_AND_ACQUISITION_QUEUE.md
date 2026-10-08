@@ -43,6 +43,8 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | S18 | P-LIB | Göttingen «Text History» (PDF-загрузки на странице ADW: Gen 1974, Num 1982, Lev 1986, Exod 1992) | adw-goe.de (та же страница) | кандидат для истории вариантов | NOT_OPENED (лицензию проверить перед загрузкой) | UNKNOWN | NOT_STORED |
 | S19 | EXCLUDED | eliranwong/LXX-Rahlfs-1935 (текст Rahlfs; без лицензии) | github.com/eliranwong/LXX-Rahlfs-1935 | — | EXCLUDED (нет лицензии; текст Rahlfs охраняется) | NO | NOT_STORED; не использовать |
 | S20 | CANDIDATE | Holmes–Parsons, VT Graecum cum variis lectionibus (1798–1827) | не открыт (сканы archive.org / Google Books — проверить) | возможный открытый apparatus шире Swete 1887 | NOT_OPENED | UNKNOWN (ожидается PD; проверить) | NOT_STORED |
+| S21 | P-BIBLE | theancientbible.org — LXX Исаия 59 (греческий текст) | theancientbible.org/isaiah-lxx-59/ | второе зеркало Ис. 59:20 (ῥυόμενος; карточка `ot/02`) | CHECKED (2z условно: издание не указано) | NO (только сверка) | LINK_ONLY |
+| S22 | EXCLUDED | Страницы LXX на основе Rahlfs (die-bibel.de; lire.la-bible.net) — видны только в выдаче поиска | die-bibel.de/bibel/LXX/EXO.13.1-EXO.13.16; lire.la-bible.net/bible/LXX/EXO.13 | — | EXCLUDED (текст Rahlfs; не открывались и не используются; см. S19) | NO | NOT_STORED |
 
 ---
 
