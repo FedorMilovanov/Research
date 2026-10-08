@@ -110,8 +110,9 @@
   },
   "conflictLedger": {
     "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
-    "entries": 15,
-    "silenced": 0
+    "entries": 16,
+    "silenced": 0,
+    "added2026-10-08": "C-16: internal-Calvin tension on 1 Tim 2:4 (p.55 'classes of men') vs 2:5 (p.56 'the fruit of the sacrifice... extends to all') vs 2:6 (p.61 'universal and perpetual'), CTS 1856 - status TENSION, both halves must be quoted together"
   },
   "verdict": {
     "extentDispute": "NO VERDICT — EVIDENCE_HOLD stands (including after ingest 2026-10-08)",
