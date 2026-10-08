@@ -731,7 +731,7 @@
     "file00": "1KD-8pMP_Jnk1lmsb2h3JbXxqpWLQgacdBMH57krdy_s",
     "file00readme": "1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs",
     "file05": "15i2GEHWfM-zxqFmDNyiQaSEGMBWd10hPxg4IdJEMOEg",
-    "file07": "1910KRnHOEFylSVWNIfUspZRI92rC1OjD0ALv6_BgFMw",
+    "file07": "1vms7J-F2HvMmQ43Z1hkMQeOu7ZC0RJb71xrpRRm_p5M",
     "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
     "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
     "file12": "18pdqqDj-oJK8hDTmD0OwVZufdJyXPCf5zq181DYFXsU",
@@ -820,7 +820,8 @@
       "file12": "1wrBw5mKN0VOj2-YsGhy-Tx_k1Ytb-AlGdgyDUf4QCEs",
       "file14": "1en18-MR3lXgNdgVVz24UXN9fAxDlOsiuUWsbSTnTv2A",
       "reason": "these three mirrors predate commits 52ace08 and 7895287, which changed 00, 12 and 14",
-      "disposition": "moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd) and renamed per namingConvention2026-10-09; not trashed, not deleted — IDs stay resolvable"
+      "disposition": "moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd) and renamed per namingConvention2026-10-09; not trashed, not deleted — IDs stay resolvable",
+      "file07": "1910KRnHOEFylSVWNIfUspZRI92rC1OjD0ALv6_BgFMw"
     }
   },
   "doNot": [
