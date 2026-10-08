@@ -143,7 +143,7 @@
 
 ---
 
-## H-1. Ипполит Римский
+## H-1. Ипполит Римский (→ карточка [`11_…`](11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md), HIP-1)
 
 **Статус:** `LOCATOR_HOLD` — в этой волне конкретный искупительный локус **не локализован**.
 **Что есть:** ANF05 (Hippolytus: Philosophumena, «On Christ and Antichrist» и др.) — PD, доступен целиком.
@@ -159,7 +159,7 @@
 | Мелитон | ANF08 (фрагменты) | `ARCHIVE_HOLD` (Peri Pascha вне PD) |
 | Ириней | ANF01 | заполнена (III.18; V.1) |
 | Тертуллиан | ANF03 + Latin Library | заполнена (4 лока) |
-| Ипполит | ANF05 | `LOCATOR_HOLD` |
+| Ипполит | ANF05 | карточка собрана в [`11_…`](11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md), HIP-1 (2 лока; атрибуция фрагмента — `LOCATOR_HOLD`) |
 | Киприан | ANF05 | частично (Ep. VII) |
 
 

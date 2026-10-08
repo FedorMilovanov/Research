@@ -37,7 +37,9 @@
 ### Анахронизм
 Уравнения «Августин = Кальвин» и «Августин = арминианин» запрещены. Его собственный спор — с донатистами (где Церковь), с Пелагием (что благодать) и с «правом диавола» (кто победил).
 
-**Не локализовано:** *Enchiridion* 33; *De civitate Dei* X/XIII — канал есть (NPNF1_02/1_03), локусы не сверены в этой волне → `LOCATOR_HOLD`.
+**Латынь сверена (2026-10-08):** *De Trin.* **XIII.12.16** — «commissio peccatorum per iram dei iustam hominem subdidit diabolo, profecto remissio peccatorum per reconciliationem dei benignam eruit hominem a diabolo»; **XIII.13.17** — «Non autem diabolus potentia dei sed iustitia superandus fuit… propter eruendum hominem de diaboli potestate non potentia diabolus sed iustitia uinceretur» (Latin Library, `augustine/trin13.shtml`). См. [`11_…`](11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md), раздел сверки.
+
+**Не локализовано:** *Enchiridion* 33; *De civitate Dei* X/XIII — канал есть (NPNF1_02/1_03), локусы не сверены → `LOCATOR_HOLD`.
 
 ---
 
