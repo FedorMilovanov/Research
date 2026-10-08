@@ -50,7 +50,7 @@
       "repository": "byztxt/greektext-scrivener",
       "commit": "6049a43b135ed870f843b83eb6a04764fc796678",
       "commitDate": "2017-05-23T18:30:39Z",
-      "sha256OfDataset": "783e510d672d9bcca764172772d3f934bab6c06de2d32e9f14e9fd6e4cab5bdb",
+      "sha256OfDataset": "61f4b97a80b2a8ec5faaf929f78a492b70e18fa7b4505e84983ee686782c19ea",
       "bytes": 1036814,
       "encodingNote": "ASCII betacode transliteration, not Greek letters",
       "committedToGit": false,
@@ -68,7 +68,7 @@
       "repository": "byztxt/greektext-stephens",
       "commit": "4314af2042d9e77b2ce5c1c86d0c49325dd81684",
       "commitDate": "2023-09-02T19:37:17Z",
-      "sha256OfDataset": "8f5bc4b8897a6224dc5b45585fa33ec195b2d4a8d7f3c9737841a6d55f122131",
+      "sha256OfDataset": "b94776ff4870570ee63240dfe36c9fc3f696600cfff39d408d85c4bb453ba4e9",
       "bytes": 2621667,
       "committedToGit": false,
       "holds": []
@@ -85,7 +85,7 @@
       "repository": "byztxt/greektext-elzevir",
       "commit": "94f31e2d2e8bd451d4d2f9739d13c419f7ce86c2",
       "commitDate": "2017-05-23T18:29:23Z",
-      "sha256OfDataset": "e7c730b9099581b710e631a62931143b543c0543cbb31b4600931af364056902",
+      "sha256OfDataset": "dbdc40702d84dcd889c2090c6be3b8ad6c49fa61efa3e3dbd69fd69b03768504",
       "bytes": 1042867,
       "committedToGit": false,
       "holds": []
