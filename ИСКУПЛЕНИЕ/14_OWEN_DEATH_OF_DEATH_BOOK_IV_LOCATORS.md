@@ -66,8 +66,13 @@
 | 1 Тим. 2:6 — «and so we believe that he died for all»: «все» = церковь / избранные / овцы / некоторые из всех родов | **371** | Book IV, VI (368) |
 | **Тит. 2:11** — «all men» как *livery of believers*: «верующие называются … „всеми человеками“, Тит. ii. 11» | **336** | Book IV, III (330), внутри разбора 1 Ин. 2:2 |
 | **Тит. 2:11, 13** — «grace that certainly brings salvation» + 2:14 «peculiar people» как immediate end oblations | **395** | Book IV, VI (368), ответ Муру, Arg. 13 |
+| Оуэн, «totus mundus ex toto mundo» — церковь как целое, взятое из целого мира | **403** | Book IV, ответ на proof о «common salvation» (Тит. 1:4) |
+| **Амвросий, de Fide ad Gratianum** — «de toto mundo totus mundus liberatus, et de omnibus hominibus omnes homines videantur assumpti» | **423** | Testimonies of the Ancients (422) |
+| **Августин, Tract. lxxxvii in Johan.** — «Totus ergo mundus est ecclesia, et totus mundus odit ecclesiam … de mundo electus est inimico, damnato, contaminato» | **424** | Testimonies of the Ancients (422) |
+| **Проспер, Resp. ad Capit. Gall. cap. 9** — «pro totius mundi redemptione crucifixus … potest tamen dici pro his tantum crucifixus quibus mors ipsius profuit» | **424** | Testimonies of the Ancients (422) |
 
 **Как получено.** Поиск фраз по OCR скана (`…/fulltext/inside.php?item_id=worksofjohnowe185010owen&doc=…&path=/30/items/…`): `then were all dead` (2 Кор. 5:14), `taste death for every man` (Евр. 2:9), `for whom Christ died` (Рим. 14:15 / 1 Кор. 8:11), `bought them` (2 Пет. 2:1), `trodden under foot` (Евр. 10:29), `not willing that any should perish` (2 Пет. 3:9), `not for ours only` (1 Ин. 2:2), `God so loved the world` (Ин. 3:16), `impetration` (Book II.IV). Четвёртая волна (2026-10-08): `all men, Tit. ii. 11` (336), `Tit. ii. 11, 13` (395), `gave himself a ransom for all` (307, 371), `God will have all men to be saved` (343).
+Пятая волна (2026-10-08): `mundus` — один термин дал сразу пять мест, включая три свидетельства отцов (Амвросий 423, Августин 424, Проспер 424) и собственное выражение Оуэна `totus mundus ex toto mundo` (403). **Точная фраза `totus mundus est ecclesia` по этому скану не ищется: OCR даёт `ecciesia`.** Искать надо по `mundus`.
 
 **Смещение лист → страница: −16.** Проверено трижды: колонтитул «294 THE DEATH OF DEATH [BOOK IV.» = лист 310; «344 …» = лист 360; оглавление тома (лист 12): «IV. — Of the distinction of impetration and application … 222» = лист 238. **Четвёртая волна 2026-10-08 подтвердила смещение массово:** колонтитулы идут по листам без разрывов — «306 …» = 322, «314 …» = 330, «320 …» = 336, «336 …» = 352, «350 …» = 366; другой трактат тома — «OF THE DEATH OF CHRIST. 89» = лист 105 (105 − 16 = 89). Расхождений с автоопределением IA (`worksofjohnowe185010owen_page_numbers.json`) нет.
 
@@ -214,6 +219,37 @@ Competing: P5 скажет, что он сужает «мир» системно
 > **1.** The first and chief place is, **1 Tim. ii. 4, 6**, "God will have all men to be saved, and come to the knowledge of the truth. … Christ gave himself a ransom for all, to be testified in due time." Hence they draw this argument, Rem. Act. Synod: — "If God will have all men to be saved, then Christ died for all; but God will have all men to be saved, and come to the knowledge of the truth: therefore, Christ died for all men."
 
 (С. 343 = начало **Book IV, IV**; совпадает с §0.2.)
+
+---
+
+### 2.5 Пятая волна (2026-10-08): Testimonies of the Ancients — страницы и verbatim
+
+**Почему это важно.** В §0.2 строка «Августин, „totus mundus est ecclesia“ — 424» была без verbatim. Теперь она закрыта: свидетельство найдено, страница подтверждена колонтитулом, текст выписан. Попутно нашлось место, которого в каноне не было вовсе — **Проспер Аквитанский**.
+
+**Смещение −16 подтверждено самими колонтитулами раздела:** «SOME FEW TESTIMONIES OF THE ANCIENTS. **423**» = лист 439; «**424** SOME FEW TESTIMONIES OF THE ANCIENTS.» = лист 440. Раздел начинается на 422 (лист 438, по оглавлению тома).
+
+**OCR-предупреждение (не терять):** скан даёт `ecciesia` вместо `ecclesia`, `mu7ido` вместо `mundo`, `sjoeciaZ` вместо `specialis`, `tJic` вместо `the`, `contaiuinato` вместо `contaminato`. Ниже латинский текст приведён с восстановленными очевидными буквами; английский перевод Оуэна — как в скане, с пометой о сбоях. Фраза `totus mundus est ecclesia` поиском **не находится** — искать надо по `mundus`.
+
+#### 1. Амвросий, *de Fide ad Gratianum* — с. 423
+
+> **Ambr. de Fide ad Gratianum:** — "Habet populus Dei plenitudinem suam. In electis enim et praescitis, atque ab omnium generalitate discretis, specialis quaedam censetur universitas, ut de toto mundo totus mundus liberatus, et de omnibus hominibus omnes homines videantur assumpti." —
+> *"The people of God hath its own fulness. In the elect and foreknown, distinguished from the generality of all, there is accounted a certain special universality; so that **the whole world seems to be delivered from the whole world, and all men to be taken out of all men**."*
+
+#### 2. Августин, *Tract. lxxxvii. in Johan.* — с. 424 (начало — с. 423)
+
+> **Idem, Tract. lxxxvii. in Johan.:** — "Ecclesiam plerumque etiam ipsam mundi nomine appellat; sicut est illud, 'Deus erat in Christo mundum reconcilians sibi;' itemque illud, 'Non venit Filius hominis ut judicet mundum, sed ut salvetur mundus per ipsum;' et in epistola sua Johannes ait, 'Advocatum habemus ad Patrem, Jesum Christum justum, et ipse propitiator est peccatorum nostrorum, non tantum nostrorum sed etiam totius mundi.' **Totus ergo mundus est ecclesia, et totus mundus odit ecclesiam. Mundus igitur odit mundum; inimicus reconciliatum, damnatus salvatum, inquinatus mundatum.** Sed **iste mundus quem Deus in Christo reconciliat sibi, et qui per Christum salvatur, de mundo electus est inimico, damnato, contaminato**." —
+> *"He often calleth the church itself by the name of the world; as in that, 'God was in Christ reconciling the world unto himself;' and that, 'The Son of man came not to condemn the world, but that the world through him might be saved.' And John in his epistle saith, 'We have an Advocate, and he is the propitiation for [our sins, and not for ours only, but also for] the sins of the whole world.' **The whole world, therefore, is the church, and the world hateth the church. The world, then, hateth the world; that which is at enmity, the reconciled; the condemned, the saved; the polluted, the cleansed world.** And **that world which God in Christ reconcileth to himself, and which is saved by Christ, is chosen out of the opposite, condemned, defiled world**."*
+
+**Чтение:** Августин делает ровно то, что Оуэн приписывает Павлу в Тит. 2:11 (с. 336): «весь мир» в 1 Ин. 2:2 — **наименование церкви**, а не подсчёт адресатов. И сразу оговаривается, что этот мир «избран из мира враждебного» — то есть «весь мир» искупленный ⊂ «весь мир» погибающий. Это ключевой аргумент H1 (1 Ин. 2:2), и теперь у него есть PD-страница и verbatim на двух языках.
+
+#### 3. Проспер Аквитанский, *Respon. ad Capit. Gall. cap. 9* — с. 424 — **новое место для канона**
+
+> **IX. Prosper [a.d. 440], Respon. ad Capit. Gall. cap. ix.:** — "Non est crucifixus in Christo qui non est membrum corporis Christi. **Cum itaque dicatur Salvator pro totius mundi redemptione crucifixus, propter veram humanae naturae susceptionem, potest tamen dici pro his tantum crucifixus quibus mors ipsius profuit.** Diversa ab istis sors eorum est qui inter illos censentur de quibus dicitur, 'Mundus enim non cognovit.'" —
+> *"He is not crucified with Christ who is not a member of the body of Christ. When, therefore, our Saviour is said to be **crucified for the redemption of the whole world, because of his true assumption of the human nature**, yet **may he be said to be crucified only for them unto whom his death was profitable**. Diverse from these is their lot who are reckoned amongst them of whom it is said, 'The world knew him not.'"*
+
+**Почему это важнее остальных трёх.** Проспер **не отрицает** выражение «распят за искупление всего мира» — он принимает его и объясняет: оно истинно *propter veram humanae naturae susceptionem* (по причине истинного восприятия человеческой природы), но по действенности — *pro his tantum … quibus mors ipsius profuit*. Это формула, которой в корпусе не было: различение **основания выражения** (природа, взятая Христом, общая всем) и **объёма действенности**. Она снимает ложную дилемму «или все, или не все» и прямо ложится на H1 (1 Ин. 2:2) и на Тит. 2:11.
+
+Порядок в списке у Оуэна: Амвросий — VIII (с. 423), Августин — «Idem» (продолжение, с. 423–424), Проспер — **IX** (с. 424). Номера в квадратных скобках в скане (`Prosper [a.d. 440]`) — это годы, а не нумерация; IX — порядковый номер свидетельства.
 
 ---
 
