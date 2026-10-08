@@ -27,6 +27,14 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | S02 | P-BIBLE | BHS / WLC OT | то же | еврейский ВЗ | LEAD | NO | LINK_ONLY |
 | S03 | P-BIBLE | LXX Rahlfs/Göttingen | то же | Септуагинта `ἱλάσκομαι` / `λύτρον` | LEAD | NO | LINK_ONLY |
 | S04 | P-BIBLE | Синодальный / сопоставление русских | reader-facing цитаты только с указанием перевода | русская публикация | OPEN | YES with edition | LINK_ONLY |
+| S05 | P-BIBLE | **MorphGNT / SBLGNT** (свидетель **S1** под-корпуса НЗ) | https://github.com/morphgnt/py-sblgnt @ `904fed08a14bffea6e1776d8c4c3eeb7c6092688`; sha256 `f95833b1…`, 9 822 443 байт; 137 554 словоформы | греческий текст + морфология для всех подсчётов `nt/` | **ACQUIRED** (вне Git, `/home/user/nt-corpus/`); **без критического аппарата** | YES для текста и разбора; **NO** для атрибуции рукописей | PRIVATE_STUDY_ONLY |
+| S06 | P-BIBLE | **Scrivener 1894 Textus Receptus** (свидетель **S2**) | https://github.com/byztxt/greektext-scrivener @ `6049a43b135ed870f843b83eb6a04764fc796678`; PD; sha256 `783e510d…` | TR-сверка вариантов | **ACQUIRED** | YES (PD) | PRIVATE_STUDY_ONLY |
+| S07 | P-BIBLE | **Stephens 1550 TR** (свидетель **S3**) | https://github.com/byztxt/greektext-stephens @ `4314af2042d9e77b2ce5c1c86d0c49325dd81684`; sha256 `8f5bc4b8…` | TR-сверка вариантов | **ACQUIRED** | YES (PD) | PRIVATE_STUDY_ONLY |
+| S08 | P-BIBLE | **Elzevir TR** (свидетель **S4**) | https://github.com/byztxt/greektext-elzevir @ `94f31e2d2e8bd451d4d2f9739d13c419f7ce86c2`; sha256 `e7c730b9…` | TR-сверка вариантов | **ACQUIRED** | YES (PD) | PRIVATE_STUDY_ONLY |
+| S09 | P-BIBLE | SBLGNT / UBS5 / NA28 **критический аппарат** | не получен; SBLGNT ставит сиглы (⸀ ⸂ ⸃), но не перечисляет рукописи | атрибуция вариантов в Евр. 2:9; Деян. 20:28; Откр. 1:5; 1 Тим. 3:16 | **LEAD — блокирует `LOCATOR_HOLD`** | NO | LINK_ONLY |
+| S10 | P-BIBLE | LXX (Rahlfs/Göttingen) и MT — **полный текст** | не получен | сверка `ἱλαστήριον` ↔ כַּפֹּרֶת; `λύτρον` ↔ פדה/גאל; Ис. 53; Исх. 24:8; Лев. 4–5; Втор. 27:26; Исх. 12:5; Исх. 19:5; Пс. 8 | **LEAD — блокирует `LXX_HOLD`** | NO | LINK_ONLY |
+| S11 | SECONDARY | Tyndale **STEPBible-Data** | https://github.com/tyndale/STEPBible-Data (≈721 МБ; `Tagged-Bibles`, `Lexicons`, `Versification`) | кандидат на дополнительные издания и лексиконы для S09/S10 | NOT DOWNLOADED | NO | LINK_ONLY |
+| S12 | SECONDARY | PD-лексиконы (Thayer; PD-издания LSJ) | CCEL / archive.org | значения `λύτρον`, `ἀγοράζω`, `ἱλαστήριον` | разрешены брифом, в этой волне не привлекались | NO until locator | LINK_ONLY |
 
 ---
 
