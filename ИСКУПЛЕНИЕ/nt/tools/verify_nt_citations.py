@@ -35,6 +35,25 @@ GREEK = re.compile(r"[\u0370-\u03FF\u1F00-\u1FFF]")
 CYRILLIC = re.compile(r"[\u0400-\u04FF]")
 
 
+def case_variants_first_char(frag: str) -> list[str]:
+    """Варианты фрагмента, отличающиеся ТОЛЬКО регистром первого символа.
+
+    Заглавная буква в начале предложения — орфография, а не лексика, поэтому
+    первый символ терпим. Регистр в середине цитаты — уже не орфография:
+    греческое слово с заглавной внутри — другое слово (имя собственное против
+    нарицательного), и прежний сплошной casefold() всей строки это молча
+    проглатывал.
+    """
+    if not frag:
+        return [frag]
+    first = frag[0]
+    out = {frag}
+    for ch in (first.upper(), first.casefold(), first.title()):
+        if ch:
+            out.add(ch + frag[1:])
+    return sorted(out)
+
+
 def norm(s: str) -> str:
     s = unicodedata.normalize("NFC", s)
     return "".join(ch for ch in s if GREEK.match(ch))
@@ -96,7 +115,6 @@ def main() -> int:
         print(f"NT corpus not found at {root}; set NT_SBLGNT_DIR")
         return 2
     lemma_count, blob = load_corpus(root)
-    blob_cf = blob.casefold()
     total_forms = sum(lemma_count.values())
     print(f"S1 loaded: {total_forms} word forms, {len(lemma_count)} lemmas")
 
@@ -128,8 +146,9 @@ def main() -> int:
                 checked += 1
                 if frag in blob or frag in lemma_count:
                     continue
-                # заглавная буква в начале предложения — орфография, не лексика
-                if blob_cf and frag.casefold() in blob_cf:
+                # допуск только на регистр ПЕРВОГО символа (начало предложения)
+                if any(v in blob or v in lemma_count
+                       for v in case_variants_first_char(frag)):
                     continue
                 failures.append(f"{md.name}: NOT IN S1 -> {raw!r}")
                 break
