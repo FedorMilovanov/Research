@@ -26,6 +26,7 @@
 15. [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md) — Оуэн Book IV: world / all / купленные гибнущие.
 16. [`15_CALVIN_III24_AND_DORT_II_LOCATORS.md`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md) — Inst. III.24.15–17; Дорт II.1–9 + Rejection I–VII (Scott 1841, по страницам; сличение §B.6).
 17. [`16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md`](16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md) — английский первоисточник Дорта II (перевод 1840 г., арт. I–IX) + Кальвин на 1 Ин. 2:1–2.
+18. [`synthesis/`](synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md) — под-корпус синтеза (агент №4, перенесён из Drive-fallback 2026-10-08): карта тезисов T1–T8, план серии, реестр расхождений C-01…C-15, пастырские заметки, первый черновик статьи A1.
 
 **Параллельные агенты** (брифы для новых сессий, которые копают смежные слои): [`agents/README.md`](agents/README.md) — Ветхий Завет, Новый Завет, святые отцы, синтез и сборка серии.
 

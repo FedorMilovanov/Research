@@ -18,7 +18,10 @@
       "scripture": "17BZ9SUu5zp5VVFd5a0t8mFX8wEodHcIv",
       "confessions": "1ZTD2idu9oFO9Et1MSgfgtKMZZg63yUTw",
       "ledgers": "13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ",
-      "rights": "1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy"
+      "rights": "1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy",
+      "agentBriefs": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
+      "synthesisFallback": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2",
+      "supersededMirrors": "1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd"
     },
     "acquiredCopies": [
       {
@@ -49,7 +52,69 @@
         "locatorState": "unchecked",
         "sha256Readback": false
       }
-    ]
+    ],
+    "reorg2026-10-08": {
+      "rule": "ID-preserving operations only (add/remove parents, rename, update_file_content). No delete_file; no re-upload of files carrying a live ID in the repo (re-upload changes the ID and breaks links from other repos).",
+      "supersededPolicy": "superseded mirrors move to folder 99 — HOLD (IDs stay alive) instead of trash",
+      "movedToHold": [
+        "1IzZxjBVl3BLrfcQH3r07SeeXbzu8yLOm",
+        "1ozlnTTepSyhFAj_hEsxNAwvF3Dc_R5tw",
+        "10go1WoYIIFBjYXoiadPVbzWDHP88w_PD",
+        "1dAMRTc7Tcy02oGt6HWX2RGYgB-IFx0Ap",
+        "1is-gox1UYi-4Ie0GBvHoMbzxh2mj2oL-",
+        "1eZKED3ikOOt7z96nEyspV6RxvKxTfgAd",
+        "1aigyR95l0DI8jMfxCTAKhvvm1RGffbVF",
+        "1_eb42tHpIRJkeZqLQ_HHuwpapX7hWiMF",
+        "1r4UNqlNv4xgBYf_vCI-R-hjyihyal-jr",
+        "1tTA18HWLlF_GseQCC4hCymbWWn6fj349",
+        "1VVOS5a_Oq5wfNmbhQBGLbm6wfh-CFPAs"
+      ],
+      "movedWithinCorpus": [
+        {
+          "id": "10_c-neESlAQwYThKu2gVhvxJ2zMZRswt",
+          "from": "13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ",
+          "to": "1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI",
+          "why": "Murray materials, topical fit"
+        }
+      ],
+      "renamed": [
+        {
+          "id": "1xcSKSkkXxioxBuvu3-jtQaqXG3YP4uau",
+          "to": "09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md"
+        },
+        {
+          "id": "10_c-neESlAQwYThKu2gVhvxJ2zMZRswt",
+          "to": "10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+        },
+        {
+          "id": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
+          "to": "08 MURRAY RAA SOURCE CARD — RIGHTS HOLD, NO FULL TEXT"
+        },
+        {
+          "id": "1GFVUswVklNLz5VCtZRclMFj9b06nA4WUj1pjbIrtNaA",
+          "to": "04 LIMITED VS UNIVERSAL QUESTION MAP — NO VERDICT"
+        },
+        {
+          "id": "1mxYsP0RPDM8yNq_XCEJQXpDit96QP2z2KKww7psPcKs",
+          "to": "06 PUBLICATION ARCHITECTURE FOR GOSPOD-BOG — DO NOT IMPLEMENT YET"
+        }
+      ],
+      "rootCleanup": [
+        {
+          "id": "1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu",
+          "to": "12k0Om0KBjWN82LIBDj3I2qo5MY7RJXPn"
+        },
+        {
+          "id": "10kZrOw2cB1vAiAsaIwcWb-RDJKUn6s9h",
+          "to": "10WLnp-XKzzMJgtGeQpYYOFgtaIf1yHjv"
+        },
+        {
+          "id": "1G-9jYTIURIC3-YA-6YdP67JejkBxZDPhj1b0yi3gm0o",
+          "to": "1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa"
+        }
+      ],
+      "untouchedPendingOwnerDecision": "personal/unrelated items in «Мой диск» root (cake zips, Mayakovsky, screenshots, 1.CSV, two Untitled spreadsheets, 00 — GITHUB PROJECTS)"
+    }
   },
   "holds": [
     "PUBLICATION_HOLD",
@@ -509,5 +574,54 @@
     "fetch-third-party-full-text-pdfs-of-murray-raa",
     "retry-internet-archive-search-inside-for-redemptionaccomp00murr",
     "cite-murray-raa-page-numbers-as-if-verified-in-the-book-itself"
-  ]
+  ],
+  "synthesis": {
+    "authorityId": "SYNTHESIS-AUTHORITY-2026-10-07",
+    "corpusPath": "ИСКУПЛЕНИЕ/synthesis",
+    "ssot": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+    "authority": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+    "agent": "agent-4-synthesis",
+    "ingestedIntoGit": "2026-10-08",
+    "source": "Google Drive fallback folder 18U6dslSsNJ20CwlAHTYRrO318mGohtI2 (agent's E2B sandbox never initialised); agent branch arena/5fe5b33f-research absent on GitHub (404), ingest done on coordinator branch",
+    "theses": [
+      "T1 nature",
+      "T2 necessity",
+      "T3 perfection",
+      "T4 intent (disputed)",
+      "T5 extent HARD (not proved)",
+      "T6 sufficiency/efficiency",
+      "T7 application",
+      "T8 offer"
+    ],
+    "conflictLedger": {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "entries": 15,
+      "silenced": 0
+    },
+    "seriesPlan": {
+      "minimumForHub": 4,
+      "targetFullCoverage": 13,
+      "ceiling": "16-18",
+      "frozen": false,
+      "firstArticle": "Что такое искупление",
+      "startWithTulipForbidden": true
+    },
+    "drafts": [
+      "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md"
+    ],
+    "holdsInherited": [
+      "PUBLICATION_HOLD",
+      "RIGHTS_HOLD",
+      "EVIDENCE_HOLD",
+      "LOCATOR_HOLD",
+      "ARCHIVE_HOLD"
+    ],
+    "verdict": "NO VERDICT on extent — EVIDENCE_HOLD stands",
+    "correctionsAtIngest": [
+      "T5: removed «Мюррей закрывает 2 Кор. 5:14 / Евр. 2:9» — 10_ §3 forbids taking those loci from Murray as closed",
+      "count of conflicts 12 → 15 (C-01…C-15) per the ledger",
+      "Мф. 11:28 aligned to the Synodal text («труждающиеся»)",
+      "«нельзя молиться за каждого (1 Ин. 5:16)» attributed as Owen's reading (14_ §2.2), not a corpus norm"
+    ]
+  }
 }

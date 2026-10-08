@@ -17,6 +17,8 @@
 | 05 — SOURCE LEDGERS & CLAIM MAPS | `13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ` | [открыть](https://drive.google.com/drive/folders/13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) |
 | 06 — RIGHTS, HOLD & PROVENANCE | `1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy` | [открыть](https://drive.google.com/drive/folders/1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy) |
 | 08 — PARALLEL AGENT BRIEFS | `1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n` | [открыть](https://drive.google.com/drive/folders/1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n) |
+| 09 — SYNTHESIS (agent 4) | `18U6dslSsNJ20CwlAHTYRrO318mGohtI2` | [открыть](https://drive.google.com/drive/folders/18U6dslSsNJ20CwlAHTYRrO318mGohtI2) |
+| 99 — HOLD — SUPERSEDED MIRRORS | `1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd` | [открыть](https://drive.google.com/drive/folders/1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd) |
 
 Родитель висит в Research backend: `03 — Research — ИССЛЕДОВАТЕЛЬСКИЙ БЭКЕНД` (`1Eb8qglwGIqeJY-02J8eXNpDaQfdkmozs`). Копии PD-книг **не удаляют** оригиналы из общей PDF-библиотеки.
 
@@ -101,6 +103,28 @@
 **Волна 2026-10-07e:** страницы абзаца для Оуэна (Goold vol. X, 1850, IA `worksofjohnowe185010owen`), постатейные страницы WCF гл. VIII в Schaff vol. III (1919), отождествление `Rejectio Errorum` с. 577 как Rejectio главы II Дорта, приведение ссылок на Мюррея в `12` к форме из `08` §7. Зеркала `00`, `07`, `12`, `14`, `15` перезалиты byte-accurate; реестр перезалит в папку `05`. Предыдущие ID (`1wVDEcD…`, `1SJ4NR9…`, `1PRePtw…`, `1-B5i3t…`, `1RrX7Wg…` и промежуточный `19FcQjv…`) отправлены в корзину.
 
 После волны HARD (2026-10-07) канон Git: `11_MURRAY_OTHER_WORKS_HARD_TEXTS.md`, `12_HARD_TEXTS_EXTENT_CARDS.md`, `13_DORT_II_CALVIN_OWEN_EXTENT.md`. Зеркала на Drive — в `05` (ledgers), не вместо Git.
+
+**Волна 2026-10-08a — реорганизация Drive без потери ссылок.** Правило волны: **только операции, сохраняющие ID** (перемещение = `add_parents` + `remove_parents`, переименование). Ни одного `delete_file`; ни один файл, на который есть ссылка из репозитория, не перезаливался (перезалив меняет ID и рвёт ссылки других репозиториев).
+
+- Создана папка `99 — HOLD — SUPERSEDED MIRRORS (не удалять: старые копии, ID живы)` — `1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd` (внутри `07`). **Правило изменено:** вытесненные зеркала теперь не уходят в корзину, а переносятся в `99` — ID остаётся живым.
+- В `99` перенесены 11 объектов, которых **нет ни в одной ссылке репозитория** (проверено grep по всем `.md/.json/.py/.yml` и по URL-формам): `1IzZxjB…` (00_CURRENT_AUTHORITY .md), `1ozlnTT…` (00_MASTER_RESEARCH_MAP .md), `10go1Wo…` (01_W0_INTRODUCTION), `1dAMRTc…` (02_W0_SCRIPTURE), `1is-gox…` (03_W0_SOURCE_REGISTRY), `1eZKED3…` (04_W0_COMPETING_MODELS), `1aigyR9…` (05_W0_ACQUISITION), `1_eb42t…` (06_PUBLICATION_ARCHITECTURE .md), `1r4UNql…` (07_W0_DRIVE_MIRROR_RECEIPT), `1tTA18H…` (README.md), `1VVOS5a…` (redemption-corpus-authority json).
+- `10 Murray RAA argument map` (`10_c-neE…`) перемещён из `05` (ledgers) в `02` (copyright/acquisition) — к остальным материалам Мюррея.
+- Переименованы 5 объектов (ID сохранены): `09 Murray RAA intake and completeness — s3516.htm.zip` → `09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md`; `10 Murray RAA argument map — PRIVATE STUDY not for publication` → `10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md`; `08 Murray RAA source card — RIGHTS HOLD — no full text` → `08 MURRAY RAA SOURCE CARD — RIGHTS HOLD, NO FULL TEXT`; `04 LIMITED VS UNIVERSAL QUESTION MAP — no verdict` → `04 LIMITED VS UNIVERSAL QUESTION MAP — NO VERDICT`; `06 PUBLICATION ARCHITECTURE FOR GOSPOD-BOG — do not implement yet` → `06 PUBLICATION ARCHITECTURE FOR GOSPOD-BOG — DO NOT IMPLEMENT YET`. Имена `.md`-зеркал приведены к именам Git-канона.
+- Корень «Мой диск»: три исследовательских объекта переехали в хаб `1Eb8qgl…` — Gill PDF `1q4IFET…` → `12k0Om0…` («01 — PDF LIBRARY» корпуса русских баптистов); «1 Peter Bot — Source Materials» `10kZrOw…` → `10WLnp…` («02 — ТРУДНЫЕ ТЕКСТЫ», папка была пуста); «РУССКИЕ БАПТИСТЫ — EMERGENCY HANDOFF» `1G-9jYT…` → `1W8egf…` («99 — EMERGENCY SNAPSHOT»). Личные файлы корня (торты, Маяковский, скриншоты, `1.CSV`, два «Untitled spreadsheet», `00 — GITHUB PROJECTS`) **не тронуты** — ждут решения владельца.
+
+**Волна 2026-10-08b — приём под-корпуса синтеза (агент №4).** Агент синтеза не смог работать в своей песочнице (E2B не инициализировалась ~40 минут, 16+ попыток) и сложил материалы в Drive: `09 — SYNTHESIS (agent 4) — FALLBACK 2026-10-07 (E2B sandbox down)` = `18U6dsl…`. Перенесено в канонический дом Git `ИСКУПЛЕНИЕ/synthesis/` (7 файлов, byte-accurate; у `synthesis-corpus-v1.json` снят BOM, поставленный коннектором):
+
+| Файл Git | Drive ID |
+|---|---|
+| `synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md` | `101_Q15IzPajiATl86OsaKUow0jArl58h` |
+| `synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md` | `1wjYa-bNbC_mrYScOSOavUCt1brG0So9p` |
+| `synthesis/02_CONFLICT_LEDGER.md` | `1Vn9Vzdiri98PgdehkPGAMsBoiIA_F7gX` |
+| `synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md` | `1Tbd2IsZ1Ls8gLwLW2TP4GSQBTP5IYNQH` |
+| `synthesis/drafts/01_what-is-atonement.md` | `1MWqCtUztQF_jfI8ffIYX5aYjmQ5lq35L` |
+| `synthesis/data/synthesis-corpus-v1.json` | `1ehznH7G-2etlICzPokOcaAYpQwHVVxqO` |
+| `synthesis/00_README_FALLBACK_2026-10-07.md` | `1_KVxtWTpmuUeYVzngWxL0x3_EwjOK30h` |
+
+Папка переименована в `09 — SYNTHESIS (agent 4) — INGESTED INTO GIT 2026-10-08`; ID файлов сохранены, содержимое Drive-копий обновлено по канону (`update_file_content`), новые ID не созданы. Ветка агента `arena/5fe5b33f-research` на GitHub отсутствует (404) — перенос сделан в ветке координатора `arena/dddc1326-research`. Правки при приёмке: снято приписанное Мюррею «закрытие» 2 Кор. 5:14 и Евр. 2:9 (материнский `10` §3 это запрещает), счёт расхождений 12 → 15 по факту реестра, цитата Мф. 11:28 приведена к Синодальному, реплика «нельзя молиться за каждого (1 Ин. 5:16)» атрибутирована как чтение Оуэна. Ни один HOLD не снят; вердикта по объёму нет.
 
 ## 6. Что владелец может сделать дальше
 
