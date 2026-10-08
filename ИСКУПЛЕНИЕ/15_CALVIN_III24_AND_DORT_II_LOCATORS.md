@@ -358,8 +358,8 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 | Где глава | **Chapter VIII / Cap. VIII — Of Christ the Mediator / De Christo Mediatore**: начинается в **chunk 182** (арт. I–IV), заканчивается в **chunk 183** (арт. V–VIII; далее Cap. IX «Of Free-will») |
 | Язык издания | WCF у Шаффа идёт **двумя колонками EN + LA** (предложение EN, затем LA) — в отличие от Дорта, где только латынь |
 | Drive PDF | `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`, **16 179 601 bytes**, md5 `c992905d7f02a04c8cc33fbf4731529b`. `read_file_text` → `extraction_status: empty` («no text layer», скан). Страница этого PDF извлечением **не проверяема**: не ретраить и не угадывать |
-| **Печатная страница (закрыто 2026-10-07, вторая волна)** | Schaff, *Creeds of Christendom*, vol. III (1919, 6th ed.; IA `TheCreedsOfChristendomV3`, 983 с.): **Исповедание начинается с. 600** (по оглавлению тома), **гл. VIII «Of Christ the Mediator» — с. 633** (подтверждено поиском по скану: заголовок «Of Christ the Mediator.» на с. 633). Глава идёт до с. 674 (далее — факсимиле Большого катехизиса) |
-| **Постатейные страницы (закрыто 2026-10-07, третья волна)** | **8.1 — 633; 8.2 — 633; 8.3 — 634; 8.4 — 634; 8.5 — 635; 8.6 — 635; 8.7 — 636; 8.8 — 636.** Поиск по OCR скана: «It pleased God, in his eternal purpose» → 633; «The Son of God, the second person in the Trinity» → 633; «was sanctified and anointed with the Holy Spirit» → 634; «This office the Lord Jesus did most willingly undertake» → 634; «which he through the eternal Spirit» → 635; «the virtue, efficacy, and benefits thereof» → 635; «acteth according to both natures» → 636; «To all those for whom Christ hath purchased redemption» → 636. Уровень — страница, на которой **начинается** артикул, не строка. OCR тома неровный: та же фраза 8.5 в другой формулировке (`hath fully satisfied the justice of his Father`) поиском не находится |
+| **Печатная страница (закрыто 2026-10-07, вторая волна — ЧАСТИЧНО ОШИБОЧНО, см. §D.1)** | Schaff, *Creeds of Christendom*, vol. III (1919, 6th ed.). **«Исповедание начинается с. 600» — верно** (печатная страница, совпадает с оглавлением тома). **«гл. VIII — с. 633» — НЕВЕРНО: 633 — это номер листа, а не печатной страницы.** Смещение лист → страница в этом районе: **−14**. Правильные печатные страницы: **гл. VIII — 619–622** (подробно и с якорями — §D.1) |
+| **Постатейные страницы (закрыто 2026-10-07, третья волна; ПЕРЕСЧИТАНО 2026-10-08 — ряд был в листах)** | прежний ряд **633 / 633 / 634 / 634 / 635 / 635 / 636 / 636 — номера ЛИСТОВ**. Печатные страницы: **8.1 — 619; 8.2 — 619; 8.3 — 620; 8.4 — 620; 8.5 — 621; 8.6 — 621; 8.7 — 622; 8.8 — 622.** Поиск по OCR скана: «It pleased God, in his eternal purpose» → 633; «The Son of God, the second person in the Trinity» → 633; «was sanctified and anointed with the Holy Spirit» → 634; «This office the Lord Jesus did most willingly undertake» → 634; «which he through the eternal Spirit» → 635; «the virtue, efficacy, and benefits thereof» → 635; «acteth according to both natures» → 636; «To all those for whom Christ hath purchased redemption» → 636. Уровень — страница, на которой **начинается** артикул, не строка. OCR тома неровный: та же фраза 8.5 в другой формулировке (`hath fully satisfied the justice of his Father`) поиском не находится |
 
 EN-якоря (номера сносок Шаффа в квадратных скобках):
 
@@ -374,5 +374,38 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 
 - Даёт: PD-текст WCF 8 на EN **и** LA с проверенным локатором уровня «чанк + номер статьи + номер сноски Шаффа». По оси текста `locatorState = verified`. **Плюс печатная страница: vol. III (1919), гл. VIII — с. 633, постатейно 633 / 633 / 634 / 634 / 635 / 635 / 636 / 636** (вторая и третья волна 2026-10-07).
 - Не даёт: **страницу нашего Drive PDF** (скан без текстового слоя — ось `unchecked` принципиально). Постатейная разбивка закрыта по изд. 1919.
+---
+
+### D.1 Пересчёт печатных страниц WCF VIII (2026-10-08) — прежний ряд был в листах
+
+**Что обнаружено.** В волнах 2026-10-07 номера «633 / 635 / 636» брались напрямую из поля `page` ответа `fulltext/inside.php`. Для этих двух сканов поле `page` — это **номер листа**, а не печатной страницы (для тома Оуэна оно тоже лист, там смещение −16; здесь **−14**). В той же строке таблицы число «600» было взято из оглавления тома, то есть это настоящая печатная страница. Получилась строка, где две величины на разных шкалах.
+
+**Как проверено.** Сверка с `*_page_numbers.json` обоих сканов и с колонтитулами:
+
+| Лист | Печатная | Что на листе |
+|---|---|---|
+| 614 | **600** | «THE WESTMINSTER CONFESSION OF FAITH. A.D. 1647.» — начало Исповедания. **Совпадает с оглавлением тома (600)** — независимое подтверждение смещения |
+| 630 | 616 | «CuarTer VII. Of God's Covenant with Man» |
+| 633 | **619** | «Car. VIII. De Christo Mediatore» (латинская колонка) и 8.1 EN «It pleased God, in his eternal purpose…» |
+| 635 | **621** | 8.5 EN — полный verbatim ниже |
+| 636 | **622** | 8.8 EN и 8.8 LA («Pro quibus Christus redemptionem acquisivit…») |
+| 637 | 623 | «CuarTer IX. Of Free-will» |
+
+Смещение **−14** держится непрерывно: 617→603, 621→607, 630→616, 633→619, 635→621, 636→622, 639→625, 647→633, 651→637 (оба скана — `creedsofchristen0003phil_c6k6` и `TheCreedsOfChristendomV3` — дают **одинаковую** карту лист → страница: это один и тот же экземпляр, отсканированный дважды).
+
+**Источник:** Schaff, *The Creeds of Christendom, with a History and Critical Notes*, **vol. 3**, **Harper & Brothers, 1919**; IA `creedsofchristen0003phil_c6k6` (скан 2026-03, tesseract 5.3.0, `page_number_confidence: 100`, WordConf по региону 95–96). Endpoint: `https://ia600402.us.archive.org/fulltext/inside.php?item_id=creedsofchristen0003phil_c6k6&doc=creedsofchristen0003phil_c6k6&path=/19/items/creedsofchristen0003phil_c6k6&q=…`
+
+**Verbatim, 8.5 (лист 635 = печатная 621), левая (английская) колонка:**
+
+> **V.** The Lord Jesus, by his perfect obedience and sacrifice of himself, which he through the eternal Spirit once offered up unto God, **hath fully satisfied the justice of his Father, and purchased not only reconciliation, but an everlasting inheritance in the kingdom of heaven, for all those whom the Father hath given unto him.**
+
+**Verbatim, 8.8 (лист 636 = печатная 622):**
+
+> **VIII.** To all those for whom Christ hath purchased redemption he doth certainly and effectually apply and communicate the same; making intercession for them, and revealing unto them, in and by the Word, the mysteries of salvation; effectually persuading them by his Spirit to believe and obey; and governing their hearts by his Word and Spirit; overcoming all their enemies by his almighty power and wisdom, in such manner and ways as are most consonant to his wonderful and unsearchable dispensation.
+
+**Одна невязка, о которой надо помнить.** На листе 637 колонтитул прочитан OCR как «THE WESTMINSTER CONFESSION OF FAITH, 1647. **625**», тогда как по карте лист 637 = 623. Это единственный колонтитул из девятнадцати, где OCR захватил число; расхождение ровно 2. Карта `page_numbers.json` в этом месте не интерполирована у листов 633/635/636/639 (confidence 100) и интерполирована у 637 (confidence null). Считаю число 625 ошибочным чтением (3 → 5); проверка на уровне изображения не проводилась — страница 623 стоит в отчёте как «по карте», не «по колонтитулу».
+
+**Что это меняет.** Локатор WCF VIII по печатной странице теперь: **том III (Harper, 1919), с. 619–622**; по-прежнему привязан к идентификатору скана. Цитировать «с. 633» больше нельзя — это лист. Ссылка на главу в публикации по-прежнему должна идти по **главе и статье** (WCF 8.5, 8.8), страница — внутренний локатор корпуса.
+
 - Не даёт права публиковать: серия под `PUBLICATION_HOLD`, item-level решения по WCF EN не принималось.
 - Порядок чтения тот же, что у Дорта: 8.5 и 8.8 без 8.1 («given to him») и без 8.6 («unto the elect») — не цитировать как «Вестминстер об объёме».
