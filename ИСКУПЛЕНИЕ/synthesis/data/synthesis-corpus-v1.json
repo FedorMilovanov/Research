@@ -48,6 +48,18 @@
       "quotePolicy": "Писание (Синодальный, PD) с локаторами-стихами; исповедания — по номерам статей; нет ни одной цитаты современных авторов (RIGHTS_HOLD)"
     },
     {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "role": "черновик статьи A2 (необходимость искупления): две линии ответа, любовь первична",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.1–2 по номерам; Мюррей — пересказ B1 через 10_ с пометкой, без цитат"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "role": "черновик статьи A3 (природа искупления): послушание + 4 категории + победа; маршрут-предложение /articles/priroda-iskupleniya-krest/",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.3 по номеру; Мюррей I.2 — пересказ B1 через 10_ с пометкой, без цитат"
+    },
+    {
       "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
       "role": "SSOT под-корпуса (этот файл)",
       "status": "DONE"
