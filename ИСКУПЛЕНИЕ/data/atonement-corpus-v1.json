@@ -645,16 +645,16 @@
     "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
   },
   "driveMirrors": {
-    "file00": "1EqpEu8LhTasu5zsIU_5PJEfk8a75zTa0eb3hKhIu6YM",
+    "file00": "1prouh0VlgO6AhcnfULTDRckOnwXJLwBGOuJjzkfjwPQ",
     "file00readme": "1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs",
-    "file05": "1ibh042Hi4xfpKf7L4nRk2d5FuToz8I1RigxIXjgziMY",
-    "file07": "10A_Gg-Wuw7OMK6VDdhweOpq2uJcCwjH16IxK_e41cXg",
+    "file05": "1GCEkkJKbWTDyWp-6YzMk590SdIVwn8lndXys-jg1AX4",
+    "file07": "1bNSXY3j7JQ4YaWj1prngLqO_OKCoCi28pmh30reQMmU",
     "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
     "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
-    "file12": "1UYZf-spro65daGmGyvmglkqDouGTPvUjpktXm6jCM3o",
+    "file12": "1AR8vNpNeg1uZidegeZfWu8qdGC3rQxjTz6dvGk8793o",
     "file13": "1jMpfpjP-ThrWCXLx13wb-d4aOBH9PH39",
     "file14": "1Dp9Wk_q3Dz1mjIBqsKkyJrXXwZI4l_-aSepUh2BKbBY",
-    "file15": "1njhmkSQVlwtov30vd5STMkNvzf8tnmCTTzx4KQjgv_g",
+    "file15": "1zwyRmoTiRQVMKpfNkngINwuTzbpcpebUL1M1IyO9OfU",
     "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path. Since 2026-10-08 superseded copies are NOT trashed: they are moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd), so previously published IDs keep resolving. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json.",
     "supersededIds2026-10-08": {
@@ -677,7 +677,27 @@
       "file13prev2026-10-08c": "1edopfq2CxCIduWIdlmaF0fNawNVE8q0c",
       "file15prev2026-10-08c": "1QkGGEdEi7bcI_77Z4oCjaYe6JqdMeXIZ7gGWnIEa4Rw",
       "corpusRegistryJsonPrev2026-10-08c": "10yX3XTslQ7I6viIlJ1V5qq2X0gjIqSLp",
-      "file07prev2026-10-08d": "1raUUWW7y0Lu9UuvoBL6t3qEjV9UUImk8sgxgPHQ8svk"
+      "file07prev2026-10-08d": "1raUUWW7y0Lu9UuvoBL6t3qEjV9UUImk8sgxgPHQ8svk",
+      "file00Prev2026-10-08e": "1EqpEu8LhTasu5zsIU_5PJEfk8a75zTa0eb3hKhIu6YM",
+      "file03Prev2026-10-08e": "1xMwEx6UA2W4N8sE3b9DKRifRnko8T4-RNZfO0_IB-Cs",
+      "file05Prev2026-10-08e": "1ibh042Hi4xfpKf7L4nRk2d5FuToz8I1RigxIXjgziMY",
+      "file07Prev2026-10-08e": "10A_Gg-Wuw7OMK6VDdhweOpq2uJcCwjH16IxK_e41cXg",
+      "file12Prev2026-10-08e": "1UYZf-spro65daGmGyvmglkqDouGTPvUjpktXm6jCM3o",
+      "file15Prev2026-10-08e": "1njhmkSQVlwtov30vd5STMkNvzf8tnmCTTzx4KQjgv_g",
+      "synthesisConflictLedgerPrev2026-10-08e": "151yu6HTO2j6RSkwNCk5YnbQY2XuO7g8H",
+      "synthesisRegistryJsonPrev2026-10-08e": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_"
+    },
+    "file03": "1Bu5d-44UP1XEz7gvcXuazUjfP4HyDJtOCA39iQmg64w",
+    "synthesis": {
+      "readmeFallback": "1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko",
+      "seriesPlan": "11lznQuu7weVv99mt-DW_0o_DEv2FDzo_",
+      "authority": "1AnV1Q137HnN8zNqyn9xJOeo6wzuTe4ws",
+      "practicalNotes": "1YDkHr38ddVGimxxppFQB0Pa7woMGYEFf",
+      "draftsFolder": "19Br_WHEci3DL6RM2vKWturbP3OCNA1zM",
+      "dataFolder": "1AB2I-t2LDBQFgkRSN9yHAHywDMsMxc6F",
+      "conflictLedger": "1T5PFoicHPzfaz17DmoS16mEZG_r6LrRL",
+      "registryJson": "1R1oLB5HZ2ougVrc39JhmmsenTy5z_vBB",
+      "folder09": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2"
     }
   },
   "doNot": [
