@@ -585,16 +585,16 @@
     "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
   },
   "driveMirrors": {
-    "file00": "1NQ12OhDCWrmZv0EKeSIbvn65P9ab80cd3WjMd4UA4Sc",
+    "file00": "1EqpEu8LhTasu5zsIU_5PJEfk8a75zTa0eb3hKhIu6YM",
     "file00readme": "1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs",
-    "file05": "1V7ujL3oqtbIwQfZp_5xxpBfY4rohg6a6cbulQl-zDIY",
-    "file07": "1raUUWW7y0Lu9UuvoBL6t3qEjV9UUImk8sgxgPHQ8svk",
+    "file05": "1ibh042Hi4xfpKf7L4nRk2d5FuToz8I1RigxIXjgziMY",
+    "file07": "10A_Gg-Wuw7OMK6VDdhweOpq2uJcCwjH16IxK_e41cXg",
     "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
     "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
-    "file12": "1YrHM6pqfqCbLgQCbDjKYrs33so-xKhwa0uvs2P_mHhE",
-    "file13": "1edopfq2CxCIduWIdlmaF0fNawNVE8q0c",
+    "file12": "1UYZf-spro65daGmGyvmglkqDouGTPvUjpktXm6jCM3o",
+    "file13": "1jMpfpjP-ThrWCXLx13wb-d4aOBH9PH39",
     "file14": "1Dp9Wk_q3Dz1mjIBqsKkyJrXXwZI4l_-aSepUh2BKbBY",
-    "file15": "1QkGGEdEi7bcI_77Z4oCjaYe6JqdMeXIZ7gGWnIEa4Rw",
+    "file15": "1njhmkSQVlwtov30vd5STMkNvzf8tnmCTTzx4KQjgv_g",
     "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path. Since 2026-10-08 superseded copies are NOT trashed: they are moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd), so previously published IDs keep resolving. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json.",
     "supersededIds2026-10-08": {
@@ -610,7 +610,14 @@
       "synthesisFallbackReadme": "1_KVxtWTpmuUeYVzngWxL0x3_EwjOK30h",
       "corpusRegistryJson": "1nj62d1gZm7HtqptA5vWMIjKlhr0wrUBF",
       "disposition": "moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd); not trashed, not deleted — IDs stay resolvable for links from other repos",
-      "file07Intermediate": "134drcyzXWT7HcLNrhOcxFwqowIO0v3SCtaUSfZyWIA4"
+      "file07Intermediate": "134drcyzXWT7HcLNrhOcxFwqowIO0v3SCtaUSfZyWIA4",
+      "file00prev2026-10-08c": "1NQ12OhDCWrmZv0EKeSIbvn65P9ab80cd3WjMd4UA4Sc",
+      "file05prev2026-10-08c": "1V7ujL3oqtbIwQfZp_5xxpBfY4rohg6a6cbulQl-zDIY",
+      "file12prev2026-10-08c": "1YrHM6pqfqCbLgQCbDjKYrs33so-xKhwa0uvs2P_mHhE",
+      "file13prev2026-10-08c": "1edopfq2CxCIduWIdlmaF0fNawNVE8q0c",
+      "file15prev2026-10-08c": "1QkGGEdEi7bcI_77Z4oCjaYe6JqdMeXIZ7gGWnIEa4Rw",
+      "corpusRegistryJsonPrev2026-10-08c": "10yX3XTslQ7I6viIlJ1V5qq2X0gjIqSLp",
+      "file07prev2026-10-08d": "1raUUWW7y0Lu9UuvoBL6t3qEjV9UUImk8sgxgPHQ8svk"
     }
   },
   "doNot": [
