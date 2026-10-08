@@ -230,7 +230,8 @@
     },
     "owenPassagePagesAdded": "2026-10-07 third wave: CCEL chunk references in the cards now also carry the Goold 1850 vol. X printed page (1 John 2:2 = 330; 1 Tim 2:4 = 343; 2 Pet 3:9 = 348; Heb 2:9 = 349; 2 Cor 5:14-15 = 350-352; 2 Pet 2:1 = 362-363). Book IV ch. IV range 343-358, ch. V 359-367.",
     "titus2v11CardAdded2026-10-08": "H10 created 2026-10-08: Titus 2:11 was listed as mandatory Extent-HARD in 03 but had no card in 12. Readings H10-a..d; guards: 2:14 'peculiar people' in the same paragraph, soterios is an adjective not a headcount.",
-    "calvinPastoralEpistlesPagesAdded2026-10-08": "H2-e (1 Tim 2:4, p.55 'classes of men, and not to individual persons') and H2-f (1 Tim 2:5, p.56 'the fruit of the sacrifice... extends to all') added from Calvin's own commentary; H2-f is the hardest Calvin sentence for P1 in this locus."
+    "calvinPastoralEpistlesPagesAdded2026-10-08": "H2-e (1 Tim 2:4, p.55 'classes of men, and not to individual persons') and H2-f (1 Tim 2:5, p.56 'the fruit of the sacrifice... extends to all') added from Calvin's own commentary; H2-f is the hardest Calvin sentence for P1 in this locus.",
+    "owenTitus2v11Added2026-10-08": "H10 now rests on two independent primary sources with PD pages: Calvin (CTS 1856, pp. 316-318) and Owen (Goold vol. X, pp. 336 and 395). Owen readings H10-e (livery of believers) and H10-f (grace that certainly brings salvation + 2:14 peculiar people). Owen never writes 'Titus 2:11 proves particular redemption' — both places are parts of a larger argument."
   },
   "historicalControl": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
   "owenBookIV": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
@@ -476,6 +477,49 @@
           }
         },
         "ccelReader": "not used for this volume"
+      },
+      "owenGooldVolX1850": {
+        "edition": "Owen, The Works, vol. X (London: Johnstone and Hunter, 1850) — The Death of Death in the Death of Christ",
+        "source": "IA worksofjohnowe185010owen (652 leaves)",
+        "scanUrl": "https://archive.org/details/worksofjohnowe185010owen",
+        "searchEndpoint": "https://ia601500.us.archive.org/fulltext/inside.php?item_id=worksofjohnowe185010owen&doc=worksofjohnowe185010owen&path=/30/items/worksofjohnowe185010owen&q=...",
+        "rights": "NOT_IN_COPYRIGHT",
+        "offsetRule": "printed page = leaf - 16 (constant across the volume; no unnumbered-leaf drift detected)",
+        "offsetAnchors": [
+          "leaf 310 -> 294 (running head '294 THE DEATH OF DEATH [BOOK IV.')",
+          "leaf 312 -> 296; leaf 330 -> 314; leaf 332 -> 316; leaf 346 -> 330",
+          "leaf 352 -> 336 (running head '336 THE DEATH OF DEATH [BOOK IV.' — the Titus 2:11 leaf itself)",
+          "leaf 360 -> 344; leaf 366 -> 350; leaf 411 -> 395",
+          "leaf 105 -> 89 (running head 'OF THE DEATH OF CHRIST. 89', a different treatise in the same volume)",
+          "leaf 238 -> 222 (volume contents: 'IV. - Of the distinction of impetration and application ... 222')"
+        ],
+        "level": "passage/paragraph, not line; page image not inspected",
+        "byLocus": {
+          "1Tim2v6": {
+            "fourCandidatesInDebate": {
+              "printed": 307,
+              "leaf": 323,
+              "book": "Book II, word-study on 'all'"
+            },
+            "diedForAllStatement": {
+              "printed": 371,
+              "leaf": 387,
+              "book": "Book IV, VI (368-403), answering Thomas More"
+            }
+          },
+          "Titus2v11": {
+            "liveryOfBelievers": {
+              "printed": 336,
+              "leaf": 352,
+              "book": "Book IV, III (330-342), inside the 1 John 2:2 discussion"
+            },
+            "graceThatCertainlyBringsSalvation": {
+              "printed": 395,
+              "leaf": 411,
+              "book": "Book IV, VI, answer to More, Arg. 13 (Tit. ii. 11, 13, iii. 4, 5)"
+            }
+          }
+        }
       }
     },
     "calvinII17Chunks": [
@@ -601,7 +645,10 @@
     "calvin1Tim2v4KeyQuote": "But the present discourse relates to classes of men, and not to individual persons; for his sole object is, to include in this number princes and foreign nations. — CTS 1856, p. 55",
     "calvin1Tim2v5KeyQuote": "this Mediator was given, not only to one nation, or to a small number of persons of some particular rank, but to all; because the fruit of the sacrifice, by which he made atonement for sins, extends to all. — CTS 1856, p. 56 (OCR truncates on the page break)",
     "calvinTitus2v11KeyQuote": "He argues from the design of redemption, which he shews to be a desire to live a godly and upright life. ... the grace of God hath appeared, teaching us; for he means that it ought to hold the place of instruction to us to regulate our life well. — CTS 1856, p. 317",
-    "calvinTitus2v11FrSerNote": "Translator's note (NOT the commentary text), citing Calvin's French Sermons, CTS 1856 pp. 317-318: 'Paul did not mean in this passage, or in 1 Tim. ii. 6, anything else than that the great are called by God, though they are unworthy of it; that men of low condition, though they are despised, are nevertheless adopted by God' - and it rejects the inference 'there is no election'."
+    "calvinTitus2v11FrSerNote": "Translator's note (NOT the commentary text), citing Calvin's French Sermons, CTS 1856 pp. 317-318: 'Paul did not mean in this passage, or in 1 Tim. ii. 6, anything else than that the great are called by God, though they are unworthy of it; that men of low condition, though they are despised, are nevertheless adopted by God' - and it rejects the inference 'there is no election'.",
+    "owenTitus2v11KeyQuote": "Believers are called \"all nations,\" Isa. ii. 2, Ixvi. 18; yea, \"all men,\" Tit. ii. 11: for to them alone the salvation-bringing grace of God is manifest. — Goold vol. X, p. 336",
+    "owenTitus2v11SecondQuote": "The \"grace\" mentioned, Tit. ii. 11, 13, is the grace that certainly brings salvation, which that common love doth not, and was the cause of sending Christ, \"that he might redeem us from all iniquity, and purify to himself a peculiar people, zealous of good works\"; where our redemption and sanctification are asserted to be the immediate end of the oblation of Jesus Christ. — Goold vol. X, p. 395",
+    "owen1Tim2v6DiedForAllQuote": "...we say, one place of Scripture interprets another... when the Scripture showeth that Christ died or gave himself a ransom for all, we believe it; and when, in another place, he declares that all to be his church, his elect, his sheep, all believers, - some of all sorts... this is not to lay an exception or restraint upon what was said of all before... and so we believe that he died for all. — Goold vol. X, p. 371"
   },
   "parallelAgents": {
     "briefsPath": "ИСКУПЛЕНИЕ/agents/",
