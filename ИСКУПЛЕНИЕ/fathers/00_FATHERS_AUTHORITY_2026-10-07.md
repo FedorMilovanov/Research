@@ -1,0 +1,110 @@
+# Святые отцы об искуплении — authority под-корпуса
+
+**Дата:** 2026-10-07 (обновлено 2026-10-08: карточки `11_`, приёмка PD-каналов)
+**Authority ID:** `ATONEMENT-FATHERS-AUTHORITY-2026-10-07`
+**Статус:** `CURRENT / SUB-CORPUS / ACTIVE RESEARCH / NOT PUBLICATION-READY`
+**Родительская corpus-authority:** [`../00_CURRENT_AUTHORITY_2026-10-07.md`](../00_CURRENT_AUTHORITY_2026-10-07.md) → root `00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md`
+**Evidence policy:** [`../../data/repository-evidence-policy-v2.json`](../../data/repository-evidence-policy-v2.json)
+**Родительская карта вопроса:** [`../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md`](../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md)
+
+Этот файл — corpus-specific owner graph **патристического** под-корпуса `ИСКУПЛЕНИЕ/fathers/`. Он не конкурирует с корневым Research root и не разрешает публикацию на `gospod-bog.ru`. `Research closure ≠ Product write ≠ publication approval`.
+
+## 1. Задача под-корпуса
+
+Показать **что говорилось, когда, в каком жанре, и где граница** между «у отцов есть это» и «отцы учили то же, что формулирует позднейшая схоластика / Реформация».
+
+Что под-корпус **делает**:
+
+1. Даёт карточки по авторам и отрывкам с точным локатором PD-издания.
+2. Разделяет метафоры и модели (выкуп, жертва, победа, усыновление, обожение, исцеление, примирение, очищение, удовлетворение) — по авторам и жанрам.
+3. Фиксирует фактическую картину по универсальным/партикулярным текстам (1 Тим. 2:4–6; 1 Ин. 2:2; Ин. 3:16; 2 Пет. 3:9; Мф. 20:28; Рим. 5:18).
+4. Фиксирует **молчания** — как результат, а не как пробел.
+5. Прямо помечает анахронизмы-ловушки.
+
+Чего под-корпус **не делает**:
+
+- не выносит вердикт в споре об объёме искупления (`EVIDENCE_HOLD` корпуса не снят);
+- не сводит отцов к предтече какой-либо партии;
+- не делает «отцы единогласно…»;
+- не публикует Product-тексты.
+
+## 2. Канал источников, проверенный в этой волне
+
+| Ярус | Что | Локатор канала | Права |
+|---|---|---|---|
+| PD-перевод EN | ANF (Ante-Nicene Fathers, Roberts–Donaldson, ред. Coxe, 1885–97) | CCEL `https://www.ccel.org/ccel/schaff/anfNN/cache/anfNN.txt`; тома ANF01–ANF09 | public domain |
+| PD-перевод EN | NPNF (Nicene and Post-Nicene Fathers), серия 1 (Chrysostom/Augustine) | CCEL `.../npnf1_NN/cache/npnf1_NN.txt` | public domain |
+| PD-перевод EN | NPNF серия 2 (Athanasius, Greg. Nyssa, Nazianzen, Basil, Hilary, Damasc., Ambrose, Cassian, Leo, Chalcedon) | CCEL `.../npnf2_NN/cache/npnf2_NN.txt` | public domain |
+| Рабочая копия | клон зеркала Schaff-сета (CCEL-выгрузки) — рабочая, вне git | `/tmp/cf/ccel_fathers_complete/downloads/<VOL>/<VOL>.txt` | public domain |
+| Греческий текст | Open Apostolic Fathers (Tauber & Macdonald 2019), по изданию Lake | `https://github.com/jtauber/apostolic-fathers` | README репозитория заявляет CC BY-SA 4.0, но GitHub license API вернул `None` (файла лицензии нет) → до публикации статус `RIGHTS_UNCLEAR`: цитируются только короткие фразы, полный текст не выкладывается |
+| Греческий текст | First1KGreek (OpenGreekAndLatin): Lake 1912; Archambault 1909; Harvey 1857; Robertson 1893; Mason 1899; Pusey 1868 | `https://github.com/OpenGreekAndLatin/First1KGreek` | сами издания — PD; цифровая разметка репозитория — CC BY-SA 4.0, атрибуция обязательна |
+| Греческий текст | First Thousand Years of Greek (OGL) — Афанасий, Григорий Богослов, Ориген | `https://github.com/OpenGreekAndLatin/First1KGreek` (CTS URN в карточках) | CC BY-SA 4.0 — атрибуция обязательна |
+| Латинский текст | The Latin Library — Тертуллиан (Adv. Marc., De carne Christi, De paenitentia), Анзельм, Лев, Амвросий, Августин | `https://www.thelatinlibrary.com/tertullian.html` и др. | PD-текст; **транскрипция, не критическое издание** |
+
+Не заявлено и не имитировано: TLG, CCSG, Sources Chrétiennes, CUA Press, современные критические издания. CCEL-страницы-reader 2026-10-07 нестабильны/иногда login-wall — использованы **TXT-выгрузки**.
+
+## 3. Локатор-формат (обязателен в каждой карточке)
+
+1. **Творение, книга, глава/§** — стандартный научный локатор.
+2. **Канал-локатор:** `<VOL>.txt:L<строка>` (например `ANF01.txt:L595`) — точная строка в CCEL-выгрузке; проверяемо на байтах.
+3. **Печатная страница** (ANF vol/page, PG/PL колонка) — **LOCATOR_HOLD**: в CCEL .txt пагинация печатного издания не сохраняется; для Product нужен скан/PDF.
+4. Оригинал — отдельно: греческий/латинский фрагмент + канал (CTS URN / Latin Library URL) или типизированный HOLD.
+
+## 4. Классы доказательств в под-корпусе
+
+| Объект | Класс | Примечание |
+|---|---|---|
+| Текст отца в оригинале (греч./лат.) | `A1` | язык не copyright; цифровая транскрипция — со ссылкой на канал |
+| PD-перевод XIX в. (ANF/NPNF) | `A1` как перевод | при содержательно значимой цитате — сверка с оригиналом; ошибки перевода фиксируются |
+| Издательская заметка в ANF/NPNF (XIX в.) | `A2`/`A3`-уровень для этого под-корпуса | это **не** голос отца; помечать «редактор ANF» |
+| Современная вторичная литература (Aulén, Rashdall, Hanson, Kelly, Pelikan, studia patristica) | `B1` | только ссылка/позиция, без дампа текста |
+| Современные научные издания/переводы (SC, CUA, Newman, FC) | `B1` + `RIGHTS_HOLD` | короткая ссылка с указанием; файлами не выкладывать |
+| Сайт/URL/библиография | `C` | HOLD не снимает |
+
+Поля `evidenceClass`, `accessState`, `locatorState`, `rightsState`, `publicationState` фиксируются раздельно (см. `data/fathers-corpus-v1.json`).
+
+## 5. HOLD-таблица
+
+| Флаг | Объект | Почему |
+|---|---|---|
+| `LOCATOR_HOLD` | печатная пагинация ANF/NPNF (vol/page), колонки PG/PL для всех карточек | CCEL .txt не несёт пагинации; нужен PDF/скан |
+| `RIGHTS_HOLD` | современные переводы и монографии (Melito *Peri Pascha* в совр. переводах, Cyril Alex. в совр. переводах, Theodoret comm., Peter Chrysologus, Photius, Theophylact, Феофилакт) | XX–XXI вв. |
+| `ARCHIVE_HOLD` | Melito *Peri Pascha* (editio princeps 1940), Gregory the Great *Moralia* (PD-англ. 1844–50, archive.org), Cyril of Alexandria (PD-англ. Pusey, archive.org), Basil *Hom. in Ps. 48* (PD-англ. нет в ANF/NPNF) | полного объекта в этой волне нет |
+| `ARCHIVE_AVAILABLE` (приёмка каналов 2026-10-08) | конкретные PD-сканы archive.org найдены и приняты как канал: **Irenaeus, Harvey 1857, vol. 2 (кн. III–V)** — `sanctiirenaeiep00harvgoog`, `sanctiirenaeili00irengoog` (vol. 1: `sanctiirenilibr01irengoog`, `sanctiirenaeiep01harvgoog`); **Gregory the Great, *Morals on the Book of Job* (Library of Fathers, 1844–50)** — `moralsonbookofjo01greguoft`, `moralsonbookjob01igoog`, `moralsonbookofj234greguoft`, `moralsonbookofjo32greg`, серия: V21/V23/V31; **Cyril Alex., *In D. Joannis Evangelium* (Pusey 1872, греч.+лат.)** — `sanctipatrisnos00–03pusegoog`, `indjoannisevang00pusegoog`; **Anselm, *Cur Deus Homo* (Deane 1903)** — `stanselmproslogu0000dean`, `stanselmeproslog00anseuoft`; **Migne PL (1–221)** — `patrologia-latina_1-221` (html-база, томную привязку проверять отдельно) | канал принят ≠ локус прочитан: чтение и локаторы — отдельная работа (см. `10_`, §9) |
+| `EVIDENCE_HOLD` | любой вывод об объёме искупления «по отцам» | не снят; корпус решает экзегезу, не вердикт |
+| `PUBLICATION_HOLD` | весь под-корпус | research ≠ publication |
+
+## 6. Что сделано в этой волне / что нет
+
+**Сделано (проверено по тексту):** карточки по мужам апостольским (Климент Римский, Игнатий, Варнава, Дидахе/Ерм/Папий — как молчания), апологетам и Иринею/Тертуллиану/Киприану, а также по Оригену, Афанасию, Кириллу Иерусалимскому, Василию, Григорию Богослову, Григорию Нисскому, Златоусту, Августину, Льву, Иоанну Дамаскину. Карты: метафоры/модели, «выкуп — кому?», универсальные тексты, «молчания и ложные друзья».
+
+**Не сделано (остаётся):** Мелитон (*Peri Pascha*), Епифаний, Феодор Мопсуестийский, Феодорит, Пётр Хрисолог, Псевдо-Дионисий, Григорий Великий (*Moralia*), Фотий, Феофилакт; Анзельм — только граница, требуется PD-канал (Deane 1903, CCEL); по Амвросию и Иерониму — только карта тома, конкретный локус не локализован.
+
+## 7. Запрещённые формулировки в этом под-корпусе
+
+- «Отцы учили…» без имени, места и жанра.
+- «Отцы единогласно…».
+- «Ориген придумал выкуп диаволу, и Церковь это приняла».
+- «Августин = Кальвин по искуплению» и любые уравнения эпох без постраничного сличения.
+- «Отцы доказали…» — вместо этого «читали так-то».
+- Любой вердикт в споре об объёме.
+
+## 8. Интерфейс с закрытыми файлами корпуса
+
+- [`../13_DORT_II_CALVIN_OWEN_EXTENT.md`](../13_DORT_II_CALVIN_OWEN_EXTENT.md) и [`../14_…`](../14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md), [`../15_…`](../15_CALVIN_III24_AND_DORT_II_LOCATORS.md) — XVII в., не смешивать с патристикой.
+- Если отеческий локус совпадает с аргументом Оуэна — помечать как **«прецедент чтения»**, не как «источник доктрины».
+- Новые чтения добавлять в [`../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md`](../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md).
+- Конфликт с записью корпуса → фиксировать как конфликт, не править молча.
+
+## 9. Следующий допустимый шаг
+
+1. Печатные локаторы (ANF/NPNF PDF, PG/PL) для цитат, идущих в Product.
+2. Мелитон: найти PD-канал (Bonner 1940 — права; старые фрагменты ANF08 есть).
+3. Григорий Великий *Moralia* — PD-англ. Bliss (archive.org), карточка после приёмки объекта.
+4. Восточные авторы (Феодор, Феодорит, Кирилл Алекс.) — сначала латинский/греческий текст, потом права.
+
+## 10. Операционка
+
+- Файлы под-корпуса: `00_` (этот), `01_` метод, `02_`–`05_` карточки по эпохам, `06_`–`09_` карты, `data/fathers-corpus-v1.json`.
+- Верхняя нумерация `ИСКУПЛЕНИЕ/` не трогается; точечные правки (навигация, `05_`, строка authority) — с записью в отчёте.
+- Ветка одна: `arena/9269c042-research`; PR один, не мержить без команды владельца.

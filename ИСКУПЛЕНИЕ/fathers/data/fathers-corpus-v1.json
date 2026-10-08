@@ -1,0 +1,1180 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "FATHERS-CORPUS-AUTHORITY-2026-10-07",
+  "status": "CURRENT / SUB-CORPUS / ACTIVE RESEARCH / NOT PUBLICATION-READY",
+  "corpusPath": "ИСКУПЛЕНИЕ/fathers",
+  "parentCorpus": "ИСКУПЛЕНИЕ",
+  "parentAuthority": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+  "parentSsot": "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+  "stableEntrypoint": "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+  "method": "ИСКУПЛЕНИЕ/fathers/01_METHOD_LOCATORS_GENRE_ANACHRONISM.md",
+  "publicationBoundary": "Research presence is not Product write and not publication approval.",
+  "verdictPolicy": "NO VERDICT on the extent question; EVIDENCE_HOLD and PUBLICATION_HOLD remain in force.",
+  "oneLineResult": "Отцы читали и формулировали искупление множеством образов и в разных жанрах; доктрины объёма («за кого именно») в текстах нет — есть язык всеобщности и язык веры, и это разные задачи.",
+  "holds": [
+    "PUBLICATION_HOLD",
+    "RIGHTS_HOLD",
+    "ARCHIVE_HOLD",
+    "LOCATOR_HOLD",
+    "EVIDENCE_HOLD",
+    "ORIGINAL_TEXT_HOLD"
+  ],
+  "evidenceClasses": {
+    "A1": "Текст отца (греч./лат. оригинал) — язык не под copyright; цифровая транскрипция указывается отдельно.",
+    "A1-PD-translation": "PD-перевод XIX в. (ANF/NPNF, Eerdmans reprint) — перевод со сверкой значимых цитат по оригиналу, где возможно.",
+    "B1": "Современная вторичная литература — только библиографическая ссылка, без дампа (Kelly, Hanson, Aulén, Rashdall и др.).",
+    "HOLD-STUB": "Карточка-заглушка: канал не приян (ARCHIVE_HOLD/RIGHTS_HOLD/LOCATOR_HOLD) — цитат нет."
+  },
+  "locatorFormat": "Творение, книга/глава/§; затем канал и строка (ANF01.txt:L… / NPNF2_04.txt:L… / XML URN). PG/PL-колонки — LOCATOR_HOLD. ANF/NPNF и PG/PL — разные издания, не смешивать.",
+  "channels": [
+    {
+      "id": "CCEL-ANF-NPNF",
+      "kind": "PD-translation (XIX c.)",
+      "urls": [
+        "https://www.ccel.org/ccel/schaff/anf01/cache/anf01.txt"
+      ],
+      "localCopy": "/tmp/cf/ccel_fathers_complete/downloads (27 томов, Schaff set)",
+      "provenance": "CCEL (Eerdmans reprint); зеркало kyle-mirich/church-fathers-schaff-set",
+      "rights": "PD",
+      "accessState": "READABLE",
+      "caveat": "Переводы XIX в. с богословской окраской; пагинации ANF-страниц в .txt нет"
+    },
+    {
+      "id": "FIRST1K-GREEK",
+      "kind": "original-language XML (TEI/EpiDoc)",
+      "urls": [
+        "https://github.com/OpenGreekAndLatin/First1KGreek"
+      ],
+      "localCopy": "/home/user/_src/greek",
+      "provenance": "First1KGreek: Lake 1912 (1 Clem, Ignatius), Archambault 1909 (Justin Dial.), Harvey 1857 (Irenaeus гр. фрагм.), Robertson 1893 (Athanasius De Inc.), Mason 1899 (Gr. Naz. Or. 27-31), Klostermann (Origen, Comm. in Matth. XII-XVII)",
+      "rights": "текст PD; цифровая разметка CC BY-SA 4.0 — атрибуция обязательна",
+      "accessState": "READABLE"
+    },
+    {
+      "id": "OPEN-APOSTOLIC-FATHERS",
+      "kind": "original-language Greek (transcriptions)",
+      "urls": [
+        "https://github.com/jtauber/apostolic-fathers"
+      ],
+      "localCopy": "/tmp/apf (не в снапшоте)",
+      "provenance": "Tauber & Macdonald 2019, по изданию Lake (1-2 Clem, Ignatius, Barnabas, Didache, Hermas, Polycarp, Diognetus)",
+      "rights": "RIGHTS_UNCLEAR: README заявляет CC BY-SA 4.0, license API — None",
+      "accessState": "READABLE",
+      "caveat": "только короткие фразы; полный текст не публиковать до выяснения прав"
+    },
+    {
+      "id": "LATIN-LIBRARY",
+      "kind": "latin transcriptions",
+      "urls": [
+        "https://www.thelatinlibrary.com/tertullian.html",
+        "https://www.thelatinlibrary.com/christian.html"
+      ],
+      "provenance": "thelatinlibrary.com — транскрипции без критического аппарата",
+      "rights": "язык не под copyright; транскрипция PD",
+      "accessState": "READABLE",
+      "caveat": "Аппарата нет; варианты чтений не проверяются"
+    },
+    {
+      "id": "ARCHIVE-ORG-SCANS",
+      "kind": "PD book scans",
+      "urls": [
+        "https://archive.org"
+      ],
+      "provenance": "сканы печатных ANF/NPNF и PG/PL",
+      "rights": "PD (проверять по экземпляру)",
+      "accessState": "NOT_ACQUIRED",
+      "note": "ARCHIVE_HOLD для Moralia, Кирилла Алекс. (Pusey), Пс.-Дионисия, Феодорита, Петра Хрисолога"
+    },
+    {
+      "id": "B1-MODERN-SCHOLARSHIP",
+      "kind": "secondary",
+      "urls": [],
+      "provenance": "Kelly, Hanson, Aulén, Rashdall, Studia Patristica и др.",
+      "rights": "COPYRIGHT",
+      "accessState": "REFERENCE_ONLY",
+      "note": "Только B1-ссылки; тексты не выкладывать"
+    },
+    {
+      "id": "LOCAL-SCHAFF-TOMES",
+      "kind": "PD-translation (XIX c.) локальные копии томов",
+      "localCopy": "/tmp/cf/ccel_fathers_complete/downloads (ANF05, ANF06, ANF07, ANF10, NPNF2_01, NPNF2_06, NPNF2_09, NPNF2_10 — 8 томов)",
+      "provenance": "зеркало kyle-mirich/church-fathers-schaff-set (CCEL загрузки)",
+      "rights": "PD",
+      "accessState": "READABLE",
+      "caveat": "/tmp не персистентен: при потере — перекачать sparse-клоном"
+    },
+    {
+      "id": "ARCHIVE-HARVEY-IRENAEUS",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD-скан (1857): Harvey, S. Irenaei libros quinque adversus haereses, vol. 2 (кн. III–V)",
+      "locator": "archive.org: sanctiirenaeiep00harvgoog, sanctiirenaeili00irengoog (vol. 1 — sanctiirenilibr01irengoog, sanctiirenaeiep01harvgoog)",
+      "accessState": "VERIFIED_READ (III.18.1, скан-стр. 106; ссылка на apparatus скан-стр. 452)",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "ARCHIVE-MORALIA-BLISS",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD-англ. (1844–50): Morals on the Book of Job, Library of Fathers",
+      "locator": "archive.org: moralsonbookofjo01greguoft, moralsonbookjob01igoog, moralsonbookofj234greguoft, moralsonbookofjo32greg; серия V21/V23/V31",
+      "accessState": "ARCHIVE_READ (vol. 1 verified; vols. 2-3 ARCHIVE_AVAILABLE)",
+      "rightsState": "PD (издание XIX в.)",
+      "note": "vol. 1 (moralsonbookofjo01greguoft) прочитан и верифицирован 2026-10-08: host ia601405, полнотекстовый поиск работает; листы 44/166/168/207. 'ransom' = 0 вхождений в vol. 1."
+    },
+    {
+      "id": "ARCHIVE-CYRIL-JOHN-PUSEY",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD (1872): Pusey, Cyrilli In D. Joannis Evangelium (греч.+лат.)",
+      "locator": "archive.org: sanctipatrisnos00–03pusegoog, indjoannisevang00pusegoog",
+      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "ARCHIVE-ANSELM-DEANE",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD (1903): Deane, St. Anselm (Proslogium… and Cur Deus Homo)",
+      "locator": "archive.org: stanselmproslogu0000dean, stanselmeproslog00anseuoft, cu31924014583540",
+      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "ARCHIVE-MIGNE-PL",
+      "kind": "PD-скан/транскрипция (archive.org)",
+      "title": "PD: Migne, Patrologia Latina 1–221 (html-база, ed. 1844–55/1862–65)",
+      "locator": "archive.org: patrologia-latina_1-221 (томную привязку проверять)",
+      "accessState": "ARCHIVE_AVAILABLE — канал принят, локусы не читались",
+      "rightsState": "PD (издание XIX в.)"
+    },
+    {
+      "id": "FIRST1K-CATALOG-CHECK-2026-10-08",
+      "kind": "проверка каталога",
+      "title": "First1KGreek: наличие нужных греч. авторов",
+      "locator": "tlg2022 = tlg003/007/008/009/010/011/060 (Or. 45 нет); tlg2017, tlg2062, tlg2110, tlg2934 — Not Found",
+      "accessState": "ARCHIVE_HOLD для Нисского, Златоуста, Кирилла Иерус., Дамаскина (греч.)",
+      "rightsState": "CC BY-SA 4.0 (разметка), текст PD"
+    },
+    {
+      "id": "ARCHIVE-LACTANTIUS-EDUARDUS",
+      "kind": "PD-скан (archive.org)",
+      "title": "Lactantius, Div. Inst. lib. 6 (De vero cultu), rec. Eduardus a S. Xaverio, Neapoli 1757",
+      "locator": "archive.org: bub_gb_Z44TVJoaQNUC (host ia601608; 335 leaves; полнотекстовый поиск работает)",
+      "accessState": "ARCHIVE_READ (leaves 48, 151 verified 2026-10-08)",
+      "rightsState": "PD (pre-1857 printed edition; scan itself PD)"
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "AF-1",
+      "file": "02_APOSTOLIC_FATHERS_CARDS.md",
+      "subject": "Климент Римский, 1 Clem 7.4; 12.7; 16.5; 49",
+      "genre": "послание (увещание)",
+      "primaryLocators": "1 Clem 7.4; 12.7; 16.5; 49.6; ANF01.txt:L597-600, L750-753",
+      "evidenceClass": "A1-original / A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED / VERIFIED_ORIGINAL",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-14: «παντὶ τῷ κόσμῳ» — в контексте покаяния, не доктрина объёма",
+        "1 Clem 12.7: «πᾶσιν τοῖς πιστεύουσιν» — всеобщность с условием веры"
+      ]
+    },
+    {
+      "cardId": "AF-2",
+      "file": "02_APOSTOLIC_FATHERS_CARDS.md",
+      "subject": "Игнатий: Eph. 1.1; Trall. 2.1; Smyrn. 1.2; Rom. 6.1",
+      "genre": "послания (мученические)",
+      "primaryLocators": "Ign. Eph. 1.1; Trall. 2.1; Smyrn. 1.2; Rom. 6.1; ANF01.txt:L4468, L6156-6161",
+      "evidenceClass": "A1-original / A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED / VERIFIED_ORIGINAL",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "Smyrn. 1.2 — против докетов; язык «во плоти» христологический"
+      ]
+    },
+    {
+      "cardId": "AF-3",
+      "file": "02_APOSTOLIC_FATHERS_CARDS.md",
+      "subject": "Варнава 5; 7.4-7.8 (два козла, κλῆρος/τύπος)",
+      "genre": "дидактическая типология",
+      "primaryLocators": "Barn. 5.1; 5.13; 7 (ANF01.txt:L12113-12433)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-13: τύπος, не «плата»; слово κλῆρος = жребий, не жертва"
+      ]
+    },
+    {
+      "cardId": "AF-4",
+      "file": "02_APOSTOLIC_FATHERS_CARDS.md",
+      "subject": "Поликарп, Phil. 8.1",
+      "genre": "пастырское послание",
+      "primaryLocators": "Polyc. Phil. 8.1 (ANF01.txt:L3327-3330)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "S-4: не свидетель о выкупе"
+      ]
+    },
+    {
+      "cardId": "AF-5",
+      "file": "02_APOSTOLIC_FATHERS_CARDS.md",
+      "subject": "Диогнет 9.2; 9.5 («сладостный обмен»)",
+      "genre": "апологетика",
+      "primaryLocators": "Diogn. 9.2; 9.5 (ANF01.txt:L2789-2804)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-12: получатель выкупа не назван"
+      ]
+    },
+    {
+      "cardId": "AF-6",
+      "file": "02_APOSTOLIC_FATHERS_CARDS.md",
+      "subject": "Молчания: Дидахе; Пастырь Ерма; Папий",
+      "genre": "дидахе / апокалипсис / фрагменты",
+      "primaryLocators": "греч. texts/011-didache.txt; 013-shepherd.txt; фрагменты Папия",
+      "evidenceClass": "A1-original (греч.)",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED (0 вхождений αἷμα/λύτρον)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": []
+    },
+    {
+      "cardId": "J-1",
+      "file": "03_APOLOGISTS_IRENAEUS_TERTULLIAN.md",
+      "subject": "Иустин: Dial. 40; 41; 86; 95; 111; 1 Apol. 63",
+      "genre": "апология и диалог",
+      "primaryLocators": "Dial. 95.1-2 (Archambault 1909, First1K tlg0645.tlg003)",
+      "evidenceClass": "A1-original / A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED / VERIFIED_ORIGINAL",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-2: 1 Apol. 63 = ложный локус (богоявление Моисею)"
+      ]
+    },
+    {
+      "cardId": "J-2",
+      "file": "03_APOLOGISTS_IRENAEUS_TERTULLIAN.md",
+      "subject": "Мелитон, Peri Pascha",
+      "genre": "пасхальная гомилия",
+      "primaryLocators": "ANF08 (фрагменты); Peri Pascha 1940",
+      "evidenceClass": "A1-PD-translation (фрагменты)",
+      "accessState": "NOT_ACQUIRED (полный текст)",
+      "locatorState": "ARCHIVE_HOLD",
+      "rightsState": "RIGHTS_HOLD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": false,
+      "falseFriendFlags": [
+        "F-7: по фрагментам теорию не строить"
+      ]
+    },
+    {
+      "cardId": "IR-1",
+      "file": "03_APOLOGISTS_IRENAEUS_TERTULLIAN.md",
+      "subject": "Ириней: Adv. haer. III.16-18; V.1.1; V.14-21",
+      "genre": "полемический трактат",
+      "primaryLocators": "ANF01.txt:L42404-42408 (III.18.1); L50490-50512 (V.1.1)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED; лат. recapitulavit (III.18.1) — VERIFIED (Harvey vol. 2, 1857, скан-стр. 106, archive.org sanctiirenaeiep00harvgoog, полнотекстовый поиск); греч. оригинал III кн. — отсутствует",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-4: «выкуп диаволу у Иринея» — неверно (право/убеждение)",
+        "ORIGINAL_TEXT_HOLD: лат. recapitulans не сверен",
+        "ARCHIVE-HARVEY-IRENAEUS (vol. 2 = кн. III–V) принят как канал для лат. сверки; локус III.18.1 всё ещё на ORIGINAL_TEXT_HOLD"
+      ]
+    },
+    {
+      "cardId": "T-1",
+      "file": "03_APOLOGISTS_IRENAEUS_TERTULLIAN.md",
+      "subject": "Тертуллиан: De Paenit. VII; De Patientia III; Adv. Marc. IV.36; V.3; De Carne Christi V",
+      "genre": "пенитенциальные и полемические тексты",
+      "primaryLocators": "ANF03.txt:L65745, L70001, L40083, L42421; лат. De paenit. 5.9/7.14/8.9/9.2 (Latin Library)",
+      "evidenceClass": "A1-original (лат.) / A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED / VERIFIED_ORIGINAL",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-1: satisfactio = покаяние человека"
+      ]
+    },
+    {
+      "cardId": "C-1",
+      "file": "03_APOLOGISTS_IRENAEUS_TERTULLIAN.md",
+      "subject": "Киприан, Ep. VII",
+      "genre": "письмо (пенитенциальное)",
+      "primaryLocators": "ANF05.txt:L28886-28888",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-1: satisfacere Deo у кающегося"
+      ]
+    },
+    {
+      "cardId": "H-1",
+      "file": "03_APOLOGISTS_IRENAEUS_TERTULLIAN.md",
+      "subject": "Ипполит",
+      "genre": "—",
+      "primaryLocators": "нет",
+      "evidenceClass": "HOLD-STUB",
+      "accessState": "NOT_LOCATED",
+      "locatorState": "LOCATOR_HOLD",
+      "rightsState": "—",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": false,
+      "falseFriendFlags": []
+    },
+    {
+      "cardId": "OR-1",
+      "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "subject": "Ориген: In Matth. XVI.8 (Мф 20:28); Exh. Mart. 12",
+      "genre": "комментарий; увещание",
+      "primaryLocators": "греч. Klostermann, tlg2042.tlg030 (OGL); ANF04.txt:L11788 (Exh. Mart. 12)",
+      "evidenceClass": "A1-original (греч.) / A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-3: выкуп «лукавому» — гипотеза (μήτι), позже переосмыслена и отвергнута"
+      ]
+    },
+    {
+      "cardId": "ATH-1",
+      "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "subject": "Афанасий: De Inc. 7.5; 10.2; 16.4; 20; 21.7; 25.1-3; 54.3",
+      "genre": "догматический трактат",
+      "primaryLocators": "греч. Robertson 1893 (First1K tlg2035.tlg002); NPNF2_04.txt:L12556-12558, L12698-12700, L13020-13022, L13213-13218, L13296, L13448-13456, L14926-14928",
+      "evidenceClass": "A1-original (греч.) / A1-PD-translation (то же изд.)",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED / VERIFIED_ORIGINAL",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "λύτρον дважды, оба «за всех» (§21, §25)",
+        "сноска NPNF §7 со ссылкой на Анзельма I.12 — редакторская, не Афанасий"
+      ]
+    },
+    {
+      "cardId": "CYR-1",
+      "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "subject": "Кирилл Иерусалимский, Cat. XIII.1-3",
+      "genre": "оглашение",
+      "primaryLocators": "NPNF2_07.txt:L13778-13815",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "ORIGINAL_TEXT_HOLD (греч. не сверен)"
+      ]
+    },
+    {
+      "cardId": "BAS-1",
+      "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "subject": "Василий: Adv. Eunomium (добровольность)",
+      "genre": "полемика",
+      "primaryLocators": "NPNF2_08.txt:L3121-3132",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "ORIGINAL_TEXT_HOLD"
+      ]
+    },
+    {
+      "cardId": "NAZ-1",
+      "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "subject": "Григорий Богослов: Or. 45.22; Or. 29.20; Or. 30 (контроль)",
+      "genre": "пасхальная гомилия; догматические слова",
+      "primaryLocators": "NPNF2_07.txt:L45464-45493 (Or. 45.22); греч. Mason 1899 Or. 29.20 / Or. 30 (First1K tlg2022)",
+      "evidenceClass": "A1-PD-translation / A1-original (греч.)",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED / VERIFIED_ORIGINAL (Or. 29.20; Or. 30 — отсутствие αἷμα/λύτρον)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-5: «кому принесена кровь» — вопрос, не утверждение",
+        "F-6: в Or. 30 такой строки нет"
+      ]
+    },
+    {
+      "cardId": "NYS-1",
+      "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "subject": "Григорий Нисский, Or. cat. 22-26 (обман/право)",
+      "genre": "катехизис",
+      "primaryLocators": "NPNF2_05.txt:L42140-42160 (+ ред. справка L1308-1311)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "ORIGINAL_TEXT_HOLD (греч. не сверен)"
+      ]
+    },
+    {
+      "cardId": "CHR-1",
+      "file": "04_THIRD_FOURTH_CENTURY_CARDS.md",
+      "subject": "Златоуст: 1 Тим. Hom. VI; Евр. Hom. IV",
+      "genre": "экзегетические гомилии",
+      "primaryLocators": "NPNF1_13.txt:L37320, L37667, L37683-37685; NPNF1_14.txt:L36693-36712; NPNF1_13.txt:L2519 (гл. III толк. на Гал.), L2802–2810 (Гал. 3:13); NPNF1_13.txt:L5069 (Homily I), L5321–5331 (Еф. 1:6, «how high a price»); NPNF1_13.txt:L5750–5756 (Еф. 1:14, «absolute redemption» в конце; F-20); NPNF1_13.txt:L5069/L5321–5331 (Hom. I на Еф. 1:6); NPNF1_13.txt:L2519/L2802–2810 (толк. на Гал. 3:13 — «обмен проклятий»)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "ORIGINAL_TEXT_HOLD (греч. не сверен)",
+        "«redemption» в Еф. 1:14 у Златоуста = будущее избавление (F-20)",
+        "F-20: «redemption» в Еф. 1:14 — эсхатологическое избавление, не крестный выкуп"
+      ]
+    },
+    {
+      "cardId": "AUG-1",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Августин: Tract. in Io. LXXXVII.2; Hom. I in Ep. Io.; De Trin. XIII.13",
+      "genre": "трактаты и проповеди",
+      "primaryLocators": "NPNF1_07.txt:L29050, L29105-29125, L37573, L37904-37922; NPNF1_03.txt:L14020, L14835-14860",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED; лат. loci De Trin. XIII (10.13/12.16/13.17) — VERIFIED по транскрипции Latin Library (печатное издание — LOCATOR_HOLD)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-10: «Августин = Кальвин» запрещено",
+        "«весь мир» = Церковь во всех народах (антидонатистский контекст)",
+        "ORIGINAL_TEXT_HOLD (лат. не сверен)"
+      ]
+    },
+    {
+      "cardId": "CYRA-1",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Кирилл Александрийский, In XII Prophetas: In Osee VII §18; In Ionam I §66; In Sophoniam II §64",
+      "genre": "экзегетический комментарий",
+      "primaryLocators": "Pusey 1868 (First1K tlg4090.tlg001), In Osee VII.18; In Ionam I.66; In Sophoniam II.64",
+      "evidenceClass": "A1-original (греч.)",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED / VERIFIED_ORIGINAL",
+      "rightsState": "издание PD (1868); цифровая разметка First1KGreek CC BY-SA 4.0",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "«все» — риторическое целое; доктрины объёма у Кирилла нет",
+        "PG-колонки — LOCATOR_HOLD; Contra Nestorium / In Ioannem — HOLD"
+      ]
+    },
+    {
+      "cardId": "CAS-1",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Кассиан, Conferences (Мк 10:45)",
+      "genre": "аскетическое собеседование",
+      "primaryLocators": "NPNF2_11.txt:L34372-34375",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "Conferences IX (Abbot Isaac), гл. XXXIV (L33218/L34273/L34463); печатная страница — LOCATOR_HOLD",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": []
+    },
+    {
+      "cardId": "LEO-1",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Лев Великий, Ep. CXXIV; Томос (Ep. XXVIII)",
+      "genre": "письма; вероучительный документ",
+      "primaryLocators": "NPNF2_12.txt:L9829-9831, L9930-9934, L10023-10025; Томос — NPNF2_12.txt:L4586, акты NPNF2_14",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED | лат. канал: Migne PL 1–221 (patrologia-latina_1-221) принят, томную привязку PL 54 проверять",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "ORIGINAL_TEXT_HOLD (лат. писем нет в проверенном канале)",
+        "Томос — христология, не объём"
+      ]
+    },
+    {
+      "cardId": "DAM-1",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Иоанн Дамаскин, Exp. fidei III.27",
+      "genre": "догматический компендиум",
+      "primaryLocators": "NPNF2_09.txt:L35524-35548",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED (но тезис брифа IV.9 не подтверждён)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "F-8: Exp. fidei 4.9 = «О вере и крещении», тезис не подтверждён",
+        "выкуп Отцу, «не тирану»"
+      ]
+    },
+    {
+      "cardId": "ANS-1",
+      "file": "05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+      "subject": "Анзельм, Cur Deus Homo (граница, не отец)",
+      "genre": "схоластический трактат",
+      "primaryLocators": "Deane 1903 (CCEL) — объект не приян",
+      "evidenceClass": "B1 / HOLD-STUB",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "ARCHIVE_HOLD",
+      "rightsState": "RIGHTS_HOLD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": false,
+      "falseFriendFlags": [
+        "схема «долг чести / удовлетворение» — новизна XI в.",
+        "лат. текст не сверен"
+      ]
+    },
+    {
+      "cardId": "HIP-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Ипполит: «Против Верона и Геликса», фрагм. II; Толкование на Даниила (фрагм.) §45",
+      "genre": "полемика (фрагменты); экзегетический комментарий",
+      "primaryLocators": "ANF05.txt:L23452–23570 (Fragment II; цитата L23558–23570); ANF05.txt:L17841 (блок On Daniel) → L21271 (§45)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED; атрибуция фрагмента и деление On Daniel — LOCATOR_HOLD",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "«выкуп диаволу» у Ипполита нет: проданные смерти/рука смерти",
+        "fragment attribution uncertain (ANF: Beron=Vero)"
+      ]
+    },
+    {
+      "cardId": "MET-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Мефодий, «Три фрагмента из слова о Кресте и Страдании», фрагм. I",
+      "genre": "гомилия (фрагменты)",
+      "primaryLocators": "ANF06.txt:L37838–37960",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "антиоригенист, но НЕ воспроизводит выкуп диаволу: триумф/трофей и освобождение даром",
+        "ORIGINAL_TEXT_HOLD (греч. не сверен)"
+      ]
+    },
+    {
+      "cardId": "THA-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Григорий Чудотворец — молчание (ANF06, раздел anf06.iii)",
+      "genre": "панегирик/каноническое послание/метафраза",
+      "primaryLocators": "ANF06.txt:L217–7200 (0 вхождений ransom/redeem/redemption)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED (поиск пустоты)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "молчание = результат поиска, не позиция"
+      ]
+    },
+    {
+      "cardId": "LAC-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Лактанций: Divine Institutes VI.3 (сноска Coxe [1098]); VI.12 (redemptio captivorum); Epitome",
+      "genre": "апологетико-этический трактат",
+      "primaryLocators": "ANF07.txt:L15977 + L16008 (аппарат); ANF07.txt:L17156; ANF07.txt:L24830",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "[1098] — редакторская сноска XIX в., не текст (F-17)",
+        "redemptio captivorum = милостыня, не сотериология (F-18)"
+      ]
+    },
+    {
+      "cardId": "HIL-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Иларий Пиктавийский, De Trinitate VI; X; XII.18",
+      "genre": "догматический трактат (антиарианская полемика)",
+      "primaryLocators": "NPNF2_09.txt:L16397; NPNF2_09.txt:L22458; NPNF2_09.txt:L27208",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED (LOCATOR_HOLD снят)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "искупление — часть посылки христологического аргумента, не сотериологический трактат",
+        "ORIGINAL_TEXT_HOLD (лат. De Trinitate вне канала)"
+      ]
+    },
+    {
+      "cardId": "AMB-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Амвросий: De officiis III.3; De Spiritu Sancto I.12.126",
+      "genre": "этико-пастырский и догматический трактаты",
+      "primaryLocators": "De Officiis III.19 (кн. III, гл. III); NPNF2_10.txt:L8263–8264, L7690–7691, L11954 (De Spiritu Sancto I.12)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "«Who died for all… price of His blood paid in vain» — пастырский контекст",
+        "redemptio captivorum = милостыня (F-18)"
+      ]
+    },
+    {
+      "cardId": "JER-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Иероним, Против Иовиниана I.11",
+      "genre": "полемический трактат (аскеза/брак)",
+      "primaryLocators": "NPNF2_06.txt:L39287 (кн. I начата L38619)",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "аргумент этический, не об объёме"
+      ]
+    },
+    {
+      "cardId": "EUS-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Евсевий Кесарийский, Похвальное слово Константину, гл. XV",
+      "genre": "панегирик (имперская риторика)",
+      "primaryLocators": "NPNF2_01.txt:L68280 (гл. XV), цитата L68399–68407; под-том: L51085–51087",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED (печатная страница — LOCATOR_HOLD)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "панегирик ≠ догматика",
+        "Demonstratio Evangelica — ARCHIVE_HOLD (Ferrar 1920)"
+      ]
+    },
+    {
+      "cardId": "ALX-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Александр Александрийский, Послание V «О душе и теле и страдании Господа»",
+      "genre": "послание-слово (фрагментарное)",
+      "primaryLocators": "ANF06.txt:L28392 (начало), L28416–28418, L28630–28643",
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED; атрибуция/состав по ANF [2472] — LOCATOR_HOLD",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "«debt of death» ≠ анзельмов долг чести (F-19)",
+        "ORIGINAL_TEXT_HOLD (греч. не сверен)"
+      ]
+    },
+    {
+      "cardId": "GRG-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Gregory the Great (c. 540-604), Moralia in Iob (Books I-XII, Part I)",
+      "genre": "exegetical-ascetical commentary",
+      "primaryLocators": [
+        "Moralia vol. 1, Bliss 1844, scan-leaves 44, 166, 168, 207 (ARCHIVE-MORALIA-BLISS)"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "OPEN",
+      "locatorState": "LOCATOR_HOLD (книга/глава/PL-колонки не верифицированы; scan-leaf указан)",
+      "rightsState": "PD",
+      "publicationState": "PUBLICATION_HOLD",
+      "quoteSafe": false,
+      "falseFriendFlags": [],
+      "notes": "Kenosis-victory without ransom-terminology in vol. 1: 'without price' (leaf 44), 'form of accursed man in the work of their redemption' (166), 'given up into the hands of Satan... set us free both outwardly and inwardly' (168), apostate angel 'driven down to a farther depth' (207). 'ransom' = 0 in vol. 1 (full-text search). Not 'ransom to devil' and not Anselmian 'satisfaction'. PL 75-76 ORIGINAL_TEXT_HOLD."
+    }
+  ],
+  "maps": [
+    {
+      "file": "06_METAPHOR_AND_MODEL_MAP.md",
+      "covers": [
+        "выкуп",
+        "жертва",
+        "победа/Christus Victor",
+        "усыновление",
+        "обожение",
+        "исцеление",
+        "примирение",
+        "очищение",
+        "удовлетворение"
+      ],
+      "rule": "показывает кто/где/жанр, не «что отцы учили»"
+    },
+    {
+      "file": "07_RANSOM_TO_WHOM_MAP.md",
+      "covers": [
+        "Ириней",
+        "Ориген",
+        "Григорий Богослов",
+        "Григорий Нисский",
+        "Августин",
+        "Дамаскин",
+        "Анзельм (граница)"
+      ],
+      "rule": "вопроса нет как догмата; соборных определений нет"
+    },
+    {
+      "file": "08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md",
+      "covers": [
+        "1 Тим 2:4-6",
+        "1 Ин 2:2",
+        "Мф 20:28",
+        "Ин 3:16",
+        "2 Пет 3:9",
+        "Рим 5:18"
+      ],
+      "rule": "фиксируем как читали; Августин «весь мир» — экклезиологически"
+    },
+    {
+      "file": "09_SILENCES_AND_FALSE_FRIENDS.md",
+      "covers": [
+        "S-1..S-10 молчания",
+        "F-1..F-15 ложные друзья"
+      ],
+      "rule": "молчание = результат поиска, не аргумент"
+    },
+    {
+      "file": "10_ORIGINAL_LANGUAGE_VERIFICATION.md",
+      "covers": [
+        "Lake 1912",
+        "Archambault 1909",
+        "Harvey 1857",
+        "Robertson 1893",
+        "Mason 1899",
+        "Latin Library Tertullian"
+      ],
+      "rule": "где сверки нет — ORIGINAL_TEXT_HOLD"
+    }
+  ],
+  "verifiedOriginals": [
+    {
+      "locus": "1 Clem 7.4",
+      "source": "Lake 1912 (First1K tlg1271.tlg001)",
+      "phrase": "ἀτενίσωμεν εἰς τὸ αἷμα τοῦ Χριστοῦ … παντὶ τῷ κόσμῳ μετανοίας χάριν ὑπήνεγκεν"
+    },
+    {
+      "locus": "1 Clem 12.7",
+      "source": "Lake 1912",
+      "phrase": "διὰ τοῦ αἵματος τοῦ κυρίου λύτρωσις ἔσται πᾶσιν τοῖς πιστεύουσιν"
+    },
+    {
+      "locus": "Ign. Eph. 1.1",
+      "source": "Lake 1912 (tlg1443.tlg001)",
+      "phrase": "ἀναζωπυρήσαντες ἐν αἵματι θεοῦ"
+    },
+    {
+      "locus": "Ign. Trall. 2.1",
+      "source": "Lake 1912",
+      "phrase": "τὸν δι' ἡμᾶς ἀποθανόντα, ἵνα πιστεύσαντες εἰς τὸν θάνατον αὐτοῦ τὸ ἀποθανεῖν ἐκφύγητε"
+    },
+    {
+      "locus": "Ign. Smyrn. 1.2",
+      "source": "Lake 1912",
+      "phrase": "καθηλωμένον ὑπὲρ ἡμῶν ἐν σαρκί"
+    },
+    {
+      "locus": "Ign. Rom. 6.1",
+      "source": "Lake 1912",
+      "phrase": "ἐκεῖνον ζητῶ, τὸν ὑπὲρ ἡμῶν ἀποθανόντα"
+    },
+    {
+      "locus": "Justin, Dial. 95.1-2",
+      "source": "Archambault 1909 (tlg0645.tlg003)",
+      "phrase": "τὰς πάντων κατάρας ἀναδέξασθαι … δι' οὗ σώζει πάντας τοὺς κατάρας ἄξια πράξαντας"
+    },
+    {
+      "locus": "Irenaeus, греч. фрагменты (Harvey 1857)",
+      "source": "Harvey 1857 (tlg1447.tlg001)",
+      "phrase": "ἀνακεφαλαιώσασθαι τὰ πάντα — но ОБА вхождения в валентинианском материале книги I (цитаты, не учение Иринея)",
+      "caution": "не использовать как свидетельство recapitulatio Иринея; лат. recapitulans (III.18.1) — ORIGINAL_TEXT_HOLD"
+    },
+    {
+      "locus": "Athanasius, De Inc. 7.5",
+      "source": "Robertson 1893 (tlg2035.tlg002)",
+      "phrase": "τὸ ὑπὲρ πάντων εὔλογον ἀποσῶσαι πρὸς τὸν Πατέρα"
+    },
+    {
+      "locus": "Athanasius, De Inc. 20.5-6",
+      "source": "Robertson 1893",
+      "phrase": "ὠφείλετο γὰρ πάντων … ὁ πάντων θάνατος ἐν τῷ σώματι τοῦ Κυρίου"
+    },
+    {
+      "locus": "Athanasius, De Inc. 21.7",
+      "source": "Robertson 1893",
+      "phrase": "εἰ καὶ ἀπέθανε διὰ τὸ ὑπὲρ πάντων λύτρον, ἀλλ' οὐκ εἶδε διαφθοράν"
+    },
+    {
+      "locus": "Athanasius, De Inc. 25.1-3",
+      "source": "Robertson 1893",
+      "phrase": "εἰ ὁ θάνατος τοῦ κυρίου λύτρον ἐστὶ πάντων … ἐπικατάρατος ὁ κρεμάμενος ἐπὶ ξύλου"
+    },
+    {
+      "locus": "Athanasius, De Inc. 54.3",
+      "source": "Robertson 1893",
+      "phrase": "Αὐτὸς γὰρ ἐνηνθρώπησεν, ἵνα ἡμεῖς θεοποιηθῶμεν"
+    },
+    {
+      "locus": "Gregory Nazianzen, Or. 29.20",
+      "source": "Mason 1899 (tlg2022.tlg009)",
+      "phrase": "πωλεῖται … ἀλλ' ἐξαγοράζει κόσμον … τοῦ ἰδίου γὰρ αἵματος"
+    },
+    {
+      "locus": "Gregory Nazianzen, Or. 30 (контроль)",
+      "source": "Mason 1899 (tlg2022.tlg010)",
+      "phrase": "отсутствие αἷμα/λύτρον/σφαγή"
+    },
+    {
+      "locus": "Tertullian, De paenitentia 5.9; 7.14; 8.9; 9.2",
+      "source": "Latin Library (Tertullian, De paenitentia)",
+      "phrase": "domino satisfacere … habes cui satisfacias … confessio satisfactionis consilium … satisfactio confessione disponitur"
+    },
+    {
+      "locus": "Cyril of Alexandria, In Osee VII.18; In Ionam I.66; In Sophoniam II.64",
+      "source": "Pusey 1868 (First1K tlg4090.tlg001)",
+      "phrase": "δοὺς ἑαυτὸν ἀντίλυτρον ὑπὲρ πάντων / ὑπὲρ μικροῦ καὶ μεγάλου … Ἰουδαίου καὶ Ἕλληνος / ὑπὲρ ἡμῶν"
+    },
+    {
+      "locus": "Augustine, De Trinitate XIII.12.16; XIII.13.17",
+      "source": "thelatinlibrary.com/augustine/trin13.shtml (транскрипция без аппарата)",
+      "phrase": "commissio peccatorum per iram dei iustam hominem subdidit diabolo, profecto remissio peccatorum per reconciliationem dei benignam eruit hominem a diabolo; Non autem diabolus potentia dei sed iustitia superandus fuit"
+    },
+    {
+      "locus": "Irenaeus, Adv. haer. III.18.1 (лат.)",
+      "source": "Harvey 1857, vol. 2 (archive.org: sanctiirenaeiep00harvgoog), скан-стр. 106 — полнотекстовый поиск",
+      "phrase": "sed quando incarnatus est, et homo factus, longam hominum expositionem in seipso recapitulavit, in compendio nobis salutem praestans (аппарат там же, скан-стр. 452: сир. «denuo instauravit»)"
+    },
+    {
+      "locus": "Augustine, De Trinitate XIII.12.16; XIII.17 (лат.)",
+      "source": "thelatinlibrary.com/augustine/trin13.shtml (транскрипция без аппарата)",
+      "phrase": "Quadam iustitia dei in potestatem diaboli traditum est genus humanum; non potentia diabolus sed iustitia uinceretur"
+    },
+    {
+      "locus": "Ambrose, De Officiis III.19 (лат. — не сверено; перевод NPNF)",
+      "source": "NPNF2_10.txt:L8263–8264",
+      "phrase": "Christ the Lord, Who died for all, will grieve that the price of His blood was paid in vain"
+    },
+    {
+      "cardId": "LAC-1",
+      "locus": "Div. Inst. VI.3",
+      "source": "Eduardus a S. Xaverio 1757 (bub_gb_Z44TVJoaQNUC), leaf 48",
+      "phrase": "Deus, qui ejus viae dux est, immortalitatem nulli homini nato negat."
+    },
+    {
+      "cardId": "LAC-1",
+      "locus": "Div. Inst. VI.12",
+      "source": "Eduardus a S. Xaverio 1757 (bub_gb_Z44TVJoaQNUC), leaf 151",
+      "phrase": "Captivorum redemptio magnum atque praeclarum justitiae munus est. Quod idem ipse Tullius approbavit..."
+    },
+    {
+      "cardId": "GRG-1",
+      "locus": "Moralia vol. 1 (Bliss 1844), scan-leaves 44/166/168/207",
+      "source": "moralsonbookofjo01greguoft (host ia601405)",
+      "phrase": "...without price... form of accursed man in the work of their redemption... given up into the hands of Satan... set us free both outwardly and inwardly... apostate angel driven down to a farther depth."
+    }
+  ],
+  "falseFriendRegister": [
+    {
+      "id": "F-1",
+      "what": "«satisfactio у отцов = удовлетворение правосудия»",
+      "whereShown": "Тертуллиан De Paenit. VII (`ANF03:L65745`), Киприан Ep. VII (`ANF05:L28886`)",
+      "correction": "*satisfacere Deo* — о **покаянии человека**; термин пенитенциальный",
+      "tag": "FALSE_FRIEND"
+    },
+    {
+      "id": "F-2",
+      "what": "«1 Apol. 63 — Иустин о выкупе»",
+      "whereShown": "бриф §3.1 (в ANF01 — глава XVII)",
+      "correction": "1 Apol 63 = о **богоявлении Моисею** в купине; к искуплению не относится",
+      "tag": "FALSE_LOCATOR` (зафиксировано в [`03_…`](03_APOLOGISTS_IRENAEUS_TERTULLIAN.md))"
+    },
+    {
+      "id": "F-3",
+      "what": "«Ориген придумал выкуп диаволу, Церковь приняла»",
+      "whereShown": "популярная формула",
+      "correction": "Ориген — **гипотеза** (μήτι); Григорий Богослов отверг оба адреса, Августин — победа праведностью, Дамаскин — «не тирану»",
+      "tag": "FALSE` (см. [`07_…`](07_RANSOM_TO_WHOM_MAP.md))"
+    },
+    {
+      "id": "F-4",
+      "what": "«Ириней учил выкупу диаволу»",
+      "whereShown": "частый интернет-тезис",
+      "correction": "AH V.1.1: отступничество держало нас **не по праву**, Бог возвращает Своё «не насилием, но убеждением»",
+      "tag": "FALSE_FRIEND"
+    },
+    {
+      "id": "F-5",
+      "what": "«Григорий Богослов: кровь принесена Отцу» (одна строка)",
+      "whereShown": "вырывание Or. 45.22 (`NPNF2_07:L45464–45493`)",
+      "correction": "это **вопрос без ответа**: «если лукавому — срам!… если Отцу — как?»; строка — часть пасхальной гомилии",
+      "tag": "QUOTE_RISK"
+    },
+    {
+      "id": "F-6",
+      "what": "«Or. 30 — про „кому пролита кровь“»",
+      "whereShown": "указание брифа (§3.1)",
+      "correction": "в PD-томе «кому пролита кровь» — в **Or. 45.22**; в греч. Or. 30 (Mason 1899) слов αἷμα/λύτρον/σφαγή **нет вообще**; покупка/цена крови рядом — **Or. 29.20** («πωλεῖται… ἐξαγοράζει κόσμον… τοῦ ἰδίου γὰρ αἵματος»), т.е. в анти-евномианском контексте",
+      "tag": "FALSE_LOCATOR` (подтверждено сверкой оригинала, см. `10_`, §8)"
+    },
+    {
+      "id": "F-7",
+      "what": "«Мелитон = развитая теория выкупа»",
+      "whereShown": "*Peri Pascha* вне PD-каналов",
+      "correction": "в ANF08 — только фрагменты и упоминания; `ARCHIVE_HOLD`+`RIGHTS_HOLD`",
+      "tag": "HOLD"
+    },
+    {
+      "id": "F-8",
+      "what": "«Дамаскин, Exp. fidei 4.9: не за всех умер»",
+      "whereShown": "бриф §3.1",
+      "correction": "гл. IV.IX = «О вере и крещении», не о смерти Христа; тезис не подтверждён PD-текстом",
+      "tag": "UNVERIFIED` → `LOCATOR_HOLD"
+    },
+    {
+      "id": "F-9",
+      "what": "«Отцы называли это Christus Victor»",
+      "whereShown": "ярлык **Аулена (1931)**",
+      "correction": "самоназвания нет; у отцов — образы победы/трофея в разных жанрах",
+      "tag": "ANACHRONISM"
+    },
+    {
+      "id": "F-10",
+      "what": "«Августин = Кальвин» / «Августин = арминианин»",
+      "whereShown": "спор XVII–XXI вв.",
+      "correction": "у Августина нет вопроса об объёме в позднейшем смысле; его «весь мир» — антидонатистская экклезиология",
+      "tag": "ANACHRONISM"
+    },
+    {
+      "id": "F-11",
+      "what": "«У отцов есть пенальное замещение»",
+      "whereShown": "язык ὑπέρ/ἀντί («за», «вместо»)",
+      "correction": "заместительный язык есть (Афанасий, Кирилл Иер.); «наказание вместо виновного» как **принцип** — формула XVI–XVII вв.",
+      "tag": "ANACHRONISM"
+    },
+    {
+      "id": "F-12",
+      "what": "«Диогнет 9.2 = „он отдал Сына как выкуп Отцу“»",
+      "whereShown": "λύτρον ὑπὲρ ἡμῶν (`ANF01:L2789–2794`)",
+      "correction": "получатель не назван; наоборот, рядом «О сладостный обмен!» (`L2797–2799`)",
+      "tag": "QUOTE_RISK"
+    },
+    {
+      "id": "F-13",
+      "what": "«Варнава 7 — плата двух козлов»",
+      "whereShown": "две козы как τύπος (`ANF01:L12154–12156`)",
+      "correction": "текст даёт **типологию** страдания («тернием увенчан», «козёл, отпущенный в пустыню»), а не бухгалтерию выкупа",
+      "tag": "QUOTE_RISK"
+    },
+    {
+      "id": "F-14",
+      "what": "«1 Clem 7.4 — „искупил весь мир“»",
+      "whereShown": "παντὶ τῷ κόσμῳ (`ANF01:L…`, см. 02)",
+      "correction": "фраза стоит в контексте **призыва к покаянию** и «мира» как всех людей; из неё не выводится учение об объёме",
+      "tag": "QUOTE_RISK"
+    },
+    {
+      "id": "F-15",
+      "what": "«ANF-перевод = текст отца»",
+      "whereShown": "переводы XIX в. с богословской окраской",
+      "correction": "прямой перевод нередко сглаживает (напр. «ransom» там, где λύτρον/τιμή); значимые цитаты — сверять с греческим/латинским",
+      "tag": "METHOD"
+    },
+    {
+      "id": "F-16",
+      "what": "«У Иринея recapitulatio засвидетельствовано и по-гречески»",
+      "whereShown": "греч. фрагменты Harvey 1857",
+      "correction": "оба вхождения ἀνακεφαλαιώσασθαι — **в валентинианских текстах книги I** (цитаты у Иринея, не его учение); латинское `recapitulans` (III.18.1) не сверено",
+      "tag": "FALSE_FRIEND` (см. `10_`, §9)"
+    },
+    {
+      "id": "F-17",
+      "what": "«У Лактанция: universal redemption»",
+      "whereShown": "сноска [1098] в ANF07 (`ANF07.txt:L16008`): «[Universal redemption is lovingly set forth by our author.]»",
+      "correction": "это **аппарат A. C. Coxe (XIX в.)**; у Лактанция речь о том, что путь добродетели открыт людям всякого пола и возраста, а не об искуплении на кресте",
+      "tag": "APPARATUS_FALSE_FRIEND` (см. `11_`, LAC-1)"
+    },
+    {
+      "id": "F-18",
+      "what": "«Амвросий/Лактанций учат об искуплении через выкуп пленных»",
+      "whereShown": "лат. идиома *redemptio captivorum* (`ANF07.txt:L17156` — цитата Цицерона; `NPNF2_10.txt:L7650, L7690`)",
+      "correction": "это **милостыня/социальное дело**, не сотериология",
+      "tag": "FALSE_FRIEND` (см. `11_`, LAC-1/AMB-1)"
+    },
+    {
+      "id": "F-19",
+      "what": "«Отцы говорили о долге, значит, у них схема „долга чести“ Анзельма»",
+      "whereShown": "Александр Александрийский: «Christ, by dying, hath **discharged the debt of death**» (`ANF06.txt:L28638`)",
+      "correction": "«долг» здесь — **смерти** (Быт 2:17; Рим 5–6), а не долг чести Богу; у Анзельма — *debitum* чести, которое человек не может уплатить",
+      "tag": "ANACHRONISM` (см. `11_`, ALX-1)"
+    },
+    {
+      "id": "F-20",
+      "what": "«У Златоуста „искупление“ = крестный выкуп»",
+      "whereShown": "Еф 1:14: «The redemption of God's own possession» (`NPNF1_13.txt:L5750`)",
+      "correction": "у Златоуста здесь **«абсолютное искупление» происходит в конце** (Parousia), «тогда нет ни грехов, ни человеческих страданий» — эсхатологическое избавление, не крестная сделка",
+      "tag": "FALSE_FRIEND` (см. `04_`, CHR-1)"
+    }
+  ],
+  "silences": [
+    {
+      "id": "S-1",
+      "where": "*Дидахе* (греч. `apostolic-fathers/texts/011-…`; ANF01)",
+      "whatLookedFor": "αἷμα, λύτρον, слова о крестной смерти как средоточии спасения",
+      "result": "**0 вхождений** αἷμα/λύτρον; тема — путь жизни и смерти, крещение, Евхаристия без формулы выкупа",
+      "cannotConclude": "«Дидахе учит/не учит об искуплении» — жанр не тот; это молчание жанра, не позиция"
+    },
+    {
+      "id": "S-2",
+      "where": "*Пастырь Ерма* (греч. `013-…`)",
+      "whatLookedFor": "αἷμα, λύτρον",
+      "result": "**0 вхождений**; образы — покаяние, башня, ангелы",
+      "cannotConclude": "нельзя ставить знак «против» искупления"
+    },
+    {
+      "id": "S-3",
+      "where": "**Папий**",
+      "whatLookedFor": "вообще сотериологические формулы",
+      "result": "сохранились **фрагменты** (у Евсевия, ANF01); темы — хилиазм, происхождение Евангелий",
+      "cannotConclude": "о его «учении об искуплении» говорить не по чему"
+    },
+    {
+      "id": "S-4",
+      "where": "**Поликарп**",
+      "whatLookedFor": "«кровь Христа» как выкуп",
+      "result": "единственный ощутимый локус — Phil. 8.1 о терпении/вере (см. [`02_…`](02_APOSTOLIC_FATHERS_CARDS.md), AF-4)",
+      "cannotConclude": "не «свидетель выкупа», а пастырское наставление"
+    },
+    {
+      "id": "S-5",
+      "where": "**Иларий Пиктавийский**, NPNF2_09 (*De Trinitate*)",
+      "whatLookedFor": "искупительный пассаж с выкупом",
+      "result": "3 общих употребления *redemption* (`L5614`, `L16397`, `L22458`), **точный локус не выбран**",
+      "cannotConclude": "`LOCATOR_HOLD`; цитировать нельзя"
+    },
+    {
+      "id": "S-6",
+      "where": "**Амвросий**, NPNF2_10",
+      "whatLookedFor": "выкуп/красная цена",
+      "result": "в PD-канале — *De Officiis* и др.: «искупление пленных» в смысле **милостыни** (`L7650`, `L7690–7691`)",
+      "cannotConclude": "путать «redemption of captives» с учением о кресте"
+    },
+    {
+      "id": "S-7",
+      "where": "**Кассиан**, NPNF2_11",
+      "whatLookedFor": "λύτρον/искупительный разбор",
+      "result": "Мк. 10:45 только в наставлении (`L34372–34375`); λύτρον-цитаты о богатстве не по теме",
+      "cannotConclude": "не выводить учения из наставления"
+    },
+    {
+      "id": "S-8",
+      "where": "**Григорий Великий**, *Moralia*",
+      "whatLookedFor": "толкование Мк./1 Ин",
+      "result": "в NPNF2_12/13 (Пастырское правило, письма, Гомилии на Иез.) — Moralia нет",
+      "cannotConclude": "`ARCHIVE_HOLD` (PD-англ. Bliss, archive.org)"
+    },
+    {
+      "id": "S-9",
+      "where": "**Кирилл Александрийский**, Феодорит, Пётр Хрисолог, Пс.-Дионисий, Фотий, Феофилакт",
+      "whatLookedFor": "искупительные локусы",
+      "result": "PD-каналов с приёмкой нет",
+      "cannotConclude": "`RIGHTS_HOLD`/`ARCHIVE_HOLD` — не имитировать и не цитировать по памяти"
+    },
+    {
+      "id": "S-10",
+      "where": "**Догматические соборы** (Никея, Халкидон)",
+      "whatLookedFor": "определение «кому/за кого умер Христос»",
+      "result": "определений нет: соборы решают христологию и Троицу",
+      "cannotConclude": "«соборное решение о выкупе» — фикция"
+    },
+    {
+      "id": "S-11",
+      "where": "**Григорий Чудотворец** (ANF06)",
+      "whatLookedFor": "искупительная лексика (ransom/redeem/redemption)",
+      "result": "0 вхождений во всём его корпусе тома; молчание — результат поиска, не позиция автора",
+      "cannotConclude": "`MUTE` (см. `11_`, THA-1)"
+    }
+  ],
+  "interface": {
+    "closedFiles": "ИСКУПЛЕНИЕ/13_ (Дорт II / Кальвин / Оуэн) — исторический контроль XVII в., не смешивать с патристикой",
+    "reformationExegesis": "ИСКУПЛЕНИЕ/12_/14_/15_/16_",
+    "precedentRule": "совпадение цитаты отца с аргументом Оуэна = «прецедент чтения», не «источник доктрины»",
+    "noVerdict": "EVIDENCE_HOLD не снят; вердикт об объёме не выносить"
+  },
+  "doNot": [
+    "claim-fathers-taught-limited-atonement",
+    "claim-fathers-taught-universal-atonement",
+    "claim-councils-defined-extent",
+    "claim-augustine-equals-calvin",
+    "claim-origen-ransom-taught-by-church",
+    "quote-ANF-translation-as-original",
+    "mix-ANF-pagination-with-PG-columns",
+    "dump-copyrighted-modern-translations",
+    "implement-product-html-this-wave",
+    "declare-verdict-on-extent"
+  ],
+  "nextSteps": [
+    "Сверить печатные страницы ключевых цитат (LOCATOR_HOLD) и §-номера ANF/NPNF/PL.",
+    "Добрать лат. оригиналы через принятые каналы: Irenaeus (Harvey, далее V.1.1 «suadela»), Lactantius (CSEL/PL 6–7), Hilary (PL 10), Jerome (PL 23), Ambrose (PL 16).",
+    "Приёмка моралий/Кирилла/Псевдо-Дионисия/Феодорита и карточки по ним.",
+    "Греч. сверки: Or. 45.22, Нисский, Златоуст, Кирилл Иер., Дамаскин (см. 10_).",
+    "Свести счётчики JSON (falseFriendRegister/silences) с F/S-реестрами 09_ и обновить заголовок PR.",
+    "Lactantius PL 6 (Migne) — колонки/страницы для Div. Inst. VI.3 и VI.12 (LOCATOR_HOLD до сверки).",
+    "Gregory the Great PL 75-76 — латинский оригинал Moralia (ORIGINAL_TEXT_HOLD); Bliss-перевод vol. 1 верифицирован, vols. 2-3 ждут чтения.",
+    "Hilary PL 10 (De Trinitate) — printed-locator verification.",
+    "Jerome PL 23-30 — printed-locator verification.",
+    "Ambrose PL 14-17 — printed-locator verification."
+  ]
+}
