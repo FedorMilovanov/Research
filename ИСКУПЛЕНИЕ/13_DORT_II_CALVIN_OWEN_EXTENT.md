@@ -86,28 +86,45 @@ II.9: это совет совершится; церковь собиралас�
 
 ### 2.2 Комментарий на 1 Ин. 2:2
 
-CCEL `calcom45` reader 2026-10-07 пуст (login). Не ретраить этот URL.
+CCEL `calcom45` reader 2026-10-07 пуст (login). Не ретраить этот URL — **но текст закрыт другой дорогой 2026-10-08**: PD-скан того же перевода, *Commentaries on the Catholic Epistles* (Calvin Translation Society, Edinburgh, 1855; пер. John Owen), IA `commentariesonca00calv`, `Possible copyright status: NOT_IN_COPYRIGHT`.
 
-Рабочая реконструкция по **открытым разборам** комментария (All Things New Covenant 2025; Uri Brito; не первоисточник):
+**Локаторы.** Печатная страница = лист скана − 6. Три независимые привязки смещения: колонтитул 1 Ин. «CHAP. II. 1 … 169» = л. 175; колонтитул 2 Пет. «CHAP. II. 1 … 391» = л. 397; колонтитул Иуд. «VER. 1 … 429» = л. 435; сверху — предметный указатель тома («scoffers will come, 414» = 2 Пет. 3:3, л. 420).
 
-1. Стих уверяет верных, что очищение простирается на всех, кто верой принимает евангелие.
-2. Вопрос: как тогда искуплены грехи всего мира?
-3. Отвергается, что спасение простирается на репробатов.
-4. «Common solution»: достаточно для всех, действенно для избранных — Кальвин признаёт, что различение **где-то** имеет силу, но **не считает его ответом на этот стих**.
-5. Предпочитает: «весь мир» = благо, общее всей Церкви; «все/весь» не про репробатов, а про имеющих уверовать и уже верных, рассеянных по миру.
-6. Полемика с Georgius: абсурд, будто умилостивление включает каждого индивида так, что смерть — за каждого в мире.
+| Что | Печатная страница | Лист скана |
+|---|---|---|
+| 1 Ин. 2:2, стих (EN + лат.) | **169** | 175 |
+| Начало разбора «And not for ours only» | **172** | 178 |
+| Ключевой абзац | **173** | 179 |
+
+**Verbatim (PD, с. 173):**
+
+> «Here a question may be raised, how have the sins of the whole world been expiated? I pass by the dotages of the fanatics, who under this pretence extend salvation to all the reprobate, and therefore to Satan himself. Such a monstrous thing deserves no refutation. They who seek to avoid this absurdity, have said that Christ suffered sufficiently for the whole world, but efficiently only for the elect. This solution has commonly prevailed in the schools. Though then I allow that what has been said is true, yet I deny that it is suitable to this passage; for the design of John was no other than to make this benefit common to the whole Church. Then under the word all or whole, he does not include the reprobate, but designates those who should believe as well as those who were then scattered through various parts of the world. For then is really made evident, as it is meet, the grace of Christ, when it is declared to be the only true salvation of the world.»
+
+Пересказ: вопрос ставит сам Кальвин; «простирающих спасение на всех репробатов» отводит без разбора; формулу «достаточно для всех, действенно для избранных» признаёт **истинной**, но **отказывается** прилагать её к этому стиху; «весь/всё» — не репробаты, а имеющие уверовать и уже рассеянные по миру; благодать Христа — единственное спасение мира.
+
+Реконструкция 2026-10-07 по вторичным разборам (пп. 1–6: уверение верных; вопрос об искуплении грехов всего мира; отвод «спасения репробатам»; признание формулы истинной, но не подходящей сюда; «весь мир» = общее благо Церкви / имеющие уверовать + рассеянные; полемика с Georgius) **подтвердилась полностью**. Теперь это не реконструкция, а страница первоисточника.
 
 Это **важно для отдела**: нельзя говорить «Кальвин решал 1 Ин. 2:2 дортской формулой». Он её знает и *откладывает* для этого локуса. Мюррей I.4 ближе к этническому / exclusive / abiding, чем к sufficient/efficient. Гилл — к язычникам + advocacy. Три particular-чтения, не одно.
 
-`R02` остаётся LEAD / not quote-safe, пока нет PD-страницы комментария (Drive Calvin = Institutes, не Catholic Epistles).
+`R02`: было `LEAD / not quote-safe` (не было PD-страницы) → **research quote-safe с локатором страницы** (1855, с. 169/172–173). `PUBLICATION_HOLD` на серии не снят: в Product — только после item-level решения владельца.
 
-### 2.3 2 Пет. 3:9 у Кальвина — уже в публичном OPC 1948
+### 2.3 2 Пет. 3:9 у Кальвина — OPC 1948 и PD-страница комментария (2026-10-08)
 
 Отчёт Murray/Stonehouse цитирует Кальвина после своей экзегезы 2 Пет. 3:9 (английский, на opc.org). Смысл цитаты (пересказ, не выдавать за наш перевод латинского): здесь нет речи о тайном совете, по которому репробаты назначены к гибели, а о воле, явленной в евангелии; Бог простирает руку всем без различия, но привлекает к Себе только избранных до создания мира.
 
 Это **стык H9 и II.5**: евангельская воля универсальна; decretive — нет. OPC majority берёт Кальвина как союзника по offer, не как доказательство unlimited atonement.
 
-2 Пет. 2:1 у Кальвина — отдельный locator (Catholic Epistles, тот же login-wall). Не выдумывать.
+**Первоисточник той же цитаты найден 2026-10-08** (IA `commentariesonca00calv`, CTS 1855, пер. John Owen; смещение то же, лист − 6). 2 Пет. 3:9 — **с. 419–420** (л. 425–426), verbatim:
+
+> «But it may be asked, If God wishes none to perish, why is it that so many do perish? To this my answer is, that no mention is here made of the hidden purpose of God, according to which the reprobate are doomed to their own ruin, but only of his will as made known to us in the gospel. For God there stretches forth his hand without a difference to all, but lays hold only of those, to lead them to himself, whom he has chosen before the foundation of the world.»
+
+Пересказ OPC 1948 (см. выше) **точен**: тайный совет не в виду, воля евангельская, рука всем без различия, хватает только избранных до создания мира. Теперь это не пересказ по чужой цитате, а страница PD-издания.
+
+**2 Пет. 2:1 у Кальвина — найден там же, с. 393** (л. 399), verbatim:
+
+> «Even denying the Lord that bought them. Though Christ may be denied in various ways, yet Peter, as I think, refers here to what is expressed by Jude, that is, when the grace of God is turned into lasciviousness; for Christ redeemed us, that he might have a people separated from all the pollutions of the world, and devoted to holiness and innocency. They, then, who throw off the bridle, and give themselves up to all kinds of licentiousness, are not unjustly said to deny Christ by whom they have been redeemed.»
+
+Что это даёт отделу: Кальвин читает «отвергающихся» как **отречение жизнью** (lasciviousness), а основание кладёт в цель искупления — «Христос искупил нас, чтобы иметь народ, отделённый от скверн мира». Он **не** говорит, что покупка была мнимой, и **не** применяет здесь sufficient/efficient; локус читается как морально-экклезиологическое предупреждение, а не как доказательство объёма. Это отдельное чтение 2 Пет. 2:1 рядом с Оуэном (`14`) — не склеивать.
 
 ### 2.4 Ин. 3:16 / Ис. 53 / Евр. 2
 
