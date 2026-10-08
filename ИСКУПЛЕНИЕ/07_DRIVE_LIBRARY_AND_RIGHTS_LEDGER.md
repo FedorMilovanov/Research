@@ -116,15 +116,17 @@
 
 | Файл Git | Drive ID |
 |---|---|
-| `synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md` | `101_Q15IzPajiATl86OsaKUow0jArl58h` |
-| `synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md` | `1wjYa-bNbC_mrYScOSOavUCt1brG0So9p` |
-| `synthesis/02_CONFLICT_LEDGER.md` | `1Vn9Vzdiri98PgdehkPGAMsBoiIA_F7gX` |
-| `synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md` | `1Tbd2IsZ1Ls8gLwLW2TP4GSQBTP5IYNQH` |
-| `synthesis/drafts/01_what-is-atonement.md` | `1MWqCtUztQF_jfI8ffIYX5aYjmQ5lq35L` |
-| `synthesis/data/synthesis-corpus-v1.json` | `1ehznH7G-2etlICzPokOcaAYpQwHVVxqO` |
-| `synthesis/00_README_FALLBACK_2026-10-07.md` | `1_KVxtWTpmuUeYVzngWxL0x3_EwjOK30h` |
+| `synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md` | `1AnV1Q137HnN8zNqyn9xJOeo6wzuTe4ws` |
+| `synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md` | `11lznQuu7weVv99mt-DW_0o_DEv2FDzo_` |
+| `synthesis/02_CONFLICT_LEDGER.md` | `151yu6HTO2j6RSkwNCk5YnbQY2XuO7g8H` |
+| `synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md` | `1YDkHr38ddVGimxxppFQB0Pa7woMGYEFf` |
+| `synthesis/drafts/01_what-is-atonement.md` | `1zlK97uW5wEByt_3HUEYBE5NCdLr-wPQ1` |
+| `synthesis/data/synthesis-corpus-v1.json` | `1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_` |
+| `synthesis/00_README_FALLBACK_2026-10-07.md` | `1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko` |
 
-Папка переименована в `09 — SYNTHESIS (agent 4) — INGESTED INTO GIT 2026-10-08`; ID файлов сохранены, содержимое Drive-копий обновлено по канону (`update_file_content`), новые ID не созданы. Ветка агента `arena/5fe5b33f-research` на GitHub отсутствует (404) — перенос сделан в ветке координатора `arena/dddc1326-research`. Правки при приёмке: снято приписанное Мюррею «закрытие» 2 Кор. 5:14 и Евр. 2:9 (материнский `10` §3 это запрещает), счёт расхождений 12 → 15 по факту реестра, цитата Мф. 11:28 приведена к Синодальному, реплика «нельзя молиться за каждого (1 Ин. 5:16)» атрибутирована как чтение Оуэна. Ни один HOLD не снят; вердикта по объёму нет.
+Папка переименована в `09 — SYNTHESIS (agent 4) — INGESTED INTO GIT 2026-10-08`. Исправленный канон перезалит byte-accurate поверх папки (`upload_file` из рабочей копии Git), прежние файлы агента перенесены в `99 — HOLD` — **ничего не удалено**, старые ID живы.
+
+**Волна 2026-10-08c — зеркала по канону и новая политика вытесненных копий.** Зеркала `00`, `00_README`, `07`, семь файлов под-корпуса `synthesis/` и реестр `atonement-corpus-v1.json` перезалиты byte-accurate из рабочей копии Git (`upload_file` с `file_path`). Прежние ID **не удалены и не отправлены в корзину** — они перенесены в `99 — HOLD` (`1FK7_q…`): ссылка, опубликованная раньше из любого места (включая другие репозитории), продолжает открываться. Папка агента переименована в `09 — SYNTHESIS (agent 4) — INGESTED INTO GIT 2026-10-08`. Актуальные ID — в `driveMirrors` реестра [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json); вытесненные — в `driveMirrors.supersededIds2026-10-08` там же. Ветка агента `arena/5fe5b33f-research` на GitHub отсутствует (404) — перенос сделан в ветке координатора `arena/dddc1326-research`. Правки при приёмке: снято приписанное Мюррею «закрытие» 2 Кор. 5:14 и Евр. 2:9 (материнский `10` §3 это запрещает), счёт расхождений 12 → 15 по факту реестра, цитата Мф. 11:28 приведена к Синодальному, реплика «нельзя молиться за каждого (1 Ин. 5:16)» атрибутирована как чтение Оуэна. Ни один HOLD не снят; вердикта по объёму нет.
 
 ## 6. Что владелец может сделать дальше
 

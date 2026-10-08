@@ -546,10 +546,10 @@
     "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
   },
   "driveMirrors": {
-    "file00": "1AG1egmEOqwczMR6mUcmkCfp2CpVp5c2UvVUTXtcobyk",
-    "file00readme": "1pb3R5SCru_tqkZZxnPOxpQU1zeWIw0sjgcZn5YPNk-E",
+    "file00": "1NQ12OhDCWrmZv0EKeSIbvn65P9ab80cd3WjMd4UA4Sc",
+    "file00readme": "1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs",
     "file05": "1V7ujL3oqtbIwQfZp_5xxpBfY4rohg6a6cbulQl-zDIY",
-    "file07": "134drcyzXWT7HcLNrhOcxFwqowIO0v3SCtaUSfZyWIA4",
+    "file07": "1raUUWW7y0Lu9UuvoBL6t3qEjV9UUImk8sgxgPHQ8svk",
     "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
     "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
     "file12": "1YrHM6pqfqCbLgQCbDjKYrs33so-xKhwa0uvs2P_mHhE",
@@ -557,7 +557,22 @@
     "file14": "1Dp9Wk_q3Dz1mjIBqsKkyJrXXwZI4l_-aSepUh2BKbBY",
     "file15": "1QkGGEdEi7bcI_77Z4oCjaYe6JqdMeXIZ7gGWnIEa4Rw",
     "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
-    "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path; superseded IDs are trashed. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json."
+    "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path. Since 2026-10-08 superseded copies are NOT trashed: they are moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd), so previously published IDs keep resolving. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json.",
+    "supersededIds2026-10-08": {
+      "file00": "1AG1egmEOqwczMR6mUcmkCfp2CpVp5c2UvVUTXtcobyk",
+      "file00readme": "1pb3R5SCru_tqkZZxnPOxpQU1zeWIw0sjgcZn5YPNk-E",
+      "file07": "1w3BHRJ2hTjL2P4qYvDdhZGpvpVW69HwvQVpevti_h00",
+      "synthesisAuthority": "101_Q15IzPajiATl86OsaKUow0jArl58h",
+      "synthesisSeriesPlan": "1wjYa-bNbC_mrYScOSOavUCt1brG0So9p",
+      "synthesisConflictLedger": "1Vn9Vzdiri98PgdehkPGAMsBoiIA_F7gX",
+      "synthesisPastoralNotes": "1Tbd2IsZ1Ls8gLwLW2TP4GSQBTP5IYNQH",
+      "synthesisDraftA1": "1MWqCtUztQF_jfI8ffIYX5aYjmQ5lq35L",
+      "synthesisSsot": "1ehznH7G-2etlICzPokOcaAYpQwHVVxqO",
+      "synthesisFallbackReadme": "1_KVxtWTpmuUeYVzngWxL0x3_EwjOK30h",
+      "corpusRegistryJson": "1nj62d1gZm7HtqptA5vWMIjKlhr0wrUBF",
+      "disposition": "moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd); not trashed, not deleted — IDs stay resolvable for links from other repos",
+      "file07Intermediate": "134drcyzXWT7HcLNrhOcxFwqowIO0v3SCtaUSfZyWIA4"
+    }
   },
   "doNot": [
     "pirate-copyrighted-pdfs",
@@ -622,6 +637,16 @@
       "count of conflicts 12 → 15 (C-01…C-15) per the ledger",
       "Мф. 11:28 aligned to the Synodal text («труждающиеся»)",
       "«нельзя молиться за каждого (1 Ин. 5:16)» attributed as Owen's reading (14_ §2.2), not a corpus norm"
-    ]
+    ],
+    "driveFolder": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2",
+    "driveFileIds": {
+      "authority": "1AnV1Q137HnN8zNqyn9xJOeo6wzuTe4ws",
+      "seriesPlan": "11lznQuu7weVv99mt-DW_0o_DEv2FDzo_",
+      "conflictLedger": "151yu6HTO2j6RSkwNCk5YnbQY2XuO7g8H",
+      "pastoralNotes": "1YDkHr38ddVGimxxppFQB0Pa7woMGYEFf",
+      "draftA1": "1zlK97uW5wEByt_3HUEYBE5NCdLr-wPQ1",
+      "ssot": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
+      "fallbackReadme": "1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko"
+    }
   }
 }
