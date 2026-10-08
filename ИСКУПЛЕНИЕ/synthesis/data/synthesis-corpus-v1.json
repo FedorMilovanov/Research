@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "SYNTHESIS-AUTHORITY-2026-10-07",
+  "status": "CURRENT / SYNTHESIS SUB-CORPUS / ACTIVE RESEARCH / NOT PUBLICATION-READY",
+  "corpusPath": "ИСКУПЛЕНИЕ/synthesis",
+  "parentCorpus": "ИСКУПЛЕНИЕ",
+  "parentAuthority": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+  "parentAuthorityId": "ATONEMENT-CORPUS-AUTHORITY-2026-10-07",
+  "rootAuthorityUnchanged": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
+  "agent": "agent-4-synthesis",
+  "sessionBranch": "arena/5fe5b33f-research",
+  "provenance": {
+    "note": "Deliverables drafted while the E2B sandbox was down (~40 min, 16+ failed workspace calls); held as fallback in Google Drive corpus folder 18U6dslSsNJ20CwlAHTYRrO318mGohtI2 (07 — СЕРИЯ «ИСКУПЛЕНИЕ» → 09 — SYNTHESIS (agent 4) — FALLBACK 2026-10-07), then transferred to Git unchanged after sandbox recovery. Drive presence did not and does not lift any HOLD.",
+    "driveFallbackFolder": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2"
+  },
+  "holds": [
+    "PUBLICATION_HOLD",
+    "RIGHTS_HOLD",
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "ARCHIVE_HOLD"
+  ],
+  "deliverables": [
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+      "role": "общая карта: тезисы T1–T8 по слоям с осями и статусами; доказано / не доказано / конфликты; граница допустимой формулировки",
+      "status": "DONE"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+      "role": "состав, порядок, оценка объёма диапазоном (минимум 4 / цель 13 / потолок 16–18); первая статья — «Что такое искупление»",
+      "status": "DONE"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "role": "реестр разногласий C-01…C-15; снято молча: 0",
+      "status": "DONE"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+      "role": "пастырские правила; «как не сломать совесть» с обеих сторон; таблица «сказать / не сказать»",
+      "status": "DONE"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "role": "первый черновик читательской статьи (слой A1)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный, PD) с локаторами-стихами; исповедания — по номерам статей; нет ни одной цитаты современных авторов (RIGHTS_HOLD)"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "role": "SSOT под-корпуса (этот файл)",
+      "status": "DONE"
+    }
+  ],
+  "seriesWorkingPlan": {
+    "hubRouteProposal": "/iskuplenie/",
+    "articleCountFrozen": false,
+    "articleCountEstimate": {
+      "minimumForHub": 4,
+      "fullCoverageLayersABC": 13,
+      "ceilingWithReserveD": "16-18"
+    },
+    "firstArticle": "Что такое искупление (слой A1)",
+    "startWithTulipForbidden": true,
+    "layers": ["A-foundation", "B-extent-and-nuance", "C-application", "D-reserve"]
+  },
+  "synthesisMap": {
+    "theses": ["T1 nature", "T2 necessity", "T3 perfection", "T4 intent (спорно)", "T5 extent HARD (не доказано, EVIDENCE_HOLD)", "T6 sufficiency/efficiency (исповедный контроль)", "T7 application (педагогический каркас)", "T8 offer (доказано для живых реформатских линий)"],
+    "layersState": {
+      "ot": "not-created-yet (agent ВЗ)",
+      "nt": "not-created-yet (agent НЗ)",
+      "fathers": "not-created-yet (agent отцов)",
+      "historicalControl": "closed-as-research-map (13_, 14_, 15_); LOCATOR_HOLD on edition pages",
+      "modernB1": "Murray private study only (08_, 09_, 10_, 11_); not quote-safe"
+    }
+  },
+  "conflictLedger": {
+    "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+    "entries": 15,
+    "silenced": 0
+  },
+  "verdict": {
+    "extentDispute": "NO VERDICT — EVIDENCE_HOLD stands",
+    "siteTone": "умеренный реформатский кальвинизм; Дорт II как исповедный центр; свободное предложение всем; без hyper-Calvinism и без карикатур (контекст владельца, не вывод корпуса)"
+  },
+  "validation": {
+    "baselineOnCleanHead": {
+      "validate_research_root_authority.py": "PASS",
+      "validate_research_stage_closure.py": "PASS",
+      "validate_genesis6_authority_manifest.py": "FAIL (expected local: authorityBaseCommit b654c5375a7b212ff9b42c08bb0193eeaad70746 unavailable in shallow clone)"
+    },
+    "afterSynthesisFiles": "re-run required after commit; expected identical to baseline (new files are additive under ИСКУПЛЕНИЕ/synthesis/)"
+  },
+  "doNot": [
+    "claim-limited-atonement-proved",
+    "claim-unlimited-atonement-proved",
+    "quote-murray-packer-gibson-or-moderns",
+    "start-series-with-TULIP",
+    "implement-product-html-this-wave",
+    "edit-other-agent-subcorpora (ot/, nt/, fathers/, Джон Гилл/)",
+    "change-research-root-authority",
+    "silence-a-conflict-without-text-and-locator"
+  ]
+}
