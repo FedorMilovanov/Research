@@ -28,7 +28,9 @@ from pathlib import Path
 
 NT_DIR = Path(__file__).resolve().parent.parent          # ИСКУПЛЕНИЕ/nt
 DEPT_DIR = NT_DIR.parent                                  # ИСКУПЛЕНИЕ
-PERICOPE_FILES = ("06_", "07_", "08_")
+# 10_ — ось предложения: карточки того же устройства, что 06_/07_/08_,
+# поэтому контролируются тем же правилом (ось + ссылки + формулировки).
+PERICOPE_FILES = ("06_", "07_", "08_", "10_")
 
 # файлы верхнего уровня, в которых под-корпус оставил свои записи
 UPPER_FILES = (
@@ -103,7 +105,7 @@ def check_axis(files: list[Path]) -> tuple[int, list[str]]:
     for p in files:
         if not p.name.startswith(PERICOPE_FILES):
             continue
-        parts = re.split(r"(?m)^## (0[678]\.\d+ .+)$", p.read_text(encoding="utf-8"))
+        parts = re.split(r"(?m)^## ((?:0[678]|10)\.\d+ .+)$", p.read_text(encoding="utf-8"))
         for i in range(1, len(parts), 2):
             title, body = parts[i], parts[i + 1]
             total += 1

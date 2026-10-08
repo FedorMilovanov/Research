@@ -183,6 +183,26 @@
         "περιποίησις": 5,
         "ἴδιος": 114
       }
+    },
+    {
+      "id": "L6",
+      "card": "ИСКУПЛЕНИЕ/nt/10_NT_OFFER_AXIS_CARDS.md",
+      "field": "καλέω / κλητός / ἐκλεκτός / θέλω / ἀπωθέομαι / δεῦτε / δεῦρο / παραγγέλλω / κηρύσσω / εὐαγγελίζω",
+      "axisPrimary": "offer",
+      "axisSecondary": "application",
+      "computedCounts": {
+        "καλέω": 148,
+        "κλητός": 10,
+        "ἐκλεκτός": 23,
+        "θέλω": 208,
+        "ἀπωθέομαι": 6,
+        "δεῦτε": 12,
+        "δεῦρο": 9,
+        "παραγγέλλω": 32,
+        "κηρύσσω": 61,
+        "εὐαγγελίζω": 54
+      },
+      "countingRule": "точное равенство леммы, как считает verify_nt_citations.py; сложные глаголы (παρακαλέω 109, ἐπικαλέω 30 и т.д.) не входят"
     }
   ],
   "pericopeCards": [
@@ -200,6 +220,18 @@
       "file": "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
       "group": "hebrews-catholics-apocalypse",
       "cards": 34
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/nt/10_NT_OFFER_AXIS_CARDS.md",
+      "group": "offer-axis",
+      "cards": 9,
+      "extraSections": [
+        "10.0 поле",
+        "10.10 поле κλητός",
+        "10.11 синтез",
+        "10.12 сводка сверки"
+      ],
+      "whyAdded": "04_…QUESTION_MAP.md §8.6 фиксировал, что ось offer не разработана — единственный открытый пункт контрольного набора §4."
     }
   ],
   "threeColumnTable": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
@@ -282,6 +314,104 @@
       "sblApparatusSiglumPresent": true,
       "note": "SBL carries a siglum over ἐκχυννόμενον ... πολλῶν (word-order / omission class). Mt 26:28 carries sigla on μου and τῆς; Lk 22:19-20 carries a siglum on καί (the well-known longer/shorter text). Cards note these and build on S1.",
       "locatorState": "verse-level; apparatus not acquired (LOCATOR_HOLD)"
+    },
+    {
+      "ref": "Acts 17:30",
+      "S1reading": "πάντας (acc.)",
+      "TRreadings": {
+        "S2": "pasin",
+        "S3": "pasin",
+        "S4": "pasin"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Содержательное расхождение на offer-локусе: S1 πάντας как подлежащее инфинитива; все три TR πᾶσιν, согласованное с τοῖς ἀνθρώποις. Оба чтения дают всеобщий охват повеления, но разным грамматическим путём. Без аппарата выбор не делается.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Luke 14:17",
+      "S1reading": "ἕτοιμά ἐστιν",
+      "TRreadings": {
+        "S2": "etoima estin panta",
+        "S3": "etoima estin panta",
+        "S4": "etoima estin panta"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "TR добавляет panta (ἕτοιμά ἐστιν πάντα). Содержательное добавление к готовности пира; в S1 отсутствует.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Matt 23:37",
+      "S1reading": "ὄρνις ἐπισυνάγει τὰ νοσσία αὐτῆς",
+      "TRreadings": {
+        "S2": "episunagei orniv … eauthv",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Два расхождения: порядок слов (ὄρνις ἐπισυνάгети против ἐπισυνάγει ὄρνις) и форма αὐτῆς против возвратного ἑαυτῆς. Ни объёма, ни смысла предложения не меняет.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Rev 22:17",
+      "S1reading": "Ἔρχου … ἐρχέσθω ὁ θέλων λαβέτω ὕδωρ",
+      "TRreadings": {
+        "S2": "elye … elyetw kai o yelwn lambanetw to udwr",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Пять расхождений на уровне слов (ἔρχου/ἐλθέ дважды, ἐρχέσθω/ἐλθέτω, λαβέτω/λαμβάνετω, добавления καί и τοῦ). Условие получения и безвозмездность не меняются.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Acts 13:46",
+      "S1reading": "παρρησιασάμενοί τε … εἶπαν … ἐπειδὴ ἀπωθεῖσθε",
+      "TRreadings": {
+        "S2": "parrhsiasamenoi de … eipon … epeidh de apwyeisye",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Три расхождения: τε/δέ, εἶπαν/εἶπον, TR добавляет δέ перед ἀπωθεῖσθε. Ни объёма предложения, ни роли отказа не меняет.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Matt 22:9",
+      "S1reading": "ὅσους ἐὰν εὕρητε",
+      "TRreadings": {
+        "S2": "osouv an eurhte",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "ἐάν против ἄν — служебное расхождение, на смысл зова не влияет.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Luke 14:23",
+      "S1reading": "ἵνα γεμισθῇ μου ὁ οἶκος",
+      "TRreadings": {
+        "S2": "ina gemisyh o oikov mou",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Только порядок слов: μου перед и после ὁ οἶκος.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
     }
   ],
   "holds": [
@@ -316,5 +446,36 @@
     "start-series-with-TULIP",
     "implement-product-html-this-wave",
     "change-research-root-authority"
-  ]
+  ],
+  "offerAxisFindings": {
+    "lociChecked": 14,
+    "lociWithAtonementVocabulary": 0,
+    "atonementLexemesChecked": [
+      "αἷμα",
+      "λυτρ-",
+      "ἀγοράζω",
+      "ἱλάσκομαι",
+      "ἱλασμός",
+      "ἱλαστήριον",
+      "καταλλάσσω",
+      "καταλλαγή",
+      "ἀπολύτρωσις",
+      "λύτρον"
+    ],
+    "identicalToAllThreeTR": 7,
+    "substantiveDivergences": [
+      "Acts 17:30 (πάντας / πᾶσιν)",
+      "Luke 14:17 (TR добавляет πάντα)"
+    ],
+    "conclusion": "Ось предложения лексически отделена от оси объёма: ни один offer-локус не содержит искупительного словаря. Всеобщность приглашения не есть всеобщность приобретения — разные оси. Вердикта нет.",
+    "identicalLoci": [
+      "Мф 11:28",
+      "Мф 22:3",
+      "Мф 22:14",
+      "Лк 13:34",
+      "Лк 14:24",
+      "Ин 5:40",
+      "Ин 7:37"
+    ]
+  }
 }
