@@ -228,7 +228,9 @@
         "OPC 1948 report (Murray/Stonehouse) - a public report, RAA pages do not apply to it"
       ]
     },
-    "owenPassagePagesAdded": "2026-10-07 third wave: CCEL chunk references in the cards now also carry the Goold 1850 vol. X printed page (1 John 2:2 = 330; 1 Tim 2:4 = 343; 2 Pet 3:9 = 348; Heb 2:9 = 349; 2 Cor 5:14-15 = 350-352; 2 Pet 2:1 = 362-363). Book IV ch. IV range 343-358, ch. V 359-367."
+    "owenPassagePagesAdded": "2026-10-07 third wave: CCEL chunk references in the cards now also carry the Goold 1850 vol. X printed page (1 John 2:2 = 330; 1 Tim 2:4 = 343; 2 Pet 3:9 = 348; Heb 2:9 = 349; 2 Cor 5:14-15 = 350-352; 2 Pet 2:1 = 362-363). Book IV ch. IV range 343-358, ch. V 359-367.",
+    "titus2v11CardAdded2026-10-08": "H10 created 2026-10-08: Titus 2:11 was listed as mandatory Extent-HARD in 03 but had no card in 12. Readings H10-a..d; guards: 2:14 'peculiar people' in the same paragraph, soterios is an adjective not a headcount.",
+    "calvinPastoralEpistlesPagesAdded2026-10-08": "H2-e (1 Tim 2:4, p.55 'classes of men, and not to individual persons') and H2-f (1 Tim 2:5, p.56 'the fruit of the sacrifice... extends to all') added from Calvin's own commentary; H2-f is the hardest Calvin sentence for P1 in this locus."
   },
   "historicalControl": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
   "owenBookIV": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
@@ -420,6 +422,60 @@
           "state": "empty behind login as of 2026-10-07; do not retry",
           "replacedBy": "IA commentariesonca00calv (2026-10-08)"
         }
+      },
+      "calvinPastoralEpistles1856": {
+        "edition": "Calvin, Commentaries on the Epistles to Timothy, Titus, and Philemon. Edinburgh: Calvin Translation Society, 1856",
+        "source": "IA commentariesonep00calvuoft (430 leaves)",
+        "scanUrl": "https://archive.org/details/commentariesonep00calvuoft",
+        "searchEndpoint": "https://ia600808.us.archive.org/fulltext/inside.php?item_id=commentariesonep00calvuoft&doc=commentariesonep00calvuoft&path=/21/items/commentariesonep00calvuoft&q=...",
+        "rights": "possible-copyright-status: NOT_IN_COPYRIGHT",
+        "offsetRule": "NOT a constant: leaves 24-25, 36-37, 56-57, 74-75, 302-303, 368-371 carry no printed number, so the offset steps (-4 early; -10 in the 1 Timothy 2 region, leaves 58-73; -16..-18 around Titus). Leaf->page map: commentariesonep00calvuoft_page_numbers.json, cross-checked against 11 running-head/index anchors.",
+        "offsetAnchors": [
+          "leaf 18 -> 14 ('14 THE ARGUMENT.')",
+          "leaf 19 -> 15 ('THE ARGUMENT. 15')",
+          "leaf 47 -> 39 ('CHAP. I. 15. THE FIRST EPISTLE TO TIMOTHY. 39')",
+          "leaf 59 -> 49 ('THE FIRST EPISTLE TO TIMOTHY. 49')",
+          "leaf 61 -> 51 ('CHAP. II. 2, THE FIRST EPISTLE TO TIMOTHY. 51')",
+          "leaf 67 -> 57 ('CHAP. II. 5. THE FIRST EPISTLE TO TIMOTHY. 57')",
+          "leaf 66 -> 56 (volume Index: 'Christ is the one Mediator between God and men, 56.')",
+          "leaf 71 -> 61 (volume Index: 'was revealed at the appointed time, 61.')",
+          "leaf 294 -> 278 ('278 THE ARGUMENT ON THE EPISTLE TO TITUS.')",
+          "leaf 333 -> 315 ('CHAP. II. 10. THE EPISTLE TO TITUS. 315')",
+          "leaf 337 -> 319 ('CHAP. II. 12. THE EPISTLE TO TITUS. 319')"
+        ],
+        "level": "passage/paragraph, not line; page image not inspected",
+        "byLocus": {
+          "1Tim2v4": {
+            "verseText": 49,
+            "expositionBegins": 54,
+            "keyStatement": 55,
+            "leaf": {
+              "verseText": 59,
+              "expositionBegins": 64,
+              "keyStatement": 65
+            }
+          },
+          "1Tim2v5": {
+            "printed": 56,
+            "leaf": 66,
+            "note": "OCR truncated at the foot of p.56; the sentence continues on p.57 and was not retrieved"
+          },
+          "1Tim2v6": {
+            "printed": 61,
+            "leaf": 71
+          },
+          "Titus2v11": {
+            "verseText": 316,
+            "exposition": 317,
+            "translatorNoteFrSer": "317-318",
+            "leaf": {
+              "verseText": 334,
+              "exposition": 335,
+              "translatorNote": "335-336"
+            }
+          }
+        },
+        "ccelReader": "not used for this volume"
       }
     },
     "calvinII17Chunks": [
@@ -541,7 +597,11 @@
     "driveCalvinPdfExtractFailedBytes": 45351929,
     "driveOwenPdfExtractFailedBytes": 42084171,
     "calvinComm1John2v2KeyQuote": "Here a question may be raised, how have the sins of the whole world been expiated? ... Though then I allow that what has been said is true, yet I deny that it is suitable to this passage; for the design of John was no other than to make this benefit common to the whole Church. (Commentaries on the Catholic Epistles, CTS 1855, p. 173)",
-    "calvinComm2Peter3v9KeyQuote": "But it may be asked, If God wishes none to perish, why is it that so many do perish? To this my answer is, that no mention is here made of the hidden purpose of God, according to which the reprobate are doomed to their own ruin, but only of his will as made known to us in the gospel. For God there stretches forth his hand without a difference to all, but lays hold only of those, to lead them to himself, whom he has chosen before the foundation of the world. (Commentaries on the Catholic Epistles, CTS 1855, pp. 419-420)"
+    "calvinComm2Peter3v9KeyQuote": "But it may be asked, If God wishes none to perish, why is it that so many do perish? To this my answer is, that no mention is here made of the hidden purpose of God, according to which the reprobate are doomed to their own ruin, but only of his will as made known to us in the gospel. For God there stretches forth his hand without a difference to all, but lays hold only of those, to lead them to himself, whom he has chosen before the foundation of the world. (Commentaries on the Catholic Epistles, CTS 1855, pp. 419-420)",
+    "calvin1Tim2v4KeyQuote": "But the present discourse relates to classes of men, and not to individual persons; for his sole object is, to include in this number princes and foreign nations. — CTS 1856, p. 55",
+    "calvin1Tim2v5KeyQuote": "this Mediator was given, not only to one nation, or to a small number of persons of some particular rank, but to all; because the fruit of the sacrifice, by which he made atonement for sins, extends to all. — CTS 1856, p. 56 (OCR truncates on the page break)",
+    "calvinTitus2v11KeyQuote": "He argues from the design of redemption, which he shews to be a desire to live a godly and upright life. ... the grace of God hath appeared, teaching us; for he means that it ought to hold the place of instruction to us to regulate our life well. — CTS 1856, p. 317",
+    "calvinTitus2v11FrSerNote": "Translator's note (NOT the commentary text), citing Calvin's French Sermons, CTS 1856 pp. 317-318: 'Paul did not mean in this passage, or in 1 Tim. ii. 6, anything else than that the great are called by God, though they are unworthy of it; that men of low condition, though they are despised, are nevertheless adopted by God' - and it rejects the inference 'there is no election'."
   },
   "parallelAgents": {
     "briefsPath": "ИСКУПЛЕНИЕ/agents/",
