@@ -62,10 +62,14 @@
 | Евр. 10:29 | **364–365** | Book IV, V |
 | Сводка возражения «Proof 16» (Иуд. 4; Евр. 10:29; 2 Пет. 2:1; 1 Кор. 8:11) | **401** | Book IV, VI (368) |
 | Августин, «totus mundus est ecclesia» | **424** | Testimonies of the Ancients (422) |
+| 1 Тим. 2:6 — слово *all*: четыре кандидата на «всех» («all believers, or all the elect, or some of all sorts, or all of every sort») | **307** | Book II (200–235), разбор слова *all* |
+| 1 Тим. 2:6 — «and so we believe that he died for all»: «все» = церковь / избранные / овцы / некоторые из всех родов | **371** | Book IV, VI (368) |
+| **Тит. 2:11** — «all men» как *livery of believers*: «верующие называются … „всеми человеками“, Тит. ii. 11» | **336** | Book IV, III (330), внутри разбора 1 Ин. 2:2 |
+| **Тит. 2:11, 13** — «grace that certainly brings salvation» + 2:14 «peculiar people» как immediate end oblations | **395** | Book IV, VI (368), ответ Муру, Arg. 13 |
 
-**Как получено.** Поиск фраз по OCR скана (`…/fulltext/inside.php?item_id=worksofjohnowe185010owen&doc=…&path=/30/items/…`): `then were all dead` (2 Кор. 5:14), `taste death for every man` (Евр. 2:9), `for whom Christ died` (Рим. 14:15 / 1 Кор. 8:11), `bought them` (2 Пет. 2:1), `trodden under foot` (Евр. 10:29), `not willing that any should perish` (2 Пет. 3:9), `not for ours only` (1 Ин. 2:2), `God so loved the world` (Ин. 3:16), `impetration` (Book II.IV).
+**Как получено.** Поиск фраз по OCR скана (`…/fulltext/inside.php?item_id=worksofjohnowe185010owen&doc=…&path=/30/items/…`): `then were all dead` (2 Кор. 5:14), `taste death for every man` (Евр. 2:9), `for whom Christ died` (Рим. 14:15 / 1 Кор. 8:11), `bought them` (2 Пет. 2:1), `trodden under foot` (Евр. 10:29), `not willing that any should perish` (2 Пет. 3:9), `not for ours only` (1 Ин. 2:2), `God so loved the world` (Ин. 3:16), `impetration` (Book II.IV). Четвёртая волна (2026-10-08): `all men, Tit. ii. 11` (336), `Tit. ii. 11, 13` (395), `gave himself a ransom for all` (307, 371), `God will have all men to be saved` (343).
 
-**Смещение лист → страница: −16.** Проверено трижды: колонтитул «294 THE DEATH OF DEATH [BOOK IV.» = лист 310; «344 …» = лист 360; оглавление тома (лист 12): «IV. — Of the distinction of impetration and application … 222» = лист 238.
+**Смещение лист → страница: −16.** Проверено трижды: колонтитул «294 THE DEATH OF DEATH [BOOK IV.» = лист 310; «344 …» = лист 360; оглавление тома (лист 12): «IV. — Of the distinction of impetration and application … 222» = лист 238. **Четвёртая волна 2026-10-08 подтвердила смещение массово:** колонтитулы идут по листам без разрывов — «306 …» = 322, «314 …» = 330, «320 …» = 336, «336 …» = 352, «350 …» = 366; другой трактат тома — «OF THE DEATH OF CHRIST. 89» = лист 105 (105 − 16 = 89). Расхождений с автоопределением IA (`worksofjohnowe185010owen_page_numbers.json`) нет.
 
 **Ограничения.** (1) Уровень — абзац, не строка: указана страница, на которой стоит обсуждение локуса. (2) OCR — ABBYY FineReader 8, неровный: фраза `constraineth us` не индексируется вовсе, поэтому 2 Кор. 5:14 привязан по `then were all dead`; короткие фразы надёжнее длинных. (3) Это не ingest трактата в Git: Git держит локаторы.
 
@@ -162,6 +166,54 @@ Competing: P5 скажет, что он сужает «мир» системно
 Стык с apostasy `12`: Оуэн **не** отрицает 2:20 как escape через познание; читает как отделение от мира, не washing in the blood. Competing H3-d (подлинное спасительное искупление + потеря) отвергает пунктом (iv). Мюррей брошюра кладёт 2 Пет. 2:1 в *тот же* список, что 1 Кор. 6:20 / Откр. 5:9. Оуэн **разводит** эти места.
 
 **Евр. 10:29** (chunks 88–89, тот же Chapter V): commination на supposition (`suppositio nil ponit in esse`); «освящён кровью завета» = внешнее/крещальное/храмовое *hagiazo*, не внутреннее освящение избранных. Если читать positive + true saints may perish — тогда вера не плод избрания и святые падают finally: это старые арминиане, не «новые universalists» Оуэна. Не превращать commination в proof-text universal atonement.
+
+---
+
+### 2.4 Четвёртая волна (2026-10-08): Тит. 2:11 и 1 Тим. 2:6 — локусы, которых в `14` не было
+
+**Почему это важно.** Карточка **H10** (Тит. 2:11) была заведена в `12` 2026-10-08 с одним первоисточником — Кальвином. Оуэн по Тит. 2:11 в каноне отсутствовал полностью; по 1 Тим. 2:6 был только пересказ chunk 81. Ниже — страницы Goold vol. X и verbatim.
+
+Смещение лист → страница **−16**, подтверждено на этот раз массово (см. §0.2).
+
+#### 1. Тит. 2:11, с. 336 — «все человеки» как наименование верующих
+
+Контекст: **Book IV, III (330)**, внутри разбора 1 Ин. 2:2 — Оуэн доказывает, что «весь мир» не шире выражений «все народы», «вся плоть», «все человеки», и что все эти выражения обозначают believers of all sorts. Verbatim:
+
+> Secondly, The whole world can signify no more than all nations, all the families of the earth, all flesh, all men, all the ends of the world. These surely are expressions equivalent unto, and as comprehensive of particulars as the whole world; but now all these expressions we find frequently to bear out **believers only**, but as of all sorts, and throughout the world. … We may instance in some places: "All the ends of the earth have seen the salvation of our God," Ps. xcviii. 3; "All the ends of the world shall remember and turn unto the Lord…" Ps. xxii. 27; "All nations shall serve thee," Ps. lxxii. 11; — which general expressions do yet denote no more but only the believers of all the several nations of the world … What a conquest should we have had proclaimed, if it had been anywhere affirmed that Christ died for all flesh, all nations, all kindreds, etc.! which yet are but **liveries of believers**, though garments as wide and large as this expression, the whole world. **Believers are called "all nations," Isa. ii. 2, Ixvi. 18; yea, "all men," Tit. ii. 11: for to them alone the salvation-bringing grace of God is manifest.** If they, then, the children of God, be, as is apparent in the Scripture phrase, all flesh, all nations, all kindreds, all the ends of the world, all the ends of the earth, all men, why not also the whole world?
+
+**Чтение:** «все человеки» в Тит. 2:11 — лексическое наименование верующих, а не подсчёт адресатов. Механизм тот же, что у Оуэна для «мира» в 1 Ин. 2:2.
+
+#### 2. Тит. 2:11, 13 и 3:4–5, с. 395 — благодать, «которая несомненно приносит спасение»
+
+Контекст: **Book IV, VI (368)**, ответ Томасу Мору, *The Universality of God's Free Grace*, глава XX. Оглавление тома (лист 160) перечисляет аргументы Мура; **Arg. 13 — «From Tit. ii. 11, 13, iii. 4, 5, etc.»** Verbatim:
+
+> Secondly, There is nothing of this common love to all in the places urged; for, —
+> **1.** The "grace" mentioned, **Tit. ii. 11, 13**, is **the grace that certainly brings salvation**, which that common love doth not, and was the cause of sending Christ, "**that he might redeem us from all iniquity, and purify to himself a peculiar people**, zealous of good works;" where our redemption and sanctification are asserted to be **the immediate end of the oblation of Jesus Christ**; which how destructive it is to universal redemption hath been formerly declared.
+> **2.** So also is that "love and kindness" mentioned, **chap. iii. 4, 5**, such as by which we receive the "washing of regeneration and renewing of the Holy Ghost," verse 5; and justification, and adoption to heirship of eternal life, verse 7; — **which, whether it be a common or a peculiar love, let all men judge.**
+
+**Чтение:** Оуэн строит аргумент ровно на том узле, который в H10 назван guard'ом — **2:14 «народ особенный» стоит в том же абзаце, что 2:11**, и потому «все» в 2:11 не может быть каждым человеком без остатка: благодать, о которой говорит Павел, — та, что «несомненно приносит спасение» и имеет целью очистить Себе народ. Плюс 3:4–7 (омовение, оправдание, усыновление) как та же «особенная» любовь.
+
+#### 3. 1 Тим. 2:6, с. 307 — «кто эти все» названо спорным самим Оуэном
+
+Контекст: **Book II**, разбор слова *all* (том: 200–235). Verbatim:
+
+> Now, as we have said of the word world, so we may of the word all, wherein much strength is placed, and many causeless boastings are raised from it. That it is nowhere affirmed in the Scripture that Christ died for all men, or gave himself a ransom for all men, much less for all and every man, we have before declared. That he "gave himself a ransom for all" is expressly affirmed, **1 Tim. ii. 6**. But now, **who this all should be, whether all believers, or all the elect, or some of all sorts, or all of every sort, is in debate.** Our adversaries affirm the last; and the main reason they bring to assert their interpretation is from the importance of the word itself: for, that the circumstances of the place, the analogy of faith, and other helps for exposition, do not at all favour their gloss, we shall show when we come to the particular places urged.
+
+**Почему это стоит в каноне:** сам Оуэн фиксирует **четыре** конкурирующих значения «всех» и признаёт вопрос открытым на уровне слова. Это снимает соблазн цитировать «Оуэн сказал: все = some of all sorts» как простую формулу: у него есть и «all the elect».
+
+#### 4. 1 Тим. 2:6, с. 371 — «итак мы веруем, что Он умер за всех»
+
+Контекст: **Book IV, VI (368)**, разбор «Proof» Мура, где перечислены «всякий человек» (Евр. 2:9), «выкуп за всех» (1 Тим. 2:6), «умилостивление за грехи всего мира» (1 Ин. 2:2). Verbatim:
+
+> …we do not affirm that the Scripture doth, in any place, lay an exception or restraint upon those persons for whom Christ is said to die, as though in one place it should be affirmed he died for all men, and in another some exception against it, as though some of those all men were excluded, — which were to feign a repugnancy and contradiction in the word of God; only, we say, **one place of Scripture interprets another**, and declares that sense which before in one place was ambiguous and doubtful. For instance: when the Scripture showeth that Christ died or gave himself a ransom for all, **we believe it**; and when, in another place, he declares that all to be his church, his elect, his sheep, all believers, — some of all sorts, out of all kindreds, and nations, and tongues, under heaven; **this is not to lay an exception or restraint upon what was said of all before, but only to declare that the all for which he gave himself for a ransom were all his church, all his elect, all his sheep, some of all sorts: and so we believe that he died for all.**
+
+**Почему это стоит в каноне:** это самая сильная формулировка Оуэна против подозрения, что particularism «добавляет исключение к Писанию». Он настаивает: исключения нет, «все» остаётся «всеми», но объём определяется другим местом Писания. Цитировать без этой оговорки — выдавать Оуэна за того, кто вычитал из текста часть.
+
+#### 5. Начало разбора 1 Тим. 2:4, 6 — с. 343
+
+> **1.** The first and chief place is, **1 Tim. ii. 4, 6**, "God will have all men to be saved, and come to the knowledge of the truth. … Christ gave himself a ransom for all, to be testified in due time." Hence they draw this argument, Rem. Act. Synod: — "If God will have all men to be saved, then Christ died for all; but God will have all men to be saved, and come to the knowledge of the truth: therefore, Christ died for all men."
+
+(С. 343 = начало **Book IV, IV**; совпадает с §0.2.)
 
 ---
 
