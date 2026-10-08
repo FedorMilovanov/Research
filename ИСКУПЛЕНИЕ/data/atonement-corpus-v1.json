@@ -383,6 +383,43 @@
         "iii2416": "619-620",
         "quoteAnchor": "'16. The second passage adduced is that in which Paul says that \"God will have all men to be saved,\" (1 Tim. ii. 4.)' - p. 619; the 2 Pet 3:9 discussion continues on p. 620",
         "notResolved": "exact boundary of §15 (p. 618) and §17 (pp. 620-621)"
+      },
+      "calvinCatholicEpistles1855": {
+        "edition": "John Calvin, Commentaries on the Catholic Epistles, trans. and ed. by the Rev. John Owen (Edinburgh: Calvin Translation Society, 1855)",
+        "source": "Internet Archive scan commentariesonca00calv (Princeton Theological Seminary Library), Possible copyright status: NOT_IN_COPYRIGHT",
+        "scanUrl": "https://archive.org/details/commentariesonca00calv",
+        "rights": "public-domain",
+        "offsetRule": "printed page = scan leaf - 6",
+        "offsetAnchors": [
+          "running head 'CHAP. II. 1. THE FIRST EPISTLE OF JOHN. 169' at leaf 175",
+          "running head 'CHAP. II. 1. THE SECOND EPISTLE OF PETER. 391' at leaf 397",
+          "running head 'VER. 1. THE EPISTLE OF JUDE. 429' at leaf 435",
+          "subject index entry 'Days, in the last, scoffers will come, 414' = 2 Peter 3:3 at leaf 420"
+        ],
+        "level": "passage/paragraph, not line; page image not inspected",
+        "byLocus": {
+          "1John2v2": {
+            "lemmaPrintedPage": 169,
+            "lemmaLeaf": 175,
+            "commentBeginsPrintedPage": 172,
+            "commentBeginsLeaf": 178,
+            "keyParagraphPrintedPage": 173,
+            "keyParagraphLeaf": 179
+          },
+          "2Peter2v1": {
+            "printedPage": 393,
+            "leaf": 399
+          },
+          "2Peter3v9": {
+            "printedPage": "419-420",
+            "leaf": "425-426"
+          }
+        },
+        "cecelReader": {
+          "item": "calcom45",
+          "state": "empty behind login as of 2026-10-07; do not retry",
+          "replacedBy": "IA commentariesonca00calv (2026-10-08)"
+        }
       }
     },
     "calvinII17Chunks": [
@@ -502,7 +539,9 @@
       "alsoTransferred": "Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — read and transferred in the same wave"
     },
     "driveCalvinPdfExtractFailedBytes": 45351929,
-    "driveOwenPdfExtractFailedBytes": 42084171
+    "driveOwenPdfExtractFailedBytes": 42084171,
+    "calvinComm1John2v2KeyQuote": "Here a question may be raised, how have the sins of the whole world been expiated? ... Though then I allow that what has been said is true, yet I deny that it is suitable to this passage; for the design of John was no other than to make this benefit common to the whole Church. (Commentaries on the Catholic Epistles, CTS 1855, p. 173)",
+    "calvinComm2Peter3v9KeyQuote": "But it may be asked, If God wishes none to perish, why is it that so many do perish? To this my answer is, that no mention is here made of the hidden purpose of God, according to which the reprobate are doomed to their own ruin, but only of his will as made known to us in the gospel. For God there stretches forth his hand without a difference to all, but lays hold only of those, to lead them to himself, whom he has chosen before the foundation of the world. (Commentaries on the Catholic Epistles, CTS 1855, pp. 419-420)"
   },
   "parallelAgents": {
     "briefsPath": "ИСКУПЛЕНИЕ/agents/",
