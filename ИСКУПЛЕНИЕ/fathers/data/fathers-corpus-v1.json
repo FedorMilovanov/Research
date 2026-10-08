@@ -93,6 +93,15 @@
       "rights": "COPYRIGHT",
       "accessState": "REFERENCE_ONLY",
       "note": "Только B1-ссылки; тексты не выкладывать"
+    },
+    {
+      "id": "LOCAL-SCHAFF-TOMES",
+      "kind": "PD-translation (XIX c.) локальные копии томов",
+      "localCopy": "/tmp/cf/ccel_fathers_complete/downloads (ANF05, ANF06, ANF07, ANF10, NPNF2_01, NPNF2_06, NPNF2_09, NPNF2_10 — 8 томов)",
+      "provenance": "зеркало kyle-mirich/church-fathers-schaff-set (CCEL загрузки)",
+      "rights": "PD",
+      "accessState": "READABLE",
+      "caveat": "/tmp не персистентен: при потере — перекачать sparse-клоном"
     }
   ],
   "cards": [
@@ -501,6 +510,181 @@
         "схема «долг чести / удовлетворение» — новизна XI в.",
         "лат. текст не сверен"
       ]
+    },
+    {
+      "cardId": "HIP-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Ипполит: «Против Верона и Геликса», фрагм. II; Толкование на Даниила (фрагм.) §45",
+      "genre": "полемика (фрагменты); экзегетический комментарий",
+      "primaryLocators": [
+        "ANF05.txt:L23452–23570 (Fragment II; цитата L23558–23570)",
+        "ANF05.txt:L17841 (блок On Daniel) → L21271 (§45)"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED; атрибуция фрагмента и деление On Daniel — LOCATOR_HOLD",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "«выкуп диаволу» у Ипполита нет: проданные смерти/рука смерти",
+        "fragment attribution uncertain (ANF: Beron=Vero)"
+      ]
+    },
+    {
+      "cardId": "MET-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Мефодий, «Три фрагмента из слова о Кресте и Страдании», фрагм. I",
+      "genre": "гомилия (фрагменты)",
+      "primaryLocators": [
+        "ANF06.txt:L37838–37960"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "антиоригенист, но НЕ воспроизводит выкуп диаволу: триумф/трофей и освобождение даром",
+        "ORIGINAL_TEXT_HOLD (греч. не сверен)"
+      ]
+    },
+    {
+      "cardId": "THA-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Григорий Чудотворец — молчание (ANF06, раздел anf06.iii)",
+      "genre": "панегирик/каноническое послание/метафраза",
+      "primaryLocators": [
+        "ANF06.txt:L217–7200 (0 вхождений ransom/redeem/redemption)"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED (поиск пустоты)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "молчание = результат поиска, не позиция"
+      ]
+    },
+    {
+      "cardId": "LAC-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Лактанций: Divine Institutes VI.3 (сноска Coxe [1098]); VI.12 (redemptio captivorum); Epitome",
+      "genre": "апологетико-этический трактат",
+      "primaryLocators": [
+        "ANF07.txt:L15977 + L16008 (аппарат)",
+        "ANF07.txt:L17156",
+        "ANF07.txt:L24830"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "[1098] — редакторская сноска XIX в., не текст (F-17)",
+        "redemptio captivorum = милостыня, не сотериология (F-18)"
+      ]
+    },
+    {
+      "cardId": "HIL-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Иларий Пиктавийский, De Trinitate VI; X; XII.18",
+      "genre": "догматический трактат (антиарианская полемика)",
+      "primaryLocators": [
+        "NPNF2_09.txt:L16397",
+        "NPNF2_09.txt:L22458",
+        "NPNF2_09.txt:L27208"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED (LOCATOR_HOLD снят)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "искупление — часть посылки христологического аргумента, не сотериологический трактат",
+        "ORIGINAL_TEXT_HOLD (лат. De Trinitate вне канала)"
+      ]
+    },
+    {
+      "cardId": "AMB-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Амвросий: De officiis III.3; De Spiritu Sancto I.12.126",
+      "genre": "этико-пастырский и догматический трактаты",
+      "primaryLocators": [
+        "NPNF2_10.txt:L8263–8264",
+        "NPNF2_10.txt:L11952–11954; L7650, L7690–7694 (redemptio captivorum)"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "«Who died for all… price of His blood paid in vain» — пастырский контекст",
+        "redemptio captivorum = милостыня (F-18)"
+      ]
+    },
+    {
+      "cardId": "JER-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Иероним, Против Иовиниана I.11",
+      "genre": "полемический трактат (аскеза/брак)",
+      "primaryLocators": [
+        "NPNF2_06.txt:L39287 (кн. I начата L38619)"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "аргумент этический, не об объёме"
+      ]
+    },
+    {
+      "cardId": "EUS-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Евсевий Кесарийский, Похвальное слово Константину, гл. XV",
+      "genre": "панегирик (имперская риторика)",
+      "primaryLocators": [
+        "NPNF2_01.txt:L68280 (гл. XV), цитата L68399–68407; под-том: L51085–51087"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED (печатная страница — LOCATOR_HOLD)",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "панегирик ≠ догматика",
+        "Demonstratio Evangelica — ARCHIVE_HOLD (Ferrar 1920)"
+      ]
+    },
+    {
+      "cardId": "ALX-1",
+      "file": "11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+      "subject": "Александр Александрийский, Послание V «О душе и теле и страдании Господа»",
+      "genre": "послание-слово (фрагментарное)",
+      "primaryLocators": [
+        "ANF06.txt:L28392 (начало), L28416–28418, L28630–28643"
+      ],
+      "evidenceClass": "A1-PD-translation",
+      "accessState": "READABLE",
+      "locatorState": "LOCATED; атрибуция/состав по ANF [2472] — LOCATOR_HOLD",
+      "rightsState": "PD",
+      "publicationState": "RESEARCH_ONLY",
+      "quoteSafe": true,
+      "falseFriendFlags": [
+        "«debt of death» ≠ анзельмов долг чести (F-19)",
+        "ORIGINAL_TEXT_HOLD (греч. не сверен)"
+      ]
     }
   ],
   "maps": [
@@ -651,6 +835,11 @@
       "locus": "Cyril of Alexandria, In Osee VII.18; In Ionam I.66; In Sophoniam II.64",
       "source": "Pusey 1868 (First1K tlg4090.tlg001)",
       "phrase": "δοὺς ἑαυτὸν ἀντίλυτρον ὑπὲρ πάντων / ὑπὲρ μικροῦ καὶ μεγάλου … Ἰουδαίου καὶ Ἕλληνος / ὑπὲρ ἡμῶν"
+    },
+    {
+      "locus": "Augustine, De Trinitate XIII.12.16; XIII.13.17",
+      "source": "thelatinlibrary.com/augustine/trin13.shtml (транскрипция без аппарата)",
+      "phrase": "commissio peccatorum per iram dei iustam hominem subdidit diabolo, profecto remissio peccatorum per reconciliationem dei benignam eruit hominem a diabolo; Non autem diabolus potentia dei sed iustitia superandus fuit"
     }
   ],
   "falseFriendRegister": [
@@ -708,6 +897,21 @@
       "id": "F-9",
       "what": "отцы называли это Christus Victor",
       "correction": "ярлык Аулена 1931"
+    },
+    {
+      "id": "F-17",
+      "what": "«у Лактанция — universal redemption» (сноска [1098] в ANF07)",
+      "correction": "редакторский аппарат A. C. Coxe XIX в.; у Лактанция — всеобщий доступ к пути, не крест"
+    },
+    {
+      "id": "F-18",
+      "what": "«Амвросий/Лактанций: искупление через выкуп пленных»",
+      "correction": "лат. redemptio captivorum = милостыня/соц. дело (цитата Цицерона)"
+    },
+    {
+      "id": "F-19",
+      "what": "«Отцы говорили о долге → у них схема долга чести Анзельма»",
+      "correction": "у Александра Александрийского долг — смерти (Быт 2:17; Рим 5–6), не чести"
     }
   ],
   "silences": [
@@ -745,6 +949,11 @@
       "id": "S-10",
       "where": "Соборы (Никея, Халкидон)",
       "result": "определений об объёме/«кому» нет"
+    },
+    {
+      "id": "S-11",
+      "where": "Григорий Чудотворец (ANF06, anf06.iii)",
+      "result": "0 вхождений ransom/redeem/redemption"
     }
   ],
   "interface": {
@@ -766,10 +975,10 @@
     "declare-verdict-on-extent"
   ],
   "nextSteps": [
-    "Приёмка PD-каналов: Moralia (Bliss), Кирилл Алекс. (Pusey), Пс.-Дионисий (Parker), Феодорит — с проверкой прав.",
-    "Латинские оригиналы: Ириней (PG 7 recapitulans), Лев (PL 54), Августин (De Trin. XIII, Tract. in Io.).",
-    "Греческие оригиналы: Or. 45.22, Нисский Or. cat., Златоуст, Кирилл Иер., Дамаскин.",
-    "Печатные локаторы: ANF/NPNF том/страница; PG/PL колонки — отдельной пометой.",
-    "Регистрация под-корпуса в отчёте §9 после push/PR."
+    "Печатные локаторы: ANF/NPNF том + страница; PG/PL колонки (для всех карточек, включая 11_).",
+    "Греческие оригиналы III в.: Ипполит (фрагм.), Мефодий (гомилия), Александр Александрийский; лат. Илария (De Trinitate).",
+    "Приёмка PD-каналов: Григорий Великий (Moralia, Bliss), Кирилл Алекс. (Contra Nestorium/In Ioannem), Феодорит, Пётр Хрисолог, Пс.-Дионисий, Анзельм (Deane).",
+    "B1-сличения по именам (Aulén, Rashdall, Kelly) — постранично, без дампа.",
+    "Отчёт §9 владельцу; PR — обновить описание при новых коммитах."
   ]
 }
