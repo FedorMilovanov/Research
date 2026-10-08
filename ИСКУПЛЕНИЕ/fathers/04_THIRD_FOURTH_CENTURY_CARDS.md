@@ -144,12 +144,16 @@
 |---|---|---|
 | Гомилия VI на 1 Тим. (1 Тим. 2:4) | `NPNF1_13.txt:L37320` (заголовок), текст `L37327–37340`, продолжение `L37665–37685` | «who will have all men to be saved… **not as some say, many**, … giving proof that **He will have all men to be saved**» |
 | Гомилия IV на Евр. (Евр. 2:9) | `NPNF1_14.txt:L36543` (заголовок), текст `L36695–36712` | «“That by the grace of God He should taste death for every man,” **not for the faithful only, but even for the whole world**: for He indeed died for all» |
+| Толкование на Гал., гл. III (Гал. 3:13) | `NPNF1_13.txt:L2519` (заголовок «Chapter III»), текст `L2802–2810` | «Christ redeemed us from the curse of the Law, having become a curse for us» — «Христос **обменял один проклятие на другое**» (закон проклят → проклятие древа) |
+| Гомилия I на Еф. (Еф. 1:6) | `NPNF1_13.txt:L5069` (заголовок «Homily I»), текст `L5321–5331` | «in whom we have our redemption through His Blood… **See, how high a price he sets upon us**. If, when we hated Him and were enemies, He gave the Beloved, what will He not do now…» |
+| Гомилия II на Еф. (Еф. 1:14) | `NPNF1_13.txt:L5750–5756` | «The redemption of God's own possession… **For our absolute redemption takes place then** [в конце]… when there shall be no sins, no human sufferings» — ⚠ см. `09_`, F-20 |
 
 **Жанр:** экзегетическая гомилия ad populum. Златоуст решает **пастырскую** задачу: показать, что Божье желание спасения всеобще, а молитва Церкви — за всех.
 **Что утверждает:** (1) «все» у 1 Тим. 2:4 — не «многие»: он прямо отвергает сужение; (2) Евр. 2:9 — «за всякого», «за весь мир», не только за верных.
 **Что не утверждает:** не связывает это с избранием/декретом и не говорит, что все будут спасены фактически; в той же гомилии — молитва и вера как условия.
 **Живые чтения:** (a) universal-reading используется в защиту всеобщего искупления; (b) ограничительное чтение указывает, что Златоуст говорит о **всеобщности зова и Божьей воли**, а не о «каждом, кто неминуемо спасётся».
 **Анахронизм:** читать Златоуста как арминианина или как кальвиниста — оба чтения из XX–XXI вв.
+**Жанровая разница, важная для цитирования:** в Еф. 1:6 «price» — риторика любви (Бог отдал Возлюбленного врагам); в Еф. 1:14 «redemption» — **будущее** исполнение. Оба — гомилии ad populum, не трактаты.
 **Не локализовано:** *De cruce et latrone* — в имеющихся PD-томах не найдено; `LOCATOR_HOLD`.
 
 ---
