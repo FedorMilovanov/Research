@@ -731,12 +731,12 @@
     "file00": "1KD-8pMP_Jnk1lmsb2h3JbXxqpWLQgacdBMH57krdy_s",
     "file00readme": "1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs",
     "file05": "15i2GEHWfM-zxqFmDNyiQaSEGMBWd10hPxg4IdJEMOEg",
-    "file07": "1n63RDbxmd4wnyZxAt9CWXeacXqo_VZMFQmeB1-0EpZ4",
+    "file07": "1frdDjOoT4vZ-LkZgf0_GpDjOhLBjxJ-6E_M1asLglwA",
     "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
     "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
-    "file12": "18pdqqDj-oJK8hDTmD0OwVZufdJyXPCf5zq181DYFXsU",
+    "file12": "1Jt96MpLxvFV1_EWgy2sHIwXypvqWZ3h8j-1KnpqRoas",
     "file13": "1jMpfpjP-ThrWCXLx13wb-d4aOBH9PH39",
-    "file14": "1EUIv9AU4AE51xXcpSPPBBusCVJKaP33sbp1gHsthgEE",
+    "file14": "1v4er6LbmOhEvJh50skuL8dVu3m6U3s06JSZEuxxFhy0",
     "file15": "11OYvutqx9z-V5Vcesp3_NUw8Hgccgl47FQ43UkOUMoI",
     "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
     "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path. Since 2026-10-08 superseded copies are NOT trashed: they are moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd), so previously published IDs keep resolving. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json. The 07 ledger cannot carry its own mirror ID (self-reference: every re-upload would stale it in the same commit), so its live mirror is only in driveMirrors.file07.",
@@ -817,15 +817,18 @@
     },
     "supersededIds2026-10-09": {
       "file00": "1IeTc1fgDvPoFJ-lWvm8uovSkwtWS27bN0Vi79c8jpuY",
-      "file12": "1wrBw5mKN0VOj2-YsGhy-Tx_k1Ytb-AlGdgyDUf4QCEs",
-      "file14": "1en18-MR3lXgNdgVVz24UXN9fAxDlOsiuUWsbSTnTv2A",
+      "file12": "18pdqqDj-oJK8hDTmD0OwVZufdJyXPCf5zq181DYFXsU",
+      "file14": "1EUIv9AU4AE51xXcpSPPBBusCVJKaP33sbp1gHsthgEE",
       "reason": "these three mirrors predate commits 52ace08 and 7895287, which changed 00, 12 and 14",
       "disposition": "moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd) and renamed per namingConvention2026-10-09; not trashed, not deleted — IDs stay resolvable",
       "file07": "1910KRnHOEFylSVWNIfUspZRI92rC1OjD0ALv6_BgFMw",
       "file07Intermediate2026-10-09a": [
         "1vms7J-F2HvMmQ43Z1hkMQeOu7ZC0RJb71xrpRRm_p5M",
         "1dpdeQ2o5lis3VqTc2uKylg2wKW8ftlGngCp6WXyEG6g"
-      ]
+      ],
+      "file12file14Reason": "these two were one revision behind: 8a5b676 added the 2 Peter 2:1 / 3:9 verbatim and the machine page map to 12 (H3, H9) and 14 (§2.6)",
+      "file07Prev": "1n63RDbxmd4wnyZxAt9CWXeacXqo_VZMFQmeB1-0EpZ4",
+      "corpusRegistryJsonPrev2026-10-09a": "1Kf78F9i0v9yE0UELBDupkWesz6RiIArw"
     }
   },
   "doNot": [

@@ -78,7 +78,7 @@
 
 | Объект | ID | Папка |
 |---|---|---|
-| 00 — AUTHORITY — MIRROR (актуальное) | `1KD-8pMP_Jnk1lmsb2h3JbXxqpWLQgacdBMH57krdy_s` | 00 |
+| 00 — AUTHORITY — MIRROR (актуальное) | `driveMirrors.file00` | 00 |
 | 00 — README AND NAVIGATION — ИСКУПЛЕНИЕ | `1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs` | 00 |
 | 01 — MASTER RESEARCH MAP AND SERIES ARCHITECTURE | `1_0I6d9OiRapJWQ9RzsgIAu73dxeArTJSI7ViRBMPlNw` | 00 |
 | 02 — TERMS, DEFINITIONS AND WHAT IS ATONEMENT | `14EwvFHHCY3OlaMJ_tKQH7mGbr3Z3Fc5CqBNGrQNZO7A` | 00 |
@@ -86,11 +86,11 @@
 | 03 — BIBLICAL CORPUS AND REDEMPTION VOCAB — MIRROR | `1Bu5d-44UP1XEz7gvcXuazUjfP4HyDJtOCA39iQmg64w` | 03 |
 | 04 — LIMITED VS UNIVERSAL QUESTION MAP — NO VERDICT — MIRROR | `1GFVUswVklNLz5VCtZRclMFj9b06nA4WUj1pjbIrtNaA` | 05 |
 | 05 — SOURCE REGISTRY AND ACQUISITION QUEUE — MIRROR | `15i2GEHWfM-zxqFmDNyiQaSEGMBWd10hPxg4IdJEMOEg` | 05 |
-| 12 — HARD TEXTS EXTENT CARDS — MIRROR (актуальное) | `18pdqqDj-oJK8hDTmD0OwVZufdJyXPCf5zq181DYFXsU` | 05 |
-| atonement-corpus-v1.json — SSOT (актуальный) | `1Kf78F9i0v9yE0UELBDupkWesz6RiIArw` | 05 |
+| 12 — HARD TEXTS EXTENT CARDS — MIRROR (актуальное) | `driveMirrors.file12` | 05 |
+| atonement-corpus-v1.json — SSOT (актуальный) | свой ID не хранит (самоссылка) — последний объект в папке `05` | 05 |
 | 07 — RIGHTS LEDGER — MIRROR (актуальное, этот файл) | не фиксируется здесь — см. `driveMirrors.file07` в реестре | 06 |
 | 10 — PRIMARY TEXT — DORT HEAD II AND CALVIN — MIRROR | `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo` | 01 |
-| 14 — OWEN BOOK IV LOCATORS — MIRROR (актуальное) | `1EUIv9AU4AE51xXcpSPPBBusCVJKaP33sbp1gHsthgEE` | 01 |
+| 14 — OWEN BOOK IV LOCATORS — MIRROR (актуальное) | `driveMirrors.file14` | 01 |
 | Owen, *Works* (PD PDF) | `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` | 01 |
 | Calvin, *Institutes* (PD PDF) | `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` | 01 |
 | Goodwin, *Works* (PD PDF) | `1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M` | 01 |
@@ -98,6 +98,8 @@
 | 15 — CALVIN III.24 AND DORT II LOCATORS — MIRROR | `11OYvutqx9z-V5Vcesp3_NUw8Hgccgl47FQ43UkOUMoI` | 04 |
 | 16 — DORT HEAD II ENGLISH 1840 — PRIMARY TEXT (независимый свидетель) | `1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0` | 04 |
 | Westminster Confession of Faith (PD PDF) | `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` | 04 |
+
+**Почему у части строк вместо ID ключ реестра.** Зеркала `.md`-файлов перезаливаются каждый раз, когда меняется Git-канон, — то есть ID у них «летучий». Чтобы таблица не устаревала в тот же день, в ней стоит ключ `driveMirrors.fileNN` из реестра, а не сам ID. Жёстко прописаны только ID PD-книг (они не меняются) и тех доков, которые с 2026-10-09 не перезаливались. **Если файл менялся после 2026-10-09 — берите ID из реестра.**
 
 **Почему у этого файла нет собственного ID в таблице.** Строка о зеркале `07` лежит внутри самого `07`, поэтому любой перезалив делает её устаревшей в момент публикации — самоссылка. ID живого зеркала `07` — только в `driveMirrors.file07` реестра, и это единственный случай такого рода в таблице.
 
@@ -174,6 +176,9 @@
 (2) **Перезалиты три зеркала, отставшие от Git**: `00`, `12`, `14`. Они изменились в коммитах `52ace08` (свидетельства отцов у Оуэна переведены в `PRECEDENT_OF_READING` + `ORIGINAL_TEXT_HOLD`; страницы Оуэна по Тит. 2:11 и 1 Тим. 2:6) и `7895287` (разделение слоёв), то есть **после** волны 2026-10-08g, которой датировались прежние ID. Новые объекты получили новые ID; прежние `1IeTc1…` (`00`), `1wrBw5…` (`12`), `1en18-…` (`14`) перенесены в `99 — HOLD`, не в корзину.
 
 За пределами темы «Искупление» Drive **не тронут**: личные и посторонние файлы в корне «Мой диск», папки `01`/`02`/`03`/`04`/`90` бэкенда Research и файлы других проектов не переименовывались и не перемещались. Папка `09 — SYNTHESIS` (слой агента синтеза) оставлена как есть — её файлы уникальны и повторяют имена Git-канона.
+
+**Волна 2026-10-09b — Оуэн по 2 Пет. 2:1 и 3:9: verbatim Goold и машинная карта страниц.** Обе оси уже имели страницы Goold vol. X (348; 362–363) с волны 2026-10-08, но текст был пересказан по CCEL TXT — **другому** изданию, а смещение лист→страница проверялось колонтитулами «на глаз». Теперь: (1) verbatim взят из самого скана Goold 1850; (2) смещение −16 проверено по машинной карте IA `worksofjohnowe185010owen_page_numbers.json` (автоопределение печатных номеров по hOCR) на девяти опорах — 352→336, 359→343, **364→348**, **378→362**, **379→363**, 387→371, 411→395, 417→401, **559→543**. Четыре из них (336, 371, 395, 401) были найдены раньше независимым поиском по OCR, и карта их воспроизводит — значит 348 и 362–363 держатся с той же силой. Побочно найден **второй** локус Оуэна по 2 Пет. 3:9 — с. 543, трактат *A Dissertation on Divine Justice*, не *Death of Death*. Подробно — [`14` §2.6](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md), карточки **H3** и **H9** в [`12`](12_HARD_TEXTS_EXTENT_CARDS.md). Перезалиты зеркала `12`, `14` и реестр; прежние ID — в `99 — HOLD`.
+
 
 ### 5.1 Правила именования (волна 2026-10-09a)
 
