@@ -19,7 +19,11 @@ CCEL reader (Schaff Creeds III, Calvin Catholic Epistles) 2026-10-07 часто 
 - Официальные церкви, держащие Каноны (CRCNA и др.) — английский церковный текст.
 - Латынь — control против мемов.
 
-`C01` в [`05`](05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md): Schaff Latin **chunk 165** = Head II artt. I–IX + Rejectio I–VII. CRCNA EN — reading copy, не dump. Quote-safe Product EN **NO** до выбранного издания. Этот раздел — **карта статей** + латинские якоря в [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+`C01` в [`05`](05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md): Schaff Latin **chunk 165** = Head II artt. I–IX + Rejectio I–VII. CRCNA EN — reading copy, не dump. Этот раздел — **карта статей** + латинские якоря в [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+
+**Английское PD-издание выбрано (2026-10-07):** Scott 1841 (`articlesofsynodo1841syno`), Head II = **с. 282–286**, постранично в [`15` §B.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md). Schaff/CCEL даёт Дорт **только по-латыни** — проверено по чанкам 163–165. Quote-safe Product **всё равно NO**: OCR-выдачи без item-level сверки, серия под `PUBLICATION_HOLD`.
+
+**Второй английский PD-источник — теперь в Git:** [`16`](16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md) (перевод 1840 г., Wikisource-транскрипция), перенесён из W0-пака на Drive `01` (`10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md`, id `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo`). Даёт **полный английский текст Head II artt. I–IX**, но **без Rejection of Errors**. Разбор, рабочее правило и сличение двух переводов по латыни — [`15` §B.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md) и [`15` §B.6](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
 
 ### 1.1 Что синод делает (порядок важен)
 
@@ -82,28 +86,45 @@ II.9: это совет совершится; церковь собиралас�
 
 ### 2.2 Комментарий на 1 Ин. 2:2
 
-CCEL `calcom45` reader 2026-10-07 пуст (login). Не ретраить этот URL.
+CCEL `calcom45` reader 2026-10-07 пуст (login). Не ретраить этот URL — **но текст закрыт другой дорогой 2026-10-08**: PD-скан того же перевода, *Commentaries on the Catholic Epistles* (Calvin Translation Society, Edinburgh, 1855; пер. John Owen), IA `commentariesonca00calv`, `Possible copyright status: NOT_IN_COPYRIGHT`.
 
-Рабочая реконструкция по **открытым разборам** комментария (All Things New Covenant 2025; Uri Brito; не первоисточник):
+**Локаторы.** Печатная страница = лист скана − 6. Три независимые привязки смещения: колонтитул 1 Ин. «CHAP. II. 1 … 169» = л. 175; колонтитул 2 Пет. «CHAP. II. 1 … 391» = л. 397; колонтитул Иуд. «VER. 1 … 429» = л. 435; сверху — предметный указатель тома («scoffers will come, 414» = 2 Пет. 3:3, л. 420).
 
-1. Стих уверяет верных, что очищение простирается на всех, кто верой принимает евангелие.
-2. Вопрос: как тогда искуплены грехи всего мира?
-3. Отвергается, что спасение простирается на репробатов.
-4. «Common solution»: достаточно для всех, действенно для избранных — Кальвин признаёт, что различение **где-то** имеет силу, но **не считает его ответом на этот стих**.
-5. Предпочитает: «весь мир» = благо, общее всей Церкви; «все/весь» не про репробатов, а про имеющих уверовать и уже верных, рассеянных по миру.
-6. Полемика с Georgius: абсурд, будто умилостивление включает каждого индивида так, что смерть — за каждого в мире.
+| Что | Печатная страница | Лист скана |
+|---|---|---|
+| 1 Ин. 2:2, стих (EN + лат.) | **169** | 175 |
+| Начало разбора «And not for ours only» | **172** | 178 |
+| Ключевой абзац | **173** | 179 |
+
+**Verbatim (PD, с. 173):**
+
+> «Here a question may be raised, how have the sins of the whole world been expiated? I pass by the dotages of the fanatics, who under this pretence extend salvation to all the reprobate, and therefore to Satan himself. Such a monstrous thing deserves no refutation. They who seek to avoid this absurdity, have said that Christ suffered sufficiently for the whole world, but efficiently only for the elect. This solution has commonly prevailed in the schools. Though then I allow that what has been said is true, yet I deny that it is suitable to this passage; for the design of John was no other than to make this benefit common to the whole Church. Then under the word all or whole, he does not include the reprobate, but designates those who should believe as well as those who were then scattered through various parts of the world. For then is really made evident, as it is meet, the grace of Christ, when it is declared to be the only true salvation of the world.»
+
+Пересказ: вопрос ставит сам Кальвин; «простирающих спасение на всех репробатов» отводит без разбора; формулу «достаточно для всех, действенно для избранных» признаёт **истинной**, но **отказывается** прилагать её к этому стиху; «весь/всё» — не репробаты, а имеющие уверовать и уже рассеянные по миру; благодать Христа — единственное спасение мира.
+
+Реконструкция 2026-10-07 по вторичным разборам (пп. 1–6: уверение верных; вопрос об искуплении грехов всего мира; отвод «спасения репробатам»; признание формулы истинной, но не подходящей сюда; «весь мир» = общее благо Церкви / имеющие уверовать + рассеянные; полемика с Georgius) **подтвердилась полностью**. Теперь это не реконструкция, а страница первоисточника.
 
 Это **важно для отдела**: нельзя говорить «Кальвин решал 1 Ин. 2:2 дортской формулой». Он её знает и *откладывает* для этого локуса. Мюррей I.4 ближе к этническому / exclusive / abiding, чем к sufficient/efficient. Гилл — к язычникам + advocacy. Три particular-чтения, не одно.
 
-`R02` остаётся LEAD / not quote-safe, пока нет PD-страницы комментария (Drive Calvin = Institutes, не Catholic Epistles).
+`R02`: было `LEAD / not quote-safe` (не было PD-страницы) → **research quote-safe с локатором страницы** (1855, с. 169/172–173). `PUBLICATION_HOLD` на серии не снят: в Product — только после item-level решения владельца.
 
-### 2.3 2 Пет. 3:9 у Кальвина — уже в публичном OPC 1948
+### 2.3 2 Пет. 3:9 у Кальвина — OPC 1948 и PD-страница комментария (2026-10-08)
 
 Отчёт Murray/Stonehouse цитирует Кальвина после своей экзегезы 2 Пет. 3:9 (английский, на opc.org). Смысл цитаты (пересказ, не выдавать за наш перевод латинского): здесь нет речи о тайном совете, по которому репробаты назначены к гибели, а о воле, явленной в евангелии; Бог простирает руку всем без различия, но привлекает к Себе только избранных до создания мира.
 
 Это **стык H9 и II.5**: евангельская воля универсальна; decretive — нет. OPC majority берёт Кальвина как союзника по offer, не как доказательство unlimited atonement.
 
-2 Пет. 2:1 у Кальвина — отдельный locator (Catholic Epistles, тот же login-wall). Не выдумывать.
+**Первоисточник той же цитаты найден 2026-10-08** (IA `commentariesonca00calv`, CTS 1855, пер. John Owen; смещение то же, лист − 6). 2 Пет. 3:9 — **с. 419–420** (л. 425–426), verbatim:
+
+> «But it may be asked, If God wishes none to perish, why is it that so many do perish? To this my answer is, that no mention is here made of the hidden purpose of God, according to which the reprobate are doomed to their own ruin, but only of his will as made known to us in the gospel. For God there stretches forth his hand without a difference to all, but lays hold only of those, to lead them to himself, whom he has chosen before the foundation of the world.»
+
+Пересказ OPC 1948 (см. выше) **точен**: тайный совет не в виду, воля евангельская, рука всем без различия, хватает только избранных до создания мира. Теперь это не пересказ по чужой цитате, а страница PD-издания.
+
+**2 Пет. 2:1 у Кальвина — найден там же, с. 393** (л. 399), verbatim:
+
+> «Even denying the Lord that bought them. Though Christ may be denied in various ways, yet Peter, as I think, refers here to what is expressed by Jude, that is, when the grace of God is turned into lasciviousness; for Christ redeemed us, that he might have a people separated from all the pollutions of the world, and devoted to holiness and innocency. They, then, who throw off the bridle, and give themselves up to all kinds of licentiousness, are not unjustly said to deny Christ by whom they have been redeemed.»
+
+Что это даёт отделу: Кальвин читает «отвергающихся» как **отречение жизнью** (lasciviousness), а основание кладёт в цель искупления — «Христос искупил нас, чтобы иметь народ, отделённый от скверн мира». Он **не** говорит, что покупка была мнимой, и **не** применяет здесь sufficient/efficient; локус читается как морально-экклезиологическое предупреждение, а не как доказательство объёма. Это отдельное чтение 2 Пет. 2:1 рядом с Оуэном (`14`) — не склеивать.
 
 ### 2.4 Ин. 3:16 / Ис. 53 / Евр. 2
 
@@ -148,7 +169,7 @@ Packer 1959 intro (M02) — лучший педагогический мост; 
 
 ## 4. Вестминстер / 1689 — короткий control
 
-WCF 8 (Drive `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4`, locator unchecked):
+WCF 8 — текст теперь **проверен по PD-изданию** (Schaff/CCEL chunks **182–183**, EN+LA; подробно в [`15` §D](15_CALVIN_III24_AND_DORT_II_LOCATORS.md)). Drive `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` = скан без текстового слоя (`read_file_text` → `empty`), его страница по-прежнему `unchecked`:
 
 - 8.5: Господь Иисус, совершенным послушанием и жертвой, раз и навсегда предложенной, приобрёл примирение и вечное наследие **для всех тех, кого Отец дал Ему**.
 - 8.6: добродетель искупления сообщалась и ветхозаветным святым.
@@ -182,7 +203,10 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 
 Закрыто:
 
-- Дорт II как **карта статей** (1–9) и Rejection I–VII (CRCNA reading copy, chunks 3–4) **плюс** Schaff Latin chunk 165. Запрет читать II.3 без II.5–8. [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+- Дорт II как **карта статей** (1–9) и Rejection I–VII (CRCNA reading copy, chunks 3–4) **плюс** Schaff Latin chunk 165 **плюс** Scott 1841 EN pp. 282–286. Запрет читать II.3 без II.5–8. [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+- **Английское PD-издание Дорта выбрано и сличено** (Scott 1841). Есть EN с постраничным локатором (**282–292**), полный текст артикулов и Rejectio — [`15` §B.5](15_CALVIN_III24_AND_DORT_II_LOCATORS.md); `accessState = transcribed-from-OCR + collated` ([`15` §B.6](15_CALVIN_III24_AND_DORT_II_LOCATORS.md)): вторая OCR-выдача того же скана, латинский оригинал, второй английский перевод (1840 г., `16`). Известное следствие сличения: **Rejectio IV у Скотта сокращена**, полный текст — по латыни.
+- WCF 8 как **текст с локатором**: Schaff/CCEL chunks 182–183, английский и латинский, постатейно (8.1 / 8.5 / 8.6 / 8.8).
+- **Rejectio I–VII по-английски с страницами**: Scott 1841, с. 287–292 (I — 287, II — 288, III — 288–289, IV — 289, V — 290, VI — 291–292, VII — 292), полный текст в [`15` §B.5](15_CALVIN_III24_AND_DORT_II_LOCATORS.md). До этой волны по-английски было только начало Rejectio, содержание держалось на латыни Schaff 165. Rejectio VI (равное намерение / impetration–application) и VII (карикатура «избранным не нужно») теперь доступны по-английски — это и есть обе границы §1.2–1.3.
 - Кальвин 1 Ин. 2:2 как *известная* позиция комментария, с честным «не первоисточник в руках».
 - Кальвин 2 Пет. 3:9 через публичный OPC-отчёт.
 - Оуэн как обязательный следующий ingest, не как уже процитированный.
@@ -194,6 +218,8 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 - Calvin Catholic Epistles (1 Ин. 2:2; 2 Пет. 2:1);
 - Owen Goold vol. 10 / CCEL PDF Book IV;
 - Schaff page-numbers Дорта в нашем Drive `04`;
-- WCF 8 page в Drive PDF.
+- **печатная страница** WCF 8 в томе Шаффа (в TXT пагинации нет) и **страница нашего Drive PDF** WCF (скан без текстового слоя, извлечение невозможно) — текст при этом локализован по чанкам 182–183;
+- **сверка транскрипции `15` §B.5 с изображением страницы**: текст набран с OCR-выдачи вручную, артефакты распознавания сохранены как в выдаче; до item-level сверки цитировать в Product нельзя;
+- **печатная страница тома Schaff по Дорту** (английская ось закрыта Scott 1841 с страницами, латинская — chunk 165; страница именно тома Schaff не сверена).
 
 Не делать: Product HTML; пиратский Packer 1959; объявлять P1 победителем потому что «Дорт сказал».

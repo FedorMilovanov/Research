@@ -18,7 +18,65 @@
 | CCEL HTML reader | login-wall 2026-10-07 (`deathofdeath.i.html`) — не ретраить |
 | Print basis шапки CCEL | Banner of Truth 1967. **Не цитировать** Packer 1959 intro, если он в этом файле. Тело Оуэна и Goold prefatory note XIX в. — PD |
 | Drive *Works* PDF | `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` (42 MB). Extraction cap 25 MB → **страница Goold в этом PDF по-прежнему `unchecked`** |
-| Quote-safe для Product | **NO** до (a) Goold vol/page **или** (b) явного item-level решения по CCEL TXT + номер главы |
+| **Печатная страница (закрыто 2026-10-07, вторая волна)** | **Goold, *The Works of John Owen*, vol. X** (перепечатка Banner of Truth, 624 с., ISBN 9780851510644): полная карта глав с страницами — см. §0.1. Страница из *нашего* 42 MB PDF по-прежнему не извлекаема; страница по *изданию* теперь есть |
+| **Страница внутри главы (закрыто 2026-10-07, третья волна)** | Скан **Goold, vol. X (London: Johnstone and Hunter, 1850)** — IA `worksofjohnowe185010owen`, 650 листов, `NOT_IN_COPYRIGHT`, `page_number_confidence: 100`. Страница **абзаца**, а не только начала главы: см. §0.2. Совпадение начал глав (294 / 316 / 330 / 343 / 359 / 368 / 404, Testimonies 422) с оглавлением тома X означает, что перепечатка Banner воспроизводит пагинацию Goold 1850–53 |
+| Quote-safe для Product | **NO** до (a) Goold vol/page **или** (b) явного item-level решения по CCEL TXT + номер главы. Пункт (a) **закрыт на уровне абзаца** (vol. X + страница обсуждения локуса). `PUBLICATION_HOLD` и item-level решение остаются |
+
+### 0.1 Страницы Goold / Banner, vol. X
+
+Источник: публичное оглавление тома X на странице издателя (banneroftruth.org, «CONTENTS OF VOLUME X»), сверенное с заголовками глав в CCEL TXT. Нумерация CCEL глав в Book IV **совпадает** с этим оглавлением по названиям (см. §2.2 и §2.3), поэтому отождествление глав надёжно.
+
+| Глава | С. | Что там |
+|---|---|---|
+| *A Display of Arminianism* (I–XIV) | 2–129 | — |
+| Death of Death: предисловие редактора / посвящение / attestations / «To the Reader» | 140 / 145 / 147 / 149 | — |
+| Book I (I–VIII) | 157–199 | конец, замысел, действие Отца/Сына/Духа, обличение+ходатайство как одно средство |
+| Book II (I–V) | 200–235 | **IV. «Of the distinction of impetration and application» — с. 222**; V. «Of application and impetration» — 232 |
+| Book III (I–XI) | 236–290 | аргументы против всеобщности: искупление 258, примирение 261, удовлетворение 265, заслуга 286 |
+| **Book IV, III** | **330** | «An unfolding of the remaining texts of Scripture produced for the confirmation of the first general argument for universal redemption» — голова 1, тексты о *мире* (1 Ин. 2:2; Ин. 6:51; 2 Кор. 5:19) |
+| **Book IV, IV** | **343** | «Answer to the second general argument for the universality of redemption» — голова 2, тексты *all / every*: **1 Тим. 2:4, 6**; 2 Пет. 3:9; Евр. 2:9; 2 Кор. 5:14–15; 1 Кор. 15:22; Рим. 5:18 (CCEL chunks 80–84) |
+| **Book IV, V** | **359** | «The last argument from Scripture answered» — голова 3, купленные гибнущие: Рим. 14:15; 1 Кор. 8:11; **2 Пет. 2:1**; Евр. 10:29 (CCEL chunks 86–89) |
+| Book IV, VI / VII | 368 / 404 | ответ гл. XX «The Universality of God's Free Grace» (Мур) / прочие возражения |
+| Testimonies of the Ancients / Appendix (Sprigge) | 422 / 425 | — |
+
+**Как это стыкуется с корпусом:** Owen Book II.IV (с. 222) — та же ось, что Rejectio VI Дорта; Book IV.IV (с. 343) закрывает 1 Тим. 2:4–6; Book IV.V (с. 359) закрывает 2 Пет. 2:1.
+
+**Чего это не даёт:** (1) ~~точной страницы внутри главы~~ — снято, см. §0.2; (2) пагинации издания Goold **1826** против перепечатки Banner 1967: том X издания 1826 на IA (`worksofjohnowe10owen`) — это *A Display of Arminianism* и другие трактаты, *Death of Death* в нём нет (поиск `Arminianism`, `Salus electorum` — ноль совпадений), поэтому сличать не с чем; том X издания 1850–53 сличен и совпал; (3) права цитировать — `PUBLICATION_HOLD` и item-level решение остаются.
+
+### 0.2 Страницы внутри глав: скан Goold, vol. X (1850)
+
+| Локус | Печатная с. | Глава (начало) |
+|---|---|---|
+| impetration / application — заголовок главы | **222** | Book II, IV |
+| Ин. 3:16 | **319** | Book IV, II (316) |
+| 1 Ин. 2:2 | **330** (ответ и Августин — 332) | Book IV, III (330) |
+| 1 Тим. 2:4 («God will have all men to be saved», разбор «все = некоторые из всех родов») | **343** | Book IV, IV (343) |
+| 2 Пет. 3:9 («not willing that any should perish» — «us-ward») | **348** | Book IV, IV |
+| Евр. 2:9 («taste death for every man», ὑπέρ = commutation) | **349** | Book IV, IV |
+| 2 Кор. 5:14–15 | **350–352** | Book IV, IV |
+| 1 Кор. 15:22 | **352** | Book IV, IV |
+| Рим. 5:18 | **353** | Book IV, IV |
+| Рим. 14:15 | **360** | Book IV, V (359) |
+| 1 Кор. 8:11 | **361** | Book IV, V |
+| **2 Пет. 2:1** | **362–363** | Book IV, V |
+| Евр. 10:29 | **364–365** | Book IV, V |
+| Сводка возражения «Proof 16» (Иуд. 4; Евр. 10:29; 2 Пет. 2:1; 1 Кор. 8:11) | **401** | Book IV, VI (368) |
+| Августин, «totus mundus est ecclesia» | **424** | Testimonies of the Ancients (422) |
+| 1 Тим. 2:6 — слово *all*: четыре кандидата на «всех» («all believers, or all the elect, or some of all sorts, or all of every sort») | **307** | Book II (200–235), разбор слова *all* |
+| 1 Тим. 2:6 — «and so we believe that he died for all»: «все» = церковь / избранные / овцы / некоторые из всех родов | **371** | Book IV, VI (368) |
+| **Тит. 2:11** — «all men» как *livery of believers*: «верующие называются … „всеми человеками“, Тит. ii. 11» | **336** | Book IV, III (330), внутри разбора 1 Ин. 2:2 |
+| **Тит. 2:11, 13** — «grace that certainly brings salvation» + 2:14 «peculiar people» как immediate end oblations | **395** | Book IV, VI (368), ответ Муру, Arg. 13 |
+| Оуэн, «totus mundus ex toto mundo» — церковь как целое, взятое из целого мира | **403** | Book IV, ответ на proof о «common salvation» (Тит. 1:4) |
+| **Амвросий, de Fide ad Gratianum** — «de toto mundo totus mundus liberatus, et de omnibus hominibus omnes homines videantur assumpti» | **423** | Testimonies of the Ancients (422) |
+| **Августин, Tract. lxxxvii in Johan.** — «Totus ergo mundus est ecclesia, et totus mundus odit ecclesiam … de mundo electus est inimico, damnato, contaminato» | **424** | Testimonies of the Ancients (422) |
+| **Проспер, Resp. ad Capit. Gall. cap. 9** — «pro totius mundi redemptione crucifixus … potest tamen dici pro his tantum crucifixus quibus mors ipsius profuit» | **424** | Testimonies of the Ancients (422) |
+
+**Как получено.** Поиск фраз по OCR скана (`…/fulltext/inside.php?item_id=worksofjohnowe185010owen&doc=…&path=/30/items/…`): `then were all dead` (2 Кор. 5:14), `taste death for every man` (Евр. 2:9), `for whom Christ died` (Рим. 14:15 / 1 Кор. 8:11), `bought them` (2 Пет. 2:1), `trodden under foot` (Евр. 10:29), `not willing that any should perish` (2 Пет. 3:9), `not for ours only` (1 Ин. 2:2), `God so loved the world` (Ин. 3:16), `impetration` (Book II.IV). Четвёртая волна (2026-10-08): `all men, Tit. ii. 11` (336), `Tit. ii. 11, 13` (395), `gave himself a ransom for all` (307, 371), `God will have all men to be saved` (343).
+Пятая волна (2026-10-08): `mundus` — один термин дал сразу пять мест, включая три свидетельства отцов (Амвросий 423, Августин 424, Проспер 424) и собственное выражение Оуэна `totus mundus ex toto mundo` (403). **Точная фраза `totus mundus est ecclesia` по этому скану не ищется: OCR даёт `ecciesia`.** Искать надо по `mundus`.
+
+**Смещение лист → страница: −16.** Проверено трижды: колонтитул «294 THE DEATH OF DEATH [BOOK IV.» = лист 310; «344 …» = лист 360; оглавление тома (лист 12): «IV. — Of the distinction of impetration and application … 222» = лист 238. **Четвёртая волна 2026-10-08 подтвердила смещение массово:** колонтитулы идут по листам без разрывов — «306 …» = 322, «314 …» = 330, «320 …» = 336, «336 …» = 352, «350 …» = 366; другой трактат тома — «OF THE DEATH OF CHRIST. 89» = лист 105 (105 − 16 = 89). Расхождений с автоопределением IA (`worksofjohnowe185010owen_page_numbers.json`) нет.
+
+**Ограничения.** (1) Уровень — абзац, не строка: указана страница, на которой стоит обсуждение локуса. (2) OCR — ABBYY FineReader 8, неровный: фраза `constraineth us` не индексируется вовсе, поэтому 2 Кор. 5:14 привязан по `then were all dead`; короткие фразы надёжнее длинных. (3) Это не ingest трактата в Git: Git держит локаторы.
 
 Это **не** ingest полного трактата в Git. Git держит локаторы. Drive `01` — зеркало этого файла, не 42 MB.
 
@@ -115,6 +173,150 @@ Competing: P5 скажет, что он сужает «мир» системно
 **Евр. 10:29** (chunks 88–89, тот же Chapter V): commination на supposition (`suppositio nil ponit in esse`); «освящён кровью завета» = внешнее/крещальное/храмовое *hagiazo*, не внутреннее освящение избранных. Если читать positive + true saints may perish — тогда вера не плод избрания и святые падают finally: это старые арминиане, не «новые universalists» Оуэна. Не превращать commination в proof-text universal atonement.
 
 ---
+
+### 2.4 Четвёртая волна (2026-10-08): Тит. 2:11 и 1 Тим. 2:6 — локусы, которых в `14` не было
+
+**Почему это важно.** Карточка **H10** (Тит. 2:11) была заведена в `12` 2026-10-08 с одним первоисточником — Кальвином. Оуэн по Тит. 2:11 в каноне отсутствовал полностью; по 1 Тим. 2:6 был только пересказ chunk 81. Ниже — страницы Goold vol. X и verbatim.
+
+Смещение лист → страница **−16**, подтверждено на этот раз массово (см. §0.2).
+
+#### 1. Тит. 2:11, с. 336 — «все человеки» как наименование верующих
+
+Контекст: **Book IV, III (330)**, внутри разбора 1 Ин. 2:2 — Оуэн доказывает, что «весь мир» не шире выражений «все народы», «вся плоть», «все человеки», и что все эти выражения обозначают believers of all sorts. Verbatim:
+
+> Secondly, The whole world can signify no more than all nations, all the families of the earth, all flesh, all men, all the ends of the world. These surely are expressions equivalent unto, and as comprehensive of particulars as the whole world; but now all these expressions we find frequently to bear out **believers only**, but as of all sorts, and throughout the world. … We may instance in some places: "All the ends of the earth have seen the salvation of our God," Ps. xcviii. 3; "All the ends of the world shall remember and turn unto the Lord…" Ps. xxii. 27; "All nations shall serve thee," Ps. lxxii. 11; — which general expressions do yet denote no more but only the believers of all the several nations of the world … What a conquest should we have had proclaimed, if it had been anywhere affirmed that Christ died for all flesh, all nations, all kindreds, etc.! which yet are but **liveries of believers**, though garments as wide and large as this expression, the whole world. **Believers are called "all nations," Isa. ii. 2, Ixvi. 18; yea, "all men," Tit. ii. 11: for to them alone the salvation-bringing grace of God is manifest.** If they, then, the children of God, be, as is apparent in the Scripture phrase, all flesh, all nations, all kindreds, all the ends of the world, all the ends of the earth, all men, why not also the whole world?
+
+**Чтение:** «все человеки» в Тит. 2:11 — лексическое наименование верующих, а не подсчёт адресатов. Механизм тот же, что у Оуэна для «мира» в 1 Ин. 2:2.
+
+#### 2. Тит. 2:11, 13 и 3:4–5, с. 395 — благодать, «которая несомненно приносит спасение»
+
+Контекст: **Book IV, VI (368)**, ответ Томасу Мору, *The Universality of God's Free Grace*, глава XX. Оглавление тома (лист 160) перечисляет аргументы Мура; **Arg. 13 — «From Tit. ii. 11, 13, iii. 4, 5, etc.»** Verbatim:
+
+> Secondly, There is nothing of this common love to all in the places urged; for, —
+> **1.** The "grace" mentioned, **Tit. ii. 11, 13**, is **the grace that certainly brings salvation**, which that common love doth not, and was the cause of sending Christ, "**that he might redeem us from all iniquity, and purify to himself a peculiar people**, zealous of good works;" where our redemption and sanctification are asserted to be **the immediate end of the oblation of Jesus Christ**; which how destructive it is to universal redemption hath been formerly declared.
+> **2.** So also is that "love and kindness" mentioned, **chap. iii. 4, 5**, such as by which we receive the "washing of regeneration and renewing of the Holy Ghost," verse 5; and justification, and adoption to heirship of eternal life, verse 7; — **which, whether it be a common or a peculiar love, let all men judge.**
+
+**Чтение:** Оуэн строит аргумент ровно на том узле, который в H10 назван guard'ом — **2:14 «народ особенный» стоит в том же абзаце, что 2:11**, и потому «все» в 2:11 не может быть каждым человеком без остатка: благодать, о которой говорит Павел, — та, что «несомненно приносит спасение» и имеет целью очистить Себе народ. Плюс 3:4–7 (омовение, оправдание, усыновление) как та же «особенная» любовь.
+
+#### 3. 1 Тим. 2:6, с. 307 — «кто эти все» названо спорным самим Оуэном
+
+Контекст: **Book II**, разбор слова *all* (том: 200–235). Verbatim:
+
+> Now, as we have said of the word world, so we may of the word all, wherein much strength is placed, and many causeless boastings are raised from it. That it is nowhere affirmed in the Scripture that Christ died for all men, or gave himself a ransom for all men, much less for all and every man, we have before declared. That he "gave himself a ransom for all" is expressly affirmed, **1 Tim. ii. 6**. But now, **who this all should be, whether all believers, or all the elect, or some of all sorts, or all of every sort, is in debate.** Our adversaries affirm the last; and the main reason they bring to assert their interpretation is from the importance of the word itself: for, that the circumstances of the place, the analogy of faith, and other helps for exposition, do not at all favour their gloss, we shall show when we come to the particular places urged.
+
+**Почему это стоит в каноне:** сам Оуэн фиксирует **четыре** конкурирующих значения «всех» и признаёт вопрос открытым на уровне слова. Это снимает соблазн цитировать «Оуэн сказал: все = some of all sorts» как простую формулу: у него есть и «all the elect».
+
+#### 4. 1 Тим. 2:6, с. 371 — «итак мы веруем, что Он умер за всех»
+
+Контекст: **Book IV, VI (368)**, разбор «Proof» Мура, где перечислены «всякий человек» (Евр. 2:9), «выкуп за всех» (1 Тим. 2:6), «умилостивление за грехи всего мира» (1 Ин. 2:2). Verbatim:
+
+> …we do not affirm that the Scripture doth, in any place, lay an exception or restraint upon those persons for whom Christ is said to die, as though in one place it should be affirmed he died for all men, and in another some exception against it, as though some of those all men were excluded, — which were to feign a repugnancy and contradiction in the word of God; only, we say, **one place of Scripture interprets another**, and declares that sense which before in one place was ambiguous and doubtful. For instance: when the Scripture showeth that Christ died or gave himself a ransom for all, **we believe it**; and when, in another place, he declares that all to be his church, his elect, his sheep, all believers, — some of all sorts, out of all kindreds, and nations, and tongues, under heaven; **this is not to lay an exception or restraint upon what was said of all before, but only to declare that the all for which he gave himself for a ransom were all his church, all his elect, all his sheep, some of all sorts: and so we believe that he died for all.**
+
+**Почему это стоит в каноне:** это самая сильная формулировка Оуэна против подозрения, что particularism «добавляет исключение к Писанию». Он настаивает: исключения нет, «все» остаётся «всеми», но объём определяется другим местом Писания. Цитировать без этой оговорки — выдавать Оуэна за того, кто вычитал из текста часть.
+
+#### 5. Начало разбора 1 Тим. 2:4, 6 — с. 343
+
+> **1.** The first and chief place is, **1 Tim. ii. 4, 6**, "God will have all men to be saved, and come to the knowledge of the truth. … Christ gave himself a ransom for all, to be testified in due time." Hence they draw this argument, Rem. Act. Synod: — "If God will have all men to be saved, then Christ died for all; but God will have all men to be saved, and come to the knowledge of the truth: therefore, Christ died for all men."
+
+(С. 343 = начало **Book IV, IV**; совпадает с §0.2.)
+
+---
+
+### 2.5 Пятая волна (2026-10-08): Testimonies of the Ancients — страницы и verbatim
+
+**Почему это важно.** В §0.2 строка «Августин, „totus mundus est ecclesia“ — 424» была без verbatim. Теперь она закрыта: свидетельство найдено, страница подтверждена колонтитулом, текст выписан. Попутно нашлось место, которого в каноне не было вовсе — **Проспер Аквитанский**.
+
+**Смещение −16 подтверждено самими колонтитулами раздела:** «SOME FEW TESTIMONIES OF THE ANCIENTS. **423**» = лист 439; «**424** SOME FEW TESTIMONIES OF THE ANCIENTS.» = лист 440. Раздел начинается на 422 (лист 438, по оглавлению тома).
+
+**Методическая пометка — обязательна к любой цитате из этого раздела.** Все три отца дошли до нас **через антологию Оуэна**, а не по их собственным изданиям: это florilegium полемиста XVII в., который отбирал цитаты под свой тезис. Поэтому каждое место получает две разные оценки, и их нельзя смешивать:
+
+| Что | Статус |
+|---|---|
+| **Страница Оуэна** (Goold vol. X, 423–424) | **`VERIFIED`** — подтверждена колонтитулами раздела |
+| **Текст отца по критическому изданию** | **`ORIGINAL_TEXT_HOLD`** — не сверен. Латынь ниже — это латынь в передаче Оуэна, не по PL / CSEL / CCSL |
+| **Связь места с нашими карточками** | **`PRECEDENT_OF_READING`** — по правилу под-корпуса `fathers/` §4: автор XVII в. и отец стоят на том же тексте, но не являются одной позицией |
+
+Сверкой по оригиналу занимается под-корпус [`fathers/`](fathers/10_ORIGINAL_LANGUAGE_VERIFICATION.md) (ветка агента 3, PR #211). Пока он не закрыл `ORIGINAL_TEXT_HOLD`, эти три места нельзя подавать как «Августин / Проспер / Амвросий said» без оговорки «в цитировании Оуэна, 1647/1850».
+
+**OCR-предупреждение (не терять):** скан даёт `ecciesia` вместо `ecclesia`, `mu7ido` вместо `mundo`, `sjoeciaZ` вместо `specialis`, `tJic` вместо `the`, `contaiuinato` вместо `contaminato`. Ниже латинский текст приведён с восстановленными очевидными буквами; английский перевод Оуэна — как в скане, с пометой о сбоях. Фраза `totus mundus est ecclesia` поиском **не находится** — искать надо по `mundus`.
+
+#### 1. Амвросий, *de Fide ad Gratianum* — с. 423
+
+> **Ambr. de Fide ad Gratianum:** — "Habet populus Dei plenitudinem suam. In electis enim et praescitis, atque ab omnium generalitate discretis, specialis quaedam censetur universitas, ut de toto mundo totus mundus liberatus, et de omnibus hominibus omnes homines videantur assumpti." —
+> *"The people of God hath its own fulness. In the elect and foreknown, distinguished from the generality of all, there is accounted a certain special universality; so that **the whole world seems to be delivered from the whole world, and all men to be taken out of all men**."*
+
+#### 2. Августин, *Tract. lxxxvii. in Johan.* — с. 424 (начало — с. 423)
+
+> **Idem, Tract. lxxxvii. in Johan.:** — "Ecclesiam plerumque etiam ipsam mundi nomine appellat; sicut est illud, 'Deus erat in Christo mundum reconcilians sibi;' itemque illud, 'Non venit Filius hominis ut judicet mundum, sed ut salvetur mundus per ipsum;' et in epistola sua Johannes ait, 'Advocatum habemus ad Patrem, Jesum Christum justum, et ipse propitiator est peccatorum nostrorum, non tantum nostrorum sed etiam totius mundi.' **Totus ergo mundus est ecclesia, et totus mundus odit ecclesiam. Mundus igitur odit mundum; inimicus reconciliatum, damnatus salvatum, inquinatus mundatum.** Sed **iste mundus quem Deus in Christo reconciliat sibi, et qui per Christum salvatur, de mundo electus est inimico, damnato, contaminato**." —
+> *"He often calleth the church itself by the name of the world; as in that, 'God was in Christ reconciling the world unto himself;' and that, 'The Son of man came not to condemn the world, but that the world through him might be saved.' And John in his epistle saith, 'We have an Advocate, and he is the propitiation for [our sins, and not for ours only, but also for] the sins of the whole world.' **The whole world, therefore, is the church, and the world hateth the church. The world, then, hateth the world; that which is at enmity, the reconciled; the condemned, the saved; the polluted, the cleansed world.** And **that world which God in Christ reconcileth to himself, and which is saved by Christ, is chosen out of the opposite, condemned, defiled world**."*
+
+**Чтение:** Августин делает ровно то, что Оуэн приписывает Павлу в Тит. 2:11 (с. 336): «весь мир» в 1 Ин. 2:2 — **наименование церкви**, а не подсчёт адресатов. И сразу оговаривается, что этот мир «избран из мира враждебного» — то есть «весь мир» искупленный ⊂ «весь мир» погибающий. Это ключевой аргумент H1 (1 Ин. 2:2), и теперь у него есть PD-страница и verbatim на двух языках.
+
+#### 3. Проспер Аквитанский, *Respon. ad Capit. Gall. cap. 9* — с. 424 — **новое место для канона**
+
+> **IX. Prosper [a.d. 440], Respon. ad Capit. Gall. cap. ix.:** — "Non est crucifixus in Christo qui non est membrum corporis Christi. **Cum itaque dicatur Salvator pro totius mundi redemptione crucifixus, propter veram humanae naturae susceptionem, potest tamen dici pro his tantum crucifixus quibus mors ipsius profuit.** Diversa ab istis sors eorum est qui inter illos censentur de quibus dicitur, 'Mundus enim non cognovit.'" —
+> *"He is not crucified with Christ who is not a member of the body of Christ. When, therefore, our Saviour is said to be **crucified for the redemption of the whole world, because of his true assumption of the human nature**, yet **may he be said to be crucified only for them unto whom his death was profitable**. Diverse from these is their lot who are reckoned amongst them of whom it is said, 'The world knew him not.'"*
+
+**Почему это важнее остальных трёх.** Проспер **не отрицает** выражение «распят за искупление всего мира» — он принимает его и объясняет: оно истинно *propter veram humanae naturae susceptionem* (по причине истинного восприятия человеческой природы), но по действенности — *pro his tantum … quibus mors ipsius profuit*. Это формула, которой в корпусе не было: различение **основания выражения** (природа, взятая Христом, общая всем) и **объёма действенности**. Она снимает ложную дилемму «или все, или не все» и прямо ложится на H1 (1 Ин. 2:2) и на Тит. 2:11.
+
+Порядок в списке у Оуэна: Амвросий — VIII (с. 423), Августин — «Idem» (продолжение, с. 423–424), Проспер — **IX** (с. 424). Номера в квадратных скобках в скане (`Prosper [a.d. 440]`) — это годы, а не нумерация; IX — порядковый номер свидетельства.
+
+#### Что это меняет в слое `fathers/` (ветка агента 3, PR #211)
+
+Сверено с их файлами на 2026-10-08:
+
+- **`08_UNIVERSAL_TEXTS_IN_THE_FATHERS.md`** уже держит Августина, *Tract. LXXXVII.2*: «The whole world then is the Church, and yet the whole world hateth the Church» — по NPNF (`NPNF1_07.txt:L29105–29125`), то есть **по английскому переводу**. Здесь — **латынь того же места** и печатная страница PD-издания. У них в `10_ORIGINAL_LANGUAGE_VERIFICATION.md` по Августину прямо стоит: «гомоилии на Ин. — **нет**». Этот пункт теперь закрываем мы, но с оговоркой выше: латынь по изданию Оуэна, не по критическому.
+- **`05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md`** — **Проспера в под-корпусе нет вовсе** (проверено поиском `Prosper` по всем файлам ветки: ноль вхождений). Наш локус закрывает лакуну: Проспер Аквитанский, *Respon. ad Capit. Gall.* cap. 9, ок. 440 г., и это самый ранний из найденных в корпусе текстов, где оборот «распят за искупление всего мира» разбирается **раздельно по основанию и по действенности**.
+- **Амвросий** в их `09_SILENCES_AND_FALSE_FRIENDS.md` фигурирует только как `FALSE_FRIEND` F-18 (*redemptio captivorum* = милостыня, не сотериология). Наш Амвросий — *de Fide ad Gratianum*, другой текст и другой жанр; с F-18 не конфликтует, но и не снимает его.
+- **Гипотеза для проверки, не утверждение:** они привязывают этот трактат Августина к Ин. 15:17–19; выписанный Оуэном фрагмент опирается на 2 Кор. 5:19, Ин. 3:17 и 1 Ин. 2:2. Одно другому не противоречит (трактат широкий), но сверять надо по тексту гомилии, а не по нашему фрагменту.
+
+Передано в PR #211 комментарием; в наш файл вынесено как `PRECEDENT_OF_READING` + `ORIGINAL_TEXT_HOLD`.
+
+---
+
+### 2.6 Шестая волна (2026-10-09): 2 Пет. 3:9 и 2 Пет. 2:1 — verbatim Goold и машинная карта страниц
+
+**Что было и чего не было.** В §0.2 у обоих локусов уже стояли страницы (348; 362–363), найденные поиском по OCR. Не хватало двух вещей: текст был пересказан по **CCEL TXT — другому изданию, не Goold**, и смещение −16 проверялось колонтитулами «на глаз». Ниже — verbatim именно Goold vol. X и машинная проверка смещения.
+
+**Машинная карта лист → страница.** IA ведёт для этого скана `worksofjohnowe185010owen_page_numbers.json` — автоопределение печатных номеров по hOCR, `confidence: 100` на уровне файла. Выписанные опоры:
+
+| Лист | Печатная с. | confidence | Что там |
+|---|---|---|---|
+| 352 | **336** | — | Тит. 2:11, «all men» (волна 4) |
+| 359 | **343** | 100 | начало Book IV, IV — 1 Тим. 2:4 |
+| **364** | **348** | — | **2 Пет. 3:9** |
+| **378** | **362** | — | **2 Пет. 2:1** — три «uncertain» |
+| **379** | **363** | 100 | **2 Пет. 2:1** — ἀγοράζω ≠ 1 Кор. 6:20 |
+| 387 | **371** | 100 | 1 Тим. 2:6, «and so we believe that he died for all» (волна 4) |
+| 411 | **395** | 100 | Тит. 2:11, 13 (волна 4) |
+| 417 | **401** | 100 | Proof 16 (Иуд. 4; Евр. 10:29; 2 Пет. 2:1; 1 Кор. 8:11) |
+| **559** | **543** | 100 | **2 Пет. 3:9 — но не в *Death of Death*** |
+
+Четыре опоры (336, 371, 395, 401) были получены раньше **независимо** — поиском по OCR; карта подтверждает на них то же смещение −16. Значит на 348 и 362–363 ему можно верить с той же силой. **Метод зафиксирован на этой волне:** смещение проверяется по машинной карте, колонтитулы остаются контрольной проверкой, а не основным доказательством.
+
+**Verbatim — 2 Пет. 3:9, с. 348 (лист 364, Book IV, IV):**
+
+> Ans. Many words need not be spent in answer to this objection, wrested from the misunderstanding and palpable corrupting of the sense of these words of the apostle. That indefinite and general expressions are to be interpreted in an answerable proportion to the things whereof they are affirmed, is a rule in the opening of the Scripture. See, then, of whom the apostle is here speaking. "The Lord," saith he, "is long-suffering to us-ward, not willing that any should perish." Will not common sense teach us that *us* is to be repeated in both the following clauses, to make them up complete and full, — namely, "Not willing that any **of us** should perish, but that **all of us** should come to repentance?" Now, who are these of whom the apostle speaks, to whom he writes? Such as had received "great and precious promises," chap. i. 4, whom he calls "beloved," chap. iii. 1; whom he opposeth to the "scoffers" of the "last days," verse 3; to whom the Lord hath respect in the disposal of these days; who are said to be "elect," Matt. xxiv. 22. Now, truly, to argue that because God would have none of those to perish, but all of them to come to repentance, therefore he hath the same will and mind towards all and every one in the world (even those to whom he never makes known his will, nor ever calls to repentance, if they never once hear of his way of salvation), comes not much short of extreme madness and folly. **Neither is it of any weight to the contrary, that they were not all elect to whom Peter wrote: for in the judgment of charity he esteemed them so**, desiring them "to give all diligence to make their calling and election sure," chap. i. 10 …
+
+*OCR:* `any of ws` → *of us*; `chap, iii. ]` → *chap. iii. 1*. Правки только там, где чтение однозначно.
+
+**Verbatim — 2 Пет. 2:1, с. 362 (лист 378, Book IV, V):**
+
+> The next place is much insisted on, — namely, 2 Pet. ii. 1, "There shall be false teachers, denying the Lord that bought them, and bringing upon themselves swift destruction." All things here, as to any proof of the business in hand, are exceedingly dark, uncertain, and doubtful. **Uncertain**, that by the Lord is meant the Lord Christ, the word in the original being δεσπότης, seldom or never ascribed to him; **uncertain**, whether the purchase or buying of these false teachers refer to the eternal redemption by the blood of Christ, or a deliverance by God's goodness from the defilement of the world in idolatry, or the like, by the knowledge of the truth, — which last the text expressly affirms; **uncertain**, whether the apostle speaketh of this purchase according to the reality of the thing, or according to their apprehension and their profession.
+
+**Verbatim — 2 Пет. 2:1, с. 363 (лист 379):**
+
+> [Secondly,] But suppose he should, it is most uncertain that by buying of these false teachers is meant his purchasing of them with the ransom of his blood; for, — **First**, The apostle insisteth on a comparison with the times of the Old Testament, and the false prophets that were then amongst the people, backing his assertion with divers examples out of the Old Testament in the whole chapter following. Now, the word ἀγοράζω, here used, signifieth primarily the buying of things; translatitiously, the redemption of persons; — and the word [`не читается в OCR`] in the Old Testament, answering thereunto, signifieth any deliverance, as Deut. vii. 8, xv. 15, Jer. xv. 21, with innumerable other places: and, therefore, some such deliverance is here only intimated. **Secondly**, Because here is no mention of blood, death, price, or offering of Jesus Christ, as in other places, where proper redemption is treated on; especially, some such expression is added where the word ἀγοράζω is used to express it, as 1 Cor. vi. 20, Rev. v. 9, which otherwise holds out of itself deliverance in common from any trouble. **Thirdly**, The apostle setting forth at large the deliverance they had had, and the means thereof, verse 20, affirms it to consist in the "escaping of the pollutions of the world," as idolatry, false worship, and the like, "through the knowledge of the Lord and Saviour Jesus Christ;" plainly declaring that their buying was only in respect of this separation from the world, in respect of the enjoyment of the knowledge of the truth; but of washing in the blood of the Lamb, he is wholly silent. Plainly, there is no purchase mentioned of these false teachers, but a deliverance, by God's dispensations towards them, from the blindness of Judaism or Paganism, by the knowledge of the gospel; whereby the Lord bought them to be servants to him, as their supreme head.
+
+*OCR:* греческие слова в скане искажены — δεσπότης распознан как `AectoVj!?`, ἀγοράζω как `dyopd^u` и `ayopdZ^oj`; они восстановлены по смыслу и **помечены восстановлением**. Одно слово Оуэна (ветхозаветное соответствие ἀγοράζω) в OCR не читается вовсе — оставлено пометкой и **не** восстановлено догадкой. Английская проза правлена только в очевидном: `uncertam` → uncertain, `Ch7'ist` → Christ, `ajoostle` → apostle, `disjDensations` → dispensations.
+
+**Второй локус Оуэна по 2 Пет. 3:9 — с. 543, и это не *Death of Death*.** Лист 559 → с. 543 (confidence 100). Трактат — *A Dissertation on Divine Justice*: по оглавлению тома его гл. II начинается на с. 500, гл. XV — на с. 595, так что 543 лежит внутри. Verbatim:
+
+> …perhaps, this difficulty is better obviated by Peter, who removes every idea of slowness from God, but ascribes to him patience and long-suffering in Christ towards the faithful. And of this dispensation **even the whole world, in a secondary sense, are made partakers.** "The Lord is not slack," says he, "concerning his promise" (the promise, namely, of a future judgment), "as some men count slackness; but is long-suffering to US-ward, not willing that any should perish, but that all should come to repentance," 2 Pet. iii. 9.
+
+**Оуэн против Оуэна — нет, но это два разных предмета.** На с. 348 речь о том, **чьё покаяние волит Бог** (`us-ward` = beloved, в суждении любви); на с. 543 — о том, **кто пользуется отсрочкой суда** («весь мир, во вторичном смысле, причастен»). Particularist, цитирующий 348, и universalist, цитирующий 543, говорят не об одном. Оговорка «in a secondary sense» — самоограничение самого Оуэна, её надо цитировать целиком. Смешивать эти два места — того же рода ошибка, что склеивать comm. 2 Пет. и Inst. III.24.16.
+
+**Чего этот раздел не делает.** Verbatim здесь — не quote-safe для Product (§0, `00`): это первоисточник с PD-страницей для внутренней работы. Решение о публикации цитаты принимается отдельно.
 
 ## 3. Чего этот файл не делает
 

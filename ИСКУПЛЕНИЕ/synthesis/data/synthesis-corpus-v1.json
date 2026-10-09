@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "SYNTHESIS-AUTHORITY-2026-10-07",
+  "status": "CURRENT / SYNTHESIS SUB-CORPUS / ACTIVE RESEARCH / NOT PUBLICATION-READY",
+  "corpusPath": "ИСКУПЛЕНИЕ/synthesis",
+  "parentCorpus": "ИСКУПЛЕНИЕ",
+  "parentAuthority": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+  "parentAuthorityId": "ATONEMENT-CORPUS-AUTHORITY-2026-10-07",
+  "rootAuthorityUnchanged": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
+  "agent": "agent-4-synthesis",
+  "sessionBranch": "arena/5fe5b33f-research",
+  "fallback": {
+    "active": false,
+    "reason": "E2B sandbox (bash/read/write/start_process) failed to initialize for the whole session (~40 min, 16+ attempts, all workspace tools). Files written to Google Drive corpus folder as fallback; canonical home remains Git ИСКУПЛЕНИЕ/synthesis/.",
+    "driveParentFolder": "1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV",
+    "driveParentName": "07 — СЕРИЯ «ИСКУПЛЕНИЕ»",
+    "driveFallbackFolder": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2",
+    "driveFallbackFolderName": "09 — SYNTHESIS (agent 4) — FALLBACK 2026-10-07 (E2B sandbox down)",
+    "drivePresenceDoesNotLiftHolds": true,
+    "resolvedOn": "2026-10-08",
+    "resolvedBy": "ingested into Git by the coordinator session (branch arena/dddc1326-research, PR #209); Drive copies updated from canon with the same IDs"
+  },
+  "holds": [
+    "PUBLICATION_HOLD",
+    "RIGHTS_HOLD",
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "ARCHIVE_HOLD"
+  ],
+  "deliverables": [
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+      "driveFileId": "1AnV1Q137HnN8zNqyn9xJOeo6wzuTe4ws",
+      "role": "общая карта: тезисы T1–T8 по слоям с осями и статусами; доказано / не доказано / конфликты; граница допустимой формулировки",
+      "status": "DONE",
+      "priorDriveFileId": "101_Q15IzPajiATl86OsaKUow0jArl58h"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+      "driveFileId": "11lznQuu7weVv99mt-DW_0o_DEv2FDzo_",
+      "role": "состав, порядок, оценка объёма диапазоном (минимум 4 / цель 13 / потолок 16–18); первая статья — «Что такое искупление»",
+      "status": "DONE",
+      "priorDriveFileId": "1wjYa-bNbC_mrYScOSOavUCt1brG0So9p"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "driveFileId": "151yu6HTO2j6RSkwNCk5YnbQY2XuO7g8H",
+      "role": "реестр разногласий C-01…C-15; снято молча: 0",
+      "status": "DONE",
+      "priorDriveFileId": "1Vn9Vzdiri98PgdehkPGAMsBoiIA_F7gX"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+      "driveFileId": "1YDkHr38ddVGimxxppFQB0Pa7woMGYEFf",
+      "role": "пастырские правила; «как не сломать совесть» с обеих сторон; таблица «сказать / не сказать»",
+      "status": "DONE",
+      "priorDriveFileId": "1Tbd2IsZ1Ls8gLwLW2TP4GSQBTP5IYNQH"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+      "driveFileId": "1zlK97uW5wEByt_3HUEYBE5NCdLr-wPQ1",
+      "role": "первый черновик читательской статьи (слой A1)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный, PD) с локаторами-стихами; исповедания — по номерам статей; нет ни одной цитаты современных авторов (RIGHTS_HOLD)",
+      "priorDriveFileId": "1MWqCtUztQF_jfI8ffIYX5aYjmQ5lq35L"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+      "driveFileId": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
+      "role": "SSOT под-корпуса (этот файл)",
+      "status": "DONE",
+      "priorDriveFileId": "1ehznH7G-2etlICzPokOcaAYpQwHVVxqO"
+    }
+  ],
+  "seriesWorkingPlan": {
+    "hubRouteProposal": "/iskuplenie/",
+    "articleCountFrozen": false,
+    "articleCountEstimate": {
+      "minimumForHub": 4,
+      "fullCoverageLayersABC": 13,
+      "ceilingWithReserveD": "16-18"
+    },
+    "firstArticle": "Что такое искупление (слой A1)",
+    "startWithTulipForbidden": true,
+    "layers": [
+      "A-foundation",
+      "B-extent-and-nuance",
+      "C-application",
+      "D-reserve"
+    ]
+  },
+  "synthesisMap": {
+    "theses": [
+      "T1 nature",
+      "T2 necessity",
+      "T3 perfection",
+      "T4 intent (спорно)",
+      "T5 extent HARD (не доказано, EVIDENCE_HOLD)",
+      "T6 sufficiency/efficiency (исповедный контроль)",
+      "T7 application (педагогический каркас)",
+      "T8 offer (доказано для живых реформатских линий)"
+    ],
+    "layersState": {
+      "ot": "not-created-yet (agent ВЗ)",
+      "nt": "not-created-yet (agent НЗ)",
+      "fathers": "not-created-yet (agent отцов)",
+      "historicalControl": "closed-as-research-map (13_, 14_, 15_); LOCATOR_HOLD on edition pages",
+      "modernB1": "Murray private study only (08_, 09_, 10_, 11_); not quote-safe"
+    }
+  },
+  "conflictLedger": {
+    "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+    "entries": 16,
+    "silenced": 0,
+    "added2026-10-08": "C-16: internal-Calvin tension on 1 Tim 2:4 (p.55 'classes of men') vs 2:5 (p.56 'the fruit of the sacrifice... extends to all') vs 2:6 (p.61 'universal and perpetual'), CTS 1856 - status TENSION, both halves must be quoted together"
+  },
+  "verdict": {
+    "extentDispute": "NO VERDICT — EVIDENCE_HOLD stands (including after ingest 2026-10-08)",
+    "siteTone": "умеренный реформатский кальвинизм; Дорт II как исповедный центр; свободное предложение всем; без hyper-Calvinism и без карикатур (контекст владельца, не вывод корпуса)"
+  },
+  "blockedByEnvironment": {
+    "gitCommit": true,
+    "gitPush": true,
+    "pullRequest": true,
+    "validatorsRun": true,
+    "ciCheck": null,
+    "note": "Снято сессией-координатором 2026-10-08: файлы перенесены в Git, валидаторы прогнаны, commit+push+PR сделаны в ветке координатора arena/dddc1326-research (ветка агента №4 arena/5fe5b33f-research не существует на GitHub). ciCheck обновляется после прогона Actions."
+  },
+  "doNot": [
+    "claim-limited-atonement-proved",
+    "claim-unlimited-atonement-proved",
+    "quote-murray-packer-gibson-or-moderns",
+    "start-series-with-TULIP",
+    "implement-product-html-this-wave",
+    "edit-other-agent-subcorpora (ot/, nt/, fathers/, Джон Гилл/)",
+    "change-research-root-authority",
+    "silence-a-conflict-without-text-and-locator"
+  ],
+  "ingestedIntoGit": {
+    "date": "2026-10-08",
+    "branch": "arena/dddc1326-research",
+    "pullRequest": 209,
+    "canonicalPath": "ИСКУПЛЕНИЕ/synthesis/",
+    "correctionsAtIngest": [
+      "T5 (00_SYNTHESIS_AUTHORITY §2): убрано «Мюррей закрывает … 2 Кор. 5:14, Евр. 2:9» — материнский корпус `10_` §3 прямо запрещает считать эти локусы закрытыми; заменено на «даёт particular-чтение, локус не закрыт»",
+      "00_SYNTHESIS_AUTHORITY §3: «12 зафиксированных расхождений» → 15 (C-01…C-15) по факту реестра",
+      "03_PRACTICAL_AND_PASTORAL_NOTES §2.1: цитата Мф. 11:28 приведена к Синодальному («труждающиеся», было «тружящиеся»)",
+      "03_PRACTICAL_AND_PASTORAL_NOTES §5: реплика «нельзя молиться за каждого (1 Ин. 5:16)» атрибутирована как чтение Оуэна (`14_` §2.2), а не норма корпуса",
+      "drafts/01_what-is-atonement.md §5: та же правка цитаты Мф. 11:28",
+      "во всех файлах: пометка «fallback» заменена на историю создания + статус переноса"
+    ],
+    "driveRefresh": {
+      "date": "2026-10-08",
+      "method": "upload_file from the Git working copy (byte-accurate); previous agent uploads moved to folder 99 — HOLD, nothing deleted",
+      "driveFolderRenamedTo": "09 — SYNTHESIS (agent 4) — INGESTED INTO GIT 2026-10-08"
+    }
+  }
+}

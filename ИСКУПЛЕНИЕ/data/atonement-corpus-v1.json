@@ -18,7 +18,10 @@
       "scripture": "17BZ9SUu5zp5VVFd5a0t8mFX8wEodHcIv",
       "confessions": "1ZTD2idu9oFO9Et1MSgfgtKMZZg63yUTw",
       "ledgers": "13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ",
-      "rights": "1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy"
+      "rights": "1edsBGRg0oQw_G-75QYdaNvde7KKiCFQy",
+      "agentBriefs": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
+      "synthesisFallback": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2",
+      "supersededMirrors": "1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd"
     },
     "acquiredCopies": [
       {
@@ -49,7 +52,69 @@
         "locatorState": "unchecked",
         "sha256Readback": false
       }
-    ]
+    ],
+    "reorg2026-10-08": {
+      "rule": "ID-preserving operations only (add/remove parents, rename, update_file_content). No delete_file; no re-upload of files carrying a live ID in the repo (re-upload changes the ID and breaks links from other repos).",
+      "supersededPolicy": "superseded mirrors move to folder 99 — HOLD (IDs stay alive) instead of trash",
+      "movedToHold": [
+        "1IzZxjBVl3BLrfcQH3r07SeeXbzu8yLOm",
+        "1ozlnTTepSyhFAj_hEsxNAwvF3Dc_R5tw",
+        "10go1WoYIIFBjYXoiadPVbzWDHP88w_PD",
+        "1dAMRTc7Tcy02oGt6HWX2RGYgB-IFx0Ap",
+        "1is-gox1UYi-4Ie0GBvHoMbzxh2mj2oL-",
+        "1eZKED3ikOOt7z96nEyspV6RxvKxTfgAd",
+        "1aigyR95l0DI8jMfxCTAKhvvm1RGffbVF",
+        "1_eb42tHpIRJkeZqLQ_HHuwpapX7hWiMF",
+        "1r4UNqlNv4xgBYf_vCI-R-hjyihyal-jr",
+        "1tTA18HWLlF_GseQCC4hCymbWWn6fj349",
+        "1VVOS5a_Oq5wfNmbhQBGLbm6wfh-CFPAs"
+      ],
+      "movedWithinCorpus": [
+        {
+          "id": "10_c-neESlAQwYThKu2gVhvxJ2zMZRswt",
+          "from": "13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ",
+          "to": "1FdQlbxhVzhAdCPoS1lt2qEZMRPsaQNPI",
+          "why": "Murray materials, topical fit"
+        }
+      ],
+      "renamed": [
+        {
+          "id": "1xcSKSkkXxioxBuvu3-jtQaqXG3YP4uau",
+          "to": "09_MURRAY_RAA_INTAKE_AND_COMPLETENESS.md"
+        },
+        {
+          "id": "10_c-neESlAQwYThKu2gVhvxJ2zMZRswt",
+          "to": "10_MURRAY_RAA_ARGUMENT_MAP_PRIVATE_STUDY.md"
+        },
+        {
+          "id": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
+          "to": "08 MURRAY RAA SOURCE CARD — RIGHTS HOLD, NO FULL TEXT"
+        },
+        {
+          "id": "1GFVUswVklNLz5VCtZRclMFj9b06nA4WUj1pjbIrtNaA",
+          "to": "04 LIMITED VS UNIVERSAL QUESTION MAP — NO VERDICT"
+        },
+        {
+          "id": "1mxYsP0RPDM8yNq_XCEJQXpDit96QP2z2KKww7psPcKs",
+          "to": "06 PUBLICATION ARCHITECTURE FOR GOSPOD-BOG — DO NOT IMPLEMENT YET"
+        }
+      ],
+      "rootCleanup": [
+        {
+          "id": "1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu",
+          "to": "12k0Om0KBjWN82LIBDj3I2qo5MY7RJXPn"
+        },
+        {
+          "id": "10kZrOw2cB1vAiAsaIwcWb-RDJKUn6s9h",
+          "to": "10WLnp-XKzzMJgtGeQpYYOFgtaIf1yHjv"
+        },
+        {
+          "id": "1G-9jYTIURIC3-YA-6YdP67JejkBxZDPhj1b0yi3gm0o",
+          "to": "1W8egf7QYGqBxKee_YgvGldxhcNyfTJRa"
+        }
+      ],
+      "untouchedPendingOwnerDecision": "personal/unrelated items in «Мой диск» root (cake zips, Mayakovsky, screenshots, 1.CSV, two Untitled spreadsheets, 00 — GITHUB PROJECTS)"
+    }
   },
   "holds": [
     "PUBLICATION_HOLD",
@@ -72,7 +137,30 @@
     "bodyComplete1955": true,
     "indexesPresent": false,
     "translatorNamed": false,
-    "englishPageLocators": false,
+    "englishPageLocators": {
+      "state": "secondary-B1",
+      "editionPaged": "Eerdmans 1955 / 2015 reprint, 192 pp. (Banner reset pagination NOT verified)",
+      "partI": "1-78",
+      "i1Necessity": "5-13",
+      "i2Nature": "14-20 (obedience as the inclusive category; 'pure passivity' at 16); four categories 20-48 (redemption 43-44; summary 40)",
+      "i3Perfection": "49-56 (historical objectivity 50; finality 51; uniqueness 53; intrinsic efficacy 55)",
+      "i4Extent": "57-74",
+      "i5Conclusion": "75-78",
+      "partIIchapters1to5": "81-138",
+      "ii1Order": "83-85 (Jn 3:3 at 83; 1 Jn 3:9 at 83; Rom 8:28,30 at 85; ordo list at 87; 'repentance is the twin sister of faith' at 89)",
+      "ii2EffectualCalling": "91-98 (sovereign act of God alone at 97; operative grace at 100)",
+      "ii3Regeneration": "100-109 (102; 103-104; fruits inseparable 108-109)",
+      "ii4FaithAndRepentance": "111-122 (definition 112; knowledge 115; assent 116; trust 117; 119)",
+      "ii5Justification": "123-138 ('faith alone, but not by a faith that is alone' 137-138)",
+      "discrepancy": "the 1962 Beacon Lights review gives Part II ch. 1 as pp. 79-87 while the DTS guide gives 81-138 for ch. 1-5 and 83-85 for the Order itself; the offset (part-title/flyleaf pages) is unresolved",
+      "sources": [
+        "Dead Theologians' Society teacher guides for RAA (Part I: 01-Redemption-Accomplished-and-Applied-t-39.pdf; Part II: 03-Redemption-Accomplished-and-Applied-t-20.pdf), edition labelled '1955, 2015'",
+        "Beacon Lights vol. 22 no. 3 (April 1962) review of the Eerdmans 192 pp. edition, which gives Part II ch. 1 = pp. 79-87"
+      ],
+      "notResolved": "pages for the individual hard texts inside I.4 (1 Tim 2:4-6; 2 Pet 2:1; 1 John 2:2; Rom 5:18; John 3:16; Heb 2:9); pagination of the Banner of Truth reset"
+    },
+    "internetArchiveItem": "redemptionaccomp00murr",
+    "internetArchiveSearchInside": "BLOCKED 2026-10-07: the item exists (Eerdmans 1955 scan, 200 pp., sanfrancisco, noindex:true, all text derivatives private:true) but the search-inside endpoint returns 'Item not available. The item is not available due to issues with the item's content.' Do not retry; api.archivelab.org does not answer for this identifier.",
     "custody": "PRIVATE_STUDY_ONLY",
     "rightsHold": true,
     "publicationHold": true,
@@ -83,7 +171,12 @@
     "hubRouteProposal": "/iskuplenie/",
     "articleCountFrozen": false,
     "startWith": "terms-and-nature-not-tulip",
-    "layers": ["A-foundation", "B-extent-and-nuance", "C-application", "D-reserve"]
+    "layers": [
+      "A-foundation",
+      "B-extent-and-nuance",
+      "C-application",
+      "D-reserve"
+    ]
   },
   "murrayOtherWorks": {
     "bookletAtonement": {
@@ -100,7 +193,13 @@
       "id": "M24",
       "url": "https://opc.org/GA/free_offer.html",
       "axis": "offer-not-extent",
-      "loci": ["Ezek 18:23,32", "Ezek 33:11", "Matt 23:37", "Isa 45:22", "2 Pet 3:9"],
+      "loci": [
+        "Ezek 18:23,32",
+        "Ezek 33:11",
+        "Matt 23:37",
+        "Isa 45:22",
+        "2 Pet 3:9"
+      ],
       "notAConfession": true
     },
     "romansNICNT": {
@@ -108,33 +207,629 @@
       "rom5_18": "secondary-p203-not-quote-safe"
     }
   },
-  "hardTextsCards": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+  "hardTextsCards": {
+    "file": "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+    "murrayCitationForm": {
+      "status": "B1; RIGHTS_HOLD and PUBLICATION_HOLD not lifted",
+      "allowedForm": "Murray, Redemption Accomplished and Applied I.4 (Eerdmans 1955/2015, pp. 57-74)",
+      "otherSections": {
+        "I.1": "5-13",
+        "I.2": "14-48",
+        "I.3": "49-56",
+        "I.4": "57-74",
+        "I.5": "75-78",
+        "Part II": "81-138"
+      },
+      "mandatoryDisclaimer": "page comes from a secondary source (study guides + a 1962 review); the book has not been in hand; Banner reset pagination unverified",
+      "forbidden": "bare \"Murray, p. N\" without that disclaimer",
+      "locusPagesInsideI4": "empty - see the worksheet in 08 §7.1",
+      "separateObjects": [
+        "brochure The Atonement (§D/§E/§V)",
+        "OPC 1948 report (Murray/Stonehouse) - a public report, RAA pages do not apply to it"
+      ]
+    },
+    "owenPassagePagesAdded": "2026-10-07 third wave: CCEL chunk references in the cards now also carry the Goold 1850 vol. X printed page (1 John 2:2 = 330; 1 Tim 2:4 = 343; 2 Pet 3:9 = 348; Heb 2:9 = 349; 2 Cor 5:14-15 = 350-352; 2 Pet 2:1 = 362-363). Book IV ch. IV range 343-358, ch. V 359-367.",
+    "titus2v11CardAdded2026-10-08": "H10 created 2026-10-08: Titus 2:11 was listed as mandatory Extent-HARD in 03 but had no card in 12. Readings H10-a..d; guards: 2:14 'peculiar people' in the same paragraph, soterios is an adjective not a headcount.",
+    "calvinPastoralEpistlesPagesAdded2026-10-08": "H2-e (1 Tim 2:4, p.55 'classes of men, and not to individual persons') and H2-f (1 Tim 2:5, p.56 'the fruit of the sacrifice... extends to all') added from Calvin's own commentary; H2-f is the hardest Calvin sentence for P1 in this locus.",
+    "owenTitus2v11Added2026-10-08": "H10 now rests on two independent primary sources with PD pages: Calvin (CTS 1856, pp. 316-318) and Owen (Goold vol. X, pp. 336 and 395). Owen readings H10-e (livery of believers) and H10-f (grace that certainly brings salvation + 2:14 peculiar people). Owen never writes 'Titus 2:11 proves particular redemption' — both places are parts of a larger argument."
+  },
   "historicalControl": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
   "owenBookIV": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
   "calvinDortLocators": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
   "pdLocators": {
     "owenCcelTxt": "https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.txt",
     "owenBookIVStartChunk": 70,
-    "owen1Tim2Chunks": [80, 81],
-    "owen2Pet21Chunks": [87, 88],
-    "owenHead3Chunks": [86, 87, 88, 89],
-    "owenAllTextsChunks": [80, 81, 82, 83, 84, 86, 87, 88, 89],
+    "owen1Tim2Chunks": [
+      80,
+      81
+    ],
+    "owen2Pet21Chunks": [
+      87,
+      88
+    ],
+    "owenHead3Chunks": [
+      86,
+      87,
+      88,
+      89
+    ],
+    "owenAllTextsChunks": [
+      80,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89
+    ],
     "schaffDortLatinChunk": 165,
+    "schaffDortLatinChunksVerified": [
+      163,
+      164,
+      165
+    ],
+    "schaffDortEnglishColumnPresent": false,
+    "schaffDortEnglishColumnCheckNote": "CCEL creeds3.txt chunks 163 (Head I artt. XVI-XVIII + Rejectio I-VIII), 164 (delegate subscriptions), 165 (Head II artt. I-IX + Rejectio I-VII) are all Latin: no English column exists in this TXT. Do not search for it again.",
     "calvinII12Chunk": 155,
     "calvinII16Chunk": 168,
-    "calvinII17Chunks": [176, 177],
+    "printedPageLocators": {
+      "resolvedOn": "2026-10-07 (second wave) + 2026-10-07 (third wave: passage level)",
+      "method": "phrase search inside public-domain scans on archive.org plus a publisher's printed table of contents; NOT the Drive PDFs (extraction cap) and NOT a physical copy verified page by page",
+      "level": "chapter or section start (second wave); passage inside the chapter for Owen (third wave). Not line-level, not collated against page images.",
+      "schaffVolumeIII1919": {
+        "item": "TheCreedsOfChristendomV3",
+        "edition": "Schaff, The Creeds of Christendom, vol. III (1919, 6th ed., preface dated 1931), 983 pp.",
+        "canonsOfDortBegins": 550,
+        "canonsSectionEnds": 597,
+        "rejectioErrorumHeading": 577,
+        "wcfBegins": 600,
+        "wcfChapter8OfChristTheMediator": 633,
+        "wcfChapter8EndsBefore": 674,
+        "checks": [
+          "table of contents of the volume (item description) gives: The Canons of the Synod of Dort, A.D. 1619 - 550; The Westminster Confession of Faith, A.D. 1647, with the American Alterations - 600; facsimile pages 598-599 and 674-675",
+          "inside.php search: 'Of Christ the Mediator.' -> page 633",
+          "inside.php search: 'Rejectio Errorum.' -> page 577",
+          "inside.php searches with no match, which therefore tell us the volume prints the Canons in Latin: 'SECOND HEAD OF DOCTRINE', 'Rejection of Errors', 'abundantly sufficient to expiate the sins of the whole world', 'Secundum Doctrinae Caput', 'impetrationis et applicationis'",
+          "inside.php search: 'de morte Christi' -> page 577, with the text of error VI of the Head II Rejectio ('Qui docent, Christum per suam satisfactionem, nullis certo meruisse ipsam salutem et fidem... Hi enim de morte Christi nimis abjecte sentiunt') - this settles that p. 577 is the Rejectio of Head II",
+          "inside.php search: 'Errorum' -> pages 570, 577, 583, 588; the fourth carries the subheading 'Rejectio Errorum circa Doctrinam de Perseverantia Sanctorum', i.e. four Rejections because Dort's heads III and IV are combined",
+          "inside.php search: 'unica et perfectissima' -> page 575 (Head II art. 3, Latin)",
+          "inside.php searches for WCF ch. VIII articles: 'It pleased God, in his eternal purpose' -> 633; 'The Son of God, the second person in the Trinity' -> 633; 'was sanctified and anointed with the Holy Spirit' -> 634; 'This office the Lord Jesus did most willingly undertake' -> 634; 'which he through the eternal Spirit' -> 635; 'the virtue, efficacy, and benefits thereof' -> 635; 'acteth according to both natures' -> 636; 'To all those for whom Christ hath purchased redemption' -> 636"
+        ],
+        "notResolved": "inferences only (not direct hits): Head II articles run about 573-577 and its Rejectio about 577-582. Page-per-line inside an article is not resolved.",
+        "rejectioErrorumHeadingIsHeadII": true,
+        "rejectioErrorumHeadII": 577,
+        "rejectioErrorumPages": {
+          "headI": 570,
+          "headII": 577,
+          "headIIIandIV": 583,
+          "headV": 588
+        },
+        "dortHeadIIarticle3Latin": 575,
+        "wcfChapter8ByArticle": {
+          "8.1": 633,
+          "8.2": 633,
+          "8.3": 634,
+          "8.4": 634,
+          "8.5": 635,
+          "8.6": 635,
+          "8.7": 636,
+          "8.8": 636
+        }
+      },
+      "owenGooldVolumeX": {
+        "edition": "William Goold (ed.), The Works of John Owen, vol. X (Banner of Truth reprint, 624 pp., ISBN 9780851510644)",
+        "source": "published contents of volume X on the publisher's page, matched against the chapter titles recorded from the CCEL text in 14 §2.2-2.3",
+        "deathOfDeathBegins": 140,
+        "toTheReader": 149,
+        "bookII": "200-235",
+        "bookIIchapter4ImpetrationAndApplication": 222,
+        "bookIII": "236-290",
+        "bookIVchapter3WorldTexts": 330,
+        "bookIVchapter4AllEveryTexts": 343,
+        "bookIVchapter5BoughtAndPerish": 359,
+        "bookIVchapter6More": 368,
+        "bookIVchapter7": 404,
+        "covers": "Book IV ch. IV (p. 343) = 1 Tim 2:4,6; 2 Pet 3:9; Heb 2:9; 2 Cor 5:14-15; 1 Cor 15:22; Rom 5:18 (CCEL chunks 80-84). Book IV ch. V (p. 359) = Rom 14:15; 1 Cor 8:11; 2 Pet 2:1; Heb 10:29 (CCEL chunks 86-89)",
+        "notResolved": "Goold 1826 vs Banner pagination: not comparable - volume X of the 1826 edition on IA (worksofjohnowe10owen) does not contain Death of Death (searches for Arminianism and Salus electorum return nothing). Line-level page inside a passage is not resolved.",
+        "thirdWave": {
+          "item": "worksofjohnowe185010owen",
+          "edition": "Goold (ed.), The Works of John Owen, vol. X, London: Johnstone and Hunter, 1850 (the edition the Banner of Truth reprint reproduces)",
+          "rights": "NOT_IN_COPYRIGHT (no notice; stated date 1850); 650 page images; page_number_confidence 100",
+          "scanToPrintedOffset": -16,
+          "offsetChecks": [
+            "running head '294 THE DEATH OF DEATH [BOOK IV.' = scan leaf 310",
+            "running head '344 ...' = scan leaf 360",
+            "volume contents leaf 12: 'IV. - Of the distinction of impetration and application ... 222' = scan leaf 238"
+          ],
+          "bannerPaginationMatchesGoold1850": true,
+          "level": "passage (the page on which the discussion of a locus stands), not line",
+          "byLocus": {
+            "impetrationAndApplicationHeading": 222,
+            "John 3:16": 319,
+            "1 John 2:2": 330,
+            "1 John 2:2 answer / Augustine": 332,
+            "1 Tim 2:4": 343,
+            "2 Pet 3:9": 348,
+            "Heb 2:9": 349,
+            "2 Cor 5:14-15": "350-352",
+            "1 Cor 15:22": 352,
+            "Rom 5:18": 353,
+            "Rom 14:15": 360,
+            "1 Cor 8:11": 361,
+            "2 Pet 2:1": "362-363",
+            "Heb 10:29": "364-365",
+            "Proof 16 recapitulation (Jude 4; Heb 10:29; 2 Pet 2:1; 1 Cor 8:11)": 401,
+            "Augustine totus mundus est ecclesia (Testimonies)": 424
+          },
+          "searchPhrases": [
+            "then were all dead",
+            "taste death for every man",
+            "for whom Christ died",
+            "bought them",
+            "trodden under foot",
+            "not willing that any should perish",
+            "not for ours only",
+            "God so loved the world",
+            "impetration"
+          ],
+          "limits": [
+            "ABBYY FineReader 8 OCR is uneven: 'constraineth us' is not indexed at all, so 2 Cor 5:14 was located through 'then were all dead'",
+            "short phrases are more reliable than long ones"
+          ]
+        }
+      },
+      "calvinBeveridgeVolumeII": {
+        "item": "institutesofchribeve02calv",
+        "edition": "Calvin, Institutes, tr. Henry Beveridge, Calvin Translation Society, 1845, vol. II",
+        "iii2416": "619-620",
+        "quoteAnchor": "'16. The second passage adduced is that in which Paul says that \"God will have all men to be saved,\" (1 Tim. ii. 4.)' - p. 619; the 2 Pet 3:9 discussion continues on p. 620",
+        "notResolved": "exact boundary of §15 (p. 618) and §17 (pp. 620-621)"
+      },
+      "calvinCatholicEpistles1855": {
+        "edition": "John Calvin, Commentaries on the Catholic Epistles, trans. and ed. by the Rev. John Owen (Edinburgh: Calvin Translation Society, 1855)",
+        "source": "Internet Archive scan commentariesonca00calv (Princeton Theological Seminary Library), Possible copyright status: NOT_IN_COPYRIGHT",
+        "scanUrl": "https://archive.org/details/commentariesonca00calv",
+        "rights": "public-domain",
+        "offsetRule": "printed page = scan leaf - 6",
+        "offsetAnchors": [
+          "running head 'CHAP. II. 1. THE FIRST EPISTLE OF JOHN. 169' at leaf 175",
+          "running head 'CHAP. II. 1. THE SECOND EPISTLE OF PETER. 391' at leaf 397",
+          "running head 'VER. 1. THE EPISTLE OF JUDE. 429' at leaf 435",
+          "subject index entry 'Days, in the last, scoffers will come, 414' = 2 Peter 3:3 at leaf 420"
+        ],
+        "level": "passage/paragraph, not line; page image not inspected",
+        "byLocus": {
+          "1John2v2": {
+            "lemmaPrintedPage": 169,
+            "lemmaLeaf": 175,
+            "commentBeginsPrintedPage": 172,
+            "commentBeginsLeaf": 178,
+            "keyParagraphPrintedPage": 173,
+            "keyParagraphLeaf": 179
+          },
+          "2Peter2v1": {
+            "printedPage": 393,
+            "leaf": 399
+          },
+          "2Peter3v9": {
+            "printedPage": "419-420",
+            "leaf": "425-426"
+          }
+        },
+        "cecelReader": {
+          "item": "calcom45",
+          "state": "empty behind login as of 2026-10-07; do not retry",
+          "replacedBy": "IA commentariesonca00calv (2026-10-08)"
+        }
+      },
+      "calvinPastoralEpistles1856": {
+        "edition": "Calvin, Commentaries on the Epistles to Timothy, Titus, and Philemon. Edinburgh: Calvin Translation Society, 1856",
+        "source": "IA commentariesonep00calvuoft (430 leaves)",
+        "scanUrl": "https://archive.org/details/commentariesonep00calvuoft",
+        "searchEndpoint": "https://ia600808.us.archive.org/fulltext/inside.php?item_id=commentariesonep00calvuoft&doc=commentariesonep00calvuoft&path=/21/items/commentariesonep00calvuoft&q=...",
+        "rights": "possible-copyright-status: NOT_IN_COPYRIGHT",
+        "offsetRule": "NOT a constant: leaves 24-25, 36-37, 56-57, 74-75, 302-303, 368-371 carry no printed number, so the offset steps (-4 early; -10 in the 1 Timothy 2 region, leaves 58-73; -16..-18 around Titus). Leaf->page map: commentariesonep00calvuoft_page_numbers.json, cross-checked against 11 running-head/index anchors.",
+        "offsetAnchors": [
+          "leaf 18 -> 14 ('14 THE ARGUMENT.')",
+          "leaf 19 -> 15 ('THE ARGUMENT. 15')",
+          "leaf 47 -> 39 ('CHAP. I. 15. THE FIRST EPISTLE TO TIMOTHY. 39')",
+          "leaf 59 -> 49 ('THE FIRST EPISTLE TO TIMOTHY. 49')",
+          "leaf 61 -> 51 ('CHAP. II. 2, THE FIRST EPISTLE TO TIMOTHY. 51')",
+          "leaf 67 -> 57 ('CHAP. II. 5. THE FIRST EPISTLE TO TIMOTHY. 57')",
+          "leaf 66 -> 56 (volume Index: 'Christ is the one Mediator between God and men, 56.')",
+          "leaf 71 -> 61 (volume Index: 'was revealed at the appointed time, 61.')",
+          "leaf 294 -> 278 ('278 THE ARGUMENT ON THE EPISTLE TO TITUS.')",
+          "leaf 333 -> 315 ('CHAP. II. 10. THE EPISTLE TO TITUS. 315')",
+          "leaf 337 -> 319 ('CHAP. II. 12. THE EPISTLE TO TITUS. 319')"
+        ],
+        "level": "passage/paragraph, not line; page image not inspected",
+        "byLocus": {
+          "1Tim2v4": {
+            "verseText": 49,
+            "expositionBegins": 54,
+            "keyStatement": 55,
+            "leaf": {
+              "verseText": 59,
+              "expositionBegins": 64,
+              "keyStatement": 65
+            }
+          },
+          "1Tim2v5": {
+            "printed": 56,
+            "leaf": 66,
+            "note": "OCR truncated at the foot of p.56; the sentence continues on p.57 and was not retrieved"
+          },
+          "1Tim2v6": {
+            "printed": 61,
+            "leaf": 71
+          },
+          "Titus2v11": {
+            "verseText": 316,
+            "exposition": 317,
+            "translatorNoteFrSer": "317-318",
+            "leaf": {
+              "verseText": 334,
+              "exposition": 335,
+              "translatorNote": "335-336"
+            }
+          }
+        },
+        "ccelReader": "not used for this volume"
+      },
+      "owenGooldVolX1850": {
+        "edition": "Owen, The Works, vol. X (London: Johnstone and Hunter, 1850) — The Death of Death in the Death of Christ",
+        "source": "IA worksofjohnowe185010owen (652 leaves)",
+        "scanUrl": "https://archive.org/details/worksofjohnowe185010owen",
+        "searchEndpoint": "https://ia601500.us.archive.org/fulltext/inside.php?item_id=worksofjohnowe185010owen&doc=worksofjohnowe185010owen&path=/30/items/worksofjohnowe185010owen&q=...",
+        "rights": "NOT_IN_COPYRIGHT",
+        "offsetRule": "printed page = leaf - 16 (constant across the volume; no unnumbered-leaf drift detected)",
+        "offsetAnchors": [
+          "leaf 310 -> 294 (running head '294 THE DEATH OF DEATH [BOOK IV.')",
+          "leaf 312 -> 296; leaf 330 -> 314; leaf 332 -> 316; leaf 346 -> 330",
+          "leaf 352 -> 336 (running head '336 THE DEATH OF DEATH [BOOK IV.' — the Titus 2:11 leaf itself)",
+          "leaf 360 -> 344; leaf 366 -> 350; leaf 411 -> 395",
+          "leaf 105 -> 89 (running head 'OF THE DEATH OF CHRIST. 89', a different treatise in the same volume)",
+          "leaf 238 -> 222 (volume contents: 'IV. - Of the distinction of impetration and application ... 222')"
+        ],
+        "level": "passage/paragraph, not line; page image not inspected",
+        "byLocus": {
+          "1Tim2v6": {
+            "fourCandidatesInDebate": {
+              "printed": 307,
+              "leaf": 323,
+              "book": "Book II, word-study on 'all'"
+            },
+            "diedForAllStatement": {
+              "printed": 371,
+              "leaf": 387,
+              "book": "Book IV, VI (368-403), answering Thomas More"
+            }
+          },
+          "Titus2v11": {
+            "liveryOfBelievers": {
+              "printed": 336,
+              "leaf": 352,
+              "book": "Book IV, III (330-342), inside the 1 John 2:2 discussion"
+            },
+            "graceThatCertainlyBringsSalvation": {
+              "printed": 395,
+              "leaf": 411,
+              "book": "Book IV, VI, answer to More, Arg. 13 (Tit. ii. 11, 13, iii. 4, 5)"
+            }
+          }
+        }
+      },
+      "schaffCreedsVolIII1919": {
+        "edition": "Schaff, The Creeds of Christendom, with a History and Critical Notes, vol. 3 (Harper & Brothers, 1919)",
+        "source": "IA creedsofchristen0003phil_c6k6 (986 leaves; scan 2026-03, tesseract 5.3.0, page_number_confidence 100)",
+        "secondScanSameCopy": "IA TheCreedsOfChristendomV3 - identical leaf->page map (same physical copy scanned twice)",
+        "searchEndpoint": "https://ia600402.us.archive.org/fulltext/inside.php?item_id=creedsofchristen0003phil_c6k6&doc=creedsofchristen0003phil_c6k6&path=/19/items/creedsofchristen0003phil_c6k6&q=...",
+        "rights": "NOT_IN_COPYRIGHT",
+        "offsetRule": "printed page = leaf - 14 (WARNING: the 'page' field of the fulltext-inside response is the LEAF number for this item, not the printed page)",
+        "offsetAnchors": [
+          "leaf 614 -> 600 ('THE WESTMINSTER CONFESSION OF FAITH. A.D. 1647.', start of the Confession) - independently confirmed by the volume table of contents, which lists 600",
+          "leaf 617 -> 603; leaf 621 -> 607; leaf 630 -> 616 ('CuarTer VII. Of God's Covenant with Man')",
+          "leaf 633 -> 619 ('Car. VIII. De Christo Mediatore' Latin column + WCF 8.1 English)",
+          "leaf 635 -> 621 (WCF 8.5 English verbatim)",
+          "leaf 636 -> 622 (WCF 8.8 English + Latin)",
+          "leaf 637 -> 623 ('CuarTer IX. Of Free-will')",
+          "leaf 647 -> 633; leaf 651 -> 637"
+        ],
+        "correction2026-10-08": "The 2026-10-07 waves recorded WCF VIII as pp. 633/634/635/636. Those are LEAF numbers. Printed pages are 619/620/621/622. The same row also carried 'Confession begins at 600', a genuine printed page taken from the table of contents - which is what exposed the scale mismatch.",
+        "knownAnomaly": "The running head on leaf 637 was OCR'd as 'THE WESTMINSTER CONFESSION OF FAITH, 1647. 625' while the map gives 623 for that leaf. It is the only running head out of nineteen where the number was captured; discrepancy is exactly 2. Treated as an OCR misread (3 -> 5); not image-verified. Page 623 is reported 'by map', not 'by running head'.",
+        "byLocus": {
+          "WCFchVIII": {
+            "printed": "619-622",
+            "chapterHeading": 619,
+            "articles": {
+              "8.1": 619,
+              "8.2": 619,
+              "8.3": 620,
+              "8.4": 620,
+              "8.5": 621,
+              "8.6": 621,
+              "8.7": 622,
+              "8.8": 622
+            }
+          }
+        }
+      }
+    },
+    "calvinII17Chunks": [
+      176,
+      177
+    ],
     "calvinBeveridgeTxt": "https://www.ccel.org/ccel/calvin/institutes/cache/institutes.txt",
-    "calvinIII24Chunks": [330, 331],
+    "calvinIII24Chunks": [
+      330,
+      331
+    ],
     "dortCrcnaReadingCopy": "https://www.crcna.org/welcome/beliefs/confessions/canons-dort",
+    "schaffWcf8Chunks": [
+      182,
+      183
+    ],
+    "schaffWcf8Articles": {
+      "8.1": [
+        1180,
+        1181
+      ],
+      "8.5": [
+        1240,
+        1241
+      ],
+      "8.6": [
+        1244
+      ],
+      "8.8": [
+        1250,
+        1254
+      ],
+      "columns": "EN+LA",
+      "chapterTitle": "Chapter VIII / Cap. VIII — Of Christ the Mediator / De Christo Mediatore"
+    },
+    "driveWcfPdfId": "1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4",
+    "driveWcfPdfBytes": 16179601,
+    "driveWcfPdfExtraction": "empty-no-text-layer",
+    "driveWcfPdfExtractionNote": "16.18 MB is below the 25 MB cap, so the cap is not the obstacle; read_file_text returned extraction_status=empty (image-only scan). The page of THIS file is not verifiable by extraction: do not retry, do not guess. Printed page of the Schaff volume is also not in the TXT (no pagination).",
+    "dortEnglishPdEdition": {
+      "selected": true,
+      "title": "The Articles of the Synod of Dort, and its Rejection of Errors…",
+      "translator": "Thomas Scott (1747-1821)",
+      "year": 1841,
+      "publisherPerArchiveOrg": "Presbyterian Church in the U.S.A. (Old School). Board of Publication",
+      "archiveOrgItem": "articlesofsynodo1841syno",
+      "leaves": 392,
+      "rights": "public-domain",
+      "articlesSectionStartsPage": 257,
+      "headIIPages": {
+        "II.1": 282,
+        "II.3": 283,
+        "II.5": 284,
+        "II.8": 285,
+        "rejectioStartsPage": 286,
+        "nextRejectioPage": 305,
+        "rejectionPages": {
+          "I": 287,
+          "II": 288,
+          "III": "288-289",
+          "IV": 289,
+          "V": 290,
+          "VI": "291-292",
+          "VII": 292
+        },
+        "transcription": {
+          "where": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md §B.5",
+          "collation": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md §B.6",
+          "covers": "Head II Articles I-IX and Rejection of Errors I-VII, English, with page anchors",
+          "source": "articlesofsynodo1841syno_djvu.txt chunks 52-54 (OCR) + table of contents (chunk 0)",
+          "method": "manual transfer from OCR output; OCR artifacts preserved verbatim",
+          "accessState": "transcribed-from-OCR + collated",
+          "collatedAgainst": [
+            "articlesofsynodo1841syno_djvu.xml chunks 43-45: second OCR rendering of the same scan, printed pages 280-297; zero divergence from the transfer except three recorded corrections (perseveringiy->perseveringly, garbled 'Man' in art. IV, letter 'S.' as the article-8 numeral)",
+            "Schaff/CCEL creeds3.txt chunk 165: Latin original of Head II artt. I-IX + Rejectio I-VII; each preserved OCR artifact resolved against the Latin",
+            "English translation of 1840 (Reformed Protestant Dutch Church): independent second English witness for Articles I-IX, now in Git as ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md"
+          ],
+          "collationFindings": [
+            "Rejectio IV as printed by Scott is ABRIDGED: the Latin closing clause 'Et cum impio Socino, novam et peregrinam hominis coram Deo justificationem, contra totius Ecclesiae consensum, inducunt' is absent; full text only in Latin",
+            "Rejectio III: the Schaff/CCEL Latin reads 'nullis certo meruisse', an artifact of that edition; Scott's English and the sense require 'non certo meruisse' - here the English controls the Latin",
+            "Rejectio I: Latin 'in Dei Patris sapientiam' vs Scott 'the wisdom of God' - translational difference, not doctrinal",
+            "Article III: Latin 'unica'; the 1840 translation has 'the only and most perfect sacrifice', Scott has 'a single and most perfect sacrifice' - quote 'only', not 'single'",
+            "Article VIII, the key line for 13 §1.2: Latin, Scott 1841 and the 1840 translation agree that the efficacy is 'in all the elect ... to them alone'"
+          ],
+          "notDone": "no collation with the page images (unreachable from the sandbox: only text renderings of archive.org are reachable and no browser tool exists in this session); Scott's own footnotes omitted except bracketed Scripture references"
+        }
+      },
+      "leafToPrintedPage": {
+        "288": 282,
+        "289": 283,
+        "290": 284,
+        "291": 285,
+        "292": 286,
+        "311": 305
+      },
+      "verification": "archive.org search-inside JSON (OCR text + page boxes) + articlesofsynodo1841syno_page_numbers.json (confidence 96)",
+      "accessState": "transcribed-from-OCR + collated (full English text of Arts I-IX and Rejection I-VII is in Git at 15 §B.5; collated at article level against a second OCR rendering, the Latin original and the 1840 English translation - 15 §B.6; NOT collated with the page images)",
+      "openLocators": [
+        "collation of the 15 §B.5 transcription with the page images (text-to-text collation is done; the raster itself is unreachable from the sandbox)",
+        "printed page of the Schaff volume for Dort (English axis closed by Scott 1841, Latin axis by chunk 165)"
+      ],
+      "publicationState": "PUBLICATION_HOLD — text collation done, so quoting is permitted with the §B.6 caveats (Rejectio IV abridged in Scott; 'unica' = only); the series-wide publication gate is still closed"
+    },
+    "dortEnglishAlternateW0Pack": {
+      "driveId": "1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo",
+      "driveFolder": "01 — PUBLIC DOMAIN LIBRARY (1BuYqlnPM1pIw-pCIFZLOKgGLL3hR1F4t)",
+      "name": "10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md",
+      "translation": "Reformed Protestant Dutch Church (1840), Wikisource transcription",
+      "covers": "Head II Articles I-IX in English, full text present (bytes verified 2026-10-07)",
+      "doesNotCover": "Rejection of Errors — that edition does not contain them (per the file's own source card)",
+      "locator": "chapter + article number; printed page not verified",
+      "rights": "public-domain (canons text + 19th c. translation)",
+      "fileStatus": "PRIMARY-TEXT-VERIFIED / QUOTE-SAFE WITHIN THIS FILE ONLY; publication HOLD",
+      "inGit": true,
+      "gitPath": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+      "transfer": "2026-10-07 second wave: the primary-text blocks (Dort Head II Articles I-IX, translation of 1840; Calvin on 1 John 2:1-2, CCEL 19th c.) were read from the Drive file byte-wise and transferred into the Git canon; the W0 verification scaffolding was not transferred, it belongs to another corpus",
+      "alsoTransferred": "Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — read and transferred in the same wave"
+    },
     "driveCalvinPdfExtractFailedBytes": 45351929,
-    "driveOwenPdfExtractFailedBytes": 42084171
+    "driveOwenPdfExtractFailedBytes": 42084171,
+    "calvinComm1John2v2KeyQuote": "Here a question may be raised, how have the sins of the whole world been expiated? ... Though then I allow that what has been said is true, yet I deny that it is suitable to this passage; for the design of John was no other than to make this benefit common to the whole Church. (Commentaries on the Catholic Epistles, CTS 1855, p. 173)",
+    "calvinComm2Peter3v9KeyQuote": "But it may be asked, If God wishes none to perish, why is it that so many do perish? To this my answer is, that no mention is here made of the hidden purpose of God, according to which the reprobate are doomed to their own ruin, but only of his will as made known to us in the gospel. For God there stretches forth his hand without a difference to all, but lays hold only of those, to lead them to himself, whom he has chosen before the foundation of the world. (Commentaries on the Catholic Epistles, CTS 1855, pp. 419-420)",
+    "calvin1Tim2v4KeyQuote": "But the present discourse relates to classes of men, and not to individual persons; for his sole object is, to include in this number princes and foreign nations. — CTS 1856, p. 55",
+    "calvin1Tim2v5KeyQuote": "this Mediator was given, not only to one nation, or to a small number of persons of some particular rank, but to all; because the fruit of the sacrifice, by which he made atonement for sins, extends to all. — CTS 1856, p. 56 (OCR truncates on the page break)",
+    "calvinTitus2v11KeyQuote": "He argues from the design of redemption, which he shews to be a desire to live a godly and upright life. ... the grace of God hath appeared, teaching us; for he means that it ought to hold the place of instruction to us to regulate our life well. — CTS 1856, p. 317",
+    "calvinTitus2v11FrSerNote": "Translator's note (NOT the commentary text), citing Calvin's French Sermons, CTS 1856 pp. 317-318: 'Paul did not mean in this passage, or in 1 Tim. ii. 6, anything else than that the great are called by God, though they are unworthy of it; that men of low condition, though they are despised, are nevertheless adopted by God' - and it rejects the inference 'there is no election'.",
+    "owenTitus2v11KeyQuote": "Believers are called \"all nations,\" Isa. ii. 2, Ixvi. 18; yea, \"all men,\" Tit. ii. 11: for to them alone the salvation-bringing grace of God is manifest. — Goold vol. X, p. 336",
+    "owenTitus2v11SecondQuote": "The \"grace\" mentioned, Tit. ii. 11, 13, is the grace that certainly brings salvation, which that common love doth not, and was the cause of sending Christ, \"that he might redeem us from all iniquity, and purify to himself a peculiar people, zealous of good works\"; where our redemption and sanctification are asserted to be the immediate end of the oblation of Jesus Christ. — Goold vol. X, p. 395",
+    "owen1Tim2v6DiedForAllQuote": "...we say, one place of Scripture interprets another... when the Scripture showeth that Christ died or gave himself a ransom for all, we believe it; and when, in another place, he declares that all to be his church, his elect, his sheep, all believers, - some of all sorts... this is not to lay an exception or restraint upon what was said of all before... and so we believe that he died for all. — Goold vol. X, p. 371",
+    "wcf8KeyQuote": "The Lord Jesus, by his perfect obedience and sacrifice of himself, which he through the eternal Spirit once offered up unto God, hath fully satisfied the justice of his Father, and purchased not only reconciliation, but an everlasting inheritance in the kingdom of heaven, for all those whom the Father hath given unto him. - WCF 8.5, Schaff, Creeds of Christendom vol. III (1919), p. 621"
+  },
+  "parallelAgents": {
+    "briefsPath": "ИСКУПЛЕНИЕ/agents/",
+    "index": "ИСКУПЛЕНИЕ/agents/README.md",
+    "domains": [
+      {
+        "agent": 1,
+        "brief": "ИСКУПЛЕНИЕ/agents/01_AGENT_BRIEF_OLD_TESTAMENT.md",
+        "subCorpus": "ИСКУПЛЕНИЕ/ot/",
+        "owns": "Old Testament: vocabulary, cult, covenants, types, LXX rendering"
+      },
+      {
+        "agent": 2,
+        "brief": "ИСКУПЛЕНИЕ/agents/02_AGENT_BRIEF_NEW_TESTAMENT.md",
+        "subCorpus": "ИСКУПЛЕНИЕ/nt/",
+        "owns": "New Testament: lexemes, syntax, pericopes, live readings"
+      },
+      {
+        "agent": 3,
+        "brief": "ИСКУПЛЕНИЕ/agents/03_AGENT_BRIEF_CHURCH_FATHERS.md",
+        "subCorpus": "ИСКУПЛЕНИЕ/fathers/",
+        "owns": "Church Fathers and early conciliar theology; anachronism guards"
+      },
+      {
+        "agent": 4,
+        "brief": "ИСКУПЛЕНИЕ/agents/04_AGENT_BRIEF_SYNTHESIS_AND_SERIES.md",
+        "subCorpus": "ИСКУПЛЕНИЕ/synthesis/",
+        "owns": "cross-layer synthesis, conflict ledger, series plan and article count, drafts (no Product HTML)"
+      }
+    ],
+    "rules": [
+      "each agent owns only its sub-corpus and never edits another agent's files",
+      "the atonement verdict stays with ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+      "root authority 00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md is never changed and never registered as root",
+      "EVIDENCE_HOLD on 'limited atonement proved' is not lifted by any agent wave",
+      "conflicts between layers go into a conflict ledger and into the report, never resolved by silent edits",
+      "one branch and one PR per session; no main, no .github, no force/reset; commits under ~400 lines; keep the Co-authored-by trailer",
+      "report template: СДЕЛАНО / ПРОВЕРЕНО / НЕ ПРОВЕРЕНО / СРЕДА / РЕШЕНИЯ САМ / branch+SHA+PR+CI / what the owner should do"
+    ],
+    "driveFolder": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
+    "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
   },
   "driveMirrors": {
-    "file11": "1YjRSRZtvlYwHME_kUgis5qeSJQ-z5qZd",
-    "file12": "1wz5vC0-0EroWw7i5mAAVY4jtMtlWzpzf",
-    "file13": "1KGtaHM7POs0aTZ8PgPPymhDxllvMB6qV",
-    "file14": "1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw",
-    "file15": "1QCk0y3lXDf7DImLBdqiBbVhR2ET1LWqA"
+    "file00": "1KD-8pMP_Jnk1lmsb2h3JbXxqpWLQgacdBMH57krdy_s",
+    "file00readme": "1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs",
+    "file05": "15i2GEHWfM-zxqFmDNyiQaSEGMBWd10hPxg4IdJEMOEg",
+    "file07": "1frdDjOoT4vZ-LkZgf0_GpDjOhLBjxJ-6E_M1asLglwA",
+    "file08": "1SxCBcSTr4LiTiu5H4mv0pcPXx4ySBndpPCYb3SzqZu8",
+    "file11": "1cSsRtthyNFQG5EHnQwmNWOuB8o6L2vRl",
+    "file12": "1Jt96MpLxvFV1_EWgy2sHIwXypvqWZ3h8j-1KnpqRoas",
+    "file13": "1jMpfpjP-ThrWCXLx13wb-d4aOBH9PH39",
+    "file14": "1v4er6LbmOhEvJh50skuL8dVu3m6U3s06JSZEuxxFhy0",
+    "file15": "11OYvutqx9z-V5Vcesp3_NUw8Hgccgl47FQ43UkOUMoI",
+    "file16": "1iBuWNf57KGtSGrUdt1Sou4cmYTY2Aeb0",
+    "note": "Byte-accurate copies of the Git files in ИСКУПЛЕНИЕ/, uploaded with upload_file + file_path. Since 2026-10-08 superseded copies are NOT trashed: they are moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd), so previously published IDs keep resolving. This object is the SSOT for mirror IDs; the JSON's own mirror lives in folder 05 (13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ) as atonement-corpus-v1.json. The 07 ledger cannot carry its own mirror ID (self-reference: every re-upload would stale it in the same commit), so its live mirror is only in driveMirrors.file07.",
+    "supersededIds2026-10-08": {
+      "file00": "1AG1egmEOqwczMR6mUcmkCfp2CpVp5c2UvVUTXtcobyk",
+      "file00readme": "1pb3R5SCru_tqkZZxnPOxpQU1zeWIw0sjgcZn5YPNk-E",
+      "file07": "1w3BHRJ2hTjL2P4qYvDdhZGpvpVW69HwvQVpevti_h00",
+      "synthesisAuthority": "101_Q15IzPajiATl86OsaKUow0jArl58h",
+      "synthesisSeriesPlan": "1wjYa-bNbC_mrYScOSOavUCt1brG0So9p",
+      "synthesisConflictLedger": "1Vn9Vzdiri98PgdehkPGAMsBoiIA_F7gX",
+      "synthesisPastoralNotes": "1Tbd2IsZ1Ls8gLwLW2TP4GSQBTP5IYNQH",
+      "synthesisDraftA1": "1MWqCtUztQF_jfI8ffIYX5aYjmQ5lq35L",
+      "synthesisSsot": "1ehznH7G-2etlICzPokOcaAYpQwHVVxqO",
+      "synthesisFallbackReadme": "1_KVxtWTpmuUeYVzngWxL0x3_EwjOK30h",
+      "corpusRegistryJson": "1nj62d1gZm7HtqptA5vWMIjKlhr0wrUBF",
+      "disposition": "moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd); not trashed, not deleted — IDs stay resolvable for links from other repos",
+      "file07Intermediate": "134drcyzXWT7HcLNrhOcxFwqowIO0v3SCtaUSfZyWIA4",
+      "file00prev2026-10-08c": "1NQ12OhDCWrmZv0EKeSIbvn65P9ab80cd3WjMd4UA4Sc",
+      "file05prev2026-10-08c": "1V7ujL3oqtbIwQfZp_5xxpBfY4rohg6a6cbulQl-zDIY",
+      "file12prev2026-10-08c": "1YrHM6pqfqCbLgQCbDjKYrs33so-xKhwa0uvs2P_mHhE",
+      "file13prev2026-10-08c": "1edopfq2CxCIduWIdlmaF0fNawNVE8q0c",
+      "file15prev2026-10-08c": "1QkGGEdEi7bcI_77Z4oCjaYe6JqdMeXIZ7gGWnIEa4Rw",
+      "corpusRegistryJsonPrev2026-10-08c": "10yX3XTslQ7I6viIlJ1V5qq2X0gjIqSLp",
+      "file07prev2026-10-08d": "1raUUWW7y0Lu9UuvoBL6t3qEjV9UUImk8sgxgPHQ8svk",
+      "file00Prev2026-10-08e": "1EqpEu8LhTasu5zsIU_5PJEfk8a75zTa0eb3hKhIu6YM",
+      "file03Prev2026-10-08e": "1xMwEx6UA2W4N8sE3b9DKRifRnko8T4-RNZfO0_IB-Cs",
+      "file05Prev2026-10-08e": "1ibh042Hi4xfpKf7L4nRk2d5FuToz8I1RigxIXjgziMY",
+      "file07Prev2026-10-08e": "10A_Gg-Wuw7OMK6VDdhweOpq2uJcCwjH16IxK_e41cXg",
+      "file12Prev2026-10-08e": "1UYZf-spro65daGmGyvmglkqDouGTPvUjpktXm6jCM3o",
+      "file15Prev2026-10-08e": "1njhmkSQVlwtov30vd5STMkNvzf8tnmCTTzx4KQjgv_g",
+      "synthesisConflictLedgerPrev2026-10-08e": "151yu6HTO2j6RSkwNCk5YnbQY2XuO7g8H",
+      "synthesisRegistryJsonPrev2026-10-08e": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
+      "prev2026-10-08f_file00": [
+        "1prouh0VlgO6AhcnfULTDRckOnwXJLwBGOuJjzkfjwPQ",
+        "1A4mEuCO4-0g8kxqMm_RQ_upDZFALVyC6nrX8tAwitnc"
+      ],
+      "prev2026-10-08f_file05": [
+        "1GCEkkJKbWTDyWp-6YzMk590SdIVwn8lndXys-jg1AX4",
+        "1JgWb9J3t16ZUB0TwQQiJBLENEEfefxDiBTmLg3ff7lQ"
+      ],
+      "prev2026-10-08f_file07": [
+        "1bNSXY3j7JQ4YaWj1prngLqO_OKCoCi28pmh30reQMmU",
+        "16G1Nd9Gy61TvcWky1DPlm038Bu7gkNMPZNSbqkyno1E"
+      ],
+      "prev2026-10-08f_file12": [
+        "1AR8vNpNeg1uZidegeZfWu8qdGC3rQxjTz6dvGk8793o",
+        "1Q-G30kId4KL2kYWIOUBqEaBovioySS-Q2dHGhYjtzyE"
+      ],
+      "prev2026-10-08f_file14": [
+        "1Dp9Wk_q3Dz1mjIBqsKkyJrXXwZI4l_-aSepUh2BKbBY",
+        "1TfN5bHenUTkmXZq8lG2JX03oOVOq6kByN7yLdoaUpNw"
+      ],
+      "prev2026-10-08f_file15": [
+        "1zwyRmoTiRQVMKpfNkngINwuTzbpcpebUL1M1IyO9OfU"
+      ]
+    },
+    "file03": "1Bu5d-44UP1XEz7gvcXuazUjfP4HyDJtOCA39iQmg64w",
+    "synthesis": {
+      "readmeFallback": "1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko",
+      "seriesPlan": "11lznQuu7weVv99mt-DW_0o_DEv2FDzo_",
+      "authority": "1AnV1Q137HnN8zNqyn9xJOeo6wzuTe4ws",
+      "practicalNotes": "1YDkHr38ddVGimxxppFQB0Pa7woMGYEFf",
+      "draftsFolder": "19Br_WHEci3DL6RM2vKWturbP3OCNA1zM",
+      "dataFolder": "1AB2I-t2LDBQFgkRSN9yHAHywDMsMxc6F",
+      "conflictLedger": "1T5PFoicHPzfaz17DmoS16mEZG_r6LrRL",
+      "registryJson": "1R1oLB5HZ2ougVrc39JhmmsenTy5z_vBB",
+      "folder09": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2"
+    },
+    "namingConvention2026-10-09": {
+      "live": "NN — TITLE — MIRROR (актуальное, git ИСКУПЛЕНИЕ/NN_…md)",
+      "superseded": "NN — TITLE — HOLD · <wave> · id <last 6–8 chars of the Drive ID>",
+      "primaryText": "NN — TITLE — PRIMARY TEXT (…) — for objects that are not copies of a Git file",
+      "rule": "The name encodes state; the ID is the only key. Renaming is ID-preserving, so links from other repos keep resolving.",
+      "renamedObjects": 69,
+      "renamedInHold": 55,
+      "renamedInLive": 14,
+      "scope": "only the 07 — СЕРИЯ «ИСКУПЛЕНИЕ» tree (1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV). Nothing outside this topic was renamed, moved or deleted."
+    },
+    "supersededIds2026-10-09": {
+      "file00": "1IeTc1fgDvPoFJ-lWvm8uovSkwtWS27bN0Vi79c8jpuY",
+      "file12": "18pdqqDj-oJK8hDTmD0OwVZufdJyXPCf5zq181DYFXsU",
+      "file14": "1EUIv9AU4AE51xXcpSPPBBusCVJKaP33sbp1gHsthgEE",
+      "reason": "these three mirrors predate commits 52ace08 and 7895287, which changed 00, 12 and 14",
+      "disposition": "moved to folder 99 — HOLD (1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd) and renamed per namingConvention2026-10-09; not trashed, not deleted — IDs stay resolvable",
+      "file07": "1910KRnHOEFylSVWNIfUspZRI92rC1OjD0ALv6_BgFMw",
+      "file07Intermediate2026-10-09a": [
+        "1vms7J-F2HvMmQ43Z1hkMQeOu7ZC0RJb71xrpRRm_p5M",
+        "1dpdeQ2o5lis3VqTc2uKylg2wKW8ftlGngCp6WXyEG6g"
+      ],
+      "file12file14Reason": "these two were one revision behind: 8a5b676 added the 2 Peter 2:1 / 3:9 verbatim and the machine page map to 12 (H3, H9) and 14 (§2.6)",
+      "file07Prev": "1n63RDbxmd4wnyZxAt9CWXeacXqo_VZMFQmeB1-0EpZ4",
+      "corpusRegistryJsonPrev2026-10-09a": "1Kf78F9i0v9yE0UELBDupkWesz6RiIArw"
+    }
   },
   "doNot": [
     "pirate-copyrighted-pdfs",
@@ -142,6 +837,112 @@
     "claim-limited-atonement-proved",
     "implement-product-html-this-wave",
     "change-research-root-authority",
-    "claim-murray-closed-1Tim2-or-2Pet2-1"
-  ]
+    "claim-murray-closed-1Tim2-or-2Pet2-1",
+    "search-schaff-dort-english-column-again",
+    "retry-drive-wcf-pdf-text-extraction",
+    "quote-scott-1841-rejectio-iv-without-noting-the-abridgement",
+    "quote-dort-ii-3-as-'single'-instead-of-'only'-from-the-latin-unica",
+    "quote-dort-rejectio-ignoring-that-the-latin-is-the-full-text-and-scott-is-a-translation",
+    "fetch-third-party-full-text-pdfs-of-murray-raa",
+    "retry-internet-archive-search-inside-for-redemptionaccomp00murr",
+    "cite-murray-raa-page-numbers-as-if-verified-in-the-book-itself"
+  ],
+  "synthesis": {
+    "authorityId": "SYNTHESIS-AUTHORITY-2026-10-07",
+    "corpusPath": "ИСКУПЛЕНИЕ/synthesis",
+    "ssot": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
+    "authority": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+    "agent": "agent-4-synthesis",
+    "ingestedIntoGit": "2026-10-08",
+    "source": "Google Drive fallback folder 18U6dslSsNJ20CwlAHTYRrO318mGohtI2 (agent's E2B sandbox never initialised); agent branch arena/5fe5b33f-research absent on GitHub (404), ingest done on coordinator branch",
+    "theses": [
+      "T1 nature",
+      "T2 necessity",
+      "T3 perfection",
+      "T4 intent (disputed)",
+      "T5 extent HARD (not proved)",
+      "T6 sufficiency/efficiency",
+      "T7 application",
+      "T8 offer"
+    ],
+    "conflictLedger": {
+      "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "entries": 15,
+      "silenced": 0
+    },
+    "seriesPlan": {
+      "minimumForHub": 4,
+      "targetFullCoverage": 13,
+      "ceiling": "16-18",
+      "frozen": false,
+      "firstArticle": "Что такое искупление",
+      "startWithTulipForbidden": true
+    },
+    "drafts": [
+      "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md"
+    ],
+    "holdsInherited": [
+      "PUBLICATION_HOLD",
+      "RIGHTS_HOLD",
+      "EVIDENCE_HOLD",
+      "LOCATOR_HOLD",
+      "ARCHIVE_HOLD"
+    ],
+    "verdict": "NO VERDICT on extent — EVIDENCE_HOLD stands",
+    "correctionsAtIngest": [
+      "T5: removed «Мюррей закрывает 2 Кор. 5:14 / Евр. 2:9» — 10_ §3 forbids taking those loci from Murray as closed",
+      "count of conflicts 12 → 15 (C-01…C-15) per the ledger",
+      "Мф. 11:28 aligned to the Synodal text («труждающиеся»)",
+      "«нельзя молиться за каждого (1 Ин. 5:16)» attributed as Owen's reading (14_ §2.2), not a corpus norm"
+    ],
+    "driveFolder": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2",
+    "driveFileIds": {
+      "authority": "1AnV1Q137HnN8zNqyn9xJOeo6wzuTe4ws",
+      "seriesPlan": "11lznQuu7weVv99mt-DW_0o_DEv2FDzo_",
+      "conflictLedger": "151yu6HTO2j6RSkwNCk5YnbQY2XuO7g8H",
+      "pastoralNotes": "1YDkHr38ddVGimxxppFQB0Pa7woMGYEFf",
+      "draftA1": "1zlK97uW5wEByt_3HUEYBE5NCdLr-wPQ1",
+      "ssot": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
+      "fallbackReadme": "1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko"
+    }
+  },
+  "owenGooldVolXPageMap": {
+    "source": "IA worksofjohnowe185010owen_page_numbers.json (hOCR auto page-number detection, file-level confidence 100)",
+    "method": "offset leaf -> printed page = -16; from 2026-10-09 verified against the machine map instead of by reading running headers",
+    "anchors": {
+      "352": "336",
+      "359": "343",
+      "364": "348",
+      "378": "362",
+      "379": "363",
+      "387": "371",
+      "411": "395",
+      "417": "401",
+      "559": "543"
+    },
+    "crossCheck": "336, 371, 395 and 401 were found earlier by independent OCR phrase search; the map reproduces the same offset on them, so 348 and 362-363 carry the same strength",
+    "loci2026-10-09": {
+      "2Pet3:9": {
+        "page": "348",
+        "leaf": 364,
+        "work": "Death of Death, Book IV, IV",
+        "verbatimIn": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md §2.6"
+      },
+      "2Pet2:1": {
+        "pages": "362-363",
+        "leaves": [
+          378,
+          379
+        ],
+        "work": "Death of Death, Book IV, V",
+        "verbatimIn": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md §2.6"
+      },
+      "2Pet3:9_secondLocus": {
+        "page": "543",
+        "leaf": 559,
+        "work": "A Dissertation on Divine Justice (not Death of Death)",
+        "note": "about who benefits from the delay of judgment, not about whose repentance God wills; do not conflate with p. 348"
+      }
+    }
+  }
 }
