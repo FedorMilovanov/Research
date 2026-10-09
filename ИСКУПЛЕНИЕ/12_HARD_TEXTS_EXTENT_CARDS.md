@@ -161,6 +161,12 @@
 **Кальвин (2026-10-08, первоисточник):** comm. 2 Пет. 2:1, **CTS 1855, с. 393** (IA `commentariesonca00calv`) — чтение H3-f: отречение жизнью, цель искупления — святой народ; покупка не объявляется мнимой. Verbatim — [`13` §2.3](13_DORT_II_CALVIN_OWEN_EXTENT.md).  
 Apostasy `12`: нельзя решить 2:1 системой искупления до экзегезы; ἐπίγνωσις и ἀποφεύγω слишком сильны для «они ничего не имели».
 
+### Оуэн, Goold vol. X — PD-страницы и verbatim (2026-10-09)
+
+- **С. 362** (лист 378; Book IV, V): три «uncertain» подряд — δεσπότης ли это Христос; о вечном ли искуплении кровью речь или об избавлении от скверн мира через познание истины; по реальности ли вещи говорит апостол или по их притязанию и исповеданию. Verbatim — [`14` §2.6](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md).
+- **С. 363** (лист 379): ἀγοράζω «signifieth primarily the buying of things; translatiously, the redemption of persons», а ветхозаветное соответствие значит «any deliverance» (Deut. vii. 8, xv. 15, Jer. xv. 21); здесь **нет** «blood, death, price, or offering», как в 1 Кор. vi. 20 и Откр. v. 9; избавление по ст. 20 состоит в «escaping of the pollutions of the world … through the knowledge of the Lord», а «of washing in the blood of the Lamb, he is wholly silent». Итог: «there is no purchase mentioned of these false teachers, but a deliverance». Чтение **H3-b**, но проведено как *probable* — сам Оуэн начинает каждый пункт словами «it is most uncertain».
+- **Важно:** это не H3-a (голое притязание) и не H3-d (спасительная покупка с утратой). Оуэн не называет покупку мнимой — он переносит её с крови на познание истины. Цитировать с. 363 как «Оуэн закрыл 2 Пет. 2:1» нельзя: «most uncertain» стоит в начале каждого пункта.
+
 ### Сейчас можно / нельзя
 
 Можно: держать 2:1 открытым как **самый жёсткий** HARD для P1; не уничтожать реальность 2:20–22 ради limited atonement; не делать 2:1 единственным доказательством P5.  
@@ -276,6 +282,11 @@ P5 competing: «нас» = верующих, к которым Павел пас
 Competing particular: «к нам» = возлюбленные 3:1, 8, 14, 17; «все» = все из вас, которых Бог ещё собирает. Текстология: εἰς ὑμᾶς / δι' ὑμᾶς / εἰς ἡμᾶς — отчёт обсуждает. **Оуэн chunk 82** (**Goold vol. X, с. 348** — 2 Пет. 3:9): `us-ward` = elect/beloved адресатов, не насмешники; **не** majority OPC 1948.
 
 Сейчас: карточка **закрывает ось B5** вместе с Иез. 18/33 и Мф. 23:37. Она **не** доказывает, что ἱλασμός в 1 Ин. 2:2 distributive. Дорт II.5 рядом: обещание и повеление объявлять всем народам.
+
+
+**Оуэн, Goold vol. X, с. 348 (лист 364) — verbatim (2026-10-09).** Verbatim — [`14` §2.6](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md). Ключевое: аргумент идёт не через подстановку «избранные» вместо «все», а через **повтор `us` в обеих клаузах** — «Not willing that any **of us** should perish, but that **all of us** should come to repentance»; адресаты — принявшие «great and precious promises» (1:4), названные «beloved» (3:1), противопоставленные «scoffers», названные «elect» (Мф. 24:22). И **прямая уступка**, которую нельзя стирать: «Neither is it of any weight to the contrary, that they were not all elect to whom Peter wrote: for **in the judgment of charity** he esteemed them so» (1:10).
+
+**Второй локус Оуэна по 2 Пет. 3:9 — не из *Death of Death*.** Goold vol. X, **с. 543** (лист 559, confidence 100), *A Dissertation on Divine Justice*; границы трактата по оглавлению тома — гл. II на с. 500, гл. XV на с. 595. Там Оуэн пишет: Бог «ascribes to him patience and long-suffering in Christ towards the faithful. And of this dispensation **even the whole world, in a secondary sense, are made partakers**». Это **не** противоречие с. 348, а другой предмет: там — **чьё покаяние волит Бог**, здесь — **кто пользуется отсрочкой суда**. Оговорку «in a secondary sense» цитировать целиком: она сама ограничивает причастность мира.
 
 ---
 

@@ -274,6 +274,50 @@ Competing: P5 скажет, что он сужает «мир» системно
 
 ---
 
+### 2.6 Шестая волна (2026-10-09): 2 Пет. 3:9 и 2 Пет. 2:1 — verbatim Goold и машинная карта страниц
+
+**Что было и чего не было.** В §0.2 у обоих локусов уже стояли страницы (348; 362–363), найденные поиском по OCR. Не хватало двух вещей: текст был пересказан по **CCEL TXT — другому изданию, не Goold**, и смещение −16 проверялось колонтитулами «на глаз». Ниже — verbatim именно Goold vol. X и машинная проверка смещения.
+
+**Машинная карта лист → страница.** IA ведёт для этого скана `worksofjohnowe185010owen_page_numbers.json` — автоопределение печатных номеров по hOCR, `confidence: 100` на уровне файла. Выписанные опоры:
+
+| Лист | Печатная с. | confidence | Что там |
+|---|---|---|---|
+| 352 | **336** | — | Тит. 2:11, «all men» (волна 4) |
+| 359 | **343** | 100 | начало Book IV, IV — 1 Тим. 2:4 |
+| **364** | **348** | — | **2 Пет. 3:9** |
+| **378** | **362** | — | **2 Пет. 2:1** — три «uncertain» |
+| **379** | **363** | 100 | **2 Пет. 2:1** — ἀγοράζω ≠ 1 Кор. 6:20 |
+| 387 | **371** | 100 | 1 Тим. 2:6, «and so we believe that he died for all» (волна 4) |
+| 411 | **395** | 100 | Тит. 2:11, 13 (волна 4) |
+| 417 | **401** | 100 | Proof 16 (Иуд. 4; Евр. 10:29; 2 Пет. 2:1; 1 Кор. 8:11) |
+| **559** | **543** | 100 | **2 Пет. 3:9 — но не в *Death of Death*** |
+
+Четыре опоры (336, 371, 395, 401) были получены раньше **независимо** — поиском по OCR; карта подтверждает на них то же смещение −16. Значит на 348 и 362–363 ему можно верить с той же силой. **Метод зафиксирован на этой волне:** смещение проверяется по машинной карте, колонтитулы остаются контрольной проверкой, а не основным доказательством.
+
+**Verbatim — 2 Пет. 3:9, с. 348 (лист 364, Book IV, IV):**
+
+> Ans. Many words need not be spent in answer to this objection, wrested from the misunderstanding and palpable corrupting of the sense of these words of the apostle. That indefinite and general expressions are to be interpreted in an answerable proportion to the things whereof they are affirmed, is a rule in the opening of the Scripture. See, then, of whom the apostle is here speaking. "The Lord," saith he, "is long-suffering to us-ward, not willing that any should perish." Will not common sense teach us that *us* is to be repeated in both the following clauses, to make them up complete and full, — namely, "Not willing that any **of us** should perish, but that **all of us** should come to repentance?" Now, who are these of whom the apostle speaks, to whom he writes? Such as had received "great and precious promises," chap. i. 4, whom he calls "beloved," chap. iii. 1; whom he opposeth to the "scoffers" of the "last days," verse 3; to whom the Lord hath respect in the disposal of these days; who are said to be "elect," Matt. xxiv. 22. Now, truly, to argue that because God would have none of those to perish, but all of them to come to repentance, therefore he hath the same will and mind towards all and every one in the world (even those to whom he never makes known his will, nor ever calls to repentance, if they never once hear of his way of salvation), comes not much short of extreme madness and folly. **Neither is it of any weight to the contrary, that they were not all elect to whom Peter wrote: for in the judgment of charity he esteemed them so**, desiring them "to give all diligence to make their calling and election sure," chap. i. 10 …
+
+*OCR:* `any of ws` → *of us*; `chap, iii. ]` → *chap. iii. 1*. Правки только там, где чтение однозначно.
+
+**Verbatim — 2 Пет. 2:1, с. 362 (лист 378, Book IV, V):**
+
+> The next place is much insisted on, — namely, 2 Pet. ii. 1, "There shall be false teachers, denying the Lord that bought them, and bringing upon themselves swift destruction." All things here, as to any proof of the business in hand, are exceedingly dark, uncertain, and doubtful. **Uncertain**, that by the Lord is meant the Lord Christ, the word in the original being δεσπότης, seldom or never ascribed to him; **uncertain**, whether the purchase or buying of these false teachers refer to the eternal redemption by the blood of Christ, or a deliverance by God's goodness from the defilement of the world in idolatry, or the like, by the knowledge of the truth, — which last the text expressly affirms; **uncertain**, whether the apostle speaketh of this purchase according to the reality of the thing, or according to their apprehension and their profession.
+
+**Verbatim — 2 Пет. 2:1, с. 363 (лист 379):**
+
+> [Secondly,] But suppose he should, it is most uncertain that by buying of these false teachers is meant his purchasing of them with the ransom of his blood; for, — **First**, The apostle insisteth on a comparison with the times of the Old Testament, and the false prophets that were then amongst the people, backing his assertion with divers examples out of the Old Testament in the whole chapter following. Now, the word ἀγοράζω, here used, signifieth primarily the buying of things; translatitiously, the redemption of persons; — and the word [`не читается в OCR`] in the Old Testament, answering thereunto, signifieth any deliverance, as Deut. vii. 8, xv. 15, Jer. xv. 21, with innumerable other places: and, therefore, some such deliverance is here only intimated. **Secondly**, Because here is no mention of blood, death, price, or offering of Jesus Christ, as in other places, where proper redemption is treated on; especially, some such expression is added where the word ἀγοράζω is used to express it, as 1 Cor. vi. 20, Rev. v. 9, which otherwise holds out of itself deliverance in common from any trouble. **Thirdly**, The apostle setting forth at large the deliverance they had had, and the means thereof, verse 20, affirms it to consist in the "escaping of the pollutions of the world," as idolatry, false worship, and the like, "through the knowledge of the Lord and Saviour Jesus Christ;" plainly declaring that their buying was only in respect of this separation from the world, in respect of the enjoyment of the knowledge of the truth; but of washing in the blood of the Lamb, he is wholly silent. Plainly, there is no purchase mentioned of these false teachers, but a deliverance, by God's dispensations towards them, from the blindness of Judaism or Paganism, by the knowledge of the gospel; whereby the Lord bought them to be servants to him, as their supreme head.
+
+*OCR:* греческие слова в скане искажены — δεσπότης распознан как `AectoVj!?`, ἀγοράζω как `dyopd^u` и `ayopdZ^oj`; они восстановлены по смыслу и **помечены восстановлением**. Одно слово Оуэна (ветхозаветное соответствие ἀγοράζω) в OCR не читается вовсе — оставлено пометкой и **не** восстановлено догадкой. Английская проза правлена только в очевидном: `uncertam` → uncertain, `Ch7'ist` → Christ, `ajoostle` → apostle, `disjDensations` → dispensations.
+
+**Второй локус Оуэна по 2 Пет. 3:9 — с. 543, и это не *Death of Death*.** Лист 559 → с. 543 (confidence 100). Трактат — *A Dissertation on Divine Justice*: по оглавлению тома его гл. II начинается на с. 500, гл. XV — на с. 595, так что 543 лежит внутри. Verbatim:
+
+> …perhaps, this difficulty is better obviated by Peter, who removes every idea of slowness from God, but ascribes to him patience and long-suffering in Christ towards the faithful. And of this dispensation **even the whole world, in a secondary sense, are made partakers.** "The Lord is not slack," says he, "concerning his promise" (the promise, namely, of a future judgment), "as some men count slackness; but is long-suffering to US-ward, not willing that any should perish, but that all should come to repentance," 2 Pet. iii. 9.
+
+**Оуэн против Оуэна — нет, но это два разных предмета.** На с. 348 речь о том, **чьё покаяние волит Бог** (`us-ward` = beloved, в суждении любви); на с. 543 — о том, **кто пользуется отсрочкой суда** («весь мир, во вторичном смысле, причастен»). Particularist, цитирующий 348, и universalist, цитирующий 543, говорят не об одном. Оговорка «in a secondary sense» — самоограничение самого Оуэна, её надо цитировать целиком. Смешивать эти два места — того же рода ошибка, что склеивать comm. 2 Пет. и Inst. III.24.16.
+
+**Чего этот раздел не делает.** Verbatim здесь — не quote-safe для Product (§0, `00`): это первоисточник с PD-страницей для внутренней работы. Решение о публикации цитаты принимается отдельно.
+
 ## 3. Чего этот файл не делает
 
 - Не снимает `EVIDENCE_HOLD`.  

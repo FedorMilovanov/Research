@@ -902,5 +902,44 @@
       "ssot": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
       "fallbackReadme": "1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko"
     }
+  },
+  "owenGooldVolXPageMap": {
+    "source": "IA worksofjohnowe185010owen_page_numbers.json (hOCR auto page-number detection, file-level confidence 100)",
+    "method": "offset leaf -> printed page = -16; from 2026-10-09 verified against the machine map instead of by reading running headers",
+    "anchors": {
+      "352": "336",
+      "359": "343",
+      "364": "348",
+      "378": "362",
+      "379": "363",
+      "387": "371",
+      "411": "395",
+      "417": "401",
+      "559": "543"
+    },
+    "crossCheck": "336, 371, 395 and 401 were found earlier by independent OCR phrase search; the map reproduces the same offset on them, so 348 and 362-363 carry the same strength",
+    "loci2026-10-09": {
+      "2Pet3:9": {
+        "page": "348",
+        "leaf": 364,
+        "work": "Death of Death, Book IV, IV",
+        "verbatimIn": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md §2.6"
+      },
+      "2Pet2:1": {
+        "pages": "362-363",
+        "leaves": [
+          378,
+          379
+        ],
+        "work": "Death of Death, Book IV, V",
+        "verbatimIn": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md §2.6"
+      },
+      "2Pet3:9_secondLocus": {
+        "page": "543",
+        "leaf": 559,
+        "work": "A Dissertation on Divine Justice (not Death of Death)",
+        "note": "about who benefits from the delay of judgment, not about whose repentance God wills; do not conflate with p. 348"
+      }
+    }
   }
 }
