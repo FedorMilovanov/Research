@@ -119,7 +119,7 @@
 | Кирилл Иерусалимский, Оглашения (греч.) | не сверено |
 | Дамаскин (греч.) | не сверено |
 
-**Следующий шаг:** для каждого пункта — либо найти PD-издание оригинала (Lake/Robertson/Mason/PG-скан), либо оставить `ORIGINAL_TEXT_HOLD` и цитировать только как перевод с указанием переводчика.
+**Ограничения среды:** для каждого пункта таблицы ниже — либо PD-издание оригинала нашлось и прочитано (статус `ARCHIVE_READ`), либо остаётся `ORIGINAL_TEXT_HOLD` с явной причиной (нет PD-канала в этой волне).
 
 ---
 
@@ -129,8 +129,8 @@
 
 | Что нужно сверить | Канал (PD) | Идентификаторы archive.org | Статус |
 |---|---|---|---|
-| Ириней, лат. (*recapitulans* III.18.1; «не насилием, но убеждением» V.1.1) | Harvey, *S. Irenaei … Libros quinque adversus haereses*, 1857, vol. 2 (кн. III–V) | `sanctiirenaeiep00harvgoog`, `sanctiirenaeili00irengoog` (vol. 1 — `sanctiirenilibr01irengoog`, `sanctiirenaeiep01harvgoog`) | `ARCHIVE_AVAILABLE` — чтение (OCR) не выполнено → `ORIGINAL_TEXT_HOLD` сохраняется |
-| Григорий Великий, *Moralia in Job* (лат./англ.) | «Morals on the Book of Job», Library of Fathers, 1844–50 | `moralsonbookofjo01greguoft`, `moralsonbookjob01igoog`, `moralsonbookofj234greguoft`, `moralsonbookofjo32greg`, серия V21/V23/V31 | `ARCHIVE_AVAILABLE`; карточка не собрана |
+| Ириней, лат. (*recapitulans* III.18.1; «не насилием, но убеждением» V.1.1) | Harvey, *S. Irenaei … Libros quinque adversus haereses*, 1857, vol. 2 (кн. III–V) | `sanctiirenaeiep00harvgoog`, `sanctiirenaeili00irengoog` (vol. 1 — `sanctiirenilibr01irengoog`, `sanctiirenaeiep01harvgoog`) | **ARCHIVE_READ (vol. 2)** — III.18.1 сверен (p. 106); кн. V «suadela» = `LOCATOR_HOLD` (индекс vol. II ~p. 315, полнотекстовый поиск пуст) |
+| Григорий Великий, *Moralia in Job* (лат./англ.) | «Morals on the Book of Job», Library of Fathers, 1844–50 | `moralsonbookofjo01greguoft`, `moralsonbookjob01igoog`, `moralsonbookofj234greguoft`, `moralsonbookofjo32greg`, серия V21/V23/V31 | **ARCHIVE_READ (vol. 1)** — карточка GRG-1; vols. 2–3 = `ARCHIVE_AVAILABLE` |
 | Кирилл Александрийский, *In D. Joannis Evangelium* (греч.+лат., Pusey 1872) | Pusey 1872, 3 т. | `sanctipatrisnos00–03pusegoog`, `indjoannisevang00pusegoog` | `ARCHIVE_AVAILABLE` (был `ARCHIVE_HOLD`); `Contra Nestorium` — в том же корпусе, отдельной проверки требует |
 | Анзельм, *Cur Deus Homo* (лат./англ. Deane 1903) | Deane 1903 / ун-т Торонто 1903 | `stanselmproslogu0000dean`, `stanselmeproslog00anseuoft`, `cu31924014583540` | `ARCHIVE_AVAILABLE`; карточка ANS-1 сверяется по латыни отдельно |
 | Лев Великий, Томос/Письма (лат., PL 54) | Migne, Patrologia Latina 1–221 (html-база) | `patrologia-latina_1-221` (описание: ed. 1844–1855, 1862–1865) | `ARCHIVE_AVAILABLE` с оговоркой: томную привязку (PL 54) проверять по файлам объекта; Latin Library для Льва бесполезна |
@@ -156,17 +156,18 @@
 
 ---
 
-## Дополнение 2-й волны (2026-10-08): ORIGINAL_TEXT_HOLD по III–IV вв.
+## Дополнение 2-й волны (2026-10-08; обновлено 2026-10-11): ORIGINAL_TEXT_HOLD по III–IV вв.
 
-Греческие/латинские оригиналы, по которым сверка ещё **не** сделана (канал отсутствует в PD-доступе этой волны):
+Оригиналы, по которым сверка **остаётся** как HOLD (канал отсутствует в PD-доступе этой волны):
 
 | Место | Причина |
 |---|---|
 | Ипполит (фрагменты), Мефодий (гом. о Кресте), Александр Александрийский (V. О душе и теле) | греч. тексты не в PD-каналах (PG-скан требует отдельной приёмки) |
-| Лактанций, *Div. Inst.* VI.3/VI.12 | лат. оригинал (CSEL 19 / PL 6/7) — `ARCHIVE_HOLD` |
-| Иларий, *De Trinitate* VI/X/XII | лат. оригинал (PL 10 / CSEL) — `ORIGINAL_TEXT_HOLD` |
+| Иларий, *De Trinitate* VI/X/XII | лат. оригинал (PL 10 / CSEL) — `ORIGINAL_TEXT_HOLD` (нет PD-канала в этой волне) |
 | Иероним, *Adv. Jovinianum* I; письма | лат. оригинал (PL 23) — `ORIGINAL_TEXT_HOLD` |
 | Амвросий, *De Officiis* III.4 | лат. оригинал (PL 16) — `ORIGINAL_TEXT_HOLD` |
 | Евсевий, Похвальное слово XV | греч. оригинал (PG 20) — `ARCHIVE_HOLD` |
+| **Лактанций, *Div. Inst.* VI.3/VI.12** | **ARCHIVE_READ** — сверено по изд. Eduardus a S. Xaverio 1757 (`bub_gb_Z44TVJoaQNUC`, leaves 48/151); PL 6 колонки = `LOCATOR_HOLD` |
+| **Григорий Великий, *Moralia* vol. 1** | **ARCHIVE_READ** (англ. перевод Bliss 1844, `moralsonbookofjo01greguoft`); латынь PL 75–76 = `ORIGINAL_TEXT_HOLD` |
 
 Карточки: [`11_…`](11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md).
