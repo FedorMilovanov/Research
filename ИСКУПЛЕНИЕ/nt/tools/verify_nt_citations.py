@@ -30,6 +30,11 @@ import unicodedata
 from pathlib import Path
 
 DEFAULT_SBLGNT = "/home/user/nt-corpus/py-sblgnt-master/pysblgnt/sblgnt"
+DEFAULT_LXX = ("/home/user/nt-corpus/lxx-swete-26bad3eb42bba98471d154c954e36a6f30a0279d/data")
+# Цитата LXX помечается префиксом «LXX» внутри обратных кавычек:
+#   `LXX ἱλαστήριον`   -> проверяется по свидетелю S5
+#   `λύτρον`           -> проверяется по свидетелю S1 (НЗ)
+# Без маршрутизации цитата LXX не прошла бы сверку: её нет в НЗ.
 CARD_DIR = Path(__file__).resolve().parent.parent
 GREEK = re.compile(r"[\u0370-\u03FF\u1F00-\u1FFF]")
 CYRILLIC = re.compile(r"[\u0400-\u04FF]")
@@ -85,6 +90,21 @@ def strip_fences(text: str) -> str:
     return "".join(out)
 
 
+def load_lxx(root: Path) -> str:
+    """Свидетель S5: LXX (Swete 1901 через First1KGreek).
+
+    Формат файла: «книга.глава.стих слово», по одному слову на строку.
+    Возвращается только склейка слов — для пословной сверки цитат.
+    """
+    words: list[str] = []
+    for path in sorted(root.glob("*.txt")):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            parts = line.split(" ", 1)
+            if len(parts) == 2 and parts[0].count(".") == 2:
+                words.append(parts[1])
+    return norm(" ".join(words))
+
+
 def load_corpus(root: Path) -> tuple[dict[str, int], str]:
     lemma_count: dict[str, int] = {}
     words: list[str] = []
@@ -115,6 +135,12 @@ def main() -> int:
         print(f"NT corpus not found at {root}; set NT_SBLGNT_DIR")
         return 2
     lemma_count, blob = load_corpus(root)
+    lxx_root = Path(os.environ.get("NT_LXX_DIR", DEFAULT_LXX))
+    lxx_blob = load_lxx(lxx_root) if lxx_root.is_dir() else ""
+    if lxx_root.is_dir():
+        print(f"S5 (LXX) loaded: {len(lxx_blob)} chars from {lxx_root.name}")
+    else:
+        print(f"предупреждение: нет LXX в {lxx_root}; цитаты «LXX …» будут отклонены")
     total_forms = sum(lemma_count.values())
     print(f"S1 loaded: {total_forms} word forms, {len(lemma_count)} lemmas")
 
@@ -142,15 +168,24 @@ def main() -> int:
             if CYRILLIC.search(raw):
                 failures.append(f"{md.name}: MIXED SCRIPT (Cyrillic inside Greek) -> {raw!r}")
                 continue
-            for frag in segments(raw):
+            # маршрутизация по свидетелю: «LXX …» -> S5, остальное -> S1
+            stripped = raw.strip()
+            if stripped.startswith("LXX ") or stripped.startswith("LXX:"):
+                target = re.sub(r"^LXX\s*:?\s*", "", stripped)
+                base, tag = lxx_blob, "S5"
+            else:
+                target = raw
+                base, tag = blob, "S1"
+            for frag in segments(target):
                 checked += 1
-                if frag in blob or frag in lemma_count:
+                known = frag in base or (tag == "S1" and frag in lemma_count)
+                if known:
                     continue
                 # допуск только на регистр ПЕРВОГО символа (начало предложения)
-                if any(v in blob or v in lemma_count
+                if any(v in base or (tag == "S1" and v in lemma_count)
                        for v in case_variants_first_char(frag)):
                     continue
-                failures.append(f"{md.name}: NOT IN S1 -> {raw!r}")
+                failures.append(f"{md.name}: NOT IN {tag} -> {raw!r}")
                 break
     print(f"Greek fragments checked: {checked}; field-stems skipped: {skipped}")
 
@@ -189,7 +224,7 @@ def main() -> int:
         for f in failures:
             print("  - " + f)
         return 1
-    print(f"\nPASS: {checked} Greek fragments occur verbatim in S1; "
+    print(f"\nPASS: {checked} Greek fragments occur verbatim in S1/S5; "
           f"{ok}/{len(declared)} declared lemma counts match S1.")
     return 0
 

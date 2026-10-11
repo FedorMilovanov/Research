@@ -89,6 +89,29 @@
       "bytes": 1042867,
       "committedToGit": false,
       "holds": []
+    },
+    {
+      "id": "S5",
+      "name": "Swete, Henry Barclay (ed.), The Old Testament in Greek, Cambridge: CUP, 1901 (LXX)",
+      "role": "свидетель ВЗ-греческого; снимает LXX_HOLD по греческой стороне",
+      "evidenceClass": "A1 как греческий текст; редакторские решения Суэта — editorial",
+      "accessState": "acquired-full",
+      "locatorState": "verse-level",
+      "rightsState": "текст Суэта 1901 — PD; цифровая передача First1KGreek — CC BY-SA 4.0; в Git не публикуется",
+      "publicationState": "NOT-APPROVED",
+      "repository": "nathans/lxx-swete",
+      "commit": "26bad3eb42bba98471d154c954e36a6f30a0279d",
+      "commitDate": "2025-12-18",
+      "files": 55,
+      "parsedWordForms": 588579,
+      "sha256OfDataset": "5cf3ee82efa214caee9059ada09f67a1079fc397f3c1343aa1b72d8c49be5458",
+      "bytes": 11799294,
+      "committedToGit": false,
+      "editionEstablishedBy": "CTS-метаданные First1KGreek data/tlg0527/tlg002/__cts__.xml, а не имя репозитория",
+      "holds": [
+        "MT_HOLD (еврейский текст не получен)",
+        "LOCATOR_HOLD (аппарат Суэта не получен)"
+      ]
     }
   ],
   "lexicalFields": [
@@ -419,7 +442,8 @@
     "LOCATOR_HOLD",
     "RIGHTS_HOLD",
     "ARCHIVE_HOLD",
-    "PUBLICATION_HOLD"
+    "PUBLICATION_HOLD",
+    "MT_HOLD"
   ],
   "baselineValidators": {
     "date": "2026-10-07",
@@ -477,5 +501,45 @@
       "Ин 5:40",
       "Ин 7:37"
     ]
+  },
+  "lxxCollation": {
+    "card": "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md",
+    "collatedLinks": [
+      "ἱλαστήριον Рим 3:25 / Евр 9:5 <-> LXX 14 вхождений (Исх 25; Лев 16)",
+      "ἱλασμός 1 Ин 2:2 <-> LXX Пс 129:4",
+      "λύτρον + ψυχή Мк 10:45 <-> LXX Исх 21:30 λύτρα τῆς ψυχῆς",
+      "λύτρωσις Лк 1:68 <-> LXX Пс 110:9",
+      "πολλοί формулы «за многих» <-> LXX Ис 53:11-12 (трижды, без артикля)",
+      "νοσσιὰν / πτέρυγας Мф 23:37 и Лк 13:34 <-> LXX Втор 32:11",
+      "ὕδωρ / жажда Ин 7:37 и Откр 22:17 <-> LXX Ис 55:1",
+      "пир πᾶσι τοῖς ἔθνεσιν Мф 22 <-> LXX Ис 25:6"
+    ],
+    "negativeResults": {
+      "ἀπολύτρωσις": {
+        "LXX": 0,
+        "NT": 10
+      },
+      "ἀντίλυτρον": {
+        "LXX": 0,
+        "NT": 1
+      },
+      "καταλλάσσω": {
+        "LXX": 0,
+        "NT": 6
+      },
+      "ἱλάσκομαι": {
+        "LXX": 0,
+        "NT": 2
+      },
+      "ἀγοράζω искупительно": {
+        "LXX": 0,
+        "NT": 6
+      },
+      "ἐξιλασκ- (для контраста)": {
+        "LXX": 121,
+        "NT": 0
+      }
+    },
+    "conclusion": "Сверка уточнила фон, но не сняла EVIDENCE_HOLD: ни один из восьми сверенных пунктов не определяет объём искупления."
   }
 }

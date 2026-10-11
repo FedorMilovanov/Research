@@ -29,6 +29,7 @@ WITNESSES=(
   "S2|byztxt/greektext-scrivener|6049a43b135ed870f843b83eb6a04764fc796678|61f4b97a80b2a8ec5faaf929f78a492b70e18fa7b4505e84983ee686782c19ea|textonly"
   "S3|byztxt/greektext-stephens|4314af2042d9e77b2ce5c1c86d0c49325dd81684|b94776ff4870570ee63240dfe36c9fc3f696600cfff39d408d85c4bb453ba4e9|textonly"
   "S4|byztxt/greektext-elzevir|94f31e2d2e8bd451d4d2f9739d13c419f7ce86c2|dbdc40702d84dcd889c2090c6be3b8ad6c49fa61efa3e3dbd69fd69b03768504|textonly"
+  "S5|nathans/lxx-swete|26bad3eb42bba98471d154c954e36a6f30a0279d|5cf3ee82efa214caee9059ada09f67a1079fc397f3c1343aa1b72d8c49be5458|data"
 )
 
 # ОПРЕДЕЛЕНИЕ sha256 набора (единое для всех четырёх свидетелей):
@@ -92,6 +93,12 @@ for entry in "${WITNESSES[@]}"; do
   fi
 done
 
+# S5 — LXX: Swete (ed.), The Old Testament in Greek, Cambridge 1901,
+# в цифровой передаче First1KGreek через nathans/lxx-swete. Издание
+# установлено по CTS-метаданным First1KGreek (tlg0527/tlg002/__cts__.xml),
+# а не по имени репозитория. Права: текст — Swete 1901 (PD), цифровая
+# передача — CC BY-SA 4.0; в Git не публикуется.
+
 # Стабильный путь для проверяльщика: он по умолчанию смотрит в
 # py-sblgnt-master, а tarball распаковывается в py-sblgnt-<sha>.
 if [ -d "$HOME_DIR/py-sblgnt-904fed08a14bffea6e1776d8c4c3eeb7c6092688" ]; then
@@ -103,6 +110,6 @@ if [ "$fail" -ne 0 ]; then
   echo "FAIL: хотя бы один свидетель не совпал с пином."
   exit 1
 fi
-echo "OK: все четыре свидетеля скачаны и сверены с пинами."
+echo "OK: все пять свидетелей скачаны и сверены с пинами."
 echo "Корпус: $HOME_DIR"
 echo "Дальше: python3 ИСКУПЛЕНИЕ/nt/tools/verify_nt_citations.py"
