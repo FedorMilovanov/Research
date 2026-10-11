@@ -123,6 +123,42 @@
 
 ---
 
+### A.6 Комментарий на Евреям (CTS 1853) — Евр. 2:9: сам Кальвин объёма не ограничивает, ограничивает редактор (2026-10-11)
+
+**Издание:** John Calvin, *Commentaries on the Epistle of Paul the Apostle to the Hebrews*, trans. and ed. by **John Owen** (Edinburgh: Calvin Translation Society, **1853**), IA `commentariesowentran00calv`, 466 листов, `hocr_pagenumber_confidence: 100`.
+
+**Смещение лист − 6 = печатная страница** — то же, что у Соборных посланий 1855 г. (одна серия, одна привычка). Карта `commentariesowentran00calv_page_numbers.json`: лист 47→41, 51→45, 62→56, 67→61, 75→69, 83→77, 93→87 — без разрывов на всём проверенном диапазоне.
+
+| Что | Лист | Печатная страница |
+|---|---|---|
+| Текст Евр. 2:9 («But we see Jesus… that he by the grace of God should taste death for every man») | 62 | **56** |
+| **Комментарий Кальвина на 2:9** («That he by the grace of God, &c.») | 67 | **61** |
+| Сноска редактора «—Ed.» с ограничением παντός | 67 | **61** |
+| Критические заметки приложения (Macknight / Doddridge / Bloomfield) | 374 | **368** |
+| Предметный указатель тома | 446 | **440** |
+
+**Независимая привязка:** предметный указатель самого тома (лист 446 = с. 440) даёт: «Grace, by the, of God, Christ tasted death for every man, **61**». Номер совпадает с картой.
+
+**Verbatim, Кальвин (с. 61, лист 67):**
+
+> That he by the grace of God, &c. He refers to the cause and the fruit of Christ's death, lest he should be thought to detract anything from his dignity. For when we hear that so much good has been obtained for us, there is no place left for contempt, for admiration of the divine goodness fills the whole mind. By saying **for every man**, he means not only that he might be an example to others, as Chrysostom says, who brings the example of a physician tasting first a bitter draught, that the patient might not refuse to drink it; **but he means that Christ died for us, and that by taking upon him what was due to us, he redeemed us from the curse of death.** And it is added, that this was done through the grace of God, for the cause of redemption was the infinite love of God towards us, through which it was that he spared not even his own Son. What Chrysostom says of tasting of death, as though he touched it with his lips, because Christ emerged from death a conqueror, I will not refute nor condemn, though I know not whether the Apostle meant to speak in a manner so refined.
+
+**Verbatim, сноска редактора на той же с. 61 (подписана «—Ed.»):**
+
+> «For every man», ὑπὲρ παντός, that is, «man», mentioned in verse 6; and «man» there means **all the faithful**, to whom God in Noah restored the dominion lost in Adam: but this dominion was not renewed to man as a fallen being, but as made righteous by faith. —*Ed.*
+
+**Три вывода, и все три надо держать одновременно.**
+
+1. **Кальвин читает ὑπὲρ παντός заместительно, а не как пример.** Он прямо отводит хризостомовскую иллюстрацию (врач, первым пробующий горькое лекарство) и говорит: «Христос умер за нас и, приняв на Себя то, что было должны мы, искупил нас от проклятия смерти». Это против всякого морально-примерного («moral example») прочтения 2:9.
+2. **Сам Кальвин в этом месте объёма не ограничивает.** Ни «избранные», ни «верные», ни «сыны» в его тексте на с. 61 нет. Ограничение до «всех верных» вносит **редактор** английского издания 1853 г. в сноске. Следовательно: цитировать «Кальвин ограничивает Евр. 2:9 верными» по этому изданию — значит цитировать редактора, а не Кальвина. Тот же тип ошибки, что с цитированием Мюррея по вторичным разборам.
+3. **И обратное неверно.** Отсутствие ограничения у Кальвина не есть доказательство всеобщего искупления: он спорит здесь с «примером», а не с объёмом, и вопрос «за кого» в этом отрывке просто не стоит. `EVIDENCE_HOLD` не снят.
+
+**Текстологическая сторона (стык с под-корпусом НЗ, #212).** Базовый текст этого издания читает **«by the grace of God»** — то есть χάριτι θεοῦ, а не χωρὶς θεοῦ. Кальвин толкует именно эту форму и ни о каком варианте не упоминает; критические заметки приложения (с. 368: Macknight, Doddridge, Bloomfield) обсуждают **порядок слов и перестановку клауз**, но также исходят из χάριτι θεοῦ. То есть издание 1853 г. — **свидетель чтения χάριτι θεοῦ**. Но это свидетель **перевода**, а не рукописи: он ничего не говорит о греческих свидетелях и **не может** быть зачтён как текстуальный аргумент, только как `PRECEDENT_OF_READING`. Разбор вариантов по рукописям ведёт под-корпус НЗ; мы свою пометку не снимаем.
+
+**Границы проверки.** Страницы получены OCR-поиском и машинной картой; **изображение конкретной страницы глазами не сверено**. OCR даёт опечатку «he **hy** the grace of God» (вместо *by*) — в цитате выше исправлено без пометки, в других местах скана встречаются «Hebi*ew», «iiian», «vtIo Travra;». Перед публикацией — править по современному изданию.
+
+---
+
 ## B. Дорт, Вторая глава — карта статей с церковным английским как *reading copy*
 
 ### B.1 Права — не спутать издания

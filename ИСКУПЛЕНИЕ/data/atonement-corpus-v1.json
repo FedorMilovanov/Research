@@ -426,6 +426,29 @@
         "doctrinalCaveat": "Q. 59 defines the circle of application by the circle of purchase - the same structure as WCF 8.8 - but says nothing about how wide the purchase is. It is not a proof of limited atonement; EVIDENCE_HOLD is not lifted.",
         "notResolved": "page image not visually verified; OCR of the 1813 scan is uneven ('came' for 'come' in Q. 58, 'redemp-/tion' split in Q. 57); edition predates the American alterations (immaterial for the Larger Catechism, unlike the Confession)"
       },
+      "calvinHebrews1853": {
+        "item": "commentariesowentran00calv",
+        "edition": "John Calvin, Commentaries on the Epistle of Paul the Apostle to the Hebrews, trans. and ed. by John Owen (Edinburgh: Calvin Translation Society, 1853), 466 leaves",
+        "rights": "public-domain",
+        "offsetRule": "printed page = scan leaf - 6",
+        "offsetSource": "commentariesowentran00calv_page_numbers.json (hocr_pagenumber_confidence 100); anchors leaf 47->41, 51->45, 62->56, 67->61, 75->69, 83->77, 93->87, continuous; corroborated by the volume's own subject index (leaf 446 = p. 440): 'Grace, by the, of God, Christ tasted death for every man, 61'",
+        "loci": {
+          "hebrews29verseText": "56",
+          "hebrews29calvinComment": "61",
+          "hebrews29editorNote": "61",
+          "criticalNotesAppendix": "368",
+          "subjectIndex": "440"
+        },
+        "verbatimCalvinOnHeb29": "That he by the grace of God, &c. He refers to the cause and the fruit of Christ's death, lest he should be thought to detract anything from his dignity. For when we hear that so much good has been obtained for us, there is no place left for contempt, for admiration of the divine goodness fills the whole mind. By saying for every man, he means not only that he might be an example to others, as Chrysostom says, who brings the example of a physician tasting first a bitter draught, that the patient might not refuse to drink it; but he means that Christ died for us, and that by taking upon him what was due to us, he redeemed us from the curse of death. And it is added, that this was done through the grace of God, for the cause of redemption was the infinite love of God towards us, through which it was that he spared not even his own Son.",
+        "verbatimEditorNote": "\"For every man\", huper pantos, that is, \"man\", mentioned in verse 6; and \"man\" there means all the faithful, to whom God in Noah restored the dominion lost in Adam: but this dominion was not renewed to man as a fallen being, but as made righteous by faith. -Ed.",
+        "threeConclusions": [
+          "Calvin reads huper pantos substitutionally, not as example: he explicitly sets aside Chrysostom's physician illustration.",
+          "Calvin himself does not restrict the extent in this passage. The restriction to 'all the faithful' is the 1853 English editor's footnote, not Calvin. Quoting it as Calvin is the same class of error as quoting Murray via secondary summaries.",
+          "The converse is also wrong: Calvin's silence on extent is not proof of unlimited atonement. He argues against the example-reading, not about extent. EVIDENCE_HOLD is not lifted."
+        ],
+        "textologicalWitness": "The base text of this edition reads 'by the grace of God' - chariti theou, not choris theou. Calvin expounds that form and mentions no variant; the appendix critical notes (p. 368, Macknight / Doddridge / Bloomfield) discuss word order and clause transposition but likewise work from chariti theou. This is a witness of a TRANSLATION, not a manuscript: it carries no weight as textual evidence, only as PRECEDENT_OF_READING. The manuscript-side analysis belongs to the NT sub-corpus (PR #212).",
+        "notResolved": "page image not visually verified; OCR of the scan is uneven ('hy' for 'by', 'Hebi*ew', 'iiian', 'vtIo Travra;') and needs normalising against a modern edition before publication"
+      },
       "calvinCatholicEpistles1855": {
         "edition": "John Calvin, Commentaries on the Catholic Epistles, trans. and ed. by the Rev. John Owen (Edinburgh: Calvin Translation Society, 1855)",
         "source": "Internet Archive scan commentariesonca00calv (Princeton Theological Seminary Library), Possible copyright status: NOT_IN_COPYRIGHT",
