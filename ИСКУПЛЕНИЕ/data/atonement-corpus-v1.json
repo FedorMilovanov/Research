@@ -383,9 +383,18 @@
       "calvinBeveridgeVolumeII": {
         "item": "institutesofchribeve02calv",
         "edition": "Calvin, Institutes, tr. Henry Beveridge, Calvin Translation Society, 1845, vol. II",
-        "iii2416": "619-620",
-        "quoteAnchor": "'16. The second passage adduced is that in which Paul says that \"God will have all men to be saved,\" (1 Tim. ii. 4.)' - p. 619; the 2 Pet 3:9 discussion continues on p. 620",
-        "notResolved": "exact boundary of §15 (p. 618) and §17 (pp. 620-621)"
+        "iii2416": "601-602",
+        "iii2417": "603-604",
+        "iii2415ends": "600",
+        "offsetRule": "printed page = scan leaf - 18",
+        "offsetSource": "institutesofchribeve02calv_page_numbers.json (hocr_pagenumber_confidence 100); anchors leaf 613->595, 619->601, 621->603, 631->613, 637->619, 641->623, 645->627",
+        "quoteAnchors": [
+          "section 16 opening '16. The second passage adduced is that in which Paul says that \"God will have all men to be saved,\" (1 Tim. ii. 4.)' - leaf 619 = p. 601",
+          "'he is there speaking not of individuals, but of orders of men' + the 2 Pet 3:9 solution - leaf 620 = p. 602",
+          "'O Jerusalem, Jerusalem, how often would I have gathered thy children together' + 'though to our apprehension the will of God is manifold, yet he does not in himself will opposites' - leaf 622 = p. 604"
+        ],
+        "correction2026-10-11": "The 2026-10-07 waves recorded III.24.16 as pp. 619-620 and III.24.17 as pp. 620-621. Those are LEAF numbers of this scan, not printed pages; the block had no offsetRule, unlike calvinCatholicEpistles1855 (leaf - 6) and owenGooldVolXPageMap (leaf - 16), which is what allowed the slip. Printed pages are 601-602 (section 16) and 603-604 (section 17). Same class of error as the WCF VIII correction (correction2026-10-08).",
+        "notResolved": "the exact leaf where section 17 opens is not pinned separately: it begins on leaf 620 or 621 (pp. 602-603); only the Matt 23:37 argument inside it is anchored, to p. 604"
       },
       "calvinCatholicEpistles1855": {
         "edition": "John Calvin, Commentaries on the Catholic Epistles, trans. and ed. by the Rev. John Owen (Edinburgh: Calvin Translation Society, 1855)",

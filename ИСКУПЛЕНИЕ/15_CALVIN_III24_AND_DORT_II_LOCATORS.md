@@ -16,10 +16,10 @@
 | Чанки тела | **330–331** = Book III, Chapter 24, §§15–17 (далее Ch. 25) |
 | Drive PDF | `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ`, 45 351 929 bytes, md5 `a2755d55b53972ddd0fbf4b68a5d1643` |
 | Extraction | Drive `read_file_text` отказал: **> 25 MB cap**. Страница *этого* PDF = по-прежнему `unchecked` |
-| **Печатная страница (закрыто 2026-10-07, вторая волна)** | Beveridge, *Institutes*, Calvin Translation Society 1845, **vol. II** (IA `institutesofchribeve02calv`): **§16 = с. 619–620** («16. The second passage adduced is that in which Paul says that "God will have all men to be saved," (1 Tim. ii. 4.)» — с. 619; разбор 2 Пет. 3:9 — с. 620). §15 — конец с. 618, §17 — с. 620–621 (точная граница не проверена) |
+| **Печатная страница (исправлено 2026-10-11)** | Beveridge, *Institutes*, Calvin Translation Society 1845, **vol. II** (IA `institutesofchribeve02calv`): **§16 = с. 601–602**, **§17 = с. 603–604** (внутри §17 аргумент Мф. 23:37 — с. 604); §15 заканчивается на с. 600. **Исправление:** до 2026-10-11 здесь стояло «§16 = с. 619–620, §17 = с. 620–621» — это были **номера листов скана (leaf), а не печатные страницы**. Смещение в этом диапазоне: **лист − 18 = печатная страница** (машинная карта `institutesofchribeve02calv_page_numbers.json`, `hocr_pagenumber_confidence: 100`; якоря: лист 613→595, 619→601, 621→603, 631→613, 637→619, 641→623, 645→627). Проверено OCR-поиском по скану: открытие §16 («16. The second passage adduced…») = лист 619; «speaking not of individuals, but of orders of men» и разбор 2 Пет. 3:9 = лист 620; «O Jerusalem… how often would I have gathered thy children» и «he does not in himself will opposites» = лист 622. Тот же класс ошибки, что уже ловили по WCF (лист 633–636 ≠ с. 619–622) |
 | Осторожность | В начале того же CCEL TXT стоит **Introduction by John Murray** — copyright. **Не цитировать, не ingest в Git.** Только тело Кальвина |
 
-Quote-safe для Product: **NO** до page в нашем Drive PDF *или* явного решения «Beveridge CCEL + book.chapter.section». Для research III.24.16–17 теперь **не LEAD**.
+**Локатор для Product — решение принято 2026-10-11 (item-level, только Кальвин III.24.16–17):** цитируем как **«John Calvin, *Institutes of the Christian Religion*, III.24.16–17, пер. Henry Beveridge (Calvin Translation Society, 1845), vol. II, с. 601–602 / 603–604»** — то есть book.chapter.section + печатная страница PD-издания. Обоснование: текст Beveridge общественное достояние, страницы проверены по полному скану IA (`NOT_IN_COPYRIGHT`), номер раздела устойчив и не зависит от издания. Наш Drive PDF `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` (45 MB) **не** является локатором — он только дубль текста, извлечь страницу из него нельзя (>25 MB cap). Якорь CCEL chunks 330–331 остаётся рабочим для research, но **не подставлять его в Product** как «CCEL chunk» — он нечитаем для читателя и привязан к чужому кэшу. Quote-safe для Product: **ДА для этого item-а**. Для research III.24.16–17 — **не LEAD**.
 
 ### A.2 Что Кальвин делает в III.24.15–17 (пересказ + короткие PD-якоря)
 
@@ -338,7 +338,7 @@ Schaff/CCEL даёт Дорт **только по-латыни** (см. B.1). А
 
 | Объект | Было | Стало |
 |---|---|---|
-| Calvin III.24.16–17 (1 Тим. 2:4, 2 Пет. 3:9) | LEAD / страница unchecked | **Beveridge CCEL chunk 330–331**; Drive PDF page still unchecked |
+| Calvin III.24.16–17 (1 Тим. 2:4, 2 Пет. 3:9) | LEAD / страница unchecked | **Beveridge CTS 1845 vol. II: §16 = с. 601–602, §17 = с. 603–604** (исправлено 2026-10-11; прежние «с. 619–620» были листами скана). CCEL chunks 330–331 — дублирующий research-якорь. Drive PDF — не локатор |
 | Calvin II.12, II.16, II.17 nature/merit | unchecked | **Beveridge chunks 155, 168, 176–177** |
 | Calvin 1 Ин. 2:2 comm. | реконструкция | без изменения (wall) |
 | Dort II articles | карта по памяти | CRCNA reading copy chunks 3–4 **и** Schaff Latin chunk 165 **и** Scott 1841 EN pp. 282–286 (§B.4) |
