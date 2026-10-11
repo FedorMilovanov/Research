@@ -372,7 +372,7 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 
 Что даёт / чего не даёт:
 
-- Даёт: PD-текст WCF 8 на EN **и** LA с проверенным локатором уровня «чанк + номер статьи + номер сноски Шаффа». По оси текста `locatorState = verified`. **Плюс печатная страница: vol. III (1919), гл. VIII — с. 633, постатейно 633 / 633 / 634 / 634 / 635 / 635 / 636 / 636** (вторая и третья волна 2026-10-07).
+- Даёт: PD-текст WCF 8 на EN **и** LA с проверенным локатором уровня «чанк + номер статьи + номер сноски Шаффа». По оси текста `locatorState = verified`. **Плюс печатная страница: vol. III (1919), гл. VIII — с. 619–622, постатейно 619 / 619 / 620 / 620 / 621 / 621 / 622 / 622** (вторая и третья волна 2026-10-07, **пересчитано 2026-10-08**; ряд 633–636, который стоит в строках волны 2026-10-07, — номера **листов**, см. §D.1).
 - Не даёт: **страницу нашего Drive PDF** (скан без текстового слоя — ось `unchecked` принципиально). Постатейная разбивка закрыта по изд. 1919.
 ---
 
@@ -409,3 +409,37 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 
 - Не даёт права публиковать: серия под `PUBLICATION_HOLD`, item-level решения по WCF EN не принималось.
 - Порядок чтения тот же, что у Дорта: 8.5 и 8.8 без 8.1 («given to him») и без 8.6 («unto the elect») — не цитировать как «Вестминстер об объёме».
+
+---
+
+### D.2 Большой катехизис (WLC 38–59) — локатор найден, но **не** в томе Шаффа (2026-10-11)
+
+**Сначала — отрицательный результат, он важный.** В `05` у `C03` (WLC 38–59) стоял локатор «CCEL / same WCF volume» — то есть предполагалось, что Большой катехизис лежит в том же томе Шаффа, что и Исповедание. **Это неверно.** Schaff, *Creeds of Christendom* vol. III (1919), IA `creedsofchristen0003phil_c6k6`, поиск по скану даёт на листе 690 прямой verbatim:
+
+> «Want of space compels us to omit the Assembly's Larger Catechism, which is easy of access. For the same reason we have omitted the Scripture proofs.»
+
+То есть Шафф печатает только fac-simile титула (лист 688) и первой страницы издания 1647 г. (лист 689), а сам текст катехизиса — **опущен**. Ссылаться на «тот же том Шаффа» по WLC больше нельзя.
+
+**Рабочий локатор найден вместо него:** *The Larger Catechism*, 1813, IA `largercatechism00west` (170 листов; `hocr_pagenumber_confidence: 95`). Смещение **лист − 12 = печатная страница**, подтверждено картой `largercatechism00west_page_numbers.json` (лист 19→7, 30→18, 31→19, 40→28, 48→36, 95→83 — без разрывов на всём диапазоне).
+
+| Вопрос | Текст-якорь (OCR) | Лист | Печатная страница |
+|---|---|---|---|
+| **Q. 38** | «Why was it requisite that the Mediator should be God?» | 30 | **18** |
+| **Q. 40** | «Why was it requisite that the Mediator should be God and man in one person?» | 31 | **19** |
+| **Q. 44** | «How doth Christ execute the office of a priest?» | 33 | **21** |
+| **Q. 57** | ответ: «Christ, by his mediation, hath procured redemp-…» | 40 | **28** |
+| **Q. 58** | «How do we came [sic] to be made partakers of the benefits which Christ hath procured?» | 41 | **29** |
+| **Q. 59** | «Who are made partakers of redemption through Christ?» | 41 | **29** |
+
+**Verbatim, Q. 59 (лист 41 = печатная 29):**
+
+> **Q. 59.** Who are made partakers of redemption through Christ?
+> **A.** Redemption is certainly applied, and effectually communicated, to all those for whom Christ hath purchased it; who are in time, by the Holy Ghost, enabled to believe in Christ according to the gospel.
+
+**Verbatim, Q. 58 (лист 41 = печатная 29):**
+
+> **A.** We are made partakers of the benefits which Christ hath procured, by the application of them unto us, which is the work especially of God the Holy Ghost.
+
+**Что это даёт по спору об объёме — и чего не даёт.** WLC 59 формулирует применение через «всех тех, для кого Христос искупил его» — то есть **структура та же, что в WCF 8.8** («To all those for whom Christ hath purchased redemption…»): катехизис определяет круг применения через круг приобретения, а не наоборот. Это исторический контроль против чтения «Христос приобрёл для всех, применилось к некоторым» в том смысле, будто приобретение шире применения. Но **прямого утверждения об объёме приобретения здесь нет**: Q. 59 говорит о том, кто становится причастником, и молчит о том, сколь широк круг purchased. Цитировать WLC 59 как «катехизис учит ограниченному искуплению» — то же самое выдёргивание, за которое корпус упрекает противоположную сторону в 1 Тим. 2:4. `EVIDENCE_HOLD` не снят.
+
+**Границы проверки.** Страницы получены OCR-поиском по скану и машинной картой страниц; **изображение конкретной страницы глазами не сверено**. Орфография скана 1813 г. неровная («came» вместо «come» в Q. 58, разрыв «redemp-/tion» в Q. 57) — при цитате в Product править по современному изданию. Нумерация вопросов в издании 1813 г. совпадает с общепринятой (Q. 38, 40, 57, 58, 59 дали ожидаемые формулировки), но это издание **до американских поправок** — для WLC это несущественно, для WCF было бы существенно.

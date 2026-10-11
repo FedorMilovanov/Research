@@ -396,6 +396,36 @@
         "correction2026-10-11": "The 2026-10-07 waves recorded III.24.16 as pp. 619-620 and III.24.17 as pp. 620-621. Those are LEAF numbers of this scan, not printed pages; the block had no offsetRule, unlike calvinCatholicEpistles1855 (leaf - 6) and owenGooldVolXPageMap (leaf - 16), which is what allowed the slip. Printed pages are 601-602 (section 16) and 603-604 (section 17). Same class of error as the WCF VIII correction (correction2026-10-08).",
         "notResolved": "the exact leaf where section 17 opens is not pinned separately: it begins on leaf 620 or 621 (pp. 602-603); only the Matt 23:37 argument inside it is anchored, to p. 604"
       },
+      "westminsterLargerCatechism1813": {
+        "item": "largercatechism00west",
+        "edition": "The Larger Catechism, 1813",
+        "scanUrl": "https://archive.org/details/largercatechism00west",
+        "rights": "public-domain",
+        "offsetRule": "printed page = scan leaf - 12",
+        "offsetSource": "largercatechism00west_page_numbers.json (file-level confidence 95); anchors leaf 19->7, 30->18, 31->19, 40->28, 48->36, 95->83, continuous across the range",
+        "replacesRegistryEntry": "C03",
+        "questions": {
+          "38": "18",
+          "40": "19",
+          "44": "21",
+          "57": "28",
+          "58": "29",
+          "59": "29"
+        },
+        "quoteAnchors": [
+          "Q. 38 'Why was it requisite that the Mediator should be God?' - leaf 30 = p. 18",
+          "Q. 40 'Why was it requisite that the Mediator should be God and man in one person?' - leaf 31 = p. 19",
+          "Q. 44 'How doth Christ execute the office of a priest?' - leaf 33 = p. 21",
+          "Q. 57 answer 'Christ, by his mediation, hath procured redemp-' - leaf 40 = p. 28",
+          "Q. 58 'How do we came [sic] to be made partakers of the benefits which Christ hath procured?' - leaf 41 = p. 29",
+          "Q. 59 'Who are made partakers of redemption through Christ?' - leaf 41 = p. 29"
+        ],
+        "verbatimQ59": "A. Redemption is certainly applied, and effectually communicated, to all those for whom Christ hath purchased it; who are in time, by the Holy Ghost, enabled to believe in Christ according to the gospel.",
+        "verbatimQ58": "We are made partakers of the benefits which Christ hath procured, by the application of them unto us, which is the work especially of God the Holy Ghost.",
+        "negativeFinding2026-10-11": "The Schaff volume that carries the Westminster Confession does NOT carry the Larger Catechism. Schaff, Creeds of Christendom vol. III (1919), scan creedsofchristen0003phil_c6k6, leaf 690: 'Want of space compels us to omit the Assembly's Larger Catechism, which is easy of access. For the same reason we have omitted the Scripture proofs.' Only fac-similes of the title page (leaf 688) and the first page of the 1647 edition (leaf 689) are printed. The former registry locator 'CCEL / same WCF volume' for C03 was therefore wrong.",
+        "doctrinalCaveat": "Q. 59 defines the circle of application by the circle of purchase - the same structure as WCF 8.8 - but says nothing about how wide the purchase is. It is not a proof of limited atonement; EVIDENCE_HOLD is not lifted.",
+        "notResolved": "page image not visually verified; OCR of the 1813 scan is uneven ('came' for 'come' in Q. 58, 'redemp-/tion' split in Q. 57); edition predates the American alterations (immaterial for the Larger Catechism, unlike the Confession)"
+      },
       "calvinCatholicEpistles1855": {
         "edition": "John Calvin, Commentaries on the Catholic Epistles, trans. and ed. by the Rev. John Owen (Edinburgh: Calvin Translation Society, 1855)",
         "source": "Internet Archive scan commentariesonca00calv (Princeton Theological Seminary Library), Possible copyright status: NOT_IN_COPYRIGHT",
