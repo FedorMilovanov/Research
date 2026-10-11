@@ -9,16 +9,9 @@
   "rootAuthorityUnchanged": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
   "agent": "agent-4-synthesis",
   "sessionBranch": "arena/5fe5b33f-research",
-  "fallback": {
-    "active": false,
-    "reason": "E2B sandbox (bash/read/write/start_process) failed to initialize for the whole session (~40 min, 16+ attempts, all workspace tools). Files written to Google Drive corpus folder as fallback; canonical home remains Git ИСКУПЛЕНИЕ/synthesis/.",
-    "driveParentFolder": "1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV",
-    "driveParentName": "07 — СЕРИЯ «ИСКУПЛЕНИЕ»",
-    "driveFallbackFolder": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2",
-    "driveFallbackFolderName": "09 — SYNTHESIS (agent 4) — FALLBACK 2026-10-07 (E2B sandbox down)",
-    "drivePresenceDoesNotLiftHolds": true,
-    "resolvedOn": "2026-10-08",
-    "resolvedBy": "ingested into Git by the coordinator session (branch arena/dddc1326-research, PR #209); Drive copies updated from canon with the same IDs"
+  "provenance": {
+    "note": "Deliverables drafted while the E2B sandbox was down (~40 min, 16+ failed workspace calls); held as fallback in Google Drive corpus folder 18U6dslSsNJ20CwlAHTYRrO318mGohtI2 (07 — СЕРИЯ «ИСКУПЛЕНИЕ» → 09 — SYNTHESIS (agent 4) — FALLBACK 2026-10-07), then transferred to Git unchanged after sandbox recovery. Drive presence did not and does not lift any HOLD.",
+    "driveFallbackFolder": "18U6dslSsNJ20CwlAHTYRrO318mGohtI2"
   },
   "holds": [
     "PUBLICATION_HOLD",
@@ -30,46 +23,102 @@
   "deliverables": [
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
-      "driveFileId": "1AnV1Q137HnN8zNqyn9xJOeo6wzuTe4ws",
       "role": "общая карта: тезисы T1–T8 по слоям с осями и статусами; доказано / не доказано / конфликты; граница допустимой формулировки",
-      "status": "DONE",
-      "priorDriveFileId": "101_Q15IzPajiATl86OsaKUow0jArl58h"
+      "status": "DONE"
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
-      "driveFileId": "11lznQuu7weVv99mt-DW_0o_DEv2FDzo_",
       "role": "состав, порядок, оценка объёма диапазоном (минимум 4 / цель 13 / потолок 16–18); первая статья — «Что такое искупление»",
-      "status": "DONE",
-      "priorDriveFileId": "1wjYa-bNbC_mrYScOSOavUCt1brG0So9p"
+      "status": "DONE"
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
-      "driveFileId": "151yu6HTO2j6RSkwNCk5YnbQY2XuO7g8H",
       "role": "реестр разногласий C-01…C-15; снято молча: 0",
-      "status": "DONE",
-      "priorDriveFileId": "1Vn9Vzdiri98PgdehkPGAMsBoiIA_F7gX"
+      "status": "DONE"
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
-      "driveFileId": "1YDkHr38ddVGimxxppFQB0Pa7woMGYEFf",
       "role": "пастырские правила; «как не сломать совесть» с обеих сторон; таблица «сказать / не сказать»",
-      "status": "DONE",
-      "priorDriveFileId": "1Tbd2IsZ1Ls8gLwLW2TP4GSQBTP5IYNQH"
+      "status": "DONE"
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
-      "driveFileId": "1zlK97uW5wEByt_3HUEYBE5NCdLr-wPQ1",
       "role": "первый черновик читательской статьи (слой A1)",
       "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
-      "quotePolicy": "Писание (Синодальный, PD) с локаторами-стихами; исповедания — по номерам статей; нет ни одной цитаты современных авторов (RIGHTS_HOLD)",
-      "priorDriveFileId": "1MWqCtUztQF_jfI8ffIYX5aYjmQ5lq35L"
+      "quotePolicy": "Писание (Синодальный, PD) с локаторами-стихами; исповедания — по номерам статей; нет ни одной цитаты современных авторов (RIGHTS_HOLD)"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+      "role": "черновик статьи A2 (необходимость искупления): две линии ответа, любовь первична",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.1–2 по номерам; Мюррей — пересказ B1 через 10_ с пометкой, без цитат"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+      "role": "черновик статьи A3 (природа искупления): послушание + 4 категории + победа; маршрут-предложение /articles/priroda-iskupleniya-krest/",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.3 по номеру; Мюррей I.2 — пересказ B1 через 10_ с пометкой, без цитат"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+      "role": "черновик статьи A4 (совершенство): раз и навсегда; не полемика ради полемики; узел definiteness без коммерческой карикатуры",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.3/II.4 + Rejection I/VI по номерам; Мюррей I.3 — пересказ B1 через 10_ с пометкой, без цитат"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+      "role": "черновик статьи B1 (постановка вопроса об объёме): правильные вопросы, оси, позиции P1–P8 без карикатур, история спора, ось offer; вердикт не вынесен",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "как в drafts/01: Писание (Синодальный) с локаторами; Дорт II.3/II.5/II.8 + Rejection по номерам; Кальвин III.24.16–17 — пересказ по chunks 330–331; OPC 1948 — пересказ; без цитат современных авторов",
+      "note": "B1 — первая статья слоя B; ставит вопрос, не выносит вердикт (EVIDENCE_HOLD). B2 не начинать до закрытия HARD-досье"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "role": "черновик статьи B3 (Дорт II.1–9 + Rejection I–VII по номерам; три латинских якоря из Schaff; что синод не сказал; риск формулы)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "исповедание по номерам статей и пересказ; короткие латинские якоря (PD, Schaff) со сверкой; без цитат современных авторов",
+      "note": "номер 06 (B2) зарезервирован и остаётся под gate: HARD-досье открыты, EVIDENCE_HOLD — черновик не пишется"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "role": "черновик статьи B4 (реформатская семья изнутри: три particular-чтения 1 Ин 2:2 и 1 Тим 2:4; Мюррей-лексика vs Оуэн-экзегеза на 2 Пет 2:1; гипотетический универсализм; амиральдианство)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Кальвин/Оуэн — пересказ по research-локаторам (chunks); Гилл — ссылка; Мюррей — пересказ B1; без прямых цитат"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "role": "черновик статьи B5 (свободное предложение: ось offer отдельно от оси extent; Дорт II.5; Кальвин III.24.16–17; OPC 1948 с majority+minority; hyper-Calvinism — отдельная ошибка)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Дорт по номеру; Кальвин — пересказ по chunks 330–331; OPC 1948 — пересказ, не исповедание; без цитат современных авторов"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+      "role": "черновик статьи B6 (TULIP как учебный акростих, не догма; пять пунктов со спорами; L под EVIDENCE_HOLD; без карикатур; тон площадки)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный) с локаторами; без цитат современных авторов; TULIP — не первая статья серии"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "role": "черновик статьи C1 (ordo salutis как педагогика; восемь звеньев; стыки с «Сердце»/«Отступничество» по ссылке)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный) с локаторами; Мюррей Part II — пересказ B1 через 10_; без цитат современных авторов"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "role": "черновик статьи C2 (союз как основание, не ступень; «во Христе» шире применения; уверенность на союзе)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный) с локаторами; Мюррей II.9 — пересказ B1 через 10_; без цитат современных авторов"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "role": "черновик статьи C3 (оправдание forensic; усыновление; освящение; постоянство с оговоркой Евр 10:29 и временной веры; финал основного состава)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный) с локаторами; Оуэн Евр 10:29 — пересказ по chunks 88–89; Мюррей — пересказ B1; без цитат современных авторов"
     },
     {
       "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
-      "driveFileId": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
       "role": "SSOT под-корпуса (этот файл)",
-      "status": "DONE",
-      "priorDriveFileId": "1ehznH7G-2etlICzPokOcaAYpQwHVVxqO"
+      "status": "DONE"
     }
   ],
   "seriesWorkingPlan": {
@@ -82,24 +131,10 @@
     },
     "firstArticle": "Что такое искупление (слой A1)",
     "startWithTulipForbidden": true,
-    "layers": [
-      "A-foundation",
-      "B-extent-and-nuance",
-      "C-application",
-      "D-reserve"
-    ]
+    "layers": ["A-foundation", "B-extent-and-nuance", "C-application", "D-reserve"]
   },
   "synthesisMap": {
-    "theses": [
-      "T1 nature",
-      "T2 necessity",
-      "T3 perfection",
-      "T4 intent (спорно)",
-      "T5 extent HARD (не доказано, EVIDENCE_HOLD)",
-      "T6 sufficiency/efficiency (исповедный контроль)",
-      "T7 application (педагогический каркас)",
-      "T8 offer (доказано для живых реформатских линий)"
-    ],
+    "theses": ["T1 nature", "T2 necessity", "T3 perfection", "T4 intent (спорно)", "T5 extent HARD (не доказано, EVIDENCE_HOLD)", "T6 sufficiency/efficiency (исповедный контроль)", "T7 application (педагогический каркас)", "T8 offer (доказано для живых реформатских линий)"],
     "layersState": {
       "ot": "not-created-yet (agent ВЗ)",
       "nt": "not-created-yet (agent НЗ)",
@@ -110,21 +145,20 @@
   },
   "conflictLedger": {
     "path": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
-    "entries": 16,
-    "silenced": 0,
-    "added2026-10-08": "C-16: internal-Calvin tension on 1 Tim 2:4 (p.55 'classes of men') vs 2:5 (p.56 'the fruit of the sacrifice... extends to all') vs 2:6 (p.61 'universal and perpetual'), CTS 1856 - status TENSION, both halves must be quoted together"
+    "entries": 15,
+    "silenced": 0
   },
   "verdict": {
-    "extentDispute": "NO VERDICT — EVIDENCE_HOLD stands (including after ingest 2026-10-08)",
+    "extentDispute": "NO VERDICT — EVIDENCE_HOLD stands",
     "siteTone": "умеренный реформатский кальвинизм; Дорт II как исповедный центр; свободное предложение всем; без hyper-Calvinism и без карикатур (контекст владельца, не вывод корпуса)"
   },
-  "blockedByEnvironment": {
-    "gitCommit": true,
-    "gitPush": true,
-    "pullRequest": true,
-    "validatorsRun": true,
-    "ciCheck": null,
-    "note": "Снято сессией-координатором 2026-10-08: файлы перенесены в Git, валидаторы прогнаны, commit+push+PR сделаны в ветке координатора arena/dddc1326-research (ветка агента №4 arena/5fe5b33f-research не существует на GitHub). ciCheck обновляется после прогона Actions."
+  "validation": {
+    "baselineOnCleanHead": {
+      "validate_research_root_authority.py": "PASS",
+      "validate_research_stage_closure.py": "PASS",
+      "validate_genesis6_authority_manifest.py": "FAIL (expected local: authorityBaseCommit b654c5375a7b212ff9b42c08bb0193eeaad70746 unavailable in shallow clone)"
+    },
+    "afterSynthesisFiles": "re-run required after commit; expected identical to baseline (new files are additive under ИСКУПЛЕНИЕ/synthesis/)"
   },
   "doNot": [
     "claim-limited-atonement-proved",
@@ -135,24 +169,5 @@
     "edit-other-agent-subcorpora (ot/, nt/, fathers/, Джон Гилл/)",
     "change-research-root-authority",
     "silence-a-conflict-without-text-and-locator"
-  ],
-  "ingestedIntoGit": {
-    "date": "2026-10-08",
-    "branch": "arena/dddc1326-research",
-    "pullRequest": 209,
-    "canonicalPath": "ИСКУПЛЕНИЕ/synthesis/",
-    "correctionsAtIngest": [
-      "T5 (00_SYNTHESIS_AUTHORITY §2): убрано «Мюррей закрывает … 2 Кор. 5:14, Евр. 2:9» — материнский корпус `10_` §3 прямо запрещает считать эти локусы закрытыми; заменено на «даёт particular-чтение, локус не закрыт»",
-      "00_SYNTHESIS_AUTHORITY §3: «12 зафиксированных расхождений» → 15 (C-01…C-15) по факту реестра",
-      "03_PRACTICAL_AND_PASTORAL_NOTES §2.1: цитата Мф. 11:28 приведена к Синодальному («труждающиеся», было «тружящиеся»)",
-      "03_PRACTICAL_AND_PASTORAL_NOTES §5: реплика «нельзя молиться за каждого (1 Ин. 5:16)» атрибутирована как чтение Оуэна (`14_` §2.2), а не норма корпуса",
-      "drafts/01_what-is-atonement.md §5: та же правка цитаты Мф. 11:28",
-      "во всех файлах: пометка «fallback» заменена на историю создания + статус переноса"
-    ],
-    "driveRefresh": {
-      "date": "2026-10-08",
-      "method": "upload_file from the Git working copy (byte-accurate); previous agent uploads moved to folder 99 — HOLD, nothing deleted",
-      "driveFolderRenamedTo": "09 — SYNTHESIS (agent 4) — INGESTED INTO GIT 2026-10-08"
-    }
-  }
+  ]
 }
