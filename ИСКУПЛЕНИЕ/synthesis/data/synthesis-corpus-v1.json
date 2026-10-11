@@ -73,6 +73,49 @@
       "note": "B1 — первая статья слоя B; ставит вопрос, не выносит вердикт (EVIDENCE_HOLD). B2 не начинать до закрытия HARD-досье"
     },
     {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+      "role": "черновик статьи B3 (Дорт II.1–9 + Rejection I–VII по номерам; три латинских якоря из Schaff; что синод не сказал; риск формулы)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "исповедание по номерам статей и пересказ; короткие латинские якоря (PD, Schaff) со сверкой; без цитат современных авторов",
+      "note": "номер 06 (B2) зарезервирован и остаётся под gate: HARD-досье открыты, EVIDENCE_HOLD — черновик не пишется"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+      "role": "черновик статьи B4 (реформатская семья изнутри: три particular-чтения 1 Ин 2:2 и 1 Тим 2:4; Мюррей-лексика vs Оуэн-экзегеза на 2 Пет 2:1; гипотетический универсализм; амиральдианство)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Кальвин/Оуэн — пересказ по research-локаторам (chunks); Гилл — ссылка; Мюррей — пересказ B1; без прямых цитат"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+      "role": "черновик статьи B5 (свободное предложение: ось offer отдельно от оси extent; Дорт II.5; Кальвин III.24.16–17; OPC 1948 с majority+minority; hyper-Calvinism — отдельная ошибка)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Дорт по номеру; Кальвин — пересказ по chunks 330–331; OPC 1948 — пересказ, не исповедание; без цитат современных авторов"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+      "role": "черновик статьи B6 (TULIP как учебный акростих, не догма; пять пунктов со спорами; L под EVIDENCE_HOLD; без карикатур; тон площадки)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный) с локаторами; без цитат современных авторов; TULIP — не первая статья серии"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+      "role": "черновик статьи C1 (ordo salutis как педагогика; восемь звеньев; стыки с «Сердце»/«Отступничество» по ссылке)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный) с локаторами; Мюррей Part II — пересказ B1 через 10_; без цитат современных авторов"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+      "role": "черновик статьи C2 (союз как основание, не ступень; «во Христе» шире применения; уверенность на союзе)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный) с локаторами; Мюррей II.9 — пересказ B1 через 10_; без цитат современных авторов"
+    },
+    {
+      "path": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+      "role": "черновик статьи C3 (оправдание forensic; усыновление; освящение; постоянство с оговоркой Евр 10:29 и временной веры; финал основного состава)",
+      "status": "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD",
+      "quotePolicy": "Писание (Синодальный) с локаторами; Оуэн Евр 10:29 — пересказ по chunks 88–89; Мюррей — пересказ B1; без цитат современных авторов"
+    },
+    {
       "path": "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json",
       "role": "SSOT под-корпуса (этот файл)",
       "status": "DONE"
