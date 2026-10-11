@@ -1,13 +1,13 @@
 # Дорт II, Кальвин, Оуэн — historical control объёма
 
 **Дата:** 2026-10-07  
-**Статус:** `RESEARCH / LOCATOR_HOLD на страницах Drive / NOT PRODUCT`  
+**Статус:** `RESEARCH / NOT PRODUCT`. Страницы больше не на `LOCATOR_HOLD`: печатные страницы Кальвина и Оуэна закрыты по PD-сканам IA (2026-10-11, см. §2.1 и §3), **внутрискановая пагинация наших Drive PDF по-прежнему `unchecked` и больше не нужна** — эти PDF только дубли текста, извлечь их нельзя (extraction cap).  
 **Соседи:** [`12_HARD_TEXTS_EXTENT_CARDS.md`](12_HARD_TEXTS_EXTENT_CARDS.md), [`04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md`](04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md)  
 **Drive PD:** Calvin Institutes `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ`; Owen Works `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY`; WCF `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` — `locatorState=unchecked`.
 
 Исповедание — не Писание. Historical control нужен, чтобы не врать ни «реформатство всегда говорило одно», ни «limited atonement выдумал XIX век».
 
-CCEL reader (Schaff Creeds III, Calvin Catholic Epistles) 2026-10-07 часто **login-wall**: страница грузится пустой. Не ретраить `ccel.org/ccel/calvin/calcom45.iv.iii.html` и не делать вид, что Institutes PDF уже сверен постранично. Ниже — рабочие парафразы с номерами статей / locus; quote-safe после ingest.
+CCEL reader (Schaff Creeds III, Calvin Catholic Epistles) 2026-10-07 часто **login-wall**: страница грузится пустой. Не ретраить `ccel.org/ccel/calvin/calcom45.iv.iii.html` (reader за логином, пуст). Сверка постранично сделана **не по Institutes PDF, а по PD-скану Beveridge CTS 1845 vol. II** — см. §2.1; сам Drive PDF не извлекается, и это закрыто с доказательством, а не отложено. Ниже — рабочие парафразы с номерами статей / locus; quote-safe после ingest.
 
 ---
 
@@ -72,9 +72,15 @@ II.9: это совет совершится; церковь собиралас�
 
 Запрещённые фразы отдела: «Кальвин учил тому же, что Оуэн, слово в слово»; «Кальвин учил unlimited, значит limited — не реформатство».
 
-### 2.1 Institutes (Drive PDF есть, страница не сверена)
+### 2.1 Institutes (печатная страница свершена по PD-скану, 2026-10-11)
 
-Рабочие локусы, которые **надо** открыть в `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` (и/или CCEL Institutes вне login-wall):
+Страницы больше **не** ждут сверки: Beveridge, *Institutes*, Calvin Translation Society 1845, **vol. II** (IA `institutesofchribeve02calv`, `NOT_IN_COPYRIGHT`) — **§16 = с. 601–602**, **§17 = с. 603–604**, §15 заканчивается на с. 600. Смещение **лист − 18 = печатная страница**; машинная карта `…_page_numbers.json` (`confidence: 100`) плюс три OCR-якоря (открытие §16 = л. 619, «orders of men» и 2 Пет. 3:9 = л. 620, Мф. 23:37 = л. 622). Подробно и с verbatim — [`15` §A.1](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
+
+**Исправление 2026-10-11:** в этом разделе и в `15` раньше стояло «III.24.16 = с. 619–620, III.24.17 = с. 620–621». Это были **номера листов** скана, записанные как страницы, — блок `calvinBeveridgeVolumeII` в JSON не имел `offsetRule`, в отличие от `calvinCatholicEpistles1855` (−6) и Owen vol. X (−16), что и позволило ошибку. Тот же класс, что уже ловили по WCF VIII (листы 633–636 ≠ с. 619–622).
+
+Наш Drive PDF `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` (45 MB) **не является локатором**: `read_file_text` отказывает по extraction cap. Он только дубль текста. CCEL TXT (`institutes.txt`, 578 чанков) остаётся research-якорем: III.24.15–17 = чанки **330–331**, II.12 = 155, II.16 = 168, II.17 = 176–177.
+
+Рабочие локусы, которые надо открыть в CCEL TXT (login-wall нет) или по скану:
 
 | Locus | Зачем |
 |---|---|
@@ -142,9 +148,9 @@ LEAD. Не заполнять памятью. Когда откроется CCEL
 - Не использовать 404 `…/deathofdeath/deathofdeath.html`.
 - PDF: https://www.ccel.org/ccel/o/owen/deathofdeath/cache/deathofdeath.pdf
 - Archive: https://archive.org/details/deathofdeathinde00owen
-- Drive *Works* PDF `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` — обычно Goold vol. 10; **том/страница не сверены**.
+- Drive *Works* PDF `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` — раньше значился «обычно Goold vol. 10»; теперь это закрыто: это перепечатка **Goold/Banner vol. X**, том и страница **сверены по PD-скану** `worksofjohnowe185010owen` (1850, `NOT_IN_COPYRIGHT`), смещение **лист − 16 = печатная страница**, подтверждено колонтитулами и оглавлением тома. Сам PDF извлечь нельзя (42 MB, extraction cap) — он дубль, **не локатор**.
 
-`R03`/`R04`: quote-safe NO until Goold page. **Содержание Book IV** — [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md). CCEL TXT открыт (358 чанков). Dedicated **1 Тим. 2:4, 6** = 80–81; 2 Пет. 3:9 / Евр. 2:9 = 82; 2 Кор. 5:14 = 83; Рим. 5:18 = 84; **2 Пет. 2:1 / Рим. 14:15 / 1 Кор. 8:11 / Евр. 10:29 = 86–89**. Drive *Works* 42 MB не извлекается.
+`R03`/`R04`: quote-safe **с локатором страницы** — Goold vol. X, Book IV: III **330**, IV **343**, V **359**, VI **368**, VII **404**; 2 Пет. 2:1 = **362–363** (л. 378–379), 2 Пет. 3:9 = **348** (л. 364) и **543** (л. 559, *Dissertation on Divine Justice*, не *Death of Death*); сводка «Proof 16» = **401** (л. 417). Полные verbatim и предосторожности — [`14` §2.6](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md). `PUBLICATION_HOLD` не снят. **Содержание Book IV** — [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md). CCEL TXT открыт (358 чанков). Dedicated **1 Тим. 2:4, 6** = 80–81; 2 Пет. 3:9 / Евр. 2:9 = 82; 2 Кор. 5:14 = 83; Рим. 5:18 = 84; **2 Пет. 2:1 / Рим. 14:15 / 1 Кор. 8:11 / Евр. 10:29 = 86–89**. Drive *Works* 42 MB не извлекается.
 
 ### 3.1 Устройство трактата (навигация)
 
