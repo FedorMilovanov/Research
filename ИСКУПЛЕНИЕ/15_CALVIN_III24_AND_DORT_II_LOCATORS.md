@@ -479,3 +479,32 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 **Что это даёт по спору об объёме — и чего не даёт.** WLC 59 формулирует применение через «всех тех, для кого Христос искупил его» — то есть **структура та же, что в WCF 8.8** («To all those for whom Christ hath purchased redemption…»): катехизис определяет круг применения через круг приобретения, а не наоборот. Это исторический контроль против чтения «Христос приобрёл для всех, применилось к некоторым» в том смысле, будто приобретение шире применения. Но **прямого утверждения об объёме приобретения здесь нет**: Q. 59 говорит о том, кто становится причастником, и молчит о том, сколь широк круг purchased. Цитировать WLC 59 как «катехизис учит ограниченному искуплению» — то же самое выдёргивание, за которое корпус упрекает противоположную сторону в 1 Тим. 2:4. `EVIDENCE_HOLD` не снят.
 
 **Границы проверки.** Страницы получены OCR-поиском по скану и машинной картой страниц; **изображение конкретной страницы глазами не сверено**. Орфография скана 1813 г. неровная («came» вместо «come» в Q. 58, разрыв «redemp-/tion» в Q. 57) — при цитате в Product править по современному изданию. Нумерация вопросов в издании 1813 г. совпадает с общепринятой (Q. 38, 40, 57, 58, 59 дали ожидаемые формулировки), но это издание **до американских поправок** — для WLC это несущественно, для WCF было бы существенно.
+
+---
+
+### D.3 Второе лондонское исповедание 1689 (баптистский twin) — локатор глав (2026-10-11)
+
+**Издание:** *A Confession of Faith, put forth by the elders and brethren of many congregations of Christians (baptized upon profession of their faith) in London and the country* (Charleston, **1850**), IA `confessionoffait00char`, 134 листа, `hocr_pagenumber_confidence: 89`.
+
+**Смещение лист − 6 = печатная страница.** Карта `confessionoffait00char_page_numbers.json`: лист 48→42, 49→43, 55→49, 63→57, 65→59, 67→61, 71→65 — без разрывов.
+
+| Объект | Лист | Печатная страница | Подтверждение |
+|---|---|---|---|
+| Гл. **VIII** «Of Christ the Mediator» | 29 | **23** | заголовок + **оглавление тома** (лист 72): «viii — Of Christ the Mediator … 23» |
+| Гл. **XI** «Of Justification», §1 | 35 | **29** | текст §1 + **оглавление тома** (лист 72): «xi — Of Justification … 29» |
+| Оглавление тома | 72 | (без номера) | — |
+
+Две независимые привязки на каждый локус (заголовок/текст и собственное оглавление издания) — это тот же стандарт, что применялся к Оуэну и Кальвину.
+
+**Verbatim, гл. XI § 1 (лист 35 = с. 29; OCR неровный, опечатки исправлены по смыслу, курсивом — места, прочитанные неуверенно):**
+
+> **1.** Those whom God effectually calleth, he also freely justifieth; not by infusing righteousness into them, but by pardoning their sins, and by accounting and accepting their persons as righteous; not for any thing wrought in them, or done by them, but for Christ's sake alone; not by imputing faith itself, the act of believing, or any other evangelical obedience to them, as their righteousness, but by imputing Christ's active obedience unto the whole law and passive obedience in his death, for their whole and sole righteousness; they receiving and resting on him and his righteousness by faith, which they have not of themselves: it is the gift of God.
+
+**Чего здесь НЕ получено — и почему это записано прямо.**
+
+- **Померных страниц внутри глав нет.** Ключевая для спора об объёме формула 1689 (§8 гл. VIII, параллель WCF 8.8: «To all those for whom Christ hath purchased redemption he doth certainly and effectually apply and communicate the same…») поиском по этому скану **не находится** — ни по «for whom Christ hath purchased redemption», ни по «apply and communicate». Причина: качество OCR. В статистике тома `word_conf_0_10: 11949` против `word_conf_91_100: 41` — то есть подавляющее большинство слов распознано с низкой уверенностью. Заголовки и оглавление читаются, сплошной текст — плохо.
+- Следовательно **на уровне параграфа 1689 по этому скану цитировать нельзя**. Если понадобятся 8.5 / 8.8 постранично — брать другой скан: `confessionoffait02phil` (1773), `confessionoffait03phil` (1798), `confessionoffait00phil` (1818). Филадельфийские издания 1719 / 1743 / 1790 (`bim_eighteenth-century_a-confession-of-faith-p_…`) тоже доступны, но они несут две **добавленные статьи** (возложение рук, пение псалмов), которых в лондонском 1689 нет, — для гл. VIII и XI это несущественно, но при цитате указывать издание обязательно.
+- Проверено, что в данном издании 1689 **нет** филадельфийских добавлений: оборот «imposition of hands» встречается один раз (лист 62) в обычном контексте поставления диакона, а не как отдельная глава.
+- **Сверка с факсимиле не делалась.** Уровень — глава и (для XI) первый параграф, подтверждённый оглавлением.
+
+**Зачем это в корпусе.** 1689 — баптистский twin Вестминстера: почти дословно воспроизводит WCF с изменениями в главах о церкви, крещении и клятве. Для сайта, который ведёт баптистская община, это не «дополнительный» документ, а **свой** символ веры. Но по вопросу объёма он ничего не добавляет к WCF 8.5/8.8: та же структура, то же молчание о широте приобретения. `EVIDENCE_HOLD` не снят, и «twin» не означает «доказательство».

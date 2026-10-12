@@ -426,6 +426,33 @@
         "doctrinalCaveat": "Q. 59 defines the circle of application by the circle of purchase - the same structure as WCF 8.8 - but says nothing about how wide the purchase is. It is not a proof of limited atonement; EVIDENCE_HOLD is not lifted.",
         "notResolved": "page image not visually verified; OCR of the 1813 scan is uneven ('came' for 'come' in Q. 58, 'redemp-/tion' split in Q. 57); edition predates the American alterations (immaterial for the Larger Catechism, unlike the Confession)"
       },
+      "secondLondonBaptistConfession1850": {
+        "item": "confessionoffait00char",
+        "edition": "A Confession of Faith, put forth by the elders and brethren of many congregations of Christians (baptized upon profession of their faith) in London and the country (Charleston, 1850), 134 leaves",
+        "rights": "public-domain",
+        "offsetRule": "printed page = scan leaf - 6",
+        "offsetSource": "confessionoffait00char_page_numbers.json (hocr_pagenumber_confidence 89); anchors leaf 48->42, 49->43, 55->49, 63->57, 65->59, 67->61, 71->65",
+        "replacesRegistryEntry": "C04",
+        "chapters": {
+          "8_OfChristTheMediator": "23",
+          "11_OfJustification": "29"
+        },
+        "quoteAnchors": [
+          "chapter VIII heading 'Of Christ the Mediator' - leaf 29 = p. 23",
+          "volume's own table of contents (leaf 72): 'viii - Of Christ the Mediator ... 23'",
+          "chapter XI section 1 text 'Those whom God effectually calleth, he also freely justifieth' - leaf 35 = p. 29",
+          "volume's own table of contents (leaf 72): 'xi - Of Justification ... 29'"
+        ],
+        "verbatimChapter11Section1": "Those whom God effectually calleth, he also freely justifieth; not by infusing righteousness into them, but by pardoning their sins, and by accounting and accepting their persons as righteous; not for any thing wrought in them, or done by them, but for Christ's sake alone; not by imputing faith itself, the act of believing, or any other evangelical obedience to them, as their righteousness, but by imputing Christ's active obedience unto the whole law and passive obedience in his death, for their whole and sole righteousness; they receiving and resting on him and his righteousness by faith, which they have not of themselves: it is the gift of God.",
+        "notResolved": [
+          "NO paragraph-level pages. The extent-relevant formula of 2LBC 8.8 (parallel to WCF 8.8, 'To all those for whom Christ hath purchased redemption he doth certainly and effectually apply and communicate the same') is not retrievable by OCR search in this scan - neither 'for whom Christ hath purchased redemption' nor 'apply and communicate' returns a hit. Cause is OCR quality: word_conf_0_10 = 11949 vs word_conf_91_100 = 41. Headings and the table of contents read cleanly; continuous body text does not.",
+          "Therefore paragraph-level quotation from THIS scan is not permitted. If 8.5 / 8.8 pages are needed, use another scan: confessionoffait02phil (1773), confessionoffait03phil (1798), confessionoffait00phil (1818).",
+          "The Philadelphia editions (1719, 1743, 1790, bim_eighteenth-century_a-confession-of-faith-p_*) carry two ADDED articles (imposition of hands, singing of psalms) not present in the London 1689. Immaterial for chapters 8 and 11, but the edition must always be named when quoting.",
+          "Verified that this particular scan is NOT a Philadelphia edition: 'imposition of hands' occurs once (leaf 62), in the ordinary context of setting apart a deacon, not as a separate chapter.",
+          "No facsimile collation. Level achieved: chapter, plus chapter 11 section 1 confirmed by the table of contents."
+        ],
+        "doctrinalNote": "1689 is the Baptist twin of Westminster: it reproduces WCF nearly verbatim with changes on the church, baptism and the oath. It adds nothing to WCF 8.5/8.8 on the extent question - same structure, same silence about how wide the purchase is. EVIDENCE_HOLD is not lifted, and 'twin' does not mean 'proof'."
+      },
       "calvinHebrews1853": {
         "item": "commentariesowentran00calv",
         "edition": "John Calvin, Commentaries on the Epistle of Paul the Apostle to the Hebrews, trans. and ed. by John Owen (Edinburgh: Calvin Translation Society, 1853), 466 leaves",
