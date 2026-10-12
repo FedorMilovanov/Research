@@ -183,6 +183,31 @@
         "ECM": 1
       },
       "naDivergencesFromSblgnt": 88
+    },
+    {
+      "id": "S8",
+      "name": "Tregelles, The Greek New Testament (London 1857–1879), транскрипция Tyndale House Cambridge 2009",
+      "role": "независимый критический текст; им проверяется сам аппарат S7. Аппарата НЕ содержит",
+      "evidenceClass": "A1 как греческий текст XIX века; редакторские решения Тregеллса — editorial",
+      "accessState": "acquired-full",
+      "locatorState": "verse-level; аппарата нет — проверено: 0 вхождений א и 0 сокращений версий (syr/arm/cop/vulg), хотя титул издания обещает «with their Various Readings in Full»",
+      "rightsState": "текст XIX века — PD; цифровая транскрипция Tyndale House — CC BY-NC-SA 3.0. В Git не публикуется",
+      "publicationState": "NOT-APPROVED",
+      "repository": "mrgreekgeek/tregelles-greek-nt",
+      "commit": "07ecf2165c9e404926365f5060b8150e0e19af49",
+      "files": 2,
+      "lines": 31891,
+      "sha256OfDataset": "52efbe59b499b9e366c8c90bfa6793c5b72a44f18011a8e8187fa7b1a29b7e32",
+      "committedToGit": false,
+      "transcription": "Tyndale House Cambridge 2009: D. Jongkind, J. Woodson, N. Pfister, R. Crellin; консульт. ред. P. J. Williams",
+      "corroboratesS7": {
+        "Мк 14:24": "ὑπὲρ πολλῶν — сошлось",
+        "Гал 1:4": "περὶ — сошлось",
+        "1 Пет 3:18": "ἀπέθανεν — сошлось",
+        "Ин 3:16": "+ αὐτοῦ — сошлось",
+        "итог": "4 из 4"
+      },
+      "note": "Tregelles читает περί в Гал 1:4, но ὑπὲρ в Мк 14:24: предлог у него не системное предпочтение, а решение по каждому месту. Поэтому «традиция читает X» можно утверждать только построчно"
     }
   ],
   "lexicalFields": [
@@ -657,5 +682,38 @@
       "1 Пет 3:18 — ἔπαθεν (NA27, RP, все TR) против ἀπέθανεν (WH, Treg, NIV): природа страдания, не круг искупленных",
       "Кол 1:20 — единственное место в перикопах брифа, где SBLGNT держит δι᾽ αὐτοῦ в квадратных скобках: WH/NA27/RP держат, Тregеллс и NIV-ридер опускают"
     ]
-  }
+  },
+  "historicalControls": [
+    {
+      "id": "S15",
+      "name": "Каноны Дорта (1619), Вторая глава — received English translation",
+      "evidenceClass": "B1 — вторичный исторический документ, не экзегеза",
+      "locatorState": "secondary-only: PD-статус подтверждён только вторичными публикациями",
+      "card": "ИСКУПЛЕНИЕ/nt/13_DORT_HISTORICAL_CONTROL.md",
+      "finding": "структура II.3 достаточность / II.5 опубликование / II.6 отказ / II.8 действенность совпала с тем, что nt/10_ вывел независимо из греческого; Rejection II.5 отвергает всеобщее примирение, удерживая всеобщее опубликование — та же форма, что в 04_ §8.3",
+      "notObtained": "перевод CRC 1986 не использован (современный, под правами); OPC 1948 (Мюррей) по-прежнему не получен — XX век под правами"
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "repo": "JLCPutmans/New-Testament-Transcriptions-INTF",
+      "reason": "нет ни LICENSE, ни README — нет основания для rightsState; транскрипции INTF не использованы"
+    },
+    {
+      "repo": "JLCPutmans/New-Testament-Transcriptions-IGNTP",
+      "reason": "то же: нет лицензии"
+    },
+    {
+      "repo": "ETCBC/bhsa (полная версия)",
+      "reason": "1,6 ГБ против 12 МБ у bhsa-min; данные те же, лицензия та же CC BY-NC 4.0"
+    },
+    {
+      "repo": "eliranwong/LXX-Rahlfs-1935",
+      "reason": "нет лицензии; Rahlfs 1935 вероятно ещё под правами"
+    },
+    {
+      "repo": "nam8/sigla-lookup (Siglarium, CC BY 4.0)",
+      "reason": "лицензия годная, но это словарь сигл NA28/Göttingen/BHS, а не аппарат; без самого аппарата NA28 ценности для LOCATOR_HOLD не даёт — оставлен как LEAD"
+    }
+  ]
 }
