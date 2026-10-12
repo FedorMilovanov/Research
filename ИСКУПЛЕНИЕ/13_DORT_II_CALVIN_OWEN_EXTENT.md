@@ -198,7 +198,7 @@ Offer: WCF 7.3 / 10.4; «свободно предлагается грешни�
 | 1 Тим. 2:6 | II.8 действительное искупление данных Сыну | LEAD | Book IV | лексика λύτρον + список universal terms |
 | 2 Пет. 2:1 | нет прямого | LEAD / wall | chunks 87–88 | только purchase-lexeme |
 | 2 Пет. 3:9 | II.5 рядом по оси | цитата в OPC 1948: евангельская рука; Inst. III.24.16 = покаяние в руке Божьей | chunk 82: `us` = elect | OPC majority = Мюррей |
-| Евр. 2:9 | — | LEAD | chunk 82: сыны к славе | universe of discourse = сыны |
+| Евр. 2:9 | — | **закрыт:** Кальвин (CTS 1853) с. 61 = объём не ограничивает; «верные» — редактор, с. 61; см. [`15` §A.6](15_CALVIN_III24_AND_DORT_II_LOCATORS.md) | LEAD | chunk 82: сыны к славе | universe of discourse = сыны |
 | 2 Кор. 5:14 | — | LEAD | chunk 83: все, за кого умер, мертвы | «все умерли» |
 | Рим. 8:32 | Rejection I цитирует Рим. 8:32 в Head V (perseverance) как цепь | Institutes / comm. Romans LEAD | да, цепь | главный proof |
 | Ин. 3:16 | II.5 обещание верующему | LEAD | Book IV | любовь-источник + certitude |
