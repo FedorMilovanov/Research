@@ -127,6 +127,58 @@ def check_links(files: list[Path]) -> tuple[int, list[str]]:
     return total, problems
 
 
+def check_readings(files: list[Path]) -> tuple[int, list[str]]:
+    """§3.3 брифа: ≥2 живых чтения ИЛИ явный `N` с объяснением.
+
+    Бриф требует минимум два живых чтения, помеченных как particular и
+    universal/general. Но он же говорит, что «не решает» — полный результат.
+    Поэтому правило проверяемое и честное одновременно:
+
+      - ≥2 помеченных чтения (`A`/`B`/`N`/`P`/`U`)  -> принято;
+      - ровно одно и это `N`                        -> принято только если
+        в карточке есть раздел «Что не доказывает» с содержательным ответом;
+      - иначе                                       -> нарушение.
+
+    Без второй ветки проверка требовала бы выдумывать второе чтение там, где
+    текст просто не на оси объёма, — это было бы подкладкой, а не экзегезой.
+    Без первой ветки одиночный `N` проходил бы и там, где текст на оси.
+    """
+    total = 0
+    problems: list[str] = []
+    for p in files:
+        if not p.name.startswith(PERICOPE_FILES):
+            continue
+        text = p.read_text(encoding="utf-8")
+        parts = re.split(r"(?m)^## ((?:0[678]|10)\.\d+ .+)$", text)
+        for i in range(1, len(parts), 2):
+            title, body = parts[i].strip(), parts[i + 1]
+            # Требование §3.3 относится к карточкам ПЕРВИЧНОГО ТЕКСТА. Служебные
+            # разделы (счётчики поля, синтез, сводка сверки) не цитируют один
+            # стих и поэтому не могут иметь «чтений» этого стиха. Признак
+            # структурный: у текстовой карточки есть блок «**Текст S1:**».
+            if "**Текст S1:**" not in body and "**Текст S1 (" not in body:
+                continue
+            m = re.search(r"\*\*(?:Живые )?[Чч]тения:?\*\*(.+?)(?=\n\*\*|\n---|\Z)",
+                          body, re.S)
+            seg = m.group(1) if m else body
+            labs = set(re.findall(r"`([ABNPU])`", seg))
+            if len(labs) >= 2:
+                total += 1
+                continue
+            m2 = re.search(r"\*\*Что не доказывает:\*\*\s*(.+)", body)
+            explains = bool(m2) and len(m2.group(1).strip()) >= 12
+            if len(labs) == 1 and labs == {"N"} and explains:
+                total += 1
+                continue
+            total += 1
+            problems.append(
+                f"{p.name}: карточка «{title.split()[0]}» — чтений {len(labs)}"
+                f"{'' if not labs else ' ' + '/'.join(sorted(labs))};"
+                f" пояснения «что не доказывает» нет" if not explains else
+                f"{p.name}: карточка «{title.split()[0]}» — на оси extent нужно ≥2 чтения")
+    return total, problems
+
+
 def check_forbidden(files: list[Path]) -> tuple[int, list[str]]:
     scanned = 0
     problems: list[str] = []
@@ -148,12 +200,14 @@ def main() -> int:
     cards, axis_bad = check_axis(files)
     links, link_bad = check_links(files)
     lines, forb_bad = check_forbidden(files)
+    read_n, read_bad = check_readings(files)
 
     print(f"  карточек перикоп: {cards}; без метки оси: {len(axis_bad)}")
+    print(f"  карточек с чтениями по §3.3: {read_n}; с нарушением: {len(read_bad)}")
     print(f"  относительных ссылок: {links}; битых: {len(link_bad)}")
     print(f"  строк просканировано: {lines}; запрещённых формулировок: {len(forb_bad)}")
 
-    problems = axis_bad + link_bad + forb_bad
+    problems = axis_bad + link_bad + forb_bad + read_bad
     if problems:
         print(f"\nFAIL ({len(problems)})")
         for x in problems:
