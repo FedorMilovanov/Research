@@ -518,27 +518,25 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 
 ## E. Исповедания для C05–C07 — локаторы (2026-10-12)
 
-Источник — Schaff, *The Creeds of Christendom*, vol. III (1919), IA `creedsofchristen0003phil_c6k6`, полный djvu-текст (`ia600402 /19/items/`). Смещение для vol. III: **печатная страница = лист − 14** (сверено по пяти точкам: лист 415→401, 420→406, 333→319, 179→165, 183→169). Для ранних листов (Аугсбургское, л. 23) смещение **не сверено** — указано с оговоркой.
+Источник — Schaff, *The Creeds of Christendom*, vol. III (1919), IA `creedsofchristen0003phil_c6k6`, полный djvu-текст (`ia600402 /19/items/`). **Печатная страница = лист − 14.** Сверено по колонтитулам печатного текста и по листам: Аугсбургское III (с. 9, колонтитул «THE AUGSBURG CONFESSION. 9»), Гейдельберг Q37–40 (с. 319–320), Бельгийское XVI (с. 401–402), FC SD XI (с. 165). Оглавление vol. III для Аугсбургского («33») к этим страницам не относится и не используется.
 
 ### E.1 Бельгийское исповедание (Confessio Belgica), C05
 
-| Статья | Печатная страница | Что локатор даёт | Вербатим / примечание |
-|---|---|---|---|
-| XIV (Creation and fall) | 398–399 | грехопадение, подготовка к XV | — |
-| XV (Original sin) | 400 | «sufficient for the condemnation of the whole human race» | лист 380 даёт OCR-строку (см. поиск) |
-| XVI | 401 | «all the posterity of Adam … MERCIFUL AND JUST» — ключевой текст выбора | ограничение «whom he hath elected» — из записи предыдущего хода, в этом ходе **не перепроверено**; заголовок ст. XVI не снят |
-| XX (God manifested his justice and mercy in Christ) | 405–406 | Бог «perfectly merciful and also perfectly just»; «God therefore manifested his justice against his Son when he laid our iniquities upon him» | вербатим получен (чанк 119) |
-| XXI (Satisfaction of Christ, our only High-Priest, for us) | 406–407 | «to appease his wrath by his full satisfaction, by offering himself on the tree of the cross» | вербатим получен; лист 420 |
-| XXII (Justification through faith) | 407–408 | вера «embraces Jesus Christ with all his merits, appropriates him, and seeks nothing more besides him» | вербатим получен (чанк 120) |
-| XXIII | 409–410 | «God imputes righteousness to him without works» | вербатим получен (чанк 120) |
-| XXVI–XXVII | 413–417 | — | не нужны для C05, страницы записаны |
-| XXX–XXXIII | 421–424 | — | не нужны для C05, страницы записаны |
+| Статья | Печатная страница | Заголовок / текст |
+|---|---|---|
+| XIV | 398–399 | грехопадение (вербатим не записан) |
+| XV | 400 | «sufficient for the condemnation of the whole human race» (лист 380) |
+| XVI «OF ETERNAL ELECTION» | 401–402 | «all the posterity of Adam … God … MERCIFUL AND JUST: MERCIFUL, since he delivers and preserves from this perdition all whom he, in his eternal and unchangeable council, of mere goodness hath elected in Christ Jesus our Lord, without any respect to their works: JUST, in leaving others in the fall and perdition wherein they have involved themselves.» |
+| XX | 405–406 | Бог «perfectly merciful and also perfectly just»; «God therefore manifested his justice against his Son when he laid our iniquities upon him» |
+| XXI | 406–407 | «to appease his wrath by his full satisfaction, by offering himself on the tree of the cross, and pouring out his precious blood to purge away our sins» |
+| XXII | 407–408 | вера «embraces Jesus Christ with all his merits, appropriates him, and seeks nothing more besides him» |
+| XXIII | 409–410 | «God imputes righteousness to him without works» |
 
-Наблюдение: в XX–XXII **явного ограничения extent нет**; «whom he hath elected» — в XVI. Это не решение P1/P2, это текстовый факт.
+Наблюдение: в XX–XXII явного ограничения extent нет. Ограничение «whom he hath elected» — в XVI, на с. 401–402, теперь вербатим. Это текстовый факт, не вердикт P1/P2.
 
-### E.2 Гейдельбергский катехизис, C06 (LD 5–7, LD 15–16)
+### E.2 Гейдельбергский катехизис, C06
 
-Печатные страницы — по колонтитулам печатного текста (311, 312, 313, 319) и по смещению для Q37.
+Страницы — по печатным колонтитулам (311, 312, 313, 319, 320).
 
 | Вопрос | Страница | Вербатим (английская колонка) |
 |---|---|---|
@@ -547,26 +545,34 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 | Q15 | 312 | «One who is a true and sinless man, and yet more powerful than all creatures; that is, one who is at the same time true God.» |
 | Q16 | 312 | «Because the justice of God requires that the same human nature which has sinned should make satisfaction for sin; but no man, being himself a sinner, could satisfy for others.» |
 | Q17 | 312 | «That by the power of his Godhead he might bear, in his manhood, the burden of God's wrath, and so obtain for and restore to us righteousness and life.» |
-| Q18 | 312–313 | «Our Lord Jesus Christ, who is [...] freely given unto us for complete redemption and righteousness.» (ответ Q18 переходит на стр. 313; пропуск — переход страницы) |
+| Q18 | 312–313 | «Our Lord Jesus Christ, who is [...] freely given unto us for complete redemption and righteousness.» (переход страницы) |
 | Q20 | 313 | «Are all men, then, saved by Christ, as they have perished by Adam? — No; only such as are by true faith ingrafted into him, and receive all his benefits.» |
 | Q21 | 313 | «…a hearty trust … that not only to others, but to me also, forgiveness of sins, everlasting righteousness and salvation, are freely given by God, merely of grace, only for the sake of Christ's merits.» |
-| Q37 («Suffered?») | 319 (лист 333) | «That all the time he lived on earth, but especially at the end of his life, he bore, in body and soul, the wrath of God against the sin of the whole human race, in order that by his passion, as the only atoning sacrifice, he might redeem our body and soul from everlasting damnation…» |
+| Q22–23 | 314–315 | «All that is promised us in the Gospel…»; Символ веры (без разбора) |
+| Q37 «Suffered?» | 319–320 | «That all the time he lived on earth, but especially at the end of his life, he bore, in body and soul, the wrath of God against the sin of the whole human race, in order that by his passion, as the only atoning sacrifice, he might redeem our body and soul from everlasting damnation…» |
+| Q38 | 320 | Пилат — суд, «that he, being innocent, might be condemned by the temporal judge» (без разбора) |
+| Q39 | 320 | «…he took on himself the curse which lay upon me, because the death of the cross was accursed of God» |
+| Q40 | 320 | «Because, by reason of the justice and truth of God, satisfaction for our sins could be made no otherwise than by the death of the Son of God.» |
+| Q42 | 320 | «Our death is not a satisfaction for our sin, but only a dying to sin…» |
 
 Заметки:
-- **Q20 — главный extent-текст катехизиса**: спасение только через истинную веру, «only such as». Это формулировка условия, не ограничения искупления — читать как текст, не как решение.
-- **Q37** — «whole human race» в связке с «only atoning sacrifice». Номер вопроса (37) — по заголовку «Suffered?», принадлежность к LD 16 **не сверена** (LD-колонтитул не снят).
-- Q22–23 (Символ веры) — стр. 314–315, в локаторе не нужны.
-- LD 7 и LD 15–16 — **не вытянуты полностью**; из LD 15–16 снят только Q37. Полная карта LD (номера LD ↔ Q) не сверена с печатными заголовками LD.
+- **Q20** — главный extent-текст катехизиса в этом наборе: спасение «only such as». Это условие получения, не ограничение искупления.
+- **Q37 и Q40** — «whole human race» в связке с «only atoning sacrifice», и «satisfaction … no otherwise than by the death of the Son of God». Оба вербатим.
+- Номера LD (5–7, 15–16) **не сверены** с печатными заголовками LD. Записано по номерам вопросов, не по LD.
+- Q43–44 и далее (LD 16–17) не вытянуты.
 
-### E.3 Формула Согласия (Formula of Concord), C07 — локатор, без полного текста
+### E.3 Формула Согласия (Formula of Concord), C07
 
-| Место | Печатная страница | Что видно |
+| Место | Печатная страница | Вербатим / примечание |
 |---|---|---|
-| FC, Solid Declaration XI — заголовок «Of the Eternal Predestination and Election of God» | 165 (лист 179) | заголовок и вступление к статье о предопределении |
-| FC SD XI, §XII (нумерация по Шаффу) | 169 (лист 183) | «He in his eternal counsel has decreed that besides those who acknowledge his Son Jesus Christ, and truly believe on him, he will save no one.» |
-| Аугсбургское исповедание, ст. III («Of the Son of God») | 9 (лист 23, **смещение не сверено**) | «…might be a sacrifice, not only for original guilt, but also for all actual sins of men.» — основной лютеранский текст «universal» |
+| FC SD XI «OF THE ETERNAL PREDESTINATION AND ELECTION OF GOD» — заголовок | 165 (лист 179) | «Touching this article there has not, indeed, arisen any public controversy…» |
+| SD XI, I–III | 165–166 | различие предвидения и предопределения; предвидение «is not the cause of evil» |
+| SD XI, IV | 166 | «the predestination or eternal election of God extends only to the good and beloved children of God, and this is the cause of their salvation» |
+| SD XI, VII | 167 | «Christ calls all sinners to him … he earnestly wishes that all men may come to him, and suffer themselves to be cared for and succored» |
+| SD XI, XII | 169 (лист 183) | «He in his eternal counsel has decreed that besides those who acknowledge his Son Jesus Christ, and truly believe on him, he will save no one.» |
+| Аугсбургское исповедание, III «Of the Son of God» | 9 | «…might be a sacrifice, not only for original guilt, but also for all actual sins of men.» (колонтитул «9» подтверждён) |
 
 Заметки:
-- Это **не** «Лютеранский вывод» в целом; C07 нужен для P6 и не является нашим каноном (см. `05`).
-- SD XI §XII — условие «besides those who … believe», то есть ещё одна конфессия, которая не говорит «ограниченное искупление», но и не говорит «универсальное без условия».
-- Полный текст FC SD XI и Epitome XI **не вытянут**; записано явно.
+- SD XI, IV и VII вместе дают «universal call» и «ограниченный объект избрания», без вывода. Вердикта нет.
+- C07 нужен для P6 и не является нашим каноном (`05`).
+- Epitome XI и остальной текст SD XI (§§ IV–XIV полностью) — **не вытянуты** полностью; записаны только пункты выше.

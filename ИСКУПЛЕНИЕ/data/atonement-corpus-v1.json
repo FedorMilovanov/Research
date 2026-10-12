@@ -659,23 +659,38 @@
             "articles": {
               "XIV": "398-399",
               "XV": "400",
-              "XVI": "401",
+              "XVI": "401-402 (OF ETERNAL ELECTION)",
               "XX": "405-406",
               "XXI": "406-407",
               "XXII": "407-408",
               "XXIII": "409-410"
             },
             "verbatimVerified": [
+              "XVI",
               "XX",
               "XXI",
               "XXII",
               "XXIII"
             ],
-            "verbatimNote": "XVI 'MERCIFUL AND JUST' verified in search snippet (leaf 415); 'whom he hath elected' from an earlier pass, not re-verified; XVI heading not verified",
-            "explicitExtentLimitInXXtoXXII": false
+            "explicitExtentLimitInXXtoXXII": false,
+            "explicitLimitInXVI": "whom he in his eternal and unchangeable council ... hath elected in Christ Jesus our Lord"
           },
-          "HeidelbergQ12_21_Q37": {
-            "printed": "311-313 (Q12-21), 319 (Q37)",
+          "FormulaOfConcord": {
+            "printed": "165-169",
+            "verbatimVerified": [
+              "SD XI heading p.165",
+              "SD XI I-III p.165-166",
+              "SD XI IV p.166",
+              "SD XI VII p.167",
+              "SD XI XII p.169"
+            ],
+            "notVerified": [
+              "SD XI VIII-XI, XIII-XIV",
+              "Epitome XI"
+            ]
+          },
+          "HeidelbergQ12_23_Q35_42": {
+            "printed": "311-320",
             "questions": {
               "Q12": "311",
               "Q14": "311-312",
@@ -685,7 +700,11 @@
               "Q18": "312-313",
               "Q20": "313",
               "Q21": "313",
-              "Q37": "319 (leaf 333)"
+              "Q22-23": "314-315",
+              "Q37": "319-320 (leaf 333)",
+              "Q38-39": "320",
+              "Q40": "320",
+              "Q42": "320"
             },
             "verbatimVerified": [
               "Q12",
@@ -696,33 +715,25 @@
               "Q18",
               "Q20",
               "Q21",
-              "Q37"
+              "Q37",
+              "Q39",
+              "Q40",
+              "Q42"
             ],
             "notVerified": [
-              "LD 7",
-              "LD 15-16 except Q37",
-              "LD numbers vs. printed LD headings"
-            ]
-          },
-          "FormulaOfConcord": {
-            "printed": "165 (SD XI heading), 169 (SD XI para. XII)",
-            "verbatimVerified": [
-              "SD XI para. XII: 'besides those who acknowledge his Son Jesus Christ, and truly believe on him, he will save no one'"
-            ],
-            "notVerified": [
-              "full SD XI text",
-              "Epitome XI",
-              "Augsburg Confession III offset (leaf 23)"
+              "LD numbering vs. printed LD headings",
+              "Q43 onward"
             ]
           }
         },
         "offsetAnchorsAdded2026-10-12": [
-          "leaf 415 -> 401 ('merciful and just', Belgic XVI)",
+          "leaf 415 -> 401 ('merciful and just', Belgic XVI 'OF ETERNAL ELECTION')",
           "leaf 420 -> 406 ('satisfaction of Christ', Belgic XXI)",
           "leaf 333 -> 319 ('Suffered?' heading + 'whole human race', Heidelberg Q37)",
-          "leaf 179 -> 165 (FC Solid Declaration XI heading 'Of the Eternal Predestination and Election of God')",
-          "leaf 183 -> 169 (FC SD XI, para. XII as numbered by Schaff)",
-          "leaf 23 -> 9 (Augsburg Confession III) - NOT verified: early leaves may use a different offset"
+          "leaf 179 -> 165 (FC SD XI heading, verified by running head 165)",
+          "leaf 183 -> 169 (FC SD XI para. XII)",
+          "printed 9 = running head 'THE AUGSBURG CONFESSION. 9' before Art. III (verified; leaf 23 -> 9)",
+          "NOTE: the table of contents entry 'Confessio Augustana ... 33' does not correspond to the Augsburg text at p. 9; not used"
         ]
       }
     },
