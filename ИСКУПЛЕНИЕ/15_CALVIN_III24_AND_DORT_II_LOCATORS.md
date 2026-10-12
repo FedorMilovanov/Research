@@ -554,7 +554,7 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 | Q40 | 16 | 320 | [в] «…satisfaction … could be made no otherwise than by the death of the Son of God» |
 | Q41–42 | 16 | 320 | [в] Q41 «To show thereby that he was really dead»; Q42 «Our death is not a satisfaction for our sin…» |
 | Q43 | 16 | 321 | [в] «That by his power our old man is with him crucified, slain, and buried…» (в OCR Шаффа номер «48»; по RCA — Q43) |
-| Q44 | 16 | 322 | [в] «…in my greatest temptations … Christ … has redeemed me from the anguish and torment of hell.» |
+| Q44 | 16 | 321 | [в] «…in my greatest temptations … Christ … has redeemed me from the anguish and torment of hell.» (исправлено: стр. 321, не 322; Q45 начинается на 321) |
 
 Заметки:
 - **Q20** — главный extent-текст в этом наборе: «only such as». Условие получения, не ограничение искупления.
@@ -573,6 +573,7 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 | Epitome XI, V–VI | 166 | [в] «…is not to be searched out in the hidden counsel of God, but is to be sought in the Word of God…»; «…the Word of God leads us to Christ, he is that book of life» |
 | Epitome XI, VII | 167 | [в] «Christ calls all sinners to him … he earnestly wishes that all men may come to him» |
 | Epitome XI, VIII | 167 | [в] «Therefore we are to judge neither by the judgment of our own reason nor by the law of God…» |
+| Epitome XI, X | 168 | [в] «Whoever, therefore, inquire into the revealed will of God…» (лат. и англ. на одной странице) |
 | Epitome XI, IX | 168 | [в] «…God hath concluded them all in unbelief, that he might have mercy upon all, and that he is not willing that any should perish…» (Rom. 11:32; Ezek. 18:23; 33:11; 2 Pet. 3:9) |
 | Epitome XI, XI | 168–169 | [в] «Neither God nor his election, but their own wickedness, is to blame if they perish» |
 | Epitome XI, XII | 169–170 | [в] «…he would save no one except those who know his Son Christ and truly believe on him.» |
