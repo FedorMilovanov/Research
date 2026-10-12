@@ -55,8 +55,12 @@ def default_xml() -> Path:
     env = os.environ.get("NT_APPARATUS_XML")
     if env:
         return Path(env)
-    hits = sorted((HOME / "sblgnt-tei").glob("xml/sblgnt_tei.xml"))
-    return hits[0] if hits else HOME / "sblgnt-tei" / "xml" / "sblgnt_tei.xml"
+    # каталог распакованного tarball несёт полный SHA (sblgnt-tei-2a95589b…),
+    # поэтому ищем по шаблону; фиксированное имя не находится
+    hits = sorted(HOME.glob("sblgnt-tei-*/xml/sblgnt_tei.xml"))
+    if hits:
+        return hits[0]
+    return HOME / "sblgnt-tei" / "xml" / "sblgnt_tei.xml"
 
 
 class Apparatus:
