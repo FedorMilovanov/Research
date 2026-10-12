@@ -44,9 +44,18 @@ import os
 import sys
 from pathlib import Path
 
-DEFAULT = Path(os.environ.get(
-    "NT_MT_DIR",
-    Path.home() / "nt-corpus" / "bhsa-min" / "tf" / "2021"))
+def _default_mt_dir() -> Path:
+    """Каталог TF-данных BHSA. Имя распакованного tarball несёт полный SHA,
+    поэтому ищем по шаблону, а не по фиксированному имени."""
+    env = os.environ.get("NT_MT_DIR")
+    if env:
+        return Path(env)
+    home = Path(os.environ.get("NT_CORPUS_HOME", Path.home() / "nt-corpus"))
+    hits = sorted(home.glob("bhsa-min-*/tf/2021"))
+    return hits[0] if hits else home / "bhsa-min" / "tf" / "2021"
+
+
+DEFAULT = _default_mt_dir()
 
 
 def data_lines(p: Path) -> list[str]:
@@ -94,6 +103,11 @@ class MT:
                       enumerate(data_lines(r / "g_word_utf8.tf"), start=1)}
         self.lex = {i: v for i, v in
                     enumerate(data_lines(r / "lex_utf8.tf"), start=1)}
+        # trailer пуст там, где за словом НЕ следует пробел (проклитики типа
+        # וְ/הַ/לְ склеиваются со следующим словом). Без этого еврейская
+        # цитата выглядит рваной: «וְ עָשִׂיתָ כַפֹּרֶת» вместо «וְעָשִׂיתָ כַפֹּרֶת».
+        self.trailer = {i: v for i, v in
+                        enumerate(data_lines(r / "trailer_utf8.tf"), start=1)}
 
         # oslots: узел -> диапазон слотов. Таб только в первой строке.
         self.slots: dict[int, tuple[int, int]] = {}
@@ -181,6 +195,24 @@ class MT:
         a, b = self.slots[n]
         return " ".join(self.gword.get(i, "") for i in range(a, b + 1)).strip()
 
+    def words(self, ref: str) -> list[str]:
+        """Слова стиха с проклитиками склеенными (по trailer_utf8)."""
+        n = self.by_ref.get(ref)
+        if n is None:
+            raise KeyError(ref)
+        a, b = self.slots[n]
+        out: list[str] = []
+        for i in range(a, b + 1):
+            w = self.gword.get(i, "")
+            if out and self.trailer.get(i - 1, " ") == "":
+                out[-1] += w
+            else:
+                out.append(w)
+        return out
+
+    def text_words(self, ref: str) -> str:
+        return " ".join(self.words(ref))
+
     def lexemes(self, ref: str) -> list[str]:
         n = self.by_ref.get(ref)
         if n is None:
@@ -225,7 +257,7 @@ def main(argv: list[str]) -> int:
                 print(f"  {ref}\t{form}")
         else:
             try:
-                print(f"{arg}: {mt.text(arg)}")
+                print(f"{arg}: {mt.text_words(arg)}")
             except KeyError:
                 print(f"{arg}: НЕ НАЙДЕНО")
     return 0
