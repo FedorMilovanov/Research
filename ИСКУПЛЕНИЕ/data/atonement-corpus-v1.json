@@ -739,13 +739,14 @@
               "Epitome XI IX p.168",
               "Epitome XI XI p.168-169",
               "Epitome XI XII p.169-170",
-              "Epitome XI Negativa I, IV p.171-172"
+              "Epitome XI Negativa I, IV p.171-172",
+              "Epitome XI VIII p.167",
+              "Epitome XI XIII p.170",
+              "Epitome XI XIV start p.170"
             ],
             "pageOnly": [
-              "Epitome XI VIII p.167",
-              "Epitome XI X p.168",
-              "Epitome XI XIII-XIV p.170",
-              "Epitome XII heading p.172"
+              "Epitome XII heading p.172",
+              "Epitome XI X p.168"
             ],
             "notLocated": []
           },
@@ -771,7 +772,8 @@
             "caveats": [
               "OCR-derived; no visual check of page images",
               "marginal numbers 704-716 in Jacobs text not identified; not used as locators"
-            ]
+            ],
+            "indexDiscrepancy": "Jacobs index '655:84' for 'extended to all sinners' vs body XI.84 on p.664; unresolved"
           }
         },
         "offsetAnchorsAdded2026-10-12": [

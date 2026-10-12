@@ -526,7 +526,7 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 
 | Статья | Печатная страница | Статус и текст |
 |---|---|---|
-| XIV–XV | 397–400 | [стр] подтверждено по разворотам 397–400 (XIV начинается на 398, XV — на 400); вербатим не сверен |
+| XIV–XV | 397–400 | [в] XIV «We believe that God created man…» (стр. 398); XV «Of Original Sin» (стр. 400); полный вербатим XIV не сверен |
 | XVI «OF ETERNAL ELECTION» | 401–402 | [в] «MERCIFUL, since he delivers and preserves from this perdition all whom he, in his eternal and unchangeable council, of mere goodness hath elected in Christ Jesus our Lord…» |
 | XX | 405–406 | [в] «…perfectly merciful and also perfectly just, sent his Son…» |
 | XXI | 406–407 | [в] «…to appease his wrath by his full satisfaction…» |
@@ -552,8 +552,8 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 | Q37 | 15 | 319 | [в] «…he bore, in body and soul, the wrath of God against the sin of the whole human race…» |
 | Q38–39 | 15 | 320 | [стр] |
 | Q40 | 16 | 320 | [в] «…satisfaction … could be made no otherwise than by the death of the Son of God» |
-| Q41–42 | 16 | 320 | [стр] |
-| Q43 | 16 | 321 | [стр] (в OCR Шаффа номер «48»; по RCA — Q43) |
+| Q41–42 | 16 | 320 | [в] Q41 «To show thereby that he was really dead»; Q42 «Our death is not a satisfaction for our sin…» |
+| Q43 | 16 | 321 | [в] «That by his power our old man is with him crucified, slain, and buried…» (в OCR Шаффа номер «48»; по RCA — Q43) |
 | Q44 | 16 | 322 | [в] «…in my greatest temptations … Christ … has redeemed me from the anguish and torment of hell.» |
 
 Заметки:
@@ -572,11 +572,11 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 | Epitome XI, IV | 166 | [в] «…the predestination or eternal election of God extends only to the good and beloved children of God, and this is the cause of their salvation» |
 | Epitome XI, V–VI | 166 | [в] «…is not to be searched out in the hidden counsel of God, but is to be sought in the Word of God…»; «…the Word of God leads us to Christ, he is that book of life» |
 | Epitome XI, VII | 167 | [в] «Christ calls all sinners to him … he earnestly wishes that all men may come to him» |
-| Epitome XI, VIII | 167 | [стр] (лат. прочитан, англ. не сверен) |
+| Epitome XI, VIII | 167 | [в] «Therefore we are to judge neither by the judgment of our own reason nor by the law of God…» |
 | Epitome XI, IX | 168 | [в] «…God hath concluded them all in unbelief, that he might have mercy upon all, and that he is not willing that any should perish…» (Rom. 11:32; Ezek. 18:23; 33:11; 2 Pet. 3:9) |
 | Epitome XI, XI | 168–169 | [в] «Neither God nor his election, but their own wickedness, is to blame if they perish» |
 | Epitome XI, XII | 169–170 | [в] «…he would save no one except those who know his Son Christ and truly believe on him.» |
-| Epitome XI, XIII–XIV | 170 | [стр] |
+| Epitome XI, XIII–XIV | 170 | [в] XIII «Yet none the less ought we to take the utmost pains…»; XIV «This brief explication of the eternal election of God…» (начало) |
 | Epitome XI, Negativa, I–IV | 170–172 | [в] «That God is unwilling that all men should repent and believe the Gospel» (I); «That the mercy of God … is not the sole cause of the divine election» (IV) |
 | Epitome XII (заголовок «Other Factions … Sects»), начало | 172 | [стр] |
 | Аугсбургское исповедание, III | 9 | [в] «…a sacrifice, not only for original guilt, but also for all actual sins of men.» (колонтитул «9» подтверждён) |
@@ -606,4 +606,5 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 - В Jacobs 1911 в тексте встречаются маргинальные номера (704–716, 649–664 в колонтитулах). Назначение маргинальных чисел (вероятно, пагинация другого издания) **не подтверждено**; в локаторах используются только колонтитульные страницы Jacobs 1911.
 - Текст получен из OCR archive.org (djvu-stream); страницы сняты по колонтитулам соседних текстовых фрагментов, а не по сканам. Визуальной сверки разворотов нет.
 - Фраза «Neither God nor his election, but their own wickedness…» — **Epitome XI.11** (168–169), в SD XI.41/78 есть близкие, но не тождественные формулировки; не смешивать.
+- Расхождение: индекс Jacobs 1911 (том с индексом, ~с. 708+) приписывает «extended to all sinners» к «655:84 sq.», а по тексту XI.84 (Фараон) стоит на 664. Вероятная опечатка индекса; разрешить по скану не удалось.
 - Jacobs 1882 (`archive.org/details/jacobs_concord`) и Müller 1848 не использованы для локатора; Müller/BSLK-нумерация SD XI (1063–1093) — только вторичная ссылка из dokumen.pub, не проверена.
