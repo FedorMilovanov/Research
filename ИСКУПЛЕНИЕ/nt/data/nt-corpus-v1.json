@@ -792,6 +792,24 @@
     {
       "repo": "nam8/sigla-lookup (Siglarium, CC BY 4.0)",
       "reason": "лицензия годная, но это словарь сигл NA28/Göttingen/BHS, а не аппарат; без самого аппарата NA28 ценности для LOCATOR_HOLD не даёт — оставлен как LEAD"
+    },
+    {
+      "name": "eliranwong/OpenGNT",
+      "what": "«Open Greek New Testament Project; NA28 / NA27 Equivalent Text & Resources»",
+      "whyRejected": "LICENSE в репозитории нет (lic=null), README прав не устанавливает. Сам текст NA28 принадлежит Deutsche Bibelgesellschaft и под правами, поэтому репозиторий без лицензии — не основание для rightsState. По §5 брифа такой источник не годится: bibliographic record and URL reachability do not lift any HOLD",
+      "checkedOn": "2026-10-12, gh api search/repositories?q=NA28+greek"
+    },
+    {
+      "name": "davidhansonc/ftta_nt_greek_study_tool",
+      "what": "учебный инструмент вокруг текста Nestle-Aland, MIT",
+      "whyRejected": "MIT покрывает код инструмента, а не текст NA28; текст остаётся под правами. Не закрывает «NA28/UBS5 по имени»",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "name": "morphgnt/tischendorf",
+      "what": "Tischendorf 8th GNT с морфологией и лемматизацией",
+      "whyRejected": "НЕ отклонён, а оставлен как LEAD: это ещё один независимый критический текст XIX века (основа Westcott—Hort), но ни одного HOLD он не закрывает — NA28 это не он, и аппарата в нём нет. Права в репозитории не заявлены (lic=null), поэтому до выяснения не загружен",
+      "checkedOn": "2026-10-12"
     }
   ],
   "manuscriptCollation": {
@@ -897,5 +915,10 @@
     ],
     "negativeResult": "ни один из найденных вариантов не касается объёма искупления: спорные места — лицо адресата, время, порядок слов, καινησ, επαθεν/απεθανεν и замена λυσαντι на λουσαντι",
     "extentVerdict": "нет; EVIDENCE_HOLD не снят"
+  },
+  "na28SearchConclusion": {
+    "status": "ОТКРЫТ — но теперь по доказанной причине прав, а не по недостатку поиска",
+    "attempts": "gh api search/repositories по запросам NA28+greek, UBS5+apparatus, nestle+aland+greek+new+testament, editio+critica+maior; просмотр всех репозиториев организаций morphgnt и jjmccollum",
+    "finding": "ни одного кандидата с лицензией, покрывающей текст NA28/UBS5. UBS5 как издание не получен; получены только его точки вариации внутри колляций S9/S10"
   }
 }
