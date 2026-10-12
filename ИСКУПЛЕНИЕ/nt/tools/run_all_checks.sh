@@ -32,7 +32,10 @@ python3 "$T/mt_lxx_collation.py" 2>&1 | tail -1 || fail=1
 echo; echo "=== 6. аппарат SBLGNT ==="
 python3 "$T/sbl_apparatus.py" 2>&1 | head -1 || fail=1
 
-echo; echo "=== 7. валидаторы репозитория ==="
+echo; echo "=== 7. аппарат по всем перикопам §3.2 ==="
+python3 "$T/pericope_apparatus_sweep.py" 2>&1 | head -3 || fail=1
+
+echo; echo "=== 8. валидаторы репозитория ==="
 for v in research_root_authority repository_authority_integrity genesis6_authority_manifest; do
   python3 "scripts/validate_$v.py" >/dev/null 2>&1
   rc=$?
