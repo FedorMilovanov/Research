@@ -515,3 +515,58 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 - Издание — лондонское 1689 без филадельфийских добавлений (в нём нет статей о возложении рук и пении псалмов как отдельных глав; «imposition of hands» встречается только в тексте о диаконах).
 
 **Зачем это в корпусе.** 1689 — баптистский twin Вестминстера: почти дословно воспроизводит WCF с изменениями в главах о церкви, крещении и клятве. Для сайта, который ведёт баптистская община, это не «дополнительный» документ, а **свой** символ веры. По вопросу объёма он ничего не добавляет к WCF 8.5/8.8 сверх слова «obtained». `EVIDENCE_HOLD` не снят, и «twin» не означает «доказательство».
+
+## E. Исповедания для C05–C07 — локаторы (2026-10-12)
+
+Источник — Schaff, *The Creeds of Christendom*, vol. III (1919), IA `creedsofchristen0003phil_c6k6`, полный djvu-текст (`ia600402 /19/items/`). Смещение для vol. III: **печатная страница = лист − 14** (сверено по пяти точкам: лист 415→401, 420→406, 333→319, 179→165, 183→169). Для ранних листов (Аугсбургское, л. 23) смещение **не сверено** — указано с оговоркой.
+
+### E.1 Бельгийское исповедание (Confessio Belgica), C05
+
+| Статья | Печатная страница | Что локатор даёт | Вербатим / примечание |
+|---|---|---|---|
+| XIV (Creation and fall) | 398–399 | грехопадение, подготовка к XV | — |
+| XV (Original sin) | 400 | «sufficient for the condemnation of the whole human race» | лист 380 даёт OCR-строку (см. поиск) |
+| XVI | 401 | «all the posterity of Adam … MERCIFUL AND JUST» — ключевой текст выбора | ограничение «whom he hath elected» — из записи предыдущего хода, в этом ходе **не перепроверено**; заголовок ст. XVI не снят |
+| XX (God manifested his justice and mercy in Christ) | 405–406 | Бог «perfectly merciful and also perfectly just»; «God therefore manifested his justice against his Son when he laid our iniquities upon him» | вербатим получен (чанк 119) |
+| XXI (Satisfaction of Christ, our only High-Priest, for us) | 406–407 | «to appease his wrath by his full satisfaction, by offering himself on the tree of the cross» | вербатим получен; лист 420 |
+| XXII (Justification through faith) | 407–408 | вера «embraces Jesus Christ with all his merits, appropriates him, and seeks nothing more besides him» | вербатим получен (чанк 120) |
+| XXIII | 409–410 | «God imputes righteousness to him without works» | вербатим получен (чанк 120) |
+| XXVI–XXVII | 413–417 | — | не нужны для C05, страницы записаны |
+| XXX–XXXIII | 421–424 | — | не нужны для C05, страницы записаны |
+
+Наблюдение: в XX–XXII **явного ограничения extent нет**; «whom he hath elected» — в XVI. Это не решение P1/P2, это текстовый факт.
+
+### E.2 Гейдельбергский катехизис, C06 (LD 5–7, LD 15–16)
+
+Печатные страницы — по колонтитулам печатного текста (311, 312, 313, 319) и по смещению для Q37.
+
+| Вопрос | Страница | Вербатим (английская колонка) |
+|---|---|---|
+| Q12 | 311 | «God wills that his justice be satisfied; therefore must we make full satisfaction to the same, either by ourselves or by another.» |
+| Q14 | 311–312 | «None; for, first, God will not punish, in any other creature, that of which man has made himself guilty; and, further, no mere creature can sustain the burden of God's eternal wrath against sin, and redeem others therefrom.» |
+| Q15 | 312 | «One who is a true and sinless man, and yet more powerful than all creatures; that is, one who is at the same time true God.» |
+| Q16 | 312 | «Because the justice of God requires that the same human nature which has sinned should make satisfaction for sin; but no man, being himself a sinner, could satisfy for others.» |
+| Q17 | 312 | «That by the power of his Godhead he might bear, in his manhood, the burden of God's wrath, and so obtain for and restore to us righteousness and life.» |
+| Q18 | 312–313 | «Our Lord Jesus Christ, who is [...] freely given unto us for complete redemption and righteousness.» (ответ Q18 переходит на стр. 313; пропуск — переход страницы) |
+| Q20 | 313 | «Are all men, then, saved by Christ, as they have perished by Adam? — No; only such as are by true faith ingrafted into him, and receive all his benefits.» |
+| Q21 | 313 | «…a hearty trust … that not only to others, but to me also, forgiveness of sins, everlasting righteousness and salvation, are freely given by God, merely of grace, only for the sake of Christ's merits.» |
+| Q37 («Suffered?») | 319 (лист 333) | «That all the time he lived on earth, but especially at the end of his life, he bore, in body and soul, the wrath of God against the sin of the whole human race, in order that by his passion, as the only atoning sacrifice, he might redeem our body and soul from everlasting damnation…» |
+
+Заметки:
+- **Q20 — главный extent-текст катехизиса**: спасение только через истинную веру, «only such as». Это формулировка условия, не ограничения искупления — читать как текст, не как решение.
+- **Q37** — «whole human race» в связке с «only atoning sacrifice». Номер вопроса (37) — по заголовку «Suffered?», принадлежность к LD 16 **не сверена** (LD-колонтитул не снят).
+- Q22–23 (Символ веры) — стр. 314–315, в локаторе не нужны.
+- LD 7 и LD 15–16 — **не вытянуты полностью**; из LD 15–16 снят только Q37. Полная карта LD (номера LD ↔ Q) не сверена с печатными заголовками LD.
+
+### E.3 Формула Согласия (Formula of Concord), C07 — локатор, без полного текста
+
+| Место | Печатная страница | Что видно |
+|---|---|---|
+| FC, Solid Declaration XI — заголовок «Of the Eternal Predestination and Election of God» | 165 (лист 179) | заголовок и вступление к статье о предопределении |
+| FC SD XI, §XII (нумерация по Шаффу) | 169 (лист 183) | «He in his eternal counsel has decreed that besides those who acknowledge his Son Jesus Christ, and truly believe on him, he will save no one.» |
+| Аугсбургское исповедание, ст. III («Of the Son of God») | 9 (лист 23, **смещение не сверено**) | «…might be a sacrifice, not only for original guilt, but also for all actual sins of men.» — основной лютеранский текст «universal» |
+
+Заметки:
+- Это **не** «Лютеранский вывод» в целом; C07 нужен для P6 и не является нашим каноном (см. `05`).
+- SD XI §XII — условие «besides those who … believe», то есть ещё одна конфессия, которая не говорит «ограниченное искупление», но и не говорит «универсальное без условия».
+- Полный текст FC SD XI и Epitome XI **не вытянут**; записано явно.
