@@ -770,10 +770,11 @@
               "XI.56 p.659"
             ],
             "caveats": [
-              "OCR-derived; no visual check of page images",
-              "marginal numbers 704-716 in Jacobs text not identified; not used as locators"
+              "OCR-derived; page images not accessible from sandbox (HTTP 500)",
+              "marginal numbers 704-716 not identified; not used as locators"
             ],
-            "indexDiscrepancy": "Jacobs index '655:84' for 'extended to all sinners' vs body XI.84 on p.664; unresolved"
+            "indexDiscrepancy": "RESOLVED: Jacobs index '655:84' is a typo; XI.84 is on p.664 per second OCR (archive.org bookreader leaf = printed+12)",
+            "secondOCR": "archive.org bookreader per-leaf OCR: leaf 0676=p.664, 0678=p.666"
           }
         },
         "offsetAnchorsAdded2026-10-12": [
