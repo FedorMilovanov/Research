@@ -653,8 +653,77 @@
               "8.7": 622,
               "8.8": 622
             }
+          },
+          "BelgicXIV_XXIII": {
+            "printed": "398-410",
+            "articles": {
+              "XIV": "398-399",
+              "XV": "400",
+              "XVI": "401",
+              "XX": "405-406",
+              "XXI": "406-407",
+              "XXII": "407-408",
+              "XXIII": "409-410"
+            },
+            "verbatimVerified": [
+              "XX",
+              "XXI",
+              "XXII",
+              "XXIII"
+            ],
+            "verbatimNote": "XVI 'MERCIFUL AND JUST' verified in search snippet (leaf 415); 'whom he hath elected' from an earlier pass, not re-verified; XVI heading not verified",
+            "explicitExtentLimitInXXtoXXII": false
+          },
+          "HeidelbergQ12_21_Q37": {
+            "printed": "311-313 (Q12-21), 319 (Q37)",
+            "questions": {
+              "Q12": "311",
+              "Q14": "311-312",
+              "Q15": "312",
+              "Q16": "312",
+              "Q17": "312",
+              "Q18": "312-313",
+              "Q20": "313",
+              "Q21": "313",
+              "Q37": "319 (leaf 333)"
+            },
+            "verbatimVerified": [
+              "Q12",
+              "Q14",
+              "Q15",
+              "Q16",
+              "Q17",
+              "Q18",
+              "Q20",
+              "Q21",
+              "Q37"
+            ],
+            "notVerified": [
+              "LD 7",
+              "LD 15-16 except Q37",
+              "LD numbers vs. printed LD headings"
+            ]
+          },
+          "FormulaOfConcord": {
+            "printed": "165 (SD XI heading), 169 (SD XI para. XII)",
+            "verbatimVerified": [
+              "SD XI para. XII: 'besides those who acknowledge his Son Jesus Christ, and truly believe on him, he will save no one'"
+            ],
+            "notVerified": [
+              "full SD XI text",
+              "Epitome XI",
+              "Augsburg Confession III offset (leaf 23)"
+            ]
           }
-        }
+        },
+        "offsetAnchorsAdded2026-10-12": [
+          "leaf 415 -> 401 ('merciful and just', Belgic XVI)",
+          "leaf 420 -> 406 ('satisfaction of Christ', Belgic XXI)",
+          "leaf 333 -> 319 ('Suffered?' heading + 'whole human race', Heidelberg Q37)",
+          "leaf 179 -> 165 (FC Solid Declaration XI heading 'Of the Eternal Predestination and Election of God')",
+          "leaf 183 -> 169 (FC SD XI, para. XII as numbered by Schaff)",
+          "leaf 23 -> 9 (Augsburg Confession III) - NOT verified: early leaves may use a different offset"
+        ]
       }
     },
     "calvinII17Chunks": [
