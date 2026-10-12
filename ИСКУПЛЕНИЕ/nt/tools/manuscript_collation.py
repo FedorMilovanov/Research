@@ -204,7 +204,10 @@ class Collation:
         if self.style == "xmlid":
             rx = re.compile(r'<app\s+xml:id="(B\d+K(\d+)V(\d+)U[^"]*)"[^>]*>(.*?)</app>', re.S)
         else:
-            rx = re.compile(r'<app\s+n="Acts (\d+):(\d+)/(\d+)"[^>]*>(.*?)</app>', re.S)
+            # Позиция бывает не только одиночной: из 9555 юнитов Деяний
+            # 6708 записаны как /7, 2844 как /7-9, 2 как /7-9/11 и 1 как
+            # /7-9:11/13. Шаблон «только цифры» молча терял 2847 юнитов.
+            rx = re.compile(r'<app\s+n="Acts (\d+):(\d+)/([^"]+)"[^>]*>(.*?)</app>', re.S)
         for m in rx.finditer(self.raw):
             if self.style == "xmlid":
                 uid, ch, v, body = m.group(1), int(m.group(2)), int(m.group(3)), m.group(4)
@@ -380,8 +383,13 @@ def main(argv: list[str]) -> int:
                 for u in c.units:
                     ws = set(bare(" ".join(u.words())).split())
                     hay = " ".join(ws)
-                    hit = any(st in ws for st in stems) if mode == "word" \
-                        else any(st in hay for st in stems)
+                    # Основы прогоняются через тот же bare(): casefold()
+                    # превращает конечную сигму ς в σ, поэтому «διαθηκης»
+                    # из словаря никогда не совпадал с «διαθηκησ» из юнита и
+                    # διαθήкая давала 0 вместо 2. Нормализация с обеих сторон.
+                    st_norm = [bare(x) for x in stems]
+                    hit = any(st in ws for st in st_norm) if mode == "word" \
+                        else any(st in hay for st in st_norm)
                     if hit:
                         found.append(u.uid)
                 if found:
@@ -392,6 +400,36 @@ def main(argv: list[str]) -> int:
             for k, v in per.items():
                 if len(v) <= 6:
                     print(f"        {k}: {', '.join(v)}")
+
+    if "--profile" in argv:
+        print("\nПОВЕДЕНИЕ СИГЛ: как часто сигла стоит на чтении, совпадающем с S1")
+        print("Имена кодексов в файлах НЕ даны (только type= и <origDate>), поэтому это")
+        print("проверка поведения сиглы, а не её отождествление с именованным кодексом.")
+        for c in colls:
+            code = S1_CODE.get(c.book, "")
+            agree: Counter[str] = Counter()
+            total: Counter[str] = Counter()
+            usable = 0
+            for u in c.units:
+                verse = s1.get((code, u.ch, u.v), "")
+                if not verse:
+                    continue
+                good = set()
+                for _, t, w in u.rdg:
+                    if t and bare(t) in verse:
+                        good |= set(w)
+                if not good:
+                    continue
+                usable += 1
+                for _, _, w in u.rdg:
+                    for sig in w:
+                        total[sig] += 1
+                        if sig in good:
+                            agree[sig] += 1
+            print(f"  {c.sid:6} {c.book}: юнитов, где хоть одно чтение совпало с S1 — {usable}")
+            rows = [(g, agree[g], total[g]) for g in KEY_WITNESSES if total[g]]
+            for sig, a, t in sorted(rows, key=lambda r: -(r[1] / r[2])):
+                print(f"        {sig:6} {a:4d}/{t:4d} = {100 * a / t:5.1f} %")
 
     if "--ref" in argv:
         ref = argv[argv.index("--ref") + 1]

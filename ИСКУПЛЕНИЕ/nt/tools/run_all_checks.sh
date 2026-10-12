@@ -35,7 +35,13 @@ python3 "$T/sbl_apparatus.py" 2>&1 | head -1 || fail=1
 echo; echo "=== 7. аппарат по всем перикопам §3.2 ==="
 python3 "$T/pericope_apparatus_sweep.py" 2>&1 | head -3 || fail=1
 
-echo; echo "=== 8. валидаторы репозитория ==="
+echo; echo "=== 8. колляции по рукописям (S9, S10) ==="
+python3 "$T/manuscript_collation.py" --stats 2>&1 | sed -n '2,9p' || fail=1
+n=$(python3 "$T/manuscript_collation.py" --verify 2>&1 | grep -c "СОВПАЛО")
+echo "  кодов книг подтверждено по тексту S1: $n из 6"
+[ "$n" -eq 6 ] || fail=1
+
+echo; echo "=== 9. валидаторы репозитория ==="
 for v in research_root_authority repository_authority_integrity genesis6_authority_manifest; do
   python3 "scripts/validate_$v.py" >/dev/null 2>&1
   rc=$?
