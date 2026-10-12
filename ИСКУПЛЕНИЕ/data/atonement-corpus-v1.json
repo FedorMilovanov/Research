@@ -385,7 +385,6 @@
         "edition": "Calvin, Institutes, tr. Henry Beveridge, Calvin Translation Society, 1845, vol. II",
         "iii2416": "601-602",
         "iii2417": "603-604",
-        "iii2415ends": "600",
         "offsetRule": "printed page = scan leaf - 18",
         "offsetSource": "institutesofchribeve02calv_page_numbers.json (hocr_pagenumber_confidence 100); anchors leaf 613->595, 619->601, 621->603, 631->613, 637->619, 641->623, 645->627",
         "quoteAnchors": [
@@ -394,7 +393,11 @@
           "'O Jerusalem, Jerusalem, how often would I have gathered thy children together' + 'though to our apprehension the will of God is manifold, yet he does not in himself will opposites' - leaf 622 = p. 604"
         ],
         "correction2026-10-11": "The 2026-10-07 waves recorded III.24.16 as pp. 619-620 and III.24.17 as pp. 620-621. Those are LEAF numbers of this scan, not printed pages; the block had no offsetRule, unlike calvinCatholicEpistles1855 (leaf - 6) and owenGooldVolXPageMap (leaf - 16), which is what allowed the slip. Printed pages are 601-602 (section 16) and 603-604 (section 17). Same class of error as the WCF VIII correction (correction2026-10-08).",
-        "notResolved": "the exact leaf where section 17 opens is not pinned separately: it begins on leaf 620 or 621 (pp. 602-603); only the Matt 23:37 argument inside it is anchored, to p. 604"
+        "notResolved": "the exact leaf where section 17 opens is not pinned separately: it begins on leaf 620 or 621 (pp. 602-603); only the Matt 23:37 argument inside it is anchored, to p. 604",
+        "iii2415": "600-601",
+        "iii2417opening": "603 - '17. But if it is so, (you will say), little faith can be put in the Gospel promises...'",
+        "iii2416opening": "601 - '16. The second passage adduced is that in which Paul says that God will have all men to be saved'",
+        "boundaryPinned2026-10-11": "Pinned by printed-page headers of the full-text djvu of ia600904 item institutesofchribeve02calv (chunks 204-205): section 16 opens on p. 601, 'no man approaches God unless previously influenced' ends p. 602, section 17 opens p. 603. Independent of the leaf map."
       },
       "westminsterLargerCatechism1813": {
         "item": "largercatechism00west",
