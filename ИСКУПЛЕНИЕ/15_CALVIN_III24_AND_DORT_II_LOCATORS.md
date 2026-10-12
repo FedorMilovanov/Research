@@ -482,29 +482,36 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 
 ---
 
-### D.3 Второе лондонское исповедание 1689 (баптистский twin) — локатор глав (2026-10-11)
+### D.3 Второе лондонское исповедание 1689 (баптистский twin) — локатор глав и параграфов (обновлено 2026-10-12)
 
 **Издание:** *A Confession of Faith, put forth by the elders and brethren of many congregations of Christians (baptized upon profession of their faith) in London and the country* (Charleston, **1850**), IA `confessionoffait00char`, 134 листа, `hocr_pagenumber_confidence: 89`.
 
-**Смещение лист − 6 = печатная страница.** Карта `confessionoffait00char_page_numbers.json`: лист 48→42, 49→43, 55→49, 63→57, 65→59, 67→61, 71→65 — без разрывов.
+**Номер страницы стоит вверху страницы.** Проверено по порядку маркеров в полном тексте (`confessionoffait00char_djvu.txt`): «23» стоит непосредственно перед заголовком гл. VIII; «29» — перед заголовком гл. XI. Оба совпадают с собственным оглавлением тома.
 
-| Объект | Лист | Печатная страница | Подтверждение |
-|---|---|---|---|
-| Гл. **VIII** «Of Christ the Mediator» | 29 | **23** | заголовок + **оглавление тома** (лист 72): «viii — Of Christ the Mediator … 23» |
-| Гл. **XI** «Of Justification», §1 | 35 | **29** | текст §1 + **оглавление тома** (лист 72): «xi — Of Justification … 29» |
-| Оглавление тома | 72 | (без номера) | — |
+**Смещение лист − 6 = печатная страница** (карта `confessionoffait00char_page_numbers.json`: лист 48→42, 49→43, 55→49, 63→57, 65→59, 67→61, 71→65 — без разрывов).
 
-Две независимые привязки на каждый локус (заголовок/текст и собственное оглавление издания) — это тот же стандарт, что применялся к Оуэну и Кальвину.
+| Объект | Печатная страница | Подтверждение |
+|---|---|---|
+| Гл. **VIII** «Of Christ the Mediator», заголовок и §1–2 | **23** | заголовок + оглавление тома (лист 72): «viii — Of Christ the Mediator … 23» |
+| Гл. VIII §3–4 | 24 | порядок маркеров (маркер «24» перед §3) |
+| Гл. VIII **§5** («perfect obedience … for all those whom the Father hath given unto him») | **25** | маркер «25» перед §5 |
+| Гл. VIII **§8** («To all those for whom Christ hath obtained eternal redemption…») | **25** (начало) → **26** (конец) | маркер «26» внутри §8 |
+| Гл. VIII §9 | 26 | — |
+| Гл. XI «Of Justification», §1 | **29** | маркер «29» перед заголовком гл. XI; оглавление: «xi — Of Justification … 29» |
 
-**Verbatim, гл. XI § 1 (лист 35 = с. 29; OCR неровный, опечатки исправлены по смыслу, курсивом — места, прочитанные неуверенно):**
+**Verbatim (OCR полного текста; опечатки OCR исправлены по смыслу, где уверенности нет — помечено в JSON):**
 
-> **1.** Those whom God effectually calleth, he also freely justifieth; not by infusing righteousness into them, but by pardoning their sins, and by accounting and accepting their persons as righteous; not for any thing wrought in them, or done by them, but for Christ's sake alone; not by imputing faith itself, the act of believing, or any other evangelical obedience to them, as their righteousness, but by imputing Christ's active obedience unto the whole law and passive obedience in his death, for their whole and sole righteousness; they receiving and resting on him and his righteousness by faith, which they have not of themselves: it is the gift of God.
+> **5.** The Lord Jesus by his perfect obedience and sacrifice of himself, which he through the eternal Spirit once offered up unto God, hath fully satisfied the justice of God, procured reconciliation, and purchased an everlasting inheritance in the kingdom of heaven, **for all those whom the Father hath given unto him.** *(с. 25)*
 
-**Чего здесь НЕ получено — и почему это записано прямо.**
+> **8.** To all those **for whom Christ hath obtained eternal redemption**, he doth certainly and effectually apply, and communicate the same; making intercession for them; uniting them to himself by his spirit; revealing unto them, in and by the word, the mystery of salvation; persuading them to believe, and obey; governing their hearts by his word and spirit, and overcoming all their enemies by his almighty power and wisdom; in such manner and ways, as are most consonant to his wonderful, and unsearchable dispensation; and all of free, and absolute grace, **without any condition foreseen in them, to procure it.** *(с. 25–26)*
 
-- **Померных страниц внутри глав нет.** Ключевая для спора об объёме формула 1689 (§8 гл. VIII, параллель WCF 8.8: «To all those for whom Christ hath purchased redemption he doth certainly and effectually apply and communicate the same…») поиском по этому скану **не находится** — ни по «for whom Christ hath purchased redemption», ни по «apply and communicate». Причина: качество OCR. В статистике тома `word_conf_0_10: 11949` против `word_conf_91_100: 41` — то есть подавляющее большинство слов распознано с низкой уверенностью. Заголовки и оглавление читаются, сплошной текст — плохо.
-- Следовательно **на уровне параграфа 1689 по этому скану цитировать нельзя**. Если понадобятся 8.5 / 8.8 постранично — брать другой скан: `confessionoffait02phil` (1773), `confessionoffait03phil` (1798), `confessionoffait00phil` (1818). Филадельфийские издания 1719 / 1743 / 1790 (`bim_eighteenth-century_a-confession-of-faith-p_…`) тоже доступны, но они несут две **добавленные статьи** (возложение рук, пение псалмов), которых в лондонском 1689 нет, — для гл. VIII и XI это несущественно, но при цитате указывать издание обязательно.
-- Проверено, что в данном издании 1689 **нет** филадельфийских добавлений: оборот «imposition of hands» встречается один раз (лист 62) в обычном контексте поставления диакона, а не как отдельная глава.
-- **Сверка с факсимиле не делалась.** Уровень — глава и (для XI) первый параграф, подтверждённый оглавлением.
+> **XI.1.** Those whom God effectually calleth, he also freely justifieth; not by infusing righteousness into them, but by pardoning their sins, and by accounting and accepting their persons as righteous; not for any thing wrought in them, or done by them, but for Christ's sake alone; … they receiving, and resting on him, and his righteousness by faith, which they have not of themselves: it is the gift of God. *(с. 29)*
 
-**Зачем это в корпусе.** 1689 — баптистский twin Вестминстера: почти дословно воспроизводит WCF с изменениями в главах о церкви, крещении и клятве. Для сайта, который ведёт баптистская община, это не «дополнительный» документ, а **свой** символ веры. Но по вопросу объёма он ничего не добавляет к WCF 8.5/8.8: та же структура, то же молчание о широте приобретения. `EVIDENCE_HOLD` не снят, и «twin» не означает «доказательство».
+**Важное расхождение с WCF 8.8 (зафиксировано, не сглажено).** WCF 8.8 читается «To all those for whom Christ hath **purchased** redemption…». 1689 в этом издании читается «for whom Christ hath **obtained** eternal redemption». Глагол другой; ограничительная конструкция «for whom» и хвост «without any condition foreseen in them, to procure it» — те же. Поэтому по существу спора о широте это **не** доказательство чего-либо, но цитировать 1689 нужно по собственной формулировке, а не по памяти о WCF. Предыдущая запись «формула 8.8 не находится» была ошибкой поиска: искали WCF-глагол.
+
+**Границы проверки.**
+- Текст получен из OCR полного текста; **сверки с факсимиле не делалось** (изображение страницы не открывалось). Для Product — только после сверки с факсимиле или с печатным изданием.
+- Уровень: параграф (§5, §8) и первый параграф гл. XI. Остальные параграфы этой главы не выверены.
+- Издание — лондонское 1689 без филадельфийских добавлений (в нём нет статей о возложении рук и пении псалмов как отдельных глав; «imposition of hands» встречается только в тексте о диаконах).
+
+**Зачем это в корпусе.** 1689 — баптистский twin Вестминстера: почти дословно воспроизводит WCF с изменениями в главах о церкви, крещении и клятве. Для сайта, который ведёт баптистская община, это не «дополнительный» документ, а **свой** символ веры. По вопросу объёма он ничего не добавляет к WCF 8.5/8.8 сверх слова «obtained». `EVIDENCE_HOLD` не снят, и «twin» не означает «доказательство».

@@ -393,7 +393,7 @@
           "'O Jerusalem, Jerusalem, how often would I have gathered thy children together' + 'though to our apprehension the will of God is manifold, yet he does not in himself will opposites' - leaf 622 = p. 604"
         ],
         "correction2026-10-11": "The 2026-10-07 waves recorded III.24.16 as pp. 619-620 and III.24.17 as pp. 620-621. Those are LEAF numbers of this scan, not printed pages; the block had no offsetRule, unlike calvinCatholicEpistles1855 (leaf - 6) and owenGooldVolXPageMap (leaf - 16), which is what allowed the slip. Printed pages are 601-602 (section 16) and 603-604 (section 17). Same class of error as the WCF VIII correction (correction2026-10-08).",
-        "notResolved": "the exact leaf where section 17 opens is not pinned separately: it begins on leaf 620 or 621 (pp. 602-603); only the Matt 23:37 argument inside it is anchored, to p. 604",
+        "notResolved": "section 17 opening: PINNED 2026-10-12 (printed p. 603, 'the Gospel promises' paragraph '17. But if it is so'), by page headers of the full-text djvu. Matt 23:37 argument is on p. 604. Other sub-claims of III.24.16-17 are not separately pinned.",
         "iii2415": "600-601",
         "iii2417opening": "603 - '17. But if it is so, (you will say), little faith can be put in the Gospel promises...'",
         "iii2416opening": "601 - '16. The second passage adduced is that in which Paul says that God will have all men to be saved'",
@@ -434,11 +434,11 @@
         "edition": "A Confession of Faith, put forth by the elders and brethren of many congregations of Christians (baptized upon profession of their faith) in London and the country (Charleston, 1850), 134 leaves",
         "rights": "public-domain",
         "offsetRule": "printed page = scan leaf - 6",
-        "offsetSource": "confessionoffait00char_page_numbers.json (hocr_pagenumber_confidence 89); anchors leaf 48->42, 49->43, 55->49, 63->57, 65->59, 67->61, 71->65",
+        "offsetSource": "confessionoffait00char_page_numbers.json (hocr_pagenumber_confidence 89); anchors leaf 48->42, 49->43, 55->49, 63->57, 65->59, 67->61, 71->65. PAGE NUMBER PRINTED AT TOP OF PAGE (verified: marker '23' precedes chapter VIII heading; marker '29' precedes chapter XI heading; both match the volume's own table of contents).",
         "replacesRegistryEntry": "C04",
         "chapters": {
-          "8_OfChristTheMediator": "23",
-          "11_OfJustification": "29"
+          "8_OfChristTheMediator": "23 (heading, sections 1-2); 24 (3-4); 25-26 (section 5 on 25; section 8 starts 25, ends 26; section 9 on 26)",
+          "11_OfJustification": "29 (section 1)"
         },
         "quoteAnchors": [
           "chapter VIII heading 'Of Christ the Mediator' - leaf 29 = p. 23",
@@ -448,13 +448,21 @@
         ],
         "verbatimChapter11Section1": "Those whom God effectually calleth, he also freely justifieth; not by infusing righteousness into them, but by pardoning their sins, and by accounting and accepting their persons as righteous; not for any thing wrought in them, or done by them, but for Christ's sake alone; not by imputing faith itself, the act of believing, or any other evangelical obedience to them, as their righteousness, but by imputing Christ's active obedience unto the whole law and passive obedience in his death, for their whole and sole righteousness; they receiving and resting on him and his righteousness by faith, which they have not of themselves: it is the gift of God.",
         "notResolved": [
-          "NO paragraph-level pages. The extent-relevant formula of 2LBC 8.8 (parallel to WCF 8.8, 'To all those for whom Christ hath purchased redemption he doth certainly and effectually apply and communicate the same') is not retrievable by OCR search in this scan - neither 'for whom Christ hath purchased redemption' nor 'apply and communicate' returns a hit. Cause is OCR quality: word_conf_0_10 = 11949 vs word_conf_91_100 = 41. Headings and the table of contents read cleanly; continuous body text does not.",
-          "Therefore paragraph-level quotation from THIS scan is not permitted. If 8.5 / 8.8 pages are needed, use another scan: confessionoffait02phil (1773), confessionoffait03phil (1798), confessionoffait00phil (1818).",
-          "The Philadelphia editions (1719, 1743, 1790, bim_eighteenth-century_a-confession-of-faith-p_*) carry two ADDED articles (imposition of hands, singing of psalms) not present in the London 1689. Immaterial for chapters 8 and 11, but the edition must always be named when quoting.",
-          "Verified that this particular scan is NOT a Philadelphia edition: 'imposition of hands' occurs once (leaf 62), in the ordinary context of setting apart a deacon, not as a separate chapter.",
-          "No facsimile collation. Level achieved: chapter, plus chapter 11 section 1 confirmed by the table of contents."
+          "Paragraph level now obtained for 8.5, 8.8 and 11.1 from OCR of the full text (djvu). OCR is good on these paragraphs but NOT compared with a facsimile; do not publish quotations without that comparison.",
+          "Other paragraphs of chapters 8 and 11 are not verified.",
+          "Earlier note that 8.8 was not retrievable was an error of search (it searched for the WCF verb 'purchased'); corrected 2026-10-12.",
+          "Philadelphia editions (1719, 1743, 1790; bim_eighteenth-century_a-confession-of-faith-p_*) carry two added articles (imposition of hands, singing of psalms). Name the edition when quoting.",
+          "Scan read (1850 Charleston) is not the 1689 first edition; the wording is the 1689 text as printed in this 1850 edition."
         ],
-        "doctrinalNote": "1689 is the Baptist twin of Westminster: it reproduces WCF nearly verbatim with changes on the church, baptism and the oath. It adds nothing to WCF 8.5/8.8 on the extent question - same structure, same silence about how wide the purchase is. EVIDENCE_HOLD is not lifted, and 'twin' does not mean 'proof'."
+        "doctrinalNote": "1689 is the Baptist twin of Westminster: it reproduces WCF nearly verbatim with changes on the church, baptism and the oath. It adds nothing to WCF 8.5/8.8 on the extent question - same structure, same silence about how wide the purchase is. EVIDENCE_HOLD is not lifted, and 'twin' does not mean 'proof'.",
+        "paragraphPages": {
+          "8.5": "25",
+          "8.8": "25-26",
+          "11.1": "29"
+        },
+        "verbatimChapter8Section5": "The Lord Jesus by his perfect obedience and sacrifice of himself, which he through the eternal Spirit once offered up unto God, hath fully satisfied the justice of God, procured reconciliation, and purchased an everlasting inheritance in the kingdom of heaven, for all those whom the Father hath given unto him.",
+        "verbatimChapter8Section8": "To all those for whom Christ hath obtained eternal redemption, he doth certainly and effectually apply, and communicate the same; making intercession for them; uniting them to himself by his spirit; revealing unto them, in and by the word, the mystery of salvation; persuading them to believe, and obey; governing their hearts by his word and spirit, and overcoming all their enemies by his almighty power and wisdom; in such manner and ways, as are most consonant to his wonderful, and unsearchable dispensation; and all of free, and absolute grace, without any condition foreseen in them, to procure it.",
+        "wordingDifferenceVsWCF8_8": "WCF 8.8 reads 'for whom Christ hath purchased redemption'; 1689 (this scan) reads 'for whom Christ hath obtained eternal redemption'. Same restrictive 'for whom' construction and same closing clause; recorded as a verbal difference, not a doctrinal one."
       },
       "calvinHebrews1853": {
         "item": "commentariesowentran00calv",
