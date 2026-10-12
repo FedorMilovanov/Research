@@ -526,7 +526,7 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 
 | Статья | Печатная страница | Статус и текст |
 |---|---|---|
-| XIV–XV | 397–400 | [стр] страницы; вербатим не сверен |
+| XIV–XV | 397–400 | [стр] подтверждено по разворотам 397–400 (XIV начинается на 398, XV — на 400); вербатим не сверен |
 | XVI «OF ETERNAL ELECTION» | 401–402 | [в] «MERCIFUL, since he delivers and preserves from this perdition all whom he, in his eternal and unchangeable council, of mere goodness hath elected in Christ Jesus our Lord…» |
 | XX | 405–406 | [в] «…perfectly merciful and also perfectly just, sent his Son…» |
 | XXI | 406–407 | [в] «…to appease his wrath by his full satisfaction…» |
@@ -548,7 +548,7 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 | Q18 | 6 | 312–313 | [стр] |
 | Q20 | 7 | 313 | [в] «…only such as are by true faith ingrafted into him…» |
 | Q21 | 7 | 313 | [в] «…forgiveness of sins … freely given … only for the sake of Christ's merits.» |
-| Q22–23 | 7 | 314–315 | [стр] |
+| Q22–23 | 7 | 314–315 | [стр] подтверждено по разворотам 314–315 (ответ Q22 на 314; Q23 — 314–315) |
 | Q37 | 15 | 319 | [в] «…he bore, in body and soul, the wrath of God against the sin of the whole human race…» |
 | Q38–39 | 15 | 320 | [стр] |
 | Q40 | 16 | 320 | [в] «…satisfaction … could be made no otherwise than by the death of the Son of God» |
@@ -584,4 +584,26 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 Заметки:
 - Epitome XI.9, XI.12 — прямые «universal» формулы рядом с условием «know … and truly believe». Вердикта нет.
 - C07 нужен для P6 и не является нашим каноном (`05`).
-- **Solid Declaration XI** — не покрыт (нет PD-печати с нумерацией страниц). Текст есть в веб-изданиях (bookofconcord.org, CC-доступ) и в Jacobs 1911 (lutheranlibrary, CC BY 4.0), но без страниц оригинала. Это открытый пункт, не закрыт.
+- **Solid Declaration XI** — локатор теперь есть по PD-изданию Jacobs 1911 (*The Book of Concord*, United Lutheran Publication House, 1911; archive.org `bookofconcordors0000ddhe`, OCR, печатная пагинация в колонтитулах). Это **английская** печать Якобса, не Шаффа и не Мюллер; страницы даны по колонтитулам. Глава XI начинается на с. 649 («CHAPTER XI. Of God's Eternal Foreknowledge [Predestination] and Election»).
+
+#### E.3a Solid Declaration XI — Jacobs 1911 (PD, EN)
+
+| Место | Печатная страница (Jacobs 1911) | Статус и текст |
+|---|---|---|
+| Заголовок главы XI | 649 | [в] «Of God's Eternal Foreknowledge [Predestination] and Election» |
+| SD XI.5 | 650 | [в] «…the eternal election of God…pertains not at the same time to the godly and the wicked, but only to the children of God» |
+| SD XI.10–11 | 651–652 | [стр] (ложные рассуждения о предвидении; не сверено дословно) |
+| SD XI.12 | 652 | [в] «Therefore, if we wish to think or speak correctly and profitably concerning eternal election…» |
+| SD XI.28 | 654 | [в] «…the promise of the Gospel is universal…» / «God hath concluded them all in unbelief, that he might have mercy upon all» (Rom. 11:32) / «The Lord is not willing that any should perish» (2 Pet. 3:9) |
+| SD XI.41 | 657 | [в] «The cause for this contempt for the Word is not God's knowledge [or predestination], but the perverse will of man» |
+| SD XI.56 | 659 | [стр] «…God also knows and has determined for every one the time and hour of his call…» |
+| SD XI.66 | 661 | [в] «…whom he would save he would save through Christ» |
+| SD XI.78 | 663 | [в] «…the reason that not all who hear it believe…is not that God has not desired their salvation; but it is their own fault» |
+| SD XI.79 | 663–664 | [в] «…God…does not wish that any man be damned» |
+| SD XI.84 | 664 | [в] «…God 'is not willing that any should perish' (2 Pet. 3:9); he also has 'no pleasure in the death of the wicked'» |
+
+Заметки по SD XI:
+- В Jacobs 1911 в тексте встречаются маргинальные номера (704–716, 649–664 в колонтитулах). Назначение маргинальных чисел (вероятно, пагинация другого издания) **не подтверждено**; в локаторах используются только колонтитульные страницы Jacobs 1911.
+- Текст получен из OCR archive.org (djvu-stream); страницы сняты по колонтитулам соседних текстовых фрагментов, а не по сканам. Визуальной сверки разворотов нет.
+- Фраза «Neither God nor his election, but their own wickedness…» — **Epitome XI.11** (168–169), в SD XI.41/78 есть близкие, но не тождественные формулировки; не смешивать.
+- Jacobs 1882 (`archive.org/details/jacobs_concord`) и Müller 1848 не использованы для локатора; Müller/BSLK-нумерация SD XI (1063–1093) — только вторичная ссылка из dokumen.pub, не проверена.
