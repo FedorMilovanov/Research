@@ -200,6 +200,33 @@
     "sourcesUsed": ["S10", "S11", "S13", "S14", "S15", "S16", "S23"],
     "status": "DONE_WAVE11_FIRST_VERSION_APPARATUS_PENDING"
   },
+  "qaFullPass": {
+    "date": "2026-10-12",
+    "scope": "full quote-verification pass over cards 01–09 (every Hebrew fragment of 2+ words and every Greek fragment of 2+ words must be findable in MT (morphhb, ketiv and qere views), the three LXX mirrors (ELI 1930, SOL 1909, F1K tlg0527) or SBLGNT), plus a segment-based mixed-script pass over the cards, the authority doc and this SSOT; passages that span verse boundaries are matched against continuous per-book text",
+    "perCard": [
+      {"id": "01", "hebrew": 11, "greek": 47, "problems": 0},
+      {"id": "02", "hebrew": 28, "greek": 75, "problems": 0},
+      {"id": "03", "hebrew": 95, "greek": 124, "problems": 0},
+      {"id": "04", "hebrew": 50, "greek": 125, "problems": 0},
+      {"id": "05", "hebrew": 39, "greek": 73, "problems": 0},
+      {"id": "05b", "hebrew": 50, "greek": 86, "problems": 0},
+      {"id": "06", "hebrew": 77, "greek": 115, "problems": 0},
+      {"id": "07", "hebrew": 59, "greek": 122, "problems": 0},
+      {"id": "08", "hebrew": 67, "greek": 131, "problems": 0},
+      {"id": "09", "hebrew": 49, "greek": 129, "problems": 0}
+    ],
+    "totals": {"hebrew": 525, "greek": 1027, "problems": 0},
+    "fixes": [
+      "card 01: «הַדָּם יְכַפֵּר» was a non-contiguous label; replaced by the exact phrase כִּי הַדָּם הוּא בַּנֶּפֶשׁ יְכַפֵּר (Lev 17:11)",
+      "card 02: Acts 7:35 quotation in the NT table omitted καὶ (καὶ ἄρχοντα καὶ λυτρωτήν) — corrected",
+      "card 03: the asham gloss «κριὸς τῆς πλημμελίας» is not one verse form — replaced with the attested forms (κριὸν ἄμωμον Lev 5:15; ἐν τῷ κριῷ τῆς πλημμελίας Lev 5:16; κριὸν τῆς πλημμελίας LXX 6:32)",
+      "card 03: Heb 5:3 quotation «ἑαυτοῦ» → «αὑτοῦ» (SBLGNT reading)",
+      "cards 03, 09, SSOT: mixed-script defects fixed (Latin letters inside the Russian word аппарат; Latin e inside the Russian abbreviation ед. ч.; Cyrillic а inside the Latin transliteration ḥaṭṭāʾt)",
+      "tool fix (not a card defect): maqqef (U+05BE) was stripped instead of being turned into a space, so fragments containing maqqef split — affected the card 01 Hebrew lines only; the tool now normalises both sides"
+    ],
+    "tooling": "qa.py (fragments vs MT/LXX/SBLGNT; MT note elements stripped; ketiv/qere aware; apparatus/gloss lines reported as informational, not problems) and mixcheck.py (segment-based mixed-script detection) live in scratch only and are not committed",
+    "result": "all ten cards and the SSOT pass with 0 problems; 83 informational lines (apparatus quotes and lexical glosses)"
+  },
   "cards": [
     {
       "id": "01",
