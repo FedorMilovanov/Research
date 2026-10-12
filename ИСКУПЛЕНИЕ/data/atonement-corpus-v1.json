@@ -678,25 +678,6 @@
               "XXIII"
             ]
           },
-          "FormulaOfConcord": {
-            "printed": "165-170",
-            "scope": "Solid Declaration XI complete I-XIV; Epitome XI not located",
-            "verbatimVerified": [
-              "SD XI IV p.166",
-              "SD XI IX p.168",
-              "SD XI XI p.168-169",
-              "SD XI XII p.169-170"
-            ],
-            "notVerified": [
-              "Epitome XI (archive search endpoint returned 502; not found in chunks 29-43)"
-            ],
-            "pageOnly": [
-              "SD XI heading p.165",
-              "SD XI I-III p.165-166",
-              "SD XI V-VIII p.166-168",
-              "SD XI XIII-XIV p.170"
-            ]
-          },
           "HeidelbergLD5_7_LD15_16": {
             "printed": "311-321",
             "lordsDayMapping": {
@@ -746,15 +727,39 @@
               "Q43": "321",
               "Q44": "322"
             }
+          },
+          "FormulaOfConcordEpitomeXI": {
+            "printed": "164-172",
+            "scope": "Epitome XI only (Schaff vol. III prints the Epitome; the Solid Declaration is omitted by the editor, see Schaff's FC preface)",
+            "verbatimVerified": [
+              "Epitome XI heading p.165",
+              "Epitome XI IV p.166",
+              "Epitome XI V-VI p.166",
+              "Epitome XI VII p.167",
+              "Epitome XI IX p.168",
+              "Epitome XI XI p.168-169",
+              "Epitome XI XII p.169-170",
+              "Epitome XI Negativa I, IV p.171-172"
+            ],
+            "pageOnly": [
+              "Epitome XI VIII p.167",
+              "Epitome XI X p.168",
+              "Epitome XI XIII-XIV p.170",
+              "Epitome XII heading p.172"
+            ],
+            "notLocated": [
+              "Solid Declaration XI — not printed in Schaff vol. III; no PD page-numbered source located"
+            ]
           }
         },
         "offsetAnchorsAdded2026-10-12": [
+          "leaf 178/179 -> 164/165 (Epitome XI heading; running head 165)",
           "leaf 415 -> 401 ('MERCIFUL, since he delivers' — Belgic XVI)",
           "leaf 420 -> 406 (Belgic XXI, 'appease his wrath')",
           "leaf 333 -> 319 (Heidelberg Q37 'bore, in body and soul')",
-          "leaf 179 -> 165 (FC SD XI heading; running head 165)",
           "printed 9 = running head 'THE AUGSBURG CONFESSION. 9' before Art. III (verified)",
-          "NOTE: TOC entry 'Confessio Augustana ... 33' does not correspond to AC text at p. 9; not used"
+          "NOTE: TOC entry 'Confessio Augustana ... 33' does not correspond to AC text at p. 9; not used",
+          "NOTE: earlier registry labels 'FC SD I-XIV' for leaves/pages 98-170 were wrong: those pages are Epitome I-XI"
         ]
       }
     },

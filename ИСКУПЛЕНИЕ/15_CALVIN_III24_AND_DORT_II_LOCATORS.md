@@ -561,22 +561,27 @@ LA-якоря: 8.5 — *ac omnibus ei a Patre datis non modo reconciliationem; v
 - **Q37 и Q40** — «whole human race» рядом с «death of the Son of God». Вербатим.
 - LD 1–4, 8–14, 17–52 в C06 не нужны и не вытянуты.
 
-### E.3 Формула Согласия (Formula of Concord), C07 — Solid Declaration XI
+### E.3 Формула Согласия (Formula of Concord), C07 — Epitome XI (PD-печать Шаффа)
+
+**Важно (исправление 2026-10-12):** в Schaff vol. III печатается только **Epitome** FC (с. 93–~178). Сам Шаффа (часть 28 djvu): «we omit the lengthy Solid Repetition and Declaration». Всё, что раньше в этом разделе подписывалось «SD XI», на самом деле **Epitome XI** (с. 164–172). Solid Declaration XI в этом PD-издании отсутствует. Страничного локатора SD XI нет.
 
 | Место | Печатная страница | Статус и текст |
 |---|---|---|
-| SD XI «OF THE ETERNAL PREDESTINATION AND ELECTION OF GOD» | 165 (лист 179) | [стр] |
-| SD XI, I–III | 165–166 | [стр] |
-| SD XI, IV | 166 | [в] «…extends only to the good and beloved children of God…» |
-| SD XI, V–VII | 166–167 | [стр] |
-| SD XI, VIII | 167–168 | [стр] |
-| SD XI, IX | 168 | [в] «God hath concluded all under unbelief, that he might have mercy upon all; and that he is not willing that any should perish…» |
-| SD XI, XI | 168–169 | [в] «Neither God nor his election, but their own wickedness, is to blame if they perish» |
-| SD XI, XII | 169–170 | [в] «…besides those who acknowledge his Son Jesus Christ, and truly believe on him, he will save no one.» |
-| SD XI, XIII–XIV | 170 | [стр] |
+| Epitome XI, заголовок «OF THE ETERNAL PREDESTINATION AND ELECTION OF GOD» (лат. «DE ÆTERNA PRÆDESTINATIONE ET ELECTIONE DEI») | 164–165 (лист 178–179) | [в] «Touching this article there has not, indeed, arisen any public controversy…» |
+| Epitome XI, I–III | 165–166 | [в] «First of all … distinction between the foreknowledge and the predestination or eternal election»; «This foreknowledge … extends both to good and evil men» |
+| Epitome XI, IV | 166 | [в] «…the predestination or eternal election of God extends only to the good and beloved children of God, and this is the cause of their salvation» |
+| Epitome XI, V–VI | 166 | [в] «…is not to be searched out in the hidden counsel of God, but is to be sought in the Word of God…»; «…the Word of God leads us to Christ, he is that book of life» |
+| Epitome XI, VII | 167 | [в] «Christ calls all sinners to him … he earnestly wishes that all men may come to him» |
+| Epitome XI, VIII | 167 | [стр] (лат. прочитан, англ. не сверен) |
+| Epitome XI, IX | 168 | [в] «…God hath concluded them all in unbelief, that he might have mercy upon all, and that he is not willing that any should perish…» (Rom. 11:32; Ezek. 18:23; 33:11; 2 Pet. 3:9) |
+| Epitome XI, XI | 168–169 | [в] «Neither God nor his election, but their own wickedness, is to blame if they perish» |
+| Epitome XI, XII | 169–170 | [в] «…he would save no one except those who know his Son Christ and truly believe on him.» |
+| Epitome XI, XIII–XIV | 170 | [стр] |
+| Epitome XI, Negativa, I–IV | 170–172 | [в] «That God is unwilling that all men should repent and believe the Gospel» (I); «That the mercy of God … is not the sole cause of the divine election» (IV) |
+| Epitome XII (заголовок «Other Factions … Sects»), начало | 172 | [стр] |
 | Аугсбургское исповедание, III | 9 | [в] «…a sacrifice, not only for original guilt, but also for all actual sins of men.» (колонтитул «9» подтверждён) |
 
 Заметки:
-- SD XI, IX и XI — «не желает, чтобы кто-либо погиб» рядом с XII («besides those who … believe»). Вердикта нет.
+- Epitome XI.9, XI.12 — прямые «universal» формулы рядом с условием «know … and truly believe». Вердикта нет.
 - C07 нужен для P6 и не является нашим каноном (`05`).
-- **Epitome XI не вытянут**: поиск по архиву недоступен (HTTP 502, несколько попыток), в проверенных частях Шаффа его нет. SD XI покрыт I–XIV, Epitome — краткое изложение того же; явно отмечено как непокрытое.
+- **Solid Declaration XI** — не покрыт (нет PD-печати с нумерацией страниц). Текст есть в веб-изданиях (bookofconcord.org, CC-доступ) и в Jacobs 1911 (lutheranlibrary, CC BY 4.0), но без страниц оригинала. Это открытый пункт, не закрыт.
