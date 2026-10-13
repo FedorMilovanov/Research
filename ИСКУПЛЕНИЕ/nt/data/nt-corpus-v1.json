@@ -1405,5 +1405,330 @@
         "none": 3
       }
     }
+  },
+  "verifiedComputedFacts": {
+    "derivedLexicalCounts": {
+      "L3": {
+        "ὑπέρ-tokens": 149,
+        "ἀντί-tokens": 22,
+        "ἀντί-governing-genitive": 22,
+        "περί-tokens": 332,
+        "περί-genitive-of-hamartia": 14,
+        "ὑπέρ-lemma": 150,
+        "ὑπέρ-prepositional-P-": 149,
+        "ὑπέρ-adverbial-D-2Co11:23": 1,
+        "ὑπέρ-genitive-death/giving/offering-clauses": 48,
+        "ἀντί-genitive": 22,
+        "ἀντί-accusative": 0,
+        "ἀντί-adverbial": 0
+      },
+      "L4": {
+        "πολύς-plural-forms": 267,
+        "πολύς-plural-with-preceding-article": 25,
+        "κόσμος-in-John-gospel": 78,
+        "κόσμος-in-1John": 23,
+        "πᾶς-πάντες-surface-form": 178,
+        "πᾶς-πάντες-VPM": 3,
+        "πᾶς-πάντες-NPM": 175,
+        "πᾶς-with-ἄνθρωπος-verses": 71,
+        "κόσμος-with-ὅλος-or-πᾶς-verses": 31
+      }
+    },
+    "lxxProbes": {
+      "prefixCounts": {
+        "ἱλαστηρι": 28,
+        "ἱλασμο": 8,
+        "ἱλασκ": 0,
+        "ἐξιλασκ": 10,
+        "ἐξιλασ": 121,
+        "καταλλασ": 0,
+        "καταλλαγ": 5,
+        "ἀπολυτρωσι": 0,
+        "ἀπολυτρωσ": 2,
+        "ἀγορα": 35
+      },
+      "positiveInflectedForms": {
+        "Psalmi 24:11": "ἱλάσῃ",
+        "Psalmi 78:9": "ἱλάσθητι",
+        "Machabaeorum_ii 1:5": "καταλλαγείη",
+        "Machabaeorum_ii 7:33": "καταλλαγήσεται",
+        "Machabaeorum_ii 8:29": "καταλλαγῆναι",
+        "Daniel_translatio_Graeca 4:30c": "ἀπολυτρώσεως"
+      },
+      "simplexHilasNonNounTokens": 11,
+      "scope": "Digital token/prefix counts in un-lemmatized S5, not complete lemma or semantic counts."
+    },
+    "bloodOwnCaseCounts": {
+      "N": 23,
+      "D": 20,
+      "G": 34,
+      "A": 20
+    },
+    "prepositionNextInflectedCaseCounts": {
+      "ὑπέρ": {
+        "G": 130,
+        "A": 19
+      },
+      "ἀντί": {
+        "G": 22
+      },
+      "περί": {
+        "G": 294,
+        "A": 38
+      }
+    },
+    "antiCausalFormulaCount": 5,
+    "offerSelectedVerses": 14,
+    "offerSelectedVersesWithRedemptionLemma": 0,
+    "grammar": {
+      "Matthew11_28_deute_pos": [
+        "D-"
+      ],
+      "Matthew11_28_pantes_tags": [
+        "----NPM-"
+      ],
+      "John6_37_piAn_count": 1,
+      "Gal3_13_katara_tags": [
+        "----NSF-"
+      ],
+      "Rev5_9_pas_lemma_count": 1,
+      "1John2_2_article_before_sins": 1,
+      "1John4_10_article_before_sins": 1,
+      "MT_Isa53_articles_before_rab": {
+        "Isaiah 53:11": 1,
+        "Isaiah 53:12": 1
+      },
+      "MT_kpr_lex_utf8_by_sp": {
+        "verb": 102,
+        "subs": 20
+      }
+    }
+  },
+  "verifiedVariantControls": {
+    "normalization": "Robinson ASCII, no accents/case/punctuation; whole word sequence, not byte identity",
+    "TRMutualWordEquality": {
+      "1 Пет 3:18": true,
+      "1 Тим 3:16": true,
+      "Гал 1:4": true,
+      "Деян 13:46": true,
+      "Деян 17:30": true,
+      "Деян 20:28": true,
+      "Евр 2:9": true,
+      "Ин 3:16": true,
+      "Ин 5:40": true,
+      "Ин 7:37": true,
+      "Лк 13:34": true,
+      "Лк 14:17": true,
+      "Лк 14:23": true,
+      "Лк 14:24": true,
+      "Мк 10:45": true,
+      "Мк 14:24": true,
+      "Мф 11:28": true,
+      "Мф 20:28": true,
+      "Мф 22:14": true,
+      "Мф 22:3": true,
+      "Мф 22:9": true,
+      "Мф 23:37": true,
+      "Мф 26:28": true,
+      "Откр 1:5": true,
+      "Откр 22:17": true,
+      "Откр 5:10": true,
+      "Откр 5:9": true
+    },
+    "NAReadingWordProbe": {
+      "citedReadings": 235,
+      "equalWords": 150,
+      "unequalWords": 85,
+      "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."
+    },
+    "wordEquality": {
+      "1 Пет 3:18": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "1 Тим 3:16": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Гал 1:4": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Деян 13:46": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Деян 17:30": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Деян 20:28": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Евр 2:9": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Ин 3:16": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Ин 5:40": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Ин 7:37": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Лк 13:34": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Лк 14:17": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Лк 14:23": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Лк 14:24": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мк 10:45": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мк 14:24": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Мф 11:28": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мф 20:28": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мф 22:14": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мф 22:3": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мф 22:9": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Мф 23:37": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Мф 26:28": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Откр 1:5": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Откр 22:17": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Откр 5:10": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Откр 5:9": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      }
+    },
+    "controls": {
+      "TR_Heb2_9_chariti": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "TR_Mark14_24_peri": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "TR_Matt26_28_new_covenant": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "TR_1Tim3_16_theos": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "TR_Acts20_28_theos": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "S7_Heb2_9_explicit_readings": [
+        {
+          "wit": [
+            "Holmes"
+          ],
+          "text": "χωρὶς"
+        },
+        {
+          "wit": [
+            "WH",
+            "Treg",
+            "NIV",
+            "RP"
+          ],
+          "text": "χάριτι"
+        }
+      ],
+      "S8_Tregelles": {
+        "Мк 14:24": true,
+        "Гал 1:4": true,
+        "1 Пет 3:18": true,
+        "Ин 3:16": true,
+        "Евр 2:9": true
+      }
+    },
+    "offerEqualInAllThreeTR": 7
   }
 }
