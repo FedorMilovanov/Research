@@ -1070,12 +1070,54 @@
   "historicalControls": [
     {
       "id": "S15",
-      "name": "Каноны Дорта (1619), Вторая глава — received English translation",
-      "evidenceClass": "B1 — вторичный исторический документ, не экзегеза",
-      "locatorState": "secondary-only: PD-статус подтверждён только вторичными публикациями",
+      "name": "Canons of Dort Head II: curated English 1840 record in parent corpus",
       "card": "ИСКУПЛЕНИЕ/nt/13_DORT_HISTORICAL_CONTROL.md",
-      "finding": "структура II.3 достаточность / II.5 опубликование / II.6 отказ / II.8 действенность совпала с тем, что nt/10_ вывел независимо из греческого; Rejection II.5 отвергает всеобщее примирение, удерживая всеобщее опубликование — та же форма, что в 04_ §8.3",
-      "notObtained": "перевод CRC 1986 не использован (современный, под правами); OPC 1948 (Мюррей) по-прежнему не получен — XX век под правами"
+      "evidenceClass": "A3",
+      "evidenceScope": "Own institutional statements of the synod, not first-order Greek biblical exegesis",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Articles III/V/VI/VIII in the local record; not a visually checked printed page or a newly acquired complete original",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "rightsScope": "Only the English 1840 excerpt accepted in parent corpus provenance; not CRC 1986, Covenant HTML or ESV",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "localRecord": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+      "sha256OfLocalRecord": "2e737a340751ecf3247fd302267c0c2b7bb97c4c987f6421b9cafd37e85044be",
+      "verifiedExcerpts": {
+        "III": "abundantly sufficient to expiate the sins of the whole world",
+        "V": "to all nations, and to all persons promiscuously and without distinction",
+        "VI": "not owing to any defect or insufficiency in the sacrifice offered by Christ upon the cross",
+        "VIII": "all those, and those only, who were from eternity chosen to salvation, and given to him by the Father"
+      },
+      "finding": "Dort distinguishes sufficiency, publication, unbelief and effectual redemption; agreement in categories is not independent validation of NT exegesis.",
+      "OPC": "Parent registry M24 already has partial majority/minority reading; not independently reacquired or promoted here.",
+      "historicalClaims": {
+        "status": "HISTORICAL / SUPERSEDED / UNVERIFIED",
+        "dateClaim": "2026-10-13 (future relative to audit 2026-10-12)",
+        "claim": "Covenant London read; three independent publications and PD received translation verified",
+        "operativeLeadStates": {
+          "evidenceClass": "C",
+          "accessState": "LINK_ONLY",
+          "locatorState": "LOCATOR_MISSING",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED"
+        },
+        "oldRecord": {
+          "id": "S15",
+          "name": "Каноны Дорта (1619), Вторая глава — received English translation",
+          "evidenceClass": "B1 — вторичный исторический документ, не экзегеза",
+          "locatorState": "secondary-only: PD-статус подтверждён только вторичными публикациями",
+          "card": "ИСКУПЛЕНИЕ/nt/13_DORT_HISTORICAL_CONTROL.md",
+          "finding": "структура II.3 достаточность / II.5 опубликование / II.6 отказ / II.8 действенность совпала с тем, что nt/10_ вывел независимо из греческого; Rejection II.5 отвергает всеобщее примирение, удерживая всеобщее опубликование — та же форма, что в 04_ §8.3",
+          "notObtained": "перевод CRC 1986 не использован (современный, под правами); OPC 1948 (Мюррей) по-прежнему не получен — XX век под правами"
+        }
+      }
     }
   ],
   "rejectedCandidates": [
