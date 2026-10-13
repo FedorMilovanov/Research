@@ -1344,7 +1344,6 @@
     "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md"
   ],
   "datasetByteAccounting": "Sum of regular-file content bytes, excluding directory-entry sizes. Previous du-style byte figures are SUPERSEDED; commit and sha256 pins unchanged.",
-  "datasetPathAccounting": "Secondary sha256 of sorted UTF-8 relative paths joined by newline. Existing sorted-content byte digests remain unchanged.",
   "sourceQualityFindings": [
     {
       "source": "S5",
@@ -1409,45 +1408,6 @@
       "correctedValue": 31
     }
   ],
-  "historicalPrepositionAttribution": {
-    "status": "HISTORICAL / SUPERSEDED: nearest-left preposition is not a dependency parse",
-    "bloodOwnCasesBeforeAudit": {
-      "N": 24,
-      "A": 19,
-      "G": 34,
-      "D": 20
-    },
-    "formerBloodGoverningPrepositionTable": {
-      "none": 60,
-      "ἐν": 14,
-      "διά": 8,
-      "ἀπό": 4,
-      "ἐκ": 3,
-      "ἕως": 2,
-      "εἰς": 2,
-      "χωρίς": 2,
-      "πρός": 1,
-      "μέχρι": 1
-    },
-    "formerFirstContentWordCases": {
-      "ὑπέρ": {
-        "G": 129,
-        "A": 20
-      },
-      "ἀντί": {
-        "G": 20,
-        "A": 1,
-        "D": 1
-      },
-      "περί": {
-        "G": 282,
-        "A": 43,
-        "D": 2,
-        "N": 2,
-        "none": 3
-      }
-    }
-  },
   "verifiedComputedFacts": {
     "derivedLexicalCounts": {
       "L3": {
@@ -1773,5 +1733,45 @@
     },
     "offerEqualInAllThreeTR": 7
   },
+  "historicalPrepositionAttribution": {
+    "status": "HISTORICAL / SUPERSEDED: nearest-left preposition is not a dependency parse",
+    "bloodOwnCasesBeforeAudit": {
+      "N": 24,
+      "A": 19,
+      "G": 34,
+      "D": 20
+    },
+    "formerBloodGoverningPrepositionTable": {
+      "none": 60,
+      "ἐν": 14,
+      "διά": 8,
+      "ἀπό": 4,
+      "ἐκ": 3,
+      "ἕως": 2,
+      "εἰς": 2,
+      "χωρίς": 2,
+      "πρός": 1,
+      "μέχρι": 1
+    },
+    "formerFirstContentWordCases": {
+      "ὑπέρ": {
+        "G": 129,
+        "A": 20
+      },
+      "ἀντί": {
+        "G": 20,
+        "A": 1,
+        "D": 1
+      },
+      "περί": {
+        "G": 282,
+        "A": 43,
+        "D": 2,
+        "N": 2,
+        "none": 3
+      }
+    }
+  },
+  "datasetPathAccounting": "Secondary sha256 of sorted UTF-8 relative paths joined by newline. Existing sorted-content byte digests remain unchanged.",
   "branchAudit": "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md"
 }
