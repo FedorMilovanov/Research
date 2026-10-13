@@ -23,8 +23,12 @@ from __future__ import annotations
 
 import re
 import sys
+sys.dont_write_bytecode = True
 import urllib.parse
 from pathlib import Path
+
+from nt_sources import ROOT, registry
+from nt_refs import cards
 
 NT_DIR = Path(__file__).resolve().parent.parent          # ИСКУПЛЕНИЕ/nt
 DEPT_DIR = NT_DIR.parent                                  # ИСКУПЛЕНИЕ
@@ -45,7 +49,7 @@ FORBIDDEN = {
     "стих решён": r"стих\s+реш[ёе]н",
     "πᾶς всегда": r"πᾶς\s+всегда",
     "κόσμος всегда": r"κόσμος\s+всегда",
-    "πολλοί = как догмат": r"πολλο[іи]\s*=\s*[^…\n]{3,}",
+    "πολλοί = как догмат": r"πολλοί\s*=\s*[^…\n]{3,}",
     "доказано ограниченное": r"доказан[оа]\s+ограниченн",
     "доказано всеобщее": r"доказан[оа]\s+всеобщ",
     "автор имел в виду": r"(?:Павел|Иоанн|Пётр|автор)\s+имел\s+в\s+виду",
@@ -90,13 +94,32 @@ def _mask_mentions(line: str) -> str:
 
 def checked_files() -> list[Path]:
     files = sorted(NT_DIR.glob("*.md"))
-    for name in UPPER_FILES:
-        p = DEPT_DIR / name
-        if p.is_file():
+    for name in registry()["requiredMarkdownFiles"]:
+        p = ROOT / name
+        if not p.is_file():
+            raise ValueError(f"required file missing: {p}")
+        if p not in files:
             files.append(p)
-        else:
-            print(f"  предупреждение: нет файла {p}")
     return files
+
+
+def check_inventory(files: list[Path]) -> list[str]:
+    problems = []
+    if registry()["nonTextCards"] != ["08.34"]:
+        problems.append("non-text exception drift: only the justified James silence card is registered")
+    by_name = {p.name: p for p in files}
+    for row in registry()["pericopeCards"]:
+        path = ROOT / row["file"]
+        if path.name not in by_name:
+            problems.append(f"required pericope file missing: {path.name}")
+            continue
+        prefix = path.name[:2]
+        expected = {f"{prefix}.{i}" for i in range(1, row["cards"] + 1)}
+        expected |= {x.split()[0] for x in row.get("extraSections", [])}
+        actual = [cid for cid, title, body in cards(by_name[path.name])]
+        if len(actual) != len(set(actual)) or set(actual) != expected:
+            problems.append(f"{path.name}: SSOT card inventory drift: expected {sorted(expected)}, found {actual}")
+    return problems
 
 
 def check_axis(files: list[Path]) -> tuple[int, list[str]]:
@@ -109,8 +132,11 @@ def check_axis(files: list[Path]) -> tuple[int, list[str]]:
         for i in range(1, len(parts), 2):
             title, body = parts[i], parts[i + 1]
             total += 1
-            if "**Ось:**" not in body:
+            m = re.search(r"\*\*Ось:\*\*([^\n]+)", body)
+            if not m:
                 problems.append(f"{p.name}: карточка «{title.strip()}» без метки оси")
+            elif not set(re.findall(r"`([^`]+)`", m[1])) or set(re.findall(r"`([^`]+)`", m[1])) - set(registry()["axes"]):
+                problems.append(f"{p.name}: карточка «{title.strip()}» без канонической оси")
     return total, problems
 
 
@@ -158,9 +184,9 @@ def check_readings(files: list[Path]) -> tuple[int, list[str]]:
             # структурный: у текстовой карточки есть блок «**Текст S1:**».
             if "**Текст S1:**" not in body and "**Текст S1 (" not in body:
                 continue
-            m = re.search(r"\*\*(?:Живые )?[Чч]тения:?\*\*(.+?)(?=\n\*\*|\n---|\Z)",
+            m = re.search(r"\*\*(?:Живые )?[Чч]тения[^\n*]*\*\*(.+?)(?=\n\*\*|\n---|\Z)",
                           body, re.S)
-            seg = m.group(1) if m else body
+            seg = m.group(1) if m else ""
             labs = set(re.findall(r"`([ABNPU])`", seg))
             if len(labs) >= 2:
                 total += 1
@@ -176,6 +202,39 @@ def check_readings(files: list[Path]) -> tuple[int, list[str]]:
                 f"{'' if not labs else ' ' + '/'.join(sorted(labs))};"
                 f" пояснения «что не доказывает» нет" if not explains else
                 f"{p.name}: карточка «{title.split()[0]}» — на оси extent нужно ≥2 чтения")
+    return total, problems
+
+
+def check_method(files: list[Path]) -> tuple[int, list[str]]:
+    """Structural floor, not a machine certificate of sound exegesis.
+
+    Explicit context/OT boundaries may record a negative result. Primary
+    quotes cannot be deleted to turn a text card into an unexamined service
+    section. The one whole-book silence card is registered separately.
+    """
+    total, problems = 0, []
+    nontext = set(registry()["nonTextCards"])
+    for p in files:
+        if not p.name.startswith(PERICOPE_FILES):
+            continue
+        for cid, title, body in cards(p):
+            if cid.endswith(".0") or cid.startswith("10.") and int(cid.split(".")[1]) > 9:
+                continue
+            total += 1
+            labels = re.findall(r"(?m)^\*\*([^\n]*?)\*\*", body)
+            if cid not in nontext and not any(x.startswith("Текст S1") for x in labels):
+                problems.append(f"{p.name}: {cid}: primary S1 quotation missing")
+            for label, marker in [("syntax", r"[Сс]интаксис"), ("context", r"[Кк]онтекст"),
+                                  ("OT boundary", r"Связь с ВЗ"), ("non-proof", r"Что не доказывает")]:
+                blocks = list(re.finditer(r"(?m)^\*\*([^\n*]+)\*\*(.*?)(?=\n\*\*|\n---|\Z)", body, re.S))
+                matching = [m[2].strip() for m in blocks if re.search(marker, m[1])]
+                if not matching:
+                    problems.append(f"{p.name}: {cid}: mandatory {label} block missing")
+                elif not any(len(re.sub(r"[`*\s]", "", text)) >= 12 for text in matching):
+                    problems.append(f"{p.name}: {cid}: mandatory {label} block empty/placeholder")
+            quote = re.search(r"\*\*Текст S1[^\n*]*\*\*(.*?)(?=\n\*\*|\n---|\Z)", body, re.S)
+            if cid not in nontext and (not quote or not re.search(r"`[^`]*[\u0370-\u03ff\u1f00-\u1fff][^`]*`", quote[1])):
+                problems.append(f"{p.name}: {cid}: primary quotation empty")
     return total, problems
 
 
@@ -197,26 +256,33 @@ def main() -> int:
     files = checked_files()
     print(f"Файлов в проверке: {len(files)}")
 
-    cards, axis_bad = check_axis(files)
+    inventory_bad = check_inventory(files)
+    card_n, axis_bad = check_axis(files)
+    method_n, method_bad = check_method(files)
     links, link_bad = check_links(files)
     lines, forb_bad = check_forbidden(files)
     read_n, read_bad = check_readings(files)
 
-    print(f"  карточек перикоп: {cards}; без метки оси: {len(axis_bad)}")
+    print(f"  карточек перикоп: {card_n}; без канонической оси: {len(axis_bad)}")
+    print(f"  карточек с обязательными блоками: {method_n}; пропусков: {len(method_bad)}")
     print(f"  карточек с чтениями по §3.3: {read_n}; с нарушением: {len(read_bad)}")
     print(f"  относительных ссылок: {links}; битых: {len(link_bad)}")
     print(f"  строк просканировано: {lines}; запрещённых формулировок: {len(forb_bad)}")
 
-    problems = axis_bad + link_bad + forb_bad + read_bad
+    problems = inventory_bad + axis_bad + link_bad + forb_bad + read_bad + method_bad
     if problems:
         print(f"\nFAIL ({len(problems)})")
         for x in problems:
             print("  - " + x)
         return 1
-    print("\nPASS: ось есть в каждой карточке, все ссылки живы, "
-          "запрещённых формулировок нет.")
+    print("\nPASS: inventory, canonical axes, primary/syntax/context/OT/non-proof blocks, "
+          "explicit readings and links; structural floor, not an exegesis certificate.")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except (KeyError, OSError, ValueError) as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        sys.exit(1)
