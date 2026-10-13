@@ -43,16 +43,19 @@ Critica Maior (Деяния, Марк) и UBS5 (Марк, Ефесянам, 1 П
 """
 from __future__ import annotations
 
-import glob
 import os
 import re
+import hashlib
 import sys
+sys.dont_write_bytecode = True
 import unicodedata
+import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 
-HOME = Path(os.environ.get("NT_CORPUS_HOME", Path.home() / "nt-corpus"))
-DEFAULT_SBLGNT = "/home/user/nt-corpus/py-sblgnt-master/pysblgnt/sblgnt"
+from nt_sources import registry, witness_dir, witnesses
+
+DEFAULT_SBLGNT = str(witness_dir("S1", verify=False))
 
 BOOKS = ["Мф", "Мк", "Лк", "Ин", "Деян", "Рим", "1 Кор", "2 Кор", "Гал", "Еф",
          "Флп", "Кол", "1 Фес", "2 Фес", "1 Тим", "2 Тим", "Тит", "Флм",
@@ -63,17 +66,17 @@ NAME_BY_CODE = {f"{i:02d}": b for i, b in enumerate(BOOKS, start=1)}
 # стандартной нумерацией (B26 там — Откровение, а в S1 26 — Иуда).
 S1_CODE = {v: k for k, v in NAME_BY_CODE.items()}
 
-# Каждый файл описан отдельно: шаблон пути (tarball распаковывается в каталог
-# с полным SHA, поэтому glob, а не фиксированное имя), формат id юнита и книга,
+# Каждый файл описан отдельно: имя внутри exact-pinned XML-каталога, формат
+# id юнита и книга,
 # которую файл покрывает. Книга помечена знаком вопроса там, где код в файле
 # расходится со стандартной нумерацией, — это и проверяет --verify.
 FILES = [
-    ("S9", "ECM Марк (2025)", "comp-tc-mark-*/xml/ecm_mark.xml", "xmlid", "Мк"),
-    ("S10a", "ECM Деяния (2023)", "sbl-2023-talk-*/xml/ecm_acts.xml", "ecmacts", "Деян"),
-    ("S10b", "UBS Марк (2023)", "sbl-2023-talk-*/xml/ecm_mark.xml", "xmlid", "Мк"),
-    ("S10c", "UBS Ефесянам (2023)", "sbl-2023-talk-*/xml/ubs_ephesians.xml", "xmlid", "Еф"),
-    ("S10d", "UBS 1 Петра (2023)", "sbl-2023-talk-*/xml/ubs_1_peter.xml", "xmlid", "1 Пет"),
-    ("S10e", "UBS Откровение (2023)", "sbl-2023-talk-*/xml/ubs_revelation.xml", "xmlid", "Откр"),
+    ("S9", "ECM Марк (2025)", "ecm_mark.xml", "xmlid", "Мк"),
+    ("S10a", "ECM Деяния (2023)", "ecm_acts.xml", "ecmacts", "Деян"),
+    ("S10b", "UBS Марк (2023)", "ecm_mark.xml", "xmlid", "Мк"),
+    ("S10c", "UBS Ефесянам (2023)", "ubs_ephesians.xml", "xmlid", "Еф"),
+    ("S10d", "UBS 1 Петра (2023)", "ubs_1_peter.xml", "xmlid", "1 Пет"),
+    ("S10e", "UBS Откровение (2023)", "ubs_revelation.xml", "xmlid", "Откр"),
 ]
 
 # Лексика искупления для --scan. Даны основы без ударений: поиск идёт по
@@ -172,75 +175,64 @@ class Unit:
 class Collation:
     def __init__(self, sid: str, label: str, pattern: str, style: str, book: str):
         self.sid, self.label, self.style, self.book = sid, label, style, book
-        hits = sorted(glob.glob(str(HOME / pattern)))
-        if not hits:
-            raise SystemExit(f"{sid}: файл не найден по шаблону {pattern}; "
-                             f"запустите tools/fetch_nt_corpus.sh")
-        self.path = Path(hits[0])
+        source = "S9" if sid == "S9" else "S10"
+        self.path = witness_dir(source) / pattern
         self.raw = self.path.read_text(encoding="utf-8")
+        root = ET.fromstring(self.raw)
+        for element in root.iter():
+            if isinstance(element.tag, str) and element.tag.startswith("{"):
+                element.tag = element.tag.split("}", 1)[1]
         self.units: list[Unit] = []
         self.wit_types: Counter[str] = Counter()
-        self._witnesses()
-        self._parse()
-
-    # -- список свидетелей
-    def _witnesses(self):
-        # ВАЖНО: `\s+`, а не пробел. В этих файлах атрибуты переносятся на
-        # новую строку, и `<witness n="` даёт 204 совпадения там, где
-        # `<witness` — 284. Первая версия парсера теряла 80 свидетелей Марка
-        # и 17 — Ефесян именно на этом.
-        # Порядок атрибутов не фиксирован: часть свидетелей записана как
-        # <witness type="version" n="L:V">. Шаблон «сначала n=» терял 80 из
-        # 284 свидетелей Марка. Разбор идёт по всему открывающему тегу.
-        for mtag in re.finditer(r'<witness\b([^>]*?)/?>', self.raw):
-            attrs = dict(re.findall(r'([\w:.-]+)="([^"]*)"', mtag.group(1)))
-            if "n" not in attrs:
-                continue
-            self.wit_types[attrs.get("type") or "—"] += 1
-        self.n_wit = sum(self.wit_types.values())
-
-    # -- юниты
-    def _parse(self):
-        if self.style == "xmlid":
-            rx = re.compile(r'<app\s+xml:id="(B\d+K(\d+)V(\d+)U[^"]*)"[^>]*>(.*?)</app>', re.S)
-        else:
-            # Позиция бывает не только одиночной: из 9555 юнитов Деяний
-            # 6708 записаны как /7, 2844 как /7-9, 2 как /7-9/11 и 1 как
-            # /7-9:11/13. Шаблон «только цифры» молча терял 2847 юнитов.
-            rx = re.compile(r'<app\s+n="Acts (\d+):(\d+)/([^"]+)"[^>]*>(.*?)</app>', re.S)
-        for m in rx.finditer(self.raw):
-            if self.style == "xmlid":
-                uid, ch, v, body = m.group(1), int(m.group(2)), int(m.group(3)), m.group(4)
-                pos = uid.split("U", 1)[1]
-                # Книгу берём из объявления файла, а НЕ из кода в xml-id:
-                # нумерация McCollum нестандартная (B26 у него — Откровение,
-                # тогда как в 27-книжной нумерации 26 — Иуд), и маппинг по
-                # таблице молча уводил все 70 юнитов Откровения в Иуду.
-                # Правильность объявления проверяет --verify по тексту S1.
-                book = self.book
-            else:
-                ch, v, pos, body = int(m.group(1)), int(m.group(2)), m.group(3), m.group(4)
-                uid, book = f"Деян {ch}:{v}/{pos}", self.book
-            lemel = re.search(r"<lem\b[^>]*>(.*?)</lem>", body, re.S)
-            lem = self._words(lemel.group(1)) if lemel else ""
-            self.units.append(Unit(uid, book, ch, v, pos, lem, self._rdgs(body)))
-
-    def _rdgs(self, body: str) -> list[tuple[str, str, list[str]]]:
-        """Чтения юнита. Разбор идёт по открывающему тегу, а не по шаблону
-        «n= потом wit=», потому что порядок атрибутов не гарантирован и тег
-        бывает самоуничтожающимся (`<rdg ... />` = пропуск, пустое чтение)."""
-        out = []
-        for part in re.split(r"(?=<rdg\b)", body):
-            if not part.startswith("<rdg"):
-                continue
-            mtag = re.match(r"<rdg\b([^>]*?)(/?)>", part, re.S)
-            if not mtag:
-                continue
-            attrs = dict(re.findall(r'([\w:.-]+)="([^"]*)"', mtag.group(1)))
-            content = "" if mtag.group(2) == "/" else part[mtag.end():].split("</rdg>")[0]
-            out.append((attrs.get("n", ""), self._words(content),
-                        (attrs.get("wit") or "").split()))
-        return out
+        sigla = set()
+        for witness in root.iter("witness"):
+            name = witness.get("n")
+            if not name or name in sigla:
+                raise ValueError(f"{sid}: missing/duplicate witness identifier: {name}")
+            sigla.add(name)
+            self.wit_types[witness.get("type") or "—"] += 1
+        self.n_wit = len(sigla)
+        xmlid = "{http://www.w3.org/XML/1998/namespace}id"
+        unit_ids = set()
+        self.unmapped_tokens = set()
+        for app in root.iter("app"):
+            uid = app.get(xmlid, "") if style == "xmlid" else app.get("n", "")
+            rx = r"B\d+K(\d+)V(\d+)U(.+)" if style == "xmlid" else r"Acts (\d+):(\d+)/(.+)"
+            match = re.fullmatch(rx, uid)
+            if not match or uid in unit_ids:
+                raise ValueError(f"{sid}: invalid/duplicate unit identifier: {uid}")
+            unit_ids.add(uid)
+            ch, verse, pos = int(match[1]), int(match[2]), match[3]
+            lem = app.find("lem")
+            lem_text = self._words(ET.tostring(lem, encoding="unicode")) if lem is not None else ""
+            readings = []
+            for reading in app.findall("rdg"):
+                wit = (reading.get("wit") or "").replace("#", "").split()
+                self.unmapped_tokens.update(set(wit) - sigla)
+                readings.append((reading.get("n", ""), self._words(ET.tostring(reading, encoding="unicode")), wit))
+            if not readings:
+                raise ValueError(f"{sid}: variation unit without readings: {uid}")
+            self.units.append(Unit(uid, book, ch, verse, pos, lem_text, readings))
+        row = witnesses()[source]
+        self.active_unit_count = len(self.units)
+        self.active_verse_count = len(self.verses())
+        receipt = row["unmappedReadingTokenReceipts"][Path(pattern).stem]
+        digest = hashlib.sha256("\n".join(sorted(self.unmapped_tokens)).encode()).hexdigest()
+        if len(self.unmapped_tokens) != receipt["count"] or digest != receipt["sha256OfSortedNewlineSeparatedTokens"]:
+            raise ValueError(f"{sid}: unresolved reading-token receipt drift")
+        expected = row["stats"] if source == "S9" else row["stats"][Path(pattern).stem]
+        actual = (len(self.units), len(self.verses()), self.n_wit)
+        wanted = tuple(expected[k] for k in ("variationUnits", "verses", "witnesses"))
+        if actual != wanted:
+            raise ValueError(f"{sid}: parsed cardinality mismatch: {actual} != {wanted}")
+        quarantine = set(row.get("quarantinedUnits", {}).get(Path(pattern).stem, {}).get("ids", []))
+        found = {u.uid for u in self.units if u.uid in quarantine}
+        if found != quarantine:
+            raise ValueError(f"{sid}: quarantined unit receipt drift")
+        self.quarantined_units = [u for u in self.units if u.uid in quarantine]
+        self.units = [u for u in self.units if u.uid not in quarantine]
+        if len(self.units) != expected.get("eligibleUnits", expected["variationUnits"]) or len(self.verses()) != expected.get("eligibleVerses", expected["verses"]):
+            raise ValueError(f"{sid}: eligible unit/verse cardinality mismatch")
 
     @staticmethod
     def _words(xml: str) -> str:
@@ -328,37 +320,65 @@ def show(coll: Collation, u: Unit, witnesses: bool) -> None:
         print(f"    lem: {u.lem}")
     for n, text, wl in u.rdg:
         keys = [k for k in KEY_WITNESSES if k in wl]
-        print(f"    чтение {n}: n={len(wl):4d}  {text or '— (пропуск)'!r}")
+        print(f"    чтение {n}: literal-siglum-tokens={len(wl):4d}  {text or '— (пропуск)'!r}")
         if keys:
             print(f"        ключевые свидетели: {', '.join(keys)}")
         if witnesses:
             print(f"        все: {' '.join(wl)}")
 
 
+def unit_matches(unit: Unit, mode: str, patterns: list[str]) -> bool:
+    words = set(bare(" ".join(unit.words())).split())
+    needles = [bare(x) for x in patterns]
+    if mode == "word":
+        return any(needle in words for needle in needles)
+    if mode == "stem":
+        return any(needle in word for needle in needles for word in words)
+    raise ValueError(f"unsupported probe mode: {mode}")
+
+
+def probe_counts(colls: list[Collation]) -> dict[str, int]:
+    return {label: sum(unit_matches(u, mode, patterns) for c in colls for u in c.units)
+            for label, (mode, patterns) in LEXEMES.items()}
+
+
 def main(argv: list[str]) -> int:
-    s1root = Path(os.environ.get("NT_SBLGNT_DIR", DEFAULT_SBLGNT))
-    s1 = load_s1(s1root) if s1root.is_dir() else {}
+    allowed = {"--stats", "--verify", "--scan", "--ref", "--witnesses", "--check"}
+    for i, arg in enumerate(argv):
+        if i > 0 and argv[i - 1] == "--ref":
+            continue
+        if arg not in allowed:
+            raise ValueError(f"unknown manuscript argument: {arg}")
+    if "--ref" in argv and argv.index("--ref") == len(argv) - 1:
+        raise ValueError("--ref requires a reference")
+    s1root = witness_dir("S1")
+    s1 = load_s1(s1root)
+    failures = []
     colls = load_all()
 
     if "--scan" in argv or "--stats" in argv or not argv:
         print("КОЛЛЯЦИИ (S9, S10) — рукописный уровень")
         print(f"{'id':6} {'файл':26} {'юнитов':>7} {'стихов':>7} {'свидет.':>8}  книга")
         for c in colls:
-            print(f"{c.sid:6} {c.label:26} {len(c.units):7d} {len(c.verses()):7d} "
-                  f"{c.n_wit:8d}  {c.book} (код {c.book_code()})")
-        print(f"\nвсего юнитов: {sum(len(c.units) for c in colls)}")
+            print(f"{c.sid:6} {c.label:26} {c.active_unit_count:7d} {c.active_verse_count:7d} "
+                  f"{c.n_wit:8d}  {c.book} (код {c.book_code()}); unmapped tokens={len(c.unmapped_tokens)}; quarantined={len(c.quarantined_units)}")
+        print(f"\nстрок юнитов по шести файлам: {sum(c.active_unit_count for c in colls)} (Марк включён дважды; одна строка в quarantine)")
+        print(f"без более раннего марковского S10b: {sum(len(c.units) for c in colls if c.sid != 'S10b')}")
 
-    if "--verify" in argv or not argv:
+    if "--verify" in argv or "--check" in argv or not argv:
         print("\nПРОВЕРКА КОДА КНИГИ ПО ТЕКСТУ S1 (не по таблице)")
         if not s1:
-            print("  S1 не найден — проверка пропущена")
+            raise ValueError("S1 not found: manuscript verification cannot be skipped")
         maxch = {}
         for (bc, ch, v) in s1:
             maxch[NAME_BY_CODE[bc]] = max(maxch.get(NAME_BY_CODE[bc], 0), ch)
         for c in colls:
             hits, top = c.verify_book(s1)
             lead = top[0] if top else ("—", 0)
-            flag = "СОВПАЛО" if lead[0] == c.book else "РАСХОЖДЕНИЕ"
+            matched = lead[0] == c.book and lead[1] > 0 and (len(top) < 2 or lead[1] > top[1][1])
+            flag = "СОВПАЛО" if matched else "РАСХОЖДЕНИЕ"
+            if not matched or c.max_chapter() > maxch.get(c.book, 0):
+                failures.append(f"{c.sid}: book identity/structure mismatch")
             struct = f"глав в файле {c.max_chapter()} / в S1 у «{c.book}» {maxch.get(c.book)}"
             print(f"  {c.sid:6} код в файле {c.book_code()} -> заявлено {c.book:6} "
                   f"| по тексту лидирует {lead[0]} ({lead[1]}) [{flag}] | {struct}")
@@ -381,15 +401,7 @@ def main(argv: list[str]) -> int:
             for c in colls:
                 found = []
                 for u in c.units:
-                    ws = set(bare(" ".join(u.words())).split())
-                    hay = " ".join(ws)
-                    # Основы прогоняются через тот же bare(): casefold()
-                    # превращает конечную сигму ς в σ, поэтому «διαθηκης»
-                    # из словаря никогда не совпадал с «διαθηκησ» из юнита и
-                    # διαθήкая давала 0 вместо 2. Нормализация с обеих сторон.
-                    st_norm = [bare(x) for x in stems]
-                    hit = any(st in ws for st in st_norm) if mode == "word" \
-                        else any(st in hay for st in st_norm)
+                    hit = unit_matches(u, mode, stems)
                     if hit:
                         found.append(u.uid)
                 if found:
@@ -449,8 +461,24 @@ def main(argv: list[str]) -> int:
                 show(c, u, "--witnesses" in argv)
         if not any_hit:
             print("  ни одна колляция S9/S10 эту книгу не покрывает")
+    if "--check" in argv:
+        expected = registry()["manuscriptCollation"]
+        counts = (sum(c.active_unit_count for c in colls), sum(len(c.units) for c in colls),
+                  sum(len(c.units) for c in colls if c.sid != "S10b"))
+        wanted = tuple(expected[k] for k in ("totalVariationUnits", "eligibleFileUnitRows", "preferredNonOverlappingFileUnitRows"))
+        if counts != wanted or probe_counts(colls) != expected["verifiedProbeCounts"]:
+            failures.append("manuscript active/eligible census or lexical probes differ from SSOT")
+    if failures:
+        print("FAIL: " + "; ".join(failures))
+        return 1
+    if "--check" in argv:
+        print("PASS: manuscript census, eligible book identities and declared lexical probes match SSOT")
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main(sys.argv[1:]))
+    try:
+        raise SystemExit(main(sys.argv[1:]))
+    except (KeyError, OSError, ValueError, ET.ParseError) as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        raise SystemExit(1)

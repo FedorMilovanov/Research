@@ -1043,12 +1043,9 @@
   ],
   "apparatusSweep": {
     "tool": "ИСКУПЛЕНИЕ/nt/tools/pericope_apparatus_sweep.py",
-    "versesInBriefPericopes": 195,
-    "versesWithApparatus": 105,
-    "appRecordsOnPericopes": 165,
-    "versesWithoutVariation": 90,
-    "percentWithoutVariation": 46.2,
-    "crossCheck": "S1 печатает сиглы ⸀⸂⸃ сам: 4475 стихов во всём НЗ, из них на перикопах брифа ровно те же 105, что даёт S7. Два инструмента на разных источниках сошлись стих в стих",
+    "versesWithApparatus": 89,
+    "appRecordsOnPericopes": 139,
+    "crossCheck": "S1 and S7 record an apparatus marker/entry at the same 89 selected verse locators. They share SBLGNT ancestry; not independent manuscript evidence. Absence is only absence in this selective apparatus.",
     "findings": [
       "квантификаторы (πολλῶν/κόσμου/πάντας/πάντες) не оспариваются ни в одном из 165 вариантов: спор об объёме текстовой критикой не решается ни в ту, ни в другую сторону",
       "предлоги оспариваются: Мк 14:24 — SBLGNT/NA27/WH/Treg ὑπὲρ πολλῶν, а RP и все три TR-издания (S2/S3/S4) читают περί; контраст «Мф 26:28 περί против Мк 14:24 ὑπέρ» зависит от издания",
@@ -1056,7 +1053,19 @@
       "адресат оспаривается: Откр 5:9 — TR/RP/Treg добавляют ἡμᾶς; Ин 3:16 — Treg/RP добавляют αὐτοῦ; Ин 6:51 — RP добавляет ἣν ἐγὼ δώσω. Все уточняют кому/что, а не за скольких",
       "1 Пет 3:18 — ἔπαθεν (NA27, RP, все TR) против ἀπέθανεν (WH, Treg, NIV): природа страдания, не круг искупленных",
       "Кол 1:20 — единственное место в перикопах брифа, где SBLGNT держит δι᾽ αὐτοῦ в квадратных скобках: WH/NA27/RP держат, Тregеллс и NIV-ридер опускают"
-    ]
+    ],
+    "historicalCensus": {
+      "status": "HISTORICAL / SUPERSEDED: list-to-range bug and dropped chapter references",
+      "verses": 195,
+      "withApp": 105,
+      "records": 165,
+      "withoutApp": 90
+    },
+    "versesInCardHeadings": 174,
+    "versesWithoutEncodedApp": 85,
+    "percentWithoutEncodedApp": 48.9,
+    "s1OnlySigla": [],
+    "s7OnlyApp": []
   },
   "historicalControls": [
     {
@@ -1111,7 +1120,7 @@
   ],
   "manuscriptCollation": {
     "tool": "tools/manuscript_collation.py",
-    "totalVariationUnits": 9999,
+    "totalVariationUnits": 9997,
     "booksCovered": [
       "Мк",
       "Деян",
@@ -1129,7 +1138,8 @@
         "Деян": 83,
         "Еф": 37,
         "1 Пет": 31,
-        "Откр": 57
+        "Откр": 57,
+        "S10b": 100
       },
       "runnerUp": {
         "Мк": "Ин 4",
@@ -1137,14 +1147,15 @@
         "Еф": "Рим 1",
         "1 Пет": "2 Кор 1",
         "Откр": "Деян 1"
-      }
+      },
+      "scope": "first at most 120 eligible units per file, normalized long-word matching to S1 at each locator; quarantine excluded, not identity certification of every raw unit."
     },
     "readingOrderCheck": {
       "note": "в колляции Деяний нет <lem>, исходный текст не помечен; статус Ausgangstext чтению «a» НЕ приписан",
       "rdgA_matches_S1": {
         "S9": "108/128",
         "S10a": "312/334",
-        "S10b": "108/128",
+        "S10b": "107/126",
         "S10c": "29/37",
         "S10d": "32/35",
         "S10e": "52/68"
@@ -1197,7 +1208,9 @@
         "κόσμος": 7,
         "ἐκκλησία": 22,
         "διαθήκη": 3
-      }
+      },
+      "πολλοί/πολλῶν": 39,
+      "scope": "Literal declared probe patterns, not complete lemma/POS or all-tradition variation."
     },
     "keyFindings": [
       "Мк 10:45 не имеет юнита вариации ни в S9, ни в S10b: λύτρον, ἀντί, πολλῶν и ψυχήν не оспаривает ни одна из 284 марковских сигл",
@@ -1211,7 +1224,34 @@
       "Юнитов нет вообще: Мк 10:45; Еф 1:7; Еф 2:13; Еф 5:25; 1 Пет 1:18; 1 Пет 1:19; 1 Пет 2:24; Откр 7:14; Откр 12:11; Откр 13:8; Откр 14:4"
     ],
     "negativeResult": "ни один из найденных вариантов не касается объёма искупления: спорные места — лицо адресата, время, порядок слов, καινησ, επαθεν/απεθανεν и замена λυσαντι на λουσαντι",
-    "extentVerdict": "нет; EVIDENCE_HOLD не снят"
+    "extentVerdict": "нет; EVIDENCE_HOLD не снят",
+    "totalVariationUnitsScope": "9997 active rows across six XML files, including Mark twice. Old 9999 counted one commented-out Acts app and one commented-out older Mark app. Preferred non-overlapping file selection has 9850 rows.",
+    "preferredNonOverlappingFileUnitRows": 9850,
+    "eligibleFileUnitRows": 9996,
+    "verifiedProbeCounts": {
+      "λυτρ-": 4,
+      "αγοραζ- / εξαγοραζ-": 0,
+      "αἷμα (αἷμα/αἵματος/αἵματι)": 10,
+      "ἱλασκ- / ἱλασμός": 10,
+      "καταλλαγ-": 0,
+      "σφαζω / ἐσφαγμένον": 0,
+      "περιποι-": 0,
+      "ὑπέρ (целое слово)": 22,
+      "ἀντί (целое слово)": 0,
+      "περί (целое слово)": 85,
+      "πολλοί/πολλῶν (целое слово)": 39,
+      "πᾶς/πάντες (целое слово)": 168,
+      "κόσμος (целое слово)": 7,
+      "ἐκκλησία (целое слово)": 22,
+      "ἴδιος (целое слово)": 9,
+      "ψυχή (целое слово)": 16,
+      "διαθήκη (целое слово)": 3
+    },
+    "scanScope": "Literal declared root/form probes across 9996 eligible file-unit rows, including older Mark overlap; not exhaustive morphological or manuscript-tradition variation.",
+    "historicalProbeCounts": {
+      "status": "HISTORICAL / SUPERSEDED: commented Mark unit included",
+      "πολλοί/πολλῶν": 40
+    }
   },
   "na28SearchConclusion": {
     "status": "ОТКРЫТ — но теперь по доказанной причине прав, а не по недостатку поиска",

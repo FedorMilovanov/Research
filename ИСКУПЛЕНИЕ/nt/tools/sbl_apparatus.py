@@ -30,7 +30,7 @@ Testament* (Holmes). Лицензия **CC BY 4.0**: сам SBLGNT перевы�
 Граница, которую этот аппарат НЕ закрывает
 ------------------------------------------
 Атрибуция идёт **изданиям**, а не рукописям: `#NA`, `#TR`, `#RP`, `#WH`.
-Здесь нет ни `א`, ни `B`, ни `P46`. И `#NA` — это NA**27**, не NA28; UBS5
+Здесь нет ни `א`, ни `B`, ни `P46`. И `#NA` — это edition=27 по заголовку (year=1979 ему противоречит), не NA28; UBS5
 отдельно не представлен. Поэтому `LOCATOR_HOLD` сужается до рукописного
 уровня и до NA28/UBS5, но не снимается.
 """
@@ -39,10 +39,13 @@ from __future__ import annotations
 import os
 import re
 import sys
+from collections import Counter
+sys.dont_write_bytecode = True
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-HOME = Path(os.environ.get("NT_CORPUS_HOME", Path.home() / "nt-corpus"))
+from nt_sources import witness_file, witnesses
+from nt_refs import s1_verses
 
 BOOKS = ["Мф", "Мк", "Лк", "Ин", "Деян", "Рим", "1 Кор", "2 Кор", "Гал", "Еф",
          "Флп", "Кол", "1 Фес", "2 Фес", "1 Тим", "2 Тим", "Тит", "Флм",
@@ -52,19 +55,16 @@ BY_NAME = {v: k for k, v in BY_NUM.items()}
 
 
 def default_xml() -> Path:
-    env = os.environ.get("NT_APPARATUS_XML")
-    if env:
-        return Path(env)
-    # каталог распакованного tarball несёт полный SHA (sblgnt-tei-2a95589b…),
-    # поэтому ищем по шаблону; фиксированное имя не находится
-    hits = sorted(HOME.glob("sblgnt-tei-*/xml/sblgnt_tei.xml"))
-    if hits:
-        return hits[0]
-    return HOME / "sblgnt-tei" / "xml" / "sblgnt_tei.xml"
+    return witness_file("S7", "sblgnt_tei.xml", "NT_APPARATUS_XML")
 
 
 class Apparatus:
-    def __init__(self, path: Path = default_xml()):
+    def __init__(self, path: Path | None = None):
+        canonical = default_xml()
+        if path is None:
+            path = canonical
+        elif not path.is_file() or path.read_bytes() != canonical.read_bytes():
+            raise ValueError("S7 supplied XML differs from pinned source")
         if not path.is_file():
             raise SystemExit(f"аппарат SBLGNT не найден в {path}; "
                              f"задайте NT_APPARATUS_XML")
@@ -85,6 +85,21 @@ class Apparatus:
             txt = re.sub(r"\s+", " ", "".join(w.itertext())).strip()
             self.witnesses[wid] = txt
         self._index()
+        expected = witnesses()["S7"]
+        actual = (self.count(), len(self.entries), len(self.witnesses),
+                  sum(len(e["rdg"]) for entries in self.entries.values() for e in entries))
+        wanted = tuple(expected[k] for k in ("appEntries", "appPositions", "witnesses", "rdgElements"))
+        if actual != wanted:
+            raise ValueError(f"S7 parsed cardinality mismatch: {actual} != {wanted}")
+        cited = Counter(w for entries in self.entries.values() for e in entries
+                        for rd in e["rdg"] for w in rd["wit"])
+        if dict(cited) != expected["siglaCitationCounts"]:
+            raise ValueError("S7 siglum citation census differs from SSOT")
+        for entries in self.entries.values():
+            for entry in entries:
+                for reading in entry["rdg"]:
+                    if set(reading["wit"]) - self.witnesses.keys():
+                        raise ValueError(f"S7 unknown witness siglum: {reading['wit']}")
 
     @staticmethod
     def _xmlid(el):
@@ -109,11 +124,11 @@ class Apparatus:
                     if m:
                         cur_book, cur_ch, cur_v = m.group(1), int(m.group(2)), int(m.group(3))
             elif tag == "app":
-                if not (cur_book and cur_ch and cur_v):
-                    continue
+                if not (cur_book in BY_NUM and cur_ch and cur_v):
+                    raise ValueError("S7 app entry without a valid verse locator")
                 key = f"{BY_NUM.get(cur_book, cur_book)} {cur_ch}:{cur_v}"
-                lem = " ".join("".join(w.itertext()) for w in el.find("lem")) \
-                    if el.find("lem") is not None else ""
+                lemel = el.find("lem")
+                lem = re.sub(r"\s+", " ", "".join(lemel.itertext())).strip() if lemel is not None else ""
                 rdgs = []
                 for r in el.findall("rdg"):
                     rdgs.append({"wit": (r.get("wit") or "").replace("#", "").split(),
@@ -137,7 +152,10 @@ def main(argv: list[str]) -> int:
         for k, v in sorted(a.witnesses.items()):
             print(f"  {k:9s} {v[:150]}")
         return 0
+    known_refs = s1_verses()
     for ref in argv:
+        if ref not in known_refs and ref not in a.entries:
+            raise ValueError(f"invalid verse reference: {ref}")
         items = a.at(ref)
         print(f"\n=== {ref} — записей: {len(items)} ===")
         for it in items:
@@ -148,4 +166,8 @@ def main(argv: list[str]) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main(sys.argv[1:]))
+    try:
+        raise SystemExit(main(sys.argv[1:]))
+    except (KeyError, OSError, ValueError, ET.ParseError) as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        raise SystemExit(1)
