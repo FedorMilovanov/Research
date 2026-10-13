@@ -22,106 +22,157 @@
       "name": "MorphGNT / SBL Greek New Testament with morphological parsing",
       "role": "primary critical text, lemma and case source for every Greek citation in this sub-corpus",
       "evidenceClass": "A1",
-      "accessState": "acquired-full",
-      "locatorState": "verse-level; apparatus NOT acquired",
-      "rightsState": "MorphGNT data; full dataset not committed to Git",
-      "publicationState": "not-approved",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
       "repository": "morphgnt/py-sblgnt",
       "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
       "commitDate": "2017-03-20T00:51:01Z",
       "files": 27,
       "parsedWordForms": 137554,
       "sha256OfDataset": "f95833b147bb182786750700423625528dcb38f1508ea7585bce52e730a352f9",
-      "bytes": 9822443,
+      "bytes": 9818347,
       "committedToGit": false,
       "holds": [
-        "LOCATOR_HOLD:apparatus"
-      ]
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "textDir": "pysblgnt/sblgnt",
+      "locatorScope": "Verse text and morphology; apparatus belongs to S7, not to this dataset.",
+      "rightsScope": "Pinned README distinguishes the SBLGNT EULA, MorphGNT parsing/lemmatization CC BY-SA 3.0, and code MIT. S7 relicense is not silently applied to the older S1 snapshot. No full dataset redistribution.",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "sha256OfSortedRelativePaths": "2399d62f8d4e59ed57291385ad86709b2d55ea24836c43059a68c2541f3e2e51"
     },
     {
       "id": "S2",
       "name": "Scrivener 1894 Textus Receptus (Robinson edition, text only)",
       "role": "TR witness for variant notes",
       "evidenceClass": "A1",
-      "accessState": "acquired-full",
-      "locatorState": "verse-level",
-      "rightsState": "public-domain per repository README",
-      "publicationState": "not-approved",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
       "repository": "byztxt/greektext-scrivener",
       "commit": "6049a43b135ed870f843b83eb6a04764fc796678",
       "commitDate": "2017-05-23T18:30:39Z",
       "sha256OfDataset": "61f4b97a80b2a8ec5faaf929f78a492b70e18fa7b4505e84983ee686782c19ea",
-      "bytes": 1036814,
+      "bytes": 1032718,
       "encodingNote": "ASCII betacode transliteration, not Greek letters",
       "committedToGit": false,
-      "holds": []
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "textDir": "textonly",
+      "locatorScope": "Verse-level text; no critical apparatus in this dataset.",
+      "rightsScope": "public-domain per repository README",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "files": 29,
+      "sha256OfSortedRelativePaths": "617bad1cebd79490bcff84583f2bf0c42eecbbd226f7f23af171e49f728fe692"
     },
     {
       "id": "S3",
       "name": "Robert Estienne (Stephens) 1550 Textus Receptus",
       "role": "second TR witness",
       "evidenceClass": "A1",
-      "accessState": "acquired-full",
-      "locatorState": "verse-level",
-      "rightsState": "public-domain per repository README",
-      "publicationState": "not-approved",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
       "repository": "byztxt/greektext-stephens",
       "commit": "4314af2042d9e77b2ce5c1c86d0c49325dd81684",
       "commitDate": "2023-09-02T19:37:17Z",
       "sha256OfDataset": "b94776ff4870570ee63240dfe36c9fc3f696600cfff39d408d85c4bb453ba4e9",
-      "bytes": 2621667,
+      "bytes": 2613475,
       "committedToGit": false,
-      "holds": []
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "textDir": "textonly",
+      "locatorScope": "Verse-level text; no critical apparatus in this dataset.",
+      "rightsScope": "public-domain per repository README",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "files": 58,
+      "sha256OfSortedRelativePaths": "ed62f6bbf2864b8790c4fc0793ac62e842d7cc5c54a7131f540480a0964cb25a"
     },
     {
       "id": "S4",
       "name": "Elzevir Textus Receptus",
       "role": "third TR witness",
       "evidenceClass": "A1",
-      "accessState": "acquired-full",
-      "locatorState": "verse-level",
-      "rightsState": "public-domain per repository README",
-      "publicationState": "not-approved",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
       "repository": "byztxt/greektext-elzevir",
       "commit": "94f31e2d2e8bd451d4d2f9739d13c419f7ce86c2",
       "commitDate": "2017-05-23T18:29:23Z",
       "sha256OfDataset": "dbdc40702d84dcd889c2090c6be3b8ad6c49fa61efa3e3dbd69fd69b03768504",
-      "bytes": 1042867,
+      "bytes": 1038771,
       "committedToGit": false,
-      "holds": []
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "textDir": "textonly",
+      "locatorScope": "Verse-level text; no critical apparatus in this dataset.",
+      "rightsScope": "public-domain per repository README",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "files": 31,
+      "sha256OfSortedRelativePaths": "8827da008ffd44ffec5e24e0d07bd41f4796894d489c26cca6814156d353f42b"
     },
     {
       "id": "S5",
       "name": "Swete, Henry Barclay (ed.), The Old Testament in Greek, Cambridge: CUP, 1901 (LXX)",
       "role": "свидетель ВЗ-греческого; снимает LXX_HOLD по греческой стороне",
-      "evidenceClass": "A1 как греческий текст; редакторские решения Суэта — editorial",
-      "accessState": "acquired-full",
-      "locatorState": "verse-level",
-      "rightsState": "текст Суэта 1901 — PD; цифровая передача First1KGreek — CC BY-SA 4.0; в Git не публикуется",
-      "publicationState": "NOT-APPROVED",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
       "repository": "nathans/lxx-swete",
       "commit": "26bad3eb42bba98471d154c954e36a6f30a0279d",
       "commitDate": "2025-12-18",
       "files": 55,
       "parsedWordForms": 588579,
       "sha256OfDataset": "5cf3ee82efa214caee9059ada09f67a1079fc397f3c1343aa1b72d8c49be5458",
-      "bytes": 11799294,
+      "bytes": 11795198,
       "committedToGit": false,
       "editionEstablishedBy": "CTS-метаданные First1KGreek data/tlg0527/tlg002/__cts__.xml, а не имя репозитория",
       "holds": [
-        "MT_HOLD (еврейский текст не получен)",
-        "LOCATOR_HOLD (аппарат Суэта не получен)"
-      ]
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "textDir": "data",
+      "locatorScope": "Verse-level Greek text. Swete apparatus not acquired; MT text is available separately as S6.",
+      "rightsScope": "текст Суэта 1901 — PD; цифровая передача First1KGreek — CC BY-SA 4.0; в Git не публикуется",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "sha256OfSortedRelativePaths": "a4218d40d828c6c8547cb3725a757b2d2110ae118957efd89a9b7a382237f763"
     },
     {
       "id": "S6",
       "name": "BHS — Biblia Hebraica Stuttgartensia Amstelodamensis (MT), Text-Fabric 2021, ETCBC",
       "role": "свидетель ВЗ-еврейского; снимает MT_HOLD по тексту, не по аппарату",
-      "evidenceClass": "A1 как еврейский текст; редакторские решения BHS — editorial",
-      "accessState": "acquired-full",
-      "locatorState": "verse-level; аппарат BHS не загружен",
-      "rightsState": "НЕ MIT: LICENSE репозитория MIT покрывает код дистилляции; данные по README BHSA — CC BY-NC 4.0, DOI 10.17026/dans-z6y-skyh; коммерческое использование только с согласия German Bible Society. README bhsa-min: «distilled from the full version», лицензия данных наследуется. В Git не публикуется",
-      "publicationState": "NOT-APPROVED",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
       "repository": "ETCBC/bhsa-min",
       "commit": "f600a50fd902b6c9d31d67cf5611365df4169bce",
       "commitDate": "2023",
@@ -139,17 +190,31 @@
         "пустые строки в .tf — это ЗНАЧЕНИЯ (в g_word_utf8.tf их 6488), а не разделители; пропускать их нельзя, иначе ссылки съезжают тем сильнее, чем дальше по канону",
         "в oslots.tab только в первой строке, дальше узлы идут подряд — номер надо инкрементировать",
         "trailer_utf8 пуст там, где за словом нет пробела: без склейки по trailer проклитики стоят отдельно"
-      ]
+      ],
+      "textDir": "tf/2021",
+      "locatorScope": "Verse-level Hebrew text; BHS critical apparatus not acquired.",
+      "rightsScope": "MIT file in bhsa-min is not by itself proof of rights to the underlying biblical data. Earlier BHSA CC BY-NC 4.0 assertion remains historical; preserve PRIVATE_STUDY_ONLY pending a pinned data-rights record and product review. No dataset redistribution.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "bytes": 52449772,
+      "sha256OfSortedRelativePaths": "f4731d910d43b9984beb95ee055a42e180f746c406a92d23b62191e11947de5e"
     },
     {
       "id": "S7",
       "name": "SBL Greek New Testament (Holmes), текст и критический аппарат, TEI",
       "role": "перечисление вариантов с атрибуцией изданиям; сужает LOCATOR_HOLD до рукописного уровня",
-      "evidenceClass": "A1 как запись аппарата; выбор вариантов Холмса — editorial",
-      "accessState": "acquired-full",
-      "locatorState": "edition-level, НЕ рукописный; NA = NA27 (1979), UBS5 не представлен",
-      "rightsState": "CC BY 4.0 (SBLGNT перевыпущен под CC BY, репозиторий унаследовал лицензию). Не CC BY-NC (S6) и не CC BY-SA (S5)",
-      "publicationState": "NOT-APPROVED",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
       "repository": "jjmccollum/sblgnt-tei",
       "commit": "2a95589b2a9cb9b8bda5372650c7f55745ceecad",
       "files": 2,
@@ -182,17 +247,41 @@
         "WHapp": 1,
         "ECM": 1
       },
-      "naDivergencesFromSblgnt": 88
+      "textDir": "xml",
+      "locatorScope": "Edition-level TEI entries, not manuscripts. Header labels NA as edition 27 but gives year 1979: CONFLICT, not a bibliographic certificate. NA absence means not cited, never implicit agreement.",
+      "rightsScope": "CC BY 4.0 (SBLGNT перевыпущен под CC BY, репозиторий унаследовал лицензию). Не CC BY-NC (S6) и не CC BY-SA (S5)",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "bytes": 13946029,
+      "sha256OfSortedRelativePaths": "3802902bb11ad85a9535750c7b253ef3cff39cae25b9aef750f3c525db0c38c7",
+      "historicalNaComparison": {
+        "status": "HISTORICAL / SUPERSEDED: string comparison included punctuation/spacing",
+        "unequal": 88,
+        "equal": 147
+      },
+      "naReadingWordProbe": {
+        "citedReadings": 235,
+        "equalWords": 150,
+        "unequalWords": 85,
+        "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."
+      },
+      "headerConflict": "NA witness header says edition 27 and date 1979; inconsistent. Record as source metadata conflict, do not certify edition identity or infer NA agreement from absence."
     },
     {
       "id": "S8",
       "name": "Tregelles, The Greek New Testament (London 1857–1879), транскрипция Tyndale House Cambridge 2009",
       "role": "независимый критический текст; им проверяется сам аппарат S7. Аппарата НЕ содержит",
-      "evidenceClass": "A1 как греческий текст XIX века; редакторские решения Тregеллса — editorial",
-      "accessState": "acquired-full",
-      "locatorState": "verse-level; аппарата нет — проверено: 0 вхождений א и 0 сокращений версий (syr/arm/cop/vulg), хотя титул издания обещает «with their Various Readings in Full»",
-      "rightsState": "текст XIX века — PD; цифровая транскрипция Tyndale House — CC BY-NC-SA 3.0. В Git не публикуется",
-      "publicationState": "NOT-APPROVED",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
       "repository": "mrgreekgeek/tregelles-greek-nt",
       "commit": "07ecf2165c9e404926365f5060b8150e0e19af49",
       "files": 2,
@@ -205,24 +294,37 @@
         "Гал 1:4": "περὶ — сошлось",
         "1 Пет 3:18": "ἀπέθανεν — сошлось",
         "Ин 3:16": "+ αὐτοῦ — сошлось",
-        "итог": "4 из 4"
+        "итог": "5 из 5 текстовых контролей; не независимая рукописная колляция",
+        "Евр 2:9": "χάριτι θεοῦ — совпало; S7 не цитирует NA в этом юните"
       },
-      "note": "Tregelles читает περί в Гал 1:4, но ὑπὲρ в Мк 14:24: предлог у него не системное предпочтение, а решение по каждому месту. Поэтому «традиция читает X» можно утверждать только построчно"
+      "note": "Tregelles читает περί в Гал 1:4, но ὑπὲρ в Мк 14:24: предлог у него не системное предпочтение, а решение по каждому месту. Поэтому «традиция читает X» можно утверждать только построчно",
+      "textDir": "verse-per-line",
+      "locatorScope": "Verse-level transcription; no critical apparatus. The scanned original may contain material absent from this transcription.",
+      "rightsScope": "текст XIX века — PD; цифровая транскрипция Tyndale House — CC BY-NC-SA 3.0. В Git не публикуется",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "bytes": 3573217,
+      "sha256OfSortedRelativePaths": "02943384349da89482312f0bd03620d559d368d6baa5f53dff85cd5f2cee407b"
     },
     {
       "id": "S9",
       "name": "Колляция Марка по рукописям: точки вариации UBS5, свидетели Editio Critica Maior (ред. Joey McCollum, 2025)",
       "role": "рукописный уровень: сколько свидетелей и какими группами стоят за каждым чтением",
-      "evidenceClass": "A1 как запись колляции; отбор точек вариации UBS5 и набор свидетелей ECM — editorial",
-      "accessState": "acquired-full",
-      "locatorState": "manuscript-level по сиглам (P45, P84, P88, P137, 01-05, 044, MT, минускулы, лекционарии, версии, отцы). ИМЕНА кодексов в файле не даны: есть только sigla, type= и <origDate>. Наивное отождествление 01=א, 02=B, 03=A опровергается самим датасетом — сигла 02 стоит на одном чтении с MT в 91,4 % юнитов",
-      "rightsState": "CC BY 4.0",
-      "publicationState": "NOT-APPROVED",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
       "repository": "jjmccollum/comp-tc-mark",
       "commit": "013b2f0db69cf577f866c75c82f5a98cbb558dc2",
       "textDir": "xml",
       "files": 1,
-      "sha256OfSet": "a9314ab4236e2d1a481e58cf7408542b014a28bfd7cf3439f414df5711d1159c",
       "stats": {
         "variationUnits": 148,
         "verses": 119,
@@ -234,25 +336,54 @@
           "lectionary": 11,
           "corrector": 4
         }
-      }
+      },
+      "locatorScope": "Only encoded Mark variation units and sigla; absence of a unit is not manuscript agreement. Siglum-to-named-codex identification requires an independent catalogue, not a voting-pattern inference.",
+      "rightsScope": "CC BY 4.0",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "sha256OfDataset": "a9314ab4236e2d1a481e58cf7408542b014a28bfd7cf3439f414df5711d1159c",
+      "bytes": 541165,
+      "committedToGit": false,
+      "unmappedReadingTokenReceipts": {
+        "ecm_mark": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 24,
+          "sha256OfSortedNewlineSeparatedTokens": "adca6c92cb1de7c4123e41322bf3d14792f377bf7bd72db612fa1928a74e9cd6",
+          "examples": [
+            "2193-1",
+            "2193-2",
+            "979-1",
+            "979-2",
+            "CPA:C-1"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        }
+      },
+      "sha256OfSortedRelativePaths": "0d9ae9dcbd9dd2c9d358d6a17a0c205466123bf2243caf6846a2a1bb322cb865",
+      "rightsBasis": "Pinned LICENSE blob 2f244ac814036ecd9ba9f69782e89ce6b1dca9eb and TEI publicationStmt explicitly CC BY 4.0. Digital collation, not a complete UBS5/ECM edition."
     },
     {
       "id": "S10",
       "name": "Пять колляций по рукописям: Деяния (ECM), Марк / Ефесянам / 1 Петра / Откровение (UBS5), ред. Joey McCollum, 2023",
       "role": "то же, что S9, ещё по четырём книгам; Марк здесь — более ранняя и менее полная версия, оставлена как перекрёстная проверка S9",
-      "evidenceClass": "A1 как запись колляции; отбор точек вариации UBS5 и набор ECM — editorial",
-      "accessState": "acquired-full",
-      "locatorState": "manuscript-level по сиглам; имена кодексов не даны (то же ограничение, что у S9)",
-      "rightsState": "CC BY 4.0",
-      "publicationState": "NOT-APPROVED",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
       "repository": "jjmccollum/sbl-2023-talk",
       "commit": "4ada2a729cc3e36ab29d101fe924e435d0a8bd54",
       "textDir": "xml",
       "files": 5,
-      "sha256OfSet": "5758c2bdcd837bcde92b7c1af250d23f50bf72f6769cd914b9788a9866c433a0",
       "stats": {
         "ecm_acts": {
-          "variationUnits": 9555,
+          "variationUnits": 9554,
           "verses": 1006,
           "witnesses": 600,
           "witnessKinds": {
@@ -263,29 +394,137 @@
             "majuscule": 33,
             "papyrus": 15,
             "lectionary": 13
-          }
+          },
+          "historicalRegexVariationUnits": 9555
         },
         "ecm_mark": {
-          "variationUnits": 148,
-          "verses": 119,
-          "witnesses": 203
+          "variationUnits": 147,
+          "verses": 118,
+          "witnesses": 167,
+          "historicalRegexVariationUnits": 148,
+          "eligibleUnits": 146,
+          "eligibleVerses": 117
         },
         "ubs_ephesians": {
           "variationUnits": 42,
           "verses": 32,
-          "witnesses": 37
+          "witnesses": 36,
+          "historicalRegexVariationUnits": 42
         },
         "ubs_1_peter": {
           "variationUnits": 36,
           "verses": 25,
-          "witnesses": 114
+          "witnesses": 64,
+          "historicalRegexVariationUnits": 36
         },
         "ubs_revelation": {
           "variationUnits": 70,
           "verses": 64,
-          "witnesses": 86
+          "witnesses": 33,
+          "historicalRegexVariationUnits": 70
         }
-      }
+      },
+      "locatorScope": "Only encoded variation units in five files; Mark overlaps S9. Neither book coverage nor unit absence clears LOCATOR_HOLD for every question in those books.",
+      "rightsScope": "CC BY 4.0",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "sha256OfDataset": "5758c2bdcd837bcde92b7c1af250d23f50bf72f6769cd914b9788a9866c433a0",
+      "bytes": 11250177,
+      "committedToGit": false,
+      "unmappedReadingTokenReceipts": {
+        "ecm_acts": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 1659,
+          "sha256OfSortedNewlineSeparatedTokens": "e265a82917ce816f0528f2479bc887921f273393f73db014b02eea7b81e82f0e",
+          "examples": [
+            "*",
+            "01*",
+            "01*V",
+            "01*f",
+            "01*f1"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        },
+        "ecm_mark": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 35,
+          "sha256OfSortedNewlineSeparatedTokens": "80828b211dc369fd29d1ea3974ecbccf2940e55363034ac7e7aabfee9cc203bd",
+          "examples": [
+            "0103",
+            "0104",
+            "011s",
+            "0130",
+            "0131"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        },
+        "ubs_1_peter": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 74,
+          "sha256OfSortedNewlineSeparatedTokens": "d5c4d2311860659329a0bd0a6ee857d03b4ace40decb9f1c35fd3da5da27ff64",
+          "examples": [
+            "01*",
+            "01C2",
+            "02*",
+            "02C",
+            "04*"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        },
+        "ubs_ephesians": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 25,
+          "sha256OfSortedNewlineSeparatedTokens": "dbfe20816d23257e0b08031396808dafcb638488df476aea504e74ee4f6297ef",
+          "examples": [
+            "01*",
+            "010*",
+            "010C",
+            "01C1",
+            "01C2"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        },
+        "ubs_revelation": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 67,
+          "sha256OfSortedNewlineSeparatedTokens": "e9582b200951f01b84446f2fd064aac7942745cf753efe8a6f63b5e4feed1070",
+          "examples": [
+            "01*",
+            "01C",
+            "0207",
+            "0229",
+            "046*"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        }
+      },
+      "historicalRegexWitnessCounts": {
+        "status": "HISTORICAL / SUPERSEDED: counted XML comments as active witnesses",
+        "values": {
+          "ecm_acts": 600,
+          "ecm_mark": 203,
+          "ubs_ephesians": 37,
+          "ubs_1_peter": 114,
+          "ubs_revelation": 86
+        },
+        "note": "Also one commented-out Acts app: 9554 active units, not 9555."
+      },
+      "quarantinedUnits": {
+        "ecm_mark": {
+          "ids": [
+            "B02K28V8U2-20"
+          ],
+          "status": "CONFLICT / LOCATOR_HOLD",
+          "reason": "Mark has no chapter 28. Unit only says omit/include verse and cannot safely be relocated. Preserve in active-row census but exclude from Mark lookup, scan and book verification."
+        }
+      },
+      "sha256OfSortedRelativePaths": "3fbe5f65923aee99ac7bd516b1ab0507c511ed175c4c04328812e0bc382e67e1"
     }
   ],
   "lexicalFields": [
@@ -616,8 +855,7 @@
     "LOCATOR_HOLD",
     "RIGHTS_HOLD",
     "ARCHIVE_HOLD",
-    "PUBLICATION_HOLD",
-    "MT_HOLD"
+    "PUBLICATION_HOLD"
   ],
   "baselineValidators": {
     "date": "2026-10-07",
@@ -920,5 +1158,50 @@
     "status": "ОТКРЫТ — но теперь по доказанной причине прав, а не по недостатку поиска",
     "attempts": "gh api search/repositories по запросам NA28+greek, UBS5+apparatus, nestle+aland+greek+new+testament, editio+critica+maior; просмотр всех репозиториев организаций morphgnt и jjmccollum",
     "finding": "ни одного кандидата с лицензией, покрывающей текст NA28/UBS5. UBS5 как издание не получен; получены только его точки вариации внутри колляций S9/S10"
-  }
+  },
+  "domainHolds": [
+    {
+      "id": "NT:MT_HOLD",
+      "state": "RESOLVED_FOR_TEXT_ONLY",
+      "remainingCanonicalHold": "LOCATOR_HOLD",
+      "scope": "BHS critical apparatus not acquired; Hebrew verse text verified in S6"
+    },
+    {
+      "id": "NT:LXX_HOLD",
+      "state": "RESOLVED_FOR_TEXT_ONLY",
+      "remainingCanonicalHold": "LOCATOR_HOLD",
+      "scope": "Swete apparatus not acquired; Greek verse text verified in S5"
+    }
+  ],
+  "operationalSchemaAudit": {
+    "date": "2026-10-12",
+    "policy": "data/repository-evidence-policy-v2.json",
+    "note": "Operational axes now use canonical enums. Explanations are scope fields; preceding free-text values are explicitly historical, not active statuses. No source pin changed."
+  },
+  "nonTextCards": [
+    "08.34"
+  ],
+  "requiredMarkdownFiles": [
+    "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+    "ИСКУПЛЕНИЕ/nt/01_NT_LEXICAL_FIELD_REDEMPTION.md",
+    "ИСКУПЛЕНИЕ/nt/02_NT_LEXICAL_FIELD_PROPITIATION_RECONCILIATION.md",
+    "ИСКУПЛЕНИЕ/nt/03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md",
+    "ИСКУПЛЕНИЕ/nt/04_NT_LEXICAL_FIELD_QUANTIFIERS.md",
+    "ИСКУПЛЕНИЕ/nt/05_NT_LEXICAL_FIELD_EKKLESIA_AND_OWN.md",
+    "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+    "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md",
+    "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+    "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+    "ИСКУПЛЕНИЕ/nt/10_NT_OFFER_AXIS_CARDS.md",
+    "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md",
+    "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
+    "ИСКУПЛЕНИЕ/nt/13_DORT_HISTORICAL_CONTROL.md",
+    "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
+    "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+    "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+    "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+    "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md"
+  ],
+  "datasetByteAccounting": "Sum of regular-file content bytes, excluding directory-entry sizes. Previous du-style byte figures are SUPERSEDED; commit and sha256 pins unchanged.",
+  "datasetPathAccounting": "Secondary sha256 of sorted UTF-8 relative paths joined by newline. Existing sorted-content byte digests remain unchanged."
 }
