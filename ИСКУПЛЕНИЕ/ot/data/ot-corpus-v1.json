@@ -231,7 +231,7 @@
       "Isaiah 53 contains no kpr (H3722), no slh (H5545), no dam (H1818), no mizbeach (H4196), no zevach (H2077); the only cult word of the chapter is asham (H817) in 53:10, and it is the only occurrence of asham in the whole book",
       "MT 52:15 has the hiphil of nazah (H5137) — the cult verb of sprinkling in Lev 4:6, 17; 8:11, 30; 14:7 and Num 19:4 — but LXX reads θαυμάσονται, and rhanizo / rhantismos never occur in Isaiah (checked in ELI, F1K, S23)",
       "where Isaiah does use kpr, LXX avoids ἐξιλάσκομαι: 6:7 περικαθαριεῖ; 27:9 ἀφαιρεθήσεται; 28:18 ἀφέλῃ; 55:7 ἀφήσει — the Greek of Isaiah speaks of removal, cleansing and release",
-      "LXX differences inside the song: 53:4 MT «болезни» → ἁμαρτίας; 53:5 MT musar → παιδία (all four transcriptions, not παιδεία) and the witnesses swap ἁμαρτίαι/ἀνομίαι and the voice; 53:6 MT hipgia bo → παρέδωκεν αὐτόν; 53:8 MT נגע למו → ἤχθη εἰς θάνατον; 53:10 MT «если положит душа его» (3 m. sg.) → ἐὰν δῶτε (2 pl.); 53:10 MT nafsho → ἡ ψυχὴ ἡμῶν in ELI and F1K",
+      "LXX differences inside the song: 53:4 MT «болезни» → ἁμαρτίας; 53:5 MT musar → παιδία (all four transcriptions, not παιδεία), and the two codices swap ἁμαρτίαι/ἀνομίαι and the voice (B: μεμαλάκισται; A: ἐμαλακίσθη); 53:6 MT hipgia bo → παρέδωκεν αὐτόν; 53:8 MT נגע למו → ἤχθη εἰς θάνατον; 53:10 MT «если положит душа его» (3 m. sg.) → ἐὰν δῶτε (2 pl.); 53:10 MT nafsho → ἡ ψυχὴ ἡμῶν in ELI and F1K",
       "the verse that carries the «instead of» wording is not the Hebrew but the Greek: 53:9 MT «дали гроб его» → LXX «δώσω τοὺς πονηροὺς ἀντὶ τῆς ταφῆς αὐτοῦ»; the only tachat in the Hebrew chapter is the conjunction in 53:12",
       "LXX transfers on which the NT formula depends: φέρει / ἀνήνεγκεν for nasa and sabal (53:4, 11, 12), παρέδωκεν / παρεδόθη (53:6, 12 — used in Rom 4:25), μώλωψ (53:5 — used in 1 Pet 2:24), πολλῶν (53:11–12)",
       "NT reception: Isa 53:1 is quoted verbatim twice (John 12:38; Rom 10:16); Matt 8:17 follows the Hebrew sense (ἀσθενείας, νόσους) against the LXX (ἁμαρτίας); Acts 8:32–33 quotes the LXX but breaks off before ἤχθη εἰς θάνατον; 1 Pet 2:24 combines three places (53:4 + 53:12 + 53:5); Rom 15:21 quotes 52:15, Acts 13:47 quotes 49:6",
@@ -1317,7 +1317,7 @@
       "topic": "Ис. 52:13–53:12 — четвёртая песнь Раба: אָשָׁם 53:10, רַבִּים 53:11–12, LXX vs NT quotes",
       "status": "DONE_WAVE13_FIRST_VERSION_APPARATUS_PENDING",
       "evidenceClass": "A1",
-      "accessState": "full verse text (MT and LXX) for the listed loci (52:13–53:12) plus context (42:1; 49:6; 52:10; 63:3; 6:7; 27:9; 28:18; 55:7); LXX witnesses ELI and F1K read the chapter in full, S23 has transcription damage (53:8, 53:9, 53:10, 53:12) and is letter-spaced in the transcription; the F1K grc2 transcription (Ottley) does not contain Isaiah 52–53; SOL does not cover Isaiah",
+      "accessState": "full verse text (MT and LXX) for the listed loci (52:13–53:12) plus context (42:1; 49:6; 52:10; 63:3; 6:7; 27:9; 28:18; 55:7); LXX witnesses read the chapter in full in two transcriptions: F1K grc1 and ELI (Swete 1905, codex B) and F1K grc2 (Ottley 1904, codex A), which S23 (lxx-swete) follows for Isaiah (1254 of 1265 verses identical; 246 match grc1); SOL does not cover Isaiah",
       "rightsState": "original-language text; short quotations only; mirror transcriptions used for verification only (NOT_STORED)",
       "publicationState": "research only",
       "holds": [
