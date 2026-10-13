@@ -25,6 +25,7 @@ from __future__ import annotations
 import os
 import re
 import sys
+sys.dont_write_bytecode = True
 import unicodedata
 from pathlib import Path
 
@@ -47,26 +48,17 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import mt_lookup  # noqa: E402
 from mt_lookup import MT  # noqa: E402
 
-HOME = Path(os.environ.get("NT_CORPUS_HOME", Path.home() / "nt-corpus"))
-MT_DIR = mt_lookup.DEFAULT  # glob по bhsa-min-<sha>/tf/2021
-def _lxx_root() -> Path:
-    # Path("") истинно, поэтому `Path(env) or ...` молча вернул бы '.', а
-    # пустой каталог выглядел бы как «в LXX ноль вхождений». Только явная
-    # непустая строка окружения.
-    env = os.environ.get("NT_LXX_DIR", "")
-    if env:
-        return Path(env)
-    hits = sorted(HOME.glob("lxx-swete-*/data"))
-    return hits[0] if hits else HOME / "lxx-swete" / "data"
+from nt_sources import registry, verify_dataset, witness_dir, witnesses
 
-
-LXX_ROOT = _lxx_root()
+MT_DIR = mt_lookup.DEFAULT
+LXX_ROOT = witness_dir("S5", verify=False)
 
 
 class LXX:
     """Swete 1901 через First1KGreek: `книга.глава.стих слово` по строке."""
 
     def __init__(self, root: Path):
+        verify_dataset("S5", witnesses()["S5"], root)
         if not root.is_dir():
             raise SystemExit(f"LXX не найден в {root}; задайте NT_LXX_DIR")
         self.root = root
@@ -74,12 +66,12 @@ class LXX:
         for path in sorted(root.glob("*.txt")):
             m = re.match(r"(\d+)\.(.+)\.txt$", path.name)
             if not m:
-                continue
+                raise ValueError(f"S5 unrecognized text filename: {path.name}")
             book = m.group(2)
             for line in path.read_text(encoding="utf-8").splitlines():
                 parts = line.split(" ", 1)
                 if len(parts) != 2 or parts[0].count(".") != 2:
-                    continue
+                    raise ValueError(f"S5 malformed row: {path.name}: {line!r}")
                 _, ch, vs = parts[0].split(".")
                 self.verses.setdefault(f"{book} {ch}:{vs}", []).append(parts[1])
 
@@ -190,7 +182,12 @@ LINKS: list[tuple[str, str, str, str, str]] = [
 ]
 
 
+EXPECTED_MISSING_LXX = {tuple(x) for x in registry()["lxxCollation"]["expectedMissingLxxVerses"]}
+EXPECTED_NEGATIVE_WORDS = {tuple(x) for x in registry()["lxxCollation"]["expectedNegativeLxxWords"]}
+
 def main(argv: list[str]) -> int:
+    if any(arg not in {"--counts"} for arg in argv):
+        raise ValueError(f"unknown MT/LXX arguments: {argv}")
     mt = MT(MT_DIR)
     lxx = LXX(LXX_ROOT)
     if "--count" in argv:
@@ -218,6 +215,8 @@ def main(argv: list[str]) -> int:
     print(f"связей в таблице: {len(LINKS)}"
           f" ({len(LINKS) * 2} обращений к текстам)\n")
     ok = miss_mt = miss_lxx = 0
+    failures = []
+    seen_missing = set()
     for mt_ref, lxx_ref, note, gr, heb in LINKS:
         mt_t = mt.text(mt_ref) if mt_ref in mt.by_ref else "НЕТ В MT"
         lx_t = lxx.text(lxx_ref)
@@ -230,6 +229,18 @@ def main(argv: list[str]) -> int:
         heb_hit = (heb == "—") or (mt_ref in mt.by_ref and
                                    mt.has_lexeme(mt_ref, heb))
         gr_hit = (gr == "—") or lxx.has(lxx_ref, gr)
+        # One known absent *verse*, and explicit negative word results below,
+        # are scientific findings. Any other missing text/word fails closed.
+        if mt_t == "НЕТ В MT":
+            failures.append(f"unexpected missing MT verse: {mt_ref}")
+        if lx_t == "НЕТ ТАКОГО СТИХА":
+            seen_missing.add((mt_ref, lxx_ref))
+            if (mt_ref, lxx_ref) not in EXPECTED_MISSING_LXX:
+                failures.append(f"unexpected missing LXX verse: {lxx_ref}")
+        elif not gr_hit and (mt_ref, lxx_ref, gr) not in EXPECTED_NEGATIVE_WORDS:
+            failures.append(f"unexpected missing LXX word {gr}: {lxx_ref}")
+        if not heb_hit:
+            failures.append(f"unexpected missing MT lexeme {heb}: {mt_ref}")
         print(f"[{mt_ref} | {lxx_ref}] {note}")
         print(f"    MT : {mt_t}")
         print(f"    LXX: {lx_t}")
@@ -238,8 +249,22 @@ def main(argv: list[str]) -> int:
         print()
     print(f"итого: пар прочитано {ok}, MT-пропусков {miss_mt}, "
           f"LXX-пропусков {miss_lxx}; обращений к текстам {len(LINKS) * 2}")
+    if seen_missing != set(EXPECTED_MISSING_LXX):
+        failures.append("registered negative LXX verse result changed")
+    expected_negatives = {(m, l, g) for m, l, note, g, h in LINKS
+                          if l in lxx.verses and not lxx.has(l, g)}
+    if expected_negatives != set(EXPECTED_NEGATIVE_WORDS):
+        failures.append(f"registered negative LXX word results changed: {expected_negatives}")
+    if failures:
+        print("FAIL: " + "; ".join(failures))
+        return 1
+    print("PASS: all positive pairs and registered negative results reproduced")
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main(sys.argv[1:]))
+    try:
+        raise SystemExit(main(sys.argv[1:]))
+    except (KeyError, OSError, ValueError) as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        raise SystemExit(1)

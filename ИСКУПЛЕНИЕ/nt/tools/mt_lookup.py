@@ -42,20 +42,12 @@ from __future__ import annotations
 import bisect
 import os
 import sys
+sys.dont_write_bytecode = True
 from pathlib import Path
 
-def _default_mt_dir() -> Path:
-    """Каталог TF-данных BHSA. Имя распакованного tarball несёт полный SHA,
-    поэтому ищем по шаблону, а не по фиксированному имени."""
-    env = os.environ.get("NT_MT_DIR")
-    if env:
-        return Path(env)
-    home = Path(os.environ.get("NT_CORPUS_HOME", Path.home() / "nt-corpus"))
-    hits = sorted(home.glob("bhsa-min-*/tf/2021"))
-    return hits[0] if hits else home / "bhsa-min" / "tf" / "2021"
+from nt_sources import registry, verify_dataset, witness_dir, witnesses
 
-
-DEFAULT = _default_mt_dir()
+DEFAULT = witness_dir("S6", verify=False)
 
 
 def data_lines(p: Path) -> list[str]:
@@ -78,7 +70,9 @@ def data_lines(p: Path) -> list[str]:
 class MT:
     """Доступ к BHSA: ссылка -> еврейский текст, лексемы, счётчики."""
 
-    def __init__(self, root: Path = DEFAULT):
+    def __init__(self, root: Path | None = None):
+        root = witness_dir("S6") if root is None else Path(root)
+        verify_dataset("S6", witnesses()["S6"], root)
         if not root.is_dir():
             raise SystemExit(
                 f"MT (BHS) не найден в {root}. Скачайте corpus-скриптом "
@@ -164,6 +158,13 @@ class MT:
             for w in range(s, e + 1):
                 self._slot_verse[w] = n
         self._node_ref: dict[int, str] = {v: k for k, v in self.by_ref.items()}
+        expected = witnesses()["S6"]
+        if self.max_word != expected["wordSlots"] or len(self.by_ref) != expected["verses"]:
+            raise ValueError("S6 parsed word/verse cardinality differs from SSOT")
+        if any(len(feature) != self.max_word for feature in (self.gword, self.lex, self.trailer)):
+            raise ValueError("S6 word features lost empty values or slots")
+        if any(n == 0 for n in self._slot_verse[1:]):
+            raise ValueError("S6 word slot without a verse locator")
 
     # -- разбор признаков -------------------------------------------------
     def _node_feature(self, name: str) -> dict[int, str]:
@@ -247,6 +248,7 @@ class MT:
 def main(argv: list[str]) -> int:
     mt = MT()
     print(f"стихов: {len(mt.by_ref)}; слов-слотов: {mt.max_word}")
+    failures = 0
     for arg in argv:
         if arg.startswith("count:"):
             lx = arg.split(":", 1)[1]
@@ -260,8 +262,13 @@ def main(argv: list[str]) -> int:
                 print(f"{arg}: {mt.text_words(arg)}")
             except KeyError:
                 print(f"{arg}: НЕ НАЙДЕНО")
-    return 0
+                failures += 1
+    return 1 if failures else 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main(sys.argv[1:]))
+    try:
+        raise SystemExit(main(sys.argv[1:]))
+    except (KeyError, OSError, ValueError) as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        raise SystemExit(1)

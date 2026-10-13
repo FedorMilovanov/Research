@@ -556,7 +556,8 @@
         "ἱλασμός": 2,
         "ἱλαστήριον": 2,
         "καταλλάσσω": 6,
-        "καταλλαγή": 4
+        "καταλλαγή": 4,
+        "ἀποκαταλλάσσω": 3
       }
     },
     {
@@ -569,7 +570,7 @@
         "αἷμα": 97,
         "ὑπέρ-tokens": 149,
         "ἀντί-tokens": 22,
-        "ἀντί-governing-genitive": 19,
+        "ἀντί-governing-genitive": 22,
         "ἀντί-genitive-atonement-loci": [
           "Mt 20:28",
           "Mk 10:45"
@@ -580,10 +581,14 @@
         "ὑπέρ-prepositional-P-": 149,
         "ὑπέρ-adverbial-D-2Co11:23": 1,
         "ὑπέρ-genitive-death/giving/offering-clauses": 48,
-        "ἀντί-genitive": 20,
-        "ἀντί-accusative": 1,
-        "ἀντί-adverbial": 1
-      }
+        "ἀντί-genitive": 22,
+        "ἀντί-accusative": 0,
+        "ἀντί-adverbial": 0,
+        "ὑπέρ": 150,
+        "ἀντί": 22,
+        "περί": 332
+      },
+      "countingScope": "Preposition counts are lemmas/P- tokens. Case probe is first inflected form including articles within the same verse, not a dependency parse. The 48 filter counts verse co-occurrence with VERBS in verify_nt_facts.py, not 48 independent atonement clauses."
     },
     {
       "id": "L4",
@@ -600,10 +605,13 @@
         "κόσμος-in-John-gospel": 78,
         "κόσμος-in-1John": 23,
         "ὅλος": 108,
-        "πᾶς-πάντες-NPM": 178,
+        "πᾶς-πάντες-NPM": 175,
         "πᾶς-with-ἄνθρωπος-verses": 71,
-        "κόσμος-with-ὅλος-or-πᾶς-verses": 33
-      }
+        "κόσμος-with-ὅλος-or-πᾶς-verses": 31,
+        "πᾶς-πάντες-surface-form": 178,
+        "πᾶς-πάντες-VPM": 3
+      },
+      "countingScope": "NPM is the exact ccat tag; κόσμος-with-ὅλος-or-πᾶς counts unique verses containing both lemmas, not occurrences."
     },
     {
       "id": "L5",
@@ -916,45 +924,19 @@
   },
   "lxxCollation": {
     "card": "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md",
-    "collatedLinks": 47,
-    "negativeResults": {
-      "ἀπολύτρωσις": {
-        "LXX": 0,
-        "NT": 10
-      },
-      "ἀντίλυτρον": {
-        "LXX": 0,
-        "NT": 1
-      },
-      "καταλλάσσω": {
-        "LXX": 0,
-        "NT": 6
-      },
-      "ἱλάσκομαι": {
-        "LXX": 0,
-        "NT": 2
-      },
-      "ἀγοράζω искупительно": {
-        "LXX": 0,
-        "NT": 6
-      },
-      "ἐξιλασκ- (для контраста)": {
-        "LXX": 121,
-        "NT": 0
-      }
-    },
-    "conclusion": "Сверка уточнила фон, но не сняла EVIDENCE_HOLD: ни один из восьми сверенных пунктов не определяет объём искупления.",
+    "collatedLinks": 14,
+    "conclusion": "Selected digital-text comparisons and positive inflected forms refine the background; no extent verdict or exhaustive LXX lemma/semantic counts.",
     "mtCollation": {
       "card": "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md#1110-свидетель-s6--еврейский-mt-bhs-и-что-он-изменил",
       "tool": "ИСКУПЛЕНИЕ/nt/tools/mt_lxx_collation.py",
-      "pairs": 47,
+      "pairs": 48,
       "textAccesses": 96,
       "correctedCounts": {
         "ἱλαστήριον (LXX, основа ἱλαστηρι-)": "28 словоформ в 21 стихе; раньше стояло 14 — число одной флексии",
         "כַּפֹּרֶת (MT)": "27 словоформ в 22 стихах",
-        "λύτρωσις (LXX)": "10 (было 20)",
-        "λυτρόω (LXX, по вхождению)": "20 (было 13)",
-        "ἀγορα- (LXX)": "39 (было 35)"
+        "λύτρωσις (LXX)": "prefix λυτρωσι- = 10; not a complete lemma count (genitive stem differs)",
+        "λυτρόω (LXX, по вхождению)": "infix probe λυτρο- = 20; not complete lemma/POS annotation",
+        "ἀγορα- (LXX)": "prefix 35 / infix 39 family tokens, including nouns and augmented forms"
       },
       "keyFindings": [
         "λύτρον-семейство LXX передаёт три разных еврейских корня: כפר (Исх 21:30), פדה (Пс 111:9), גאל (Ис 52:3). Обратный ход «λύτρον в Мк 10:45 = כפר» из лексики не следует",
@@ -962,11 +944,88 @@
         "Амос 9:1 — LXX даёт ἱλαστήριον там, где в MT כַּפְתּוֹר (21 вхождение в MT)",
         "1 Пар 28:11 — MT כַּפֹּרֶת, LXX τοῦ ἐξιλασμοῦ, не ἱλαστήριον",
         "нумерация LXX в Исх 25 на единицу ниже MT (проверено на 8 стихах); MT Исх 37 = LXX Исх 38",
-        "רַבִּים в Ис 53 трижды и без артикля — подтверждено по MT (53:11; 53:12 дважды)",
+        "Isaiah 53 has three רב tokens, with contracted articles before two (53:11 and first 53:12); lex_utf8 ה + sp art remain separate empty-surface TF slots. Greek forms lack the article.",
         "Ис 43:4 — LXX передаёт תַּחַת через ὑπέρ (ἀνθρώπους πολλοὺς ὑπὲρ σοῦ): свидетельство к карточке 03",
         "Втор 27:26 — πᾶς ἄνθρωπος ЕСТЬ в LXX, его нет в MT, его опускает Гал 3:10"
       ],
-      "conclusion": "MT-сверка сделала фон проверяемым по обоим текстам. Ни один из пунктов не определяет объём искупления; EVIDENCE_HOLD не снят."
+      "conclusion": "MT-сверка сделала фон проверяемым по обоим текстам. Ни один из пунктов не определяет объём искупления; EVIDENCE_HOLD не снят.",
+      "readablePairs": 47,
+      "historicalFalseArticleFinding": {
+        "status": "HISTORICAL / SUPERSEDED: contracted article has empty TF surface form",
+        "value": "רַבִּים в Ис 53 трижды и без артикля — подтверждено по MT (53:11; 53:12 дважды)"
+      }
+    },
+    "expectedMissingLxxVerses": [
+      [
+        "Exodus 39:35",
+        "Exodus 39:35"
+      ]
+    ],
+    "expectedNegativeLxxWords": [
+      [
+        "Exodus 26:34",
+        "Exodus 26:34",
+        "ἱλαστηρ"
+      ],
+      [
+        "Exodus 30:6",
+        "Exodus 30:6",
+        "ἱλαστηρ"
+      ],
+      [
+        "Exodus 37:7",
+        "Exodus 38:6",
+        "ἱλαστηρ"
+      ],
+      [
+        "Exodus 40:20",
+        "Exodus 40:20",
+        "ἱλαστηρ"
+      ],
+      [
+        "Ruth 4:4",
+        "Ruth 4:4",
+        "λυτρ"
+      ]
+    ],
+    "historicalFalseLemmaZeros": {
+      "status": "HISTORICAL / SUPERSEDED: prefixes confused with inflected lemmas",
+      "ἱλάσκομαι": 0,
+      "καταλλάσσω": 0,
+      "ἀπολύτρωσις": 0,
+      "καταλλαγή-noun": 4,
+      "ἐξιλάσκομαι-verb": 121,
+      "ἀγοράζω-redemptive-semantic-count": 0
+    },
+    "countingBoundary": "S5 has no lemma/POS annotation. Prefix/infix counts are probes; explicit inflected simplex forms and apolytroseos refute old lemma zeros. Other lemma/semantic totals remain unclaimed.",
+    "historicalNegativeResults": {
+      "status": "HISTORICAL / SUPERSEDED: prefix/POS mistakes, not lemma zeros",
+      "values": {
+        "ἀπολύτρωσις": {
+          "LXX": 0,
+          "NT": 10
+        },
+        "ἀντίλυτρον": {
+          "LXX": 0,
+          "NT": 1
+        },
+        "καταλλάσσω": {
+          "LXX": 0,
+          "NT": 6
+        },
+        "ἱλάσκομαι": {
+          "LXX": 0,
+          "NT": 2
+        },
+        "ἀγοράζω искупительно": {
+          "LXX": 0,
+          "NT": 6
+        },
+        "ἐξιλασκ- (для контраста)": {
+          "LXX": 121,
+          "NT": 0
+        }
+      }
     }
   },
   "holdsScopeNote": {
@@ -1203,5 +1262,108 @@
     "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md"
   ],
   "datasetByteAccounting": "Sum of regular-file content bytes, excluding directory-entry sizes. Previous du-style byte figures are SUPERSEDED; commit and sha256 pins unchanged.",
-  "datasetPathAccounting": "Secondary sha256 of sorted UTF-8 relative paths joined by newline. Existing sorted-content byte digests remain unchanged."
+  "datasetPathAccounting": "Secondary sha256 of sorted UTF-8 relative paths joined by newline. Existing sorted-content byte digests remain unchanged.",
+  "sourceQualityFindings": [
+    {
+      "source": "S5",
+      "status": "CONFLICT / LOCATOR_HOLD",
+      "digitalLocator": "data/05.Deuteronomium.txt:5.21.21",
+      "question": "Deuteronomy 21:23 quoted in Galatians 3:13",
+      "finding": "Pinned digital text merges material from canonical Deuteronomy 21:21–23 under 5.21.21, with visible transcription gaps/repetitions. It is not a verified canonical 21:23 verse locator. Do not silently emend source bytes or change pins."
+    },
+    {
+      "source": "S10",
+      "status": "CONFLICT / LOCATOR_HOLD",
+      "finding": "Earlier regex counted commented-out XML elements. Active records: Acts 9554 units / 600 witness declarations; older Mark 147 units in 118 verses / 167 declarations; Ephesians 42/36; 1 Peter 36/64; Revelation 70/33. The prior counts 9555/600, 148/203, 42/37, 36/114, 70/86 are HISTORICAL/SUPERSEDED. Unmapped reading tokens are not implicitly independent manuscripts."
+    },
+    {
+      "source": "S10b",
+      "status": "CONFLICT / LOCATOR_HOLD",
+      "locator": "ecm_mark.xml#B02K28V8U2-20",
+      "finding": "Active XML unit has an impossible Mark chapter 28. Quarantined without guessing or emending the identifier; 146 locatable Mark units in 117 verses remain."
+    }
+  ],
+  "historicalDerivedCounts": [
+    {
+      "field": "L3",
+      "key": "ἀντί-governing-genitive",
+      "value": 19,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 22
+    },
+    {
+      "field": "L3",
+      "key": "ἀντί-genitive",
+      "value": 20,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 22
+    },
+    {
+      "field": "L3",
+      "key": "ἀντί-accusative",
+      "value": 1,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 0
+    },
+    {
+      "field": "L3",
+      "key": "ἀντί-adverbial",
+      "value": 1,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 0
+    },
+    {
+      "field": "L4",
+      "key": "πᾶς-πάντες-NPM",
+      "value": 178,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 175
+    },
+    {
+      "field": "L4",
+      "key": "κόσμος-with-ὅλος-or-πᾶς-verses",
+      "value": 33,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 31
+    }
+  ],
+  "historicalPrepositionAttribution": {
+    "status": "HISTORICAL / SUPERSEDED: nearest-left preposition is not a dependency parse",
+    "bloodOwnCasesBeforeAudit": {
+      "N": 24,
+      "A": 19,
+      "G": 34,
+      "D": 20
+    },
+    "formerBloodGoverningPrepositionTable": {
+      "none": 60,
+      "ἐν": 14,
+      "διά": 8,
+      "ἀπό": 4,
+      "ἐκ": 3,
+      "ἕως": 2,
+      "εἰς": 2,
+      "χωρίς": 2,
+      "πρός": 1,
+      "μέχρι": 1
+    },
+    "formerFirstContentWordCases": {
+      "ὑπέρ": {
+        "G": 129,
+        "A": 20
+      },
+      "ἀντί": {
+        "G": 20,
+        "A": 1,
+        "D": 1
+      },
+      "περί": {
+        "G": 282,
+        "A": 43,
+        "D": 2,
+        "N": 2,
+        "none": 3
+      }
+    }
+  }
 }
