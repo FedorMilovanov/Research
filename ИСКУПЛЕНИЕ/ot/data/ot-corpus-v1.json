@@ -369,6 +369,75 @@
     "result": "all twelve files (authority document 00 and cards 01–11) pass with 0 problems; the informational lines are apparatus quotations, lexical lists and damaged mirror tokens",
     "tooling": "qa.py (fragments vs MT/LXX/SBLGNT; MT note elements stripped; ketiv and qere views; commas, semicolons and dashes end a fragment; short runs (<=4 words) with no book:verse reference within 200 characters and every word attested in the corpus are informational; the qere view really substitutes the qere words) and mixcheck.py (segment-based mixed-script detection) live in scratch only and are not committed"
   },
+  "qaQalitePass": {
+    "date": "2026-10-14",
+    "tool": "qalite.py and triage.py (both committed: ИСКУПЛЕНИЕ/ot/tools/); mixcheck.py",
+    "scope": "re-run of the quote check over the sub-corpus after wave 17: authority document 00, cards 01–15 and the criterion-3 summary (16 files); every Hebrew and Greek fragment of 2+ tokens checked against MT (morphhb, ketiv and qere views), the LXX mirrors (ELI 1930, F1K tlg0527, S23 lxx-swete) and SBLGNT",
+    "perCard": [
+      {"id": "00", "hebrew": 15, "greek": 57, "problems": 3, "informational": 2},
+      {"id": "01", "hebrew": 11, "greek": 51, "problems": 3, "informational": 0},
+      {"id": "02", "hebrew": 28, "greek": 99, "problems": 0, "informational": 0},
+      {"id": "03", "hebrew": 95, "greek": 148, "problems": 0, "informational": 1},
+      {"id": "04", "hebrew": 50, "greek": 140, "problems": 4, "informational": 0},
+      {"id": "05", "hebrew": 39, "greek": 74, "problems": 0, "informational": 0},
+      {"id": "05b", "hebrew": 50, "greek": 89, "problems": 1, "informational": 0},
+      {"id": "06", "hebrew": 77, "greek": 114, "problems": 3, "informational": 0},
+      {"id": "07", "hebrew": 59, "greek": 119, "problems": 1, "informational": 0},
+      {"id": "08", "hebrew": 67, "greek": 158, "problems": 7, "informational": 0},
+      {"id": "09", "hebrew": 49, "greek": 176, "problems": 6, "informational": 4},
+      {"id": "10", "hebrew": 61, "greek": 118, "problems": 0, "informational": 0},
+      {"id": "11", "hebrew": 56, "greek": 207, "problems": 0, "informational": 0},
+      {"id": "12", "hebrew": 80, "greek": 250, "problems": 0, "informational": 0},
+      {"id": "13", "hebrew": 96, "greek": 254, "problems": 0, "informational": 1},
+      {"id": "14", "hebrew": 61, "greek": 196, "problems": 0, "informational": 0},
+      {"id": "15", "hebrew": 63, "greek": 196, "problems": 0, "informational": 0},
+      {"id": "16", "hebrew": 7, "greek": 18, "problems": 0, "informational": 0}
+    ],
+    "totals": {"hebrew": 964, "greek": 2464, "problems": 28, "informational": 8},
+    "result": "28 [A] lines and 8 [B] lines, each classified: apparatus reading (with sigla), lexicon citation, damaged mirror token or dictionary (lemma) form. No verse quotation of any card is unattested; two real defects were found and fixed (card 05 Hab 2:4, card 05b Ps 51:21)",
+    "fixes": [
+      "card 05 (T22, Hab 2:4): the LXX column read «ὁ δὲ δίκαιός μου ἐκ πίστεώς μου ζήσεται», not attested in any of the three mirrors — ELI, F1K and S23 read «ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται»; the extra μου belongs to the NT quotation (Heb 10:38). Column corrected; note added to the card journal",
+      "card 05b (O8, Ps 51:21): the lemma spelling «θυσία δικαιοσύνης» replaced by the attested verse form «θυσίαν δικαιοσύνης»",
+      "cards 13, 14, 15: counts confirmed (13: 1 [B]; 14, 15: 0 [A] / 0 [B])"
+    ],
+    "waived": [
+      {"card": "00", "fragment": "הַדָּם יְכַפֵּר", "class": "невосстановимая старая форма, названная в тексте как ошибка", "disposition": "в authority-документе стоит именно как цитата прежней ошибки («исправлено: … → точная фраза כִּי הַדָּם הוּא בַּנֶּפֶשׁ יְכַפֵּר»); в карточках такой формы нет"},
+      {"card": "00", "fragment": "κριὸς τῆς πλημμελίας", "class": "леммная словарная форма", "disposition": "в LXX бытует только в косвенных падежах — исправлено ещё в волне 11.5 (см. fixes qaFullPass); в authority осталось как название леммы"},
+      {"card": "00", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение (Исх. 30:10, A и F)", "disposition": "так напечатано в аппарате; qalite ищет по тексту стиха, а не по аппарату"},
+      {"card": "00", "fragment": "οὐκ ἔχι", "class": "чтение B* (Числ. 19:15)", "disposition": "орфография кодекса, аппаратная строка"},
+      {"card": "00", "fragment": "τραύματος Α", "class": "чтение A (Числ. 19:16) с сиглами", "disposition": "аппаратная строка"},
+      {"card": "01", "fragment": "καὶ δώσουσιν ἕκαστος λύτρα τῆς ψυχῆς αὐτοῦ τῷ κυρίῳ", "class": "цитата по Studylight с артиклем τῷ", "disposition": "в карточке помечена LOCATOR_HOLD (три зеркала дают κυρίῳ); Göttingen Exodus 1991 не открыт (ARCHIVE_HOLD)"},
+      {"card": "01", "fragment": "ἀντὶ τῆς ψυχὴ ἐχιλάσεται", "class": "порча транскрипции Swete 1909 (S10)", "disposition": "в карточке описана явно как ошибка зеркала, не как чтение"},
+      {"card": "01", "fragment": "καὶ ἀπένεγκε τὸ τάχος εἰς τὴν παρεμβολὴν καὶ ἐξίλασαι περὶ αὐτῶν", "class": "цитата Studylight с чтением A и F (повелительное)", "disposition": "в карточке помечена как вариант A/F; выбор чтения — LOCATOR_HOLD (Göttingen Numeri 1982)"},
+      {"card": "03", "fragment": "κριὸς τῆς πλημμελίας", "class": "леммная словарная форма (заголовок заметки)", "disposition": "в LXX — только косвенные падежи; в заметке карточки дана как словарная форма, рядом с ней — «асхам = πλημμέλεια»"},
+      {"card": "04", "fragment": "προσ οισουσιν", "class": "разбиение слова в зеркале FW", "disposition": "в карточке названо опечаткой, не разночтением"},
+      {"card": "04", "fragment": "δια θηκης", "class": "разбиение слова в зеркале FW", "disposition": "в карточке названо разбиением, не разночтением"},
+      {"card": "04", "fragment": "αἷμα ῥαντισμοῦ", "class": "цитата LSJ (Евр. 12:24; 1 Пет. 1:2)", "disposition": "в SBLGNT эти слова стоят в других падежах; это лексиконная справка, а не цитата стиха"},
+      {"card": "05", "fragment": "лишнее μου после δίκαιος (Авв. 2:4)", "class": "дефект LXX-колонки", "disposition": "ИСПРАВЛЕНО 2026-10-14: колонка T22 приведена к трём зеркалам — ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται; в журнал карточки добавлена пометка (лишнее μου принадлежит НЗ-цитате, Евр. 10:38)"},
+      {"card": "05b", "fragment": "θυσία δικαιοσύνης", "class": "леммная форма вместо формы стиха", "disposition": "ИСПРАВЛЕНО 2026-10-14: в O8 стоит форма стиха θυσίαν δικαιοσύνης"},
+      {"card": "05b", "fragment": "θυσία σωτηρίου", "class": "номинатив словарной статьи", "disposition": "в карточке явно помечено «номинатив словарной статьи»; форма LXX — θυσίαν σωτηρίου (аттестована)"},
+      {"card": "06", "fragment": "λαμβάνω ἁμαρτίαν", "class": "леммная форма передачи נשא חטא", "disposition": "в стихе — λήμψεται (аттестовано); лемма дана в словарном виде (в таблице и в списке смежных карточек)"},
+      {"card": "06", "fragment": "θύειν τὸ π", "class": "сокращение из цитаты LSJ (пасха)", "disposition": "сокращённая словарная форма с точкой"},
+      {"card": "07", "fragment": "λαμβάνω τὴν ἁμαρτίαν", "class": "леммная форма с артиклем", "disposition": "в стихе — τὴν ἁμαρτίαν λήμψεται (аттестовано); лемма дана в словарном виде"},
+      {"card": "08", "fragment": "καὶ περὶ τοῦ λαοῦ Α", "class": "аппаратная строка (Лев. 16:24)", "disposition": "с сиглами; не текст стиха"},
+      {"card": "08", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
+      {"card": "08", "fragment": "τοῦ καθαρισμοῦ τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
+      {"card": "08", "fragment": "ἐκδύσεται Α", "class": "аппаратное чтение A (Лев. 16:24)", "disposition": "аппарат с сиглами"},
+      {"card": "08", "fragment": "τῶν ἁμαρτιῶν τοῦ ἐξιλασμοῦ ἅπαξ τοῦ ἐνιαυτοῦ", "class": "аппаратное чтение A и F (Исх. 30:10)", "disposition": "аппарат"},
+      {"card": "08", "fragment": "χρυσᾶ τορευτά", "class": "аппаратное чтение BaAF (Исх. 25:17)", "disposition": "аппаратная орфография"},
+      {"card": "09", "fragment": "οὐκ εχι / οὐκ ἔχι", "class": "чтения B* и A (Числ. 19:15)", "disposition": "орфография кодексов, аппаратные строки (три линии)"},
+      {"card": "09", "fragment": "τραύματος Α", "class": "чтение A (Числ. 19:16) с сиглами", "disposition": "аппаратная строка (две линии)"},
+      {"card": "09", "fragment": "αἷμα ῥαντισμοῦ", "class": "цитата LSJ", "disposition": "лексиконная справка, не стих"},
+      {"card": "09", "fragment": "ἐν ἑαυτῇ Α / εμμεσω ὑμῶν / ἐπὶ τοῦ ἡμμένον / καὶ ἁφὰ τῇ ἡμ", "class": "аппаратные чтения A и F (Числ. 19)", "disposition": "аппарат; часть — с порчей транскрипции («εμμεσω»)"},
+      {"card": "13", "fragment": "ἐπιβλέψονται πρὸς μέ ἀνθʼ ὧν κατορχήσαντο", "class": "односимвольное расхождение: κατα- против κατω- (Зах. 12:10)", "disposition": "в карточке описано как расхождение зеркал (F1K и S23 — καταορχήσαντο, ELI — κατωρχήσαντο); не дефект"}
+    ],
+    "tooling": "qalite.py (committed) plus triage.py, which prints every unattested fragment with file:line for classification; both read the source mirrors from /tmp/arena-scratch/src (not committed)",
+    "notCovered": [
+      "the apparatus of Swete 1887 by image and the Göttingen volumes (ARCHIVE_HOLD): where a card relies on a single mirror the reading stays LOCATOR_HOLD",
+      "critical NT editions for the NT quotations (SBLGNT only)",
+      "the cards remain first versions: apparatus PENDING"
+    ]
+  },
   "cards": [
     {
       "id": "01",
@@ -1904,7 +1973,7 @@
     {"id": "12", "topic": "Дан. 9:24–27 (לְכַפֵּר; LXX vs Theodotion)", "status": "DONE_WAVE14_FIRST_VERSION_APPARATUS_PENDING"},
     {"id": "13", "topic": "Зах. 3; 12:10; 13:1; Пс. 22; 40; 69; 130 (LXX 129)", "status": "DONE_WAVE15_FIRST_VERSION_APPARATUS_PENDING"},
     {"id": "14", "topic": "Иер. 31:31–34; Иов 19:25; 33:24", "status": "DONE_WAVE16_FIRST_VERSION_APPARATUS_PENDING"},
-    {"id": "15", "topic": "Ос. 13:14; Мих. 6:6–8; Ис. 1:11–17; Ам. 5; Пс. 51/50:16–17", "status": "DONE_WAVE17_FIRST_VERSION_APPARATUS_PENDING"}
+    {"id": "15", "topic": "Ос. 13:14; Мих. 6:6–8; Ис. 1:11–17; Ам. 5; Пс. 51/50:16–17", "status": "DONE_WAVE17_FIRST_VERSION_APPARATUS_PENDING", "qaPass": "2026-10-14 (qaQalitePass): 0 unattested verse quotations; two defects fixed (card 05 Hab 2:4, card 05b Ps 51:21)"}
   ],
   "sourceRegistryRows": ["S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12", "S13", "S14", "S15", "S16", "S17", "S18", "S19", "S20", "S21", "S22", "S23"],
   "sources": [
