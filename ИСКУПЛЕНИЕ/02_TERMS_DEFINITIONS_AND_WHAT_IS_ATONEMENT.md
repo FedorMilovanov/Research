@@ -188,5 +188,6 @@ TULIP — учебный акростих XIX–XX вв., не текст Дор
 - Спор *hilastērion* (крышка / жертва / средство умилостивления) — отдельное лексическое досье.
 - Связь *goel* и Христа — осторожная типология, не аллегория всего Руфь.
 - Русская переводческая традиция (Синодальный, РБО, Кассиан, современные евангельские) — отдельная таблица в Wave 1–2.
+- *(2026-10-14)* Лексическая история пары *atonement / redemption* в английской богословской традиции (Tyndale → WCF *satisfaction/redemption* → Ч. Ходж ST II.469/477 → Шедд 1888 II.469–477 → Каннингем 1862) и проверка тезиса «redemption = результат, atonement = цена» вынесены в [`../docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md`](../docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md); конфликт зафиксирован как C-16 в `synthesis/02_CONFLICT_LEDGER.md`. Для §0 этого файла важно: исторически *redemption* — слово о **выкупе/цене**, *atonement* — о **примирении/результате**; обратная схема — артефакт XX века.
 
 Этот файл можно расширять. Нельзя заменить им статью и нельзя считать его proof particular redemption.
