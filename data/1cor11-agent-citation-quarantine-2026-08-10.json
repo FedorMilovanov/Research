@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "topic": "1 Corinthians 11:2-16",
+  "date": "2026-08-10",
+  "status": "SOURCE_HYGIENE_PUBLICATION_HOLD",
+  "sourcePolicy": "data/repository-evidence-policy-v2.json",
+  "coreClaimGradeReversals": 0,
+  "records": [
+    {
+      "id": "poxy-84-5575-head-covering",
+      "agentClaim": "P.Oxy. 84.5575 is a private letter containing Roman head-covering and exousia language relevant to 1 Cor 11:10",
+      "verdict": "REJECT",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_OFFICIAL_CATALOGUE",
+      "locatorState": "VERIFIED",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "BLOCKED",
+      "control": "Oxford Oxyrhynchus official publications catalogue identifies vol. LXXXIV as 2019 and P.Oxy. 5575 as a sayings-of-Jesus text in vol. LXXXVII (2023).",
+      "url": "https://oxyrhynchus.web.ox.ac.uk/node/3484511"
+    },
+    {
+      "id": "kirk-jbl-142-3-2023",
+      "agentClaim": "J. R. Daniel Kirk, Women's Prophetic Authority in 1 Corinthians 11, JBL 142.3 (2023): 509-530",
+      "verdict": "REJECT",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_OFFICIAL_ISSUE_CATALOGUE",
+      "locatorState": "VERIFIED",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "BLOCKED",
+      "control": "Official SBL issue contents contain no Kirk article; the claimed page range overlaps the real Matthew J. Klem article at 513-531.",
+      "url": "https://cart.sbl-site.org/books/061423J"
+    },
+    {
+      "id": "ehrensperger-jech-13-1-2023",
+      "agentClaim": "Kathy Ehrensperger, Because of the Angels: Gender, Ritual and Authority in 1 Corinthians 11, JECH 13.1 (2023): 1-22",
+      "verdict": "REJECT",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_OFFICIAL_ISSUE_TOC",
+      "locatorState": "VERIFIED",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "BLOCKED",
+      "control": "Taylor & Francis complete issue TOC has Sviatoslav Dmitriev at pp.1-23 and no Ehrensperger article.",
+      "url": "https://www.tandfonline.com/toc/rech20/13/1"
+    },
+    {
+      "id": "ehrensperger-ritual-emotion-materiality-chapter",
+      "agentClaim": "Ehrensperger chapter Performing the Gospel, Performing Gender in Ritual, Emotion, and Materiality in the Early Christian World",
+      "verdict": "REJECT_AS_CITED",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_PUBLISHER_TOC",
+      "locatorState": "VERIFIED",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "BLOCKED",
+      "control": "Official Routledge TOC contains no such chapter; editor/year metadata in the agent citation is also wrong.",
+      "url": "https://www.routledge.com/Ritual-Emotion-and-Materiality-in-the-Early-Christian-World/Al-Suadi-Ascough-DeMaris/p/book/9781032054834"
+    },
+    {
+      "id": "alsuadi-early-christian-ritual-life-1cor11",
+      "agentClaim": "Soham Al-Suadi chapter Because of the Angels: Embodied Cognition... in Early Christian Ritual Life (2022)",
+      "verdict": "REJECT",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_PUBLISHER_TOC",
+      "locatorState": "VERIFIED",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "BLOCKED",
+      "control": "Official Routledge record identifies the book as 2018, DeMaris/Lamoreaux/Muir, with no Al-Suadi chapter.",
+      "url": "https://www.routledge.com/Early-Christian-Ritual-Life/DeMaris-Lamoreaux-Muir/p/book/9781138653061"
+    },
+    {
+      "id": "chrysostom-hom26-angels-clergy",
+      "agentClaim": "Chrysostom Homily 26 explicitly says the angels are priests and bishops",
+      "verdict": "REJECT_FALSE_QUOTE",
+      "evidenceClass": "B1",
+      "accessState": "DIRECT_FULL_TRANSLATION",
+      "locatorState": "VERIFIED_V10_SECTION",
+      "rightsState": "LINK_ONLY",
+      "publicationState": "BLOCKED",
+      "control": "Homily 26 says to reverence the angels and does not identify them as priests or bishops.",
+      "url": "https://www.newadvent.org/fathers/220126.htm"
+    },
+    {
+      "id": "deconick-jbl-140-3-2021",
+      "agentClaim": "April D. DeConick, Why Are the Angels in 1 Cor 11:10..., JBL 140.3 (2021): 599-616",
+      "verdict": "REJECT",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_OFFICIAL_JOURNAL_RECORD",
+      "locatorState": "VERIFIED",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "BLOCKED",
+      "control": "The claimed range overlaps M. David Litwa, Equal to Angels, JBL 140.3 (2021): 601-622; exact claimed article was not confirmed in the official issue search.",
+      "url": "https://scholarlypublishingcollective.org/sblpress/jbl/article/140/3/601/287332/"
+    },
+    {
+      "id": "deconick-gnostic-new-age-chapter",
+      "agentClaim": "The Gnostic New Age contains a standalone chapter The Great Mystery of Marriage: Sex and the Angels in 1 Cor 11, pp.189-212",
+      "verdict": "REJECT_AS_STANDALONE_CHAPTER",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_PUBLISHER_TOC",
+      "locatorState": "VERIFIED_TOC_ONLY",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "EVIDENCE_HOLD",
+      "control": "Columbia UP TOC contains no chapter by that title; exact internal discussion of 1 Cor 11 remains a direct-read hold.",
+      "url": "https://cup.columbia.edu/book/the-gnostic-new-age/9780231542043/"
+    },
+    {
+      "id": "yung-suk-kim-1corinthians-2023",
+      "agentClaim": "Yung Suk Kim, 1 Corinthians: An Asian and Liberationist Reading (Cascade, 2023), chapter Head, Veil, and Power",
+      "verdict": "QUARANTINE_NOT_LOCATED",
+      "evidenceClass": "C",
+      "accessState": "NOT_LOCATED_IN_PUBLISHER_SEARCH",
+      "locatorState": "UNVERIFIED",
+      "rightsState": "UNKNOWN",
+      "publicationState": "BLOCKED",
+      "control": "Official Wipf & Stock author catalogue lists multiple real Kim books but not the claimed title; do not propagate without an authoritative bibliographic record.",
+      "url": "https://wipfandstock.com/author/yung-suk-kim/"
+    },
+    {
+      "id": "petterson-from-tomb-to-text-1cor11",
+      "agentClaim": "Christina Petterson, From Tomb to Text: The Death of Jesus in the Book of John, with a chapter using 1 Cor 11 as a parallel",
+      "verdict": "REAL_BOOK_MISCITED_RELEVANCE_HOLD",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_PUBLISHER_TOC",
+      "locatorState": "VERIFIED_TOC_ONLY",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "LOCATOR_HOLD",
+      "control": "Correct subtitle is The Body of Jesus in the Book of John; official TOC has no dedicated 1 Cor 11 chapter.",
+      "url": "https://www.bloomsbury.com/us/from-tomb-to-text-9780567682550/"
+    },
+    {
+      "id": "punt-postcolonial-1cor11-citation",
+      "agentClaim": "Jeremy Punt, Postcolonial Feminist Interpretation of the New Testament: A South African Perspective, in Postcolonial Perspectives in African Biblical Hermeneutics, SBL 2022",
+      "verdict": "REAL_SOURCE_FALSE_AGENT_CITATION",
+      "evidenceClass": "A2",
+      "accessState": "DIRECT_BOOK_METADATA_TOC",
+      "locatorState": "VERIFIED_TOC_ONLY",
+      "rightsState": "METADATA_ONLY",
+      "publicationState": "LOCATOR_HOLD",
+      "control": "Real volume is Postcolonial Perspectives in African Biblical Interpretations, originally 2012; real Punt chapter is Pauline Bodies and South African Bodies: Body, Power, and Biblical Hermeneutics. Specific 1 Cor 11 claims require direct text.",
+      "url": "https://www.jstor.org/stable/jj.11589034"
+    }
+  ],
+  "positiveContext": [
+    {
+      "title": "Authority Over Whose Head? Did Paul Instruct Wives or All Women to Cover Their Heads (1 Corinthians 11:2-16)?",
+      "author": "Callie Callon",
+      "publication": "Harvard Theological Review 117.4 (2024): 699-719",
+      "doi": "10.1017/S0017816024000300",
+      "status": "DIRECT_RELEVANT_ALREADY_CURRENT"
+    },
+    {
+      "title": "Ritual, Gender, and the Body in the Early Christian World",
+      "editors": "Richard E. DeMaris; Soham Al-Suadi; Richard S. Ascough",
+      "status": "B1_CONTEXT_ONLY_NOT_DIRECT_1COR11"
+    }
+  ],
+  "stopRules": [
+    "FALSE_OR_NOT_LOCATED_CITATION_NEVER_PROPAGATE",
+    "AGENT_DIRECT_QUOTE_REQUIRES_DIRECT_TEXT_CONTROL",
+    "PUBLISHER_TOC_CONFLICT_BLOCKS_SPECIFIC_AGENT_CITATION",
+    "REAL_BOOK_DOES_NOT_VALIDATE_INVENTED_CHAPTER_OR_INFERENCE",
+    "NO_CORE_CLAIM_PROMOTION_FROM_SOURCE_DISCOVERY_ALONE"
+  ]
+}
