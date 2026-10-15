@@ -1,0 +1,1777 @@
+{
+  "schemaVersion": 1,
+  "authorityId": "ATONEMENT-NT-SUBCORPUS-AUTHORITY-2026-10-07",
+  "status": "CURRENT / SUB-CORPUS-SPECIFIC / ACTIVE RESEARCH / NO SETTLED VERDICT / NOT PUBLICATION-READY",
+  "corpusPath": "ИСКУПЛЕНИЕ/nt",
+  "parentCorpusPath": "ИСКУПЛЕНИЕ",
+  "parentAuthority": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+  "parentAuthorityId": "ATONEMENT-CORPUS-AUTHORITY-2026-10-07",
+  "stableEntrypoint": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+  "rootAuthorityUnchanged": "00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md",
+  "publicationBoundary": "Research presence is not Product write and not publication approval.",
+  "settledVerdict": false,
+  "axes": [
+    "extent",
+    "nature",
+    "application",
+    "offer"
+  ],
+  "textWitnesses": [
+    {
+      "id": "S1",
+      "name": "MorphGNT / SBL Greek New Testament with morphological parsing",
+      "role": "primary critical text, lemma and case source for every Greek citation in this sub-corpus",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "repository": "morphgnt/py-sblgnt",
+      "commit": "904fed08a14bffea6e1776d8c4c3eeb7c6092688",
+      "commitDate": "2017-03-20T00:51:01Z",
+      "files": 27,
+      "parsedWordForms": 137554,
+      "sha256OfDataset": "f95833b147bb182786750700423625528dcb38f1508ea7585bce52e730a352f9",
+      "bytes": 9818347,
+      "committedToGit": false,
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "textDir": "pysblgnt/sblgnt",
+      "locatorScope": "Verse text and morphology; apparatus belongs to S7, not to this dataset.",
+      "rightsScope": "Pinned README distinguishes the SBLGNT EULA, MorphGNT parsing/lemmatization CC BY-SA 3.0, and code MIT. S7 relicense is not silently applied to the older S1 snapshot. No full dataset redistribution.",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "sha256OfSortedRelativePaths": "2399d62f8d4e59ed57291385ad86709b2d55ea24836c43059a68c2541f3e2e51"
+    },
+    {
+      "id": "S2",
+      "name": "Scrivener 1894 Textus Receptus (Robinson edition, text only)",
+      "role": "TR witness for variant notes",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "repository": "byztxt/greektext-scrivener",
+      "commit": "6049a43b135ed870f843b83eb6a04764fc796678",
+      "commitDate": "2017-05-23T18:30:39Z",
+      "sha256OfDataset": "61f4b97a80b2a8ec5faaf929f78a492b70e18fa7b4505e84983ee686782c19ea",
+      "bytes": 1032718,
+      "encodingNote": "ASCII betacode transliteration, not Greek letters",
+      "committedToGit": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "textDir": "textonly",
+      "locatorScope": "Verse-level text; no critical apparatus in this dataset.",
+      "rightsScope": "public-domain per repository README",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "files": 29,
+      "sha256OfSortedRelativePaths": "617bad1cebd79490bcff84583f2bf0c42eecbbd226f7f23af171e49f728fe692"
+    },
+    {
+      "id": "S3",
+      "name": "Robert Estienne (Stephens) 1550 Textus Receptus",
+      "role": "second TR witness",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "repository": "byztxt/greektext-stephens",
+      "commit": "4314af2042d9e77b2ce5c1c86d0c49325dd81684",
+      "commitDate": "2023-09-02T19:37:17Z",
+      "sha256OfDataset": "b94776ff4870570ee63240dfe36c9fc3f696600cfff39d408d85c4bb453ba4e9",
+      "bytes": 2613475,
+      "committedToGit": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "textDir": "textonly",
+      "locatorScope": "Verse-level text; no critical apparatus in this dataset.",
+      "rightsScope": "public-domain per repository README",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "files": 58,
+      "sha256OfSortedRelativePaths": "ed62f6bbf2864b8790c4fc0793ac62e842d7cc5c54a7131f540480a0964cb25a"
+    },
+    {
+      "id": "S4",
+      "name": "Elzevir Textus Receptus",
+      "role": "third TR witness",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "repository": "byztxt/greektext-elzevir",
+      "commit": "94f31e2d2e8bd451d4d2f9739d13c419f7ce86c2",
+      "commitDate": "2017-05-23T18:29:23Z",
+      "sha256OfDataset": "dbdc40702d84dcd889c2090c6be3b8ad6c49fa61efa3e3dbd69fd69b03768504",
+      "bytes": 1038771,
+      "committedToGit": false,
+      "holds": [
+        "PUBLICATION_HOLD"
+      ],
+      "textDir": "textonly",
+      "locatorScope": "Verse-level text; no critical apparatus in this dataset.",
+      "rightsScope": "public-domain per repository README",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "files": 31,
+      "sha256OfSortedRelativePaths": "8827da008ffd44ffec5e24e0d07bd41f4796894d489c26cca6814156d353f42b"
+    },
+    {
+      "id": "S5",
+      "name": "Swete, Henry Barclay (ed.), The Old Testament in Greek, Cambridge: CUP, 1901 (LXX)",
+      "role": "свидетель ВЗ-греческого; снимает LXX_HOLD по греческой стороне",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "STORAGE_ONLY",
+      "publicationState": "BLOCKED",
+      "repository": "nathans/lxx-swete",
+      "commit": "26bad3eb42bba98471d154c954e36a6f30a0279d",
+      "commitDate": "2025-12-18",
+      "files": 55,
+      "parsedWordForms": 588579,
+      "sha256OfDataset": "5cf3ee82efa214caee9059ada09f67a1079fc397f3c1343aa1b72d8c49be5458",
+      "bytes": 11795198,
+      "committedToGit": false,
+      "editionEstablishedBy": "CTS-метаданные First1KGreek data/tlg0527/tlg002/__cts__.xml, а не имя репозитория",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "textDir": "data",
+      "locatorScope": "Verse-level Greek text. Swete apparatus not acquired; MT text is available separately as S6.",
+      "rightsScope": "текст Суэта 1901 — PD; цифровая передача First1KGreek — CC BY-SA 4.0; в Git не публикуется",
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "sha256OfSortedRelativePaths": "a4218d40d828c6c8547cb3725a757b2d2110ae118957efd89a9b7a382237f763"
+    },
+    {
+      "id": "S6",
+      "name": "BHS — Biblia Hebraica Stuttgartensia Amstelodamensis (MT), Text-Fabric 2021, ETCBC",
+      "role": "свидетель ВЗ-еврейского; снимает MT_HOLD по тексту, не по аппарату",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "repository": "ETCBC/bhsa-min",
+      "commit": "f600a50fd902b6c9d31d67cf5611365df4169bce",
+      "commitDate": "2023",
+      "files": 56,
+      "verses": 23213,
+      "wordSlots": 426590,
+      "sha256OfDataset": "51922d3bac47159d54a766748e6864449981f37939e31340b451fc67b1c62a4c",
+      "committedToGit": false,
+      "editionEstablishedBy": "README репозитория ETCBC/bhsa и датасет-заголовок tf/2021 (@datasetName=Biblia Hebraica Stuttgartensia Amstelodamensis)",
+      "tools": [
+        "ИСКУПЛЕНИЕ/nt/tools/mt_lookup.py",
+        "ИСКУПЛЕНИЕ/nt/tools/mt_lxx_collation.py"
+      ],
+      "tfFormatPitfalls": [
+        "пустые строки в .tf — это ЗНАЧЕНИЯ (в g_word_utf8.tf их 6488), а не разделители; пропускать их нельзя, иначе ссылки съезжают тем сильнее, чем дальше по канону",
+        "в oslots.tab только в первой строке, дальше узлы идут подряд — номер надо инкрементировать",
+        "trailer_utf8 пуст там, где за словом нет пробела: без склейки по trailer проклитики стоят отдельно"
+      ],
+      "textDir": "tf/2021",
+      "locatorScope": "Verse-level Hebrew text; BHS critical apparatus not acquired.",
+      "rightsScope": "MIT file in bhsa-min is not by itself proof of rights to the underlying biblical data. Earlier BHSA CC BY-NC 4.0 assertion remains historical; preserve PRIVATE_STUDY_ONLY pending a pinned data-rights record and product review. No dataset redistribution.",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "bytes": 52449772,
+      "sha256OfSortedRelativePaths": "f4731d910d43b9984beb95ee055a42e180f746c406a92d23b62191e11947de5e"
+    },
+    {
+      "id": "S7",
+      "name": "SBL Greek New Testament (Holmes), текст и критический аппарат, TEI",
+      "role": "перечисление вариантов с атрибуцией изданиям; сужает LOCATOR_HOLD до рукописного уровня",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "repository": "jjmccollum/sblgnt-tei",
+      "commit": "2a95589b2a9cb9b8bda5372650c7f55745ceecad",
+      "files": 2,
+      "appEntries": 6929,
+      "appPositions": 4471,
+      "rdgElements": 14132,
+      "witnesses": 13,
+      "sha256OfDataset": "dc2888b956c63fe895fc5e809f1677e48455a6625c936a5bdb7e1fa2bd223462",
+      "committedToGit": false,
+      "tool": "ИСКУПЛЕНИЕ/nt/tools/sbl_apparatus.py",
+      "card": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
+      "scopeLimits": [
+        "атрибуция изданиям (NA27/WH/Treg/RP/NIV), а не рукописям: א/B/P46 в аппарате нет",
+        "NA = NA27 (1979), не NA28; UBS5 отдельно не представлен",
+        "TR цитируется 5 раз из 6929 позиций и только для целых добавленных стихов (Мф 23:13; Лк 17:35; Деян 8:36; 15:33; 24:6). Молчание аппарата о TR НЕ означает согласия с SBLGNT: в 1 Тим 3:16 все три TR-свидетеля (S2/S3/S4) читают θεὸς, а TR не упомянут. Для TR свидетелями остаются S2/S3/S4",
+        "verify_nt_citations.py аппарат не покрывает: вариантное чтение, отсутствующее в S1, сверку пройти не может по определению"
+      ],
+      "siglaCitationCounts": {
+        "RP": 6930,
+        "NIV": 6929,
+        "Treg": 6929,
+        "WH": 6906,
+        "NA": 235,
+        "Holmes": 57,
+        "WHmarg": 36,
+        "WHspur": 24,
+        "TR": 5,
+        "Tregmarg": 2,
+        "Greeven": 1,
+        "WHapp": 1,
+        "ECM": 1
+      },
+      "textDir": "xml",
+      "locatorScope": "Edition-level TEI entries, not manuscripts. Header labels NA as edition 27 but gives year 1979: CONFLICT, not a bibliographic certificate. NA absence means not cited, never implicit agreement.",
+      "rightsScope": "CC BY 4.0 (SBLGNT перевыпущен под CC BY, репозиторий унаследовал лицензию). Не CC BY-NC (S6) и не CC BY-SA (S5)",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "bytes": 13946029,
+      "sha256OfSortedRelativePaths": "3802902bb11ad85a9535750c7b253ef3cff39cae25b9aef750f3c525db0c38c7",
+      "historicalNaComparison": {
+        "status": "HISTORICAL / SUPERSEDED: string comparison included punctuation/spacing",
+        "unequal": 88,
+        "equal": 147
+      },
+      "naReadingWordProbe": {
+        "citedReadings": 235,
+        "equalWords": 150,
+        "unequalWords": 85,
+        "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."
+      },
+      "headerConflict": "NA witness header says edition 27 and date 1979; inconsistent. Record as source metadata conflict, do not certify edition identity or infer NA agreement from absence."
+    },
+    {
+      "id": "S8",
+      "name": "Tregelles, The Greek New Testament (London 1857–1879), транскрипция Tyndale House Cambridge 2009",
+      "role": "независимый критический текст; им проверяется сам аппарат S7. Аппарата НЕ содержит",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PRIVATE_STUDY_ONLY",
+      "publicationState": "BLOCKED",
+      "repository": "mrgreekgeek/tregelles-greek-nt",
+      "commit": "07ecf2165c9e404926365f5060b8150e0e19af49",
+      "files": 2,
+      "lines": 31891,
+      "sha256OfDataset": "52efbe59b499b9e366c8c90bfa6793c5b72a44f18011a8e8187fa7b1a29b7e32",
+      "committedToGit": false,
+      "transcription": "Tyndale House Cambridge 2009: D. Jongkind, J. Woodson, N. Pfister, R. Crellin; консульт. ред. P. J. Williams",
+      "corroboratesS7": {
+        "Мк 14:24": "ὑπὲρ πολλῶν — сошлось",
+        "Гал 1:4": "περὶ — сошлось",
+        "1 Пет 3:18": "ἀπέθανεν — сошлось",
+        "Ин 3:16": "+ αὐτοῦ — сошлось",
+        "итог": "5 из 5 текстовых контролей; не независимая рукописная колляция",
+        "Евр 2:9": "χάριτι θεοῦ — совпало; S7 не цитирует NA в этом юните"
+      },
+      "note": "Tregelles читает περί в Гал 1:4, но ὑπὲρ в Мк 14:24: предлог у него не системное предпочтение, а решение по каждому месту. Поэтому «традиция читает X» можно утверждать только построчно",
+      "textDir": "verse-per-line",
+      "locatorScope": "Verse-level transcription; no critical apparatus. The scanned original may contain material absent from this transcription.",
+      "rightsScope": "текст XIX века — PD; цифровая транскрипция Tyndale House — CC BY-NC-SA 3.0. В Git не публикуется",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "bytes": 3573217,
+      "sha256OfSortedRelativePaths": "02943384349da89482312f0bd03620d559d368d6baa5f53dff85cd5f2cee407b"
+    },
+    {
+      "id": "S9",
+      "name": "Колляция Марка по рукописям: точки вариации UBS5, свидетели Editio Critica Maior (ред. Joey McCollum, 2025)",
+      "role": "рукописный уровень: сколько свидетелей и какими группами стоят за каждым чтением",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "repository": "jjmccollum/comp-tc-mark",
+      "commit": "013b2f0db69cf577f866c75c82f5a98cbb558dc2",
+      "textDir": "xml",
+      "files": 1,
+      "stats": {
+        "variationUnits": 148,
+        "verses": 119,
+        "witnesses": 284,
+        "witnessKinds": {
+          "noType": 193,
+          "father": 55,
+          "version": 21,
+          "lectionary": 11,
+          "corrector": 4
+        }
+      },
+      "locatorScope": "Only encoded Mark variation units and sigla; absence of a unit is not manuscript agreement. Siglum-to-named-codex identification requires an independent catalogue, not a voting-pattern inference.",
+      "rightsScope": "CC BY 4.0",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "sha256OfDataset": "a9314ab4236e2d1a481e58cf7408542b014a28bfd7cf3439f414df5711d1159c",
+      "bytes": 541165,
+      "committedToGit": false,
+      "unmappedReadingTokenReceipts": {
+        "ecm_mark": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 24,
+          "sha256OfSortedNewlineSeparatedTokens": "adca6c92cb1de7c4123e41322bf3d14792f377bf7bd72db612fa1928a74e9cd6",
+          "examples": [
+            "2193-1",
+            "2193-2",
+            "979-1",
+            "979-2",
+            "CPA:C-1"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        }
+      },
+      "sha256OfSortedRelativePaths": "0d9ae9dcbd9dd2c9d358d6a17a0c205466123bf2243caf6846a2a1bb322cb865",
+      "rightsBasis": "Pinned LICENSE blob 2f244ac814036ecd9ba9f69782e89ce6b1dca9eb and TEI publicationStmt explicitly CC BY 4.0. Digital collation, not a complete UBS5/ECM edition."
+    },
+    {
+      "id": "S10",
+      "name": "Пять колляций по рукописям: Деяния (ECM), Марк / Ефесянам / 1 Петра / Откровение (UBS5), ред. Joey McCollum, 2023",
+      "role": "то же, что S9, ещё по четырём книгам; Марк здесь — более ранняя и менее полная версия, оставлена как перекрёстная проверка S9",
+      "evidenceClass": "A1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "BLOCKED",
+      "repository": "jjmccollum/sbl-2023-talk",
+      "commit": "4ada2a729cc3e36ab29d101fe924e435d0a8bd54",
+      "textDir": "xml",
+      "files": 5,
+      "stats": {
+        "ecm_acts": {
+          "variationUnits": 9554,
+          "verses": 1006,
+          "witnesses": 600,
+          "witnessKinds": {
+            "corrector": 232,
+            "minuscule": 127,
+            "father": 124,
+            "version": 56,
+            "majuscule": 33,
+            "papyrus": 15,
+            "lectionary": 13
+          },
+          "historicalRegexVariationUnits": 9555
+        },
+        "ecm_mark": {
+          "variationUnits": 147,
+          "verses": 118,
+          "witnesses": 167,
+          "historicalRegexVariationUnits": 148,
+          "eligibleUnits": 146,
+          "eligibleVerses": 117
+        },
+        "ubs_ephesians": {
+          "variationUnits": 42,
+          "verses": 32,
+          "witnesses": 36,
+          "historicalRegexVariationUnits": 42
+        },
+        "ubs_1_peter": {
+          "variationUnits": 36,
+          "verses": 25,
+          "witnesses": 64,
+          "historicalRegexVariationUnits": 36
+        },
+        "ubs_revelation": {
+          "variationUnits": 70,
+          "verses": 64,
+          "witnesses": 33,
+          "historicalRegexVariationUnits": 70
+        }
+      },
+      "locatorScope": "Only encoded variation units in five files; Mark overlaps S9. Neither book coverage nor unit absence clears LOCATOR_HOLD for every question in those books.",
+      "rightsScope": "CC BY 4.0",
+      "holds": [
+        "PUBLICATION_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "historicalOperationalStates": {
+        "status": "HISTORICAL / SUPERSEDED BY 2026-10-12 AUDIT",
+        "note": "Pre-audit non-canonical state strings preserved in Git history (pre-audit SSOT); operative canonical fields are above."
+      },
+      "sha256OfDataset": "5758c2bdcd837bcde92b7c1af250d23f50bf72f6769cd914b9788a9866c433a0",
+      "bytes": 11250177,
+      "committedToGit": false,
+      "unmappedReadingTokenReceipts": {
+        "ecm_acts": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 1659,
+          "sha256OfSortedNewlineSeparatedTokens": "e265a82917ce816f0528f2479bc887921f273393f73db014b02eea7b81e82f0e",
+          "examples": [
+            "*",
+            "01*",
+            "01*V",
+            "01*f",
+            "01*f1"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        },
+        "ecm_mark": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 35,
+          "sha256OfSortedNewlineSeparatedTokens": "80828b211dc369fd29d1ea3974ecbccf2940e55363034ac7e7aabfee9cc203bd",
+          "examples": [
+            "0103",
+            "0104",
+            "011s",
+            "0130",
+            "0131"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        },
+        "ubs_1_peter": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 74,
+          "sha256OfSortedNewlineSeparatedTokens": "d5c4d2311860659329a0bd0a6ee857d03b4ace40decb9f1c35fd3da5da27ff64",
+          "examples": [
+            "01*",
+            "01C2",
+            "02*",
+            "02C",
+            "04*"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        },
+        "ubs_ephesians": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 25,
+          "sha256OfSortedNewlineSeparatedTokens": "dbfe20816d23257e0b08031396808dafcb638488df476aea504e74ee4f6297ef",
+          "examples": [
+            "01*",
+            "010*",
+            "010C",
+            "01C1",
+            "01C2"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        },
+        "ubs_revelation": {
+          "status": "UNRESOLVED / LOCATOR_HOLD",
+          "count": 67,
+          "sha256OfSortedNewlineSeparatedTokens": "e9582b200951f01b84446f2fd064aac7942745cf753efe8a6f63b5e4feed1070",
+          "examples": [
+            "01*",
+            "01C",
+            "0207",
+            "0229",
+            "046*"
+          ],
+          "scope": "Reading tokens not identical to declared witness n= values. Qualifiers/aliases/hands not mapped; counts are literal tokens, not independent manuscripts or votes."
+        }
+      },
+      "historicalRegexWitnessCounts": {
+        "status": "HISTORICAL / SUPERSEDED: counted XML comments as active witnesses",
+        "values": {
+          "ecm_acts": 600,
+          "ecm_mark": 203,
+          "ubs_ephesians": 37,
+          "ubs_1_peter": 114,
+          "ubs_revelation": 86
+        },
+        "note": "Also one commented-out Acts app: 9554 active units, not 9555."
+      },
+      "quarantinedUnits": {
+        "ecm_mark": {
+          "ids": [
+            "B02K28V8U2-20"
+          ],
+          "status": "CONFLICT / LOCATOR_HOLD",
+          "reason": "Mark has no chapter 28. Unit only says omit/include verse and cannot safely be relocated. Preserve in active-row census but exclude from Mark lookup, scan and book verification."
+        }
+      },
+      "sha256OfSortedRelativePaths": "3fbe5f65923aee99ac7bd516b1ab0507c511ed175c4c04328812e0bc382e67e1"
+    }
+  ],
+  "lexicalFields": [
+    {
+      "id": "L1",
+      "card": "ИСКУПЛЕНИЕ/nt/01_NT_LEXICAL_FIELD_REDEMPTION.md",
+      "field": "λυτρόω / λύτρον / ἀντίλυτρον / ἀπολύτρωσις / λυτρωτής / ἀγοράζω / ἐξαγοράζω",
+      "axisPrimary": "nature",
+      "axisSecondary": "extent",
+      "computedCounts": {
+        "λυτρόομαι": 3,
+        "λύτρον": 2,
+        "ἀντίλυτρον": 1,
+        "λύτρωσις": 3,
+        "ἀπολύτρωσις": 10,
+        "λυτρωτής": 1,
+        "ἀγοράζω": 30,
+        "ἐξαγοράζω": 4
+      }
+    },
+    {
+      "id": "L2",
+      "card": "ИСКУПЛЕНИЕ/nt/02_NT_LEXICAL_FIELD_PROPITIATION_RECONCILIATION.md",
+      "field": "ἱλάσκομαι / ἱλασμός / ἱλαστήριον / καταλλάσσω / καταλλαγή / ἀποκαταλλάσσω",
+      "axisPrimary": "nature",
+      "axisSecondary": "application",
+      "computedCounts": {
+        "ἱλάσκομαι": 2,
+        "ἱλασμός": 2,
+        "ἱλαστήριον": 2,
+        "καταλλάσσω": 6,
+        "καταλλαγή": 4,
+        "ἀποκαταλλάσσω": 3
+      }
+    },
+    {
+      "id": "L3",
+      "card": "ИСКУПЛЕНИЕ/nt/03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md",
+      "field": "αἷμα and the prepositional formulas ὑπέρ / ἀντί / περί",
+      "axisPrimary": "nature",
+      "axisSecondary": "extent",
+      "computedCounts": {
+        "αἷμα": 97,
+        "ὑπέρ-tokens": 149,
+        "ἀντί-tokens": 22,
+        "ἀντί-governing-genitive": 22,
+        "ἀντί-genitive-atonement-loci": [
+          "Mt 20:28",
+          "Mk 10:45"
+        ],
+        "περί-tokens": 332,
+        "περί-genitive-of-hamartia": 14,
+        "ὑπέρ-lemma": 150,
+        "ὑπέρ-prepositional-P-": 149,
+        "ὑπέρ-adverbial-D-2Co11:23": 1,
+        "ὑπέρ-genitive-death/giving/offering-clauses": 48,
+        "ἀντί-genitive": 22,
+        "ἀντί-accusative": 0,
+        "ἀντί-adverbial": 0,
+        "ὑπέρ": 150,
+        "ἀντί": 22,
+        "περί": 332
+      },
+      "countingScope": "Preposition counts are lemmas/P- tokens. Case probe is first inflected form including articles within the same verse, not a dependency parse. The 48 filter counts verse co-occurrence with VERBS in verify_nt_facts.py, not 48 independent atonement clauses."
+    },
+    {
+      "id": "L4",
+      "card": "ИСКУПЛЕНИЕ/nt/04_NT_LEXICAL_FIELD_QUANTIFIERS.md",
+      "field": "πολλοί / πᾶς / πάντες / ὅλος / κόσμος and the article",
+      "axisPrimary": "extent",
+      "axisSecondary": "offer",
+      "computedCounts": {
+        "πολύς": 415,
+        "πολύς-plural-forms": 267,
+        "πολύς-plural-with-preceding-article": 25,
+        "πᾶς": 1244,
+        "κόσμος": 185,
+        "κόσμος-in-John-gospel": 78,
+        "κόσμος-in-1John": 23,
+        "ὅλος": 108,
+        "πᾶς-πάντες-NPM": 175,
+        "πᾶς-with-ἄνθρωπος-verses": 71,
+        "κόσμος-with-ὅλος-or-πᾶς-verses": 31,
+        "πᾶς-πάντες-surface-form": 178,
+        "πᾶς-πάντες-VPM": 3
+      },
+      "countingScope": "NPM is the exact ccat tag; κόσμος-with-ὅλος-or-πᾶς counts unique verses containing both lemmas, not occurrences."
+    },
+    {
+      "id": "L5",
+      "card": "ИСКУПЛЕНИЕ/nt/05_NT_LEXICAL_FIELD_EKKLESIA_AND_OWN.md",
+      "field": "ἐκκλησία / ἴδιος / πρόβατα / λαός and the possessive formulas",
+      "axisPrimary": "extent",
+      "axisSecondary": "application",
+      "computedCounts": {
+        "ἐκκλησία": 114,
+        "περιποιέομαι": 3,
+        "δεσπότης": 10,
+        "κύριος": 713,
+        "περιποίησις": 5,
+        "ἴδιος": 114
+      }
+    },
+    {
+      "id": "L6",
+      "card": "ИСКУПЛЕНИЕ/nt/10_NT_OFFER_AXIS_CARDS.md",
+      "field": "καλέω / κλητός / ἐκλεκτός / θέλω / ἀπωθέομαι / δεῦτε / δεῦρο / παραγγέλλω / κηρύσσω / εὐαγγελίζω",
+      "axisPrimary": "offer",
+      "axisSecondary": "application",
+      "computedCounts": {
+        "καλέω": 148,
+        "κλητός": 10,
+        "ἐκλεκτός": 23,
+        "θέλω": 208,
+        "ἀπωθέομαι": 6,
+        "δεῦτε": 12,
+        "δεῦρο": 9,
+        "παραγγέλλω": 32,
+        "κηρύσσω": 61,
+        "εὐαγγελίζω": 54
+      },
+      "countingRule": "точное равенство леммы, как считает verify_nt_citations.py; сложные глаголы (παρακαλέω 109, ἐπικαλέω 30 и т.д.) не входят"
+    }
+  ],
+  "pericopeCards": [
+    {
+      "file": "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+      "group": "synoptics-and-john",
+      "cards": 17
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md",
+      "group": "acts-and-paul",
+      "cards": 30
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+      "group": "hebrews-catholics-apocalypse",
+      "cards": 34
+    },
+    {
+      "file": "ИСКУПЛЕНИЕ/nt/10_NT_OFFER_AXIS_CARDS.md",
+      "group": "offer-axis",
+      "cards": 9,
+      "extraSections": [
+        "10.0 поле",
+        "10.10 поле κλητός",
+        "10.11 синтез",
+        "10.12 сводка сверки"
+      ],
+      "whyAdded": "04_…QUESTION_MAP.md §8.6 фиксировал, что ось offer не разработана — единственный открытый пункт контрольного набора §4."
+    }
+  ],
+  "threeColumnTable": "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+  "verifiedTextualNotes": [
+    {
+      "ref": "Heb 2:9",
+      "S1reading": "χωρὶς θεοῦ",
+      "TRreadings": {
+        "S2": "χάριτι θεοῦ",
+        "S3": "χάριτι θεοῦ",
+        "S4": "χάριτι θεοῦ"
+      },
+      "sblApparatusSiglumPresent": true,
+      "note": "Textual variant sits directly on an extent-HARD locus. Cards quote S1 and mark the variant; no argument is built silently on either side.",
+      "locatorState": "verse-level, two text traditions compared"
+    },
+    {
+      "ref": "Acts 20:28",
+      "S1reading": "τὴν ἐκκλησίαν τοῦ θεοῦ ἣν περιεποιήσατο διὰ τοῦ αἵματος τοῦ ἰδίου",
+      "TRreadings": {
+        "S2": "τὴν ἐκκλησίαν τοῦ θεοῦ ... διὰ τοῦ ἰδίου αἵματος",
+        "S3": "identical to S2",
+        "S4": "identical to S2"
+      },
+      "sblApparatusSiglumPresent": true,
+      "note": "SBL marks a siglum on θεοῦ and a word-order siglum on αἵματος τοῦ ἰδίου. All three TR witnesses read θεοῦ and τοῦ ἰδίου αἵματος; the difference from S1 here is word order, not θεοῦ vs κυρίου. The rival reading κυρίου is NOT verified in this wave.",
+      "locatorState": "verse-level; apparatus not acquired (LOCATOR_HOLD)"
+    },
+    {
+      "ref": "John 12:32",
+      "S1reading": "πάντας ἑλκύσω",
+      "TRreadings": {
+        "S2": "πάντας",
+        "S3": "πάντας",
+        "S4": "πάντας"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "No SBL apparatus siglum on πάντας in S1; all three TR witnesses agree with πάντας. The commonly cited πάντά reading is not attested in any witness held here.",
+      "locatorState": "verse-level"
+    },
+    {
+      "ref": "1 Tim 3:16",
+      "S1reading": "Ὃς ἐφανερώθη ἐν σαρκί",
+      "TRreadings": {
+        "S2": "θεὸς ἐφανερώθη ἐν σαρκί",
+        "S3": "θεὸς",
+        "S4": "θεὸς"
+      },
+      "sblApparatusSiglumPresent": true,
+      "note": "Recorded for completeness; not an extent locus.",
+      "locatorState": "verse-level"
+    },
+    {
+      "ref": "2 Pet 2:1",
+      "S1reading": "τὸν ἀγοράσαντα αὐτοὺς δεσπότην ἀρνούμενοι",
+      "TRreadings": {
+        "S2": "identical wording",
+        "S3": "identical wording",
+        "S4": "identical wording"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "No textual escape from the purchase wording: all four witnesses have ἀγοράσαντα + δεσπότην about the false teachers.",
+      "locatorState": "verse-level"
+    },
+    {
+      "ref": "1 John 2:2",
+      "S1reading": "περὶ ὅλου τοῦ κόσμου",
+      "TRreadings": {
+        "S2": "περὶ ὅλου τοῦ κόσμου",
+        "S3": "identical",
+        "S4": "identical"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "No textual variant on the extent phrase; the dispute is exegetical, not textual.",
+      "locatorState": "verse-level"
+    },
+    {
+      "ref": "Mark 14:24",
+      "S1reading": "τὸ ἐκχυννόμενον ὑπὲρ πολλῶν",
+      "sblApparatusSiglumPresent": true,
+      "note": "SBL carries a siglum over ἐκχυννόμενον ... πολλῶν (word-order / omission class). Mt 26:28 carries sigla on μου and τῆς; Lk 22:19-20 carries a siglum on καί (the well-known longer/shorter text). Cards note these and build on S1.",
+      "locatorState": "verse-level; apparatus not acquired (LOCATOR_HOLD)"
+    },
+    {
+      "ref": "Acts 17:30",
+      "S1reading": "πάντας (acc.)",
+      "TRreadings": {
+        "S2": "pasin",
+        "S3": "pasin",
+        "S4": "pasin"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Содержательное расхождение на offer-локусе: S1 πάντας как подлежащее инфинитива; все три TR πᾶσιν, согласованное с τοῖς ἀνθρώποις. Оба чтения дают всеобщий охват повеления, но разным грамматическим путём. Без аппарата выбор не делается.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Luke 14:17",
+      "S1reading": "ἕτοιμά ἐστιν",
+      "TRreadings": {
+        "S2": "etoima estin panta",
+        "S3": "etoima estin panta",
+        "S4": "etoima estin panta"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "TR добавляет panta (ἕτοιμά ἐστιν πάντα). Содержательное добавление к готовности пира; в S1 отсутствует.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Matt 23:37",
+      "S1reading": "ὄρνις ἐπισυνάγει τὰ νοσσία αὐτῆς",
+      "TRreadings": {
+        "S2": "episunagei orniv … eauthv",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Два расхождения: порядок слов (ὄρνις ἐπισυνάγει против ἐπισυνάγει ὄρνις) и форма αὐτῆς против возвратного ἑαυτῆς. Ни объёма, ни смысла предложения не меняет.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Rev 22:17",
+      "S1reading": "Ἔρχου … ἐρχέσθω ὁ θέλων λαβέτω ὕδωρ",
+      "TRreadings": {
+        "S2": "elye … elyetw kai o yelwn lambanetw to udwr",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Пять расхождений на уровне слов (ἔρχου/ἐλθέ дважды, ἐρχέσθω/ἐλθέτω, λαβέτω/λαμβάνετω, добавления καί и τοῦ). Условие получения и безвозмездность не меняются.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Acts 13:46",
+      "S1reading": "παρρησιασάμενοί τε … εἶπαν … ἐπειδὴ ἀπωθεῖσθε",
+      "TRreadings": {
+        "S2": "parrhsiasamenoi de … eipon … epeidh de apwyeisye",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Три расхождения: τε/δέ, εἶπαν/εἶπον, TR добавляет δέ перед ἀπωθεῖσθε. Ни объёма предложения, ни роли отказа не меняет.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Matt 22:9",
+      "S1reading": "ὅσους ἐὰν εὕρητε",
+      "TRreadings": {
+        "S2": "osouv an eurhte",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "ἐάν против ἄν — служебное расхождение, на смысл зова не влияет.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    },
+    {
+      "ref": "Luke 14:23",
+      "S1reading": "ἵνα γεμισθῇ μου ὁ οἶκος",
+      "TRreadings": {
+        "S2": "ina gemisyh o oikov mou",
+        "S3": "то же",
+        "S4": "то же"
+      },
+      "sblApparatusSiglumPresent": false,
+      "note": "Только порядок слов: μου перед и после ὁ οἶκος.",
+      "locatorState": "verse-level, two text traditions compared",
+      "trTransliterationOnly": true,
+      "trNote": "S2/S3/S4 получены в ASCII-транслитерации без диакритики; сравнение на уровне слов, различие акцентов не детектируется."
+    }
+  ],
+  "holds": [
+    "EVIDENCE_HOLD",
+    "LOCATOR_HOLD",
+    "RIGHTS_HOLD",
+    "ARCHIVE_HOLD",
+    "PUBLICATION_HOLD"
+  ],
+  "baselineValidators": {
+    "date": "2026-10-07",
+    "head": "eee46241208c04e8f7aea792681c18fbd674c2c5",
+    "scripts/validate_research_root_authority.py": "PASS",
+    "scripts/validate_repository_authority_integrity.py": "PASS (without PRODUCT_REPO; reduced local path)",
+    "scripts/validate_genesis6_authority_manifest.py": "FAIL: authorityBaseCommit unavailable b654c5375a7b212ff9b42c08bb0193eeaad70746",
+    "genesis6FailureExpected": true,
+    "genesis6FailureCause": "shallow clone (.git/shallow present, is-shallow-repository=true)",
+    "manifestNotModified": true
+  },
+  "doNot": [
+    "claim-limited-atonement-proved",
+    "claim-universal-atonement-proved",
+    "say-pas-always-means",
+    "say-kosmos-always-means",
+    "say-polloi-equals",
+    "pass-off-frequency-count-as-exegesis",
+    "mix-extent-nature-application-offer-axes",
+    "attribute-authorial-intent-without-textual-ground",
+    "build-silently-on-a-variant-reading",
+    "commit-the-greek-corpora-into-git",
+    "pirate-copyrighted-pdfs",
+    "start-series-with-TULIP",
+    "implement-product-html-this-wave",
+    "change-research-root-authority"
+  ],
+  "offerAxisFindings": {
+    "lociChecked": 14,
+    "lociWithAtonementVocabulary": 0,
+    "atonementLexemesChecked": [
+      "αἷμα",
+      "λυτρ-",
+      "ἀγοράζω",
+      "ἱλάσκομαι",
+      "ἱλασμός",
+      "ἱλαστήριον",
+      "καταλλάσσω",
+      "καταλλαγή",
+      "ἀπολύτρωσις",
+      "λύτρον"
+    ],
+    "identicalToAllThreeTR": 7,
+    "substantiveDivergences": [
+      "Acts 17:30 (πάντας / πᾶσιν)",
+      "Luke 14:17 (TR добавляет πάντα)"
+    ],
+    "conclusion": "Ось предложения лексически отделена от оси объёма: ни один offer-локус не содержит искупительного словаря. Всеобщность приглашения не есть всеобщность приобретения — разные оси. Вердикта нет.",
+    "identicalLoci": [
+      "Мф 11:28",
+      "Мф 22:3",
+      "Мф 22:14",
+      "Лк 13:34",
+      "Лк 14:24",
+      "Ин 5:40",
+      "Ин 7:37"
+    ]
+  },
+  "lxxCollation": {
+    "card": "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md",
+    "collatedLinks": 14,
+    "conclusion": "Selected digital-text comparisons and positive inflected forms refine the background; no extent verdict or exhaustive LXX lemma/semantic counts.",
+    "mtCollation": {
+      "card": "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md#1110-свидетель-s6--еврейский-mt-bhs-и-что-он-изменил",
+      "tool": "ИСКУПЛЕНИЕ/nt/tools/mt_lxx_collation.py",
+      "pairs": 48,
+      "textAccesses": 96,
+      "correctedCounts": {
+        "ἱλαστήριον (LXX, основа ἱλαστηρι-)": "28 словоформ в 21 стихе; раньше стояло 14 — число одной флексии",
+        "כַּפֹּרֶת (MT)": "27 словоформ в 22 стихах",
+        "λύτρωσις (LXX)": "prefix λυτρωσι- = 10; not a complete lemma count (genitive stem differs)",
+        "λυτρόω (LXX, по вхождению)": "infix probe λυτρο- = 20; not complete lemma/POS annotation",
+        "ἀγορα- (LXX)": "prefix 35 / infix 39 family tokens, including nouns and augmented forms"
+      },
+      "keyFindings": [
+        "λύτρον-семейство LXX передаёт три разных еврейских корня: כפר (Исх 21:30), פדה (Пс 111:9), גאל (Ис 52:3). Обратный ход «λύτρον в Мк 10:45 = כפר» из лексики не следует",
+        "соответствие ἱλαστήριον ↔ כַּפֹּרֶת не один-в-один: 21 стих LXX против 22 MT, расхождение в обе стороны",
+        "Амос 9:1 — LXX даёт ἱλαστήριον там, где в MT כַּפְתּוֹר (21 вхождение в MT)",
+        "1 Пар 28:11 — MT כַּפֹּרֶת, LXX τοῦ ἐξιλασμοῦ, не ἱλαστήριον",
+        "нумерация LXX в Исх 25 на единицу ниже MT (проверено на 8 стихах); MT Исх 37 = LXX Исх 38",
+        "Isaiah 53 has three רב tokens, with contracted articles before two (53:11 and first 53:12); lex_utf8 ה + sp art remain separate empty-surface TF slots. Greek forms lack the article.",
+        "Ис 43:4 — LXX передаёт תַּחַת через ὑπέρ (ἀνθρώπους πολλοὺς ὑπὲρ σοῦ): свидетельство к карточке 03",
+        "Втор 27:26 — πᾶς ἄνθρωπος ЕСТЬ в LXX, его нет в MT, его опускает Гал 3:10"
+      ],
+      "conclusion": "MT-сверка сделала фон проверяемым по обоим текстам. Ни один из пунктов не определяет объём искупления; EVIDENCE_HOLD не снят.",
+      "readablePairs": 47,
+      "historicalFalseArticleFinding": {
+        "status": "HISTORICAL / SUPERSEDED: contracted article has empty TF surface form",
+        "value": "רַבִּים в Ис 53 трижды и без артикля — подтверждено по MT (53:11; 53:12 дважды)"
+      }
+    },
+    "expectedMissingLxxVerses": [
+      [
+        "Exodus 39:35",
+        "Exodus 39:35"
+      ]
+    ],
+    "expectedNegativeLxxWords": [
+      [
+        "Exodus 26:34",
+        "Exodus 26:34",
+        "ἱλαστηρ"
+      ],
+      [
+        "Exodus 30:6",
+        "Exodus 30:6",
+        "ἱλαστηρ"
+      ],
+      [
+        "Exodus 37:7",
+        "Exodus 38:6",
+        "ἱλαστηρ"
+      ],
+      [
+        "Exodus 40:20",
+        "Exodus 40:20",
+        "ἱλαστηρ"
+      ],
+      [
+        "Ruth 4:4",
+        "Ruth 4:4",
+        "λυτρ"
+      ]
+    ],
+    "historicalFalseLemmaZeros": {
+      "status": "HISTORICAL / SUPERSEDED: prefixes confused with inflected lemmas",
+      "ἱλάσκομαι": 0,
+      "καταλλάσσω": 0,
+      "ἀπολύτρωσις": 0,
+      "καταλλαγή-noun": 4,
+      "ἐξιλάσκομαι-verb": 121,
+      "ἀγοράζω-redemptive-semantic-count": 0
+    },
+    "countingBoundary": "S5 has no lemma/POS annotation. Prefix/infix counts are probes; explicit inflected simplex forms and apolytroseos refute old lemma zeros. Other lemma/semantic totals remain unclaimed.",
+    "historicalNegativeResults": {
+      "status": "HISTORICAL / SUPERSEDED: prefix/POS mistakes, not lemma zeros",
+      "values": {
+        "ἀπολύτρωσις": {
+          "LXX": 0,
+          "NT": 10
+        },
+        "ἀντίλυτρον": {
+          "LXX": 0,
+          "NT": 1
+        },
+        "καταλλάσσω": {
+          "LXX": 0,
+          "NT": 6
+        },
+        "ἱλάσκομαι": {
+          "LXX": 0,
+          "NT": 2
+        },
+        "ἀγοράζω искупительно": {
+          "LXX": 0,
+          "NT": 6
+        },
+        "ἐξιλασκ- (для контраста)": {
+          "LXX": 121,
+          "NT": 0
+        }
+      }
+    }
+  },
+  "holdsScopeNote": {
+    "MT_HOLD": "СУЖЕН 2026-10-12, не снят. Текст MT (S6, BHS) получен и по нему исполняются утверждения вида «LXX передаёт כַּפֹּרֶת». Остаётся аппарат разночтений BHS: издание критическое, а не дипломатическая рукопись Ленинградского кодекса. Это еврейская сторона LOCATOR_HOLD.",
+    "LXX_HOLD": "снят по гречесеской стороне 2026-10-08 (S5); аппарат Суэта не получен",
+    "LOCATOR_HOLD": "СУЖЕН 2026-10-12, не снят. Получен S7 — аппарат SBLGNT (6929 записей, 13 свидетелей): варианты перечисляются и атрибутируются изданиям NA27/WH/Treg/RP/NIV. Остаются рукописный уровень (א/B/P46 в аппарате нет) и NA28/UBS5, которых бриф требует по имени. Подробности и границы — nt/12_NT_TEXTUAL_APPARATUS.md."
+  },
+  "apparatusFindings": [
+    "Мк 10:45, Мф 20:28, 1 Тим 2:6, 1 Ин 2:2, Евр 9:12 — ни одной записи <app>: спор об объёме не является спором о тексте",
+    "Евр 2:9 — не «критический текст против византийского»: χάριτι читают WH, Тregеллс, NIV-ридер и RP; χωρὶς — SBLGNT и NA27",
+    "Деян 20:28 — чтение κυρίου засвидетельствовано у Тregеллса (κυρίου) и RP (κυρίου καὶ θεοῦ), но НЕ в TR: все три TR-издания читают θεοῦ",
+    "Ин 12:32 — πάντας не оспаривается; единственная запись о ἐὰν/ἂν",
+    "NA цитируется 235 раз, из них 88 — реальное расхождение с SBLGNT; ни одного в объёмо-критичных локусах",
+    "ни один вариант не меняет объёма искупления: χωρὶς/χάριτι — о том, по чему Христос вкусил смерть; Ὃς/θεὸς — христология"
+  ],
+  "apparatusSweep": {
+    "tool": "ИСКУПЛЕНИЕ/nt/tools/pericope_apparatus_sweep.py",
+    "versesWithApparatus": 89,
+    "appRecordsOnPericopes": 139,
+    "crossCheck": "S1 and S7 record an apparatus marker/entry at the same 89 selected verse locators. They share SBLGNT ancestry; not independent manuscript evidence. Absence is only absence in this selective apparatus.",
+    "findings": [
+      "квантификаторы (πολλῶν/κόσμου/πάντας/πάντες) не оспариваются ни в одном из 165 вариантов: спор об объёме текстовой критикой не решается ни в ту, ни в другую сторону",
+      "предлоги оспариваются: Мк 14:24 — SBLGNT/NA27/WH/Treg ὑπὲρ πολλῶν, а RP и все три TR-издания (S2/S3/S4) читают περί; контраст «Мф 26:28 περί против Мк 14:24 ὑπέρ» зависит от издания",
+      "Гал 1:4 — наоборот: TR читает ὑπέρ, а περί дают Тregеллс и RP. Значит RP ≠ TR, византийская форма Робинсона—Пирпонта не тождественна напечатанным TR",
+      "адресат оспаривается: Откр 5:9 — TR/RP/Treg добавляют ἡμᾶς; Ин 3:16 — Treg/RP добавляют αὐτοῦ; Ин 6:51 — RP добавляет ἣν ἐγὼ δώσω. Все уточняют кому/что, а не за скольких",
+      "1 Пет 3:18 — ἔπαθεν (NA27, RP, все TR) против ἀπέθανεν (WH, Treg, NIV): природа страдания, не круг искупленных",
+      "Кол 1:20 — единственное место в перикопах брифа, где SBLGNT держит δι᾽ αὐτοῦ в квадратных скобках: WH/NA27/RP держат, Тregеллс и NIV-ридер опускают"
+    ],
+    "historicalCensus": {
+      "status": "HISTORICAL / SUPERSEDED: list-to-range bug and dropped chapter references",
+      "verses": 195,
+      "withApp": 105,
+      "records": 165,
+      "withoutApp": 90
+    },
+    "versesInCardHeadings": 174,
+    "versesWithoutEncodedApp": 85,
+    "percentWithoutEncodedApp": 48.9,
+    "s1OnlySigla": [],
+    "s7OnlyApp": []
+  },
+  "historicalControls": [
+    {
+      "id": "S15",
+      "name": "Canons of Dort Head II: curated English 1840 record in parent corpus",
+      "card": "ИСКУПЛЕНИЕ/nt/13_DORT_HISTORICAL_CONTROL.md",
+      "evidenceClass": "A3",
+      "evidenceScope": "Own institutional statements of the synod, not first-order Greek biblical exegesis",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "locatorScope": "Articles III/V/VI/VIII in the local record; not a visually checked printed page or a newly acquired complete original",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "rightsScope": "Only the English 1840 excerpt accepted in parent corpus provenance; not CRC 1986, Covenant HTML or ESV",
+      "publicationState": "BLOCKED",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD",
+        "PUBLICATION_HOLD"
+      ],
+      "localRecord": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+      "sha256OfLocalRecord": "2e737a340751ecf3247fd302267c0c2b7bb97c4c987f6421b9cafd37e85044be",
+      "verifiedExcerpts": {
+        "III": "abundantly sufficient to expiate the sins of the whole world",
+        "V": "to all nations, and to all persons promiscuously and without distinction",
+        "VI": "not owing to any defect or insufficiency in the sacrifice offered by Christ upon the cross",
+        "VIII": "all those, and those only, who were from eternity chosen to salvation, and given to him by the Father"
+      },
+      "finding": "Dort distinguishes sufficiency, publication, unbelief and effectual redemption; agreement in categories is not independent validation of NT exegesis.",
+      "OPC": "Parent registry M24 already has partial majority/minority reading; not independently reacquired or promoted here.",
+      "historicalClaims": {
+        "status": "HISTORICAL / SUPERSEDED / UNVERIFIED",
+        "dateClaim": "2026-10-13 (future relative to audit 2026-10-12)",
+        "claim": "Covenant London read; three independent publications and PD received translation verified",
+        "operativeLeadStates": {
+          "evidenceClass": "C",
+          "accessState": "LINK_ONLY",
+          "locatorState": "LOCATOR_MISSING",
+          "rightsState": "RIGHTS_UNKNOWN",
+          "publicationState": "BLOCKED"
+        },
+        "oldRecord": {
+          "id": "S15",
+          "name": "Каноны Дорта (1619), Вторая глава — received English translation",
+          "evidenceClass": "B1 — вторичный исторический документ, не экзегеза",
+          "locatorState": "secondary-only: PD-статус подтверждён только вторичными публикациями",
+          "card": "ИСКУПЛЕНИЕ/nt/13_DORT_HISTORICAL_CONTROL.md",
+          "finding": "структура II.3 достаточность / II.5 опубликование / II.6 отказ / II.8 действенность совпала с тем, что nt/10_ вывел независимо из греческого; Rejection II.5 отвергает всеобщее примирение, удерживая всеобщее опубликование — та же форма, что в 04_ §8.3",
+          "notObtained": "перевод CRC 1986 не использован (современный, под правами); OPC 1948 (Мюррей) по-прежнему не получен — XX век под правами"
+        }
+      }
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "repo": "JLCPutmans/New-Testament-Transcriptions-INTF",
+      "reason": "нет ни LICENSE, ни README — нет основания для rightsState; транскрипции INTF не использованы"
+    },
+    {
+      "repo": "JLCPutmans/New-Testament-Transcriptions-IGNTP",
+      "reason": "то же: нет лицензии"
+    },
+    {
+      "repo": "ETCBC/bhsa (полная версия)",
+      "reason": "1,6 ГБ против 12 МБ у bhsa-min; данные те же, лицензия та же CC BY-NC 4.0"
+    },
+    {
+      "repo": "eliranwong/LXX-Rahlfs-1935",
+      "reason": "нет лицензии; Rahlfs 1935 вероятно ещё под правами"
+    },
+    {
+      "repo": "nam8/sigla-lookup (Siglarium, CC BY 4.0)",
+      "reason": "лицензия годная, но это словарь сигл NA28/Göttingen/BHS, а не аппарат; без самого аппарата NA28 ценности для LOCATOR_HOLD не даёт — оставлен как LEAD"
+    },
+    {
+      "name": "eliranwong/OpenGNT",
+      "what": "«Open Greek New Testament Project; NA28 / NA27 Equivalent Text & Resources»",
+      "whyRejected": "LICENSE в репозитории нет (lic=null), README прав не устанавливает. Сам текст NA28 принадлежит Deutsche Bibelgesellschaft и под правами, поэтому репозиторий без лицензии — не основание для rightsState. По §5 брифа такой источник не годится: bibliographic record and URL reachability do not lift any HOLD",
+      "checkedOn": "2026-10-12, gh api search/repositories?q=NA28+greek"
+    },
+    {
+      "name": "davidhansonc/ftta_nt_greek_study_tool",
+      "what": "учебный инструмент вокруг текста Nestle-Aland, MIT",
+      "whyRejected": "MIT покрывает код инструмента, а не текст NA28; текст остаётся под правами. Не закрывает «NA28/UBS5 по имени»",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "name": "morphgnt/tischendorf",
+      "what": "Tischendorf 8th GNT с морфологией и лемматизацией",
+      "whyRejected": "НЕ отклонён, а оставлен как LEAD: это ещё один независимый критический текст XIX века (основа Westcott—Hort), но ни одного HOLD он не закрывает — NA28 это не он, и аппарата в нём нет. Права в репозитории не заявлены (lic=null), поэтому до выяснения не загружен",
+      "checkedOn": "2026-10-12"
+    }
+  ],
+  "manuscriptCollation": {
+    "tool": "tools/manuscript_collation.py",
+    "totalVariationUnits": 9997,
+    "booksCovered": [
+      "Мк",
+      "Деян",
+      "Еф",
+      "1 Пет",
+      "Откр"
+    ],
+    "booksNotCovered": [
+      "остальные 22 книги НЗ — по ним LOCATOR_HOLD остаётся в полной силе"
+    ],
+    "bookCodeVerification": {
+      "method": "код книги в файлах нестандартный (B26 = Откровение, не Иуд), поэтому книга определяется по длинным словоформам юнитов против текста S1, а не по таблице",
+      "leaders": {
+        "Мк": 104,
+        "Деян": 83,
+        "Еф": 37,
+        "1 Пет": 31,
+        "Откр": 57,
+        "S10b": 100
+      },
+      "runnerUp": {
+        "Мк": "Ин 4",
+        "Деян": "1 Пет 2",
+        "Еф": "Рим 1",
+        "1 Пет": "2 Кор 1",
+        "Откр": "Деян 1"
+      },
+      "scope": "first at most 120 eligible units per file, normalized long-word matching to S1 at each locator; quarantine excluded, not identity certification of every raw unit."
+    },
+    "readingOrderCheck": {
+      "note": "в колляции Деяний нет <lem>, исходный текст не помечен; статус Ausgangstext чтению «a» НЕ приписан",
+      "rdgA_matches_S1": {
+        "S9": "108/128",
+        "S10a": "312/334",
+        "S10b": "107/126",
+        "S10c": "29/37",
+        "S10d": "32/35",
+        "S10e": "52/68"
+      }
+    },
+    "siglumBehaviourMarkS9": {
+      "note": "проверка поведением, а не отождествление с именованным кодексом",
+      "agreesWithS1": {
+        "A": "107/119",
+        "03": "92/119",
+        "01": "84/116",
+        "04": "49/90",
+        "02": "62/117",
+        "MT": "58/113",
+        "05": "44/109",
+        "P45": "4/12"
+      },
+      "agreesWithMT": {
+        "MT": "141/141",
+        "02": "127/139",
+        "04": "65/104",
+        "01": "48/138",
+        "05": "43/130",
+        "03": "44/141",
+        "P45": "3/18"
+      },
+      "conclusion": "сигла 02 ведёт себя как византийский свидетель, поэтому 02 = Ватиканский кодекс утверждать нельзя"
+    },
+    "lexemeScan": {
+      "note": "лемма-поиск: stem для лексики, whole-word для предлогов и квантификаторов; casefold() превращает ς в σ, поэтому нормализация применяется к обеим сторонам",
+      "zeroEverywhere": [
+        "ἀντί",
+        "ἀγοράζω/ἐξαγοράζω",
+        "καταλλάσσω/καταλλαγή",
+        "σφάζω/ἐσφαγμένον",
+        "περιποιέομαι"
+      ],
+      "actsOnly": {
+        "λυτρ-": 4,
+        "αἷμα": 10,
+        "ἱλασκ-": 10,
+        "ψυχή": 16,
+        "ἴδιος": 9
+      },
+      "other": {
+        "ὑπέρ": 22,
+        "περί": 85,
+        "πολλοί/πολλῶν": 40,
+        "πᾶς/πάντες": 168,
+        "κόσμος": 7,
+        "ἐκκλησία": 22,
+        "διαθήκη": 3
+      },
+      "πολλοί/πολλῶν": 39,
+      "scope": "Literal declared probe patterns, not complete lemma/POS or all-tradition variation."
+    },
+    "keyFindings": [
+      "Мк 10:45 не имеет юнита вариации ни в S9, ни в S10b: λύτρον, ἀντί, πολλῶν и ψυχήν не оспаривает ни одна из 284 марковских сигл",
+      "Деян 20:28: θεου 131 (P45, 01, 03) / κυριου 47 (P74, 02, 05, 08, 044) / κυριου και θεου 28 / κυριου ιησου και θεου 1 / κυριου ιησου 1 — всего 208 свидетелей; и отдельно порядок αιματος του ιδιου 150 против ιδιου αιματος 41. Оба вопроса брифа — реальные точки вариации",
+      "Мк 14:24: единственный юнит — про καινησ (157 против 12, включая Ausgangstext, 01, 03, 04, 05). Предлог ὑπέρ/περί в этой точке вариацией НЕ является ни в UBS5, ни в ECM; S7 перечисляет его как вариант — это расхождение двух аппаратов",
+      "1 Пет 3:18: περι при αμαρτιων 61 против υπερ 4; επαθεν 36 против απεθανεν 29 (разрыв вдвое меньше, чем выглядит по изданиям); υμασ 20 против ημασ 47 — S1 читает υμασ и оказывается в меньшинстве",
+      "1 Пет 2:21: επαθεν 64 против απεθανεν 15; расширение υπερ ημων держат 23 свидетеля",
+      "Еф 5:2: ηγαπησεν ημασ 26 против ηγαπησεν υμασ 9; υπερ ημων 28 против υπερ υμων 6; сигла 044 читает подстановку из 1 Пет 3:18",
+      "Откр 1:5: λυσαντι 16 против λουσαντι 17 — оспаривается сама лексема выкупа, и S1 держит вариант с перевесом в один голос против",
+      "Откр 5:9: без ημασ 2 свидетеля, с ημασ 29; Откр 5:10: αυτουσ 21 против ημασ 8, βασιλευσουσιν 17 / βασιλευουσιν 8 / βασιλευσομεν 3",
+      "Юнитов нет вообще: Мк 10:45; Еф 1:7; Еф 2:13; Еф 5:25; 1 Пет 1:18; 1 Пет 1:19; 1 Пет 2:24; Откр 7:14; Откр 12:11; Откр 13:8; Откр 14:4"
+    ],
+    "negativeResult": "ни один из найденных вариантов не касается объёма искупления: спорные места — лицо адресата, время, порядок слов, καινησ, επαθεν/απεθανεν и замена λυσαντι на λουσαντι",
+    "extentVerdict": "нет; EVIDENCE_HOLD не снят",
+    "totalVariationUnitsScope": "9997 active rows across six XML files, including Mark twice. Old 9999 counted one commented-out Acts app and one commented-out older Mark app. Preferred non-overlapping file selection has 9850 rows.",
+    "preferredNonOverlappingFileUnitRows": 9850,
+    "eligibleFileUnitRows": 9996,
+    "verifiedProbeCounts": {
+      "λυτρ-": 4,
+      "αγοραζ- / εξαγοραζ-": 0,
+      "αἷμα (αἷμα/αἵματος/αἵματι)": 10,
+      "ἱλασκ- / ἱλασμός": 10,
+      "καταλλαγ-": 0,
+      "σφαζω / ἐσφαγμένον": 0,
+      "περιποι-": 0,
+      "ὑπέρ (целое слово)": 22,
+      "ἀντί (целое слово)": 0,
+      "περί (целое слово)": 85,
+      "πολλοί/πολλῶν (целое слово)": 39,
+      "πᾶς/πάντες (целое слово)": 168,
+      "κόσμος (целое слово)": 7,
+      "ἐκκλησία (целое слово)": 22,
+      "ἴδιος (целое слово)": 9,
+      "ψυχή (целое слово)": 16,
+      "διαθήκη (целое слово)": 3
+    },
+    "scanScope": "Literal declared root/form probes across 9996 eligible file-unit rows, including older Mark overlap; not exhaustive morphological or manuscript-tradition variation.",
+    "historicalProbeCounts": {
+      "status": "HISTORICAL / SUPERSEDED: commented Mark unit included",
+      "πολλοί/πολλῶν": 40
+    }
+  },
+  "na28SearchConclusion": {
+    "status": "ОТКРЫТ — но теперь по доказанной причине прав, а не по недостатку поиска",
+    "attempts": "gh api search/repositories по запросам NA28+greek, UBS5+apparatus, nestle+aland+greek+new+testament, editio+critica+maior; просмотр всех репозиториев организаций morphgnt и jjmccollum",
+    "finding": "ни одного кандидата с лицензией, покрывающей текст NA28/UBS5. UBS5 как издание не получен; получены только его точки вариации внутри колляций S9/S10"
+  },
+  "domainHolds": [
+    {
+      "id": "NT:MT_HOLD",
+      "state": "RESOLVED_FOR_TEXT_ONLY",
+      "remainingCanonicalHold": "LOCATOR_HOLD",
+      "scope": "BHS critical apparatus not acquired; Hebrew verse text verified in S6"
+    },
+    {
+      "id": "NT:LXX_HOLD",
+      "state": "RESOLVED_FOR_TEXT_ONLY",
+      "remainingCanonicalHold": "LOCATOR_HOLD",
+      "scope": "Swete apparatus not acquired; Greek verse text verified in S5"
+    }
+  ],
+  "operationalSchemaAudit": {
+    "date": "2026-10-12",
+    "policy": "data/repository-evidence-policy-v2.json",
+    "note": "Operational axes now use canonical enums. Explanations are scope fields; preceding free-text values are explicitly historical, not active statuses. No source pin changed."
+  },
+  "nonTextCards": [
+    "08.34"
+  ],
+  "requiredMarkdownFiles": [
+    "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+    "ИСКУПЛЕНИЕ/nt/01_NT_LEXICAL_FIELD_REDEMPTION.md",
+    "ИСКУПЛЕНИЕ/nt/02_NT_LEXICAL_FIELD_PROPITIATION_RECONCILIATION.md",
+    "ИСКУПЛЕНИЕ/nt/03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md",
+    "ИСКУПЛЕНИЕ/nt/04_NT_LEXICAL_FIELD_QUANTIFIERS.md",
+    "ИСКУПЛЕНИЕ/nt/05_NT_LEXICAL_FIELD_EKKLESIA_AND_OWN.md",
+    "ИСКУПЛЕНИЕ/nt/06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md",
+    "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md",
+    "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+    "ИСКУПЛЕНИЕ/nt/09_NT_EXTENT_THREE_COLUMN_TABLE.md",
+    "ИСКУПЛЕНИЕ/nt/10_NT_OFFER_AXIS_CARDS.md",
+    "ИСКУПЛЕНИЕ/nt/11_NT_LXX_COLLATION.md",
+    "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
+    "ИСКУПЛЕНИЕ/nt/13_DORT_HISTORICAL_CONTROL.md",
+    "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
+    "ИСКУПЛЕНИЕ/04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md",
+    "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+    "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md",
+    "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md"
+  ],
+  "datasetByteAccounting": "Sum of regular-file content bytes, excluding directory-entry sizes. Previous du-style byte figures are SUPERSEDED; commit and sha256 pins unchanged.",
+  "sourceQualityFindings": [
+    {
+      "source": "S5",
+      "status": "CONFLICT / LOCATOR_HOLD",
+      "digitalLocator": "data/05.Deuteronomium.txt:5.21.21",
+      "question": "Deuteronomy 21:23 quoted in Galatians 3:13",
+      "finding": "Pinned digital text merges material from canonical Deuteronomy 21:21–23 under 5.21.21, with visible transcription gaps/repetitions. It is not a verified canonical 21:23 verse locator. Do not silently emend source bytes or change pins."
+    },
+    {
+      "source": "S10",
+      "status": "CONFLICT / LOCATOR_HOLD",
+      "finding": "Earlier regex counted commented-out XML elements. Active records: Acts 9554 units / 600 witness declarations; older Mark 147 units in 118 verses / 167 declarations; Ephesians 42/36; 1 Peter 36/64; Revelation 70/33. The prior counts 9555/600, 148/203, 42/37, 36/114, 70/86 are HISTORICAL/SUPERSEDED. Unmapped reading tokens are not implicitly independent manuscripts."
+    },
+    {
+      "source": "S10b",
+      "status": "CONFLICT / LOCATOR_HOLD",
+      "locator": "ecm_mark.xml#B02K28V8U2-20",
+      "finding": "Active XML unit has an impossible Mark chapter 28. Quarantined without guessing or emending the identifier; 146 locatable Mark units in 117 verses remain."
+    }
+  ],
+  "historicalDerivedCounts": [
+    {
+      "field": "L3",
+      "key": "ἀντί-governing-genitive",
+      "value": 19,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 22
+    },
+    {
+      "field": "L3",
+      "key": "ἀντί-genitive",
+      "value": 20,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 22
+    },
+    {
+      "field": "L3",
+      "key": "ἀντί-accusative",
+      "value": 1,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 0
+    },
+    {
+      "field": "L3",
+      "key": "ἀντί-adverbial",
+      "value": 1,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 0
+    },
+    {
+      "field": "L4",
+      "key": "πᾶς-πάντες-NPM",
+      "value": 178,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 175
+    },
+    {
+      "field": "L4",
+      "key": "κόσμος-with-ὅλος-or-πᾶς-verses",
+      "value": 33,
+      "status": "HISTORICAL / SUPERSEDED",
+      "correctedValue": 31
+    }
+  ],
+  "verifiedComputedFacts": {
+    "derivedLexicalCounts": {
+      "L3": {
+        "ὑπέρ-tokens": 149,
+        "ἀντί-tokens": 22,
+        "ἀντί-governing-genitive": 22,
+        "περί-tokens": 332,
+        "περί-genitive-of-hamartia": 14,
+        "ὑπέρ-lemma": 150,
+        "ὑπέρ-prepositional-P-": 149,
+        "ὑπέρ-adverbial-D-2Co11:23": 1,
+        "ὑπέρ-genitive-death/giving/offering-clauses": 48,
+        "ἀντί-genitive": 22,
+        "ἀντί-accusative": 0,
+        "ἀντί-adverbial": 0
+      },
+      "L4": {
+        "πολύς-plural-forms": 267,
+        "πολύς-plural-with-preceding-article": 25,
+        "κόσμος-in-John-gospel": 78,
+        "κόσμος-in-1John": 23,
+        "πᾶς-πάντες-surface-form": 178,
+        "πᾶς-πάντες-VPM": 3,
+        "πᾶς-πάντες-NPM": 175,
+        "πᾶς-with-ἄνθρωπος-verses": 71,
+        "κόσμος-with-ὅλος-or-πᾶς-verses": 31
+      }
+    },
+    "lxxProbes": {
+      "prefixCounts": {
+        "ἱλαστηρι": 28,
+        "ἱλασμο": 8,
+        "ἱλασκ": 0,
+        "ἐξιλασκ": 10,
+        "ἐξιλασ": 121,
+        "καταλλασ": 0,
+        "καταλλαγ": 5,
+        "ἀπολυτρωσι": 0,
+        "ἀπολυτρωσ": 2,
+        "ἀγορα": 35
+      },
+      "positiveInflectedForms": {
+        "Psalmi 24:11": "ἱλάσῃ",
+        "Psalmi 78:9": "ἱλάσθητι",
+        "Machabaeorum_ii 1:5": "καταλλαγείη",
+        "Machabaeorum_ii 7:33": "καταλλαγήσεται",
+        "Machabaeorum_ii 8:29": "καταλλαγῆναι",
+        "Daniel_translatio_Graeca 4:30c": "ἀπολυτρώσεως"
+      },
+      "simplexHilasNonNounTokens": 11,
+      "scope": "Digital token/prefix counts in un-lemmatized S5, not complete lemma or semantic counts."
+    },
+    "bloodOwnCaseCounts": {
+      "N": 23,
+      "D": 20,
+      "G": 34,
+      "A": 20
+    },
+    "prepositionNextInflectedCaseCounts": {
+      "ὑπέρ": {
+        "G": 130,
+        "A": 19
+      },
+      "ἀντί": {
+        "G": 22
+      },
+      "περί": {
+        "G": 294,
+        "A": 38
+      }
+    },
+    "antiCausalFormulaCount": 5,
+    "offerSelectedVerses": 14,
+    "offerSelectedVersesWithRedemptionLemma": 0,
+    "grammar": {
+      "Matthew11_28_deute_pos": [
+        "D-"
+      ],
+      "Matthew11_28_pantes_tags": [
+        "----NPM-"
+      ],
+      "John6_37_piAn_count": 1,
+      "Gal3_13_katara_tags": [
+        "----NSF-"
+      ],
+      "Rev5_9_pas_lemma_count": 1,
+      "1John2_2_article_before_sins": 1,
+      "1John4_10_article_before_sins": 1,
+      "MT_Isa53_articles_before_rab": {
+        "Isaiah 53:11": 1,
+        "Isaiah 53:12": 1
+      },
+      "MT_kpr_lex_utf8_by_sp": {
+        "verb": 102,
+        "subs": 20
+      }
+    }
+  },
+  "verifiedVariantControls": {
+    "normalization": "Robinson ASCII, no accents/case/punctuation; whole word sequence, not byte identity",
+    "TRMutualWordEquality": {
+      "1 Пет 3:18": true,
+      "1 Тим 3:16": true,
+      "Гал 1:4": true,
+      "Деян 13:46": true,
+      "Деян 17:30": true,
+      "Деян 20:28": true,
+      "Евр 2:9": true,
+      "Ин 3:16": true,
+      "Ин 5:40": true,
+      "Ин 7:37": true,
+      "Лк 13:34": true,
+      "Лк 14:17": true,
+      "Лк 14:23": true,
+      "Лк 14:24": true,
+      "Мк 10:45": true,
+      "Мк 14:24": true,
+      "Мф 11:28": true,
+      "Мф 20:28": true,
+      "Мф 22:14": true,
+      "Мф 22:3": true,
+      "Мф 22:9": true,
+      "Мф 23:37": true,
+      "Мф 26:28": true,
+      "Откр 1:5": true,
+      "Откр 22:17": true,
+      "Откр 5:10": true,
+      "Откр 5:9": true
+    },
+    "NAReadingWordProbe": {
+      "citedReadings": 235,
+      "equalWords": 150,
+      "unequalWords": 85,
+      "scope": "Mechanical word-sequence comparison, not complete or certified NA27/NA28 divergence. Abbreviated readings need interpretation."
+    },
+    "wordEquality": {
+      "1 Пет 3:18": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "1 Тим 3:16": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Гал 1:4": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Деян 13:46": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Деян 17:30": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Деян 20:28": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Евр 2:9": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Ин 3:16": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Ин 5:40": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Ин 7:37": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Лк 13:34": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Лк 14:17": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Лк 14:23": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Лк 14:24": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мк 10:45": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мк 14:24": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Мф 11:28": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мф 20:28": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мф 22:14": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мф 22:3": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "Мф 22:9": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Мф 23:37": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Мф 26:28": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Откр 1:5": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Откр 22:17": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Откр 5:10": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      },
+      "Откр 5:9": {
+        "S2": false,
+        "S3": false,
+        "S4": false
+      }
+    },
+    "controls": {
+      "TR_Heb2_9_chariti": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "TR_Mark14_24_peri": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "TR_Matt26_28_new_covenant": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "TR_1Tim3_16_theos": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "TR_Acts20_28_theos": {
+        "S2": true,
+        "S3": true,
+        "S4": true
+      },
+      "S7_Heb2_9_explicit_readings": [
+        {
+          "wit": [
+            "Holmes"
+          ],
+          "text": "χωρὶς"
+        },
+        {
+          "wit": [
+            "WH",
+            "Treg",
+            "NIV",
+            "RP"
+          ],
+          "text": "χάριτι"
+        }
+      ],
+      "S8_Tregelles": {
+        "Мк 14:24": true,
+        "Гал 1:4": true,
+        "1 Пет 3:18": true,
+        "Ин 3:16": true,
+        "Евр 2:9": true
+      }
+    },
+    "offerEqualInAllThreeTR": 7
+  },
+  "historicalPrepositionAttribution": {
+    "status": "HISTORICAL / SUPERSEDED: nearest-left preposition is not a dependency parse",
+    "bloodOwnCasesBeforeAudit": {
+      "N": 24,
+      "A": 19,
+      "G": 34,
+      "D": 20
+    },
+    "formerBloodGoverningPrepositionTable": {
+      "none": 60,
+      "ἐν": 14,
+      "διά": 8,
+      "ἀπό": 4,
+      "ἐκ": 3,
+      "ἕως": 2,
+      "εἰς": 2,
+      "χωρίς": 2,
+      "πρός": 1,
+      "μέχρι": 1
+    },
+    "formerFirstContentWordCases": {
+      "ὑπέρ": {
+        "G": 129,
+        "A": 20
+      },
+      "ἀντί": {
+        "G": 20,
+        "A": 1,
+        "D": 1
+      },
+      "περί": {
+        "G": 282,
+        "A": 43,
+        "D": 2,
+        "N": 2,
+        "none": 3
+      }
+    }
+  },
+  "datasetPathAccounting": "Secondary sha256 of sorted UTF-8 relative paths joined by newline. Existing sorted-content byte digests remain unchanged.",
+  "branchAudit": "ИСКУПЛЕНИЕ/nt/14_NT_BRANCH_AUDIT_2026-10-12.md"
+}
