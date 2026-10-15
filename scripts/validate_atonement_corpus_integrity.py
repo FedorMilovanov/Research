@@ -80,6 +80,18 @@ def read(path: Path) -> str:
     return path.read_text(encoding="utf-8") if path.is_file() else ""
 
 
+def walk_paths(node, prefix=""):
+    """Every string leaf of the registry with its key path, so no section can hide a dead link."""
+    if isinstance(node, dict):
+        for key, value in node.items():
+            yield from walk_paths(value, f"{prefix}.{key}" if prefix else str(key))
+    elif isinstance(node, list):
+        for index, value in enumerate(node):
+            yield from walk_paths(value, f"{prefix}[{index}]")
+    elif isinstance(node, str):
+        yield prefix, node
+
+
 def resolve(reference: str) -> bool:
     """A governance document may cite a path from the repo root or from inside the corpus."""
     return any((base / reference).exists() for base in (ROOT, CORPUS, DOCS))
@@ -92,6 +104,11 @@ for name in SPINE:
         errors.append(f"corpus spine file absent: {name}")
     elif path.stat().st_size < 400:
         errors.append(f"corpus spine file suspiciously small: {name}")
+
+measured_root = len([p for p in CORPUS.glob("*.md") if NUMBERED.match(p.name)])
+req(measured_root == len(SPINE) + 1,
+    f"corpus root holds {measured_root} numbered files while the gate expects {len(SPINE) + 1} "
+    "(SPINE + the reconciliation record): update SPINE deliberately, do not let it drift)")
 
 duplicates = {
     prefix: sorted(p.name for p in CORPUS.glob(f"{prefix}*"))
@@ -111,6 +128,22 @@ for ghost in set(re.findall(r"`(\d{2}_[A-Z0-9_]+\.md)`", nav_text)):
     if not (CORPUS / ghost).is_file():
         errors.append(f"navigation lists a file that does not exist: {ghost}")
 
+# ---------------------------------------------------------------- sub-corpora --
+for sub in SUBLANES:
+    sub_dir = CORPUS / sub
+    if not sub_dir.is_dir():
+        errors.append(f"sub-corpus absent: {CORPUS.name}/{sub}/")
+        continue
+    md = [p for p in sub_dir.glob("*.md") if NUMBERED.match(p.name)]
+    if not md:
+        errors.append(f"sub-corpus has no numbered files: {sub}/")
+    if not list((sub_dir / "data").glob("*corpus*.json")):
+        errors.append(f"sub-corpus has no machine registry in data/: {sub}/")
+    if not any("AUTHORITY" in p.name.upper() for p in md):
+        errors.append(f"sub-corpus has no own authority file: {sub}/")
+sublane_files = sum(len([p for p in (CORPUS / sub).glob("*.md") if NUMBERED.match(p.name)])
+                    for sub in SUBLANES if (CORPUS / sub).is_dir())
+
 # ------------------------------------------------------------- machine registry --
 registry = {}
 try:
@@ -119,14 +152,24 @@ except Exception as exc:  # noqa: BLE001 - a broken registry must fail the gate
     errors.append(f"corpus registry unreadable: {exc}")
 if registry:
     req(registry.get("authorityId") == AUTHORITY_ID, "registry: authorityId drift")
-    agents = registry.get("parallelAgents", {})
-    state = str(agents.get("gitPathState", ""))
-    for key, value in agents.items():
-        if not isinstance(value, str):
+    agents = registry.get("parallelAgents", {}) if isinstance(registry.get("parallelAgents"), dict) else {}
+    # единственный легальный способ сослаться на отсутствующий путь — объявить его отсутствующим
+    absent_prefixes = tuple(str(v) for v in (agents.get("declaredAbsentPrefixes") or [])
+                            if agents.get("gitPathState"))
+    for key_path, raw in walk_paths(registry):
+        value = raw.split(" ")[0]          # «…/14_….md §2.6» — якорь раздела, не часть пути
+        if not value.startswith(("ИСКУПЛЕНИЕ/", "data/", "docs/", "scripts/")):
             continue
-        if value.startswith(("ИСКУПЛЕНИЕ/", "data/", "docs/")) and not resolve(value):
-            req(bool(state), f"registry: parallelAgents.{key} points at an absent git path "
-                            f"{value!r} and no gitPathState declares it")
+        if resolve(value):
+            continue
+        if value.startswith(absent_prefixes):
+            continue
+        if ERRATUM_MARK in key_path.lower() or "gitpathstate" in key_path.lower():
+            continue
+        errors.append(f"registry: {key_path} points at an absent git path {value!r} "
+                      "without an erratum/gitPathState/declaredAbsentPrefixes declaration")
+    req(bool(agents.get("gitPathState")) == bool(absent_prefixes),
+        "registry: parallelAgents.gitPathState and declaredAbsentPrefixes must be declared together")
     lanes = registry.get("adjacentLanes") or []
     req(any(str(item.get("path", "")).endswith("docs/research/atonement") for item in lanes),
         "registry: the adjacent polemic lane is not declared in adjacentLanes")
@@ -178,8 +221,30 @@ else:
     req("docs/research/atonement" in authority_text,
         "docs lane exists but is not registered in the corpus authority (two entrypoints for one graph)")
 
+# ------------------------------------------------------ the gate's own wiring --
+gate = registry.get("integrityGate", {}) if registry else {}
+gate_script = str(gate.get("script", ""))
+gate_workflow = str(gate.get("workflow", ""))
+req(bool(gate_workflow) and (ROOT / gate_workflow).is_file(),
+    "registry: integrityGate.workflow is absent — a corpus whose gate is not wired has no protection")
+req(gate_script == "scripts/" + Path(__file__).name,
+    f"registry: integrityGate.script must point at scripts/{Path(__file__).name}")
+wf = read(ROOT / gate_workflow) if gate_workflow else ""
+if wf:
+    req(gate_script in wf, "gate workflow does not run integrityGate.script")
+    req(re.search(r"push:\s*\n\s*branches:\s*\[?\s*main", wf),
+        "gate workflow does not run on push to main (PR-only trigger = zero protection on main)")
+    req("schedule:" in wf and "cron:" in wf, "gate workflow lost its weekly scheduled run")
+
+self_text = Path(__file__).read_text(encoding="utf-8")
+req(len(self_text) > 4000 and "publicationEligible=false" in self_text,
+    "the gate script has been hollowed out (stub) while the registry still calls it a gate")
+
 # ----------------------------------------------------- conflict-ledger arithmetic --
-ledger = read(CORPUS / "synthesis" / "02_CONFLICT_LEDGER.md")
+CONFLICTS = CORPUS / "synthesis" / "02_CONFLICT_LEDGER.md"
+if not CONFLICTS.is_file():
+    errors.append("conflict ledger absent: synthesis/02_CONFLICT_LEDGER.md")
+ledger = read(CONFLICTS)
 actual = max((int(n) for n in re.findall(r"\bC-(\d{2})\b", ledger)), default=0)
 claimed = [int(n) for n in re.findall(r"C-\d{2}\s*[.…]+\s*C-?(\d{2})", read(AUTHORITY))]
 if claimed and actual and max(claimed) != actual:
@@ -209,6 +274,6 @@ if errors:
     for err in errors:
         print(f"  - {err}")
     sys.exit(1)
-print(f"ATONEMENT CORPUS INTEGRITY: PASS ({len(SPINE)} root files, {len(SUBLANES)} sub-corpora, "
-      f"{len(list(DOCS.glob('*.md')))} lane files, conflict ledger C-01…C-{actual:02d}, "
-      "publicationEligible=false)")
+print(f"ATONEMENT CORPUS INTEGRITY: PASS ({measured_root} root files, {len(SUBLANES)} sub-corpora / "
+      f"{sublane_files} sub-lane files, {len(list(DOCS.glob('*.md')))} lane files, "
+      f"conflict ledger C-01…C-{actual:02d}, publicationEligible=false)")

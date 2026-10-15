@@ -957,9 +957,12 @@
     ],
     "driveFolder": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
     "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon.",
-    "gitPathState": "removed-from-git-2026-10-12 ( ветка arena/dddc1326-research, PR #209): каталога `ИСКУПЛЕНИЕ/agents/` нет ни в main, ни в одной из 27 веток. Единственный живой экземпляр четырёх брифов — зеркало в Drive (папка `08 — PARALLEL AGENT BRIEFS`), чьи file id по их же правилу не фиксируются. Не восстанавливать как параллельный канон; либо вернуть в git осознанно, либо удалить блок",
+    "gitPathState": "по состоянию на 2026-10-15 каталог отсутствует в git (проверено по origin/main и по всем веткам remote); gitPathState — единственное объявление отсутствия, его удаление валит гейт. Под этот префикс попадают 6 полей реестра: briefsPath, index и domains[0..3].brief. Решение владельца: вернуть каталог из Drive-зеркала 08 — PARALLEL AGENT BRIEFS (folderId 1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n) или удалить parallelAgents из реестра и строку из 07_LEDGER.",
     "driveMirrorFolder": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
-    "domainsOwnershipNote": "каждый домен владеет только своим под-корпусом; верхняя нумерация `ИСКУПЛЕНИЕ/` и `.github/` — вне агентских прав (владелец). Координационный агент с 2026-10-12 не активен: слитые ветки удалены, уникальных строк в его ветке нет"
+    "domainsOwnershipNote": "каждый домен владеет только своим под-корпусом; верхняя нумерация `ИСКУПЛЕНИЕ/` и `.github/` — вне агентских прав (владелец). Координационный агент с 2026-10-12 не активен: слитые ветки удалены, уникальных строк в его ветке нет",
+    "declaredAbsentPrefixes": [
+      "ИСКУПЛЕНИЕ/agents/"
+    ]
   },
   "driveMirrors": {
     "file00": "1KD-8pMP_Jnk1lmsb2h3JbXxqpWLQgacdBMH57krdy_s",
@@ -1191,5 +1194,16 @@
       "stateNote": "поле state выше — датированный замер (2026-10-15T18:32Z), не живой счётчик; на 20:18Z лан уже раунд 20 — пересчитывать командой recheckCommand"
     }
   ],
-  "auditNote20261015": "Drive-дисциплина зеркал корпуса: 0 объектов с modifiedTime > 2026-10-13 при активных раундах в git; реконсилияция снятой волны 0 — `ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md`"
+  "auditNote20261015": "Drive-дисциплина зеркал корпуса: 0 объектов с modifiedTime > 2026-10-13 при активных раундах в git; реконсилияция снятой волны 0 — `ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md`",
+  "integrityGate": {
+    "script": "scripts/validate_atonement_corpus_integrity.py",
+    "workflow": ".github/workflows/atonement-corpus-integrity.yml",
+    "triggers": [
+      "push:main",
+      "pull_request",
+      "schedule:37 5 * * 2"
+    ],
+    "mode": "read-only, fail-closed; проверяет структуру корпуса, а не богословие",
+    "why": "поле обязательно: гейт требует, чтобы реестр ссылался на существующий workflow с push:main и schedule"
+  }
 }

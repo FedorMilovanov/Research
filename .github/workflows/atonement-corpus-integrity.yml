@@ -37,3 +37,8 @@ jobs:
 
       - name: Atonement corpus integrity (read-only)
         run: python3 -B scripts/validate_atonement_corpus_integrity.py
+      # гейт не может проверить себя изнутри: если файл заменят заглушкой, шаг выше промолчит
+      - name: refuse a hollowed-out gate
+        run: |
+          grep -q 'publicationEligible=false' scripts/validate_atonement_corpus_integrity.py
+          grep -q 'ATONEMENT CORPUS INTEGRITY: PASS' scripts/validate_atonement_corpus_integrity.py
