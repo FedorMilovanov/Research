@@ -956,7 +956,10 @@
       "report template: СДЕЛАНО / ПРОВЕРЕНО / НЕ ПРОВЕРЕНО / СРЕДА / РЕШЕНИЯ САМ / branch+SHA+PR+CI / what the owner should do"
     ],
     "driveFolder": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
-    "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
+    "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon.",
+    "gitPathState": "removed-from-git-2026-10-12 ( ветка arena/dddc1326-research, PR #209): каталога `ИСКУПЛЕНИЕ/agents/` нет ни в main, ни в одной из 27 веток. Единственный живой экземпляр четырёх брифов — зеркало в Drive (папка `08 — PARALLEL AGENT BRIEFS`), чьи file id по их же правилу не фиксируются. Не восстанавливать как параллельный канон; либо вернуть в git осознанно, либо удалить блок",
+    "driveMirrorFolder": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
+    "domainsOwnershipNote": "каждый домен владеет только своим под-корпусом; верхняя нумерация `ИСКУПЛЕНИЕ/` и `.github/` — вне агентских прав (владелец). Координационный агент с 2026-10-12 не активен: слитые ветки удалены, уникальных строк в его ветке нет"
   },
   "driveMirrors": {
     "file00": "1KD-8pMP_Jnk1lmsb2h3JbXxqpWLQgacdBMH57krdy_s",
@@ -1175,5 +1178,16 @@
         "note": "about who benefits from the delay of judgment, not about whose repentance God wills; do not conflate with p. 348"
       }
     }
-  }
+  },
+  "adjacentLanes": [
+    {
+      "path": "docs/research/atonement",
+      "role": "полемическое и терминологическое досье по той же доктрине (разбор статьи А. Прокопенко, TMS, Бакстер/Оуэн, лапсарианство)",
+      "ownerBranch": "arena/771fdde7-research",
+      "state": "активный лан: 16 раундов на 2026-10-15T18:32Z, досье `34_` = 754 288 B; PR и CI-прогонов нет",
+      "registeredIn": "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
+      "boundary": "не переносить в `ИСКУПЛЕНИЕ/` без решения владельца; ветка лана отстаёт от main на OT-слой, её штатный PR снёс бы `ИСКУПЛЕНИЕ/ot/` (32 файла, 7 908 строк) — см. реконсилияцию 17, §10c"
+    }
+  ],
+  "auditNote20261015": "Drive-дисциплина зеркал корпуса: 0 объектов с modifiedTime > 2026-10-13 при активных раундах в git; реконсилияция снятой волны 0 — `ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md`"
 }
