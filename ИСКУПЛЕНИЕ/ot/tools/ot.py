@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Local source access library for the OT sub-corpus work (scratch tool, never committed).
+"""Local source access library for the OT sub-corpus work (mirror clones live in\n/tmp/arena-scratch/src, see tools/README.md; the mirrors themselves are not committed).
 
 Corpora (all fetched from the registry URLs, checks only):
   * MT            — openscriptures/morphhb (WLC, OSIS)                     [S13]
@@ -285,13 +285,14 @@ def _sol_verses(book):
         return out
     cur = None
     buf = []
+    # line markers: '3.Lev.1.1 <text>' and page-prefixed '28:3.Lev.2.11 <text>'
     for ln in t.split('\n'):
-        m = re.match(r'^\s*(\d+):(\d+)\s+(.*)$', ln)
+        m = re.match(r'^\s*(?:\d+:)?\d+\.([A-Za-z0-9]+)\.(\d+)\.(\d+)\s+(.*)$', ln)
         if m:
             if cur:
                 out[cur] = ' '.join(buf)
-            cur = (int(m.group(1)), int(m.group(2)))
-            buf = [m.group(3).strip()]
+            cur = (int(m.group(2)), int(m.group(3)))
+            buf = [m.group(4).strip()]
         elif cur is not None and ln.strip():
             buf.append(ln.strip())
     if cur:
