@@ -316,7 +316,14 @@ req(recon.get("liveLane", {}).get("branch") == "arena/771fdde7-research",
     "registry: the live atonement lane must be named in the reconciliation")
 req(recon.get("liveLane", {}).get("openPr") is None, "registry: the live lane has no PR; do not record one")
 req(len(recon.get("protocolFindings", [])) >= 6, "registry: the parallel-agent protocol findings must be recorded")
-req(recon.get("verdict", {}).get("decision") == "WAIT / STAY-PARKED", "registry: the verdict of this audit must be recorded")
+req(recon.get("coordinatorState", {}).get("state", "").startswith("CLOSED"), "registry: the coordinator lane state must be recorded")
+req(recon.get("vacancyCheck", {}).get("isItAvailable") is False, "registry: the drafts/06 slot is gated, not vacant — say so")
+req(recon.get("liveLane", {}).get("rounds") == 15, "registry: the live lane must be counted, not guessed")
+req(recon.get("sandboxHazard", {}).get("proofOfNoLoss", "").startswith("git write-tree"), "registry: the sandbox re-clone hazard must be recorded with its no-loss proof")
+for needle in ("700 852", "C-15", "E2B не инициализировалась", "нет ни в одной ссылке репозитория", "modifiedTime > '2026-10-13'"):
+    req(needle in recon_text, f"reconciliation file does not record {needle!r}")
+if not str(recon.get("verdict", {}).get("decision", "")).startswith("WAIT"):
+    errors.append("registry: the verdict of this audit must be recorded and must start with WAIT")
 for needle in ("PARALLEL AGENT BRIEFS", "771fdde7", "7 908", "0AL754uQ3lkWPUk9PVA", "parallelAgents"):
     req(needle in recon_text, f"reconciliation file does not record {needle!r}")
 req(data.get("verification", {}).get("quoteSafeArticlesInEitherGraph") == 0,

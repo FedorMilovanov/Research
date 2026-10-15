@@ -419,7 +419,7 @@
     "mergeBaseCommits": 0,
     "retractedClaims": 4,
     "quoteSafeArticlesInEitherGraph": 0,
-    "liveLaneRounds": 14
+    "liveLaneRounds": 15
   },
   "spineHistory": {
     "note": "в этой ветке spine волны 0 была написана поверх базы 2026-10-02, не видевшей каноническую линию темы. Файлы `01_VVEDENIE...` и `100_PRODUKT...` не «утеряны» и не «переопределены» этой веткой: их развитие — канонический корпус в main (112 файлов). Статусная карточка здесь остаётся карточкой только этой ветки; владение темой у main. Разбор — в ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
@@ -513,11 +513,11 @@
     ],
     "liveLane": {
       "branch": "arena/771fdde7-research",
-      "head": "48f8801",
-      "lastCommitUtc": "2026-10-15T16:24:53Z",
-      "rounds": 14,
+      "head": "6cc440c",
+      "lastCommitUtc": "2026-10-15T17:21:01Z",
+      "rounds": 15,
       "subject": "досье 34: лексическая история atonement vs redemption, Шедд, проверка терминологического тезиса А. Прокопенко",
-      "dossierBytes": 651643,
+      "dossierBytes": 700852,
       "holdMarkers": 165,
       "openPr": null,
       "ciRuns": 0,
@@ -527,7 +527,9 @@
         "synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md: +1/-1"
       ],
       "mergeHazard": "branch point a01664c (#215); no merge-base with the rewritten main; a PR from it removes 32 files / 7908 lines = the whole ИСКУПЛЕНИЕ/ot layer plus navigation entry 17",
-      "safeProcedure": "re-cut a branch from 6cac62e and carry only docs/research/atonement (+1401) and the three small corpus deltas; then no deletions at all"
+      "safeProcedure": "re-cut a branch from 6cac62e and carry only docs/research/atonement (+1401) and the three small corpus deltas; then no deletions at all",
+      "dossierLines": 1231,
+      "growthInOneRoundBytes": 49209
     },
     "protocolFindings": [
       "owner protocol found in Drive only: folder 08 — PARALLEL AGENT BRIEFS (1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n), README + 4 briefs; agents own ot/, nt/, fathers/, synthesis/; root numbering and .github are owner-only",
@@ -539,7 +541,7 @@
       "self-reported deviation of this branch: it carries .github/workflows/redemption-corpus-integrity.yml although the owner protocol forbids agents to edit .github/; nothing of it is in main and any port must be committed by the owner"
     ],
     "verdict": {
-      "decision": "WAIT / STAY-PARKED",
+      "decision": "WAIT (содержание) + PREPARE (консолидация)",
       "why": [
         "every content role this branch intended to port is now occupied by a live lane or by a closed root file of main",
         "the one empty slot (synthesis/drafts/06) is registered as gated by their own series plan and belongs to agent 4",
@@ -552,7 +554,37 @@
         "register docs/research/atonement as a lane in 00_CURRENT_AUTHORITY and in the corpus JSON (owner, one line instead of silent double-entry)",
         "move the Prokopenko PDF into the 07 tree with a rights card (owner)",
         "a root gate for the doctrine (owner-committed; would have caught the dangling pointer automatically)"
+      ],
+      "safeActionsForThisBranch": [
+        "подготовить консолидационный патч как файлы этой ветки (регистрация docs-лана, починка parallelAgents, строка о 15 раундах, корневой gate) — применяет владелец",
+        "подготовить транспортный патч для живой ветки: 11 их файлов поверх 6cac62e, нулевые удаления",
+        "ничего не писать в synthesis/, в верхнюю нумерацию и в .github от имени агента"
       ]
+    },
+    "coordinatorState": {
+      "role": "координация и синтез (агент №4 + слой agents/)",
+      "state": "CLOSED, не на паузе",
+      "evidence": [
+        "все ветки слитых ланов удалены из remote; жива только ветка координатора arena/dddc1326-research, без движения с 2026-10-12T19:36Z",
+        "её дельта против main = отставание, уникальных строк 0",
+        "в ledger корпуса зафиксирована причина: E2B не инициализировалась ~40 минут, 16+ попыток, агент №4 сдал материалы через Drive-fallback"
+      ],
+      "consequences": [
+        "корпусный authority не обновлялся 15 раундов: 0 упоминаний Griffin/1795/Shedd/Strong/Prokop/34_/C-16",
+        "конфликт-листер main заканчивается на C-15, запись C-16 живёт только в чужой ветке",
+        "Drive-зеркала: 0 объектов с modifiedTime > 2026-10-13 при росте git на 49 KB за раунд",
+        "parallelAgents в корпусном реестре указывает на удалённый git-каталог, единственный экземпляр брифов — Drive Docs с нефиксируемыми id"
+      ]
+    },
+    "vacancyCheck": {
+      "slot": "synthesis/drafts/06 — B2 «Мир, все, многие»",
+      "isItAvailable": false,
+      "why": "гейт не выполнен, а не безнадзорен: HARD-карточки = NO SETTLED VERDICT / EVIDENCE_HOLD, а synthesis/00 п.94 запрещает начинать B2 до закрытия экзегезы HARD; раунды живого лана закрывают вопрос о словах, а не о локусах"
+    },
+    "sandboxHazard": {
+      "observed": "локальная песочница переклонена между ходами: HEAD вернулся на 9da9c26, файлы стали untracked",
+      "proofOfNoLoss": "git write-tree = adada9e = дерево отправленного eaa1e81, расхождений 0",
+      "rule": "локальный HEAD не является состоянием репозитория: сверять write-tree с ls-remote перед любой записью"
     }
   }
 }
