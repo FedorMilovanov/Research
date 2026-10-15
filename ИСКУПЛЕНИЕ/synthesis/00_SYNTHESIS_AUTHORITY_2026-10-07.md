@@ -94,3 +94,7 @@
 2. Не начинать B2-статью до закрытия экзегезы HARD-карточек; первая читательская статья — «Что такое искупление» (черновик уже в `drafts/`).
 3. Не снимать `EVIDENCE_HOLD` и `PUBLICATION_HOLD` без явного решения владельца.
 4. Product-внедрение (hub `/iskuplenie/`, статьи) — только после снятия `PUBLICATION_HOLD` и отдельного решения владельца (gate W6).
+
+---
+
+**Дополнение 2026-10-15 (раунд 19 `34_`): вечность/время и вопрос об избранных до обращения.** К слоям синтеза добавлена рамка, отвечающая на вопрос серии: **вечно** — декрет, намерение, вечная любовь к избранным (Турретин, Quæstio IX §IV: «beneficia quæ ex æterno Dei amore in Electos manant»), благоволение/нерасположение Бога (Шедд, DT I.171/174: «voluntarily and eternally complacent… displacent»), поручительство Христа (sponsio, S94 §XXVI); **во времени** — приобретение на кресте и применение в действенном призвании («in momento efficacis Vocationis», §VIII), с объявлением на суде (§VII). **До обращения** актуальное состояние избранного — то же, что у прочих: «manet in morte… in statu damnationis» (§V; ср. Еф. 2:3); различие — в вечном декрете и его несомненном исходе (Иуда: «perditioni et exitio destinatus ac devotus ab æterno justo Dei judicio… opponitur filiis Dei Electis» — локус XV, Q. XVI §XXXVIII, л. 566). Откр. 13:8 у Ходжа (ST II.371) — ретроспектива креста, не вечное заклание (`TEXT_CRIT_NOTE`). `EVIDENCE_HOLD` по объёму не снимается; `PUBLICATION_HOLD` — без изменений; «снято молча: 0».
