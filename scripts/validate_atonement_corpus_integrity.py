@@ -207,7 +207,9 @@ for line in registering_lines:
 
 # ------------------------------------------------------------- the docs lane --
 if not DOCS.is_dir():
-    errors.append("adjacent lane absent: docs/research/atonement")
+    errors.append("adjacent lane absent: docs/research/atonement — если лан сознательно влит в "
+                  "ИСКУПЛЕНИЕ/ или перенесён, удали в том же коммите adjacentLanes из реестра, "
+                  "пункт 12 в 00_CURRENT_AUTHORITY и эту проверку; молча «починить» нельзя")
 else:
     lane_files = sorted(p for p in DOCS.glob("*.md") if NUMBERED.match(p.name))
     numbers = [p.name[:2] for p in lane_files]

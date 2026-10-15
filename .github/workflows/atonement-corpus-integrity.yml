@@ -21,7 +21,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  validate:
+  # имя job'а = имя required-check'а в GitHub. В репозитории три workflow'а уже называют
+  # свой job «validate»; четвёртый с тем же именем сделал бы список защищённых проверок
+  # неразрешимым, поэтому контекст назван явно.
+  atonement-corpus-integrity:
+    name: Atonement corpus integrity
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
