@@ -7,45 +7,48 @@
 
 ---
 
-## 0a. Что уже было в 07-дереве до этой приёмки (зафиксировано, а не проигнорировано)
+## 0a. Что лежит в `07`-дереве: прежнее чтение и его отзыв
 
-При обходе дерева 2026-10-07 обнаружены объекты, созданные **до** загрузки зеркал. Они остаются на месте; этот раздел — их учёт.
+В исходной редакции этого раздела десять документов, найденных при обходе `07`-дерева
+(`00_README`, `01_INTRODUCTION`, `02_TERMS`, `03_ACQUISITION`, `04_RIGHTS`, `05_MASTER_MAP`,
+`06_PRODUCT`, `07_AUTHORITY`, `08_MURRAY_SOURCE_CARD`, `09_MURRAY_ARGUMENT_MAP`), были помечены
+как `SUPERSEDED-BY-MIRROR` на том основании, что они относятся к «более ранней части той же
+сессии». **Это утверждение неверно и отзывается.** Эти документы не были вытеснены моими
+зеркалами: они относятся к канонической линии темы, которая к тому моменту уже развивалась
+в `main`-составляющей репозитория, и она же 2026-10-08 22:58–22:59Z разметила мои зеркала
+как устаревшие. Направление замещения — обратное тому, что я записал.
 
-### Книги (принадлежат владельцу Drive; копия, не перемещение)
+## 0b. Фактическое состояние зеркал (проверено 2026-10-15 запросом к Drive)
 
-| Файл | Папка | file id | байт | created | Состояние |
-|---|---|---|---|---|---|
-| `Owen, John — The Works of John Owen (PD copy).pdf` | `01 — PUBLIC DOMAIN LIBRARY` | `1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY` | 42084171 | 2026-10-07T15:58:33.454Z | `RECEIVED_UNHASHED / EVIDENCE_HOLD / RIGHTS: PD-CLAIM-UNVERIFIED` |
-| `Goodwin, Thomas — The Works of Thomas Goodwin (PD copy).pdf` | `01 — PUBLIC DOMAIN LIBRARY` | `1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M` | 27215853 | 2026-10-07T15:58:36.935Z | `RECEIVED_UNHASHED / EVIDENCE_HOLD / RIGHTS: PD-CLAIM-UNVERIFIED` |
-| `Calvin, John — Institutes of the Christian Religion (PD copy).pdf` | `01 — PUBLIC DOMAIN LIBRARY` | `1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ` | 45351929 | 2026-10-07T15:58:35.362Z | `RECEIVED_UNHASHED / EVIDENCE_HOLD / RIGHTS: PD-CLAIM-UNVERIFIED` |
-| `Westminster Confession of Faith (PD copy).pdf` | `04 — CONFESSIONS & HISTORICAL THEOLOGY` | `1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4` | 16179601 | 2026-10-07T15:58:38.739Z | `RECEIVED_UNHASHED / EVIDENCE_HOLD / RIGHTS: PD-CLAIM-UNVERIFIED` |
+| Объект (нынешнее имя) | file id | байты | где сейчас |
+|---|---|---|---|
+| `00 MASTER RESEARCH MAP AND CHARTER 2026-10-07 — HOLD` | `1ozlnTTepSyhFAj_hEsxNAwvF3Dc_R5tw` | 26 608 | `99 — HOLD — SUPERSEDED MIRRORS` |
+| `01 W0 INTRODUCTION AND TERMINOLOGY 2026-10-07 — HOLD` | `10go1WoYIIFBjYXoiadPVbzWDHP88w_PD` | 44 734 | там же |
+| `03 W0 SOURCE REGISTRY 2026-10-07 — HOLD` | `1is-gox1UYi-4Ie0GBvHoMbzxh2mj2oL-` | 39 479 | там же |
+| `04 W0 COMPETING MODELS TAXONOMY 2026-10-07 — HOLD` | `1eZKED3ikOOt7z96nEyspV6RxvKxTfgAd` | 17 998 | там же |
+| `05 W0 ACQUISITION FAMILIES AND DRIVE INTAKE 2026-10-07 — HOLD` | `1aigyR95l0DI8jMfxCTAKhvvm1RGffbVF` | 15 414 | там же |
+| `06 PUBLICATION ARCHITECTURE FOR GOSPOD-BOG 2026-10-07 — HOLD` | `1_eb42tHpIRJkeZqLQ_HHuwpapX7hWiMF` | 17 905 | там же |
+| `07 W0 DRIVE MIRROR RECEIPT 2026-10-07 — HOLD` | `1r4UNqlNv4xgBYf_vCI-R-hjyihyal-jr` | 7 729 | там же |
+| `redemption-corpus-authority-2026-10-07.json — HOLD` | `1VVOS5a_Oq5wfNmbhQBGLbm6wfh-CFPAs` | 13 683 | там же |
+| `README.md — HOLD` | `1tTA18HWLlF_GseQCC4hCymbWWn6fj349` | 9 451 | там же |
+| `00 — AUTHORITY — W0-era name — HOLD` (×3, a/c/e) | `1AG1egmE…`, `1NQ12OhD…`, `1EqpEu8L…` | 11 330 / 11 785 / 12 623 | там же |
 
-Владелец всех четырёх — аккаунт `oldpoet2025@gmail.com` (не агент). Их наличие в Drive **не является приёмкой**: по §3 политики `RECEIVED` требует sha256, а хеш этих объектов ещё не вычислен (объекты 16–45 МБ; хеширование выполняется на шаге, когда файл реально читается под конкретный claim, а не «на всякий случай»).
+Ни один из перенесённых объектов не был изменён по содержимому: перенос не создаёт новой
+редакции и **не является** приёмкой — `receptionState` для всех строк §1 остаётся
+`OBJECT-PRESENT-UNHASHED`, а для четырёх библиотечных копий §2 — `RECEIVED_UNHASHED`
+(наличие объекта ≠ receipt; sha256 не считывались, их размер делает это нецелесообразным).
 
-Что эти четыре объекта уже меняют: `RED-SRC-0303` (Institutes III.21–24), `RED-SRC-0304…0306` (Works Оуэна, в т. ч. том 10 с *Death of Death*), `RED-SRC-0308` (Goodwin), `RED-SRC-0005` (WCF VIII/XI) переходят с `ACCESS: NONE` на `ACCESS: OBJECT-PRESENT-UNREAD`. Это не право цитировать; это снятие барьера «добыть».
-
-**Дефект исходного имени, требующий правки на стороне владельца:** у файла Оуэна `originalFilename` = `Owen, John — The Works of John Murray wait no — The Works of John Owen (PD copy).pdf` — черновое самоназвание попало в метаданные. Само имя в Drive корректно; править нужно исходное имя, и это решение владельца, а не агента.
-
-### Сводки, созданные ранее в этой же волне (Google Docs)
-
-| Документ | Папка | file id |
-|---|---|---|
-| `00 README AND NAVIGATION — Искупление (2026-10-07)` | 00 | `1qXjocuWb3xm747BLhtmDBNY4Pd_EhbgZbAlFVgZDqSk` |
-| `00 CURRENT AUTHORITY — Искупление 2026-10-07` | 00 | `1bI3GKw5tpAV3uDHUxGwz42WmAa2i2giGkpT49USkMVM` |
-| `01 MASTER RESEARCH MAP AND SERIES ARCHITECTURE` | 00 | `1_0I6d9OiRapJWQ9RzsgIAu73dxeArTJSI7ViRBMPlNw` |
-| `02 TERMS, DEFINITIONS AND WHAT IS ATONEMENT` | 00 | `14EwvFHHCY3OlaMJ_tKQH7mGbr3Z3Fc5CqBNGrQNZO7A` |
-| `06 PUBLICATION ARCHITECTURE FOR GOSPOD-BOG — do not implement yet` | 00 | `1mxYsP0RPDM8yNq_XCEJQXpDit96QP2z2KKww7psPcKs` |
-| `08 Murray RAA source card — RIGHTS HOLD — no full text` | 02 | `1k2iVUPhMXwtV9hrAaZwlOM0YPW-V4JPCf8q4eR43zsA` |
-| `03 BIBLICAL CORPUS AND REDEMPTION VOCABULARY` | 03 | `1xMwEx6UA2W4N8sE3b9DKRifRnko8T4-RNZfO0_IB-Cs` |
-| `04 LIMITED VS UNIVERSAL QUESTION MAP — no verdict` | 05 | `1GFVUswVklNLz5VCtZRclMFj9b06nA4WUj1pjbIrtNaA` |
-| `05 SOURCE REGISTRY AND ACQUISITION QUEUE` | 05 | `1yRVrEg-BglE8442TvZ5iIvr3WGGmEe5TOXADRtlmE4c` |
-| `07 DRIVE LIBRARY AND RIGHTS LEDGER` | 06 | `1a1OFbfqzHEQfGS-WBPBRRfJR-a8hu6IMfRJwx9C5-UY` |
-
-Решение по ним: они **не удаляются** и **не правятся задним числом**. Их статус — `SUPERSEDED-BY-MIRROR (чтение разрешено, цитирование запрещено, canonical — markdown в репозитории)`: реестр источников теперь ведёт `03_W0_SOURCE_REGISTRY_2026-10-07.md`, терминологию — `01_W0_INTRODUCTION_AND_TERMINOLOGY_2026-10-07.md`, карту вопроса — `04_W0_COMPETING_MODELS_TAXONOMY_2026-10-07.md`. Если владелец предпочитает видеть в Drive единый слой, эти десять объектов можно убрать вручную — но удаление не нужно для корректности корпуса, поэтому решение оставлено владельцу.
-
-Отдельно: каталог `01 — ИСКУПЛЕНИЕ …`, упоминавшийся в черновике волны, при обращении 2026-10-07 не разрешился (Drive ответил `File not found`), то есть второй структуры сейчас нет и третья не создаётся: приём корпуса идёт только в `07`-дерево.
-
----
+Карантиная папка: `99 — HOLD — SUPERSEDED MIRRORS (не удалять: старые копии, ID живы)` →
+`1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd`, дочерняя к `07 — СЕРИЯ «ИСКУПЛЕНИЕ»`; создана 2026-10-08
+08:36Z, мои объекты перенесены в неё 2026-10-08 22:58–22:59Z. File id и размеры сохранены,
+то есть перенос не создавал копий и ничего не перезаписывал. В той же папке лежат и
+собственные промежуточные ревизии канонического лана (`atonement-corpus-v1.json` по волнам,
+`07 RIGHTS LEDGER · волна c…g`) — convention, а не адресованное нам действие.
+Практические следствия: (1) в приёмных папках `00`/`01`/`02`/`03`/`06` зеркал корпуса больше нет;
+(2) `02` сейчас содержит Murray-дампы и карточки канонической линии (см. §3a);
+(3) повторную выгрузку этих файлов в `07`-дерево делать нельзя, пока владелец не решит
+реконсилияцию; (4) `STALE`-строки §1–§3 этого файла остаются точным снимком 2026-10-07
+и не должны читаться как текущее состояние.
 
 ## 1. Загруженные объекты (11 зеркал spine + этот документ = 12 строк)
 

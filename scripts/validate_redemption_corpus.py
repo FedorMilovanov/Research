@@ -29,6 +29,7 @@ F = {
     "product": "06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG_2026-10-07.md",
     "primary": "10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md",
     "mirror": "07_W0_DRIVE_MIRROR_RECEIPT_2026-10-07.md",
+    "reconciliation": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
     "index": "README.md",
 }
 
@@ -37,6 +38,9 @@ EXPECTED_GROUPS = {"A": 22, "B": 23, "C": 12, "D": 7, "TC": 7}
 EXPECTED_TOTAL = 71
 EXPECTED_SOURCE_RECORDS = 113
 EXPECTED_FAMILIES = 13
+VERIFIED_ON = "2026-10-15"        # this audit pass; the Wave-0 content itself is dated 2026-10-07
+CANONICAL_AUTHORITY_IN_MAIN = "ATONEMENT-CORPUS-AUTHORITY-2026-10-07"
+QUARANTINE_FOLDER = "1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd"
 ALLOWED_PUB_STATES = {"HOLD", "FORBIDDEN-AS-evidence", "DO_NOT_IMPLEMENT_UNTIL_W6"}
 DRIVE_ROOT = "1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV"
 DRIVE_CHILDREN = 7
@@ -84,11 +88,11 @@ req(
 )
 req(
     data.get("status")
-    == "WAVE0_OPEN_CHARTER_TERMINOLOGY_REGISTRY_PRIMARYTEXT_NO_PUBLICATION",
-    "registry: status drift (must not advertise closure)",
+    == "WAVE0_BRANCH_LOCAL_SUPERSEDED_BY_CANONICAL_LANE_NO_PUBLICATION",
+    "registry: status drift (must not advertise closure, and must not claim theme ownership)",
 )
 req(data.get("corpus") == "ИСКУПЛЕНИЕ", "registry: corpus key drift")
-req(data.get("lastVerifiedAt") == "2026-10-07", "registry: lastVerifiedAt drift")
+req(data.get("lastVerifiedAt") == VERIFIED_ON, "registry: lastVerifiedAt drift")
 
 gov = data.get("governance", {})
 req(
@@ -122,7 +126,7 @@ for key, text in texts.items():
             if token.lower() in text.lower():
                 errors.append(f"ИСКУПЛЕНИЕ/{F[key]}: forbidden self-approval token {token!r}")
 
-req(len(F) == 11, "file map drift")
+req(len(F) == 12, "file map drift")
 for key in F:
     req(key in texts and texts[key] != "", f"corpus file not loaded: {key}")
 
@@ -288,6 +292,28 @@ req("STALE" in texts["mirror"], "mirror receipt must state the stale-object verd
 req(mirror_state.get("bookFullTextsMirrored") == 0, "registry: mirror must not count books")
 req(mirror_state.get("conversionToGoogleDocs") is False, "registry: mirror conversion drift")
 req(Path(mirror_state.get("receiptFile", "")).exists(), "registry: mirror receipt file missing")
+
+# ------------------------------------------------------- reconciliation state ---
+# This spine is NOT the theme authority: main owns the 112-file atonement corpus. The gate
+# requires that the branch says so out loud in all three places, and that the claims this
+# audit disproved are recorded as retracted rather than quietly rewritten.
+recon = data.get("reconciliation", {})
+req(recon.get("mergeBase", "").startswith("EMPTY"), "registry: reconciliation must record the unrelated-histories fact")
+req(recon.get("canonicalThemeAuthorityId") == CANONICAL_AUTHORITY_IN_MAIN, "registry: canonical theme authority drift")
+req(len(recon.get("retractedClaims", [])) >= 4, "registry: fewer than 4 retracted claims recorded")
+req(recon.get("driveQuarantine", {}).get("folderId") == QUARANTINE_FOLDER, "registry: quarantine folder id drift")
+req(recon.get("resolutionOptions", {}).get("C_rejected", "") != "", "registry: the rejected resolution must be stated")
+req(data.get("drive", {}).get("mirror", {}).get("reuploadAllowed") is False, "registry: re-upload into the Drive mirror tree must be disallowed")
+req(json.dumps(data.get("spineHistory", {}), ensure_ascii=False).count("supersededByCanonicalLane") == 1,
+    "registry: spineHistory must record exactly one supersession flag")
+recon_text = texts["reconciliation"]
+for needle in (CANONICAL_AUTHORITY_IN_MAIN, QUARANTINE_FOLDER, "merge-base", "112", "#196", "9da9c26"):
+    req(needle in recon_text, f"reconciliation file does not record {needle!r}")
+req("отзывается" in mirror, "mirror receipt must retract its supersession claim explicitly")
+req(QUARANTINE_FOLDER in mirror and "99 — HOLD" in mirror, "mirror receipt must record where its objects actually live now")
+req(CANONICAL_AUTHORITY_IN_MAIN in texts["current"], "status card must name the active authority of the canonical spine")
+req(data.get("verification", {}).get("quoteSafeArticlesInEitherGraph") == 0,
+    "registry: no quote-safe article exists in either graph; do not advertise one")
 
 # ------------------------------------------------------------- the intro pair ---
 req("SUPERSEDED" not in texts["index"], "index: silent-supersession marker not allowed here")

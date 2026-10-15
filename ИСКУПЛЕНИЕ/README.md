@@ -1,7 +1,7 @@
 # Искупление — canonical research authority index
 
 **Дата открытия корпуса:** 2026-10-07
-**Статус корпуса:** `WAVE-0 / CHARTER + TERMINOLOGY + SOURCE-REGISTRY OPEN / NOT-FOR-PUBLICATION`
+**Статус корпуса:** `WAVE-0 / BRANCH-LOCAL / НЕ-ДЕЙСТВУЮЩАЯ-AUTHORITY-ТЕМЫ / NOT-FOR-PUBLICATION` (действующая authority темы — в `main`; см. §1a и `17_...`)
 **Canonical directory:** `ИСКУПЛЕНИЕ/`
 **Machine registry:** [`../data/redemption-corpus-authority-2026-10-07.json`](../data/redemption-corpus-authority-2026-10-07.json)
 **Validator:** [`../scripts/validate_redemption_corpus.py`](../scripts/validate_redemption_corpus.py)
@@ -28,17 +28,26 @@
 | 06 | `06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG_2026-10-07.md` | архитектурное предложение для сайта (только proposal) | `PROPOSAL / DO-NOT-IMPLEMENT` |
 | 07 | `07_W0_DRIVE_MIRROR_RECEIPT_2026-10-07.md` | побайтное зеркало корпуса в Drive 07-дерева: ids, размеры, sha256, что здесь запрещено | `CURRENT / MIRROR-RECEIPT` |
 | 10 | `10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md` | верифицированный текст Второй главы постановлений Синода в Дордрехте (Arts I–IX) + фрагмент Кальвина на 1 Ин. 2:1–2 | `CURRENT / PRIMARY-TEXT-VERIFIED` |
+| 17 | `17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md` | relation этого графа к каноническому корпусу в `main`: коллизии, опровергнутые строки этой ветки, что аддитивно | `AUDIT / RECONCILIATION` |
 
 ---
 
-# 1a. Что не входит в эту spine (история, а не удаление)
+# 1a. Relation к канонической линии темы (главная пометка этого аудит-прохода)
 
-В более ранней сессии проекта по этой теме описывались ещё два файла: `01_VVEDENIE_TERMINY_I_OPREDULENIYA_2026-10-07.md` (введение-досье) и `100_PRODUKT_ARHITEKTURA_I_HANDOFF_2026-10-07.md` (архитектура продукта). В текущем checkout их нет (ни в рабочем дереве, ни в HEAD), и они **не** восстановлены по памяти: их роли явно переназначены — терминология владеет `01_W0_INTRODUCTION_AND_TERMINOLOGY_2026-10-07.md`, архитектура владеет `06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG_2026-10-07.md`, а статусная карточка корпуса — `00_CURRENT_AUTHORITY_2026-10-07.md`. Введения в двух экземплярах в корпусе нет. Если эти файлы появятся извне, они принимаются как input и сверяются со spine, а не становятся второй параллельной authority; расхождение разрешается явной записью, а не молча.
-
----
+Каноническая spine темы искупления в этом репозитории лежит в `main` (`ИСКУПЛЕНИЕ/`
+в 112 файлах, authority `ATONEMENT-CORPUS-AUTHORITY-2026-10-07` — файл того же имени,
+что и наш статусный файл, но 29 761 B против наших 5 581 B). Этот каталог в этой ветке —
+волна 0, написанная поверх базы 2026-10-02, и она **не** является действующей authority
+темы. Файлы более ранней сессии (`01_VVEDENIE_TERMINY_I_OPREDULENIYA_2026-10-07.md`,
+`100_PRODUKT_ARHITEKTURA_I_HANDOFF_2026-10-07.md`) не «исчезли»: развитие той волны
+и есть канонический корпус в `main`. Разбор коллизий, отзыв отдельных строк этой ветки
+и список аддитивного — в `17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md`.
+Молча ничего не переопределяется: если эта spine сохраняется, она сохраняется как
+архивный вход, а не как вторая параллельная authority.
 
 # 2. Порядок чтения
 
+0. `17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md` — сначала: чей граф действует и что здесь только историческое.
 1. `00_MASTER_RESEARCH_MAP_AND_CHARTER_2026-10-07.md` — что именно исследуется и чего делать нельзя.
 2. `01_W0_INTRODUCTION_AND_TERMINOLOGY_2026-10-07.md` — что такое «искупление» и какие различения обязаны быть зафиксированы до спора.
 3. `10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md` — первый зафиксированный первичный текст ( hinge-документ всей дискуссии).
@@ -70,5 +79,9 @@ PD BOOK COPIES PRESENT IN Drive (unhashed, unread)  = 4  (Owen Works, Goodwin, C
 READER-READY DRAFTS                                 = 0
 PRODUCT IMPLEMENTATION                              = NOT STARTED
 ```
+
+CANONICAL SPINE OF THIS DOCTRINE                = main `ИСКУПЛЕНИЕ/` (112 files)
+THIS BRANCH                                      = Wave 0 archive, 11 files, 1 colliding path
+QUOTE-SAFE ARTICLE IN EITHER GRAPH               = 0
 
 Ничто в этом корпусе не может быть описано как «исследовано», «доказано» или «готово к публикации», пока не закрыт соответствующий wave в `00_...` §6 с явным exit-критерием.

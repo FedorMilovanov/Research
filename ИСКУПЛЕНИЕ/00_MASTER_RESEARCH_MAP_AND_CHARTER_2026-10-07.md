@@ -2,7 +2,12 @@
 
 **Дата:** 2026-10-07
 **Authority ID:** `REDEMPTION-CORPUS-CHARTER-2026-10-07`
-**Статус:** `CURRENT / WAVE-0 / FAIL-CLOSED / NOT-FOR-PUBLICATION`
+**Статус:** `BRANCH-LOCAL / WAVE-0 / FAIL-CLOSED / NOT-FOR-PUBLICATION` — см. пометку ниже
+**Пометка аудита 2026-10-15:** этот charter описывает волну 0, написанную поверх базы 2026-10-02.
+Канонический корпус темы в `main` построил собственный `01_MASTER_RESEARCH_MAP_AND_SERIES_ARCHITECTURE.md`
+и развивает его; волны `W1…W7` отсюда **не** продолжаются в этом графе, а переносятся (если владелец
+решит так) как задачи в каноническую очередь `05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md`.
+Разбор — `17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md`.
 **Machine registry:** [`../data/redemption-corpus-authority-2026-10-07.json`](../data/redemption-corpus-authority-2026-10-07.json)
 **Evidence policy:** [`../data/repository-evidence-policy-v2.json`](../data/repository-evidence-policy-v2.json)
 **Drive intake root:** `07 — СЕРИЯ «ИСКУПЛЕНИЕ»` → `1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV`

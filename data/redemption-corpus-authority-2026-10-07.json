@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "authorityId": "REDEMPTION-CORPUS-AUTHORITY-2026-10-07",
-  "status": "WAVE0_OPEN_CHARTER_TERMINOLOGY_REGISTRY_PRIMARYTEXT_NO_PUBLICATION",
+  "status": "WAVE0_BRANCH_LOCAL_SUPERSEDED_BY_CANONICAL_LANE_NO_PUBLICATION",
   "corpus": "ИСКУПЛЕНИЕ",
   "openedAt": "2026-10-07",
-  "lastVerifiedAt": "2026-10-07",
+  "lastVerifiedAt": "2026-10-15",
   "governance": {
     "evidencePolicy": "data/repository-evidence-policy-v2.json",
     "agentRules": "AGENT_RULES.md",
@@ -290,7 +290,8 @@
     "policy": {
       "fullTextAllowedOnlyWhenRightsVerified": true,
       "copyrightedFullTextUploadAllowed": false,
-      "legacyCorpusFolderNote": "ранее созданный каталог '01 — ИСКУПЛЕНИЕ …' (id 1BxmgovCZawdtK21q4JYXNNq05raOu1gH) является предшественником; новые загрузки идут только в 07-дерево, параллельная третья структура запрещена"
+      "legacyCorpusFolderNote": "ранее созданный каталог '01 — ИСКУПЛЕНИЕ …' (id 1BxmgovCZawdtK21q4JYXNNq05raOu1gH) является предшественником; новые загрузки идут только в 07-дерево, параллельная третья структура запрещена",
+      "mirrorPlacementRule": "запрещены: замена канонических объектов main, создание третьей структуры и повторная выгрузка зеркал этой ветки в 07-дерево (ныне 11 из них лежат в 99 — HOLD — SUPERSEDED MIRRORS, id `1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd`). Канонический корпус темы и его Drive-дерево этой ветке не переприсвоены"
     },
     "mirror": {
       "receiptFile": "ИСКУПЛЕНИЕ/07_W0_DRIVE_MIRROR_RECEIPT_2026-10-07.md",
@@ -312,7 +313,10 @@
         "redemption-corpus-authority-2026-10-07.json"
       ],
       "staleObjects": 0,
-      "lagPolicy": "расхождение разрешается в пользу локального canonical-файла; зеркало обновляется целиком на следующем шаге волны, частичных правок в Drive нет"
+      "lagPolicy": "расхождение разрешается в пользу локального canonical-файла; зеркало обновляется целиком на следующем шаге волны, частичных правок в Drive нет",
+      "stateAsOf2026-10-15": "0 in intake folders except 3; 11 quarantined in 99 — HOLD",
+      "quarantineFolderId": "1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd",
+      "reuploadAllowed": false
     },
     "preexistingObjects": {
       "bookCopies": [
@@ -385,7 +389,7 @@
       "любой пересказ Rejection of Errors по Второй главе Дорта"
     ],
     "LOCATOR": [
-      "страницы в RED-SRC-0401…0442 (современные книги: оглавления есть, страницы у选择性 глав — нет)",
+      "страницы в RED-SRC-0401…0442 (современные книги: оглавления есть, страницы у выборочных глав — нет)",
       "печатная пагинация перевода канонов 1840 г.",
       "титульные данные перевода комментария Кальвина"
     ],
@@ -408,10 +412,16 @@
     "filesVerifiedCount": 0,
     "quotationsPageVerified": 0,
     "publicationEligible": false,
-    "closureStatement": "Wave 0 открыт как каркас; тема не закрыта; публичный статус корпуса — CLOSED_WITH_HOLDS для любых внешних материалов, кроме зафиксированных в primaryTexts"
+    "closureStatement": "Wave 0 открыт как каркас; тема не закрыта; публичный статус корпуса — CLOSED_WITH_HOLDS для любых внешних материалов, кроме зафиксированных в primaryTexts",
+    "canonicalCorpusFilesInMain": 112,
+    "branchCorpusFiles": 12,
+    "collidingPaths": 1,
+    "mergeBaseCommits": 0,
+    "retractedClaims": 4,
+    "quoteSafeArticlesInEitherGraph": 0
   },
   "spineHistory": {
-    "note": "в предыдущей сессии проекта описывались ещё три файла корпуса; в этом checkout их не оказалось, поэтому spine переписана явно и без молчаливого удаления истории: статусная карточка воссоздана как 00_CURRENT_AUTHORITY_2026-10-07.md, роль введения закреплена за 01_W0_INTRODUCTION_AND_TERMINOLOGY_2026-10-07.md (единственный терминологический владелец), роль архитектурного handoff — за 06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG_2026-10-07.md",
+    "note": "в этой ветке spine волны 0 была написана поверх базы 2026-10-02, не видевшей каноническую линию темы. Файлы `01_VVEDENIE...` и `100_PRODUKT...` не «утеряны» и не «переопределены» этой веткой: их развитие — канонический корпус в main (112 файлов). Статусная карточка здесь остаётся карточкой только этой ветки; владение темой у main. Разбор — в ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
     "notCarriedOver": [
       "ИСКУПЛЕНИЕ/01_VVEDENIE_TERMINY_I_OPREDULENIYA_2026-10-07.md",
       "ИСКУПЛЕНИЕ/100_PRODUKT_ARHITEKTURA_I_HANDOFF_2026-10-07.md"
@@ -419,6 +429,86 @@
     "reestablished": [
       "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md"
     ],
-    "ruleIfTheyReappear": "появившийся извне файл принимается как input и сверяется со spine; второй параллельная authority не создаётся, расхождение разрешается явной записью"
+    "ruleIfTheyReappear": "появившийся извне файл сверяется с канонической spine main, а не с этой веткой; в архивной волне 0 новые authority не создаются",
+    "supersededByCanonicalLane": true
+  },
+  "governanceDoc": {
+    "branchStatusCard": "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+    "auditAndReconciliation": "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
+    "activeThemeAuthority": "main · ATONEMENT-CORPUS-AUTHORITY-2026-10-07 · ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md"
+  },
+  "reconciliation": {
+    "auditDate": "2026-10-15",
+    "mainHead": "6cac62e",
+    "mainShape": "single-parentless-orphan-snapshot/committed-2026-10-15T11:28:55+03:00/2322-files",
+    "branchHead": "569869e",
+    "branchBase": "9da9c26 (2026-10-02) + 3 wave-0 commits",
+    "mergeBase": "EMPTY/unrelated-histories/PR-merge-not-possible-without-owner-decision",
+    "canonicalThemeDirectory": "112 files in main (ot 30, nt 33, fathers 13, synthesis 17, data 1, root lane 17) · ИСКУПЛЕНИЕ/",
+    "canonicalThemeAuthorityId": "ATONEMENT-CORPUS-AUTHORITY-2026-10-07",
+    "collidingPaths": [
+      "branch 5581 B vs main 29761 B · ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md"
+    ],
+    "additiveCandidates": [
+      "scripts/validate_redemption_corpus.py + .github/workflows/redemption-corpus-integrity.yml (must be rewritten onto main's file set)",
+      "03 layer R (Russian reception: Tolchaya Bibliya, Makary, PD commentaries, emigre periodicals) + layer L lexica links",
+      "04 axis frame O-1..O-6",
+      "06 publication-architecture deltas (glossary / original-words / route-search-policy / content.config / release order)"
+    ],
+    "notTransferable": [
+      "01 terminology (main: 02_TERMS + nt/01..05 lexical fields)",
+      "02 scripture inventory (main: 12_HARD_TEXTS_EXTENT_CARDS + nt pericope cards)",
+      "00 status card (main: 00_CURRENT_AUTHORITY)",
+      "10 Dort text (main ingested it as 16_ and collated against Scott 1841 pp. 282-292 and Schaff Latin)"
+    ],
+    "retractedClaims": [
+      "07_W0_DRIVE_MIRROR_RECEIPT:0a — the ten lane documents are 'SUPERSEDED-BY-MIRROR' by our mirrors (direction is reversed)",
+      "07_W0_DRIVE_MIRROR_RECEIPT:4 — 'CORPUS MIRRORS PLACED = 11' read as current state",
+      "README:1a — 'previous-session files are absent from the checkout and roles re-assigned' (their development is main's canonical spine)",
+      "00_CURRENT_AUTHORITY:4.3 and 05:3 — 'OWNER-MANUAL retrieval / Murray text absent' as current state"
+    ],
+    "driveQuarantine": {
+      "folder": "99 — HOLD — SUPERSEDED MIRRORS",
+      "folderId": "1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd",
+      "parent": "1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV",
+      "created": "2026-10-08T08:36:31Z",
+      "ourMirrorsMoved": "2026-10-08T22:58:03Z..22:59:43Z",
+      "ourObjectsQuarantined": 13,
+      "ourObjectsStillActiveInIntakeFolders": 3,
+      "rule": "no re-upload into the 07-tree while the reconciliation hold stands; ids and byte sizes preserved by the move"
+    },
+    "mainValidatorsOnSnapshot": {
+      "pass": 35,
+      "needsArgs": 33,
+      "realFail": 4,
+      "realFails": [
+        "validate_branch_retirement_authority.py — forensic archive head 321e3efb... not a valid object + remote branch-set drift (27 heads)",
+        "validate_bratsky_listok_authority_manifest.py — pinned commit f3601a30... unavailable",
+        "validate_genesis6_authority_manifest.py — authorityBaseCommit b654c537... is not an ancestor of HEAD",
+        "validate_osk_wave7_product_article_audit.py — requires PRODUCT_REPO (environment, not regression)"
+      ],
+      "cause": "history compaction into an orphan snapshot invalidated every commit-pinned witness anchor",
+      "ntLaneSuiteOnSnapshot": "3 of 14 FAIL: 2x missing external SBLGNT datasets under /home/user/nt-corpus, 1x genesis6 pin",
+      "note": "35 PASS / 33 need args (--product-root, PRODUCT_REPO) / 4 real FAIL of 72 root validators; gates on main: repository-authority-integrity PASS, research_root_authority PASS"
+    },
+    "governanceFindings": [
+      "main is not protected; issue #196 (P0: protect main with PR + required CI ruleset) still OPEN",
+      "the orphan rewrite of main was itself an unreviewed direct write to main",
+      "open PRs without review: #207 (apostasy integrity audit), #182 (1cor11 citation quarantine)",
+      "main has no root validator and no workflow for the atonement corpus; checks live only in ot/tools and nt/tools",
+      "no atonement corpus entry in data/research-authority-registry-v1.json; main README registers it (line 52)"
+    ],
+    "hold": "RECONCILIATION_HOLD: эта волна не действующая authority темы; отношение к канонической spine разрешает владелец",
+    "resolutionOptions": {
+      "A_recommended": "transplant only additiveCandidates onto a new branch cut from main, renumbered into their 17+ sequence; retire this branch; never --allow-unrelated-histories",
+      "B": "archive-only: keep the branch, add a pointer in main's 00_README_AND_NAVIGATION, no PR",
+      "C_rejected": "re-apply the whole wave-0 spine onto main: reproduces a double 00_CURRENT_AUTHORITY and a double terminology owner"
+    },
+    "forbiddenWhileHoldStands": [
+      "PR из этой ветки в main",
+      "повторная выгрузка зеркал в 07-дерево Drive",
+      "перенумерация файлов этой spine",
+      "продолжение волн W1..W7 в этом графе"
+    ]
   }
 }
