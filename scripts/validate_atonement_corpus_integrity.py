@@ -16,7 +16,9 @@ repository checks:
   4. nothing may advertise publication: no self-approval token is allowed, and the
      corpus authority must keep stating that a quote-safe Product article does not exist.
 
-Fail-closed. Writes nothing. Exit 1 on any drift.
+Fail-closed. Writes nothing. Exit 1 on any drift. Perimeter: dead file references are enforced on the
+machine registry and on the three governance documents; ordinary prose is left alone on purpose, because
+an audit sentence may legitimately name a file that no longer exists.
 """
 from __future__ import annotations
 
@@ -80,16 +82,21 @@ def read(path: Path) -> str:
     return path.read_text(encoding="utf-8") if path.is_file() else ""
 
 
-def walk_paths(node, prefix=""):
-    """Every string leaf of the registry with its key path, so no section can hide a dead link."""
+def walk_paths(node, prefix="", holder=None):
+    """Every string leaf of the registry with its key path and its nearest object.
+
+    The nearest object travels along because a dead reference is only legal when *that entry*
+    declares it (erratum / gitPathState / Drive-only), and a sibling section must not be able to
+    grant the exemption by accident.
+    """
     if isinstance(node, dict):
         for key, value in node.items():
-            yield from walk_paths(value, f"{prefix}.{key}" if prefix else str(key))
+            yield from walk_paths(value, f"{prefix}.{key}" if prefix else str(key), node)
     elif isinstance(node, list):
         for index, value in enumerate(node):
-            yield from walk_paths(value, f"{prefix}[{index}]")
+            yield from walk_paths(value, f"{prefix}[{index}]", holder)
     elif isinstance(node, str):
-        yield prefix, node
+        yield prefix, node, holder
 
 
 def resolve(reference: str) -> bool:
@@ -156,7 +163,7 @@ if registry:
     # единственный легальный способ сослаться на отсутствующий путь — объявить его отсутствующим
     absent_prefixes = tuple(str(v) for v in (agents.get("declaredAbsentPrefixes") or [])
                             if agents.get("gitPathState"))
-    for key_path, raw in walk_paths(registry):
+    for key_path, raw, _h in walk_paths(registry):
         value = raw.split(" ")[0]          # «…/14_….md §2.6» — якорь раздела, не часть пути
         if not value.startswith(("ИСКУПЛЕНИЕ/", "data/", "docs/", "scripts/")):
             continue
@@ -170,6 +177,23 @@ if registry:
                       "without an erratum/gitPathState/declaredAbsentPrefixes declaration")
     req(bool(agents.get("gitPathState")) == bool(absent_prefixes),
         "registry: parallelAgents.gitPathState and declaredAbsentPrefixes must be declared together")
+    # Имя файла корпуса без префикса пути — это всё равно обещание, что файл в дереве есть.
+    # Проза корпуса вне периметра сознательно (см. docstring): историческая запись вправе назвать
+    # несуществующий файл, и превращать это в красный CI значило бы учить всех ослаблять гейт.
+    bases = [ROOT, CORPUS] + [CORPUS / sub for sub in SUBLANES] + [DOCS]
+    for key_path, value, holder in walk_paths(registry):
+        name = value.strip()
+        if not re.fullmatch(r"(?:[\w./-]+/)?\d{2}_[\w.-]+\.(?:md|json)", name):
+            continue
+        if name.startswith(absent_prefixes):   # то же объявление отсутствия, что и уPrefixed-скана
+            continue
+        if any((b / name).exists() or (b / name.split("/")[-1]).exists() for b in bases):
+            continue
+        declared = isinstance(holder, dict) and any(
+            "erratum" in str(v).lower() for v in holder.values() if isinstance(v, str))
+        if not declared:
+            errors.append(f"registry: {key_path} names a corpus file that exists nowhere in the tree "
+                          f"({name!r}) — either restore it or mark the entry with an erratum note")
     lanes = registry.get("adjacentLanes") or []
     req(any(str(item.get("path", "")).endswith("docs/research/atonement") for item in lanes),
         "registry: the adjacent polemic lane is not declared in adjacentLanes")

@@ -902,7 +902,8 @@
       "inGit": true,
       "gitPath": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
       "transfer": "2026-10-07 second wave: the primary-text blocks (Dort Head II Articles I-IX, translation of 1840; Calvin on 1 John 2:1-2, CCEL 19th c.) were read from the Drive file byte-wise and transferred into the Git canon; the W0 verification scaffolding was not transferred, it belongs to another corpus",
-      "alsoTransferred": "Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — read and transferred in the same wave"
+      "alsoTransferred": "Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — read and transferred in the same wave",
+      "gitStatus": "erratum 2026-10-15: файла нет в git; он относился к волне 0, снятой с верхушки ветки. Единственная живая копия — Drive `99 — HOLD — SUPERSEDED MIRRORS` (id 1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo). Содержимое первоисточника при этом в каноне: `ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md`."
     },
     "driveCalvinPdfExtractFailedBytes": 45351929,
     "driveOwenPdfExtractFailedBytes": 42084171,
