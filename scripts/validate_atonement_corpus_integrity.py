@@ -255,6 +255,26 @@ if claimed and actual and max(claimed) != actual:
         f"…C-{max(claimed):02d}: update the authority, do not leave the count stale"
     )
 
+# ------------------------------------------------------------ merge hygiene --
+# соседний лан конфликтует с корпусом по 27 путям (предполёт 2026-10-16), поэтому закоммиченные
+# маркеры разрешения конфликта — реальный, а не гипотетический способ испортить корпус
+CONFLICT_LINE = re.compile(r"^(?P<kind>[<>=|]{7})(?: .*)?$")
+for path in sorted(CORPUS.rglob("*.md")) + sorted(CORPUS.rglob("*.json")):
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    hits = {}
+    for line_no, line in enumerate(text.splitlines(), 1):
+        found = CONFLICT_LINE.match(line)
+        if found:
+            hits.setdefault(found.group("kind"), []).append(line_no)
+    # «=======» сам по себе законен как underlined-заголовок markdown, поэтому считается
+    # признаком конфликта только в файле, где есть ещё и <<<<<<< или >>>>>>>
+    real = {"<<<<<<<", ">>>>>>>", "|||||||"} & set(hits)
+    if real:
+        for kind in sorted(real | {"======="} & set(hits)):
+            errors.append(f"{path.relative_to(ROOT)}:{hits[kind][0]} unresolved merge-conflict marker "
+                          f"{kind!r} (строки {', '.join(map(str, hits[kind][:4]))}) — корпус не должен "
+                          "содержать незакрытые разрешения конфликтов")
+
 # ------------------------------------------------------------- publication wall --
 for path in list(CORPUS.rglob("*.md")) + list(DOCS.rglob("*.md")):
     text = path.read_text(encoding="utf-8", errors="ignore")

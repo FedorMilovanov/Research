@@ -1187,11 +1187,49 @@
       "path": "docs/research/atonement",
       "role": "полемическое и терминологическое досье по той же доктрине (разбор статьи А. Прокопенко, TMS, Бакстер/Оуэн, лапсарианство)",
       "ownerBranch": "arena/771fdde7-research",
-      "state": "активный лан: 16 раундов на 2026-10-15T18:32Z, досье `34_` = 754 288 B; PR и CI-прогонов нет",
+      "state": "активный лан: раунд 22 на 2026-10-15T23:49Z (b289d5a), 36 файлов в docs/research/atonement; PR и CI-прогонов нет",
       "registeredIn": "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
-      "boundary": "не переносить в `ИСКУПЛЕНИЕ/` без решения владельца; ветка лана отстаёт от main на OT-слой, её штатный PR снёс бы `ИСКУПЛЕНИЕ/ot/` (32 файла, 7 908 строк) — см. реконсилияцию 17, §10c",
+      "boundary": "не переносить в `ИСКУПЛЕНИЕ/` без решения владельца. Ветка не имеет общего предка с main (git merge-base = пусто): squash/rebase-мерж сносит `ИСКУПЛЕНИЕ/ot/` — 30 файлов, 7 913 строк (18 md + data/ot-corpus-v1.json + 11 инструментов tools/); merge-commit ot/ сохраняет, но даёт 14 конфликтующих путей (5 в корпусе, 9 в лане), а вместе с PR #216 — 27 путей и разрушение JSON реестра. Подробности: реконсилияция 17, §10c",
       "recheckCommand": "git rev-list --count origin/arena/771fdde7-research -- docs/research/atonement",
-      "stateNote": "поле state выше — датированный замер (2026-10-15T18:32Z), не живой счётчик; на 20:18Z лан уже раунд 20 — пересчитывать командой recheckCommand"
+      "stateNote": "поле state выше — датированный замер (2026-10-15T18:32Z), не живой счётчик; на 20:18Z лан уже раунд 20 — пересчитывать командой recheckCommand",
+      "mergePreflight20261016": {
+        "mergeBase": "absent (refusing to merge unrelated histories)",
+        "squashOrRebase": {
+          "filesChanged": 45,
+          "additions": 2139,
+          "deletions": 7913,
+          "filesDeleted": 30,
+          "deletedLayer": "ИСКУПЛЕНИЕ/ot/"
+        },
+        "mergeCommit": {
+          "conflicts": 14,
+          "corpusPaths": [
+            "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
+            "ИСКУПЛЕНИЕ/02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+            "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+            "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+            "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md"
+          ],
+          "addedFiles": 1,
+          "otSurvives": true
+        },
+        "withPr216": {
+          "conflicts": 27,
+          "registryJson": "ломается на text-merge (line 959) -> гейт валится на 'corpus registry unreadable'",
+          "conflictLedger": "у них C-16, в main C-15 -> гейт требует обновить authority",
+          "registryKeys": {
+            "main": 23,
+            "pr216": 26,
+            "integrityGateOnlyInPr216": true
+          }
+        },
+        "procedure": [
+          "смержить #216 первым (0 конфликтов против main)",
+          "их ветку пересоздать от main и разрешить 5 корпусных путей вручную, сохраняя и OT-строки навигации, и их запись C-16",
+          "в data/atonement-corpus-v1.json оставить 26 ключей, включая integrityGate; после этого 00_CURRENT_AUTHORITY обязан содержать C-01…C-16"
+        ],
+        "how": "git merge-tree --write-tree --allow-unrelated-histories origin/main origin/arena/771fdde7-research; предполёт 2026-10-16T08:00Z"
+      }
     }
   ],
   "auditNote20261015": "Drive-дисциплина зеркал корпуса: 0 объектов с modifiedTime > 2026-10-13 при активных раундах в git; реконсилияция снятой волны 0 — `ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md`",
