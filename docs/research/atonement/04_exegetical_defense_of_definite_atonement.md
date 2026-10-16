@@ -87,3 +87,16 @@
 1. В противоположность ветхозаветному национальному партикуляризму Израиля (спасение для всех народов без различия);
 2. В значении всех сословий и классов человеческого общества (1 Тим. 2);
 3. В значении совокупности всех избранных, рассеянных по лицу земли (Ин. 11:52; Откр. 5:9).
+
+---
+
+## 6. Латинская база чтения «всех» (дополнение 2026-10-17, раунд 27; кросс-досье [`34_`](34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md) §4.55 п. 4, §4.57 п. 4.1)
+
+Перечень трёх значений, приведённый в конце §5, имеет **печатную латинскую базу 1619/1620 гг.**, а не является позднейшей апологетической конструкцией. Источники — официальный латинский том *Acta Synodi Nationalis… Dordrechti habitae* (1620): суждение депутатов фрисландских церквей по II артикулу и суждение гессен-веттерауских богословов (класс A2; локаторы — `34_` S112, S114).
+
+1. **«Omnes» = верующие.** Фрисландские депутаты: «Neque vocibus *omnibus*… notantur singuli homines in hac propositione… Ratio est quia hic non de impetratione sola reconciliationis… agitur, sed etiam de illius applicatione; nam cum propitiatione Christi ejusdem intercessio conjungitur, quae non est universalis pro singulis, sed **pro electis, sive actu credant, sive credituri sint**».
+2. **«Omnes» = люди любого сословия/рода** («все сословия и классы», ср. 1 Тим. 2): «quosvis scilicet, **cujuscunque ordinis homines**». В латинском суждении гессен-веттерауских та же мысль дана формулой «**genera singulorum, non singulos generum**» со ссылкой на Августина («omne genus hominum… omnes praedestinatos»).
+3. **«Omnes / mundus» = избранные из язычников** (иоанновский узус; ср. Ин. 11:51–52): «omnes non tantum populi Judaici, sed & Graecorum, sive gentium **electos & credentes**» — то же чтение, что в §4 настоящего досье для Ин. 11:52 и 1 Ин. 2:2.
+4. **Достаточность — действенность как общий узус, а не уступка.** Фрисландское суждение: «…hanc distinctionem: Christum pro omnibus & singulis mortuum esse, **quod ad sufficientiam**; pro electis vero & credentibus, **quod ad efficaciam**» — названа «usitatissima explicatio» и «à compluribus Orthodoxis sano sensu usurpatam»; рядом — Фома Аквинский у гессен-веттерауских («quantum ad sufficientiam, aequaliter se habet ad omnes: non autem, quantum ad efficaciam»).
+
+**Fail-closed оговорка (обязательна при использовании).** Эти loci **не** говорят «Дорт учит неограниченному искуплению»: то же фрисландское суждение отвергает «Christum **conditionate** mortuum esse pro omnibus & singulis», отвергает «tam Pharaoni, quam Abrahamo, tam Judae, quam Petro» и называет ремонстрантское понимание «nihil nisi quandam **remissibilitatem & reconciliabilitatem**»; Каноны II.8 ограничивают действенность избранными («ad eos solos fide justificante donandos»). Формулы — база для чтения «всех», но не вердикт об объёме искупления (`EVIDENCE_HOLD` корпуса в силе).
