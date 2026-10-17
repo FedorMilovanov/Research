@@ -902,7 +902,8 @@
       "inGit": true,
       "gitPath": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
       "transfer": "2026-10-07 second wave: the primary-text blocks (Dort Head II Articles I-IX, translation of 1840; Calvin on 1 John 2:1-2, CCEL 19th c.) were read from the Drive file byte-wise and transferred into the Git canon; the W0 verification scaffolding was not transferred, it belongs to another corpus",
-      "alsoTransferred": "Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — read and transferred in the same wave"
+      "alsoTransferred": "Calvin, Commentaries on the Catholic Epistles, on 1 John 2:1-2 (CCEL, 19th c. translation) — read and transferred in the same wave",
+      "gitStatus": "erratum 2026-10-15: файла нет в git; он относился к волне 0, снятой с верхушки ветки. Единственная живая копия — Drive `99 — HOLD — SUPERSEDED MIRRORS` (id 1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo). Содержимое первоисточника при этом в каноне: `ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md`."
     },
     "driveCalvinPdfExtractFailedBytes": 45351929,
     "driveOwenPdfExtractFailedBytes": 42084171,
@@ -956,7 +957,45 @@
       "report template: СДЕЛАНО / ПРОВЕРЕНО / НЕ ПРОВЕРЕНО / СРЕДА / РЕШЕНИЯ САМ / branch+SHA+PR+CI / what the owner should do"
     ],
     "driveFolder": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
-    "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon."
+    "driveNote": "Briefs are mirrored as Google Docs in folder 08; file ids change on re-upload, so the folder is the stable pointer and Git is the canon.",
+    "gitPathState": "по состоянию на 2026-10-15 каталог отсутствует в git (проверено по origin/main и по всем веткам remote); gitPathState — единственное объявление отсутствия, его удаление валит гейт. Под этот префикс попадают 6 полей реестра: briefsPath, index и domains[0..3].brief. Решение владельца: вернуть каталог из Drive-зеркала 08 — PARALLEL AGENT BRIEFS (folderId 1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n) или удалить parallelAgents из реестра и строку из 07_LEDGER.",
+    "driveMirrorFolder": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
+    "domainsOwnershipNote": "каждый домен владеет только своим под-корпусом; верхняя нумерация `ИСКУПЛЕНИЕ/` и `.github/` — вне агентских прав (владелец). Координационный агент с 2026-10-12 не активен: слитые ветки удалены, уникальных строк в его ветке нет",
+    "declaredAbsentPrefixes": [
+      "ИСКУПЛЕНИЕ/agents/"
+    ],
+    "driveMirrorDocs": {
+      "measuredAt": "2026-10-16",
+      "folder": "08 — PARALLEL AGENT BRIEFS",
+      "folderId": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
+      "objectCount": 5,
+      "readme": {
+        "name": "00 PARALLEL AGENTS — README",
+        "id": "1pNm2yL8mDxJe9b1n96LB_MqkO86bvsvfwNhv6_JRLmQ",
+        "sizeBytes": 4576,
+        "modifiedTime": "2026-10-07T21:47:09Z"
+      },
+      "briefs": {
+        "ot": {
+          "id": "1VVB6LqiF70ZZ0C8XfSLksJ5Q97pnQNtCUfBGyMW0IuI",
+          "sizeBytes": 10439
+        },
+        "nt": {
+          "id": "1cxkn7ZnEkB-qOjGHE4xQVLiHrD0bBVh6OeK3vsbMgFM",
+          "sizeBytes": 9665
+        },
+        "fathers": {
+          "id": "1GgJYzrPGP6Fa_FTHdaYhWz_4L_x0OCuKh_DdlAHAGJ0",
+          "sizeBytes": 10678
+        },
+        "synthesis": {
+          "id": "1lgscKqiEMMmW2djFzy3j4oq6_rVAPxBRkWb0_0daQbs",
+          "sizeBytes": 10588
+        }
+      },
+      "why": "Единственный живой носитель протокола четырёх агентов после удаления ИСКУПЛЕНИЕ/agents/ из верхушки ветки: id объектов теперь зафиксированы машинно, а не только ссылкой на каталог.",
+      "note": "Все пять объектов — Google Docs, modifiedTime 2026-10-07T21:47Z; изменены быть не могут без решения владельца."
+    }
   },
   "driveMirrors": {
     "file00": "1KD-8pMP_Jnk1lmsb2h3JbXxqpWLQgacdBMH57krdy_s",
@@ -1175,5 +1214,259 @@
         "note": "about who benefits from the delay of judgment, not about whose repentance God wills; do not conflate with p. 348"
       }
     }
+  },
+  "adjacentLanes": [
+    {
+      "path": "docs/research/atonement",
+      "role": "полемическое и терминологическое досье по той же доктрине (разбор статьи А. Прокопенко, TMS, Бакстер/Оуэн, лапсарианство)",
+      "ownerBranch": "arena/771fdde7-research",
+      "state": "активный лан: раунд 27 (parts 1-2) на 2026-10-16T20:24Z (tip 19836b3), 36 файлов в docs/research/atonement, 76 коммитов по этой директории; PR и CI-прогонов нет",
+      "registeredIn": "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
+      "boundary": "не переносить в `ИСКУПЛЕНИЕ/` без решения владельца. Ветка без общего предка с main: squash/rebase сносит `ИСКУПЛЕНИЕ/ot/` (30 файлов, 7 880 строк в них); merge-commit сохраняет ot/, но даёт 16 add/add-конфликтов (5 корпусных), с уже смерженным #216 — 20 (8 корпусных). Подробности и процедура: реконсилияция 17, §10c",
+      "recheckCommand": "git rev-list --count origin/arena/771fdde7-research -- docs/research/atonement",
+      "stateNote": "поле state — датированный снимок, не живой счётчик: между съёмками 16.10 (раунд 23, 68 коммитов по директории) и 17.10 (раунд 27, 76) прошло меньше суток, а темп неровный — раунды по 2 коммита (parts 1/2). Переснимать командой recheckCommand; числа мерж-сценариев — командой из mergePreflight20261016.how",
+      "mergePreflight20261016": {
+        "mergeBase": "absent (refusing to merge unrelated histories)",
+        "squashOrRebase": {
+          "filesChanged": 47,
+          "additions": 2494,
+          "deletions": 7913,
+          "filesDeleted": 30,
+          "linesInDeletedFiles": 7880,
+          "deletedLayer": "ИСКУПЛЕНИЕ/ot/ (18 md + data/ot-corpus-v1.json + 11 файлов tools/)",
+          "additionsHistory": {
+            "round 23 (16.10T08:10Z)": 2205,
+            "round 26 (16.10)": 2396,
+            "round 27 (17.10)": 2494
+          },
+          "note": "растёт только «+»; filesDeleted 30 и linesInDeletedFiles 7880 неизменны с 15.10"
+        },
+        "mergeCommit": {
+          "conflicts": 16,
+          "conflictsCorpus": 5,
+          "conflictsLane": 11,
+          "silentlyMerged": 31,
+          "corpusPaths": [
+            "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
+            "ИСКУПЛЕНИЕ/02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+            "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+            "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+            "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md"
+          ],
+          "addedFiles": 1,
+          "otSurvives": true,
+          "silentlyMergedComposition": "30 путей ot/ (удаление в merge-commit не применяется) + 1 новый файл лана 34_",
+          "lanePaths": [
+            "01_prokopenko_article_review",
+            "04_exegetical_defense_of_definite_atonement",
+            "05_pactum_salutis_and_double_jeopardy",
+            "11_anti_tulip_polemic_and_terminology_critique",
+            "16_lapsarian_critique_and_theological_flaws",
+            "18_juridical_fallacies_and_double_punishment_critique",
+            "21_exegesis_1john_2_2_and_parakletos_trilemma",
+            "22_master_source_registry_50_plus_primary_citations",
+            "23_classical_four_point_calvinists_vs_prokopenko",
+            "README",
+            "THEMATIC_TAXONOMY_AND_SYNTHESIS"
+          ],
+          "sizesBytes": {
+            "00_README_AND_NAVIGATION": {
+              "main": 16851,
+              "them": 16593
+            },
+            "02_TERMS": {
+              "main": 21849,
+              "them": 41451
+            },
+            "05_SOURCE_REGISTRY": {
+              "main": 42800,
+              "them": 33093
+            },
+            "synthesis authority": {
+              "main": 17394,
+              "them": 53671
+            },
+            "synthesis conflict ledger": {
+              "main": 18041,
+              "them": 81612
+            }
+          }
+        },
+        "withPr216": {
+          "conflicts": 20,
+          "conflictsCorpus": 8,
+          "conflictsLane": 11,
+          "other": [
+            ".gitignore"
+          ],
+          "corpusPaths": [
+            "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md",
+            "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
+            "ИСКУПЛЕНИЕ/02_TERMS_DEFINITIONS_AND_WHAT_IS_ATONEMENT.md",
+            "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+            "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
+            "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+            "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md"
+          ],
+          "registryJson": "ломается на text-merge: Expecting property name enclosed in double quotes: line 905 column 1 (char 53176) -> гейт валится на 'corpus registry unreadable', не пропуская повреждение в main",
+          "materializedMarkers": "в дереве мержа 00_CURRENT_AUTHORITY содержит 2 строки '<<<<<<<' -> новая проверка гейта срабатывает на реальном сценарии",
+          "conflictLedger": "у них C-16, в main C-15 -> гейт требует обновить authority (воспроизведено)",
+          "registryKeys": {
+            "main": 23,
+            "pr216": 27,
+            "them": 23
+          },
+          "theirRegistryBlob": "8654c98e08de1308d05bc02d729bbf3ff2ac6f70 — идентичен main: конфликт из-за правки #216 в той же области, а не из-за их правки реестра"
+        },
+        "procedure": [
+          "смержить #216 первым (0 конфликтов против main)",
+          "их ветку пересоздать от main и разрешить 5 корпусных путей вручную, сохраняя и OT-строки навигации, и их запись C-16",
+          "в data/atonement-corpus-v1.json оставить 26 ключей, включая integrityGate; после этого 00_CURRENT_AUTHORITY обязан содержать C-01…C-16"
+        ],
+        "how": "git -c core.quotepath=off merge-tree --write-tree --allow-unrelated-histories --name-only <a> <b> | парсить только строки 'CONFLICT (тип): Merge conflict in <путь>';Paths, печатаемые git в octal-экранировке, считаются один раз (иначе цифры удваиваются)",
+        "measuredAt": "2026-10-17T14:2xZ (пересъёмка на живом tip), их tip 19836b3 (round 27 part 2), main 6cac62e, мой tip ab1f8f6; прежде: 2026-10-16T08:10Z на 0b1fb0d (round 23) и d15b07b (round 26)",
+        "conflictType": "add/add во всех случаях (общего предка нет -> diff3 невозможен)",
+        "materializedMarkersCheck": "git -c core.quotepath=off grep -c '^<<<<<<<' <дерево мержа> -- ИСКУПЛЕНИЕ docs/research/atonement: 16 файлов в 62f957080db5 (main+они) и 20 в 60d11bf41369 (main+#216+они) — независимое подтверждение числа конфликтов; в 00_CURRENT_AUTHORITY при этом 2 маркера, поэтому merge-hygiene-ветка гейта срабатывает на реальном дереве, а не только на мутациях",
+        "resyncRule": "переснятое число в тот же ход записывается во ВСЕ артефакты (док, реестр, тело PR): 16.10 документ и реестр хранили +2 205, а тело PR — +2 396, что и было поймано самопроверкой 17.10"
+      }
+    }
+  ],
+  "auditNote20261015": "Drive-дисциплина зеркал корпуса: 0 объектов с modifiedTime > 2026-10-13 при активных раундах в git; реконсилияция снятой волны 0 — `ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md`",
+  "integrityGate": {
+    "script": "scripts/validate_atonement_corpus_integrity.py",
+    "workflow": ".github/workflows/atonement-corpus-integrity.yml",
+    "triggers": [
+      "push:main",
+      "pull_request",
+      "schedule:37 5 * * 2"
+    ],
+    "mode": "read-only, fail-closed; проверяет структуру корпуса, а не богословие",
+    "why": "поле обязательно: гейт требует, чтобы реестр ссылался на существующий workflow с push:main и schedule"
+  },
+  "driveSourceAudit20261016": {
+    "measuredAt": "2026-10-16",
+    "how": "download_file кладёт объект в google_drive/ (игнорируется .gitignore, в git не попадает), далее локальный разбор PdfReader: страницы, метаданные, полнота текстового слоя, титульная страница. Обходит лимит коннекторной экстракции 25 МБ. Хэши больших PDF не считывались, объекты удалены после разбора.",
+    "pdCopies": {
+      "owenWorks": {
+        "driveId": "1gfKY8eXGhV-HL5O4u1tVVcCRYNKx-dQY",
+        "bytes": 42084171,
+        "pdfPages": 624,
+        "pagesWithText": 614,
+        "imprint": "Goold ed., Vol. I, Edinburgh: T. & T. Clark, MDCCCLXII (IA worksofjohnowen01owen)",
+        "canServe": "содержание 24 томов по оглавлению этого тома; идентификатор издания",
+        "cannotServe": "печатные страницы Death of Death: в файле том I, а не том X"
+      },
+      "calvinInstitutes": {
+        "driveId": "1DLcwFWyRXtTDBzdS_tHptGkoItoumVWZ",
+        "bytes": 45351929,
+        "pdfPages": 696,
+        "pagesWithText": 688,
+        "imprint": "John Allen, Fifth American edition, In two volumes, Vol. I, Philadelphia: Presbyterian Board of Publication (IA institutesofchri01calv)",
+        "canServe": "wording Книг I–II (в т. ч. II.12, II.16, II.17)",
+        "cannotServe": "не Beveridge CTS 1845, и не том II: страницы III.24.16–17 отсюда не проверяются"
+      },
+      "goodwinWorks": {
+        "driveId": "1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M",
+        "bytes": 27215853,
+        "pdfPages": 578,
+        "pagesWithText": 0,
+        "imprint": "Google Books worksthomasgood06goodgoog = том VI из VI",
+        "canServe": "ничего машинно: текстового слоя нет",
+        "cannotServe": "ни текст, ни страницы; том для нужного трактата ещё не определён"
+      },
+      "westminsterConfession": {
+        "driveId": "1VSp4vU56X8uuYrp2SERkp2p0BRk-vQq4",
+        "bytes": 16179601,
+        "pdfPages": 25,
+        "pagesWithText": 0,
+        "imprint": "1946 Tercentenary Edition (по метаданным PDF)",
+        "canServe": "не нужен как локатор: у конфессий локус = глава и статья",
+        "cannotServe": "пагинация отсутствует вместе с текстовым слоем"
+      }
+    },
+    "hubFolderInventory": {
+      "00": 5,
+      "01": 5,
+      "02": 6,
+      "03": 1,
+      "04": 4,
+      "05": 4,
+      "06": 1,
+      "08": 5,
+      "09": 7,
+      "09Drafts": 1,
+      "09Data": 1,
+      "99Hold": 65,
+      "meaning": "99 — HOLD содержит 65 вытесненных копий; пересчёт по массиву имён скриптом: 10 копий прав лидера, 9 копий этого реестра (27 097 -> 49 824 B), 7 копий 00_CURRENT_AUTHORITY в трёх вариантах имени, 6 — 12_, по 4 — 05_ и 14_, 3 — 15_, по 2 — 02_ и synthesis-corpus-v1.json; сумма по семьям = 65. Строка «перенесены 11 объектов» в лидере сверена и объяснена: это состав зеркал снятой wave-0 (10 документов + data/redemption-corpus-authority-2026-10-07.json = 11 по git show --name-only c54cf68), из них 10 лежат в 99, зеркало 10_PRIMARY_TEXT — в папке 01; workflow и валидатор wave-0 в Drive не переносились. Первая редакция этого поля давала 7 и 6 вместо 9 и 10 (глазомер по части листинга) — см. erratum в лидере 07, раздел 7.",
+      "measuredAt": "листинг хаба: ночь 2026-10-16/17; пересчёт семей по массиву имён: 2026-10-17",
+      "recheckCommand": "google_drive list_files с q=\"'<папка>' in parents and trashed = false\", fields=files(name), page_size=1000 (меньше — молчаливая truncation), затем collections.Counter по нормализованным именам; хаб 07 = 1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV, hold = 1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd",
+      "note": "датированный снимок, не живой счётчик: 65 и 9/10 могут измениться чужими волнами, поэтому рядом лежит команда пересъёмки"
+    },
+    "notInDrive": [
+      "английский печатный RAA (только RU HTML 566 938 B + ZIP 113 293 B) → LOCATOR_PARTIAL Мюррея не снимается",
+      "PDF канонов Дорта и PRRDT vol. III → Rejectio остаётся на Wikisource-1840 без пагинации",
+      "BDAG / HALOT / TDNT / NIDNTTE и любой комментарийный ряд → лексикографический слой из Drive не закрывается",
+      "Синодальный перевод как цитатный источник"
+    ],
+    "registryDriveIdIntegrity": {
+      "total": 121,
+      "resolvedInMeasuredHub": 115,
+      "outsideHub": 6,
+      "which": "drive.reorg2026-10-08.rootCleanup[0..2].id и .to — переезды объектов в другие хабы, вне темы"
+    },
+    "correctionsPending": [
+      {
+        "where": "14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md:20",
+        "was": "страница Goold в этом PDF unchecked из-за extraction cap 25 MB",
+        "now": "копия в Drive — том I из 24 (Clark 1862), том X в неё не входит: проверка страниц этим файлом невозможна в принципе",
+        "applied": false,
+        "why": "вне периметра записи этой сессии (согласовано: только 17_, этот реестр и 07_)"
+      },
+      {
+        "where": "13_DORT_II_CALVIN_OWEN_EXTENT.md §2.1",
+        "was": "Drive-копия Кальвина — только дубль текста",
+        "now": "это перевод Аллена (1813, 5-е американское, том I из двух), а не Beveridge CTS 1845, том II: дубля нет",
+        "applied": false,
+        "why": "то же"
+      },
+      {
+        "where": "05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md R01/R05",
+        "was": "Drive 45 MB extract fail; Goodwin — том не указан",
+        "now": "идентичность copiй установлена (Allen vol. I; Goodwin vol. VI из VI, без текстового слоя) — queue должен требовать том II Beveridge и нужный том Goodwin",
+        "applied": false,
+        "why": "то же"
+      },
+      {
+        "where": "synthesis/00_README_FALLBACK_2026-10-07.md",
+        "status": "в git отсутствует, в Drive живёт: id 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko, 6303 B, 2026-10-08",
+        "erratum": "erratum 2026-10-16: git-путь synthesis/00_README_FALLBACK_2026-10-07.md отсутствует в дереве, ссылка на него в ли́дере (строка 158) ведёт в никуда; сам текст жив как Drive-объект 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko (6303 B). Внесение из Drive или удаление ссылки решает владелец под-корпуса synthesis.",
+        "applied": false,
+        "why": "чужой под-корпус"
+      },
+      {
+        "where": "07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, раздел 7 (первая редакция этого же дня)",
+        "was": "7 копий JSON и 6 копий прав ли́дера (снято на глаз по части листинга)",
+        "now": "9 и 10 — пересчёт по всем 65 именам, сумма по семьям сверена с длиной листинга",
+        "applied": true,
+        "appliedAt": "2026-10-17"
+      },
+      {
+        "where": "17_...md, 10c и 13b; adjacentLanes этого реестра",
+        "was": "+2 205 (съёмка на раунде 23) при +2 396 в теле PR",
+        "now": "47 файлов / +2 494 / 16 и 20 конфликтов / ошибка JSON на строке 905 — переснято на 19836b3 и записано во все три артефакта",
+        "applied": true,
+        "appliedAt": "2026-10-17"
+      }
+    ],
+    "mirrorLag": {
+      "registryGitBytes": 78830,
+      "registryDriveMirrorBytes": 53098,
+      "ledgerGitBytes": 38208,
+      "ledgerDriveMirrorBytes": 22691,
+      "mirrorModifiedTime": "2026-10-09T00:09Z",
+      "whoFixes": "владелец (перезаливка Docs-зеркал вне периметра этой сессии)"
+    },
+    "publicationStateUnchanged": true
   }
 }
