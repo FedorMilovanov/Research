@@ -233,3 +233,57 @@
    `synthesis/00_README_FALLBACK_2026-10-07.md`, которого в `main` нет. Дефект существовал до PR #216; фиксирую, а не
    чиню — «вернуть файл» или «убрать ссылку» решает владелец под-корпуса synthesis.
 
+## 7. Drive-фронт 2026-10-16: идентичность PD-копий и полный состав хаба
+
+**Метод, а не удача.** Коннектор `download_file` выкладывает объект в `google_drive/` (каталог игнорируется
+`.gitignore:1`, в git не попадает), файл разбирается локально: `PdfReader` → число страниц, метаданные, пословная
+полнота текстового слоя, считанный титул. Так обходится лимит коннекторной экстракции 25 МБ, из-за которого три копии
+из четырёх «не читались» и `05_SOURCE_REGISTRY` (R01) записал это как `Drive 45 MB extract fail`. Хэши больших PDF не
+считывались, `99 — HOLD` не тронут, объекты удалены сразу после разбора.
+
+| Копия | Байт | PDF-стр. | Страниц с текстом | Считанный титул / метаданные |
+|---|---|---|---|---|
+| Owen, *Works* `1gfKY8eX…` | 42 084 171 | 624 | 614 (98 %) | «The Works of John Owen, D.D., edited by the Rev. W. H. Goold, D.D., with Life by Rev. A. Thomson, D.D., **Vol. I**. Edinburgh: **T. & T. Clark**, 38, George Street; London: Hamilton, Adams and Co.; Dublin: John Robertson. **MDCCCLXII**»; IA `worksofjohnowen01owen` |
+| Calvin, *Institutes* `1DLcwFWy…` | 45 351 929 | 696 | 688 (98 %) | «translated from the original Latin, and collated with the author's last edition in French, by **John Allen**. **Fifth American edition, revised and corrected. In two volumes. Vol. I**. Philadelphia: Presbyterian Board of Publication»; IA `institutesofchri01calv` |
+| Goodwin, *Works* `1o9T7mIQ…` | 27 215 853 | 578 | **0** | скан Google Books `worksthomasgood06goodgoog` = **том VI из VI**, ни текстового слоя, ни пагинации |
+| WCF `1VSp4vU5…` | 16 179 601 | 25 | **0** | «The Confession of Faith of the Assembly of Divines at Westminster», author «Presbyterian Church of England», keywords «**1946 Tercentenary Edition**» |
+
+**Три следствия, каждое поперёк прежней формулировке.**
+
+1. Копия Оуэна в Drive — **том I, а не том X**. Страниц *Goold vol. X* она подтвердить не может ни при каком лимите
+   экстракции: препятствие не в размере файла, а в составе holdings. Строка 20 файла `14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`
+   («extraction cap 25 MB → страница Goold в этом PDF по-прежнему unchecked») описывает не то препятствие.
+2. При этом **привязка по номеру тома подтверждена самим нашим объектом**: «CONTENTS OF THE TWENTY-FOUR VOLUMES»
+   (PDF-стр. 2) читается как «DIVISION III: CONTROVERSIAL. Vol. X. 1. A Display of Arminianism. 2. The Death of Death in
+   the Death of Christ. 3. On the Death of Christ. 4. A Dissertation on Divine Justice. Vol. XI. The Doctrine of the
+   Saints' Perseverance…». Печатные страницы остаются на basis скана *Johnstone & Hunter, 1850* (IA
+   `worksofjohnowe185010owen`, смещение лист → страница −16); копия в Drive — перепечаток **Clark 1862**, и две эти
+   пагинации не смешиваются.
+3. Копия Кальвина — **перевод Аллена, том I из двух** (Книги I–II), тогда как локаторная база корпуса — **Beveridge, CTS
+   1845, vol. II**. Значит «он только дубль текста» (`13_DORT_II_CALVIN_OWEN_EXTENT.md`, §2.1) неверно: дубля нет, есть
+   другой перевод и неполный набор томов. Сверить wording II.12 / II.16 / II.17 можно, страницы Beveridge — нет.
+
+**Состав хаба `07` снят целиком, включая вложенное.** `00` = 5 (зеркала `00`, `00_README`, `01`, `02`, `06`), `01` = 5
+(3 PDF + 2 зеркала), `02` = 6 (4 карточки Мюррея + RU HTML 566 938 B + ZIP 113 293 B), `03` = **1** (зеркало; ни
+лексиконов, ни комментариев, ни Синодального ⇒ пункты «BDAG/HALOT/TDNT со страницами» и «Синодальный как цитатный
+источник» из Drive не закрываются), `04` = 4 (WCF + 3 зеркала; ни канонов Дорта, ни PRRDT vol. III ⇒ `Rejectio`
+остаётся на Wikisource-1840 без пагинации), `05` = 4 (зеркала `04`, `05`, `12` + JSON SSOT 53 098 B), `06` = 1 (Docs-
+зеркало этого файла), `08` = 5 (README + 4 брифа), `09` = 7 + `drafts` 1 + `data` 1. **Английского печатного RAA в хабе
+нет** ⇒ локатор Мюррея остаётся «глава RU HTML, не страница Banner».
+
+**`99 — HOLD` = 65 объектов** (полный листинг при `page_size` 1000; «60» было бы артефактом страницы ровно на 60).
+Внутри — 7 копий `atonement-corpus-v1.json` (27 097 → 49 824 B) и 6 копий прав ли́дера. Прежняя строка «в `99`
+перенесены 11 объектов» описывает **действие** волны 2026-10-08, а не ёмкость папки: противоречия нет, но читать 11 как
+«столько там лежит» нельзя.
+
+**Целостность ссылок реестра на Drive:** из 121 идентификатора в `data/atonement-corpus-v1.json` **115 резолвятся** в
+списках снятых папок (включая `09/drafts`, `09/data` и 65 объектов `99`); **6 не резолвятся и не должны** — это
+`drive.reorg2026-10-08.rootCleanup[0…2].id/.to`, записи о переезде объектов в другие хабы (Gill PDF и др.), вне темы.
+
+**Побочное, закрывающее пункт 5 Erratum предметно:** файл, на который в строке 158 ссылается этот ли́дер, **живёт в
+Drive**: `09 — SYNTHESIS (agent 4) → 00_README_FALLBACK_2026-10-07.md`, id `1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko`,
+6 303 B (мод. 2026-10-08T08:52Z). Значит выбор «внести из Drive» против «убрать ссылку» теперь обеспечен материалом, а
+не догадкой; решает владелец под-корпуса synthesis.
+
+**Зеркала отстают — измерено:** git-реестр 78 830 B против Drive-SSOT 53 098 B (мод. 2026-10-09T00:09Z); git-лидер
+38 208 B против Docs-зеркала 22 691 B (там же). Перезаливку делает владелец: в моём периметре только git.
