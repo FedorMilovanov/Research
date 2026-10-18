@@ -1567,6 +1567,18 @@
         "у каких файлов": 16,
         "снятx wave-0 зеркал": 10,
         "Drive-only": 1
+      },
+      "recheck20261018": {
+        "at": "2026-10-18T08:44Z (четыре запроса до 08:46Z)",
+        "method": "list_files 99 без фильтра + три name contains (RIGHTS LEDGER, atonement-corpus-v1.json, AUTHORITY)",
+        "results": {
+          "total": 65,
+          "07 права ли́дера": 10,
+          "data/atonement-corpus-v1.json": 9,
+          "'AUTHORITY' (3 разных хозяина)": 9
+        },
+        "outcome": "совпало с записанной партицией полностью; состав имён идентичен, next_page_token=null, incomplete_search=false",
+        "note": "фильтр по AUTHORITY = 9, а не 7: в него попадают 00 SYNTHESIS AUTHORITY и redemption-corpus-authority json"
       }
     },
     "notInDrive": [
