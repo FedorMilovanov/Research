@@ -151,6 +151,7 @@
 - **Q65.** *(раунд 36)* Что фрисландцы отвечают на тезу «Христос умер **за всех грешников**, а воскрес и ходатайствует **с намерением спасти одних верных**», и почему четвёртый член артикула («никто не причастен, кроме верующих») они называют несовместимым с первыми тремя? (§4.68.)
 - **Q66.** *(раунд 37)* Одна и та же ремонстрантская формула («умер за всех, но с намерением спасти **воскрес и ходатайствует только за верных**») — сколькими делегациями она засвидетельствована и на каких основаниях отвергнута каждой? (§4.70.)
 - **Q67.** *(раунд 37)* Чем завершается **фрисландское суждение**: какова его собственная положительная формула и чем оно кончается? (§4.71.)
+- **Q68.** *(раунд 39)* Сколькими делегациями засвидетельствована формула «умер за всех — **воскрес и ходатайствует за верных**», и какова самая точная дортская формулировка того же хода в терминах «воля приобретать / воля применять»? (§4.72.)
 | S2 | Charles Hodge, *Systematic Theology*, vol. II (1871), Part III ch. VI §3 «Definition of Terms» | A1 | pp. 468–479; **469** (atonement = reconciliation, «expresses the effect, and not the nature»; второй смысл «not a Scriptural usage»), **470** (satisfaction — «the one which for ages has been generally used»), **477** (redemption — «deliverance by purchase… payment of a ransom»), 478 (expiation/propitiation). CCEL `hodge/theology2/theology2.iv.vi.iii.html` | PD; `FULL_SECTION` |
 | S3 | A. A. Hodge, *The Atonement* (Philadelphia: Presbyterian Board, 1867), гл. II | A1 | «The old term… habitually used by all the Reformers in all the creeds… of the seventeenth century… was SATISFACTION… The word Atonement is ambiguous… once in English NT (Rom 5:11) = καταλλαγή». Страница **не** сверена (PDF monergism) | PD; `LOCATOR_HOLD` |
 | S3 (раунд 2) | то же | A1 | **pp. 33–34** (скан `theatonement00hodguoft`, страница = лист − 6): p. 33 «(1.) The word Atonement is ambiguous… It appears but once in our English New Testament, and there (Rom. v. 11) as the equivalent of the Greek word καταλλαγή, reconciliation… Thus the word is sometimes understood to mean reconciliation, and sometimes that sin-expiating, God-propitiating work by which reconciliation was effected. When we say that we have "received the atonement," we mean that we have been reconciled to God… On the other hand, the word Satisfaction is not ambiguous»; p. 34 «The word SATISFACTION is neither ambiguous nor defective. The Reformed Churches mean by its use (1) that Christ fully satisfied all that the justice and law of God required…» | PD; `EXACT_LOCATOR_VERIFIED`; `LOCATOR_HOLD` снят |
@@ -297,6 +298,7 @@
 | S132 *(раунд 36)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанк 370**, печ. листы ок. 127–130) — **фрисландское суждение, окончание «De primo» и разделы «De secundo» и «De tertio»**: beneficium всеобщности «non generali quodam erga omnes homines… miserendi affectu, sed **speciali Dei erga illos gentium misericordia**» procuratum; слово *singulis* «**nec uspiam Scripturarum reperiatur**, nulla nos urget necessitas, ut eam admittamus»; «mortis servatoris… fructus, **ultra terminos a Patre praescriptos**… humana commiseratione extendere»; «**impetrationis**» — слово, которого Писание о смерти Христовой «**nuspiam**» употребляет; притча о ходатае перед князем за мятежника; Арминий: «omnes & singulos homines **in statum reconciliationis esse assumptos**» и «Decretum de impetratione… esse **absolutum, non conditionatum**»; теза с прибавлением «ex **voluntate, decreto, atque intentione** Patris, & sua»; три силлогизма; τροπή и «**mutabilitatis in Deo umbra**»; «**promissa quidem & minas conditionatas agnoscimus**… sed voluntatem proprie sic dictam, qui suspendat ille, qui omnium futurorum est praescius & immutabilis?»; «**constans, uniformis, & seria est Dei invitatio**» | A2; PD; OCR |
 | S133 *(раунд 36)* | *Acta* 1620 (**чанк 371**, печ. листы ок. 130–131) — **фрисландское суждение, вторая и третья ремонстрантские тезы и раздел «De quarto»**: «Deus propter Christum universum genus humanum, in reconciliationis gratiam assumpsit» и аргумент от **манифестации** (Рим. 10:14; Быт. 3:15; семя змия; Каин и Сиф, Быт. 4:26; завет **с одним Авраамом и семенем его** — Втор. 7:6; Пс. 147:19–20; Деян. 14:16; Еф. 2:11–12); **третья теза**: «Christus… est mortuus **adaequate pro omnibus peccatoribus**, resurrexit autem & apud patrem in coelis intercedit, **cum salvandi intentione adaequate pro solis fidelibus**» — и ответ: «**alienam, & verbo Dei incognitam** positionem… non utique **divellens mortem, resurrectionem, & intercessionem**… sed haec omnia **arctissimo nexu copulans**» (Рим. 8:34; 4:25; 14:9) — «Apostolus Remonstrantium istud, inter mortem & resurrectionem Christi, **divortium** ignoravit»; **«De quarto»**: «neminem tamen reipsa remissionis participem fieri praeter credentes… simpliciter intellecta **extra controversiam sunt**… cum vero… impetrationem… **ab applicatione & participatione seiungant**… **reipsa per remissionem & reconciliationem nil nisi quandam remissibilitatem & reconciliabilitatem intelligunt**»; перечень ремонстрантских сочинений для дальнейшего разбора | A2; PD; OCR |
 | S134 *(раунд 37)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанк 372** — десятичленное изложение ремонстрантской системы и десять возражений, включая «**Servatorem sine salute, redemptorem sine redemptione**, sacerdotem sine populo, Regem sine regno, caput sine corpore» и «omnem mortis Christi fructum ad **salvabilitatem** & reconciliabilitatem quandam revocando… **januam**, quam omnibus & singulis una manu videbatur aperire, **altera** omnibus & singulis **occludit**» (материал сводки — S115, §4.58 п. 5); **чанк 373** — **завершение фрисландского суждения**: положительная формула («abunde **sufficiens & unicum remedium** ad expianda peccata omnium & singulorum hominum… **τῶν πνευματικῶν Spiritus S. donorum**… collatio… **toti & soli electo populo, certo conferuntur**… **pacem habeat, ac solatium in vita & morte**… non aliqua Dei culpa, aut **meriti Christi defectu**») и **молитва**, завершающаяся Гал. 2:20 («qui dilexit me, & tradidit semetipsum pro me»); на печ. л. 134 начинается *Iudicium Deputatorum **Transsilvanorum*** | A2; PD; OCR |
+| S135 *(раунд 39)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанки 360–361**, печ. **сс. 108–111**) — **суждение североголландских братьев** (*fratres Noort-Hollandi*) по II артикулу, двухколоночный разбор (heterodoxa / orthodoxa): четырёхчленная схема «**Pro omnibus** (Ин. 17:2; 6:39; 17:11) — **Pro solis** (Ин. 17:6, 9) — **Pro singulis** (Рим. 10:9; **Гал. 2:20**) — **Pro iis, qui fuerunt, sunt, & erunt** (Деян. 15:11; Евр. 13:8; **Откр. 13:8**)»; «mors Christi in sese considerata… **sufficiens esse possit λύτρον redimendis omnibus & singulis**… Christum, non pro aliis, quam **electis** mortuum esse»; «pro quibus Christus non oravit, pro iis quoque mortuus non est: **oblatio enim & intercessio individuo nexu cohaerent**»; ремонстрантская интенция «omnes & singulos… **per eandem ex aequo servare**»; противоречие: «etiamsi **impetrata redemptio nulli individuo unquam applicata fuisset**»; **«quandam possibilitatem & velleitatem impetratam Deo Patri, qua potuit velle… novum aliquod foedus inire, sub quacumque ipsi visum esset conditione»** и ответ: «longe alia & **praestantiora beneficia**… veram & realem… reconciliationem, remissionem… adoptionem… ius haereditatis vitae aeternae, adeoque omnes illas benedictiones spirituales» (Еф. 1); **«De Secundo»**: «impetrationem & applicationem **aeque late patere, pari passu incedere**», «fructum ab eadem **individuo & indissolubili nexu** dependentem», «**ex iure enim impetrationis, res aliqua fit eius propria, cui impetrata est**… Alias certe impetratio dici aut esse non posset»; «merum esse humani ingenii & otiosi cerebri **figmentum**, quod Remonstrantes de **voluntate impetrandi absoluta & applicandi conditionata** solent nugari. Etenim **statuta absoluta voluntate impetrandi, necesse est voluntatem applicandi absolutam quoque esse**»; и formula divortii: «mortem & oblationem Christi, à resurrectione ipsius & intercessione **divellere**… Christum… mortuum esse **pro omnibus in universum hominibus, resurrexisse autem, & intercedere, pro solis fidelibus**» — с ответом: «**nullo unquam modo & tempore separari posse**… tamque mortis, quam resurrectionis & intercessionis Christi beneficia **aeque late patere**, atque ad **solos Electos & fideles** pertinere» (Ин. 17:9, 19; Рим. 4:24–25; **Рим. 8:34**; **Рим. 14:9**; **Евр. 9:12, 24**) | A2; PD; OCR |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -2214,6 +2216,160 @@ OCR; в положительной формуле одно прилагател�
 (в) Порядок листов в этой части скана нарушен (колонтитул чанка 372 — «135», следующее суждение — «134»); локатор —
 чанк + заголовок. (г) **П. 142 закрыт**: фрисландское суждение прочитано от заголовка (с. 124) до заключительной
 молитвы.
+
+
+
+### 4.72. Q68 — Четыре делегации, одни и те же слова: североголландское суждение и сводная таблица (раунд 39)
+
+**1. Новый материал: североголландское суждение.** Окончание этого суждения уже внесено в §4.60 пп. 6–7 (чанк 362);
+здесь — его **основная часть** (чанки 360–361, печ. сс. 108–111), и она оказалась самой богатой из всех на ту именно
+формулу, которую мы отслеживаем.
+
+**2. Четырёхчленная схема «за кого умер Христос» — с текстами.** Суждение открывается перечнем, который сам по себе
+заслуживает внимания, потому что «за каждого» в нём доказывается **не всеобщностью объекта**:
+
+| Член | Тексты |
+|---|---|
+| **Pro omnibus** (за всех) | Ин. 17:2 («да власть над всякою плотию, да всему, что Ты дал Ему, даст Он жизнь вечную»); Ин. 6:39; Ин. 17:11 («тех, которых Ты дал Мне, Я сохранил, и никто из них не погиб») |
+| **Pro solis** (за одних) | Ин. 17:6; Ин. 17:9 («Я о них молю; не о всем мире молю») |
+| **Pro singulis** (за каждого в отдельности) | Рим. 10:9; **Гал. 2:20 — «возлюбившего меня и предавшего Себя за меня»** |
+| **Pro iis, qui fuerunt, sunt, & erunt** (за тех, которые были, суть и будут) | Деян. 15:11; Евр. 13:8 (**«Иисус Христос вчера и сегодня и во веки Тот же»**); **Откр. 13:8 (Агнец, закланный от создания мира)** |
+
+Два наблюдения для серии. (а) **«Pro singulis» доказывается Гал. 2:20** — то есть «за каждого» устанавливается
+**личным присвоением веры**, а не выводом из всеобщности объёма; ср. то же завершение у фрисландцев (§4.71 п. 2).
+(б) **Откр. 13:8** поставлено в ряд мест о распространении смерти Христовой **на всех времён** — это прямое
+дополнение к разбору Q44 (§4.47) о том, где в греческом стоит «ἀπὸ καταβολῆς κόσμου»: для североголландцев текст
+служит свидетельством, что заслуга Христова простирается на верующих всех веков (ср. вопрос серии «Христос заклан
+от создания мира?» — Q40/Q44).
+
+**3. Достаточность и объект — в одном предложении.**
+
+> «Хотя смерть Христова, рассматриваемая в себе самой, такого достоинства и цены, что она **может быть достаточным
+> λύτρον для искупления всех и каждого человеков**, однако из приведённых свидетельств явствует, что Христос умер
+> **не за иных, как за избранных**».
+
+И — связка приношения и ходатайства, третья по счёту формула «нераздельности» в нашем корпусе:
+
+> «И это несомненнейшим образом: **за кого Христос не молился, за тех Он и не умер**, ибо **приношение и ходатайство
+> связаны нераздельным союзом** (*oblatio enim & intercessio **individuo nexu** cohaerent*). Не молился же Он за всех
+> и каждого: не о мире молил. Следовательно, Он не за всех и каждого умер».
+
+Сводка формул «нераздельности» (все — суждения делегаций, не текст Канонов): утрехтцы — «inseparabiliter
+conjuncta» (§4.63); североголландцы — «individuo nexu» и «individuo & indissolubili nexu»; фрисландцы — «arctissimo
+nexu» (§4.68 п. 2).
+
+**4. Как североголландцы формулируют ремонстрантскую интенцию — и находят противоречие.**
+
+> «Столь же ложно то, что ремонстранты передают о **намерении**, а именно: намерение Отца, предающего Сына Своего
+> на смерть, и Сына, приемлющего смерть, было — **спасти всех и каждого человеков чрез неё равно** (*ex aequo*),
+> хотя на деле, по вине многих, вышло иначе».
+
+И сразу — внутреннее противоречие ремонстрантской системы: они же утверждают, что «Бог предназначил Христа в
+Посредника **прежде всякой определённой воли и намерения спасти кого-либо**… так что приобретению его цена, и само
+по себе достоинство, необходимость и польза **могли бы преизобильно сохраниться, хотя бы приобретённое искупление
+никогда не было применено ни к одному лицу**, то есть хотя бы **никто никогда актуально не был спасён**».
+
+Это — **второе** свидетельство того же тезиса (первое — фрисландский десятичленный разбор, §4.58 п. 5в), и оно
+подтверждает, что обе делегации описывали **одну и ту же** чужую систему.
+
+**5. «Possibilitas & velleitas» — четвёртый словарь того же хода.**
+
+> «Не помогает им здесь и то, что они утверждают, будто смертью Христовой Богу Отцу приобретена **некая возможность
+> и хотение** (*quandam **possibilitatem & velleitatem***) вступить с человеками в некий новый завет, под каким Ему
+> будет угодно условием. Ибо настолько далеко, чтобы этою своею выдумкою прикрыть или утаить нелепость своего
+> учения, что, напротив, ею они более обнаруживают и явно выставляют её ложность и гнусность. Ибо, как повсюду
+> свидетельствует Писание, Христос смертью Своею приобрёл **гораздо иные и превосходнейшие благодеяния**, именно:
+> **истинное и действительное примирение с Богом, прощение грехов, усыновление в сыны Божии, право наследия жизни
+> вечной, и потому все те духовные благословения**, коих виновником и источником поставлен нам от Отца (Еф. 1)».
+
+И — обратная формулировка того же: ремонстранты, по их словам, приписывают Христу приобретение «**некоторого права
+возможности или хотения** (*ius aliquod possibilitatis, aut velleitatis*), по которому Бог мог бы восхотеть вступить
+с человеками в завет, — под каким угодно условием, веры или дел». Итог: «всё это, как измышления человеческого
+мозга… братья североголландцы **отвергают и гнушаются как ложнейшее**».
+
+**Важно:** та же самая пара слов — *possibilitatem & velleitatem* — уже внесена в досье из **гронингенского**
+суждения (§4.59 п. 4: «приобрёл Отцу **возможность и некоторое хотение** вступить в новый завет с грешниками… но
+сделал лишь то, что **Бог мог и хотел** нас помиловать»). Две независимые делегации — **одни и те же технические
+слова**. Ниже (п. 8) — что из этого следует.
+
+**6. «De Secundo»: принцип нераздельности, выраженный юридически.** На второй член ремонстрантского артикула
+(«приобретено всем, применяется только верующим») североголландцы отвечают:
+
+> «Писание открыто учит, что **приобретение и применение равно широки** (*aeque late patere*) и **идут равным
+> шагом** (*pari passu incedere*)… А те места Писания, поскольку они говорят **не об одном приобретении спасения,
+> но о самом спасении, то есть о самом действии спасания**, показывают, что **не одно лишь приобретение, но
+> применение спасения и само спасение были целью и концом**, какой Бог имел пред Собою… так что прощение грехов,
+> избавление от клятвы закона… оправдание, освящение, переселение в Царство Сына, введение в славу и наконец жизнь
+> вечная суть **собственный конец приобретения и плод, от него зависящий нераздельным и нерасторжимым союзом**».
+
+И — **принцип, который стоит выучить**:
+
+> «…никаким видом разума или подобием вероятности сие применение **не может быть отделено от приобретения**: ибо
+> **по праву приобретения вещь становится собственностью того, кому она приобретена**; а дарование, или уступка,
+> приобретённой вещи **не только сопровождает приобретение, но и составляет и совершает его**. Иначе оно
+> определённо не могло бы называться или быть приобретением».
+
+Это та же мысль, что в фрисландской притче о ходатае перед князем (§4.67 п. 3) и в «De quarto» (§4.68 п. 4), но
+здесь она дана как **юридическая максима**: *impetratio* есть приобретение **права**; право, которое никогда не
+реализуется, не есть право.
+
+**7. Самая точная формулировка хода — «воля приобретать безусловная, воля применять условная».**
+
+> «Откуда следует, что есть сущее измышление человеческого ума и праздного мозга то, о чём ремонстранты обыкли
+> пустословить: **о воле приобретать — безусловной, и воле применять — условной** (*de voluntate impetrandi "
+         "**absoluta** & applicandi **conditionata***). Ибо **если положена безусловная воля приобретать,
+> необходимо, чтобы и воля применять была также безусловна**».
+
+И сразу — о самом разведении смерти и воскресения:
+
+> «Не помогает им и то, чтобы сим своим измышлением об отделении приложения от приобретения более подтвердить и
+> прикрыть, что они **оторвали смерть и приношение Христово от Его воскресения и ходатайства**, — обыкновенно
+> говоря, что Христос предал Себя и умер **за всех человеков вообще**, а **воскрес и ходатайствует за одних
+> верных**. Ибо сие братья североголландцы также судят **ложнейшим**».
+
+Ответная (правая) колонка: «смерть и приношение Христовы **никаким образом и никаким временем не могут быть
+отделены** от воскресения и ходатайства; и благодеяния смерти Христовой **равно широки** с благодеяниями
+воскресения и ходатайства и относятся **к одним только избранным и верным**». Тексты, соединяющие смерть и
+воскресение: Ин. 17:9, 19; Рим. 4:24–25; **Рим. 8:34**; **Рим. 14:9**; **Евр. 9:12**, 24 — то есть **те же
+места, что у фрисландцев** (Рим. 8:34; 4:25; 14:9), с прибавлением Евр. 9:12 (как у гронингенцев).
+
+**8. Сводная таблица: четыре делегации об одной формуле.**
+
+| Делегация | Формулировка разводимой схемы | Основание отвержения | Где |
+|---|---|---|---|
+| **Северная Голландия** | «mortuum esse pro omnibus in universum hominibus, **resurrexisse autem, & intercedere, pro solis fidelibus**»; и в терминах воли — «**voluntas impetrandi absoluta & applicandi conditionata**» | «nullo unquam modo & tempore separari posse»; **«statuta absoluta voluntate impetrandi, necesse est voluntatem applicandi absolutam quoque esse»**; «ex iure impetrationis, res… fit eius propria»; Ин. 17; Рим. 4:25; 8:34; 14:9; Евр. 9:12 | S135, §4.72 |
+| **Гронинген и Оммеланды** | то же, с *adaequate*; отдельно — «**possibilitatem & velleitatem** foederis novi… ineundi» | ни одним местом Писания; священники ВЗ молились за всех, за кого приносили жертву; Рим. 8; 1 Кор. 15; Евр. 9:12 | S116, §4.59 пп. 3–4 |
+| **Фрисландия** | то же, с *adaequate*; отдельно — «**remissibilitas / reconciliabilitas / salvabilitas**» | «alienum, & verbo Dei incognitum»; «**arctissimo nexu**»; «**divortium**»; Рим. 8:34; 4:25; 14:9 | S133, §4.68 п. 2 |
+| **Галло-бельгийская** | «pro multis mortuum esse, **pro quibus non resurrexit**» (отрицательная форма) | в списке девяти отвергнутых положений | S122, §4.61 |
+
+**9. Совпадающие технические слова — аргумент в пользу общего источника.**
+
+- **«possibilitatem & velleitatem»** — **Гронинген** и **Северная Голландия**;
+- **«adaequate»** — **Гронинген** и **Фрисландия**;
+- **«aeque late patere / aeque late patent»** — **Трансильвания** (Antithesis III, §4.59 п. 1) и **Северная
+  Голландия**;
+- **«etiamsi nullus… servaretur»** — **Фрисландия** (§4.58 п. 5в) и **Северная Голландия**;
+- формулы **«нераздельности» приношения и ходатайства** — **Утрехт**, **Северная Голландия**, **Фрисландия**.
+
+Пять совпадений технического словаря в суждениях, писанных делегациями **независимо** (и поданных в Синод по
+отдельности), — это сильный аргумент в пользу того, что перед ними лежал **общий ремонстрантский документ**
+(декларация в *Collatio Hagensis* или тезисы, поданные Синоду), а не что они выдумывали формулы порознь.
+
+**Но `EVIDENCE_HOLD` остаётся в силе:** ни одного ремонстрантского первоисточника мы не читали, и совпадения
+доказывают лишь «общий источник у дортских делегатов», а не «слова принадлежат ремонстрантам». Это — предмет п. 147.
+
+**10. Что это даёт для оценки разбираемой статьи (осторожно).** Самая **точная** из найденных дортских формулировок
+хода — североголландская: «**воля приобретать — безусловная, воля применять — условная**». Именно здесь пролегает
+стык с разбираемой схемой: у Прокопенко приобретение (смерть, *искупление*) отнесено ко всем, а применение
+(*выкуп*: воскресение, вознесение, ходатайство) — к верующим. Дортский логический ответ на этот ход один и тот же у
+двух делегаций: **если воля приобретать безусловна, то и воля применять безусловна**; и юридический: приобретение
+есть приобретение **права**, а право ни для кого не есть право. Переносить этот ответ на статью можно **только
+структурно** — см. §4.68 п. 3.
+
+**11. Границы.** (а) Текст по OCR; в одной цитате глагол читается неполно (*resee* → *sese*). (б) Североголландское
+суждение дочитано не до конца: чанк 361 обрывается на Евр. 9:24; продолжение — чанк 362 (уже частично внесённый как
+S120/S121). (в) Суждение делегации, не текст Канонов. (г) Оценка «общий источник» — гипотеза досье, а не результат
+сверки.
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -2504,6 +2660,23 @@ OCR; в положительной формуле одно прилагател�
 
 ---
 
+**Допустимые формулировки — дополнение раунда 39:**
+- *(раунд 39)* «Североголландцы: «mors Christi in sese considerata… **sufficiens esse possit λύτρον redimendis omnibus & singulis**… Christum, non pro aliis, quam **electis** mortuum esse»» (S135, §4.72 п. 3).
+- *(раунд 39)* «Североголландская формула нераздельности: «pro quibus Christus non oravit, pro iis quoque mortuus non est: **oblatio enim & intercessio individuo nexu cohaerent**»; три делегации дают три формулы: утрехтцы — «inseparabiliter conjuncta», североголландцы — «individuo (et indissolubili) nexu», фрисландцы — «arctissimo nexu»» (S135, §4.72 п. 3).
+- *(раунд 39)* «Североголландцы о ремонстрантской интенции: «omnes & singulos homines **per eandem ex aequo servare**», при внутреннем противоречии: «etiamsi **impetrata redemptio nulli individuo unquam applicata fuisset**»» (S135, §4.72 п. 4).
+- *(раунд 39)* «**Четвёртый словарь того же хода**: «per Christi mortem quandam **possibilitatem & velleitatem** impetratam Deo Patri, qua potuit velle… novum foedus inire, sub quacumque ipsi visum esset conditione» — и ответ: Христос приобрёл «longe alia & **praestantiora beneficia**… veram & realem… reconciliationem, remissionem… adoptionem… ius haereditatis vitae aeternae, adeoque omnes illas benedictiones spirituales» (Еф. 1). Та же пара слов — у гронингенцев» (S135, S116, §4.72 п. 5).
+- *(раунд 39)* «Юридический принцип североголландцев: «impetrationem & applicationem **aeque late patere, pari passu incedere**… **ex iure enim impetrationis, res aliqua fit eius propria, cui impetrata est**… Alias certe impetratio dici aut esse non posset»» (S135, §4.72 п. 6).
+- *(раунд 39)* «**Самая точная дортская формулировка хода**: «merum esse… figmentum, quod Remonstrantes de **voluntate impetrandi absoluta & applicandi conditionata** solent nugari. Etenim **statuta absoluta voluntate impetrandi, necesse est voluntatem applicandi absolutam quoque esse**»; и тут же о разведении: «mortem & oblationem Christi, à resurrectione ipsius & intercessione **divellere**… mortuum esse **pro omnibus in universum hominibus, resurrexisse autem, & intercedere, pro solis fidelibus**» — ответ: «**nullo unquam modo & tempore separari posse**» (Ин. 17; Рим. 4:25; 8:34; 14:9; Евр. 9:12)» (S135, §4.72 п. 7).
+- *(раунд 39)* «Пять совпадений технического словаря в независимых суждениях: *possibilitatem & velleitatem* (Гронинген, Северная Голландия), *adaequate* (Гронинген, Фрисландия), *aeque late patere* (Трансильвания, Северная Голландия), *etiamsi nullus servaretur* (Фрисландия, Северная Голландия), формулы нераздельности приношения и ходатайства (Утрехт, Северная Голландия, Фрисландия) — аргумент в пользу **общего ремонстрантского источника**, но не доказательство принадлежности слов ремонстрантам» (§4.72 п. 9).
+- *(раунд 39)* «Североголландская схема «Pro omnibus — Pro solis — Pro singulis — Pro iis, qui fuerunt, sunt, & erunt»: «**Pro singulis**» доказывается **Гал. 2:20** («возлюбившего меня и предавшего Себя за меня»), а распространение на все времена — **Евр. 13:8** и **Откр. 13:8**» (S135, §4.72 п. 2).
+
+**Запрещённые формулировки — дополнение раунда 39:**
+- *(раунд 39)* «Формулу «умер за всех, воскрес и ходатайствует за верных» цитируют только фрисландцы» — **нет**: теперь засвидетельствованы **четыре** делегации (Северная Голландия, Гронинген, Фрисландия, галло-бельгийцы), причём две — с одним и тем же словом *adaequate* (§4.72 п. 8).
+- *(раунд 39)* «Дорт не знает словаря «возможность / хотение» для описания этого хода» — **нет**: *possibilitatem & velleitatem* употребляют две делегации; фрисландцы дают *remissibilitas*, *reconciliabilitas*, *salvabilitas* (§4.72 п. 5).
+- *(раунд 39)* «Дорт учит, что воля приобретать безусловна, а воля применять условна» — **нет**: именно эта пара («voluntas impetrandi absoluta & applicandi conditionata») названа североголландцами «измышлением праздного мозга», с доводом: «statuta absoluta voluntate impetrandi, necesse est voluntatem applicandi absolutam quoque esse» (S135, §4.72 п. 7).
+- *(раунд 39)* «Совпадение технических слов у делегаций доказывает, что формула принадлежала ремонстрантам» — **нет**: это доказывает лишь **общий источник у дортских делегатов**; ремонстрантские первоисточники не читаны (`EVIDENCE_HOLD`, п. 147).
+
+
 **Допустимые формулировки — дополнение раунда 37:**
 - *(раунд 37)* «В *Acta* 1620 **три делегации** независимо свидетельствуют об одной и той же схеме — „смерть за всех, воскресение и ходатайство с намерением спасти только верных“ — и **трижды её отвергают**: гронингенцы („fundamento caret“; довод: „нелепо, чтобы Христос хотел приобрести одно, но не просил того же для всех“; священники ВЗ молились за всех, за кого приносили жертву; Евр. 9:12; 1 Кор. 15), фрисландцы („alienum, & verbo Dei incognitum“; „arctissimo nexu“; „divortium“; Рим. 8:34; 4:25; 14:9), галло-бельгийцы („pro multis mortuum esse, pro quibus non resurrexit“)» (S116, S133, S122; §4.70).
 - *(раунд 37)* «Основания отвержения у делегаций **разные** (ветхозаветная типология священства и Евр. 9:12 — у гронингенцев; „теснейший союз“ смерти, воскресения и ходатайства и Рим. 8:34 — у фрисландцев); сводить их к одной „дортской аргументации“ нельзя» (§4.70 п. 2).
@@ -2721,6 +2894,9 @@ OCR; в положительной формуле одно прилагател�
 | 1618–1619 *(раунд 36)* | **Фрисландцы, «De quarto»**: «**extra controversiam** sunt»; «cum vero… impetrationem… **ab applicatione & participatione seiungant**… **nil nisi quandam remissibilitatem & reconciliabilitatem intelligunt**» | S133 (A2) |
 | 1618–1619 *(раунд 37)* | **Три делегации об одной формуле**: Гронинген — «pro omnibus **mortuum**… cum salvandi intentione **resurrexisse & intercedere adaequate pro fidelibus tantum**… fundamento caret»; Фрисландия — то же с «alienum… arctissimo nexu… divortium»; галло-бельгийцы — «pro multis mortuum, **pro quibus non resurrexit**» | S116, S133, S122 (A2) |
 | 1618–1619 *(раунд 37)* | **Фрисландское суждение, завершение**: «abunde **sufficiens & unicum remedium**… si omnes & singuli eam vera fide amplecterentur»; «**τῶν πνευματικῶν Spiritus S. donorum**… in ea **custodimur**»; «**toti & soli electo populo, certo** conferuntur»; «**solatium in vita & morte**»; «non… **meriti Christi defectu**»; молитва с Гал. 2:20 | S134 (A2) |
+| 1618–1619 *(раунд 39)* | **Северная Голландия**: «sufficiens… λύτρον omnibus & singulis» + «non pro aliis quam **electis**»; «oblatio & intercessio **individuo nexu**»; «ex aequo servare»; «etiamsi **nulli individuo** applicata fuisset»; «**possibilitatem & velleitatem**»; «longe alia & **praestantiora beneficia**» (Еф. 1) | S135 (A2) |
+| 1618–1619 *(раунд 39)* | **Северная Голландия, «De Secundo»**: «impetrationem & applicationem **aeque late patere, pari passu incedere**»; «**ex iure… impetrationis, res… fit eius propria**… Alias… impetratio dici aut esse non posset»; «voluntate impetrandi **absoluta** & applicandi **conditionata**… figmentum… **statuta absoluta voluntate impetrandi, necesse est voluntatem applicandi absolutam quoque esse**» | S135 (A2) |
+| 1618–1619 *(раунд 39)* | **Четыре делегации об одной формуле**: Северная Голландия, Гронинген, Фрисландия, галло-бельгийцы; пять совпадений технического словаря (*possibilitas & velleitas*; *adaequate*; *aeque late patere*; *etiamsi nullus servaretur*; nexus formulae) | S135, S116, S133, S122 (A2) |
 - **Shedd, изд. Gomes 2003** — современное издание под авторским правом (редакторский аппарат); пагинация 741–743 известна только из сносок Прокопенко → `LOCATOR_HOLD` для ссылок на это издание; цитировать по изд. 1888 (II.464–477).
 - **OED** — не доступен в песочнице; даты первой фиксации — класс C до сверки.
 - **Curt Daniel 2019** — не доступен; «unusual» (p. 362) — только через Прокопенко.
@@ -2954,6 +3130,7 @@ OCR; в положительной формуле одно прилагател�
 - **S129, S130, S131** (лат. *Acta* 1620, чанки 368–369: **фрисландское суждение** — разбор артикула, «conditionate mortuum», «remissibilitas & reconciliabilitas», «usitatissima explicatio» с συνεκδοχικῶς, аргумент κοινωνία vs «-abilitas», ветхозаветная катена) — PD; **A2** (официальный сборник суждений; авторство внутри сборника); оговорки: **OCR**; **порядок листов в этой части скана нарушен** (колонтитул в чанке 368 — «115», в чанке 369 — «117», при заголовке суждения на с. 124), поэтому локатор — **чанк + заголовок суждения**, печатные страницы приблизительны (ок. 124–127); `ATTRIBUTION_HOLD` **снят** (см. поправку раунда 32 и §4.65 п. 6).
 - **S132, S133** (лат. *Acta* 1620, чанки 370–371: **фрисландское суждение**, члены 2–4 — «De secundo», «De tertio» с тремя силлогизмами и ответами на три instantiae, вторая и **третья ремонстрантские тезы**, «De quarto») — PD; **A2**; оговорки: **OCR** (в ответе на Instantiam I одно слово не читается — *Voetianam*); **порядок листов нарушен** (локатор — чанк + заголовок суждения; печатные листы ок. 127–131); свидетельство о позиции **Арминия** и о ремонстрантской тезе взято **из цитаты противника** и по первоисточникам не сверено (`EVIDENCE_HOLD`; пп. 138, 144).
 - **S134** (лат. *Acta* 1620, чанки 372–373: завершение **фрисландского суждения** — десять возражений со сводными формулами «Servatorem sine salute, **redemptorem sine redemptione**…» и «**salvabilitatem** & reconciliabilitatem… una manu aperire, altera occludere» (сводка материала — S115, §4.58 п. 5); **положительная формула** во всей полноте, включая «τῶν πνευματικῶν Spiritus S. donorum… in ea custodimur», «toti & soli electo populo, certo», «solatium in vita & morte», «non… meriti Christi defectu»; и **заключительная молитва** с Гал. 2:20) — PD; **A2**; оговорки: **OCR** (одно прилагательное в положительной формуле читается неполно: *gr…*); порядок листов нарушен; локатор — чанк + заголовок суждения. На печ. л. 134 начинается трансільванское суждение.
+- **S135** (лат. *Acta* 1620, чанки 360–361: **суждение североголландских братьев** по II артикулу, печ. сс. 108–111 — четырёхчленная схема «Pro omnibus / Pro solis / Pro singulis / Pro iis qui fuerunt, sunt & erunt», «possibilitatem & velleitatem», «aeque late patere, pari passu incedere», «ex iure impetrationis», «voluntas impetrandi absoluta & applicandi conditionata», формула divortii с «nullo unquam modo & tempore separari posse») — PD; **A2**; оговорки: **OCR** (один глагол читается неполно: *resee* → *sese*); суждение **дочитано не до конца** (чанк 361 обрывается на Евр. 9:24; продолжение — чанк 362, частично внесённый как S120/S121); локатор — чанк + заголовок суждения.
 2. Сверить OED s.v. *atonement* (первая фиксация, Tyndale 1526/1530) и перевести S10 из C в A/B. — *Статус (раунд 2): Тиндейл сверен по репринтам (S17, A1); OED/More — открыто.*
 3. Турретин XIV.14 — найти параграф в Dennison/Giger (т. 2) и снять `LOCATOR_HOLD`. — *Статус (раунд 2): снят по латинскому изд. 1847 (S11); пагинация Dennison/Giger не сверена (не требуется: нумерация §§ инвариантна).*
 4. Пересчитать вхождения *redemption/redeem(ed)* и *satisfaction/satisfied* в WCF по Schaff III (для аккуратности §4.3, п. «Счёт слов»). — *Сделано (раунд 4) по полному тексту 1647 г. (S32, §4.20): лемма *redeem-* 8 (5 + 3), *atonement* 0, *satisf-* 7, *purchased* 4, *propitiation* 1; пересчёт именно по Schaff III — открыт как формальность.*
@@ -3266,3 +3443,10 @@ OCR; в положительной формуле одно прилагател�
 **Добавлено в раунде 38:**
 
 148. *(раунд 38)* Сверить **дортское различение «условное обетование / подвешенная воля»** со школьным правилом Турретина «**aliud est mutare voluntatem, aliud velle alicujus rei mutationem**» (Quæstio XI §VII, §4.44 п. 2): установить, есть ли прямая зависимость или это независимое совпадение. Предварительно: зависимость **маловероятна** (суждения 1618–1619 гг. и *Institutio* 1679–1685 гг.; Турретин на дортские *judicia* не ссылается) — но это требует проверки по указателям Турретина.
+
+
+**Добавлено в раунде 39:**
+
+147-бис. *(раунд 39)* П. 147 **существенно продвинут**: найдены **пять совпадений технического словаря** в независимых суждениях делегаций — *possibilitatem & velleitatem* (Гронинген, Северная Голландия), *adaequate* (Гронинген, Фрисландия), *aeque late patere / patent* (Трансильвания, Северная Голландия), *etiamsi nullus servaretur* (Фрисландия, Северная Голландия), формулы «нераздельности» приношения и ходатайства (Утрехт, Северная Голландия, Фрисландия). Гипотеза **общего ремонстрантского источника** стала ведущей; но ремонстрантские первоисточники по-прежнему не читаны (`EVIDENCE_HOLD`).
+
+149. *(раунд 39)* Дочитать **североголландское суждение** (чанк 361 обрывается на Евр. 9:24; продолжение — чанк 362, где оно уже частично внесено как S120/S121 в составе зеландского суждения): установить конец североголландского текста и проверить, нет ли там ещё одной формулировки того же хода.
