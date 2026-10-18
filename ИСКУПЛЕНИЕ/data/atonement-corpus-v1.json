@@ -1400,8 +1400,161 @@
       "99Hold": 65,
       "meaning": "99 — HOLD содержит 65 вытесненных копий; пересчёт по массиву имён скриптом: 10 копий прав лидера, 9 копий этого реестра (27 097 -> 49 824 B), 7 копий 00_CURRENT_AUTHORITY в трёх вариантах имени, 6 — 12_, по 4 — 05_ и 14_, 3 — 15_, по 2 — 02_ и synthesis-corpus-v1.json; сумма по семьям = 65. Строка «перенесены 11 объектов» в лидере сверена и объяснена: это состав зеркал снятой wave-0 (10 документов + data/redemption-corpus-authority-2026-10-07.json = 11 по git show --name-only c54cf68), из них 10 лежат в 99, зеркало 10_PRIMARY_TEXT — в папке 01; workflow и валидатор wave-0 в Drive не переносились. Первая редакция этого поля давала 7 и 6 вместо 9 и 10 (глазомер по части листинга) — см. erratum в лидере 07, раздел 7.",
       "measuredAt": "листинг хаба: ночь 2026-10-16/17; пересчёт семей по массиву имён: 2026-10-17",
-      "recheckCommand": "google_drive list_files с q=\"'<папка>' in parents and trashed = false\", fields=files(name), page_size=1000 (меньше — молчаливая truncation), затем collections.Counter по нормализованным именам; хаб 07 = 1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV, hold = 1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd",
-      "note": "датированный снимок, не живой счётчик: 65 и 9/10 могут измениться чужими волнами, поэтому рядом лежит команда пересъёмки"
+      "recheckCommand": "google_drive list_files: q=\"'<папка>' in parents and trashed = false [and name contains '<семья>']\", fields=files(name), page_size=1000; брать из ответа total_count (точное число без перебора листа) и проверять next_page_token=null вместе с incomplete_search=false как условие полноты. Хаб 07 = 1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV, hold = 1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd",
+      "note": "датированный снимок, не живой счётчик: 65 и 9/10 могут измениться чужими волнами, поэтому рядом лежит команда пересъёмки",
+      "familiesSum": 65,
+      "methodWarning": "фильтр name contains 'W0' даёт 9 и это НЕ состав wave-0: 3 из них — копии authority с подписью 'W0-era name', а 4 зеркала wave-0 метки W0 в имени не имеют; состав снятой волны считается сопоставлением с git -c core.quotepath=off show --name-only c54cf68, а не по подстроке имени",
+      "verifiedTwice": "партиция по именам (скрипт) и total_count ответа Drive сошлись: 65 / 10 / 9 — 2026-10-17",
+      "familiesExact": {
+        "07 — DRIVE LIBRARY AND RIGHTS LEDGER (этот ли́дер)": 10,
+        "atonement-corpus-v1.json": 9,
+        "00_CURRENT_AUTHORITY (все исторические варианта имени)": 7,
+        "05 SOURCE REGISTRY": 4,
+        "12 HARD TEXTS EXTENT CARDS": 4,
+        "15 CALVIN III24 AND DORT II LOCATORS": 3,
+        "02 CONFLICT LEDGER": 2,
+        "12 — HARD TEXTS EXTENT CARDS": 2,
+        "14 OWEN BOOK IV LOCATORS": 2,
+        "14 — OWEN BOOK IV LOCATORS": 2,
+        "synthesis-corpus-v1.json": 2,
+        "00 MASTER RESEARCH MAP AND CHARTER 2026-10-07": 1,
+        "00 README FALLBACK": 1,
+        "00 SYNTHESIS AUTHORITY": 1,
+        "00 — README AND NAVIGATION": 1,
+        "01 DRAFT — what-is-atonement": 1,
+        "01 SERIES PLAN AND ARTICLE COUNT": 1,
+        "01 W0 INTRODUCTION AND TERMINOLOGY 2026-10-07": 1,
+        "02 W0 SCRIPTURE CORPUS FOR WHOM 2026-10-07": 1,
+        "03 BIBLICAL CORPUS AND REDEMPTION VOCAB": 1,
+        "03 PRACTICAL AND PASTORAL NOTES": 1,
+        "03 W0 SOURCE REGISTRY 2026-10-07": 1,
+        "04 W0 COMPETING MODELS TAXONOMY 2026-10-07": 1,
+        "05 W0 ACQUISITION FAMILIES AND DRIVE INTAKE 2026-10-07": 1,
+        "06 PUBLICATION ARCHITECTURE FOR GOSPOD-BOG 2026-10-07": 1,
+        "07 W0 DRIVE MIRROR RECEIPT 2026-10-07": 1,
+        "13 DORT II CALVIN OWEN EXTENT": 1,
+        "README.md": 1,
+        "redemption-corpus-authority-2026-10-07.json": 1
+      },
+      "familiesInvariant": "sum(familiesExact.values()) == familiesSum == 65; из этого же словаря напечатана таблица в ли́дере 07, раздел 7",
+      "mirrorsByGitPath": {
+        "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md": {
+          "n": 10,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json": {
+          "n": 9,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md": {
+          "n": 4,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/12_HARD_TEXTS_EXTENT_CARDS.md": {
+          "n": 6,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md": {
+          "n": 7,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json": {
+          "n": 2,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/README.md": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "data/redemption-corpus-authority-2026-10-07.json": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md": {
+          "n": 3,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md": {
+          "n": 1,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/06_PUBLICATION_ARCHITECTURE_FOR_GOSPOD_BOG_2026-10-07.md": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "ИСКУПЛЕНИЕ/07_W0_DRIVE_MIRROR_RECEIPT_2026-10-07.md": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "ИСКУПЛЕНИЕ/05_W0_ACQUISITION_FAMILIES_AND_DRIVE_INTAKE_2026-10-07.md": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md": {
+          "n": 4,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/04_W0_COMPETING_MODELS_TAXONOMY_2026-10-07.md": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "ИСКУПЛЕНИЕ/03_W0_SOURCE_REGISTRY_2026-10-07.md": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md": {
+          "n": 1,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md": {
+          "n": 1,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/02_W0_SCRIPTURE_CORPUS_FOR_WHOM_2026-10-07.md": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md": {
+          "n": 2,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md": {
+          "n": 1,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md": {
+          "n": 1,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md": {
+          "n": 1,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/01_W0_INTRODUCTION_AND_TERMINOLOGY_2026-10-07.md": {
+          "n": 1,
+          "state": "wave0"
+        },
+        "synthesis/00_README_FALLBACK_2026-10-07.md (в git отсутствует; Drive-объект 1lPGvBuv…)": {
+          "n": 1,
+          "state": "drive"
+        },
+        "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md": {
+          "n": 1,
+          "state": "live"
+        },
+        "ИСКУПЛЕНИЕ/00_MASTER_RESEARCH_MAP_AND_CHARTER_2026-10-07.md": {
+          "n": 1,
+          "state": "wave0"
+        }
+      },
+      "mirrorsInvariant": "sum(mirrorsByGitPath[*].n) == 65; разбивка по состояниям: live 54, wave0-removed 10, drive-only 1. Каждый live-путь проверен os.path.exists, каждый wave0-путь — проверен на ОТСУТСТВИЕ в дереве; объект, не сопоставленный ни с одним файлом, обязан уронить разбор (fail-closed), а не попасть в «прочее»",
+      "headlineNumbers": {
+        "объектов в 99": 65,
+        "вытесненных зеркал живых файлов": 54,
+        "у каких файлов": 16,
+        "снятx wave-0 зеркал": 10,
+        "Drive-only": 1
+      }
     },
     "notInDrive": [
       "английский печатный RAA (только RU HTML 566 938 B + ZIP 113 293 B) → LOCATOR_PARTIAL Мюррея не снимается",
