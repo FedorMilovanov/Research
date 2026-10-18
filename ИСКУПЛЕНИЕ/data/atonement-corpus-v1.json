@@ -1220,26 +1220,28 @@
       "path": "docs/research/atonement",
       "role": "полемическое и терминологическое досье по той же доктрине (разбор статьи А. Прокопенко, TMS, Бакстер/Оуэн, лапсарианство)",
       "ownerBranch": "arena/771fdde7-research",
-      "state": "активный лан: раунд 27 (parts 1-2) на 2026-10-16T20:24Z (tip 19836b3), 36 файлов в docs/research/atonement, 76 коммитов по этой директории; PR и CI-прогонов нет",
+      "state": "активный лан: раунд 29 (part 2) на 2026-10-18T00:13Z (tip 822c2af), 36 файлов в docs/research/atonement, 80 коммитов по этой директории; PR и CI-прогонов нет",
       "registeredIn": "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
       "boundary": "не переносить в `ИСКУПЛЕНИЕ/` без решения владельца. Ветка без общего предка с main: squash/rebase сносит `ИСКУПЛЕНИЕ/ot/` (30 файлов, 7 880 строк в них); merge-commit сохраняет ot/, но даёт 16 add/add-конфликтов (5 корпусных), с уже смерженным #216 — 20 (8 корпусных). Подробности и процедура: реконсилияция 17, §10c",
       "recheckCommand": "git rev-list --count origin/arena/771fdde7-research -- docs/research/atonement",
-      "stateNote": "поле state — датированный снимок, не живой счётчик: между съёмками 16.10 (раунд 23, 68 коммитов по директории) и 17.10 (раунд 27, 76) прошло меньше суток, а темп неровный — раунды по 2 коммита (parts 1/2). Переснимать командой recheckCommand; числа мерж-сценариев — командой из mergePreflight20261016.how",
+      "stateNote": "поле state — датированный снимок, не живой счётчик: четыре съёмки за сутки (68 → 76 → 80 коммитов; раунды 23 → 27 → 29), «+» дорос 2 205 → 2 396 → 2 494 → 2 648, при этом 30 удалений / 7 880 строк / 16 и 20 конфликтов не изменились ни разу. Переснимать recheckCommand; числа мерж-сценариев — mergePreflight20261016.how",
       "mergePreflight20261016": {
         "mergeBase": "absent (refusing to merge unrelated histories)",
         "squashOrRebase": {
           "filesChanged": 47,
-          "additions": 2494,
+          "additions": 2648,
           "deletions": 7913,
           "filesDeleted": 30,
           "linesInDeletedFiles": 7880,
           "deletedLayer": "ИСКУПЛЕНИЕ/ot/ (18 md + data/ot-corpus-v1.json + 11 файлов tools/)",
           "additionsHistory": {
-            "round 23 (16.10T08:10Z)": 2205,
-            "round 26 (16.10)": 2396,
-            "round 27 (17.10)": 2494
+            "round 23": 2205,
+            "round 26": 2396,
+            "round 27": 2494,
+            "round 29": 2648
           },
-          "note": "растёт только «+»; filesDeleted 30 и linesInDeletedFiles 7880 неизменны с 15.10"
+          "note": "растёт только «+»; filesDeleted 30 и linesInDeletedFiles 7880 неизменны с 15.10",
+          "invariantSince": "filesDeleted 30, linesInDeletedFiles 7 880, filesChanged 47 — неизменны с 15.10 (4 съёмки)"
         },
         "mergeCommit": {
           "conflicts": 16,
@@ -1284,11 +1286,11 @@
             },
             "synthesis authority": {
               "main": 17394,
-              "them": 53671
+              "them": 59660
             },
             "synthesis conflict ledger": {
               "main": 18041,
-              "them": 81612
+              "them": 86286
             }
           }
         },
@@ -1324,11 +1326,22 @@
           "их ветку пересоздать от main и разрешить 5 корпусных путей вручную, сохраняя и OT-строки навигации, и их запись C-16",
           "в data/atonement-corpus-v1.json оставить 26 ключей, включая integrityGate; после этого 00_CURRENT_AUTHORITY обязан содержать C-01…C-16"
         ],
-        "how": "git -c core.quotepath=off merge-tree --write-tree --allow-unrelated-histories --name-only <a> <b> | парсить только строки 'CONFLICT (тип): Merge conflict in <путь>';Paths, печатаемые git в octal-экранировке, считаются один раз (иначе цифры удваиваются)",
-        "measuredAt": "2026-10-17T14:2xZ (пересъёмка на живом tip), их tip 19836b3 (round 27 part 2), main 6cac62e, мой tip ab1f8f6; прежде: 2026-10-16T08:10Z на 0b1fb0d (round 23) и d15b07b (round 26)",
+        "how": "git -c core.quotepath=off merge-tree --write-tree --allow-unrelated-histories --name-only <a> <b> | парсить только строки 'CONFLICT (тип): Merge conflict in <путь>';Paths, печатаемые git в octal-экранировке, считаются один раз (иначе цифры удваиваются). Времена снимать только TZ=UTC git log -1 --format=%cI (TZ контейнера менялся между ходами, и два «Z»-значения 16.10 оказались смещены на 3 часа — исправлено 18.10)",
+        "measuredAt": "2026-10-18T08:43Z: их tip 822c2af (round 29 part 2), main 6cac62e, мой tip 47fa55e; предыдущие съёмки: 16.10T08:10Z (round 23, 0b1fb0d), 16.10 (round 26, d15b07b), 17.10 (round 27, 19836b3)",
         "conflictType": "add/add во всех случаях (общего предка нет -> diff3 невозможен)",
-        "materializedMarkersCheck": "git -c core.quotepath=off grep -c '^<<<<<<<' <дерево мержа> -- ИСКУПЛЕНИЕ docs/research/atonement: 16 файлов в 62f957080db5 (main+они) и 20 в 60d11bf41369 (main+#216+они) — независимое подтверждение числа конфликтов; в 00_CURRENT_AUTHORITY при этом 2 маркера, поэтому merge-hygiene-ветка гейта срабатывает на реальном дереве, а не только на мутациях",
-        "resyncRule": "переснятое число в тот же ход записывается во ВСЕ артефакты (док, реестр, тело PR): 16.10 документ и реестр хранили +2 205, а тело PR — +2 396, что и было поймано самопроверкой 17.10"
+        "materializedMarkersCheck": "git grep -c '^<<<<<<<' <дерево мержа> БЕЗ ограничения путями (с фильтром по ИСКУПЛЕНИЕ/ и docs/research/ я вчера получила 19 вместо 20 — .gitignore выпадал из счётчика; ложное расхождение было дефектом команды, не данных): 16 файлов в bde59f106676 (main+они) и 20 в 80e8dc665e1a (main+#216+они) — равно числу конфликтов; '^|||||||' = 0 в обоих деревьях, потому что Conflict-Style по умолчанию не печатает блок предка (проверка на него страхует zdiff3-разрешение)",
+        "resyncRule": "переснятое число в тот же ход записывается во ВСЕ артефакты (док, реестр, тело PR): 16.10 документ и реестр хранили +2 205, а тело PR — +2 396, что и было поймано самопроверкой 17.10",
+        "mergeTrees": {
+          "main+them": "bde59f106676db66717ab856ea5fe741c0775c3f",
+          "pr+them": "80e8dc665e1a53bc9f4096c03a8eb370b78cdd71"
+        }
+      },
+      "myPr216MergeReadiness": {
+        "mainIsAncestorOfMyTip": true,
+        "proofCommand": "git merge-base --is-ancestor origin/main HEAD (exit 0 при origin/main 6cac62e, замер 2026-10-18T08:43Z UTC)",
+        "consequence": "дерево squash-мержа побайтово равно дереву head PR ⇒ зелёный CI на head (validate + atonement-corpus-integrity) есть проверка main после мержа; отдельная репетиция не требуется, пока origin/main остаётся 6cac62e",
+        "ifMainMoves": "утверждение снимается: переснять merge-tree против нового main и прогнать гейты по дереву мержа",
+        "measuredAt": "2026-10-18T08:43Z"
       }
     }
   ],
