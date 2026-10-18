@@ -143,3 +143,42 @@ Pater ipsi dedit, & **non pro mundo**: Ergo.»
 текстом или зависит от него.
 
 **Ссылки:** `34_` §4.62 п. 4, S123.
+
+
+## 9. Дополнение (2026-10-18; раунд 34; кросс-досье `34_`): утрехтское чтение 1 Ин. 2:2 и отвержение «двойного
+ходатайства»
+
+**Что найдено.** В *Acta* 1620 (**утрехтское суждение**, `actasynodination00syno`, чанк 367, печ. cc. 122–123;
+`34_` S127, §4.64) дано развёрнутое чтение 1 Ин. 2:2 — причём сделанное **не от лексики**, а от связи
+умилостивления и ходатайства:
+
+> «Asserit… Scriptura, Christum propitiationem esse pro peccatis **totius mundi** (1 Иоан. 2:2), sed neque vocibus
+*totius mundi* notantur **singuli** homines in hac propositione: alibi nonnunquam, pro singulis hominibus universe,
+licet sumantur, hoc tamen loco eo sensu accipi negamus. Ratio est quia hic **non de impetratione sola**
+reconciliationis, & remissionis peccatorum agitur, sed etiam de illius **applicatione**; nam cum propitiatione
+Christi eiusdem **intercessio conjungitur, quae non est universalis pro singulis, sed pro electis, sive actu credant,
+sive credituri sint**. Non oro, inquit Christus, **pro mundo**.»
+
+И — отдельно, о ходе, которым противники снимали силу этого соединения:
+
+> «Nam quod intercessionem Christi **duplicem** faciunt Remonstrantes, aliam generalem pro omnibus & singulis, aliam
+particularem pro fidelibus tantum, **illud purum putum est eorundem commentum, cuius nullam ex scripturis
+probationem adferre possunt**.»
+> («А то, что ремонстранты делают ходатайство Христово **двойным** — одно общее за всех и каждого, другое особенное
+только за верных, — есть **чистейший их вымысел**, для которого они не могут привести никакого доказательства из
+Писания».)
+
+**Что это даёт досье.** (1) Аргумент трилеммы (§2) получает **историческое подтверждение именно в той форме, в какой
+он здесь сформулирован**: ἱλασμός и ходатайство соединены в одном лице Первосвященника, поэтому объект того и другого
+один. (2) Возражение, которое чаще всего предъявляют к такому чтению («ходатайство бывает двух родов — общее и
+особенное»), **уже предъявлялось в 1618–1619 гг. и было отвергнуто как бездоказательное**; это важно для §4: речь не
+о новейшей полемической выдумке. (3) Формула «**pro electis, sive actu credant, sive credituri sint**» даёт дортовский
+способ говорить об избранных до обращения — через различение порядка времени и порядка предопределения, а не через
+изменение гнева Божия (ср. §8 `34_`).
+
+**Оговорки (`EVIDENCE_HOLD`).** (а) Это суждение **делегации**, а не текст Канонов. (б) Текст по OCR-скану; латинская
+сверка по изданию с надёжной пагинацией не производилась. (в) Отвергнутая формула членит ходатайство **внутри себя**;
+переносить квалификацию «purum putum commentum» на любую иную схему (включая статью Прокопенко) **нельзя** без
+отдельной сверки (`34_` §8 п. 134).
+
+**Ссылки:** `34_` §4.64 пп. 1–2, S127.

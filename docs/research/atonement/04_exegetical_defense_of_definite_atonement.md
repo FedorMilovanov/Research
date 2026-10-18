@@ -139,3 +139,52 @@ fidem veram & Christi mortem mutua relatio**.»
 Писания в §§1–4 требует отдельной сверки, а не переноса по сходству.
 
 **Ссылки:** `34_` §4.63 пп. 1–2, S124–S125.
+
+
+## 8. Дополнение (2026-10-18; раунд 34; кросс-досье `34_`): 2 Кор. 5:14–15 и частица «только» у Утрехта
+
+**Что найдено (утрехтское суждение, *Acta* 1620, чанки 366–367, печ. cc. 121–123; `34_` S126, §4.64).**
+
+**(1) Общее правило чтения:**
+
+> «Testatur quidem Scriptura, Christum **pro omnibus** mortuum, **nusquam autem pro singulis**, nec disertis nec
+aequivalentibus verbis. Quamobrem *omnes* in hac propositione, aut notat gentes pariter, & Iudaeos (Рим. 3:9), aut
+notat varia hominum genera (1 Тим. 2), aut denique omnes & singulos **fideles** (2 Кор. 5:14–15).»
+> («Писание свидетельствует, что Христос умер **за всех**, но **нигде — за каждого в отдельности**, ни ясными, ни
+равносильными словами. Посему „все“ в таком предложении означает: либо равно иудеев и язычников, либо различные роды
+людей, либо же всех и каждого верующих».)
+
+**(2) Четыре довода в пользу третьего чтения для 2 Кор. 5:14–15** (см. §4 настоящего досье):
+I — ст. 15 «да живущие не для себя живут»: жизнь здесь не природная, а духовная (доказательство от
+противоположностей: смерть в ст. 14 не природная);
+II — **довод от собственного ограничения противников**: «Апостол присоединяет к смерти Христовой **Его
+воскресение**; его же **сами ремонстранты** ограничивают одними верными (*Collatio Belgica*, с. 160, строки 13–14)»;
+III — ст. 17 «кто во Христе, тот **новая тварь**»;
+IV — ст. 17–18 «древнее прошло, всё новое… Бог примирил нас с Собою» — истинно только о Церкви, тогда как прочие
+познаются Апостолом «по плоти», как чада Адамовы.
+
+**(3) Hermeneutica частицы «только»** (возражение противников по Еф. 5:25: в тексте нет *tantum*, значит, Христос мог
+предать Себя и за других). Ответ тремя ходами:
+
+> «Christus, cum ait, se viam, resurrectionem, vitam &c. non addit particulam *tantum*; an ergo praeter Christum alia
+est vita, alia resurrectio, alia via?… *omnia sustineo*, inquit Apostolus, **propter electos**: an igitur, quia
+exclusivam diserte non apponit, etiam propter reprobos omnia sustinuisse dicendus erit?»
+> «…si enim dilectio, de qua hic, ad omnes universe pertinet, cur eam ad Ecclesiam Apostolus **particulariter**
+restringit?»
+> «…argumentum adfertur ab amore Christi erga ecclesiam… **singulari** in corpus suum mysticum… non autem ab amore
+communi in omnes & singulos homines… Si ab universali in singulos amore argumentaretur Apostolus, **parum stringeret
+argumentum**.»
+
+**(4) Именование Церкви «по лучшей части»** (на возражение, что видимая Церковь включает лицемеров): «Ecclesiae nomen
+toti coetui communiter tribuitur, **ob meliorem eius partem**, ea autem sunt electi».
+
+**Что это даёт досье.** (1) Для §§1–4: готовый исторический прецедент толкования «всех» мест — троякое чтение и
+правило «за всех, но никогда за каждого в отдельности». (2) Для §3 (2 Кор. 5:14–15): довод II показывает, что спор
+решается **внутри самого стиха** — противники сами ограничивают воскресение верующими, а «все» в том же стихе хотят
+читать иначе. (3) Для §5: аргумент «отсутствие частицы „только“» был предъявлён и отвергнут в 1618–1619 гг., с
+контрпримерами из Писания и с доводом от силы аргумента.
+
+**Оговорки (`EVIDENCE_HOLD`).** (а) Суждение делегации, не текст Канонов. (б) OCR; латинская сверка не производилась.
+(в) Ссылка на *Collatio Belgica* с. 160 дана по утрехтскому суждению и не сверена (`34_` §8 п. 138).
+
+**Ссылки:** `34_` §4.64 пп. 3–5, S126.
