@@ -145,6 +145,8 @@
 - **Q60.** *(раунд 33)* «Имеет ли тезис „Христос умер за всех и каждого“ **утешительную** силу для верующего — и как Дорт обосновывает ограничение практически, а не только логически?» — Ответ: **нет, и это заявлено прямо, с разбором силлогизма**. Утрехтское суждение: из ремонстрантской посылки верующий вынужден заключать «Христос умер за всех и каждого → значит, и за тебя»; но «что мне в том, что я это знаю, если я не знаю, что приобретённое спасение мне и **применяется**?… этим силлогизмом мог утешаться и **Иуда**, который однако осуждён». Ответный ход — не «все», а **взаимоотношение веры и смерти Христовой**: «между истинной верой и смертью Христовой — **взаимное отношение**», и обетования Евангелия всеобщи «**не просто так, чтобы относиться к каждому лицу из родов, но ко всем и каждому верующим и избранным**». Разбор — §4.63 (S124–S125).
 | S1 | W. G. T. Shedd, *Dogmatic Theology*, vol. II (New York: Scribner, 1888) | A1 | pp. 464 («extent… means its personal application… The extent is now the intent»), 466 («If the word means value… unlimited; if… applying… limited»), **469** («Atonement must be distinguished from redemption…» + WCF 8.8 и 8.5), **470** («Atonement is unlimited, and redemption is limited…»), **475** («in the Divine mind and decree the two things are inseparable»), **476–477** («intention to apply the atonement at the time when the atonement is provided»; аналогия с жертвенным агнцем). Скан archive.org `dogmatictheology02sheduoft`; печатная страница = лист − 10 (проверено по индексу тома: «distinguished from redemption, ii. 469; inseparable from its effectual application, in the divine mind and decree, ii. 475») | PD; `PARTIAL_OBJECT` (полнотекстовый поиск по скану). Соответствие изд. Gomes 2003 pp. 741–743 — по сноскам Прокопенко, не сверено |
 - **Q61.** *(раунд 34)* «Как Дорт читает **1 Ин. 2:2** („умилостивление за грехи всего мира“) — и что он отвечает на различение **двух ходатайств** (общего за всех и особенного за верных)?» — Ответ: «всем миром» здесь **не обозначаются все люди порознь**, потому что речь идёт не об одном приобретении, но и о применении: «с умилостивлением Христовым соединяется **Его же ходатайство**, которое не всеобще за каждого, но **за избранных — веруют ли они уже, или имеют уверовать**». А различение «двойного ходатайства» названо **чистым вымыслом** («purum putum… commentum»), для которого нет доказательства из Писания. Разбор — §4.64 (S126–S128).
+- **Q62.** *(раунд 35)* Что именно фрисландские депутаты находят **под** ремонстрантским артикулом — почему приобретение прощения для всех они называют условным («**conditionate mortuum**») и в чём состоит их главная претензия к формуле «remissibilitas & reconciliabilitas»? (§4.65.)
+- **Q63.** *(раунд 35)* Как фрисландцы согласуют **всеобщие** и **особенные** тексты Писания (каково их «usitatissima explicatio») и каков их аргумент против сведения обетований к одной **возможности** (κοινωνία vs «-abilitas»)? (§4.66.)
 | S2 | Charles Hodge, *Systematic Theology*, vol. II (1871), Part III ch. VI §3 «Definition of Terms» | A1 | pp. 468–479; **469** (atonement = reconciliation, «expresses the effect, and not the nature»; второй смысл «not a Scriptural usage»), **470** (satisfaction — «the one which for ages has been generally used»), **477** (redemption — «deliverance by purchase… payment of a ransom»), 478 (expiation/propitiation). CCEL `hodge/theology2/theology2.iv.vi.iii.html` | PD; `FULL_SECTION` |
 | S3 | A. A. Hodge, *The Atonement* (Philadelphia: Presbyterian Board, 1867), гл. II | A1 | «The old term… habitually used by all the Reformers in all the creeds… of the seventeenth century… was SATISFACTION… The word Atonement is ambiguous… once in English NT (Rom 5:11) = καταλλαγή». Страница **не** сверена (PDF monergism) | PD; `LOCATOR_HOLD` |
 | S3 (раунд 2) | то же | A1 | **pp. 33–34** (скан `theatonement00hodguoft`, страница = лист − 6): p. 33 «(1.) The word Atonement is ambiguous… It appears but once in our English New Testament, and there (Rom. v. 11) as the equivalent of the Greek word καταλλαγή, reconciliation… Thus the word is sometimes understood to mean reconciliation, and sometimes that sin-expiating, God-propitiating work by which reconciliation was effected. When we say that we have "received the atonement," we mean that we have been reconciled to God… On the other hand, the word Satisfaction is not ambiguous»; p. 34 «The word SATISFACTION is neither ambiguous nor defective. The Reformed Churches mean by its use (1) that Christ fully satisfied all that the justice and law of God required…» | PD; `EXACT_LOCATOR_VERIFIED`; `LOCATOR_HOLD` снят |
@@ -285,6 +287,9 @@
 | S126 *(раунд 34)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанки 366–367**, печ. cc. 121–123) — **утрехтское суждение, экзегетическая часть** (окончание разбора тезы IV): (1) **Ин. 10:16 и Савл** — «oves etiam a Christo appellantur eae, quae vocem eius nondum audiunt, nec dum sequuntur, sed tempore a Deo definito, auditurae sint, atque secuturae… **ita Saulus, cum esset persecutor, blasphemus, non erat actu ovis Christi, erat tamen ovis Christi, decreto electionis**»; (2) **Деян. 20:28 / Еф. 5:25** — «Christus Ecclesiam suam sanguine suo acquisivit… Atqui non omnes & singuli sunt Ecclesia Christi, est enim & quaedam **Ecclesia Diaboli**»; на возражение (*Collat. Belg.* с. 167), что видимая Церковь включает лицемеров: «Ecclesiae nomen toti coetui communiter tribuitur, **ob meliorem eius partem**, ea autem sunt electi… ex beneficio **soli Ecclesiae** a Christo collato argumentatur Apostolus»; (3) **герменевтика частицы «только»** — на возражение, что в Еф. 5:25 нет *tantum*: «Christus, cum ait, se viam, resurrectionem, vitam &c. non addit particulam tantum; an ergo praeter Christum alia est vita, alia resurrectio, alia via?… omnia sustineo, inquit Apostolus, **propter electos**: an igitur… etiam propter reprobos omnia sustinuisse dicendus erit?»; «si enim dilectio… ad omnes universe pertinet, cur eam ad Ecclesiam Apostolus **particulariter** restringit?»; «ab amore… **singulari in corpus suum mysticum**… non autem ab amore communi in omnes & singulos homines… Si ab universali in singulos amore argumentaretur Apostolus, parum stringeret argumentum»; (4) **2 Кор. 5:14–15** — «Testatur quidem Scriptura, Christum **pro omnibus** mortuum, **nusquam autem pro singulis**, nec disertis nec aequivalentibus verbis»; троякое чтение: «aut notat gentes pariter, & Iudaeos (Рим. 3:9), aut notat varia hominum genera (1 Тим. 2), aut denique omnes & singulos **fideles** (2 Кор. 5:14–15)»; четыре довода — (I) «ut qui vivunt, posthac non sibi vivant…» (жизнь здесь не природная, а духовная; доказательство от противоположностей: смерть в ст. 14 не природная); (II) «Apostolus morti Christi addit **resurrectionem** illius; eam autem restringunt **ad solos fideles ipsi Remonstrantes**, *Collat. Belg.* с. 160, строка 13–14»; (III) «si quis in Christo est, **nova creatura**»; (IV) «**vetera praeterierunt, nova facta sunt omnia**… qui nos reconciliavit sibi per Iesum Christum»; + «neminem novisse secundum carnem… reliqui… tantum secundum carnem, tanquam **Adami filii** cogniti». PD; **A2**; оговорки: OCR, страницы приблизительны |
 | S127 *(раунд 34)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанк 367**, печ. cc. 122–123) — **утрехтское суждение, тезы V–VI**: (1) **1 Ин. 2:2** — «Asserit… Scriptura, Christum propitiationem esse pro peccatis **totius mundi** (1 Иоан. 2:2), sed neque vocibus *totius mundi* notantur **singuli** homines… alibi nonnunquam… hoc tamen loco eo sensu accipi negamus. Ratio est quia hic **non de impetratione sola** reconciliationis… agitur, sed etiam de illius **applicatione**; nam cum propitiatione Christi eiusdem **intercessio conjungitur**, quae non est universalis pro singulis, sed **pro electis, sive actu credant, sive credituri sint**. Non oro, inquit Christus, **pro mundo**»; и — «quod intercessionem Christi **duplicem** faciunt Remonstrantes, aliam generalem pro omnibus & singulis, aliam particularem pro fidelibus tantum, **illud purum putum est eorundem commentum**, cuius nullam ex scripturis probationem adferre possunt»; (2) **теза V, подпись под последним членом** — «De V. Thesi ita statuimus, **postremo illius membro nos subscribere**, sanguis enim Christi in se, ad universum humanum genus redimendum, **sufficientissimus** est: **causa illius sufficientiae est dignitas personae Christi, est enim Christus verus aeternusque Iehova**, ex ea autem hypothesi non sequitur, Deum patrem singulis hominibus reconciliatum esse…»; (3) **Ин. 3:36** — «Super quos **manet ira Dei**, iis Deus pater non est reconciliatus… **Reconciliatum enim alicui esse, & ira in eum ardere sunt ἀσύστατα**»; обмен по *Collatio* с. 158: ремонстранты — «iram Dei manere super infideles… nihilo tamen minus morte Christi **ianuam** ipsis ad gratiam esse apertam» и «manere non semper significare… nunquam recedere»; ответ — «Qui enim reconciliatus est Deo, in statum gratiae iam est restitutus, **neque est tertius aliquis aut medius status inter reconciliationem & statum gratiae**, aut si esse putant, demonstrent e scripturis»; **притча об Авессаломе** — «Absoloni per feminam Tekoensem ianua ad reconciliationem cum patre Davide aperiebatur, **nondum tamen patri Absolon reconciliatus erat**»; и вопрос о «manere»: «quod manet, dum manet, certe non recedit… cum… aliquando ab incredulitate ad fidem convertantur, **quando ira Dei… incipiat venire?** cumque dicant… vere fideles rursus infideles omnino fieri posse, quomodo ira Dei super eos, super quos nunquam fuit, **manere** dici potest?»; (4) **аргументы о новом завете** — «Cum quibus Deus novum gratiae foedus inire voluit, iis etiam foederis illius & gratiae verbum annunciari voluit. Atqui… singulis non voluit annunciari» (Быт. 3; 11; Мф. 28; Мк. 16; Еф. 2; Пс. 147; Деян. 14); «nullum inter **semen serpentis** & **semen Christi** esse discrimen»; «non miseretur singulorum» (Рим. 9:15, 18); «sequitur quod singuli pacem habeant cum Deo, & **nemo sit filius irae natura**»; (5) **теза VI** — Еф. 2:3; Пс. 51:7; Рим. 5:18; вердикт — «omnes hasce Theses falsas esse… eas **damnamus**». PD; **A2** |
 | S128 *(раунд 34)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанк 367**, вторая половина, печ. **с. 124**) — **начало суждения депутатов фрисландских церквей** (*Sententia Remonstrantium circa Articulum Secundum. **Iudicium deputatorum Ecclesiarum Frisicarum***): «In secundo hoc articulo similiter agunt Remonstrantes, atque in primo. **Partim enim de non controversis novum formant articulum**, partim speciose loquuntur; ut eo tutius, quos fovent errores, incautis obtrudant. Si pax Ecclesiae ipsis cordi fuisset… potuissent etiam ab hoc articulo efformando abstinere, & in recepta doctrina acquiescere. **Neque enim ipsos fugit doctrinam de sufficientia meriti mortis Christi, ad expianda omnium & singulorum hominum peccata, si omnes & singuli crederent, constanter in Ecclesiis Belgicis, omnibus hactenus, nemine contradicente, retentam & doctam esse.** Non ignorant propterea à compluribus Orthodoxis sano sensu usurpatam esse hanc distinctionem: **Christum pro omnibus & singulis mortuum esse, quoad sufficientiam; pro electis vero & credentibus, quoad efficaciam**. Denique cum Remonstrantes dicunt, Christum pro omnibus & singulis mortuum esse, **non hoc [sensu] accipi volunt: sed certo quodam sensu**…». PD; **A2**; оговорки: суждение только начато (текст обрывается), страницы приблизительны |
+| S129 *(раунд 35)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанк 368**, печ. листы ок. 124–125) — **фрисландское суждение, разбор артикула**: четыре члена ремонстрантского артикула («1. quod dicunt, Christum pro omnibus mortuum esse; 2. pro singulis; 3. ita ut iis remissionem peccatorum & reconciliationem impetraverit; 4. neminem eius participem fieri praeter credentes»); принятие первого члена («cum Scriptura id expresse dicat, quis Christianus contradicet?»); условность приобретения («**conditionate mortuum esse pro omnibus & singulis, si nimirum credant**»); следствие из второго аксиома ремонстрантов — смерть Христа как «**causa sine qua non**» открытия дверей милосердия; диагноз: «non contenti recepta de **sufficientia** mortis Christi doctrina, talem **impetrationem**… invenerint; quae **ab omni remissionis participatione seiuncta**»; умалчивание о дарах Духа и формула «peccatorum **remissibilitatem**, & hominum Deo **reconciliabilitatem**… ab homine eiusque **libero arbitrio** suspensam» | A2; PD; OCR, страницы приблизительны |
+| S130 *(раунд 35)* | *Acta* 1620 (**чанк 368**, вторая половина, + **чанк 369**, первая половина; печ. листы ок. 125–127) — **фрисландское согласование всеобщих и особенных текстов**: два каталога мест (всеобщие: 2 Кор. 5:15; 1 Тим. 2:6; Евр. 2:9; 1 Ин. 2:2; 1 Кор. 15:22; Ин. 1:29; 6:51 — особенные: Мф. 20:28; 26:28; Мк. 14:24; Ин. 10:15; 11:51–52; Еф. 5:25; Деян. 20:28; Рим. 8:34; Евр. 9:28; 13:11; Ин. 17:9; Ис. 53; Дан. 9:27); «Orthodoxis, tam priscis quam recentioribus **usitatissima explicatio**», что «всех» и «мира» Писание разумеет **συνεκδοχικῶς** — либо всех верующих, либо людей всякого чина (1 Тим. 2:6), либо избранных и верующих из иудеев и язычников; 1 Ин. 2:2 по связи («eadem ratione… qua pro **nostris**, id est fidelium») и соединение ходатайства с умилостивлением («**quam ad fideles, Remonstrantes ipsi restringunt**»); Откр. 5:9; параллель «pro vobis» (Лк.) / «pro multis» (Мф., Мк.); Рим. 11:12 и 2 Кор. 5:19: «**multi & omnes illi, nulli alii sunt quam Ecclesia Catholica**» | A2; PD; OCR |
+| S131 *(раунд 35)* | *Acta* 1620 (**чанк 369**, вторая половина; печ. листы ок. 126–127) — **фрисландский аргумент от «-abilitas» и ветхозаветная катена**: обетования народам суть «non **remissibilitatem** aut **reconciliabilitatem** quandam consecuturas esse, sed Christi eiusque beneficiorum salutarium **κοινωνίαν**»; Рим. 5:18 — «ad omnes non **iustificabilitatem**, sed **iustificationem** vitae»; катена (Быт. 22:18; Втор. 32:43; Пс. 2:8; 22:27–28; 117:1; Ис. 2; 11:10; 25:6–8; 42:6; 54; 55:5; 60; Иоил. 2:28; Мих. 4:1; Зах. 8:23); вывод: «**meridiano sole clarius**… ad exercitum Sancti populi, universamque Ecclesiam electorum & credentium, ex omnibus angulis orbis terrarum… primo ad Christum hic evocandam, dein ad nuptias Agni congregandam»; и до́ксологическое заключение: таинство этой всеобщности открыто «**in nostrum, qui gentes sumus, solatium**» | A2; PD; OCR |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -1570,8 +1575,208 @@
 
 Это подтверждает и уточняет §4.57: «usitatissima explicatio» — не ад hoc уступка полемики, а **общепринятый узус**, на который фрисландцы ссылаются как на бесспорный факт («nemine contradicente»). И сразу — ключевая мысль: ремонстранты берут **бесспорное** (достаточность) и строят из него **новый артикул**, придавая ему другой смысл («non hoc [sensu] accipi volunt: sed certo quodam sensu»).
 
-**10. Границы.** (а) Фрисландское суждение **только начато** (текст обрывается на словах «sed certo quodam sensu») — дочитывание, п. 141. (б) Утрехтское суждение прочитано полностью (вердикт: «eas damnamus»). (в) Ссылки на *Collatio Belgica* (сс. 155, 158, 160, 167) приведены по утрехтскому суждению, не сверены (п. 138). (г) OCR, страницы приблизительны.
+**10. Границы.** (а) Фрисландское суждение здесь **только начато** — оно продолжено и разобрано в §§4.65–4.66 (раунд 35; чанки 368–369): «conditionate mortuum», «remissibilitas & reconciliabilitas», «usitatissima explicatio», κοινωνία против «-abilitas».
 
+
+
+
+### 4.65. Q62 — «Conditionate mortuum»: что фрисландцы находят под ремонстрантским артикулом (раунд 35)
+
+**Зачем это.** §4.64 закрыл утрехтское суждение; теперь дочитано **фрисландское** — самое длинное в разделе и, как
+выяснилось, **наиболее близкое по структуре к схеме Прокопенко** из всего, что найдено в *Acta*: здесь прямо описано
+«приобретение для всех, отделённое от всякого участия». Это надо разобрать с той же осторожностью, что и п. 134.
+
+**1. Как фрисландцы членят артикул.** Прежде чем спорить, они формально выделяют в нём **четыре утверждения**:
+
+> «В этом артикуле, как мы судим, надлежит рассмотреть четыре вещи: **1.** что они говорят — Христос умер **за всех**;
+> **2.** — умер **за каждого**; **3.** — умер за всех и каждого **так, что приобрёл** им прощение грехов и примирение;
+> **4.** что **никто не делается причастником** сего, кроме верующих».
+
+**2. Первый член они принимают без спора.** Это важно для всей серии:
+
+> «Что касается первого члена, — **когда Писание говорит это прямыми словами, какой христианин станет
+> противоречить?**»
+
+И тотчас приводят оба ряда мест (см. §4.66 п. 1). Значит, спор с самого начала **не о словах** «Христос умер за всех»
+и не о том, можно ли их произнести, — а о смысле, в котором их берут («non hoc sensu accipi volunt: sed certo quodam
+sensu», S128).
+
+**3. Приобретение у ремонстрантов — не absolute, а conditionatum.** Фрисландцы выводят это из собственной оговорки
+противников (в *Declaration*, поданной Синоду): «абсолютное приобретение прощения не может стоять вместе с условиями
+прощения, имеющими быть предписанными после». Отсюда:
+
+> «…довольно показывают, что оно **обусловлено**, то есть что Христос приобрёл прощение грехов для всех и каждого,
+> **если они исполнят** условия завета и спасения, какие им будут предписаны, — то есть если уверуют и пребудут в вере
+> и в послушании веры, — **без какового пребывания и самое прощение, уже дарованное некогда истинно верующим,
+> отзывается**; тем же, которые условий сих не исполнят, Христос **воистину не приобрёл** прощения; более того — никому
+> его не приобрёл, **если бы (что, по их мнению, могло статься) никто** не оказался их исполнившим».
+
+И итог:
+
+> «А когда приношение смерти и приобретение **равно простираются**, что иное отсюда может следовать, как не то, что
+> Христос умер за всех и каждого **не просто, но условно** — именно **если уверуют**» —
+> «**non simpliciter, sed conditionate mortuum esse pro omnibus & singulis, si nimirum credant**».
+
+**4. К чему это ведёт при соединении со вторым аксиомом.** У ремонстрантов есть и другое положение: «Христос умер не
+за верующих как таковых», и смерть Его предопределена «**прежде, нежели Бог положил что-либо у Себя о спасении
+кого-либо из смертных поимённо** — и даже прежде, нежели Он определил что-либо об условиях спасения». Соединив оба:
+
+> «…последует, что Христос воистину умер **ни за всех, ни за верных**, и даже **ни за кого из смертных поимённо**, но
+> умер лишь **вообще**, на благо человеков, в таком смысле, что смерть Его есть **causa sine qua non**, — то, чем
+> отверзаются людям двери милосердия и вновь предписываются условия, исполняя которые люди могли бы получить прощение
+> грехов и жизнь вечную».
+
+И оценка: «если бы они не были чреваты сими и другими (о которых после) **ужасными порождениями мнений**… никакой вид
+необходимости не мог бы понудить их выковать сей новый артикул».
+
+**5. Главный диагноз — и он же самая близкая параллель к схеме Прокопенко.**
+
+> «Всё же, что они пытались укрыть и ввести под каймою сего артикула, лежит в том, что, **не удовольствовавшись
+> принятым учением о достаточности смерти Христовой**, они **изобрели такое приобретение** прощения грехов для всех и
+> каждого, которое **отделено от всякого участия в прощении**».
+
+Обратите внимание на точность: фрисландцы **не отвергают** достаточность («recepta doctrina») — они отвергают
+**структуру**, в которой некое приобретение относится ко всем, а участие — к верующим, и между тем и другим нет связи.
+То есть отвергнут **не объём**, а **разрыв**. Это ровно тот пункт, в котором надо держать `EVIDENCE_HOLD` (п. 134):
+структурное подобие со статьёй Прокопенко здесь максимальное за весь корпус, но ниже (п. 7) указано, что переносить
+обвинение целиком нельзя.
+
+**6. Умолчание о Духе и формула «remissibilitas & reconciliabilitas».** Второй признак — чего в артикуле **нет**:
+
+> «Им предложено было говорить о смерти и удовлетворении Христовом, о плодах его и действенности, о благах, им
+> приобретённых; но они **не изъясняют самого способа удовлетворения** и **не упоминают ни о каком даре Святого
+> Духа** — ни о вере, ни о стойкости, ни о восстановлении в нас образа Божия, то есть об обновлении природы нашей.
+> Чем они дали разуметь то, что в других местах открывают ясно: что Христос приобрёл спасение так, что **грехи могли
+> бы быть прощены**, то есть **простимость грехов** и **примиримость человеков с Богом**; а всё участие в сем благе
+> зависит от свободного исполнения предписанных условий, то есть от человека и его **свободного произволения**».
+
+Это и есть те самые «remissibilitas & reconciliabilitas», принадлежность которых фрисландскому суждению оставалась под
+`ATTRIBUTION_HOLD` с раунда 32, — **подтверждена по тексту** (п. 141 закрыт).
+
+**7. Границы переноса на статью Прокопенко (обязательная оговорка).** (а) Здесь осуждается связывание участия со
+**свободным произволением**; Прокопенко связывает его с верой и, насколько известно из текста статьи, не делает
+спасения делом свободного произволения — переносить на него это обвинение **нельзя**. (б) Здесь осуждается умалчивание
+о дарах Духа и о вере как плоде смерти Христовой; у Прокопенко этот вопрос статьёй не ставится (ср. §5 и `03_`).
+(в) Следовательно, из фрисландского текста можно извлечь **структурный аргумент** (п. 5 и §4.66 п. 8), но не verdict
+о личности или о богословии автора. `EVIDENCE_HOLD` по п. 134 **не снимается**.
+
+**8. Границы чтения.** (а) Текст по OCR; колонтитулы в этой части скана расходятся с пагинацией (в чанке 368 стоит
+«NATIONALIS DORDRECHTANÆ. 115», в чанке 369 — «117», тогда как заголовок фрисландского суждения стоит на с. 124),
+поэтому локатор — **чанк + заголовок суждения**; печатные страницы приблизительны (ок. 124–127). (б) Суждение
+делегации, а не текст Канонов. (в) Конец суждения не достигнут — п. 142.
+
+### 4.66. Q63 — Фрисландское согласование «всех» и «многих»: συνεκδοχικῶς и аргумент от «-abilitas» (раунд 35)
+
+**1. Два каталога мест.** Фрисландцы выписывают **обе группы текстов подряд** — и это само по себе объясняет их
+метод: Писание говорит и так, и так, следовательно, требуется **согласование**, а не выбор одного ряда против другого.
+
+*Всеобщие:* 2 Кор. 5:15 («Христос за всех умер»); 1 Тим. 2:6 («предал Себя ἀντίλυτρον за всех»); Евр. 2:9 («вкусил
+смерть за всех»); 1 Ин. 2:2 («умилостивление… за грехи всего мира»); 1 Кор. 15:22 («все оживут»); Ин. 1:29 («Агнец,
+берущий грех мира»); Ин. 6:51 («плоть Моя, которую Я дам за жизнь мира»).
+
+*Особенные:* Мф. 20:28 («душу Свою λύτρον за многих»); Мф. 26:28 / Мк. 14:24 («кровь… за многих»); Ин. 10:15 («за
+овец»); **Ин. 11:51–52** («не только за народ, но чтобы собрать рассеянных чад Божиих»); Еф. 5:25 («за Церковь»);
+Деян. 20:28 («Кровью Своею приобрёл Церковь»); **Рим. 8:34** («Христос умер… за избранных»); Евр. 9:28; Евр. 13:11
+(«чтобы освятить людей Кровию Своею, пострадал вне врат»); **Ин. 17:9** («не о мире молю»); апостольское «за нас», «за
+грехи наши» — «от лица Церкви». Из Ветхого Завета: **Ис. 53** («понёс, понёс на Себе грехи многих») и **Дан. 9:27**
+(«утвердит завет для многих»).
+
+И вывод: «Из сих и подобных мест Священного Писания явствует, что их должно согласить **удобным изъяснением**».
+
+**2. Сама explicatio — «usitatissima».**
+
+> «Что до нас, мы стоим на этом, у православных — **и древних, и новейших — весьма употребительнейшем изъяснении**:
+> что Писание, в сем предмете упоминая всех и мир, разумеет **συνεκδοχικῶς всех верующих** — как явствует в
+> приведённых местах 2 Кор. 5:15 и 1 Кор. 15:22, Евр. 9:16 и в иных (Еф. 4:10; 1 Кор. 15:28); **или же людей всякого
+> пола и всякого чина**, как в 1 Тим. 2:6… **или наконец** — что обычно у Святого Духа — **всех избранных и верующих не
+> только из народа иудейского, но и из эллинов, то есть язычников**; что может быть показано уже из одного сличения
+> мест, приведённых из возлюбленного ученика Христова Иоанна».
+
+И — о самом слове «мир» у Иоанна:
+
+> «Он, более прочих, кажется, услаждался сим словом *мир*, чтобы выразить святой восторг о тайне призвания язычников,
+> и притом **к нашему утешению**».
+
+Тем самым §4.57 получает подтверждение в самой полной форме: «usitatissima explicatio» — это **не полемическая
+уловка**, а ссылка на общепринятый узус «древних и новейших», причём с указанием трёх разных смыслов, а не одного.
+
+**3. 1 Ин. 2:2 — чтение по связи (вторая, независимая от утрехтской, аргументация).**
+
+> «Не само ли соединение в месте 1 Ин. 2:2 это явно показывает, когда Апостол утверждает, что Христос есть
+> умилостивление за грехи всего мира **тем же образом, как и за наши**, то есть верных, к которым он писал? — разве
+> кто захочет, чтобы Иоанн здесь желал сказать: Христос есть умилостивление за грехи **верных пребывающих** — отчасти
+> безусловно, отчасти условно, смотря по тому, уверуют ли люди и пребудут, или нет; **что опровергается самим контекстом
+> Апостола** и противоречит мнению ремонстрантов (которые отрицают, что Христос умер за верных как таковых). Ибо
+> Апостол не говорит: „за наши грехи Он есть; а за всех и каждого прочих человеков **мог бы быть**“; но: „**Он есть**
+> умилостивление не только за наши, но и за грехи всего мира“».
+
+Внутри этого хода — самое ценное: ремонстрантское чтение потребовало бы глагола **«posset»** («мог бы быть»), то есть
+в точности той «-abilitas», о которой речь ниже; а текст стоит в изъявительном наклонении — «**есть**».
+
+И второе — **ходатайство**, но с иным оборотом, чем у утрехтцев:
+
+> «Затем **ходатайство Христово на небесах — которое сами ремонстранты ограничивают верными** — Апостол connectit там
+> с умилостивлением, выводя первое из второго: показывая, что Христос как **ходатай** на небесах ходатайствует о грехах
+> тех, за чьи грехи Он сделался умилостивлением **на земле**».
+
+Разница с §4.64 п. 1 существенна и её надо не сглаживать: **утрехтцы** отвергают самое различение «двух ходатайств»
+как «purum putum commentum»; **фрисландцы** берут то, что противники **сами** признают (ходатайство — за верных), и
+обращают это против них же. Две делегации, два разных хода к одному выводу.
+
+Далее — Откр. 5:9 («был заклан и Кровию Своею искупил нас Богу из всякого колена и языка, и народа и племени») и
+разбор однотипных выражений: «кровь Моя **за вас** изливается» (Лк.) и «**за многих**» (Мф., Мк.) — **одно и то же
+излияние описано обоими способами**; ангел: «радость великая будет вам и **всему народу**»; Христос: «имею и других
+овец… которых Мне надлежит привести»; Пётр: «вам и детям вашим… и **всем дальним**, кого ни призовёт Господь Бог наш».
+
+**4. Как Павел определяет «мир».**
+
+> «Сверх того апостол языков открыто учит, что в сем предмете разумеет Священное Писание под миром, когда **богатство
+> язычников и богатство мира** берёт за одно и то же (Рим. 11:12) и через мир означает тех, **кому Бог не вменяет
+> грехов**, то есть избранных и верующих во всём мире (2 Кор. 5:19). Одним словом: **те многие и все суть не кто иной,
+> как Церковь Вселенская**».
+
+**5. Аргумент от «-abilitas» — прямой ответ на структуру «возможность для всех, действительность для верных».**
+
+> «Вышеприведённым выражениям Нового Завета согласны и те в Ветхом, где — когда речь идёт о благодати завета и о
+> плоде пришествия и смерти Спасителя нашего — предвозвещается, что народы и племена, все племена и народы всей земли
+> получат **не некую простимость или примиримость, но κοινωνίαν, то есть причастие, Христа и спасительных благ Его**…
+> совершенно так же, как апостол в Рим. 5 передаёт, что ко всем пришло **не оправдаемость, но оправдание жизни** через
+> Христа, — что надлежит разуметь о всех верных, то есть о тех, которые Христовы (1 Кор. 15:23)».
+
+Это **самый сильный из найденных** контрargument против всякой схемы вида «для всех — возможность, для верных —
+действительность», и притом он формальный: если бы «за всех» означало «так, что простить стало возможным», то и
+обетования следовало бы выразить существительным с суффиксом возможности. Писание выражает их иначе — **причастием**
+(κοινωνία), **оправданием**. Для нашей серии это означает: историческое возражение против схемы Прокопенко не
+«ограниченность круга лиц», а **модальность блага**, о котором идёт речь в текстах.
+
+**6. Катена и вывод «meridiano sole clarius».** Далее следует развёрнутая выписка ветхозаветных обетований (Быт. 22:18;
+Втор. 32:43 / Рим. 15:10; Пс. 2:8; Пс. 22:27–28; Пс. 117:1 / Рим. 15:11; Ис. 2 и след.; Ис. 11:10; Ис. 25:6–8; Ис. 42:6;
+Ис. 54; Ис. 55:5; Ис. 60; Иоил. 2:28; Мих. 4:1; Зах. 8:23) «с тем намерением, чтобы сличить выражение Святого Писания,
+употребляемое и в Ветхом, и в Новом Завете, и показать его смысл, сам собою здесь обнаруживающийся». Вывод:
+
+> «Мы, по рассмотрении всего этого, нимало не сомневаемся, что **яснее полуденного солнца**: Священное Писание в сих и
+> подобных обетованиях, внушающих всеобщность, взирает на **воинство святого народа**, на **всю Церковь избранных и
+> верующих, от всех концов земли**, от всякого колена, всякого языка, народа и племени, — имеющую быть **сперва призвана
+> ко Христу здесь**, а затем **собрана на брак Агнца** и возлечь с Авраамом на небесах».
+
+**7. И — завершение, важное пастырски.**
+
+> «И поистине, как благоугодно было всеблагому Отцу щедрот открыть в Писаниях **тайну сей всеобщности — к нашему,
+> которые суть язычники, утешению**, и устранить разделявшую стены средостение, так мы и приемлем её оттуда **с
+> святою радостью благодарнейшего сердца, к нашему утешению**, и прославляем Бога за милость по учению апостола и по
+> примерам верных из язычников, повсюду встречающимся в Деяниях».
+
+То есть: **всеобщность обетований не отменяется particularistским чтением, а исполняется в нём** — и её утешительный
+смысл фрисландцы относят к себе как к язычникам. Это готовый ответ на пастырское возражение, которое обычно и
+движет сторонниками «неограниченного искупления»: «если Христос умер не за всех, то всеобщие обетования мне ни к
+чему». По фрисландцам — напротив: они-то и суть обетование о Церкви из всех племён, к которой принадлежит читатель.
+Для нашей серии (п. 19 раунда 19: «во времени или вне времени», пастырское измерение) это надо удержать отдельной
+строкой.
+
+**8. Границы.** (а) OCR, локатор — чанк + заголовок суждения; печатные страницы приблизительны (ок. 125–127).
+(б) Конец чтения 1 Ин. 2:2 обрывается на словах «fidelium perseverantium ah…» — п. 142. (в) Связь аргумента от
+«-abilitas» с Canones II.8 и с позднейшей традицией (Оуэн, Турретин) **не исследована** — п. 143. (г) Перенос
+структурного подобия на статью Прокопенко — только с оговорками §4.65 п. 7.
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -1862,6 +2067,22 @@
 
 ---
 
+**Допустимые формулировки — дополнение раунда 35:**
+- *(раунд 35)* «Фрисландцы **принимают** первый член ремонстрантского артикула без спора: „cum Scriptura id expresse dicat, quis **Christianus contradicet**?“ — и тут же выписывают оба ряда библейских мест; спор идёт не о словах „Христос умер за всех“, а о смысле, в котором их берут» (S129, §4.65 п. 2).
+- *(раунд 35)* «Диагноз фрисландцев: „non contenti recepta de **sufficientia** mortis Christi doctrina, **talem impetrationem** remissionis peccatorum pro omnibus & singulis invenerint; quae **ab omni remissionis participatione seiuncta**“ — отвергнут **разрыв** приобретения и участия, а не учение о достаточности» (S129, §4.65 п. 5).
+- *(раунд 35)* «Фрисландская формула ремонстрантского учения: „Christum **non simpliciter, sed conditionate mortuum** esse pro omnibus & singulis, si nimirum credant“; при последовательном проведении их же второго аксиома смерть Христа оказывается „**causa sine qua non**“ отверзения дверей милосердия, а не приобретением спасения кому-либо поимённо» (S129, §4.65 пп. 3–4).
+- *(раунд 35)* «Ключевой фрисландский довод против всякой схемы „возможность для всех — действительность для верных“: обетования народам суть „non **remissibilitatem** aut **reconciliabilitatem** quandam… sed… salutarium **κοινωνίαν**“, а Павел говорит о „non **iustificabilitatem**, sed **iustificationem** vitae“ (Рим. 5:18)» (S131, §4.66 п. 5).
+- *(раунд 35)* «Фрисландское согласование: „Orthodoxis, tam priscis quam recentioribus **usitatissima explicatio**“ — „все“ и „мир“ разумеются **συνεκδοχικῶς**: либо все верующие, либо люди всякого чина (1 Тим. 2:6), либо избранные и верующие из иудеев и язычников; Павел определяет „мир“ через Рим. 11:12 и 2 Кор. 5:19 — „**multi & omnes illi, nulli alii sunt quam Ecclesia Catholica**“» (S130, §4.66 пп. 2, 4).
+- *(раунд 35)* «1 Ин. 2:2 у фрисландцев читается **по связи**: „eadem ratione… pro peccatis **totius mundi**, qua pro **nostris**, id est fidelium“; ремонстрантское чтение потребовало бы „posset“ („мог бы быть“), текст же стоит в изъявительном — „**есть** умилостивление“; и Апостол connectit ходатайство на небесах с умилостивлением на земле, „причём **сами ремонстранты** ограничивают ходатайство верными“» (S130, §4.66 п. 3).
+- *(раунд 35)* «Всеобщность обетований, по фрисландцам, открыта „**in nostrum, qui gentes sumus, solatium**“ — к утешению нас, язычников, — и относится к Церкви из всех племён, „**meridiano sole clarius**“» (S131, §4.66 пп. 6–7).
+
+**Запрещённые формулировки — дополнение раунда 35:**
+- *(раунд 35)* «Дорт отвергает саму формулу „Христос умер за всех“» — **нет**: фрисландцы отвечают на первый член артикула: «когда Писание говорит это прямо, какой христианин станет противоречить?» (S129, §4.65 п. 2).
+- *(раунд 35)* «Учение о достаточности смерти Христовой за всех — изобретение ремонстрантов, отвергнутое Дортом» — **нет**: оно названо «**recepta**… doctrina», и фрисландцы им недовольны не как таковым, а как прикрытием для иного («talem impetrationem… seiunctam») (S129, §4.65 п. 5).
+- *(раунд 35)* «По Дорту универсальные обетования Писания не приносят утешения верующим из язычников» — **нет**: фрисландцы прямо пишут, что таинство этой всеобщности открыто к **их** утешению как язычников, и что они приемлют его «cum sancto cordis gratissimi **gaudio**» (S131, §4.66 п. 7).
+- *(раунд 35)* «Схема Прокопенко тождественна ремонстрантской формуле remissibilitas / reconciliabilitas, осуждённой фрисландцами» — **не утверждать**: осуждённая формула связывала участие со «свободным произволением» и умалчивала о дарах Духа; у Прокопенко участие связывается с верой. Устанавливается **структурное подобие** (приобретение для всех, отделённое от участия) и готовый исторический аргумент против него, но не тождество (`EVIDENCE_HOLD`, п. 134; §4.65 п. 7).
+
+
 ## 6. Хронология терминов
 
 | Дата | Событие / узус | Источник |
@@ -2017,6 +2238,12 @@
 | 1618–1619 *(раунд 34)* | **Утрехт, hermeneutica «только» и Церковь**: «non addit particulam **tantum**… omnia sustineo propter **electos**»; «cur eam ad Ecclesiam Apostolus **particulariter** restringit?»; «ob **meliorem eius partem**… sunt electi»; Савл — «non erat **actu** ovis Christi, erat tamen ovis Christi, **decreto electionis**» | S126, §4.64 пп. 4–5 |
 | 1618–1619 *(раунд 34)* | **Утрехт, теза V**: «**postremo illius membro nos subscribere**… causa sufficientiae est **dignitas personae Christi**»; Ин. 3:36 «Reconciliatum… & ira in eum ardere sunt **ἀσύστατα**»; «**tertius aut medius status**»; Авессалом | S127, §4.64 пп. 6–7 |
 | 1618–1619 *(раунд 34)* | **Начало фрисландского суждения (с. 124)**: «partim de **non controversis** novum formant articulum»; «doctrinam de **sufficientia meriti mortis Christi**… si omnes & singuli crederent… in Ecclesiis Belgicis… **nemine contradicente**, retentam» | S128, §4.64 п. 9 |
+| 1618–1619 *(раунд 35)* | **Фрисландское суждение, разбор артикула**: четыре члена; «cum Scriptura id expresse dicat, quis **Christianus contradicet**?»; «**non simpliciter, sed conditionate mortuum**… si nimirum credant»; «**causa sine qua non**»; «**horrendis opinionum portentis**» | S129 (A2) |
+| 1618–1619 *(раунд 35)* | **Фрисландский диагноз**: «non contenti recepta de **sufficientia** mortis Christi doctrina, talem **impetrationem**… invenerint; quae **ab omni remissionis participatione seiuncta**»; умалчивание о дарах Духа; «peccatorum **remissibilitatem**, & hominum Deo **reconciliabilitatem**… a **libero arbitrio** suspensam» | S129 (A2) |
+| 1618–1619 *(раунд 35)* | **Фрисландское согласование текстов**: «Orthodoxis, tam priscis quam recentioribus **usitatissima explicatio**»; **συνεκδοχικῶς** — все верующие / люди всякого чина / избранные из иудеев и язычников; Иоанн услаждается словом *мир*, «ut sanctam in mysterio **vocationis gentium** exultationem… exprimeret» | S130 (A2) |
+| 1618–1619 *(раунд 35)* | **Фрисландцы, 1 Ин. 2:2 по связи**: «eadem ratione… qua pro **nostris**, id est fidelium»; ремонстрантское чтение требовало бы «**posset**»; «intercessionem Christi in coelis (**quam ad fideles, Remonstrantes ipsi restringunt**) connectit… cum propitiatione»; Откр. 5:9; «pro vobis» (Лк.) / «pro multis» (Мф., Мк.) | S130 (A2) |
+| 1618–1619 *(раунд 35)* | **Фрисландцы о «мире» у Павла**: Рим. 11:12 (*divitiae gentium* = *divitiae mundi*); 2 Кор. 5:19 — те, «quibus Deus non imputat peccata»; «**multi & omnes illi, nulli alii sunt quam Ecclesia Catholica**» | S130 (A2) |
+| 1618–1619 *(раунд 35)* | **Фрисландский аргумент от «-abilitas»**: обетования — «non **remissibilitatem** aut **reconciliabilitatem**… sed **κοινωνίαν**»; Рим. 5:18 — «non **iustificabilitatem**, sed **iustificationem** vitae»; катена Быт. 22:18 → Зах. 8:23; «**meridiano sole clarius**»; «**in nostrum, qui gentes sumus, solatium**» | S131 (A2) |
 - **Shedd, изд. Gomes 2003** — современное издание под авторским правом (редакторский аппарат); пагинация 741–743 известна только из сносок Прокопенко → `LOCATOR_HOLD` для ссылок на это издание; цитировать по изд. 1888 (II.464–477).
 - **OED** — не доступен в песочнице; даты первой фиксации — класс C до сверки.
 - **Curt Daniel 2019** — не доступен; «unusual» (p. 362) — только через Прокопенко.
@@ -2247,6 +2474,7 @@
 - **S126, S127, S128** (лат. *Acta* 1620, чанки 366–367: утрехтское суждение — экзегетическая часть, тезы V–VI; начало фрисландского суждения) — PD; **A2**; оговорки: OCR, страницы приблизительны, ссылки на *Collatio Belgica* (сс. 155, 158, 160, 167) не сверены по первоисточнику.
 - **АТРИБУЦИЯ РЕШЕНА (раунд 34).** Установлены границы: **Зеландия — cc. 111–116**; **Утрехт — cc. 116–123**; **Фрисландия — c. 124 и далее**. `ATTRIBUTION_HOLD`, введённый в раунде 32 на цитаты из S114, **снят**; распределение материала по суждениям дано в уточнении к строке S114 и в §4.64 п. 9. Прежние строки не удалялись.
 - Раунд 34: «снято молча» — **0**; пп. **137 и 140 закрыты** (фрисландское суждение локализовано), п. **139 закрыт** (утрехтское дочитано до вердикта «eas damnamus»); добавлен п. 141.
+- **S129, S130, S131** (лат. *Acta* 1620, чанки 368–369: **фрисландское суждение** — разбор артикула, «conditionate mortuum», «remissibilitas & reconciliabilitas», «usitatissima explicatio» с συνεκδοχικῶς, аргумент κοινωνία vs «-abilitas», ветхозаветная катена) — PD; **A2** (официальный сборник суждений; авторство внутри сборника); оговорки: **OCR**; **порядок листов в этой части скана нарушен** (колонтитул в чанке 368 — «115», в чанке 369 — «117», при заголовке суждения на с. 124), поэтому локатор — **чанк + заголовок суждения**, печатные страницы приблизительны (ок. 124–127); `ATTRIBUTION_HOLD` **снят** (см. поправку раунда 32 и §4.65 п. 6).
 2. Сверить OED s.v. *atonement* (первая фиксация, Tyndale 1526/1530) и перевести S10 из C в A/B. — *Статус (раунд 2): Тиндейл сверен по репринтам (S17, A1); OED/More — открыто.*
 3. Турретин XIV.14 — найти параграф в Dennison/Giger (т. 2) и снять `LOCATOR_HOLD`. — *Статус (раунд 2): снят по латинскому изд. 1847 (S11); пагинация Dennison/Giger не сверена (не требуется: нумерация §§ инвариантна).*
 4. Пересчитать вхождения *redemption/redeem(ed)* и *satisfaction/satisfied* в WCF по Schaff III (для аккуратности §4.3, п. «Счёт слов»). — *Сделано (раунд 4) по полному тексту 1647 г. (S32, §4.20): лемма *redeem-* 8 (5 + 3), *atonement* 0, *satisf-* 7, *purchased* 4, *propitiation* 1; пересчёт именно по Schaff III — открыт как формальность.*
@@ -2523,3 +2751,12 @@
 139. *(раунд 33) — **ЗАКРЫТО (раунд 34)**:* утрехтское суждение дочитано до конца (вердикт: «omnes hasce Theses falsas esse… eas **damnamus**»); разобраны тезы V–VI, включая Ин. 3:36, притчу об Авессаломе, аргументы о новом завете и Еф. 2:3 (S126–S127, §4.64).
 
 141. *(раунд 34)* Дочитать **фрисландское суждение** (начало — с. 124, чанк 367; продолжение — чанки 368–371): подтвердить по тексту принадлежность «conditionate mortuum», «remissibilitas & reconciliabilitas» и чтений «omnes» именно фрисландскому суждению (см. уточнение к S114) и довести разбор до конца.
+
+
+**Добавлено в раунде 35:**
+
+141. *(раунд 34) — **ЗАКРЫТО (раунд 35)**:* **атрибуция фрисландского суждения подтверждена по тексту**: чанки 368–369 дают «non simpliciter, sed **conditionate mortuum**», «peccatorum **remissibilitatem**, & hominum Deo **reconciliabilitatem**» и «Orthodoxis, tam priscis quam recentioribus **usitatissima explicatio**» — все три формулы принадлежат *Iudicium deputatorum Ecclesiarum Frisicarum* (S129–S131, §§4.65–4.66). Границы суждений: Зеландия cc. 111–116, Утрехт cc. 116–123, Фрисландия c. 124 и далее.
+
+142. *(раунд 35)* Дочитать **фрисландское суждение** (чанки 370–371): разбор членов **2–4** артикула — «pro **singulis**», «ita ut… **impetraverit**», «neminem… participem fieri praeter credentes» — и конец чтения 1 Ин. 2:2 (текст обрывается на «fidelium perseverantium…»); установить, где оканчивается фрисландское суждение и начинается следующее.
+
+143. *(раунд 35)* Сверить **аргумент от «-abilitas»** (κοινωνία vs remissibilitas; Рим. 5:18 — «non iustificabilitatem, sed iustificationem») с **Canones II.8** и с позднейшей традицией (Оуэн, Турретин, Шедд): есть ли там та же аргументация от модальности блага. Это **прямой мост** к тезису Прокопенко («для всех — возможность, для верных — действительность») и потому — приоритет после п. 142 (`EVIDENCE_HOLD`).
