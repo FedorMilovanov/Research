@@ -100,3 +100,42 @@
 4. **Достаточность — действенность как общий узус, а не уступка.** Фрисландское суждение: «…hanc distinctionem: Christum pro omnibus & singulis mortuum esse, **quod ad sufficientiam**; pro electis vero & credentibus, **quod ad efficaciam**» — названа «usitatissima explicatio» и «à compluribus Orthodoxis sano sensu usurpatam»; рядом — Фома Аквинский у гессен-веттерауских («quantum ad sufficientiam, aequaliter se habet ad omnes: non autem, quantum ad efficaciam»).
 
 **Fail-closed оговорка (обязательна при использовании).** Эти loci **не** говорят «Дорт учит неограниченному искуплению»: то же фрисландское суждение отвергает «Christum **conditionate** mortuum esse pro omnibus & singulis», отвергает «tam Pharaoni, quam Abrahamo, tam Judae, quam Petro» и называет ремонстрантское понимание «nihil nisi quandam **remissibilitatem & reconciliabilitatem**»; Каноны II.8 ограничивают действенность избранными («ad eos solos fide justificante donandos»). Формулы — база для чтения «всех», но не вердикт об объёме искупления (`EVIDENCE_HOLD` корпуса в силе).
+
+
+## 7. Дополнение (2026-10-18; раунд 33; кросс-досье `34_`): «genera singulorum» применено к **обетованиям**
+
+**Что найдено.** В *Acta* 1620 (суждение депутатов **утрехтских церквей** — *Iudicium Ultrajectensium*, De Articulo
+Secundo; `actasynodination00syno`, чанки 364–365, печ. cc. 116–120; `34_` S124–S125, §4.63) формула
+**«genera singulorum, non singula generum»** применяется **не к «миру» как таковому, а к обетованиям Евангелия**:
+
+> «Promissiones Euangelicae quidem universales sunt, **non autem simpliciter, ut ad singula generum pertineant**, sed
+ad omnes & singulos credentes & electos. Pro his enim omnibus & singulis **& solis**… Christus est mortuus.»
+> («Обетования Евангелия, конечно, всеобщи, но не так, чтобы относиться к каждому лицу из родов, — но ко всем и
+каждому верующим и избранным. Ибо за всех и каждого их, и только за них, умер Христос.»)
+
+Тем самым §6 настоящего досье получает подтверждение на новом материале: различение «роды всех / каждое лицо из
+родов» в XVII в. работало **как правило чтения обетований**, а не как частный приём для одного-двух спорных стихов.
+
+**Второй результат того же суждения — порядок познания.** Утрехтцы разбирают силлогизм утешения, который остаётся
+верующему при всеобщей посылке («Христос умер за всех и каждого → значит, и за тебя»), и отвергают его:
+
+> «…quid me id scire juvabit, nisi sciam salutem, quae mihi impetrata est, etiam **applicari**… imo vero hoc
+argumento **Judas se consolari potuisset, qui tamen damnatus est**.»
+
+И предлагают иной порядок:
+
+> «Atqui Christus est pro me mortuus. Et unde autem id constat? Inde quia vere in Christum credo: **est enim inter
+fidem veram & Christi mortem mutua relatio**.»
+> («Христос умер за меня. А откуда это известно? Из того, что я истинно верую в Христа: ибо **между истинной верой и
+смертью Христовой — взаимное отношение**.»)
+
+То есть экзегетический спор об объёме («все») имеет прямое практическое следствие: удостоверение строится **от веры
+к смерти Христовой**, а не от объёма искупления к вере. Это стоит учитывать при разборе «всех» мест в §§1–4: вопрос
+«кто такие „все“» в Писании не отделён от вопроса «как верующий узнаёт, что Христос умер за него».
+
+**Оговорки (`EVIDENCE_HOLD`, `ATTRIBUTION_HOLD`).** (а) Это суждение **делегации**, а не текст Канонов. (б) Текст
+приведён по OCR-скану; латинская сверка по изданию с надёжной пагинацией не производилась (`34_` §8 п. 129).
+(в) Утрехтское суждение прочитано не до конца (`34_` §8 п. 139). (г) Связь этого материала с конкретными местами
+Писания в §§1–4 требует отдельной сверки, а не переноса по сходству.
+
+**Ссылки:** `34_` §4.63 пп. 1–2, S124–S125.
