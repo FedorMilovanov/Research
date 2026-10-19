@@ -305,6 +305,8 @@
 | S139 *(раунд 41)* | *Acta* 1620 (тот же id; **чанк 377**, печ. **сс. 139–140**) — **суждение депутатов синода Гронингена и Оммеланден** (*Deputatorum Synodi Groninganae & Omlandiae Iudicium*, De Secundo Articulo; `34_` §4.76). Открывающая формула — «impetratam esse **electis & servandis tantum**, iisque vere efficaciterque applicari… **non vero in hominum voluntate aut qualitate**… ac proinde **aeque late patere** impetrationem & applicationem» и «quaestionem **non esse de sufficientia** mortis Christi… nec reproborum quemquam perire **ob defectum aut insufficientiam** mortis Christi… sed quaeritur an… **actu impetrata** sit» — внесена в раунде 29 (S116). **Новое в раунде 41:** (1) **ratio 2 — порядок цели и средства**: «intentionem hanc… esse **posteriorem ipsa electione** quorundam ad salutem»; «prius **salus aliquibus decreta sit, quam ordinarit Deus medium**… nullum medium adhiberi potest sine respectu ad finem»; «salus omnis… fontem & originem primam habet in illa donatione Patris (Ioh. 6)… quam donationem Apostolus vocat praedestinationem (Eph. 1:5), & **redemptionem ex eadem pendere** declarat vers. 7». (2) **ratio 3 — народы, не слышавшие Евангелия**: «Supposita generali reconciliatione omnium hominum, verbum reconciliationis etiam omnibus & singulis annunciari debuit… at **quomodo audient illi ad quorum aures Evangelii sonus nunquam pervenit?** Multas enim gentes esse, quibus nomen Iesu Christi nunquam innotuit… tam manifestum est, ut qui inficias ire velle **amens & insanus** haberi possit»; **ремонстрантское возражение**: «nolle Deum posteris eorum qui Evangelium annunciatum repudiarunt olim… Evangelium inpraesentiarum revelare» — ответ: «**semet ipsos confodiunt** hac sua exceptione… Quaeritur enim an Deus salutem eorum intenderit, quos ob parentum ingratitudinem… hac gratia salvifica dignari noluit?»; вывод: «**quibus Christum non revelat eorum salutem non intendit Deus** tradens Filium suum in mortem. Absurdum enim est, Deum salutem eorum intendere sub ratione finis, & **medium** tamen… illis non concedere»; и отвод: «Nisi dicant extra Christi cognitionem & communionem iis **sufficiens auxilium** ad salutem dari, quod absque **sacrilegio, & ignominia Christi** dici non potest» (Деян. 4; Ин. 15; Рим. 8). (3) О намерении Сына: «licet Christus **qua homo** nullam discretionem… instituerit, tamen **qua Mediator**… palam secernit eos à mundo pro quibus intercedit»; «**individuo nexu** hae partes officii Christi sacerdotales»; Ин. 10 — «agnitionem ovium & animae depositionem pro ipsis conjungit, & hanc arguere illam, **ut effectus causam**, ostendit». **Класс A2**; OCR; чанк 377 обрывается на «ac soli Praedestina[ti]…». |
 | S140 *(раунд 42)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанк 378**, печ. **сс. 141–142**) — **гронингенское суждение, члены II и III тезы** (`34_` §§4.77–4.78). (1) Член II: «**nudam impetrationem**… non finire integrum… propositum, sed… conjunctam habuit intentionem ea omnibus applicandi… ac proinde aeque late patere»; первый довод — «**nuda impetratio extra respectum applicationis nulla est**». (2) **Пять оснований**: «**nullus Scripturae locus dari potest, ubi agatur de tali impetratione**»; «ab omni ratione alienum est, Deum intendisse **medium sine ullo respectu ad finem**. Nam **intendere, est proprie per aliquid ad aliud velle pervenire**»; «absque applicatione nullo usui inservit impetratio»; «**universale nihil est quod non in particularibus** omnibus eiusdem generis… existit»; «paradoxum hoc… Christo ignominiosum est… 1. **spoliat meritum Christi sua efficacia**. 2. Honorem… **ad hominem transfert**… sequitur **hominem maxima ex parte salutis suae causam esse**». (3) Свидетельства Писания: Ин. 17:19 + Еф. 5:25; Рим. 5 (a maiori ad minus); **Рим. 8:32** («Fidem, Poenitentiam, Spiritum Sanctum»); Иер. 31; **«Christus quorum est Salvator, eorum Salvator est merito & efficacia»**; «pro quibuscunque Christus oravit… illis hoc impetrat, ut… applicentur, Hebr. 5; 1 Iohan. 2». (4) На ремонстрантское изъятие (умер за всех, но воскрес и ходатайствует *adaequate* за верных) — «**Sacerdotes V. T. pro omnibus orabant pro quibus sacrificaverant**»; «sequeretur eos… **penitus & omni modo adhuc esse in peccatis suis**» (1 Кор. 15); «**redemptio… complete obtineri non potuit, nisi per ingressum Pontificis nostri summi in Sanctuarium caeleste cum sanguine suo, Hebr. 9:12 et 10**». (5) Член III: «voluntatem… applicandi… **non esse conditionatam**»; основания — декрет избрания безусловен; «**quorsum suspenderet Deus suam voluntatem, cum praeviderit, quod certo facturus esset?**»; «si voluntas haec… conditionata est, requiritur in hominis potestate esse conditionem illam praestare… at **credendi potestas solis electis conceditur**» (Ин. 10:26; Еф. 2; Ин. 6:29; Тит. 1; Рим. 9; Флп. 2:13; Ин. 15) и «**nec tale donum quod aequaliter omnibus offeratur**… sed quod **electis tantum offertur, & efficaciter confertur**» (Мф. 13). (6) Член IV — о «могло статься, что никто не спасся бы»: отвергается как превращающее «**Deum in impotentem hominem**, qui cuperet omnes homines salvari, sed non posset hoc efficere»; «rejicimus non solum, sed & **refutatione indignum** judicamus». **Класс A2**; OCR; часть формул члена III уже внесена в раунде 29 (S116). |
 | S141 *(раунд 42)* | *Acta* 1620 (тот же id; **чанк 379**, печ. **сс. 143–145**) — **окончание гронингенского суждения и начало дрентанского** (`34_` §4.79). (1) Отвергнутое ремонстрантское положение (уже внесённое в раунде 29 как «possibilitas & velleitas») — с ответом: «**Nusquam Scripturarum extat**, Christum morte sua Patri talem **velleitatem, possibilitatemque** acquisivisse. Unde sequeretur, Christum justitiae Dei nostro loco non satisfecisse… sed hoc tantum effecisse, ut Deus **posset & vellet** nostrum misereri, foedus gratiae inire». (2) **Каталог целей и плодов смерти Христовой**: «Scriptura hos **fines, & fructus Mortis Christi** recenset. 1. **satisfactio pro peccatis nostris** (Eph. 5; Matth. 20:28; Rom. 3; 2 Cor. 5; 1 Tim. 1; Tit. 2; 1 Petr. 1). 2. **reconciliatio nostri cum Deo** (Rom. 5; 2 Cor. 5:18; 1 Petr. 3:18). 3. **destructio Sathanae & nostri sanctificatio** (Rom. 6; 1 Cor. 5; Hebr. 2; Phil. 3; 1 Cor. 1). 4. **aeterna salus** (Ioh. 3; Ioh. 14; Act. 4:10; Hebr. 5:9; последняя ссылка в OCR не читается)». (3) Порядок декретов — против ремонстрантского «Deum per justitiam non potuisse alicui salutem decernere absque intuitu satisfactionis Christi»: «**Nusquam… Scriptura dicit nos electos esse quia Christus mortuus est pro nobis**»; «Deum **prius mundum dilexisse**… quam Filium suum pro eo tradidit» (Ин. 3); «**Redemptio electionis effectus est, non ergo potest esse eius causa**» (Еф. 1). (4) Христос — «**donum ac praecipuum promissum novi foederis**»; единство завета благодати; «sub hoc foedere **eandem vim iam inde ab initio habuit** meritum Christi» (Евр. 13; Откр. 13; Гал. 3). (5) О вере как орудии: «fides non consideratur ut qualitas aut opus, sed ut **instrumentum** quo Christum apprehendimus»; отвергнуты ремонстрантские «fidem… non habere ut instrumentum», «Christum sua morte nobis acquisivisse **facultatem faciendi bona Opera quibus justificamur**», «fidem gratiosa Dei aestimatione haberi pro tota justitia legali», «Christum… pro originali saltem peccato satisfecisse» ⇒ «firmiter nobis persuadent eos **Socinianismum** in animis suis fovere». (6) **Дрентанское суждение, тезис I, второй член** — ремонстрантская теза в прямой формулировке: «…etiamsi impetrata redemptio nulli unquam individuo applicata fuisset, potuerintque omnibus impetrata esse, tamen nullis applicari, propter intervenientem omnium incredulitatem: **cum finis mortis Christi proprius non fuerit eius applicatio**»; ответ дрентанцев: «**Falsa esse haec omnia**: nam quod de dignitate mediationis…» — чанк обрывается. **Класс A2**; OCR; см. §4.79 п. 4. |
+| S142 *(раунд 43)* | *Acta* 1620 (тот же id; **чанк 380**, печ. **сс. 145–146**) — **дрентанское суждение, завершение тезы I и теза II** (`34_` §4.80). (1) **Ответ на тезу о цели** (п. 154 закрыт): «Ad ultimum primae Theseos membrum… **Finis mortis Christi proprius, non fuit eius applicatio**. Respondemus. 1. Cum dicunt [proprium]… vel ipsi fatentur, quod applicatio fuerit **aliquo modo finis** mortis Christi. 2. **Applicatio est causa finalis, quamobrem jus applicandi sibi Christus acquisivit**: si ergo jus applicationis est finis mortis Christi, **multo magis & applicatio** erit finis eiusdem mortis (Ephes. 5:25–26)». (2) Двойная **utilitas**: «quod Dominus ipsum in summam extulit sublimitatem» (Флп. 2:9) — «potuit esse sine applicatione»; но «ut **omnis lingua confiteatur, quod Dominus sit Iesus Christus, ad gloriam Dei Patris**» (ст. 11) — «sine applicatione nullo modo esse potuit». (3) **Довод от любви**: «cum impetratio sit ex **summo Dei amore** (Ioh. 3:16), quidni idem amor effectum dedit, ut applicatio sequeretur? sine qua amor iste plane **frustraneus** fuisset… Deus… **ex amore nihil incipit, quod ex eodem, ad finem propositum non possit, aut non velit perducere**» (Флп. 2:13; Ин. 15:16); «Rom. 6:5 conjunguntur **individuo nexu** impetratio & applicatio… Constituit igitur Deus ab aeterno utrumque Decreto immutabili». (4) **Четыре свойства Божии**: «Pugnat enim hoc cum **omnibus Dei proprietatibus**. 1. Cum Immutabilitate… 2. Cum misericordia… **paternus amor filijs haereditatem non tantum acquirit, & emit, verum etiam largitur & tradit possidendam**. 3. Cum justitia… 4. Cum sapientia… filium suum unigenitum… in tam horrendos cruciatus nunquam tradidisset. Nam **Deus & natura nihil faciunt frustra**». (5) Ссылка на «**resistibilem regenerationem**» как на чужие «figmenta», обсуждаемые в IV артикуле. **Класс A2**; OCR; первое слово основания в ответе о цели читается неясно. |
+| S143 *(раунд 43)* | *Acta* 1620 (тот же id; **чанк 381**, печ. **сс. 147–148**) — **дрентанское суждение: теза II (второй член), антитеза к тезам I–II, тезы III–IV** (`34_` §4.81). (1) **Принцип «лучшего»**: «**ex effectu Dei infallibiliter semper judicatur de voluntate & Decreto Dei antegresso**… **Deo integrum non fuisse aliter agere**… Deus… **non potest non optime semper agere**… **Unum enim semper est optimum**»; три смысла «веры и дел»: вера как **instrumentum** (Богу не было свободно предписать дела), вера как источник дел (Гал. 5:6 — предписаны оба), дела как условие законное, «каковыми святые того времени и без познания Христа спасались» (отвергнуто: Деян. 15:10–11); итог — «dogmata **Papatus** imo **Pelagiana & Sociniana** astruuntur». (2) **Порядок**: «**Ordinatio finis, prior est ordinatione mediorum, & causae administrae**… conditiones salutis sunt finis, propter quem acquirendum Christus tanquam **medium & causa administra** constitutus est… qualia sunt, fides, poenitentia, obedientia, sanctimonia, perseverantia… Ergo ex ordine Deus prius ordinavit salutem, & salutis conditiones, quam mediatorem Christum… unde & angelus foederis, & servus Dei dicitur… Nam **quod ultimum est in executione, primum fuit in intentione**». (3) **Антитеза к тезам I–II**: «certos quosdam homines… ab aeterno **elegit**… ad Decretum praecedens accessit conjunxitque & hoc sequens, nimirum de dando in mortem filio suo, ut pro electis & salvandis omnibus, **tam Veteris quam Novi Testamenti hominibus**, satisfaceret, iisque mortem suam applicaret». (4) **Теза III** — доводы: данные Христу суть «tanquam **possessio**… ut non amplius sint possessio Diaboli… in **statum reconciliationis** sunt restituti»; «quicquid **non fit**, nunquam fuit in intentione Dei ut fieret»; **Фараон** — «**voluntas signi non potest proprie dici voluntas beneplaciti**»; **Тир и Сидон** — «Tyrii plus praestitissent quam Iudaei, si placuisset Deo eos sua gratia dignari» (Мф. 11:21); «nemo venit ad Christum, nisi pater traxerit eum»; приговор — «**deliria igitur mera**». (5) **Антитеза III**: «Deus electos suos Christo dedit redimendos… **omnibus & solis electis** salutem conferre… Utque hoc non aliter eveniret, **omnem resistentiam Spiritu suo tollit, novas vires instillat, instillatas ad finem vitae conservat**» (Иер. 32:38–40; Флп. 2; Рим. 8:29). (6) **Теза IV**: достаточно/действенно — «Concedimus si… nihil aliud quam **sufficientiam** intelligant: at si volunt **efficax** fuisse in singulis, id pernegamus»; «**pro reprobis Christus nec spopondit, nec oravit**»; Ворстий отвергнут (уже в S118). **Класс A2**; OCR; отдельные ссылки испорчены. |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -2883,8 +2885,9 @@ dictam, qui suspendat ille, qui omnium futurorum est praescius & immutabilis?**�
 > не приложено никому — по причине явившегося неверия всех: **поскольку собственный конец смерти Христовой не был её
 > приложением** (*cum **finis mortis Christi proprius non fuerit eius applicatio***)».
 
-Ответ дрентанцев начинается так: «**Всё это ложно**; ибо то, что [говорится] о достоинстве посредничества…» — и на
-этом чанк 379 обрывается; продолжение не читано (см. §8, п. 154).
+Ответ дрентанцев начинается так: «**Всё это ложно**; ибо то, что [говорится] о достоинстве посредничества…» — на
+этом чанк 379 обрывался. **Продолжение прочитано в раунде 43 (чанк 380) и внесено в §4.80 п. 1**: ответ построен как
+возражение через «право применения»; п. 154 закрыт.
 
 Значение: перед нами **прямая формулировка ремонстрантского тезиса о цели**, а не реконструкция дортской стороны.
 Слова «собственный конец смерти Христовой не был её приложением» — это и есть то, чтó разбираемая статья называет
@@ -2924,6 +2927,161 @@ dictam, qui suspendat ille, qui omnium futurorum est praescius & immutabilis?**�
 **дрентанцами**; по сочинениям самих ремонстрантов не проверена (`EVIDENCE_HOLD`, п. 147). (в) Каталог плодов — не
 исчерпывающее учение о целях, а полемический перечень; в серии его нельзя выдавать за «полное учение Дорта о целях
 искупления» без оговорки. (г) Дрентанский ответ на тезу о цели **обрывается** — продолжение не читано.
+### 4.80. Q76 — Дренте: ответ на тезу о цели, четыре свойства Божии и довод от любви (раунд 43)
+
+**Зачем это.** §4.79 (раунд 42) поставила вопрос: дрентанское суждение цитирует ремонстрантскую тезу
+«**собственный конец смерти Христовой не был её приложением**» — и ответ обрывался. Здесь — **продолжение**
+(*Acta* 1620, чанк 380, печ. сс. 145–146). Пункт 154 закрыт.
+
+**1. Ответ на тезу о цели — возражение через «право применения».**
+
+> «К последнему члену первой тезы, который гласит: **собственный конец смерти Христовой не был её приложением**, —
+> отвечаем. 1. Когда они говорят *proprium*, они **сами признают**, что приложение было **некоторым образом** концом
+> смерти Христовой. 2. **Приложение есть конечная причина, ради которой Христос приобрёл Себе право применения**:
+> если же **право применения** есть конец смерти Христовой, то **тем более и самое приложение** будет концом той же
+> смерти. Еф. 5:25–26».
+
+Это — reductio, построенная на тезе противника. Ремонстранты (и, в иной лексике, разбираемая статья) говорят: смерть
+Христова приобрела Богу Отцу **право и возможность** применять спасение на условиях, какие Ему угодно. Дрентанцы
+принимают слово «право» и обращают его: **право применения существует ради применения**; цель права — его
+осуществление; следовательно, если приобретено право, то приложение и подавно есть цель смерти Христовой. Иначе
+приобретённое право — право ни на что.
+
+Оговорка: в OCR первое слово основания читается неясно («cum dicunt…» — по-видимому, *proprium* или близкое); смысл
+хода от этого не зависит, но при публикации цитату следует сверить с изображением л. 145.
+
+**2. Различение sufficientia / efficacitas и притча о враче — с новым членом.** Дрентанцы принимают оговорку о
+достоинстве: «оно усматривается **или в достаточности, или в действенности τοῦ λύτρου: первая могла состояться и без
+приложения, вторая — нет**: как и превосходство **лекарства** усматривается не только в нём самом, но и в действенности,
+когда оно с пользою приложено и возвращает здравие» (ср. §4.60 п. 1, S118). Новое в раунде 43 — **второй член
+различения, о пользе**:
+
+> «Подобным образом и **польза** рассматривается двояко. Первая польза, которую получает Посредник, та, что Господь
+> **превознёс Его** и даровал Ему имя… (Флп. 2:9): эта польза **могла быть и без приложения**. Но есть и другая
+> польза, которая **никак не может быть без приложения**, именно: чтобы **всякий язык исповедал, что Господь есть
+> Иисус Христос, в славу Бога Отца** (ст. 11); сею славою от человеков избранных Он не наслаждается ни в сей, ни в
+> будущей жизни без приложения».
+
+То есть даже «польза для Самого Христа» делится: вознесение Его — без приложения; исповедание всякого языка — только
+с приложением. Это уточняет формулу «достаточности без приложения»: достаточность не означает, что цель достигнута.
+
+**3. Довод от любви — и правило о начале и конце.**
+
+> «Наконец, они сильно бьются, утверждая, что искупление приобретено и однако приобретённое не прилагается. Ибо
+> коль скоро приобретение есть от **величайшей любви Божией** (Ин. 3:16), то почему бы той же любви не произвести и
+> того, чтобы за ним последовало приложение? — без которого любовь сия была бы **совершенно тщетна**, хотя бы
+> искупление и было приобретено. Бог, говорю, премудрый, всемогущий, неизменяемый, **из любви не начинает ничего
+> такого, чего бы из той же любви не мог или не восхотел довести до предположенной цели** (Флп. 2:13; Ин. 15:16)…
+> Рим. 6:5 — приобретение и приложение **соединяются нераздельным союзом**, как и Еф. 5:25–26 и во многих других
+> местах. Итак, Бог от вечности постановил **то и другое** неизменным декретом, а потому ложнейше, будто одно могло
+> быть без другого».
+
+Ср. североголландское «обе тезы взаимно себя уничтожают» (§4.73) и гронингенское «намереваться — значит хотеть чрез
+нечто прийти к другому» (§4.77): три делегации, один и тот же ход в трёх разных формулировках.
+
+**4. Четыре свойства Божии — и «Бог и природа не творят ничего напрасно».** Против тезы «искупление могло быть
+приобретено всем и не приложено никому» дрентанцы выставляют **всё вместе**:
+
+> «Ибо это бьётся со **всеми свойствами Божиими**. 1. С **неизменяемостью**: она не допускает, чтобы Тот, Кого Он
+> однажды восхотел и начал избавлять, после не восхотел (Мал. 3:6; Ис. 46:10). 2. С **милосердием**, которое не
+> допускает погибнуть возлюбленному сыну, искупленному столь великою ценою (Ис. 49:15): **отеческая любовь не только
+> приобретает и покупает наследие чадам, но и даёт и вручает его во владение**. 3. С **правдою** Божиею, которая
+> воздаёт каждое своё (2 Тим. 4:8). 4. С **премудростью**, по которой Бог всё совершеннейше предвидит. Если бы Он
+> предвидел, что по сопротивляемости и сопротивлению ремонстрантов **не мог бы быть искуплён никто один**, то
+> единородного Сына Своего, возлюбленного, в Котором Его благоволение (Мф. 3:17), никогда не предал бы на столь
+> ужасные страдания. Ибо **Бог и природа не творят ничего напрасно**».
+
+Аналогия с отцом, покупающим наследие чадам, — самый короткий ответ на схему «приобрёл, но не дал». А аргумент от
+премудрости («не предал бы Сына, предвидя, что никто не будет искуплён») — ещё одна формулировка того же, чтó
+североголландцы назвали «несообразным с премудростью Божиею» (§4.73 п. 3).
+
+**5. И последнее:** на тезу «приложение могло быть воспрепятствовано неверием всех» дрентанцы отвечают кратко: это
+«отсылает к их измышлениям о **сопротивляемой регенерации**» (resistibili regeneratione), о которых речь в IV
+артикуле; «посему, когда это ложно, падает и всё прочее, что предшествовало и на сих ложных основаниях зиждется».
+
+**6. Границы.** (а) OCR; часть формул (sufficientia/efficacitas, притча о враче, четыре свойства) уже внесена в
+раунде 30 (S118) — здесь добавлены **ответ о цели**, член о двойной пользе, довод от любви и «Бог и природа не творят
+ничего напрасно». (б) Суждение делегации, не текст Канонов.
+
+### 4.81. Q77 — Дренте: принцип «лучшего», порядок декретов, Тир и Сидон, и отъятие противления (раунд 43)
+
+**1. Принцип «лучшего» — против «Богу было свободно предписать любое условие».** Ремонстрантская теза: по совершении
+дела посредничества Богу «было свободно предписать какое угодно условие — и дел, и веры». Ответ начинается с
+положения о природе и действии Божием:
+
+> «…**из действия Божия всегда непогрешимо судится о предшествовавшей воле и декрете Божием**: так что, коль скоро
+> является это действие, мы тотчас можем непогрешимо судить, что **Богу не было свободно поступить иначе**. Причина
+> та, что Бог премудрый, совершеннейший, благой **не может не действовать всегда наилучшим образом** и предписывать
+> иное, нежели чтó есть наилучшее; а потому не может предписывать иного, кроме того, чтó предписывает. Ибо
+> **наилучшее всегда одно**… как только мы видим, что Он предписал одно, тотчас говорим: это и есть наилучшее; и не
+> было свободно Богу, по высшей благости и совершенству Его, или это опустить, или восхотеть противного, или
+> предписать и то и другое».
+
+И далее — три возможных смысла «веры и дел», и во всех трёх теза ложна: (1) если вера — **орудие**, которым мы
+восприемлем заслуги Христовы, то Богу не было свободно предписать дела, ибо Он предписал веру одну, а не дела наши;
+(2) если вера — источник добрых дел, действенная любовью (Гал. 5:6), то Богу не было свободно предписать не то и не
+другое по отдельности, ибо Он предписал **оба**, «по той очевиднейшей причине, что ни заслуги Христовы иначе
+восприняты, ни благодарность Богу Искупителю иначе воздана быть не может, как таковою верою»; (3) если вера — условие
+нового завета, а дела — условие законное, «каковыми святые того времени и без познания Христа спасались», то Богу
+не было свободно предписать такие дела, ибо ни в Ветхом, ни в Новом Завете Он их не предписал, и святые Ветхого
+Завета спасаются не иначе, как и святые Нового, — именно верою (Деян. 15:10–11). Вывод: «сии мнения ремонстрантов
+гнусны, ими заслуги Христовы немало ниспровергаются,  Orthodox-учение об оправдании ниспровергается, и утверждаются
+догматы папизма, мало того — пелагианские и социнианские».
+
+Это — **прямой ответ на амиральдианский ход** «Бог мог бы избрать любое условие, но избрал веру»: по дрентанцам,
+такая «свобода выбора условия» уничтожает и учение об оправдании, и саму природу веры как орудия.
+
+**2. Порядок декретов — максима «последнее в исполнении, первое в намерении».** Против тезы «Бог предназначил Христа
+в посредники, ничего ещё не постановив об условии»:
+
+> «**Устроение цели прежде устроения средств** и вспомогательной причины, которыми приходят к цели. Но **условия
+> спасения суть цель**, для приобретения которой Христос поставлен как **средство и причина вспомогательная**
+> (*medium & causa administra*), дабы Он приобрёл и доставил самые те условия и средства к спасению, каковы: **вера,
+> покаяние, послушание, святость, стойкость, призывание имени Божия, прославление** (Еф. 1:5, 11; Ин. 6:40, 57, 58).
+> Следовательно, в порядке Бог **прежде устроил спасение и условия спасения, нежели посредника Христа**… Ибо
+> **чтó последнее в исполнении, то первым было в намерении**».
+
+Два следствия. (а) Христос — **causa administra** (вспомогательная, служебная причина), а условия спасения — цель,
+для которой Он поставлен; тем самым «Христос ради условий» исключено, правильнее «условия ради Христа» — точнее же:
+**условия как цель, Христос как средство их приобретения**. (б) Максима «quod ultimum est in executione, primum fuit
+in intentione» встретилась раньше у Твисса (1653) и в связи с ним (§4.24, п. 121); теперь она засвидетельствована **на
+Дорте, в 1619 году**. Для лапсарианского раздела это сдвиг датировки на три десятилетия.
+
+**3. Антитеза: избрание прежде дарования Сына — и ветхозаветные святые.**
+
+> «Бог, по падении рода человеческого, **некоторых определённых человеков**, по благоволительной воле Своей, от
+> вечности **избрал** к восставлению от падения и спасению. Поскольку же по правде Своей Он не мог спасти их без
+> посредника, то к предшествующему декрету Он присовокупил и соединил с ним следующий, именно — **о предании Сына
+> Своего на смерть, чтобы Он удовлетворил за всех избранных и спасаемых, как ветхозаветных, так и новозаветных
+> человеков, и приложил им смерть Свою**, дабы они вечно прославляли Его».
+
+Здесь дортская сторона сама формулирует **два декрета** — и порядок в них обратный амиральдианскому: сначала
+избрание лиц, потом устроение средства. И отдельно: круг искупления прямо включает **ветхозаветных** — материал для
+вопроса серии о «закланном от создания мира» (ср. §4.47 о порядке слов, Откр. 13:8).
+
+**4. Тир и Сидон, и «всякое противление».** В ответе на тезу III (о Фараоне и Аврааме) дрентанцы приводят классический
+довод:
+
+> «…когда Бог изъял из множества идолопоклонников Авраама, также идолопоклонника (ибо они здесь упоминают Авраама), —
+> если бы Богу благоугодно было даровать прочим те же дары, какие Он по единой благодати Своей даровал Аврааму, то и
+> прочие идолопоклонники были бы спасены не менее сего идолопоклонника… **Тиряне сделали бы больше иудеев, если бы
+> Богу благоугодно было удостоить их Своею благодатию** (Мф. 11:21)… **Никто не приходит ко Христу, если Отец не
+> привлечёт его** (Ин. 6)».
+
+И — положительная формула того, как именно исход становится несомненным:
+
+> «И чтобы это не вышло иначе, Он **всякое противление отъемлет Духом Своим**, новые силы вливает, и влитые сохраняет
+> до конца жизни (Иер. 32:38–40; Флп. 2; Рим. 8:29)».
+
+Завершение оценки: «Итак, **сущие бредни** (*deliria mera*) есть то, что они в сей тезе нагромоздили вне слова
+Божия».
+
+**5. Границы.** (а) OCR; отдельные ссылки испорчены (Ин. 24:2 — явно ошибочно). (б) Различение *voluntas signi /
+beneplaciti* на примере Фараона, силлогизм «quorum vice & loco», sufficientia/efficacitas и Ворстий уже внесены в
+раунде 30 (S118, §4.60) — здесь добавлены принцип «лучшего», максима о порядке, антитеза о двух декретах, Тир и
+Сидон и формула об отъятии противления. (в) Формулировка о ветхозаветных святых — материал к вопросу серии о
+закланном от создания мира, но **не** ответ на него: дортский текст говорит о круге искупления, а не о модусе его
+действия во времени.
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -3457,6 +3615,8 @@ dictam, qui suspendat ille, qui omnium futurorum est praescius & immutabilis?**�
 | 1618–1619 *(раунд 41)* | **Гронинген**: «intentionem hanc… esse **posteriorem ipsa electione**»; «prius salus aliquibus decreta sit, quam ordinari[n]t Deus medium»; «**quibus Christum non revelat eorum salutem non intendit Deus** tradens Filium suum in mortem»; ремонстранты «**semet ipsos confodiunt** hac sua exceptione»; «extra Christi cognitionem… sufficiens auxilium… absque **sacrilegio & ignominia Christi** dici non potest». |
 | 1618–1619 *(раунд 42)* | **Гронинген, член II**: «**nuda impetratio extra respectum applicationis nulla est**»; «**nullus Scripturae locus… de tali impetratione**»; «**intendere, est proprie per aliquid ad aliud velle pervenire**»; «hominem **maxima ex parte** salutis suae causam esse»; «**merito & efficacia**»; «Sacerdotes V. T. pro omnibus orabant pro quibus sacrificaverant»; Евр. 9:12 и 10 — «redemptio… complete obtineri non potuit, nisi per ingressum Pontificis… in Sanctuarium caeleste». |
 | 1618–1619 *(раунд 42)* | **Гронинген, члены III–IV; каталог плодов**: «credendi potestas **solis electis** conceditur»; дар веры «**non aequaliter omnibus offertur**… sed electis tantum»; «Deum in **impotentem hominem**… qui cuperet omnes salvari, sed non posset»; **fines & fructus Mortis Christi** — satisfactio, reconciliatio, destructio Sathanae & sanctificatio, aeterna salus. **Дренте**: ремонстрантская теза «**cum finis mortis Christi proprius non fuerit eius applicatio**». |
+| 1618–1619 *(раунд 43)* | **Дренте, ответ о цели**: «**Applicatio est causa finalis, quamobrem jus applicandi sibi Christus acquisivit**… multo magis & applicatio erit finis»; «ex **summo Dei amore**… amor iste plane **frustraneus** fuisset»; «**Deus & natura nihil faciunt frustra**»; «paternus amor filijs haereditatem non tantum acquirit… verum etiam **tradit possidendan**». |
+| 1618–1619 *(раунд 43)* | **Дренте, порядок и «лучшее»**: «**quod ultimum est in executione, primum fuit in intentione**» (на Дорте, 1619; ср. Твисс 1653); Христос — «**medium & causa administra**», а условия спасения — цель; «**Unum semper est optimum**… Deo integrum non fuit aliter agere»; «**Tyrii plus praestitissent quam Iudaei**»; «**omnem resistentiam Spiritu suo tollit**». |
 - **Shedd, изд. Gomes 2003** — современное издание под авторским правом (редакторский аппарат); пагинация 741–743 известна только из сносок Прокопенко → `LOCATOR_HOLD` для ссылок на это издание; цитировать по изд. 1888 (II.464–477).
 - **OED** — не доступен в песочнице; даты первой фиксации — класс C до сверки.
 - **Curt Daniel 2019** — не доступен; «unusual» (p. 362) — только через Прокопенко.
@@ -3697,6 +3857,8 @@ dictam, qui suspendat ille, qui omnium futurorum est praescius & immutabilis?**�
 - **S139** (лат. *Acta* 1620, **чанк 377**: суждение депутатов синода Гронингена и Оммеланден, печ. сс. 139–140) — то же издание; OCR; чанк обрывается на «ac soli Praedestina[ti]…». Открывающая формула того же суждения — S116 (раунд 29). См. §4.76 п. 5.
 - **S140** (лат. *Acta* 1620, **чанк 378**: гронингенское суждение, члены II–IV тезы, печ. сс. 141–142) — то же издание; OCR; отдельные ссылки испорчены. Часть формул члена III дублирует S116 (раунд 29). См. §4.78 п. 2 о недопустимости вырывания формулы о даре веры из контекста.
 - **S141** (лат. *Acta* 1620, **чанк 379**: окончание гронингенского суждения и начало дрентанского, печ. сс. 143–145) — то же издание; OCR; последняя ссылка каталога не читается; дрентанский ответ на тезу о цели обрывается. См. §4.79 п. 4.
+- **S142** (лат. *Acta* 1620, **чанк 380**: дрентанское суждение — завершение тезы I и теза II, печ. сс. 145–146) — то же издание; OCR; первое слово основания в ответе о цели читается неясно (требует сверки с изображением л. 145). Часть формул дублирует S118 (раунд 30). См. §4.80 п. 6.
+- **S143** (лат. *Acta* 1620, **чанк 381**: дрентанское суждение — теза II второй член, антитеза к тезам I–II, тезы III–IV, печ. сс. 147–148) — то же издание; OCR; отдельные ссылки испорчены. Часть материала (Фараон и voluntas signi, Ворстий, sufficientia/efficacitas) дублирует S118. См. §4.81 п. 5.
 2. Сверить OED s.v. *atonement* (первая фиксация, Tyndale 1526/1530) и перевести S10 из C в A/B. — *Статус (раунд 2): Тиндейл сверен по репринтам (S17, A1); OED/More — открыто.*
 3. Турретин XIV.14 — найти параграф в Dennison/Giger (т. 2) и снять `LOCATOR_HOLD`. — *Статус (раунд 2): снят по латинскому изд. 1847 (S11); пагинация Dennison/Giger не сверена (не требуется: нумерация §§ инвариантна).*
 4. Пересчитать вхождения *redemption/redeem(ed)* и *satisfaction/satisfied* в WCF по Schaff III (для аккуратности §4.3, п. «Счёт слов»). — *Сделано (раунд 4) по полному тексту 1647 г. (S32, §4.20): лемма *redeem-* 8 (5 + 3), *atonement* 0, *satisf-* 7, *purchased* 4, *propitiation* 1; пересчёт именно по Schaff III — открыт как формальность.*
@@ -4020,8 +4182,11 @@ dictam, qui suspendat ille, qui omnium futurorum est praescius & immutabilis?**�
 147-тер. *(раунд 41)* П. 147 **пополнен двумя новыми совпадениями**: (1) аргумент «**advocatus / ἱλασμός**» с обоснованием «unius & eiusdem Pontificis est orare & sacrificare pro populo» встречается **дважды** — зеландское суждение, аргумент VI (раунд 32, §4.62) и депутаты Оверэйссела, теза II (S138) — при разном наборе текстов; (2) формула «нераздельности» встречается уже в **пяти** вариантах и не привязана к одной паре понятий: приношение/ходатайство (Утрехт, Сев. Голландия, Фрисландия, Гронинген) и **покаяние/оставление грехов** (Деян. 5:31, Оверэйссел). Сверх того, впервые найдена **конкретная ремонстрантская позиция, приведённая дортской стороной как возражение** (о потомках отвергших Евангелие, S139) — это проверяемая точка для `EVIDENCE_HOLD`; сами ремонстрантские тексты не читаны.
 152. *(раунд 41)* Дочитать гронингенское суждение: чанк 377 обрывается на «ac soli Praedestina[ti]…» (Еф. 5). Проверить, есть ли там ответ на возражение «Христос умер за всех» в прямой постановке (1 Ин. 2:2; 2 Пет. 2:1; 1 Тим. 2:6) и как сформулирована положительная часть о sufficientia.
 153. *(раунд 41)* Проверить ремонстрантскую позицию о потомках (S139) по их собственным текстам: Эпископий, Гревинховен, *Collatio Hagensis*, «Theses citatorum» — есть ли там тезис «Deus non vult posteris eorum qui Evangelium repudiarunt Evangelium revelare». До проверки `EVIDENCE_HOLD` (п. 147) **не снимать**: дортская сторона могла излагать противника неточно.
-154. *(раунд 42)* Дочитать дрентанский ответ на ремонстрантскую тезу о **цели** смерти Христовой: чанк 379 обрывается на «Falsa esse haec omnia: nam quod de dignitate mediationis…». Это самый прямой материал к разделу статьи «Цели жертвы Христовой» (сс. 31–35) — довести до конца и сверить с каталогом плодов S141.
+154. *(раунд 42) — **ЗАКРЫТО (раунд 43)**:* дрентанский ответ дочитан (чанк 380, §4.80 п. 1): «**Applicatio est causa finalis, quamobrem jus applicandi sibi Christus acquisivit**: si ergo jus applicationis est finis mortis Christi, multo magis & applicatio erit finis eiusdem mortis»; сверх того найдены довод от любви, четыре свойства Божии и «Deus & natura nihil faciunt frustra». Исходная задача: чанк 379 обрывается на «Falsa esse haec omnia: nam quod de dignitate mediationis…». Это самый прямой материал к разделу статьи «Цели жертвы Христовой» (сс. 31–35) — довести до конца и сверить с каталогом плодов S141.
 155. *(раунд 42)* Для раздела статьи «Цели жертвы Христовой» собрать по корпусу **все** дортские перечни целей и плодов: гронингенский (S141: satisfactio / reconciliatio / destructio Sathanae & sanctificatio / aeterna salus), североголландский («veram & realem reconciliationem, remissionem, adoptionem, ius haereditatis», S135), фрисландский (S134). Проверить, встречается ли в каком-либо из них «возможность», «право» или «возможность завета» как **цель** (а не как отвергаемое чужое мнение).
 156. *(раунд 42)* Отдельно проследить формулу «**merito & efficacia**» (S140): у Гронингена она означает совпадение кругов. Проверить, где в корпусе та же пара употребляется для **различения** кругов (дрентанское «sufficientia / efficacitas», §4.60 п. 1), и зафиксировать различие употреблений — иначе в серии возникнет ложное отождествление.
+157. *(раунд 43)* Максима «**quod ultimum est in executione, primum fuit in intentione**» засвидетельствована на Дорте (дрентанское суждение, 1619; S143) — на три десятилетия раньше Твисса 1653 (§4.24, п. 121). Проверить, встречается ли она в других суждениях делегаций и в *Rejectio*, и уточнить датировку в §6 и в `16_`.
+158. *(раунд 43)* Дрентанская антитеза к тезам I–II формулирует **два декрета** в прямом виде: сначала избрание лиц, затем «о предании Сына на смерть… за всех избранных и спасаемых, **как ветхозаветных, так и новозаветных**». Для серии: (а) сверить с амиральдианским порядком (два декрета в обратном порядке) — материал для `03_`; (б) отдельно разобрать ветхозаветную часть как вклад в вопрос «Христос заклан от создания мира».
+159. *(раунд 43)* Принцип «**Unum semper est optimum**… Deo integrum non fuit aliter agere» (S143) проверить на совместимость с дортским же учением о свободе Божией и с «voluntas signi / beneplaciti» того же суждения: в серии **нельзя** цитировать его как «дортское учение о необходимости лучшего» без оговорки о полемическом контексте.
 
 149. *(раунд 39)* Дочитать **североголландское суждение** (чанк 361 обрывается на Евр. 9:24; продолжение — чанк 362, где оно уже частично внесено как S120/S121 в составе зеландского суждения): установить конец североголландского текста и проверить, нет ли там ещё одной формулировки того же хода.
