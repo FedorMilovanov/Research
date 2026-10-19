@@ -307,6 +307,9 @@
 | S141 *(раунд 42)* | *Acta* 1620 (тот же id; **чанк 379**, печ. **сс. 143–145**) — **окончание гронингенского суждения и начало дрентанского** (`34_` §4.79). (1) Отвергнутое ремонстрантское положение (уже внесённое в раунде 29 как «possibilitas & velleitas») — с ответом: «**Nusquam Scripturarum extat**, Christum morte sua Patri talem **velleitatem, possibilitatemque** acquisivisse. Unde sequeretur, Christum justitiae Dei nostro loco non satisfecisse… sed hoc tantum effecisse, ut Deus **posset & vellet** nostrum misereri, foedus gratiae inire». (2) **Каталог целей и плодов смерти Христовой**: «Scriptura hos **fines, & fructus Mortis Christi** recenset. 1. **satisfactio pro peccatis nostris** (Eph. 5; Matth. 20:28; Rom. 3; 2 Cor. 5; 1 Tim. 1; Tit. 2; 1 Petr. 1). 2. **reconciliatio nostri cum Deo** (Rom. 5; 2 Cor. 5:18; 1 Petr. 3:18). 3. **destructio Sathanae & nostri sanctificatio** (Rom. 6; 1 Cor. 5; Hebr. 2; Phil. 3; 1 Cor. 1). 4. **aeterna salus** (Ioh. 3; Ioh. 14; Act. 4:10; Hebr. 5:9; последняя ссылка в OCR не читается)». (3) Порядок декретов — против ремонстрантского «Deum per justitiam non potuisse alicui salutem decernere absque intuitu satisfactionis Christi»: «**Nusquam… Scriptura dicit nos electos esse quia Christus mortuus est pro nobis**»; «Deum **prius mundum dilexisse**… quam Filium suum pro eo tradidit» (Ин. 3); «**Redemptio electionis effectus est, non ergo potest esse eius causa**» (Еф. 1). (4) Христос — «**donum ac praecipuum promissum novi foederis**»; единство завета благодати; «sub hoc foedere **eandem vim iam inde ab initio habuit** meritum Christi» (Евр. 13; Откр. 13; Гал. 3). (5) О вере как орудии: «fides non consideratur ut qualitas aut opus, sed ut **instrumentum** quo Christum apprehendimus»; отвергнуты ремонстрантские «fidem… non habere ut instrumentum», «Christum sua morte nobis acquisivisse **facultatem faciendi bona Opera quibus justificamur**», «fidem gratiosa Dei aestimatione haberi pro tota justitia legali», «Christum… pro originali saltem peccato satisfecisse» ⇒ «firmiter nobis persuadent eos **Socinianismum** in animis suis fovere». (6) **Дрентанское суждение, тезис I, второй член** — ремонстрантская теза в прямой формулировке: «…etiamsi impetrata redemptio nulli unquam individuo applicata fuisset, potuerintque omnibus impetrata esse, tamen nullis applicari, propter intervenientem omnium incredulitatem: **cum finis mortis Christi proprius non fuerit eius applicatio**»; ответ дрентанцев: «**Falsa esse haec omnia**: nam quod de dignitate mediationis…» — чанк обрывается. **Класс A2**; OCR; см. §4.79 п. 4. |
 | S142 *(раунд 43)* | *Acta* 1620 (тот же id; **чанк 380**, печ. **сс. 145–146**) — **дрентанское суждение, завершение тезы I и теза II** (`34_` §4.80). (1) **Ответ на тезу о цели** (п. 154 закрыт): «Ad ultimum primae Theseos membrum… **Finis mortis Christi proprius, non fuit eius applicatio**. Respondemus. 1. Cum dicunt [proprium]… vel ipsi fatentur, quod applicatio fuerit **aliquo modo finis** mortis Christi. 2. **Applicatio est causa finalis, quamobrem jus applicandi sibi Christus acquisivit**: si ergo jus applicationis est finis mortis Christi, **multo magis & applicatio** erit finis eiusdem mortis (Ephes. 5:25–26)». (2) Двойная **utilitas**: «quod Dominus ipsum in summam extulit sublimitatem» (Флп. 2:9) — «potuit esse sine applicatione»; но «ut **omnis lingua confiteatur, quod Dominus sit Iesus Christus, ad gloriam Dei Patris**» (ст. 11) — «sine applicatione nullo modo esse potuit». (3) **Довод от любви**: «cum impetratio sit ex **summo Dei amore** (Ioh. 3:16), quidni idem amor effectum dedit, ut applicatio sequeretur? sine qua amor iste plane **frustraneus** fuisset… Deus… **ex amore nihil incipit, quod ex eodem, ad finem propositum non possit, aut non velit perducere**» (Флп. 2:13; Ин. 15:16); «Rom. 6:5 conjunguntur **individuo nexu** impetratio & applicatio… Constituit igitur Deus ab aeterno utrumque Decreto immutabili». (4) **Четыре свойства Божии**: «Pugnat enim hoc cum **omnibus Dei proprietatibus**. 1. Cum Immutabilitate… 2. Cum misericordia… **paternus amor filijs haereditatem non tantum acquirit, & emit, verum etiam largitur & tradit possidendam**. 3. Cum justitia… 4. Cum sapientia… filium suum unigenitum… in tam horrendos cruciatus nunquam tradidisset. Nam **Deus & natura nihil faciunt frustra**». (5) Ссылка на «**resistibilem regenerationem**» как на чужие «figmenta», обсуждаемые в IV артикуле. **Класс A2**; OCR; первое слово основания в ответе о цели читается неясно. |
 | S143 *(раунд 43)* | *Acta* 1620 (тот же id; **чанк 381**, печ. **сс. 147–148**) — **дрентанское суждение: теза II (второй член), антитеза к тезам I–II, тезы III–IV** (`34_` §4.81). (1) **Принцип «лучшего»**: «**ex effectu Dei infallibiliter semper judicatur de voluntate & Decreto Dei antegresso**… **Deo integrum non fuisse aliter agere**… Deus… **non potest non optime semper agere**… **Unum enim semper est optimum**»; три смысла «веры и дел»: вера как **instrumentum** (Богу не было свободно предписать дела), вера как источник дел (Гал. 5:6 — предписаны оба), дела как условие законное, «каковыми святые того времени и без познания Христа спасались» (отвергнуто: Деян. 15:10–11); итог — «dogmata **Papatus** imo **Pelagiana & Sociniana** astruuntur». (2) **Порядок**: «**Ordinatio finis, prior est ordinatione mediorum, & causae administrae**… conditiones salutis sunt finis, propter quem acquirendum Christus tanquam **medium & causa administra** constitutus est… qualia sunt, fides, poenitentia, obedientia, sanctimonia, perseverantia… Ergo ex ordine Deus prius ordinavit salutem, & salutis conditiones, quam mediatorem Christum… unde & angelus foederis, & servus Dei dicitur… Nam **quod ultimum est in executione, primum fuit in intentione**». (3) **Антитеза к тезам I–II**: «certos quosdam homines… ab aeterno **elegit**… ad Decretum praecedens accessit conjunxitque & hoc sequens, nimirum de dando in mortem filio suo, ut pro electis & salvandis omnibus, **tam Veteris quam Novi Testamenti hominibus**, satisfaceret, iisque mortem suam applicaret». (4) **Теза III** — доводы: данные Христу суть «tanquam **possessio**… ut non amplius sint possessio Diaboli… in **statum reconciliationis** sunt restituti»; «quicquid **non fit**, nunquam fuit in intentione Dei ut fieret»; **Фараон** — «**voluntas signi non potest proprie dici voluntas beneplaciti**»; **Тир и Сидон** — «Tyrii plus praestitissent quam Iudaei, si placuisset Deo eos sua gratia dignari» (Мф. 11:21); «nemo venit ad Christum, nisi pater traxerit eum»; приговор — «**deliria igitur mera**». (5) **Антитеза III**: «Deus electos suos Christo dedit redimendos… **omnibus & solis electis** salutem conferre… Utque hoc non aliter eveniret, **omnem resistentiam Spiritu suo tollit, novas vires instillat, instillatas ad finem vitae conservat**» (Иер. 32:38–40; Флп. 2; Рим. 8:29). (6) **Теза IV**: достаточно/действенно — «Concedimus si… nihil aliud quam **sufficientiam** intelligant: at si volunt **efficax** fuisse in singulis, id pernegamus»; «**pro reprobis Christus nec spopondit, nec oravit**»; Ворстий отвергнут (уже в S118). **Класс A2**; OCR; отдельные ссылки испорчены. |
+| S144 *(раунд 44)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанки 351–353**, печ. **сс. 88–91**) — **суждение профессоров богословия Соединённых Провинций по II артикулу** (*Professorum Belgicorum Iudicium, De Secundo Remonstrantium Articulo: Nempe, Utrum Christus pro omnibus & singulis hominibus sit mortuus*). **Подписи и дата**: «Hoc est judicium SS. Theologiae Professorum in Belgio foederato, **exhibitum D. Praesidi 13. Februarij, Anno 1619**» — **Franciscus Gomarus, Iohannes Polyander, Antonius Thysius, Antonius Walaeus**; «Ego hoc Collegarum meorum Iudicium legi & approbo. — **Lubbertus**». **Четыре тезиса**: I «meritum & valorem… non tantum sufficiat ad omnia hominum peccata, etiam maxima, expianda, sed etiam **ad omnes Adami posteros, quamvis multo plures essent, servandos, modo id vera fide amplecterentur**»; II «quicquid Christus per mortem suam egit, **hoc ex intentione Patris & sua egit**»; III «λύτρον illud Christi… **indiscriminatim** sit annunciandum… **idque serio & ex consilio patris**»; IV «**non pro reprobis & perituris, sed tantum pro electis & credituris efficaciter esse mortuum**… non solum merito suo ijs acquireret, sed etiam **gratiam efficacem**». **Восемь аргументов**: 1 «etsi vox **solus** non extat, tamen **rebus per verba significatis inclusa est**» + три «frustra» (populum suum / ovibus propriis / quam suo sanguine acquisivit); 2 спонсор и «**Deus unum peccatum punire bis non possit**»; 3 обетования — одним избранным; 4 Ин. 11:51, Рим. 8:32 («Non gratificatur omnia cum illo omnibus & singulis. Ergo nec pro ijs dedit filium suum»), 8:34, Евр. 2:10–13, 9:12, 9:15; 5 «necessario nexu»; 6 наследники НЗ; 7 «**Non oro pro mundo**»; 8 «reprobos nunquam novit… demonstrant Christum… **ex amore summo, ac cum proposito certo salvandi, pro solis electis esse mortuum**» (с оговоркой «ut quam mollissime fieri potest explicentur»). **Отвергнутые положения I–V**, включая «nullam certas personas salvandi intentionem habuerit… vel nullus servaretur vel omnes servarentur» и «non sit… pro peccatoribus insigni flagitio circumscriptis… **sed tantum, qua in communi lapsus & peccati sorte considerantur**»; «**Temerarium etiam judicamus & profanum**… potuerit etiam aliam quamvis conditionem praescribere (etiam ipsa opera legis)»; «Christus… **non sit promissum Novi Testamenti**… & Patri tantum impetraverit potestatem seu voluntatem Novi foederis condendi. Nam Christus vocatur **sponsor & obsignator Novi Testamenti**». PD; **A2** (OCR); дата и подписи дают внутри сборника наивысшую степень определённости атрибуции |
+| S145 *(раунд 44)* | *Acta* 1620 (тот же id; **чанки 353–358**, печ. **сс. 92–99**) — **суждение депутатов Гелдерландской синоды по II артикулу** (*Iudicium Deputatorum Synodi Geldricae*), заключение: «**Haec fratrum Geldorum de hoc Articulo est sententia, salvo aliorum melius sentientium judiciis**». (1) **Принято**: «Christum mortuum esse **pro omnibus**: & neminem remissionis peccatorum re ipsa participem fieri nisi fideles (**de adultis sermo est**), id **corde credimus**» + «pro omni ordine, conditione, & genere hominum» + sufficientia in se. (2) **Отвергнуто**: «**Christum pro singulis hominibus mortuum esse**… admittere non possumus, ut quod falsum esse, justitiaeque divinae contrarium, & **aedificationi ac consolationi laborantium Christianorum non modo non utile, sed & noxium** judicamus». (3) Ratio I — «**Nusquam Christus dicitur mortuus pro singulis**»; «voces illas nunc communiter tantum, nunc **singula generum**, saepe etiam **singulorum genera** duntaxat illo amplecti ambitu»; святоотеческая максима «in electis tamen & praescitis… **specialis quaedam censetur universitas: ut de toto mundo totus mundus liberatus… videatur assumptus**»; «**nusquam in Scripturis legitur, Christus est mortuus pro omnibus hominibus, sed tantum, Pro omnibus**. Atqui quinam illi omnes? sunt **omnes oves, omnes filij Dei, omnes credentes**…». (4) Ratio II — «Quoscunque Deus ad salutem vocat… Major est Remonstrantium» + «**Quomodo autem ad salutem dici possint vocari, quibus filius Dei, id est ipse vocans, non intendit salutem, nos quidem non capimus**» + «nullus definite… ad salutem vocetur **ut finem, sed tantummodo ut praemium**». (5) Ratio III — «**Quos solos ad se vocat Christus, ij soli ad Christum venire jubentur. Solos sitientes, laborantes, oneratos… ad se vocat Christus**». (6) Ratio IV — редукция на порядке декретов: «Pro peccatis, **quae Deus non praevidit, cum decerneret Filium suum dare in mortem**, Christus dici non potest ex intentione Patris mortem obijsse» (грех распятия, положительное неверие, грех на Духа); «**peccatum enim crucifixionis Christi non praevidit, nisi post Decretum illud iam factum**». (7) «Qui pro solo peccato primo mortem sustinuit, utique non pro omnibus peccatis sustinuit mortem… **unde plane concidit fundamentum solacij**, quod afflictis suggerunt Remonstrantes»; цитаты — «indifferenter **pro HIS ET ILLIS IN COMMUNI LAPSVSET PECCATI SORTE consideratis**» и Арминий «pro peccato mundi: **cuius respectu nulla est inter homines differentia**». (8) **Сарказм о схеме**: «cum decerneret filium suum Deus in mortem tradere, **nihil quicquam statuerat de salvandis per eum hominibus ullis**… & peracta iam impetratione, **liberrimum adhuc erat Deo gratiae applicationem velle vel non velle**… quid ergo? homini nihil; Deo hoc impetravit, ut velle nunc & efficere possit, quod ante ne velle quidem poterat. **Praeclara Redemtio!**» (9) Ratio VI — «**non-applicatio facit quidem ut homini non prosit impetratio, sed non facit ut Deo non sit facta solutio**»; «Maior per se vera est & **a Remonstrantibus Geldris admittitur**». (10) Ratio VII — Ходатай «**merito & efficacia**… utrumque facit ut Sacerdos… ut Rex & caput Ecclesiae suae… **non nisi dimidius Mediator, ac ne dimidius quidem omnium**»; «**Cum primum conderet Decretum Deus, nulla erat fidelis, credituri vel non credituri, facta discretio**… qui potuit igitur Christus eodem illo Decreto ordinari Mediator, diversimode, iuxta diversitatem hominum?» (11) Церковь прежде призвания — «**pro ecclesia sua, quam dilexit prius quam diligi potuit**; non quidem vocata fuit… sed **fuit electa ut daretur Christo redimenda, colligenda, conservanda, & salvanda tandem**». (12) **Аксиома**: «**Non dicimus Christum reconciliabilitatem quandam morte sua impetrasse, sed reconciliationem: non possibilitatem remittendi peccata, sed remissionem peccatorum**»; «ijs, quorum misereri noluit Pater, quos Christo non dedit… **nulla prorsus contingere, quae quidem ipsis salutaria sint**… applicatio & impetratio **aeque late sese extendant**». (13) Вопрос о simultaneity: «an [putent] Christum… satisfecisse… pro ijs, **qui aeterni ignis poenam sustinebant… tum, cum Christus moreretur**». (14) Покаяние и вера — «**hoc prius quam illud. Hoc omnibus & singulis**… illud non nisi ijs qui prius praestiterint»; «vocari ad resipiscentiam… **sed non est gratia Euangelica**»; «**Hinc perperam dicitur, gratiam Euangelij esse universalem**». PD; **A2**; OCR; часть ссылок испорчена |
+| S146 *(раунд 44)* | *Acta* 1620 (тот же id; **чанки 358–360**, печ. **сс. 99–106**) — **суждение депутатов синоды Южной Голландии по II артикулу** (*Iudicium Deputatorum Synodi Australis Hollandiae, De Secundo Articulo, DE REDEMPTIONE*; подзаголовок — «Quam Remonstrantes vocant **universalitatem acquisitae reconciliationis**»). **Три тезиса**: I «satisfactio & meritum… quod in se quidem sufficeret omnibus & singulis hominibus redimendis, sic **medium subordinatum & proprium**, quo … Electi **ad salutem aeternam tanquam ad finem absolute a Deo intentum perducerentur**»; II «**quia media sapienter destinata, finem adaequatum non excedunt**» ⇒ «non esse efficax, **sive ad impetrandum, sive ad applicandum** finem illum adaequatum, nisi in solis Electis»; III «**non tradidisse, ut per eam remissionem… acquireret etiam ijs, quos aeterno consilio suo non elegit**». **Каталог 13 ремонстрантских положений с источниками** (Втенбогаерт, Борриус, Корвин contra Tilen., Гревинховен contra Ames. 45–46, 49, 9, 14; Ворстий; *Collatio Hagensis* 156, 158, 166, 168, 174–175, 416, 418; *Resp. ad Walachros* 49–51): «**impetrationi… constare potuisse, etiamsi impetrata Redemptio nulli individuo unquam applicata fuisset**»; «pro incredulis **ad solam impetrationem**; pro credentibus vero etiam ad applicationem»; «**mortuum esse Christum adaequate pro omnibus peccatoribus**: resurrexisse autem & intercedere, cum salvandi intentione adaequate, pro fidelibus»; «oblationem… absolutam esse bono omnium & singulorum hominum, **etiam pro Pharaone**». **Два источника заблуждений**: «I. Ex mala & perversa interpretatione illius Phraseos, **Mori pro aliquo**. II. Ex **distinctionibus quibusdam monstrosis**… ideoque **exstinctionis potius Titulo**… appellandis». **О первом**: «non significat tantum **bono alicuius mori**… sed idem significat quod **vice & loco alicuius mori; idque cum intentione ut ille vivat**» (2 Цар. 18:33 — «ut viveret Absolon»; Ис. 53) + **социнианское чтение**: «Remonstrantes… **pressi phraseos huius vi, cum Socino, cuius in hac re sunt Discipuli, dicere non verentur: particulam PRO solum tantum valere, atque *nostro bono*, vel *nostra causa*» (*Coll. Hag.* с. 158 бельг. / 176 издания Бертия). **О втором**: «Nos hanc distinctionem, ut a Remonstrantibus explicatur, negamus: nam **impetratio (ut Iureconsulti… fatentur) concessionem rei petitae includit & praesupponit**… non ius tantum ad munus illud, sed **realem illius possessionem & concessionem**». **Корень зла — намерение**: «Christum applicationem… **absolute nec voluisse nec noluisse**, sed hoc intendisse: ut Deus non obstante iustitia sua peccatorem **salvare posset**, & peccator, non obstante peccato, **salvari**» (против — Ин. 17 и Евр. 9–10). **«Не только дверь»**: «**non janua tantum salutis sit aperta**… sed quod vi illius **introducamur in caelum ipsum**». **Три нелепости**: «**nihil per mortem Christi solam, separatam a Resurrectione, impetrari possit**»; «intercessio Christi in coelis, **nihil aliud est quam continuata oblatio**… si postremum non accedat, **inutile est beneficium prius**»; «**ut ignis non participatur nisi cum toto suo calore: ita qui Christi participes sunt in morte, eius quoque participes sunt in resurrectione**» (Рим. 6:5); «**in ipsa morte firmissimam fuisse applicationem** mortis Christi… cum intentione ipsos salvandi»; «**fons igitur applicationis, non quaerendus est in sola Resurrectione Christi, sed in Decreto Patris tradentis Filium, & in Obedientia Filij**»; «Absurde dici… Christum in terris se obtulisse pro ijs, **pro quibus non intercedat in caelis**». **Утешение**: «divulsio illa Sacerdotij Christi exploditur… **consolatio piorum magna ex parte minuitur**»; ремонстрантская формула о пастыре — «Bonum Pastorem sic ponere vitam pro ovibus, ut intendat eas conservare, **etiamsi non omnes conserventur**» — «de summo animarum Pastore, **cuius voluntati nihil potest resistere**… **non sine blasphemia dici posse**». PD; **A2**; OCR |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -3082,6 +3085,346 @@ beneplaciti* на примере Фараона, силлогизм «quorum vic
 Сидон и формула об отъятии противления. (в) Формулировка о ветхозаветных святых — материал к вопросу серии о
 закланном от создания мира, но **не** ответ на него: дортский текст говорит о круге искупления, а не о модусе его
 действия во времени.
+### 4.82. Q78 — Профессора Соединённых Провинций: датированное суждение от 13 февраля 1619 г. (раунд 44)
+
+**0. Почему это важно.** До сих пор в досье были суждения провинциальных делегаций — Зеландии, Утрехта,
+Фрисландии, Северной Голландии, Оверэйссела, Гронингена, Дренте, галло-бельгийских церквей. Не хватало самого
+авторитетного бельгийского документа: суждения **профессоров богословия**, поданного председателю синойда
+**13 февраля 1619 года** и подписанного поименно. Оно найдено: печатные **сс. 88–91**, чанки 351–353 (S144).
+
+**1. Подписи.** «Hoc est judicium SS. Theologiae Professorum in Belgio foederato, **exhibitum D. Praesidi 13.
+Februarij, Anno 1619**» — **Franciscus Gomarus, Iohannes Polyander, Antonius Thysius, Antonius Walaeus**;
+ниже: «Ego hoc Collegarum meorum Iudicium legi & approbo. — **Lubbertus**». Пять ведущих профессоров
+(Лейден, Гронинген/Франекер, Хардервейк), и документ имеет **точную дату и личные подписи** — это повышает
+класс свидетельства внутри сборника.
+
+**2. Четыре тезиса.** (I) «Fatemur, meritum & valorem mortis & satisfactionis Christi, tantum, tantique pretij
+esse… ut non tantum sufficiat ad omnia hominum peccata, etiam maxima, expianda, sed etiam **ad omnes Adami
+posteros, quamvis multo plures essent, servandos, modo id vera fide amplecterentur**» — контрфактическая
+прибавка («хотя бы их было гораздо больше») важна: достаточность мыслится как избыточная, а не как
+«равно приложенная ко всем». (II) «Non est etiam dubitandum, quin haec fuerit Dei Patris, Filium suum
+tradentis, & Christi se ipsum offerentis, **intentio**; ut tale ac tantum λύτρον persolveret. Nam **quicquid
+Christus per mortem suam egit, hoc ex intentione Patris & sua egit**» (Ин. 5:30; 14:31). (III) — о
+проповеди: «Nec hoc ab Orthodoxis negatum est, quin populo Christiano & quibuscunque Euangelium praedicatur,
+λύτρον illud Christi, tanquam tale **indiscriminatim** sit annunciandum, & in nomine Christi offerendum,
+**idque seriò & ex consilio patris**, relictis interim Deo occultis suis judicijs, gratiam hanc dispensanti,
+& quousque ac quibuscunque vult, applicanti». (IV) — собственная формула: «Si verò finem proprium ac
+singularem & vim salvificam mortis Christi spectes, asserimus Iesum Christum ex consilio Patris & suo, **non
+pro reprobis & perituris, sed tantum pro electis & credituris efficaciter esse mortuum**, ut, nempe,
+Remissionem peccatorum, reconciliationem cum Deo, **non solum merito suo ijs acquireret, sed etiam gratiam
+efficacem, per quam nobis, ea, reipsa conferret**».
+
+**3. Восемь аргументов.** (1) От мест, где смерть Христа ограничена: «In quibus omnibus locis, **etsi vox
+solus non extat**, tamen rebus per verba significatis inclusa est, aut omnem efficaciam & argumentandi vim ex
+verbis illis tolli erit necesse. Nam si Christus est salvator omnium populorum ex aequo, **frustra** addidisset
+Angelus *populum suum*; si Christus posuit animam suam aequaliter pro omnibus, **frustra** dixisset *pro
+ovibus proprijs*; si Christus emit suo sanguine omnes & singulos homines, **nullam vim argumenti habet**, quod
+Paulus addit, *quam suo sanguine acquisivit*… nec emptus dici potest ex omni populo, si reliqui non minus quam
+ipsi sint empti». (2) Поручительство: «Pro quibus Christus efficaciter est mortuus, eorum **loco tanquam
+sponsor** est mortuus… reproborum loco tanquam sponsor non est mortuus»; меньшая: «Alias enim a Deo puniri
+justè non possent, cùm **Deus unum peccatum punire bis non possit**, semel in Christo, & semel in ipsis
+pereuntibus, à quibus ad ultimum usque quadrantem debitum suum exigit». (3) Обетования Ветхого Завета — одним
+избранным (Рим. 9). (4) Места, ограничивающие смерть Христа избранными и верующими: Ин. 11:51; Рим. 8:32
+(«**Non gratificatur omnia cum illo omnibus & singulis. Ergo nec pro ijs dedit filium suum**»); Рим. 8:34;
+Евр. 2:10–13; Евр. 9:12 («aeternam redemptionem nactus; in reprobis autem aeterna esse non potest»); Евр. 9:15.
+(5) Смерть и искупление «necessario nexu» соединены (Евр. 9:26, 28). (6) Наследники Нового Завета (Евр. 9:15;
+10:10, 14; Гал. 3). (7) Ходатайство: «**Non oro pro mundo**» (Ин. 17); Евр. 9:24; 1 Ин. 2. (8) Итог — «quia
+reprobos nunquam novit (Мф. 7:23), eorum non miserebitur, sed eos odio habet (Рим. 9)… Quae omnia, **ut quàm
+mollissimè fieri potest explicentur**, tamen demonstrant Christum proprie & **ex amore summo, ac cum proposito
+certo salvandi, pro solis electis esse mortuum**».
+
+**4. Пять отвергнутых ремонстрантских положений** (с отсылками на *Collatio*, Grevinchoven, *Responsio ad
+Walachros*): (I) «quod Christus ex aequo omnibus hominibus salutem impetravit, cùm tamen in multis hominum
+myriadibus mors Christi nec praedicetur nec innotescat»; (II) «quod Christus moriens **nullam certas personas
+salvandi intentionem habuerit**, sed fieri potuerit, ut peracta morte Christi, **vel nullus servaretur vel
+omnes servarentur**»; (III) «quod Christus non sit **loco vel vice electorum** mortuus, sed tantum in eorum
+bonum»; (IV) «quod Christus non resurrexerit pro omnibus, pro quibus est mortuus»; (V) — всего резче: они
+«rejicimus hanc ipsorum sententiam, tanquam in Christi meritum, consolationem ac salutem fidelium omnino
+injuriam, quòd Christus non sit mortuus, quoad salutis impetrationem, pro peccatoribus insigni flagitio
+circumscriptis, aut pro fidelibus qua talibus, **sed tantum, quà in communi lapsus & peccati sorte
+considerantur**»; возражение: и тяжкие грехи, и само неверие, «quâ quidam etiam verè fideles ad tempus fuerunt
+circumscripti, **non nisi morte Christi sunt expiata**», примером Павла; «& non tantùm peccata fidem
+antecedentia, sed & subsequentia morte Christi sunt expiata: ipsaeque fidei infirmitates & defectus non nisi
+morte Christi remittuntur, atque ipsa adeò fidelium bona opera non nisi in Christo placent».
+
+**5. О «свободе предписать любое условие».** «**Temerarium etiam judicamus & profanum**, quòd asserunt, quòd
+Deus decretâ jam morte Christi Mediatoris, **potuerit etiam aliam quamvis conditionem praescribere** (etiam
+ipsa opera legis) per quae meriti mortis eius fieremus participes, quàm fidem in ipsum: cùm **alia nulla
+conditio, aut nullum aliud medium ex immutabili aeterno Dei consilio nobis sit revelatum**; & Euangelium …
+perpetuò inter se opponat fidem & opera… omnisque gloriandi materia à novo foedere abesse debeat».
+
+**6. О порядке: не Христос прежде завета, а Христос как его залог.** «Postremò hoc ipsorum dogma rejicimus,
+quòd Christus cum morte suâ & satisfactione non sit **promissum Novi Testamenti**, sed quòd omnem N. Test.
+promissionem ac pactionem antecedat, & **Patri tantùm impetraverit potestatem seu voluntatem Novi foederis
+condendi**. Nam Christus vocatur **sponsor & obsignator Novi Testamenti**: quod omninò novi foederis
+antecedentis propositum, pactionem arguit». Плюс довод от обетований: семя жены, семя Авраама, Силом, Сын
+Давидов, Отрок — «vel ad nullum, vel ad novum foedus pertinere dicendae sunt».
+
+**7. Что отсюда следует для серии.** (а) Формула «pro electis & credituris efficaciter mortuum» — не
+«только за избранных»; professores различают **достаточность/цену** (для всякого, кто уверует, хотя бы их
+было больше), **всеобщность предложения** («indiscriminatim… seriò») и **действенность** (избранным и
+верующим). (б) Аргумент 1 даёт явное правило чтения: отсутствие частицы «только» не упраздняет ограничения,
+если оно содержится в самих вещах, — прямо против хода «в Писании нет слова „только"». (в) Аргумент 8
+оговорён самими авторами («ut quàm mollissimè fieri potest explicentur») — цитировать его без этой оговорки
+нельзя.
+
+### 4.83. Q79 — Гелдерланд: «Писание нигде не говорит, что Христос умер за каждого в отдельности» (раунд 44)
+
+**0. Заголовок.** «IVDICIVM Deputatorum Synodi Geldricae. Articulus secundus Remonstrantium», печатные
+**сс. 92–99**, чанки 353–358 (S145). Завершается: «**Haec fratrum Geldorum de hoc Articulo est sententia,
+salvo aliorum melius sentientium judiciis**».
+
+**1. Что гелдерландцы принимают — и это надо знать точно.** Ремонстрантская формула процитирована так:
+«Christum… pro omnibus & singulis hominibus mortuum esse, atque id ita quidem, ut omnibus per mortem crucis
+reconciliationem & remissionem peccatorum impetrarit: **eâ tamen conditione, ut nemo remissionis peccatorum re
+ipsâ particeps fiat, nisi fidelis**». Ответ: «Quod hîc dicitur, Christum mortuum esse **pro omnibus**: &
+neminem remissionis peccatorum re ipsâ participem fieri nisi fideles (**de adultis sermo est**), id **corde
+credimus**: toties enim, & tam disertis verbis Scriptura hoc inculcat, ut negare, vel in dubium vocare nemo,
+nisi apertè impius, possit». И добавления: «I. Christum **pro omni ordine, conditione, & genere hominum**
+mortuum esse. II. Vim & dignitatem Passionis Christi sufficientem fuisse, in se, ad tollenda omnium &
+singulorum hominum peccata».
+
+**2. Что они отвергают — и в каких выражениях.** «Illud autem, **Christum pro singulis hominibus mortuum
+esse**, & singulis impetrasse… reconciliationem & peccatorum remissionem, **admittere non possumus**, ut quod
+falsum esse, justitiaeque divinae contrarium, & **aedificationi ac consolationi laborantium Christianorum non
+modò non utile, sed & noxium** judicamus». То есть водораздел проведён между ***omnibus*** (в смысле «всех
+разрядов людей» и «никто не причастен иначе как верой») и ***singulis*** («каждый в отдельности»).
+
+**3. Основание I — «никогда не сказано про каждого».** «Sacrae litterae tale nihil usquam asserunt.
+**Nusquam Christus dicitur mortuus pro singulis.**» Далее разбор слов «мир» и «все»: «Constat voces illas
+nunc **communiter** tantum, nunc **singula generum**, saepe etiam **singulorum genera** duntaxat illo amplecti
+ambitu» (Ин. 12:31–32; Рим. 4:13; 11:12; 2 Петр. 3; 1 Ин. 5:19; Откр. 12:9; 13:3; Иоил. 1 и др.) — «Quis verò
+haec de omnibus & singulis interpretetur?» Приведена и святоотеческая максима: «quamvis magna pars hominum
+salvantis gratiam aut repellat aut negligat, in electis tamen & praescitis, atque ab omni generalitate
+discretis, **specialis quaedam censetur universitas: ut de toto mundo totus mundus liberatus, & de omnibus
+hominibus omnes homines videantur assumpti**». И решающая прибавка: «eò accedit, quòd **nusquam in Scripturis
+legitur, Christus est mortuus pro omnibus hominibus, sed tantum, Pro omnibus**. Atqui quinam illi omnes? sunt
+**omnes oves, omnes filij Dei, omnes credentes, omnes Christo obedientes, omnes sanctificati**… Et ut vel
+maximè diceretur in Scripturis, *Christus pro omnibus hominibus mortuus est*, **non ideò tamen necessariò
+quoque diceretur mortuus pro omnibus & singulis»** (редукция на 2 Кор. 3:2 и 1 Тим. 2:1–4: «Deus vult omnes
+homines servari… Nunquid & illos quibus Spiritus prohibet veritatis verbum annuntiari?»).
+
+**4. Основание II — о призвании.** «Quoscunque Deus ad salutem vocat morte Christi partam, pro ijs Christus
+mortuus est. At Deus **non vocat singulos homines ad salutem**… Major est Remonstrantium (*Coll. Brand.*)».
+И вопрос, обращённый к противнику: «**Quomodò autem ad salutem dici possint vocari, quibus filius Dei, id est
+ipse vocans, non intendit salutem, nos quidem non capimus.**» Плюс тонкое различение цели и награды: «cùm
+**nullus definitè, sive singulariter ad salutem vocetur ut finem, sed tantummodò ut praemium**, quemadmodum &
+salutem nemini dare decrevit Deus nisi sub ratione praemij».
+
+**5. Основание III — о заповеди веровать.** «Quibuscunque Deus jubet in Christum crucifixum credere, pro ijs
+Christus mortuus est. **Singulis hominibus non jubet Deus credere in Christum crucifixum.**» Меньшая доказана
+в том числе собственным правилом ремонстрантов («lex non lata aut non intellecta, cùm intelligi non possit,
+non obligat») и силлогизмом: «**Quos solos ad se vocat Christus, ij soli ad Christum venire… jubentur. Solos
+sitientes, laborantes, oneratos, caecitatem, inopiam & nuditatem suam agnoscentes, ad se vocat Christus.**
+Cùm autem singuli non sint nec fiant sitientes, laborantes, &c. neque singulis juberi dicendum est».
+
+**6. Основание IV — редукция на порядке декретов самих ремонстрантов.** «Pro peccatis, **quae Deus non
+praevidit, cùm decerneret Filium suum dare in mortem**, Christus dici non potest ex intentione Patris mortem
+obijsse. Peccatum crucifixionis Christi, item infidelitatem positivam sive inobedientiam… adde & peccatum in
+Sp. Sanctum, **non praevidit Deus, cùm decerneret filium suum dare in mortem**. Ergo, pro ijs peccatis
+Christus dici non potest ex intentione Patris mortem obijsse: & per consequens, **non est pro omnibus
+mortuus**…» Меньшая взята у Арминия: предведение природ и грехов «praecedit Decretum, quo statuit Christum
+Iesum… Salvatorem mundo» — но «**peccatum enim crucifixionis Christi non praevidit, nisi post Decretum illud
+jam factum**»; грех же неверия и хулы на Духа «non potuit existere, ergò nec praevideri, nisi post tertium
+quod statuunt Remonstrantes Decretum».
+
+**7. «Славное искупление!» — сарказм, который надо цитировать целиком.** Об основании всей ремонстрантской
+схемы: «Hoc enim tantum effecit, ut Deus sine justitiae suae laesione honoris peccatori **gratiae januam
+aperuerit**. Quid verò hoc est? ut janua gratiae divinae nobis peccatoribus jam aperiatur? **Prorsùs non.**
+Nam cùm decerneret filium suum Deus in mortem tradere, **nihil quicquam statuerat de salvandis per eum
+hominibus ullis, in genere aut in specie, absolutè aut conditionatè: & peractâ jam impetratione, liberrimum
+adhuc erat Deo gratiae applicationem velle vel non velle, & quidem sub conditione quacunque vellet. Quid ergò?
+homini nihil; Deo hoc impetravit, ut velle nunc & efficere possit, quod antè ne velle quidem poterat.
+Praeclara Redemtio!**» Отсюда же — вопрос о «только за первый грех»: «Qui pro solo peccato primo mortem
+sustinuit, utique non pro omnibus peccatis sustinuit mortem. Christus pro solo peccato primo mortem
+sustinuit. Ergò… **impetratio remissionis peccatorum non est universalis, saltem respectu reatuum. Undè planè
+concidit fundamentum solacij ejus, quod afflictis suggerunt Remonstrantes**»: силлогизм «Христос — умилостивление
+для всех грешников; я грешник; следовательно, Он — умилостивление для меня» рассыпается, потому что Он —
+умилостивление «pro omnibus peccatoribus», но **не** «pro omnibus peccatis». Здесь же приведена ремонстрантская
+формула общности: «indifferenter **pro HIS ET ILLIS IN COMMUNI LAPSVS ET PECCATI SORTE consideratis**»
+(Каин и Авель, Иуда и Пётр) и Арминий: «obtulit carnem pro causâ & culpâ communi, nempe pro peccato mundi:
+**cujus respectu nulla est inter homines differentia**» (Grevinch. cont. Ames. pp. 46–47).
+
+**8. Младенцы.** Косвенный довод: если Христос что-либо приобрёл людям, то это «restitutio universalis
+omnium & singulorum hominum **in statum gratiae & salutis**»; ремонстранты это отрицают, но «omnes &
+singulos enim tales nasci, ut si recens nati, vel etiam ante annos discretionis… moriantur, **indubitatò
+salventur, non negabunt**» — со ссылками на Корвина против Тилена (pp. 152, 224) о том, что Адам «представлял
+лицо всего рода не меньше во втором, чем в первом действии», и что первородный грех «не делает виновным
+смерти вечной, если не присоединится новое упорство».
+
+**9. Основания V–VII.** (V) «Si Christus moriendo promeritus est hominibus gratiam & gloriam, tum aut
+**fides, ipsumque posse & velle credere, non est gratia**, aut est eam omnibus & singulis meritus, aut non est
+pro omnibus & singulis mortuus». (VI) «Pro quorum peccatis semel justitiae Dei plenissimè à Mediatore
+satisfactum est, iidem ob eadem peccata à Dei justitiâ conveniri… non possunt. Multi homines… in ignem &
+poenas aeternas praecipitantur. Ergò…» — с примечанием «**Major per se vera est & à Remonstrantibus Geldris
+admittitur**»; и главное возражение против самого различения: «ut verum est, non applicari nisi fidelibus
+satisfactionem Christi, ita quoque… persolvisse & satisfecisse Christum Patri pro omnibus & singulis; quam
+solutionem **si accepit Pater, exigere novam jure nullo potest, sive applicetur, sive non applicetur: nam
+non-applicatio facit quidem ut homini non prosit impetratio, sed non facit ut Deo non sit facta solutio**».
+(VII) О Ходатае: «Pro quibuscunque Christus est mortuus, eorundem est quoque Mediator. Sed singulorum
+Mediator non est… Christus dicitur Mediator **merito & efficaciâ**: meritum acquisivit sacrificio; pro
+applicatione intercedit: **utrumque facit ut Sacerdos**. At eandem applicationem actu peragit **ut Rex & caput
+Ecclesiae suae**… Unde **non nisi dimidius Mediator, ac ne dimidius quidem omnium** erit Christus». И тот же
+ход, что у Дренте, но в виде вопроса о декрете: «**Cùm primùm conderet Decretum Deus, nulla erat fidelis,
+credituri vel non credituri, facta discretio: ne quidem constituta adhuc fides erat conditio, sub quâ vel per
+quam salvare vellet homines Deus: qui potuit igitur Christus eodem illo Decreto ordinari Mediator,
+diversimodè, juxta diversitatem hominum, cùm tunc eadem & planè uniformis omnium omninò esset ratio**?»
+
+**10. Церковь прежде призвания — прямой ответ на вопрос серии.** О «многих»: «Non est ergò mortuus Christus
+pro omnibus & singulis hominibus, **sed pro multis** hominibus, id est, pro omnibus & singulis electis, pro ijs
+quorum misereri voluit Deus (nam **gratiosus miserendi in Deo affectus mediatorem Christum ordinavit**), pro
+omnibus & singulis ovibus, filijs Dei; **pro ecclesiâ suâ, quam dilexit prius quàm diligi potuit**; non
+quidem vocata fuit, vel considerata ut vocata, jam tum cùm eam diligeret prius, & ipse ordinaretur redemtor
+eius; **sed fuit electa ut daretur Christo redimenda, colligenda, conservanda, & salvanda tandem**». То есть
+отношение любви к церкви **предшествует** её призванию, и призвание не есть её основание: она избрана, «дабы
+быть данной Христу для искупления». Разбор возражений от Дан. 12:2 и Рим. 5:19 («multitudinem etiam esse
+universalitatem quandam, nunquam tamen per *Multos* intelligi posse… omnes & singulos, nisi quod nunc de
+multis dicitur, aliàs de omnibus & singulis dicatur») и от 2 Петр. 2:1 («voce *emere*… significari quamlibet
+liberationem» — Втор. 7:8; 15:15; Иер. 15:21; и «apud Paulum… *perdere* non significat exitium aeternum, sed
+scandalum»).
+
+**11. Аксиома, которой в досье не хватало.** «**Non dicimus Christum reconciliabilitatem quandam morte suâ
+impetrasse, sed reconciliationem: non possibilitatem remittendi peccata, sed remissionem peccatorum**» — не
+«примиримость», а примирение; не «возможность отпускать грехи», а отпущение грехов. И рядом: «Nusquam legimus
+aliud Christum nobis suâ morte promeritum quàm redemptionem, peccatorum remissionem, & vitam aeternam…
+ijs, **quorum misereri noluit Pater, quos Christo non dedit, id est non electis sive reprobis, nulla prorsùs
+contingere, quae quidem ipsis salutaria sint**… ut omninò nobis **applicatio & impetratio aequè latè sese
+extendant**».
+
+**12. Вопрос о simultaneity** (не ответ, а постановка, и её стоит удержать): «hîc vellemus… explicare
+Remonstrantes, an [putent] Christum morte suâ reconciliasse Patri & satisfecisse eiusdem justitiae eos, &
+pro ijs, **qui aeterni ignis poenam sustinebant, atque ita ipsi satisfaciebant Dei justitiae tum, cùm
+Christus moreretur**».
+
+**13. Покаяние и вера: различение, важное для серии.** «Hinc non omnibus promiscuè hominibus mandamus, ut in
+Christum credant: etsi tamen & hoc omnibus inculcamus, ipsos ad vitam aeternam non posse ingredi… nisi per
+Christum. **Non permittimus intereà quenquam dubitare, an in Christum debeat & possit credere, an Christus
+pro se mortuus sit**: omnibus enim & singulis **verè poenitentibus** mandatum dicimus ut ad Christum veniant…
+ac promittimus ipsis certam quietem, levamen, peccatorum remissionem». И затем: «Obtemperare filio, non est
+credere tantum in filium, sed etiam **resipiscere**: utrumque enim mandat filius. Et **hoc prius quàm illud.
+Hoc omnibus & singulis** (nam omnes & singuli sunt rei violatae legis), **illud non nisi ijs qui prius
+praestiterint**… Nihilominùs gratia alicuius est, vocari ad resipiscentiam: **sed non est gratia
+Euangelica**. Nam haec in solo Christo, & propter solum Christum offertur, **cum intentione semper salutis
+aeternae**: illa autem, **cum intentione salutis aeternae non praescribitur semper**… **Hinc perperam
+dicitur, gratiam Euangelij esse universalem**, id est, beneficia morte Christi parta omnibus & singulis
+quibus praedicatur offerri».
+
+**14. Оговорки.** (а) Приятие формулы «Христос умер за всех» у гелдерландцев **не** есть уступка всеобщему
+приобретению: они тут же оговаривают «de adultis sermo est» и толкуют «omnibus» как «всякого чина и
+состояния». (б) §4.83 п. 13 — самое резкое место во всём томе по вопросу о всеобщности благодати; цитировать
+его вне контекста (без §4.83 пп. 1 и 11) нельзя: оно превратилось бы в отрицание всеобщности призвания, чего
+в тексте нет (ср. §4.82 п. 2, тезис III: «indiscriminatim… seriò»). (в) Текст полемический; выражение
+«Praeclara Redemtio!» — сарказм, а не догматическая формула.
+
+### 4.84. Q80 — Южная Голландия: два источника всех заблуждений и юридический смысл слова *impetratio* (раунд 44)
+
+**0. Заголовок и подзаголовок.** «IVDICIVM DEPUTATORVM SYNODI AUSTRALIS HOLLANDIAE, De Secundo Articulo, **DE
+REDEMPTIONE**»; подзаголовок задаёт предмет чужими словами: «**Quam Remonstrantes vocant universalitatem
+acquisitae reconciliationis, per mortem Christi**». Печатные **сс. 99–106**, чанки 358–360 (S146).
+
+**1. Три тезиса.** (I) «Deum, sicut ab aeterno decrevit **non omnes homines, sed certos quosdam** ex genere
+humano electos… servare, ita etiam **simul** statuisse, ut satisfactio, & meritum obedientiae & mortis
+Christi, quod in se quidem sufficeret omnibus & singulis hominibus redimendis, sic **medium subordinatum &
+proprium**, quo expiatis peccatis illorum, qui sibi à Patre dati sunt, efficaciter & infallibiliter Electi
+**ad salutem aeternam tanquam ad finem absolutè à Deo intentum perducerentur**». (II) «Et quia **media
+sapienter destinata, finem adaequatum non excedunt**», — следует: «Satisfactionem & meritum Christi, seu
+pretium redemptionis… **non esse efficax, sive ad impetrandum, sive ad applicandum finem illum adaequatum,
+nisi in solis Electis**». (III) «Sapientem Deum justissimumque filium suum unigenitum in mortem **non
+tradidisse, ut per eam remissionem peccatorum & reconciliationem acquireret etiam ijs, quos aeterno consilio
+suo non elegit, sed praeterijt, sibique reliquit, ac justè propter peccata damnare decrevit**».
+
+**2. Каталог тринадцати ремонстрантских положений с источниками** (Втенбогаерт, Борриус, Корвин,
+Гревинховен, Ворстий; *Collatio Hagensis* pp. 156, 158, 166, 168, 174–175, 416, 418; *Responsio ad Walachros*
+pp. 49–51). Среди них: «**impetrationi suam dignitatem, necessitatem atque utilitatem abunde constare
+potuisse, etiamsi impetrata Redemptio nulli individuo unquam applicata fuisset**» (Гревинховен против Эймса,
+с. 9); «potuisse omnibus impetratam esse Redemptionem, & tamen **nullis eam applicari**, propter
+intervenientem omnium incredulitatem» (там же, с. 14); «etsi Christus non oret pro Mundo eo modo quo orat
+pro credentibus… tamen eum orare **etiam aliquo modo** pro Mundo, & esse Reconciliationem pro utrisque, **pro
+incredulis ad solam impetrationem; pro credentibus verò etiam ad applicationem**»; «**mortuum esse Christum
+adaequatè pro omnibus peccatoribus: resurrexisse autem & intercedere, cum salvandi intentione adaequatè, pro
+fidelibus**»; и — о священстве: «oblationem… absolutam esse **bono omnium & singulorum hominum, etiam pro
+Pharaone**; intercessionem autem in coelis non esse absolutam, neque pro omnibus, sed tantum pro
+credentibus».
+
+**3. Два источника всех заблуждений.** «Omnes hos errores, statuimus, ex **duobus fontibus** promanasse:
+**I.** Ex **malâ & perversâ interpretatione illius Phraseos, *Mori pro aliquo*. II.** Ex **distinctionibus
+quibusdam monstrosis**, & nullum in Dei Verbo fundamentum habentibus, ideóque **exstinctionis potiùs Titulo,
+quàm aliquo alio appellandis**».
+
+**4. О первом: «умереть за кого-либо».** «*Mori pro aliquo*, in hoc Argumento, **non significat tantum bono
+alicuius mori** (ut cùm Apostolus ad Coloss. 1:24 dicit se explere… reliquias afflictionum Christi, pro
+corpore ipsius, id est Ecclesiâ): **sed idem significat quod vice & loco alicuius mori; idque cum intentione
+ut ille vivat.** Quomodò accipitur 2 Sam. 18:33, cùm David dicit: *Fili mi Absolon… quis mihi tribuat, ut ego
+morior pro te?* Votum enim Davidis fuit, licuisse sibi mori, **ut viveret Absolon**». Смысл подтверждён Ис.
+53:4–5 и местáми Нового Завета (1 Петр. 2:24; 3:18; Откр. 1:5; Евр. 9:14). И — ключевое наблюдение:
+«**contristamur magnoperè**, ob hoc, quòd Remonstrantes *Collat. Hagiens.* p. 158 edit. Belg. & 176 edit.
+Bertianâ, **pressi phraseos huius vi, cum Socino, cuius in hac re sunt Discipuli, dicere non verentur:
+particulam PRO solum tantum valere, atque *nostro bono*, vel *nostrâ causâ***. quod quale syrma errorum secum
+trahat, expendendum omnibus relinquimus». Для серии это первая по важности находка раунда: спор о
+«pro» = «вместо» или «для блага» зафиксирован **на Дорте**, и выражение «nostro bono» — **социнианское**, в
+том же смысле, в каком позже его будут обсуждать Оуэн и Турретин.
+
+**5. О втором: различение приобретения и применения.** «Distinguunt inter impetrationem & applicationem, &
+hac distinctione freti, **modò dicunt**: Christum pro omnibus & singulis mortuum esse, & omnibus per mortem
+crucis **peperisse** reconciliationem & remissionem peccatorum (*Collat. Hag.* p. 416); **modò negant**:
+incredulos… remissionis peccatorum unquam participes fuisse. **Nos hanc distinctionem, ut à Remonstrantibus
+explicatur, negamus: nam impetratio (ut Jureconsulti, optimi significationis verborum Interpretes fatentur)
+concessionem rei petitae includit & praesupponit.** Sic impetratum rescriptum illis est, cùm Princeps
+concessit, supplicansque obtinuit. Et vulgati sermone nostro, cùm alicui officium aut munus impetratum
+dicimus, **non ius tantum ad munus illud, sed realem illius possessionem & concessionem** ei impetratam esse
+significamus». Это юридическое уточнение меняет сам спор: слово *impetratio* в обычном и правовом языке
+означает **получение испрошенного**, а не «приобретение права на него».
+
+**6. Корень зла — намерение.** «Sed ad fontem mali veniamus. Is est **intentio**, quam Remonstrantes
+Christum in passione suâ habuisse putant. Dicunt confidenter, Christum applicationem reconciliationis
+omnibus & singulis pro quibus mortuus est, **absolute nec voluisse nec noluisse**, sed hoc intendisse: **ut
+Deus non obstante justitiâ suâ peccatorem salvare posset, & peccator, non obstante peccato, salvari**».
+Против этого — Ин. 17:2, 11, 12, 15, 17, 24 и Евр. 9:26, 28; 10:14: «quae omnia **aliam intentionem,
+aliumque effectum** mortis Christi nobis depingunt».
+
+**7. «Не только дверь отворена».** «Ex his etiam Scripturae locis patet, quòd intercessione Christi in
+terris, & oblatione, quae facta est in mundo, **non janua tantum salutis sit aperta**, ut Remonstrantes
+loquuntur in explicatione secundi sui Articuli; (quanquam quomodo sine actuali remissione peccatorum, quam
+illi morti Christi non adscribunt, hoc fieri potuerit ignoramus) **sed quòd vi illius introducamur in caelum
+ipsum**».
+
+**8. Три нелепости.** (1) «Non ita distingui posse actus Sacerdotij Christi, ut pro quibus Christus mortuus
+est, pro omnibus ijs etiam non resurrexerit: nam… Rom. 4:25 Christum traditum dicit propter offensas nostras,
+& excitatum esse propter justificationem nostram. Non dicit, traditum esse **pro minima offensa**, &
+excitatum esse, **pro quorundam tantum** justificatione… Unde concludimus, quòd **nihil per mortem Christi
+solam, separatam à Resurrectione, impetrari possit**… intercessio Christi in caelis, **nihil aliud est quàm
+continuata oblatio**, ideóque haec duo ita separari non possint… **Quod si postremum non accedat, inutile est
+beneficium prius**». Отсюда вопрос: «Christum omnibus & singulis promeritum esse dicunt medicinam ad salutem
+necessariam, cùm tamen statuant Christum multis non esse morte illâ promeritum applicationem. **Quomodò…
+tale meritum, ipsis pereuntibus, dici poterit fuisse ad salutem sufficiens?**» И образ: «**ut ignis non
+participatur nisi cum toto suo calore: ita qui Christi participes sunt in morte, eius quoque participes sunt
+in resurrectione** (Рим. 6:5)»; «si Pater omnia dat cum Christo (Рим. 8:32), dat quoque applicationem: &
+vice versâ, **quibus Filij mortem non applicat, ijs nunquam Filium suum dedit**». (2) «Absurdum esse,
+Christum pro ijs mortuum esse, pro quibus **mortem non superarit**, cùm tamen in passione suâ **mortis
+mortem** se ostenderit (Евр. 2:14; 1 Кор. 15:54). Unde rursum inferimus, **in ipsâ morte firmissimam fuisse
+applicationem** mortis Christi, pro omnibus ijs, quorum vicem ipse moriens sustinuit, **cum intentione ipsos
+salvandi**, & illius mortis virtute, sensum huius beneficij in ipsis quoque suo tempore extiturum, quando
+nimirum Evangelio, quod ipsis praedicatur, **operatione potentiae Dei credent**». Отсюда же: «**fons igitur
+applicationis, non quaerendus est in solâ Resurrectione Christi, sed in Decreto Patris tradentis Filium, & in
+Obedientiâ Filij**, quâ obedivit Patri usque ad mortem crucis». (3) «Absurdè dici putamus, Christum in terris
+se obtulisse pro ijs, **pro quibus non intercedat in caelis**».
+
+**9. Утешение и «добрый пастырь».** «Meritò itaque **divulsio illa Sacerdotij Christi exploditur**, utpote
+quâ, inter alia quae ex eâ nascuntur incommoda, **consolatio piorum magnâ ex parte minuitur**». Силлогизм
+утешения (Рим. 8:33–39) противопоставлен ремонстрантскому, «cuius vi adiguntur, ut in *Collatione Hagiensi*
+… dicant: **Bonum Pastorem sic ponere vitam pro ovibus, ut intendat eas conservare, etiamsi non omnes
+conserventur. Quod de summo animarum Pastore, cuius voluntati nihil potest resistere, & cum quo nobis dantur
+omnia (Рим. 8:31), non sine blasphemiâ dici posse**, jure meritóque omnes pij credunt».
+
+**10. Оговорки.** (а) Слово «blasphemia» относится **к высказыванию о Христе**, а не к лицам; цитировать его
+как характеристику оппонентов нельзя. (б) Тезис II («media sapienter destinata, finem adaequatum non
+excedunt») — сильный аргумент против амиральдианского разведения «приобрёл для всех — приложил верующим», но
+он же может быть прочитан и как общее правило о средствах; в серии его надо приводить вместе с тезисом I, где
+«finis absolutè à Deo intentus» — спасение избранных. (в) Толкование «pro» = «вместо» дано как ответ на
+социнианское чтение; это не лексикографическая статья, а полемическое богословие, и переносить его в раздел о
+семантике предлога можно только с этой оговоркой.
+
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -3574,6 +3917,9 @@ beneplaciti* на примере Фараона, силлогизм «quorum vic
 | 1618–1619 *(раунд 30)* | **Дрентанцы, тезисы III–V**: «Concedimus si… **sufficientiam** intelligant: at si volunt **efficax** fuisse in singulis, id pernegamus»; «pro quibus non resurrexit, pro iis etiam **mortuus non est**»; Ворстий («peccata… aliquomodo in Christo punita esse») отвергнут; «**voluntas signi / voluntas beneplaciti**» на примере фараона; силлогизм «**quorum vice & loco**… hi omnes servantur» (большая посылка — *Collatio Hagensis*, с. 158) | S118, §4.60 пп. 1–3, 5, 8 |
 | 1618–1619 *(раунд 30)* | **Притча о враче**: принята («praestantia medicamenti… in efficacitate») и отвергнута («medicus, qui praeparat medicamentum, salutare quidem omnibus… **est enim simile dissimile**»; «Deus… **ex nolentibus facit volentes**») — в одном и том же дрентанском суждении | S118, §4.60 п. 4 |
 | 1618–1619 *(раунд 30)* | **Галло-бельгийское суждение «De Universitate Mortis Christi»**: «sufficientissimum… **si omnes & singuli crederent**»; «pro nullis aliis… **quam pro credentibus**»; «**eodem actu**… impetravit»; «**indivulso nexu**»; «nec ullus mortis Christi effectus… aliis quam solis credentibus»; 5 отвержений (включая «sine ulla determinatione eiusdem applicandae» и «ut Deus **posset & vellet**… foedus inire») | S119, §4.60 пп. 6–7 |
+| 1619, 13 февраля *(раунд 44)* | **Суждение профессоров богословия Соединённых Провинций** (Гомарус, Полиандер, Тизий, Валей; одобрение Любберта) — Acta 1620, сс. 88–91: «**non pro reprobis & perituris, sed tantum pro electis & credituris efficaciter esse mortuum**»; «etsi vox **solus** non extat, tamen rebus per verba significatis inclusa est»; «**Deus unum peccatum punire bis non possit**»; «**Temerarium… & profanum**… potuerit etiam aliam quamvis conditionem praescribere (etiam ipsa opera legis)»; Christus — «**sponsor & obsignator Novi Testamenti**» | S144 (A2) |
+| 1618–1619 *(раунд 44)* | **Гелдерландское суждение**: принято «pro omnibus… **de adultis sermo est**… id corde credimus», отвергнуто «**pro singulis**»; «**Nusquam Christus dicitur mortuus pro singulis**»; Августин — «**specialis quaedam censetur universitas: ut de toto mundo totus mundus liberatus… videatur**»; редукция на порядке декретов («quae Deus non praevidit, cum decerneret Filium suum dare in mortem»); «**Praeclara Redemtio!**»; «**non-applicatio facit quidem ut homini non prosit impetratio, sed non facit ut Deo non sit facta solutio**»; «**dimidius Mediator**»; «**Non dicimus Christum reconciliabilitatem quandam morte sua impetrasse, sed reconciliationem: non possibilitatem remittendi peccata, sed remissionem peccatorum**» | S145 (A2) |
+| 1618–1619 *(раунд 44)* | **Южная Голландия**: «**medium subordinatum & proprium**… ad finem absolute a Deo intentum»; «**media sapienter destinata, finem adaequatum non excedunt**»; «ex **duobus fontibus**» — «*Mori pro aliquo*» и «**distinctiones monstrosae**… exstinctionis potius Titulo»; социнианское чтение «particulam PRO… valere atque **nostro bono**»; «**impetratio… concessionem rei petitae includit & praesupponit**»; «**non janua tantum salutis sit aperta**… sed quod vi illius introducamur in caelum ipsum»; «**in ipsa morte firmissimam fuisse applicationem**»; «**fons applicationis… in Decreto Patris tradentis Filium**» | S146 (A2) |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -3836,7 +4182,36 @@ beneplaciti* на примере Фараона, силлогизм «quorum vic
 - **S120, S121** (лат. *Acta* 1620, чанк 362: зеландское суждение, окончание североголландского) — PD; **A2**; оговорки: зеландское суждение прочитано **не до конца** (обрыв на 2 Кор. 5:19), страницы приблизительны (колонцитулы «111/113»), порядок листов скана нарушен.
 - **S122** (лат. *Acta* 1620, чанк 382: галло-бельгийские положения VI–IX) — PD; **A2**; страницы приблизительны.
 - Раунд 31: «снято молча» — **0**; п. 131 **уточнён** (суждения по II артикулу в этой части тома: североголландское, зеландское, фрисландское, суждение депутатов Оверэйссела, гронингенское, дрентанское, галло-бельгийское; утрехтского и южноголландского не обнаружено); добавлены пп. 134–136.
+
+- **S144** (лат. *Acta* 1620, чанки 351–353, печ. сс. 88–91: суждение профессоров богословия) — PD; **A2**; OCR; дата «13. Februarij, Anno 1619» и личные подписи (Гомарус, Полиандер, Тизий, Валей + одобрение Любберта) прочитаны в самом тексте; страницы приблизительны.
+- **S145** (лат. *Acta* 1620, чанки 353–358, печ. сс. 92–99: суждение депутатов Гелдерландской синоды) — PD; **A2**; OCR; границы суждения установлены по заголовку и по заключительной формуле «Haec fratrum Geldorum… salvo aliorum melius sentientium judiciis»; часть ссылок испорчена.
+- **S146** (лат. *Acta* 1620, чанки 358–360, печ. сс. 99–106: суждение депутатов синоды Южной Голландии) — PD; **A2**; OCR; границы установлены по заголовку и по переходу к *Iudicium Fratrum Northollandorum*; страницы приблизительны.
+- Раунд 44: «снято молча» — **0**; прочитан новый крупный блок: суждения **профессоров**, **Гелдерланда** и **Южной Голландии**, которых в досье не было (S144–S146, §§4.82–4.84); добавлены пп. 160–165. `ATTRIBUTION_HOLD` (п. 150) остаётся открытым: он касается суждения Оверэйссела и печатного листа 134, а не этих трёх документов; `EVIDENCE_HOLD`, `PUBLICATION_HOLD`, `RIGHTS_HOLD` и C-16 — без изменений.
 ## 8. Следующее проверяемое действие
+**Добавлено в раунде 44:**
+
+160. *(раунд 44)* **Суждение профессоров дочитать до конца** — проверено: оно оканчивается подписями на печ. с. 91 (чанк 353);
+за ним следует гелдерландское суждение. Пункт закрыт; остаток §4.82 — только сверка отдельных библейских ссылок по изданию.
+161. *(раунд 44)* **Проследить формулу социнианского чтения «pro = nostro bono»** по корпусу: найдено у депутатов Южной Голландии
+(S146) как цитата ремонстрантов «cum Socino… particulam PRO solum tantum valere, atque nostro bono». Сверить с Оуэном
+(*Death of Death*, кн. II–III) и Турретином (Locus XIV, Q. XIV), где идёт спор о том же предлоге; до сопоставления не
+утверждать зависимость.
+162. *(раунд 44)* **П. 156 пополнен**: пара «merito & efficacia» встретилась в третьем смысле — у гелдерландцев она разводит
+**действия Ходатая**: «meritum acquisivit sacrificio; pro applicatione intercedit: utrumque facit ut Sacerdos… eandem
+applicationem actu peragit ut Rex & caput Ecclesiae suae». Значит, в дортском словоупотреблении пару нельзя сводить ни к
+совпадению кругов (Гронинген), ни к модусу (Дренте): **третий регистр — распределение священства и царства**.
+163. *(раунд 44)* **П. 155 пополнен**: перечень целей и плодов смерти Христовой у профессоров — «Nusquam legimus aliud Christum
+nobis sua morte promeritum quam **redemptionem, peccatorum remissionem, & vitam aeternam**; cetera omnia bona salutaria, non
+tam (proprie loquendo) ex morte Christi, quam **ex benevolo Patris affectu**». Добавить в сводный каталог как четвёртый тип
+перечня — с оговоркой, что «cetera» не отделяются от Христа («nullis ea conferri possint… quam quibus Pater reconciliatus
+est»).
+164. *(раунд 44)* **Юридическое значение impetratio** («concessionem rei petitae includit & praesupponit», S146) внести в
+лексический раздел корпуса: спор 1619 г. идёт о том, означает ли *impetratio* получение испрошенного или приобретение права
+на него; это же различие стоит за позднейшей парой «приобрёл / сделал возможным». Проверить по корпусу, встречается ли
+юридическая отсылка (Jureconsulti) ещё где-либо.
+165. *(раунд 44)* **Приятие формулы «Христос умер за всех» у гелдерландцев** (S145: «id corde credimus… de adultis sermo est»)
+разобрать отдельно в `06_` и `synthesis/00`: это третий документально засвидетельствованный случай, когда дортская делегация принимает
+всеобщность в одном смысле и отвергает её в другом; материал прямой для тезиса «„только за избранных" — не формула Дорта».
 - **S123** (лат. *Acta* 1620, чанк 363: окончание зеландского суждения, аргументы IV–VI и *Sententiae heterodoxou Rejectio* I–VII) — PD; **A2**; оговорки: страницы приблизительны, порядок листов скана нарушен; ссылки на ремонстрантские сочинения (*Responsio ad Walachros*, Епископий, Арминий против Перкинса, Гревинховен против Эймса) даны **по зеландскому суждению** и по первоисточникам не сверены (п. 138).
 - **ПОПРАВКА АТРИБУЦИИ (раунд 32).** Материал, внесённый в раунде 27 как S114 «Iudicium deputatorum Ecclesiarum Frisicarum» (чанк 363, печ. cc. 114–115), переатрибутирован как **зеландское суждение** (*Examen & Iudicium Fratrum Zelandorum*): установлена непрерывность текста чанков 362→363 и заголовок суждения. Прежние строки не удалялись; пометка добавлена в строку S114, в §4.62 п. 7 и здесь. **До решения п. 137 цитаты из S114 следует приводить с пометкой «нидерландское суждение (Зеландия / Фрисландия — уточняется)»** (`ATTRIBUTION_HOLD`).
 - Раунд 32: «снято молча» — **1** (поправка атрибуции S114; прежняя строка сохранена и помечена). П. 135 закрыт; добавлены пп. 137–138.
