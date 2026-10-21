@@ -4124,6 +4124,356 @@ lapsis & peccato obnoxiis» приведена Эмденом с листом (�
 «Breve Examen» обрывается на л. 120; не дочитаны суждения по III–IV артикулам) список может пополниться.
 
 
+### 4.95. Q91 — Эмден, вопросы VI–X: завет, обусловленная воля, и чтó такое «испрошение» (раунд 49)
+
+**0. Зачем.** В раунде 47 эмденское «Breve Examen» (S152) было прочитано с л. 118 и оборвалось на л. 120, на пятом
+свойстве Божием. Доступ к `archive.org` восстановлен (работает база `/download/…_djvu.txt`; 453 чанка против 455 в
+`/stream/`, отсюда сдвиг нумерации). Прочитано продолжение: **лл. 121–127, вопросы VI–XXI, до подписи**. Новый
+локатор — **S153**. Атрибуция та же: это один документ, начавшийся на л. 118 заголовком «Breve Examen… Embdensium
+Ministrorum»; между л. 118 и л. 127 нет ни одного нового заголовка делегации, а на л. 127 стоит прямой маркер конца.
+
+**1. Окончание вопроса V (л. 121).** Доказательство от напрасности: «*Possumusne haec duo simul subsistere, Mori
+adaequate pro omnibus & Mori sine intentione salvandi omnes? Ergo Christus frustra pro maxima hominum parte mortuus
+est: frustra pro maxima hominum parte remissionem peccatorum & reconciliationem cum Deo impetravit, frustra
+pretiosum suum sanguinem, maximam hominum partem quod attinet, effudit*». И затем — формула, которую серия должна
+запомнить отдельно: «*Sincere enim dicimus, illum hominem, qui Christi meritum & efficaciam, vel impetrationem
+remissionis peccatorum, & applicationem illius beneficii separat, a nobis pro haeretico haberi, quem, nisi inquinari
+ab eo velimus, summo studio devitare oporteat*». **«Искренне говорим: того человека, который отделяет заслугу
+Христову от действенности — либо испрошение оставления грехов от приложения сего благодеяния, — мы считаем
+еретиком».** Итог вопроса V: «*Ex quibus omnibus falsum esse evincitur, quod dicunt… etiamsi impetrata redemptio
+nulli unquam individuo applicata fuisset, cum finis mortis Christi proprius non fuerit ejus applicatio*». Так теза
+VIII второго бременского суждения (S150) получает второе, независимое подтверждение — из Эмдена.
+
+**2. Вопрос VI (л. 121) — второе свидетельство формулы «possibilitas & velleitas».** Вопрос: «*An Christus merito
+mortis suae ita reconciliarit Deum Patrem humano generi universo, ut Pater propter illius meritum salva justitia &
+veritate sua novum gratiae foedus cum peccatoribus inire potuerit & voluerit? Affirmant Remonstr. Thes. 2. exhibit.
+de 2. Articulo*». Ответ начинается с оговорки, важной для метода серии: «*Quum hic multa lateant abscondita, quae
+brevi tempore discuti nequeunt; quod etiam nunc non est nostri propositi*» — то есть эмденцы **сознательно
+ограничивают объём разбора**. Далее семь антитез. **Антитеза 4 — искомая формула:** «*Ideoque Christus per mortem
+suam non tum demum acquisivit Patri **possibilitatem & velleitatem**, qua salva justitia & veritate sua foedus
+gratiae cum peccatoribus inire potuerit & voluerit; sed ipse Christus cum omnibus per mortem ipsius partis beneficiis
+**ipsissimum & primarium N. Foederis donum est**, cum illud foedus ipse qui verus Jehova est, sua morte
+stabiliverit*».
+
+**3. Следствие — поправка к раунду 46 (п. 189).** В раунде 46 формула «POSSIBILITATEM & VELLEITATEM foederis» была
+зафиксирована в каталоге Кроция (S151, № 11, лл. 117–118) и вошла в досье как **бременская**. Теперь она
+читается у **Эмдена**, в антитезе, то есть **вторая делегация употребляет ту же формулу в том же смысле**: смерть
+Христова не доставила Отцу «возможность и хотение» заключить завет, но Сам Христос есть первичный дар Нового
+Завета. Вывод троякий: (а) формула **не принадлежит одной делегации**; (б) она **не есть цитата из ремонстрантов с
+листом** — это слово, которым обе делегации описывают ремонстрантскую тезу (в catalogus Кроция она стоит как
+отвергаемое положение, у Эмдена — как антитеза к нему); (в) стало быть, в серии её нельзя приписывать «бременцам»
+или «эмденцам» как их собственное изобретение: **это общий контр-ремонстрантский словарь 1619 г.**, и именно так
+её и следует цитировать.
+
+**4. Антитеза 6 — условия завета не только заповеданы, но и обещаны.** «*Conditiones N. Foederis non tantum
+praeceptae sunt, sed etiam promissae. Ita nimirum, ut Deus Foederis gratuiti auctor, se fidem & resipiscentiam, quam
+a confoederatis suis postulat, daturum promiserit, illudque quod promisit reipsa praestet*». И антитеза 7, с
+пастырским нервом: «*Qui conditionis N. Foed. impletioni vitam & salutem adscribunt, Deo & Christo suum honorem
+suffurantur, & **vivam consolationem afflictis conscientiis eripiunt**, adeoque ipsam peccatores salvandi rationem in
+S. Scriptura propositam subvertunt*». **«Живую утешение отъемлют у утеснённых совестей»** — это вторая после
+«Donum procul ostentatum» (S152) пастырская формула того же документа.
+
+**5. Вопрос VII (лл. 121–122) — обусловленная ли воля Божия о приложении.** Вопрос: «*An voluntas Dei, meritum
+Christi applicandi, sit conditionata, si scil. conditiones N. Foederis homo adimpleat. Affirmant Remonstr. passim:
+videatur Thes. 2. exhib. Et ad Wal[achr.] p. 51*», где ремонстранты говорят: «*Hanc conditionem quoties negligit
+homo, non assequitur illud quod intendit Deus*». Антитеза: «*Etiamsi fidem & resipiscentiam a suis confoederatis
+requirat Deus, nequaquam tamen propterea voluntas ejus conditionata est, neque ab impletione illarum conditionum
+voluntas Dei meritum Christi applicandi dependet. Cum impletio harum conditionum **purum putum Dei donum** sit, qui
+dat velle & perficere*». Далее — **десять оснований**, из которых для серии важны: 1) «*Deo non fuisse nota opera
+ejus ab omni aevo, Act. 15:18*»; 2) «*Sic Deus esset impotens ac infirmus: vult enim, idque serio, ut loquuntur,
+aliquid fieri & impleri, quod tamen non fit*»; 4) «*Pugnat hoc cum ordine & natura causarum. Ubi enim hic prima
+causa, quae ordinat & disponit secundas? Imo hac ratione secundae causae ordinant primam*»; 5) «*Hac ratione homo
+semetipsum eligit, gratiam oblatam sufficientem acceptando: vel semetipsum reprobat, eandem repudiando*»; 7) «*Sic
+decretum Dei pendet a praescientia ejus, non praescientia a decreto*»; 8) «*Sic malitia humana vincitur Dei bonitas;
+& homo, Sathan, mundus, caro, sunt Deo potentiores*»; 10) «*Hac ratione voluntas Dei incerta relinquitur & pendet in
+dubio, donec conditio ab homine impleatur*». **Основание 5 — прямой ответ на вопрос серии из раунда 19** («не
+выбирает ли человек сам себя»): эмденцы считают именно это следствием обусловленной воли.
+
+**6. Вопрос VIII (л. 122) — обязаны ли отверженные веровать, что Христос умер за них.** Вопрос ремонстрантов
+(*Thes. 4. exhibita*). Ответ — один из самых трезвых пастырских текстов во всём досье: «*Cum electi & reprobi in hac
+vita permixti sint… cumque utrisque conjunctim verbum praedicetur, nemo hominum scire potest, quinam sint reprobi,
+ideoque **juxta caritatis judicium bene de omnibus speramus**. Monstrant itaque nobis Remonstrantes, si possunt,
+quinam reprobi sint, & tum dispiciendum esset, quid credere reprobi debeant*». На возражение «Бог повелевает всем
+веровать»: «*Mandanti itaque Deo parent electi divinitus ad parendum traditi. Reprobi autem vel omnino non
+obtemperant, vel credunt tantum ad tempus fide προσκαίρω, postea deficiunt*». **Запомнить для серии: суждение по
+суду любви о всех («bene de omnibus speramus») соседствует у той же делегации с отказом приписывать смерть
+Христову каждому в отдельности.** Это ещё один удар по формуле «только за избранных» как описании дортской
+проповеди.
+
+**7. Вопрос IX (лл. 122–124) — чтó такое у них «испрошение».** Эмденцы ставят вопрос прямо: «*videndum, quid ipsis
+sit impetrare remissionem peccatorum omnibus hominibus*». Ответ: они не разумеют того, что показывают, — «*Nihil
+minus. Negant enim ubique Christum pro peccatis plene & perfecte satisfecisse*». Далее следует **катена цитат**,
+которую серия теперь должна внести в таблицу §4.93 как дополнение:
+- **Арминий, *in articulis perpendendis*, с. 34**: «*An homo electus, in Christo poenam luerit & obedientiam
+  praestiterit reipsa, an vero aestimatione tantum divina*».
+- **Он же, там же, с. 33**: «*An actus obedientiae a Christo praestitae, qua justificamur, non fuerint ei impositi
+  secundum peculiare mandatum Patris, & peculiare pactum a Patre cum ipso initum*».
+- **Он же, *ad Hippol.* (лист по OCR неясен)**: «*quasi Deus Christum ejusque justitiam nobis imputet, id est, pro
+  nobis in justitiam, quod fieri nequit*»; «*Non nego obedientiam Christi nobis imputari, id est, **pro nobis &
+  nostro bono** praestitam censeri*»; «*Dico fidem nobis imputari ad justitiam propter Christum & justitiam ejus*».
+- **Епископий, *Thes. 4 de justificatione*, с. 63**: «*Justitia Christi proprie non est quod nobis imputatur, sed id
+  propter quod nobis imputatur in ipsum credentibus justitia*».
+- **Ремонстранты, *ad Articulos Delphenses*, антитеза 1**: «*Deum potuisse ex summa auctoritate & libera potestate
+  absque satisfactione, imo vel verbo vel nutu peccata remittere*».
+- **И — документальная находка**: «*Propterea iidem Thes. 2. de plena satisfactione, pro verbis, **loco nostro**,
+  substituerunt verba **pro nobis***». **Замена слов «вместо нас» словами «за нас» зафиксирована как редакторская
+  правка в тексте самих ремонстрантов.** Спор 44-го раунда о «pro = вместо нас» / «pro = ради нашего блага»
+  (S146, где социнианским названо второе) получает документальную основу: разница **не в чтении оппонентов, а в
+  собственной правке ремонстрантов**.
+- «*Videatur etiam antithesis eorum 3. ad 1. Artic. ubi latet Socinianismus*».
+
+**8. Собственное определение ремонстрантов — «отверзение двери благодати» (л. 123).** «*Quid itaque, quaeris, est
+ipsis haec impetratio remissionis peccatorum?*» — и ответ их же словами, с точным листом: «*in Collat. Hag. pag.
+172. latin. Brand, ubi sic ajunt: quando dicimus, Christum omnibus remissionem peccatorum impetrasse, sententia
+nostra est, Christum Dei justitiae satisfacientem hoc effecisse, ut Deus sine justitiae suae laesione, **peccatori
+januam iterum aperuerit gratiae suae, quamvis nemo ad illius gratiae communionem esset ingressurus nisi per fidem**.
+Hoc igitur discrimen inter impetrationem & ipsam peccatorum remissionem bene expensum &c.*». Эмденцы перелагают это
+двумя тезами их собственными словами: «*1. Inter impetrationem remissionis peccatorum, & ipsam peccatorum
+remissionem magnum est discrimen. 2. Impetratione remissionis peccatorum Christus hoc tantum effecit, ut Deus
+potuerit peccatoribus januam gratiae aperire, ut per observationem conditionum N. Foederis ingrediatur, **quicunque
+volet***» — и ставят диагноз: «*Hic videmus non latentem tantum, sed manifestum **Socinianismum una cum
+Pelagianismo***».
+
+**9. Что это даёт серии.** В статье Прокопенко различение «atonement = цена, redemption = результат»
+представлено как нейтральное уточнение терминов. Документ 1619 г. показывает, что та же самая структура
+(приобретение / приложение, «дверь благодати отверста, но входит кто хочет») была на Дорте **предметом спора**, а не
+общим местом, и что возражение против неё было **не количественным, а качественным**: речь шла о том, совершенна ли
+сама satisfaction. Антитеза 1: «*Christus… non tantum fictitiam illam & nullo Dei verbo munitam impetrationem
+remissionis peccatorum, hoc est, **januae gratiae apertionem, vel potentiam & possibilitatem aperiendi januam
+gratiae** nobis commeruit; sed reipsa plenissime pro omnium electorum peccatis satisfecit, λύτρον perfectissimum
+persolvit*». Антитеза 2 — **третья пара того же типа**: «*per efficacem gratiam, qua Deus electis suis **non tantum
+velle credere, neque tantum posse credere, sed utrumque largitur, ut nimirum actu ipso homo credat***».
+
+**10. Вопрос X (лл. 123–124) — приложение: кто, чем, чтó.** «*I. Quis applicet. 2. Quo medio. 3. Quid*». О первом:
+ремонстранты говорят, что прилагает Христос — «*vel dat verbum illudque praedicari curat, vel alia ratione & modo
+utitur ad revelandam suam voluntatem, **vel etiam Angelum mittit*** (Collat. Hag. pag. 192)», и «*Deinde hisce
+externis mediis addit sufficientem gratiam, **si saltem homo velit*** (adversus Walachr. pag. 52. lin. penult.)».
+Диагноз эмденцев — формула, которую стоит вынести в серию: «*Hic videmus… salutem hominis non pendere a Deo, sed ab
+ipso homine… **Ore itaque Christo hanc applicationem, reipsa autem ipsi homini tribuunt***». **«Устами приписывают
+приложение Христу, а на деле — самому человеку».** Антитеза: «*Solus Deus remissionem peccatorum & justitiam morte
+Christi partam efficaciter nobis applicat, ita ut justitiam Christi nobis, ac si nostra propria esset, gratis
+imputet, quam nos fide, quae **purum putum Dei donum** est, tanquam manu apprehendimus*».
+
+### 4.96. Q92 — Эмден, вопросы XI–XVII: чтó вменяется, гибнущие овцы, Каин и Иуда, Валей (раунд 49)
+
+**1. Вопрос XI (лл. 124–125) — чтó именно прилагается и вменяется.** Ответ: «*Est scilicet **ipse fidei actus, qui
+gratiose pro justitia habetur per gratiosam Dei dignationem**. Quapropter meritum Christi ipsam fidem ad justitiam
+imputat*». Свидетельства: Арминий, *ad Hippol.* — «*Ipsum fidei actum, τὸ credere dico, imputari in justitiam, idque
+**proprio sensu non metonymice***»; *ad Walachr.* с. 84 — «*Deus, inquiunt, qui in foedere legali exactam mandatorum
+suorum obedientiam exigebat, nunc in foedere Evangelico fidem exigit, & illam **gratiosa aestimatione** propter
+meritum & omnibus numeris exquisitissimam Christi obedientiam, **habet loco legalis obedientiae***» (там же сс. 85
+стр. 2 и след., 86 circa medium; «*Ibi communis nostrorum Theologorum sententia est, remissionem peccatorum esse
+fidei consequens & effectum*»); ремонстранты в *Collat. Delphensi*, арт. 2, антитеза 2 — «*Sentimus… Deum in nostri
+justificatione ita ad fidem respicere, ut eam **aestimet pro obedientia**, secundum postulatum & legem Evangelicam
+praestita… Statuimus Deum fidem nostram nobis imputare pro obedientia, eamque, & nos in illa acceptos habere*».
+Итог эмденцев: «*Sic videmus, quod solius Christi merito & satisfactioni tribuendum erat, illud a Remonstrantibus
+**ipsi fidei actui** secundum gratiosam Dei aestimationem tribui. An non hoc est totum salutis nostrae fundamentum
+subvertere?*». Далее — Епископий, *Thes. 3 de praeceptis N. Foederis*: «*Fidem esse assensum fiducialem Evangelio
+adhibitum, quo argumentis, sive intrinsecis, sive ipsi Evangelio insitis persuasus, statuo vera esse omnia ea quae
+Evangelio continentur, inque Deo per Christum confido & acquiesco*»; *Thes. 5*: «*Fiduciam specialis misericordiae,
+qua credo remissa mihi esse peccata gratis, **non esse essentiale fidei constituens, sed tantum consequens***»;
+*Thes. 6*: «*Objectum fidei esse totam veritatem Evangelicam*». Эмденцы отказываются углубляться: «*Si nunc
+ulterius quispiam in mysteriorum ipsorum adyta penetrare gestiat… **in labyrinthum inextricabilem se conjiciet***».
+
+**2. Почему это важно для серии (прямой выход к теме «во времени или вне времени»).** Здесь виден механизм,
+из-за которого спор о «приобрёл / приложил» вообще возможен: если вменяется **сам акт веры**, а не правда Христова,
+то «приложение» есть акт человека, и смерть Христова остаётся **за scenes** — условием возможности, а не
+содержанием оправдания. Отсюда и различение «приобрёл для всех / приложил верующим» перестаёт быть
+терминологическим и становится сотериологическим. **В серии это следует формулировать так: различение, которое
+Прокопенко называет уточнением слов, у его оппонентов 1619 г. описывало разное содержание вменения.**
+
+**3. Вопрос XII (л. 125) — может ли неверующий сказать «Христос умер за меня»?** «*An infideles possint dicere,
+Christum pro se mortuum esse vere? Item, quis est qui nos condemnet? Affirmant Remonstr. Coll. Hag. pag. 187, &
+repetunt p. [188], ubi addunt, **Fideles hoc posse dicere ad consolationem suam; infideles ad historicam
+narrationem, qua ad fidem ducantur***». Антитеза — самая пастырская формула раунда: «*Nulli, nisi ii in quibus
+**nulla est condemnatio**, quique non secundum carnem, sed secundum Spiritum ambulant, & qui acceperunt Spiritum non
+servitutis, sed adoptionis, possunt dicere, Christus est pro me mortuus, quis itaque est qui me condemnet? Rom.
+8*». **Следствие для серии:** ремонстранты сами различали два модуса одной фразы — «к утешению» у верующих и «как
+историческое повествование» у неверующих. Стало быть, когда реформатская сторона настаивает, что «Христос умер за
+меня» есть слово веры, а не вывод из всеобщего предложения, она **не произвольно сужает** текст: она принимает то
+самое различение модусов, которое предложили оппоненты, и проводит границу внутри него по-другому. Это надо
+внести в `06_` как ответ на упрёк «вы лишаете уверенности».
+
+**4. Вопросы XIII — XIV (л. 125) — гибнущие овцы.** XIII: «*An electi nusquam nomine ovium in Scriptura
+designentur? Sic dicunt Remonstr. Coll. Hag. pag. 183*». XIV: «*An Christus oves habeat, pro quibus mortuus est,
+quae tamen pereunt. Affirmant Remonstr. Coll. Hag. pag. 185, 186*». Антитеза: «*Electi in S. Scriptura multoties
+nomine ovium designantur, **pro quibus solis Christus vitam posuit, quasque nemo e manibus ejus potest eripere**,
+ideoque in aeternum non peribunt. Ioh. 10*». **Это прямой документальный ответ на вопрос серии из раунда 19**
+(«Христос заклан от создания мира, за определённых овец?»): у Эмдена имя «овцы» относится к избранным **не по
+признаку веры, а по признаку руки Христовой** — «никто не может их похитить». Порядок аргумента: не «овцы потому,
+что уверовали», а «не погибнут потому, что Он положил за них душу».
+
+**5. Вопрос XV (л. 125) — средство приложения, и Иоанн Арнольди.** «*An solum Dei verbum ejusque praedicatio sit
+ordinarium medium… Concedunt; **sed quod una manu dant, altera rursus eripiunt***»: «*An hoc fieri debeat hac vel
+illa ratione… putamus hoc esse nimis procul ingredi in judicia Dei, relinquentes totius dispensationem justitiae
+divinae. Collat. Hag. pag. 189*»; и «*ajunt, Deum, cum placet, alio modo posse uti ad revelandam suam voluntatem,
+**imo & Angelum mittere***». Далее — **новый ремонстрантский источник в досье**: «*Hinc **Ioh. Arnold[i]** cap. 3.
+pag. 100. & seqq. & pag. [370] fatetur, **juxta mentem Arminii, omnibus hominibus media, ad salutem sufficienter
+necessaria, adhiberi***». Антитеза — из 1 Кор. 1:21 и Рим. 10: «*Postquam in sapientia Dei mundus non cognovit Deum
+per sapientiam suam, placuit Deo per stultam praedicationem servare credentes… **Alius modus salvandi homines, &
+medium aliud, per quod beneficiorum Christi participes fiant gentes, in Scriptura non traditur***». **Запомнить:
+вопрос о «не слышавших Евангелия» поднимается в 1619 г. обеими сторонами, и ответ реформатской стороны — не
+«невозможно спастись», а «нам не указан иной путь».** В серии запрещено пересказывать это как утверждение о
+непременной погибели всех не слышавших.
+
+**6. Вопрос XVI (л. 125) — жертва освящает ли нас, поскольку принесена, или поскольку приложена?** «*An victima
+Christi non sanctificet nos, quatenus ille simpliciter oblatus est, sed quatenus applicatur. Sic loquuntur Remonstr.
+in Collat. Hag. pag. 179*». Антитеза: «*Victima expiatrix sanctificat vere omnes, pro quibus oblata est. Heb.
+9:13-14… Ioh. 17. Ego meipsum sanctifico pro illis. Tit. 2. Dedit seipsum, ut sanctificaret sibi populum selectum.
+Unde & liquido colligitur, **non fuisse Christi intentionem dare se in precium pro omnibus & singulis
+aequaliter**. Deinde, pro quibus semetipsum Christus dedit, quod eosdem etiam sanctificet, non merendo tantum, sed
+etiam efficaciter salutem operando & applicando. **Alioqui illorum perfectus servator non esset***».
+**Две вещи для серии:** (а) новая формула — **«pro omnibus & singulis aequaliter»**: спор идёт не только о круге
+лиц, но и **о мере », в какой Христос предал Себя; (б) четвёртый регистр пары «по заслуге — по действенности»
+(§4.94, совершенство Спасителя) теперь имеет вторую опору внутри того же документа.
+
+**7. Вопрос XVII (л. 125) — Каин и Иуда, Авель и Пётр; и названное лицо.** «*An Christus pro Caino & Juda, qua
+talibus; & pro Abelo & Petro, qua fidelibus mortem sustinuerit? **Negant utrumque** Remonstr. ad Walachr. p. 51.
+Sed indiscriminatim pro his & illis **in communi lapsus & peccati sorte consideratis***». Это та самая формула,
+которая в раунде 47 вошла в досье как эмденская цитата ремонстрантов (S152, Q1) и которая подтверждает
+гелдерландскую цитату (S145). Теперь она имеет **точный лист** (*ad Walachr.*, с. 51) — второе corroboration. Далее
+— указание на противоречие у самих ремонстрантов и **названное имя**: «*Sed an sibi ipsis hic contradicant, ibid.
+pag. 52. lin. 1, 2, 3. Et Collat. Hag. pag. 207. Et **clarissimus vir D. Antonius Walsus** [= Walaeus] illorum
+errorem, vel potius malitiam hic indicavit & refutavit, **merito in eo acquiescimus***». **Антоний Валей**
+(Валéус) — профессор, участник Синода; для серии это первый в этом документе случай, когда эмденская делегация
+отсылает к **поименованному современному автору**, а не к Писанию или отцам. См. п. 191.
+
+### 4.97. Q93 — Эмден, вопросы XVIII–XXI: любовь Христова, два ходатайства, «страсть — избрание», «притворно
+действует», и конец суждения (раунд 49)
+
+**1. Вопрос XVIII (лл. 125–126) — любит ли Христос всех, за кого умер, высшею любовью?** «*An Christus summe
+diligat eos, pro quibus mortuus est. **Negant** Remonstrant. Coll. Hag. pag. 193 & 207, ratione addita, **quia
+partam salutem non applicet omnibus, sed tantum fidelibus, quamvis omnibus parta sit***». Антитеза: «*Majorem
+charitatem nullus habet, quam istam, ut quispiam animam suam deponat pro amicis suis. Ioh. 15:13. Et Rom. 5:5, 6,
+8. Commendat suam charitatem erga nos Deus &c. Dicere itaque Christum non dilexisse eos summe pro quibus mortuus
+est, est **palam S. Scripturae contradicere & turpiter mentiri***».
+
+**2. Почему это — один из важнейших текстов раунда.** Здесь ремонстрантская сторона **своим собственным ответом**
+обнаруживает цену схемы «приобрёл для всех — приложил верующим»: из неё следует, что Христос **не любит высшею
+любовью всех, за кого умер**, — и это не приписано им оппонентом, а стоит в их тексте с листами (193, 207). Стало
+быть, спор «о широте искупления» в 1619 г. был на самом деле спором **о любви Христовой к тем, за кого Он умер**,
+и именно в этом пункте различение Прокопенко («atonement = цена, redemption = результат») оказывается не
+терминологическим: при двухрегистровой схеме любовь Христова к умирающему за него грешнику **не определена**.
+**Для серии это следует внести в `synthesis/03`**: вопрос «какое отношение было к ним, когда они были ещё
+неверующими, — одинаковое с другими или есть разница?» (п. 147/раунд 19) получает дортский ответ — разница не в
+снятии гнева по времени, а в **том, чтó именно Христос приобрёл и любит ли Он тех, за кого умер, высшею
+любовью**.
+
+**3. Вопрос XIX (л. 126) — два ходатайства.** «*An intercessio Christi alia sit universalis pro toto mundo, alia
+particularis pro fidelibus tantum. Affirm. Remonstr. Coll. Hag. 198, 199, dicuntque, **pro infidelibus, quoad
+impetrationem, pro fidelibus, quoad applicationem***». Антитеза: «*Non rogo pro mundo, sed pro iis quos dedisti
+mihi, quia tui sunt. Ioh. 17:9. Et ad Rom. 8 docemur, Christum **tantum intercedere, pro quibus mortuus est***».
+**Связь с досье:** аргумент «ходатайство — умилостивление» (1 Ин. 2:1–2) уже значился у Зеландии (S123, §4.62) и у
+Северной Голландии (S142, §4.75); теперь он найден у **третьей** делегации и притом с прямой ремонстрантской
+формулою «pro infidelibus quoad impetrationem, pro fidelibus quoad applicationem» — то есть **схема статьи
+Прокопенко в латинском оригинале 1618 г.**, с листами. Это третье независимое свидетельство той же структуры (ср.
+S123, S135).
+
+**4. Вопрос XX (л. 126) — страсть приобретает, избрание прилагает.** «*An Passio Christi tendat tantum ad salutem
+impetrandam, **electio autem ad applicandam & communicandam**? Sic loquuntur, Coll. Hag. pag. 201*». Антитеза:
+«*Christus passione sua salutem non tantum illorum opinione impetravit, sed etiam reipsa & revera eam peperit, &
+**Spiritum simul regenerationis meruit**, qui illam declararet & omnibus quibus salus per passionem parta est,
+applicaret. Quomodo autem electio salutem applicet & communicet, illud nondum capimus; **Quis enim profunditates
+istorum hominum, nisi sacris illorum initiatus, nosse poterit?***».
+**Это — важнейшая находка раунда для темы статьи.** Разделение труда «страсть — приобретение, избрание —
+приложение» это **ровно та структура, которую Прокопенко подаёт как уточнение терминов** («atonement = цена,
+redemption = результат»), только в ней вместо «применения» стоит **избрание**. И дортский ответ 1619 г. — не
+«неверно разделять слова», а «непонятно, как избрание прилагает»: спасение рождено Самою страстью, и **Дух
+возрождения заслужен ею же**, а не оставлен избранию. Ср. S140 (каталог плодов: без единого пункта вида
+«возможность») и S142 («приложение есть конечная причина, ради которой Христос приобрёл право применения»).
+
+**5. Вопрос XXI (лл. 126–127) — может ли Бог не достигать того, что намеревается.** Ремонстранты (*adversus
+Walachr.*, с. 51): «*Num quem finem Deus in opere aliquo intendit, possit non assequi. Respondent, **quaedam
+intendi, quae per potentiam irresistibilem exequi & assequi vult Deus; quaedam vero intendi sub conditione a
+creatura rationali libere praestanda**. Hanc quoties praestare negligit homo, non assequitur id quod intendit
+Deus*». Эмденский ответ — трилемма ( Бог / человек / частью Бог, частью человек → пелагиане или полупелагиане) и
+главная формула: «*Deus non dans homini, **ut possit & velit credere, utque reipsa credat, simulate agit** cum
+homine, quem intendit salvum facere sub conditione, si credat*». **«Бог, не давая человеку возможности и хотения
+веровать, действует притворно с тем человеком, которого намеревается спасти под условием, если уверует».** И вывод:
+«*Ergo intentio haec Dei pendet ab impletione conditionis hominis, & **nihil potuit ab aeterno certi statuere
+Deus, antequam homo conditionem impleat**; quod absurdum est de Deo dicere*».
+**Связь с §4.94:** это третья формула того же семейства, что «possibilitas & velleitas» (вопрос VI) и «velle &
+posse credere» (вопрос IX, антитеза 2). Все три построены на одной паре — **мочь и хотеть**, — и все три употреблены
+в одном направлении. См. §4.98 п. 3.
+
+**6. Конец суждения (л. 127) — названные оппоненты ремонстрантов.** «*Remonstrantium contraria argumenta quod
+attinet, cum partim in Coll. Hag. scripto, partim a **Clarissimis Doctoribus D. Balcanquallo, & D. Crucigero viva
+voce refutati** sint, nunc non attingimus; & hic considerationes nostras circa secundum Articulum **finimus***».
+**Два имени: Уолтер Балканкуал (Balcanqual, британский делегат) и Георг Круцигер (Cruciger, гессенский).** Важно
+дважды: (а) зафиксирована **устная** полемика на Синоде — ремонстрантов опровергали «живым голосом», а не только
+письменно (это объясняет, почему часть аргументации не попала в письменные суждения); (б) эмденская делегация
+считает возможным **не повторять** аргумент, уже прозвучавший устно, — то есть суждения писались **с оглядкой на
+ход заседаний**, а не в изоляции. Для метода серии: отсутствие аргумента в суждении **не означает** его отсутствия
+на Синоде.
+
+**7. Атрибуция и границы документа (уточнение к §4.91–4.92).** Эмденское «Breve Examen» занимает **лл. 118–127** и
+содержит **XXI вопрос**; за ним, без пропуска, идёт «*BRITANNORUM THEOLOGORUM Sententia De III. & IV. Articulis*»
+(л. 127 и след.). Стало быть, это **последнее из внешних суждений по II артикулу**, и внешняя серия по II артикулу
+прочитана полностью: английское (78–83), пфальцское (82–88), гессенское (~88–94), гельветическое (94–95),
+веттерауское (96–104), женевское (101–104), бременское Мартиния (104–109), второе бременское (109–116), Кроций
+(117–118), эмденское (118–127). **Пункт 178 закрыт.**
+
+### 4.98. Q94 — Что изменила находка: четыре поправки к досье (раунд 49)
+
+**1. Поправка к раунду 46: формула «possibilitas & velleitas» — общая, а не бременская.** В раунде 46 она
+зафиксирована в каталоге Кроция (S151, № 11); теперь она читается у Эмдена (S153, вопрос VI, антитеза 4) в том же
+смысле. **Запрещено** с этого раунда писать «бременская формула возможности и хотения» или приписывать её Кроцию.
+Правильная формулировка: **«формула возможности и хотения, употреблённая двумя делегациями (Бремен/Кроций и
+Эмден) против одной ремонстрантской тезы».** Оговорка остаётся прежнею: формула осуждается **с частицей
+*tantum*** — «не доставил возможность и хотение… но Сам есть первичный дар Нового Завета».
+
+**2. Поправка к таблице §4.93: новые ремонстрантские ссылки.** Добавляются (все — Эмден, S153):
+| Источник | Листы |
+|---|---|
+| *Collatio Hagensis* (латинское издание Брандия) | 172 (**собственное определение impetratio**, см. §4.95 п. 8), 179, 183, 185, 186, 187, 188, 189, 191, 192, 193, 198, 199, 201, 207 |
+| *Responsio ad Walachros* | 51 (Каин/Иуда; finis intentus), 52 (lin. penult.; lin. 1–3 — противоречие), 84, 85 (lin. 2 sqq.), 86 (circa medium; «Fides justificans non est, qua quis credit sibi remissa esse peccata») |
+| Арминий, *in articulis perpendendis* | **33, 34** (сверх известной с. 20) |
+| Арминий, *ad Hippolytum* | лист по OCR неясен; цитаты о вменении |
+| Епископий, *de justificatione* | Thes. 4, с. 63; Thes. 5–6 (без листа) |
+| Епископий, *de praeceptis N. Foederis* | Thes. 3, 5, 6 (без листа) |
+| Ремонстранты, *ad Articulos Delphenses* | антитеза 1; арт. 2, антитеза 2 (без листа) |
+| **Иоанн Арнольди** (*Ioh. Arnoldi*) | cap. 3, pp. 100 sqq., [370] — **новое имя в досье** |
+| Ремонстранты, *Thes. 2 de plena satisfactione* | замена «loco nostro» → «pro nobis» |
+
+**Выводы таблицы §4.93 уточняются, но не отменяются.** (а) Прежний вывод «общего флорилегия нет» **усиливается**:
+число ссылок, приведённых только одною делегациею, выросло; новые листы *Collatio* (179, 183, 185–193, 198–201,
+207) не встречаются больше ни у кого. (б) **Гревинховен остаётся слабым местом**: новые чанки не дали ни одного
+второго свидетельства с его листами (п. 186 не закрыт). (в) **Новый тип corroboration**: формула «pro his & illis
+hominibus… in communi lapsus & peccati sorte consideratis» теперь имеет **лист** (*ad Walachr.* 51) сверх
+гелдерландской цитаты без листа (S145) — то есть corroboration того же типа, что у формулы Geldri 47.
+(г) **Замена «loco nostro» → «pro nobis»** — единственная в досье ссылка на **редакторскую правку** в тексте
+ремонстрантов, а не на их утверждение. Она подтверждает южноголландское чтение (S146) и **снимает** упрёк в том,
+будто «pro = ради нашего блага» вычитано оппонентами.
+
+**3. Третья пара того же семейства: «мочь и хотеть».** В досье теперь три формулы, построенные на одной паре:
+| Формула | Где | Смысл |
+|---|---|---|
+| *possibilitas & velleitas* foederis | Кроций (S151, № 11); Эмден (S153, вопр. VI) | смерть Христова доставила Богу «возможность и хотение» завета |
+| *non tantum velle credere, neque tantum posse credere* | Эмден (S153, вопр. IX, антитеза 2) | благодать даёт не только хотеть и не только мочь, но и самый акт |
+| *ut possit & velit credere, utque reipsa credat* — иначе **simulate agit** | Эмден (S153, вопр. XXI) | Бог не может намереваться спасти под условием и не дать условия |
+
+**Правило для серии:** три формулы цитировать раздельно, с указанием, какая из них разумеется. Одно и то же
+возражение против одной из трёх не переносится автоматически на две другие.
+
+**4. Новое в богословских регистрах.** К пяти регистрам пары «merito & efficacia» (§4.94) добавляется наблюдение,
+не меняющее список, но уточняющее его границы: в вопросе XVI спор идёт уже не о круге лиц и не о связи благ, а **о
+мере**, в какой Христос предал Себя — «pro omnibus & singulis **aequaliter**». Стало быть, возможен **шестой**
+регистр — *мера*, а не *круг*; он требует отдельной сводки по корпусу и в §4.94 не вносится до проверки (п. 192).
+
+**5. Итог раунда для главного тезиса серии.** Статья Прокопенко подаёт различение «приобрёл / приложил» как
+нейтральное уточнение двух английских слов. Документы 1618–1619 гг. показывают, что различение это:
+(а) **принадлежало ремонстрантам и цитировалось с листами** (§4.95 п. 8: «januam gratiae aperire… quicunque
+volet»); (б) имело **определённое содержание** — вменение самого акта веры, а не правды Христовой (§4.96 п. 1);
+(в) имело **определённую цену** — «не любит высшею любовью всех, за кого умер» (§4.97 п. 1);
+(г) в своей крайней форме распределяло работу между **страстью и избранием** (§4.97 п. 4);
+(д) и было отвергнуто **не за слова**, а за то, что при нём Satisfactio перестаёт быть полною (§4.95 п. 9).
+**Отсюда формулировка для серии: на Дорте спорили не о том, как называть два этапа, а о том, совершенна ли Satisfactio
+и любит ли Христос тех, за кого умер.**
+
+**6. Оговорки.** Латинский текст читается по OCR, качество местами низкое; листы *Collatio* 188, 191, 370 (Арнольди)
+и лист *ad Hippolytum* восстановлены по контексту и помечены как uncertain. Печатные страницы приблизительны
+(порядок листов в томе нарушен). Сверка с изображением — п. 193.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -4628,6 +4978,9 @@ lapsis & peccato obnoxiis» приведена Эмденом с листом (�
 | 1618–1619 *(раунд 47)* | **Три бременских суждения по II артикулу**: Мартиний (лл. 104–109) — «не противоречие… умер за всех с намерением спасти и не так умер»; второе (лл. 109–116, Иссельбург?) — «individuo nexu», «aeque late patent»; **Людовик Кроций** (лл. 117–118) — «acquirere, impetrare, ac promereri… ut, si resipiscant… possint» и в каталоге «**possibilitas & velleitas**». Эмден — с л. 118 | S149–S152 (A2) |
 | 1618–1619 *(раунд 47)* | **Эмденское «Breve Examen»**: ремонстрантская позиция приводится **с листами** («Coll. Hag.» 139/141/143/172/175/181/201 — две пагинации, Bert. и Brandij; «Ad Walachr.»; «Remonstr. Geldri» 17/47/48/59/60; Арминий, in articul. perpend. 20); антитеза — «**Donum procul ostentatum & non reipsa communicatum, neminem beare potest**»; «**Blasphema… vox est, dicere, Christum esse tantum merito salvatorem**»; пять свойств Божиих | S152 (A2) |
 | 2026-10-19 *(раунд 48, рабочая заметка)* | **Составлена сводная таблица ремонстрантских ссылок** по всем прочитанным суждениям: *Collatio Hagensis* (три пагинации), *Responsio ad Walachros*, тезы гелдерландских ремонстрантов, Гревинховен, Епископий, Арминий. Вывод: общего флорилегия нет; пересечения минимальны | S114, S123, S142–S146, S149, S151, S152 |
+| 1618–1619 *(раунд 49)* | **Эмденское «Breve Examen», вопросы VI–X** (S153, лл. 121–124): второе свидетельство формулы «**possibilitas & velleitas**»; «**Sincere dicimus… illum hominem, qui Christi meritum & efficaciam… separat, a nobis pro haeretico haberi**»; десять оснований против обусловленной воли; «**juxta caritatis judicium bene de omnibus speramus**»; собственное определение ремонстрантов: impetratio = «**januam gratiae aperire… quicunque volet**» (*Coll. Hag.* 172, лат. Брандия); «**Ore itaque Christo hanc applicationem, reipsa autem ipsi homini tribuunt**» |
+| 1618–1619 *(раунд 49)* | **Эмденское «Breve Examen», вопросы XI–XVII** (S153, лл. 124–126): вменяется «**ipse fidei actus**»; ремонстранты заменили «**loco nostro**» на «**pro nobis**»; «Fideles… ad consolationem suam; infideles ad historicam narrationem»; гибнущие овцы; Иоанн Арнольди, сс. 100 и след.; «**pro omnibus & singulis aequaliter**»; Каин и Иуда с листом (*ad Walachr.* 51) и ссылкою на **Антония Валея** |
+| 1618–1619 *(раунд 49)* | **Эмденское «Breve Examen», вопросы XVIII–XXI и конец суждения** (S153, лл. 125–127): «**Christus non summe diligit eos pro quibus mortuus est**» — с листами *Coll. Hag.* 193, 207; два ходатайства — «pro infidelibus, quoad impetrationem, pro fidelibus, quoad applicationem» (198, 199); «**Passio Christi tendat tantum ad salutem impetrandam, electio autem ad applicandam**» (*Coll. Hag.* 201); «**Deus… simulate agit**»; конец: «**a Clarissimis Doctoribus D. Balcanquallo, & D. Crucigero viva voce refutati**… considerationes nostras circa secundum Articulum **finimus**» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -4913,12 +5266,53 @@ lapsis & peccato obnoxiis» приведена Эмденом с листом (�
 
 - **Раунд 48: доступ к источнику закрыт.** `archive.org` (`/stream/actasynodination00syno/…_djvu.txt`, тот же id) перестал отдавать содержимое: повторные запросы к заведомо работавшим чанкам (246, 247, 248) и к `/download/…_djvu.txt` возвращают «Failed to fetch page»; три попытки с паузами 45 и 90 секунд. **Чтение *Acta* приостановлено; пункт 178 (дочитать эмденское «Breve Examen») остаётся открытым** и будет первым при восстановлении доступа. Раунд выполнен внутреннею работою (п. 179).
 - Раунд 48: «снято молча» — **0**; добавлены §§4.93–4.94, строка в хронологии, пп. 184–187. Новых источников нет (S153 и далее не открыты).
+- **Раунд 49: доступ восстановлен; эмденское суждение дочитано до конца.** Работает база
+  `/download/actasynodination00syno/actasynodination00syno_djvu.txt` (453 чанка; в `/stream/` — 455, отсюда сдвиг
+  нумерации: `/download/` чанк 246 ≈ `/stream/` чанк 247). Прочитаны чанки 246–249: **лл. 121–127, вопросы VI–XXI**
+  вместе с концовкою суждения — **новый локатор S153** (PD; **A2**; OCR; атрибуция та же, что у S152: заголовок
+  «Breve Examen… Embdensium Ministrorum» на л. 118, внутри до л. 127 нет ни одного нового заголовка делегации, а
+  на л. 127 стоит маркер конца «hic considerationes nostras circa secundum Articulum finimus»). **Пункт 178
+  закрыт**; S152 дополнен пометкою «прочитано лл. 118–127, XXI вопрос». Главные находки: второе свидетельство
+  формулы «possibilitas & velleitas» (теперь она не бременская, а **общая** — см. §4.98 п. 1); собственное
+  определение ремонстрантов «impetratio = januam gratiae aperire… quicunque volet» с листом *Coll. Hag.* 172;
+  замена «loco nostro» → «pro nobis» в их собственном тексте; «Christus non summe diligit eos pro quibus mortuus
+  est»; «Passio — impetrandam, electio — applicandam»; «Deus… simulate agit»; и имена **Балканкуала** и
+  **Круцигера** как устных оппонентов ремонстрантов. `EVIDENCE_HOLD`, `PUBLICATION_HOLD`, `RIGHTS_HOLD`,
+  `ATTRIBUTION_HOLD` (Оверэйссел, л. 134; имя второго бременского суждения), C-16 — **без изменений**.
+- Раунд 49: «снято молча» — **0**; добавлены §§4.95–4.98, **S153**, три строки хронологии, пп. 188–193.
+
 ## 8. Следующее проверяемое действие
+**Добавлено в раунде 49:**
+
+188. *(раунд 49)* **Вынести в `synthesis/03` пастырское ядро раунда**: вопрос XII эмденского суждения —
+«Fideles… ad consolationem suam; infideles ad historicam narrationem» и антитеза «Nulli, nisi ii in quibus nulla
+est condemnatio… possunt dicere, Christus est pro me mortuus». Это самый короткий в корпусе ответ на упрёк «вы
+лишаете верующих уверенности»: различение модусов предложено самими оппонентами.
+189. *(раунд 49)* **Поправить все места досье, где формула «possibilitas & velleitas» названа бременскою** (§4.90,
+`22_` 42ck, `02_CONFLICT_LEDGER` раунд 47). Она употреблена двумя делегациями. Способ: поиск «velleit» по корпусу.
+190. *(раунд 49)* **Три пары «мочь и хотеть»** (§4.98 п. 3) свести в одну таблицу и проверить, не встречается ли
+четвёртая в непрочитанных суждениях (Оверэйссел, л. 134; суждения по III–IV артикулам).
+191. *(раунд 49)* **Антоний Валей (Walaeus)** назван эмденскою делегациею как автор, уже опровергший ремонстрантов
+по вопросу о Каине и Иуде. Найти это место у Валея и проверить, не совпадает ли формула с *Coll. Hag.* 207.
+Способ: поиск в `22_` и, при доступе, полнотекстовый поиск по `actasynodination00syno` и по корпусу Валея.
+192. *(раунд 49)* **Проверить регистр «мера»** («pro omnibus & singulis aequaliter», §4.98 п. 4): встречается ли
+«aequaliter» в других суждениях по II артикулу. Если да — дополнить §4.94 шестым регистром; если нет — оставить
+как единичное наблюдение Эмдена.
+193. *(раунд 49)* **Сверить с изображением** листы *Collatio Hagensis* 172, 193, 201 и *Responsio ad Walachros* 51,
+52, 84–86: это те листы, на которых держатся четыре главные находки раунда (определение impetratio; любовь
+Христова; страсть/избрание; Каин и Иуда). До сверки цитировать с пометкою «по OCR, лист не сверен с
+изображением».
+
 **Добавлено в раунде 48:**
 
-184. *(раунд 48; **первоочерёдное при восстановлении доступа**)* **Дочитать эмденское «Breve Examen»** (S152
+184. — **ЗАКРЫТО (раунд 49).** *(раунд 48; первоочерёдное при восстановлении доступа)* **Дочитать эмденское «Breve Examen»** (S152
 обрывается на пятом свойстве Божием, л. 120): заключение, подписи и — если есть — каталог заблуждений. Чанки 247
 и далее.
+  **Прочитано целиком: лл. 118–127, XXI вопрос, до маркера «hic considerationes nostras circa**
+  **secundum Articulum finimus»; каталога заблуждений и отдельной подписи в конце нет**
+  **(суждение переходит прямо в «BRITANNORUM THEOLOGORUM Sententia De III. & IV. Articulis»).**
+  См. §§4.95–4.97 и S153.
+
 185. *(раунд 48)* **Проверить пункт 180 для остальных делегаций**: не подавала ли ещё какая делегация несколько
 суждений по II артикулу (Гелдерланд, Южная Голландия, Гронинген, Оверэйссел). Способ: искать повторные заголовки и
 подписи внутри одного раздела. После раунда 47 это уже не гипотеза, а установленный тип ситуации.
