@@ -265,6 +265,32 @@
     - 42cn. *Дополнение 2026-10-19 (раунд 49; `34_` §§4.95–4.98; **S153**; `06_` §18; `03_` §18; `16_` §13;
     - 42co. *Дополнение 2026-10-19 (раунд 49, продолжение; `34_` §4.99; **S154**; `synthesis/03_` §19):*
     - 42cp. *Дополнение 2026-10-19 (раунд 50; `34_` §§4.100–4.102; **S154** (британское, дочитано) и **S155**
+    - 42cq. *Дополнение 2026-10-19 (раунд 50, продолжение; `34_` §4.103, **S156**; `03_` §20):* **открыт
+      первоисточник амиральдианства.** **Моисей Амиро, *Brief traité de la predestination: avec l'Eschantillon de
+      la doctrine de Calvin sur le mesme suiet; et La response a M. de L. M. sur la matière de la Grace et autres
+      questions de theologie*** (Сомюр: Isaac Desbordes, **1658**; IA `brieftraitdela00amyr`; 398 с.; коллекция
+      Принстонской семинарии; IA: NOT_IN_COPYRIGHT) — PD; **A2** (OCR); французский; читается по
+      `/stream/brieftraitdela00amyr/brieftraitdela00amyr_djvu.txt` (74 чанка). Прочитаны **чанки 15 и 18**,
+      сс. 76–95 (главы VII–IX). **`EDITION_HOLD`:** издание 1658 г., **не** первое 1634-е (Google Books
+      `N7U8AAAAcAAJ` — только «Preview»); пагинация **иная**, поэтому распространённая ссылка «с. 77 изд. 1634»
+      к этому тексту **неприменима** (п. 202). **Содержание:** «*la grâce est **universelle** & présentée à tous
+      les hommes*»; «*cette charité **ne passe pas cette mesure**, de donner le salut aux hommes, pourveu qu'ils
+      ne le refusent pas*»; «*Dieu veut le salut de tous les hommes… **pourveu qu'ils croyent. S'ils ne croyent
+      point, il ne le veut pas***»; «*sans l'accomplissement de la condition, elle est **entièrement
+      inefficacieuse***»; «*l'**efficace particulière** de la grâce **universelle***»; гл. VIII — «*un estrange
+      aveuglement*» (опыт апостолов, гонения, философы и ораторы, отвержение Мессии иудеями); гл. IX — «*il ne
+      fait pas cette grâce icy universelle comme l'autre, mais la restreint à quelques-vns… la grâce précédente
+      regarde **généralement tout le genre humain**; celle cy **n'en regarde qu'une partie seulement***»; «*s'ils
+      ne reçoivent pas ce Rédempteur, ils doivent imputer cela à leur **propre dureté & obstination***»; «*Dieu…
+      **n'est pas cause de l'incrédulité & de la damnation** des autres… l'incrédulité des autres **ne vient pas
+      de leur reprobation**… mais de leur propre aveuglement & perversité*»; основание различия — «*la **libre
+      volonté de Dieu***», ибо «*ils estoient **également** miserables… **également** coupables*».
+      **Главный вывод — поправка к раунду 50, части 2:** схема Амиро **не тождественна** ни британской
+      отвергнутой тезе о «равной благодати», ни тезе о «равновесии» — у него есть второе частное избрание к
+      вере, и различие возводится к воле Божией, а не к человеку. **Новый запрет:** не выводить оценку Сомюра из
+      дортских текстов 1619 г.; оценка — по текстам 1634–1675 гг. **Регистр меры получает третьего свидетеля**
+      («cette charité ne passe pas cette mesure»). **Границы:** 2 чанка из 74; о целом трактате выводов нет
+      (пп. 202–203).
       (пфальцское о III–IV, начато); `03_` §19; `16_` §14; `06_` §19; `01_` §10; `synthesis/03_` §20):*
       **британское суждение дочитано, лл. 132–136.** **(1) Свобода:** «*Divina haec actio non laedit voluntatis
       libertatem, sed **roborat***»; «*actualiter resistendi potentia **proxima** pro illo tempore
