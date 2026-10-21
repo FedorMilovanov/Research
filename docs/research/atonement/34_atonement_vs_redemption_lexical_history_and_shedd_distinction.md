@@ -313,7 +313,8 @@
 | S147 *(раунд 45)* | *Acta* 1620 (тот же id `actasynodination00syno`; **чанк 238**, печ. **сс. 99–101** — внешняя серия суждений, «Judicia theologorum exterorum») — **окончание гессен-веттерауского суждения по II артикулу**: три смысла «всех»; «**genera singulorum, non singulos generum, esse adaequatum objectum efficaciae mortis Christi**»; Августин, *De correptione et gratia* cap. 14 («Omnes homines intelligit distributive, omne videlicet hominum genus… seu omnes praedestinatos»); катена (Ориген, Проспер *ad Capit. Gallor.* 9, Хаймон, Ансельм, Фома — «**Meritum Christi, quantum ad sufficientiam, aequaliter se habet ad omnes: non autem, quantum ad efficiaciam**», Лира); «sufficientia… quantum ad reprobos, **geminum habet finem, unum per se, alterum per accidens**»; «**Hic cogitur obmutescere humana ratio**… Etiam, Pater, quia sic placuit tibi» (Мф. 11:26; Августин *Enchiridion* 103); **различение того, чтó обязан веровать каждый**: «**electi soli tenentur credere simpliciter, Christum pro se esse mortuum**… **Reprobi autem tenentur hoc credere, meritum Christi tantae dignitatis esse, ut ipsis quoque prodesse possit, & re vera proderit, si crederent Euangelio, & agerent poenitentiam**»; теза IV в двух столбцах — «pro omnibus & solis electis **adaequate**» vs «**adaequate pro omnibus peccatoribus**… adaequate pro fidelibus»; тройственное исполнение священства («legis impletione, poenarum persolutione, & intercessione… pro objecto adaequato habent omnes & solos electos») и разбор Ин. 17:9 («non quidem naturae suae dignitate, sed **dignatione gratiae**»; «**nullo modo ad haedos, sed tantum ad oves Christi pertinent**»). PD; **A2**; OCR; границы суждения — по заголовку женевского (с. 101) |
 | S148 *(раунд 45)* | *Acta* 1620 (тот же id; **чанки 238–240**, печ. **сс. 101–104**) — **женевское суждение по II артикулу**, заголовок: «De secundo Articulo **qui est, DE UNIVERSALITATE GRATIAE, suffragium & sententia Genevensium**». **Восемь тезисов**: I «Christus, **ex mera εὐδοκίᾳ Patris**, destinatus & datus fuit Mediator & caput **certo hominum numero**»; II «pro illis… voluit & decrevit mori, & pretio mortis infinito, addere **efficacissimam & singularem voluntatis intentionem**»; III «Christus sic datus & destinatus electis, **est causa & fundamentum vocationis ipsorum**, cooptationis in Ecclesiam, insitionis in corpus ipsius, Sancti Spiritus communicationis, & omnium exinde donorum spiritualium»; IV «Fides… **est donum & effectus Spiritus Regenerationis**»; V «**Fides est revera conditio Novi Foederis, respectu ordinis inviolabilis a Deo instituti, sed & ipsa est promissum, donum novi Foederis, & effectus nostrae in Christo insitionis**»; VI «Universales propositiones… vel restringendae sunt **ad corporis Christi universitatem**, vel referri debent ad illam **οἰκονομίαν foederis Novi**… **quod est fundamentum praedicationis generalis Evangelii**»; VII «**impetrationis & applicationis distinctionem hactenus recipimus**, si… **constet apud Deum certum decretum benevolendi & benefaciendi electis, priusquam actu illi vel existant**… & ut **impetratio causa ponatur efficax, perpetua, infallibilis ipsius applicationis actualis in electis**»; VIII «Si verò… **Deum per mortem Christi, erga omnes & singulos esse placatum, velle ipsorum salutem, modo ipsi velint, & voluntatem hominis illam universalitatem determinare, ut Pelagianum, rejicimus**». PD; **A2**; OCR; страницы приблизительны |
 | S149 *(раунд 45)* | *Acta* 1620 (тот же id; **чанки 240–241**, печ. **сс. 104–109**) — **бременское суждение по II артикулу**, эпиграф — Амвросий *in Lucam* V.7 «**Si Christus pro omnibus mortuus est: specialiter tamen pro nobis passus est**»; подпись — «**Matthias Martinius, Ecclesiae Bremensis nomine ad Synodum Nationalem deputatus**». Часть I «De morte Christi pro omnibus», тезы I–XXVI: I «communis quaedam Dei **φιλανθρωπία**… & **seriò omnium salutem voluit**»; V «hic eventus **per se non intenditur à Deo: sed per accidens hominis culpa sequitur**»; VII–VIII «si haec redemptio, tanquam commune beneficium, omnibus hominibus impensum, non supponatur: **indifferens & promiscua praedicatio Euangelij… nullum verum fundamentum habebit**»; IX видение — «quibus lubet **simpliciter negare, Christum pro omnibus esse mortuum**»; X «non satis erit sufficientiam talem ponere, **quae satis esse posset**: sed omnino talis est, **quae sit satis, & quam Deus & Christus satis esse voluerint**»; XI «**Quomodo enim ex beneficio, sufficiente quidem, at mihi non destinato per veram intentionem, deducetur necessitas credendi quod illud ad me pertineat?**»; XII уподобление творению (с оговоркой «cavendum… ne haec similitudo latius aequo extendatur»); XVII–XVIII «**exceptio duplex, una ad res, altera ad personas**» — «non satisfecit… **pro impoenitentia permanente**, multo minus pro contumacia perseverante… peccato in Spiritum Sanctum»; XXI «**remissionem peccatorum & salutem conditionalem pertinere ad omnes, non autem promissionem dandi vires**… haec enim homines **ex se ipsis** debent praestare, vigore divini mandati. Quod qui non possint, sua culpa non possunt»; XXII «**solum tamen electorum… peccata revera remittenda**»; **XXV** «meritum (seu **impetrationem** — haec enim saepe pro eodem veteres & recentes usurpant, etsi **impetratio aliquid minus sit & generalius merito**) meritum, inquam, & applicationem, **non aeque late, & aeque late patere, diverso respectu**; & **minime contradictionem esse, Christum pro omnibus mortuum esse cum intentione salvandi, & non esse ita mortuum**»; XXVI три основания (Скриптуры «non contorte»; слава истины, милости и правды Божией — «ne illis Deus secus aliquid velle vel agere judicetur, quam verba sonant»; вина гибели — в самих людях, «non autem in defectu remedii») + подпись под формулой **Урсина** (*Explicationes Catecheticae*, pp. 257–259): «**Christus est mortuus pro omnibus merito & sufficientia λύτρου: pro solis credentibus applicatione & efficacia**». Часть II «De morte Christi pro solis Electis» I–VII: decretum singularis electionis; destinatio «**non ad communia, sed ad singularia beneficia**» ⇒ «revera promereretur & efficaciter communicaret, largiretur, applicaret»; «applicandi organum» — вера; «qui oblationem Christi… spernit, is **perdit omne jus, quod in illa habere poterat**»; «per accidens, **ipsorum vitio**». **Каталог 17 заблуждений** (4, 5, 7, 8, 15, 16, 17 — см. §4.87 п. 9) и особое отвержение Губера и Пукция (будто Христос умер «non modo quantum ad sufficientiam, sed & quantum ad efficaciam» и будто младенцы всех народов «aeque sancti nascantur»). PD; **A2**; OCR |
-| S150 *(раунд 45)* | *Acta* 1620 (тот же id; **чанки 241–242**, печ. **сс. 109–111**) — **эмденское суждение по II артикулу** (*Embdensium*). **Вступление**: «Et video **viros praestantissimos, atque in Ecclesia Orthodoxa laudatos, diversimodè de proposito argumento loqui**. Quos (si modestè, candidè, & absque Ecclesiae perturbatione sententiam suam proponant, neque incedant tanquam hostes crucis Christi) propterea damnare, aut odiosis nominibus infestari nolim» (Флп. 3:15–19) + «At tamen… existimo, **magis convenire S. Scripturae**… si sequentem in modum statuamus». **Теза I** (утверждается): «meriti Christi ea est dignitas & virtus, ut… abundè sufficiat… & ad impetrandam ac conferendam omnibus omnino & singulis reconciliationem… Ideoque… **indifferenter, electis & reprobis, per Euangelij praeconium, medicina peccati & mortis… proponitur & offertur**… **omnes & singuli in Christum credere… sincerè atque seriò jubentur**»; «pro omnibus **sufficienter** mortuus, ut omnes, quotquot in eum credunt… consequi **possint & debeant**… nullus etiam ex genere humano ab eo… alienus sit, **atque Satanas & angeli mali**»; «**Atque haec est voluntas & intentio Dei ab aeterno**, ut mors Christi ita pro omnibus sufficiens sit… **excepta impoenitentia permanente, & peccato in Spiritum S.**»; «nullus proinde ex reprobis, **propter defectum Mortis Christi**… sed propter propriam suam ipsius culpam… pereat». **Теза II** (утверждается): «**nec voluit, nec debuit Dominus, indifferenter omnes & singulos homines**… **per mortem suam reipsa in novum gratiae salvificae foedus & statum restituere**… Neque etiam ea praedictum in modum omnibus indifferenter impetravit»; **антитеза II** (отвергается): что Он «& voluit & debuit» и «**actu ipso & re ipsa**» это совершил и «omnibus indifferenter impetravit». PD; **A2**; OCR; суждение прочитано не до конца (продолжение — за с. 111) |
+| S150 *(раунд 45)* | *Acta* 1620 (тот же id; **чанки 241–242**, печ. **сс. 109–111**) — суждение по II артикулу, **внесённое в раунде 45 как эмденское; атрибуция пересмотрена в раунде 46** (подпись на л. 116 читается как «Isselburgius… in Ecclesia ac Schola Bremensi», то есть это, вероятно, **второе бременское** суждение; см. §4.89 п. 0). **Вступление**: «Et video **viros praestantissimos, atque in Ecclesia Orthodoxa laudatos, diversimodè de proposito argumento loqui**. Quos (si modestè, candidè, & absque Ecclesiae perturbatione sententiam suam proponant, neque incedant tanquam hostes crucis Christi) propterea damnare, aut odiosis nominibus infestari nolim» (Флп. 3:15–19) + «At tamen… existimo, **magis convenire S. Scripturae**… si sequentem in modum statuamus». **Теза I** (утверждается): «meriti Christi ea est dignitas & virtus, ut… abundè sufficiat… & ad impetrandam ac conferendam omnibus omnino & singulis reconciliationem… Ideoque… **indifferenter, electis & reprobis, per Euangelij praeconium, medicina peccati & mortis… proponitur & offertur**… **omnes & singuli in Christum credere… sincerè atque seriò jubentur**»; «pro omnibus **sufficienter** mortuus, ut omnes, quotquot in eum credunt… consequi **possint & debeant**… nullus etiam ex genere humano ab eo… alienus sit, **atque Satanas & angeli mali**»; «**Atque haec est voluntas & intentio Dei ab aeterno**, ut mors Christi ita pro omnibus sufficiens sit… **excepta impoenitentia permanente, & peccato in Spiritum S.**»; «nullus proinde ex reprobis, **propter defectum Mortis Christi**… sed propter propriam suam ipsius culpam… pereat». **Теза II** (утверждается): «**nec voluit, nec debuit Dominus, indifferenter omnes & singulos homines**… **per mortem suam reipsa in novum gratiae salvificae foedus & statum restituere**… Neque etiam ea praedictum in modum omnibus indifferenter impetravit»; **антитеза II** (отвергается): что Он «& voluit & debuit» и «**actu ipso & re ipsa**» это совершил и «omnibus indifferenter impetravit». PD; **A2**; OCR; суждение прочитано не до конца (продолжение — за с. 111) |
+| S151 *(раунд 46)* | *Acta* 1620 (тот же id; **чанк 245**, печ. **сс. 117–118**) — суждение, озаглавленное «**De Secundi Articuli REMONSTRANTIUM, QVI EST De Universitate meriti mortis Christi**»; вопрос заглавия — «An Iesus Christus mortuus sit pro singulis hominibus, **ita ut per mortem crucis reconciliationem & peccatorum remissionem omnibus hominibus impetrarit**». **Четыре тезиса**: I «Mortis Christi ea est **dignitas, pretium, potentia, valor ac sufficientia**… ei prorsus nihil desit»; II «…Filii mortem obeuntis **consilium, scopus & intentio** est omnibus ac singulis hominibus peccatoribus… **acquirere, impetrare, ac promereri**, ut, **si resipiscant**… & in Christum credant… reconciliari… **possint**»; III «sufficientissimè promeruit, ut… **possint** Deo reconciliari»; IV «**omnes ac singulos credentes, eosque solos actu Deo reconciliavit**… impaenitentibus verò… **neque actualem reconciliationem**… neque remissionem… acquisivit & impetravit». Самооправдание: «Scripturis, naturae rei, Ecclesiae, **nominatim quoque Bremensi confessioni**… consentaneam… ut illius **in vocando veracitas, in jubendo aequitas, in comminando justitia**… patescat». **Каталог отвергаемых положений, прочитано 13** (вероятно, не до конца), из них **11: «Proprium & integrum mortis Christi finem tantum fuisse, ut Deo POSSIBILITATEM & VELLEITATEM foederis gratuiti cum hominibus ineundi afferret»**; 2 — «Deum destinavisse Christum in Mediatorem, **ante omnem affectum, voluntatem & intentionem miserendi**»; 12 — «Christum cum morte & satisfactione sua non esse **donum seu promissum Novi foederis**»; 13 — «Voluntatem & intentionem Dei… applicandi fuisse, **tantum conditionatam, seu desiderium**». **Атрибуция не установлена** (`ATTRIBUTION_HOLD`): по порядку печати — вероятно эмденское; ссылка на Бременское исповедание указывает скорее на бременского богослова. PD; **A2**; OCR |
 
 **Ответ: П1 исторически неверен; «словом о цене» в английской традиции является *redemption*, а не *atonement*.**
 
@@ -3693,6 +3694,196 @@ impetravit**». Отвергается (антитеза): что Он «& volui
 грехах, не предусмотренных при издании декрета (§4.83 п. 6).
 
 
+### 4.89. Q85 — Завершение суждения, внесённого в раунде 45 как эмденское: тезы III–XI (раунд 46)
+
+**0. Исправление атрибуции — обязательное.** В раунде 45 документ «IN ARTICVLVM SECVNDVM» (печатные сс. 109–116)
+был внесён как **эмденское** суждение. При дочтении выяснилось, что его **заключительная подпись** (печ. л. 116)
+читается OCR как «[…] **Isselburg[ius]**, Th[eologiae] D[octor], & in **Ecclesia ac Schola Brem[ensi]** … Christi
+servus». Бременская делегация на Синоде состояла из двоих: **Матфий Мартиний** (подписал суждение сс. 104–109) и
+**Генрих Иссельбург**. Стало быть, документ сс. 109–116 — **второе бременское суждение**, а не эмденское; а
+эмденским, по всей вероятности, является документ, начинающийся на л. 117 (§4.90). Обе атрибуции ставятся под
+`ATTRIBUTION_HOLD`: почерк OCR не позволяет прочесть имя уверенно, а порядок печати в этом разделе не совпадает с
+порядком чтения. **Историческая строка раунда 45 не удаляется** — она исправляется здесь.
+
+**1. Положение в томе.** Печатные **сс. 112–117**, чанки 243–245 (продолжение S150; новый источник S151 для
+следующего документа).
+
+**2. К тезе II — примечание о псах и свиньях, которое нельзя опускать.** «Nam Christus nunquam novit impios
+istos… Neque pro eis oravit (Ioh. 17:9)… Proinde conferuntur canibus… & apertè **prohibet Dominus eis Sanctum
+dari, aut coram eis margaritas projici** (Matth. 7:6). **Quid verò Sanctius, quà margarita praestantior
+sanctissimo & pretiosissimo Christi merito?**» Далее — «filij Belial… Zizania, & filij illius mali… atque ira
+Dei manet super eos (Ioh. 3:36). **Quod si manet super eos Dei ira, equidem non sunt in statum gratiae
+restituti.** Vnde etiam multos Deus **neque Euangelij praeconio dignatur** (Psalm. 147:19–20; Act. 14:16)».
+Оговорка: это полемическая катена, а не учение о том, кому можно проповедовать; в серии её можно приводить только
+вместе с тезой I того же документа (§4.88 п. 2: «indifferenter, electis & reprobis… sincerè atque seriò
+jubentur»).
+
+**3. Теза III — «на их месте и для их блага».** Утверждается: «Sed tantum **pro ovibus suis electis**, sive
+fidelibus omnibus & singulis, **eorumque loco & bono**, animam posuit, sive mortuus est Christus; eo sensu, ut
+eorum solus salvificus **Sacerdos, propitiator & victima**, eos solos Patri suo **actu ipso reconciliarit**,
+eisque remissionem peccatorum, justitiam & vitae aeternae haereditatem impetrarit: **non secus ac si ipsi per
+eum Dei justitiae satisfecissent, eique debita sua solvissent**». И — самое важное примечание: «Peccatorum autem
+omnium remissionem Christus fidelibus impetravit, ita ut non tantum satisfecerit pro illis quae committunt,
+tanquam **in communi peccati & lapsus sorte considerati**, aut quae omnibus sunt communia, **sed etiam pro illis
+quae sunt singularia**, quaeque committunt, posteaquam sunt ad participationem divinae gratiae vocati, & per
+fidem Christo insiti, quaecunque demum illa sint». **Отвергается** (антитеза III): «Neque etiam pro fidelibus aut
+infidelibus passus est aliter, quam **quatenus in communi lapsus & peccati sorte considerantur**».
+
+**4. Почему это важно.** Антитеза III — **третье** в корпусе свидетельство о ремонстрантской формуле «в общей
+доле греха и падения»: она же цитируется гелдерландцами (S145, «pro HIS ET ILLIS IN COMMUNI LAPSVSET PECCATI
+SORTE consideratis») и фигурирует в профессорском каталоге (S144). Три делегации независимо называют одну и ту же
+формулировку. Содержание ремонстрантской тезы тем самым подтверждается; непроверенным остаётся только **лист**
+источника (см. §7 раунда 45).
+
+**5. Катена к тезе III и пастырская нота.** «Nam pro his solis Christus oravit (Ioh. 17:9)… Act. 20:28 —
+Ecclesiam Dei, quam **suo illo proprio sanguine acquisivit**… Heb. 5:9 — auctor salutis aeternae **omnibus ei
+auscultantibus**… Eph. 5:23… Hinc porro dicitur Dominus animam suam dedisse **pro multis** (Esai. 53:11; Matth.
+20:28; 26:28). Item **nominatim pro ovibus suis** (Ioh. 10:15). **Hi & non alii accipiunt remissionem
+peccatorum per Christi nomen** (Act. 10:43)… Hinc praerogativa & **solida solatia fidelium ac piorum propria**;
+hinc sunt beati, quia eis remissae iniquitates (Psalm. 32:2; Rom. 4:6). Hinc **certa spes salutis & gloriatio**
+(Rom. 5:10–11) **adversus omnes insultus Satanae & impiorum** (Rom. 8:34)».
+
+**6. Теза IV — намерение, и Ин. 3:16 в поддержку него.** Утверждается: «Atque haec etiam fuit & Patris & Filii
+**voluntas aut intentio**, ut **tantum illos, qui essent per veram fidem Christo inserendi**… non autem ut
+indiscriminatim omnes homines in statum gratiae salvificae restitueret, eisque reconciliationem cum Deo, &
+peccatorum remissionem impetraret ac salutem conferret». Отвергается — обратное. Примечание: **Ин. 3:16** («Так
+возлюбил Бог мир… дабы всякий верующий в Него не погиб, но имел жизнь вечную») и Рим. 3:25. Оговорка: тем самым
+«Ин. 3:16 = всеобщий текст Дорта» — запрещённая формулировка; здесь тот же текст приводится **в поддержку
+особого намерения**.
+
+**7. Теза V — против «условной воли».** Утверждается: «Quoscunque Christus per mortem suam ita Patri
+reconciliavit, eisdem omnibus ac solis impetratam illam cum Deo reconciliationem, omniumque peccatorum suorum
+remissionem, **verè, certò, & absolutâ voluntate applicat & conservat; non autem tantum conditionatâ aliquâ
+voluntate, quae ab hominis arbitrio dependeat**, praedicta bona hominibus applicare desiderat». Отвергается —
+обратное, с тою же формулой «conditionata aliqua voluntate, quae ab hominis arbitrio dependeat». Примечания:
+Деян. 5:31; Евр. 10:14; Рим. 8:32.
+
+**8. Теза VI — «равно широко».** Утверждается: Он действует силою и благодатию Своего Духа во всех и каждом, кого
+примирил, так что они «veram illam cum Deo pacem habeant, impetratam reconciliationem **animo hilari ac grato**
+agnoscant, vera fide amplectantur, inque ea ad finem usque vitae proficiant, donec tandem per eandem Christi
+mortem ac resurrectionem consequantur salutem & vitam aeternam» — и итог: «**Atque ita aeque late patent
+reconciliationis & remissionis peccatorum per Christum impetratio, eorumque beneficiorum applicatio**».
+Отвергается — обратное, с итогом «**atque ita non aeque late patent**… impetratio… applicatio». Совпадение с
+гелдерландским «applicatio & impetratio **aeque late** sese extendant» (S145) — **второе**.
+
+**9. Теза VII — «неразделимою связью» и «на чьём месте».** Утверждается: «Pro quibus enim **quorumque loco**
+Dominus est mortuus ad expianda ipsorum peccata, ad eos omnes etiam **fructus resurrectionis &
+intercessionis** extenditur… Neque haec divelli posse, multo minus divelli, arbitror; sed **individuo nexu** ea
+ita esse conjuncta, ut quibuscunque impetravit reconciliationem cum Deo, & peccatorum remissionem, eisdem etiam
+eam applicet, & salutem aeternam **infallibiliter** ac gratiose conferat, & conservet aeternum». Отвергается: «sed
+haec **divelli posse, atque etiam saepe divelli** arbitramur». Совпадение с «individuo nexu» североголландцев и
+гронингенцев — **третье** в корпусе.
+
+**10. Теза VIII — та самая ремонстрантская теза, в виде антитезы.** Утверждается: «Ita demum verè & abundè
+constat impetrationi per Christum praestitae **sua dignitas, necessitas atque utilitas**; ita filijs Dei sive
+pijs omnibus **firma ac solida in vita & morte consolatio**: non autem, si impetrata redemptio nemini actu ipso
+applicaretur, & nemo per eam servaretur». **Отвергается**: «Et nihilominus verè & abundè constat impetrationi…
+sua dignitas, necessitas atque utilitas, **etiamsi impetrata redemptio nulli individuo unquam actu ipso
+applicata fuisset; potuissetque omnibus impetrata esse, & tamen nullis propter intervenientem omnium
+incredulitatem applicari**». Это — почти дословно теза, которую южноголландцы приписывают Гревинховену (S146,
+положения X и XI каталога) и которую бременцы вносят в свой каталог под № 4 и 5 (S149). **Третье независимое
+свидетельство о содержании ремонстрантской формулы.** Вывод для серии: содержание подтверждено тремя
+делегациями; непроверенным остаётся **только лист** первоисточника.
+
+**11. Теза IX — прямой ответ на язык «сделал возможным».** Утверждается: «Ita etiam **assequitur Christus finem
+suum à Deo propriè intentum**, quando non tantum effecit, ut **possit** hominibus applicari meritum suum,
+quibus videlicet vel qualibus Deus velit; sive ut Deus salvâ justitiâ suâ peccatorem salvare **possit**, &
+peccator, non obstante peccato, salvari; utque novum gratiae foedus cum peccatoribus & damnationi obnoxijs
+hominibus inire & sancire **posset, & vellet**; … **sed tum demum quando praeterea virtute sui Spiritus,
+redemptis actu ipso confert** illam salvificam Dei gratiam, justitiam & vitam aeternam, caeteraque omnia, quae
+eis morte sua peperit atque impetravit». **Отвергается** — версия «**hoc tantum** effecit, ut possit… **non autem
+tum demum, quando praeterea… actu ipso confert**». То есть заблуждение состоит именно в том, чтобы полагать цель
+смерти Христовой в трёх «может»: чтобы заслуга **могла** быть приложена, чтобы Бог **мог** спасти, чтобы завет
+**мог и восхотел** быть заключён. Примечания: Иоил. 2:27–29; Ин. 10:28; 14:3; 17:24.
+
+**12. Теза X — peculiar intentio.** «Ita destinavit Deus Christum in mediatorem **cum peculiari intentione ac
+voluntate, certos quosdam ex genere humano redimendi**, eosque aeternum salvandi» (антитеза — отрицание того же;
+примечание — Ин. 10:29).
+
+**13. Теза XI — нельзя ли было иначе.** Утверждается: «Simulque constituit ad fruitionem dictorum bonorum hanc
+conditionem & viam unicam, ut virtute Sp. Sancti per veram fidem Christo inseramur, ejusque beneficia
+amplectamur; **Neque decet pios de viâ aliâ praeter eam, quae sola in S. Literis nobis est revelatâ, laborare;
+& inquirere, an non aliâ conditione & modo, quam per Fidei medium potuisset meritum Filij sui nobis applicare,
+atque operum quam fidei conditionem ad salutem praescribere**». Отвергается: «non erit indecens pijs, si insuper
+statuamus, quòd potuisset voluisse, alio modo, quam per fidem, meritum Filij sui nobis applicare; sive **aeque
+operum atque fidei conditionem** ad salutem praescribere». Примечание — **Втор. 29:29**: «Сокрытое принадлежит
+Господу Богу нашему, а открытое — нам и сынам нашим до века, чтобы мы исполняли все слова закона сего».
+
+**14. Почему теза XI важна отдельно.** Это **второе** в корпусе суждение, отвергающее спекуляцию «Бог мог
+предписать любое условие», — рядом с профессорским «Temerarium… & profanum» (S144). Основание здесь иное,
+экзегетическое и аскетическое: Втор. 29:29. Значит, в серии нельзя писать «Дорт единогласно объявил такую
+спекуляцию дерзкою»: основания у двух делегаций разные, и одна из них просто отказывается обсуждать
+неоткрытое.
+
+### 4.90. Q86 — Где на Дорте назван язык возможности: «possibilitas & velleitas» (раунд 46)
+
+**0. Документ.** «**De Secundi Articuli REMONSTRANTIUM, QVI EST De Universitate meriti mortis Christi**»,
+печатные **сс. 117–118**, чанк 245 (S151). Атрибуция не установлена (`ATTRIBUTION_HOLD`): по порядку печати это
+вероятно эмденское суждение; в тексте же автор ссылается «nominatim quoque **Bremensi confessioni**», что
+скорее указывает на бременского богослова. **Не решать.**
+
+**1. Вопрос, поставленный в заглавии.** «An Iesus Christus mortuus sit pro singulis hominibus, **ita ut per
+mortem crucis reconciliationem & peccatorum remissionem omnibus hominibus impetrarit**».
+
+**2. Четыре тезиса (I–IV).** I: «Mortis Christi ea est **dignitas, pretium, potentia, valor ac sufficientia**, ut
+ad omnium ac singulorum hominum reconciliationem cum Deo & peccatorum remissionem promerendam, acquirendam ac
+impetrandam ei **prorsus nihil desit**». II: «Non solum Dei Patris Filium in mortem tradentis, verum etiam Filii
+mortem obeuntis **consilium, scopus & intentio** est omnibus ac singulis hominibus peccatoribus pretiosissima
+illa morte & passione **acquirere, impetrare, ac promereri**, ut, **si resipiscant**, quando doctrinae capaces
+sunt, & in Christum credant, cum Deo reconciliari & remissionem peccatorum accipere **possint**». III: «…
+sufficientissimè promeruit, ut, si modo resipiscant, & credant, **possint** Deo reconciliari, seu in gratiam ac
+sinum ejus restitui». IV: «Christus de consilio & voluntate sua pariter ac Patris sui, morte & passione sua
+**omnes ac singulos credentes, eosque solos actu Deo reconciliavit**, & in sinum ejus restituit:
+impaenitentibus verò, in incredulitate ad finem pertinaciter commanentibus, **aut precium mortis Christi
+contemtìm habentibus, & in Sp. Sanctum peccantibus, neque actualem reconciliationem** cum Deo, **neque
+remissionem peccatorum & vitam aeternam acquisivit & impetravit**».
+
+**3. Почему этот документ — самый «амиральдианский» по виду текст тома.** Здесь сказано прямо: намерение Отца и
+Сына — **приобрести, исходатайствовать и заслужить** всем и каждому, чтобы они, **если покаются и уверуют**,
+**могли** быть примирены. Это именно та схема, которую серия разбирает; и она произнесена в материалах Дорта.
+Оговорка — непременная: документ тотчас ограничивает её тезой IV (действительное примирение — только верующим) и
+каталогом отвергаемых ошибок.
+
+**4. Самооправдание автора.** «Hanc ego doctrinam, tanquam verissimam, Scripturis, naturae rei, Ecclesiae,
+**nominatim quoque Bremensi confessioni**, Patrum & Theologorum quà veterum, quà recentium **potiori &
+communiori sententiae consentaneam**, in Ecclesia Dei necessariò, purè & sincerè retinendam ac defendendam esse
+censeo, tum ad Dei gloriam, quae sic illustratur, ut illius **in vocando veracitas, in jubendo aequitas, in
+comminando justitia**, omnibus Scripturam seriò meditantibus patescat: tum ad vocatorum in vera fide ac pietate
+**aedificationem, profectum & consolationem**; tum denique ad diversarum haeresium, doctrinam hanc, **scopulorum
+ad instar circumstistentium**, salutarem declarationem & refutationem». Три цели — те же, что у Мартиния (S149,
+XXVI): слава Божия в истинности призвания, правде повелений и справедливости угроз; назидание призванных;
+отражение ересей.
+
+**5. Каталог отвергаемых положений (прочитано тринадцать из, вероятно, семнадцати).** 1. Против Губера и Пукция:
+будто Христос умер «non modo quantum ad sufficientiam, sed & quantum ad efficaciam» и будто «omnium Turcarum,
+Saracenorum, **Centaurorum & Caribalum** liberi aeque sancti nascantur atque Christianorum» (ср. бременскую
+редакцию той же ошибки — S149). 2. «Deum destinavisse Christum in Mediatorem, **ante omnem affectum, voluntatem
+& intentionem miserendi** humani generis lapsi». 3. «Merito Christi potuisse constare suam dignitatem,
+necessitatem & utilitatem, etiamsi nulli individuo unquam fuisset applicatum». 4. «Omnes homines potuisse manere
+incredulos, etiam respectu decreti Dei». 5. «Finem mortis Christi nullo modo fuisse ejus applicationem». 6.
+«Posita mundi redemptione per Christum, nihilominus tamen potuisse Deum **conditionem operum** ad salutem
+consequendam praescribere». 7. «Intentionem Dei Filium in mortem tradentis fuisse, **absolutè omnibus conferre
+salutem**». 8. «Pretium redemptionis Christi esse efficax ad reconciliandos Deo **actu omnes homines**». 9. «Deum
+omnes & singulos homines **ex aequo** dedisse Christo redimendos & servandos». 10. «Qui in impoenitentia
+commoriuntur, **ijs adhuc esse jus** in morte Christi». 11. **«Proprium & integrum mortis Christi finem tantum
+fuisse, ut Deo POSSIBILITATEM & VELLEITATEM foederis gratuiti cum hominibus ineundi afferret»**. 12. «Christum
+cum morte & satisfactione sua **non esse donum seu promissum Novi foederis**». 13. «Voluntatem & intentionem Dei
+omnibus & singulis Christi merita applicandi fuisse, **tantum conditionatam, seu desiderium**…».
+
+**6. Чтó именно найдено.** В положении 11 названы **оба** слова, вокруг которых вертится вся серия: **possibilitas**
+(возможность) и **velleitas** (желательность, «хотелось бы»). Ошибка, отвергаемая на Дорте в 1619 году, формулируется
+так: собственная и целая цель смерти Христовой состояла лишь в том, чтобы доставить Богу **возможность и
+желательность** заключить с человеками благодатный завет. Это — самое раннее в корпусе **прямое именование**
+языка возможности; все прежние находки (гелдерландская аксиома S145, бременская теза XXV, южноголландское
+«impetratio включает дарование») были описательными, а здесь назван сам термин.
+
+**7. Оговорки — три, все обязательные.** (а) Атрибуция документа не установлена; не называть его эмденским иначе
+как с оговоркой. (б) Каталог прочитан до тринадцатого пункта; не утверждать, что их семнадцать. (в) Положения
+11–13 означают, что **язык возможности отвергался**, но не означают, что всякий, кто говорит «Христос
+приобрёл возможность», держится этого заблуждения: каталог описывает крайнюю форму — «**только** эту цель»
+(*tantum*).
+
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -4192,6 +4383,8 @@ impetravit**». Отвергается (антитеза): что Он «& volui
 | 1618–1619 *(раунд 45)* | **Женевское суждение «DE UNIVERSALITATE GRATIAE»**: Christus — «causa & fundamentum vocationis» избранных; «**Fides est revera conditio Novi Foederis… sed & ipsa est promissum, donum novi Foederis**»; всеобщие предложения — «ad **corporis Christi universitatem**» или «ad **οἰκονομίαν foederis Novi**… fundamentum praedicationis generalis Evangelii»; «impetrationis & applicationis distinctionem **hactenus recipimus**… priusquam actu illi vel existant»; «ut Pelagianum, rejicimus» | S148 (A2) |
 | 1618–1619 *(раунд 45)* | **Бремен, Матфий Мартиний**: «**non aeque late, & aeque late patere, diverso respectu**… minime contradictionem esse, Christum pro omnibus mortuum esse cum intentione salvandi, & non esse ita mortuum»; «impetratio aliquid minus sit & generalius merito»; «ut maneat Deo gloria veritatis… ne illis Deus secus aliquid velle vel agere judicetur, **quam verba sonant**»; подпись под формулой Урсина «pro omnibus merito & sufficientia λύτρου: pro solis credentibus applicatione & efficacia» | S149 (A2) |
 | 1618–1619 *(раунд 45)* | **Эмден**: «viros praestantissimos… **diversimodè de proposito argumento loqui**… propterea damnare… nolim»; «indifferenter, electis & reprobis… **sincerè atque seriò jubentur**» credere; «**voluntas & intentio Dei ab aeterno**, ut mors Christi… pro omnibus sufficiens sit» (кроме нераскаянности и греха на Духа); но «**nec voluit, nec debuit Dominus… per mortem suam reipsa in novum gratiae salvificae foedus & statum restituere**» | S150 (A2) |
+| 1618–1619 *(раунд 46)* | Второе бременское суждение (?) — тезы III–XI: «**eorumque loco & bono**»; удовлетворение не только за грехи «in communi peccati & lapsus sorte», но и за **единичные**; «**individuo nexu**»; «**aeque late patent** impetratio… applicatio»; «**non tantum conditionatâ aliquâ voluntate, quae ab hominis arbitrio dependeat**»; «assequitur Christus finem… **non tantum** ut possit… sed tum demum quando… **actu ipso confert**» | продолжение S150 (A2) |
+| 1618–1619 *(раунд 46)* | Суждение «De Secundi Articuli Remonstrantium»: намерение Отца и Сына — «omnibus ac singulis… acquirere, impetrare, ac promereri, ut, **si resipiscant**… possint»; но «**credentes, eosque solos actu Deo reconciliavit**»; в каталоге ошибок — **11: «ut Deo POSSIBILITATEM & VELLEITATEM foederis gratuiti… ineundi afferret»** | S151 (A2) |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -4465,7 +4658,33 @@ impetravit**». Отвергается (антитеза): что Он «& volui
 - **S149** (лат. *Acta* 1620, чанки 240–241, печ. сс. 104–109: бременское суждение с подписью Мартиния) — PD; **A2**; OCR; подпись читается отчётливо («Matthias Martinius, Ecclesiae Bremensis nomine…»).
 - **S150** (лат. *Acta* 1620, чанки 241–242, печ. сс. 109–111: эмденское суждение) — PD; **A2**; OCR; **суждение не дочитано** — продолжение за печатным листом 111.
 - Раунд 45: «снято молча» — **0**; прочитаны четыре суждения внешних делегаций, которых в досье не было (S147–S150, §§4.85–4.88). **Попытка верификации внешних ремонстрантских цитат не удалась**: Google Books (издания *Collatio Hagiensis* в латинском переводе Бертия, `4BZiAAAAcAAJ`, и Гревинховена *Dissertatio theologica* 1615, `vNFWAAAAcAAJ`) отдаёт только карточку книги, a полный текст и загрузки закрыты; поиск внутри тома возвращает «No results found» даже для заведомо частотных оборотов, то есть полнотекстовый индекс для этих томов недоступен. Проверку цитат Дорта из *Collatio Hagensis* и Гревинховена следует считать **открытой**, а не подтверждённой и не опровергнутой. `EVIDENCE_HOLD`, `PUBLICATION_HOLD`, `RIGHTS_HOLD`, `ATTRIBUTION_HOLD`, C-16 — без изменений; добавлены пп. 166–171.
+
+- **S151** (лат. *Acta* 1620, чанк 245, печ. сс. 117–118: суждение «De Secundi Articuli Remonstrantium») — PD; **A2**; OCR; **атрибуция не установлена** (`ATTRIBUTION_HOLD`); каталог ошибок прочитан не до конца.
+- **`ATTRIBUTION_HOLD` распространён:** суждение сс. 109–116 (S150) внесено в раунде 45 как эмденское; подпись на л. 116 («Isselburgius… in Ecclesia ac Schola Bremensi») указывает, что это, вероятно, **второе бременское** суждение. Историческая строка раунда 45 **не удалена**, а исправлена в §4.89 п. 0. Прежний `ATTRIBUTION_HOLD` (п. 150, Оверэйссел, л. 134) остаётся открытым.
+- Раунд 46: «снято молча» — **0**; добавлены §§4.89–4.90, S151, две строки хронологии, пп. 172–177. **Попытка верификации ремонстрантских первоисточников остаётся безуспешной** (см. §7 раунда 45).
 ## 8. Следующее проверяемое действие
+**Добавлено в раунде 46:**
+
+172. *(раунд 46)* **Прочитать каталог ошибок S151 до конца** (прочитано 13; вероятно, документов ещё несколько
+пунктов) и установить атрибуцию: сверить подписи на лл. 116–117 с индексом тома (л. 45) и со списком делегаций.
+173. *(раунд 46)* **Новая лексическая задача — `possibilitas & velleitas`.** Положение 11 каталога S151 называет
+оба термина. Проверить по корпусу, где ещё встречается `velleitas` и кто его ввёл в оборот; сличить с более
+поздним употреблением у Турретина и Оуэна (без утверждения зависимости до сличения).
+174. *(раунд 46)* **П. 147 пополнен: формула «in communi lapsus & peccati sorte» теперь засвидетельствована тремя
+делегациями** (гелдерландцы S145, профессора S144, второе бременское S150) и формула «individuo nexu» — тоже
+тремя (североголландцы, гронингенцы, второе бременское). Совпадение формул — признак общего полемического
+материала, а не заимствования.
+175. *(раунд 46)* **Различение двух оснований для отказа от спекуляции «Бог мог предписать любое условие»:**
+профессора называют её «дерзкою и нечестивою» (S144), второе бременское суждение просто отказывается её
+обсуждать, ссылаясь на Втор. 29:29 (S150, теза XI). В серии нельзя писать «Дорт осудил эту спекуляцию» без
+указания, какая именно делегация и на каком основании.
+176. *(раунд 46)* **Вынести в `synthesis/03`**: тезу VIII второго бременского суждения о том, что утешение
+(**firma ac solida in vita & morte consolatio**) ставится в зависимость от того, что искупление действительно
+приложено, — рядом с бременским «не было недостатка в средстве» (S149, XXVI.3) и с «solida solatia fidelium…
+propria» (S150, теза III).
+177. *(раунд 46)* **Ин. 3:16** во втором бременском суждении (теза IV) приводится **в поддержку особого
+намерения**. Это надо внести туда, где разбирается запрещённая формулировка «Ин. 3:16 у Дорта = всеобщий текст»
+(§4.19, §6): сам текст не был нейтральным, спор шёл о его чтении.
 **Добавлено в раунде 45:**
 
 166. *(раунд 45)* **Дочитать эмденское суждение** (S150 обрывается на антитезе II, печ. л. 111): тезы III и далее,
