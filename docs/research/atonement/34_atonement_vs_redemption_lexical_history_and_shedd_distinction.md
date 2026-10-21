@@ -4474,6 +4474,126 @@ volet»); (б) имело **определённое содержание** — 
 и лист *ad Hippolytum* восстановлены по контексту и помечены как uncertain. Печатные страницы приблизительны
 (порядок листов в томе нарушен). Сверка с изображением — п. 193.
 
+### 4.99. Q95 — Британское суждение о III–IV артикулах: чтó было с избранными до обращения (раунд 49)
+
+**0. Зачем.** В раунде 19 поставлен вопрос, который серия обязана проработать качественно: **какое отношение
+было к избранным, когда они были ещё неверующими, — одинаковое с другими или есть разница?** и связанный с ним
+вопрос «во времени или вне времени». До сих пор ответы собирались по вторым рукам и по Турретину (раунд 38).
+Дочитав эмденское суждение (§4.97), я открыл следующий документ тома — **британское суждение о III и IV
+артикулах** («BRITANNORUM THEOLOGORUM Sententia De III. & IV. Articulis», лл. 127 и след.) — и в нём обе части
+вопроса разобраны **прямо, своими словами, с Писанием и отцами**. Новый локатор — **S154** (PD; **A2**; OCR;
+атрибуция по заголовку на л. 127, подписи не дочитаны).
+
+**1. Предшествующие обращению действия (тезисы I–II, л. 128).** Сначала устанавливается, что Бог обыкновенно
+ведёт человека к оправданию **не sudden вдохновением**, а через многие предварительные действия: «*Ad statum
+justificationis… non solet gratia divina homines perducere per subitum enthusiasmum, sed multis praeviis
+actionibus ministerio Verbi subactos, & praeparatos*». Предварительные действия перечислены: «*noticia voluntatis
+divinae, sensus peccati, timor poenae, cogitatio de liberatione, spes aliqua veniae*» — **познание воли Божией,
+чувство греха, страх наказания, помышление об избавлении, некая надежда прощения**. И — с оговоркою против
+энтузиазма, которую серия должна запомнить: «*Haec Spiritualis nativitas praesupponit animum excitatum per
+Spiritum organo verbi divini utentem. Unde & renati dicimur ex incorrupto semine verbi 1 Pet 1:23. **Quod
+observandum est, ne quis Enthusiasticam regenerationem desidiosus expectet, absque ulla aut Dei, aut verbi, aut
+sui actione praevia***».
+
+**2. «Ничего здесь не делается притворно» (тезис III, л. 129) — перекличка с Эмденом.** «*Quos Deus mediante
+Verbo per Spiritum suum hunc in modum afficit, eos ad fidem, conversionemque **vere, & serio** vocat, &
+invitat*». И обоснование: «*Ex natura beneficii oblati, & Verbo Dei apertissimo judicandum est de illis gratiae
+auxiliis, quae hominibus suppeditantur, **non autem ex abusu, aut eventu**… nihil hic **simulate** a Deo agi
+putandum est*». **Находка:** слово ***simulate***, которым эмденская делегация обвиняла ремонстрантов (§4.97 п. 5:
+«Deus… simulate agit»), здесь употреблено британцами, чтобы **отвести то же обвинение от себя**. То есть упрёк
+«при вашем учении Бог притворно зовёт тех, кого не намерен спасти», был **известен на Дорте и на него отвечали
+две делегации независимо**. Способ ответа у британцев: судить о благодати **по природе предлагаемого блага и по
+слову**, а не по злоупотреблению или исходу.
+
+**3. Тезис IV (л. 129) — Бог не оставляет прежде, чем его оставят.** «*Quos ita afficit, Deus non deserit, nec
+desistit in vera ad conversionem via promovere, **priusquam ab illis** per negligentiam voluntariam, aut hujus
+gratiae initialis repulsam, **deseratur***». Свидетельства: Притч. 1:24; 2 Пар. 24:20; и Августин (или Проспер),
+*ad Articulos falso impositos*, 7: «*…ut in bona voluntate maneatur, qui [e] priusquam deseratur neminem deserit,
+& multos desertores saepe convertit*».
+
+**4. Тезис V (л. 129) — предварительные действия могут быть задушены.** «*Hi praecedanei effectus, virtute Verbi
+Spiritusque in hominum mentibus producti, rebellis voluntatis vitio, suffocari ac penitus extingui possunt, &
+**in multis solent***» — с Матф. 13:19; 2 Пет. 2:21; **Евр. 6:4** — и с длинной цитатой из Проспера, *de
+Vocatione* II.2: «*Multi cito intellectus lumen accipiunt, ipsa autem intelligentia non in omnibus eundem habet
+vigorem, aut similem facultatem; & plurimi cum & fide & intellectu videantur ornati, laborant tamen indigentia
+charitatis… quoniam perseverari in eo non potest, quod non toto corde diligitur*».
+
+**5. Тезис VI (л. 130) — прямой ответ на вопрос об избранных до обращения.** «*Ne electi quidem ipsi in hisce
+praecedaneis ad regenerationem actibus ita se gesserunt unquam, quin propter negligentiam & resistentiam suam
+**possint juste a Deo deseri & derelinqui**; sed ea est erga eos **specialis Dei misericordia**, ut, quamvis hanc
+gratiam excitantem & illuminantem aut repellant aliquamdiu, aut suffocent, **eos tamen iterum, iterumque
+urgeat Deus, nec desistat promovere, donec eosdem gratiae suae prorsus subjugaverit, ac in statu filiorum
+regeneratorum collocaverit***». И следствие, ради которого это написано: «*Quod si ita non pergeret Deus etiam
+reclinantes & refugientes prosequi, nulla vocatio redderetur efficax, nulla emergeret filialis adoptio,
+**ipsaque in Dei beneplacito fundata electio frustraretur***». Свидетельства: Ин. 6:37; Иер. 14:7; 32:39; Флп.
+1:6; Августин, *de Perseverantia*.
+
+**6. Ответ серии на вопрос раунда 19, сформулированный по документу.** Разница **есть**, но она **не в состоянии
+и не во времени**: (а) избранные до обращения **могут быть по справедливости оставлены** — «possint juste a Deo
+deseri» — то есть в них самих нет ничего, что отличало бы их от прочих: та же небрежность, то же противление;
+(б) разница — в **особом милосердии Божием** («specialis Dei misericordia»), которое гонит их снова и снова, пока
+не покорит; (в) и эта разница **не есть снятие гнева до обращения**: документ говорит о «предшествующих
+обращению действиях» в сердцах **неоправданных** («in nondum justificatorum cordibus»), то есть о людях, ещё не
+имеющих мира с Богом. **Формулировка для серии: до обращения избранный ничем не отличается от прочих в себе; он
+отличается тем, чтó Бог делает с ним далее — и это «далее» есть действие Его особого милосердия, а не изменение
+естественного состояния.**
+
+**7. Тезис VII (л. 130) — неизбранные.** «*Non electos in hisce praecedaneis ad regenerationem actibus, divino
+Spiritui, gratiaeque resistentes, ejusdemque initialia effecta in se ipsis **liberi sui arbitrii vitio**
+exstinguentes, Deus, quandocunque ipsi visum fuerit, **juste derelinquit**: quos sua culpa derelictos, eodem
+demerito manere induratos, & inconversos vere pronunciamus*». И осторожная формула о причине: «*Putamus extra
+omnem dubitationis aleam positum esse, neminem mortalium ita se gerere erga Deum, quin mereatur gratiae
+collatae subductionem, vel omittendo aliquid, quod facere debuit, vel faciendo, quod non debuit*», — с Рим.
+9:18; 11:35; Ин. 5:34, 40; Деян. 28:27. **Для серии: погибель неизбранных описана как «по своей вине»
+(«sua culpa inconversus perit»), а причина оставления полагается в человеке, а не в скудости благодати.**
+
+**8. «Во времени или вне времени» — прямой ответ документа (л. 131).** Раздел «De conversione, qua denotat
+actionem hominis… se ad Deum convertentis», тезис I: «*Ordine temporis **vix distingui possunt** opus Dei
+convertentis hominem, & actio hominis se convertentis ad Deum; **ordine tamen causalitatis, divinum opus
+praecedat, nostra operatio sequatur, est necesse***». **Это именно то различение, которого требовал вопрос
+раунда 19: граница проходит не по времени (во времени они едва различимы), а по порядку причинности.** Образ:
+«*Mala arbor fructus malos sua natura proferens, prius in bonam ipsa mutetur opus habet, quam fructum ullum
+bonum proferat. Hominis autem nondum regeniti voluntas non modo mala est arbor, sed & **mortua***». И Августин:
+«*Non ideo bene currit rota, ut rotunda sit, sed quia rotunda est. Sic & nos dicimus, non ideo bene currit
+voluntas ut regenerata sit, sed quia jam regenerata est*». Гуго Сен-Викторский: «*Gratia reparatrix hominis
+voluntatem aspirat, ut sit, deinde bonae voluntati inspirat, ut moveatur: primum operatur eam, deinde per
+eam*».
+
+**9. Четвёртая формула пары «мочь и хотеть» — и она британская (л. 131).** «*Deum non modo efficere habitualem
+illam mutationem, qua homo novas spirituales vires acquirit ad credendum & convertendum, sed etiam mira quadam
+arcana operationis efficacia prolicere ex sanata voluntate ipsum actum credendi & convertendi*». И затем —
+решающее: «*Quod si, vires quasdam infundendo, daret Deus **tantum posse credere**… libero arbitrio a Deo
+deficeremus, nec nobilitatem hanc in actum perduceremus. Haec itaque eximia illa **specialis gratia Electis in
+Christo concessa, qua non modo possunt credere, sed & ipsum…** [текст повреждён OCR]… Phil. 2:13. Dat Deus nobis
+& velle & perficere*». **Следствие для §4.98 п. 3: пар «мочь и хотеть» теперь четыре, и одна из них — из
+британского суждения по другому артикулу.** Значит, это **общий язык Синода**, а не словарь одной делегации.
+Ср. «*Omnis, qui didicit a Patre, non solum **potest venire, sed venit**; ubi jam & **possibilitas** profectus, &
+voluntatis affectus, & actionis effectus est*» (Августин).
+
+**10. Человек — страдателен в возрождении, но акт веры принадлежит ему (лл. 131–132).** «*Ad hoc ipsum opus
+regenerationis **habet se homo passive**, neque est in voluntate potestatis humanae impedire Deum sic immediate
+regenerantem*» (Ин. 1:13; Иер. 13:23; 17:14). Схоластическая опора: Проспер — «*gratiam ipsam esse bonorum in
+nobis **creatricem***»; Фома Аквинский — эта благодать даёт «*quoddam esse formale ipsi animae, eamque quandam
+supernaturalem participationem divinae… se habere ad animum, **sicut sanitatem ad corpus***». И равновесие,
+которое серия обязана цитировать целиком: «*hanc Dei actionem in prolicienda fide non impedire, imo facere, ut
+ipsa voluntas simul agat, & actum suum eliciat. Ideoque **actus credendi, utcunque a Deo immittatur, tamen, quia
+ab homine exercetur, ipsi homini tribuitur***». И Августин: «*Certum est nos credere, cum credimus, sed **Deus
+facit ut credamus**. Nos operamur, sed **Deus operatur in nobis operari***». Тезис II: «*Divina haec actio non
+laedit voluntatis libertatem, sed **roborat**: neque tamen exstirpat radicitus vitiosam resistendi
+possibilitatem; sed efficaciter & **suaviter** dat homini firmam oboediendi voluntatem*».
+
+**11. Что это даёт серии.** (а) Вопрос раунда 19 получил **документальный ответ 1619 г.**, а не реконструкцию.
+(б) Грань между «в себе» и «в Боге» проведена **внутри одного документа**: избранный до обращения может быть
+справедливо оставлен; не оставлен он только особым милосердием. (в) Грань «во времени / вне времени» проведена
+как **порядок причинности**, со ссылкою на то, что во времени они «едва различимы». (г) Обвинение в «притворном
+призвании» не выдумано критиками реформатского учения: оно звучало на Синоде, и на него отвечали.
+(д) Четвёртая пара «мочь и хотеть» подтверждает вывод §4.98 п. 3 и расширяет его: **это язык всего Синода**.
+
+**12. Оговорки.** Текст — OCR (A2), сверка с изображением не производилась. Подписи британского суждения **не
+дочитаны** (л. 132 и след.); атрибуция — по заголовку на л. 127; `ATTRIBUTION_HOLD` **не снимается** до сличения
+с оглавлением тома. Одно место (Флп. 2:13, «qua non modo possunt credere, sed & ipsum…») повреждено OCR и
+цитируется с пропуском.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -4981,6 +5101,7 @@ volet»); (б) имело **определённое содержание** — 
 | 1618–1619 *(раунд 49)* | **Эмденское «Breve Examen», вопросы VI–X** (S153, лл. 121–124): второе свидетельство формулы «**possibilitas & velleitas**»; «**Sincere dicimus… illum hominem, qui Christi meritum & efficaciam… separat, a nobis pro haeretico haberi**»; десять оснований против обусловленной воли; «**juxta caritatis judicium bene de omnibus speramus**»; собственное определение ремонстрантов: impetratio = «**januam gratiae aperire… quicunque volet**» (*Coll. Hag.* 172, лат. Брандия); «**Ore itaque Christo hanc applicationem, reipsa autem ipsi homini tribuunt**» |
 | 1618–1619 *(раунд 49)* | **Эмденское «Breve Examen», вопросы XI–XVII** (S153, лл. 124–126): вменяется «**ipse fidei actus**»; ремонстранты заменили «**loco nostro**» на «**pro nobis**»; «Fideles… ad consolationem suam; infideles ad historicam narrationem»; гибнущие овцы; Иоанн Арнольди, сс. 100 и след.; «**pro omnibus & singulis aequaliter**»; Каин и Иуда с листом (*ad Walachr.* 51) и ссылкою на **Антония Валея** |
 | 1618–1619 *(раунд 49)* | **Эмденское «Breve Examen», вопросы XVIII–XXI и конец суждения** (S153, лл. 125–127): «**Christus non summe diligit eos pro quibus mortuus est**» — с листами *Coll. Hag.* 193, 207; два ходатайства — «pro infidelibus, quoad impetrationem, pro fidelibus, quoad applicationem» (198, 199); «**Passio Christi tendat tantum ad salutem impetrandam, electio autem ad applicandam**» (*Coll. Hag.* 201); «**Deus… simulate agit**»; конец: «**a Clarissimis Doctoribus D. Balcanquallo, & D. Crucigero viva voce refutati**… considerationes nostras circa secundum Articulum **finimus**» |
+| 1618–1619 *(раунд 49)* | **Британское суждение о III–IV артикулах** (S154, лл. 127–132): избранные до обращения «**possint juste a Deo deseri**», но «**specialis Dei misericordia**… iterum, iterumque urgeat Deus… donec… prorsus subjugaverit»; иначе «**ipsaque in Dei beneplacito fundata electio frustraretur**»; «**Ordine temporis vix distingui possunt** opus Dei convertentis hominem, & actio hominis se convertentis ad Deum; **ordine tamen causalitatis**, divinum opus praecedat»; «nihil hic **simulate** a Deo agi putandum est»; «si… daret Deus **tantum posse credere**» — четвёртая формула пары «мочь и хотеть»; «actus credendi, utcunque a Deo immittatur… **ipsi homini tribuitur**» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -5281,6 +5402,20 @@ volet»); (б) имело **определённое содержание** — 
   `ATTRIBUTION_HOLD` (Оверэйссел, л. 134; имя второго бременского суждения), C-16 — **без изменений**.
 - Раунд 49: «снято молча» — **0**; добавлены §§4.95–4.98, **S153**, три строки хронологии, пп. 188–193.
 
+- **Раунд 49, продолжение: британское суждение о III–IV артикулах — новый локатор S154.** Прочитаны чанки
+  249 (окончание) — 251: лл. 127–132, «BRITANNORUM THEOLOGORUM Sententia De III. & IV. Articulis» (PD; **A2**;
+  OCR; атрибуция **по заголовку**, подписи не дочитаны ⇒ `ATTRIBUTION_HOLD` **оставлен**). Главное — прямой
+  документальный ответ на вопрос серии из раунда 19: избранные до обращения могут быть по справедливости
+  оставлены, отличие их — в **особом милосердии Божием**, которое гонит их снова и снова («iterum, iterumque
+  urgeat»), а грань между делом Божиим и действием человека проведена **как порядок причинности, а не времени**
+  («ordine temporis vix distingui possunt… ordine tamen causalitatis»). Сверх того: «nihil hic **simulate** a Deo
+  agi» (то же слово, что у Эмдена против ремонстрантов) и **четвёртая** формула пары «мочь и хотеть» («si daret
+  Deus tantum posse credere»), что подтверждает вывод §4.98 п. 3 и расширяет его на весь Синод. Одно место
+  повреждено OCR и цитируется с пропуском. `EVIDENCE_HOLD`, `PUBLICATION_HOLD`, `RIGHTS_HOLD`, C-16 — без
+  изменений.
+- Раунд 49, итог по источнику: **S153** (эмденское суждение, лл. 121–127) и **S154** (британское, лл. 127–132)
+  открыты; **S155 и далее — не открыты**; британские подписи и суждения по V артикулу не читались.
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -5302,6 +5437,21 @@ est condemnatio… possunt dicere, Christus est pro me mortuus». Это сам�
 52, 84–86: это те листы, на которых держатся четыре главные находки раунда (определение impetratio; любовь
 Христова; страсть/избрание; Каин и Иуда). До сверки цитировать с пометкою «по OCR, лист не сверен с
 изображением».
+
+**Добавлено в раунде 49 (продолжение):**
+
+194. *(раунд 49)* **Дочитать британское суждение о III–IV артикулах** (S154 обрывается на л. 132): подписи
+(аттестация делегации — снять `ATTRIBUTION_HOLD`), тезисы о свободе воли (тезис II и далее) и раздел о
+персеверанции, если он есть.
+195. *(раунд 49)* **Перенести ответ на вопрос раунда 19 в `synthesis/03`** (уже сделано частично, §19) и
+проверить, не расходится ли он с формулировками раунда 38 (§4.42, 4.43). Если расходится — держать обе
+формулировки с указанием документов.
+196. *(раунд 49)* **Пополнить §4.98 п. 3**: пар «мочь и хотеть» теперь **четыре** (британская добавлена).
+Проверить по остальным суждениям, нет ли пятой.
+197. *(раунд 49)* **Слово *simulate*** — собрать все места корпуса: Эмден (§4.97 п. 5, обвинение ремонстрантам)
+и Британия (§4.99 п. 2, ответ на то же обвинение). Проверить, не звучало ли оно в самих Канонах (II.5 /
+Rejectio). Это самый короткий способ показать, что упрёк в «неискреннем призвании» был предметом спора на Синоде,
+а не позднейшим изобретением критиков.
 
 **Добавлено в раунде 48:**
 

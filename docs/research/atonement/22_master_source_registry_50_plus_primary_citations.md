@@ -263,6 +263,33 @@
     - 42cl. *Дополнение 2026-10-19 (раунд 47; `34_` §§4.91–4.92, S149–S152; `06_` §16; `03_` §16; `16_` §11; `01_` §7;
     - 42cm. *Дополнение 2026-10-19 (раунд 48; `34_` §§4.93–4.94; `06_` §17; `03_` §17; `16_` §12; `01_` §8;
     - 42cn. *Дополнение 2026-10-19 (раунд 49; `34_` §§4.95–4.98; **S153**; `06_` §18; `03_` §18; `16_` §13;
+    - 42co. *Дополнение 2026-10-19 (раунд 49, продолжение; `34_` §4.99; **S154**; `synthesis/03_` §19):*
+      **британское суждение о III–IV артикулах** («BRITANNORUM THEOLOGORUM Sententia De III. & IV. Articulis»,
+      лл. 127–132; чанки 249 (окончание) – 251) — PD; **A2**; OCR; атрибуция **по заголовку**, подписи не
+      дочитаны ⇒ `ATTRIBUTION_HOLD` **оставлен**. **Главное — прямой документальный ответ на вопрос серии из
+      раунда 19 (избранные до обращения).** Тезис VI: «*Ne electi quidem ipsi in hisce praecedaneis ad
+      regenerationem actibus ita se gesserunt unquam, quin propter negligentiam & resistentiam suam **possint
+      juste a Deo deseri & derelinqui**; sed ea est erga eos **specialis Dei misericordia**, ut… **eos tamen
+      iterum, iterumque urgeat Deus**, nec desistat promovere, donec eosdem gratiae suae prorsus subjugaverit,
+      ac in statu filiorum regeneratorum collocaverit*»; иначе «*nulla vocatio redderetur efficax… ipsaque in
+      Dei beneplacito fundata **electio frustraretur***». Предшествующие действия — «in **nondum
+      justificatorum** cordibus»: notitia voluntatis divinae, sensus peccati, timor poenae, cogitatio de
+      liberatione, spes aliqua veniae. Тезис V: praecedanei effectus могут быть «suffocari ac penitus
+      extingui… & **in multis solent**» (Евр. 6:4; Проспер, *de Vocat.* II.2). Тезис III: «*nihil hic
+      **simulate** a Deo agi putandum est*» — то же слово, что у Эмдена против ремонстрантов (§4.97). Тезис IV:
+      Бог не оставляет прежде, чем Его оставят (Августин/Проспер, *ad Artic. falso impos.* 7). Тезис VII:
+      неизбранные «*juste derelinquit… sua culpa inconversus perit*». Раздел «De conversione»: «***Ordine
+      temporis vix distingui possunt** opus Dei convertentis hominem, & actio hominis se convertentis ad Deum;
+      **ordine tamen causalitatis**, divinum opus praecedat, nostra operatio sequatur, est necesse*»; Августин
+      «*Non ideo bene currit rota, ut rotunda sit, sed quia rotunda est*»; Гуго Сен-Викторский «*primum operatur
+      eam, deinde per eam*». **Четвёртая формула пары «мочь и хотеть»:** «*si, vires quasdam infundendo, daret
+      Deus **tantum posse credere**… Haec… **specialis gratia Electis in Christo concessa**… Phil. 2:13*».
+      Регенерация: «*habet se homo **passive***»; Фома Аквинский — благодать даёт animae «quoddam esse
+      formale… **sicut sanitatem ad corpus**»; Проспер — «*gratia… bonorum in nobis **creatrix***». Равновесие:
+      «*actus credendi, utcunque a Deo immittatur, tamen, quia ab homine exercetur, **ipsi homini
+      tribuitur***»; Августин — «*Deus facit ut credamus. Nos operamur, sed Deus operatur in nobis operari*».
+      И против энтузиазма: «*ne quis **Enthusiasticam** regenerationem desidiosus expectet, absque ulla aut Dei,
+      aut verbi, aut sui actione praevia*». Одно место повреждено OCR (Флп. 2:13) и цитируется с пропуском.
       `01_` §9; `synthesis/03_` §18):* **доступ восстановлен** — работает `/download/actasynodination00syno/
       actasynodination00syno_djvu.txt` (453 чанка; в `/stream/` — 455, сдвиг ≈ +1 к номеру чанка). Прочитаны
       чанки 246–249: **эмденское «Breve Examen», лл. 121–127, вопросы VI–XXI, до конца суждения** — новый локатор

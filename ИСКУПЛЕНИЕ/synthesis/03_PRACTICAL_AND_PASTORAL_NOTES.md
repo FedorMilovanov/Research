@@ -349,3 +349,66 @@ neminem beare potest*») это даёт серии **две опоры для �
 (1) кто прилагает; (2) чтó вменяется — правда Христова или самый акт веры; (3) любит ли Христос тех, за кого
 умер, высшею любовью; (4) совершенна ли Satisfactio. **Без этих четырёх ответов фраза «Христос умер за всех, но
 спасает верующих» не утешает, а отсылает человека к его собственному хотению.**
+
+
+## 19. Дополнение (2026-10-19; раунд 49; кросс-досье `34_` §4.99, S154): избранные до обращения — документальный
+ответ 1619 г.
+
+**19.1. Вопрос, на который отвечает этот раздел.** Из раунда 19: *«Христос заклан от создания мира, за
+определённых овец? Какое отношение к ним было, когда они были ещё неверующими? Одинаковое с другими? Или есть
+разница?»* До сих пор серия отвечала по вторым рукам (раунд 38, §§4.42, 4.43). Теперь найден прямой текст:
+**британское суждение о III–IV артикулах**, лл. 127–132, тезисы I–VII раздела «об предшествующих обращению».
+
+**19.2. Ответ документа, тремя положениями.**
+**(а) В себе — одинаковое.** «*Ne electi quidem ipsi in hisce praecedaneis ad regenerationem actibus ita se
+gesserunt unquam, quin propter negligentiam & resistentiam suam **possint juste a Deo deseri & derelinqui***».
+Даже избранные в предшествующих действиях ведут себя так, что могут быть **по справедливости оставлены**. Никакой
+разницы «в них самих» документ не полагает.
+**(б) Разница — в том, чтó Бог делает далее.** «*Sed ea est erga eos **specialis Dei misericordia**, ut, quamvis
+hanc gratiam excitantem & illuminantem aut repellant aliquamdiu, aut suffocent, **eos tamen iterum, iterumque
+urgeat Deus**, nec desistat promovere, donec eosdem gratiae suae prorsus subjugaverit, ac in statu filiorum
+regeneratorum collocaverit*».
+**(в) И без этого действия избрание не достигло бы цели.** «*Quod si ita non pergeret Deus etiam reclinantes &
+refugientes prosequi, nulla vocatio redderetur efficax, nulla emergeret filialis adoptio, **ipsaque in Dei
+beneplacito fundata electio frustraretur***».
+
+**19.3. Где именно проходит грань, и почему это не «снятие гнева до обращения».** Предшествующие действия
+совершаются «*in nondum justificatorum cordibus*» — в сердцах **неоправданных**. Перечень их: «*noticia
+voluntatis divinae, sensus peccati, timor poenae, cogitatio de liberatione, spes aliqua veniae*». То есть человек
+ещё **не имеет мира с Богом**, но уже познаёт волю, чувствует грех, боится наказания, помышляет об избавлении и
+имеет некую надежду прощения. **Практика:** состояние пробуждённого, но не обращённого грешника описано на Дорте
+как реальное и многообразное; сводить его к «уже примирён» или к «ничего не произошло» одинаково неверно.
+
+**19.4. «Во времени или вне времени» — ответ документа.** «*Ordine temporis **vix distingui possunt** opus Dei
+convertentis hominem, & actio hominis se convertentis ad Deum; **ordine tamen causalitatis, divinum opus
+praecedat, nostra operatio sequatur, est necesse***». Образ Августина: «*Non ideo bene currit rota, ut rotunda
+sit, sed quia rotunda est*» — колесо бежит хорошо не для того, чтобы стать круглым, а потому что оно кругло.
+**Практика:** когда верующий спрашивает «в какой момент я уверовал — я или Бог?», отвечать следует не хронологиею,
+а порядком причинности; **во времени они едва различимы**, и пытаться их развести — значит задавать вопрос не в
+том регистре.
+
+**19.5. Обвинение в «притворном призвании» звучало на Синоде, и на него отвечали.** Британское суждение: «*…
+nihil hic **simulate** a Deo agi putandum est*», с основанием: судить о благодати следует «*ex natura beneficii
+oblati, & Verbo Dei apertissimo… **non autem ex abusu, aut eventu***». То же самое слово Эмден употребил как
+обвинение против ремонстрантов (§4.97 п. 5: «Deus… simulate agit»). **Практика:** упрёк «ваш Бог зовёт тех, кого
+не намерен спасти, значит притворяется» — не позднейшее изобретение критиков; он был известен и обсуждался в
+1618–1619 гг. Ответ серии: судить по предлагаемому благу и по слову, а не по исходу.
+
+**19.6. Четвёртая формула пары «мочь и хотеть» — теперь она общесинодальная.** «*Quod si, vires quasdam
+infundendo, daret Deus **tantum posse credere**… libero arbitrio a Deo deficeremus… Haec itaque eximia illa
+**specialis gratia Electis in Christo concessa**, qua non modo possunt credere… Phil. 2:13. Dat Deus nobis &
+velle & perficere*». **Практика:** если благодать даёт только «мочь», то вера в конечном счёте зависит от
+человека. Утешение держится на том, что Бог даёт **и хотеть, и совершать**.
+
+**19.7. Акт веры принадлежит человеку — и это не оговорка, а равновесие.** «*actus credendi, utcunque a Deo
+immittatur, tamen, quia ab homine exercetur, **ipsi homini tribuitur***». И Августин: «*Certum est nos credere,
+cum credimus, sed Deus facit ut credamus. Nos operamur, sed Deus operatur in nobis operari*». **Практика:**
+проповедь должна одновременно говорить «веруй» (акт твой) и «Бог производит в вас и хотение и действие» (дар
+Его). Опускать второе — пелагианство; опускать первое — снимать ответственность и утешение личного акта.
+
+**19.8. Осторожность против энтузиазма — из того же документа.** «*ne quis **Enthusiasticam** regenerationem
+desidiosus expectet, absque ulla aut Dei, aut verbi, aut sui actione praevia*». **Практика:** ожидание
+возрождения без слова, без слушания и без собственного действия названо ленивым.
+
+**19.9. Оговорка.** Текст — OCR (A2), без сверки с изображением; британские подписи не дочитаны, атрибуция по
+заголовку (п. 194 `34_`). Одно место повреждено OCR и цитируется с пропуском.
