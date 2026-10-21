@@ -262,6 +262,48 @@
     - 42ck. *Дополнение 2026-10-19 (раунд 46; `34_` §§4.89–4.90, S150 (продолжение), S151; `06_` §15; `03_` §15; `16_` §10; `01_` §6; `ИСКУПЛЕНИЕ/synthesis/03_` §15):*
     - 42cl. *Дополнение 2026-10-19 (раунд 47; `34_` §§4.91–4.92, S149–S152; `06_` §16; `03_` §16; `16_` §11; `01_` §7;
     - 42cm. *Дополнение 2026-10-19 (раунд 48; `34_` §§4.93–4.94; `06_` §17; `03_` §17; `16_` §12; `01_` §8;
+    - 42cn. *Дополнение 2026-10-19 (раунд 49; `34_` §§4.95–4.98; **S153**; `06_` §18; `03_` §18; `16_` §13;
+      `01_` §9; `synthesis/03_` §18):* **доступ восстановлен** — работает `/download/actasynodination00syno/
+      actasynodination00syno_djvu.txt` (453 чанка; в `/stream/` — 455, сдвиг ≈ +1 к номеру чанка). Прочитаны
+      чанки 246–249: **эмденское «Breve Examen», лл. 121–127, вопросы VI–XXI, до конца суждения** — новый локатор
+      **S153** (PD; **A2**; OCR). Атрибуция та же, что у S152: заголовок «Breve Examen… Embdensium Ministrorum»
+      на л. 118; внутри до л. 127 нет ни одного нового заголовка делегации; на л. 127 — маркер конца «hic
+      considerationes nostras circa secundum Articulum finimus», после чего без пропуска идёт «BRITANNORUM
+      THEOLOGORUM Sententia De III. & IV. Articulis». **Пункт 178 закрыт; внешняя серия суждений по II артикулу
+      прочитана целиком.** *Содержание:* **(VI)** второе свидетельство формулы «**possibilitatem & velleitatem**»
+      — отныне она **не бременская**, а общая для двух делегаций; антитеза 6 «условия Нового Завета не только
+      заповеданы, но и обещаны»; антитеза 7 «**vivam consolationem afflictis conscientiis eripiunt**».
+      **(VII)** десять оснований против обусловленной воли, в том числе «homo semetipsum eligit» и «**decretum
+      Dei pendet a praescientia ejus, non praescientia a decreto**». **(VIII)** «**juxta caritatis judicium bene
+      de omnibus speramus**» + отказ называть отверженных. **(IX)** чтó у ремонстрантов есть impetratio: их же
+      словами, *Coll. Hag.* с. 172 (лат. Брандия) — «Deus… **peccatori januam iterum aperuerit gratiae suae**,
+      quamvis nemo… nisi per fidem»; «quicunque volet»; диагноз «manifestum **Socinianismum una cum
+      Pelagianismo**»; катена: Арминий *in articulis perpendendis* **33, 34**, *ad Hippol.*; Епископий, *de
+      justific.* Thes. 4 (с. 63), Thes. 5–6; *ad Articulos Delphenses*; и — **документальная находка** — «pro
+      verbis **loco nostro** substituerunt verba **pro nobis**»; антитеза 2 «non tantum velle credere, neque
+      tantum posse credere». **(X)** «**Ore itaque Christo hanc applicationem, reipsa autem ipsi homini
+      tribuunt**»; приложение совершает один Бог, «fide, quae **purum putum Dei donum** est». **(XI)**
+      вменяется «**ipse fidei actus**»; Арминий: «τὸ credere… imputari in justitiam, **proprio sensu non
+      metonymice**»; *ad Walachr.* 84–86. **(XII)** «Fideles… **ad consolationem suam**; infideles **ad
+      historicam narrationem**» (*Coll. Hag.* 187–188) и антитеза «Nulli, nisi ii in quibus **nulla est
+      condemnatio**… possunt dicere, Christus est pro me mortuus» (Рим. 8). **(XIII–XIV)** гибнущие овцы
+      (*Coll. Hag.* 183, 185–186). **(XV)** средство; **Иоанн Арнольди**, cap. 3, сс. 100 и след.; «Alius modus
+      salvandi homines… in Scriptura non traditur». **(XVI)** «non fuisse Christi intentionem dare se in precium
+      **pro omnibus & singulis aequaliter**» — возможный регистр «меры»; «Alioqui illorum **perfectus servator**
+      non esset». **(XVII)** Каин и Иуда с листом (*ad Walachr.* 51) и ссылкою на **Антония Валея** (*Coll. Hag.*
+      207). **(XVIII)** «An Christus **summe diligat** eos, pro quibus mortuus est. **Negant** Remonstrant. Coll.
+      Hag. 193 & 207, quia partam salutem non applicet omnibus… quamvis omnibus parta sit»; антитеза: «palam S.
+      Scripturae contradicere & turpiter mentiri». **(XIX)** два ходатайства: «pro infidelibus, quoad
+      impetrationem, pro fidelibus, quoad applicationem» (*Coll. Hag.* 198–199). **(XX)** «**Passio Christi
+      tendat tantum ad salutem impetrandam, electio autem ad applicandam & communicandam**» (*Coll. Hag.* 201) и
+      ответ: страсть «reipsa & revera eam peperit, & **Spiritum simul regenerationis meruit**». **(XXI)** «Deus
+      non dans homini, **ut possit & velit credere**… **simulate agit**»; «nihil potuit ab aeterno certi statuere
+      Deus». **Конец:** «a Clarissimis Doctoribus **D. Balcanquallo, & D. Crucigero viva voce refutati**…
+      finimus». **Четыре поправки к досье (§4.98):** (1) формула «possibilitas & velleitas» — общая, не
+      бременская (п. 189); (2) таблица §4.93 пополнена листами *Coll. Hag.* 172, 179, 183, 185–193, 198–201, 207,
+      *ad Walachr.* 51, 52, 84–86, Арминия 33–34, Епископия, Арнольди; **Гревинховен остаётся на одном
+      свидетельстве** (п. 186 не закрыт); (3) **три пары «мочь и хотеть»** — цитировать раздельно; (4) возможный
+      шестой регистр («aequaliter», п. 192) — до проверки не нумеровать.
       `ИСКУПЛЕНИЕ/synthesis/03_` §17):* **рабочая сводка без новых чтений** (`archive.org` недоступен: повторные
       запросы к заведомо работавшим чанкам 246–248 и к `/download/…_djvu.txt` возвращают ошибку; три попытки с
       паузами). **(1) Сводная таблица ремонстрантских ссылок по всем прочитанным суждениям.** *Collatio
