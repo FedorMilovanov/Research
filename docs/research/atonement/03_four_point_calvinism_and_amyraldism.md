@@ -605,3 +605,54 @@ aequaliter***». Здесь спор идёт не о том, **за кого** 
 **18.6. Оговорка о доступе и об OCR.** Раунд читался по восстановленной базе `/download/…_djvu.txt`; часть листов
 (*Coll. Hag.* 188, 191; Арнольди, с. 370; *ad Hippol.*) восстановлена по контексту и помечена uncertain. Все
 латинские цитаты раунда — **A2, OCR, без сверки с изображением** (п. 193 `34_`).
+
+
+## 19. Дополнение (2026-10-19; раунд 50; кросс-досье `34_` §§4.100–4.102, S154–S155): чтó британское суждение
+говорит о «равной благодати»
+
+**19.1. Самый прямой текст против амиральдианского допущения.** Отвергнутая теза II формулирует вопрос, который
+стоит в центре сомюрской схемы: «*Si morali tantum suasione homines ad Deum converterentur, tum haec quaestio,
+**Cur oblata aequali gratia, hic credat, ille non credat**, per liberi arbitrii velle & nolle solveretur*».
+**Логическая форма возражения:** при **равной** благодати различие между верующим и неверующим может объясняться
+только самим человеком. Британцы считают это не выводом, который можно принять, а **признаком ложности
+посылки**. Ответ — не «один лучше распорядился», а Августин: «*Conversionem & fidem ex **occulta Dei gratia**
+esse, quae **datur aliis secundum misericordiam, aliis non datur secundum justitiam***».
+
+**19.2. «Равновесие» — вторая форма того же допущения.** Отвергнутая теза III: «*Positis omnibus gratiae
+operationibus… voluntatem hominis relinqui in **aequilibrio**, velitne credere, vel non credere*». Три возражения,
+и каждое работает против всякой схемы «равного предложения»:
+**(а)** «*Quod ergo **minus** est, voluntas accepit a Deo… quod autem **majus** est, ipsumque **eventum
+specificat**, **sibi ipsi praestitit voluntas ipsa**, nempe ut actu crederet*». **Чтó меньше — получено от Бога;
+чтó больше и чтó определяет самый исход — доставлено себе самой волею.**
+**(б)** «*non majorem a Deo gratiam exhibitam electis, quam non-electis… voluntatis aequilibrium, **quod in
+puncto consistit, nec latitudinis est capax***» — равновесие есть **точка**, и потому при нём невозможно
+утверждать бóльшую благодать одним, чем другим.
+**(в)** «*Gratia convertens ea intentione datur, ut sit efficax… ad ipsum fidei actum **infrustrabiliter**
+eliciendum*»; Августин, *de praedestinatione sanctorum* 8: «*Haec gratia a nullo duro corde respuitur: ideo
+quippe tribuitur, ut **cordis duritia primitus auferatur***».
+
+**19.3. Чтó это даёт оценке схемы.** Сомюрская схема (Камерон — Амиро — Тестар) утверждает, что при
+универсальном decree Бог даёт всем **достаточную** благодать, а различие производится человеком. Британское
+суждение 1619 г. показывает, что **та же самая логическая структура** уже была отвергнута Синодом — и отвергнута
+не потому, что она «слишком милостива», а потому, что она приписывает человеку «чтó больше» и упраздняет
+благодать как причину самого акта веры. **Для досье `03_` это меняет характер критики: возражение против
+амиральдианства на Дорте — не о количестве спасённых, а о том, кто автор веры.**
+
+**19.4. «Мягкое внушение» — общее место, и его надо различать.** Британцы **не отрицают** морального убеждения:
+«*Non inficiamur… Deum adhibere comminationum, promissionum, aliarumque hortationum vim suasoriam… verum ad
+ipsam hujusce negotii catastrophen infallibiliter producendam **potentius semper ac insuperabilius
+operatur***». **Следствие для серии:** различие проводится не между «убеждением» и «насилием», а между
+убеждением, **достаточным причиной**, и убеждением как **приуготовлением**. Основание (1) звучит так: «*Qualis
+unusquisque est, talem ei finem videri*» — каков человек, таковым и представляется ему конечная цель; потому
+«*potenti operatione, omnem suasionem excellente, superanda ac immutanda est voluntas*».
+
+**19.5. Пятая формула пары «мочь и хотеть» и perseverance.** «*Ad illos [actus principales] eliciendos sic
+operatur gratia, ut **det electis suo tempore & posse, & velle, & perficere***». Пара распространена на
+**главные акты** — обращение, веру, **пребывание**; к частным же последующим актам благодать подаётся так, что
+человек «*gratiae deesse possit*». **Для досье `03_`:** это уточняет место, где амиральдианская схема
+расходится с дортской уже не во II, а в III–IV артикуле — в вопросе о том, даёт ли Бог избранным **и хотеть, и
+совершать**, или только достаточную помощь при человеческом решении.
+
+**19.6. Осторожность.** Британское суждение не знает слова «амиральдианство» и не называет Камерона или Амиро:
+оно 1619 г., а спор о Сомюре — 1630-х. Утверждать можно только **структурное совпадение** отвергнутой тезы с
+позднейшею схемою, а не то, что Синод осуждал Сомюр. См. §4.100 и §4.102; пп. 199, 201 `34_`.
