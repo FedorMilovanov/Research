@@ -4762,6 +4762,123 @@ affectibus rebellis…*».
 (§4.99 пп. 1, 4–5). **Два соседних документа тома держат обе стороны спора — это удобный случай для будущего
 сопоставления в `03_` или `16_` (п. 199).**
 
+### 4.103. Q99 — Амиро своими словами: «всеобщая благодать», «мера» любви и «частная действенность всеобщей
+благодати» (раунд 50)
+
+**0. Зачем.** Пункт «амиральдианские первоисточники» оставался открытым с раунда 45: онлайн-копии Амиро не
+давали текста. Найден экземпляр: **Internet Archive `brieftraitdela00amyr`** — Моисей Амиро, *Brief traité de la
+predestination: avec l'Eschantillon de la doctrine de Calvin sur le mesme suiet; et La response a M. de L. M.
+sur la matière de la Grace et autres questions de theologie* (Сомюр: Isaac Desbordes, **1658**; 398 с.;
+коллекция Принстонской семинарии; IA помечает «NOT_IN_COPYRIGHT»). Текст читается по `/stream/…_djvu.txt`
+(74 чанка); прочитаны **чанки 15 и 18** — главы VII (окончание), VIII и IX трактата, сс. 76–95.
+**Новый локатор — S156.** Класс: **A2** (OCR), PD; **язык — французский**; `EDITION_HOLD` — см. п. 12.
+
+**1. Глава VII, итог (с. 76–77): всеобщая благодать и её граница — «эта мера».** «*Ainsi, si vous considérés le
+soin que Dieu a eu de procurer le salut au genre humain par l'envoy de son Fils au monde, & les choses qu'il y a
+faites & souffertes à cette fin, **la grâce est universelle & présentée à tous les hommes**. Mais si vous
+regardés à la condition qu'il y a nécessairement apposée, de croire en son Fils, vous trouverés qu'encore que ce
+soin de donner aux hommes un Rédempteur procède d'une merveilleuse charité envers le genre humain, neantmoins
+**cette charité ne passe pas cette mesure, de donner le salut aux hommes, pourveu qu'ils ne le refusent pas: s'ils
+le refusent, il leur en oste l'espérance**, & eux par leur incrédulité aggravent leur condamnation*».
+**Запомнить:** «*cette charité **ne passe pas cette mesure***» — любовь Божия «не переходит этой меры». Тот же
+регистр ***меры***, что в §4.94 строка 6, только теперь — у Амиро, через сорок лет после Дорта.
+
+**2. Ограничение, которое Амиро признаёт необходимым (с. 76).** «*Et partant ces paroles, **Dieu veut le salut
+de tous les hommes, reçoivent nécessairement cette limitation, pourveu qu'ils croyent. S'ils ne croyent point, il
+ne le veut pas**. Cette volonté de rendre la grâce du salut universelle & commune à tous les humains, estant
+tellement **conditionnelle**, que sans l'accomplissement de la condition, elle est **entièrement
+inefficacieuse***». И — формула самого предмета спора: «*Voyons donc d'où dépend l'accomplissement de la
+condition, & par consequent l'**efficace particulière** de la grâce **universelle***».
+**«Частная действенность всеобщей благодати» — наиболее точное самоназвание амиральдианской схемы.**
+
+**3. Глава VIII: человек не может исполнить условие.** Амиро ставит возражение сам: «*soit, dira quelcun, Qu'il
+n'ait peu se servir de Rédempteur à soy mesme… Mais de cela s'ensuit-il qu'il ne fust pas capable de **recevoir**
+un Rédempteur qui luy est procuré d'ailleurs, & que Dieu mesme luy présente? Quelle grande difficulté y peut-il
+avoir en cela, de ne refuser pas la remission de ses péchez…?*». И отвечает от опыта и Писания: апостолы
+проповедовали всем народам — «*ils se plaignent qu'il y en a peu en comparaison des autres, qui se convertissent
+à leur prédication*»; гонения; «*les plus grands personnages du siecle y ont ordinairement le plus resisté, les
+Politiques l'ont haïe, les Philosophes l'ont combattue de leurs subtilités, les Orateurs de leur éloquence*»; и
+наконец иудеи, «*ils ne le peuvent reconnoistre. Ils le mettent en croix… & puis après l'avoir crucifié, sa croix
+leur est encore en nouveau scandale*». Вывод: «*qui doutera qu'il n'y ait en l'homme un **estrange aveuglement**
+pour ne pouvoir recognoistre ny ce salut ny son autheur*».
+**Для серии: Амиро не учит, что человек может уверовать сам. Он учит, что человек не может — и потому во второй
+главе (IX) вводит второе, частное избрание к вере.**
+
+**4. Глава IX: две благодати, и вторая не всеобща (с. 93–94).** «*La severité de Dieu paroist aussi en ce
+conseil, en ce qu'il **ne fait pas cette grâce icy universelle comme l'autre**, mais la restreint à quelques-vns,
+& laisse les autres à eux mesmes. Car au lieu que **la grâce précédente regarde généralement tout le genre
+humain**, comme nous l'avons cy-dessus déduit; **celle cy n'en regarde qu'une partie seulement**, & en laisse
+l'autre destituée*»; «*il y en a beaucoup d'appellés mais peu d'esleus*» (Мф. 20:16; 22:14).
+**Схема Амиро в его собственных словах: первая благодать (всеобщая, условная) + вторая благодать (частная,
+подающая самую веру).**
+
+**5. Кому приписать неверие — Амиро отвечает (с. 94).** «*Il est bien vray qu'en ce qu'il propose un mesme
+Rédempteur universellement à tous, pourveu qu'ils le reçoivent, il tesmoigne une grande charité aussi bien aux
+vns qu'aux autres. Et ceux qu'il a delaisseés n'ont pas moins de subject que ceux mesme qu'il a esleus de
+reconnoistre sa misericorde envers eux en cet égard. **Que s'ils ne reçoivent pas ce Rédempteur, ils doivent
+imputer cela à leur propre dureté & obstination**; & si en consequence de leur incrédulité ils demeurent
+eternellement perdus, ils ne le peuvent non plus imputer qu'à eux mesmes*». И уточнение, которое обязательно
+цитировать: «*si Dieu est à l'égard des vns cause de la foy & du salut, **il n'est pas cause de l'incrédulité &
+de la damnation des autres**. Si son election est efficacieuse dans les vns pour y accomplir reellement & de
+fait la condition de laquelle le salut depend, **l'incrédulité des autres ne vient pas de leur reprobation, comme
+de la cause qui l'opere par son efficace, mais de leur propre aveuglement & perversité à eux mesmes***».
+
+**6. Основание различия — не человек (с. 95).** «*l'Escriture ne nous apprend autre raison de ce chois que Dieu
+a fait des vns pour leur eflargir le salutaire don de la foy, & de ce qu'il a laissé les autres hommes en
+arrière en leur condition, **que la libre volonté de Dieu**… veu que si la misere est un object de compassion,
+**ils estoient également miserables**; & si la corruption du vice est un object de vengeance, **ils en estoient
+coupables également***». И дальше: «*Sera-ce en nos œuvres que Dieu ait de toute éternité preveu que nous
+deussions faire? Nenny…*».
+**Самое важное для серии: Амиро утверждает равенство («également miserables… également coupables») и при этом
+возводит различие к свободной воле Божией, а не к человеку.**
+
+**7. Следствие — обязательная поправка к раунду 50, части 2 (§4.100 и `03_` §19).** В §4.100 пп. 4–5 приведены
+две отвергнутые британские тезы: «равная благодать» и «равновесие». **Схема Амиро не тождественна ни той, ни
+другой**, и это теперь установлено по его собственному тексту:
+| | Британская отвергнутая теза | Амиро |
+|---|---|---|
+| Различие при равной благодати объясняется человеком («per liberi arbitrii velle & nolle») | так | **нет**: различие возводится к «la libre volonté de Dieu» |
+| Воля оставляется «в равновесии», и потому благодать не может быть бóльшею | так | **нет**: вторая благодать **не всеобща** и подаётся одним |
+| Человек может сказать «я отличил себя» | так | **нет**: неверие — от собственного ожесточения, а вера — от частной благодати |
+
+**Отсюда новый запрет серии:** нельзя отождествлять амиральдианство с отвергнутою на Дорте тезою о
+«равновесии» и нельзя выводить оценку Сомюра из дортских текстов 1619 г. Структурное совпадение есть **только в
+первом звене** (всеобщая условная благодать); второго звена («равновесие», «человек решает») у Амиро нет.
+**Оценка амиральдианства должна вестись по его собственным текстам и по документам 1634–1675 гг., а не по
+Дорту.**
+
+**8. Чтó всё-таки общее со схемой статьи Прокопенко.** (а) Условность: «*Dieu veut le salut de tous les
+hommes… reçoivent nécessairement cette limitation, pourveu qu'ils croyent*». (б) Бездейственность без условия:
+«*sans l'accomplissement de la condition, elle est **entièrement inefficacieuse***». (в) Сочетание
+«всеобщего» с «частным» внутри одного слова благодать: «*l'efficace particulière de la grâce universelle*».
+**Все три элемента воспроизводятся в статье («atonement» всеобщ, «redemption» частна; условие — вера).** Стало
+быть, подтверждается прежний вывод §4.98 п. 5 и §5: позиция статьи по существу **сомюрская**; и теперь это можно
+показать не по учебникам, а по тексту Амиро.
+
+**9. Регистр «меры» получает третьего свидетеля.** «*cette charité **ne passe pas cette mesure***» (Амиро, 1658)
+рядом с «*pro omnibus & singulis **aequaliter***» (Эмден, 1619) и «*Cur oblata **aequali gratia**…*» (Британия,
+1619). Вывод §4.98 п. 4 и строка 6 таблицы §4.94 подтверждаются: **регистр меры сквозной для обеих традиций**,
+и спор в нём идёт не о круге лиц, а о том, **одинаково ли** и **в какой мере** Бог желает и подаёт спасение.
+
+**10. Честное признание в пользу Амиро.** Он (а) удерживает всеобщее предложение Евангелия без лукавства:
+«*un mesme Rédempteur universellement à tous, pourveu qu'ils le reçoivent*»; (б) удерживает, что Бог **не есть
+причина** неверия и осуждения; (в) удерживает действенность частной благодати: «*son election est efficacieuse
+dans les vns pour y accomplir reellement & de fait la condition*». **Полемика против него, ведущаяся так, будто
+он учит «человек решает», несправедлива к его тексту — и серия обязана это признать.**
+
+**11. О границах прочитанного.** Прочитаны только чанки 15 и 18 (сс. 76–95) из 74. Не прочитаны: начало
+трактата (главы I–VI), глава X и далее, а также два других трактата того же тома — «*Eschantillon de la doctrine
+de Calvin*» и «*Response a M. de L. M. sur la matière de la Grace*». **Никаких выводов о целом трактате по этим
+двум чанкам делать нельзя**; в частности, не прочитано место, где Амиро говорит об «égale et universelle»
+благодати искупления, приведённое в современной литературе на с. 77 издания 1634 г., — в издании 1658 г. с. 77
+занята главою VIII, то есть **пагинация иной**, и цитату следует искать заново (п. 202).
+
+**12. `EDITION_HOLD` (важно).** Это **не** первое издание 1634 г., а издание 1658 г.; титульный лист читается по
+OCR как «*N… Edition reveue & corrigée*» (порядковый номер издания неразборчив). Первое издание 1634 г. есть в
+Google Books (`N7U8AAAAcAAJ`, Университет Лозанны, оцифровано 15.07.2009), но доступно только в режиме
+«Preview». **В серии всякая цитата Амиро должна сопровождаться указанием издания (1658) и осторожностью в
+датировке формулировок 1634 годом.**
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -5272,6 +5389,7 @@ affectibus rebellis…*».
 | 1618–1619 *(раунд 49)* | **Британское суждение о III–IV артикулах** (S154, лл. 127–132): избранные до обращения «**possint juste a Deo deseri**», но «**specialis Dei misericordia**… iterum, iterumque urgeat Deus… donec… prorsus subjugaverit»; иначе «**ipsaque in Dei beneplacito fundata electio frustraretur**»; «**Ordine temporis vix distingui possunt** opus Dei convertentis hominem, & actio hominis se convertentis ad Deum; **ordine tamen causalitatis**, divinum opus praecedat»; «nihil hic **simulate** a Deo agi putandum est»; «si… daret Deus **tantum posse credere**» — четвёртая формула пары «мочь и хотеть»; «actus credendi, utcunque a Deo immittatur… **ipsi homini tribuitur**» |
 | 1618–1619 *(раунд 50)* | **Британское суждение, вторая половина** (S154, лл. 132–136): «non laedit voluntatis libertatem, sed **roborat**»; «resistendi potentia **proxima** suspenditur, **remota** non exstirpatur» (**Reverendus Sarisburiensis**, p. 20); «det electis suo tempore **& posse, & velle, & perficere**»; отвергнутые тезы: благодать — только «**lenem… moralem suasionem**»; «**Cur oblata aequali gratia, hic credat, ille non credat**»; «datur aliis secundum misericordiam, aliis non datur secundum justitiam»; «**Ego me discrevi**»; воля оставляется «**in aequilibrio**» — «quod **minus** est, voluntas accepit a Deo… quod **majus** est… **sibi ipsi praestitit voluntas ipsa**»; «aequilibrium… **in puncto consistit, nec latitudinis est capax**»; «ad ipsum fidei actum **infrustrabiliter** eliciendum». **Подписи: Georgius Landavensis, Joannes Davenantius, Samuel Wardus, Thomas Goadus, Gualterus Balcanquallus** |
 | 1618–1619 *(раунд 50)* | **Пфальцское суждение о III–IV артикулах** (S155, л. 136 и след.): ремонстрантская позиция — обращение предваряют cognitiones peccati, dolor, humilitas, desiderium gratiae, preces, propositum — «**citra infusionem sanctitatis alicujus**»; ссылки: *Coll. Hag.* 205, 298, 301, 303; **Гревинховен**, с. 111 (?); Епископий, *de perspicuitate Scripturae* тез. 5, 7 и *disput. de poenitentia* сс. 4, 14; **Иоанн Арнольди против Тилена, с. 397**. Ответ: «**Solus Deus** hic idoneus testis ac judex est»; человек «non semi-mortuus, sed **totus**… mortuus in peccatis suis» |
+| 1658 *(раунд 50; первое чтение амиральдианского первоисточника)* | **Моисей Амиро, *Brief traité de la predestination*** (Сомюр, Desbordes, 1658; IA `brieftraitdela00amyr`, сс. 76–95, гл. VII–IX): «la grâce est **universelle** & présentée à tous les hommes», но «cette charité **ne passe pas cette mesure**… pourveu qu'ils ne le refusent pas»; «Dieu veut le salut de tous les hommes… **pourveu qu'ils croyent**. S'ils ne croyent point, il ne le veut pas»; благодать «**entièrement inefficacieuse**» без исполнения условия; «l'**efficace particulière** de la grâce **universelle**»; две благодати: первая — «généralement tout le genre humain», вторая — «n'en regarde qu'vne partie seulement»; неверие — от «leur propre dureté & obstination», а «l'incrédulité des autres **ne vient pas de leur reprobation**… mais de leur propre aveuglement»; основание различия — «la **libre volonté de Dieu**», ибо «ils estoient **également** miserables… également coupables» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -5605,6 +5723,21 @@ affectibus rebellis…*».
 - Раунд 50: добавлены §§4.100–4.102, **S155**, две строки хронологии, правка §4.94 (шестой регистр) и §4.98
   п. 4, закрытие п. 192, пп. 198–201.
 
+- **Раунд 50, продолжение: открыт первоисточник амиральдианства.** **S156** — Моисей Амиро, *Brief traité de la
+  predestination: avec l'Eschantillon de la doctrine de Calvin… et La response a M. de L. M. sur la matière de la
+  Grace…* (Сомюр: Isaac Desbordes, **1658**; IA `brieftraitdela00amyr`, 398 с., коллекция Принстонской
+  семинарии; IA помечает «NOT_IN_COPYRIGHT») — PD; **A2** (OCR); французский. Прочитаны чанки 15 и 18
+  (`/stream/…_djvu.txt`; 74 чанка), сс. 76–95: главы VII (окончание), VIII, IX. **`EDITION_HOLD`:** это издание
+  1658 г., а не первое 1634-е (последнее — в Google Books `N7U8AAAAcAAJ`, только «Preview»); пагинация
+  **иная**, поэтому распространённая в литературе ссылка «с. 77 изд. 1634» к этому тексту **неприменима**
+  (п. 202). **`EVIDENCE_HOLD` распространён на объём:** прочитано 2 чанка из 74; о целом трактате выводов не
+  делается. Главное содержание — §4.103; главный вывод — **амиральдианство не тождественно отвергнутой на Дорте
+  тезе о «равновесии»**: у Амиро есть второе, частное избрание к вере, и различие возводится к «libre volonté de
+  Dieu», а не к человеку. Отсюда **новый запрет** (§4.103 п. 7): не выводить оценку Сомюра из дортских текстов
+  1619 г. `PUBLICATION_HOLD`, `RIGHTS_HOLD`, C-16 — без изменений; «снято молча: 0».
+- Раунд 50, итог: добавлены §§4.100–4.103, **S155** и **S156**, три строки хронологии, правка §4.94 и §4.98,
+  закрытие п. 192, пп. 198–204.
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -5657,6 +5790,18 @@ Rejectio). Это самый короткий способ показать, ч�
 201. *(раунд 50)* **Пятая формула пары «мочь и хотеть»** («det electis suo tempore & posse, & velle, &
 perficere», §4.100 п. 2) — пополнить §4.98 п. 3 до пяти строк и проверить, распространена ли та же пара на
 учение о perseverance в других суждениях (V артикул).
+
+**Добавлено в раунде 50 (продолжение):**
+
+202. *(раунд 50)* **Найти в тексте Амиро (S156) место о «égale et universelle» благодати искупления**, приводимое
+в современной литературе по с. 77 издания 1634 г. Пагинация 1658 г. иная (с. 77 — глава VIII); искать по главам
+VI–VII. Способ: чанки 13–16.
+203. *(раунд 50)* **Прочитать главу X и остаток трактата** (чанки 19–24), а также «*Eschantillon de la doctrine
+de Calvin*» — там Амиро приводит цитаты Кальвина, что прямо проверяет тезис серии о «кальвиновском пастише»
+(см. §4.7, Стронг).
+204. *(раунд 50)* **Найти первоисточники Камерона и Тестара** (Камерон, *Theses de gratia et libero arbitrio*;
+Тестар, *Synopsis doctrinae de natura et gratia*, 1634), чтобы установить, у кого именно впервые появляется
+всеобщее условное decree. Способ: prdl.org (указатель сочинений) и поиск экземпляров на IA / Google Books.
 
 **Добавлено в раунде 48:**
 

@@ -656,3 +656,60 @@ operatur gratia, ut **det electis suo tempore & posse, & velle, & perficere***»
 **19.6. Осторожность.** Британское суждение не знает слова «амиральдианство» и не называет Камерона или Амиро:
 оно 1619 г., а спор о Сомюре — 1630-х. Утверждать можно только **структурное совпадение** отвергнутой тезы с
 позднейшею схемою, а не то, что Синод осуждал Сомюр. См. §4.100 и §4.102; пп. 199, 201 `34_`.
+
+
+## 20. Дополнение (2026-10-19; раунд 50, продолжение; кросс-досье `34_` §4.103, **S156**): Амиро своими словами —
+и поправка к §19
+
+**20.1. Что прочитано.** Первый в досье **первоисточник амиральдианства**: Моисей Амиро, *Brief traité de la
+predestination… avec l'Eschantillon de la doctrine de Calvin… et La response a M. de L. M. sur la matière de la
+Grace* (Сомюр: Isaac Desbordes, **1658**), IA `brieftraitdela00amyr`; прочитаны сс. 76–95 (главы VII–IX).
+**`EDITION_HOLD`:** это издание 1658 г., не первое 1634-е; пагинация иная, и ссылки современной литературы на
+«с. 77» издания 1634 г. к прочитанному тексту **неприменимы**.
+
+**20.2. Схема Амиро в его собственных словах — четыре элемента.**
+**(а) Всеобщая благодать с условием:** «*la grâce est **universelle** & présentée à tous les hommes*»; «*Dieu veut
+le salut de tous les hommes… reçoivent nécessairement cette limitation, **pourveu qu'ils croyent. S'ils ne
+croyent point, il ne le veut pas***».
+**(б) Бездейственность без условия:** «*…estant tellement conditionnelle, que sans l'accomplissement de la
+condition, elle est **entièrement inefficacieuse***».
+**(в) Самоназвание схемы:** «*l'**efficace particulière** de la grâce **universelle***».
+**(г) Второе, частное избрание:** «*il ne fait pas cette grâce icy universelle comme l'autre, mais la restreint à
+quelques-vns… **la grâce précédente regarde généralement tout le genre humain**; **celle cy n'en regarde qu'une
+partie seulement***»; «*il y en a beaucoup d'appellés mais peu d'esleus*».
+
+**20.3. Поправка к §19.3 — обязательная.** В §19 сопоставлялись отвергнутые британские тезы («равная
+благодать», «равновесие») с сомюрской схемою. По тексту Амиро теперь установлено: **схема не тождественна ни
+той, ни другой.**
+| | Отвергнутая британская теза | Амиро |
+|---|---|---|
+| Различие объясняется человеком | «per liberi arbitrii velle & nolle» | **нет**: «la **libre volonté de Dieu**» |
+| Благодать не может быть бóльшею (равновесие — точка) | «aequilibrium… in puncto consistit» | **нет**: вторая благодать **не всеобща** |
+| Человек говорит «я отличил себя» | «Ego me discrevi» | **нет**: «l'incrédulité des autres **ne vient pas de leur reprobation**… mais de leur propre aveuglement & perversité à eux mesmes» |
+
+**Отсюда новый запрет серии:** **не выводить оценку Сомюра из дортских текстов 1619 г. и не отождествлять
+амиральдианство с отвергнутым «равновесием».** Структурное совпадение есть **только в первом звене** — всеобщая
+условная благодать. Оценка должна вестись по текстам 1634–1675 гг. (Амиро, Тестар, Formula Consensus Helvetica
+1675, оппоненты).
+
+**20.4. Чтó роднит Амиро со схемой статьи Прокопенко.** Три элемента статьи воспроизводят Амиро точно:
+(1) условность («pourveu qu'ils croyent»); (2) бездейственность без условия («entièrement inefficacieuse»);
+(3) сочетание всеобщего и частного внутри благодати («efficace particulière de la grâce universelle» — ср.
+«atonement всеобщ / redemption частно»). **Вывод §4.98 п. 5 и §5 `34_` подтверждается первоисточником: позиция
+статьи по существу сомюрская.**
+
+**20.5. Чего у Амиро нет — и это надо признать.** Он **не** учит, что человек способен уверовать сам: глава VIII
+утверждает противное («*un estrange aveuglement*»; опыт апостолов, гонения, отвержение Мессии иудеями). Глава IX
+потому и вводит **вторую благодать**, которая «*est efficacieuse dans les vns pour y accomplir reellement & de
+fait la condition de laquelle le salut depend*». **Полемика, ведущаяся так, будто Амиро учит «человек решает»,
+несправедлива к его тексту.**
+
+**20.6. Регистр меры — третий свидетель.** «*cette charité **ne passe pas cette mesure**, de donner le salut aux
+hommes, pourveu qu'ils ne le refusent pas*». Рядом: «pro omnibus & singulis **aequaliter**» (Эмден, 1619) и «Cur
+oblata **aequali gratia**, hic credat, ille non credat» (Британия, 1619). **Регистр меры — сквозной для обеих
+традиций**, и спор в нём идёт не о круге лиц, а о том, **одинаково ли** и **в какой мере** Бог желает и подаёт
+спасение. Это уточняет строку 6 таблицы §4.94: у Амиро «мера» относится к **любви**, у Эмдена и Британии — к
+**благодати и цене**; регистр один, предмет внутри него разный.
+
+**20.7. Границы.** Прочитано 2 чанка из 74 (сс. 76–95). Не прочитаны главы I–VI, X и далее, а также два других
+трактата того же тома. **О целом трактате выводов не делается** (пп. 202–203 `34_`).
