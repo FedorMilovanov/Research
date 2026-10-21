@@ -304,3 +304,48 @@ communicatum, neminem beare potest»).
 
 **17.4. Оговорка.** Список регистров составлен по прочитанным суждениям и может пополниться: эмденское «Breve
 Examen» не дочитано, суждения по III–IV артикулам не читались.
+
+
+## 18. Дополнение (2026-10-19; раунд 49; кросс-досье `34_` §§4.95–4.98, S153): пастырское ядро раунда
+
+**18.1. Два модуса одной фразы — и они предложены не нами.** Эмденская делегация приводит ремонстрантский ответ на
+вопрос, могут ли неверующие сказать «Христос умер за меня»: «*Fideles hoc posse dicere **ad consolationem suam**;
+infideles **ad historicam narrationem**, qua ad fidem ducantur*» (*Coll. Hag.* 187–188). То есть **различение
+утешения и исторического сообщения придумали не «ограничители»**: его предложила другая сторона, чтобы объяснить,
+как одна и та же фраза может быть истинной для неверующего. Антитеза эмденцев лишь проводит границу иначе:
+«*Nulli, nisi ii in quibus **nulla est condemnatio**, quique non secundum carnem, sed secundum Spiritum ambulant,
+& qui acceperunt Spiritum non servitutis, sed adoptionis, possunt dicere, Christus est pro me mortuus, quis itaque
+est qui me condemnet? Rom. 8*». **Практика:** когда верующий спрашивает «могу ли я сказать, что Христос умер за
+меня», ответ не в объёме искупления, а в том, дарован ли ему Дух усыновления. **Именно это и есть единственное
+основание утешения, а не вывод из всеобщего предложения.**
+
+**18.2. Суд любви о всех — и отказ называть отверженных.** Вопрос VIII: «*nemo hominum scire potest, quinam sint
+reprobi, ideoque **juxta caritatis judicium bene de omnibus speramus***», и тут же: «*Monstrant itaque nobis
+Remonstrantes, si possunt, quinam reprobi sint, & tum dispiciendum esset, quid credere reprobi debeant*».
+**Практика:** проповедь обращается ко всем без исключения; вопрос «а кто именно отверженный» объявляется
+неразрешимым для человека и потому **неподлежащим** проповеди. Это ещё одно место, которым снимается упрёк, будто
+учение о particulars уводит от всеобщего призвания.
+
+**18.3. Цена схемы, названная её сторонниками.** Вопрос XVIII: ремонстранты **отрицают**, что Христос любит высшею
+любовью всех, за кого умер, — «*quia partam salutem non applicet omnibus, sed tantum fidelibus, quamvis omnibus
+parta sit*». **Практика:** различение «приобрёл для всех / приложил верующим», доведённое до конца, оставляет
+грешника без ответа на вопрос, любит ли его Христос. Пастырски это значит: **нельзя утешать человека тем, что
+Христос умер за всех, если одновременно нельзя сказать, любит ли Он его.**
+
+**18.4. Кто прилагает — и почему это вопрос утешения, а не системы.** «*Ore itaque Christo hanc applicationem,
+reipsa autem ipsi homini tribuunt*» и антитеза: «*Solus Deus remissionem peccatorum & justitiam morte Christi
+partam efficaciter nobis applicat… quam nos fide, quae **purum putum Dei donum** est, tanquam manu
+apprehendimus*». **Практика:** если приложение в конечном счёте зависит от человека («*si saltem homo velit*»), то
+утешение держится на человеческом хотении; если его совершает один Бог — на Нём. **Весь спор о «приобрёл /
+приложил» в проповеди сводится именно к этому.**
+
+**18.5. Вторая пастырская формула того же документа.** Антитеза 7 вопроса VI: «*Qui conditionis N. Foed. impletioni
+vitam & salutem adscribunt, Deo & Christo suum honorem suffurantur, & **vivam consolationem afflictis
+conscientiis eripiunt***». Рядом с формулой раунда 47 («*Donum procul ostentatum & non reipsa communicatum,
+neminem beare potest*») это даёт серии **две опоры для §11: спор о приложении есть спор о живом утешении, а не о
+схеме.**
+
+**18.6. Правило для проповеди, вытекающее из раунда.** При всяком употреблении пары «приобрёл / приложил» называть:
+(1) кто прилагает; (2) чтó вменяется — правда Христова или самый акт веры; (3) любит ли Христос тех, за кого
+умер, высшею любовью; (4) совершенна ли Satisfactio. **Без этих четырёх ответов фраза «Христос умер за всех, но
+спасает верующих» не утешает, а отсылает человека к его собственному хотению.**
