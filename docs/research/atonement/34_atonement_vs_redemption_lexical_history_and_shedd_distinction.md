@@ -4113,6 +4113,7 @@ lapsis & peccato obnoxiis» приведена Эмденом с листом (�
 | 3 | **Распределение священства и царства** | Гелдерланд (S145) | «non nisi dimidius Mediator»: как священник Он приобрёл, как царь прилагает |
 | 4 | **Совершенство Спасителя** | Эмден (S152) | «si merito tantum servat, non efficacia, tum **non est perfectus servator**» (Евр. 7) |
 | 5 | **Священство как единое действие** | Эмден (S152) | «quis furor, **velle partes sacerdotij Christi separare**?» |
+| 6 | **Мера, а не круг** *(раунд 50)* | Эмден (S153); Британия (S154) | «pro omnibus & singulis **aequaliter**»; «Cur oblata **aequali gratia**, hic credat, ille non credat»; «**aequilibrium**… in puncto consistit, **nec latitudinis est capax**» |
 
 **1. Чтó из этого следует для серии.** Пара «по заслуге и по действенности» — не одно утверждение, а пять разных
 ходов, и они не равносильны: № 3 и № 4 — богословские (о Лице и деле Христовом), № 1 и № 5 — о связи благ, № 2 — о
@@ -4458,7 +4459,8 @@ hominibus… in communi lapsus & peccati sorte consideratis» теперь им�
 **4. Новое в богословских регистрах.** К пяти регистрам пары «merito & efficacia» (§4.94) добавляется наблюдение,
 не меняющее список, но уточняющее его границы: в вопросе XVI спор идёт уже не о круге лиц и не о связи благ, а **о
 мере**, в какой Христос предал Себя — «pro omnibus & singulis **aequaliter**». Стало быть, возможен **шестой**
-регистр — *мера*, а не *круг*; он требует отдельной сводки по корпусу и в §4.94 не вносится до проверки (п. 192).
+регистр — *мера*, а не *круг*; **Проверено в раунде 50:** «aequali gratia» и «aequilibrium» найдены в британском суждении (§4.100 пп. 4–5),
+регистр подтверждён и внесён в §4.94 шестою строкою (п. 192 закрыт).
 
 **5. Итог раунда для главного тезиса серии.** Статья Прокопенко подаёт различение «приобрёл / приложил» как
 нейтральное уточнение двух английских слов. Документы 1618–1619 гг. показывают, что различение это:
@@ -4593,6 +4595,172 @@ possibilitatem; sed efficaciter & **suaviter** dat homini firmam oboediendi volu
 дочитаны** (л. 132 и след.); атрибуция — по заголовку на л. 127; `ATTRIBUTION_HOLD` **не снимается** до сличения
 с оглавлением тома. Одно место (Флп. 2:13, «qua non modo possunt credere, sed & ipsum…») повреждено OCR и
 цитируется с пропуском.
+
+### 4.100. Q96 — Британское суждение, продолжение: свобода, главные и частные акты, и четыре отвергнутые тезы
+(раунд 50)
+
+**0. Зачем.** Британское суждение (S154) дочитано: лл. 132–136. В раунде 49 были разобраны тезисы I–VII раздела
+о предшествующих обращению действиях; здесь — вторая половина: учение о свободе при возрождении, различение
+главных и последующих актов, и **четыре отвергнутые тезы** («Theses heterodoxae quas rejicimus»). Источник тот
+же: `/download/…_djvu.txt`, чанки 252–253.
+
+**1. Свобода не нарушается, но и противление не искореняется (тезис II, лл. 132–133).** «*Divina haec actio non
+laedit voluntatis libertatem, sed **roborat**: neque tamen exstirpat radicitus vitiosam resistendi
+possibilitatem; sed efficaciter & **suaviter** dat homini firmam oboediendi voluntatem*». Уточнение — редкое по
+точности: «*Quamvis enim Deus in ipso regenerationis opere adeo potenter in voluntatem agat, ut **actualiter
+resistendi potentia proxima pro illo tempore suspendatur**, remotam tamen & (ut loquuntur) **in actu primo
+positam resistendi potentiam ne tum quidem funditus exstirpat**, sed in sua amara radice delitescere
+permittit*» (Гал. 5:17; Притч. 21:1). И — с указанием лица: «*Primum operatur **velle**, id est, non resistere;
+neque enim resistere ultra potest, cui velle resistere sublatum est, **ut praeclare Reverendus
+Sarisburiensis. pag. 20***». **Новое имя в досье: «достопочтенный Сарисберийский»** — епископ Солсбери, с
+указанием страницы (п. 201).
+
+**2. Главные акты и последующие (тезис III, л. 133).** «*Deus hominem conversum & fidelem non ita semper movet ad
+bonos actus subsequentes, ut tollat ipsam voluntatem resistendi; sed quandoque permittit illum vitio suo
+deficere…*». Различение: «*Oportet semper discrimen statuisse inter illos actus principales, sine quibus salus
+electorum non constat (quales sunt, **convertere se ad Deum, credere, perseverare**) & particulares
+subsequentes actus, qui specialiter considerati, non sunt ad salutem absolute necessarii… **Ad illos
+eliciendos sic operatur gratia, ut det electis suo tempore & posse, & velle, & perficere**; ad posteriores non
+deest quidem nobis… motus & ductus Spiritus divini, ita tamen, ut gratiae deesse possimus, imo ut nimis saepe
+desimus*».
+**Важно для §4.98 п. 3: это пятая формула пары «мочь и хотеть»** — и она распространена на perseverance: к
+главным актам Бог даёт избранным «и мочь, и хотеть, и совершать». **Пар «мочь и хотеть» теперь пять, и они
+охватывают оба артикула (II и III–IV) и четыре делегации (Кроций, Эмден, Британия — и, как будет видно ниже,
+Пфальц).**
+
+**3. Отвергнутая теза I (лл. 133–134): «воля не вмещает духовных даров».** «*Voluntatem non esse capacem donorum
+spiritualium… nunquam in regeneratione humanis voluntatibus talia dona infundi*» — отвергается. Оружие —
+Писание (Пс. 32:11; Мф. 5:8; Лк. 8:15) и два отца: Августин, *Enchiridion* 32 — «*Praecedit bona voluntas
+hominis multa dona Dei, sed non omnia; quae autem non praecedit ipsa, in eis est & ipsa praecedit*»; и Проспер,
+*de vocatione gentium* I.6 — «*primam supremi agricolae **plantationem**. Plantatio autem designat quiddam
+animae insitum, **non actum ex ea dimanantem***». **Формула «насаждение, а не действие, из него проистекающее»
+— точное выражение того, чтó именно, по мнению британцев, даруется в возрождении.**
+
+**4. Отвергнутая теза II (л. 134): благодать есть только мягкое, моральное внушение.** «*Gratiam qua convertimur,
+esse lenem tantum, & moralem suasionem*». Британцы **не отрицают** морального убеждения: «*Non inficiamur in
+opere conversionis vel futurae praeparando, vel praeteritae confirmando, Deum adhibere comminationum,
+promissionum, aliarumque hortationum vim suasoriam… verum ad ipsam hujusce negotii **catastrophen**
+infallibiliter producendam **potentius semper ac insuperabilius operatur**, pro magnitudine potentiae, pro
+efficacitate roboris fortitudinis suae, Ephes. 1:18*». Основания: (1) «*Suasio moralis movet tantum objective, &
+in virtute finis. Recte autem statuunt Philosophi, **Qualis unusquisque est, talem ei finem videri**… potenti
+operatione, omnem suasionem excellente, superanda ac immutanda est voluntas*»; (2) — **самая цитируемая
+формула этого раздела**: «*Si morali tantum suasione homines ad Deum converterentur, tum haec quaestio, **Cur
+oblata aequali gratia, hic credat, ille non credat**, per liberi arbitrii velle & nolle solveretur; nec ulla
+restaret hac in parte impervestigabilis sapientiae, ac judicii Dei nostra admiratio*»; и Августин, *de
+perseverantia*: «*Conversionem & fidem ex **occulta Dei gratia** esse, quae **datur aliis secundum
+misericordiam, aliis non datur secundum justitiam***»; (3) — «*posset vere dicere, **Ego me discrevi**: accepi
+enim gratiam lenemque & suasoriam… illi, pro sua libertate… repulerunt… Contra ego, pro mea libertate, eandem
+suasionem sum amplexus*», с 1 Кор. 4:7: «*Quis te discernit? quid habes quod non accepisti?*»
+**Для серии: вопрос «почему при равной благодати один верует, а другой нет» поставлен и решён на Дорте в 1619 г.
+— и решение состоит в том, что благодать **не равна**, а дается «иным по милости, иным не даётся по правде».**
+
+**5. Отвергнутая теза III (л. 135): «равновесие» (aequilibrium).** «*Positis omnibus gratiae operationibus,
+quibus Deus ad efficiendam hanc conversionem utitur, voluntatem hominis **relinqui in aequilibrio**, velitne
+credere, vel non credere, convertere se ad Deum, vel non convertere*». Три возражения:
+**(а)** «*Si post omnes divinae gratiae operationes hominis voluntas in aequilibrio relinquatur, necessario
+sequetur, **non Deum per gratiam, sed hominem per liberum arbitrium esse principalem causam auctoremque** ipsius
+creditionis, ac conversionis… ad actum credendi concurrit… solummodo concomitanter, & contingenter…*», и
+сжатый итог: «*Quod ergo **minus** est, voluntas accepit a Deo, nimirum ut poneretur in indifferenti quadam
+medietate…; quod autem **majus** est, ipsumque **eventum specificat**, **sibi ipsi praestitit voluntas ipsa**,
+nempe ut actu crederet*». **«Чтó меньше, то воля получила от Бога; а чтó больше и чтó определяет самый исход, то
+она доставила себе сама».**
+**(б)** «*Item sequetur, **non majorem a Deo gratiam exhibitam electis, quam non-electis**; nec illos, quam hos,
+Deo majori gratitudinis debito obstringi; quandoquidem in utrisque divina manus nil aliud operata sit, quam
+voluntatis **aequilibrium, quod in puncto consistit, nec latitudinis est capax***». **«Равновесие есть точка и
+не вмещает широты»** — то есть при «равновесии» нельзя говорить о **бóльшей** благодати одним, чем другим.
+**(в)** «*Gratia convertens ea intentione datur, ut sit efficax, hominemque permoveat, imo perducat ad ipsum
+fidei actum **infrustrabiliter** eliciendum…*»; Августин, *de praedestinatione sanctorum* 8: «*Haec gratia a
+nullo duro corde respuitur: ideo quippe tribuitur, ut **cordis duritia primitus auferatur***».
+
+**6. Отвергнутая теза IV (лл. 135–136): «человек не может сделать больше добра, чем делает».** Отвергается и для
+невозрождённого («*potest tamen multos actus externos cohibere… Vitiosa concupiscentia inclinat hominem impium
+ad omne malum, non tamen **determinat**…*»), и для возрождённого: «*Quis sanus dixerit Davidem non potuisse non
+perpetrare adulterium?*» — с 1 Кор. 10:13.
+
+**7. Регистр «меры» подтверждён — п. 192 закрыт.** В §4.98 п. 4 был поставлен вопрос, встречается ли
+«aequaliter» за пределами эмденского вопроса XVI. Ответ: **да**, и дважды в одном документе: «*Cur oblata
+**aequali gratia**, hic credat, ille non credat*» (теза II, возражение 2) и «*voluntatis **aequilibrium**, quod
+in puncto consistit, nec latitudinis est capax*» (теза III, возражение 2). **Шестой регистр — *мера*, а не
+*круг* — подтверждён и внесён в §4.94.** Смысл регистра теперь виден точно: спор идёт не только о том, **за
+кого** Христос умер, и не только о связи благ, но и о том, **одинакова ли** благодать, подаваемая верующему и
+неверующему, и может ли она быть «бóльшею» для одного, чем для другого.
+
+### 4.101. Q97 — Подписи британского суждения: атрибуция закрыта, и Балканкуал подтверждён дважды (раунд 50)
+
+**1. Подписи (л. 136).** В конце британского суждения о III–IV артикулах стоит список подписавших:
+«***Georgius Landavensis, Joannes Davenantius, Samuel Wardus, Thomas Goadus, Gualterus Balcanquallus***».
+То есть: **Георгий Ландавенский** (Джордж Карлтон, епископ Лландафский), **Иоанн Давенант**, **Сэмюэл Уорд**,
+**Фома Гоуд**, **Уолтер Балканкуал**. **`ATTRIBUTION_HOLD` для S154 снят.**
+
+**2. Почему это важно сверх простой атрибуции.** Эмденская делегация в конце своего суждения (§4.97 п. 6)
+сослалась на «*Clarissimos Doctores D. Balcanquallo, & D. Crucigero*», опровергавших ремонстрантов **устно**.
+Теперь **Балканкуал поименован среди подписавших британское суждение**, то есть он присутствовал на Синоде в
+составе британской делегации и был одним из тех, чья аргументация звучала «живым голосом». **Перекрёстное
+подтверждение двух независимых документов**, и оно превращает догадку раунда 49 в установленный факт:
+британское суждение писали люди, которые **уже выступали устно**, и суждение сознательно не повторяет
+сказанного.
+
+**3. Следствие для метода (повторение п. 191 с усилением).** Отсутствие аргумента в писаном суждении — не
+доказательство его отсутствия на Синоде. Теперь это не умозаключение, а факт, подтверждённый **подписью**:
+один из названных устных оппонентов стоит в списке подписавших другой документ того же Синода.
+
+**4. Осторожность.** Список приведён по OCR; пятый порядок имён — как в тексте. Иосиф Холл (Hall) в списке
+**отсутствует** — это согласуется с тем, что он покинул Синод по болезни, но **по самому документу утверждать
+причину нельзя**. Проверить по оглавлению тома и по спискам делегатов — п. 200.
+
+### 4.102. Q98 — Пфальцское суждение о III–IV артикулах: ремонстрантская позиция и новые источники (раунд 50)
+
+**1. Где это.** Сразу за британскими подписями идёт: «*DE ARTICULO TERTIO ET QUARTO **Distinctis propositionibus
+explicatum, Judicium Theologorum Palatinorum***» (л. 136 и след.). Атрибуция по заголовку; подписи не дочитаны
+⇒ `ATTRIBUTION_HOLD` **оставлен** (п. 199).
+
+**2. Предложение I — ремонстрантская позиция, приведённая с источниками.** «*In statu peccati nec a mens hominis
+intelligentia spirituali plane destituitur, nec a voluntas ejus caret facultate amplectendi bonum spirituale,
+quam **citra infusionem sanctitatis alicujus**… excitata exercere potest; immo ipsam hominis conversionem sive
+regenerationem e bona quoque opera, ceu **conditiones prae requisitae antecedunt**: agnitio peccati, & ex ea,
+offensi numinis dolor, humilitas, desiderium gratiae, preces, propositum ac tentamen vitae in melius
+commutandae*». То есть: от признания греха и сокрушения до намерения исправить жизнь — **всё это предполагается
+как предусловия обращения**, и притом **без вливания какой-либо святости**.
+
+**3. Ссылки на полях — новые ремонстрантские источники для таблицы §4.93.** К предложению I даны четыре группы
+ссылок:
+- *„**a** Coll. Hag. pag. 205 & seq. Episcop. **de perspicuitate Scripturae** thesi 5, 7“*;
+- *„**b** Coll. Hag. pag. 298, [19]5, 301, 303“*;
+- *„**c** Coll. Hag. pag. 301. **Grevinch. pag. [111]**. Episcop. **disput. de poenitentia** pag. 4, [14]“*;
+- *„**Ioh. Arnoldi adversus Tilen[um]**. pag. 397“*.
+
+**Новое для досье:** листы *Collatio Hagensis* **205, 298, 301, 303** (прежде в таблице значились 139–201 и
+207); Епископий, *de perspicuitate Scripturae*, тезы 5 и 7, и *disputatio de poenitentia*, сс. 4 и 14 — **два
+новых сочинения Епископия**; **Иоанн Арнольди против Тилена, с. 397** — **вторая ссылка на Арнольди** (первая —
+Эмден: cap. 3, сс. 100 и след.). И — **второе упоминание Гревинховена в корпусе**, теперь пфальцское, с листом
+(с. 111, чтение по OCR неуверенное).
+
+**4. Чтó это меняет в таблице §4.93 (уточнение к §4.98 п. 2).** (а) Вывод «общего флорилегия нет» **держится**:
+пфальцские листы *Coll. Hag.* (205, 298, 301, 303) не совпадают ни с эмденскими, ни с южноголландскими; ссылки
+Епископия взяты из сочинений, которых другие делегации не цитируют. (б) **П. 186 продвинут, но не закрыт**:
+Гревинховен теперь назван **двумя** делегациями, но с **разными** листами (Южная Голландия — 9, 14, 45–46, 49;
+Пфальц — 111 по неуверенному чтению). Совпадающего листа по-прежнему нет; пометка «лист приведён одною
+делегациею» заменяется на «листы приводятся разными делегациями и не совпадают; по первоисточнику не сверены».
+(в) **Арнольди — вторая attestatio**: теперь он не «единичное имя», а источник, на который ссылаются две
+делегации в разных сочинениях.
+
+**5. Пфальцский ответ (начало).** «*De viribus hominis corrupti, qui ipsummet hominem testem aut judicem facit,
+[i]s judici caeco & quidem in propria causa judicium defert. **Solus Deus hic idoneus testis ac judex est**…
+abditissimos etiam cordis humani secessus penetrat ac rimatur, Ierem. 17:9-10*». И далее — состояние человека
+по Писанию: «*filius [irae]… transgressor inde ab utero… non semi-mortuus, sed **totus**, quantusquantus est,
+**mortuus in peccatis suis**… nec ullis ad bonum spirituale viribus instructus… caecus mente… pravus voluntate…
+affectibus rebellis…*».
+**Для серии важно: аргумент «человек не может быть судьею в собственном деле» — это не риторика, а
+гносеологическое основание всей полемики о силах воли.** Оно объясняет, почему стороны, читая одни и те же
+тексты, расходятся: они расходятся в том, **кто свидетельствует** о состоянии падшего человека.
+
+**6. Связь с вопросом раунда 19.** Пфальцское предложение I — это **то самое возражение**, которое можно было бы
+предъявить британскому тезису VI (§4.99): если предварительные действия (познание, сокрушение, молитва,
+намерение) суть **предусловия**, производимые самим человеком «без вливания святости», то избранный до обращения
+отличается от прочего **своими собственными действиями**. Британский ответ уже зафиксирован: он отличается
+**особым милосердием Божиим**, а предварительные действия производятся Духом через слово и могут быть задушены
+(§4.99 пп. 1, 4–5). **Два соседних документа тома держат обе стороны спора — это удобный случай для будущего
+сопоставления в `03_` или `16_` (п. 199).**
 
 ## 5. Анализ и границы допустимой формулировки
 
@@ -5102,6 +5270,8 @@ possibilitatem; sed efficaciter & **suaviter** dat homini firmam oboediendi volu
 | 1618–1619 *(раунд 49)* | **Эмденское «Breve Examen», вопросы XI–XVII** (S153, лл. 124–126): вменяется «**ipse fidei actus**»; ремонстранты заменили «**loco nostro**» на «**pro nobis**»; «Fideles… ad consolationem suam; infideles ad historicam narrationem»; гибнущие овцы; Иоанн Арнольди, сс. 100 и след.; «**pro omnibus & singulis aequaliter**»; Каин и Иуда с листом (*ad Walachr.* 51) и ссылкою на **Антония Валея** |
 | 1618–1619 *(раунд 49)* | **Эмденское «Breve Examen», вопросы XVIII–XXI и конец суждения** (S153, лл. 125–127): «**Christus non summe diligit eos pro quibus mortuus est**» — с листами *Coll. Hag.* 193, 207; два ходатайства — «pro infidelibus, quoad impetrationem, pro fidelibus, quoad applicationem» (198, 199); «**Passio Christi tendat tantum ad salutem impetrandam, electio autem ad applicandam**» (*Coll. Hag.* 201); «**Deus… simulate agit**»; конец: «**a Clarissimis Doctoribus D. Balcanquallo, & D. Crucigero viva voce refutati**… considerationes nostras circa secundum Articulum **finimus**» |
 | 1618–1619 *(раунд 49)* | **Британское суждение о III–IV артикулах** (S154, лл. 127–132): избранные до обращения «**possint juste a Deo deseri**», но «**specialis Dei misericordia**… iterum, iterumque urgeat Deus… donec… prorsus subjugaverit»; иначе «**ipsaque in Dei beneplacito fundata electio frustraretur**»; «**Ordine temporis vix distingui possunt** opus Dei convertentis hominem, & actio hominis se convertentis ad Deum; **ordine tamen causalitatis**, divinum opus praecedat»; «nihil hic **simulate** a Deo agi putandum est»; «si… daret Deus **tantum posse credere**» — четвёртая формула пары «мочь и хотеть»; «actus credendi, utcunque a Deo immittatur… **ipsi homini tribuitur**» |
+| 1618–1619 *(раунд 50)* | **Британское суждение, вторая половина** (S154, лл. 132–136): «non laedit voluntatis libertatem, sed **roborat**»; «resistendi potentia **proxima** suspenditur, **remota** non exstirpatur» (**Reverendus Sarisburiensis**, p. 20); «det electis suo tempore **& posse, & velle, & perficere**»; отвергнутые тезы: благодать — только «**lenem… moralem suasionem**»; «**Cur oblata aequali gratia, hic credat, ille non credat**»; «datur aliis secundum misericordiam, aliis non datur secundum justitiam»; «**Ego me discrevi**»; воля оставляется «**in aequilibrio**» — «quod **minus** est, voluntas accepit a Deo… quod **majus** est… **sibi ipsi praestitit voluntas ipsa**»; «aequilibrium… **in puncto consistit, nec latitudinis est capax**»; «ad ipsum fidei actum **infrustrabiliter** eliciendum». **Подписи: Georgius Landavensis, Joannes Davenantius, Samuel Wardus, Thomas Goadus, Gualterus Balcanquallus** |
+| 1618–1619 *(раунд 50)* | **Пфальцское суждение о III–IV артикулах** (S155, л. 136 и след.): ремонстрантская позиция — обращение предваряют cognitiones peccati, dolor, humilitas, desiderium gratiae, preces, propositum — «**citra infusionem sanctitatis alicujus**»; ссылки: *Coll. Hag.* 205, 298, 301, 303; **Гревинховен**, с. 111 (?); Епископий, *de perspicuitate Scripturae* тез. 5, 7 и *disput. de poenitentia* сс. 4, 14; **Иоанн Арнольди против Тилена, с. 397**. Ответ: «**Solus Deus** hic idoneus testis ac judex est»; человек «non semi-mortuus, sed **totus**… mortuus in peccatis suis» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -5416,6 +5586,25 @@ possibilitatem; sed efficaciter & **suaviter** dat homini firmam oboediendi volu
 - Раунд 49, итог по источнику: **S153** (эмденское суждение, лл. 121–127) и **S154** (британское, лл. 127–132)
   открыты; **S155 и далее — не открыты**; британские подписи и суждения по V артикулу не читались.
 
+- **Раунд 50: британское суждение дочитано; пфальцское начато.** Прочитаны чанки 252–253 (`/download/`):
+  лл. 132–136 (окончание британского суждения, **S154**) и л. 136 и след. (**пфальцское суждение о III–IV
+  артикулах — новый локатор S155**, PD; A2; OCR; атрибуция **по заголовку**, подписи не дочитаны ⇒
+  `ATTRIBUTION_HOLD` **оставлен**). **`ATTRIBUTION_HOLD` для S154 СНЯТ:** в конце суждения стоит список
+  подписавших — Georgius Landavensis, Joannes Davenantius, Samuel Wardus, Thomas Goadus, Gualterus
+  Balcanquallus. Балканкуал, названный эмденцами как устный оппонент ремонстрантов, теперь поименован и как
+  подписант — перекрёстное подтверждение двух документов (п. 191 усилен). Главное содержание второй половины:
+  учение о свободе («roborat»; potentia proxima suspenditur, remota non exstirpatur; ссылка на «Reverendum
+  Sarisburiensem», p. 20); различение главных и последующих актов с **пятою** формулою пары «мочь и хотеть»
+  («det electis… & posse, & velle, & perficere»); и четыре отвергнутые тезы, из которых вторая и третья дают
+  **подтверждение шестого регистра — меры**: «Cur oblata **aequali gratia**, hic credat, ille non credat» и
+  «**aequilibrium**, quod in puncto consistit, nec latitudinis est capax». **П. 192 закрыт**, регистр внесён в
+  §4.94. Пфальцское суждение даёт новые ремонстрантские источники (листы *Coll. Hag.* 205, 298, 301, 303;
+  два новых сочинения Епископия; **вторая ссылка на Арнольди**; **второе упоминание Гревинховена**, с другим
+  листом — п. 186 **продвинут, но не закрыт**). `EVIDENCE_HOLD`, `PUBLICATION_HOLD`, `RIGHTS_HOLD`, C-16 — без
+  изменений; «снято молча: 0».
+- Раунд 50: добавлены §§4.100–4.102, **S155**, две строки хронологии, правка §4.94 (шестой регистр) и §4.98
+  п. 4, закрытие п. 192, пп. 198–201.
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -5430,7 +5619,7 @@ est condemnatio… possunt dicere, Christus est pro me mortuus». Это сам�
 191. *(раунд 49)* **Антоний Валей (Walaeus)** назван эмденскою делегациею как автор, уже опровергший ремонстрантов
 по вопросу о Каине и Иуде. Найти это место у Валея и проверить, не совпадает ли формула с *Coll. Hag.* 207.
 Способ: поиск в `22_` и, при доступе, полнотекстовый поиск по `actasynodination00syno` и по корпусу Валея.
-192. *(раунд 49)* **Проверить регистр «мера»** («pro omnibus & singulis aequaliter», §4.98 п. 4): встречается ли
+192. — **ЗАКРЫТО (раунд 50).** *(раунд 49)* **Проверить регистр «мера»** («pro omnibus & singulis aequaliter», §4.98 п. 4): встречается ли
 «aequaliter» в других суждениях по II артикулу. Если да — дополнить §4.94 шестым регистром; если нет — оставить
 как единичное наблюдение Эмдена.
 193. *(раунд 49)* **Сверить с изображением** листы *Collatio Hagensis* 172, 193, 201 и *Responsio ad Walachros* 51,
@@ -5452,6 +5641,22 @@ est condemnatio… possunt dicere, Christus est pro me mortuus». Это сам�
 и Британия (§4.99 п. 2, ответ на то же обвинение). Проверить, не звучало ли оно в самих Канонах (II.5 /
 Rejectio). Это самый короткий способ показать, что упрёк в «неискреннем призвании» был предметом спора на Синоде,
 а не позднейшим изобретением критиков.
+
+**Добавлено в раунде 50:**
+
+198. *(раунд 50)* **Дочитать пфальцское суждение о III–IV артикулах** (S155 начато на предложении I): подписи
+(снять `ATTRIBUTION_HOLD`), остальные предложения, и ответ на каждое. Способ: чанки 254 и далее.
+199. *(раунд 50)* **Сопоставить британское и пфальцское суждения по III–IV артикулам** — они стоят в томе
+рядом и держат две стороны того же вопроса, что и британский тезис VI (§4.99): пфальцское предложение I делает
+предварительные действия **предусловиями** «без вливания святости», британский тезис VI относит их к действию
+Духа и добавляет «specialis misericordia». Сопоставление вынести в `16_` или `03_`.
+200. *(раунд 50)* **Установить лицо «Reverendus Sarisburiensis»** (§4.100 п. 1, «pag. 20»): епископ Солсбери
+в 1618–1619 гг. и сочинение, на которое ссылаются британцы. Способ: список епископов Солсбери + поиск по
+корпусу. Отдельно проверить, почему в списке подписавших нет Иосифа Холла, — **не утверждать причину по
+документу**.
+201. *(раунд 50)* **Пятая формула пары «мочь и хотеть»** («det electis suo tempore & posse, & velle, &
+perficere», §4.100 п. 2) — пополнить §4.98 п. 3 до пяти строк и проверить, распространена ли та же пара на
+учение о perseverance в других суждениях (V артикул).
 
 **Добавлено в раунде 48:**
 
