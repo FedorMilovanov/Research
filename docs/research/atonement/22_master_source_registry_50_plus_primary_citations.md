@@ -264,6 +264,42 @@
     - 42cm. *Дополнение 2026-10-19 (раунд 48; `34_` §§4.93–4.94; `06_` §17; `03_` §17; `16_` §12; `01_` §8;
     - 42cn. *Дополнение 2026-10-19 (раунд 49; `34_` §§4.95–4.98; **S153**; `06_` §18; `03_` §18; `16_` §13;
     - 42co. *Дополнение 2026-10-19 (раунд 49, продолжение; `34_` §4.99; **S154**; `synthesis/03_` §19):*
+    - 42cp. *Дополнение 2026-10-19 (раунд 50; `34_` §§4.100–4.102; **S154** (британское, дочитано) и **S155**
+      (пфальцское о III–IV, начато); `03_` §19; `16_` §14; `06_` §19; `01_` §10; `synthesis/03_` §20):*
+      **британское суждение дочитано, лл. 132–136.** **(1) Свобода:** «*Divina haec actio non laedit voluntatis
+      libertatem, sed **roborat***»; «*actualiter resistendi potentia **proxima** pro illo tempore
+      suspendatur, **remotam**… in actu primo positam… ne tum quidem funditus exstirpat*»; «*Primum operatur
+      velle, id est, non resistere… ut praeclare **Reverendus Sarisburiensis. pag. 20***». **(2) Главные и
+      последующие акты:** «actus principales, sine quibus salus electorum non constat (convertere se ad Deum,
+      credere, **perseverare**)… *det electis suo tempore **& posse, & velle, & perficere***» — **пятая формула
+      пары «мочь и хотеть»**, распространённая на пребывание. **(3) Четыре отвергнутые тезы:** I — «voluntatem
+      non esse capacem donorum spiritualium» (Проспер, *de vocat.* I.6: «primam supremi agricolae
+      **plantationem**… quiddam animae insitum, **non actum ex ea dimanantem**»; Августин, *Enchir.* 32).
+      II — «gratiam… esse lenem tantum, & moralem suasionem»: «*Non inficiamur… vim suasoriam… verum ad ipsam
+      hujusce negotii **catastrophen** infallibiliter producendam potentius semper ac insuperabilius
+      operatur*»; «*Qualis unusquisque est, talem ei finem videri*»; **«*Cur oblata aequali gratia, hic credat,
+      ille non credat*»**; «*Ego me **discrevi***» (1 Кор. 4:7); Августин, *de persev.*: «datur aliis secundum
+      **misericordiam**, aliis non datur secundum **justitiam**». III — **«aequilibrium»**: «*Quod ergo
+      **minus** est, voluntas accepit a Deo… quod autem **majus** est, ipsumque **eventum specificat**, **sibi
+      ipsi praestitit voluntas ipsa***»; «*non majorem… gratiam exhibitam electis, quam non-electis…
+      aequilibrium, **quod in puncto consistit, nec latitudinis est capax***»; «*ad ipsum fidei actum
+      **infrustrabiliter** eliciendum*»; Августин, *de praed. sanct.* 8: «*a nullo duro corde respuitur… ut
+      cordis duritia primitus auferatur*». IV — «hominem non posse plus boni facere, quam facit» («Quis sanus
+      dixerit Davidem non potuisse non perpetrare adulterium?»). **(4) Подписи (л. 136):** ***Georgius
+      Landavensis, Joannes Davenantius, Samuel Wardus, Thomas Goadus, Gualterus Balcanquallus*** ⇒
+      **`ATTRIBUTION_HOLD` для S154 СНЯТ**; Балканкуал, названный эмденцами как устный оппонент ремонстрантов
+      (§4.97 п. 6), подтверждён из двух документов. Иосиф Холл в списке отсутствует (причину утверждать нельзя,
+      п. 200). **(5) Регистр «меры» подтверждён — п. 192 ЗАКРЫТ:** «aequali gratia» и «aequilibrium» найдены;
+      §4.94 дополнена шестою строкою («Мера, а не круг»: Эмден + Британия). **(6) Начато пфальцское суждение —
+      S155** (л. 136 и след.): ремонстрантское предложение I — обращение предваряют agnitio peccati, dolor,
+      humilitas, desiderium gratiae, preces, propositum — «**citra infusionem sanctitatis alicujus**»; ссылки на
+      полях: *Coll. Hag.* **205, 298, 301, 303**; **Гревинховен, с. 111** (чтение OCR неуверенное — второе
+      упоминание в корпусе, п. 186 **продвинут, не закрыт**); Епископий, *de perspicuitate Scripturae* тез. 5, 7
+      и *disputatio de poenitentia* сс. 4, 14; **Иоанн Арнольди против Тилена, с. 397** (вторая ссылка на
+      Арнольди). Ответ: «*qui ipsummet hominem testem aut judicem facit, [is] judici caeco… in propria causa
+      judicium defert. **Solus Deus** hic idoneus testis ac judex est*»; человек — «non semi-mortuus, sed
+      **totus**… mortuus in peccatis suis». Подписи пфальцского суждения **не дочитаны** ⇒ `ATTRIBUTION_HOLD`
+      **оставлен** (п. 198).
       **британское суждение о III–IV артикулах** («BRITANNORUM THEOLOGORUM Sententia De III. & IV. Articulis»,
       лл. 127–132; чанки 249 (окончание) – 251) — PD; **A2**; OCR; атрибуция **по заголовку**, подписи не
       дочитаны ⇒ `ATTRIBUTION_HOLD` **оставлен**. **Главное — прямой документальный ответ на вопрос серии из
