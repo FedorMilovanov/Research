@@ -6425,6 +6425,69 @@ image… **nous pretendissions n'estre pas coupables deuant Dieu de ce que sa Lo
 **8. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); чанки 32–34; прочитано **26 из 74** (~35 %); OCR. **П. 236 —
 ЗАКРЫТ.** Формулировка «природная/нравственная немощь» — **не наша реконструкция**: она **дословно** у Амиро.
 
+### 4.120. Q116 — Пункт 230 закрыт: `Acta` argument VI отвечает на ход статьи раньше, чем статья его сделала (раунд 57)
+
+**0. Что проверялось.** Пункт 230: бьёт ли гелдерландская формула «*non reconciliabilitatem… sed
+reconciliationem*» по **условному** плоду (§4.116 п. 4), или только по «возможности». **Ответ: бьёт по условному
+плоду — и это уже есть в досье, но не было сведено.**
+
+**1. Материал (уже прочитан, S145: *Iudicium Deputatorum Synodi Geldricae*, *Acta* 1620, чанки 353–358, печ.
+сс. 92–99; §4.83 пп. 9 и 11).**
+**Argument VI:** «*Pro quorum peccatis **semel** justitiae Dei plenissimè à Mediatore satisfactum est, iidem ob
+**eadem peccata** à Dei justitiâ conveniri… non possunt. Multi homines… in ignem & poenas aeternas praecipitantur.
+Ergò…*».
+**И прямое возражение против самого различения:** «*Neque hîc quicquam juvat **distinctio illa inter impetrationem &
+applicationem**: nam ut verum est, non applicari nisi fidelibus satisfactionem Christi, ita quoque & hoc verissimum…
+est, persolvisse & satisfecisse Christum Patri pro omnibus & singulis; quam solutionem **si accepit Pater, exigere
+novam jure nullo potest, sive applicetur, sive non applicetur: nam **non-applicatio facit quidem ut homini non prosit
+impetratio, sed non facit ut Deo non sit facta solutio***».
+
+**2. Что это значит — в трёх шагах.**
+**(а) Различение названо и отвергнуто по имени.** Не «не замечено», а **«neque… quicquam juvat»** — «нисколько не
+помогает».
+**(б) Причина отказа сформулирована точно:** **неприменение** делает приобретение **бесполезным для человека**, но
+**не делает уплату несостоявшейся для Бога**. То есть долг закрыт объективно, независимо от принятия.
+**(в) Отсюда — сама аксиома §4.83 п. 11:** «*Non dicimus Christum **reconciliabilitatem** quandam morte suâ
+impetrasse, sed **reconciliationem**: non **possibilitatem** remittendi peccata, sed **remissionem** peccatorum*».
+
+**3. Сведение с Амиро — и вот в чём точность.**
+| | Что говорит |
+|---|---|
+| **Гелдерланд VI (1619)** | приобретение **не может** быть для всех, ибо тогда прощённые долги взыскивались бы вновь; различение приобретения и применения **не помогает** |
+| **Амиро (1634/1658)** | «*mort **universellement**… **sinon à la condition qu'ils croyent***»; и «*il n'y a que… **aucun** fruit*» вне веры (§4.118 п. 8) |
+| **Амиро о плоде** | «*l'incredulité des vns empeschant qu'ils n'en reçoiuent **aucun***» — то есть **приобретение без плода** |
+**Вывод:** Амиро отвечает на возражение VI **тем же ходом, который VI уже назвал несостоятельным**: он говорит, что
+уплата для неверующего **не состоялась** (условие не выполнено). Гелдерландцы отвечают заранее: **уплата, принятая
+Отцом, не отменяется неприменением**.
+
+**4. Честная граница — чего `Acta` НЕ могла сделать.** «Eschantillon» издан в **1634**; `Acta` — **1620**.
+Значит нельзя говорить «Дорт отвечает Амиро». **Можно и нужно говорить иначе:**
+> Амиро построил схему из **двух** ходов, каждый из которых в `Acta` **рассмотрен и отвергнут по отдельности**:
+> (1) **различение приобретения и применения** (Гелдерланд VI); (2) **условное приобретение** (Фрисландия:
+> «*non simpliciter, sed conditionate mortuum esse pro omnibus & singulis, si nimirum credant*», §4.66). Его
+> конструкция — **их соединение**, и она **не снимает** ни одного из двух возражений, а **складывает** их.
+
+**5. Отсюда — точная историческая оценка тезиса статьи (итоговая формулировка для серии).**
+> **Разделение «искупление / примирение» не является ни открытием статьи, ни учением Дорта.** Это **сомюрская**
+> схема, соединённая из двух ходов, **каждый из которых был отвергнут в Дорте (1619)**; сама схема изложена
+> Амиро в **1634** и **приписана им Кальвину**; а в 1634 г. тот же перечень обвинений ходил как **римско-католическая
+> клевета**, от которой Амиро Кальвина **защищал**. Статья **воспроизводит обвинение**, **опускает защиту** и
+> **выдаёт схему за исправление** того учения, которое её отвергло **раньше, чем она была написана**.
+
+**6. Что это даёт для ответа на вопрос «насколько это исторически корректно» — четыре пункта.**
+1. **Терминологически — некорректно:** у Амиро нет «приобретения, которое не примиряет»; у него **два способа
+   говорить** об одной смерти (§4.116).
+2. **Исторически — некорректно вдвойне:** схема **не Кальвинова** (это чтение Кальвина Амиро, §4.115), и она
+   **не дортская** (Дорт её отверг, §4.83 п. 9).
+3. **Полемически — некорректно:** критические доводы статьи **совпадают с перечнем клеветы** 1634 г. (§4.118 п. 2).
+4. **И при этом — не бессмысленно:** схема **отвечает на реальную трудность** (искренность зова при
+   действительной благодати), и лучший ответ на неё — **не «за всех», а различение природной и нравственной
+   немощи** (§4.119 п. 5), которого статья не имеет.
+
+**7. Оговорки.** `EDITION_HOLD`; `LOCATOR_PARTIAL` (пагинация «Eschantillon»); прочитано 26/74 тома Амиро; `Acta`
+читана по OCR 1620 г. **П. 230 — ЗАКРЫТ.** Аксиома §4.83 п. 11 подтверждена как **ответ именно на этот ход**, а не
+только на «возможность».
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6952,6 +7015,7 @@ image… **nous pretendissions n'estre pas coupables deuant Dieu de ce que sa Lo
 | 1658 *(раунд 56, часть 7; трактат, сс. 156–162; «Eschantillon», сс. 192–197; чанки 31, 38)* | **Цепь спасения:** «*Nostre salut… dépend de… la foy; cette foy ne pend de la grâce…; cette grâce… dépend du conseil de l'election; & ce conseil n'ayant autre fondement que sa volonté, est constant & irrevocable*»; «*ny à quelque condition que ce soit qu'il ait **preveue** devoir estre en nos personnes*»; «*pour **racheter le genre humain** il a ordonné de nous donner la foy… **afin que cette rédemption ne nous fust pas inutile***»; «*son Fils… **ne prioit point pour nous**… **je ne prie point pour le monde***» (Ин. 17:9); **нравственная невозможность:** «*impuissance **physique ou naturelle***» vs «*s'ils ne le peuvent pas, c'est que leur **peruersité** est extrême*»; «*l'Euangile ne crie autre chose sinon que **Dieu les veut sauuer, pourueu qu'ils croyent***»; «*il **ne doit rien à personne***» |
 | 1658 *(раунд 57; начало «Eschantillon», сс. 163–167; чанки 32–33)* | **Титул: «ESCHANTILLON DE LA DOCTRINE DE CALVIN, Touchant la Predestination»** (с. 167); трактат кончается на с. 166 словом «**FIN**». **Открывается перечнем того, чем «*les Predicateurs de l'Eglise Romaine diffament le nom de Caluin*»:** «*Dieu a créé la plus grande partie des hommes **expressement pour les damner***»; «*vne loy qu'il est impossible d'accomplir*»; «*son sacrifice n'estant destiné qu'à la redemption de **fort peu***»; «*quand il suffiroit pour tout le genre humain, c'est **inutilement** pour la plus grande part*»; «*il la rend inutile… en ostant toute faculté de croire*». **Ответ:** «*il faut entendre ce mot de création… de cette entremise de la prouidence… infectée de la contagion du péché*»; «*en quoy est-ce qu'il pense Dieu estre **redeuable à l'homme**?*»; «*non pas d'une cruauté tyrannique, mais par vne **équité raisonnable***»; «*il **s'est volontairement** privé de l'intégrité*». **Три степени любви:** «*ce second degré… en produit necessairement **vn croisiéme***»; «*selon ce troisième il nous aime **pource que nous l'aimons au reciproque***». **«Comme si»:** «*S. Paul… parle de l'enuoy du Fils… **comme s'il auoit esté ordonné seulement pour eux**… quoy que… **il ait esté enuoyé pour sauver tous les humains, pourueu que***». **И обесценивание всеобщего:** «*l'autre… **n'est quasi pas considerable***»; «*l'incredulité des vns empeschant qu'ils n'en reçoiuent **aucun***» |
 | 1658 *(раунд 57, продолжение; «Eschantillon», сс. 173–178; чанок 34)* | **Ответ на обвинение о невозможном законе:** «*la **droite cause & naturelle du péché** n'est pas le **secret conseil de Dieu**, mais la **volonté de l'homme***»; от Бога — только «*le **décret de ne l'empescher pas***»; «*il faut considerer la **Loy de Dieu en deux égards***»; контрпример — «*comme si Dieu nous auoit commandé **d'arrester le mouvement du Soleil***»; «*si vous n'auez égard qu'aux **facultez naturelles**… & **non au vice qui y est suruenu***»; **два рода немощи:** «*vne sorte d'impuissance… **naturelle**… **mais pour laquelle on ne nous peut pas dire meschans**… Et il y en a **vne autre**… **morale**: de tant s'en faut que celle-là puisse nous excuser, que **plus elle est grande & profonde en nous, plus sommes nous meschans***» |
+| 1619 → 1634 *(раунд 57, часть 5; сведение `Acta` §4.83 пп. 9, 11 с `34_` §4.116–4.118)* | **Два хода, отвергнутые по отдельности и соединённые в Сомюре.** **Гелдерланд VI:** «*Neque hîc quicquam juvat **distinctio illa inter impetrationem & applicationem**… quam solutionem si accepit Pater, exigere novam jure nullo potest, sive applicetur, sive non applicetur: nam **non-applicatio facit quidem ut homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***». **Фрисландия:** «*non simpliciter, sed **conditionate** mortuum esse pro omnibus & singulis, si nimirum credant*». **Амиро (1634):** соединяет оба — «*mort universellement… sinon à la condition qu'ils croyent*» — и признаёт, что вне веры плод «***aucun***». **Аксиома:** «*non **reconciliabilitatem**… sed **reconciliationem***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -7481,6 +7545,14 @@ image… **nous pretendissions n'estre pas coupables deuant Dieu de ce que sa Lo
   (в) **два рода немощи:** «*impuissance **naturelle**… pour laquelle **on ne nous peut pas dire meschans***» и
   «*impuissance **morale**… **plus elle est grande… plus sommes nous meschans***». Дословно реформатская схоластика;
   ⇒ **довод «если способность отнята, зов неискренен» не проходит ни у Дорта, ни у Амиро**.
+
+- **Раунд 57, часть 5: п. 230 ЗАКРЫТ.** `Acta` **argument VI** (Гелдерланд) называет и отвергает различение
+  приобретения и применения **по имени**: «*Neque hîc quicquam juvat **distinctio illa inter impetrationem &
+  applicationem**… **non-applicatio facit quidem ut homini non prosit impetratio, sed non facit ut Deo non sit facta
+  solutio***». ⇒ формула «*non reconciliabilitatem… sed reconciliationem*» бьёт **по условному плоду**, а не только
+  по «возможности». **Честная граница:** `Acta` (1620) не могла отвечать Амиро (1634); верная формула — Амиро
+  **соединил два хода, каждый из которых в `Acta` отвергнут по отдельности** (различение — Гелдерланд VI; условное
+  приобретение — Фрисландия). **Итоговая оценка статьи — §4.120 п. 5.**
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
