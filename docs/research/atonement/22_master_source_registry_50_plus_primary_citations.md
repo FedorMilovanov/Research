@@ -650,6 +650,26 @@
       en particulier qui d'entre les hommes est esleu*». **Вывод:** сомюрская схема **не оставляет верующего в
       неизвестности**; утверждать обратное **нельзя**; обе схемы сходятся в пастырском применении. `EDITION_HOLD`;
       12 чанков из 74 (~16 %). П. 211 — титул «Eschantillon» не встречен.
+    - 42cy. *Дополнение 2026-10-19 (раунд 54, продолжение; `34_` §4.111, **S156**; `03_` §27;
+      `synthesis/03_` §28):* **Амиро, гл. XI–XII (чанки 23–24, сс. 117–126) — два образа действия; «невозможно
+      не верить».** **(1) «*Dieu donc agist en **deux façons** envers nous pour nous faire croire en Christ*»:**
+      внешне — проповедь Евангелия «*comme une doctrine d'une vérité celeste*»; внутренне — «*il agist tellement
+      en nos entendemens **par son intérieure vertu**, qu'il en decharte le vice & les tenebres*». **(2) Решающее:**
+      «*nos facultés intérieures estant si bien disposées par la grace de Dieu, **il est impossible déformais que
+      nous ne croyions***»; «***toute répugnance estant contrainte de céder à cette puissance***»; «*se peut-il
+      faire aucune resistance qui rende l'événement douteux, ou qui préuale?*»; «*exécute ce décret d'une façon qui
+      **ne rend nullement l'événement douteux***». Писание: Еф. 1:17–20; 2 Кор. 4:4. Довод: «*seroit-il besoin
+      d'une telle puissance s'il estoit question d'un effect vulgaire?*» **(3) Притча:** бедняк и сокровище, больной
+      и лекарство — «*S'il le refuse, il faut necessairement qu'il **ignore** sa poureté ou la richesse du
+      tresor*». **(4) Гл. XII:** «*non seulement ils creussent en Christ, mais mesmes **qu'il leur fust impossible
+      de ne pas croire***»; «*quel interest avons nous à la conservation de cette liberté, si son office est de nous
+      maintenir… **autant portés à rejetter Jésus-Christ qu'à le recevoir***»; «*si… ne se pouuoit acquerir que par
+      la perte de nostre liberté, **nous la deurions souffrir gayement***». **(5) Вывод:** обвинение «только
+      моральное убеждение» («*lenem tantum & moralem suasionem*», S154 теза II) **опровергнуто его текстом** ⇒
+      **запрет** его повторять. Точная формула: способ — **чрез познание**, действенность — **непреодолимая**;
+      это **третья позиция**, ближе к принятому «*roborat… efficaciter & suaviter*», но с иным акцентом
+      («*impossible*» vs «*suaviter*»). `EDITION_HOLD`; 14 чанков из 74 (~19 %). П. 211: «Eschantillon»
+      **позже** (чанки 26–34).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
