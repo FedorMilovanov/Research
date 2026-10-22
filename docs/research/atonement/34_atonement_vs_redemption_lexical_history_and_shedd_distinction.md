@@ -4946,7 +4946,7 @@ Dieu?*» И образ: «*Autant est-il impossible comme **d'illuminer une chos
 ou en redresser une autre qui toutesfois demeure tortue**: cela s'impliquant soy-mesme en une contradiction
 manifeste*».
 
-**6. Почему это важно для серии.** (а) Аргумент «нельзя спасти против воли» **не belongs одной стороне**: его
+**6. Почему это важно для серии.** (а) Аргумент «нельзя спасти против воли» **не принадлежит одной стороне**: его
 употребляют и Амиро, и реформатские схоласты (ср. «*Deus & natura nihil faciunt frustra*», S143; «*non…
 reconciliabilitatem… sed reconciliationem*», S145). (б) Различие — в том, **чтó выводится** из него: Амиро
 выводит **условие**; Дорт выводит, что если спасение совершается не против воли, то **самая воля даруется**

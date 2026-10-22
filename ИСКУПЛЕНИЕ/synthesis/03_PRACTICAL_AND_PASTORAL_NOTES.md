@@ -453,3 +453,51 @@ tribuitur, ut **cordis duritia primitus auferatur***» (Августин, *de pr
 
 **20.7. Оговорка.** Текст — OCR (A2), без сверки с изображением; лицо «Reverendus Sarisburiensis» не
 установлено; причина отсутствия Иосифа Холла в списке подписавших по документу не известна (п. 200 `34_`).
+
+
+## 21. Дополнение (2026-10-19; раунд 51; кросс-досье `34_` §4.104, S156): не слышавшие Евангелия, и «нельзя
+спасти против воли»
+
+**21.1. Вопрос, который встаёт в каждой миссионерской проповеди.** Как быть с теми, кто **никогда не слышал** о
+Христе? В раунде 50 мы записали дортский ответ: «***Alius modus salvandi homines, & medium aliud, per quod
+beneficiorum Christi participes fiant gentes, in Scriptura non traditur***» (Эмден, S153, §4.96 п. 5). Теперь
+прочитан ответ Амиро — и он **иной**.
+
+**21.2. Ответ Амиро: два рода проповеди.** «*comme il y a **de deux sortes de prédication de Christ**, aussi y
+pourroit-il avoir… de deux sortes de connoissance de Christ qui amèneroient au salut*». Первая — через
+апостолов. Вторая — «*par l'entremise de la **providence de Dieu seulement**, qui conserve le monde nonobstant
+son iniquité, & l'invite à repentance par sa longue patience, laquelle, si les hommes n'estoient point
+naturellement aveugles & obstinez en leur aveuglement, seroit capable d'engendrer en eux une persuasion de la
+miséricorde de Dieu… **& neantmoins suffisante pour rendre les hommes jouyssans du salut** duquel il est
+autheur*».
+
+**21.3. Два пастырских замечания, которые серия обязана сделать.**
+**(а) Амиро не говорит, что не слышавшие спасаются.** Он говорит, что эта вторая проповедь была бы **достаточна**,
+«*si les hommes n'estoient point naturellement aveugles & obstinez*» — то есть при условии, которого, по его же
+собственной главе VIII, **нет** («*un estrange aveuglement*», §4.103 п. 3). Стало быть, его схема описывает
+**возможность по природе благодати**, а не исход. **Пересказывать Амиро как «учившего, что язычники спасутся
+без Евангелия», — неверно.**
+**(б) И всё же Дорт и Амиро утверждают несовместимое.** Эмден: иного пути **не предано в Писании**. Амиро:
+второй путь существует и достаточен. **В серии оба утверждения следует приводить рядом** — не сглаживая.
+
+**21.4. Чтó из этого для проповеди.** Дортская формула не говорит «не слышавшие непременно погибли»; она
+говорит: **нам не указан иной путь**, а потому единственное, чтó нам заповедано и чтó мы знаем, — нести
+Евангелие. **Пастырски это надёжнее, чем построение Амиро**: второе оставляет проповедника без повеления, а
+слушателя — без ясности. Ср. §18.3: суд любви о всех при отказе называть отверженных.
+
+**21.5. «Нельзя спасти против воли» — общий аргумент, разные выводы.** Амиро: «*il estoit **absolument
+impossible** que les hommes fussent sauvez malgré qu'ils en eussent*», потому что «*la principale partie du
+salut consiste en la sanctification de l'ame… comment se pourroient opérer toutes ces choses en l'homme,
+l'homme demeurant neantmoins **obstiné** à l'encontre de Dieu?*», — и образ: «*autant est-il impossible comme
+**d'illuminer une chose qui demeure tenebreuse nonobstant, ou en redresser une autre qui toutesfois demeure
+tortue**… une contradiction manifeste*».
+**Практика:** аргумент принадлежит обеим сторонам. Различие — в выводе: Амиро выводит из него **условие**
+(веру), Дорт — что **самая воля даруется** («*det electis… & posse, & velle, & perficere*», §4.100 п. 2).
+**Проповедь, останавливающаяся на первом, оставляет человека при его ожесточении; проповедь, идущая ко второму,
+ведёт его ко Христу как к единственной причине и веры, и спасения.**
+
+**21.6. Образ, который стоит запомнить.** «Просить просветить то, чтó остаётся тёмным, или выпрямить то, чтó
+остаётся кривым» — Амиро называет это «явным противоречием». **Он принадлежит Amyraut, а не реформатской
+схоластике**, и потому его можно употреблять в разговоре с сомюрской стороною: это её собственное слово.
+
+**21.7. Оговорка.** Издание 1658 г. (`EDITION_HOLD`), 3 чанка из 74, французский OCR.
