@@ -1432,11 +1432,12 @@
         "форма документа-сверки (число строк, число разделов H2 и H3, уровень заголовка 15, наличие 15a–15e) переснимается гейтом: опубликованные цифры не имеют права быть памятью о файле",
         "смысловые поля закрытой схемы обязаны быть непустыми, а applied=true без resolution запрещено: наличие ключа — не утверждение",
         "раскладка лестницы версий гейта сверяется машиной: сумма breakdown = rowsTotal = versionGroups и равна фактическому распределению errorsOnMain по строкам",
-        "строгость распределена по периметру: расхождение числа о моём реестре — ошибка, о чужом — замечание; проверка, которую предполагается сделать обязательной для всего репозитория, не вправе блокировать чужой прогон моим устаревшим числом"
+        "строгость распределена по периметру: расхождение числа о моём реестре — ошибка, о чужом — замечание; проверка, которую предполагается сделать обязательной для всего репозитория, не вправе блокировать чужой прогон моим устаревшим числом",
+        "правило 18 (22.10.2026): обязательный блок реестра не вправе молча отсутствовать. Пока гейт читает reg.get('X') or {}, удаление целого блока выглядит зелёным — теряется не код возврата, а сама обязанность проверять. Теперь присутствие commitTimeChecks, correctionsPending с correctionsPendingCount, integrityGate.rules (mutationTotal/mutationGroups/mutationScore) и branchRetirement.recheckCommand требуется явно; два удаления прогнаны как мутации и дали FAIL"
       ],
       "measuredAt": "2026-10-22T22:20Z",
       "method": "python3 -B scripts/validate_atonement_corpus_integrity.py; мутации каждой проверки — отдельным прогоном, засчитывается только FAIL с ожидаемым сообщением (не просто ненулевой exit)",
-      "mutationScore20261022": "54 прогон-мутаций на дереве за 22.10: 13 + 3 + 5 + 3 + 3 + 1 + 6 + 20 = 54. Сверх них 5 юнит-кейсов вычитателя цитат. Засчитывается только ожидаемый вердикт (FAIL с нужной фразой либо PASS там, где он ожидан — в этом круге к числу ожиданий добавлен и «PASS с замечанием»: проверка обязана уметь не мешать) и побайтовое восстановление базы по cmp из эталона, снятого непосредственно перед прогоном. Суммы проверяются самим гейтом (правила 13 и 16).",
+      "mutationScore20261022": "56 прогон-мутаций на дереве за 22.10: 13+3+5+3+3+1+6+20+2 = 56. Сверх них 5 юнит-кейсов вычитателя цитат. Засчитывается только ожидаемый вердикт (FAIL с нужной фразой либо PASS там, где он ожидан — PASS с замечанием тоже ожидание: проверка обязана уметь не мешать) и побайтовое восстановление базы по cmp из эталона, снятого непосредственно перед прогоном. Суммы проверяются самим гейтом (правила 13 и 16), а присутствие обязательных блоков — правилом 18.",
       "why": "все восемь правил — про одно и то же: вывод, который нельзя переснять, не является фактом; отсюда же и запрет ссылок в доке на невнесённые данные (коммит ae2821a оставил в 17_ ссылку на ключ, которого скрипт-заполнитель не создал)",
       "mutationScoreMethod": "переснято в этом же прогоне: число групп и их размеры перечислены в самой строке, каждая группа сверена с разделом 17_",
       "mutationGroups": [
@@ -1471,9 +1472,13 @@
         {
           "label": "гранульность времени и самоарифметика отчёта (22.10, вечер): снять декларацию дневной гранульности; переименовать её путь; оставить съёмке только день; сдвинуть occurrences чужого периметра; сдвинуть files; приписать чужому лану 20 вместо 19; добавить дневное поле в чужой реестр; сдвинуть группу мутаций; сдвинуть итоги групп; сдвинуть lines дока; сдвинуть sectionsH2; уронить 15d на уровень ##; поднять 15 до #### — 13 прогонов, включая два варианта одной мутации и два падения, вызванных багом в самом новом правиле; обнулить defect, why, resolution закрытой записи; сдвинуть группу лестницы; сдвинуть versionGroups; добавить дневное поле в чужой реестр (ожидание — PASS с замечанием); сдвинуть своё число (ожидание — FAIL)",
           "count": 20
+        },
+        {
+          "label": "присутствие обязательных блоков (правило 18): удалить branchTopologyAudit20261022; удалить driveSourceAudit20261016.correctionsPending вместе с correctionsPendingCount",
+          "count": 2
         }
       ],
-      "mutationTotal": 54
+      "mutationTotal": 56
     },
     "scopeOfMeasurementRules": {
       "registriesWalked": [
@@ -1484,11 +1489,14 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 30,
+        "корпус": 37,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
-        "synthesis": 0
+        "synthesis": 0,
+        "measuredAt": "2026-10-22T23:05Z",
+        "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py (правило 13 пересчитывает обходом и сверяет с этой цифрой) — тот же обход, которым проверяется",
+        "method": "обход всего реестра корпуса по ключам at|measuredAt|checkedAt|measuredOn со значением-строкой; поле, которое переснимает само себя, тоже входит"
       },
       "violationsFound20261022": 0,
       "measuredAt": "2026-10-22T13:22Z",
@@ -1674,6 +1682,93 @@
       "measuredAt": "2026-10-22T19:20Z",
       "method": "скан пяти реестров на форму значения ^\\d{4}-\\d{2}-\\d{2}$ (а не на имя ключа): имена с At|On|Time требуют часов, с Date|Day — объявления; python3 -B scripts/validate_atonement_corpus_integrity.py печатает оба списка",
       "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
+    },
+    "mainProtection196": {
+      "measuredAt": "2026-10-22T22:55Z",
+      "issueState": "open",
+      "requiredChecksNamedInIssue": [
+        "Repository authority integrity",
+        "G3 corpus integrity"
+      ],
+      "checkRunsWithThoseNamesOnSixRecentMainCommits": [
+        0,
+        0
+      ],
+      "actualCheckNamesObserved": [
+        "validate",
+        "Atonement corpus integrity"
+      ],
+      "validateCollisions": {
+        "workflowsOverwritingTheName": 6,
+        "examples": [
+          "1peter-product-handoff-audit.yml",
+          "bratsky-listok-authority.yml",
+          "g3-canonical-spine-integrity.yml",
+          "repository-authority-integrity.yml"
+        ]
+      },
+      "rulesetAttempt": {
+        "httpStatus": 403,
+        "message": "Resource not accessible by integration",
+        "tokenPermissionsFields": {
+          "admin": true,
+          "push": true,
+          "maintain": true
+        },
+        "legacyBranchProtectionApi": "тот же 403"
+      },
+      "preparedPayloadFile": "ИСКУПЛЕНИЕ/evidence/ruleset-main-protection-196.json",
+      "applyCommand": "gh api -X POST repos/FedorMilovanov/Research/rulesets --input ИСКУПЛЕНИЕ/evidence/ruleset-main-protection-196.json",
+      "whyNotSetByMe": "токен Arena не имеет Administration (403 при permissions.admin=true); required-check с именем, отсутствующим в check-runs, заморозил бы все PR, поэтому имя снято с сервера, а не из текста issue",
+      "recheckCommand": "gh api repos/FedorMilovanov/Research/check-runs?per_page=100 --jq '[.check_runs[].name]' | sort -u",
+      "issueCommentAttempt": {
+        "httpStatus": 403,
+        "message": "Resource not accessible by integration",
+        "measuredAt": "2026-10-22T23:12Z",
+        "consequence": "документирование исходного текста #196 невозможно на GitHub этим токеном: содержимое перенесено в тело PR #219 и в этот реестр, а не отложено",
+        "recheckCommand": "gh issue comment 196 --body-file /tmp/c196.md"
+      }
+    },
+    "scopeAndPrPreview20261022": {
+      "measuredAt": "2026-10-22T22:55Z",
+      "why": "прежде чем назначать гейт обязательным для всего репозитория, он обязан перестать блокировать чужие прогоны моими устаревшими числами",
+      "dayFields": {
+        "foreign": {
+          "ИСКУПЛЕНИЕ-final-public/1cor11": 3,
+          "ИСКУПЛЕНИЕ-final-public/ot": 5,
+          "heart": 19,
+          "lawson": 0
+        },
+        "corpus": 0
+      },
+      "mutationProof": [
+        {
+          "injection": "+1 к дневному полю в чужом реестре (ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json)",
+          "gate": "PASS с отметкой в notes",
+          "proves": "чужой прогон не блокируется"
+        },
+        {
+          "injection": "корпус: 3 -> 9 в собственном реестре",
+          "gate": "FAIL с указанием периметра",
+          "proves": "строгость сохранена внутри периметра"
+        }
+      ],
+      "restoredAfterMutation": "побайтово; filecmp подтвердил совпадение для обоих файлов; гейт после восстановления: PASS",
+      "validatorBattery": {
+        "total": 72,
+        "bareMainPass": 36,
+        "requireProductRoot": 33,
+        "preexistingFail": 3,
+        "preexistingFailNames": [
+          "validate_branch_retirement_authority.py",
+          "validate_bratsky_listok_authority_manifest.py",
+          "validate_osk_wave7_product_article_audit.py"
+        ],
+        "newFailIntroducedByEitherPr": 0,
+        "methodErratum": "первый прогон дал 36 FAIL, потому что 33 скрипта требуют --product-root: падением это быть не может, это ошибка методики вызова",
+        "reading": "технического препятствия для мержа 182/207 нет; основание не мержить — содержательное и принадлежит владельцам ланов"
+      },
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py  # дневные поля. Для PR: gh api repos/FedorMilovanov/Research/pulls/<n>/files --jq [.] | count status==removed, затем git worktree add --detach /tmp/p origin/main && git -C /tmp/p merge --no-ff --no-commit <head>. Для батареи: for v in $(git ls-tree -r --name-only HEAD scripts | grep -E validate_.*py); do python3 -B $v; done"
     }
   },
   "driveSourceAudit20261016": {
@@ -1955,7 +2050,7 @@
         "resolution": "в git отсутствует, в Drive живёт: id 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko, 6303 B, 2026-10-08",
         "applied": false,
         "why": "чужой под-корпус",
-        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
+        "checkedAgainstMain20261022": "сверено с деревом main после #218 (72d937b): файл по-прежнему отсутствует в git и живёт только в Drive (id 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko) => applied=false остаётся верным; хвост перенесён в README_FALLBACK-запись, а не снят",
         "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
       },
       {
@@ -1997,15 +2092,15 @@
       {
         "where": "ИСКУПЛЕНИЕ/nt/ (4 файла, 10 вхождений) и ИСКУПЛЕНИЕ/fathers/ (2 файла, 2 вхождения)",
         "defect": "латинские буквы внутри кириллических слов: «Тregеллс» и «Тregеллса» (nt/12 — 7 строк, nt/03 — 1), «Павелa» (nt/07:367), «polemikи» (nt/08:682), «антidonatistский» (fathers/05:21), «Berоn» (fathers/11:19)",
-        "resolution": "исправлено после мержа #216: 12 вхождений в 6 файлах выравнены по написанию самого корпуса (Tregelles / Beron / Павела / полемики / антидонатистский); sha и время коммита записываются следующим коммитом, потому что собственное время коммита изнутри него не измеряется — это то же правило, что у commitTimeChecks",
+        "resolution": "исправлено после мержа #216: 12 вхождений в 6 файлах выравнены по написанию самого корпуса (Tregelles / Beron / Павела / полемики / антидонатистский); sha и время: squash-мерж PR #218 = 72d937b, 2026-10-22T22:05Z (git log -1 --format=%cI на дереве main); контроль на этом дереве: в ИСКУПЛЕНИЕ/** 0 смешанных написаний и 0 вариантов",
         "applied": true,
         "checkedAgainstMain20261022": false,
         "measuredAt": "2026-10-22T21:35Z",
         "method": "python3 -обход 84 md ИСКУПЛЕНИЕ c паттерном смешанной графики; пофайловый вывод с номерами строк (grep -n по каждому файлу)",
         "recheckCommand": "grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' --include='*.md' ИСКУПЛЕНИЕ/nt ИСКУПЛЕНИЕ/fathers | cut -d: -f1,2",
         "why": "править орфографию в чужом лане — то же, что молча поправить чужой счётчик: я это уже запретила сегодня на себе",
-        "appliedHow": "коммит eb90045 этого PR; время снято git log -1 --format=%cI eb90045 и зафиксировано в commitTimeChecks (правило 4)",
-        "appliedAt": "2026-10-22T20:01:00Z"
+        "appliedHow": "PR #218 (squash 72d937b); правка по доминирующему написанию самого корпуса",
+        "appliedAt": "2026-10-22T22:05Z"
       }
     ],
     "mirrorLag": {
@@ -2031,10 +2126,11 @@
       "total": 8,
       "applied": 4,
       "open": 4,
-      "measuredAt": "2026-10-22T21:38Z",
+      "measuredAt": "2026-10-22T22:55Z",
       "method": "python3 -c \"import json;d=json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));c=d['driveSourceAudit20261016']['correctionsPending'];print(len(c),sum(1 for x in c if x['applied']),sum(1 for x in c if not x['applied']))\"",
       "why": "число открытых записей — единственный способ понять, закрыт ли периметр; гейт сверяет этот словарь с фактическим составом (правило 9)",
-      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
+      "note": "переснято после мержа #218 и закрытия [7]: счётчик снят с полей applied, а не унаследован; правило 12"
     },
     "correctionsPendingSchema": {
       "required": [
@@ -2522,19 +2618,41 @@
         "pr": 182,
         "head": "agent/1cor11-citation-quarantine-20260810",
         "state": "OPEN",
-        "conflicts": 0
+        "conflicts": 0,
+        "files": 40,
+        "additions": 13380,
+        "deletions": 1354,
+        "removedFiles": 0,
+        "ahead": 290,
+        "behind": 1083,
+        "mergePreview": "0 конфликтов, 0 регрессий валидаторов против голого main"
       },
       {
         "pr": 207,
         "head": "arena/01a0feff-research",
         "state": "OPEN",
-        "conflicts": 0
+        "conflicts": 0,
+        "files": 40,
+        "additions": 5281,
+        "deletions": 63,
+        "removedFiles": 0,
+        "ahead": 44,
+        "behind": 428,
+        "mergePreview": "0 конфликтов, 0 регрессий валидаторов против голого main"
       },
       {
         "pr": 216,
         "head": "arena/dc7e8cb5-research",
-        "state": "OPEN",
-        "conflicts": 0
+        "state": "MERGED",
+        "conflicts": 0,
+        "mergeCommit": "bfa3082"
+      },
+      {
+        "pr": 218,
+        "head": "arena/dc7e8cb5-research",
+        "state": "MERGED",
+        "conflicts": 0,
+        "mergeCommit": "72d937b"
       }
     ],
     "pairwisePathOverlap": "#216∩#182=0, #216∩#207=0, #182∩#207=0 ⇒ порядок мержа трёх открытых PR не имеет значения",
@@ -2601,10 +2719,28 @@
       },
       {
         "whatRemainsTrue": "16 файлов дельты и +2 797 строк их работы; 30 файлов и 7 880 строк в ИСКУПЛЕНИЕ/ot в main; то, что их ветка шла к мержу через merge-commit и ot/ уцелел"
+      },
+      {
+        "asOf": "2026-10-22T22:55Z",
+        "was": "бестоводных веток 6",
+        "now": "7",
+        "why": "список был снят с устаревшего локального набора refs (git for-each-ref refs/remotes/origin даёт 2 записи в этом клоне, на сервере 26); переснято серверным gh api branches + compare по каждой"
+      },
+      {
+        "asOf": "2026-10-22T22:55Z",
+        "was": "мерж #182/#207 удаляет чужой текст (48 файлов, +2797/-7913)",
+        "now": "0 удалённых файлов; 0 конфликтов на предпросмере; регрессий валидаторов нет",
+        "why": "число было перенесено из другого сравнения без пересъёма; записано как erratum, тело #218 прокомментировано отдельно"
+      },
+      {
+        "asOf": "2026-10-22T22:55Z",
+        "was": "реестр потерян: нет файла atonement-corpus-integrity-registry-2026-10-16.json",
+        "now": "такого имени никогда не было; реестр = ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json (константа REG в гейте), он в git и цел",
+        "why": "я набрала имя, которого не существовало, и объявила потерю; проверено git ls-tree HEAD, find по всему /home/user и git log --all --name-only; ложная тревога вскрыла настоящий дефект — молчаливое отсутствие блоков (правило 18)"
       }
     ],
     "howRule": "любой git-замер про чужую ветку начинается с git rev-parse --is-shallow-repository (ожидание false) и git merge-base; пустой merge-base = дефект среды, а не факт репозитория; для дельты — только три точки (base...B)",
-    "recheckCommand": "git fetch --unshallow origin; git for-each-ref --format='%(refname:short)' refs/remotes/origin | grep -v HEAD  # затем по каждой ветке: merge-base --is-ancestor tip origin/main; diff --shortstat origin/main...tip; merge-tree --write-tree origin/main tip",
+    "recheckCommand": "gh api repos/FedorMilovanov/Research/branches --jq '.[].name'  # имена и sha только с сервера; затем по каждой: gh api repos/FedorMilovanov/Research/compare/main...<branch> --jq '{ahead:.ahead_by,behind:.behind_by}'",
     "commitTimeChecks": {
       "b289d5a": "2026-10-15T23:49:49Z",
       "0b1fb0d": "2026-10-16T08:01:34Z",
@@ -2665,7 +2801,7 @@
     },
     "gateOnMainTree": {
       "measuredAt": "2026-10-22T21:05Z",
-      "method": "прогон этого же скрипта на дереве origin/main в отдельном worktree: git worktree add --detach /tmp/main-bare origin/main && cp scripts/validate_atonement_corpus_integrity.py /tmp/main-bare/scripts/ && cd /tmp/main-bare && python3 scripts/validate_atonement_corpus_integrity.py; раскладка считается по префиксам строк вывода, сумма проверяется правилом 13 (то же требование, что к собственному отчёту)",
+      "method": "git worktree add --detach /tmp/main-bare origin/main && cd /tmp/main-bare && python3 -B scripts/validate_atonement_corpus_integrity.py  # скрипт теперь в main, копировать его больше не нужно",
       "errorsTotal": 22,
       "closedByThisPr": 22,
       "breakdown": {
@@ -2832,6 +2968,69 @@
     "commitTimeChecksNote": "добавлен f15e1a2: время собственного коммита пишется следующим прогоном, из git, а не из головы автора коммита",
     "commitTimeChecksWhat": {
       "eb90045": "исправление 12 вхождений смешанного письма в nt/ и fathers/ — закрытие correctionsPending[7]"
+    },
+    "branchRetirement": {
+      "measuredAt": "2026-10-22T22:55Z",
+      "authorityRecord": {
+        "validator": "scripts/validate_branch_retirement_authority.py",
+        "expectedVisibleRefs": [
+          "main",
+          "archive/legacy-diverged-heads-20260801"
+        ],
+        "recordedPreDeleteRule": "DELETE_ONLY_AFTER_HEAD_IS_ANCESTOR_OF_FRESH_ORIGIN_MAIN_AND_AHEAD_COUNT_EQUALS_ZERO",
+        "reading": "чистка бестоводных голов предписана самим репозиторием: мои удаления движут дерево к записанному end-state, а не от него"
+      },
+      "deleted": [
+        {
+          "name": "agent/heart-i1-reader-assembly-20260804",
+          "tipSha": "9cc04462c789a7a98df0f2805a88fb178120eb9e"
+        },
+        {
+          "name": "agent/1cor11-arena-d-normalized-20260809",
+          "tipSha": "066df58637698df514a0110318d9d524705906cc"
+        },
+        {
+          "name": "arena/dddc1326-research",
+          "tipSha": "ed8031aa66b869b86e29066b7c9f543309bc5d9c"
+        },
+        {
+          "name": "lawson-bundle-bootstrap-20260928",
+          "tipSha": "b7cd8a8b11a3b2405e0d6cc727ebb68fac36abf1"
+        },
+        {
+          "name": "lawson-finalize-20260928",
+          "tipSha": "dff6e36a896468f948e5e90b5e41db468c80061d"
+        },
+        {
+          "name": "tmp/lawson-biography-integration-20260930-2",
+          "tipSha": "7b0979c7f2acdad0c4c279929e97277b5d16706a"
+        },
+        {
+          "name": "tmp/lawson-biography-integration-20260930",
+          "tipSha": "7b0979c7f2acdad0c4c279929e97277b5d16706a"
+        }
+      ],
+      "deletedCount": 7,
+      "perDeleteVerification": "перед каждым push --delete заново снят gh api compare/main...<branch>: behind=0 и ahead=0; после — git ls-remote по каждому имени пуст",
+      "liveBranchesBefore": 26,
+      "liveBranchesAfter": 19,
+      "extraVsRecordedEndStateBefore": 24,
+      "extraVsRecordedEndStateAfter": 17,
+      "headlessRemainingAfter": 0,
+      "reachability": "объекты удалённых голов достижимы из main (behind=0), потеря содержимого нулевая; ref восстанавливается: git push origin <tipSha>:refs/heads/<name>",
+      "notDeleted": "17 оставшихся лишних веток имеют уникальные коммиты (живые ланы); их retirement — решение владельцев",
+      "recheckCommand": "git ls-remote --heads origin | wc -l; gh api repos/FedorMilovanov/Research/branches --jq '.[].name'; по каждой: gh api repos/FedorMilovanov/Research/compare/main...<name> --jq '.ahead_by'"
+    },
+    "measuredAt": "2026-10-22T22:55Z",
+    "prComments20261022": {
+      "measuredAt": "2026-10-22T23:12Z",
+      "urls": {
+        "182": "https://github.com/FedorMilovanov/Research/pull/182#issuecomment-6350396653",
+        "207": "https://github.com/FedorMilovanov/Research/pull/207#issuecomment-6350397093",
+        "218": "https://github.com/FedorMilovanov/Research/pull/218#issuecomment-6350397482"
+      },
+      "what": "измеренный предпросмер и erratum к собственному числу; для #218 — поправка к его же телу",
+      "recheckCommand": "gh api repos/FedorMilovanov/Research/issues/182/comments --jq '.[].html_url'"
     }
   },
   "reproducibility20261022": {
@@ -2868,7 +3067,7 @@
     "rule": "отсюда твёрдый порядок: валидаторы → коммит → push → CI → синхрон тела PR, без «дочитаю и закоммичу одним». Дерево песочницы — кэш, а не хранилище; вывод не записывается в governance-файл, пока не переснимается командой",
     "countsLive": {
       "ключейРеестра": 30,
-      "правилГейта": 17,
+      "правилГейта": 18,
       "shaВсверкеВремен": 10,
       "строкВАудитеТопологии": 26,
       "removedFigures": {
@@ -2877,7 +3076,7 @@
         "хвостов": "это список в теле PR, а не свойство дерева; переснимается только чтением PR, значит живым числом называться не может",
         "строкАмита": "ключ был написан невнятно и означал число строк аудита (rows); переименован в строкВАудитеТопологии, потому что число без внятного имени — это число без определения"
       },
-      "measuredAt": "2026-10-22T14:20Z",
+      "measuredAt": "2026-10-22T23:05Z",
       "method": "len() по фактическому содержимому файла; проверяется тем же прогоном гейта, что и сами правила",
       "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     },
@@ -2902,19 +3101,27 @@
   },
   "reconciliationDocument20261022": {
     "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-    "lines": 999,
+    "lines": 1049,
     "sectionsH2": 16,
-    "sectionsH3": 18,
+    "sectionsH3": 19,
     "history": [
       {
         "lines": 791,
         "sectionsH2": 16,
         "asOf": "2026-10-22T18:40Z",
         "note": "числа, с которыми PR был отправлен владельцу; 16 разделов включали ## 15d, ошибочно поднятый на уровень родителя"
+      },
+      {
+        "lines": 999,
+        "sectionsH2": 16,
+        "sectionsH3": 18,
+        "asOf": "2026-10-22T22:22Z",
+        "note": "числа до вставки §15i (одиннадцатый круг)"
       }
     ],
-    "measuredAt": "2026-10-22T22:22Z",
+    "measuredAt": "2026-10-22T23:05Z",
     "method": "len() по строкам файла и счёт по префиксам '## ' / '### '; переснимается гейтом каждый прогон (правило 14), расхождение = ошибка, а не замечание",
-    "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
+    "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
+    "measuredBy": "wc -l и grep -c по самому файлу, а не по памяти прошлого съёма"
   }
 }

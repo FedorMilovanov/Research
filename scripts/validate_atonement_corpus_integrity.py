@@ -509,6 +509,38 @@ for _md in sorted(CORPUS.rglob("*.md")):
                 "scripts/validate_atonement_corpus_integrity.py"
             )
 
+# ------------------------------------- обязательные блоки реестра (правило 18) --
+# Гейт читает governance-блоки через .get(...) or {}, поэтому молчаливое удаление целого
+# блока выглядит как зелёное состояние: код возврата не теряется — теряется обязанность
+# проверять. Присутствие каждого обязательного блока требуется явно (22.10.2026).
+_REQUIRED_BLOCKS = [
+    ("branchTopologyAudit20261022.commitTimeChecks",
+     lambda: (reg.get("branchTopologyAudit20261022") or {}).get("commitTimeChecks")),
+    ("driveSourceAudit20261016.correctionsPending",
+     lambda: (reg.get("driveSourceAudit20261016") or {}).get("correctionsPending")),
+    ("driveSourceAudit20261016.correctionsPendingCount",
+     lambda: (reg.get("driveSourceAudit20261016") or {}).get("correctionsPendingCount")),
+    ("integrityGate.rules.mutationGroups",
+     lambda: ((reg.get("integrityGate") or {}).get("rules") or {}).get("mutationGroups")),
+    ("integrityGate.rules.mutationTotal",
+     lambda: ((reg.get("integrityGate") or {}).get("rules") or {}).get("mutationTotal")),
+    ("integrityGate.rules.mutationScore20261022",
+     lambda: ((reg.get("integrityGate") or {}).get("rules") or {}).get("mutationScore20261022")),
+    ("branchTopologyAudit20261022.branchRetirement.recheckCommand",
+     lambda: ((reg.get("branchTopologyAudit20261022") or {}).get("branchRetirement") or {}).get("recheckCommand")),
+]
+for _blk_name, _blk_get in _REQUIRED_BLOCKS:
+    try:
+        _blk_val = _blk_get()
+    except Exception as _exc:  # noqa: BLE001
+        errors.append(f"registry: обязательный блок {_blk_name} нечитаем: {_exc}")
+        continue
+    if not _blk_val:
+        errors.append(
+            f"registry: обязательный блок {_blk_name} отсутствует или пуст — отсутствие проверки "
+            "не должно выглядеть как её прохождение (правило 18)"
+        )
+
 # ------------------------------------------- correctionsPending: единая схема --
 # 22.10: шесть записей были в форме where/was/now, одна — where/status/erratum, седьмая — what/*. Из-за этого
 # «сколько открытых» нельзя ни посчитать, ни проверить — а это единственный вопрос, который имеет смысл к
