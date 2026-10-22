@@ -1494,14 +1494,14 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 42,
+        "корпус": 44,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
         "synthesis": 0,
         "measuredAt": "2026-10-22T23:05Z",
         "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py (правило 13 пересчитывает обходом и сверяет с этой цифрой) — тот же обход, которым проверяется",
-        "method": "обход всего реестра корпуса по ключам at|measuredAt|checkedAt|measuredOn со значением-строкой; поле, которое переснимает само себя, тоже входит (23.10: 40→41→42 — каждый новый блок с measuredAt добавляет единицу; правило 19 внесено этим же кругом)"
+        "method": "обход всего реестра корпуса по ключам at|measuredAt|checkedAt|measuredOn со значением-строкой; поле, которое переснимает само себя, тоже входит (23.10: 40→41→42 — каждый новый блок с measuredAt добавляет единицу; правило 19 внесено этим же кругом) (23.10: 42→44 — блок съёма после мержа #222 добавил два поля measuredAt/checkedAt)"
       },
       "violationsFound20261022": 0,
       "measuredAt": "2026-10-22T13:22Z",
@@ -1651,7 +1651,7 @@
       "tokenRule": "ищутся целые токены ([^\\W\\d_]+), а не границы график: сообщение «8:рpusа» не даёт что искать, «8:корpusа» даёт (проверено пробой на 00_README)",
       "whatTheRuleCannotCatch": "правило видит только склейку двух график в одном токене; отдельно взятое латинское слово в русской фразе (например «kontrol» вместо «контроль», что я и оставила в первом варианте этого же абзаца) им не называется осознанно: технические термины тут латиницей по делу. Значит, за орфографию прозы отвечает автор, а не проверка, и «правило проходит» не равно «текст вычитан»",
       "jsonLeafScan": {
-        "measuredAt": "2026-10-23T00:40Z",
+        "measuredAt": "2026-10-22T21:46:45Z",
         "ownOccurrences": 0,
         "scannedFiles": 6,
         "foreignOccurrences": 0,
@@ -2804,7 +2804,8 @@
       "eecb25d": "2026-10-22T09:28:31Z",
       "eb90045": "2026-10-22T20:01:00Z",
       "fc63e53bdc1ef0b1c47b49d4351199fe3c22a928": "2026-10-22T20:20:09Z",
-      "c52c86bf8751b2ed9ba6ef9d0e3ee331742b3282": "2026-10-22T20:24:31Z"
+      "c52c86bf8751b2ed9ba6ef9d0e3ee331742b3282": "2026-10-22T20:24:31Z",
+      "77641fa": "2026-10-22T21:45:33Z"
     },
     "commitTimeChecksHow": "сверяется гейтом при каждом прогоне; канонический снимок: TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd <sha>. %cI не годится: он печатает смещение коммита (у владельческих +03:00), и время «Z» из него выходит сдвигом на 3 часа",
     "lossFreeResiduals": {
@@ -2853,7 +2854,7 @@
       "verdict": "из 18 несмерженных веток 6 не содержат ни одного исследовательского файла сверх main: 4 — побайтовый ноль, 2 — 18 и 24 строки инструкций в двух индексных файлах, которые main переписал новее. Удаление этих веток не теряет ничего, что main уже не superseded; если порядок чтения (цепочки 301/302/303) нужен как решение, его надо брать из ветки до удаления — в main этих строк нет"
     },
     "gateOnMainTree": {
-      "measuredAt": "2026-10-22T23:47Z",
+      "measuredAt": "2026-10-22T21:46:45Z",
       "method": "git worktree add --detach /tmp/main-bare origin/main && cd /tmp/main-bare && python3 -B scripts/validate_atonement_corpus_integrity.py  # скрипт теперь в main, копировать его больше не нужно",
       "errorsTotal": 22,
       "closedByThisPr": 22,
@@ -2924,6 +2925,16 @@
           "measuredAt": "2026-10-22T23:47Z",
           "result": "PASS (19 root files, 4 sub-corpora / 52 sub-lane files, 36 lane files, conflict ledger C-01…C-24, publicationEligible=false)",
           "mainSha": "c52c86b"
+        },
+        {
+          "mainSha": "77641fa",
+          "verdict": "PASS",
+          "errorsTotal": 22,
+          "measuredAt": "2026-10-22T23:47Z",
+          "asOf": "2026-10-23T00:50Z",
+          "note": "последнее съём до мержа #222 (main был 5a7ea3b); оставлено как история, а не вытерто",
+          "provenance": "значение читается: git show 5a7ea3b:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | путь branchTopologyAudit20261022.gateOnMainTree.measuredAt",
+          "recheckCommand": "git show 5a7ea3b:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | python3 -c 'import json,sys;print(json.load(sys.stdin)[\"branchTopologyAudit20261022\"][\"gateOnMainTree\"][\"measuredAt\"])'"
         }
       ],
       "arithmeticNeedleWhere": "вывод гейта на дереве origin/main (не исходник: сообщение собрано из f-строки и в тексте скрипта не встречается целиком); получить: recheckCommand выше",
@@ -3023,6 +3034,24 @@
         },
         "versionGroups": 12,
         "rowsTotal": 12
+      },
+      "measuredOnMainAfterMerge20261023": {
+        "mainSha": "77641fa",
+        "mainShaFull": "77641faae1b98f617b082aaa896e5185dc950828",
+        "commitTime": "2026-10-22T21:45:33Z",
+        "verdict": "PASS",
+        "rootFiles": 19,
+        "subCorpora": 4,
+        "subLaneFiles": 53,
+        "laneFiles": 36,
+        "ledgerRange": "C-01…C-25",
+        "publicationEligible": false,
+        "errorsTotal": 0,
+        "measuredAt": "2026-10-22T21:46:45Z",
+        "method": "git worktree add --detach /tmp/wt-after-merge 77641fa && cd /tmp/wt-after-merge && python3 -B scripts/validate_atonement_corpus_integrity.py; exit-код не теряется (не через трубу), вывод разбирается регуляркой, поэтому «PASS» в реестре — это разобранный вывод, а не намерение",
+        "recheckCommand": "git worktree add --detach /tmp/wt-verify origin/main && cd /tmp/wt-verify && python3 -B scripts/validate_atonement_corpus_integrity.py; echo exit=$?",
+        "commitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 77641fa",
+        "note": "время снято канонической командой, а не %cI: смещение +03:00 уже ломало сверку в прошлом круге"
       }
     },
     "commitTimeChecksNote": "добавлен f15e1a2: время собственного коммита пишется следующим прогоном, из git, а не из головы автора коммита Последнее обновление 2026-10-22T23:50Z: добавлены sha мержей #219 и #220 — те же пары, что закрывали этот реестр; снять заново: TZ=UTC git log -1 --format=%cI <sha> на дереве main.",
@@ -3129,7 +3158,7 @@
     "countsLive": {
       "ключейРеестра": 31,
       "правилГейта": 19,
-      "shaВсверкеВремен": 12,
+      "shaВсверкеВремен": 13,
       "строкВАудитеТопологии": 26,
       "removedFigures": {
         "ошибокНаРодителе": "переехало в branchTopologyAudit20261022.gateOnMainTree: у него есть раскладка, сумма и команда съёма на worktree, а это поле переснять из CI нельзя",
@@ -3162,7 +3191,7 @@
   },
   "reconciliationDocument20261022": {
     "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-    "lines": 1093,
+    "lines": 1094,
     "sectionsH2": 16,
     "sectionsH3": 21,
     "history": [
@@ -3192,6 +3221,13 @@
         "sectionsH3": 20,
         "asOf": "2026-10-23T00:25Z",
         "note": "числа до вставки §15k (двенадцатый круг)"
+      },
+      {
+        "lines": 1093,
+        "sectionsH2": 16,
+        "sectionsH3": 21,
+        "asOf": "2026-10-23T00:52Z",
+        "note": "числа до строки итога §15k (после влития #222)"
       }
     ],
     "measuredAt": "2026-10-22T23:35Z",
