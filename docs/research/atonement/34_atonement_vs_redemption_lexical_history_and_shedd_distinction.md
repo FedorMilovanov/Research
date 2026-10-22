@@ -5275,6 +5275,81 @@ miséricorde avec une **liberté toute entière***».
 встретилось**; вывод об отсутствии **не делается** (урок р.44), но ссылки литературы на такую формулу требуют
 проверки по другому изданию или другому сочинению.
 
+### 4.108. Q104 — Амиро, глава X: три обвинения, «полное равенство» и равный отказ всех; где же тогда различие (раунд 53)
+
+**0. Источник, объём, пагинация.** Чанок **20** — **сс. 101–105** того же экземпляра: конец об избрании и
+**глава X** целиком в начале. **S156**, класс **A2** (OCR). Прочитано **10 чанков из 74** (около 13,5 %).
+**Важно для `LOCATOR_PARTIAL`:** чанок 20 вновь считает страницы 101–105, то есть **возвращается к пагинации
+основного трактата** (чанки 12–18: 58–95). Значит, чанок 19 (сс. 56–60) был **вставкой иной пагинации**
+внутри потока, а не началом другой части; титул «Eschantillon» по-прежнему не встречен. Локатор остаётся
+**чанк + заголовок**.
+
+**1. Заголовок главы X — три обвинения, те же, что у Дорта.** «*Que selon cette doctrine Dieu ne peut estre
+accusé d'**acceptation de personnes**, ny d'estre **autheur de péché**, ny **cause de la perdition des
+hommes***». Это ровно те три возражения, которые разбирает и Синод (ср. I артикул и отвергнутые тезы,
+§4.98 п. 3). **Глава X у Амиро — апология безусловного избрания, а не его ослабление.**
+
+**2. «Полное равенство» — формула, ради которой стоило читать.** «*Or icy ces choses n'ont point de lieu. Car
+comme nous avons descrit la nature des hommes cy-dessus, **il y a entr'eux tous une égalité toute entière**. Ils
+sont tous venus de la main d'un mesme autheur, qui les recognoist également pour son ouvrage. Ils sont tombés en
+mesme misère par un mesme péché… En leur nature mesme ils sont **également corrompus & par consequent également
+coupables**. Cette corruption n'est pas, ou plus profonde, ou plus inveterée, ou plus invincible en cestuy-cy
+qu'en cestuy là. C'est **une lepre qui nous est à tous pareillement incurable***» (с. 103–104).
+
+**3. Для п. 202 — решающее продвижение.** Здесь есть **все три слова** литературы о формуле: «*égalité toute
+entière*», «*également*» и — тотчас ниже — «***Il offre donc la grâce à tous les criminels également***» (с. 104).
+Буквального словосочетания «*égale et universelle*» по-прежнему **нет**, но субстанция найдена **дословно** и в
+одном месте. **П. 202: продвинут до «формула установлена по существу и по ключевым словам; буквальное
+словосочетание не встречено»**. Вывод об отсутствии **не делается**.
+
+**4. Равное предложение — и равный отказ.** Это самое сильное место главы и самое неожиданное:
+«*Mais Dieu a remédié à cela, & a trouvé en sa sapience le moyen de faire voye à sa clémence sans endommager sa
+justice. **Il offre donc la grâce à tous les criminels également, & requiert seulement d'eux qu'ils ne la
+refusent pas & qu'ils ne s'en monstrent pas indignes**… **Ils la refusent tous avec une égale obstination**, & la
+foulent aux pieds avec outrage; & adonc **il passe toutes les mesures de sa miséricorde envers les uns pour
+amollir leurs coeurs & les ranger à leur propre bien, & par une juste severité abandonne les autres à la dureté
+de leurs ames***» (с. 104–105).
+
+**5. Почему это решает главный спор о Амиро.** Различие у него **не в человеке**, а в том, что Бог «*passe
+toutes les mesures de sa miséricorde envers les uns pour amollir leurs coeurs*». Отказ же — **равный у всех**
+(«*avec une égale obstination*»). Отсюда:
+- **обвинение «Амиро оставляет решение человеку» окончательно снято** — не по одному месту, а по структуре
+  главы: все отказывают одинаково, различает Бог (§4.106 пп. 1–4 подтверждены с другой стороны);
+- **«полное равенство» у Амиро — равенство в погибели, а не в благодати**: «*également corrompus*»,
+  «*également coupables*», «*une lepre… à tous pareillement incurable*». Равенство **предложения** стоит рядом с
+  равенством **отказа**;
+- стало быть, всеобщность у него — не «равные возможности», а **равная нужда и равное предложение при равном
+  отвержении**.
+
+**6. Странность, которую надо назвать.** Если все равно отвергают, а Бог смягчает сердца некоторых, — то
+**всеобщее предложение не сообщает спасения никому**; оно сообщает его лишь через **второе, частное действие**
+(§4.106 п. 7–8). Тогда в чём его польза? Ответ Амиро, по-видимому, тот же, что в §4.104 п. 5: оно делает
+отвержение **неизвинительным** и являет **серьёзность** Бога (§4.105 п. 8). **Формулировать для серии: у Амиро
+всеобщее предложение нужно не для спасения, а для суда и для оправдания Бога.** Это надо сказать прямо — иначе
+схема выглядит утешительнее, чем она есть.
+
+**7. Апология против «acceptation de personnes» — и её ход.** Амиро разбирает, что такое лицеприятие: судья
+смотрит не на правое дело, а на богатство, силу, красоту или бедность («*il est plus pauvre, & que le juge en a
+pitié*»). «*Or icy ces choses n'ont point de lieu*» — ибо «*il n'y a entre eux aucune condition ou qualité…
+De vertu il n'y en avoit ny apparence quelconque en aucun*». И затем ход, важный для всей серии:
+«*ce qu'il donne à ceux-cy c'est de sa **pure libéralité**, & ce qu'il refuse à ceux-là, il n'y a loy ny aux
+cieux ny en la terre qui commande qu'il le leur donne; & mesmes que s'il consulte sa justice seulement, elle
+requiert absolument qu'il le leur **dénie***».
+**То есть: даяние — по щедрости, отказ — по правде; и требовать даяния нельзя.** Это дословно та структура,
+которую серия отстаивает с раунда 26 («милость не должна, правда требует»). **Приводить этот текст как
+сомюрское свидетельство в пользу нашей же структуры** — сильный ход: он показывает, что расхождение не в
+основании, а в **объёме приобретения**.
+
+**8. Итог.** Глава X показывает окончательно: **у Амиро нет ни «равных возможностей», ни «решения человека», ни
+«предвиденной веры»**. Есть **равная погибель**, **равное предложение** и **неравная милость**, смягчающая
+сердца. Спор с ним ведётся **не об антропологии и не о характере предложения**, а о том, **что приобрела
+кровь** — открыла путь (§4.107 пп. 2–3) или приобрела примирение, — и о том, **есть ли второй путь спасения**
+(§4.104 п. 2).
+
+**9. Оговорки.** `EDITION_HOLD` (1658, не 1634); `LOCATOR_PARTIAL` на пагинацию (чанок 19 — вставка иной
+пагинации); прочитано 10 чанков из 74; французский OCR, орфография нормализована. **П. 202 — продвинут, не
+закрыт** (см. п. 3).
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -5790,6 +5865,7 @@ miséricorde avec une **liberté toute entière***».
 | 1658 *(раунд 51; Амиро, начало главы VII, сс. 64–68)* | **Моисей Амиро**: заголовок гл. VII — «*Quelle est la nature du conseil & de la Volonté… **soit pour son étendue, soit pour la condition qui y est annexée***»; основание всеобщности — не цена крови, а «*la **compassion** qu'il a eue d'eux, **comme de ses créatures**… **puis qu'ils sont ses créatures indifféremment**, la grâce… **a deu estre universelle***»; «*ny **jusques là**, il n'y a **point de différence entr'eux***»; «*Le sacrifice… **a esté pour tous**; & le salut… **est destiné à tous**, pourveu… que la disposition nécessaire… soit en tous de mesmes*»; частность Израиля — «*renouueller la mémoire*» обетования о семени жены, «*Mais cela fait, **tous les peuples de la terre ont esté appelez***»; «*ny **aucun peuple**, ny mesmes **aucun homme exclus par la volonté de Dieu***»; вторая проповедь — «*une prédication suffisante, s'ils y estoient attentifs*» (Рим. 2:4); «***Dieu est trop bon, & s'il faut user de ce mot, trop serieux, pour presenter aux hommes de vaines espérances***» |
 | 1658 *(раунд 51; Амиро, главы о бессилии и об избрании, сс. 81–90)* | **Моисей Амиро**: отвергает мысль, будто разница «*dépend de la liberté de la volonté de l'homme*»; «*l'Escriture attribue **sans aucune variation** la foy… **à l'operation de Dieu en nous***»; «**nous ne contribuons icy rien à l'efficace**»; «*non seulement nous ne nous en sçaurions dégager quand nous le voudrions… mais mesme qu'il est **impossible que nous le vueillons***»; «*elles sont **tout à fait asservies au mal** & mortes quant au sentiment du bien*»; «*plus grande elle est* [impuissance], *& plus **merite-t-elle de blasme***»; глава IX: избрание — «*d'**accomplir en quelques uns cette condition**, & **laisser les autres à eux mesmes***», «*éleus & predestinez **pour leur donner la foy***»; довод от тщетности: без второго определения первое было бы «***inutile au genre humain***», а страдания Сына «***entièrement frustratoires***»; благодать «***surmontast*** tout ce qu'il y a de corruption»; «*tant s'en faut que l'amour de Dieu puisse **presupposer** cette condition en l'homme, qu'il faut necessairement presupposer **qu'elle n'y est pas**… sinon que **luy-mesme l'y crée par sa puissance***»; не слышавшие: «*ne sera pas condamnée pource qu'elle ait… méprisé le nom de Christ, mais pource qu'elle aura **méprisé la voix des Cieux***» |
 | 1658 *(раунд 52; Амиро, гл. VI и место об избрании, чанки 12 и 19)* | **Моисей Амиро**: удовлетворение — «*satisfist par sa **valeur infinie** à la justice divine*»; но «***Cet obstacle levé, il faisoit la voye à cette miséricorde que la justice tenoit resserrée***»; Иаков и Исав — «***extrêmement égaux de condition naturelle***»; «*Sera-ce en la foy même? **Nenny** encore*»; «*Dieu n'a pas ordonné de la donner à tout le monde*»; против «*subtilement distinguer entre les **degrés de l'efficace***» — «*de recourir icy à la liberté de la volonté, c'est **chose inutile***», «*il est **de tout point inimaginable** comment elle ait esté également prevenuë en quelques uns, & que neantmoins les événemens en ayent esté dissemblables*»; «*n'en pouvons trouver d'autre que celle de la **libre volonté de Dieu***»; против карикатуры — «*Dieu… n'a pas fait ce choix des hommes **à tastons**, & jetté sur eux **le sort à l'aventure**… il y a procédé avec son **ordinaire sagesse***» |
+| 1658 *(раунд 53; Амиро, глава X, сс. 101–105)* | **Моисей Амиро**: глава X — апология против трёх обвинений («*acceptation de personnes*, *autheur de péché*, *cause de la perdition*»); «*il y a entr'eux tous une **égalité toute entière***»; «*également corrompus & par consequent **également coupables***»; «*une **lepre** qui nous est à tous **pareillement incurable***»; «***Il offre donc la grâce à tous les criminels également***, & requiert seulement d'eux qu'ils ne la refusent pas»; «***Ils la refusent tous avec une égale obstination***»; «*il **passe toutes les mesures de sa miséricorde envers les uns pour amollir leurs coeurs***, & par une juste severité abandonne les autres à la dureté de leurs ames*»; «*ce qu'il donne à ceux-cy c'est de sa **pure libéralité***… *s'il consulte sa justice seulement, elle requiert absolument qu'il le leur **dénie***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6186,6 +6262,17 @@ miséricorde avec une **liberté toute entière***».
   `LOCATOR_PARTIAL` усилен: пагинация чанка 19 (56–60) не продолжает чанки 12–18 (58–95) ⇒ вероятно,
   «Eschantillon» со своей пагинацией. **П. 202:** формулы «égale et universelle» в чанках 12–19 нет; отсутствие
   **не утверждается**.
+
+- **Раунд 53: Амиро, глава X (чанок 20, сс. 101–105).** Прочитано 10/74. Глава X — **апология** против трёх
+  обвинений (лицеприятие, авторство греха, причина погибели). **Формулы:** «*une **égalité toute entière***»;
+  «*également corrompus… également coupables*»; «*une lepre… à tous pareillement incurable*»; «***Il offre donc la
+  grâce à tous les criminels également***»; «***Ils la refusent tous avec une égale obstination***»; «*il **passe
+  toutes les mesures de sa miséricorde envers les uns pour amollir leurs coeurs***». **Вывод:** равенство у Амиро —
+  равенство **погибели и отказа**, а не возможностей; различие — целиком в Боге ⇒ обвинение «решает человек»
+  снято и структурно. **П. 202 — продвинут:** ключевые слова «égalité toute entière» / «également» найдены
+  (с. 103–104), буквального «égale et universelle» нет. `LOCATOR_PARTIAL`: чанок 20 возвращается к пагинации
+  основного трактата ⇒ чанок 19 — **вставка иной пагинации**, не другая часть. Всё ещё 1/74 до титула
+  «Eschantillon».
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
