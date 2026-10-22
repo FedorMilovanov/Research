@@ -635,7 +635,7 @@ doctrine de Calvin, touchant la predestination»** (сс. 167–212). `EDITION_H
 **11.4. И четыре находки, которые прямо меняют оценку.**
 1. **Перечень обвинений (с. 167).** «Eschantillon» открывается списком того, чем «*les Predicateurs de l'Eglise
    Romaine diffament le nom de Caluin*»; обвинения № 4–6 («*sacrifice destiné à fort peu*»; «*suffiroit pour tous*…
-   *inutilement*»; «*inutile*… *ostant toute faculté de croire*») **дословно совпадают с критикой статьи**.
+   *inutilement*»; «*inutile*… *ostant toute faculté de croire*») **по существу совпадают с критикой статьи**.
    ⇒ **критические ходы статьи не новы: они повторяют римско-католическую карикатуру, ходившую до 1634 г.**
 2. **«Comme si» (с. 164).** Частные тексты, по Амиро, сказаны «*comme s'il auoit esté ordonné seulement pour eux*»,
    тогда как всеобщее посланничество — буквально. ⇒ **грамматика обратна дортской** (§4.113): у Дорта частные =

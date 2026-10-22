@@ -525,7 +525,7 @@
 - **Дополнение раунда 57 (2026-10-19; `34_` §4.118; `01_` §11; `03_` §34; `synthesis/03_` §35).**
   **(а) Начало «Eschantillon» — с. 167** (титул «Touchant la Predestination»); трактат кончается на с. 166;
   **п. 233 закрыт**. **(б) Открывается перечнем клеветы римских проповедников** на Кальвина — и обвинения № 4–6
-  **дословно совпадают с критикой статьи** («*sacrifice destiné à fort peu*»; «*suffiroit pour tous… inutilement*»;
+  **по существу совпадают с критикой статьи** («*sacrifice destiné à fort peu*»; «*suffiroit pour tous… inutilement*»;
   «*ostant toute faculté de croire*») ⇒ **статья воспроизводит карикатуру, а не исправляет Дорт**.
   **(в) «Comme si» (с. 164):** частные тексты — «*comme s'il auoit esté ordonné seulement pour eux*» ⇒ **правило,
   обратное дортскому**. **(г) Плод для неверующего — «aucun»**; всеобщая любовь «*n'est quasi pas considerable*»
