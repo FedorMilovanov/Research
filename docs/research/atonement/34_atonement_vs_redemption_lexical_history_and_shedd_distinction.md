@@ -5350,6 +5350,74 @@ requiert absolument qu'il le leur **dénie***».
 пагинации); прочитано 10 чанков из 74; французский OCR, орфография нормализована. **П. 202 — продвинут, не
 закрыт** (см. п. 3).
 
+### 4.109. Q105 — Амиро: Бог не есть причина неверия. «Не даёт верить» ≠ «даёт не верить»; солнце и тьма; ожесточение как не-отнятие (раунд 53)
+
+**0. Источник и объём.** Чанок **21** — **сс. 105–110**, продолжение главы X. **S156**, класс **A2** (OCR).
+Прочитано **11 чанков из 74** (около 15 %). `EDITION_HOLD` — в силе; пагинация вернулась к основному трактату.
+
+**1. Задача главы.** Ответить на два оставшихся обвинения: Бог — **причина греха** и Бог — **причина погибели**.
+Амиро разбирает их **по источникам греха** и последовательно отвергает каждый: грех первого человека («*tout
+imputé à la tentation de Satan, & à ce que l'homme s'y est laissé séduire*»), переданная порча («*il a engendré
+ses enfans contaminés de la mesme corruption que luy, **sans que Dieu ait aucune part à la communication ou
+propagation de cette tache***»), дальнейшие грехи, и наконец — **само неверие**.
+
+**2. Главная формула — классическое различение, и оно у Амиро есть.** «*Sera-ce de cet acte mesme de
+l'incrédulité… par laquelle ils rejettent la grâce laquelle il leur presente? **Nenny** encore. Car **s'il ne leur
+donne pas d'y croire, ce n'est pas à dire pour cela qu'il leur donne de n'y croire pas**. Si, di-je, il n'engendre
+pas la foy en eux, il ne s'enfuit pas qu'il y engendre le contraire*» (с. 107).
+**Это в точности** то различение, которым реформатская схоластика отвечала на обвинение в «отрицательной»
+причине неверия: **не-даяние веры не есть даяние неверия**. И оно принадлежит **сомюрской** стороне.
+**Для серии:** когда нам приписывают, будто Бог «производит неверие», следует отвечать этим различением — и
+указывать, что оно **не наше изобретение**, а общее место обеих сторон.
+
+**3. Образ солнца — и он сильнее различения.** «*C'est bien le **Soleil** qui illumine la terre: mais ce n'est
+pas luy qui la rend tenebreuse. **Elle a cela de sa naturelle opacité**. C'est le Soleil encore qui reschauffe par
+l'entremise de sa lumière: mais ce n'est pas luy qui, quand il se recule en hyver, la rend comme elle est,
+horrible de froidure. **Elle a cela d'elle mesme & des vens qui y regnent***» (с. 107).
+
+**4. Ожесточение — как не-отнятие, а не как прибавление.** «*A raison dequoy il est si souvent dit que Dieu
+mesme les endurcit, **non pource qu'il adiouste de soy quelque chose à leur meschanceté, mais pour ce qu'il ne
+l'oste pas**, & que les passions des hommes ne viennent point à un si horrible desbordement, & le Diable à avoir un
+empire si absolu en leurs coeurs, **sans quelque effect de sa juste providence***» (с. 109).
+И положительная сторона: Бог «*livre, comme parle l'Apostre, les hommes à leurs propres passions*» (Рим. 1:24),
+«*lafche la bride à Satan… leur creve de plus en plus les yeux de l'entendement***».
+**Это ровно та структура, что у британского суждения** (S154, отвергнутая теза III): «*Haec gratia a nullo duro
+corde respuitur… **ut cordis duritia primitus auferatur***» — благодать не отвергается ожесточённым сердцем,
+потому что **самое ожесточение сначала отъемлется**. И у Амиро ожесточение — **не отнятие**, то есть
+**лишение**, а не действие. **Формулировать в серии: обе стороны понимают ожесточение привативно.**
+
+**5. Что даёт это сравнение для главного спора.** В главе X Амиро идёт **шаг в шаг** с реформатскими
+делегациями:
+| Вопрос | Амиро (1658) | Дорт (1619) |
+|---|---|---|
+| Бог — причина греха? | нет; грех от сатаны и от самого человека | нет (I арт., отвергнутые тезы) |
+| Не-даяние веры = даяние неверия? | **нет**: «*ce n'est pas à dire pour cela qu'il leur donne de n'y croire pas*» | нет |
+| Ожесточение? | **не-отнятие** («*il ne l'oste pas*») + предание страстям (Рим. 1:24) | привативно, «*ut cordis duritia primitus auferatur*» |
+| Причина погибели? | грех самого человека; наказание отвечает преступлению | то же |
+**Вывод:** в **учении о причине греха и погибели** Амиро **не расходится с Дортом ни в одном пункте**. Это третье
+(после антропологии §4.106 и равенства/отказа §4.108) подтверждение: **расхождение узкое и лежит в одном
+месте** — что приобрела кровь и есть ли второй путь спасения.
+
+**6. И — самое сильное в главе: довод от наказания.** «*La perdition de l'homme consistant en la souffrance des
+peines, & toute peine ayant necessairement son rapport au crime… à qui imputera l'homme sa condamnation qu'à son
+**péché propre**?*» И далее: «*il ne s'y peut remarquer qu'une **bonté merveilleuse**… & ne s'y peut remarquer non
+plus qu'une **insigne & inestimable miséricorde**. Estant decheu de la jouyssance de cette bonté par son propre
+péché, ayant mesprisé cette miséricorde par sa foi obstination au mal, la punition qui vient après ne peut plus
+porter autre nom que celuy de **justice**, voire de justice exacte à merveilles*» (с. 110).
+**Перевод:** «Погибель человека состоит в претерпевании наказаний, а всякое наказание необходимо относится к
+преступлению… кому человек вменит своё осуждение, как не **собственному греху**?»; и наказание не может носить
+иного имени, кроме **правды**, «даже достойной удивления точной правды».
+
+**7. Почему это важно для статьи и для серии.** (а) Всякое обвинение реформатского учения в том, что оно делает
+Бога виновником погибели, **разбивается о главу X** — и разбивается **сомюрским** автором. (б) И обратно:
+сомюрская схема **не смягчает** суда над неверующим; она его **усиливает** — потому что к естественному
+ожесточению прибавляется отвержение предложенной благодати (§4.108 пп. 4–6). (в) Стало быть, **утешительность
+статьи не в том, что она «шире»**, а в том, что она обещает больше, чем даёт: увеличивая объём предложения, она
+**не увеличивает объёма приобретения**.
+
+**8. Оговорки.** `EDITION_HOLD` (1658); 11 чанков из 74; французский OCR, орфография нормализована.
+**П. 202** — без изменений (продвинут, не закрыт). Титул «Eschantillon» **не встречен**; п. 211 открыт.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -5866,6 +5934,7 @@ requiert absolument qu'il le leur **dénie***».
 | 1658 *(раунд 51; Амиро, главы о бессилии и об избрании, сс. 81–90)* | **Моисей Амиро**: отвергает мысль, будто разница «*dépend de la liberté de la volonté de l'homme*»; «*l'Escriture attribue **sans aucune variation** la foy… **à l'operation de Dieu en nous***»; «**nous ne contribuons icy rien à l'efficace**»; «*non seulement nous ne nous en sçaurions dégager quand nous le voudrions… mais mesme qu'il est **impossible que nous le vueillons***»; «*elles sont **tout à fait asservies au mal** & mortes quant au sentiment du bien*»; «*plus grande elle est* [impuissance], *& plus **merite-t-elle de blasme***»; глава IX: избрание — «*d'**accomplir en quelques uns cette condition**, & **laisser les autres à eux mesmes***», «*éleus & predestinez **pour leur donner la foy***»; довод от тщетности: без второго определения первое было бы «***inutile au genre humain***», а страдания Сына «***entièrement frustratoires***»; благодать «***surmontast*** tout ce qu'il y a de corruption»; «*tant s'en faut que l'amour de Dieu puisse **presupposer** cette condition en l'homme, qu'il faut necessairement presupposer **qu'elle n'y est pas**… sinon que **luy-mesme l'y crée par sa puissance***»; не слышавшие: «*ne sera pas condamnée pource qu'elle ait… méprisé le nom de Christ, mais pource qu'elle aura **méprisé la voix des Cieux***» |
 | 1658 *(раунд 52; Амиро, гл. VI и место об избрании, чанки 12 и 19)* | **Моисей Амиро**: удовлетворение — «*satisfist par sa **valeur infinie** à la justice divine*»; но «***Cet obstacle levé, il faisoit la voye à cette miséricorde que la justice tenoit resserrée***»; Иаков и Исав — «***extrêmement égaux de condition naturelle***»; «*Sera-ce en la foy même? **Nenny** encore*»; «*Dieu n'a pas ordonné de la donner à tout le monde*»; против «*subtilement distinguer entre les **degrés de l'efficace***» — «*de recourir icy à la liberté de la volonté, c'est **chose inutile***», «*il est **de tout point inimaginable** comment elle ait esté également prevenuë en quelques uns, & que neantmoins les événemens en ayent esté dissemblables*»; «*n'en pouvons trouver d'autre que celle de la **libre volonté de Dieu***»; против карикатуры — «*Dieu… n'a pas fait ce choix des hommes **à tastons**, & jetté sur eux **le sort à l'aventure**… il y a procédé avec son **ordinaire sagesse***» |
 | 1658 *(раунд 53; Амиро, глава X, сс. 101–105)* | **Моисей Амиро**: глава X — апология против трёх обвинений («*acceptation de personnes*, *autheur de péché*, *cause de la perdition*»); «*il y a entr'eux tous une **égalité toute entière***»; «*également corrompus & par consequent **également coupables***»; «*une **lepre** qui nous est à tous **pareillement incurable***»; «***Il offre donc la grâce à tous les criminels également***, & requiert seulement d'eux qu'ils ne la refusent pas»; «***Ils la refusent tous avec une égale obstination***»; «*il **passe toutes les mesures de sa miséricorde envers les uns pour amollir leurs coeurs***, & par une juste severité abandonne les autres à la dureté de leurs ames*»; «*ce qu'il donne à ceux-cy c'est de sa **pure libéralité***… *s'il consulte sa justice seulement, elle requiert absolument qu'il le leur **dénie***» |
+| 1658 *(раунд 53, продолжение; Амиро, глава X, сс. 105–110)* | **Моисей Амиро**: «*s'il ne leur donne pas d'y croire, ce n'est pas à dire pour cela qu'il leur **donne de n'y croire** pas*»; «*C'est bien le **Soleil** qui illumine la terre: mais ce n'est pas luy qui la rend tenebreuse. Elle a cela de sa **naturelle opacité***»; ожесточение — «*non pource qu'il **adiouste** de soy quelque chose à leur meschanceté, mais pour ce qu'il **ne l'oste pas***»; Бог «*livre les hommes à leurs **propres passions***» (Рим. 1:24); погибель — «*à qui imputera l'homme sa condamnation qu'à son **péché propre**?*»; наказание носит имя «***justice**, voire de justice exacte à merveilles*» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6273,6 +6342,15 @@ requiert absolument qu'il le leur **dénie***».
   (с. 103–104), буквального «égale et universelle» нет. `LOCATOR_PARTIAL`: чанок 20 возвращается к пагинации
   основного трактата ⇒ чанок 19 — **вставка иной пагинации**, не другая часть. Всё ещё 1/74 до титула
   «Eschantillon».
+
+- **Раунд 53, продолжение: Амиро, глава X (чанок 21, сс. 105–110).** Прочитано 11/74. Глава X идёт **шаг в шаг** с
+  Дортом по учению о причине греха и погибели: **«*s'il ne leur donne pas d'y croire, ce n'est pas à dire pour cela
+  qu'il leur **donne de n'y croire** pas*»** (не-даяние веры ≠ даяние неверия); образ **солнца** («*ce n'est pas
+  luy qui la rend tenebreuse. Elle a cela de sa **naturelle opacité***»); ожесточение — **не-отнятие** («*il ne
+  l'oste pas*»), как и британское «*ut cordis duritia primitus auferatur*» (S154); предание страстям (Рим. 1:24);
+  погибель — «*à son **péché propre***», наказание есть «*justice exacte*». **Вывод:** в этом пункте **расхождения
+  нет** — третье подтверждение узости спора. **Для серии:** обвинение «Бог — причина погибели» разбивается
+  **сомюрским** автором; и сомюрская схема суда **не смягчает**, а усиливает (§4.108 п. 7).
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
