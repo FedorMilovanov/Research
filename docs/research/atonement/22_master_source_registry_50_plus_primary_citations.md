@@ -704,6 +704,24 @@
       дортскому:** у Амиро всеобщие тексты = определения, частные = исходы; у Дорта частные = намерение, всеобщие
       = предложение. **(6) Против «безопасности»:** «*Encore que **ie croye**, ie ne seray pas esleu à croire
       pourtant*». `EDITION_HOLD`; 17 чанков из 74 (~23 %). П. 211: «Eschantillon» — в конце тома (чанки 31–40).
+    - 42db. *Дополнение 2026-10-19 (раунд 56; `34_` §4.114, **S156**; `03_` §30; `synthesis/03_` §31):
+      **Амиро, гл. XIII (чанок 28, сс. 143–147) — две степени милости; сокрытие ради проповеди; контрфактическое.**
+      **(1) «Deux degrés»:** первая — «*ne passe pas plus avant que de nous presenter la remission de nos offenses
+      au Rédempteur… **pourveu que par incrédulité nous ne rejettions pas cette grace***»; вторая — «*passe jusques
+      à **faire que nous croyions***». **(2) Первая всеобща и есть решение:** «*universellement manifesté à tous
+      par la predication de l'Euangile… auec cette **resolution ferme & immuable** de les sauuer s'ils croyent*» ⇒
+      не «velleitas»; эмденское отвержение «possibilitatem & velleitatem» **не попадает** сюда без оговорки.
+      **(3) Сокрытие с целью:** вторая степень «*a esté **expressement caché**… **afin de n'estre point en
+      achoppement aux autres & en empeschement à la predication de l'Euangile***». **(4) Два запрета:** «*ne se doit
+      presumer estre reprouué*»; «*ie ne croiray pas pource qu'il me seroit inutile*». **(5) Контрфактическое:**
+      «*posé le cas** (ce qui est **entièrement impossible**)… qu'il y ait quelqu'un… à qui Dieu n'auoit pas ordonné
+      de donner la foy, qui neantmoins croye véritablement, faisant par la seule force de sa nature… **cettuy-là sera
+      sauvé***» ⇒ у Амиро спасение **мыслимо вне дара веры** (логически), у Дорта **немыслимо**. **Это и есть
+      настоящий пункт несовместимости.** **(6) Оставление:** «*il n'a pas predestiné les autres à ne croire pas…
+      il s'est contenté de les **laisser en leur naturelle condition***» — **близко** к дортскому; **запрет**
+      говорить «у Дорта есть определение к осуждению, у Амиро нет» до сверки (п. 224). **(7) Обратное
+      контрфактическое:** «*si… quelqu'vn de ceux qu'il a predestinés à croire ne creust pas… **auroit-il manqué à sa
+      predestination***». `EDITION_HOLD`; 18 чанков из 74 (~24 %). П. 211 — «Eschantillon» не встречен.
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
