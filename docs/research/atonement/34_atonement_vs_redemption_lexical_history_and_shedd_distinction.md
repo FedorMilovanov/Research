@@ -6352,6 +6352,79 @@ pource que nous l'aimons*» — **любовь Бога, отвечающая н
 **10. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); прочитано **25 чанков из 74** (~34 %); французский OCR; цитаты
 Кальвина, приводимые Амиро, **не сверены** с изданием (**пп. 227, 232**).
 
+### 4.119. Q115 — «Eschantillon», сс. 173–178: два рода немощи, закон и «декрет не препятствовать». Амиро отвечает на обвинение о невозможном законе дортским по существу ответом (раунд 57)
+
+**0. Локатор.** Чанок 34 = сс. **173–178**. Это ответ на обвинение № 3 из перечня §4.118 п. 2: «*il leur a donné
+vne loy qu'il est impossible d'accomplir, & que puis après il les condamne pour l'auoir transgressée*».
+
+**1. Сначала — о причине греха (с. 173).** «*La **droite cause & naturelle du péché** n'est pas **le secret conseil
+de Dieu**, mais **la volonté de l'homme**, qui est toute manifeste*».
+И рядом — как устроен декрет: «*il faut reconnoistre quelque conduite de la prouidence de Dieu… ne fust ce que celuy
+du **décret de ne l'empescher pas**, veu que c'estoit chose entièrement en sa puissance*» (с. 173).
+**Два точных хода:** (а) причина греха — **воля человека**, а не совет Божий; (б) единственное, что здесь от Бога, —
+**«декрет не препятствовать»**. Это **разрешительный** декрет, а не причинный.
+**Значение для серии:** подтверждается чтение §4.114 п. 6 («*laisser en leur naturelle condition*») как
+**не-воспрепятствования**, а не как определения ко злу. **И это дортский язык** (`Acta`: «*deserere*», «*non
+impedire*»).
+
+**2. Закон в двух отношениях (с. 174).** «*Il faut donc considerer la **Loy de Dieu en deux égards**: sçauoir, ou bien
+entant qu'elle **presuppose vne pureté & intégrité originelle**… ou bien entant qu'elle **exige vne obeyssance
+parfaite & accomplie** de tous ceux qui vsent de la raison*».
+**Смысл:** «невозможность» закона — **не в самом законе**, а в **испорченности того, кому он дан**. Различать надо
+**два отношения**, иначе получится, что Бог дал приказ, зная его неисполнимость.
+
+**3. И вот пример, который показывает, чего НЕ бывает (с. 176).** «*Comme si Dieu nous auoit commandé
+**d'arrester le mouvement du Soleil, ou le cours des riuieres**, & qu'il euft laissé nostre nature en l'estat auquel
+elle est, **destituée des forces necessaires**… Car ny quand nous aurions le plus grand désir… **nous ne le pourrions
+pas**: ny quand Adam en son intégrité l'euft de mesmes voulu, il ne l'euft pourtant sceu faire. **Mais la Loy n'est pas
+de cette nature***».
+**Это различение «физически невозможно» / «нравственно невозможно», и оно введено Амиро ради ответа на обвинение.**
+
+**4. И тезис, который стоит запомнить дословно (с. 176).** «*Si donc vous la considerés **en elle mesme**, y a-t-il là
+rien d'impossible à l'homme **si vous n'auez égard qu'aux facultez naturelles** d'entendement & de volonté qui sont en
+luy, & **non au vice qui y est suruenu** par la cheute du premier père? Car puis qu'il a vn entendement, il **peut**
+connoistre Dieu & son prochain; & puis qu'il a vne volonté, il **peut** aimer l'vn & l'autre*».
+**Аргумент:** **способности на месте** (ум и воля); повреждено **употребление** («*le vice qui y est suruenu*»).
+Поэтому «*il n'y a que nostre propre vice qui nous en empefche*» (с. 177).
+
+**5. ЦЕНТРАЛЬНОЕ МЕСТО — два рода немощи (с. 177).**
+> «*Il y a donc **vne sorte d'impuissance** qui vient de ce que **nous n'auons pas les facultez naturelles necessaires
+> pour obeïr**, qui peut estre appelée **naturelle** elle mesme, **mais pour laquelle on ne nous peut pas dire
+> meschans**. Et il y en a **vne autre** procédante de ce qu'ayans les facultez naturelles… **elles sont si vicieuses en
+> nous, que leur vice nous rend entierement incapables d'obeïr**, qui à cette occasion peut estre appelée **morale**: **de
+> tant s'en faut que celle-là puisse nous excuser, que plus elle est grande & profonde en nous, plus sommes nous
+> meschans, & par consequent plus dignes de punition & de haine***».
+
+**Разбор — и это ядро дортской антропологии.**
+| | Немощь **природная** | Немощь **нравственная** |
+|---|---|---|
+| откуда | нет самых способностей | способности есть, но **извращены** |
+| вина | «*on ne nous peut pas dire meschans*» | виновны и **тем более**, чем глубже |
+| следствие | **извиняла бы** | «*plus dignes de punition & de haine*» |
+
+**Три следствия, и все три — против обычного возражения статье.**
+1. **Это не «августинизм против кальвинизма»:** формулировка **дословно** та же, что у реформатских схоластов
+   (невозможность природная vs нравственная). Амиро **не смягчает** её ни на йоту.
+2. **И это прямо отвечает на довод «если способность отнята, зов неискренен»** (обвинение № 6, §4.118 п. 2):
+   отнята **не способность**, а **употребление**; поэтому зов **искренен**, а неверие **виновно**.
+3. **И это же снимает возражение «Бог дал неисполнимый закон, чтобы осудить»** (обвинение № 3): закон
+   **исполним по способностям** и **неисполним по пороку**; вина — в пороке.
+
+**6. И последний поворот — о «долге» и о том, кому это невыгодно (сс. 177–178).** «*Ce seroit vne chose estrange que
+pour estre **avares & ambitieux**, si gourmans & si yvrognes… il nous est entierement impossible d'aimer Dieu & son
+image… **nous pretendissions n'estre pas coupables deuant Dieu de ce que sa Loy nous est impossible***».
+**Смысл:** ссылаться на невозможность, **созданную собственным пороком**, — «*chose estrange*». **Это и есть ответ,
+который в серии нужен:** не «Бог слишком много требует», а «мы слишком испорчены, и это наша испорченность».
+
+**7. Что это даёт для статьи — точная формула.**
+> В разделе «Неверный аргумент» статья возражает против «двойной оплаты». **Но её антропологическая предпосылка —
+> что человек способен согласиться — не выдержана ни у Дорта, ни у Амиро.** Если способность к вере утрачена
+> **нравственно**, то «согласие» как условие приложения **возвращает человеку решающее звено**; и именно это
+> отвергнуто в Дорте (III–IV) и **не принято** Амиро (с. 160: «*cette foy **ne pend de la grâce***»).
+
+**8. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); чанки 32–34; прочитано **26 из 74** (~35 %); OCR. **П. 236 —
+ЗАКРЫТ.** Формулировка «природная/нравственная немощь» — **не наша реконструкция**: она **дословно** у Амиро.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6878,6 +6951,7 @@ pource que nous l'aimons*» — **любовь Бога, отвечающая н
 | 1658 *(раунд 56, часть 5; Амиро, «Eschantillon», сс. 197–212; чанки 39, 41)* | **Сердцевина «Eschantillon»**: «*pour **difficile** que fust la reconciliation des sentimens de Caluin en ce point*»; способ — «*en **accordant ses hypotheses**, donner aux **manieres de parler**… une interpretation qui **raisonnablement** leur conuienne*»; предмет предопределения — «*l'homme **tombé** en malediction*», в целостности же «*sans **aucune ombre** de misericorde*»; **«il parle de la mort de Christ en deux diuerses manières»**: «*mort **universellement pour tous hommes, pourueu qu'ils croyent***» / «*pour ceux-là, voire pour ceux-là seulement… **absolument***», ибо «*le decret par lequel il leur est donné de croire **enclost necessairement** celuy du salut*»; «*quant à ceux-là, **il n'est mort pour eux sinon à la condition qu'ils croyent***»; **«la dispute n'est point… si Christ est venu purger les pechez de tout le monde: car cela est sans contredit»**; «*nous ne sommes pas sur… **quelle est la vertu de Christ**… mais **à qui c'est qu'il se donne***»; «*nul ne peut estre participant de Christ, sinon celuy qui a esté **adopté***» |
 | 1658 *(раунд 56, часть 7; трактат, сс. 156–162; «Eschantillon», сс. 192–197; чанки 31, 38)* | **Цепь спасения:** «*Nostre salut… dépend de… la foy; cette foy ne pend de la grâce…; cette grâce… dépend du conseil de l'election; & ce conseil n'ayant autre fondement que sa volonté, est constant & irrevocable*»; «*ny à quelque condition que ce soit qu'il ait **preveue** devoir estre en nos personnes*»; «*pour **racheter le genre humain** il a ordonné de nous donner la foy… **afin que cette rédemption ne nous fust pas inutile***»; «*son Fils… **ne prioit point pour nous**… **je ne prie point pour le monde***» (Ин. 17:9); **нравственная невозможность:** «*impuissance **physique ou naturelle***» vs «*s'ils ne le peuvent pas, c'est que leur **peruersité** est extrême*»; «*l'Euangile ne crie autre chose sinon que **Dieu les veut sauuer, pourueu qu'ils croyent***»; «*il **ne doit rien à personne***» |
 | 1658 *(раунд 57; начало «Eschantillon», сс. 163–167; чанки 32–33)* | **Титул: «ESCHANTILLON DE LA DOCTRINE DE CALVIN, Touchant la Predestination»** (с. 167); трактат кончается на с. 166 словом «**FIN**». **Открывается перечнем того, чем «*les Predicateurs de l'Eglise Romaine diffament le nom de Caluin*»:** «*Dieu a créé la plus grande partie des hommes **expressement pour les damner***»; «*vne loy qu'il est impossible d'accomplir*»; «*son sacrifice n'estant destiné qu'à la redemption de **fort peu***»; «*quand il suffiroit pour tout le genre humain, c'est **inutilement** pour la plus grande part*»; «*il la rend inutile… en ostant toute faculté de croire*». **Ответ:** «*il faut entendre ce mot de création… de cette entremise de la prouidence… infectée de la contagion du péché*»; «*en quoy est-ce qu'il pense Dieu estre **redeuable à l'homme**?*»; «*non pas d'une cruauté tyrannique, mais par vne **équité raisonnable***»; «*il **s'est volontairement** privé de l'intégrité*». **Три степени любви:** «*ce second degré… en produit necessairement **vn croisiéme***»; «*selon ce troisième il nous aime **pource que nous l'aimons au reciproque***». **«Comme si»:** «*S. Paul… parle de l'enuoy du Fils… **comme s'il auoit esté ordonné seulement pour eux**… quoy que… **il ait esté enuoyé pour sauver tous les humains, pourueu que***». **И обесценивание всеобщего:** «*l'autre… **n'est quasi pas considerable***»; «*l'incredulité des vns empeschant qu'ils n'en reçoiuent **aucun***» |
+| 1658 *(раунд 57, продолжение; «Eschantillon», сс. 173–178; чанок 34)* | **Ответ на обвинение о невозможном законе:** «*la **droite cause & naturelle du péché** n'est pas le **secret conseil de Dieu**, mais la **volonté de l'homme***»; от Бога — только «*le **décret de ne l'empescher pas***»; «*il faut considerer la **Loy de Dieu en deux égards***»; контрпример — «*comme si Dieu nous auoit commandé **d'arrester le mouvement du Soleil***»; «*si vous n'auez égard qu'aux **facultez naturelles**… & **non au vice qui y est suruenu***»; **два рода немощи:** «*vne sorte d'impuissance… **naturelle**… **mais pour laquelle on ne nous peut pas dire meschans**… Et il y en a **vne autre**… **morale**: de tant s'en faut que celle-là puisse nous excuser, que **plus elle est grande & profonde en nous, plus sommes nous meschans***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -7400,6 +7474,13 @@ pource que nous l'aimons*» — **любовь Бога, отвечающая н
   **И:** всеобщая любовь «*n'est quasi pas considerable*»; плод для неверующих — «***aucun***». **Три степени любви**
   (не две): третья — «*il nous aime pource que nous l'aimons au reciproque*» ⇒ **не описывать Амиро как
   «безусловника»**. **П. 233 закрыт**; новые пп. 236–238.
+
+- **Раунд 57, часть 3: «Eschantillon», сс. 173–178 (п. 236 ЗАКРЫТ).** Ответ на обвинение о невозможном законе:
+  (а) причина греха — «*la volonté de l'homme*», от Бога лишь «**le décret de ne l'empescher pas**» ⇒ разрешительный,
+  не причинный декрет (подтверждает чтение §4.114 п. 6); (б) «*il faut considerer la Loy de Dieu **en deux égards***»;
+  (в) **два рода немощи:** «*impuissance **naturelle**… pour laquelle **on ne nous peut pas dire meschans***» и
+  «*impuissance **morale**… **plus elle est grande… plus sommes nous meschans***». Дословно реформатская схоластика;
+  ⇒ **довод «если способность отнята, зов неискренен» не проходит ни у Дорта, ни у Амиро**.
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
