@@ -266,6 +266,35 @@
     - 42co. *Дополнение 2026-10-19 (раунд 49, продолжение; `34_` §4.99; **S154**; `synthesis/03_` §19):*
     - 42cp. *Дополнение 2026-10-19 (раунд 50; `34_` §§4.100–4.102; **S154** (британское, дочитано) и **S155**
     - 42cq. *Дополнение 2026-10-19 (раунд 50, продолжение; `34_` §4.103, **S156**; `03_` §20):* **открыт
+    - 42cr. *Дополнение 2026-10-19 (раунд 51; `34_` §4.104, **S156**; `04_` §10; `21_` §15; `synthesis/03_` §21):*
+      **Амиро, глава VII, середина — чанок 14, сс. 70–74.** **(1) Два рода проповеди Христа:**
+      «*comme il y a **de deux sortes de prédication de Christ**, aussi y pourroit-il avoir… de deux sortes de
+      connoissance de Christ qui amèneroient au salut*». Первая — «par le ministère des Apostres», с DISTINCT
+      познанием Спасителя. Вторая — «*par l'entremise de la **providence de Dieu seulement**, qui conserve le
+      monde nonobstant son iniquité, & l'invite à repentance par sa longue patience, laquelle, **si les hommes
+      n'estoient point naturellement aveugles & obstinez en leur aveuglement**, seroit capable d'engendrer en eux
+      une persuasion de la miséricorde de Dieu, destituée… de la distincte connoissance de ce Rédempteur… &
+      **neantmoins suffisante pour rendre les hommes jouyssans du salut** duquel il est autheur*». Основание:
+      «*tout ce que Dieu desploye de miséricorde & d'espérance de salut aux hommes **en quelque manière que ce
+      soit**, vient de ce que **sa justice a esté appaisée par le sacrifice de son Fils**, & que ainsi il a
+      **levé l'empeschement** que le péché mettoit à la grâce de la remission, s'ils ne s'en monstrent point
+      indignes*». **(2) Прямое противоречие с Дортом:** эмденское суждение (S153) — «*Alius modus salvandi
+      homines, & medium aliud, per quod beneficiorum Christi participes fiant gentes, **in Scriptura non
+      traditur***». **(3) Тексты всеобщности:** 1 Ин. 2:2, 1 Тим. 2:4–6, Тит. 1, Ин. 3:16; «*grâce laquelle il a
+      **destinée à tout le genre humain**, s'il ne s'en monstre point indigne*». **(4) 1 Ин. 2:2 — четвёртое
+      чтение в трилемме:** спор XVII в. шёл **не о том, кого называет «весь мир»**, а о том, **чтó совершило
+      умилостивление** — сняло препятствие (Амиро) или приобрело самое оставление с его приложением (Дорт:
+      «non reconciliabilitatem… sed reconciliationem», S145; «impetratio… concessionem rei petitae includit»,
+      S146). **(5) «Нельзя спасти против воли»:** «*il estoit **absolument impossible** que les hommes fussent
+      sauvez **malgré qu'ils en eussent***», ибо спасение есть sanctification — illumination ума и исправление
+      воли; образ Амиро: «*autant est-il impossible comme **d'illuminer une chose qui demeure tenebreuse
+      nonobstant, ou en redresser une autre qui toutesfois demeure tortue**… une contradiction manifeste*».
+      Аргумент **общий для обеих сторон**; различие в выводе: Амиро выводит **условие**, Дорт — что **самая
+      воля даруется** («det electis… & posse, & velle, & perficere», §4.100 п. 2). **(6) Осторожность:** Амиро
+      **не** говорит, что не слышавшие спасаются: вторая проповедь достаточна лишь «si les hommes n'estoient
+      point naturellement aveugles», а глава VIII утверждает, что они именно слепы. **П. 202 НЕ закрыт**
+      (формула «égale et universelle» не встретилась; искать в чанках 12–13). `EDITION_HOLD` (1658) и
+      `EVIDENCE_HOLD` по объёму (3 чанка из 74, около 5 % текста) — в силе.
       первоисточник амиральдианства.** **Моисей Амиро, *Brief traité de la predestination: avec l'Eschantillon de
       la doctrine de Calvin sur le mesme suiet; et La response a M. de L. M. sur la matière de la Grace et autres
       questions de theologie*** (Сомюр: Isaac Desbordes, **1658**; IA `brieftraitdela00amyr`; 398 с.; коллекция
