@@ -315,6 +315,86 @@ if RECON.is_file():
     for needle in ("unrelated", "99 — HOLD", "7 880", "Erratum 2026-10-22", "a01664c8"):
         req(needle in recon_text, f"reconciliation record no longer states {needle!r}")
 
+# ------------------------------------------------ measurement hygiene (2026-10-22) --
+# Урок сессии: два дня выводы опирались на git-замеры, которые давала СЛОМАННАЯ СРЕДА
+# (shallow-клон: пустой merge-base -> «unrelated histories» -> «16/20 add/add», «битый JSON
+# реестра в дереве мержа», «squash сносит ot/»). На полной истории те же концы дают 0 конфликтов.
+# Поэтому защищаемся машиной: любая записанная съёмка обязана (1) иметь точное время, (2) иметь
+# способ переснять себя, (3) не прятать плейсхолдеры в измеренных полях, и (4) сверяться с git'ом
+# там, где git её видит.
+notes = []
+if REG.is_file():
+    reg = json.loads(read(REG))
+
+    # (1)+(2) датированная съёмка обязана быть точной и переснимаемой
+    STAMP = re.compile(r"^(?:at|measuredAt|checkedAt|measuredOn|measuredAtGit)$")
+    HOW = {"method", "methods", "how", "howRule", "recheckCommand", "proofCommand", "measuredIn",
+           "measuredFromTheirBase", "which", "command", "measuredBy"}
+    def walk_measure(node, where):
+        if isinstance(node, dict):
+            stamps = sorted(k for k in node if STAMP.match(str(k)))
+            if stamps:
+                val = str(node[stamps[0]])
+                if not re.search(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", val):
+                    errors.append(
+                        f"{where}.{stamps[0]} = {val!r}: съёмка без точного времени (HH:MM). Дата без "
+                        "часов не позволяет отличить «устарело» от «проверено сегодня»"
+                    )
+                if not (set(map(str, node)) & HOW):
+                    errors.append(
+                        f"{where}: датировано, но способа переснять нет (нет ни одного из {sorted(HOW)[:4]}…). "
+                        "Число, которое нельзя переснять, — это мнение, а не замер"
+                    )
+            for key, val in node.items():
+                walk_measure(val, f"{where}.{key}")
+        elif isinstance(node, list):
+            for i, val in enumerate(node):
+                walk_measure(val, f"{where}[{i}]")
+    walk_measure(reg, "реестр")
+
+    # (3) плейсхолдеры в измеренных полях
+    MEASURED_KEY = re.compile(r"(?:At|Time|Bytes|Count|Total|Lines|Size)$", re.I)
+    FAKE = re.compile(r"\d{2}:[0-5]?xZ|\d{2}:\d{2}x|\bX{2,4}:\d{2}\b|\bTODO\b|\bTBD\b|плейсхолд|placeholder", re.I)
+    def walk_fake(node, where):
+        if isinstance(node, dict):
+            for key, val in node.items():
+                if MEASURED_KEY.search(str(key)) and isinstance(val, (str, int, float)) and FAKE.search(str(val)):
+                    errors.append(f"{where}.{key} = {val!r}: измеренное поле содержит плейсхолдер — "
+                                  "снимите число командой вместо правки текста")
+                walk_fake(val, f"{where}.{key}")
+        elif isinstance(node, list):
+            for i, val in enumerate(node):
+                walk_fake(val, f"{where}[{i}]")
+    walk_fake(reg, "реестр")
+
+    # (4) записанные времена коммитов сверяются с git'ом (когда объект доступен)
+    checks = (reg.get("branchTopologyAudit20261022") or {}).get("commitTimeChecks") or {}
+    if checks:
+        import os
+        import subprocess
+        env = dict(os.environ, TZ="UTC")
+        unseen = []
+        for sha, want in sorted(checks.items()):
+            if subprocess.run(["git", "cat-file", "-e", sha + "^{commit}"], cwd=ROOT,
+                              capture_output=True).returncode != 0:
+                unseen.append(sha)
+                continue
+            got = subprocess.run(["git", "log", "-1", "--date=format-local:%Y-%m-%dT%H:%M:%SZ",
+                                  "--format=%cd", sha], cwd=ROOT, env=env, capture_output=True,
+                                 text=True).stdout.strip()
+            if got != want:
+                errors.append(
+                    f"commitTimeChecks[{sha}] = {want!r}, git даёт {got!r}. Канон: TZ=UTC git log -1 "
+                    "--date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd. Формат %cI не нормализует: "
+                    "он печатает смещение, записанное в коммите (+03:00 у владельческих), и потому "
+                    "рожает сдвиг на 3 часа"
+                )
+        if unseen:
+            notes.append(f"commitTimeChecks: {len(unseen)} sha недоступно в этом клоне — не проверено "
+                         f"({', '.join(unseen[:4])})")
+
+for note in notes:
+    print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")
 if errors:
     print("ATONEMENT CORPUS INTEGRITY: FAIL")
     for err in errors:

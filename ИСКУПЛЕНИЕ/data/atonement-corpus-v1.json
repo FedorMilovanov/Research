@@ -965,7 +965,6 @@
       "ИСКУПЛЕНИЕ/agents/"
     ],
     "driveMirrorDocs": {
-      "measuredAt": "2026-10-16",
       "folder": "08 — PARALLEL AGENT BRIEFS",
       "folderId": "1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n",
       "objectCount": 5,
@@ -994,7 +993,10 @@
         }
       },
       "why": "Единственный живой носитель протокола четырёх агентов после удаления ИСКУПЛЕНИЕ/agents/ из верхушки ветки: id объектов теперь зафиксированы машинно, а не только ссылкой на каталог.",
-      "note": "Все пять объектов — Google Docs, modifiedTime 2026-10-07T21:47Z; изменены быть не могут без решения владельца."
+      "note": "Все пять объектов — Google Docs, modifiedTime 2026-10-07T21:47Z; изменены быть не могут без решения владельца.",
+      "measuredDay": "2026-10-16",
+      "precisionNote": "день съёмки; минуты не фиксировались (замер делался вручную списком папок) — поэтому поле называется measuredDay, а не вралось под точное время; переснять: google_drive list_files с q \"'<folder id>' in parents and trashed = false\"",
+      "recheckCommand": "google_drive__list_files q=\"'<id папки 01..09>' in parents and trashed = false\", fields=files(name), page_size 1000"
     }
   },
   "driveMirrors": {
@@ -1363,7 +1365,8 @@
           "otPreserved": "ИСКУПЛЕНИЕ/ot/ = 30 файлов и 7 880 строк в main и до, и после мержа",
           "verdict": "лан вошёл через merge-commit — именно ту дверь, которую называл предполёт; реестр main не тронут (blob 8654c98e, 23 ключа, JSON валиден)",
           "thenForMyPr": "сразу после мержа дерево-против-дерева main↔моя ветка давало 36 файлов и −18 370 строк (снятие досье 34_ на 10 206, откат леджера 802→125, исчезновение synthesis/06); причина — add/add из несвязанной истории, лечится мержем main в мою ветку по правилу «оба берега», что и сделано в 81b725b (8 файлов / +1 466 / −4, удалений 0)",
-          "numbersNowHistorical": "все ряды выше (45/45/47/47/48 файлов, 2205…2797, 14/14/16/16/17 конфликтов) оставлены как история съёмок: переснимать их больше не нужно, объект предполёта закрыт"
+          "numbersNowHistorical": "все ряды выше (45/45/47/47/48 файлов, 2205…2797, 14/14/16/16/17 конфликтов) оставлены как история съёмок: переснимать их больше не нужно, объект предполёта закрыт",
+          "recheckCommand": "git merge-base origin/main <их tip>; git diff --shortstat origin/main...<их tip>; git merge-tree --write-tree origin/main <их tip>  # только три точки и только после is-shallow-repository=false"
         },
         "environmentErratum20261022": "ряды съёмок (45/45/47/47/48 файлов, 14/14/16/16/17, 20→21) получены в shallow-клоне и описывают НЕ слияния, а расхождение деревьев; настоящий merge-tree тех же концов даёт 0 конфликтов — см. branchTopologyAudit20261022.corrections; ряды оставлены как история измерений, новые решения по ним не принимаются"
       },
@@ -1389,7 +1392,6 @@
     "why": "поле обязательно: гейт требует, чтобы реестр ссылался на существующий workflow с push:main и schedule"
   },
   "driveSourceAudit20261016": {
-    "measuredAt": "2026-10-16",
     "how": "download_file кладёт объект в google_drive/ (игнорируется .gitignore, в git не попадает), далее локальный разбор PdfReader: страницы, метаданные, полнота текстового слоя, титульная страница. Обходит лимит коннекторной экстракции 25 МБ. Хэши больших PDF не считывались, объекты удалены после разбора.",
     "pdCopies": {
       "owenWorks": {
@@ -1443,7 +1445,6 @@
       "09Data": 1,
       "99Hold": 65,
       "meaning": "99 — HOLD содержит 65 вытесненных копий; пересчёт по массиву имён скриптом: 10 копий прав лидера, 9 копий этого реестра (27 097 -> 49 824 B), 7 копий 00_CURRENT_AUTHORITY в трёх вариантах имени, 6 — 12_, по 4 — 05_ и 14_, 3 — 15_, по 2 — 02_ и synthesis-corpus-v1.json; сумма по семьям = 65. Строка «перенесены 11 объектов» в лидере сверена и объяснена: это состав зеркал снятой wave-0 (10 документов + data/redemption-corpus-authority-2026-10-07.json = 11 по git show --name-only c54cf68), из них 10 лежат в 99, зеркало 10_PRIMARY_TEXT — в папке 01; workflow и валидатор wave-0 в Drive не переносились. Первая редакция этого поля давала 7 и 6 вместо 9 и 10 (глазомер по части листинга) — см. erratum в лидере 07, раздел 7.",
-      "measuredAt": "листинг хаба: ночь 2026-10-16/17; пересчёт семей по массиву имён: 2026-10-17",
       "recheckCommand": "google_drive list_files: q=\"'<папка>' in parents and trashed = false [and name contains '<семья>']\", fields=files(name), page_size=1000; брать из ответа total_count (точное число без перебора листа) и проверять next_page_token=null вместе с incomplete_search=false как условие полноты. Хаб 07 = 1VULVPNq4DbBFS5KvBDpSkJOlx4jbEQAV, hold = 1FK7_q8431ys6MAv_0zFsXfht1Dnl5wmd",
       "note": "датированный снимок, не живой счётчик: 65 и 9/10 могут измениться чужими волнами, поэтому рядом лежит команда пересъёмки",
       "familiesSum": 65,
@@ -1620,7 +1621,8 @@
         },
         "outcome": "тот же набор id, что 18.10 (включая 10 id ли́дера); партиция 65 = 54 live + 10 wave0 + 1 drive-only стоит четвёртые сутки",
         "meaning": "числа §7 не требуют правки до мержа; пересъёмка дешёвая (2 запроса) — делать её перед любой переза́ливкой зеркал"
-      }
+      },
+      "measuredNote": "листинг хаба: ночь 2026-10-16/17; пересчёт семей по массиву имён: 2026-10-17"
     },
     "notInDrive": [
       "английский печатный RAA (только RU HTML 566 938 B + ZIP 113 293 B) → LOCATOR_PARTIAL Мюррея не снимается",
@@ -1695,10 +1697,14 @@
       "ledgerTipBytes": 53485,
       "measuredAt": "2026-10-22T10:07Z",
       "which": "gitBytes — размеры в main (именно их зеркало и должно догонять); tipBytes — что станет после мержа #216",
-      "reloadAdvice": "перезаливать Docs-зеркала после мержа #216: иначе зеркало устаревает в тот же прогон"
+      "reloadAdvice": "перезаливать Docs-зеркала после мержа #216: иначе зеркало устаревает в тот же прогон",
+      "method": "git show origin/main:<путь> | wc -c и git show HEAD:<путь> | wc -c; Drive-размер — get_file(size) по id из hubFolderInventory"
     },
     "publicationStateUnchanged": true,
-    "correctionsPendingNote": "записей 6, все три — чужие файлы (13_, 14_, 05_ R01/R05); ни одна не противоречит раунду 63: 05_SOURCE_REGISTRY и 13_/14_ им не изменены"
+    "correctionsPendingNote": "записей 6, все три — чужие файлы (13_, 14_, 05_ R01/R05); ни одна не противоречит раунду 63: 05_SOURCE_REGISTRY и 13_/14_ им не изменены",
+    "measuredDay": "2026-10-16",
+    "precisionNote": "день аудита; точные минуты по всему фронту не снимались, поэтому здесь стоит день. Точные времена есть у конкретных съёмок: hubFolderInventory.recheck20261018.at, recheck20261022.at, mirrorLag.measuredAt",
+    "recheckCommand": "для каждой папки: google_drive__list_files q=\"'<folderId>' in parents and trashed = false\"; для файла: get_file (size, modifiedTime)"
   },
   "branchTopologyAudit20261022": {
     "at": "2026-10-22T10:21Z",
@@ -2245,6 +2251,63 @@
       }
     ],
     "howRule": "любой git-замер про чужую ветку начинается с git rev-parse --is-shallow-repository (ожидание false) и git merge-base; пустой merge-base = дефект среды, а не факт репозитория; для дельты — только три точки (base...B)",
-    "recheckCommand": "git fetch --unshallow origin; git for-each-ref --format='%(refname:short)' refs/remotes/origin | grep -v HEAD  # затем по каждой ветке: merge-base --is-ancestor tip origin/main; diff --shortstat origin/main...tip; merge-tree --write-tree origin/main tip"
+    "recheckCommand": "git fetch --unshallow origin; git for-each-ref --format='%(refname:short)' refs/remotes/origin | grep -v HEAD  # затем по каждой ветке: merge-base --is-ancestor tip origin/main; diff --shortstat origin/main...tip; merge-tree --write-tree origin/main tip",
+    "commitTimeChecks": {
+      "b289d5a": "2026-10-15T23:49:49Z",
+      "0b1fb0d": "2026-10-16T08:01:34Z",
+      "d15b07b": "2026-10-16T22:28:38Z",
+      "19836b3": "2026-10-16T23:24:39Z",
+      "822c2af": "2026-10-18T00:13:05Z",
+      "ee0c735": "2026-10-18T08:43:24Z",
+      "a01664c8": "2026-10-14T00:18:56Z",
+      "6cac62e": "2026-10-15T08:28:55Z",
+      "eecb25d": "2026-10-22T09:28:31Z"
+    },
+    "commitTimeChecksHow": "сверяется гейтом при каждом прогоне; канонический снимок: TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd <sha>. %cI не годится: он печатает смещение коммита (у владельческих +03:00), и время «Z» из него выходит сдвигом на 3 часа",
+    "lossFreeResiduals": {
+      "measuredAt": "2026-10-22T10:31Z",
+      "method": "для каждой ветки: git diff origin/main...<ветка> --name-only (это её добавленные пути), blob-в-blob через git rev-parse <ref>:<путь>, уникальные строки через git diff origin/main:<ф> <ветка>:<ф> | grep -c '^+[^+]'",
+      "branches": [
+        {
+          "branch": "research/apostasy-biblical-theology",
+          "filesDelta": 5,
+          "notInMain": 0,
+          "uniqueLines": 0
+        },
+        {
+          "branch": "research/apostasy-hebrews-judas-master",
+          "filesDelta": 3,
+          "notInMain": 0,
+          "uniqueLines": 0
+        },
+        {
+          "branch": "research/apostasy-master-dossier-2026-09-30",
+          "filesDelta": 4,
+          "notInMain": 0,
+          "uniqueLines": 0
+        },
+        {
+          "branch": "research/apostasy-whole-bible",
+          "filesDelta": 6,
+          "notInMain": 0,
+          "uniqueLines": 0
+        },
+        {
+          "branch": "research/teen-double-life-digital-sin-20260907",
+          "filesDelta": 299,
+          "notInMain": 1,
+          "uniqueLines": 6,
+          "residual": "TEEN_DOUBLE_LIFE/README.md: 6 строк координации (ссылка на PR #187, порядок чтения, «не выводить фазу из архивных файлов»); main переписал этот индекс новее (5 858 B против 4 857 B, те же 7 заголовков)"
+        },
+        {
+          "branch": "research/covenant-children-comparative-20260908",
+          "filesDelta": 323,
+          "notInMain": 2,
+          "uniqueLines": 24,
+          "residual": "TEEN_DOUBLE_LIFE/README.md (12) + CURRENT_SERIES_HANDOFF.md (12): цепочки обязательного чтения 45→54→…→229 и правила маршрутизации 295/301/302/303; содержательных файлов 0 — остальные 321 совпадают байт в байт"
+        }
+      ],
+      "verdict": "из 18 несмерженных веток 6 не содержат ни одного исследовательского файла сверх main: 4 — побайтовый ноль, 2 — 18 и 24 строки инструкций в двух индексных файлах, которые main переписал новее. Удаление этих веток не теряет ничего, что main уже не superseded; если порядок чтения (цепочки 301/302/303) нужен как решение, его надо брать из ветки до удаления — в main этих строк нет"
+    }
   }
 }
