@@ -6575,6 +6575,87 @@ praedestinatione*; 1 Ин. 2:2. **Не закрыт:** читаем **перед
 **8. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); чанок 35; прочитано **27 из 74** (~36 %); французский OCR;
 **цитаты Кальвина — в передаче Амиро** (это и есть граница п. 227).
 
+**14. ПОПРАВКА 3 (раунд 58, часть 3; к §4.122 п. 2).** После сверки с изданием Кальвина уточняется **место**
+цитаты: «*la dispute n'est point…*» стоит у Амиро в разборе книги «*de la Predestination*», то есть **`De aeterna Dei
+praedestinatione`**, а **не** в толковании на 1 Ин. 2:2. Толкование на 1 Ин. 2:2 (проверено отдельно, §4.123) даёт
+**иное**: Кальвин **принимает** формулу «*suffisamment / efficacement*» как **истинную**, но **отвергает** её как
+**толкование этого стиха** и сам ограничивает «весь мир» верующими. **Это меняет §4.122 п. 3 (а) и (б):** формула
+**Кальвинова** — да; но её **приложение к 1 Ин. 2:2** — **не Кальвиново**.
+
+### 4.123. Q119 — Проверка 1 Ин. 2:2 по изданию Кальвина: он **принимает** формулу «достаточно/действенно», но **отвергает** её как толкование этого стиха (раунд 58)
+
+**0. Что проверялось и по чему.** Пункт 239 (суженный п. 227): сверить цитату Амиро с изданием. Взят **текст
+Кальвина на 1 Ин. 2:2** в английском переводе серии *Calvin Translation Society* (по латинскому изд. толкований;
+публичный доступ, BibleHub, `biblehub.com/commentaries/calvin/1_john/2.htm`). **Класс доказательства: B1** —
+**перевод**, латинский/французский текст **не сверен**; после сверки класс поднимется до A3.
+
+**1. Текст Кальвина — дословно (англ. пер.).**
+> «*Here a question may be raised, how have the sins of the whole world been expiated? **I pass by the dotages of the
+> fanatics**, who under this pretense extend salvation to all the reprobate, and therefore to Satan himself. Such a
+> monstrous thing deserves no refutation. **They who seek to avoid this absurdity, have said that Christ suffered
+> sufficiently for the whole world, but efficiently only for the elect. This solution has commonly prevailed in the
+> schools.** **Though then I allow that what has been said is true, yet I deny that it is suitable to this passage**;
+> for the design of John was no other than **to make this benefit common to the whole Church**. Then **under the word
+> all or whole, he does not include the reprobate**, but designates **those who should believe** as well as those who
+> were then scattered through various parts of the world*».
+
+**2. Что здесь сказано — четырьмя ходами.**
+1. **Формулу «достаточно для всех, действенно для избранных» Кальвин знает и называет её школьной:** «*This solution
+   has commonly prevailed in the schools*» = амировское «*ce qui est assez commun*». **Передача Амиро здесь точна.**
+2. **Он её принимает как истинную:** «***I allow that what has been said is true***».
+3. **И отвергает как толкование этого стиха:** «***yet I deny that it is suitable to this passage***».
+4. **И даёт своё:** «*under the word all or whole, **he does not include the reprobate***, but designates **those who
+   should believe***». То есть «весь мир» 1 Ин. 2:2 у Кальвина **не включает нечестивых**.
+
+**3. Что это делает с передачей Амиро — и здесь приходится сказать прямо.**
+Амиро пишет: «*Il respond que la solution de cet argument **se pourroit prendre** de ce qui est assez commun, que
+Iesus Christ a suffisamment souffert pour tous… **Puis apres auoir rapporté vne seconde responce**, il conclud en fin,
+que la dispute n'est point…*».
+**Сопоставление:**
+| Кальвин | Амиро |
+|---|---|
+| «*This solution **has commonly prevailed in the schools**»* | «*ce qui est **assez commun**»* — **точно** |
+| «***I allow that what has been said is true***» | «*suffisamment souffert pour tous*» — **точно** |
+| «***yet I deny that it is suitable to this passage***» | **ОПУЩЕНО** |
+| «*he does not include the reprobate… those who should believe*» | «*vne seconde responce*» — **названа, но не изложена** |
+
+**Вывод:** Амиро **не искажает** Кальвина, но **опускает его оговорку** — именно ту, которая делает формулу
+**неприменимой** к спорному стиху, и **не излагает** второе (собственное) толкование Кальвина, которое
+**ограничивает** «весь мир». **Это первое документированное смягчение в «Eschantillon»** — и оно важно для оценки
+всего раздела.
+
+**4. Что это значит для статьи — три следствия, и они тяжёлые.**
+1. **Статья берёт формулу, которую Кальвин считает верной вообще, но непригодной для 1 Ин. 2:2.** То есть на
+   **своём же ключевом стихе** статья **не имеет** Кальвина на своей стороне.
+2. **Больше того: Кальвин на этом стихе ограничивает «весь мир» верующими** («*does not include the reprobate*»,
+   «*those who should believe*»). Это **ближе к дортскому** толкованию, чем к статье.
+3. **И это меняет вес §4.122.** Вывод «статья права в цитатах» **сужается**: права — **в истинности формулы**;
+   **неправа — в её приложении** к данному стиху, и **неправа в том, что выдаёт её за толкование Кальвина**.
+
+**5. И это меняет вес §4.118 п. 3.** Статья **не** повторяет «карикатуру» и **не** выдумывает: она берёт
+**подлинную формулу**, **подлинно Кальвинову**, и **применяет её туда, куда Кальвин её применять запретил**.
+**Формула для серии:**
+> **Не «статья исказила Кальвина», а «статья взяла у Кальвина верное различение и употребила его против
+> Кальвинова же толкования стиха».**
+
+**6. Обратная сторона — в пользу статьи, и её тоже надо назвать.** Кальвин **прямо** называет универсалистское
+чтение «*dotages of the fanatics*» и говорит, что оно «*deserves no refutation*». Значит **статья не универсалистская**
+— и это надо ей зачесть: она держится внутри реформатской традиции, но **на её периферии**, там, где сама традиция
+провела черту.
+
+**7. Что осталось несверенным — обязательно.**
+1. **Латинский/французский текст** 1 Ин. 2:2 (изд. толкований 1551; франц. 1563?) — после сверки класс **B1 → A3**.
+   В частности, проверить: стоит ли «*I deny that it is suitable to this passage*» так же резко в оригинале.
+2. **Прочие четыре места** (Ин. 3:16; Ин. 1:29; Рим. 5; *De aeterna Dei praedestinatione*) — **не сверены**.
+   **П. 239 остаётся открытым** (закрыт на 1/5).
+3. **Где именно** у Кальвина стоит «*la dispute n'est point…*» — по разметке Амиро это **«le livre de la
+   Predestination»**, то есть *De aeterna Dei praedestinatione*, **не** толкование на 1 Ин. 2:2. **Поправка к §4.122
+   п. 2:** место иное, чем я предположил там. Проверить.
+
+**8. Статусы.** **П. 232 — закрыт** (цитата опознана: Кальвин, *De aeterna Dei praedestinatione*). **П. 239 —
+1 из 5** (1 Ин. 2:2 сверен по англ. пер.). **П. 227 — продвинут**, не закрыт. **`ATTRIBUTION_HOLD` для Кальвина в
+передаче Амиро — снят частично** (для одного места из пяти).
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -7104,6 +7185,7 @@ praedestinatione*; 1 Ин. 2:2. **Не закрыт:** читаем **перед
 | 1658 *(раунд 57, продолжение; «Eschantillon», сс. 173–178; чанок 34)* | **Ответ на обвинение о невозможном законе:** «*la **droite cause & naturelle du péché** n'est pas le **secret conseil de Dieu**, mais la **volonté de l'homme***»; от Бога — только «*le **décret de ne l'empescher pas***»; «*il faut considerer la **Loy de Dieu en deux égards***»; контрпример — «*comme si Dieu nous auoit commandé **d'arrester le mouvement du Soleil***»; «*si vous n'auez égard qu'aux **facultez naturelles**… & **non au vice qui y est suruenu***»; **два рода немощи:** «*vne sorte d'impuissance… **naturelle**… **mais pour laquelle on ne nous peut pas dire meschans**… Et il y en a **vne autre**… **morale**: de tant s'en faut que celle-là puisse nous excuser, que **plus elle est grande & profonde en nous, plus sommes nous meschans***» |
 | 1619 → 1634 *(раунд 57, часть 5; сведение `Acta` §4.83 пп. 9, 11 с `34_` §4.116–4.118)* | **Два хода, отвергнутые по отдельности и соединённые в Сомюре.** **Гелдерланд VI:** «*Neque hîc quicquam juvat **distinctio illa inter impetrationem & applicationem**… quam solutionem si accepit Pater, exigere novam jure nullo potest, sive applicetur, sive non applicetur: nam **non-applicatio facit quidem ut homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***». **Фрисландия:** «*non simpliciter, sed **conditionate** mortuum esse pro omnibus & singulis, si nimirum credant*». **Амиро (1634):** соединяет оба — «*mort universellement… sinon à la condition qu'ils croyent*» — и признаёт, что вне веры плод «***aucun***». **Аксиома:** «*non **reconciliabilitatem**… sed **reconciliationem***» |
 | 1658 *(раунд 58; «Eschantillon», сс. 178–183; чанок 35)* | **Цитаты Кальвина в передаче Амиро.** Ин. 3:16: «*Quiconque… afin de **conuier tous hommes**… & d'**oster toute excuse aux incredules***»; «*il se monstre **propice à tout le monde***»; **и тотчас:** «*Christ est bien **offert & comme mis en vente à tout**: toutesfois **il n'y a que les esleus ausquels Dieu ouure les yeux***»; Ин. 1:29: «*il **estend indifféremment cette grâce à tout le genre humain***»; Рим.: «*la **grâce commune**… pource qu'elle est **présentée à tous**, **non pas que par effect elle s'estende sur tous***»; *De aeterna praedestinatione*: «***je confesse que la grâce de Dieu est tellement vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes selon ce propos déterminé***»; **1 Ин. 2:2:** «*Iesus Christ a **suffisamment souffert pour tous**, mais que **l'efficace & le fruict** de sa mort **ne paruient que iusques aux esleus***»; и «*la dispute **n'est point**… **car cela est, dit-il, sans contredit***» |
+| 1551 → 1658 *(раунд 58, часть 3; сверка по изд. Кальвина, 1 Ин. 2:2; **B1**, англ. пер. CTS)* | **Кальвин о своей же формуле:** «*They who seek to avoid this absurdity, have said that Christ suffered **sufficiently** for the whole world, but **efficiently only for the elect**. **This solution has commonly prevailed in the schools.** **Though then I allow that what has been said is true, yet I deny that it is suitable to this passage**… **under the word all or whole, he does not include the reprobate**, but designates **those who should believe***». И рядом: «*I pass by the **dotages of the fanatics***». **⇒ Амиро передаёт формулу точно, но ОПУСКАЕТ оговорку «I deny that it is suitable to this passage» и не излагает второе толкование Кальвина** |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -7661,6 +7743,13 @@ praedestinatione*; 1 Ин. 2:2. **Не закрыт:** читаем **перед
   **ПОПРАВКА к §4.116 п. 8:** «*la dispute n'est point…*» — **слова КАЛЬВИНА** (1 Ин. 2:2), с «*dit-il*», а не
   формулировка Амиро. ⇒ **статья права в цитатах** (всеобщая благодать у Кальвина **есть**) и **неправа в выводе**
   (Кальвин соединяет её с определённым призванием; и говорит «*offert*», не «приобретено»).
+
+- **Раунд 58, часть 3: 1 Ин. 2:2 сверен с изданием Кальвина (B1, англ. пер. CTS).** Кальвин: «*I allow that what has
+  been said is true, **yet I deny that it is suitable to this passage***»; и «*under the word all or whole, he **does
+  not include the reprobate**, but designates **those who should believe***». ⇒ **статья права в формуле и неправа в
+  приложении**; **Амиро опускает оговорку** — первое документированное смягчение в «Eschantillon». **ПОПРАВКА 3:**
+  «*la dispute n'est point…*» — из *De aeterna Dei praedestinatione*, **не** из толкования на 1 Ин. 2:2. **П. 239 —
+  1 из 5**; **п. 227** продвинут.
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
