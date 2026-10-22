@@ -540,6 +540,31 @@
       **POSSIBILITATEM & VELLEITATEM** foederis gratuiti cum hominibus ineundi afferret»**; 12 — «Christum… non esse
       **donum seu promissum Novi foederis**»; 13 — «Voluntatem & intentionem Dei… applicandi fuisse, **tantum
       conditionatam, seu desiderium**». **Класс A2**; OCR; атрибуция не установлена.
+    - 42cs. *Дополнение 2026-10-19 (раунд 51, продолжение; `34_` §4.105, **S156**; `03_` §21; `04_` §11;
+      `synthesis/03_` §22):* **Амиро, начало главы VII — чанок 13, сс. 64–68.** **(1) Заголовок главы VII:**
+      «*Quelle est la nature du conseil & de la Volonté… **soit pour son étendue, soit pour la condition qui y est
+      annexée***» — порядок рубрик статьи Прокопенко («объём» → «условие») взят из трактата. **(2) Основание
+      всеобщности — творение, не цена крови:** «*la **compassion** qu'il a eue d'eux, **comme de ses créatures**…
+      **puis qu'ils sont ses créatures indifféremment**, la grâce de la rédemption… **a deu estre universelle***».
+      **Запрещено** смешивать с классическим аргументом от бесконечного достоинства Христа. **(3) «Нет различия»:**
+      «*ny **jusques là**, il n'y a **point de différence** entr'eux*»; равенство — **до** условия, различие — во
+      второй благодати (гл. IX). **П. 202 продвинут, НЕ закрыт.** **(4) Приобретение и приложение не различены:**
+      «*Le sacrifice… **a esté pour tous**; & le salut… **est destiné à tous**, pourveu… que la disposition
+      nécessaire… soit en tous de mesmes*». **(5) Израиль — частность по средству:** «*renouueller la mémoire*»
+      обетования о семени жены; «*Mais cela fait, **tous les peuples de la terre ont esté appelez***». **(6) Прямое
+      отрицание исключения:** «*ny **aucun peuple**, ny mesmes **aucun homme exclus par la volonté de Dieu***».
+      **Формула для серии:** у Амиро воля **никого не исключает**, у Дорта — **определяет**. **(7) Цена всеобщности
+      — второе откровение:** «*une prédication suffisante, s'ils y estoient attentifs*» (Рим. 2:4). Универсализм
+      Амиро держится **на учении о двух откровениях**; против — «*Alius modus salvandi homines… in Scriptura non
+      traditur*» (S153). **(8) Главная находка — аргумент «Бог слишком серьёзен»:** «***Dieu est trop bon, & s'il
+      faut user de ce mot, trop serieux, pour presenter aux hommes de vaines espérances***». Это **тот же** аргумент,
+      что у Эмдена («neminem beare potest», S152), в «possibilitatem & velleitatem» (S153) и «simulate agit»
+      (§4.98 п. 3); Амиро его **переворачивает**. **Правило:** аргумент от серьёзности общий — приводить его без
+      указания, **где** полагается серьёзность (в содержании предложения / в действенности определения),
+      **запрещено**. **(9) «en intention»** — Амиро обращает схоластическое различение против схоластики, но
+      **предполагает, что предложение и есть намерение** — именно это Дорт отрицал, различая предложение и дар
+      (корень расхождения). **(10) Осторожность:** глава о «facultez ou puissances» ещё впереди (с. 68) ⇒ суждение
+      о «решает сам» — **предварительное**. `EDITION_HOLD`, `EVIDENCE_HOLD` (4 чанка из 74, ~6 %) — в силе.
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
