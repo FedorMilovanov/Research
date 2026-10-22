@@ -366,7 +366,23 @@ if REG.is_file():
         elif isinstance(node, list):
             for i, val in enumerate(node):
                 walk_measure(val, f"{where}[{i}]")
-    walk_measure(reg, "реестр")
+    # обход по ВСЕМ machine-реестрам корпуса, а не по одному: у четырёх под-корпусов
+    # сегодня ноль полей этой формы, поэтому распространение ничего не ломает — но именно поэтому
+    # оно единственное, что помешает им заболеть тем же через неделю
+    _registries = [("реестр", REG)]
+    for _sub in SUBLANES:
+        _d = CORPUS / _sub / "data"
+        if _d.is_dir():
+            for _q in sorted(_d.glob("*corpus*.json")):
+                _registries.append((f"реестр {_sub}", _q))
+    _docs = {}
+    for _label, _path in _registries:
+        try:
+            _docs[_label] = json.loads(read(_path))
+        except Exception as _exc:  # noqa: BLE001
+            errors.append(f"{_label} ({_path.name}) не читается: {_exc}")
+    for _label in _docs:
+        walk_measure(_docs[_label], _label)
 
     # (3) плейсхолдеры в измеренных полях
     MEASURED_KEY = re.compile(r"(?:At|Time|Bytes|Count|Total|Lines|Size)$", re.I)
@@ -381,7 +397,8 @@ if REG.is_file():
         elif isinstance(node, list):
             for i, val in enumerate(node):
                 walk_fake(val, f"{where}[{i}]")
-    walk_fake(reg, "реестр")
+    for _label in _docs:
+        walk_fake(_docs[_label], _label)
 
     # (4) записанные времена коммитов сверяются с git'ом (когда объект доступен)
     checks = (reg.get("branchTopologyAudit20261022") or {}).get("commitTimeChecks") or {}
@@ -486,6 +503,45 @@ if _cpc and _claim:
         )
 elif _cpc and not _claim:
     errors.append("correctionsPending есть, а correctionsPendingCount нет — число открытых записей никто не сверяет")
+
+# ------------------------------------------- смешанное письмо в governance-слое --
+# Три опечатки за один день («файловold», «валидаторыPASS», «правилa», «Соumur» вместо Сомюра) — это не вкус, а
+# класс: латинская буква внутри кириллического слова не видна глазами и меняет слово в поиске, в цитате и в diff.
+# Проверка ограничена governance-слоем этого лана (файлы корня ИСКУПЛЕНИЕ/*.md) — не из удобства, а по праву:
+# под-корпусы nt/ и fathers/ содержат те же дефекты (12 вхождений в 5 файлах), но они чужие, и там заведено
+# открытое замечание, а не моя правка.
+MIXED = re.compile(r"[А-Яа-яЁё][A-Za-z]{1,}[А-Яа-яЁё]*|[A-Za-z]{1,}[А-Яа-яЁё][A-Za-zА-Яа-яЁё]*")
+# Цитата самого дефекта обязана оставаться точной («в файле было Соumur вместо Сомюр»), поэтому исключение
+# разрешено — но только построчно, только этим маркером, и число маркеров сверяется с объявленным в реестре.
+# Иначе «ослабили проверку» превращается в «добавили ещё один case» — молча и необратимо.
+EXEMPT = "<!-- mixed-script:цитата-дефекта -->"
+_exempt_total = 0
+for _md in sorted(CORPUS.glob("*.md")):
+    _txt = read(_md)
+    _bad = []
+    _exempt = 0
+    for _ln, _line in enumerate(_txt.split("\n"), 1):
+        if EXEMPT in _line:
+            _exempt += 1
+            continue
+        for _m in MIXED.finditer(_line):
+            _w = _m.group(0)
+            if re.search(r"[А-Яа-яЁё]", _w) and re.search(r"[A-Za-z]", _w):
+                _bad.append(f"{_ln}:{_w}")
+    _exempt_total += _exempt
+    if _bad:
+        errors.append(
+            f"{_md.relative_to(ROOT)}: {len(_bad)} слов смешанного письма (кириллица+латиница в одном слове): "
+            f"{', '.join(_bad[:6])}{'…' if len(_bad) > 6 else ''} — исправить букву, а не искать глазами; "
+            "переснять: grep -nE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' " + _md.name +
+            " | grep -v mixed-script:цитата-дефекта"
+        )
+_msc = (reg.get("integrityGate") or {}).get("mixedScriptCheck") or {}
+if "exemptionsDeclared" in _msc and int(_msc["exemptionsDeclared"]) != _exempt_total:
+    errors.append(
+        f"mixedScriptCheck.exemptionsDeclared = {_msc['exemptionsDeclared']}, по файлам — {_exempt_total}: "
+        "исключение из проверки — это тоже факт, он обязан быть переснят (grep -c '" + EXEMPT + "' ИСКУПЛЕНИЕ/*.md)"
+    )
 
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")

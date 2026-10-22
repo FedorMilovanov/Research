@@ -1429,6 +1429,55 @@
       "method": "python3 -B scripts/validate_atonement_corpus_integrity.py; мутации каждой проверки — отдельным прогоном, засчитывается только FAIL с ожидаемым сообщением (не просто ненулевой exit)",
       "mutationScore20261022": "13 из 13 за день: 6 (правила дат/плейсхолдеров/времён коммитов) + 3 (разрешение ссылок дока→реестр) + 4 (схема correctionsPending и её число); засчитывается только FAIL с ожидаемой фразой, после каждого — побайтовое восстановление (cmp)",
       "why": "все восемь правил — про одно и то же: вывод, который нельзя переснять, не является фактом; отсюда же и запрет ссылок в доке на невнесённые данные (коммит ae2821a оставил в 17_ ссылку на ключ, которого скрипт-заполнитель не создал)"
+    },
+    "scopeOfMeasurementRules": {
+      "registriesWalked": [
+        "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/fathers/data/fathers-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/nt/data/nt-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/ot/data/ot-corpus-v1.json",
+        "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
+      ],
+      "stampedFieldsPerRegistry": {
+        "корпус": 13,
+        "fathers": 0,
+        "nt": 0,
+        "ot": 0,
+        "synthesis": 0
+      },
+      "violationsFound20261022": 0,
+      "measuredAt": "2026-10-22T12:24Z",
+      "method": "обход тем же walk_measure/walk_fake по каждому из пяти реестров; отдельно посчитано, сколько at-ключей в файле вообще — иначе «ноль нарушений» неотличим от «правилу не за что зацепиться» (сегодня было именно так)",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py; счётчик at-ключей: python3 -c \"import io,json,re;[print(p, sum(1 for k in json.load(io.open(p,encoding='utf-8')) if re.match(r'^(at|measuredAt)$',k))) for p in __import__('glob').glob('ИСКУПЛЕНИЕ/*/data/*corpus*.json')+['ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json']]\"",
+      "proof": "обобщение проверено мутациями на чужих файлах: ot (measuredAt без часов), nt (baselineCount='TBD'), fathers (audit.at с точным временем, но без способа) — три разных сообщения с подписями реестр ot / реестр nt / реестр fathers; после каждого — побайтовое восстановление (cmp). Чужие данные не изменены: правило обязывает только того, кто завтра впишет туда датированную съёмку",
+      "laneJsonFiles": 0,
+      "laneNote": "в docs/research/atonement/ нет ни одного .json — распространять некуда; корневые data/*.json (1cor11 и др.) принадлежат другим ланам и остаются на решении владельца корневого гейта"
+    },
+    "mixedScriptCheck": {
+      "scope": "governance-слой корпуса: все markdown-файлы корня ИСКУПЛЕНИЕ (19 шт., они же периметр этого PR)",
+      "violationsAfterFix": 0,
+      "fixedInThisPr": 5,
+      "fixedWords": [
+        "развитa→развита",
+        "Соumur→Сомюр (школа Амираля — топоним, а не термин)",
+        "то естьowner-→то есть owner-",
+        "правилa→правила",
+        "кулисa→кулиса"
+      ],
+      "outOfScope": {
+        "files": 5,
+        "occurrences": 12,
+        "where": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md (Тregеллс ×7), nt/03 (×1), nt/07 (Павелa), nt/08 (polemikи), fathers/05 (антidonatistский), nt/11 (Berоn)"
+      },
+      "measuredAt": "2026-10-22T12:26Z",
+      "method": "python3-обход всех 84 md корпуса с паттерном [А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё] и фильтром «в слове есть обе графики»; остаток по под-корпусам: grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' ИСКУПЛЕНИЕ/nt ИСКУПЛЕНИЕ/fathers | wc -l",
+      "recheckCommand": "grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' --include='*.md' ИСКУПЛЕНИЕ | wc -l  # должно стать 0 вместе с закрытием открытого замечания",
+      "why": "правило не объявлено «для всего корпуса» только потому, что там оно бы падало на чужих: охват = где у меня есть право править, а остальное — открытая запись, а не молчание",
+      "scopePattern": "glob по markdown-файлам корня ИСКУПЛЕНИЕ (звёздочка в значении реестра читается проверкой путей как несуществующий файл — формулировка без пути)",
+      "exemptionsDeclared": 3,
+      "exemptionMarker": "<!-- mixed-script:цитата-дефекта --> (построчный; стоит в конце строки, в рендере невидим)",
+      "exemptionsWhere": "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md (строки 653, 659, 662 — там цитируются и сам дефект, и чужие слова из nt/ и fathers/)",
+      "exemptionCountMethod": "grep -c 'mixed-script:цитата-дефекта' ИСКУПЛЕНИЕ/*.md построчно (не по файлам: две метки в одном файле — это два исключения); гейт сверяет это число с фактом"
     }
   },
   "driveSourceAudit20261016": {
@@ -1744,6 +1793,17 @@
         "checkedAgainstMain20261022": true,
         "why": "было (решение не принято молча): гейт читал диапазон только из корпусного ли́дера — 22.10 расширено до всех authority-файлов, расхождение закрыто дополнением; числа статусов сознательно не дублируются",
         "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
+      },
+      {
+        "where": "ИСКУПЛЕНИЕ/nt/ и ИСКУПЛЕНИЕ/fathers/ (5 файлов, 12 вхождений)",
+        "defect": "латинские буквы внутри кириллических слов: «Тregеллс» (вместо Трегеллс, ×8 в nt/12 и nt/03), «Павелa» (nt/07), «polemikи» (nt/08), «антidonatistский» (fathers/05), «Berоn» (nt/11) — в таком виде слово не находится поиском и портится в цитатах",
+        "resolution": "не применено намеренно: файлы принадлежат под-корпусам nt/ и fathers/, это орфография чужого лана. Для корпуса этот класс уже закрыт правилом гейта (integrityGate.mixedScriptCheck), у под-корпусов — эта запись; список строк снимается одной командой из method",
+        "applied": false,
+        "checkedAgainstMain20261022": false,
+        "measuredAt": "2026-10-22T12:26Z",
+        "method": "python3 -обход 84 md ИСКУПЛЕНИЕ c паттерном смешанной графики; пофайловый вывод с номерами строк (grep -n по каждому файлу)",
+        "recheckCommand": "grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' --include='*.md' ИСКУПЛЕНИЕ/nt ИСКУПЛЕНИЕ/fathers | cut -d: -f1,2",
+        "whyNotFixedHere": "править орфографию в чужом лане — то же, что молча поправить чужой счётчик: я это уже запретила сегодня на себе"
       }
     ],
     "mirrorLag": {
@@ -1766,10 +1826,10 @@
     "precisionNote": "день аудита; точные минуты по всему фронту не снимались, поэтому здесь стоит день. Точные времена есть у конкретных съёмок: hubFolderInventory.recheck20261018.at, recheck20261022.at, mirrorLag.measuredAt",
     "recheckCommand": "для каждой папки: google_drive__list_files q=\"'<folderId>' in parents and trashed = false\"; для файла: get_file (size, modifiedTime)",
     "correctionsPendingCount": {
-      "total": 7,
+      "total": 8,
       "applied": 3,
-      "open": 4,
-      "measuredAt": "2026-10-22T11:39Z",
+      "open": 5,
+      "measuredAt": "2026-10-22T12:26Z",
       "method": "python3 -c \"import json;d=json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));c=d['driveSourceAudit20261016']['correctionsPending'];print(len(c),sum(1 for x in c if not x['applied']))\"",
       "why": "число открытых записей — единственный способ понять, закрыт ли периметр; без единой схемы его нельзя ни посчитать, ни проверить, поэтому гейт сверяет этот словарь с фактическим составом"
     }
@@ -2409,6 +2469,37 @@
         "method": "время берётся из коммита, а не из памяти: тот же recheckCommand; сравнивать с TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd c4ea5947 (коммит был записан в 10:39Z прогона, съёмка — в ту же минуту)"
       },
       "arithmeticNeedleWhere": "вывод гейта на дереве origin/main (не исходник: сообщение собрано из f-строки и в тексте скрипта не встречается целиком); получить: recheckCommand выше"
+    }
+  },
+  "reproducibility20261022": {
+    "shallowRollbacks": [
+      {
+        "at": "2026-10-22T11:22Z",
+        "detected": "git show HEAD:…02_CONFLICT_LEDGER.md → «exists on disk, but not in HEAD»",
+        "method": "git reflog --date=iso | head -2 (clone+checkout в 11:22:25/34); git rev-parse --is-shallow-repository=true в тот момент; git show HEAD:ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md → «exists on disk, but not in HEAD»",
+        "recheckCommand": "git reflog --date=iso -6; git cat-file -e 9da9c26 && echo база-сессии-жива"
+      },
+      {
+        "at": "2026-10-22T12:22Z",
+        "detected": "git status показал ?? целые каталоги ot/, nt/, fathers/; HEAD=9da9c26, is-shallow-repository=true, 1 коммит",
+        "method": "git status --porcelain -uall показал ?? ИСКУПЛЕНИЕ/ot/, nt/, fathers/ (целые каталоги отсутствуют в HEAD); HEAD=9da9c26, shallow=true, rev-list --count HEAD=1",
+        "recheckCommand": "git reflog --date=iso -4; git rev-parse --is-shallow-repository; git rev-list --count HEAD"
+      }
+    ],
+    "recovery": "git fetch --unshallow origin; git fetch origin '+refs/heads/*:refs/remotes/origin/*'; git reset --hard origin/<ветка>; незакоммиченное — копией в /tmp до реалайна и обратно после; контроль: git status --porcelain -uall (должен остаться ровно изменённый файл правки) и cmp с копией",
+    "whatSurvived": "коммиты и CI — целиком, потому что каждый зелёный коммит пушился сразу. Потерянным оказался только кусок, пролежавший в рабочем дереве между валидатором и коммитом (21 строка гейта, второго прогона) — восстановлен копией, md5 совпал",
+    "measuredAt": "2026-10-22T12:24Z",
+    "method": "git reflog --date=iso (метки clone+checkout в 11:22:25/34 и 12:22:25/26); git rev-parse --is-shallow-repository; git rev-list --count HEAD",
+    "recheckCommand": "git reflog --date=iso -4; git rev-parse --is-shallow-repository; git rev-list --count HEAD",
+    "rule": "отсюда твёрдый порядок: валидаторы → коммит → push → CI → синхрон тела PR, без «дочитаю и закоммичу одним». Дерево песочницы — кэш, а не хранилище; вывод не записывается в governance-файл, пока не переснимается командой",
+    "countsAtThisMoment": {
+      "ключейРеестра": 29,
+      "строкАмита": 26,
+      "shaВ сверке": 9,
+      "ошибокНаРодителе": 18,
+      "хвостов": 7,
+      "открыто": 4,
+      "правилГейта": 9
     }
   }
 }
