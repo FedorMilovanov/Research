@@ -565,6 +565,24 @@
       **предполагает, что предложение и есть намерение** — именно это Дорт отрицал, различая предложение и дар
       (корень расхождения). **(10) Осторожность:** глава о «facultez ou puissances» ещё впереди (с. 68) ⇒ суждение
       о «решает сам» — **предварительное**. `EDITION_HOLD`, `EVIDENCE_HOLD` (4 чанка из 74, ~6 %) — в силе.
+    - 42ct. *Дополнение 2026-10-19 (раунд 51, продолжение 2; `34_` §4.106, **S156**; `03_` §22;
+      `synthesis/03_` §23):* **Амиро, чанки 16–17, сс. 81–90 — бессилие, избрание, «вера созидается».** Амиро
+      **сам ставит и отвергает** возражение, что разница «*dépend de la liberté de la volonté de l'homme*»:
+      «*l'Escriture attribue **sans aucune variation** la foy… **à l'operation de Dieu en nous***»; **Фил. 2:13**
+      («*qui fait en nous le vouloir & le parfaire*»); «***nous ne contribuons icy rien à l'efficace***»; Ин. 6:44.
+      Бессилие — в дортском языке: «*non seulement nous ne nous en sçaurions dégager quand nous le voudrions…
+      mais mesme qu'il est **impossible que nous le vueillons***»; «*tout à fait asservies au mal & mortes quant au
+      sentiment du bien*»; образ **катаракты** («*un cal… oste entièrement la faculté de la veue*»). Бессилие **не
+      извиняет, а увеличивает вину**: «*plus grande elle est, & plus merite-t-elle de blasme*»; довод от демонов.
+      **Гл. IX (с. 87):** «*par laquelle il a ordonné **d'accomplir en quelques uns cette condition**, & **laisser
+      les autres à eux mesmes***»; «*éleus & predestinez **pour leur donner la foy***» ⇒ **не предвиденная вера**.
+      **Довод от тщетности:** без второго определения первое было бы «*inutile au genre humain*», страдания Сына
+      «*entièrement frustratoires*» ⇒ **два определения** в его собственных словах; благодать «*surmontast*»
+      сопротивление. **Решающее (с. 89–90):** «*tant s'en faut que l'amour de Dieu puisse **presupposer** cette
+      condition… qu'il faut necessairement presupposer **qu'elle n'y est pas**… sinon que **luy-mesme l'y crée par
+      sa puissance***». **Поправка:** не слышавшие осуждаются — «*pource qu'elle aura **méprisé la voix des
+      Cieux***» (с. 85) ⇒ вторая проповедь **судит, а не спасает**. **П. 208 закрыт в существе.** `LOCATOR_PARTIAL`
+      на номера глав (гл. IX с с. 87). `EDITION_HOLD`; 6 чанков из 74 (~8 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
