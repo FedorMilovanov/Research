@@ -5897,6 +5897,88 @@ qu'il me seroit inutile*») — **готовые пастырские форму
 — без изменений, **не утверждение**. **Сверку с Дортом I.15** (оставление в общем бедствии) провести по тексту
 `Acta`, а не по памяти, — **п. 224**.
 
+### 4.115. Q111 — «Eschantillon de la doctrine de Calvin» найден: Амиро приписывает Кальвину ту же двухстепенную схему (раунд 56)
+
+**0. Событие раунда.** Пункт 211 закрыт: **титул найден** (чанок 40). Колонтитулы читаются ясно: «**Efchantillon**» и
+«**de la doctrine de Caluin**»; пагинация — **своя** (сс. 103–107 в чанке 40), отличная от пагинации основного
+трактата (ср. сс. 137–147 в чанках 27–28). **Это и есть та часть, о которой говорит титульный лист 1658 г.**
+Источник — **S156**, класс **A2** (OCR). Прочитано **19 чанков из 74** (около 26 %).
+
+**1. Что это за часть.** Амиро излагает **учение Кальвина** — и излагает **его словами**, с ссылками на толкования.
+Форма: «*Caluin donc considere la misericorde de Dieu **en deux manières***» (с. 103–104). То есть перед нами не
+полемика, а **изложение с цитатами** — жанр, который в серии важен именно потому, что позволяет проверить тезис о
+«кальвиновском пастише» (§4.7; S43–S46) **по первоисточнику атрибуции**.
+
+**2. Первое «рассмотрение» милости — и это буквально первая степень.** «*Premierement il remarque en la parole de
+Dieu une soit vertu, soit proprieté en luy **qui le rend enclin à pardonner universellement à tous ceux qui sont
+repentans**, mais aussi **qui exige necessairement la repentance de la creature pecheresse**. De façon que si elle ne
+se repent & ne croit, **il est impossible que Dieu luy pardonne***» (с. 104).
+И далее — цитата из Иезекииля с комментарием Кальвина: «*Dieu par cette sentence en donnant esperance de pardon,
+**inuite & exhorte à repentance tous ceux qui ont transgressé la Loy***»; «*Dieu a les bras estendus par manière de
+dire… **prest à receuoir tous ceux qui se voudront amender***»; и мотив: «*Car **le desespoir nous precipite en une
+rage**: & dauantage **il endurcit nos cœurs par obstination***» (с. 105).
+
+**3. Второе «рассмотрение» — и это буквально вторая степень.** «*Pais après il considere cette misericorde entant
+qu'elle **ne se contente pas d'exiger la repentance, comme une condition necessairement prealable à la remission des
+pechez, mais qu'elle a resolu de **créer elle mesme cette condition** en la creature**, à ce que reellement & de fait
+elle obtienne la remission des offences***» (с. 106).
+**Перевод:** «Затем он рассматривает эту милость в том, что она **не довольствуется требованием покаяния как
+условия, необходимо предшествующего оставлению грехов, но положила **создать само это условие** в создании**,
+чтобы оно действительно и на деле получило оставление преступлений».
+
+**4. И — точная таблица противопоставлений, данная Амиро за Кальвина.** «*Et au lieu que **la precedente est
+universelle**, cellecy est **particuliere**: au lieu que celle-là **dépend d'une condition**, & que par consequent
+l'evenement est en ce regard **en suspens**, celle icy **engendrant la condition rend l'evenement certain &
+necessaire**: au lieu que celle-là est **constante autant comme la condition l'est**, celle-cy est **invariable**,
+pource que d'elle vient necessairement la condition & sa perseverance***» (с. 106).
+
+| | Первая | Вторая |
+|---|---|---|
+| объём | **universelle** | **particuliere** |
+| зависимость | **dépend d'une condition** | **engendrant la condition** |
+| исход | **en suspens** | **certain & necessaire** |
+| постоянство | «*constante autant comme la condition l'est*» | **invariable** |
+
+**Это — дословно та же схема, что в §4.114 п. 1**, только изложенная как **учение Кальвина**. И порядок
+противопоставлений тот же.
+
+**5. Почему это важно до чрезвычайности — три следствия.**
+**(а) Атрибуция найдена.** Тезис «двухстепенная схема есть изобретение Сомюра» **неверен в том смысле, в каком его
+обычно выдвигают**: Сомюр **не выдаёт** её за новшество, а **приписывает Кальвину**. Спорить надо не с тем, что
+Амиро её изобрёл, а с тем, **верно ли он прочёл Кальвина**.
+**(б) Это меняет постановку вопроса о «кальвиновском пастише».** Если в статье (или у её предшественников) есть
+мысль «Кальвин учил всеобщей благодати», то у неё теперь есть **документальный источник атрибуции** — и он
+**сомюрский**: Амиро, «Eschantillon», сс. 103–107. **Формулировать в серии так: тезис о «кальвиновской
+всеобщей благодати» впервые в нашем корпусе документируется не как чтение Кальвина, а как чтение Кальвина
+Амиро.**
+**(в) И сразу видно, где слабое место этой атрибуции.** У Амиро «первое рассмотрение» есть **условная воля** с
+исходом «*en suspens*». Но Кальвин, насколько его тексты известны серии (S1–S5, S43–S46), говорит о **предложении**
+и о **неизвинительности**, а не о воле, чей исход «*en suspens*». **Проверить это можно только по цитатам,
+которые Амиро приводит**, — а они у него **из толкований**, и их надо сличить с изданием. **Это п. 227.**
+
+**6. Второй текст, приведённый Амиро, — Рим. 9:15.** «*Par cet oracle Dieu a declaré qu'il **n'est debteur à homme
+quelconque**… que **ce qu'il fait bien à certains hommes & estend sa bonne affection envers eux & non pas envers
+tous**, il est **impossible d'en trouuer cause plus haute que sa volonté***» (с. 106–107).
+**Значение:** это **дортский** язык — «*non debitor*», «*causa altior quam voluntas*». И Амиро приводит его **без
+возражений**, как учение Кальвина. **Второе подтверждение** (§4.108 п. 7: «*de sa pure libéralité*» / «*sa justice
+requiert qu'il le leur dénie*») того, что **основание различия у Амиро и у Дорта совпадает**.
+
+**7. `LOCATOR_PARTIAL` — существенное уточнение и усиленная гипотеза.** Теперь известны **две пагинации**: основного
+трактата (сс. 58–95, 101–147 — чанки 12–18, 20–28) и «Eschantillon» (сс. 103–107+ — чанок 40). **Чанок 19 (сс. 56–60)
+не принадлежит ни одной из прочитанных последовательностей** и по содержанию (Иаков и Исав, Рим. 9:15, «*à
+tastons*», «*degrés de l'efficace*») **точно соответствует материалу «Eschantillon»**. **Гипотеза усилена, но
+остаётся гипотезой** (колонтитул чанка 19 не прочитан): чанок 19 — **листы «Eschantillon» (сс. 56–60), попавшие в
+скан не на своём месте**. Проверить по колонтитулу; до проверки — **не утверждать** (п. 228).
+
+**8. Что теперь можно сказать о статье — и это её прямо касается.** Терминологическое различение статьи
+(«искупление / примирение») **не имеет** в «Eschantillon» соответствия: там различение — **двух рассмотрений
+милости**, а не двух сторон дела Христова. Более того, у Амиро вторая степень названа «*particuliere*» и
+«*invariable*», а первая — «*en suspens*». **Переносить это на «приобретение/приложение» можно только с
+оговоркой**: «приобретение» у Амиро не «в подвешенном состоянии» — в подвешенном состоянии **исход**.
+
+**9. Оговорки.** `EDITION_HOLD` (1658, не 1634); 19 чанков из 74; французский OCR, орфография нормализована.
+**П. 211 — ЗАКРЫТ.** **П. 202** — без изменений (формулы «égale et universelle» по-прежнему нет в прочитанном).
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6419,6 +6501,7 @@ qu'il me seroit inutile*») — **готовые пастырские форму
 | 1658 *(раунд 55; Амиро, глава XII, сс. 126–136)* | **Моисей Амиро**: «*quelque efficace que cet Esprit desploye en nous, **il ne nous contraint ny violente pas** pourtant. Car **la contrainte gist à faire quelque chose contre sa volonté***»; «*qui a jamais ouy parler d'un homme qui creust quelque chose **malgré qu'il en euft**…? **La croyance est une persuasion. Et on ne persuade personne par la force***»; «*Dieu meut nos volontés, nos affections **par l'entremise de nos entendemens***»; «*il est **impossible** que nous ne les apperceuions & que nous n'y cédions, **quelque résistance** qu'y facent au commencement nos affections*»; **ангелы**: «***nul ne doute que les Anges ne foyent à cette heure en estat de ne pouuoir pécher***… *Les Anges donc ont-ils perdu quelque liberté de leur volonté par la grâce de leur confirmation?*»; «*plus ils font excellens, **plus necessairement & ineuitablement** sentent ils… la puissance & efficace de ces choses*» |
 | 1658 *(раунд 55, продолжение; Амиро, глава XIII, сс. 137–142)* | **Моисей Амиро**: «*il faut soigneusement distinguer **la volonté de sauver les hommes**, laquelle quelques uns appellent, **contre l'usage de l'Escriture**, la **predestination au salut**, d'auec **l'election ou predestination à la foy***»; «*celle-cy est **absolue**… & ne dépend d'aucune condition; celle-là ne peut avoir lieu quant à son effect que par la presupposition de cette condition préalable*»; «*cette mesme Escriture qui nous enseigne si disertement que **Christ est mort universellement pour tout le monde**, en parle quelques-fois… qu'il est mort **pour le petit nombre des esleus***»; правило: «*diligemment distinguer entre **les manières de parler qui sont nées de la consideration des évenemens seulement**, & **celles qui viennent de la consideration des conseils mesmes***»; против «безопасности»: «*Encore que **ie croye**, ie ne seray pas esleu à croire pourtant*» |
 | 1658 *(раунд 56; Амиро, глава XIII, сс. 143–147)* | **Моисей Амиро**: милость Божия «*ayant **deux degrés***» — первая «*ne passe pas plus avant que de nous presenter la remission de nos offenses au Rédempteur*», вторая «*passe jusques à faire que nous croyions*»; первая «*universellement manifesté à tous par la predication de l'Euangile… auec cette **resolution ferme & immuable** de les sauuer s'ils croyent*»; вторая «*a esté **expressement caché**… **afin de n'estre point en achoppement aux autres & en empeschement à la predication de l'Euangile***»; «*nul… **ne se doit presumer estre reprouué***»; **контрфактическое:** «*posé le cas… qu'il y ait quelqu'un… à qui Dieu n'auoit pas ordonné de donner la foy, qui neantmoins croye véritablement… **cettuy-là sera sauvé** sans que Dieu face aucun tort au décret*»; «*il n'a pas predestiné les autres à ne croire pas… **il s'est contenté de les laisser en leur naturelle condition***»; обратное: «*si… quelqu'vn de ceux qu'il a predestinés à croire ne creust pas… **auroit-il manqué à sa predestination***» |
+| 1658 *(раунд 56, продолжение; Амиро, «Eschantillon», сс. 103–107; чанок 40)* | **НАЙДЕН «Eschantillon de la doctrine de Calvin»** (своя пагинация): «*Caluin donc considere la misericorde de Dieu **en deux manières***»; первая — «*enclin à pardonner universellement à tous ceux qui sont repentans… **exige necessairement la repentance***»; «*le **desespoir** nous precipite en une rage… **il endurcit nos cœurs***»; вторая — «*ne se contente pas d'exiger la repentance… mais qu'elle a resolu de **créer elle mesme cette condition** en la creature*»; **таблица:** «*la precedente est **universelle**, cellecy est **particuliere***… *l'evenement est en ce regard **en suspens**, celle icy… **certain & necessaire***… *celle-là est **constante autant comme la condition l'est**, celle-cy est **invariable***»; Рим. 9:15 — «*il est **impossible d'en trouuer cause plus haute que sa volonté***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6898,6 +6981,16 @@ qu'il me seroit inutile*») — **готовые пастырские форму
   predestiné les autres à ne croire pas… il s'est contenté de les **laisser en leur naturelle condition***» — близко
   к дортскому «оставлению», **поэтому нельзя** говорить «у Дорта есть определение к осуждению, у Амиро нет».
 
+- **Раунд 56, продолжение: «Eschantillon de la doctrine de Calvin» НАЙДЕН (чанок 40, сс. 103–107).** **П. 211
+  ЗАКРЫТ.** Колонтитулы: «*Efchantillon*» / «*de la doctrine de Caluin*»; **своя пагинация**. Амиро излагает
+  **Кальвина его словами**: «*Caluin donc considere la misericorde de Dieu **en deux manières***» — первая
+  («*universelle*», «*exige necessairement la repentance*», исход «*en suspens*») и вторая («*particuliere*»,
+  «*créer elle mesme cette condition*», «*certain & necessaire*», «*invariable*»). **Это дословно схема §4.114,
+  приписанная Кальвину.** **Следствие:** спор не о том, «изобрёл ли Сомюр схему», а о том, **верно ли Амиро
+  прочёл Кальвина** ⇒ **п. 227** (сличить цитаты с изданием). Рим. 9:15 у него — «*impossible d'en trouuer cause
+  plus haute que sa volonté*» (дортский язык, без возражений). **Гипотеза усилена:** чанок 19 (сс. 56–60) —
+  вероятно, листы «Eschantillon», попавшие в скан не на месте; **не утверждать** до проверки колонтитула (п. 228).
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -7037,6 +7130,16 @@ I арт. 15) — **не по памяти** — и сопоставить с «
 милости**, у Дорта **одно приобретение с приложением**. Вынести в `03_` §30.
 226. *(раунд 56)* **Проверить контрфактическое** (§4.114 п. 5) на дортских текстах: есть ли у делегаций
 утверждение, что «природою произведённая вера» **не есть вера**? Если да — это и есть точка несовместимости.
+
+**Добавлено в раунде 56, продолжение:**
+
+227. *(раунд 56)* **Сличить цитаты Кальвина в «Eschantillon»** (сс. 103–107 и далее) с изданием его толкований:
+Иез. 18:21–23; 33:11; Рим. 9:15. Установить, **есть ли** у Кальвина выражение воли с исходом «*en suspens*» — или
+Амиро вносит это от себя. **Только по источнику, не по памяти.**
+228. *(раунд 56)* **Прочитать колонтитул чанка 19** и подтвердить/опровергнуть гипотезу о его принадлежности
+«Eschantillon» (сс. 56–60).
+229. *(раунд 56)* **Дочитать «Eschantillon»** (чанки 41–48) — искать: (а) цитаты, где Кальвин говорит о
+всеобщности; (б) место, где Амиро оговаривает расхождение с Кальвином; (в) начало «*Response à M. de L. M.*».
 
 **Добавлено в раунде 48:**
 
