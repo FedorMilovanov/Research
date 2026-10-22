@@ -197,4 +197,4 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | O10 | PATRISTIC | Иоанн Златоуст, In Ioannem, homilia на 11:45–54 | — | древнее чтение «диаспора vs язычники»; у Кальвина на 12:32 процитирован, но место не снято | NO |
 | O11 | PATRISTIC | Кирилл Александрийский, In Ioannem (кн. на 11:49–53) | — | «чада по предведению» vs «чада по обóжению» | NO |
 | O12 | PATRISTIC | Августин, In Ioannis evangelium tractatus (на 11:45–57) | — | `multi in grege, non omnes`; владение текстом необходимо перед цитатами в полемике | NO |
-| O13 | SECONDARY | Страницы изданий: Кальвин (Pringle 1840) на 11:52 и 12:32; Гилл; Алфорд; Бенгель; Уэсли; сверка атрибуции «только диаспора» (Jamieson-Fausset-Brown?) | StudyLight, BibleHub (перепечатки) | перевод `LOCATOR_PARTIAL`-записей `nt/15_` §5 и `13_` §2.4 в `LOCATOR_FULL` | NO |
+| O13 | SECONDARY | Страницы изданий: Кальвин (Pringle 1840) на 11:52 и 12:32; Гилл; Алфорд; Бенгель; Уэсли; сверка атрибуции «только диаспора» (Jamieson-Fausset-Brown?) | StudyLight, BibleHub (перепечатки) | перевод `LOCATOR_PARTIAL`-записей `nt/15_` §5 и `13_` §2.5 в `LOCATOR_FULL` | NO |

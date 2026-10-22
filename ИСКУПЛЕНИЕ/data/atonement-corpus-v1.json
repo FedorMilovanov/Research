@@ -3246,6 +3246,11 @@
         "sectionsH3": 21,
         "asOf": "2026-10-23T01:20Z",
         "note": "числа до записи о границе правила 19"
+      },
+      {
+        "lines": 1095,
+        "asOf": "2026-10-23T02:20Z",
+        "note": "строки до erratum-строки о столкновении номеров в §15k"
       }
     ],
     "measuredAt": "2026-10-22T23:35Z",
@@ -3262,7 +3267,7 @@
       "nt/00 (навигация лана)",
       "12_HARD_TEXTS_EXTENT_CARDS.md (карточка H11)",
       "04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md §8.1/§8.2 (расширение ячеек)",
-      "13_DORT_II_CALVIN_OWEN_EXTENT.md ### 2.4",
+      "13_DORT_II_CALVIN_OWEN_EXTENT.md ### 2.5 (erratum: изначально 2.4 — столкновение с существующим §2.4 того же файла)",
       "05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md O08–O13",
       "synthesis/02_CONFLICT_LEDGER.md C-25 (TENSION)",
       "docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md §24",
@@ -3293,6 +3298,7 @@
     "hold": "вердикта по объёму нет; локус остаётся EXTENT-текстом с двумя живыми чтениями; EVIDENCE_HOLD не снят; publicationEligible=false",
     "measuredAt": "2026-10-23T00:45Z",
     "recheckCommand": "grep -rn \"11:52\" ИСКУПЛЕНИЕ | wc -l",
-    "method": "число упоминаний локуса переснимается обходом, а не памятью правки"
+    "method": "число упоминаний локуса переснимается обходом, а не памятью правки",
+    "erratum20261023": "номер ## 2.4 в 13_ столкнулся с уже существующим §2.4; перенумеровано в 2.5, ссылки исправлены в трёх местах; найдено повторным съёмом числа совпадений, а не первым обходом"
   }
 }

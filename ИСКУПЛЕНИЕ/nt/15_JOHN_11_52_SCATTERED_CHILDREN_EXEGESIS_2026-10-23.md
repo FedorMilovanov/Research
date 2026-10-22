@@ -3,7 +3,7 @@
 **Дата:** 2026-10-23
 **Статус:** `EVIDENCE_HOLD` **не снят**. Ни один раздел не выносит вердикта по объёму искупления; документ фиксирует данные одного текста и его параллелей. Публикация — `publicationEligible = false` (владелец).
 **Повод:** вопрос владельца: «Тут Иисус будто чадами Божиими называет тех, кто ещё в состоянии неверия. Перепроверить, сделать экзегезу, контекст, комментарии, найти подобные стихи».
-**Родители:** [`00_NT_AUTHORITY_2026-10-07.md`](00_NT_AUTHORITY_2026-10-07.md); карточка [`06_`](06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md) §06.13; трёхколонник [`09_`](09_NT_EXTENT_THREE_COLUMN_TABLE.md); HARD-карточка [`../12_HARD_TEXTS_EXTENT_CARDS.md`](../12_HARD_TEXTS_EXTENT_CARDS.md) §H11; карта вопросов [`../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md`](../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md) §8; Кальвин/Оуэн [`../13_DORT_II_CALVIN_OWEN_EXTENT.md`](../13_DORT_II_CALVIN_OWEN_EXTENT.md) §2.4; очередь [`../05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md`](../05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md) O08–O13.
+**Родители:** [`00_NT_AUTHORITY_2026-10-07.md`](00_NT_AUTHORITY_2026-10-07.md); карточка [`06_`](06_NT_PERICOPE_CARDS_SYNOPTICS_AND_JOHN.md) §06.13; трёхколонник [`09_`](09_NT_EXTENT_THREE_COLUMN_TABLE.md); HARD-карточка [`../12_HARD_TEXTS_EXTENT_CARDS.md`](../12_HARD_TEXTS_EXTENT_CARDS.md) §H11; карта вопросов [`../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md`](../04_LIMITED_VS_UNIVERSAL_QUESTION_MAP.md) §8; Кальвин/Оуэн [`../13_DORT_II_CALVIN_OWEN_EXTENT.md`](../13_DORT_II_CALVIN_OWEN_EXTENT.md) §2.5; очередь [`../05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md`](../05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md) O08–O13.
 
 ---
 
