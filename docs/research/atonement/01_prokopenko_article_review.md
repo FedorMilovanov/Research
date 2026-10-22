@@ -736,6 +736,31 @@ homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***» (`
 Ни Кальвин, ни Дорт такого сдвига не делают.
 
 
+## 16. «Purement conditionel»: всеобщее у Амиро — **без декрета** (раунд 59)
+
+**16.1. Слова Амиро есть.** «*Iesus-Christ est **Rédempteur de tout le monde***» (с. 213). Если читатель приносит эту
+фразу — она подлинная.
+
+**16.2. Но вопрос Амиро ставит точно — и отвечает не «да».** «*Ie ne nie pas qu'elle ne soit à tous salut **en sa
+nature**. Mais voicy la question que nous débattons : **Si Dieu en son conseil éternel a ordonné à tous indifféremment
+salut… d'vn décret absolu***» (сс. 213–214). И далее прямо: «*le mot de Predestination… emporte quelque chose
+**d'absolu & de déterminé***… **il ne peut proprement conuenir à ce qui est purement conditionel***» (с. 216).
+
+**16.3. То есть всеобщий порядок у Амиро — без декрета.** «*icy **nul n'est exclus pourueu qu'il croye***»; «*la
+condition de tous est égale*» (с. 216). Это **гипотетический** универсализм в собственном смысле.
+
+**16.4. Два образа, оба против статьи.** «*Dieu **tend la main** indifféremment à tous : mais il ne **prend par la
+main** pour amener à foy, sinon ceux qu'il a esleus***» (с. 214). И: для неверующего «*il n'y paroist plus que
+**l'authorité du commandement**, dont le mespris attire malédiction*» (с. 215).
+
+**16.5. Симметрия, которую надо назвать вслух.** Амиро берёт слова Кальвина и опускает оговорку (через две страницы);
+статья берёт слова Амиро и опускает оговорку (**на той же странице**).
+
+**16.6. Что это даёт рецензии.** Не «Амиро так не учил» и не «Амиро универсалист», а: **Амиро учил всеобщему без
+декрета; статья требует декрета.** Это противоположность, а не оттенок.
+
+**16.7. Оговорки.** A2/OCR; `EDITION_HOLD`; 34/74.
+
 ## 15. Решающий текст: три позиции, а не две (раунд 59)
 
 **15.1. Амиро сам говорит, что приобретение для отверженных условно.** «Eschantillon», с. 208:

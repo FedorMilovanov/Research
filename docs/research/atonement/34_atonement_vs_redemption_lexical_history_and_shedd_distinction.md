@@ -7194,6 +7194,110 @@ deuant des gens à qui il est impossible d'en manger*», с. 190) работае
 приобретение от применения. Латинский Кальвин по-прежнему не сверен; **п. 228** открыт.
 
 
+### 4.131. Q127 — «Purement conditionel»: у Амиро всеобщее **без декрета**. И статья делает с Амиро то, что Амиро делал с Кальвином (раунд 59)
+
+**0. Источник.** S156, «Eschantillon», **сс. 212–217**, чанок **42**. Класс **A2** (OCR). `EDITION_HOLD`.
+
+**1. Амиро говорит «Искупитель всего мира» — и это надо признать.**
+> «*Il semble à beaucoup que puis que **Iesus-Christ est Rédempteur de tout le monde**, & qu'il a commandé que son
+> Euangile fust communement presché à tous, que cela ne s'accorde point auec vne eslection speciale de certain nombre*»
+> (с. 213).
+
+**Перевод:** «Многим кажется, что поскольку **Иисус Христос есть Искупитель всего мира** и повелел, чтобы Его Евангелие
+проповедовалось всем сообща, это не согласуется с особым избранием определённого числа».
+
+⇒ **Формула «Rédempteur de tout le monde» у Амиро есть**, и статья, приводя её, **не выдумывает**. Это надо сказать
+прямо. Но здесь же, на той же странице, начинается оговорка.
+
+**2. Оговорка: вопрос не в слове, а в декрете.**
+> «*Pource que le nœud de la matière gist en cela que nous scachions comment la doctrine de l'Euangile offre salut à
+> tous. **Ie ne nie pas qu'elle ne soit à tous salut en sa nature.** Mais voicy la question que nous débattons : **Si Dieu
+> en son conseil éternel a ordonné à tous indifféremment salut en icelle (c'est à sçauoir d'vn décret absolu)***»
+> (сс. 213–214).
+
+**Перевод:** «Ибо узел дела в том, чтобы мы знали, как учение Евангелия предлагает спасение всем. **Я не отрицаю, что
+оно всем есть спасение по своей природе.** Но вот вопрос, который мы обсуждаем: **определил ли Бог в Своём вечном
+совете всем без различия спасение в нём — то есть абсолютным декретом**».
+
+**Что здесь происходит.** Амиро **сам** ставит вопрос именно так, как он важен для статьи — **есть ли декрет для
+всех** — и **не отвечает на него «да»**. Он говорит: спасение есть у всех **по природе Евангелия** (объективно), но
+**декрета** для всех он не утверждает. Статья же требует именно декрета: иначе нет «уплачено за всех», а без уплаты
+нет довода от несправедливости.
+
+**3. Формула, которая закрывает вопрос: «purement conditionel» не может быть предопределением.**
+> «*Et le mot de Predestination estant tel que selon le langage de l'Escriture il emporte quelque chose **d'absolu & de
+> déterminé, dont l'éuénement est infallible**, il ne peut proprement conuenir à ce qui est **purement conditionel***»
+> (с. 216).
+
+**Перевод:** «И слово «предопределение», будучи таковым, что по языку Писания оно означает **нечто абсолютное и
+определённое, чей исход безошибочен**, не может собственно относиться к тому, что **чисто условно**».
+
+**И перед этим — прямое описание того «первого» порядка:**
+> «*Car la réprobation emporte exclusion, & **icy nul n'est exclus pourueu qu'il croye**. Et l'eslection emporte
+> separation… & en cet égard **la condition de tous est égale : ils seront tous également sauuez s'ils se repentent tous
+> véritablement & s'ils croyent***» (с. 216).
+
+⇒ У Амиро всеобщий порядок — **«чисто условный»**, без избрания и без отвержения, «**никто не исключён, только бы
+веровал**», и «условие всех равно». **Это и есть гипотетический универсализм в собственном смысле: универсальное без
+декрета.**
+
+**4. И как это работает в самом призыве — два образа, оба не в пользу статьи.**
+> «*En l'Euangile **Dieu tend la main indifféremment à tous : mais il ne prend par la main pour amener à foy, sinon ceux
+> qu'il a esleus deuant la fondation du monde***» (с. 214).
+
+**Перевод:** «В Евангелии **Бог протягивает руку всем без различия, но берёт за руку, чтобы привести к вере, только тех,
+кого избрал прежде основания мира**».
+
+> «*…cette bonté que Dieu tesmoigne indifféremment aux hommes en leur faisant proposer la doctrine de salut, deuenant à
+> la pluspart inutile à cause de leur incrédulité, **il n'y paroist plus que l'authorité du commandement, dont le mespris
+> attire malédiction sur leurs testes***» (с. 215).
+
+**Перевод:** «…эта благость, которую Бог без различия свидетельствует людям, предлагая им учение спасения, **становясь
+для большинства бесполезной из-за их неверия, — от неё не остаётся ничего, кроме власти заповеди, презрение к которой
+навлекает проклятие на их головы**».
+
+⇒ Для неверующего от всеобщего предложения **не остаётся ничего, кроме заповеди и проклятия**. Не «уплачено, но не
+зачтено»; **не остаётся ничего**.
+
+**5. Различение «Законодатель / Отец» — то же, что «voluntas signi / beneplaciti».**
+> «*…en ce qu'en mandant tous hommes par la prédication extérieure, **il fait office de Legislateur**, & ainsi appelle
+> tous hommes à vie : & ce pendant **il se monstre Père seulement envers ses esleus**, lesquels il retire & attire par son
+> Esprit*» (сс. 214–215).
+
+⇒ Призыв всех — **должность Законодателя**; отцовство и действенное привлечение — **только для избранных**. У Амиро,
+как и у Кальвина, **два регистра**, и **ни один из них не является всеобщим приобретением**.
+
+**6. Симметрия, которую надо назвать: статья делает с Амиро то, что Амиро делал с Кальвином.**
+
+| | Что берётся | Что опускается |
+|---|---|---|
+| **Амиро о Кальвине** | «*il est mort vniuersellement pour tous*» | «*à la condition qu'ils croyent*» (§4.130) |
+| **Статья об Амиро** | «*Rédempteur de tout le monde*» (с. 213) | «*purement conditionel*… без декрета» (с. 216) |
+
+**Формула:**
+> **Та же операция, только быстрее.** Амиро опускал оговорку Кальвина через **две страницы**; статья опускает оговорку
+> Амиро **на той же странице**.
+
+**7. Что теперь можно сказать окончательно — свод по §§4.128–4.131.**
+
+| Утверждение статьи | Что в источниках |
+|---|---|
+| «Христос приобрёл для всех **безусловно**» | **нет ни у кого**: Кальвин — «предложено всем»; Амиро — «под условием веры»; Дорт — «одно, *aeque late*» |
+| «Приобретение для всех, применение к избранным» | **двухступенчатая схема есть у Амиро, но с условием**; у Кальвина её нет; Дорт отверг |
+| «Спор не о том, за кого умер Христос» | **слова Кальвина** (в передаче Амиро, с. 211) — **верно** |
+| «Дорт исказил Кальвина» | **нет**: Дорт отверг и условное приобретение (Фрисландия, §4.120), и различение *impetratio/applicatio* — то есть **обе половины** схемы, причём **до** Амиро |
+| «Разделение atonement/redemption — терминологическое» | **нет**: у всех трёх сторон спор идёт **внутри одного слова**, о **модальности декрета** |
+
+**8. Ответ на исходный вопрос — в одной фразе.**
+> **Разделение «atonement / redemption» у Прокопенко не воспроизводит ни Кальвина, ни Дорта, ни Амиро: оно берёт у
+> Амиро слово, у Кальвина — всеобщность предложения, а у Дорта — необходимость применения, и склеивает из этого
+> позицию, которой не держал никто, — всеобщее безусловное приобретение при частном применении.**
+
+**9. Оговорки.** A2/OCR; `EDITION_HOLD`; чанок 42 = сс. 212–217; прочитано **34 из 74** (~46 %). **Не утверждать**,
+что Амиро — универсалист (он сам ограничивает: «*purement conditionel*», «*rien que la authorité du commandement*»).
+**Не утверждать**, что «Rédempteur de tout le monde» — не его слова: **его**, с. 213; но смысл задан с. 216.
+
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -7731,6 +7835,8 @@ deuant des gens à qui il est impossible d'en manger*», с. 190) работае
 | 1658 *(раунд 59, часть 4; «Eschantillon», сс. 196–202; чанки 38–39)* | **Условно и приобретение.** Амиро: «*enuoyer son Fils en la terre **pour les racheter s'ils ne reiettent point cette grâce par incrédulité***» (с. 196); Кальвин на Лк. 14 — «*les meschans s'esmeuvent **plus furieusement** contre Dieu **d'autant qu'il les solicite de plus près** de leur salut*» (с. 198); «*s'il y a quelque différence entre eux, **elle vient de Dieu & non pas d'eux***» (с. 201). ⇒ сомюрская схема **не** «безусловное приобретение для всех»; статья снимает условие, которого Сомюр не снимал (§4.129). |
 
 | 1658 *(раунд 59, часть 5; «Eschantillon», сс. 207–212; чанок 41)* | **РЕШАЮЩИЙ ТЕКСТ: два смысла «умер за».** Амиро: «*il est mort **vniuersellement pour tous hommes, pourueu qu'ils croyent en luy***»; «*quant à ceux là, **il n'est mort pour eux sinon à la condition qu'ils croyent***»; «*pour ceux-cy… **absolument** mort pour eux*» (с. 208). Плюс: «*La dispute n'est point… si Iesus-Christ est venu pour purger les péchez de tout le monde: **car cela est sans contredit***», но «*nous ne sommes pas sur cette question… **quelle est la vertu de Christ**… **mais à qui c'est qu'il se donne***» (с. 211); «*la generalité des promesses seule… **ne fait point le salut commun à tous***» (там же). ⇒ **три позиции, а не две:** Дорт (одно приобретение, *aeque late*), Амиро (**два**: условное за всех + безусловное за избранных), статья (**одно безусловное** за всех). **Статья не дортская и не амиральдианская** (§4.130). |
+
+| 1658 *(раунд 59, часть 6; «Eschantillon», сс. 212–217; чанок 42)* | **ВСЕОБЩЕЕ У АМИРО — БЕЗ ДЕКРЕТА.** «*Iesus-Christ est **Rédempteur de tout le monde***» (с. 213) — **его слова**; но: «*Ie ne nie pas qu'elle ne soit à tous salut **en sa nature**. Mais voicy la question… **Si Dieu en son conseil éternel a ordonné à tous indifféremment salut… d'vn décret absolu***» (сс. 213–214). И: «*le mot de Predestination… emporte quelque chose **d'absolu & de déterminé***… **il ne peut proprement conuenir à ce qui est purement conditionel***» (с. 216); «*icy **nul n'est exclus pourueu qu'il croye***»; «*la condition de tous est égale*» (там же). Плюс: «*Dieu **tend la main** indifféremment à tous: mais il ne **prend par la main**… sinon ceux qu'il a esleus*» (с. 214); «*il n'y paroist plus que **l'authorité du commandement**, dont le mespris attire malédiction*» (с. 215); «*il fait office de **Legislateur**… **Père seulement envers ses esleus***» (сс. 214–215). ⇒ **симметрия:** статья с Амиро делает то же, что Амиро с Кальвином — берёт слова, опускает оговорку, только **на той же странице** (§4.131). |
 
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
@@ -8356,6 +8462,14 @@ deuant des gens à qui il est impossible d'en manger*», с. 190) работае
   **ТРИ позиции:** Дорт (одно, *aeque late*), Амиро (два: условное + безусловное), статья (одно безусловное за всех).
   **Статья — не Дорт и не Амиро**; она **снимает условие**, без которого её довод от справедливости не работает.
   **Прочитано 33/74 (~45 %).**
+
+- **Раунд 59, часть 6: «purement conditionel» — всеобщее у Амиро БЕЗ ДЕКРЕТА (сс. 212–217).** Амиро говорит
+  «*Rédempteur de tout le monde*» (с. 213), но ставит вопрос точно: «*Si Dieu en son conseil éternel a ordonné à tous
+  indifféremment salut… **d'vn décret absolu***» — и **не отвечает «да»**. И прямо: «*le mot de Predestination… emporte
+  quelque chose **d'absolu & de déterminé***… **il ne peut proprement conuenir à ce qui est purement conditionel***»
+  (с. 216); «*nul n'est exclus pourueu qu'il croye*». Плюс «*Dieu **tend la main** à tous, mais ne **prend par la main**
+  que ses esleus*» (с. 214) и «*il n'y paroist plus que l'authorité du commandement*» (с. 215). ⇒ **симметрия:** статья с
+  Амиро делает то, что Амиро с Кальвином, — берёт слова, опускает оговорку. **34/74 (~46 %).**
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**

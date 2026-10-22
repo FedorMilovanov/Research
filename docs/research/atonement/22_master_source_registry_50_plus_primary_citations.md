@@ -895,6 +895,17 @@
       tous***» (там же). ⇒ **Дорт:** одно приобретение, *aeque late*. **Амиро:** два — условное за всех + безусловное
       за избранных. **Статья:** одно безусловное за всех. **Статья — не Дорт и не Амиро.** Условная плата не создаёт
       права ⇒ довод статьи от справедливости требует снятия условия. **33/74 (~45 %).**
+    - 42dp. *Дополнение 2026-10-19 (раунд 59, часть 6; `34_` §4.131, **S156**, «Eschantillon», сс. 212–217; чанок 42;
+      `01_` §16; `06_` §25; `synthesis/03_` §40; класс **A2**, OCR; `EDITION_HOLD`):* **«PUREMENT CONDITIONEL» — ВСЕОБЩЕЕ
+      БЕЗ ДЕКРЕТА.** Амиро: «*Iesus-Christ est **Rédempteur de tout le monde***» (с. 213) — **его слова**; но «*Ie ne nie
+      pas qu'elle ne soit à tous salut **en sa nature**. Mais… **Si Dieu en son conseil éternel a ordonné à tous
+      indifféremment salut… d'vn décret absolu***» (сс. 213–214); «*le mot de Predestination… emporte quelque chose
+      **d'absolu & de déterminé***… **il ne peut proprement conuenir à ce qui est purement conditionel***» (с. 216); «*icy
+      **nul n'est exclus pourueu qu'il croye***»; «*la condition de tous est égale*». Образы: «*Dieu **tend la main** à
+      tous: mais il ne **prend par la main** que ses esleus*» (с. 214); «*il n'y paroist plus que **l'authorité du
+      commandement***» (с. 215); «*office de **Legislateur***» / «*Père seulement envers ses esleus*» (сс. 214–215). ⇒
+      **статья требует декрета для всех — Амиро его прямо отрицает.** Симметрия: статья с Амиро делает то же, что
+      Амиро с Кальвином, только **на той же странице**. **34/74 (~46 %).**
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

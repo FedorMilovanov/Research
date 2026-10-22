@@ -632,6 +632,21 @@ mort pour eux*».
 **Запреты.** Не называть статью «амиральдианской» без оговорки «по имени». Не утверждать, что Амиро учил
 **безусловному** всеобщему приобретению. Не утверждать, что Амиро — универсалист (с. 211 ограничивает всеобщность).
 
+## C-19. Три позиции: декрет для всех или нет (раунд 59)
+
+**Статус: `RESOLVED-BY-TEXT`.**
+
+**Текст.** Амиро, «Eschantillon», сс. 213–214: «*Ie ne nie pas qu'elle ne soit à tous salut **en sa nature**. Mais voicy
+la question… **Si Dieu en son conseil éternel a ordonné à tous indifféremment salut… d'vn décret absolu***». С. 216:
+«*le mot de Predestination… emporte quelque chose **d'absolu & de déterminé***… **il ne peut proprement conuenir à ce qui
+est purement conditionel***».
+
+**Решение.** Всеобщее у Амиро — **без декрета** («purement conditionel»). Статья требует **декрета** (иначе нет довода
+от несправедливости). ⇒ **это не оттенок, а противоположность**.
+
+**Запреты.** Не говорить «Амиро учил всеобщему приобретению». Не говорить «Амиро универсалист»: он сам ограничивает
+(с. 215: «*rien que l'authorité du commandement*»). Не цитировать «Rédempteur de tout le monde» (с. 213) **без** с. 216.
+
 ## Итоговая сводка
 
 
