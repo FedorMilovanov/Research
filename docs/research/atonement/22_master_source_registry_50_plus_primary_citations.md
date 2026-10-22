@@ -735,6 +735,25 @@
       **(6) Рим. 9:15 — без возражений:** «*n'est debteur à homme quelconque***; «***impossible d'en trouuer cause
       plus haute que sa volonté***» (дортский язык; второе подтверждение §4.108 п. 7). **(7) Гипотеза усилена:**
       чанок 19 (сс. 56–60) — вероятно, листы «Eschantillon» не на месте (п. 228). `EDITION_HOLD`; 19/74 (~26 %).
+    - 42dd. *Дополнение 2026-10-19 (раунд 56, часть 5; `34_` §4.116, **S156**; `03_` §32; `synthesis/03_` §33):
+      **ГЛАВНОЕ МЕСТО «Eschantillon», сс. 197–212 (чанки 39, 41): «Calvin parle de la mort de Christ en deux
+      diuerses manières».** **(0) ПОПРАВКА ЛОКАТОРА:** чанки 39/40/41 = сс. **197–202 / 203–207 / 208–212** (в 42dc
+      было «103–107» — OCR); «Eschantillon» — **200+ страниц**, начинается раньше (ок. чанков 30–33); гипотеза о
+      чанке 19 **подтверждается по пагинации**. **(1) Проект объявлен истолкованием:** «*pour **difficile** que
+      fust la reconciliation des sentimens de Caluin*»; способ — «*en accordant ses **hypotheses**, donner aux
+      **manieres de parler**… une interpretation qui **raisonnablement** leur conuienne*» (сс. 200–202).
+      **(2) Инфралапсарианская рамка:** предмет предопределения — «*l'homme **tombé** en malediction*»; в целостности
+      «*sans **aucune ombre** de misericorde*»; наказать был волен «*non plus qu'enuers les **Anges decheus***».
+      **(3) Две «manières»:** «*mort **vniuersellement pour tous hommes, pourueu qu'ils croyent***» / «*pour ceux-là
+      seulement… **absolument***», ибо «*le decret par lequel il leur est donné de croire **enclost necessairement**
+      celuy du salut*». **(4) Всеобщий член УСЛОВЕН:** «*quant à ceux-là, il n'est mort pour eux **sinon à la
+      condition qu'ils croyent***» ⇒ `Acta` (S145 «non reconciliabilitatem… sed reconciliationem») **бьёт по этой
+      конструкции**; **уточнение к §4.114 п. 2** (п. 230). **(5) Предмет спора:** «*la dispute n'est point… si
+      Christ est venu purger les pechez de tout le monde: **car cela est sans contredit***»; «*nous ne sommes pas
+      sur… **quelle est la vertu de Christ**… mais **à qui c'est qu'il se donne***». **(6) Граница:** «*nul ne peut
+      estre participant de Christ, sinon celuy qui a esté **adopté***». **(7) Невозможность нравственная:** притча о
+      пире — «*n'est pas vne impossibilité semblable à celle d'vn homme perclus des pieds*»; дилемма «*franc-arbitre /
+      légitime excuse*». `EDITION_HOLD`; **21/74** (~28 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

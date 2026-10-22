@@ -1173,3 +1173,52 @@ achoppement aux autres & en empeschement à la predication de l'Euangile***» (�
 
 **31.6. Оговорки.** `EDITION_HOLD`; 19 чанков из 74; `LOCATOR_PARTIAL` (две пагинации); п. 211 — **закрыт**;
 гипотеза о чанке 19 усилена, **не утверждается**.
+
+
+## 32. Дополнение (2026-10-19; раунд 56; кросс-досье `34_` §4.116, **S156**): главное место «Eschantillon» — «два
+способа говорить о смерти Христа» и `Acta` 1619
+
+**32.1. Что сказано — дословно (сс. 207–208).**
+> «*Et de cette diuerse maniere de considerer la misericorde de Dieu, resultent necessairement **deux choses**… **il
+> parle de la mort de Christ en deux diuerses manières***».
+> «*…**il dit… qu'il est mort vniuersellement pour tous hommes, pourueu qu'ils croyent en luy***».
+> «*…**il dit qu'il est mort pour ceux-là, voire pour ceux-là seulement**. Pource que **quant à ceux-là, il n'est mort
+> pour eux sinon à la condition qu'ils croyent**. Pour ceux-cy, d'autant qu'**il est absolument ordonné qu'ils
+> croiront**, **il peut estre absolument mort pour eux***».
+
+**32.2. Различение статьи — здесь, но в другой грамматике.**
+| | Статья | Амиро |
+|---|---|---|
+| что различено | **две стороны дела** | **два способа говорить** об одном деле |
+| всеобщий член | совершённое приобретение | «*pourueu qu'ils croyent*» — **условие** |
+| частный член | применение | «*absolument*», по декрету о вере |
+**Вывод:** статья **называет** «искуплением» то, что у Амиро есть **условное предложение**. Это не та же мысль
+другими словами; это **другая мысль**.
+
+**32.3. И вот почему это важно для спора с Дортом.** Формула `Acta`: «*non **reconciliabilitatem**… sed
+**reconciliationem***» (S145). У Амиро всеобщий член даёт неверующему **именно условное прощение** —
+«*sinon à la condition qu'ils croyent*». **Значит, `Acta` бьёт по конструкции Амиро по существу**, а не по
+твёрдости решения.
+**Оговорка, которую я внёс в §4.114 п. 2, снимается:** «*resolution ferme & immuable*» защищает от обвинения в
+**velleitas**, но **не** от обвинения в **reconciliabilitas**. Проверить по `Acta` — **п. 230**.
+
+**32.4. И вот место, которое переворачивает обычную постановку (с. 211).**
+> «*La dispute **n'est point** de sçauoir si Iesus-Christ est venu **pour purger les pechez de tout le monde**: car
+> **cela est sans contredit**… **nous ne sommes pas sur cette question**, à sçauoir **quelle est la vertu de Christ**,
+> quel bien il nous a apporté, ou que c'est qu'il a **fait en soy**: mais **à qui c'est qu'il se donne***».
+**Три следствия:** (1) «за всех» у Амиро **не спорно**; (2) предмет спора — **подаяние**, а не объём; (3) значит,
+статья, спорящая об объёме, **промахивается мимо предмета** — и промахивается **в обе стороны**: она и не
+защищает Дорта, и не повторяет Амиро.
+
+**32.5. Граница, которую Амиро держит сам.** «*nul ne peut estre participant de Christ, sinon celuy qui a esté
+**adopté, & choisi de Dieu***» (сс. 211–212). **Причастие — только избранным, и это у него без оговорок.**
+**Запрет:** не приписывать Амиро «причастие всем».
+
+**32.6. И одно методологическое признание, которое надо ценить.** Амиро **не скрывает**, что согласование
+трудно: «*pour **difficile** que fust la reconciliation des sentimens de Caluin en ce point*» (с. 200). Его способ —
+«*donner aux **manieres de parler**… une interpretation qui **raisonnablement** leur conuienne*» (сс. 201–202).
+**Формулировать в серии так:** Амиро **не выдаёт** своё чтение за прямое учение Кальвина; он **истолковывает
+выражения**, и сам называет это истолкованием.
+
+**32.7. Оговорки.** `EDITION_HOLD`; 21 чанк из 74; цитаты Кальвина **не сверены** (**п. 232**); `LOCATOR_PARTIAL`
+(пагинация «Eschantillon» — сс. 197–212 прочитаны).
