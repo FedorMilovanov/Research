@@ -688,6 +688,22 @@
       Сомюру**; схема Амиро **интеллектуалистическая** («*par l'entremise de nos entendemens*»). `EDITION_HOLD`;
       16 чанков из 74 (~22 %). **Гипотеза (не утверждение):** чанок 19 может быть фрагментом «Eschantillon»
       (изложение Кальвина) — проверить (п. 217).
+    - 42da. *Дополнение 2026-10-19 (раунд 55, продолжение; `34_` §4.113, **S156**; `03_` §29;
+      `synthesis/03_` §30):* **Амиро, гл. XIII (чанок 27, сс. 137–142) — терминологическое различение и правило
+      истолкования.** **(1) Различение его словами:** «*il faut soigneusement distinguer **la volonté de sauver les
+      hommes**, laquelle quelques uns appellent, **contre l'usage de l'Escriture**, la **predestination au salut**,
+      d'auec **l'election ou predestination à la foy**, qui est le moyen & la condition*»; «*celle-cy est
+      **absolue**… & ne dépend d'aucune condition; celle-là ne peut avoir lieu quant à son effect que par la
+      presupposition de cette condition préalable*». **(2) Различение — в ОПРЕДЕЛЕНИЯХ, не в сторонах дела
+      Христова** ⇒ статья, помещающая его в дело Христово, делает **позднейший перенос**. **(3) Предупреждение
+      источника:** называть всеобщую волю «предопределением ко спасению» — «*contre l'usage de l'Escriture*».
+      **(4) Правило истолкования:** «*diligemment distinguer entre **les manières de parler qui sont nées de la
+      consideration des évenemens seulement**, & **celles qui viennent de la consideration des conseils mesmes***»;
+      при том что Писание «*nous enseigne si disertement que **Christ est mort universellement pour tout le
+      monde***», а иногда говорит, что Он умер «*pour le petit nombre des esleus*». **(5) Порядок обратный
+      дортскому:** у Амиро всеобщие тексты = определения, частные = исходы; у Дорта частные = намерение, всеобщие
+      = предложение. **(6) Против «безопасности»:** «*Encore que **ie croye**, ie ne seray pas esleu à croire
+      pourtant*». `EDITION_HOLD`; 17 чанков из 74 (~23 %). П. 211: «Eschantillon» — в конце тома (чанки 31–40).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
