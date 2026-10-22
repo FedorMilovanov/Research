@@ -583,6 +583,24 @@
       sa puissance***». **Поправка:** не слышавшие осуждаются — «*pource qu'elle aura **méprisé la voix des
       Cieux***» (с. 85) ⇒ вторая проповедь **судит, а не спасает**. **П. 208 закрыт в существе.** `LOCATOR_PARTIAL`
       на номера глав (гл. IX с с. 87). `EDITION_HOLD`; 6 чанков из 74 (~8 %).
+    - 42cu. *Дополнение 2026-10-19 (раунд 52; `34_` §4.107, **S156**; `03_` §23; `synthesis/03_` §24):*
+      **Амиро, чанки 12 и 19 — бесконечная цена, «снятое препятствие», reductio против «степеней действенности».**
+      **(1) Удовлетворение:** Христос — «*nostre **pleige**»; «*satisfist par sa **valeur infinie** à la justice
+      divine*». **Бесконечная цена у Амиро ЕСТЬ** (поправка к §4.105 п. 2). **(2) Но функция иная:** «***Cet
+      obstacle levé, il faisoit la voye à cette miséricorde que la justice tenoit resserrée***» ⇒ третье и самое
+      ясное место схемы, отвергнутой гелдерландским «*non reconciliabilitatem… sed reconciliationem*» (S145).
+      **(3) Избрание:** Иаков и Исав «***extrêmement égaux de condition naturelle***»; «*Sera-ce en la foy même?
+      **Nenny***»; «*Dieu n'a pas ordonné de la donner à tout le monde*»; «*la foy des **esleus** de Dieu*».
+      **(4) Reductio:** против «*subtilement distinguer entre les **degrés de l'efficace***» — «*de recourir icy à
+      la liberté de la volonté, c'est **chose inutile***»; «*la volonté de tous… **également serue de la corruption
+      de péché**, il est **de tout point inimaginable** comment elle ait esté également prevenuë en quelques uns, &
+      que neantmoins les événemens en ayent esté dissemblables*»; три альтернативы ⇒ «*n'en pouvons trouver d'autre
+      que celle de la **libre volonté de Dieu***». **Запрет:** защищать всеобщую достаточность через «степени» и
+      «употребление» со ссылкой на Сомюра **нельзя** — Сомюр это отверг. **(5) Против карикатуры:** «*Dieu… n'a
+      pas fait ce choix des hommes **à tastons**, & jetté sur eux **le sort à l'aventure**… il y a procédé avec son
+      **ordinaire sagesse***». **`LOCATOR_PARTIAL`** на пагинацию (чанк 19: сс. 56–60; вероятно «Eschantillon» со
+      своей пагинацией). **П. 202:** формулы «égale et universelle» в чанках 12–19 нет; **отсутствие не
+      утверждается**. `EDITION_HOLD`; 9 чанков из 74 (~12 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
