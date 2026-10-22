@@ -1494,7 +1494,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 44,
+        "корпус": 45,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -2118,6 +2118,19 @@
         "why": "править орфографию в чужом лане — то же, что молча поправить чужой счётчик: я это уже запретила сегодня на себе",
         "appliedHow": "PR #218 (squash 72d937b); правка по доминирующему написанию самого корпуса",
         "appliedAt": "2026-10-22T22:05Z"
+      },
+      {
+        "where": "docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md (строки 309 и 1433)",
+        "defect": "латинская буква внутри кириллического слова и кириллическая внутри латинского: «томa» (вместо «тома»), «леaf» (вместо термина leaf в скобке «leaf = p + 10»)",
+        "resolution": "исправлено 2026-10-23 по разрешению владельца от 22.10 на правку чужих ланов: «томa» -> «тома» (кириллическая «а»), «леaf» -> «leaf» (термин остаётся латинским целиком, склейка снимается). Смысл и посчёт листов не затронуты: уточнение «лист = страница + 10» было авторским, изменено только написание. Контроль: обход всего docs/research/atonement по форме значения — 0 смешанных употреблений вне цитат",
+        "applied": true,
+        "checkedAgainstMain20261022": false,
+        "measuredAt": "2026-10-22T21:52:54Z",
+        "method": "python3 -обход docs/research/atonement/*.md с вырезанием цитат (тот же скан, что для правила 19), а не именной фильтр по файлам: имена я помнила неверно (файл 34_ называется …_lexical_history_and_shedd_distinction, а не …_eternal_generation…), и на именном фильтре я бы объявила ноль там, где не искала",
+        "recheckCommand": "python3 -c \"import re,glob;q=re.compile(r'«[^»]*»|`[^`]*`|\\\"[^\\\"]*\\\"');p=re.compile(r'[^\\\\W\\\\d_]+');print(sum(1 for f in glob.glob('docs/research/atonement/*.md') for l in open(f,encoding='utf-8') for w in p.findall(q.sub(' ',l)) if re.search(r'[А-Яа-яЁё]',w) and re.search(r'[A-Za-z]',w)))\"",
+        "why": "найдено не именной правкой, а обходом по форме значения: соседний лан вне периметра правила 19, но именно там остались два последних известных смешанных написания всего репозитория; держать их «заметкой» дальше означало бы знать о дефекте и не иметь способа проверить, что его больше нет",
+        "appliedAt": "2026-10-22T21:53:18Z",
+        "appliedHow": "правка на месте в PR #225 (2 написания, смысл и посчёт листов не затронуты); контроль — повторный обход docs/research/atonement/*.md: 0 смешанных употреблений вне цитат"
       }
     ],
     "mirrorLag": {
@@ -2136,19 +2149,17 @@
       "reading": "подтверждено временем съёма зеркал (2026-10-09T00:09Z); байтовые величины несопоставимы по определению — см. driveMirrorVerification20261022.unitsNotComparable"
     },
     "publicationStateUnchanged": true,
-    "correctionsPendingNote": "записей 6, все три — чужие файлы (13_, 14_, 05_ R01/R05); ни одна не противоречит раунду 63: 05_SOURCE_REGISTRY и 13_/14_ им не изменены",
+    "correctionsPendingNote": "записей 9: применено 6, открыто 3 (снимается командой correctionsPendingCount.recheckCommand, а не памятью). Чужие файлы среди применённых: 13_, 14_, 05_ R01/R05 и 34_ смежного лана (2026-10-23); ни одна не противоречит раунду 63: 05_SOURCE_REGISTRY и 13_/14_ им не изменены",
     "measuredDay": "2026-10-16",
     "precisionNote": "день аудита; точные минуты по всему фронту не снимались, поэтому здесь стоит день. Точные времена есть у конкретных съёмок: hubFolderInventory.recheck20261018.at, recheck20261022.at, mirrorLag.measuredAt",
     "recheckCommand": "для каждой папки: google_drive__list_files q=\"'<folderId>' in parents and trashed = false\"; для файла: get_file (size, modifiedTime)",
     "correctionsPendingCount": {
-      "total": 8,
-      "applied": 5,
+      "total": 9,
+      "applied": 6,
       "open": 3,
-      "measuredAt": "2026-10-22T23:35Z",
+      "measuredAt": "2026-10-22T21:53:18Z",
       "method": "python3 -c \"import json;d=json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));c=d['driveSourceAudit20261016']['correctionsPending'];print(len(c),sum(1 for x in c if x['applied']),sum(1 for x in c if not x['applied']))\"",
-      "why": "число открытых записей — единственный способ понять, закрыт ли периметр; гейт сверяет этот словарь с фактическим составом (правило 9)",
-      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
-      "note": "переснято после закрытия [3] (файл реально в дереве); правило 12"
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     },
     "correctionsPendingSchema": {
       "required": [
