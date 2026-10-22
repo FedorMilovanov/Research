@@ -1362,14 +1362,15 @@
           "verdict": "лан вошёл через merge-commit — именно ту дверь, которую называл предполёт; реестр main не тронут (blob 8654c98e, 23 ключа, JSON валиден)",
           "thenForMyPr": "сразу после мержа дерево-против-дерева main↔моя ветка давало 36 файлов и −18 370 строк (снятие досье 34_ на 10 206, откат леджера 802→125, исчезновение synthesis/06); причина — add/add из несвязанной истории, лечится мержем main в мою ветку по правилу «оба берега», что и сделано в 81b725b (8 файлов / +1 466 / −4, удалений 0)",
           "numbersNowHistorical": "все ряды выше (45/45/47/47/48 файлов, 2205…2797, 14/14/16/16/17 конфликтов) оставлены как история съёмок: переснимать их больше не нужно, объект предполёта закрыт"
-        }
+        },
+        "environmentErratum20261022": "ряды съёмок (45/45/47/47/48 файлов, 14/14/16/16/17, 20→21) получены в shallow-клоне и описывают НЕ слияния, а расхождение деревьев; настоящий merge-tree тех же концов даёт 0 конфликтов — см. branchTopologyAudit20261022.corrections; ряды оставлены как история измерений, новые решения по ним не принимаются"
       },
       "myPr216MergeReadiness": {
         "proofCommand": "git merge-base --is-ancestor origin/main HEAD (exit 0 на 81b725b при origin/main eecb25d, замер 2026-10-22T10:07Z)",
         "consequence": "после мержа main в мою ветку (81b725b) условие побайтового равенства восстановлено: дерево squash-мержа #216 равно дереву head PR, значит зелёный CI на head есть проверка main после мержа",
         "ifMainMoves": "самоликвидирующееся предусловие уже срабатывало один раз (мерж #217) и было исполнено этим мержем; при следующем сдвиге main — та же процедура: merge -s ours + содержимое main, three-way для общих файлов, перепроверка гейтами",
         "measuredAfterMerge": "Atonement corpus integrity pass 7 s + validate pass 29 s на 81b725b; локально те же три валидатора PASS на мерженном дереве",
-        "shallowCloneCaveat": "клон песочницы shallow (git rev-parse --is-shallow-repository = true, .git/shallow) ⇒ git не находит merge-base и объявляет «unrelated histories»: обычный merge запрещён, используется -s ours с ручной расстановкой содержимого"
+        "shallowCloneCaveat": "клон был shallow — лечится git fetch --unshallow origin (сделано 22.10, 286 -> 2 216 коммитов, .git/shallow снят); после этого обычный merge/merge-base работают штатно, -s ours больше не нужен"
       }
     }
   ],
@@ -1696,5 +1697,552 @@
     },
     "publicationStateUnchanged": true,
     "correctionsPendingNote": "записей 6, все три — чужие файлы (13_, 14_, 05_ R01/R05); ни одна не противоречит раунду 63: 05_SOURCE_REGISTRY и 13_/14_ им не изменены"
+  },
+  "branchTopologyAudit20261022": {
+    "at": "2026-10-22T10:21Z",
+    "measuredIn": "клон после git fetch --unshallow (286 -> 2 216 коммитов, .git/shallow снят)",
+    "method": [
+      "git for-each-ref refs/remotes/origin; git merge-base --is-ancestor tip origin/main (в main или нет)",
+      "git diff origin/main...B — только три точки: PR-стиль от реальной базы; git rev-list --count для ahead/behind",
+      "git merge-tree --write-tree origin/main B — характер конфликтов (add/add vs content), без записи в репозиторий",
+      "blob-в-blob: git rev-parse origin/main:<путь> == <ветка>:<путь> для каждого файла дельты",
+      "корни: git rev-list --all --max-parents=0"
+    ],
+    "columns": [
+      "branch",
+      "tip",
+      "date",
+      "inMain",
+      "base",
+      "ahead",
+      "behind",
+      "files",
+      "lineAdd",
+      "lineDel",
+      "conflicts",
+      "addAdd",
+      "content",
+      "disposition"
+    ],
+    "rows": [
+      [
+        "archive/legacy-diverged-heads-20260801",
+        "43f2234",
+        "2026-08-01",
+        "нет",
+        "f50b21ad",
+        50,
+        1502,
+        6,
+        532,
+        0,
+        0,
+        0,
+        0,
+        "без PR; 6 ф., конфликтов 0 ⇒ PR возможен"
+      ],
+      [
+        "lane/heart-x3-owner-closure-20260804",
+        "213d985",
+        "2026-08-04",
+        "нет",
+        "54cd176d",
+        6,
+        1349,
+        6,
+        641,
+        49,
+        6,
+        3,
+        3,
+        "конфликтует 6 ⇒ решение владельца"
+      ],
+      [
+        "lane/heart-x2-owner-closure-successor-20260804",
+        "d3ef944",
+        "2026-08-04",
+        "нет",
+        "4a3f3966",
+        6,
+        1350,
+        5,
+        566,
+        33,
+        3,
+        1,
+        2,
+        "конфликтует 3 ⇒ решение владельца"
+      ],
+      [
+        "lane/heart-part4-reader-assembly-20260804",
+        "0462c57",
+        "2026-08-05",
+        "нет",
+        "7bf8c2a9",
+        10,
+        1317,
+        5,
+        714,
+        1,
+        3,
+        2,
+        1,
+        "конфликтует 3 ⇒ решение владельца"
+      ],
+      [
+        "agent/le-canon-sucre-research-wave1-20260809",
+        "037f6a9",
+        "2026-08-10",
+        "нет",
+        "217fa015",
+        120,
+        1284,
+        24,
+        4168,
+        0,
+        21,
+        21,
+        0,
+        "конфликтует 21 ⇒ решение владельца"
+      ],
+      [
+        "arena/019fed70-research",
+        "0c0efd7",
+        "2026-08-10",
+        "нет",
+        "093cbfa5",
+        206,
+        1081,
+        37,
+        10183,
+        1277,
+        0,
+        0,
+        0,
+        "без PR; 37 ф., конфликтов 0 ⇒ PR возможен"
+      ],
+      [
+        "agent/1cor11-citation-quarantine-20260810",
+        "3f82168",
+        "2026-08-14",
+        "нет",
+        "093cbfa5",
+        290,
+        1081,
+        40,
+        13380,
+        1354,
+        0,
+        0,
+        0,
+        "открытый PR #182, мержится без конфликтов"
+      ],
+      [
+        "research/covenant-children-comparative-20260908",
+        "28970a7",
+        "2026-09-08",
+        "нет",
+        "b5785be7",
+        409,
+        981,
+        323,
+        145071,
+        0,
+        2,
+        2,
+        0,
+        "321 из 323 уже в main ⇒ остаток 2 ф., решить"
+      ],
+      [
+        "research/teen-double-life-digital-sin-20260907",
+        "68dd6a0",
+        "2026-09-09",
+        "нет",
+        "b5785be7",
+        346,
+        981,
+        299,
+        138204,
+        0,
+        1,
+        1,
+        0,
+        "298 из 299 уже в main ⇒ остаток 1 ф., решить"
+      ],
+      [
+        "lawson-final-import-20260928",
+        "f30ff8b",
+        "2026-09-28",
+        "нет",
+        "b7cd8a8b",
+        5,
+        712,
+        27,
+        4812,
+        115,
+        5,
+        3,
+        2,
+        "конфликтует 5 ⇒ решение владельца"
+      ],
+      [
+        "arena/01a0ea6e-research",
+        "4768115",
+        "2026-09-29",
+        "нет",
+        "8c21307e",
+        29,
+        694,
+        6,
+        1002,
+        1,
+        1,
+        0,
+        1,
+        "конфликтует 1 ⇒ решение владельца"
+      ],
+      [
+        "research/apostasy-hebrews-judas-master",
+        "f02bc63",
+        "2026-09-29",
+        "нет",
+        "5da3c1ed",
+        3,
+        652,
+        3,
+        1152,
+        0,
+        0,
+        0,
+        0,
+        "всё содержимое уже в main blob-в-blob ⇒ кандидат на удаление"
+      ],
+      [
+        "research/apostasy-biblical-theology",
+        "375f7a6",
+        "2026-09-29",
+        "нет",
+        "37b64d9c",
+        5,
+        640,
+        5,
+        1700,
+        0,
+        0,
+        0,
+        0,
+        "всё содержимое уже в main blob-в-blob ⇒ кандидат на удаление"
+      ],
+      [
+        "arena/01a0ee73-research",
+        "34152fe",
+        "2026-09-29",
+        "нет",
+        "8c21307e",
+        51,
+        694,
+        7,
+        1537,
+        53,
+        1,
+        0,
+        1,
+        "конфликтует 1 ⇒ решение владельца"
+      ],
+      [
+        "research/apostasy-whole-bible",
+        "06c4549",
+        "2026-09-30",
+        "нет",
+        "c4a2d0b0",
+        6,
+        635,
+        6,
+        1635,
+        0,
+        0,
+        0,
+        0,
+        "всё содержимое уже в main blob-в-blob ⇒ кандидат на удаление"
+      ],
+      [
+        "research/apostasy-master-dossier-2026-09-30",
+        "2d44d31",
+        "2026-09-30",
+        "нет",
+        "b4f617b9",
+        4,
+        627,
+        4,
+        1143,
+        0,
+        0,
+        0,
+        0,
+        "всё содержимое уже в main blob-в-blob ⇒ кандидат на удаление"
+      ],
+      [
+        "arena/01a0feff-research",
+        "7185b11",
+        "2026-10-07",
+        "нет",
+        "9da9c261",
+        44,
+        426,
+        40,
+        5281,
+        63,
+        0,
+        0,
+        0,
+        "открытый PR #207, мержится без конфликтов"
+      ],
+      [
+        "arena/dc7e8cb5-research",
+        "30096ca",
+        "2026-10-22",
+        "нет",
+        "eecb25d0",
+        29,
+        0,
+        8,
+        1518,
+        4,
+        0,
+        0,
+        0,
+        "открытый PR #216, мержится без конфликтов"
+      ],
+      [
+        "agent/heart-i1-reader-assembly-20260804",
+        "9cc0446",
+        "2026-08-04",
+        "да",
+        "9cc04462",
+        0,
+        1339,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "смержена: tip — предок main"
+      ],
+      [
+        "agent/1cor11-arena-d-normalized-20260809",
+        "066df58",
+        "2026-08-09",
+        "да",
+        "066df586",
+        0,
+        1285,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "смержена: tip — предок main"
+      ],
+      [
+        "lawson-bundle-bootstrap-20260928",
+        "b7cd8a8",
+        "2026-09-27",
+        "да",
+        "b7cd8a8b",
+        0,
+        712,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "смержена: tip — предок main"
+      ],
+      [
+        "lawson-finalize-20260928",
+        "dff6e36",
+        "2026-09-28",
+        "да",
+        "dff6e36a",
+        0,
+        711,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "смержена: tip — предок main"
+      ],
+      [
+        "tmp/lawson-biography-integration-20260930",
+        "7b0979c",
+        "2026-09-29",
+        "да",
+        "7b0979c7",
+        0,
+        629,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "смержена: tip — предок main"
+      ],
+      [
+        "tmp/lawson-biography-integration-20260930-2",
+        "7b0979c",
+        "2026-09-29",
+        "да",
+        "7b0979c7",
+        0,
+        629,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "смержена: tip — предок main"
+      ],
+      [
+        "arena/dddc1326-research",
+        "ed8031a",
+        "2026-10-12",
+        "да",
+        "ed8031aa",
+        0,
+        307,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "смержена: tip — предок main"
+      ],
+      [
+        "main",
+        "eecb25d",
+        "2026-10-22",
+        "да",
+        "eecb25d0",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "смержена: tip — предок main"
+      ]
+    ],
+    "summary": {
+      "branches": 26,
+      "roots": 1,
+      "inMain": 8,
+      "unmerged": 18,
+      "alreadyInMainBlob": 4,
+      "almostInMain": 2,
+      "branchConflicts": 9,
+      "addAdd": 33,
+      "content": 10,
+      "deletedFilesEverywhere": 0,
+      "openPRs": 3
+    },
+    "root": "8131f3c2 2026-06-26 «Initial commit» — один на все 26 ветвей; веток без общего предка с main: 0",
+    "openPRs": [
+      {
+        "pr": 182,
+        "head": "agent/1cor11-citation-quarantine-20260810",
+        "state": "OPEN",
+        "conflicts": 0
+      },
+      {
+        "pr": 207,
+        "head": "arena/01a0feff-research",
+        "state": "OPEN",
+        "conflicts": 0
+      },
+      {
+        "pr": 216,
+        "head": "arena/dc7e8cb5-research",
+        "state": "OPEN",
+        "conflicts": 0
+      }
+    ],
+    "pairwisePathOverlap": "#216∩#182=0, #216∩#207=0, #182∩#207=0 ⇒ порядок мержа трёх открытых PR не имеет значения",
+    "namespaceDuplication": [
+      {
+        "topic": "апостасия",
+        "dirs": {
+          "apostasy": 143,
+          "ОТСТУПНИЧЕСТВО": 24
+        },
+        "sameNames": 1,
+        "sameBytes": 0
+      },
+      {
+        "topic": "1 Кор. 11",
+        "dirs": {
+          "1КОРИНФЯНАМ_11_ПОКРЫВАЛО": 132,
+          "1_КОРИНФЯНАМ_11": 74
+        },
+        "sameNames": 0,
+        "sameBytes": 0
+      },
+      {
+        "topic": "искупление",
+        "dirs": {
+          "ИСКУПЛЕНИЕ": 115,
+          "docs/research/atonement": 36
+        },
+        "sameNames": "разные слои, не копии",
+        "sameBytes": 0
+      }
+    ],
+    "declaredInRootAuthority": {
+      "data/research-authority-registry-v1.json": {
+        "apostasy": 0,
+        "ОТСТУПНИЧЕСТВО": 0,
+        "ИСКУПЛЕНИЕ": 0
+      },
+      "CURRENT_AUTHORITY.md": {
+        "apostasy": 0,
+        "ОТСТУПНИЧЕСТВО": 0,
+        "ИСКУПЛЕНИЕ": 0
+      },
+      "README.md": {
+        "ИСКУПЛЕНИЕ": 1
+      }
+    },
+    "diagnosis": "нового слоя без нового имени нет, и старого имени никто не убирает: волна изобретает каталог, предыдущий остаётся; отсюда и 4 ветки, чьё содержимое уже в main blob-в-blob, и 54 отставших снимка в Drive-99",
+    "corrections": [
+      {
+        "was": "общего предка с main у ветки лана нет (merge-base пуст)",
+        "now": "база a01664c8 (мердж #215, 14.10), 1 956 общих коммитов",
+        "cause": "shallow: история обрезана на 286 комм., предок оказался за границей"
+      },
+      {
+        "was": "squash их ветки = 48 файлов и −7 913, из них 30 удалений ИСКУПЛЕНИЕ/ot/ (7 880 строк)",
+        "now": "их дельта от своей базы = 16 файлов, +2 797 / −5, удалённых файлов 0, путей ot/ они не касали",
+        "cause": "мерилось двумя точками (дерево против дерева): в −7 913 входило то, чего у них нет, потому что main уехал вперёд"
+      },
+      {
+        "was": "merge-commit даёт 16→17 add/add, с #216 — 20→21; реестр в дереве мержа — битый JSON (строка 905)",
+        "now": "git merge-tree main+их tip = 0 конфликтов, и с моим PR тоже 0; JSON валиден",
+        "cause": "тот же shallow-артефакт: без общей базы git считал каждую совпавшую пару add/add"
+      },
+      {
+        "whatRemainsTrue": "16 файлов дельты и +2 797 строк их работы; 30 файлов и 7 880 строк в ИСКУПЛЕНИЕ/ot в main; то, что их ветка шла к мержу через merge-commit и ot/ уцелел"
+      }
+    ],
+    "howRule": "любой git-замер про чужую ветку начинается с git rev-parse --is-shallow-repository (ожидание false) и git merge-base; пустой merge-base = дефект среды, а не факт репозитория; для дельты — только три точки (base...B)",
+    "recheckCommand": "git fetch --unshallow origin; git for-each-ref --format='%(refname:short)' refs/remotes/origin | grep -v HEAD  # затем по каждой ветке: merge-base --is-ancestor tip origin/main; diff --shortstat origin/main...tip; merge-tree --write-tree origin/main tip"
   }
 }

@@ -312,7 +312,7 @@ req("## 3. HOLD" in authority_text, "corpus authority lost its HOLD section")
 req(RECON.is_file(), "the reconciliation record of the 2026-10-15 audit must stay in the corpus")
 if RECON.is_file():
     recon_text = read(RECON)
-    for needle in ("unrelated", "99 — HOLD", "7 908"):
+    for needle in ("unrelated", "99 — HOLD", "7 880", "Erratum 2026-10-22", "a01664c8"):
         req(needle in recon_text, f"reconciliation record no longer states {needle!r}")
 
 if errors:
