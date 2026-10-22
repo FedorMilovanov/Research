@@ -352,3 +352,14 @@ en la foy même? Nenny*»; ни предвиденной веры, ни пред
 point inimaginable*» ⇒ **защищать всеобщую достаточность через «степени» и «ответ человека» со ссылкой на Сомюра
 запрещено**. **(4) Против карикатуры:** «*Dieu n'a pas fait ce choix des hommes à tastons*» — сильнейшая формула
 против «произвола» принадлежит сомюрской стороне.
+
+**Дополнение 2026-10-19 (раунд 53: `34_` §4.108; `03_` §24).** **(1) Глава X у Амиро — апология безусловного
+избрания** против трёх обвинений (лицеприятие, авторство греха, причина погибели) — тех же, что у Синода.
+**(2) «Полное равенство»:** «*il y a entr'eux tous une égalité toute entière*», «*également corrompus… également
+coupables*», «*une lepre… à tous pareillement incurable*». **(3) Равное предложение и равный отказ:** «*Il offre
+donc la grâce à tous les criminels également*»; «*Ils la refusent tous avec une égale obstination*».
+**(4) Неравна только милость:** «*il passe toutes les mesures de sa miséricorde envers les uns pour amollir leurs
+coeurs*». **Различие — целиком в Боге.** **(5) Следствие:** всеобщее предложение у Амиро служит **суду и
+теодицее**, а не спасению; само по себе оно никого не спасает. **(6) Апология против лицеприятия — наша же
+структура:** «*de sa pure libéralité*» / «*sa justice… requiert absolument qu'il le leur dénie*» ⇒ милость не
+должна, правда требует; расхождение с Дортом — **в объёме приобретения**, не в основании.

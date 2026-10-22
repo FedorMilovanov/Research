@@ -601,6 +601,25 @@
       **ordinaire sagesse***». **`LOCATOR_PARTIAL`** на пагинацию (чанк 19: сс. 56–60; вероятно «Eschantillon» со
       своей пагинацией). **П. 202:** формулы «égale et universelle» в чанках 12–19 нет; **отсутствие не
       утверждается**. `EDITION_HOLD`; 9 чанков из 74 (~12 %).
+    - 42cv. *Дополнение 2026-10-19 (раунд 53; `34_` §4.108, **S156**; `03_` §24; `synthesis/03_` §25):*
+      **Амиро, глава X (чанок 20, сс. 101–105) — три обвинения, полное равенство, равный отказ.** Глава X —
+      **апология** безусловного избрания против трёх обвинений: «*acceptation de personnes*, *autheur de péché*,
+      *cause de la perdition des hommes*» (те же, что у Синода). **Формулы:** «*il y a entr'eux tous une **égalité
+      toute entière***»; «*également corrompus & par consequent **également coupables***»; «*Cette corruption n'est
+      pas… plus profonde, ou plus inveterée, ou plus invincible en cestuy-cy qu'en cestuy là*»; «*une **lepre** qui
+      nous est à tous **pareillement incurable***»; «***Il offre donc la grâce à tous les criminels également***, &
+      requiert seulement d'eux qu'ils ne la refusent pas»; «***Ils la refusent tous avec une égale obstination***»;
+      «*il **passe toutes les mesures de sa miséricorde envers les uns pour amollir leurs coeurs***, & par une juste
+      severité abandonne les autres à la dureté de leurs ames*». **Апология против лицеприятия:** «*ce qu'il donne à
+      ceux-cy c'est de sa **pure libéralité***… *s'il consulte sa justice seulement, elle requiert absolument qu'il
+      le leur **dénie***» (с. 103–104) — **дословно наша структура «милость не должна, правда требует»**.
+      **Выводы:** (а) равенство у Амиро — **погибели и отказа**, не возможностей; (б) различие — целиком в
+      Боге ⇒ обвинение «решает человек» снято **структурно**; (в) всеобщее предложение служит **суду и
+      теодицее**, не спасению (само по себе оно никого не спасает — все равно отказываются); (г) расхождение с
+      Дортом **не в основании различия**, а **в объёме приобретения**. **П. 202 — продвинут:** ключевые слова
+      найдены, буквального «égale et universelle» нет; отсутствие **не утверждается**. **`LOCATOR_PARTIAL`
+      уточнён:** чанок 19 (сс. 56–60) — **вставка иной пагинации**; чанок 20 вернулся к 101–105. `EDITION_HOLD`;
+      10 чанков из 74 (~13,5 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
