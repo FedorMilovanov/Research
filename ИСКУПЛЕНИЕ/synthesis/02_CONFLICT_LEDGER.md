@@ -553,6 +553,16 @@
   **отвергнут за пятнадцать лет до Амиро**. **(д) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155),
   C-16 — без изменений; «снято молча: 0».**
 
+- **Дополнение раунда 58 (2026-10-19; `34_` §4.122; `01_` §12; `03_` §36; `06_` §21).**
+  **(а) Прочитан цитатный аппарат «Eschantillon» (сс. 178–183): пять цитат Кальвина.** Ключевые: «*je confesse que
+  la grâce de Dieu est **tellement vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes***»;
+  «*suffisamment souffert pour tous*… *l'efficace & le fruict*… *ne paruient que iusques aux esleus*»; «*Christ est
+  bien **offert**… à tout: toutesfois **il n'y a que les esleus ausquels Dieu ouure les yeux***».
+  **(б) ПОПРАВКА:** «*la dispute n'est point…*» — **слова Кальвина** (1 Ин. 2:2, «*dit-il*»), не Амиро.
+  **(в) Итог:** статья **права в цитатах**, **неправа в выводе**; её сдвиг — **«предложено» → «приобретено»** и
+  **«выведено из спора» → «введено как решающее»**. **(г) Прежняя линия «статья повторяет карикатуру» ослаблена.**
+  **(д) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято молча: 0».**
+
 ## Итоговая сводка
 
 

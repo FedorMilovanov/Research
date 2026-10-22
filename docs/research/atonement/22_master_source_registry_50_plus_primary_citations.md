@@ -811,6 +811,21 @@
       (1634); тот же перечень обвинений ходил как **римско-католическая клевета** (§4.118 п. 2). **(4) Практически:**
       ответ на «двойную оплату» — **нераздельность** приобретения и применения + **безусловность дара веры**, а не
       сужение круга. `EDITION_HOLD`; 26/74 Амиро.
+    - 42di. *Дополнение 2026-10-19 (раунд 58; `34_` §4.122, **S156**, сс. 178–183; `01_` §12; `03_` §36; `06_` §21):
+      **ЦИТАТНЫЙ АППАРАТ «Eschantillon» ПРОЧИТАН: пять цитат Кальвина в передаче Амиро.** **(1) Ин. 3:16:**
+      «*Quiconque… afin de **conuier tous hommes**… & d'**oster toute excuse aux incredules***»; «*il se monstre
+      **propice à tout le monde***». **(2) Тотчас:** «*Christ est bien **offert & comme mis en vente à tout**:
+      toutesfois **il n'y a que les esleus ausquels Dieu ouure les yeux***». **(3) Ин. 1:29:** «*il estend
+      **indifféremment** cette grâce à **tout le genre humain***». **(4) Рим.:** «*la **grâce commune**… **présentée à
+      tous**, **non pas que par effect elle s'estende sur tous***». **(5) *De aeterna praedestinatione*:** «***je
+      confesse que la grâce de Dieu est tellement vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes
+      selon ce propos déterminé***». **(6) 1 Ин. 2:2:** «*Iesus Christ a **suffisamment souffert pour tous**, mais…
+      **l'efficace & le fruict** de sa mort **ne paruient que iusques aux esleus***»; и «*la dispute **n'est point**…
+      **car cela est, dit-il, sans contredit***». **(7) ПОПРАВКА к §4.116 п. 8:** «*la dispute n'est point…*» —
+      **слова КАЛЬВИНА** (с «*dit-il*»), не Амиро; формула «quid in se / quid nobis» — **Кальвинова**.
+      **(8) ИТОГ:** статья **права в цитатах** (всеобщая благодать у Кальвина **есть**) и **неправа в выводе**
+      (Кальвин соединяет её с определённым призванием в одной фразе; и слово у него — «*offert*», не
+      «приобретено»). **П. 232 ЗАКРЫТ**; **п. 227 сужен до пяти мест**, не закрыт. `EDITION_HOLD`; **27/74**.
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

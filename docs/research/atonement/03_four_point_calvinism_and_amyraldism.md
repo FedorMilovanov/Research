@@ -1296,3 +1296,29 @@ empeschant qu'ils n'en reçoiuent **aucun***»; «*il semble que Dieu ait eu seu
 la rendre fructueuse*».
 
 **34.7. Оговорки.** `EDITION_HOLD`; 25/74; цитаты Кальвина не сверены.
+
+
+## 36. Дополнение (2026-10-19; раунд 58; кросс-досье `34_` §4.122, **S156**): что Кальвин говорит на самом деле —
+и почему это не решает спор
+
+**36.1. Пять мест, приведённых Амиро (сс. 178–183).**
+| Место | Слова Кальвина |
+|---|---|
+| Ин. 3:16 | «*Quiconque… afin de **conuier tous hommes**… & d'**oster toute excuse aux incredules***»; «*il se monstre **propice à tout le monde***» |
+| тотчас | «*Christ est bien **offert**… **à tout**: toutesfois **il n'y a que les esleus ausquels Dieu ouure les yeux***» |
+| Ин. 1:29 | «*il **estend indifféremment cette grâce à tout le genre humain***» |
+| Рим. | «*la **grâce commune**… **présentée à tous**, **non pas que par effect elle s'estende sur tous***» |
+| *De aeterna praedestinatione* | «***je confesse que la grâce de Dieu est tellement vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes selon ce propos déterminé***» |
+| 1 Ин. 2:2 | «***suffisamment souffert pour tous**… **l'efficace & le fruict**… **ne paruient que iusques aux esleus***»; «***la dispute n'est point**… **sans contredit***» |
+
+**36.2. Три вывода для нашей серии.**
+1. **Всеобщность у Кальвина есть — и она не «уступка».** «*tellement vniverselle*» — его слово.
+2. **Но она стоит рядом с определённостью призвания в одной фразе.** «*toutesfois Dieu n'appelle pas à foy tous
+   hommes*». Значит, всеобщность и определённость — **не альтернативы** даже у него.
+3. **И слово у него — «предложено», а не «приобретено».** Это различие и есть **настоящий** предмет спора.
+
+**36.3. Как это формулировать в серии — одна фраза.**
+> «Кальвин говорит, что благодать всеобща **и** что Бог призывает к вере не всех. Кто цитирует первую половину без
+> второй — цитирует не Кальвина, а половину Кальвина».
+
+**36.4. Оговорки.** Цитаты — **в передаче Амиро** (п. 227 сужен до пяти мест, **не закрыт**); `EDITION_HOLD`; 27/74.
