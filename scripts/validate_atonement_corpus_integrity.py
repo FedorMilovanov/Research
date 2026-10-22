@@ -680,11 +680,23 @@ if REG.is_file():
         if _absent:
             errors.append(f"dayOnlyFieldsPerRegistry не покрывает ланы {_absent} — в них поля дневной точности есть")
         if _badfig:
-            errors.append(
-                "scopeOfMeasurementRules.dayOnlyFieldsPerRegistry разошёлся с обходом: "
-                + ", ".join(f"{k}: записано {v[0]!r}, видим {v[1]}" for k, v in sorted(_badfig.items()))
-                + " — поле «сколько чужих дат ровно в день» это моё число, и оно обязано быть переснятым, а не унаследованным"
-            )
+            _mine = {k: v for k, v in _badfig.items() if k == "корпус"}
+            _theirs = {k: v for k, v in _badfig.items() if k != "корпус"}
+            if _mine:
+                errors.append(
+                    "scopeOfMeasurementRules.dayOnlyFieldsPerRegistry разошёлся с обходом по моему периметру: "
+                    + ", ".join(f"{k}: записано {v[0]!r}, видим {v[1]}" for k, v in sorted(_mine.items()))
+                    + " — моё собственное число обязано быть переснятым, а не унаследованным"
+                )
+            if _theirs:
+                # цифра о чужом лане живёт в моём файле, а править его может только владелец лана:
+                # блокировать чужой прогон моим устаревшим числом — то же зло, что и молчание о нём
+                notes.append(
+                    "dayOnlyFieldsPerRegistry разошёлся с обходом по чужим реестрам: "
+                    + ", ".join(f"{k}: записано {v[0]!r}, видим {v[1]}" for k, v in sorted(_theirs.items()))
+                    + " — замечание владельцу лана; прогон не блокируется, потому что переснять чужую бухгалтерию "
+                    "из этого PR я не могу, а врать молчанием не хочу"
+                )
         # нуль для существующего лана — это не лишнее число, а ровно то, что мы просим держать на виду
         _lanes = {_laney(_l) for _l in _docs}
         _extrafig = sorted(set(map(str, _daydecl_fig)) - _lanes)
