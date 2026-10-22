@@ -4879,6 +4879,97 @@ Google Books (`N7U8AAAAcAAJ`, Университет Лозанны, оцифр�
 «Preview». **В серии всякая цитата Амиро должна сопровождаться указанием издания (1658) и осторожностью в
 датировке формулировок 1634 годом.**
 
+### 4.104. Q100 — Амиро, глава VII: два рода проповеди, спасение не слышавших Евангелия и 1 Ин. 2:2 (раунд 51)
+
+**0. Зачем.** В раунде 50 прочитаны чанки 15 и 18 (главы VII–IX, сс. 76–95). Здесь — **чанок 14, сс. 70–74**,
+то есть **середина и вторая половина главы VII** трактата, где Амиро излагает самую спорную часть своей схемы.
+Источник тот же — **S156** (Амиро, *Brief traité de la predestination*, Сомюр, 1658; IA
+`brieftraitdela00amyr`); класс **A2** (OCR); `EDITION_HOLD` и `EVIDENCE_HOLD` по объёму — те же, что в §4.103
+п. 12.
+
+**1. Два рода проповеди Христа (с. 70–72).** Амиро отвечает на возражение: как могут быть призваны к вере те,
+кто **никогда не слышал** о Христе? Ответ: «*comme il y a de deux sortes de prédication de Christ, aussi y
+pourroit-il avoir… de deux sortes de connoissance de Christ qui amèneroient au salut*».
+- **Первая** — «*par le ministère des Apostres & de ceux à qui l'Evangile a esté commis*»; она «*engendre une
+  foy… coniointe avec une distincte connoissance de ce Sauveur mesme*».
+- **Вторая** — «*par l'entremise de la **providence de Dieu seulement**, qui conserve le monde nonobstant son
+  iniquité, & l'invite à repentance par sa longue patience, laquelle, **si les hommes n'estoient point
+  naturellement aveugles & obstinez en leur aveuglement, seroit capable d'engendrer en eux une persuasion de la
+  miséricorde de Dieu**, destituée à la vérité de la distincte connoissance de ce Rédempteur que l'Evangile nous
+  presche, & **neantmoins suffisante pour rendre les hommes jouyssans du salut duquel il est autheur***».
+- И основание: «*Car tout ce que Dieu desploye de miséricorde & d'espérance de salut aux hommes en quelque
+  manière que ce soit, vient de ce que **sa justice a esté appaisée par le sacrifice de son Fils**, & que ainsi
+  il a levé l'empeschement que le péché mettoit à la grâce de la remission, **s'ils ne s'en monstrent point
+  indignes***», — и «*Dieu… ne laisseroit pas de trouver les expediens nécessaires pour l'en rendre participant
+  en la remission de ses péchez, en la sanctification de son esprit, & en l'immortalité glorieuse*».
+
+**2. Прямое противоречие с Дортом — зафиксировать.** Эмденская делегация (§4.96 п. 5, S153) на ту же тему
+писала: «***Alius modus salvandi homines, & medium aliud, per quod beneficiorum Christi participes fiant
+gentes, in Scriptura non traditur***». Амиро утверждает противное: есть **второй путь** — через провидение, — и
+он «достаточен, чтобы сделать людей причастниками спасения». **Это не различие в терминах, а прямое противоречие
+двух утверждений об одном предмете.** В серии его следует цитировать парно:
+| | Позиция |
+|---|---|
+| **Эмден, 1619** | «Иного способа спасения людей, и иного средства, коим народы стали бы причастны благ Христовых, **в Писании не предано**» |
+| **Амиро, 1658** | вторая проповедь — «par l'entremise de la providence de Dieu seulement» — «**suffisante pour rendre les hommes jouyssans du salut**» |
+
+**3. Тексты, которыми Амиро обосновывает всеобщность (с. 70–71).** **1 Ин. 2:2** — «*Iesus Christ qui est la
+propitiation pour nos péchez, & non seulement pour les nostres, mais aussi pour les péchez de **tout le
+monde***»; 1 Тим. 2:4–6 — «*Dieu veut que tous soient sauvez, & viennent à la connoissance de sa Divinité; **y
+ayant un seul Dieu & un seul moyenneur entre Dieu & les hommes, à sçavoir Iésus-Christ homme, qui s'est donné
+soy mesme en rançon pour tous***»; Тит. 1 — «*grâce salutaire à tous hommes*»; Ин. 3:16.
+И — то самое толкование, которое серия обязана сопоставить с дортским: «*C'est à dire que non seulement il
+**n'en exclut aucun**, mais il seroit bien aise que tout le monde s'en approchast, voire il y convie tout le
+monde, comme estant une **grâce laquelle il a destinée à tout le genre humain**, s'il ne s'en monstre point
+indigne*».
+
+**4. 1 Ин. 2:2: Амиро против Дорта — Documented contrast.** В §4.64 (раунд 34) записано дортское чтение:
+«весь мир» не есть «каждый», потому что в тексте **соединены умилостивление и ходатайство**, а различение «двух
+ходатайств» названо «*purum putum commentum*». Амиро **не разделяет ходатайства** — он разделяет **проповедь** и
+ставит умилостивление («sa justice a esté appaisée par le sacrifice de son Fils») **в основание всякой**
+милости, являемой людям «каким бы то ни было образом»: «*tout ce que Dieu desploye de miséricorde & d'espérance
+de salut aux hommes **en quelque manière que ce soit**, vient de ce que sa justice a esté appaisée par le
+sacrifice de son Fils*».
+**Для серии:** спор о 1 Ин. 2:2 в XVII в. шёл **не о том, кого называет «весь мир»**, а о том, **чтó именно
+совершило умилостивление**: сняло ли оно препятствие к remission (Амиро) или приобрело самоё remission вместе с
+её приложением (Дорт). Ср. §4.98 п. 5 и тезу S146 «impetratio включает дарование испрошенного».
+
+**5. «Нельзя спасти против воли» — аргумент Амиро (с. 73).** «*Mais tout cela dépend de cette condition, qu'ils
+ne s'en monstrent pas indignes. Car il ne convenoit pas à la sapience de Dieu de procurer ny proposer ce salut
+aux humains, pour en estre mis reellement & de fait en jouyssance, encore qu'ils n'en voulussent point, & qu'ils
+demeurassent opiniastrer à refuser sa miséricorde. Que di-je, il ne convenoit pas à la sapience de Dieu; **il
+estoit absolument impossible que les hommes fussent sauvez malgré qu'ils en eussent***». Основание — от
+природы спасения: «*puis que la principale partie du salut consiste en la sanctification de l'ame, & cette
+sanctification en l'illumination de l'entendement, & en la correction de la volonté & des affections… comment
+se pourroient opérer toutes ces choses en l'homme, l'homme demeurant neantmoins **obstiné** à l'encontre de
+Dieu?*» И образ: «*Autant est-il impossible comme **d'illuminer une chose qui demeure tenebreuse nonobstant,
+ou en redresser une autre qui toutesfois demeure tortue**: cela s'impliquant soy-mesme en une contradiction
+manifeste*».
+
+**6. Почему это важно для серии.** (а) Аргумент «нельзя спасти против воли» **не belongs одной стороне**: его
+употребляют и Амиро, и реформатские схоласты (ср. «*Deus & natura nihil faciunt frustra*», S143; «*non…
+reconciliabilitatem… sed reconciliationem*», S145). (б) Различие — в том, **чтó выводится** из него: Амиро
+выводит **условие**; Дорт выводит, что если спасение совершается не против воли, то **самая воля даруется**
+(ср. «*det electis… & posse, & velle, & perficere*», §4.100 п. 2; и «*Donum procul ostentatum & non reipsa
+communicatum, neminem beare potest*», S152). (в) **Образ «просветить остающееся тёмным» — сильный и честный;
+серия может пользоваться им, оговаривая источник (Амиро, 1658), потому что он описывает невозможность не
+«по могуществу», а «по противоречию».**
+
+**7. Осторожность (повтор и усиление).** (а) Это **1658** год, не 1634-й; `EDITION_HOLD`. (б) Прочитаны чанки
+14, 15, 18 из 74 — **около 5 % текста**; ни глава VI (где, по литературе, стоит формула «égale et
+universelle»), ни глава X, ни конец трактата не прочитаны. (в) **П. 202 не закрыт**: формула «égale et
+universelle» в прочитанных чанках не встретилась; искать в чанках 12–13. (г) Французский текст — OCR; орфография
+нормализована при цитировании (v/u, ſ→s), **о чём следует помнить при точном цитировании в печати**.
+
+**8. Предварительный итог по Амиро (на трёх чанках).** Схема состоит из пяти утверждений, и все пять теперь
+зафиксированы по тексту: (1) благодать всеобща и предложена всем; (2) она обусловлена верою и без условия
+«совершенно бездейственна»; (3) основание её — умилостивление, снявшее препятствие; (4) потому возможны **два
+рода проповеди**, и второй (через провидение) достаточен для спасения; (5) но спасение не совершается против
+воли, и потому нужна **вторая, частная благодать**, подающая самую веру (глава IX). **Именно пятый пункт
+отличает Амиро от отвергнутого на Дорте «равновесия»** (§4.103 п. 7) — и именно четвёртый **прямо противоречит
+Дорту** (§4.104 п. 2). Оба вывода должны идти в серии рядом: Амиро **не** «учит, что человек решает», но **да**,
+расширяет путь спасения beyond проповеди Евангелия.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -5390,6 +5481,7 @@ Google Books (`N7U8AAAAcAAJ`, Университет Лозанны, оцифр�
 | 1618–1619 *(раунд 50)* | **Британское суждение, вторая половина** (S154, лл. 132–136): «non laedit voluntatis libertatem, sed **roborat**»; «resistendi potentia **proxima** suspenditur, **remota** non exstirpatur» (**Reverendus Sarisburiensis**, p. 20); «det electis suo tempore **& posse, & velle, & perficere**»; отвергнутые тезы: благодать — только «**lenem… moralem suasionem**»; «**Cur oblata aequali gratia, hic credat, ille non credat**»; «datur aliis secundum misericordiam, aliis non datur secundum justitiam»; «**Ego me discrevi**»; воля оставляется «**in aequilibrio**» — «quod **minus** est, voluntas accepit a Deo… quod **majus** est… **sibi ipsi praestitit voluntas ipsa**»; «aequilibrium… **in puncto consistit, nec latitudinis est capax**»; «ad ipsum fidei actum **infrustrabiliter** eliciendum». **Подписи: Georgius Landavensis, Joannes Davenantius, Samuel Wardus, Thomas Goadus, Gualterus Balcanquallus** |
 | 1618–1619 *(раунд 50)* | **Пфальцское суждение о III–IV артикулах** (S155, л. 136 и след.): ремонстрантская позиция — обращение предваряют cognitiones peccati, dolor, humilitas, desiderium gratiae, preces, propositum — «**citra infusionem sanctitatis alicujus**»; ссылки: *Coll. Hag.* 205, 298, 301, 303; **Гревинховен**, с. 111 (?); Епископий, *de perspicuitate Scripturae* тез. 5, 7 и *disput. de poenitentia* сс. 4, 14; **Иоанн Арнольди против Тилена, с. 397**. Ответ: «**Solus Deus** hic idoneus testis ac judex est»; человек «non semi-mortuus, sed **totus**… mortuus in peccatis suis» |
 | 1658 *(раунд 50; первое чтение амиральдианского первоисточника)* | **Моисей Амиро, *Brief traité de la predestination*** (Сомюр, Desbordes, 1658; IA `brieftraitdela00amyr`, сс. 76–95, гл. VII–IX): «la grâce est **universelle** & présentée à tous les hommes», но «cette charité **ne passe pas cette mesure**… pourveu qu'ils ne le refusent pas»; «Dieu veut le salut de tous les hommes… **pourveu qu'ils croyent**. S'ils ne croyent point, il ne le veut pas»; благодать «**entièrement inefficacieuse**» без исполнения условия; «l'**efficace particulière** de la grâce **universelle**»; две благодати: первая — «généralement tout le genre humain», вторая — «n'en regarde qu'vne partie seulement»; неверие — от «leur propre dureté & obstination», а «l'incrédulité des autres **ne vient pas de leur reprobation**… mais de leur propre aveuglement»; основание различия — «la **libre volonté de Dieu**», ибо «ils estoient **également** miserables… également coupables» |
+| 1658 *(раунд 51; Амиро, глава VII, сс. 70–74)* | **Моисей Амиро, *Brief traité de la predestination***: «il y a **de deux sortes de prédication de Christ**… de deux sortes de connoissance de Christ qui amèneroient au salut»; вторая — «par l'entremise de la **providence de Dieu seulement**… suffisante pour **rendre les hommes jouyssans du salut**» — **прямое противоречие эмденскому «Alius modus salvandi homines… in Scriptura non traditur»** (1619); 1 Ин. 2:2, 1 Тим. 2:4–6, Тит. 1, Ин. 3:16 — «grâce… destinée à **tout le genre humain**»; «tout ce que Dieu desploye de miséricorde… **en quelque manière que ce soit**, vient de ce que sa justice a esté **appaisée par le sacrifice de son Fils**»; «**il estoit absolument impossible que les hommes fussent sauvez malgré qu'ils en eussent**»; «autant… comme **d'illuminer une chose qui demeure tenebreuse nonobstant**, ou en redresser une autre qui… demeure tortue» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -5738,6 +5830,19 @@ Google Books (`N7U8AAAAcAAJ`, Университет Лозанны, оцифр�
 - Раунд 50, итог: добавлены §§4.100–4.103, **S155** и **S156**, три строки хронологии, правка §4.94 и §4.98,
   закрытие п. 192, пп. 198–204.
 
+- **Раунд 51: Амиро, глава VII (чанок 14, сс. 70–74).** Прочитано продолжение S156: **два рода проповеди
+  Христа** — через апостолов и «*par l'entremise de la **providence de Dieu seulement***», причём вторая
+  объявлена «*suffisante pour **rendre les hommes jouyssans du salut***». **Зафиксировано прямое
+  противоречие с Дортом**: эмденское суждение 1619 г. (S153) утверждает «*Alius modus salvandi homines, &
+  medium aliud… in Scriptura non traditur*». Сверх того — толкование **1 Ин. 2:2** (ср. §4.64): у Амиро
+  умилостивление есть основание всякой являемой людям милости «en quelque manière que ce soit», тогда как
+  дортское чтение соединяет умилостивление с ходатайством и отвергает «два ходатайства» как «purum putum
+  commentum». И аргумент «*il estoit **absolument impossible** que les hommes fussent sauvez malgré qu'ils en
+  eussent*» с образом «просветить остающееся тёмным». `EDITION_HOLD` (1658, не 1634) и `EVIDENCE_HOLD` по объёму
+  (прочитано 3 чанка из 74 — около 5 % текста) — **в силе**; **п. 202 НЕ закрыт** (формула «égale et
+  universelle» не встретилась; искать в чанках 12–13). Прочие HOLD и C-16 — без изменений; «снято молча: 0».
+- Раунд 51: добавлены §4.104, строка хронологии, пп. 205–207; кросс-досье — `04_`, `21_`, `synthesis/03_`.
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -5802,6 +5907,19 @@ de Calvin*» — там Амиро приводит цитаты Кальвин�
 204. *(раунд 50)* **Найти первоисточники Камерона и Тестара** (Камерон, *Theses de gratia et libero arbitrio*;
 Тестар, *Synopsis doctrinae de natura et gratia*, 1634), чтобы установить, у кого именно впервые появляется
 всеобщее условное decree. Способ: prdl.org (указатель сочинений) и поиск экземпляров на IA / Google Books.
+
+**Добавлено в раунде 51:**
+
+205. *(раунд 51)* **Найти формулу «égale et universelle»** в главе VI трактата Амиро (чанки 12–13). Она
+приводится в современной литературе по с. 77 издания **1634** г.; в издании 1658 г. с. 77 — глава VIII, то есть
+пагинация иная (п. 202 перенесён и уточнён).
+206. *(раунд 51)* **Прочитать главу X и конец трактата** (чанки 19–24), а затем «*Eschantillon de la doctrine de
+Calvin*» — Амиро там цитирует Кальвина, что прямо проверяет тезис серии о «кальвиновском пастише» у Стронга
+(§4.7) и о происхождении «цитаты Кальвина» (S43–S46).
+207. *(раунд 51)* **Составить таблицу расхождений Амиро с Дортом по пунктам** (всеобщая благодать; условие;
+два рода проповеди; частная благодать; основание различия) — по прочитанным чанкам 14, 15, 18 и дортским
+суждениям S142–S154. Вынести в `03_` как приложение; в `06_` — для проверки статьи (три элемента статьи
+совпадают с Амиро; **четвёртый — о двух путях спасения — в статье отсутствует**).
 
 **Добавлено в раунде 48:**
 
