@@ -734,3 +734,41 @@ homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***» (`
 **Отсюда — окончательная формула сдвига статьи: два симметричных сдвига на шаг влево** —
 **«всеобщее предложение» → «всеобщее приобретение»** и **«определённое призвание» → «определённое приложение»**.
 Ни Кальвин, ни Дорт такого сдвига не делают.
+
+
+## 13. Дополнение (2026-10-19; раунд 59; кросс-досье `34_` §4.127, **S156**, сс. 183–192): возражение статьи — и
+ответ Амиро, который статья не повторяет
+
+**13.1. Что нашлось.** В предисловии «Eschantillon» (сс. 183–192) Амиро **сам** формулирует возражение,
+**дословно совпадающее по существу** с главным доводом статьи:
+> «*…il le rend… mesmes **de croire en l'Euangile quand on le luy annonce**? **Car est-ce pas cela dresser vn banquet
+> deuant des gens à qui il est impossible d'en manger**, & puis les punir rigoureusement de ce qu'ils n'ont pas estendu
+> la main vers les viandes? Si ainsi est qu'il n'y ait en l'homme aucune faculté de croire… **ou** la sagesse de Dieu le
+> deuoit empescher de le leur offrir ainsi inutilement, **ou**… **il deuoit aussi donner indifféremment la grace d'y
+> croire***» (сс. 190–191).
+
+**13.2. И ответ — не тот, который даёт статья.**
+> «*à cette question… **il respond en quelque lieu par les paroles de S. Augustin**: **Veux tu disputer auec moy de
+> cette matiere? Plustost esmerueille toy & t'escrie auec moy, O hautesse! Accordons nous tous deux en esbahissement
+> afin de ne point perir en erreur***» (сс. 191–192).
+> «*…veut-on, **s'il ne peut demesler toutes les difficultez** qui se presentent en cela, ou qu'il **dérogé quelque
+> chose à la bonté de Dieu**…?*» (с. 192).
+
+**13.3. Что из этого следует для рецензии — четыре пункта.**
+1. **Довод статьи реален и стар.** Он не выдуман ею; он стоял в 1634 г. как **возражение противника**.
+2. **Но ответ на него у источника — не схема.** Амиро отвечает **изумлением** (Августин чрез Кальвина) и
+   **признанием, что не все трудности разрешимы**.
+3. **Статья же выдаёт схему за решение.** ⇒ **Она решает то, что её источник объявил неразрешимым.**
+4. **И это меняет жанр возражения:** не «вы неправы в экзегезе», а «вы **уверены**, что сняли тайну, тогда как
+   ваш же автор от неё отказался».
+
+**13.4. И в пользу статьи — её сильнейшая цитата, тоже оттуда (с. 185).**
+> «***A-t-il pas assez témoigné qu'il ne tient pas à Dieu que tout le monde ne soit sauvé? Que la porte de la
+> misericorde n'est fermée à personne? Que par consequent Christ a fait la propitiation des péchez de tous les
+> hommes?***»
+Это **слова Амиро**, и они сильнее всего, что статья приводит. **Признать.**
+
+**13.5. И ответ о не слышавших (сс. 186–187) — дортский по существу.**
+Все «увёртки» отвергнуты (грехи предков; предвиденная бесплодность; скрытые заслуги), вывод:
+«***On ne peut donc auoir recours qu'à la seule volonté de Dieu, dont il n'y a moyen de fonder la cause***».
+⇒ **всеобщее приобретение у Амиро не снимает** проблему несправедливости: он решает её **голой волей Божией**.

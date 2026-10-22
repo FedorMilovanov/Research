@@ -851,6 +851,18 @@
       в одном регистре**. **ТОЧНАЯ ФОРМУЛА СДВИГА СТАТЬИ (два симметричных сдвига):** «всеобщее предложение →
       всеобщее приобретение»; «определённое призвание → определённое приложение». **П. 239 — 2 из 5.** Осторожность:
       два места **не** основание для «Кальвин всегда».
+    - 42dl. *Дополнение 2026-10-19 (раунд 59; `34_` §4.127, **S156**, сс. 183–192; `01_` §13; `06_` §22;
+      `synthesis/03_` §37):* **ВОЗРАЖЕНИЕ СТАТЬИ В ЧИСТОМ ВИДЕ (1634) И ОТВЕТ АМИРО.** **(1) Максимум всеобщности у
+      Амиро (с. 185):** «*A-t-il pas assez témoigné **qu'il ne tient pas à Dieu que tout le monde ne soit sauvé**? Que
+      **la porte de la misericorde n'est fermée à personne**? Que par consequent **Christ a fait la propitiation des
+      péchez de tous les hommes**?*». **(2) Возражение (сс. 190–191):** «*Car est-ce pas cela **dresser vn banquet
+      deuant des gens à qui il est impossible d'en manger**, & puis les punir…? … **il deuoit aussi donner
+      indifféremment la grace d'y croire***». ⇒ **довод статьи не её изобретение**. **(3) ОТВЕТ — не схема:**
+      «*il respond… par les paroles de S. Augustin: **Veux tu disputer auec moy…? Plustost esmerueille toy… O
+      hautesse!***» (сс. 191–192); и «*s'il ne peut **demesler toutes les difficultez***». **(4) Вывод:** статья
+      **решает то, что её источник объявил неразрешимым**. **(5) О не слышавших (сс. 186–187):** все «увёртки»
+      отвергнуты, «*On ne peut auoir recours qu'à la **seule volonté de Dieu**, dont il n'y a moyen de fonder la
+      cause*» ⇒ **всеобщее приобретение проблемы не снимает**. **П. 240 ЗАКРЫТ**; `EDITION_HOLD`; **29/74** (~39 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

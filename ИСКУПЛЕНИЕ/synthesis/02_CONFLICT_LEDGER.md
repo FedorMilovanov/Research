@@ -581,6 +581,19 @@
   статьи — два симметричных сдвига:** «предложение → приобретение», «призвание → применение». **(г) П. 239 — 2 из
   5.** **(д) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято молча: 0».**
 
+- **Дополнение раунда 59 (2026-10-19; `34_` §4.127; `01_` §13; `06_` §22; `synthesis/03_` §37).**
+  **(а) Найдено возражение статьи в чистом виде (сс. 190–191):** «*dresser vn banquet deuant des gens à qui il est
+  impossible d'en manger*… *il deuoit aussi **donner indifféremment la grace d'y croire***» ⇒ **довод статьи стар и
+  стоит у Амиро как возражение противника**.
+  **(б) Ответ Амиро — не схема, а изумление:** «*Veux tu disputer auec moy…? **Plustost esmerueille toy… O
+  hautesse!***» + «*s'il ne peut **demesler toutes les difficultez***» ⇒ **статья решает то, что источник объявил
+  неразрешимым**.
+  **(в) Максимум всеобщности у Амиро (с. 185):** «*Christ a fait la **propitiation des péchez de tous les
+  hommes***» — **признать**.
+  **(г) О не слышавших:** «*la **seule volonté de Dieu**, dont il n'y a moyen de fonder la cause*» ⇒ **всеобщее
+  приобретение не снимает проблему несправедливости**.
+  **(д) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято молча: 0».**
+
 ## Итоговая сводка
 
 
