@@ -927,6 +927,18 @@
       l'accomplissement***» (сс. 222–223); «*afin que **les iniques n'alleguent point***» (с. 223). ⇒ **довод статьи от
       несправедливости не имеет основания в источнике.** «FIN» — с. 228. Плюс: «Replique à Monsieur de L. M.»
       (с. 229) — об **оправдании и заслуге**, не об искуплении ⇒ `SCOPED_OUT` (§4.134). **36/74 (~49 %).**
+    - 42ds. *Дополнение 2026-10-19 (раунд 60, часть 2; `34_` §§4.135–4.136; *Acta* 1620, чанки 254–256, печ.
+      сс. 326–340; `01_` §19; `synthesis/03_` §43; класс **A1**, OCR):* **ПФАЛЬЦСКОЕ СУЖДЕНИЕ ЗАКРЫТО; ФИНАЛЬНЫЙ
+      РЕГИСТР.** Рубрика: «*DE ARTICVLO TERTIO ET QVARTO… **Ivdicium Theologorum Palatinorum***» (с. 327) = печатная
+      атрибуция; **подписи не найдены** ⇒ `ATTRIBUTION_HOLD` → `ATTRIBUTION_NOTE`. Структура: **Propositio**
+      (ремонстрантская теза) → **Iudicium** → **Antithesis** ⇒ **первый абзац рубрики цитировать как «Дорт» нельзя**.
+      Антитеза I: «*Homo animalis mente caecus est; pravus voluntate & rebellis affectibus: nec ante sui conuersionem ullum
+      opus vere bonum… praestare potest*». О приготовлении: акты покаяния «*praecedere fidem & conuersionem **in homine
+      regenerando***», но «*conditiones… tanquam **praeuiae conuersioni***» отвергнуты: «*aut consequantur ut **fructus**,
+      aut inchoent ut **salutaria eius initia***» (с. 328). «*Naturam gratiae titulo ornare… **Pelagianum est***» (с. 329).
+      **Регистр остатка:** открыто **2** (п. 228 — латинский Кальвин, `LOCATOR_PARTIAL`; внешние разрешения на цитаты),
+      снято с основанием **4** (Replique `SCOPED_OUT`; Кэмерон и Тестар `OUT_OF_SCOPE`; 1675 — в `27_`), закрыто **7**
+      (186 отрицательно, 198, 227, 239, 240, 241, копирайт). **Ни один пункт не снят молча.**
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
