@@ -392,6 +392,12 @@ if REG.is_file():
         if unseen:
             notes.append(f"commitTimeChecks: {len(unseen)} sha недоступно в этом клоне — не проверено "
                          f"({', '.join(unseen[:4])})")
+        if len(unseen) == len(checks):
+            errors.append(
+                f"commitTimeChecks: ни одна из {len(checks)} записей не сверена (git не видит ни одного "
+                "коммита) — проверка, которая ничего не сверяет, не имеет права называться PASS; "
+                "обычная причина — shallow-клон или отсутствие .git"
+            )
 
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")
