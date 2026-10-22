@@ -1,7 +1,8 @@
 # Мф. 27:3–5 — Иуда, `μεταμεληθείς`, раскаяние и отчаяние
 
-**Дата:** 2026-09-30  
-**Статус:** `P0 JUDAS EXEGESIS / RESEARCH-ONLY / PUBLICATION_HOLD`  
+**Дата создания:** 2026-09-30<br>
+**Последнее обновление:** 2026-10-05 (W35; added Lioy as a limited theological analogue)<br>
+**Статус:** `P0 JUDAS EXEGESIS / RESEARCH-ONLY / PUBLICATION_HOLD`
 **Canonical owner:** будущая статья `/articles/iuda-izbrannyy-apostol-no-ne-spasennyy/`  
 **Parent:** `apostasy/02_JUDAS_ISCARIOT_EXEGETICAL_DOSSIER_2026-09-29.md`  
 **Companion:** `apostasy/27_JOHN_17_12_GIVEN_ONES_AND_SON_OF_PERDITION_2026-09-30.md`  
@@ -199,13 +200,19 @@ Thayer’s lexical discussion of `μεταμέλομαι` прямо преду�
 
 Это полезная каноническая категория для объяснения, почему **сильная печаль и даже признание вины сами по себе ещё не равны спасительному покаянию**.
 
+### Дополнительный сравнительный источник: Lioy
+
+Dan Lioy применяет 2 Кор. 7:10–11 к разным исходам Петра и Иуды в заключении своей статьи *“Denial Versus Betrayal”*, §6, начало p. 138 (заключение продолжается на pp. 138–142). Он полезен как пример уже существующей богословско-пастырской аналогии, но не как прямое толкование Матфея.
+
+**Оговорка к его психологической формуле:** Lioy предполагает, что сожаление Иуды было скорее о нежелательных последствиях, чем о самом грехе. Это нельзя выдавать за прямой смысл Мф. 27:4: Иуда прямо говорит, что согрешил, предав невинную кровь. Матфей не раскрывает исчерпывающе, что именно Иуда чувствовал; повествовательный финал позволяет говорить о скорби, не приведшей к показанному возвращению ко Христу, но не даёт права отрицать сказанное в его исповедании.
+
 ### Illegitimate use
 
 Не писать:
 
 > «2 Кор. 7:10 был написан Павлом специально об Иуде».
 
-Нет. Это аналогический theological control, не explicit cross-reference.
+Нет. Это аналогический theological control, не explicit cross-reference; и классификация Лиоя — богословское применение, не дополнительное греческое значение `μεταμεληθείς`.
 
 ---
 
@@ -359,6 +366,7 @@ Thus Cambridge is evidence for an **interpretation of Judas’ narrative**, not 
 | same verb can denote ordinary regret | 2 Cor 7:8 | direct text | CLOSED |
 | rigid `metamelomai` vs `metanoeo` binary is lexically unsound | Thayer synonym note + Matthean usage | lexical/historical | HIGH confidence |
 | Judas’ grief is not shown leading to faith/restoration | Matt 27:3–5 | narrative inference | HIGH confidence |
+| Lioy applies 2 Cor 7:10–11 to Peter/Judas | Lioy, “Denial Versus Betrayal,” §6, begins p. 138 (pp. 138–142) | secondary theological/pastoral analogy | READ; do not cite as Matthew’s explicit diagnosis |
 | 2 Cor 7:10 directly identifies Judas’ sorrow as worldly sorrow | — | analogy only | **DO NOT CLAIM DIRECTLY** |
 | modern commentators uniformly deny real repentance/remorse | — | contradicted by commentary spectrum | FALSE |
 
