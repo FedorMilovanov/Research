@@ -1423,7 +1423,8 @@
         "markdown корпуса не вправе ссылаться на несуществующий путь реестра: `ключ.путь.ещё` разрешается по data/atonement-corpus-v1.json",
         "hollowed-out gate: сам скрипт обязан быть живым (len>4000, publicationEligible=false) и workflow — содержать push:main и schedule",
         "workflow обязан бирать полную историю: fetch-depth:0 + шаг refuse a history-blind checkout (проверяется на CI-стороне)",
-        "единая схема записей correctionsPending (where/defect/resolution/applied:bool/checkedAgainstMain) + сверка объявленного числа total/open/applied с фактическим составом"
+        "единая схема записей correctionsPending (where/defect/resolution/applied:bool/checkedAgainstMain) + сверка объявленного числа total/open/applied с фактическим составом",
+        "смешанное письмо (кириллица+латиница в одном слове) запрещено в markdown корня ИСКУПЛЕНИЕ и в сообщении tip-коммита; восточное начертание в сообщении — тоже; цитаты в «…» и `…` вычитываются, построчное исключение маркируется и сверяется по числу"
       ],
       "measuredAt": "2026-10-22T11:39Z",
       "method": "python3 -B scripts/validate_atonement_corpus_integrity.py; мутации каждой проверки — отдельным прогоном, засчитывается только FAIL с ожидаемым сообщением (не просто ненулевой exit)",
@@ -1469,7 +1470,7 @@
         "occurrences": 12,
         "where": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md (Тregеллс ×7), nt/03 (×1), nt/07 (Павелa), nt/08 (polemikи), fathers/05 (антidonatistский), nt/11 (Berоn)"
       },
-      "measuredAt": "2026-10-22T12:26Z",
+      "measuredAt": "2026-10-22T12:55Z",
       "method": "python3-обход всех 84 md корпуса с паттерном [А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё] и фильтром «в слове есть обе графики»; остаток по под-корпусам: grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' ИСКУПЛЕНИЕ/nt ИСКУПЛЕНИЕ/fathers | wc -l",
       "recheckCommand": "grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' --include='*.md' ИСКУПЛЕНИЕ | wc -l  # должно стать 0 вместе с закрытием открытого замечания",
       "why": "правило не объявлено «для всего корпуса» только потому, что там оно бы падало на чужих: охват = где у меня есть право править, а остальное — открытая запись, а не молчание",
@@ -1477,7 +1478,19 @@
       "exemptionsDeclared": 3,
       "exemptionMarker": "<!-- mixed-script:цитата-дефекта --> (построчный; стоит в конце строки, в рендере невидим)",
       "exemptionsWhere": "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md (строки 653, 659, 662 — там цитируются и сам дефект, и чужие слова из nt/ и fathers/)",
-      "exemptionCountMethod": "grep -c 'mixed-script:цитата-дефекта' ИСКУПЛЕНИЕ/*.md построчно (не по файлам: две метки в одном файле — это два исключения); гейт сверяет это число с фактом"
+      "exemptionCountMethod": "grep -c 'mixed-script:цитата-дефекта' ИСКУПЛЕНИЕ/*.md построчно (не по файлам: две метки в одном файле — это два исключения); гейт сверяет это число с фактом",
+      "quotationRule": "цитата дефектного слова легальна и обязана оставаться дословной: перед поиском вырезаются spans в «…», `…` и \"…\"; поэтому маркер-строка нужен только для цитат вне кавычек",
+      "tokenRule": "ищутся целые токены ([^\\W\\d_]+), а не границы график: сообщение «8:рpusа» не даёт что искать, «8:корpusа» даёт (проверено пробой на 00_README)",
+      "whatTheRuleCannotCatch": "правило видит только склейку двух график в одном токене; отдельно взятое латинское слово в русской фразе (например «kontrol» вместо «контроль», что я и оставила в первом варианте этого же абзаца) им не называется осознанно: технические термины тут латиницей по делу. Значит, за орфографию прозы отвечает автор, а не проверка, и «правило проходит» не равно «текст вычитан»"
+    },
+    "commitMessageHygiene": {
+      "checked": "только tip (git log -1 --format=%B): история PR из-за орфографии не переписывается, а следующий коммит обязан быть чище предыдущего — CI на каждом push проверяет ровно его",
+      "cjkInWholePrHistory": 0,
+      "mixedInWholePrSubjects": 0,
+      "measuredAt": "2026-10-22T12:30Z",
+      "method": "git log origin/main..HEAD --format=%B | python3 (поиск [\\u3040-\\u30ff\\u4e00-\\u9fff] и смешанных токенов); заголовки: git log --format=%s | тех же два паттерна",
+      "recheckCommand": "git log -1 --format=%B | grep -c . (длина) и python3 -c \"import subprocess,re;m=subprocess.run(['git','log','-1','--format=%B'],capture_output=True,text=True).stdout;print(sorted(set(re.findall(r'[^\\W\\d_]+',m))) and [w for w in re.findall(r'[^\\W\\d_]+',m) if re.search(r'[А-Яа-яЁё]',w) and re.search(r'[A-Za-z]',w)]\", \"\")",
+      "why": "за день я трижды заносила иероглифы и латинские буквы в сообщения (один раз потеряв целое сообщение из-за -F /dev/null, второй — из-за backtick'ов в -m). Для commit message это не косметика: по такому слову git log --grep не находит коммит"
     }
   },
   "driveSourceAudit20261016": {

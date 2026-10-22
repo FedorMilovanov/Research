@@ -511,6 +511,22 @@ elif _cpc and not _claim:
 # под-корпусы nt/ и fathers/ содержат те же дефекты (12 вхождений в 5 файлах), но они чужие, и там заведено
 # открытое замечание, а не моя правка.
 MIXED = re.compile(r"[А-Яа-яЁё][A-Za-z]{1,}[А-Яа-яЁё]*|[A-Za-z]{1,}[А-Яа-яЁё][A-Za-zА-Яа-яЁё]*")
+# Цитата дефектного слова — не его употребление: «в файле было Соumur» обязана оставаться точной. Поэтому
+# перед поиском вырезаются «ёлочки» и `backtick`--spans (общий способ для дока и для сообщений коммитов),
+# а то, что осталось без кавычек, — это то, чем я пользуюсь, и оно обязано быть русским.
+QUOTED = re.compile(r'«[^»]*»|`[^`]*`|"[^"]*"')
+
+
+def mixed_words(text: str):
+    """Слова, где кириллица и латиница склеены. Ищем целыми токенами, а не границей график: сообщение
+    «8:рpusа» найти слово не помогает, «8:корpusа» — помогает."""
+    bare = QUOTED.sub(" ", text)
+    out = []
+    for m in re.finditer(r"[^\W\d_]+", bare):
+        w = m.group(0)
+        if re.search(r"[А-Яа-яЁё]", w) and re.search(r"[A-Za-z]", w):
+            out.append(w)
+    return out
 # Цитата самого дефекта обязана оставаться точной («в файле было Соumur вместо Сомюр»), поэтому исключение
 # разрешено — но только построчно, только этим маркером, и число маркеров сверяется с объявленным в реестре.
 # Иначе «ослабили проверку» превращается в «добавили ещё один case» — молча и необратимо.
@@ -524,10 +540,8 @@ for _md in sorted(CORPUS.glob("*.md")):
         if EXEMPT in _line:
             _exempt += 1
             continue
-        for _m in MIXED.finditer(_line):
-            _w = _m.group(0)
-            if re.search(r"[А-Яа-яЁё]", _w) and re.search(r"[A-Za-z]", _w):
-                _bad.append(f"{_ln}:{_w}")
+        for _w in mixed_words(_line):
+            _bad.append(f"{_ln}:{_w}")
     _exempt_total += _exempt
     if _bad:
         errors.append(
@@ -542,6 +556,31 @@ if "exemptionsDeclared" in _msc and int(_msc["exemptionsDeclared"]) != _exempt_t
         f"mixedScriptCheck.exemptionsDeclared = {_msc['exemptionsDeclared']}, по файлам — {_exempt_total}: "
         "исключение из проверки — это тоже факт, он обязан быть переснят (grep -c '" + EXEMPT + "' ИСКУПЛЕНИЕ/*.md)"
     )
+
+# ---------------------------------------------------- commit message hygiene --
+# Тот же класс, что и в файлах, я сегодня трижды занесла в сообщения коммитов (кириллическая строка с латинской
+# буквой и дважды — иероглифы, затесавшиеся там, где я сжимала два придаточных). Историю PR ради этого не
+# переписывают, поэтому требование только к tip'у: его и так проверяет CI на каждом push, а следующая правка
+# обязана быть чище предыдущей.
+try:
+    import subprocess as _sp
+    _msg = _sp.run(["git", "log", "-1", "--format=%B"], cwd=ROOT, capture_output=True, text=True).stdout
+except Exception:  # noqa: BLE001 - git может быть недоступен (не репозиторий): тогда проверка честно молчит
+    _msg = ""
+if _msg:
+    _cjk = sorted(set(re.findall(r"[\u3040-\u30ff\u4e00-\u9fff]+", _msg)))
+    if _cjk:
+        errors.append(
+            "сообщение последнего коммита содержит не-кириллическое восточное начертание "
+            f"{_cjk[:4]} — правь текст через git commit --amend -F <файл> (флаг -m с двойными кавычками "
+            "и так съедает backtick-цитаты)"
+        )
+    _mixed = sorted(set(mixed_words(_msg)))
+    if _mixed:
+        errors.append(
+            f"сообщение последнего коммита содержит {len(_mixed)} слов смешанного письма: {_mixed[:5]} — "
+            "в таком виде сообщение не ищется по-русски (git log --grep не найдёт)"
+        )
 
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")
