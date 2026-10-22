@@ -2,8 +2,8 @@
 
 **Дата:** 2026-10-19 (раунд 59)
 **Статус:** `CURRENT / CUSTODY / NOT LEGAL ADVICE`
-**Authority:** подчинён [`00_CURRENT_AUTHORITY_2026-10-07.md`](00_CURRENT_AUTHORITY_2026-10-07.md) и
-[`../data/artifact-custody-policy-v2.json`](../data/artifact-custody-policy-v2.json)
+**Authority:** подчинён [`00_CURRENT_AUTHORITY_2026-10-07.md`](../00_CURRENT_AUTHORITY_2026-10-07.md) и
+[`../data/artifact-custody-policy-v2.json`](../../data/artifact-custody-policy-v2.json)
 **Назначение:** одно место, где видно, **что можно цитировать публично**, **что только изучать**, и **чего не хватает**,
 чтобы закрыть ворота. Документ **не является юридическим заключением** и **не разрешает публикацию** — он фиксирует
 **редакционную политику** отдела и её основания.
@@ -21,7 +21,7 @@
 | `RIGHTS_HOLD` | права не установлены либо явно чужие | **не цитировать**; можно описывать содержание своими словами **со ссылкой на источник**, если это не заменяет оригинал |
 
 **Правило отдела:** `downloaded` ≠ `PD`; `archive.org` ≠ `PD`; `OCR доступен` ≠ `можно публиковать`. Основание —
-[`artifact-custody-policy-v2.json`](../data/artifact-custody-policy-v2.json): «*rights remain item specific*».
+[`artifact-custody-policy-v2.json`](../../data/artifact-custody-policy-v2.json): «*rights remain item specific*».
 
 ---
 
