@@ -1489,7 +1489,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 37,
+        "корпус": 39,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -2047,11 +2047,14 @@
       {
         "where": "synthesis/00_README_FALLBACK_2026-10-07.md",
         "defect": "на файл ссылается навигация synthesis/, но в git его нет ни в одном коммите: путь существует только как объект Drive, поэтому ссылка в доке ведёт в никуда, а «файл потерян» сказать нельзя — он несъёмен из git, но съёмчен из Drive",
-        "resolution": "в git отсутствует, в Drive живёт: id 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko, 6303 B, 2026-10-08",
-        "applied": false,
+        "resolution": "файл возвращён в git из Drive raw-байтами: путь ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md, 6303 B, sha256 61f727bf6b69e96a35bcfc92588d98258682eff0b62d1c43d4d7421dac4c4ef9, строк 52, H2 5; ссылка навигации synthesis/ более не ведёт в никуда",
+        "applied": true,
         "why": "чужой под-корпус",
         "checkedAgainstMain20261022": "сверено с деревом main после #218 (72d937b): файл по-прежнему отсутствует в git и живёт только в Drive (id 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko) => applied=false остаётся верным; хвост перенесён в README_FALLBACK-запись, а не снят",
-        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно",
+        "appliedAt": "2026-10-22T23:35Z",
+        "appliedHow": "google_drive download_file (raw, не экспорт) + git add",
+        "recheckCommand": "git -c core.quotePath=false ls-tree -r --name-only origin/main | grep 00_README_FALLBACK"
       },
       {
         "where": "07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, раздел 7 (первая редакция этого же дня)",
@@ -2112,10 +2115,11 @@
       "whoFixes": "владелец (перезаливка Docs-зеркал вне периметра этой сессии)",
       "registryTipBytes": 102361,
       "ledgerTipBytes": 53485,
-      "measuredAt": "2026-10-22T10:07Z",
+      "measuredAt": "2026-10-22T23:35Z",
       "which": "gitBytes — размеры в main (именно их зеркало и должно догонять); tipBytes — что станет после мержа #216",
       "reloadAdvice": "перезаливать Docs-зеркала после мержа #216: иначе зеркало устаревает в тот же прогон",
-      "method": "git show origin/main:<путь> | wc -c и git show HEAD:<путь> | wc -c; Drive-размер — get_file(size) по id из hubFolderInventory"
+      "method": "git show origin/main:<путь> | wc -c и git show HEAD:<путь> | wc -c; Drive-размер — get_file(size) по id из hubFolderInventory",
+      "reading": "подтверждено временем съёма зеркал (2026-10-09T00:09Z); байтовые величины несопоставимы по определению — см. driveMirrorVerification20261022.unitsNotComparable"
     },
     "publicationStateUnchanged": true,
     "correctionsPendingNote": "записей 6, все три — чужие файлы (13_, 14_, 05_ R01/R05); ни одна не противоречит раунду 63: 05_SOURCE_REGISTRY и 13_/14_ им не изменены",
@@ -2124,13 +2128,13 @@
     "recheckCommand": "для каждой папки: google_drive__list_files q=\"'<folderId>' in parents and trashed = false\"; для файла: get_file (size, modifiedTime)",
     "correctionsPendingCount": {
       "total": 8,
-      "applied": 4,
-      "open": 4,
-      "measuredAt": "2026-10-22T22:55Z",
+      "applied": 5,
+      "open": 3,
+      "measuredAt": "2026-10-22T23:35Z",
       "method": "python3 -c \"import json;d=json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));c=d['driveSourceAudit20261016']['correctionsPending'];print(len(c),sum(1 for x in c if x['applied']),sum(1 for x in c if not x['applied']))\"",
       "why": "число открытых записей — единственный способ понять, закрыт ли периметр; гейт сверяет этот словарь с фактическим составом (правило 9)",
       "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
-      "note": "переснято после мержа #218 и закрытия [7]: счётчик снят с полей applied, а не унаследован; правило 12"
+      "note": "переснято после закрытия [3] (файл реально в дереве); правило 12"
     },
     "correctionsPendingSchema": {
       "required": [
@@ -2153,6 +2157,39 @@
       "measuredAt": "2026-10-22T14:08Z",
       "method": "пересчёт наборов ключей по всем записям: python3 -c \"import io,json;d=json.load(io.open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));print(len({tuple(sorted(x.keys())) for x in d['driveSourceAudit20261016']['correctionsPending']}))\"",
       "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
+    },
+    "driveMirrorVerification20261022": {
+      "measuredAt": "2026-10-22T23:35Z",
+      "recordedEntries": 17,
+      "idValues": 13,
+      "liveVerified": 13,
+      "notAnId": {
+        "value": "Byte-acceptable (обещание побайтовой сверки, записанное в карту зеркал)",
+        "finding": "карта driveMirrors несёт значение, которое не идентификатор: читать её как карту id нельзя, нужен фильтр по форме значения"
+      },
+      "method": "get_file по каждому идентификатору; именной фильтр name contains MIRROR недооценивает (даёт 11, четыре зеркала живут без слова MIRROR в имени)",
+      "rootChildren": {
+        "count": 10,
+        "allFolders": true,
+        "matchesRecordedHubInventory": true,
+        "names": "00,01,02,03,04,05,06,08,09,99"
+      },
+      "memoryFigureRejected": "54 Docs-зеркала — не подтверждено ни одним съёмом: 13 id в driveMirrors, 72 md в ИСКУПЛЕНИЕ/**",
+      "mirrorLastModified": "2026-10-09T00:09:30Z",
+      "lagDays": 13,
+      "unitsNotComparable": true,
+      "why": "размер Docs-экспорта и размер markdown — разные представления одного текста, поэтому отставание доказывается временем съёма, а не разницей байт",
+      "recheckCommand": "gh-не-нужен: google_drive get_file по id из driveMirrors, либо Drive UI; числа md-файлов: ls ИСКУПЛЕНИЕ/*.md ИСКУПЛЕНИЕ/*/*.md | wc -l"
+    },
+    "fallbackRestored20261022": {
+      "measuredAt": "2026-10-22T23:35Z",
+      "path": "ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md",
+      "driveId": "1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko",
+      "driveSize": 6303,
+      "gitBytes": 6303,
+      "sha256": "61f727bf6b69e96a35bcfc92588d98258682eff0b62d1c43d4d7421dac4c4ef9",
+      "byteFidelity": "raw download, не экспорт: gitBytes == driveSize",
+      "recheckCommand": "git -c core.quotePath=false show origin/main:ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md | wc -c"
     }
   },
   "branchTopologyAudit20261022": {
@@ -3101,9 +3138,9 @@
   },
   "reconciliationDocument20261022": {
     "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-    "lines": 1049,
+    "lines": 1078,
     "sectionsH2": 16,
-    "sectionsH3": 19,
+    "sectionsH3": 20,
     "history": [
       {
         "lines": 791,
@@ -3117,9 +3154,16 @@
         "sectionsH3": 18,
         "asOf": "2026-10-22T22:22Z",
         "note": "числа до вставки §15i (одиннадцатый круг)"
+      },
+      {
+        "lines": 1049,
+        "sectionsH2": 16,
+        "sectionsH3": 19,
+        "asOf": "2026-10-22T23:05Z",
+        "note": "до §15j"
       }
     ],
-    "measuredAt": "2026-10-22T23:05Z",
+    "measuredAt": "2026-10-22T23:35Z",
     "method": "len() по строкам файла и счёт по префиксам '## ' / '### '; переснимается гейтом каждый прогон (правило 14), расхождение = ошибка, а не замечание",
     "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
     "measuredBy": "wc -l и grep -c по самому файлу, а не по памяти прошлого съёма"
