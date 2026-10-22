@@ -539,6 +539,18 @@ for _i, _c in enumerate(_cpc):
             f"реестр.driveSourceAudit20261016.correctionsPending[{_i}] без обязательных ключей {_miss} — "
             "запись в произвольной форме не читается машиной и не считается; перенести текст в where/defect/resolution"
         )
+    _empty = [k for k in _REQ if isinstance(_c.get(k), str) and not _c[k].strip()]
+    if _empty:
+        errors.append(
+            f"correctionsPending[{_i}] пустые в смысловых полях {_empty}: наличие ключа — ещё не утверждение. "
+            "Схема, допускающая пустоту там, где живёт смысл, проверяет форму и молчит о содержании; если поле "
+            "незаполнимо по делу (например, applied без сделанного), запись обязана быть открытой, а не закрытой пустотой"
+        )
+    if _c.get("applied") is True and not str(_c.get("resolution") or "").strip():
+        errors.append(
+            f"correctionsPending[{_i}] помечена applied=true без resolution — «закрыто» без того, чем закрыто, "
+            "неотличимо от «забыли»"
+        )
     if "applied" in _c and not isinstance(_c["applied"], bool):
         errors.append(
             f"correctionsPending[{_i}].applied = {_c['applied']!r}: только true/false, иначе «закрыто» становится мнением"
