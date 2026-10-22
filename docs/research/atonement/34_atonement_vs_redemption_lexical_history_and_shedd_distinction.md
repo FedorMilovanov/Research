@@ -5178,6 +5178,103 @@ puissance*». **Полемика, приписывающая ему это, за
 начинается на с. 87 с заголовка об избрании, следовательно материал о «двух благодатях» относится, вероятно,
 к **главе VIII**; содержание §4.103 пп. 3–4 **в силе**, номера глав требуют перепроверки.
 
+### 4.107. Q103 — Амиро: бесконечная цена удовлетворения и «снятое препятствие» (гл. VI); reductio против «степеней действенности» и «tastons» (раунд 52)
+
+**0. Источник, объём и оговорка о пагинации.** Чанки **12** (сс. 58–64) и **19** (сс. 56–60) того же экземпляра
+— **S156** (Амиро, *Brief traité de la predestination*, Сомюр, 1658; IA `brieftraitdela00amyr`), класс **A2**
+(OCR). Прочитано **9 чанков из 74** (около 12 % текста). **`LOCATOR_PARTIAL` усилен:** в чанке 19 счёт страниц
+(56–60) **не продолжает** счёт чанков 12–18 (58–95), хотя содержание — об избрании, Иакове и Исаве, Рим. 9 —
+принадлежит тому же предмету. Вероятнее всего, чанок 19 относится уже к **«Eschantillon de la doctrine de
+Calvin»**, у которого **своя пагинация**; но титул этой части в прочитанном не встретился. Поэтому локатор —
+**чанк + заголовок**, а не страница.
+
+**1. Глава VI: удовлетворение и его бесконечная цена.** Амиро излагает, как Бог восстановил род человеческий.
+Праведность требовала «*une vengeance de tout ce que le péché méritoit, estant commis contre une infinie
+majesté*». Христос стал поручителем («*se constituant nostre **pleige**»), ибо «*en ce qu'il estoit homme, il
+estoit capable de souffrir la mort réellement & de fait… Et en ce qu'il estoit **Dieu**… il estoit capable de
+faire que cette sienne souffrance en qualité de peine pour nos offenses, **équipollast à leur démèrite**, & par ce
+moyen **satisfist par sa valeur infinie à la justice divine***».
+**Вывод 1: бесконечная цена удовлетворения у Амиро ЕСТЬ.** Классическая реформатская посылка («цена бесконечна,
+потому достаточна для всех») ему не чужда — и это **поправка к §4.105 п. 2**, где было сказано, что основание
+всеобщности у него — творение, а не цена крови. Точная формулировка нужна иная (см. п. 3).
+
+**2. Но функция этой цены — снять препятствие, а не приобрести народ.** Тотчас после удовлетворения: «***Cet
+obstacle levé, il faisoit la voye à cette miséricorde que la justice tenoit resserrée, & qu'elle empeschoit de
+sortir hors des rives qu'elle luy avoit dressées***» (с. 61–62).
+**Это — точная формула той позиции, которую отвергло гелдерландское суждение:** «*non **reconciliabilitatem**
+… sed **reconciliationem**» (S145). У Амиро удовлетворение **открывает путь милости**; у Дорта оно **приобретает
+самое примирение**. Ср. §4.104 п. 2 (вторая проповедь) и §4.105 пп. 4–6. **Теперь это третье место с той же
+схемой — и самое ясное из трёх.**
+
+**3. Уточнение к §4.105 п. 2 (запрет сохраняется, формулировка меняется).** Правильно так: у Амиро **две
+разные функции** двух истин, а не два конкурирующих основания одной:
+| Истина | Функция у Амиро | Функция у Дорта |
+|---|---|---|
+| **бесконечная цена удовлетворения** | делает удовлетворение **достаточным по себе** и снимает препятствие | приобретает **самое приложение** определённым лицам |
+| **сострадание Творца к creatura** | обосновывает **всеобщность определения** послать Сына с условием | не используется как основание |
+**Смешивать эти функции по-прежнему запрещено**; но запрет теперь точнее: нельзя говорить, будто у Амиро
+«нет аргумента от бесконечной цены», — он есть, но **не он обосновывает всеобщность**.
+
+**4. Место об избрании: «крайне равны по природному состоянию».** «*Il les choisit premièrement **extrêmement
+égaux de condition naturelle**, enfans de mesme Père & de mesme mère, conceus d'une mesme ventrée… Puis il
+remarque que l'un a esté préféré à l'autre par l'oracle divin… **n'ayans partant qu'ils eussent fait ny bien ny
+mal***». И тотчас: «*Sera-ce en la foy même? **Nenny** encore. Car puis que la foy ne vient pas de nous, mais est
+un **don de Dieu**; avant que prevoir aucune foy en nous, il falloit que Dieu eust ordonné de l'y mettre*». И:
+«*il appert assez que **Dieu n'a pas ordonné de la donner à tout le monde***»; «*il appelle la foy, **la foy des
+esleus de Dieu***».
+**Вывод 2: ни «предвиденная вера», ни «предвиденные добрые дела», ни «предвиденное доброе употребление
+благодати» у Амиро не допускаются** — он отвергает все три по очереди. Это **третье подтверждение** §4.106
+п. 6, теперь с разбором трёх альтернатив.
+
+**5. Reductio против «степеней действенности» — главная находка раунда.** Амиро разбирает приём: «*Que si
+quelqu'un veut remonter plus haut, & **subtilement distinguer entre les degrés de l'efficace** que Dieu desploye
+pour convertir les hommes au salut, & dire que **les derniers degrés ont esté adioustés pour ce qu'on n'a pas
+rejetté les precedens***» — то есть: Бог даёт всем первые степени, а последние — тем, кто хорошо воспользовался
+первыми. Ответ Амиро:
+- «***de recourir icy à la liberté de la volonté, c'est chose inutile***»;
+- «*la volonté de tous les hommes estant **également serue de la corruption de péché**, il est **de tout point
+  inimaginable** comment elle ait esté **également prevenuë** en quelques uns, & que neantmoins **les événemens en
+  ayent esté dissemblables***»;
+- три альтернативы: (а) благодать погашена во всех — но «*il appert que plusieurs croyent*»; (б) не погашена ни в
+  ком — но исходы различны; (в) **Бог определил**, чтобы в одних испорченная воля не погасила её и дала себя
+  победить, — «*& c'est ce dont nous cherchons la raison, & **n'en pouvons trouver d'autre que celle de la libre
+  volonté de Dieu***».
+
+**6. Почему это важно до чрезвычайности.** Приём «степеней действенности» — это **именно тот способ**, которым
+позже объясняли «всеобщую достаточность при частном приложении»: всем даётся равно, а различие — в употреблении.
+**Амиро его отвергает как «напрасное дело» и «совершенно немыслимое».** Стало быть:
+**(а)** его собственная схема **не** держится на «равной благодати, которую один принимает, а другой нет»
+(подтверждение §4.103 п. 7 — теперь с прямой цитатой против этого приёма);
+**(б)** в серии **запрещено** защищать всеобщую достаточность через «степени» и «употребление», **ссылаясь на
+Сомюра**: Сомюр это отверг;
+**(в)** тот, кто сегодня строит всеобщее предложение на «ответе человека», **дальше от Амиро, чем от
+ремонстрантов**, — и это стоит сказать прямо.
+
+**7. Против карикатуры на «абсолютное определение».** Амиро предупреждает: «*Ce n'est pas que Dieu, qui est une
+essence sage au dessus de tout ce que nous en pouvons comprendre, ait fait ce choix des hommes **à tastons**, &
+jetté sur eux **le sort à l'aventure**, à qui périroit ou ne périroit pas. Ainsi n'aduienne que nous ayons de
+telles pensées. Quoyque nous attribuions cela à la liberté de son bon plaisir, **nous ne laissons pas de croire
+qu'il y a procédé avec son ordinaire sagesse***».
+**Значение:** самая сильная формула **против** карикатуры на реформатское учение об избрании принадлежит
+**сомюрской** стороне. В серии её следует приводить, когда нам приписывают «произвол»: **это слово не наше и не
+их; Амиро сам его отвергает.** И основание — Рим. 9:15: «*la chose dépend absolument de ce que Dieu use de sa
+miséricorde avec une **liberté toute entière***».
+
+**8. Итог раунда в трёх положениях.**
+1. **У Амиро есть бесконечная цена удовлетворения** — но её дело **снять препятствие**, а не приобрести
+   приложение (§4.107 пп. 1–3).
+2. **У Амиро нет ни «предвиденной веры», ни «степеней действенности»** — он отвергает и то, и другое, причём
+   второе с прямым указанием на его немыслимость (§4.107 пп. 4–6).
+3. **Расхождение с Дортом сосредоточено в одном месте:** что совершила кровь — **открыла путь** или
+   **приобрела самое примирение**; и производное от него — **есть ли второй путь спасения** помимо проповеди
+   Евангелия (§4.104 п. 2).
+
+**9. Оговорки.** `EDITION_HOLD` (1658, не 1634); `LOCATOR_PARTIAL` на пагинацию и на принадлежность чанка 19 к
+«Eschantillon» (титул части не встретился); прочитано 9 чанков из 74; французский OCR, орфография
+нормализована. **П. 202:** буквальной формулы «égale et universelle» в прочитанном отрезке (чанки 12–19) **не
+встретилось**; вывод об отсутствии **не делается** (урок р.44), но ссылки литературы на такую формулу требуют
+проверки по другому изданию или другому сочинению.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -5692,6 +5789,7 @@ puissance*». **Полемика, приписывающая ему это, за
 | 1658 *(раунд 51; Амиро, глава VII, сс. 70–74)* | **Моисей Амиро, *Brief traité de la predestination***: «il y a **de deux sortes de prédication de Christ**… de deux sortes de connoissance de Christ qui amèneroient au salut»; вторая — «par l'entremise de la **providence de Dieu seulement**… suffisante pour **rendre les hommes jouyssans du salut**» — **прямое противоречие эмденскому «Alius modus salvandi homines… in Scriptura non traditur»** (1619); 1 Ин. 2:2, 1 Тим. 2:4–6, Тит. 1, Ин. 3:16 — «grâce… destinée à **tout le genre humain**»; «tout ce que Dieu desploye de miséricorde… **en quelque manière que ce soit**, vient de ce que sa justice a esté **appaisée par le sacrifice de son Fils**»; «**il estoit absolument impossible que les hommes fussent sauvez malgré qu'ils en eussent**»; «autant… comme **d'illuminer une chose qui demeure tenebreuse nonobstant**, ou en redresser une autre qui… demeure tortue» |
 | 1658 *(раунд 51; Амиро, начало главы VII, сс. 64–68)* | **Моисей Амиро**: заголовок гл. VII — «*Quelle est la nature du conseil & de la Volonté… **soit pour son étendue, soit pour la condition qui y est annexée***»; основание всеобщности — не цена крови, а «*la **compassion** qu'il a eue d'eux, **comme de ses créatures**… **puis qu'ils sont ses créatures indifféremment**, la grâce… **a deu estre universelle***»; «*ny **jusques là**, il n'y a **point de différence entr'eux***»; «*Le sacrifice… **a esté pour tous**; & le salut… **est destiné à tous**, pourveu… que la disposition nécessaire… soit en tous de mesmes*»; частность Израиля — «*renouueller la mémoire*» обетования о семени жены, «*Mais cela fait, **tous les peuples de la terre ont esté appelez***»; «*ny **aucun peuple**, ny mesmes **aucun homme exclus par la volonté de Dieu***»; вторая проповедь — «*une prédication suffisante, s'ils y estoient attentifs*» (Рим. 2:4); «***Dieu est trop bon, & s'il faut user de ce mot, trop serieux, pour presenter aux hommes de vaines espérances***» |
 | 1658 *(раунд 51; Амиро, главы о бессилии и об избрании, сс. 81–90)* | **Моисей Амиро**: отвергает мысль, будто разница «*dépend de la liberté de la volonté de l'homme*»; «*l'Escriture attribue **sans aucune variation** la foy… **à l'operation de Dieu en nous***»; «**nous ne contribuons icy rien à l'efficace**»; «*non seulement nous ne nous en sçaurions dégager quand nous le voudrions… mais mesme qu'il est **impossible que nous le vueillons***»; «*elles sont **tout à fait asservies au mal** & mortes quant au sentiment du bien*»; «*plus grande elle est* [impuissance], *& plus **merite-t-elle de blasme***»; глава IX: избрание — «*d'**accomplir en quelques uns cette condition**, & **laisser les autres à eux mesmes***», «*éleus & predestinez **pour leur donner la foy***»; довод от тщетности: без второго определения первое было бы «***inutile au genre humain***», а страдания Сына «***entièrement frustratoires***»; благодать «***surmontast*** tout ce qu'il y a de corruption»; «*tant s'en faut que l'amour de Dieu puisse **presupposer** cette condition en l'homme, qu'il faut necessairement presupposer **qu'elle n'y est pas**… sinon que **luy-mesme l'y crée par sa puissance***»; не слышавшие: «*ne sera pas condamnée pource qu'elle ait… méprisé le nom de Christ, mais pource qu'elle aura **méprisé la voix des Cieux***» |
+| 1658 *(раунд 52; Амиро, гл. VI и место об избрании, чанки 12 и 19)* | **Моисей Амиро**: удовлетворение — «*satisfist par sa **valeur infinie** à la justice divine*»; но «***Cet obstacle levé, il faisoit la voye à cette miséricorde que la justice tenoit resserrée***»; Иаков и Исав — «***extrêmement égaux de condition naturelle***»; «*Sera-ce en la foy même? **Nenny** encore*»; «*Dieu n'a pas ordonné de la donner à tout le monde*»; против «*subtilement distinguer entre les **degrés de l'efficace***» — «*de recourir icy à la liberté de la volonté, c'est **chose inutile***», «*il est **de tout point inimaginable** comment elle ait esté également prevenuë en quelques uns, & que neantmoins les événemens en ayent esté dissemblables*»; «*n'en pouvons trouver d'autre que celle de la **libre volonté de Dieu***»; против карикатуры — «*Dieu… n'a pas fait ce choix des hommes **à tastons**, & jetté sur eux **le sort à l'aventure**… il y a procédé avec son **ordinaire sagesse***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6075,6 +6173,20 @@ puissance*». **Полемика, приписывающая ему это, за
   гипотетично. **П. 208 закрыт в существе.** **`LOCATOR_PARTIAL`** на номера глав: глава IX начинается на с. 87
   (избрание) ⇒ «две благодати», вероятно, глава VIII; содержание §4.103 пп. 3–4 в силе.
 
+- **Раунд 52: Амиро, гл. VI и место об избрании (чанки 12 и 19).** Прочитано 9/74. **(1) Бесконечная цена
+  удовлетворения у Амиро есть** («*satisfist par sa valeur infinie*»), но её дело — «***Cet obstacle levé, il
+  faisoit la voye à cette miséricorde***» ⇒ **третье и самое ясное место** той схемы, которую отвергло
+  гелдерландское «*non reconciliabilitatem… sed reconciliationem*» (S145). **Поправка к §4.105 п. 2:** у него
+  **две функции** двух истин (цена — достаточность; сострадание — всеобщность определения), а не два
+  конкурирующих основания. **(2) Избрание:** «*Sera-ce en la foy même? **Nenny***»; отвергнуты предвиденная вера,
+  предвиденные дела и предвиденное «доброе употребление». **(3) Reductio против «степеней действенности»:**
+  «*de recourir icy à la liberté de la volonté, c'est **chose inutile***», «*de tout point inimaginable*» ⇒
+  **приём «равная благодать + употребление» отвергнут самим Сомюром**; защищать так всеобщую достаточность
+  «по Амиро» **запрещено**. **(4) Против карикатуры:** «*Dieu n'a pas fait ce choix… **à tastons***».
+  `LOCATOR_PARTIAL` усилен: пагинация чанка 19 (56–60) не продолжает чанки 12–18 (58–95) ⇒ вероятно,
+  «Eschantillon» со своей пагинацией. **П. 202:** формулы «égale et universelle» в чанках 12–19 нет; отсутствие
+  **не утверждается**.
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -6162,6 +6274,11 @@ Calvin*» — Амиро там цитирует Кальвина, что пря
 «égale et universelle» (п. 202). Без этого ссылки литературы на «с. 77 изд. 1634» к S156 **неприменимы**.
 210. *(раунд 51)* **Разобрать Рим. 2:4** как доказательство «достаточной проповеди» вне Евангелия — в `04_`
 (§11). В досье этот текст до сих пор не разбирался, а у Амиро он несёт всю конструкцию второго откровения.
+
+
+211. *(раунд 52)* **Найти титул «Eschantillon de la doctrine de Calvin»** и установить его собственную пагинацию (чанки 20–24), чтобы снять `LOCATOR_PARTIAL` с §4.107 п. 0. Проверить, действительно ли чанок 19 относится к этой части.
+212. *(раунд 52)* **Формула «égale et universelle»** (п. 202): в чанках 12–19 не встречается. Искать в другом издании (1634) или другом сочинении Амиро; **вывод об отсутствии не делать**.
+213. *(раунд 52)* **Сопоставить таблицей** «степени действенности» (Амиро, §4.107 п. 5) с дортскими формулами «posse/velle» (§4.98 п. 3) и с британским «*in aequilibrio*» — вынести в `03_` как приложение к §23.
 
 **Добавлено в раунде 48:**
 
