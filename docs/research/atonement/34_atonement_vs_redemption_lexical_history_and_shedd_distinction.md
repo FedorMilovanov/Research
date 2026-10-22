@@ -5979,6 +5979,160 @@ tastons*», «*degrés de l'efficace*») **точно соответствует
 **9. Оговорки.** `EDITION_HOLD` (1658, не 1634); 19 чанков из 74; французский OCR, орфография нормализована.
 **П. 211 — ЗАКРЫТ.** **П. 202** — без изменений (формулы «égale et universelle» по-прежнему нет в прочитанном).
 
+**10. ПОПРАВКА ЛОКАТОРА (раунд 56, часть 5; не снятие, а исправление).** Прочитаны чанки **39** и **41**; они
+непрерывны с чанком 40: **чанок 39 = сс. 197–202**, **чанок 40 = сс. 203–207**, **чанок 41 = сс. 208–212**. Значит,
+в п. 0 выше «сс. 103–107» — **ошибка чтения OCR** (длинная *s* и слитная цифра: «*z03*»/«*203*» прочитано как
+«*103*»). **Верный локатор: сс. 203–207.** Следствия: (а) «Eschantillon» — **не приложение на пять страниц**, а
+раздел примерно на **двести с лишним страниц** со своей пагинацией (к чанку 41 дошли до с. 212, и текст
+продолжается); (б) он **начинается задолго до чанка 39**, вероятно около чанков 30–33, сразу после конца основного
+трактата; (в) гипотеза о чанке 19 (сс. 56–60) **подтверждается по пагинации**: такие страницы в этом томе может
+давать только «Eschantillon», у основного трактата сс. 56–60 заняты другим (сс. 58–95 — чанки 12–18). **П. 228
+считается продвинутым, но формально не закрытым** (колонтитул чанка 19 всё ещё не прочитан дословно).
+
+### 4.116. Q112 — «Eschantillon», сс. 197–212: Кальвин «говорит о смерти Христова двумя способами». Прямой ответ на тезис статьи (раунд 56)
+
+**0. Где мы находимся.** Чанки 39 и 41 (сс. 197–202 и 208–212), между ними чанок 40 (сс. 203–207) из §4.115.
+Это **сердцевина** «Eschantillon»: не полемика с противниками, а **согласование** трудных мест Кальвина.
+
+**1. Задача поставлена самим Амиро — и поставлена честно.** Возражение сформулировано за противника: «*tant y a
+qu'il enseigne que **Dieu a predestiné une grande partie des hommes à mort & condamnation**, & d'une predestination
+**certaine & irrevocable**… **Comment donc est-ce que cela se peut accorder** auec ce qu'il enseigne que **tous
+hommes sont appelez à salut**, & mesmes auec tant d'affection & tant d'instance?*» (с. 200).
+И ответ: «*pour **difficile** que fust la reconciliation des sentimens de Caluin en ce point…*» — и способ: «*en
+**accordant ses hypotheses**, donner aux **manieres de parler** dont il se sert **une interpretation qui
+raisonnablement leur conuienne***» (сс. 201–202).
+**Три слова здесь — технические и их надо назвать: (а) «hypotheses» — предпосылки; (б) «manieres de parler» —
+способы говорить; (в) «raisonnablement» — по разумной соразмерности.** Амиро **сам** объявляет свой проект
+**истолкованием выражений**, а не изложением новой догмы. **Это и есть документ, к которому восходит вся позднейшая
+«терминологическая» работа.**
+
+**2. Предварительный шаг: предмет предопределения — падший человек.** «*Le dessein de la creation d'Adam & de tous
+ses descendans, s'ils fussent demeurez en leur premier estat, **n'a rien de commun auec ce qu'ordinairement nous
+nommons la Predestination**: cette action de Dieu… ayant pour objet **l'homme tombé en malediction & non en
+l'integrité de sa nature***» (с. 202).
+И далее: в первой целостности Бог имел дело с человеком «*selon la relation qu'il auoit auec sa **pure & simple
+bonté**, **sans aucune ombre de misericorde***»; но «*Dieu ne peut plus considerer l'homme en cet estat puis qu'il en
+est decheu: il faut necessairement qu'il le considere **comme pecheur**, & partant comme ayant une qualité qui se
+refere **soit à sa justice, soit à sa misericorde***»; и был Он «*en **pleine & absolue liberté de le punir selon sa
+justice s'il vouloit**, sans vser d'aucune misericorde enuers luy, **non plus qu'enuers les Anges decheus***»
+(сс. 203–204).
+**Значение для серии:** это **инфралапсарианская** постановка, совпадающая с дортской: предмет предопределения —
+**падший**; «*sans aucune ombre de misericorde*» в состоянии целостности; свобода наказать — «*non plus qu'envers les
+Anges decheus*» (ср. §4.112 об ангелах). **Второе подтверждение общего основания** (первое — §4.108 п. 7, третье —
+Рим. 9:15 в §4.115 п. 6).
+
+**3. ГЛАВНОЕ МЕСТО. «Il parle de la mort de Christ en deux diverses manières» (с. 207).** Дословно:
+> «*Et de cette **diuerse maniere de considerer la misericorde de Dieu**, resultent necessairement **deux choses**.
+> La premiere, que posant… qu'il est **impossible que Dieu nous soit propice sinon par la satisfaction de Christ**…
+> **il parle de la mort de Christ en deux diuerses manières***».
+> «*Car entant qu'elle a osté l'empeschement à cette **premiere sorte de misericorde**… **il dit… qu'il est mort
+> universellement pour tous hommes, pourueu qu'ils croyent en luy***».
+> «*Mais entant qu'il n'y en a que quelques-vns que cette **seconde sorte de misericorde** regarde, **il dit qu'il est
+> mort pour ceux-là, voire pour ceux-là seulement***».
+> «*Pource que **quant à ceux-là** [первая группа], **il n'est mort pour eux sinon à la condition qu'ils croyent**.
+> Pour ceux-cy, d'autant qu'**il est absolument ordonné qu'ils croiront**, **il peut estre absolument mort pour eux**:
+> pource que **le decret par lequel il leur est donné de croire, enclost necessairement celuy du salut** qu'on obtient
+> par la foy*» (сс. 207–208).
+
+**4. Что здесь сказано — и сказано без всякой двусмысленности.**
+| | Первый способ | Второй способ |
+|---|---|---|
+| объём | «*universellement pour tous hommes*» | «*pour ceux-là seulement*» |
+| условие | «***pourveu qu'ils croyent***» | «***absolument***» |
+| основание | первая милость снимает препятствие | «*le decret… de croire enclost… celuy du salut*» |
+
+**Три точных вывода:**
+1. **Это — структура статьи**, и найдена она **у Амиро**, а не у Прокопенко: «искупление» = **первый способ**
+   («*pour tous… pourveu qu'ils croyent*»), «примирение» = **второй** («*absolument… pour ceux-là seulement*»).
+2. **Но это не два дела, а два способа говорить об ОДНОЙ смерти.** «*Il parle de la mort de Christ en deux diuerses
+   manières*» — **одна** satisfactio Christi, описываемая **двояко**, по числу двух рассмотрений милости.
+   **Статья превращает «два способа говорить» в «две стороны дела»** — и это и есть её терминологический сдвиг,
+   теперь **документированный по источнику**.
+3. **И это ставит под удар сам всеобщий член.** У Амиро он **условен**: «*sinon à la condition qu'ils croyent*».
+   То есть для не-избранных смерть Христа даёт **прощение при условии веры** — что и есть, дословно,
+   **«reconciliabilitas»**, а не «reconciliatio».
+
+**5. Отсюда — УТОЧНЕНИЕ К §4.114 п. 2, и его надо внести явно.** В §4.114 я писал, что эмденское отвержение
+«*possibilitatem & velleitatem*» **не попадает** в первую степень, потому что она есть «*resolution ferme &
+immuable*». **Это верно только наполовину.** Решение твёрдо — но **что оно даёт неверующему**? По §4.116 п. 3 —
+**только условное прощение**. А формула `Acta` («*non reconciliabilitatem… sed reconciliationem*», S145) бьёт
+именно по **условному плоду**, а не по твёрдости решения. **Точная формулировка:**
+> **Амиро отвечает на «velleitas» твёрдостью решения, но `Acta` обвиняет не в «velleitas», а в
+> «reconciliabilitas» — и по этому обвинению первая степень не защищена.**
+
+**Это важнейший результат раунда: возражение Сев. Голландии (1619) сформулировано так, что попадает в структуру,
+которая будет изложена в 1634 г.** Проверять по тексту `Acta` — **п. 230**.
+
+**6. Второе следствие — о воле и обетованиях (сс. 208–209).** «*Eu égard à la premiere, il dit que **Dieu veut que
+tous hommes soyent sauuez, mais pourueu qu'ils croyent**. Il dit que c'est **vn decret de sauuer les hommes; mais qui
+produit seulement des promesses conditionelles***».
+И механику он объясняет **не как уловку**: «*les promesses qui conuient tous les hommes à salut, **ne determinant
+point precisement ce que c'est que Dieu a determiné en son conseil eternel**; mais **ce qu'il est prest & appareillé
+de faire à tous ceux qui seront amenez à soy, quelque resistance***» (с. 209).
+**Тут два хода, и их надо различать:** (а) обетование говорит о **готовности**, а не о **решении**; (б) готовность
+— **реальная**, «*quelque resistance*». **Первый ход — тот самый, который в §4.113 назван правилом «évenemens /
+conseils»**; здесь он впервые произнесён **про обетования**, а не только про выражения.
+
+**7. Третье следствие — и это прямой удар по интерпретации статьи (сс. 210–211).**
+> «*Mais vient-il à parler de ceux-là seulement que Dieu a **esleus d'entre les autres**… **il ne craint pas de dire
+> que les promesses de Dieu leur appartiennent privativement aux autres***».
+> «*Mais la **generalité des promesses seule**, en soy, **ne fait point le salut commun à tous**… **cette reuelation
+> speciale**… **le retreint aux esleus***».
+> «*la difference qui est entre **la voix exterieure de l'homme** & **la vocation interieure**: laquelle seule est
+> accompagnée d'efficace, & est propre aux esleus seulement***».
+> «*aucuns concluent **fort hors de propos**, disant que **tous hommes indifferentment sont esleus**, pource que la
+> doctrine de salut est vniverselle***.
+**Амиро прямо называет «вне предложения» вывод «все избраны, раз зов всеобщ».** Если в статье этот вывод делается
+— он **не амировский**, и это надо сказать.
+
+**8. И вот место, которое надо прочесть медленно (с. 211).**
+> «*Item, **la dispute n'est point** de sçauoir si Iesus-Christ est venu **pour purger les pechez de tout le monde**:
+> **car cela est sans contredit**: mais cependant cette sentence se doit conjoindre à l'opposite, **qu'il est venu
+> afin que quiconque croira**… Et de fait **nous ne sommes pas sur cette question**, à sçauoir **quelle est la vertu de
+> Christ, quel bien il nous a apporté, ou que c'est qu'il a fait en soy**: mais **à qui c'est qu'il se donne, &
+> lesquels il fait veritablement participants de sa grâce***».
+
+**Это — почти дословно «quid Christus in se / quid nobis»**, классическая формула различения приобретения и
+приложения. **Три следствия, и все три бьют по обеим сторонам спора:**
+1. **Для статьи:** тезис «Христос умер за всех» у Амиро **не спорен** («*sans contredit*») — и **не он** предмет
+   спора. Предмет — **кому Он Себя даёт**. Значит, статья, выставляющая «за всех» как **исправление** реформатского
+   учения, **спорит с тем, с чем Амиро не спорил**, и **не спорит о том, о чём спорил он**.
+2. **Для дортской стороны:** её собственный вопрос («*à qui*») здесь **признаётся** — и признаётся **Кальвином**
+   в передаче Амиро. То есть «ограниченность» у Амиро **не в объёме смерти**, а в **даре веры**.
+3. **Для нашей серии — точная формула:** **спор идёт не о ширине креста, а о том, что делает веру верой.** Это уже
+   сказано в §4.114 п. 5 (контрфактическое), но здесь **сам Амиро** ставит вопрос именно так.
+
+**9. И сразу — граница этой формулы.** «*nul ne peut estre participant de Christ, sinon celuy qui a esté **adopté, &
+choisi de Dieu** pour estre de ses enfans*» (с. 211–212). **Причастие — только избранным.** Это дортский вывод,
+произнесённый Амиро **без оговорок**. **Запрет для серии:** не приписывать Амиро «причастие всем» — он этого не
+говорит нигде в прочитанном.
+
+**10. Притча о брачном пире — и природа невозможности (сс. 197–198).** «*Ce qui empesche les hommes de s'approcher
+de ce merueilleux banquet… **n'est pas vne impossibilité semblable à celle d'vn homme perclus des pieds**… ou d'vn
+manchot… **Mais elle consiste en ce que les hommes ont naturellement les affections du cœur si attachées aux choses de
+la terre, qu'il ne se peut faire qu'ils s'en detournent***».
+**Это ровно то различение, которое нужно серии:** невозможность **не физическая, а нравственная** — «*il ne se peut
+faire*» по **склонности**, а не по отсутствию способностей. И рядом — дилемма, которую Амиро ставит против
+«свободной воли»: «*ou si **vn'homme… a quelque franc-arbitre** par lequel elle puisse d'elle mesme croire… **Ou si
+n'auoir point de franc-arbitre**… **nous pourroit estre legitime excuse deuant Dieu, si nous ne croyons pas***»
+(сс. 199–200). **То есть: если способность есть — верующий сам себя спасает; если нет — неверие извинительно. Оба
+рога неприемлемы ⇒ остаётся дар.** Это **точная логика**, и её можно брать в серию.
+
+**11. Что теперь можно утверждать — пять тезисов.**
+1. **Терминологическое различение статьи имеет источник в истории** — но источник этот **не Кальвин**, а
+   **Амиро, читающий Кальвина** (сс. 207–208; 1658 = 1634).
+2. **У Амиро это различение — «два способа говорить» об одной смерти**, а у статьи — **две стороны дела**. Сдвиг
+   **документирован**.
+3. **Всеобщий член у Амиро условен** («*sinon à la condition qu'ils croyent*») ⇒ **`Acta` (1619) бьёт по нему
+   формулой «reconciliabilitas»**; §4.114 п. 2 **уточнён**.
+4. **Предмет спора у Амиро — не объём, а подание** («*à qui il se donne*»); «*sans contredit*» о всеобщем
+   очищении. Статья, спорящая об объёме, **промахивается мимо предмета**.
+5. **Основание различия — общее с Дортом:** падший человек как предмет предопределения; «*sans aucune ombre de
+   misericorde*» в целостности; «*non plus qu'envers les Anges decheus*»; «*n'est debteur à homme quelconque*».
+
+**12. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); прочитано **21 чанк из 74** (~28 %); французский OCR; пагинация
+«Eschantillon» своя (сс. 197–212 прочитаны); цитаты Кальвина **не сверены** с изданием (**п. 227**).
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6502,6 +6656,7 @@ tastons*», «*degrés de l'efficace*») **точно соответствует
 | 1658 *(раунд 55, продолжение; Амиро, глава XIII, сс. 137–142)* | **Моисей Амиро**: «*il faut soigneusement distinguer **la volonté de sauver les hommes**, laquelle quelques uns appellent, **contre l'usage de l'Escriture**, la **predestination au salut**, d'auec **l'election ou predestination à la foy***»; «*celle-cy est **absolue**… & ne dépend d'aucune condition; celle-là ne peut avoir lieu quant à son effect que par la presupposition de cette condition préalable*»; «*cette mesme Escriture qui nous enseigne si disertement que **Christ est mort universellement pour tout le monde**, en parle quelques-fois… qu'il est mort **pour le petit nombre des esleus***»; правило: «*diligemment distinguer entre **les manières de parler qui sont nées de la consideration des évenemens seulement**, & **celles qui viennent de la consideration des conseils mesmes***»; против «безопасности»: «*Encore que **ie croye**, ie ne seray pas esleu à croire pourtant*» |
 | 1658 *(раунд 56; Амиро, глава XIII, сс. 143–147)* | **Моисей Амиро**: милость Божия «*ayant **deux degrés***» — первая «*ne passe pas plus avant que de nous presenter la remission de nos offenses au Rédempteur*», вторая «*passe jusques à faire que nous croyions*»; первая «*universellement manifesté à tous par la predication de l'Euangile… auec cette **resolution ferme & immuable** de les sauuer s'ils croyent*»; вторая «*a esté **expressement caché**… **afin de n'estre point en achoppement aux autres & en empeschement à la predication de l'Euangile***»; «*nul… **ne se doit presumer estre reprouué***»; **контрфактическое:** «*posé le cas… qu'il y ait quelqu'un… à qui Dieu n'auoit pas ordonné de donner la foy, qui neantmoins croye véritablement… **cettuy-là sera sauvé** sans que Dieu face aucun tort au décret*»; «*il n'a pas predestiné les autres à ne croire pas… **il s'est contenté de les laisser en leur naturelle condition***»; обратное: «*si… quelqu'vn de ceux qu'il a predestinés à croire ne creust pas… **auroit-il manqué à sa predestination***» |
 | 1658 *(раунд 56, продолжение; Амиро, «Eschantillon», сс. 103–107; чанок 40)* | **НАЙДЕН «Eschantillon de la doctrine de Calvin»** (своя пагинация): «*Caluin donc considere la misericorde de Dieu **en deux manières***»; первая — «*enclin à pardonner universellement à tous ceux qui sont repentans… **exige necessairement la repentance***»; «*le **desespoir** nous precipite en une rage… **il endurcit nos cœurs***»; вторая — «*ne se contente pas d'exiger la repentance… mais qu'elle a resolu de **créer elle mesme cette condition** en la creature*»; **таблица:** «*la precedente est **universelle**, cellecy est **particuliere***… *l'evenement est en ce regard **en suspens**, celle icy… **certain & necessaire***… *celle-là est **constante autant comme la condition l'est**, celle-cy est **invariable***»; Рим. 9:15 — «*il est **impossible d'en trouuer cause plus haute que sa volonté***» |
+| 1658 *(раунд 56, часть 5; Амиро, «Eschantillon», сс. 197–212; чанки 39, 41)* | **Сердцевина «Eschantillon»**: «*pour **difficile** que fust la reconciliation des sentimens de Caluin en ce point*»; способ — «*en **accordant ses hypotheses**, donner aux **manieres de parler**… une interpretation qui **raisonnablement** leur conuienne*»; предмет предопределения — «*l'homme **tombé** en malediction*», в целостности же «*sans **aucune ombre** de misericorde*»; **«il parle de la mort de Christ en deux diuerses manières»**: «*mort **universellement pour tous hommes, pourueu qu'ils croyent***» / «*pour ceux-là, voire pour ceux-là seulement… **absolument***», ибо «*le decret par lequel il leur est donné de croire **enclost necessairement** celuy du salut*»; «*quant à ceux-là, **il n'est mort pour eux sinon à la condition qu'ils croyent***»; **«la dispute n'est point… si Christ est venu purger les pechez de tout le monde: car cela est sans contredit»**; «*nous ne sommes pas sur… **quelle est la vertu de Christ**… mais **à qui c'est qu'il se donne***»; «*nul ne peut estre participant de Christ, sinon celuy qui a esté **adopté***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6991,6 +7146,19 @@ tastons*», «*degrés de l'efficace*») **точно соответствует
   plus haute que sa volonté*» (дортский язык, без возражений). **Гипотеза усилена:** чанок 19 (сс. 56–60) —
   вероятно, листы «Eschantillon», попавшие в скан не на месте; **не утверждать** до проверки колонтитула (п. 228).
 
+- **Раунд 56, часть 5: «Eschantillon», сс. 197–212 — «Кальвин говорит о смерти Христа двумя способами».** Амиро
+  **сам** объявляет проект истолкованием: «*pour **difficile** que fust la reconciliation des sentimens de Caluin*»
+  ⇒ «*en accordant ses **hypotheses**, donner aux **manieres de parler**… une interpretation qui **raisonnablement**
+  leur conuienne*». **Ключевое место:** «*il parle de la mort de Christ **en deux diuerses manières***» — «*mort
+  universellement pour tous hommes, **pourueu qu'ils croyent***» / «*pour ceux-là seulement… **absolument***»,
+  «*pource que le decret par lequel il leur est donné de croire **enclost necessairement** celuy du salut*».
+  **Следствия:** (1) структура статьи **найдена у Амиро**, но у него это **два способа говорить об одной смерти**,
+  а не две стороны дела; (2) всеобщий член **условен** («*sinon à la condition qu'ils croyent*») ⇒ **`Acta` 1619
+  бьёт по нему формулой «reconciliabilitas»** — **уточнение к §4.114 п. 2**; (3) предмет спора — «*à qui il se
+  donne*», а о всеобщем очищении «*sans contredit*». **ПОПРАВКА ЛОКАТОРА:** чанки 39/40/41 = сс. **197–202 /
+  203–207 / 208–212** (в §4.115 было «103–107» — ошибка OCR); «Eschantillon» — **раздел на 200+ страниц**, не
+  приложение. **П. 230** (проверить по `Acta`), **п. 231** (дочитать), **п. 232** (сверить «quid Christus in se»).
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -7140,6 +7308,18 @@ I арт. 15) — **не по памяти** — и сопоставить с «
 «Eschantillon» (сс. 56–60).
 229. *(раунд 56)* **Дочитать «Eschantillon»** (чанки 41–48) — искать: (а) цитаты, где Кальвин говорит о
 всеобщности; (б) место, где Амиро оговаривает расхождение с Кальвином; (в) начало «*Response à M. de L. M.*».
+
+**Добавлено в раунде 56, часть 5:**
+
+230. *(раунд 56)* **Проверить по `Acta` (S145 контекст), бьёт ли формула «*non reconciliabilitatem… sed
+reconciliationem*» по условному плоду** — то есть по конструкции «*sinon à la condition qu'ils croyent*». Найти
+точное место (Сев. Голландия, 108–111) и выписать полностью.
+231. *(раунд 56)* **Дочитать «Eschantillon»** (чанки 30–38 и 42–55): найти (а) начало раздела и его заглавие;
+(б) где Амиро **прямо** оговаривает расхождение с Кальвином; (в) место о «*promesses conditionnelles*» и Ниневии
+(с. 209) — полный контекст.
+232. *(раунд 56)* **Сверить цитату «*quelle est la vertu de Christ… mais à qui c'est qu'il se donne*»** с изданием
+Кальвина (Институты III.1.1 или толкование). Установить точный текст и не приписывать Амиро формулу, которой у
+Кальвина нет.
 
 **Добавлено в раунде 48:**
 
