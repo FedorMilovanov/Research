@@ -16,7 +16,7 @@
 
 **Локатор:** ANF05, раздел *Fragments of Hippolytus* (CCEL `anf05.iii.iv`), внутри — «Against Beron and Helix», **Fragment II**, `ANF05.txt:L23452–23570` (цитата `L23558–23570`).
 **Перевод (ANF):** «For with this purpose did the God of all things become man, viz., in order that by suffering in the flesh, which is susceptible of suffering, **He might redeem our whole race, which was sold to death**; and that by working wondrous things by His divinity… He might restore it to that incorruptible and blessed life **from which it fell away by yielding to the devil**; and that He might establish the holy orders of intelligent existences in the heavens… the doing of which is **the recapitulation of all things in himself**.»
-**Жанр:** фрагменты полемического слова против еретиков (Berоn/Helix).
+**Жанр:** фрагменты полемического слова против еретиков (Beron/Helix).
 **Что утверждает:** (1) Христос **выкупил весь род**, проданный смерти; (2) освобождение — от «уступки диаволу», а не от сделки с ним; (3) «рекапитуляция всего в Нём» — терминология Иринея в III в.
 **Что не утверждает:** «кому» уплачен выкуп; ничего о «праве диавола» как юридической величине.
 **Осторожно (attribution):** название фрагмента и авторство — традиционные; ANF сам оговаривает заголовок («N.B. Beron = “Vero”», `L23493–23494`), а весь блок «Fragments» включает тексты спорной атрибуции → `LOCATOR_HOLD` по атрибуции, `ORIGINAL_TEXT_HOLD` (греч. не сверен).

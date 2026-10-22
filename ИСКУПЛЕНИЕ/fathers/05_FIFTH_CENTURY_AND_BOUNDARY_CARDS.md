@@ -18,7 +18,7 @@
 | *De Trinitate* XIII.12.16 / XIII.17 (лат. сверено, см. `11_`: «Quadam iustitia dei in potestatem diaboli traditum est genus humanum»; «non potentia diabolus sed iustitia uinceretur») — XIII.13 (кн. XIII начинается `NPNF1_03.txt:L14020`) | `NPNF1_03.txt:L14847` (заголовок «Chapter 13»), текст `L14835–14860` | «If, therefore, the commission of sins through the just anger of God subjected man to the devil, doubtless the remission of sins through the merciful reconciliation of God rescues man from the devil»; «**the devil was to be overcome, not by the power of God, but by His righteousness**» |
 
 ### Жанр
-Трактаты и проповеди (экзегеза и полемика с донатистами/пелагианами) плюс догматический трактат. Ключевое: **антidonatistский контекст** чтения «весь мир».
+Трактаты и проповеди (экзегеза и полемика с донатистами/пелагианами) плюс догматический трактат. Ключевое: **антидонатистский контекст** чтения «весь мир».
 
 ### Что утверждает
 1. «Весь мир» у Иоанна Августин читает как **Церковь, рассеянную по всему миру** — то есть как антидонатистский аргумент о кафоличности, а не как тезис «каждый индивид».

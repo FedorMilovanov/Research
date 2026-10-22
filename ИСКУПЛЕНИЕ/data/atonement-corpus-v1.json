@@ -1483,7 +1483,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 29,
+        "корпус": 30,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -1532,90 +1532,97 @@
         "кулисa→кулиса"
       ],
       "outOfScope": {
-        "files": 6,
-        "occurrences": 12,
-        "byFile": [
-          {
-            "path": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
-            "count": 7,
-            "lines": [
-              167,
-              178,
-              183,
-              195,
-              202,
-              229,
-              245
-            ],
-            "words": [
-              "Тregеллс",
-              "Тregеллса"
-            ]
+        "files": 0,
+        "occurrences": 0,
+        "resolved20261022": {
+          "files": 6,
+          "occurrences": 12,
+          "byFile": [
+            {
+              "path": "ИСКУПЛЕНИЕ/nt/12_NT_TEXTUAL_APPARATUS.md",
+              "count": 7,
+              "lines": [
+                167,
+                178,
+                183,
+                195,
+                202,
+                229,
+                245
+              ],
+              "words": [
+                "Тregеллс",
+                "Тregеллса"
+              ]
+            },
+            {
+              "path": "ИСКУПЛЕНИЕ/nt/03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md",
+              "count": 1,
+              "lines": [
+                138
+              ],
+              "words": [
+                "Тregеллс"
+              ]
+            },
+            {
+              "path": "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md",
+              "count": 1,
+              "lines": [
+                367
+              ],
+              "words": [
+                "Павелa"
+              ]
+            },
+            {
+              "path": "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
+              "count": 1,
+              "lines": [
+                682
+              ],
+              "words": [
+                "polemikи"
+              ]
+            },
+            {
+              "path": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
+              "count": 1,
+              "lines": [
+                21
+              ],
+              "words": [
+                "антidonatistский"
+              ]
+            },
+            {
+              "path": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
+              "count": 1,
+              "lines": [
+                19
+              ],
+              "words": [
+                "Berоn"
+              ]
+            }
+          ],
+          "lanes": {
+            "nt": {
+              "files": 4,
+              "occurrences": 10
+            },
+            "fathers": {
+              "files": 2,
+              "occurrences": 2
+            }
           },
-          {
-            "path": "ИСКУПЛЕНИЕ/nt/03_NT_LEXICAL_FIELD_AIMA_AND_PREPOSITIONS.md",
-            "count": 1,
-            "lines": [
-              138
-            ],
-            "words": [
-              "Тregеллс"
-            ]
-          },
-          {
-            "path": "ИСКУПЛЕНИЕ/nt/07_NT_PERICOPE_CARDS_ACTS_AND_PAUL.md",
-            "count": 1,
-            "lines": [
-              367
-            ],
-            "words": [
-              "Павелa"
-            ]
-          },
-          {
-            "path": "ИСКУПЛЕНИЕ/nt/08_NT_PERICOPE_CARDS_HEBREWS_CATHOLICS_APOCALYPSE.md",
-            "count": 1,
-            "lines": [
-              682
-            ],
-            "words": [
-              "polemikи"
-            ]
-          },
-          {
-            "path": "ИСКУПЛЕНИЕ/fathers/05_FIFTH_CENTURY_AND_BOUNDARY_CARDS.md",
-            "count": 1,
-            "lines": [
-              21
-            ],
-            "words": [
-              "антidonatistский"
-            ]
-          },
-          {
-            "path": "ИСКУПЛЕНИЕ/fathers/11_III_IV_GAPS_AND_LATIN_WEST_CARDS.md",
-            "count": 1,
-            "lines": [
-              19
-            ],
-            "words": [
-              "Berоn"
-            ]
-          }
-        ],
-        "where": "nt/12 — 7 вхождений (Тregеллс/Тregеллса), nt/03 — 1, nt/07 — 1 (Павелa), nt/08 — 1 (polemikи), fathers/05 — 1 (антidonatistский), fathers/11 — 1 (Berоn)",
-        "lanes": {
-          "nt": {
-            "files": 4,
-            "occurrences": 10
-          },
-          "fathers": {
-            "files": 2,
-            "occurrences": 2
-          }
+          "closedAtRound": "раунд после мержа #216 (22.10, 21:3xZ)",
+          "treatment": "выравнено по написанию самого корпуса, а не по моему вкусу: Tregelles (18 чистых вхождений в 12 файлах, в том же nt/ в 6 файлах), Beron (2 чистых в том же fathers/11), «Павела» — падежная форма имени, «жанр полемики» и «антидонатистский» — по 136 и 2 чистым вхождениям соответствующих форм в корпусе",
+          "whyNotEarlier": "до мержа это был чужой лан без права правки; права переданы владельцем, поэтому дефект исправлен, а не снят с учёта"
         },
-        "notFixedHere": "файлы принадлежат под-корпусам nt/ и fathers/; правка их орфографии — вход в чужой лан, поэтому заведено 8-й открытой записью correctionsPending",
-        "live": "числа переснимаются гейтом каждый прогон (rglob по ИСКУПЛЕНИЕ/**/ *.md кроме верхнего уровня); раньше здесь стояло «5 файлов» и Berоn был приписан nt/11 — обе ошибки снимает обход"
+        "where": "чужих вхождений больше нет; прежняя разбивка (nt/12 — 7, nt/03 — 1, nt/07, nt/08, fathers/05, fathers/11) перенесена в resolved20261022 как история, а не вытерта",
+        "notFixedHere": "полей для «не исправлять здесь» больше нет: правило действует одинаково на весь ИСКУПЛЕНИЕ/**",
+        "live": "числа переснимаются гейтом каждый прогон (rglob по ИСКУПЛЕНИЕ/**/*.md кроме верхнего уровня)"
       },
       "measuredAt": "2026-10-22T12:55Z",
       "method": "python3-обход всех 84 md корпуса с паттерном [А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё] и фильтром «в слове есть обе графики»; остаток по под-корпусам: grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' ИСКУПЛЕНИЕ/nt ИСКУПЛЕНИЕ/fathers | wc -l",
@@ -1989,13 +1996,15 @@
       {
         "where": "ИСКУПЛЕНИЕ/nt/ (4 файла, 10 вхождений) и ИСКУПЛЕНИЕ/fathers/ (2 файла, 2 вхождения)",
         "defect": "латинские буквы внутри кириллических слов: «Тregеллс» и «Тregеллса» (nt/12 — 7 строк, nt/03 — 1), «Павелa» (nt/07:367), «polemikи» (nt/08:682), «антidonatistский» (fathers/05:21), «Berоn» (fathers/11:19)",
-        "resolution": "молча не исправлено; команды съёма и список строк — в integrityGate.mixedScriptCheck.outOfScope.byFile, там же номера строк, чтобы лан мог закрыть правку одной заменой",
-        "applied": false,
+        "resolution": "исправлено после мержа #216: 12 вхождений в 6 файлах выравнены по написанию самого корпуса (Tregelles / Beron / Павела / полемики / антидонатистский); sha и время коммита записываются следующим коммитом, потому что собственное время коммита изнутри него не измеряется — это то же правило, что у commitTimeChecks",
+        "applied": true,
         "checkedAgainstMain20261022": false,
-        "measuredAt": "2026-10-22T12:26Z",
+        "measuredAt": "2026-10-22T21:35Z",
         "method": "python3 -обход 84 md ИСКУПЛЕНИЕ c паттерном смешанной графики; пофайловый вывод с номерами строк (grep -n по каждому файлу)",
         "recheckCommand": "grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' --include='*.md' ИСКУПЛЕНИЕ/nt ИСКУПЛЕНИЕ/fathers | cut -d: -f1,2",
-        "why": "править орфографию в чужом лане — то же, что молча поправить чужой счётчик: я это уже запретила сегодня на себе"
+        "why": "править орфографию в чужом лане — то же, что молча поправить чужой счётчик: я это уже запретила сегодня на себе",
+        "appliedHow": "коммит eb90045 этого PR; время снято git log -1 --format=%cI eb90045 и зафиксировано в commitTimeChecks (правило 4)",
+        "appliedAt": "2026-10-22T20:01:00Z"
       }
     ],
     "mirrorLag": {
@@ -2019,11 +2028,12 @@
     "recheckCommand": "для каждой папки: google_drive__list_files q=\"'<folderId>' in parents and trashed = false\"; для файла: get_file (size, modifiedTime)",
     "correctionsPendingCount": {
       "total": 8,
-      "applied": 3,
-      "open": 5,
-      "measuredAt": "2026-10-22T12:26Z",
-      "method": "python3 -c \"import json;d=json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));c=d['driveSourceAudit20261016']['correctionsPending'];print(len(c),sum(1 for x in c if not x['applied']))\"",
-      "why": "число открытых записей — единственный способ понять, закрыт ли периметр; без единой схемы его нельзя ни посчитать, ни проверить, поэтому гейт сверяет этот словарь с фактическим составом"
+      "applied": 4,
+      "open": 4,
+      "measuredAt": "2026-10-22T21:38Z",
+      "method": "python3 -c \"import json;d=json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));c=d['driveSourceAudit20261016']['correctionsPending'];print(len(c),sum(1 for x in c if x['applied']),sum(1 for x in c if not x['applied']))\"",
+      "why": "число открытых записей — единственный способ понять, закрыт ли периметр; гейт сверяет этот словарь с фактическим составом (правило 9)",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     },
     "correctionsPendingSchema": {
       "required": [
@@ -2603,7 +2613,8 @@
       "ee0c735": "2026-10-18T08:43:24Z",
       "a01664c8": "2026-10-14T00:18:56Z",
       "6cac62e": "2026-10-15T08:28:55Z",
-      "eecb25d": "2026-10-22T09:28:31Z"
+      "eecb25d": "2026-10-22T09:28:31Z",
+      "eb90045": "2026-10-22T20:01:00Z"
     },
     "commitTimeChecksHow": "сверяется гейтом при каждом прогоне; канонический снимок: TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd <sha>. %cI не годится: он печатает смещение коммита (у владельческих +03:00), и время «Z» из него выходит сдвигом на 3 часа",
     "lossFreeResiduals": {
@@ -2816,6 +2827,10 @@
         "versionGroups": 12,
         "rowsTotal": 12
       }
+    },
+    "commitTimeChecksNote": "добавлен f15e1a2: время собственного коммита пишется следующим прогоном, из git, а не из головы автора коммита",
+    "commitTimeChecksWhat": {
+      "eb90045": "исправление 12 вхождений смешанного письма в nt/ и fathers/ — закрытие correctionsPending[7]"
     }
   },
   "reproducibility20261022": {
@@ -2853,7 +2868,7 @@
     "countsLive": {
       "ключейРеестра": 30,
       "правилГейта": 16,
-      "shaВсверкеВремен": 9,
+      "shaВсверкеВремен": 10,
       "строкВАудитеТопологии": 26,
       "removedFigures": {
         "ошибокНаРодителе": "переехало в branchTopologyAudit20261022.gateOnMainTree: у него есть раскладка, сумма и команда съёма на worktree, а это поле переснять из CI нельзя",
@@ -2875,13 +2890,20 @@
       "правилГейта": 9,
       "why": "снимок 22.10 протух в четырёх значениях из семи, пока я дописывала правила: 18 против 19 на родителе, 4 против 5 открытых, 9 против 10 правил, плюс ключ с невнятным именем. Снимок без даты и способа — это мнение",
       "replacedBy": "countsLive"
+    },
+    "environmentNotes20261022": {
+      "autoDeleteHeadBranch": "в репозитории включено автоматическое удаление головы PR: squash-мерж #216 в 19:56:17Z снял с origin и ветку сессии (git ls-remote origin | grep dc7e8cb5 → пусто), хотя локальное представление origin/… продолжало показывать d6ae35e. Отсюда «stale info» у --force-with-lease: он сверялся с несуществующим ref'ом",
+      "consequence": "первый шаг любого нового круга после мержа — проверить, жив ли ref на сервере (git ls-remote), и восстановить его обычным push, а не force-with-lease; молчаливое расхождение локального tracking-ref'а с сервером — тот же класс, что shallow-клон: команда отвечает уверенно, а данные уже не те",
+      "measuredAt": "2026-10-22T22:05Z",
+      "method": "git ls-remote origin refs/heads/<ветка> против git rev-parse origin/<ветка>; расхождение = ref удалён на сервере",
+      "recheckCommand": "git ls-remote origin | grep -c dc7e8cb5"
     }
   },
   "reconciliationDocument20261022": {
     "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-    "lines": 929,
+    "lines": 970,
     "sectionsH2": 16,
-    "sectionsH3": 16,
+    "sectionsH3": 17,
     "history": [
       {
         "lines": 791,
@@ -2890,7 +2912,7 @@
         "note": "числа, с которыми PR был отправлен владельцу; 16 разделов включали ## 15d, ошибочно поднятый на уровень родителя"
       }
     ],
-    "measuredAt": "2026-10-22T21:12Z",
+    "measuredAt": "2026-10-22T21:58Z",
     "method": "len() по строкам файла и счёт по префиксам '## ' / '### '; переснимается гейтом каждый прогон (правило 14), расхождение = ошибка, а не замечание",
     "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
   }
