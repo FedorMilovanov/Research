@@ -459,6 +459,34 @@ for _md in sorted(CORPUS.rglob("*.md")):
                 "scripts/validate_atonement_corpus_integrity.py"
             )
 
+# ------------------------------------------- correctionsPending: единая схема --
+# 22.10: шесть записей были в форме where/was/now, одна — where/status/erratum, седьмая — what/*. Из-за этого
+# «сколько открытых» нельзя ни посчитать, ни проверить — а это единственный вопрос, который имеет смысл к
+# незакрытому периметру. Схема приведена к where/defect/resolution/applied, и далее она требуется машиной.
+_cpc = (reg.get("driveSourceAudit20261016") or {}).get("correctionsPending") or []
+for _i, _c in enumerate(_cpc):
+    _miss = [k for k in ("where", "defect", "resolution", "applied", "checkedAgainstMain20261022") if k not in _c]
+    if _miss:
+        errors.append(
+            f"реестр.driveSourceAudit20261016.correctionsPending[{_i}] без обязательных ключей {_miss} — "
+            "запись в произвольной форме не читается машиной и не считается; перенести текст в where/defect/resolution"
+        )
+    if "applied" in _c and not isinstance(_c["applied"], bool):
+        errors.append(
+            f"correctionsPending[{_i}].applied = {_c['applied']!r}: только true/false, иначе «закрыто» становится мнением"
+        )
+_claim = (reg.get("driveSourceAudit20261016") or {}).get("correctionsPendingCount") or {}
+if _cpc and _claim:
+    _open = sum(1 for c in _cpc if not c.get("applied"))
+    if (_claim.get("total"), _claim.get("open"), _claim.get("applied")) != (len(_cpc), _open, len(_cpc) - _open):
+        errors.append(
+            f"correctionsPendingCount говорит total/open/applied = "
+            f"{_claim.get('total')}/{_claim.get('open')}/{_claim.get('applied')}, а по составу "
+            f"{len(_cpc)}/{_open}/{len(_cpc) - _open}: после любой новой записи или закрытия число обязано быть переснято"
+        )
+elif _cpc and not _claim:
+    errors.append("correctionsPending есть, а correctionsPendingCount нет — число открытых записей никто не сверяет")
+
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")
 if errors:

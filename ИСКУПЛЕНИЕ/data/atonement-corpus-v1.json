@@ -1422,11 +1422,12 @@
         "commitTimeChecks сверяется с git; не сверено ни одного — FAIL, один недоступный — примечание",
         "markdown корпуса не вправе ссылаться на несуществующий путь реестра: `ключ.путь.ещё` разрешается по data/atonement-corpus-v1.json",
         "hollowed-out gate: сам скрипт обязан быть живым (len>4000, publicationEligible=false) и workflow — содержать push:main и schedule",
-        "workflow обязан бирать полную историю: fetch-depth:0 + шаг refuse a history-blind checkout (проверяется на CI-стороне)"
+        "workflow обязан бирать полную историю: fetch-depth:0 + шаг refuse a history-blind checkout (проверяется на CI-стороне)",
+        "единая схема записей correctionsPending (where/defect/resolution/applied:bool/checkedAgainstMain) + сверка объявленного числа total/open/applied с фактическим составом"
       ],
-      "measuredAt": "2026-10-22T11:30Z",
+      "measuredAt": "2026-10-22T11:39Z",
       "method": "python3 -B scripts/validate_atonement_corpus_integrity.py; мутации каждой проверки — отдельным прогоном, засчитывается только FAIL с ожидаемым сообщением (не просто ненулевой exit)",
-      "mutationScore20261022": "9 из 9 за последние прогоны: 6 (правила дат/плейсхолдеров/времён) + 3 (разрешение ссылок дока→реестр), восстановление реестра побайтовое (cmp)",
+      "mutationScore20261022": "13 из 13 за день: 6 (правила дат/плейсхолдеров/времён коммитов) + 3 (разрешение ссылок дока→реестр) + 4 (схема correctionsPending и её число); засчитывается только FAIL с ожидаемой фразой, после каждого — побайтовое восстановление (cmp)",
       "why": "все восемь правил — про одно и то же: вывод, который нельзя переснять, не является фактом; отсюда же и запрет ссылок в доке на невнесённые данные (коммит ae2821a оставил в 17_ ссылку на ключ, которого скрипт-заполнитель не создал)"
     }
   },
@@ -1678,62 +1679,71 @@
     "correctionsPending": [
       {
         "where": "14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md:20",
-        "was": "страница Goold в этом PDF unchecked из-за extraction cap 25 MB",
-        "now": "копия в Drive — том I из 24 (Clark 1862), том X в неё не входит: проверка страниц этим файлом невозможна в принципе",
+        "defect": "страница Goold в этом PDF unchecked из-за extraction cap 25 MB",
+        "resolution": "копия в Drive — том I из 24 (Clark 1862), том X в неё не входит: проверка страниц этим файлом невозможна в принципе",
         "applied": false,
         "why": "вне периметра записи этой сессии (согласовано: только 17_, этот реестр и 07_)",
-        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана"
+        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
       },
       {
         "where": "13_DORT_II_CALVIN_OWEN_EXTENT.md §2.1",
-        "was": "Drive-копия Кальвина — только дубль текста",
-        "now": "это перевод Аллена (1813, 5-е американское, том I из двух), а не Beveridge CTS 1845, том II: дубля нет",
+        "defect": "Drive-копия Кальвина — только дубль текста",
+        "resolution": "это перевод Аллена (1813, 5-е американское, том I из двух), а не Beveridge CTS 1845, том II: дубля нет",
         "applied": false,
         "why": "то же",
-        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана"
+        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
       },
       {
         "where": "05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md R01/R05",
-        "was": "Drive 45 MB extract fail; Goodwin — том не указан",
-        "now": "идентичность copiй установлена (Allen vol. I; Goodwin vol. VI из VI, без текстового слоя) — queue должен требовать том II Beveridge и нужный том Goodwin",
+        "defect": "Drive 45 MB extract fail; Goodwin — том не указан",
+        "resolution": "идентичность copiй установлена (Allen vol. I; Goodwin vol. VI из VI, без текстового слоя) — queue должен требовать том II Beveridge и нужный том Goodwin",
         "applied": false,
         "why": "то же",
-        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана"
+        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
       },
       {
         "where": "synthesis/00_README_FALLBACK_2026-10-07.md",
-        "status": "в git отсутствует, в Drive живёт: id 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko, 6303 B, 2026-10-08",
-        "erratum": "erratum 2026-10-16: git-путь synthesis/00_README_FALLBACK_2026-10-07.md отсутствует в дереве, ссылка на него в ли́дере (строка 158) ведёт в никуда; сам текст жив как Drive-объект 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko (6303 B). Внесение из Drive или удаление ссылки решает владелец под-корпуса synthesis.",
+        "defect": "",
+        "resolution": "в git отсутствует, в Drive живёт: id 1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko, 6303 B, 2026-10-08",
         "applied": false,
         "why": "чужой под-корпус",
-        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана"
+        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
       },
       {
         "where": "07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md, раздел 7 (первая редакция этого же дня)",
-        "was": "7 копий JSON и 6 копий прав ли́дера (снято на глаз по части листинга)",
-        "now": "9 и 10 — пересчёт по всем 65 именам, сумма по семьям сверена с длиной листинга",
+        "defect": "7 копий JSON и 6 копий прав ли́дера (снято на глаз по части листинга)",
+        "resolution": "9 и 10 — пересчёт по всем 65 именам, сумма по семьям сверена с длиной листинга",
         "applied": true,
         "appliedAt": "2026-10-17",
-        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана"
+        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
       },
       {
         "where": "17_...md, 10c и 13b; adjacentLanes этого реестра",
-        "was": "+2 205 (съёмка на раунде 23) при +2 396 в теле PR",
-        "now": "47 файлов / +2 494 / 16 и 20 конфликтов / ошибка JSON на строке 905 — переснято на 19836b3 и записано во все три артефакта",
+        "defect": "+2 205 (съёмка на раунде 23) при +2 396 в теле PR",
+        "resolution": "47 файлов / +2 494 / 16 и 20 конфликтов / ошибка JSON на строке 905 — переснято на 19836b3 и записано во все три артефакта",
         "applied": true,
         "appliedAt": "2026-10-17",
-        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана"
+        "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
       },
       {
-        "what": "synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md объявляет «реестр расхождений C-01…C-15» и «15 зафиксированных расхождений» (стр. 68), тогда как synthesis/02_CONFLICT_LEDGER.md в main доведён до C-24. Файл с датой в имени, поэтому это намеренный снимок либо дрейф — решает владелец; в 00_CURRENT_AUTHORITY тот же счётчик этот PR обновил до C-24 с датой",
-        "whyNotFixedHere": "было (решение не принято молча): гейт читал диапазон только из корпусного ли́дера — 22.10 расширено до всех authority-файлов, расхождение закрыто дополнением; числа статусов сознательно не дублируются",
-        "measuredAt": "2026-10-22T10:39Z",
-        "method": "git show origin/main:ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md | grep -oE 'C-[0-9]{2}[.…]+C-[0-9]{2}' | sort -u  — и то же для HEAD; максимум леджера: git show origin/main:ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md | grep -oE 'C-[0-9]{2}' | sort -u | tail -1",
-        "recheckCommand": "тот же, что в method; ожидаемое расхождение: C-01…C-15 и в main, и в HEAD (моим PR не тронут)",
-        "checkedAgainstMain20261022": true,
+        "where": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+        "defect": "стр. 68 и объявленный диапазон: «15 зафиксированных расхождений (C-01…C-15)», тогда как 02_CONFLICT_LEDGER.md доведён до C-24 (24 записи)",
+        "resolution": "",
         "applied": true,
         "appliedAt": "2026-10-22T11:26Z",
-        "appliedHow": "не подмена числа, а датированное дополнение по конвенции самого файла (раунды 2–18 тоже дописаны): объявлен диапазон C-01…C-24, прежние 15/16 остались в тексте как история; проверка гейта расширена с одного названного файла на все 00_*AUTHORITY*.md корпуса, поэтому пассивный теперь не пройдёт"
+        "appliedHow": "не подмена числа, а датированное дополнение по конвенции самого файла (раунды 2–18 тоже дописаны): объявлен диапазон C-01…C-24, прежние 15/16 остались в тексте как история; проверка гейта расширена с одного названного файла на все 00_*AUTHORITY*.md корпуса, поэтому пассивный теперь не пройдёт",
+        "method": "git show origin/main:ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md | grep -oE 'C-[0-9]{2}[.…]+C-[0-9]{2}' | sort -u  — и то же для HEAD; максимум леджера: git show origin/main:ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md | grep -oE 'C-[0-9]{2}' | sort -u | tail -1",
+        "measuredAt": "2026-10-22T10:39Z",
+        "recheckCommand": "тот же, что в method; ожидаемое расхождение: C-01…C-15 и в main, и в HEAD (моим PR не тронут)",
+        "checkedAgainstMain20261022": true,
+        "why": "было (решение не принято молча): гейт читал диапазон только из корпусного ли́дера — 22.10 расширено до всех authority-файлов, расхождение закрыто дополнением; числа статусов сознательно не дублируются",
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
       }
     ],
     "mirrorLag": {
@@ -1754,7 +1764,15 @@
     "correctionsPendingNote": "записей 6, все три — чужие файлы (13_, 14_, 05_ R01/R05); ни одна не противоречит раунду 63: 05_SOURCE_REGISTRY и 13_/14_ им не изменены",
     "measuredDay": "2026-10-16",
     "precisionNote": "день аудита; точные минуты по всему фронту не снимались, поэтому здесь стоит день. Точные времена есть у конкретных съёмок: hubFolderInventory.recheck20261018.at, recheck20261022.at, mirrorLag.measuredAt",
-    "recheckCommand": "для каждой папки: google_drive__list_files q=\"'<folderId>' in parents and trashed = false\"; для файла: get_file (size, modifiedTime)"
+    "recheckCommand": "для каждой папки: google_drive__list_files q=\"'<folderId>' in parents and trashed = false\"; для файла: get_file (size, modifiedTime)",
+    "correctionsPendingCount": {
+      "total": 7,
+      "applied": 3,
+      "open": 4,
+      "measuredAt": "2026-10-22T11:39Z",
+      "method": "python3 -c \"import json;d=json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));c=d['driveSourceAudit20261016']['correctionsPending'];print(len(c),sum(1 for x in c if not x['applied']))\"",
+      "why": "число открытых записей — единственный способ понять, закрыт ли периметр; без единой схемы его нельзя ни посчитать, ни проверить, поэтому гейт сверяет этот словарь с фактическим составом"
+    }
   },
   "branchTopologyAudit20261022": {
     "at": "2026-10-22T10:21Z",
