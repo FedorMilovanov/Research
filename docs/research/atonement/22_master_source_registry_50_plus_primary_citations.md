@@ -768,6 +768,21 @@
       impuissance de croire ne vient sinon de **pure mechanceté***»; «*il **ne doit rien à personne***» (с. 193).
       **(5) ПОПРАВКА 2:** «Eschantillon» — **50–60 сс.** (начало между сс. 161 и 192), **не 200+**; пагинация
       сплошная с томом ⇒ гипотеза о чанке 19 **ослаблена**, п. 228 снова открыт. `EDITION_HOLD`; **23/74** (~31 %).
+    - 42df. *Дополнение 2026-10-19 (раунд 57; `34_` §4.118, **S156**; `01_` §11; `03_` §34; `synthesis/03_` §35):
+      **НАЧАЛО «Eschantillon» НАЙДЕНО — с. 167** («ESCHANTILLON DE LA DOCTRINE DE CALVIN, Touchant la Predestination»);
+      трактат кончается на с. **166** («FIN»). **П. 233 ЗАКРЫТ.** **(1) Зачин:** «*Entre les choses pour lesquelles
+      les **Predicateurs de l'Eglise Romaine diffament le nom de Caluin***…»; перечень: «*Dieu a créé la plus grande
+      partie des hommes **expressement pour les damner***»; «*vne loy qu'il est impossible d'accomplir*»; «*son
+      sacrifice **n'estant destiné qu'à la redemption de fort peu***»; «*quand il suffiroit pour tout le genre humain,
+      c'est **inutilement**…*»; «*il la rend inutile… **ostant toute faculté de croire***». ⇒ **критика статьи =
+      римско-католическая карикатура, засвидетельствованная до 1634 г.** **(2) Ответы Амиро:** «*création… de cette
+      entremise de la prouidence… **infectée de la contagion du péché***»; «*en quoy… Dieu estre **redeuable à
+      l'homme**?*»; «*non pas d'une cruauté tyrannique, mais par vne **équité raisonnable***»; «*il **s'est
+      volontairement** privé de l'intégrité*». **(3) «Comme si» (с. 164):** «*S. Paul… parle… **comme s'il auoit esté
+      ordonné seulement pour eux**… quoy que… **il ait esté enuoyé pour sauuer tous les humains, pourueu que***».
+      **(4) Цена всеобщности:** «*l'autre… **n'est quasi pas considerable***»; «*l'incredulité des vns empeschant
+      qu'ils n'en reçoiuent **aucun***». **(5) Три степени любви** (сс. 163–164): третья — «*il nous aime **pource
+      que nous l'aimons** au reciproque*». `EDITION_HOLD`; **25/74** (~34 %). **Новые пп. 236–238.**
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

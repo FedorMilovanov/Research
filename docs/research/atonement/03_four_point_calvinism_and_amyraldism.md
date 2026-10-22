@@ -1257,3 +1257,42 @@ monde***» (Ин. 17:9). **Это «pro reprobis Christus nec spopondit, nec ora
 
 **33.6. Оговорки.** `EDITION_HOLD`; 23 чанка из 74 (~31 %); цитаты Кальвина не сверены (п. 232); «*je ne prie point
 pour le monde*» — надо выяснить, цитата это или своё (п. 234).
+
+
+## 34. Дополнение (2026-10-19; раунд 57; кросс-досье `34_` §4.118, **S156**): «Eschantillon» открывается перечнем
+клеветы — и это тезис статьи
+
+**34.1. Титул и место.** «**ESCHANTILLON DE LA DOCTRINE DE CALVIN, Touchant la Predestination**» (с. 167); трактат
+кончается на с. 166 («**FIN**»).
+
+**34.2. Зачин (с. 167).** «*Entre les choses pour lesquelles les **Predicateurs de l'Eglise Romaine diffament le nom de
+Caluin**, la doctrine de la Predestination semble estre la principale*». Далее — перечень: «*Dieu a créé la plus
+grande partie des hommes **expressement pour les damner***»; «*vne loy qu'il est impossible d'accomplir*»; «*son
+sacrifice **n'estant destiné qu'à la redemption de fort peu***»; «*quand il suffiroit pour tout le genre humain, c'est
+**inutilement***»; «*il la rend inutile… **ostant toute faculté de croire***».
+
+**34.3. Что это значит для нашего спора.** Три пункта перечня — **ровно** аргументы статьи. **Вывод:** критика
+«ограниченного искупления» **не нова**; она засвидетельствована как **римско-католическая** и **отвергнута
+Амиро**. То есть **обе стороны** нашего спора — сомюрская и дортская — **согласны**, что перечень ложен; спорят они
+о **другом**.
+
+**34.4. Ответ Амиро — и он дортский по существу.**
+1. **Переименование предмета:** «*il faut entendre ce mot de **création**… de cette entremise de la prouidence…
+   **infectée de la contagion du péché***» (сс. 170–171).
+2. **Долг:** «*en quoy est-ce qu'il pense Dieu estre **redeuable à l'homme**?*» (с. 171); «*non pas d'une cruauté
+   tyrannique, mais par vne **équité raisonnable***» (с. 172).
+3. **Падение:** «*il **s'est volontairement** privé de l'intégrité*»; «*cela ne fait rien pour le relever de coulpe*»
+   (сс. 174–175).
+**⇒ Обвинение в «необходимости греха» Амиро опровергает, а не принимает.**
+
+**34.5. И — «comme si» (с. 164).** «*S. Paul… parle de l'enuoy du Fils… **comme s'il auoit esté ordonné seulement pour
+eux**… quoy que… **il ait esté enuoyé pour sauuer tous les humains, pourueu que…***».
+**Правило Амиро:** частные тексты — «как если бы»; всеобщее — буквально. **Обратно дортскому** (§4.113).
+**Это ответ на вопрос, откуда в статье берётся уверенность, что «мир» = каждый:** не из текста, а из **сомюрского
+правила**.
+
+**34.6. И цена всеобщности (с. 164).** «*L'autre… **n'est quasi pas considerable***»; «*l'incredulité des vns
+empeschant qu'ils n'en reçoiuent **aucun***»; «*il semble que Dieu ait eu seulement égard à ceux à qui il a ordonné de
+la rendre fructueuse*».
+
+**34.7. Оговорки.** `EDITION_HOLD`; 25/74; цитаты Кальвина не сверены.
