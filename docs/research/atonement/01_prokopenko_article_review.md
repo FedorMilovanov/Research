@@ -64,3 +64,964 @@
 1. Статья А. Прокопенко представляет собой классический образец **сублапсарианского амиральдианства**, популярного в диспенсационально-баптистской среде США, но не отражает историческое вероисповедание конфессионального кальвинизма (Дорт, Вестминстер, 1689 г.).
 2. Попытка защитить универсальный масштаб креста ценой разделения приобретения и применения искупления лишает Голгофу реальной спасительной действенности, сводя крест к созданию гипотетической возможности.
 3. Классическое реформатское учение о **действенном (партикулярном) искуплении** (*Definite Atonement*) сохраняет тринитарную гармонию, непорочность Божьего правосудия и полноту триумфа Христа.
+
+---
+
+### 3.1. Предварительный сводный вывод по статье (2026-10-15; после досье `34_`, раунды 1–6, и серии 01–33)
+
+**Статус блока:** `PRELIMINARY` · fail-closed · `EVIDENCE_HOLD` по вопросу об объёме искупления **не снят** (по статье он не решается ни в пользу Прокопенко, ни против; `00_CURRENT_AUTHORITY` запрещает формулу «ограниченное искупление доказано»). Пункты 1–3 выше (рецензия 2026-10) сохраняются как исторический слой; этот блок их **калибрует**, не удаляя. Опорные локаторы — в [`34_`](34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md) (§§4.1–4.29, таблица S1–S46), [`22_`](22_master_source_registry_50_plus_primary_citations.md) (№ 21, 26, 29, 41–43a), `../../../ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md` C-16.
+
+#### I. Что в статье выдерживает проверку (сильные стороны; обязательный steelman)
+
+1. **У его содержательной позиции есть реальная реформатская родословная.** Формула «цена достаточна для всех / действенна для избранных» с условным всеобщим «за всех» и действенным партикулярным «за избранных» — это английский гипотетический универсализм Давенанта, Ашера, Престона, Калами; официальный прецедент — *Collegiat Suffrage* британской делегации в Дорте (1619/1629, pp. 43–48: «grace of **effectuall redemption**» для избранных; «Christ therefore so dyed for all, that all and every one by the meanes of faith might obtaine remission of sins… But Christ so dyed for the elect, that by the merit of his death in speciall manner destinated unto them… they might infallibly obtaine both faith and eternall life»; при этом отвергнуто мнение, что у Бога «no other intention of saving any particular persons then conditionall», p. 56) (`34_` S33, §4.22). Это не арминианство и не «либерализм» (ledger C-10, C-11: ярлыки запрещены).
+2. **Всеобщность предложения Евангелия и достаточность жертвы** (Дорт II.3, II.5; Шедд II.482–486; Каннингем; Турретин XIV.14 §IX о *pretio et sufficientia*) — общереформатские положения; здесь он читает традицию верно.
+3. **Счёт слов WCF (redemption 8 : atonement 0) арифметически верен** (`34_` S32, §4.20); сноска 95 честно оговаривает, что *sub-/infra-* «часто употребляются как синонимы»; формулу Шедда он сам называет необычной. Автор не скрывает своих источников (Erickson, Thiessen, Demarest, Allen) — генеалогия позиции прослеживается по его же ссылкам.
+4. **Мотив «баланса»** (избежать крайностей «крест ничего не сделал для неспасённых» / «крест сделал всех спасаемыми, но не спас никого») совпадает с тем, что сама реформатская традиция отсекает (ledger C-10; Мюррей о «общих благах репробатам от креста»).
+
+#### II. Что опровергнуто текстами (`RESOLVED-BY-TEXT`, высокая уверенность)
+
+1. **Терминологический тезис (сс. 23–28) — лексическая инверсия.** В источниках 1619–1695 гг. (Suffrage, Owen 1648/1650, Rutherford 1655, Bernard/Ussher 1658, Polhill 1673, Baxter 1694; латынь: Twisse 1653, p. 196, *pretium redemptionis pro peccatis totius mundi*) спорный предмет называется **redemption**, цена — **satisfaction / price / ransom**, а *atonement* = **примирение как результат** (Рим. 5:11 «receiving the atonement», Tyndale 1526/1534 → KJV). Прокопенко переставляет гнёзда: у него *atonement* = цена, *redemption* = результат. Это не «иное словоупотребление», а обратное историческому (`34_` §§4.1–4.6, 4.19, 4.25; ledger C-16 `RESOLVED-BY-TEXT`).
+2. **Шедд — не свидетель схемы.** «Atonement unlimited, redemption limited» (II.469–470) — стипулятивное различение внутри *определённого* искупления; II.475–477: «in the Divine mind and decree the two things are inseparable» — намерение внутри *atonement*; I.441 — *sub = infra*; II.478–489 (прочитано полностью, раунды 3–6) — партикуляристская экзегеза «всеобщих» текстов, включая 2 Пет. 2:1 «по собственному исповеданию, а не в очах Божьих» (`34_` §§4.2, 4.13–4.14, 4.29 п. 4).
+3. **WCF и Дорт не содержат «ограничения по применению, а не по цене».** WCF VIII.5 (*purchased*), VIII.8, XXIX.2 (*propitiation*), WSC 29–30, WLC 59; протокол 22 окт. 1645 — «That Christ did intend to redeem the elect only» (Minutes p. 154): Ассамблея ограничивает **намерение**, и Калами ей возражает; Дорт II.8 — *efficaciter redimeret* (намерение и приобретение), Рейнолдс: «*pretium in se*… the Synod intended no more than to declare the sufficiency». Молчание WCF о слове *atonement* — факт английской лексики XVII в., а не богословский сигнал (`34_` §§4.7, 4.9, 4.18, 4.20–4.23).
+4. **«Только Топлэди называл это limited atonement» — неверно:** Cunningham 1862/1863 (II.324–332) и ряд XIX в.; Dabney 1895 критикует термин как уже ходовой; «limited atonement — изобретение TULIP (1932)» — та же ошибка (`34_` §4.8, S8; `11_`).
+5. **Лапсарианская таблица (сс. 28–31) — не историческая классификация, а учебная конструкция 1907–1983 гг.** Слова фиксируются с 1633 / 1656 / 1731 (словарные датировки, класс C); исторически *sublapsarian = infralapsarian* (Bernard 1658 p. 56; Shedd I.441; Warfield 1915 p. 118); порядок «обеспечение, достаточное для всех → избрание» — это Сомюр, у Уорфилда *post-redemptionism* («logically inconsistent form of Calvinism», pp. 118–124). Источник таблицы — Strong 1907 (pp. 777–779) → Thiessen 1949/1979 → Erickson 1983 → Прокопенко (сн. 95, 97); **сам Стронг признаёт**, что под его рубрикой «Sublapsarian» ходят два порядка, и что порядок «избрание прежде обеспечения» — у Турретина (IV.9) и Каннингема (`34_` §§4.26–4.27, 4.29 пп. 1–2; `16_` §3.1 поправка). Ось «порядок декретов» ортогональна оси «объём»: супралапсарий Твисс держит «достаточно для всех / действенно для избранных» (A64002 p. 154), а Турретин называет Твисса главой *Supralapsarii* (IV.9 §XXIII).
+6. **Фактические историографические сбои**, не зависящие от позиции: «под руководством Арминия и Гомара» (`12_` §I); атрибуции Афанасия/Кальвина/Гейдельберга (`15_`); цитаты классиков через компендиум (`13_`, `17_`). Отдельно: американская линия «Кальвин — за всеобщее искупление», на которую он опирается через Allen 2017, у Стронга (p. 778) держится на цитате, которой **нет** в комментарии Кальвина на 1 Ин. 2:2 (там: «he does not include the reprobate») (`34_` S46, §4.29 п. 5). Что думал Кальвин об объёме — открытый вопрос (C-01), но этот локатор негоден.
+
+#### III. Диагноз метода (почему ошибки системны, а не случайны)
+
+- **Двухрегистровая схема вместо трёхрегистровой.** Исторический спор ведётся в трёх регистрах — *ценность/достаточность* → *намерение/приобретение* → *применение*. Прокопенко сжимает их до двух («цена» / «результат») и выбрасывает средний — именно тот, по которому прошёл раскол XVII в. (Дорт II.8; Minutes p. 154; Turretin XIV.14 §IX; Shedd II.475). Отсюда все его «совпадения» с Дортом, Вестминстером и Шеддом: тексты, различающие намерение, читаются так, будто они различают только цену и применение.
+- **Проекция учебной терминологии XX в. на XVII в.** (*atonement* как цена; *sublapsarian* как сомюрский порядок; «limited atonement» как изобретение) — анахронизм, естественный для автора, читающего первоисточники через Erickson/Thiessen/Daniel.
+- **Структурная зависимость от линии Strong → Chafer/Thiessen → Erickson/Demarest** (Talbot/Master's формация): безусловное избрание «не к тому, чтобы Христос умер за них, а к особым воздействиям Духа» (Strong p. 779) — это и есть ядро его модели; «цели жертвы» (сс. 31–36) добавляют к нему диспенсационалистский многоцелевой слой (`07_`, `28_`). Сам Стронг признавал, что Вестминстер этой схемы не содержит («The Gospel for the elect only» — Herrick Johnson у Стронга, p. 779) и что кальвинизм «нуждается в дополнении»; Прокопенко, напротив, выдаёт схему за прочтение Вестминстера и Дорта.
+- **Самоопределение через чужие ярлыки.** Он называет себя «умеренным кальвинистом»/«сублапсарием» и ищет санкции у Дорта, WCF, Шедда — вместо честного «я в линии Suffrage/Давенанта по содержанию и в линии Сомюра/Стронга по порядку декретов». Та же подмена у его оппонентов, когда они зовут его «арминианином».
+
+#### IV. Кто он по факту (позиционирование, средняя-высокая уверенность)
+
+- **По структуре:** гипотетический универсализм сомюрского порядка (обеспечение для всех прежде избрания) = Warfield «post-redemptionism (Amyraldianism)», в американской баптистской редакции (Strong 1907 — Erickson — Demarest), с безусловным избранием и диспенсационалистским учением о «целях жертвы».
+- **По содержанию:** близок к английским гипотетическим универсалистам (Davenant, Ussher, Calamy), но без их инфралапсарианского порядка (Calamy: «special election… *massa corrupta*», Minutes p. 153) и без их лексики (*redemption* — зонтик; *satisfaction* — цена).
+- **По самоопределению:** «умеренный кальвинист»/«4-пунктник»/«сублапсарий» — ярлыки, которые носители схемы XVII в. не употребляли, а носители XX в. употребляют в стронговском смысле (`34_` §4.28, таблица «ярлык vs исповедание»).
+- **Честное имя позиции:** «гипотетический универсализм с безусловным избранием» — исторически реальная позиция меньшинства внутри реформатской традиции (оправдана в Алансоне 1637, отвергнута *Formula Consensus Helvetica* 1675 — документ, который стоит в его же библиографии; как он им пользуется, по нашим выпискам не установлено — `VERIFY`), но **не** позиция Канонов Дорта, WCF и Шедда, и не позиция «только Топлэди против».
+
+#### V. Калибровка ранних досье серии (01, 06, 17, 19, 26 и др.)
+
+Формулы вроде «неопровержимо доказывает», «полупелагианский синергизм», «классические положения арминианской сотериологии», «абсолютная… сила» аргумента Оуэна — **оценочные выводы из логики его аргумента, а не из его исповедания** (класс C/D). По исповеданию автор держит безусловное избрание, непреодолимую благодать и стойкость (сс. 28–31) — это кальвинизм по избранию и гипотетический универсализм по объёму; «арминианство» к нему текстом не доказывается, и fail-closed требует понижать такие формулы до «логическое следствие, которое автор не признаёт» (ср. Уорфилд: «logically inconsistent», не «не-кальвинист»). Что серия `34_` подтвердила **текстом** — только терминологические и историографические пункты (II.1–II.6). Экзегетические разборы (`04_`, `08_`, `21_`) и критика «целей жертвы» (`07_`) — содержательная полемика двух прочтений, статус `OPEN` (ledger C-01…C-08).
+
+#### VI. Что остаётся открытым (не снимать молча)
+
+1. Экзегеза ключевых текстов (1 Ин. 2:2; 2 Пет. 2:1; 1 Тим. 2:4–6; Евр. 2:9; Ин. 3:16; 2 Кор. 5:14–15) — `EVIDENCE_HOLD`; ни одна сторона в корпусе не «доказана».
+2. Оригиналы Thiessen 1949/1979, Erickson 1983/1998, Chafer, Lightner, Demarest, Allen 2017 — читались по выдержкам (C); строки §4.28 `34_` ждут B1/A1.
+3. Strong pp. 771–773 (его «Scriptural reasons» за порядок) и т. II — ближайший претекст экзегетического раздела статьи (сс. 12–19); совпадение набора текстов не проверено.
+4. Латынь: *Suffragium* 1619, Дорт I.7/I.15, FCH 1675 can. VI, XIII–XVI; Turretin IV.9 — номер страницы; OED по лапсарианским словам.
+5. Статья целиком под авторским правом: публичное цитирование — `RIGHTS_HOLD`; все ссылки на страницы статьи — по авторскому PDF (частное исследование).
+
+#### VII. Предварительная оценка (шкала)
+
+| Блок статьи | Вердикт | Уверенность | Опора |
+|---|---|---|---|
+| Терминология (сс. 23–28): *atonement* = цена, *redemption* = результат; Шедд; WCF 8:0; Дорт «по применению» | **Опровергнуто** — инверсия исторической лексики; атрибуции Шедду/Дорту/WCF не держатся. *(Раунд 7)* Шедд относится к limited atonement и самим Стронгом — автором формулы статьи (Strong 1907 II.773; добавлено в изд. 1907 после выхода Шедда 1888) *(Раунд 8)* **Поправка в пользу автора:** пара *atonement* (всеобщий, «цена») / *redemption* (частное) реальна в американском кальвинизме с 1819 г. (Griffin, *Humble Attempt*, pp. 101, 134, 180), термин *limited atonement* — с 1819 г.; вердикт «опровергнуто» сохраняется **как история XVII в.** (Дорт, WCF, Оуэн, Бакстер) и уточняется: не изобретение, а **анахронизм** — лексика 1819 г. приписана документам 1619/1647 гг.; сам Гриффин признаёт, что Дорт различения не делал и спрашивал о намерении (pp. 187, 192, 377) *(Раунд 9)* **Датировка уточнена и усилена:** точная формула статьи («atonement — цена искупления, redemption — само освобождение»; «universal atonement… consistent with particular redemption… with the doctrine of election») впервые документирована в анонимном эссе «Redemption and Atonement not the same», *Theological Magazine* (Нью-Йорк), ноябрь–декабрь **1795**, pp. 206–211 (перепечатка 1811, pp. 171–177), автор которого сам пишет, что до него богословы «have made no distinction»; т. е. различение — самопровозглашённое новшество новоанглийской школы, и атрибуция его Дорту/WCF (сс. 24–27) опровергается изнутри традиции автора; Griffin 1819 p. 181 относит вопрос «for whom did Christ atone?» к «divines of New-England», а вопрос Дорта — к намерению («directly opposite answers») | высокая | `34_` §§4.1–4.7, 4.13–4.14, 4.18–4.23, 4.30; A1/A2 локаторы *(раунд 8)* `34_` §4.31, S48–S50; поправки §4.8, §4.25 *(раунд 9)* `34_` §4.32, S51–S53 *(Раунд 10)* `34_` §4.33, S54–S56: Edwards Jr. 1785 — «redemption or atonement… mutually imply each other»; Smalley 1786 — redemption = дело Христа; Hopkins 1793 — учение без пары *(Раунд 11)* `34_` §4.34, S58, S61: Emmons — «redeeming us… he made a proper atonement for sin» (p. 33), «limited atonement… particular redemption» как синонимы (p. 36); Дорт, Rejectio II.1 — «impetrata redemptio… applicata» (redemptio на стороне приобретённого); цитата II.6 в статье полна *(Раунд 12)* `34_` §4.35, S62–S63: английский Дорт у Schaff (pp. 586–587) подтверждает цитату дословно, но Rejectio errorum в нём нет; *limited atonement* у Эммонса датировано 1826 г. (*Sermons* VI p. 202) — как ярлык чужой позиции, вслед за Гриффином 1819 *(Раунд 13)* `34_` §4.36, S65–S70: пара статьи дословно у Whelpley 1816 («Atonement and redemption are widely different… The former sets open the door of mercy, the latter applies the benefits of Christ», *Triangle* I p. 62), формула с. 26 — платформа нью-йоркских хопкинсианцев 1817 г. («the atonement is unlimited in its nature, and limited only in its application», *Brief View* p. 7) с ортодоксальным ответом того же года («What is the use or worth of the unapplied atonement?», *Evangelical Guardian and Review* I p. 84); апелляция к Дорту II.3 — хопкинсианский ход, оспоренный Или уже в 1811 г. (II.8) *(Раунд 14)* `34_` §4.37, S73, S77: точная пара статьи — «Atonement is satisfaction for sin, redemption is deliverance from sin… not equally extensive… a universal atonement is consistent with a limited redemption» — напечатана в *Utica Christian Magazine* II (June 1815), pp. 361–362, и повторена сноской в 1820 г.; в источнике пара держится на отрицании «коммерческого» атонемента («if the atonement were a commercial transaction… the redemption would be equally extensive»), тогда как статья определяет atonement как *цену* — гибрид *(Раунд 15)* `34_` §4.38, S78–S83: пара статьи — текст «Dialogues on Atonement» (*Evangelical Recorder* 1820 → *Utica Christian Repository* 1823 → брошюра 1825 → *N.Y. Evangelist* 1830–31 → Park 1859, pp. 547–583; автор по Park — W. R. Weeks), написанный против рукописной лекции сторонника частного искупления; Old School (Janeway 1826–27) признавала у оппонентов «a definite number» и намерение (p. 16), но настаивала: «the atonement necessarily involves the Divine intention» (p. 24), «did not pay any real price» (p. 139); *redemption* у Janeway — «price… Ransom» (pp. 81–82); ход «WCF говорит о redemption, а не об atonement» (с. 25) уже у Bacon 1855 (листы 68–70) — готовый приём New School, а не наблюдение над языком Исповедания; обе партии 1820-х гг. признавали «уплата долга за всех → освобождение всех» (Weeks, лист 211; *Utica* 1825, p. 364) — статья утверждает уплату цены за всех и отрицает вывод, т. е. стоит вне обеих |
+| «Только Топлэди» / «limited atonement — продукт TULIP» | **Опровергнуто** *(Раунд 8)* *limited atonement* — уже 1819 (Griffin pp. 180, 182 — в т. ч. внутри перечня «Пяти пунктов»), затем 1862 (Cunningham), 1895 (Dabney) | высокая | `34_` §4.8, S8; `11_` *(Раунд 12)* `34_` §4.35 п. 2: оба первых датированных носителя словосочетания *limited atonement* (Griffin 1819, Emmons 1826) — противники доктрины; словосочетание рождается как экзоним *(Раунд 13)* `34_` §4.36, S65–S66, S70: terminus словосочетания — **не позднее 1811 г.** (анонимный *Essay on the Atonement*, New York, pp. 33, 36; экзоним); самоназвания сторонников 1811 г. — *particular* / *definite atonement* (Ely pp. 26, 104); первое найденное употребление *limited atonement* сторонником — Willson 1817 (переводческая глосса); Griffin 1819 / Emmons 1826 — последующие фиксации *(Раунд 14)* `34_` §4.37 п. 6, S76: Топлэди (1769) писал «**limited redemption**» / «partial redemption» («either universal salvation, or a limited redemption, must necessarily follow»), а деяние называл «a proper, real, adequate atonement for sin»; «limited atonement» у него не найдено — сноска Stewart верна для слова «limited», но при термине *redemption*; «limited atonement» 1814–1816 — у наблюдателей и противников (S72, S74) *(Раунд 15)* `34_` §4.38 п. 3, S79: рукописная лекция сторонника частного искупления (c. 1819–1820) называла доктрину «what is improperly called the limited atonement» (цитата у Paulinus, Feb 1824; B1) — ярлык неточен и для самих сторонников |
+| Лапсарианская таблица (сс. 28–31) | **Опровергнуто как история; объяснено как генеалогия** (Strong → Thiessen → Erickson) | высокая (генеалогия), средняя (датировки — C) | `34_` §§4.26–4.27, 4.29; S36–S43 |
+| История вопроса (сс. 3–8) | **Частично верно** (Suffrage, Давенант), **частично неверно** (Дорт/WCF как союзники; Гомар; Кальвин через Allen/Strong) *(Раунд 8)* «Кальвин через Allen/Strong» сужено: кальвиновские доводы статьи (сс. 3–5: Inst. 2.12; 4.14.7; Comm. Гал. 5:12; сн. 9 о 1 Ин. 2:2 / 1 Тим. 2:4) идут через Daniel 2003, Lewis & Demarest и Allen 2017, а **не** через пастиш Стронга III.778 (его источник — Richards 1846 pp. 308–310, Мф. 26:28); общая у них линия тезиса Watts → Richards → Strong → Allen, не цитата *(Раунд 9)* «Дорт/WCF как союзники» — дополнительно: вывод статьи из Дорта II.6 (с. 25) совпадает с выводом Гриффина (1819, p. 181: «then an atonement was provided for them»), который тут же оговаривает, что вопрос Дорта — иной (намерение); статья оговорку не воспроизводит (зависимость от Гриффина не утверждается — его нет в библиографии) | средняя-высокая | `34_` §4.22, 4.29 п. 5; `12_`, `15_`, `13_` *(раунд 9)* `34_` §4.32 п. 3, S52 *(Раунд 11)* `34_` §4.34 п. 3, S60: Woods, Lect. LXXXI p. 491 — обе американские партии «united in the belief, that it is the purpose or determination of God to save only a part»; спор «general vs particular atonement» шёл при согласии о частности намерения |
+| Собственная позиция автора | **Исторически реальна, но неверно названа и неверно атрибутирована**: гипотетический универсализм сомюрского порядка в американской баптистской редакции. *(Раунд 7)* Формула статьи = Strong 1886/1907 («not the atonement… but the application»), цитируемая самим автором (с. 11, сн. 43, через Lewis & Demarest); родословная по собственному списку Стронга: Fuller — Wardlaw — Jenkyn — Griffin — Woods — Richards *(Раунд 8)* Родословная проверена по тексту: **Griffin 1819** (A1) — полное совпадение схемы, включая Дорт II.6 и 2 Пет. 2:1 как ведущий текст и «безусловное избрание + всеобщая цена»; **Fuller 1787/1803** — лишь наполовину (достаточность для всех — да; частность — в намерении: pp. 489, 697), т. е. ближе к Оуэну; уточнённое имя линии: новоанглийский «умеренный кальвинизм» (Griffin; «eastern brethren») → Strong 1886/1907 → Lewis & Demarest / Erickson / Thiessen → Прокопенко *(Раунд 9)* Начало линии отодвинуто с 1819 на **1795** (аноним, *Theological Magazine*; перепечатка 1811 в эдвардсианской антологии рядом со Smalley 1786, Maxcy 1796, Edwards, Fuller 1803); **Fuller 1803** (*Works* II, pp. 694–695) — поправка: пара «atonement = satisfaction → redemption = deliverance, an effect of the former» у него уже есть (при частности в намерении), т. е. лексически он в линии, догматически — между Оуэном и Новой Англией; **Woods** (Andover, *Works* II pp. 505–507) — «two senses» слова *atonement* (Рим. 5:11 — «of course… limited»; «means» — нет; «poverty of language»), источник стипуляции Шедда по методу, но не по букве (в т. II нет «redemption is limited»). Уточнённая линия: аноним 1795 → Griffin 1819 → [Woods/Andover — метод] → Strong 1886/1907 → Lewis & Demarest / Erickson / Thiessen → Прокопенко; Фуллер — параллельная баптистская ветвь той же лексики с частностью в намерении | средняя-высокая | `34_` §§4.28, 4.30; Warfield pp. 118–124; Strong II.771–773, III.777–779 *(раунд 8)* `34_` §4.31, S48–S50 *(раунд 9)* `34_` §4.32 пп. 4–5, S51, S53 *(Раунд 10)* `34_` §4.33 п. 4, S57: Фуллер сам истолковал «sovereignty of its application» как «design of the Father and the Son» (*Works* II, p. 710) — его формула в линии Стронга цитируется вопреки авторскому смыслу |
+| Экзегетика (сс. 12–19) и «цели жертвы» (сс. 31–36) | **Не решено** в fail-closed режиме; содержательная полемика. *(Раунд 7)* Установлена генеалогия, не истинность: ядро набора текстов (2 Пет. 2:1; 1 Ин. 2:2; 1 Тим. 2:6) и «умилостивительная цель для всего человечества» (сс. 31–32) = Strong II.771–772 (a); цели (3)–(4) — диспенсационалистский слой без параллели у Стронга | — (`OPEN`/`EVIDENCE_HOLD`) | `04_`, `07_`, `08_`, `21_`; `34_` §4.30; ledger C-01…C-08 |
+| Обвинения в арминианстве/полупелагианстве (ранние досье) | **Не подтверждаются исповеданием автора**; допустимо только как «логическое следствие, которое автор не признаёт» | высокая (как калибровка) | §V выше; ledger C-10, C-11 |
+
+**Итог одной фразой (предварительно):** статья — ясный популярный манифест *гипотетического универсализма американской учебной традиции*, чья сила — в реальном, но не названном по имени прецеденте (Suffrage/Давенант), а слабость — в том, что свою позицию она доказывает перевёрнутой лексикой и ошибочными атрибуциями (Шедд, Дорт, Вестминстер, «только Топлэди», «сублапсарианство»), которые при обращении к первоисточникам не держатся; вопрос об объёме искупления как таковой этим не решается.
+
+*Условия пересмотра блока:* закрытие пп. 31, 33, 35, 38 §8 `34_` (Strong pp. 771–773; оригиналы Thiessen/Erickson/Demarest; Calvin CTS напрямую); любой новый A1-локатор, показывающий употребление *atonement* как «цены» у реформатских авторов до 1900 г. (пока не найден: `34_` §4.25).
+
+#### 3.1.1. Дополнение раунда 7 (2026-10-15): раздел Стронга «E. The Extent of the Atonement» прочитан
+
+Опора: [`34_`](34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md) §4.30, S47 (Strong 1907, vol. II, pp. 771–773; 1-е изд. 1886, pp. 421–422 — оба PD, постраничная сверка).
+
+1. **Формула статьи получила точный адрес и дату.** «Не искупление ограничено, а его применение» / «неограниченное искупление с ограниченным применением» (сс. 11, 26, 30, 36) — перевод Strong II.771 и II.773 («The atonement is unlimited… the application of the atonement is limited»); Прокопенко сам ссылается на p. 771 (сн. 43, по Lewis & Demarest). Формула стоит уже в 1-м издании Стронга (1886, p. 421).
+2. **Главный атрибуционный сбой статьи подтверждён из её же источника.** Прокопенко подаёт Стронга как рассуждающего «в одном ключе» с Ч. Ходжем, А. А. Ходжем и Шеддом (с. 11). На p. 773 того же раздела Стронг пишет: «Among those who hold to a limited atonement is Owen… So also Turretin… Cunningham… **Shedd, Dogm. Theol., 2:464–489**» — и противопоставляет им «the view presented in the text» с опорой на Fuller, Wardlaw, Jenkyn, Griffin, Woods, Richards. В издании 1886 г. Шедда в списке ещё нет; Стронг вписал его туда после выхода «Dogmatic Theology» (1888), прочитав именно те страницы (II.464–489), на которых стоит формула «atonement unlimited, redemption limited». Иными словами, **автор формулы, которую цитирует Прокопенко, сам квалифицирует Шедда как сторонника ограниченного искупления**. Это закрывает вопрос о Шедде с третьей, независимой стороны (после самого Шедда II.475 и после Уорфилда).
+3. **Граница между двумя линиями проведена у Стронга явно:** «Christ is specially the Savior of those who believe, in that he exerts a special power of his Spirit… This is not, however, a part of his work of atonement; it is the application of the atonement» (p. 773) — против Шедда: «in the Divine mind and decree the two things are inseparable» (II.475). Схема Прокопенко целиком на стороне Стронга; его претензия на Шедда/Дорт/Вестминстер — на стороне, которую Стронг сам считал противоположной.
+4. **Родословная позиции названа первоисточником.** По списку Стронга: Andrew Fuller (*Gospel Worthy*, 2-е изд. 1801; *Works* 2:373–374, 689–709), Ralph Wardlaw, Thomas W. Jenkyn, Edward D. Griffin (1819), Leonard Woods, James Richards — англо-американский «умеренный кальвинизм» 1785–1860 гг.; прецедентом Стронг называет формулу Matthew Henry «sufficient for all; effectual for many» (p. 772). Тексты этого списка в серии **не читались** (`LOCATOR_HOLD`, `34_` §8 п. 40); пока это самоидентификация Стронга, не наша проверка.
+5. **«Цели жертвы»:** вторая цель статьи («умилостивительная — для всего человечества»: долготерпение, общая благодать, Рим. 3:25–26; сс. 31–32) совпадает со Strong II.772 (*a*): «a delay in the execution of the sentence against sin, and a space for repentance, together with a continuance of the common blessings of life»; «обеспечение для всех» = (*b*) «objective provision for the salvation of all». Третья и четвёртая цели (Кол. 1:20; Еф. 1:10) у Стронга отсутствуют — диспенсационалистский слой (`07_`, `20_`, `24_`, `28_`). «Неверный аргумент» (сс. 19–23: «за один грех не платят дважды» — некорректно без оговорок, т. к. избранные до веры — «чада гнева») структурно повторяет Strong II.773: «justice permits the sinner's discharge, but does not require it… only upon the appointed condition of repentance and faith».
+6. **Экзегетический набор** совпадает по ядру (2 Пет. 2:1 как ведущий текст; 1 Ин. 2:2; 1 Тим. 2:6), но это общий набор традиции; зависимость от Стронга доказана по формуле и архитектуре, не по набору.
+
+**Поправка к шкале (§VII):** строки «Терминология», «Собственная позиция», «Экзегетика и цели» дополнены пометками *(раунд 7)* в самих ячейках; вердикты не меняются, уверенность по Шедду и по родословной — повышена. **Итог одной фразой** уточняется: «…гипотетического универсализма американской учебной традиции **Фуллера—Стронга**, воспринятой через Lewis & Demarest, Erickson и Thiessen». `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.2. Дополнение раунда 8 (2026-10-15): Griffin 1819, Fuller 1787/1803, Richards 1846 — проверка «списка Стронга» по текстам (`34_` §4.31, S48–S50)
+
+1. **Поправка в пользу статьи — по лексике.** Пара «*atonement* — всеобщий выкуп, „цена, положенная, чтобы пленники могли выйти, если захотят“ / *redemption* — „higher ransom“ (expiation + merit), частное» в готовом виде стоит у Edward Dorr Griffin, *An Humble Attempt to Reconcile the Differences of Christians respecting the Extent of the Atonement* (1819): pp. 101, 134, 172, 180 — включая формулу «what they maintain is not so much a limited atonement as particular redemption» (p. 180), цитату Дорта II.6 (pp. 180–181), 2 Пет. 2:1 как текст «lower ransom» (p. 264) и профиль «general atonement + безусловное избрание» (p. 177). Раздел статьи «Терминологические различия» (сс. 23–28) воспроизводит эту архитектуру; канал — Strong II.773 (Гриффин в списке «the view presented in the text») → Lewis & Demarest → с. 11, сн. 43. Поэтому формула вердикта «инверсия исторической лексики» (строка «Терминология») отныне читается с оговоркой: **инверсия относительно XVII в.; воспроизведение американского узуса XIX в.** Ошибка статьи переквалифицируется из «несуществующей пары» в **анахронизм атрибуции** (пара 1819 г. приписана документам 1619/1647 гг.).
+2. **Поправка против статьи — по истории, и из её же традиции.** Гриффин трижды признаёт, что Дорт его различения не делал: «not distinguishing between atonement and the higher ransom» (p. 187); «This distinction… appears not to have been made by either party in the days of Dort» (p. 192); «the shape of their question was, for whom did he die? meaning, whose salvation did he intend to merit» (p. 377). Это свидетельство класса A1 **изнутри** линии Прокопенко, что вопрос Дорта — вопрос о **намерении**, а не о «применении» (ср. с. 25 статьи). Уверенность по строке «Терминология» в части Дорта/WCF **повышается**.
+3. **Фуллер — не предшественник схемы, а переходная фигура; возражение досье сформулировано в 1803 г.** Fuller 1787 (*Works* II, pp. 488–489): частность искупления — «in the sovereign purpose and design», «absolute determination in his death to save… the limited extent of that purpose must follow», с опорой на Витсия, Дю Мулена, Оуэна. Fuller 1803 (*Three Conversations*, pp. 693–697): James (= Фуллер) кладёт частность «in the purpose or sovereign pleasure of God»; его оппонент Peter формулирует возражение, совпадающее с §4.9/§4.25 досье: схема «confounds the atonement itself with its application… the impetration and the application of redemption… a perfectly novel sense of the word application» (p. 693), а John — «wherein is the difference between that doctrine and the doctrine of election?» (p. 694). Следствие для строки «Собственная позиция»: имя линии уточняется — **новоанглийский «умеренный кальвинизм» (Griffin 1819) → Strong → Lewis & Demarest / Erickson / Thiessen → Прокопенко**; Фуллер в этой цепи — лишь по «достаточности для всех».
+4. **Кальвин.** Источник пастиша Strong III.778 — Richards 1846 (pp. 308–310: слова Кальвина о **Мф. 26:28** «not a part of the world only, but the whole human race» + 1 Ин. 2:2 с обрывом перед «he does not include the reprobate»). Проверка сс. 3–5 статьи по тексту: Прокопенко этот пастиш **не воспроизводит** — его доводы о Кальвине: Inst. 2.12 (сн. 11), Inst. 4.14.7 (сн. 12; в статье «4.7»), Comm. Гал. 5:12 (сн. 14), с опорой на Daniel 2003, Lewis & Demarest II.380, Allen 2017; сн. 9 называет 1 Тим. 2:4, 1 Ин. 2:2 и письмо Гессгузию как доводы другой стороны. Строка «История вопроса» сужена соответственно; оценка кальвиновского тезиса по существу остаётся `OPEN` (`13_`).
+5. **Термин *limited atonement*** документирован у Гриффина (pp. 180, 182, 275, 316), причём на p. 182 — внутри перечня «Пяти пунктов» («predestination, limited atonement, total depravity, special grace, and the perseverance of the saints… the celebrated Five Points»): за 113 лет до Беттнера. Строка «Только Топлэди / продукт TULIP» дополнена; в `11_` внесена датированная сноска.
+
+**Поправка к шкале (§VII):** строки «Терминология», «Только Топлэди», «История вопроса», «Собственная позиция» дополнены пометками *(Раунд 8)* в ячейках; ни один вердикт не снят, одна формулировка смягчена в пользу автора (лексика реальна, но на двести лет моложе заявленного), одна — усилена против него (Дорт — о намерении, по признанию самого Гриффина). Что остаётся открытым: новоанглийский узус до 1819 г. (Hopkins / Emmons / Smalley / Edwards Jr.), Wardlaw / Jenkyn / Woods, Fuller pp. 373–374 и 700–709, сверка цитаты Дорта II.6 у Гриффина с купюрой статьи (`34_` §8 пп. 43–48). `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.3. Дополнение раунда 9 (2026-10-15): «Redemption and Atonement not the same» (1795) — учредительный текст различения статьи и его признание новизны
+
+Найден самый ранний текст с точной формулой раздела «Терминологические различия» (сс. 23–28): анонимное эссе «Redemption and Atonement not the same» в нью-йоркском *Theological Magazine*, vol. I, no. 3 (ноябрь–декабрь 1795), pp. 206–211, перепечатанное в новоанглийской антологии *Sermons, Essays, and Extracts… selected with special respect to the great doctrine of Atonement* (New York, 1811), pp. 171–177 (`34_` S51, §4.32; A1, PD). Совпадения с статьёй — пословные: «Atonement is the price of redemption. Redemption itself is the actual exemption and escape from bondage» (ср. с. 24: *atonement* — «цена или средство», *redemption* — «конечный результат»); «The price of redemption… is given for all men; that is, atonement is made for the sins of the whole world. But… redemption itself is not equally extensive with the price» (ср. сс. 24–26); «Universal atonement therefore is consistent with particular redemption: it is also consistent with the doctrine of election» (ср. с. 26: «ограничение не уплаченной ценой, а избранием»); «between atonement and the application of atonement, there is the same propriety of distinction as between atonement and redemption» (ср. с. 26: «неограниченное искупление с ограниченным применением»); 2 Пет. 2:1 как текст о купленных, но погибающих (ср. экзегетический раздел); «Atonement doth not imply the forgiveness of sin… No one is redeemed… until he is united to the Lord Jesus Christ» (ср. с. 23). Но первая фраза эссе — «Between atonement and redemption, divines, as yet, so far as I have been acquainted, **have made no distinction**. They have always considered those terms as conveying one and the same idea» — т. е. учредительный текст различения сам датирует его 1795 годом и отрицает его наличие у предшественников. Это закрывает вопрос об атрибуции различения Дорту (1619) и Вестминстеру (1647) свидетельством **изнутри традиции автора**, независимым от рядов досье за 1619–1695 гг. (`34_` §§4.18–4.24, 4.26).
+
+Три сопутствующих уточнения. (1) **Griffin 1819, p. 181** (S52): из Дорта II.6 он выводит то же, что статья на с. 25, и в той же фразе разводит «for whom did Christ atone?» (вопрос «divines of New-England») и «for whom did he die? meaning… whom did he intend to save» (вопрос Дорта) — «directly opposite answers»; статья воспроизводит вывод без оговорки (зависимость не утверждается). (2) **Fuller 1803** (*Works* II, pp. 694–695): пара «atonement = satisfaction / redemption = deliverance… an effect of the former» у него уже есть — поправка к §3.1.2 («Фуллер — лишь наполовину»): лексически он в линии, но частность кладёт в намерение (p. 697), а его собеседник Peter отвергает и пару («both are the immediate effects of Christ's death»). (3) **Woods, *Works* II, pp. 505–507** (S53): спор Symington/Jenkyn объявлен «difference in phraseology»; *atonement* в смысле Рим. 5:11 «of course… limited», в смысле «means» — всеобщее; «poverty of language» — андоверский метод, предшествующий стипуляции Шедда, но без её буквы (в т. II нет «redemption is limited»).
+
+**Поправка к шкале (§VII):** строки «Терминология», «История вопроса», «Собственная позиция» дополнены пометками *(Раунд 9)* в ячейках; вердикты не сняты; формулировка строки «Терминология» усилена (новшество 1795 г., признанное его автором), строки «Собственная позиция» — уточнена (линия начинается с 1795 г.; Фуллер — параллельная ветвь). Что остаётся открытым: автор эссе 1795 г.; Smalley 1786 / Edwards Jr. 1785 / Hopkins 1793 (до 1795); Woods, лекция LXXXI; сверка Дорта II.6 по трём версиям; *Christian Observer* 1803 (`34_` §8 пп. 49–54). `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.4. Дополнение раунда 10 (2026-10-15): предшественники анонима 1795 г. и самотолкование Фуллера
+
+Проверено признание анонима («divines… have made no distinction») на его собственной школе (`34_` §4.33, S54–S56). **Edwards Jr.**, *The Necessity of Atonement* (1785; перепечатка 1811), Discourse I, p. 5: «Are we forgiven through the redemption or atonement of Jesus Christ only? I say, redemption or atonement, because, in my view, **they mutually imply each other**»; p. 41: redemption/ransom/price — «metaphorical expressions, therefore not literally and exactly true… he refunded no property». **Smalley**, Discourse 4 (1786), pp. 110–111: «the redemption that is in Jesus Christ may be understood as comprehending both the merit of his obedience, and the manifestation of divine justice made by his sufferings» — *redemption* = само дело Христа; Discourse 5, p. 126: «I question not the sufficiency of the merit of Christ for the salvation of all mankind… in this sense, Christ „gave himself a ransom for all“». **Hopkins**, *System of Doctrines* (1793), I.449: «atonement sufficient to expiate for the sins of the whole world; and, in this sense, has tasted death for every man… the offer of salvation… to every one… the necessity of the renovation of the hearts of men by the holy Spirit»; I.412: «not owing to any want or defect in this, that all are not saved»; в т. I нет ни «particular redemption», ни «atonement and redemption». Вывод для раздела «Терминологические различия» (сс. 23–28): до ноября 1795 г. новоанглийская школа держит **учение** статьи (достаточно для всех — предложение всем — возрождение избранных) на старой оси «достаточность / действенность» («in this sense»), но **не** её терминологию; главный теоретик школы прямо отрицает различие слов. Утверждение статьи (с. 24), будто различие заложено в английском языке «как таковом», не подтверждается и здесь.
+
+**Фуллер о Фуллере (`34_` S57, §4.33 п. 4).** Строка Стронга «Fuller, Works 2:373–374» (II.773), на которую опирается ряд «not the atonement… but the application», указывает на фразу 2-го изд. *Gospel Worthy*: «the peculiarity which attends it, consist not in its insufficiency to save more than are saved, but in the sovereignty of its application» (p. 374). В письмах к Райленду (p. 710) Фуллер объяснил: «This is the whole of what I meant… **If more be conveyed by this sentence than the above, it conveys what I never intended**… I then placed the peculiarity of redemption wholly in the appointment or design of the Father and the Son, which… is the same thing as placing it in „the sovereignty of its application“»; и: «it was some relief to find all the old Calvinists defending the doctrine upon the same ground». Следствие для строки «Собственная позиция»: «неограниченное искупление с ограниченным применением» (с. 26) совпадает с Фуллером по словам и расходится по смыслу — у Фуллера «application» = намерение, ось impetratio/applicatio сохранена. Побочно: p. 712 — Фуллер резюмирует Кальвина (Ин. 3:16) как «offer of salvation to sinners without distinction… sovereignty of its application» — кандидат (B1) в родословную слов «without distinction» в пастише Strong III.778 (`34_` §8 п. 46).
+
+**Поправка к шкале (§VII):** строки «Терминология» и «Собственная позиция» дополнены пометками *(Раунд 10)*; вердикты не сняты; формулировка строки «Терминология» усилена (terminus post quem пары — 1786/1793, ante quem — ноябрь 1795), строки «Собственная позиция» — уточнена (Фуллер — источник слов, не смысла). Что остаётся открытым: автор эссе 1795 г. и «Essay on Atonement» (антология pp. 213–238); Emmons; Hopkins т. II; письма к Райленду pp. 699–715; сверка Дорта II.6 по трём версиям; оригиналы *Christian Observer* 1803–04 (`34_` §8 пп. 49, 51–59). `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.5. Дополнение раунда 11 (2026-10-15): Emmons, Hopkins 1793, Woods LXXXI, Дорт по латыни
+
+Проверка новоанглийской школы до 1795 г. завершена (`34_` §4.34, S58–S59). **Emmons**, *Works* V (1842), Sermon XLV «The Purchase of Christ's Blood», p. 33: «By Christ's purchasing salvation for us, or buying, ransoming and redeeming us, we are to understand that he made a proper atonement for sin, which rendered it consistent for God to offer salvation to all mankind»; p. 34: purchased/bought/ransomed/redeemed — «figurative expressions» о том, «what Christ did and suffered»; p. 36: «their darling doctrine of a limited atonement… their notion of particular redemption» — оба ярлыка для одной и той же чужой доктрины; «Christ did not merit salvation any more for the elect than for the non-elect, nor indeed for any of mankind». Итог по четырём авторам (Edwards Jr., Smalley, Hopkins, Emmons): пары статьи нет ни у кого; двое прямо отождествляют слова, двое называют *redemption* дело Христа в целом; у Хопкинса (т. II, 1793) результат именуется по-вестминстерски «the application of redemption… made to the elect», а текст I.449 подтверждён первым изданием.
+
+**Woods о статусе американского спора (`34_` S60, §4.34 п. 3).** Lect. LXXXI, p. 491: «The point at issue is not, whether God actually intended or determined to save all men. Those who manage this controversy are united in the belief, that it is the purpose or determination of God to save only a part of the human race… they agree too that he did not die for all men with a purpose or determination actually to save all». Для раздела «Кратко об истории вопроса» (сс. 3–8) и «Необходимость баланса» (сс. 8–12) это значит: американский спор «general vs particular atonement», из которого статья берёт свою пару, вёлся **при общем согласии о частности намерения** — т. е. на иной оси, чем спор Дорта/Вестминстера о намерении; собственная формула Вудса трёхчастна («propitiation… in one respect, general» — «conditions» — «the blessings of redemption», p. 500).
+
+**Дорт по латыни (`34_` S61, §4.34 п. 4).** Сверка с Schaff III pp. 561–563 (CCEL): цитата II.6 на с. 25 статьи **полна и точна**; слово «исключительно» идёт от английского «wholly to be imputed to themselves» (p. 586), в латыни его нет («sed propria ipsorum culpa»); II.8 приведён целиком. Упрёк в купюре снимается. Чего статья не привлекает — Rejectio II.1, II.3, II.6. Лексически важен Rejectio II.1: «etiamsi **impetrata redemptio** nulli individuo unquam actu ipso fuisset **applicata**» — в собственном словаре Дорта *redemptio* есть то, что приобретено смертью Христа, а применение названо отдельно; распределение статьи (*redemption* = применение/результат) инвертировано и относительно латыни Дорта. Rejectio II.3 отвергает учение, что Христос «nullis certo meruisse ipsam salutem et fidem», — текстуально совпадающее с тезисом Эммонса (p. 36); это факт о родословной терминологии (governmental theory), а не о позиции статьи, которая исповедует искупление как уплаченную цену (сс. 24, 26).
+
+**Поправка к шкале (§VII):** строки «Терминология» и «История вопроса» дополнены пометками *(Раунд 11)*; вердикты не сняты; по строке «Терминология» снята одна потенциальная претензия (купюра в Дорте II.6 — её нет) и добавлена одна лексическая (Rejectio II.1). Открыто: дата проповеди Эммонса XLV; пагинация т. II Хопкинса; английский Дорт 1620 г.; автор эссе 1795 г. (`34_` §8 пп. 49, 56, 58–63). `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.6. Дополнение раунда 12 (2026-10-15): прижизненные тома Эммонса, английский Дорт у Schaff
+
+**Эммонс — что датировано, а что нет (`34_` S62, §4.35 пп. 1–3).** Шесть прижизненных томов проповедей Эммонса (1800, 1812, 1813, 1823, 1825, 1826; перечень — на обороте титула т. VI) проверены полнотекстовым поиском. Проповедь XLV «The Purchase of Christ's Blood» (с «darling doctrine of a limited atonement… particular redemption») **при жизни не печаталась** — первая публикация *Works* 1842, без даты. Зато т. VI (Providence, 1826), pp. 202–203 (= *Works* V, Sermon XLIV, p. 23), даёт **датированное** употребление: «Some believe and maintain the doctrine of a limited atonement. They suppose, that Christ died to make atonement for the elect, exclusively of the non-elect… the atonement of Christ is not limited, but extends to all the children of men». Это вторая датированная фиксация словосочетания после Гриффина (1819, p. 180) — и, как у Гриффина, оно употреблено **противником** доктрины как ярлык «very strict and genuine Calvinists». Для раздела «Только Топлэди» (с. 6–7) и для заглавия PDF-файла («Ограниченное искупление») это означает: словосочетание по происхождению — полемический экзоним новоанглийской школы, а не самоназвание ортодоксии; terminus 1819 не меняется. *Works* V p. 37 добавляет: Эммонс выводит «the doctrine of a limited atonement», «appropriating faith» и универсализм из одного корня — буквального понимания «the merits of Christ», а *purchasing, buying, ransoming and redeeming* требует понимать «in a figurative, and not in a literal sense».
+
+**Дорт по-английски (`34_` S63, §4.35 п. 4).** Сноска 79 статьи (Schaff III pp. 562/586) подтверждена постранично: II.6 — «not owing to any defect or insufficiency in the sacrifice offered by Christ upon the cross, but is wholly to be imputed to themselves» (p. 586); II.8 — p. 587. Заголовок главы в английском — «Of the Death of Christ, and the Redemption of Men thereby»: *redemption* именует всё содержание главы, от «abundantly sufficient to expiate the sins of the whole world» (II.3) до «effectually redeem… those only» (II.8). Главное: **английский текст Schaff (перевод Reformed Dutch Church) не содержит Rejectio errorum** — после II.9 сразу «Third and Fourth Heads». Поэтому места, где Дорт сам распределяет слова («impetrata redemptio… applicata», RE II.1; «nullis certo meruisse ipsam salutem et fidem», RE II.3), существуют у Schaff только в латинской колонке (p. 563). Корректная формулировка для статьи: «Дорт статьи — положительные статьи caput II по Schaff; Rejectio errorum остались вне поля зрения, и в английском тексте Schaff их нет». Недопустимо: «автор скрыл Rejectio».
+
+**Поправка к шкале (§VII):** строки «Терминология» и «Только Топлэди» дополнены пометками *(Раунд 12)*; вердикты не сняты. Снята одна потенциальная претензия (неполнота работы с Дортом объясняется составом английского текста Schaff); добавлено одно датированное свидетельство (Emmons 1826) к истории ярлыка *limited atonement*. Открыто: английский Дорт 1620 г.; самоназвание *limited atonement* у сторонников до 1862 г.; более ранняя печать проповеди на Рим. 3:26 (`34_` §8 пп. 64–67). `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.7. Дополнение раунда 13 (2026-10-15): *limited atonement* до 1819 года; формула статьи как платформа 1817 года и её критика
+
+**Terminus словосочетания (`34_` S65, §4.36 пп. 1–2).** Полнотекстовый индекс archive.org с проверкой каждого кандидата по скану показал, что *limited atonement* печаталось не позднее **1811 г.**: анонимный *An Essay on the Atonement: being an attempt to answer the question, Did Christ die for all mankind?* (New-York: S. Whiting, 1811; титул с датой проверен), p. 33 — «Dr. Owen, Mr. Witsius, and some other advocates for a limited atonement», p. 36 — «the doctrine of a limited atonement». Автор — кальвинист-универсалист новоанглийской школы, словосочетание у него — ярлык чужой позиции. Строки §3.1 «уже 1819 (Griffin)» и §3.1.6 «Emmons 1826 — вторая фиксация» остаются как «первые найденные на тот момент»; поправка датирована. В британских корпусах 1641–1800 индекса IA «limited atonement» — 0 при 322 документах с «particular redemption» (`34_` S71).
+
+**Словарь партий 1811 г. (`34_` S66, §4.36 пп. 3–4).** Ely, *A Contrast between Calvinism and Hopkinsianism* (1811): сторонники частного искупления называют свою позицию *particular atonement* и *definite atonement* (pp. 26, 104; термин, который статья через Gibson считает современным, — самоназвание за 51 год до Cunningham); противников — *indefinite* / *general, or unlimited atonement* (pp. 103, 105). Там же зафиксирован ход, который статья повторяет на сс. 24–25: «The advocates for an indefinite atonement… The Synod of Dort, they say, has decided in their favour» (II.3, Heidelberg 37) — и ответ: «To all the elect, and to no other persons did God originally design to extend the atonement» (II.8). И ось различия по Или — порядок декретов: у хопкинсианцев декрет об атонементе предшествует избранию, у кальвинистов — наоборот (p. 26 сн.); по этому критерию «сублапсарианская» таблица статьи (сс. 28–31) описывает хопкинсианский, а не «исторически реформатский» порядок.
+
+**Пара и формула статьи — с датой и партией (`34_` S67–S69, §4.36 пп. 5–6).** Whelpley, *The Triangle* I (New-York, 1816), p. 62: «Atonement and redemption are widely different in their nature and effects. The former sets open the door of mercy, the latter applies the benefits of Christ» — распределение сс. 23–24 статьи в одной фразе, у хопкинсианца, вместе с аргументами «limited atonement… not known… till… Augustine» и «show the public where Calvin taught a limited atonement» (ср. сс. 3–8 статьи). *Brief View… Young Men* (New-York, 1817), p. 7: символ веры хопкинсианского меньшинства — «the atonement is unlimited in its nature, and limited only in its application» (= с. 26 статьи: «неограниченное искупление с ограниченным применением»); большинство — «the atonement is made exclusively for the elect» (p. 6). Ответ ортодоксов (*Evangelical Guardian and Review* I, June 1817, p. 84): формула «incoherent and unintelligible»; «How comes that which is in its nature unlimited, to be limited in its application? What is the use or worth of the unapplied atonement?»; контраст «Christ made atonement exclusively for the sins of the elect» / «The atonement… is applied exclusively to the elect». Для вопроса «к какому лагерю причисляют и что исповедуют по факту» это датированный ответ: позиция статьи — платформа нью-йоркских хопкинсианцев 1816–1817 гг. (Whelpley, S. H. Cox, Young Men's Evangelical Missionary Society; прото-New School), которую ортодоксы того же города считали не «кальвинизмом в иной терминологии», а уклонением от вопроса о намерении. Это полемическая оценка, не доказательство; допустимая формула — «идея статьи имеет точную дату и партию; её критика современниками зафиксирована».
+
+**Первый сторонник со словом (`34_` S70).** Willson, *Historical Sketch… with Translations from Francis Turrettin* (1817), p. 319: «Again I reason thus in behalf of limited atonement» — в латыни Турретина (XIV.14 §XXXIV) лишь «Nono»; это переводческая глосса, а не авторский текст; самоназвание в собственном тексте до 1862 г. по-прежнему не найдено.
+
+**Поправка к шкале (§VII):** строки «Терминология» и «Только Топлэди» дополнены пометками *(Раунд 13)*; вердикты не сняты, но датированы точнее: пара и формула статьи — не изобретение и не «общепринятый узус носителей языка», а партийный идиом хопкинсианцев 1795–1817 гг., оспоренный современниками. Открыто: авторство *Essay* 1811; S71 → A1; самоназвание в собственном тексте сторонника; Ely Notes B–C; методистский кластер 1818; британский terminus (`34_` §8 пп. 68–73). `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.8. Дополнение раунда 14 (2026-10-15): формула статьи напечатана в 1815 году; Топлэди — «limited redemption»; самоназвание 1820 года
+
+**Utica 1815 (`34_` S73, §4.37 пп. 1–2).** Проповедь «On the Atonement. Rom. iii. 26» (подпись «X.»), *Utica Christian Magazine* II/12 (June 1815), pp. 357–363, содержит пару статьи целиком: «some have held to a limited atonement, and some to universal salvation. Many of these consider atonement and redemption as the same thing. But they are very different things. Atonement is satisfaction for sin, redemption is deliverance from sin… they are not equally extensive… how a universal atonement is consistent with a limited redemption» (pp. 361–362). Это за год до Whelpley (§3.1.7) и за 73 года до Шедда; та же формула — сноска в *Evangelical Recorder* 29.04.1820 (S77). Для шкалы §VII: различение сс. 23–26 — не «узус носителей языка» и не находка Шедда, а клише одной партии с 1815 г. Существенно, на чём оно держится в источнике: «if the atonement were a commercial transaction, and a satisfaction to commutative justice, the redemption would be equally extensive… The atonement was not a pecuniary transaction… has not paid your debts». Статья же определяет atonement как *цену* (с. 23) и при этом объявляет его неограниченным — соединение, которого нет ни в источнике 1815 г., ни у Шедда («unlimited… in its intrinsic value»).
+
+**Топлэди (`34_` S76, §4.37 п. 6).** Первоисточник к строке «Только Топлэди»: *Church of England vindicated… letter to Dr. Nowell* (1769), листы 41 и 107 — «from whence a limited redemption necessarily follows»; «a proper, real, adequate atonement for sin… either universal salvation, or a limited redemption, must necessarily follow… partial redemption». Слово «limited» у Топлэди есть, но при *redemption*; *atonement* — немаркированное имя деяния. Это подтверждает инверсию (вопрос A) и на стороне сторонников частности в XVIII в.
+
+**Ярлык 1814–1816 и самоназвание 1820 (`34_` S72, S74, S77).** Schermerhorn & Mills (1814, p. 37): западные пресвитериане — «some hold to limited atonement, and some believe in a general atonement… as a governmental transaction… A majority of the clergy have embraced the former». Dewey (1816, *Utica* III p. 277): «therefore the doctrine of limited atonement» как вывод трилеммы Оуэна, отвергаемый вместе с посылкой «грех = долг». *Evangelical Recorder* (1820, спор Froeligh / Ten Eyck): «The Arminians hold to universal redemption, and Mr. F. holds to a limited redemption. In this point, the Hopkinsians agree with Mr. F. They believe in the doctrine of a limited redemption… the atonement is sufficient for all men… with the Synod of Dort». Для вопроса C: носители позиции статьи в 1815–1820 гг. описывали её как *universal atonement + limited redemption* с апелляцией к Дорту по достаточности и были «хопкинсианцами» в глазах оппонентов и своих; ярлыков «сублапсарианство» и «четырёхпунктовый кальвинизм» для неё в этой среде не встречено.
+
+**Ely Notes B–C (`34_` S75).** Сноска Или (1811, p. 109) называет *Essay on the Atonement* «lately published in this city» и ставит рядом с антологией 1811 г. — датировка и партия S65 подтверждены современником; определение хопкинсианцев в его передаче: «God can pardon any number of sinners, but is bound by no obligation of justice to save any one for whom Christ died» (p. 108).
+
+**Поправка к шкале (§VII):** строки «Терминология» и «Только Топлэди» дополнены пометками *(Раунд 14)*; вердикты не сняты. Открыто: автор «X.»; дело Дьюи; печатные страницы Топлэди 1769 и *Evangelical Recorder* 1820; Froeligh / Ten Eyck и Catlin 1818 по сниппетам (`34_` §8 пп. 74–78). `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.9. Дополнение раунда 15 (2026-10-15): «Dialogues on Atonement» (Weeks, 1820–1859), ответ Old School (Janeway), *Utica* 1825, Bacon 1855
+
+**Автор и издательская история формулы (`34_` S78–S80, S83a, §4.38 пп. 1–2).** Пара «Atonement is satisfaction for sin; redemption is deliverance from sin» (1815/1820) — определение из «Dialogues on Atonement» (Paulinus / Aspasio): *Evangelical Recorder* (Auburn) 29.04.1820 (письмо «Y.»: «a manuscript lecture is in circulation, written by a Professor of Divinity at one of our Theological Seminaries, to prove that Christ died for the elect only»; Dialogue I) → 18.11.1820 (Dialogue X: «Atonement and redemption are not the same thing… The atonement was finished when Christ rose from the dead; but the redemption of any individual is not finished, till he is freed from sin… the argument which is built upon their identity, is built upon the sand»); перепечатки — *Utica Christian Repository* 1823 (11 диалогов; «Apology», PAULINUS, Feb 1824, pp. 57–60), брошюра (Philadelphia: Grigg, [1825]; Shoemaker 20309), *N.Y. Evangelist* 1830–31, Park, *The Atonement* (1859), pp. 547–583 — «By William R. Weeks, D.D.». Атрибуция Weeks — вторичная (Park); датировка Park «originally published… 1823» опровергнута A1 (1820). Класс A1 (постранично / по листам).
+
+**Old School против схемы, а не против слова (`34_` S81, §4.38 п. 5).** J. J. Janeway, *Letters on the Atonement… between the definite and indefinite scheme* (1827; серийно 1826): «They believe, as well as we, that the Father gave to his Son, in the covenant of redemption, a definite number to be saved» (p. 16); «the atonement necessarily involves the Divine intention» (p. 24); «Redemption… refers to the price… Ransom» (pp. 81–82); «The writer of Dialogues, while he admits that Christ died with an intention to save the elect and not others, and that he satisfied public justice, denies that he made any satisfaction to distributive justice» (p. 223). Следствие для статьи: «ограниченное применение» (с. 26) было общим местом обеих партий 1820-х гг.; спор шёл о природе деяния (вменение, «real price», распределительная справедливость) и о намерении — ось C-16 «намерение» остаётся открытой, теперь с датированной ортодоксальной формулировкой 1826 г.
+
+**Второе определение и аргумент от Вестминстера (`34_` S82–S83b, §4.38 пп. 6–7).** *Utica Christian Repository* IV/12 (Dec 1825), pp. 363–364: «there is an essential difference between atonement and redemption… a foundation has been laid for the doctrine, that Christ made an atonement only for the elect… redemption is from sin; but the atonement was made for sin… [Рим. 3:24 —] the effect for the cause… Redemption… is deliverance itself… neither did he pay the debt… If he had, they might claim salvation as a matter of justice». W. Bacon, *Alledged Doctrinal Differences of the Old and New School* (Auburn, 1855), листы 68–70: «It is redemption, and not atonement, which is here said to be "effectually communicated to all for whom Christ purchased it" [WLC 59]… The former is the application of the latter… Christ died for all, to make their salvation possible, and that is the atonement. But he died also for the elect, to make their salvation certain» — ход с. 25 статьи, применённый New School за 160 лет до неё с той же целью (снять конфликт с WCF 8.8 / WLC 59). Зависимость статьи от Bacon не утверждается.
+
+**Жанр «терминологических различий» (`34_` S83a, §4.38 п. 8).** Park (1859, p. lxxix) описывает *Humble Attempt* Griffin (1819) как попытку «to reconcile two opposing evangelical schools, by showing that their differences arose from their more general or more restricted, their more vague or more precise, terminology» — раздел статьи «Терминологические различия» принадлежит этому новоанглийскому жанру; его перенос на XVII век (Дорт, WCF, Оуэн), где слова распределялись иначе, остаётся анахронизмом.
+
+**Поправка к шкале (§VII):** строки «Терминология» и «Только Топлэди» дополнены пометками *(Раунд 15)*; вердикты не сняты. Открыто: первичное подтверждение авторства Weeks; лектор-профессор; Shoemaker 20309; прямой лексический разбор у Janeway (`34_` §8 пп. 79–84; пп. 74, 77 дополнены). `EVIDENCE_HOLD` по объёму искупления не снят; «снято молча: 0».
+
+#### 3.1.10. Дополнение раунда 16 (2026-10-15): раздел «Неверный аргумент» (сс. 19–23) — прецедент Baxter 1649 / ответ Owen 1650; Turretin и A. A. Hodge об *ipso facto*
+
+**Возражение статьи не ново (`34_` S84, §4.39 п. 2).** Ходы сс. 19–23 (уплата ≠ освобождение; вменение при обращении, «не от вечности»; Еф. 2:3 об избранных до обращения; «без покаяния нет вменения…»; временные кары) по пунктам совпадают с Appendix к *Aphorismes of Justification* Р. Бакстера (1649; EEBO-TCP A26862, изд. 1655, pp. 292–318): «this actuall Remission and Justification, are no Immediate, but Mediate effects of Christs Death» (p. 316); «we are all by nature the children of wrath… then certainly the Elect while they are unbeleevers are not actually, de facto, no nor in personall Right, delivered from this hatred, wrath» (p. 317); «If we are justified onely by Faith, then certainly not before Faith» (p. 317); «If we are exhorted while we are unbeleevers, to be reconciled to God… then sure we are not yet reconciled nor remitted» (p. 318). Зависимость статьи от Бакстера не утверждается — «структурно совпадает».
+
+**Оуэн ответил на это в 1650 г. и уступил посылку (`34_` S85, §4.39 п. 3).** *Of the Death of Christ* (TCP A90278): «Fidem tuam! Is there any one Argument in my whole Book used to any such purpose? Do I labour to prove that which I never Affirmed? never thought? never beleeved?» (p. 82 — об оправдании до веры); «we do not actually receive a compleat Soul-freeing discharge until we beleeve» (p. 80); избранные до веры — «not Justified, not Sanctified, not entred into Covenant», их право — *ad rem, sub termino*, не *in re* (p. 69); Arg. 2–3 Бакстера (= Еф. 2:3 и «только верой») «comes not within many miles of the thing in Question» (p. 95); ошибка оппонента — «That the immediate Effects of the Death of Christ must be immediatly enjoyed by them for whom he died. Which Assertion hath not indeed the least Colour of Truth» (p. 96). Действительный довод — «Condemnation cannot possibly de facto follow where such Satisfaction hath been made» (p. 71) и право по заслуге «even before Beleeving; Faith it self being of the number of those things so procured» (p. 72).
+
+**Форма довода в *Death of Death* III.vii (`34_` S86–S87, §4.39 п. 4).** Goold X pp. 268, 272–273: «in actual right, though not in actual possession»; Бог «ought in justice, according to that obligation which, in free grace, he hath put upon himself, to grant them a discharge»; против всеобщего искупления — «whence is it that his wrath smokes against some to all eternity?». Еф. 2:3 об избранных применяет сам Оуэн (изд. 1845, p. 175: «even believers are „by nature the children of wrath, even as others“… why not the elect also?»; оправдание — акт «upon his believing»). Следовательно, статья опровергает популярную («коммерческую») форму довода (сн. 70–71: Boettner, Grudem — формулировки в репозитории не верифицированы), а не форму Оуэна.
+
+**Реформатская схоластика согласна с посылкой статьи (`34_` S88–S89, §4.39 п. 5).** Turretin XIV.x §VIII (изд. 1847, II p. 369): уголовное удовлетворение не освобождает *ipso facto* — «debet actus Rectoris et Judicis intercedere… relaxatio… remissio»; «nisi accedat Judicis acceptatio et remissio». A. A. Hodge 1867, p. 31: «Not being the payment of a pecuniary debt, which ipso facto liberates, but a vicarious penal satisfaction, it remains… in the hands of God to grant its benefits to whom he pleases, when and on whatsoever terms he pleases… since Christ acted by covenant, he has acquired… a strictly legal title… As between God and the Mediator, the claim in right is perfect»; p. 37: «remission accrues to the designed beneficiaries only at such times and on such conditions as… agreed upon between the sovereign and the sponsor». Тезис «уплата ≠ освобождение; нужно вменение» — собственное учение ортодоксии, а довод о двойной уплате у неё — ковенантный.
+
+**Оценка для рецензии.** (1) *В пользу статьи:* её логическое ядро — не «смешение понятий» (как в `18_` §2/§6, `05_` §3 — добавлены датированные справки, прежний текст сохранён), а общее место обеих партий с 1649 г. (2) *Против статьи:* опровергнутая форма довода — не Оуэнова; форма Оуэна/Турретина (обязательство *ex pacto* выдать освобождение *sub termino*; невозможность **вечного** осуждения после принятого удовлетворения) сс. 20–23 не затронута; два остальных хода статьи — «бесконечная вина ⇒ несколько наказаний» (несовместим с общей посылкой XVII в. о платеже «equall in value» / «specie eandem» и подрывает собственный тезис об «уплаченной за всех цене») и «Потоп / Содом» (обобщение Arg. 5 Бакстера; довод Оуэна — о вечном гневе) — прецеденты не искались (`34_` §8 п. 87, `OPEN`). (3) Раздел «Неверный аргумент» вместе с «Терминологическими различиями» воспроизводит бакстеровскую конструкцию: всеобщая цена + условное освобождение + несомненное исполнение условия избранными по замыслу (Baxter p. 313 п. 7) — что согласуется с прежним выводом о прецедентах статьи (гипотетический универсализм; New School). Спор вновь сводится к природе уплаты (*idem/tantundem*) и к намерению (C-16 `OPEN`); `EVIDENCE_HOLD` по объёму не снят.
+
+**Поправка к шкале (§VII):** строка «Неверный аргумент» (если ведётся) / общая оценка аргументации: вердикт не меняется, добавлена пометка *(Раунд 16)* — ядро возражения исторически корректно (Baxter 1649; признано Оуэном 1650), мишень выбрана неверно (популярная форма вместо Оуэновой). Открыто: пагинация 1-го изд. Бакстера 1649 г.; глава S87 по Goold; формулировки Boettner/Grudem; прецеденты ходов «несколько наказаний» и «Потоп/Содом» (`34_` §8 пп. 85–90).
+
+#### 3.1.11. Дополнение раунда 17 (2026-10-15): прецеденты ходов «Потоп / Содом» и «бесконечная вина» (Baxter 1694) и довод «дважды» в собственной оценке партикуляристов XIX в. (см. `34_` §4.40, S90–S93)
+
+**Что найдено.** (1) **Baxter, *Universal Redemption* (1694; диспутации ≤ 1657, TCP A27064), гл. VIII:** первый из «Arguments against Universal Satisfaction» — «It will not stand with Gods Justice to punish one sin twice» — Бакстер называет «the main Argument urged by Dr. Twiss and most others» (pp. 376–377; авторство Твисса — только по Бакстеру); его «Second Argument» (pp. 400–404) — «If God do actually punish those for whom Christ Died, then he may justly punish them. But God doth actually punish such» (Лев. 26; Плач 3–4; Ам. 1–2; Быт. 3:16–19; «Those whom God chastiseth he punisheth»; «God doth actually punish some, yea all for whom Christ Died; and he doth it justly»), с отводом возражения «everlasting Death would be injustice, though lesser be not» — «Degrees here make but a gradual difference» (p. 404). Это структурный прецедент хода статьи «Потоп / Содом» (с. 19), причём с готовым ответом на возражение `18_` §2 о несоизмеримости временной кары и вечного наказания. Ход «бесконечная вина ⇒ несколько наказаний» прецедента в гл. VIII не имеет (ближайшее — p. 390: отрицание, что страдания Христа «Materially were as great as All the Sufferings of All that he died for»). (2) **Charles Hodge, ST II (1872) pp. 472, 557–558:** возражение «justice… cannot demand that satisfaction twice, first from the substitute and then from the sinner» Ходж сам относит к «confounding a pecuniary and a judicial satisfaction»; «His satisfaction does not *ipso facto* liberate… they are by nature, or birth, the children of wrath even as others… should they die… before they believe they would inevitably perish notwithstanding the satisfaction made for their sins. It is the stipulations of the covenant which forbid such a result»; «Augustinians do not deny that Christ died for all men. What they deny is that He died equally, and with the same design, for all men». (3) **Dabney, *Syllabus* (1878) p. 521:** «Nor would we attach any force to the argument, that if Christ made penal satisfaction for the sins of all, justice would forbid any to be punished… incompatible with the facts that God chastises justified believers, and holds elect unbelievers subject to wrath till they believe… There would be no injustice to the man, if he remaining an unbeliever, his guilt were punished twice over, first in his Saviour, and then in Him» (ссылка на A. A. Hodge p. 369); pp. 503–504: «Atonement, or reconciliation is related to satisfaction, as effect to cause»; «it does not free us *ipso facto*… depend simply on the stipulations made between Father and Son». (4) **A. A. Hodge 1867 p. 369:** «viewed separately from the intention… it plainly stands indifferently related to the case of each and every man… The relations of the Atonement as impersonal and general or as personal and definite… spring… solely from the purpose».
+
+**Оценка для рецензии.** (1) *В пользу статьи — сильнее, чем в раунде 16:* её посылка (уплата ≠ освобождение; «чада гнева» до веры; временные кары как наказание) — не только бакстеровская, но и прямо принятая Ч. Ходжем, А. А. Ходжем и Дабни; Дабни в 1878 г. уже объявил популярную форму довода не имеющей силы. Обвинение `18_` в «элементарном смешении понятий» в этой части не выдерживает проверки первоисточниками. (2) *Против статьи:* те же авторы остаются партикуляристами, перенося основание частности в завет (Ходж) и замысел («solely from the purpose», А. А. Ходж) — т. е. опровержение довода «дважды» ничего не решает в вопросе об объёме; формула статьи «неограниченное искупление с ограниченным применением» совпадает лишь с первой половиной предложения А. А. Ходжа и расходится со второй. (3) *Ход «бесконечная вина»* прецедента не имеет — ни новизна, ни заимствование не утверждаются (`34_` §8 пп. 87, 91). (4) Зависимость статьи от Бакстера, Ходжей или Дабни не документирована; допустимо только «структурно совпадает». Атрибуция довода Твиссу — `ATTRIBUTION_SECONDARY` (`34_` §8 п. 94).
+
+**Поправка к шкале (§VII):** вердикт не меняется; пометка *(Раунд 17)* — ядро возражения разделяется ведущими партикуляристами XIX в. (Ч. Ходж II.557–558; Дабни p. 521), мишень по-прежнему выбрана неверно (популярная форма вместо Оуэновой/ковенантной). Открыто: прецедент хода «бесконечная вина»; Turretin XIV.xiv и Cunningham; Твисс 1632; формулировки Boettner/Grudem. *(Раунд 18): Turretin XIV.xiv и Cunningham — сделано, см. §3.1.12; остаются «бесконечная вина» (Grotius 1617 / Amyraut 1634 / Wardlaw 1843) и Твисс 1632.*
+
+#### 3.1.12. Дополнение раунда 18 (2026-10-15): школьные имена формулы «куплено для всех, применено к некоторым» и форма довода «дважды» у Турретина; Каннингем о *status quæstionis*; лекции Дабни (см. `34_` §4.41, S94–S96)
+
+**Что найдено.** (1) **Турретин, *Institutio*, XIV.xiv «De Objecto Satisfactionis»** (скан изд. 1847 г., т. II, листы 427–442 = pp. 399–414; лист = p + 28 по `_page_numbers.json`): заголовок вопроса — «An Christus pro omnibus et singulis Hominibus universaliter mortuus sit? An pro Electis tantum? **Prius Neg.; Poster. Affirm.**»; §§I–IV (pp. 400–401) — история спора (Проспер; галльские capitula; Гинкмар о Готшальке; иезуиты и янсенисты; лютеране; «præcipue propter Arminianos»); **§V (p. 401)** — ремострантский Articulus V в пяти пунктах, пятый: «**Impetrationem latius patere applicatione, ut impetrata sit salus omnibus, quæ tamen paucis applicetur**»; §VI (p. 401) — «ex Nostris, qui Gratiam Universalem tenent». **§IX (p. 403):** «Utrinque enim est in confesso, cum sit infiniti valoris, sufficientissimam fuisse ad redemptionem omnium et singulorum… Et huc pertinet distinctio a Patribus usurpata, et a variis Theologis retenta, Christum mortuum esse sufficienter pro omnibus, sed efficaciter tantum pro Electis. Hæc enim de mortis Christi dignitate intellecta **verissima est, quanquam phrasis minus sit accurata, si ad voluntatem et consilium Christi referatur**… Eo ergo reducendus est **Cardo Quæstionis**, ut agatur, non de natura et virtute Christi mortis in se, sed de consilio Patris illum destinantis, et intentione Christi illam subeuntis». **§XXVI (p. 409, «Ex natura Sponsionis Christi»):** «…ut Sponsione sua omne eorum debitum, quorum personam sustinuit, in se transtulerit… concipi non potest quomodo illi pro quibus mortuus est et satisfecit hoc pacto, possint adhuc æternæ maledictioni subjici, et ad poenas commeritas ferendas iterum obligari; quod dicendum est tamen, si pro aliis, quam pro Electis, est mortuus, cum hoc bonæ fidei et justitiæ Dei aperte repugnet… **ut ab illis solutio ejus amplius exigi non possit**». **§§XXIX–XXX (pp. 410–411):** «impetratio conditionalis, impetratio proprie non foret, sed tantum **mera possibilitas impetrationis**»; «Christus fingitur **duplicem habuisse intentionem satisfaciendi, conditionatam primo pro omnibus, deinde absolutam pro Electis**, quod nec ex Scriptura unquam probari poterit»; цитаты Дортского синода (Th. 8; rejectio err. Th. 3: «fieri potuisse, ut vel nemo, vel omnes eas implerent»). §XXXIII (p. 413) — отвод аналогии «князь платит λύτρον за всех пленных» («simile non uno pede claudicat»). (2) **Каннингем, *Historical Theology* II, 2-е изд. 1864, гл. XXIV:** §4 (pp. 270–274) — соччинианское изображение доктрины («God the Father is an inexorable tyrant…») — «**a mere caricature of it**»; «we are warranted in regarding and describing as penal **any suffering inflicted judicially, or in the execution of the provisions of law, on account of sin**»; §§8–9 (pp. 315–322) — «**the true and correct status quæstionis** with respect to the extent of the atonement»: «whether they were procured, or impetrated, or purchased, **for any to whom they are not applied**»; «no man is actually pardoned and reconciled to God until he repent and believe»; армиианская «**reconcilability… it was quite possible… that all for whom He died might perish for ever**» (сноска: Davenant, *De Morte Christi*, p. 87). (3) **Дабни, лекции:** pp. 503–504 = LECTURE XLII (pp. 500–512); p. 521 = LECTURE XLIII (pp. 515–535), рубрика силлабуса: «**Christ's Satisfaction not Commercial. The Design and Result Co-extensive.** God's Volitions from a Complex Motive. Objections Solved».
+
+**Оценка для рецензии.** (1) Формула статьи «неограниченное искупление с ограниченным применением» в школьной латыни имеет точное имя: «impetratio conditionalis» / «duplex intentio satisfaciendi» — и в этом виде отвергнута Турретином как недоказуемая Писанием и несовместимая с единым декретом (§§XXIX–XXX); её же изложение стоит у Турретина пятым пунктом ремострантского Articulus V (§V, p. 401). (2) Формула «sufficienter pro omnibus, efficaciter tantum pro Electis» Турретином **не отвергнута**: она названа старой («a Patribus usurpata, et a variis Theologis retenta») и оценена как «verissima» о достоинстве смерти Христа и «minus accurata» о воле и замысле (§IX). (3) Довод «нельзя взыскать уплату дважды» у Турретина есть, но выведен из *sponsio* (перевод долга поручителю) и служит доказательством **частного** искупления (§XXVI); популярная коммерческая форма отвергается Каннингемом как «a mere caricature» (применительно к соччинианскому изображению доктрины) и исключается рубрикой Дабни. (4) Ось спора у историка школы — impetration vs. application («true and correct status quæstionis», p. 320) = C-16 (намерение). Зависимость статьи от Турретина, Каннингема или Дабни не документирована; допустимо только «структурно совпадает».
+
+**Поправка к шкале (§VII):** пометка *(Раунд 18)* — у вердикта появились школьные имена и оценки (см. выше); мишень статьи по-прежнему выбрана неверно (популярная форма вместо Оуэновой/ковенантной). Открыто: Grotius 1617 / Amyraut 1634 / Wardlaw 1843 («бесконечная вина»); Твисс 1632; Boettner/Grudem (сн. 70–71).
+
+#### 3.1.13. Дополнение раунда 19 (2026-10-15): вечно-временная рамка, в которой стоит формула статьи
+
+Раунд 19 отвечает на вопрос самой серии («во времени или вне времени»; отношение Бога к избранным до обращения), но он уточняет **рамку**, в которой формула статьи («неограниченное искупление с ограниченным применением») вообще может быть высказана. Турретин, Quæstio IX «De tempore justificationis» §§I–XII: «aliud est decretum justificationis, aliud ipsa justificatio… voluntas seu decretum de quibusdam justificandis, æternum quidem est, et fidem ipsam præcedit; sed ipsa actualis justificatio fit in tempore, et fidem sequitur»; три школьные позиции (вечный имманентный акт — «оправдание от вечности»; во времени; на последнем суде) и «consensus… in rei substantia, et dissensus tantum in modo rei». Шедд, DT I.171/174: «God has no passions… God's love and wrath are self-moved and unceasing energies of the Divine nature. He is voluntarily and eternally complacent towards good, and displacent towards evil»; буквально приписуемы Богу только ἀγάπη и ὀργή; критерий — божественное блаженство. Ходж, ST II.371: Откр. 13:8 — «the Lamb slain from the foundation of the world… at least the common and most natural interpretation», то есть ретроспектива креста (Рим. 3:25; Евр. 9:15), а не вечное заклание.
+
+**Что это даёт рецензии (не меняя вердикта).** (1) Формула статьи говорит о «цене» и «результате», тогда как школьное деление — на **вечный** декрет/намерение и **временные** приобретение и применение; без среднего яруса нельзя точно поставить даже вопрос о том, что именно ограничено (ср. §2.5 и §4.9 `34_`). (2) Школьная линия, к которой статья прислоняется (Дорт, Вестминстер, Шедд), делает решающим именно этот ярус (турретиновское «cardo quæstionis… de consilio Patris… et intentione Christi», S94 §IX). (3) Новое для досье: состояние до обращения у Турретина названо прямо («qui nondum conversus est… manet in morte… in statu damnationis», §V), а Иуда — «perditioni et exitio destinatus ac devotus ab æterno justo Dei judicio… opponitur filiis Dei Electis» (локус XV, Q. XVI §XXXVIII, л. 566): различие между людьми проходит по вечному декрету, а не по актуальному состоянию.
+
+**Поправка к шкале (§VII):** вердикт по статье не меняется (текста статьи раунд 19 не касается); пометка *(Раунд 19)* — в строке «История вопроса»: у серии зафиксирована собственная вечно-временная рамка (декрет — приобретение — применение) и граница «in modo rei»; это тот фон, из-за отсутствия которого формула статьи выглядит решением, тогда как она — перенос спора на другой ярус (`34_` §§4.42–4.43, S97–S99).
+
+
+#### 3.1.14. Дополнение раунда 29 (2026-10-17): схема «приобретено для всех — применено к верующим» уже была
+предъявлена Дорту и отвергнута
+
+**Что найдено (лат. *Acta* 1620, `actasynodination00syno`, чанки 375–377; `34_` S116–S117, §4.59).**
+(1) **Гронингенское и оммеландское суждение** (*Deputatorum Synodi Groninganae & Omlandiae Iudicium*, De Secundo
+Articulo) цитирует ремонстрантскую оговорку и отвергает её: «Christum **pro omnibus quidem mortuum esse**, at cum
+salvandi intentione resurrexisse & intercedere **adaequate pro fidelibus tantum**… **fundamento caret**». Доводы:
+ни один текст Писания этого не подтверждает; «священники Ветхого Завета молились за всех, за кого приносили
+жертву»; Павел в Рим. 8 соединяет смерть, воскресение и ходатайство и простирает их на тех же лиц; а иначе следует,
+что те, за кого Христос не воскрес и не ходатайствует, «всецело и во всяком отношении всё ещё во грехах своих»
+(1 Кор. 15), и прощение им смертью Христовой не приобретено (Евр. 9:12; 10).
+(2) **Они же** отвергают и «возможность с хотением»: «Christum per mortem suam Patri acquisivisse **possibilitatem &
+velleitatem** foederis novi cum peccatoribus ineundi… sed hoc tantum effecisse, ut **Deus posset & vellet** nostrum
+misereri, foedus gratiae inire».
+(3) **Они же** снимают ложную альтернативу: «**quaestionem non esse de sufficientia mortis Christi**; indubitanter
+enim affirmamus, sacrificium Christi tantam habere vim & valorem ut **abunde sufficiat ad omnium hominum
+peccata**… **nec reproborum quemquam perire ob defectum aut insufficientiam mortis Christi**: sed quaeritur an… electis
+**actu impetrata** sit remissio».
+(4) **Суждение депутатов Оверэйссела** (в записи раунда 28 — «трансильванское»; исправлено в раунде 40), Antithesis III: «impetratio remissionis peccatorum, & reconciliationis cum Deo,
+eiusque applicatio **aeque late patent**» (ремонстрантская теза стоит рядом: «non aeque late patent»).
+(5) **Дрентанское суждение**: «dignitas… vel in **sufficientia**, vel in **efficacitate** του λύτρου: **illa potuit
+constare sine applicatione, ista non**» (пример лекарства); «applicatio est causa finalis, quamobrem **jus
+applicandi** sibi Christus acquisivit».
+
+**Оценка для рецензии (с обязательной оговоркой).** (1) Это **не** текст Прокопенко: у него членение проведено по
+линии «искупление / выкуп» (*atonement / redemption*), а не «смерть / воскресение-ходатайство», и потому прямое
+отождествление двух схем недопустимо без отдельной сверки (`EVIDENCE_HOLD` в силе). (2) Но для оценки **исторической
+корректности** статьи это решающий факт: структурный ход «приобретено для всех — действенно лишь для некоторых»
+был предъявлен Дорту, зафиксирован им как позиция другой стороны и **отвергнут**; автор же подаёт его как исправление
+партикуляризма, не упоминая, что в его собственной конфессиональной традиции этот ход рассматривался в 1618–1619 гг.
+(3) Тем самым усиливается прежний вывод рецензии о **неисторичности** терминологического различения (§2, раздел
+«Терминологические различия» статьи): мало того, что различение не имеет лексической опоры, — оно ещё и
+воспроизводит контуры отвергнутой схемы. (4) Пункт, который должен быть **смягчён** в сторону автора: достаточность
+смерти Христовой для всех на Дорте **не отрицалась**, а прямо утверждалась («abunde sufficiat ad omnium hominum
+peccata») и даже выводилась за скобки спора; значит, претензия к автору должна состоять не в том, что он утверждает
+достаточность для всех, а в том, что он превращает её в схему приобретения.
+
+**Поправка к шкале (§VII):** вердикт по статье не меняется; помечается *(Раунд 29)* — в раздел «Терминологические
+различия» добавлено документальное возражение: схема «приобретено для всех — применено к верующим» отвергнута
+гронингенским, депутатов Оверэйссела и дрентанским суждениями 1619 г. (`34_` §4.59, S116–S117).
+
+
+#### 3.1.15. Дополнение раунда 31 (2026-10-17): ближайший аналог структуре статьи — разделение «плодов смерти» и
+«плодов воскресения»
+
+**Что найдено (лат. *Acta* 1620, `actasynodination00syno`, чанк 382; галло-бельгийское суждение; `34_` S122,
+§4.61).** В списке отвергнутых ремонстрантских положений под номером **VIII** стоит:
+
+> «Christum **pro multis mortuum esse, pro quibus non resurrexit**: adeoque **fructus Christi a fructu & efficacia
+resurrectionis** in quibusdam hominibus posse distingui.»
+
+Рядом — положение VI («приобретено, но не дано»: *impetratam, nec tamen datam*), VII («право, или власть, и воля
+примирять») и IX («примирение может быть отделено от ходатайства, оправдания, освящения и прославления»). Приговор
+ко всему списку: «Quorum omnium nihil veritati secundum Scripturas convenienter dicitur».
+
+**Почему это важнее предыдущих находок.** В раундах 29–30 отвергнутые формулы членили «смерть / воскресение-
+ходатайство» (гронингенцы) и «достаточность / действенность» (дрентанцы). Положение VIII членит **«плоды смерти /
+плоды воскресения»** — то есть проводит границу ровно там, где её проводит статья Прокопенко, различающая
+«искупление» (смерть Христа, для всех) и «выкуп» (воскресение, вознесение, ходатайство, для верующих). Это
+**наиболее близкий** из всех найденных документальных аналогов.
+
+**Оценка для рецензии (с обязательной оговоркой).** (1) Это **не** текст Прокопенко, а ремонстрантский тезис в
+изложении галло-бельгийцев; совпадение **структуры** фиксируется, тождество — нет (`EVIDENCE_HOLD` в силе). (2) Тем
+не менее для раздела «Терминологические различия» это самый сильный из имеющихся аргументов: различение,
+предлагаемое как исправление партикуляризма, воспроизводит членение, которое в 1618–1619 гг. было **перечислено и
+отвергнуто** в составе списка из девяти положений. (3) Оценка статьи **не меняется**, но характер претензии
+уточняется: речь не о «неверном термине», а о **воспроизведении отвергнутой структуры**. (4) Смягчение в пользу
+автора остаётся прежним (§3.1.14): достаточность смерти Христовой для всех на Дорте не отрицалась, а утверждалась —
+в том числе и зеландским суждением («λύτρον… sufficiens esse in sese, ad expiandum peccata omnium & singulorum
+hominum»).
+
+**Поправка к шкале (§VII):** вердикт по статье не меняется; помечается *(Раунд 31)* — в раздел «Терминологические
+различия» добавлен ближайший исторический аналог членения статьи (галло-бельгийское положение VIII), с требованием
+отдельной сверки перед каким-либо отождествлением (`34_` §4.61 пп. 1–2, S122).
+
+**Поправка к шкале (§VII), раунд 36:** найден **ближайший из всех** исторических аналогов членения статьи — и он
+**прямой**, а не косвенный. В фрисландском суждении на Дортском Синоде (*Acta* 1620, чанк 371; `34_` S133, §4.68
+п. 2) приведена **ремонстрантская теза**, по структуре совпадающая с центральным членением разбираемой статьи:
+
+> «**Христос, говорят они, умер adaequate за всех грешников, воскрес же и ходатайствует у Отца на небесах с
+> намерением спасти adaequate только одних верных**»
+> (*Christus… mortuus adaequate pro omnibus peccatoribus, resurrexit autem & apud patrem in caelis intercedit, cum
+> salvandi intentione adaequate pro solis fidelibus*).
+
+Ответ фрисландцев — троякий: (1) положение это «**чужое и слову Божию неизвестное**» (*aliena, & verbo Dei
+incognita*); (2) Святой Дух чрез Апостола говорит иначе — «**не разъемля смерти, воскресения и ходатайства**
+Господа нашего Иисуса Христа, но **связуя всё это теснейшим союзом**»; (3) основание — **Рим. 8:34** («кто
+осуждает?.. Христос умер, но и воскрес: Он и одесную Бога, Он и ходатайствует за нас»), а также Рим. 4:25 и
+Рим. 14:9: «Апостол **не знал** сего **divortium** — развода — между смертью и воскресением Христовым».
+
+**Что это меняет в оценке раздела «Терминологические различия».** Ранее (раунды 8–9, 31) было показано, что предлагаемое
+членение не ново (эссе 1795, Гриффин 1819, Стронг 1907) и что его дортский аналог существует в галло-бельгийском списке
+отвергнутых положений (VIII: «pro multis mortuum esse, pro quibus non resurrexit»). Теперь то же членение найдено **в
+материалах самого Синода, в прямой формулировке**, и — что важнее — найден **экзегетический** ответ на него, а не
+только систематический: Апостол связывает смерть, воскресение и ходатайство **неразрывно** (Рим. 8:34).
+
+**Обязательные оговорки (без них не цитировать).** (а) Теза приведена **фрисландцами как ремонстрантская**; по
+первоисточникам не сверена (`EVIDENCE_HOLD`; `34_` §8 пп. 138, 144). (б) *adaequate* относится к **объёму**, а «cum
+salvandi intentione… pro solis fidelibus» — к **намерению**, приписанному воскресению и ходатайству; лексика и
+обоснование в статье — иные. (в) Фрисландцы отвергают **развод**; статья его утверждает; отсюда — **структурное
+подобие**, но не тождество схем. (г) Оценка статьи по §VII **не меняется**, уточняется лишь сила и характер
+исторического возражения.
+
+**Ссылки:** `34_` §4.68 пп. 2–3, S133; `06_` §6; `21_` §11.
+
+**Дополнение к шкале (§VII), раунд 37.** Проверка показала, что формула, найденная в раунде 36, **не единична**: её
+же цитируют **гронингенцы** с тем же наречием *adaequate* («Christum pro omnibus quidem mortuum esse, at cum
+salvandi intentione **resurrexisse & intercedere adaequate pro fidelibus tantum**… fundamento caret»), а
+галло-бельгийская делегация отвергает ту же структуру в отрицательной форме («pro multis mortuum esse, **pro quibus
+non resurrexit**»). Итого — **три независимых свидетельства в одном томе** и **три разных основания** отвержения
+(Евр. 9:12 и типология ветхозаветного священства у гронингенцев; Рим. 8:34 и «arctissimo nexu» у фрисландцев;
+перечислительное отвержение у галло-бельгийцев).
+
+Значение для оценки: предлагаемое членение — не «незнакомое Дорту», а **трижды зафиксированное и трижды
+отвергнутое**. При этом оценка статьи по §VII **не меняется** и оговорки раунда 36 остаются в силе: ремонстрантские
+первоисточники не читались, тождество схем не доказано.
+
+**Ссылки:** `34_` §4.70; `06_` §7.
+
+**Дополнение к шкале (§VII), раунд 39.** Число свидетельств выросло до **четырёх**: к Гронингену, Фрисландии и
+галло-бельгийцам прибавилась **Северная Голландия** («mortuum esse pro omnibus in universum hominibus,
+**resurrexisse autem, & intercedere, pro solis fidelibus**»). Она же даёт **самую точную формулировку** разбираемого
+хода в терминах воли: «**voluntas impetrandi absoluta & applicandi conditionata**… **statuta absoluta voluntate
+impetrandi, necesse est voluntatem applicandi absolutam quoque esse**» — то есть дортское возражение здесь
+**логическое**, а не только экзегетическое: безусловность воли приобретать влечёт безусловность воли применять.
+Сверх того, найдено **пять совпадений технического словаря** между независимыми суждениями делегаций
+(*possibilitas & velleitas*; *adaequate*; *aeque late patere*; *etiamsi nullus servaretur*; формулы «нераздельности»
+приношения и ходатайства) — сильный аргумент в пользу общего ремонстрантского источника, но не доказательство
+(первоисточники не читаны).
+
+Оценка статьи по §VII **не меняется**; оговорки раундов 36–37 остаются в силе.
+
+**Ссылки:** `34_` §4.72; `06_` §8; `03_` §8; `21_` §12.
+
+**Дополнение (раунд 40): поправка имени и два новых логических типа возражения.** (1) Суждение, которое в раундах
+28–39 называлось «трансильванским», — на деле **суждение депутатов Оверэйссела** (*Transisulania*; Оверэйссел стоит
+в перечне церквей, подписавших Каноны, — Schaff, *Creeds* III; трансильванской церкви там нет). Цитаты и локаторы не
+меняются; флаг `ATTRIBUTION_HOLD` до сличения с изображением л. 134. (2) Кроме **юридического** возражения
+(«по праву приобретения вещь становится собственностью того, кому она приобретена», раунд 39) найдено
+**телеологическое**: приложение есть «собственный плод» и «собственный конец» приобретения (североголландское
+суждение). (3) Найден довод **о взаимном уничтожении** двух ремонстрантских тез: «**и то и другое ложно и взаимно
+себя разрушает**» — и силлогизм «совет Божий не может стать тщетным». (4) Найден **аргумент о средствах**: если
+приобретено для всех, то и средства подаются всем; но «веру не всем даёт» (депутаты Оверэйссела). Оценка статьи по
+§VII **не меняется**; оговорки раундов 36–39 остаются в силе.
+
+**Ссылки:** `34_` §§4.73–4.74; `06_` §9; `03_` §9; `21_` §13.
+
+**Дополнение (раунд 41).** (1) Найдено **второе свидетельство** аргумента «ходатайство — умилостивление»
+(зеландское суждение, аргумент VI, и депутаты Оверэйссела, теза II) с обоснованием «одного и того же
+Первосвященника — молиться и приносить жертву за народ»; у депутатов Оверэйссела добавлены **Евр. 7:24–25**
+(непреходящее священство) и 1 Ин. 5:19. (2) Найдено **доказательство** тезы «приобретение и приложение равно широки»:
+приобретено не «оставление грехов в возможности», а **пакет** — освобождение от рабства греху, вера, усыновление, Дух
+возрождения, освящения и обращения. (3) Найден **порядок цели и средства** у гронингенских депутатов: намерение
+предать Сына «позднее самого избрания», средство не учреждается прежде цели. (4) Найден аргумент о **народах, не
+слышавших Евангелия**: «кому Бог не открывает Христа, спасения тех… не имел в намерении». (5) Найден **финал**
+суждения депутатов Оверэйссела: ремонстрантскую схему «не должно учить» в церкви — это снимает довод «на Дорте
+допускались разные формулы». Оценка статьи по §VII **не меняется**; оговорки раундов 36–40 остаются в силе.
+
+**Ссылки:** `34_` §§4.75–4.76; `21_` §14; `03_` §10; `06_` §10; `16_`.
+
+**Дополнение (раунд 42) — к разделу «Цели жертвы Христовой» (сс. 31–35).** (1) В *Acta* 1620 сохранилась
+**ремонстрантская теза о цели** в прямой формулировке (дрентанское суждение): «**собственный конец смерти Христовой не
+был её приложением**», «хотя бы приобретённое искупление никогда не было приложено ни к одному лицу». То есть то, чтó
+статья излагает как библейское различение искупления и выкупа, на Дорте зафиксировано как **теза противника** —
+притом отвергнутая всеми прочитанными делегациями. (2) Ей противопоставлен **каталог целей и плодов** смерти
+Христовой (гронингенское суждение): удовлетворение за грехи; примирение с Богом; разрушение дела сатаны и освящение;
+вечное спасение — и ни одного пункта вида «возможность» или «право». (3) Довод о цели сформулирован и логически:
+«**намереваться, собственно, есть хотеть чрез нечто прийти к другому**»; потому «намерение приобрести без намерения
+приложить» не есть намерение. (4) Найдено возражение, которое должно войти в оценку всякой схемы «Бог желает спасения
+всех»: оно «**Бога превращает в бессильного человека, который желал бы спасти всех, но не мог**».
+
+Оценка статьи по §VII **не меняется**; оговорки раундов 36–41 остаются в силе. Новое — не оценка, а **материал**:
+теперь раздел о целях можно разбирать не по вторичным источникам, а по тому, чтó по этому пункту говорилось на Дорте
+обеими сторонами.
+
+**Ссылки:** `34_` §§4.77–4.79, S140–S141; `06_` §11; `03_` §11; `04_`.
+
+**Дополнение (раунд 43).** (1) **Ответ на ремонстрантскую тезу о цели найден** (дрентанское суждение, чанк 380):
+«**Приложение есть конечная причина, ради которой Христос приобрёл Себе право применения**: если же право применения
+есть конец смерти Христовой, то **тем более и самое приложение** будет концом той же смерти». Это разбор схемы
+«приобрёл право, но не самих спасаемых» **в терминах самой схемы**. (2) Против «искупление могло быть приобретено всем
+и не приложено никому» — **четыре свойства Божии** (неизменяемость, милосердие, правда, премудрость) и правило «**Бог
+и природа не творят ничего напрасно**»; аналогия: «отеческая любовь не только приобретает и покупает наследие чадам,
+но и даёт и вручает его во владение». (3) Довод от любви: Бог «**из любви не начинает ничего такого, чего бы из той же
+любви не мог или не восхотел довести до предположенной цели**». (4) Для раздела о цели важен и **принцип «лучшего»**:
+«Богу не было свободно поступить иначе… наилучшее всегда одно» — прямой ответ на «Бог мог предписать любое условие».
+
+Оценка статьи по §VII **не меняется**; оговорки раундов 36–42 остаются в силе.
+
+**Ссылки:** `34_` §§4.80–4.81; `06_` §12; `03_` §12; `16_`.
+
+## 4. Дополнение (2026-10-19; раунд 44): разделы «Неверный аргумент» и «Терминологические различия» после трёх новых документов Дорта
+К разделу **«Неверный аргумент» (сс. 19–23)**. У профессоров богословия (13 февраля 1619) довод о поручительстве
+дан в самой строгой форме: «за кого Христос действенно умер, за тех Он умер **как поручитель на их месте**…
+Minor достоверна: иначе они не могли бы быть праведно наказаны Богом, **ибо Бог не может наказать один грех
+дважды — однажды во Христе и однажды в самих погибающих**, с которых Он взыскивает долг до последнего кодранта».
+Разбор этого довода в статье следует сверять с дортской формулировкой, а не только с её последующими изложениями.
+
+К разделу **«Терминологические различия» (сс. 23–28)**. Три новые точки опоры: (1) гелдерландская аксиома —
+«**не примиримость, а примирение; не возможность отпускать грехи, а отпущение грехов**»; (2) юридическое
+понимание *impetratio* у Южной Голландии — «включает и предполагает дарование испрошенного», а не приобретение
+права на него; (3) спор о предлоге: «умереть за кого-либо» = «**умереть вместо и на месте**», тогда как чтение
+«ради нашего блага» названо у южноголландцев социнианским (Социн — «cuius in hac re sunt Discipuli»). Разделение
+«искупление / применение» в статье нужно проверять на этих трёх пунктах: они показывают, что грань в источниках
+1619 г. проводится **внутри** глагола «приобрёл», а не между двумя разными благами.
+
+## 5. Дополнение (2026-10-19; раунд 45): к разделам «Неверный аргумент» и «Терминологические различия» — чтó показали четыре внешних суждения
+К разделу **«Терминологические различия» (сс. 23–28)**. Бременское суждение (Матфий Мартиний, 1619) даёт
+лексическое примечание, которого в статье нет: «**приобретение (impetratio) есть нечто меньшее и более общее, чем
+заслуга (meritum)**, хотя древние и новые часто употребляют их как одно слово». Стало быть, даже дортское
+употребление пары «приобрёл / заслужил» не тождественно, и сама по себе формула «Христос приобрёл» не содержит
+никакого «сделал возможным».
+
+К разделу **«Неверный аргумент» (сс. 19–23)**. Веттерауское суждение различает, **чтó именно обязан веровать
+каждый**: избранный — «Христос умер за меня», отверженный — «заслуга Христова такова, что принесла бы мне пользу,
+если бы я уверовал». Если статья строит свой «неверный аргумент» на предположении, что обе стороны понимают
+вопрос «за кого умер Христос» одинаково, это предположение теперь проверяемо — и источники 1619 г. его не
+подтверждают.
+
+К разделу **«Кратко об истории вопроса» (сс. 3–19)**. Эмденское суждение прямо свидетельствует: «я вижу, что
+мужи превосходнейшие и в Церкви православной прославленные **говорят об этом предмете различно**». Упрощённая
+схема «Дорт сказал Х, ремонстранты сказали Y» не выдерживает чтения самих суждений; это не оправдание
+ремонстрантов, а требование точности.
+
+## 6. Дополнение (2026-10-19; раунд 46): к разделам «Неверный аргумент» и «Цели жертвы Христовой»
+**К разделу «Цели жертвы Христовой» (сс. 31–35).** В материалах Дорта найдено положение, отвергаемое как
+заблуждение: «**Proprium & integrum mortis Christi finem tantum fuisse, ut Deo possibilitatem & velleitatem
+foederis gratuiti cum hominibus ineundi afferret**» — «собственная и целая цель смерти Христовой состояла лишь в
+том, чтобы доставить Богу **возможность и желательность** заключить благодатный завет». Если статья
+использует язык «Христос сделал спасение возможным», ей необходимо обозначить своё отношение к этому положению:
+оно отвергнуто на Дорте — но именно с частицей **«только»**. Различение «возможность как часть цели» и
+«возможность как вся цель» — то, чего в разделе о целях, судя по нашему изложению, нет.
+
+**К разделу «Неверный аргумент» (сс. 19–23).** Второе бременское суждение приводит **Ин. 3:16** в примечании к
+тезе о том, что намерение Отца и Сына — примирить «**только тех, которые имеют быть привиты ко Христу истинною
+верою**». То есть текст, обычно числимый главным «всеобщим» местом, употреблён в поддержку особого намерения.
+Если «неверный аргумент» статьи строится на том, что сторонники частного искупления вынуждены «сужать» такие
+тексты, здесь это надо проверять на истории чтения, а не на современном словоупотреблении.
+
+**К разделу «Кратко об истории вопроса» (сс. 3–19).** Раунд 46 внёс исправление в собственную работу: документ,
+который мы сначала приняли за эмденское суждение, оказался, по подписи, вероятно **вторым бременским**. Если это
+подтвердится, бременская делегация подала **два расходящихся суждения** — и тогда простая схема «Дорт сказал Х»
+становится не просто неточной, а невозможной. Атрибуция пока под `ATTRIBUTION_HOLD`.
+
+## 7. Дополнение (2026-10-19; раунд 47): к разделу «Кратко об истории вопроса»
+В разделе «Кратко об истории вопроса» (сс. 3–19) неизбежно возникает картина двух сторон: реформатская
+ортодоксия против ремонстрантов. Материалы Синода, прочитанные в раундах 45–47, эту картину усложняют тремя
+вещами, и все три проверяемы.
+
+**Первое. Одна делегация — не одна позиция.** Бременская делегация подала **три** суждения: Мартиний («отнюдь не
+противоречие — что Христос умер за всех с намерением спасти и что Он не так умер»), второе суждение («только за
+овец… а не за козлищ», «individuo nexu», «aeque late patent»), Людовик Кроций («намерение — приобрести всем и
+каждому, чтобы они, если покаются, могли быть примирены»; и в его же каталоге — осуждение «возможности и
+желательности»). Писать «бременцы учили…» после этого нельзя.
+
+**Второе. Ссылки на ремонстрантов не беспочвенны.** Эмденское «Breve Examen» приводит ремонстрантские
+утверждения **с указанием листов** в нескольких изданиях: *Collatio Hagensis* (две пагинации), *Adversus
+Walachros*, тезы гелдерландских ремонстрантов, Арминий. Одна из формул — «Христос умер **без различия** за этих и
+тех человеков, **рассматриваемых как падшие и подлежащие греху**, от начала мира до конца» — приведена двумя
+независимыми документами Синода. Стало быть, дортские цитаты из ремонстрантов заслуживают доверия в содержании;
+не проверены только страницы.
+
+**Третье. Спор был не о широте, а о кругах.** Вопрос, как он поставлен у эмденцев: «Прилагает ли Христос всем,
+кому приобрёл отпущение грехов? или Он не есть ходатай всех, чьим примирителем является?» Ответ ремонстрантов —
+отрицательный, и это записано. Современная дискуссия часто ставит вопрос иначе («за всех или за избранных?»), и
+тогда вся история читается неверно.
+
+## 8. Дополнение (2026-10-19; раунд 48): чтó показал разбор цитатного аппарата
+В раунде 48 составлена сводная таблица всех ремонстрантских ссылок, встречающихся в прочитанных суждениях Дорта
+(`34_` §4.93). Для статьи Прокопенко из неё следуют две вещи.
+
+**Первое. Сторона обвинения работала с источниками, а не с цитатниками.** Делегации цитируют *Collatio
+Hagensis* по разным страницам (у Эмдена — 139, 141, 143, 172, 181, 201; у Южной Голландии — 156, 158, 166, 168,
+174–175, 416, 418; у Зеландии — 160), а также *Responsio ad Walachros*, тезы гелдерландских ремонстрантов,
+Епископия, Арминия и Гревинховена. Совпадение минимально — стало быть, каждый читал сам. Это не оправдание
+Дорта, но требование к критику: если статья предполагает, что обвинители повторяли друг друга, материалы Синода
+этого не подтверждают.
+
+**Второе — и оно важнее для честности статьи.** Самый ходовой в литературе ремонстрантский источник —
+Гревинховен против Эймса, сс. 9 и 14 — приведён **только одною делегациею** (Южная Голландия). Три другие
+делегации отвергают ту же мысль, но **не ссылаясь на Гревинховена**. Стало быть, тезис «ремонстранты учили, что
+искупление могло быть приобретено для всех и никому не приложено» подтверждён **содержательно**, но его локатор
+опирается на одно свидетельство. Если статья этот тезис использует, ей стоит оговорить ровно это.
+
+**Третье, мелкое, но показательное.** *Collatio Hagensis* цитируется в трёх пагинациях — нидерландской и двух
+латинских (Бертия и Брандия). Двойная ссылка на одной странице («с. 158 бельг. / 176 издания Бертия») — не
+ошибка и не небрежность, а обычай времени.
+
+
+## 9. Дополнение (2026-10-19; раунд 49; кросс-досье `34_` §§4.95–4.98, S153): чтó изменилось для оценки статьи
+
+**Первое, главное.** Раздел «Терминологические различия» (сс. 23–28) строится на том, что различение «приобрёл /
+приложил» есть нейтральное уточнение слов, позволяющее читать Дорт, Вестминстер и Шедда иначе, чем их читает
+«ограничительная» сторона. В раунде 49 найден **латинский оригинал этой схемы 1618 г. с листом**, причём он
+приведён на Дорте как **цитата из ремонстрантов**: «*An Passio Christi tendat tantum ad salutem impetrandam,
+**electio autem ad applicandam & communicandam**? Sic loquuntur, Coll. Hag. pag. 201*». Оценка статьи от этого
+меняется качественно: её центральное различение — **не найденное в источниках XVII в. уточнение, а
+задокументированная ремонстрантская формула**, которую Синод отверг вместе с её следствиями.
+
+**Второе.** Раздел «Неверный аргумент» (сс. 19–23) и раздел «Цели жертвы Христовой» (с. 31) опираются на
+понимание «испрошения». Оно тоже найдено в оригинале: «*Christum Dei justitiae satisfacientem hoc effecisse, ut
+Deus sine justitiae suae laesione, **peccatori januam iterum aperuerit gratiae suae**, quamvis nemo ad illius
+gratiae communionem esset ingressurus nisi per fidem*» (*Coll. Hag.*, с. 172). Статья не приводит этого
+определения и не сообщает, что оно было предметом спора и получило оценку «*manifestum Socinianismum una cum
+Pelagianismo*». **Для честности обзора это обязательный пункт: читатель статьи не узнаёт, что у различения есть
+источник, автор и оценка contemporaries.**
+
+**Третье.** Раздел «Кратко об истории вопроса» (сс. 3–19) излагает историю по печатным источникам. Эмденский
+документ напоминает, что значительная часть полемики Синода была **устной**: «*a Clarissimis Doctoribus D.
+Balcanquallo, & D. Crucigero **viva voce** refutati*». История вопроса, построенная только на писаных суждениях,
+неизбежно неполна; это ограничение относится и к нашему досье, и к статье.
+
+**Четвёртое, в пользу статьи.** Раунд подтверждает, что различение действительно **было в языке эпохи** и
+употреблялось обеими сторонами — вплоть до того, что одна и та же пара «мочь и хотеть» встречается у двух
+делегаций в трёх разных формулах. Статья права в том, что **слова** «atonement» и «redemption» не несут в себе
+границы; она неправа в том, что граница, проведённая **внутри дела Христова**, сводится к словам.
+
+**Пятое, рабочее.** Оценка статьи по-прежнему строится на `RIGHTS_HOLD`: цитаты из PDF не воспроизводятся в
+публичных файлах; все латинские тексты раунда — из открытого издания *Acta* 1620 г. (PD, A2, OCR).
+
+
+## 10. Дополнение (2026-10-19; раунд 50; кросс-досье `34_` §§4.100–4.102, S154–S155): чтó прибавилось к оценке
+статьи
+
+**Первое.** Британское суждение даёт **документальную формулировку того вопроса, который статья обходит**:
+«*Cur oblata **aequali gratia**, hic credat, ille non credat*». Статья предлагает различение «цена / результат»
+и не ставит вопроса о том, **почему при одной и той же цене один спасён, а другой нет**. В британском документе
+этот вопрос стоит в центре, и ответ на него («datur aliis secundum misericordiam, aliis non datur secundum
+justitiam») — **не в регистре цены и не в регистре результата**.
+
+**Второе.** Отвергнутая теза о «равновесии» — прямой аналог схемы статьи, если её довести до конца: «*Quod…
+**minus** est, voluntas accepit a Deo… quod autem **majus** est, ipsumque **eventum specificat**, sibi ipsi
+praestitit voluntas ipsa*». Обзор статьи обязан назвать это следствие: при двухрегистровой схеме **самое
+главное звено спасения остаётся за человеком**.
+
+**Третье, в пользу статьи.** Британское суждение **не отрицает** морального убеждения («*Non inficiamur…
+Deum adhibere… vim suasoriam*») и не отрицает всеобщего призвания; оно настаивает лишь на том, что
+убеждение не есть **достаточная причина** обращения. Статья права в том, что всеобщее предложение Евангелия не
+отменяется учением об избрании; она неправа, полагая, что это снимает вопрос о намерении и действенности.
+
+**Четвёртое — об источниках статьи (обязательный пункт честности).** Пфальцское суждение подтверждает, что
+**аппарат ремонстрантских ссылок в досье неполон**: добавились листы *Coll. Hag.* 205, 298, 301, 303 и два
+сочинения Епископия, которых не было. Статья не приводит ни одной первоисточниковой ссылки на ремонстрантов;
+наше досье — приводит, и их число продолжает расти по мере чтения. **Вывод для обзора: утверждения о ремонстрантской
+позиции в статье проверяемы, и проверка не производилась.**
+
+**Пятое, рабочее.** Все латинские цитаты раунда — из открытого издания *Acta* 1620 г. (PD, A2, OCR); цитаты из
+PDF статьи по-прежнему под `RIGHTS_HOLD` и в публичных файлах не воспроизводятся.
+
+
+## 11. Дополнение (2026-10-19; раунды 51–57; кросс-досье `34_` §§4.104–4.118, S156): чтó дал Амиро по
+первоисточнику — и что это меняет в оценке статьи
+
+**11.1. Что прочитано.** «*Brief traité de la predestination*» Моисея Амиро (Сомюр: Desbordes, 1658; 1-е изд.
+1634) — **25 чанков из 74** (~34 %): главы VI–XIII, конец трактата (сс. 147–166) и **начало «Eschantillon de la
+doctrine de Calvin, touchant la predestination»** (сс. 167–212). `EDITION_HOLD` (1658 ≠ 1634) в силе; OCR.
+
+**11.2. Три вещи, которые статья у Амиро действительно берёт.**
+1. **Различение двух рассмотрений милости** («*deux degrés*», «*premiere / seconde sorte de misericorde*»).
+2. **«Два способа говорить» об одной смерти** — «*il parle de la mort de Christ en deux diuerses manières*»
+   (сс. 207–208).
+3. **Всеобщность посланничества** — «*enuoyé pour sauuer tous les humains*».
+
+**11.3. Четыре вещи, которые статья у него не берёт, а обязана была бы.**
+| У Амиро | У статьи |
+|---|---|
+| всеобщий член **условен**: «*sinon à la condition qu'ils croyent*» | подан как **совершённое** приобретение |
+| ходатайство **ограничено**: «*je ne prie point pour le monde*» | темы нет |
+| вера **дар без предвиденных условий** (с. 160) | согласие человека |
+| невозможность **нравственная**, не физическая | темы нет |
+
+**11.4. И четыре находки, которые прямо меняют оценку.**
+1. **Перечень обвинений (с. 167).** «Eschantillon» открывается списком того, чем «*les Predicateurs de l'Eglise
+   Romaine diffament le nom de Caluin*»; обвинения № 4–6 («*sacrifice destiné à fort peu*»; «*suffiroit pour tous*…
+   *inutilement*»; «*inutile*… *ostant toute faculté de croire*») **по существу совпадают с критикой статьи**.
+   ⇒ **критические ходы статьи не новы: они повторяют римско-католическую карикатуру, ходившую до 1634 г.**
+2. **«Comme si» (с. 164).** Частные тексты, по Амиро, сказаны «*comme s'il auoit esté ordonné seulement pour eux*»,
+   тогда как всеобщее посланничество — буквально. ⇒ **грамматика обратна дортской** (§4.113): у Дорта частные =
+   намерение, всеобщие = предложение; у Амиро частные = «как если бы».
+3. **«Aucun» (с. 164).** «*L'incredulité des vns empeschant qu'ils n'en reçoiuent **aucun***»; всеобщая любовь
+   «*n'est quasi pas considerable*». ⇒ **«приобретено для всех» у Амиро не даёт неверующему ничего**; формула
+   «приобретено/применено» его схему **не описывает**.
+4. **Три степени любви** (сс. 163–164), третья — «*il nous aime pource que nous l'aimons au reciproque*».
+   ⇒ **не описывать Амиро как последовательного «безусловника»**; и степеней у него **три**, а не две.
+
+**11.5. Что это даёт для выводов рецензии — четыре пункта.**
+**(а) Историческая атрибуция.** Разделение «искупление / примирение» — **не открытие статьи** и **не учение
+Дорта**: это **сомюрская схема** (Амиро), где различены два рассмотрения милости и два **способа говорить**.
+Статья **номинализирует** различение в **два предмета** — сдвиг **документирован**.
+**(б) Хронология.** Схема была **отвергнута в Дорте (1619)** формулой «*non reconciliabilitatem… sed
+reconciliationem*» (S145) — **раньше**, чем Амиро её изложил (1634). Значит, статья, представляющая её как
+«исправление» дортского учения, **предлагает отвергнутое раньше, чем оно было написано**.
+**(в) Мишень.** «Ограниченное искупление», которое статья опровергает, — **не дортская формула**: у Дорта не «мало»,
+а «**нераздельно**» («*applicatio & impretatio aeque late*», S145; ср. §§4.100–4.102). ⇒ **статья бьёт по
+карикатуре**, и это надо сказать в рецензии прямо, с указанием, что карикатура засвидетельствована у Амиро.
+**(г) Утраченные предохранители.** Статья воспроизводит сомюрскую апологетику **в популярной форме**, утратив три
+её ограничителя (условность всеобщего члена, ограниченное ходатайство, безусловность веры). ⇒ **статья дальше от
+Амиро, чем Дорт**, — и это самый неожиданный и самый твёрдый вывод семи раундов.
+
+**11.6. Что осталось непроверенным — обязательный пункт честности.**
+1. **Цитаты Кальвина** у Амиро **не сверены** с изданием (пп. 227, 232): все утверждения о «кальвиновской
+   всеобщей благодати» пока стоят **на передаче Амиро**.
+2. `EDITION_HOLD`: 1658 г., не 1634; возможны изменения.
+3. Прочитана **треть** тома; «Response à M. de L. M.» **не читана**.
+4. Локатор «Eschantillon» уточнялся **трижды** (сс. 103–107 → 203–207 → начало на с. 167); в досье поправки
+   сохранены, а не стёрты.
+
+**11.7. И одно замыкание (раунд 57, часть 5; п. 230 закрыт).** Возражение статьи о «двойной оплате» и её ответ
+(различение приобретения и применения) **уже были рассмотрены в 1619 г.**: гелдерландское суждение, argument VI —
+«*Neque hîc **quicquam juvat distinctio illa inter impetrationem & applicationem**… **non-applicatio facit quidem ut
+homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***» (`34_` §4.120; `06_` §20). ⇒
+**Постановка вопроса у статьи верна, ответ — отвергнут за пятнадцать лет до Амиро.**
+
+
+## 12. Ревизия оценки (2026-10-19; раунд 58; кросс-досье `34_` §4.122, **S156**, сс. 178–183): чтó статья
+говорит **верно** — и почему это не спасает её вывода
+
+**12.1. Повод.** Прочитан цитатный аппарат «Eschantillon» (сс. 178–183): **пять цитат из Кальвина**, приведённых
+Амиро дословно, с указанием мест. Это **меняет оценку в пользу статьи** в трёх пунктах, и рецензия обязана это
+признать.
+
+**12.2. Три утверждения статьи, которые подтверждаются словами Кальвина.**
+1. **«Благодать Божия всеобща»** — да: «***je confesse que la grâce de Dieu est tellement vniverselle***» (*De
+   aeterna Dei praedestinatione*).
+2. **«Достаточно для всех, действенно для избранных»** — да: «*Iesus Christ a **suffisamment souffert pour tous**,
+   mais… **l'efficace & le fruict** de sa mort **ne paruient que iusques aux esleus***» (на 1 Ин. 2:2).
+3. **«Спор не о том, за кого умер Христос»** — да: «***la dispute n'est point**… si Iesus-Christ est venu pour
+   purger les pechez de tout le monde: **car cela est sans contredit***» — и это **слова самого Кальвина**, а не
+   Амиро.
+
+**12.3. И четыре утверждения, которые ими не подтверждаются.**
+1. **«Поэтому Дорт неправ»** — не следует: Кальвин **сам** соединяет всеобщее предложение с определённым
+   призванием: «*Christ est bien **offert**… à tout: **toutesfois il n'y a que les esleus ausquels Dieu ouure les
+   yeux***». Это **та же** структура, что в Дорте (II.5 «*promiscue & indifferenter annunciari*» + II.8).
+2. **«Приобретено для всех»** — у Кальвина **везде «offert»**: «*offert*», «*mis en vente*», «*présentée*»,
+   «*estend… cette grâce*». **Ни разу** — «приобретено». Превращение **предложения** в **приобретение** — сдвиг
+   статьи, и он **не Кальвинов**.
+3. **«Искупление — одна сторона дела, примирение — другая»** — Кальвин различает **не две стороны одного дела**, а
+   **что сделано в Себе** и **кому Он Себя даёт**; и говорит это, **чтобы вывести объём из спора**, а статья
+   **вводит** его обратно.
+4. **«Это открытие, исправляющее реформатское учение»** — нет: это **Кальвин**, цитируемый **Амиро** в 1634 г., и
+   цитируемый **против** римской карикатуры.
+
+**12.4. Итоговая формула оценки (заменяет прежние, более резкие).**
+> Статья **права в цитатах** и **неправа в выводе**. Её сильнейшие тексты — **подлинные тексты Кальвина**, и
+> утаивать это нельзя. Но эти же тексты **не различают** стороны спора: **обе** стороны могут на них сослаться, и
+> **обе** ссылаются. Расхождение — не в том, **что сказал Кальвин**, а в том, **что из сказанного следует**:
+> Кальвин выводит объём из предмета спора («*sans contredit*»), статья вводит его обратно как решающий.
+
+**12.5. Что из этого следует для рецензии — практические пункты.**
+1. **Не приписывать статье выдумку.** Формулы «достаточно для всех / действенно для избранных» и «спор не о том, за
+   кого» — **не её изобретение** и **не сомюрское**: они **Кальвиновы**.
+2. **Указать точный сдвиг:** **«предложено» → «приобретено»**; и **«выведено из спора» → «введено как решающее»**.
+3. **Различить два вопроса:** (а) *что* сказал Кальвин — статья отвечает **верно**; (б) *что следует* — статья
+   отвечает **неверно**, и именно здесь её можно опровергать, **не споря с цитатами**.
+4. **И оговорка, обязательная:** мы читаем Кальвина **в передаче Амиро** (п. 227 — сужен до пяти мест, **не
+   закрыт**). Прежде чем утверждать что-либо о Кальвине **в публикации**, нужна сверка с изданием.
+
+**12.6. Что НЕ изменилось.** Терминологическое ядро статьи («искупление / примирение» как **два предмета**)
+по-прежнему **не находит** соответствия: ни у Кальвина (у него — «*offert*» и «*à qui il se donne*»), ни у Амиро
+(**два способа говорить** об одной смерти, §4.116). **Вывод §§4.114–4.120 в силе; изменилась его цена:** он
+**дороже** — потому что теперь видно, что статья **не выдумала всё**, а **испортила хорошую цитату**.
+
+**12.7. Уточнение после сверки двух мест (раунд 58, часть 5; `34_` §4.124).** Ин. 3:16 и 1 Ин. 2:2 сверены с
+изданием Кальвина (пер. CTS; класс **B1**). **Результат:**
+1. **Ин. 3:16 передан Амиро точно** — и у Кальвина всеобщность там **в регистре предложения** («*invite all*»,
+   «*held out to the view of all*»), а определённость — **в регистре призвания** («*the elect alone… whose eyes God
+   opens*»).
+2. **1 Ин. 2:2 передан точно, но с опущенной оговоркой**: Кальвин признаёт «достаточно/действенно» **истинным** и
+   **отвергает как толкование этого стиха**.
+**Отсюда — окончательная формула сдвига статьи: два симметричных сдвига на шаг влево** —
+**«всеобщее предложение» → «всеобщее приобретение»** и **«определённое призвание» → «определённое приложение»**.
+Ни Кальвин, ни Дорт такого сдвига не делают.
+
+
+## 20. Методическая поправка: поиск IA не видит длинного s (раунд 60)
+
+**20.1. Факт.** Полнотекстовый поиск IA по `"tellement vniverselle"` и `"tellement universelle"` даёт **0** — при том,
+что фраза **есть** в томе `brieftraitdela00amyr` (с. 183), прочитанная глазами. Причина: OCR печатает длинное **ſ** как
+**f**, в индексе стоит «*tellement vniverfelle*».
+
+**20.2. Правило.** Искать по корню без s/f: `vniver`, `mifericor`, `predestin`, `omnib`. **0 результатов ≠
+отсутствие** — это может быть артефакт.
+
+**20.3. Зачем это в рецензии.** Три раза за работу «поиск не находил» текст, который был. Если этот артефакт не назвать,
+следующий читатель сделает **ложный вывод** об отсутствии цитаты.
+
+**20.4. И одно следствие для §12.** Строка «*Or je confesse que la grâce de Dieu est **tellement vniverselle**…*» — **в
+источнике есть**; её «невидимость» для поиска ничего не значит.
+
+## 19. Пфальцское суждение: как читать «Дорт» и как не цитировать чужую тезу (раунд 60)
+
+**19.1. Структура, которую надо знать.** Каждая рубрика в *Acta* идёт в три шага: **Propositio** — **ремонстрантская**
+теза; **Iudicium** — разбор; **Antithesis** — православная формула. ⇒ **Первый абзац рубрики — не «Дорт»**, а то, что
+Дорт разбирает.
+
+**19.2. Пфальцская антитеза I (с. 328).** «*Homo animalis **mente caecus** est; pravus voluntate & rebellis affectibus:
+nec ante sui conuersionem **ullum opus vere bonum**, ac Deo placens praestare potest*». Полное бессилие к истинно доброму
+— утверждено прямо.
+
+**19.3. И тонкость о «приготовлении».** Пфальццы допускают акты познания греха и сокрушения «*in homine regenerando*»,
+но **отвергают** ремонстрантские «*conditiones… tanquam **praeuiae conuersioni***»: они либо «*fructus*», либо
+«*salutaria initia*» (с. 328).
+
+**19.4. Чего это не значит.** Это **не** о декрете. Речь о порядке в **человеке**, а не об условии в **вечном совете**.
+Смешивать с сомюрским «*à la condition qu'ils croyent*» **нельзя**.
+
+**19.5. Атрибуция.** Рубрика «*Ivdicium Theologorum Palatinorum*» — печатная атрибуция; **именной список не найден** ⇒
+говорить «пфальцские богословы», не называть лиц.
+
+**19.6. Оговорки.** A1 по изданию, OCR; сс. 326–340.
+
+## 18. Финал «Eschantillon»: довод статьи опровергает сам Амиро (раунд 60)
+
+**18.1. Благодать для необращённых — только приглашение.** «*la **pure efficace de la grace, qui conuertit les vns
+interieurement, & se contente d'inuiter exterieurement les autres***» (с. 222). «**Se contente**» — «довольствуется».
+
+**18.2. Всеобщность — в открытости, не в приобретении.** «*sa misericorde est **exposée à tous ceux qui la chercheront**.
+Or **nul ne la cherche sinon ceux qu'il a illuminez***» (с. 223). И: «*les seconds **n'en reçoiuent nulle vtilité***»
+(сс. 223–224).
+
+**18.3. И главное — о несправедливости.** «*sa iuste seuerité, qui les a voulu laisser, **sans leur faire aucun tort***,
+en leur naturelle corruption*» (с. 224). ⇒ **Оставление не есть неправда.** А довод статьи («уплачено, но не
+зачтено — несправедливо») **требует**, чтобы оно было неправдой.
+
+**18.4. Значит спор надо вести иначе.** Не «вы неправы, потому что Бог несправедлив», а: **сам Амиро говорит, что
+неправды нет**. Ваш довод вводит несправедливость, которой источник не знает.
+
+**18.5. И о всеобщем языке Писания.** «*afin que **les iniques n'alleguent point** qu'ils n'ont nul refuge*» (с. 223) —
+это Кальвиново «*to cut off every excuse*», пересказанное Амиро.
+
+**18.6. Оговорки.** A2/OCR; сс. 222–228; «FIN» на с. 228; 36/74.
+
+## 17. Главное различение: спор о **описании**, а не о **объёме** (раунд 59)
+
+**17.1. Формула самого Амиро.** «*la premiere & principale controverse de Caluin auec ses adversaires en reuient là…
+de leur vouloir donner son Fils **pour racheter vniuersellement tous ceux qui se conuertiroient à luy d'vne serieuse
+repentance, & croiroient en ce Rédempteur***» (с. 221).
+
+**17.2. Что это значит.** Объект «универсального искупления» у Амиро — **обращающиеся и верующие**. Их объём **совпадает
+с избранными**. Значит различие с Дортом — **не в широте**, а в **способе описания**: сомюрская формула описывает то же
+множество **под условием**, дортская — **без условия**.
+
+**17.3. И это точный диагноз статьи.** Статья превращает спор о **способе описания** в спор об **объёме** — и потом
+недоумевает, почему Дорт не согласен. Отсюда и всё разделение atonement/redemption.
+
+**17.4. Признание метода, уже второе.** «*si ce grand personnage se sert souuent de cette maniere de parler, que Dieu a
+prede stiné vne partie des hommes à la mort, **il la faut interpréter***» (с. 219). ⇒ Амиро **сам** называет свою работу
+**истолкованием** Кальвина. Он не утверждал «так учил Кальвин» — он утверждал, что так Кальвина **надо читать**.
+
+**17.5. Третий текст той же структуры (Рим. 9:11, в передаче Амиро).** «*Quant à l'exterieur ils sont appellés à
+l'alliance de Dieu **indifféremment**, mais… ils n'en entrent pas tous indifféremment en **réelle iouyssance***»
+(сс. 219–220). И о неверующих: «*bien qu'il leur ait **offert** le salut, il les a voulu iustement **laisser** en leur
+aueuglement*» (с. 220).
+
+**17.6. Что теперь можно утверждать в рецензии.** Не «Амиро учил всеобщему искуплению» и не «Амиро учил ограниченному»,
+а: **Амиро описывал всеобщее искупление так, что его объём совпадал с избранными; спор с Дортом — о форме описания**.
+Статья же выдаёт свою формулировку за объём.
+
+**17.7. Оговорки.** A2/OCR; `EDITION_HOLD`; 35/74.
+
+## 16. «Purement conditionel»: всеобщее у Амиро — **без декрета** (раунд 59)
+
+**16.1. Слова Амиро есть.** «*Iesus-Christ est **Rédempteur de tout le monde***» (с. 213). Если читатель приносит эту
+фразу — она подлинная.
+
+**16.2. Но вопрос Амиро ставит точно — и отвечает не «да».** «*Ie ne nie pas qu'elle ne soit à tous salut **en sa
+nature**. Mais voicy la question que nous débattons : **Si Dieu en son conseil éternel a ordonné à tous indifféremment
+salut… d'vn décret absolu***» (сс. 213–214). И далее прямо: «*le mot de Predestination… emporte quelque chose
+**d'absolu & de déterminé***… **il ne peut proprement conuenir à ce qui est purement conditionel***» (с. 216).
+
+**16.3. То есть всеобщий порядок у Амиро — без декрета.** «*icy **nul n'est exclus pourueu qu'il croye***»; «*la
+condition de tous est égale*» (с. 216). Это **гипотетический** универсализм в собственном смысле.
+
+**16.4. Два образа, оба против статьи.** «*Dieu **tend la main** indifféremment à tous : mais il ne **prend par la
+main** pour amener à foy, sinon ceux qu'il a esleus***» (с. 214). И: для неверующего «*il n'y paroist plus que
+**l'authorité du commandement**, dont le mespris attire malédiction*» (с. 215).
+
+**16.5. Симметрия, которую надо назвать вслух.** Амиро берёт слова Кальвина и опускает оговорку (через две страницы);
+статья берёт слова Амиро и опускает оговорку (**на той же странице**).
+
+**16.6. Что это даёт рецензии.** Не «Амиро так не учил» и не «Амиро универсалист», а: **Амиро учил всеобщему без
+декрета; статья требует декрета.** Это противоположность, а не оттенок.
+
+**16.7. Оговорки.** A2/OCR; `EDITION_HOLD`; 34/74.
+
+## 15. Решающий текст: три позиции, а не две (раунд 59)
+
+**15.1. Амиро сам говорит, что приобретение для отверженных условно.** «Eschantillon», с. 208:
+«*il est mort **vniuersellement pour tous hommes, pourueu qu'ils croyent en luy***… **quant à ceux là, il n'est mort
+pour eux sinon à la condition qu'ils croyent**… Pour ceux-cy… **absolument** mort pour eux*».
+
+**15.2. Таблица, которую серия должна держать раздельно.**
+
+| | Приобретение | Применение | Кто |
+|---|---|---|---|
+| **Дорт, 1619** | одно, **столь же широкое**, как применение; безусловно | избранные | *Canones* II.8 |
+| **Амиро, 1634** | **два**: условное — за всех; безусловное — за избранных | избранные | с. 208 |
+| **Статья, 2019** | одно, **безусловное**, за всех | избранные | сс. 23–28 |
+
+**15.3. Что это значит для рецензии.** Статья **не дортская** и **не амиральдианская**. Она — **третья** позиция. Это
+не делает её ложной; это делает **неверной её историческую рамку**: она не «восстанавливает Кальвина» и не «повторяет
+Сомюр».
+
+**15.4. Почему условие нельзя снять.** Довод статьи от справедливости работает только при **безусловной** плате:
+условная плата не даёт права, и неверующий тогда ничего не получил. ⇒ статья снимает условие **ради довода**; Амиро
+держит условие, потому что его довод — об **ответственности**, а не о цене.
+
+**15.5. И максимум в пользу статьи (с. 211).** «*La dispute n'est point… si Iesus-Christ est venu pour purger les
+péchez de tout le monde: **car cela est sans contredit***» — но тотчас: «*mais **à qui c'est qu'il se donne***», и
+«*la generalité des promesses seule… **ne fait point le salut commun à tous***».
+
+**15.6. Оговорки.** A2/OCR; `EDITION_HOLD`; 33/74.
+
+## 14. Что статья говорит **верно** — и где у неё самая сильная опора (раунд 59)
+
+**14.1. Сверка четырёх мест закончена, и она частично в пользу статьи.** Кальвин на **Ин. 1:29**:
+«*he extends this favor **indiscriminately to the whole human race**… the benefit which is **offered to all**…
+**obtaining reconciliation**… **provided that he comes to him by the guidance of faith***». Кальвин на **Рим. 5:18**:
+«*He makes this favor **common to all, because it is propounded to all**, and **not because it is in reality extended to
+all**; for **though Christ suffered for the sins of the whole world**… **yet all do not receive him***».
+
+**14.2. Отсюда два прямых признания, которые серия обязана сделать.**
+1. **«Христос пострадал за грехи всего мира» — это Кальвин**, буквально, без ограничителя. Не «достаточно», не «если».
+2. **Различение «предложено всем / сообщено не всем» — тоже Кальвин**, и оно **формально** похоже на схему статьи.
+
+**14.3. И ровно поэтому ответ должен быть точным, а не отрицающим.** У Кальвина это различение **предложения и
+сообщения**, а **не** приобретения и применения. Условие стоит только на **получении** («*provided that he comes by
+faith*», «*all do not receive him*»), а не на приобретении. И рядом, в Рим. 5:17: «***the benefit of Christ does not
+come to all men***».
+
+**14.4. Как это звучит для читателя.** Не «у Кальвина нет всеобщности» — она есть, и она громкая. А: **всеобщность у
+Кальвина — в предложении; в приобретении её нет ни разу**. Статья берёт **предложение** и **переименовывает** его в
+**приобретение**. Ошибка — **в слове**.
+
+**14.5. Сноска CTS — и почему она полезна статье.** К Рим. 5:18 в переводе CTS стоит: «*It appears from this sentence
+that **Calvin held general redemption**. — Ed.*». Это **издатель XIX в.**, не Кальвин; ссылаться на это как на мнение
+Кальвина **нельзя**. Но это показывает: чтение «здесь общее искупление» — **старое и не маргинальное**. Спорить надо
+не с читателем, а с текстом.
+
+**14.6. И одно место, где статья уходит даже от Амиро.** У Амиро: «*enuoyer son Fils en la terre **pour les racheter
+s'ils ne reiettent point cette grâce par incrédulité***» (с. 196) — **условие стоит на самом «racheter»**. И:
+«*s'il y a quelque différence entre eux, **elle vient de Dieu & non pas d'eux***» (с. 201). ⇒ статья **снимает условие**,
+которого Сомюр не снимал, и вводит **человеческое решение**, которого у Сомюра нет.
+
+**14.7. Оговорки.** Класс **B1** (англ. пер. CTS); латинский оригинал толкований **не сверен**; сверено **4 из 5**
+цитат Амиро (`De aeterna` — `LOCATOR_PARTIAL`).
+
+## 13. Дополнение (2026-10-19; раунд 59; кросс-досье `34_` §4.127, **S156**, сс. 183–192): возражение статьи — и
+ответ Амиро, который статья не повторяет
+
+**13.1. Что нашлось.** В предисловии «Eschantillon» (сс. 183–192) Амиро **сам** формулирует возражение,
+**дословно совпадающее по существу** с главным доводом статьи:
+> «*…il le rend… mesmes **de croire en l'Euangile quand on le luy annonce**? **Car est-ce pas cela dresser vn banquet
+> deuant des gens à qui il est impossible d'en manger**, & puis les punir rigoureusement de ce qu'ils n'ont pas estendu
+> la main vers les viandes? Si ainsi est qu'il n'y ait en l'homme aucune faculté de croire… **ou** la sagesse de Dieu le
+> deuoit empescher de le leur offrir ainsi inutilement, **ou**… **il deuoit aussi donner indifféremment la grace d'y
+> croire***» (сс. 190–191).
+
+**13.2. И ответ — не тот, который даёт статья.**
+> «*à cette question… **il respond en quelque lieu par les paroles de S. Augustin**: **Veux tu disputer auec moy de
+> cette matiere? Plustost esmerueille toy & t'escrie auec moy, O hautesse! Accordons nous tous deux en esbahissement
+> afin de ne point perir en erreur***» (сс. 191–192).
+> «*…veut-on, **s'il ne peut demesler toutes les difficultez** qui se presentent en cela, ou qu'il **dérogé quelque
+> chose à la bonté de Dieu**…?*» (с. 192).
+
+**13.3. Что из этого следует для рецензии — четыре пункта.**
+1. **Довод статьи реален и стар.** Он не выдуман ею; он стоял в 1634 г. как **возражение противника**.
+2. **Но ответ на него у источника — не схема.** Амиро отвечает **изумлением** (Августин чрез Кальвина) и
+   **признанием, что не все трудности разрешимы**.
+3. **Статья же выдаёт схему за решение.** ⇒ **Она решает то, что её источник объявил неразрешимым.**
+4. **И это меняет жанр возражения:** не «вы неправы в экзегезе», а «вы **уверены**, что сняли тайну, тогда как
+   ваш же автор от неё отказался».
+
+**13.4. И в пользу статьи — её сильнейшая цитата, тоже оттуда (с. 185).**
+> «***A-t-il pas assez témoigné qu'il ne tient pas à Dieu que tout le monde ne soit sauvé? Que la porte de la
+> misericorde n'est fermée à personne? Que par consequent Christ a fait la propitiation des péchez de tous les
+> hommes?***»
+Это **слова Амиро**, и они сильнее всего, что статья приводит. **Признать.**
+
+**13.5. И ответ о не слышавших (сс. 186–187) — дортский по существу.**
+Все «увёртки» отвергнуты (грехи предков; предвиденная бесплодность; скрытые заслуги), вывод:
+«***On ne peut donc auoir recours qu'à la seule volonté de Dieu, dont il n'y a moyen de fonder la cause***».
+⇒ **всеобщее приобретение у Амиро не снимает** проблему несправедливости: он решает её **голой волей Божией**.
+
+## 21. Поправка раунда 61: «два декрета» — схема самого Амиро (кросс-досье `34_` §4.140)
+
+**21.1. Что исправляется.** Формула «схема двух декретов — позднейшая учебная конструкция» **неверна**. У Амиро оба
+уровня названы им самим: «*c'est **vn decret de sauuer les hommes; mais qui produit seulement des promesses
+conditionelles***» (с. 209); «*le **décret** par lequel il est donné de croire, enclost necessairement celuy du salut*»
+(с. 208); и механика первого уровня — обетования «*ne determinant point precisement ce que c'est que Dieu a determiné en
+son conseil eternel*» (с. 209).
+
+**21.2. Где ошибка возникла.** **Не в досье, а в сводке.** Досье одновременно держало «*vn decret de sauuer les
+hommes*» и «*purement conditionel*» (§4.131); при сжатии в одну строку эти два разных утверждения склеились в ложное
+третье. Это ошибка **сжатия**, а не чтения, — и для серии важнее самой поправки.
+
+**21.3. Исправленная формула.** Структура статьи — **амиральдианская**; **содержание первого уровня — нет**: у Амиро
+там декрет **обетования** («*pourueu qu'ils croyent*»), у статьи — декрет **безусловного приобретения**.
+
+**21.4. Что не меняется.** Выводы §14–§17: всеобщее у Амиро **обусловлено**; различие между людьми «*vient de Dieu &
+non pas d'eux*»; оставление «*sans leur faire aucun tort*»; статья **не** Сомюр. Наоборот, признание схемы подлинной
+делает эти выводы точнее: видно, что безусловный уровень у Амиро есть — но он **не для всех**.
+
+**21.5. Оговорки.** Класс **A2** (скан `brieftraitdela00amyr`, 1658, `EDITION_HOLD`); главный трактат прочитан
+выборочно (главы VII–X), «Eschantillon» — почти целиком. Открытые пункты — прежние два.
+
+## 22. «Акцент на человеке»: проверка (раунд 61; кросс-досье `34_` §4.141)
+
+**22.1. Утверждение.** В статье различие между спасённым и погибшим описано верой/покаянием — то есть со стороны
+человека, — а не Божьим решением.
+
+**22.2. Что подтверждается.** Цепочка с. 23 («*без покаяния нет вменения…*») и посылка 3 (`06_` §1) действительно
+называют только человеческий член. Ни в посылках, ни в выводе нет ответа на вопрос, **почему** один уверовал, а
+другой нет.
+
+**22.3. Что НЕ подтверждается.** Что статья делает веру автономной или заслугой, что она отрицает благодать, что она
+«полупелагианская». Ни одного из этих утверждений текст не даёт; файл `19_`, где они стоят, — **легаси без классов**
+и полемический регистр. Поэтому в серию они не идут.
+
+**22.3-бис. Куда перенесён вес.** По записи `06_` («Ошибка 4», с. 23): «*Если человек не обратится… он останется
+виновным… Даже если за его грехи умер Христос. Это не сделает Бога несправедливым или жертву неэффективной*».
+Статья не отрицает действенности креста — но исход у неё решает **обращение**, а не решение Бога. Точная формулировка:
+**обращение несёт всю тяжесть**, при этом вопрос «откуда вера» не ставится.
+
+**22.4. Что верно сказать.** Вменение во времени — общее место реформатской ортодоксии, и спорить с ним как с ересью
+нельзя. Сдвиг **формальный**: различие описано человеком и не обосновано Богом. Отсюда — три возможных ответа
+(безусловный декрет; акт человека; всеобщая предваряющая благодать), и статья не выбирает ни одного.
+
+**22.5. Формула.** «Акцент на человеке» — верное описание **текста**; «полупелагианство» — неверное описание
+**автора**. Держать различие.
+
+## 23. «Replique à Monsieur de L. M.»: что это и что из неё берётся (раунд 61; `34_` §4.142)
+
+**23.1. Что это за текст.** Ответ на **католический** проект воссоединения; предмет — промысл, причины веры, образ
+действия благодати, оправдание, таинства. **Не об искуплении.** Прочитано сс. 253–258.
+
+**23.2. Что берётся.** Один пункт: противник утверждает, что внутреннее просвещение «*accompagne tousiours, & enuers
+tous la prédication extérieure de l'Euangile, & est de mesme estendue auec elle*» (с. 254). Амиро это отвергает и
+называет позицию арминианской: «*…comme les Arminiens, que l'entendement des hommes à qui l'Euangile est presché, est
+également affecté par l'illumination de la grâce*» (с. 257).
+
+**23.3. Зачем.** Это **третий** регистр, в котором Амиро отказывает в «поровну для всех»: приобретение (условно,
+с. 208), декрет («purement conditionel», с. 216), просвещение (не сопротяжено проповеди, сс. 254/257). Формула «Сомюр
+учил, что всем поровну» не подтверждается ни в одном из трёх.
+
+**23.4. Статус.** `SCOPED_IN_PART` — один пункт; остальное `SCOPED_OUT`. Читать «Replique» целиком для нашего вопроса
+не требуется.
+
+## 24. Где статья полагает само различие: совет, а не применение (раунд 61; `34_` §4.143)
+
+**24.1. Запись.** `16_` §5, со ссылкой на с. 29 статьи и сн. 94: «*предопределение ко спасению — безусловное… а
+предопределение к погибели — условное, основанное на предузнании человеческой греховности*». Класс — **`C`**,
+`LOCATOR_PARTIAL`: по записи **нельзя** различить, изложение это или собственная позиция.
+
+**24.2. Что установлено при обеих версиях.** В реформатской схеме декрет об отвержении двухсоставен: **оставление**
+суверенно и без условия (Шедд, I.441: «*The decree to leave the remainder…*», **S16**), **осуждение** — **за грех**.
+То есть грех — **заслуженная причина**, а не **условие** декрета. Формула статьи схлопывает эти два элемента.
+
+**24.3. Цена асимметрии.** Избрание безусловно + отвержение условно ⇒ различие между спасённым и погибшим **не одно**, а
+два разных. И тогда **всеобщее приобретение декоративно**: спасён ли я, решает избрание, а не широта креста.
+
+**24.4. Уточнение к §22.** «Акцент на человеке» **не тотальный** — в вопросе избрания решение остаётся за Богом; он в
+**нижнем этаже**, в том, что отличает одного от другого **в истории**. Не отдаёт человеку спасение — отдаёт **различие**.
