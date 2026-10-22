@@ -509,6 +509,38 @@ for _md in sorted(CORPUS.rglob("*.md")):
                 "scripts/validate_atonement_corpus_integrity.py"
             )
 
+# ------------------------------------- обязательные блоки реестра (правило 18) --
+# Гейт читает governance-блоки через .get(...) or {}, поэтому молчаливое удаление целого
+# блока выглядит как зелёное состояние: код возврата не теряется — теряется обязанность
+# проверять. Присутствие каждого обязательного блока требуется явно (22.10.2026).
+_REQUIRED_BLOCKS = [
+    ("branchTopologyAudit20261022.commitTimeChecks",
+     lambda: (reg.get("branchTopologyAudit20261022") or {}).get("commitTimeChecks")),
+    ("driveSourceAudit20261016.correctionsPending",
+     lambda: (reg.get("driveSourceAudit20261016") or {}).get("correctionsPending")),
+    ("driveSourceAudit20261016.correctionsPendingCount",
+     lambda: (reg.get("driveSourceAudit20261016") or {}).get("correctionsPendingCount")),
+    ("integrityGate.rules.mutationGroups",
+     lambda: ((reg.get("integrityGate") or {}).get("rules") or {}).get("mutationGroups")),
+    ("integrityGate.rules.mutationTotal",
+     lambda: ((reg.get("integrityGate") or {}).get("rules") or {}).get("mutationTotal")),
+    ("integrityGate.rules.mutationScore20261022",
+     lambda: ((reg.get("integrityGate") or {}).get("rules") or {}).get("mutationScore20261022")),
+    ("branchTopologyAudit20261022.branchRetirement.recheckCommand",
+     lambda: ((reg.get("branchTopologyAudit20261022") or {}).get("branchRetirement") or {}).get("recheckCommand")),
+]
+for _blk_name, _blk_get in _REQUIRED_BLOCKS:
+    try:
+        _blk_val = _blk_get()
+    except Exception as _exc:  # noqa: BLE001
+        errors.append(f"registry: обязательный блок {_blk_name} нечитаем: {_exc}")
+        continue
+    if not _blk_val:
+        errors.append(
+            f"registry: обязательный блок {_blk_name} отсутствует или пуст — отсутствие проверки "
+            "не должно выглядеть как её прохождение (правило 18)"
+        )
+
 # ------------------------------------------- correctionsPending: единая схема --
 # 22.10: шесть записей были в форме where/was/now, одна — where/status/erratum, седьмая — what/*. Из-за этого
 # «сколько открытых» нельзя ни посчитать, ни проверить — а это единственный вопрос, который имеет смысл к
@@ -680,11 +712,23 @@ if REG.is_file():
         if _absent:
             errors.append(f"dayOnlyFieldsPerRegistry не покрывает ланы {_absent} — в них поля дневной точности есть")
         if _badfig:
-            errors.append(
-                "scopeOfMeasurementRules.dayOnlyFieldsPerRegistry разошёлся с обходом: "
-                + ", ".join(f"{k}: записано {v[0]!r}, видим {v[1]}" for k, v in sorted(_badfig.items()))
-                + " — поле «сколько чужих дат ровно в день» это моё число, и оно обязано быть переснятым, а не унаследованным"
-            )
+            _mine = {k: v for k, v in _badfig.items() if k == "корпус"}
+            _theirs = {k: v for k, v in _badfig.items() if k != "корпус"}
+            if _mine:
+                errors.append(
+                    "scopeOfMeasurementRules.dayOnlyFieldsPerRegistry разошёлся с обходом по моему периметру: "
+                    + ", ".join(f"{k}: записано {v[0]!r}, видим {v[1]}" for k, v in sorted(_mine.items()))
+                    + " — моё собственное число обязано быть переснятым, а не унаследованным"
+                )
+            if _theirs:
+                # цифра о чужом лане живёт в моём файле, а править его может только владелец лана:
+                # блокировать чужой прогон моим устаревшим числом — то же зло, что и молчание о нём
+                notes.append(
+                    "dayOnlyFieldsPerRegistry разошёлся с обходом по чужим реестрам: "
+                    + ", ".join(f"{k}: записано {v[0]!r}, видим {v[1]}" for k, v in sorted(_theirs.items()))
+                    + " — замечание владельцу лана; прогон не блокируется, потому что переснять чужую бухгалтерию "
+                    "из этого PR я не могу, а врать молчанием не хочу"
+                )
         # нуль для существующего лана — это не лишнее число, а ровно то, что мы просим держать на виду
         _lanes = {_laney(_l) for _l in _docs}
         _extrafig = sorted(set(map(str, _daydecl_fig)) - _lanes)

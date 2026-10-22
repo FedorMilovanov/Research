@@ -1,0 +1,36 @@
+{
+  "name": "main: require PR and green integrity (P0 #196)",
+  "target": "branch",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "include": [
+        "refs/heads/main"
+      ],
+      "exclude": []
+    }
+  },
+  "bypass_actors": [],
+  "rules": {
+    "creation": true,
+    "update": true,
+    "deletions": true,
+    "force_pushes": false,
+    "pull_request": {
+      "require_code_owner_review": false,
+      "require_last_push_approval": false,
+      "dismiss_stale_reviews_on_push": false,
+      "required_approving_review_count": 0,
+      "required_review_thread_resolution": false
+    },
+    "required_status_checks": {
+      "strict": false,
+      "contexts": [
+        {
+          "context": "Atonement corpus integrity",
+          "integration_id": 15368
+        }
+      ]
+    }
+  }
+}
