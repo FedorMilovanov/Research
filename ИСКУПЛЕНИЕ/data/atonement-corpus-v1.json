@@ -1440,19 +1440,34 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 13,
+        "корпус": 20,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
         "synthesis": 0
       },
       "violationsFound20261022": 0,
-      "measuredAt": "2026-10-22T12:24Z",
-      "method": "обход тем же walk_measure/walk_fake по каждому из пяти реестров; отдельно посчитано, сколько at-ключей в файле вообще — иначе «ноль нарушений» неотличим от «правилу не за что зацепиться» (сегодня было именно так)",
-      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py; счётчик at-ключей: python3 -c \"import io,json,re;[print(p, sum(1 for k in json.load(io.open(p,encoding='utf-8')) if re.match(r'^(at|measuredAt)$',k))) for p in __import__('glob').glob('ИСКУПЛЕНИЕ/*/data/*corpus*.json')+['ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json']]\"",
+      "measuredAt": "2026-10-22T13:22Z",
+      "method": "тот же обход, что и у правила: python3 -B scripts/validate_atonement_corpus_integrity.py печатает расхождение, если число разоехалось; ручная пересъёмка — рекурсивный подсчёт по STAMP над пятью реестрами",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py && python3 -c \"import io,json,re,glob;S=re.compile('at|measuredAt|checkedAt|measuredOn|measuredAtGit');f=lambda o:(sum(1 for k in o if S.fullmatch(str(k)))+sum(f(v) for v in o.values()) if isinstance(o,dict) else sum(f(v) for v in o) if isinstance(o,list) else 0);[print(p,f(json.load(io.open(p,encoding='utf-8')))) for p in ['ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json']+sorted(glob.glob('ИСКУПЛЕНИЕ/*/data/*corpus*.json'))]\"",
       "proof": "обобщение проверено мутациями на чужих файлах: ot (measuredAt без часов), nt (baselineCount='TBD'), fathers (audit.at с точным временем, но без способа) — три разных сообщения с подписями реестр ot / реестр nt / реестр fathers; после каждого — побайтовое восстановление (cmp). Чужие данные не изменены: правило обязывает только того, кто завтра впишет туда датированную съёмку",
       "laneJsonFiles": 0,
-      "laneNote": "в docs/research/atonement/ нет ни одного .json — распространять некуда; корневые data/*.json (1cor11 и др.) принадлежат другим ланам и остаются на решении владельца корневого гейта"
+      "laneNote": "в docs/research/atonement/ нет ни одного .json — распространять некуда; корневые data/*.json (1cor11 и др.) принадлежат другим ланам и остаются на решении владельца корневого гейта",
+      "previousFigure": {
+        "stampedFieldsPerRegistry": {
+          "корпус": 13,
+          "fathers": 0,
+          "nt": 0,
+          "ot": 0,
+          "synthesis": 0
+        },
+        "whyWrong": "считалось ключами верхнего уровня и по двум именам из пяти, а командой, glob которой не захватывал даже сам корпусный файл (даёт 0). Число было воспроизводимо несуществующей операцией и описывало не то, что проверяет правило",
+        "foundAt": "2026-10-22T13:20Z",
+        "foundBy": "ручная перепроверка по запросу владельца, а не гейтом: расхождение нашлось, когда я переснял счётчик независимым обходом"
+      },
+      "stampedFieldsDefinition": "число = сколько ключей формы at|measuredAt|checkedAt|measuredOn|measuredAtGit встречает сам обход walk_measure (рекурсивно, по всем пяти именам), а не число ключей верхнего уровня; считается гейтом на каждом прогоне и сверяется с этой записью",
+      "recheckCommandVerifiedAt": "2026-10-22T13:26Z",
+      "recheckCommandNote": "команда снята исполнением: первый её вариант давал 21 и 2 вместо 20 и 0, потому что я написала re.match без якоря, и он ловил ключи, только начинающиеся на «at» (attribution). Патерналы правила и сверочной команды обязаны совпадать буквально — fullmatch тем же пяти именам"
     },
     "mixedScriptCheck": {
       "scope": "governance-слой корпуса: все markdown-файлы корня ИСКУПЛЕНИЕ (19 шт., они же периметр этого PR)",

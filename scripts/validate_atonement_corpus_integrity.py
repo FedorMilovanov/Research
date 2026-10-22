@@ -346,26 +346,33 @@ if REG.is_file():
     STAMP = re.compile(r"^(?:at|measuredAt|checkedAt|measuredOn|measuredAtGit)$")
     HOW = {"method", "methods", "how", "howRule", "recheckCommand", "proofCommand", "measuredIn",
            "measuredFromTheirBase", "which", "command", "measuredBy"}
-    def walk_measure(node, where):
+    _stamp_sites = {}
+
+    def walk_measure(node, where, label=None):
         if isinstance(node, dict):
             stamps = sorted(k for k in node if STAMP.match(str(k)))
-            if stamps:
-                val = str(node[stamps[0]])
+            if stamps and label is not None:
+                # поле в словаре может быть не одно: считать надо все, иначе «проверено N мест» врёт
+                _stamp_sites[label] = _stamp_sites.get(label, 0) + len(stamps)
+            for st in stamps:
+                # раньше проверялся только stamps[0]; если в записи два поля даты (at + measuredAtGit),
+                # второе оставалось необследованным — дыра, найденная при ручной перепроверке
+                val = str(node[st])
                 if not re.search(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", val):
                     errors.append(
-                        f"{where}.{stamps[0]} = {val!r}: съёмка без точного времени (HH:MM). Дата без "
+                        f"{where}.{st} = {val!r}: съёмка без точного времени (HH:MM). Дата без "
                         "часов не позволяет отличить «устарело» от «проверено сегодня»"
                     )
-                if not (set(map(str, node)) & HOW):
-                    errors.append(
-                        f"{where}: датировано, но способа переснять нет (нет ни одного из {sorted(HOW)[:4]}…). "
-                        "Число, которое нельзя переснять, — это мнение, а не замер"
-                    )
+            if stamps and not (set(map(str, node)) & HOW):
+                errors.append(
+                    f"{where}: датировано, но способа переснять нет (нет ни одного из {sorted(HOW)[:4]}…). "
+                    "Число, которое нельзя переснять, — это мнение, а не замер"
+                )
             for key, val in node.items():
-                walk_measure(val, f"{where}.{key}")
+                walk_measure(val, f"{where}.{key}", label)
         elif isinstance(node, list):
             for i, val in enumerate(node):
-                walk_measure(val, f"{where}[{i}]")
+                walk_measure(val, f"{where}[{i}]", label)
     # обход по ВСЕМ machine-реестрам корпуса, а не по одному: у четырёх под-корпусов
     # сегодня ноль полей этой формы, поэтому распространение ничего не ломает — но именно поэтому
     # оно единственное, что помешает им заболеть тем же через неделю
@@ -382,7 +389,33 @@ if REG.is_file():
         except Exception as _exc:  # noqa: BLE001
             errors.append(f"{_label} ({_path.name}) не читается: {_exc}")
     for _label in _docs:
-        walk_measure(_docs[_label], _label)
+        walk_measure(_docs[_label], _label, _label)
+
+    # (2b) число проверяемых мест обязано быть записано и сверено: иначе «ноль нарушений» неотличим
+    # от «правилу не за что зацепиться». У своих реестров расхождение — ошибка; у чужих, которые поле
+    # только что приобрели, — записка: требовать от соседа править мой реестр я не вправе
+    _decl = ((reg.get("integrityGate") or {}).get("scopeOfMeasurementRules") or {}).get(
+        "stampedFieldsPerRegistry") or {}
+    if "корпус" not in _decl:
+        errors.append(
+            "integrityGate.scopeOfMeasurementRules.stampedFieldsPerRegistry нет — сколько мест правило "
+            "действительно видит должно быть записано, а не выводимо из моего молчания"
+        )
+    for _lab, _got in sorted(_stamp_sites.items()):
+        _k = "корпус" if _lab == "реестр" else _lab.replace("реестр ", "")
+        drift = (_decl[_k] != _got) if _k in _decl else bool(_got)
+        if not drift:
+            continue
+        msg = (f"stampedFieldsPerRegistry[{_k!r}] = {_decl.get(_k)!r}, а обход правила нашёл {_got} полей формы "
+               "at|measuredAt|checkedAt|measuredOn|measuredAtGit")
+        if _k == "корпус":
+            errors.append(msg + " — число в реестре обязано совпадать с тем, что видит проверка (считать надо тем же "
+                                "определением, которым проверяешь)")
+        else:
+            # чужой реестр: сама датированная съёмка обязана быть точной (правила (1)-(3) выше их ловят), но
+            # моя запись о количестве их полей — моя бухгалтерия, и требовать от соседа править мой файл я не вправе
+            notes.append(msg + " — счётчик в моём реестре устарел из-за чужих изменений; исправлю я, блокировать "
+                               "чужой прогон из-за своей цифры не буду")
 
     # (3) плейсхолдеры в измеренных полях
     MEASURED_KEY = re.compile(r"(?:At|Time|Bytes|Count|Total|Lines|Size)$", re.I)
