@@ -6224,6 +6224,134 @@ III–IV, «*nemo… excusare*»).
 **8. Оговорки.** `EDITION_HOLD`; прочитано **23 чанка из 74** (~31 %); французский OCR; §4.116 п. 13 — поправка
 объёма «Eschantillon» (порядка 50–60 сс., не 200).
 
+### 4.118. Q114 — Начало «Eschantillon» (с. 167): перечень обвинений, которые Амиро называет клеветой. Тезис статьи как римско-католическая карикатура 1634 г. (раунд 57)
+
+**0. Локатор — подтверждён и уточнён.** Трактат заканчивается на с. **166** словом «**FIN**»; на с. **167** —
+титул раздела: «**ESCHANTILLON DE LA DOCTRINE DE CALVIN, Touchant la Predestination**». Значит: начало раздела =
+**с. 167** (чанок 32), прежняя догадка «между сс. 161 и 192» **сужена до точного места**. **П. 233 — ЗАКРЫТ.**
+
+**1. Как открывается раздел.** «*Entre les choses pour lesquelles les **Predicateurs de l'Eglise Romaine diffament le
+nom de Caluin**, la doctrine de la Predestination semble estre la principale*» (с. 167).
+**Перевод:** «Среди того, чем **проповедники Римской Церкви клевещут на имя Кальвина**, учение о предопределении
+представляется главным». То есть перед нами **апологетический** текст: не изложение своей догмы, а **защита
+Кальвина от обвинений**.
+
+**2. И вот эти обвинения — по порядку, как их перечисляет Амиро (с. 167).**
+1. «*Dieu a créé la plus grande partie des hommes **expressement pour les damner**, mesmes **sans consideration de
+   leurs offences***».
+2. «*Pour l'execution de cette sienne volonté il a ordonné que le premier homme pecheroit… de sorte qu'il luy a
+   imposé **pareille necessité de pecher***».
+3. «*Pour aggrauer la condamnation des hommes il leur a donné **vne loy qu'il est impossible d'accomplir**…*».
+4. «*Dieu… a bien envoyé son Fils… **mais non pas pour faire la propitiation de leurs pechez**, **son sacrifice
+   n'estant destiné qu'à la redemption de fort peu d'entre les hommes***».
+5. «*Et que **quand il suffiroit pour tout le genre humain**, c'est **inutilement pour la plus grande part**,
+   d'autant qu'**il ne leur en donne aucune connoissance***».
+6. «*Mesmes à ceux à qui la mort de Christ est annoncée, Caluin la rend **inutile de tout poindt**, en ostant aux
+   hommes **toute faculté de croire***».
+7. Итог: «*ils declament contre nous, **comme si nous estions les plus execrables d'entre les hommes***».
+
+**3. Сопоставление с тезисом статьи — и оно не в пользу статьи.**
+
+| Обвинение (1634) | Что утверждает статья |
+|---|---|
+| № 4: «*sacrifice destiné à **fort peu***» | «ограниченное искупление» — предмет её критики |
+| № 5: «*suffiroit pour tous*», но «*inutilement*» | «достаточно для всех, действительно для избранных» |
+| № 6: «*inutile*, потому что отнята способность верить» | «если благодать непреодолима, зов неискренен» |
+
+**Три вывода, и все три точные:**
+1. **Приёмы статьи — не новые.** Её критические аргументы против «ограниченного искупления» **дословно совпадают**
+   с тем, что Амиро в 1634 г. выставляет как **клевету римских проповедников**.
+2. **Значит, статья спорит не с Дортом, а с карикатурой, ходившей уже в 1634 г.** Самый сильный её довод
+   («sacrifice destiné à fort peu») — **не дортская формула**: у Дорта «*non reconciliabilitatem… sed
+   reconciliationem*» и «*aeque late*» (S145), то есть не «мало», а «**нераздельно**».
+3. **И вот в чём ошибка статьи исторически.** Она думает, что **исправляет** реформатское учение. На деле она
+   **повторяет ход Амиро** — и повторяет его **без оговорок Амиро**.
+
+**4. Что Амиро делает с этим обвинением дальше — и здесь начинается то, чего в статье нет.**
+**(а) Он отвечает не «это неправда», а «так говорить нельзя»:** «*il faut entendre ce mot de **création**, non du
+dessein de la première [intégrité]… mais de cette **entremise de la prouidence**… qui est **infectée de la contagion du
+péché***» (сс. 170–171). То есть **переименование предмета**: predestination касается **падших**, а не сотворённых.
+**(б) Он отвечает вопросом:** «*en quoy est-ce qu'il pense Dieu estre **redeuable à l'homme**?*»; «*puis que nous
+sommes tous condamnés… il ne se peut faire que Dieu ne nous ait en haine: & ce **non pas d'une cruauté tyrannique, mais
+par vne équité raisonnable***» (сс. 171–172). **Это дортский ответ, произнесённый защитником «всеобщности».**
+**(в) И он прямо отвергает «необходимость греха»:** «*Combien qu'il ne soit point cheut sans que Dieu l'ait ainsi
+**preueu & ordonné**: toutesfois cela ne fait rien pour le relever de coulpe… Car nous auons tousjours à considerer
+qu'il **s'est volontairement** privé de l'intégrité*» (сс. 174–175).
+**Формула:** у Амиро обвинение № 2 **опровергается**, а не принимается; и опровергается **различением
+предопределения и падения.**
+
+**5. И это ставит точный вопрос к статье, на который у неё нет ответа.**
+> Если «ограниченное искупление» ложно потому, что Христос умер «*pour tous*», то **что делать с обвинением № 6** —
+> что зов неискренен, если способность верить отнята? **Амиро отвечает на него не «всеобщностью», а различением
+> нравственной и физической невозможности** (§4.117 п. 4). **Статья этого различения не имеет** и потому
+> вынуждена решать ту же проблему **ослаблением благодати** — то есть ровно тем, что `Acta` отвергли.
+
+**6. И ещё одно место, которое надо знать прежде всего остального (с. 164).** В конце трактата, перед «FIN»,
+Амиро говорит о **трёх** степенях любви Божией:
+> «*Ce **second degré** de l'amour de Dieu, dont dépend ton election, en produit necessairement **vn croisiéme**,
+> aussi tendre & véhément, aussi constant & inuariable que l'autre*».
+> «*Selon ce second degré il nous a aimez **afin que nous l'aimassions**; selon ce troisième il nous aime **pource que
+> nous l'aimons au reciproque***».
+> «*Selon ce second degré il nous a aimés **afin de commencer** en nous l'oeuvre de nostre salut; selon ce troisième il
+> nous aime pource qu'il est **des-ja bien auancé**, & qu'il nous le veut parfaire*».
+
+**Это важно двумя чертами:** (1) степеней **три**, а не две (уточнение к §4.114: там речь о двух степенях
+**милости**, здесь — о трёх степенях **любви**, и это не то же различение); (2) третья степень — «*il nous aime
+pource que nous l'aimons*» — **любовь Бога, отвечающая на нашу**. В столь строгой схеме это неожиданно, и
+**замалчивать этого нельзя**: у Амиро есть место, где основание любви Божией к нам — **наша любовь**. Для серии это
+**предупреждение**: не описывать Амиро как последовательного «безусловника».
+
+**7. ГЛАВНОЕ МЕСТО ДНЯ — «comme si» (с. 164).**
+> «*L'Apostre S. Paul… **parle de l'enuoy du Fils de Dieu au monde comme s'il auoit esté ordonné seulement pour eux**,
+> & que les autres hommes n'eussent point de part en la propitiation qu'il a faite des péchés: **quoy que**, comme nous
+> avons dit cy-dessus, **il ait esté enuoyé pour sauver tous les humains, pourueu que par incrédulité ils ne se
+> monstrent point indignes de la miséricorde qui leur est présentée***».
+
+**Разбор — и это ядро всей нашей темы.**
+1. **Частные тексты («за нас», Рим. 8:32–34) — по Амиро, сказаны «как если бы»** («*comme si*»). То есть **не
+   буквально**.
+2. **Всеобщее послание — буквально:** «*enuoyé pour sauver tous les humains*».
+3. **Условие при этом сохранено:** «*pourueu que… ils ne se monstrent point indignes*».
+
+**Это ровно обратное дортскому правилу.** У Дорта частные тексты выражают **намерение**, всеобщие — **предложение**
+(§4.113). У Амиро частные — **«как если бы»**, всеобщие — **действительное посланничество**. **Одна и та же
+грамматика, вывернутая наизнанку.** И **статья стоит на стороне Амиро** — но **не признаёт**, что это позиция, а не
+очевидность.
+
+**8. И последнее, самое неудобное для статьи (с. 164).**
+> «*L'autre [l'amour universel], dont l'effet dépend de l'execution de la condition qu'il exige d'eux, **n'est quasi
+> pas considerable**, quoy qu'il soit merueilleusement grand à le considerer precisément & absolument en luy mesme*».
+> «*Et si vous auez égard au **fruit** qui resulte de la propitiation faite par Christ, **l'incredulité des vns
+> empeschant qu'ils n'en reçoiuent aucun**, fait qu'en cette comparaison **il semble que Dieu ait eu seulement égard à
+> ceux à qui il a ordonné de la rendre fructueuse***».
+
+**Что здесь сказано, без смягчений:**
+1. Всеобщая любовь в **сравнении** с любовью к избранным — «*n'est quasi pas considerable*». **Сам Амиро её
+   обесценивает.**
+2. Плод всеобщего удовлетворения для неверующих — «**aucun**». **Никакого.**
+3. И потому в сравнении «**il semble**» (кажется), что Бог имел в виду только тех, кому определил сделать её
+   плодоносной.
+
+**Вывод, который переворачивает тезис статьи:** «всеобщее приобретение» у Амиро **не даёт неверующему ничего** —
+сам автор говорит «*aucun*». Значит, различение «приобретено для всех / применено к избранным» **не описывает**
+эту схему: у Амиро **приобретено для всех так, что вне веры плод — ноль**, и он **сам** признаёт, что тогда
+частный язык Писания **точнее** всеобщего.
+
+**9. Что теперь можно утверждать твёрдо (сводно).**
+1. **Разделение «искупление / примирение» — не открытие статьи и не учение Дорта.** Это **сомюрская схема**
+   (Амиро, 1634/1658), где различены **два рассмотрения милости** и **два способа говорить** об одной смерти.
+2. **Она была отвергнута в Дорте (1619) формулой «non reconciliabilitatem… sed reconciliationem»** — то есть
+   **раньше**, чем Амиро её изложил.
+3. **Она же в 1634 г. ходила как римско-католическая клевета на Кальвина**, и Амиро **защищал** от неё Кальвина
+   этим различением. **Статья повторяет и обвинение, и защиту — но без оговорок защиты.**
+4. **И у Амиро всеобщий член даёт неверующему «aucun» плода** — так что «приобретено для всех» **не его** формула.
+5. **Правильная историческая оценка статьи:** она **не исправляет** реформатское учение, а **воспроизводит
+   сомюрскую апологетику** в её популярной форме, **утратив** три её предохранителя: условность всеобщего члена,
+   ограниченность ходатайства и безусловность веры.
+
+**10. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); прочитано **25 чанков из 74** (~34 %); французский OCR; цитаты
+Кальвина, приводимые Амиро, **не сверены** с изданием (**пп. 227, 232**).
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6749,6 +6877,7 @@ III–IV, «*nemo… excusare*»).
 | 1658 *(раунд 56, продолжение; Амиро, «Eschantillon», сс. 103–107; чанок 40)* | **НАЙДЕН «Eschantillon de la doctrine de Calvin»** (своя пагинация): «*Caluin donc considere la misericorde de Dieu **en deux manières***»; первая — «*enclin à pardonner universellement à tous ceux qui sont repentans… **exige necessairement la repentance***»; «*le **desespoir** nous precipite en une rage… **il endurcit nos cœurs***»; вторая — «*ne se contente pas d'exiger la repentance… mais qu'elle a resolu de **créer elle mesme cette condition** en la creature*»; **таблица:** «*la precedente est **universelle**, cellecy est **particuliere***… *l'evenement est en ce regard **en suspens**, celle icy… **certain & necessaire***… *celle-là est **constante autant comme la condition l'est**, celle-cy est **invariable***»; Рим. 9:15 — «*il est **impossible d'en trouuer cause plus haute que sa volonté***» |
 | 1658 *(раунд 56, часть 5; Амиро, «Eschantillon», сс. 197–212; чанки 39, 41)* | **Сердцевина «Eschantillon»**: «*pour **difficile** que fust la reconciliation des sentimens de Caluin en ce point*»; способ — «*en **accordant ses hypotheses**, donner aux **manieres de parler**… une interpretation qui **raisonnablement** leur conuienne*»; предмет предопределения — «*l'homme **tombé** en malediction*», в целостности же «*sans **aucune ombre** de misericorde*»; **«il parle de la mort de Christ en deux diuerses manières»**: «*mort **universellement pour tous hommes, pourueu qu'ils croyent***» / «*pour ceux-là, voire pour ceux-là seulement… **absolument***», ибо «*le decret par lequel il leur est donné de croire **enclost necessairement** celuy du salut*»; «*quant à ceux-là, **il n'est mort pour eux sinon à la condition qu'ils croyent***»; **«la dispute n'est point… si Christ est venu purger les pechez de tout le monde: car cela est sans contredit»**; «*nous ne sommes pas sur… **quelle est la vertu de Christ**… mais **à qui c'est qu'il se donne***»; «*nul ne peut estre participant de Christ, sinon celuy qui a esté **adopté***» |
 | 1658 *(раунд 56, часть 7; трактат, сс. 156–162; «Eschantillon», сс. 192–197; чанки 31, 38)* | **Цепь спасения:** «*Nostre salut… dépend de… la foy; cette foy ne pend de la grâce…; cette grâce… dépend du conseil de l'election; & ce conseil n'ayant autre fondement que sa volonté, est constant & irrevocable*»; «*ny à quelque condition que ce soit qu'il ait **preveue** devoir estre en nos personnes*»; «*pour **racheter le genre humain** il a ordonné de nous donner la foy… **afin que cette rédemption ne nous fust pas inutile***»; «*son Fils… **ne prioit point pour nous**… **je ne prie point pour le monde***» (Ин. 17:9); **нравственная невозможность:** «*impuissance **physique ou naturelle***» vs «*s'ils ne le peuvent pas, c'est que leur **peruersité** est extrême*»; «*l'Euangile ne crie autre chose sinon que **Dieu les veut sauuer, pourueu qu'ils croyent***»; «*il **ne doit rien à personne***» |
+| 1658 *(раунд 57; начало «Eschantillon», сс. 163–167; чанки 32–33)* | **Титул: «ESCHANTILLON DE LA DOCTRINE DE CALVIN, Touchant la Predestination»** (с. 167); трактат кончается на с. 166 словом «**FIN**». **Открывается перечнем того, чем «*les Predicateurs de l'Eglise Romaine diffament le nom de Caluin*»:** «*Dieu a créé la plus grande partie des hommes **expressement pour les damner***»; «*vne loy qu'il est impossible d'accomplir*»; «*son sacrifice n'estant destiné qu'à la redemption de **fort peu***»; «*quand il suffiroit pour tout le genre humain, c'est **inutilement** pour la plus grande part*»; «*il la rend inutile… en ostant toute faculté de croire*». **Ответ:** «*il faut entendre ce mot de création… de cette entremise de la prouidence… infectée de la contagion du péché*»; «*en quoy est-ce qu'il pense Dieu estre **redeuable à l'homme**?*»; «*non pas d'une cruauté tyrannique, mais par vne **équité raisonnable***»; «*il **s'est volontairement** privé de l'intégrité*». **Три степени любви:** «*ce second degré… en produit necessairement **vn croisiéme***»; «*selon ce troisième il nous aime **pource que nous l'aimons au reciproque***». **«Comme si»:** «*S. Paul… parle de l'enuoy du Fils… **comme s'il auoit esté ordonné seulement pour eux**… quoy que… **il ait esté enuoyé pour sauver tous les humains, pourueu que***». **И обесценивание всеобщего:** «*l'autre… **n'est quasi pas considerable***»; «*l'incredulité des vns empeschant qu'ils n'en reçoiuent **aucun***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -7260,6 +7389,18 @@ III–IV, «*nemo… excusare*»).
   qu'ils croyent*»; «*il ne doit rien à personne*». **ПОПРАВКА 2:** «Eschantillon» — **порядка 50–60 сс.**, не 200+;
   начало между сс. 161 и 192; **п. 228 снова открыт** (гипотеза о чанке 19 ослаблена — пагинация сплошная).
 
+- **Раунд 57, часть 1: начало «Eschantillon» найдено и прочитано (сс. 163–167; п. 233 ЗАКРЫТ).** Титул:
+  «**ESCHANTILLON DE LA DOCTRINE DE CALVIN, Touchant la Predestination**» (с. 167); трактат кончается на с. 166
+  («**FIN**»). **Раздел открывается перечнем клеветы римских проповедников на Кальвина** — и **обвинения № 4–6
+  дословно совпадают с критикой статьи** («*sacrifice destiné à fort peu*»; «*suffiroit pour tous*… *inutilement*»;
+  «*inutile*… *ostant toute faculté de croire*»). **Вывод:** статья **не исправляет** реформатское учение, а
+  **повторяет ход Амиро** (1634) против карикатуры — **без трёх его предохранителей**.
+  **Главное место — «comme si» (с. 164):** частные тексты сказаны «*comme s'il auoit esté ordonné seulement pour
+  eux*», всеобщее посланничество — «*pour sauver tous les humains, pourueu que…*» ⇒ **грамматика обратна дортской**.
+  **И:** всеобщая любовь «*n'est quasi pas considerable*»; плод для неверующих — «***aucun***». **Три степени любви**
+  (не две): третья — «*il nous aime pource que nous l'aimons au reciproque*» ⇒ **не описывать Амиро как
+  «безусловника»**. **П. 233 закрыт**; новые пп. 236–238.
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -7430,6 +7571,16 @@ reconciliationem*» по условному плоду** — то есть по 
 **ограничение ходатайства**; выяснить, цитирует он Кальвина или говорит от себя.
 235. *(раунд 56)* **Проверить «*racheter le genre humain*»** (с. 162) на других страницах трактата: единично это или
 устойчивая формула.
+
+**Добавлено в раунде 57:**
+
+236. *(раунд 57)* **Дочитать предисловие «Eschantillon»** (сс. 167–192, чанки 33–37): найти ответы на обвинения № 3
+(невозможный закон) и № 6 («отнята способность верить») — там должно быть место о различении природной и
+нравственной способности; сверить с §4.117 п. 4.
+237. *(раунд 57)* **Проверить «*comme si*» (с. 164) по другим местам трактата**: есть ли ещё случаи, где Амиро
+называет библейское выражение «как если бы». Если да — это его **устойчивое** правило, и оно должно быть в §4.9.
+238. *(раунд 57)* **Сверить перечень обвинений (с. 167) с римско-католической полемикой 1600–1630-х** (Беллармин,
+дю Перрон, кардинал дю Гар). Установить, **чьими словами** Амиро передаёт обвинения: цитата или пересказ.
 
 **Добавлено в раунде 48:**
 
