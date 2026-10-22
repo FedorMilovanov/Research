@@ -135,3 +135,27 @@
    Поскольку все люди по своей греховной природе ненавидят свет и бегут от него (Ин. 3:19–20), спасительную веру обретают **только те, кого Отец суверенно избрал от вечности и дал Сыну, и за кого Сын заплатил Своей искупительной Кровью, купив для них дар Духа Святого**!
 
 Таким образом, в Иоанна 3:16 нет ни тени противоречия с доктриной партикулярного искупления. Напротив, Ин. 3:16 сияет во всем своем величии только тогда, когда мы осознаем: крест Христов не просто предложил абстрактную возможность, но **гарантировал**, что среди растленного и проклятого мира непреложно восстанет спасенный, верующий народ Божий, обретающий жизнь вечную.
+
+
+## Дополнение (2026-10-19; раунд 58; кросс-досье `34_` §4.124; сверка по изд. Кальвина, класс **B1**): Кальвин на
+Ин. 3:16 — точный текст, и где в нём граница
+
+**1. Что говорит Кальвин.** «*And he has employed the universal term **whosoever**, both **to invite all
+indiscriminately to partake of life**, and **to cut off every excuse from unbelievers**. Such is also the import of the
+term **World**… for though nothing will be found in the world that is worthy of the favor of God, yet **he shows
+himself to be reconciled to the whole world, when he invites all men without exception to the faith of Christ**, which
+is nothing else than an entrance into life*».
+
+**2. И тотчас — граница, которую нельзя отрезать.** «*Let us remember, on the other hand, that while **life is
+promised universally to all who believe** in Christ, still **faith is not common to all**. For **Christ is made known
+and held out to the view of all**, but **the elect alone are they whose eyes God opens**, that they may seek him by
+faith*».
+
+**3. Что это даёт защите Ин. 3:16 — три пункта.**
+1. **Всеобщность текста — в регистре предложения** («*invite*», «*held out*», «*made known*»), **не приобретения**.
+2. **Определённость — в регистре призвания** («*the elect alone… whose eyes God opens*»).
+3. **Оба регистра стоят рядом, в одном абзаце, у самого Кальвина.** Значит «Ин. 3:16 учит всеобщему приобретению»
+   — **не** Кальвиново чтение; «Ин. 3:16 учит всеобщему предложению при определённом призвании» — **Кальвиново**.
+
+**4. Оговорки.** Класс **B1** (перевод CTS; лат. не сверен). Выражение «*reconciled*» в переводе против «*propice*»
+у Амиро — вероятно, переводчик передаёт «*propitium*»; **проверить по латыни** (не утверждать).
