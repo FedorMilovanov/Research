@@ -514,8 +514,26 @@ for _md in sorted(CORPUS.rglob("*.md")):
 # «сколько открытых» нельзя ни посчитать, ни проверить — а это единственный вопрос, который имеет смысл к
 # незакрытому периметру. Схема приведена к where/defect/resolution/applied, и далее она требуется машиной.
 _cpc = (reg.get("driveSourceAudit20261016") or {}).get("correctionsPending") or []
+# «единая схема» обязана означать то, что проверяется: не «есть обязательный каркас» (тогда лишние ключи
+# плодятся и счётчик снова зависит от удачи), а каркас + закрытый список разрешённых полей.
+_sch = (reg.get("driveSourceAudit20261016") or {}).get("correctionsPendingSchema") or {}
+_REQ = tuple(_sch.get("required") or ())
+_OPT = set(_sch.get("optional") or ())
+if _cpc and not _REQ:
+    errors.append(
+        "correctionsPendingSchema.required нет — «единая схема» без перечня обязательных ключей означает "
+        "«схема есть у того, кто смотрит последним»"
+    )
+    _REQ = ("where", "defect", "resolution", "applied", "why", "checkedAgainstMain20261022")
 for _i, _c in enumerate(_cpc):
-    _miss = [k for k in ("where", "defect", "resolution", "applied", "checkedAgainstMain20261022") if k not in _c]
+    _miss = [k for k in _REQ if k not in _c]
+    _extra = sorted(set(map(str, _c)) - set(_REQ) - _OPT)
+    if _extra:
+        errors.append(
+            f"correctionsPending[{_i}] несёт ключи {_extra} вне разрешённой схемы — запись с собственным набором "
+            "полей нельзя ни посчитать, ни прочитать; перенести смысл в why/resolution или расширить "
+            "correctionsPendingSchema.optional (расширение — явный шаг, а не молчаливая вольность)"
+        )
     if _miss:
         errors.append(
             f"реестр.driveSourceAudit20261016.correctionsPending[{_i}] без обязательных ключей {_miss} — "

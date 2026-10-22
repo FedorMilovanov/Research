@@ -1440,7 +1440,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 21,
+        "корпус": 22,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -1800,7 +1800,8 @@
         "applied": true,
         "appliedAt": "2026-10-17",
         "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
-        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно",
+        "why": "первая редакция §7 того же дня содержала снимки «на глаз»; сам класс дефекта (число без пересчёта) ради этого реестра и заведён, поэтому случай оставлен записью, а не вытерт правкой задним числом"
       },
       {
         "where": "17_...md, 10c и 13b; adjacentLanes этого реестра",
@@ -1809,7 +1810,8 @@
         "applied": true,
         "appliedAt": "2026-10-17",
         "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
-        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно"
+        "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно",
+        "why": "расхождение прозвучало лишь потому, что тело PR и дока считались по разным съёмкам; с этого дня число в теле сверяется с выводом gh pr view, а не с моей памятью"
       },
       {
         "where": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
@@ -1834,7 +1836,7 @@
         "measuredAt": "2026-10-22T12:26Z",
         "method": "python3 -обход 84 md ИСКУПЛЕНИЕ c паттерном смешанной графики; пофайловый вывод с номерами строк (grep -n по каждому файлу)",
         "recheckCommand": "grep -rnE '[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]' --include='*.md' ИСКУПЛЕНИЕ/nt ИСКУПЛЕНИЕ/fathers | cut -d: -f1,2",
-        "whyNotFixedHere": "править орфографию в чужом лане — то же, что молча поправить чужой счётчик: я это уже запретила сегодня на себе"
+        "why": "править орфографию в чужом лане — то же, что молча поправить чужой счётчик: я это уже запретила сегодня на себе"
       }
     ],
     "mirrorLag": {
@@ -1863,6 +1865,28 @@
       "measuredAt": "2026-10-22T12:26Z",
       "method": "python3 -c \"import json;d=json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));c=d['driveSourceAudit20261016']['correctionsPending'];print(len(c),sum(1 for x in c if not x['applied']))\"",
       "why": "число открытых записей — единственный способ понять, закрыт ли периметр; без единой схемы его нельзя ни посчитать, ни проверить, поэтому гейт сверяет этот словарь с фактическим составом"
+    },
+    "correctionsPendingSchema": {
+      "required": [
+        "where",
+        "defect",
+        "resolution",
+        "applied",
+        "why",
+        "checkedAgainstMain20261022"
+      ],
+      "optional": [
+        "appliedAt",
+        "appliedHow",
+        "schemaNote",
+        "measuredAt",
+        "method",
+        "recheckCommand"
+      ],
+      "why": "набор полей закрыт, а не «рекомендован»: четыре разных набора у восьми записей — это то, из-за чего 22.10 число открытых записей нельзя было получить машиной; расширение optional — явный шаг с объяснением, а не молчаливая вольность автора записи",
+      "measuredAt": "2026-10-22T14:08Z",
+      "method": "пересчёт наборов ключей по всем записям: python3 -c \"import io,json;d=json.load(io.open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json',encoding='utf-8'));print(len({tuple(sorted(x.keys())) for x in d['driveSourceAudit20261016']['correctionsPending']}))\"",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     }
   },
   "branchTopologyAudit20261022": {
