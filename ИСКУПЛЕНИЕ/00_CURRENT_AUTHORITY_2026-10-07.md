@@ -76,3 +76,16 @@
 ## 6. Связь с root
 
 Этот файл не заносится в `data/research-authority-registry-v1.json` как root. Корневой owner остаётся `00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md`. Навигационная ссылка в README допустима как corpus entrypoint.
+
+## 9. Сводный вердикт (2026-10-19; раунд 59)
+
+Добавлен [`synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md`](synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md) —
+**единственный** документ корпуса, где ответ на вопрос «насколько корректно разделение atonement/redemption у
+Прокопенко» сведён в одно место.
+
+**Статус вывода:** `RESEARCH / NOT PUBLICATION-READY`. Документ **не разрешает** публикацию и **не снимает** ни одного
+HOLD: `RIGHTS_HOLD` (текст статьи), `PUBLICATION_HOLD`, `EDITION_HOLD` (Амиро 1658 ≠ 1634), `ATTRIBUTION_HOLD`
+(пфальцское суждение), `LOCATOR_PARTIAL` (Гревинховен; `De aeterna`), C-16 OPEN.
+
+**Обязательная оговорка при любом использовании:** цитаты Кальвина у Амиро сверены **2 из 5**; класс **B1**
+(англ. пер. CTS). Публиковать утверждения о Кальвине можно только после сверки с изданием.

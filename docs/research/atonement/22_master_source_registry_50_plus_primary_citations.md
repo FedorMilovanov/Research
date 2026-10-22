@@ -863,6 +863,28 @@
       **решает то, что её источник объявил неразрешимым**. **(5) О не слышавших (сс. 186–187):** все «увёртки»
       отвергнуты, «*On ne peut auoir recours qu'à la **seule volonté de Dieu**, dont il n'y a moyen de fonder la
       cause*» ⇒ **всеобщее приобретение проблемы не снимает**. **П. 240 ЗАКРЫТ**; `EDITION_HOLD`; **29/74** (~39 %).
+    - 42dm. *Дополнение 2026-10-19 (раунд 59, часть 4; `34_` §4.128; `01_` §14; `06_` §23; `synthesis/03_` §38; класс **B1**):*
+      **ИН. 1:29 И РИМ. 5 СВЕРЕНЫ — СВЕРКА 4 ИЗ 5.** Calvin, *Comm. on John* (CTS, по BibleHub, чанки 12–13): «*he
+      extends this favor **indiscriminately to the whole human race**… the benefit which is **offered to all**…
+      **obtaining reconciliation**… **provided that he comes to him by the guidance of faith***». Calvin, *Comm. on
+      Romans* (CTS, чанки 7, 9, 10): **5:17** «*the **benefit of Christ does not come to all men**… we must be
+      **ingrafted in him by faith***»; **5:18** «*He makes this favor **common to all, because it is propounded to
+      all**, and **not because it is in reality extended to all**; for **though Christ suffered for the sins of the
+      whole world**… **yet all do not receive him***». ⇒ **в пользу статьи:** «пострадал за грехи всего мира» —
+      подлинный Кальвин без ограничителя; и различение «предложено/сообщено» — тоже Кальвин. ⇒ **против статьи:**
+      это различение **предложения и сообщения**, не приобретения и применения; условие — только на получении;
+      5:17 прямо отрицает всеобщность блага. **Сноска CTS** к 5:18: «*It appears from this sentence that Calvin held
+      general redemption. — Ed.*» — **издатель XIX в., не Кальвин**; `ATTRIBUTION_HOLD`. Латинский оригинал
+      толкований **не сверен** (`LOCATOR_HOLD`). **П. 227 — 4 из 5**; п. 228 открыт.
+    - 42dn. *Дополнение 2026-10-19 (раунд 59, часть 4; `34_` §4.129, **S156**, «Eschantillon», сс. 196–202; чанки 38–39;
+      класс **A2**, OCR; `EDITION_HOLD`):* **У СОМЮРА УСЛОВНО И ПРИОБРЕТЕНИЕ.** **(1)** «*enuoyer son Fils en la terre
+      **pour les racheter s'ils ne reiettent point cette grâce par incrédulité***» (с. 196) ⇒ условие стоит на самом
+      глаголе «racheter». **(2)** Кальвин на Лк. 14 в передаче Амиро: «*les meschans s'esmeuvent **plus furieusement**
+      contre Dieu **d'autant qu'il les solicite de plus près** de leur salut*» (с. 198) — **не сверено**, первичный
+      Кальвин на Лк. 14 не читан (`ATTRIBUTION_HOLD`). **(3)** «*s'il y a quelque différence entre eux, **elle vient de
+      Dieu & non pas d'eux***» (с. 201). ⇒ **вывод:** статья **снимает условие**, которого Сомюр не снимал, и вводит
+      человеческое решение, которого у Сомюра нет; она **ближе к отвергнутой условной схеме**, чем сам Амиро.
+      **Прочитано 31/74 (~42 %).**
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

@@ -6922,6 +6922,186 @@ Reformatorum* или факсимиле лучшего качества). **До
 **П. 240 — ЗАКРЫТ** (предисловие дочитано до с. 192; на с. 192 начинается следующий отдел). Атрибуция слов Августина
 **Кальвину** — по передаче Амиро; **не сверено** (п. 227 в силе).
 
+### 4.128. Q124 — Кальвин на Ин. 1:29 и Рим. 5:18: сверка четвёртой и пятой цитат. Где статья **действительно** сильна (раунд 59)
+
+**0. Зачем именно эти два места.** В §4.127 закрыт п. 240 (возражение). Оставались пп. 227/228: цитаты Кальвина у Амиро
+сверены **2 из 5** (1 Ин. 2:2 — §4.123; Ин. 3:16 — §4.124). Из трёх остальных два — **Ин. 1:29** и **Рим. 5** — это
+как раз те места, на которых держится *самая сильная* половина тезиса статьи: «Христос пострадал за грехи **всего
+мира**». Их и надо было либо подтвердить, либо снять. **Подтверждены оба.** Это меняет оценку статьи в её пользу — и
+именно поэтому требует точности.
+
+**1. Класс и метод.** Calvin, *Commentary on John* и *Commentary on Romans*, англ. пер. CTS (Edinburgh, Calvin
+Translation Society), читано по BibleHub (`/commentaries/calvin/john/1.htm`, чанки 12–13; `/commentaries/calvin/romans/5.htm`,
+чанки 7, 9, 10). Класс — **B1** (перевод XIX в.); латинское издание толкований Кальвина **не сверялось**, дата его
+**не установлена** (`LOCATOR_HOLD`, ср. §4.124 п. 0). Ниже — **дословно по переводу**.
+
+**2. Ин. 1:29 («вот Агнец Божий, Который берёт на Себя грех мира»).**
+> «*And when he says, **the sin of the world**, he extends this favor **indiscriminately to the whole human race**; that
+> the Jews might not think that he had been sent to them alone. But hence we infer that the whole world is involved in
+> the same condemnation… Now our duty is, **to embrace the benefit which is offered to all**, that each of us may be
+> convinced that there is nothing to hinder him from **obtaining reconciliation in Christ, provided that he comes to him
+> by the guidance of faith***».
+
+**Разбор.** Здесь три хода, и все три — знакомые:
+- «**indiscriminately to the whole human race**» — всеобщность **есть**, и она **безоговорочна**;
+- но её предмет назван по имени: «**the benefit which is offered to all**» — **предложенное**, а не приобретённое;
+- а «**obtaining reconciliation**» поставлено под условие: «**provided that he comes to him… by faith**».
+
+То есть на Ин. 1:29 Кальвин делает **ровно то**, что в §4.124 установлено для Ин. 3:16: всеобщность — в регистре
+**предложения**, определённость — в регистре **прихода верой**. Приобретения в этой схеме нет — ни всеобщего, ни
+частного; **есть предложенное благо и условное получение примирения**.
+
+**3. Что из этого следует для цитаты Амиро.** Амиро (с. 185) пишет: «*Que la porte de la misericorde n'est fermée à
+personne? Que par consequent **Christ a fait la propitiation des péchez de tous les hommes***». Сверка даёт:
+- **первая половина — подтверждена дословно**: «door not closed to anyone» = «offered to all», «indiscriminately to the
+  whole human race». Это **Кальвин**, а не Амиро;
+- **вторая половина — не подтверждена**: «*a fait la propitiation*» (совершил умилостивление) — это уже **вывод**
+  Амиро из «предложено всем»; у Кальвина в этом месте стоит «**offered**», а примирение **получают** верой.
+⇒ Ин. 1:29 — **четвёртая цитата: `SUPPORTED` в отношении предложения, `NOT_SUPPORTED` в отношении совершённого
+умилостивления за всех.**
+
+**4. Рим. 5:18 — и здесь надо признать силу противника.**
+> «*He makes this favor **common to all, because it is propounded to all**, and **not because it is in reality extended
+> to all**; for **though Christ suffered for the sins of the whole world**, and is offered through God's benignity
+> indiscriminately to all, **yet all do not receive him***».
+
+**Это самое сильное место всей статьи во всём корпусе, и его нельзя обойти.** В **одном** предложении стоят рядом:
+- «**Christ suffered for the sins of the whole world**» — **без ограничения**, без «достаточно», без «если»;
+- «**propounded to all, not… in reality extended to all**» — различение **предложенного** и **действительно
+  сообщённого**.
+
+**Что здесь есть и чего здесь нет.** Есть **две модальности**: то, что **возвещено/предложено всем**, и то, что
+**реально сообщено не всем**. И есть **безоговорочное** «пострадал за грехи всего мира». **Нет** — третьего члена,
+который статья называет «приобретением»: Кальвин **не** говорит «приобрёл для всех, применил к избранным»; он говорит
+«**предложено** всем, **сообщено** не всем». Слово «приобретение» (**acquisitio**) в этом рассуждении отсутствует.
+
+**5. Соседний стих, который ставит всё на место — Рим. 5:17.**
+> «*The other difference is, that **the benefit of Christ does not come to all men**, while Adam has involved his whole
+> race in condemnation… but that we may come to a participation of the grace of Christ, **we must be ingrafted in him by
+> faith**… in order to enjoy the righteousness of Christ **it is necessary for thee to be a believer***».
+
+Это не оговорка в сноске, а **прямое** утверждение: «**the benefit of Christ does not come to all men**». И механизм
+назван: **прививка верой**. Значит «пострадал за грехи всего мира» и «благо Христово приходит не ко всем» у Кальвина
+**не противоречат друг другу** — и не потому, что он делит **приобретение** и **применение**, а потому, что он делит
+**предложение** и **действительное сообщение**.
+
+**6. Сноска издателя — отдельно и с оговоркой.** К Рим. 5:18 в CTS стоит примечание редактора:
+> «*"Nam etsi passus est Christus pro peccatis totius mundi, atque omnibus indifferenter Dei benignitate offertur; non
+> tamen omnes apprehendunt." **It appears from this sentence that Calvin held general redemption.** — Ed.*»
+
+**Это не Кальвин, а издатель XIX в.**, и приводить это как «мнение Кальвина» **нельзя** (`ATTRIBUTION_HOLD` на сноску;
+класс B1). Но сноска полезна как **исторический факт**: уже в XIX в. читатель CTS увидел в этом месте «общее
+искупление» — то есть **статья повторяет не свою догадку**, а давнюю читательскую реакцию на это место. Спорить надо
+не с реакцией, а с **тем, что в тексте**: в тексте — «предложено всем», не «приобретено для всех».
+
+**7. Итог сверки пяти цитат.**
+
+| № | Место | Что у Кальвина | Что делает Амиро | Статус |
+|---|---|---|---|---|
+| 1 | 1 Ин. 2:2 | «*I allow… true*», но «*I deny that it is suitable to this passage*» | передаёт формулу, **опускает оговорку** | **подтверждено** (§4.123) |
+| 2 | Ин. 3:16 | «*invite all indiscriminately*» / «*the elect alone… whose eyes God opens*» | передаёт **точно, построчно** | **подтверждено** (§4.124) |
+| 3 | Ин. 1:29 | «*offered to all*» / «*obtaining reconciliation… provided that he comes by faith*» | «*a fait la propitiation… de tous*» — **вывод**, не цитата | **частично** (§4.128) |
+| 4 | Рим. 5 | «*suffered for the sins of the whole world*» + «*propounded to all, not… extended to all*» | использует **первую** половину | **подтверждено** (§4.128) |
+| 5 | *De aeterna Dei praedestinatione* | «*omnium esse communem… in se vero efficaciter residere*» (A2, OCR) | «*tellement vniverselle*» — **не найдено** | **`LOCATOR_PARTIAL`** (§4.125) |
+
+**8. Что это меняет в оценке статьи — три поправки в её пользу.**
+1. **«Христос пострадал за грехи всего мира» — это Кальвин**, буквально, на Рим. 5. Статья имеет право это сказать, и
+   серия не должна делать вид, что такого текста нет.
+2. **Различение «предложено всем / сообщено не всем» — тоже Кальвин**, и оно **формально** похоже на схему статьи.
+   Отвечать нужно не «у Кальвина такого нет», а **точно**: у него это различение **предложения и сообщения**, а не
+   **приобретения и применения**.
+3. **Сноска CTS XIX в. показывает**, что чтение «здесь общее искупление» — **старое и не маргинальное**. Это не делает
+   его верным, но делает статью **не одинокой**.
+
+**9. Что при этом остаётся в силе против статьи — и остаётся твёрдо.**
+- Ни в одном из четырёх проверенных мест Кальвин **не** говорит, что приобретение **универсально**, а применение
+  **ограничено**; он говорит «**предложено**» и «**сообщено**».
+- Ни в одном из четырёх мест нет **условия** для приобретения; условие стоит только на **получении** («*provided that
+  he comes by faith*», «*all do not receive him*»).
+- Рим. 5:17 прямо: «**the benefit of Christ does not come to all men**». Это **не** «применение уже приобретённого», это
+  **отрицание всеобщности блага**.
+⇒ **Формула сдвига (§4.126) не отменяется, а уточняется:** статья не выдумывает всеобщность — она берёт **Кальвинову
+всеобщность предложения** и **переименовывает её во всеобщность приобретения**. Ошибка — **в слове**, не в факте.
+
+**10. Оговорки.** B1 (перевод CTS); латинский оригинал толкований **не сверен**; `LOCATOR_HOLD` на дату латинского
+издания. Цитаты приведены как **английский текст перевода**, а не как «слова Кальвина» без оговорки. Рим. 5:18 —
+единственное место корпуса, где всеобщность страдания выражена **без ограничителя**; **не обобщать** его на «Кальвин
+учил всеобщему искуплению» (это будет **вывод**, а не цитата).
+
+### 4.129. Q125 — «pour les racheter s'ils ne reiettent point»: у Сомюра **условно и приобретение**, а не только применение (раунд 59)
+
+**0. Источник и объём.** S156 (Амиро, *Brief traité*, Сомюр 1658; IA `brieftraitdela00amyr`), «Eschantillon»,
+**сс. 192–202**, чанки **38–39**; класс **A2** (OCR), `EDITION_HOLD` (1658 ≠ 1634). Часть материала этих чанков внесена
+ещё в раунде 56 (§4.96, §4.98); ниже — **только то, чего в досье не было**, и один вывод, который эти три находки
+меняют.
+
+**1. Находка первая: приобретение выражено условно.**
+> «*il leur commande de croire qu'il a esté si pitoyable enuers eux que d'enuoyer son Fils en la terre **pour les
+> racheter s'ils ne reiettent point cette grâce par incrédulité***» (с. 196).
+
+**Перевод:** «Он повелевает им верить, что был настолько милостив к ним, что послал Сына Своего на землю, **чтобы
+искупить их, если они не отвергнут эту благодать неверием**».
+
+**Почему это важно.** В §4.126 итог был сформулирован так: у Амиро всеобщий член **условен** («*sinon à la condition
+qu'ils croyent*»). Здесь видно, **насколько глубоко** идёт условие: оно стоит не только на **применении** и не только на
+**предложении**, а на самом глаголе «**racheter**» — **искупить**. То есть в сомюрской формулировке **и приобретение
+не безусловно**.
+
+**Что это делает с тезисом статьи.** Статья утверждает: «Христос **приобрёл** для всех, **применил** к избранным» —
+два члена, первый **безусловен**. У Амиро первый член **обусловлен верой** (точнее — **неотвержением**). Значит:
+- **статья не следует Амиро и здесь**: она берёт сомюрскую **схему** и снимает с неё **условие**, которого Сомюр не
+  снимал;
+- и это **возвращает** статью к позиции, которую Дорт отверг **как ремонстрантскую** (условное приобретение,
+  Фрисландия, §4.120) — то есть статья оказывается **не «амиральдианской»**, а **ближе к отвергнутой условной
+  схеме**, чем сам Амиро.
+
+**2. Находка вторая: Кальвин на притчу о пире — в передаче Амиро.**
+> «*Surquoy Caluin fait ce Commentaire… **Voilà comment il estime communement que les meschans s'esmeuvent plus
+> furieusement contre Dieu d'autant qu'il les solicite de plus près de leur salut***» (с. 198).
+
+**Перевод:** «На это Кальвин даёт такое толкование… Вот как он полагает обычно, что нечестивые тем яростнее
+возбуждаются против Бога, чем ближе Он призывает их к их спасению».
+
+**Значение.** Амиро **сам** сводит ответ на возражение о пире (Лк. 14) к **Кальвинову** толкованию — и это толкование
+**не** о всеобщем приобретении, а о **ярости при близком призыве**. То есть даже там, где Амиро отвечает на довод
+статьи, он отвечает **не** доводом статьи. (Сверка с латинским/французским Кальвином на Лк. 14 — **не сделана**,
+`LOCATOR_HOLD`; цитата — **в передаче Амиро**, класс A2, не B1.)
+
+**3. Находка третья: разница между людьми — от Бога, а не от них.**
+> «*Car puis qu'il a fait égal tout le genre humain, & l'a rangé tout à vne condition, **s'il y a quelque différence
+> entre eux, elle vient de Dieu & non pas d'eux***» (с. 201).
+
+**Перевод:** «Ибо поскольку Он сделал равным весь род человеческий и поставил его в одно состояние, **если между ними
+есть какое различие, оно от Бога, а не от них**».
+
+**Значение.** Это **прямое** утверждение о том, откуда различие, — и оно **не** даёт места схеме «Бог сделал Своё для
+всех, человек решает». У Амиро решает **не человек**: различие — **от Бога**. Формула статьи на этом месте
+**невозможна**; на этом месте Амиро **дортский** (ср. §4.117 п. 6 «*n'est debteur à personne*»).
+
+**4. Свод: три находки, один вывод.**
+
+| Что | Где | Что это меняет |
+|---|---|---|
+| «*pour les racheter **s'ils ne reiettent point***» | с. 196 | **приобретение** у Сомюра **условно** ⇒ статья снимает условие, которого Амиро не снимал |
+| Кальвин на Лк. 14: «*plus furieusement… d'autant qu'il les solicite de plus près*» | с. 198 | ответ Амиро на довод статьи — **не** довод статьи |
+| «*elle vient de Dieu & non pas d'eux*» | с. 201 | «человек решает» **не** сомюрская формула; у Амиро различие — от Бога |
+
+**Вывод.** Сомюрская схема **не является** «приобретение для всех + применение для избранных» в **безусловном** виде.
+У Амиро: приобретение **условно**, различие **от Бога**, а ответ на возражение — **Кальвиново толкование о ярости при
+призыве**. Статья берёт **три элемента** сомюрской схемы и **все три** переставляет в сторону большей всеобщности и
+большей человеческой решающей роли — то есть **дальше от Амиро, чем сам Амиро от Дорта**.
+
+**5. Формула для серии.**
+> **Амиро строит схему, чтобы защитить ответственность человека, а не чтобы объяснить цену.** Статья берёт его схему и
+> ставит её на службу объяснению цены. **Это подмена назначения инструмента** — и потому статья не «амиральдианская»,
+> а **амиральдианская по имени**.
+
+**6. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); OCR; чанки 38–39 = сс. 192–202; прочитано **31 из 74** чанков (~42 %).
+Цитата Кальвина на Лк. 14 — **в передаче Амиро**, первичный Кальвин **не сверен** (`ATTRIBUTION_HOLD` на неё).
+**Не утверждать**, что Амиро «универсалист»: он этого не пишет (см. с. 201). **П. 227** продвинут: цитаты сверены
+**4 из 5**; **п. 228** остаётся открытым (латинский Кальвин).
+
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -7455,6 +7635,9 @@ Reformatorum* или факсимиле лучшего качества). **До
 | 1551 → 1658 *(раунд 58, часть 5; сверка по изд. Кальвина, Ин. 3:16; **B1**)* | **Передача Амиро точна, построчно.** Кальвин: «*he has employed the universal term **whosoever**, both **to invite all indiscriminately**… and **to cut off every excuse from unbelievers**… he shows himself **to be reconciled to the whole world**, when he **invites all men without exception***»; и тотчас: «*while life is promised universally to all who believe… still **faith is not common to all**… Christ is **made known and held out to the view of all**, but **the elect alone are they whose eyes God opens***». **Закономерность двух мест:** всеобщность — регистр **предложения**; определённость — регистр **призвания/действенности**; **приобретения нет ни там, ни там** |
 | 1552 *(раунд 58, часть 7; Calvin, *De aeterna Dei praedestinatione*; IA `ioanniscalviniop00calv`, чанки 400, 418)* | **Латинский локус найден.** Провизорно (OCR плохой, **A2**): «*Deique beneficentiam **promiscue ad omnes** extendens… multum abest, quin Dei gratiam pro merito illustrent, **qui eam praedicant omnium esse communem, in se vero efficaciter residere, quia fide eam amplexi sint**. Fidei vero causam inter se et illos cupiunt*». ⇒ Кальвин **порицает** позицию «благодать обща всем, действенна во мне, потому что **я** принял верою» — за то, что в ней **причина веры остаётся за человеком**. **Искомое «tellement vniverselle» в этих чанках НЕ найдено.** |
 | 1658 *(раунд 59; «Eschantillon», сс. 183–192; чанки 36–37)* | **Возражение в чистом виде и ответ.** Амиро: «***A-t-il pas assez témoigné qu'il ne tient pas à Dieu que tout le monde ne soit sauvé? Que la porte de la misericorde n'est fermée à personne? Que par consequent Christ a fait la propitiation des péchez de tous les hommes?***» (с. 185). **Возражение:** «*Car est-ce pas cela **dresser vn banquet deuant des gens à qui il est impossible d'en manger**, & puis les punir rigoureusement…? … **il deuoit aussi donner indifféremment la grace d'y croire***» (сс. 190–191). **ОТВЕТ — не схема:** «*à cette question… **il respond… par les paroles de S. Augustin**: **Veux tu disputer auec moy de cette matiere? Plustost esmerueille toy & t'escrie auec moy, O hautesse!***» (сс. 191–192); и «*s'il ne peut **demesler toutes les difficultez***». **О не слышавших:** все «увёртки» отвергнуты, «*On ne peut donc auoir recours qu'à la **seule volonté de Dieu**, dont il n'y a moyen de fonder la cause*» (с. 187) |
+| 1551 → 1658 *(раунд 59, часть 4; сверка по изд. Кальвина, Ин. 1:29 и Рим. 5; **B1**)* | **«Пострадал за грехи всего мира» — это Кальвин.** Ин. 1:29: «*he extends this favor **indiscriminately to the whole human race**… to embrace the benefit which is **offered to all**… **obtaining reconciliation**… **provided that he comes to him by the guidance of faith***». Рим. 5:18: «*He makes this favor **common to all, because it is propounded to all**, and **not because it is in reality extended to all**; for **though Christ suffered for the sins of the whole world**… **yet all do not receive him***». Рим. 5:17: «*the **benefit of Christ does not come to all men**… we must be **ingrafted in him by faith***». ⇒ всеобщность — **предложения**, не приобретения; но «пострадал за грехи всего мира» сказано **без ограничителя**. Сноска CTS XIX в.: «*It appears from this sentence that Calvin held general redemption. — Ed.*» (**не** Кальвин). Сверка пяти цитат Амиро: **4 из 5** (§4.128). |
+| 1658 *(раунд 59, часть 4; «Eschantillon», сс. 196–202; чанки 38–39)* | **Условно и приобретение.** Амиро: «*enuoyer son Fils en la terre **pour les racheter s'ils ne reiettent point cette grâce par incrédulité***» (с. 196); Кальвин на Лк. 14 — «*les meschans s'esmeuvent **plus furieusement** contre Dieu **d'autant qu'il les solicite de plus près** de leur salut*» (с. 198); «*s'il y a quelque différence entre eux, **elle vient de Dieu & non pas d'eux***» (с. 201). ⇒ сомюрская схема **не** «безусловное приобретение для всех»; статья снимает условие, которого Сомюр не снимал (§4.129). |
+
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -8043,6 +8226,33 @@ Reformatorum* или факсимиле лучшего качества). **До
   неразрешимым.** Плюс максимум всеобщности у Амиро: «*Christ a fait la propitiation des péchez de tous les
   hommes*» (с. 185). Плюс дортский по существу ответ о не слышавших: «*la seule volonté de Dieu, dont il n'y a
   moyen de fonder la cause*» (с. 187).
+
+- **Раунд 59: латинский поиск остановлен по правилу экономии (не по неудаче).** Проверены чанки **400, 418, 428** тома
+  `ioanniscalviniop00calv` (Opuscula, 1552): найден **провизорный** локус о «commune omnium / efficaciter in se»
+  (§4.125), но **искомое** «*tellement vniverselle*» **не встречено**. OCR разрушен, поиск вслепую стоит ~1 вызов на
+  чанк при ~50 непроверенных чанках. **Решение:** прекратить слепой перебор, зафиксировать `LOCATOR_PARTIAL` и
+  назвать **дешёвый путь** — критическое издание (*Corpus Reformatorum* / OS) или чистое факсимиле. **Не утверждать**,
+  что Амиро исказил цитату: **мы её не видели.**
+
+- **Раунд 59, часть 4: сверка четвёртой и пятой цитат (Ин. 1:29; Рим. 5) — 4 из 5.** Кальвин на **Ин. 1:29**:
+  «*he extends this favor **indiscriminately to the whole human race**… the benefit which is **offered to all**…
+  **obtaining reconciliation**… **provided that he comes to him by the guidance of faith***». Кальвин на **Рим. 5:18**:
+  «*He makes this favor **common to all, because it is propounded to all**, and **not because it is in reality extended
+  to all**; for **though Christ suffered for the sins of the whole world**… **yet all do not receive him***». **Рим. 5:17:**
+  «*the **benefit of Christ does not come to all men***». ⇒ **две поправки в пользу статьи:** (а) «пострадал за грехи
+  всего мира» — **подлинный Кальвин**, без ограничителя; (б) различение «предложено / сообщено» — **тоже Кальвин**, и
+  оно **формально** похоже на схему статьи. **Ответ точный:** у Кальвина это различение **предложения и сообщения**, а
+  **не** приобретения и применения; условие стоит только на **получении**. Сноска CTS XIX в. («*It appears… that Calvin
+  held general redemption. — Ed.*») — **не Кальвин**; `ATTRIBUTION_HOLD`. **П. 227 — 4 из 5.** **П. 228** (латинский
+  оригинал толкований) — **открыт**; класс **B1**.
+
+- **Раунд 59, часть 4: у Сомюра условно и приобретение (§4.129).** Новое из чанков 38–39: «*enuoyer son Fils en la
+  terre **pour les racheter s'ils ne reiettent point cette grâce par incrédulité***» (с. 196) ⇒ **условие стоит на самом
+  глаголе «racheter»**; «*les meschans s'esmeuvent **plus furieusement** contre Dieu **d'autant qu'il les solicite de plus
+  près** de leur salut*» (с. 198, Кальвин на Лк. 14 — **в передаче Амиро**, `ATTRIBUTION_HOLD`); «*s'il y a quelque
+  différence entre eux, **elle vient de Dieu & non pas d'eux***» (с. 201). ⇒ статья **снимает условие**, которого Сомюр
+  не снимал, и оказывается **ближе к отвергнутой условной схеме**, чем сам Амиро. **Формула:** «Амиро строит схему,
+  чтобы защитить **ответственность**, а не чтобы объяснить **цену**; статья меняет назначение инструмента».
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
