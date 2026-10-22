@@ -7102,6 +7102,98 @@ qu'ils croyent*»). Здесь видно, **насколько глубоко**
 **4 из 5**; **п. 228** остаётся открытым (латинский Кальвин).
 
 
+### 4.130. Q126 — Решающий текст: у Амиро приобретение для отверженных **обусловлено**. Три позиции, а не две (раунд 59)
+
+**0. Источник.** S156, «Eschantillon», **сс. 207–212**, чанк **41**. Класс **A2** (OCR). `EDITION_HOLD` (1658 ≠ 1634).
+Это то место «Eschantillon», где Амиро **своими словами** излагает различие, которое доселе приходилось собирать из
+фрагментов (§§4.114, 4.116, 4.129). **Оно решает вопрос о том, чему Амиро учил** — и решает не в пользу статьи.
+
+**1. Текст.**
+> «*Car entant qu'elle a osté l'empeschement à cette premiere sorte de misericorde qui est comme vne espece de vertu en
+> Dieu & a sa relation à quelque condition qui est en la creature, il dit… qu'il est mort **vniuersellement pour tous
+> hommes, pourueu qu'ils croyent en luy**. Mais entant qu'il n'y en a que quelques-vns que cette seconde sorte de
+> misericorde regarde, il dit qu'il est mort pour ceux là, voire pour ceux là seulement. **Pource que quant à ceux là, il
+> n'est mort pour eux sinon à la condition qu'ils croyent.** Pour ceux-cy, d'autant qu'il est absolument ordonné qu'ils
+> croiront, il peut estre dit **absolument** mort pour eux : pource que le décret par lequel il leur est donné de croire,
+> enclost necessairement celuy du salut qu'on obtient par la foy*» (с. 208).
+
+**Перевод.** «Ибо поскольку она [смерть Христова] устранила препятствие для **первого** рода милосердия — которое есть как
+бы свойство в Боге и соотносится с **некоторым условием в творении**, — он говорит… что Он умер **универсально за всех
+людей, при условии, что они уверуют**. Но поскольку **второй** род милосердия касается лишь **некоторых**, он говорит,
+что Он умер за **тех**, и даже **только** за тех. **Ибо что до тех, Он умер за них не иначе, как под условием, что они
+уверуют**; а за этих — поскольку **безусловно** определено, что они уверуют, — можно сказать, что Он умер за них
+**безусловно**».
+
+**2. Что здесь сказано — без всякого вывода.**
+1. Есть **два рода милосердия** и, соответственно, **два смысла** выражения «умер за».
+2. В **первом** смысле — «**за всех, при условии веры**».
+3. Во **втором** — «**только за избранных**, и **безусловно**».
+4. Значит **для отверженных смерть Христова обусловлена**: «*il n'est mort pour eux sinon **à la condition qu'ils
+   croyent***».
+
+**3. Три позиции, а не две.** Это главный результат всего досье, и его надо держать раздельно.
+
+| | Приобретение (impetratio) | Применение (applicatio) | Кто |
+|---|---|---|---|
+| **Дорт (1619)** | **одно**, и оно **столь же широко**, как применение («*aeque late*»); безусловно | только избранные | *Canones* II.8; Rejectio, §4.120 |
+| **Амиро (1634/1658)** | **два**: (а) условное — за всех; (б) безусловное — за избранных | избранные, по абсолютному декрету | S156, с. 208 |
+| **Статья (2019)** | **одно**, **безусловное**, за **всех** | только избранные | р. 23–28 |
+
+**Что это даёт.**
+- Статья **не дортская**: у Дорта приобретение **не** шире применения.
+- Статья **не амиральдианская**: у Амиро всеобщее приобретение **условно** («*à la condition qu'ils croyent*»).
+  Статья же требует приобретения **безусловного** — иначе весь её довод («Христос уже заплатил за всех, значит
+  несправедливо не дать») **рассыпается**: условная плата не создаёт права.
+- Статья — **третья** позиция: **безусловное всеобщее приобретение + частное применение**. Ни Дорт, ни Сомюр её не
+  держат.
+
+**4. Почему статья не может принять амиральдианское условие.** Её аргумент от справедливости («*dresser vn banquet
+deuant des gens à qui il est impossible d'en manger*», с. 190) работает **только** если плата **уже внесена и
+безусловна**. Если плата условна («умер за них, если уверуют»), то неверующий **ничего не получил**, и жаловаться
+не на что. ⇒ **статья снимает условие, чтобы сохранить свой довод**; Амиро **сохраняет условие**, потому что его довод
+— не о плате, а об **ответственности** (см. §4.129). **Это и есть развилка, которую статья проходит молча.**
+
+**5. И тут же — самое сильное у Амиро в пользу статьи, с его собственной оговоркой.**
+> «*La dispute n'est point de sçauoir si Iesus-Christ est venu pour purger les péchez de tout le monde: **car cela est
+> sans contredit**: mais cependant cette sentence se doit conjoindre à l'opposite, qu'il est venu **afin que quiconque
+> croira**… Et de fait nous ne sommes pas sur cette question, à sçauoir **quelle est la vertu de Christ**, quel bien il
+> nous a apporté, ou que c'est qu'il a en soy: **mais à qui c'est qu'il se donne**, & lesquels il fait vrayement
+> participans de sa grâce*» (с. 211).
+
+**Разбор.** Амиро **прямо** говорит: «пришёл очистить грехи **всего мира** — это **без спора**». Это **максимум**, который
+статья может получить от Сомюра, и он **есть**. Но Амиро **связывает** это с «*quiconque croira*» и переносит спор в
+другой регистр: не «какова сила Христова» и не «что Он есть в Себе», а «**кому Он Себя даёт**». То есть у Амиро
+всеобщность — в **силе и предложении**, а спор — о **даянии**. **Это ровно та структура, что у Кальвина** (§4.128:
+«*offered to all*» / «*all do not receive him*»), **а не структура статьи** (приобретение / применение).
+
+**6. И ещё одна оговорка Амиро, которую статья не повторяет.**
+> «*Car la generalité des promesses seule & en soy **ne fait point le salut commun à tous**… cette reuelation speciale
+> dont le Prophète fait mention, le restreint aux esleus*» (с. 211).
+
+**Перевод:** «Ибо одна только всеобщность обетований, сама по себе, **не делает спасения общим для всех**… это особое
+откровение… ограничивает его избранными». ⇒ у Амиро **всеобщность обетований не равна всеобщности спасения**, и он
+говорит это **сам**, в том же месте, где признаёт всеобщее очищение.
+
+**7. Итог: что теперь установлено окончательно.**
+| Вопрос | Ответ | Где |
+|---|---|---|
+| Учит ли Амиро безусловному всеобщему приобретению? | **Нет.** «*à la condition qu'ils croyent*» | с. 208 |
+| Учит ли Амиро всеобщему очищению греха? | **Да**, и называет это «без спора» | с. 211 |
+| Ограничивает ли он это очищение? | **Да**: «*ne fait point le salut commun à tous*» | с. 211 |
+| Где он полагает спор? | В **даянии** («*à qui c'est qu'il se donne*»), не в силе | с. 211 |
+| Совпадает ли это со статьёй? | **Нет**: у статьи приобретение безусловно | §4.130 п. 3 |
+
+**8. Формула для серии.**
+> **Статья снимает с сомюрской схемы её условие — и тем самым теряет право называться сомюрской.** У Амиро «умер за
+> всех» стоит с оговоркой «**если уверуют**»; у статьи — без оговорки. Разница в шесть слов, и она решает всё: с
+> оговоркой плата **не взыскивается**, без оговорки — **взыскивается и не зачтена**.
+
+**9. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); OCR; A2; чанк 41 = сс. 207–212; прочитано **33 из 74** (~45 %).
+**Не утверждать**, что Амиро — универсалист: он этого не пишет и прямо ограничивает всеобщность (с. 211).
+**Не утверждать**, что Амиро «не отличал приобретения от применения»: он отличает **два рода приобретения**, а не
+приобретение от применения. Латинский Кальвин по-прежнему не сверен; **п. 228** открыт.
+
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -7637,6 +7729,8 @@ qu'ils croyent*»). Здесь видно, **насколько глубоко**
 | 1658 *(раунд 59; «Eschantillon», сс. 183–192; чанки 36–37)* | **Возражение в чистом виде и ответ.** Амиро: «***A-t-il pas assez témoigné qu'il ne tient pas à Dieu que tout le monde ne soit sauvé? Que la porte de la misericorde n'est fermée à personne? Que par consequent Christ a fait la propitiation des péchez de tous les hommes?***» (с. 185). **Возражение:** «*Car est-ce pas cela **dresser vn banquet deuant des gens à qui il est impossible d'en manger**, & puis les punir rigoureusement…? … **il deuoit aussi donner indifféremment la grace d'y croire***» (сс. 190–191). **ОТВЕТ — не схема:** «*à cette question… **il respond… par les paroles de S. Augustin**: **Veux tu disputer auec moy de cette matiere? Plustost esmerueille toy & t'escrie auec moy, O hautesse!***» (сс. 191–192); и «*s'il ne peut **demesler toutes les difficultez***». **О не слышавших:** все «увёртки» отвергнуты, «*On ne peut donc auoir recours qu'à la **seule volonté de Dieu**, dont il n'y a moyen de fonder la cause*» (с. 187) |
 | 1551 → 1658 *(раунд 59, часть 4; сверка по изд. Кальвина, Ин. 1:29 и Рим. 5; **B1**)* | **«Пострадал за грехи всего мира» — это Кальвин.** Ин. 1:29: «*he extends this favor **indiscriminately to the whole human race**… to embrace the benefit which is **offered to all**… **obtaining reconciliation**… **provided that he comes to him by the guidance of faith***». Рим. 5:18: «*He makes this favor **common to all, because it is propounded to all**, and **not because it is in reality extended to all**; for **though Christ suffered for the sins of the whole world**… **yet all do not receive him***». Рим. 5:17: «*the **benefit of Christ does not come to all men**… we must be **ingrafted in him by faith***». ⇒ всеобщность — **предложения**, не приобретения; но «пострадал за грехи всего мира» сказано **без ограничителя**. Сноска CTS XIX в.: «*It appears from this sentence that Calvin held general redemption. — Ed.*» (**не** Кальвин). Сверка пяти цитат Амиро: **4 из 5** (§4.128). |
 | 1658 *(раунд 59, часть 4; «Eschantillon», сс. 196–202; чанки 38–39)* | **Условно и приобретение.** Амиро: «*enuoyer son Fils en la terre **pour les racheter s'ils ne reiettent point cette grâce par incrédulité***» (с. 196); Кальвин на Лк. 14 — «*les meschans s'esmeuvent **plus furieusement** contre Dieu **d'autant qu'il les solicite de plus près** de leur salut*» (с. 198); «*s'il y a quelque différence entre eux, **elle vient de Dieu & non pas d'eux***» (с. 201). ⇒ сомюрская схема **не** «безусловное приобретение для всех»; статья снимает условие, которого Сомюр не снимал (§4.129). |
+
+| 1658 *(раунд 59, часть 5; «Eschantillon», сс. 207–212; чанок 41)* | **РЕШАЮЩИЙ ТЕКСТ: два смысла «умер за».** Амиро: «*il est mort **vniuersellement pour tous hommes, pourueu qu'ils croyent en luy***»; «*quant à ceux là, **il n'est mort pour eux sinon à la condition qu'ils croyent***»; «*pour ceux-cy… **absolument** mort pour eux*» (с. 208). Плюс: «*La dispute n'est point… si Iesus-Christ est venu pour purger les péchez de tout le monde: **car cela est sans contredit***», но «*nous ne sommes pas sur cette question… **quelle est la vertu de Christ**… **mais à qui c'est qu'il se donne***» (с. 211); «*la generalité des promesses seule… **ne fait point le salut commun à tous***» (там же). ⇒ **три позиции, а не две:** Дорт (одно приобретение, *aeque late*), Амиро (**два**: условное за всех + безусловное за избранных), статья (**одно безусловное** за всех). **Статья не дортская и не амиральдианская** (§4.130). |
 
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
@@ -8253,6 +8347,15 @@ qu'ils croyent*»). Здесь видно, **насколько глубоко**
   différence entre eux, **elle vient de Dieu & non pas d'eux***» (с. 201). ⇒ статья **снимает условие**, которого Сомюр
   не снимал, и оказывается **ближе к отвергнутой условной схеме**, чем сам Амиро. **Формула:** «Амиро строит схему,
   чтобы защитить **ответственность**, а не чтобы объяснить **цену**; статья меняет назначение инструмента».
+
+- **Раунд 59, часть 5: РЕШАЮЩИЙ ТЕКСТ (сс. 207–212).** Амиро **сам** формулирует два смысла «умер за»:
+  «*il est mort **vniuersellement pour tous hommes, pourueu qu'ils croyent en luy***» и «*quant à ceux là, **il n'est
+  mort pour eux sinon à la condition qu'ils croyent***»; за избранных — «***absolument*** mort pour eux» (с. 208). ⇒
+  **приобретение для отверженных у Амиро обусловлено**. Плюс: всеобщее очищение — «*sans contredit*», но спор — «*à qui
+  c'est qu'il se donne*»; и «*la generalité des promesses seule… ne fait point le salut commun à tous*» (с. 211). ⇒
+  **ТРИ позиции:** Дорт (одно, *aeque late*), Амиро (два: условное + безусловное), статья (одно безусловное за всех).
+  **Статья — не Дорт и не Амиро**; она **снимает условие**, без которого её довод от справедливости не работает.
+  **Прочитано 33/74 (~45 %).**
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**

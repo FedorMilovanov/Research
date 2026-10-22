@@ -885,6 +885,16 @@
       Dieu & non pas d'eux***» (с. 201). ⇒ **вывод:** статья **снимает условие**, которого Сомюр не снимал, и вводит
       человеческое решение, которого у Сомюра нет; она **ближе к отвергнутой условной схеме**, чем сам Амиро.
       **Прочитано 31/74 (~42 %).**
+    - 42do. *Дополнение 2026-10-19 (раунд 59, часть 5; `34_` §4.130, **S156**, «Eschantillon», сс. 207–212; чанок 41;
+      `01_` §15; `06_` §24; `synthesis/03_` §39; класс **A2**, OCR; `EDITION_HOLD`):* **РЕШАЮЩИЙ ТЕКСТ — ТРИ ПОЗИЦИИ.**
+      Амиро: «*il est mort **vniuersellement pour tous hommes, pourueu qu'ils croyent en luy***»; «*quant à ceux là,
+      **il n'est mort pour eux sinon à la condition qu'ils croyent***»; «*pour ceux-cy… **absolument** mort pour eux*»
+      (с. 208). Плюс: «*La dispute n'est point… si Iesus-Christ est venu pour purger les péchez de tout le monde: **car
+      cela est sans contredit***», но «*nous ne sommes pas sur cette question… **quelle est la vertu de Christ**… **mais
+      à qui c'est qu'il se donne***» (с. 211); «*la generalité des promesses seule… **ne fait point le salut commun à
+      tous***» (там же). ⇒ **Дорт:** одно приобретение, *aeque late*. **Амиро:** два — условное за всех + безусловное
+      за избранных. **Статья:** одно безусловное за всех. **Статья — не Дорт и не Амиро.** Условная плата не создаёт
+      права ⇒ довод статьи от справедливости требует снятия условия. **33/74 (~45 %).**
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

@@ -54,6 +54,32 @@
 
 ---
 
+## 4-бис. Решающий текст: три позиции, а не две
+
+Амиро **сам** формулирует два смысла выражения «умер за» (S156, «Eschantillon», с. 208):
+> «*il est mort **vniuersellement pour tous hommes, pourueu qu'ils croyent en luy***… **quant à ceux là, il n'est mort
+> pour eux sinon à la condition qu'ils croyent**… Pour ceux-cy… il peut estre dit **absolument** mort pour eux*».
+
+| | Приобретение | Применение | Кто |
+|---|---|---|---|
+| **Дорт, 1619** | **одно**, **столь же широкое**, как применение; безусловно | избранные | *Canones* II.8 |
+| **Амиро, 1634** | **два**: условное — за всех; безусловное — за избранных | избранные | с. 208 |
+| **Статья, 2019** | **одно**, **безусловное**, за всех | избранные | сс. 23–28 |
+
+**Следствие, которое надо удержать:** статья **не дортская** (у Дорта приобретение не шире применения) и **не
+амиральдианская** (у Амиро всеобщее приобретение **условно**). Она — **третья** позиция: безусловное всеобщее
+приобретение при частном применении.
+
+**И почему статья не может принять условие Амиро:** её довод от справедливости («пир перед неспособными») работает
+**только** при **безусловной** плате. Условная плата не создаёт права — неверующий тогда **ничего не получил**, и
+жаловаться не на что. ⇒ статья **снимает условие, чтобы сохранить довод**; Амиро **сохраняет условие**, потому что его
+довод — не о плате, а об ответственности.
+
+**И максимум, который статья всё-таки имеет от Сомюра** (с. 211): «*La dispute n'est point… si Iesus-Christ est venu
+pour purger les péchez de tout le monde: **car cela est sans contredit***» — но тотчас: «*nous ne sommes pas sur cette
+question… **quelle est la vertu de Christ**… **mais à qui c'est qu'il se donne***», и «*la generalité des promesses
+seule… **ne fait point le salut commun à tous***».
+
 ## 5. Что статья говорит ВЕРНО — признать без оговорок
 
 1. **Благодать Божия у Кальвина всеобща:** «*je confesse que la grâce de Dieu est tellement vniverselle*» (`De aeterna Dei praedestinatione`, в передаче Амиро, с. 183).
@@ -109,7 +135,7 @@
 | Латинский текст Кальвина | **не сверен** (класс **B1** — англ. пер. CTS). Ин. 1:29, Ин. 3:16, 1 Ин. 2:2, Рим. 5 прочитаны **по переводу**; латинский локус `De aeterna` **найден** (`ioanniscalviniop00calv`), но **искомое место не найдено**, OCR разрушен |
 | Цитаты Кальвина у Амиро | сверено **4 из 5** (1 Ин. 2:2; Ин. 3:16; Ин. 1:29; Рим. 5); осталось `De aeterna` (латынь, A2/OCR) |
 | Источники статьи | **неизвестны**; зависимость от Амиро, Бакстера или римских полемистов **не установлена и не предполагается** |
-| Амиро, корпус | **31 из 74** чанков (~42 %); «Response à M. de L. M.» **не читана** |
+| Амиро, корпус | **33 из 74** чанков (~45 %); «Response à M. de L. M.» **не читана** |
 | Издание Амиро | **`EDITION_HOLD`**: 1658 ≠ 1634 |
 | Права | **`RIGHTS_HOLD`** на текст статьи (PDF, копирайт); **`PUBLICATION_HOLD`** на публичные цитаты |
 | Гревинховен | **три локатора, текста нет** (п. 186 открыт) |
@@ -121,7 +147,7 @@
 
 ## 10. Ссылки на рабочие документы
 
-- Досье: `docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md`
+- Досье: `docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md` (§§4.128–4.130)
 - Рецензия: `docs/research/atonement/01_prokopenko_article_review.md` (§§11–13)
 - Опровержение: `docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md` (§§20–22)
 - Экзегеза 1 Ин. 2:2: `docs/research/atonement/21_exegesis_1john_2_2_and_parakletos_trilemma.md` (§16)
