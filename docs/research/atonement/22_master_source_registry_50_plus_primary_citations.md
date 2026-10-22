@@ -906,6 +906,17 @@
       commandement***» (с. 215); «*office de **Legislateur***» / «*Père seulement envers ses esleus*» (сс. 214–215). ⇒
       **статья требует декрета для всех — Амиро его прямо отрицает.** Симметрия: статья с Амиро делает то же, что
       Амиро с Кальвином, только **на той же странице**. **34/74 (~46 %).**
+    - 42dq. *Дополнение 2026-10-19 (раунд 59, часть 7; `34_` §4.132, **S156**, «Eschantillon», сс. 217–221; чанок 43;
+      `01_` §17; `06_` §26; `synthesis/03_` §41; класс **A2**, OCR; `EDITION_HOLD`):* **ОПИСАНИЕ ПРОТИВ ОБЪЁМА.**
+      Амиро: «*la premiere & principale controverse de Caluin… en reuient là… de leur vouloir donner son Fils **pour
+      racheter vniuersellement tous ceux qui se conuertiroient à luy d'vne serieuse repentance, & croiroient en ce
+      Rédempteur***» (с. 221) ⇒ объект «универсального искупления» — **обращающиеся и верующие**; **объём = избранные**;
+      различие с Дортом **не в широте, а в описании**. Второе признание метода: «*si ce grand personnage se sert souuent
+      de cette maniere de parler… **il la faut interpréter***» (с. 219). Кальвин на Рим. 9:11 в передаче Амиро:
+      «*appellés à l'alliance de Dieu **indifféremment**… n'entrent pas tous indifféremment en **réelle iouyssance***»
+      (сс. 219–220); «*bien qu'il leur ait **offert** le salut, il les a voulu iustement **laisser** en leur
+      aueuglement*» (с. 220). Отвержение — «*non donner pas cela sans quoy il est absolument impossible d'auoir le
+      salut*» (сс. 217–218) ⇒ **не-даяние, не декрет зла**. **35/74 (~47 %).**
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

@@ -92,6 +92,23 @@ seule… **ne fait point le salut commun à tous***».
 
 ---
 
+## 5-бис. Последний слой: спор о **описании**, а не о **объёме**
+
+Формула, которой Амиро **сам** определяет суть спора (с. 221):
+> «*la premiere & principale controverse de Caluin… en reuient là… de leur vouloir donner son Fils **pour racheter
+> vniuersellement tous ceux qui se conuertiroient à luy d'vne serieuse repentance, & croiroient en ce Rédempteur***».
+
+Объект «универсального искупления» здесь — **обращающиеся и верующие**. Их объём **совпадает с избранными**. Значит
+различие с Дортом — **не в широте, а в способе описания**: то же множество описано **под условием** (Сомюр) или **без
+условия** (Дорт).
+
+> **Статья превращает спор о способе описания в спор об объёме — и потом недоумевает, почему Дорт не согласен.**
+
+И второе признание метода, ещё откровеннее первого (с. 219): «*si ce grand personnage se sert souuent de cette maniere
+de parler, que Dieu a prede stiné vne partie des hommes à la mort, **il la faut interpréter***». ⇒ Амиро **сам** называет
+свою работу **истолкованием** Кальвина; он не утверждал «так учил Кальвин», он утверждал, что так Кальвина **надо
+читать**.
+
 ## 6. Точная формула сдвига — два симметричных шага на позицию влево
 
 | У Кальвина (проверено в двух местах) | У статьи |
@@ -135,7 +152,7 @@ seule… **ne fait point le salut commun à tous***».
 | Латинский текст Кальвина | **не сверен** (класс **B1** — англ. пер. CTS). Ин. 1:29, Ин. 3:16, 1 Ин. 2:2, Рим. 5 прочитаны **по переводу**; латинский локус `De aeterna` **найден** (`ioanniscalviniop00calv`), но **искомое место не найдено**, OCR разрушен |
 | Цитаты Кальвина у Амиро | сверено **4 из 5** (1 Ин. 2:2; Ин. 3:16; Ин. 1:29; Рим. 5); осталось `De aeterna` (латынь, A2/OCR) |
 | Источники статьи | **неизвестны**; зависимость от Амиро, Бакстера или римских полемистов **не установлена и не предполагается** |
-| Амиро, корпус | **34 из 74** чанков (~46 %); «Response à M. de L. M.» **не читана** |
+| Амиро, корпус | **35 из 74** чанков (~47 %); «Response à M. de L. M.» **не читана** |
 | Издание Амиро | **`EDITION_HOLD`**: 1658 ≠ 1634 |
 | Права | **`RIGHTS_HOLD`** на текст статьи (PDF, копирайт); **`PUBLICATION_HOLD`** на публичные цитаты |
 | Гревинховен | **три локатора, текста нет** (п. 186 открыт) |
@@ -168,7 +185,7 @@ seule… **ne fait point le salut commun à tous***».
 
 ## 11. Ссылки на рабочие документы
 
-- Досье: `docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md` (§§4.128–4.131)
+- Досье: `docs/research/atonement/34_atonement_vs_redemption_lexical_history_and_shedd_distinction.md` (§§4.128–4.132)
 - Рецензия: `docs/research/atonement/01_prokopenko_article_review.md` (§§11–13)
 - Опровержение: `docs/research/atonement/06_detailed_refutation_of_prokopenko_arguments.md` (§§20–22)
 - Экзегеза 1 Ин. 2:2: `docs/research/atonement/21_exegesis_1john_2_2_and_parakletos_trilemma.md` (§16)

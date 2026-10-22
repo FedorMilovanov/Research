@@ -7298,6 +7298,101 @@ deuant des gens à qui il est impossible d'en manger*», с. 190) работае
 **Не утверждать**, что «Rédempteur de tout le monde» — не его слова: **его**, с. 213; но смысл задан с. 216.
 
 
+### 4.132. Q128 — Формула, которой Амиро **сам** определяет суть спора: «pour racheter vniuersellement **tous ceux qui se conuertiroient**» (раунд 59)
+
+**0. Источник.** S156, «Eschantillon», **сс. 217–221**, чанок **43**. Класс **A2** (OCR). `EDITION_HOLD`.
+
+**1. Текст — и это итоговая формула самого Амиро.**
+> «*Partant **la premiere & principale controverse de Caluin auec ses adversaires en reuient là**, que Dieu ayant esté
+> si bon que de créer tous les hommes à la vie, s'ils fussent demeurez en leur estat ; qu'ayant esté si misericordieux que
+> de leur vouloir donner son Fils **pour racheter vniuersellement tous ceux qui se conuertiroient à luy d'vne serieuse
+> repentance, & croiroient en ce Rédempteur**, il faut chercher la raison pourquoy les vns croyent & les autres ne croyent
+> pas, les vns refusent le salut qui leur est offert, & les autres l'embrassent*» (с. 221).
+
+**Перевод.** «Поэтому **первый и главный спор Кальвина с его противниками сводится к тому**, что Бог, будучи настолько
+благ, что создал всех людей к жизни, если бы они пребыли в своём состоянии; будучи настолько милостив, что пожелал дать
+Своего Сына, **чтобы универсально искупить всех тех, кто обратится к Нему с серьёзным покаянием и уверует в этого
+Искупителя**, — надо искать причину, почему одни веруют, а другие не веруют, одни отвергают предложенное им спасение, а
+другие его принимают».
+
+**2. Что здесь сказано — по членам.**
+- «**racheter vniuersellement**» — да, «универсально искупить»;
+- **объект** этого универсального искупления назван тут же: «**tous ceux qui se conuertiroient… & croiroient**» — «все,
+  кто обратится… и уверует»;
+- и **вопрос**, который Амиро считает главным, — **не** «за кого умер Христос», а «**почему одни веруют, а другие
+  нет**».
+
+**3. Следствие, которое надо проговорить.** Если объект универсального искупления описан как «все, кто обратится и
+уверует», то **объём** этого искупления **совпадает с объёмом обращённых**, то есть — в системе Амиро — **с
+избранными**. Различие с Дортом оказывается **не в объёме**, а в **описании**: сомюрская формула описывает то же
+множество **под условием**, дортская — **без условия** («*aeque late*», §4.120).
+
+⇒ **Спор идёт о способе описания, а не о широте.** Это точный вывод, и он совпадает с §5 досье (категориальная ошибка
+статьи — двухрегистровая схема вместо трёхрегистровой).
+
+**4. И второе признание метода — ещё откровеннее первого.**
+> «*C'est pourquoy si ce grand personnage [Caluin] se sert souuent de cette maniere de parler, que Dieu a prede stiné vne
+> partie des hommes à la mort, **il la faut interpréter** par les lieux où il met cette prede stination en vne reiedion
+> pure & simple*» (с. 219).
+
+**Перевод:** «Поэтому если этот великий муж [Кальвин] часто употребляет такое выражение, что Бог предопределил часть
+людей к смерти, **его надо истолковывать** через те места, где он полагает это предопределение в **чистом и простом
+отвержении**».
+
+**Сравнить с §4.129 (с. 201):** там было «*donner aux manières de parler… vne interprétation qui raisonnablement leur
+conuienne*» — «дать выражениям разумно сообразное истолкование». Здесь — «**il la faut interpréter**», прямо и без
+смягчения. ⇒ **Амиро дважды, в разных местах, называет свою работу истолкованием Кальвина, а не передачей его учения.**
+Это закрывает вопрос об атрибуции: **не статья первая сказала «так учил Кальвин» — но и Амиро этого не утверждал; он
+утверждал, что так Кальвина надо читать.**
+
+**5. Опорный текст, который Амиро приводит из Кальвина (Рим. 9:11).**
+> «*Quant à l'exterieur ils sont appellés à l'alliance de Dieu indifféremment, mais pource qu'ils ne croyent pas tous,
+> ils n'en entrent pas tous indifféremment en réelle iouyssance*» (сс. 219–220).
+
+**Перевод:** «Что до внешнего, они призваны к завету Божию **без различия**, но поскольку не все веруют, не все **без
+различия** входят в **действительное обладание**».
+
+⇒ Третье место (после Ин. 1:29 и Рим. 5), где та же структура: **призвание/предложение без различия — действительное
+обладание не без различия**. И это **завет**, а не «цена».
+
+**6. И о неверующих — без всякой двусмысленности.**
+> «*Pource que bien qu'il leur ait **offert** le salut, il les a voulu iustement laisser en leur aueuglement &
+> corruption naturelle, de laquelle vient necessairement l'incredulité*» (с. 220).
+
+**Перевод:** «Ибо хотя Он **предложил** им спасение, Он праведно пожелал оставить их в их ослеплении и природном
+повреждении, от которого необходимо происходит неверие».
+
+⇒ **Предложил — и оставил.** Не «приобрёл и не применил»; **предложил и оставил**. Это язык Кальвина, а не язык статьи.
+
+**7. И о отвержении — как о недаянии, а не о декрете зла.**
+> «*…ce n'est pas prede stination proprement… il ne consiste pas pourtant en vne volonté de Dieu resoluë & déterminée
+> d'executer quelque chose par sa propre puissance, mais seulement de **ne donner pas cela sans quoy il est absolument
+> impossible d'auoir le salut***» (сс. 217–218).
+
+⇒ Отвержение у Амиро — **не-даяние**, а не положительный декрет. Это усиливает вывод §4.131: всеобщий порядок у него
+**без декрета**, а отвержение — **без положительного акта**.
+
+**8. Свод: что теперь установлено об Амиро.**
+
+| Вопрос | Ответ | Где |
+|---|---|---|
+| Говорит ли он «универсально искупить»? | **Да**, буквально | с. 221 |
+| Кого он называет объектом? | «**всех, кто обратится и уверует**» | с. 221 |
+| Значит ли это всеобщий **объём**? | **Нет**: объём = обращённые = избранные | §4.132 п. 3 |
+| В чём же тогда различие с Дортом? | **В описании**: под условием vs без условия | §4.120 |
+| Считает ли он, что **передаёт** Кальвина? | **Нет**: «*il la faut interpréter*» | с. 219 |
+
+**9. Формула для серии.**
+> **Статья превращает спор о способе описания в спор об объёме — и потом удивляется, что Дорт не согласен.** У Амиро
+> «универсально» относится к **описанию** («все, кто уверует»), у статьи — к **объёму** («все, включая неверующих»).
+> Это и есть та подмена, из которой выросло всё разделение atonement/redemption.
+
+**10. Оговорки.** A2/OCR; `EDITION_HOLD`; чанок 43 = сс. 217–221; прочитано **35 из 74** (~47 %). Цитата Кальвина на
+Рим. 9:11 — **в передаче Амиро**, первичный Кальвин **не сверен** (`ATTRIBUTION_HOLD`). **Не утверждать**, что Амиро
+учил «искуплению только избранных»: он говорит «универсально», но **с условием**; формула «только избранные» — **не его**
+(это и есть §4.126 п. «что статья говорит верно»).
+
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -7837,6 +7932,8 @@ deuant des gens à qui il est impossible d'en manger*», с. 190) работае
 | 1658 *(раунд 59, часть 5; «Eschantillon», сс. 207–212; чанок 41)* | **РЕШАЮЩИЙ ТЕКСТ: два смысла «умер за».** Амиро: «*il est mort **vniuersellement pour tous hommes, pourueu qu'ils croyent en luy***»; «*quant à ceux là, **il n'est mort pour eux sinon à la condition qu'ils croyent***»; «*pour ceux-cy… **absolument** mort pour eux*» (с. 208). Плюс: «*La dispute n'est point… si Iesus-Christ est venu pour purger les péchez de tout le monde: **car cela est sans contredit***», но «*nous ne sommes pas sur cette question… **quelle est la vertu de Christ**… **mais à qui c'est qu'il se donne***» (с. 211); «*la generalité des promesses seule… **ne fait point le salut commun à tous***» (там же). ⇒ **три позиции, а не две:** Дорт (одно приобретение, *aeque late*), Амиро (**два**: условное за всех + безусловное за избранных), статья (**одно безусловное** за всех). **Статья не дортская и не амиральдианская** (§4.130). |
 
 | 1658 *(раунд 59, часть 6; «Eschantillon», сс. 212–217; чанок 42)* | **ВСЕОБЩЕЕ У АМИРО — БЕЗ ДЕКРЕТА.** «*Iesus-Christ est **Rédempteur de tout le monde***» (с. 213) — **его слова**; но: «*Ie ne nie pas qu'elle ne soit à tous salut **en sa nature**. Mais voicy la question… **Si Dieu en son conseil éternel a ordonné à tous indifféremment salut… d'vn décret absolu***» (сс. 213–214). И: «*le mot de Predestination… emporte quelque chose **d'absolu & de déterminé***… **il ne peut proprement conuenir à ce qui est purement conditionel***» (с. 216); «*icy **nul n'est exclus pourueu qu'il croye***»; «*la condition de tous est égale*» (там же). Плюс: «*Dieu **tend la main** indifféremment à tous: mais il ne **prend par la main**… sinon ceux qu'il a esleus*» (с. 214); «*il n'y paroist plus que **l'authorité du commandement**, dont le mespris attire malédiction*» (с. 215); «*il fait office de **Legislateur**… **Père seulement envers ses esleus***» (сс. 214–215). ⇒ **симметрия:** статья с Амиро делает то же, что Амиро с Кальвином — берёт слова, опускает оговорку, только **на той же странице** (§4.131). |
+
+| 1658 *(раунд 59, часть 7; «Eschantillon», сс. 217–221; чанок 43)* | **ФОРМУЛА САМОГО АМИРО.** «*la premiere & principale controverse de Caluin auec ses aduersaires en reuient là… de leur vouloir donner son Fils **pour racheter vniuersellement tous ceux qui se conuertiroient à luy d'vne serieuse repentance, & croiroient en ce Rédempteur***» (с. 221) ⇒ объект «универсального искупления» — **«все, кто обратится и уверует»**; объём = избранные, различие с Дортом — **в описании, не в объёме**. Плюс признание метода: «*si ce grand personnage se sert souuent de cette maniere de parler… **il la faut interpréter***» (с. 219). Плюс Кальвин на Рим. 9:11 в передаче Амиро: «*Quant à l'exterieur ils sont appellés à l'alliance de Dieu **indifféremment**, mais… ils n'en entrent pas tous indifféremment en **réelle iouyssance***» (сс. 219–220); и «*bien qu'il leur ait **offert** le salut, il les a voulu iustement **laisser** en leur aueuglement*» (с. 220). Отвержение — «*non donner pas cela sans quoy il est absolument impossible d'auoir le salut*» (сс. 217–218) ⇒ **не-даяние, не декрет зла** (§4.132). |
 
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
@@ -8470,6 +8567,14 @@ deuant des gens à qui il est impossible d'en manger*», с. 190) работае
   (с. 216); «*nul n'est exclus pourueu qu'il croye*». Плюс «*Dieu **tend la main** à tous, mais ne **prend par la main**
   que ses esleus*» (с. 214) и «*il n'y paroist plus que l'authorité du commandement*» (с. 215). ⇒ **симметрия:** статья с
   Амиро делает то, что Амиро с Кальвином, — берёт слова, опускает оговорку. **34/74 (~46 %).**
+
+- **Раунд 59, часть 7: формула самого Амиро (сс. 217–221).** «*la premiere & principale controverse… en reuient là…
+  de leur vouloir donner son Fils **pour racheter vniuersellement tous ceux qui se conuertiroient… & croiroient***»
+  (с. 221) ⇒ объект «универсального искупления» — **обращающиеся и верующие**; **объём = избранные**; различие с
+  Дортом — **в описании, не в объёме**. Второе признание метода: «*il la faut interpréter*» (с. 219). Кальвин на
+  Рим. 9:11 в передаче Амиро: «*appellés… indifféremment… n'entrent pas tous… en réelle iouyssance*» (сс. 219–220);
+  «*bien qu'il leur ait **offert** le salut, il les a voulu iustement **laisser** en leur aueuglement*» (с. 220).
+  Отвержение — **не-даяние** (сс. 217–218). **35/74 (~47 %).**
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**

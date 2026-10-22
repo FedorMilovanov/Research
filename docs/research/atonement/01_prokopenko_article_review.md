@@ -736,6 +736,34 @@ homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***» (`
 Ни Кальвин, ни Дорт такого сдвига не делают.
 
 
+## 17. Главное различение: спор о **описании**, а не о **объёме** (раунд 59)
+
+**17.1. Формула самого Амиро.** «*la premiere & principale controverse de Caluin auec ses adversaires en reuient là…
+de leur vouloir donner son Fils **pour racheter vniuersellement tous ceux qui se conuertiroient à luy d'vne serieuse
+repentance, & croiroient en ce Rédempteur***» (с. 221).
+
+**17.2. Что это значит.** Объект «универсального искупления» у Амиро — **обращающиеся и верующие**. Их объём **совпадает
+с избранными**. Значит различие с Дортом — **не в широте**, а в **способе описания**: сомюрская формула описывает то же
+множество **под условием**, дортская — **без условия**.
+
+**17.3. И это точный диагноз статьи.** Статья превращает спор о **способе описания** в спор об **объёме** — и потом
+недоумевает, почему Дорт не согласен. Отсюда и всё разделение atonement/redemption.
+
+**17.4. Признание метода, уже второе.** «*si ce grand personnage se sert souuent de cette maniere de parler, que Dieu a
+prede stiné vne partie des hommes à la mort, **il la faut interpréter***» (с. 219). ⇒ Амиро **сам** называет свою работу
+**истолкованием** Кальвина. Он не утверждал «так учил Кальвин» — он утверждал, что так Кальвина **надо читать**.
+
+**17.5. Третий текст той же структуры (Рим. 9:11, в передаче Амиро).** «*Quant à l'exterieur ils sont appellés à
+l'alliance de Dieu **indifféremment**, mais… ils n'en entrent pas tous indifféremment en **réelle iouyssance***»
+(сс. 219–220). И о неверующих: «*bien qu'il leur ait **offert** le salut, il les a voulu iustement **laisser** en leur
+aueuglement*» (с. 220).
+
+**17.6. Что теперь можно утверждать в рецензии.** Не «Амиро учил всеобщему искуплению» и не «Амиро учил ограниченному»,
+а: **Амиро описывал всеобщее искупление так, что его объём совпадал с избранными; спор с Дортом — о форме описания**.
+Статья же выдаёт свою формулировку за объём.
+
+**17.7. Оговорки.** A2/OCR; `EDITION_HOLD`; 35/74.
+
 ## 16. «Purement conditionel»: всеобщее у Амиро — **без декрета** (раунд 59)
 
 **16.1. Слова Амиро есть.** «*Iesus-Christ est **Rédempteur de tout le monde***» (с. 213). Если читатель приносит эту
