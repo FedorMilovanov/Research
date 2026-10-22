@@ -826,6 +826,20 @@
       **(8) ИТОГ:** статья **права в цитатах** (всеобщая благодать у Кальвина **есть**) и **неправа в выводе**
       (Кальвин соединяет её с определённым призванием в одной фразе; и слово у него — «*offert*», не
       «приобретено»). **П. 232 ЗАКРЫТ**; **п. 227 сужен до пяти мест**, не закрыт. `EDITION_HOLD`; **27/74**.
+    - 42dj. *Дополнение 2026-10-19 (раунд 58, часть 3; `34_` §4.123, `21_` §16, `04_` §14; класс **B1**):
+      **1 Ин. 2:2 сверен с изданием Кальвина (англ. пер. CTS).** «*They who seek to avoid this absurdity, have said
+      that Christ suffered **sufficiently** for the whole world, but **efficiently only for the elect**. **This
+      solution has commonly prevailed in the schools.** **Though then I allow that what has been said is true, yet I
+      deny that it is suitable to this passage**; for the design of John was… **to make this benefit common to the
+      whole Church**. Then **under the word all or whole, he does not include the reprobate**, but designates **those
+      who should believe** as well as those who were then scattered through various parts of the world*». И:
+      «*I pass by the **dotages of the fanatics***». **⇒ (1) Формула «достаточно/действенно» — Кальвинова и им
+      признана ИСТИННОЙ, но ОТВЕРГНУТА как толкование этого стиха.** **(2) Своё чтение Кальвина ограничивает
+      «весь мир» верующими всех народов.** **(3) Передача Амиро точна в двух пунктах и ОПУСКАЕТ третий** («*I deny
+      that it is suitable to this passage*») — **первое документированное смягчение в «Eschantillon»**.
+      **(4) ПОПРАВКА 3:** «*la dispute n'est point…*» — из *De aeterna Dei praedestinatione*, **не** из толкования.
+      **П. 232 закрыт; п. 239 — 1 из 5.** `EDITION_HOLD`; **27/74**. Источник: `biblehub.com/commentaries/calvin/
+      1_john/2.htm`.
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

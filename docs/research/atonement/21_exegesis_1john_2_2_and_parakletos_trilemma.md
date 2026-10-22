@@ -432,3 +432,40 @@ mettoit à la grâce de la remission*». Дорт (S145–S146) возражае
 
 **15.5. Оговорка.** Амиро — 1658 г., не 1634-й; прочитано 3 чанка из 74; французский OCR с нормализованною
 орфографиею. О целом трактате выводов не делается.
+
+
+## 16. Дополнение (2026-10-19; раунд 58; кросс-досье `34_` §4.123; **сверка по изд. Кальвина**, класс **B1** —
+англ. пер. CTS): **чтение Кальвина** — пятое, и оно ограничивает «весь мир»
+
+**16.1. Почему это отдельное чтение.** В §§10–15 собраны четыре чтения «мира» (фризское, оверэйссельское,
+дрентанское, сомюрское). **Теперь добавлено пятое — самого Кальвина**, и оно **не совпадает** ни с одним из
+сомюрских.
+
+**16.2. Текст (перевод CTS).**
+> «*Here a question may be raised, how have the sins of the whole world been expiated? **I pass by the dotages of the
+> fanatics**, who under this pretense extend salvation to all the reprobate… **They who seek to avoid this absurdity,
+> have said that Christ suffered sufficiently for the whole world, but efficiently only for the elect. This solution
+> has commonly prevailed in the schools.** **Though then I allow that what has been said is true, yet I deny that it is
+> suitable to this passage**; for the design of John was no other than **to make this benefit common to the whole
+> Church**. Then **under the word all or whole, he does not include the reprobate**, but designates **those who should
+> believe** as well as those who were then scattered through various parts of the world*».
+
+**16.3. Три наблюдения для экзегезы.**
+1. **Кальвин знает ход «достаточно/действенно» и объявляет его истинным** — но **не** толкованием этого стиха.
+2. **Его собственное чтение «мира» — верующие, рассеянные по миру**, а не «все до единого» и не «избранные в
+   узком смысле». Это **третье** решение: не «каждый» и не «только избранные», а **«все верующие без различия
+   народов»**.
+3. **Против универсализма он резок:** «*dotages of the fanatics*», «*deserves no refutation*».
+
+**16.4. Что это даёт нашему досье.**
+| Вопрос | Ответ по Кальвину |
+|---|---|
+| значит ли «весь мир» — «каждый человек»? | **нет** («*does not include the reprobate*») |
+| значит ли — «только избранные»? | **не совсем**: «*those who should believe*… *scattered through various parts*» — акцент на **все народы** |
+| разрешает ли стих спор об объёме? | **нет**: ход «достаточно/действенно» **истинен**, но **непригоден** здесь |
+**⇒ Для статьи:** на её ключевом стихе Кальвин **не на её стороне** — и это установлено **по изданию**, а не по
+передаче Амиро.
+
+**16.5. Оговорки.** Класс **B1** (перевод; лат. текст не сверен). При сверке с латинским изданием толкований класс
+поднимется до **A3**. Дата латинского издания толкований на 1 Ин. — **не устанавливалась** (не утверждать по
+памяти).
