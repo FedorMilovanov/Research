@@ -6142,6 +6142,14 @@ n'auoir point de franc-arbitre**… **nous pourroit estre legitime excuse deuant
 сс. 56–60 — либо **другой счёт** (второй титул?), либо листы **другого экземпляра**. **П. 228 — снова открыт** и
 требует чтения колонтитула чанка 19, а не арифметики.
 
+**12. ПОПРАВКА К П. 8 (раунд 58; важная).** Пункт 8 выше был изложен так, будто «*la dispute n'est point…*» —
+**собственная** формулировка Амиро. **Это неверно.** Чанок 35 (сс. 178–183) показывает: те же слова стоят у Амиро
+**как цитата из Кальвина**, с прямым указанием «*dit-il*»: «*Car cela est, **dit-il**, sans contredit*». Речь идёт о
+**толковании Кальвина на 1 Ин. 2:2**. Следствия: (а) различение «что Христос сделал в Себе / кому Он Себя даёт» —
+**Кальвиново**, а не сомюрское; (б) Амиро его **цитирует**, а не строит; (в) и потому вывод п. 8 п. 3 («сам Амиро
+ставит вопрос так») **снимается**: вопрос так ставит **Кальвин**. **Это усиливает одну сторону и ослабляет другую**
+— см. §4.122.
+
 ### 4.117. Q113 — Два места, которые ставят всё на место: цепь спасения (трактат, сс. 156–161) и нравственная невозможность («Eschantillon», сс. 192–197)
 
 **0. Зачем этот раздел.** После §4.116 может показаться, что Амиро — «универсалист с оговоркой». **Два места
@@ -6487,6 +6495,85 @@ impetrasse, sed **reconciliationem**: non **possibilitatem** remittendi peccata,
 **7. Оговорки.** `EDITION_HOLD`; `LOCATOR_PARTIAL` (пагинация «Eschantillon»); прочитано 26/74 тома Амиро; `Acta`
 читана по OCR 1620 г. **П. 230 — ЗАКРЫТ.** Аксиома §4.83 п. 11 подтверждена как **ответ именно на этот ход**, а не
 только на «возможность».
+
+### 4.122. Q118 — Что Кальвин действительно говорит: цитатный аппарат «Eschantillon» (сс. 178–183). П. 232 закрыт (раунд 58)
+
+**0. Локатор.** Чанок 35 = сс. **178–183**. Это **не рассуждение Амиро**, а **подборка цитат из Кальвина** с
+указанием мест. Для нашей темы это самый важный материал тома: здесь видно, **на чём стоит** сомюрская схема.
+
+**1. Пять цитат — с точными словами.**
+**(1) Ин. 3:16** (Кальвин): «*Il a mis ce mot de gen. au liue, **Quiconque**, tant afin de **conuier tous hommes** à
+participer à la vie, qu'afin d'**oster toute excuse aux incredules**. A cela mesme je rapporte aussi le mot de **monde**…
+Car iaçoit qu'on ne trouue rien au monde qui soit digne de la faueur & grâce de Dieu, si est-ce pourtant qu'**il se
+monstre propice à tout le monde**, quand **sans exception il exhorte tous hommes** de venir à la foy de Christ*».
+**(2) Тотчас — и это решающее место:** «*Au reste qu'il nous souuienne que la vie en Christ est tellement **promise en
+commun à tous ceux qui croiront**, que toutesfois **la foy n'est point commune à tous**. Car **Christ est bien offert &
+comme mis en vente à tout: toutesfois il n'y a que les esleus ausquels Dieu ouure les yeux** afin qu'ils le cherchent
+par foy*».
+**(3) Ин. 1:29** («Агнец Божий»): «*En disant le **peché du monde**, il **estend indifféremment cette grâce à tout le
+genre humain**: afin que les Iuifs ne pensent que le Rédempteur soit enuoyé pour eux seuls… Maintenant nostre deuoir est
+de receuoir & embrasser ce bénéfice **qui est à tous offert***».
+**(4) На Римлян:** «*l'Apostre S. Paul faisait la **grâce commune à tous hommes**, pource qu'**elle est présentée à
+tous, non pas que par effect elle s'estende sur tous**… combien que **Christ ait souffert pour les pechez de tout le
+monde**, & soit offert par la bénignité de Dieu **indifféremment à tous**: si est-ce neantmoins que **tous ne
+l'appréhendent pas***».
+**(5) «Le livre de la Prédestination»** (*De aeterna Dei praedestinatione*): «*Or **je confesse que la grâce de Dieu est
+tellement vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes selon ce propos déterminé** dont parle
+Sainct Paul, **qui emporte vn mouuement certain du Sainct Esprit***».
+
+**2. И — 1 Ин. 2:2, то самое место, которое мы в §4.116 читали как слова Амиро.**
+Амиро излагает возражение («*Puis que Iesus Christ est le payon pour les pechez de tout le monde, qu'il faudroit mettre
+les reprouuez hors du monde*»), затем: «***Il respond** que la solution de cet argument se pourroit prendre de **ce qui
+est assez commun**, que **Iesus Christ a suffisamment souffert pour tous, mais que l'efficace & le fruict de sa mort ne
+paruient que iusques aux esleus***». Затем: «*Puis apres auoir rapporté **vne seconde responce**, il conclud en fin, que
+**la dispute n'est point**… si Iesus Christ est venu pour purger les pechez du monde. **Car cela est, dit-il, sans
+contredit***».
+
+**3. Что из этого следует — и это надо сказать без уверток.**
+**(а) Формула «достаточно для всех — действенно для избранных» есть у Кальвина.** Не «у Дорта», не «у Сомура» —
+**у Кальвина**, и Амиро **приводит её как его собственные слова**. Статья, ссылающаяся на неё, **права по
+существу**.
+**(б) Формула «спор не о том, за кого, а о том, кому Он Себя даёт» тоже есть у Кальвина** — на 1 Ин. 2:2.
+**Это снимает часть наших прежних формулировок:** мысль о «quid in se / quid nobis» **не сомюрская**.
+**(в) И Кальвин же говорит: «*je confesse que la grâce de Dieu est tellement vniverselle*»** — и в том же
+предложении: «*toutesfois Dieu n'appelle pas à foy tous hommes selon ce propos déterminé*». То есть **всеобщность
+благодати и определённость призвания у него стоят рядом, в одной фразе**, без ощущения противоречия.
+
+**4. И вот где статья ошибается — три точных пункта.**
+1. **Из «Кальвин так говорит» не следует «Дорт неправ».** Кальвин **сам** соединяет всеобщее предложение с
+   определённым призванием: «*Christ est bien offert… à tout: toutesfois il n'y a que les esleus ausquels Dieu ouure
+   les yeux*» (п. 1 (2)). Это **ровно дортская структура** (II.5 «*promiscue & indifferenter annunciari*» + II.8).
+   Значит, ссылка на Кальвина **не различает** стороны — она **общая**.
+2. **Ключевое слово у Кальвина — «*offert*», а не «приобретено».** Четыре раза в пяти цитатах: «*offert*»,
+   «*mis en vente*», «*présentée*», «*estend… cette grâce*». **Ни разу** — «приобретено для всех». Статья делает
+   из **предложения** — **приобретение**. Это и есть её сдвиг, и он **не Кальвинов**.
+3. **И Кальвин закрывает спор иначе, чем статья:** «*la dispute **n'est point**… si Christ est venu pour purger les
+   pechez du monde: **car cela est sans contredit***» (п. 2). Он **выводит объём из предмета спора**, а статья
+   **вводит** его обратно как решающий.
+
+**5. Уточнение к §4.118 п. 3 (обвинение № 4).** Обвинение «*son sacrifice n'estant destiné qu'à la redemption de
+**fort peu***» **Кальвину не принадлежит** и Амиро его отвергает. Но **«suffisamment pour tous»** — принадлежит.
+Значит **обе стороны** нашего спора могут сослаться на Кальвина, и **обе** — с одинаковым правом. **Спор идёт не о
+том, что сказал Кальвин, а о том, что из сказанного следует.**
+
+**6. Что это меняет в итоговой оценке статьи — точная редакция.**
+| Утверждение статьи | Оценка после §4.122 |
+|---|---|
+| «Кальвин учил, что благодать всеобща» | **верно**, и подтверждено **его словами** («*tellement vniverselle*») |
+| «достаточно для всех, действенно для избранных» | **верно**, Кальвиново |
+| «спор не о том, за кого умер Христос» | **верно** — но это **Кальвин**, а не Амиро |
+| «поэтому "ограниченное искупление" ложно» | **не следует**; Кальвин соединяет всеобщность с определённым призванием |
+| «искупление для всех, примирение для избранных» | **сдвиг**: у Кальвина — «*offert*», а не «приобретено» |
+**Формула для серии:** статья **права в цитатах и неправа в выводе**. Это **более высокая оценка**, чем в §§4.116–
+4.120, и её надо дать: **нельзя** утверждать, что статья выдумала «всеобщую благодать» у Кальвина — **она есть**.
+
+**7. Статусы.** **П. 232 — ЗАКРЫТ** (цитата на 1 Ин. 2:2 опознана: толкование Кальвина, приводимое Амиро с
+«*dit-il*»). **П. 227 — ПРОДВИНУТ и сужен до пяти точных мест:** Ин. 3:16; Ин. 1:29; Рим. 5; *De aeterna Dei
+praedestinatione*; 1 Ин. 2:2. **Не закрыт:** читаем **передачу Амиро**, а не издание Кальвина.
+**П. 238** — перечень клеветы по-прежнему не сверен с римскими полемистами.
+
+**8. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); чанок 35; прочитано **27 из 74** (~36 %); французский OCR;
+**цитаты Кальвина — в передаче Амиро** (это и есть граница п. 227).
 
 ## 5. Анализ и границы допустимой формулировки
 
@@ -7016,6 +7103,7 @@ impetrasse, sed **reconciliationem**: non **possibilitatem** remittendi peccata,
 | 1658 *(раунд 57; начало «Eschantillon», сс. 163–167; чанки 32–33)* | **Титул: «ESCHANTILLON DE LA DOCTRINE DE CALVIN, Touchant la Predestination»** (с. 167); трактат кончается на с. 166 словом «**FIN**». **Открывается перечнем того, чем «*les Predicateurs de l'Eglise Romaine diffament le nom de Caluin*»:** «*Dieu a créé la plus grande partie des hommes **expressement pour les damner***»; «*vne loy qu'il est impossible d'accomplir*»; «*son sacrifice n'estant destiné qu'à la redemption de **fort peu***»; «*quand il suffiroit pour tout le genre humain, c'est **inutilement** pour la plus grande part*»; «*il la rend inutile… en ostant toute faculté de croire*». **Ответ:** «*il faut entendre ce mot de création… de cette entremise de la prouidence… infectée de la contagion du péché*»; «*en quoy est-ce qu'il pense Dieu estre **redeuable à l'homme**?*»; «*non pas d'une cruauté tyrannique, mais par vne **équité raisonnable***»; «*il **s'est volontairement** privé de l'intégrité*». **Три степени любви:** «*ce second degré… en produit necessairement **vn croisiéme***»; «*selon ce troisième il nous aime **pource que nous l'aimons au reciproque***». **«Comme si»:** «*S. Paul… parle de l'enuoy du Fils… **comme s'il auoit esté ordonné seulement pour eux**… quoy que… **il ait esté enuoyé pour sauver tous les humains, pourueu que***». **И обесценивание всеобщего:** «*l'autre… **n'est quasi pas considerable***»; «*l'incredulité des vns empeschant qu'ils n'en reçoiuent **aucun***» |
 | 1658 *(раунд 57, продолжение; «Eschantillon», сс. 173–178; чанок 34)* | **Ответ на обвинение о невозможном законе:** «*la **droite cause & naturelle du péché** n'est pas le **secret conseil de Dieu**, mais la **volonté de l'homme***»; от Бога — только «*le **décret de ne l'empescher pas***»; «*il faut considerer la **Loy de Dieu en deux égards***»; контрпример — «*comme si Dieu nous auoit commandé **d'arrester le mouvement du Soleil***»; «*si vous n'auez égard qu'aux **facultez naturelles**… & **non au vice qui y est suruenu***»; **два рода немощи:** «*vne sorte d'impuissance… **naturelle**… **mais pour laquelle on ne nous peut pas dire meschans**… Et il y en a **vne autre**… **morale**: de tant s'en faut que celle-là puisse nous excuser, que **plus elle est grande & profonde en nous, plus sommes nous meschans***» |
 | 1619 → 1634 *(раунд 57, часть 5; сведение `Acta` §4.83 пп. 9, 11 с `34_` §4.116–4.118)* | **Два хода, отвергнутые по отдельности и соединённые в Сомюре.** **Гелдерланд VI:** «*Neque hîc quicquam juvat **distinctio illa inter impetrationem & applicationem**… quam solutionem si accepit Pater, exigere novam jure nullo potest, sive applicetur, sive non applicetur: nam **non-applicatio facit quidem ut homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***». **Фрисландия:** «*non simpliciter, sed **conditionate** mortuum esse pro omnibus & singulis, si nimirum credant*». **Амиро (1634):** соединяет оба — «*mort universellement… sinon à la condition qu'ils croyent*» — и признаёт, что вне веры плод «***aucun***». **Аксиома:** «*non **reconciliabilitatem**… sed **reconciliationem***» |
+| 1658 *(раунд 58; «Eschantillon», сс. 178–183; чанок 35)* | **Цитаты Кальвина в передаче Амиро.** Ин. 3:16: «*Quiconque… afin de **conuier tous hommes**… & d'**oster toute excuse aux incredules***»; «*il se monstre **propice à tout le monde***»; **и тотчас:** «*Christ est bien **offert & comme mis en vente à tout**: toutesfois **il n'y a que les esleus ausquels Dieu ouure les yeux***»; Ин. 1:29: «*il **estend indifféremment cette grâce à tout le genre humain***»; Рим.: «*la **grâce commune**… pource qu'elle est **présentée à tous**, **non pas que par effect elle s'estende sur tous***»; *De aeterna praedestinatione*: «***je confesse que la grâce de Dieu est tellement vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes selon ce propos déterminé***»; **1 Ин. 2:2:** «*Iesus Christ a **suffisamment souffert pour tous**, mais que **l'efficace & le fruict** de sa mort **ne paruient que iusques aux esleus***»; и «*la dispute **n'est point**… **car cela est, dit-il, sans contredit***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -7563,6 +7651,17 @@ impetrasse, sed **reconciliationem**: non **possibilitatem** remittendi peccata,
   «**по существу совпадают**»: совпадение **типологическое**, текстуальной зависимости статьи от Амиро или от
   римских полемистов **не установлено и не предполагается**.
 
+- **Раунд 58, часть 1: цитатный аппарат «Eschantillon» прочитан (сс. 178–183; п. 232 ЗАКРЫТ, п. 227 сужен).**
+  Пять цитат Кальвина в передаче Амиро: «*Quiconque… afin de **conuier tous hommes**… **oster toute excuse aux
+  incredules***»; «*Christ est bien **offert & comme mis en vente à tout**: toutesfois **il n'y a que les esleus
+  ausquels Dieu ouure les yeux***»; «*estend indifféremment cette grâce à tout le genre humain*»; «*la grâce commune…
+  **présentée à tous**, **non pas que par effect elle s'estende sur tous***»; «***je confesse que la grâce de Dieu est
+  tellement vniverselle**, que toutesfois **Dieu n'appelle pas à foy tous hommes selon ce propos déterminé***»;
+  «***suffisamment souffert pour tous**, mais **l'efficace & le fruict**… **ne paruient que iusques aux esleus***».
+  **ПОПРАВКА к §4.116 п. 8:** «*la dispute n'est point…*» — **слова КАЛЬВИНА** (1 Ин. 2:2), с «*dit-il*», а не
+  формулировка Амиро. ⇒ **статья права в цитатах** (всеобщая благодать у Кальвина **есть**) и **неправа в выводе**
+  (Кальвин соединяет её с определённым призванием; и говорит «*offert*», не «приобретено»).
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -7743,6 +7842,16 @@ reconciliationem*» по условному плоду** — то есть по 
 называет библейское выражение «как если бы». Если да — это его **устойчивое** правило, и оно должно быть в §4.9.
 238. *(раунд 57)* **Сверить перечень обвинений (с. 167) с римско-католической полемикой 1600–1630-х** (Беллармин,
 дю Перрон, кардинал дю Гар). Установить, **чьими словами** Амиро передаёт обвинения: цитата или пересказ.
+
+**Добавлено в раунде 58:**
+
+239. *(раунд 58)* **Сверить пять мест Кальвина с изданием** (п. 227, сужен): Ин. 3:16; Ин. 1:29; Рим. 5;
+*De aeterna Dei praedestinatione*; **1 Ин. 2:2**. Для 1 Ин. 2:2 установить **две** «responses» Кальвина и какая у
+него **предпочтительна** (Амиро говорит: «*vne seconde responce*»).
+240. *(раунд 58)* **Дочитать предисловие «Eschantillon»** (сс. 183–192, чанки 36–37): найти, где кончается цитатный
+аппарат и начинается собственное рассуждение Амиро; зафиксировать границу.
+241. *(раунд 58)* **Проверить «*payon*»** (с. 181; вероятно OCR от «*propitiateur*» или «*payement*») — не цитировать
+как слово Кальвина без сверки.
 
 **Добавлено в раунде 48:**
 
