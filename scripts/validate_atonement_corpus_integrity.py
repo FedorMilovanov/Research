@@ -415,6 +415,50 @@ if REG.is_file():
                 "обычная причина — shallow-клон или отсутствие .git"
             )
 
+# --------------------------------------------- governance docs -> registry refs --
+# Коммит ae2821a (22.10) уехал с правкой 17_, ссылающейся на реестровый ключ, которого скрипт-заполнитель
+# не создал (упал на KeyError, а коммит стоял отдельной командой). Ослаблять внимание бессмысленно: ссылка
+# на несуществующие данные должна быть невозможна. Проверяются только те `ключ.подключ` в markdown корпуса,
+# чей первый сегмент — реальный верхний ключ реестра; прозаическое «git status» или имя файла не трогается.
+REF = re.compile(r"`([A-Za-z][A-Za-z0-9_]*)((?:\.[A-Za-z0-9_]+|\[\d+\])+?)`")
+
+
+def _resolve(root_node, path_str):
+    node = root_node
+    for step in re.findall(r"\.([A-Za-z0-9_]+)|\[(\d+)\]", path_str):
+        attr, idx = step
+        if idx:
+            if not isinstance(node, list) or not (0 <= int(idx) < len(node)):
+                return False
+            node = node[int(idx)]
+        else:
+            if not isinstance(node, dict) or attr not in node:
+                return False
+            node = node[attr]
+    return True
+
+
+_top_keys = set(registry) if isinstance(registry, dict) else set()
+for _md in sorted(CORPUS.rglob("*.md")):
+    _text = read(_md)
+    if "реестр" not in _text and "atonement-corpus-v1.json" not in _text:
+        continue
+    for _m in REF.finditer(_text):
+        head, tail = _m.group(1), _m.group(2)
+        if head not in _top_keys or not tail:
+            continue
+        if re.search(r"[A-Z]{2,}", tail):
+            # описательный шаблон имени (`driveMirrors.fileNN` = «file + номер файла»), а не путь к записи:
+            # исключение точечное и только для верхнерегистровых маркеров — строчный ключ обязан разрешиться
+            continue
+        if head not in registry or not _resolve(registry[head], tail):
+            errors.append(
+                f"{_md.relative_to(ROOT)} ссылается на `{head}{tail}`, но такого пути в "
+                f"data/atonement-corpus-v1.json нет — запись не внесена (или внесена под другим именем); "
+                "ссылку убрать нельзя, надо внести данные: python3 -B "
+                "scripts/validate_atonement_corpus_integrity.py"
+            )
+
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")
 if errors:
