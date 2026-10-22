@@ -598,9 +598,15 @@ if "exemptionsDeclared" in _msc and int(_msc["exemptionsDeclared"]) != _exempt_t
 try:
     import subprocess as _sp
     _msg = _sp.run(["git", "log", "-1", "--format=%B"], cwd=ROOT, capture_output=True, text=True).stdout
+    _parents = _sp.run(["git", "log", "-1", "--format=%P"], cwd=ROOT, capture_output=True, text=True).stdout.split()
+    _subject = _msg.split("\n", 1)[0]
 except Exception:  # noqa: BLE001 - git может быть недоступен (не репозиторий): тогда проверка честно молчит
-    _msg = ""
-if _msg:
+    _msg, _parents, _subject = "", [], ""
+# Сообщение merge/squash, которое сгенерировал GitHub из заголовка и тела PR, автору не принадлежит: там
+# окажется любой цитируемый дефект, который я сама же и починила в тексте, и ни один из 44 подзаголовков
+# истории я не вправе переписывать. Требование к тому, кто пишет коммит, а не к тому, кто его мержит.
+_generated = len(_parents) > 1 or _subject.startswith("Merge branch") or bool(re.match(r"^.+\(#[0-9]+\)$", _subject))
+if _msg and not _generated:
     _cjk = sorted(set(re.findall(r"[\u3040-\u30ff\u4e00-\u9fff]+", _msg)))
     if _cjk:
         errors.append(
