@@ -1,0 +1,83 @@
+name: Atonement corpus integrity
+
+# ИСКУПЛЕНИЕ/ (particular vs universal atonement) — structural gate over main's canonical
+# corpus plus the adjacent polemic lane docs/research/atonement/.
+# Read-only validator: no writes, no artifacts, no EPHEMERAL_ACTION_ARTIFACT by design.
+# It asserts structure and publication boundaries only; it never states a theological verdict.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '37 5 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: atonement-corpus-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # имя job'а = имя required-check'а в GitHub. В репозитории три workflow'а уже называют
+  # свой job «validate»; четвёртый с тем же именем сделал бы список защищённых проверок
+  # неразрешимым, поэтому контекст назван явно.
+  atonement-corpus-integrity:
+    name: Atonement corpus integrity
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          # Полная история нужна не гейту-по-файлам, а проверке записанных в реестре время` коммитов:
+          # в shallow-клоне git не видит предков, и ровно так в песочнице два дня рождались
+          # «unrelated histories» вместо 0 конфликтов.
+          fetch-depth: 0
+
+      - name: refuse a history-blind checkout
+        run: |
+          test "$(git rev-parse --is-shallow-repository)" = "false" || {
+            echo "::error::checkout shallow — git-замеры по истории в таком клоне врут (merge-base пуст)"; exit 1; }
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v5.6.0
+        with:
+          python-version: '3.12'
+
+      - name: Validate Python syntax without writing bytecode
+        run: python3 -B -m py_compile scripts/validate_atonement_corpus_integrity.py
+
+      - name: Atonement corpus integrity (read-only)
+        run: python3 -B scripts/validate_atonement_corpus_integrity.py
+      # Мерж обязан быть зелёным не только на ветке: проверка накладывается на дерево main в worktree.
+      # Иначе «аддитивный» слой мог бы внести в каноническое дерево падения по чужим файлам, и первый
+      # же плановый прогон на main обвинил бы в этом владельцев тех ланов.
+      - name: Preview landing on main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          set -euo pipefail
+          git fetch -q --no-tags origin main
+          BASE=$(git rev-parse FETCH_HEAD)
+          WT=$(mktemp -d)
+          git worktree add -q --detach "$WT" "$BASE"
+          git -c core.quotepath=off diff --name-only "$BASE" "${GITHUB_SHA}" > /tmp/pr-files.txt
+          n=0; d=0
+          while IFS= read -r f; do
+            [ -n "$f" ] || continue
+            mkdir -p "$WT/$(dirname "$f")"
+            if git cat-file -e "${GITHUB_SHA}:${f}" 2>/dev/null; then
+              git show "${GITHUB_SHA}:${f}" > "$WT/${f}"; n=$((n+1))
+            else
+              rm -f "$WT/${f}"; d=$((d+1))
+            fi
+          done < /tmp/pr-files.txt
+          echo "наложено файлов: ${n}, удалено: ${d}"
+          test "$((n+d))" -gt 0 || { echo "::error::diff с main пуст — проверять нечего, шаг выродился в декорацию"; exit 1; }
+          ( cd "$WT" && python3 scripts/validate_atonement_corpus_integrity.py )
+      # гейт не может проверить себя изнутри: если файл заменят заглушкой, шаг выше промолчит
+      - name: refuse a hollowed-out gate
+        run: |
+          grep -q 'publicationEligible=false' scripts/validate_atonement_corpus_integrity.py
+          grep -q 'ATONEMENT CORPUS INTEGRITY: PASS' scripts/validate_atonement_corpus_integrity.py

@@ -1,2 +1,6 @@
 google_drive/
 prokopenko_article_text.txt
+
+# python bytecode: репозиторные валидаторы запускаются локально и в CI
+__pycache__/
+*.pyc
