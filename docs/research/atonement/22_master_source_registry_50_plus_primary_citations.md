@@ -670,6 +670,24 @@
       это **третья позиция**, ближе к принятому «*roborat… efficaciter & suaviter*», но с иным акцентом
       («*impossible*» vs «*suaviter*»). `EDITION_HOLD`; 14 чанков из 74 (~19 %). П. 211: «Eschantillon»
       **позже** (чанки 26–34).
+    - 42cz. *Дополнение 2026-10-19 (раунд 55; `34_` §4.112, **S156**; `03_` §28; `synthesis/03_` §29;
+      `04_` §12):* **Амиро, гл. XII (чанки 25–26, сс. 126–136) — необходимость без принуждения. П. 214 ЗАКРЫТ.**
+      **(1) Различение:** «*quelque efficace que cet Esprit desploye en nous, **il ne nous contraint ny violente
+      pas** pourtant. Car **la contrainte gist à faire quelque chose contre sa volonté***». **(2) Довод от
+      невозможности понятия:** «*qui a jamais ouy parler d'un homme qui creust quelque chose **malgré qu'il en
+      euft**…? **La croyance est une persuasion. Et on ne persuade personne par la force***»; «*l'amour est un
+      mouvement de la volonté*». **(3) Порядок действия:** «*Dieu meut nos volontés, nos affections **par
+      l'entremise de nos entendemens***»; образ машины («*une roue dépend necessairement de l'autre*»).
+      **(4) Соединение в одной фразе:** «*il est **impossible** que nous ne les apperceuions & que nous n'y cédions,
+      **quelque résistance** qu'y facent au commencement nos affections & nostre raison charnelle*». **(5) Ангелы:**
+      «***nul ne doute que les Anges ne foyent à cette heure en estat de ne pouuoir pécher***… *Les Anges donc
+      ont-ils perdu quelque liberté de leur volonté par la grâce de leur confirmation?*» — «не мочь грешить» есть
+      **совершенство**. **(6) Необходимость растёт с совершенством:** «*plus ils font excellens, **plus
+      necessairement & ineuitablement** sentent ils… la puissance & efficace de ces choses*». **Выводы:** пятое
+      подтверждение узости спора; обвинять реформатское учение в «принуждении воли» **нельзя ни по Дорту, ни по
+      Сомюру**; схема Амиро **интеллектуалистическая** («*par l'entremise de nos entendemens*»). `EDITION_HOLD`;
+      16 чанков из 74 (~22 %). **Гипотеза (не утверждение):** чанок 19 может быть фрагментом «Eschantillon»
+      (изложение Кальвина) — проверить (п. 217).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

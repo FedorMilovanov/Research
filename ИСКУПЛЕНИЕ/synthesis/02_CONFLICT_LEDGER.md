@@ -452,6 +452,19 @@
   не как учение**. **(з) `PUBLICATION_HOLD`, `RIGHTS_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений;
   «снято молча: 0».**
 
+- **Дополнение раунда 55 (2026-10-19; `34_` §4.112, **S156**; `03_` §28; `synthesis/03_` §29; `04_` §12).**
+  **(а) Прочитаны чанки 25–26 (сс. 126–136)**; всего 16 из 74 (~22 %); `EDITION_HOLD` в силе.
+  **(б) П. 214 ЗАКРЫТ:** у Амиро **необходимость без принуждения** — «*il ne nous contraint ny violente pas… la
+  contrainte gist à faire quelque chose **contre sa volonté***»; «*La croyance est une persuasion*»; «*Dieu meut
+  nos volontés… par l'entremise de nos entendemens*». **(в) Соединение в одной фразе:** «*il est **impossible**
+  que nous ne… cédions, **quelque résistance** qu'y facent… nos affections*». **(г) Ангелы:** «*nul ne doute que
+  les Anges ne foyent… en estat de **ne pouuoir pécher***» ⇒ «не мочь грешить» — **совершенство**. **(д)
+  Необходимость растёт с совершенством** ⇒ спор о свободе есть спор **об определениях**. **(е) Пятое
+  подтверждение узости спора;** обвинять реформатское учение в «принуждении воли» **нельзя ни по Дорту, ни по
+  Сомюру** — статья не может помещать различие здесь. **(ж) Гипотеза** (не утверждение): чанок 19 может быть
+  фрагментом «Eschantillon» ⇒ цитировать с оговоркой до п. 217. **(з) `PUBLICATION_HOLD`, `RIGHTS_HOLD`,
+  `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято молча: 0».**
+
 ## Итоговая сводка
 
 
