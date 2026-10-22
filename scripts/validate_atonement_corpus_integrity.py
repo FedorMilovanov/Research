@@ -609,6 +609,138 @@ if "exemptionsDeclared" in _msc and int(_msc["exemptionsDeclared"]) != _exempt_t
     )
 
 if REG.is_file():
+    # (1w) гранульность времени: правило по ИМЕНИ ключа пропускало даты, лежащие под другими именами
+    # (wave_date, cutoff, checkedOn, ingestedIntoGit). Смотрю на ФОРМУ значения: если это ровно
+    # ГГГГ-ММ-ДД, поле обязано либо нести часы (имя съёмки), либо быть объявлено днём по определению.
+    DATEONLY = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+    # имя оканчивается на At|On|Time — поле обещает отметку времени; Date|Day — обещает день, и требовать
+    # от него часов значит подменять смысл поля удобной проверкой
+    MEASUREMENT_NAME = re.compile(r"(?:at|on|time|timestamp)$", re.I)
+    _daydecl = ((reg.get("integrityGate") or {}).get("dayGranularity") or {})
+    _declared_paths = {str(x.get("path")) for x in (_daydecl.get("declared") or [])}
+
+    def walk_granularity(node, path, src, acc):
+        if isinstance(node, dict):
+            for key, val in node.items():
+                # сами декларации дневной гранульности содержат даты — это реестр исключений, а не поле-съёмка;
+                # иначе правило кормится собственным текстом и никогда не сойдётся
+                if src == "реестр" and path == ".integrityGate" and str(key) == "dayGranularity":
+                    continue
+                if isinstance(val, str) and DATEONLY.match(val.strip()):
+                    acc.append((src, path + "." + str(key), bool(MEASUREMENT_NAME.search(str(key)))))
+                walk_granularity(val, path + "." + str(key), src, acc)
+        elif isinstance(node, list):
+            for i, val in enumerate(node):
+                walk_granularity(val, f"{path}[{i}]", src, acc)
+
+    _gran = []
+    for _label, _path in _registries:
+        if _label in _docs:
+            walk_granularity(_docs[_label], "", _label, _gran)
+    for _src, _pth, _ismeas in _gran:
+        if _src != "реестр":
+            continue
+        if _ismeas:
+            errors.append(
+                f"корпус{_pth} = значение-дата без часов при имени, обозначающем съёмку: точность дня здесь не "
+                "определение, а незамеренное время — переснимите git'ом (например: git log -1 --format=%cI) "
+                "или назовите поле днём по определению и объявите в integrityGate.dayGranularity"
+            )
+        elif _pth not in _declared_paths:
+            errors.append(
+                f"корпус{_pth}: дата ровно в один день нигде не объявлена как дневная гранульность — "
+                "либо переснять с часами, либо записать в integrityGate.dayGranularity.declared с whyDay; "
+                "иначе читатель не отличит «измерено в этот день» от «не догадались померить точнее»"
+            )
+    def _laney(label):
+        return "корпус" if label == "реестр" else label.replace("реестр ", "")
+
+    _counts = {}
+    for _src, _pth, _ismeas in _gran:
+        _counts[_laney(_src)] = _counts.get(_laney(_src), 0) + 1
+    _gran_foreign = {k: v for k, v in _counts.items() if k != "корпус"}
+    _smr = (reg.get("integrityGate") or {}).get("scopeOfMeasurementRules") or {}
+    _daydecl_fig = _smr.get("dayOnlyFieldsPerRegistry") or {}
+    _myday = _counts.get("корпус", 0)
+    if _daydecl_fig:
+        _badfig = {k: (v, _counts.get(k, 0)) for k, v in _daydecl_fig.items() if _counts.get(k, 0) != v}
+        _absent = sorted(set(_counts) - set(map(str, _daydecl_fig)))
+        if _absent:
+            errors.append(f"dayOnlyFieldsPerRegistry не покрывает ланы {_absent} — в них поля дневной точности есть")
+        if _badfig:
+            errors.append(
+                "scopeOfMeasurementRules.dayOnlyFieldsPerRegistry разошёлся с обходом: "
+                + ", ".join(f"{k}: записано {v[0]!r}, видим {v[1]}" for k, v in sorted(_badfig.items()))
+                + " — поле «сколько чужих дат ровно в день» это моё число, и оно обязано быть переснятым, а не унаследованным"
+            )
+        # нуль для существующего лана — это не лишнее число, а ровно то, что мы просим держать на виду
+        _lanes = {_laney(_l) for _l in _docs}
+        _extrafig = sorted(set(map(str, _daydecl_fig)) - _lanes)
+        if _extrafig:
+            errors.append(
+                f"dayOnlyFieldsPerRegistry содержит {_extrafig}, а такого лана нет среди просматриваемых реестров — "
+                "ссылка на несуществующий периметр хуже, чем ноль"
+            )
+    elif _myday or _gran_foreign:
+        errors.append(
+            "число полей «дата ровно в день» по пяти реестрам не записано в scopeOfMeasurementRules."
+            "dayOnlyFieldsPerRegistry — без него «ноль нарушений» снова означает «правило молчало»"
+        )
+    if _gran_foreign:
+        _fmeas = sum(1 for src, pth, ismeas in _gran if src != "реестр" and ismeas)
+        if _fmeas:
+            notes.append(
+                f"в чужих под-реестрах {_fmeas} полей с именем съёмки и точностью в один день — не ошибка владельца "
+                "этого PR: правило (1w) к чужим данным применяется как измерение, а не как блокировка"
+            )
+
+    # (2e) форма документа-сверки:число строк и число разделов — тоже числа, которые я публикую, значит они
+    # обязаны пересниматься этим же обходом, а не переживать следующую правку текста.
+    _doc_fig = reg.get("reconciliationDocument20261022") or {}
+    _docp = CORPUS / str(_doc_fig.get("path", ""))
+    if _doc_fig and _docp.is_file():
+        _dtxt = read(_docp)
+        _dlines = len(_dtxt.rstrip("\n").split("\n"))
+        _dh2 = len([x for x in _dtxt.split("\n") if x.startswith("## ")])
+        _dh3 = len([x for x in _dtxt.split("\n") if x.startswith("### ")])
+        _dwant = {"lines": _dlines, "sectionsH2": _dh2, "sectionsH3": _dh3}
+        _dbad = {k: (int(_doc_fig.get(k, -1)), v) for k, v in _dwant.items() if int(_doc_fig.get(k, -1)) != v}
+        if _dbad:
+            errors.append(
+                "reconciliationDocument20261022 разошёлся с файлом: "
+                + ", ".join(f"{k}: записано {v[0]!r}, видим {v[1]}" for k, v in sorted(_dbad.items()))
+                + " — заголовок правят чаще, чем цифру под ним; переснимите или уберите поле"
+            )
+        _dlev = re.search(r"^(#{3,4}) 15\. ", _dtxt, re.M)
+        _dsub = len(re.findall(r"^### 15[a-e]\. ", _dtxt, re.M))
+        if _dlev and _dlev.group(1) != "##":
+            errors.append("раздел 15 описан_level %s, хотя его соседи 0–14 — это ##; разноуровневые заголовки ломают и счётчик разделов" % _dlev.group(1))
+        if _dsub < 5:
+            errors.append(f"подразделов 15a–15e найдено {_dsub} из 5 — один съехал с уровня или переименован")
+
+    # (2d) арифметика собственного отчёта: число прогонов-мутаций обязано совпадать с суммой групп,
+    # а сумма — с тем, что написано в человекочитаемой строке. Иначе «41» и «13+3+5…» расходятся молча,
+    # ровно как расходятся любые два места, где одно число записано дважды.
+    _mg = (reg.get("integrityGate", {}).get("rules") or {}).get("mutationGroups")
+    if _mg:
+        _sum = sum(int(x.get("count", 0)) for x in _mg)
+        _tot = int(((reg.get("integrityGate", {}).get("rules") or {}).get("mutationTotal") or -1))
+        _strn = str((reg.get("integrityGate", {}).get("rules") or {}).get("mutationScore20261022") or "")
+        _lead = re.match(r"\s*(\d+)", _strn)
+        if _sum != _tot:
+            errors.append(
+                f"integrityGate.rules.mutationTotal = {_tot}, а сумма групп — {_sum}: разложение и итог — это "
+                "одно число в двух местах, и они обязаны сойтись"
+            )
+        if not _lead or int(_lead.group(1)) != _sum:
+            errors.append(
+                f"в строке mutationScore20261022Leading = {(_lead.group(1) if _lead else None)!r}, а группы дают {_sum} — "
+                "цифра, которую цитируют в отчёте, обязана быть тем же числом, что и разложение под ней"
+            )
+        _blank = [i for i, x in enumerate(_mg) if not str(x.get("label") or "").strip() or int(x.get("count", 0)) <= 0]
+        if _blank:
+            errors.append(f"группы мутаций {_blank} без подписи или с нулевым счётом — пустая группа прячет расхождение")
+
     # (2c) живые счётчики: число, записанное в двух местах, обязано разойтись — поэтому то, что можно
     # переснять этим же обходом, переснимается, а не цитируется
     _live = ((reg.get("reproducibility20261022") or {}).get("countsLive") or {})
@@ -639,6 +771,34 @@ if REG.is_file():
                 f"countsLive содержит {_extra}: в блоке живут только числа, которые переснимает этот же обход; "
                 "остальное — в тех записях, где у числа есть источник"
             )
+
+# ------------------------------------------------- mixed script, out of scope --
+# Число чужих вхождений, записанное в реестре как аргумент «я туда не вступала», обязано пересниматься: иначе
+# «они больны» превращается в то, что я только что запретила себе — в цифру, которая пережила собственных хозяев.
+_out = (reg.get("integrityGate", {}).get("mixedScriptCheck") or {}).get("outOfScope") or {}
+if _out:
+    _files_seen = set()
+    _occ_seen = 0
+    for _md in sorted(CORPUS.rglob("*.md")):
+        if _md.parent == CORPUS:
+            continue  # периметр, где я имею право исправлять, проверен выше и обязан быть нулевым
+        _text = read(_md)
+        for _line in _text.split("\n"):
+            if EXEMPT in _line:
+                continue
+            _occ_seen += len(mixed_words(_line))
+            if mixed_words(_line):
+                _files_seen.add(str(_md.relative_to(ROOT)))
+    if int(_out.get("occurrences", -1)) != _occ_seen:
+        errors.append(
+            f"mixedScriptCheck.outOfScope.occurrences = {_out.get('occurrences')!r}, а обход видит {_occ_seen} — "
+            "чужой периметр я не лечу, но считать его обязана: «там 12» без пересъёмки значит «я помню, что было 12»"
+        )
+    if int(_out.get("files", -1)) != len(_files_seen):
+        errors.append(
+            f"mixedScriptCheck.outOfScope.files = {_out.get('files')!r}, а обход нашёл {len(_files_seen)} файлов "
+            f"({sorted(_files_seen)[:3]}…)"
+        )
 
 # ---------------------------------------------------- commit message hygiene --
 # Тот же класс, что и в файлах, я сегодня трижды занесла в сообщения коммитов (кириллическая строка с латинской
