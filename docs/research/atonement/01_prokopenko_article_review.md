@@ -736,6 +736,27 @@ homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***» (`
 Ни Кальвин, ни Дорт такого сдвига не делают.
 
 
+## 18. Финал «Eschantillon»: довод статьи опровергает сам Амиро (раунд 60)
+
+**18.1. Благодать для необращённых — только приглашение.** «*la **pure efficace de la grace, qui conuertit les vns
+interieurement, & se contente d'inuiter exterieurement les autres***» (с. 222). «**Se contente**» — «довольствуется».
+
+**18.2. Всеобщность — в открытости, не в приобретении.** «*sa misericorde est **exposée à tous ceux qui la chercheront**.
+Or **nul ne la cherche sinon ceux qu'il a illuminez***» (с. 223). И: «*les seconds **n'en reçoiuent nulle vtilité***»
+(сс. 223–224).
+
+**18.3. И главное — о несправедливости.** «*sa iuste seuerité, qui les a voulu laisser, **sans leur faire aucun tort***,
+en leur naturelle corruption*» (с. 224). ⇒ **Оставление не есть неправда.** А довод статьи («уплачено, но не
+зачтено — несправедливо») **требует**, чтобы оно было неправдой.
+
+**18.4. Значит спор надо вести иначе.** Не «вы неправы, потому что Бог несправедлив», а: **сам Амиро говорит, что
+неправды нет**. Ваш довод вводит несправедливость, которой источник не знает.
+
+**18.5. И о всеобщем языке Писания.** «*afin que **les iniques n'alleguent point** qu'ils n'ont nul refuge*» (с. 223) —
+это Кальвиново «*to cut off every excuse*», пересказанное Амиро.
+
+**18.6. Оговорки.** A2/OCR; сс. 222–228; «FIN» на с. 228; 36/74.
+
 ## 17. Главное различение: спор о **описании**, а не о **объёме** (раунд 59)
 
 **17.1. Формула самого Амиро.** «*la premiere & principale controverse de Caluin auec ses adversaires en reuient là…

@@ -7393,6 +7393,146 @@ conuienne*» — «дать выражениям разумно сообразн
 (это и есть §4.126 п. «что статья говорит верно»).
 
 
+### 4.133. Q129 — Финал «Eschantillon» (сс. 222–228): свод самого Амиро и опровержение довода статьи его же словами (раунд 60)
+
+**0. Источник.** S156, «Eschantillon», **сс. 222–228**, чанок **44**; текст кончается словом «**FIN**» на с. 228.
+Класс **A2** (OCR). `EDITION_HOLD`.
+
+**1. Самая ясная формула всеобщей благодати во всём корпусе Амиро.**
+> «*Sainct Augustin… Caluin en ces derniers temps… ont maintenu selon la Parole de Dieu que cela vient de la **pure
+> efficace de la grace, qui conuertit les vns interieurement, & se contente d'inuiter exterieurement les autres***»
+> (с. 222).
+
+**Перевод:** «…что это происходит от **чистой действенности благодати, которая одних обращает внутренне, а других
+довольствуется тем, что приглашает внешне**».
+
+**Почему это ключ.** Здесь **одним предложением** сказано то, что статья отрицает: для необращённых благодать **не
+делает ничего, кроме внешнего приглашения**. Не «приобретает и не применяет»; **приглашает — и всё**. «*Se contente*»
+— «довольствуется» — слово, которое статья не смогла бы употребить.
+
+**2. И механизм: милость «предложена» всем, но ищут её только просвещённые.**
+> «*le Seigneur en promettant ainsi, ne signifie autre chose sinon que **sa misericorde est exposée à tous ceux qui la
+> chercheront**. Or **nul ne la cherche sinon ceux qu'il a illuminez**. Finalement il illumine ceux qu'il a predestinez à
+> salut*» (с. 223).
+
+**Перевод:** «…что Его милость **открыта всем, кто будет её искать**. Но **никто не ищет её, кроме тех, кого Он
+просветил**. И Он просвещает тех, кого предопределил ко спасению».
+
+⇒ Всеобщность — в **открытости** («exposée»), а **круг ищущих** задан просвещением. Это не приобретение; это
+**предложение и его действенное исполнение в избранных**.
+
+**3. И прямо: вторые не получают никакой пользы.**
+> «*Comme ainsi soit donc que la misericorde de Dieu soit **presentée aux vns & autres** par l'Euangile, **il n'y a que
+> la foy**, c'est à dire illumination de Dieu, **qui discerne** entre les infidèles & incrédules : à ce que les premiers
+> sentent l'efficace de l'Euangile, & **les seconds n'en reçoiuent nulle vtilité***» (сс. 223–224).
+
+**Перевод:** «…милость Божия **предлагается тем и другим** через Евангелие, но **только вера**, то есть просвещение
+Божие, **различает** между ними, так что первые ощущают действенность Евангелия, а **вторые не получают из него никакой
+пользы**».
+
+⇒ «**Nulle vtilité**» — никакой пользы. Не «польза есть, но не зачтена»; **никакой**.
+
+**4. И — самое важное для спора со статьёй: Бог не делает им никакой несправедливости.**
+> «*Et si pourquoy Dieu a reprouué les autres, vous n'en rencontrerés aucune que **sa iuste seuerité, qui les a voulu
+> laisser, sans leur faire aucun tort, en leur naturelle corruption***» (с. 224).
+
+**Перевод:** «А если [спросите] почему Бог отверг других, вы не найдёте [причины] никакой, кроме **Его праведной строгости,
+которая пожелала оставить их, не причинив им никакой несправедливости, в их природном повреждении**».
+
+**Почему это опровергает довод статьи — изнутри Амиро.** Весь довод статьи от справедливости («несправедливо
+приобрести и не дать») **предполагает**, что оставление было бы **неправдой**. Амиро пишет прямо противоположное:
+оставление — «**sans leur faire aucun tort**», **без всякой неправды**. ⇒
+
+> **Если оставление не есть неправда, то довод «уплачено, но не зачтено — несправедливо» не имеет основания в
+> источнике. Статья вводит несправедливость, которой у Амиро нет.**
+
+Это сильнее всех предыдущих возражений, потому что **не требует** спорить ни с одной цитатой статьи: он берёт
+**её собственный довод** и показывает, что **источник его отвергает**.
+
+**5. И ещё: всеобщность обетований не противоречит отвержению — при одном условии.**
+> «*Combien que les promesses du salut soyent vniuerselles, toutesfois elles ne contrarient nullement à la Predestination
+> des reprouués, **moyennant qu'en nous regardions l'accomplissement d'icelles**. Nous sçauons que les promesses de Dieu
+> nous sont vtiles quand nous les receuons par foy : au contraire, quand la foy est aneantie, qu'elles sont abolies*»
+> (сс. 222–223).
+
+**Перевод:** «Хотя обетования спасения всеобщи, они нисколько не противоречат предопределению отверженных, **если мы
+рассматриваем их исполнение**. Мы знаем, что обетования Божии полезны нам, когда мы принимаем их верой; напротив, когда
+веры нет, они упраздняются».
+
+⇒ Амиро снимает видимое противоречие **не** всеобщим приобретением, а **различением обетования и его исполнения**.
+Это ровно тот ход, который статья называет «недостаточным».
+
+**6. И о цели всеобщего языка Писания — почти дословно Кальвин (§4.124).**
+> «*Mais pourquoy nomme l'Escriture tous les hommes? C'est afin que **les bonnes consciences reposent plus seurement**,
+> voyant qu'il n'y a nulle difference entre les pécheurs moyennant qu'on ait foy. Et d'autre part que **les iniques
+> n'alleguent point qu'ils n'ont nul refuge** pour se retirer de leur misère, veu qu'ils le reiettent par ingratitude*»
+> (с. 223).
+
+⇒ «**Чтобы у нечестивых не было предлога**» — это Кальвиново «*to cut off every excuse from unbelievers*» (§4.124),
+пересказанное Амиро. **Тот же довод, тот же вывод.**
+
+**7. И о действенности благодати — без всякой двусмысленности.**
+> «*la puissance de Dieu estant infinie, & sa volonté de créer la foy en quelques vns d'entre les hommes, determinement
+> absolue, quelle que soit la nature de l'esprit & de la volonté de l'homme, il faut necessairement que celuy en qui Dieu
+> agit de cette façon là, croye*» (сс. 224–225).
+
+⇒ Действенность **абсолютна и необходима**; это не «моральное убеждение» (ср. запрет §4.129 п. 5).
+
+**8. Свод: чем «Eschantillon» кончается.**
+
+| Вопрос | Ответ Амиро в финале | Где |
+|---|---|---|
+| Что делает благодать с необращёнными? | **только приглашает внешне** — «*se contente d'inuiter*» | с. 222 |
+| Получают ли они пользу? | **«*nulle vtilité*»** | с. 223 |
+| Есть ли им неправда? | **нет**: «*sans leur faire aucun tort*» | с. 224 |
+| В чём всеобщность? | в **открытости** милости и **обетованиях** | с. 223 |
+| Как снимается противоречие? | **исполнение** обетований, не всеобщее приобретение | с. 222 |
+| Зачем Писание говорит «все»? | чтобы **отсечь предлог** у нечестивых | с. 223 |
+
+**9. Формула для серии.**
+> **Довод статьи («несправедливо уплатить и не зачесть») опровергается не нами, а Амиро: у него оставление —
+> «не причинив никакой несправедливости». Статья вводит несправедливость, которой в источнике нет, — и на ней строит
+> всё разделение.**
+
+**10. Оговорки.** A2/OCR; `EDITION_HOLD`; чанок 44 = сс. 222–228; «FIN» на с. 228. Прочитано **36 из 74** (~49 %).
+Цитата «*Sainct Augustin… Caluin*» — пересказ Амиро, не цитата Кальвина. **Не утверждать**, что Амиро «отрицал
+всеобщую благодать»: он её утверждает (с. 222–223) — но как **приглашение**, а не как приобретение.
+
+### 4.134. Q130 — Что такое «Replique à Monsieur de L. M.»: определение предмета и снятие пункта (раунд 60)
+
+**0. Зачем этот раздел.** В плане остатка пункт значился как «„Response à M. de L. M.“, чанки 42–55». Проверка
+показала **две вещи**, обе важные: (1) **название неточно**; (2) **предмет другой**. Пункт закрывается **не чтением
+целиком**, а **установлением границ** — и это надо записать, чтобы он не всплывал снова.
+
+**1. Название.** После «FIN» (с. 228) идёт титул: «**REPLIQVE A MONSIEVR DE L. M. Sur son offre d'vne Conference
+amiable pour l'examen de ses Moyens de réunion**» (с. 229); текст начинается на с. 230. ⇒ В корпусе следует называть
+это **«Replique à Monsieur de L. M.»**, а не «Response».
+
+**2. Предмет — и он не об искуплении.** Из первых страниц (сс. 230–233, чанок 45):
+- адресат — автор книги «**Le MOYEN DE LA PAIX CHRESTIENNE**», то есть **проекта воссоединения** (католик-иренчик);
+- Амиро говорит о своём **«Eschantillon»** уже как о написанном и о **«première partie»** другого труда, которая
+  «выйдет раньше» (с. 230);
+- содержание спора — **оправдание, заслуга дел, способ действия благодати в обращении**: «*l'examen de vostre
+  Esclaircissement fur la doctrine de la Iustification, & du merite des oeuvres*» (с. 229–230);
+- далее (сс. 232–233) — о том, что все люди по природе равно злы, и о согласии по вопросу о благодати.
+
+⇒ **Это текст об оправдании и о соединении с католиками, а не об объёме искупления.** Для вопроса серии он даёт
+**фон** (учение о благодати, о равенстве всех по природе), но **не источник по atonement/redemption**.
+
+**3. Решение.** Пункт «Response/Replique» **закрывается как `SCOPED_OUT`** — с обоснованием, а не как «не успели».
+Если когда-нибудь понадобится материал о **заслуге и оправдании** (для соседней серии), текст остаётся доступным:
+чанки 45–55, сс. 230 и далее.
+
+**4. Что при этом уже получено из чанка 45 и стоит сохранить.**
+> «*ie croy que tous les hommes font de leur nature également meschans*» (с. 233).
+
+⇒ То же равенство по природе, что и в §4.129 («*fait égal tout le genre humain*», с. 201). Устойчивая мысль Амиро:
+**различие не в природе, а в благодати**.
+
+**5. Оговорки.** A2/OCR; чанки 44–45; **прочитано 36 из 74** (~49 %); остальные чанки «Replique» **не читались** и,
+по установленному предмету, **для вопроса не нужны**. Это **не** `EVIDENCE_HOLD`: предмет установлен, а не пропущен.
+
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -7934,6 +8074,9 @@ conuienne*» — «дать выражениям разумно сообразн
 | 1658 *(раунд 59, часть 6; «Eschantillon», сс. 212–217; чанок 42)* | **ВСЕОБЩЕЕ У АМИРО — БЕЗ ДЕКРЕТА.** «*Iesus-Christ est **Rédempteur de tout le monde***» (с. 213) — **его слова**; но: «*Ie ne nie pas qu'elle ne soit à tous salut **en sa nature**. Mais voicy la question… **Si Dieu en son conseil éternel a ordonné à tous indifféremment salut… d'vn décret absolu***» (сс. 213–214). И: «*le mot de Predestination… emporte quelque chose **d'absolu & de déterminé***… **il ne peut proprement conuenir à ce qui est purement conditionel***» (с. 216); «*icy **nul n'est exclus pourueu qu'il croye***»; «*la condition de tous est égale*» (там же). Плюс: «*Dieu **tend la main** indifféremment à tous: mais il ne **prend par la main**… sinon ceux qu'il a esleus*» (с. 214); «*il n'y paroist plus que **l'authorité du commandement**, dont le mespris attire malédiction*» (с. 215); «*il fait office de **Legislateur**… **Père seulement envers ses esleus***» (сс. 214–215). ⇒ **симметрия:** статья с Амиро делает то же, что Амиро с Кальвином — берёт слова, опускает оговорку, только **на той же странице** (§4.131). |
 
 | 1658 *(раунд 59, часть 7; «Eschantillon», сс. 217–221; чанок 43)* | **ФОРМУЛА САМОГО АМИРО.** «*la premiere & principale controverse de Caluin auec ses aduersaires en reuient là… de leur vouloir donner son Fils **pour racheter vniuersellement tous ceux qui se conuertiroient à luy d'vne serieuse repentance, & croiroient en ce Rédempteur***» (с. 221) ⇒ объект «универсального искупления» — **«все, кто обратится и уверует»**; объём = избранные, различие с Дортом — **в описании, не в объёме**. Плюс признание метода: «*si ce grand personnage se sert souuent de cette maniere de parler… **il la faut interpréter***» (с. 219). Плюс Кальвин на Рим. 9:11 в передаче Амиро: «*Quant à l'exterieur ils sont appellés à l'alliance de Dieu **indifféremment**, mais… ils n'en entrent pas tous indifféremment en **réelle iouyssance***» (сс. 219–220); и «*bien qu'il leur ait **offert** le salut, il les a voulu iustement **laisser** en leur aueuglement*» (с. 220). Отвержение — «*non donner pas cela sans quoy il est absolument impossible d'auoir le salut*» (сс. 217–218) ⇒ **не-даяние, не декрет зла** (§4.132). |
+
+| 1658 *(раунд 60; «Eschantillon», финал, сс. 222–228; чанок 44)* | **СВОД САМОГО АМИРО.** «*la **pure efficace de la grace, qui conuertit les vns interieurement, & se contente d'inuiter exterieurement les autres***» (с. 222); «*sa misericorde est **exposée à tous ceux qui la chercheront**. Or **nul ne la cherche sinon ceux qu'il a illuminez***» (с. 223); «*les seconds **n'en reçoiuent nulle vtilité***» (сс. 223–224); «*sa iuste seuerité, qui les a voulu laisser, **sans leur faire aucun tort***, en leur naturelle corruption*» (с. 224); «*les promesses… vniuerselles… ne contrarient nullement à la Predestination… **moyennant qu'en nous regardions l'accomplissement***» (сс. 222–223); «*afin que **les iniques n'alleguent point** qu'ils n'ont nul refuge*» (с. 223). ⇒ **довод статьи от несправедливости опровергается самим Амиро**: оставление — «без всякой неправды» (§4.133). «FIN» — с. 228. |
+| 1658 *(раунд 60; «Replique à Monsieur de L. M.», сс. 229–233; чанки 44–45)* | **ПРЕДМЕТ УСТАНОВЛЕН — НЕ ОБ ИСКУПЛЕНИИ.** Титул: «*REPLIQVE A MONSIEVR DE L. M. Sur son offre d'vne Conference amiable pour l'examen de ses **Moyens de réunion***» (с. 229); спор — «*la doctrine de la **Iustification**, & du **merite des oeuvres***» (сс. 229–230). ⇒ пункт закрыт как `SCOPED_OUT`, не как `EVIDENCE_HOLD`. Побочно: «*tous les hommes font de leur nature **également meschans***» (с. 233) (§4.134). |
 
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
@@ -8575,6 +8718,17 @@ conuienne*» — «дать выражениям разумно сообразн
   Рим. 9:11 в передаче Амиро: «*appellés… indifféremment… n'entrent pas tous… en réelle iouyssance*» (сс. 219–220);
   «*bien qu'il leur ait **offert** le salut, il les a voulu iustement **laisser** en leur aueuglement*» (с. 220).
   Отвержение — **не-даяние** (сс. 217–218). **35/74 (~47 %).**
+
+- **Раунд 60, часть 1: «Eschantillon» дочитан до «FIN» (с. 228).** Финал даёт **свод самого Амиро**: благодать
+  «*conuertit les vns interieurement, & **se contente d'inuiter exterieurement** les autres*» (с. 222); милость
+  «*exposée à tous ceux qui la chercheront*», но «*nul ne la cherche sinon ceux qu'il a illuminez*» (с. 223); вторые
+  «*n'en reçoiuent **nulle vtilité***» (сс. 223–224); оставление — «***sans leur faire aucun tort***» (с. 224);
+  всеобщность обетований снимается «*l'accomplissement d'icelles*» (сс. 222–223); «все» — чтобы «*les iniques
+  n'alleguent point qu'ils n'ont nul refuge*» (с. 223). ⇒ **довод статьи от несправедливости опровергнут изнутри
+  Амиро.** **П. 241 — закрыт.**
+
+- **Раунд 60, часть 1: «Replique à Monsieur de L. M.» — предмет установлен, пункт снят.** Титул с. 229; спор об
+  **оправдании и заслуге дел**, не об искуплении ⇒ `SCOPED_OUT` (не `EVIDENCE_HOLD`). **Прочитано 36/74 (~49 %).**
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**

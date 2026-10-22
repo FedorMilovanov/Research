@@ -917,6 +917,16 @@
       (сс. 219–220); «*bien qu'il leur ait **offert** le salut, il les a voulu iustement **laisser** en leur
       aueuglement*» (с. 220). Отвержение — «*non donner pas cela sans quoy il est absolument impossible d'auoir le
       salut*» (сс. 217–218) ⇒ **не-даяние, не декрет зла**. **35/74 (~47 %).**
+    - 42dr. *Дополнение 2026-10-19 (раунд 60, часть 1; `34_` §§4.133–4.134, **S156**, «Eschantillon», финал,
+      сс. 222–228, чанок 44; `01_` §18; `06_` §27; `synthesis/03_` §42; класс **A2**, OCR; `EDITION_HOLD`):*
+      **СВОД САМОГО АМИРО + ОПРОВЕРЖЕНИЕ ДОВОДА СТАТЬИ ИЗНУТРИ.** «*la **pure efficace de la grace, qui conuertit les
+      vns interieurement, & se contente d'inuiter exterieurement les autres***» (с. 222); «*sa misericorde est **exposée
+      à tous ceux qui la chercheront**. Or **nul ne la cherche sinon ceux qu'il a illuminez***» (с. 223); «*les seconds
+      **n'en reçoiuent nulle vtilité***» (сс. 223–224); «*sa iuste seuerité, qui les a voulu laisser, **sans leur faire
+      aucun tort***» (с. 224); «*les promesses… vniuerselles… ne contrarient… **moyennant qu'en nous regardions
+      l'accomplissement***» (сс. 222–223); «*afin que **les iniques n'alleguent point***» (с. 223). ⇒ **довод статьи от
+      несправедливости не имеет основания в источнике.** «FIN» — с. 228. Плюс: «Replique à Monsieur de L. M.»
+      (с. 229) — об **оправдании и заслуге**, не об искуплении ⇒ `SCOPED_OUT` (§4.134). **36/74 (~49 %).**
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
