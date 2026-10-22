@@ -422,6 +422,21 @@
   подтверждение узости спора (после §22 и §24). **(ж) `PUBLICATION_HOLD`, `RIGHTS_HOLD`, `ATTRIBUTION_HOLD`
   (S155), C-16 — без изменений; «снято молча: 0».**
 
+- **Дополнение раунда 54 (2026-10-19; `34_` §4.110, **S156**; `03_` §26; `synthesis/03_` §27).**
+  **(а) Прочитан чанок 22 (сс. 111–116)** — глава XI; всего 12 из 74 (~16 %); `EDITION_HOLD` в силе.
+  **(б) Условие веры исполняет Бог:** заголовок гл. XI — «*Du moyen par lequel Dieu accomplit cette condition de
+  la Foy en ses Esleus*». **(в) Всеобщее определение — среди условных**, и «*la certitude de l'exécution de la
+  condition, telle aussi est la certitude de l'événement*» ⇒ при падшем человеке **ноль** без второго определения.
+  **(г) Предведение следует за определением** — «*pource qu'il a resolu de leur donner de croire*».
+  **(д) Его собственное утверждение, что всеобщее предложение само по себе никого не спасает:** «*si Dieu
+  s'estoit contenté de proposer la grâce… extérieurement seulement… **il seroit aisé de deviner qu'elle seroit
+  universellement reiettée***» — подтверждение §4.108 п. 6 **из его уст**. **(е) Практический силлогизм** у
+  сомюрского автора (1658): Писание → самоиспытание → заключение; ⇒ **нельзя** утверждать, что гипотетический
+  универсализм ведёт к сомнению в спасении; **нельзя** выдавать практический силлогизм за чуждый Сомюру.
+  **(ж) Обе схемы сходятся в пастырском применении:** испытывать себя, а не вычислять имена; граница — «*nous ne
+  sçachons pas en particulier qui… est esleu*». **(з) `PUBLICATION_HOLD`, `RIGHTS_HOLD`, `ATTRIBUTION_HOLD`
+  (S155), C-16 — без изменений; «снято молча: 0».**
+
 ## Итоговая сводка
 
 

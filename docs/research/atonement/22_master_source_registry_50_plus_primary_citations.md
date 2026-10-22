@@ -633,6 +633,23 @@
       «***justice**, voire de justice exacte à merveilles*». **(6) Итог:** по всем четырём вопросам (причина
       греха, не-даяние веры, ожесточение, причина погибели) **расхождения с Дортом нет** — третье подтверждение
       узости спора. `EDITION_HOLD`; 11 чанков из 74 (~15 %).
+    - 42cx. *Дополнение 2026-10-19 (раунд 54; `34_` §4.110, **S156**; `03_` §26; `synthesis/03_` §27):
+      **Амиро, глава XI (чанок 22, сс. 111–116) — исполнение условия веры, достоверность избрания, практический
+      силлогизм.** **(1) Заголовок:** «*Du moyen par lequel Dieu accomplit cette condition de la Foy en ses Esleus,
+      & rend sa Predestination d'un evenement certain & infaillible, & de la connoissance qu'on en peut avoir*».
+      **(2) Три рода определений:** условные (Адам, Ханаан, «*sauver tous les hommes… si par incrédulité ils ne
+      s'en monstrent point indignes*») и «*conseils **absolus***» («*sans avoir égard à condition quelconque*»);
+      «*telle est… la certitude de l'exécution de la condition, telle aussi est la certitude de l'événement*».
+      **(3) Предведение следует:** «*Dieu prévoit… qui seront sauvez, **pource qu'il a resolu de leur donner de
+      croire***», и «*pource qu'il a ordonné de **n'agir pas** de mesmes en eux*» (привативность). **(4) Второй образ
+      солнца:** «*si Dieu s'estoit contenté de proposer la grâce salutaire extérieurement seulement… **il seroit aisé
+      de deviner qu'elle seroit universellement reiettée***»; «*le Soleil ne fera point reconnu en un pays où
+      généralement tout le monde est aveuglé*». **(5) Практический силлогизм:** «*chacun fidelle sçait qu'il a esté
+      esleu… **parce qu'il la sent en soy mesme***… *comparer les sentimens de son ame avec la description de la foy
+      & de ses effets dàs les esleus, qui se trouue en l'Escriture saincte*». **(6) Граница:** «*nous ne sçachons pas
+      en particulier qui d'entre les hommes est esleu*». **Вывод:** сомюрская схема **не оставляет верующего в
+      неизвестности**; утверждать обратное **нельзя**; обе схемы сходятся в пастырском применении. `EDITION_HOLD`;
+      12 чанков из 74 (~16 %). П. 211 — титул «Eschantillon» не встречен.
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
