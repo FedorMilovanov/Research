@@ -620,6 +620,19 @@
       найдены, буквального «égale et universelle» нет; отсутствие **не утверждается**. **`LOCATOR_PARTIAL`
       уточнён:** чанок 19 (сс. 56–60) — **вставка иной пагинации**; чанок 20 вернулся к 101–105. `EDITION_HOLD`;
       10 чанков из 74 (~13,5 %).
+    - 42cw. *Дополнение 2026-10-19 (раунд 53, продолжение; `34_` §4.109, **S156**; `03_` §25;
+      `synthesis/03_` §26):* **Амиро, гл. X, сс. 105–110 — Бог не причина неверия.** **(1) Главная формула:**
+      «*S'il ne leur donne pas d'y croire, ce n'est pas à dire pour cela qu'il leur **donne de n'y croire** pas*…
+      *il ne s'ensuit pas qu'il y engendre le contraire*» — **классическое различение**, принадлежащее здесь
+      сомюрской стороне. **(2) Образ солнца:** «*C'est bien le **Soleil** qui illumine la terre: mais ce n'est pas
+      luy qui la rend tenebreuse. **Elle a cela de sa naturelle opacité***». **(3) Ожесточение привативно:** «*non
+      pource qu'il **adiouste** de soy quelque chose à leur meschanceté, mais pour ce qu'il **ne l'oste pas***»;
+      ср. британское «*ut cordis duritia primitus auferatur*» (S154). **(4) Предание страстям:** Рим. 1:24
+      («*livre les hommes à leurs propres passions*»), «*lafche la bride à Satan*». **(5) Причина погибели —**
+      собственный грех: «*à qui imputera l'homme sa condamnation qu'à son **péché propre**?*»; наказание —
+      «***justice**, voire de justice exacte à merveilles*». **(6) Итог:** по всем четырём вопросам (причина
+      греха, не-даяние веры, ожесточение, причина погибели) **расхождения с Дортом нет** — третье подтверждение
+      узости спора. `EDITION_HOLD`; 11 чанков из 74 (~15 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
