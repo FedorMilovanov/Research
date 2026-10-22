@@ -25,6 +25,7 @@
 14. [`13_DORT_II_CALVIN_OWEN_EXTENT.md`](13_DORT_II_CALVIN_OWEN_EXTENT.md) — Дорт II, Кальвин, Оуэн как historical control.
 15. [`14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md) — Оуэн Book IV: world / all / купленные гибнущие.
 16. [`15_CALVIN_III24_AND_DORT_II_LOCATORS.md`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md) — Inst. III.24.15–17; Дорт II.1–9 + Rejection I–VII.
+17. [`ot/00_OT_AUTHORITY_2026-10-08.md`](ot/00_OT_AUTHORITY_2026-10-08.md) — ветхозаветный слой под-корпуса (агент 1): authority, SSOT `ot/data/`, карточки 01–04 (כפר; גאל / פדה; אשם / חטאת; דם).
 
 17. [`nt/`](nt/) — **под-корпус НЗ-экзегезы** со своей нумерацией `00_`–`13_`: авторитет и **десять** текстовых свидетелей, шесть лексических полей с подсчитанными употреблениями, 94 карточки (81 перикоп + 9 оси предложения + 4 служебных раздела), трёхколонник с HOLD-метками, сверка MT↔LXX (`11_`), критический аппарат и колляции по рукописям (`12_`), исторический контроль Дорта (`13_`). Восемь инструментов самопроверки в `nt/tools/`, единый вход — `run_all_checks.sh`. Точка входа — [`nt/00_NT_AUTHORITY_2026-10-07.md`](nt/00_NT_AUTHORITY_2026-10-07.md).
 
