@@ -1220,11 +1220,11 @@
       "path": "docs/research/atonement",
       "role": "полемическое и терминологическое досье по той же доктрине (разбор статьи А. Прокопенко, TMS, Бакстер/Оуэн, лапсарианство)",
       "ownerBranch": "arena/771fdde7-research",
-      "state": "активный лан: раунд 30 (part 2) на 2026-10-18T08:43Z (tip ee0c735), 37 файлов в docs/research/atonement, 80 коммитов по директории; PR и CI-прогонов нет",
+      "state": "смёрджен в main: #217, merge-коммит eecb25d, 2026-10-22T09:28:31Z (раунд 63; tip ветки до мержа — ee0c735, раунд 30). 30 файлов, +18 369 / −7, удалений 0",
       "registeredIn": "ИСКУПЛЕНИЕ/00_README_AND_NAVIGATION.md",
       "boundary": "не переносить в `ИСКУПЛЕНИЕ/` без решения владельца. Ветка без общего предка с main: squash/rebase сносит `ИСКУПЛЕНИЕ/ot/` (30 файлов, 7 880 строк в них); merge-commit сохраняет ot/, но даёт 17 add/add-конфликтов (5 корпусных), с уже смерженным #216 — 21 (8 корпусных). Ряд съёмок и процедура: реконсилияция 17, §10c",
       "recheckCommand": "git rev-list --count origin/arena/771fdde7-research -- docs/research/atonement",
-      "stateNote": "поле state — датированный снимок, не живой счётчик: четыре съёмки за сутки (68 → 76 → 80 коммитов; раунды 23 → 27 → 29), «+» дорос 2 205 → 2 396 → 2 494 → 2 648, при этом 30 удалений / 7 880 строк / 16 и 20 конфликтов не изменились ни разу. Переснимать recheckCommand; числа мерж-сценариев — mergePreflight20261016.how",
+      "stateNote": "предполётные ряды более не актуальны как предупреждение и актуальны как история; следствия для корпуса: леджер расхождений вырос до C-24, 00_CURRENT_AUTHORITY отставал со счётчиком C-01…C-15 (обновлён в моём PR по требованию гейта), synthesis/00_SYNTHESIS_AUTHORITY в main тот же счётчик по-прежнему недокручен — на решение владельца",
       "mergePreflight20261016": {
         "mergeBase": "absent (refusing to merge unrelated histories)",
         "squashOrRebase": {
@@ -1351,14 +1351,25 @@
           "main+them": "см. recheckCommand (git merge-tree --write-tree --allow-unrelated-histories origin/main <их tip>)",
           "pr+them": "то же, первым аргументом HEAD ветки arena/dc7e8cb5-research"
         },
-        "driftNote": "числа этого блока имеют срок годности в ЧАСАХ: 18.10 за время одного моего хода их tip сдвинулся дважды (822c2af → ee0c735), и конфликтующих путей стало 16/20 → 17/21. Неизменно держится только каркас (30 удалений ot/, 7 880 строк, add/add, строка 905, C-16 vs C-15). Поэтому перед мержем смержить #216, а их ветку переснять командами how/recheckCommand, а не брать числа отсюда"
+        "driftNote": "числа этого блока имеют срок годности в ЧАСАХ: 18.10 за время одного моего хода их tip сдвинулся дважды (822c2af → ee0c735), и конфликтующих путей стало 16/20 → 17/21. Неизменно держится только каркас (30 удалений ot/, 7 880 строк, add/add, строка 905, C-16 vs C-15). Поэтому перед мержем смержить #216, а их ветку переснять командами how/recheckCommand, а не брать числа отсюда",
+        "outcome": {
+          "at": "2026-10-22T10:07Z",
+          "pr": 217,
+          "mergeCommit": "eecb25d",
+          "mergedAtGit": "2026-10-22T09:28:31Z",
+          "diff": "30 файлов, +18 369 / −7, удалений 0 (git diff --name-status 6cac62e..eecb25d = 4 A + 26 M)",
+          "otPreserved": "ИСКУПЛЕНИЕ/ot/ = 30 файлов и 7 880 строк в main и до, и после мержа",
+          "verdict": "лан вошёл через merge-commit — именно ту дверь, которую называл предполёт; реестр main не тронут (blob 8654c98e, 23 ключа, JSON валиден)",
+          "thenForMyPr": "сразу после мержа дерево-против-дерева main↔моя ветка давало 36 файлов и −18 370 строк (снятие досье 34_ на 10 206, откат леджера 802→125, исчезновение synthesis/06); причина — add/add из несвязанной истории, лечится мержем main в мою ветку по правилу «оба берега», что и сделано в 81b725b (8 файлов / +1 466 / −4, удалений 0)",
+          "numbersNowHistorical": "все ряды выше (45/45/47/47/48 файлов, 2205…2797, 14/14/16/16/17 конфликтов) оставлены как история съёмок: переснимать их больше не нужно, объект предполёта закрыт"
+        }
       },
       "myPr216MergeReadiness": {
-        "mainIsAncestorOfMyTip": true,
-        "proofCommand": "git merge-base --is-ancestor origin/main HEAD (exit 0 при origin/main 6cac62e, перепроверено 2026-10-18T08:43Z на tip ed66b50)",
-        "consequence": "дерево squash-мержа побайтово равно дереву head PR ⇒ зелёный CI на head (validate + atonement-corpus-integrity) есть проверка main после мержа; отдельная репетиция не требуется, пока origin/main остаётся 6cac62e",
-        "ifMainMoves": "утверждение снимается: переснять merge-tree против нового main и прогнать гейты по дереву мержа",
-        "measuredAt": "2026-10-18T08:43Z"
+        "proofCommand": "git merge-base --is-ancestor origin/main HEAD (exit 0 на 81b725b при origin/main eecb25d, замер 2026-10-22T10:07Z)",
+        "consequence": "после мержа main в мою ветку (81b725b) условие побайтового равенства восстановлено: дерево squash-мержа #216 равно дереву head PR, значит зелёный CI на head есть проверка main после мержа",
+        "ifMainMoves": "самоликвидирующееся предусловие уже срабатывало один раз (мерж #217) и было исполнено этим мержем; при следующем сдвиге main — та же процедура: merge -s ours + содержимое main, three-way для общих файлов, перепроверка гейтами",
+        "measuredAfterMerge": "Atonement corpus integrity pass 7 s + validate pass 29 s на 81b725b; локально те же три валидатора PASS на мерженном дереве",
+        "shallowCloneCaveat": "клон песочницы shallow (git rev-parse --is-shallow-repository = true, .git/shallow) ⇒ git не находит merge-base и объявляет «unrelated histories»: обычный merge запрещён, используется -s ours с ручной расстановкой содержимого"
       }
     }
   ],
@@ -1596,6 +1607,16 @@
         },
         "outcome": "совпало с записанной партицией полностью; состав имён идентичен, next_page_token=null, incomplete_search=false",
         "note": "фильтр по AUTHORITY = 9, а не 7: в него попадают 00 SYNTHESIS AUTHORITY и redemption-corpus-authority json"
+      },
+      "recheck20261022": {
+        "at": "2026-10-22T10:08Z",
+        "method": "list_files 99 без фильтра + name contains 'RIGHTS LEDGER' (тот же коннектор, page_size 1000)",
+        "results": {
+          "total": 65,
+          "07 права ли́дера": 10
+        },
+        "outcome": "тот же набор id, что 18.10 (включая 10 id ли́дера); партиция 65 = 54 live + 10 wave0 + 1 drive-only стоит четвёртые сутки",
+        "meaning": "числа §7 не требуют правки до мержа; пересъёмка дешёвая (2 запроса) — делать её перед любой переза́ливкой зеркал"
       }
     },
     "notInDrive": [
@@ -1655,12 +1676,17 @@
       }
     ],
     "mirrorLag": {
-      "registryGitBytes": 78830,
+      "registryGitBytes": 70948,
       "registryDriveMirrorBytes": 53098,
-      "ledgerGitBytes": 38208,
+      "ledgerGitBytes": 34382,
       "ledgerDriveMirrorBytes": 22691,
       "mirrorModifiedTime": "2026-10-09T00:09Z",
-      "whoFixes": "владелец (перезаливка Docs-зеркал вне периметра этой сессии)"
+      "whoFixes": "владелец (перезаливка Docs-зеркал вне периметра этой сессии)",
+      "registryTipBytes": 102361,
+      "ledgerTipBytes": 53485,
+      "measuredAt": "2026-10-22T10:07Z",
+      "which": "gitBytes — размеры в main (именно их зеркало и должно догонять); tipBytes — что станет после мержа #216",
+      "reloadAdvice": "перезаливать Docs-зеркала после мержа #216: иначе зеркало устаревает в тот же прогон"
     },
     "publicationStateUnchanged": true
   }
