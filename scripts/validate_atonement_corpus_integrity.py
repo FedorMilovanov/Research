@@ -687,7 +687,7 @@ if REG.is_file():
         if _ismeas:
             errors.append(
                 f"корпус{_pth} = значение-дата без часов при имени, обозначающем съёмку: точность дня здесь не "
-                "определение, а незамеренное время — переснимите git'ом (например: git log -1 --format=%cI) "
+                "определение, а незамеренное время — переснимите git'ом канонической командой: TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd (не %cI: он выдаёт локальное смещение и уже ломал сверку на +03:00) "
                 "или назовите поле днём по определению и объявите в integrityGate.dayGranularity"
             )
         elif _pth not in _declared_paths:
@@ -935,6 +935,186 @@ if _jrec:
         notes.append(
             f"jsonLeafScan.foreignOccurrences записано {_jrec.get('foreignOccurrences')!r}, обход видит {len(_sub_json_hits)} "
             f"({sorted({p for p, _w in _sub_json_hits})[:3]}) — чужой периметр считается, но не блокирует прогон"
+        )
+
+
+# ------------------------------ git-ссылки реестра: правило 20 (23.10.2026) --
+# Число, за которым стоит команда вида «git show <sha>:…», живо ровно столько,
+# сколько жив объект. Squash-мерж и удаление ветки убивают объект, но не убивают
+# запись: мёртвая ссылка переживает себя как обещание, которое никто не проверил.
+# Сегодня я насчитала «99 мёртвых sha» на shallow-клоне, где не читались и живые:
+# поэтому класс различий — не «объект пропал», а «объект недостижим ИЗ ЭТОЙ СРЕДЫ»,
+# и в неподходящей среде проверка обязана молчать осознанно, а не выдавать ноль.
+SHA_TOKEN = re.compile(r"\b[0-9a-f]{7,40}\b")
+_MARK = "verifiability20261023"
+
+
+def _sha_tokens(obj):
+    """sha-подобные токены в СТРОКОВЫХ ЗНАЧЕНИЯХ дерева (ключи не считаем: recordCommit
+    заведомо ключён мёртвыми sha, и это его назначение)."""
+    out = {}
+
+    def walk(o, p):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                walk(v, p + "." + str(k))
+        elif isinstance(o, list):
+            for i, v in enumerate(o):
+                walk(v, "%s[%d]" % (p, i))
+        elif isinstance(o, str):
+            for m in SHA_TOKEN.findall(o):
+                if len(m) not in (7, 8, 40) or re.fullmatch(r"[0-9]+", m):
+                    continue
+                out.setdefault(m, []).append(p)
+
+    walk(obj, "")
+    return out
+
+
+def _unreachable(tokens):
+    """set токенов, НЕдостижимых из main; None = среда не годна (shallow или нет origin/main).
+
+    Определение обязано быть относительным, а не «объект есть в этом клоне»: в моём клоне
+    16 токенов не разрешились из-за амбигуити (лишние объекты удалённых веток дали общий
+    префикс), зато разрешились 16 таких, которых в main нет вовсе. На чистом клоне CI те же
+    числа дали byBlock 52 против моих 68 — то есть проверка меряла свойство клона. Достижимость
+    из origin/main совпадает в обоих клонах до символа (54 живых, расхождение пустое), поэтому
+    она и выбрана как канон."""
+    try:
+        import subprocess as _sp
+        if _sp.run(["git", "rev-parse", "--is-shallow-repository"], cwd=ROOT,
+                   capture_output=True, text=True).stdout.strip() == "true":
+            return None
+        base = _sp.run(["git", "rev-parse", "--verify", "-q", "origin/main"], cwd=ROOT,
+                       capture_output=True, text=True).stdout.strip()
+        if not base:  # например, прогон на detached-дереве без remote-tracking: не выдумываем результат
+            return None
+        objs = _sp.run(["git", "rev-list", "--objects", base], cwd=ROOT, capture_output=True, text=True).stdout
+    except Exception:  # noqa: BLE001 - нет git'а: не подменяем измерение нулём
+        return None
+    full = sorted({line.split(" ")[0] for line in objs.split("\n") if line})
+    import bisect
+
+    def reachable(tok):
+        k = bisect.bisect_left(full, tok)
+        return k < len(full) and full[k].startswith(tok)
+
+    return {t for t in tokens if not reachable(t)}
+
+
+_audit = ((reg.get("integrityGate") or {}).get("shaCitationAudit20261023") or {})
+_own_tokens = _sha_tokens(reg)
+_own_dead = _unreachable(_own_tokens)
+if _own_dead is None:
+    notes.append(
+        "правило 20: среда shallow или git недоступен — аудит sha-ссылок не исполняется. "
+        "Это не «ссылок нет»: на таком клоне я сегодня прочитала 99 мёртвых вместо 46 настоящих"
+    )
+else:
+    # (1) каждая мёртвая ссылка обязана иметь живой пересъём через запись, и запись обязана её содержать
+    _rec = _audit.get("recordCommit") or {}
+    _noRec, _badRec = [], []
+    for tok in sorted(_own_dead):
+        rc = _rec.get(tok)
+        if not rc:
+            _noRec.append(tok)
+            continue
+        try:
+            import subprocess as _sp
+            blob = _sp.run(["git", "show", "%s:%s" % (rc, REG.relative_to(ROOT))], cwd=ROOT,
+                           capture_output=True, text=True)
+            if blob.returncode != 0 or tok not in blob.stdout:
+                _badRec.append(tok)
+        except Exception:  # noqa: BLE001
+            _badRec.append(tok)
+    if _noRec:
+        errors.append(
+            f"правило 20: {len(_noRec)} sha-ссылок реестра ведут на недостижимый объект и не имеют "
+            f"пересъёма через запись ({_noRec[:4]}…) — «значение по git show» без живого git show это вера"
+        )
+    if _badRec:
+        errors.append(
+            f"правило 20: {len(_badRec)} записей recordCommit не содержат свой токен ({_badRec[:3]}…) — "
+            "команда пересъёма записана, но не исполнена: проверять надо вывод, а наличие строки в реестре"
+        )
+    # (2) блок с мёртвой ссылкой обязан объявить историчность
+    _fields_dead = {}
+    for tok in _own_dead:
+        for p in _own_tokens[tok]:
+            _fields_dead[p.lstrip(".").split(".")[0].split("[")[0]] = _fields_dead.get(
+                p.lstrip(".").split(".")[0].split("[")[0], 0) + 1
+    _untagged = []
+    for top in _fields_dead:
+        blk = reg.get(top)
+        marked = isinstance(blk, dict) and _MARK in blk
+        if isinstance(blk, list) and not marked:
+            marked = all(_MARK in x for x in blk if isinstance(x, dict) and _sha_tokens(x) and
+                         any(t in _own_dead for t in _sha_tokens(x))) and any(isinstance(x, dict) and _MARK in x for x in blk)
+        if not marked:
+            _untagged.append(top)
+    if _untagged:
+        errors.append(
+            f"правило 20: блоки с недостижимыми git-ссылками без поля {_MARK}: {sorted(_untagged)} — "
+            "историчность надо объявить словами, иначе число притворяется проверяемым"
+        )
+    # (3) форма поля: обещание «время коммита по команде» без статуса при мёртвом объекте
+    _prom = []
+
+    def _scan_promises(o, p):
+        if isinstance(o, dict):
+            dead_here = any(t in _own_dead for t in _sha_tokens(o))
+            for k, v in o.items():
+                if dead_here and re.search(r"TimeCommand$", str(k)) and not any(
+                        re.search(r"TimeStatus$|TimeUnverifiable$", str(k2)) for k2 in o):
+                    _prom.append(p + "." + str(k))
+                _scan_promises(v, p + "." + str(k))
+        elif isinstance(o, list):
+            for i, v in enumerate(o):
+                _scan_promises(v, "%s[%d]" % (p, i))
+
+    _scan_promises({k: v for k, v in reg.items() if k != "integrityGate"}, "")
+    if _prom:
+        errors.append(
+            f"правило 20: {len(_prom)} полей вида *TimeCommand ссылаются на мёртвый объект и не имеют "
+            f"*TimeStatus ({_prom[:2]}…) — команда, которая ничего не вернёт, обязана это сказать"
+        )
+    # (4) собственные числа аудита обязаны совпадать с обходом
+    if _audit:
+        _live_fields = sum(1 for tok in _own_dead for _ in _own_tokens[tok])
+        _want = {"uniqueShaTokens": len(_own_tokens), "reachableTokens": len(_own_tokens) - len(_own_dead),
+                 "unreachableTokens": len(_own_dead), "fieldsWithDeadLinks": _live_fields, "byBlock": _fields_dead}
+        _drift = {k: (_audit.get(k), v) for k, v in _want.items() if _audit.get(k) != v}
+        _bb_rec = _audit.get("byBlock") or {}
+        if sum(int(v) for v in _bb_rec.values()) != int(_audit.get("fieldsWithDeadLinks", -1)):
+            errors.append(
+                "shaCitationAudit20261023: раскладка byBlock даёт %d, а fieldsWithDeadLinks = %s — таблица, "
+                "которая не сходится с собственной суммой, не имеет права называться замером"
+                % (sum(int(v) for v in _bb_rec.values()), _audit.get("fieldsWithDeadLinks"))
+            )
+
+        if _drift:
+            errors.append(
+                "shaCitationAudit20261023 разошёлся с обходом: "
+                + ", ".join(f"{k}: записано {a!r}, видим {b!r}" for k, (a, b) in sorted(_drift.items()))
+                + " — аудит, который не сверяется с тем, что порождает заметки, это заметка про аудит"
+            )
+    # (5) чужие под-реестры: считать, но не блокировать (правило 17)
+    _foreign = {}
+    for _label, _path in _registries:
+        if _path == REG:
+            continue
+        try:
+            _fd = json.loads(read(_path))
+        except Exception:  # noqa: BLE001
+            continue
+        _ft = _sha_tokens(_fd)
+        _fd_dead = _unreachable(_ft)
+        if _fd_dead:
+            _foreign[_label] = len(_fd_dead)
+    if _foreign:
+        notes.append(
+            f"правило 20: в чужих под-реестрах недостижимых sha-ссылок по ланам {_foreign} — чужие прогоны "
+            "моими числами не блокируются; исправлять их вправе только владелец лана"
         )
 
 

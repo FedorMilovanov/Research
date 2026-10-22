@@ -1200,7 +1200,16 @@
         "synthesisLeader": "C-01…C-15, «15 зафиксированных расхождений» — машина не видела, проверка была привязана к одному файлу"
       }
     },
-    "ingestedIntoGitHow": "git log --reverse --format='%h %cI' -- ИСКУПЛЕНИЕ/synthesis | head -1 → 77ed57b 2026-10-08T14:41:21+00:00"
+    "ingestedIntoGitHow": "git log --reverse --date=format-local:%%Y-%%m-%%dT%%H:%%M:%%SZ --format=%%cd -- ИСКУПЛЕНИЕ/synthesis | head -1 → 77ed57b 2026-10-08T14:41:21+00:00",
+    "verifiability20261023": {
+      "status": "historical",
+      "what": "в блоке есть ссылки на git-объекты, недостижимые из main (squash-мерж + удаление ветки); ни одно из этих чисел нельзя переснять по объекту",
+      "howToReshoot": "пересъём идёт по записи, а не по объекту: git log --format=%H -S<sha> origin/main -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | tail -1, затем git show <коммит>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json, и проверить, что токен в blob'е есть",
+      "recordCommitMap": "integrityGate.shaCitationAudit20261023.recordCommit",
+      "measuredAt": "2026-10-22T23:03:22Z",
+      "method": "построено гейтом (правило 20) и повторено вручную командой выше",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
+    }
   },
   "owenGooldVolXPageMap": {
     "source": "IA worksofjohnowe185010owen_page_numbers.json (hOCR auto page-number detection, file-level confidence 100)",
@@ -1370,7 +1379,7 @@
           "их ветку пересоздать от main и разрешить 5 корпусных путей вручную, сохраняя и OT-строки навигации, и их запись C-16",
           "в data/atonement-corpus-v1.json оставить 26 ключей, включая integrityGate; после этого 00_CURRENT_AUTHORITY обязан содержать C-01…C-16"
         ],
-        "how": "git -c core.quotepath=off merge-tree --write-tree --allow-unrelated-histories --name-only <a> <b> | парсить только строки 'CONFLICT (тип): Merge conflict in <путь>';Paths, печатаемые git в octal-экранировке, считаются один раз (иначе цифры удваиваются). Времена снимать только TZ=UTC git log -1 --format=%cI (TZ контейнера менялся между ходами, и два «Z»-значения 16.10 оказались смещены на 3 часа — исправлено 18.10)",
+        "how": "git -c core.quotepath=off merge-tree --write-tree --allow-unrelated-histories --name-only <a> <b> | парсить только строки 'CONFLICT (тип): Merge conflict in <путь>';Paths, печатаемые git в octal-экранировке, считаются один раз (иначе цифры удваиваются). Времена снимать только TZ=UTC TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd (TZ контейнера менялся между ходами, и два «Z»-значения 16.10 оказались смещены на 3 часа — исправлено 18.10)",
         "measuredAt": "2026-10-18T08:5Z (их tip ee0c735 = round 30 part 2, 2026-10-18T08:43Z); ряд съёмок: 16.10T08:10Z (0b1fb0d, р.23) → d15b07b (р.26) → 19836b3 (р.27) → 822c2af (р.29) → ee0c735 (р.30)",
         "conflictType": "на реальной базе: 0 конфликтов между main@6cac62e и их tip ee0c735; против моего PR (4def185) — 1 content-конфликт в 00_README_AND_NAVIGATION.md. Ряды 14/16/17/20/21 add/add получены без видимой базы и отменены",
         "materializedMarkersCheck": "git grep -c '^<<<<<<<' <дерево мержа> БЕЗ фильтра путей: 17 и 21 на ee0c735 — равно числу конфликтов (на 822c2af было 16 и 20). '^|||||||' = 0: стиль конфликта по умолчанию не печатает блок предка",
@@ -1400,6 +1409,15 @@
         "ifMainMoves": "самоликвидирующееся предусловие уже срабатывало один раз (мерж #217) и было исполнено этим мержем; при следующем сдвиге main — та же процедура: merge -s ours + содержимое main, three-way для общих файлов, перепроверка гейтами",
         "measuredAfterMerge": "Atonement corpus integrity pass 7 s + validate pass 29 s на 81b725b; локально те же три валидатора PASS на мерженном дереве",
         "shallowCloneCaveat": "клон был shallow — лечится git fetch --unshallow origin (сделано 22.10, 286 -> 2 216 коммитов, .git/shallow снят); после этого обычный merge/merge-base работают штатно, -s ours больше не нужен"
+      },
+      "verifiability20261023": {
+        "status": "historical",
+        "what": "в блоке есть ссылки на git-объекты, недостижимые из main (squash-мерж + удаление ветки); ни одно из этих чисел нельзя переснять по объекту",
+        "howToReshoot": "пересъём идёт по записи, а не по объекту: git log --format=%H -S<sha> origin/main -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | tail -1, затем git show <коммит>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json, и проверить, что токен в blob'е есть",
+        "recordCommitMap": "integrityGate.shaCitationAudit20261023.recordCommit",
+        "measuredAt": "2026-10-22T23:03:22Z",
+        "method": "построено гейтом (правило 20) и повторено вручную командой выше",
+        "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
       }
     }
   ],
@@ -1434,11 +1452,12 @@
         "раскладка лестницы версий гейта сверяется машиной: сумма breakdown = rowsTotal = versionGroups и равна фактическому распределению errorsOnMain по строкам",
         "строгость распределена по периметру: расхождение числа о моём реестре — ошибка, о чужом — замечание; проверка, которую предполагается сделать обязательной для всего репозитория, не вправе блокировать чужой прогон моим устаревшим числом",
         "правило 18 (22.10.2026): обязательный блок реестра не вправе молча отсутствовать. Пока гейт читает reg.get('X') or {}, удаление целого блока выглядит зелёным — теряется не код возврата, а сама обязанность проверять. Теперь присутствие commitTimeChecks, correctionsPending с correctionsPendingCount, integrityGate.rules (mutationTotal/mutationGroups/mutationScore) и branchRetirement.recheckCommand требуется явно; два удаления прогнаны как мутации и дали FAIL",
-        "правило 19 (23.10.2026): класс проверяемого материала задаётся формой значения, а не расширением файла. Пока смешанное письмо искалось только на *.md, ни один реестр — в том числе собственный — не проверялся: на JSON проверка была пуста по построению, потому что вырезание кавычек-цитат снимает целиком всё содержимое строки. Теперь обходятся строковые листья всех JSON в ИСКУПЛЕНИЕ/**: своё — ошибка, чужие под-реестры — заметка (правило 17). Найдено не теорией, а вопросом владельца о Ин 11:52: правка 4 смешанных вхождений в nt-реестре упёрлась в то, что их нельзя было ни увидеть проверкой, ни опровергнуть ею"
+        "правило 19 (23.10.2026): класс проверяемого материала задаётся формой значения, а не расширением файла. Пока смешанное письмо искалось только на *.md, ни один реестр — в том числе собственный — не проверялся: на JSON проверка была пуста по построению, потому что вырезание кавычек-цитат снимает целиком всё содержимое строки. Теперь обходятся строковые листья всех JSON в ИСКУПЛЕНИЕ/**: своё — ошибка, чужие под-реестры — заметка (правило 17). Найдено не теорией, а вопросом владельца о Ин 11:52: правка 4 смешанных вхождений в nt-реестре упёрлась в то, что их нельзя было ни увидеть проверкой, ни опровергнуть ею",
+        "правило 20 (23.10.2026): у числа, за которым стоит git-ссылка, обязан быть живой способ пересъёма. Гейт вытаскивает sha-подобные токены из всех строковых значений реестра, проверяет достижимость объекта одной пачкой cat-file, и требует: для недостижимого — запись (достижимый коммит main, в blob'е которого токен реально лежит) и объявленную историчность блока (verifiability20261023), а для полей-обещаний времени — соседний *TimeStatus с причиной. В shallow-клоне проверка молчит запиской, а не нулём: там недостижимы и живые объекты. Найдено тем же фронтом, что и правило 19: сначала я объявила 99 мёртвых ссылок, а после --unshallow настоящих оказалось 46 из 99"
       ],
       "measuredAt": "2026-10-22T22:20Z",
       "method": "python3 -B scripts/validate_atonement_corpus_integrity.py; мутации каждой проверки — отдельным прогоном, засчитывается только FAIL с ожидаемым сообщением (не просто ненулевой exit)",
-      "mutationScore20261022": "58 прогон-мутаций на дереве за 22-23.10: 13+3+5+3+3+1+6+20+2+2 = 58. Сверх них 5 юнит-кейсов вычитателя цитат. Засчитывается только ожидаемый вердикт (FAIL с нужной фразой либо PASS там, где он ожидан — PASS с замечанием тоже ожидание: проверка обязана уметь не мешать) и побайтовое восстановление базы по cmp из эталона, снятого непосредственно перед прогоном. Суммы проверяются самим гейтом (правила 13 и 16), присутствие блоков — правилом 18, а материал по форме значения — правилом 19.",
+      "mutationScore20261022": "61 прогон-мутаций на дереве за 22-23.10: 13+3+5+3+3+1+6+20+2+2+3 = 61. Сверх них 5 юнит-кейсов вычитателя цитат. Засчитывается только ожидаемый вердикт (FAIL с нужной фразой либо PASS там, где он ожидан — PASS с замечанием тоже ожидание: проверка обязана уметь не мешать) и побайтовое восстановление базы по cmp из эталона, снятого непосредственно перед прогоном. Суммы проверяются гейтом (правила 13 и 16), присутствие блоков — 18, материал по форме значения — 19, живость git-ссылок — 20.",
       "why": "все восемь правил — про одно и то же: вывод, который нельзя переснять, не является фактом; отсюда же и запрет ссылок в доке на невнесённые данные (коммит ae2821a оставил в 17_ ссылку на ключ, которого скрипт-заполнитель не создал)",
       "mutationScoreMethod": "переснято в этом же прогоне: число групп и их размеры перечислены в самой строке, каждая группа сверена с разделом 17_",
       "mutationGroups": [
@@ -1481,9 +1500,13 @@
         {
           "label": "правило 19 (JSON-листья): оставить смешанное написание в собственном реестре; внести его в чужой под-реестр (ожидание — заметка, не блокировка)",
           "count": 2
+        },
+        {
+          "label": "правило 20 (git-ссылки): вписать в реестр sha, недостижимый и без recordCommit (ожидаемый FAIL); дописать recordCommit, указывающий на коммит, где токена нет (ожидаемый FAIL «запись не содержит»); внести мёртвую ссылку в чужой под-реестр (ожидаемый PASS с запиской, по правилу 17)",
+          "count": 3
         }
       ],
-      "mutationTotal": 58
+      "mutationTotal": 61
     },
     "scopeOfMeasurementRules": {
       "registriesWalked": [
@@ -1494,7 +1517,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 45,
+        "корпус": 53,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -1783,6 +1806,86 @@
         "reading": "технического препятствия для мержа 182/207 нет; основание не мержить — содержательное и принадлежит владельцам ланов"
       },
       "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py  # дневные поля. Для PR: gh api repos/FedorMilovanov/Research/pulls/<n>/files --jq [.] | count status==removed, затем git worktree add --detach /tmp/p origin/main && git -C /tmp/p merge --no-ff --no-commit <head>. Для батареи: for v in $(git ls-tree -r --name-only HEAD scripts | grep -E validate_.*py); do python3 -B $v; done"
+    },
+    "shaCitationAudit20261023": {
+      "measuredAt": "2026-10-22T23:09:08Z",
+      "uniqueShaTokens": 101,
+      "reachableTokens": 55,
+      "unreachableTokens": 46,
+      "fieldsWithDeadLinks": 89,
+      "byBlock": {
+        "adjacentLanes": 8,
+        "branchTopologyAudit20261022": 68,
+        "driveSourceAudit20261016": 6,
+        "integrityGate": 1,
+        "reproducibility20261022": 5,
+        "synthesis": 1
+      },
+      "percentCiiInRegistry": 3,
+      "percentCiiBeforeThisRound": 21,
+      "recordCommit": {
+        "019fed70": "bfa3082",
+        "01a0ea6e": "bfa3082",
+        "01a0ee73": "bfa3082",
+        "01a0feff": "bfa3082",
+        "037f6a9": "bfa3082",
+        "0462c57": "bfa3082",
+        "06c4549": "bfa3082",
+        "0c0efd7": "bfa3082",
+        "15d7e70": "bfa3082",
+        "213d985": "bfa3082",
+        "2293dae": "bfa3082",
+        "231763f": "bfa3082",
+        "26b5d31": "bfa3082",
+        "28970a7": "bfa3082",
+        "2d44d31": "bfa3082",
+        "30096ca": "bfa3082",
+        "34152fe": "bfa3082",
+        "346ed62": "bfa3082",
+        "375f7a6": "bfa3082",
+        "3f82168": "bfa3082",
+        "40bb428": "bfa3082",
+        "434fc94b": "bfa3082",
+        "43f2234": "bfa3082",
+        "494ff5e": "bfa3082",
+        "4def185": "bfa3082",
+        "5b4199e": "bfa3082",
+        "5fe5b33f": "ece8f68",
+        "68dd6a0": "bfa3082",
+        "6dd3b8d": "bfa3082",
+        "7185b11": "bfa3082",
+        "771fdde7": "bfa3082",
+        "81b725b": "bfa3082",
+        "a348dc8": "bfa3082",
+        "ae2821a": "bfa3082",
+        "be2edfb": "bfa3082",
+        "bf85f22": "bfa3082",
+        "c4ea5947": "bfa3082",
+        "c54cf68": "bfa3082",
+        "d3ef944": "bfa3082",
+        "d6ae35e": "72d937b",
+        "dc7e8cb5": "fc63e53",
+        "dddc1326": "fc63e53",
+        "f02bc63": "bfa3082",
+        "f15e1a2": "72d937b",
+        "f30ff8b": "bfa3082",
+        "fc2bc94": "bfa3082"
+      },
+      "why": "46 ссылок ведут на объекты, убитые squash-мержем и удалением веток. Запись при этом жива: для каждой ссылки найден и проверен достижимый коммит main, в blob'е реестра который содержит именно этот токен (git show <recordCommit>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | grep <sha>). Значит требование не в том, чтобы «не ссылаться на мёртвое», а в том, чтобы у числа всегда был живой способ пересъёма — через объект или через запись о нём",
+      "environmentGuard": "на shallow-клоне аудит обязан молчать: там недостижимы ВСЕ объекты, включая живые. Сегодня я так получила «99 мёртвых» вместо 46 — и это не данные, а сломанная среда; лечится git fetch --unshallow",
+      "method": "разбор всех строковых значений реестра на sha-подобные токены (7, 8, 40 hex; чисто цифровые отброшены, чтобы даты вида 20261022 не сошли за коммиты), достижимость — одна пачка git cat-file --batch-check, пересъём записи — git log -S<sha> по коммитам main с обязательной проверкой, что blob действительно содержит токен",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py  # правило 20 переснимает все числа этого блока самим обходом",
+      "rule": "правило 20",
+      "definitionOfReachability": "достижимость из origin/main (git rev-list --objects), а не «объект есть в этом клоне»: второе зависит от лишних объектов и от амбигуити префиксов. Проверено на двух клонах: по новому определению 54 живых и расхождение пустое, по старому тот же реестр давал в чистом клоне 70 живых и byBlock 52 против 68"
+    },
+    "verifiability20261023": {
+      "status": "historical",
+      "what": "в блоке есть ссылки на git-объекты, недостижимые из main (squash-мерж + удаление ветки); ни одно из этих чисел нельзя переснять по объекту",
+      "howToReshoot": "пересъём идёт по записи, а не по объекту: git log --format=%H -S<sha> origin/main -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | tail -1, затем git show <коммит>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json, и проверить, что токен в blob'е есть",
+      "recordCommitMap": "integrityGate.shaCitationAudit20261023.recordCommit",
+      "measuredAt": "2026-10-22T23:03:22Z",
+      "method": "построено гейтом (правило 20) и повторено вручную командой выше",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     }
   },
   "driveSourceAudit20261016": {
@@ -2079,7 +2182,7 @@
         "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
         "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно",
         "why": "первая редакция §7 того же дня содержала снимки «на глаз»; сам класс дефекта (число без пересчёта) ради этого реестра и заведён, поэтому случай оставлен записью, а не вытерт правкой задним числом",
-        "appliedHow": "коммит 6dd3b8d «снять собственные числа заново…» (git log -1 --format=%cI 6dd3b8d); в нём же 07_ §7 и 17_ 10c/13b — обе правки легли одним коммитом"
+        "appliedHow": "коммит 6dd3b8d «снять собственные числа заново…» (TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 6dd3b8d); в нём же 07_ §7 и 17_ 10c/13b — обе правки легли одним коммитом"
       },
       {
         "where": "17_...md, 10c и 13b; adjacentLanes этого реестра",
@@ -2090,7 +2193,7 @@
         "checkedAgainstMain20261022": "сверено с деревом main после #217 (eecb25d): этот путь в 30 файлов раунда 63 не входил ⇒ правка не внесена, applied остаётся false, текст now готов к переносу владельцем лана",
         "schemaNote": "нормализовано 22.10: прежние записи использовали was/now, одна — status/erratum, сегодняшняя — what. Ключи едины: where, defect, resolution, applied(bool), checkedAgainstMain20261022 (+почему и чем мерить). Факты при этом не переписаны: тексты перенесены дословно",
         "why": "расхождение прозвучало лишь потому, что тело PR и дока считались по разным съёмкам; с этого дня число в теле сверяется с выводом gh pr view, а не с моей памятью",
-        "appliedHow": "коммит 6dd3b8d «снять собственные числа заново…» (git log -1 --format=%cI 6dd3b8d); в нём же 07_ §7 и 17_ 10c/13b — обе правки легли одним коммитом"
+        "appliedHow": "коммит 6dd3b8d «снять собственные числа заново…» (TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 6dd3b8d); в нём же 07_ §7 и 17_ 10c/13b — обе правки легли одним коммитом"
       },
       {
         "where": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
@@ -2109,7 +2212,7 @@
       {
         "where": "ИСКУПЛЕНИЕ/nt/ (4 файла, 10 вхождений) и ИСКУПЛЕНИЕ/fathers/ (2 файла, 2 вхождения)",
         "defect": "латинские буквы внутри кириллических слов: «Тregеллс» и «Тregеллса» (nt/12 — 7 строк, nt/03 — 1), «Павелa» (nt/07:367), «polemikи» (nt/08:682), «антidonatistский» (fathers/05:21), «Berоn» (fathers/11:19)",
-        "resolution": "исправлено после мержа #216: 12 вхождений в 6 файлах выравнены по написанию самого корпуса (Tregelles / Beron / Павела / полемики / антидонатистский); sha и время: squash-мерж PR #218 = 72d937b, 2026-10-22T22:05Z (git log -1 --format=%cI на дереве main); контроль на этом дереве: в ИСКУПЛЕНИЕ/** 0 смешанных написаний и 0 вариантов",
+        "resolution": "исправлено после мержа #216: 12 вхождений в 6 файлах выравнены по написанию самого корпуса (Tregelles / Beron / Павела / полемики / антидонатистский); sha и время: squash-мерж PR #218 = 72d937b, 2026-10-22T22:05Z (TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd на дереве main); контроль на этом дереве: в ИСКУПЛЕНИЕ/** 0 смешанных написаний и 0 вариантов",
         "applied": true,
         "checkedAgainstMain20261022": false,
         "measuredAt": "2026-10-22T21:35Z",
@@ -2215,6 +2318,15 @@
       "sha256": "61f727bf6b69e96a35bcfc92588d98258682eff0b62d1c43d4d7421dac4c4ef9",
       "byteFidelity": "raw download, не экспорт: gitBytes == driveSize",
       "recheckCommand": "git -c core.quotePath=false show origin/main:ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md | wc -c"
+    },
+    "verifiability20261023": {
+      "status": "historical",
+      "what": "в блоке есть ссылки на git-объекты, недостижимые из main (squash-мерж + удаление ветки); ни одно из этих чисел нельзя переснять по объекту",
+      "howToReshoot": "пересъём идёт по записи, а не по объекту: git log --format=%H -S<sha> origin/main -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | tail -1, затем git show <коммит>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json, и проверить, что токен в blob'е есть",
+      "recordCommitMap": "integrityGate.shaCitationAudit20261023.recordCommit",
+      "measuredAt": "2026-10-22T23:03:22Z",
+      "method": "построено гейтом (правило 20) и повторено вручную командой выше",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     }
   },
   "branchTopologyAudit20261022": {
@@ -2965,73 +3077,97 @@
             "gateCommit": "fc2bc94",
             "gateLines": 684,
             "errorsOnMain": 19,
-            "gateCommitTimeCommand": "git log -1 --format=%cI fc2bc94"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd fc2bc94",
+            "gateCommitTimeStatus": "не переснимается: объект fc2bc94 недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "346ed62",
             "gateLines": 652,
             "errorsOnMain": 19,
-            "gateCommitTimeCommand": "git log -1 --format=%cI 346ed62"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 346ed62",
+            "gateCommitTimeStatus": "не переснимается: объект 346ed62 недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "26b5d31",
             "gateLines": 634,
             "errorsOnMain": 19,
-            "gateCommitTimeCommand": "git log -1 --format=%cI 26b5d31"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 26b5d31",
+            "gateCommitTimeStatus": "не переснимается: объект 26b5d31 недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "231763f",
             "gateLines": 634,
             "errorsOnMain": 19,
-            "gateCommitTimeCommand": "git log -1 --format=%cI 231763f"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 231763f",
+            "gateCommitTimeStatus": "не переснимается: объект 231763f недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "2293dae",
             "gateLines": 628,
             "errorsOnMain": 19,
-            "gateCommitTimeCommand": "git log -1 --format=%cI 2293dae"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 2293dae",
+            "gateCommitTimeStatus": "не переснимается: объект 2293dae недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "5b4199e",
             "gateLines": 595,
             "errorsOnMain": 18,
-            "gateCommitTimeCommand": "git log -1 --format=%cI 5b4199e"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 5b4199e",
+            "gateCommitTimeStatus": "не переснимается: объект 5b4199e недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "494ff5e",
             "gateLines": 556,
             "errorsOnMain": 18,
-            "gateCommitTimeCommand": "git log -1 --format=%cI 494ff5e"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 494ff5e",
+            "gateCommitTimeStatus": "не переснимается: объект 494ff5e недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "15d7e70",
             "gateLines": 500,
             "errorsOnMain": 18,
-            "gateCommitTimeCommand": "git log -1 --format=%cI 15d7e70"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 15d7e70",
+            "gateCommitTimeStatus": "не переснимается: объект 15d7e70 недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "40bb428",
             "gateLines": 472,
             "errorsOnMain": 18,
-            "gateCommitTimeCommand": "git log -1 --format=%cI 40bb428"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 40bb428",
+            "gateCommitTimeStatus": "не переснимается: объект 40bb428 недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "be2edfb",
             "gateLines": 428,
             "errorsOnMain": 18,
-            "gateCommitTimeCommand": "git log -1 --format=%cI be2edfb"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd be2edfb",
+            "gateCommitTimeStatus": "не переснимается: объект be2edfb недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "a348dc8",
             "gateLines": 844,
             "errorsOnMain": 22,
-            "gateCommitTimeCommand": "git log -1 --format=%cI a348dc8"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd a348dc8",
+            "gateCommitTimeStatus": "не переснимается: объект a348dc8 недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           },
           {
             "gateCommit": "bf85f22",
             "gateLines": 856,
             "errorsOnMain": 22,
-            "gateCommitTimeCommand": "git log -1 --format=%cI bf85f22"
+            "gateCommitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd bf85f22",
+            "gateCommitTimeStatus": "не переснимается: объект bf85f22 недостижим из main (squash-мерж + удаление ветки); время этого коммита неизвестно и не вводится заново; запись о числе строк и о числе ошибок — в git show bfa3082:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json",
+            "recordCommit": "bfa3082"
           }
         ],
         "measuredAt": "2026-10-22T21:20Z",
@@ -3044,7 +3180,16 @@
           "22": 2
         },
         "versionGroups": 12,
-        "rowsTotal": 12
+        "rowsTotal": 12,
+        "verifiability20261023": {
+          "status": "historical",
+          "what": "в блоке есть ссылки на git-объекты, недостижимые из main (squash-мерж + удаление ветки); ни одно из этих чисел нельзя переснять по объекту",
+          "howToReshoot": "пересъём идёт по записи, а не по объекту: git log --format=%H -S<sha> origin/main -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | tail -1, затем git show <коммит>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json, и проверить, что токен в blob'е есть",
+          "recordCommitMap": "integrityGate.shaCitationAudit20261023.recordCommit",
+          "measuredAt": "2026-10-22T23:03:22Z",
+          "method": "построено гейтом (правило 20) и повторено вручную командой выше",
+          "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
+        }
       },
       "measuredOnMainAfterMerge20261023": {
         "mainSha": "77641fa",
@@ -3065,7 +3210,7 @@
         "note": "время снято канонической командой, а не %cI: смещение +03:00 уже ломало сверку в прошлом круге"
       }
     },
-    "commitTimeChecksNote": "добавлен f15e1a2: время собственного коммита пишется следующим прогоном, из git, а не из головы автора коммита Последнее обновление 2026-10-22T23:50Z: добавлены sha мержей #219 и #220 — те же пары, что закрывали этот реестр; снять заново: TZ=UTC git log -1 --format=%cI <sha> на дереве main.",
+    "commitTimeChecksNote": "добавлен f15e1a2: время собственного коммита пишется следующим прогоном, из git, а не из головы автора коммита Последнее обновление 2026-10-22T23:50Z: добавлены sha мержей #219 и #220 — те же пары, что закрывали этот реестр; снять заново: TZ=UTC TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd <sha> на дереве main.",
     "commitTimeChecksWhat": {
       "eb90045": "исправление 12 вхождений смешанного письма в nt/ и fathers/ — закрытие correctionsPending[7]",
       "note20261022T2355": "две пары (#219, #220) сначала были записаны через %cI и получили смещение +03:00; гейт поймал сам, канон --date=format-local переснят им же. Урок: правило, живущее только в тексте ошибки, наруается и в следующем круге — оно исполнимо лишь тогда, когда его проверяет машина"
@@ -3132,6 +3277,15 @@
       },
       "what": "измеренный предпросмер и erratum к собственному числу; для #218 — поправка к его же телу",
       "recheckCommand": "gh api repos/FedorMilovanov/Research/issues/182/comments --jq '.[].html_url'"
+    },
+    "verifiability20261023": {
+      "status": "historical",
+      "what": "в блоке есть ссылки на git-объекты, недостижимые из main (squash-мерж + удаление ветки); ни одно из этих чисел нельзя переснять по объекту",
+      "howToReshoot": "пересъём идёт по записи, а не по объекту: git log --format=%H -S<sha> origin/main -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | tail -1, затем git show <коммит>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json, и проверить, что токен в blob'е есть",
+      "recordCommitMap": "integrityGate.shaCitationAudit20261023.recordCommit",
+      "measuredAt": "2026-10-22T23:03:22Z",
+      "method": "построено гейтом (правило 20) и повторено вручную командой выше",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     }
   },
   "reproducibility20261022": {
@@ -3168,7 +3322,7 @@
     "rule": "отсюда твёрдый порядок: валидаторы → коммит → push → CI → синхрон тела PR, без «дочитаю и закоммичу одним». Дерево песочницы — кэш, а не хранилище; вывод не записывается в governance-файл, пока не переснимается командой",
     "countsLive": {
       "ключейРеестра": 31,
-      "правилГейта": 19,
+      "правилГейта": 20,
       "shaВсверкеВремен": 13,
       "строкВАудитеТопологии": 26,
       "removedFigures": {
@@ -3198,13 +3352,22 @@
       "measuredAt": "2026-10-22T22:05Z",
       "method": "git ls-remote origin refs/heads/<ветка> против git rev-parse origin/<ветка>; расхождение = ref удалён на сервере",
       "recheckCommand": "git ls-remote origin | grep -c dc7e8cb5"
+    },
+    "verifiability20261023": {
+      "status": "historical",
+      "what": "в блоке есть ссылки на git-объекты, недостижимые из main (squash-мерж + удаление ветки); ни одно из этих чисел нельзя переснять по объекту",
+      "howToReshoot": "пересъём идёт по записи, а не по объекту: git log --format=%H -S<sha> origin/main -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | tail -1, затем git show <коммит>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json, и проверить, что токен в blob'е есть",
+      "recordCommitMap": "integrityGate.shaCitationAudit20261023.recordCommit",
+      "measuredAt": "2026-10-22T23:03:22Z",
+      "method": "построено гейтом (правило 20) и повторено вручную командой выше",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     }
   },
   "reconciliationDocument20261022": {
     "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-    "lines": 1095,
+    "lines": 1117,
     "sectionsH2": 16,
-    "sectionsH3": 21,
+    "sectionsH3": 22,
     "history": [
       {
         "lines": 791,
@@ -3251,6 +3414,20 @@
         "lines": 1095,
         "asOf": "2026-10-23T02:20Z",
         "note": "строки до erratum-строки о столкновении номеров в §15k"
+      },
+      {
+        "lines": 1095,
+        "sectionsH2": 16,
+        "sectionsH3": 21,
+        "asOf": "2026-10-23T03:20Z",
+        "note": "числа до вставки §15l (правило 20)"
+      },
+      {
+        "lines": 1115,
+        "sectionsH2": 16,
+        "sectionsH3": 22,
+        "asOf": "2026-10-23T04:05Z",
+        "note": "числа до дополнения §15l, снятого CI"
       }
     ],
     "measuredAt": "2026-10-22T23:35Z",
