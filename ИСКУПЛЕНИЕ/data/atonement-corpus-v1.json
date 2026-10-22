@@ -3191,7 +3191,7 @@
   },
   "reconciliationDocument20261022": {
     "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-    "lines": 1094,
+    "lines": 1095,
     "sectionsH2": 16,
     "sectionsH3": 21,
     "history": [
@@ -3228,6 +3228,13 @@
         "sectionsH3": 21,
         "asOf": "2026-10-23T00:52Z",
         "note": "числа до строки итога §15k (после влития #222)"
+      },
+      {
+        "lines": 1094,
+        "sectionsH2": 16,
+        "sectionsH3": 21,
+        "asOf": "2026-10-23T01:20Z",
+        "note": "числа до записи о границе правила 19"
       }
     ],
     "measuredAt": "2026-10-22T23:35Z",
