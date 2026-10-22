@@ -754,6 +754,20 @@
       estre participant de Christ, sinon celuy qui a esté **adopté***». **(7) Невозможность нравственная:** притча о
       пире — «*n'est pas vne impossibilité semblable à celle d'vn homme perclus des pieds*»; дилемма «*franc-arbitre /
       légitime excuse*». `EDITION_HOLD`; **21/74** (~28 %).
+    - 42de. *Дополнение 2026-10-19 (раунд 56, часть 7; `34_` §4.117, **S156**; `03_` §33; `synthesis/03_` §34):
+      **Три проверяемых пункта у Амиро — и статья не воспроизводит ни один.** **(1) Цепь спасения (с. 160):**
+      «*Nostre salut… dépend de… la foy; cette foy **ne pend de la grâce**…; cette grâce… **dépend du conseil de
+      l'election**… & ce conseil **n'ayant autre fondement que sa volonté***»; «*ny à quelque condition que ce soit
+      qu'il ait **preueue***». **(2) Приобретение всеобще, приложение действительно (с. 162):** «*pour **racheter le
+      genre humain** il a ordonné de nous donner la foy… **afin que cette rédemption ne nous fust pas inutile***».
+      **(3) Ходатайство ограничено:** «*ne prioit point pour nous… **je ne prie point pour le monde***» (Ин. 17:9) =
+      «pro reprobis nec spopondit, nec oravit». **(4) Нравственная невозможность («Eschantillon», сс. 195–196):**
+      «*impuissance **physique ou naturelle***» извиняла бы; «*s'ils ne le peuvent pas, c'est que leur **peruersité**
+      est extrême*»; «*il n'est pas nécessaire que cette **inuincible peruersité** resserre… les actions de sa bonté*»;
+      «*l'Euangile ne crie autre chose sinon que **Dieu les veut sauuer, pourueu qu'ils croyent***»; «*cette
+      impuissance de croire ne vient sinon de **pure mechanceté***»; «*il **ne doit rien à personne***» (с. 193).
+      **(5) ПОПРАВКА 2:** «Eschantillon» — **50–60 сс.** (начало между сс. 161 и 192), **не 200+**; пагинация
+      сплошная с томом ⇒ гипотеза о чанке 19 **ослаблена**, п. 228 снова открыт. `EDITION_HOLD`; **23/74** (~31 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

@@ -512,6 +512,16 @@
   **(е) ПОПРАВКА ЛОКАТОРА:** «Eschantillon» = 200+ страниц, сс. 197–212 прочитаны; чанок 19 — вероятно, его листы.
   **(ж) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято молча: 0».**
 
+- **Дополнение раунда 56, часть 7 (2026-10-19; `34_` §4.117; `03_` §33; `synthesis/03_` §34).**
+  **(а) Цепь спасения** (с. 160): спасение ← вера ← благодать ← избрание ← воля; «*n'ayant autre fondement que sa
+  volonté*»; отрицание предвиденной веры. **(б) «Pour racheter le genre humain» + «afin que cette rédemption ne nous
+  fust pas inutile»** — приобретение всеобще, приложение действительно. **(в) «Je ne prie point pour le monde»** —
+  ходатайство ограничено ⇒ запрет называть Амиро универсалистом. **(г) Нравственная невозможность** («*impuissance
+  physique ou naturelle*» vs «*peruersité extrême*»; «*Dieu les veut sauver, pourvu qu'ils croyent*»; «*il ne doit
+  rien à personne*»). **(д) Вывод:** статья **не воспроизводит Амиро ни в одном** из трёх проверяемых пунктов.
+  **(е) ПОПРАВКА 2:** «Eschantillon» — 50–60 сс., не 200+; чанок 19 — гипотеза ослаблена, п. 228 открыт.
+  **(ж) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято молча: 0».**
+
 ## Итоговая сводка
 
 
