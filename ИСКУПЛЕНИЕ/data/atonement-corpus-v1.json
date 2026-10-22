@@ -1483,7 +1483,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 29,
+        "корпус": 30,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -2890,6 +2890,13 @@
       "правилГейта": 9,
       "why": "снимок 22.10 протух в четырёх значениях из семи, пока я дописывала правила: 18 против 19 на родителе, 4 против 5 открытых, 9 против 10 правил, плюс ключ с невнятным именем. Снимок без даты и способа — это мнение",
       "replacedBy": "countsLive"
+    },
+    "environmentNotes20261022": {
+      "autoDeleteHeadBranch": "в репозитории включено автоматическое удаление головы PR: squash-мерж #216 в 19:56:17Z снял с origin и ветку сессии (git ls-remote origin | grep dc7e8cb5 → пусто), хотя локальное представление origin/… продолжало показывать d6ae35e. Отсюда «stale info» у --force-with-lease: он сверялся с несуществующим ref'ом",
+      "consequence": "первый шаг любого нового круга после мержа — проверить, жив ли ref на сервере (git ls-remote), и восстановить его обычным push, а не force-with-lease; молчаливое расхождение локального tracking-ref'а с сервером — тот же класс, что shallow-клон: команда отвечает уверенно, а данные уже не те",
+      "measuredAt": "2026-10-22T22:05Z",
+      "method": "git ls-remote origin refs/heads/<ветка> против git rev-parse origin/<ветка>; расхождение = ref удалён на сервере",
+      "recheckCommand": "git ls-remote origin | grep -c dc7e8cb5"
     }
   },
   "reconciliationDocument20261022": {
