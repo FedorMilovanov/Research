@@ -972,21 +972,34 @@ def _sha_tokens(obj):
 
 
 def _unreachable(tokens):
-    """set недостижимых токенов; None = среда не годна (shallow), молчим осознанно."""
+    """set токенов, НЕдостижимых из main; None = среда не годна (shallow или нет origin/main).
+
+    Определение обязано быть относительным, а не «объект есть в этом клоне»: в моём клоне
+    16 токенов не разрешились из-за амбигуити (лишние объекты удалённых веток дали общий
+    префикс), зато разрешились 16 таких, которых в main нет вовсе. На чистом клоне CI те же
+    числа дали byBlock 52 против моих 68 — то есть проверка меряла свойство клона. Достижимость
+    из origin/main совпадает в обоих клонах до символа (54 живых, расхождение пустое), поэтому
+    она и выбрана как канон."""
     try:
         import subprocess as _sp
         if _sp.run(["git", "rev-parse", "--is-shallow-repository"], cwd=ROOT,
                    capture_output=True, text=True).stdout.strip() == "true":
             return None
-        chk = _sp.run(["git", "cat-file", "--batch-check"], input="\n".join(sorted(tokens)),
-                      cwd=ROOT, capture_output=True, text=True).stdout.split("\n")
-    except Exception:  # noqa: BLE001 - нет git'а: не выдумываем результат
+        base = _sp.run(["git", "rev-parse", "--verify", "-q", "origin/main"], cwd=ROOT,
+                       capture_output=True, text=True).stdout.strip()
+        if not base:  # например, прогон на detached-дереве без remote-tracking: не выдумываем результат
+            return None
+        objs = _sp.run(["git", "rev-list", "--objects", base], cwd=ROOT, capture_output=True, text=True).stdout
+    except Exception:  # noqa: BLE001 - нет git'а: не подменяем измерение нулём
         return None
-    bad = set()
-    for tok, line in zip(sorted(tokens), chk):
-        if not line.strip() or "missing" in line:
-            bad.add(tok)
-    return bad
+    full = sorted({line.split(" ")[0] for line in objs.split("\n") if line})
+    import bisect
+
+    def reachable(tok):
+        k = bisect.bisect_left(full, tok)
+        return k < len(full) and full[k].startswith(tok)
+
+    return {t for t in tokens if not reachable(t)}
 
 
 _audit = ((reg.get("integrityGate") or {}).get("shaCitationAudit20261023") or {})

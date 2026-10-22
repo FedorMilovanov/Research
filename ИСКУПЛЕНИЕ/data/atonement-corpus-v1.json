@@ -1808,9 +1808,9 @@
       "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py  # дневные поля. Для PR: gh api repos/FedorMilovanov/Research/pulls/<n>/files --jq [.] | count status==removed, затем git worktree add --detach /tmp/p origin/main && git -C /tmp/p merge --no-ff --no-commit <head>. Для батареи: for v in $(git ls-tree -r --name-only HEAD scripts | grep -E validate_.*py); do python3 -B $v; done"
     },
     "shaCitationAudit20261023": {
-      "measuredAt": "2026-10-22T23:04:06Z",
-      "uniqueShaTokens": 100,
-      "reachableTokens": 54,
+      "measuredAt": "2026-10-22T23:09:08Z",
+      "uniqueShaTokens": 101,
+      "reachableTokens": 55,
       "unreachableTokens": 46,
       "fieldsWithDeadLinks": 89,
       "byBlock": {
@@ -1864,8 +1864,8 @@
         "c54cf68": "bfa3082",
         "d3ef944": "bfa3082",
         "d6ae35e": "72d937b",
-        "dc7e8cb5": "bfa3082",
-        "dddc1326": "bfa3082",
+        "dc7e8cb5": "fc63e53",
+        "dddc1326": "fc63e53",
         "f02bc63": "bfa3082",
         "f15e1a2": "72d937b",
         "f30ff8b": "bfa3082",
@@ -1875,7 +1875,8 @@
       "environmentGuard": "на shallow-клоне аудит обязан молчать: там недостижимы ВСЕ объекты, включая живые. Сегодня я так получила «99 мёртвых» вместо 46 — и это не данные, а сломанная среда; лечится git fetch --unshallow",
       "method": "разбор всех строковых значений реестра на sha-подобные токены (7, 8, 40 hex; чисто цифровые отброшены, чтобы даты вида 20261022 не сошли за коммиты), достижимость — одна пачка git cat-file --batch-check, пересъём записи — git log -S<sha> по коммитам main с обязательной проверкой, что blob действительно содержит токен",
       "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py  # правило 20 переснимает все числа этого блока самим обходом",
-      "rule": "правило 20"
+      "rule": "правило 20",
+      "definitionOfReachability": "достижимость из origin/main (git rev-list --objects), а не «объект есть в этом клоне»: второе зависит от лишних объектов и от амбигуити префиксов. Проверено на двух клонах: по новому определению 54 живых и расхождение пустое, по старому тот же реестр давал в чистом клоне 70 живых и byBlock 52 против 68"
     },
     "verifiability20261023": {
       "status": "historical",
@@ -3364,7 +3365,7 @@
   },
   "reconciliationDocument20261022": {
     "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-    "lines": 1115,
+    "lines": 1117,
     "sectionsH2": 16,
     "sectionsH3": 22,
     "history": [
@@ -3420,6 +3421,13 @@
         "sectionsH3": 21,
         "asOf": "2026-10-23T03:20Z",
         "note": "числа до вставки §15l (правило 20)"
+      },
+      {
+        "lines": 1115,
+        "sectionsH2": 16,
+        "sectionsH3": 22,
+        "asOf": "2026-10-23T04:05Z",
+        "note": "числа до дополнения §15l, снятого CI"
       }
     ],
     "measuredAt": "2026-10-22T23:35Z",
