@@ -1489,7 +1489,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 39,
+        "корпус": 40,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -2788,7 +2788,9 @@
       "a01664c8": "2026-10-14T00:18:56Z",
       "6cac62e": "2026-10-15T08:28:55Z",
       "eecb25d": "2026-10-22T09:28:31Z",
-      "eb90045": "2026-10-22T20:01:00Z"
+      "eb90045": "2026-10-22T20:01:00Z",
+      "fc63e53bdc1ef0b1c47b49d4351199fe3c22a928": "2026-10-22T20:20:09Z",
+      "c52c86bf8751b2ed9ba6ef9d0e3ee331742b3282": "2026-10-22T20:24:31Z"
     },
     "commitTimeChecksHow": "сверяется гейтом при каждом прогоне; канонический снимок: TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd <sha>. %cI не годится: он печатает смещение коммита (у владельческих +03:00), и время «Z» из него выходит сдвигом на 3 часа",
     "lossFreeResiduals": {
@@ -2837,7 +2839,7 @@
       "verdict": "из 18 несмерженных веток 6 не содержат ни одного исследовательского файла сверх main: 4 — побайтовый ноль, 2 — 18 и 24 строки инструкций в двух индексных файлах, которые main переписал новее. Удаление этих веток не теряет ничего, что main уже не superseded; если порядок чтения (цепочки 301/302/303) нужен как решение, его надо брать из ветки до удаления — в main этих строк нет"
     },
     "gateOnMainTree": {
-      "measuredAt": "2026-10-22T21:05Z",
+      "measuredAt": "2026-10-22T23:47Z",
       "method": "git worktree add --detach /tmp/main-bare origin/main && cd /tmp/main-bare && python3 -B scripts/validate_atonement_corpus_integrity.py  # скрипт теперь в main, копировать его больше не нужно",
       "errorsTotal": 22,
       "closedByThisPr": 22,
@@ -2901,6 +2903,13 @@
           "whyStale": "снято версией гейта до правил 12–15 и до уточнения классификации: четыре новых правила добавляют к прогону на голым main ошибки про отсутствующие scope-записи и дневную гранульность, а часть прежних категорий перестала быть отдельной строкой. Число 19 оставлено как история того запуска, а не как актуальное: актуальное переснимается командой recheckCommand",
           "provenance": "значение взято не по памяти: /tmp/bare.gate того прогона был снят 22.10 в 19:0xZ, состав раскладки — из строк вывода; теперь переснято заново тем же прогоном в worktree",
           "how": "переснимается буквально: git worktree add --detach /tmp/gate19 origin/main && mkdir -p /tmp/gate19/scripts && git show fc2bc94:scripts/validate_atonement_corpus_integrity.py > /tmp/gate19/scripts/validate_atonement_corpus_integrity.py && cd /tmp/gate19 && python3 -B scripts/validate_atonement_corpus_integrity.py | grep -cE '^\\s+- ' → 19. Проверено прогоном этого круга (см. measurementLadder20261022), а не памятью"
+        },
+        {
+          "asOf": "2026-10-22T23:50Z",
+          "how": "git worktree add --detach /tmp/final2 origin/main && cd /tmp/final2 && python3 -B scripts/validate_atonement_corpus_integrity.py",
+          "measuredAt": "2026-10-22T23:47Z",
+          "result": "PASS (19 root files, 4 sub-corpora / 52 sub-lane files, 36 lane files, conflict ledger C-01…C-24, publicationEligible=false)",
+          "mainSha": "c52c86b"
         }
       ],
       "arithmeticNeedleWhere": "вывод гейта на дереве origin/main (не исходник: сообщение собрано из f-строки и в тексте скрипта не встречается целиком); получить: recheckCommand выше",
@@ -3002,9 +3011,10 @@
         "rowsTotal": 12
       }
     },
-    "commitTimeChecksNote": "добавлен f15e1a2: время собственного коммита пишется следующим прогоном, из git, а не из головы автора коммита",
+    "commitTimeChecksNote": "добавлен f15e1a2: время собственного коммита пишется следующим прогоном, из git, а не из головы автора коммита Последнее обновление 2026-10-22T23:50Z: добавлены sha мержей #219 и #220 — те же пары, что закрывали этот реестр; снять заново: TZ=UTC git log -1 --format=%cI <sha> на дереве main.",
     "commitTimeChecksWhat": {
-      "eb90045": "исправление 12 вхождений смешанного письма в nt/ и fathers/ — закрытие correctionsPending[7]"
+      "eb90045": "исправление 12 вхождений смешанного письма в nt/ и fathers/ — закрытие correctionsPending[7]",
+      "note20261022T2355": "две пары (#219, #220) сначала были записаны через %cI и получили смещение +03:00; гейт поймал сам, канон --date=format-local переснят им же. Урок: правило, живущее только в тексте ошибки, наруается и в следующем круге — оно исполнимо лишь тогда, когда его проверяет машина"
     },
     "branchRetirement": {
       "measuredAt": "2026-10-22T22:55Z",
@@ -3105,7 +3115,7 @@
     "countsLive": {
       "ключейРеестра": 30,
       "правилГейта": 18,
-      "shaВсверкеВремен": 10,
+      "shaВсверкеВремен": 12,
       "строкВАудитеТопологии": 26,
       "removedFigures": {
         "ошибокНаРодителе": "переехало в branchTopologyAudit20261022.gateOnMainTree: у него есть раскладка, сумма и команда съёма на worktree, а это поле переснять из CI нельзя",
@@ -3113,7 +3123,7 @@
         "хвостов": "это список в теле PR, а не свойство дерева; переснимается только чтением PR, значит живым числом называться не может",
         "строкАмита": "ключ был написан невнятно и означал число строк аудита (rows); переименован в строкВАудитеТопологии, потому что число без внятного имени — это число без определения"
       },
-      "measuredAt": "2026-10-22T23:05Z",
+      "measuredAt": "2026-10-22T23:50Z",
       "method": "len() по фактическому содержимому файла; проверяется тем же прогоном гейта, что и сами правила",
       "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
     },
