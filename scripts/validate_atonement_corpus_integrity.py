@@ -706,6 +706,28 @@ if REG.is_file():
                 "этого PR: правило (1w) к чужим данным применяется как измерение, а не как блокировка"
             )
 
+    # (2f) лестница версий гейта: если число ошибок по версиям разложено, сумма групп обязана равняться
+    # числу строк лестницы — то же требование, что к раскладке ошибок на родителе и к собственному счёту мутаций
+    _lad = (reg.get("branchTopologyAudit20261022") or {}).get("gateOnMainTree", {}).get("measurementLadder20261022") or {}
+    if _lad.get("breakdown"):
+        _lrows = len(_lad.get("rows") or [])
+        _lsum = sum(int(v) for v in _lad["breakdown"].values())
+        _lver = int(_lad.get("versionGroups", -1))
+        if _lsum != _lrows or _lver != _lrows:
+            errors.append(
+                "measurementLadder20261022: групп %d, строк %d, versionGroups %d — раскладка, итог и состав обязаны "
+                "сойтись, иначе таблица версий выдаёт себя за доказательство, оставаясь списком"
+                % (_lsum, _lrows, _lver)
+            )
+        _vals = {}
+        for _r in _lad.get("rows") or []:
+            _vals[int(_r.get("errorsOnMain", -1))] = _vals.get(int(_r.get("errorsOnMain", -1)), 0) + 1
+        if {str(k): v for k, v in _vals.items()} != {str(k): int(v) for k, v in _lad["breakdown"].items()}:
+            errors.append(
+                "measurementLadder20261022.breakdown не совпадает с фактическим распределением строк по errorsOnMain "
+                "(обход видит %s) — группа, которую никто не пересчитал, это украшение таблицы" % sorted(_vals.items())
+            )
+
     # (2e) форма документа-сверки:число строк и число разделов — тоже числа, которые я публикую, значит они
     # обязаны пересниматься этим же обходом, а не переживать следующую правку текста.
     _doc_fig = reg.get("reconciliationDocument20261022") or {}

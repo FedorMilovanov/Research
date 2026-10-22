@@ -1430,11 +1430,12 @@
         "поле, значение которого — дата без времени, обязано либо нести часы (если имя обещает отметку времени), либо быть объявлено днём по определению в integrityGate.dayGranularity; проверяется по форме значения, а не по имени ключа",
         "разложение собственного отчёта проверяется машиной: сумма групп mutationGroups = mutationTotal = leading-число в mutationScore20261022, пустая группа не допускается",
         "форма документа-сверки (число строк, число разделов H2 и H3, уровень заголовка 15, наличие 15a–15e) переснимается гейтом: опубликованные цифры не имеют права быть памятью о файле",
-        "смысловые поля закрытой схемы обязаны быть непустыми, а applied=true без resolution запрещено: наличие ключа — не утверждение"
+        "смысловые поля закрытой схемы обязаны быть непустыми, а applied=true без resolution запрещено: наличие ключа — не утверждение",
+        "раскладка лестницы версий гейта сверяется машиной: сумма breakdown = rowsTotal = versionGroups и равна фактическому распределению errorsOnMain по строкам"
       ],
-      "measuredAt": "2026-10-22T20:45Z",
+      "measuredAt": "2026-10-22T21:25Z",
       "method": "python3 -B scripts/validate_atonement_corpus_integrity.py; мутации каждой проверки — отдельным прогоном, засчитывается только FAIL с ожидаемым сообщением (не просто ненулевой exit)",
-      "mutationScore20261022": "50 прогон-мутаций на дереве за 22.10: 13 + 3 + 5 + 3 + 3 + 1 + 6 + 16 = 50. Сверх них 5 юнит-кейсов вычитателя цитат. Засчитывается только ожидаемый вердикт (FAIL с нужной фразой либо PASS, где он ожидан) и побайтовое восстановление базы по cmp из эталона, снятого непосредственно перед прогоном; «ненулевой exit» критерием не считается. Сумма групп и leading-число проверяются самим гейтом (правило 13). Дважды за вечер это правило ловило меня на текстогенераторе, а не на данных: join без скобок съел предыдущий текст, leading-число прочиталось как 1342; сообщение о расхождении печатало вычисленное против вычисленного.",
+      "mutationScore20261022": "52 прогон-мутаций на дереве за 22.10: 13 + 3 + 5 + 3 + 3 + 1 + 6 + 18 = 52. Сверх них 5 юнит-кейсов вычитателя цитат. Засчитывается только ожидаемый вердикт (FAIL с нужной фразой либо PASS, где он ожидан) и побайтовое восстановление базы по cmp из эталона, снятого непосредственно перед прогоном; «ненулевой exit» критерием не считается. Суммы проверяются самим гейтом (правила 13 и 16): раскладка групп мутаций равна итогу и leading-числу, а раскладка лестницы версий — числу её строк и фактическому распределению errorsOnMain.",
       "why": "все восемь правил — про одно и то же: вывод, который нельзя переснять, не является фактом; отсюда же и запрет ссылок в доке на невнесённые данные (коммит ae2821a оставил в 17_ ссылку на ключ, которого скрипт-заполнитель не создал)",
       "mutationScoreMethod": "переснято в этом же прогоне: число групп и их размеры перечислены в самой строке, каждая группа сверена с разделом 17_",
       "mutationGroups": [
@@ -1467,11 +1468,11 @@
           "count": 6
         },
         {
-          "label": "гранульность времени и самоарифметика отчёта (22.10, вечер): снять декларацию дневной гранульности; переименовать её путь; оставить съёмке только день; сдвинуть occurrences чужого периметра; сдвинуть files; приписать чужому лану 20 вместо 19; добавить дневное поле в чужой реестр; сдвинуть группу мутаций; сдвинуть итоги групп; сдвинуть lines дока; сдвинуть sectionsH2; уронить 15d на уровень ##; поднять 15 до #### — 13 прогонов, включая два варианта одной мутации и два падения, вызванных багом в самом новом правиле; обнулить defect, why, resolution закрытой записи",
-          "count": 16
+          "label": "гранульность времени и самоарифметика отчёта (22.10, вечер): снять декларацию дневной гранульности; переименовать её путь; оставить съёмке только день; сдвинуть occurrences чужого периметра; сдвинуть files; приписать чужому лану 20 вместо 19; добавить дневное поле в чужой реестр; сдвинуть группу мутаций; сдвинуть итоги групп; сдвинуть lines дока; сдвинуть sectionsH2; уронить 15d на уровень ##; поднять 15 до #### — 13 прогонов, включая два варианта одной мутации и два падения, вызванных багом в самом новом правиле; обнулить defect, why, resolution закрытой записи; сдвинуть группу лестницы; сдвинуть versionGroups",
+          "count": 18
         }
       ],
-      "mutationTotal": 50
+      "mutationTotal": 52
     },
     "scopeOfMeasurementRules": {
       "registriesWalked": [
@@ -1482,7 +1483,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 26,
+        "корпус": 29,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -2651,30 +2652,34 @@
       "verdict": "из 18 несмерженных веток 6 не содержат ни одного исследовательского файла сверх main: 4 — побайтовый ноль, 2 — 18 и 24 строки инструкций в двух индексных файлах, которые main переписал новее. Удаление этих веток не теряет ничего, что main уже не superseded; если порядок чтения (цепочки 301/302/303) нужен как решение, его надо брать из ветки до удаления — в main этих строк нет"
     },
     "gateOnMainTree": {
-      "measuredAt": "2026-10-22T14:01Z",
-      "method": "git worktree add -q --detach /tmp/mainchk3 origin/main; cp scripts/validate_atonement_corpus_integrity.py /tmp/mainchk3/scripts/; cd /tmp/mainchk3 && python3 -B scripts/validate_atonement_corpus_integrity.py; подсчёт grep -cE '^\\s+- '; переснято на гейте типа PR, потому что с прежнего замера в него добавилось правило",
-      "errorsTotal": 19,
-      "closedByThisPr": 19,
+      "measuredAt": "2026-10-22T21:05Z",
+      "method": "прогон этого же скрипта на дереве origin/main в отдельном worktree: git worktree add --detach /tmp/main-bare origin/main && cp scripts/validate_atonement_corpus_integrity.py /tmp/main-bare/scripts/ && cd /tmp/main-bare && python3 scripts/validate_atonement_corpus_integrity.py; раскладка считается по префиксам строк вывода, сумма проверяется правилом 13 (то же требование, что к собственному отчёту)",
+      "errorsTotal": 22,
+      "closedByThisPr": 22,
       "breakdown": {
-        "wire_absent": 2,
-        "root_inventory": 2,
-        "undeclared_dangling": 7,
-        "wave0_named_without_erratum": 5,
+        "spine_count": 1,
+        "agents_paths_absent": 6,
+        "names_absent_files": 5,
+        "adjacent_lane_undeclared": 1,
+        "gate_absent_in_main": 2,
         "authority_arithmetic": 2,
-        "measurement_declaration_undone_by_main": 1
+        "reconciliation_absent": 1,
+        "scope_records_absent": 4
       },
       "breakdownLegend": {
-        "wire_absent": "отсутствует сам провод PR: реестр main не знает integrityGate.script/.workflow",
-        "root_inventory": "в корне main 18 numbered-файлов вместо 19: нет записи аудита 17_ (её приносит этот PR)",
-        "undeclared_dangling": "висячие пути без gitPathState/declaredAbsentPrefixes: 6 × ИСКУПЛЕНИЕ/agents/… + не объявлен смежный лан в adjacentLanes",
-        "wave0_named_without_erratum": "файлы, снятые wave-0, названы без erratum: 10_W0_PRIMARY_TEXT_DORT… + 4 × agents/0*_AGENT_BRIEF…",
-        "authority_arithmetic": "conflict ledger C-24 против объявленного C-01…C-15 — теперь в ОБОИХ ли́дерах (корпусном и synthesis), по одной ошибке на каждый",
-        "measurement_declaration_undone_by_main": "правило требует, чтобы охват правил (1)-(3) был задекларирован в реестре; на main реестр есть, а integrityGate в нём нет — эту ошибку закрывает этот же PR"
+        "gate_absent_in_main": "реестр main не знает integrityGate.script/.workflow — самого провода ещё нет в каноническом дереве",
+        "scope_records_absent": "нет scope-записей, которые мой гейт требует (stampedFieldsPerRegistry, dayOnlyFieldsPerRegistry) и двух деклараций дневной гранульности в реестре main",
+        "agents_paths_absent": "шесть путей реестра main указывают на ИСКУПЛЕНИЕ/agents/… без gitPathState/declaredAbsentPrefixes: в main этих файлов нет по построению, их существование объявляю я",
+        "names_absent_files": "пять ссылок в реестре main называют файлы, которых в дереве нет вовсе (в том числе 10_W0_PRIMARY_TEXT_DORT…)",
+        "authority_arithmetic": "объявленный C-диапазон в двух ли́дерах (корпусном и synthesis) отстаёт от леджера C-24 — обе строки правит этот PR",
+        "reconciliation_absent": "в main нет документа сверки 17_ (его приносит этот PR)",
+        "adjacent_lane_undeclared": "соседний полемический лан docs/research/atonement/ не объявлен в adjacentLanes реестра main",
+        "spine_count": "в корне main 18 numbered-файлов вместо ожидаемых 19: недостающий — запись аудита 17_"
       },
       "arithmeticNeedle": "объявлен диапазон C-01…C-15, в леджере C-24",
-      "reading": "ложных ошибок нет ни одной; 17 из 19 — незарегистрированное состояние корпуса (в том числе требование декларировать охват), 2 — настоящий дрейф счётчика в двух ли́дерах. Замер на родителе — единственный способ отличить «корпус сломан» от «корпус просто не содержит этого PR»; число обязано пересниматься вместе с ростом гейта, иначе оно врёт тихонько",
+      "reading": "ни одной ложной ошибки и ни одного дефекта чужого текста: все 22 строки — следствие того, что в main ещё нет файлов этого PR (2 — нет самого провода, 4 — нет scope-записей и деклараций гранульности, 11 — пути и имена, которые объявляю я, 2 — дрейф C-диапазона в двух ли́дерах, 1 — нет документа сверки, 1 — не объявлен соседний лан, 1 — счётчик SPINE). Проверено не чтением, а предпросмером: на дереве main с наложенными девятью файлами тот же гейт даёт 0 ошибок (previewAfterMerge). Прежняя формулировка «17 из 19» относилась к запуску версии гейта до правил 12–15 и оставлена в previousMeasurement как история, а не вытерта.",
       "checkedAgainstMain20261022": true,
-      "recheckCommand": "git worktree add -q --detach /tmp/mainchk2 origin/main && cp scripts/validate_atonement_corpus_integrity.py /tmp/mainchk2/scripts/ && cd /tmp/mainchk2 && python3 -B scripts/validate_atonement_corpus_integrity.py | grep -cE '^\\s+- '",
+      "recheckCommand": "голый родитель: git worktree add -q --detach /tmp/mainchk origin/main && cp scripts/validate_atonement_corpus_integrity.py /tmp/mainchk/scripts/ && cd /tmp/mainchk && python3 -B scripts/validate_atonement_corpus_integrity.py | grep -cE '^\\s+- '   (ожидается 22);  предпросмер посадки: git worktree add -q --detach /tmp/mergeprev origin/main && for p in $(git -c core.quotepath=off diff --name-only origin/main...HEAD); do git show HEAD:\"$p\" > \"/tmp/mergeprev/$p\"; done && cd /tmp/mergeprev && python3 -B scripts/validate_atonement_corpus_integrity.py   (ожидается PASS)",
       "previousMeasurement": [
         {
           "errorsTotal": 17,
@@ -2696,10 +2701,121 @@
             "authority_arithmetic": 2
           },
           "method": "снималось тем же прогоном гейта на дереве origin/main в worktree (git worktree add --detach + cp скрипта + grep -cE '^\\s+- '); историческая запись, переснять её нельзя — можно только повторить прогон на том же коммите гейта"
+        },
+        {
+          "errorsTotal": 19,
+          "breakdown": {
+            "wire_absent": 2,
+            "root_inventory": 2,
+            "undeclared_dangling": 7,
+            "wave0_named_without_erratum": 5,
+            "authority_arithmetic": 2,
+            "measurement_declaration_undone_by_main": 1
+          },
+          "measuredAt": "2026-10-22T14:01Z",
+          "whyStale": "снято версией гейта до правил 12–15 и до уточнения классификации: четыре новых правила добавляют к прогону на голым main ошибки про отсутствующие scope-записи и дневную гранульность, а часть прежних категорий перестала быть отдельной строкой. Число 19 оставлено как история того запуска, а не как актуальное: актуальное переснимается командой recheckCommand",
+          "provenance": "значение взято не по памяти: /tmp/bare.gate того прогона был снят 22.10 в 19:0xZ, состав раскладки — из строк вывода; теперь переснято заново тем же прогоном в worktree",
+          "how": "переснимается буквально: git worktree add --detach /tmp/gate19 origin/main && mkdir -p /tmp/gate19/scripts && git show fc2bc94:scripts/validate_atonement_corpus_integrity.py > /tmp/gate19/scripts/validate_atonement_corpus_integrity.py && cd /tmp/gate19 && python3 -B scripts/validate_atonement_corpus_integrity.py | grep -cE '^\\s+- ' → 19. Проверено прогоном этого круга (см. measurementLadder20261022), а не памятью"
         }
       ],
       "arithmeticNeedleWhere": "вывод гейта на дереве origin/main (не исходник: сообщение собрано из f-строки и в тексте скрипта не встречается целиком); получить: recheckCommand выше",
-      "breakdownSumsToTotal": true
+      "breakdownSumsToTotal": true,
+      "previewAfterMerge": {
+        "filesOverlaid": 9,
+        "errorsAfterOverlay": 0,
+        "measuredAt": "2026-10-22T21:05Z",
+        "method": "предпросмер посадки: git worktree add --detach /tmp/merge-prev origin/main, затем для каждого пути из git -c core.quotepath=off diff --name-only origin/main...HEAD — git show HEAD:<путь> в то же дерево, и прогон гейта там; это ровно то, что увидит main после squash-мержа, потому что diff ветки и есть эти 9 файлов",
+        "recheckCommand": "см. шаг «Preview landing on main» в .github/workflows/atonement-corpus-integrity.yml — он выполняет то же наложение в CI на каждом push ветки",
+        "reading": "все 22 ошибки родителя относятся к отсутствию моих файлов (2 — нет integrityGate, 4 — нет scope-записей, 6+5 — пути реестра main на файлы, которых в main нет по построению, 2 — арифметика C-диапазонов в ли́дерах, 1 — нет документа сверки, 1 — не объявлен соседний полемический лан, 1 — счётчик SPINE). Ни одна не является дефектом чужого текста: значит мерж layer'а не делает каноническое дерево красным, а чинит его видимость. Правил, обязывающих владельца лана, я тем не менее не ослабляла — на предпросмере их просто нечего нарушать",
+        "note": "число снимается разово до мержа и не является живым счётчиком: его переснимает шаг CI, а не этот обход, поэтому в countsLive оно не входит"
+      },
+      "measurementLadder20261022": {
+        "rows": [
+          {
+            "gateCommit": "fc2bc94",
+            "gateLines": 684,
+            "errorsOnMain": 19,
+            "gateCommitTimeCommand": "git log -1 --format=%cI fc2bc94"
+          },
+          {
+            "gateCommit": "346ed62",
+            "gateLines": 652,
+            "errorsOnMain": 19,
+            "gateCommitTimeCommand": "git log -1 --format=%cI 346ed62"
+          },
+          {
+            "gateCommit": "26b5d31",
+            "gateLines": 634,
+            "errorsOnMain": 19,
+            "gateCommitTimeCommand": "git log -1 --format=%cI 26b5d31"
+          },
+          {
+            "gateCommit": "231763f",
+            "gateLines": 634,
+            "errorsOnMain": 19,
+            "gateCommitTimeCommand": "git log -1 --format=%cI 231763f"
+          },
+          {
+            "gateCommit": "2293dae",
+            "gateLines": 628,
+            "errorsOnMain": 19,
+            "gateCommitTimeCommand": "git log -1 --format=%cI 2293dae"
+          },
+          {
+            "gateCommit": "5b4199e",
+            "gateLines": 595,
+            "errorsOnMain": 18,
+            "gateCommitTimeCommand": "git log -1 --format=%cI 5b4199e"
+          },
+          {
+            "gateCommit": "494ff5e",
+            "gateLines": 556,
+            "errorsOnMain": 18,
+            "gateCommitTimeCommand": "git log -1 --format=%cI 494ff5e"
+          },
+          {
+            "gateCommit": "15d7e70",
+            "gateLines": 500,
+            "errorsOnMain": 18,
+            "gateCommitTimeCommand": "git log -1 --format=%cI 15d7e70"
+          },
+          {
+            "gateCommit": "40bb428",
+            "gateLines": 472,
+            "errorsOnMain": 18,
+            "gateCommitTimeCommand": "git log -1 --format=%cI 40bb428"
+          },
+          {
+            "gateCommit": "be2edfb",
+            "gateLines": 428,
+            "errorsOnMain": 18,
+            "gateCommitTimeCommand": "git log -1 --format=%cI be2edfb"
+          },
+          {
+            "gateCommit": "a348dc8",
+            "gateLines": 844,
+            "errorsOnMain": 22,
+            "gateCommitTimeCommand": "git log -1 --format=%cI a348dc8"
+          },
+          {
+            "gateCommit": "bf85f22",
+            "gateLines": 856,
+            "errorsOnMain": 22,
+            "gateCommitTimeCommand": "git log -1 --format=%cI bf85f22"
+          }
+        ],
+        "measuredAt": "2026-10-22T21:20Z",
+        "method": "каждая версия скрипта по очереди клалась в worktree дерева origin/main и прогонялась там: git worktree add --detach /tmp/gate19 origin/main; mkdir -p /tmp/gate19/scripts; git show <sha>:scripts/validate_atonement_corpus_integrity.py > /tmp/gate19/scripts/…; cd /tmp/gate19 && python3 -B scripts/validate_atonement_corpus_integrity.py; число ошибок = строки вывода с префиксом '- '. Это закрывает главный соблазн аудита: объяснять прежнее число ошибкой прошлого замерщика, когда вырос сам инструмент",
+        "recheckCommand": "ls /tmp/gate19 >/dev/null 2>&1 || git worktree add -q --detach /tmp/gate19 origin/main; затем по одной строке method на каждый sha",
+        "reading": "расхождение 19 → 22 объясняется ростом гейта (правила 12–15 требуют scope-записей и деклараций гранульности, которых в реестре main нет), а не изменением main; расхождение 18 → 19 — появлением правила о декларации охвата; 17 осталось у старой версии до расширения проверки на все ли́деры",
+        "breakdown": {
+          "18": 5,
+          "19": 5,
+          "22": 2
+        },
+        "versionGroups": 12,
+        "rowsTotal": 12
+      }
     }
   },
   "reproducibility20261022": {
@@ -2736,7 +2852,7 @@
     "rule": "отсюда твёрдый порядок: валидаторы → коммит → push → CI → синхрон тела PR, без «дочитаю и закоммичу одним». Дерево песочницы — кэш, а не хранилище; вывод не записывается в governance-файл, пока не переснимается командой",
     "countsLive": {
       "ключейРеестра": 30,
-      "правилГейта": 15,
+      "правилГейта": 16,
       "shaВсверкеВремен": 9,
       "строкВАудитеТопологии": 26,
       "removedFigures": {
@@ -2763,9 +2879,9 @@
   },
   "reconciliationDocument20261022": {
     "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-    "lines": 894,
+    "lines": 929,
     "sectionsH2": 16,
-    "sectionsH3": 15,
+    "sectionsH3": 16,
     "history": [
       {
         "lines": 791,
@@ -2774,7 +2890,7 @@
         "note": "числа, с которыми PR был отправлен владельцу; 16 разделов включали ## 15d, ошибочно поднятый на уровень родителя"
       }
     ],
-    "measuredAt": "2026-10-22T20:55Z",
+    "measuredAt": "2026-10-22T21:12Z",
     "method": "len() по строкам файла и счёт по префиксам '## ' / '### '; переснимается гейтом каждый прогон (правило 14), расхождение = ошибка, а не замечание",
     "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py"
   }
