@@ -5603,6 +5603,99 @@ suasionem*», а приняли «*roborat… suaviter*». Амиро говор
 нормализована. **П. 211:** титул «Eschantillon» **не встречен**; после гл. XII идёт продолжение трактата, значит
 «Eschantillon» — **позже** (искать в чанках 26–34). **П. 202** — без изменений.
 
+### 4.112. Q108 — Амиро, глава XII: необходимость без принуждения, ангелы и «тем необходимее, чем совершеннее». Пункт 214 закрыт (раунд 55)
+
+**0. Источник и объём.** Чанки **25** (сс. 126–131) и **26** (сс. 131–136), продолжение главы XII («*Que par
+cette manière d'agir Dieu ne ruine point la nature de la Volonté de l'homme*»). **S156**, класс **A2** (OCR).
+Прочитано **16 чанков из 74** (около 22 %). `EDITION_HOLD` — в силе.
+
+**1. Задача, которую надо было решить.** В §4.111 пп. 3–5 записано, что Амиро говорит «*il est impossible
+déformais que nous ne croyions*» и «*toute répugnance estant contrainte de céder*», — и поставлен вопрос (п. 214):
+**как это согласуется со свободою воли?** Ответ найден, и он снимает кажущееся противоречие: **Амиро различает
+необходимость и принуждение**. Формула у него своя, но различение — то же, что в дортском «*non coacte*».
+
+**2. Прямое отрицание принуждения — и определение принуждения.** «*Puis après, quelque efficace que cet Esprit
+desploye en nous, **il ne nous contraint ny violente pas** pourtant. Car **la contrainte gist à faire quelque
+chose contre sa volonté***» (с. 132).
+**Перевод:** «Затем, какую бы действенность этот Дух ни явил в нас, Он, однако, **не принуждает и не насилует**
+нас. Ибо принуждение состоит в том, чтобы делать что-либо **против своей воли**».
+**Это и есть различение** necessitas / coactio: **необходимость** действия совместима со свободою, **принуждение**
+— нет. И критерий принуждения у Амиро — **не «отсутствие возможности поступить иначе», а «действие против воли»**.
+
+**3. Довод от невозможности самого понятия.** «*Or qui a jamais ouy parler d'un homme qui creust quelque chose
+**malgré qu'il en euft**, ou d'un homme qui aimast quelque chose **contre sa volonté**? **La croyance est une
+persuasion. Et on ne persuade personne par la force.** Ce sont les raisons qui induisent les hommes à receuoir
+quelque verité, non la contrainte & la violence. Et l'amour est un mouvement de la volonté*» (с. 132).
+**Значение:** «верить против воли» — **противоречие в понятии**, а не трудный случай. Стало быть, если Бог даёт
+веру, Он **не может** дать её против воли; следовательно, от «невозможно не веровать» **не следует** «принуждён».
+Это логика, а не уступка.
+
+**4. Как Бог действует — «чрез посредство ума».** «*Dieu meut nos volontés, nos affections **par l'entremise de
+nos entendemens**, c'est conuenablement à leur nature. Car est-il pas clair que ces facultés inférieures
+dépendent de la superieure & suivent son mouvement?*» (с. 133). И образ машины: «*Comme donc en une machine où
+une roue dépend necessairement de l'autre… c'est une conuenable manière d'agir de mouuoir par le grand ressort la
+roue qui le touche immédiatement, & par celle-là encore l'autre*».
+**Значение:** порядок действия — **ум → воля → телесные действия**; Бог входит **в начало** этого порядка, а не
+ломает его. Отсюда его формула: «*Dieu excite nos affections & nos actions corporelles par le moyen de nos
+volontés, & nos volontés mesmes par l'interuention de l'intelligence*».
+
+**5. И — соединение обоих утверждений в одной фразе.** «*Il ouure nos entendemens & en dechasse les ténèbres
+naturelles… & y desploye une telle efficace qu'**il est impossible que nous ne les apperceuions & que nous n'y
+cédions, quelque résistance qu'y facent au commencement nos affections & nostre raison charnelle***» (с. 135).
+**Перевод:** «Он отверзает наш ум и изгоняет природную тьму… и являет там такую действенность, что **невозможно
+нам не воспринять и не уступить**, какое бы сопротивление ни оказывали вначале наши склонности и плотской
+разум».
+**Вот и всё различение в одной фразе:** «*impossible*» (необходимость) — и «*n'y cédions*» (действие самой воли,
+не против неё).
+
+**6. Довод от ангелов и от будущей славы — и он решающий (с. 129–130).** «*Et l'exemple des **Anges** & de
+l'estat futur de nostre glorification le monstre manifestement. Car **nul ne doute que les Anges ne foyent à cette
+heure en estat de ne pouuoir pécher**, & que nous ne deuions quand nous serons recueillis dans les cieux, estre
+d'une condition toute semblable. **Les Anges donc ont-ils perdu quelque liberté de leur volonté par la grâce de
+leur confirmation?** ou en deuons-nous perdre par nostre glorification future? Si ainsi est, c'est pour acquérir une
+beaucoup meilleure condition*».
+**Значение — и это сильнейший ход во всём трактате:** **«не мочь грешить» есть совершенство, а не утрата
+свободы**. Если ангелы и прославленные святые не могут грешить и это не считается умалением их природы, то и
+«*impossible de ne pas croire*» в обращении не есть насилие над природою. **Довод идёт от эсхатологии, а не от
+психологии** — и потому он не зависит от тонкостей в определении свободы.
+
+**7. «Тем необходимее, чем совершеннее» — и это уже прямая онтология необходимости.** «*C'est encore
+conuenablement à la nature de nos esprits, qui **plus ils font excellens, plus necessairement & ineuitablement
+sentent ils en eux & sur eux la puissance & efficace de ces choses***» (с. 136). И ниже: чем глубже укоренены
+добрые качества, «*plus hault aurons nous fait atteindre le point de nostre perfection*» (с. 129).
+**Значение:** у Амиро **необходимость возрастает вместе с совершенством**, а не убывает. Это прямая
+противоположность той антропологии, в которой «свобода» = «возможность выбрать иначе»: там совершенство требовало
+бы **сохранять** возможность греха. **Вывод для серии:** спор о свободе, который ведут с реформатским учением,
+есть спор **об определениях**, а не о фактах; и Амиро это показывает своим примером.
+
+**8. Что теперь закрыто и что подтверждено.**
+**(а) П. 214 закрыт.** Противоречия между «*impossible de ne pas croire*» и свободою у Амиро **нет**: он различает
+**необходимость** и **принуждение** и определяет принуждение как действие **против воли**.
+**(б) Пятое подтверждение узости спора.** По учению о благодати и свободе Амиро говорит в существе **то же**,
+что дортские делегации: действенно («*impossible*») и без принуждения («*ne contraint ny violente pas*»). Ср.
+принятое британское «*roborat… **efficaciter & suaviter***» (§4.100 п. 1) и отвергнутое «*in aequilibrio*»
+(§4.100 п. 4). **Различение необходимости и принуждения — общее достояние обеих сторон.**
+**(в) И потому — важнейший вывод для статьи:** обвинять реформатское учение в «принуждении воли» **нельзя не
+только по Дорту, но и по Сомюру**. Если статья строит свою антропологию на том, что «благодать не принуждает, а
+человек свободно соглашается», — она **не отличается от Амиро** и **не отличается от Дорта**; различие надо
+искать **не здесь**.
+**(г) Но у Амиро есть своя особенность, и её надо назвать.** Его схема — **интеллектуалистическая**: Бог
+действует на волю **чрез ум** («*par l'entremise de nos entendemens*»), и потому «необходимость» у него есть
+необходимость **умственного усмотрения**, а не «физическое» определение. Отсюда его собственная оговорка в главе
+XII: верующему **не нужно** доискиваться природы свободы, довольно **опытно чувствовать** действенность благодати
+(§4.111 п. 7). Это не уход от вопроса, а **признание его схоластической неразрешимости** для практических целей.
+
+**9. `LOCATOR_PARTIAL` — уточнение и одна гипотеза (помечается как гипотеза).** Чанки 25–26 продолжают основную
+пагинацию (126–136). Чанок 19 (сс. 56–60, §4.107) остаётся **вставкой иной пагинации**. **Гипотеза (не
+утверждение):** поскольку его содержание — избрание, Иаков и Исав, Рим. 9:15, «*à tastons*», «*degrés de
+l'efficace*» — это может быть **фрагмент «Eschantillon de la doctrine de Calvin»**, где Амиро излагает учение
+Кальвина его же словами. **Проверить** при нахождении титула (п. 215). До проверки **всякая атрибуция чанка 19
+остаётся под `LOCATOR_PARTIAL`**, и цитировать его как «слова Амиро» следует с оговоркой.
+
+**10. Оговорки.** `EDITION_HOLD` (1658, не 1634); прочитано 16 чанков из 74; французский OCR, орфография
+нормализована. **П. 202** — без изменений. **П. 211** — титул «Eschantillon» не встречен; после главы XII
+следует ожидать глав XIII и далее.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6122,6 +6215,7 @@ suasionem*», а приняли «*roborat… suaviter*». Амиро говор
 | 1658 *(раунд 53, продолжение; Амиро, глава X, сс. 105–110)* | **Моисей Амиро**: «*s'il ne leur donne pas d'y croire, ce n'est pas à dire pour cela qu'il leur **donne de n'y croire** pas*»; «*C'est bien le **Soleil** qui illumine la terre: mais ce n'est pas luy qui la rend tenebreuse. Elle a cela de sa **naturelle opacité***»; ожесточение — «*non pource qu'il **adiouste** de soy quelque chose à leur meschanceté, mais pour ce qu'il **ne l'oste pas***»; Бог «*livre les hommes à leurs **propres passions***» (Рим. 1:24); погибель — «*à qui imputera l'homme sa condamnation qu'à son **péché propre**?*»; наказание носит имя «***justice**, voire de justice exacte à merveilles*» |
 | 1658 *(раунд 54; Амиро, глава XI, сс. 111–116)* | **Моисей Амиро**: гл. XI — «*Du moyen par lequel Dieu accomplit cette condition de la Foy en ses Esleus… & de la connoissance qu'on en peut avoir*»; всеобщее определение стоит в ряду **условных**, и «*telle est… la certitude de l'exécution de la condition, telle aussi est la certitude de l'événement*»; рядом — определения «*qu'on nomme communément **absolus***» («*sans avoir égard à condition quelconque*»); «*Dieu prévoit… qui seront ceux qui seront sauvez, **pource qu'il a resolu de leur donner de croire***» ⇒ предведение **следует**, а не предшествует; «*si Dieu s'estoit contenté de proposer la grâce salutaire extérieurement seulement… **il seroit aisé de deviner qu'elle seroit universellement reiettée***»; «*le Soleil ne fera point reconnu en un pays où généralement tout le monde est aveuglé*»; **уверенность**: «*chacun fidelle sçait qu'il a esté esleu… **parce qu'il la sent en soy mesme***», чрез «*comparer les sentimens de son ame avec la description de la foy… qui se trouue en l'Escriture saincte*» |
 | 1658 *(раунд 54, продолжение; Амиро, главы XI–XII, сс. 117–126)* | **Моисей Амиро**: «***Dieu donc agist en deux façons envers nous pour nous faire croire en Christ***» — внешне (проповедь) и внутренне («*il agist tellement en nos entendemens **par son intérieure vertu**, qu'il en decharte le vice & les tenebres*»); «***il est impossible déformais que nous ne croyions***»; «***toute répugnance estant contrainte de céder à cette puissance***»; «*se peut-il faire aucune resistance qui rende l'événement douteux, ou qui préuale?*»; «*exécute ce décret d'une façon qui **ne rend nullement l'événement douteux***»; больной/бедняк: «*S'il le refuse, il faut necessairement qu'il **ignore** sa poureté ou la richesse du tresor*»; гл. XII: «*non seulement ils creussent en Christ, mais mesmes **qu'il leur fust impossible de ne pas croire***»; «*quel interest avons nous à la conservation de cette liberté, si son office est de nous maintenir… **autant portés à rejetter Jésus-Christ qu'à le recevoir***» |
+| 1658 *(раунд 55; Амиро, глава XII, сс. 126–136)* | **Моисей Амиро**: «*quelque efficace que cet Esprit desploye en nous, **il ne nous contraint ny violente pas** pourtant. Car **la contrainte gist à faire quelque chose contre sa volonté***»; «*qui a jamais ouy parler d'un homme qui creust quelque chose **malgré qu'il en euft**…? **La croyance est une persuasion. Et on ne persuade personne par la force***»; «*Dieu meut nos volontés, nos affections **par l'entremise de nos entendemens***»; «*il est **impossible** que nous ne les apperceuions & que nous n'y cédions, **quelque résistance** qu'y facent au commencement nos affections*»; **ангелы**: «***nul ne doute que les Anges ne foyent à cette heure en estat de ne pouuoir pécher***… *Les Anges donc ont-ils perdu quelque liberté de leur volonté par la grâce de leur confirmation?*»; «*plus ils font excellens, **plus necessairement & ineuitablement** sentent ils… la puissance & efficace de ces choses*» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6565,6 +6659,19 @@ suasionem*», а приняли «*roborat… suaviter*». Амиро говор
   recevoir*», не имеет цены. **Для статьи:** если «приложение» описано как согласие человека — это **не Амиро**.
   П. 211 — «Eschantillon» **позже** (искать в чанках 26–34).
 
+- **Раунд 55: Амиро, глава XII до конца (чанки 25–26, сс. 126–136).** Прочитано 16/74. **П. 214 ЗАКРЫТ.**
+  Противоречия между «*impossible de ne pas croire*» и свободою **нет**: Амиро различает **необходимость** и
+  **принуждение** — «*il ne nous contraint ny violente pas… **la contrainte gist à faire quelque chose contre sa
+  volonté***»; «*La croyance est une persuasion. Et on ne persuade personne par la force*»; «*Dieu meut nos
+  volontés… **par l'entremise de nos entendemens***». Соединение обоих в одной фразе: «*il est **impossible** que
+  nous ne les apperceuions & que nous n'y cédions, **quelque résistance** qu'y facent… nos affections*».
+  **Довод от ангелов:** «*nul ne doute que les Anges ne foyent à cette heure en estat de **ne pouuoir pécher***» —
+  «не мочь грешить» есть **совершенство**, а не утрата свободы ⇒ «*impossible*» в обращении не есть насилие.
+  И: «*plus ils font excellens, **plus necessairement***» — необходимость **возрастает** с совершенством.
+  **Пятое подтверждение узости спора;** вывод для статьи: обвинять реформатское учение в «принуждении воли»
+  **нельзя ни по Дорту, ни по Сомюру**. **Гипотеза (помечена):** чанок 19 может быть фрагментом «Eschantillon»
+  (изложение Кальвина его словами) — проверить по п. 215.
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -6668,6 +6775,18 @@ croire*» со свободою воли — и не вводит ли он ра
 216. *(раунд 54)* **Сопоставить таблицей** «modus / efficacia» у Амиро (§4.111 п. 5), у британцев
 («*roborat… suaviter*», «*infrustrabiliter*») и в отвергнутой тезе («*lenem tantum & moralem suasionem*») —
 вынести в `03_` как приложение к §27.
+
+**Добавлено в раунде 55:**
+
+217. *(раунд 55)* **Проверить гипотезу о чанке 19** (§4.112 п. 9): если это «Eschantillon», то текст об Иакове и
+Исаве, «*degrés de l'efficace*» и «*à tastons*» может быть **изложением Кальвина**, а не собственной позицией
+Амиро. До проверки цитировать с оговоркой. Искать титул в чанках 27–34.
+218. *(раунд 55)* **Прочитать главы XIII и далее** (чанки 27–30) — искать у Амиро место о **степенях веры** и о
+том, может ли избранный **на время** отпадать. Это прямое сопоставление с дортским V артикулом и с британским
+«*roborat… suaviter*».
+219. *(раунд 55)* **Свести таблицу «свобода / необходимость / принуждение»** по четырём источникам: Амиро
+(§4.112 пп. 2–7), британцы («*in aequilibrio*» отвергнуто; «*roborat… suaviter*» принято), Эмден (S153) и
+гелдерландцы (S145) — вынести в `03_` как приложение к §28.
 
 **Добавлено в раунде 48:**
 
