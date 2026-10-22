@@ -586,7 +586,7 @@ for _md in sorted(CORPUS.glob("*.md")):
 _msc = (reg.get("integrityGate") or {}).get("mixedScriptCheck") or {}
 if "exemptionsDeclared" in _msc and int(_msc["exemptionsDeclared"]) != _exempt_total:
     errors.append(
-        f"mixedScriptCheck.exemptionsDeclared = {_msc['exemptionsDeclared']}, по файлам — {_exempt_total}: "
+        f"mixedScriptCheck.exemptionsDeclared = {_msc['exemptionsDeclared']}, строк с маркером в периметре — {_exempt_total}: "
         "исключение из проверки — это тоже факт, он обязан быть переснят (grep -c '" + EXEMPT + "' ИСКУПЛЕНИЕ/*.md)"
     )
 

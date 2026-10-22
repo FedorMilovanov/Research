@@ -1440,7 +1440,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 20,
+        "корпус": 21,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -1465,7 +1465,7 @@
         "foundAt": "2026-10-22T13:20Z",
         "foundBy": "ручная перепроверка по запросу владельца, а не гейтом: расхождение нашлось, когда я переснял счётчик независимым обходом"
       },
-      "stampedFieldsDefinition": "число = сколько ключей формы at|measuredAt|checkedAt|measuredOn|measuredAtGit встречает сам обход walk_measure (рекурсивно, по всем пяти именам), а не число ключей верхнего уровня; считается гейтом на каждом прогоне и сверяется с этой записью",
+      "stampedFieldsDefinition": "число = сколько ключей формы at|measuredAt|checkedAt|measuredOn|measuredAtGit встречает сам обход walk_measure (рекурсивно, по всем пяти именам), а не число ключей верхнего уровня; считается гейтом на каждом прогоне и сверяется с этой записью; число считается по фактическому содержимому этого файла, поэтому оно обязано сходиться с обходом, включая поля самой этой сводки",
       "recheckCommandVerifiedAt": "2026-10-22T13:26Z",
       "recheckCommandNote": "команда снята исполнением: первый её вариант давал 21 и 2 вместо 20 и 0, потому что я написала re.match без якоря, и он ловил ключи, только начинающиеся на «at» (attribution). Патерналы правила и сверочной команды обязаны совпадать буквально — fullmatch тем же пяти именам"
     },
@@ -2469,37 +2469,55 @@
       "verdict": "из 18 несмерженных веток 6 не содержат ни одного исследовательского файла сверх main: 4 — побайтовый ноль, 2 — 18 и 24 строки инструкций в двух индексных файлах, которые main переписал новее. Удаление этих веток не теряет ничего, что main уже не superseded; если порядок чтения (цепочки 301/302/303) нужен как решение, его надо брать из ветки до удаления — в main этих строк нет"
     },
     "gateOnMainTree": {
-      "measuredAt": "2026-10-22T11:36Z",
-      "method": "git worktree add -q --detach /tmp/mainchk origin/main; cp scripts/validate_atonement_corpus_integrity.py /tmp/mainchk/scripts/; cd /tmp/mainchk && python3 -B scripts/validate_atonement_corpus_integrity.py | grep -cE '^\\s+- ' — и тот же скрипт на моём дереве",
-      "errorsTotal": 18,
-      "closedByThisPr": 18,
+      "measuredAt": "2026-10-22T14:01Z",
+      "method": "git worktree add -q --detach /tmp/mainchk3 origin/main; cp scripts/validate_atonement_corpus_integrity.py /tmp/mainchk3/scripts/; cd /tmp/mainchk3 && python3 -B scripts/validate_atonement_corpus_integrity.py; подсчёт grep -cE '^\\s+- '; переснято на гейте типа PR, потому что с прежнего замера в него добавилось правило",
+      "errorsTotal": 19,
+      "closedByThisPr": 19,
       "breakdown": {
         "wire_absent": 2,
         "root_inventory": 2,
         "undeclared_dangling": 7,
         "wave0_named_without_erratum": 5,
-        "authority_arithmetic": 2
+        "authority_arithmetic": 2,
+        "measurement_declaration_undone_by_main": 1
       },
       "breakdownLegend": {
         "wire_absent": "отсутствует сам провод PR: реестр main не знает integrityGate.script/.workflow",
         "root_inventory": "в корне main 18 numbered-файлов вместо 19: нет записи аудита 17_ (её приносит этот PR)",
         "undeclared_dangling": "висячие пути без gitPathState/declaredAbsentPrefixes: 6 × ИСКУПЛЕНИЕ/agents/… + не объявлен смежный лан в adjacentLanes",
         "wave0_named_without_erratum": "файлы, снятые wave-0, названы без erratum: 10_W0_PRIMARY_TEXT_DORT… + 4 × agents/0*_AGENT_BRIEF…",
-        "authority_arithmetic": "conflict ledger C-24 против объявленного C-01…C-15 — теперь в ОБОИХ ли́дерах (корпусном и synthesis), по одной ошибке на каждый"
+        "authority_arithmetic": "conflict ledger C-24 против объявленного C-01…C-15 — теперь в ОБОИХ ли́дерах (корпусном и synthesis), по одной ошибке на каждый",
+        "measurement_declaration_undone_by_main": "правило требует, чтобы охват правил (1)-(3) был задекларирован в реестре; на main реестр есть, а integrityGate в нём нет — эту ошибку закрывает этот же PR"
       },
       "arithmeticNeedle": "объявлен диапазон C-01…C-15, в леджере C-24",
-      "reading": "ложных ошибок нет ни одной; 16 из 18 — незарегистрированное состояние корпуса, 2 — настоящий дрейф счётчика в двух ли́дерах. Замер на родителе — единственный способ отличить «корпус сломан» от «корпус просто не содержит этот PR»: на собственном дереве гейт PASS по построению. Все 18 закрывает #216. Отдельный выловленный дефект: в прозе 17_ группы были разложены как 4+11+1=16 при заявленных 17 — сумма не сходилась, и ни одна проверка этого не видел; разложение теперь машинное (breakdown), проза обязана давать ту же сумму",
+      "reading": "ложных ошибок нет ни одной; 17 из 19 — незарегистрированное состояние корпуса (в том числе требование декларировать охват), 2 — настоящий дрейф счётчика в двух ли́дерах. Замер на родителе — единственный способ отличить «корпус сломан» от «корпус просто не содержит этого PR»; число обязано пересниматься вместе с ростом гейта, иначе оно врёт тихонько",
       "checkedAgainstMain20261022": true,
       "recheckCommand": "git worktree add -q --detach /tmp/mainchk2 origin/main && cp scripts/validate_atonement_corpus_integrity.py /tmp/mainchk2/scripts/ && cd /tmp/mainchk2 && python3 -B scripts/validate_atonement_corpus_integrity.py | grep -cE '^\\s+- '",
-      "previousMeasurement": {
-        "errorsTotal": 17,
-        "measuredAt": "2026-10-22T10:39Z",
-        "whyStale": "снято прежней версией проверки, которая читала только корпусный ли́дер; после расширения до всех 00_*AUTHORITY*.md арифметических ошибок стало две (корпус + synthesis). Число 17 оставлено здесь как история, а не вытерто: оно было верным для той версии гейта",
-        "provenance": "значение взято не по памяти: git show c4ea5947:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | путь branchTopologyAudit20261022.gateOnMainTree.measuredAt",
-        "recheckCommand": "git show c4ea5947:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | python3 -c 'import json,sys;print(json.load(sys.stdin)[\"branchTopologyAudit20261022\"][\"gateOnMainTree\"][\"measuredAt\"])'",
-        "method": "время берётся из коммита, а не из памяти: тот же recheckCommand; сравнивать с TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd c4ea5947 (коммит был записан в 10:39Z прогона, съёмка — в ту же минуту)"
-      },
-      "arithmeticNeedleWhere": "вывод гейта на дереве origin/main (не исходник: сообщение собрано из f-строки и в тексте скрипта не встречается целиком); получить: recheckCommand выше"
+      "previousMeasurement": [
+        {
+          "errorsTotal": 17,
+          "measuredAt": "2026-10-22T10:39Z",
+          "whyStale": "снято прежней версией проверки, которая читала только корпусный ли́дер; после расширения до всех 00_*AUTHORITY*.md арифметических ошибок стало две (корпус + synthesis). Число 17 оставлено здесь как история, а не вытерто: оно было верным для той версии гейта",
+          "provenance": "значение взято не по памяти: git show c4ea5947:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | путь branchTopologyAudit20261022.gateOnMainTree.measuredAt",
+          "recheckCommand": "git show c4ea5947:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | python3 -c 'import json,sys;print(json.load(sys.stdin)[\"branchTopologyAudit20261022\"][\"gateOnMainTree\"][\"measuredAt\"])'",
+          "method": "время берётся из коммита, а не из памяти: тот же recheckCommand; сравнивать с TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd c4ea5947 (коммит был записан в 10:39Z прогона, съёмка — в ту же минуту)"
+        },
+        {
+          "errorsTotal": 18,
+          "measuredAt": "2026-10-22T11:36Z",
+          "whyStale": "снято версией гейта до правила о декларации охвата; само правило добавляет на дереве main ещё одну ошибку (реестр там есть, integrityGate в нём нет), поэтому честное число на сегодняшнем гейте — 19",
+          "breakdown": {
+            "wire_absent": 2,
+            "root_inventory": 2,
+            "undeclared_dangling": 7,
+            "wave0_named_without_erratum": 5,
+            "authority_arithmetic": 2
+          },
+          "method": "снималось тем же прогоном гейта на дереве origin/main в worktree (git worktree add --detach + cp скрипта + grep -cE '^\\s+- '); историческая запись, переснять её нельзя — можно только повторить прогон на том же коммите гейта"
+        }
+      ],
+      "arithmeticNeedleWhere": "вывод гейта на дереве origin/main (не исходник: сообщение собрано из f-строки и в тексте скрипта не встречается целиком); получить: recheckCommand выше",
+      "breakdownSumsToTotal": true
     }
   },
   "reproducibility20261022": {
