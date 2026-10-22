@@ -1176,6 +1176,29 @@
       "draftA1": "1zlK97uW5wEByt_3HUEYBE5NCdLr-wPQ1",
       "ssot": "1yMiPi3vv-3TjapCeMKNn5JleHgyAv9-_",
       "fallbackReadme": "1lPGvBuvCEI-D3AYxtsR379BZGO3_I5Ko"
+    },
+    "conflictRange": {
+      "authority": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+      "ledger": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+      "ledgerEntries": 24,
+      "ledgerMaxIndex": 24,
+      "leadersDeclaringRange": {
+        "ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md": "C-01…C-24",
+        "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md": "C-01…C-24 (дополнение 2026-10-22; прежние 15 и 16 оставлены как история)"
+      },
+      "leadersWithoutRange": [
+        "ИСКУПЛЕНИЕ/fathers/00_FATHERS_AUTHORITY_2026-10-07.md",
+        "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md",
+        "ИСКУПЛЕНИЕ/ot/00_OT_AUTHORITY_2026-10-08.md"
+      ],
+      "statusesDeliberatelyNotMirrored": "числа статусов не переносятся ни в один ли́дер: в леджере есть сводная таблица; дубль числа = источник дрейфа, а не контроль",
+      "measuredAt": "2026-10-22T11:26Z",
+      "method": "git ls-tree -r --name-only HEAD -- ИСКУПЛЕНИЕ | grep -E '/00_[A-Z_]*AUTHORITY' (5 файлов); для каждого grep -oE 'C-[0-9]{2}[.…]+C-[0-9]{2}' | sort -u; леджер: grep -cE '^## C-[0-9]{2}\\.' ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md (=24) и максимум \\bC-([0-9]{2}) (=24)",
+      "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py  # проверка сверяет объявленный диапазон каждого 00_*AUTHORITY*.md с леджером и требует нумерации без пропусков",
+      "beforeFix": {
+        "corpusLeader": "C-01…C-24 (обновлено этим PR раньше)",
+        "synthesisLeader": "C-01…C-15, «15 зафиксированных расхождений» — машина не видела, проверка была привязана к одному файлу"
+      }
     }
   },
   "owenGooldVolXPageMap": {
@@ -1687,12 +1710,14 @@
       },
       {
         "what": "synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md объявляет «реестр расхождений C-01…C-15» и «15 зафиксированных расхождений» (стр. 68), тогда как synthesis/02_CONFLICT_LEDGER.md в main доведён до C-24. Файл с датой в имени, поэтому это намеренный снимок либо дрейф — решает владелец; в 00_CURRENT_AUTHORITY тот же счётчик этот PR обновил до C-24 с датой",
-        "whyNotFixedHere": "гейт вычитает диапазон только из корпусного ли́дера (AUTHORITY), до synthesis-лидера проверка не доходит — расхождение машиной не поймано; расширять периметр проверки на оба ли́дера — решение владельца. Молча править чужой счётчик хуже, чем незакрытое замечание",
+        "whyNotFixedHere": "было (решение не принято молча): гейт читал диапазон только из корпусного ли́дера — 22.10 расширено до всех authority-файлов, расхождение закрыто дополнением; числа статусов сознательно не дублируются",
         "measuredAt": "2026-10-22T10:39Z",
         "method": "git show origin/main:ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md | grep -oE 'C-[0-9]{2}[.…]+C-[0-9]{2}' | sort -u  — и то же для HEAD; максимум леджера: git show origin/main:ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md | grep -oE 'C-[0-9]{2}' | sort -u | tail -1",
         "recheckCommand": "тот же, что в method; ожидаемое расхождение: C-01…C-15 и в main, и в HEAD (моим PR не тронут)",
         "checkedAgainstMain20261022": true,
-        "applied": false
+        "applied": true,
+        "appliedAt": "2026-10-22T11:26Z",
+        "appliedHow": "не подмена числа, а датированное дополнение по конвенции самого файла (раунды 2–18 тоже дописаны): объявлен диапазон C-01…C-24, прежние 15/16 остались в тексте как история; проверка гейта расширена с одного названного файла на все 00_*AUTHORITY*.md корпуса, поэтому пассивный теперь не пройдёт"
       }
     ],
     "mirrorLag": {

@@ -271,13 +271,29 @@ CONFLICTS = CORPUS / "synthesis" / "02_CONFLICT_LEDGER.md"
 if not CONFLICTS.is_file():
     errors.append("conflict ledger absent: synthesis/02_CONFLICT_LEDGER.md")
 ledger = read(CONFLICTS)
+entries = [int(n) for n in re.findall(r"(?m)^## C-(\d{2})\.", ledger)]
 actual = max((int(n) for n in re.findall(r"\bC-(\d{2})\b", ledger)), default=0)
-claimed = [int(n) for n in re.findall(r"C-\d{2}\s*[.…]+\s*C-?(\d{2})", read(AUTHORITY))]
-if claimed and actual and max(claimed) != actual:
+# нумерация без разрывов: 24 заголовка должны давать ровно C-01…C-24, иначе «максимум» и «число»
+# расходятся, и ли́дер, сверенный по максимуму, врёт всё равно
+if entries and actual and (sorted(set(entries)) != list(range(1, actual + 1))):
+    gaps = sorted(set(range(1, actual + 1)) - set(entries))
+    dups = len(entries) - len(set(entries))
     errors.append(
-        f"conflict ledger holds C-01…C-{actual:02d} while the corpus authority claims "
-        f"…C-{max(claimed):02d}: update the authority, do not leave the count stale"
+        f"conflict ledger: max index C-{actual:02d}, но записей `## C-NN.` — {len(set(entries))} "
+        f"(пропуски {gaps[:6]}, повторных номеров {dups}): у каждого расхождения ровно один номер"
     )
+# сверяется КАЖДЫЙ объявленный диапазон, а не один названный мной путь: дрейф жил во втором ли́дере
+# (synthesis/00_SYNTHESIS_AUTHORITY объявлял C-01…C-15 при леджере C-24), и проверка по одному
+# файлу его пропускала по построению
+for auth in sorted(CORPUS.rglob("00_*AUTHORITY*.md")):
+    claimed = [int(n) for n in re.findall(r"C-\d{2}\s*[.…]+\s*C-?(\d{2})", read(auth))]
+    if claimed and actual and max(claimed) != actual:
+        errors.append(
+            f"{auth.relative_to(ROOT)}: объявлен диапазон C-01…C-{max(claimed):02d}, в леджере "
+            f"C-{actual:02d} ({len(set(entries))} записей) — обнови ли́дер, не оставляй счётчик устаревшим; "
+            "переснять: grep -cE '^## C-[0-9]{2}\\.' synthesis/02_CONFLICT_LEDGER.md. Числа статусов "
+            "в ли́дер не переносить: они сведены таблицей в самом леджере (дубль числа и есть источник дрейфа)"
+        )
 
 # ------------------------------------------------------------ merge hygiene --
 # соседний лан конфликтует с корпусом по 27 путям (предполёт 2026-10-16), поэтому закоммиченные
