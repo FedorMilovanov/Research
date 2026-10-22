@@ -5064,6 +5064,120 @@ puissances il y a en l'homme de se convertir ainsi**)*» — глава о си�
 исключающая** (пп. 5–6); (3) **основание всеобщности в творении, а не в цене крови** (п. 2). И одно **общее**
 место — **аргумент от серьёзности** (п. 8), который обе стороны обращают друг против друга.
 
+### 4.106. Q102 — Амиро о бессилии человека: «мы ничего здесь не содействуем», избрание «чтобы дать им веру» и «вера не предполагается, а созидается» (раунд 51)
+
+**0. Источник и объём.** Чанки 16–17 — **сс. 81–90**: конец главы о бессилии человека и **начало главы IX** об
+избрании. Источник — **S156** (Амиро, *Brief traité de la predestination*, Сомюр, 1658; IA
+`brieftraitdela00amyr`), класс **A2** (OCR). Прочитано **6 чанков из 74** (около 8 %); `EDITION_HOLD` — в силе.
+
+**1. Возражение, которое Амиро сам ставит и сам отвергает.** «*Et pource qu'encore que la pluspart des hommes
+rejettent l'Evangile de Christ, si est-ce pourtant qu'il y en a quelques uns qui le reçoivent, & qu'à cette
+occasion **on pourroit penser que si l'incrédulité est ordinaire, elle n'est pas absolument universelle pourtant,
+mais dépend de la liberté de la volonté de l'homme, qui se porte en quelques uns au bien, & dans les autres au
+mal***» (с. 81). Это **в точности** то возражение, которое серия разбирает с раунда 26: «разница — в решении
+человека». Амиро его **отвергает** и отвечает: «*l'Escriture attribue **sans aucune variation** la foy par
+laquelle nous embrassons Christ **à l'operation de Dieu en nous***».
+
+**2. Писание о том же (с. 81–83).** «*C'est luy qui nous oste le cœur de pierre pour nous en donner un de
+chair; qui nous transporte du royaume de ténèbres au royaume de lumière; **qui fait en nous le vouloir & le
+parfaire selon son bon plaisir**; qui nous illumine, qui nous renouuelle, qui nous régénère, qui nous vivifie,
+qui nous fait nouvelles créatures, & nous crée derechef, qui nous ente au corps de son Fils, qui nous appelle,
+qui nous tire, qui nous donne de croire en Christ*». — Заметь: **Фил. 2:13** приведён здесь как
+доказательство того, что **самое хотение** даётся Богом, то есть ровно так, как его употребляли
+реформатские делегации (ср. «*det electis… & posse, & velle, & perficere*», §4.100 п. 2).
+
+**3. Прямое отрицание всякого содействия.** «*Paroles qui monstrent assez que **nous ne contribuons icy rien à
+l'efficace** par laquelle nos entendemens sont induits à recevoir la doctrine de salut, & nos volontez à la
+suivre*» (с. 83). И основание — Ин. 6:44: «*nul ne peut venir à luy… croire en luy, si son Père ne le me*»
+(«*Apres cela qui doutera de nostre naturelle impuissance?*»).
+
+**4. Бессилие описано так, как его описывал Дорт.** «*Cette impuissance vient de ce que nous sommes meschans…
+le vice qui est en nous y a jetté ses racines si avant… s'y est acquis **un empire si absolu**, possede
+tellement toutes les facultés de nos âmes, que **non seulement nous ne nous en sçaurions dégager quand nous le
+voudrions**… **mais mesme qu'il est impossible que nous le vueillons**»; «*nos facultés ne sont pas seulement
+**débilitées** par le vice… mais elles sont **tout à fait asservies au mal & mortes quant au sentiment du
+bien***» (сс. 85–86).
+**Это язык III–IV артикулов Дорта, а не язык уступительной антропологии.** «Не только не можем освободиться,
+когда бы захотели, но и невозможно, чтобы мы захотели» — формула «*non posse*», а не «*nolle*».
+И образ, который стоит запомнить: слепота ума сравнита с «*un cal qui naist sur la prunelle de l'œil & oste
+entièrement la faculté de la veue*» — **катаракта**, снимающая самое способность видеть, а не только зрение.
+
+**5. Бессилие не извиняет, а увеличивает вину (с. 86).** «*Plus une telle disposition de l'ame est forte,
+profonde & invétérée, plus est-elle meschante, & plus elle est meschante, **plus merite-t-elle de blasme**.
+Ainsi **tant s'en faut que l'impuissance de cette nature excuse l'incrédulité**, que plus grande elle est, &
+plus merite-t-elle de blasme & de peine*». И довод: «*Autrement **les Diables** ne meriteroient point de
+supplice, pource qu'ils ne peuuent faire autre chose que pécher*». — Это **стандартный реформатский ответ** на
+возражение «бессилие извиняет» (ср. британскую отвергнутую тезу IV и §4.100 п. 4). На этом пункте Амиро
+**не расходится** с Дортом.
+
+**6. Глава IX: избрание есть определение исполнить условие в некоторых (с. 87).** Заголовок: «*Quelle est
+l'Eslection & Prédestination de Dieu, par laquelle il a ordonné **d'accomplir en quelques uns cette
+condition**, & **laisser les autres à eux mesmes**; & quelle en est la cause*». И далее: «*…ce que l'on appelle
+Election ou Prédestination, où il monstre… les abondamment excellentes richesses de sa miséricorde envers ceux
+qu'il a **éleus & predestinez pour leur donner la foy**, & sa sévérité envers ceux qu'il a **abandonnez à eux
+mesmes**, & sa **souveraine liberté** en la dispensation de cet adorable mystère*».
+**Три последствия:** (а) избрание у Амиро — **к вере**, а не к лицу вне Христа; (б) есть **оставление**
+(«*laisser… à eux mesmes*») — то есть *praeteritio* признана; (в) основание — «*souveraine liberté*», а не
+предусмотренная вера. **Стало быть, «избрание по предвиденной вере» Амиро не учит**, и обвинение в этом
+снимается его собственным текстом.
+
+**7. Почему понадобилось второе определение — довод от «тщетности» (с. 87).** «*Si Dieu n'eust pris autre
+conseil en ordonnant d'envoyer son Fils au monde, que de le proposer pour Rédempteur universellement à tous,
+pour grande que soit la charité de laquelle ce conseil procède, si eust-elle esté **inutile au genre humain**, &
+l'envoy & les souffrances de son Fils **entièrement frustratoires***». Затем —
+«*il ne restoit plus qu'un moyen d'y parvenir, c'est de desployer une telle **efficace** de sa puissance en
+l'homme, qu'elle **surmontast** tout ce qu'il y a de corruption en son entendement & en sa volonté, pour le faire
+croire & embrasser la grâce qui luy est offerte*».
+**Это и есть амиральдианская конструкция двух определений, изложенная самим Амиро:** (1) определение послать
+Сына как всеобщего Искупителя — с условием веры; (2) определение **дать веру** некоторым. И довод от тщетности
+стоит **между** ними: без второго первое было бы «совершенно тщетным».
+
+**8. Главное: вера не предполагается, а созидается (с. 89–90).** «*…encore presuppose-t-elle en l'homme une
+condition qui luy est sortable… à sçavoir **la foy au Rédempteur**, laquelle se tesmoigne en repentance. Sans
+cela il ne veut pas que cette sienne miséricorde nous soit d'aucun usage*». И тотчас: «*Mais en cecy **tant s'en
+faut que l'amour de Dieu puisse presupposer cette condition en l'homme, qu'il faut necessairement presupposer
+qu'elle n'y est pas, & mesmes qu'elle n'y peut estre, sinon que **luy-mesme l'y crée par sa puissance***».
+Затем Еф. 2:4–5: «*Dieu s'est monstré riche en miséricorde par sa grande charité de laquelle il nous a aimez,
+lors mesmes que nous estions **morts en nos fautes**, il nous a vivifiez ensemble avec Christ*».
+**Формулировать в серии так:** у Амиро условие спасения — вера, но вера **не условие, приносимое человеком**:
+Бог **созидает** её в нём. Это снимает главное обвинение против сомюрской схемы — и одновременно показывает,
+что схема держится не на «решении человека», а на **двух определениях**.
+
+**9. Не слышавшие: не оправдание, а основание осуждения (с. 85 — окончание, чанок 17).** «*…elle ne sera pas
+condamnée pource qu'elle ait **réellement & de fait méprisé le nom de Christ**, mais pource qu'elle aura
+**méprisé la voix des Cieux, & le cry de la providence & de la patience de Dieu, qui l'appelloit à
+repentance**. En quoy elle a donné assez de tesmoignages qu'il y a en elle… **une dureté de cœur invincible**,
+que quand Christ luy auroit esté annoncé au plus hautement & clairement qu'il a esté en Jerusalem, elle
+l'auroit méprisé de mesmes*».
+**Поправка к собственному изложению (§4.104 п. 3а, `synthesis/03_` §21.3а).** Там сказано: Амиро не учит, что
+не слышавшие спасаются. Теперь видно **точнее**: вторая проповедь у него служит **прежде всего основанием
+осуждения**, а не путём спасения: она делает неверие неизвинительным. Спасение через неё мыслится лишь
+**гипотетически** («*si… se convertist véritablement*», с. 68). **Первое изложение не отменяется, но
+уточняется: акцент второго откровения — судебный.**
+
+**10. Что это меняет для оценки статьи — и для нашей же полемики.**
+**(а) Обвинение «Амиро учит, что человек решает сам» его текстом опровергнуто** — тремя формулами:
+«*nous ne contribuons icy rien à l'efficace*», «*impossible que nous le vueillons*», «*luy-mesme l'y crée par sa
+puissance*». **Полемика, приписывающая ему это, запрещена** (§4.103 п. 7 — теперь не как предостережение, а как
+установленный факт; п. 208 закрыт в существе).
+**(б) Схема Амиро в законченном виде:** всеобщее условное определение + полное бессилие человека + **второе
+определение дать веру** некоторым + вера, **созидаемая** Богом. Это не полупелагианство и не «предвиденная
+вера». Это **последовательный гипотетический универсализм**.
+**(в) Где же тогда расхождение с Дортом?** Не в антропологии (здесь Амиро совпадает), а **в предмете первого
+определения**: у Амиро Бог определяет послать Сына «*pour Rédempteur universellement à tous*» с условием; у
+Дорта определение даёт Сына **за определённых** и **приобретает самое приложение**. Отсюда — два разных ответа
+на вопрос, **что приобрела кровь**: возможность или самое обладание.
+**(г) Для статьи Прокопенко:** её схема (всеобщее приобретение + частное приложение) **совпадает с амировской
+по форме**, но у Амиро второе звено — не «приложение купленного», а **созидание веры в человеке**, который сам
+её произвести не может. Если в статье второе звено описано только как «применение», она **слабее** Амиро: у
+него различие проводится в **действии Бога в человеке** (непреодолимо «*surmontast*»), а не в бухгалтерии
+приобретения.
+
+**11. Оговорки.** Издание 1658 г. (`EDITION_HOLD`); прочитано 6 чанков из 74 (около 8 %); французский OCR,
+орфография нормализована. **`LOCATOR_PARTIAL` на номера глав в §4.103 пп. 3–4:** по чанку 17 глава IX
+начинается на с. 87 с заголовка об избрании, следовательно материал о «двух благодатях» относится, вероятно,
+к **главе VIII**; содержание §4.103 пп. 3–4 **в силе**, номера глав требуют перепроверки.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -5577,6 +5691,7 @@ puissances il y a en l'homme de se convertir ainsi**)*» — глава о си�
 | 1658 *(раунд 50; первое чтение амиральдианского первоисточника)* | **Моисей Амиро, *Brief traité de la predestination*** (Сомюр, Desbordes, 1658; IA `brieftraitdela00amyr`, сс. 76–95, гл. VII–IX): «la grâce est **universelle** & présentée à tous les hommes», но «cette charité **ne passe pas cette mesure**… pourveu qu'ils ne le refusent pas»; «Dieu veut le salut de tous les hommes… **pourveu qu'ils croyent**. S'ils ne croyent point, il ne le veut pas»; благодать «**entièrement inefficacieuse**» без исполнения условия; «l'**efficace particulière** de la grâce **universelle**»; две благодати: первая — «généralement tout le genre humain», вторая — «n'en regarde qu'vne partie seulement»; неверие — от «leur propre dureté & obstination», а «l'incrédulité des autres **ne vient pas de leur reprobation**… mais de leur propre aveuglement»; основание различия — «la **libre volonté de Dieu**», ибо «ils estoient **également** miserables… également coupables» |
 | 1658 *(раунд 51; Амиро, глава VII, сс. 70–74)* | **Моисей Амиро, *Brief traité de la predestination***: «il y a **de deux sortes de prédication de Christ**… de deux sortes de connoissance de Christ qui amèneroient au salut»; вторая — «par l'entremise de la **providence de Dieu seulement**… suffisante pour **rendre les hommes jouyssans du salut**» — **прямое противоречие эмденскому «Alius modus salvandi homines… in Scriptura non traditur»** (1619); 1 Ин. 2:2, 1 Тим. 2:4–6, Тит. 1, Ин. 3:16 — «grâce… destinée à **tout le genre humain**»; «tout ce que Dieu desploye de miséricorde… **en quelque manière que ce soit**, vient de ce que sa justice a esté **appaisée par le sacrifice de son Fils**»; «**il estoit absolument impossible que les hommes fussent sauvez malgré qu'ils en eussent**»; «autant… comme **d'illuminer une chose qui demeure tenebreuse nonobstant**, ou en redresser une autre qui… demeure tortue» |
 | 1658 *(раунд 51; Амиро, начало главы VII, сс. 64–68)* | **Моисей Амиро**: заголовок гл. VII — «*Quelle est la nature du conseil & de la Volonté… **soit pour son étendue, soit pour la condition qui y est annexée***»; основание всеобщности — не цена крови, а «*la **compassion** qu'il a eue d'eux, **comme de ses créatures**… **puis qu'ils sont ses créatures indifféremment**, la grâce… **a deu estre universelle***»; «*ny **jusques là**, il n'y a **point de différence entr'eux***»; «*Le sacrifice… **a esté pour tous**; & le salut… **est destiné à tous**, pourveu… que la disposition nécessaire… soit en tous de mesmes*»; частность Израиля — «*renouueller la mémoire*» обетования о семени жены, «*Mais cela fait, **tous les peuples de la terre ont esté appelez***»; «*ny **aucun peuple**, ny mesmes **aucun homme exclus par la volonté de Dieu***»; вторая проповедь — «*une prédication suffisante, s'ils y estoient attentifs*» (Рим. 2:4); «***Dieu est trop bon, & s'il faut user de ce mot, trop serieux, pour presenter aux hommes de vaines espérances***» |
+| 1658 *(раунд 51; Амиро, главы о бессилии и об избрании, сс. 81–90)* | **Моисей Амиро**: отвергает мысль, будто разница «*dépend de la liberté de la volonté de l'homme*»; «*l'Escriture attribue **sans aucune variation** la foy… **à l'operation de Dieu en nous***»; «**nous ne contribuons icy rien à l'efficace**»; «*non seulement nous ne nous en sçaurions dégager quand nous le voudrions… mais mesme qu'il est **impossible que nous le vueillons***»; «*elles sont **tout à fait asservies au mal** & mortes quant au sentiment du bien*»; «*plus grande elle est* [impuissance], *& plus **merite-t-elle de blasme***»; глава IX: избрание — «*d'**accomplir en quelques uns cette condition**, & **laisser les autres à eux mesmes***», «*éleus & predestinez **pour leur donner la foy***»; довод от тщетности: без второго определения первое было бы «***inutile au genre humain***», а страдания Сына «***entièrement frustratoires***»; благодать «***surmontast*** tout ce qu'il y a de corruption»; «*tant s'en faut que l'amour de Dieu puisse **presupposer** cette condition en l'homme, qu'il faut necessairement presupposer **qu'elle n'y est pas**… sinon que **luy-mesme l'y crée par sa puissance***»; не слышавшие: «*ne sera pas condamnée pource qu'elle ait… méprisé le nom de Christ, mais pource qu'elle aura **méprisé la voix des Cieux***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -5948,6 +6063,17 @@ puissances il y a en l'homme de se convertir ainsi**)*» — глава о си�
   от серьёзности **общий для обеих сторон**; Амиро и Дорт спорят о том, **где** она полагается (в содержании
   предложения / в действенности определения). **П. 202 — продвинут, не закрыт** (буквальной формулы «égale et
   universelle» нет; субстанция — на с. 64–65). `EDITION_HOLD`, `EVIDENCE_HOLD` (4 чанка из 74) — в силе.
+
+- **Раунд 51, продолжение 2: Амиро о бессилии и об избрании (чанки 16–17, сс. 81–90).** Прочитано ещё 2/74.
+  **Главный результат раунда:** обвинение «Амиро учит, что человек решает сам» **опровергнуто его собственным
+  текстом** — «*nous ne contribuons icy rien à l'efficace*», «*impossible que nous le vueillons*», «*luy-mesme
+  l'y crée par sa puissance*», при Фил. 2:13 и «*tout à fait asservies au mal*». **Глава IX** (с. 87): избрание —
+  «*d'accomplir en quelques uns cette condition, & laisser les autres à eux mesmes*», «*predestinez **pour leur
+  donner la foy***» ⇒ не «предвиденная вера». **Довод от тщетности** («*inutile au genre humain*… *entièrement
+  frustratoires*») — амиральдианская конструкция двух определений в его собственных словах. **Поправка к
+  §4.104 п. 3а:** вторая проповедь служит прежде всего **основанием осуждения**, спасение через неё —
+  гипотетично. **П. 208 закрыт в существе.** **`LOCATOR_PARTIAL`** на номера глав: глава IX начинается на с. 87
+  (избрание) ⇒ «две благодати», вероятно, глава VIII; содержание §4.103 пп. 3–4 в силе.
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
