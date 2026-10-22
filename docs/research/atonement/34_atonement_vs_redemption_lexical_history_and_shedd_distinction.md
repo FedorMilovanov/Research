@@ -6133,6 +6133,97 @@ n'auoir point de franc-arbitre**… **nous pourroit estre legitime excuse deuant
 **12. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); прочитано **21 чанк из 74** (~28 %); французский OCR; пагинация
 «Eschantillon» своя (сс. 197–212 прочитаны); цитаты Кальвина **не сверены** с изданием (**п. 227**).
 
+**13. ПОПРАВКА 2 (раунд 56, часть 7; уточнение к п. 10).** Прочитаны чанки **29** и **31**: это ещё **трактат**
+(колонтитул «*Traitté*» / «*de la Predestination*»), сс. **147–152** и **156–161**. Значит, «Eschantillon»
+**начинается где-то между сс. 161 и 192**, то есть **не ранее чанка 32**. **Верная оценка объёма: не «200+», а
+порядка 50–60 страниц** до с. 212 и, возможно, больше (конец раздела не найден). **Что остаётся верным из п. 10:**
+(а) пагинация «Eschantillon» — **сплошная с томом**, а не своя (сс. 192–212 прочитаны подряд); (б) «Eschantillon» —
+**не приложение на пять страниц**; (в) **гипотеза о чанке 19 (сс. 56–60) ослаблена**: если пагинация сплошная, то
+сс. 56–60 — либо **другой счёт** (второй титул?), либо листы **другого экземпляра**. **П. 228 — снова открыт** и
+требует чтения колонтитула чанка 19, а не арифметики.
+
+### 4.117. Q113 — Два места, которые ставят всё на место: цепь спасения (трактат, сс. 156–161) и нравственная невозможность («Eschantillon», сс. 192–197)
+
+**0. Зачем этот раздел.** После §4.116 может показаться, что Амиро — «универсалист с оговоркой». **Два места
+показывают обратное**, и оба прочитаны в этом раунде по источнику.
+
+**1. Цепь спасения — и она дортская по строению (с. 160).**
+> «*Nostre salut eternel **dépend de cette condition que nous appelons la foy**, cette foy **ne pend de la grâce de
+> Dieu en nous & de la puissance de son Esprit**, cette grâce & cette puissance de l'Esprit **dépend du conseil de
+> l'election de Dieu**, & ce conseil **n'ayant autre fondement que sa volonté**, est **constant & irrevocable***».
+
+**Схема:** спасение ← вера ← благодать/сила Духа ← совет избрания ← воля Божия.
+**Три следствия:** (1) это **цепь**, а не «две возможности»; (2) вера **не** от человека — «*ne pend de la grâce*»;
+(3) избрание **безусловно**: «*n'ayant autre fondement que sa volonté*».
+**Плюс прямое отрицание предвиденной веры:** «*sans avoir eu égard à nos œuvres, ny aux dispositions &
+preparations de nos esprits, **ny à quelque condition que ce soit qu'il ait preveue devoir estre en nos personnes***»
+(с. 160). **Это дословное «nulla habita ratione fidei praevisae»** — и сказано **Амиро**.
+
+**2. И рядом — то место, которое обычно цитируют против него (с. 162).**
+> «*Si après avoir arresté d'enuoyer son fils au monde **pour racheter le genre humain** il a ordonné **de nous
+> donner la foy**, & par la foy de nous donner à son Fils, **afin que cette rédemption ne nous fust pas inutile***».
+
+**Вот это и есть та схема, которую статья называет «искупление / примирение» — в подлиннике.** Но обратите
+внимание на три вещи:
+1. **«Racheter le genre humain»** — Амиро **не боится** сказать, что Сын послан «искупить род человеческий».
+   Значит, «за всех» для него — **не уступка, а собственная формула**.
+2. **Цель второго определения названа:** «*afin que cette rédemption ne nous fust pas inutile*» — **чтобы
+   искупление не оказалось для нас бесполезным**. Это **не** «чтобы приобрести», а **чтобы не пропало даром**.
+3. **Порядок:** сначала — послание Сына «искупить род человеческий», затем — определение дать веру. **Это ровно
+   «приобретение раньше приложения»**, но **приобретение при этом описано как всеобщее**.
+
+**Точная формула для серии:** у Амиро **приобретение всеобще, а приложение действительно**; у статьи — **приобретение
+совершено только для избранных**. **Это и есть предмет расхождения, и он не о слове «искупление».**
+
+**3. И тут же — место, которое надо цитировать в любом споре с «универсализмом» Амиро (с. 162).**
+> «*…& que son Fils par conséquent **ne prioit point pour nous**, & **se contentoit de se presenter exterieurement au
+> monde pour Sauveur**, & au reste **n'interposoit point l'efficace de son intercession** en nostre faveur (**car ceux
+> qui ne croyent point sont du monde, & il dit expressément: **je ne prie point pour le monde***)» (Ин. 17:9).
+
+**Это дословно «pro reprobis Christus nec spopondit, nec oravit»**, знакомая нам формула (ср. §4.9). **У Амиро она
+есть.** То есть **ходатайство Христа у него ограничено**, а «всеобщность» держится **только на первом члене**.
+**Отсюда запрет:** не описывать Амиро как «универсалиста»; он **сам** ограничивает ходатайство.
+
+**4. Нравственная невозможность — и её точный род («Eschantillon», сс. 195–196).**
+> «*…veu que la **priuation des organes** necessaires pour cela, engendreroit en eux cette **impuissance physique ou
+> naturelle** dont i'ay parlé cy-dessus, qui les empeicheroit d'obeyr quand ils en auroient le plus véhément desir du
+> monde. **Mais puis que ces inuitations… s'adressent à des hommes qui ont tous les sens du corps ouuerts**… y a-il
+> rien contre sa sagesse s'il vse… de sa bonté… ou de son authorité…? **S'ils n'obéissent pas, il en faut accuser leur
+> peruersité; s'ils ne le peuvent pas, c'est que leur peruersité est extrême***».
+
+**Различение, которое здесь сделано:** невозможность **физическая** (нет органа) извиняла бы; невозможность
+**нравственная** («*peruersité*») **не извиняет**, потому что **органы на месте**, а повреждено **употребление**.
+**Это и есть дортское различение**, и Амиро его **держит**.
+
+**5. И вывод, снимающий главное возражение (сс. 196–197).**
+> «*Mais **ni il n'est nullement necessaire que cette inuincible peruersité resserre tellement les actions de sa
+> bonté, qu'il n'en puisse vser enuers eux: ny qu'elle luy oste l'authorité d'exiger d'eux** ce qu'ils ne peuuent
+> refuser **sans crime***».
+> «*Il les conuie à se repentir. **Qui les en empefche** que leur mechanceté…?*
+> «*Mais **l'Euangile ne crie autre chose sinon que Dieu les veut sauuer, pourueu qu'ils croyent en son Fils***».
+> «*…**cette impuissance de croire ne vient sinon de pure mechanceté***».
+
+**Смысл:** зов **не** становится бесполезным от того, что его отвергнут; **право требовать** не отменяется
+**неспособностью**; и **неспособность есть вина**, а не беда. **Это точная дортская позиция** (ср. `Acta`,
+III–IV, «*nemo… excusare*»).
+
+**6. И ещё один дортский такт (с. 193).** «*veu qu'il **ne doit rien à personne***» («ибо Он никому не должен»).
+**Третье подтверждение** общего основания (см. §4.108 п. 7; §4.115 п. 6).
+
+**7. Что теперь можно утверждать — сводно по §§4.116–4.117.**
+| | Амиро (по источнику) | Статья |
+|---|---|---|
+| смерть Христа | «*vniuersellement pour tous hommes, **pourueu qu'ils croyent***» | совершённое приобретение для всех |
+| ходатайство | «***je ne prie point pour le monde***» | (нет темы) |
+| приобретение / приложение | «*afin que cette rédemption **ne nous fust pas inutile***» | две стороны **одного** дела |
+| вера | дар, «*ne pend de la grâce*» | согласие человека (как читается в статье) |
+| невозможность | **нравственная**, а не физическая | (нет темы) |
+**Вывод:** статья **не воспроизводит** Амиро ни в одном из трёх пунктов, где его можно проверить: ни в условности
+всеобщего члена, ни в ограниченном ходатайстве, ни в безусловности веры.
+
+**8. Оговорки.** `EDITION_HOLD`; прочитано **23 чанка из 74** (~31 %); французский OCR; §4.116 п. 13 — поправка
+объёма «Eschantillon» (порядка 50–60 сс., не 200).
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6657,6 +6748,7 @@ n'auoir point de franc-arbitre**… **nous pourroit estre legitime excuse deuant
 | 1658 *(раунд 56; Амиро, глава XIII, сс. 143–147)* | **Моисей Амиро**: милость Божия «*ayant **deux degrés***» — первая «*ne passe pas plus avant que de nous presenter la remission de nos offenses au Rédempteur*», вторая «*passe jusques à faire que nous croyions*»; первая «*universellement manifesté à tous par la predication de l'Euangile… auec cette **resolution ferme & immuable** de les sauuer s'ils croyent*»; вторая «*a esté **expressement caché**… **afin de n'estre point en achoppement aux autres & en empeschement à la predication de l'Euangile***»; «*nul… **ne se doit presumer estre reprouué***»; **контрфактическое:** «*posé le cas… qu'il y ait quelqu'un… à qui Dieu n'auoit pas ordonné de donner la foy, qui neantmoins croye véritablement… **cettuy-là sera sauvé** sans que Dieu face aucun tort au décret*»; «*il n'a pas predestiné les autres à ne croire pas… **il s'est contenté de les laisser en leur naturelle condition***»; обратное: «*si… quelqu'vn de ceux qu'il a predestinés à croire ne creust pas… **auroit-il manqué à sa predestination***» |
 | 1658 *(раунд 56, продолжение; Амиро, «Eschantillon», сс. 103–107; чанок 40)* | **НАЙДЕН «Eschantillon de la doctrine de Calvin»** (своя пагинация): «*Caluin donc considere la misericorde de Dieu **en deux manières***»; первая — «*enclin à pardonner universellement à tous ceux qui sont repentans… **exige necessairement la repentance***»; «*le **desespoir** nous precipite en une rage… **il endurcit nos cœurs***»; вторая — «*ne se contente pas d'exiger la repentance… mais qu'elle a resolu de **créer elle mesme cette condition** en la creature*»; **таблица:** «*la precedente est **universelle**, cellecy est **particuliere***… *l'evenement est en ce regard **en suspens**, celle icy… **certain & necessaire***… *celle-là est **constante autant comme la condition l'est**, celle-cy est **invariable***»; Рим. 9:15 — «*il est **impossible d'en trouuer cause plus haute que sa volonté***» |
 | 1658 *(раунд 56, часть 5; Амиро, «Eschantillon», сс. 197–212; чанки 39, 41)* | **Сердцевина «Eschantillon»**: «*pour **difficile** que fust la reconciliation des sentimens de Caluin en ce point*»; способ — «*en **accordant ses hypotheses**, donner aux **manieres de parler**… une interpretation qui **raisonnablement** leur conuienne*»; предмет предопределения — «*l'homme **tombé** en malediction*», в целостности же «*sans **aucune ombre** de misericorde*»; **«il parle de la mort de Christ en deux diuerses manières»**: «*mort **universellement pour tous hommes, pourueu qu'ils croyent***» / «*pour ceux-là, voire pour ceux-là seulement… **absolument***», ибо «*le decret par lequel il leur est donné de croire **enclost necessairement** celuy du salut*»; «*quant à ceux-là, **il n'est mort pour eux sinon à la condition qu'ils croyent***»; **«la dispute n'est point… si Christ est venu purger les pechez de tout le monde: car cela est sans contredit»**; «*nous ne sommes pas sur… **quelle est la vertu de Christ**… mais **à qui c'est qu'il se donne***»; «*nul ne peut estre participant de Christ, sinon celuy qui a esté **adopté***» |
+| 1658 *(раунд 56, часть 7; трактат, сс. 156–162; «Eschantillon», сс. 192–197; чанки 31, 38)* | **Цепь спасения:** «*Nostre salut… dépend de… la foy; cette foy ne pend de la grâce…; cette grâce… dépend du conseil de l'election; & ce conseil n'ayant autre fondement que sa volonté, est constant & irrevocable*»; «*ny à quelque condition que ce soit qu'il ait **preveue** devoir estre en nos personnes*»; «*pour **racheter le genre humain** il a ordonné de nous donner la foy… **afin que cette rédemption ne nous fust pas inutile***»; «*son Fils… **ne prioit point pour nous**… **je ne prie point pour le monde***» (Ин. 17:9); **нравственная невозможность:** «*impuissance **physique ou naturelle***» vs «*s'ils ne le peuvent pas, c'est que leur **peruersité** est extrême*»; «*l'Euangile ne crie autre chose sinon que **Dieu les veut sauuer, pourueu qu'ils croyent***»; «*il **ne doit rien à personne***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -7159,6 +7251,15 @@ n'auoir point de franc-arbitre**… **nous pourroit estre legitime excuse deuant
   203–207 / 208–212** (в §4.115 было «103–107» — ошибка OCR); «Eschantillon» — **раздел на 200+ страниц**, не
   приложение. **П. 230** (проверить по `Acta`), **п. 231** (дочитать), **п. 232** (сверить «quid Christus in se»).
 
+- **Раунд 56, часть 7: два «ставящих на место» места.** (а) **Цепь спасения** (с. 160): спасение ← вера ← благодать
+  ← совет избрания ← воля; «*n'ayant autre fondement que sa volonté*»; и прямое отрицание предвиденной веры —
+  «*ny à quelque condition que ce soit qu'il ait **preveue***». (б) **«Pour racheter le genre humain»** + «*afin que
+  cette rédemption **ne nous fust pas inutile***» — приобретение всеобще, приложение действительно. (в) **Ходатайство
+  ограничено:** «*ne prioit point pour nous… **je ne prie point pour le monde***». (г) **Нравственная, а не физическая
+  невозможность:** «*impuissance physique ou naturelle*» vs «*peruersité extrême*»; «*Dieu les veut sauuer, pourueu
+  qu'ils croyent*»; «*il ne doit rien à personne*». **ПОПРАВКА 2:** «Eschantillon» — **порядка 50–60 сс.**, не 200+;
+  начало между сс. 161 и 192; **п. 228 снова открыт** (гипотеза о чанке 19 ослаблена — пагинация сплошная).
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -7320,6 +7421,15 @@ reconciliationem*» по условному плоду** — то есть по 
 232. *(раунд 56)* **Сверить цитату «*quelle est la vertu de Christ… mais à qui c'est qu'il se donne*»** с изданием
 Кальвина (Институты III.1.1 или толкование). Установить точный текст и не приписывать Амиро формулу, которой у
 Кальвина нет.
+
+**Добавлено в раунде 56, часть 7:**
+
+233. *(раунд 56)* **Найти начало «Eschantillon»** (между сс. 161 и 192 — чанки 32–37): заглавие, посвящение,
+предисловие; установить, **кому** он адресован и **зачем** написан.
+234. *(раунд 56)* **Сверить «*je ne prie point pour le monde*»** (Ин. 17:9) с употреблением у Кальвина: у Амиро это
+**ограничение ходатайства**; выяснить, цитирует он Кальвина или говорит от себя.
+235. *(раунд 56)* **Проверить «*racheter le genre humain*»** (с. 162) на других страницах трактата: единично это или
+устойчивая формула.
 
 **Добавлено в раунде 48:**
 
