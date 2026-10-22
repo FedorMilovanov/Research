@@ -796,6 +796,21 @@
       nous, plus sommes nous meschans, & par consequent plus dignes de punition & de haine***». **(5) Вывод:** довод
       «если способность отнята, зов неискренен» **не проходит ни у Дорта, ни у Амиро**. `EDITION_HOLD`; **26/74**
       (~35 %).
+    - 42dh. *Дополнение 2026-10-19 (раунд 57, часть 5; `34_` §4.120, S145 + **S156**; `06_` §20; `01_` §11.7):
+      **П. 230 ЗАКРЫТ: гелдерландский argument VI отвечает на ход статьи.** «*Pro quorum peccatis **semel** justitiae
+      Dei plenissimè… satisfactum est, iidem ob **eadem peccata**… conveniri non possunt*»; и **прямо против
+      различения:** «*Neque hîc **quicquam juvat distinctio illa inter impetrationem & applicationem**… quam
+      solutionem **si accepit Pater, exigere novam jure nullo potest, sive applicetur, sive non applicetur: nam
+      **non-applicatio facit quidem ut homini non prosit impetratio, sed non facit ut Deo non sit facta solutio***»
+      (`Acta` 1620, чанки 353–358, печ. сс. 92–99). **(1) Формула «*non reconciliabilitatem… sed reconciliationem*»
+      бьёт по УСЛОВНОМУ ПЛОДУ, а не только по «возможности».** **(2) Честная граница:** `Acta` (1620) **не
+      отвечает** Амиро (1634); верно — Амиро **соединил два хода, каждый из которых отвергнут по отдельности**:
+      различение приобретения/применения (Гелдерланд VI) и **условное приобретение** (Фрисландия: «*non
+      simpliciter, sed **conditionate** mortuum… si nimirum credant*», §4.66). **(3) Итоговая оценка:** схема — **не
+      открытие статьи и не учение Дорта**, а сомюрская, **отвергнутая в 1619**; Амиро **приписал её Кальвину**
+      (1634); тот же перечень обвинений ходил как **римско-католическая клевета** (§4.118 п. 2). **(4) Практически:**
+      ответ на «двойную оплату» — **нераздельность** приобретения и применения + **безусловность дара веры**, а не
+      сужение круга. `EDITION_HOLD`; 26/74 Амиро.
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
