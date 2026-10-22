@@ -573,6 +573,14 @@
   «Eschantillon». **(д) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято
   молча: 0».**
 
+- **Дополнение раунда 58, часть 5 (2026-10-19; `34_` §4.124; `08_`; `01_` §12.7; класс **B1**).**
+  **(а) Ин. 3:16 сверен; передача Амиро точна, построчно.** Кальвин: «*invite all indiscriminately… to cut off every
+  excuse from unbelievers*»; «*he shows himself to be reconciled to the whole world, when he invites all men without
+  exception*»; и тотчас «*the elect alone are they whose eyes God opens*». **(б) Закономерность двух мест:**
+  всеобщность — **предложение**, определённость — **призвание**; **приобретения нет**. **(в) Точная формула сдвига
+  статьи — два симметричных сдвига:** «предложение → приобретение», «призвание → применение». **(г) П. 239 — 2 из
+  5.** **(д) `RIGHTS_HOLD`, `PUBLICATION_HOLD`, `ATTRIBUTION_HOLD` (S155), C-16 — без изменений; «снято молча: 0».**
+
 ## Итоговая сводка
 
 

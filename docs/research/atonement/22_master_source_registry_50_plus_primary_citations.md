@@ -840,6 +840,17 @@
       **(4) ПОПРАВКА 3:** «*la dispute n'est point…*» — из *De aeterna Dei praedestinatione*, **не** из толкования.
       **П. 232 закрыт; п. 239 — 1 из 5.** `EDITION_HOLD`; **27/74**. Источник: `biblehub.com/commentaries/calvin/
       1_john/2.htm`.
+    - 42dk. *Дополнение 2026-10-19 (раунд 58, часть 5; `34_` §4.124, `08_`; класс **B1**):* **Ин. 3:16 сверен с
+      изданием Кальвина — передача Амиро точна, построчно.** «*he has employed the universal term **whosoever**, both
+      **to invite all indiscriminately**… and **to cut off every excuse from unbelievers**… he shows himself **to be
+      reconciled to the whole world**, when he **invites all men without exception***»; и тотчас: «*while life is
+      promised universally to all who believe… still **faith is not common to all**… Christ is **made known and held
+      out to the view of all**, but **the elect alone are they whose eyes God opens***». **⇒ ЗАКОНОМЕРНОСТЬ ДВУХ
+      МЕСТ:** всеобщность у Кальвина — **предложение** («*offert*», «*held out*», «*invite*»); определённость —
+      **призвание/действенность** («*opens eyes*», «*faith is not common*», «*efficiently*»); **приобретения нет ни
+      в одном регистре**. **ТОЧНАЯ ФОРМУЛА СДВИГА СТАТЬИ (два симметричных сдвига):** «всеобщее предложение →
+      всеобщее приобретение»; «определённое призвание → определённое приложение». **П. 239 — 2 из 5.** Осторожность:
+      два места **не** основание для «Кальвин всегда».
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
