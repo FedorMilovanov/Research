@@ -4970,6 +4970,100 @@ universelle» в прочитанных чанках не встретилась
 Дорту** (§4.104 п. 2). Оба вывода должны идти в серии рядом: Амиро **не** «учит, что человек решает», но **да**,
 расширяет путь спасения beyond проповеди Евангелия.
 
+### 4.105. Q101 — Амиро, начало главы VII: «нет различия между ними», основание всеобщности в творении и аргумент «Бог слишком серьёзен» (раунд 51)
+
+**0. Источник и объём.** Чанок 13 того же экземпляра — **сс. 64–68**: конец главы VI (об усыновлении) и
+**начало главы VII**. Источник — **S156** (Амиро, *Brief traité de la predestination*, Сомюр, 1658; IA
+`brieftraitdela00amyr`), класс **A2** (OCR). Прочитано **4 чанка из 74** (около 6 % текста); `EDITION_HOLD` и
+`EVIDENCE_HOLD` по объёму — в силе.
+
+**1. Заголовок главы VII — порядок самого Амиро.** «*Quelle est la nature du conseil & de la Volonté par
+laquelle Dieu a ordonné d'accomplir ce dessein, **soit pour son étendue, soit pour la condition qui y est
+annexée***». Две рубрики: **объём** определения и **присоединённое к нему условие**. Тот же порядок, в котором
+расположены разделы статьи Прокопенко («Цели жертвы Христовой» → «условие»). **Наблюдение:** порядок рубрик не
+есть изобретение XIX в.; он взят из самого сомюрского трактата.
+
+**2. Основание всеобщности — не бесконечная цена крови, а жалость Творца.** «*LA misère des hommes estant
+universelle, & le désir que Dieu a eu de les en délivrer par le moyen d'un si grand Rédempteur, procédant de la
+**compassion** qu'il a eue d'eux, **comme de ses créatures** tombées en une si grande ruine, **puis qu'ils sont
+ses créatures indifféremment**, la grâce de la rédemption qu'il leur a offerte & procurée **a deu estre
+universelle**, pourveu qu'aussi ils se trouvassent tous disposés à la recevoir*».
+**Различие, которое нельзя стирать:** в классической реформатской формуле всеобщая «достаточность» выводится из
+**бесконечного достоинства Христа**; у Амиро — из **творения и сострадания к Creatura**. Это два разных
+основания. Следствие: аргумент «цена бесконечна, значит достаточна для всех» **не есть** аргумент Амиро, и
+наоборот; в серии их следует приводить раздельно (ср. §4.94 пп. 1–3 о регистрах).
+
+**3. «Нет различия между ними» — и оговорка «jusques là».** «*Et en cela, ny **jusques là**, il n'y a **point
+de différence entr'eux***». Равенство утверждается **до** рассмотрения условия; различие появляется позже — во
+**второй, частной благодати** (гл. IX, §4.103 п. 4). **Для п. 202:** субстанция формулы «равной и всеобщей»
+благодати здесь налицо — «*indifféremment*», «*point de différence*», «*en tous de mesmes*», — но **буквальной
+формулы «égale et universelle» в прочитанном нет**. П. 202 — **продвинут, не закрыт**.
+
+**4. «За всех» и «всем» — без различения приобретения и приложения.** «*Le sacrifice qu'il a offert pour la
+propitiation de leurs offenses, **a esté pour tous**; & le salut qu'il a receu de son Père pour le communiquer
+aux hommes en la sanctification de l'Esprit, & en la glorification du corps, **est destiné à tous**, pourveu,
+di-je, que **la disposition nécessaire pour le recevoir soit en tous de mesmes***». Условие присоединено **к
+самому предназначению**, а не к приложению уже приобретённого. Именно поэтому дортская пара «приобретено —
+прилагается» (S145, S146) **не переводится** в схему Амиро без остатка: у него нет этого шага.
+
+**5. Израиль — частность по распространению, а не по намерению.** Обещание дано «*d'une façon particulière à
+la posterité d'Abraham*», но «*ce qu'il y a eu de special pour cette nation en cet égard, revient à ce que cet
+oracle prononcé dés le commencement, que **la semence de la femme briseroit la teste du serpent**, estant demeuré
+**ensevely en oubliance** parmy tout le reste de la posterité d'Adam… Dieu a voulu en **renouueller la
+mémoire** parmi cettuy-cy*»; и три преимущества: рождение Редемптора из этого народа, «*que la doctrine de la
+rédemption seroit premièrement preschée parmi les Juifs*», и «*les promesses & les alliances*». «*Mais cela fait,
+**tous les peuples de la terre ont esté appelez** à la communion d'un mesme salut*».
+**Вывод:** у Амиро частность Израиля — **диспенсационная**: она касается **средства** (где и когда проповедано),
+а не **намерения**. У Дорта — наоборот: послание идёт к тем, кого Бог намерен спасти. Это **второе
+документально установленное расхождение**, независимое от первого (§4.104 п. 2).
+
+**6. Прямое отрицание исключения.** «*Et bien qu'il y ait plusieurs nations vers lesquelles peut estre la
+claire prédication de l'Evangile n'est point encore parvenue… il ne faut pas penser pourtant qu'il y ait ny
+**aucun peuple**, ny mesmes **aucun homme exclus par la volonté de Dieu**, du salut qu'il a acquis au genre
+humain, **pourveu qu'il face son profit des tesmoignages de miséricorde** que Dieu luy donne*». Это **не** «все
+спасутся»: условие на месте. Но это **прямое отрицание** того, что воля Божия кого-либо исключает. У Дорта воля
+Божия **определяет** круг. **Формулировать в серии так: у Амиро воля никого не исключает, у Дорта — определяет;
+это не разные слова об одном, а разные вещи.**
+
+**7. Цена всеобщности — вторая проповедь.** «*La providence par laquelle il les conserve, les bénédictions
+temporelles desquelles il les arrouse & les remplit continuellement, & la longue attente & patience incroyable
+de laquelle il vse enuers eux, **leur est une prédication suffisante, s'ils y estoient attentifs***» (с
+Рим. 2:4). **Всеобщая благодать требует всеобщего откровения.** Именно этого Дорт не допустил: «*Alius modus
+salvandi homines, & medium aliud… **in Scriptura non traditur***» (S153). Отсюда важное: **универсализм Амиро
+держится не на одном толковании 1 Ин. 2:2, а на учении о двух откровениях**; без второго первое не работает.
+Пастырское следствие: если второй путь есть, миссия перестаёт быть единственным путём; если его нет —
+всеобщая благодать остаётся без средства. **Амиро выбирает первое — и тем ставит необходимость миссии под
+вопрос, хотя сам миссию не отрицает** (см. §4.104 п. 3б).
+
+**8. Аргумент «Бог слишком серьёзен» — главная находка чанка.** «*Car **Dieu convertiroit-il les hommes à
+repentance pour neant, & en intention**, s'ils venoient à obeyr à l'invitation & se repentir, de les exclurre
+de sa grâce? **Dieu est trop bon, & s'il faut user de ce mot, trop serieux, pour presenter aux hommes de vaines
+espérances***».
+**Это тот же аргумент**, которым реформатские делегации на Дорте били по «*velleitas*»: «*Donum procul
+ostentatum & non reipsa communicatum, **neminem beare potest***» (S152, Эмден); «*possibilitatem &
+velleitatem*» (S153, QV); «*ut possit & velit… **simulate agit***» (§4.98 п. 3). Амиро **переворачивает его**:
+если Бог зовёт, а спасает только часть, зов есть «vaines espérances»; следовательно, благодать всеобща.
+**Новый вывод для серии:** аргумент от серьёзности **общий для обеих сторон**; различие — в том, **где
+полагается серьёзность**:
+| | Где серьёзность | Что признаётся «пустой надеждой» |
+|---|---|---|
+| **Амиро (1658)** | в **содержании предложения**: для всех есть реальная возможность | зов, за которым не стоит всеобщее намерение |
+| **Дорт (1619)** | в **действенности определения**: Бог действительно спасает данных Ему | дар, «издалека показанный» и не сообщённый на деле (S152) |
+**Правило серии: приводить аргумент от серьёзности без указания, о какой серьёзности речь, — запрещено.**
+И ещё одно: слово «**en intention**» Амиро обращает против схоластического различения «in intentione» — Бог не
+может звать «в намерении» и не спасать. Но ход этот **предполагает**, что предложение и есть намерение; Дорт
+именно это и отрицал, различая **предложение** и **дар**.
+
+**9. Куда идти дальше.** В скобках на с. 68 Амиро обещает: «*(& nous verrons cy-dessous **quelles facultez ou
+puissances il y a en l'homme de se convertir ainsi**)*» — глава о силах человека **впереди**. **Пока она не
+прочитана, судить о том, «учит ли Амиро, что человек решает сам», нельзя**; §4.103 п. 7 и §4.104 п. 6 остаются
+предварительными.
+
+**10. Итог: три расхождения и одно общее место.** Документально установлены три расхождения Амиро с Дортом —
+(1) **второй путь спасения** (§4.104 п. 2); (2) **диспенсационная частность Израиля и воля, никого не
+исключающая** (пп. 5–6); (3) **основание всеобщности в творении, а не в цене крови** (п. 2). И одно **общее**
+место — **аргумент от серьёзности** (п. 8), который обе стороны обращают друг против друга.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -5482,6 +5576,7 @@ universelle» в прочитанных чанках не встретилась
 | 1618–1619 *(раунд 50)* | **Пфальцское суждение о III–IV артикулах** (S155, л. 136 и след.): ремонстрантская позиция — обращение предваряют cognitiones peccati, dolor, humilitas, desiderium gratiae, preces, propositum — «**citra infusionem sanctitatis alicujus**»; ссылки: *Coll. Hag.* 205, 298, 301, 303; **Гревинховен**, с. 111 (?); Епископий, *de perspicuitate Scripturae* тез. 5, 7 и *disput. de poenitentia* сс. 4, 14; **Иоанн Арнольди против Тилена, с. 397**. Ответ: «**Solus Deus** hic idoneus testis ac judex est»; человек «non semi-mortuus, sed **totus**… mortuus in peccatis suis» |
 | 1658 *(раунд 50; первое чтение амиральдианского первоисточника)* | **Моисей Амиро, *Brief traité de la predestination*** (Сомюр, Desbordes, 1658; IA `brieftraitdela00amyr`, сс. 76–95, гл. VII–IX): «la grâce est **universelle** & présentée à tous les hommes», но «cette charité **ne passe pas cette mesure**… pourveu qu'ils ne le refusent pas»; «Dieu veut le salut de tous les hommes… **pourveu qu'ils croyent**. S'ils ne croyent point, il ne le veut pas»; благодать «**entièrement inefficacieuse**» без исполнения условия; «l'**efficace particulière** de la grâce **universelle**»; две благодати: первая — «généralement tout le genre humain», вторая — «n'en regarde qu'vne partie seulement»; неверие — от «leur propre dureté & obstination», а «l'incrédulité des autres **ne vient pas de leur reprobation**… mais de leur propre aveuglement»; основание различия — «la **libre volonté de Dieu**», ибо «ils estoient **également** miserables… également coupables» |
 | 1658 *(раунд 51; Амиро, глава VII, сс. 70–74)* | **Моисей Амиро, *Brief traité de la predestination***: «il y a **de deux sortes de prédication de Christ**… de deux sortes de connoissance de Christ qui amèneroient au salut»; вторая — «par l'entremise de la **providence de Dieu seulement**… suffisante pour **rendre les hommes jouyssans du salut**» — **прямое противоречие эмденскому «Alius modus salvandi homines… in Scriptura non traditur»** (1619); 1 Ин. 2:2, 1 Тим. 2:4–6, Тит. 1, Ин. 3:16 — «grâce… destinée à **tout le genre humain**»; «tout ce que Dieu desploye de miséricorde… **en quelque manière que ce soit**, vient de ce que sa justice a esté **appaisée par le sacrifice de son Fils**»; «**il estoit absolument impossible que les hommes fussent sauvez malgré qu'ils en eussent**»; «autant… comme **d'illuminer une chose qui demeure tenebreuse nonobstant**, ou en redresser une autre qui… demeure tortue» |
+| 1658 *(раунд 51; Амиро, начало главы VII, сс. 64–68)* | **Моисей Амиро**: заголовок гл. VII — «*Quelle est la nature du conseil & de la Volonté… **soit pour son étendue, soit pour la condition qui y est annexée***»; основание всеобщности — не цена крови, а «*la **compassion** qu'il a eue d'eux, **comme de ses créatures**… **puis qu'ils sont ses créatures indifféremment**, la grâce… **a deu estre universelle***»; «*ny **jusques là**, il n'y a **point de différence entr'eux***»; «*Le sacrifice… **a esté pour tous**; & le salut… **est destiné à tous**, pourveu… que la disposition nécessaire… soit en tous de mesmes*»; частность Израиля — «*renouueller la mémoire*» обетования о семени жены, «*Mais cela fait, **tous les peuples de la terre ont esté appelez***»; «*ny **aucun peuple**, ny mesmes **aucun homme exclus par la volonté de Dieu***»; вторая проповедь — «*une prédication suffisante, s'ils y estoient attentifs*» (Рим. 2:4); «***Dieu est trop bon, & s'il faut user de ce mot, trop serieux, pour presenter aux hommes de vaines espérances***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -5843,6 +5938,17 @@ universelle» в прочитанных чанках не встретилась
   universelle» не встретилась; искать в чанках 12–13). Прочие HOLD и C-16 — без изменений; «снято молча: 0».
 - Раунд 51: добавлены §4.104, строка хронологии, пп. 205–207; кросс-досье — `04_`, `21_`, `synthesis/03_`.
 
+- **Раунд 51, продолжение: Амиро, начало главы VII (чанок 13, сс. 64–68).** Прочитано ещё 1/74: заголовок главы VII
+  («*soit pour son **étendue**, soit pour la **condition** qui y est annexée*»), основание всеобщности в
+  **творении и сострадании** («*ses créatures **indifféremment***»), «*il n'y a **point de différence** entr'eux*»
+  с оговоркою «*jusques là*», «*le sacrifice… **a esté pour tous***» и «*le salut… **est destiné à tous***» с
+  условием, диспенсационная частность Израиля («*renouueller la mémoire*»), прямое отрицание «*aucun homme
+  exclus par la volonté de Dieu*», вторая проповедь как «*prédication suffisante*» (Рим. 2:4) и — главное —
+  аргумент «***Dieu est… trop serieux, pour presenter aux hommes de vaines espérances***». **Новый вывод:** аргумент
+  от серьёзности **общий для обеих сторон**; Амиро и Дорт спорят о том, **где** она полагается (в содержании
+  предложения / в действенности определения). **П. 202 — продвинут, не закрыт** (буквальной формулы «égale et
+  universelle» нет; субстанция — на с. 64–65). `EDITION_HOLD`, `EVIDENCE_HOLD` (4 чанка из 74) — в силе.
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -5920,6 +6026,16 @@ Calvin*» — Амиро там цитирует Кальвина, что пря
 два рода проповеди; частная благодать; основание различия) — по прочитанным чанкам 14, 15, 18 и дортским
 суждениям S142–S154. Вынести в `03_` как приложение; в `06_` — для проверки статьи (три элемента статьи
 совпадают с Амиро; **четвёртый — о двух путях спасения — в статье отсутствует**).
+
+**Добавлено в раунде 51, продолжение:**
+
+208. *(раунд 51)* **Прочитать главу о «facultez ou puissances» человека**, обещанную на с. 68, и главу X
+(чанки 16–24). **До этого суждение о том, учит ли Амиро, «что человек решает сам», остаётся предварительным** —
+§4.103 п. 7 и §4.104 п. 6 в силе лишь как предварительные.
+209. *(раунд 51)* **Сопоставить пагинацию изданий 1634 и 1658 гг.**, чтобы установить, где в первом стоит
+«égale et universelle» (п. 202). Без этого ссылки литературы на «с. 77 изд. 1634» к S156 **неприменимы**.
+210. *(раунд 51)* **Разобрать Рим. 2:4** как доказательство «достаточной проповеди» вне Евангелия — в `04_`
+(§11). В досье этот текст до сих пор не разбирался, а у Амиро он несёт всю конструкцию второго откровения.
 
 **Добавлено в раунде 48:**
 
