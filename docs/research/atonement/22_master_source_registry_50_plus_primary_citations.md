@@ -783,6 +783,19 @@
       **(4) Цена всеобщности:** «*l'autre… **n'est quasi pas considerable***»; «*l'incredulité des vns empeschant
       qu'ils n'en reçoiuent **aucun***». **(5) Три степени любви** (сс. 163–164): третья — «*il nous aime **pource
       que nous l'aimons** au reciproque*». `EDITION_HOLD`; **25/74** (~34 %). **Новые пп. 236–238.**
+    - 42dg. *Дополнение 2026-10-19 (раунд 57, часть 3; `34_` §4.119, **S156**; `04_` §13; `synthesis/03_` §35):
+      **Два рода немощи («Eschantillon», сс. 173–178; чанок 34); п. 236 закрыт.** **(1) Причина греха:** «*la
+      **droite cause & naturelle du péché** n'est pas le **secret conseil de Dieu**, mais la **volonté de l'homme***»;
+      от Бога — только «*le **décret de ne l'empescher pas***» ⇒ **разрешительный**, а не причинный декрет.
+      **(2) Закон в двух отношениях:** «*il faut considerer la **Loy de Dieu en deux égards***»; контрпример —
+      «*comme si Dieu nous auoit commandé **d'arrester le mouvement du Soleil***» ⇒ «*Mais la Loy n'est pas de cette
+      nature*». **(3) Способности на месте:** «*si vous n'auez égard qu'aux **facultez naturelles**… & **non au vice
+      qui y est suruenu***»; «*il n'y a que **nostre propre vice** qui nous en empefche*». **(4) ЯДРО:** «*vne sorte
+      d'impuissance… **naturelle**… **mais pour laquelle on ne nous peut pas dire meschans**. Et il y en a **vne
+      autre**… **morale**: **de tant s'en faut que celle-là puisse nous excuser, que plus elle est grande & profonde en
+      nous, plus sommes nous meschans, & par consequent plus dignes de punition & de haine***». **(5) Вывод:** довод
+      «если способность отнята, зов неискренен» **не проходит ни у Дорта, ни у Амиро**. `EDITION_HOLD`; **26/74**
+      (~35 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.

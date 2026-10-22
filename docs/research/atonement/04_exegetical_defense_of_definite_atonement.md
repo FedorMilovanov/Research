@@ -338,3 +338,27 @@ plus necessairement*» (§4.112 п. 7) ставят перед экзегезо�
 
 **12.3. Оговорка.** Это **заметка к задаче**, а не разбор: текст 1 Ин. 3:9 в досье до сих пор не разбирался.
 Амиро цитируется по изданию 1658 г. (`EDITION_HOLD`); прочитано 16 чанков из 74.
+
+
+## 13. Дополнение (2026-10-19; раунд 57; кросс-досье `34_` §4.119, **S156**): два рода немощи — и почему довод о
+«неискреннем зове» не проходит
+
+**13.1. Формулировка Амиро (дословно, «Eschantillon», с. 177).**
+> «*Il y a donc **vne sorte d'impuissance** qui vient de ce que **nous n'auons pas les facultez naturelles necessaires
+> pour obeïr**, qui peut estre appelée **naturelle** elle mesme, **mais pour laquelle on ne nous peut pas dire
+> meschans**. Et il y en a **vne autre** procédante de ce qu'ayans les facultez naturelles… **elles sont si vicieuses en
+> nous, que leur vice nous rend entierement incapables d'obeïr**, qui… peut estre appelée **morale**: **de tant s'en faut
+> que celle-là puisse nous excuser, que plus elle est grande & profonde en nous, plus sommes nous meschans***».
+
+**13.2. Почему это решает экзегетический спор о 2 Пет. 2:1 и 1 Ин. 2:2.**
+| Возражение | Ответ по различению |
+|---|---|
+| «если благодать непреодолима, зов неискренен» | отнята **не способность**, а **употребление**; зов искренен |
+| «если человек не может верить, неверие невиновно» | «*plus elle est grande… plus sommes nous meschans*» |
+| «закон неисполним — значит Бог осудил за невозможное» | закон **исполним по способностям**, неисполним **по пороку** |
+
+**13.3. И это не «уступка Амиро», а общее место.** Ту же схему держат Дорт (III–IV) и реформатские схоласты.
+**Значит:** в разделе «Неверный аргумент» статья **не может** опереться на «неспособность» как на аргумент против
+дортского учения — ни у Дорта, ни у его сомюрского критика этого аргумента нет.
+
+**13.4. Оговорки.** `EDITION_HOLD`; 26/74; OCR.
