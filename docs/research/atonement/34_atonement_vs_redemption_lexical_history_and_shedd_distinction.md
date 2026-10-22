@@ -5418,6 +5418,95 @@ porter autre nom que celuy de **justice**, voire de justice exacte à merveilles
 **8. Оговорки.** `EDITION_HOLD` (1658); 11 чанков из 74; французский OCR, орфография нормализована.
 **П. 202** — без изменений (продвинут, не закрыт). Титул «Eschantillon» **не встречен**; п. 211 открыт.
 
+### 4.110. Q106 — Амиро, глава XI: как Бог исполняет условие веры; «советы абсолютные»; достоверность избрания и практический силлогизм (раунд 54)
+
+**0. Источник и объём.** Чанок **22** — **сс. 111–116**, глава XI. **S156**, класс **A2** (OCR). Прочитано
+**12 чанков из 74** (около 16 %). `EDITION_HOLD` — в силе. Титул «Eschantillon» **не встречен**: после главы X
+идёт глава XI того же трактата (п. 211 остаётся открытым).
+
+**1. Заголовок — и он прямо отвечает на вопрос, которого мы ждали.** «*Du moyen par lequel Dieu accomplit cette
+condition de la Foy en ses Esleus, & rend sa Predestination d'un evenement certain & infaillible, & de la
+connoissance qu'on en peut avoir*».
+**Перевод:** «О средстве, которым Бог исполняет это условие веры в Своих избранных, и делает Своё
+предопределение событием несомненным и безошибочным; и о познании, какое о нём можно иметь».
+**Значение:** Амиро сам ставит вопрос, **как** исполняется условие, — то есть его схема **не оставляет** условие
+на человеке (§4.106 пп. 7–8 подтверждены с третьей стороны), и он же ставит вопрос о **достоверности**.
+
+**2. Три рода определений — и место всеобщего среди них (с. 111–112).** Амиро различает:
+- определения, «*moyennant que ses créatures exécutent tels ou tels commandemens*», — где исход **зависит** от
+  исполнения условия; примеры: блаженство первого человека («*s'il demeuroit perseuerant en son integrité*»),
+  жизнь Израиля в Ханаане («*s'il eust entièrement observé la loy*»), и — «*celle par laquelle il a ordonné de
+  **sauver tous les hommes** par nostre Seigneur Jesus: à sçavoir **si par incrédulité ils ne s'en monstrent point
+  indignes***»;
+- и определения «*qu'on nomme communément **absolus***», где Бог «*veut de sa pure volonté resolue faire quelque
+  chose, **sans avoir égard à condition quelconque***»; их исход «*absolument indubitable*».
+**Вывод 1:** всеобщее определение **стоит у Амиро в одном ряду с двумя другими условными определениями** — и это
+не случайное сравнение: оно показывает, что он понимает его как **гипотетическое** в строгом смысле. И тут же:
+«*telle est en cette sorte de dispositions… la certitude de l'exécution de la condition, telle aussi est la
+certitude de l'événement*» — **достоверность исхода равна достоверности исполнения условия**. Для падшего человека
+это значит: **ноль**, если условие не дано (§4.106 п. 4).
+
+**3. Как решается эта проблема — второе, абсолютное определение (с. 113).** «*Et cette corruption ayant passé
+si avant en l'homme qu'elle a infecté jusques au fonds toutes ses facultés, & l'a rendu **entièrement incapable de
+croire au Rédempteur si Dieu mesme ne forme la foy en son cœur**, Dieu prévoit certainement & indubitablement qui
+seront ceux qui seront sauvez, **pource qu'il a resolu de leur donner de croire**, & qui seront ceux qui ne
+croiront pas, **pource qu'il a ordonné de n'agir pas de mesmes en eux***».
+**Вывод 2:** предведение у Амиро **не есть** причина избрания — оно **следует** за определением дать веру. Это
+ещё одно подтверждение §4.106 п. 6 («*Nenny*» — не по предвиденной вере). И формулировка «*pource qu'il a
+ordonné de **n'agir pas** de mesmes en eux*» — **та же привативность**, что в §4.109 п. 4: не-действие, а не
+противодействие.
+
+**4. «В стране, где все ослепли» — второй образ солнца (с. 113).** «*Si Dieu s'estoit contenté de proposer la
+grâce salutaire extérieurement seulement, à considerer la condition en laquelle nous naissons tous, **il seroit
+aisé de deviner qu'elle seroit universellement reiettée**. Comme il n'est pas malaisé de dire que **le Soleil ne
+fera point reconnu en un pays où généralement tout le monde est aveuglé***».
+**Вывод 3 — итоговое подтверждение §4.108 п. 6.** Амиро **прямо говорит**, что при одном только внешнем
+предложении благодать была бы **всеобще отвергнута**. Значит, **всеобщее предложение само по себе не спасает
+никого**; оно нужно не для спасения, а для суда и теодицеи. Здесь это уже не наш вывод из его слов, а **его
+собственное утверждение**.
+**И заметьте разницу двух образов солнца у одного автора:**
+| Место | Образ | Что доказывает |
+|---|---|---|
+| гл. X (с. 107) | солнце не делает ночи; тьма — от «*naturelle opacité*» земли | Бог **не причина** неверия (§4.109 п. 3) |
+| гл. XI (с. 113) | солнце **не будет узнано** в стране, где все ослепли | внешнее предложение **недостаточно** без внутреннего действия |
+**Оба образа нужны, и оба — его.** Первый защищает Бога от обвинения, второй защищает необходимость благодати.
+
+**5. Достоверность для человека — и вот главное (с. 114–115).** «*Mais la certitude qu'en ont les hommes ne peut
+dépendre que de deux choses. **L'une est la considération de l'événement même**, quand réellement & de fait il est
+arrivé… **De cette sorte chacun fidelle sçait qu'il a esté esleu dés le commencement pour avoir la foy, parce
+qu'il la sent en soy mesme**, & qu'elle a allumé en son entendement une lumière, engendré en sa conscience une
+paix, & en commencé en sa volonté & en ses affections une sanctification qui ne peut venir d'aucune autre cause que
+de la bonté & puissance divine. De manière que quand il vient à **comparer les sentimens de son ame avec la
+description de la foy & de ses effets dàs les esleus, qui se trouue en l'Escriture saincte**, il ne reuoque
+nullement en doute qu'il ne soit du nombre de ces esleus, **pour la conformité qu'il reconnoist entre la Parole de
+Dieu en ce poinct, & les mouvemens de son ame***».
+**Это практический силлогизм** — в его классической форме: большая посылка (описание веры и её действий у
+избранных в Писании), меньшая (я нахожу это в себе), заключение (я избран). **И это у сомюрского автора**, в
+трактате, который обычно представляют как ослабляющий уверенность.
+
+**6. Второе основание достоверности — и его границы (с. 115).** «*L'autre est la **révélation** que Dieu fait de
+son décret & de l'arrest de sa volonté en cet égard*»; ибо у Бога, как у всякой разумной причины, для действия
+нужны «*la puissance & la volonté*»; «*sçachans que Dieu est doté d'une puissance infinie, & nous sommes par luy
+mesme asseurez de sa volonté, la certitude de l'événement nous doit estre entièrement indubitable*». И честное
+признание границы: «*bien que **nous ne sçachions pas en particulier qui d'entre les hommes est esleu ou ne l'est
+pas**… si sommes nous pleinement asseurez **qu'il y en a qui croyent***».
+
+**7. Для чего это нужно серии — три следствия.**
+**(а) Сомюрская схема не оставляет верующего в неизвестности.** У Амиро есть **положительное учение об
+уверенности**, и оно строится на том же, на чём строили и реформатские авторы: на **плодах веры в себе**,
+сверенных с Писанием. Утверждать, что «гипотетический универсализм ведёт к сомнению в спасении», **нельзя** —
+по крайней мере против этого текста.
+**(б) Но основание уверенности у него — не декрет, а его отражение в душе.** Ср. §4.106 п. 8: вера
+**созидается** Богом. Тогда практический силлогизм у Амиро **логически корректен**: если во мне есть то, чего
+природа не производит, значит, это произведено Богом, значит, я из тех, кому Он определил дать веру.
+**(в) Практический вывод для нашей серии:** дортская и сомюрская схемы **сходятся в пастырском применении** —
+обе ведут верующего не к вычислению имён, а к **рассмотрению себя в свете Писания**. Это ещё одно место, где
+спор **уже**, чем кажется (§4.106 п. 5, §4.108 п. 5, §4.109 п. 5).
+
+**8. Оговорки.** `EDITION_HOLD` (1658, не 1634); прочитано 12 чанков из 74; французский OCR, орфография
+нормализована. **П. 202** — без изменений (продвинут, не закрыт). П. 211 — титул «Eschantillon» не встречен;
+после главы XI следует ожидать продолжения трактата или «La response à M. de L. M.».
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -5935,6 +6024,7 @@ porter autre nom que celuy de **justice**, voire de justice exacte à merveilles
 | 1658 *(раунд 52; Амиро, гл. VI и место об избрании, чанки 12 и 19)* | **Моисей Амиро**: удовлетворение — «*satisfist par sa **valeur infinie** à la justice divine*»; но «***Cet obstacle levé, il faisoit la voye à cette miséricorde que la justice tenoit resserrée***»; Иаков и Исав — «***extrêmement égaux de condition naturelle***»; «*Sera-ce en la foy même? **Nenny** encore*»; «*Dieu n'a pas ordonné de la donner à tout le monde*»; против «*subtilement distinguer entre les **degrés de l'efficace***» — «*de recourir icy à la liberté de la volonté, c'est **chose inutile***», «*il est **de tout point inimaginable** comment elle ait esté également prevenuë en quelques uns, & que neantmoins les événemens en ayent esté dissemblables*»; «*n'en pouvons trouver d'autre que celle de la **libre volonté de Dieu***»; против карикатуры — «*Dieu… n'a pas fait ce choix des hommes **à tastons**, & jetté sur eux **le sort à l'aventure**… il y a procédé avec son **ordinaire sagesse***» |
 | 1658 *(раунд 53; Амиро, глава X, сс. 101–105)* | **Моисей Амиро**: глава X — апология против трёх обвинений («*acceptation de personnes*, *autheur de péché*, *cause de la perdition*»); «*il y a entr'eux tous une **égalité toute entière***»; «*également corrompus & par consequent **également coupables***»; «*une **lepre** qui nous est à tous **pareillement incurable***»; «***Il offre donc la grâce à tous les criminels également***, & requiert seulement d'eux qu'ils ne la refusent pas»; «***Ils la refusent tous avec une égale obstination***»; «*il **passe toutes les mesures de sa miséricorde envers les uns pour amollir leurs coeurs***, & par une juste severité abandonne les autres à la dureté de leurs ames*»; «*ce qu'il donne à ceux-cy c'est de sa **pure libéralité***… *s'il consulte sa justice seulement, elle requiert absolument qu'il le leur **dénie***» |
 | 1658 *(раунд 53, продолжение; Амиро, глава X, сс. 105–110)* | **Моисей Амиро**: «*s'il ne leur donne pas d'y croire, ce n'est pas à dire pour cela qu'il leur **donne de n'y croire** pas*»; «*C'est bien le **Soleil** qui illumine la terre: mais ce n'est pas luy qui la rend tenebreuse. Elle a cela de sa **naturelle opacité***»; ожесточение — «*non pource qu'il **adiouste** de soy quelque chose à leur meschanceté, mais pour ce qu'il **ne l'oste pas***»; Бог «*livre les hommes à leurs **propres passions***» (Рим. 1:24); погибель — «*à qui imputera l'homme sa condamnation qu'à son **péché propre**?*»; наказание носит имя «***justice**, voire de justice exacte à merveilles*» |
+| 1658 *(раунд 54; Амиро, глава XI, сс. 111–116)* | **Моисей Амиро**: гл. XI — «*Du moyen par lequel Dieu accomplit cette condition de la Foy en ses Esleus… & de la connoissance qu'on en peut avoir*»; всеобщее определение стоит в ряду **условных**, и «*telle est… la certitude de l'exécution de la condition, telle aussi est la certitude de l'événement*»; рядом — определения «*qu'on nomme communément **absolus***» («*sans avoir égard à condition quelconque*»); «*Dieu prévoit… qui seront ceux qui seront sauvez, **pource qu'il a resolu de leur donner de croire***» ⇒ предведение **следует**, а не предшествует; «*si Dieu s'estoit contenté de proposer la grâce salutaire extérieurement seulement… **il seroit aisé de deviner qu'elle seroit universellement reiettée***»; «*le Soleil ne fera point reconnu en un pays où généralement tout le monde est aveuglé*»; **уверенность**: «*chacun fidelle sçait qu'il a esté esleu… **parce qu'il la sent en soy mesme***», чрез «*comparer les sentimens de son ame avec la description de la foy… qui se trouue en l'Escriture saincte*» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6351,6 +6441,20 @@ porter autre nom que celuy de **justice**, voire de justice exacte à merveilles
   погибель — «*à son **péché propre***», наказание есть «*justice exacte*». **Вывод:** в этом пункте **расхождения
   нет** — третье подтверждение узости спора. **Для серии:** обвинение «Бог — причина погибели» разбивается
   **сомюрским** автором; и сомюрская схема суда **не смягчает**, а усиливает (§4.108 п. 7).
+
+- **Раунд 54: Амиро, глава XI (чанок 22, сс. 111–116).** Прочитано 12/74. **(1) Заголовок сам отвечает на наш
+  вопрос:** «*Du moyen par lequel Dieu accomplit cette condition de la Foy en ses Esleus… & de la connoissance
+  qu'on en peut avoir*» — условие исполняет **Бог**, а не человек. **(2) Три рода определений:** условные
+  (блаженство Адама, Ханаан, спасение всех «*si par incrédulité ils ne s'en monstrent point indignes*») и
+  «*conseils absolus*» («*sans avoir égard à condition quelconque*»); «*la certitude de l'exécution de la condition,
+  telle aussi est la certitude de l'événement*» ⇒ при падшем человеке — **ноль** без второго определения.
+  **(3) Предведение следует за определением:** «*pource qu'il a resolu de leur donner de croire*».
+  **(4) Второй образ солнца:** «*si Dieu s'estoit contenté de proposer la grâce… extérieurement seulement… **il
+  seroit aisé de deviner qu'elle seroit universellement reiettée***» — **его собственное утверждение**, что
+  всеобщее предложение само по себе не спасает никого (подтверждение §4.108 п. 6). **(5) Практический
+  силлогизм:** «*chacun fidelle sçait qu'il a esté esleu… parce qu'il la sent en soy mesme*», чрез сверку
+  «*les sentimens de son ame*» с описанием веры в Писании ⇒ **сомюрская схема не оставляет верующего в
+  неизвестности**; утверждать обратное **нельзя**. П. 211 — титул «Eschantillon» не встречен.
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
