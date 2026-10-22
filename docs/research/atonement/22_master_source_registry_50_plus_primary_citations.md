@@ -722,6 +722,19 @@
       говорить «у Дорта есть определение к осуждению, у Амиро нет» до сверки (п. 224). **(7) Обратное
       контрфактическое:** «*si… quelqu'vn de ceux qu'il a predestinés à croire ne creust pas… **auroit-il manqué à sa
       predestination***». `EDITION_HOLD`; 18 чанков из 74 (~24 %). П. 211 — «Eschantillon» не встречен.
+    - 42dc. *Дополнение 2026-10-19 (раунд 56; `34_` §4.115, **S156**; `03_` §31; `synthesis/03_` §32):
+      **«Eschantillon de la doctrine de Calvin» НАЙДЕН (чанок 40, сс. 103–107) — п. 211 ЗАКРЫТ.**
+      Колонтитулы «*Efchantillon*» / «*de la doctrine de Caluin*»; **своя пагинация** (не 58–147).
+      **(1) Амиро излагает Кальвина: «*Caluin donc considere la misericorde de Dieu **en deux manières***».**
+      **(2) Первая: «*enclin à pardonner **universellement à tous ceux qui sont repentans**… **exige necessairement la
+      repentance**… **il est impossible que Dieu luy pardonne***». **(3) Вторая: «*ne se contente pas d'exiger la
+      repentance… **mais qu'elle a resolu de créer elle mesme cette condition en la creature***». **(4) Таблица:**
+      «*la precedente est **universelle**, cellecy est **particuliere***; *l'evenement… **en suspens*** vs ***certain &
+      necessaire***; *celle-là **constante autant comme la condition*** vs ***invariable***». **(5) Это дословно
+      схема §4.114 — но как **учение Кальвина** ⇒ спор не «изобрёл ли Сомюр», а «**верно ли прочёл**» (п. 227).
+      **(6) Рим. 9:15 — без возражений:** «*n'est debteur à homme quelconque***; «***impossible d'en trouuer cause
+      plus haute que sa volonté***» (дортский язык; второе подтверждение §4.108 п. 7). **(7) Гипотеза усилена:**
+      чанок 19 (сс. 56–60) — вероятно, листы «Eschantillon» не на месте (п. 228). `EDITION_HOLD`; 19/74 (~26 %).
 
 43. **Benjamin Breckinridge Warfield.** *The Plan of Salvation* (1915); *The Term 'World' in the Johannine Writings* (1914).
     - *Издание:* Philadelphia: Presbyterian Board of Publication; *Selected Shorter Writings*, Vol. 2.
