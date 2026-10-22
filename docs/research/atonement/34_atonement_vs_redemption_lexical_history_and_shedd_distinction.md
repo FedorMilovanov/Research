@@ -6821,6 +6821,107 @@ Reformatorum* или факсимиле лучшего качества). **До
 карикатуру» — «статья берёт подлинно Кальвинову формулу и применяет её туда, куда Кальвин применять запретил».
 Это **сильнее** как возражение, потому что **не требует** спорить с цитатами.
 
+### 4.127. Q123 — Возражение статьи в чистом виде (1634) и ответ Амиро: «недоумевай, не спорь». Статья решает то, что её источник объявил неразрешимым (раунд 59)
+
+**0. Локатор.** Чанки **36–37** = сс. **183–192** «Eschantillon». Это **вторая половина** предисловия: после
+цитатного аппарата (сс. 178–183, §4.122) Амиро **сам** формулирует возражение противника — и отвечает.
+
+**1. Что Амиро успевает сказать в пользу всеобщности — и это его самые сильные слова.**
+> «***A-t-il pas assez témoigné qu'il ne tient pas à Dieu que tout le monde ne soit sauvé? Que la porte de la
+> misericorde n'est fermée à personne? Que par consequent Christ a fait la propitiation des péchez de tous les
+> hommes?***» (с. 185).
+> «*S'il auoit, par maniere de parler, pris le sang de la nouvelle alliance entre ses mains, pour en arrouser par le
+> commandement de Dieu **tout le genre humain**, auroit-il fait d'auantage?*» (с. 185).
+
+**Перевод:** «Разве он недостаточно засвидетельствовал, что **от Бога не зависит**, что не весь мир спасён? Что
+**дверь милости никому не закрыта**? Что, следовательно, **Христос совершил умилостивление за грехи всех людей**?»
+И: «Если бы Он, так сказать, взял кровь нового завета в руки, чтобы по повелению Божию окропить **весь род
+человеческий**, — сделал бы Он больше?»
+
+**Это — максимум всеобщности, какой можно найти у Амиро.** Для статьи это **прямая поддержка**, и её надо признать.
+
+**2. И вот возражение — дословно то, которое строит статья (сс. 190–191).**
+> «*Mais en fin, disent ces Messieurs, qu'est-il à Caluin de loüer si haut la misericorde de Dieu, veu qu'en
+> despouillant l'homme de son franc-arbitre, il le rend non seulement incapable de se convertir aux tesmoignages de la
+> patience de Dieu, mais mesmes **de croire en l'Euangile quand on le luy annonce**? **Car est-ce pas cela dresser vn
+> banquet deuant des gens à qui il est impossible d'en manger, & puis les punir rigoureusement de ce qu'ils n'ont pas
+> estendu la main vers les viandes?** Si ainsi est qu'il n'y ait en l'homme aucune faculté de croire en l'Euangile de
+> Christ, **ou la sagesse de Dieu le deuoit empescher de le leur offrir ainsi inutilement, ou si l'amour qu'il nous
+> porte l'a induit à le nous presenter indifféremment, il deuoit aussi donner indifféremment la grace d'y croire***».
+
+**Разбор — и здесь всё совпадает с критикой статьи:**
+| Довод противника (1634) | Довод статьи |
+|---|---|
+| у человека **нет способности верить** — значит зов неискренен | «если благодать непреодолима, зов неискренен» |
+| это **«пир перед теми, кто не может есть»** | то же сравнение в разных формах |
+| **либо** не предлагать, **либо** дать веру всем | вывод: приобретение всеобще, применение — по дару |
+
+**Значит довод статьи — не её изобретение: он стоит в тексте 1634 г. как возражение, которое Амиро опровергает.**
+
+**3. ГЛАВНОЕ: ответ Амиро — и он не «двухстепенная схема».**
+> «*C'est pourquoy à cette question, **quel propos y a-t-il que Dieu appelle à foy ceux lesquels il sçait qu'ils n'y
+> viendront point**, **il respond en quelque lieu par les paroles de S. Augustin**: **Veux tu disputer auec moy de cette
+> matiere? Plustost esmerueille toy & t'escrie auec moy, O hautesse! Accordons nous tous deux en ébahissement afin de
+> ne point perir en erreur***» (сс. 191–192).
+
+**Перевод:** «Поэтому на вопрос: **какой смысл Богу призывать к вере тех, о ком Он знает, что они не придут**, — он
+[Кальвин] **в одном месте отвечает словами св. Августина: "Ты хочешь со мной спорить об этом? Лучше изумляйся и
+воскликни со мною: О высота! Согласимся оба в изумлении, чтобы не погибнуть в заблуждении"**».
+
+**То есть: на это возражение Амиро отвечает НЕ всеобщим приобретением, а — изумлением.** Двухстепенную схему он
+применяет **в другом месте и против другого довода** (против обвинения в «малости круга», §4.118).
+
+**4. И тотчас — прямое признание неразрешимости (с. 192).**
+> «*Et de vray si d'un costé la Parole de Dieu enseigne que **l'homme animal ne peut comprendre les choses qui sont
+> de Dieu**… que **les hommes ont naturellement vn cœur de pierre**… **que nul ne peut venir à Christ si le Père qui
+> l'a enuoyé ne le tire**… Et que de l'autre elle nous apprenne constamment, comme Caluin le recognoist, **que Dieu
+> veut que tous hommes soyent sauvez**, & qu'il les conuie & serieusement & affectueusement à repentance, **veut-on,
+> s'il ne peut demesler toutes les difficultez qui se presentent en cela**, ou qu'il **dérogé quelque chose à la bonté
+> de Dieu**, ou qu'il…*».
+
+**Смысл:** обе стороны Писания истинны; **не все трудности разрешимы**; нельзя уступать ни в благости Божией, ни в
+Писании. **Это позиция «двух истин без сведения»**, а не «решённая проблема».
+
+**5. Отсюда — вывод, который бьёт по статье сильнее всего прежнего.**
+> **Статья решает то, что её собственный источник объявил неразрешимым.**
+Ещё точнее — три шага:
+1. **Возражение**, которое статья выдвигает как **доказательство ложности** дортского учения, у Амиро стоит **как
+   возражение противника**, и Амиро его **не принимает**.
+2. **Ответ** Амиро на него — **«изумляйся, не спорь»** (Августин чрез Кальвина), **плюс** признание, что
+   **не все трудности сводимы**.
+3. **Статья** вместо этого отвечает **схемой** (приобретение для всех / применение к избранным) — то есть
+   **снимает возражение там, где источник согласился его не снимать.**
+
+**6. И ещё одна находка — ответ о не слышавших Евангелие (сс. 186–187) — редкий по откровенности и очень дортский.**
+Амиро перебирает возможные «увёртки» (извинения) и отвергает их все:
+> «*c'est chose entierement inutile de recourir aux **eschappatoires**de quelques vns*: ou bien que Dieu refuse la
+> predication… **à cause des péchez de leurs ancestres**… Ou bien qu'il prevoit que la predication ne produiroit point
+> de fruit… Ou bien finalement qu'il a donné cela aux **mérites cachez** de quelques vns*».
+И вывод: «***On ne peut donc auoir recours qu'à la seule volonté de Dieu, dont il n'y a moyen de fonder la cause***»
+(с. 187).
+**Перевод:** «…можно прибегнуть только к **единственной воле Божией, основания которой найти невозможно**».
+
+**Значение:** на вопрос «почему одни не слышали Евангелия» Амиро отвечает **не** «потому что искупление не для
+них», и **не** «потому что они бы всё равно отвергли», а **голой волей Божией без основания**. **Это дортский
+ответ дословно** (ср. «*n'est debteur à homme quelconque*», §4.117 п. 6). И это разрушает надежду, что
+всеобщее приобретение **снимает** проблему несправедливости: **у Амиро оно её не снимает.**
+
+**7. Что теперь можно утверждать о статье — сводно по §4.127.**
+| Вопрос | Ответ |
+|---|---|
+| Довод «пир перед неспособными» — чей? | **не статьи**: он стоит у Амиро как **возражение противника** |
+| Снимает ли его всеобщее приобретение? | **нет**: Амиро отвечает изумлением и признанием неразрешимости |
+| Значит ли это, что статья неверна? | **не в доводе, а в притязании**: она **выдаёт за решение** то, что источник назвал **тайной** |
+| И в чём статья сильна? | в её цитатах: «*Christ a fait la propitiation des péchez de tous les hommes*» — **слова Амиро** |
+
+**8. Формула для серии.**
+> **Статья права, что возражение существует; неправа, что нашла на него ответ.** Её ответ — **сомюрская схема**;
+> но **сам Сомюр** на **эту** форму возражения ответил иначе: **«О высота!»**
+
+**9. Оговорки.** `EDITION_HOLD` (1658 ≠ 1634); чанки 36–37; прочитано **29 из 74** (~39 %); французский OCR.
+**П. 240 — ЗАКРЫТ** (предисловие дочитано до с. 192; на с. 192 начинается следующий отдел). Атрибуция слов Августина
+**Кальвину** — по передаче Амиро; **не сверено** (п. 227 в силе).
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -7353,6 +7454,7 @@ Reformatorum* или факсимиле лучшего качества). **До
 | 1551 → 1658 *(раунд 58, часть 3; сверка по изд. Кальвина, 1 Ин. 2:2; **B1**, англ. пер. CTS)* | **Кальвин о своей же формуле:** «*They who seek to avoid this absurdity, have said that Christ suffered **sufficiently** for the whole world, but **efficiently only for the elect**. **This solution has commonly prevailed in the schools.** **Though then I allow that what has been said is true, yet I deny that it is suitable to this passage**… **under the word all or whole, he does not include the reprobate**, but designates **those who should believe***». И рядом: «*I pass by the **dotages of the fanatics***». **⇒ Амиро передаёт формулу точно, но ОПУСКАЕТ оговорку «I deny that it is suitable to this passage» и не излагает второе толкование Кальвина** |
 | 1551 → 1658 *(раунд 58, часть 5; сверка по изд. Кальвина, Ин. 3:16; **B1**)* | **Передача Амиро точна, построчно.** Кальвин: «*he has employed the universal term **whosoever**, both **to invite all indiscriminately**… and **to cut off every excuse from unbelievers**… he shows himself **to be reconciled to the whole world**, when he **invites all men without exception***»; и тотчас: «*while life is promised universally to all who believe… still **faith is not common to all**… Christ is **made known and held out to the view of all**, but **the elect alone are they whose eyes God opens***». **Закономерность двух мест:** всеобщность — регистр **предложения**; определённость — регистр **призвания/действенности**; **приобретения нет ни там, ни там** |
 | 1552 *(раунд 58, часть 7; Calvin, *De aeterna Dei praedestinatione*; IA `ioanniscalviniop00calv`, чанки 400, 418)* | **Латинский локус найден.** Провизорно (OCR плохой, **A2**): «*Deique beneficentiam **promiscue ad omnes** extendens… multum abest, quin Dei gratiam pro merito illustrent, **qui eam praedicant omnium esse communem, in se vero efficaciter residere, quia fide eam amplexi sint**. Fidei vero causam inter se et illos cupiunt*». ⇒ Кальвин **порицает** позицию «благодать обща всем, действенна во мне, потому что **я** принял верою» — за то, что в ней **причина веры остаётся за человеком**. **Искомое «tellement vniverselle» в этих чанках НЕ найдено.** |
+| 1658 *(раунд 59; «Eschantillon», сс. 183–192; чанки 36–37)* | **Возражение в чистом виде и ответ.** Амиро: «***A-t-il pas assez témoigné qu'il ne tient pas à Dieu que tout le monde ne soit sauvé? Que la porte de la misericorde n'est fermée à personne? Que par consequent Christ a fait la propitiation des péchez de tous les hommes?***» (с. 185). **Возражение:** «*Car est-ce pas cela **dresser vn banquet deuant des gens à qui il est impossible d'en manger**, & puis les punir rigoureusement…? … **il deuoit aussi donner indifféremment la grace d'y croire***» (сс. 190–191). **ОТВЕТ — не схема:** «*à cette question… **il respond… par les paroles de S. Augustin**: **Veux tu disputer auec moy de cette matiere? Plustost esmerueille toy & t'escrie auec moy, O hautesse!***» (сс. 191–192); и «*s'il ne peut **demesler toutes les difficultez***». **О не слышавших:** все «увёртки» отвергнуты, «*On ne peut donc auoir recours qu'à la **seule volonté de Dieu**, dont il n'y a moyen de fonder la cause*» (с. 187) |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -7932,6 +8034,15 @@ Reformatorum* или факсимиле лучшего качества). **До
   «tellement vniverselle» — в силе.
 - **Раунд 58, часть 7: §4.126 — итоговая историческая оценка** (свод 14 находок с локаторами; ответ в четырёх
   измерениях; что статья говорит верно; итоговая формула; чего НЕ установлено).
+
+- **Раунд 59, часть 1: предисловие «Eschantillon» дочитано (сс. 183–192; п. 240 ЗАКРЫТ).** Найдено **возражение
+  статьи в чистом виде** — «*dresser vn banquet deuant des gens à qui il est impossible d'en manger*… *il deuoit aussi
+  donner indifféremment la grace d'y croire*» (сс. 190–191) — и **ответ Амиро**: не двухстепенная схема, а
+  **Августин чрез Кальвина** — «***Veux tu disputer auec moy? Plustost esmerueille toy… O hautesse!***», плюс
+  признание: «*s'il ne peut **demesler toutes les difficultez***». ⇒ **статья решает то, что её источник объявил
+  неразрешимым.** Плюс максимум всеобщности у Амиро: «*Christ a fait la propitiation des péchez de tous les
+  hommes*» (с. 185). Плюс дортский по существу ответ о не слышавших: «*la seule volonté de Dieu, dont il n'y a
+  moyen de fonder la cause*» (с. 187).
 
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
