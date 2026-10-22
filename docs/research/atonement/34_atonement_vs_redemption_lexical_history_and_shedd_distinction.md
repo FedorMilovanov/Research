@@ -5696,6 +5696,107 @@ l'efficace*» — это может быть **фрагмент «Eschantillon d
 нормализована. **П. 202** — без изменений. **П. 211** — титул «Eschantillon» не встречен; после главы XII
 следует ожидать глав XIII и далее.
 
+### 4.113. Q109 — Амиро, глава XIII: «воля спасти» и «избрание к вере»; предупреждение о употреблении Писания; правило истолкования всеобщих текстов (раунд 55)
+
+**0. Источник и объём.** Чанок **27** — **сс. 137–142**: конец главы XII и **глава XIII** («*Que cette doctrine
+n'induit point à securité, si ne refroidit point le soin de bien vivre, au contraire*»). **S156**, класс **A2**
+(OCR). Прочитано **17 чанков из 74** (около 23 %). `EDITION_HOLD` — в силе.
+
+**1. Почему этот текст — центральный для всей серии.** Через пять раундов чтения Амиро мы искали у него то
+самое деление, о котором спрашивает статья: **всеобщее — и частное**. Здесь он его **формулирует сам**, даёт ему
+**имена** и тут же делает **терминологическую оговорку**, которая бьёт по нашей же постановке вопроса.
+
+**2. Различение, названное его словами.** «*Il a esté aisé de recueillir, qu'il faut soigneusement distinguer
+**la volonté de sauver les hommes**, laquelle quelques uns appellent, **contre l'usage de l'Escriture**, la
+**predestination au salut**, d'auec **l'election ou predestination à la foy**, qui est **le moyen & la condition**
+par l'accomplissement de laquelle nous y parvenons: d'autant que **celle-cy est absolue**, comme on parle, **& ne
+dépend d'aucune condition**; **celle-là ne peut avoir lieu quant à son effect que par la presupposition de cette
+condition préalable***» (с. 138).
+**Перевод:** «Из сказанного легко было заключить, что надлежит тщательно различать **волю спасти людей**, которую
+некоторые называют — **вопреки употреблению Писания** — **предопределением ко спасению**, от **избрания или
+предопределения к вере**, которое есть **средство и условие**, через исполнение коего мы достигаем спасения: ибо
+**сие последнее абсолютно** и **не зависит ни от какого условия**, а **первое может иметь место в своём действии
+только при предположением этого предварительного условия**».
+
+**3. Что здесь сказано — по пунктам.**
+**(а)** Есть **две воли**: всеобщая условная («*volonté de sauver les hommes*») и частная безусловная («*election
+à la foy*»). Это — **та самая структура**, которую статья описывает как «всеобщее приобретение / частное
+приложение».
+**(б)** Но Амиро **называет их иначе**: не «искупление» и «примирение», а **воля спасти** и **избрание к вере**.
+**(в)** И — оговорка, которую надо читать дважды: называть всеобщую волю «предопределением ко спасению» —
+**«вопреки употреблению Писания»** («*contre l'usage de l'Escriture*»). То есть Амиро **сам отвергает** ту
+терминологию, которая соблазнительна для нашей темы.
+**(г)** Различение проводится **в определениях (decrees)**, а не в **природе дела Христова**. Это не два вида
+искупления и не два вида примирения: это **два определения** — условное всеобщее и безусловное частное.
+
+**4. Следствие для статьи — и оно решающее.** Если статья представляет деление «искупление / примирение» как
+деление **внутри дела Христова** (что Он приобрёл всеобщее, а применил частное), то:
+- **по структуре** это воспроизводит амировское деление воль;
+- **по месту** (в деле Христовом, а не в определениях) это **позднейшая переработка**, а не текст Амиро;
+- **по имени** это расходится с его собственной оговоркой: он не называл всеобщую волю «предопределением ко
+  спасению», а тем более не называл её «искуплением».
+**Формулировка для серии:** статья переносит **сомюрское различение определений** в **различение сторон дела
+Христова**. Это не то же самое, и в этом переносе — источник её терминологических трудностей (отсюда и раздел
+«Терминологические различия»).
+
+**5. Правило истолкования всеобщих текстов — и это находка не меньшая.** Амиро объясняет, **почему Писание
+говорит двояко**: «*Et c'est à peu près la mesme raison pour laquelle cette mesme Escriture qui nous enseigne si
+disertement que **Christ est mort universellement pour tout le monde**, en parle quelques-fois en telle manière
+qu'il semble qu'elle vueille dire qu'il est mort **pour le petit nombre des esleus & la foy seulement**. Comme s'il
+n'auoit souffert que pour ceux qui sentent le fruict de sa mort, & non pas pour ceux à qui **leur propre incrédulité
+rend cette mort infructueuse***» (с. 140–141).
+И — само правило: «*Mais pource qu'il faut diligemment distinguer entre **les manières de parler qui sont nées de la
+consideration des évenemens seulement**, & **celles qui viennent de la consideration des conseils mesmes***…»
+(с. 141).
+**Значение:** перед нами **готовое герменевтическое правило** сомюрской школы:
+| Основание речи | Что говорится | Пример |
+|---|---|---|
+| **рассмотрение событий** (что вышло) | «умер за избранных, за малое число» | тексты о действенности |
+| **рассмотрение определений** (что решено) | «умер за весь мир» | 1 Ин. 2:2; 1 Тим. 2:4 |
+
+**6. Что это правило делает и чего не делает.**
+**(а) Оно объясняет** двойственность языка **без противоречия** — и в этом его сила: обе группы текстов истинны,
+но по разным основаниям.
+**(б) Оно переворачивает** привычный порядок: **всеобщие тексты** у Амиро — язык **определений**, а **частные** —
+язык **исходов**. В обычной реформатской практике — наоборот: частные тексты описывают намерение, всеобщие —
+предложение.
+**(в) И оно уязвимо** ровно в одном месте: если «*Christ est mort universellement pour tout le monde*» есть язык
+**определения**, то определение спасения всех **условно**, а условие не исполняется **никем** без второго
+определения (§4.108 п. 6; §4.110 п. 4). Тогда «умер за весь мир» означает: **приобрёл то, что ни для кого не
+действует без другого действия**. Это и есть точка, в которой дортская сторона возражает: приобретённое
+**должно действовать**.
+
+**7. И тут же — ответ на обвинение в «безопасности» (заголовок главы XIII).** Обвинение: «*s'il y en a quelques
+uns… predestinés à estre sauvez, **quoy qu'ils facent ils ne peuvent manquer à l'estre***; & s'il y en a quelques
+autres reprouués… **employassent-ils tout le soin**… ils sont pourtant forclos de toute esperance*» (с. 141).
+Ответ Амиро — и он хорош: «*Encore que **ie croye**, ie ne seray pas esleu à croire pourtant. Car tous ceux qui
+croyent auoient esté auparauant… **predestinés à croire**, nul ne pouuant croire que par le don de Dieu*» (с. 142).
+**Перевод:** «Хотя я **верую**, я не буду избран к вере; ибо все верующие были прежде предопределены к вере, и
+никто не может веровать иначе, как по дару Божию».
+**Логика:** обвинение «делай что хочешь» бьёт мимо, потому что **само верование** есть исполнение определения, а
+не его обход. Хочешь знать, избран ли, — **веруй**; и это не «делай что хочешь», а «делай то, что заповедано».
+**Для серии:** это **та же** логика, что практический силлогизм (§4.110 п. 5), но в полемической форме; её можно
+употреблять в разговоре о «безопасности».
+
+**8. Пять выводов раунда.**
+**(а)** Терминологическое различение статьи **имеет сомюрский прототип**, но **не там, где она его помещает**: у
+Амиро это различение **определений**, а не сторон дела Христова (§4.113 пп. 2–4).
+**(б)** Амиро **сам** предупреждает против имени «предопределение ко спасению» для всеобщей воли
+(«*contre l'usage de l'Escriture*») — значит, **терминологическая аккуратность в этом вопросе предписывается
+источником**, а не нами.
+**(в)** Правило «события / определения» (§4.113 п. 5) — самое ясное герменевтическое правило сомюрской школы в
+нашем корпусе; **его надо давать дословно** и с указанием, что оно **переворачивает** обычный порядок.
+**(г)** Его слабое место — не в текстах, а в **понятии приобретения**: приобретённое, которое ни для кого не
+действует без второго действия, есть **возможность**, а не приобретение (ср. S145: «*non reconciliabilitatem…
+sed reconciliationem*»).
+**(д)** Довод против «безопасности» у Амиро **сильнее**, чем обычно думают: «*Encore que ie croye, ie ne seray pas
+esleu à croire*» — изящный и точный.
+
+**9. Оговорки.** `EDITION_HOLD` (1658, не 1634); прочитано 17 чанков из 74; французский OCR, орфография
+нормализована. **П. 211:** титул «Eschantillon» **не встречен**; после главы XIII следуют главы XIV и далее, значит
+«Eschantillon» — в конце тома. **П. 202** — без изменений. **Гипотеза о чанке 19** (§4.112 п. 9) — без изменений,
+**не утверждение**.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6216,6 +6317,7 @@ l'efficace*» — это может быть **фрагмент «Eschantillon d
 | 1658 *(раунд 54; Амиро, глава XI, сс. 111–116)* | **Моисей Амиро**: гл. XI — «*Du moyen par lequel Dieu accomplit cette condition de la Foy en ses Esleus… & de la connoissance qu'on en peut avoir*»; всеобщее определение стоит в ряду **условных**, и «*telle est… la certitude de l'exécution de la condition, telle aussi est la certitude de l'événement*»; рядом — определения «*qu'on nomme communément **absolus***» («*sans avoir égard à condition quelconque*»); «*Dieu prévoit… qui seront ceux qui seront sauvez, **pource qu'il a resolu de leur donner de croire***» ⇒ предведение **следует**, а не предшествует; «*si Dieu s'estoit contenté de proposer la grâce salutaire extérieurement seulement… **il seroit aisé de deviner qu'elle seroit universellement reiettée***»; «*le Soleil ne fera point reconnu en un pays où généralement tout le monde est aveuglé*»; **уверенность**: «*chacun fidelle sçait qu'il a esté esleu… **parce qu'il la sent en soy mesme***», чрез «*comparer les sentimens de son ame avec la description de la foy… qui se trouue en l'Escriture saincte*» |
 | 1658 *(раунд 54, продолжение; Амиро, главы XI–XII, сс. 117–126)* | **Моисей Амиро**: «***Dieu donc agist en deux façons envers nous pour nous faire croire en Christ***» — внешне (проповедь) и внутренне («*il agist tellement en nos entendemens **par son intérieure vertu**, qu'il en decharte le vice & les tenebres*»); «***il est impossible déformais que nous ne croyions***»; «***toute répugnance estant contrainte de céder à cette puissance***»; «*se peut-il faire aucune resistance qui rende l'événement douteux, ou qui préuale?*»; «*exécute ce décret d'une façon qui **ne rend nullement l'événement douteux***»; больной/бедняк: «*S'il le refuse, il faut necessairement qu'il **ignore** sa poureté ou la richesse du tresor*»; гл. XII: «*non seulement ils creussent en Christ, mais mesmes **qu'il leur fust impossible de ne pas croire***»; «*quel interest avons nous à la conservation de cette liberté, si son office est de nous maintenir… **autant portés à rejetter Jésus-Christ qu'à le recevoir***» |
 | 1658 *(раунд 55; Амиро, глава XII, сс. 126–136)* | **Моисей Амиро**: «*quelque efficace que cet Esprit desploye en nous, **il ne nous contraint ny violente pas** pourtant. Car **la contrainte gist à faire quelque chose contre sa volonté***»; «*qui a jamais ouy parler d'un homme qui creust quelque chose **malgré qu'il en euft**…? **La croyance est une persuasion. Et on ne persuade personne par la force***»; «*Dieu meut nos volontés, nos affections **par l'entremise de nos entendemens***»; «*il est **impossible** que nous ne les apperceuions & que nous n'y cédions, **quelque résistance** qu'y facent au commencement nos affections*»; **ангелы**: «***nul ne doute que les Anges ne foyent à cette heure en estat de ne pouuoir pécher***… *Les Anges donc ont-ils perdu quelque liberté de leur volonté par la grâce de leur confirmation?*»; «*plus ils font excellens, **plus necessairement & ineuitablement** sentent ils… la puissance & efficace de ces choses*» |
+| 1658 *(раунд 55, продолжение; Амиро, глава XIII, сс. 137–142)* | **Моисей Амиро**: «*il faut soigneusement distinguer **la volonté de sauver les hommes**, laquelle quelques uns appellent, **contre l'usage de l'Escriture**, la **predestination au salut**, d'auec **l'election ou predestination à la foy***»; «*celle-cy est **absolue**… & ne dépend d'aucune condition; celle-là ne peut avoir lieu quant à son effect que par la presupposition de cette condition préalable*»; «*cette mesme Escriture qui nous enseigne si disertement que **Christ est mort universellement pour tout le monde**, en parle quelques-fois… qu'il est mort **pour le petit nombre des esleus***»; правило: «*diligemment distinguer entre **les manières de parler qui sont nées de la consideration des évenemens seulement**, & **celles qui viennent de la consideration des conseils mesmes***»; против «безопасности»: «*Encore que **ie croye**, ie ne seray pas esleu à croire pourtant*» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6672,6 +6774,17 @@ l'efficace*» — это может быть **фрагмент «Eschantillon d
   **нельзя ни по Дорту, ни по Сомюру**. **Гипотеза (помечена):** чанок 19 может быть фрагментом «Eschantillon»
   (изложение Кальвина его словами) — проверить по п. 215.
 
+- **Раунд 55, продолжение: Амиро, глава XIII (чанок 27, сс. 137–142).** Прочитано 17/74. **Найдено то самое
+  деление:** «*la **volonté de sauver les hommes**… d'auec l'**election ou predestination à la foy***», причём
+  первое «*quelques uns appellent, **contre l'usage de l'Escriture**, la predestination au salut*»; «*celle-cy est
+  **absolue**… celle-là… par la presupposition de cette condition*». **Ключевое:** различение — **в определениях**,
+  а не в сторонах дела Христова ⇒ статья, помещающая его в дело Христово, делает **позднейший перенос**.
+  **Правило истолкования:** различать «*les manières de parler qui sont nées de la consideration des
+  **évenemens** seulement*» и «*celles qui viennent de la consideration des **conseils** mesmes*»: всеобщие тексты
+  («*Christ est mort universellement pour tout le monde*») — язык **определений**, частные — язык **исходов**;
+  это **переворачивает** обычный порядок. **Против «безопасности»:** «*Encore que ie croye, ie ne seray pas esleu à
+  croire pourtant*».
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -6789,6 +6902,17 @@ croire*» со свободою воли — и не вводит ли он ра
 гелдерландцы (S145) — вынести в `03_` как приложение к §28.
 
 220. *(раунд 55)* **Разобрать 1 Ин. 3:9** («*οὐ δύναται*» — «не может грешить») в `04_`: о **состоянии** или о каждом отдельном действии; как соотносится с 1 Ин. 1:8–10 и 2:1. Сопоставить с Евр. 6:18 («*невозможно Богу солгать*») и 2 Тим. 2:13.
+
+**Добавлено в раунде 55, продолжение:**
+
+221. *(раунд 55)* **Сопоставить терминологию статьи с главой XIII Амиро** (§4.113 пп. 2–4): статья говорит
+«искупление / примирение», Амиро — «воля спасти / избрание к вере», и различает **определения**, а не стороны
+дела Христова. Установить, у кого впервые различение перенесено **в дело Христова** (XIX в.?), — но **не по
+памяти**: только по источнику.
+222. *(раунд 55)* **Проверить правило «события / определения»** (§4.113 п. 5) на дортских текстах: у Дорта
+всеобщие тексты объясняются **предложением**, а частные — **намерением**; это **обратный** порядок. Вынести в
+`03_` §29 как приложение.
+223. *(раунд 55)* **Дочитать главы XIV–XVI** (чанки 28–30) и найти «Eschantillon» в конце тома (чанки 31–40).
 
 **Добавлено в раунде 48:**
 
