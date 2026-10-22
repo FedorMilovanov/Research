@@ -5797,6 +5797,106 @@ esleu à croire*» — изящный и точный.
 «Eschantillon» — в конце тома. **П. 202** — без изменений. **Гипотеза о чанке 19** (§4.112 п. 9) — без изменений,
 **не утверждение**.
 
+### 4.114. Q110 — Амиро, глава XIII: «две степени милости», сокрытие второй ради проповеди и контрфактическое утверждение о не-избранных к вере (раунд 56)
+
+**0. Источник и объём.** Чанок **28** — **сс. 143–147**, продолжение главы XIII. **S156**, класс **A2** (OCR).
+Прочитано **18 чанков из 74** (около 24 %). `EDITION_HOLD` — в силе.
+
+**1. «Две степени милости» — и это уже не образ, а структура.** «*Et de vray, la misericorde de Dieu enuers les
+hommes, en ce qui regarde les conseils de **leur procurer le salut**, ayant **deux degrés**:
+- **l'un** qui, comme il a esté dit, **ne passe pas plus avant que de nous presenter la remission de nos offenses au
+  Rédempteur**, de prendre un souverain plaisir en nostre salut, **pourveu que par incrédulité nous ne rejettions
+  pas cette grace**;
+- **l'autre** qui **passe jusques à faire que nous croyions, & empescher que le salut ne soit rejette par nous***»
+(с. 144).
+**Значение:** то, что в раунде 50 было записано как «*cette charité **ne passe pas cette mesure***», здесь
+развёрнуто в **явную двухстепенную схему**. И обе степени — **степени одной милости**, а не две разные милости.
+**Формулировать в серии так: у Амиро не «два искупления», а **две степени одного совета** о доставлении
+спасения.**
+
+**2. Первая степень — всеобщая и по проповеди.** «*Ce premier degré est **universellement manifesté à tous par la
+predication de l'Euangile**, pour inuiter les hommes à la foy, auec cette **resolution ferme & immuable de les
+sauuer s'ils croyent***» (с. 144–145).
+**Отметить:** «*resolution ferme & immuable*» — определение **твёрдое и непреложное**, лишь **обусловленное**. Это
+не «желание-пожелание» (velleitas), а именно решение. **Сопоставление:** эмденское отвержение «*possibilitatem &
+velleitatem*» (S153) бьёт по «пожеланию», но не по «обусловленному решению»; поэтому здесь нужна
+**терминологическая точность**, а не ярлык.
+
+**3. Вторая степень скрыта — и скрыта С УМЫСЛОМ.** «*Et a esté **expressement caché aux humains** qui estoient
+ceux d'entr'eux que ce degré de misericorde regardoit, **afin de n'estre point en achoppement aux autres & en
+empeschement à la predication de l'Euangile***» (с. 145).
+**Перевод:** «И было **нарочито сокрыто** от людей, кто именно из них подлежит этой степени милости, — **чтобы не
+быть соблазном для прочих и препятствием для проповеди Евангелия**».
+**Значение — и это пастырски важно:** сокрытие имён имеет у Амиро **положительную цель**: не соблазнить и не
+помешать проповеди. **Отсюда практическое правило, которое можно взять в серию без всякой оговорки:** имена
+сокрыты не для того, чтобы мы гадали, а чтобы **звать всех**. Ср. §4.110 п. 6 («*nous ne sçachons pas en
+particulier*»).
+
+**4. И тотчас — прямой запрет отчаиваться.** «*Par ainsi **nul ne sçachant en particulier** ce qui a esté ordonné
+de luy au conseil de Dieu, **ne se doit presumer estre reprouué, ny forclos de l'esperance du salut**, puis que
+Dieu l'y appelle; ny dire, ie ne croiray pas pource qu'il me seroit inutile, puis que Dieu declare ouuertement que
+la foy sera utile à salut **également & universellement à tous ceux en qui elle se rencontrera***» (с. 145).
+**Два запрета:** (а) не почитать себя отверженным; (б) не говорить «не стану веровать, ибо мне это не послужит».
+**Второй запрет — точный ответ на «зачем стараться, если я не избран»**: обещание дано **всем, в ком найдётся
+вера**, и потому рассуждение «мне это не послужит» **ложно по условию**.
+
+**5. Контрфактическое утверждение — самое спорное место во всём трактате.** «*Et de vray, **posé le cas** (ce qui
+est **entièrement impossible** à cause de la dureté & corruption du cœur de l'homme) **qu'il y ait quelqu'un du
+nombre de ceux à qui Dieu n'auoit pas ordonné de donner la foy, qui neantmoins croye véritablement, faisant par la
+seule force de sa nature ce que les autres font par l'efficace de la grace de Dieu en eux; cettuy-là sera sauvé
+sans que Dieu face aucun tort au décret de sa predestination éternelle***» (с. 145).
+**Перевод:** «И поистине, **положив случай** (что совершенно невозможно по причине ожесточения и порчи
+человеческого сердца), что **кто-либо из тех, кому Бог не определил дать веру, всё же уверовал бы
+истинно**, сделав **одною силою своей природы** то, что другие делают по действенности благодати Божией в них, —
+**тот был бы спасён**, и Бог не потерпел бы от того никакого ущерба в определении Своего вечного
+предопределения».
+**Почему это важно до чрезвычайности.** Амиро утверждает **два** положения сразу:
+1. такой случай **невозможен** («*entièrement impossible*») — по порче сердца;
+2. но **если бы** он был, спасение состоялось бы **без ущерба определению**.
+**То есть определение** у него **не закрывает дверь**; закрывает её **неверие**. Это — самая сильная формулировка
+гипотетического универсализма, какую даёт текст, и она **не совпадает** с дортской, где вера есть **плод**
+избрания и «природою произведённая вера» не есть вера вовсе.
+
+**6. И тут же — отрицание «определения к неверию».** «*Bien qu'il ait predestiné les vns à croire, c'est à dire,
+arresté de leur donner la foy, neantmoins **il n'a pas predestiné les autres à ne croire pas**, c'est à dire,
+**arresté d'empescher qu'ils ne croyent; il s'est contenté de les laisser en leur naturelle condition**, & de les
+conuier à croire nonobstant, afin que s'ils ont en eux quelque vertu de croire, ils la desployent*» (с. 146).
+**Здесь нужна осторожность в оценке — и я её ввожу.**
+**(а)** Формулировка «*laisser en leur naturelle condition*» **близка** к дортскому «оставлению в общем бедствии»
+(*relinquere in communi miseria*, I арт., 15). **Поэтому нельзя** говорить: «у Дорта есть определение к
+осуждению, у Амиро нет» — это упрощение.
+**(б)** Но различие **всё же есть**, и оно в **следствии предыдущего пункта**: у Амиро оставление не исключает
+того, что оставленный **мог бы** уверовать «силою природы» и был бы спасён; у Дорта такая гипотеза
+**исключена природою веры** (вера — дар; ср. «*donum*», «*non posse*», §4.106 п. 4).
+**(в) Формулировка для серии:** различие не в наличии/отсутствии «оставления», а в том, **мыслимо ли** спасение
+вне дара веры. У Амиро — **мыслимо логически и невозможно фактически**; у Дорта — **немыслимо вовсе**.
+
+**7. И — обратное контрфактическое, о верности Божией.** «*Mais s'il arriuoit (ce qui est totalement impossible à
+cause de l'ordonnance immuable de Dieu, & de son inuincible puissance à l'executer) que quelqu'vn de ceux qu'il a
+predestinés à croire **ne creust pas**, ou que quelqu'vn de ceux qui croyent selon son election **ne fust pas
+sauué**, alors auroit-il **manqué à sa predestination & à la fidélité de ses promesses***» (с. 146).
+**Значение:** вторая невозможность **сильнее** первой. Неверие избранного невозможно «по непреложности
+определения и непобедимой силе к его исполнению» — это **дортский** язык (ср. «*infallibiliter*»,
+«*insuperabilius*», §4.100). **Стало быть: у Амиро неверие избранного невозможно сильнее, чем вера
+неизбранного, — но обе невозможности у него есть, и обе названы.**
+
+**8. Пять выводов раунда.**
+**(а)** «Две степени милости» — **окончательная форма** амировской схемы; в серии её и надо давать, а не
+«два искупления».
+**(б)** Сокрытие имён у Амиро имеет **цель**: не соблазнять и не мешать проповеди. Это можно брать в серию **без
+оговорок**.
+**(г)** Его запрет отчаяния («*ne se doit presumer estre reprouué*») и запрет расчёта («*ie ne croiray pas pource
+qu'il me seroit inutile*») — **готовые пастырские формулы**.
+**(д)** Контрфактическое (§4.114 п. 5) — **сильнейшее расхождение с Дортом**, найденное до сих пор: у Амиро
+спасение **мыслимо вне дара веры**; у Дорта — нет. Это **не то же**, что «оставление», и **не смягчается** им.
+**(е)** Но и здесь надо быть точным: Амиро **не** учит, что кто-то спасётся без благодати; он учит, что **если бы**
+такое случилось, определение не потерпело бы ущерба. Это **защита определения**, а не описание пути.
+
+**9. Оговорки.** `EDITION_HOLD` (1658, не 1634); 18 чанков из 74; французский OCR, орфография нормализована.
+**П. 202** — без изменений. **П. 211** — титул «Eschantillon» не встречен. **Гипотеза о чанке 19** (§4.112 п. 9)
+— без изменений, **не утверждение**. **Сверку с Дортом I.15** (оставление в общем бедствии) провести по тексту
+`Acta`, а не по памяти, — **п. 224**.
+
 ## 5. Анализ и границы допустимой формулировки
 
 **Суть ошибки — категориальная.** Исторический спор XVII в. (Дорт II.8, Калами, Оуэн, Турретин; и Шедд p. 475) ведётся в трёх регистрах: *ценность/достаточность* → *намерение/замысел* → *применение*. Прокопенко сводит схему к двум регистрам — *цена* и *результат*, — приклеивает к ним два английских слова (с перевёрнутой семантикой) и тем самым **выбрасывает средний регистр — намерение**, в котором только и находится реальный предмет спора. Отсюда иллюзия, что Дорт, Вестминстер и Шедд говорят «неограниченное искупление с ограниченным применением»: при двухрегистровой схеме любое «ограничение избранием» автоматически попадает в «применение».
@@ -6318,6 +6418,7 @@ esleu à croire*» — изящный и точный.
 | 1658 *(раунд 54, продолжение; Амиро, главы XI–XII, сс. 117–126)* | **Моисей Амиро**: «***Dieu donc agist en deux façons envers nous pour nous faire croire en Christ***» — внешне (проповедь) и внутренне («*il agist tellement en nos entendemens **par son intérieure vertu**, qu'il en decharte le vice & les tenebres*»); «***il est impossible déformais que nous ne croyions***»; «***toute répugnance estant contrainte de céder à cette puissance***»; «*se peut-il faire aucune resistance qui rende l'événement douteux, ou qui préuale?*»; «*exécute ce décret d'une façon qui **ne rend nullement l'événement douteux***»; больной/бедняк: «*S'il le refuse, il faut necessairement qu'il **ignore** sa poureté ou la richesse du tresor*»; гл. XII: «*non seulement ils creussent en Christ, mais mesmes **qu'il leur fust impossible de ne pas croire***»; «*quel interest avons nous à la conservation de cette liberté, si son office est de nous maintenir… **autant portés à rejetter Jésus-Christ qu'à le recevoir***» |
 | 1658 *(раунд 55; Амиро, глава XII, сс. 126–136)* | **Моисей Амиро**: «*quelque efficace que cet Esprit desploye en nous, **il ne nous contraint ny violente pas** pourtant. Car **la contrainte gist à faire quelque chose contre sa volonté***»; «*qui a jamais ouy parler d'un homme qui creust quelque chose **malgré qu'il en euft**…? **La croyance est une persuasion. Et on ne persuade personne par la force***»; «*Dieu meut nos volontés, nos affections **par l'entremise de nos entendemens***»; «*il est **impossible** que nous ne les apperceuions & que nous n'y cédions, **quelque résistance** qu'y facent au commencement nos affections*»; **ангелы**: «***nul ne doute que les Anges ne foyent à cette heure en estat de ne pouuoir pécher***… *Les Anges donc ont-ils perdu quelque liberté de leur volonté par la grâce de leur confirmation?*»; «*plus ils font excellens, **plus necessairement & ineuitablement** sentent ils… la puissance & efficace de ces choses*» |
 | 1658 *(раунд 55, продолжение; Амиро, глава XIII, сс. 137–142)* | **Моисей Амиро**: «*il faut soigneusement distinguer **la volonté de sauver les hommes**, laquelle quelques uns appellent, **contre l'usage de l'Escriture**, la **predestination au salut**, d'auec **l'election ou predestination à la foy***»; «*celle-cy est **absolue**… & ne dépend d'aucune condition; celle-là ne peut avoir lieu quant à son effect que par la presupposition de cette condition préalable*»; «*cette mesme Escriture qui nous enseigne si disertement que **Christ est mort universellement pour tout le monde**, en parle quelques-fois… qu'il est mort **pour le petit nombre des esleus***»; правило: «*diligemment distinguer entre **les manières de parler qui sont nées de la consideration des évenemens seulement**, & **celles qui viennent de la consideration des conseils mesmes***»; против «безопасности»: «*Encore que **ie croye**, ie ne seray pas esleu à croire pourtant*» |
+| 1658 *(раунд 56; Амиро, глава XIII, сс. 143–147)* | **Моисей Амиро**: милость Божия «*ayant **deux degrés***» — первая «*ne passe pas plus avant que de nous presenter la remission de nos offenses au Rédempteur*», вторая «*passe jusques à faire que nous croyions*»; первая «*universellement manifesté à tous par la predication de l'Euangile… auec cette **resolution ferme & immuable** de les sauuer s'ils croyent*»; вторая «*a esté **expressement caché**… **afin de n'estre point en achoppement aux autres & en empeschement à la predication de l'Euangile***»; «*nul… **ne se doit presumer estre reprouué***»; **контрфактическое:** «*posé le cas… qu'il y ait quelqu'un… à qui Dieu n'auoit pas ordonné de donner la foy, qui neantmoins croye véritablement… **cettuy-là sera sauvé** sans que Dieu face aucun tort au décret*»; «*il n'a pas predestiné les autres à ne croire pas… **il s'est contenté de les laisser en leur naturelle condition***»; обратное: «*si… quelqu'vn de ceux qu'il a predestinés à croire ne creust pas… **auroit-il manqué à sa predestination***» |
 ## 7. Права, архив и публикационные HOLD
 | 1618–1619 *(раунд 31)* | **Галло-бельгийские отвергнутые положения VI–IX**: «**impetratam, nec tamen datam**»; «**jus vel potestatem atque voluntatem** reconciliandi»; «Christum **pro multis mortuum esse, pro quibus non resurrexit**… fructus Christi a fructu… resurrectionis… distingui»; «reconciliationem **ab intercessione**… posse separari»; «nihil veritati… convenienter dicitur» | S122, §4.61 пп. 1–2 |
 | 1618–1619 *(раунд 31)* | **Зеландское суждение**: «**λύτρον**… sufficiens esse in sese» + «persolvere redemptionis pretium **pro omnibus & solis Electis**»; rationes — Eph. 1:7 («redemptionem derivat ab electione»), двойное взыскание («damnatos **iniuste puniret**»), непросвещённые народы (2 Кор. 5:19–20 + Деян. 16:7); «**individuo nexu**… ad solos electos pertinere» | S120, §4.61 пп. 3–5 |
@@ -6785,6 +6886,18 @@ esleu à croire*» — изящный и точный.
   это **переворачивает** обычный порядок. **Против «безопасности»:** «*Encore que ie croye, ie ne seray pas esleu à
   croire pourtant*».
 
+- **Раунд 56: Амиро, глава XIII (чанок 28, сс. 143–147).** Прочитано 18/74. **«Две степени милости»** —
+  окончательная форма схемы: первая «*ne passe pas plus avant que de nous presenter la remission… au Rédempteur*»
+  (всеобщая, по проповеди, с «*resolution ferme & immuable de les sauuer s'ils croyent*»); вторая «*passe jusques à
+  faire que nous croyions*». **Сокрытие имён** имеет цель: «***afin de n'estre point en achoppement aux autres &
+  en empeschement à la predication de l'Euangile***» ⇒ брать в серию без оговорок. **Запрет отчаяния** («*ne se
+  doit presumer estre reprouué*») и **запрет расчёта** («*ie ne croiray pas pource qu'il me seroit inutile*»).
+  **Контрфактическое (сильнейшее расхождение с Дортом):** «*posé le cas… qu'il y ait quelqu'un… à qui Dieu n'auoit
+  pas ordonné de donner la foy, qui neantmoins croye véritablement… **cettuy-là sera sauvé***» — у Амиро спасение
+  **мыслимо вне дара веры** (хотя «*entièrement impossible*» фактически); у Дорта **немыслимо**. И: «*il n'a pas
+  predestiné les autres à ne croire pas… il s'est contenté de les **laisser en leur naturelle condition***» — близко
+  к дортскому «оставлению», **поэтому нельзя** говорить «у Дорта есть определение к осуждению, у Амиро нет».
+
 ## 8. Следующее проверяемое действие
 **Добавлено в раунде 49:**
 
@@ -6913,6 +7026,17 @@ croire*» со свободою воли — и не вводит ли он ра
 всеобщие тексты объясняются **предложением**, а частные — **намерением**; это **обратный** порядок. Вынести в
 `03_` §29 как приложение.
 223. *(раунд 55)* **Дочитать главы XIV–XVI** (чанки 28–30) и найти «Eschantillon» в конце тома (чанки 31–40).
+
+**Добавлено в раунде 56:**
+
+224. *(раунд 56)* **Сверить по тексту `Acta`** дортское учение об оставлении (*relinquere in communi miseria*,
+I арт. 15) — **не по памяти** — и сопоставить с «*il s'est contenté de les laisser en leur naturelle condition*»
+(§4.114 п. 6). Только после сверки формулировать различие.
+225. *(раунд 56)* **Сопоставить «*deux degrés*»** (§4.114 п. 1) с «*cette charité ne passe pas cette mesure*»
+(S156, р.50) и с дортским «*impetratio… concessionem rei petitae includit*» (S146): у Амиро **степени одной
+милости**, у Дорта **одно приобретение с приложением**. Вынести в `03_` §30.
+226. *(раунд 56)* **Проверить контрфактическое** (§4.114 п. 5) на дортских текстах: есть ли у делегаций
+утверждение, что «природою произведённая вера» **не есть вера**? Если да — это и есть точка несовместимости.
 
 **Добавлено в раунде 48:**
 
