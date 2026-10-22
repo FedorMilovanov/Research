@@ -7,6 +7,8 @@
 **Root authority:** не меняется. Корневой root — `00_RESEARCH_CURRENT_AUTHORITY_2026-08-02.md` через `data/research-authority-registry-v1.json`.
 **Evidence policy:** [`data/repository-evidence-policy-v2.json`](../../data/repository-evidence-policy-v2.json)
 **Консолидированный аудит ветки:** [`14_NT_BRANCH_AUDIT_2026-10-12.md`](14_NT_BRANCH_AUDIT_2026-10-12.md) (research merge и publication разделены).
+
+**Карточка-исследование 2026-10-23:** [`15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md`](15_JOHN_11_52_SCATTERED_CHILDREN_EXEGESIS_2026-10-23.md) — Ин 11:52: статус «чад Божиих» до веры; основание: вопрос владельца 2026-10-23; `EVIDENCE_HOLD` не снят, вердикта нет.
 **Машинный SSOT:** [`data/nt-corpus-v1.json`](data/nt-corpus-v1.json)
 
 Этот файл — corpus-specific evidence graph **под-корпуса** новозаветной экзегезы искупления. Он **не** корневой, **не** перекрывает родительский корпус и **не** разрешает публикацию. `Research closure ≠ Product write ≠ publication approval`.

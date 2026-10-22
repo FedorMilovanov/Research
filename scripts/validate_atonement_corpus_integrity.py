@@ -878,6 +878,66 @@ if _out:
             f"({sorted(_files_seen)[:3]}…)"
         )
 
+# --------------------------------------------- JSON-листья: правило 19 (23.10) --
+# До сего круга смешанное письмо искалось только на *.md: из-за этого ни один реестр
+# (включая собственный) не проверялся — на JSON проверка была пуста по построению,
+# потому что кавычки-цитаты вырезают всё содержимое строки целиком. Теперь класс
+# определяется формой значения: проверяется каждый строковый лист дерева, а не файл
+# по расширению. Своё -> errors; чужие под-реестры -> notes (правило 17).
+QUOTED_JSON = re.compile(r"\u00ab[^\u00bb]*\u00bb")
+def _leaf_hits(obj):
+    out = []
+    def walk(o, path):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                walk(v, path + "." + str(k))
+        elif isinstance(o, list):
+            for i, v in enumerate(o):
+                walk(v, "%s[%d]" % (path, i))
+        elif isinstance(o, str):
+            for w in mixed_words(QUOTED_JSON.sub(" ", o)):
+                out.append((path, w))
+    walk(obj, "")
+    return out
+
+_own_json_hits = []
+_sub_json_hits = []
+_json_files_scanned = 0
+for _jp in sorted(CORPUS.rglob("*.json")):
+    try:
+        _jd = json.loads(read(_jp))
+    except Exception:
+        continue  # нечитаемый JSON уже ловится другими проверками, здесь не дублируем
+    _json_files_scanned += 1
+    _hits = _leaf_hits(_jd)
+    if _jp == REG:
+        _own_json_hits.extend(_hits)
+    elif _hits:
+        _sub_json_hits.extend((str(_jp.relative_to(ROOT)) + p, w) for p, w in _hits)
+if _own_json_hits:
+    errors.append(
+        f"правило 19: в собственном реестре {len(_own_json_hits)} смешанных написаний в строковых "
+        f"листьях ({[w for _p, w in _own_json_hits][:4]}) — цитата должна стоять в «ёлочках», а употребление обязано быть русским"
+    )
+_jrec = (msc := {}).get("jsonLeafScan") if False else ((reg.get("integrityGate", {}).get("mixedScriptCheck") or {}).get("jsonLeafScan") or {})
+if _jrec:
+    if int(_jrec.get("ownOccurrences", -1)) != len(_own_json_hits):
+        errors.append(
+            f"jsonLeafScan.ownOccurrences = {_jrec.get('ownOccurrences')!r}, а обход видит {len(_own_json_hits)}: "
+            "собственное число обязано совпадать с обходом"
+        )
+    if int(_jrec.get("scannedFiles", -1)) != _json_files_scanned:
+        errors.append(
+            f"jsonLeafScan.scannedFiles = {_jrec.get('scannedFiles')!r}, а обход видит {_json_files_scanned} JSON-файлов "
+            "в ИСКУПЛЕНИЕ/** — раскладка обязана сходиться со съёмом"
+        )
+    if int(_jrec.get("foreignOccurrences", -1)) != len(_sub_json_hits):
+        notes.append(
+            f"jsonLeafScan.foreignOccurrences записано {_jrec.get('foreignOccurrences')!r}, обход видит {len(_sub_json_hits)} "
+            f"({sorted({p for p, _w in _sub_json_hits})[:3]}) — чужой периметр считается, но не блокирует прогон"
+        )
+
+
 # ---------------------------------------------------- commit message hygiene --
 # Тот же класс, что и в файлах, я сегодня трижды занесла в сообщения коммитов (кириллическая строка с латинской
 # буквой и дважды — иероглифы, затесавшиеся там, где я сжимала два придаточных). Историю PR ради этого не
