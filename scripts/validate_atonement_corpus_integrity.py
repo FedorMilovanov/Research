@@ -608,6 +608,38 @@ if "exemptionsDeclared" in _msc and int(_msc["exemptionsDeclared"]) != _exempt_t
         "исключение из проверки — это тоже факт, он обязан быть переснят (grep -c '" + EXEMPT + "' ИСКУПЛЕНИЕ/*.md)"
     )
 
+if REG.is_file():
+    # (2c) живые счётчики: число, записанное в двух местах, обязано разойтись — поэтому то, что можно
+    # переснять этим же обходом, переснимается, а не цитируется
+    _live = ((reg.get("reproducibility20261022") or {}).get("countsLive") or {})
+    _audit = reg.get("branchTopologyAudit20261022") or {}
+    _expect = {
+        "ключейРеестра": len(reg),
+        "правилГейта": len(((reg.get("integrityGate") or {}).get("rules") or {}).get("list") or []),
+        "shaВсверкеВремен": len(_audit.get("commitTimeChecks") or {}),
+        "строкВАудитеТопологии": len(_audit.get("rows") or []),
+    }
+    if _live:
+        for _k, _v in sorted(_expect.items()):
+            if _k in _live and int(_live[_k]) != _v:
+                errors.append(
+                    f"reproducibility20261022.countsLive[{_k!r}] = {_live[_k]!r}, а обход видит {_v} — живой "
+                    "счётчик не имеет права быть цитатой: или число переснято, или блок надо убирать"
+                )
+        _missing = sorted(set(_expect) - set(_live))
+        if _missing:
+            errors.append(
+                f"countsLive не содержит {_missing} — блок закрыт: в нём объявлены ровно проверяемые числа, "
+                "иначе «число есть» снова означает «кто-то когда-то посчитал»"
+            )
+        _extra = sorted(set(map(str, _live)) - set(_expect) - {"measuredAt", "method", "recheckCommand", "why",
+                                                                "removedFigures"})
+        if _extra:
+            errors.append(
+                f"countsLive содержит {_extra}: в блоке живут только числа, которые переснимает этот же обход; "
+                "остальное — в тех записях, где у числа есть источник"
+            )
+
 # ---------------------------------------------------- commit message hygiene --
 # Тот же класс, что и в файлах, я сегодня трижды занесла в сообщения коммитов (кириллическая строка с латинской
 # буквой и дважды — иероглифы, затесавшиеся там, где я сжимала два придаточных). Историю PR ради этого не
