@@ -795,6 +795,27 @@ MASS_LOC = re.compile(r"(с\.\s*\d|с\.\s*\d|pp?\.\s*\d|col\.|пар\.\s*\d|§\s
 MASS_LANEREF = re.compile(r"`(\d{2})_`")
 MASS_PATHREF = re.compile(r"`(ИСКУПЛЕНИЕ/[A-Za-z0-9_/.\-]+?)(?:\s[^`]*)?`")
 
+CJK_GLYPH = re.compile(r"[\u3000-\u9fff\uff01-\uff5e\u3001-\u303f]")
+
+
+def cjk_hits(paths):
+    """CJK вне цитат: {путь: [(строка, фрагмент)]}. Цитатные скобки вычитываются — освобождение для
+    цитаты защищает и опечатки, поэтому «образец дефекта» в backtick'ах остаётся законным (ср. правило 22)."""
+    out = {}
+    for p in paths:
+        try:
+            txt = p.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            continue
+        hits = []
+        for n, line in enumerate(txt.split("\n"), 1):
+            bare = QUOTED.sub(" ", line)
+            for m in CJK_GLYPH.finditer(bare):
+                hits.append((n, bare[max(0, m.start() - 6):m.start() + 7].strip()))
+        if hits:
+            out[str(p.relative_to(ROOT))] = hits
+    return out
+
 
 def measure_mass_registry():
     """Определение, которым мерит правило 23: строка = «| FP-NN | … | `класс` | …».
@@ -1464,6 +1485,28 @@ else:
         if _noloc:
             errors.append(f"ПРАВИЛО 23: {len(_noloc)} строк класса `A1` без локатора (первая — FP-{_noloc[0]:02d}) — «сверено по изданию» без страницы/колонки/парграфа "
                           "е ровно тот дефект, из-за которого весь этот корпус и затеян")
+        # CJK-скан реестра и корпуса: прилипшие азиатские глифы — фирменный артефакт «написано по памяти»
+        _cjk_lane = cjk_hits(sorted(DOCS.glob("*.md")))
+        _cjk_root = cjk_hits(sorted(CORPUS.glob("*.md")))
+        _cjk_sub = cjk_hits(sorted(p for d in ("ot", "nt", "synthesis", "fathers") for p in (CORPUS / d).rglob("*.md")))
+        _ncjk = sum(len(v) for v in _cjk_lane.values()) + sum(len(v) for v in _cjk_root.values())
+        _cjk_decl = _ma.get("cjkScan20261023") or {}
+        for _k in ("scope", "laneOccurrences", "rootOccurrences", "subLaneOccurrences", "recheckCommand", "checkedAt"):
+            if _k not in _cjk_decl:
+                errors.append(f"ПРАВИЛО 23: в fourPointMassRegistry20261023.cjkScan20261023 нет поля «{_k}»")
+        if (_cjk_decl.get("laneOccurrences") if _cjk_decl.get("laneOccurrences") is not None else -1) != sum(len(v) for v in _cjk_lane.values()):
+            errors.append(f"ПРАВИЛО 23: CJK в docs/research/atonement: заявлено {_cjk_decl.get('laneOccurrences')}, "
+                          f"обход видит {sum(len(v) for v in _cjk_lane.values())} ({list(_cjk_lane)[:3]})")
+        if (_cjk_decl.get("rootOccurrences") if _cjk_decl.get("rootOccurrences") is not None else -1) != sum(len(v) for v in _cjk_root.values()):
+            errors.append(f"ПРАВИЛО 23: CJK в корневых файлах корпуса: заявлено {_cjk_decl.get('rootOccurrences')}, "
+                          f"обход видит {sum(len(v) for v in _cjk_root.values())} ({list(_cjk_root)[:3]})")
+        if _ncjk:
+            _where = "; ".join(f"{k}:{v[0][0]} {v[0][1]!r}" for k, v in list(_cjk_lane.items()) + list(_cjk_root.items())[:3])
+            errors.append(f"ПРАВИЛО 23: {_ncjk} CJK-глифов вне цитат в реестре/корпусе ({_where}) — это не иероглифика, "
+                          "это прилипшее при наборе по памяти: чинить букву, а не помечать исключение")
+        if (_cjk_decl.get("subLaneOccurrences") if _cjk_decl.get("subLaneOccurrences") is not None else -1) != sum(len(v) for v in _cjk_sub.values()):
+            notes.append(f"ПРАВИЛО 23: CJK в под-ланах корпуса: обход видит {sum(len(v) for v in _cjk_sub.values())}, "
+                         f"заявлено {_cjk_decl.get('subLaneOccurrences')} — чужой прогон моим числом не блокируется")
         _badref = sorted(r for r in _mrefs if r.startswith(("ИСКУПЛЕНИЕ/", "docs/")) and not (ROOT / r).exists()
                          or not r.startswith(("ИСКУПЛЕНИЕ/", "docs/")) and not list(DOCS.glob(r + "*")) and not list(CORPUS.glob(r + "*")))
         if _badref:

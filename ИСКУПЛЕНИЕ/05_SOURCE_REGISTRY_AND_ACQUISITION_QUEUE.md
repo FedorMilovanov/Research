@@ -170,7 +170,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | O05 | SECONDARY | Apostasy corpus | `apostasy/08_SOURCE_REGISTRY…`; `apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md` | Heb 6/10 не решать заново; 2 Пет. 2:1 не решать системой искупления до экзегезы письма | follow apostasy |
 | O06 | SECONDARY | Highway Murray *The Atonement* | https://www.the-highway.com/atonement_murray.html | copyright; paraphrase in `11` | NO |
 | O07 | SCHOLARLY-OPEN | OPC Free Offer 1948 | https://opc.org/GA/free_offer.html | majority+minority; B5 | paraphrase of public church paper |
-| O14 | LANE-REGISTRY | Реестр массы носителей позиции: `docs/research/atonement/35_four_point_authors_mass_registry.md` (151 строка, 12 эпох, классы `A1`/`A2`/`B1`/`B2`/`C`, очередь `Q-01`…`Q-82`) | — | источник новых кандидатов в эту очередь; по первичному изданию прочитано 17 % строк | NO, пока позиция в классе `C` |
+| O14 | LANE-REGISTRY | Реестр массы носителей позиции: `docs/research/atonement/35_four_point_authors_mass_registry.md` (180 строк, 13 эпох и слоёв, классы `A1`/`A2`/`B1`/`B2`/`C`, 105 адресатов очереди `Q-nn` по номерам строк) | — | источник новых кандидатов в эту очередь; по первичному изданию прочитано 14 % строк | NO, пока позиция в классе `C` |
 
 ---
 
