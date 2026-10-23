@@ -226,7 +226,15 @@
    ],
    "queueRows": [],
    "locator": "Goold, т. 1 (Allen 1850), лист = страница + 16; «The Death of Death» 1653",
-   "note": "носитель, из которого сняты локаторы строки FP-128 (через лан 14_); переехал из 01 23.10.2026"
+   "note": "носитель, из которого сняты локаторы строки FP-128 (через лан 14_); переехал из 01 23.10.2026 | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "registryRowClasses": {
+    "FP-063": "C",
+    "FP-124": "A2",
+    "FP-128": "A1",
+    "FP-135": "A2",
+    "FP-167": "C"
+   },
+   "registryRowClass": "C"
   },
   {
    "folder": "10.1",
@@ -274,7 +282,21 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "ровно тот случай, из-за которого введён индекс: 45 МБ носителя, ни одна строка реестра не берёт из него локатор (слово Institutes в реестре одно и относится к Кассиану, FP-01); переехал из 01 23.10.2026"
+   "note": "ровно тот случай, из-за которого введён индекс: 45 МБ носителя, ни одна строка реестра не берёт из него локатор (слово Institutes в реестре одно и относится к Кассиану, FP-01); переехал из 01 23.10.2026 | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "registryRowClasses": {
+    "FP-043": "C",
+    "FP-110": "A2",
+    "FP-123": "B1",
+    "FP-126": "A2",
+    "FP-131": "C",
+    "FP-138": "A1",
+    "FP-145": "A1",
+    "FP-170": "C",
+    "FP-175": "B1",
+    "FP-191": "C",
+    "FP-203": "C"
+   },
+   "registryRowClass": "C"
   },
   {
    "folder": "10.2",
@@ -333,7 +355,16 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "текст Вестминстера в реестре цитируется по статьям (II.2, III.7…) из сетевых изданий, не по этому скану; переехал из 04 23.10.2026"
+   "note": "текст Вестминстера в реестре цитируется по статьям (II.2, III.7…) из сетевых изданий, не по этому скану; переехал из 04 23.10.2026 | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "registryRowClasses": {
+    "FP-064": "C",
+    "FP-170": "C",
+    "FP-173": "B1",
+    "FP-175": "B1",
+    "FP-187": "B1",
+    "FP-202": "C"
+   },
+   "registryRowClass": "C"
   },
   {
    "folder": "10.9",
@@ -356,7 +387,13 @@
    ],
    "queueRows": [],
    "locator": "The Whole Works…, Dublin 1864, XII.553–560 и XII.563–571; у Хикмана — сс. 40–45 по ручной пагинации транскрипта",
-   "note": "единственный носитель в периметре, чей локатор прямо стоит в строках реестра; положен 23.10.2026"
+   "note": "единственный носитель в периметре, чей локатор прямо стоит в строках реестра; положен 23.10.2026 | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "registryRowClasses": {
+    "FP-185": "A2",
+    "FP-186": "B1",
+    "FP-188": "B1"
+   },
+   "registryRowClass": "A2"
   },
   {
    "folder": "01",
@@ -391,8 +428,13 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "47+6 заголовков Books IV–V — источник локаторов строки FP-128",
-   "gitFile": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md"
+   "note": "47+6 заголовков Books IV–V — источник локаторов строки FP-128 | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "gitFile": "ИСКУПЛЕНИЕ/14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
+   "registryRowClasses": {
+    "FP-114": "A1",
+    "FP-128": "A1"
+   },
+   "registryRowClass": "A1"
   },
   {
    "folder": "02",
@@ -487,8 +529,13 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "план чтения прямых текстов об объёме; сам корпус в git",
-   "gitFile": "ИСКУПЛЕНИЕ/03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md"
+   "note": "план чтения прямых текстов об объёме; сам корпус в git | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "gitFile": "ИСКУПЛЕНИЕ/03_BIBLICAL_CORPUS_AND_REDEMPTION_VOCABULARY.md",
+   "registryRowClasses": {
+    "FP-057": "C",
+    "FP-073": "C"
+   },
+   "registryRowClass": "C"
   },
   {
    "folder": "04",
@@ -508,8 +555,14 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "",
-   "gitFile": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md"
+   "note": " | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "gitFile": "ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md",
+   "registryRowClasses": {
+    "FP-114": "A1",
+    "FP-129": "A1",
+    "FP-138": "A1"
+   },
+   "registryRowClass": "A1"
   },
   {
    "folder": "04",
@@ -528,8 +581,13 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "",
-   "gitFile": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md"
+   "note": " | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "gitFile": "ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
+   "registryRowClasses": {
+    "FP-129": "A1",
+    "FP-138": "A1"
+   },
+   "registryRowClass": "A1"
   },
   {
    "folder": "04",
@@ -548,8 +606,13 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "",
-   "gitFile": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md"
+   "note": " | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "gitFile": "ИСКУПЛЕНИЕ/16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+   "registryRowClasses": {
+    "FP-121": "A1",
+    "FP-129": "A1"
+   },
+   "registryRowClass": "A1"
   },
   {
    "folder": "05",
@@ -1004,7 +1067,10 @@
    "gitFile": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
    "note": "Docs-зеркало, снято с рабочего дерева перед коммитом круга 20; bytes — размер git-первоисточника, у Docs-объекта побайтового размера в Drive нет (get_file возвращает 1)",
    "lagBehindGit": true,
-   "lagNote": "первоисточник правился кругом 21 (в 07_ переписан §8: числа индекса после круга 21), Docs-зеркало не переливалось: в дереве 68 123 B, md5 71f5c6415bd8f2209807c2609975c7cb, а имя снимка обещает 67 420 B и md5 круга 20; переливка на каждый круг удваивает число объектов в папке, поэтому отставание объявлено здесь, а не промолчано"
+   "lagNote": "первоисточник правился кругом 21 (в 07_ переписан §8: числа индекса после круга 21), Docs-зеркало не переливалось: в дереве 68 123 B, md5 71f5c6415bd8f2209807c2609975c7cb, а имя снимка обещает 67 420 B и md5 круга 20; переливка на каждый круг удваивает число объектов в папке, поэтому отставание объявлено здесь, а не промолчано",
+   "lagNote20261023e": "Docs-зеркало `07_` не переливалось: файл лана вырос на абзац круга 24, имя зеркала описывает снимок круга 22 (67 420 B, md5 54e1393b7b9eb26170d5c40f0f023ede); живые числа — в двух полях ниже",
+   "gitBytesAfterRound24": 73935,
+   "gitMd5AfterRound24": "0c765d4e108c1a6cbf516e32c4694ff7"
   },
   {
    "folder": "05",
@@ -1046,7 +1112,12 @@
    ],
    "queueRows": [],
    "locator": "A Systeme or Body of Divinity (London: A.M. for William Lee at the Turks-head), 1662, 602 — по съёму индексатора; отпечаток в EEBO = издание 1654 (Wing L1008), год 1662 = четвёртое издание по DNB",
-   "note": "снято тем же кругом, что поднял строку FP-157 из `C`; снят абзац, на который опирается реестр, а не страница целиком; положен 23.10.2026 кругом 21"
+   "note": "снято тем же кругом, что поднял строку FP-157 из `C`; снят абзац, на который опирается реестр, а не страница целиком; положен 23.10.2026 кругом 21 | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "registryRowClasses": {
+    "FP-157": "B1",
+    "FP-204": "B1"
+   },
+   "registryRowClass": "B1"
   },
   {
    "folder": "10.9",
@@ -1067,7 +1138,12 @@
    ],
    "queueRows": [],
    "locator": "с. 319 по books.google.com/books?id=RCwJAAAAIAAJ; какое из изданий Феннера за этим стоит — не установлено",
-   "note": "первоисточник формулы, которую пересказывает Лиг; 2 из 3 фрагментов страницы не сняты; положен 23.10.2026 кругом 21"
+   "note": "первоисточник формулы, которую пересказывает Лиг; 2 из 3 фрагментов страницы не сняты; положен 23.10.2026 кругом 21 | круг 24: запись касается строк разных классов, поэтому класс перечислен по каждой строке (registryRowClasses) — единое поле на такую запись не распространяется, его ввело правило 23.3",
+   "registryRowClasses": {
+    "FP-204": "B1",
+    "FP-157": "B1"
+   },
+   "registryRowClass": "B1"
   },
   {
    "folder": "10.9",
@@ -1224,14 +1300,18 @@
     "Q-205"
    ],
    "locator": "Boyce, Abstract of Theology ed. F. H. Kerfoot, 296 (по цитате у Кэрролла)",
-   "note": "фрагмент 1 из 3. Название книги, из которой снято, индексатор не приводит, поиски его не назвали ⇒ FP-205 остаётся `C`. Побочная польза снимка: он даёт точную страницу Бойса (296) — строка FP-206 поставлена по ней, но локатор вторичный вдвойне, поэтому `B1`, а не `A1`",
+   "note": "фрагмент 1 из 3. Название книги, из которой снято, индексатор не приводит, поиски его не назвали ⇒ FP-205 остаётся `C`. Побочная польза снимка: он даёт точную страницу Бойса (296) — строка FP-206 поставлена по ней, но локатор вторичный вдвойне, поэтому `B1`, а не `A1` Круг 24: единое поле `registryRowClass` описывало только первичную строку, и это была неправда о второй — добавлено `registryRowClasses` с классом по каждой строке, и правило 23.3 сверяет оба поля",
    "capturedAt": "2026-10-23T19:01:04Z",
    "localMd5": "75ead8b5bf2b06d3efe48deebf31f5a8",
    "localBytes": 3221,
    "driveMd5Verified": "75ead8b5bf2b06d3efe48deebf31f5a8",
    "driveBytesVerified": 3221,
    "sourceUrl": "calvinandcalvinism.com/?p=14969",
-   "registryRowClass": "C"
+   "registryRowClass": "C",
+   "registryRowClasses": {
+    "FP-205": "C",
+    "FP-206": "B1"
+   }
   },
   {
    "folder": "10.9",
@@ -1266,15 +1346,15 @@
    "kind": "file",
    "mime": "text/markdown",
    "bytes": 179168,
-   "name": "2026-10-23 — слепок 35_four_point_authors_mass_registry (круг 22: 206 строк, 179168 B, md5 3b00eafbfa8893fd9914daaa1fb4e850).md",
-   "role": "registry-mirror",
-   "rights": "mirror_of_git",
+   "name": "УСТАРЕЛО (слепок круга 22: 206 строк, 179168 B, md5 3b00eafbfa8893fd9914daaa1fb4e850; заменён кругом 24 2026-10-23) 35_four_point_authors_mass_registry.md",
+   "role": "superseded-mirror",
+   "rights": "HOLD_superseded",
    "readState": "not_applicable",
    "aboutRows": [],
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "слепок канона круга 22, залит побайтово с рабочего дерева в тот же час, что и коммит: имя называет 206 строк-носителей, 179168 B и md5, и все три совпадают с git-файлом — флага lagBehindGit у этой записи нет, потому что отставания нет; круг 23: реестр вырос, снимок помечен lagBehindGit с живыми байтами и md5, число строк в имени (206) по-прежнему верно",
+   "note": "прежний снимок канона (круг 22: 206 строк, 179168 B, md5 3b00eafbfa8893fd9914daaa1fb4e850); круги 23 и 24 не переливали его, а объявляли отставание флагом — до круга 24, когда число строк-носителей изменилось (206 → 207) и правило 25 перестало прощать расхождение в имени; тогда слепок перелили новым объектом, а этот оставили в ряду и переименовали в «УСТАРЕЛО», как того требует сопоставление пометки с классом прав; в trash не убран",
    "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
    "driveBytesClaimed": 179168,
    "driveMd5Claimed": "3b00eafbfa8893fd9914daaa1fb4e850",
@@ -1284,11 +1364,11 @@
    "uploadedAt": "2026-10-23T19:01:04Z",
    "md5VerifiedFromDrive": "3b00eafbfa8893fd9914daaa1fb4e850",
    "chainNote": "ряд снимков в этой папке: круг 22 — этот, круг 21 — 1iv5Us-oTDPpwdt3HsAQEHSWr6sPtfE4Q (УСТАРЕЛО), круг 20 — 1i0AFYBd5N94v89W2dNr9RSWDmCYuR54f, круг 17 — 166ykv_2E4Za0vpgqEqC0xstQre20OkHf, круг 16 — 1Fd9wMIgXyWh7yWQ93DnZw067FOl9psN_",
-   "lagBehindGit": true,
    "gitBytesAfterRound23": 191210,
    "gitMd5AfterRound23": "1533e9fc46c2e1110e5043be72642996",
    "gitLinesAfterRound23": 700,
-   "lagNoteAfterRound23": "круг 23 добавил в реестр §23 и четыре правки строк, не изменив числа строк-носителей (206): имя снимка остаётся верным в главном — в числе строк, — а байты и md5 в нём описывают сам снимок, каким его закачали; живые числа круга 23 записаны в этих трёх полях, переливка не сделана сознательно: она удваивала бы объекты каждый круг, а отставание объявлено флагом"
+   "lagNoteAfterRound23": "круг 23 добавил в реестр §23 и четыре правки строк, не изменив числа строк-носителей (206): имя снимка остаётся верным в главном — в числе строк, — а байты и md5 в нём описывают сам снимок, каким его закачали; живые числа круга 23 записаны в этих трёх полях, переливка не сделана сознательно: она удваивала бы объекты каждый круг, а отставание объявлено флагом",
+   "supersededBy20261023e": "1wLQnphoJcA5_HG-4Ic_WiprmX_zsaq9I"
   },
   {
    "folder": "10.9",
@@ -1397,6 +1477,114 @@
    "driveBytesVerified": 3704,
    "sourceUrl": "calvinandcalvinism.com/?p=12519",
    "registryRowClass": "C"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "1l_-BpI8inDPe02ptaEajBVODBqrMZzSj",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 5077,
+   "name": "2026-10-23 — Маастрихт — Treatise on Regeneration (New-Haven, 1770, 37–38 и 46–47; снято с ?p=12944).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-165"
+   ],
+   "citedBy": [
+    "FP-165"
+   ],
+   "queueRows": [],
+   "locator": "Peter van Mastricht, A Treatise on Regeneration (New-Haven: Thomas and Samuel Green, 1770), 37–38 и 46–47; латинский первоисточник — Theologia theoretico-practica VI.iii.757–774 «De Redimendorum Regeneratione» (локатор по вторичной статье D. Stanton, MAJT 29 (2018))",
+   "note": "целиком снятая страница указателя: два места про Кэмерона и Амираута, примечание индексатора о том, что трактат есть выписка из «Theologia theoretico-practica», и перечень совпадений с Amyraut; издание сверено независимо (скан Princeton Theological Seminary в Internet Archive, каталоги OpenLibrary/Bowdoin/Bates со ссылками на Evans, Trumbull, ESTC) ⇒ строка поднята до `A2`; у Эванса 1769 против титульного 1770 — оговорка в файле",
+   "capturedAt": "2026-10-23T20:35:00Z",
+   "localMd5": "d05dfd6e0f533dbed16f28d943210617",
+   "localBytes": 5077,
+   "driveMd5Verified": "d05dfd6e0f533dbed16f28d943210617",
+   "driveBytesVerified": 5077,
+   "sourceUrl": "calvinandcalvinism.com/?p=12944",
+   "registryRowClass": "A2"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "1IMoYsrtqnR3Q9jIGtAuCq1-kz6ZPMkaR",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 4180,
+   "name": "2026-10-23 — Мэнтон — Complete Works, том 21, Sermons Upon 1 Peter 1:23, 332 (снято с ?p=12583).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-207"
+   ],
+   "citedBy": [
+    "FP-207"
+   ],
+   "queueRows": [],
+   "locator": "Thomas Manton, “Sermons Upon 1 Peter 1:23,” in The Complete Works of Thomas Manton (London: James Nisbet & Co., 1873), 21:332",
+   "note": "снятая целиком страница указателя с абзацем про «non posse есть non velle»; отпечаток набора (22 тома, 1870–1875) и оглавления тома 21 сверены по каталогам, страница 332 попала в названный блок (299…337) ⇒ новая строка `FP-207` класса `A2`; цепочка транскрипции вторична дважды (индексатор благодарит блог 2008 г., подчёркивание его), год тома 1873 против 1874 — оговорка",
+   "capturedAt": "2026-10-23T20:35:00Z",
+   "localMd5": "b7fcf5eeb8d2fcf16f0d0b71d79af5a1",
+   "localBytes": 4180,
+   "driveMd5Verified": "b7fcf5eeb8d2fcf16f0d0b71d79af5a1",
+   "driveBytesVerified": 4180,
+   "sourceUrl": "calvinandcalvinism.com/?p=12583",
+   "registryRowClass": "A2"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "1mLYaJsrSYgNqyyY1V6AUomis0fC7VBOE",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 5525,
+   "name": "2026-10-23 — Хамфрей — The Middle-Way in One Paper of Election & Redemption (1673, 24–40, фрагмент 1/9; снято с ?p=4407).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-160"
+   ],
+   "citedBy": [
+    "FP-160"
+   ],
+   "queueRows": [],
+   "locator": "John Humfrey, The Middle-Way in One Paper of Election & Redemption (London: Printed for T. Parkhust, at the Three Bibles in Cheap-side, 1673), 24–40 — издатель и страницы названы в самой странице, вторым источником не сверены",
+   "note": "Fragment 1 из 9: трактат назван с выходными данными, «Redemption is but one, though that one may have a double Respect», «all are redeemed, and also the Elect only», «half approve» и встречный упрёк «Redemption Special does indeed»; независимой каталожной записи нет ⇒ `B1`; в файле записаны обе ловушки — гиперссылка в заголовке ведёт на Dictionary of National Biography (1891), а не на источник, и написание «Parkhust» против каталожного «Parkhurst»",
+   "capturedAt": "2026-10-23T20:35:00Z",
+   "localMd5": "23ff2b85bccbd4aa1c4043e4bf3f361f",
+   "localBytes": 5525,
+   "driveMd5Verified": "23ff2b85bccbd4aa1c4043e4bf3f361f",
+   "driveBytesVerified": 5525,
+   "sourceUrl": "calvinandcalvinism.com/?p=4407",
+   "registryRowClass": "B1"
+  },
+  {
+   "folder": "05",
+   "driveId": "1wLQnphoJcA5_HG-4Ic_WiprmX_zsaq9I",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 203924,
+   "name": "2026-10-23 — слепок 35_four_point_authors_mass_registry (круг 24: 207 строк, 203924 B, md5 efff943ab6501bf492c7904edf677f67).md",
+   "role": "registry-mirror",
+   "rights": "mirror_of_git",
+   "readState": "not_applicable",
+   "aboutRows": [],
+   "citedBy": [],
+   "queueRows": [],
+   "locator": "",
+   "note": "слепок канона круга 24, залит побайтово из рабочего дерева: имя называет 207 строк, 203924 B и md5 efff943ab6501bf492c7904edf677f67 — все три сверены с git-файлом после загрузки (list_files по папке `05.` с полями size и md5Checksum); переливка сделана потому, что правило 25 сверяет число строк в имени снимка без скидки на флаг, а круг 24 изменил именно его; отставания нет, поэтому `lagBehindGit` = false",
+   "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
+   "driveBytesClaimed": 203924,
+   "driveMd5Claimed": "efff943ab6501bf492c7904edf677f67",
+   "gitBytesAtUpload": 203924,
+   "gitRowsAtUpload": 207,
+   "gitFileLinesAtUpload": 766,
+   "uploadedAt": "2026-10-23T20:42:15Z",
+   "md5VerifiedFromDrive": "efff943ab6501bf492c7904edf677f67",
+   "gitSha256AtUpload": "8262684e65566f2072d6fbd6baf327597ccc6a18259d29d6e7d53820a13c82a3",
+   "chainNote": "ряд снимков в этой папке: круг 24 — этот (207 строк), круг 22 — 1gyQFcLiTmROYE851qbYlmf2y63fAn-SJ (УСТАРЕЛО), круг 21 — 1iv5Us-oTDPpwdt3HsAQEHSWr6sPtfE4Q, круг 20 — 1i0AFYBd5N94v89W2dNr9RSWDmCYuR54f, круг 17 — 166ykv_2E4Za0vpgqEqC0xstQre20OkHf, круг 16 — 1Fd9wMIgXyWh7yWQ93DnZw067FOl9psN_",
+   "lagBehindGit": false
   }
  ],
  "libraryIndex20261023": "счётчики пересъёма живут в одном месте: ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json → libraryIndex20261023 (правило 25 меряет их там же, этим обходом); в файле индекса поле оставлено отсылкой, а не копией, чтобы одно число не жило в двух местах и не расходилось молча"

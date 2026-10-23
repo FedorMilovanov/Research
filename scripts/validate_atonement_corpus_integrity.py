@@ -1854,6 +1854,76 @@ if LIB.is_file():
     for k in _sub:
         if not any(r["driveId"] == _fids[k] and r["kind"] == "folder" for r in _recs):
             _bad25.append(f"{k}: папка из scope.folderIds не описана записью kind=folder в индексе")
+    # ---- правило 23.3 (круг 24, 23.10.2026): класс строки реестра и класс в записи индекса — одно число
+    # Повод собственный: круг 24 поднял `FP-160` и `FP-165` и ввёл `FP-207`. Записи индекса о снятых
+    # носителях хранят поле registryRowClass, и до этого круга его не сверял никто — индекс имел право
+    # продолжать утверждать `C` о строке, которая уже прочитана по изданию. Класс, записанный в двух
+    # местах, обязан расходиться сам. Первое, что правило поймало, — запись круга 22 о Кэрролле: она
+    # ссылалась на две строки разного класса (FP-205 `C` и FP-206 `B1`), а поле было одно; для таких
+    # записей введено registryRowClasses — явное перечисление класса по каждой строке.
+    _rows23_3, _, _, _ = measure_mass_registry()
+    _clsdecl23_3, _bad23_3 = 0, []
+
+    def _refs23_3(_r):
+        out = []
+        for _ref in list(_r.get("aboutRows") or []) + list(_r.get("citedBy") or []):
+            _n = re.match(r"FP-(\d+)$", str(_ref).strip())
+            if _n:
+                out.append(("FP-%03d" % int(_n.group(1)), int(_n.group(1))))
+        return out
+
+    for _r in _recs:
+        _decl23_3 = _r.get("registryRowClass")
+        _map23_3 = _r.get("registryRowClasses")
+        _tag23_3 = str(_r.get("name") or _r.get("driveId"))[:44]
+        _live23_3 = [("FP-%03d" % n, _rows23_3.get(n, (None, ""))[0]) for _k, n in _refs23_3(_r)]
+        _live23_3 = [(k, c) for k, c in _live23_3 if c is not None or k in _rows23_3]
+        if not _decl23_3 and not _map23_3:
+            # молчание легально, пока запись касается строк одного класса; две строки разных классов
+            # без перечисления — это не «проверке не за что зацепиться», а запись, которая врёт молча
+            _kinds23_3 = {c for _, c in _live23_3 if c}
+            if len(_live23_3) > 1 and len(_kinds23_3) > 1:
+                _bad23_3.append(f"{_tag23_3}: запись касается %d строк классов %s и не объявляет ни "
+                                "registryRowClass, ни registryRowClasses — молчание тут неотличимо от "
+                                "утверждения" % (len(_live23_3), sorted(_kinds23_3)))
+            continue
+        _clsdecl23_3 += 1
+        for _k23_3, _c23_3 in _live23_3:
+            if _c23_3 is None:
+                _bad23_3.append(f"{_tag23_3}: строка {_k23_3} в реестре не найдена")
+                continue
+            if isinstance(_map23_3, dict):
+                if _k23_3 not in _map23_3:
+                    _bad23_3.append(f"{_tag23_3}: строка {_k23_3} не перечислена в registryRowClasses, "
+                                    "а раз запись объявила перечисление, она обязана покрыть им каждую "
+                                    "свою строку")
+                    continue
+                _want23_3 = _map23_3[_k23_3]
+            else:
+                _want23_3 = _decl23_3
+            if _want23_3 != _c23_3:
+                _bad23_3.append(f"{_tag23_3}: индекс говорит «{_want23_3}» о {_k23_3}, реестр — «{_c23_3}»")
+        if isinstance(_map23_3, dict) and _refs23_3(_r) and _decl23_3:
+            _first23_3 = _rows23_3.get(_refs23_3(_r)[0][1], (None, ""))[0]
+            if _first23_3 and _decl23_3 != _first23_3:
+                _bad23_3.append(f"{_tag23_3}: registryRowClass при объявленном перечислении обязан описывать "
+                                f"первую строку записи ({_refs23_3(_r)[0][0]}), а он описывает «{_decl23_3}»")
+        if isinstance(_map23_3, dict):
+            _keys23_3 = {k for k, _ in _live23_3} | {("FP-%03d" % int(m.group(1)))
+                                                    for m in (re.match(r"FP-(\d+)$", str(x).strip())
+                                                              for x in list(_r.get("aboutRows") or [])
+                                                              + list(_r.get("citedBy") or [])) if m}
+            _extra23_3 = sorted(k for k in _map23_3 if k not in _keys23_3)
+            if _extra23_3:
+                _bad23_3.append(f"{_tag23_3}: registryRowClasses перечисляет {_extra23_3[:2]}, которых запись "
+                                "не касается")
+    if _bad23_3:
+        errors.append("ПРАВИЛО 23.3: %d расхождений класса между индексом и реестром (%s) — поднимая или "
+                      "понижая строку, править надо и запись о снятом носителе, иначе индекс описывает реестр "
+                      "прошлого круга" % (len(_bad23_3), "; ".join(_bad23_3[:3])))
+    else:
+        notes.append("ПРАВИЛО 23.3: %d записей индекса с объявленным классом строки сверены с реестром — "
+                     "класс носителя и класс строки совпадают" % _clsdecl23_3)
     if _bad25:
         errors.append(f"ПРАВИЛО 25: индекс библиотеки не сходится в {len(_bad25)} местах ({_bad25[:4]}) — индекс "
                       "нужен ровно тогда, когда носителей больше, чем помнится")
