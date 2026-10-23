@@ -1,8 +1,8 @@
 {
  "schema": "atonement-library-index/1",
  "purpose": "единый машиночитаемый индекс библиотеки Drive по искуплению: каждый объект периметра имеет ровно одну запись, запись говорит права, статус чтения и на что этот носитель влияет в реестре",
- "measuredAt": "2026-10-23T22:05Z",
- "method": "google Drive list_files по каждой папке периметра, q=\"'<папка>' in parents and trashed = false\", fields=id,name,mimeType,size,parents,modifiedTime; съём 23.10.2026 18:20–18:36Z (пять носителей в 10.9, переливка слепка реестра в 05, переименование двух файлов Мюррея); круг 25: добавлен носитель cap25 (разбор блоков страницы ?p=4407), исправлена запись круга 24 о Хамфрее (класс B1 → A2 по каталогу Folger 488217, локатор и примечание переписаны по блокам)",
+ "measuredAt": "2026-10-23T22:38:00Z",
+ "method": "google Drive list_files по каждой папке периметра, q=\"'<папка>' in parents and trashed = false\", fields=id,name,mimeType,size,parents,modifiedTime; съём 23.10.2026 18:20–18:36Z (пять носителей в 10.9, переливка слепка реестра в 05, переименование двух файлов Мюррея); круг 25: добавлен носитель cap25 (разбор блоков страницы ?p=4407), исправлена запись круга 24 о Хамфрее (класс B1 → A2 по каталогу Folger 488217, локатор и примечание переписаны по блокам); круг 26: добавлен носитель cap26 (дочитывание ?p=4407: чанки 3–7, граница блока, локаторы школьного слоя), в записях круга 24 и круга 25 о Хамфрее поле whatNotChecked помечено поправкой — блоки, объявленные нечитаными, прочитаны, а слепок реестра в `05.` перелит объектом 1wzJ8idtiCEMatqntn11Du9u1IeSpAD-g и прежний живой слепок переименован в «УСТАРЕЛО» с переводом в HOLD_superseded — имя и права переведены одновременно, потому что правило 25 сверяет их как один факт",
  "recheckCommand": "Drive list_files по каждому folderIds + python3 -B scripts/validate_atonement_corpus_integrity.py (правило 25 сверяет индекс с этим слепком)",
  "canonical": "канон — git; Drive — носители и зеркала. Печатный локатор обязателен: «лежать на Drive» не даёт права цитировать",
  "scope": {
@@ -613,6 +613,35 @@
     "FP-129": "A1"
    },
    "registryRowClass": "A1"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "15WjPbOJ-z2_cXWQvrOl3EFLbSvla5nme",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 11750,
+   "name": "2026-10-23 — Хамфрей — Middle-Way 1673: дочитывание ?p=4407 (чанки 3–7), граница блока, локаторы Руиса и Иоанна а Санкто Томаса, разночтения двух страниц указателя.md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-160"
+   ],
+   "citedBy": [
+    "FP-160"
+   ],
+   "queueRows": [],
+   "locator": "John Humfrey, The Middle-Way in One Paper of Election & Redemption, With Indifferency between Arminian & Calvinist (London: Printed for T. Parkhurst, at the Three Bibles in Cheap-side, 1673), 24–40 — локатор назван на самой странице дважды: перед блоком и после него, сразу за подписью «Deo Gloria, mihi Condonatio. J. H.» и перед пометкой «[To be continued]»; сняты чанки 3–7 из 9 страницы ?p=4407, написание имени издателя в этих чанках — «Parkhust»",
+   "note": "носитель круга 26: дочитывает страницу, оставленную кругом 25, и снимает три факта, которых в реестре не было. (а) Внутренняя дифференциация блока 1673 г.: «Redemption in regard of Title» (универсально) против «to put us also in Possession» = Vocation/Effectual Calling (частно); возражение ограничителям из цепи Рим 8:30 (Апостол не сказал «Whom he did predestinate, he redeemed» — отсюда «convincing Argument … for the Universality of Redemption»); «Distinctions to answer this, are but Evasions». (б) Формула декрета «Per modum decreti efficaciter operantis» — та же, что у сомюрцев, в английском переводе, что важно для §16 реестра. (в) Школьный слой выписан с локаторами: Ruiz De prædestinationis exordio Tract. 3 Disp. 17, Ruiz De præcip. effec. benevol. Dei erga reprob. Sec. 2, De prin. imped. justif. Sec. 5, Ioannes a S. Thoma Dist. 16 Sec. 2, плюс Фома «potest tamen ipsum impedire ne eam recipiat», Августин Enchiridion c. 31 и De correctione et gratia c. 11; отдельной строкой реестра это не заведено, потому что каталожной сверки не делалось (решение записано в §26 реестра). Отдельно зафиксировано обратное направление дефекта круга 24: формула «makes the difference (in the upshot) between him that is saved, and him that is damned» при верном локаторе принадлежит не Хамфрею, а тем, кого он отвергает: в полном виде — «mans free will … is that which begins, or puts by his own justification, and consequently makes the difference», то есть локатор правильный, а голос чужой. Сверены две страницы одного указателя: найдено пять разночтений набора и поправка индексатора от 2 октября 2009 г. («I have updated the Humfrey file with the material Tony has recently typed out»); написание «Parkhust» объясняет, почему поиск круга 24 по «Parkhurst» дал ложное «подтверждений нет»",
+   "whatNotChecked": "чанк 8 страницы ?p=4407 = служебный текст сайта, содержательного текста не несёт; продолжение выписки за с. 40 («[To be continued]» ведёт на theologicalmeditations.blogspot.com/2009/09/more-from-john-humfrey-16211719-on.html — при снятии страница отдала только навигацию, контент грузится скриптом); Mediocria 1674 как собрание не снималась — это единственный путь к A1; локаторы Руиса и Иоанна а Санкто Томаса по каталогам не сверены; печатный лист 1673 г. не снят, страницы 24–40 принадлежат только индексатору",
+   "capturedAt": "2026-10-23T22:30Z",
+   "localMd5": "7caf6301c2ec95d993b77f360c929b33",
+   "localBytes": 11750,
+   "driveMd5Verified": "7caf6301c2ec95d993b77f360c929b33",
+   "driveBytesVerified": 11750,
+   "sourceUrl": "calvinandcalvinism.com/?p=4407",
+   "registryRowClass": "A2",
+   "measuredAtGit": "2026-10-23T22:30Z"
   },
   {
    "folder": "05",
@@ -1558,7 +1587,7 @@
    "driveBytesVerified": 5525,
    "sourceUrl": "calvinandcalvinism.com/?p=4407",
    "registryRowClass": "A2",
-   "whatNotChecked": "блоки 3–9 страницы не читаны; лист 1673 г. не снят; страницы 24–40 принадлежат только индексатору",
+   "whatNotChecked": "блоки 3–9 страницы не читаны; лист 1673 г. не снят; страницы 24–40 принадлежат только индексатору. [Круг 26: блоки 3–7 прочитаны, граница блока подтверждена повтором локатора на самой странице; не читаны только чанк 8 (служебный текст сайта) и продолжение за с. 40 — см. запись cap26 ниже по списку и §26 реестра.]",
    "measuredAtGit": "2026-10-23T22:05Z"
   },
   {
@@ -1582,7 +1611,7 @@
    "queueRows": [],
    "locator": "Два локатора на одной странице указателя: John Humfrey, Free Thoughts (London: Printed for T. Parkhurst at the 3 Crowns in Cheapside, and Jonathan Robinson at the Goldon-Lion in St. Paul's Church-yard; and sold by J. Morphew near Stationers-hall, 1710), 8–15 — под первым блоком; John Humfrey, The Middle-Way in One Paper of Election & Redemption, With Indifferency between Arminian & Calvinist (London: Printed for T. Parkhurst, at the Three Bibles in Cheap-side, 1673), 24–40 — под вторым; тот же 1673-й отпечаток назван в каталоге Folger 488217 в составе Mediocria (1674), а 1710-й — в PRDL (Perry Miller Center, авторная страница John Humfrey 1621-1719) со ссылкой на скан Internet Archive; третья страница ?p=4031 даёт Middle-Way 1673 на 36–37",
    "note": "круг 25 заведён из-за дефекта круга 24: страница указателя содержит несколько блоков, и локатор обязан читаться под цитатой, а не под страницей; здесь блок за блоком разобрано, что кому принадлежит, включая снятый текст обоих блоков, латинские вставки (gratia universalis aequalis & Pracedanea, Gratia Auxiliatrix & Infusa), аналогии с парламентским актом о помиловании, полемику с Catharinus и Генри Муром (Mutius Godliness, p. 502 — как напечатано у индексатора), и оговорку об «Extended Latin quotation not included»; записаны три ловушки: ссылка в заголовке на DNB 1891, плавающее написание Parkhust/Parkhurst и однофамилец Пелхэм Хамфрей (1647–1674) в результатах поиска",
-   "whatNotChecked": "чанки 3–8 страницы ?p=4407 не читаны; Mediocria 1674 как собрание не снималась (единственный путь к A1); написание «Pracedanea» и «he first head» не сверены со сканом",
+   "whatNotChecked": "чанки 3–8 страницы ?p=4407 не читаны; Mediocria 1674 как собрание не снималась (единственный путь к A1); написание «Pracedanea» и «he first head» не сверены со сканом. [Круг 26: блоки 3–7 прочитаны, граница блока подтверждена повтором локатора на самой странице; не читаны только чанк 8 (служебный текст сайта) и продолжение за с. 40 — см. запись cap26 ниже по списку и §26 реестра.]",
    "capturedAt": "2026-10-23T21:55Z",
    "localMd5": "b9dba145124d037de7996f3178a05478",
    "localBytes": 15802,
@@ -1652,7 +1681,29 @@
    "kind": "file",
    "mime": "text/markdown",
    "bytes": 212798,
-   "name": "2026-10-23 — слепок 35_four_point_authors_mass_registry (круг 25: 208 строк, 212798 B, md5 458e35f909e36c0c07ed4c868cd7fbd8).md",
+   "name": "УСТАРЕЛО (слепок круга 25: 208 строк, 212798 B, md5 458e35f909e36c0c07ed4c868cd7fbd8; заменён кругом 26 2026-10-23 в 22:37Z — реестр дополнен дочитанным блоком 1673 г., число строк не менялось) 35_four_point_authors_mass_registry.md",
+   "role": "superseded-mirror",
+   "rights": "HOLD_superseded",
+   "readState": "not_applicable",
+   "aboutRows": [],
+   "citedBy": [],
+   "queueRows": [],
+   "locator": "",
+   "note": "слепок круга 25; имя называет 212798 B и md5 458e35f909e36c0c07ed4c868cd7fbd8 — это те самые значения, которые Drive вернул для этого объекта, то есть имя снимка честно описывает сам снимок, а не теперешний реестр (в дереве после круга 26 лежит 223589 B, md5 10a95be7332a12f898c7ef6940ecde1c). Переливка сделана кругом 26 не потому, что изменилось число строк (208 как было), а потому, что правило 25 сверяет по имени снимка и md5, и байты: имя живого зеркала не имеет права обещать прочитанное состояние файла, которого больше нет. В корзину объект не убран: ряд снимков в папке `05.` — это история того, когда именно реестр был таким, каким его читали",
+   "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
+   "driveBytesClaimed": 212798,
+   "driveMd5Claimed": "458e35f909e36c0c07ed4c868cd7fbd8",
+   "lagBehindGit": false,
+   "measuredAtGit": "2026-10-23T22:38:00Z",
+   "supersededBy20261026": "1wzJ8idtiCEMatqntn11Du9u1IeSpAD-g"
+  },
+  {
+   "folder": "05",
+   "driveId": "1wzJ8idtiCEMatqntn11Du9u1IeSpAD-g",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 223589,
+   "name": "2026-10-23 — слепок 35_four_point_authors_mass_registry (круг 26: 208 строк, 223589 B, md5 10a95be7332a12f898c7ef6940ecde1c).md",
    "role": "registry-mirror",
    "rights": "mirror_of_git",
    "readState": "not_applicable",
@@ -1660,12 +1711,18 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "слепок канона круга 25, залит побайтово из рабочего дерева upload_file: имя называет 208 строк, 212798 B и md5 458e35f909e36c0c07ed4c868cd7fbd8 — все три сверены с git-файлом после загрузки (ответ загрузки и list_files по папке `05.` с полями size и md5Checksum); переливка сделана потому, что круг 25 изменил число строк, а правило 25 сверяет его по имени снимка без скидки на флаг; промежуточный снимок этого же круга помечен «УСТАРЕЛО» рядом; отставания нет, поэтому `lagBehindGit` = false",
+   "note": "слепок канона круга 26, залит побайтово из рабочего дерева upload_file: имя называет 208 строк, 223589 B и md5 10a95be7332a12f898c7ef6940ecde1c — все три сверены с git-файлом после загрузки (ответ загрузки и list_files по папке `05.` с полями size и md5Checksum, где Drive вернул ровно эти значения); побайтовое скачивание не исполнялось сознательно, и в слове «сверены» заявлен именно md5, возвращённый Drive. Переливка сделана потому, что правило 25 читает имя снимка (строки, байты, md5), а реестр изменился в содержании строки `FP-160` и в §26, не изменив числа строк; промежуточный снимок круга 25 помечен «УСТАРЕЛО» рядом, отставания нет, поэтому lagBehindGit = false",
    "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
-   "driveBytesClaimed": 212798,
-   "driveMd5Claimed": "458e35f909e36c0c07ed4c868cd7fbd8",
+   "driveBytesClaimed": 223589,
+   "driveMd5Claimed": "10a95be7332a12f898c7ef6940ecde1c",
+   "gitBytesAtUpload": 223589,
+   "gitRowsAtUpload": 208,
+   "gitFileLinesAtUpload": 794,
+   "uploadedAt": "2026-10-23T22:37:25Z",
+   "md5VerifiedFromDrive": "10a95be7332a12f898c7ef6940ecde1c",
+   "chainNote": "ряд снимков в этой папке: круг 26 — этот (208 строк, 223589 B), круг 25 — 1WVMH29c4cKj7HxJNd5FWJ0X6iVxBCa6o (УСТАРЕЛО, 212798 B), промежуток круга 25 — 1JaZZivsMIw9eNY6hHuLtVKamfyyCQyK6 (УСТАРЕЛО, 212791 B), круг 24 — 1wLQnphoJcA5_HG-4Ic_WiprmX_zsaq9I (УСТАРЕЛО, 203924 B), круг 22 — 1gyQFcLiTmROYE851qbYlmf2y63fAn-SJ, круг 21 — 1iv5Us-oTDPpwdt3HsAQEHSWr6sPtfE4Q, круг 20 — 1i0AFYBd5N94v89W2dNr9RSWDmCYuR54f, круг 17 — 166ykv_2E4Za0vpgqEqC0xstQre20OkHf, круг 16 — 1Fd9wMIgXyWh7yWQ93DnZw067FOl9psN_",
    "lagBehindGit": false,
-   "measuredAtGit": "2026-10-23T22:50:00Z"
+   "measuredAtGit": "2026-10-23T22:38:00Z"
   }
  ],
  "libraryIndex20261023": "счётчики пересъёма живут в одном месте: ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json → libraryIndex20261023 (правило 25 меряет их там же, этим обходом); в файле индекса поле оставлено отсылкой, а не копией, чтобы одно число не жило в двух местах и не расходилось молча"
