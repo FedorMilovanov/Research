@@ -1242,11 +1242,12 @@
         "md5AtUpload": "14aee149fa01b1fcb1945f1041bf8fc5",
         "uploadedAt": "2026-10-23T12:42:31Z",
         "verified": "md5 и размер, возвращённые Drive в ответе get_file, равны снятым с git-файла до загрузки; это и есть побайтовая сверка без переноса 288 КБ через контекст, и она записана как md5, а не как cmp, чтобы не приписывать себе чужую команду",
-        "lagBehindGit": "зеркало = состояние 12:42:31Z. После загрузки канон правится ровно на этот блок и на абзацы 07_/17_ о нём, то есть зеркало отстаёт на одну правку — сознательно и объявлено: записать собственный ID внутрь файла, который уже загружен, можно только перезаписью, а она невозможна (см. refresh20261023b).",
+        "lagBehindGit": "зеркало = blob'а 12:42:31Z, 287 913 B. Канон двигался после этого момента, и число правок я не пересчитываю вручную — оно переснимается командой: git log --oneline --since=2026-10-23T12:42:31Z -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json. Смысл записи не в том, чтобы догнать зеркало каждой правкой, а в том, чтобы оно не притворялось снимком текущего момента: сверить можно только то, что объявлено как снимок",
         "measuredAt": "2026-10-23T12:43:15Z",
         "method": "ответ upload_file + get_file, сравниваются с локальным снимком до правки",
         "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
-        "digests": "заявлен один md5 (полный, 32 знака): sha256 загруженного blob'а я в тот момент не сохраняла целиком, а восьмизначный префикс в реестр писать нельзя — правило 20 прочитает его как ссылку на коммит и потребует живого git show. Половинчатых токенов в реестре не будет: либо полный дайджест, либо ничего"
+        "digests": "заявлен один md5 (полный, 32 знака): sha256 загруженного blob'а я в тот момент не сохраняла целиком, а восьмизначный префикс в реестр писать нельзя — правило 20 прочитает его как ссылку на коммит и потребует живого git show. Половинчатых токенов в реестре не будет: либо полный дайджест, либо ничего",
+        "lagCommand": "git log --oneline --since=2026-10-23T12:42:31Z -- ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | wc -l"
       }
     },
     "verifiability20261023": {
@@ -1688,7 +1689,7 @@
         "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
       ],
       "stampedFieldsPerRegistry": {
-        "корпус": 61,
+        "корпус": 62,
         "fathers": 0,
         "nt": 0,
         "ot": 0,
@@ -2156,17 +2157,17 @@
     },
     "shaCitationAudit20261023": {
       "measuredAt": "2026-10-22T23:09:08Z",
-      "uniqueShaTokens": 102,
-      "reachableTokens": 56,
-      "unreachableTokens": 46,
-      "fieldsWithDeadLinks": 89,
+      "uniqueShaTokens": 105,
+      "reachableTokens": 58,
+      "unreachableTokens": 47,
+      "fieldsWithDeadLinks": 90,
       "byBlock": {
         "adjacentLanes": 8,
-        "branchTopologyAudit20261022": 68,
-        "driveSourceAudit20261016": 6,
-        "integrityGate": 1,
+        "branchTopologyAudit20261022": 69,
         "reproducibility20261022": 5,
-        "synthesis": 1
+        "synthesis": 1,
+        "integrityGate": 1,
+        "driveSourceAudit20261016": 6
       },
       "percentCiiInRegistry": 3,
       "percentCiiBeforeThisRound": 21,
@@ -2216,7 +2217,8 @@
         "f02bc63": "bfa3082",
         "f15e1a2": "72d937b",
         "f30ff8b": "bfa3082",
-        "fc2bc94": "bfa3082"
+        "fc2bc94": "bfa3082",
+        "eb90045": "72d937b"
       },
       "why": "46 ссылок ведут на объекты, убитые squash-мержем и удалением веток. Запись при этом жива: для каждой ссылки найден и проверен достижимый коммит main, в blob'е реестра который содержит именно этот токен (git show <recordCommit>:ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json | grep <sha>). Значит требование не в том, чтобы «не ссылаться на мёртвое», а в том, чтобы у числа всегда был живой способ пересъёма — через объект или через запись о нём",
       "environmentGuard": "на shallow-клоне аудит обязан молчать: там недостижимы ВСЕ объекты, включая живые. Сегодня я так получила «99 мёртвых» вместо 46 — и это не данные, а сломанная среда; лечится git fetch --unshallow",
@@ -3289,7 +3291,8 @@
       "eb90045": "2026-10-22T20:01:00Z",
       "fc63e53bdc1ef0b1c47b49d4351199fe3c22a928": "2026-10-22T20:20:09Z",
       "c52c86bf8751b2ed9ba6ef9d0e3ee331742b3282": "2026-10-22T20:24:31Z",
-      "77641fa": "2026-10-22T21:45:33Z"
+      "77641fa": "2026-10-22T21:45:33Z",
+      "53e8071": "2026-10-23T12:48:57Z"
     },
     "commitTimeChecksHow": "сверяется гейтом при каждом прогоне; канонический снимок: TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd <sha>. %cI не годится: он печатает смещение коммита (у владельческих +03:00), и время «Z» из него выходит сдвигом на 3 часа",
     "lossFreeResiduals": {
@@ -3570,6 +3573,40 @@
         "recheckCommand": "git worktree add --detach /tmp/wt-verify origin/main && cd /tmp/wt-verify && python3 -B scripts/validate_atonement_corpus_integrity.py; echo exit=$?",
         "commitTimeCommand": "TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd 77641fa",
         "note": "время снято канонической командой, а не %cI: смещение +03:00 уже ломало сверку в прошлом круге"
+      },
+      "measuredOnMainAfterMerge20261023b": {
+        "mainSha": "53e8071",
+        "mainShaFull": "53e8071fb874fcfe20b315b7388873d6b2e842b3",
+        "commitTime": "2026-10-23T12:48:57Z",
+        "verdict": "PASS",
+        "rootFiles": 19,
+        "subCorpora": 4,
+        "subLaneFiles": 53,
+        "laneFiles": 37,
+        "ledgerRange": "C-01…C-25",
+        "publicationEligible": false,
+        "errorsTotal": 0,
+        "notesTotal": 3,
+        "notes": [
+          "commitTimeChecks: 1 sha недоступно в этом клоне (eb90045) — в моём полном клоне тот же sha доступен и сверен",
+          "в чужих под-реестрах 2 поля с именем съёмки и точностью в один день — не ошибка владельца",
+          "правило 20: в чужих под-реестрах недостижимые sha-ссылки по ланам — заметка, не блокировка"
+        ],
+        "ci": {
+          "triggered": 2,
+          "workflows": [
+            "Atonement corpus integrity",
+            "Repository authority integrity"
+          ],
+          "allSuccess": true,
+          "skippedNotFailed": "на этом снятии сработало 2 проверки из 5: остальные отсечены `paths:`-фильтрами (у них нет триггера на снятые пути), а не упали — `gh run list --branch main` по headSha 53e8071",
+          "recheckCommand": "gh run list --branch main --limit 6 --json workflowName,conclusion,headSha"
+        },
+        "howMeasured": "приёмка исполнялась дважды и по-разному: сначала в чистом клоне по `refs/pull/230/merge` (merge-коммит PR против main), затем в чистом клоне `main` после мержа; оба прогона дали один и тот же разбор: 19/4/53/37, 0 ошибок, 3 note. Плюс `git show origin/main:<путь> | cmp - <путь>` по всем семи изменённым файлам — равны, то есть в main попало ровно снятое, без дописывания на месте",
+        "why": "запись отдельная, а не поверх `measuredOnMainAfterMerge20261023`: та относится к main `77641fa` и обязана им и оставаться; перезаписать её теми же словами на новых числах — значит лишить историю следа, а это ровно тот дефект, за который правило 23 отвечает живыми счётчиками",
+        "measuredAt": "2026-10-23T12:50:55Z",
+        "method": "gh repo clone + git checkout -f FETCH_HEAD (pull/230/merge), затем gh repo clone main; вывод разбирается регуляркой, exit-код не теряется",
+        "recheckCommand": "gh repo clone FedorMilovanov/Research /tmp/verify -- --quiet && cd /tmp/verify && python3 -B scripts/validate_atonement_corpus_integrity.py; echo exit=$?"
       }
     },
     "commitTimeChecksNote": "добавлен f15e1a2: время собственного коммита пишется следующим прогоном, из git, а не из головы автора коммита Последнее обновление 2026-10-22T23:50Z: добавлены sha мержей #219 и #220 — те же пары, что закрывали этот реестр; снять заново: TZ=UTC TZ=UTC git log -1 --date=format-local:%Y-%m-%dT%H:%M:%SZ --format=%cd <sha> на дереве main.",
@@ -3685,7 +3722,7 @@
     "countsLive": {
       "ключейРеестра": 33,
       "правилГейта": 23,
-      "shaВсверкеВремен": 13,
+      "shaВсверкеВремен": 14,
       "строкВАудитеТопологии": 26,
       "removedFigures": {
         "ошибокНаРодителе": "переехало в branchTopologyAudit20261022.gateOnMainTree: у него есть раскладка, сумма и команда съёма на worktree, а это поле переснять из CI нельзя",
