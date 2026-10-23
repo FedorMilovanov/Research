@@ -175,7 +175,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 
 ---
 
-## G. Очередь Wave 2 (добыча PD в Drive `01` и `04`)
+## G. Очередь Wave 2 (добыча PD — с 23.10.2026 в папку `10`, ранее `01` и `04`)
 
 1. Ingest CCEL Owen *Death of Death* PDF/TXT в `01` с provenance card (source URL, access date, PD statement).
 2. Anselm *Cur Deus Homo* (CCEL).
@@ -192,6 +192,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 13. ~~**Вопрос к владельцу:** перенос W0-пака в Git.~~ **Решено и сделано 2026-10-07 (вторая волна):** блоки первоисточника из `10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md` (Drive `01`, id `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo`, PD) перенесены в Git файлом [`16`](16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md) — английский перевод Дорта II 1840 г. (арт. I–IX) и прочитанный фрагмент Кальвина на 1 Ин. 2:1–2. Служебная обвязка пакета (разделы верификации W0) в этот корпус не переносилась: она принадлежит другому корпусу. Drive-копия оставлена как есть.
 14. Приоритет добычи задаёт реестр `35_` §17: сначала те `C`-строки, у которых текст уже открыт (Буньян — IA 24 с. / Chapel Library 30 с. плюс *The Baptist Quarterly* 21:3, сс. 126–130; Э. Б. Чейз и крещендобрический ролл — `middletownbiblechurch.org`; Сомюр — Aymon II 183 и 298, Swisser 1856, Niemeyer 729–739), потому что они закрывают сразу по несколько строк реестра. У круга 18 есть новый приоритет: шесть страниц указателя прочитаны **с печатным локатором** (Вермильи — *Predestination and Justification*, пер. Джеймса, назв. т. 8, сс. 16 и 62; Кимедонций — *The Redemption of Mankind*, London: Kingston, 1598, сс. 4–26 и кн. XI; Парей — *Certain learned and excellent discourses*, 1613, сс. 52–53; Твисс — *Doctrine of the Synod of Dort and Arles*, предисл. сс. 15–17, 3.1: 143–144, 3.2: 152, 3.3: 165; Уссер — *Whole Works* (Dublin: Hodges, Smith, 1864), т. 12, сс. 553–560 и 563–571; Хикман — *Patro-scholastico-dikaiösis* (Oxford: Lichfield, 1659), предисл.), и Буньян — *The Works* (Banner of Truth, 1991), т. 1: 334, 408–409, 416, 432, 526, 561–562. Эти строки поднимаются из `B1` в `A1` одним движением: снять титул и назвать лист.
 15. Класс позиции поднимается (`C` → `B1`/`A2`/`A1`) только вместе с локатором по изданию и строкой очереди, снятой из `35_` §17: `C` без адресата и `A1` без страницы/колонки/параграфа — FAIL правила 23, то есть повышение класса «на глаз» технически невозможно.
+16. Носитель, лежащий на Drive, проходит через индекс `ИСКУПЛЕНИЕ/data/atonement-library-index.json`: `rights`, `readState` по лестнице `unopened → pages_seen → locator_extracted → registry_linked` и `citedBy` на строки этого реестра. Пока позиция носителя `unopened`, она не имеет права ни на какую формулировку в статье — это исполняет правило 25 гейта, а не уговор. Очередь выше (п. 14) остаётся списком адресатов; её развёртка «что качать и куда» лежит в манифесте папки `10` на Drive, и оба списка обязаны сходиться номером `Q-nn`, иначе «поставлено в очередь» означает «забыто в двух местах».
 
 Не качать и не класть: Murray, Packer 1959, Gibson 2013, Morris, Stott, Berkhof, Bavinck EN.
 
