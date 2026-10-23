@@ -1,8 +1,8 @@
 {
  "schema": "atonement-library-index/1",
  "purpose": "единый машиночитаемый индекс библиотеки Drive по искуплению: каждый объект периметра имеет ровно одну запись, запись говорит права, статус чтения и на что этот носитель влияет в реестре",
- "measuredAt": "2026-10-23T17:34Z",
- "method": "google Drive list_files по каждой папке периметра, q=\"'<папка>' in parents and trashed = false\", fields=id,name,mimeType,size,parents,modifiedTime; съём 23.10.2026 17:25–17:34Z, после переезда материалов в 10.x",
+ "measuredAt": "2026-10-23T18:27Z",
+ "method": "google Drive list_files по каждой папке периметра, q=\"'<папка>' in parents and trashed = false\", fields=id,name,mimeType,size,parents,modifiedTime; съём 23.10.2026 18:20–18:27Z (круг 21: четыре носителя в 10.9, переливка слепка реестра в 05, переименование двух файлов Мюррея)",
  "recheckCommand": "Drive list_files по каждому folderIds + python3 -B scripts/validate_atonement_corpus_integrity.py (правило 25 сверяет индекс с этим слепком)",
  "canonical": "канон — git; Drive — носители и зеркала. Печатный локатор обязателен: «лежать на Drive» не даёт права цитировать",
  "scope": {
@@ -282,7 +282,7 @@
    "kind": "file",
    "mime": "text/html",
    "bytes": 566938,
-   "name": "Murray, John — Искупление, достигнутее и применёное к грешнику (RAA, RU HTML UTF-8, PRIVATE STUDY).html",
+   "name": "Murray, John — Искупление, достигнутое и применённое к грешнику (RAA, RU HTML UTF-8, PRIVATE STUDY).html",
    "role": "material",
    "rights": "HOLD_private_study",
    "readState": "pages_seen",
@@ -300,7 +300,7 @@
    "kind": "file",
    "mime": "application/zip",
    "bytes": 113293,
-   "name": "Murray, John — Искупление, достигнутее и применёное к грешнику (RAA, RU HTML, PRIVATE STUDY).zip",
+   "name": "Murray, John — Искупление, достигнутое и применённое к грешнику (RAA, RU HTML, PRIVATE STUDY).zip",
    "role": "material",
    "rights": "HOLD_private_study",
    "readState": "unopened",
@@ -557,15 +557,15 @@
    "kind": "file",
    "mime": "text/markdown",
    "bytes": 149138,
-   "name": "35_four_point_authors_mass_registry (круг 18: 203 строки, md5 be8e98c34c9613b1914177c0ea74eaf8).md",
-   "role": "registry-mirror",
-   "rights": "mirror_of_git",
+   "name": "УСТАРЕЛО (слепок круга 20: 203 строки, 149 138 B; заменён кругом 21 2026-10-23 в 18:26Z) 35_four_point_authors_mass_registry.md",
+   "role": "superseded-mirror",
+   "rights": "HOLD_superseded",
    "readState": "not_applicable",
    "aboutRows": [],
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "зеркало канона; сверка md5 по get_file 23.10.2026; переаливается при каждом изменении реестра",
+   "note": "прежний снимок канона: называл 203 строки и md5 be8e98c34c9613b1914177c0ea74eaf8; после круга 21 в дереве 204 строки, поэтому слепок переливан, а этот оставлен рядом как ряд съёмных снимков",
    "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
    "driveBytesClaimed": 149138,
    "driveMd5Claimed": "be8e98c34c9613b1914177c0ea74eaf8",
@@ -1002,7 +1002,9 @@
    "queueRows": [],
    "locator": "",
    "gitFile": "ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md",
-   "note": "Docs-зеркало, снято с рабочего дерева перед коммитом круга 20; bytes — размер git-первоисточника, у Docs-объекта побайтового размера в Drive нет (get_file возвращает 1)"
+   "note": "Docs-зеркало, снято с рабочего дерева перед коммитом круга 20; bytes — размер git-первоисточника, у Docs-объекта побайтового размера в Drive нет (get_file возвращает 1)",
+   "lagBehindGit": true,
+   "lagNote": "первоисточник правился кругом 21 (в 07_ переписан §8: числа индекса после круга 21), Docs-зеркало не переливалось: в дереве 68 123 B, md5 71f5c6415bd8f2209807c2609975c7cb, а имя снимка обещает 67 420 B и md5 круга 20; переливка на каждый круг удваивает число объектов в папке, поэтому отставание объявлено здесь, а не промолчано"
   },
   {
    "folder": "05",
@@ -1022,7 +1024,113 @@
    ],
    "locator": "",
    "gitFile": "ИСКУПЛЕНИЕ/05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
-   "note": "Docs-зеркало очереди добычи; bytes — размер git-первоисточника, у Docs-объекта побайтового размера в Drive нет; очередь O14–O15 продублирована списком в манифесте папки `10`"
+   "note": "Docs-зеркало очереди добычи; bytes — размер git-первоисточника, у Docs-объекта побайтового размера в Drive нет; очередь O14–O15 продублирована списком в манифесте папки `10`",
+   "freshnessCheck20261023": "сверено кругом 21 побайтно по первоисточнику: git-файл 05_ весит 48 706 B, md5 a0a4c4dfd8429f02e30793142877f380 — то же, что обещает имя зеркала, значит зеркало актуально и переливки не требует (05_ этим кругом не правился)"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "12Ngqg5cGEPzKtk9psOIw87tlN4WxkMq4",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 2753,
+   "name": "2026-10-23 — Лиг — five ways (Systeme, 1662, 602, снято с ?p=13913).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-157",
+    "FP-204"
+   ],
+   "citedBy": [
+    "FP-157"
+   ],
+   "queueRows": [],
+   "locator": "A Systeme or Body of Divinity (London: A.M. for William Lee at the Turks-head), 1662, 602 — по съёму индексатора; отпечаток в EEBO = издание 1654 (Wing L1008), год 1662 = четвёртое издание по DNB",
+   "note": "снято тем же кругом, что поднял строку FP-157 из `C`; снят абзац, на который опирается реестр, а не страница целиком; положен 23.10.2026 кругом 21"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "10OyitWVyK0A__2dXsX_DmdBd0YOLPvEu",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 3205,
+   "name": "2026-10-23 — Феннер — five ways (фрагмент 1 из 3, снято с ?p=6596).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-204",
+    "FP-157"
+   ],
+   "citedBy": [
+    "FP-204"
+   ],
+   "queueRows": [],
+   "locator": "с. 319 по books.google.com/books?id=RCwJAAAAIAAJ; какое из изданий Феннера за этим стоит — не установлено",
+   "note": "первоисточник формулы, которую пересказывает Лиг; 2 из 3 фрагментов страницы не сняты; положен 23.10.2026 кругом 21"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "13pODGSirmiu3no33l_O0XsGRtvJRkAyr",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 2965,
+   "name": "2026-10-23 — Чарнок — Works 3–5, семь локаторов (фрагмент 1 из 16, снято с ?p=17).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-159"
+   ],
+   "citedBy": [
+    "FP-159"
+   ],
+   "queueRows": [],
+   "locator": "Works, том:страница по изданию индексатора — 3:425, 4:145, 4:251–252, 4:306, 4:496, 5:29, 5:96; сверки с титулом не делалось",
+   "note": "15 из 16 фрагментов страницы не читаны; оборванная на границе фрагмента цитата «sufficient sacrifice for all, if all would accept of it» помечена в снимке как требующая продолжения; положен 23.10.2026 кругом 21"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "14bF9x2jvE1rtGUETwkqQFOUWsw7Lh9a3",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 3189,
+   "name": "2026-10-23 — Мейден — предисловие к трактату Эмса (фрагмент 1 из 4, снято с ?p=14276).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-158"
+   ],
+   "citedBy": [
+    "FP-158"
+   ],
+   "queueRows": [],
+   "locator": "предисловие, с. 428 по books.google.com/books?id=FKWOjwhjXsEC; заглавие трактата — по торговой росписи Чайлди (London, 1676)",
+   "note": "носитель вместе с erratum: прежняя атрибуция «шотландский професор» снята как вывод не из файла; положен 23.10.2026 кругом 21"
+  },
+  {
+   "folder": "05",
+   "driveId": "1iv5Us-oTDPpwdt3HsAQEHSWr6sPtfE4Q",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 160417,
+   "name": "35_four_point_authors_mass_registry (круг 21: 204 строки, 160 417 B, md5 d779c916764e02d4c69941bc049ba881).md",
+   "role": "registry-mirror",
+   "rights": "mirror_of_git",
+   "readState": "not_applicable",
+   "aboutRows": [],
+   "citedBy": [],
+   "queueRows": [],
+   "locator": "",
+   "note": "слепок канона круга 21, побайтово сверен с деревом: Drive вернул md5 d779c916764e02d4c69941bc049ba881 и размер 160417 — то же, что снято md5sum по git-файлу; запись о снимке появляется в том же коммите, что и сам изменённый реестр, поэтому поле lagBehindGit стоит true, а не молчит",
+   "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
+   "driveBytesClaimed": 160417,
+   "driveMd5Claimed": "d779c916764e02d4c69941bc049ba881",
+   "gitBytesAtUpload": 160417,
+   "gitLinesAtUpload": 204,
+   "lagBehindGit": true
   }
- ]
+ ],
+ "libraryIndex20261023": null
 }
