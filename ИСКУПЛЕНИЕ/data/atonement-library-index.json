@@ -1274,7 +1274,7 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "слепок канона круга 22, залит побайтово с рабочего дерева в тот же час, что и коммит: имя называет 206 строк-носителей, 179168 B и md5, и все три совпадают с git-файлом — флага lagBehindGit у этой записи нет, потому что отставания нет",
+   "note": "слепок канона круга 22, залит побайтово с рабочего дерева в тот же час, что и коммит: имя называет 206 строк-носителей, 179168 B и md5, и все три совпадают с git-файлом — флага lagBehindGit у этой записи нет, потому что отставания нет; круг 23: реестр вырос, снимок помечен lagBehindGit с живыми байтами и md5, число строк в имени (206) по-прежнему верно",
    "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
    "driveBytesClaimed": 179168,
    "driveMd5Claimed": "3b00eafbfa8893fd9914daaa1fb4e850",
@@ -1283,7 +1283,120 @@
    "gitFileLinesAtUpload": 636,
    "uploadedAt": "2026-10-23T19:01:04Z",
    "md5VerifiedFromDrive": "3b00eafbfa8893fd9914daaa1fb4e850",
-   "chainNote": "ряд снимков в этой папке: круг 22 — этот, круг 21 — 1iv5Us-oTDPpwdt3HsAQEHSWr6sPtfE4Q (УСТАРЕЛО), круг 20 — 1i0AFYBd5N94v89W2dNr9RSWDmCYuR54f, круг 17 — 166ykv_2E4Za0vpgqEqC0xstQre20OkHf, круг 16 — 1Fd9wMIgXyWh7yWQ93DnZw067FOl9psN_"
+   "chainNote": "ряд снимков в этой папке: круг 22 — этот, круг 21 — 1iv5Us-oTDPpwdt3HsAQEHSWr6sPtfE4Q (УСТАРЕЛО), круг 20 — 1i0AFYBd5N94v89W2dNr9RSWDmCYuR54f, круг 17 — 166ykv_2E4Za0vpgqEqC0xstQre20OkHf, круг 16 — 1Fd9wMIgXyWh7yWQ93DnZw067FOl9psN_",
+   "lagBehindGit": true,
+   "gitBytesAfterRound23": 191210,
+   "gitMd5AfterRound23": "1533e9fc46c2e1110e5043be72642996",
+   "gitLinesAfterRound23": 700,
+   "lagNoteAfterRound23": "круг 23 добавил в реестр §23 и четыре правки строк, не изменив числа строк-носителей (206): имя снимка остаётся верным в главном — в числе строк, — а байты и md5 в нём описывают сам снимок, каким его закачали; живые числа круга 23 записаны в этих трёх полях, переливка не сделана сознательно: она удваивала бы объекты каждый круг, а отставание объявлено флагом"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "1bxhujGn1rUE0UKcTcsT-UQEGqdPDy83-",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 6596,
+   "name": "2026-10-23 — Бергий — Pearle of Peace & Concord (1655, pp. 51–55; снято с ?p=5835).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-163"
+   ],
+   "citedBy": [
+    "FP-163"
+   ],
+   "queueRows": [],
+   "locator": "The Pearle of Peace & Concord (London: T.C. for John Rothwell, and John Wright, 1655), pp. 51–55 — издание и страницы названы индексатором, независимо не сверены",
+   "note": "перевод и аннотация Х. Э. Скотта; вопросы 52–53 катехизического диалога, четыре способа действия воли при неделимом искуплении, пометка об отрукотворном «54» на титуле; строка поднята до `B1` и не до `A2`, потому что отпечаток даёт только сам блог (в «Works Cited» и «Further Reading» у него та же строка)",
+   "capturedAt": "2026-10-23T19:52:11Z",
+   "localMd5": "bcb72aca52c9d2748c91235fac8b429c",
+   "localBytes": 6596,
+   "driveMd5Verified": "bcb72aca52c9d2748c91235fac8b429c",
+   "driveBytesVerified": 6596,
+   "sourceUrl": "calvinandcalvinism.com/?p=5835",
+   "registryRowClass": "B1"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "1-OKkeG_CShUhfdFzlnJaVPprHwX9Yfg2",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 3784,
+   "name": "2026-10-23 — Восс — The Doctrine of the Covenant (Gaffin 1980, 242–267; снято с ?p=14037).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-166"
+   ],
+   "citedBy": [
+    "FP-166"
+   ],
+   "queueRows": [],
+   "locator": "The Doctrine of the Covenant in Reformed Theology (речь 1891; Gaffin (ред.), Redemptive History and Biblical Interpretation, P&R 1980, pp. 242–267) — локатор статьи целиком",
+   "note": "адрес 1891 г., англ. перепечатка 1980 г.; страница снятого абзаца не заявлена, поэтому `A2`, а не `A1`; внутри абзаца — локаторы Безы IV.48, Буллингера IV.8.7 и Полануса VI.55, по которым реестр идёт дальше",
+   "capturedAt": "2026-10-23T19:52:17Z",
+   "localMd5": "5fd2aedb453f5ac18d5d3ce68165b449",
+   "localBytes": 3784,
+   "driveMd5Verified": "5fd2aedb453f5ac18d5d3ce68165b449",
+   "driveBytesVerified": 3784,
+   "sourceUrl": "calvinandcalvinism.com/?p=14037",
+   "registryRowClass": "A2"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "1kaW634CGgrbzIK2YX8IX1-fuxizO6Rjc",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 3559,
+   "name": "2026-10-23 — Александр — гл. XVI Theories of the Sacrifice (книга не установлена; снято с ?p=12084).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "pages_seen",
+   "aboutRows": [
+    "FP-167"
+   ],
+   "citedBy": [],
+   "queueRows": [
+    "Q-167"
+   ],
+   "locator": "",
+   "note": "Fragment 1 из 5, прочитаны 0 и 4; `solutio ejusdem`, «This opinion cannot be ascribed to Calvin»; книги страница не называет, а отпечаток «The Atonement, London: T. Nelson and Sons, 1868» из «Works Cited» блога принадлежит Ходжу ⇒ строка остаётся `C`",
+   "capturedAt": "2026-10-23T19:52:22Z",
+   "localMd5": "ba4fa1c6cdca76587bd0a147b7d9fc19",
+   "localBytes": 3559,
+   "driveMd5Verified": "ba4fa1c6cdca76587bd0a147b7d9fc19",
+   "driveBytesVerified": 3559,
+   "sourceUrl": "calvinandcalvinism.com/?p=12084",
+   "registryRowClass": "C"
+  },
+  {
+   "folder": "10.9",
+   "driveId": "1DnX3bJGttk-BfhRgOPjTmqu3jqUGI0mz",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 3704,
+   "name": "2026-10-23 — Фрейзер из Бреы — Рим 8:32, возражение VIII и ответ (снято с ?p=12519).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "pages_seen",
+   "aboutRows": [
+    "FP-162"
+   ],
+   "citedBy": [],
+   "queueRows": [
+    "Q-162"
+   ],
+   "locator": "",
+   "note": "Fragment 1 из 3; ответ на довод «нельзя взыскать дважды» через «inadequate cause» и условие состояния; печати нет (последний фрагмент страницы — сайдбар) ⇒ строка остаётся `C`, 2 фрагмента не читаны",
+   "capturedAt": "2026-10-23T19:52:29Z",
+   "localMd5": "2c58f0ed45476797493b16aaea32fd7f",
+   "localBytes": 3704,
+   "driveMd5Verified": "2c58f0ed45476797493b16aaea32fd7f",
+   "driveBytesVerified": 3704,
+   "sourceUrl": "calvinandcalvinism.com/?p=12519",
+   "registryRowClass": "C"
   }
  ],
  "libraryIndex20261023": "счётчики пересъёма живут в одном месте: ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json → libraryIndex20261023 (правило 25 меряет их там же, этим обходом); в файле индекса поле оставлено отсылкой, а не копией, чтобы одно число не жило в двух местах и не расходилось молча"
