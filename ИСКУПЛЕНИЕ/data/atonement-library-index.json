@@ -1,8 +1,8 @@
 {
  "schema": "atonement-library-index/1",
  "purpose": "единый машиночитаемый индекс библиотеки Drive по искуплению: каждый объект периметра имеет ровно одну запись, запись говорит права, статус чтения и на что этот носитель влияет в реестре",
- "measuredAt": "2026-10-23T18:27Z",
- "method": "google Drive list_files по каждой папке периметра, q=\"'<папка>' in parents and trashed = false\", fields=id,name,mimeType,size,parents,modifiedTime; съём 23.10.2026 18:20–18:27Z (круг 21: четыре носителя в 10.9, переливка слепка реестра в 05, переименование двух файлов Мюррея)",
+ "measuredAt": "2026-10-23T18:36Z",
+ "method": "google Drive list_files по каждой папке периметра, q=\"'<папка>' in parents and trashed = false\", fields=id,name,mimeType,size,parents,modifiedTime; съём 23.10.2026 18:20–18:36Z (пять носителей в 10.9, переливка слепка реестра в 05, переименование двух файлов Мюррея)",
  "recheckCommand": "Drive list_files по каждому folderIds + python3 -B scripts/validate_atonement_corpus_integrity.py (правило 25 сверяет индекс с этим слепком)",
  "canonical": "канон — git; Drive — носители и зеркала. Печатный локатор обязателен: «лежать на Drive» не даёт права цитировать",
  "scope": {
@@ -1123,13 +1123,35 @@
    "citedBy": [],
    "queueRows": [],
    "locator": "",
-   "note": "слепок канона круга 21, побайтово сверен с деревом: Drive вернул md5 d779c916764e02d4c69941bc049ba881 и размер 160417 — то же, что снято md5sum по git-файлу; запись о снимке появляется в том же коммите, что и сам изменённый реестр, поэтому поле lagBehindGit стоит true, а не молчит",
+   "note": "слепок канона круга 21: называет 204 строки (обход подтверждает) и байты/md5 состояния реестра на момент загрузки; правка 21.1 (строка FP-168) в тот же круг не перелита сознательно — отставание объявлено полем lagBehindGit, а живой слепок будет снят следующим кругом",
    "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
    "driveBytesClaimed": 160417,
    "driveMd5Claimed": "d779c916764e02d4c69941bc049ba881",
    "gitBytesAtUpload": 160417,
    "gitLinesAtUpload": 204,
-   "lagBehindGit": true
+   "lagBehindGit": true,
+   "gitMd5AfterRound21": "b86f3d11a33c23ae1464a231ed97d870",
+   "gitBytesAfterRound21": 164608
+  },
+  {
+   "folder": "10.9",
+   "driveId": "1VPkmOU3Agk1k7iEq6DMraMCfHrAWBqCa",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 3967,
+   "name": "2026-10-23 — Ходж — The Atonement, 328–329 и 333 (снято с ?p=119).md",
+   "role": "material",
+   "rights": "PD",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-168"
+   ],
+   "citedBy": [
+    "FP-168"
+   ],
+   "queueRows": [],
+   "locator": "The Atonement (London: T. Nelson and Sons, 1868), 328–329 и 333; издательство и объём сверены вторым снятием по каталогу",
+   "note": "единственный носитель круга, чьи выходные данные подтверждены независимо, — поэтому строка `A2`; положен 23.10.2026 кругом 21"
   }
  ],
  "libraryIndex20261023": null
