@@ -1512,6 +1512,142 @@ else:
         if _badref:
             errors.append(f"ПРАВИЛО 23: {len(_badref)} ссылок реестра ведут на несуществующий файл лана ({_badref[:5]}) — ссылка «см. 22_» обязана находиться")
 
+# ---- правило 24 (23.10.2026): «N вхождений» обязано быть переснятым в обеих азбуках и по названному файлу
+# Повод конкретный: круг 16 записал в README лана, что разбора Буньяна в 15_patristic_and_reformation_misattributions.md
+# нет («grep -i bunyan»: 0 вхождений). Обход был сделан по файлу другого лана (ИСКУПЛЕНИЕ/15_ — там и правда 0),
+# а назван в правке был docs/research/atonement/15_, где «Буньян» встречается 17 раз. Латинский шаблон по
+# кириллическому тексту не находит ничего, и «проверено обходом» становится самым опасным видом утверждения:
+# измерено — но не по тому предмету. Отсюда три требования к строке, которая считает вхождения: оба алфавита
+# названы, путь к файлу взят в обратные кавычки и стоит ближе всего к числу, и каждое число переснимается здесь же.
+_MINE24 = [CORPUS / "00_README_AND_NAVIGATION.md", CORPUS / "05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+           CORPUS / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
+           DOCS / "README.md", DOCS / "35_four_point_authors_mass_registry.md"]
+_PC24 = re.compile("[«\"]([A-Za-z\u0410-\u042F\u0430-\u044F\u0401\u0451][A-Za-z\u0410-\u042F\u0430-\u044F\u0401\u0451-]{2,})[»\"][^0-9\n]{0,24}?(\\d+)\\s+вхождений")
+_CYR24 = re.compile("[\u0410-\u042F\u0430-\u044F\u0401\u0451]")
+_PATH24 = re.compile("`([^`]+\\.md)`")
+_CNT24 = re.compile(r"\d+\s+вхождений")  # претензия обязана быть числом: «много вхождений» — не измерение
+_MTH24 = re.compile(r"grep|греп|wc -l|обход|проверено|сверено", re.I)  # …и способом, названным в той же строке
+
+
+def _occ24(text, pattern):
+    return len(re.findall(re.escape(pattern), text, re.IGNORECASE))
+
+
+def _file24(ref):
+    for cand in ((ROOT / ref), (DOCS / Path(ref).name), (CORPUS / Path(ref).name)):
+        if cand.exists():
+            return cand
+    return None
+
+
+def _units24(text):
+    """Единица сверки — смысловой блок, а не физическая строка: абзац переносится по ширине, и
+    иначе «0 вхождений» осталось бы без названного файла только потому, что путь уехал на следующую
+    строку. Табличные строки, пункты списков и заголовки остаются единицами сами по себе."""
+    out, cur, cur_no = [], [], 1
+    for n, ln in enumerate(text.split("\n"), start=1):
+        if not ln.strip():
+            if cur:
+                out.append((cur_no, " ".join(cur)))
+                cur = []
+            continue
+        if cur and re.match(r"^(\||-\s|\d+\.\s|#{1,6}\s)", ln):
+            out.append((cur_no, " ".join(cur)))
+            cur = []
+        if not cur:
+            cur_no = n
+        cur.append(ln)
+    if cur:
+        out.append((cur_no, " ".join(cur)))
+    return out
+
+
+_claims24, _bad24, _recheck24 = 0, [], 0
+for _f24 in _MINE24:
+    if not _f24.exists():
+        continue
+    _t24 = _f24.read_text(encoding="utf-8", errors="replace")
+    _units24r = _units24(_t24)
+    for _no24, _l in _units24r:
+        if (EXEMPT in _l or not _CNT24.search(_l) or not _MTH24.search(_l)
+                or not _PATH24.search(_l)):
+            continue
+        _claims24 += 1
+        _hits24 = list(_PC24.finditer(_l))
+        _cyr24 = [m for m in _hits24 if _CYR24.search(m.group(1))]
+        _lat24 = [m for m in _hits24 if not _CYR24.search(m.group(1))]
+        _zero24 = [m for m in _hits24 if int(m.group(2)) == 0]
+        if _zero24 and not (_cyr24 and _lat24):
+            _bad24.append("%s:%d — «0 вхождений» назван одним шаблоном (кириллических %d, латинских %d из %d чисел); "
+                          "имя в русском файле пишется кириллицей, и греп по латинице даёт «0» как артефакт азбуки, "
+                          "а не как отсутствие" % (_f24.name, _no24, len(_cyr24), len(_lat24), len(_hits24)))
+            continue
+        if not _hits24:
+            _bad24.append("%s:%d — блок утверждает число вхождений в названном файле, но ни одно из них не "
+                          "оформлено как «шаблон» → N вхождений: переснять нечем" % (_f24.name, _no24))
+            continue
+        _paths24 = [(m.start(), m.group(1)) for m in _PATH24.finditer(_l)]
+        _cache24, _miss24 = {}, []
+        for m in _hits24:
+            _near = None
+            for _pos, _pp in _paths24:
+                # путь обязан стоять в той же строке и быть ближайшим: форма претензии —
+                # «X» → N вхождений по `файл.md`; если в строке два файла, к числу примыкает тот,
+                # что ближе, и спорить с этим нельзя, иначе число припишется чужому файлу
+                _d = abs(_pos - m.start())
+                if _near is None or _d < _near[0]:
+                    _near = (_d, _pp)
+            if _near is None:
+                _miss24.append("число «%s» заявлено без пути к файлу в обратных кавычках" % m.group(1))
+                continue
+            if _near[1] not in _cache24:
+                _fp = _file24(_near[1])
+                _cache24[_near[1]] = (_fp, _fp.read_text(encoding="utf-8", errors="replace") if _fp else None)
+            _fp, _txt24 = _cache24[_near[1]]
+            if _txt24 is None:
+                _miss24.append("файл %s не найден" % _near[1])
+                continue
+            _recheck24 += 1
+            _got24 = _occ24(_txt24, m.group(1))
+            if _got24 != int(m.group(2)):
+                _bad24.append("%s:%d — по %s шаблон «%s»: заявлено %s, обход видит %d"
+                              % (_f24.name, _no24, _fp.name, m.group(1), m.group(2), _got24))
+        if _miss24:
+            _bad24.append("%s:%d — %s, значит «N вхождений» ничем не подтверждено"
+                          % (_f24.name, _no24, "; ".join(_miss24[:2])))
+if _bad24:
+    errors.append("ПРАВИЛО 24: %d строки-претензии не выдерживают пересъёма (%s) — «мы проверили» обязано быть "
+                  "проверяемым в обеих азбуках и по названному файлу" % (len(_bad24), "; ".join(_bad24[:4])))
+_other24 = 0
+_own24 = set(_MINE24)
+for _f24 in sorted(set(list(CORPUS.rglob("*.md")) + list(DOCS.rglob("*.md"))) - _own24):
+    try:
+        _t24 = _f24.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        continue
+    _other24 += sum(1 for _l in _t24.split("\n") if _CNT24.search(_l) and _MTH24.search(_l))
+_decl24 = reg.get("grepBilingualAudit20261023") or {}
+if _decl24:
+    for _k in ("scope", "claimsChecked", "bilingualOk", "recheckedOccurrences", "otherLaneClaims",
+               "recheckCommand", "checkedAt"):
+        if _k not in _decl24:
+            errors.append("ПРАВИЛО 24: в grepBilingualAudit20261023 нет поля «%s»" % _k)
+    if int(_decl24.get("claimsChecked") or -1) != _claims24:
+        errors.append("ПРАВИЛО 24: заявлено %s строки-претензии, обход видит %d"
+                      % (_decl24.get("claimsChecked"), _claims24))
+    if int(_decl24.get("bilingualOk") or -1) != _claims24 - len(_bad24):
+        errors.append("ПРАВИЛО 24: двуалфавитных строк заявлено %s, обход видит %d"
+                      % (_decl24.get("bilingualOk"), _claims24 - len(_bad24)))
+    if int(_decl24.get("recheckedOccurrences") or -1) != _recheck24:
+        errors.append("ПРАВИЛО 24: переснятых чисел заявлено %s, обход видит %d — правило, которое ничего "
+                      "не переснимает, это не проверка, а формат"
+                      % (_decl24.get("recheckedOccurrences"), _recheck24))
+    if int(_decl24.get("otherLaneClaims") or -1) != _other24:
+        notes.append("ПРАВИЛО 24: в чужих ланах %d строк того же вида (заявлено %s) — чужой прогон моим числом "
+                     "не блокируется" % (_other24, _decl24.get("otherLaneClaims")))
+else:
+    notes.append("ПРАВИЛО 24: строк-претензий в моих файлах %d, переснято чисел %d, в чужих ланах ещё %d "
+                 "(не блокируется)" % (_claims24, _recheck24, _other24))
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")
 if errors:
