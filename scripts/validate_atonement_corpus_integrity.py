@@ -104,6 +104,121 @@ def resolve(reference: str) -> bool:
     return any((base / reference).exists() for base in (ROOT, CORPUS, DOCS))
 
 
+# ------------------------------------------------ conflict-ledger statuses --
+# Единственный сводный счётчик лана (таблица «Итоговая сводка») был единственной цифрой, которую не
+# проверял никто: гейт делегировал числа статусов этой таблице, а таблица жила своей жизнью и молча
+# отстала на пять записей. Поэтому разбор записей вынесен в функцию с двумя потребителями: проверка
+# сверяет с ней текст таблицы, а режим --print-ledger-summary печатает тот же разбор готовыми
+# строками markdown. Держать определение в одном месте — иначе «сводка» и «проверка сводки» разойдутся
+# ровно так же, как разошлись таблица и записи.
+LEDGER_MD = CORPUS / "synthesis" / "02_CONFLICT_LEDGER.md"
+STATUS_DECL = re.compile(r"^- \*\*Статус:\*\* `([A-Z][A-Z0-9_\-]*)`(.*)$")
+STATUS_RIVAL = re.compile(r"Статус[^\n`]{0,12}`([A-Z][A-Z0-9_\-]*)`")
+STATUS_ASPECT = re.compile(r"\+\s*`([A-Z][A-Z0-9_\-]*)`")
+SUMMARY_HEADER = "| Статус | Количество | Записи (основной статус) | Как аспект |"
+SUMMARY_SEP = "|---|---|---|---|"
+LIVE = {"записейЛеджера": -1, "строкСводки": -1}
+
+
+def ledger_records(text):
+    """C-NN -> строки тела, в порядке файла. Запись = всё между её заголовком и следующим `## `."""
+    bodies, order, cur = {}, [], None
+    for line in text.split("\n"):
+        head = re.match(r"^## (C-\d{2})\.", line)
+        if head:
+            cur = head.group(1)
+            bodies[cur] = []
+            order.append(cur)
+        elif re.match(r"^## ", line):
+            cur = None
+        elif cur is not None:
+            bodies[cur].append(line)
+    return bodies, order
+
+
+def ledger_status_map(text, vocab):
+    """{C-NN: (основной статус, [аспекты])} и список нарушений. Определение ровно одно, общее."""
+    bodies, order = ledger_records(text)
+    got, problems = {}, []
+    for cid in order:
+        decls = [m for m in (STATUS_DECL.match(line) for line in bodies[cid]) if m]
+        if len(decls) != 1:
+            problems.append(
+                f"{cid}: деклараций статуса {len(decls)}, а обязана быть ровно одна — строка, начинающаяся "
+                "с «- **Статус:**» и значением в обратных кавычках. Пока допустимы три формы и два объявления в одной "
+                "записи, «число по статусу» означает «то, на что парсер наткнулся первым»"
+            )
+            continue
+        primary, aspects = decls[0].group(1), STATUS_ASPECT.findall(decls[0].group(2))
+        for tok in [primary] + aspects:
+            if tok not in vocab:
+                problems.append(
+                    f"{cid}: статус `{tok}` вне statusVocabulary — словарь закрыт: новое значение сначала "
+                    "объявляется в реестре (conflictLedgerGovernance20261023), иначе опечатка в статусе "
+                    "выглядит как новый класс записей"
+                )
+        rivals = [line for line in bodies[cid] if not STATUS_DECL.match(line) and STATUS_RIVAL.search(line)]
+        if rivals:
+            n = len(rivals)
+            word = "строка" if n == 1 else ("строки" if n < 5 else "строк")
+            problems.append(
+                f"{cid}: кроме канонической декларации в записи ещё {n} {word} с «Статус» рядом с токеном "
+                f"в обратных кавычках (первая: {rivals[0].strip()[:70]!r}) — объявление статуса обязано быть "
+                "одним: либо допиши аспект в ту же строку после «+», либо убери слово «Статус» из этого места, "
+                "иначе «число по статусу» снова зависит от порядка строк в записи"
+            )
+        got[cid] = (primary, aspects)
+    return got, order, problems
+
+
+def ledger_summary(got, order, vocab):
+    """Строки таблицы сводки: подпись статуса берётся из словаря реестра, а не из головы пишущего."""
+    rows = []
+    for status in vocab:
+        primary = sorted(c for c in order if got.get(c, ("", []))[0] == status)
+        aspects = sorted(c for c in order if status in got.get(c, ("", []))[1])
+        rows.append(f"| `{status}` — {vocab[status]} | {len(primary)} | {', '.join(primary) or '—'} | "
+                    f"{', '.join(aspects) or '—'} |")
+    return rows
+
+
+def ledger_table_lines(text):
+    """То, что написано в файле под «## Итоговая сводка», как список строк таблицы."""
+    at = text.find("## Итоговая сводка")
+    if at < 0:
+        return []
+    out = []
+    for line in text[at:].split("\n")[1:]:
+        if line.startswith("|"):
+            out.append(line.rstrip())
+        elif out and line.strip() == "":
+            break
+    return out
+
+
+if "--print-ledger-summary" in sys.argv[1:]:
+    try:
+        _reg = json.loads(read(REG))
+    except Exception as _exc:  # noqa: BLE001
+        print(f"не прочитан реестр: {_exc}", file=sys.stderr)
+        sys.exit(2)
+    _voc = {str(x.get("status")): str(x.get("meaning") or "")
+            for x in ((_reg.get("conflictLedgerGovernance20261023") or {}).get("statusVocabulary") or [])
+            if isinstance(x, dict) and x.get("status")}
+    _got, _order, _prob = ledger_status_map(read(LEDGER_MD), _voc)
+    for _p in _prob:
+        print(f"!-- {_p}", file=sys.stderr)
+    if not _voc:
+        print("!-- statusVocabulary пуст: печатать нечего, словарь статусов не выдуман из текста записей",
+              file=sys.stderr)
+        sys.exit(1)
+    print(SUMMARY_HEADER)
+    print(SUMMARY_SEP)
+    for _row in ledger_summary(_got, _order, _voc):
+        print(_row)
+    sys.exit(1 if _prob else 0)
+
+
 # ----------------------------------------------------------------- root spine --
 for name in SPINE:
     path = CORPUS / name
@@ -282,6 +397,48 @@ if entries and actual and (sorted(set(entries)) != list(range(1, actual + 1))):
         f"conflict ledger: max index C-{actual:02d}, но записей `## C-NN.` — {len(set(entries))} "
         f"(пропуски {gaps[:6]}, повторных номеров {dups}): у каждого расхождения ровно один номер"
     )
+# --------- правило 21 (23.10.2026): сводка обязана разлагаться на записи, а не пересказываться --
+LIVE["записейЛеджера"] = len(set(entries))
+_gov = (registry.get("conflictLedgerGovernance20261023") or {})
+_vocab: dict[str, str] = {}
+for _x in (_gov.get("statusVocabulary") or []):
+    if isinstance(_x, dict) and str(_x.get("status") or "").strip():
+        _vocab[str(_x["status"]).strip()] = str(_x.get("meaning") or "").strip()
+if not _vocab:
+    errors.append(
+        "conflictLedgerGovernance20261023.statusVocabulary пуст или блока нет — сводку леджера нечем "
+        "сверять; без закрытого словаря «статус» — это любое слово, которое автор записи поставил в "
+        "обратные кавычки, а правило 18 уже запрещает молчаливо отсутствующий обязательный блок"
+    )
+else:
+    if any(not m for m in _vocab.values()):
+        errors.append("statusVocabulary: есть статусы без подписи meaning — подпись печатается в таблице "
+                      "сводки и обязана быть объявлена, а не сочинена по месту")
+    _got, _order, _prob = ledger_status_map(ledger, _vocab)
+    errors.extend(_prob)
+    _prim = {c: v[0] for c, v in _got.items()}
+    _asp = {c: v[1] for c, v in _got.items()}
+    _unused = [s for s in _vocab if s not in set(_prim.values()) and not any(s in a for a in _asp.values())]
+    if _unused:
+        errors.append(f"statusVocabulary объявляет {_unused}, которых нет ни в одной записи леджера — "
+                      "словарь обязан соответствовать записям, а не переживать их (мёртвое правило "
+                      "страшнее отсутствия правила: оно создаёт видимость проверки)")
+    _gen = [SUMMARY_HEADER, SUMMARY_SEP] + ledger_summary(_got, _order, _vocab)
+    _actual = ledger_table_lines(ledger)
+    LIVE["строкСводки"] = len([x for x in _actual if x.startswith("| `")])
+    if not _actual:
+        errors.append("в леджере нет таблицы «## Итоговая сводка» — её отсутствие выглядит как "
+                      "«сверять нечего», а не как нарушение; строка обязана быть и обязана совпасть")
+    elif _actual != _gen:
+        first = next((i for i, (a, b) in enumerate(zip(_actual, _gen)) if a != b), min(len(_actual), len(_gen)))
+        errors.append(
+            f"сводка леджера разошлась с записями (первое расхождение — строка {first + 1}): в файле "
+            f"{(_actual[first] if first < len(_actual) else 'нет строки')!r}, записи дают "
+            f"{(_gen[first] if first < len(_gen) else 'нет строки')!r}; таблицу не правят руками — "
+            "переснять: python3 -B scripts/validate_atonement_corpus_integrity.py --print-ledger-summary "
+            "и вставить вывод под заголовок «## Итоговая сводка» (строк в таблице "
+            f"{len([x for x in _actual if x.startswith('| `')])}, записей {LIVE['записейЛеджера']})"
+        )
 # сверяется КАЖДЫЙ объявленный диапазон, а не один названный мной путь: дрейф жил во втором ли́дере
 # (synthesis/00_SYNTHESIS_AUTHORITY объявлял C-01…C-15 при леджере C-24), и проверка по одному
 # файлу его пропускала по построению
@@ -292,7 +449,9 @@ for auth in sorted(CORPUS.rglob("00_*AUTHORITY*.md")):
             f"{auth.relative_to(ROOT)}: объявлен диапазон C-01…C-{max(claimed):02d}, в леджере "
             f"C-{actual:02d} ({len(set(entries))} записей) — обнови ли́дер, не оставляй счётчик устаревшим; "
             "переснять: grep -cE '^## C-[0-9]{2}\\.' synthesis/02_CONFLICT_LEDGER.md. Числа статусов "
-            "в ли́дер не переносить: они сведены таблицей в самом леджере (дубль числа и есть источник дрейфа)"
+            "в ли́дер не переносить: они сведены таблицей в самом леджере, а таблица с 23.10 сверяется "
+            "правилом 21 с записями (пересъём: --print-ledger-summary); дубль числа и есть источник дрейфа, "
+            "и единственный способ его видеть — сделать дубль проверяемым"
         )
 
 # ------------------------------------------------------------ merge hygiene --
@@ -828,6 +987,8 @@ if REG.is_file():
         "правилГейта": len(((reg.get("integrityGate") or {}).get("rules") or {}).get("list") or []),
         "shaВсверкеВремен": len(_audit.get("commitTimeChecks") or {}),
         "строкВАудитеТопологии": len(_audit.get("rows") or []),
+        "записейЛеджера": LIVE["записейЛеджера"],
+        "строкСводки": LIVE["строкСводки"],
     }
     if _live:
         for _k, _v in sorted(_expect.items()):
