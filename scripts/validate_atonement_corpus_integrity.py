@@ -1829,6 +1829,16 @@ if LIB.is_file():
         if _r.get("role") == "registry-mirror" and str(_r["driveId"]) not in _dm25_blob:
             _bad25.append(f"{str(_r['name'])[:40]}: индекс называет этот объект зеркалом реестра, а в "
                           "driveMirrors такого id нет — индекс не имеет права выдумывать зеркала")
+    _out_of_scope = set((((globals().get("reg") or {}).get("libraryIndex20261023") or {})
+                         .get("mirrorsOutsideScope") or {}).keys())
+    _dm_all = (globals().get("reg") or {}).get("driveMirrors") or {}
+    for _fk, _fv in _dm_all.items():
+        if not re.fullmatch(r"file\d+", str(_fk)) or not isinstance(_fv, str):
+            continue
+        if _fv in _seen_ids or _fk in _out_of_scope:
+            continue
+        _bad25.append(f"driveMirrors.{_fk}: индекс не знает про зеркало {_fv[:12]}… и оно не объявлено в "
+                      "mirrorsOutsideScope — либо запись в индекса нужна, либо исключение надо назвать")
     _sub = [k for k in _fids if re.match(r"^10\.\d$", k)]
     for k in _sub:
         if not any(r["driveId"] == _fids[k] and r["kind"] == "folder" for r in _recs):
