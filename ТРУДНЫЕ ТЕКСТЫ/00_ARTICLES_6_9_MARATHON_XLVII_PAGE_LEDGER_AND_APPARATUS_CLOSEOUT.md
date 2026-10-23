@@ -1,4 +1,4 @@
-# Статьи 6–9: закрытие марафона XLVII — postраничные ledgers и аппарат
+# Статьи 6–9: закрытие марафона XLVII — постраничные ledgers и аппарат
 
 **Дата:** 24 июля 2026 года  
 **Статус:** `MARATHON-XLVII / PAGE-LEDGERS-6-9 / LOCATORS-7-8 / EARLY-WITNESS-CONTROL / ECM-ACCESS-BOUNDARY / NEXT-SITE-ASSEMBLY-GATE`

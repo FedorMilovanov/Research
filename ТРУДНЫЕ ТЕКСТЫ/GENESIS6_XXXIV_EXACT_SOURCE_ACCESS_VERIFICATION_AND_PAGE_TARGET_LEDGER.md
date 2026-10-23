@@ -229,7 +229,7 @@ SCHREINER
 
 **Exact pages:** pending full edition.
 
-**Vладелец:** Article 9.
+**Владелец:** Article 9.
 
 ---
 
@@ -244,7 +244,7 @@ SCHREINER
 
 **Project use:** qualified; does not prove Moses knew a specific text.
 
-**Vладелец:** Article 9.
+**Владелец:** Article 9.
 
 ---
 
@@ -253,7 +253,7 @@ SCHREINER
 **Статус:** `OPEN-REVIEW / PAGE-TARGET-FOR-PRIMARY-WORKS`  
 **Contribution:** historical kernel and philological caution; Genesis not adaptation merely because parallels exist.
 
-**Vладелец:** Article 9 / comparative appendix.
+**Владелец:** Article 9 / comparative appendix.
 
 ---
 
@@ -298,7 +298,7 @@ SCHREINER
 
 **Status:** serious new hypothesis, not established consensus.
 
-**Vладелец:** Article 6.
+**Владелец:** Article 6.
 
 ---
 
@@ -339,7 +339,7 @@ SCHREINER
 
 **Need:** full methodological replication and genre controls.
 
-**Vладелец:** Article 9.
+**Владелец:** Article 9.
 
 ---
 
@@ -354,7 +354,7 @@ SCHREINER
 
 **Not use:** direct composition date, authorship, canon, truth.
 
-**Vладелец:** Article 3 / technical appendix.
+**Владелец:** Article 3 / technical appendix.
 
 ---
 

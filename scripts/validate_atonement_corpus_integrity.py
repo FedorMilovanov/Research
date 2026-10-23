@@ -785,6 +785,42 @@ def mixed_words(text: str):
 # разрешено — но только построчно, только этим маркером, и число маркеров сверяется с объявленным в реестре.
 # Иначе «ослабили проверку» превращается в «добавили ещё один case» — молча и необратимо.
 EXEMPT = "<!-- mixed-script:цитата-дефекта -->"
+
+# ---- реестр массы «четырёхпунктников» (docs/research/atonement/35_) — измеряется, а не цитируется
+MASS_FILE = DOCS / "35_four_point_authors_mass_registry.md"
+MASS_ROW = re.compile(r"^\|\s*FP-(\d+)\s*\|")
+MASS_Q = re.compile(r"^- Q-(\d+) —")
+MASS_CLS = ("A1", "A2", "B1", "B2", "C")
+MASS_LOC = re.compile(r"(с\.\s*\d|с\.\s*\d|pp?\.\s*\d|col\.|пар\.\s*\d|§\s*\d|§\d|PL \d+:\d+|CSEL|GCS|WA \d|по лану|по корпусу)")
+MASS_LANEREF = re.compile(r"`(\d{2})_`")
+MASS_PATHREF = re.compile(r"`(ИСКУПЛЕНИЕ/[A-Za-z0-9_/.\-]+?)(?:\s[^`]*)?`")
+
+
+def measure_mass_registry():
+    """Определение, которым мерит правило 23: строка = «| FP-NN | … | `класс` | …».
+
+    Возвращает (rows, queue, lane_refs, exists); rows = {номер: (класс, текст строки)}.
+    """
+    if not MASS_FILE.is_file():
+        return {}, set(), set(), False
+    rows: dict[int, tuple] = {}
+    queue: set[int] = set()
+    refs: set[str] = set()
+    for line in MASS_FILE.read_text(encoding="utf-8", errors="replace").split("\n"):
+        m = MASS_ROW.match(line)
+        if m:
+            found = re.findall(r"`(A1|A2|B1|B2|C)`", line)
+            rows[int(m.group(1))] = (found[0] if found else None, line)
+            refs.update(MASS_LANEREF.findall(line))
+        else:
+            # путь проверяется по всему файлу: ссылка в прозе обязана находиться так же, как в таблице
+            refs.update(MASS_PATHREF.findall(line))
+        mq = MASS_Q.match(line)
+        if mq:
+            queue.add(int(mq.group(1)))
+    return rows, queue, refs, True
+
+
 _exempt_total = 0
 for _md in sorted(CORPUS.glob("*.md")):
     _txt = read(_md)
@@ -989,6 +1025,8 @@ if REG.is_file():
         "строкВАудитеТопологии": len(_audit.get("rows") or []),
         "записейЛеджера": LIVE["записейЛеджера"],
         "строкСводки": LIVE["строкСводки"],
+        "строкРеестраМассы": len(measure_mass_registry()[0]),
+        "очередейДобычиМассы": len(measure_mass_registry()[1]),
     }
     if _live:
         for _k, _v in sorted(_expect.items()):
@@ -1309,6 +1347,127 @@ if _msg and not _generated:
             f"сообщение последнего коммита содержит {len(_mixed)} слов смешанного письма: {_mixed[:5]} — "
             "в таком виде сообщение не ищется по-русски (git log --grep не найдёт)"
         )
+
+# ---- правило 22 (23.10.2026): периметр смешанного письма — измерение, а не воспоминание
+_repo_audit = (reg.get("integrityGate", {}).get("mixedScriptCheck") or {}).get("repoWideAudit20261023") or {}
+if not _repo_audit:
+    errors.append("реестр: в integrityGate.mixedScriptCheck нет блока repoWideAudit20261023 — остаток чужих ланов обязан быть проверяемым инвентарём (файлы, вхождения, классы, причины отказа от правки), а не числом из памяти или из текста PR")
+else:
+    import subprocess as _sp22
+    if not _repo_audit.get("recheckCommand"):
+        errors.append("ПРАВИЛО 22: у repoWideAudit20261023 нет recheckCommand — блок, который никто не может переснять, это ровно та болезнь, которую мы тут лечим")
+    for _k22 in ("files", "occurrences", "byFile", "classes", "revokedDueToForeignHashPin",
+                 "fixedByThisRound", "fixedMethod", "measuredAt", "method", "why",
+                 "strictnessSplit", "neighbourGatesRun"):
+        if _k22 not in _repo_audit:
+            errors.append(f"ПРАВИЛО 22: в repoWideAudit20261023 нет поля «{_k22}»")
+    _d22 = {x["path"]: x["count"] for x in _repo_audit.get("byFile", [])}
+    if len(_d22) != _repo_audit.get("files") or sum(_d22.values()) != _repo_audit.get("occurrences"):
+        errors.append(f"ПРАВИЛО 22: блок не сходится сам с собой: пофайловая раскладка даёт {len(_d22)} файлов / "
+                      f"{sum(_d22.values())} вхождений, заявлено {_repo_audit.get('files')} / {_repo_audit.get('occurrences')}")
+    _csum22 = sum(_repo_audit.get("classes", {}).values())
+    if _csum22 != _repo_audit.get("occurrences"):
+        errors.append(f"ПРАВИЛО 22: классы остатка складываются в {_csum22}, а вхождений {_repo_audit.get('occurrences')} — "
+                      "инвентарь обязан объяснять каждое вхождение, а не большинство")
+    for _e22 in _repo_audit.get("revokedDueToForeignHashPin", []):
+        if not _e22.get("path") or not _e22.get("pinnedBy"):
+            errors.append("ПРАВИЛО 22: запись revokedDueToForeignHashPin без path или без pinnedBy — «сюда нельзя» должно быть чем-то проверяемо")
+            continue
+        for _pin in _e22["pinnedBy"]:
+            if not (ROOT / _pin).is_file():
+                errors.append(f"ПРАВИЛО 22: заявленный пин {_pin} (файл {_e22['path']}) не найден в репозитории — "
+                              "либо чужой лан снял пин и правку надо вернуться и сделать, либо ссылка в инвентаре выдумана")
+    _seen22: dict[str, int] = {}
+    _tracked22 = [x.decode("utf-8") for x in _sp22.run(["git", "ls-files", "-z"], capture_output=True).stdout.split(b"\0") if x]
+    for _rel in _tracked22:
+        if _rel.startswith("ИСКУПЛЕНИЕ/") or not _rel.endswith((".md", ".json")):
+            continue
+        try:
+            _t22 = (ROOT / _rel).read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            continue
+        _n22 = sum(len(mixed_words(_l)) for _l in _t22.split("\n") if EXEMPT not in _l)
+        if _n22:
+            _seen22[_rel] = _n22
+    if _d22 != _seen22:
+        _gone22 = sorted(set(_d22) - set(_seen22))
+        _new22 = sorted(set(_seen22) - set(_d22))
+        _drift22 = sorted(k for k in set(_d22) & set(_seen22) if _d22[k] != _seen22[k])
+        notes.append("ПРАВИЛО 22: инвентарь чужого периметра разошёлся с деревом — обход даёт %d файлов / %d вхождений, "
+                     "заявлено %d / %d; вычистили: %s; появилось: %s; сменилось число: %s. Для чужих файлов это заметка, "
+                     "а не ошибка: блокировать чужой прогон из-за своего счётчика нельзя (правило 17) — переснимает "
+                     "владелец декларации, команда в recheckCommand"
+                     % (len(_seen22), sum(_seen22.values()), _repo_audit.get("files"), _repo_audit.get("occurrences"),
+                        ", ".join(_gone22[:3]) or "—", ", ".join(_new22[:3]) or "—", ", ".join(_drift22[:3]) or "—"))
+    _adj22 = []
+    for _md22 in sorted(set(DOCS.rglob("*.md"))):
+        try:
+            _t22 = _md22.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            continue
+        for _no22, _l in enumerate(_t22.split("\n"), start=1):
+            if EXEMPT in _l:
+                continue
+            for _w22 in mixed_words(_l):
+                _adj22.append("%s:%d %s" % (_md22.name, _no22, _w22))
+    if _adj22:
+        errors.append("ПРАВИЛО 22: в docs/research/atonement/** найдено смешанное письмо (%d: %s) — смежный лан корпуса "
+                      "входит в периметр как ошибка, потому что корпус и он болеют одним дефектом; чинится тем же "
+                      "порядком: кандидат обязан быть аттестован ланом (см. fixedMethod в инвентаре)"
+                      % (len(_adj22), ", ".join(_adj22[:5])))
+
+# ---- правило 23 (23.10.2026): масса носителей позиции — проверяемый реестр, а не список имён
+_mrows, _mq, _mrefs, _mexists = measure_mass_registry()
+_ma = reg.get("fourPointMassRegistry20261023") or {}
+if not _ma:
+    errors.append("реестр: нет блока fourPointMassRegistry20261023 — «мы собрали всю массу четырёхпунктников» обязано быть чем-то переснимаемым (число строк, классы достоверности, очередь добычи), иначе это снова слово в тексте PR")
+if not _mexists:
+    errors.append(f"ПРАВИЛО 23: заявленный реестр массы не найден — {MASS_FILE.relative_to(ROOT)}; блок в JSON без файла есть обещание, а не данные")
+else:
+    if not _ma:
+        pass
+    else:
+        for _k in ("entries", "perClass", "queueLength", "shareA1Percent", "measuredAt", "method",
+                   "recheckCommand", "perimeter", "classesVocabulary", "why", "foundThisRound", "laneDefectRecorded"):
+            if _k not in _ma:
+                errors.append(f"ПРАВИЛО 23: в fourPointMassRegistry20261023 нет поля «{_k}»")
+        if not _ma.get("recheckCommand"):
+            errors.append("ПРАВИЛО 23: у реестра массы нет recheckCommand — число, которое нельзя переснять, не имеет права называться измерением")
+        _mdecl = {str(x): int(y) for x, y in (_ma.get("perClass") or {}).items()}
+        _meas = {c: sum(1 for n, (k, l) in _mrows.items() if k == c) for c in MASS_CLS}
+        if len(_mrows) != _ma.get("entries"):
+            errors.append(f"ПРАВИЛО 23: заявлено {_ma.get('entries')} строк реестра, обход видит {len(_mrows)} — переснять: {MASS_FILE.name}")
+        if _mdecl != _meas:
+            errors.append(f"ПРАВИЛО 23: классы достоверности разошлись: заявлено {_mdecl}, обход видит {_meas}")
+        if sum(_mdecl.values()) != _ma.get("entries"):
+            errors.append("ПРАВИЛО 23: сумма классов не равна числу строк — реестр обязан объяснять каждую строку, а не большинство")
+        if _ma.get("queueLength") != len(_mq):
+            errors.append(f"ПРАВИЛО 23: очередь добычи: заявлено {_ma.get('queueLength')} адресов, в файле {len(_mq)}")
+        if not _ma.get("shareA1Percent") or int(_ma.get("shareA1Percent")) != round(100 * _meas["A1"] / max(1, len(_mrows))):
+            errors.append(f"ПРАВИЛО 23: доля прочитанного по первичному изданию: заявлено {int(_ma.get('shareA1Percent') or 0)}%, "
+                          f"обход считает {round(100 * _meas['A1'] / max(1, len(_mrows)))}% — «масса собрана» не имеет права звучать громче, чем это число")
+        _ids = sorted(_mrows)
+        if _ids != list(range(1, len(_ids) + 1)):
+            gaps = sorted(set(range(1, max(_ids) + 1)) - set(_ids))
+            dups = [n for n in _ids if _ids.count(n) > 1]
+            errors.append(f"ПРАВИЛО 23: нумерация строк реестра не непрерывна (пропуски {gaps[:5]}, повторы {dups[:5]}) — "
+                          "номер строки это адрес, по которому ходит очередь; дырявая нумерация позволяет «снять» улику, вырезав строку")
+        _nocls = [n for n, (k, l) in _mrows.items() if k not in MASS_CLS]
+        if _nocls:
+            errors.append(f"ПРАВИЛО 23: строки без класса достоверности (или с вне словаря): FP-{_nocls[0]:02d}… — всего {len(_nocls)}; "
+                          f"словарь закрыт: {', '.join(MASS_CLS)}")
+        _cset = {n for n, (k, l) in _mrows.items() if k == "C"}
+        if _cset != _mq:
+            errors.append(f"ПРАВИЛО 23: строки `C` и очередь разошлись: только в C {sorted(_cset - _mq)[:5]}, только в очереди {sorted(_mq - _cset)[:5]} — "
+                          "каждая «надо добыть» обязана иметь адресата, иначе «масса» собирается вычёркиванием неудобных строк")
+        _noloc = [n for n, (k, l) in _mrows.items() if k == "A1" and not MASS_LOC.search(l)]
+        if _noloc:
+            errors.append(f"ПРАВИЛО 23: {len(_noloc)} строк класса `A1` без локатора (первая — FP-{_noloc[0]:02d}) — «сверено по изданию» без страницы/колонки/парграфа "
+                          "е ровно тот дефект, из-за которого весь этот корпус и затеян")
+        _badref = sorted(r for r in _mrefs if r.startswith(("ИСКУПЛЕНИЕ/", "docs/")) and not (ROOT / r).exists()
+                         or not r.startswith(("ИСКУПЛЕНИЕ/", "docs/")) and not list(DOCS.glob(r + "*")) and not list(CORPUS.glob(r + "*")))
+        if _badref:
+            errors.append(f"ПРАВИЛО 23: {len(_badref)} ссылок реестра ведут на несуществующий файл лана ({_badref[:5]}) — ссылка «см. 22_» обязана находиться")
 
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")

@@ -1799,7 +1799,7 @@ P1,Братский Вестник,1945-2021 claimed; MBChurch HTML catalog,MBCh
 P1,Гость,1910-1930,LiveJournal/RusBaptist archive lead; ecbarchive historical host,availability map,lead
 P1,Баптист Украины,1926-1928,EAAA says all texts for 1926-1928; Calisphere item for 1928.12,availability map + scan route,lead strong
 P1,Христианин,1905-1928; 1925 no1-12 on Esxatos,Esxatos gives 1925 No.1-12 and history/applications,1925/1926 register + appendix map,partial scan
-P2,Наша Семья,1996-2001,Rus-Baptist page lists Moscow ECB Благaя Весть newspaper through No.4(28) 2001,post-Soviet identity/family line; verify missing 1996 no1-2,html-index
+P2,Наша Семья,1996-2001,Rus-Baptist page lists Moscow ECB Благая Весть newspaper through No.4(28) 2001,post-Soviet identity/family line; verify missing 1996 no1-2,html-index
 ```
 
 

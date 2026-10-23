@@ -123,9 +123,12 @@
 | 14 Owen Book IV locators (md, папка 01) | `1cNXU1YIefmgKKU_4uC41dBRP5paP4VVw` |
 | 15 Calvin III.24 + Dort II (md, папка 04) | `1qLSeqSU8KE-8NXfO6p3Lwe0Y5vdCib2X` |
 | 16 Dort II EN 1840 (md, папка 04) | ID — в `driveMirrors.file16` реестра [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json) |
+| `35_four_point_authors_mass_registry.md` (папка `05`) | копия реестра массы для чтения вне редактора; канон — git-файл `docs/research/atonement/35_four_point_authors_mass_registry.md`, ID даёт `driveMirrors.massRegistry20261023` в [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json); лежать на Drive не значит быть цитируемым: 82 строки этого реестра — класс `C`, то есть «добыть» |
 | Брифы параллельных агентов (5 Google Docs, папка `08`) | папка `1LkzUHWOLH1M04si64c5iQCNmHpqOBU4n`; ID отдельных доков при перезаливке меняются — канон в Git: `ИСКУПЛЕНИЕ/agents/` |
 
 Канон остаётся Git-файлами в `ИСКУПЛЕНИЕ/`. Docs — зеркало для чтения на Drive.
+
+**Волна 2026-10-23:** в папку `05` (`13cx8Y86…`) положена копия реестра массы `35_four_point_authors_mass_registry.md`; устаревшее зеркало SSOT-реестра (ID `1kvWangNcv9DQOPoMi1k2k3Ussjf_EXwx`, 53 098 байт, снимок 2026-10-09) называло себя «актуальным» и не было им: переименовано в «УСТАРЕЛО … заменено 2026-10-23» (в trash не убрано — удаления в задачу не входили), а свежее зеркало положено рядом: `atonement-corpus-v1.json — 2026-10-23 (зеркало, канон в Git)`, ID `1jzzN8PB92OdKjYBEbsHpyc3aeB76GQEV`, 276 905 байт. Заодно измерено, что в папке `05` к этой дате накопилось 9 копий реестра без даты в имени — инвентарь с ID и размерами лежит в `driveMirrors.corpusJsonCopies20261023`; обещание «актуальный» теперь несёт имя файла, а не modified_time. Канон по-прежнему Git, а Drive только для чтения. Правило прежнее: Drive presence ≠ quote-safe ≠ publication approval.
 
 **Волна 2026-10-07b:** зеркала `00`, `05`, `07`, `12`, `13`, `15` перезалиты byte-accurate (`upload_file` с `file_path`, без пересказа). Предыдущие ID (`1bI3GKw5…`, `1yRVrEg-…`, `1a1OFbfq…`, `1wz5vC0-…`, `1KGtaHM7…`, `1QCk0y3l…`) отправлены в корзину. Актуальные ID всех зеркал — в `driveMirrors` реестра [`data/atonement-corpus-v1.json`](data/atonement-corpus-v1.json).
 

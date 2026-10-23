@@ -404,7 +404,7 @@ verification:
 | Проханов | `Христианин`, `Утренняя звезда`, `Молодой виноградник`, `Гость` | семья, обращение, гимны, молодёжь, социальный проект |
 | Ратушный / Либенко | `Баптист Украины`, `Слово Истины`, южные журналы | южная штунда, крестьянская вера, общинная сеть |
 | Лидия Винс | `Бюллетень Совета родственников`, Keston, DHI, memoirs | женское руководство, письма, суд, помощь семьям |
-| Аида Скрипникова | DHI, самиздат, западные материалы, Бelyakova-Dobson | стихи, молодёжное свидетельство, международная огласка |
+| Аида Скрипникова | DHI, самиздат, западные материалы, Belyakova-Dobson | стихи, молодёжное свидетельство, международная огласка |
 | Николай Хмара | `Вестник спасения`, бюллетени, Keston, РС ЕХБ | резонанс смерти, создание Совета родственников |
 | Николай Храпов | `Вестник спасения`, `Логос`, воспоминания | тюремная память, гимны/литература, длительные сроки |
 | Дети верующих | `Бюллетень`, DHI, French, Belyakova-Dobson | изъятия, школа, воскресные школы, семейная вера |
@@ -4674,11 +4674,11 @@ Visible gap: `№36`.
 |---|---:|---|---|---|
 | P0 | №1 | masthead/program/first issue | B | Need editor/publisher/address/program; PDF too large for browser extraction. |
 | P0 | №5 | `Любовь к врагам` | A | Violence, revenge, cross-shaped public ethics. |
-| P0 | №7 | `Драгоценное правило` | A | Nагорная проповедь, new birth, public morality, temperance micro-stories. |
+| P0 | №7 | `Драгоценное правило` | A | Нагорная проповедь, new birth, public morality, temperance micro-stories. |
 | P0 | №18 | `Зло невоздержания` | B | Temperance, family, poverty, social wound. |
 | P0 | №19 | `Люди-птицы` | B | Aviation/progress/modernity in Petersburg. |
 | P0 | №34 | `К съезду баптистов` | B | Pre-congress public framing, terminology, union agenda. |
-| P0 | №40 | `Закладка молитвенного дома в Санкт-Петербурге` | A | Major scene: Fетлер, Павлов, Байфорд, Каргель, Проханов, workers, press, house of prayer. |
+| P0 | №40 | `Закладка молитвенного дома в Санкт-Петербурге` | A | Major scene: Фетлер, Павлов, Байфорд, Каргель, Проханов, workers, press, house of prayer. |
 | P0 | №44 | `Настойчивая просьба (быль)` | A | Widow, poverty, 6 rubles, prayer, state petition, pastoral help. |
 | P1 | №47 | `Это Я` | B | Gethsemane / Christological devotion near year-end. |
 | P1 | №48 | year-end issue | B | Needs PDF: annual horizon, final editorial tone, possible recap. |
@@ -8791,7 +8791,7 @@ Names visible in subscription boxes should be transcribed from high-resolution f
 | Одесса | editorial office / publication place in №1–4 | masthead-visible | `Баптист` 1910 is not centered in Petersburg; it has a southern editorial base |
 | Ростов-на-Дону | mentioned in New Year editorial as previous place / transition memory | visible in №1 article | Institutional transition: Rostov → Odessa |
 | Нахичевань-на-Дону | subscription route via Mazaev | masthead-visible | Don/southern network |
-| Санкт-Петербург | subscription route via Fетлер; statistics note sends data to Fetler | masthead + №4 p.2 | Capital route, statistics, prayer-house/public line |
+| Санкт-Петербург | subscription route via Фетлер; statistics note sends data to Fetler | masthead + №4 p.2 | Capital route, statistics, prayer-house/public line |
 | Тифлис | subscription route via Pavlov | masthead-visible | Caucasus route and older evangelical/baptist geography |
 | Гальбштадт | `Радуга` publishing/book notice in bibliography | №4 p.2 visible | Mennonite/evangelical print ecosystem; needs contextual treatment |
 | Царицын | listed in №1 contents | contents-visible | Local community report target |

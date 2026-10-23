@@ -170,6 +170,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | O05 | SECONDARY | Apostasy corpus | `apostasy/08_SOURCE_REGISTRY…`; `apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md` | Heb 6/10 не решать заново; 2 Пет. 2:1 не решать системой искупления до экзегезы письма | follow apostasy |
 | O06 | SECONDARY | Highway Murray *The Atonement* | https://www.the-highway.com/atonement_murray.html | copyright; paraphrase in `11` | NO |
 | O07 | SCHOLARLY-OPEN | OPC Free Offer 1948 | https://opc.org/GA/free_offer.html | majority+minority; B5 | paraphrase of public church paper |
+| O14 | LANE-REGISTRY | Реестр массы носителей позиции: `docs/research/atonement/35_four_point_authors_mass_registry.md` (151 строка, 12 эпох, классы `A1`/`A2`/`B1`/`B2`/`C`, очередь `Q-01`…`Q-82`) | — | источник новых кандидатов в эту очередь; по первичному изданию прочитано 17 % строк | NO, пока позиция в классе `C` |
 
 ---
 
@@ -188,6 +189,8 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 11. WCF ch. VIII: текст уже локализован (Schaff chunks 182–183). Следующий шаг по этой карточке — **печатная страница** тома Schaff (*Creeds of Christendom* III, издание 1919, PD на archive.org); в CCEL TXT пагинации нет.
 12. Scott 1841 (`articlesofsynodo1841syno`): полная транскрипция с. 282–286 (артикулы II.1–9) и расписать по страницам Rejectio I–VII — сейчас закрыто только латынью Schaff 165.
 13. ~~**Вопрос к владельцу:** перенос W0-пака в Git.~~ **Решено и сделано 2026-10-07 (вторая волна):** блоки первоисточника из `10_W0_PRIMARY_TEXT_DORT_HEAD_II_AND_CALVIN_2026-10-07.md` (Drive `01`, id `1hPs1aEWtwv1GHGHtZVtpWd8c91bQgAgo`, PD) перенесены в Git файлом [`16`](16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md) — английский перевод Дорта II 1840 г. (арт. I–IX) и прочитанный фрагмент Кальвина на 1 Ин. 2:1–2. Служебная обвязка пакета (разделы верификации W0) в этот корпус не переносилась: она принадлежит другому корпусу. Drive-копия оставлена как есть.
+14. Приоритет добычи задаёт реестр `35_` §17: сначала те `C`-строки, у которых текст уже открыт (Буньян — IA 24 с. / Chapel Library 30 с. плюс *The Baptist Quarterly* 21:3, сс. 126–130; Э. Б. Чейз и крещендобрический ролл — `middletownbiblechurch.org`; Сомюр — Aymon II 183 и 298, Swisser 1856, Niemeyer 729–739), потому что они закрывают сразу по несколько строк реестра.
+15. Класс позиции поднимается (`C` → `B1`/`A2`/`A1`) только вместе с локатором по изданию и строкой очереди, снятой из `35_` §17: `C` без адресата и `A1` без страницы/колонки/параграфа — FAIL правила 23, то есть повышение класса «на глаз» технически невозможно.
 
 Не качать и не класть: Murray, Packer 1959, Gibson 2013, Morris, Stott, Berkhof, Bavinck EN.
 

@@ -2018,7 +2018,7 @@ P1:
 
 ## Кейсы для углубления
 
-| Кейc | Почему важен | Что проверить |
+| Кейс | Почему важен | Что проверить |
 |---|---|---|
 | Николай Хмара | смерть в тюрьме, запуск правозащитной линии, семьи и дети | бюллетени 1964–1965, судебные/прокурорские следы, реакция Микояна |
 | Иван Моисеев | армия, совесть, смерть, международная память | бюллетень №9 1972, военная часть, свидетельство о смерти, экспертиза |
@@ -3864,7 +3864,7 @@ persecution/
 | First Message 1961 | LEAD ONLY | Find full text page-level |
 | Vestnik Spaseniya | Bibliographic control OPENED | Issue-level crawl |
 | Vestnik Istiny | External lead | Build issue register |
-| SРУ article | OPENED / CITABLE | Build people/women/action register |
+| СРУ article | OPENED / CITABLE | Build people/women/action register |
 | Bulletin 1971 PDFs | Link leads | Download/OCR №1–2 |
 | Bulletin 1983 PDFs | Link leads | Download/OCR №117 |
 | Bratskiy Vestnik official voice | Partly opened in earlier v files | 1959–1965 issue pass |
@@ -3989,7 +3989,7 @@ C-источник можно использовать для живой пам�
 4. Case packet on Иван Моисеев: military/prosecutor/medical evidence if accessible.
 5. Full issue list of `Бюллетень Совета родственников` 1971–1987.
 6. Full issue list of `Вестник истины` 1976–1996.
-7. People register: women of SРУ, печатники, семьи, дети, узники.
+7. People register: women of СРУ, печатники, семьи, дети, узники.
 8. Internal conflict register: 1979 Council relatives critique and later Отдел заступничества.
 
 ## Stop-rule

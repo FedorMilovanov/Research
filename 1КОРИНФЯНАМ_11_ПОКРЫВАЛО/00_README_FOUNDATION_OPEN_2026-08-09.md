@@ -565,7 +565,7 @@
 
 ### 7.5. Патристика и история толкования
 
-- Tertullian, *De virginibus velandis*; *De orationе*.
+- Tertullian, *De virginibus velandis*; *De oratione*.
 - Clement of Alexandria, *Paedagogus* 3.
 - John Chrysostom, *Homiliae in epistulam i ad Corinthios* 26–27.
 - Augustine, *De opere monachorum*, sermons и упоминания в *Quaestiones Veteris et Novi Testamenti*.

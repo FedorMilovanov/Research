@@ -714,7 +714,7 @@ The RusBaptist/Stunda history page confirms a major corridor for Prokhanov throu
 - 1961 split documents and Council-of-Churches material;
 - Savin / OGPU material already integrated in `groups/04_SAMIZDAT_PERSECUTION.md`.
 
-**Boundary rule:** Prokhanov's evangelical line, the Baptist Union line, later ВСЕХБ, and СЦ ЕХБ must remain distinguishable even when they later overlap under the EХБ umbrella.
+**Boundary rule:** Prokhanov's evangelical line, the Baptist Union line, later ВСЕХБ, and СЦ ЕХБ must remain distinguishable even when they later overlap under the ЕХБ umbrella.
 
 ### v121 source table — top texts now anchored
 
