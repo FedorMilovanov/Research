@@ -3968,7 +3968,7 @@
  },
  "reconciliationDocument20261022": {
   "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-  "lines": 1427,
+  "lines": 1435,
   "sectionsH2": 16,
   "sectionsH3": 27,
   "history": [
@@ -4014,7 +4014,7 @@
     "note": "числа до вставки §15i (одиннадцатый круг)"
    }
   ],
-  "measuredAt": "2026-10-23T18:07Z",
+  "measuredAt": "2026-10-23T18:12Z",
   "method": "len() по строкам файла и счёт по префиксам '## ' / '### '; переснимается гейтом каждый прогон (правило 14), расхождение = ошибка, а не замечание",
   "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
   "measuredBy": "wc -l и grep -c по самому файлу, а не по памяти прошлого съёма"
