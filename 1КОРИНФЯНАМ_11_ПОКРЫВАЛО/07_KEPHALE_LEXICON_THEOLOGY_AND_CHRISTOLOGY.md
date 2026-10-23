@@ -75,7 +75,7 @@ Stephen Bedale, «The Meaning of kephale in the Pauline Epistles», *JTS* NS 5 (
 - **Wayne Grudem**, «Does κεφαλή Mean "Source" or "Authority Over" in Greek Literature? A Survey of 2,336 Examples», *Trinity Journal* 6 NS (1985): 38–59; продолжение в *Trinity Journal* 11 NS (1990): 3–72 (перепечатано в RBMW 1991). Грудем утверждает: из 2336 собранных им вхождений `κεφαλή` в древнегреческой литературе от Гомера до византийцев практически **нет** надёжных примеров со значением «источник/происхождение»; подавляющее большинство переносных употреблений несёт смысл «вождь/правитель/проминентный, над кем/чем стоят».
 - **Richard S. Cervin**, «Does κεφαλή Mean "Source" or "Authority Over"? A Rebuttal», *Trinity Journal* 10 NS (1989): 85–112 — оспаривает методологию Грудема и показывает ряд контекстов, где `κεφαλή` действительно имеет оттенок «верхушки/начала» (в т. ч. у Гераклита, Платона, Филона, Плутарха). Но даже Червин **не** доказывает, что «авторитет» отсутствует; он оспаривает редукцию к «только власть».
 - **Joseph A. Fitzmyer**, «Another Look at κεφαλή in 1 Corinthians 11:3», *NTS* 35 (1989): 503–511 — иезуитский авторитетный экзегет, взвешенно: `κεφαλή` у Павла обозначает и авторитет, и «источник жизни/питания» в контексте тела; в 1 Кор. 11:3 он склоняется к смешанному смыслу с заметным измерением власти.
-- **Gilbert Bilezikian**, *Beyond Sex Roles* (1985); **Berkeley and Alvera Mickelsen**, статьи в *Christianity Today* и в *Women, Authority and the Bible* (1986); **Alan Padgett** JSNT 20 (1984); **Craig Keener**, *Paul, Women, and Wives* (1992); **Philip B. Payne**, *Man and Woman, One in Christ* (2009) — линия «source/preeminent», но с оттенками: Пэйн идёт дальше, Кеener более уравновешен.
+- **Gilbert Bilezikian**, *Beyond Sex Roles* (1985); **Berkeley and Alvera Mickelsen**, статьи в *Christianity Today* и в *Women, Authority and the Bible* (1986); **Alan Padgett** JSNT 20 (1984); **Craig Keener**, *Paul, Women, and Wives* (1992); **Philip B. Payne**, *Man and Woman, One in Christ* (2009) — линия «source/preeminent», но с оттенками: Пэйн идёт дальше, Keener более уравновешен.
 - **D.A. Carson**, статья в RBMW (1991) — критика Биликиана и защита смысла «authority over» в контексте Еф. 5 и 1 Кор. 11, с оговоркой: в Колоссянам/Ефесянам «Глава» подразумевает также единство, питание, жизненный источник тела.
 
 ### 2.4. Новейшие лексиконы: что уже можно считать установленным до BDAG-сверки
@@ -228,7 +228,7 @@ Stephen Bedale, «The Meaning of kephale in the Pauline Epistles», *JTS* NS 5 (
 |---|---|---|
 | Gordon D. Fee | NICNT | в 1 Кор. 11 и Еф. 5 склоняется к «source/prominence» с иерархическим оттенком; не редуцирует до чистого источника (Фи — евангелик-харизмат, не эгалитарист в стиле Пэйна) |
 | Anthony C. Thiselton | NIGTC | взвешенная защита смысла «authority over» в 1 Кор. 11 с учётом полемики; положительно относится к Грудему и с оговорками к Фицмайеру |
-| David E. Garland | BECNT | консервативная защита традиционного «authority over»; апелляция к ЛXX и порядку творения |
+| David E. Garland | BECNT | консервативная защита традиционного «authority over»; апелляция к LXX и порядку творения |
 | Roy E. Ciampa & Brian S. Rosner | PNTC | консервативный центр; признают многомерность метафоры, но в 11:3 — авторитет/порядок |
 | Leon Morris | TNTC | кратко, консервативно: глава = предстоятель/начальник |
 | C.K. Barrett | BNTC/HNTC | сбалансирован, не эгалитарист; отмечает христологический ограничитель |

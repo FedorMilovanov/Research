@@ -235,7 +235,7 @@ The dramatic dialogue repeatedly attacks the assumption:
 
 The youth points to an impressive outward change; Truth answers that a person may turn from outward filthiness while remaining inwardly unchanged.
 
-### Direct relevance to DВР
+### Direct relevance to ДВР
 
 This is historically striking because it holds together the same categories the series needs:
 
