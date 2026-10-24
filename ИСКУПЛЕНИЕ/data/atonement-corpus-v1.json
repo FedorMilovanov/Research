@@ -4712,7 +4712,7 @@
     "note": "круг 29: §15z о непрерывных диапазонах 227–231 / 231–236, о систематической долгое s-ошибке и о дыре в правиле 25 (зеркало без gitFile не проверяется)",
     "linesAfter": 1827,
     "measuredAt": "2026-10-24T12:26:36Z",
-    "measuredBy": "python3 -c \"import pathlib,re; p=pathlib.Path('ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md'); s=p.read_text(encoding='utf-8'); print(len(s.rstrip(chr(10)).split(chr(10))), len(re.findall(r'(?m)^## ',s)), len(re.findall(r'(?m)^### ',s)), len(p.read_bytes()))\" — тот же обход, что и в поле reconciliationDocument20261022.method; история хранит только пересъёмки 16-го и 17-го чисел, строки «до» остаются вNarrative реестра §26/§27 и круга 29"
+    "measuredBy": "python3 -c \"import pathlib,re; p=pathlib.Path('ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md'); s=p.read_text(encoding='utf-8'); print(len(s.rstrip(chr(10)).split(chr(10))), len(re.findall(r'(?m)^## ',s)), len(re.findall(r'(?m)^### ',s)), len(p.read_bytes()))\" — тот же обход, что и в поле reconciliationDocument20261022.method; история хранит только пересъёмки 16-го и 17-го чисел, строки «до» остаются в повествовательных разделах реестра (§26 и §27) §26/§27 и круга 29"
    },
    {
     "asOf": "2026-10-24T12:11:38Z",
