@@ -2578,7 +2578,10 @@
      "how": "обход ролей индекса: collections.Counter(str(x.get('role')) for x в i['records']); в круге 30 — registry-mirror: 1 из 86",
      "command": "python3 -c \"import json,pathlib,collections; i=json.loads(pathlib.Path('ИСКУПЛЕНИЕ/data/atonement-library-index.json').read_text(encoding='utf-8')); print(collections.Counter(str(x.get('role')) for x in i['records']))\"",
      "measuredAt": "2026-10-24T12:42:41Z",
-     "verdict": "дыра не закрыта, а перенесена: проверка доверяет классификатору, который автор записей проставляет руками. Следующий шаг — прямой прогон «подложи зеркало с неверным именем и посмотри, упадёт ли гейт»; в круге 30 он не делался, и косвенным он быть не перестанет от того, что красиво описан"
+     "verdict": "дыра не закрыта, а перенесена: проверка доверяет классификатору, который автор записей проставляет руками. Следующий шаг — прямой прогон «подложи зеркало с неверным именем и посмотри, упадёт ли гейт»; в круге 30 он не делался, и косвенным он быть не перестанет от того, что красиво описан",
+     "probeResult": "сделано в отдельном worktree, рабочее дерево не тронуто: в имени живого зеркала (driveId 1UPRrL80pB8rwqqbsq5dDehPIr2gEJX2d) поставлены неверный md5 и неверное число байтов — гейт ответил кодом 1 и двумя жалобами (правило 25: названный в имени нулевой md5 против того md5, что лежит в дереве; имя обещает на байт больше, чем весит файл). Та же мутация до перестановки роли молчала. Первый прогон ушёл не в ту запись: фильтр по роли вернул две, live[0] — снимок JSON-сводки круга 20 с lagBehindGit: True, и его молчание было законным; отсюда правило прогона: мишень и ожидаемое число жалоб называются до запуска, иначе ноль — это отсутствие данных, а не зелёное дерево",
+     "probeCommand": "git worktree add -q --detach /tmp/wt30b HEAD && cd /tmp/wt30b && python3 -c \"import json,pathlib; P=pathlib.Path('ИСКУПЛЕНИЕ/data/atonement-library-index.json'); i=json.loads(P.read_text(encoding='utf-8')); x=[y for y in i['records'] if y.get('role')=='registry-mirror' and not y.get('lagBehindGit') and '35_four_point' in str(y.get('gitFile'))][0]; x['name']=x['name'].replace('md5 0a9c9af408dc11e925b26b8b584069ec','md5 '+'0'*32); P.write_text(json.dumps(i,ensure_ascii=False,indent=1)+chr(10),encoding='utf-8')\" && python3 -B scripts/validate_atonement_corpus_integrity.py; git worktree remove --force /tmp/wt30b",
+     "probeMeasuredAt": "2026-10-24T12:44:43Z"
     }
    }
   },
@@ -4716,13 +4719,13 @@
     "measuredAt": "2026-10-24T11:39:29Z",
     "how": "копируется из строки ошибки гейта, как и авторитетное поле scopeOfMeasurementRules"
    },
-   "reconciliationDocument": 1878,
+   "reconciliationDocument": 1887,
    "massRegistryLines": 936
   }
  },
  "reconciliationDocument20261022": {
   "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-  "lines": 1878,
+  "lines": 1887,
   "sectionsH2": 16,
   "sectionsH3": 37,
   "history": [
@@ -4732,8 +4735,8 @@
     "sectionsH2": 16,
     "sectionsH3": 36,
     "note": "круг 29: §15z о непрерывных диапазонах 227–231 / 231–236, о систематической долгое s-ошибке и о дыре в правиле 25 (зеркало без gitFile не проверяется)",
-    "linesAfter": 1878,
-    "measuredAt": "2026-10-24T12:42:41Z",
+    "linesAfter": 1887,
+    "measuredAt": "2026-10-24T12:44:59Z",
     "measuredBy": "python3 -c \"import pathlib,re; p=pathlib.Path('ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md'); s=p.read_text(encoding='utf-8'); print(len(s.rstrip(chr(10)).split(chr(10))), len(re.findall(r'(?m)^## ',s)), len(re.findall(r'(?m)^### ',s)), len(p.read_bytes()))\" — тот же обход, что и в поле reconciliationDocument20261022.method; история хранит только пересъёмки 16-го и 17-го чисел, строки «до» остаются в повествовательных разделах реестра (§26 и §27) §26/§27 и круга 29"
    },
    {
@@ -4848,7 +4851,7 @@
     "note": "числа до вставки §15i (одиннадцатый круг)"
    }
   ],
-  "measuredAt": "2026-10-24T12:42:41Z",
+  "measuredAt": "2026-10-24T12:44:59Z",
   "method": "обход файла: строки — len(text.rstrip('\\n').split('\\n')), H2 и H3 — счётом строк, начинающихся с '## ' и '### '; переснят кругом 26 после §15w тем же определением, которым его мерит проверка",
   "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
   "measuredBy": "wc -l и grep -c по самому файлу, а не по памяти прошлого съёма",
