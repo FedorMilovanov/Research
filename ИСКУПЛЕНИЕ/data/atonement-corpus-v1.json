@@ -2570,7 +2570,7 @@
     "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
    ],
    "stampedFieldsPerRegistry": {
-    "корпус": 145,
+    "корпус": 146,
     "fathers": 0,
     "nt": 0,
     "ot": 0,
@@ -4691,15 +4691,16 @@
    "method": "python3 -B /home/user/cap26/writeback26a.py и writeback26b.py (обход реестра, индекса, зеркал и сводки README тем же кодом, которым их мерит гейт), батарея /home/user/cap26/mutations26.py, затем контрольный прогон гейта и финальная сверка чисел формы 17_",
    "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
    "stampedFieldsPerRegistry": {
-    "корпус": 145,
+    "корпус": 146,
     "measuredAt": "2026-10-24T11:39:29Z",
     "how": "копируется из строки ошибки гейта, как и авторитетное поле scopeOfMeasurementRules"
-   }
+   },
+   "reconciliationDocument": 1827
   }
  },
  "reconciliationDocument20261022": {
   "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-  "lines": 1826,
+  "lines": 1827,
   "sectionsH2": 16,
   "sectionsH3": 36,
   "history": [
@@ -4708,7 +4709,10 @@
     "lines": 1826,
     "sectionsH2": 16,
     "sectionsH3": 36,
-    "note": "круг 29: §15z о непрерывных диапазонах 227–231 / 231–236, о систематической долгое s-ошибке и о дыре в правиле 25 (зеркало без gitFile не проверяется)"
+    "note": "круг 29: §15z о непрерывных диапазонах 227–231 / 231–236, о систематической долгое s-ошибке и о дыре в правиле 25 (зеркало без gitFile не проверяется)",
+    "linesAfter": 1827,
+    "measuredAt": "2026-10-24T12:26:36Z",
+    "measuredBy": "python3 -c \"import pathlib,re; p=pathlib.Path('ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md'); s=p.read_text(encoding='utf-8'); print(len(s.rstrip(chr(10)).split(chr(10))), len(re.findall(r'(?m)^## ',s)), len(re.findall(r'(?m)^### ',s)), len(p.read_bytes()))\" — тот же обход, что и в поле reconciliationDocument20261022.method; история хранит только пересъёмки 16-го и 17-го чисел, строки «до» остаются вNarrative реестра §26/§27 и круга 29"
    },
    {
     "asOf": "2026-10-24T12:11:38Z",
@@ -4822,7 +4826,7 @@
     "note": "числа до вставки §15i (одиннадцатый круг)"
    }
   ],
-  "measuredAt": "2026-10-24T12:19:34Z",
+  "measuredAt": "2026-10-24T12:26:36Z",
   "method": "обход файла: строки — len(text.rstrip('\\n').split('\\n')), H2 и H3 — счётом строк, начинающихся с '## ' и '### '; переснят кругом 26 после §15w тем же определением, которым его мерит проверка",
   "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
   "measuredBy": "wc -l и grep -c по самому файлу, а не по памяти прошлого съёма",
@@ -5015,7 +5019,8 @@
   "fileBytesAsOfRound29": 243996,
   "fileMd5AsOfRound29": "2f5822a2e49ddbdb1ed6609ef3ce4a02",
   "fileSha256AsOfRound29": "16767c88ad0f98f35daea2929a4f5f7e140a55c7bd7770b9706271867d0c1a17",
-  "linesAsOfRound29": 880
+  "linesAsOfRound29": 880,
+  "queueClosure20261024": "номер очереди ?p=12583 (Manton, «on Moral and Natural Ability: Informal Reference», среда, 22 мая 2013, 8:50 am) закрыт в круге 29 вторым касанием: носитель дочитан до последнего чанка (2/2; во втором — строка боковой панели «Recent comments», цитируемого текста нет), молчание по вопросу о протяжённости установлено по правилу, а не по невнимательности. Снято дословно: «Our non posse is non velle. Our inability lies in our unwillingness», «The impotence is rather moral than natural», издание — Sermons Upon 1 Peter 1:23 в The Complete Works of Thomas Manton (London: James Nisbet & Co., 1873), 21:332, кредит на находку — блог Tony (за пределы домены дорожки не идём). Строки массы не заводится: страница о воле, а не об удовлетворении; ценность для дорожки одна — словарь moral/natural жил в издании Нисбета задолго до Спинджа, что бьёт по тезису «книга выдумала терминологию» и ничего не даёт Нико. Очередь не меняется: адрес был в ней и остаётся полезным как материал для различения терминов; 109 адресов, 1:1 с счётчиком"
  },
  "grepBilingualAudit20261023": {
   "scope": [
