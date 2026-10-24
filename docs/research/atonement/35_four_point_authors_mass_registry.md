@@ -70,7 +70,7 @@
 | FP-30 | М. Хемниц, *Examen Concilii Tridentini* (1565–1573), tractatio de iustificatione | удовлетворение «за всех», применение — верой | `C` | изд. Decker (Berlin 1867?; *Opera theologica* ed. Rudelbach?) — уточнить; очередь Q-30 |
 | FP-31 | И. Герхард, *Loci Theologici* (1639–1643) | Бог желает спасения всех **и даёт всем возможность** | `C` | указано у Шаффа, *Creeds* I §45 (сн. 655: «John Gerhard… *Loci Theologici*»); нужно: изд. (Berolini 1879–1883, ed. H. W. Harms?) —Loc. de prædestinatione; очередь Q-31 |
 | FP-32 | Гейдельбергский катехизис (1563), в.о. 37–39 | вопрос об объёме **не ставится**: «за всех» в ответах, но без трилеммы | `A2` | текст читается; см. также `ИСКУПЛЕНИЕ/13_DORT_II_CALVIN_OWEN_EXTENT.md` — «молчание исповеданий» как класс улик |
-| FP-33 | Кент? — Символы: *Second Helvetic Confession* (1566), гл. ?; *Gallican Confession* (1559) art. ? | «Xристос… умер за наши грехи» без ограничения; вопрос объёма не артикулирован | `C` | Шафф *Creeds* I (тексты есть) — нужно: конкретные артикулы; очередь Q-33 |
+| FP-33 | Кент? — Символы: *Second Helvetic Confession* (1566), гл. ?; *Gallican Confession* (1559) art. ? | «Христос… умер за наши грехи» без ограничения; вопрос объёма не артикулирован | `C` | Шафф *Creeds* I (тексты есть) — нужно: конкретные артикулы; очередь Q-33 |
 
 ## 5. Ремонстранты и арминиане: не «четыре пункта», но общий корень лексики
 
@@ -225,7 +225,7 @@
 
 | id | приписываемый носитель | на каком основании приписан | состояние проверки | класс |
 |---|---|---|---|---|
-| FP-136 | Джон Буньян, *Reprobation Asserted* (1674) и *The Doctrine of the Law and Grace Unfolded* (1659) — приписывание ему «всеобщего искупления» | **картина не та, что в README**: в спорном трактате есть прямое «за всех» — «the death of Christ did extend itself unto them [the reprobate]… the offer of the Gospel cannot… be offered any further then the death of Jesus Christ doth go» (с. 130 сн. 24), но авторство трактата оспаривается (John Brown считал его псевдоэпиграфом), а в несомненных текстах Буньян держит «died for all his Elect» | `C` | первичное исследование: *The Baptist Quarterly* 21:3 (biblicalstudies.org.uk/pdf/bq/21-3_126.pdf), с. 126–130, сн. 21–27; издания трактата — IA (24 с.) / Chapel Library (30 с.), и Offor I (Glasgow 1854) по `22_` №27–28. **Отдельный дефект, который надо закрыть**: README лана (п. 15) обещает опровержение «грубейшей ошибки о всеобщем искуплении у Буньяна» в `15_patristic_and_reformation_misattributions.md`, а имени Буньяна в этом файле нет (проверено grep'ом 2026-10-23) |
+| FP-136 | Джон Буньян, *Reprobation Asserted* (1674) и *The Doctrine of the Law and Grace Unfolded* (1659) — приписывание ему «всеобщего искупления» | **картина не та, что в приписывании Прокопенко**: в спорном трактате есть прямое «за всех» — «the death of Christ did extend itself unto them [the reprobate]… the offer of the Gospel cannot… be offered any further then the death of Jesus Christ doth go» (с. 130 сн. 24), но авторство трактата оспаривается (John Brown считал его псевдоэпиграфом), а в несомненных текстах Буньян держит «died for all his Elect» | `C` | первичное исследование: *The Baptist Quarterly* 21:3 (biblicalstudies.org.uk/pdf/bq/21-3_126.pdf), с. 126–130, сн. 21–27; издания трактата — IA (24 с.) / Chapel Library (30 с.), и Offor I (Glasgow 1854) по `22_` №27–28. **Пересъём навигационного «дефекта» (круг 18): он был ложным.** Круг 16 записал, что разбора Буньяна в `15_patristic_and_reformation_misattributions.md` нет: греп по латинскому имени «bunyan» → 0 вхождений по `15_patristic_and_reformation_misattributions.md`, и этого «0» хватило, чтобы объявить отсутствие. По кириллическому имени тот же файл даёт «Буньян» → 17 вхождений по `15_patristic_and_reformation_misattributions.md`, и §6 «Грубейшая историческая ошибка: Джон Буньян…» (строки 107–143) там есть; «Буньян» → 0 вхождений по `ИСКУПЛЕНИЕ/15_CALVIN_III24_AND_DORT_II_LOCATORS.md` — туда и попал прежний обход. Настоящий пробел — печати: «Banner» → 0 вхождений по `15_patristic_and_reformation_misattributions.md`; локаторы внесены в §20.2 (FP-190: *The Works of John Bunyan*, Banner of Truth, 1991, т. 1, сс. 334, 408–409, 416, 432, 526, 561–562 — читаны в транскрипте с напечатанными страницами), и для таких строк написано правило 24 гейта |
 | FP-137 | Джонатан Эдвардс, Эндрю Фуллер, С. Чарнок, Дж. Хау, Г. Суиннок, И. Уоттс | тот же ролл (FP-97) | для Фуллера ланом проверено обратное: частность в намерении (`01_` §3.1.2, раунд 8; `34_` S57 p. 710). Остальные — **не сверены** | `B2` (Чарнок/Хау/Суиннок/Уоттс — очередь Q-137) |
 | FP-138 | Кальвин | ролл + `15_`/`13_` | лан показывает: у Кальвина «за всех» в *другой* связке; «четырёхпунктность» Кальвина — позднейшая конструкция (`01_` §3.1.2 раунд 8: Richards 1846 = источник пастиша) | `A1` |
 | FP-139 | М. Лютер, У. Цвингли, З. Урсин | ролл (FP-97) | конфессиональный слой (FP-27: Formula of Concord) не равен «гипотетическому декрету»; нужно разбирать по локаторам | `B2` |
@@ -275,7 +275,7 @@
 | id | носитель | что утверждает ровно | класс | локатор / что нужно добыть |
 |---|---|---|---|---|
 | FP-152 | Реформатская церковь Венгрии, *Confessio Catholica* (Debrecen–Eger, 1562; авторы Péter Melius Juhász, 1536–1572, и Gergely Szegedi, 1511–1569) | «общей и внешней спасительной волей» Бог хочет, чтобы жили все — «и хорошие, и худые»; не исполняется она по несовершенству людей («Я хотел, а вы не захотели», Мф 23:37); рядом — условный декрет | `C` | исповедание 1562 г. с гипотетической волей: нужно снять по печатному переводу (очередь Q-152) |
-| FP-153 | «Collegiate Suffrage» англиканских богословов о пяти статьях, спорных на Дорте (1618–1619) | III позиция: «Бог… послал Сына, Который дал Себя в умилостивление за грехи всего мира»; «цена уплачена за всех… но не полезна всем, ибо не у всех есть дар исполнения условия заветного благодатного союза»; V позиция — «достаточная мера благодати, обличающая всех некающихся» | `C` | постранично установить печатное издание «Calculus/Sententia» английской делегации (лат.) и сверить с англ. *Acts of the Synod of Dort* 1619 и с *Collegii Suffragium* 1619; транскрипт даёт пагинацию [pp. 44–50] (очередь Q-153) |
+| FP-153 | «The Collegiat Suffrage of the Divines of Great Britaine, Concerning the Five Articles Controverted in the Low Countries» (Дж. Карлтон, Дж. Давенант, С. Уорд, Т. Год, У. Балканкуолл) | вторая статья: Христос «дал Себя как выкуп за грехи всего мира», при этом «цена уплачена за всех, но полезна/применима не всем»; quinta positio — «в Церкви, где по обещанию Евангелия спасение предложено всем, устроение благодати таково, что достаточно обличает всех некающихся» | `A2` | издания установлены: лат. *Suffragium Collegiale…* (London: R. Young, 1626); англ. пер. (London: Robert Milbourne, 1629); критическое изд. A. Milton (ed.), *The British Delegation and the Synod of Dort (1618–1619)*, Church of England Record Society 13 (Woodbridge: Boydell, 2005), сс. 226–293 (внутренние ссылки вторичных работ: 253, 258, 262–263); транскрипт читан с пагинацией [сс. 44–50], печатный лист 1629 г. не сверен |
 
 ### 19.2 Англия и Шотландия XVII в.: новые носители и один сильный анти-ряд
 
@@ -284,34 +284,41 @@
 | FP-154 | Томас Калверт (1606–1679), *Mel Cœli Evangelii: Or, Isaiah's Prophecie of Christ's Passion For Man's Redemption* (London: Tho. Pierrepont, «at the Sun in Pauls Church-yard», 1658), сс. 169–171 | отрицает «aptitudinal, potential, objective, abstracted sufficiency» как ответ: «смотрим субъективно, действительно и формально — с волей и намерением Отца и Сына»; «Христос умер за тех, кто погибнет» — «трудно усвояемо рассудком из Писания»; пометка «Maxime, hypothetica minime est positiva»; внутри ссылки на Voetius, *Disputationes Theologicae*, disp. 2, cap. *De merito Christi* | `B1` | анти-ряд (см. §13): страница указана по индексной перепечатке с помеченной правкой орфографии; том 1658 г. не снят |
 | FP-155 | Уильям Лифорд (1598–1653) о достаточности смерти Христа | «индексное заглавие» приписывает ему защиту достаточности смерти «для всех» в рамках ортодоксии; собственного чтения текста у меня нет | `C` | найти работу и сверить по изданию (очередь Q-155) |
 | FP-156 | Роберт Эббот (1560–1617) о всеобщности и достаточности искупления Христа | Эббот — автор скандального отказа подписать три статьи о предопределении (1595); индекс приписывает ему «universal and sufficient redemption» | `C` | связать с делом 1595 г. по печатным *Acta* Кембриджа и снять текст (очередь Q-156) |
-| FP-157 | Эдвард Лиг (1602–1671), «Christ died for the reprobate five ways» | пять способов, которыми Христос «умер за нечестивых» — формула, из-за которой его обвиняли в отходе от Дорта | `C` | установить сочинение и издание (в индексе названия нет) (очередь Q-157) |
-| FP-158 | Ричард Мейден (ок. 1591–1677) о смерти Христа и воле Бога о спасении всех людей | шотландский професор (Абердин/Мерисколл? — не сверено), защитник «универсальной воли» в преданиях шотландской пресвитерии | `C` | у Мейдена нет ни одного снятого тома: установить датировку и места (очередь Q-158) |
-| FP-159 | Стивен Чарнок (1628–1680) о смерти Христа | заголовок индексной записи фиксирует у Чарнока обсуждение протяжённости; сам Чарнок обычно числится пятипунктником — строка нужна ровно как пограничный случай | `C` | проверить, есть ли у Чарнока «за всех» в *Discourses* и в проповедях (очередь Q-159) |
-| FP-160 | Джон Хамфрей (1621–1719): о смерти Христа; об общей и особой благодати | два трактата, по индексу — защитник всеобщности предложения при частности применения | `C` | два текста, ни одного не снято (очередь Q-160) |
-| FP-161 | Джозеф Трумэн (1631–1671) о различении моральной и естественной неспособности, со ссылкой на Твисса | лексическое различение, на котором потом стоит хопкинсианская пара (см. `34_`): у Трумэна оно подано как ответ на «невозможность» в гипотетическом универсализме | `C` | снять *The Sovereignty of God*? — нет: установить сочинение (очередь Q-161) |
-| FP-162 | Джеймс Фрейзер из Бреы (1639–1698): «двойная взыскаемость» как софизм; 2 Пет 2:1 | шотландский пастор, у которого довод «нельзя взыскать дважды» разбирается прямо, и не в пользу пятипунктников | `C` | тексты Фрейзера в корпусе не сняты (очередь Q-162) |
+| FP-157 | Эдвард Лиг (1602–1671), *A Systeme or Body of Divinity*, «Christ died for the reprobate in five ways» | пять способов, которыми Христос «умер за нечестивых»: прокламация (Лк 24:47; Деян 13:38; 10:43), обязательство верить (Мк 1:15) — «you are bound to believe that your sins may be forgiven thee in Christ», запечатление («God has sealed this serious offer in your own Conscience»), общая заслуга (Ин 3:16) и особое намерение «for all that thou knowest» (Деян 8:22); «универсальный» термин 1 Ин 2:2 при этом объяснён как различение народов, а не как спасение всех людей | `B1` | снято 2026-10-23T18:22Z с `calvinandcalvinism.com/?p=13913` (файл-снимок — в Drive `10.9`, см. `driveMirrors.captures20261023b`); в ссылке индексатора — *A Systeme or Body of Divinity* (London: A.M. for William Lee at the Signe of the Turks-head in Fleet-street over against Fetter-lane), 1662, с. 602. **Расхождение, видимое без печати:** тот же отпечаток в EEBO привязан к изданию 1654 (Wing L1008 = ESTC R25452, [28], 873, [19] p., imprimatur Э. Кэламэ 15.06.1653), а 1662 — четвёртое издание по DNB (третье — 1650); лист 602 по титульному развёрсту не сверен, поэтому класс `B1`, а не `A1`. Индексатор отдельно оговаривает, что Лиг не был ни «classic-moderate», ни гипотетическим универсалистом, а пересказывает Феннера (FP-204), — снимать эту строку как английское свидетельство четырёхчленности нельзя |
+| FP-204 | Уильям Феннер (1600–1640), о достаточности умилостивления: «Christ died for the reprobate in five ways» — первоисточник лиговой формулы | «Mentiris Cain… Christ died for thy sins, and that in five ways»: те же пять пунктов, что у Лига, но с исходной оговоркой — обязательство верить распространяется на всех без исключения («even reprobate and all, they are bound as well as the Apostles themselves»), общая интенция есть «достаточная цена… even for the reprobate men», но «although I do not say generally, in respect of absolute purpose», особая интенция — «for all that you know»; к этому приложены «Omnia Omnium» Гилария, «сто миров» Экция и ссылка на Фому (I Sent. d.19, q.5, a.1, qu.2, co.) | `B1` | снято 2026-10-23 с `calvinandcalvinism.com/?p=6596` (фрагмент 1 из 3, два других не читаны); ссылка индексатора ведёт на `books.google.com/books?id=RCwJAAAAIAAJ&pg=PA319`, то есть на с. 319 сборника Феннера, а какое именно издание за этим стоит — из перечня его работ (Practicall Divinitie 1650, Hidden Manna 1652, Remains 1657 = EEBO A41123) без титульного листа не выводится. Индексатор называет Феннера «moderate-classic», а Лига — нет, и для §14 это два разных случая: у Феннера формула соединена с различением достаточности и условного приглашения, у Лига она цитируется без исходной оговорки |
+| FP-158 | Ричард Мейден (ок. 1591–1677), «The Preface to the Reader» к трактату Уильяма Эмса о подчинённости воли человека воле Божией | предисловие — собственный голос Мейдена, и в нём он (а) отказывается вступать в спор о декрете, (б) утверждает, что обе стороны свободно признают: Бог серьёзно желает спасения всем, кому Евангелие предлагается в служении Слова, и (в) все люди способны к спасению на условиях завета благодати — «if they repent of their sins, and believe in Christ»; различение Дорта об impetration/application он передаёт так: синод отвергает его только в том смысле, где из него выводят равное и безразличное желание Бога | `B1` | снято 2026-10-23 с `calvinandcalvinism.com/?p=14276` (фрагмент 1 из 4); ссылка индексатора — `books.google.com/books?id=FKWOjwhjXsEC&pg=PA428`, то есть с. 428, а издание по титулу не установлено. Заглавие трактата восстановлено по торговой росписи Т. Чайлди (*A catalogue of the most vendible books in England*, London, 1676), где в разделе Эмса стоит «A Treatise, shewing the subordination of the will of man unto the will of God, 8°». **Erratum этого круга:** прежняя строка называла Мейдена «шотландским професором (Абердин/Мерисколл? — не сверено)» — это вывод из сходства фамилий, а не из файла; Мейден — английский пресвитерианский богослов, и шотландская линия (Кэмпбелл, Браун) идёт отдельным прогоном без его имени |
+| FP-159 | Стивен Чарнок (1628–1680), семь мест *Works* (тт. 3–5) о смерти Христа | «he hath given him… the world of his elect to redeem» (4:306) лежит рядом с «no creature could pay a sufficient ransom for the sin of man» (4:145), «more value to outweigh the sins of the whole world» (4:251–252), «sufficient bar[ri]ng the sins of the whole world… must have an efficacy for those few that do comply with the terms» (5:96), «the blood shed by the order of God, is able to expiate a world of sins» и «it is a sufficient sacrifice for all, if all would accept of it» (3:425) — пограничный случай: достаточность бесконечна, действенность ограничена «теми, кто принимает условие», а условием является вера, а не декрет; разбор 1 Ин 2:2 у него трёхчастный (верующие всех веков / иудеи и язычники / «whole world in point of the sufficiency of the sacrifice and infinite value of his blood») | `B1` | снято 2026-10-23 с `calvinandcalvinism.com/?p=17` (фрагмент 1 из 16, остальные 15 не читаны — это записано в §21 как остаток, а не как адрес очереди, потому что класс строки уже не `C`); том:страница даны по изданию, которым пользовался индексатор, сверки с титулом не делалось — отсюда `B1`, а не `A1`. Лексика этого места — ближайший предшественник хопкинсианского «пункта 1» (ср. §16 п. 11 о четырёх логических формах) |
+| FP-160 | Джон Хамфрей (1621–1719): о смерти Христа; об общей и особой благодати | два трактата, по индексу — защитник всеобщности предложения при частности применения; в длинном блоке 1673 г. к этому добавляются различение «титула» и «владения», довод из цепи Рим 8:30 и школьный слой (Руис, Иоанн а Санкто Томас), выписанный по-латыни с локаторами | `A2` | снята страница `?p=4407` в доступной целиком (чанки 0–7 из 9; блок 1710 г. и блок 1673 г. разобраны, второй доведён кругом 26 до собственной цитатной строки и пометки «[To be continued]»): трактат назван в самой странице под вторым блоком — John Humfrey, *The Middle-Way in One Paper of Election & Redemption, With Indifferency between Arminian & Calvinist* (London: Printed for T. Parkhurst, at the Three Bibles in Cheap-side, 1673), 24–40; тот же отпечаток — в каталоге Folger (№ 488217, собрание *Mediocria*, 1674), где трактат 1673 г. перечислен в составе собрания, — значит, независимое подтверждение есть и класс `A2` по правилу круга 23, а не `B1`. По существу из *Middle-Way*: «I am for a middle Way, as Mr. Baxter was, and Dr. Davenant»; «both universal and special grace together; and the one is Applicatory, not Destructive to the other»; «does make Christ's Redemption a double thing … Salvation for Judas, if he repent … Repentance for Peter»; «there is Gratia universalis simpliciter, which if we maintain not, we must leave our Preaching, and the Gospel»; «The mission or giving of the Spirit … is the fruit or offspring of our Election»; «The Death and Redemption of Christ is for All, for every man; for our sins, for the world’s. Distinctions to answer this, are but Evasions»; «there is a double work … The one is to procure Deliverance if we are willing; that is, our Redemption in regard of Title: And the other is, To make us Willing, which is, to put us also in Possession», и из этого — «The one … is properly the work of our Redemption, and Universal: The other is peculiar to the Elect … that is, our Vocation, Effectual Calling, or Conversion». Против ограничительного чтения Хамфрей поворачивает и цепь Рим 8:30: «If Redemption were not of a larger extent than Election, Vocation, Justification, and Glory, then would the Apostle have said; Whom he did predestinate, he redeemed … But when we find no such Link in this Chain, it is a convincing Argument … for the Universality of Redemption». Формула декрета у него — та же, что у сомюрцев, только на английском: «when Christ’s Death is made universal, the Fathers Election must be left still, *Per modum decreti efficaciter operantis*, By way of a decree effectually operating, free and absolute, in regard to the condition of it’s Application». Школьный слой выписан с локаторами — и в строке они держатся **как напечатаны**, потому что вторая страница указателя (`?p=4031`) этот латинский слой просто опускает и засвидетельствовать его не может: «Ruiz *De prædestinationis exordio. Trac.* 3. Disp. 17», «Ruiz *De præcip. effec. benevol. Dei erga reprob.* Sec. 2» и «Ib. Sec. 3», «*De prin. imped. justif_. Sec. 5*», «*Jb.* Dist. 16 Sec. 2» и «Jb. Dist_. 20» (Ioannes a S. Thoma), плюс Фомин «potest tamen **serpsum** impedire ne eam recipiat» (так с долгим s s, не «ipsum»), «*ut in poestate (?) cujusque sit*» со знаком вопроса у индексатора, английское «putting all men into an *æqui librium*, or equal Ballance» (раздельно) и Августин напечатанными сокращениями «Enchir: ad Laur_. c. 31» и «De correptione & Gratia_. c.11.». И главное предостережение этой строки: формула «makes the difference (in the upshot) between him that is saved, and him that is damned», снятая с `?p=4031`, в полном контексте стоит не как тезис Хамфрея, а как то, во что, по его словам, выливается позиция школ («mans free will by the cooperation with this grace, or refusal … consequently makes the difference»), — то есть локатор правильный, а голос чужой (см. §26). По той же странице, под первым блоком, — ссылка на *Free Thoughts* (1710), 8–15, и формулы, которые круг 24 по ошибке записал сюда; они перенесены в `FP-208` (см. §25). Из ловушек этой страницы в строке держатся три: гиперссылка в заголовке ведёт на *Dictionary of National Biography* (Google Books, том 1891 г.), а не на источник цитаты; написание имени книготорговца у индексатора плавает («Parkhust» на одной странице, «Parkhurst» на другой), и сверка по одному написанию даёт ложное «нет совпадений»; поиск по одной фамилии выводит на Пелхэма Хамфрея (1647–1674), придворного композитора-однофамильца |
+| FP-208 | Джон Хамфрей (1621–1719), *Free Thoughts upon these heads* (London: T. Parkhurst …; J. Robinson …; sold by J. Morphew, 1710) | то же «среднее» по два фронта, но снятое с другого блока той же страницы и с другим локатором: искупление «одно, но в двойном отношении», и из этого — «все искуплены, и также только избранные»; прощение условное, по аналогии с актом парламента | `A2` | снято с той же страницы `?p=4407`, блок 1, цитата под которым называет *Free Thoughts* (1710), 8–15: «Redemption is but one, though that one may have a double Respect»; «so that in these diverse Respects, all are redeemed, and also the Elect only»; «it is an Inconsistency I cannot fully, but half approve»; «Election takes care that Redemption be not in vain»; «a Universal Conditional Remission … Pardon by an Act of Parliament … The Gospel-Covenant is such an Act of Pardon for all the World; and if you object, then all the World must be saved, I answer, The Act must be read … we find Conditions in it»; «you must not lay it on him, as if he *willed it not*». Отпечаток 1710 г. подтверждён независимо от блога: авторная страница Джона Хамфрея в PRDL (Perry Miller Center) перечисляет *Free thoughts upon these heads* с выходными данными Parkhurst–Robinson–Morphew, 1710, и со ссылкой на скан Internet Archive ⇒ `A2`; `A1` не ставится, потому что листа не читали, а в EEBO-TCP у Хамфрея висит соседний трактат 1679 г., а не этот. Строка заведена кругом 25 для того, чтобы снять эти формулы со строки `FP-160`, где им было не место (см. §25). Кругом 26 к ней перенесено и то, что в блоке 1710 г. примыкает к той же аналогии: «Election takes care that Redemption be not in vain» стоит под локатором 1710 г. и здесь не повторяется |
+| FP-161 | Джозеф Трумэн (1631–1671), *A Discourse of Natural and Moral Impotency* (London: Robert Clavel, 1675), с. 3, со ссылкой на Твисса | различение естественной и нравственной немощи он называет настолько важным, что без него «учёнейшие отцы и врачи говорят как дети»; саму пару он приписывает «французским протестантским богословам» — то есть сомюрскому ходу, — и указывает, что даже противники в этом пункте прячутся за неё: у Твисса *Vindic. grat.* l. II, *Errat.* 9, *Sect.* 6, p. 211 | `A2` | выходные данные названы индексатором (`calvinandcalvinism.com/?p=14798`, доступ 2026-10-23) и подтверждены двумя независимыми каталожными снятиями одного и того же издания (EEBO A63764: «London: Printed for Robert Clavel, and are to be sold at the sign of the Peacock in St. Pauls Church-yard, 1675») и описанием библиотечного экземпляра; том Трумэна имеет и второе издание с добавками самого автора, поэтому пагинация между оттисками расходится. Отдельная деталь, важная для всякого локатора XVII в.: сам Трумэн свою страницу Твисса пишет как «pag. (_mihi_) 211» — «по моему экземпляру», то есть сверка по листу уже тогда считалась привязанной к конкретному оттиску. Страница 3 самим листом не читана ⇒ не `A1` |
+| FP-162 | Джеймс Фрейзер из Бреы (1639–1698), *A Treatise on Justifying Faith … Together with an Appendix Concerning the Extent of Christ's Death* (Edinburgh: Printed and sold by William Gray at Magdalen's Chappel within the Cowgate Head, 1749), 231–236; 2 Пет 2:1 и «двойная взыскаемость» — по другим страницам указателя | шотландский пастор, у которого довод «нельзя взыскать дважды» разбирается прямо, и не в пользу пятипунктников; на снятой странице — возражение VIII (Ис 53:11, Рим 5:8–10, Рим 8:32 и 34) и ответы (1)–(5): Ис 53:11 не иллюативен — «nor is it so rendered by the best Hebraists, such as Buxtorff, Bythner or Robison»; аргумент пятипунктников «taken from an inadequate cause and effect»; «the apostle does not argue from Christ's death to our salvation simply, but from Christ's death as connected with such a state, and various condition of his people, before and after conversion»; «gave him for us all good and bad… to all elect and reprobate»; «you must not fay [так в транскрипции: долгая s, ſay] absolutely and merely, because Christ died for a man therefore shall that man be saved»; ответ (5) — «every member in the visible church may from this ground draw their expectations of happiness», «these declarations … are judicial pleadings», аналогия с королевским помилованием («the King's pardon is ground for a malefactor both to expect and plead») | `A1` | снято с `?p=12519`, фрагменты 1–2 из 3 (третий — сайдбар), публикация 30 апреля 2013, 6:50 am, рубрика «Romans 8:32». Оговорка страницы: «Some spelling modernized; some reformatting; some sentence reconstruction; italics original; bracketed inserts mine; and underlining mine» — значит страница годится как свидетельство аргумента и издания, но не написаний и не разметки. Выходные совпали с независимым снятием: запись Google Books (оцифровка с экземпляра Британской библиотеки от 12.01.2015) называет издателя «William Gray», 1749, 351 с. `A1` не ставится: автоматическое оглавление той же оцифровки ставит «Objections against a sufficient universal» на 216, «Some Intricacies and Difficulties relating…» на 253, а «An Appendix concerning the Object of Christ's…» на 159 — то есть снятые 231–236 лежат в теле трактата, а не в приложении, которым озаглавлен кусок; разрешается только сверкой листов. Вторая страница указателя о Фрейзере — `?p=12382` «on the Double Payment Fallacy» (пятница, 5 апреля 2013, 9:01 am, рубрика «Double Jeopardy/Double Payment Fallacy») — кончается тем же изданием и страницами **227–231**, то есть снятые куски **непрерывны**: 227–231 и 231–236 идут встык через границу 231; в тексте — возражение VII («he that takes double satisfaction for one and the self same debt he is unjust») и четыре случая, в которых двойное удовлетворение не несправедливо, причём третий случай Фрейзер опирается на печатную ссылку самого семнадцатого века: «as Mr. Shepherd judiciously affirms in his *Select Cases*, pag, 29» — это кандидат в отдельную строку массы, и он здесь назван, а не заведён вслепую; оговорка индексатора на этой странице мягче: «Some spelling modernized, some reformatting, italics original; and underlining mine», а редактор в комментариях сам оценивает excerpt: «a lot of his answers are not bullet-proof and would be easily dismissed by strict limited satisfaction advocates… I will be blogging some other sections in the days to come» — то есть транскрипция объявлена выборочной и незавершённой самим издателем Добыть: сопоставить с `18_` (двойная оплата) и с ответом Оуэна 1650 г.; сверить листы 194–195 и 227–236 с экземпляром (единственное, что даёт `A1`); версия печати *Michod-Kedoshim* этой страницей не подтверждена. Три адреса указателя о Фрейзере прочитаны: `?p=12519` (круг 23 и 28), `?p=12382` (круг 29) и `?p=12406` (круг 30) — в колонке «добыть» их больше нет, потому что прочитанное и искомое жили в двух ролях сразу, и это был дефект прошлого круга Третья страница указателя (`?p=12406`, понедельник, 15 апреля 2013, 7:14 am, рубрика «2 Peter 2:1 (and Jude 4)», 2 чанка, второй — боковая панель) даёт не разбор довода, а положительное утверждение: «the Spirit of God tells us plainly, to put the Matter beyond Debate, that Christ bought Reprobates», «redemption has a larger sphere then election has», «there may be a general common redemption of all mankind, I dare not gainstand such light», и — «if words can express and hold out this truth to us, I think we have it»; оговорка индексатора там же, что на `?p=12382`: «Some spelling modernized; some reformatting, italics original; and underlining mine»; сноска индексатора передаёт латинскую разметку собственным калечащим английским — «According to you it true, according to me it is false» (пропущено «is»), то есть дефект перевода принадлежит не долгим s, а набору страницы. Обрывается извлечение на «what Expression will not that Distinction in reality and in appearance elide» — фраза не закончена самой страницей, и дописывать её по смыслу нельзя.  ПРОВЕРЕНО ПО ПЕЧАТИ (круг 31): независимая оцифровка того же издания — экземпляр Принстона, item `treatiseonjustif00fras`, 364 листа, «Edinburgh : Printed by William Gray», полнотекстовый поиск по OCR слоя листа даёт «Oeject. VII. From the Unjuftice that feems to be in this univerfal Death of Chrifl for all» и «he that takes double Satisfaction for one and the felf fame Debt he is unjuft» на листе 247 = печатная 227 (смещение листов +20, проверено дважды: строка оглавления «An Appendix concerning the Object of Chrift's Death, 159» на листе 15, бегулец приложения «Concerning the Object of Christ's Death. SECT. I.» на листе 179 = печатная 159); значит 227–231 индексатора — первый же лист раздела, а 194–195 лежат внутри приложения, и это то самое приложение, которое титул обещает как «concerning the Extent of Christ's Death», а бегулец печатает как «concerning the Object»: расхождение названий подтверждено листом, а не догадкой. Долгая s в OCR принстонского листа («felf fame Debt», «Unjuftice», «Chrifl», «Peatb») совпадает с дефектами транскрипции указателя, что и служит проверкой: индексатор не выдумал ни страниц, ни чтений. Пометка класса: `A1` по OCR-слою оцифровки, изображение листа глазами не смотрено.; печатные pp. 194–195 (внутри приложения, начатого на pp. 159) и pp. 227–236, листы 214–225 и 247–256 оцифровки |
+| FP-209 | Джеодадат Шепард (1601–1664), *Select Cases of Conscience* — по сообщению Фрейзера | утверждение приписывается не мной, а напечатано у Фрейзера и найдено в печати: «hence Mr. Shepherd faith frequently, Chrift bought the whole World to himfelf»; рядом, на печатной 41 (лист 61) того же тома, Шепард стоит в одном ряду с «Rutherfoord» среди «Calvin, Luther, Bradford, Tyndal, Mr. Patrick Hamilton, Mr. Bruce» как носитель той же доктрины благодати | `B1` | Фрейзер, *A Treatise on Justifying Faith* (Edinburgh: William Gray, 1749), печатная 205 = лист 225 оцифровки Princeton; вторичность строки сознательна: это «X пишет, что Y часто говорит», и выше `B1` она не поднимется, пока не найден сам том кейсов. Внутренняя ссылка Фрейзера «Select Cases, pag, 29» в полнотекстовом поиске по этому тому не находится ни в написании Cases, ни в написании Cafes (долгая s) — потому что цитата переходит через границу листов 249/250, а поиск индекса ограничен одной страницей: это не «цитаты нет», это ограничение поиска, и оно названо вместо молчания |
+
 
 ### 19.3 Континент: пиетизм, ортодоксия и то, чего не подтвердил поиск
 
 | id | носитель | что утверждает ровно | класс | локатор / что нужно добыть |
 |---|---|---|---|---|
-| FP-163 | Иоганн Бергий (1587–1658) о воле и желании Бога о спасении всех людей | немецкий пиетизм до Шпенера: «желание спасти всех» у Бехмейрова круга | `C` | лютеранский слой без первоисточника (очередь Q-163) |
-| FP-164 | Иероним Занки: любовь общая и особая; благодать общая и особая; милость общая и особая; условная воля Божия | четыре локуса, в которых различение «общего» и «особого» сформулировано до Амираута | `C` | томов Занки в корпусе нет (очередь Q-164) |
-| FP-165 | Пётр Маастрихт (1630–1706) о Кэмероне и Амирауте как «реформатских и православных» | утверждение вторичного индекса: Маастрихт якобы упоминает их **внутри** реформатской ортодоксии; независимый поиск 2026-10-23 этого не подтвердил | `C` | не подтверждено: снять по изданию или снять строку (очередь Q-165) |
-| FP-166 | Герардус Восс (1862–1949) о детях завета и о разнообразии внутри ранней реформатской традиции | у Восса «diversity» — не либеральная уступка, а часть его учения о завете; именно на него потом опираются и «четырёхпунктники», и их оппоненты | `C` | нет ни одной снятой страницы Восса (очередь Q-166) |
+| FP-163 | Иоганн Бергий (1587–1658) о воле и желании Бога о спасении всех людей | немецкий пиетизм до Шпенера: «желание спасти всех» у Бехмейрова круга | `B1` | *The Pearle of Peace & Concord. Or A Treatise of Pacification Betwixt the dissenting Churches of Christ* (London: Printed by T.C. for John Rothwell, at the Fountain and Bear in Cheap-side; and John Wright, at the Kings Head in the Old Bayly, 1655), 51–55 — вопросы 52–53 катехизического диалога: «no pleasure in the condemnation of any man», **с оговоркой** «that he will also according to his Justice judge those who despite of his invitation will not hear»; четыре способа действия воли (`voluntate approbante / præcipiente et promittente / operante / non tamen necessitante`) при **неделимом** искуплении. Издание и страницы названы индексатором (Х. Э. Скотт; по титульному листу вторая цифра 1655 вычеркнута и исправлена от руки на «54», немецкий оригинал «about 1635» — дата им же не установлена); вторым, независимым от блога, источником не сверено ⇒ `B1`, а не `A2` |
+| FP-164 | Иероним Занки (1516–1590), «Of the Love of God» — главы о любви общей и особой, о благодати, о милости и об условной воле Бога | любовь Божия не равна по адресатам: «he loves not all things with an equal love… the godly then the ungodly»; «God loves all things which he has made besides himself», кроме греха; Ин 3:16 разворачивается у него в два слоя — sustaining/governing and enriching the world, и «gave his only begotten Son, that all which believe in him should not perish» | `C` | текст снят (первый из четырёх фрагментов `?p=4461`; четыре страницы индекса: `?p=4461`, `?p=4475`, `?p=4494`, `?p=4544`), но локатора, годного для класса, это не даёт: индексатор в примечании к своей же странице указывает «pages 370-371, the fifth question», не назвав, к какому изданию эти страницы относятся, а печатная основа под ними — то ли латинская *De Natura Dei* (Geneva, 1577; пять книг, книги II–IV об атрибутах), то ли английский перевод Р. Уинертона *The Whole Body of Christian Religion* (London: John Redmayne, 1659 = EEBO A97309). Строка остаётся `C` ровно для того, чтобы класс не отличался от проверки (очередь Q-164) |
+| FP-165 | Пётр Маастрихт (1630–1706) о Кэмероне и Амирауте как «реформатских и православных» | утверждение вторичного индекса: Маастрихт упоминает их **внутри** реформатской ортодоксии; в круге 22 независимый поиск этого не подтвердил, в круге 24 текст найден и подтверждён | `A2` | утверждение вторичного индекса подтверждено текстом и изданием: Peter van Mastricht, *A Treatise on Regeneration* (New-Haven: Printed and sold by Thomas and Samuel Green, in the Old-Council-Chamber, 1770), 37–38 и 46–47 — сняты оба места, и в них действительно «**Some of the Reformed, v.g. John Cameron**, and many others», и «but as to the baptism of *infants*, here **the orthodox are divided** … thus the **celebrated Amyraldus**. But he inaccurately confounds *regeneration* … with *conversion*». Издание сверено независимо: скан Принстонской духовной семинарии в Internet Archive (`treatiseonregene00mast`), пагинация «viii, 9–94, [2] p.» по OpenLibrary и каталожным записям Bowdoin и Bates со ссылками на Evans, Trumbull и ESTC, переиздание Morgan: Soli Deo Gloria, 2002 (под ред. B. Withrow) ⇒ `A2`, а не `A1`: листа не читали. Оговорки держатся в строке: у Эванса год 1769 против титульного 1770; «внутри ортодоксии» значит «назван среди разделившихся и поправлен», а не «одобрен»; латинский первоисточник для `A1` — *Theologia theoretico-practica* VI.iii.757–774, «De Redimendorum Regeneratione» (локатор дан по D. Stanton, *Mid-America Journal of Theology* 29 (2018), лист не снят) |
+| FP-166 | Герардус Восс (1862–1949) о детях завета и о разнообразии внутри ранней реформатской традиции | у Восса «diversity» — не либеральная уступка, а часть его учения о завете; именно на него потом опираются и «четырёхпунктники», и их оппоненты | `A2` | работа установлена: «The Doctrine of the Covenant in Reformed Theology» (речь 1891 г. в Богословской школе Гран-Рапидса; англ. перепечатка — R. B. Gaffin (ред.), *Redemptive History and Biblical Interpretation*, Phillipsburg: P&R, 1980, 242–267; пагинация названа вторично, по J. Olinger и разбору CBTS). Снят абзац о детях завета с локаторами самого Восса: Беза *Conf. Christ. Fidei* IV.48, Буллингера *Loci Communes* IV.8.7, Полануса *Syntagma* VI.55. Страница **этого** абзаца не заявлена (перепечатки расходятся), листа не читали ⇒ `A2`, а не `A1` |
 
 ### 19.4 XIX–XXI вв.: от шотландских лекций до федерал-визионного спора
 
 | id | носитель | что утверждает ровно | класс | локатор / что нужно добыть |
 |---|---|---|---|---|
-| FP-167 | Арчибальд Александр (1808–1884) против «количественной» эквивалентности в смерти Христа, с разбором Оуэна | качественная vs количественная эквивалентность — та же лексическая вилка, что у Шедда, но у шотландского профессора | `C` | том не снят (очередь Q-167) |
-| FP-168 | А. А. Ходж (1823–1886) о ревизии формулы «sufficient for all, efficient for the elect» | американец сам предлагает правку ломбардской формулы — то есть «классический» пятипунктник XVI–XIX вв. не был монолитом | `C` | нет страницы у Ходжа (очередь Q-168) |
+| FP-167 | Арчибальд Александр (1808–1884) против «количественной» эквивалентности в смерти Христа, с разбором Оуэна | качественная vs количественная эквивалентность — та же лексическая вилка, что у Шедда, но у шотландского профессора | `C` | сняты 2 фрагмента из 5 (гл. XVI «The Atonement. 2. Principal Theories of the Sacrifice of Christ»): две «радикально различные и даже враждебные» теории, `solutio ejusdem` у гиперкальвинистов, «This opinion cannot be ascribed to Calvin, who expresses himself in a very general manner», длинная выписка из Оуэна. Печать в странице не названа; отпечаток «The Atonement. London: T. Nelson and Sons, 1868», который стоит под именем Александра в «Works Cited» того же блога, принадлежит А. А. Ходжу (`FP-168`), поэтому поднимать класс по нему нельзя ⇒ очередь Q-167 |
+| FP-168 | А. А. Ходж (1823–1886), «The Atonement» (London: T. Nelson and Sons, 1868), сс. 328–329 и 333 — ревизия ломбардской формулы «sufficient for all, efficient for the elect» | вопрос не о достаточности: «no man has ever yet perished, or ever will perish, for want of an atonement», «infinite intrinsic value… no need for him to obey or to suffer an iota more… in order to secure, if God so willed, the salvation of every man, woman, and child that ever lived», и так же у Туллиния, Витсиуса и Оуэна; сама школьная формула «sufficienter pro omnibus, efficienter pro electis» названа «inaccurate and inadequate rather than false», причём автор относит её к Кальвину на 1 Ин 2:2 и к ранним реформатам — до «просеивания» темы французскими богословами (Cameron, Amyraldus, Testardus), а итог формулирует как «the actual ends effected are the exact measure of the real ends designed» | `A2` | выходные данные совпали в двух независимых снятиях: ссылка индексатора (`calvinandcalvinism.com/?p=119`, доступ 2026-10-23T18:35Z) и каталожная запись того же издания (402 p., ред. W. H. Goold; известны также издание 1867 г. и перепечатка 1953 г.). Косвенно подтверждена и пагинация: в оглавлении раздела «The Design or Intended Application of the Atonement» глава II начинается с 328, глава III — с 337, то есть названные страницы лежат ровно внутри. Сам абзац со скана не читан, поэтому `A2`, а не `A1`; снимок текста — в Drive `10.9` |
 | FP-169 | Альва Хови (1820–1903) о смерти Христа | баптист из Ньютон-семинарии: различение «достаточности/действенности» в баптистском учении второй половины XIX в. | `C` | не снято (очередь Q-169) |
 | FP-170 | Джон Браун (1784–1858): о «universal satisfaction» и о Вестминстерском исповедании; о Кальвине и др. о протяжённости умилостивления | шотландская оппозиция с собственным каталогом «кто что говорил» — самый полный список противников до XIX в. | `C` | каталог не сверен (очередь Q-170) |
-| FP-171 | Ральф Уордлоу (1779–1853) о протяжённости умилостивления; Б. Х. Кэрролл (1843–1914) о смерти Христа | два баптиста на разных берегах Атлантики: оба — не «четырёхпунктники» в сомюрском смысле, но и не ограничители в шеддовском | `C` | ни один из двух томов не снят (очередь Q-171) |
-| FP-172 | Объединённый «индекс первичных цитат» (calvinandcalvinism.com): 3 страницы из 16 прочитаны 2026-10-23 | измерение остатка: индекс несёт десятки имён (Пэн, Барли, Фирмин, Полхилл, Сеаман, Шарп, Уодделл, Стеббинс, Райс, Пирс, Мускул, Полян, Вермиль, Урсин, Воэций, Валей, Юний, Олевин, Схильдер, Тил,Spanheim, Уотс, Гилли? — перечислены по именам каталога), не сведённых в строки | `B1` | списки-источники как жанр (ср. §15): полезны как очередь, бесполезны как улики |
+| FP-171 | Ральф Уордлоу (1779–1853), «On the Calvinistic Views of the Extent of the Atonement» (Discourse XXIV), *Discourses on the Nature and Extent of the Atonement of Christ* (Glasgow: James Maclehose, 1843/1844) | протяжённость умилостивления он разлагает на три модификации — гиперкальвинизм «точных эквивалентистов», обыкновенно державшийся ортодоксальный кальвинизм и «умеренный, или современный» (Фуллер, Э. Уильямс) — и отвергает первую с той же интонацией, что и сомюрцы: «exact equivalent» измеримо, а значит отрицает бесконечную ценность лица; «pitiful process of commercial reckoning, this weight-and-measure system of atonement» ведёт к тому, что вечная гибель всех была бы большим явлением праведности Бога, чем крест | `A2` | заглавие и издание установлены из двух независимых снятий: список цитируемой литературы у Дж. М. Кемпбелла (*The Nature of the Atonement*, 1884) даёт «*Discourses on the Nature and Extent of the Atonement of Christ*. By Ralph Wardlaw, D.D. Fourth Thousand. Glasgow: James Maclehose, 1844», а библиография самого сайта — то же заглавие с годом 1843; ранее тот же текст вышел как *Two Essays: On Assurance and On the Extent of the Atonement* (Glasgow: Archibald Fullarton, 1831). Страницы индексатор не называет, лист не снимался ⇒ не `A1`; снят первый из 15 фрагментов страницы |
+| FP-205 | Б. Х. Кэрролл (1843–1914) о смерти Христа — лексика 2 Кор 5:18–20 без издания в ссылке | вопрос «умер ли Христос за всех или только за избранных» он решает через различение двух примирений: «God was reconciled to us through the expiation of Christ… (2) our reconciliation to God through acceptance of Christ tendered in the ministry of the word»; вывод — «universal or limited salvation is not connected with the atonement Godward, but with the ministry of reconciliation», и «no matter in what sense expiation was effective toward God for all men, it cannot result in universal salvation» | `C` | название книги, из которой снято, индексатор не приводит (фрагмент 1 из 3 на `calvinandcalvinism.com/?p=14969`, доступ 2026-10-23); поиск по характерным формулировкам 2026-10-23 книги не назвал, а у Кэрролла несколько экзегетических курсов, где такая лексика уместна. Очередь Q-205. Побочная польза строки: в этом же фрагменте Кэрролл цитирует Джеймса П. Бойса с точной страницей — см. FP-206 |
+| FP-206 | Джеймс П. Бойс (1827–1888), *Abstract of Theology* (переработка F. H. Kerfoot), с. 296 — трёхчастная формула умилостивления | «(1) While for the elect he made an actual atonement, by which they are actually reconciled to God… (2) Christ at the same time and in the same work, wrought out a means of reconciliation for all men, which removed every legal obstacle to their salvation, upon their acceptance of the same conditions upon which the salvation is given to the elect» — то есть в южнобаптистском учебнике XIX в. стоит не «четыре пункта», а умилостивление «фактическое для избранных / обеспечивающее условия для всех» | `B1` | локатор вторичный и точный: страницу называет Кэрролл (FP-205), снимая её с *Abstract of Theology*, «revised by F. H. Kerfoot, p. 296»; какое именно издание (первое 1876 г. или переработка Керфута) имеет эту пагинацию — не установлено, лист не читан, поэтому не `A2` и уж верно не `A1` |
+| FP-207 | Фома Мэнтон (1620–1677), «Sermons Upon 1 Peter 1:23» о естественной и нравственной немощи | то же различение, на котором позже стоит хопкинсианская пара, — в английской проповеди 1670-х, и с выводом не в сторону ограничения искупления, а в сторону обязанности увещевать | `A2` | Thomas Manton, “Sermons Upon 1 Peter 1:23,” in *The Complete Works of Thomas Manton* (London: James Nisbet & Co., 1873), 21:332 — «Our *non posse* is *non velle*… The impotence is rather moral than natural… to inform the judgment, awaken the conscience, persuade the will… yet the bare means will not do it without God's concurrence». Отпечаток и страница подтверждены независимо: набор из 22 томов датирован 1870–1875 (Logos/Verbum; скан тома 21 в Internet Archive — `completeworksoft21mant`), а оглавления тома 21 ставят «Sermons Upon 1 Peter i.23» на 299 и следующий блок (Psalm 19:13) на 337, то есть названная страница 332 лежит внутри названного блока; год самого тома в каталогах колеблется (1873 против 1874) — оговорка в строке. Транскрипция вторична дважды: индексатор благодарит за находку чужой блог 2008 г., подчёркивание его ⇒ `A2`, а не `A1` |
+| FP-172 | Объединённый «индекс первичных цитат» (calvinandcalvinism.com): 7 страниц из 16 прочитаны 2026-10-23 (круг 21 добавил `?p=13913`, `?p=6596`, `?p=17`, `?p=14276`) | измерение остатка: индекс несёт десятки имён (Пэн, Барли, Фирмин, Полхилл, Сеаман, Шарп, Уодделл, Стеббинс, Райс, Пирс, Мускул, Полян, Вермиль, Урсин, Воэций, Валей, Юний, Олевин, Схильдер, Тил, Шпангейм, Уотс, Гилли? — перечислены по именам каталога), не сведённых в строки | `B1` | списки-источники как жанр (ср. §15): полезны как очередь, бесполезны как улики |
 | FP-173 | Оливер Крист, «On Hypothetical Universalism and the Westminster Confession», в *Deviant Calvinism: Broadening Reformed Theology* (Minneapolis: Fortress Press, 2014), сс. 181–183 | современная защита тезиса «ломбардская линия не противоречит символу» — с перечнем имён (Ушер, Престон, Давенант) | `B1` | страницы названы вторичной библиографией; книга не снята |
-| FP-174 | Майкл Дж. Линч, *John Davenant's Hypothetical Universalism: A Defense of Catholic and Reformed Orthodoxy* (Oxford University Press, 2021), с. 85 | монография, на которую сейчас опирается всё чтение Давенанта: «ordained sufficiency» против «mere sufficiency»; там же разбор У. Каннингема | `B1` | издание и год сверены по каталожным записям; страницу 85 я не читала |
+| FP-174 | Майкл М. Дж. Линч, *John Davenant's Hypothetical Universalism: A Defense of Catholic and Reformed Orthodoxy* (Oxford University Press, 2021), с. 85 | монография, на которую сейчас опирается всё чтение Давенанта: «ordained sufficiency» против «mere sufficiency»; там же разбор У. Каннингема | `B1` | издание и год сверены по каталожным записям; страницу 85 я не читала |
 | FP-175 | Майкл Линч, «Confessional Orthodoxy and Hypothetical Universalism: Another Look at the Westminster Confession of Faith», в *Beyond Calvin: Essays on the Diversity of the Reformed Tradition*, ed. B. Littlejohn & J. Tomes (The Davenant Trust, 2017), гл. 5 | редакторская формулировка вывода: если кто-то держит «приобретение только для избранных», но верит, что Христос умер за весь мир иным образом, то (1) он внутри Вестминстерского исповедания, (2) исповедание де-факто это допускает, (3) так, вероятно, и понимали составители | `B1` | цитата редакторов; том 2017 г. не снят |
 | FP-176 | Ричард Мюллер: три записи (гипотетический универсализм в реформатской традиции; что Дорт утверждает и чего не утверждает; Амираут) | историографический аргумент, которым прикрывают и «Дорт не сказал», и «Дорт сказал»: у Мюллера — различение *sententia* и обязательности | `C` | томов PRRF в руках не было (очередь Q-176) |
 
@@ -326,11 +333,75 @@
 
 **Что даёт §19 для §16.** Одна новая линия эволюции: 1562 (венгерский символ, FP-152) → 1618–1619 (английский суфрагий, FP-153) → 1650 (Давенант, FP-56) → 1658 (Калверт как реакция, FP-154) → 1869/1879 (А. А. Ходж о правке формулы, FP-168) → 2002–2007 (федерал-визионный спор, FP-177…FP-179) → 2014/2017/2021 (Крист и Линч, FP-173…FP-175). Это не «деградация» и не «прогресс», а **перенос предмета**: от «за кого умер» к «что покрывает символ». Итог для корпуса прежний: ни один из этих шагов не даёт права ни обвинять Прокопенко в новизне, ни оправдывать его символ — спор идёт в другой рамке.
 
+## 20. Масса, круг 18 (2026-10-23): тот же указатель, снятый целиком, и первичные локаторы XVI–XVII вв.
+
+Круг 17 прочитал 3 части указателя из 16 и вынес из них 29 строк. Круг 18 добирает **саму структуру** указателя
+«For Whom Did Christ Die?» (`calvinandcalvinism.com/?page_id=7147`, 4 раздела: I — древняя и средняя церковь, 12 позиций;
+II — эпоха Реформации, 36 позиций; III — «вторая Реформация», 33 позиции; IV — постРеформация, 25 позиций; всего **106**)
+и шесть страниц, по которым удалось прочитать текст с напечатанным локатором. Классы в этом круге **не повышаются от
+том, что цитата красивая**: `B1` здесь означает «ссылка на печатное издание названа вторичным источником, лист не сверен»,
+`A2` — «выходные данные совпадают минимум в двух независимых снятиях либо в каталоге издателя», `C` — «печатного текста
+нет, есть адрес, куда за ним идти».
+
+### 20.1 XVI век: ломбардистская пара задолго до Сомюра
+
+| id | носитель | что утверждает ровно | класс | локатор / что нужно добыть |
+|---|---|---|---|---|
+| FP-181 | П. М. Вермильи, *Predestination and Justification* (пер. Ф. Э. Джеймса, Kirksville: Sixteenth Century Essays & Studies, назван т. 8, 2003), с. 62; там же с. 16 о значении слова «предопределение» | «Мы охотно это допускаем, если рассматривать только достоинство смерти Христовой: она была **достаточна для грешников всего мира**; но хотя сама по себе её довольно, она не имела, не имеет и не будет иметь действенности во всех людях. Схоластики также признают, что Христос **искупил всех достаточно, но не действенно**» — то есть ломбардистская формула как **собственная** строка одного из учителей второй Реформации, до Сомюра и до Дорта; плюс молиться «о спасении человеческого рода, которое Ты приобрёл милостью Своей» (*Sacred Prayers*, 1994, т. 3, с. 69) и «цена уплачена за весь мир, и если бы она не была дороже всего мира, мир не был бы искуплен» (Philippians-комментарий, *Life, Letters and Sermons*, 1999, т. 5, с. 243) | `B1` | том и серия названы указателем; сверить по титулу (год и нумерация серии расходятся с тем, что я помню о *Sixteenth Century Essays & Studies*), снять печатные страницы |
+| FP-182 | Я. Кимедонций (ок. 1550–1596), *The Redemption of Mankind: Three Books*, пер. Х. Инса (London: Imprinted by Felix Kingston, 1598), сс. 4, 7, 12, 13, 14, 26, кн. XI «Who be Redeemed by Christ» | «один Посредник, давший Себя цену искупления **для всех**, как говорит Апостол»; «только Посредник… искупление, умилостивление и спасение **всех людей**»; «Христос по времени умер за нечестивых, но по предопределению — за братьев и друзей» (цитата Бернарда); спор прямо выведен на Лютеранскую конвергенцию в Монбельяре (1586) | `B1` | 1598 г. и печатник названы указателем; латинский оригинал (*De universa hominis redemptione*) и страницы не сверены; читать нужно вместе с FP-41 (Кэмерон) и с §8 |
+| FP-183 | Д. Парей, предисловие к четвёртой части Катехизиса, в *Certain learned and excellent discourses…* (London: H.L. for John Royston, 1613), сс. 52–53 | свидетельство современника: Кимедонций «в трактате **о всеобщности искупления**… debating the main question, resolving it very judiciously in his public lectures» — то есть тема «universality of redemption» в английской/немецкой лекционной практике 1590-х уже названа отдельным жанром | `B1` | перевод 1613 г. назван; сверить листы предисловия по экз. (EEBO-копия) |
+| FP-184 | В. Музул (1497–1563), *on the Redemption of Mankind* (указатель `?p=237`) и на 1 Ин 2:2 (`?p=260`) | бернский/немецкий слой «за всех» до ломбардистских школ; по заголовку указателя — отдельный разбор «искупления человеческого рода» | `C` | ни названия издания, ни страниц нет (текст указателя не приводит); добыча — по латинским *Opera* (Basel?) |
+
+### 20.2 Англия XVII века: прелат, пролоктор Вестминстера и «грёза» об объёме
+
+| id | носитель | что утверждает ровно | класс | локатор / что нужно добыть |
+|---|---|---|---|---|
+| FP-185 | И. А. Уссер (1581–1656), «The True Intent and Extent of Christ's Death and Satisfaction upon the Cross» и ответ на возражения, в *The Whole Works of the Most Rev. James Ussher*, 17 тт. (Dublin: Hodges, Smith & Co., 1864), т. **12**, сс. **553–560** и **563–571** | различение «satisfaction абсолютно рассмотренная» и «применение к каждому»: «первая совершена за всех, вторая ещё совершается; первая даёт **достаточность, изобилующую на весь долг**, вторая присовокупляет действенность»; «все люди поистине могут быть называющимися имеющими участие в заслугах Христа **как в общем** (as in a common), хотя пользуются плодом не все, потому что не хотят взять»; крайности: «примирение фактически всех до веры» и «никто, кроме избранных, не имеет никакого участия» | `A2` | том, издательство и страницы совпали в двух независимых снятиях (указатель + сноски вторичных обзоров); текст читан в транскрипте, лист 1864 г. не сверен |
+| FP-186 | Катехизис Уссера «The Principles of Christian Religion» (1615? по изд.), по изд. А. Митчелла *Catechisms of the Second Reformation* (London: Nisbet, 1886), с. 144 | «Христос… принёс совершенную жертву **за грехи мира**»; «что требуется от человека — принять Христа, **которого Бог свободно предлагает ему**» — катехизический (не трактатный) слой той же позиции, у того же лица | `B1` | Митчелл назван; год и место самого катехизиса (Irish Articles 1615 vs. лат. изд.) не сверены |
+| FP-187 | У. Твисс (1578–1646), пролоктор Вестминстерской ассамблеи, *The Doctrine of the Synod of Dort and Arles*, предисловие сс. 15–17; 3.1 сс. 143–144; 3.2 с. 152; 3.3 с. 165 | «мы охотно исповедуем, что Христос имел и полное намерение Своё, и заповедь Отца **совершить умилостивление за грехи всего мира**, чтобы тем приобрести прощение и спасение **всем, кто уверует**, и никому иному в зрелых летах»; «за всех — но не безусловно, а условно, при условии веры»; «Совет Дорта мог это сказать, и всякий слушающий Евангелие обязан верить, что Христос умер за него **в этом смысле**»; «во второй половине — веру и покаяние Он приобрёл не для всех» — то есть **условная** всеобщность из уст того, кто возглавлял Assembly | `B1` | указатель даёт страницы без года издания; снять титул (1630-е?), сверить нумерацию частей |
+| FP-188 | Г. Хикман (ум. 1692), *Patro-scholastico-dikaiösis…* (Oxford: Printed by A. Lichfield for J. Adams & E. Forrest, 1659), preface, сс. 40–45 по ручной пагинации транскрипта | **показания очевидца**: «Король Яков понимал эти споры куда лучше, чем мистер П. или я, и именно тогда, когда он посылал своих богословов на Синод в Дорт, чтобы решить против нарождающегося арминианства, **поручил им не отрицать, что Христос умер за всех**, как я сам слышал от епископа Уссера»; Уссер «дал своё суждение доктору Давенанту **за всеобщее искупление**, но прибавил, что есть определённое число тех, кому Бог намерен дать Своего Духа»; «Церковь Англии поддерживает всеобщее искупление всего рода человеческого» + цитата «успокоенного прелата» (с. 103 книги оппонента: примирение «как способные получить прощение в случае веры») | `B1` | 1659 г., печатник и разворот предисловия названы указателем; **у предисловия нет печатной пагинации** — отсылка «40–45» принадлежит транскриптору, и в корпусе её надо цитировать как листы (sig. …), а не как страницы |
+| FP-189 | Дж. Оверолл (1559–1619), «суждение о пяти статьях» (указатель `?p=8485`) | то, что Хемптон называет «рукописным мнением Оверолла», которым Давенант пользовался на Дорте и которое перепечатывалось вместе с суфрагием; для корпуса важен сам факт **третьего** английского текста 1618–1629 (помимо суфрагия и диссертаций) | `C` | добыть: латинский и английский листы (1629?) и страницы; в корпусе Оверолла нет ни одной карточки |
+| FP-190 | Дж. Буньян (1628–1688), *The Works of John Bunyan* (Banner of Truth, 1991), т. 1: с. 334 («Justification by an Imputed Righteousness»), сс. 408–409, 416, 432 («Light for Them that Sit in Darkness»), с. 526, сс. 561–562 («The Doctrine of Law and Grace Unfolding») | Христос как «**грех мира**», «полное удовлетворение **за грехи мира**», «Тот, кто поверит этому, исповедует Его не так, как квакери» — то есть у Буньяна «за мир» входит в **онтологию замещения**, а не в спор об объёме; ровно то различение, из-за которого ссылка на Буньяна в README лана вела в файл о ложных атрибуциях, где его нет | `B1` | 1991 г. и нумерация томов названы указателем; сверить по экз. Banner of Truth (3 тома, год по титулу); после сверки — кандидат в `A2` |
+
+### 20.3 Континент и делегаты Дорта: то, что обычно забывают
+
+| id | носитель | что утверждает ровно | класс | локатор / что нужно добыть |
+|---|---|---|---|---|
+| FP-191 | У. Цвингли, «on the Unlimited Expiation and Unlimited Redemption» (указатель `?p=52`) | цюрихский слой «неограниченного» до Кальвина; для §16 важно, что рамка «умилостивление/искупление» разделяется и там, где о Сомюре не слыхали | `C` | лат. *Opera* (Schuler/Scrinzer), том/страницы — добыть |
+| FP-192 | И. Эколомпидий (1482–1531), «on the Death of Christ» (указатель `?p=23`) | базельский слой; предшественник Кэмеронова круга (никакой связи с Гонди я не утверждаю: текст не снят) | `C` | лат./нем. издания *Opera*; страницы добыть |
+| FP-193 | И. Г. Альстед (1588–1638), **делегат от Веттерау к Дорту**, «on the Death of Christ» (указатель `?p=14458`) | оккультно-энциклопедист Альстед как носитель позиции на Дорте — единственная строка этого круга, где «четыре пункта» упираются в **присутствующего** на синоде, а не в его комментаторов | `C` | *Compendium theologicum* (Herborn 1623–1627?) и *Trace the extent* — не снято; добыча обязательна до любого цитирования |
+| FP-194 | Р. Роллок (1555–1599), «on the Death of Christ and Related Issues» (указатель `?p=148`) | шотландская школа до Кемпбелла: «related issues» у Роллока = завет и объём, то есть онтологическая форма (§16.4) уже в Эдинбурге | `C` | *Opera* (1618? 1620-е), том/страницы добыть |
+
+### 20.4 Новая Англия и Шотландия XVIII–XIX вв.: «достаточность» как отдельный жанр
+
+| id | носитель | что утверждает ровно | класс | локатор / что нужно добыть |
+|---|---|---|---|---|
+| FP-195 | Э. Калверуэлл (1553/4–1631), «Christ as the Deed of Gift to All Mankind» (указатель `?p=14959`) | «дарственная записка всем людям» — язык **законного основания** дара, а не гипотетического декрета; ближайший английский аналог того, что позже назовут «sufficiency of the deed» | `C` | *A Looking-Glass for sinners*? — название не снято, добыть по каталогу |
+| FP-196 | Дж. Престон (1587–1628), «Go Tell Every Man, Christ is Dead For You» (указатель `?p=15421`) | императив проповеди как аргумент об объёме — та же связка, что у Чарнока и у поздней литературы «free offer» | `C` | *Works* (1670-е? 1840-е?), страницы добыть |
+| FP-197 | Дж. Хау (1630–1705), «on the Redemption of Christ» (указатель `?p=102`) | неконформистский слой: искупление как «redemption of…», с различением достоинства и применения | `C` | *The Redemption of Christ*? — название/год добыть |
+| FP-198 | М. Генри (1662–1714), «on the Universal Redemption of Mankind» (указатель `?p=10733`) | популярнейший комментарий как **носитель** формулы «за всех» вне богословской литературы — то, что в §15 названо roll-call эффектом, работающим наоборот | `C` | *Commentary* (1710-е?), том/страницы на 1 Тим 2:6, Евр 2:9 добыть |
+| FP-199 | Дж. Смолли (1734–1820), «on the All-Sufficient Satisfaction of Christ» (указатель `?p=11627`) | «all-sufficient satisfaction» в новоанглийской богословской школе — прямой предшественник лексической пары Хопкинса (§10), и по теме, и по языку | `C` | *Tracts and Essays*? (Хартфорд, 1790-е?) — страницы добыть |
+| FP-200 | Р. Балмер (1787–1844), «Mediating Between Two Extremes» (указатель `?p=9595`) | шотландская медиация между «всеобщностью» и «ограниченностью» в 1820-х — локально тот же жест, что у Чалмерса (FP-136?) и за полвека до «неограниченного искупления» у пресвитерианских диссидентов | `C` | *Remarks on the extent of the atonement*? — название/год/страницы добыть |
+
+### 20.5 Агрегаты: что осталось неразведённым, измеренное, а не забытое
+
+| id | носитель | что утверждает ровно | класс | локатор / что нужно добыть |
+|---|---|---|---|---|
+| FP-201 | Указатель «For Whom Did Christ Die?» (`?page_id=7147`) как **закрытый список**: I — 12, II — 36, III — 33, IV — 25 = 106 позиций | из 106 позиций указателя в реестре стоят 23 строки §20 (из них прочитаны с локатором 6); остальные 83 не разведены — это измеренное отсутствие, а не «мы всё видели». Число **106** взято из самой нумерации разделов (последние номера: 12, 36, 33, 25), а не из подсчёта по экрану | `C` | снять нумерацию по всем четырём разделам и сверить со счётчиком строк реестра (очередь Q-201) |
+| FP-202 | Кластер «вестминстерские богословы» указателя: Дж. Уокер `?p=8760`, Р. Вайнс `?p=24`, Г. Скуддер `?p=151`, Т. Форд `?p=8647`, Ф. Раус (мирской ассессор) `?p=…` | у партии Assembly есть **множественные** носители «условной всеобщности», а не один Твисс; ни один из них не снят — поэтому «Вестминстер сказал то-то» в чужих спорах остаётся утверждением без инвентаря | `C` | адресат Рауса в указателе не дочитан (13 частей не просмотрены): добывать адресатом через `?page_id=7147` |
+| FP-203 | Кластер 1 Ин 2:2 (`?page_id=7309`): Кальвин с замечаниями Белла `?p=3340`, Н. Харди `?p=1485`, Т. Джайкомб `?p=2204`, У. Беркитт `?p=3024`, Т. Кроуфорд `?p=167`, «1 John 2:2 and the Argument for Limited Atonement» `?p=15807` | стих, на котором держится аргумент «умилостивление не только за наши, но и за всего мира» (1 Ин 2:2), имеет в указателе **12 разборов**, включая анти-ряд; в корпусе локаторов по 1 Ин 2:2 нет ни одного снятого | `C` | снимать постранично; до снятия — не цитировать стих «как аргумент четырёхпунктников» |
+
+**Что круг 18 даёт для §16.** Кривая, которая была в §19 (1562 → 1618 → 1650 → 1658 → 1869 → 2002–2007 → 2014–2021), удлиняется назад и вбок: Вермильи (1562 г. смерти) с **явной** ломбардистской парой, Кимедонций (1598) с трактатом «о всеобщности искупления», Парей (1613) с отзывом о его лекциях, Оверолл и суфрагий (1618–1629), Твисс (1630-е) как пролоктор Вестминстера, Хикман (1659) с показаниями об Уссере и о королевском поручении, Уссер (т. 12, 553–571) с различением «satisfaction/applicatio». Это не «истина постепенно открывалась», а **один и тот же спор в разных институциях**: где-то его ведёт символ (1562), где-то делегация (1619), где-то предисловие к полемике (1659), где-то собрание сочинений (1864).
+
 ## 17. Очередь добычи (Q-…) — закрытый список, синхронный с классом `C`
 
 Каждая строка класса `C` обязана иметь адресата здесь, и каждый адресат обязан вести в строку класса `C`: связь 1:1 по номеру,
 её сверяет правило 23 (`python3 -B scripts/validate_atonement_corpus_integrity.py`). Порядок — по номерам эпох, а не по срочности:
-срочность меняет очередь, а очередь не меняет класса.
+срочность меняет очередь, а очередь не меняет класса. Круг 18 снял три строки из очереди (FP-153 перешла в `A2` после
+установления изданий 1626/1629 и CERS 13) и внёс пятнадцать новых адресов (Q-184, Q-189…Q-203).
+Круг 21 снял ещё три адреса (Q-157, Q-158, Q-159 — строки FP-157, FP-158, FP-159 переведены в `B1` после съёма
+текстов с `?p=13913`, `?p=6596`, `?p=17`, `?p=14276`), новых адресов не внёс ни одного, потому что ни одна строка
+не опустилась в `C`: очередь стала 116.
 
 - Q-2 — Проспер, *Liber sententiarum*: PL 45, столбцы и номер главы о «voluntas omnium».
 - Q-4 — Faustus of Riez, *De gratia*: изд. Consolati (CC?), кн. I–II, о всеобщности благодати.
@@ -413,37 +484,490 @@
 - Q-131 — Спраул: *Chosen by God* (1986) — глава о «четырёх пунктах невозможно».
 - Q-132 — Пакер/Гибсон/Моррис/Скотт/Летэм/Беркхоф/Бавинк — уже в `ИСКУПЛЕНИЕ/00_CURRENT_AUTHORITY_2026-10-07.md` §2 («без полного объекта»), сюда только для синхронизации.
 - Q-133 — Каннингем: *The Theology of the Old and New Testaments* (2 vol., Edinburgh 1855/1862?) — том/страницы разбора Сомюра.
-- Q-136 — Джон Буньян, *Reprobation Asserted* (1674) и *The Doctrine of the Law and Grace Unfolded* (1659) — приписывание ему «всеобщего искупления»: установить издание и страницы места; до этого строка не имеет права повышаться до `A1` (строка реестра FP-136).
+- Q-136 — Джон Буньян, *Reprobation Asserted* (1674) и *The Doctrine of the Law and Grace Unfolded* (1659) — приписывание ему «всеобщего искупления»: установить издание и страницы места; до этого строка не имеет права повышаться до `A1` (строка реестра FP-136) — добавить сверку по *The Works* (Banner of Truth, 1991), т. 1 (FP-190) и переснять греп в обеих азбуках (правило 24): 
 - Q-152 — снять *Confessio Catholica* 1562 по: *Reformed Confessions of the 16th and 17th Centuries in English Translation*, vol. 2: 1552–1566 (Grand Rapids: RHB / PTMS, 2013) — документ занимает свыше 200 страниц, нужен трактат о воле Божией с пагинацией; критический текст — *Reformierte Bekenntnisschriften*, Bd. II/2 (Neukirchen-Vluyn: Neukirchener Verlag, 2009). Reception: вытеснена II Гельветическим 1566 (подписана в Дебрецене 1567) — Schaff, *Encyclopaedia of Religious Knowledge*, s.v. «Hungary» (`ccel.org/ccel/schaff/encyc05/htm/iii.xiv.xv.htm`). Пока страница не снята, цитата ходит как вторичная.
-- Q-153 — транскриптивная пагинация [pp. 44–50] известна только по индексной перепечатке (`calvinandcalvinism.com/?p=11317`, доступ 2026-10-23), а по-русски этот документ цитируют как «мнение английской делегации, не имеющее обязательной силы». Нужно: латинский *Calculus* по *Acta Synodalia* (1620) и по отдельным изданиям суфрагия; затем — сверка с *Collegii Suffragium* (1619), на которое уже ссылается FP-56. До закрытия строки ни «Дорт обязал», ни «Дорт оставил свободу» не публикуются.
 - Q-155 — установить, о каком именно сочинении Лифорда идёт речь (индекс: `calvinandcalvinism.com/?p=11907`), снять по EEBO-TCP или по печатному изданию 1650-х, дать страницы.
 - Q-156 — сверить с документами Кембриджа 1595 г. (дело Тревора/Эббота: отказ произносить три статьи), затем с его трактатами; индексная запись: `calvinandcalvinism.com/?p=6871`. Класс поднимать только по напечатанному тексту Эббота, не по репутации «первого четырёхпунктника».
-- Q-157 — индексная запись: `calvinandcalvinism.com/?p=13913`. Установить сочинение и год, снять пять «способов» постранично; сверить с обвинением в Вестминстерском собрании (1640-е), если оно там есть. До закрытия строки Лиг не считается «четырёхпунктником» в корпусе, только кандидатом.
-- Q-158 — индекс: `calvinandcalvinism.com/?p=14276` (Мейден, 1658? — год в индексе не указан). Шотландская линия до Кемпбелла требует отдельного прогона: название работы Мейдена установить по каталогам National Library of Scotland, а не по памяти.
-- Q-159 — индекс: `calvinandcalvinism.com/?p=17`. Снять по *Discourses upon the Existence and Attributes of God* и по трактату о временном и вечном спасении (год по титулу — сверить); если «за всех» там нет, строка уходит в §14 как «ложный друг» (по образцу FP-136).
-- Q-160 — индексы: `calvinandcalvinism.com/?p=4407` и `?p=4031`. Установить издания, снять страницы; проверить принадлежность Хамфрею (у имени в этот период два носителя).
-- Q-161 — индекс: `calvinandcalvinism.com/?p=14798`. Установить сочинение и год, снять различение по страницам; сравнить с Эммонсом и с `34_` §4.40–4.41.
-- Q-162 — индексы: `calvinandcalvinism.com/?p=12382`, `?p=12406`. Снять *Michod-Kedoshim* в современном издании (каком — установить): места о 2 Пет 2:1 и о «double payment»; сопоставить с `18_` (двойная оплата) и с ответом Оуэна 1650 г.
-- Q-163 — индекс: `calvinandcalvinism.com/?p=5835`. Установить сочинение (*Meditationes*? — не выдумывать), сверить с лютеранской ортодоксией: FC SD II 27–28 уже стоит как A2 (FP-30/31), здесь нужен именно Бергий по тексту.
-- Q-164 — индексы: `?p=4461`, `?p=4475`, `?p=4494`, `?p=4544`. Снять по *Operum theologicum* (Женева) тома о атрибутах и о предопределении; дать страницы, и только тогда класс `A2`/`A1`.
-- Q-165 — индекс: `calvinandcalvinism.com/?p=12944` (помечен как «Informal References» — то есть сам индексатор не ссылается на место). Сверить по *Theoretico-practica theologia* (Utrecht 1698), Tomus IV (de redimendis/eligendis — уточнить нумерацию quaestionum), и по английскому переводу (Grand Rapids: RHB, 2018 и сл., под ред. Дж. Бика). Если места нет — строка уходит в §14, и это результат, а не провал.
-- Q-166 — индекс: `calvinandcalvinism.com/?p=14037`. Установить, в какой именно работе Восса лежит этот тезис (индекс названия не даёт), снять страницы; класс поднимать только после чтения.
-- Q-167 — индекс: `calvinandcalvinism.com/?p=12084`. Установить название, год и издательство по каталогу (в индексе их нет; у Александра несколько догматических переизданий 1870-х), снять страницы; сверить с `34_` §4.36–4.39 (Шедд).
-- Q-168 — индекс: `calvinandcalvinism.com/?p=119`. Снять по *Outlines of Theology* (год первого издания установить по титулу) и по его рецензиям 1860-х; дать страницы; сопоставить с Ч. Ходжем (`18_`, §4.40) и с Дабни.
+- Q-164 — индексы Занки: `calvinandcalvinism.com/?p=4461` (о любви Божией), `?p=4475`, `?p=4494`, `?p=4544`. Снять по *Operum theologicum* (Geneva) тома об атрибутах и о предопределении; индексатор называет страницы 370–371 для пятого вопроса, не называя издания: установить печатную основу (*De Natura Dei*, Geneva 1577, кн. II–IV, или перевод Уинертона *The Whole Body of Christian Religion*, London: John Redmayne, 1659 = EEBO A97309) и снять главы по страницам; только тогда класс `A2`/`A1`, и до этого строка не поднимается, несмотря на наличие текста.
+- Q-205 — индекс: `calvinandcalvinism.com/?p=14969` (Кэрролл, фрагмент 1 из 3). Установить, из какой книги снято: у Кэрролла несколько экзегетических курсов и два объёма по искуплению; поиск по формулировкам 2026-10-23 результата не дал. Отдельно — сверка цитаты Бойса (FP-206) по тому изданию *Abstract of Theology*, пагинация которого даёт 296.
+- Q-167 — индекс: `calvinandcalvinism.com/?p=12084` (Fragment 1 из 5; прочитаны 0 и 4). Установить название, год и издательство по каталогу: правдоподобный кандидат *The Redemption* (Edinburgh: T. & T. Clark, 1870) **не** подтверждён, а отпечаток «The Atonement, London: T. Nelson and Sons, 1868» из «Works Cited» той же сети страниц принадлежит А. А. Ходжу, не Александру (ср. `FP-168`) — значит ссылка «The Atonement (1868)» без автора в этом корпусе неоднозначна. Прочитать фрагменты 1–3; сверить с `34_` §4.36–4.39 (Шедд).
 - Q-169 — индекс: `calvinandcalvinism.com/?p=13542`. Установить название и год по каталогу (индекс их не приводит), дать страницы; в корпусе у Хови нет ни одной карточки.
 - Q-170 — индексы: `calvinandcalvinism.com/?p=6438`, `?p=15205`. Снять по *Essays and Characteristic Sermons of John Brown of Haddington*? — установить, где именно напечатаны оба разбора; сверить список «Calvin et al.» с `15_` и с `34_` — это тот редкий случай, когда оппонент даёт нам инвентарь атрибуций.
-- Q-171 — индексы: `calvinandcalvinism.com/?p=11751` (Уордлоу), `?p=14969` (Кэрролл). Установить названия и годы обоих (индекс их не приводит), затем уже спорить, к какой из четырёх форм (§16.1–16.10) они относятся.
 - Q-176 — индексы: `?p=10963`, `?p=4805`, `?p=139`. Снять по *Post-Reformation Reformed Dogmatics*, vol. III и IV (2nd ed., Baker 2003) и по *Christ's Faith*? — нет: только по PRRF и по *Unsprung Well*, страницы; сравнить с §16.2 и с `27_`.
 - Q-177 — тексты: monergism.com «definite_wilson.html»; цитата интервью *Christian Renewal* (апр. 2003) — по вторичному сайту (доступ 2026-10-23), номер/страницы не сняты. Требуется: (1) сам выпуск *Christian Renewal*; (2) печатный том Beisner (ed.), *The Auburn Avenue Theology, Pros and Cons* (Fort Lauderdale: Knox Seminary Press, 2004), 331 с.: ответ Уилсона — сс. 224–232, статья Тревборста — сс. 187–205; (3) решение PCA *Ad Interim Committee on Federal Vision* (2007) о том, что именно вменялось.
 - Q-179 — снять: (1) RPCUS «Public Call to Repentance» (июнь 2002) по пункту об умилостивлении; (2) интервью *Christian Renewal*, апрель 2003; (3) том Beisner 2004 целиком по статьям Шлисселя и Барраха; (4) *The Federal Vision*, ed. S. Wilkins & D. Garner (Athanasius Press; год по издательскому листу — сверить): заметка Шлисселя с критикой TULIP — с. 238. Ни один из этих текстов не цитируется в корпусе как улика до снятия.
 - Q-180 — индекс: `calvinandcalvinism.com/?p=7623`. Установить, где печаталось (собрание статей Нокса, изданное после 1994 г. (какое именно — установить по каталогу)), снять страницы. Важно: эта строка единственная, где «четыре пункта» возможны в **англиканском** языке XX в. без всякого Сомюра.
+- Q-184 — индекс: `calvinandcalvinism.com/?p=237` (о «Redemption of Mankind») и `?p=260` (на 1 Ин 2:2). Установить латинское издание *Opera* Музула (том, год) и страницы; класс поднимать только после чтения листа.
+- Q-189 — индекс: `calvinandcalvinism.com/?p=8485`. Добыть латинский и английский тексты «suffragium» Оверолла (1619? / 1629?) с листами; сверить с изданием суфрагия 1626/1629 (FP-153) и с *Grace and Conformity* Стефена Хемптона (OUP, гл. 2), где это «manuscript opinion» названо.
+- Q-191 — индекс: `calvinandcalvinism.com/?p=52`. Латинские *Opera* Цвингли (Schuler, 1828–1844; Scrinzer), том и страницы на тему «unlimited expiation»; без этого любая ссылка на Цвингли остаётся ссылкой на заголовок.
+- Q-192 — индекс: `calvinandcalvinism.com/?p=23`. *Opera* Эколомпидия (Basel), том/страницы.
+- Q-193 — индекс: `calvinandcalvinism.com/?p=14458`. Альстед: *Compendium theologicum* (Herborn, 1623–1627?) и, отдельно, его роль делегата Веттерау на Дорте — добывать по актам синода и по каталогу, не по названию страницы.
+- Q-194 — индекс: `calvinandcalvinism.com/?p=148`. *Opera* Роллока (1618? 1620-е?), том/страницы; сверить с §7 и с §16.4 (онтологическая форма).
+- Q-195 — индекс: `calvinandcalvinism.com/?p=14959`. Установить название и год (по каталогам ESTC), снять страницы о «deed of gift».
+- Q-196 — индекс: `calvinandcalvinism.com/?p=15421`. *Works* Престона (1670-е? 1840-е?), страницы проповеди «Christ is dead for you».
+- Q-197 — индекс: `calvinandcalvinism.com/?p=102`. Установить название/год текста Хау, снять страницы.
+- Q-198 — индекс: `calvinandcalvinism.com/?p=10733`. *Commentary* Мэттью Генри на 1 Тим 2:6, Тит 2:11, Евр 2:9, 1 Ин 2:2 — том/столбцы по изданию (1710-е; перепечатки расходятся).
+- Q-199 — индекс: `calvinandcalvinism.com/?p=11627`. Смолли: установить, где печаталось («Tracts on important subjects of doctrine and duty», Hartford?), снять страницы.
+- Q-200 — индекс: `calvinandcalvinism.com/?p=9595`. Балмер: название/год по каталогу (1820-е–1830-е), страницы о «двух крайностях».
+- Q-201 — снять нумерацию всех четырёх разделов указателя `?page_id=7147` (последние номера: 12, 36, 33, 25) и развести 106 позиций по строкам реестра; до этого число «106» в FP-201 — по нумерации разделов, а не по перечёту.
+- Q-202 — разобрать постранично кластер «вестминстерские богословы» (Уокер `?p=8760`, Вайнс `?p=24`, Скуддер `?p=151`, Форд `?p=8647`, Раус — адресат не дочитан); Рауса id взять из `?page_id=7147`.
+- Q-203 — снять постранично кластер 1 Ин 2:2 (`?page_id=7309`: Кальвин/Белл `?p=3340`, Харди `?p=1485`, Джайкомб `?p=2204`, Беркитт `?p=3024`, Кроуфорд `?p=167`, разбор аргумента `?p=15807`).
 
 ## 18. Что этот реестр меняет в корпусе
 
-- Позиция перестаёт быть «статьёй одного автора»: реестр даёт **180 строк** — носители позиции, обязательная оппозиция, ложные друзья и сами партизанские списки как жанр, по 13 эпохам и слоям (III в. — 2026 г., включая §19 круга 17).
-- Распределение по классам достоверности: `A1` 25 (место прочитано по изданию), `A2` 24 (сверены выходные данные), `B1` 20 (взято из вторичного исследования с локатором), `B2` 6 (приписано и не сверено), `C` 105 (требуется добыча). Сумма классов равна числу строк — это проверяет гейт, а не моя аккуратность.
-- Доля прочитанного по первичному изданию — 14%. Масса выросла на 29 строк, и доля **упала**: это и есть цена «максимальной объективности» — новые имена из индекса первичных цитат пока не тексты, а очередь.
-- `C`-строки и очередь §17 связаны 1:1 по номеру (105 = 105): заявить «массу собрали» нельзя, не закрыв добычу или не сняв строку.
+- Позиция перестаёт быть «статьёй одного автора»: реестр даёт **203 строк** — носители позиции, обязательная оппозиция, ложные друзья и сами партизанские списки как жанр, по 13 эпохам и слоям (III в. — 2026 г., включая §19 круга 17).
+- Распределение по классам достоверности: `A1` 25 (место прочитано по изданию), `A2` 26 (сверены выходные данные), `B1` 27 (вторичное с локатором), `B2` 6 (приписано, не сверено), `C` 119 (печатного текста нет, есть адрес), а не моя аккуратность.
+- Доля прочитанного по первичному изданию — 12%. Масса выросла на 52 строки за круги 17–18, и доля **упала**: это и есть цена «максимальной объективности» — новые имена из индекса первичных цитат пока не тексты, а очередь.
+- `C`-строки и очередь §17 связаны 1:1 по номеру (119 = 119): заявить «массу собрали» нельзя, не закрыв добычу или не сняв строку.
 - Три результата, готовых к опровержению оппонентом: (1) тезис «вопрос об объёме возник в XVI в.» не выдерживает IX в. (FP-07…FP-17) и теперь не выдерживает и 1562 г. (FP-152: гипотетическая воля в **символе**); (2) у позиции **четыре различные логические формы** (§16.1–16.10), и «четырёхпунктность» Прокопенко ближе к давенантовской и хопкинсианской, чем к Сомюру; (3) из 12 приписываний в §14 и §19 шесть опровергнуты ланом, четыре не подтверждены (Маастрихт FP-165, Лиг FP-157, Эббот FP-156, Чарнок FP-159) — и все они остаются в реестре, а не вычёркнуты.
-- Переснять всё: `python3 -B scripts/validate_atonement_corpus_integrity.py` (правило 23 меряет этот файл обходом; числа выше: 180 / 25 / 24 / 20 / 6 / 105 / 105).
+- Переснять всё: `python3 -B scripts/validate_atonement_corpus_integrity.py` (правило 23 меряет этот файл обходом; числа выше: 203 / 25 / 26 / 27 / 6 / 119).
 - Классы в этом реестре теперь отвечает не только за «достоверность цитаты», но и за чистоту самого файла: правило 23 сканирует реестр и корпус на прилипшие CJK-глифы (в круге 16 их было шесть, и ни одно прежнее правило их не видело, потому что склейка кириллицы с латиницей — не то же самое, что иероглиф). Заявленные нули сверяются обходом; ноль — это тоже число, и `x or -1` его съедает.
+- Круг 18 (этот заход) измерим тремя числами: **106** позиций указателя «For Whom Did Christ Die?» (по нумерации четырёх разделов: 12 + 36 + 33 + 25) против **23** новые разведённые строки, **6** страниц, по которым текст прочитан с печатным локатором (Вермильи, Кимедонций с отзывом Паррея, Твисс, Уссер, Хикман, Буньян), и **13** частей индекса, которые остаются непрочитанными — они записаны в очередь, а не «забыты». Из них ровно одна строка поднята в `A2` (суфрагий 1626/1629 + CERS 13), потому что там совпали два независимых снятия; повышения «по красоте цитаты» не делалось.
+## 21. Масса, круг 21 (2026-10-23): четыре куска указателя, три строки подняты из `C`, одна добавлена, одно обвинение снято с себя
+
+Круг добирает четвёрку страниц указателя «For Whom did Christ Die?», которые круги 18–20 оставляли недочитанными:
+`?p=13913` (Лиг), `?p=6596` (Феннер), `?p=17` (Чарнок), `?p=14276` (Мейден); доступ 2026-10-23T18:20–18:21Z. Из них
+полностью снята одна (у Лига), у Феннера — 1 фрагмент из 3, у Чарнока — 1 из 16, у Мейдена — 1 из 4.
+
+Ни одна из четырёх страниц не является съёмом с печати, поэтому класс поднят **ровно до `B1`** («вторичное с
+локатором»): `A2` требует сверки выходных данных, а её сделать было нельзя — сеть песочницы отдаёт только
+каталожные описания, и те из них, что получены, записаны ниже отдельными словами, а не «красивой ссылкой».
+Измерение после круга 21, снятое обходом файла, а не памятью: **204** строк-носителей; `A1` 25, `A2` 26, `B1` 31,
+`B2` 6, `C` 116; адресатов очереди **116**, связь 1:1 с классом `C` держится (правило 23); доля прочитанного по
+первичному — **12 %**.
+
+**Что это меняет в содержании, а не в счёте.** Формула «пяти способов» оказывается не английским изобретением
+четырёхчленных, а высказыванием Феннера о *достаточности*, которое Лиг пересказал через сорок лет без исходной
+оговорки («although I do not say generally, in respect of absolute purpose»). У Чарнока та же лексика
+достаточности собрана в условное приглашение («a sufficient sacrifice for all, if all would accept of it»), а не в
+пункт о декрете. Это ровно тот слой, который §16 п. 11 называет «ломбардистской» и «хопкинсианской» формами:
+ни одна из трёх строк не говорит, что Христос умер за всех в смысле намерения спасти каждого, и ни одна не
+отрицает этого — они держат различение, из которого четыре пункта вырастают позже.
+
+**Erratum круга (против себя).** Строка FP-158 до этого круга приписывала Мейдену «шотландского професора
+(Абердин/Мерисколл?)» — вывод из сходства фамилий, а не из файла. Прочитанный текст показывает обратное:
+речь об английском пресвитерианском богослове, пишущем предисловие к трактату Эмса, и он сам открещивается от
+спора о декрете. Шотландская линия (Кэмпбелл 1856, Браун) остаётся отдельным прогоном, и её строки не должны
+ссылаться на Мейдена. Побочный вывод того же съёма: заглавие эмсовского трактата установлено по торговой росписи
+Чайлди (London, 1676), а не по титулу, — значит и оно `B1`, а не `A2`.
+
+**Расхождение в библиографии, записанное как расхождение.** Ссылка индексатора на Лига сочетает отпечаток
+издания 1654 г. (Wing L1008 = ESTC R25452) с годом 1662 (четвёртое издание по DNB). Пока это не снято с
+титульного развёрста, строка не может быть `A2`, и номер страницы 602 в ней читается как «страница того издания,
+которое держал в руках индексатор».
+
+**Что осталось от этих четырёх страниц.** У Чарнока 15 из 16 фрагментов, у Феннера 2 из 3, у Мейдена 3 из 4 —
+это продолжение съёма того же куска указателя (строки уже `B1`, поэтому в очередь `Q-…` не записывается:
+очередь по правилу 23 синхронна классу `C` и служит только для «печатного текста нет»); от Феннера отдельно
+остаётся незакрытым издание под с. 319. Снятые тексты лежат файлами в Drive-папке `10.9` (4 штуки, имена с датой
+съёма), их id, байты и md5 — в `driveMirrors.captures20261023b`, записи о них — в индексе библиотеки
+(`ИСКУПЛЕНИЕ/data/atonement-library-index.json`), и правило 25 сверяет индекс с обходом Drive.
+
+### 21.1. Ходж: XIX век не хранит ломбардскую пару, а перерабатывает её
+
+Та же волна сняла со дна очереди строку FP-168: А. А. Ходж, «The Atonement» (London: T. Nelson and Sons, 1868),
+сс. 328–329 и 333. Это единственный случай круга, где класс поднят до `A2`, а не до `B1`: выходные данные
+совпали в двух независимых снятиях (ссылка индексатора и каталожная запись тома, 402 p., ред. W. H. Goold), а
+пагинация подтверждена структурой оглавления — глава II раздела о намерении и применении умилостивления
+начинается ровно с 328.
+
+Смысл находки для §16 и для «эволюции/деградации» в том, что Ходж формулу не повторяет, а чинит: школьная пара
+«sufficienter pro omnibus, efficienter pro electis» для него «inaccurate and inadequate rather than false», а
+положительное утверждение — «the actual ends effected are the exact measure of the real ends designed». То есть в
+американском пресвитерианстве 1868 г. различение ещё держится как слово, но его смысл уже перенесён с
+достаточности на число достигнутых целей. Рядом стоит признание, что формулу принял сам Кальвин на 1 Ин 2:2 —
+для §13 («что говорят оппоненты») это годная цитата в обе стороны, и её надо давать целиком, а не половинками.
+
+Отдельная зацепка, которая стоит дороже самой строки: в перечне «французских богословов», чьи спекуляции
+вызвали просеивание темы, у Ходжа назван Testard (Даниэль Тестар) наряду с Кэмероном и Amyraldus. Это имя в
+корпусе раньше не встречалось ни в одном лане, и для сомюрского слоя (§13, §16) оно означает, что перечень
+участников меньшею, чем «Сомюр = три имени». Заносить его в очередь строк реестра нельзя (класса `C` у строки
+нет), поэтому он записан здесь словом и повторён в тексте PR: следующий круг обязан проверить, есть ли у
+Тестара печатное высказывание об объёме удовлетворения.
+
+## 22. Масса, круг 22 (2026-10-23): Уордлоу и Трумэн закрыты по изданию, Кэрролл выделен в отдельную строку, Занки остался `C`
+
+Круг снял четыре страницы указателя: `?p=14798` (Трумэн), `?p=11751` (Уордлоу, фрагмент 1 из 15), `?p=14969`
+(Кэрролл, фрагмент 1 из 3) и `?p=4461` (Занки, фрагмент 1 из 4), плюс два каталожных поиска для сверки выходных.
+
+Измерение после круга (обход файла): **206** строк-носителей; `A1` 25, `A2` 29, `B1` 32, `B2` 6, `C` 114;
+адресов очереди **114**; доля прочитанного по первичному — **12 %**. Строка FP-171 была разделена: Уордлоу остался
+в ней и получил `A2`, а Кэрролл вынесен в новую строку FP-205 с классом `C` и адресом Q-205. Разделение сделано не
+для красоты, а потому, что в одной строке нельзя держать два разных уровня доказательности: у Уордлоу издание
+названо и подтверждено, у Кэрролла — нет. Третья новая строка, FP-206, — Джеймс П. Бойс с точной страницей
+(*Abstract of Theology*, изд. с переработкой Керфута, с. 296), снятой не с листа Бойса, а из цитаты Кэрролла,
+поэтому `B1`.
+
+**Что нашли по существу.**
+
+1. *Трумэн, 1675.* Различение естественной и нравственной немощи он прямо приписывает «французским протестантским
+   богословам» — то есть сомюрскому ходу — и утверждает, что без него учёнейшие «говорят как дети». Это ещё одно
+   свидетельство (§13, §16 п. 11) того, что лексика, на которой позже стоит хопкинсианская пара, в Англии XVII в.
+   заимствовалась именно у французов, а не вырастала из собственного грунта. Второе наблюдение — техническое и для
+   всего корпуса обязательное: свою ссылку на Твисса Трумэн пишет как «pag. (*mihi*) 211», «по моему экземпляру».
+   Семнадцатый век сам признавал, что номер страницы принадлежит оттиску, а не тексту; наш корпус обязан держать то
+   же правило, и потому страницы без названного издания у нас не поднимают класс (см. пункт 3).
+2. *Уордлоу, 1843/44.* Внутри кальвинизма он различает уже три позиции: гиперкальвинизм «точных эквивалентистов»,
+   обыкновенно державшийся ортодоксальный кальвинизм и «умеренный, или современный» — тот, что держат Фуллер и
+   Эдвард Уильямс. Отказ от «коммерческого исчисления» («this weight-and-measure system of atonement») у него
+   построен на том же основании, что у ломбардистов и у Баркли: ценность умилостивления бесконечна из-за лица
+   Страдающего, а значит не измеряется числом должников. Для §16 это значит, что к 1843 г. «четырёхпунктность» уже
+   не внешнее обвинение, а классификация внутри самого кальвинизма, и Уордлоу её называет сам.
+3. *Занки остался `C`, хотя текст снят, а страницы названы.* Индексатор в комментарии к своей странице указывает
+   «pages 370-371, the fifth question» — но не говорит, к какому изданию они относятся, а кандидатов два: латинская
+   *De Natura Dei* (Geneva, 1577) и английский перевод Уинертона *The Whole Body of Christian Religion* (London:
+   John Redmayne, 1659 = EEBO A97309). Локатор без издания — это адрес, а не доказательство; класс обязан
+   отличаться от проверки, иначе `A2` начинает означать «мне поверили на слово».
+4. *Кэрролл и Бойс — самое неприятное для рядовой схемы.* Южнобаптистский учебник XIX в. формулирует так: «для
+   избранных Христос совершил фактическое умилостивление… и одновременно, в том же деле, приобрёл средство
+   примирения для всех людей, устраняющее всякое законное препятствие их спасению при принятии тех же условий».
+   Это не четыре пункта в сомюрском смысле и не пять: это протяжённость под условием, встроенная в американский
+   баптистский учебник задолго до XX в. Сам Кэрролл при этом переносит вопрос с «умилостивления пред Богом» на
+   «служение примирения» — ровно тот же жест, что у Чарнока («if all would accept of it», круг 21) и у Феннера
+   («five ways» как способы предложения). Семья условного приглашения, таким образом, тянется от 1640-х через
+   1675-е и 1840-е прямо в 1900-е, и её нельзя описать как «отклонение от Дорта»: она держится на различении
+   достаточности и применения, которое Дорт сам отверг лишь в одной формулировке (ср. §13 и §18).
+
+**Не закрыто этим кругом:** Занки (4 страницы, издания нет), Восс `?p=14037`, Александр `?p=12084`, Маастрихт
+`?p=12944`, Фрейзер `?p=12382`/`?p=12406`/`?p=12519`, Хамфрей `?p=4407`/`?p=4031`, Бергий `?p=5835`, Мэнтон
+`?p=12583`. Снятые тексты — четырьмя файлами в Drive-папке `10.9` (записи о них в индексе библиотеки, id — в
+`driveMirrors.captures20261023c`).
+
+## 23. Масса, круг 23 (2026-10-23): Бергий и Восс подняты, Александр и Фрейзер остались `C`, найден библиографический «ложный друг»
+
+**Что взято.** Прочитаны и записаны снимками в Drive (папка `10.9`, четыре объекта; байты, md5 и привязка к
+строкам — в индексе библиотеки) четыре страницы указателя `calvinandcalvinism.com`: `?p=5835` (Бергий,
+вопросы 52–53 — вместе с титульными данными издания), `?p=14037` (Восс, Fragment 1 из 1), `?p=12084`
+(Александр, Fragment 1 из 5, прочитаны 0 и 4), `?p=12519` (Фрейзер, Fragment 1 из 3). Итог по классам:
+`A2` +1 (Восс), `B1` +1 (Бергий); две строки остаются `C` с переписанными адресами очереди; два адреса
+очереди (Q-163, Q-166) сняты вместе с переходом строк в прочитанное, и очередь снова 1:1 с `C` — 112
+адресов, и все 112 *уникальны*: дубль `Q-164`, живший в файле с круга 19, слит (см. «Правила», п. 4).
+
+**Что нашли по существу.**
+
+1. *Бергий, 1655.* Лютеранский пиетик середины XVII в. даёт **четырёхчастную** схему действия воли
+   (`approbante / præcipiente et promittente / operante / non tamen necessitante`) — и при этом не делит само
+   искупление: множится число способов предложения, а не частей цены. Это ровно та конфигурация, которую §16
+   называет выводом корпуса, и стоит она вне реформатского спора: к Дорту автор отношения не имеет, а схема
+   уже есть.
+2. *Восс, 1891/1980.* «Diversity» у Восса — не либеральная уступка, а часть его учения о завете: старая
+   теология «proceeded more fearlessly than the later ones in the individualization and general application of
+   the promises». Для корпуса ценность двойная: Восс даёт готовую **цепочку первичных адресов** (Беза
+   *Conf. Christ. Fidei* IV.48; Буллингера *Loci Communes* IV.8.7; Полануса *Syntagma* VI.55) — по ним реестр
+   и обязан идти дальше, — и показывает, что «дети завета куплены кровью Христа» есть тезис, общий для обеих
+   сторон спора о числе.
+3. *Фрейзер, печать не установлена.* Он принимает силу довода «нельзя взыскать дважды» и ограничивает его
+   **условием состояния**: «you must not say absolutely and merely, because Christ died for a man therefore
+   shall that man be saved», с эмфазой на «*us*». В том же абзаце — «gave him for us all good and bad… to all
+   elect and reprobate». Правило, записанное отсюда: **лозунг без различения способа предикации
+   классификационной силы не имеет** — ни «for all», ни «for his people» сами по себе строку между классами
+   не двигают.
+4. *Александр, книга не установлена.* Глава XVI даёт ту же вилку `solutio ejusdem` / `tantundem`, что и Шедд
+   (ср. `34_` §4.36–4.39), и прямо отказывает гиперкальвинизму в авторстве Кальвина. Класс не поднят:
+   страница не называет издания, а поиск точной фразы по корпусу ничего не даёт — индексатор модернизирует
+   орфографию, и проверять транскрипцию такой фразой бессмысленно.
+
+**Правила, которые ввёл этот круг.**
+
+1. *Каталожное подтверждение обязано быть независимым от транскриптора.* У Бергия есть и титул, и страницы
+   51–55, но круг берёт их из одного источника, который цитирует сам себя: в «Works Cited» и «Further
+   Reading» того же блога стоит та же строка. `A2` значит «сверены выходные данные», а не «выходные данные
+   названы», — поэтому `B1`, и это сказано в самой строке реестра, а не в сноске к ней.
+2. *Библиографический «ложный друг».* Отпечаток чужой книги, приписанный нашему автору, — тот же дефект, что
+   доктринальный «ложный друг» из §14, только на уровне описания издания, и опасен он именно тем, что
+   выглядит как подтверждение. Отсюда обязательная проверка для любого `A2`, взятого из чужого списка
+   литературы: **сверять, чьё имя стоит у этого отпечатка в каталоге**, а не то, что строка в списке есть.
+3. *Страница статьи не равна странице абзаца.* Локатор «242–267» у Восса относится к статье целиком: он
+   поднимает строку до `A2` и не даёт `A1`, потому что `A1` требует прочитанной страницы, на которой стоит
+   снятая фраза.
+4. *Очередь — множество, а не список, и это теперь проверяется.* Снимая адреса Q-163 и Q-166, круг нашёл,
+   что `Q-164` написан в файле **дважды**: короткая строка круга 19 и полная строка круга 22 живут рядом, и
+   ни одно число этого не ловило, потому что правило 23 сверяет *множество* номеров очереди с *множеством*
+   `C`-строк. Две строки слиты в одну, и в гейт введено **правило 23.2**: у одного номера обязана быть ровно
+   одна строка очереди. По-другому «снять адрес, не сняв строку» остаётся невидимым — а именно так и теряются
+   улики в длинных списках.
+
+**Правка против себя.** В строке `FP-33` с круга 16 стояло «Xристос» с латинской иксом — тот же дефект, что
+«Соumur» в `17_` и что «приоритет条件的ного» в описании лана: при наборе по памяти латинская буква садится на
+кириллическое место, и глазами это не видно, потому что слово читается правильно. Исправлено здесь же, где
+найдено; скан лана на смешанное письмо пока покрывает `ИСКУПЛЕНИЕ/*.md`, а не `docs/research/atonement/*.md`,
+и круг фиксирует это как открытую дыру в проверке, а не как мелочь. **[Поправка круга 25.]** Это утверждение неверно: лан `docs/research/atonement/**` сканируется тем же гейтом как ошибка с круга 22 (правило 22, `_adj22`), а `ИСКУПЛЕНИЕ/*.md` — правилом 23.3. В лане на момент поправки найдено два написания («Xристос» и «Соumur»), оба стоят внутри «ёлочек», то есть легальны по правилу цитат, и блокировать нечего. Ложная строчка убрана и из гл. 07, где она была написана; причины записаны как ошибка проверяющего, а не как снятая угроза: периметр собственной проверки был описан по памяти, а не по коду гейта.
+
+**Не закрыто этим кругом:** Фрейзер (2 фрагмента из 3, печати нет), Александр (3 фрагмента из 5, книги нет),
+Маастрихт `?p=12944`, Мэнтон `?p=12583`, Хамфрей `?p=4407`/`?p=4031`, повтор Рим 8:32 `?p=12483`, датировка
+немецкого оригинала Бергия и каталожная сверка *Pearle of Peace* (напечатанное 1655 против руки «54» на
+титульном листе), и вся латинская линия локаторов Восса (Беза, Буллингера, Поланус) — она следующая. Снятые
+тексты — четырьмя файлами в Drive-папке `10.9` (записи о них в индексе библиотеки, id — в
+`driveMirrors.captures20261023d`).
+
+## 24. Масса, круг 24 (2026-10-23): два повышения из резерва, одна новая строка и ссылка, которая ведёт не туда
+
+**Что это за круг.** Круг 23 поставил правило: строка поднимается из `C` тогда, когда независимый источник
+подтверждает наличие текста в названном издании и на названной странице. Здесь это правило применено к двум
+кандидатам, которых круг 23 оставил в очереди, и к одному автору, которого в реестре раньше не было.
+
+**1. Маастрихт, `FP-165`: `C` → `A2`.** Круг 22 закрыл строку отрицательным результатом поиска, круг 23
+приказал снять латинский оригинал. Вместо латинского оригинала найден английский: трактат о regeneration в
+американском издании (New-Haven: Thomas and Samuel Green, 1770), и в нём стоят оба названных места — «Some of
+the Reformed, v.g. John Cameron» (37–38) и «here the orthodox are divided … thus the celebrated Amyraldus. But
+he inaccurately confounds regeneration … with conversion» (46–47). Отпечаток подтверждён сканом Принстонской
+духовной семинарии и каталожными записями (OpenLibrary, Bowdoin, Bates, со ссылками на Evans, Trumbull и ESTC),
+то есть цепочка «страница → книга → экземпляр» замкнута ⇒ `A2`. Выше — нельзя: листа не читали, а сам трактат
+есть выписка из «Theologia theoretico-practica» (VI.iii.757–774, «De Redimendorum Regeneratione»); локатор
+известен по вторичной статье, и он записан в строку как будущий адрес `A1`. Утверждение, из-за которого строка
+вообще появилась, при этом остаётся ровно тем, чем было: Маастрихт называет Кэмерона и Амираута *среди
+разделившихся и поправленных*, а не одобрительно; колонка «почему на четыре» теперь говорит это прямо.
+
+**2. Хамфрей, `FP-160`: `C` → `B1`.** Страница `?p=4407` называет трактат целиком, с выходными данными и
+пагинацией (John Humfrey, *The Middle-Way in One Paper of Election & Redemption*, London: for T. Parkhust,
+1673, 24–40) — по правилу круга 23 этого довольно для `B1`; независимой каталожной записи на это издание найти
+не удалось, поэтому `A2` строке не положено. По существу строка получает именно то, что обещала: одно
+искупление в двух «respect'ах», «all are redeemed, and also the Elect only», самопризнание «it is an
+Inconsistency I cannot fully, but half approve» и встречный упрёк: «Redemption Special does indeed» разрушить
+свободу благодати. Держать в памяти: снят Fragment 1 из 9, дальше по странице текст может сказать и
+противоположное.
+
+**3. Мэнтон, новая строка `FP-207`: сразу `A2`.** Различение «нравственная немощь вместо естественной» («Our
+non posse is non velle … The impotence is rather moral than natural») — ровно то ядро, из-за которого в реестре
+держатся строки о Хопкинсе и о формуле «не может ⇒ не хочет». Строка вводится отдельной, а не приписывается
+указателю вслепую: проповедь названы том и страница, набор из 22 томов датирован 1870–1875 по каталогам, а
+страница 332 проверена *по оглавлению тома*: блок «Sermons Upon 1 Peter i.23» начинается на 299, следующий
+блок — на 337, значит названная страница лежит внутри названного блока. Это слабее, чем снятый лист, и сильнее,
+чем голое заглавие: отсюда `A2`, но не `A1`. Год самого тома в каталогах расходится (1873 против 1874) —
+оговорка записана в строку.
+
+**Ловушка, ради которой этот круг стоит запомнить.** В заголовке страницы Хамфрея висит гиперссылка на
+Google Books — и ведёт она не на трактат, а на словарь биографий 1891 года, где Хамфрей просто помянут.
+Открой её невнимательно — и в реестр попадёт «подтверждение издания», которого нет. Вторая мелочь того же
+рода: книготорговец в странице напечатан «Parkhust», в каталогах — «Parkhurst»; сверка по одному написанию
+даёт ложное «подтверждений нет».
+
+**Правила, которые ввёл этот круг.**
+
+1. До `A2` дорастает не только подтверждение отпечатка, но и подтверждение *объёма* названной страницы — когда
+   страница попадает в названный блок по оглавлению тома; при одном только названном заглавии это ещё `B1`.
+2. Гиперссылка, висящая на единице разбора, — отдельный объект проверки: она ничего не подтверждает, пока её
+   адресат не опознан (то же, что правило круга 19 про чужие каталоги, применённое к собственным ссылкам).
+3. Имена издателей и годы сверяются во всех написаниях, которые встречаются в источнике; «совпадений нет» при
+   одном написании — это результат поиска, а не факт об издании.
+
+**Ревизия круга 23 на этих же основаниях.** §23 обещал снять адрес очереди у `FP-165`, если подтверждение
+будет найдено, — снято здесь, задним числом ничего не переписывается: строка §23 остаётся в файле как
+отчёт о том круге. Из трёх позиций, которые §23 назвал незакрытыми, закрыты две (Маастрихт и Мэнтон);
+остались второй трактат Хамфрея (`?p=4031`), повтор Рим 8:32 (`?p=12483`), латинская линия локаторов Восса,
+страницы Фрейзер и Александра и датировка немецкого оригинала Бергия.
+
+**Что в реестре после круга 24.** Строк: 207 (было 206). Распределение: A1 25, A2 32, B1 34,
+B2 6, C 110 (было 25/30/33/6/112). Строк с адресом очереди: 110 (было 112); `C` стало меньше на две,
+а адресов — ровно на два, так что один-к-одному держится и после снятия. Доля `A1` — 12 %. Снятые тексты —
+тремя файлами в Drive-папке `10.9` от 2026-10-23 (их байты и md5 — в `driveMirrors.captures20261023e`, записи о
+них — в индексе библиотеки).
+
+**Не закрыто этим кругом.** Fragments 2–9 страницы Хамфрея и его второй трактат; латинские листы Маастрихта
+(будущее `A1`); сама страница 332 у Мэнтон снята не напрямую; локаторы Восса по Amandus и Turretin; страницы
+Фрейзер и Александра; год и ISBN «The Hampton Court Conference»; письма Кэмерона.
+
+## 25. Круг 25: цитата обязана читать локатор под собой, а не под страницей
+
+Круг 24 поднял Хамфрея из «непрочитанного» и вписал в `FP-160` (*Middle-Way*, 1673) пять формул. Три из них принадлежат другому сочинению того же автора — *Free Thoughts* (1710), 8–15, — а «double Respect» и «in these diverse Respects…» стоят у индексатора в блоке с совсем другими выходными данными. Дефект был не в снимке (снято всё, что страница отдавала) и не в поиске (по каталогам искали), а в разборе: страница указателя содержит несколько блоков, у каждого своя цитатная строка, а я прочитала её как один текст с одной ссылкой внизу.
+
+Что сделано в этом круге:
+
+1. **Строка `FP-160`**: формулы *Free Thoughts* из неё сняты, возвращены те, что в самом деле стоят под локатором 1673 г. («both universal and special grace together; and the one is Applicatory…», «a double thing … Salvation for Judas … Repentance for Peter», «Gratia universalis simpliciter…», «the fruit or offspring of our Election»). Отпечаток 1673 г. подтверждён каталожной записью Folger 488217, где *Middle-Way* перечислен в составе собрания *Mediocria* (London: T. Parkhurst, 1674), то есть назван библиотекой независимо от блога ⇒ `B1` → `A2`. Выше не поднимать: страницы 24–40 и 36–37 принадлежат одному только индексатору, листа не читали.
+2. **Новая строка `FP-208`** — *Free Thoughts* (1710), 8–15: перенесённые формулы («double Respect», «diverse Respects», «an Inconsistency I cannot fully, but half approve», «Election takes care that Redemption be not in vain», «Universal Conditional Remission… The Act must be read… we find Conditions in it») плюс та же оговорка о Христе как «Executor of his Father's Election»; отпечаток стоит в PRDL вместе со ссылкой на скан Internet Archive ⇒ `A2`. Всего строк в реестре **208**: `A1` 25, `A2` 34, `B1` 33, `B2` 6, `C` 110; очередь пересъёма не изменилась (110) — ни одна строка из `C` в этом круге не поднималась.
+3. **Поправка к собственному утверждению о периметре смешанного письма** (§23 выше, гл. 07): лан документов сканируется блокирующе с круга 22, «открытой дыры» в том виде, как она была описана, нет.
+4. **Проверяемая часть этого круга — процедурная, и то, что остальное не проверяемо, надо называть.** Машинной проверки «цитата приписана не тому сочинению на той же странице» в гейте нет, и в этом круге её не добавлено: год отпечатка в строке совпадал с годом в локаторе, слова цитат в снятом тексте присутствовали, все счётчики сходились — всё, что гейт умеет считать, было в порядке, и он прав: он считает, а не читает. Что добавлено в данные: `note` записей о снятом носителе обязана называть **блок страницы**, а не только «фрагмент N из M», и `whatNotChecked` обязана перечислять блоки, не разобранные до локатора. Остальное — обязанность читающего: локатор читается под цитатой, а не под страницей, и страница не считается прочитанной, пока не дошла до последней своей цитатной строки.
+
+Что круг не закрыл: блоки 3–9 страницы `?p=4407` не читаны (круг 26 дочитал 3–7 — см. §26; чанк 8 оказался служебным текстом сайта, а продолжение за с. 40 — страницей, которая при снятии отдаёт только навигацию); *Mediocria* 1674 как собрание (единственный путь Хамфрея к `A1`) не снималась; «Pracedanea» в снятом латинском и «he first head» у индексатора не сверены ни со сканом, ни с оригинальным набором. Файл-снимок — `cap25_humfrey_attribution.md` в папке `10.9`.
+
+## 26. Круг 26: страница дочитана до последней цитатной строки, и выяснилось, чьим голосом сказана формула
+
+Круг 25 сформулировал правило, но не выполнил его до конца: страницу `?p=4407` он разобрал на два блока, а чанки 3–7 оставил нечитаными, написав об этом в `whatNotChecked`. Круг 26 дочитал. Итог по границам: **снят текст целиком в том виде, в каком его отдаёт указатель** — блок 1710 г. (чанки 0–1, кончается цитатой *Free Thoughts*, 8–15), затем блок 1673 г. (чанки 2–7), который закрывается **повтором того же локатора** после подписи «Deo Gloria, mihi Condonatio. J. H.» и пометкой «[To be continued]». Стало быть, граница блоков была не догадкой, а она видна дважды; написание имени издателя в обоих местах — «Parkhust» (у `?p=4031` — «Parkhurst»), что и объясняет, почему поиск по одной форме имени в круге 24 дал ложное «подтверждений нет».
+
+Что это изменило по существу.
+
+1. **В блоке 1673 г. было больше, чем пять формул.** Добавлены в `FP-160`: различение «Redemption in regard of **Title**» и «to put us also in **Possession**» (второе — Vocation/Effectual Calling, и оно *particular*); возражение против ограничительного чтения из цепи Рим 8:30 (Апостол не сказал «whom he did predestinate, he redeemed» — значит, искупление шире, и это «convincing Argument … for the Universality of Redemption»); «Distinctions to answer this, are but Evasions»; и — для §16 реестра, где декреты сравниваются по формам — английская версия сомюрской формулировки: *«Per modum decreti efficaciter operantis»*, с оговоркой, что избирательный декрет (Electing decree) остаётся «free and absolute, in regard to the condition of it's Application». Хамфрей 1673 г. держит ту же логику, что Сомюр, но без сомюрского аппарата — ещё один случай, что «четыре формы» не привязаны к одной традиции.
+2. **Формула «makes the difference» — не его голос.** Полностью она читается как вывод *из позиции школ*: «when that grace which they set up … leaves the will undetermined and uninclined … mans free will by the cooperation with this grace, or refusal, is that which begins, or puts by his own justification, and consequently makes the difference (in the upshot) between him that is saved, and him that is damned». Круг 24 и круг 25 держали её как тезис Хамфрея, хотя локатор был назван правильно. Отсюда второе правило этого круга — **локатор и голос**: цитата может стоять в верном сочинении под верным локатором и всё равно приписывать автору то, что он отвергает; внутри трактата надо опознавать, кто говорит (здесь — «they», школы и ариане), а не только где напечатано название.
+3. **Опечатку индексатора исправила другая страница того же указателя, а не скан.** На `?p=4031` было «at the end, upon **he** first head of Election»; на `?p=4407` в том же месте — «upon **the** first Head». Правило: **называть, какую страницу указателя ты цитируешь**; «указатель» — не носитель текста, у него нет устойчивой редакции, и пост правился после публикации (комментарий автора от 2 октября 2009: «I have updated the Humfrey file with the material Tony has recently typed out»).
+   Тут же — собственная ошибка этого круга, снятая вторым проходом: черновая редакция §26 утверждала, что сравнение двух страниц дало «пять разночтений набора», и перечисляла «serpsum против ipsum», «in poestate против in potestate» и «æqui librium раздельно/слитно». Ничего этого разночтением не является. Страница `?p=4031` — сокращённый excerpt (с. 36–37) с собственным сносочным указанием индексатора: «some reformatting; bracketed insert mine; some spelling modernized, extended Latin quotation not included; underlining mine». Отсюда: латинского слоя на ней нет вовсе (значит, «ipsum» и «potestate» — не вариант отпечатка, а *нормализация*, а «æqui librium» и «Gratia Auxiliatrix, & Infusa» на ней отсутствуют, и сравнивать было нечего); форма «upon he first head», напротив, — опечатка excerpt, которую полная страница исправляет на «upon the first Head». Полное множество расхождений — семь мест, и они перечислены в таблице снимка строка в строку: пять правок набором (Parkhust/Parkhurst в выходных данных; «upon the first Head, of Election» против «upon he first head of Election»; «which lever the free will of man … from when» против «which lever of free will of man … from whence»; «doe distinguish into Common and Saving» против «do distinguish unto Common and Saving»; «consistent with the Special Grace of Gods Elect: Or inconsistent with it» против «consistent with Special Grace of God's Elect: or inconsistent with it» с добавленным индексатором курсивом) и два молчания excerpt (весь латинский слой с локаторами Руиса и Иоанна; английская фраза про «æqui librium, or equal Ballance»). Правило отсюда строже прежнего: **заметка редактора о проведённых им правках входит в состав ссылки**, и страница, помеченная «spelling modernized», теряет право свидетельствовать о написаниях — а заодно, как видно по списку выше, **число разночтений, названное в прозе, обязано равняться числу строк таблицы, на которую оно ссылается**: в черновой редакции проза называла пять, таблица снимка давала шесть, расхождений было семь.
+4. **Класс не вырос, и это надо сказать прямо.** `FP-160` остаётся `A2`: текста стало больше, свидетельства — нет. Читаем транскрипцию блога 2009 г., а не лист; страницы 24–40 названы тем же индексатором. До `A1` только один путь: снять печатный лист (либо *Mediocria* 1674 целиком, куда трактат вошёл, либо экземпляр 1673 г.), и он в этот круг не испробован.
+5. **Школьный слой Хамфрея не введён отдельной строкой, и вот почему.** Три локатора «Ruiz» («De prædestinationis exordio Tract. 3 Disp. 17», «De præcip. effec. benevol. Dei erga reprob. Sec. 2», «De prin. imped. justif. Sec. 5») и «Jb.» (Ioannes a S. Thoma, Dist. 16 Sec. 2, Dist. 20) сходятся с комментаторской традицией к I-II q. 23 — но сверки по каталогам в этом круге не делалось, а вводить `C`-строку ради цитаты *из цитаты* означало бы раздуть реестр и очередь на число, которое потом придётся снимать с печати. Она записана ведущим здесь и в открытой очереди §26, а не строкой реестра; число строк реестра этим кругом не менялось (208), очередью — тоже (110).
+
+Что осталось открытым после круга 26: продолжение выписки за с. 40 («[To be continued]» ведёт в `theologicalmeditations.blogspot.com/2009/09/more-from-john-humfrey-16211719-on.html`, страница при снятии отдала только навигацию — контент грузится скриптом); *Mediocria* 1674 как собрание; каталожная сверка Руиса и Иоанна а Санкто Томаса; латинские листы Маастрихта (TPT VI.iii.757–774); лист 332 у Мэнтон; локаторы Восса по Amandus и Turretin; страницы Фрейзер и Александра; год и ISBN «The Hampton Court Conference»; письма Кэмерона; первое издание Твисса; Тестар отдельной строкой. Файл-снимок — `cap26_humfrey_middleway_end.md`, он лежит в `10.9` снимком этого круга, и снимок этот переснимался кругом дважды: вытесненные редакции остаются в той же папке с пометкой «УСТАРЕЛО», а id, байты и md5 всех трёх — в `driveMirrors.captures20261023g` и в записях индекса библиотеки; слепок реестра в `05.` перелит под финальными байтами тем же кругом. Пересъём делался дважды не потому, что менялся источник, а потому, что первая редакция переставляла столбцы собственной таблицы, а вторая не досчитывала в ней строки — то есть проза круга оба раза была сверена с памятью пишущего, а не с файлом, который она описывает. Свидетельство при этом не переписывают на месте: правка снимка — новый объект, прежний помечается «УСТАРЕЛО».
+
+## 27. Круг 28 (2026-10-24): Фрейзер поднят независимой библиотечной записью, а молчание носителя оказалось моим недочитанным
+
+**Правка против себя же, и она дороже находки.** В строке `FP-162` с круга 23 стояло «сама страница печати не
+называет (последний её фрагмент — только сайдбар)». Фраза была написана после того, как `?p=12519` сняли **первым**
+фрагментом из трёх. Второй фрагмент кончается полным выходным сигналом — *A Treatise on Justifying Faith … Together
+with an Appendix Concerning the Extent of Christ's Death* (Edinburgh: Printed and sold by **William Gray at Magdalen's
+Chappel within the Cowgate Head**, **1749**), **231–236 — и редакторской оговоркой «Some spelling modernized; some
+reformatting; some sentence reconstruction; italics original; bracketed inserts mine; and underlining mine». Третий
+фрагмент и правда сайдбар, но от этого «страница ничего не называет» правдой не была: называл второй. Правило круга:
+**прежде чем писать «носитель молчит», надо дочитать носитель до конца.** Круг 26 записал то же самое про цитатную
+строку под цитатой — теперь про то, чего носитель, по моему слову, якобы не говорил.
+
+**Почему `A2`, а не выше.** Лестница требует совпадения минимум в двух независимых снятиях: второе — запись
+Google Books, оцифрованная с экземпляра Британской библиотеки 12 января 2015 («William Gray», 1749, 351 с.). Третье
+указательское место, `?page_id=2823` («Further Reading»), называет то же издание и добавляет «[Specifically the
+appendix is well worth reading.]» — но это тот же блог, так что независимостью не считается. `A1` не ставится по
+двум причинам: лист не сверен, а автоматическое оглавление оцифровки ставит «Objections against a sufficient
+universal» на 216 и «An Appendix concerning the Object of Christ's…» на 159 — то есть снятые 231–236 попадают **в
+тело трактата, а не в приложение**, которым озаглавлен кусок. Расхождение записано как вопрос: оглавление
+генерируется машиной, и вычитать из него границы приложения нельзя.
+
+**Мелочь, которая стоит отдельной строки.** В транскрипции напечатано «you must not **fay** absolutely» — это не
+вариант написания и не моя опечатка, а ошибка распознавания долгой `s` (ſay → fay). Строка цитирует страницу так,
+как та напечатала, с пометкой «[так в транскрипции]»: править за индексатором — значит притворяться, что видел
+книгу. Заодно это работает как dating-признак: долгая s живёт в самой оцифровке раннего отпечатка, а не в
+современном наборе.
+
+**Второе закрытие круга: `?p=12483`.** Открытый вопрос был про датировку, и он снят: страница — **не** транскрипция,
+а анонимное эссе самого блога («Posted by: CalvinandCalvinism», рубрика «Short Essays, Notes, and Comments»),
+опубликовано Thursday, October 25th, **2012**, 7:02 pm. Его сноска [1] называет, кому эссе отвечает: **John Piper, *For
+Whom Did Christ Die?*** — следовательно первый абзац страницы («The argument for limited satisfaction: Paul bases the
+certainty of our inheritance…») это голос Пайпера, а не автора блога. Тот же дефект, что с «makes the difference» в
+кругу 26: на одной странице два голоса, и цитата обязана читать локатор под собой. Собственный ход эссе — «конверсия
+термина „us“ в „all“ невалидна, а `modus ponens` и `modus tollens` стоят на ней» — то же движение, что у Фрейзера
+выше, и для массы годится только как свидетельство того, что ход жив в XXI в.; новой строки ради него не заводят.
+
+**Чего в указателе нет, и это названо.** В комментариях к `?p=12519` читатель (AB, 17 мая 2013) утверждает, что
+«JC Ryle also believed in unlimited atonement and limited redemption», и редактор отвечает «Yes to Ryle. He is on my
+to-do list to blog material from him». Строки о Райле не заведено: строка заводится на носитель, а не на обещание
+носителя, иначе масса начнёт расти чужими намерениями. Записано как «проверено, не найдено» — ровно для того, чтобы
+через десять кругов кто-нибудь не поставил в `A2` ссылку на указатель, которого там нет.
+
+**Арифметика.** `FP-162` ушёл из `C` в `A2`, поэтому носителей **208**, классы **A1 25 / A2 35 / B1 33 / B2 6 / C
+109**, адресов очереди **109**: связь 1:1 держится, потому что вместе с классом снята и строка `Q-162`. Два
+нечитанных адреса (`?p=12382`, `?p=12406`) не потеряны — они переехали в колонку «добыть» самой строки: держать в
+очереди адрес без адресата правило 23.2 не даст, а выбросить наводку — значит потерять улику; так что очередь
+осталась множеством **добычи**, а список того, что уже отработано по этой строке, теперь живёт в ней самой.
+
+## 28. Круг 29 (2026-10-24): вторая страница Фрейзера кончается тем же изданием — и снятые куски идут встык
+
+**Что искалось.** В строке `FP-162` после круга 28 оставались два нечитанных адреса, и один из них — `?p=12382`
+(«James Fraser of Brea (1639-1698) on the Double Payment Fallacy», пятница, 5 апреля 2013, 9:01 am, рубрика
+«Double Jeopardy/Double Payment Fallacy») — оказался **вторым куском того же съёмного ряда**: страница кончается
+импринтом *A Treatise on Justifying Faith …* (Edinburgh: William Gray at Magdalen's Chappel within the Cowgate Head,
+1749), **227–231**. Значит снятое в круге 28 (231–236) и снятое сегодня (227–231) идут встык через границу 231, и
+это первое, что круг может сказать о вопросительном знаке, оставленном кругом 28: страницы индексатора **не
+случайны** — две независимые публикации одного блога называют соседние диапазоны одного и того же тома, и ни одна
+из них не противоречит другой.
+
+**Чего это не меняет.** `A1` всё ещё нет: непрерывность диапазонов — внутренняя правдоподобность, а не сверка с
+листом; автоматическое оглавление оцифровки по-прежнему ставит «Objections against a sufficient universal» на 216,
+а приложение — на 159, и снять это может только взгляд в книгу. Класс строки остаётся `A2`, носителей 208, классов
+`A1` 25 / `A2` 35 / `B1` 33 / `B2` 6 / `C` 109, адресов очереди 109 — правка коснулась только содержимого строки.
+
+**Что найдено попутно и записано как улика, а не как строка.** Внутри фрейзерова ответа (третий случай)
+напечатана ссылка семнадцатого века: «as Mr. Shepherd judiciously affirms in his *Select Cases*, pag, 29».
+Строку о Шепарде круг не заводит: из одной цитаты внутри чужого трактата неизвестно, **что именно** Шепард
+утверждает, а строка массы — это утверждение, а не фамилия. Адрес записан в колонку «добыть» самой строки
+`FP-162`, чтобы наводка не пропала и не превратилась в «массу, выросшую на одну фамилию».
+
+**Оговорка индексатора и оценка редактора — оба в деле.** На этой странице оговорка короче («Some spelling
+modernized, some reformatting, italics original; and underlining mine»), а в комментариях сам редактор пишет, что
+«a lot of his answers are not bullet-proof and would be easily dismissed by strict limited satisfaction
+advocates» и что он «will be blogging some other sections in the days to come» — то есть транскрипция объявлена
+выборочной незавершённой работой. Для массы это значит ровно одно: отсутствие цитаты в указателе не является
+свидетельством её отсутствия в книге, и «указателя нет» нельзя записывать как «текста нет». Заодно страница даёт
+третий образец той же болезни распознавания, что и круг 28: в транскрипции напечатано «the **fame** debt», «the
+malefactor may **buffer** punishment», «the demerit **cf** the elect» — долгая `s` (ſame, ſuffer, ſuch)
+читается как `f`/`c`, и это уже не единичная описка, а систематический дефект снятия: цитировать надо дословно, с
+пометкой, а не «исправлять за индексатором».
+
+**Долг, названный до того, как он стал привычкой.** Снимок этой страницы в этот круг на Drive не заливался:
+находка целиком помещается в строке реестра, а отдельный носитель добавит в индекс запись, которую нечем
+сверить (md5 со стороны Drive круг не запрашивал). Слепок реестра при этом перелит шестым объектом — без этого
+имя зеркала врало бы о дереве.
+
+## 29. Круг 30 (2026-10-24): третья страница Фрейзера — уже не ответ, а тезис
+
+**Что найдено.** `?p=12406` («James Fraser of Brea (1639-1698) on 2 Peter 2:1», понедельник, 15 апреля 2013, 7:14 am,
+рубрика «2 Peter 2:1 (and Jude 4)») кончается изданием того же тома: «James Fraser (of Brea) *A Treatise on
+Justifying Faith … Together with an Appendix Concerning the Extent of Christ's Death* (Edinburgh: Printed and sold by
+William Gray at Magdalen's Chappel within the Cowgate Head, 1749), 194-195». То есть третья отснятая часть лежит
+**раньше** двух предыдущих: 194–195, потом 227–231, потом 231–236. Это меняет оценку страниц индексатора:
+автоматическое оглавление оцифровки даёт «An Appendix concerning the Object of Christ's…» на 159 и «Objections
+against a sufficient universal» на 216, и обе пары номеров попадают внутрь разных объявленных блоков — 194–195 в
+промежуток [159, 216), 227–236 в промежуток [216, 253). Указатель перестаёт выглядеть человеком, который
+дописывает страницы по памяти; он выглядит человеком, у которого том перед глазами. `A1` это всё ещё не даёт:
+промежуток [159, 216) — единственное, что различает две гипотезы (то же ли это приложение, чьё название заглавие
+книги обещает «concerning the Extent», или соседнее «concerning the Object»), и различает их только лист.
+
+**Существо.** Первые два куска были разбором довода «нельзя взыскать дважды»; этот — утверждение, и он для массы
+дороже, потому что даёт Фрейзеру не возражение, а позицию: Христос «купил отверженных» (2 Пет 2:1–3, со ссылкой на
+Откр 5:9 и 14:3–4 и Гал 3:13), «искупление имеет более широкую сферу, чем избрание», «может быть общее обычное
+искупление всего человечества, я не осмеливаюсь противиться такому свету», и — «если бы Он захотел, мог дать Сыну
+умереть за всех, и, сделав это, мог выразить это словами, достаточными, чтобы мы уверовали; если слова могут это
+выразить, я думаю, что мы это имеем». Класс строки остаётся `A2` и не двинется, пока локаторы не сверены с листом:
+свидетельство — транскрипция современника, а не напечатанный разворот.
+
+**Правка против себя же, вторая.** В строке `FP-162` адрес `?p=12382` стоял одновременно в описании находки и в
+списке «Добыть» (в тексте к тому же слиплись предложения: «…незавершённой самим издателем Добыть:» без точки).
+Прочитанное надо вычёркивать из «добыть» в том же касании, в котором описываешь находку, иначе строка врёт не о
+носителе, а о черновике. После правки в «добыть» у `FP-162` не осталось ни одного адреса указателя: прочитаны все
+три (`?p=12519`, `?p=12382`, `?p=12406`), остались только колляция листов и сопоставление с `18_` и с ответом
+Оуэна 1650 г.
+
+**Правило, дописанное в `17_`.** Если издатель серии пишет «I will be blogging some other sections in the days to
+come», обещание не становится носителем; но когда обещанное приходит и *предшествует* уже снятому по страницам,
+порядок извлечения не равен порядку издания — и судить о полноте серии по номерам страниц нельзя: круг 30 добавил
+в строку кусок 194–195, который был напечатан индексатором раньше тех, что мы прочитали первыми.
+
+**Арифметика.** Классы не двигались: носителей 208, `A1` 25 / `A2` 35 / `B1` 33 / `B2` 6 / `C` 109; адресов очереди
+109 — 1:1 держится. Строка `FP-162` осталась `A2`, поэтому очередь не сократилась: закрытие адреса в колонке
+«добыть» — не закрытие строки.
+
+**Поправка к §28, и она дороже самой находки.** Дыра проверки в прошлом круге описана как отсутствующее поле
+`gitFile` — это неверно в объёме, и круг 30 поймал меня на этом дважды: дерево стало 247 549 B / md5 `8e8bfbbbb22df1037ea928e03f7e7c93`, имя живого зеркала обещало 243 996 B, гейт снова промолчал. Числа в этом абзаце — снимок в минуту обнаружения; переливка идёт по числам финального файла, и финальные числа названы в имени нового объекта, а не здесь. Настоящий ключ
+цикла другой: сравнение имени зеркала с деревом выбирает записи индекса по значению `role == "registry-mirror"`,
+и во всех 85 записях такое значение носит ровно одна — снимок JSON-сводки круга 20, который проходит проверку лишь
+потому, что честно помечен `lagBehindGit: True`. Живое зеркало реестра заведено с `role: mirror-of-git`, поэтому
+прошлая переливка шестым объектом сверку не включила: `gitFile` нужен (им же проверяется существование
+первоисточника, но в другом цикле) и его мало. Запись круга 30 заведена с `role: registry-mirror`, запись круга 29
+переведена в `registry-mirror-superseded` — после этого проверка видит живой слепок впервые за три круга, и
+переливка сделана до коммита, а не «когда-нибудь». Проверка обходом, которую можно повторить:
+
+    python3 -c "import json,pathlib,collections; i=json.loads(pathlib.Path('ИСКУПЛЕНИЕ/data/atonement-library-index.json').read_text(encoding='utf-8')); print(collections.Counter(str(x.get('role')) for x in i['records']))"
+
+Дыры это не закрывает, и написано здесь нарочно: правило доверяет классификатору, который я сама проставляю руками,
+внешней сверки с Drive нет (метаданные из  `get_file` остаются тем, что я о них записала), и мутационная батарея
+такого класса ошибок не ловит по-прежнему, потому что ключевое поле — наличие и значение `role`, а не значение
+байтов. Это пределы дорожки, а не решённая задача.
+
+## 30. Круг 31 (2026-10-24): печать нашлась без сканов — полнотекстовый поиск по оцифровке Принстона
+
+**Что произошло.** Материала от человека не потребовалось: тот же том 1749 г. лежит в открытой оцифровке Принстона
+(`archive.org`, item `treatiseonjustif00fras`, 364 листа, «Edinburgh : Printed by William Gray»), и у неё есть
+индекс полного текста по OCR слоя. Это другой инструмент, чем «смотреть картинку», и он даёт ровно то, чего не
+хватало: текст листа и его номер. `FP-162` поднят из `A2` в `A1` с пометкой «по OCR-слою оцифровки».
+
+**Что сверено.** «Object VII» с формулой «he that takes double Satisfaction for one and the felf fame Debt he is
+unjuft» начинается на листе 247; смещение к печатной пагинации — +20, проверено дважды: строка оглавления
+«An Appendix concerning the Object of Chrift's Death, 159» сидит на листе 15, а бегулец самого приложения — на
+листе 179, то есть на печатной 159. Первая же страница двойного удовлетворения у индексатора (227) верна до
+единицы; 194–195 лежат внутри приложения [159, 216) — того самого, которое титул обещает как «concerning the
+Extent of Christ's Death», а бегулец печатает как «concerning the Object». Вопрос, висящий с круга 23, закрыт
+печатным листом, а не правдоподобием.
+
+**Побочная находка дороже главной.** На печатной 205 (лист 225) напечатано: «hence Mr. Shepherd faith frequently,
+Chrift bought the whole World to himfelf» — приписывание Шепарду всеобщего купления принадлежит не современным
+спискам, а современнику, напечатанному в том же споре. Заведена строка `FP-209` классом `B1`. Отказ круга 29
+заводить Шепарда («фамилия — не утверждение») остаётся верным, и именно он позволил теперь отличить фамилию от
+напечатанного утверждения: утверждение нашлось — строка появилась.
+
+**Потеря, найденная при починке (и она страшнее отсутствующего байта).** Прошлый круг, вставляя в строку описание
+третьего куска, оборал строку так, что колонка локатора целиком выпала: `row[:row.rfind('|')]` отсёк не хвост, а
+всю ячейку — три тысячи символов, в том числе сверку с записью Google Books, оговорку индексатора и след
+*Michod-Kedoshim*. Гейт этого не увидел: он считает строки, классы и байты, он не читает смысл. Потерянное
+восстановлено из коммита `50e96cf` (строка взята оттуда целиком, поверх наложены правки этого круга), и это
+последний круг, где правка ячеек реестра делается вырезанием хвоста: дальше ячейки собираются списком, как здесь.
+
+**Честный долг.** OCR слоя — чтение листа машиной, не глазом; сверка с изображением листов 247–256 и 214–215 не
+сделана. Страница *Select Cases* (29) не подтверждена: цитата через границу листа поиском не ищется. Том кейсов
+надо добыть — он в колонке «добыть» у `FP-209`.
+
+**Арифметика.** Носителей 209: `A1` 26 / `A2` 34 / `B1` 34 / `B2` 6 / `C` 109; очередь — 109 адресов, 1:1
+не сломалась (`B1` очереди не требует). Строки с проверенными выходными — 63 из 209 (30,1 % против 28,8 %),
+прочитанных по печати — 26 (12,4 % против 12,0 %).
