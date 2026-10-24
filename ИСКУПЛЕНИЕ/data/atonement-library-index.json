@@ -1542,15 +1542,13 @@
    "name": "2026-10-23 — Фрейзер из Бреы — Рим 8:32, возражение VIII и ответ (снято с ?p=12519).md",
    "role": "material",
    "rights": "PD",
-   "readState": "pages_seen",
+   "readState": "locator_extracted",
    "aboutRows": [
     "FP-162"
    ],
    "citedBy": [],
-   "queueRows": [
-    "Q-162"
-   ],
-   "locator": "",
+   "queueRows": [],
+   "locator": "Edinburgh: Printed and sold by William Gray at Magdalen’s Chappel within the Cowgate Head, 1749, 231–236",
    "note": "Fragment 1 из 3; ответ на довод «нельзя взыскать дважды» через «inadequate cause» и условие состояния; печати нет (последний фрагмент страницы — сайдбар) ⇒ строка остаётся `C`, 2 фрагмента не читаны",
    "capturedAt": "2026-10-23T19:52:29Z",
    "localMd5": "2c58f0ed45476797493b16aaea32fd7f",
@@ -1558,7 +1556,10 @@
    "driveMd5Verified": "2c58f0ed45476797493b16aaea32fd7f",
    "driveBytesVerified": 3704,
    "sourceUrl": "calvinandcalvinism.com/?p=12519",
-   "registryRowClass": "C"
+   "registryRowClass": "A2",
+   "correctionNote20261024": "снятый кругом 23 фрагмент 1 из 3 обрывался до выходных данных, и в записи было написано «печати нет … строка остаётся C» — неверно: фрагмент 2 той же страницы кончается полным импринтом (Gray, 1749) и страницами 231–236. Класс строки поднят до A2 (импринт совпал с записью Google Books, оцифрованной с экземпляра British Library), очередь Q-162 снята вместе с выходом строки из C. Файл-снимок на этом месте не дополнялся: в нём по-прежнему лежит только фрагмент 1, и байты/md5 записи относятся к нему, а не к прочитанному сегодня",
+   "localNote": "localBytes/localMd5 = побайтовый слепок фрагмента 1 из 3 (2026-10-23); текст фрагмента 2 существует только в чтении круга 28 и в строке FP-162 реестра — в файл он не дописан, и это названо",
+   "measuredAtGit": "2026-10-24T11:56:56Z"
   },
   {
    "folder": "10.9",
@@ -1772,11 +1773,16 @@
    "gitFileLinesAtUpload": 795,
    "uploadedAt": "2026-10-24T11:07:38Z",
    "md5VerifiedFromDrive": "566c1323a72b9f7d2fd38810850a1a67",
-   "lagBehindGit": false,
-   "measuredAtGit": "2026-10-24T11:09:57Z",
+   "lagBehindGit": true,
+   "measuredAtGit": "2026-10-24T11:57:37Z",
    "note": "слепок канона, залитый побайтово из рабочего дерева upload_file после пересборки песочницы: имя называет 208 строк, 228373 B и md5 566c1323a72b9f7d2fd38810850a1a67 — все три значения сверены с git-файлом (ответ загрузки и get_file с полями size и md5Checksum вернули ровно их); побайтовое скачивание не исполнялось сознательно, и в слове «сверены» заявлен именно md5, возвращённый Drive. Третий слепок этого круга (1BW7eqH…, 227376 B) был точным до 11:03Z, когда рабочее дерево откатилось к 44e53e0; коррекция §26 переписана заново, и два снимка различаются составом",
    "chainNote": "ряд снимков в этой папке: круг 26 — этот (208 строк, 228373 B) и его вытесненные заливки 1BW7eqH… (227376 B), 1sR-6NOc… (226534 B), 1wzJ8id… (223589 B), все три помечены «УСТАРЕЛО» и переведены в HOLD_superseded; круг 25 — 1WVMH29c… (212798 B), промежуток круга 25 — 1JaZZivs… (212791 B), круг 24 — 1wLQnpho… (203924 B), круг 22 — 1gyQFcLi…, круг 21 — 1iv5Us-o…, круг 20 — 1i0AFYBd…, круг 17 — 166ykv_2…, круг 16 — 1Fd9wMIg…",
-   "method": "upload_file из рабочего дерева + get_file (fields=id,name,size,md5Checksum,createdTime) + list_files по папке 13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ; счётчики индекса пересняты этим же обходом"
+   "method": "upload_file из рабочего дерева + get_file (fields=id,name,size,md5Checksum,createdTime) + list_files по папке 13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ; счётчики индекса пересняты этим же обходом",
+   "lagNote20261024": "круг 28 поднял FP-162 из C в A2 и дописал §27, не переливая зеркала: в дереве 842 строк и 237105 байт (md5 c2eddafa5cfaebad2596939f73dd8c10), объект на Drive держит круг 26 (228373 байта, md5 566c1323a72b9f7d2fd38810850a1a67). Переливка — долг следующего круга, и она названа, а не спрятана: имя зеркала по-прежнему говорит о том, что на Drive, а не о том, что в git",
+   "gitBytesNow": 237105,
+   "gitLinesNow": 842,
+   "gitMd5Now": "c2eddafa5cfaebad2596939f73dd8c10",
+   "gitRowsNow": 208
   },
   {
    "folder": "05",
