@@ -289,6 +289,46 @@ def cases():
 
     add("proseCountVsTableAbsent", "!семь", m_prosecount, "прозовое число правится без таблицы: не ловится")
 
+    # 17. Имя живого зеркала врёт о md5, при этом запись имеет роль registry-mirror:
+    # сверка обязана краснеть. Поймано кругом 30 (до перестановки роли молчало).
+    def m_mirrorname_md5():
+        raw = json.loads(IDX.read_text(encoding="utf-8"))
+        live = [r for r in raw["records"] if r.get("role") == "registry-mirror" and not r.get("lagBehindGit")
+                and "35_four_point" in str(r.get("gitFile", ""))]
+        if len(live) != 1:
+            raise AssertionError("не проверен: живых зеркал с ролью registry-mirror найдено %d, ожидалось одно"
+                                 % len(live))
+        rec = live[0]
+        m = re.search(r"md5 ([0-9a-f]{32})", str(rec["name"]))
+        if not m:
+            raise AssertionError("не проверен: в имени зеркала нет md5 — подложить ложь некуда")
+        rec["name"] = rec["name"].replace(m.group(1), "0" * 32)
+        IDX.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+    add("mirrorNameMd5LieCaught", "зеркало в Drive названо md5", m_mirrorname_md5,
+        "в имени живого зеркала md5 обнулён: правило 25 обязано увидеть расхождение с деревом")
+
+    # 18. ДЫРА, перенесённая кругом 30: та же ложь в имени, но у записи снята роль
+    # registry-mirror — сравнение не запускается, и гейт зеленеет. Классификатор
+    # проставляет автор записей, поэтому «зеркало проверено» по-прежнему означает
+    # «я завела запись с нужной ролью». Случай обязан дать PASS.
+    def m_mirror_role_stripped():
+        raw = json.loads(IDX.read_text(encoding="utf-8"))
+        live = [r for r in raw["records"] if r.get("role") == "registry-mirror" and not r.get("lagBehindGit")
+                and "35_four_point" in str(r.get("gitFile", ""))]
+        if len(live) != 1:
+            raise AssertionError("не проверен: живых зеркал с ролью registry-mirror найдено %d" % len(live))
+        rec = live[0]
+        m = re.search(r"md5 ([0-9a-f]{32})", str(rec["name"]))
+        if not m:
+            raise AssertionError("не проверен: в имени зеркала нет md5")
+        rec["name"] = rec["name"].replace(m.group(1), "0" * 32)
+        rec["role"] = "mirror-of-git"
+        IDX.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+    add("mirrorLieInvisibleWithoutRole", None, m_mirror_role_stripped,
+        "та же ложь в имени без роли registry-mirror: не ловится, и это записанное открытое место круга 30")
+
     return out
 
 
