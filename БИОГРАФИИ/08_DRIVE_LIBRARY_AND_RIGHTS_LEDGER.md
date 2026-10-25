@@ -81,7 +81,8 @@
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 13, 2026-10-25, коммит `ad72e30`)~~ | ~~`1tlb5xsyw7mdf-Xc6de5PxJCtlrH_WGo-`~~ → **`SUPERSEDED`**, см. rev 14 |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 14, 2026-10-25, коммит `bb6cbb3`)~~ | ~~`1rAsDqd7JMj4eKDHqSkEBe41Lcae8zb8m`~~ → **`SUPERSEDED`**, см. rev 15 |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 15, 2026-10-25, коммит `73ac6d1`)~~ | ~~`19X_atS_s1CxURmN8KzOZV01R0sHefTW1`~~ → **`SUPERSEDED`**, см. rev 16 |
-| Стивен Чарнок — 00 README AND NAVIGATION **(rev 16, 2026-10-25, коммит `d3e2855`)** | `1-IvUFenV5fsxCpPwYLDwunVMqkHk_8Ir` |
+| ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 16, 2026-10-25, коммит `d3e2855`)~~ | ~~`1-IvUFenV5fsxCpPwYLDwunVMqkHk_8Ir`~~ → **`SUPERSEDED`**, см. rev 17 |
+| Стивен Чарнок — 00 README AND NAVIGATION **(rev 17, 2026-10-25, коммит `d26a496`)** | `1nT41evvQ2X51bfMfK9rxIPpsGDVr9rWm` |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1giMeyUhqxHGFEc9At2H-kJwCbrxOVzpf`~~ → **`SUPERSEDED`**, см. rev 4 |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 4, 2026-10-25, коммит `e64d27d`)~~ | ~~`1kQCmXLcYMth7ijwLU-G5Xgthu2FlXIi9`~~ → **`SUPERSEDED`**, см. rev 5 |
 | Стивен Чарнок — 01 Witnesses and Evidence Hierarchy **(rev 5, 2026-10-25, коммит `54ba4c4`)** | `1ODU8A8uJQh8olYr0AfpnWjMxDxrwzX3x` |
@@ -100,7 +101,8 @@
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 12, 2026-10-25, коммит `ad72e30`)~~ | ~~`1TMEPQI6GyV4bzKxyjdqylB9WbbD-ZCdJ`~~ → **`SUPERSEDED`**, см. rev 13 |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 13, 2026-10-25, коммит `bb6cbb3`)~~ | ~~`1dYmj5as2TjE6n6Ve5EycXCkWazfKuRnp`~~ → **`SUPERSEDED`**, см. rev 14 |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 14, 2026-10-25, коммит `73ac6d1`)~~ | ~~`1MFvflcd-YdaqaiPNLKOHPeqFAcADH1Cy`~~ → **`SUPERSEDED`**, см. rev 15 |
-| Стивен Чарнок — 04 Character Ministry and Theology **(rev 15, 2026-10-25, коммит `d3e2855`)** | `1e8X1iAL-U7tITV62wFGEdNtjCmxFqiAd` |
+| ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 15, 2026-10-25, коммит `d3e2855`)~~ | ~~`1e8X1iAL-U7tITV62wFGEdNtjCmxFqiAd`~~ → **`SUPERSEDED`**, см. rev 16 |
+| Стивен Чарнок — 04 Character Ministry and Theology **(rev 16, 2026-10-25, коммит `d26a496`)** | `162uRVhRJVI2IRjt9FDGK0JRj_PR1UGNC` |
 | Стивен Чарнок — 05 Controversies and Claim Audit **(rev 2, 2026-10-25, коммит `1439b96`)** | `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` |
 | Стивен Чарнок — 06 Corpus Access Matrix and Locators **(rev 3, 2026-10-25, коммит `54ba4c4`)** | `1eTDM6P4SHBQDdG9cL7XXHLMYTFF69RCL` |
 | Стивен Чарнок — 07 Repo Crosslinks and Drive Mirror | `1FZtigfn0Ta8IA8BfRFgpufcwwQ37Hcpk` |
@@ -118,7 +120,8 @@
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 2, 2026-10-25, коммит `ad72e30`)~~ | ~~`1s3Hjc6ldpzYydsSuZG6WX9fW_JcptLyu`~~ → **`SUPERSEDED`**, см. rev 3 |
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 3, 2026-10-25, коммит `bb6cbb3`)~~ | ~~`1Lbg1ez5qfZlfUEapWYXV4xwbjN4lJ2os`~~ → **`SUPERSEDED`**, см. rev 4 |
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 4, 2026-10-25, коммит `73ac6d1`)~~ | ~~`13oighw6oBUX-q5oNR1wyaVmF5QCeXjRr`~~ → **`SUPERSEDED`**, см. rev 5 |
-| Стивен Чарнок — 16 Series Architecture and Persons Chain **(rev 5, 2026-10-25, коммит `d3e2855`)** | `1uhq0WQZUTDnkcZMcvcfvA--JW69OgSrP` |
+| ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 5, 2026-10-25, коммит `d3e2855`)~~ | ~~`1uhq0WQZUTDnkcZMcvcfvA--JW69OgSrP`~~ → **`SUPERSEDED`**, см. rev 6 |
+| Стивен Чарнок — 16 Series Architecture and Persons Chain **(rev 6, 2026-10-25, коммит `d26a496`)** | `1ICM2v1PQd-Cn-61CiKXCcJGbnn-Qc1u1` |
 | Стивен Чарнок — 17 PROMPT Parallel Agent Historical Context **(rev 1, 2026-10-25, коммит `ad72e30`)** | `1AXv0fJTyy3OCQJBdSfYm1QE6vxs6GZzf` |
 
 Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
@@ -132,16 +135,16 @@
 | Чарнокский `00 README AND NAVIGATION`, тома **01, 02, 03, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` (Чарнок 00), `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` (03), `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` (ledger), `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` (01), `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` (02), `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` (04), `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` (05), `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` (БИОГРАФИИ 00) | **актуальны** (коммит `1439b96`); прежние копии помечены `SUPERSEDED` и **не удалялись** |
 | — | **Все зеркала томов отдела приведены к актуальному состоянию** (16 томов + rev 2 файлы). Отстающих копий не осталось | — |
 
-**Состояние на 2026-10-25, коммит `d3e2855`: отстающих зеркал не осталось.** **Шестнадцатая
-волна** загружена 2026-10-25: тома **00, 04, 16** (причина — **§0Q**: «A DISCOURSE UPON THE
-Wisdom of God», Рим. 16:27, стр. 341–416, **102 сноски** — **десятый** дискурс фолианта;
-**Лазарь Сеаман** в аппарате — тот, чья смерть открыла вакансию Crosby Hall, то есть **петля в
-цепи лиц**; Гомарус, Стеуко, Чарльтон, Кастельон, Лод против иезуита, Бредвардин, Ямвлих,
-Маунтагю против Селдена, Полхилл против Шерлока; praeparatio evangelica на языческой религии;
-итого **1416 сноска в десяти дискурсах фолианта**). Прежние rev 15 / rev 14 / rev 4 копии
-помечены `SUPERSEDED` и **не удалялись**. Актуальные ревизии: 00 = rev 16, 01 = rev 5,
-02 = rev 7, 03 = rev 7, 04 = rev 15, 06 = rev 3, 12 = rev 4, 15 = rev 5, 16 = rev 5,
-**17 = rev 1**, реестр = rev 15. Все 15 томов отдела
+**Состояние на 2026-10-25, коммит `d26a496`: отстающих зеркал не осталось.** **Семнадцатая
+волна** загружена 2026-10-25: тома **00, 04, 16** (причина — **§0R**: «A DISCOURSE UPON THE
+Power of God», Иов 26:14, стр. 417–492, **227 сносок** — **одиннадцатый** дискурс фолианта;
+**три `LOCATOR_HOLD` сняты** — Савонарола *Triumphus crucis*, Мишель Ле Фоше на Деяниях, Филипп
+де Гамаш как сорбоннский комментатор *Summa* Аквинского; «Greek in the Temple» частично прояснено
+как сборник греческих проповедей; **Креллий ×7**, причём *De Deo* cap. 22 — в дискурсе о силе;
+итого **1643 сноски в одиннадцати дискурсах фолианта**). Прежние rev 16 / rev 15 / rev 5 копии
+помечены `SUPERSEDED` и **не удалялись**. Актуальные ревизии: 00 = rev 17, 01 = rev 5,
+02 = rev 7, 03 = rev 7, 04 = rev 16, 06 = rev 3, 12 = rev 4, 15 = rev 5, 16 = rev 6,
+**17 = rev 1**, реестр = rev 16. Все 15 томов отдела
 и все три файла уровня `БИОГРАФИИ` имеют актуальные Drive-копии. **Третья волна rev 3** загружена
 2026-10-25 по итогам коммитов `e4dc14`, `4b898ef`, `ef6ab9e`, `7135746`, `5cd7d53`, `c1ed17a`,
 `7a28e89`, `976dbfa`:
