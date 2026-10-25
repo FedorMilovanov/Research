@@ -1,8 +1,8 @@
 # SUNO Hymns & Dutch Reformed Hymn Research
 
 **Project ID:** SUNO-HYMNS-NL  
-**Snapshot date:** 2026-10-25  
-**State:** third pass (2026-10-25). Existing-work inventory recorded; two historical questions advanced with primary witnesses; one new candidate researched to a lyric draft. Asset verification and prompt recovery remain open.
+**Snapshot date:** 2026-10-26  
+**State:** publication pass (2026-10-26). DUTCH-005 carries a full publication package — YouTube title, description, tags, two pinned comments and a Telegram post — but **nothing is generated, chosen or published**. Earlier works keep their states; prompt recovery for DUTCH-001/002/003 is still open.
 
 ## Purpose
 
@@ -23,6 +23,8 @@ Before making changes, follow the Research repository instructions in this order
 4. data/repository-evidence-policy-v2.json.
 5. 00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md.
 6. This project README, then the SUNO or RESEARCH lane README relevant to the task.
+7. For anything that ends in a public post — title, description, pinned comment, Telegram post, tags — read `SUNO/PUBLICATION_LANE.md` before drafting. It names the normative channel standards, the three copy files and the gates, so no agent has to guess where a formatting rule lives.
+8. `RESEARCH/LESSONS_AND_GUARDS.md` — the register of errors already made in this project, each with the guard that now catches it.
 
 The root Research authority and evidence policy remain controlling. Nothing in this directory can redefine global source classes, HOLD semantics, rights rules, or publication approval. This is a scoped project index, not a replacement authority.
 
@@ -30,11 +32,15 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 
 - **SUNO/README.md** — production workflow and state model.
 - **SUNO/STATUS_LEDGER.md** — known prepared works, incomplete checks and publication boundaries.
+- **SUNO/PUBLICATION_LANE.md** — the bridge to the channel standards: which repository is normative for markup and comment layout, the three copy files, the four gates, and the traps that already cost a release. Read this before editing any copy.
+- **SUNO/DUTCH-005_YOUTUBE.md** — title options, the ready description (4182 characters, 12 bold and 5 italic spans), hidden tags, a checklist, and § 0: the verbatim post-mortem of the markup that broke live in Studio.
+- **SUNO/DUTCH-005_TELEGRAM.md** — the @lordchrist post for the same hymn, in Telegram markup (`**bold**`, `*italic*`), with an HTML twin.
+- **SUNO/DUTCH-005_PINNED.md** — two pinned comments for YouTube: one on the hymn, one on how the Dutch sang, both in YouTube markup and gated.
 - **SUNO/STYLE_AND_PRODUCTION_RULES.md** — accumulated user preferences and reproducibility rules.
 - **SUNO/ASSET_MANIFEST.md** — reported local filenames, exports, metadata and unresolved verification.
 - **SUNO/DUTCH-004_PRODUCTION_PACKAGE.md** — the next work: form decision, gloss, Russian draft, deviations, musical brief, authored prompt and a per-element status table.
 - **SUNO/DUTCH-005_PRODUCTION_PACKAGE.md** — *Heerlijckheyds Loff* (1676, pp. 155–158): ten-stanza gloss, Russian adaptation v0.1, eight declared deviations, and two style directions for SUNO (one primary, one option).
-- **SUNO/DUTCH-005_LYRICS.md** — clean Russian lyric, revision v0.3, with changelog and a **measured** syllable table.
+- **SUNO/DUTCH-005_LYRICS.md** — clean Russian lyric, revision v0.9, with changelog and a **measured** syllable table; one open defect remains at stanza 3.2.
 - **SUNO/DUTCH-005_LYRICS_SUNO.md** — the same lyric with `[Intro]`/`[Verse n]`/`[Outro]` tags and three performance accents, for the SUNO editor.
 - **SUNO/DUTCH-005_STYLE.md** — style only: **five** distinct directions A–E (organ/monastic, Renaissance wind consort, viol consort, Byzantine ison, metrical chorale), each with exclude list, purpose and risk.
 - **RESEARCH/README.md** — source-evidence method for historical hymn research.
@@ -46,7 +52,10 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **RESEARCH/CLAIM_LEDGER.md** — claim-by-claim support, caveats and typed HOLDs.
 - **RESEARCH/SONGBOOK_REGISTER.md** — publication editions and the actual access layer.
 - **RESEARCH/GENRE_AND_CLASSIFICATION.md** — controlled distinctions between psalms, devotional songs, sonnets, later adaptations and modern settings.
-- **RESEARCH/REVIEW_LOG_2026-10-25.md** — corrections made by the second audit and by the third and fourth passes.
+- **RESEARCH/LESSONS_AND_GUARDS.md** — errors already made in this project, each paired with the guard that now catches it. Read before drafting a lyric, applying a review or generating artwork.
+- **RESEARCH/REVIEW_LOG_2026-10-25.md** — corrections made by the second audit and by every later pass, including the markup post-mortem and the pinned-comment pass.
+- **RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md** — the 75-link source run behind the description and the first pinned comment.
+- **RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md** — the 88-source run behind the second pinned comment: church singing, the organ ban, the voorzanger, the gezelschappen, and Lodenstein's own singing rules from the 1727 preface.
 - **RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md** — the two poems of that title, their relation, and the 1664/1674 date question.
 - **RESEARCH/CANDIDATE_DUTCH-004_DEN_NEDRIGEN_CHRISTEN.md** — researched candidate for the next production.
 - **RESEARCH/DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md** — the eight translation decisions for *Schepselen niet en Jesus al*, with a confidence level per item.
@@ -61,6 +70,8 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **data/author-registry-v1.json**, **data/claim-ledger-v1.json**, **data/songbook-registry-v1.json** — machine-readable authors, reviewed claims and edition histories.
 - **scripts/validate_project_registry.py** — read-only state/cross-reference validation.
 - **scripts/check_ru_lyric.py** — read-only Russian lyric audit: lists words that must carry ё in context, and fails a file that carries more than a handful of stress marks.
+- **scripts/check_youtube_markup.py** — read-only markup gate: a closing `*` or `_` must be followed by a space or end of line, `**` is rejected, markup is rejected in the first paragraph.
+- **scripts/check_revision_consistency.py** — read-only check that the prose names the current lyric revision and does not contradict the files.
 
 ## Status language
 
@@ -101,12 +112,17 @@ From the repository root, run:
 
     python SUNO_HYMNS/scripts/validate_project_registry.py
     python SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/*LYRICS*.md
+    python SUNO_HYMNS/scripts/check_revision_consistency.py
+
+All four gates, including `check_youtube_markup.py`, also run in `.github/workflows/suno-hymns-registry.yml`.
 
 The validator does not repair or modify files. It fails closed on invalid global state values, unknown IDs, missing source references and misleading status combinations.
 
 ## Next useful milestone
 
 For each **existing** track, bring the exact lyric version, the verbatim Suno style prompt, the selected cover, final audio and metadata readback into a reproducible record. Those prompts are still `NOT_CAPTURED`; they must be recovered from the owner, not reconstructed.
+
+For **DUTCH-005**, the copy exists and is gated; the immediate milestones are the owner's decision on the open lyric defect at stanza 3.2, the cover, and the title separator — then a first generation. The copies are **not** publication and carry no URL.
 
 For **DUTCH-004**, the immediate milestones are: the owner's poetic revision of the Russian draft; freezing the lyric and the prompt with a revision hash; and only then a first generation.
 

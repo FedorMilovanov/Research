@@ -1,6 +1,6 @@
 # Handoff for the next Research / Arena agent
 
-**As of:** 2026-10-25, third pass (branch `arena/0bdf988d-research`, continuing PR #236's lane)  
+**As of:** 2026-10-26, publication pass (branch `arena/0bdf988d-research`, PR #237)  
 **Scope:** continue the SUNO and historical-research workstream without inventing missing assets or disturbing Research root authority.
 
 ## Mandatory preflight
@@ -15,6 +15,7 @@ Read the repository root files before touching this project:
 6. SUNO_HYMNS/README.md
 7. The specific SUNO or RESEARCH lane README relevant to the task.
 8. `SUNO_HYMNS/RESEARCH/LESSONS_AND_GUARDS.md` — the register of errors already made here, with the guard that now catches each. Read it before drafting a lyric, applying a review, or generating artwork, so the same mistakes are not repeated at the owner's expense.
+9. `SUNO_HYMNS/SUNO/PUBLICATION_LANE.md` — **before you touch any title, description, pinned comment, Telegram post or tag.** It states which repository is normative for markup and comment layout (`video-channel-manager`), where the three copy files are, which gates must pass, and the seven traps that already cost a release. Formatting rules are not restated in this repository on purpose: one normative text, one place.
 
 Do not promote this scoped project to root authority. Do not change the global evidence vocabulary. Normal repository changes go through a bounded branch and PR.
 
@@ -123,3 +124,28 @@ These are candidates, not approved or completed productions. Re-check the critic
 ## Adjacent work not in the Dutch catalog
 
 The conversation also included a Russian 1 Peter 1 Scripture-song draft with Cantor/organ/monastic-drone section labels, and a separate Passion-confession lyric/visual concept beginning «Не те иудеи, Господь Иисус…». They are recorded as adjacent works only. Their recording/export state and historical attribution are not established here; do not classify them as Dutch historical hymns.
+
+## Where the publication pass left things (2026-10-26)
+
+DUTCH-005 now has a complete publication package for two surfaces, and **nothing is generated, chosen or published**. State is still `LYRIC_DRAFT`.
+
+**New since the sixth pass:**
+
+1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, a 4182-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
+2. `SUNO/DUTCH-005_TELEGRAM.md` — the @lordchrist post in Telegram markup, plus an HTML twin.
+3. `SUNO/DUTCH-005_PINNED.md` — **two** pinned comments: one on the hymn (date under the last stanza, the meaning of the title, `leven`/`lieven`/`loven`, the edition chain, the missing melody), one on how the Dutch actually sang (psalms only, the 1574 organ ban, the `voorzanger`, the house circles, and Lodenstein's own six singing rules from the preface).
+4. `RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` — 88 addresses behind the second pinned comment, with honest statuses: 5 opened and read, 74 found in results, 9 still only library leads. Nothing in either закреп rests on a snippet alone.
+5. `scripts/check_youtube_markup.py` — the gate, wired into CI together with a check that the copy files carry their fenced bodies.
+6. `SUNO/PUBLICATION_LANE.md` — the bridge to the channel standards. Read it first if your task ends in a public post.
+
+**The one thing worth reading before anything else:** Lodenstein's preface to *Uyt-spanningen* (1727 edition, leaves \*3v–\*5r) is not a dedication, it is a manual for singing in a house circle — six rules, including `'t hardste schreeuwen en is het beste singen niet`. That single source carries the second pinned comment and most of the "how they sang" section in the description.
+
+**Do not:**
+
+- deliver marked-up copy to the owner as a block quote — the chat renders `*…*` away and the asterisks never reach the clipboard; always a fenced block;
+- "fix" broken markup by deleting it;
+- carry Telegram `**bold**` into a YouTube file: there it prints literally;
+- call the pinned comments publication, or attach a URL that has not been checked;
+- describe the hymn as written for public worship. It was written for a house circle, and that is the fact the copy is built on.
+
+**Still open, in priority order:** the lyric defect at stanza 3.2 («После земных невзгод»); the cover (references live outside the repository); the title separator `✦` or `✝`; a live Studio check of the description and both pinned comments; the 1676 page images of pp. 155–158 (only the text layer has been read).

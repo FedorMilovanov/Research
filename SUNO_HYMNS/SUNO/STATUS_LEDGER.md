@@ -1,6 +1,6 @@
 # SUNO status ledger
 
-**Snapshot:** 2026-10-25 (fourth pass). Status is based on the project registries and retained working notes, not a scan of the user's entire computer or channel.
+**Snapshot:** 2026-10-26 (publication pass). Status is based on the project registries and retained working notes, not a scan of the user's entire computer or channel.
 
 ## DUTCH-001 — «Всё сотворённое — ничто, Иисус — всё»
 
@@ -67,6 +67,13 @@
 - **Russian text:** `DUTCH-005-RU v0.9` in `SUNO/DUTCH-005_LYRICS.md` — a declared **adaptation** with the v0.5–v0.9 corrections logged in the changelog table, **not approved**. The SUNO-ready text (`DUTCH-005_LYRICS_SUNO.md`) and the style (`DUTCH-005_STYLE.md`) are separate files, as the lane's own rules require.
 - **Styles:** **five** directions in `SUNO/DUTCH-005_STYLE.md` — A epic organ + Georgian male monastic choir (118, D minor, primary slot); B Renaissance wind consort + four male voices (112, D dorian); C viol consort + chamber organ + solo tenor (100, G minor); D Byzantine ison under a baritone cantor (free); E metrical chorale, unison male voices + organ (126, A minor). None submitted, none chosen.
 - **Production state:** `LYRIC_DRAFT`. **No generation, no audio, no cover, no export, no publication.**
+- **Publication copies (2026-10-26) — text only, none used yet:**
+  - `DUTCH-005_YOUTUBE.md` — title options, description 4182 characters (12 bold, 5 italic), hidden tags, checklist, and the markup post-mortem in § 0.
+  - `DUTCH-005_TELEGRAM.md` — post for @lordchrist in Telegram markup, with an HTML twin.
+  - `DUTCH-005_PINNED.md` — two pinned YouTube comments, 4 bold + 1 italic line and 6 bold + 2 italic lines, both gated.
+  - Every claim in the three files is mapped to a named source in `../RESEARCH/CLAIM_LEDGER.md`, `../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses) and `../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses).
+  - **None of this is publication.** No URL exists; if one appears later, record it here and only then move the state.
+- **Open defects on this work:** stanza 3.2 «После земных невзгод»; cover not chosen; title separator `✦` vs `✝` undecided; the markup of v3 and of both закрепы has not been seen rendering in a live Studio; the 1676 page images of pp. 155–158 have not been inspected (text layer only).
 - **Do not confuse with:** DUTCH-002's brief (similar sound, different poem, different prompt) and the 1938 bundel's reworking of this text to a Bourgeois melody (a protected, later object).
 
 ## Adjacent works — keep out of the Dutch historical catalog
@@ -81,6 +88,7 @@ The conversation also included the Russian text beginning «Не те иудеи
 
 ## Open QA queue
 
+0. DUTCH-005: close the stanza 3.2 defect, choose the cover and the title separator, then generate. Do not treat the existing copies as approved copy — the owner has not signed off the lyric.
 1. Recover exact source lyrics and verbatim Suno prompts for DUTCH-001/002/003.
 2. Verify MP3 tags and cover embedding by reading actual files.
 3. Identify the final approved DUTCH-003 cover; preserve muted/cool cinematic grading.

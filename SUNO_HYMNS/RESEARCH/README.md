@@ -41,6 +41,12 @@ Do not count search results as independent sources. Several pages derived from o
 - Missio source chain for Afrikaans Lied 276: https://missio.org.za/songs/lied-276/
 - Dutch church-order history, Dordrecht Article 69: https://kerkrecht.nl/node/2149/
 
+- Lodenstein, preface to *Uyt-spanningen* (ed. 1727), the six rules for singing in a house circle, leaves \*3v–\*5r: https://www.dbnl.org/tekst/lode002uyt_03_01/lode002uyt_03_01_0002.php
+- The critical edition's introduction (2005), biography and the Zoetermeer singing reform: https://www.dbnl.org/tekst/lode002uyt_02_01/
+- Dordrecht 1578 and 1618–19 article 69 on what may be sung: https://kerkrecht.nl/node/2149/
+
+Two source runs are already assembled and should be extended rather than re-searched from scratch: `DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses, hymn and transmission) and `DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses, church singing, the organ ban, the `voorzanger`, the `gezelschappen`, Lodenstein's singing rules). Both carry an honest status per address: opened and read, found in results only, or still a library lead.
+
 See SOURCE_REGISTER.md for limits of each item.
 
 ## Current state

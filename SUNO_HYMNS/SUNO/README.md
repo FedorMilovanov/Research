@@ -91,6 +91,22 @@ These are preferences and examples, not a fixed prompt for every hymn. Choose st
 
 Use LYRIC_REGISTER.md for historical/source text, normalized transcription, Russian adaptation and the exact SUNO-ready lyric. Use PROMPT_AND_VERSION_REGISTER.md to capture the submitted prompt verbatim and attach every generation/export to a stable version ID. Missing text/prompt remains NOT CAPTURED; do not infer it from the finished sound.
 
+## Publication copies — three files, two markup languages
+
+Copy for a finished track lives in one file per surface, all in this directory:
+
+- `DUTCH-005_YOUTUBE.md` — title, description, hidden tags;
+- `DUTCH-005_TELEGRAM.md` — the @lordchrist post;
+- `DUTCH-005_PINNED.md` — the pinned YouTube comments.
+
+**The two surfaces do not share markup.** YouTube: `*bold*`, `_italic_`, punctuation inside the wrapper. Telegram: `**bold**`, `*italic*`, italic on whole lines only, no markup on link lines. A single `*` is *italic* in Telegram and *bold* on YouTube; `**` prints literally on YouTube. Never copy one file's markup into the other without reformatting.
+
+**Where the rules are normative:** the channel standards in `video-channel-manager` — `docs/youtube-description-rendering-standard.md` (§ 2–3, 11–12), `docs/youtube-comment-editorial-standard.md`, `docs/youtube-copy-authoring-standard.md`. This repository does not restate them; `PUBLICATION_LANE.md` says which document governs what, and lists the gates.
+
+**Handoff to the owner:** always a fenced `text` block, never a quote — a quote renders the asterisks away and the markup never reaches the clipboard. This rule is stated in the channel standard too; it was learned here the hard way in three rounds.
+
+**A copy is not a publication.** The files above carry no URL and change no state. `PUBLISHED_VERIFIED` requires a checked public URL or a direct publication receipt, recorded in `STATUS_LEDGER.md`.
+
 ## Publication and rights boundary
 
 Historical source research, audio generation, export, metadata QA, artwork approval, public upload and publication verification are separate milestones. The production lane does not grant rights to a modern critical edition, translation, recording, portrait or generated image. Add a public URL only after checking the live target.

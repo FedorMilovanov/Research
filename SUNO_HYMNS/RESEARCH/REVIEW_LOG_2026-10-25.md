@@ -555,3 +555,23 @@ The owner asked for **two** pinned comments — one about this hymn, one about h
 **Also done while reworking:** markup density raised so the закрепы look like the description rather than like plain prose — закреп 1 went from 2 bold + 1 italic line to **4 bold + 1 italic line** (1369 chars), закреп 2 from 4 bold + 1 italic to **6 bold + 2 italic lines** (1579 chars). New bold lead-ins carry the two facts that were previously buried mid-paragraph: `Книга расходилась быстро` and `Мелодия не найдена` in the first; `Мелодии он брал нарочно мирские` and `Орган вернулся` in the second.
 
 **Rule for delivery, added to how I hand copy to the owner:** markup goes into a fenced block, never a quote — a fence shows the asterisks, a quote eats them.
+
+# Twenty-fifth pass — 2026-10-26 (where the knowledge actually lives)
+
+The owner asked whether everything an agent needs is written down, and where it belongs: the hymns section of this repository, or `video-channel-manager`.
+
+**The answer is a split, and it was already half-built.** I cloned `video-channel-manager` and found that the normative markup rules I had been re-deriving the hard way were already written there: `docs/youtube-description-rendering-standard.md` § 2 says bold is `*…*`, italic `_…_`, § 3 says punctuation goes inside the wrapper, § 11 lists fifteen pre-delivery checks, and — the humiliating one — § 2 ends with "для текстов, которые пользователь должен скопировать вручную, готовый результат всегда выдаётся внутри блока `text`". The rule I broke last round was in the standard all along, in the file I had cited for three days.
+
+**So the defect was not missing knowledge, it was missing a door.** This repository had no file that told an agent "for copy, read the channel standards in that repository". New `SUNO/PUBLICATION_LANE.md` is that door: it names which document governs what, lists the three copy files and the two markup languages, the four gates, and the seven traps already paid for.
+
+**Stale documents fixed, all of them pointing the next agent at the wrong thing:**
+
+1. `HANDOFF_FOR_NEXT_AGENT.md` stopped at the sixth pass — before the lyric existed in approved form, before any copy file, before the gates. It now has a publication-pass section and a nine-item preflight that includes the publication lane.
+2. `SUNO/README.md` directory map did not mention `DUTCH-005_YOUTUBE.md`, `DUTCH-005_TELEGRAM.md`, `DUTCH-005_PINNED.md`, `check_youtube_markup.py` or `check_revision_consistency.py`, and still described the lyric as v0.3.
+3. `SUNO/STATUS_LEDGER.md` DUTCH-005 said nothing about the copies that now exist; it now lists them, their counts, and the four open defects, and repeats that none of it is publication.
+4. `SUNO_HYMNS/README.md` snapshot still said "third pass".
+5. `RESEARCH/README.md` source anchors did not include the preface, the critical-edition introduction or the Dordrecht articles — the three sources the second pinned comment stands on.
+
+**Compliance check I had not run.** `youtube-comment-editorial-standard.md` requires a comment to end with a precise question, and forbids bold over half a paragraph. Both закрепы lacked the question. Added one to each, specific to the content, not "подпишитесь". Links were left out deliberately, because the description already carries all four routes; that decision is recorded in `DUTCH-005_PINNED.md` rather than left implicit. Counts after the edit: 1503 characters / 4 bold / 1 italic line, and 1590 / 6 / 2.
+
+**Rule for the next agent, in one sentence:** facts and drafts live here, formatting rules live in `video-channel-manager`, and the only thing this repository may say about formatting is "run the gate".
