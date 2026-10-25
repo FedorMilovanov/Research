@@ -1,14 +1,16 @@
-# DUTCH-005 — SUNO-ready lyric (with accents)
+# DUTCH-005 — SUNO-ready lyric
 
 **«Слава Господня»** — Йодокус ван Лоденстейн
-**Revision:** `DUTCH-005-RU v0.5` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md).
+**Revision:** `DUTCH-005-RU v0.5` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md), which is the clean public text.
 **Status:** working draft, **not approved**; **never submitted to SUNO**.
 
 Differences from the clean lyric, and no others:
 
-1. **Structural tags** — `[Intro]`, `[Verse 1]`…`[Verse 10]`, `[Outro]`. Not sung; no bare stanza numbers in the body.
-2. **Stress marks on every word of two or more syllables** — combining acute (´) placed after the stressed vowel. This is the pronunciation layer for the model, not spelling: the published text must not carry them. `ё` is kept everywhere it belongs and needs no extra mark.
-3. **One echo**, inline in verse 10: `(хвали́ть)`.
+1. **Structural tags** — `[Intro]`, `[Verse 1]`…`[Verse 10]`, `[Outro]`. Not sung; no bare stanza numbers in the body, because a bare `1` or `2` can be read as text.
+2. **One echo**, inline in verse 10: `(хвалить)`.
+3. **Two stress marks**, and only two: `драго́е` (verse 2) and `тре́пета` (verse 4). See the note below the text.
+
+Everything else is left unmarked on purpose.
 
 There is **no chorus**: the source has no refrain, and its repetitions — the threefold call and the tripled word — are already in the body.
 
@@ -16,136 +18,151 @@ There is **no chorus**: the source has no refrain, and its repetitions — the t
 [Intro]
 
 [Verse 1 — Lead, organ pedal under]
-Ввысь, душа́ моя́, ввысь!
-Здесь, внизу́, жи́зни нет:
-Жизнь, любо́вь и хвала́ —
-Лишь там, где Ии́суса зрят.
-Всё, что ви́дишь ты здесь,
-Всё, что слы́шишь ты здесь, —
-Не о то́м твоя́ жизнь, любо́вь, хвала́;
-Всё, чего́ хо́чешь здесь,
-Се́рдца твоего́ не сто́ит.
+Ввысь, душа моя, ввысь!
+Здесь, внизу, жизни нет:
+Жизнь, любовь и хвала —
+Лишь там, где Иисуса зрят.
+Всё, что видишь ты здесь,
+Всё, что слышишь ты здесь, —
+Не о том твоя жизнь, любовь, хвала;
+Всё, чего хочешь здесь,
+Сердца твоего не стоит.
 
 [Verse 2 — Lead, choir enters on the last line]
-Блеск и красота́ — обма́н,
-Всё драго́е — суета́,
-Га́снет ра́дость, чуть вкуси́л,
-Зла́то, серебро́ — тщета́.
-Там драгоце́нная кровь,
-Там драгоце́нная кровь
-Сто́ит всей жи́зни, любви́ и хвалы́:
-Там драгоце́нная кровь
-Се́рдцу це́ну даёт вы́ше всех.
+Блеск и красота — обман,
+Всё драго́е — суета,
+Гаснет радость, чуть вкусил,
+Злато, серебро — тщета.
+Там драгоценная кровь,
+Там драгоценная кровь
+Стоит всей жизни, любви и хвалы:
+Там драгоценная кровь
+Сердцу цену даёт выше всех.
 
 [Verse 3 — Lead, choir hums the triad with him]
-Жизнь без конца́, во сла́ве,
-По́сле всех земны́х трудо́в, —
-Лишь она́, душа́, жела́нна
-И влечёт незри́мо.
-Сомкни́ пло́тские о́чи,
-Сомкни́ пло́тские о́чи,
-Э́та сла́вная жизнь — жизнь, жизнь, жизнь;
-Сомкни́ пло́тские о́чи:
-Э́та жизнь — в вышине́.
+Жизнь без конца, во славе,
+После всех земных трудов, —
+Лишь она, душа, желанна
+И влечёт незримо.
+Сомкни плотские очи,
+Сомкни плотские очи,
+Эта славная жизнь — жизнь, жизнь, жизнь;
+Сомкни плотские очи:
+Эта жизнь — в вышине.
 
 [Verse 4 — Lead, choir sustained]
-Жить пред Бо́гом — не умира́ть,
-Без труда́, без бо́ли,
-Без боле́зни, без тре́пета,
-Без муче́нья, без исто́мы.
-Душа́ пра́здная, помы́сли,
-Душа́ пра́здная, помы́сли,
-Без сме́рти — ве́чная жизнь, жизнь, жизнь;
-Душа́ пра́здная, помы́сли,
-Что Не́бо ми́лостиво дару́ет.
+Жить пред Богом — не умирать,
+Без труда, без боли,
+Без болезни, без тре́пета,
+Без мученья, без истомы.
+Душа праздная, помысли,
+Душа праздная, помысли,
+Без смерти — вечная жизнь, жизнь, жизнь;
+Душа праздная, помысли,
+Что Небо милостиво дарует.
 
 [Verse 5 — Lead, choir sustained]
-Жизнь в соверше́нных доброде́телях,
-К сла́ве Госпо́дней,
-В небе́сных ра́достях светла́,
-Свята́я в свя́тости Его́.
-С сия́ньем соединена́,
-С сия́ньем соединена́,
-Без греха́ — жизнь, жизнь, жизнь;
-С сия́ньем соединена́:
-Зри, что Не́бо тебе́ дару́ет.
+Жизнь в совершенных добродетелях,
+К славе Господней,
+В небесных радостях светла,
+Святая в святости Его.
+С сияньем соединена,
+С сияньем соединена,
+Без греха — жизнь, жизнь, жизнь;
+С сияньем соединена:
+Зри, что Небо тебе дарует.
 
 [Verse 6 — Lead, choir answers the call line]
-Безу́мцы, что в грехе́ живу́т,
-Творя́ его́! Не зна́ете,
-Что смерть и ад в груди́ у вас
-Досе́ле не расста́лись?
-Хоти́те жи́зни вы?
-Хоти́те жи́зни вы?
-Жизнь доброде́телей — жизнь, жизнь, жизнь;
-Хоти́те жи́зни вы?
-Начни́те жизнь доброде́тели.
+Безумцы, что в грехе живут,
+Творя его! Не знаете,
+Что смерть и ад в груди у вас
+Доселе не расстались?
+Хотите жизни вы?
+Хотите жизни вы?
+Жизнь добродетелей — жизнь, жизнь, жизнь;
+Хотите жизни вы?
+Начните жизнь добродетели.
 
 [Verse 7 — Lead alone, organ thins to a single stop]
-Жела́нный и любви́ досто́йный —
-Мой Иису́с, в Ком лишь любо́вь,
-Всегда́ гото́вая на ино́е,
-Одна́ нахо́дит в Нём усла́ду!
-Душа́ моя́, ввысь, ввысь,
-Душа́ моя́, ввысь, ввысь,
-Где Иису́са — люби́ть, люби́ть, люби́ть;
-Душа́ моя́, ввысь, туда́,
-Где я могу́ узре́ть спасе́нье.
+Желанный и любви достойный —
+Мой Иисус, в Ком лишь любовь,
+Всегда готовая на иное,
+Одна находит в Нём усладу!
+Душа моя, ввысь, ввысь,
+Душа моя, ввысь, ввысь,
+Где Иисуса — любить, любить, любить;
+Душа моя, ввысь, туда,
+Где я могу узреть спасенье.
 
 [Verse 8 — Choir rejoins, building]
-Прекрасне́йшая Красота́!
-Причи́на всей красы́, что мни́тся,
-Та с года́ми и с привы́чкой
-Ме́ньше ра́дует иль пропадёт.
-Тебе́, Красота́, поклоня́юсь,
-Тебе́, Красота́, поклоня́юсь,
-Коль что люби́ть — люби́ть, люби́ть, люби́ть;
-Тебе́, Красота́, поклоня́юсь:
-Туда́ моё се́рдце пойдёт.
+Прекраснейшая Красота!
+Причина всей красы, что мнится,
+Та с годами и с привычкой
+Меньше радует иль пропадёт.
+Тебе, Красота, поклоняюсь,
+Тебе, Красота, поклоняюсь,
+Коль что любить — любить, любить, любить;
+Тебе, Красота, поклоняюсь:
+Туда моё сердце пойдёт.
 
 [Verse 9 — Lead, full choir]
-Вся́кая отра́да, каку́ю
-Здесь мо́жно помы́слить, —
-Любо́вь люде́й и их обы́чай —
-Всё э́то то́лько тень.
-Всё э́то се́рдце мне крадёт,
-Всё э́то се́рдце мне крадёт,
-Коль что люби́ть — люби́ть, люби́ть, люби́ть;
-Всё э́то се́рдце мне крадёт:
-Всё э́то вы́ше всех люблю́.
+Всякая отрада, какую
+Здесь можно помыслить, —
+Любовь людей и их обычай —
+Всё это только тень.
+Всё это сердце мне крадёт,
+Всё это сердце мне крадёт,
+Коль что любить — любить, любить, любить;
+Всё это сердце мне крадёт:
+Всё это выше всех люблю.
 
 [Verse 10 — Full male choir, all voices]
-О, е́сли б все языки́ земли́,
-Вся бо́дрость а́нгелов
-Соедини́лись и воспе́ли
-Иису́сову хвалу́ и сла́ву!
-Воспря́ньте: се́рдце, уста́, рука́,
-Воспря́нь, моя́ ци́тра; и́бо
-Иису́са — хвали́ть, хвали́ть, хвали́ть (хвали́ть);
-Воспря́ньте, всё, что прах и тлен;
-Пой без конца́ Иису́сову хвалу́.
+О, если б все языки земли,
+Вся бодрость ангелов
+Соединились и воспели
+Иисусову хвалу и славу!
+Воспряньте: сердце, уста, рука,
+Воспрянь, моя цитра; ибо
+Иисуса — хвалить, хвалить, хвалить (хвалить);
+Воспряньте, всё, что прах и тлен;
+Пой без конца Иисусову хвалу.
 
 [Outro — Organ alone, two bars, then silence]
 ```
 
-## Words that were being sung wrong
+## Stress — two marks, not a marked-up text
 
-The marks exist because of these. All are now marked in the text above.
+| Word | Place | Correct stress | Why it is marked |
+|---|---|---|---|
+| драго́е | 2.2 | дра-**го́**-е | the model sang *дра́гое* — the natural Russian default for a neuter adjective is the stem, so this one has to be told |
+| тре́пета | 4.3 | **тре́**-пе-та | the model sang *трепе́та* |
 
-| Word | Correct stress | The failure it prevents |
+Both were reported from an actual take, not guessed. **Nothing else is marked.** An accent inside a lyric is a change to the text as the model reads it: apply it too widely and it starts reshaping diction, dropping its own phrasing and flattening the delivery — which is the opposite of what is wanted here. Marks go in one at a time, and only after a word has been heard wrong.
+
+**Watch list — unmarked on purpose, to be marked only if a take gets them wrong:** *сто́ит* (2.7 — could be sung *стои́т*, "costs"), *соединена́* (5), *дару́ет* (5), *помы́сли* (4), *Иису́с / Иису́сову* (7, 10), *уста́* (10), *зрят* (1, one syllable — must not become «зря-ят»).
+
+`ё` is kept wherever it decides the word — `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт`, `моё`, `всё`, `Нём` — and those forms need no accent, because the letter already carries it.
+
+## Why these tags, and no others
+
+| Mark | What it does musically | Why it is there |
 |---|---|---|
-| драго́е | дра-**го́**-е | models default to *дра́гое* |
-| тре́пета | **тре́**-пе-та | *трепе́та* is the common error |
-| сто́ит | **сто́**-ит | *стои́т* would mean "costs" |
-| и́бо | **и́**-бо | *ибо́* sounds broken |
-| крадёт | кра-**дёт** | ё must stay: without it the stress jumps and the word becomes *кра́дет* |
-| соединена́ | со-е-ди-не-**на́** | *соедине́на* is wrong in this participle |
-| дару́ет | да-**ру́**-ет | *да́рует* is a common false stress |
-| помы́сли | по-**мы́**-сли | imperative, not *по́мысли* |
-| Хоти́те | хо-**ти́**-те | *хо́тите* is colloquial-wrong in this register |
-| зрят | one syllable | do not expand into *зря-ят* |
-| Иису́с / Иису́сову | И-и-**су́**с | four syllables in the nominative; the two initial и must not merge |
-| уста́ | ус-**та́** | *у́ста* is wrong |
+| `[Verse 7 — Lead alone, organ thins…]` | accompaniment drops to a single stop under the lead | verse 7 is the poem's turn from earthly vanity to Christ as the one love; the text changes, so the texture changes |
+| `[Verse 8 — Choir rejoins, building]` | the ensemble returns and the dynamic begins to climb | verses 8–10 address Beauty and end in praise; the returning voices mark the start of that ascent |
+| `[Verse 10 — Full male choir, all voices]` | tutti, the only full ensemble in the piece | the doxology; saving the full choir for one verse is what makes it read as an arrival |
+| `(хвалить)` | one short echo, sung, inside the tripled line | the only ornament; the tripled device is the poem's spine and one echo sharpens it without decorating the whole piece |
+
+Deliberately **absent**: no `[Whisper]` (the style forbids a whispered lead, so a local whisper would contradict it); no `[Chorus]` (invented); no `[Instrumental]` stretches (the text is long and the style asks for short transitions); no stacked `[Build]`/`[Pause]` tags.
+
+## If SUNO truncates
+
+Ten verses of nine lines is a long single generation. The order to try remedies in:
+
+1. Keep the tempo at 116–120 bpm and the intro at two bars; tighter syllabic delivery is the style's own instruction.
+2. If a verse is dropped or compressed, add `all ten verses, in order, no cuts` to the style box and regenerate — do not delete text to fit.
+3. If it still truncates, split the release into two tracks at the poem's own seam — verses 1–5 and 6–10 — with the same style and the same lead. That keeps every word; cutting stanzas does not.
+
+Never solve a duration problem by removing a stanza.
 
 ## Audit performed before any generation
 
@@ -153,6 +170,6 @@ The marks exist because of these. All are now marked in the text above.
 - tripled word checked against the Dutch: `жизнь` in 3–6, `любить` in 7–9, `хвалить` in 10;
 - threefold call in verses 1, 3, 4, 5, 6, 7, 8, 9; verse 2 varies it as the print does (`siet / hoort / wenscht`); verse 10 has none;
 - no line, refrain or repetition that is not in the 1676 print;
-- ё preserved where it changes the word: `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт`, `моё`, `всё`, `ещё`;
-- every polysyllabic word carries a stress mark, and no mark falls on an unstressed vowel;
-- the wording is byte-identical to the clean lyric apart from the marks, the tags and the single echo.
+- `ё` preserved where it changes the word;
+- stress marks: **two**, both on words heard wrong; no other word altered;
+- wording checked word for word against [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — the two files differ only in the tags, the echo and the two accents.

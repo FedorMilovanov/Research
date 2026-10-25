@@ -318,13 +318,15 @@ Twelve defects in v0.4, all in lines I had already passed:
 - **X.5** — `mond` is the mouth, not speech.
 - **X.8** — `кто` cannot refer to dust; `hier is stoff` needs `что`.
 
-## 2. Stress
+## 2. Stress — two words, and a correction of my own
 
-Every polysyllabic word in the SUNO-ready file now carries a combining acute after its stressed vowel; monosyllables and words whose `ё` already carries the stress are left bare. Two-layer rule kept: the accents are in `DUTCH-005_LYRICS_SUNO.md` only, and the clean lyric stays unmarked for reading and for any published text.
+The owner named two words sung wrongly: **драго́е** as *дра́гое*, **тре́пета** as *трепе́та*. Both are now marked in the SUNO-ready file, inline, and **nothing else is**.
 
-Checked mechanically after the edit: **90 lyric lines in both files, identical once the marks, the tags and the one echo are stripped**; **226 polysyllabic word tokens, 218 marked**, the eight unmarked being forms whose `ё` already sets the stress (влечёт, даёт, крадёт, моё, пойдёт, пропадёт); **no word carries two accents**. `Эта` → `Э́та` was caught by that check and fixed.
+The first attempt at this fix marked every polysyllabic word — 218 accents. **The owner rejected it in the same pass, correctly:** an accent is not a neutral annotation, it is a change to the text the model reads, and marking the whole lyric bends the diction, costs the model's own phrasing and flattens the delivery. That draft was committed and pushed (`8814412`) before the objection, so the record has to say so: commit `8814412` carries the wrong rule and the over-marked text. This pass reverts both. The rule in `STYLE_AND_PRODUCTION_RULES.md` and the guidance in `SUNO/README.md` now say the opposite, with the reason recorded, and no lyric was ever generated from the over-marked text.
 
-The project rule was the cause and has been rewritten: `STYLE_AND_PRODUCTION_RULES.md` now requires full marking, and says why — partial marking leaves every other word to the model.
+Two marks remain, both on words heard wrong from a take. A short watch list of words that *could* go wrong is kept **unmarked** in the SUNO file (`сто́ит`, `соединена́`, `дару́ет`, `помы́сли`, `Иису́с`, `уста́`, `зрят`) — each is added only if a take gets it wrong.
+
+Verified by machine: the two lyric files are identical once the tags, the single echo and the two accents are stripped — 90 lines, **0 differences**.
 
 ## 3. Metre, re-counted
 

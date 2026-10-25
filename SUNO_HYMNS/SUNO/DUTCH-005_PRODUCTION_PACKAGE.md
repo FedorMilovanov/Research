@@ -93,7 +93,7 @@ Flat on purpose; this is what the Russian must be checked against, not a verse.
 
 See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.5`, with changelog, rhyme/metre statement and approval state. The SUNO-ready variant with section labels and stress marks is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
 
-**Why the words are the same in both files:** the two lyric files carry identical wording. The only differences are the structural tags, the **stress marks** and one inline echo. The stress layer is not decoration: the model had been singing *дра́гое* and *трепе́та*, and every polysyllabic word now carries a combining acute so it cannot. The marks are removed before any published text.
+**Why the words are the same in both files:** the two lyric files carry identical wording. The only differences are the structural tags, one inline echo and **two stress marks**. Two, not more: the owner rejected blanket marking on 2026-10-25 — an accent is a change to the text the model reads, and applied everywhere it starts to bend the diction and flatten the delivery. Marks are added one word at a time, after that word has been heard sung wrong; *драго́е* and *тре́пета* are the two that have been. The marks are dropped before any published text.
 
 ## 5. Deviation table — every departure, with its reason
 

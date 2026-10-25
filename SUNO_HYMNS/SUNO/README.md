@@ -66,7 +66,7 @@ Keep these artifacts separate:
 - SUNO-ready lyric with vocal cues and optional stress marks;
 - published/recorded take.
 
-For Russian SUNO lyrics, preserve the owner's wording unless an explicit edit is requested. Mark stress on **every** polysyllabic word of the SUNO-ready text (owner's decision, 2026-10-25), not only where the word looks ambiguous — the model guesses the unmarked ones, and it guessed them wrong; validate each word form in context. Do not confuse machine-pronunciation marks with final public spelling. Preserve ё where required. Keep labels such as [Verse 1 — Cantor], [Cantor, Organ enters], [Cantor, Monks drone], [Growing] and [Full chant, all monks] separate from the lyric body and consistent across versions.
+For Russian SUNO lyrics, preserve the owner's wording unless an explicit edit is requested. Add stress marks only where pronunciation is genuinely ambiguous or where a word has been **heard sung wrong**; validate each word form in context. Marking the whole text was tried on 2026-10-25 and rejected by the owner — it changes the text the model reads and can cost its delivery. Do not confuse machine-pronunciation marks with final public spelling. Preserve ё where required. Keep labels such as [Verse 1 — Cantor], [Cantor, Organ enters], [Cantor, Monks drone], [Growing] and [Full chant, all monks] separate from the lyric body and consistent across versions.
 
 Before generating, audit:
 - historical names and theological terms;
