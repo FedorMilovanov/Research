@@ -61,7 +61,8 @@
 | ~~Стивен Чарнок — 02 Chronology and Date Conflicts~~ | ~~`1-XAn2H3BmucaDFOxcIso1hCdzFFvTKBO`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
 | Стивен Чарнок — 02 Chronology and Date Conflicts **(rev 2, 2026-10-25, коммит `1439b96`)** | `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` |
 | ~~Стивен Чарнок — 03 Works Editions and Publication Chronology~~ | ~~`17-c0geD8iCl2-YV4kryp3z4P-gKCVguh`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
-| Стивен Чарнок — 03 Works Editions and Publication Chronology **(rev 2, 2026-10-25, коммит `7528ec5`)** | `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` |
+| ~~Стивен Чарнок — 03 Works Editions and Publication Chronology (rev 2, 2026-10-25, коммит `7528ec5`)~~ | ~~`1WGeow32U79_AQrdTkAM7yVAXviupqRXZ`~~ → **`SUPERSEDED`**, см. rev 5 |
+| Стивен Чарнок — 03 Works Editions and Publication Chronology **(rev 5, 2026-10-25, коммит `bd5c847`)** | `1y5OFA_HPm6sfxlr1VHo5vWLQYNDQ9NGq` |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology~~ | ~~`1mNEAz6w1DZC_pEEq3TlcbnpdHCWQvPGb`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
 | Стивен Чарнок — 04 Character Ministry and Theology **(rev 2, 2026-10-25, коммит `1439b96`)** | `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` |
 | ~~Стивен Чарнок — 05 Controversies and Claim Audit~~ | ~~`1lliBwqiqe_ZG6W2H0JPpG8ey7-NfLyph`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
@@ -70,7 +71,8 @@
 | Стивен Чарнок — 00 README AND NAVIGATION **(rev 5, 2026-10-25, коммит `bd5c847`)** | `12crqgSXN4rFyq_wVSjQGtfAI37UJaGEs` |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1giMeyUhqxHGFEc9At2H-kJwCbrxOVzpf`~~ → **`SUPERSEDED`**, см. rev 4 |
 | Стивен Чарнок — 01 Witnesses and Evidence Hierarchy **(rev 4, 2026-10-25, коммит `e64d27d`)** | `1kQCmXLcYMth7ijwLU-G5Xgthu2FlXIi9` |
-| Стивен Чарнок — 02 Chronology and Date Conflicts **(rev 3, 2026-10-25, коммит `976dbfa`)** | `1ei_TCSPO7___9ZbeXm9jEy-BUIGioG_f` |
+| ~~Стивен Чарнок — 02 Chronology and Date Conflicts (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1ei_TCSPO7___9ZbeXm9jEy-BUIGioG_f`~~ → **`SUPERSEDED`**, см. rev 5 |
+| Стивен Чарнок — 02 Chronology and Date Conflicts **(rev 5, 2026-10-25, коммит `bd5c847`)** | `1dFrLE__xWF5COPHoiDqTjq6lGMc3FUS_` |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1KzTWJiCXSL1AftsfMGnbjsjFazpaZ820`~~ → **`SUPERSEDED`**, см. rev 4 |
 | Стивен Чарнок — 04 Character Ministry and Theology **(rev 4, 2026-10-25, коммит `e64d27d`)** | `186HlL_TE7vQ6_x2R6kr5nfA3U2kCjW6b` |
 | Стивен Чарнок — 05 Controversies and Claim Audit **(rev 2, 2026-10-25, коммит `1439b96`)** | `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` |
@@ -84,7 +86,8 @@
 | Стивен Чарнок — 12 The Sayings 1680 Broadside PRIMARY TRANSCRIPTION **(rev 4, 2026-10-25, коммит `e64d27d`)** | `18RksXwMqN97-MFvadun3vrgsEdyGTRGF` |
 | Стивен Чарнок — 13 New Poems 1680 Elegy Acrostics Epitaph PRIMARY TRANSCRIPTION | `1BAF_feH5sgoKc6SKaduKubnGLFD_Pl9l` |
 | Стивен Чарнок — 14 An Elegy 1680 PRIMARY TRANSCRIPTION | `1NF0x8VTiU61u6gqDcc2_hYLC9JkcaYZ2` |
-| Стивен Чарнок — 15 The Emmanuel Line Preston Poole Fowler **(rev 3, 2026-10-25, коммит `976dbfa`)** | `1sR3cFyf9XLTnbjzGWeU6mj2a4QqShB7c` |
+| ~~Стивен Чарнок — 15 The Emmanuel Line Preston Poole Fowler (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1sR3cFyf9XLTnbjzGWeU6mj2a4QqShB7c`~~ → **`SUPERSEDED`**, см. rev 5 |
+| Стивен Чарнок — 15 The Emmanuel Line Preston Poole Fowler **(rev 5, 2026-10-25, коммит `bd5c847`)** | `10lzC4pI0YvJ9dZ5UK2ctqryIG-sr3ANo` |
 
 Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
 и не являются цитируемым material.
