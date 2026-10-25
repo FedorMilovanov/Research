@@ -48,8 +48,8 @@
 | **McCosh, Introduction (1864)** | `B1` с `A1`-транзитом | **full text** (PDF; страницы доступны) | — | — |
 | **Symington, Life and Character (1853)** | `B1` | **full text** (Gutenberg 53527) | — | — |
 | **DNB vol. 10 (1887)** | `B1` | **full text** (Wikisource) | — | — |
-| **Johnson funeral sermon 1680** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD`, `LOCATOR_HOLD` |
-| **Adams & Veal epistles (первое издание)** | `A1` | **full text** — EEBO-TCP `A79420.0001.001` раздел `1:2` (изд. 1684, CC0 1.0) | `checked` на уровне раздела EEBO-TCP | `LOCATOR_HOLD` по печатной странице |
+| **Johnson funeral sermon 1680** | `A1` | **FULL TEXT получен** — EEBO-TCP `A46911.0001.001`, CC0 1.0, pp. 1–40 | **`checked`** — Charnock-материал pp. 33–40 | `LOCATOR_HOLD` только по печатному снимку |
+| **Adams & Veal epistles** | `A1` | **full text** — EEBO-TCP `A79420.0001.001` раздел `1:2` (изд. 1684, CC0 1.0) | `checked` на уровне раздела EEBO-TCP | `LOCATOR_HOLD` по печатной странице |
 | **Приходской регистр St Michael's** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
 | **Calendar of State Papers, Domestic** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD`, `LOCATOR_HOLD` |
 | **New College books / Fasti Oxonienses** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
@@ -87,7 +87,8 @@
 | `unchecked` | есть текст, но нет страницы |
 | `absent` | нет ни текста, ни страницы |
 
-**Текущий уровень отдела:** `digital` для корпуса; `unchecked` для всех цитат Johnson и Adams & Veal.
+**Текущий уровень отдела:** `digital` для корпуса; **`checked`** для всех цитат из funeral sermon
+Johnson 1680 (EEBO-TCP pp. 33–40) и из эпистола Adams & Veal (EEBO-TCP `A79420.0001.001` §1:2).
 
 ---
 

@@ -41,6 +41,7 @@
 | 06 | `06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md` | Матрица доступа к корпусу | EEBO/IA/CCEL/Digital Puritan/Hathi/ESTC с классами и HOLD |
 | 07 | `07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md` | Связка с уже имеющимся в репозитории материалом по Чарноку | 91 файл, 763 упоминания в 7 корпусах; CCEL-локаторы; Drive-зеркала |
 | 08 | `08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md` | **Первичный эпистол Adams & Veal 1684** — полная транскрипция и разбор | Разрешение `CONFLICT-2`/`CONFLICT-3`; «true Son of the Church of England»; редакторский манифест; CC0 1.0 |
+| 09 | `09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md` | **Funeral sermon John Johnson 1680** — полная транскрипция с постраничными локаторами | `ARCHIVE_HOLD` снят; показано, что знаменитый «портрет» — patristic compilation, не свидетельство Johnson; pp. 33–40 |
 
 ---
 
@@ -74,6 +75,13 @@
 > had been Proctor) called over into Ireland». В сочетании с документальным прибытием Henry Cromwell
 > в Ирландию в августе 1655 это **опровергает** версию Calamy/Symington о proctor в 1652 и
 > **подтверждает** 5 апреля 1654 (McCosh). Детали — том 08.
+
+> **Разрешение 2026-10-25 (2).** Funeral sermon John Johnson 1680 получен полностью
+> (EEBO-TCP `A46911.0001.001`, CC0 1.0, pp. 1–40). Два следствия: (1) `ARCHIVE_HOLD` снят;
+> (2) знаменитый «портрет» Чарнока, который McCosh и Symington приводят как характеристику
+> Джонсона, на самом деле **греческий patristic character**, который Johnson сам называет
+> «taken out of several of the Fathers Wri∣tings». Подлинно свидетельские строки Джонсона —
+> pp. 33–40. Детали — том 09.
 
 ---
 

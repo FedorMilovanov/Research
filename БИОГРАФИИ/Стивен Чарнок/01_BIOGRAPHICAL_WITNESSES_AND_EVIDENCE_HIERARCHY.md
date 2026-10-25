@@ -21,37 +21,53 @@
 
 ### 2.1. John Johnson — funeral sermon (утверждённый первоисточник №1)
 
-- **Полное заглавие:** «ΕΚΛΑΜΨΙΣ ΤΩΝ ΔΙΚΑΙΩΝ. On the shining of the righteous, a sermon preached
-  partly on the Death of that Reverend and Excellent Divine, Mr Stephen Charnock, and in part at the
-  funeral of a godly friend, by John Johnson, M.A.»
+- **Полное заглавие:** *Eklampsis tōn dikaiōn, or, The shining forth of the righteous a sermon preached
+  partly upon the death of that reverend and excellent divine, Mr. Stephen Charnock, and in part at the
+  funeral of a godly friend, by John Johnson, M.A.*
 - **Год:** 1680
+- **Imprint:** London: Printed for the author, and are to be sold by Tho. Parkhurst, Will. Miller, and
+  Benj. Alsop …
+- **EEBO-TCP:** `A46911.0001.001` — **полный текст получен**, страницы 1–40 пронумерованы.
+  Структура: title page (`1:1`) → TO THE READER (`1:2`) → preface (`1:3`) → text (`1:4`).
+  Полная транскрипция с разбором — [`09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md`](09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md).
 - **Текст:** Матфея 13:43 — «Then shall the righteous shine forth as the sun in the kingdom of their Father.»
-- **Кто такой Johnson:** «bosom friend», познакомился с Чарноком в Emmanuel College в 1644, был с ним
-  и в New College, Oxford.
+- **Кто такой Johnson:** «my only bosom-friend amongst the Ministers» (его собственные слова);
+  познакомился с Чарноком в Emmanuel College в 1644, был с ним и в New College, Oxford.
 - **Ценность:** единственный contemporaneous **личный** свидетель. Даёт прямое описание:
-  - конверсии («Jonah-like, had turned to the Lord with all his heart»);
-  - учёбы («His study was his recreation; the law of God was his delight»);
-  - выбора общества («as choice, circum-spect, and prudent in his election of society, as of books»);
-  - духовной борьбы («he had been in darkness, and then he said full of doubts, fears, and grievously
-    pestered with temptations»);
-  - физических немощей последних лет («a crazy body, weak eyes, one dark, the other dim, a hand that
-    would shake, sometimes an infirm stomach, an aching head, a fugitive memory»);
-  - привычки в студии: пять дней в неделю, двенадцать часов в день;
-  - медицины как побочного призвания («to visit and relieve his patients»).
-- **Важная оговорка самого Johnson:** тело sermons было подготовлено по поводу смерти другого друга;
-  будучи внезапно вызван проповедовать на похоронах Чарнока, он использовал ту же sermon, адаптировав
-  её. McCosh: «The discourse is somewhat rembling [=rambling].»
+  - обращения («A sincere Convert, born of the Word and Spirit … sprang up betimes in his heart»);
+  - учёбы («I never in all my life knew any that had attained near unto that skill he he had in both their
+    Originals, except Mr. Thomas Cawton»);
+  - географии служения: Southwark → Оксфорд и окрестные части → Дублин → Лондон;
+  - «seven or eight» обращений в Southwark;
+  - «sincerity» как «the most sparkling Jewel in the Crown of Glory»;
+  - физических немощей последних лет («a crazy Body, weak Eyes, one dark, the other dim; a Hand that would
+    shake sometimes, an infirm Stomack, an aking Head, a fugitive memory»);
+  - привычки чтения проповедей («verbatim, pen'd and read all his Notes; whereas till of late years, in
+    Preaching he never look'd within them»);
+  - опровержения клеветы («as if he was Melancholly, Reserv'd, Unsociable … How cheerful, free, loving,
+    sweet-disposition'd was he»).
+- **Две критические оговорки, которых нет у вторичников:**
+  1. **Sermon не была написана для Чарнока.** Johnson произнёс её ранее в Leicestershire, на текст,
+     данный отцом накануне его смерти, и повторил «to some very few of Mr. Charnocks Hearers».
+     Следовательно, sermon **адаптирована**, а не сочинена ad hoc.
+  2. **Знаменитый «портрет» Чарнока — не описание Джонсона.** Johnson сам пишет: «I shall add only this
+     following character **taken out of several of the Fathers Wri∣tings**, more applicable (I dare avouch
+     it) to Mr. Charnock than those to whom they affixed it. I cite not the places, they are known to
+     Scholars.» То есть «venerable and grave, like an aged person from his youth» — patristic commonplace,
+     применённая к Чарноку, а не свидетельство. McCosh и Symington приводят её как характеристику
+     Джонсона; это ошибка атрибуции.
+- **Утраченная биография:** Johnson пишет: «but I heard a Narrative of his Life will be drawn by an able
+  hand. All my skill could not have done it to the life.» Это первичный след **неизданной биографии**
+  Чарнока — третьего лица помимо Gunter и Johnson.
 - **Независимое подтверждение авторитета:** Adams и Veal в эпистоле 1684 года ссылаются на рассказ об
   обращении Чарнока словами «hath already been spoken of by [* 1.1] one who was at that time his Fellow
   Collegiate and Intimate», где сноска гласит **«Mr. Johnson in his Sermon on oc∣casion of Mr.
   Charnocks death.»** То есть эдикторы сами называют funeral sermon Johnson биографическим
   первоисточником. Это не просто наш выбор источника — это выбор эдикторов.
 - **`evidenceClass`:** `A1` как contemporaneous witness.
-- **`accessState`:** **не получен**. McCosh использовал копию из Williams' Library; нашей копии нет.
-- **`locatorState`:** `unchecked` — нет ни страницы, ни колонки.
-- **HOLD:** `ARCHIVE_HOLD` (нет экземпляра), `LOCATOR_HOLD` (нет локатора).
-- **Цитаты через McCosh допустимы только как «per McCosh's quotation of Johnson»** — класс падает
-  до `B1`-транзита, а не `A1`.
+- **`accessState`:** **полный текст получен** (EEBO-TCP, CC0 1.0).
+- **`locatorState`:** `checked` — страницы 1–40 пронумерованы; Charnock-материал на pp. 33–40.
+- **HOLD:** `ARCHIVE_HOLD` **снят** для текста; сохраняется для печатного снимка.
 
 ### 2.2. Richard Adams и Edward Veal — «To the Reader» epistles (первоисточник №2)
 

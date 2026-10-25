@@ -60,6 +60,49 @@ divine Stephen Charnock, B.D. sometime fellow of New-Colledg in Oxon.* Полн�
 
 ---
 
+## 3A. Полнотекстовые EEBO-TCP издания XVII века (получены 2026-10-25)
+
+Следующие издания доступны как keyboarded text в EEBO-TCP с лицензией **CC0 1.0** (отказ не
+распространяется на page images). Все — `A1` как contemporaneous печатные объекты.
+
+| Год | Заглавие | Imprint | Значение |
+|---|---|---|---|
+| **1680** | *A treatise of divine providence* | — | Первое издание; IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680` |
+| **1680** | *A sermon preached by the late eminent Mr. Steph. Charnock on 2 Cor. V. XIX.* | London: Printed by Thomas Milbourn, for J.K., and are to be sold by Langley Curtis | Отдельная sermon 2 Кор. 5:19 |
+| **1680** | *The sayings of that reverend and great preacher Mr. S. Charnock, who departed this life on Wednesday the 28 of July, 1680, and was solemnly interred the 30th following* | London: [s.n.], Printed in the year 1680 | **См. `CONFLICT-10`** |
+| **1682** | *Discourses upon the existence and attributes of God* | London: Printed for D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, and Benj. Alsop | **Разрешает `CONFLICT-6`** |
+| **1683** | *A supplement to the several discourses upon various divine subjects* | London: Printed for Thomas Cockerill | — |
+| **1684** | *A discourse of divine providence* | London: printed by R. Roberts for Thomas Cockerill, at the Three Legs in the Poultrey, near the Stocks-Market | EEBO-TCP `A79420.0001.001`; см. том 08 |
+| **1685** | *A discourse of divine prouidence* | London: John Harris | Franckesche Stiftungen; ESTC |
+| **1699** | *Man's Enmity to God* + *Mercy for the Chief of Sinners* | с «Advertisement to the Reader» by Edward Veal | EEBO TCP |
+
+### Разрешение `CONFLICT-6` — *Existence and Attributes of God*: 1681–82 или 1682
+
+Существует **отдельное** EEBO-TCP издание 1682 года с imprint «D. Newman, T. Cockerill, Benj. Griffin,
+T. Simmons, and Benj. Alsop». Это означает, что диапазон «1681–82» у McCosh и DNB отражает **две части
+с разной датой титула**, а не одну неопределённость. Рабочая формулировка отдела:
+
+> *Discourses upon the Existence and Attributes of God* вышли посмертно в двух фолиантах с датами
+> титула **1681 и 1682**; в 1683 году вышел второй фолиант с discourses on regeneration, reconciliation,
+> the Lord's supper.
+
+Точное распределение частей по годам требует сверки обоих титульных листов.
+
+### `CONFLICT-10` — дата смерти: 27 или 28 июля 1680
+
+| Сторона | Утверждение |
+|---|---|
+| Заголовок 1680 *The sayings…* | «departed this life on **Wednesday the 28** of July, 1680, and was solemnly interred the 30th following» |
+| Wood / DNB / Symington / McCosh | 27 июля 1680 |
+| Регистр St Michael's | погребение 30 июля 1680 |
+
+**Разрешение:** не разрешён. Отмечаем, что **27 июля 1680 года был вторником**, а 28 июля — средой.
+Заголовок 1680 года называет Wednesday, что соответствует 28 июля. Это не опечатка дня недели, а
+расхождение в дате. Возможные объяснения: (а) заголовок ошибается; (б) Чарнок умер ночью и разные
+источники датируют по-разному; (в) Old Style/New Style не при чём (разница 10 дней не даёт 27→28).
+Рабочая формулировка отдела: **27 июля 1680**, с фиксацией `CONFLICT-10` и указанием на заголовок
+*The sayings…* как на единственный источник 28 июля.
+
 ## 4. Каноническое издание XIX века
 
 ### *The Complete Works of Stephen Charnock, B.D.*, with introduction by the Rev. James M'Cosh, LL.D.
@@ -85,14 +128,29 @@ divine Stephen Charnock, B.D. sometime fellow of New-Colledg in Oxon.* Полн�
 
 | Год | Издание |
 |---|---|
-| 1816 | 9 vols. 8vo, с предисловием Rev. Edward Parsons of Leeds (по DNB) |
+| 1815 | *The works of the late Rev. Stephen Charnock*, ed. Edward Parsons (1762–1833) — London: Printed for Baynes [etc.]; Leeds: Robinson, Son, and Holdsworth. IA `worksoflaterevst01char` (**см. `CONFLICT-11`**) |
+| 1816 | 9 vols. 8vo, ed. Rev. Edward Parsons of Leeds (по DNB) (**см. `CONFLICT-11`**) |
 | 1830 | *Discourses on Christ crucified*, Presbyterian Board of Publication |
 | 1835 | Thomas Tegg and Son |
+| 1838 | *A discourse proving weak grace victorious*, Religious Tract Society |
 | 1841 | Presbyterian Board of Publication |
 | 1844 | *Puritan Sermons 1659–1689* (репринт *Morning Exercises*), James Nichol — vol. 2 содержит sermon 19 |
+| 1847 | *The choice works of the Rev. Stephen Charnock, B.D.: with his life and character*, R. Carter (со биографией Symington) |
+| 1847 | *The chief of sinners objects of mercy; The knowledge of Christ crucified; Self examination; The pardon of sin; Delight in prayer*, T. Nelson |
 | 1849 | *Discourses upon the existence and attributes of God*, H. G. Bohn |
-| 1853 | *Discourses upon the Existence and Attributes of God*, Robert Carter & Brothers — издание с биографией Symington |
+| 1853 | *Discourses upon the Existence and Attributes of God*, New York: Robert Carter & Brothers, 2 vols — издание с биографией Symington. IA `discoursesupone01char`, `discoursesupone02char` |
 | 1859 | R. Carter |
+| 1874 | *Discourses upon the existence and attributes of God*, R. Carter & brothers (со биографией Symington) |
+
+**`CONFLICT-11` — год Parsons-издания: 1815 или 1816**
+
+| Сторона | Утверждение |
+|---|---|
+| IA `worksoflaterevst01char` | Publication date **1815**, London: Printed for Baynes; Leeds: Robinson, Son, and Holdsworth |
+| DNB | «1816 in 9 vols. 8vo, ed. the Rev. Edward Parsons of Leeds» |
+
+**Разрешение:** не разрешён. Вероятно, тома выходили в 1815 и 1816. Рабочая формулировка:
+**1815–1816, ed. Edward Parsons**.
 
 **PRDL** (`prdl.org/author_view.php?a_id=201`) перечисляет 22 заглавия / 54 тома изданий Чарнока,
 включая немецкий перевод (Berlin, 1710).

@@ -176,15 +176,21 @@ strenuous maintainer of the Truth they professed.»**
 | Ордер на арест 19 июня 1663 | `A1` |
 | «The last subject he treated on and finished was the patience of God» | `A1` (Adams & Veal), но **не quote-safe**: транзит через McCosh, нет страницы |
 | «Being thence (the year after he had been Proctor) called over into Ireland» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP `A79420.0001.001` §1:2**, CC0 1.0 |
-| «He was a true Son of the Church of England…» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP §1:2**, CC0 1.0 |
+| «He was a true Son of the Church of England…» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP `A79420.0001.001` §1:2**, CC0 1.0 |
+| «A sincere Convert, born of the Word and Spirit» | `A1` (Johnson), **quote-safe по EEBO-TCP `A46911.0001.001` p. 33**, CC0 1.0 |
+| «Why! it cost Christ his life to redeem and save me» | `A1` (Johnson), **quote-safe по EEBO-TCP p. 33**, с оговоркой Johnson «I remember (if I mistake not) … to this effect» |
+| «The last subject he treated on and finished, was the Patience of God» | `A1` (Johnson), **quote-safe по EEBO-TCP p. 37** |
+| «a Chariot of fire hath parted Mr. Charnock and you» | `A1` (Johnson), **quote-safe по EEBO-TCP p. 40** |
+| «except Mr. Thomas Cawton» | `A1` (Johnson), **quote-safe по EEBO-TCP p. 39** |
 | «neglecting the practice of Physick, in which he had arrived at a considerable measure of knowledge» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP §1:2**, CC0 1.0 |
 | «His Library … was his Workhouse…» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP §1:2**, CC0 1.0 |
 | «If thou like this Cluster, Fear not but the Vintage will be answerable…» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP §1:2**, CC0 1.0 |
 | Портрет немощей | `A1` (Johnson), транзит; **не quote-safe** |
 | «Why, it cost Christ his life to redeem and save me» | `A1` (Johnson), транзит; **не quote-safe** |
 
-**Глобально по отделу:** `LOCATOR_HOLD`. Ни одна цитата не приведена к печатной странице первой
-публикации.
+**Глобально по отделу:** цитаты из funeral sermon Johnson 1680 и из эпистола Adams & Veal 1684
+приведены к странице/разделу EEBO-TCP (CC0 1.0) и являются quote-safe. Все прочие цитаты —
+`LOCATOR_HOLD` по печатной странице первой публикации.
 
 ---
 
