@@ -154,6 +154,54 @@
 
 ---
 
+### 2.7. Anthony à Wood, *Athenæ Oxonienses*, vol. II — вход [429] (первоисточник №7, **добавлен 2026-10-25**)
+
+Wood писал в 1691–92, через одиннадцать лет после смерти Чарнока, и **не принадлежал к кругу его
+друзей**. Это делает его единственным ранним свидетелем, который не был ни эдиктором, ни духовным
+покровителем. До 2026-10-25 отдел знал Wood только через пересказ (DNB, McCosh, Symington) и потому
+относил его к `B1`. Полный вход [429] теперь получен из EEBO-TCP `A71277.0001.001` (CC0 1.0), и Wood
+переводится в **`A1`** как первоисточник.
+
+**Локатор:** *Athenæ Oxonienses*, vol. II, London: Printed for Tho. Bennet, 1691–1692; вход [429],
+pp. 491–492 (EEBO-TCP page labels); *Fasti Oxonienses*, An. Dom. 1654, p. 783.
+
+**Что даёт Wood эксклюзивно — деталей нет ни у одного другого свидетеля:**
+
+| Деталь | Локатор | Почему важно |
+|---|---|---|
+| «the tuition of Mr. Will. Sancroft» | [429], p. 491 | подтверждение учителя в Emmanuel из первоисточника, не через McCosh |
+| «did eat the bread of a worthy Loyallist» | [429], p. 491 | материальное положение fellowship'а; Wood иронизирует |
+| «go now and then either into France or Holland» | [429], p. 491 | единственное указание на континентальные поездки в «пятнадцать лет» |
+| «a true son of the Church of England … articles of Religion» | [429], p. 491 | та же формула, что у Adams & Veel 1684, но у автора без причины льстить |
+| «he published nothing while he lived» | [429], p. 491 | прямое отрицание прижизненной публикации |
+| «Rich. Tymms a Gla∣zier in the Parish of White Chappel» | [429], p. 491 | **место смерти** |
+| «Crosby house belonging to Sir Jo. Langham» | [429], p. 492 | владелец здания, не congregration |
+| «Tho. Watson … did hold forth … as our author Charnock did» | [429], p. 492 | Чарнок занял пост Watson'а |
+| «great numbers of the Brethren to S. Mi∣chaels Church on Cornhill» | [429], p. 492 | маршрут и масштаб погребальной процессии |
+| «at the bottom of the Tower under the Belfry» | [429], p. 492 | точное место могилы |
+| «John Johnson his contemporary in Emanuel and New Coll» | [429], p. 492 | университетская связь с Джонсоном |
+| Fasti: «Steph. Charnock of New Coll. Ap. 5» (1654) | Fasti, p. 783 | **печатный локатор** proctor |
+
+**Ограничения Wood как свидетеля:**
+
+1. **Дата смерти без документа.** Сноска `* 2.260` к «27 of July … aged 52 years or thereabouts» —
+   всего лишь «1680.» Без регистра, без надгробия. Год для Wood — рубежная отметка структуры тома.
+2. **Не знал о Morning-Exercise sermon.** «he published nothing while he lived» — см. `CONFLICT-9`.
+3. **Генеалогическая врезка не про Стивена.** «Char∣nock of Charnock» и Thomas Charnock the
+   Rosacrucian (b. 1526) — попутная справка о роде, не родословие Стивена. Родословная Стивена
+   Чарнока **не установлена**.
+4. **Ошибочно полагает B.D. дублинским** («as I con∣ceive, Bach. of Div. of Dublin») — см.
+   `CONFLICT-7` в томе 02.
+5. **«as I think» об издателе Providence** — Wood не уверен в Adams & Veal как издателях.
+6. **Он писал не как друг.** Это и его сила (нет лести), и его слабость (не было доступа к личным
+   бумагам).
+
+**Итог:** Wood — первоисточник №7, но **дистанционного** типа: документирует публичные посты и
+обстоятельства смерти, ничего не говорит о внутренней жизни. Для биографии это скелет внешних фактов
+высокой точности, вокруг которого Johnson и Adams & Veal дают свидетельство личности.
+
+---
+
 ## 3. Утраченные или не найденные свидетельства (не восстанавливаются)
 
 | Свидетельство | Статус | Источник знания о нём |
@@ -174,7 +222,6 @@
 | Источник | Год | Класс | Ценность | Ограничение |
 |---|---|---|---|---|
 | Edmund Calamy, *Account of the Ejected and Silenced* / *Continuation* | 1702–1727 | `B1` | дублинские посты; сертификат 1661 | путает дату proctor (1652 вместо 1654) |
-| Anthony Wood, *Athenae Oxonienses* (ed. Bliss), iii. 1234–6; *Fasti* | 1691–92 / 1771–1813 | `B1` | оксфордские должности; «in the five last years of his life he became more known by his constant preaching in private meetings in the great city»; запись о смерти | ошибка 1652 в Calamy; Wood думает, что B.D. дарован Dublin University |
 | Samuel Parker, *History of his own Time*, p. 71 | 1727 | `D` | — | клеветнический рассказ о заговоре; см. том 05 |
 | William Symington, «Life and Character of Charnock» | 1853 (в изд. Carter) | `B1` | основной популярный биографический нарратив; хулит Crosby Hall за «wool-packer» | ошибочно датирует Senior Proctor 1652; смещает детали |
 | James McCosh, «Introduction to Charnock's Works» | 1864 (Nichol vol. 1) | `B1` | **лучшая** биография: даёт точные даты, исправляет Calamy, приводит Calendar of State Papers | сам признаёт скудость материала; часть его собственных утверждений спорны |

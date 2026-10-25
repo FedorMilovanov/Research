@@ -58,6 +58,45 @@ how all Gods providences in the world, are in order to the good of his people. B
 divine Stephen Charnock, B.D. sometime fellow of New-Colledg in Oxon.* Полный текст доступен;
 титульный лист — `A1`-подтверждение fellowship и B.D.
 
+### 3B. Wood 1691 как независимый библиограф Чарнока (добавлено 2026-10-25, том 11)
+
+Wood, *Athenæ Oxonienses* vol. II, вход [429], p. 491 (EEBO-TCP `A71277.0001.001`, CC0 1.0) даёт
+**свой собственный** список посмертных изданий — не через Calamy, не через эдикторов:
+
+> «As for his Writings they are many, yet **he published nothing while he lived**. However after his
+> death, his friends made extant these things following to prevent false copies, which were then likely
+> to creep abroad.
+>
+> **A Sermon of reconciliation to God in Christ, on 2 Cor. 5.19.** Lond. 1680. qu.
+>
+> **Treatise of divine providence**, 1. In general. 2. In par∣ticular, as relating to the Church of God
+> in the world, Lond. 1680. oct. Before which is an Epistle written by Rich. Adams and Edw. Veel, who,
+> **as I think**, published the said book. This was afterwards involved in his Works.
+>
+> **His Works, containing several discourses upon the excellencie and attributes of God.** Lond. 1682.
+> in a large fol. published by the said two persons R. Adams and E. Veele.
+>
+> **His Works, vol. 2. containing several discourses upon various divine Subjects.** Lond. 1683. fol.
+> **with a Supple∣ment.**»
+
+Сопоставление с таблицей §3:
+
+| Wood 1691 | Наша таблица | Расхождение |
+|---|---|---|
+| *A Sermon of reconciliation … 2 Cor. 5.19. Lond. 1680. qu.* | Совпадает | — |
+| *Treatise of divine providence … Lond. 1680. oct.* | 1680 | Wood даёт **octavo**; наша копия эпистола — из издания **1684**. Скан первого издания 1680 (`bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`) ещё не сверян с 1684 → `CONFLICT-12` |
+| *His Works … attributes of God. Lond. 1682. fol.* | 1681–82 | Wood даёт один год 1682 → **третье** независимое свидетельство в пользу наличия отдельного титульного листа 1682 (см. §3A, `CONFLICT-6`) |
+| *His Works, vol. 2 … 1683. fol. **with a Supplement*** | *A supplement …* 1683 как отдельное издание | Wood сливает в одну позицию → `CONFLICT-12` |
+
+Два содержательных вывода:
+
+1. **Wood датирует *Attributes* прямо 1682.** Это не снимает `CONFLICT-6` (1681–82 vs 1682), но
+   добавляет к нему третьего свидетеля с 1691 года, который не зависел ни от эдикторов, ни от
+   Calamy.
+2. **Wood оговаривается об издателе Providence**: «who, **as I think**, published the said book».
+   Ни McCosh, ни DNB, ни Symington этой неуверенности не передают — все трое утверждают редактуру
+   Adams & Veal как факт.
+
 ---
 
 ## 3A. Полнотекстовые EEBO-TCP издания XVII века (получены 2026-10-25)

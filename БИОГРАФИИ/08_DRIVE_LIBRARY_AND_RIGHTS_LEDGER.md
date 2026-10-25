@@ -126,17 +126,24 @@ Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой пол
 
 | Объект | Приоритет | Зачем |
 |---|---|---|
-| Funeral sermon Johnson 1680 | **высокий** | единственный contemporaneous личный свидетель; снять `ARCHIVE_HOLD` |
-| Calamy, *Continuation*, p. 83 | **высокий** | сертификат 31 декабря 1661 в оригинале |
-| Wood, *Athenae Oxonienses*, ed. Bliss, iii. 1234–6 | **высокий** | смерть 27 июля 1680, возраст 52, «under the steeple» |
+| ~~Funeral sermon Johnson 1680~~ | ~~**высокий**~~ | **ПОЛУЧЕН 2026-10-25**: EEBO-TCP `A46911.0001.001`, CC0 1.0, pp. 1–40. `ARCHIVE_HOLD` снят. Остаётся `LOCATOR_HOLD` до сверки со снимком |
+| ~~Wood, *Athenae Oxonienses*, 1691, вход [429]~~ | ~~**высокий**~~ | **ПОЛУЧЕН 2026-10-25**: EEBO-TCP `A71277.0001.001`, CC0 1.0, pp. 491–492. Даёт место смерти, владельца Crosby House, место могилы, «France or Holland» |
+| ~~Wood, *Fasti Oxonienses*, An. Dom. 1654~~ | ~~**высокий**~~ | **ПОЛУЧЕН 2026-10-25**: EEBO-TCP `A71277.0001.001`, Fasti, p. 783. «Steph. Charnock of New Coll. Ap. 5» — печатный локатор proctor |
+| Bliss-редакция Wood 1813–20 (4 vols., колонки) | **высокий** | колонковая пагинация входа [429]; все ссылки «Athenae iii. 1234–6» требуют пересчёта — в издании 1691 вход на pp. 491–492 |
+| Calamy, *Continuation*, p. 83 | **высокий** | сертификат 31 декабря 1661 в оригинале. Подтверждено косвенно: Veel сделан B.D. в Trinity College 3 июля 1661, лишён сана за nonconformity, покинул Ирландию в январе 1662 |
 | Calendar of State Papers, Domestic, 19–20 июня 1663 | **высокий** | ордер на арест; снять `CONFLICT` в пользу документа |
+| Скан издания 1680 *A treatise of divine providence* (IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`) | **высокий** | сравнить эпистол Adams & Veal в 1680 и 1684; снять `CONFLICT-12` |
 | Parker, *History of his own Time*, p. 71 | средний | зафиксировать точную формулировку обвинения |
-| Wilson, *Dissenting Churches*, vol. i, pp. 331 sqq. | средний | история Crosby Hall и цепочка пасторов |
+| Wilson, *Dissenting Churches*, vol. i, pp. 331 sqq. | средний | история Crosby Hall и цепочка пасторов; **приоритет повышен**: Wood назвал владельца здания (Sir John Langham) и предшественника (Thomas Watson) |
 | Urwick, *Independency in Dublin in the Olden Time* | средний | дублинский контекст |
 | Armstrong, *Summary History of the Presbyterian Churches in the City* (1829) | средний | дублинский контекст |
-| New College books / *Fasti Oxonienses* | средний | fellowship 1650, M.A. 1652, proctor 1654 |
+| Приходские записи Whitechapel (Richard Tymms, glazier) | средний | был ли Чарнок жильцом или гостем в доме, где умер |
+| Регистр St Michael's, Cornhill, 30 июля 1680 | средний | запись погребения «at the bottom of the Tower under the Belfry» |
+| New College books / *Fasti Oxonienses* 1652 | средний | проверка версии Calamy из первоисточника; Wood дважды даёт 1654, но список proctors 1652 не смотрен |
 | ESTC/Wing записи по первым изданиям | средний | снять `CONFLICT-6` |
 | Мемуары John Gunter | низкий | упоминаются Calamy; не найдены; цель поиска |
+| «Narrative of his Life … by an able hand» (Johnson) | низкий | единственный след неизданной биографии; зафиксирован как утрата |
+| Элогий Johnson на его «Country friend» из Leicestershire | низкий | сравнительный текст: как Johnson писал элогии |
 
 ---
 
@@ -158,3 +165,4 @@ Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой пол
 3. Сверить все 7 локаторов Works 3–5 с печатным Nichol 1864.
 4. Заложить в `03 — PRIMARY SOURCES & EDITIONS` первый первоисточник из очереди §4.
 5. Заложить в `04 — RIGHTS, HOLD & PROVENANCE` копии настоящего ledger и томов отдела.
+6. Загрузить на Drive транскрипцию Wood (том 11) и зафиксировать её в §2.1.

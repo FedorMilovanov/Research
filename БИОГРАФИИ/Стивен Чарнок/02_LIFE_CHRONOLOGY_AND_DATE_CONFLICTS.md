@@ -31,7 +31,7 @@
 | — | Отец Richard Charnock, solicitor (DNB: «a relation of the Lancashire family of Charnock of Charnock»; Symington: «practised as a solicitor in the Court of Chancery … descended from a family of some antiquity in Lancashire») | Symington; DNB; McCosh | `B1` ×3, сходятся |
 | до 1642 | «A course of preparatory study» — домашнее/школьное обучение, деталей нет | Symington | `B1` |
 | **1642, 8 июля** | **Матрикуляция как sizar в Emmanuel College, Cambridge** | McCosh (по университетским записям) | `B1` с `A1`-основанием |
-| 1642–1644 | Tutor — Mr W. Sancroft, впоследствии Archbishop of Canterbury; royalist | McCosh | `B1` |
+| 1642–1644 | Tutor — Mr W. Sancroft, впоследствии Archbishop of Canterbury; royalist. **Wood (первоисточник, вход [429], p. 491): «educated in Eman. Coll. in Cambridge, mostly under the tuition of Mr. Will. Sancroft»** | McCosh; **Wood 1691** | `B1` + `A1` |
 | 1643–1644 | Master of Emmanuel Dr Holdsworth посажен в тюрьму (1643) и изгнан (1644); преемник Dr Anthony Tuckney | McCosh | `B1` |
 | 1644 | Знакомство с John Johnson в Кембридже («thirty-six years since» на момент смерти Чарнока) | McCosh; Johnson | `A1`/`B1` |
 | 1644–1649 | Период духовной борьбы, затем обращение. Johnson: «Jonah-like, had turned to the Lord with all his heart» | Johnson через McCosh | `A1`-транзит |
@@ -44,9 +44,9 @@
 |---|---|---|---|
 | ~1649 | После ухода из колледжа — время в частной семье, **либо tutor, либо chaplain: не установлено** | Adams & Veal; McCosh; Symington | `B1` |
 | ~1649 | Начало служения «somewhere in Southwark». Johnson: семь или восемь человек обратились под его служением там | Johnson; Adams & Veal; Symington; DNB | `A1`/`B1` |
-| 1649 / 1650 | Переезд в Оксфорд; fellowship в New College | Wood: 1649 «retired to Oxford», fellowship 1650; Symington: 1649; DNB: 1649 удаление, fellowship 1650 | **`CONFLICT-1`** |
+| 1649 / 1650 | Переезд в Оксфорд; fellowship в New College | **Wood 1691 (вход [429], p. 491, дословно): «In 1649, or thereabouts, he retired to Oxon, purposely to obtain a Fellowship from the Visitors appointed by Parliament when they ejected scholars by whole shoales; and in 1650 he obtained a Fellowship in New Coll. and thereby for several years did eat the bread of a worthy Loyallist»**; Symington: 1649; DNB: 1649 удаление, fellowship 1650 | **`CONFLICT-1`** |
 | **1652, 19 ноября** | **Incorporated M.A. в Оксфорде** «as he had stood in Cambridge» | McCosh | `B1` с `A1`-основанием |
-| 1654, 5 апреля | Назначен proctor университета совместно с Thomas Cracroft of Magdalene College | McCosh (исправляет Calamy) | **`CONFLICT-2`** |
+| 1654, 5 апреля | Назначен proctor университета совместно с Thomas Cracroft of Magdalene College | **McCosh (исправляет Calamy); Wood, *Fasti Oxonienses*, An. Dom. 1654, p. 783 (дословно: «Proct. — …Tho. Cracroft of Magd. Coll. Ap. 5. — …Steph. Charnock of New Coll. Ap. 5.»)** | **`CONFLICT-2`** |
 | 1654 | Оксфорд: Cromwell — chancellor, John Owen — vice-chancellor | DNB; McCosh | `B1` |
 | ~1652–1655 | Chamber-fellow John Gunter (намеревался написать биографию); дружба с Richard Adams и Edward Veal | McCosh | `B1` |
 | ~1652–1655 | Присоединение к «a church gathered among the scholars by Dr Goodwin» (среди членов: Thankful Owen, Francis Howel, Theophilus Gale, John Howe) | McCosh | `B1` |
@@ -81,14 +81,16 @@
 | Дата | Событие | Свидетель | Класс |
 |---|---|---|---|
 | 1674 | Indulgence; Thomas Watson лицензирует зал Crosby House | McCosh | `B1` |
+| 1674–1680 | **Crosby House принадлежит Sir John Langham** (не congregration). В этом же здании ранее «did hold forth by praying and preaching» **Thomas Watson**, M.A. of Emmanuel, пастор St Stephen's Walbrook, автор *The Art of Divine Contemplation* — то есть Чарнок занял пост Watson'а, а не создал новую congregration | **Wood 1691 (вход [429], p. 491) — эксклюзив** | `A1` |
 | ~1675 | Попытка части congregation призвать его joint pastor с Dr Thomas Jacomb вместо умершего Dr Lazarus Seaman (ум. 9 сент. 1675); место досталось John Howe | McCosh (по Roger's *Life of Howe*, p. 144) | `B1` |
 | **1675** | **Назначен joint pastor с Rev. Thomas Watson** (изгнанный rector St Stephen's, Walbrook) в Crosby Hall, Bishopsgate Street | Все источники | `B1` ×6, сходятся |
 | 1675–1680 | Wood: «in the five last years of his life he became more known by his constant preaching in private meetings in the great city» | Wood | `B1` |
 | 1675–1680 | Проповедует серию дискурсов, ставших *Existence and Attributes of God*; «his sun set before he had gone over half of his transcendent excellencies» | Adams & Veal | `A1` |
 | 1675–1680 | Ухудшение: падает память — читает sermons; слабое зрение — читает «through a glass»; «never looked within them» прежде | Johnson; Adams & Veal; DNB | `A1`/`B1` |
 | 1675–1680 | Жалоба congregation: sermons — «but morality or metaphysics» | Adams & Veal | `A1` |
-| **1680, 27 июля** | **Смерть в доме Richard Tymms, glazier, приход Whitechapel; возраст 52 года** («in the fifty-third year of his age») | Wood; DNB; Symington; McCosh; регистр | `A1`/`B1` |
-| 1680, 30 июля | Тело перенесено в Crosby Hall, затем в St Michael's Church, Cornhill; погребено «over Mr Sykes, under the steeple»; funeral sermon John Johnson, Мф. 13:43 | Регистр St Michael's; Wood; Johnson | `A1` |
+| **1680, 27 июля** | **Смерть в доме Richard Tymms, glazier, приход Whitechapel; возраст 52 года** («in the fifty-third year of his age»). Wood: «He died in the house of one Rich. Tymms a Gla∣zier in the Parish of White Chappel near London» — **место смерти есть только у Wood**. Сноска Wood `* 2.260` на эту дату — всего лишь «1680.», без документа | **Wood; DNB; Symington; McCosh; регистр** | `A1`/`B1`, но дата — `A1`-container без `A1`-документа |
+| 1680, 30 июля | Тело перенесено из Whitechapel в Crosby Hall, затем «accompanied by great numbers of the Brethren to S. Mi∣chaels Church on Cornhill»; погребено «at the bottom of the Tower under the Belfry»; funeral sermon John Johnson, Мф. 13:43 | Регистр St Michael's; **Wood; Johnson** | `A1` |
+| 1680, 30 июля | **John Johnson назван Wood «his contemporary in Emanuel and New Coll»** — независимое подтверждение, что дружба восходит к университету | **Wood 1691 (вход [429], p. 492)** | `A1` |
 
 ---
 
@@ -98,6 +100,7 @@
 
 | Сторона | Утверждение |
 |---|---|
+| **Wood, *Athenæ Oxonienses* 1691 (первоисточник, вход [429], p. 491)** | **«In 1649, or thereabouts, he retired to Oxon, purposely to obtain a Fellowship from the Visitors appointed by Parliament when they ejected scholars by whole shoales; and in 1650 he obtained a Fellowship in New Coll.»** |
 | Wood | «retired to Oxford» в 1649 или около того; fellowship **получен в 1650** |
 | Symington | «In 1649, Charnock removed from Southwark to Oxford, where … he obtained a fellowship in New College» |
 | CCEL | «in 1649 became a minister in Southwark … In 1650 he became a fellow of New College» |
@@ -105,6 +108,13 @@
 **Разрешение:** Wood и CCEL расходятся в пользу fellowship = 1650. Symington сжимает оба события
 в 1649. Рабочая дата отдела: **переезд 1649, fellowship 1650**. Остаётся `LOCATOR_HOLD` до
 проверки New College books.
+
+**Добавление 2026-10-25 (том 11).** Полный вход Wood, полученный из EEBO-TCP `A71277.0001.001`,
+подтверждает обе даты и добавляет содержательную деталь, которой нет ни в одном пересказе: fellowship в
+New College дал Чарноку «for several years … the bread of a worthy Loyallist». Wood, писавший с
+открытой антипуританской иронией, подчёркивает материальную сторону: New College было заполнено
+royalist-выходцами, допущенными парламентскими Visitors. `LOCATOR_HOLD` по New College books
+сохраняется — Wood сообщает результат, не называя акта.
 
 ### `CONFLICT-2` — дата назначения proctor — **РАЗРЕШЁН в пользу 1654**
 
@@ -123,10 +133,17 @@
 - proctor 1652 (Calamy/Symington) → Ирландия 1653 ✗ **противоречит** 1655;
 - proctor 1652 → Ирландия 1655 (CCEL) ✗ это три года, а не «the year after».
 
-**Вывод:** 1652 опровергнут; **1654 подтверждён двумя независимыми путями** (McCosh по
-университетским записям; Adams & Veal по относительной хронологии). Титул «Senior Proctor» у
-Symington не подтверждён; DNB и Adams & Veal говорят просто «Proctor». Отдел использует
-**proctor**, не «senior proctor».
+**Вывод:** 1652 опровергнут; **1654 подтверждён тремя независимыми путями**:
+1. McCosh — по университетским записям;
+2. Adams & Veal (эпистол 1684) — по относительной хронологии («the year after he had been Proctor»);
+3. **Wood, *Fasti Oxonienses*, An. Dom. 1654, p. 783 (2026-10-25, том 11)** — прямая запись:
+   «Proct. — …Tho. Cracroft of Magd. Coll. Ap. 5. — …Steph. Charnock of New Coll. Ap. 5.»
+
+Wood подтверждает 1654 **дважды и в двух разных разделах одной книги**: в Fasti 1654 и во входе [429],
+где «In 1652 he was incorporated Master of Arts … and **two years after** he did undergo the office of
+Proctor». Внутренняя арифметика самого Wood даёт 1654. Версия Calamy/Symington о «senior proctor 1652»
+**не принадлежит Wood**. Титул «Senior Proctor» у Symington не подтверждён; DNB, Wood и Adams & Veel
+говорят просто «Proctor». Отдел использует **proctor**, не «senior proctor».
 
 ### `CONFLICT-3` — дата отъезда в Ирландию — **РАЗРЕШЁН в пользу 1655**
 
@@ -153,6 +170,20 @@ Symington не подтверждён; DNB и Adams & Veal говорят про
 **Разрешение:** «in the fifty-third year of his age» = 52 полных лет (в 53-м году жизни).
 Регистр St Michael's фиксирует погребение 30 июля 1680. Parker опровергнут документально.
 Рабочая формулировка отдела: **умер 27 июля 1680 года в возрасте 52 лет**.
+
+**Добавление 2026-10-25 (том 11, Wood, вход [429], p. 491).** Wood сообщает место смерти, которого
+нет ни в одном пересказе: «He died in the house of one Rich. Tymms a Gla∣zier in the Parish of White
+Chappel near London». То есть Чарнок умер **не в Crosby Hall**, а в чужом доме в Уайтчепле; Wood не
+объясняет, был ли он там жильцом или гостем. Далее Wood даёт маршрут погребальной процессии: тело
+«being conveyed to Crosby house belonging to Sir Jo. Langham … was thence accompanied by great numbers
+of the Brethren to S. Mi∣chaels Church on Cornhill», и — «committed to the earth on the 30 day of the
+same month, **at the bottom of the Tower under the Belfry**».
+
+**Важная оговорка об источнике даты.** Wood помечает дату смерти звёздочкой со сноской `* 2.260`.
+Полный текст сноски: **«1680.»** — только год, без регистра, надгробия или показания. Соседние сноски
+того же блока (`* 2.259` к смерти Rochester, `* 2.263`) устроены так же. Для Wood год — рубежная
+отметка структуры тома, а не процитированный документ. Следовательно: **27 июля 1680 — утверждение
+Wood, а не документ, на который Wood ссылается.** Свидетельский вес ниже, чем принято считать.
 
 ### `CONFLICT-5` — издание Nichol: 1860 или 1864–66
 
@@ -217,6 +248,33 @@ WorldCat (OCLC 18480269), IA. DNB ошибается. Рабочая дата: *
 `CONFLICT` открытый. Важная деталь от McCosh: в титуле стояли только инициалы **«S. C.»**, тогда
 как во всех прочих sermons коллекции стояло имя проповедника.
 
+**Добавление 2026-10-25 (том 11, Wood, вход [429], p. 491).** Wood пишет прямо: «As for his Writings
+they are many, yet **he published nothing while he lived**». Это конфликт с самой возможностью
+Morning-Exercise sermon. Разрешение: это не противоречие, а **вопрос границы понятия**. Wood, скорее
+всего, не считал публикацией серию, где автор скрыт за инициалами в composite volume, либо не знал о
+ней. Следствие для отдела:
+
+- «Единственная прижизненная публикация» — **верно**, но с оговоркой: сам Wood в 1691-м утверждает
+  обратное, и его отрицание само по себе — свидетельство, насколько ненадёжна attribution анонимных и
+  инициальных публикаций.
+- Нельзя писать «Чарнок не публиковался при жизни» как безусловный факт.
+
+### `CONFLICT-12` — Wood: «His Works, vol. 2 … 1683. fol. with a Supple∣ment» — один том или два
+
+| Сторона | Утверждение |
+|---|---|
+| Wood 1691, вход [429], p. 491 | «His Works, vol. 2. containing several discourses upon various divine Subjects. Lond. 1683. fol. **with a Supple∣ment**» |
+| Том 03 / EEBO-TCP | *A supplement …* (Cockerill, 1683) — **отдельное** издание |
+
+**Разрешение:** не разрешён. Wood описывает, по-видимому, один том с двумя титульными листами или
+том, продававшийся с добавлением; том 03 фиксирует *Supplement* как самостоятельную единицу по
+EEBO-TCP. Требуется скан 1683 folio. До неё: `LOCATOR_HOLD`; рабочая формулировка — «второй том
+Works 1683 с приложенным (или сброшюрованным) *Supplement*».
+
+Также: Wood оговаривается относительно издателей Providence — «an Epistle written by Rich. Adams and
+Edw. Veel, who, **as I think**, published the said book». Wood не уверен в издателе. Ни один пересказ
+эту неуверенность не передаёт.
+
 ---
 
 ## 4. Границы допустимой формулировки
@@ -227,6 +285,11 @@ WorldCat (OCLC 18480269), IA. DNB ошибается. Рабочая дата: *
 - Не датировать *Existence and Attributes of God* одним годом «1682» как факт: допустимо
   «1681–82» или «посмертно, 1681–82».
 - Не подавать Parker как равноправного свидетеля.
+- Не citing Wood как документ для даты 27 июля: сноска Wood — только «1680.»
+- Не приписывать Wood утверждение «senior proctor 1652»: он дважды даёт 1654 (Fasti p. 783 и
+  «two years after» 1652 во входе [429]).
+- Не утверждать, что Чарнок умер в Crosby House: по Wood — в доме Richard Tymms, glazier, Whitechapel.
+- Не утверждать, что Crosby House принадлежал congregration: по Wood — Sir John Langham.
 
 ---
 

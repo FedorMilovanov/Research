@@ -43,6 +43,7 @@
 | 08 | `08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md` | **Первичный эпистол Adams & Veal 1684** — полная транскрипция и разбор | Разрешение `CONFLICT-2`/`CONFLICT-3`; «true Son of the Church of England»; редакторский манифест; CC0 1.0 |
 | 09 | `09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md` | **Funeral sermon John Johnson 1680** — полная транскрипция с постраничными локаторами | `ARCHIVE_HOLD` снят; показано, что знаменитый «портрет» — patristic compilation, не свидетельство Johnson; pp. 33–40 |
 | 10 | `10_REPO_USAGE_LEDGER_AND_VERIFICATION_STATUS.md` | Сводный леджер уже используемого в Research Charnock-материала | `CHARN_PRACT_ATHEISM_001`; two-state diagnostic; три функциональные роли; что отдел добавил |
+| 11 | `11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md` | **Wood, *Athenæ Oxonienses* 1691 — первичная транскрипция входа [429] и Fasti 1654** | Место смерти (дом Richard Tymms, Whitechapel); Sir John Langham и Crosby House; St Michael Cornhill «under the Belfry»; «France or Holland»; формула «true son of the Church of England» у Wood; `CONFLICT-12`; CC0 1.0 |
 
 ---
 
@@ -67,8 +68,9 @@
 | 1666 | Гибель библиотеки в Великом лондонском пожаре | Adams & Veal; DNB; Symington |
 | 1674 | Indulgence; Thomas Watson лицензирует зал Crosby House | McCosh |
 | 1675 | Совместный пастор с Thomas Watson в Crosby Hall, Bishopsgate Street | Все источники |
-| 1680, 27 июля | Смерть в доме Richard Tymms, glazier, приход Whitechapel; 52 года | Wood; DNB; Symington; McCosh |
-| 1680, 30 июля | Погребение в St Michael's, Cornhill, «under the steeple»; funeral sermon John Johnson, Мф. 13:43 | Регистр St Michael's; Wood; Johnson |
+| ~1660–1675 | «now and then either into France or Holland» — континентальные поездки без прихода | **Wood (эксклюзив)** |
+| 1680, 27 июля | Смерть **в доме Richard Tymms, glazier, приход Whitechapel** (не в Crosby Hall); 52 года. Сноска Wood `* 2.260` = только «1680.» | **Wood; DNB; Symington; McCosh** |
+| 1680, 30 июля | Тело из Whitechapel в Crosby House (владение **Sir John Langham**), затем «great numbers of the Brethren» к St Michael's, Cornhill; погребение «at the bottom of the Tower under the Belfry»; funeral sermon John Johnson, Мф. 13:43 | Регистр St Michael's; **Wood; Johnson** |
 
 Полный вариант с конфликтами — том 02.
 
@@ -76,6 +78,17 @@
 > had been Proctor) called over into Ireland». В сочетании с документальным прибытием Henry Cromwell
 > в Ирландию в августе 1655 это **опровергает** версию Calamy/Symington о proctor в 1652 и
 > **подтверждает** 5 апреля 1654 (McCosh). Детали — том 08.
+
+> **Разрешение 2026-10-25 (3).** Полный вход **Wood, *Athenæ Oxonienses* 1691** (EEBO-TCP
+> `A71277.0001.001`, CC0 1.0) получен впервые в отделе — вход [429], pp. 491–492, плюс *Fasti*
+> An. Dom. 1654, p. 783. До сих пор Wood знали только через пересказ DNB/McCosh/Symington. Три
+> следствия: (1) Wood становится **первоисточником №7** — единственным ранним свидетелем вне круга
+> друзей; (2) `CONFLICT-2` (proctor) получает **третье** независимое подтверждение 1654; (3) отдел
+> узнал **место смерти** («in the house of one Rich. Tymms a Glazier in the Parish of White Chappel»),
+> владельца Crosby House (**Sir John Langham**), что в нём ранее проповедовал **Thomas Watson**, и что
+> могила была «at the bottom of the Tower under the Belfry» St Michael's, Cornhill. Одновременно
+> установлено, что сноска Wood на дату смерти — только «1680.», то есть дата 27 июля — утверждение
+> Wood, а не цитированный им документ. Детали — том 11.
 
 > **Разрешение 2026-10-25 (2).** Funeral sermon John Johnson 1680 получен полностью
 > (EEBO-TCP `A46911.0001.001`, CC0 1.0, pp. 1–40). Два следствия: (1) `ARCHIVE_HOLD` снят;
@@ -96,13 +109,14 @@
 Приоритеты:
 
 1. **Закрыть первоисточники Чарнока в полнотекстовом виде.** ~~EEBO-TCP `A79420.0001.001`
-   (*A discourse of divine providence*, 1684)~~ — **получен**. Следующий: скан 1684 из IA и
+   (*A discourse of divine providence*, 1684)~~ — **получен**. ~~funeral sermon John Johnson
+   1680~~ — **получен** (EEBO-TCP `A46911.0001.001`). ~~Wood, *Athenæ Oxonienses* 1691,
+   вход [429] + Fasti 1654~~ — **получен** (EEBO-TCP `A71277.0001.001`). Следующий: скан 1684 из IA и
    скан 1680 (`bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`)
-   — сравнить эпистолы двух изданий.
-2. ** funeral sermon John Johnson 1680** («ΕΚΛΑΜΨΙΣ ΤΩΝ ΔΙΚΑΙΩΝ», Мф. 13:43) — единственный
-   contemporaneous личный свидетель. Теперь у нас есть точное указание на него от самих
-   Adams & Veal («Mr. Johnson in his Sermon on oc∣casion of Mr. Charnocks death»), что упрощает
-   поиск. Копия в нашем распоряжении отсутствует → `ARCHIVE_HOLD`.
+   — сравнить эпистолы двух изданий (`CONFLICT-12`).
+2. **Bliss-редакция Wood 1813–20** (4 vols., колонковая пагинация). Все ссылки вида
+   «Athenae iii. 1234–6» в очереди приобретений относятся к ней; вход [429] в первом издании —
+   pp. 491–492, и Bliss перенумеровал иначе. Требуется пересчёт.
 3. **Мемуары John Gunter**, chamber-fellow в Оксфорде — упоминаются Calamy, но, по McCosh,
    «we have not been able to find any trace». Цель поиска.
 4. **Утраченная conversion paper** — погибла в пожаре 1666; Johnson забыл конкретные тексты Писания.

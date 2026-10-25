@@ -132,6 +132,20 @@ strenuous maintainer of the Truth they professed.»**
 служения в её рамках.» Это ключевое напряжение для эпической биографии: не отступник и не радикал,
 а конформист по доктрине, изгнанный по порядку.
 
+**Усиление 2026-10-25 (том 11).** Формула **не принадлежит одному Adams & Veal**. Wood, *Athenæ
+Oxonienses* 1691, вход [429], p. 491, даёт её в том же развёрнутом виде:
+
+> «…and lastly that he was **a true son of the Church of England in that sound doctrine laid down in
+> the articles of Religion, and taught by our most famous antient Divines and Reformers**, &c.»
+
+Wood писал в 1691 году с открытой антипуританской позицией, называя пуритан «the godly Party» с
+иронией и подчёркивая Loyallist-деньги New College. У него не было причин льстить Чарноку. Семь лет
+между 1684 и 1691, идентичная развёрнутая формула с идентичным ограничительным уточнением («in that
+sound doctrine laid down in the Articles …») — это либо цитирование редакторами общего письменного
+источника, либо общего круга. **Следствие:** формула — самая надёжная из всех известных формулировок
+церковной идентичности Чарнока. Ни «Puritan Presbyterian» (Wikipedia, CCEL), ни «Church of England
+clergyman» не описывают её точно.
+
 ---
 
 ## 5. Открытые конфликты (перенесены из тома 02)
