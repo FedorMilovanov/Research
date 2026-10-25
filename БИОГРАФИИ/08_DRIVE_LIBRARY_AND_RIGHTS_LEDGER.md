@@ -1,0 +1,157 @@
+# Биографии — Google Drive library и права
+
+**Дата:** 2026-10-25
+**Серия:** [`08 — СЕРИЯ «БИОГРАФИИ» — BIOGRAPHICAL MATERIALS`](https://drive.google.com/drive/folders/1Mkn3TEsr4b8YrnCusosR6crp30jSqSXN) (`1Mkn3TEsr4b8YrnCusosR6crp30jSqSXN`)
+**Родитель:** `03 — Research — ИССЛЕДОВАТЕЛЬСКИЙ БЭКЕНД` (`1Eb8qglwGIqeJY-02J8eXNpDaQfdkmozs`)
+**Политика:** [`data/artifact-custody-policy-v2.json`](../data/artifact-custody-policy-v2.json) · [`AGENT_RULES.md`](../AGENT_RULES.md)
+**Правило:** Drive presence ≠ quote-safe ≠ publication approval ≠ снятие HOLD.
+«Лежать на Drive» ≠ «цитировать»: цитата обязана вести на печатный локатор и на строку реестра.
+
+---
+
+## 1. Дерево серии
+
+| Папка | ID | Ссылка |
+|---|---|---|
+| 00 — INDEX, AUTHORITY & SERIES MAP | `1hlCM7vxeVgleiSTEcOmKG8ddxS3TzwJH` | [открыть](https://drive.google.com/drive/folders/1hlCM7vxeVgleiSTEcOmKG8ddxS3TzwJH) |
+| 01 — ДЖОН ГИЛЛ (1697–1771) | `1ElvzvSlvHz5yxHfOgiGruFJ5HgVEyzx2` | [открыть](https://drive.google.com/drive/folders/1ElvzvSlvHz5yxHfOgiGruFJ5HgVEyzx2) |
+| 02 — СТИВЕН ЧАРНОК (1628–1680) | `15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2` | [открыть](https://drive.google.com/drive/folders/15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2) |
+| 03 — PRIMARY SOURCES & EDITIONS | `1Ey5dMjeqdHa2nSpTFz_DuvsN--XX2Plc` | [открыть](https://drive.google.com/drive/folders/1Ey5dMjeqdHa2nSpTFz_DuvsN--XX2Plc3) |
+| 04 — RIGHTS, HOLD & PROVENANCE | `1LAx9H3qqnO5ZHv1VD9CkQobFmFL9W8y6` | [открыть](https://drive.google.com/drive/folders/1LAx9H3qqnO5ZHv1VD9CkQobFmFL9W8y6) |
+| 99 — INCOMING / TO CLASSIFY | `1EMrcr2r_A-lO6SVTa0zajfx2D-nEYBY7` | [открыть](https://drive.google.com/drive/folders/1EMrcr2r_A-lO6SVTa0zajfx2D-nEYBY7) |
+
+Схема нумерации унаследована от серии `07 — СЕРИЯ «ИСКУПЛЕНИЕ»`
+([`ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md`](../ИСКУПЛЕНИЕ/07_DRIVE_LIBRARY_AND_RIGHTS_LEDGER.md))
+и адаптирована под биографическую серию.
+
+---
+
+## 2. Уже положенные объекты
+
+Все три объекта — **копии** существующих файлов, созданные через Drive `copy_file`.
+**Оригиналы не двигались и не удалялись.**
+
+| Объект | Drive ID | Куда скопировано | Источник копии | Rights | locatorState | publicationState |
+|---|---|---|---|---|---|---|
+| Charnock Works 3–5 locators | `1Vg9tA3uhECDf6uHLdv2_PArcgd7BL70x` | `02 — СТИВЕН ЧАРНОК` | `13pODGSirmiu3no33l_O0XsGRtvJRkAyr` | — | unchecked | HOLD |
+| Gill Rippon 1838 PDF | `14bfNjtyOgIh7MQV-7yK8I6K2p3AG6dNY` | `01 — ДЖОН ГИЛЛ` | `1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu` | — | unchecked | HOLD |
+| Gill mobile reference .txt | `1uXU3sR6yn8VEUhQWQ_z_ctwtD300-Pwi` | `01 — ДЖОН ГИЛЛ` | `1tQ6MLcTuslMxH3jTecVOjWC-Ju-LqE1m` | — | unchecked | HOLD |
+
+### 2.1. Зеркала томов отдела (загружены 2026-10-25)
+
+В `00 — INDEX, AUTHORITY & SERIES MAP`:
+
+| Объект | Drive ID |
+|---|---|
+| БИОГРАФИИ — 00 README AND NAVIGATION | `151Fbp92RxcP1hW0YbfdLgyuHuPV1FqQU` |
+| БИОГРАФИИ — 01 GILL RELOCATION AND SUPERSESSION RECORD | `16n8Min16U2l9eYNowlB1QqbAQ5SZEKYt` |
+| БИОГРАФИИ — 08 DRIVE LIBRARY AND RIGHTS LEDGER | `1I0VPEYUnv1JXrxZvRQKk2XIO3zkQDPlx` |
+
+В `02 — СТИВЕН ЧАРНОК (1628–1680)`:
+
+| Объект | Drive ID |
+|---|---|
+| Стивен Чарнок — 00 README AND NAVIGATION | `1zJbYlHbRVJueNtp8fXoCn20jqVMFkt4G` |
+| Стивен Чарнок — 01 Witnesses and Evidence Hierarchy | `17gCbSlmrlqTTjYX6rmjGk7BcurszBFnT` |
+| Стивен Чарнок — 02 Chronology and Date Conflicts | `1-XAn2H3BmucaDFOxcIso1hCdzFFvTKBO` |
+| Стивен Чарнок — 03 Works Editions and Publication Chronology | `17-c0geD8iCl2-YV4kryp3z4P-gKCVguh` |
+| Стивен Чарнок — 04 Character Ministry and Theology | `1mNEAz6w1DZC_pEEq3TlcbnpdHCWQvPGb` |
+| Стивен Чарнок — 05 Controversies and Claim Audit | `1lliBwqiqe_ZG6W2H0JPpG8ey7-NfLyph` |
+| Стивен Чарнок — 06 Corpus Access Matrix and Locators | `1BAs64-hsi1KwWkoTq73S453Ax3eBmtLw` |
+| Стивен Чарнок — 07 Repo Crosslinks and Drive Mirror | `1FZtigfn0Ta8IA8BfRFgpufcwwQ37Hcpk` |
+
+Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
+и не являются цитируемым material.
+
+### 2.2. Custody-статус
+
+Это `ACQUIRED_DURABLE` относительно байтов копии **только после** независимого SHA-readback.
+На старте фиксируем: **копия создана через Drive `copy_file`; SHA-256 readback не выполнялся.**
+Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой политике.
+**Не заявлять forensic acquisition.**
+
+### 2.3. Charnock Works 3–5 locators — содержание копии
+
+Источник данных: `https://calvinandcalvinism.com/?p=17`, прочитан **2026-10-23**, фрагмент **1 из 16**.
+
+| Локатор | Примечание |
+|---|---|
+| Works 4:306 | — |
+| Works 4:496 | — |
+| Works 4:145 | — |
+| Works 4:251–252 | — |
+| Works 5:29 | — |
+| Works 5:96 | — |
+| Works 3:425 | — |
+
+`evidenceClass` = `B1`. Причина: page numbers получены из publisher page numbers,
+**не** сверенные с title page оригинала Nichol 1864. `locatorState = unverified-against-title-page`.
+Фрагменты 2–16 не читаны → материал **неполный**. `EVIDENCE_HOLD`.
+
+---
+
+## 3. PD vs copyright — что можно и что нельзя класть
+
+### 3.1. Public domain (можно клагать без `RIGHTS_HOLD`, но нужен `LOCATOR_HOLD` до верификации страницы)
+
+| Объект | Год | Издание |
+|---|---|---|
+| Charnock, *The Complete Works* | 1864–1866 | Edinburgh: James Nichol; London: James Nisbet; Dublin: W. Robertson — 5 vols |
+| Charnock, *A Discourse of Divine Providence* | 1680 / 1684 / 1685 | первое издание; 2-е изд. 1684; John Harris 1685 |
+| Charnock, *Existence and Attributes of God* | 1681–82 / 1683 | фолианты |
+| Charnock, *Man's Enmity to God* + *Mercy for the Chief of Sinners* | 1699 | с «Advertisement to the Reader» by Edward Veal |
+| Charnock, «The Sinfulness and Cure of Thoughts» | 1659–1689 (supplement) | *Morning Exercises at Cripplegate*, sermon 19; репринт Nichol 1844 |
+| McCosh, Introduction | 1864 | в Nichol vol. 1 |
+| Symington, Life and Character | 1853 | в изд. Robert Carter & Brothers |
+| Johnson, funeral sermon | 1680 | — |
+| DNB vol. 10, ст. Charnock | 1887 | — |
+
+### 3.2. Copyright / rights не проверены — `RIGHTS_HOLD`
+
+| Объект | Почему |
+|---|---|
+| EEBO-TCP `A79420.0001.001` | лицензия TCP на публикационное использование не проверена |
+| Banner of Truth, *The Works of Stephen Charnock* | современное издание в авторском праве |
+| Sovereign Grace Publishers (2001) | современное издание в авторском праве |
+| Baker Books reprint 1996 (Gutenberg 53527) | текст PD, оформление в авторском праве |
+| Два портрета Чарнока (Williams' Library painting; plate in folio edition) | права на репродукцию не проверены |
+| Мюррей RAA (для справки о схеме прав из серии 07) | in copyright; только `PRIVATE_STUDY` |
+
+---
+
+## 4. Открытая очередь закладок в `03 — PRIMARY SOURCES & EDITIONS`
+
+| Объект | Приоритет | Зачем |
+|---|---|---|
+| Funeral sermon Johnson 1680 | **высокий** | единственный contemporaneous личный свидетель; снять `ARCHIVE_HOLD` |
+| Calamy, *Continuation*, p. 83 | **высокий** | сертификат 31 декабря 1661 в оригинале |
+| Wood, *Athenae Oxonienses*, ed. Bliss, iii. 1234–6 | **высокий** | смерть 27 июля 1680, возраст 52, «under the steeple» |
+| Calendar of State Papers, Domestic, 19–20 июня 1663 | **высокий** | ордер на арест; снять `CONFLICT` в пользу документа |
+| Parker, *History of his own Time*, p. 71 | средний | зафиксировать точную формулировку обвинения |
+| Wilson, *Dissenting Churches*, vol. i, pp. 331 sqq. | средний | история Crosby Hall и цепочка пасторов |
+| Urwick, *Independency in Dublin in the Olden Time* | средний | дублинский контекст |
+| Armstrong, *Summary History of the Presbyterian Churches in the City* (1829) | средний | дублинский контекст |
+| New College books / *Fasti Oxonienses* | средний | fellowship 1650, M.A. 1652, proctor 1654 |
+| ESTC/Wing записи по первым изданиям | средний | снять `CONFLICT-6` |
+| Мемуары John Gunter | низкий | упоминаются Calamy; не найдены; цель поиска |
+
+---
+
+## 5. Границы допустимой формулировки
+
+- Нельзя говорить «взято с Drive» — верно «лежит на Drive».
+- Нельзя citing копию как печатную страницу.
+- Нельзя удалять оригиналы `13pODGSirmiu3no33l_O0XsGRtvJRkAyr`,
+  `1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu`, `1tQ6MLcTuslMxH3jTecVOjWC-Ju-LqE1m`.
+- Нельзя заявлять `ACQUIRED_DURABLE` до SHA-readback.
+
+---
+
+## 6. Следующее проверяемое действие
+
+1. Выполнить SHA-256 readback по трём копиям и перевести custody в `ACQUIRED_DURABLE`
+   или зафиксировать расхождение.
+2. Прочитать фрагменты 2–16 `calvinandcalvinism.com/?p=17` и дополнить таблицу локаторов.
+3. Сверить все 7 локаторов Works 3–5 с печатным Nichol 1864.
+4. Заложить в `03 — PRIMARY SOURCES & EDITIONS` первый первоисточник из очереди §4.
+5. Заложить в `04 — RIGHTS, HOLD & PROVENANCE` копии настоящего ledger и томов отдела.

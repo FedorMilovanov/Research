@@ -137,7 +137,7 @@ Institutional/private delivery is an external dependency. A catalog card, holdin
 
 Current authority:
 
-- `Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md`;
+- `БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md`;
 - `data/gill-closed-book-families-2026-08-02.json`.
 
 The former undifferentiated backlog is replaced by seven bounded families: Park, Strother, Ascol, Walden, biographical primary witnesses, first editions and the canonical physical package. Each family has owner documents, claim scope, request queries and acceptance criteria.

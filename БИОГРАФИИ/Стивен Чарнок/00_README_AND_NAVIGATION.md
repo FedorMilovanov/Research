@@ -1,0 +1,105 @@
+# Стивен Чарнок (1628–1680) — исследовательский отдел
+
+**Дата создания:** 2026-10-25
+**Режим:** сбор материалов для мощной эпической биографии. Первичная верификация, иерархия свидетелей,
+фиксация конфликтов.
+**Объект:** Stephen Charnock, B.D. (1628 – 27 июля 1680), английский пуританский богослов и
+пресвитерианский проповедник.
+**Родитель:** [`БИОГРАФИИ/`](../00_README_AND_NAVIGATION.md)
+**Drive:** [`02 — СТИВЕН ЧАРНОК (1628–1680)`](https://drive.google.com/drive/folders/15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2)
+(`15iNGKO8rN3vJKPbJuXfPVx4rXHER5Xq2`)
+
+---
+
+## 1. Зачем отдел
+
+Чарнок — фигура, вокруг которой в интернет-литературе устойчиво circulates несколько
+взаимоисключающих версий одной и той же биографии. Причины структурные:
+
+- из первоисточников сохранился **очень скудный** корпус (McCosh: «the memorials of the life of
+  Charnock are much scantier than those who have profited by his writings … could wish»);
+- почти всё, что известно, проходит через **редакторов-друзей** Adams и Veal, публиковавших его
+  труды посмертно;
+- позднейшие популярные источники (Wikipedia и её клоны, AI-сгенерированные страницы) смешивают
+  фактуру Symington 1853, McCosh 1864 и DNB 1887, добавляя собственные ошибки.
+
+Задача отдела — отделить **что известно и с каким локатором** от **что пересказано без проверки**,
+и собрать материал, достаточный для эпической биографии без fictionalization.
+
+---
+
+## 2. Тома отдела
+
+| № | Файл | Суть | Ключевая добыча |
+|---:|---|---|---|
+| 00 | `00_README_AND_NAVIGATION.md` | Этот файл — вход, authority и карта томов | Структура и режим |
+| 01 | `01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md` | Иерархия свидетелей и классов | 6 первоисточников, 4 утраченных свидетельства, 3 поздних вторичника |
+| 02 | `02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md` | Хронология жизни и все конфликты дат | 24 датированные точки, 9 зафиксированных `CONFLICT` |
+| 03 | `03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md` | Труды, издания, публикационная история | Посмертная публикация 1680→1702, Nichol 1864–66, полная оглавка 5 томов |
+| 04 | `04_CHARACTER_MINISTRY_AND_THEOLOGY.md` | Характер, проповедь, богословие | Johnson funeral sermon; Crosby Hall; Dublin lecture; «morality or metaphysics» |
+| 05 | `05_CONTROVERSIES_AND_CLAIM_AUDIT.md` | Спорные утверждения и их опровержения | Parker plot 1663; дата смерти 1680 vs 1683; B.D./fellow Тринити; пагинация Morning Exercise |
+| 06 | `06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md` | Матрица доступа к корпусу | EEBO/IA/CCEL/Digital Puritan/Hathi/ESTC с классами и HOLD |
+| 07 | `07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md` | Связка с уже имеющимся в репозитории материалом по Чарноку | 12 корпусов, 40+ файлов, CCEL-локаторы, Drive-зеркала |
+
+---
+
+## 3. Короткая каркасная биография (только подтверждённое)
+
+| Год | Событие | Лучший свидетель |
+|---:|---|---|
+| 1628 | Рождение в приходе St Katharine Cree / St Catherine Creechurch, Лондон | Symington; McCosh; DNB |
+| 1642, 8 июля | Матрикуляция sizar в Emmanuel College, Cambridge | McCosh (по университетским записям) |
+| 1644 | Знакомство с John Johnson, his «bosom friend» | McCosh; Johnson funeral sermon |
+| 1645–46 | Прохождение B.A. | McCosh |
+| ~1649 | Уход из колледжа; частная семья (tutor или chaplain — не установлено); начало служения в Southwark | Adams & Veal; McCosh; Symington |
+| 1649/1650 | Переезд в Оксфорд; fellowship в New College (1650) | Wood; DNB; Symington |
+| 1652, 19 ноября | Incorporated M.A. в Оксфорде | McCosh |
+| 1654, 5 апреля | Назначен proctor университета (вместе с Thomas Cracroft) | McCosh (исправляет Calamy: не 1652) |
+| 1655, август | Прибытие в Ирландию в свите Henry Cromwell | McCosh (по Calamy/Palmer) |
+| 1655–1660 | Chaplain у Henry Cromwell; minister of St Werburgh's; lecturer at Christ Church, Дублин | DNB; McCosh; Symington |
+| 1660 | Реставрация — конец публичного служения в Ирландии | Adams & Veal; DNB |
+| 1661, 31 декабря | Подписывает сертификат в пользу Edward Veal, датированный Дублином | McCosh (по Calamy Continuation, p. 83) |
+| 1663, 19–20 июня | Ордер на арест Stephen Charnock; показания Rob. Littlebury | Calendar of State Papers (через McCosh) |
+| ~1660–1675 | «Наибольшая часть пятнадцати лет» в Лондоне без постоянной должности; визиты во Францию и Голландию | Adams & Veal; Wood |
+| 1666 | Гибель библиотеки в Великом лондонском пожаре | Adams & Veal; DNB; Symington |
+| 1674 | Indulgence; Thomas Watson лицензирует зал Crosby House | McCosh |
+| 1675 | Совместный пастор с Thomas Watson в Crosby Hall, Bishopsgate Street | Все источники |
+| 1680, 27 июля | Смерть в доме Richard Tymms, glazier, приход Whitechapel; 52 года | Wood; DNB; Symington; McCosh |
+| 1680, 30 июля | Погребение в St Michael's, Cornhill, «under the steeple»; funeral sermon John Johnson, Мф. 13:43 | Регистр St Michael's; Wood; Johnson |
+
+Полный вариант с конфликтами — том 02.
+
+---
+
+## 4. Что нужно для «мощной эпической биографии» — очередь работы
+
+Отдел открыт. Приоритеты:
+
+1. **Закрыть первоисточники Чарнока в полнотекстовом виде.** EEBO-TCP `A79420.0001.001`
+   (*A discourse of divine providence*, 1680) — прямой текст с титульным листом
+   «sometime fellow of New-Colledg in Oxon». Это `A2`, и он должен быть прочитан целиком.
+2. ** funeral sermon John Johnson 1680** («ΕΚΛΑΜΨΙΣ ΤΩΝ ΔΙΚΑΙΩΝ», Мф. 13:43) — единственный
+   contemporaneous личный свидетель. McCosh использовал копию из Williams' Library; копия в
+   нашем распоряжении отсутствует → `ARCHIVE_HOLD`.
+3. **Мемуары John Gunter**, chamber-fellow в Оксфорде — упоминаются Calamy, но, по McCosh,
+   «we have not been able to find any trace». Цель поиска.
+4. **Утраченная conversion paper** — погибла в пожаре 1666; Johnson забыл конкретные тексты Писания.
+   Не восстановима; только констатировать потерю.
+5. **Crosby Hall congregation history** — Wilson, *History and Antiquities of Dissenting Churches*,
+   vol. i, pp. 331 sqq. — цепочка Watson → Slater → Grosvenor → Hodge/Jones → роспуск 1769.
+6. **Dublin context** — Urwick, *Independency in Dublin in the Olden Time*; Armstrong,
+   *Summary History of the Presbyterian Churches in the City* (1829).
+7. **Постраничные локаторы** для всех quote-card кандидатов. Пока не приведены к странице — не quote-safe.
+
+---
+
+## 5. Модель доказательств и запреты отдела
+
+- `evidenceClass`, `accessState`, `locatorState`, `rightsState`, `publicationState` фиксируются раздельно.
+- Wikipedia, Grokipedia и иные AI-агрегаторы — класс `C` или `D`; не используются как опора.
+- DNB 1887 — класс `B1` (качественная вторичка с указанием первоисточников), **не** `A1`.
+- Symington 1853 и McCosh 1864 — `B1` как биографические сочинения; но **цитируемые внутри них
+  первоисточники** (Johnson, Adams & Veal, Wood, Calamy, Calendar of State Papers) сохраняют свой
+  собственный класс и должны цитироваться по первичной публикации, а не по пересказу.
+- Запрещено: «переписывать» скудость источников детализацией. Эпичность достигается плотностью
+  проверенного факта и честным обозначением лакун, не заполнением их вымыслом.

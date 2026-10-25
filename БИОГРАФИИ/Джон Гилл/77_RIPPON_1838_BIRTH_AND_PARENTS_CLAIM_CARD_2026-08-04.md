@@ -3,7 +3,7 @@
 **Дата:** 2026-08-04  
 **Authority ID:** `GILL-RIPPON-1838-CLAIM-CARDS-2026-08-04`  
 **Claim ID:** `GILL-RIPPON-1838-CLAIM-BIRTH-PARENTS-001`  
-**Owner document:** `Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md`  
+**Owner document:** `БИОГРАФИИ/Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md`  
 **Machine registry:** `data/gill-rippon-1838-claim-cards-2026-08-04.json`
 
 ```text

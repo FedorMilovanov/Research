@@ -10,8 +10,8 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / 'data/gill-rippon-1838-claim-cards-2026-08-04.json'
 RECEIPT = ROOT / 'data/gill-rippon-1838-open-access-verification-2026-08-04.json'
-OWNER = ROOT / 'Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md'
-DOC = ROOT / 'Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md'
+OWNER = ROOT / 'БИОГРАФИИ/Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md'
+DOC = ROOT / 'БИОГРАФИИ/Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md'
 
 PDF_SHA = '362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792'
 QUOTE_SHA = 'ba341d1321897649e616f94a1693d21ab5fc632010bc4f839b8c49aa823e2587'
@@ -66,7 +66,7 @@ require(registry.get('generatedAt') == '2026-08-04', 'claim-card generated date 
 require(registry.get('lastVerifiedAt') == '2026-08-04', 'claim-card verification date drift')
 require(registry.get('sourceItemId') == 'GILL-BIO-RIPPON-1838-IA', 'source item drift')
 require(registry.get('receiptAuthority') == 'data/gill-rippon-1838-open-access-verification-2026-08-04.json', 'receipt authority drift')
-require(registry.get('ownerDocument') == 'Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md', 'owner document drift')
+require(registry.get('ownerDocument') == 'БИОГРАФИИ/Джон Гилл/17_BIOGRAPHICAL_PRIMARY_SOURCES_AND_VERIFICATION.md', 'owner document drift')
 require(registry.get('directQuoteApproved') is False, 'registry direct quotation must remain unapproved')
 require(registry.get('productPublicationApproved') is False, 'registry Product publication must remain unapproved')
 require(OWNER.is_file(), 'biographical owner document missing')

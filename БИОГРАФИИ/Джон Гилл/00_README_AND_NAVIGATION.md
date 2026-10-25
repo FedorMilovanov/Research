@@ -94,8 +94,8 @@
 | 65 | `65_RABBINIC_CHRONOLOGY_AND_ANTI_ANACHRONISM_METHOD.md` | Раввинистическая хронология | Антианахронический метод и границы Judaica |
 | 66 | `66_GILLITES_FULLERITES_TERMINOLOGY_AND_DENOMINATIONAL_MEMORY.md` | Gillites и Fullerites | Датировка терминов и деноминационная память |
 | 67 | `67_OFFER_INVITE_PROCLAIM_SENSIBLE_SINNERS_CONCORDANCE.md` | Offer/invite/proclaim concordance | Терминологическая карта первичных мест |
-| 68 | `../68_GILL_INTRODUCTION_HISTORICAL_CONTEXT_50_PLUS_SOURCE_AUDIT.md` | Аудит исторического введения 50+ | Право, dissent, город и книжная культура |
-| 69 | `../69_GILL_SERIES_GLOSSARY_PLACEMENT_INFLECTION_AND_CADENCE_AUDIT.md` | Аудит глоссария серии | Placement, словоформы и cadence |
+| 68 | `../../68_GILL_INTRODUCTION_HISTORICAL_CONTEXT_50_PLUS_SOURCE_AUDIT.md` | Аудит исторического введения 50+ | Право, dissent, город и книжная культура |
+| 69 | `../../69_GILL_SERIES_GLOSSARY_PLACEMENT_INFLECTION_AND_CADENCE_AUDIT.md` | Аудит глоссария серии | Placement, словоформы и cadence |
 | 70 | `70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md` | Финальная реверификация 50+ | Честные статусы доступа и publication gate |
 | 71 | `71_POST_MERGE_40_PLUS_SOURCE_COVERAGE_AND_EXPANSION_DECISION.md` | Послесливный аудит 40+ | Решение не раздувать введение без новых доказательств |
 | 72 | `72_PRIMARY_SOURCE_40_PLUS_DIRECT_LINK_LEDGER_AND_CLOSURE.md` | Первичный реестр 56 точек | Прямые оригиналы, границы вывода и закрытие долгов |
