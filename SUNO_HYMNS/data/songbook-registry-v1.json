@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "registryId": "SUNO-HYMNS-SONGBOOK-REGISTRY-V1",
+  "asOf": "2026-10-25",
+  "note": "Edition-level records prevent publication year, accessed-edition year, source genre, text witness and rights in a digital reproduction from being collapsed.",
+  "songbooks": [
+    {
+      "id": "SB-LODENSTEIN-UYT-1676",
+      "title": "Uyt-spanningen, behelsende eenige stigtelyke liederen en andere gedigten",
+      "publicationYear": 1676,
+      "editors": [],
+      "sourceIds": [
+        "SRC-L-1676",
+        "SRC-L-1676-COLOPHON"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "DBNL marks the underlying historical work Auteursrechtvrij.",
+        "The online text is described as a diplomatic rendering with omissions and listed corrections; inspect specific page images for date/punctuation claims."
+      ]
+    },
+    {
+      "id": "SB-LODENSTEIN-CRITICAL-2005",
+      "title": "Uyt-spanningen — critical edition",
+      "publicationYear": 2005,
+      "editors": [
+        "A. Ros",
+        "L. Strengholt"
+      ],
+      "sourceIds": [
+        "SRC-L-CRIT-2005",
+        "SRC-L-SCHEPSELEN-51",
+        "SRC-L-HERT-I-1673-34"
+      ],
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "DBNL marks the 2005 edition as copyright-protected.",
+        "Modern item numbers are not a count of all individual texts: several items group multiple works and some repetitions/sections are editorially supplied."
+      ]
+    },
+    {
+      "id": "SB-LODENSTEIN-BLOEMLEZING-1971",
+      "title": "Bloemlezing uit de bundel Uytspanningen — selection containing II. Hert-sterckte",
+      "publicationYear": 1971,
+      "editors": [],
+      "sourceIds": [
+        "SRC-L-HERT-II-1674-1971",
+        "SRC-L-REES-CONTEXT"
+      ],
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "This is a later selection, not the 1674 manuscript or the whole 1676 volume.",
+        "The date 4 January 1674 is editorially emended from a printed 1664 error and remains on EVIDENCE_HOLD until original-page image verification."
+      ]
+    },
+    {
+      "id": "SB-EVANGELISCHE-GEZANGEN-1806",
+      "title": "Evangelische Gezangen, nevens het Psalm-Boek",
+      "publicationYear": 1806,
+      "editors": [
+        "Abraham Rutgers (reviser of hymn 68)"
+      ],
+      "sourceIds": [
+        "SRC-RUTGERS-1806-68",
+        "SRC-EVANGELISCHE-GEZANGEN-1806",
+        "SRC-RUTGERS-BIO"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "Hymn LXVIII is titled Zelfverloochening and contains seven stanzas in the accessed item.",
+        "This text is a later reworking linked to Lodenstein, not the complete 1674 source poem verbatim."
+      ]
+    },
+    {
+      "id": "SB-UTRECHT-HYMNI-1615",
+      "title": "Hymni, ofte Loff-sangen op de Christelijcke feest-dagen ende andersins",
+      "publicationYear": 1615,
+      "accessedEditionYear": 1967,
+      "editors": [
+        "Jan van Biezen",
+        "Marie Veldhuyzen"
+      ],
+      "sourceIds": [
+        "SRC-UTRECHT-HYMNI-1615-WORK",
+        "SRC-UTRECHT-HYMNI-1615-1967"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "The accessible object is the copyrighted 1967 facsimile, explicitly reproduced from the 1615 original with permission from the Koninklijke Bibliotheek.",
+        "Do not cite it as an independently digitized 1615 original or redistribute the 1967 facsimile without permission."
+      ]
+    },
+    {
+      "id": "SB-REVIUS-OVER-YSSEL-1630",
+      "title": "Over-Ysselsche sangen en dichten",
+      "publicationYear": 1630,
+      "accessedEditionYear": "1930–1935 scholarly edition",
+      "editors": [
+        "W.A.P. Smit"
+      ],
+      "sourceIds": [
+        "SRC-R-OVER-YSSEL-1630-WORK",
+        "SRC-R-OVER-YSSEL-CONTENTS",
+        "SRC-R-HY-DROEG"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "The 1630 original leaf has not been independently acquired in this project.",
+        "The accessible sonnet page belongs to W.A.P. Smit's 1930–1935 edition; it is not a direct scan of the 1630 leaf."
+      ]
+    },
+    {
+      "id": "SB-AFR-LIED-TRADITION",
+      "title": "Later Afrikaans hymnbook adaptations related to Lodenstein / Rutgers",
+      "publicationYear": "1931–2001 chain (individual editions not all acquired)",
+      "editors": [
+        "G.B.A. Gerdener",
+        "E.C. Pienaar / AGB",
+        "Gerjo van der Merwe",
+        "Andries Breytenbach"
+      ],
+      "sourceIds": [
+        "SRC-AFR-L276",
+        "SRC-AFR-L271"
+      ],
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "A modern institutional page documents a source chain, but does not replace collation of each intermediary edition.",
+        "Modern Afrikaans wording, edition rights and recorded performances require separate review."
+      ]
+    }
+  ]
+}

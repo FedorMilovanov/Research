@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "catalogId": "SUNO-HYMNS-TRACK-CATALOG-V1",
+  "asOf": "2026-10-25",
+  "scope": "Project-local inventory based on conversation records; not an exhaustive scan of the owner's computer, local storage or public channels.",
+  "stateBoundary": "Production state and public publication status are separate. This catalog does not replace the root Research evidence policy.",
+  "statusVocabulary": {
+    "productionState": [
+      "NOT_STARTED",
+      "RESEARCH_IN_PROGRESS",
+      "LYRIC_DRAFT",
+      "SUNO_OUTPUT_GENERATED",
+      "ASSETS_PREPARED",
+      "READY_FOR_REVIEW",
+      "PUBLISHED_VERIFIED",
+      "BLOCKED"
+    ],
+    "publicPublicationStatus": [
+      "UNKNOWN_NOT_VERIFIED",
+      "PUBLISHED_VERIFIED"
+    ]
+  },
+  "works": [
+    {
+      "id": "DUTCH-001",
+      "displayTitle": "Всё сотворённое — ничто, Иисус — всё",
+      "originalTitleVariants": [
+        "Schepselen niet en Jesus al",
+        "Schepselen Niet en Iesus Al"
+      ],
+      "historicalAuthor": {
+        "name": "Jodocus van Lodenstein",
+        "years": "1620–1677",
+        "role": "author"
+      },
+      "textCategory": "Stanzaic Dutch Reformed devotional song with printed melody direction",
+      "sourceChain": [
+        "Uyt-spanningen, Utrecht, Willem Clerck, 1676",
+        "Critical-edition item 51; text dated November 1661",
+        "Modern Russian literary/song adaptation"
+      ],
+      "tuneDirection": "Singt als: Rosemont waer gy vliedt",
+      "structure": {
+        "stanzas": 8,
+        "linesPerStanza": 8,
+        "source": "critical-edition page; recheck against original scan if needed"
+      },
+      "productionState": "ASSETS_PREPARED",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "NOT_CAPTURED",
+      "versions": [
+        {
+          "versionId": "DUTCH-001-V1",
+          "durationSeconds": 382.8,
+          "assets": {
+            "sourceWav": "C:\\Users\\Fedor\\Downloads\\«Всё сотворённое — ничто, Иисус — всё» - Йодокус ван Лоденштейн.wav",
+            "coverPng": "C:\\Users\\Fedor\\Downloads\\bd68e92c-5708-4c43-a3b0-403299302f36.png",
+            "youtubeMp4": "C:\\Users\\Fedor\\Downloads\\«Всё сотворённое — ничто, Иисус — всё» - Йодокус ван Лоденштейн [YouTube].mp4",
+            "telegramMp3": "C:\\Users\\Fedor\\Downloads\\«Всё сотворённое — ничто, Иисус — всё» - Йодокус ван Лоденштейн [Telegram].mp3"
+          },
+          "reportedExport": {
+            "youtube": "MP4; 1920x1080; 30 fps; H.264 High; stereo AAC 48 kHz",
+            "telegram": "MP3; 320 kbps; stereo 48 kHz; cover embedded"
+          },
+          "localAssetReadbackInRepo": false,
+          "qaStatus": "OPEN",
+          "promptCapture": "NOT_CAPTURED",
+          "lyricRevisionStatus": "NOT_IN_REPOSITORY"
+        }
+      ],
+      "authorId": "LOD-001",
+      "workType": "DEVOTIONAL_SONG_WITH_TUNE_DIRECTION",
+      "sourceIds": [
+        "SRC-L-1676",
+        "SRC-L-CRIT-2005",
+        "SRC-L-SCHEPSELEN-51"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "The accessed 2005 critical edition provides an exact locator for the tune direction and November 1661 date, but DBNL marks that edition copyrighted. Verify the original 1676 image before quote-sensitive claims.",
+      "openChecks": [
+        "Recover the exact Russian lyric revision and verbatim SUNO style prompt; neither is yet stored in this repository.",
+        "Read actual file metadata and confirm output assets if a new release depends on it.",
+        "The current publication status remains unverified until a public URL/receipt is checked."
+      ]
+    },
+    {
+      "id": "DUTCH-002",
+      "displayTitle": "Блаженно, блаженно — быть ничем",
+      "originalTitleVariants": [
+        "II. Hert-sterckte in Jehova. Op 1 Sam. 30:6",
+        "Zelfverloochening"
+      ],
+      "historicalAuthor": {
+        "name": "Jodocus van Lodenstein",
+        "years": "1620–1677",
+        "role": "source author"
+      },
+      "reworker": {
+        "name": "Abraham Rutgers",
+        "years": "1751–1809",
+        "role": "reviser of hymn 68 in Evangelische Gezangen (1806)"
+      },
+      "textCategory": "Modern Russian adaptation following the later seven-stanza hymn tradition; not a verbatim transcription of the full 1674 poem",
+      "sourceChain": [
+        "Lodenstein: II. Hert-sterckte in Jehova, critical-edition item 35; the displayed 4 January 1674 date has an EVIDENCE_HOLD due to an original-print 1664 misprint",
+        "Abraham Rutgers revision in Evangelische Gezangen (1806), hymn 68, Zelfverloochening",
+        "Later Afrikaans Lied 276 transmission; intermediary editions need separate collation",
+        "Modern Russian literary/song adaptation"
+      ],
+      "productionState": "ASSETS_PREPARED",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "NOT_CAPTURED",
+      "versions": [
+        {
+          "versionId": "DUTCH-002-V1",
+          "durationSeconds": 433.24,
+          "assets": {
+            "coverPng": "C:\\Users\\Fedor\\Downloads\\1e2452b6-6443-4f7c-9675-92ab31d15262.png",
+            "sourceWav": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 1 ВЕРСИЯ.wav",
+            "youtubeMp4": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 1 ВЕРСИЯ [YouTube].mp4",
+            "telegramMp3": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 1 ВЕРСИЯ [Telegram].mp3"
+          },
+          "qaStatus": "OPEN",
+          "promptCapture": "NOT_CAPTURED",
+          "lyricRevisionStatus": "NOT_IN_REPOSITORY"
+        },
+        {
+          "versionId": "DUTCH-002-V2",
+          "durationSeconds": 438.569521,
+          "assets": {
+            "coverPng": "C:\\Users\\Fedor\\Downloads\\3e7f56e1-ef4b-40d6-b94d-44bb1de24d02.png",
+            "sourceWavOriginalFilenameTypo": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 2 ВЕСРИЯ.wav",
+            "youtubeMp4": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 2 ВЕРСИЯ [YouTube].mp4",
+            "telegramMp3": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 2 ВЕРСИЯ [Telegram].mp3"
+          },
+          "qaStatus": "OPEN",
+          "promptCapture": "NOT_CAPTURED",
+          "lyricRevisionStatus": "NOT_IN_REPOSITORY"
+        }
+      ],
+      "reportedEmbeddedMetadata": {
+        "titlePattern": "Блаженно, блаженно — быть ничем — Версия N",
+        "artist": "Йодокус ван Лоденштейн",
+        "album": "Господь Бог — Сила Моя",
+        "genre": "Христианский гимн",
+        "sourceGenerationCommentsRemoved": true,
+        "reReadRequiredBeforeNewRelease": true
+      },
+      "authorId": "LOD-001",
+      "reviserIds": [
+        "RUT-001"
+      ],
+      "workType": "LATER_HYMNBOOK_REWORKING",
+      "sourceIds": [
+        "SRC-L-HERT-I-1673-34",
+        "SRC-L-HERT-II-1674-1971",
+        "SRC-L-1676-COLOPHON",
+        "SRC-RUTGERS-1806-68",
+        "SRC-RUTGERS-BIO",
+        "SRC-AFR-L276",
+        "SRC-AFR-L271"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "The Russian lyric follows Rutgers's seven-stanza Zelfverloochening, Evangelische Gezangen (1806), hymn 68. It is not a verbatim translation of the complete Lodenstein poem.",
+      "dateClaimStatus": "EVIDENCE_HOLD",
+      "dateClaimNote": "The later digital witness reads 4 January 1674 but explicitly notes that the original print has an erroneous 1664. Do not remove EVIDENCE_HOLD until the original 1676 page image or a stronger independent witness is checked.",
+      "openChecks": [
+        "Do not conflate I. Hert-sterckte in Jehova (critical item 34, dated 28 December 1673) with II. Hert-sterckte in Jehova (item 35, the text linked to the Rutgers 1806 reworking).",
+        "Recover the exact Russian lyric revision and both verbatim SUNO style prompts.",
+        "Re-read actual output metadata before relying on earlier tag notes."
+      ]
+    },
+    {
+      "id": "DUTCH-003",
+      "displayTitle": "Он понёс наши скорби",
+      "originalTitleVariants": [
+        "Hy droech onse smerten"
+      ],
+      "historicalAuthor": {
+        "name": "Jacobus Revius",
+        "years": "1586–1658",
+        "nameVariant": "Jacob Reefsen",
+        "role": "author"
+      },
+      "textCategory": "Fourteen-line Passion sonnet; original tune direction not verified",
+      "sourceChain": [
+        "Over-Ysselsche sangen en dichten, Deventer, first published 1630",
+        "W.A.P. Smit scholarly edition, 1930–1935",
+        "Modern Russian adaptation and new musical setting"
+      ],
+      "productionState": "ASSETS_PREPARED",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "NOT_CAPTURED",
+      "versions": [
+        {
+          "versionId": "DUTCH-003-V1-REPORTED",
+          "assets": {
+            "mp3": "C:\\Users\\Fedor\\Downloads\\Он понёс наши скорби — Якобус Ревиус.mp3",
+            "finalCover": "NOT_PINNED"
+          },
+          "openChecks": [
+            "Read back actual ID3 title, artist, album and genre; the prior tag-rewrite command's success is unconfirmed.",
+            "Confirm final approved cover and cooler/muted color grade.",
+            "Record duration, format, cover attachment and hashes from the actual file."
+          ],
+          "qaStatus": "OPEN",
+          "promptCapture": "NOT_CAPTURED",
+          "lyricRevisionStatus": "NOT_IN_REPOSITORY"
+        }
+      ],
+      "qaStatus": "OPEN",
+      "authorId": "REV-001",
+      "workType": "SONNET_MODERN_MUSICAL_SETTING",
+      "sourceIds": [
+        "SRC-R-REVIUS-AUTHOR",
+        "SRC-R-OVER-YSSEL-CONTENTS",
+        "SRC-R-HY-DROEG",
+        "SRC-R-GEERDS-1976",
+        "SRC-R-OVER-YSSEL-1630-WORK"
+      ],
+      "textChainNote": "Hy droech onse smerten is catalogued as a 14-line sonnet first published in 1630. The online exact text is in a 1930–1935 scholarly edition, not a verified scan of the 1630 leaf. No original melody direction is verified.",
+      "openChecks": [
+        "Read back actual ID3 title/artist/album/genre and embedded-cover status; prior tag rewrite success is unconfirmed.",
+        "Confirm the final approved cover file.",
+        "Recover the exact SUNO style prompt and lyric revision.",
+        "Keep composition date as unknown unless a source establishes it."
+      ]
+    }
+  ],
+  "adjacentNonDutchWorks": [
+    {
+      "id": "ADJ-1PETER-001",
+      "title": "Russian 1 Peter 1 Scripture-song draft",
+      "category": "Scripture-song adaptation; not a Dutch historical hymn",
+      "state": "LYRIC_DRAFT_RECORDED; audio/export state unknown",
+      "notes": "Ten labeled sections, cantor-led delivery, organ entry, drone and gradual build; stress-mark pass discussed."
+    },
+    {
+      "id": "ADJ-PASSION-001",
+      "title": "Не те иудеи, Господь Иисус…",
+      "category": "Russian Passion-confession lyric / visual concept; historical attribution unresolved",
+      "state": "LYRIC_AND_VISUAL_WORK_RECORDED; audio/export state unknown",
+      "notes": "Keep outside Dutch historical catalog unless reliable attribution is established."
+    }
+  ]
+}

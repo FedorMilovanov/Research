@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "ledgerId": "SUNO-HYMNS-HISTORICAL-CLAIM-LEDGER-V1",
+  "asOf": "2026-10-25",
+  "claimStatusVocabulary": [
+    "SUPPORTED_WITH_SCOPE_LIMITS",
+    "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+    "EVIDENCE_HOLD",
+    "RESEARCH_OPEN",
+    "REPORTED_NOT_INDEPENDENTLY_VERIFIED"
+  ],
+  "claims": [
+    {
+      "id": "CLM-L-1676-IMPRINT",
+      "topic": "Uyt-spanningen first publication",
+      "claim": "The historical title page identifies Uyt-spanningen as printed and sold by Willem Clerck in Utrecht in 1676 and frames the collection as edifying songs and other poems.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-1676",
+        "SRC-L-1676-COLOPHON"
+      ],
+      "notes": [
+        "The digital presentation is explicitly diplomatic and has omissions/corrections; use page scans for exact material/typographic claims."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-001-TITLE-TUNE",
+      "topic": "Schepselen niet en Jesus al title and tune",
+      "claim": "The 2005 critical-edition item 51 gives the title Schepselen niet en Jesus al and the tune direction Singt als: Rosemont waer gy vliedt.",
+      "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+      "sourceIds": [
+        "SRC-L-SCHEPSELEN-51",
+        "SRC-L-1676"
+      ],
+      "notes": [
+        "The exact item page currently accessed is the copyrighted critical edition; a direct first-edition item locator has not yet been pinned. Do not present the modern version as a historically faithful arrangement."
+      ],
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-001-DATE",
+      "topic": "Date attributed to Schepselen niet en Jesus al",
+      "claim": "The critical edition gives November 1661 as the date associated with the text.",
+      "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+      "sourceIds": [
+        "SRC-L-SCHEPSELEN-51"
+      ],
+      "notes": [
+        "Exact date currently supported by the critical edition. Inspect the original first-edition image before presenting a direct quotation or a facsimile-dependent claim."
+      ],
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-HERT-I-VS-II",
+      "topic": "Two poems titled Hert-sterckte in Jehova",
+      "claim": "Lodenstein's collection contains I. Hert-sterckte in Jehova (critical item 34, dated 28 December 1673 in the critical edition) and II. Hert-sterckte in Jehova (item 35), which is the source associated with the later Rutgers hymn no. 68.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-HERT-I-1673-34",
+        "SRC-L-HERT-II-1674-1971",
+        "SRC-RUTGERS-1806-68",
+        "SRC-RUTGERS-BIO"
+      ],
+      "notes": [
+        "Keep the two poems separate. The first has its own tune directions and must not be silently treated as the direct source text for the current Russian hymn."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-HERT-II-DATE-1674",
+      "topic": "Date of II. Hert-sterckte in Jehova",
+      "claim": "The later digital witness reads 4 January 1674, but the source/editorial note records an erroneous 1664 in the original print and a correction to 1674.",
+      "claimStatus": "EVIDENCE_HOLD",
+      "sourceIds": [
+        "SRC-L-HERT-II-1674-1971",
+        "SRC-L-1676-COLOPHON"
+      ],
+      "notes": [
+        "Do not present 4 January 1674 as a clean, unproblematic date from the original print until the page image is visually checked and the emendation documented. The date HOLD applies to this claim, not to all other content in the poem."
+      ],
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-002-RUTGERS",
+      "topic": "Source of Russian hymn Блаженно, блаженно — быть ничем",
+      "claim": "The Russian version follows the later seven-stanza Zelfverloochening in Evangelische Gezangen (1806), hymn LXVIII, associated with Jodocus van Lodenstein material revised by Abraham Rutgers; it is not a word-for-word translation of the whole 1674 poem.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-RUTGERS-1806-68",
+        "SRC-RUTGERS-BIO",
+        "SRC-L-HERT-II-1674-1971"
+      ],
+      "notes": [
+        "Credit Lodenstein as historical source author and Rutgers as later reviser; treat later translations/adaptations as separate textual witnesses.",
+        "The separate date uncertainty is isolated in CLM-HERT-II-DATE-1674; it does not automatically suspend the source-chain claim."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-AFR-L276-CHAIN",
+      "topic": "Afrikaans transmission",
+      "claim": "A modern institutional song page lists an adaptation chain from Lodenstein/Rutgers through Gerdener (1931), Pienaar/AGB (1944), Van der Merwe (1978) and Breytenbach (2001).",
+      "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+      "sourceIds": [
+        "SRC-AFR-L276",
+        "SRC-AFR-L271"
+      ],
+      "notes": [
+        "Use this as a discovery/corroboration path; verify each intermediary edition before publishing detailed claims about exact text changes. The currently associated melody is later and is not evidence of an original 1674 tune."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-REVIUS-1630",
+      "topic": "Hy droech onse smerten: first publication and genre",
+      "claim": "Hy droech onse smerten is a fourteen-line Passion sonnet included in the 1630 collection; composition date and original melody are not established by the sources currently acquired.",
+      "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+      "sourceIds": [
+        "SRC-R-REVIUS-AUTHOR",
+        "SRC-R-OVER-YSSEL-CONTENTS",
+        "SRC-R-HY-DROEG",
+        "SRC-R-OVER-YSSEL-1630-WORK"
+      ],
+      "notes": [
+        "The exact online poem text is from the 1930–1935 scholarly edition, not a direct scan of the 1630 page. Do not conflate publication year with composition date."
+      ],
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-UTRECHT-1615-FACSIMILE",
+      "topic": "The Utrecht Hymni songbook and access layer",
+      "claim": "The original Hymni songbook is dated 1615, but the accessible DBNL page is a copyrighted 1967 facsimile edited by Jan van Biezen and Marie Veldhuyzen.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-UTRECHT-HYMNI-1615-1967",
+        "SRC-UTRECHT-HYMNI-1615-WORK"
+      ],
+      "notes": [
+        "The prefatory appeal to Ephesians 5:19 can be discussed with this edition caveat. Do not describe the current digital page as an independent scan of the 1615 original."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DORDRECHT-ARTICLE-69",
+      "topic": "Reformed church-song restrictions",
+      "claim": "The Article 69 text is evidence of a normative rule for public worship; by itself it does not prove uniform actual practice in every Dutch Reformed congregation.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-DORDRECHT-69",
+        "SRC-DORDRECHT-1578"
+      ],
+      "notes": [
+        "Keep the prescriptive rule, local congregational practice, domestic singing and devotional poetry as separate claims."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-ASSET-STATE",
+      "topic": "Local production files",
+      "claim": "Existing audio/video exports and Windows filenames were reported in prior work; this repository branch does not contain those media files and does not independently verify that the files still exist or were uploaded.",
+      "claimStatus": "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "sourceIds": [],
+      "notes": [
+        "A local path is inventory data only. Do not mark publication verified without a live URL or direct publication receipt."
+      ],
+      "holds": []
+    },
+    {
+      "id": "CLM-SUNO-PROMPTS",
+      "topic": "Exact SUNO prompts and lyric revisions",
+      "claim": "The exact prompt text and final lyric revision for the current three tracks have not yet been captured as repository-resident artifacts.",
+      "claimStatus": "RESEARCH_OPEN",
+      "sourceIds": [],
+      "notes": [
+        "Do not reconstruct a prompt from stylistic preference and label it original. Recover verbatim text from the owner or the original prompt history."
+      ],
+      "holds": []
+    }
+  ]
+}
