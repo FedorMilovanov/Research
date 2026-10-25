@@ -31,7 +31,7 @@
 **Style:**
 
 ```
-ancient Greek Orthodox lamp-lighting hymn, through-composed, a cappella, one male cantor singing a clear modal melody in a Byzantine-flavoured mode on E, a male choir holding a soft ison drone on the tonic beneath him, the drone entering only after the first two lines, strictly syllabic declamation, one syllable per note, no melisma, no vocal runs, no vibrato, natural diction, narrow range, a firm slow pulse rather than free drifting rubato, short two-bar breath of silence as the introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the opening line reprised at the end, no other repeats and no newly written words, then a short held final chord and silence, large but clean stone-church acoustic with an intelligible forward cantor, no percussion, no organ, no strings, no synthesizers
+ancient Greek Orthodox lamp-lighting hymn, through-composed, a cappella, one male cantor singing a clear modal melody in a Byzantine-flavoured mode on E, a male choir holding a soft ison drone on the tonic beneath him, the drone entering only after the first two lines, strictly syllabic declamation, one syllable per note, no melisma, no vocal runs, no vibrato, natural diction, narrow range, a firm slow pulse rather than free drifting rubato, short two-bar breath of silence as the introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the closing line reprised at the end, no other repeats and no newly written words, then a short held final chord and silence, large but clean stone-church acoustic with an intelligible forward cantor, no percussion, no organ, no strings, no synthesizers
 ```
 
 **Lyrics:**
@@ -41,24 +41,24 @@ ancient Greek Orthodox lamp-lighting hymn, through-composed, a cappella, one mal
 
 [Verse 1]
 Иису́с Христос, свет отрадный святой славы
-бессме́ртного Отца, небесного, святого, блаженного,
+бессмертного Отца, небесного, святого, блаженного,
 
 [Verse 2]
 придя к закату солнца, увидев свет вечерний,
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Verse 3]
-Достоин Ты во все времена быть воспетым голосами благи́ми,
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Достоин Ты во все времена быть воспетым голосами благими,
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Outro]
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 ```
 
 ---
@@ -70,7 +70,7 @@ ancient Greek Orthodox lamp-lighting hymn, through-composed, a cappella, one mal
 **Style:**
 
 ```
-early Latin-rite chant, through-composed, a cappella, unison male schola of six voices, modal melody in the Dorian mode on D, no harmony except a bare octave doubling at the final cadence, very even syllabic declamation, one syllable per note, no melisma, no vibrato, crisp consonants and clear Russian diction, a single low bell struck once before the singing and once at the end, short one-phrase introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the opening line reprised at the end, no other repeats and no newly written words, dryish stone acoustic, moderate and steady tempo, no percussion kit, no organ, no strings, no synthesizers
+early Latin-rite chant, through-composed, a cappella, unison male schola of six voices, modal melody in the Dorian mode on D, no harmony except a bare octave doubling at the final cadence, very even syllabic declamation, one syllable per note, no melisma, no vibrato, crisp consonants and clear Russian diction, a single low bell struck once before the singing and once at the end, short one-phrase introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the closing line reprised at the end, no other repeats and no newly written words, dryish stone acoustic, moderate and steady tempo, no percussion kit, no organ, no strings, no synthesizers
 ```
 
 **Lyrics:**
@@ -80,24 +80,24 @@ early Latin-rite chant, through-composed, a cappella, unison male schola of six 
 
 [Verse 1]
 Иису́с Христос, свет отрадный святой славы
-бессме́ртного Отца, небесного, святого, блаженного,
+бессмертного Отца, небесного, святого, блаженного,
 
 [Verse 2]
 придя к закату солнца, увидев свет вечерний,
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Verse 3]
-Достоин Ты во все времена быть воспетым голосами благи́ми,
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Достоин Ты во все времена быть воспетым голосами благими,
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Outro]
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 ```
 
 ---
@@ -109,7 +109,7 @@ early Latin-rite chant, through-composed, a cappella, unison male schola of six 
 **Style:**
 
 ```
-Russian Znamenny chant style, through-composed, a cappella male choir of eight low voices, monophonic melody with a soft under-voice on the final phrase, very slow and steady pulse, strictly syllabic, one syllable per note, no melisma, no vibrato, deep but not growling basses, clear intelligible diction, a long quiet breath of silence as the introduction, the whole six-line Russian text sung once with no repeats and no chorus, a single held final chord then silence, very large cathedral acoustic, no percussion, no organ, no strings, no synthesizers
+Russian Znamenny chant style, through-composed, a cappella male choir of eight low voices, monophonic melody with a soft under-voice on the final phrase, very slow and steady pulse, strictly syllabic, one syllable per note, no melisma, no vibrato, deep but not growling basses, clear intelligible diction, a long quiet breath of silence as the introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the closing line reprised at the end, no other repeats and no newly written words, a single held final chord then silence, very large cathedral acoustic, no percussion, no organ, no strings, no synthesizers
 ```
 
 **Lyrics:**
@@ -119,24 +119,24 @@ Russian Znamenny chant style, through-composed, a cappella male choir of eight l
 
 [Verse 1]
 Иису́с Христос, свет отрадный святой славы
-бессме́ртного Отца, небесного, святого, блаженного,
+бессмертного Отца, небесного, святого, блаженного,
 
 [Verse 2]
 придя к закату солнца, увидев свет вечерний,
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Verse 3]
-Достоин Ты во все времена быть воспетым голосами благи́ми,
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Достоин Ты во все времена быть воспетым голосами благими,
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Outro]
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 ```
 
 ---
@@ -148,7 +148,7 @@ Russian Znamenny chant style, through-composed, a cappella male choir of eight l
 **Style:**
 
 ```
-restrained dark chamber sacred song, through-composed, 3/4, about 72 bpm, minor mode on A, one close-miked male tenor-baritone with natural diction and no vibrato, gut-string cello pedal tones, arco contrabass on the bass line, a small chamber organ with a stopped 8-foot flute, a second voice joining only on the last two lines, strictly syllabic, one syllable per note, no melisma, short four-bar instrumental introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the opening line reprised at the end, no other repeats and no newly written words, quiet dynamics, close natural room reverb, no percussion, no drums, no electric instruments, no synthesizers
+restrained dark chamber sacred song, through-composed, 3/4, about 72 bpm, minor mode on A, one close-miked male tenor-baritone with natural diction and no vibrato, gut-string cello pedal tones, arco contrabass on the bass line, a small chamber organ with a stopped 8-foot flute, a second voice joining only on the last two lines, strictly syllabic, one syllable per note, no melisma, short four-bar instrumental introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the closing line reprised at the end, no other repeats and no newly written words, quiet dynamics, close natural room reverb, no percussion, no drums, no electric instruments, no synthesizers
 ```
 
 **Lyrics:**
@@ -158,24 +158,24 @@ restrained dark chamber sacred song, through-composed, 3/4, about 72 bpm, minor 
 
 [Verse 1]
 Иису́с Христос, свет отрадный святой славы
-бессме́ртного Отца, небесного, святого, блаженного,
+бессмертного Отца, небесного, святого, блаженного,
 
 [Verse 2]
 придя к закату солнца, увидев свет вечерний,
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Verse 3]
-Достоин Ты во все времена быть воспетым голосами благи́ми,
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Достоин Ты во все времена быть воспетым голосами благими,
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Outro]
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 ```
 
 ---
@@ -187,7 +187,7 @@ restrained dark chamber sacred song, through-composed, 3/4, about 72 bpm, minor 
 **Style:**
 
 ```
-Renaissance sacred polyphony, through-composed, a cappella four-part male choir, imitative entries one line at a time, modal harmony in the Mixolydian mode on G, strictly syllabic, one syllable per note, no melisma, no vocal runs, no vibrato, even and transparent texture, words always intelligible, short one-phrase choral introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the opening line reprised at the end, no other repeats and no newly written words, a bare open fifth on the final chord, dry-ish chapel acoustic, no percussion, no organ, no strings, no synthesizers
+Renaissance sacred polyphony, through-composed, a cappella four-part male choir, imitative entries one line at a time, modal harmony in the Mixolydian mode on G, strictly syllabic, one syllable per note, no melisma, no vocal runs, no vibrato, even and transparent texture, words always intelligible, short one-phrase choral introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the closing line reprised at the end, no other repeats and no newly written words, a bare open fifth on the final chord, dry-ish chapel acoustic, no percussion, no organ, no strings, no synthesizers
 ```
 
 **Lyrics:**
@@ -197,24 +197,24 @@ Renaissance sacred polyphony, through-composed, a cappella four-part male choir,
 
 [Verse 1]
 Иису́с Христос, свет отрадный святой славы
-бессме́ртного Отца, небесного, святого, блаженного,
+бессмертного Отца, небесного, святого, блаженного,
 
 [Verse 2]
 придя к закату солнца, увидев свет вечерний,
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Verse 3]
-Достоин Ты во все времена быть воспетым голосами благи́ми,
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Достоин Ты во все времена быть воспетым голосами благими,
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 
 [Refrain]
-воспева́ем Отца, Сына и Святого Духа, Бога.
+воспеваем Отца, Сына и Святого Духа, Бога.
 
 [Outro]
-Сын Божий, даю́щий жизнь: потому мир Тебя славит.
+Сын Божий, дающий жизнь: потому мир Тебя славит.
 ```
 
 ---
