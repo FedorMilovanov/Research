@@ -7,8 +7,8 @@ from urllib.parse import urlparse
 ROOT=Path(__file__).resolve().parents[1]
 REG=ROOT/'data/gill-closed-book-families-2026-08-02.json'
 DISC=ROOT/'data/gill-rippon-1838-open-access-verification-2026-08-04.json'
-DOC=ROOT/'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
-DISC_DOC=ROOT/'Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md'
+DOC=ROOT/'БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+DISC_DOC=ROOT/'БИОГРАФИИ/Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md'
 EXPECTED_SHA='362019ee851280e14eb4c6cd8bca70a30df957af225ac56c7c6d95bbaf461792'
 EXPECTED_SIZE=9297102
 EXPECTED_DRIVE_ID='1q4IFETrDu9bH8mGMIPQO38qQTVwxjxMu'
