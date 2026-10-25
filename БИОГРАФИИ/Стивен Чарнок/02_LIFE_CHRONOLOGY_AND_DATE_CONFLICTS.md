@@ -131,7 +131,7 @@ royalist-выходцами, допущенными парламентскими
 
 | Сторона | Утверждение |
 |---|---|
-| Calamy | 1652 |
+| Calamy, *Account*, 1713, vol. II, **стр. 56 (дословно, собственный текст прочитан 2026-10-25)** | «**Senior Proctor of the University in 1652**, and manag'd that Office with great Honour and Reputation; and was much Applauded for his Exercises at the Act» |
 | Symington | «in 1652, he was elevated to the dignity of Senior Proctor,—an office which he continued to hold till 1656» |
 | McCosh | «April 5. 1654 (not 1652, as Calamy says), he and Thomas Cracroft of Magdalene College are appointed Proctors of the university» |
 | DNB | «As proctor in 1654 he had great opportunities of influence» |
