@@ -66,16 +66,17 @@
 - **Melody:** `Voyse: Un jour &c.` — untraced, no notation, and the 2005 apparatus says the origin is unknown and that it is not text 27's *Un jour*.
 - **Melody, clarified 2026-10-26:** the direction changes later — Psalm 42 in 1718, `Psalm 042 Datheen` in 1806, and Louis Bourgeois as the credit in 1938. The old open question «Bourgeois or psalm 42» was a false dichotomy: one tune, two names. The 1665 tune is still unidentified. `../RESEARCH/DUTCH-005_TRANSMISSION_AND_TUNE.md`.
 - **New this pass:** the stanza 3 line-2 defect is now documented against the apparatus gloss with three counted options (`../RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md`). The Dutch Song Database is offline (HTTP 403, KNAW notice), so its two reprint records stay `EVIDENCE_HOLD`.
-- **Russian text:** `DUTCH-005-RU v0.9` in `SUNO/DUTCH-005_LYRICS.md` — a declared **adaptation** with the v0.5–v0.9 corrections logged in the changelog table, **not approved**. The SUNO-ready text (`DUTCH-005_LYRICS_SUNO.md`) and the style (`DUTCH-005_STYLE.md`) are separate files, as the lane's own rules require.
+- **Russian text:** `DUTCH-005-RU v0.10` in `SUNO/DUTCH-005_LYRICS.md` — a declared **adaptation** with the v0.5–v0.10 corrections logged in the changelog table, **not approved**. The SUNO-ready text (`DUTCH-005_LYRICS_SUNO.md`) and the style (`DUTCH-005_STYLE.md`) are separate files, as the lane's own rules require.
 - **Styles:** **five** directions in `SUNO/DUTCH-005_STYLE.md` — A epic organ + Georgian male monastic choir (118, D minor, primary slot); B Renaissance wind consort + four male voices (112, D dorian); C viol consort + chamber organ + solo tenor (100, G minor); D Byzantine ison under a baritone cantor (free); E metrical chorale, unison male voices + organ (126, A minor). None submitted, none chosen.
 - **Production state:** `LYRIC_DRAFT`. **No generation, no audio, no cover, no export, no publication.**
 - **Publication copies (2026-10-26) — text only, none used yet:**
   - `DUTCH-005_YOUTUBE.md` — title options, description 4881 characters (12 bold, 5 italic), hidden tags, checklist, and the markup post-mortem in § 0.
   - `DUTCH-005_TELEGRAM.md` — post for @lordchrist in Telegram markup, with an HTML twin.
-  - `DUTCH-005_PINNED.md` — two pinned YouTube comments (1578 and 1590 characters), 4 bold + 1 italic line and 6 bold + 2 italic lines, both gated.
-  - Every claim in the three files is mapped to a named source in `../RESEARCH/CLAIM_LEDGER.md`, `../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses) and `../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses).
+  - `DUTCH-005_PINNED.md` — two pinned YouTube comments (1772 and 1590 characters), 4 bold + 1 italic line and 6 bold + 2 italic lines, both gated.
+  - Every claim in the three files is mapped to a named source in `../RESEARCH/CLAIM_LEDGER.md`, `../RESEARCH/DUTCH-005_SOURCE_LEDGER_FULL.md` (64 records with a status each), `../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses) and `../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses).
   - **None of this is publication.** No URL exists; if one appears later, record it here and only then move the state.
-- **Open defects on this work:** stanza 3.2 «После земных невзгод»; cover not chosen; title separator decided — `✝` (owner, 2026-10-26); the markup of v3 and of both закрепы has not been seen rendering in a live Studio; the 1676 page images of pp. 155–158 have not been inspected (text layer only).
+- **Fixed in v0.10:** stanza 3.2 — «После земных невзгод» replaced by «Та, что за смертью придёт» on the documented Dutch reading; the line awaits the owner's signature.
+- **Open defects on this work:** cover not chosen; title separator decided — `✝` (owner, 2026-10-26); the markup of v3 and of both закрепы has not been seen rendering in a live Studio; the 1676 page images of pp. 155–158 have not been inspected (text layer only).
 - **Do not confuse with:** DUTCH-002's brief (similar sound, different poem, different prompt) and the 1938 bundel's reworking of this text to a Bourgeois melody (a protected, later object).
 
 ## Adjacent works — keep out of the Dutch historical catalog

@@ -401,7 +401,7 @@
       "promptCapture": "CAPTURED_IN_REPOSITORY",
       "versions": [
         {
-          "versionId": "DUTCH-005-RU-v0.9",
+          "versionId": "DUTCH-005-RU-v0.10",
           "versionKind": "LYRIC_DRAFT_ONLY",
           "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
           "promptCapture": "CAPTURED_IN_REPOSITORY",
@@ -422,7 +422,7 @@
           },
           "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md). Five directions, never submitted to SUNO.",
           "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
-          "lyricRevisionNote": "Revision v0.8: a native-speaker review of syntax applied over the rhymed text, and one rhyme rolled back. Accepted: st.4 'suyetnaya' -> 'brennaya' (yd'le as transitory, on the reviewer's reading of the 2005 notes - recorded as a lead, not verified); st.6 plural 'v grekhakh ... Tvorya ikh' (de snooden sonden is plural); st.6 'nachnite zhizn dobrodetelnuyu' for het deugdsaam leven; st.7 'V Nyom odnom' for alleen, dash removed; st.9 'lyubov lyudskaya, lyudskiye nravy' (seden plural) and 'ten yeyo' restoring the 'van'; st.10 'Poyte vovek' (Singt is plural). Rejected: no negation is restored in st.8 (the print reads 'nog' with an affirmative verb); 'zhizn dobrodeteli' is a correct rendering of 'der deugden leven' genitive plural, only the closing line was wrong; the tripled word stays an infinitive because the Dutch is an infinitive. Rhyme rolled back in st.2: the close returns to 'Sertsu tsenu dayot vyshe vsekh' because the rhyme had been bought with a word not in the line. Tags shortened to three structural marks. Stress marks: four. Russian adaptation; owner revision is the gate. Revision v0.9: stanza 1, owner's decision - the fourth 'prakh' removed. Line 9 now reads 'Sertsa tvoyego ne stoit', the print's shape (op aard three times, then a different word, niet waard). Stanza 1 leaves the full-rhyme column, as stanza 2 did in v0.8 and for the same reason; tally now three met, four half, three not met. Close 8 syllables, metre row 6-6-6-8 | 5 | 9 | 8. No other line, mark or tag changed; both lyric files 90 lines and identical apart from tags, echo and the four marks.",
+          "lyricRevisionNote": "Revision v0.8: a native-speaker review of syntax applied over the rhymed text, and one rhyme rolled back. Accepted: st.4 'suyetnaya' -> 'brennaya' (yd'le as transitory, on the reviewer's reading of the 2005 notes - recorded as a lead, not verified); st.6 plural 'v grekhakh ... Tvorya ikh' (de snooden sonden is plural); st.6 'nachnite zhizn dobrodetelnuyu' for het deugdsaam leven; st.7 'V Nyom odnom' for alleen, dash removed; st.9 'lyubov lyudskaya, lyudskiye nravy' (seden plural) and 'ten yeyo' restoring the 'van'; st.10 'Poyte vovek' (Singt is plural). Rejected: no negation is restored in st.8 (the print reads 'nog' with an affirmative verb); 'zhizn dobrodeteli' is a correct rendering of 'der deugden leven' genitive plural, only the closing line was wrong; the tripled word stays an infinitive because the Dutch is an infinitive. Rhyme rolled back in st.2: the close returns to 'Sertsu tsenu dayot vyshe vsekh' because the rhyme had been bought with a word not in the line. Tags shortened to three structural marks. Stress marks: four. Russian adaptation; owner revision is the gate. Revision v0.9: stanza 1, owner's decision - the fourth 'prakh' removed. Line 9 now reads 'Sertsa tvoyego ne stoit', the print's shape (op aard three times, then a different word, niet waard). Stanza 1 leaves the full-rhyme column, as stanza 2 did in v0.8 and for the same reason; tally now three met, four half, three not met. Close 8 syllables, metre row 6-6-6-8 | 5 | 9 | 8. No other line, mark or tag changed; both lyric files 90 lines and identical apart from tags, echo and the four marks. Revision v0.10: stanza 3, line 2 — «После земных невзгод» replaced by «Та, что за смертью придёт», because the Dutch line is 'Na dit leven crijgelijck' and the 2005 apparatus glosses it as the life to be obtained after this life; the reading was verified in the 1676 print, the 1727 edition and the 2005 edition (COLLATION_DUTCH-005_THREE_WAY.md). Chosen from three counted options (DUTCH-005_STANZA_3_2_OPTIONS.md); seven syllables, rhyme with line 4 preserved. No other line changed.",
           "assets": {},
           "generatedOutput": "NONE",
           "audioExport": "NONE",
@@ -512,7 +512,7 @@
       "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.', on pp. 155-158 in BOTH the 1676 first edition and the 1727 ninth edition. The two printings agree except for spelling and four variants recorded in the collation. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X); it is not a refrain. The 1938 reworking is a separate, protected object and is not used. Package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md; lyric: SUNO/DUTCH-005_LYRICS.md; style: SUNO/DUTCH-005_STYLE.md.",
       "rightsNote": "1676 poem public domain in substance; the DBNL transcription and the 2005 critical edition are separate objects and are not reproduced. The 1938 reworking is PERMISSION_REQUIRED and is not used.",
       "openChecks": [
-        "Owner decides stanza 3, line 2: the Dutch reads 'Na dit leven crijgelijck' (the life to be obtained after this life), the Russian v0.9 says «После земных невзгод». Three options with syllable counts: RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md.",
+        "Owner signs the stanza 3.2 fix carried by v0.10 («Та, что за смертью придёт»); the wording stays unapproved until then.",
         "Owner line-by-line revision of the Russian lyric v0.3 (SUNO/DUTCH-005_LYRICS.md); freeze as v1.0 and regenerate the SUNO-ready file from it.",
         "Inspect the 1676 page images of printed pp. 155-158 to move the text from transcription-plus-collation to print-verified; view the illustration ill0155.",
         "Owner chooses one of the five style directions (SUNO/DUTCH-005_STYLE.md A-E) and records the decision.",
@@ -525,7 +525,8 @@
       "interpretationNotes": [
         "St. VIII.3-4 'Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt': 'Die' is grammatically ambiguous and could agree with 'Schoonheyd'. The earthly-beauties reading is adopted because otherwise the addressed Beauty could vanish, contradicting st. IX and the poem's argument. Flagged as interpretation.",
         "'of oyt' = 'or ever', a second alternative, not a causal link."
-      ]
+      ],
+      "lyricRevisionStatus": "DRAFT_IN_REPOSITORY"
     }
   ],
   "adjacentNonDutchWorks": [

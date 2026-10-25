@@ -3,7 +3,7 @@
 **«Хвала Славе»** — Йодокус ван Лоденстейн (1620–1677)
 *Heerlijckheyds Loff*, *Uyt-spanningen*, 1676, printed pp. 155–158 — collated against the ninth edition, 1727.
 
-**Revision:** `DUTCH-005-RU v0.9` — replaces v0.8. **Rhymed** (standard B), with a native-speaker pass on syntax applied over it, and stanza 1's fourth «прах» removed on the owner's decision.
+**Revision:** `DUTCH-005-RU v0.10` — replaces v0.9 (one line, stanza 3.2), which replaced v0.8. **Rhymed** (standard B), with a native-speaker pass on syntax applied over it, and stanza 1's fourth «прах» removed on the owner's decision.
 **Status:** working draft, **not approved**. The **title** is approved («Хвала Славе», 2026-10-25); the wording is not.
 
 This file holds the **clean lyric only**: no tags, no prompts, no stress marks. Performable version: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md). Rhyme analysis: [`../RESEARCH/RHYME_PLAN_DUTCH-005.md`](../RESEARCH/RHYME_PLAN_DUTCH-005.md). Gloss and deviations: [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3, §5.
@@ -39,7 +39,7 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 ## 3
 
 Жизнь без конца, во славе,
-После земных невзгод,
+Та, что за смертью придёт,
 Лишь она, душа, желанна
 И влечёт вперёд.
 Закрой плотское око,
@@ -133,6 +133,20 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 Пойте вовек Иисусову хвалу.
 
 ---
+
+## Changelog — v0.9 → v0.10
+
+One line, and it is a correction rather than a preference. Stanza 3 read «После земных невзгод» — "after earthly hardships". The Dutch line is `Na dit leven crijgelijck`, and the 2005 apparatus glosses it as *het heerlijke, eeuwige leven, dat na dit leven te verkrijgen is* — the glorious eternal life **to be obtained after this life**. The print says nothing about hardship; it says when the life is obtained.
+
+| St. | v0.9 | v0.10 | Why |
+|---|---|---|---|
+| 3.2 | *После земных невзгод* | *Та, что за смертью придёт* | `Na dit leven` is "after this life", not "after hardships"; `crijgelijck` is "obtainable", which the future tense carries. Seven syllables, as in the Dutch line, and the rhyme with line 4 («вперёд») is preserved |
+
+**Why this variant.** Three were counted; the record is in [`../RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md`](../RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md). This one keeps the Dutch word count, keeps the future orientation of `crijgelijck`, and needs no stress mark, because `ё` in «придёт» fixes the stress for the singer.
+
+**The reading is not a conjecture.** `Na dit leven crijgelijck` stands in the 1676 print (pp. 155–158), in the 1727 ninth edition (`krijgelijck`, spelling only) and in the 2005 edition, and the apparatus glosses it at the line. See [`../RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md`](../RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md).
+
+**Status of this revision:** applied on the documented reading, and still **not approved** — the owner signs the wording, and this one line is what he is being asked to sign.
 
 ## Changelog — v0.8 → v0.9
 
@@ -243,7 +257,7 @@ My v0.8 has «прах» four times, in all four slots. Two separate debts, and 
 |---|---|---|---|---|
 | 1 | 6 · 6 · 6 · 8 | 5 | 9 | 8 |
 | 2 | 7 · 7 · 7 · 7 | 7 | 10 | 9 |
-| 3 | 7 · 6 · 8 · 5 | 7 | 9 | 6 |
+| 3 | 7 · 7 · 8 · 5 | 7 | 9 | 6 |
 | 4 | 8 · 6 · 8 · 8 | 9 | 9 | 8 |
 | 5 | 10 · 5 · 8 · 9 | 8 | 6 | 10 |
 | 6 | 8 · 7 · 8 · 8 | 6 | 9 | 10 |
@@ -273,11 +287,13 @@ Two titles this one is **not**:
 
 The historical title stays in Dutch wherever the source is cited; only the Russian line changes.
 
-## Open defect — stanza 3, line 2 (found 2026-10-25, after v0.9)
+## Stanza 3, line 2 — found 2026-10-25, fixed in v0.10
 
-The 2005 commentary glosses `Na dit leven crijgelijck` as *het heerlijke, eeuwige leven, dat na dit leven te verkrijgen is* — the glorious eternal life **to be obtained after this life**. The Russian line reads «После земных невзгод», "after earthly hardships": that is not in the Dutch, and it makes the stanza say something the print does not.
+The 2005 commentary glosses `Na dit leven crijgelijck` as *het heerlijke, eeuwige leven, dat na dit leven te verkrijgen is* — the glorious eternal life **to be obtained after this life**. The Russian line in v0.9 read «После земных невзгод», "after earthly hardships": the Dutch has no hardships there.
 
-This is a **sense** defect, not a stylistic one, and it is the one thing in the text that the source run settled against it. It requires a rhyme-safe replacement and a v0.10 bump; it was deliberately **not** patched inside the YouTube pass, so that the wording change is reviewed as wording.
+It was a **sense** defect, not a stylistic one, and it was deliberately not patched inside a YouTube pass, so that the wording change would be reviewed as wording. v0.10 replaces the line with «Та, что за смертью придёт» — seven syllables, as the Dutch line, and the rhyme with line 4 («вперёд») intact. The three counted options and why this one was taken are in [`../RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md`](../RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md); the collation that establishes the reading, in [`../RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md`](../RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md).
+
+**The line is applied, not approved.** The owner signs wording; this is the one line in v0.10 that differs from v0.9.
 
 ## What this file is not
 

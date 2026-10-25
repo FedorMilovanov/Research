@@ -45,7 +45,7 @@ Do not count search results as independent sources. Several pages derived from o
 - The critical edition's introduction (2005), biography and the Zoetermeer singing reform: https://www.dbnl.org/tekst/lode002uyt_02_01/
 - Dordrecht 1578 and 1618–19 article 69 on what may be sung: https://kerkrecht.nl/node/2149/
 
-Two source runs are already assembled and should be extended rather than re-searched from scratch: `DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses, hymn and transmission) and `DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses, church singing, the organ ban, the `voorzanger`, the `gezelschappen`, Lodenstein's singing rules). Both carry an honest status per address: opened and read, found in results only, or still a library lead.
+Three source registers exist and should be extended rather than re-searched from scratch. `DUTCH-005_SOURCE_LEDGER_FULL.md` consolidates the hymn and transmission work into one table with a status per record; the two older runs are kept because they hold the order in which things were found. `DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses, hymn and transmission) and `DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses, church singing, the organ ban, the `voorzanger`, the `gezelschappen`, Lodenstein's singing rules). Both carry an honest status per address: opened and read, found in results only, or still a library lead.
 
 See SOURCE_REGISTER.md for limits of each item.
 
@@ -63,6 +63,7 @@ Candidates in `DUTCH_HYMN_BACKLOG.md` are unrecorded as produced in the current 
 | `COLLATION_DUTCH-005_THREE_WAY.md` | 1676 vs 1727 vs 2005: five substantive variants, and which reading to adopt |
 | `DUTCH-005_TRANSMISSION_AND_TUNE.md` | the chain 1676 → 1681 → 1718 → 1806 → 1938, and why "Bourgeois" and "psalm 42" are one melody |
 | `DUTCH-005_STANZA_3_2_OPTIONS.md` | the open defect in stanza 3 line 2, with three counted options |
+| `DUTCH-005_SOURCE_LEDGER_FULL.md` | **the consolidated register**: 64 records for this hymn, 15 opened, 24 found in results, 20 catalogue-only, 5 recorded as unusable — the one place that says what was looked at and what came of it |
 | `DUTCH-005_SOURCE_RUN_50PLUS.md` | hymn and transmission addresses with an honest status each |
 | `DUTCH-005_SINGING_PRACTICE_SOURCES.md` | church singing, the organ ban, the `voorzanger`, the `gezelschappen` |
 | `RHYME_PLAN_DUTCH-005.md` | what the Dutch rhyme does and what a rhymed Russian costs |

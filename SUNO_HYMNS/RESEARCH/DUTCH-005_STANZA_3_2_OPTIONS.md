@@ -1,6 +1,6 @@
 # DUTCH-005, stanza 3, line 2 — the defect and three ways to close it
 
-**Status:** decision needed from the owner. **Nothing is changed in the lyric yet.** Revision affected: `DUTCH-005-RU v0.9` → v0.10.
+**Status:** **decided and applied — option C.** v0.10 of the lyric now reads «Та, что за смертью придёт». The line is applied on the documented reading and **still awaits the owner's signature**, like every other line of the text. This file stays as the record of the three counted options.
 
 ## 1. What is wrong
 

@@ -40,7 +40,7 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **SUNO/ASSET_MANIFEST.md** — reported local filenames, exports, metadata and unresolved verification.
 - **SUNO/DUTCH-004_PRODUCTION_PACKAGE.md** — the next work: form decision, gloss, Russian draft, deviations, musical brief, authored prompt and a per-element status table.
 - **SUNO/DUTCH-005_PRODUCTION_PACKAGE.md** — *Heerlijckheyds Loff* (1676, pp. 155–158): ten-stanza gloss, Russian adaptation v0.1, eight declared deviations, and two style directions for SUNO (one primary, one option).
-- **SUNO/DUTCH-005_LYRICS.md** — clean Russian lyric, revision v0.9, with changelog and a **measured** syllable table; one open defect remains at stanza 3.2.
+- **SUNO/DUTCH-005_LYRICS.md** — clean Russian lyric, revision v0.10, with changelog and a **measured** syllable table; the stanza 3.2 defect is fixed there and awaits the owner's signature.
 - **SUNO/DUTCH-005_LYRICS_SUNO.md** — the same lyric with `[Intro]`/`[Verse n]`/`[Outro]` tags and three performance accents, for the SUNO editor.
 - **SUNO/DUTCH-005_STYLE.md** — style only: **five** distinct directions A–E (organ/monastic, Renaissance wind consort, viol consort, Byzantine ison, metrical chorale), each with exclude list, purpose and risk.
 - **RESEARCH/README.md** — source-evidence method for historical hymn research.
@@ -123,7 +123,7 @@ The validator does not repair or modify files. It fails closed on invalid global
 
 For each **existing** track, bring the exact lyric version, the verbatim Suno style prompt, the selected cover, final audio and metadata readback into a reproducible record. Those prompts are still `NOT_CAPTURED`; they must be recovered from the owner, not reconstructed.
 
-For **DUTCH-005**, the copy exists and is gated; the immediate milestones are the owner's decision on the open lyric defect at stanza 3.2, the cover, and the title separator — then a first generation. The copies are **not** publication and carry no URL.
+For **DUTCH-005**, the copy exists and is gated; the immediate milestones are the owner's signature on the stanza 3.2 fix (v0.10) and the choice of a cover — the title separator is settled (✝) — then a first generation. The copies are **not** publication and carry no URL.
 
 For **DUTCH-004**, the immediate milestones are: the owner's poetic revision of the Russian draft; freezing the lyric and the prompt with a revision hash; and only then a first generation.
 
