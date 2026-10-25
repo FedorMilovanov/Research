@@ -401,7 +401,7 @@
       "promptCapture": "CAPTURED_IN_REPOSITORY",
       "versions": [
         {
-          "versionId": "DUTCH-005-RU-v0.6",
+          "versionId": "DUTCH-005-RU-v0.7",
           "versionKind": "LYRIC_DRAFT_ONLY",
           "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
           "promptCapture": "CAPTURED_IN_REPOSITORY",
@@ -422,7 +422,7 @@
           },
           "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md). Five directions, never submitted to SUNO.",
           "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
-          "lyricRevisionNote": "Revision v0.6: a second reader's review checked line by line against the 1676 print, which was re-fetched. Eight changes accepted: st.1 'ne o tom' -> 'ne v tom' (the Russian for 'does not consist in that'); st.2 'vse dragoye' -> 'vse, chto drago' (drops the word that needed a stress mark, keeps the root); st.4 'dusza prazdnaya' -> 'suyetnaya dusha' (the poem's own root: st.2 renders Ydelheyd as suyeta); st.6 the exclamation mark that split the sentence removed; st.6 'ne rasstalis' -> 'ne otstupili' (cleven = to cleave, not to part from one another); st.8 the clause now runs on from 'krasy' and keeps 'zdes' for hier; st.9 'Vsyo eto' -> 'Ty' (the Russian neuter demonstrative chained to the earthly list and made the stanza love the shadows); st.10 'prah i tlen' -> 'yest predmet hvaly' (hier is stoff = here is matter for praise). Three claims in that review were rejected with the print in hand: no negation exists in stanza 8 (the print reads 'nog', and 'Min vermaackt' is affirmative), 'Die' cannot be the heavenly Beauty because the stanza adores it, and the person shift in stanza 6 is in the Dutch itself ('Hersenlosen ... doet ... leeft' then 'Weet gy'). Stress marks remain five, each by rule. Russian adaptation, not a translation; owner revision is the gate.",
+          "lyricRevisionNote": "Revision v0.7: rhymed to standard B - lines 2 and 4 rhyme, and the closing line rhymes with the call line; lines 1 and 3 free. Six of ten stanzas meet it; stanzas 4, 6 and 9 do not, and stanza 8 and 10 only partly, because the Russian call lines end on words with no available rhyme; forcing one would mean rewriting the call itself. Every line that changed for a rhyme is listed in the lyric file with its cost - 'zryat' -> 'svet' in st.1, 'op aard' -> 'prakh', 'ochi' -> 'oko' (singular, as in the Dutch), 'ego' -> 'Gospodney', 'daruyet' -> 'dayot spolna', 'lyubov' -> 'otrada' with love moved to line 3, 'uzret spasenye' -> 'zryu spasenye navsegda', and st.8's two alternatives fused into one process. Stress marks fall to four ('daruyet' left the text, so its mark went with it). Russian adaptation, not a translation; the rhyme is authorial work in the adaptation layer and is declared as such; owner revision is the gate.",
           "assets": {},
           "generatedOutput": "NONE",
           "audioExport": "NONE",

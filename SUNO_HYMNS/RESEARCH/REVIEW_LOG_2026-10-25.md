@@ -372,3 +372,32 @@ Two smaller ones: **I.7** «не в том» instead of «не о том» (the 
 ## Checks
 
 Both lyric files: 90 lines, identical once the tags, the echo and the five accents are stripped. `check_ru_lyric.py`: 5 accented words, one ё question (`все языки`, 10.1, correct plural). Metre re-counted by machine and corrected in three cells. Validator: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
+# Fourteenth pass — 2026-10-25 (rhyme, standard B)
+
+The owner asked for rhyme "as in the original" and chose **standard B**: lines 2 & 4 rhyme, the closing line rhymes with the call line, lines 1 & 3 free. The Dutch scheme and its cost were analysed first (`RHYME_PLAN_DUTCH-005.md`); this pass applies it.
+
+## Result
+
+**Six of ten stanzas carry the cadence rhyme; four do not.** Named, not patched:
+
+- **met:** 1 (нет/свет · прах/прах), 2 (суета/тщета · кровь/любовь), 3 (невзгод/вперёд · око/высоко), 5 (Господней/Господней · соединена/сполна), 7 (отрада/услада · туда/навсегда).
+- **half:** 8 (мнится/возвратится, but the close does not answer «поклоняюсь»), 10 (root rhyme хвалы/хвалу, as the Dutch has `stoff`/`loff`).
+- **not met:** 4, 6, 9.
+
+Why the four fail: the Russian call lines end on `помысли`, `вы`, `крадёшь`, `поклоняюсь` — words with no rhyme inside these stanzas. Buying one would mean rewriting the call itself, and the call is the poem's fixed device, sung three times per stanza.
+
+## What it cost
+
+Thirteen lines changed for rhyme, each listed with its price in `DUTCH-005_LYRICS.md`. The four most expensive: st.1 «зрят» → «свет» (`siet` is "sees"); st.1 `op aard` → «прах»; st.8's two alternatives (`Min vermaackt, of oyt verdwijnt` — pleases less **or** vanishes) fused into one process, «Слабеет и не возвратится»; st.5 «в святости Его» → «в святости Господней» (the possessive `sijn` is lost).
+
+Three lines fell to five syllables (1.5, 1.6, 3.4). Recorded with the warning: if the tune cannot take a five-syllable line, give up the rhyme at that cadence, not the words.
+
+**One mark disappeared for the right reason:** `дару́ет` left both stanzas' closes («даёт» / «даёт сполна»), so its accent went with the word. Marks: four.
+
+## Also checked, from the third review that arrived the same day
+
+- The 1676 contents were read: `Heerlijckheyds Loff.` (this work) and `'s Heeren Heerlijckheyts Loff.` (a different poem in the appendix). The claim "our hymn is № 56" is wrong — file `0056` is `Schepselen Niet en Iesus Al`, i.e. **DUTCH-001**. The warning about the title collision is right; the numbers attached to it are not.
+- The `noch`-negation claim returned a third time and is still contradicted by the print: `nog`, affirmative verb, no negation in the clause.
+- Metric defects in the version offered for adoption: VIII.2 twelve syllables, VIII.4 fifteen, IX.5 twelve, X.1 eleven, VI.7 twelve. Not adoptable under strict syllabic singing.
+
+Validator: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
