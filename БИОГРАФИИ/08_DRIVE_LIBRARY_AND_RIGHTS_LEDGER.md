@@ -84,7 +84,8 @@
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 16, 2026-10-25, коммит `d3e2855`)~~ | ~~`1-IvUFenV5fsxCpPwYLDwunVMqkHk_8Ir`~~ → **`SUPERSEDED`**, см. rev 17 |
 | ~~Стивен Чарнок — 00 README and Navigation (rev 17, 2026-10-25, коммит `d26a496`)~~ | ~~`1nT41evvQ2X51bfMfK9rxIPpsGDVr9rWm`~~ → **`SUPERSEDED`**, см. rev 18 |
 | ~~Стивен Чарнок — 00 README and Navigation (rev 18, 2026-10-25, коммит `67853fc`)~~ | ~~`1nIGRksu0ZeYf1fr5lb1QGXPUWxUK0kOF`~~ → **`SUPERSEDED`**, см. rev 19 |
-| Стивен Чарнок — 00 README and Navigation **(rev 19, 2026-10-25, коммит `93d4db7`)** | `1Uv3-QaYxrkou33sHbXHFa-9ajZZmhPhk` |
+| ~~Стивен Чарнок — 00 README and Navigation (rev 19, 2026-10-25, коммит `93d4db7`)~~ | ~~`1Uv3-QaYxrkou33sHbXHFa-9ajZZmhPhk`~~ → **`SUPERSEDED`**, см. rev 20 |
+| Стивен Чарнок — 00 README and Navigation **(rev 20, 2026-10-25, коммит `bf1fc0f`)** | `1oJSMK6bhVKiASvYO8SJZY0js01MEgTy8` |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1giMeyUhqxHGFEc9At2H-kJwCbrxOVzpf`~~ → **`SUPERSEDED`**, см. rev 4 |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 4, 2026-10-25, коммит `e64d27d`)~~ | ~~`1kQCmXLcYMth7ijwLU-G5Xgthu2FlXIi9`~~ → **`SUPERSEDED`**, см. rev 5 |
 | Стивен Чарнок — 01 Witnesses and Evidence Hierarchy **(rev 5, 2026-10-25, коммит `54ba4c4`)** | `1ODU8A8uJQh8olYr0AfpnWjMxDxrwzX3x` |
@@ -127,7 +128,8 @@
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 5, 2026-10-25, коммит `d3e2855`)~~ | ~~`1uhq0WQZUTDnkcZMcvcfvA--JW69OgSrP`~~ → **`SUPERSEDED`**, см. rev 6 |
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 6, 2026-10-25, коммит `d26a496`)~~ | ~~`1ICM2v1PQd-Cn-61CiKXCcJGbnn-Qc1u1`~~ → **`SUPERSEDED`**, см. rev 7 |
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 7, 2026-10-25, коммит `67853fc`)~~ | ~~`1sLpyBqCTrW0YSZLt5VfhH0lSE_oPWTQv`~~ → **`SUPERSEDED`**, см. rev 8 |
-| Стивен Чарнок — 16 Series Architecture and Persons Chain **(rev 8, 2026-10-25, коммит `93d4db7`)** | `1FKamyP5c0v7XbLGrrzchT6_Egjol4-4H` |
+| ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 8, 2026-10-25, коммит `93d4db7`)~~ | ~~`1FKamyP5c0v7XbLGrrzchT6_Egjol4-4H`~~ → **`SUPERSEDED`**, см. rev 9 |
+| Стивен Чарнок — 16 Series Architecture and Persons Chain **(rev 9, 2026-10-25, коммит `bf1fc0f`)** | `1MuWYnlSmPjxLxFHtPBNOt-xzQlF0TeiD` |
 | Стивен Чарнок — 17 PROMPT Parallel Agent Historical Context **(rev 1, 2026-10-25, коммит `ad72e30`)** | `1AXv0fJTyy3OCQJBdSfYm1QE6vxs6GZzf` |
 
 Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
@@ -141,11 +143,17 @@
 | Чарнокский `00 README AND NAVIGATION`, тома **01, 02, 03, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` (Чарнок 00), `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` (03), `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` (ledger), `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` (01), `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` (02), `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` (04), `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` (05), `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` (БИОГРАФИИ 00) | **актуальны** (коммит `1439b96`); прежние копии помечены `SUPERSEDED` и **не удалялись** |
 | — | **Все зеркала томов отдела приведены к актуальному состоянию** (16 томов + rev 2 файлы). Отстающих копий не осталось | — |
 
-**Состояние на 2026-10-25, коммит `93d4db7`: отстающих зеркал не осталось.** **Девятнадцатая
-волна** загружена 2026-10-25: тома **00, 04, 16** (причина — **§0U**: «A DISCOURSE UPON GODS
-Dominion», Пс. 103:19, стр. 697–786, узел `1:16` + подузел `1:16.1` «The USE», 31 сноска —
-**четырнадцатый и последний дискурс**. **ФОЛИАНТ 1682 ГОДА ПРОЧИТАН ЦЕЛИКОМ: все 14 дискурсов
-(`1:4`–`1:17`), оба подузла, 2343 сноски.** В дискурсе: «**Omnipotence is his Physical power…
+**Состояние на 2026-10-25, коммит `bf1fc0f`: отстающих зеркал не осталось.** **Двадцатая
+волна** загружена 2026-10-25: тома **00, 16** (причина — **идентификация «Stoughton»**: сн. 1.6
+дискурса о владычестве = **ДЖОН СТАТОН**, ум. 1639, D.D., ***The Righteous Mans Plea to True
+Happinesse, In Ten Sermons, on Psal. 4. ver. 6*** (Лондон, 1640), «**fellow of Immanuel Colledge
+in Cambridge, late preacher of Aldermanbury, London» — ЧЕТВЁРТЫЙ ЭММАНУЭЛЕВСКИЙ СЛЕД В КОРПУСЕ**
+(Чарнок, Инжело, Статон; Гудвин предположительно). Статон вызывался Лодом в 1635, был казначеем
+пуританских фондов в кружке Гартлиба, поддерживал Дьюри. Также внесена гипотеза по «Lingend» ×4:
+Вильгельм Линданус, *Panoplia evangelica*; `LOCATOR_HOLD` сохранён). **Девятнадцатая волна** (тома
+00, 04, 16; причина — **§0U**, «A DISCOURSE UPON GODS Dominion», Пс. 103:19, стр. 697–786,
+31 сноска — **четырнадцатый и последний дискурс**; **ФОЛИАНТ 1682 ГОДА ПРОЧИТАН ЦЕЛИКОМ: все 14
+дискурсов (`1:4`–`1:17`), оба подузла, 2343 сноски**): В дискурсе: «**Omnipotence is his Physical power…
 Dominion is his moral Power**»; абсолютное владычество через **Рим. 9:21** и «he Rules the
 Kingdoms of men, and sets a Crown upon the head of the basest of men, Dan. 4.17»; скорби без
 конкретного греха (Ин. 9:3, Иак. 5:15); **политический пик фолианта** — «Not a bullet can be
@@ -156,7 +164,7 @@ an unrighteous Law»; **ГУДВИН вторично, и теперь как ц
 he was in trou∣ble»; новые лица — Джозеф Мед, Маковий, Евсевий Рено, Николя Коссен, Статон,
 Клод, Светоний, Арриан, Златоуст). Прежние rev 18 / rev 17 / rev 7 копии помечены `SUPERSEDED`
 и **не удалялись**. Актуальные ревизии: 00 = rev 19, 01 = rev 5, 02 = rev 7, 03 = rev 7,
-04 = rev 18, 06 = rev 3, 12 = rev 4, 15 = rev 5, 16 = rev 8, **17 = rev 1**, реестр = rev 18. Все 15 томов отдела
+04 = rev 18, 06 = rev 3, 12 = rev 4, 15 = rev 5, 16 = rev 9, **17 = rev 1**, реестр = rev 20. Все 15 томов отдела
 и все три файла уровня `БИОГРАФИИ` имеют актуальные Drive-копии. **Третья волна rev 3** загружена
 2026-10-25 по итогам коммитов `e4dc14`, `4b898ef`, `ef6ab9e`, `7135746`, `5cd7d53`, `c1ed17a`,
 `7a28e89`, `976dbfa`:
