@@ -64,8 +64,8 @@
 - **Why this text:** it is the poem known from earlier sessions as `Heerlijckheyds Loff / Hoog, omhoog…` — one text, whose second element is its incipit. Identity was resolved on 2026-10-25 and the work was activated the same day from candidate `DUTCH-CAND-021`.
 - **The spine:** the tripled word moves `leven` → `lieven` → `loven`. It lives inside each stanza; it is not a chorus and must not be detached as one.
 - **Melody:** `Voyse: Un jour &c.` — untraced, no notation, and the 2005 apparatus says the origin is unknown and that it is not text 27's *Un jour*.
-- **Russian text:** `DUTCH-005-RU-DRAFT v0.1` — a declared **adaptation** with eight declared deviations, **not approved**. Owner poetic revision is the gate.
-- **Prompt:** `PROMPT-DUTCH-005-V1` — epic organ, Georgian-flavoured male monastic choir, one low male lead, ♩≈116 in 4/4, short organ intro, no stretched vowels, no guitars. Authored here, **never submitted**. A second direction (organ, low strings, cantor, choir from stanza 4) is a documented option.
+- **Russian text:** `DUTCH-005-RU v0.2` in `SUNO/DUTCH-005_LYRICS.md` — a declared **adaptation** with eight declared deviations, **not approved**. The SUNO-ready text (`DUTCH-005_LYRICS_SUNO.md`) and the style (`DUTCH-005_STYLE.md`) are separate files, as the lane's own rules require.
+- **Prompt:** `PROMPT-DUTCH-005-V1` (in `SUNO/DUTCH-005_STYLE.md`) — epic organ, Georgian-flavoured male monastic choir, one low male lead, ♩≈116 in 4/4, short organ intro, no stretched vowels, no guitars. Authored here, **never submitted**. A second direction (organ, low strings, cantor, choir from stanza 4) is a documented option.
 - **Production state:** `LYRIC_DRAFT`. **No generation, no audio, no cover, no export, no publication.**
 - **Do not confuse with:** DUTCH-002's brief (similar sound, different poem, different prompt) and the 1938 bundel's reworking of this text to a Bourgeois melody (a protected, later object).
 

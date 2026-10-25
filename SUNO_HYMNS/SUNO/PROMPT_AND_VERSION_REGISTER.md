@@ -26,7 +26,7 @@ The exact prompt must be stored verbatim from the submitted prompt text or recov
 | DUTCH-002-V2 | Yes, local WAV/MP4/MP3 paths reported | NOT CAPTURED | NOT IN REPOSITORY | Prior properties reported; re-read actual files before relying on them | NOT VERIFIED |
 | DUTCH-003-V1-REPORTED | MP3 filename reported; QA incomplete | NOT CAPTURED | NOT IN REPOSITORY | ID3 tag readback and cover state unconfirmed | NOT VERIFIED |
 | DUTCH-004-RU-DRAFT-v0.1 | **None — nothing generated** | `PROMPT-DUTCH-004-V1`, authored in this repository, never submitted | v0.1 draft in the production package | NOT APPLICABLE | NONE |
-| DUTCH-005-RU-DRAFT-v0.1 | **None — nothing generated** | `PROMPT-DUTCH-005-V1`, authored in this repository, never submitted; a second style direction recorded as an option only | v0.1 draft in the production package | NOT APPLICABLE | NONE |
+| DUTCH-005-RU-v0.2 | **None — nothing generated** | `PROMPT-DUTCH-005-V1` in `DUTCH-005_STYLE.md`, authored in this repository, never submitted; a second style direction recorded as an option only | v0.2 in `DUTCH-005_LYRICS.md`; SUNO-ready copy in `DUTCH-005_LYRICS_SUNO.md` | NOT APPLICABLE | NONE |
 
 ## Authored versus recovered prompts
 

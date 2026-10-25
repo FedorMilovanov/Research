@@ -190,3 +190,37 @@ Three claims added; candidate activated; work added to the track catalog with `w
 - The 1676 page images of pp. 155–158, and the illustration.
 - Choice between the two style directions.
 - The Dutch Song Database for *Un jour &c.* — no melody claim until then.
+
+# Seventh pass — 2026-10-25 (artifact separation, lyric revision v0.2)
+
+The owner pointed out that the delivery had mixed lyrics and style into one sheet, against the project's own rule.
+
+## 1. The rule that was broken, quoted
+
+`SUNO/README.md`: *"Keep these artifacts separate: source-language historical text; normalized transcription text; literal translation for analysis; Russian literary adaptation; SUNO-ready lyric with vocal cues and optional stress marks; published/recorded take."*
+`SUNO/LYRIC_REGISTER.md`: *"Keep clean public lyric and pronunciation-marked SUNO lyric separate."*
+
+One file holding Dutch text, gloss, Russian lyric, tags and style prompts is exactly what those two lines forbid.
+
+## 2. What replaced it
+
+`DUTCH-005_LYRIC_AND_STYLE_SHEET.md` is **deleted**. In its place, three files, each with one job:
+
+| File | Contains | Does not contain |
+|---|---|---|
+| `SUNO/DUTCH-005_LYRICS.md` | clean Russian lyric, v0.2, changelog, rhyme/metre statement | tags, prompts, gloss |
+| `SUNO/DUTCH-005_LYRICS_SUNO.md` | the same wording with section labels and the minimum stress marks | prompt text, analysis |
+| `SUNO/DUTCH-005_STYLE.md` | style prompts only, primary + one option | any lyric |
+
+The Dutch text and the literal gloss stay in the production package §2–§3, where the research lane expects them.
+
+## 3. The lyric itself revised to v0.2
+
+Nine changes, each with a reason in the lyric file's changelog: the stanza-1 clause restored as one sentence; the stanza-2 close given the right subject (`Сердце ставит выше всего` — the Dutch subject is the blood); stanza 3's vocative and `onsigtbaerlijck` restored; stanza 6's participle calque replaced and the call repeated in full rather than half; stanza 8's line shortened; stanza 9's false friend `обаяния` replaced by `отрада`; stanza 10's plural/singular address corrected.
+
+**Rhyme is declared, not faked:** the Dutch rhymes its thrice-repeated call line with the closing line in all eight stanzas that use the device. The Russian reproduces the **device** everywhere and the **rhyme pair** only in stanzas 1, 2 and 10, leaving the rest unrhymed rather than filling them with words the Dutch does not have.
+
+## 4. Registry
+
+`DUTCH-005-RU-v0.2` with three `lyricFiles` paths; the claims ledger states why the artifacts are separate and quotes the rule. Validator passes: **49 sources, 3 authors, 5 tracks, 38 claims, 9 songbooks**.
+

@@ -401,7 +401,7 @@
       "promptCapture": "CAPTURED_IN_REPOSITORY",
       "versions": [
         {
-          "versionId": "DUTCH-005-RU-DRAFT-v0.1",
+          "versionId": "DUTCH-005-RU-v0.2",
           "versionKind": "LYRIC_DRAFT_ONLY",
           "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
           "promptCapture": "CAPTURED_IN_REPOSITORY",
@@ -421,13 +421,18 @@
           },
           "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §6.2). Never submitted to SUNO. Newly written for this text, not a recovered prompt, and not a reuse of the DUTCH-002 brief.",
           "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
-          "lyricRevisionNote": "Russian adaptation, not a translation; eight declared deviations in the production package §5; owner poetic revision is a required gate before READY_FOR_REVIEW.",
+          "lyricRevisionNote": "Revises v0.1. Russian adaptation, not a translation; eight declared deviations in the production package §5; changelog and rhyme/metre statement in the lyric file. The clean lyric, the SUNO-ready text and the style prompt are three separate files, as SUNO/README.md and SUNO/LYRIC_REGISTER.md require. Owner poetic revision is a required gate before READY_FOR_REVIEW.",
           "assets": {},
           "generatedOutput": "NONE",
           "audioExport": "NONE",
           "cover": "NONE",
           "metadataReadback": "NOT_APPLICABLE",
-          "qaStatus": "OPEN"
+          "qaStatus": "OPEN",
+          "lyricFiles": {
+            "clean": "SUNO/DUTCH-005_LYRICS.md",
+            "sunoReady": "SUNO/DUTCH-005_LYRICS_SUNO.md",
+            "style": "SUNO/DUTCH-005_STYLE.md"
+          }
         }
       ],
       "authorId": "LOD-001",
@@ -452,7 +457,7 @@
       "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.'. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X). It is not a refrain and must not be detached as a chorus. The 1938 reworking of the same text is a separate, protected object and is not used. Dossier: RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md; package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md.",
       "rightsNote": "1676 poem public domain in substance; the DBNL transcription and the 2005 critical edition are separate objects and are not reproduced. The 1938 reworking is PERMISSION_REQUIRED and is not used.",
       "openChecks": [
-        "Owner poetic revision of the Russian draft v0.1; freeze as DUTCH-005-RU v1.0 before any generation.",
+        "Owner poetic revision of the Russian lyric v0.2 (SUNO/DUTCH-005_LYRICS.md); freeze as v1.0 and regenerate the SUNO-ready file from it before any generation.",
         "Read the 1676 page images of printed pp. 155-158 to move the text from diplomatic transcription to print-verified, and view the illustration ill0155.",
         "Decide between the two style directions (SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §6.2 and §6.3) and record the decision.",
         "Retry the Dutch Song Database for 'Un jour &c.' and for lode002uyt_01_0047; no melody claim until then.",

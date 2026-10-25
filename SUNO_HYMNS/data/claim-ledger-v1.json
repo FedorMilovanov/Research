@@ -718,15 +718,16 @@
     {
       "id": "CLM-DUTCH-005-ADAPTATION",
       "topic": "DUTCH-005: the Russian text is a declared adaptation, not a translation",
-      "claim": "The Russian lyric for DUTCH-005 is an independent literary adaptation that follows the ten stanzas in order and preserves the tripled word, with eight declared deviations (supplied negation in I.7, noun instead of infinitive in the tripled device, 'costelijck' as 'precious', expanded 'etc.' repeats, no invented refrains, 'Cijter' as 'цитра', an inline repeat in VI.5, and no metre or rhyme claim). No part of it may be presented as a translation, and it is not approved.",
+      "claim": "The Russian lyric for DUTCH-005 is an independent literary adaptation (revision v0.2) that follows the ten stanzas in order and preserves the threefold call and the tripled word, with eight declared deviations (a supplied negation in I.7, a noun instead of an infinitive in the tripled device, 'costelijck' as 'precious', expanded 'etc.' repeats, no invented refrains, 'Cijter' as 'цитра', a full repeated interrogative in VI, and no metre or rhyme claim beyond the declared partial rhyme). No part of it may be presented as a translation, and it is not approved.",
       "claimStatus": "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
       "sourceIds": [
         "SRC-L-1676-HEERLIJCKHEYD-155-158"
       ],
       "notes": [
-        "Draft v0.1 authored in this repository on 2026-10-25; the owner's poetic revision is a required gate before READY_FOR_REVIEW.",
+        "Revision v0.2, authored in this repository on 2026-10-25; the owner's poetic revision is a required gate before READY_FOR_REVIEW.",
         "The deviation table is in SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §5.",
-        "Nothing has been submitted to SUNO: the style prompt is AUTHORED_NOT_YET_SUBMITTED and no generation exists."
+        "Nothing has been submitted to SUNO: the style prompt is AUTHORED_NOT_YET_SUBMITTED and no generation exists.",
+        "The lyric, the SUNO-ready text and the style prompt are deliberately three separate files: SUNO/README.md lists the artifacts that must stay apart, and SUNO/LYRIC_REGISTER.md requires the clean public lyric and the pronunciation-marked SUNO lyric to be kept separate."
       ],
       "holds": [
         "RIGHTS_HOLD"

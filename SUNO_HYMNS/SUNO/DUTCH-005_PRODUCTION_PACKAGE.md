@@ -4,6 +4,10 @@
 **Source text:** Jodocus van Lodenstein, *Heerlijckheyds Loff*, in *Uyt-spanningen* (Utrecht: Willem Clerck, 1676), printed pp. 155–158; dated *27. in Ougstmaand 1665*.
 **Research record:** [`../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`](../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md)
 **Package opened:** 2026-10-25
+**Artifacts (kept separate, per `SUNO/README.md` and `SUNO/LYRIC_REGISTER.md`):**
+[`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — clean lyric, `DUTCH-005-RU v0.2` ·
+[`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md) — SUNO-ready text with labels and stress marks ·
+[`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md) — style prompts only
 **Production state:** `LYRIC_DRAFT` — a Russian draft v0.1 and a style prompt exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
 
 > Forward-written package, like DUTCH-004. Every field states its own status. Nothing here is a recovered artifact, and no line of the Russian draft is presented as a translation.
@@ -85,118 +89,9 @@ Flat on purpose; this is what the Russian must be checked against, not a verse.
 - **I.7** — `Is uw costlijck leven, lieven, loven` has no expressed negation. Two readings are possible: (a) elliptical, the negation of line 2 carrying over — "all you see and hear is **not** your precious living, loving, praising"; (b) a pun on `costelijck` = "costly", i.e. these things **cost** you your life, love, praise. Reading (a) is adopted, because line 9 also negates and (b) would make the stanza self-contradictory; but (b) is recorded as a real secondary sense, and `costelijck` = "precious" is attested in the same poem (`'t costelijcke bloed`, `'t costelijck hert`).
 - **X.8** — `hier is stoff` ("all here that is stuff/dust") echoes the dust-and-ashes motif of the same author's *Hert-sterckte* II (`Wy sijn niet dan stof en eerd`). Rendered as "вещество/прах" without importing the other poem's line.
 
-## 4. Russian draft — `DUTCH-005-RU-DRAFT v0.1`
+## 4. Russian draft
 
-**Status:** working draft, not approved. Rhythm regularised; rhyme only where it came without forcing. **The owner's poetic revision is a required gate** before `READY_FOR_REVIEW`. Judge fidelity against §3, not against Dutch word order.
-
-> **I**
-> Душа моя, ввысь, ввысь, ввысь!
-> Здесь, внизу, — не то, не здесь:
-> Жизнь истинная, любовь и хвала —
-> Лишь там, где Иисуса зрят.
-> Всё, что ты видишь здесь,
-> Всё, что ты слышишь здесь, —
-> Не о том твоя жизнь, любовь и хвала;
-> Всё, чего хочешь здесь,
-> Твоего сердца не стоит.
->
-> **II**
-> Красота и блеск — только видимость,
-> Всё драгое — суета;
-> Радость гаснет с её употребленьем,
-> Золото и серебро — грязь:
-> Там драгоценная кровь,
-> Там драгоценная кровь
-> Достойна всей твоей жизни, любви и хвалы;
-> Там драгоценная кровь
-> Выше всего сердце ставит.
->
-> **III**
-> Жизнь без конца, во славе,
-> После борьбы земной, —
-> Только она, душа, желанна
-> И влечёт незримо:
-> Только закрой плотские очи,
-> Только закрой плотские очи, —
-> Славная жизнь — жизнь, жизнь, жизнь;
-> Только закрой плотские очи:
-> Эта жизнь — в вышине.
->
-> **IV**
-> Не умирая — пред Богом жить,
-> Без труда, без боли,
-> Без болезни, без трепета,
-> Без мученья и без истомы:
-> О праздная душа, помысли,
-> О праздная душа, помысли —
-> Не умирая — жизнь, жизнь, жизнь;
-> О праздная душа, помысли,
-> Что тебе Небо милостиво дарует.
->
-> **V**
-> Жизнь в совершенных добродетелях,
-> К славе Господней,
-> Радостная в небесных радостях,
-> Святая в святости Его:
-> С таким сияньем соединённая,
-> С таким сияньем соединённая —
-> Без греха — жизнь, жизнь, жизнь;
-> С таким сияньем соединённая,
-> Виждь, что Небо тебе дарует.
->
-> **VI**
-> Безумные, творящие скверные
-> Грехи и живущие в них,
-> Разве не знаете, что смерть и
-> Ад ещё в вашем лоне?
-> Хотите ли вы к жизни? Хотите ли?
-> Жизнь добродетелей — жизнь, жизнь, жизнь;
-> Хотите ли вы к жизни?
-> Начните здесь жизнь добродетели.
->
-> **VII**
-> Желанный и достойный любви —
-> Мой Иисус, в Ком любовь,
-> Всегда готовая на иное,
-> Находит усладу лишь в Нём:
-> Душа моя, ввысь, ввысь,
-> Душа моя, ввысь, ввысь —
-> Где Иисуса — любить, любить, любить;
-> Душа моя, ввысь туда,
-> Где я могу узреть спасенье.
->
-> **VIII**
-> Прекраснейшая Красота!
-> Причина всего, что здесь прекрасным мнится,
-> Что с годами и с обычаем
-> Меньше радует иль исчезает.
-> Тебе, Красота, поклоняюсь я,
-> Тебе, Красота, поклоняюсь —
-> Если что любить — любить, любить, любить;
-> Тебе, Красота, поклоняюсь:
-> Туда моё сердце прежде пойдёт.
->
-> **IX**
-> Все обаяния, какие
-> Здесь можно помыслить,
-> Любовь людская, людские нравы —
-> Лишь тень того.
-> Это крадёт моё сердце и всё,
-> Это крадёт моё сердце и всё —
-> Если хочу любить — любить, любить, любить;
-> Это крадёт моё сердце и всё:
-> Это выше всего я буду любить.
->
-> **X**
-> Ах! если бы все языки людские,
-> Вся бодрость ангелов
-> Соединились и воспели
-> Иисусову хвалу и славу!
-> Вставай, сердце, уста и рука,
-> Вставай, моя цитра; ибо
-> Иисуса — хвалить, хвалить, хвалить;
-> Восстань же всё, что здесь есть прах;
-> Пой без конца Иисусову хвалу.
+See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.2`, with changelog, rhyme/metre statement and approval state. The SUNO-ready variant with section labels and stress marks is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
 
 ## 5. Deviation table — every departure, with its reason
 
@@ -252,11 +147,11 @@ Status of the alternative: `DOCUMENTED_OPTION`, not approved, not a version. Cho
 | Melody `Voyse: Un jour &c.` | `UNKNOWN_NOT_VERIFIED` — the 2005 apparatus says the origin is unknown and that it is not text 27's *Un jour*; no notation held |
 | Illustration on printed p. 155 (`ill0155`) | `NOT_CAPTURED` — not viewed; no claim about it |
 | Literal gloss (§3) | `WORKING_GLOSS` — authored here, two uncertainties declared |
-| Russian draft (§4) | `WORKING_DRAFT` v0.1 — **not approved**; owner poetic revision required |
+| Russian draft | `WORKING_DRAFT` v0.2 in `DUTCH-005_LYRICS.md` — **not approved**; owner poetic revision required |
 | Deviations (§5) | `DECLARED` — eight, each with a reason |
 | Musical brief (§6.1) | `AUTHORED_FOR_THIS_WORK` |
-| Style prompt (§6.2) | `AUTHORED_NOT_YET_SUBMITTED` — `PROMPT-DUTCH-005-V1` |
-| Alternative style (§6.3) | `DOCUMENTED_OPTION` |
+| Style prompt | `AUTHORED_NOT_YET_SUBMITTED` — `PROMPT-DUTCH-005-V1` in `DUTCH-005_STYLE.md` §1 |
+| Alternative style | `DOCUMENTED_OPTION` — `DUTCH-005_STYLE.md` §2 |
 | SUNO generation | `NONE` |
 | Audio, export, cover, video | `NONE` |
 | Publication | `UNKNOWN_NOT_VERIFIED` — nothing exists to publish |
@@ -277,5 +172,5 @@ Status of the alternative: `DOCUMENTED_OPTION`, not approved, not a version. Cho
 1. **Owner poetic revision** of the Russian draft — the gate before `READY_FOR_REVIEW`.
 2. **Check the 1676 page images** of pp. 155–158, to move the text from "diplomatic transcription" to "print read".
 3. **Decide §6.2 versus §6.3**, and record the decision.
-4. **Draft the SUNO lyric with section tags** from §4, keeping to one echo and short tags.
+4. **Freeze the lyric** at v1.0 after the owner's revision, then regenerate `DUTCH-005_LYRICS_SUNO.md` from it so the two files cannot drift.
 5. After any generation: read back the file's own duration and metadata, and record them — never a remembered figure.
