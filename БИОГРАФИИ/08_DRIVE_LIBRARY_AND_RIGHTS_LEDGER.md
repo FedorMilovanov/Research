@@ -143,7 +143,10 @@ Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой пол
 | Calendar of State Papers, Domestic, 19–20 июня 1663 | **высокий** | ордер на арест; снять `CONFLICT` в пользу документа |
 | Скан издания 1680 *A treatise of divine providence* (IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`) | **высокий** | сравнить эпистол Adams & Veal в 1680 и 1684; снять `CONFLICT-12` |
 | *An Elegy on the death of … Mr. Stephen Charnock, July 27, 1680* (Anon.; 1680; WorldCat 606749756; EEBO) | **высокий** | второй contemporaneous печатный объект с датой смерти 27 июля; прямое действие к `CONFLICT-10` |
-| *New Poems upon the Death of Stephen Charnock* (1680) | **высокий** | идентифицирован 2026-10-25 по ODNB (Greaves); ещё один contemporaneous печатный объект — кандидат в `CONFLICT-10` |
+| ~~*New Poems upon the Death of Stephen Charnock* (1680)~~ | **высокий** | ~~идентифицирован по ODNB (Greaves)~~ — **ПОЛУЧЕН полностью 2026-10-25** (EEBO-TCP `A52960.0001.001`, CC0 1.0). Третий contemporaneous объект с датой смерти 27 июля; даёт четыре эксклюзивных биографических сведения |
+| Christopher Fowler (1610–1678), изгнанный священник Reading, затем Kennington и Southwark — **идентификация «Fowler's place»** | **высокий** | гипотеза отдела 2026-10-25; если верна — новый, ранее не учтённый период биографии Чарнока |
+| *The Morning Exercise against Popery preached in Southwark* (1675) — список проповедников | средний | проверка гипотезы Fowler: Christopher Fowler был его соавтором |
+| Wing-номера `A52960.0001.001` и `B02133.0001.001` | средний | точная каталогизация обоих полученных объектов 1680 года |
 | Приходской регистр St Michael's, Cornhill | **высокий** | запись погребения 30 июля 1680 «at the bottom of the Tower under the Belfry» |
 | Приходской регистр Whitechapel (умершие) | **высокий** | Чарнок умер в этом приходе (по Wood); единственный документ, способный дать точную дату смерти |
 | Oxford DNB (Greaves) по подписке | средний | проверить Harrison-chaplaincy 1649–1650 и дату матрикуляции 30 мая 1642 (`CONFLICT-13`) |

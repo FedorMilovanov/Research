@@ -145,15 +145,52 @@ Wood, *Athenæ Oxonienses* vol. II, вход [429], p. 491 (EEBO-TCP `A71277.000
 | **1680** | *A treatise of divine providence* | — | Первое издание; IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680` — **page images доступны** (675 MB, микрофильм EEBO); сверка эпистола с изданием 1684 не выполнена → `CONFLICT-12` |
 | **1680** | *A sermon preached by the late eminent Mr. Steph. Charnock on 2 Cor. V. XIX.* | London: Printed by Thomas Milbourn, for J.K., and are to be sold by Langley Curtis | Отдельная sermon 2 Кор. 5:19. **Page images доступны**: IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`; титульный лист читается как «A SERMON Preached by the Late Eminent Mr. Steph. Charnock ON 2 COR. V. XIX.» |
 | **1680** | *The sayings of that reverend and great preacher Mr. S. Charnock, who departed this life on Wednesday the 28 of July, 1680, and was solemnly interred the 30th following* | London: [s.n.], Printed in the year 1680. **Broadside** | **Получен полностью 2026-10-25** — EEBO-TCP `B02133.0001.001`, CC0 1.0. ~38 афоризмов, **все извлечены из sermon «The Sinfulness and Cure of Thoughts»**. См. `CONFLICT-10` и том 12 |
-| **1680** | *New Poems upon the Death of Stephen Charnock* | [не получен; идентифицирован 2026-10-25 по ODNB Greaves] | ещё один contemporaneous печатный объект 1680 года — кандидат в `CONFLICT-10`; `ARCHIVE_HOLD` |
-| **1680** | *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen Charnock, July 27, 1680* | [не получен; идентифицирован 2026-10-25] | **Contemporaneous печатное attestation даты смерти 27 июля.** WorldCat 606749756; в EEBO (ProQuest). `ARCHIVE_HOLD`; приоритет очереди — высокий |
+| **1680** | *New poems upon the death of that eminent servant of God and truly pious and learned minister of the Gospel, Mr. Stephen Charnock who departed this life July 27, 1680 / by a lover of all those who are lovers of the truth* | London, Printed by **Thomas Snowden**, Anno Dom. 1680 | **ПОЛУЧЕН полностью 2026-10-25** — EEBO-TCP `A52960.0001.001`, CC0 1.0. Элегия 130 строк + два акростиха на имя STEPHEN и CHARNOCK + эпитафия 12 строк. **Заглавие даёт 27 июля.** Содержит четыре эксклюзивных биографических сведения (см. §3C). `CONFLICT-10`, `CONFLICT-14` |
+| **1680** | *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen Charnock, July 27, 1680* | [не получен; идентифицирован 2026-10-25] | **Contemporaneous печатное attestation даты смерти 27 июля.** WorldCat 606749756; в EEBO (ProQuest). `ARCHIVE_HOLD`; приоритет очереди — высокий. Третий contemporaneous объект 1680 года с датой; два других получены полностью |
 | **1682** | *Discourses upon the existence and attributes of God* | London: Printed for D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, and Benj. Alsop | **Разрешает `CONFLICT-6`** |
 | **1683** | *A supplement to the several discourses upon various divine subjects* | London: Printed for Thomas Cockerill | — |
 | **1684** | *A discourse of divine providence* | London: printed by R. Roberts for Thomas Cockerill, at the Three Legs in the Poultrey, near the Stocks-Market | EEBO-TCP `A79420.0001.001`; см. том 08 |
 | **1685** | *A discourse of divine prouidence* | London: John Harris | Franckesche Stiftungen; ESTC |
 | **1699** | *Man's Enmity to God* + *Mercy for the Chief of Sinners* | с «Advertisement to the Reader» by Edward Veal | EEBO TCP |
 
-### Разрешение `CONFLICT-6` — *Existence and Attributes of God*: 1681–82 или 1682
+### 3C. *New Poems* 1680: редакторская стратегия и биографическое содержание
+(добавлено 2026-10-25, том 13)
+
+Памфлет *New poems upon the death of … Mr. Stephen Charnock who departed this life July 27, 1680*
+(London: Thomas Snowden, 1680; EEBO-TCP `A52960.0001.001`, CC0 1.0) — **третий contemporaneous
+печатный объект 1680 года** и второй по счёту полученный отделом полностью.
+
+**Редакторская стратегия.** Два contemporaneous объекта 1680 года дают две разные стратегии
+посмертной печати:
+
+| Объект | Стратегия | Авторство |
+|---|---|---|
+| *The sayings…* (broadside) | **отбор** чужих слов — ~38 афоризмов, все из sermon «The Sinfulness and Cure of Thoughts» | аноним, «[s.n.]» |
+| *New poems…* (памфлет) | **сочинение** своих — элегия, акростихи, эпитафия | аноним, но с самоописанием «a lover of all those who are lovers of the truth», именной импринт Thomas Snowden |
+
+Первая стратегия даёт **текст Чарнока без биографии**; вторая — **биографию без текста Чарнока**.
+
+**Биографическое содержание (все четыре пункта — эксклюзивны для отдела):**
+
+1. «To Fowler's place God call'd him to succeed» — предшественник (§3D, `CONFLICT-14`).
+2. «Did then reduce him not for any crimes, / But by an alteration of the times» — причина ухода
+   из Ирландии.
+3. «To anger he was slow for our sins past. / Upon which subject Charnock preacht the last» — тема
+   последней проповеди.
+4. «His Birth and his Beginning scarcely known» — отрицательный факт о рождении.
+
+**Богословская ценность для биографии.** Поэт утверждает, что атрибуты Божьи были для Чарнока
+**ежедневной практикой**, а не только темой: «God's great Attributes, which so perfect are, / For to
+make known his daily practice were». Это самое раннее печатное связывание Чарнока с темой
+атрибутов — за два года до *Attributes* 1682. Он же называет порядок проповеди Чарнока:
+первородный грех как основание («Thus low the building being surely laid»), затем благодать.
+
+**Литературная форма.** Элегия — 130 строк, рифмованные пятистопные ямбические двустишия
+(проверка размерa выполнена вычислительно: длины строк 9–11 слогов, медиана 10). Акростихи — 7 + 8
+строк, начальные буквы проверены вычислительно и дают **STEPHEN** и **CHARNOCK**. Эпитафия — 12
+строк, четырёхстопный ямб с рефреном. **Первое печатное акростихирование имени Чарнока.**
+
+**Разрешение `CONFLICT-6` — *Existence and Attributes of God*: 1681–82 или 1682
 
 Существует **отдельное** EEBO-TCP издание 1682 года с imprint «D. Newman, T. Cockerill, Benj. Griffin,
 T. Simmons, and Benj. Alsop». Это означает, что диапазон «1681–82» у McCosh и DNB отражает **две части
@@ -176,6 +213,7 @@ T. Simmons, and Benj. Alsop». Это означает, что диапазон 
 | **Broadside *The sayings…* 1680** (EEBO-TCP `B02133.0001.001`, **получен полностью**) | «departed this Life on **Wednesday the 28** of July, 1680, and was solemnly Interred the 30th following» |
 | **Calamy 1727, собственный текст** | «He died at London, **July the twenty-seventh** 1680, **aged fifty-two**» |
 | **ODNB (Greaves), современная статья** | «death in **Whitechapel parish on 27 July 1680**» |
+| ***New poems upon the death of … Mr. Stephen Charnock who departed this life July 27, 1680*** (элегия, акростихи, эпитафия) — EEBO-TCP `A52960.0001.001` | «who departed this life **July 27**, 1680» — **ПОЛУЧЕН полностью 2026-10-25, CC0 1.0** |
 | Wood, сноска `* 2.260` | только «1680.» — документ не назван |
 
 **Разрешение:** не разрешён, но **2026-10-25 баланс сдвинулся в пользу 27 июля**. Раньше 28 июля
@@ -193,15 +231,26 @@ T. Simmons, and Benj. Alsop». Это означает, что диапазон 
 Возможные объяснения: (а) *The sayings…* ошибается; (б) Чарнок умер ночью и разные источники
 датируют по-разному; (в) Old Style/New Style не при чём (разница 10 дней не даёт 27→28).
 
-**Итог подсчёта свидетелей (2026-10-25):** за **27 июля** — Wood 1691, Calamy 1727, DNB 1887,
-Symington 1853, McCosh 1864, ODNB (Greaves), элегия 1680 (не получена). За **28 июля** — один
-broadside 1680. То есть 28 июля остаётся **единственным** contemporaneous печатным свидетельством
-своей даты, но 27 июля имеет **семь** свидетелей, из которых один contemporaneous (элегия).
+**Итог подсчёта свидетелей (2026-10-25, после получения *New Poems*).** За **27 июля** — Wood 1691,
+Calamy 1727, DNB 1887, Symington 1853, McCosh 1864, ODNB (Greaves), элегия 1680 (не получена) и
+***New Poems* 1680 (ПОЛУЧЕН полностью)** — **восемь** свидетелей. За **28 июля** — один broadside
+1680. Заголовки **трёх** contemporaneous печатных объектов 1680 года известны отделу, и **два из трёх
+получены полностью**; оба полученных дают 27 июля.
 
-Рабочая формулировка отдела: **27 июля 1680**, с фиксацией `CONFLICT-10`. Для снятия конфликта
-требуются: (1) текст элегии 1680 с чтением титульного листа; (2) приходовой регистр St Michael's,
-Cornhill; (3) приходской регистр Whitechapel — Чарнок умер в этом приходе (по Wood), и регистр
-умерших мог бы дать точную дату; (4) page image broadside `B02133.0001.001` — сверка заголовка.
+**Изменение качества свидетельства.** *New Poems* — не просто восьмое имя в списке. Его автор прямо
+идентифицирует себя как «**a lover of all those who are lovers of the truth**», а текст адресован
+«To you his hearers», то есть **самой общине Чарнока**. Ранее можно было предполагать, что «27 июля» —
+версия окружения Джонсона и церковного establishment (Wood 1691, Calamy 1727), а «28 июля» — версия
+собственной общины. **Этого подозрения теперь нет**: contemporaneous несогласный памфлет,
+адресованный слушателям, даёт 27 июля.
+
+Рабочая формулировка отдела: **27 июля 1680**, с фиксацией `CONFLICT-10`, но теперь на ином
+основании: **два из трёх contemporaneous печатных объектов 1680 года** дают 27 июля, причём оба — из
+несогласной среды. Для снятия конфликта требуются: (1) текст элегии 1680 с чтением титульного листа;
+(2) приходовой регистр St Michael's, Cornhill; (3) приходской регистр Whitechapel — Чарнок умер в
+этом приходе (по Wood), и регистр умерших мог бы дать точную дату; (4) page images обоих полученных
+объектов (`A52960.0001.001`, `B02133.0001.001`) — сверка заглавков; (5) разрешение `CONFLICT-14`
+(Fowler ↔ Crosby Hall), которое может дать независимую хронологическую сетку.
 
 ## 4. Каноническое издание XIX века
 

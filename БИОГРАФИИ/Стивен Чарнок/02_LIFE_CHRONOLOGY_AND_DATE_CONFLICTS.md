@@ -89,6 +89,11 @@
 | 1675–1680 | Проповедует серию дискурсов, ставших *Existence and Attributes of God*; «his sun set before he had gone over half of his transcendent excellencies» | Adams & Veal | `A1` |
 | 1675–1680 | Ухудшение: падает память — читает sermons; слабое зрение — читает «through a glass»; «never looked within them» прежде | Johnson; Adams & Veal; DNB | `A1`/`B1` |
 | 1675–1680 | Жалоба congregation: sermons — «but morality or metaphysics» | Adams & Veal | `A1` |
+| **1675–1680 (или ранее)** | **Поэт 1680: «To Fowler's place God call'd him to succeed»** — единственное указание на **предшественника** Чарнока в лондонской должности. Ни Johnson, ни Adams & Veal, ни Wood, ни Calamy предшественника не называют | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив** | `A1` (печатный объект) / `B1` (утверждение) |
+| **1660** | **Причина ухода из Ирландии по поэту 1680: «Did then reduce him not for any crimes, / But by an alteration of the times»** — прямое отрицание вины; самая ранняя печатная версия | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив** | `B1` |
+| **~1628** | **Отрицательный факт: «His Birth and his Beginning scarcely known»** — в 1680 году сочувствующий поэт, пишущий слушателям, открыто заявляет, что данных о рождении нет. Внутреннее подтверждение того, что в 1680 году в среде не circulировало сведений о годе и месте рождения | **Анонимный поэт 1680 (`A52960.0001.001`)** | `B1` (утверждение об отсутствии) |
+| **1680, последняя проповедь** | **Тема: «To anger he was slow for our sins past. / Upon which subject Charnock preacht the last»** — медленность Божьего гнева, долготерпение в день благодати; и следствие: «Patiently for to bear, when we did discern / Offences given, and in our hearts to love / Our Enemies» | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив; больше нигде в отделе** | `B1` |
+| **1680** | **Два акростиха на имя STEPHEN и CHARNOCK** в лондонском памфлете — первое печатное акростихирование имени Чарнока | **Анонимный поэт 1680 (`A52960.0001.001`)** | `A1` |
 | **1680, 27 июля** | **Смерть в доме Richard Tymms, glazier, приход Whitechapel; возраст 52 года** («in the fifty-third year of his age»). Wood: «He died in the house of one Rich. Tymms a Gla∣zier in the Parish of White Chappel near London» — **место смерти есть только у Wood**. Сноска Wood `* 2.260` на эту дату — всего лишь «1680.», без документа | **Wood; DNB; Symington; McCosh; регистр** | `A1`/`B1`, но дата — `A1`-container без `A1`-документа |
 | 1680, 30 июля | Тело перенесено из Whitechapel в Crosby Hall, затем «accompanied by great numbers of the Brethren to S. Mi∣chaels Church on Cornhill»; погребено «at the bottom of the Tower under the Belfry»; funeral sermon John Johnson, Мф. 13:43 | Регистр St Michael's; **Wood; Johnson** | `A1` |
 | 1680, 30 июля | **John Johnson назван Wood «his contemporary in Emanuel and New Coll»** — независимое подтверждение, что дружба восходит к университету | **Wood 1691 (вход [429], p. 492)** | `A1` |
@@ -280,6 +285,40 @@ Morning-Exercise sermon. Разрешение: это не противореч�
 речь о разных событиях (admission vs matriculation) или одна из них — опечатка. Требуется Emmanuel
 College admissions register. До неё рабочая формулировка: **«в 1642 году принят sizar в Emmanuel
 College, Cambridge»** без дня.
+
+### `CONFLICT-14` — последняя должность: «Fowler's place» или Crosby Hall с Watson'ом
+
+| Сторона | Утверждение | Источник |
+|---|---|---|
+| Поэт 1680 | «And last of all to London then he came … **To Fowler's place God call'd him to succeed**»; община потеряла «**two** such eminent servants» | `A52960.0001.001` — **получен** |
+| Wood 1691 | тело принесено в «**Crosby house belonging to Sir Jo. Langham**», где ранее проповедовал Thomas Watson; погребение в S. Michaels Church on Cornhill | `A71277.0001.001` — получен |
+| Современный narrativ | совместное пасторство с Thomas Watson в Crosby Hall с 1675 | Wikipedia, ODNB, учебники — `C`/`D` |
+
+**Статус: НЕ РАЗРЕШЁН. Отдел фиксирует расхождение и не склеивает версии.**
+
+Чтения, не исключающие друг друга: (а) разные фазы — Fowler раньше, Crosby Hall позже, но поэт
+ставит Fowler'а в **конец**; (б) одно и то же место — «Fowler's place» = Crosby Hall, не
+подтверждено; (в) поэт неточен, хотя он обращается «To you his hearers»; (г) narrativ о Crosby
+Hall — позднейшее приписывание (Wood даёт «as I think» об издателе и лишь указывает здание).
+
+**Допустимая формулировка:** «Поэт 1680 года называет предшественника Чарнока в его последней
+лондонской должности "Fowler'ом"; этот факт не согласуется с narrativом о Crosby Hall / Watson и
+требует отдельной проверки.»
+
+**Гипотеза (B1).** Fowler = **Christopher Fowler (1610–1678)**, изгнанный по Act of Uniformity
+1662 священник Reading, затем в Лондоне «successively at Kennington and Southwark», умерший в
+Саутуарке в январе 1678 года. Основания: реальный лондонский несогласный проповедник того же
+поколения; **соавтор *The Morning Exercise at Cripplegate* 1674–6** — того сборника, где напечатан
+sermon 19 Чарнока; соавтор *The Morning Exercise against Popery preached in Southwark*, 1675.
+Если верно, Чарнок следовал за Fowler'ом в Саутуарке — и тогда «Hath God two such eminent servants
+lent? / And in so small a space call'd both away?» (Fowler, янв. 1678 → Чарнок, июль 1680, разница
+около двух с половиной лет) получает объяснение.
+
+**Проверяемые шаги:** списки проповедников в обоих *Morning Exercise*; Wilson, *History and
+Antiquities of Dissenting Churches*, vol. i (Саутуарк); Calamy, *Account*, vol. 2, статьи на
+«Fowler»; реестры конвентикул Саутуарка 1670-х.
+
+---
 
 ### `CONFLICT-12` — Wood: «His Works, vol. 2 … 1683. fol. with a Supple∣ment» — один том или два
 

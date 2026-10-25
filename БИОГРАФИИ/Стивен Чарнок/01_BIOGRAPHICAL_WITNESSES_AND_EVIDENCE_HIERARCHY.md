@@ -217,7 +217,43 @@ pp. 491–492 (EEBO-TCP page labels); *Fasti Oxonienses*, An. Dom. 1654, p. 783.
 
 ---
 
-### 2.8. Edmund Calamy — собственный текст (получен 2026-10-25, в пересказе)
+### 2.8. Анонимный поэт 1680 года — *New poems upon the death of … Mr. Stephen Charnock*
+(первоисточник №8, **добавлен 2026-10-25, том 13**)
+
+- **Полное заглавие:** *New poems upon the death of that eminent servant of God and truly pious and
+  learned minister of the Gospel, Mr. Stephen Charnock who departed this life July 27, 1680 / by a
+  lover of all those who are lovers of the truth.*
+- **Год:** 1680
+- **Imprint:** London, Printed by **Thomas Snowden**, Anno Dom. 1680.
+- **EEBO-TCP:** `A52960.0001.001` — **полный текст получен**, CC0 1.0.
+- **Содержание:** элегия 130 строк в рифмованных пятистопных двустишиях; **два акростиха на имя
+  STEPHEN и CHARNOCK**; эпитафия 12 строк. Начальные буквы акростихов проверены вычислительно.
+- **Адресат:** «To you his hearers» — поэт пишет **слушателям Чарнока**, то есть изнутри общины.
+- **Самоописание автора:** «a lover of all those who are lovers of the truth» — **явная
+  самоидентификация в несогласной среде**.
+
+**Эксклюзивные сведения, которых нет больше ни в одном источнике отдела:**
+
+| Сведение | Дословно | Значение |
+|---|---|---|
+| **Предшественник** | «To **Fowler's place** God call'd him to succeed» | единственное указание на то, что Чарнок сменил конкретного человека в должности |
+| **Причина ухода из Ирландии** | «Did then reduce him **not for any crimes**, / But by an **alteration of the times**» | самое раннее печатное объяснение; прямо отрицает вину Чарнока |
+| **Тема последней проповеди** | «To anger he was slow for our sins past. / Upon which subject **Charnock preacht the last**» | единственное в отделе указание темы последней проповеди |
+| **Отрицательный факт о рождении** | «His Birth and his Beginning **scarcely known**» | в 1680 году сочувствующий поэт открыто пишет, что данных о рождении нет |
+
+**Статус.** `evidenceClass = A1` как печатный объект 1680 года; как источник биографических
+утверждений — **`B1`** (анонимный поэт, пишущий со слов общины). `accessState = full text`.
+`locatorState = checked` (лист ненумерованный; узлы `1:1`, `1:2`). **Wing-номер не определён.**
+
+**Ограничение.** Поэт **не упоминает Crosby Hall и не упоминает Thomas Watson вообще**, хотя его
+последняя должность по нему — «Fowler's place». Это расходится с narrativом о Crosby Hall и
+зафиксировано отдельно как `CONFLICT-14` в томе 02. Гипотеза идентификации Fowler'а с Christopher
+Fowler'ом (1610–1678), изгнанным саутуаркским проповедником и соавтором того же *Morning Exercise
+at Cripplegate* 1674–6, где напечатан sermon 19 Чарнока, — **`B1`, не подтверждена**.
+
+---
+
+### 2.9. Edmund Calamy — собственный текст (получен 2026-10-25, в пересказе)
 
 Calamy, *An Account of the Ministers … Ejected or Silenced after the Restoration in 1660* / *A
 Continuation of the Account …* (1702–1727). Полный том отделом **не получен**, но собственные слова
@@ -254,7 +290,7 @@ Calamy теперь зафиксированы по цитате (curiosmith, 20
    относительно Morning-Exercise sermon.
 5. Calamy подтверждает: посмертное — «two volumes in folio», что совпадает с Wood (1682 + 1683).
 
-### 2.9. Oxford DNB (Richard L. Greaves) — современная сводка с новыми деталями (2026-10-25)
+### 2.10. Oxford DNB (Richard L. Greaves) — современная сводка с новыми деталями (2026-10-25)
 
 Современная статья *Dictionary of National Biography* (Oxford), ст. «Charnock, Stephen (1628–1680),
 nonconformist minister», автор **Richard L. Greaves**. Класс `B1` (качественная современная вторичка с
