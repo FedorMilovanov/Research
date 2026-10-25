@@ -159,6 +159,23 @@ the Morning Exercise at Cripplegate*:
 страницы. Отдел фиксирует: `evidenceClass = A1` как печатный объект 1680 года, но **содержание —
 производное от sermon**, а не независимый текст.
 
+**Добавление 2026-10-25 (том 03 §3D): sermon теперь доступен в `A1`-издании 1683 года.** EEBO-TCP
+`A32724.0001.001` (*A supplement to the several discourses upon various divine subjects*, Wing
+C3711C, 158 pp.) **перепечатывает** «A DISCOURSE OF THE Sinfulness and Cure OF THOUGHTS» (Быт. 6:5)
+**с печатной стр. 1**. Дословное совпадение с broadside проверено на первом же абзаце:
+
+> Broadside: «ONE would scarce imagin such an inward nest of wickedness **as is in a natural man**;
+> but God hath af∣firmed it: and if **the sinner** should deny it, his own heart would give him the
+> lye.»
+> *Supplement* 1683, стр. 1: «One would scarce imagine such an inward nest of wickedness; but God
+> hath affirmed it; and if any man should deny it, his own heart would give him the lye.»
+
+То есть broadside даёт текст с **редакторским расширением** («as is in a natural man» вместо «any
+man») — выборка не механическая копия, а **правленая** версия sermon. Это меняет постраничную
+колляцию: теперь афоризмы broadside сверяются не с репринтом 1844, а с **изданием 1683 года с
+печатной пагинацией**, что даёт двойной локатор (1680 broadside + 1683 *supplement*) без посредства
+XIX века.
+
 ### 3.1. Почему это важно для биографии
 
 Broadside вышел в 1680 году — то есть в дни или недели после смерти. Издатель выбрал для

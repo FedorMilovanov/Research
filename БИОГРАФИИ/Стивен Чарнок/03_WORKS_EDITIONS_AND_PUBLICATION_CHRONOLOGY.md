@@ -148,10 +148,57 @@ Wood, *Athenæ Oxonienses* vol. II, вход [429], p. 491 (EEBO-TCP `A71277.000
 | **1680** | *New poems upon the death of that eminent servant of God and truly pious and learned minister of the Gospel, Mr. Stephen Charnock who departed this life July 27, 1680 / by a lover of all those who are lovers of the truth* | London, Printed by **Thomas Snowden**, Anno Dom. 1680 | **ПОЛУЧЕН полностью 2026-10-25** — EEBO-TCP `A52960.0001.001`, CC0 1.0. Элегия 130 строк + два акростиха на имя STEPHEN и CHARNOCK + эпитафия 12 строк. **Заглавие даёт 27 июля.** Содержит четыре эксклюзивных биографических сведения (см. §3C). `CONFLICT-10`, `CONFLICT-14` |
 | **1680** | *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen Charnock, July 27, 1680* | [не получен; идентифицирован 2026-10-25] | **Contemporaneous печатное attestation даты смерти 27 июля.** WorldCat 606749756; в EEBO (ProQuest). `ARCHIVE_HOLD`; приоритет очереди — высокий. Третий contemporaneous объект 1680 года с датой; два других получены полностью |
 | **1682** | *Discourses upon the existence and attributes of God* | London: Printed for D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, and Benj. Alsop | **Разрешает `CONFLICT-6`** |
-| **1683** | *A supplement to the several discourses upon various divine subjects* | London: Printed for Thomas Cockerill | — |
+| **1683** | *A supplement to the several discourses upon various divine subjects* | London: Printed for Thomas Cockerill | **Содержание получено 2026-10-25** — EEBO-TCP `A32724.0001.001`, Wing **C3711C**, ESTC R24823, 158 pp. **Перепечатывает «The Sinfulness and Cure of Thoughts» с стр. 1** — единственную прижизненную публикацию Чарнока |
 | **1684** | *A discourse of divine providence* | London: printed by R. Roberts for Thomas Cockerill, at the Three Legs in the Poultrey, near the Stocks-Market | EEBO-TCP `A79420.0001.001`; см. том 08 |
 | **1685** | *A discourse of divine prouidence* | London: John Harris | Franckesche Stiftungen; ESTC |
 | **1699** | *Man's Enmity to God* + *Mercy for the Chief of Sinners* | с «Advertisement to the Reader» by Edward Veal | EEBO TCP |
+
+### 3D. Оглавление фолианта 1682 и *supplement* 1683 (добавлено 2026-10-25)
+
+Получены оглавления обоих первых изданий главного труда. Они дают **страницы и библейские тексты
+всех дискурсов** — то есть печатные локаторы, которых отдел до этого не имел.
+
+**Фолиант 1682 (`A32723.0001.001`, узел `1:3`, дословно):**
+
+| Стр. | Дискурс | Текст |
+|---|---|---|
+| 1. & 47. | THE Existence of God, and Practical Atheism | Psal. 14.1 |
+| 109. & 129. | God a Spirit, and Spiritual Worship | John 4.24 |
+| 179. | The Eternity of God | Psal. 90.2 |
+| 203. | The Immutability of God | Psal. 102.26, 27 |
+| 241. | The Omnipresence of God | Jer. 23.24 |
+| 272. | God's Infinite Knowledge | Psal. 147.5 |
+| 341. | God's Infinite Wisdom | Rom. 16.27 |
+| 417. | God's Infinite Power | Job 26.14 |
+| 493. | God's Infinite Holiness | Exod. 15.11 |
+| 577. | God's Infinite Goodness | Mark 10.18 |
+| 697. | The Dominion of God | Psal. 103.19 |
+| **787** | **God's Infinite Patience** | **Nahum 1.3** |
+
+**Содержание `A32723.0001.001` (узлы):** title page → TO THE READER → The several Discourses in
+this Volume → 14 дискурсов (`1:4`–`1:17`) → A TABLE OF THE Places of Scripture Explained → THE
+INDEX → ERRATA.
+
+**`A supplement…` 1683 (`A32724.0001.001`, 158 pp., узлы `1:1`–`1:14`):** title page →
+**A DISCOURSE OF THE Sinfulness and Cure OF THOUGHTS** (Быт. 6:5, со стр. 1) → The Churches
+Stability → The Fifth of November → Delight in Prayer → Mourning for other Mens Sins → The Comfort
+of Child-bearing Women → The Sins of the Regenerate → The Pardon of Sin → THE INDEX OF THE Principal
+Matters contain'd in the Discourse of DIVINE PROVIDENCE → A TABLE at the Scriptures Explained in the
+DISCOURSE of DIVINE PROVIDENCE → A TABLE OF THE Places of Scripture Explained in this BOOK → THE
+INDEX → ERRATA.
+
+**Три следствия.**
+
+1. **Элегия 1680 подтверждена печатными локаторами.** Её сноска d = Пс. 14:1 = дискурс
+   «Practical Atheism», стр. 1 и 47; сноска e = Наум 1:3 = дискурс «God's Infinite Patience»,
+   **стр. 787** — последний дискурс фолианта. См. том 14 §4A.
+2. **`CONFLICT-15` (новый): два sermon'а элегии не размечены.** Сноска b = **Ин. 16:9** и сноска
+   c = **Ин. 17:3**. В фолианте 1682 и в *supplement* 1683 дискурсов на эти тексты нет. Это
+   единственный contemporaneous указатель на неопознанные sermon'ы Чарнока, и он даёт два библейских
+   текста как прицел для поиска.
+3. **Broadside 1680 теперь может быть сверен с `A1`-текстом 1683 года**, а не только с репринтом
+   1844: *supplement* 1683 перепечатывает «The Sinfulness and Cure of Thoughts» со стр. 1, и
+   дословное совпадение проверено — см. том 12.
 
 ### 3C. *New Poems* 1680: редакторская стратегия и биографическое содержание
 (добавлено 2026-10-25, том 13)

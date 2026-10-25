@@ -69,7 +69,8 @@
 | **1649, ~26 мая — 1650, лето** | **По ODNB (Greaves): chaplain в полке Colonel Thomas Harrison'а, служба в Уэльсе** — заполняет пробел, который отдел вёл как «частная семья: не установлено» | ODNB (Greaves), по цитате | `B1`, гипотеза |
 | **1680, после смерти** | Broadside *The sayings…* — ~38 афоризмов, **все из sermon 6:5**; заголовок даёт «Wednesday the 28 of July» | EEBO-TCP `B02133.0001.001` | `A1` |
 | **1680, первое издание** | *A treatise of divine providence* (`A32726.0001.001`, Wing C3712): титульный лист с эпиграфом **Пс. 103:19 «His Kingdom Ruleth over all»**, лист «Advertisement» («will be Attested by Mr. Edward Veal, and Mr. Richard Adams»), эпистол «TO THE READER» | **EEBO-TCP, CC0-статус под вопросом** | `A1` |
-| **1682** | *Several discourses upon the existence and attributes of God* — титульный лист **M DC LXXXII**; imprint D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, Benj. Alsop | **EEBO-TCP `A32723.0001.001`, Wing C3711** | `A1` |
+| **1682** | *Several discourses upon the existence and attributes of God* — титульный лист **M DC LXXXII**; оглавление даёт **страницы и тексты всех 14 дискурсов**; последний — «God's Infinite Patience», **Наум 1:3, стр. 787** | **EEBO-TCP `A32723.0001.001`, Wing C3711** | `A1` |
+| **1683** | *A supplement…* (Wing C3711C, 158 pp.) **перепечатывает «The Sinfulness and Cure of Thoughts» со стр. 1** — единственную прижизненную публикацию | **EEBO-TCP `A32724.0001.001`** | `A1` |
 | **1680, после смерти** | *New poems upon the death of … Mr. Stephen Charnock who departed this life **July 27**, 1680* — элегия 130 строк, два акростиха на имя **STEPHEN** и **CHARNOCK**, эпитафия 12 строк; автор «a lover of all those who are lovers of the truth», адресат «To you his hearers» | **EEBO-TCP `A52960.0001.001`, CC0 1.0 — ПОЛУЧЕН полностью** | `A1` |
 | **1675–1680 (или ранее)** | Поэт 1680: «**To Fowler's place God call'd him to succeed**» — единственное указание на предшественника; вместе со строкой «Hath God two such eminent servants lent?» | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив** | `B1` |
 | **~1660** | Причина ухода из Ирландии: «Did then reduce him **not for any crimes**, / But by an **alteration of the times**» — самое раннее печатное объяснение, прямо отрицает вину | **Анонимный поэт 1680 — эксклюзив** | `B1` |
@@ -242,9 +243,17 @@
 22. **Прочитать фолиант 1682 (`A32723.0001.001`) целиком** — 866 страниц, и он содержит главный
     труд Чарнока в первом издании. Это даст постраничные локаторы для всех quote-card кандидатов
     и позволит сверить Nichol 1864 с первым изданием.
-23. **Сверить пять sermon'ов элегии с фолиантом 1682** — 2 Пар. 16:9; Ин. 16:9; Ин. 17:3;
-    Пс. 14:1; Наум 1:3. Если все пять найдутся в фолианте 1682, contemporaneous аттрибуция
-    получит печатные локаторы. — по другим элегиям 1680 года, где Пюл и
+23. **Сверить пять sermon'ов элегии с фолиантом 1682** — ~~2 Пар. 16:9; Ин. 16:9; Ин. 17:3;
+    Пс. 14:1; Наум 1:3~~ — **выполнено 2026-10-25**. Результат: **Пс. 14:1 подтверждён**
+    (стр. 1 и 47, «Practical Atheism»); **Наум 1:3 подтверждён** (стр. 787, «God's Infinite
+    Patience»); **2 Пар. 16:9 подтверждён косвенно** (текст трактата Providence); **Ин. 16:9 и
+    Ин. 17:3 НЕ НАЙДЕНЫ** — новый `CONFLICT-15`. См. том 14 §4A.
+24. **Искать sermon'ы Чарнока на Ин. 16:9 и Ин. 17:3** — единственные contemporaneous указания на
+    неопознанные sermon'ы (сноски b и c элегии 1680). Возможные места: второй фолиант *His Works
+    vol. 2* 1683 (в EEBO-TCP как отдельный объект не размещён), рукописи, Calamy.
+25. **Сверить ~38 афоризмов broadside с *supplement* 1683** (`A32724.0001.001`, стр. 1 и далее), а
+    не с репринтом 1844. Дословное совпадение на первом абзаце уже проверено; broadside даёт
+    **правленую** версию sermon («as is in a natural man» вместо «any man»). — по другим элегиям 1680 года, где Пюл и
     Чарнок названы рядом.
 
 ---

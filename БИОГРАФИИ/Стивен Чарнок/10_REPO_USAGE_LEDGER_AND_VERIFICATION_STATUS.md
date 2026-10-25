@@ -38,6 +38,9 @@ Nichol 1864. Ниже — полная карта с оценкой.
   `СЕРИЯ СЕРДЦЕ/27_WEB_VERIFICATION_SOURCES_AND_LEDGER.md` §4 (статус **A**).
 - **Указанный источник:** *Discourse on Practical Atheism*, Monergism HTML, **lines 82–84** в web
   extraction, opening Psalm 14:1 exposition.
+- **Печатный локатор первого издания:** *Several discourses upon the existence and attributes of
+  God* (Lond., 1682), **стр. 1 и 47** — «THE Existence of God, and Practical Atheism; from
+  Psal. 14.1». Установлено 2026-10-25 по оглавлению `A32723.0001.001`.
 - **Функция:** показать разрыв между правильной идеей о Боге и практическим отношением сердца.
 - **Предохранитель корпуса:** «не использовать это как ярлык для всякой слабости… Устойчивый
   practical atheism — это не единичное согрешение с покаянием, а практическая схема жизни».
@@ -58,6 +61,15 @@ firm grounds did he God's Being lay, / And leave the Atheist nothing more to say
 Monergism. `evidenceClass` цитаты остаётся `A2` (текст взят из цифровой копии), но
 `locatorState` получает **contemporaneous якорь**: «sermon на Пс. 14:1, аттрибуцирован в 1680».
 Требуемое действие остаётся: привести к странице Nichol 1864 vol. 1.
+
+**Добавление 2026-10-25 (том 03 §3D): печатный локатор получен — в первом издании.** Оглавление
+фолианта 1682 (`A32723.0001.001`, узел `1:3`) даёт: «Page 1. & 47. THE Existence of God, and
+Practical Atheism; **from Psal. 14.1**.» То есть дискурс, являющийся источником
+`CHARN_PRACT_ATHEISM_001`, напечатан в **первом издании** на страницах **1 и 47**. Это печатный
+локатор contemporaneous издания, независимый от репринта 1844 и от Monergism. `locatorState`
+поднимается с `unverified` до **`checked` в отношении первого издания 1682** (стр. 1 и 47);
+`LOCATOR_HOLD` в отношении Nichol 1864 **сохраняется**, потому что цифровая копия, из которой
+взята цитата, — репринт XIX века, а не первое издание.
 
 ### 3.2. Two-state diagnostic — prevalency of corrupt habit vs. predominancy of gracious habit
 
