@@ -1395,9 +1395,8 @@ ch. 7 (сноска 1.19 дискурса о бытии Божьем). Тепе�
 Герхард **×3**, Воэций **×3**, Турретин **×3**, Дайе **×6**, Креллий **×5**, Калвервел **×1**,
 Фичино **×1** (+1 в дискурсе о знании), Шаррон **×2** (два разных сочинения), Лоусон **×2**.
 
-**Полнота.** Прочитано **тринадцать дискурсов фолианта из 14**: `1:4`–`1:9`, `1:10`, `1:11`,
-`1:12` (мудрость — §0Q), **`1:13` (сила — §0R)**, `1:14` (святость — §0S), `1:15` (благость —
-§0T), `1:17` — **2312 сноски**. Остался один: `1:16` (владычество). `LOCATOR_HOLD`.
+**Полнота.** Прочитаны **все 14 дискурсов фолианта из 14**: `1:4`–`1:17` — **2343 сноски**. См.
+§0U (владычество — последний дискурс). `LOCATOR_HOLD` сохраняются по отдельным именам.
 
 ### 0Q. «A DISCOURSE UPON THE Wisdom of God» — десятый дискурс: Гомарус, Стеуко, Чарльтон,
 ### Лауд против иезуита, Бредвардин и Сеаман, чья смерть открыла Чарноку дверь
@@ -1520,7 +1519,8 @@ declaration of the whole contexture is reserved for the other World».
 
 **Полнота.** Прочитано **тринадцать дискурсов фолианта из 14**: `1:4`–`1:13`, `1:14`, `1:15`,
 `1:12` (мудрость), `1:13` (сила — §0R), `1:14` (святость — §0S), `1:15` (благость — §0T), `1:17` —
-**2312 сноски**. Остался один: `1:16` (владычество). `LOCATOR_HOLD`.
+**Полнота.** Прочитаны **все 14 дискурсов фолианта из 14**: `1:4`–`1:17` — **2343 сноски**. См.
+§0U (владычество — последний дискурс). `LOCATOR_HOLD` сохраняются по отдельным именам.
 
 ### 0R. «A DISCOURSE UPON THE Power of God» — одиннадцатый дискурс: Креллий на силе,
 ### Савонарола, Ле Фоше, Гамаш и «пятничный» этимологический этюд (добавлено 2026-10-25)
@@ -1650,8 +1650,8 @@ Greek in the Temple, p. 57.**» — то есть сокращение, кото
 Шаррон ×2, Лоусон ×2, Фотерби ×3. Новые лица: **Мюнстер, Друзий, Скалигер, Эстиус, Бекан,
 а Лапиде, Кэмден, Кейпел, Максим Тирский, Гермес Трисмегист**.
 
-**Полнота.** Прочитано **тринадцать дискурсов фолианта из 14**: `1:4`–`1:13`, `1:14`, `1:15`,
-`1:17` — **2312 сноски**. Остался один: `1:16` (владычество, с подузлом `1:16.1` «The USE»).
+**Полнота.** Прочитаны **все 14 дискурсов фолианта из 14**: `1:4`–`1:17` — **2343 сноски**. См.
+§0U (владычество — последний дискурс). `LOCATOR_HOLD` сохраняются по отдельным именам.
 `LOCATOR_HOLD`.
 ### 0S. «A DISCOURSE UPON THE Holiness of God» — двенадцатый дискурс: песнь Моисея,
 ### разрешение греха и Уильям Эймс (добавлено 2026-10-25)
@@ -1755,9 +1755,8 @@ spoken of before, but it is necessary now**») это **третья** само�
 | 1.159 | «Amor naturam induit & mores imbibit rei ama∣t••e.» | латинская максима без атрибуции | «люовь облекается в природу и впитывает нравы любимой вещи» |
 | 1.115 | «Psal. 12.8. **The vilest m••••. 〈 in non-Latin alphabet 〉〈 in non-Latin alphabet 〉**» | греческая цитата о том, что подлые возвышаются | |
 
-**Полнота.** Прочитано **двенадцать дискурсов фолианта из 14**: `1:4`–`1:14`, `1:17` — **1808
-сноски**. Остались два: `1:15` (благость), `1:16` (владычество, с подузлом `1:16.1` «The USE»).
-`LOCATOR_HOLD`.
+**Полнота.** Прочитаны **все 14 дискурсов фолианта из 14**: `1:4`–`1:17` — **2343 сноски**. См.
+§0U (владычество — последний дискурс). `LOCATOR_HOLD` сохраняются по отдельным именам.
 
 ### 0T. «A DISCOURSE UPON THE Goodness of God» — тринадцатый дискурс: 504 сноски, Гермес
 ### Трисмегист в «Поимандре», Камерон против волюнтаризма, Херл и Инджело (добавлено 2026-10-25)
@@ -1848,9 +1847,124 @@ being an unnecessary shedder of his Blood»); затем утешение в м�
 платоник, романс которого защищал теократию и критиковал Гоббса (персонаж Антифей — «хоббсианец»).
 Чарнок — **нонконформист под Clarendon Code** — цитирует его по книге 4. Для Части I: аппарат
 фолианта не ограничен единомышленниками; в нём есть и роялисты, и платоники, и иезуиты.
+**Полнота.** Прочитаны **все 14 дискурсов фолианта из 14**: `1:4`–`1:17` — **2343 сноски**. См.
+§0U (владычество — последний дискурс). `LOCATOR_HOLD` сохраняются по отдельным именам.
 
-**Полнота.** Прочитано **тринадцать дискурсов фолианта из 14**: `1:4`–`1:15`, `1:17` — **2312
-сноски**. Остался один: `1:16` (владычество, с подузлом `1:16.1` «The USE»). `LOCATOR_HOLD`.
+### 0U. «A DISCOURSE UPON GODS Dominion» — четырнадцатый, последний дискурс: фолиант прочитан
+### целиком; «ни одна пуля не вылетит без воли Божьей»; Гудвин, Мед, Маковий, Рено (добавлено
+### 2026-10-25)
+
+**Объект.** Узел `A32723.0001.001/1:16` (и подузел `1:16.1` «The USE») фолианта 1682 —
+**«A DISCOURSE UPON GODS Dominion»**, Пс. 103:19 («**The Lord hath prepared his Throne in the
+Heavens: And his Kingdom Ruleth over all**»), страницы **697–786**, **31 сноска** — самый малый
+аппарат фолианта. С этим дискурсом **все 14 дискурсов фолианта прочитаны целиком**; итого по
+корпусу **2343 сноски**.
+
+**Что в тексте.** Чарнок строит учение о **трёхчастном владычестве**: (1) естественное — «absolute
+over all Creatures, and is founded in the Nature of God as Creator»; (2) духовное/благодатное — над
+церковью как искупленной, «founded in the Covenant of Grace»; (3) славное царство при
+окончании всего. Схема: четыре общих положения (о различии **мощи и власти**, о том, что все
+атрибуты относятся к владычеству, о его всеобщем признании, о неотделимости от понятия о Боге),
+затем основания владычества (превосходство природы, **творение**, конечная причина, сохранение,
+благодеяния), затем его природа и проявления, затем — применения.
+
+**ГЛАВНАЯ СХОЛАСТИЧЕСКАЯ РАЗНИЦА ДИСКУРСА — МОЩЬ И ВЛАСТЬ.**
+
+> «We commonly mean by the Power of God the strength of God, whereby he is able to effect all his
+> purposes. By the Authority of God, we mean the right he hath to act what he pleases. **Omnipotence
+> is his Physical power**, whereby he is able to do what he will. **Dominion is his moral Power**,
+> whereby it is lawful for him to do what he will.»
+
+То есть всемогущество — физическая сила, владычество — **моральное право**. Атрибут, ради
+которого существует вся книга, противопоставлен атрибуту силы (§0R) как право — возможности. Для
+Части III это редкий случай, когда Чарнок выходит на уровень точной схоластической дефиниции.
+
+**АБСОЛЮТНОЕ ВЛАДЫЧЕСТВО И ПРАВО БОЖЬЕ — САМОЕ РИСКОВАННОЕ МЕСТО ФОЛИАНТА.** В подузле
+`1:16.1` Чарнок проводит, что «**unequal dispensations are acts of his Soveraignty**»: «By this he
+gives sometimes the worst of men an Ocean of wealth and honor to swim in, and reduceth an useful
+and exemplary grace to a scanty poverty. **By this he Rules the Kingdoms of men, and sets a Crown
+upon the head of the basest of men, Dan. 4.17.** While he deposeth another, that seem'd to deserve
+a weightier Diadem». Далее — горшечный аргумент (Иер. 18:6, Рим. 9:21): «**Some say by this right of
+Soveraignty he may inflict what torments he pleaseth upon an innocent person; which indeed will not
+bear the nature of a punishment as an effect of Justice, without the supposal of a crime; but a
+torment, as an effect of that Soveraign right he hath over his Creature, which is as absolute over
+his work, as the Potters power is over his own Clay**.» И далее — слепорожденный (Ин. 9:3) и больной
+(Иак. 5:15) как скорби, «sent without any particular respect to that desert, meerly for the
+manifestation of God's Glory». Это ближайшее приближение Чарнока к позиции абсолютного декрета во
+всём корпусе, и оно опирается на **Рим. 9:21** — классический текст.
+
+**ПОЛИТИЧЕСКИЙ ПИК ФОЛИАНТА — И ВООБЩЕ САМОЕ ПРЯМОЕ МЕСТО КОРПУСА.** Применение шестое:
+
+> «'Tis a comfort against the projects of the Churches adversaries in times of publick commotions.
+> The consideration of the Divine soveraignty may arm us against the threatnings of mighty ones, and
+> the menaces of persecutors. God hath Autho∣rity above the Crowns of men, and a Wisdom superior to
+> the cabals of men. None can move a step without him, he hath a negative voice upon their
+> Counsels… **Not a bullet can be discharg'd, nor a Sword drawn, a wall battered, nor a person
+> dispatcht out of the world without the leave of God, by the mightiest in the World.**»
+
+Для Части I (Исторический контекст) это **ключевая цитата**: в 1682 году, при Карле II, внегосударственный
+нонконформист говорит пастве, что у короны нет власти выше Божьей и что **ни одна пуля не вылетит
+без воли Божьей**. Рядом — «Saul cools the hearts of…» (о Сауле) и общая линия о непоколебимости
+церкви.
+
+**ГРАЖДАНСКОЕ НЕПОВИНОВЕНИЕ — ПРЯМО.** Поучение о повиновении требует **единственного** повиновения:
+
+> «We are order'd to serve him only, Matt. 4.10… **When God commands, if the highest power on earth
+> countermands it, the Precept of God must be preferred before the countermand of the creature.
+> Act. 4.18, 19.** Whither it be right in the sight of God, to hearken unto you more than unto God,
+> judge ye. **We must never give place to the Au∣thority of all the Monarchs in the World, to the
+> prejudice of that obedience we owe to the Supream Monarch of Heaven and Earth: this would be, to
+> place the Throne of God at the foot-stool of man.**»
+
+И отдельно — о несправедливых законах: «**The Laws of man are not to be Universally obey'd: some
+may be oppressing and unjust; No man hath Authority to make an unjust Law, and no subject is bound
+to obey an unrighteous Law**; but God being a Righteous Soveraign, there is not one of his Laws but
+doth necessarily oblige us to Obedience.» Это доктринальное основание позиции нонконформистов при
+Clarendon Code, изложенное в книге об атрибутах Божьих.
+
+**Аппарат (31 сноска) — новые имена и новые работы:**
+
+| Сноска | Ссылка (дословно) | Автор / сочинение | Примечание |
+|---|---|---|---|
+| 1.1 | «Amyrald. in loc.» | Амиро | итого **×52** |
+| 1.2, 1.3 | «**Maccov. Colleg. Theolog. 10. Disput. 18. p. 6, 7.**» и «**M••••••ii Colleg. Theolo••. Disp. 18. p. 12, 13.**» | **Маковий** (Maccovius, польский реформатский богослов), ***Collegia theologica***, диспут 18 | **новое лицо**; вторая сноска — тот же труд, имя стёрто |
+| 1.4 | «〈◊〉〈◊〉. Th••olog Nat. pag. 757.» | *Theologia naturalis*, стр. 757 — вероятно, **Рено** (ср. 1.8 и 1.29) | `LOCATOR_HOLD` |
+| 1.5 | «**Ca••••••••. p. ••••1 A•••••••••• Dissert p. 72, 73.**» | стёрто | `LOCATOR_HOLD` |
+| 1.6 | «**Stoughton Righteous Mans Plea, Serm. 6. p. 28.**» | **Статон**, английский пуританин, «The Righteous Mans Plea», проповедь 6 | **новое лицо**; `LOCATOR_HOLD` по точному имени |
+| 1.7, 1.10, 1.22 | «Vid. Lessium de perfect. Divin.»; «Lessius de perfect. Divin. p. 66. 67.»; «Lessius de perfect. divin. lib. 10. p. 65.» | **Лессий** | итого **×22** |
+| 1.8, 1.29 | «**Raynaud. Theolog. Natural. p. 760, 761, 762.**»; «Raynard de Deo p. 766.» | **Евсевий Рено** (Eusebius Raynaudus, S.J., 1594–1663), ***Theologia naturalis*** | **новое лицо**, иезуит |
+| 1.9 | «**Sueton. de Ti∣berio cap. 27.**» | **Светоний**, «Жизнь Тиберия», гл. 27 | **новое лицо** — античный историк в аппарате фолианта |
+| 1.11, 1.21 | «**Causin Poly-Histor. lib. 4. cap. 22.**»; «Causin, symb. lib. 2. cap. 65.» | **Николя Коссен** (1583–1651, S.J.), ***Polyhistor symbolicus*** | **новое лицо** |
+| 1.12 | «Suarez. vol. 2. lib. 8. cap. 20. p. 736.» | Суарес | итого **×15** |
+| 1.13 | «**Bolduc. in loc.**» | «Bolduc» | **новое лицо**, `LOCATOR_HOLD` |
+| 1.14 | «Suarez. de Legib. p. 23.» | Суарес | |
+| 1.15 | «Amyrald. dissert. p. 101, 102.» | Амиро | |
+| 1.16 | «Dalle in loc.» | Дайе | итого **×17** |
+| **1.17** | «**This was Dr. Goodwins Speech when he was in trou∣ble.**» | **ТОМАС ГУДВИН** (1600–1680), президент Магдалин-колледжа, Оксфорд | **ВТОРОЕ ПОЯВЛЕНИЕ ГУДВИНА В КОРПУСЕ, И САМОЕ ВАЖНОЕ.** В §0C (`1:11`) Гудвин появлялся как **противник Кендалла**; здесь Чарнок приводит **его собственные слова**, произнесённые «когда он был в беде». Слово Чарнока — «This was Dr. Goodwins Speech», то есть **цитата**, а не упоминание. Петля цепи лиц: Гудвин — самый большой из «пятерых независимых богословов» 1643 года, соавтор *Savoy Declaration*, человек, которого Чарнок **цитирует как авторитет** |
+| 1.18 | «**Claudes sur la parabole des Noces p. 29.**» | **Клод**, французский реформатский богослов, трактат «о притче о брачном пире» | **новое лицо**, `LOCATOR_HOLD` по имени |
+| 1.19 | «**Mr. Mede in one of his Let∣ters.**» | **Джозеф Мед** (1586–1638), библеист и апологетик, его письма | **новое лицо**; Мед — один из самых влиятельных английских милленаристов, Correspondent Лейдена и Хардвика |
+| 1.20 | «Josephus.» | Иосиф Флавий | |
+| 1.23 | «Munster.» | Мюнстер | |
+| 1.24, 1.25 | «Trap. in loc.»; «Trap. in loc.» | **Джон Трапп** — второй и третий раз | итого **×3** |
+| 1.26 | «**Faucheur vol. 2. p. 663. 664.**» | **Мишель Ле Фоше** — четвёртый локатор | итого **×4** |
+| 1.27 | «Austin.» | Августин | |
+| 1.28 | «**Chrysost. in Gen. Hom. 16.**» | Иоанн Златоуст, беседы на Бытие, гомилия 16 | |
+| 1.30 | «**Arrian in Epicter.**» | **Арриан** о **Эпиктете** | **новое лицо** — стоический моралист |
+| 1.31 | «**Servire deo regnare est.**» | латинская максима («служить Богу — значит царствовать»), без атрибуции | |
+
+**ГУДВИН И МЕД — ЦЕПЬ ЛИЦ.** Гудвин теперь в корпусе **дважды**, и во второй раз — как **цитируемый
+авторитет**, а не как противник. Мед впервые, но он — одна из центральных фигур английской
+апокалиптики, и его письма Чарнок читал. Для тома 17 (цепь лиц) и Части III это два новых узла
+эммануэльской и нонконформистской традиции, причём оба — **оксфордско-кембриджские академики**, а
+не только проповедники.
+
+**ФОЛИАНТ ПРОЧИТАН ЦЕЛИКОМ.** Все 14 дискурсов (`1:4`–`1:17`) и оба подузла (`1:13.1` «Ʋses»,
+`1:16.1` «The USE»), **2343 сноски**. С этим читается и заключительная часть аппарата: таблица
+Писания (`1:18`), указатель (`1:19`) и **опечатки (`1:20`)**.
+
+**Полнота.** Прочитаны **все 14 дискурсов фолианта из 14**: `1:4`–`1:17` — **2343 сноски**. Ни
+одного дискурса не осталось непрочитанным. `LOCATOR_HOLD` сохраняются по отдельным именам (см.
+список в томе 16 §4.2).
 
 ## 1. Проверяемый вопрос
 
