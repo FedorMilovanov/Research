@@ -145,6 +145,50 @@ Calamy объясняет причину: «his Disadvantagious Way of Reading w
 существовали в виде **заметок**, а не заученных текстов (см. том 03 §3D и том 08). Замеченная
 черта не противоречит корпусу, а **согласуется** с ним.
 
+#### 0B.1. ПРИЧИНА НАЙДЕНА — Calamy 1727, стр. 81 (добавлено 2026-10-25)
+
+В приписке к той же статье (*A Continuation of the Account*, London 1727, стр. 81, пометка
+«Pag. 56. Mr. Stephen Charnock, B. D.») Calamy даёт недостающее звено. Дословно:
+
+> «**His Library was burnt in the Fire of London.** It was only in his **latter Years, when his
+> Memory began to fail him, that he penn'd and read his Sermons verbatim: But in his younger
+> Days, he us'd no Notes in the Pulpit.**»
+
+Тот же отрывок даёт ещё один эксклюзив — оценку Чарнока как гебраиста и грециста:
+
+> «Mr. Johnson's Funeral Sermon for him was on Mat. xiii. 43. He (who had been acquainted with him
+> thirty-six Years) gave him an excellent Character; and among other Things said, that **he never
+> knew a Man in all his Life, that had attaind near unto that Skill that Mr. Charnock had, in the
+> Originals of the Old and New Testament**, except Mr. **Thomas Gataker**.»
+
+**Механизм, собираемый из двух записей одного свидетеля (1713 и 1727):**
+
+| Период | Как Чарнок проповедовал | Следствие |
+|---|---|---|
+| **Молодость** | «us'd **no Notes** in the Pulpit» — проповедь без бумаги | репутация сильного оратора |
+| **Последние годы (= Crosby Hall, 1675–1680)** | память «began to fail him» → «**penn'd and read his Sermons verbatim**», с очками | «**not Popular or much follow'd**» |
+
+**Три следствия для биографии.**
+
+1. **Непопулярность Чарнока при жизни имела прозаическую причину — угасающая память.** Не
+   доктрина, не характер, не конгрегация: очки и чтение с бумаги. Это делает фигуру Чарнока
+   **трогательной и современной**: великий богослов, который в последние пять лет не мог уже
+   держать в голове собственные проповеди.
+2. **Фолиант 1682 — это письменная фиксация угасавшей памяти.** Calamy 1713 говорил, что труды
+   «transcrib'd from his Notes; and cannot therefore but want that Perfection and Beauty». Calamy
+   1727 объясняет, что такое были эти «Notes»: **дословно выписанные sermon'ы последних лет**.
+   Фолиант — не авторская рукопись к печати, а **спасённое друзьями записанное слово**.
+3. **Чарнок стоял в ряду величайших библеистов Англии.** По свидетельству Джонсона, по skill в
+   оригиналах Ветхого и Нового Завета к нему близок был только **Thomas Gataker** (1574–1654) —
+   величайший английский гебраист своего века. Это подтверждается аппаратом дискурса о
+   вездесущности (том 04 §0A): Kimchi, Lessius, Rivet, Musculus, Drexel, Amyrald, Maccor.,
+   Shelford, Pont. — работа на уровне университетской экзегезы.
+
+**И четвёртое, тихое:** «His Library was burnt in the Fire of London» — библиотека Чарнока сгорела
+в пожаре 1666 года. Это **независимое подтверждение** факта, который отдел вёл как
+неподтверждённый, и оно объясняет, почему посмертные труды пришлось **собирать из заметок**:
+собственной библиотеки у Чарнока к 1680 году не было.
+
 **Второй эксклюзив Calamy (стр. 56):** «us'd to preach on Lord's-Days, in the Afternoon, in the
 City of Dublin; and had **all the Gentry and Persons of Quality in the City for his Auditors**» —
 дублинская аудитория Чарнока была целиком из дворянства и «лиц качества». Это важная поправка к

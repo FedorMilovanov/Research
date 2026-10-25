@@ -149,8 +149,54 @@
 - **Ценность:** contemporaneous самоидентификация Чарнока с двумя его дублинскими постами и
   подтверждение, что после Реставрации он ещё бывал в Дублине.
 - **`evidenceClass`:** `A1`.
-- **`accessState`:** цитируется через McCosh (Calamy, Continuation, p. 83).
-- **HOLD:** `ARCHIVE_HOLD`, `LOCATOR_HOLD`.
+- **`accessState`: ПРОЧИТАН НЕПОСРЕДСТВЕННО 2026-10-25** — Calamy, *A Continuation of the
+  Account…*, London 1727, **стр. 83–84**. Интернет-архив `continuationofac01cala`, полный текст.
+  Прежняя запись отдела опиралась на McCosh; теперь сертификат прочитан в источнике, который его
+  печатает. **`ARCHIVE_HOLD` и `LOCATOR_HOLD` по сертификату СНЯТЫ** (подлинник в архиве
+  по-прежнему не виден; прочитан печатный текст 1727 года).
+- **HOLD:** —.
+
+#### 2.6A. Полная транскрипция сертификата (Calamy, *Continuation*, 1727, стр. 83–84)
+
+Calamy печатает его в приписке к статье об Edward Veal (в базовом издании 1713 — стр. 57),
+озаглавленной: «When he left Ireland, he brought with him the following Testimonial as to his
+Behaviour.» Дословно (орфография 1727; ошибки OCR исправлены):
+
+> «These are to certify all whom it may concern, that Mr. Edward Veal, Batchelor of Divinity, and
+> late Fellow of Trinity College near Dublin, is a Learned, Orthodox, and Ordained Minister, of a
+> Sober, Pious and Peaceable Conversation; who during his Abode in the College, was eminently
+> useful for the Instruction of Youth, and whose Ministry hath been often exercis'd, in and about
+> this City, with great Satisfaction to the Godly, until he was depriv'd of his Fellowship for
+> Nonconformity to the Ceremonies now impos'd in the Church, and joining with other Ministers in
+> their Endeavours for a Reformation. All which we testify from our certain Knowledge, and
+> Fellowship with him in the Ministry, and Sufferings of the Gospel of Jesus Christ. **Dated at
+> Dublin, Dec. 31. 1661.**»
+>
+> **Steph. Charnock, formerly Minister at Warbouroughs, and late Lecturer at Christ-church,
+> Dublin.**
+> Edward Baines, late Minister of St. John's Parish, Dublin.
+> Nath. Hoyle, late Minister at Donobrock, and late Fellow of Trinity College, Dublin.
+> Robert Chambres, late Minister of St. Patricks Church, Dublin.
+> Samuel Coxe, late Minister at Katharines, Dublin.
+> William Leclew, late Minister of Dunborn.
+> Josiah Marsden, late Fellow of the above-said Trin. College, Dublin.
+
+#### 2.6B. Что даёт прямое чтение
+
+1. **Самоидентификация Чарнока от первого лица, датированная.** Не «Чарнок был министром
+   Св. Вербурга», а его **собственная подпись** под документом 31 декабря 1661 года, в которой он
+   себя так и называет: «formerly Minister at Warbouroughs, and **late Lecturer at Christ-church,
+   Dublin**». Слово **late** — ключевое: к 1661 году Чарнок уже **не** занимал дублинских постов.
+2. **Круг подписантов — это портрет дублинского несогласия 1661 года.** Семь имён, все с
+   титулами «late Minister at …»: Edward Baines (St John's), Nath. Hoyle (Donobrock, fellow of
+   Trinity), Robert Chambres (St Patrick's), Samuel Coxe (St Katharine's), William Leclew
+   (Dunborn), Josiah Marsden (fellow of Trinity). Все они — лица, **лишённые постов** в
+   результате Реставрации, и все свидетельствуют о Веле. Чарнок подписан **первым**.
+3. **Veal — fellow of Trinity College Dublin.** Это прямое подтверждение для биографии Вела,
+   соредактора фолианта 1682: Calamy печатает и его ординационный сертификат (14 августа 1657,
+   Robinson, Charles Herle, Bradley Hayhurst, Samuel Baden, J. Battersby, John Wright), и
+   свидетельство о степени B.D. (3 июля 1661, подписанное Johannes Stearne и другими).
+4. **Дата подтверждена дословно:** «Dated at Dublin, Dec. 31. 1661.»
 
 ---
 
@@ -372,11 +418,86 @@ Discourse of Divine Providence.*»
 5. **Calamy не упоминает Crosby Hall, Thomas Watson, Richard Tymms, Whitechapel и St Michael's
    Cornhill.** Все эти эксклюзивы принадлежат Wood 1691.
 
-#### 2.9D. Что осталось непрочитанным в Calamy
+#### 2.9E. *A Continuation of the Account* (1727), стр. 81 — приписка к статье о Чарноке
+(**прочитана 2026-10-25; главная находка отдела по Calamy**)
+
+**Источник:** Edmund Calamy, *A Continuation of the Account of the Ministers, Lecturers, Masters
+and Fellows of Colleges, and Schoolmasters, who were Ejected and Silenced after the Restoration in
+1660…* London, **1727**. Интернет-архив `continuationofac01cala`, полный текст. Приписка
+помечена: «**Pag. 56. Mr. Stephen Charnock, B. D.**» — то есть отсылает к базовой записи 1713.
+Дословно (орфография 1727; ошибки OCR исправлены):
+
+> «**Pag. 56. Mr. Stephen Charnock, B. D.** Mr. Johnson's Funeral Sermon for him was on **Mat.
+> xiii. 43**. He (who had been acquainted with him **thirty-six Years**) gave him an excellent
+> Character; and among other Things said, that **he never knew a Man in all his Life, that had
+> attaind near unto that Skill that Mr. Charnock had, in the Originals of the Old and New
+> Testament**, except Mr. **Thomas Gataker**.
+>
+> **His Library was burnt in the Fire of London.** It was only in his **latter Years, when his
+> Memory began to fail him, that he penn'd and read his Sermons verbatim: But in his younger Days,
+> he us'd no Notes in the Pulpit.**»
+
+**Разбор по пунктам.**
+
+| № | Утверждение | Статус |
+|---|---|---|
+| 1 | Funeral sermon Johnson — на **Мф. 13:43** | **независимо подтверждено** самим sermon'ом (том 09); Calamy даёт второй источник |
+| 2 | Johnson знал Чарнока **36 лет** | согласуется с томом 02 (1644) и с припиской о Johnson 1644 |
+| 3 | **Чарнок был одним из величайших знатоков еврейского и греческого оригинала в Англии** — по словам Джонсона, близок к нему по skill только **Thomas Gataker** (1574–1654), величайший английский гебраист своего века | **ЭКСКЛЮЗИВ Calamy 1727**; ни Wood, ни Adams & Veal, ни элегии, ни modern biographies этого не дают |
+| 4 | **Библиотека Чарнока сгорела в Великом лондонском пожаре** | **ЭКСКЛЮЗИВ Calamy 1727** (пожар 1666) |
+| 5 | **«Только в последние годы, когда память начала его изменять, он выписывал и читал свои sermon'ы дословно; в молодости же он не употреблял в кафедре никаких заметок»** | **ГЛАВНАЯ НАХОДКА**; см. ниже |
+
+#### 2.9F. Пункт 5 разрешает загадку пункта 1 из §2.9B
+
+Calamy 1713 (стр. 56) сообщил, что Чарнок «был **не популярен и не имел многих последователей**
+из-за своего **невыигрышного способа читать проповедь с помощью очков**» («not Popular or much
+follow'd, because of his Disadvantagious Way of Reading with the help of a Glass»). Отдел
+зафиксировал это как эксклюзив, но **причины не знал**.
+
+Calamy 1727 (стр. 81) даёт причину:
+
+> «It was only in his **latter Years, when his Memory began to fail him**, that he **penn'd and
+> read his Sermons verbatim**: But in his **younger Days, he us'd no Notes in the Pulpit**.»
+
+**Соединение двух записей одного автора, разделённых шестнадцатью годами, даёт полный
+биографический механизм:**
+
+1. В **молодости** Чарнок проповедовал **без всяких заметок** — то есть был тем, что в XVII веке
+   называли «extemporary» проповедником, и, по всей вероятности, имел репутацию сильного
+   кафедрального оратора.
+2. В **последние годы** — то есть как раз в **Crosby Hall**, в пять последних лет жизни —
+   **память начала его изменять**, и он был вынужден **выписывать sermon'ы дословно и читать их с
+   бумаги**, притом **с очками**.
+3. Именно это сделало его **непопулярным** у широкой публики при жизни — «not Popular or much
+   follow'd».
+
+**Почему это существенно для «мощной эпической биографии».** Это **центральный человеческий
+парадокс Чарнока**, и он теперь обоснован двумя записами одного раннего свидетеля:
+
+> Человек, чей труд стал одним из величайших текстов Puritan divinity, в последние пять лет жизни
+> **читал свои проповеди с бумаги и в очках** — и потому не был народным проповедником. Его знала
+> «более судящая часть человечества», но не толпа.
+
+**И это же объясняет редакторскую проблему фолианта.** Calamy 1713 писал, что посмертные труды
+«transcrib'd from his Notes; and cannot therefore but want that Perfection and Beauty». Calamy 1727
+объясняет, что такое были эти «Notes»: **дословно выписанные sermon'ы последних лет**, написанные
+потому, что **память изменяла**. То есть фолиант 1682 — это **письменная фиксация угасавшей
+памяти**, а не авторская рукопись, подготовленная к печати.
+
+**Границы.** Calamy 1727 — `B1`. Он мог знать эти обстоятельства от Джонсона или от общего
+несогласского предания. Но: (а) он — **единственный** источник; (б) его объяснение **согласуется**
+с независимо установленными отделом фактами (Calmy 1713 о «reading with a Glass»; том 03 §3D и том
+08 о «transcrib'd from his Notes»; том 12 о том, что broadside даёт **отредактированный** вариант
+sermon'а, а не механическую копию); (в) оно **не противоречит** ни одному источнику корпуса.
+Статус: **гипотеза высокого доверия**, не установленный факт. `LOCATOR_HOLD` — страница 81
+не сверена с изображением страницы.
+
+#### 2.9G. Что осталось непрочитанным в Calamy
 
 - ***Continuation of the Account*** (1727), том 1, стр. 81 и 83 — дополнения о Чарноке (сертификат
   31 декабря 1661 в пользу Edward Veal; уточнение о Johnson 1644). Архивная копия:
   Internet Archive `continuationofac01cala`. `ARCHIVE_HOLD` до чтения.
+- ~~*A Continuation* (1727), том 1, стр. 81~~ — **ПРОЧИТАНО 2026-10-25**, см. §2.9E ниже.
 - *A Continuation* (1727) том 2 — статьи о Fowler и Poole (для линии Эммануила, том 15).
 - Записи Calamy об Оуэне (стр. 53–56) и Веле (стр. 57) — прочитаны отдельно, но ещё не внесены в
   отдел как отдельные свидетельства.
