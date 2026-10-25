@@ -173,3 +173,16 @@ Everything else is spelling (`c`/`k`, `u`/`v`) and does not affect reading.
 - Transcription: `CAPTURED_IN_REPOSITORY`, from a digital text layer.
 - Page image: **not inspected** — typography, drop capitals and the illustration `ill0155` remain `UNVERIFIED`.
 - Melody: `UNKNOWN_NOT_VERIFIED` (Liederenbank returns 403; the 2005 apparatus gives no origin).
+
+## A second hymn with almost the same title — checked in the 1676 table of contents
+
+The contents page of the 1676 edition (`https://www.dbnl.org/tekst/lode002uyt_01_01/`) lists both:
+
+| DBNL file | Printed title | What it is |
+|---|---|---|
+| `..._0061.php` | **`Heerlijckheyds Loff.`** | **this work** — pp. 155–158, dated 27 Aug 1665, `Voyse: Un jour &c.` |
+| `..._0142.php` | **`'s Heeren Heerlijckheyts Loff.`** | a **different** poem, in the appendix section |
+
+So the working Russian title «Слава Господня» sits closer to the *other* hymn's title («Хвала Господней славе») than to ours («Хвала славе»). The two must not be merged or confused, and any rename is the owner's decision.
+
+**Correction to a claim that circulated in review:** our hymn is **not** № 56 and the other is **not** № 131. Those numbers are DBNL file numbers, and file `0056` is `Schepselen Niet en Iesus Al` — which is **DUTCH-001** — while `0131` is `Den Medicijn-meester Duc-d'Alba`. The warning about the title collision is right; the numbers attached to it are wrong, and using them would have transcribed the wrong poem.
