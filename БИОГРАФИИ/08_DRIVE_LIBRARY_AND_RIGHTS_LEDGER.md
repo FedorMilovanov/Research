@@ -82,8 +82,9 @@
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 14, 2026-10-25, коммит `bb6cbb3`)~~ | ~~`1rAsDqd7JMj4eKDHqSkEBe41Lcae8zb8m`~~ → **`SUPERSEDED`**, см. rev 15 |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 15, 2026-10-25, коммит `73ac6d1`)~~ | ~~`19X_atS_s1CxURmN8KzOZV01R0sHefTW1`~~ → **`SUPERSEDED`**, см. rev 16 |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 16, 2026-10-25, коммит `d3e2855`)~~ | ~~`1-IvUFenV5fsxCpPwYLDwunVMqkHk_8Ir`~~ → **`SUPERSEDED`**, см. rev 17 |
-| ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 17, 2026-10-25, коммит `d26a496`)~~ | ~~`1nT41evvQ2X51bfMfK9rxIPpsGDVr9rWm`~~ → **`SUPERSEDED`**, см. rev 18 |
-| Стивен Чарнок — 00 README AND NAVIGATION **(rev 18, 2026-10-25, коммит `67853fc`)** | `1nIGRksu0ZeYf1fr5lb1QGXPUWxUK0kOF` |
+| ~~Стивен Чарнок — 00 README and Navigation (rev 17, 2026-10-25, коммит `d26a496`)~~ | ~~`1nT41evvQ2X51bfMfK9rxIPpsGDVr9rWm`~~ → **`SUPERSEDED`**, см. rev 18 |
+| ~~Стивен Чарнок — 00 README and Navigation (rev 18, 2026-10-25, коммит `67853fc`)~~ | ~~`1nIGRksu0ZeYf1fr5lb1QGXPUWxUK0kOF`~~ → **`SUPERSEDED`**, см. rev 19 |
+| Стивен Чарнок — 00 README and Navigation **(rev 19, 2026-10-25, коммит `93d4db7`)** | `1Uv3-QaYxrkou33sHbXHFa-9ajZZmhPhk` |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1giMeyUhqxHGFEc9At2H-kJwCbrxOVzpf`~~ → **`SUPERSEDED`**, см. rev 4 |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 4, 2026-10-25, коммит `e64d27d`)~~ | ~~`1kQCmXLcYMth7ijwLU-G5Xgthu2FlXIi9`~~ → **`SUPERSEDED`**, см. rev 5 |
 | Стивен Чарнок — 01 Witnesses and Evidence Hierarchy **(rev 5, 2026-10-25, коммит `54ba4c4`)** | `1ODU8A8uJQh8olYr0AfpnWjMxDxrwzX3x` |
@@ -104,7 +105,8 @@
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 14, 2026-10-25, коммит `73ac6d1`)~~ | ~~`1MFvflcd-YdaqaiPNLKOHPeqFAcADH1Cy`~~ → **`SUPERSEDED`**, см. rev 15 |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 15, 2026-10-25, коммит `d3e2855`)~~ | ~~`1e8X1iAL-U7tITV62wFGEdNtjCmxFqiAd`~~ → **`SUPERSEDED`**, см. rev 16 |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 16, 2026-10-25, коммит `d26a496`)~~ | ~~`162uRVhRJVI2IRjt9FDGK0JRj_PR1UGNC`~~ → **`SUPERSEDED`**, см. rev 17 |
-| Стивен Чарнок — 04 Character Ministry and Theology **(rev 17, 2026-10-25, коммит `67853fc`)** | `1bIKYSjgKxJuXMmjWLvk07EwKMSDt1fls` |
+| ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 17, 2026-10-25, коммит `67853fc`)~~ | ~~`1bIKYSjgKxJuXMmjWLvk07EwKMSDt1fls`~~ → **`SUPERSEDED`**, см. rev 18 |
+| Стивен Чарнок — 04 Character Ministry and Theology **(rev 18, 2026-10-25, коммит `93d4db7`)** | `1cq1c1sBQpdAnGNKqEo2jsMP2pKFe6TyO` |
 | Стивен Чарнок — 05 Controversies and Claim Audit **(rev 2, 2026-10-25, коммит `1439b96`)** | `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` |
 | Стивен Чарнок — 06 Corpus Access Matrix and Locators **(rev 3, 2026-10-25, коммит `54ba4c4`)** | `1eTDM6P4SHBQDdG9cL7XXHLMYTFF69RCL` |
 | Стивен Чарнок — 07 Repo Crosslinks and Drive Mirror | `1FZtigfn0Ta8IA8BfRFgpufcwwQ37Hcpk` |
@@ -124,7 +126,8 @@
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 4, 2026-10-25, коммит `73ac6d1`)~~ | ~~`13oighw6oBUX-q5oNR1wyaVmF5QCeXjRr`~~ → **`SUPERSEDED`**, см. rev 5 |
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 5, 2026-10-25, коммит `d3e2855`)~~ | ~~`1uhq0WQZUTDnkcZMcvcfvA--JW69OgSrP`~~ → **`SUPERSEDED`**, см. rev 6 |
 | ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 6, 2026-10-25, коммит `d26a496`)~~ | ~~`1ICM2v1PQd-Cn-61CiKXCcJGbnn-Qc1u1`~~ → **`SUPERSEDED`**, см. rev 7 |
-| Стивен Чарнок — 16 Series Architecture and Persons Chain **(rev 7, 2026-10-25, коммит `67853fc`)** | `1sLpyBqCTrW0YSZLt5VfhH0lSE_oPWTQv` |
+| ~~Стивен Чарнок — 16 Series Architecture and Persons Chain (rev 7, 2026-10-25, коммит `67853fc`)~~ | ~~`1sLpyBqCTrW0YSZLt5VfhH0lSE_oPWTQv`~~ → **`SUPERSEDED`**, см. rev 8 |
+| Стивен Чарнок — 16 Series Architecture and Persons Chain **(rev 8, 2026-10-25, коммит `93d4db7`)** | `1FKamyP5c0v7XbLGrrzchT6_Egjol4-4H` |
 | Стивен Чарнок — 17 PROMPT Parallel Agent Historical Context **(rev 1, 2026-10-25, коммит `ad72e30`)** | `1AXv0fJTyy3OCQJBdSfYm1QE6vxs6GZzf` |
 
 Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
@@ -138,19 +141,22 @@
 | Чарнокский `00 README AND NAVIGATION`, тома **01, 02, 03, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` (Чарнок 00), `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` (03), `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` (ledger), `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` (01), `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` (02), `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` (04), `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` (05), `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` (БИОГРАФИИ 00) | **актуальны** (коммит `1439b96`); прежние копии помечены `SUPERSEDED` и **не удалялись** |
 | — | **Все зеркала томов отдела приведены к актуальному состоянию** (16 томов + rev 2 файлы). Отстающих копий не осталось | — |
 
-**Состояние на 2026-10-25, коммит `67853fc`: отстающих зеркал не осталось.** **Восемнадцатая
-волна** загружена 2026-10-25: тома **00, 04, 16** (причина — **§0T**: «A DISCOURSE UPON THE
-Goodness of God», Мк. 10:18, стр. 577–682+, **504 сноски — самый большой аппарат фолианта** —
-**тринадцатый** дискурс; **единственный во фолианте аргумент против волюнтаризма** («as Camero
-well argues somewhere, Gods goodness would depend upon his loving himself»); **Гермес Трисмегист
-наконец с точным локатором** — *Поимандр*, гл. 2; **НАТАНИЭЛ ИНДЖЕЛО, *Bentivolio and Urania*** —
-феллоу **Эммануэль-колледжа, Кембридж**, того же колледжа, что и Чарнок; **Чарльз Херл, *Wisdomes
-Tripos***, прокуратор Вестминстерской Ассамблеи; Камерон, Каэтан, Мальдонат, Кузанский,
-Зарновецкий, Ломбардский, Эразм, Боэций, Эмпедокл, Гесиод, Ферекид; Суарес ×14, Амиро ×51;
-**ариане названы прямо** — третья полемическая ось фолианта; итого **2312 сноски в тринадцати
-дискурсах из 14**). Прежние rev 17 / rev 16 / rev 6 копии помечены `SUPERSEDED` и **не
-удалялись**. Актуальные ревизии: 00 = rev 18, 01 = rev 5, 02 = rev 7, 03 = rev 7,
-04 = rev 17, 06 = rev 3, 12 = rev 4, 15 = rev 5, 16 = rev 7, **17 = rev 1**, реестр = rev 17. Все 15 томов отдела
+**Состояние на 2026-10-25, коммит `93d4db7`: отстающих зеркал не осталось.** **Девятнадцатая
+волна** загружена 2026-10-25: тома **00, 04, 16** (причина — **§0U**: «A DISCOURSE UPON GODS
+Dominion», Пс. 103:19, стр. 697–786, узел `1:16` + подузел `1:16.1` «The USE», 31 сноска —
+**четырнадцатый и последний дискурс**. **ФОЛИАНТ 1682 ГОДА ПРОЧИТАН ЦЕЛИКОМ: все 14 дискурсов
+(`1:4`–`1:17`), оба подузла, 2343 сноски.** В дискурсе: «**Omnipotence is his Physical power…
+Dominion is his moral Power**»; абсолютное владычество через **Рим. 9:21** и «he Rules the
+Kingdoms of men, and sets a Crown upon the head of the basest of men, Dan. 4.17»; скорби без
+конкретного греха (Ин. 9:3, Иак. 5:15); **политический пик фолианта** — «Not a bullet can be
+discharg'd… without the leave of God, by the mightiest in the World»; **прямое гражданское
+неповиновение** — «When God commands, if the highest power on earth countermands it, the Precept
+of God must be preferred before the countermand of the creature» и «no subject is bound to obey
+an unrighteous Law»; **ГУДВИН вторично, и теперь как цитата** — «This was Dr. Goodwins Speech when
+he was in trou∣ble»; новые лица — Джозеф Мед, Маковий, Евсевий Рено, Николя Коссен, Статон,
+Клод, Светоний, Арриан, Златоуст). Прежние rev 18 / rev 17 / rev 7 копии помечены `SUPERSEDED`
+и **не удалялись**. Актуальные ревизии: 00 = rev 19, 01 = rev 5, 02 = rev 7, 03 = rev 7,
+04 = rev 18, 06 = rev 3, 12 = rev 4, 15 = rev 5, 16 = rev 8, **17 = rev 1**, реестр = rev 18. Все 15 томов отдела
 и все три файла уровня `БИОГРАФИИ` имеют актуальные Drive-копии. **Третья волна rev 3** загружена
 2026-10-25 по итогам коммитов `e4dc14`, `4b898ef`, `ef6ab9e`, `7135746`, `5cd7d53`, `c1ed17a`,
 `7a28e89`, `976dbfa`:
