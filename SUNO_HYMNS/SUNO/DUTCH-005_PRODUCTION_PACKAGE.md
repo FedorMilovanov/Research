@@ -11,6 +11,7 @@
 [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md) — SUNO-ready text with labels and stress marks ·
 [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md) — style prompts only
 **YouTube:** [`DUTCH-005_YOUTUBE.md`](DUTCH-005_YOUTUBE.md) — название, описание (4229 символов, разметка канала), закреплённый комментарий, tags; **не опубликовано**.
+**Telegram:** [`DUTCH-005_TELEGRAM.md`](DUTCH-005_TELEGRAM.md) — короткое описание для @lordchrist, лейн L1 (1421 знак): rich-вариант для ручного копирования и HTML-блок для бота; **не опубликовано**.
 **Source run:** [`../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md`](../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md) — 75 адресов со статусами (✅ открыт / ◐ найден / ○ реквизит) и таблица проверки утверждений.
 **Production state:** `LYRIC_DRAFT` — a Russian draft v0.9 and five style directions exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
 
