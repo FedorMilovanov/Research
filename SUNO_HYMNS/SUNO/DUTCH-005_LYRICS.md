@@ -199,7 +199,7 @@ Statement lines 5–10, call 5–10, tripled 6–11, close 6–11. **No regular 
 
 ## Title
 
-`Heerlijckheyds Loff` is literally **«Хвала славе»** — `Loff` = praise. The working title «Слава Господня» drops "praise" and adds "Господня", and the 1676 contents list a **different** hymn, `'s Heeren Heerlijckheyts Loff`, whose title it matches more closely. Renaming is the owner's decision. Recommended: **«Хвала небесной славе»**.
+`Heerlijckheyds Loff` is literally **«Хвала славе»** — `Loff` = praise. The working title «Слава Господня» drops "praise" and adds "Господня", and the 1676 contents list a **different** hymn, `'s Heeren Heerlijckheyts Loff`, whose title it matches more closely. `Loff` is praise and `Heerlijckheyd` is glory, and the poem's own tenth stanza sets the two side by side — `Iesus lof en Heerlijckheyd!` (10.4), `Singt sonder eynden Iesus loff` (10.9). The title is built from exactly that pair, so «Слава Господня» drops one of its two words (the praise) and adds a third that the Dutch title does not have (`Heere` / `God`); it is closer to the neighbouring hymn's title than to this one. Renaming is the owner's decision. Recommended: **«Хвала небесной славе»**.
 
 ## What this file is not
 
