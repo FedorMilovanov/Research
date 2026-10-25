@@ -43,7 +43,8 @@
 
 | Объект | Drive ID |
 |---|---|
-| БИОГРАФИИ — 00 README AND NAVIGATION | `151Fbp92RxcP1hW0YbfdLgyuHuPV1FqQU` |
+| ~~БИОГРАФИИ — 00 README AND NAVIGATION~~ | ~~`151Fbp92RxcP1hW0YbfdLgyuHuPV1FqQU`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
+| БИОГРАФИИ — 00 README AND NAVIGATION **(rev 2, 2026-10-25, коммит `1439b96`)** | `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` |
 | БИОГРАФИИ — 01 GILL RELOCATION AND SUPERSESSION RECORD | `16n8Min16U2l9eYNowlB1QqbAQ5SZEKYt` |
 | ~~БИОГРАФИИ — 08 DRIVE LIBRARY AND RIGHTS LEDGER~~ | ~~`1I0VPEYUnv1JXrxZvRQKk2XIO3zkQDPlx`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
 | БИОГРАФИИ — 08 Drive Library and Rights Ledger **(rev 2, 2026-10-25, коммит `7528ec5`)** | `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` |
@@ -54,12 +55,16 @@
 |---|---|
 | ~~Стивен Чарнок — 00 README AND NAVIGATION~~ | ~~`1zJbYlHbRVJueNtp8fXoCn20jqVMFkt4G`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
 | Стивен Чарнок — 00 README AND NAVIGATION **(rev 2, 2026-10-25, коммит `7528ec5`)** | `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` |
-| Стивен Чарнок — 01 Witnesses and Evidence Hierarchy | `17gCbSlmrlqTTjYX6rmjGk7BcurszBFnT` |
-| Стивен Чарнок — 02 Chronology and Date Conflicts | `1-XAn2H3BmucaDFOxcIso1hCdzFFvTKBO` |
+| ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy~~ | ~~`17gCbSlmrlqTTjYX6rmjGk7BcurszBFnT`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
+| Стивен Чарнок — 01 Witnesses and Evidence Hierarchy **(rev 2, 2026-10-25, коммит `1439b96`)** | `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` |
+| ~~Стивен Чарнок — 02 Chronology and Date Conflicts~~ | ~~`1-XAn2H3BmucaDFOxcIso1hCdzFFvTKBO`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
+| Стивен Чарнок — 02 Chronology and Date Conflicts **(rev 2, 2026-10-25, коммит `1439b96`)** | `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` |
 | ~~Стивен Чарнок — 03 Works Editions and Publication Chronology~~ | ~~`17-c0geD8iCl2-YV4kryp3z4P-gKCVguh`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
 | Стивен Чарнок — 03 Works Editions and Publication Chronology **(rev 2, 2026-10-25, коммит `7528ec5`)** | `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` |
-| Стивен Чарнок — 04 Character Ministry and Theology | `1mNEAz6w1DZC_pEEq3TlcbnpdHCWQvPGb` |
-| Стивен Чарнок — 05 Controversies and Claim Audit | `1lliBwqiqe_ZG6W2H0JPpG8ey7-NfLyph` |
+| ~~Стивен Чарнок — 04 Character Ministry and Theology~~ | ~~`1mNEAz6w1DZC_pEEq3TlcbnpdHCWQvPGb`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
+| Стивен Чарнок — 04 Character Ministry and Theology **(rev 2, 2026-10-25, коммит `1439b96`)** | `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` |
+| ~~Стивен Чарнок — 05 Controversies and Claim Audit~~ | ~~`1lliBwqiqe_ZG6W2H0JPpG8ey7-NfLyph`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
+| Стивен Чарнок — 05 Controversies and Claim Audit **(rev 2, 2026-10-25, коммит `1439b96`)** | `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` |
 | Стивен Чарнок — 06 Corpus Access Matrix and Locators | `1BAs64-hsi1KwWkoTq73S453Ax3eBmtLw` |
 | Стивен Чарнок — 07 Repo Crosslinks and Drive Mirror | `1FZtigfn0Ta8IA8BfRFgpufcwwQ37Hcpk` |
 | Стивен Чарнок — 08 Adams and Veal To The Reader PRIMARY EPISTLE | `1CaRgPmxNv7WgRFsdzvu0goiSxkdiVTRj` |
@@ -78,16 +83,15 @@
 | Группа зеркал | Drive-состояние | Относительно репозитория |
 |---|---|---|
 | Тома **08, 09, 10, 11, 12, 13, 14** | загружены | **актуальны** (08–10 не менялись после загрузки; 11–14 загружены в день получения) |
-| Чарнокский `00 README AND NAVIGATION`, том **03**, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU`, `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ`, `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` | **актуальны**; прежние копии (`1zJbYlHbRVJueNtp8fXoCn20jqVMFkt4G`, `17-c0geD8iCl2-YV4kryp3z4P-gKCVguh`, `1I0VPEYUnv1JXrxZvRQKk2XIO3zkQDPlx`) помечены `SUPERSEDED` и **не удалялись** |
-| Тома **01, 02, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION` | загружены **до** получения Wood (`A71277.0001.001`) и до получения объектов 1680 года (`B02133`, `A52960`, `A39134`) и первых изданий (`A32726`, `A32723`, `A32724`, `A32722`) | **`SUPERSEDED`** относительно репозитория |
+| Чарнокский `00 README AND NAVIGATION`, тома **01, 02, 03, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` (Чарнок 00), `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` (03), `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` (ledger), `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` (01), `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` (02), `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` (04), `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` (05), `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` (БИОГРАФИИ 00) | **актуальны** (коммит `1439b96`); прежние копии помечены `SUPERSEDED` и **не удалялись** |
+| — | **Все зеркала томов отдела приведены к актуальному состоянию.** Отстающих копий не осталось | — |
 
-Отстающие Drive-копии (тома 01, 02, 04, 05 и `БИОГРАФИИ` 00) не содержат: вход [429] и Fasti 1654
-Wood; `CONFLICT-12`; усиления `CLAIM-06`; broadside *The sayings…* (том 12); *New poems* (том 13);
-элегию (том 14); `CONFLICT-14`; подтверждение Наум 1:3; полной каталогизации Wing/ESTC для девяти
-объектов EEBO-TCP; лист «Advertisement» и титульный лист издания 1680; предисл 1682; имён Wichens и
-Ashton; печатного локатора стр. 47 для `CHARN_PRACT_ATHEISM_001`; `CONFLICT-15` и `CONFLICT-16`.
-Авторитетная копия — **репозиторий**, коммит `7528ec5` и позже. Расхождение зафиксировано здесь, а
-не замалчивается.
+**Состояние на 2026-10-25, коммит `1439b96`: отстающих зеркал не осталось.** Все 15 томов отдела
+и все три файла уровня `БИОГРАФИИ` имеют актуальные Drive-копии (тома 08–14 и rev 2 файлы 00, 01,
+02, 03, 04, 05, ledger, БИОГРАФИИ 00). Прежние копии восьми объектов помечены `SUPERSEDED` и
+**не удалялись** — они остаются в Drive как исторические версии.
+
+Авторитетная копия — **репозиторий**, коммит `1439b96` и позже. Drive-зеркала — копии для чтения.
 
 **Правило работы с зеркалами (зафиксировано 2026-10-25).** Drive-зеркала — копии для чтения, не
 авторитет. Обновление зеркала выполняется загрузкой нового файла с маркером «rev 2» и датой в
