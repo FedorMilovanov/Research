@@ -42,6 +42,7 @@
 | 07 | `07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md` | Связка с уже имеющимся в репозитории материалом по Чарноку | 91 файл, 763 упоминания в 7 корпусах; CCEL-локаторы; Drive-зеркала |
 | 08 | `08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md` | **Первичный эпистол Adams & Veal 1684** — полная транскрипция и разбор | Разрешение `CONFLICT-2`/`CONFLICT-3`; «true Son of the Church of England»; редакторский манифест; CC0 1.0 |
 | 09 | `09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md` | **Funeral sermon John Johnson 1680** — полная транскрипция с постраничными локаторами | `ARCHIVE_HOLD` снят; показано, что знаменитый «портрет» — patristic compilation, не свидетельство Johnson; pp. 33–40 |
+| 10 | `10_REPO_USAGE_LEDGER_AND_VERIFICATION_STATUS.md` | Сводный леджер уже используемого в Research Charnock-материала | `CHARN_PRACT_ATHEISM_001`; two-state diagnostic; три функциональные роли; что отдел добавил |
 
 ---
 
