@@ -283,42 +283,103 @@ at Cripplegate* 1674–6, где напечатан sermon 19 Чарнока, �
 
 ---
 
-### 2.9. Edmund Calamy — собственный текст (получен 2026-10-25, в пересказе)
+### 2.9. Edmund Calamy — СОБСТВЕННЫЙ ТЕКСТ ПОЛУЧЕН (2026-10-25, `B1`, полная транскрипция)
 
-Calamy, *An Account of the Ministers … Ejected or Silenced after the Restoration in 1660* / *A
-Continuation of the Account …* (1702–1727). Полный том отделом **не получен**, но собственные слова
-Calamy теперь зафиксированы по цитате (curiosmith, 2026-10-25) и должны быть перепроверены по
-изданию:
+**Источник:** Edmund Calamy, *An Account of the Ministers, Lecturers, Masters and Fellows of
+Colleges and Schoolmasters, who were Ejected or Silenced after the Restoration in 1660. By, or
+before, the ACT for UNIFORMITY.* The Second Edition: In Two Volumes. **Vol. II.** London: Printed
+for J. Lawrence, J. Nicholson, J. Sprint, R. Robinson, N. Cliffe, and D. Jackson, **MDCCXIII**.
+- **Архивная копия:** Internet Archive `accountofministe00cala` (Princeton Theological Seminary
+  Library; 912 pp.; OCR `accountofministe00cala_djvu.txt`), полный текст.
+- **Локатор записи о Чарноке: стр. 56–57.** Запись помещена в разделе «In LONDON, WESTMINSTER,
+  and SOUTHWARK», в подразделе «There were also several others, who came to the City from several
+  Parts, who **not being Ejected out of any particular place at Bartholomew-Day**, would be wholly
+  pass'd by, if not mentioned here» — то есть **сразу за записью о Джоне Оуэне** (стр. 53–56) и
+  **перед записью об Эдварде Веле** (стр. 57).
+- **Статус:** `evidenceClass = B1` (ранний вторичный свидетель, 1713; сам Calamy работал с
+  каталогами и перепиской). `accessState = full text`. `locatorState = checked`.
 
-> «Mr. Stephen Charnock, B. D. first of Emanuel college in Cambridge, and afterwards fellow of New
-> college in Oxford. He was **senior proctor of the university in 1652**, and managed that office with
-> great honor and reputation, and was much applauded for his exercises at the act. **He died at
-> London, July the twenty-seventh 1680, aged fifty-two.**»
+#### 2.9A. Полная транскрипция записи (орфография 1713 сохранена; ошибки OCR исправлены)
+
+> **Mr. Stephen Charnock, B. D.** first of *Emanuel* College in *Cambridge*, and afterwards
+> Fellow of *New-College* in *Oxford*. He was **Senior Proctor of the University in 1652**, and
+> manag'd that Office with great Honour and Reputation; and was much Applauded for his Exercises
+> at the Act. From thence he went into *Ireland*, where he liv'd in the Family of *Henry Cromwell*
+> and that with abundant Respect; at which time he was **us'd to preach on Lord's-Days, in the
+> Afternoon, in the City of Dublin; and had all the Gentry and Persons of Quality in the City for
+> his Auditors**. This continu'd 'till King *Charles*'s Restoration; a little after which, he
+> return'd into *England* and **spent 15 Years in and about London, following his Studies without
+> any fixed settled Employment, taking now and then a turn beyond the Seas, into France or
+> Holland**. At length he became Pastor of a Congregation in *London*, and was **much admir'd as
+> a Preacher by the more Judicious part of Mankind; but not Popular or much follow'd, because of
+> his Disadvantagious Way of Reading with the help of a Glass**. He was a very considerable
+> Scholar and an Eminent Divine. His Natural Parts were Excellent; for he had **a strong Reason, a
+> great Judgment, and a curious Fancy (which rarely mix) joyn'd together**. His Improvements, by
+> Diligence and Industry, were unusual. There was **no part of Learning of any moment, which he
+> had not a good Insight into. And his Love was as large as his Knowledge; for his Benevolence was
+> Universal**, and his Love took in whatsoever Person or Thing had any thing lovely in it.
 >
-> «His funeral sermon was preached by Mr. John Johnson, who had been his **fellow-collegiate at
-> Cambridge, in 1644, when Mr. Charnock was only sixteen years of age**.»
+> He **publish'd nothing whilst he liv'd**, but a Sermon of *The Sinfulness and Cure of Thoughts*,
+> in the Supplement to the Morning Exercise at Cripplegate: But various things of his were Printed
+> after his Death, **in 2 Vol. in Folio**, which are valu'd by all that are Judges of good Sense or
+> Divinity. They are indeed **no other than his ordinary Performances, his usual Sermons in his
+> Common Course; and they were transcrib'd from his Notes; and cannot therefore but want that
+> Perfection and Beauty, they would have had if he had himself sent them to the Press**. And yet
+> (to speak modestly) they are not equall'd by many, but exceeded by few if any. **His Preaching
+> was mostly Practical, yet Rational and Argumentative, to his Hearers Understandings as well as
+> Affections**; and where Controversies came in his way, he shew'd great Acuteness and Judgment in
+> discussing and determining them, and no less Skill in applying them to Practice. There is also
+> besides the Two Folio's **an Octavo, publish'd by the same Persons**, containing some of his
+> Sermons, *on our Natural Enmity against God*, &c. which are of a piece with the others.
 >
-> «**He published nothing while he lived**, but a sermon of 'The sinfulness and cure of thoughts, in
-> the supplement to the morning exercise at Cripplegate:' But various things of his were printed after
-> his death, in two volumes in folio.»
+> He **dy'd July the 27th 1680. Aged 52.** His Funeral Sermon was preach'd by Mr. *John Johnson*,
+> who had been his **Fellow Collegiate at Oxford**.
 
-Локатор: Calamy, *Account*, vol. 2, p. 57 (базовая запись) и *Continuation*, p. 81 (дополнение).
-Свидетель McCosh ссылается на p. 83 как на место сертификата 31 декабря 1661 — то есть Calamy даёт
-материал и на p. 81, и на p. 83.
+**Полевая сноска Calamy (на стр. 57):** «*See the Character of him in Mr. Veal's preface to his
+Discourse of Divine Providence.*»
 
-**Значение:**
+#### 2.9B. Что даёт собственный текст, чего не было в отделе
 
-1. **Calamy даёт 27 июля и «aged fifty-two»** — независимо от Wood (1691). Это третий свидетель в
-   пользу 27 июля и второй по времени (1727). Важно: Calamy — не «сетевой пересказ», а ранний
-   диссентерский историк, работавший с теми же кругами.
-2. **Calamy — источник ошибки «senior proctor 1652».** Он прямо пишет «senior proctor … in 1652».
-   Wood (дважды), Adams & Veal и университетские записи дают 1654. То есть Calamy, а не Wood, —
-   первопричина `CONFLICT-2`.
-3. **Calamy даёт точный год знакомства с Johnson: 1644, Чарноку 16 лет.** Wood называет Johnson
-   «his contemporary in Emanuel and New Coll»; Calamy уточняет до года и возраста.
-4. **Calamy повторяет формулу Wood** «He published nothing while he lived» — с той же оговоркой
-   относительно Morning-Exercise sermon.
-5. Calamy подтверждает: посмертное — «two volumes in folio», что совпадает с Wood (1682 + 1683).
+| № | Сведение | Дословно (1713) | Статус |
+|---|---|---|---|
+| 1 | **Чарнок не был популярным проповедником** | «much admir'd as a Preacher by the more Judicious part of Mankind; **but not Popular or much follow'd, because of his Disadvantagious Way of Reading with the help of a Glass**» | **эксклюзив Calamy**; ни Wood, ни Johnson, ни Adams & Veal, ни элегии этого не дают |
+| 2 | **Дублинская аудитория** | «us'd to preach on Lord's-Days, in the Afternoon, in the City of Dublin; and had **all the Gentry and Persons of Quality in the City for his Auditors**» | эксклюзив; уточняет «проповедовал в Дублине» до времени и социального состава |
+| 3 | **Источник формулы «France or Holland» и «15 лет»** | «spent 15 Years in and about London, following his Studies without any fixed settled Employment, taking now and then a turn beyond the Seas, into **France or Holland**» | Calamy — **первоисточник** для Wood 1691 |
+| 4 | **Психологический портрет** | «a strong Reason, a great Judgment, and a curious Fancy (which rarely mix) joyn'd together» | эксклюзив; готовая цитата для биографии |
+| 5 | **Универсальная благожелательность** | «his Love was as large as his Knowledge; for his **Benevolence was Universal**» | эксклюзив |
+| 6 | **Характер проповеди** | «mostly Practical, yet Rational and Argumentative, to his Hearers Understandings as well as Affections» | эксклюзив; согласуется с томом 04 |
+| 7 | **Редакторская проблема названа прямо** | «transcrib'd from his Notes; and cannot therefore but want that Perfection and Beauty» | эксклюзив; Calamy — первый, кто сформулировал проблему «notes vs. press» |
+| 8 | **Три посмертных издания** | «besides the Two Folio's **an Octavo, publish'd by the same Persons**, containing some of his Sermons, *on our Natural Enmity against God*» | Calamy (1713) знает 2 фолианта + октаву; отдел вёл октаву как непроверенную |
+| 9 | **Calamy сам отсылает к Велу** | полевая сноска: «See the Character of him in Mr. Veal's preface to his Discourse of Divine Providence» | Calamy считает Veal'а авторитетом в вопросе о характере Чарнока |
+| 10 | **Место записи в структуре книги** | в подразделе «not being Ejected out of any particular place at Bartholomew-Day» | **Calamy не считает Чарнока лицом, изгнанным из лондонского прихода в 1662** |
+
+#### 2.9C. Уточнения и исправления прежних записей отдела
+
+1. **Цитата curiosmith — не дословная.** Прежняя запись отдела приводила: «He died at London, July
+   the twenty-seventh 1680, aged fifty-two». Собственный текст 1713 даёт: «**He dy'd July the
+   27th 1680. Aged 52.**» — без «at London» и без «twenty-seventh». Цитата curiosmith —
+   **нормализованный пересказ**, не транскрипция. Запись отдела исправлена на дословную.
+2. **CONFLICT-2 (proctor: 1652 или 1654) теперь подтверждён с обеих сторон по первоисточникам.**
+   Calamy 1713, стр. 56: «**Senior Proctor of the University in 1652**». Wood 1691 (дважды),
+   Adams & Veal и университетские записи — 1654. Calamy — **прямой источник ошибки**, а не
+   посредник.
+3. **Johnson: «Fellow Collegiate at Oxford» — в издании 1713.** Уточнение «fellow-collegiate at
+   Cambridge, in 1644, when Mr. Charnock was only sixteen years of age» принадлежит
+   **Continuation** (1727), стр. 81 — это дополнение второго издания, а не базовая запись.
+4. **Calamy не даёт даты прихода в Crosby Hall.** Он пишет только «At length he became Pastor of a
+   Congregation in London» — без года. Тем самым Calamy **не является свидетелем за 1675** и не
+   может быть привлечён ни за, ни против этой даты.
+5. **Calamy не упоминает Crosby Hall, Thomas Watson, Richard Tymms, Whitechapel и St Michael's
+   Cornhill.** Все эти эксклюзивы принадлежат Wood 1691.
+
+#### 2.9D. Что осталось непрочитанным в Calamy
+
+- ***Continuation of the Account*** (1727), том 1, стр. 81 и 83 — дополнения о Чарноке (сертификат
+  31 декабря 1661 в пользу Edward Veal; уточнение о Johnson 1644). Архивная копия:
+  Internet Archive `continuationofac01cala`. `ARCHIVE_HOLD` до чтения.
+- *A Continuation* (1727) том 2 — статьи о Fowler и Poole (для линии Эммануила, том 15).
+- Записи Calamy об Оуэне (стр. 53–56) и Веле (стр. 57) — прочитаны отдельно, но ещё не внесены в
+  отдел как отдельные свидетельства.
 
 ### 2.11. *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen Charnock,
 July 27, 1680* — элегия 100 строк (первоисточник №9, **добавлен 2026-10-25, том 14**)

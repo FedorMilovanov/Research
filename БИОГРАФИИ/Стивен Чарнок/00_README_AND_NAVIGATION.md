@@ -33,7 +33,7 @@
 | № | Файл | Суть | Ключевая добыча |
 |---:|---|---|---|
 | 00 | `00_README_AND_NAVIGATION.md` | Этот файл — вход, authority и карта томов | Структура и режим |
-| 01 | `01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md` | Иерархия свидетелей и классов | 6 первоисточников, 4 утраченных свидетельства, 3 поздних вторичника |
+| 01 | `01_BIOGRAPHICAL_WITNESSES_AND_EVIDENCE_HIERARCHY.md` | **Добавлено 2026-10-25: Calamy 1713 прочитан полностью — запись о Чарноке на стр. 56–57. Полная транскрипция в §2.9A. Эксклюзивы: «not Popular or much follow'd, because of his Disadvantagious Way of Reading with the help of a Glass»; дублинская аудитория — «all the Gentry and Persons of Quality»; «a strong Reason, a great Judgment, and a curious Fancy (which rarely mix) joyn'd together» | Иерархия свидетелей и классов | 6 первоисточников, 4 утраченных свидетельства, 3 поздних вторичника |
 | 02 | `02_LIFE_CHRONOLOGY_AND_DATE_CONFLICTS.md` | Хронология жизни и все конфликты дат | 24 датированные точки, 9 зафиксированных `CONFLICT` |
 | 03 | `03_WORKS_EDITIONS_AND_PUBLICATION_CHRONOLOGY.md` | Труды, издания, публикационная история | Посмертная публикация 1680→1702, Nichol 1864–66, полная оглавка 5 томов |
 | 04 | `04_CHARACTER_MINISTRY_AND_THEOLOGY.md` | Характер, проповедь, богословие | Johnson funeral sermon; Crosby Hall; Dublin lecture; «morality or metaphysics» |
@@ -288,6 +288,10 @@
 - **Проверить второе утверждение кембриджского источника:** что Чарнок «also cites More's
   *Exposition of the Seven Churches*». В аппарате дискурса о вездесущности такой ссылки нет —
   значит она в ином дискурсе; 9 узлов фолианта остаются непрочитанными. `LOCATOR_HOLD`.
+- **Прочитать *A Continuation of the Account* (Calamy, 1727), том 1, стр. 81 и 83** — дополнения
+  о Чарноке (сертификат 31 декабря 1661 в пользу Edward Veal; уточнение о Johnson 1644).
+  Архивная копия: Internet Archive `continuationofac01cala`. `ARCHIVE_HOLD` до чтения.
+  Базовая запись 1713 (стр. 56–57) **уже прочитана** — см. том 01 §2.9A.
 - **Прочитать полный список проповедников *The Morning Exercise against Popery* (1675)** — нужен
   для проверки южноаркской гипотезы (том 15 §4.1). Гипотеза «Чарнок был среди проповедников этого
   тома» **опровергнута** 2026-10-25; южноаркский вход остаётся возможным, но иным путём.
