@@ -1,7 +1,7 @@
 {
  "schema": "atonement-library-index/1",
  "purpose": "единый машиночитаемый индекс библиотеки Drive по искуплению: каждый объект периметра имеет ровно одну запись, запись говорит права, статус чтения и на что этот носитель влияет в реестре",
- "measuredAt": "2026-10-25T07:09:30Z",
+ "measuredAt": "2026-10-25T11:53:00Z",
  "method": "google Drive list_files по каждой папке периметра, q=\"'<папка>' in parents and trashed = false\", fields=id,name,mimeType,size,parents,modifiedTime; съём 23.10.2026 18:20–18:36Z (пять носителей в 10.9, переливка слепка реестра в 05, переименование двух файлов Мюррея); круг 25: добавлен носитель cap25 (разбор блоков страницы ?p=4407), исправлена запись круга 24 о Хамфрее (класс B1 → A2 по каталогу Folger 488217, локатор и примечание переписаны по блокам); круг 26: добавлен носитель cap26 (дочитывание ?p=4407: чанки 3–7, граница блока, локаторы школьного слоя), в записях круга 24 и круга 25 о Хамфрее поле whatNotChecked помечено поправкой — блоки, объявленные нечитаными, прочитаны, а слепок реестра в `05.` перелит объектом 1wzJ8idtiCEMatqntn11Du9u1IeSpAD-g и прежний живой слепок переименован в «УСТАРЕЛО» с переводом в HOLD_superseded — имя и права переведены одновременно, потому что правило 25 сверяет их как один факт; круг 36: добавлена запись о шестнадцатом слепке реестра (1HTKqcji9oCa4MTJQ0vpnbCUQDh75XxhP, 312278 B), пятнадцатая переведена в registry-mirror-superseded с правами HOLD_superseded и lagBehindGit=true — 95 записей, 86 файлов; круг 37: добавлена запись о семнадцатом слепке реестра (1PeT8ecAy16Q1gNtktGM9G-JxvN4QXwnZ, 325798 B, md5 432ad98fab89139a33175304bdb9f1af), шестнадцатая 1HTKqcji9oCa4MTJQ0vpnbCUQDh75XxhP переведена в registry-mirror-superseded с правами HOLD_superseded — 96 записей, 87 файлов; попутно в записи о круге 36 исправлен обрезанный md5 (было 676b8074e5cc2e4fb608bcd442cfca, 30 знаков вместо 32: к корректному префиксу прирос хвост от соседнего хеша) — проза, которую ни одна проверка не меряет, а читатель ей верит; поправка круга 37: добавлена запись о восемнадцатом слепке реестра (14fg0J-SxVhTkT5_5DHFAb8JXkuDZP9ee, 329882 B, md5 09e5aea6bbd0104cce7e798f1c4f2274), семнадцатая 1PeT8ecAy16Q1gNtktGM9G-JxvN4QXwnZ переведена в registry-mirror-superseded с правами HOLD_superseded — 97 записей, 88 файлов",
  "recheckCommand": "Drive list_files по каждому folderIds + python3 -B scripts/validate_atonement_corpus_integrity.py (правило 25 сверяет индекс с этим слепком)",
  "canonical": "канон — git; Drive — носители и зеркала. Печатный локатор обязателен: «лежать на Drive» не даёт права цитировать",
@@ -2798,10 +2798,10 @@
    "kind": "file",
    "mime": "text/markdown",
    "bytes": 382778,
-   "name": "2026-10-25 — слепок 35_four_point_authors_mass_registry (круг 41: 209 строк, 382778 B, md5 f3287fd07d68e6e8cff2f09d88af3cb0).md",
+   "name": "УСТАРЕЛО — 2026-10-25 — слепок 35_four_point_authors_mass_registry (круг 41: 209 строк, 382778 B, md5 f3287fd07d68e6e8cff2f09d88af3cb0).md",
    "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
-   "role": "registry-mirror",
-   "rights": "mirror_of_git",
+   "role": "registry-mirror-superseded",
+   "rights": "HOLD_superseded",
    "readState": "registry_linked",
    "aboutRows": [],
    "citedBy": [],
@@ -2820,7 +2820,7 @@
    "uploadedAt": "2026-10-25T07:07:22Z",
    "chainNote": "двадцать четвёртый слепок подряд: … → 1BC_OMuz… (круг 39 шаг 1) → 1dq65I0w… (шаг 2) → 1Z9Xgs2x… (шаг 3) → 1Psn0V… (круг 40, 374 169 B) → этот (382 778 B); без пометки «УСТАРЕЛО» ровно он один",
    "measuredAtGit": "2026-10-25T07:09:30Z",
-   "note": "живое зеркало круга 41: залито upload_file в 2026-10-25T07:07:22Z (382 778 B), состояние прочитано get_file в том же часу — те же байты и md5 f3287fd07d68e6e8cff2f09d88af3cb0; семь свойств залиты вторым вызовом, mirror_of_git_commit будет дописан после коммита. Очередные адреса в записях зеркалов не дублируются: слепок описывает файл реестра, а не носитель материала",
+   "note": "слепок круга 41 целиком, вытеснен кругом 42: в дереве лежит 393 835 B / 1315 строк / md5 65afb416aab06493e34c04dc8007c964; отличается поднятием строки FP-133 (Каннингем) с C на A1 по унаследованному локатору и снятием адреса Q-133 с очереди; имя, описание, registry_role и права переведены одним движком в 2026-10-25T11:50:33Z, содержимое объекта не менялось; реестр для этой записи больше не читают",
    "registryCountsAsOfRound41": {
     "lines": 1301,
     "fileBytes": 382778,
@@ -2838,9 +2838,73 @@
     "shareA1FloorPercent": 14,
     "mirrorMd5": "f3287fd07d68e6e8cff2f09d88af3cb0",
     "how": "строки — шаблоном по началу строки таблицы, очередь — подсчётом строк очереди (определение правила 23), «добыть» — grep -c по строкам; классы по первому класс-токену; доля записана двумя числами, потому что правило 23 округляет, а сводка README делит нацело",
-    "measuredAt": "2026-10-25T07:09:30Z"
+    "measuredAt": "2026-10-25T07:09:30Z",
+    "recheck20261025r42": "класс строки FP-133 в дереве круга 42 поднят, и это разница между снимками, а не расхождение"
    },
    "pour24Note20261025": "имя и описание написаны по ответам upload_file / get_file этого часа, вытесненное имя — по ответу update_file на 1Psn0V…; цепочка: поиск по имени — 33 снимка, с пометкой «УСТАРЕЛО» — 32, список папки 05 — 43 объекта",
+   "lagBehindGit": true,
+   "supersededBy20261025r42": "1hiTlD-0pD7ibHGUU3-yk5tdTbvWt_8E0",
+   "retiredBy20261025r42": {
+    "at": "2026-10-25T11:50:33Z",
+    "how": "update_file (имя + описание + appProperties), состояние прочитано ответом того же вызова",
+    "note": "зеркалит дерево последнего коммита круга 41; его appProperties registry_classes намеренно оставлены как у круга 41 (A1=31,C=103)"
+   }
+  },
+  {
+   "folder": "05",
+   "driveId": "1hiTlD-0pD7ibHGUU3-yk5tdTbvWt_8E0",
+   "kind": "file",
+   "mime": "text/markdown",
+   "bytes": 393835,
+   "name": "2026-10-25 — слепок 35_four_point_authors_mass_registry (круг 42: 209 строк, 393835 B, md5 65afb416aab06493e34c04dc8007c964).md",
+   "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
+   "role": "registry-mirror",
+   "rights": "mirror_of_git",
+   "readState": "registry_linked",
+   "aboutRows": [
+    "FP-133"
+   ],
+   "citedBy": [],
+   "queueRows": [],
+   "locator": "",
+   "driveBytesClaimed": 393835,
+   "driveMd5Claimed": "65afb416aab06493e34c04dc8007c964",
+   "driveBytesVerified": 393835,
+   "driveMd5Verified": "65afb416aab06493e34c04dc8007c964",
+   "gitBytesAtUpload": 393835,
+   "gitFileLinesAtUpload": 1315,
+   "gitRowsAtUpload": 209,
+   "gitMd5AtUpload": "65afb416aab06493e34c04dc8007c964",
+   "gitSha256AtUpload": "eab4839403b00e39174decf56799bcd2ce6800aaad7df360792d38160c192c58",
+   "md5VerifiedFromDrive": true,
+   "uploadedAt": "2026-10-25T11:50:18Z",
+   "chainNote": "двадцать пятый слепок подряд: … → 1Z9Xgs2x… (круг 39 шаг 3) → 1Psn0V… (круг 40) → 1K6tYj7U9PtSS8menHwkSE1wj4bGoBl_i (круг 41) → этот (393 835 B); без пометки «УСТАРЕЛО» ровно он один",
+   "measuredAtGit": "2026-10-25T11:53:00Z",
+   "note": "живое зеркало круга 42: залито upload_file в 2026-10-25T11:50:18Z (393 835 B), состояние прочитано get_file в том же часу — те же байты и md5 65afb416aab06493e34c04dc8007c964; семь свойств залиты вторым вызовом, mirror_of_git_commit и rights будут дописаны после коммита. aboutRows называет строку, которую круг тронул, — на этот раз не носитель материала, а класс строки реестра; очередные адреса в записях зеркалов не дублируются",
+   "registryCountsAsOfRound42": {
+    "lines": 1315,
+    "fileBytes": 393835,
+    "registryRows": 209,
+    "queueAddresses": 102,
+    "dobytLines": 2,
+    "perClass": {
+     "A1": 32,
+     "A2": 35,
+     "B1": 34,
+     "B2": 6,
+     "C": 102
+    },
+    "shareA1Percent": 15,
+    "shareA1FloorPercent": 15,
+    "mirrorMd5": "65afb416aab06493e34c04dc8007c964",
+    "bothDefinitionsAgree": "впервые с круга 24: 32·100/209 = 15.31, округление и целое деление дают одно число",
+    "how": "строки — шаблоном по началу строки таблицы, очередь — подсчётом строк очереди (определение правила 23), «добыть» — grep -c по строкам; классы по первому класс-токену; доля записана двумя числами, потому что правило 23 округляет, а сводка README делит нацело",
+    "measuredAt": "2026-10-25T11:53:00Z"
+   },
+   "registryRowClasses": {
+    "FP-133": "A1"
+   },
+   "pour25Note20261025": "имя и описание написаны по ответам upload_file / get_file этого часа, вытесненное имя — по ответу update_file на 1K6tYj7U9PtSS8menHwkSE1wj4bGoBl_i; цепочка: поиск по имени — 34 снимка, с пометкой «УСТАРЕЛО» — 33, список папки 05 — 44 объекта",
    "lagBehindGit": false
   }
  ],
