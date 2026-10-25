@@ -976,6 +976,125 @@
         "RIGHTS_HOLD"
       ],
       "projectLevel": true
+    },
+    {
+      "id": "CLM-PHOS-IDENTITY",
+      "topic": "Text of the hymn",
+      "claim": "The received Greek text of Φῶς ἱλαρόν is six lines: an address to Christ as the gladsome light of the holy glory of the immortal Father; the coming of sunset and the evening light; the praise of Father, Son and Holy Spirit, God; and the declaration that the Son, giver of life, is worthy to be hymned at all times, so the world glorifies him.",
+      "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
+      "sourceIds": [
+        "SRC-PHOS-CPDL",
+        "SRC-PHOS-PRAVENC"
+      ],
+      "notes": [
+        "Read in full on the choral-library page; the six lines agree word for word with the Greek text quoted in the other witnesses seen in this pass.",
+        "The three adjectives οὐρανίου, ἁγίου, μάκαρος are genitive singular and formally agree with Πατρός; most modern translations attach them to Christ and the Greek leaves the question open. Recorded as a translation problem, not solved here."
+      ],
+      "holds": [
+        "LOCATOR_HOLD"
+      ],
+      "nextCheck": "Collate the six lines against a printed Greek Horologion or Plank 2001 before quoting the text as 'the received text' in copy."
+    },
+    {
+      "id": "CLM-PHOS-BASIL-73",
+      "topic": "Earliest testimony",
+      "claim": "Basil of Caesarea, De Spiritu Sancto 29.73 (c. 375), says that the fathers did not receive the evening light in silence, that the author of the lamp-lighting thanksgiving cannot be named, that the people utter 'the ancient form', and quotes the formula 'We praise Father, Son, and God's Holy Spirit'; he mentions the Hymn of Athenogenes separately, in the next sentence.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-PHOS-BASIL-DSS",
+        "SRC-PHOS-PRAVENC"
+      ],
+      "notes": [
+        "This establishes that the hymn existed and was already called ancient c. 375, and that the Trinitarian part at least existed then. It does not give a date of composition.",
+        "The Greek was not collated: the passage was read in the NPNF English translation."
+      ],
+      "holds": []
+    },
+    {
+      "id": "CLM-PHOS-AUTHORSHIP",
+      "topic": "Authorship",
+      "claim": "The author is unknown. The ascriptions to Athenogenes of Sebasteia and to Sophronius of Jerusalem are not established: the first arose from conflating two testimonies in Basil, the second is contradicted by papyrus P. Lond. 2037B (6th–7th c.), which is older than Sophronius.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-PHOS-PRAVENC",
+        "SRC-PHOS-BASIL-DSS"
+      ],
+      "notes": [
+        "The papyrus is known here only through the encyclopaedia article's report of Tripolitis 1970; it has not been seen.",
+        "Public copy must say 'author unknown' and may mention the attributions only as attributions."
+      ],
+      "holds": [
+        "ARCHIVE_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-PHOS-AC-HOLD",
+      "topic": "The Apostolic Constitutions claim",
+      "claim": "That the hymn is first recorded in the Apostolic Constitutions (usually cited as VIII.35) is widely repeated online but was not confirmed in this pass.",
+      "claimStatus": "EVIDENCE_HOLD",
+      "sourceIds": [
+        "SRC-PHOS-PRAVENC"
+      ],
+      "notes": [
+        "The scholarly encyclopaedia article read here does not ascribe the hymn to the Apostolic Constitutions at all; it attests it through Basil, the Palestinian Horologia, P. Lond. 2037B and the Armenian rite.",
+        "The text of Apostolic Constitutions VII–VIII could not be opened in this pass."
+      ],
+      "holds": [
+        "EVIDENCE_HOLD"
+      ],
+      "evidenceGap": "No primary text of the Apostolic Constitutions was read; the claim rests on popular web pages only.",
+      "nextCheck": "Read Apostolic Constitutions VII.47–VIII.35 in a critical text and determine whether the Greek text of Φῶς ἱλαρόν is present; until then the claim is not to be used in copy."
+    },
+    {
+      "id": "CLM-PHOS-DATING-OPEN",
+      "topic": "Date of composition",
+      "claim": "The date of composition is unknown. The hymn is called ancient by Basil c. 375; the oldest physical witness in this record is papyrus P. Lond. 2037B of the 6th–7th century.",
+      "claimStatus": "RESEARCH_OPEN",
+      "sourceIds": [
+        "SRC-PHOS-BASIL-DSS",
+        "SRC-PHOS-PRAVENC"
+      ],
+      "notes": [
+        "The popular '200 AD or earlier' figure was not verified in this pass and is not used.",
+        "Do not present any second- or third-century date as established."
+      ],
+      "holds": [
+        "ARCHIVE_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-PHOS-RU-TRADITION",
+      "topic": "Russian translation history",
+      "claim": "The hymn is sung in Russian worship in Church Slavonic ('Свете тихий'), which is not Russian. Russian prose translations exist and circulate in popular and seminary reference works. A singable Russian verse translation made from the Greek was not found in the sources opened in this pass.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-PHOS-AZBYKA",
+        "SRC-PHOS-SDAMP",
+        "SRC-PHOS-RUSKLINE-BALMONT",
+        "SRC-PHOS-CPDL"
+      ],
+      "notes": [
+        "'Not found' means not found in the sources opened in this pass, not 'does not exist'. The copy must say the same.",
+        "Balmont's reworking is a paraphrase with an added refrain, made from the Church Slavonic; it is recorded as a rejected precedent, not as a translation."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-PHOS-001-TRANSLATION",
+      "topic": "Our Russian text",
+      "claim": "PHOS-001-RU v0.1 is a verse translation of the six Greek lines into six Russian lines, in the order of the original, with no refrain, no repeated line, no added line and no rhyme, and with the suspended reference of the three genitive adjectives preserved.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-PHOS-CPDL"
+      ],
+      "notes": [
+        "Every departure and every rejected alternative is recorded in RESEARCH/DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md.",
+        "Checked against two independent Russian prose translations for sense; no wording was taken from either.",
+        "A working draft, not an owner-approved text."
+      ],
+      "holds": []
     }
   ]
 }

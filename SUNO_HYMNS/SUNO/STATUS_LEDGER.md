@@ -71,7 +71,7 @@
 - **Production state:** `ASSETS_PREPARED` — по сообщению владельца (2026-10-26) гимн сгенерирован, обложка есть, аудио и видео загружены в YouTube, пост — в Telegram. **В репозитории нет ни аудио, ни обложки, ни одной ссылки**, поэтому `publicPublicationStatus` остаётся `UNKNOWN_NOT_VERIFIED`: в этом проекте «опубликовано» без ссылки не пишется никогда.
 - **What is still missing from the record, in order:** the two public URLs (YouTube + Telegram); the cover file (name and path); the exact prompt that was submitted; the duration and export settings; and **which stanza-3 line was sung** — v0.9 «После земных невзгод» or v0.10 «Та, что за смертью придёт». If the recording predates v0.10, the audio and this repository disagree on one line, and that must be said out loud rather than glossed.
 - **Publication copies (2026-10-26) — used for the upload the owner reports; no receipts held:**
-- **Production lane closed at the owner's direction, 2026-10-25:** no new hymn goes into production. From here this project works on **research** — the melody lane first (`../RESEARCH/TUNE_DIRECTIONS_FROM_THE_2005_MELODY_REGISTER.md`, dossier `CANDIDATE_DUTCH-006`).
+- **The research-only freeze was lifted by the owner, 2026-10-26:** a new hymn is in production again, and it is not Dutch — see PHOS-001 below. The Dutch lane stays research-only for now (melody lane: `../RESEARCH/TUNE_DIRECTIONS_FROM_THE_2005_MELODY_REGISTER.md`, dossier `CANDIDATE_DUTCH-006`).
 - **Copy brought into range 2026-10-25:** the description stood above the channel's 3500–4600 range while no gate saw it. It now measures what `DUTCH-005_YOUTUBE.md` § 2 contains, the cut is tabulated in its § 7, and `check_copy_lengths.py` enforces both bounds.  - `DUTCH-005_YOUTUBE.md` — title options, description 4598 characters (12 bold, 5 italic), hidden tags, checklist, and the markup post-mortem in § 0.
   - `DUTCH-005_TELEGRAM.md` — post for @lordchrist in Telegram markup, with an HTML twin.
   - `DUTCH-005_PINNED.md` — two pinned YouTube comments (1772 and 1590 characters), 4 bold + 1 italic line and 6 bold + 2 italic lines, both gated.
@@ -82,6 +82,19 @@
 - **Biography date closed 2026-10-25:** the Utrecht ministry is dated by the 2005 introduction (A. Ros, printed p. 645): call 1652, entry **April 1653**, service until 1677. The 1644/1650/1653 in secondary sources are the three pastorates. Claim `CLM-L-UTRECHT-1653`; the description and the Telegram post read «с апреля 1653 года».
 - **Copy brought into range 2026-10-25:** the description measured 4881 against the channel's 3500–4600 range and no gate saw it. It is now 4598; the cut is tabulated in `DUTCH-005_YOUTUBE.md` § 7, and `check_copy_lengths.py` enforces both bounds.
 - **Do not confuse with:** DUTCH-002's brief (similar sound, different poem, different prompt) and the 1938 bundel's reworking of this text to a Bourgeois melody (a protected, later object).
+
+## PHOS-001 — «Свет отрадный» (Φῶς ἱλαρόν) — the ancient-hymn lane
+
+- **What it is:** the six-line Greek hymn sung at the lighting of the lamps, the earliest complete Christian hymn outside Scripture that is still in use. The owner asked for the oldest hymn after the Gospels, a Russian translation and a SUNO package (2026-10-26).
+- **Historical author:** unknown. Basil of Caesarea, *De Spiritu Sancto* 29.73 (c. 375), says he cannot name the author and calls the hymn an ancient form. The ascriptions to Athenogenes and to Sophronius are recorded as attributions only.
+- **Source anchor:** the received six-line Greek text, read in an open choral library; **a printed Horologion has not been collated** (`LOCATOR_HOLD`).
+- **Not established and not to be used in copy:** that the hymn is first recorded in the *Apostolic Constitutions* (VIII.35) — `EVIDENCE_HOLD`, `CLM-PHOS-AC-HOLD`; and any second- or third-century date of composition.
+- **Russian text:** `PHOS-001-RU v0.1` in `PHOS-001_LYRICS.md` — a verse **translation**, six lines into six lines, no refrain, no repeated or added line, no rhyme (declared per-work decision). Russian prose translations exist and were used as a sense check only; the Church Slavonic «Свете тихий» is not Russian and is not the source of our wording.
+- **Style:** five directions in `PHOS-001_STYLE.md`, `STYLE-PHOS-001-A`…`E`; A sits in the primary slot only because the registry must carry one prompt. None submitted.
+- **Production state:** `LYRIC_DRAFT`. **No generation, no audio, no cover, no export, no metadata readback.**
+- **Publication status:** `UNKNOWN_NOT_VERIFIED` — there is nothing to publish yet, and channel copy is deliberately not written before a take exists.
+- **Open:** owner's decisions on the title, on the refusal of rhyme and on keeping the suspended reference of the three genitive adjectives; collation of the Greek text; the *Apostolic Constitutions* check; P. Lond. 2037B seen in a catalogue.
+- **Package:** `PHOS-001_PRODUCTION_PACKAGE.md`; research: `../RESEARCH/DOSSIER_PHOS-001_PHOS_HILARON.md`; translation decisions: `../RESEARCH/DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md`.
 
 ## Adjacent works — keep out of the Dutch historical catalog
 
@@ -95,7 +108,8 @@ The conversation also included the Russian text beginning «Не те иудеи
 
 ## Open QA queue
 
-0. DUTCH-005: close the stanza 3.2 defect, choose the cover and the title separator, then generate. Do not treat the existing copies as approved copy — the owner has not signed off the lyric.
+0. PHOS-001: owner decisions (title, rhyme, the three genitives), then a first generation; channel copy after the take.
+0b. DUTCH-005: close the stanza 3.2 defect, choose the cover and the title separator, then generate. Do not treat the existing copies as approved copy — the owner has not signed off the lyric.
 1. Recover exact source lyrics and verbatim Suno prompts for DUTCH-001/002/003.
 2. Verify MP3 tags and cover embedding by reading actual files.
 3. Identify the final approved DUTCH-003 cover; preserve muted/cool cinematic grading.

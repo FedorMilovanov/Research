@@ -779,3 +779,56 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Limits / next action:** Locators: 1676 text `lode002uyt_01_01_0062.php` (pp. 158–160); 2005 item 57, pp. 268–271; register pp. 663–664. The print abbreviates the closing couplet to `Dat is om uwent wil, O! etc.` in stanzas VI–XI and varies it otherwise, so an adaptation must neither add nor restore those lines. **Held:** the text layer stops before the final rhyme word of stanza XV (`mijn eer`), so the closing line needs the page image of p. 160. Camphuysen's song is named but not acquired, and no melody claim follows from the direction.
 
 **HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD
+
+## Ancient-hymn lane (PHOS-001) — added 2026-10-26
+
+### CLM-PHOS-IDENTITY — text of the hymn
+
+**Claim:** the received Greek text of Φῶς ἱλαρόν is six lines: address to Christ as the gladsome light of the holy glory of the immortal Father; the coming of sunset and the evening light; praise of Father, Son and Holy Spirit, God; the Son, giver of life, worthy to be hymned at all times, so the world glorifies him.
+
+**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION · **Sources:** SRC-PHOS-CPDL, SRC-PHOS-PRAVENC · **HOLDs:** LOCATOR_HOLD
+**Limits / next action:** read in a community transcription; collate against a printed Horologion or Plank 2001 before quoting it as "the received text".
+
+### CLM-PHOS-BASIL-73 — earliest testimony
+
+**Claim:** Basil, *De Spiritu Sancto* 29.73 (c. 375), says the author of the lamp-lighting thanksgiving cannot be named, that the people utter "the ancient form", and quotes "We praise Father, Son, and God's Holy Spirit"; the Hymn of Athenogenes is mentioned separately.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC · **HOLDs:** none
+**Limits / next action:** read in the NPNF English translation, Greek not collated. Establishes antiquity by c. 375, not a date of composition.
+
+### CLM-PHOS-AUTHORSHIP — authorship
+
+**Claim:** the author is unknown; the ascriptions to Athenogenes and to Sophronius are not established — the first from a conflation of two testimonies in Basil, the second contradicted by P. Lond. 2037B (6th–7th c.).
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-DSS · **HOLDs:** ARCHIVE_HOLD
+**Limits / next action:** the papyrus is known only through the encyclopaedia's report; see it in a catalogue.
+
+### CLM-PHOS-AC-HOLD — the Apostolic Constitutions claim
+
+**Claim:** that the hymn is first recorded in the *Apostolic Constitutions* (VIII.35) is widely repeated online and was **not confirmed**.
+
+**Review state:** EVIDENCE_HOLD · **Sources:** SRC-PHOS-PRAVENC · **HOLDs:** EVIDENCE_HOLD
+**Evidence gap:** no primary text of the Apostolic Constitutions was read.
+**Limits / next action:** read VII.47–VIII.35 in a critical text; until then the claim is not used in copy.
+
+### CLM-PHOS-DATING-OPEN — date of composition
+
+**Claim:** the date of composition is unknown; the hymn is called ancient by Basil c. 375; the oldest physical witness in this record is P. Lond. 2037B.
+
+**Review state:** RESEARCH_OPEN · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC · **HOLDs:** ARCHIVE_HOLD
+**Limits / next action:** the popular "200 AD or earlier" is unverified here and is not used.
+
+### CLM-PHOS-RU-TRADITION — Russian translation history
+
+**Claim:** the hymn is sung in Russian worship in Church Slavonic, which is not Russian; Russian prose translations exist; a singable Russian verse translation from the Greek was not found in the sources opened in this pass.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-AZBYKA, SRC-PHOS-SDAMP, SRC-PHOS-RUSKLINE-BALMONT, SRC-PHOS-CPDL · **HOLDs:** RIGHTS_HOLD
+**Limits / next action:** "not found" means not found in the sources opened, not "does not exist"; the copy must say the same. Balmont's paraphrase with its added refrain is a rejected precedent.
+
+### CLM-PHOS-001-TRANSLATION — our Russian text
+
+**Claim:** `PHOS-001-RU v0.1` is a verse translation of six Greek lines into six Russian lines, in the original order, with no refrain, no repeated line, no added line and no rhyme, keeping the suspended reference of the three genitive adjectives.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-CPDL · **HOLDs:** none
+**Limits / next action:** every choice and every rejected alternative is in `DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md`; a working draft, not an owner-approved text.
+

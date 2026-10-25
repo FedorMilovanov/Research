@@ -1297,6 +1297,151 @@
       "limits": [
         "A hobby reference site, seen through a search rendering, not opened; secondary and not citable for anything but the association itself."
       ]
+    },
+    {
+      "id": "SRC-PHOS-PRAVENC",
+      "title": "«Свете тихий» — Православная энциклопедия, т. 62, с. 54–55 (свящ. Михаил Желтов)",
+      "url": "https://www.pravenc.ru/text/2662040.html",
+      "type": "Scholarly encyclopaedia article on the hymn, its rite position, transmission and bibliography",
+      "evidenceClass": "B1",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "supports": [
+        "The hymn is a fixed part of Vespers in all post-iconoclast Byzantine monastic Typika and is not omitted even at Pascha, while the Hagia Sophia cathedral rite did not have it",
+        "It stands in the earliest Palestinian Horologia; many manuscripts and editions, including the modern Russian Horologion, ascribe it to Sophronius of Jerusalem",
+        "The attribution to Sophronius is probably wrong because the hymn already appears in a 6th–7th century papyrus, P. Lond. 2037B (Tripolitis 1970)",
+        "Basil, De Spiritu Sancto 73, is understood by ancient and modern authors alike as referring to this hymn, and quotes the Trinitarian formula 'We praise Father and Son and the Holy Spirit of God'",
+        "The attribution to Athenogenes arose from conflating two distinct testimonies in Basil",
+        "The hymn falls into three parts: Christological, Trinitarian, and Christological again",
+        "The opening has a parallel in the ancient acclamation Φῶς ἀγαθόν before a lamp (Varro, De lingua Latina VI 4), a derivation some scholars reject"
+      ],
+      "limits": [
+        "A secondary encyclopaedia article, not a critical edition: it reports the papyrus and the manuscript position without printing an apparatus",
+        "It does NOT ascribe the hymn to the Apostolic Constitutions; the widespread 'first recorded in the Apostolic Constitutions VIII.35' is therefore not supported by the source read here and is held open",
+        "The papyrus itself was not seen; only the article's report of it"
+      ]
+    },
+    {
+      "id": "SRC-PHOS-BASIL-DSS",
+      "title": "Basil of Caesarea, De Spiritu Sancto 29.73 — NPNF translation (Schaff)",
+      "url": "https://www.newadvent.org/fathers/3203.htm",
+      "type": "Primary patristic text in a public-domain English translation",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "PROMOTE",
+      "holds": [],
+      "supports": [
+        "The fathers did not receive the evening light in silence but gave thanks at its appearing",
+        "The author of the lamp-lighting thanksgiving is unknown to Basil ('Who was the author of these words of thanksgiving at the lighting of the lamps, we are not able to say')",
+        "The people utter 'the ancient form', and the quoted formula is 'We praise Father, Son, and God's Holy Spirit'",
+        "The Hymn of Athenogenes is mentioned as a different thing, in the following sentence"
+      ],
+      "limits": [
+        "Read in the NPNF English translation (§ 73 and the opening of §§ 74–75); the Greek was not collated",
+        "This proves that the hymn existed and was called ancient c. 375, not when it was composed"
+      ]
+    },
+    {
+      "id": "SRC-PHOS-CPDL",
+      "title": "ChoralWiki (CPDL), 'Phos Hilaron' — Greek text and translations",
+      "url": "https://www.cpdl.org/wiki/index.php/Phos_Hilaron",
+      "type": "Community choral library page carrying the Greek text and English versions",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "The six-line received Greek text used for the translation",
+        "The existence of an English verse tradition and of the Church Slavonic 'Svyete tikhii'",
+        "The hymn is an evening hymn sung at the lighting of the lamps"
+      ],
+      "limits": [
+        "A community transcription, not an edition: it carries no apparatus and no manuscript sigla",
+        "The Greek text is public domain and is reproduced as text; the page's editorial matter is not reproduced",
+        "A printed Greek Horologion or a critical edition (Plank 2001) has not been collated — that is what LOCATOR_HOLD records"
+      ]
+    },
+    {
+      "id": "SRC-PHOS-AZBYKA",
+      "title": "Азбука веры, статья «Свете Тихий» — церковнославянский текст, русский перевод, толкование",
+      "url": "https://azbyka.ru/svete-tixij",
+      "type": "Popular Orthodox reference site; carries a Russian prose translation of the hymn",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "A Russian prose translation of the hymn circulates: 'О Отрадный Свет святой славы Бессмертного Отца Небесного, Святого Блаженного, Иисус Христос!…'",
+        "The Church Slavonic word 'тихий' in this hymn was understood as 'исполненный светлой радости'"
+      ],
+      "limits": [
+        "Read as a search excerpt, not as a full page: quotes above are the excerpt's wording",
+        "Popular reference, not a scholarly source; the translator of the Russian text is not named on the excerpt",
+        "Used to establish that a Russian prose translation exists, never as the source of our wording"
+      ]
+    },
+    {
+      "id": "SRC-PHOS-SDAMP",
+      "title": "Московская Сретенская духовная академия, «Песнопение вечерни „Свете Тихий“: богословско-филологический комментарий»",
+      "url": "https://sdamp.ru/news/n13275/",
+      "type": "Seminary commentary with a working Russian translation of the hymn",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "A second independent Russian prose translation exists: 'Иисусе Христе, Тихий (ясный, радостный) Свет святой славы Бессмертнаго Отца Небеснаго, Святаго Блаженнаго!…'",
+        "ἱλαρόν is glossed with a range that includes 'мягкий, снисходительный, тишайший' and, elsewhere, 'яркий, золотистый, радостный'"
+      ],
+      "limits": [
+        "Read as a search excerpt, not as a full page",
+        "A teaching text, not an edition; some of its renderings are explanatory paraphrases ('голосами святых людей') rather than the sense of αἴσιαι"
+      ]
+    },
+    {
+      "id": "SRC-PHOS-RUSKLINE-BALMONT",
+      "title": "Л. Яцкевич, «Свете тихий… Заметки литературоведа» (Русская линия, 2018) — цитирует переложение К. Бальмонта",
+      "url": "https://ruskline.ru/analitika/2018/02/14/svete_tihij",
+      "type": "Literary essay quoting a Russian poetic reworking of the hymn",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "The Church Slavonic 'Свете тихий' is described as a translation from the Greek original of one of the earliest hymns of the early Church",
+        "Konstantin Balmont made an artistic reworking of the prayer, quoted with a repeated refrain 'Свете тихий, сияй нам, сияй нам, Свете тихий, сияй без конца'"
+      ],
+      "limits": [
+        "Only the opening of the essay was read",
+        "Balmont's text is a paraphrase with an added refrain, not a translation; it is recorded so that nobody mistakes it for one, and it is not used"
+      ]
     }
   ]
 }

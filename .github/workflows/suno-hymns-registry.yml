@@ -99,7 +99,12 @@ jobs:
       - name: Check the Russian lyric (ё, selective stress marks)
         # This gate existed but was never wired, while two documents claimed it
         # ran in CI. It enforces the ё rule and rejects blanket stress marking.
-        run: python3 SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/DUTCH-005_LYRICS.md SUNO_HYMNS/SUNO/DUTCH-005_LYRICS_SUNO.md
+        run: |
+          set -euo pipefail
+          python3 SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/DUTCH-005_LYRICS.md SUNO_HYMNS/SUNO/DUTCH-005_LYRICS_SUNO.md
+          # The ancient-hymn lane is wired into the same gate; a lyric written after
+          # the gate was built is exactly the one that would never be checked.
+          python3 SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/PHOS-001_LYRICS.md SUNO_HYMNS/SUNO/PHOS-001_LYRICS_SUNO.md
 
       - name: Check that the prose names the current revision
         # Structural validation cannot see that four documents still describe the

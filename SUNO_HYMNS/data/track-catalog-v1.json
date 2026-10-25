@@ -529,6 +529,135 @@
       ],
       "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
       "publicationNote": "Owner reports (2026-10-26) that the hymn was generated, given a cover, and uploaded to YouTube and Telegram. No URL, file, duration or export setting is held in this repository, so publication stays UNKNOWN_NOT_VERIFIED; add publicationReceipts and only then flip the state."
+    },
+    {
+      "id": "PHOS-001",
+      "displayTitle": "Свет отрадный — working title, not approved",
+      "displayTitleStatus": "WORKING_DRAFT",
+      "originalTitleVariants": [
+        "Φῶς ἱλαρόν",
+        "Phos Hilaron",
+        "Lumen Hilare",
+        "Свете тихий (Church Slavonic, not Russian)"
+      ],
+      "historicalAuthor": {
+        "name": "Anonymous",
+        "years": "unknown",
+        "role": "author, name not preserved"
+      },
+      "textCategory": "Six-line Greek hymn sung at the lighting of the lamps; Christological address, Trinitarian doxology, Christological close",
+      "sourceChain": [
+        "Greek received text, six lines, transcribed from an open choral library and cross-checked against other online witnesses",
+        "Basil of Caesarea, De Spiritu Sancto 29.73 (c. 375), read in the NPNF English translation",
+        "Russian verse translation PHOS-001-RU v0.1, authored in this repository"
+      ],
+      "tuneDirection": "No historical melody is claimed. The Greek tradition sings the hymn to a modal chant; the melodies printed for the Church Slavonic 'Свете тихий' belong to the 17th–19th centuries. Any recording here is a modern setting.",
+      "structure": {
+        "lines": 6,
+        "parts": 3,
+        "note": "Lines 1–2 address Christ; lines 3–4 give the occasion (sunset, evening light) and the Trinitarian praise; lines 5–6 declare the Son worthy of praise at all times and close with the world's glorification. No refrain and no printed repetition. Russian line lengths, counted by machine: 14, 17, 14, 16, 20, 16 syllables; no metre is claimed.",
+        "source": "the six-line received text, as read in this pass"
+      },
+      "productionState": "LYRIC_DRAFT",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "CAPTURED_IN_REPOSITORY",
+      "versions": [
+        {
+          "versionId": "PHOS-001-RU-v0.1",
+          "versionKind": "LYRIC_DRAFT_ONLY",
+          "productionPackage": "SUNO/PHOS-001_PRODUCTION_PACKAGE.md",
+          "promptCapture": "CAPTURED_IN_REPOSITORY",
+          "promptState": "AUTHORED_NOT_YET_SUBMITTED",
+          "promptId": "PROMPT-PHOS-001-V1",
+          "promptText": "ancient Greek Orthodox lamp-lighting hymn, through-composed, a cappella, one male cantor singing a clear modal melody in a Byzantine-flavoured mode on E, a male choir holding a soft ison drone on the tonic beneath him, the drone entering only after the first two lines, strictly syllabic declamation, one syllable per note, no melisma, no vocal runs, no vibrato, natural diction, narrow range, a firm slow pulse rather than free drifting rubato, short two-bar breath of silence as the introduction, the whole six-line Russian text sung once from beginning to end with no repeats and no chorus, then a short held final chord and silence, large but clean stone-church acoustic with an intelligible forward cantor, no percussion, no organ, no strings, no synthesizers",
+          "promptFields": {
+            "exclude": "melisma, vocal runs, vibrato, whisper, husky voice, excessively low bass lead, percussion, organ, strings, synthesizers, long instrumental interludes, repeated lines, chorus",
+            "sections": "[Intro] / [Verse] / [Outro]; the six lines are one pass, not six stanzas",
+            "repetition": "None. The text is sung once; a repeated line or stanza is a defect and the take is regenerated.",
+            "completeness": "All six lines, in order, no cuts; if a line is dropped, regenerate rather than cut the text"
+          },
+          "promptSource": "Authored in this repository on 2026-10-26 (SUNO/PHOS-001_STYLE.md). Five directions, never submitted to SUNO.",
+          "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
+          "lyricRevisionNote": "v0.1: verse translation of the six Greek lines, in order, no refrain, no repeated or added line, no rhyme (declared per-work decision against the channel's rhyme default, because the Greek has neither metre nor rhyme and six lines of this length rhyme only at the cost of words the source does not have). The suspended reference of the three genitive adjectives is preserved. Syllable counts counted by machine: 14, 17, 14, 16, 20, 16. Five stress marks in the stage text.",
+          "assets": {},
+          "generatedOutput": "NONE",
+          "audioExport": "NONE",
+          "cover": "NONE",
+          "metadataReadback": "NOT_APPLICABLE",
+          "qaStatus": "OPEN",
+          "lyricFiles": {
+            "clean": "SUNO/PHOS-001_LYRICS.md",
+            "sunoReady": "SUNO/PHOS-001_LYRICS_SUNO.md",
+            "style": "SUNO/PHOS-001_STYLE.md"
+          },
+          "promptDocuments": [
+            "SUNO/PHOS-001_STYLE.md"
+          ],
+          "styleVariants": [
+            {
+              "id": "STYLE-PHOS-001-A",
+              "label": "Greek cantor with ison drone, a cappella",
+              "status": "PRIMARY_SLOT_NOT_PREFERRED",
+              "inFile": "SUNO/PHOS-001_STYLE.md §A"
+            },
+            {
+              "id": "STYLE-PHOS-001-B",
+              "label": "Unison male schola in an early Latin-rite idiom, a cappella",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/PHOS-001_STYLE.md §B"
+            },
+            {
+              "id": "STYLE-PHOS-001-C",
+              "label": "Russian Znamenny chant, low male choir, a cappella",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/PHOS-001_STYLE.md §C"
+            },
+            {
+              "id": "STYLE-PHOS-001-D",
+              "label": "Restrained chamber setting: tenor-baritone, cello, contrabass, chamber organ",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/PHOS-001_STYLE.md §D"
+            },
+            {
+              "id": "STYLE-PHOS-001-E",
+              "label": "Renaissance four-part polyphony, a cappella",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/PHOS-001_STYLE.md §E"
+            }
+          ],
+          "styleVariantNote": "Five distinct directions are required per work. A occupies the primary slot only because the registry must carry one promptText; the owner chooses. All five are syllabic, intelligible-lead, one pass of the text, no invented chorus. None has been submitted."
+        }
+      ],
+      "authorId": "ANON-PHOS-001",
+      "workType": "ANCIENT_GREEK_LAMPLIGHTING_HYMN",
+      "sourceIds": [
+        "SRC-PHOS-PRAVENC",
+        "SRC-PHOS-BASIL-DSS",
+        "SRC-PHOS-CPDL",
+        "SRC-PHOS-AZBYKA",
+        "SRC-PHOS-SDAMP",
+        "SRC-PHOS-RUSKLINE-BALMONT"
+      ],
+      "claimIds": [
+        "CLM-PHOS-IDENTITY",
+        "CLM-PHOS-BASIL-73",
+        "CLM-PHOS-AUTHORSHIP",
+        "CLM-PHOS-AC-HOLD",
+        "CLM-PHOS-DATING-OPEN",
+        "CLM-PHOS-RU-TRADITION",
+        "CLM-PHOS-001-TRANSLATION"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "Six lines, three parts. The Greek leaves the reference of the three genitive adjectives open; so does the Russian. No refrain, no printed repetition, no metre. The date of composition is unknown and is not asserted; the popular 'Apostolic Constitutions VIII.35' claim is under EVIDENCE_HOLD and may not be used in copy. Package: SUNO/PHOS-001_PRODUCTION_PACKAGE.md.",
+      "rightsNote": "The Greek text is public domain and is reproduced as text only; no modern critical edition is quoted. Church Slavonic and existing Russian translations are not reproduced. The Russian text v0.1 is authored here.",
+      "openChecks": [
+        "Owner decision on the working title «Свет отрадный».",
+        "Owner decision on the refusal of rhyme and on keeping the suspended reference of the three genitives.",
+        "Collate the Greek text against a printed Horologion or Plank 2001 (LOCATOR_HOLD).",
+        "Read Apostolic Constitutions VII–VIII and close or confirm CLM-PHOS-AC-HOLD.",
+        "See P. Lond. 2037B in a catalogue or image (ARCHIVE_HOLD).",
+        "Channel copy (title, description, pinned comments, Telegram) is deliberately not written yet: it must describe the take that exists."
+      ]
     }
   ],
   "adjacentNonDutchWorks": [

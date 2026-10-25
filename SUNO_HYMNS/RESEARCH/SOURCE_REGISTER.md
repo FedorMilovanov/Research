@@ -701,3 +701,50 @@ The nine entries below were added after reading the 1676 printing directly, the 
 - HOLDs: RIGHTS_HOLD
 - Supports: That 'Un jour m'en alloit &c.' is the printed direction for texts 27 and 56; That 'Prendete la' and item 9's incipit 'Gy laat, dien gy vind rede staan' key the same texts 9 and 32; That 't En is niet alle tijd, &c.' is the direction for texts 41 and 57; That text 131 is directed to Psalm 6; That texts 34, 35 and 52 share three direction strings
 - Limits / caveats: An index of direction STRINGS, not of melodies: two poems under one heading need not have shared a tune, and the register files 27 with 56 while the apparatus says our melody is not text 27's. A second string is usually a second key to the same tune (item 9's incipit), which is the shape of the old 'Bourgeois or psalm 42' false dichotomy. Copyrighted: only the entries used may be transcribed, never the register wholesale.
+
+## Ancient-hymn lane (PHOS-001) — added 2026-10-26
+
+The Greek lane is registered in the same file as the Dutch one because it is the same project and the same evidence policy. The six records below support the Φῶς ἱλαρόν dossier; their full field set lives in `../data/source-registry-v1.json`.
+
+### SRC-PHOS-PRAVENC — «Свете тихий», Православная энциклопедия, т. 62, с. 54–55
+
+- URL: https://www.pravenc.ru/text/2662040.html
+- Evidence class: B1 · Access: FULL_OBJECT_VERIFIED · Locator: EXACT_LOCATOR_VERIFIED · Rights: PERMISSION_REQUIRED · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
+- Supports: the hymn's fixed place in all post-iconoclast Byzantine monastic Vespers and its absence from the Hagia Sophia rite; its presence in the earliest Palestinian Horologia; the Sophronius ascription and why it is probably wrong (P. Lond. 2037B, 6th–7th c.); Basil, *De Spiritu Sancto* 73, as the earliest testimony, with the Trinitarian formula; the Athenogenes conflation; the three-part structure; the Φῶς ἀγαθόν parallel in Varro.
+- Limits: a secondary encyclopaedia article, not an edition. It does **not** ascribe the hymn to the *Apostolic Constitutions* — which is why that claim is under `EVIDENCE_HOLD`.
+
+### SRC-PHOS-BASIL-DSS — Basil of Caesarea, *De Spiritu Sancto* 29.73
+
+- URL: https://www.newadvent.org/fathers/3203.htm
+- Evidence class: A1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: PUBLICATION_ELIGIBLE · Publication: PROMOTE · HOLDs: none
+- Supports: the verbatim statement that the author of the lamp-lighting thanksgiving cannot be named, that the people utter "the ancient form", and the quoted formula "We praise Father, Son, and God's Holy Spirit"; the Hymn of Athenogenes is named separately, in the next sentence.
+- Limits: read in the NPNF English translation; the Greek was not collated. Proves antiquity by c. 375, not a date of composition.
+
+### SRC-PHOS-CPDL — ChoralWiki (CPDL), "Phos Hilaron"
+
+- URL: https://www.cpdl.org/wiki/index.php/Phos_Hilaron
+- Evidence class: C · Access: FULL_OBJECT_VERIFIED · Locator: COARSE_LOCATOR_ONLY · Rights: PUBLICATION_ELIGIBLE · Publication: REFERENCE · HOLDs: LOCATOR_HOLD
+- Supports: the six-line received Greek text used for the translation; the Church Slavonic "Svyete tikhii" as an existing version.
+- Limits: a community transcription with no apparatus and no sigla. The Greek text is public domain and is reproduced as text; a printed Horologion or Plank 2001 has not been collated.
+
+### SRC-PHOS-AZBYKA — Азбука веры, «Свете Тихий»
+
+- URL: https://azbyka.ru/svete-tixij
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: LOCATOR_MISSING · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: a Russian **prose** translation circulates; the Church Slavonic "тихий" was understood as "исполненный светлой радости".
+- Limits: read as a search excerpt; popular reference; the translator is not named. Used to establish that a Russian prose translation exists, never as the source of our wording.
+
+### SRC-PHOS-SDAMP — Сретенская духовная академия, комментарий к «Свете Тихий»
+
+- URL: https://sdamp.ru/news/n13275/
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: LOCATOR_MISSING · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: a second independent Russian prose translation; the gloss range of ἱλαρόν.
+- Limits: read as a search excerpt; a teaching text, some renderings are explanatory paraphrase.
+
+### SRC-PHOS-RUSKLINE-BALMONT — Л. Яцкевич, «Свете тихий… Заметки литературоведа» (2018)
+
+- URL: https://ruskline.ru/analitika/2018/02/14/svete_tihij
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: the Church Slavonic text is a translation from the Greek; Balmont's reworking exists and carries an added refrain.
+- Limits: only the opening of the essay was read. Balmont is recorded as a rejected precedent, not used.
+

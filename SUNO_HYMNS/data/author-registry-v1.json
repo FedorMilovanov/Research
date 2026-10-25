@@ -33,7 +33,7 @@
       ],
       "notes": [
         "Do not treat all Uyt-spanningen entries as a uniform public-worship hymnbook.",
-    "Ministry dates: Zoetermeer 1644, Sluis 1650, Utrecht from April 1653 to 1677 — 2005 critical-edition introduction, p. 645, read 2026-10-25. Sources that give 1644, 1650 and 1653 are listing the three pastorates, not disagreeing.",
+        "Ministry dates: Zoetermeer 1644, Sluis 1650, Utrecht from April 1653 to 1677 — 2005 critical-edition introduction, p. 645, read 2026-10-25. Sources that give 1644, 1650 and 1653 are listing the three pastorates, not disagreeing.",
         "I. and II. Hert-sterckte in Jehova are distinct poems: I on printed pp. 78-81 (28 December 1673), II on pp. 82-84 (4 January 1674), sung to I's tune.",
         "In December 1673 he was held as a French hostage away from Utrecht; the four consolation songs of that exile were printed in 1674 as 'Meditatien over eenige van 's Heeren Gods Eygenschappen'."
       ]
@@ -83,6 +83,29 @@
       "notes": [
         "Hy droech onse smerten is a sonnet; the 1630 first edition is not independently acquired in this project.",
         "No original tune direction is verified."
+      ]
+    },
+    {
+      "id": "ANON-PHOS-001",
+      "canonicalName": "Anonymous — the author of Φῶς ἱλαρόν",
+      "nameVariants": [
+        "Athenogenes of Sebasteia (attributed, not established)",
+        "Sophronius of Jerusalem (attributed, not established)"
+      ],
+      "russianDisplayName": "автор неизвестен",
+      "lifeDates": "unknown",
+      "roles": [
+        "hymnographer, name not preserved"
+      ],
+      "context": "Greek Christian hymn sung at the lighting of the lamps; already called ancient and anonymous by Basil of Caesarea c. 375",
+      "sourceIds": [
+        "SRC-PHOS-PRAVENC",
+        "SRC-PHOS-BASIL-DSS"
+      ],
+      "notes": [
+        "Basil writes that he cannot say who composed the lamp-lighting thanksgiving; that is the earliest and the strongest statement about authorship.",
+        "Athenogenes of Sebasteia (m. c. 305/311) is named because Basil mentions his hymn in the next sentence; the two testimonies were conflated. Sophronius of Jerusalem (560-638) is the ascription printed in the modern Russian Horologion and is contradicted by P. Lond. 2037B.",
+        "Neither attribution may be stated in public copy as fact."
       ]
     }
   ]

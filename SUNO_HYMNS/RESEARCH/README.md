@@ -2,6 +2,8 @@
 
 ## Scope
 
+The Dutch lane was joined on 2026-10-26 by a second lane: **ancient Greek and Latin hymns**, catalogued separately in `ANCIENT_HYMNS_CATALOG.md`. Its first work is PHOS-001 (Φῶς ἱλαρόν); its evidence rules are the same ones below, and its dossier is `DOSSIER_PHOS-001_PHOS_HILARON.md`.
+
 Build a source-grounded history of Dutch Reformed devotional songs and poems used as the basis for modern Russian musical adaptations. Initial authors are Jodocus van Lodenstein, Abraham Rutgers as later reviser, and Jacobus Revius. The wider history of Dutch hymnody and psalmody is a connected research lane, not a synonym for the three current tracks.
 
 Establish original titles and spelling variants, historical genre, composition and publication dates separately, first publication and exact edition, biblical/historical context, author/translator/adapter/reviser roles, melody directions and sources, later hymnbook transmission, exact locators, access and rights boundaries.
