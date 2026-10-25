@@ -62,9 +62,18 @@
 | Стивен Чарнок — 08 Adams and Veal To The Reader PRIMARY EPISTLE | `1CaRgPmxNv7WgRFsdzvu0goiSxkdiVTRj` |
 | Стивен Чарнок — 09 Johnson Funeral Sermon 1680 PRIMARY TRANSCRIPTION | `1g7hKc_a9UCJUNOe1iX5_wCtoulwJLpR8` |
 | Стивен Чарнок — 10 Repo Usage Ledger and Verification Status | `1_qMSTz2ls9LmG9GFSBkk2uX_YhRE35Ec` |
+| Стивен Чарнок — 11 WOOD Athenae Oxonienses 1691 PRIMARY TRANSCRIPTION | `1LuGCoTVIGriY20cTLd_E7sW8cQhsZ71i` |
 
 Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
 и не являются цитируемым material.
+
+**Состояние зеркал на 2026-10-25, коммит `aaa4168`.** Зеркало тома 11 (Wood) загружено полностью.
+Зеркала томов **01, 02, 03, 05**, Чарнокского `00 README AND NAVIGATION`, а также
+`БИОГРАФИИ 00 README AND NAVIGATION` и настоящего ledger **отстают**: они загружены до получения
+Wood (`A71277.0001.001`) и потому не содержат вход [429], Fasti 1654, `CONFLICT-12` и усиления
+`CLAIM-06`. Авторитетная копия — **репозиторий**, коммит `aaa4168` и позже. До повторной загрузки
+Drive-копии этих семи объектов считаются `SUPERSEDED` относительно репозитория; расхождение
+зафиксировано здесь, а не замалчивается.
 
 ### 2.2. Custody-статус
 
