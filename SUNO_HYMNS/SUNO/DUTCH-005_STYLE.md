@@ -1,6 +1,6 @@
 # DUTCH-005 — style
 
-**«Слава Господня»** — Йодокус ван Лоденстейн (1620–1677)
+**«Хвала Славе»** — Йодокус ван Лоденстейн (1620–1677)
 *Heerlijckheyds Loff*, *Uyt-spanningen*, 1676, printed pp. 155–158.
 
 **Status:** five directions, all `DOCUMENTED_NOT_YET_SUBMITTED` — written in this repository, **never submitted to SUNO**. None is chosen; the choice is the owner's. `STYLE-DUTCH-005-A` is marked **primary** only because the registry must carry one `promptText`, not because it is preferred.

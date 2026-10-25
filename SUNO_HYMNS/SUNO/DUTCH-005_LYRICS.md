@@ -1,10 +1,10 @@
 # DUTCH-005 — lyrics
 
-**«Слава Господня»** — Йодокус ван Лоденстейн (1620–1677)
+**«Хвала Славе»** — Йодокус ван Лоденстейн (1620–1677)
 *Heerlijckheyds Loff*, *Uyt-spanningen*, 1676, printed pp. 155–158 — collated against the ninth edition, 1727.
 
 **Revision:** `DUTCH-005-RU v0.8` — replaces v0.7. **Rhymed** (standard B), with a native-speaker pass on syntax applied over it.
-**Status:** working draft, **not approved**.
+**Status:** working draft, **not approved**. The **title** is approved («Хвала Славе», 2026-10-25); the wording is not.
 
 This file holds the **clean lyric only**: no tags, no prompts, no stress marks. Performable version: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md). Rhyme analysis: [`../RESEARCH/RHYME_PLAN_DUTCH-005.md`](../RESEARCH/RHYME_PLAN_DUTCH-005.md). Gloss and deviations: [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3, §5.
 
@@ -157,6 +157,10 @@ A long review arrived aimed at v0.5 (it could not see the repository). Eight of 
 3. **"`Где Иисуса — любить` needs a finite verb."** The Dutch has an infinitive (`lieven`), and the tripled word is an infinitive in stanzas 7–10. A finite form in one stanza and an infinitive in the next breaks the device that holds the poem together. The dash went; the infinitive stayed.
 4. **"Remove the echo `(хвалить)`."** Kept, and flagged: it is one added repetition where the Dutch has three, and the owner has not objected to it. If it proves unnecessary in a real take, it goes.
 
+## Title change — 2026-10-25
+
+Not a wording change: every line of v0.8 is untouched. The heading went from «Слава Господня» to **«Хвала Славе»** on the owner's decision, because `Loff` is *praise* and the Dutch title contains no `Heere`. See § Title above.
+
 ## Rhyme after v0.8 — standard B
 
 | St. | lines 2 & 4 | close ↔ call | Verdict |
@@ -197,9 +201,18 @@ Statement lines 5–10, call 5–10, tripled 6–11, close 6–11. **No regular 
 
 `Dit steelt mijn hert en al` is that Beauty — what the earthly pleasures are "but a shadow **of**". Russian cannot use a neuter «это» here: it re-attaches to the earthly list two lines above and turns the stanza into love of shadows. Hence the direct «Ты», the same «Ты» stanza 8 has just used.
 
-## Title
+## Title — decided
 
-`Heerlijckheyds Loff` is literally **«Хвала славе»** — `Loff` = praise. The working title «Слава Господня» drops "praise" and adds "Господня", and the 1676 contents list a **different** hymn, `'s Heeren Heerlijckheyts Loff`, whose title it matches more closely. `Loff` is praise and `Heerlijckheyd` is glory, and the poem's own tenth stanza sets the two side by side — `Iesus lof en Heerlijckheyd!` (10.4), `Singt sonder eynden Iesus loff` (10.9). The title is built from exactly that pair, so «Слава Господня» drops one of its two words (the praise) and adds a third that the Dutch title does not have (`Heere` / `God`); it is closer to the neighbouring hymn's title than to this one. Renaming is the owner's decision. Recommended: **«Хвала небесной славе»**.
+**«Хвала Славе»**, chosen by the owner on 2026-10-25; the capital in «Славе» is the owner's spelling and is kept.
+
+The Dutch is `Heerlijckheyds Loff`: `Loff` = **praise**, `Heerlijckheyds` = genitive of `heerlijckheyd`, **glory, majesty**. Read as a phrase it is "the praise of the glory" — praise is what the poem does, glory is what it is about. The poem names that pair itself, in one line of its last stanza: `Iesus lof en Heerlijckheyd!` (10.4), and again in the closing line `Singt sonder eynden Iesus loff` (10.9). So the title is «Хвала Славе», and both of its words are the poet's own.
+
+Two titles this one is **not**:
+
+- **«Слава Господня»** — the working title used until v0.8. It drops `Loff`, so the act of praise disappears, and it adds «Господня», which the Dutch title does not contain (`Heere` / `God` appear nowhere in it). It is also the closer match to a **different** hymn: the 1676 contents list `'s Heeren Heerlijckheyts Loff` in the appendix. Retired, and kept on record so it is not reintroduced by accident.
+- **«Хвала небесной славе»** — a looser paraphrase I had recommended. «Небесной» is an inference from the poem's argument, not a word in the title. Not adopted.
+
+The historical title stays in Dutch wherever the source is cited; only the Russian line changes.
 
 ## What this file is not
 

@@ -42,7 +42,7 @@ If an exact prompt or source lyric is unavailable, use NOT CAPTURED. Never rewri
 Every delivery to the owner — in chat or as a file — opens with **one line**: the Russian title in quotation marks, an em dash, the author's name. No labels, no separate "Название:" / "Автор:" rows.
 
 ```
-«Слава Господня» — Йодокус ван Лоденстейн
+«Хвала Славе» — Йодокус ван Лоденстейн
 ```
 
 Rules for that line:

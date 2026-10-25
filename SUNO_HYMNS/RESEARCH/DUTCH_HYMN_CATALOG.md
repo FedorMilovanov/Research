@@ -74,7 +74,7 @@ The status below records the project state known from prior conversation, not pu
 
 ## DUTCH-005 — *Heerlijckheyds Loff*
 
-- **Working Russian title:** «Слава Господня — "Ввысь, душа моя!"» — **not final**; the owner has not approved a title.
+- **Russian title:** «Хвала Славе» — **approved by the owner 2026-10-25**; «Ввысь, душа моя!» is the first line, not part of the title.
 - **Author:** Jodocus van Lodenstein (1620–1677). Attribution certain: printed in his own collection.
 - **Text category:** `DEVOTIONAL_SONG_WITH_TUNE_DIRECTION` — a ten-stanza poem on the glory of the heavenly life.
 - **Printed place:** *Uyt-spanningen*, Utrecht, Willem Clerck, 1676, **pp. 155–158**; heading `Heerlijckheyds Loff.`; closing date `27. in Ougstmaand 1665` (27 August 1665).
@@ -88,7 +88,7 @@ The status below records the project state known from prior conversation, not pu
 - **Russian text:** `DUTCH-005-RU v0.8` in `../SUNO/DUTCH-005_LYRICS.md` — a declared **adaptation**, not a translation; **not approved**. Line lengths are **measured** by machine (statement 5–10, call 6–9, tripled 9–11, close 6–11 syllables) and no regular metre is claimed. The SUNO-ready text and the style are separate files, as the lane's rules require.
 - **Production:** `LYRIC_DRAFT`. `PROMPT-DUTCH-005-V1` (`../SUNO/DUTCH-005_STYLE.md`) — 118 bpm, clear **tenor-baritone** lead, strictly syllabic, no melisma, short intro, all ten verses in order — is authored here and has **never been submitted**; a second direction is an option only. **Nothing has been generated, exported, covered or published.**
 - **Publication status:** unknown / not verified — nothing exists to publish.
-- **Title collision, checked:** the 1676 contents list `Heerlijckheyds Loff.` (this work, pp. 155–158) and `'s Heeren Heerlijckheyts Loff.` (a different poem, appendix). Never merge them. The working title «Слава Господня» matches the *second* title more closely than this one; rename is the owner's decision. **Why the working title is not a translation:** `Loff` = praise, `Heerlijckheyd` = glory, and stanza 10 of this poem uses both in one line — `Iesus lof en Heerlijckheyd` (10.4) — so the title is «Хвала славе», not «Слава Господня», which drops the praise and imports a `Heere` the Dutch title does not carry.
+- **Title collision, checked:** the 1676 contents list `Heerlijckheyds Loff.` (this work, pp. 155–158) and `'s Heeren Heerlijckheyts Loff.` (a different poem, appendix). Never merge them. The retired working title «Слава Господня» matched the *second* title more closely; it was replaced by **«Хвала Славе»** on 2026-10-25. **Why the working title is not a translation:** `Loff` = praise, `Heerlijckheyd` = glory, and stanza 10 of this poem uses both in one line — `Iesus lof en Heerlijckheyd` (10.4) — so the title is «Хвала Славе», not «Слава Господня», which drops the praise and imports a `Heere` the Dutch title does not carry.
 - **Rhyme:** the Dutch rhymes throughout (1&3, 2&4, and the close with the call line); the Russian v0.6 is blank verse by choice. Analysis and cost: `RHYME_PLAN_DUTCH-005.md`.
 - **Transcription:** `TRANSCRIPTION_DUTCH-005_1676.md` — the Dutch of the 1676 print, page by page, with the 1727 variants; from a digital text layer, **no page image seen**.
 - **Package:** `../SUNO/DUTCH-005_PRODUCTION_PACKAGE.md` ; research record: `CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`.

@@ -368,8 +368,8 @@
     },
     {
       "id": "DUTCH-005",
-      "displayTitle": "Слава Господня — «Ввысь, душа моя!» (рабочее название, не утверждено)",
-      "displayTitleStatus": "WORKING_DRAFT",
+      "displayTitle": "Хвала Славе",
+      "displayTitleStatus": "OWNER_APPROVED_TITLE",
       "originalTitleVariants": [
         "Heerlijckheyds Loff",
         "Heerlijckheyds Loff. (1676 heading)",
@@ -386,7 +386,7 @@
         "Uyt-spanningen, Utrecht, Willem Clerck, 1676, printed pp. 155-158 (dated 27 August 1665)",
         "Reprints: Stapel's Lusthof 1681 p. 495; Bundeltje 1718 p. 230",
         "1938 Hervormde Bundel carries a modernised reworking ('t Oog omhoog, het hart naar boven!) which is a different object and is NOT used here",
-        "Modern Russian literary adaptation, draft v0.1, authored in this repository"
+        "Modern Russian literary/song adaptation with rhymed text, draft v0.8, authored in this repository"
       ],
       "tuneDirection": "Voyse: Un jour &c. — a designation the modern editors could not resolve; melody untraced, no notation held",
       "structure": {
@@ -615,7 +615,7 @@
     {
       "id": "DUTCH-CAND-021",
       "status": "ACTIVATED",
-      "identityNote": "ACTIVATED 2026-10-25 as DUTCH-005. Identified as Heerlijckheyds Loff, a distinct ten-stanza poem in Uyt-spanningen 1676, printed pp. 155-158, dated 27 August 1665. Production state LYRIC_DRAFT: Russian draft v0.1 and an authored, never-submitted style prompt; no generation, no audio. Dossier: RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md; package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md.",
+      "identityNote": "ACTIVATED 2026-10-25 as DUTCH-005. Identified as Heerlijckheyds Loff, a distinct ten-stanza poem in Uyt-spanningen 1676, printed pp. 155-158, dated 27 August 1665. Production state LYRIC_DRAFT: Russian draft v0.8, rhymed, with authored never-submitted style prompts; no generation, no audio. Dossier: RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md; package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md.",
       "activatedAsTrackId": "DUTCH-005",
       "activatedOn": "2026-10-25"
     }

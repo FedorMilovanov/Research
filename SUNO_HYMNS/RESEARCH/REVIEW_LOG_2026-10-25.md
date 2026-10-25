@@ -430,3 +430,13 @@ A long review arrived aimed at v0.5 — it could not reach the repository, so it
 ## State
 
 `DUTCH-005-RU v0.8`. Rhyme: four stanzas met, three half, three not met. Stress marks: four. Both lyric files 90 lines, identical apart from tags, the echo and the accents. Validator: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
+
+# Sixteenth pass — 2026-10-25 (title)
+
+The owner chose the title: **«Хвала Славе»**. Recorded here because the fourteenth pass had left it open, and because the earlier note ("recorded, not renamed: the title is the owner's") is now spent.
+
+Evidence, unchanged from the thirteenth pass: `Loff` = praise, `Heerlijckheyds` = genitive of `heerlijckheyd`, and the poem names the pair itself — `Iesus lof en Heerlijckheyd` (10.4), `Singt sonder eynden Iesus loff` (10.9). «Слава Господня» failed on two counts: it dropped the praise and imported a `Heere` that the Dutch title does not have; it also sat closer to the *other* hymn, `'s Heeren Heerlijckheyts Loff`.
+
+Capitalisation «Славе» is the owner's spelling, kept as given.
+
+Propagated: both lyric files, the style file, `SUNO/README.md` (delivery-header example), `STATUS_LEDGER.md`, `DUTCH_HYMN_CATALOG`, `track-catalog-v1.json` (`displayTitle` = «Хвала Славе», `displayTitleStatus` = `OWNER_APPROVED_TITLE`), transcription, package header. No wording changed; no rhyme, metre or stress count changed. Four marks, 90 lines, validator green.

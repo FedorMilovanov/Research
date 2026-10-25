@@ -1,5 +1,7 @@
 # DUTCH-005 — production package: *Heerlijckheyds Loff* (1676)
 
+**Russian title:** **«Хвала Славе»** — approved by the owner 2026-10-25; replaces the working title «Слава Господня». Rationale and the Dutch evidence: `DUTCH-005_LYRICS.md` § Title.
+
 **Work ID:** DUTCH-005 — activated 2026-10-25 from backlog candidate `DUTCH-CAND-021`.
 **Source text:** Jodocus van Lodenstein, *Heerlijckheyds Loff*, in *Uyt-spanningen* (Utrecht: Willem Clerck, 1676), printed pp. 155–158; dated *27. in Ougstmaand 1665*.
 **Research record:** [`../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`](../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md)

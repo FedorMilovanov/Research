@@ -57,7 +57,7 @@
 - **Publication status:** not applicable yet — nothing exists to publish.
 - **Gates before READY_FOR_REVIEW:** owner poetic revision; freeze lyric v1.0; freeze the prompt with a revision hash before submission; read metadata back from the actual output.
 
-## DUTCH-005 — «Слава Господня — "Ввысь, душа моя!"» (working title, not approved)
+## DUTCH-005 — «Хвала Славе» («Ввысь, душа моя!» — first line)
 
 - **Historical author:** Jodocus van Lodenstein (1620–1677).
 - **Source:** *Heerlijckheyds Loff*, *Uyt-spanningen* (1676), printed pp. 155–158, dated 27 August 1665; ten stanzas.
