@@ -142,6 +142,8 @@ Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой пол
 | Calamy, *Continuation*, p. 83 | **высокий** | сертификат 31 декабря 1661 в оригинале. Подтверждено косвенно: Veel сделан B.D. в Trinity College 3 июля 1661, лишён сана за nonconformity, покинул Ирландию в январе 1662 |
 | Calendar of State Papers, Domestic, 19–20 июня 1663 | **высокий** | ордер на арест; снять `CONFLICT` в пользу документа |
 | Скан издания 1680 *A treatise of divine providence* (IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`) | **высокий** | сравнить эпистол Adams & Veal в 1680 и 1684; снять `CONFLICT-12` |
+| *An Elegy on the death of … Mr. Stephen Charnock, July 27, 1680* (Anon.; 1680; WorldCat 606749756; EEBO) | **высокий** | второй contemporaneous печатный объект с датой смерти 27 июля; прямое действие к `CONFLICT-10` |
+| Скан 1680 sermon on 2 Cor. V. XIX (IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`; imprint: Thomas Milbourn for J.K., sold by Langley Curtis) | средний | чтение титульного листа и текста sermon; снять `LOCATOR_HOLD` по первому изданию |
 | Parker, *History of his own Time*, p. 71 | средний | зафиксировать точную формулировку обвинения |
 | Wilson, *Dissenting Churches*, vol. i, pp. 331 sqq. | средний | история Crosby Hall и цепочка пасторов; **приоритет повышен**: Wood назвал владельца здания (Sir John Langham) и предшественника (Thomas Watson) |
 | Urwick, *Independency in Dublin in the Olden Time* | средний | дублинский контекст |

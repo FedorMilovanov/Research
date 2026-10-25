@@ -106,9 +106,10 @@ Wood, *Athenæ Oxonienses* vol. II, вход [429], p. 491 (EEBO-TCP `A71277.000
 
 | Год | Заглавие | Imprint | Значение |
 |---|---|---|---|
-| **1680** | *A treatise of divine providence* | — | Первое издание; IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680` |
-| **1680** | *A sermon preached by the late eminent Mr. Steph. Charnock on 2 Cor. V. XIX.* | London: Printed by Thomas Milbourn, for J.K., and are to be sold by Langley Curtis | Отдельная sermon 2 Кор. 5:19 |
+| **1680** | *A treatise of divine providence* | — | Первое издание; IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680` — **page images доступны** (675 MB, микрофильм EEBO); сверка эпистола с изданием 1684 не выполнена → `CONFLICT-12` |
+| **1680** | *A sermon preached by the late eminent Mr. Steph. Charnock on 2 Cor. V. XIX.* | London: Printed by Thomas Milbourn, for J.K., and are to be sold by Langley Curtis | Отдельная sermon 2 Кор. 5:19. **Page images доступны**: IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`; титульный лист читается как «A SERMON Preached by the Late Eminent Mr. Steph. Charnock ON 2 COR. V. XIX.» |
 | **1680** | *The sayings of that reverend and great preacher Mr. S. Charnock, who departed this life on Wednesday the 28 of July, 1680, and was solemnly interred the 30th following* | London: [s.n.], Printed in the year 1680 | **См. `CONFLICT-10`** |
+| **1680** | *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen Charnock, July 27, 1680* | [не получен; идентифицирован 2026-10-25] | **Contemporaneous печатное attestation даты смерти 27 июля.** WorldCat 606749756; в EEBO (ProQuest). `ARCHIVE_HOLD`; приоритет очереди — высокий |
 | **1682** | *Discourses upon the existence and attributes of God* | London: Printed for D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, and Benj. Alsop | **Разрешает `CONFLICT-6`** |
 | **1683** | *A supplement to the several discourses upon various divine subjects* | London: Printed for Thomas Cockerill | — |
 | **1684** | *A discourse of divine providence* | London: printed by R. Roberts for Thomas Cockerill, at the Three Legs in the Poultrey, near the Stocks-Market | EEBO-TCP `A79420.0001.001`; см. том 08 |
@@ -134,13 +135,27 @@ T. Simmons, and Benj. Alsop». Это означает, что диапазон 
 | Заголовок 1680 *The sayings…* | «departed this life on **Wednesday the 28** of July, 1680, and was solemnly interred the 30th following» |
 | Wood / DNB / Symington / McCosh | 27 июля 1680 |
 | Регистр St Michael's | погребение 30 июля 1680 |
+| **Заголовок 1680-й элегии** (идентифицирована 2026-10-25, **НЕ получена**) | «…Mr. Stephen Charnock, **July 27, 1680**» |
+| Wood, сноска `* 2.260` | только «1680.» — документ не назван |
 
-**Разрешение:** не разрешён. Отмечаем, что **27 июля 1680 года был вторником**, а 28 июля — средой.
-Заголовок 1680 года называет Wednesday, что соответствует 28 июля. Это не опечатка дня недели, а
-расхождение в дате. Возможные объяснения: (а) заголовок ошибается; (б) Чарнок умер ночью и разные
-источники датируют по-разному; (в) Old Style/New Style не при чём (разница 10 дней не даёт 27→28).
-Рабочая формулировка отдела: **27 июля 1680**, с фиксацией `CONFLICT-10` и указанием на заголовок
-*The sayings…* как на единственный источник 28 июля.
+**Разрешение:** не разрешён, но **2026-10-25 баланс сдвинулся в пользу 27 июля**. Раньше 28 июля
+поддерживал единственный источник — заголовок *The sayings…* 1680 — и он был contemporaneous, то есть
+сильнее Wood 1691. Теперь найден **второй contemporaneous печатный объект**, дающий 27 июля: элегия
+1680 года с датой прямо в заголовке. Таким образом, оба contemporaneous печатных источника расходятся
+между собой (28 vs 27), и конфликт остаётся, но версия «28 июля — единственное contemporaneous
+свидетельство» **опровергнута**.
+
+Дополнительно: сноска Wood `* 2.260` на дату смерти — только «1680.», без документа. То есть и
+сторона 27 июля в лице Wood не имеет цитируемого основания.
+
+Отмечаем, что **27 июля 1680 года был вторником**, а 28 июля — средой. Заголовок *The sayings…*
+называет Wednesday, что соответствует 28 июля. Это не опечатка дня недели, а расхождение в дате.
+Возможные объяснения: (а) *The sayings…* ошибается; (б) Чарнок умер ночью и разные источники
+датируют по-разному; (в) Old Style/New Style не при чём (разница 10 дней не даёт 27→28).
+
+Рабочая формулировка отдела: **27 июля 1680**, с фиксацией `CONFLICT-10`. Для снятия конфликта
+требуются: (1) текст элегии 1680 с чтением титульного листа; (2) приходовой регистр St Michael's,
+Cornhill; (3) свиток (broadside) 1680 с «Wednesday the 28 of July».
 
 ## 4. Каноническое издание XIX века
 

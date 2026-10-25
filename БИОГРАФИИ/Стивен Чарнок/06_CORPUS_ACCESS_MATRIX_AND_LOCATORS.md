@@ -58,6 +58,11 @@
 | **Parker, History of his own Time, p. 71** | `D` | **НЕ получен** | unchecked | — |
 | **Wilson, Dissenting Churches, vol. i, pp. 331 sqq.** | `B1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
 | **Urwick, Independency in Dublin in the Olden Time** | `B1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
+| **Wood, Athenae Oxonienses 1691 — вход [429] + Fasti 1654** | `A1` | **FULL TEXT получен 2026-10-25** — EEBO-TCP `A71277.0001.001`, CC0 1.0 | **`checked`** — вход [429] на pp. 491–492; Fasti 1654 на p. 783 | `LOCATOR_HOLD` только по печатному снимку |
+| **Bliss-редакция Wood 1813–20** (4 vols., колонки) | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD`; колонка входа [429] требует пересчёта |
+| **1680 sermon on 2 Cor. 5:19 — скан страниц** | `A1` | **доступен как page images** — IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680` (675 MB, микрофильм EEBO) | `image` — страницы видны, OCR не читаем | `LOCATOR_HOLD`; imprint частично разборчив, уточнение требует чтения титульного листа |
+| **1680 Providence, 1st ed. — скан страниц** | `A1` | **доступен как page images** — IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680` (675 MB, микрофильм EEBO) | `image` | `LOCATOR_HOLD`; сверка эпистола с изданием 1684 не выполнена → `CONFLICT-12` |
+| ***An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen Charnock, July 27, 1680*** (Anon.; 1680) | `A1` | **НЕ получен**; идентифицирован 2026-10-25 — WorldCat 606749756, в EEBO (ProQuest) | unchecked | `ARCHIVE_HOLD`; **приоритет высокий**: contemporaneous печатное attestation даты смерти 27 июля — см. `CONFLICT-10` |
 
 ---
 
