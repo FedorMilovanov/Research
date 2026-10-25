@@ -74,6 +74,7 @@
 | Стивен Чарнок — 12 The Sayings 1680 Broadside PRIMARY TRANSCRIPTION | `1asmp9fXEhXHkFOT5eGsJ6A7FZ-zywyeB` |
 | Стивен Чарнок — 13 New Poems 1680 Elegy Acrostics Epitaph PRIMARY TRANSCRIPTION | `1BAF_feH5sgoKc6SKaduKubnGLFD_Pl9l` |
 | Стивен Чарнок — 14 An Elegy 1680 PRIMARY TRANSCRIPTION | `1NF0x8VTiU61u6gqDcc2_hYLC9JkcaYZ2` |
+| Стивен Чарнок — 15 The Emmanuel Line Preston Poole Fowler | `18YaPQb0t3F0JjPrKjGUKMYy9P-BDES9D` |
 
 Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
 и не являются цитируемым material.
@@ -84,7 +85,7 @@
 |---|---|---|
 | Тома **08, 09, 10, 11, 12, 13, 14** | загружены | **актуальны** (08–10 не менялись после загрузки; 11–14 загружены в день получения) |
 | Чарнокский `00 README AND NAVIGATION`, тома **01, 02, 03, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` (Чарнок 00), `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` (03), `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` (ledger), `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` (01), `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` (02), `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` (04), `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` (05), `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` (БИОГРАФИИ 00) | **актуальны** (коммит `1439b96`); прежние копии помечены `SUPERSEDED` и **не удалялись** |
-| — | **Все зеркала томов отдела приведены к актуальному состоянию.** Отстающих копий не осталось | — |
+| — | **Все зеркала томов отдела приведены к актуальному состоянию** (16 томов + rev 2 файлы). Отстающих копий не осталось | — |
 
 **Состояние на 2026-10-25, коммит `1439b96`: отстающих зеркал не осталось.** Все 15 томов отдела
 и все три файла уровня `БИОГРАФИИ` имеют актуальные Drive-копии (тома 08–14 и rev 2 файлы 00, 01,
