@@ -398,10 +398,34 @@ EEBO-TCP как отдельный объект не размещён; (в) по
 | Wood 1691, вход [429], p. 491 | «His Works, vol. 2. containing several discourses upon various divine Subjects. Lond. 1683. fol. **with a Supple∣ment**» |
 | Том 03 / EEBO-TCP | *A supplement …* (Cockerill, 1683) — **отдельное** издание |
 
-**Разрешение:** не разрешён. Wood описывает, по-видимому, один том с двумя титульными листами или
-том, продававшийся с добавлением; том 03 фиксирует *Supplement* как самостоятельную единицу по
-EEBO-TCP. Требуется скан 1683 folio. До неё: `LOCATOR_HOLD`; рабочая формулировка — «второй том
-Works 1683 с приложенным (или сброшюрованным) *Supplement*».
+**Разрешение (2026-10-25, том 03 §3E): РАЗРЕШЁН В ПОЛЬЗУ ОДНОЙ ЕДИНИЦЫ.** Каталог TCP даёт для
+`A32724` (1683) корпоративное авторское заглавие, которого нет ни у одного другого объекта
+Чарнока: «Charnock, Stephen, 1628-1680. **Works of the late learned divine, Stephen Charnock.**»
+То есть *Supplement* 1683 каталогизирован как **том собрания сочинений**. Это независимое
+подтверждение формулы Wood'а «His Works, vol. 2» и указания Calamy 1727 на «the other Volume of
+that Great Man's Works» (том 01 §2.9G). Рабочая формулировка: второй том собрания сочинений,
+Лондон, Thomas Cockerill, 1683, включающий восемь дискурсов, именуемых на титульном листе
+«A Supplement to the several Discourses upon various Divine Subjects». `LOCATOR_HOLD` снят;
+сохраняется только требование скана folio для проверки физической сброшюровки.
+
+**Но см. `CONFLICT-17`** — Calamy'евская «третья» предваряющая эпистола в томе 1683 не найдена,
+и указатели к Providence напечатаны именно в 1683, а не в 1680.
+
+
+### `CONFLICT-17` — Calamy 1727: «a third [prefatory epistle]» — где находится (добавлено 2026-10-25)
+
+| Сторона | Утверждение |
+|---|---|
+| Calamy 1727, дополнение к статье о Richard Adams | «He and Mr. Veal wrote a Prefatory Epiftle before Mr. Charnock's of Providence; and another before his Volume on the Attributes; **and a third before the other Volume of that Great Man's Works**» |
+| `A32724.0001.001?view=toc` (том 1683) | Эпистолы в том **нет**: титульный лист, восемь дискурсов (`1:2`–`1:9`), указатели (`1:10`–`1:13`), errata (`1:14`) |
+| Две документально подтвержденные эпистолы | 1680 Providence (перепечатана в 1684, идентична) и 1682 folio (подпись «EDW. VEEL. RI. ADAMS.») |
+
+**Состояние:** `LOCATOR_HOLD`, открыт 2026-10-25. Три допустимых чтения: (а) Calamy ошибается,
+помня общими чертами; (б) эпистола сброшюрована в отдельных экземплярах и в скан не попала; (в)
+существует ещё один том Works с самостоятельным титульным листом, которого нет в EEBO-TCP.
+Поскольку uniform title «Works of the late learned divine, Stephen Charnock» висит только на
+`A32724`, чтение (в) пока не подтверждено. Рабочая формулировка: «две документально
+подтверждённые эпистолы; указание Calamy на третью записано как неподтверждённое».
 
 Также: Wood оговаривается относительно издателей Providence — «an Epistle written by Rich. Adams and
 Edw. Veel, who, **as I think**, published the said book». Wood не уверен в издателе. Ни один пересказ

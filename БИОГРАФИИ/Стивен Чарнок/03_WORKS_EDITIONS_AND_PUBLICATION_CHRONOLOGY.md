@@ -122,7 +122,7 @@ Wood, *Athenæ Oxonienses* vol. II, вход [429], p. 491 (EEBO-TCP `A71277.000
 | *A Sermon of reconciliation … 2 Cor. 5.19. Lond. 1680. qu.* | Совпадает | — |
 | *Treatise of divine providence … Lond. 1680. oct.* | 1680 | Wood даёт **octavo**; наша копия эпистола — из издания **1684**. Скан первого издания 1680 (`bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`) ещё не сверян с 1684 → `CONFLICT-12` |
 | *His Works … attributes of God. Lond. 1682. fol.* | 1681–82 | Wood даёт один год 1682 → **третье** независимое свидетельство в пользу наличия отдельного титульного листа 1682 (см. §3A, `CONFLICT-6`) |
-| *His Works, vol. 2 … 1683. fol. **with a Supplement*** | *A supplement …* 1683 как отдельное издание | Wood сливает в одну позицию → `CONFLICT-12` |
+| *His Works, vol. 2 … 1683. fol. **with a Supplement*** | *A supplement …* 1683 как отдельное издание | Wood сливает в одну позицию → `CONFLICT-12` (**разрешён 2026-10-25** — см. §3E: uniform title TCP «Works of the late learned divine, Stephen Charnock» висит только на `A32724`) |
 
 Два содержательных вывода:
 
@@ -199,6 +199,123 @@ INDEX → ERRATA.
 3. **Broadside 1680 теперь может быть сверен с `A1`-текстом 1683 года**, а не только с репринтом
    1844: *supplement* 1683 перепечатывает «The Sinfulness and Cure of Thoughts» со стр. 1, и
    дословное совпадение проверено — см. том 12.
+
+### 3E. Полный реестр EEBO-TCP: `VID`, ESTC, uniform titles — и разрешение `CONFLICT-12` (добавлено 2026-10-25)
+
+Полный каталог TCP (61 315 записей, `github.com/textcreationpartnership/Texts`, файл `TCP.json`)
+загружен в полном объёме 2026-10-25 и сведён по всем объектам, относящимся к Чарноку и его
+окружению. Ниже — **каталожные данные, которых отдел раньше не имел**: `VID` (внутренний номер
+записи в каталоге EEBO), номера **ESTC** и страничные объёмы. Класс доказательности для
+каталожных данных — `B1` (современный реестр, не первоисточник); везде, где каталог расходится с
+печатным объектом, первоисточник (`A1`) имеет приоритет.
+
+| TCP | `VID` | Wing | **ESTC** | Объём (кат.) | Объект | Класс |
+|---|---|---|---|---|---|---|
+| `B02133` | 175566 | C3709 | **R229137** | 1 | *The sayings …* (broadside), 1680 | `A1` |
+| `A52960` | 103011 | N715 | **R35069** | 1 | *New poems …*, 1680 | `A1` |
+| `A39134` | 104081 | E409 | **R36110** | 1 | *An Elegy on the death …*, 1680 | `A1` |
+| `A46911` | 66312 | J783 | **R16247** | 47 | Johnson, *Eklampsis*, 1680 | `A1` |
+| `A32722` | 53998 | C3710 | **R13260** | 38 | Sermon on 2 Cor. V. XIX, 1680 | `A1` |
+| `A32726` | 53996 | C3712 | **R13224** | 418 | *A treatise of divine providence*, 1680 | `A1` |
+| `A32723` | 48355 | C3711 | **R15604** | 866 | *Several discourses upon the existence and attributes of God*, 1682 | `A1` |
+| **`A32724`** | 41445 | C3711C | **R24823** | **158** | *A supplement …*, 1683 | `A1` |
+| `A79420` | 136156 | C3708 | **R232630** | 420 | *A discourse of divine providence*, 1684 | `A1` |
+| `A71277` | 56138 | W3383A | **R200957** | 926 | Wood, *Athen Oxonienses*, vol. 2 | `A1` |
+| `A09977` | 15479 | STC 20231 | **S115069** | 434 | Preston, *Life eternall*, 1631 | `A1` |
+| `A37311` | 104055 | D501A | **R36084** | 1 | Fowler, *Death and the grave …*, 1677 | `A1` |
+| `B03233` | 182530 | E420 | **R36137** | 1 | Fowler elegy, 1677 | `A1` |
+| `A55383` | 107800 | P2838 | **R39714** | 1 | Poole, *late sayings*, 1679 | `A1` |
+| `A55384` | 39101 | P2839 | **R224111** | 1 | Poole, *late sayings*, 1679 (2-е изд.) | `A1` |
+| `A23667` | 66155 | A1066 | **R10549** | 163 | Allen, *Mystery of iniquity unfolded*, 1675 | `A1` |
+| `A25467` | 42587 | A3228 | **R25885** | 1060 | Annesley, *Continuation of morning-exercise questions*, 1683 | `B1` |
+
+**Три содержательных результата.**
+
+**1. `CONFLICT-12` разрешён в пользу одной единицы — но с оговоркой.** Каталог TCP даёт для
+`A32724` (1683) **корпоративное авторское заглавие**, которого нет больше ни у одного объекта
+Чарнока:
+
+> *Charnock, Stephen, 1628-1680.; **Charnock, Stephen, 1628-1680. Works of the late learned
+> divine, Stephen Charnock.***
+
+То есть *Supplement* 1683 каталогизирован **как том собрания сочинений** («Works of the late
+learned divine, Stephen Charnock»), а не как отдельная книга. Это независимое, каталоговое
+подтверждение формулы Wood'а «His Works, vol. 2» и указания Calamy 1727 на «the other Volume of
+that Great Man's Works» (том 01 §2.9G). **Рабочая формулировка отдела отныне:** второй том
+собрания сочинений Чарнока, Лондон, Thomas Cockerill, 1683, включающий восемь дискурсов,
+именуемых на титульном листе «A Supplement to the several Discourses upon various Divine
+Subjects». `LOCATOR_HOLD` снимается; требование скана folio остаётся только для проверки
+физической сброшюровки.
+
+**2. Но Calamy'евская «третья» предваряющая эпистола в томе 1683 НЕ НАЙДЕНА.** Оглавление
+`A32724.0001.001` (`?view=toc`) исчерпывающе: `title page` → восемь дискурсов (`1:2`–`1:9`, из них
+`1:9` делится на пять подузлов `1:9.1`–`1:9.5`) → `1:10` THE INDEX OF THE Principal Matters
+contain'd in the Discourse of DIVINE PROVIDENCE → `1:11` A TABLE of the Scriptures Explained in the
+DISCOURSE of DIVINE PROVIDENCE → `1:12` A TABLE OF THE Places of Scripture Explained in this BOOK →
+`1:13` THE INDEX → `1:14` ERRATA (с подузлом `1:14.1` «In the SƲPPLEMENT»). **Эпистола в объём
+не входит.** Новый вопрос: `CONFLICT-17` (ниже). Тип: `LOCATOR_HOLD`.
+
+**3. Указатели к Providence напечатаны в 1683, а не в 1680.** Узлы `1:10` и `1:11` — это
+**предметный и библейский указатели к «Discourse of Divine Providence»**, напечатанные в томе
+1683. В издании 1680 (`A32726`) отдел получил титульный лист, «Advertisement» и эпистол
+«TO THE READER» — указателей там нет. Следствие для библиографии: **указатели к трактату о
+провидении появились только во втором томе**, то есть в 1683. Это меняет описание «полноты»
+первого издания и должно быть учтено при описании издания 1680 как неполного.
+
+**Дополнительные каталожные данные, меняющие картину.**
+
+- **Даты Фаулера в каталоге неверны.** TCP для обоих объектов 1677 года даёт
+  «Fowler, Christopher, **1610?-1678**» (`A37311`, Terms: «Fowler, Christopher, 1610?-1678 --
+  Poetry»; `B03233`, Terms: «Fowler, Christopher, 1610?-1678 -- Poetry -- Early works to 1800»).
+  **Оба печатных объекта дают иное:** *Death and the grave …* — «departed this life upon the 15[th]
+  of January, 1676/7 [i.e. 1677]»; элегия — «Monday the 15th of January, 1676/7». Отдел проверил
+  день недели: 15 января 1676/7 — **понедельник** (том 13 §4.2). Итог: **каталог ошибается на
+  год и на дату рождения**; год смерти — 1676/7, не 1678. Запись о 1678 — ошибка каталога,
+  воспроизводящаяся в сетевых справках. Класс `A1` против `B1`: `A1` выигрывает.
+- **Датировка Wood'а.** TCP даёт `A71277` (*Athen Oxonienses*, vol. 2) **1692**, а том 11
+  оперирует входом [429] по скану 1691 года. Расхождение зафиксировано: тираж/выпуск 1691,
+  каталожная дата 1692. Рабочая дата отдела остаётся **1691** (по титульному листу скана);
+  каталожная 1692 записана как `B1`. `ARCHIVE_HOLD` на сверку титульного листа не снимается.
+- **Формула о New College расходится в двух изданиях.** Титульный лист 1682 (`A32723`):
+  «And **sometimes** Fellow of New-Colledge in Oxon»; титульный лист 1684 (`A79420`):
+  «B.D. **sometime** fellow of New-Colledg in Oxon». Расхождение орфографическое
+  («sometimes» / «sometime», «New-Colledge» / «New-Colledg»), содержательно оба подтверждают
+  New College Oxford. Зафиксировано как вариант, не как конфликт.
+- **Preston: каталог называет соредакторов.** TCP даёт авторское заглавие
+  *Life eternall* (1631) так: «Preston, John, 1587-1628.; **Ball, Thomas, 1589 or 90-1659.;
+  Goodwin, Thomas, 1600-1680.**» — то есть **Томас Болл и Томас Гудвин** причастны к изданию
+  посмертного трактата. Заглавный титул: «Delivered in XVIII. sermons. By the late faithfull and
+  worthy minister of Iesus Christ, Iohn Preston, D. in Divinity, chaplaine in ordinary to his
+  Majestie, master of Emmanuel Colledge in Cambridge, and sometimes prea[cher]…». Для
+  «эммануиловской линии» (том 15) это существенно: посмертное издание, вокруг которого стоит
+  круг Эммануиля (Goodwin был master'ом с 1653), — а не одинокая публикация 1631 года.
+  `LOCATOR_HOLD` на точную роль Болла и Гудвина (издатели? редакторы? авторы dedicatory
+  эпистолов?) сохраняется.
+- **Poole: два издания «late sayings» 1679 года** — `A55383` (Wing P2838, ESTC R39714) и
+  `A55384` (Wing P2839, ESTC R224111). Отдел владеет первым; второе фиксируется как не полученное.
+- **Annesley 1683 ≠ Cripplegate lectures.** `A25467` — «A Continuation of morning-exercise
+  questions and cases of conscience practicaly resolved by sundry ministers in October, 1682»,
+  Лондон, 1683, 1060 pp. Это **вопросники совести**, а не проповеди утренних чтений; пересечения с
+  Cripplegate lecture нет. Зафиксировано, чтобы не принять за искомое.
+- **Однофамильцы исключены.** В каталоге есть **два других Роберта Чарнока**: Robert Charnock,
+  b. 1561 (`A09551`, `A08771`, иезуитский полемист, 1602–1603) и Robert Charnock, 1663-1696
+  (`A58362`, `B06228`, якобитский заговорщик, казнён 1696). Ни один не является нашим Стивеном.
+  Тома 01 и 06 уже фиксируют это; каталожные номера добавлены для полноты.
+
+### `CONFLICT-17` — Calamy 1727: «a third [prefatory epistle]» — где находится (добавлено 2026-10-25)
+
+| Сторона | Утверждение |
+|---|---|
+| Calamy 1727, дополнение к статье о Richard Adams | «He and Mr. Veal wrote a Prefatory Epiftle before Mr. Charnock's of Providence; and another before his Volume on the Attributes; **and a third before the other Volume of that Great Man's Works**» |
+| `A32724.0001.001?view=toc` (том 1683) | Эпистолы в том **нет**: титульный лист и восемь дискурсов, затем указатели и errata |
+| Две известные эпистолы | 1680 Providence и 1682 folio (подпись «EDW. VEEL. RI. ADAMS.»), плюс эпистол издания 1684, **идентичный** 1680 |
+
+**Состояние:** `LOCATOR_HOLD`. Три допустимых чтения: (а) Calamy ошибается, помня общими чертами;
+(б) эпистола была сброшюрована в экземплярах и в скан не попала; (в) существует ещё один том
+Works с самостоятельным титульным листом, которого нет в EEBO-TCP. Пока (в) не подтверждено
+каталогом (uniform title «Works of the late learned divine, Stephen Charnock» есть только у
+`A32724`), рабочая формулировка — «две документально подтвержденные эпистолы; указание Calamy на
+третью записано как неподтверждённое».
 
 ### 3C. *New Poems* 1680: редакторская стратегия и биографическое содержание
 (добавлено 2026-10-25, том 13)
