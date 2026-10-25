@@ -645,10 +645,13 @@
         "CLM-PHOS-IDENTITY",
         "CLM-PHOS-BASIL-73",
         "CLM-PHOS-AUTHORSHIP",
-        "CLM-PHOS-AC-HOLD",
+        "CLM-PHOS-AC-CHECKED",
         "CLM-PHOS-DATING-OPEN",
         "CLM-PHOS-RU-TRADITION",
-        "CLM-PHOS-001-TRANSLATION"
+        "CLM-PHOS-001-TRANSLATION",
+        "CLM-PHOS-OLDEST-SCOPE",
+        "CLM-PHOS-NOT-ALEXANDRINUS",
+        "CLM-PHOS-BASIL-SCOPE"
       ],
       "qaStatus": "OPEN",
       "textChainNote": "Six lines, three parts. The performance arrangement repeats line 4 as a refrain and line 6 as a reprise, using no new words (owner's decision, 2026-10-26). The Greek leaves the reference of the three genitive adjectives open; the Russian of v0.5 does not reproduce that (dossier § 4.2 — the address opens line 1 and the three read as attributes of the Father). No refrain, no printed repetition, and no rhyme or metre in the source (six different line-endings; 15·15·18·16·16·18 syllables), so neither is added to the translation. The date of composition is unknown and is not asserted; the popular 'Apostolic Constitutions VIII.35' claim is under EVIDENCE_HOLD and may not be used in copy. Package: SUNO/PHOS-001_PRODUCTION_PACKAGE.md.",
@@ -659,7 +662,7 @@
         "Owner picks one of the five style directions and runs the first generation.",
         "Record the verbatim prompt and the take in PROMPT_AND_VERSION_REGISTER.md once a take exists.",
         "Collate the Greek text against a printed Horologion or Plank 2001 (LOCATOR_HOLD).",
-        "Read Apostolic Constitutions VII–VIII and close or confirm CLM-PHOS-AC-HOLD.",
+        "Closed 2026-10-26: Apostolic Constitutions VIII.35–37 read — the hymn is not there; the claim is false (CLM-PHOS-AC-CHECKED)",
         "See P. Lond. 2037B in a catalogue or image (ARCHIVE_HOLD).",
         "Channel copy (title, description, pinned comments, Telegram) is deliberately not written yet: it must describe the take that exists."
       ],
@@ -667,7 +670,8 @@
       "sunoHandoff": "SUNO/PHOS-001_SUNO_HANDOFF.md",
       "interpretationNotes": [
         "The three genitive adjectives now read as attributes of the Father: the Greek ambiguity cannot survive a nominative address. Resolved in favour of the case, not of the majority translation; variant В resolves it the other way and is documented.",
-        "The nominative «Иисус Христос» / «Сын Божий» is an address by position and context, not by form: Russian lost the vocative, and the Church Slavonic -е forms would have raised the register above the Greek, which uses the vocative neutrally. The owner chose register over case."
+        "The nominative «Иисус Христос» / «Сын Божий» is an address by position and context, not by form: Russian lost the vocative, and the Church Slavonic -е forms would have raised the register above the Greek, which uses the vocative neutrally. The owner chose register over case.",
+        "«Oldest» may be said only in the full form: the earliest non-scriptural Christian hymn whose complete text survives and which has been sung continuously to this day. It is not the oldest by manuscript (P. Lond. 2037B, 6th–7th c.; P.Oxy. XV 1786, c. 250–300) or by composition (Odes of Solomon, c. 70–125). Verified 2026-10-26; dossier § 3.4–3.6."
       ]
     }
   ],

@@ -44,6 +44,9 @@ CLAIM_STATES = {
     "EVIDENCE_HOLD",
     "RESEARCH_OPEN",
     "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+    # a claim that was looked for in a primary text and found to be false: stronger
+    # than REPORTED_NOT_INDEPENDENTLY_VERIFIED, weaker than a positive SUPPORTED state
+    "VERIFIED_NEGATIVE",
 }
 
 

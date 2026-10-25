@@ -1442,6 +1442,106 @@
         "Only the opening of the essay was read",
         "Balmont's text is a paraphrase with an added refrain, not a translation; it is recorded so that nobody mistakes it for one, and it is not used"
       ]
+    },
+    {
+      "id": "SRC-PHOS-AC-ANF",
+      "title": "Apostolic Constitutions, Book VIII §§34–37 — ANF translation (Schaff), newadvent.org",
+      "url": "https://www.newadvent.org/fathers/07158.htm",
+      "type": "Primary liturgical text in a public-domain English translation",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [],
+      "supports": [
+        "VIII.34 prescribes the hours of prayer including evening",
+        "VIII.35 orders the evening assembly and 'the repetition of the psalm at the lighting up the lights'",
+        "VIII.36 is the deacon's bidding prayer for the evening",
+        "VIII.37 is the bishop's evening thanksgiving ('O God, who art without beginning and without end…')",
+        "Not one line of Φῶς ἱλαρόν occurs in VIII.34–37 — the Constitutions give the rite, not the text of the hymn"
+      ],
+      "limits": "Read only in the NPNF English translation; the Greek was not collated. Chapters were read in the sequence VIII.34–37 and XLII–XLV, not the whole book."
+    },
+    {
+      "id": "SRC-PHOS-BL-ALEX",
+      "title": "British Library Archives and Manuscripts catalogue, Royal MS 1 D VII (Codex Alexandrinus, vol. 3)",
+      "url": "https://searcharchives.bl.uk/catalog/040-002353448",
+      "type": "Library catalogue description of a manuscript volume",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Volume 3 of the codex carries Athanasius's letter to Marcellinus and Psalms to Ecclesiasticus",
+        "The canticles listed are Magnificat, Nunc dimittis, Benedictus and the Ὕμνος Ἑωθινός (Gloria in excelsis)",
+        "Φῶς ἱλαρόν is not listed among them"
+      ],
+      "limits": "A catalogue description, not a page-by-page collation; absence is established from the list of contents, not from an autopsy."
+    },
+    {
+      "id": "SRC-PHOS-ODES-BOOK",
+      "title": "'Book of Odes (Bible)' — survey of the Greek ode collections and of Codex Alexandrinus",
+      "url": "https://en.wikipedia.org/wiki/Book_of_Odes_(Bible)",
+      "type": "Encyclopaedia article, read as a search excerpt",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "The earliest surviving collection of odes is in the 5th-century Codex Alexandrinus: 14 odes after the Psalter",
+        "The 14th ode is the Gloria in Excelsis (Canticle of the Early Morning) — the last in the collection"
+      ],
+      "limits": "Read as a search excerpt; used only to confirm the constituents of the Alexandrinus ode collection. Not a critical edition."
+    },
+    {
+      "id": "SRC-PHOS-POXY",
+      "title": "Oxyrhynchus hymn, P.Oxy. XV 1786 — datings and description (search excerpts, 2025 reporting)",
+      "url": "https://www.patternsofevidence.com/2025/10/03/worlds-oldest-hymn-rediscovered/",
+      "type": "Popular reporting on a papyrus, read as excerpts; papyrological edition not consulted",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "P.Oxy. XV 1786 carries a Christian hymn with Greek vocal notation, dated c. 250–300",
+        "It is fragmentary: the text survives with lacunae"
+      ],
+      "limits": "The editio princeps (Grenfell–Hunt, 1922) and the musical bibliography were not read. The dating is reported, not checked palaeographically. Used only to place Φῶς ἱλαρόν in the order of witnesses, never in copy."
+    },
+    {
+      "id": "SRC-PHOS-ODES",
+      "title": "Odes of Solomon — date, language and manuscripts (survey article, read as excerpts)",
+      "url": "https://en.wikipedia.org/wiki/Odes_of_Solomon",
+      "type": "Encyclopaedia article, read as a search excerpt",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "A collection of 42 odes, most scholars dating the composition c. 70–125",
+        "Preserved chiefly in Syriac manuscripts of the 10th–15th centuries, with a Greek fragment (P. Bodmer XI, 3rd–4th c.)"
+      ],
+      "limits": "Read as a search excerpt; Charlesworth/Lattke editions were not consulted. Used only to establish that an older Christian hymn corpus exists, never in copy."
     }
   ]
 }

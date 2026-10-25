@@ -704,7 +704,7 @@ The nine entries below were added after reading the 1676 printing directly, the 
 
 ## Ancient-hymn lane (PHOS-001) — added 2026-10-26
 
-The Greek lane is registered in the same file as the Dutch one because it is the same project and the same evidence policy. The six records below support the Φῶς ἱλαρόν dossier; their full field set lives in `../data/source-registry-v1.json`.
+The Greek lane is registered in the same file as the Dutch one because it is the same project and the same evidence policy. The eleven records below support the Φῶς ἱλαρόν dossier; their full field set lives in `../data/source-registry-v1.json`.
 
 ### SRC-PHOS-PRAVENC — «Свете тихий», Православная энциклопедия, т. 62, с. 54–55
 
@@ -748,3 +748,37 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Supports: the Church Slavonic text is a translation from the Greek; Balmont's reworking exists and carries an added refrain.
 - Limits: only the opening of the essay was read. Balmont is recorded as a rejected precedent, not used.
 
+### SRC-PHOS-AC-ANF — Apostolic Constitutions, Book VIII §§34–37 (ANF translation)
+
+- URL: https://www.newadvent.org/fathers/07158.htm
+- Evidence class: A1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: PUBLICATION_ELIGIBLE · Publication: REFERENCE · HOLDs: none
+- Supports: VIII.34, the hours of prayer including evening; VIII.35, the evening assembly and «the repetition of the psalm at the lighting up the lights»; VIII.36, the deacon's bidding prayer; VIII.37, the bishop's evening thanksgiving («O God, who art without beginning and without end…»); and the fact that **not one line of Φῶς ἱλαρόν occurs there**.
+- Limits: read in the NPNF English translation only; the Greek was not collated. Read as VIII.34–37 and XLII–XLV, not the whole book.
+
+### SRC-PHOS-BL-ALEX — British Library catalogue, Royal MS 1 D VII (Codex Alexandrinus, vol. 3)
+
+- URL: https://searcharchives.bl.uk/catalog/040-002353448
+- Evidence class: B1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD
+- Supports: the canticles of the volume are Magnificat, Nunc dimittis, Benedictus and the Ὕμνος Ἑωθινός (Gloria in excelsis); **Φῶς ἱλαρόν is not listed**.
+- Limits: a catalogue description, not an autopsy; absence is established from the list of contents.
+
+### SRC-PHOS-ODES-BOOK — «Book of Odes (Bible)», survey of the Greek ode collections
+
+- URL: https://en.wikipedia.org/wiki/Book_of_Odes_(Bible)
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: the earliest surviving ode collection is the 14 odes of the 5th-century Codex Alexandrinus; the 14th is the Gloria in Excelsis.
+- Limits: read as a search excerpt; confirms the composition of the collection only.
+
+### SRC-PHOS-POXY — Oxyrhynchus hymn, P.Oxy. XV 1786
+
+- URL: https://www.patternsofevidence.com/2025/10/03/worlds-oldest-hymn-rediscovered/
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: LOCATOR_MISSING · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: a Christian hymn with Greek vocal notation, c. 250–300, fragmentary.
+- Limits: the editio princeps (1922) was not read; the dating is reported, not checked. Used only to order the witnesses, never in copy.
+
+### SRC-PHOS-ODES — Odes of Solomon
+
+- URL: https://en.wikipedia.org/wiki/Odes_of_Solomon
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: 42 odes, composition dated by most scholars c. 70–125; preserved chiefly in Syriac manuscripts of the 10th–15th centuries, with a Greek fragment (P. Bodmer XI).
+- Limits: read as a search excerpt; the editions were not consulted. Used only to establish that an older corpus exists, never in copy.

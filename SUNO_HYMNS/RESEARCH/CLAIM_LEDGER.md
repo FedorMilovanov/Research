@@ -798,18 +798,38 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 ### CLM-PHOS-AUTHORSHIP — authorship
 
-**Claim:** the author is unknown; the ascriptions to Athenogenes and to Sophronius are not established — the first from a conflation of two testimonies in Basil, the second contradicted by P. Lond. 2037B (6th–7th c.).
+**Claim:** the author is unknown; the ascriptions to Athenogenes and to Sophronius are not established — the first from a conflation of two testimonies in Basil, the second failing not because of P. Lond. 2037 (a 7th-century copy can carry a 7th-century hymn) but because Basil calls the thanksgiving ancient c. 375B (6th–7th c.).
 
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-PRAVENC, SRC-PHOS-BASIL-DSS · **HOLDs:** ARCHIVE_HOLD
 **Limits / next action:** the papyrus is known only through the encyclopaedia's report; see it in a catalogue.
 
-### CLM-PHOS-AC-HOLD — the Apostolic Constitutions claim
+### CLM-PHOS-AC-CHECKED — the Apostolic Constitutions claim, read and dropped
 
-**Claim:** that the hymn is first recorded in the *Apostolic Constitutions* (VIII.35) is widely repeated online and was **not confirmed**.
+**Claim:** that the hymn is first recorded in the *Apostolic Constitutions* (VIII.35) is **false**. VIII.35–37 (ANF translation, read 2026-10-26) contain the evening assembly, the psalm at the lighting of the lamps, the deacon's bidding prayer and the bishop's thanksgiving («O God, who art without beginning and without end…»), but not one line of the hymn.
 
-**Review state:** EVIDENCE_HOLD · **Sources:** SRC-PHOS-PRAVENC · **HOLDs:** EVIDENCE_HOLD
-**Evidence gap:** no primary text of the Apostolic Constitutions was read.
-**Limits / next action:** read VII.47–VIII.35 in a critical text; until then the claim is not used in copy.
+**Review state:** `VERIFIED_NEGATIVE` — looked for in a primary text and found not to be the case · **Sources:** SRC-PHOS-AC-ANF · **HOLDs:** none
+**Limits:** checked in English translation only; the Greek text of the Constitutions was not collated.
+
+### CLM-PHOS-OLDEST-SCOPE — what «oldest» may mean
+
+**Claim:** Phos Hilaron is the earliest non-scriptural Christian hymn whose complete text survives and which has been sung continuously to the present day. It is **not** the oldest by manuscript age or by date of composition.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS, SRC-PHOS-PRAVENC, SRC-PHOS-POXY, SRC-PHOS-ODES
+**Limits / next action:** older by manuscript — P.Oxy. XV 1786 (c. 250–300, notated, fragmentary), P. Bodmer XI (Odes of Solomon 11, 3rd–4th c.); older by composition — the Odes of Solomon (c. 70–125), the Naassene hymn in Hippolytus. The superlative may appear in copy only with the full qualifier (dossier § 3.6).
+
+### CLM-PHOS-NOT-ALEXANDRINUS — the Codex Alexandrinus claim, dropped
+
+**Claim:** that the hymn's oldest text is in the 5th-century Codex Alexandrinus is **false**: its fourteen odes after the Psalter end with the Ὕμνος ἑωθινός (Gloria), and the hymn is not among them (British Library, Royal MS 1 D VII).
+
+**Review state:** `VERIFIED_NEGATIVE` — looked for in a primary text and found not to be the case · **Sources:** SRC-PHOS-BL-ALEX, SRC-PHOS-ODES-BOOK
+**Limits:** from the library's description and the standard list of odes; the codex was not examined page by page. The confusion is with the Gloria, which does have a 5th-century Alexandrian witness.
+
+### CLM-PHOS-BASIL-SCOPE — what Basil does and does not attest
+
+**Claim:** Basil c. 375 attests the antiquity of the lamp-lighting thanksgiving and quotes its Trinitarian clause, but does not quote the six lines. The core is therefore attested by 375; the complete six-line text is first read in a papyrus of the 6th–7th century.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-BASIL-DSS
+**Limits / next action:** whether the six lines existed verbatim in 375 is not established and is not asserted.
 
 ### CLM-PHOS-DATING-OPEN — date of composition
 
@@ -827,7 +847,7 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 ### CLM-PHOS-001-TRANSLATION — our Russian text
 
-**Claim:** `PHOS-001-RU v0.2` is a verse translation of six Greek lines into six Russian lines, in the original order, with no refrain, no repeated line, no added line and no rhyme, keeping the suspended reference of the three genitive adjectives.
+**Claim:** `PHOS-001-RU v0.5` is a verse translation of six Greek lines into six Russian lines, in the original order, with no refrain, no repeated line, no added line and no rhyme, keeping the suspended reference of the three genitive adjectives.
 
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-CPDL · **HOLDs:** none
 **Limits / next action:** every choice and every rejected alternative is in `DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md`; a working draft, not an owner-approved text.
