@@ -142,7 +142,7 @@
         "W.A.P. Smit scholarly edition, 1930–1935",
         "Modern Russian adaptation and new musical setting"
       ],
-      "productionState": "ASSETS_PREPARED_WITH_OPEN_QA",
+      "productionState": "ASSETS_PREPARED",
       "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
       "promptCapture": "NOT_CAPTURED",
       "versions": [
@@ -158,7 +158,8 @@
             "Record duration, format, cover attachment and hashes from the actual file."
           ]
         }
-      ]
+      ],
+      "qaStatus": "OPEN"
     }
   ],
   "adjacentNonDutchWorks": [
