@@ -217,6 +217,139 @@ City of Dublin; and had **all the Gentry and Persons of Quality in the City for 
 
 ---
 
+### 0A.2. Утверждение Cambridge Platonism Sourcebook о «Seven Churches» ПОДТВЕРЖДЕНО — `LOCATOR_HOLD` снят (добавлено 2026-10-25)
+
+**Вопрос.** Cambridge Platonism Sourcebook (Divinity Faculty, Cambridge) утверждал, что Чарнок в
+*Several Discourses upon the Existence and Attributes of God* (1682) «quotes More on God's
+omnipresence; **also cites More's *Exposition of the Seven Churches***». Первая половина
+подтверждена (сноска 1.98, стр. 261). Вторая половина висела как `LOCATOR_HOLD`: аппарат дискурса
+о вездесущности (156 сносок) прочитан полностью — второго упоминания Мора там не было.
+
+**Разрешение 2026-10-25.** Утверждение **подтверждено**. Локатор — **фолиант 1682, стр. 329,
+сноска 1.113**, в дискурсе **«A DISCOURSE UPON Gods Knowledg»** (Пс. 147:5, стр. 272–340), узел
+`A32723.0001.001/1:11`, 47 чанков. Дословно:
+
+> **«For the Evidence of it I refer you to Dr. More's Exposition of the seven Churches, worthy
+> every Learned and Ʋnderstanding Mans reading, and of every sober Romanist.»**
+
+Три наблюдения, каждое из которых — самостоятельная находка.
+
+**1. Рекомендация, а не полемика.** Чарнок не спорит с Мором и не опровергает его: он
+**отсылает читателя к нему за доказательством** («For the Evidence of it I refer you to…»).
+Причём отсылает **дважды неожиданным адресатом** — «every Learned and Understanding Man» **и
+«every sober Romanist»**. Это единственное место в корпусе отдела, где Чарнок прямо называет
+католиков адресатами своей рекомендации. Для биографии это готовая сцена: пуританский проповедник
+после открытия «Папистского заговора» рекомендует католикам книгу платоника-англиканца.
+
+**2. Это второй, независимый случай именования Мора в главном труде.** Первый — сноска 1.98,
+стр. 261, дискурс о вездесущности («Dr. More.» + цитата о «ill scented places»). Второй — сноска
+1.113, стр. 329, дискурс о знании. **Оба раза Мор — союзник, а не противник.** Ни одного случая
+полемики с Мором отдел не обнаружил. Итого именованных авторов-союзников в фолианте 1682
+минимум трое, и все трое даны с явной рекомендацией: Мор (дважды), Маймонид (дважды — см. ниже),
+Декарт (в *Supplement* 1683).
+
+**3. Маймонид назван в фолианте 1682 ДВАЖДЫ, а не только в *Supplement*.** Аппарат дискурса о
+знании (`1:11`) даёт:
+- сноска **1.43** — «Maimonid. More Nevoch. Part 3. Cap. 21. P. 393, 394.»;
+- сноска **1.63** — «Maimonia•• More Nevo∣chim. part 3. c. 20. p. 391, 392, 393.»
+
+Прежняя запись отдела (§0A.1) знала только *Supplement* 1683, сноска 1.5 («Maimon. More Nevoch.
+Par. 3. c. 22. Amam. Censur. in locum»). Итого **три именования Маймонида в главном труде**, во
+всех трёх случаях — *More Nevochim*, часть III, главы **20, 21 и 22**. Это уже не случайная
+ссылка, а систематическое чтение.
+
+### 0C. Ноябрь 1678: «Папистский заговор» в проповеди Чарнока (добавлено 2026-10-25)
+
+**Источник:** тот же узел `A32723.0001.001/1:11` («A DISCOURSE UPON Gods Knowledg», Пс. 147:5).
+Сноска **1.108** дословно: **«Nov. 1678. When the Popish Plot was discover'd.»**
+
+К этому месту в теле дискурса (**стр. 328**, начало второго «Use» — «The second Use is of
+Comfort»): «**'Tis a ground of great Comfort under the
+present dispensation wherein we are;** [* 1.108] We have heard the Doctrinal part, and God hath
+given us the Experimental part of it in his special Providence this day, upon the Stage of the
+World. And blessed be God that he hath given us a ground of Comfort, without going out of our
+ordinary course to fetch it, whereby it seems to be peculiarly of Gods ordering for us.»
+
+**Что это даёт.** Первый в корпусе отдела **точный месяц проповеди**, привязанный к
+историческому событию общенационального масштаба: **ноябрь 1678**, открытие «Папистского
+заговора» Тайтуса Оутса. Хронология: Чарнок в Кросби-Холле (1675–1680), то есть эта проповедь —
+из последних двух лет его жизни, в период, когда, по Calamy 1727, память его уже начинала
+изменять ему (см. §0B). «We have heard the Doctrinal part» — проповедь читалась по рукописи
+(«penn'd and read his Sermons verbatim»), и транскрайберы/редакторы 1682 года сохранили
+датированную помарку. Это редчайший случай, когда **внутри посмертного фолианта сохранилась
+привязка дискурса к дате**.
+
+**Антипапская апокалиптика — дословно (стр. 329).** Единственное в фолианте 1682 место, где
+Чарнок пускает в ход Откровение как толкователя современности:
+
+> «'Tis observable, that our Saviour assuming to himself a different Title in every Epistle to
+> the Seven Churches, doth particularly ascribe to himself this of Knowledge and Wrath in that to
+> Thyatira, **an Emblem or Description of the Romish State**: [* 1.112] And unto the Angel of the
+> Church of Thyatira write, These things saith the Son of God, who hath his Eyes like to a flame
+> of Fire, and his Feet like fine Brass. … **He knows every design of the Romish Party, design'd
+> by that Church of Thyatira** [* 1.113]. **Jezabel, there, signifies a whorish Church, such a
+> Church as shall act as Jezabel**, Ahab's Wife, who was not only a Worshipper of Idols, but
+> propagated Idolatry in Israel, slew the Prophets, persecuted Elijah, murdered Naboth, the Name
+> whereof signifies Prophesie, seiz'd upon his Possession. And if it be said that Verse 19. this
+> Church was commended for her Works, Faith, Patience; 'tis true **Rome did at first strongly
+> profess Christianity, and maintain'd the interest of it, but afterwards fell into the practice of
+> Jezebel, and committed Spiritual Adultery**: And is she to be owned for a Wife, that now plays
+> the Harlot, because she was honest and modest at her first Marriage; [* 1.114] And though she
+> shall be destroy'd, yet not speedily, Verse 22. I will cast her into a Bed, seems to intimate the
+> destruction of Jezebel, not to be at once and speedily, but in a lingring way, and by degrees,
+> as Sicknes consumes a Body.»
+
+**Сноски этого места:** 1.112 = «Rev. 2.1••»; **1.113 = отсылка к Мору** (см. §0A.2); 1.114 =
+«**Coc. in loc.**» — то есть **Иоганн Кокцей** (Johannes Cocceius), третий именованный
+толкователь Откровения в одном абзаце. 1.129 = «Rev. 2.2.»
+
+**Три следствия для биографии.**
+1. **Чарнок — историцист в чтении Откровения.** Фиатира = «the Romish State», Иезевель =
+«a whorish Church», Рим. Это стандартный протестантский комментаторский кодекс, но важно, что
+Чарнок пускает его в ход **в 1678 году**, в самый острый момент кризиса, и притом в дискурсе не
+о пророчествах, а о **всеведении Божьем** — то есть апокалиптика служит у него доказательством
+атрибута.
+2. **Хронологическая привязка проповеди к Кросби-Холлу.** До этого отдел знал только диапазон
+   «1675–1680». Теперь есть месяц.
+3. **Мор и Кокцей рядом.** Платоник и реформатский толкователь Писания цитируются в одном
+   абзаце — это точное описание того, что McCosh называл эклектической эрудицией Чарнока, и оно
+   даёт биографу конкретный эпизод вместо общей оценки.
+
+### 0D. Аппарат дискурса «God's Knowledg» — именованные авторы (добавлено 2026-10-25)
+
+Прочитаны сноски 1.1–1.165+ узла `1:11`. Именованные авторы, которых отдел раньше не фиксировал
+в этом дискурсе (все ссылки дословные, с опечатками кейбординга):
+
+| Сноска | Ссылка | Автор / сочинение |
+|---|---|---|
+| 1.31 | «Fotherby Atheoma p. 132.» | **Charles Fotherby, *Atheomastix*** |
+| 1.36 | «Pacuvius said Siqui quae eventura sunt provident… Gell. lib. 14. c. 1.» | Pacuvius через **Авла Геллия** |
+| 1.38 | «Fuller's Pisgah l. 2. p. 2••1.» | **Thomas Fuller, *Pisgah-sight of Palestine*** |
+| 1.39 | «Chequell.» | Cheynell (?) — не идентифицирован |
+| 1.40, 1.41 | «Coccei sum. Theol. p. 50.» (дважды) | **Johannes Cocceius** |
+| 1.43, 1.63 | «Maimonid. More Nevoch. Part 3. Cap. 21. / c. 20.» | **Маймонид, дважды** |
+| 1.49 | «Pugio Fidei part I. ch. 19.» | **Raymundus Martini, *Pugio Fidei*** |
+| 1.55 | «Arrian Epictet. lib. 1. cap. 14. p. 60.» | **Арриан, *Эпиктет*** |
+| 1.65 | «Kendall against Goodwin of Fore-knowledg.» | **Thomas Kendall против Thomas Goodwin** |
+| 1.84 | «Placaeus de deitate Christi.» | **Josué de la Place** |
+| 1.86 | «Daillè Serm. 15. p. 21, 22, 23, 24.» | **Jean Daillé** |
+| 1.80, 1.87 | «Sabund Tit. 84.» / «Sabund. Theol. natural. Tit. 84.» | **Raimundus de Sabunde, *Theologia naturalis*** |
+| 1.97 | «Ps. 2.1, 2. Camero, p. 89. col. 1.» | **Cameron** |
+| 1.104 | «Drexel Nicetas, lib. 2. cap. 10. p. 357.» | **Jeremias Drexel, *Nicetas*** |
+| 1.117 | «Turretin's Sermons, p. 3••2.» | **Turretin** |
+| 1.133 | «Barlow's Mans Refuge, p. 29, 30.» | **Thomas Barlow, *Mans Refuge*** |
+| 1.163 | «Antiquit. lib. 1. cap. 3.» | **Иосиф Флавий** (в теле: «Josephus gives this reason for Abels Holiness, That he believed God was ignorant of nothing») |
+
+**Два наблюдения.**
+- **«Kendall against Goodwin of Fore-knowledg» (сноска 1.65)** — имя **Goodwin** появляется в
+  аппарате главного труда Чарнока. Это не Thomas Goodwin мастер Эммануила как союзник, а
+  **Thomas Goodwin как оппонент в полемике о предзнании**. Для «эммануиловской линии» (том 15)
+  это важная поправка: имя Гудвина присутствует в корпусе, но **не как влиятельный авторитет, а
+  как объект критики**. Зафиксировано, чтобы не построить на этом ложной линии влияния.
+- **Raymundus Martini's *Pugio Fidei*** — классическая антииудейская полемика XIII века. В
+  аппарате «пуританского» фолианта. Отдел фиксирует факт без сглаживания: библиотека Чарнока (по
+  Johnson'у — сожжённая в Пожаре 1666) включала и такого рода сочинения.
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах
