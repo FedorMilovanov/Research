@@ -45,6 +45,7 @@
 | 10 | `10_REPO_USAGE_LEDGER_AND_VERIFICATION_STATUS.md` | Сводный леджер уже используемого в Research Charnock-материала | `CHARN_PRACT_ATHEISM_001`; two-state diagnostic; три функциональные роли; что отдел добавил |
 | 11 | `11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md` | **Wood, *Athenæ Oxonienses* 1691 — первичная транскрипция входа [429] и Fasti 1654** | Место смерти (дом Richard Tymms, Whitechapel); Sir John Langham и Crosby House; St Michael Cornhill «under the Belfry»; «France or Holland»; формула «true son of the Church of England» у Wood; `CONFLICT-12`; CC0 1.0 |
 | 12 | `12_THE_SAYINGS_1680_BROADSIDE_PRIMARY_TRANSCRIPTION.md` | **Broadside *The sayings…* 1680 — полная транскрипция ~38 афоризмов** | EEBO-TCP `B02133.0001.001`, CC0 1.0. Единственный contemporaneous источник даты 28 июля; показано, что текст — выборка из sermon «The Sinfulness and Cure of Thoughts»; проверка дня недели (28 июля 1680 = среда); `CONFLICT-10` документирован с обеих сторон |
+| 15 | `15_THE_EMMANUEL_LINE_PRESTON_POOLE_FOWLER.md` | **Линия Эммануила: три прерванных труда об атрибутах Божьих** | John Preston (*Life eternall*, 1631, `A09977`) — мастер Emmanuel, трактат об атрибутах в 18 sermon'ах, издан посмертно; Matthew Poole (1624–1679) — Emmanuel, *English Annotations* дописаны друзьями; Christopher Fowler (1610–1676/8). Два contemporaneous сравнения: предисл 1682 («both being taken away when Preaching upon this Subject») и элегия 1680 («Poole and Charnock … in one year snatcht»). Разрывы: Poole → Чарнок 299 дней; Fowler → Чарнок 1289 дней |
 | 14 | `14_AN_ELEGY_1680_PRIMARY_TRANSCRIPTION.md` | ***An Elegy* 1680 — полная транскрипция элегии из 100 строк с пятью сносками-аттрибуциями** | EEBO-TCP `A39134.0001.001`, Wing **E409**, CC0 1.0. Печатник — Thomas Cockerill, издатель будущих трудов Чарнока. Даёт 27 июля; **пять sermon'ов по текстам Писания**; **текст последней проповеди = Наум 1:3** (дважды подтверждён); «Poole and Charnock», «Three Nations», «five years space» |
 | 13 | `13_NEW_POEMS_1680_ELEGY_ACROSTICS_EPITAPH_PRIMARY_TRANSCRIPTION.md` | ***New Poems* 1680 — полная транскрипция элегии 130 ст., двух акростихов (STEPHEN, CHARNOCK) и эпитафии 12 ст.** | EEBO-TCP `A52960.0001.001`, CC0 1.0. Третий contemporaneous объект с датой смерти (**27 июля**) и первый — изнутри несогласной среды. Четыре эксклюзивных сведения: «Fowler's place»; «not for any crimes»; тема последней проповеди; «Birth scarcely known». Новый `CONFLICT-14` |
 
@@ -79,7 +80,8 @@
 | **1680** | Элегия 100 строк даёт **пять sermon'ов Чарнока по библейским текстам**: 2 Пар. 16:9 (Промысл); Ин. 16:9 (неверие); Ин. 17:3 (познание Бога и Христа); Пс. 14:1 (бытие Божье и атеист); Наум 1:3 (терпение) | **Элегия 1680 (`A39134.0001.001`) — эксклюзив** | `B1` |
 | **~1675–1680** | «From God an Instance but for **five years** space» — независимое подтверждение длины лондонского периода | **Элегия 1680 (`A39134.0001.001`)**; ср. Wood | `B1` |
 | **~1677–1680** | **Серия атрибутов — «about three years before he died»**: «which was our Author's main business, for about three years before he died, to display before his hearers» | **Предисл 1682 к фолианту (`A32723.0001.001`, узел `1:2`) — эксклюзив** | `A1` |
-| **1680** | «If but two such, as **Poole** and Charnock, be / In one year snatcht by fatal destiny, / **Three Nations** …» — Чарнок сопоставлен с Matthew Poole'ом (1624–1679) | **Элегия 1680 (`A39134.0001.001`) — эксклюзив** | `B1` |
+| **1680** | «If but two such, as **Poole** and Charnock, be / In one year snatcht by fatal destiny, / **Three Nations** …» — Чарнок сопоставлен с Matthew Poole'ом (1624–1679). Poole — выпускник Emmanuel; *English Annotations* дописаны друзьями; разрыв 299 дней | **Элегия 1680 (`A39134.0001.001`) — эксклюзив** | `B1` |
+| **1682** | Предисл к фолианту: «Dr. Preston did worthily upon the Attributes in his day … **both being taken away when Preaching upon this Subject**». Preston (1587–1628) — мастер Emmanuel; *Life eternall; or, A treatise of the knowledge of the divine essence and attributes. Delivered in XVIII. sermons* (1631, `A09977`) — **трактат об атрибутах в sermon'ах, издан посмертно**; оглавление получено | **Предисл 1682 (`A32723.0001.001`) + `A09977.0001.001`** | `A1` |
 | 1661, 31 декабря | Подписывает сертификат в пользу Edward Veal, датированный Дублином | McCosh (по Calamy Continuation, p. 83) |
 | 1663, 19–20 июня | Ордер на арест Stephen Charnock; показания Rob. Littlebury | Calendar of State Papers (через McCosh) |
 | ~1660–1675 | «Наибольшая часть пятнадцати лет» в Лондоне без постоянной должности; визиты во Францию и Голландию | Adams & Veal; Wood |
@@ -268,11 +270,13 @@
 27. **Сверить ~38 афоризмов broadside с *supplement* 1683** (`A32724.0001.001`, стр. 1 и далее), а
     не с репринтом 1844. Дословное совпадение на первом абзаце уже проверено; broadside даёт
     **правленую** версию sermon («as is in a natural man» вместо «any man»).
-28. **Проверить параллель с John Preston** — предисл 1682: «Dr. Preston did worthily upon the
-    Attributes in his day … both being taken away when Preaching upon this Subject». Требуется
-    биография John Preston (1587–1628) и его трактаты об атрибутах, чтобы использовать параллель
-    корректно, а не как embellishment. — по другим элегиям 1680 года, где Пюл и
-    Чарнок названы рядом.
+28. **Проверить, читал ли Чарнок Престона** — индекс фолианта 1682 (`A32723.0001.001`, узел
+    `1:19`) и указатель *Life eternall* (`A09977.0001.001`, узел `1:22`); прочитать sermon'ы 16–17
+    Престона (вездесущность, всемогущество) и сопоставить с дискурсами Чарнока на стр. 241 и 417.
+29. **Подтвердить идентификацию «Poole» = Matthew Poole** — по другим элегиям 1680 года и по
+    посмертным брошюрам о Poole (`A55383`, `A55384`).
+30. **Установить точную дату смерти John Preston'а** (принято 20 июля 1628; требуется
+    подтверждение).
 
 ---
 
