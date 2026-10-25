@@ -970,7 +970,7 @@
   "florusLyonPl11920261025": {
    "what": "семь листов оцифровки PL 119, перечитанных кругом 37: трактат Флора против Иоанна Скота и *Sermo de prædestinatione* того же тома",
    "how": "fetch_page на {server}/fulltext/inside.php?item_id=patrologiaecursu0119mign&doc=patrologiaecursu0119mign&path=/29/items/patrologiaecursu0119mign&q=Scotum|malorum|tripartito|omnes; ответы отдают хиты по листьям (поле page) и участок OCR-строки, целой страницы не дают",
-   "measuredAt": "2026-10-24T23:55:45Z",
+   "measuredAt": "2026-10-25T00:01:21Z",
    "tractWindow": "листья 57–129 по бегущей строке; колонки глав — из перечня тома на листе 618; лист → колонка = 2 × лист − 13, выверено на листьях 55, 58, 63, 67, 68, 86, 90, 96, 119",
    "quotes": {
     "лист 67": "neminem cogat ad malum, ut malus sit… reprobos vero non præordinaverit ad supplicium… manifeste divinam prædestinationem in parte accipit, et in parte negat",
@@ -979,10 +979,15 @@
     "лист 55 (Sermo)": "non Dei, sed ipsorum est culpa… Præscivit quidem æternam illorum damnationem, sed ex merito ipsorum",
     "лист 58 (Argumentum)": "duas esse prædestinationes, unam bonorum, alteram vero malorum, dummodo hac non sit causa malorum culpa, sed tantum poena aut præparatio malitiæ",
     "лист 68 (примечание)": "перечень осуждённых статей Майнцского собора, между ними «quod Jesus Christus Dominus non fuerit crucifixus neque mortuus pro redemptione totius mundi, sed tantum pro his qui salvantur»",
-    "лист 12 (нота издателя)": "Opusculum adversus Amalarium Lugdunensem chorepiscopum, de Corpore Christi tripartito… Florus hoc opusculum per modum epistolae scripsit; tom. XV Bibliothecæ Patrum, edit. Lugdun., pag. 611"
+    "лист 12 (нота издателя)": "Opusculum adversus Amalarium Lugdunensem chorepiscopum, de Corpore Christi tripartito… Florus hoc opusculum per modum epistolae scripsit; tom. XV Bibliothecæ Patrum, edit. Lugdun., pag. 611",
+    "лист 66 (тело трактата)": "de Deo dicit Apostolus, qui vult omnes homines salvos fieri (I Tim. II, 4) — как именно Флор снимает это место у противника, по обрывку колонки не видно; лист требует дочитывания",
+    "лист 111 (гл. XIV)": "quia tota perierat, et totam ille venit salvam facere. Ideo totam eam suscepit, id est et animam et corpus hominis, ut ex toto eam sua morte et resurrectione salvaret… Sine causa enim Dominus totam eam sua incarnatione suscepit, si non tota indigebat salute, si non tota indigebat Salvatore",
+    "лист 56 (Sermo)": "liberum arbitrium ita obeecatum est et infirmatum, ut sufficiat homini ad male agendum… ad bene vero agendum nullo modo assurgat et convalescat, nisi per fidem unius Mediatoris Dei et hominum hominis Christi Jesu et donum Spiritus sancti instauretur… Sive in illis qui salvantur sive in illis qui pereunt, voluntas propria remuneratur, voluntas propria damnatur",
+    "лист 68 (примечание, дочитано)": "quod nullum ad se diabolus possit rapere pro quo sanguinem suum Jesus Christus Dominus fudit — четвёртая осуждённая статья Майнца 853 по перечню Гинкмара"
    },
    "notFlorus": "утверждение круга 34 о листе 335 снято: лист вне окна 57–129; всеобщие формулы листов 22, 23, 30, 34, 42 принадлежат тому же Флору, но другому сочинению того же тома (против Амалария), и в строку FP-13 не вписаны",
-   "recheck": "повторить четыре запроса inside.php и сверить листья с окном; отрицательный ответ читать как отсутствие названной формы слова"
+   "recheck": "повторить четыре запроса inside.php и сверить листья с окном; отрицательный ответ читать как отсутствие названной формы слова",
+   "correction20261025": "первая версия опиралась на чанк 0; запрос по формуле дал четыре чанка, и в четвёртом лежал лист 111. Чанки широкого запроса нельзя дочитывать по тому же URL (ответ идёт через переписывающий прокси, второй чанок по нему не читается), поэтому вместо листания поле сужают: `\"salvam facere\"` вместо `\"omnes homines\"`. totalChunks — часть ответа, читать её надо до вывода."
   }
  },
  "parallelAgents": {
@@ -1173,13 +1178,13 @@
    "file": "docs/research/atonement/35_four_point_authors_mass_registry.md",
    "driveFolder": "13cx8Y86uaDRIullYpc8tneFxGbjPUlIJ",
    "driveFolderName": "05 — SOURCE LEDGERS & CLAIM MAPS",
-   "driveFileId": "1PeT8ecAy16Q1gNtktGM9G-JxvN4QXwnZ",
-   "bytes": 325798,
-   "sha256Local": "9d8083a620676253cead8dde9da38ef901796b6e364e5ec4bd74ccb26ce4564e",
-   "uploadedAt": "2026-10-24T23:52:29Z",
-   "verification": "get_file на 1PeT8ecAy16Q1gNtktGM9G-JxvN4QXwnZ вернул size 325798 и md5 432ad98fab89139a33175304bdb9f1af — равны дереву на 2026-10-24T23:55:45Z; у вытесненного объекта 1HTKqcji9oCa4MTJQ0vpnbCUQDh75XxhP прочитаны имя и описание после update_file (2026-10-24T23:52:43Z), содержимое не менялось и его md5 остался a7a0593f80b85705fe6e59d36242cfca",
+   "driveFileId": "14fg0J-SxVhTkT5_5DHFAb8JXkuDZP9ee",
+   "bytes": 329882,
+   "sha256Local": "0ef5dc7ecaec4ae57d5018b58bcded7ebe72aa1ca53218f9b1a708a813a26770",
+   "uploadedAt": "2026-10-25T00:00:13Z",
+   "verification": "get_file на 14fg0J-SxVhTkT5_5DHFAb8JXkuDZP9ee вернул size 329882 и md5 09e5aea6bbd0104cce7e798f1c4f2274 — равны дереву на 2026-10-25T00:01:21Z; у вытесненного объекта 1PeT8ecAy16Q1gNtktGM9G-JxvN4QXwnZ прочитаны имя и описание после update_file (2026-10-25T00:00:20Z), содержимое не менялось и его md5 остался 432ad98fab89139a33175304bdb9f1af",
    "why": "реестр массы читают вне редактора; канон остаётся git-файлом, а снимок — только удобочитаемой копией",
-   "note": "лежать на Drive ≠ цитировать: 105 строк этого реестра — класс `C` (до снятия печати они не имеют права войти в текст), 105 адресов добычи в очереди 1:1 с ними; числа пересняты кругом 37 (строка FP-13 вышла из C по разметке тома PL 119, адрес Q-13 снят, реестр прирос §36; строк-носителей не изменилось: 209); снимки, помеченные «УСТАРЕЛО», лежат рядом и в корзину не убраны",
+   "note": "лежать на Drive ≠ цитировать: 105 строк этого реестра — класс `C` (до снятия печати они не имеют права войти в текст), 105 адресов добычи в очереди 1:1 с ними; числа пересняты поправкой круга 37 (строка FP-13 переписана по дочитанным чанкам того же тома, счёт не изменился); снимки, помеченные «УСТАРЕЛО», лежат рядом и в корзину не убраны",
    "contentRevisions20261023": [
     {
      "asOf": "2026-10-23T11:04:01Z",
@@ -1298,7 +1303,7 @@
      "note": "снимок круга 36: 209 строк-носителей, классы A1 28 / A2 35 / B1 34 / B2 6 / C 106, 106 адресов очереди, «Добыть:» 2; поднята FP-33 (Second Helvetic и Gallican прочитаны по с. 252–257 и 356–372 тома Шаффа III), снят адрес Q-33"
     }
    ],
-   "driveFileName": "2026-10-25 — слепок 35_four_point_authors_mass_registry (круг 37: 209 строк, 325798 B, md5 432ad98fab89139a33175304bdb9f1af).md",
+   "driveFileName": "2026-10-25 — слепок 35_four_point_authors_mass_registry (поправка круга 37: 209 строк, 329882 B, md5 09e5aea6bbd0104cce7e798f1c4f2274).md",
    "driveFileIdSuperseded20261023b": {
     "id": "1Fd9wMIgXyWh7yWQ93DnZw067FOl9psN_",
     "bytes": 88792,
@@ -1308,11 +1313,11 @@
    },
    "driveFileNameRule": "в имени объекта Drive стоят первые 8 символов дайджеста содержимого; в реестре они не повторяются, потому что правило 20 читает любой 7–8-значный шестнадцатеричный токен как ссылку на git-объект и требует для него живого git show. Здесь лежит полный sha256 того же содержимого — тот же факт, но проверяемый без мистификации под коммит",
    "driveFileNameSha256": "cc14e41be6026e705d8bd7ec24779454a8ff25470269591397e1d5e3f6ad152b",
-   "md5Local": "432ad98fab89139a33175304bdb9f1af",
-   "fileLines": 1239,
+   "md5Local": "09e5aea6bbd0104cce7e798f1c4f2274",
+   "fileLines": 1241,
    "relationToCanonical": "зеркало = канон круга 18 (203 строки) байт-в-байто по md5; канон остаётся git-файлом, зеркало читается вне редактора",
    "round18LagNote": "зеркало .md на Drive соответствует снимку круга 17 (120 815 байт); круг 18 меняет файл в этом PR, побайтовая замена зеркала закрепляется вторым коммитом круга: закачка даёт новый файл, прежние снимки помечаются «УСТАРЕЛО», а не удаляются",
-   "supersededPreviousSnapshot": "1HTKqcji9oCa4MTJQ0vpnbCUQDh75XxhP",
+   "supersededPreviousSnapshot": "1PeT8ecAy16Q1gNtktGM9G-JxvN4QXwnZ",
    "fileName": "2026-10-24 — слепок 35_four_point_authors_mass_registry (круг 34: 209 строк, 293134 B, md5 28582f9d6292ff2a744843dd64c130b6).md",
    "lagBehindGit": false,
    "reflow20261023": {
@@ -1429,6 +1434,18 @@
      "measuredAt": "2026-10-24T23:55:45Z",
      "note": "снимок круга 37: Флор Лионский прочитан по разметке тома, FP-13 → A1, Q-13 снят, очередь 105",
      "how": "upload_file из рабочего дерева + get_file (fields=id,name,size,md5Checksum,createdTime) + list_files по папке 05"
+    },
+    {
+     "asOf": "2026-10-25T00:01:21Z",
+     "bytes": 329882,
+     "lines": 1241,
+     "md5": "09e5aea6bbd0104cce7e798f1c4f2274",
+     "rows": 209,
+     "driveFileId": "14fg0J-SxVhTkT5_5DHFAb8JXkuDZP9ee",
+     "uploadedAt": "2026-10-25T00:00:13Z",
+     "measuredAt": "2026-10-25T00:01:21Z",
+     "note": "снимок поправки круга 37: Флор дочитан, строка переписана, счёт реестра тот же (209 / 105)",
+     "how": "upload_file из рабочего дерева + get_file (fields=id,name,size,md5Checksum,createdTime) + поиск по имени и по родителю в папке 05"
     }
    ],
    "liveObjectHistory": [
@@ -1639,15 +1656,26 @@
      "why": "снятие адреса Q-13 и подъём класса FP-13",
      "measuredAt": "2026-10-24T23:55:45Z",
      "how": "запись о живом зеркале круга 37 добавлена тем же движком, что и переливка: upload_file + get_file, состояние прочитано ответами вызовов 2026-10-24T23:52Z"
+    },
+    {
+     "driveFileId": "14fg0J-SxVhTkT5_5DHFAb8JXkuDZP9ee",
+     "bytes": 329882,
+     "md5": "09e5aea6bbd0104cce7e798f1c4f2274",
+     "lines": 1241,
+     "uploadedAt": "2026-10-25T00:00:13Z",
+     "status": "живое зеркало после поправки круга 37",
+     "why": "правка строки FP-13 по дочитанным чанкам; счёт не двигался",
+     "measuredAt": "2026-10-25T00:01:21Z",
+     "how": "upload_file + get_file, ответы этого часа"
     }
    ],
-   "measuredAt": "2026-10-24T23:55:45Z",
-   "checkedAt": "2026-10-24T23:55:45Z",
+   "measuredAt": "2026-10-25T00:01:21Z",
+   "checkedAt": "2026-10-25T00:01:21Z",
    "how": "переливка №15: upload_file побайтово из рабочего дерева, затем get_file; имя живого слепка описывает дерево, поэтому переливка следует за всяким изменением файла, а переименование вытесненного — за всякой сменой живого",
    "lagDeclared20261024": "круг 28 не переливал зеркало: в дереве 842 строк / 237105 байт / md5 c2eddafa5cfaebad2596939f73dd8c10, имя живого объекта на Drive держит круг 26 (228373 байта, md5 566c1323a72b9f7d2fd38810850a1a67); расхождение объявлено полем lagBehindGit и в индексе, и здесь, переливка — долг следующего круга — закрыто в этом же круге переливкой (см. pour5_20261024)",
    "rows": 209,
-   "driveMd5Verified": "432ad98fab89139a33175304bdb9f1af",
-   "driveBytesVerified": 325798,
+   "driveMd5Verified": "09e5aea6bbd0104cce7e798f1c4f2274",
+   "driveBytesVerified": 329882,
    "gitSha256AtUpload": "9452aa64f474f81064a164dae39fb70c8fd3973ac139a3e7c0e4ecc65ebacfa7",
    "md5VerifiedFromDrive": true,
    "pour5_20261024": "пятая переливка круга 28: после подъёма FP-162 и правки README дерево уехало вперёд объявленного lag; залил upload_file, сверку читал get_file fields=id,name,size,md5Checksum,createdTime, имя объекта повторяет размер и md5 git-файла; прежний объект 1-WGoIZh9gWFo1Ghz3BoWLiu6zPiVOzPC переименован в «УСТАРЕЛО (…)» и переведён в HOLD_superseded, description его говорит о себе, а не о дереве; в корзину не убрано ничего",
@@ -1703,7 +1731,24 @@
     "descriptionRepair": false,
     "how": "upload_file + get_file + update_file на вытесненном объекте, всё ответами этой ночью"
    },
-   "mirrorChainNameAudit20261025r37": "круг 37 сверил цепочку имён списком list_files по папке 05 и отдельно поиском по имени: в папке 36 объектов, из них 26 — снимки реестра массы, и ровно один из них не помечен «УСТАРЕЛО» (этот слепок, 1PeT8ecAy1…); предыдущий живой объект 1HTKqcji9o… получил пометку, роль registry-mirror-superseded и права HOLD_superseded, содержимое его не менялось. Числа взяты ответами вызовов этой ночью, а не памятью круга: именно на этом месте круг 36 сначала соврал на десять объектов и был поправлен"
+   "mirrorChainNameAudit20261025r37": "круг 37 сверил цепочку имён списком list_files по папке 05 и отдельно поиском по имени: в папке 36 объектов, из них 26 — снимки реестра массы, и ровно один из них не помечен «УСТАРЕЛО» (этот слепок, 1PeT8ecAy1…); предыдущий живой объект 1HTKqcji9o… получил пометку, роль registry-mirror-superseded и права HOLD_superseded, содержимое его не менялось. Числа взяты ответами вызовов этой ночью, а не памятью круга: именно на этом месте круг 36 сначала соврал на десять объектов и был поправлен",
+   "pour18_20261025": {
+    "id": "14fg0J-SxVhTkT5_5DHFAb8JXkuDZP9ee",
+    "bytes": 329882,
+    "md5": "09e5aea6bbd0104cce7e798f1c4f2274",
+    "uploadedAt": "2026-10-25T00:00:13Z",
+    "readBack": "2026-10-25T00:01:21Z",
+    "renamed": {
+     "id": "1PeT8ecAy16Q1gNtktGM9G-JxvN4QXwnZ",
+     "to": "УСТАРЕЛО — 2026-10-25 — слепок 35_four_point_authors_mass_registry (круг 37: 209 строк, 325798 B, md5 432ad98fab89139a33175304bdb9f1af).md",
+     "why": "вытеснен поправкой того же круга; имя и описание прочитаны из ответа update_file"
+    },
+    "prePourCheck": "md5 рабочего файла сравнен с md5 в имени прежнего зеркала (432ad98fab89139a33175304bdb9f1af) — совпало",
+    "whyNoCountChange": "строки, классы и очередь остались прежними; переливка обязательна, потому что имя снимка несёт байты и md5, а правило 25 сверяет именно их (тот же случай, что круг 26)",
+    "descriptionRepair": false,
+    "how": "upload_file + get_file + update_file на вытесненном объекте"
+   },
+   "mirrorChainNameAudit20261025r37correction": "пересчёт сделан поправкой круга 37 теми же двумя вызовами, что и в первый раз: поиск по имени в папке 05 даёт 27 снимков реестра массы, полный список папки — 37 объектов, и ровно один снимок не помечен «УСТАРЕЛО» (этот, 14fg0J-SxV…). Вытесненный за пять минут до того живой объект 1PeT8ecAy1… помечен, переведён в registry-mirror-superseded и в HOLD_superseded одним движком, его содержимое не менялось. Числа взяты ответами вызовов этого часа; замечание по адресу: page_size=1 даёт «Found 1 files» вместо общего числа, поэтому размер папки надо мерить списком, а не страницей по одному объекту"
   },
   "supersededIds2026-10-23": [
    "`1kvWangNcv9DQOPoMi1k2k3Ussjf_EXwx` (53 098 B, снимок 2026-10-09, имя «— SSOT (актуальный)») — переименован в «УСТАРЕЛО (снимок 2026-10-09) … заменено 2026-10-23» и описан ссылкой на новый ID `1jzzN8PB92OdKjYBEbsHpyc3aeB76GQEV`; в trash не убран (см. `corpusJsonCopies20261023.verdict`)",
@@ -2870,20 +2915,20 @@
     "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
    ],
    "stampedFieldsPerRegistry": {
-    "корпус": 162,
+    "корпус": 165,
     "fathers": 0,
     "nt": 0,
     "ot": 0,
     "synthesis": 0,
-    "measuredAt": "2026-10-24T23:55:45Z",
+    "measuredAt": "2026-10-25T00:01:21Z",
     "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py (правило 13 пересчитывает обходом и сверяет с этой цифрой) — тот же обход, которым проверяется",
     "method": "обход всего реестра корпуса по ключам at|measuredAt|checkedAt|measuredOn со значением-строкой; поле, которое переснимает само себя, тоже входит (23.10: 40→41→42 — каждый новый блок с measuredAt добавляет единицу; правило 19 внесено этим же кругом) (23.10: 42→44 — блок съёма после мержа #222 добавил два поля measuredAt/checkedAt); переснято кругом 37: 162 (в прошлой записке было 158 — круг 37 добавил отметки времени в запись о семнадцатом слепке, в history сверки 17_ и в блок находки)",
     "note": "54, а не 53: в записи correctionsPending появятся собственные отметки appliedAt и measuredAt — обход считает их наравне с полями съёмки, потому что правило 2 смотрит на форму поля, а не на то, в каком блоке оно лежит (правило 19 о том же: класс задаётся значением)",
     "checkedAt": "2026-10-24T11:39:29Z",
-    "how": "158 было кругом 36; 162 стало кругом 37 — скопировано из обхода после правки, угадывание чисел в этом лане запрещено (правило 13)"
+    "how": "162 было после круга 37; 165 стало после его поправки — добавлены отметки времени в новую запись индекса, в два хвоста history и в field съёма; скопировано из обхода, а не угадано"
    },
    "violationsFound20261022": 0,
-   "measuredAt": "2026-10-24T23:55:45Z",
+   "measuredAt": "2026-10-25T00:01:21Z",
    "method": "тот же обход, что и у правила: python3 -B scripts/validate_atonement_corpus_integrity.py печатает расхождение, если число разоехалось; ручная пересъёмка — рекурсивный подсчёт по STAMP над пятью реестрами",
    "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py && python3 -c \"import io,json,re,glob;S=re.compile('at|measuredAt|checkedAt|measuredOn|measuredAtGit');f=lambda o:(sum(1 for k in o if S.fullmatch(str(k)))+sum(f(v) for v in o.values()) if isinstance(o,dict) else sum(f(v) for v in o) if isinstance(o,list) else 0);[print(p,f(json.load(io.open(p,encoding='utf-8')))) for p in ['ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json']+sorted(glob.glob('ИСКУПЛЕНИЕ/*/data/*corpus*.json'))]\"",
    "proof": "обобщение проверено мутациями на чужих файлах: ot (measuredAt без часов), nt (baselineCount='TBD'), fathers (audit.at с точным временем, но без способа) — три разных сообщения с подписями реестр ot / реестр nt / реестр fathers; после каждого — побайтовое восстановление (cmp). Чужие данные не изменены: правило обязывает только того, кто завтра впишет туда датированную съёмку",
@@ -5048,7 +5093,7 @@
  },
  "reconciliationDocument20261022": {
   "path": "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
-  "lines": 2077,
+  "lines": 2080,
   "sectionsH2": 16,
   "sectionsH3": 43,
   "history": [
@@ -5181,9 +5226,18 @@
     "note": "круг 37: §15za о словесном (а не подстрочном) поиске в индексе, об атрибуции составного тома по его собственной разметке, об аппарате, который остаётся аппаратом, об отсылке издателя как о выходных данных, о хрупкости цифры OCR и о правиле не заводить строку без предмета",
     "measuredAt": "2026-10-24T23:55:45Z",
     "how": "python3 -c \"import pathlib,re; p=pathlib.Path('ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md'); s=p.read_text(encoding='utf-8'); print(len(s.rstrip(chr(10)).split(chr(10))), len(re.findall(r'(?m)^## ',s)), len(re.findall(r'(?m)^### ',s)), len(p.read_bytes()))\" — тот же обход, что и в поле method"
+   },
+   {
+    "asOf": "2026-10-25T00:01:21Z",
+    "lines": 2080,
+    "sectionsH2": 16,
+    "sectionsH3": 43,
+    "note": "поправка круга 37: в ### 15za. добавлены пункты 8 и 9 — о чтении всех чанков ответа (и о том, что чанки широкого запроса не дочитываются по переписанному URL, поэтому поле сужают) и о переливке зеркала без движения счёта",
+    "measuredAt": "2026-10-25T00:01:21Z",
+    "how": "python3 -c \"import pathlib,re; p=pathlib.Path('ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md'); s=p.read_text(encoding='utf-8'); print(len(s.rstrip(chr(10)).split(chr(10))), len(re.findall(r'(?m)^## ',s)), len(re.findall(r'(?m)^### ',s)), len(p.read_bytes()))\" — тот же обход, что и в поле method"
    }
   ],
-  "measuredAt": "2026-10-24T23:55:45Z",
+  "measuredAt": "2026-10-25T00:01:21Z",
   "method": "обход файла: строки — len(text.rstrip('\\n').split('\\n')), H2 и H3 — счётом строк, начинающихся с '## ' и '### '; переснят кругом 26 после §15w тем же определением, которым его мерит проверка",
   "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py",
   "measuredBy": "wc -l и grep -c по самому файлу, а не по памяти прошлого съёма",
@@ -5308,7 +5362,7 @@
   "why": "запрос владельца был «не только Прокопенко, всю массу, чтобы знать все аргументы и историю позиции». Ответ без костылей — не список имён, а список с классом достоверности у каждой строки: 12 % прочитано по первичному изданию, 54 % строк требуют добычи (обязаны иметь адресат в очереди), ни одного повышения класса «за красоту цитаты» не сделано",
   "strictness": "ошибки правила 23 допустимы, потому что файл и реестр созданы этим кругом и никем не запинены: проверено — sha256 файла не встречается ни в одном .json/.yml репозитория, и на docs/research/atonement не смотрит ни один чужой скрипт или workflow, кроме этого гейта",
   "laneDefectRecorded": "круг 25, erratum против себя: (1) `FP-160` держала пять формул *Free Thoughts* (1710), 8–15, под локатором *Middle-Way* (1673) — локатор читали под страницей, а не под цитатой; перенесено в `FP-208`, разбор блоков лежит в файле-снимке `19t6KatFbENGofJ0hoLTRZE5R8zIZs6tZ`; (2) утверждение круга 23, что скан смешанного письма не покрывает лан `docs/research/atonement/*.md`, было неверным: лан сканируется как ошибка с круга 22 (правило 22, `_adj22`), а `ИСКУПЛЕНИЕ/*.md` — правилом 23.3; снято и из гл. 07, и из §23 реестра; (3) провальный случай этого класса не является в гейте ничем: год отпечатка, наличие слов цитат и все счётчики были в порядке — потому введён не новый номер правила, а требование к полю `note` носителя называть снятый **блок** страницы, и `whatNotChecked` по неразобранным блокам. Круг 24, erratum против себя: (4) сводка блока driveMirrors.massRegistry20261023 держала «114 строк класса C» и «114 адресов добычи», тогда как реестр дал сначала 112 (круг 23), потом 110 (круг 24); (5) в живой сводке класса `A2` число было перенесено из прошлого круга и не сверено с обходом. Круг 26, продолжение того же списка (5): круг 25 поставил правило «страница читается до последней цитатной строки», но сам оставил чанки 3–7 нечитаными и записал это в `whatNotChecked` — правило было бы бесполезно, если бы границу блоков угадали; круг 26 дочитал и нашёл, что граница напечатана на странице дважды (повтор локатора после подписи «Deo Gloria, mihi Condonatio. J. H.» перед «[To be continued]»). (6) Обратный дефект того же рода, найденный при этом: цитата может стоять в верном сочинении под верным локатором и при этом приписывать автору слова тех, кого он отвергает («*makes the difference (in the upshot) between him that is saved, and him that is damned*» в блоке Middle-Way произнесены не Хамфреем, а школами, о которых он говорит в третьем лице: «*mans free will … is that which begins, or puts by his own justification, and consequently makes the difference*»). Машиной проверки «чей голос в абзаце» не заводилось; правило записано как обязанность носителя называть реплику, а не только страницу, а класс строки `FP-160` от прироста текста не вырос (остался `A2`: свидетельство — Folger 488217, листа по-прежнему никто не читал) (8) число разночтений в прозе круга 26 не равнялось числу строк таблицы снимка: сказано «пять», таблица давала шесть, расхождений семь; (9) отметка времени круга 26 была написана по памяти (`23:05Z` при часах `22:4x`) и переписана значениями из `date -u` и `created_time` Drive; (10) рабочее дерево песочницы откатилось `2026-10-24T11:03Z` к коммиту круга 26 — незакоммиченная коррекция, файл-снимок и скрипт батареи пропали, коррекция переписана заново по носителю в Drive, зеркало перелито четвёртым объектом; вывод: незакоммиченное свидетельство не существует, и носитель обязан быть либо в коммите, либо на внешнем носителе; круг 28: (11) в строке FP-162 с круга 23 стояло «страница печати не называет», что было верно только для первого из трёх фрагментов — вывод о молчании носителя был сделан по недочитанному носителю; (12) цитата «you must not say absolutely and merely» в транскрипции напечатана как «fay» (долгая s), и в реестре её теперь держат дословно, с пометкой, а не поправленной",
-  "measuredAt": "2026-10-24T23:55:45Z",
+  "measuredAt": "2026-10-25T00:01:21Z",
   "method": "обход строк вида «| FP-NN | … | `класс` |» по файлу реестра; очередь — строки «- Q-NN —»; класс строки сверяется с полем registryRowClass записей индекса (правило 23.3); переснят кругом 24 тем же обходом, что и писался: ни одно число не перенесено из круга 23; переснято кругом 37 после подъёма строки FP-13 и снятия адреса Q-13: классы и очередь взяты тем же обходом, что и правило 23.1",
   "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py (правило 23 переснимает entries/perClass/queueLength/shareA1Percent обходом файла)",
   "fileBytesAtCreation": 88792,
@@ -5356,7 +5410,7 @@
   "fileBytesAsOfRound21": 164608,
   "fileMd5AsOfRound21": "b86f3d11a33c23ae1464a231ed97d870",
   "fileSha256AsOfRound21": "e9d38c04e4ce70df7b30cc8e9736912d839eacb4890a5ed14098a50bd5fe8a47",
-  "checkedAt": "2026-10-24T23:55:45Z",
+  "checkedAt": "2026-10-25T00:01:21Z",
   "fileBytesAsOfRound22": 179168,
   "fileMd5AsOfRound22": "3b00eafbfa8893fd9914daaa1fb4e850",
   "fileSha256AsOfRound22": "5d9111f1263e7cea2fde5d6192aeb95ea658147d7ebb9f694770ee9f6a0cbc2b",
@@ -5433,7 +5487,12 @@
   "fileMd5AsOfRound37": "432ad98fab89139a33175304bdb9f1af",
   "fileSha256AsOfRound37": "9d8083a620676253cead8dde9da38ef901796b6e364e5ec4bd74ccb26ce4564e",
   "linesAsOfRound37": 1239,
-  "round37Finding20261025": "круг 37 (2026-10-25, ночь, UTC 2026-10-24T23:5x): `FP-13` (Флор Лионский, трактат против Иоанна Скота) переведена C → A1 по разметке самого тома PL 119 (item patrologiaecursu0119mign, 630 листов): бегущая строка «LIBER ADVERSUS JOANNEM SCOTUM» ограничивает трактат листьями 57–129, перечень тома на листе 618 даёт колонки глав (Prefatio 104 … XIV 183), смещение «лист → колонка» = 2 × лист − 13 выверено на девяти закладках внутри окна. Снято два утверждения круга 34. (1) «gemina prædestinatio» на листе 335 не относится к трактату: 335 лежит вне 57–129, в отделе писем с издательскими примечаниями; различение стоит на листе 58 в Argumentum издателя (маркер сноски «(a)»), то есть в аппарате, а не в теле. (2) Формулировка «держит Готшалька, но не держит предопределения ко злу» не подтверждается: Флор держит предопределение наказания (гл. X–XI: «ipsa prædestinatio malorum merito iniquitate sua ad interitum sempiternum») и отрицает предопределение вины (Sermo: «non Dei, sed ipsorum est culpa»); им же поставлено противнику в вину, что тот «divinam prædestinationem in parte accipit, et in parte negat», отказываясь держать «reprobos … præordinatum ad supplicium». Ограничения объёма смерти у Флора не найдено: «Agnus, qui abstulit peccatum mundi» соседствует с «Non de omnibus vobis dico, ego scio quos elegerim», а гибель Иуды отнесена к «suæ malitiæ». Отсылка издателя на Bibliotheca Patrum Lugdunensis tom. XV в ноте тома читается как «pag. 611» против «p. 666» в адресе круга 34 — ни одна цифра не сверена по скану и ни одна не нужна: текст читается в самом PL 119, поэтому адрес снят, а не уточнён. Побочное чтение того же тома (листы 15–42) дало формулы всеобщности «gratia Dei pro omnibus gustavit mortem», «dedit semetipsum redemptionem pro omnibus», «totius mundi peccata delevit»; библиографическая нота на листе 12 показывает, что это тоже Флор — Opusculum adversus Amalarium Lugdunensem chorepiscopum de Corpore Christi tripartito, — но строкой не заведено: предмет у сочинения евхаристический, а чтение сплошное (42 листа). Инструментальная поправка: индекс полного текста ищет словом, а не подстрокой («chorep» против напечатанного «choreopiscopi» даёт пусто), стало быть всякое matches: [] из круга 34 и раньше отрицает названную форму, а не вещь — это ограничивает силу всех «том молчит»-проверок. Среда: второй за два круга перезапуск песочницы вернул HEAD к точке ветвления при живом дереве; восстановление — git fetch --unshallow + git reset --soft + git add -A, а доказательство целостности — совпадение md5 рабочего файла с md5 в имени зеркала #16. Числа: строк 209, классы A1 %d / A2 %d / B1 %d / B2 %d / C %d, очередь 105 (C ↔ Q 1:1), доля по правилу 23 — %d %, по правилу 23.1 — %d %#: при 28 строках они совпадали, при 29 снова разошлись, и расхождение здесь — свойство двух определений, а не ошибка.%tuple([cls['A1'],cls['A2'],cls['B1'],cls['B2'],cls['C'],share_round,share_floor])"
+  "round37Finding20261025": "круг 37 (2026-10-25, ночь, UTC 2026-10-24T23:5x): `FP-13` (Флор Лионский, трактат против Иоанна Скота) переведена C → A1 по разметке самого тома PL 119 (item patrologiaecursu0119mign, 630 листов): бегущая строка «LIBER ADVERSUS JOANNEM SCOTUM» ограничивает трактат листьями 57–129, перечень тома на листе 618 даёт колонки глав (Prefatio 104 … XIV 183), смещение «лист → колонка» = 2 × лист − 13 выверено на девяти закладках внутри окна. Снято два утверждения круга 34. (1) «gemina prædestinatio» на листе 335 не относится к трактату: 335 лежит вне 57–129, в отделе писем с издательскими примечаниями; различение стоит на листе 58 в Argumentum издателя (маркер сноски «(a)»), то есть в аппарате, а не в теле. (2) Формулировка «держит Готшалька, но не держит предопределения ко злу» не подтверждается: Флор держит предопределение наказания (гл. X–XI: «ipsa prædestinatio malorum merito iniquitate sua ad interitum sempiternum») и отрицает предопределение вины (Sermo: «non Dei, sed ipsorum est culpa»); им же поставлено противнику в вину, что тот «divinam prædestinationem in parte accipit, et in parte negat», отказываясь держать «reprobos … præordinatum ad supplicium». Ограничения объёма смерти у Флора не найдено: «Agnus, qui abstulit peccatum mundi» соседствует с «Non de omnibus vobis dico, ego scio quos elegerim», а гибель Иуды отнесена к «suæ malitiæ». Отсылка издателя на Bibliotheca Patrum Lugdunensis tom. XV в ноте тома читается как «pag. 611» против «p. 666» в адресе круга 34 — ни одна цифра не сверена по скану и ни одна не нужна: текст читается в самом PL 119, поэтому адрес снят, а не уточнён. Побочное чтение того же тома (листы 15–42) дало формулы всеобщности «gratia Dei pro omnibus gustavit mortem», «dedit semetipsum redemptionem pro omnibus», «totius mundi peccata delevit»; библиографическая нота на листе 12 показывает, что это тоже Флор — Opusculum adversus Amalarium Lugdunensem chorepiscopum de Corpore Christi tripartito, — но строкой не заведено: предмет у сочинения евхаристический, а чтение сплошное (42 листа). Инструментальная поправка: индекс полного текста ищет словом, а не подстрокой («chorep» против напечатанного «choreopiscopi» даёт пусто), стало быть всякое matches: [] из круга 34 и раньше отрицает названную форму, а не вещь — это ограничивает силу всех «том молчит»-проверок. Среда: второй за два круга перезапуск песочницы вернул HEAD к точке ветвления при живом дереве; восстановление — git fetch --unshallow + git reset --soft + git add -A, а доказательство целостности — совпадение md5 рабочего файла с md5 в имени зеркала #16. Числа: строк 209, классы A1 %d / A2 %d / B1 %d / B2 %d / C %d, очередь 105 (C ↔ Q 1:1), доля по правилу 23 — %d %, по правилу 23.1 — %d %#: при 28 строках они совпадали, при 29 снова разошлись, и расхождение здесь — свойство двух определений, а не ошибка.%tuple([cls['A1'],cls['A2'],cls['B1'],cls['B2'],cls['C'],share_round,share_floor])",
+  "fileBytesAsOfRound37Correction": 329882,
+  "fileMd5AsOfRound37Correction": "09e5aea6bbd0104cce7e798f1c4f2274",
+  "fileSha256AsOfRound37Correction": "0ef5dc7ecaec4ae57d5018b58bcded7ebe72aa1ca53218f9b1a708a813a26770",
+  "linesAsOfRound37Correction": 1241,
+  "round37CorrectionFinding20261025": "поправка к кругу 37, написанная в ту же ночь до утра: первая версия строки FP-13 опиралась на чанк 0 трёх запросов, а `\"omnes homines\"` дал четыре чанка. В четвёртом нашлись: лист 111 (гл. XIV, колонка ≈ 209) с аргументом объёма — «quia tota perierat, et totam ille venit salvam facere. Ideo totam eam suscepit, id est et animam et corpus hominis, ut ex toto eam sua morte et resurrectione salvaret», и вывод «Sine causa enim Dominus totam eam sua incarnatione suscepit, si non tota indigebat salute, si non tota indigebat Salvatore»; лист 66 (колонка ≈ 119) с самим стихом 1 Tim. 2:4 в теле трактата — «de Deo dicit Apostolus, qui vult omnes homines salvos fieri»; лист 56 (Sermo, колонка ≈ 99) с границей, которую Флор ставит не на цене, а на способности воли: liberum arbitrium «ita obeecatum est et infirmatum, ut sufficiat homini ad male agendum… ad bene vero agendum nullo modo assurgat et convalescat, nisi per fidem unius Mediatoris… et donum Spiritus sancti instauretur», и там же двустороннее предопределение — «Sive in illis qui salvantur sive in illis qui pereunt, voluntas propria remuneratur, voluntas propria damnatur»; примечание издателя на листе 68 дочитано до конца, и в перечне осуждённых статей Майнца 853 есть четвёртая — «quod nullum ad se diabolus possit rapere pro quo sanguinem suum Jesus Christus Dominus fudit». Класс, строки и очередь не изменились (A1 29, C 105, адресатов 105): найденное укрепило прочитанное. Слепок перелит восемнадцатым объектом из-за md5 и байтов в имени, что в этом лане отдельный законный случай переливки без движения счёта."
  },
  "grepBilingualAudit20261023": {
   "scope": [
@@ -5459,8 +5518,8 @@
   "file": "ИСКУПЛЕНИЕ/data/atonement-library-index.json",
   "what": "машиночитаемый индекс библиотеки Drive: одна строка на объект периметра; права, статус чтения по лестнице и строки реестра, на которые носитель опирается",
   "why": "запрос владельца 23.10.2026 был «всё в одну папку, чтобы сумбура не было, и реши, надо ли индексировать в репозитории»; папка без каталога остаётся складом, поэтому индекс и есть ответ, а правило 25 — та часть ответа, которая не даёт ему устареть незаметно",
-  "records": 96,
-  "files": 87,
+  "records": 97,
+  "files": 88,
   "folders": 9,
   "materials": 26,
   "materialsWithLocators": 18,
@@ -5470,21 +5529,21 @@
    "HOLD_private_study": 3,
    "PD": 20,
    "mirror_of_git": 21,
-   "HOLD_superseded": 34
+   "HOLD_superseded": 35
   },
   "byReadState": {
    "not_applicable": 58,
    "locator_extracted": 4,
    "unopened": 4,
    "pages_seen": 4,
-   "registry_linked": 26
+   "registry_linked": 27
   },
-  "driveBytesSum": 139603825,
+  "driveBytesSum": 139933707,
   "largestBytes": 45351929,
   "scopeFolders": 15,
-  "measuredAt": "2026-10-24T23:55:45Z",
-  "checkedAt": "2026-10-24T23:55:45Z",
-  "method": "обход records индекса: счётчики по rights and readState, сумма и максимум bytes по kind=file, число материалов и материалов с непустым locator; переснят кругом 26 тем же обходом, которым мерит правило 25 (добавлен носитель cap26 в `10.9`, перелит слепок реестра в `05.`, прежний слепок переведён в HOLD_superseded); в файле индекса то же поле оставлено отсылкой, чтобы счётчик жил в одном месте; переснят кругом 34 тем же обходом: добавлена запись о четырнадцатом слепке реестра (role registry-mirror), прежняя запись круга 33 переведена в registry-mirror-superseded с правами HOLD_superseded — отсюда +1 запись, +1 файл, +1 registry_linked и перевод одного mirror_of_git в HOLD_superseded — переснято кругом 35 после пятнадцатой переливки: 94 записей, 85 файлов; переснято кругом 36 тем же обходом после шестнадцатой переливки: 95 записей, 86 файлов, одна запись переведена из mirror_of_git в HOLD_superseded и одна добавлена; переснято кругом 37 после семнадцатой переливки: 96 записей, 87 файлов, одна запись переведена из mirror_of_git в HOLD_superseded и одна добавлена, сумма байт выросла на 325798",
+  "measuredAt": "2026-10-25T00:01:21Z",
+  "checkedAt": "2026-10-25T00:01:21Z",
+  "method": "обход records индекса: счётчики по rights and readState, сумма и максимум bytes по kind=file, число материалов и материалов с непустым locator; переснят кругом 26 тем же обходом, которым мерит правило 25 (добавлен носитель cap26 в `10.9`, перелит слепок реестра в `05.`, прежний слепок переведён в HOLD_superseded); в файле индекса то же поле оставлено отсылкой, чтобы счётчик жил в одном месте; переснят кругом 34 тем же обходом: добавлена запись о четырнадцатом слепке реестра (role registry-mirror), прежняя запись круга 33 переведена в registry-mirror-superseded с правами HOLD_superseded — отсюда +1 запись, +1 файл, +1 registry_linked и перевод одного mirror_of_git в HOLD_superseded — переснято кругом 35 после пятнадцатой переливки: 94 записей, 85 файлов; переснято кругом 36 тем же обходом после шестнадцатой переливки: 95 записей, 86 файлов, одна запись переведена из mirror_of_git в HOLD_superseded и одна добавлена; переснято кругом 37 после семнадцатой переливки: 96 записей, 87 файлов, одна запись переведена из mirror_of_git в HOLD_superseded и одна добавлена, сумма байт выросла на 325798; переснято поправкой круга 37 после восемнадцатой переливки: 97 записей, 88 файлов, одна запись переведена из mirror_of_git в HOLD_superseded и одна добавлена, сумма байт выросла на 329882",
   "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py (правило 25)",
   "note": "индекс переснят кругом 26: записей 77, файлов 68, папок 9, носителей материала 25, с печатным локатором 16, сумма байт 136026244; добавлен файл-снимок дочитывания страницы Хамфрея в `10.9`, слепок реестра в `05.` перелит (прежний помечен «УСТАРЕЛО» и переведён в HOLD_superseded — имя и права одновременно), число строк реестра при этом не изменилось, и это отдельный случай: переливка требовалась из-за md5 и байтов в имени снимка, а не из-за строк; сверка класса строки с классом носителя (правило 23.3) покрывает 24 записей, из них 13 с явным перечислением registryRowClasses; сверка класса строки с классом носителя (правило 23.3) после круга 37 покрывает те же 24 записи: Флор в индекс как material-носитель не вводился, он читается по оцифровке Migne",
   "mirrorsOutsideScope": {
@@ -5492,7 +5551,7 @@
    "file00readme": "1V6j8nzmOr4zJ44kTka9ZSsiX5YYh3ip84nwOKKrJlOs"
   },
   "mirrorsOutsideScopeWhy": "эти два Docs-зеркала указывают на объекты в корне серии и в `00`, а периметр индекса — `01`–`06`, `08`, `09`, `10` и его подпапки; исключение объявлено полем, а не вшито в правило, чтобы расширение периметра было решением, а не случайностью",
-  "countsNote": "переснято кругом 37: 96 записей (87 файла + 9 папок) — живое зеркало 17-е, шестнадцатое переведено в registry-mirror-superseded с правами HOLD_superseded"
+  "countsNote": "переснято поправкой круга 37: 97 записей (88 файла + 9 папок) — живое зеркало 18-е, семнадцатое переведено в registry-mirror-superseded с правами HOLD_superseded; счёт реестра при этой переливке не двигался"
  },
  "sandboxRebuild20261024": {
   "what": "в 2026-10-24T11:03Z рабочая песочница была пересобрана из более раннего снимка: HEAD вернулся к базовому коммиту сессии, незакоммиченные правки круга 26 исчезли из дерева",
