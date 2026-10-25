@@ -1,0 +1,205 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A letter from the most ingenious Mr. Lodowick Rhode-Island, Febr. 1, 1691-2.</title>
+            <author>Ludovici, C. (Christian), 1660-1728.</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>1692</date>
+            </edition>
+         </editionStmt>
+         <extent>Approx. 19 KB of XML-encoded text transcribed from 5 1-bit group-IV TIFF page images.</extent>
+         <publicationStmt>
+            <publisher>Text Creation Partnership,</publisher>
+            <pubPlace>Ann Arbor, MI ; Oxford (UK) :</pubPlace>
+            <date when="2011-04">2011-04 (EEBO-TCP Phase 2).</date>
+            <idno type="DLPS">A48945</idno>
+            <idno type="STC">Wing L2813</idno>
+            <idno type="STC">ESTC W13455</idno>
+            <idno type="EEBO-CITATION">11760424</idno>
+            <idno type="OCLC">ocm 11760424</idno>
+            <idno type="VID">48672</idno>
+            <availability>
+               <p>To the extent possible under law, the Text Creation Partnership has waived all copyright and related or neighboring rights to this keyboarded and encoded edition of the work described above, according to the terms of the CC0 1.0 Public Domain Dedication (http://creativecommons.org/publicdomain/zero/1.0/). This waiver does not extend to any page images or other supplementary files associated with this work, which may be protected by copyright or other license restrictions. Please go to https://www.textcreationpartnership.org/ for more information about the project.</p>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Early English books online.</title>
+         </seriesStmt>
+         <notesStmt>
+            <note>(EEBO-TCP ; phase 2, no. A48945)</note>
+            <note>Transcribed from: (Early English Books Online ; image set 48672)</note>
+            <note>Images scanned from microfilm: (Early English books, 1641-1700 ; 1486:46)</note>
+         </notesStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>A letter from the most ingenious Mr. Lodowick Rhode-Island, Febr. 1, 1691-2.</title>
+                  <author>Ludovici, C. (Christian), 1660-1728.</author>
+               </titleStmt>
+               <extent>8 p.   </extent>
+               <publicationStmt>
+                  <publisher>Printed by Bartholomew Green,</publisher>
+                  <pubPlace>[Boston :</pubPlace>
+                  <date>1692?]</date>
+               </publicationStmt>
+               <notesStmt>
+                  <note>Caption title.</note>
+                  <note>Place of publication, name of print and date of publication suggested by NUC pre-1956 imprints.</note>
+                  <note>"A reply to Cotton Mather's Little flocks guarded against grievous wolves" -- NUC pre-1956 imprints.</note>
+                  <note>"Probably printed by Bartholomew Green of Boston" -- pre-1956 imprints.</note>
+                  <note>Reproduction of original in the Harvard University Library.</note>
+               </notesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Created by converting TCP files to TEI P5 using tcp2tei.xsl,
+      TEI @ Oxford.
+      </p>
+         </projectDesc>
+         <editorialDecl>
+            <p>EEBO-TCP is a partnership between the Universities of Michigan and Oxford and the publisher ProQuest to create accurately transcribed and encoded texts based on the image sets published by ProQuest via their Early English Books Online (EEBO) database (http://eebo.chadwyck.com). The general aim of EEBO-TCP is to encode one copy (usually the first edition) of every monographic English-language title published between 1473 and 1700 available in EEBO.</p>
+            <p>EEBO-TCP aimed to produce large quantities of textual data within the usual project restraints of time and funding, and therefore chose to create diplomatic transcriptions (as opposed to critical editions) with light-touch, mainly structural encoding based on the Text Encoding Initiative (http://www.tei-c.org).</p>
+            <p>The EEBO-TCP project was divided into two phases. The 25,368 texts created during Phase 1 of the project (2000-2009), initially available only to institutions that contributed to their creation, were released into the public domain on 1 January 2015. The approximately 40,000 texts produced during Phase 2 (2009- ), of which 34,963 had been released as of 2020, originally similarly restricted, were similarly freed from all restrictions on 1 August 2020. As of that date anyone is free to take and use these texts for any purpose (modify them, annotate them, distribute them, etc.). But we do respectfully request that due credit and attribution be given to their original source.</p>
+            <p>Users should be aware of the process of creating the TCP texts, and therefore of any assumptions that can be made about the data.</p>
+            <p>Text selection was based on the New Cambridge Bibliography of English Literature (NCBEL). If an author (or for an anonymous work, the title) appears in NCBEL, then their works are eligible for inclusion. Selection was intended to range over a wide variety of subject areas, to reflect the true nature of the print record of the period. In general, first editions of a works in English were prioritized, although there are a number of works in other languages, notably Latin and Welsh, included and sometimes a second or later edition of a work was chosen if there was a compelling reason to do so.</p>
+            <p>Image sets were sent to external keying companies for transcription and basic encoding. Quality assurance was then carried out by editorial teams in Oxford and Michigan. 5% (or 5 pages, whichever is the greater) of each text was proofread for accuracy and those which did not meet QA standards were returned to the keyers to be redone. After proofreading, the encoding was enhanced and/or corrected and characters marked as illegible were corrected where possible up to a limit of 100 instances per text. Any remaining illegibles were encoded as &lt;gap&gt;s. Understanding these processes should make clear that, while the overall quality of TCP data is very good, some errors will remain and some readable characters will be marked as illegible. Users should bear in mind that in all likelihood such instances will never have been looked at by a TCP editor.</p>
+            <p>The texts were encoded and linked to page images in accordance with level 4 of the TEI in Libraries guidelines.</p>
+            <p>Copies of the texts have been issued variously as SGML (TCP schema; ASCII text with mnemonic sdata character entities); displayable XML (TCP schema; characters represented either as UTF-8 Unicode or text strings within braces); or lossless XML (TEI P5, characters represented either as UTF-8 Unicode or TEI g elements).</p>
+            <p>Keying and markup guidelines are available at the <ref target="http://www.textcreationpartnership.org/docs/.">Text Creation Partnership web site</ref>.</p>
+         </editorialDecl>
+         <listPrefixDef>
+            <prefixDef ident="tcp"
+                       matchPattern="([0-9\-]+):([0-9IVX]+)"
+                       replacementPattern="http://eebo.chadwyck.com/downloadtiff?vid=$1&amp;page=$2"/>
+            <prefixDef ident="char"
+                       matchPattern="(.+)"
+                       replacementPattern="https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1"/>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">eng</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="http://authorities.loc.gov/">
+               <term>Mather, Cotton, 1663-1728. --  Little flocks guarded against grievous wolves.</term>
+               <term>Society of Friends --  Controversial literature.</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change>
+            <date>2009-12</date>
+            <label>TCP</label>Assigned for keying and markup</change>
+         <change>
+            <date>2009-12</date>
+            <label>SPi Global</label>Keyed and coded from ProQuest page images</change>
+         <change>
+            <date>2010-02</date>
+            <label>Mona Logarbo</label>Sampled and proofread</change>
+         <change>
+            <date>2010-02</date>
+            <label>Mona Logarbo</label>Text and markup reviewed and edited</change>
+         <change>
+            <date>2010-04</date>
+            <label>pfs</label>Batch review (QC) and XML conversion</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:lang="eng">
+      <body>
+         <div type="letter">
+            <pb facs="tcp:48672:1"/>
+            <!-- PDF PAGE 11 -->
+            <pb n="1" facs="tcp:48672:1" rendition="simple:additions"/>
+            <!-- PDF PAGE 11 -->
+            <head>A LETTER from the moſt Ingenious Mr. LODOWICK</head>
+            <opener>
+               <dateline>Rhode-Iſland, <date>Febr. 1. 1691, 2.</date>
+               </dateline>
+               <lb/>
+               <salute>Honoured &amp; Eſteemed Mr. <hi>Mather,</hi>
+               </salute>
+            </opener>
+            <p>HAving ſeen your Book, called, <hi>Quakeriſm Diſplayed,</hi> wherein you have been pleaſed to mention my Name and my Challenge to the <hi>Quakers</hi> of this Iſland, I am thereby emboldned, to trouble You at this time with ſome Lines; ſending You withal, Three, Books penned by <hi>G. Keith,</hi> with a Ma. nuſcript of His, Written by Him about Three years ago. By peruſing His <hi>Way to the City of God,</hi> from p. 128. to 133. You will ſee, what <hi>Chriſt</hi> he owned at that time, and from p. 62 to 65. You will ſee what He then underſtood by the <hi>Seed, Light,</hi> and <hi>Grace</hi> within, and in p. 50 51 18. what His Faith in <hi>Chriſt</hi> then was. But G. <hi>Keith</hi>) perhaps by means of His Controverſies with Mr. <hi>Hicks,</hi> (perceiving the many Abſurdities which follow from this <hi>New Fabrick,</hi> (e.g. that the <hi>Heavenly Body</hi> or Divine In<g ref="char:EOLhyphen"/>termediate Subſtance, if there was really ſuch an one would be diſcerpible into particles, which par<g ref="char:EOLhyphen"/>ticles ſhould be carried hither and thither by men, as they ſtep from place to place, and that there would have been ſo many <hi>Meſſia's</hi> or <hi>Christs within,</hi> conſiſt<g ref="char:EOLhyphen"/>ing of a Spirit and Body, as there have been Saints from the beginning; and that the portion of that Bo<g ref="char:EOLhyphen"/>dy in the Son of <hi>Mary,</hi> increaſed in quantity, and that that Heavenly Subſtance, conſiſting of a Body and Spirit, ſhould be moſt properly the <hi>Father</hi> of Chriſt the <hi>Second Adam,</hi> if a portion of him, ſupplied
+<pb n="2" facs="tcp:48672:2"/>
+               <!-- PDF PAGE 12 -->the Male-Seed in the Conception of Chriſt in <hi>Mary</hi> &amp;c.) built ſome years after, another Fabrick, as You will find by His, <hi>The way caſt up,</hi> from p. 89. to 168. which he further defends in his Third Book. By the Manuſcript You may further underſtand the Dotages of this Notional Man, which ſome obſcure Paſſages in his late Books have reference unto. When I read <hi>Y<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>ur</hi> Book, I did wiſh, that You might have had the peruſal of <hi>theſe</hi> Books of his, ere You wrote Yours. For tho' You have notably diſcove<g ref="char:EOLhyphen"/>red the Errors of the Generality of the <hi>Quakers</hi> (whom I call <hi>F<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>xians</hi>) yet there is alſo a <hi>little party</hi> diſperſed to and fro, among the common <hi>Foxians,</hi> who, tho' they obſerve G. <hi>Foxes</hi> Ordinances, and paſs with the reſt under the Deſignation of <hi>Quakers,</hi> are nevertheleſs no true <hi>Foxians,</hi> but may, (for di<g ref="char:EOLhyphen"/>ſtinction ſake) be called <hi>Semiquakers</hi> or <hi>Semi-Fox<g ref="char:EOLhyphen"/>ians:</hi> but they are ſo <hi>few,</hi> that I believe, if they were all gathered together, they might meet in <hi>one room,</hi> and make no conſiderable appearance. They are moſt of them, the more learned ſort of the people called <hi>Quakers:</hi> the chief writers of theſe, are G. <hi>Keith,</hi> Ro. <hi>Barclay,</hi> (both Scotchmen,) and becauſe Mr. <hi>Faldo</hi> and Mr. <hi>Hicks</hi> knew not the diſtinction that is to be made between the <hi>Foxians</hi> &amp; <hi>Semi-fox<g ref="char:EOLhyphen"/>ians</hi> and their ſeveral Opinions, G. <hi>Keith</hi> and W. <hi>Pen</hi> were in ſome things too hard for them, (for notwithſtanding what W. <hi>Pen</hi> had written before that time, as a <hi>Foxian</hi> touching the <hi>Three Perſons,</hi> Chriſts <hi>Satisfaction, Remiſſion</hi> of ſins &amp;c. He ſubtilly without confeſſing any change, acted the <hi>Semi-foxian</hi> in his controverſies with Mr. <hi>Faldo</hi> and Mr. <hi>Hicks.</hi>) The common <hi>Foxians</hi> conceive that that which con<g ref="char:EOLhyphen"/>demns every man within him, is a meaſure of the <hi>Eſ<g ref="char:EOLhyphen"/>ſence</hi> of God, which they call <hi>Chriſt,</hi> the <hi>Light,</hi> the <hi>Word,</hi> and the <hi>Eternal Spirit</hi> &amp;c. And they conceive
+<pb n="3" facs="tcp:48672:2"/>
+               <!-- PDF PAGE 12 -->that this <hi>Chriſt</hi> is alſo the <hi>Father,</hi> (becauſe Chriſt is called <hi>Everlaſting Father,</hi>) and the <hi>Hely Ghoſt,</hi> (be<g ref="char:EOLhyphen"/>cauſe he is a <hi>Spirit</hi> as God,) and they fancy, that as this <hi>Inward Condemner</hi> doth condemn for ſome evil (which they call, a <hi>Manifeſting, R<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>vealing and ſhew<g ref="char:EOLhyphen"/>ing them what is evil,</hi>) ſo it does ſhew them not only Errors in <hi>Practice</hi> but alſo Errors in <hi>Judgment,</hi> and that, if they be faithful to it (which they call <hi>believ<g ref="char:EOLhyphen"/>ing in it</hi>) it will reveal unto them more in time, and that there is no more required of any man, then <hi>God</hi> or <hi>Chriſt</hi> hath thus ſhown him within him &amp;c. And herein conſiſt their daily Divine <hi>Illuminations, Inſpi<g ref="char:EOLhyphen"/>rations, Revelations</hi> of knowledge: but their Experi<g ref="char:EOLhyphen"/>mental knowledge of Chriſts <hi>Birth, Deat<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>, R<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>ſurrecti<g ref="char:EOLhyphen"/>on,</hi> &amp;c. Conſiſts in this, that when a man is <hi>Conver<g ref="char:EOLhyphen"/>ted,</hi> then they ſay, the <hi>Immortal Babe</hi> is born, <hi>Chriſt</hi> the <hi>Seed</hi> and <hi>Lamb</hi> which was ſlain, comes to be <hi>Rai<g ref="char:EOLhyphen"/>ſed,</hi> and he aſcends the <hi>Throne,</hi> and comes to <hi>Judge<g ref="char:EOLhyphen"/>ment</hi> in Clouds of Heaven <hi>within,</hi> and Judgeth ſuch a man for his ſins [whereby they only deſcribe the va<g ref="char:EOLhyphen"/>rious condition of man's <hi>Conſcience.</hi>] And hence they deny wholly, that ever <hi>Chriſt</hi> as <hi>Man</hi> ſhall come down from Heaven to Raiſe and Judge the Dead. And they ſay, that that which is a man's <hi>Troubler, Reprover and Condemner</hi> within him, will be alſo his <hi>Comforter, Approver, Juſtifier and Saviour,</hi> if he be<g ref="char:EOLhyphen"/>lieves in it, and it will redeem and ſave him from all <hi>ſin,</hi> and from <hi>W<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>ath</hi> for ſin, (eſteeming the checks of the <hi>Conſcience</hi> to be God's Wrath) Herein they place their <hi>Salvation and Redemption</hi> from ſin, viz. ſome <hi>wilful ſinning,</hi> and their <hi>ſin<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>eſs Perfection</hi> conſiſt in their abſtinence from groſs <hi>wil<g ref="char:EOLhyphen"/>ful</hi> ſinning and the peace of Conſcience enſuing there<g ref="char:EOLhyphen"/>upon, they call the <hi>peace of God,</hi> and <hi>Juſtification</hi> in the ſight of God. And their <hi>Inherent Righteouſneſs,</hi> they call the <hi>Righteouſneſs of Chriſt,</hi> which he hath
+<pb n="4" facs="tcp:48672:3"/>
+               <!-- PDF PAGE 13 -->wrought within them, and they do never ſpeak of the Merit of the ſufferings, Death and Reſurrection, of Jeſus at <hi>Jeruſalem,</hi> but they call his Righteouſneſs a <hi>Rightouſneſs of another at a diſtance,</hi> which can do us no good; and they ſay, it is an <hi>inward blood</hi> that muſt cleanſe our Souls inwardly. And here alſo may be underſtood, what their <hi>Baptiſm of Repentance with Fire</hi> and with the <hi>Spirit of Judgement,</hi> is, VIZ. When a man is inwardly Judged for his ſin, ſo as to repent of it. And unto this <hi>PROTON PSEUDOS</hi> or fundamental Error, VIZ. That the <hi>Inward Con<g ref="char:EOLhyphen"/>demner</hi> is <hi>Chriſt,</hi> the <hi>Light,</hi> and if obeyed, will be<g ref="char:EOLhyphen"/>come a mans <hi>Juſtifier</hi> and <hi>Saviour,</hi> they have ſuted all their other Doctrines concerning Chriſt, ſaying, that the <hi>true Chriſt</hi> was never <hi>ſeen</hi> with Mortal Eyes, <hi>heard</hi> with Carnal Ears, and that the Viſible Body Born of <hi>Mary,</hi> was but a <hi>Garment</hi> of the <hi>true Chriſt</hi> tabernacling in it; which body, <hi>ſome</hi> of them ſay he hath laid down, <hi>others</hi> canot tell what is become of it; and they ſay, to mind Chriſt in that <hi>bodily</hi> appear<g ref="char:EOLhyphen"/>ance and manifeſtation (as they call it,) is to know <hi>Chriſt after the Fleſh,</hi> and they call their <hi>Chriſt within</hi> Chriſt in the <hi>Spirit,</hi> they ſay that Chriſt Born of <hi>Mary</hi> was Chriſt in the <hi>Fleſh,</hi> And beacuſe they, read of <hi>Eating Chriſt<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>s Fleſh, and of Drinking his Blood,</hi> they have feigned alſo an <hi>Omnipreſent and Inviſible Body</hi> of Spiritual Fleſh and Blood, which they ſay the Saints in all Ages partook of <hi>within them;</hi> and when they feel an inward Affectedneſs or ſenſible <hi>Refreſhment</hi> of their <hi>Boweis</hi> (which they call the <hi>
+                  <gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>if<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>,</hi>) then they ſay, they eat of <hi>Chriſts Fleſh,</hi> or of the <hi>Bread of Life,</hi> and they drink <hi>of his Blood</hi> which is <hi>Life,</hi> and by which they are cleanſed. And here<g ref="char:EOLhyphen"/>in conſiſts their <hi>Lords Supper:</hi> and he that fully un<g ref="char:EOLhyphen"/>derſtands what they mean by their <hi>Light</hi> and by their-<hi>Life,</hi> may underſtand their whole Divinity. The
+<pb n="5" facs="tcp:48672:3"/>
+               <!-- PDF PAGE 13 -->
+               <hi>Semi-foxians</hi> finding this Doctrine to be too Groſs, and that God is Indiviſible and Immortal, and can<g ref="char:EOLhyphen"/>not be Cruciſied Slain and Raiſed from Death, will not ſay, that the <hi>Inward Condemner</hi> is a meaſure of the uncreate Eternal Spirit, but they ſay, 'tis a create or rather <hi>Emanated</hi> Being, Emanated from God in the beginning before all things, <hi>VIZ.</hi> A meaſure of the <hi>Eſ<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>ence</hi> of the <hi>Heavenly Man,</hi> which they generally call the <hi>Light</hi> and <hi>Spirit</hi> of Jeſus Chriſt, and the pur<g ref="char:EOLhyphen"/>chaſe of his Death <hi>R. Barclay</hi> ſaith in his Apology p. 87. that it is a <hi>Meaſure of the Heavenly Body of Chriſt, and that every unrighteouſs Action is Reproved by it.</hi> But G. <hi>Kieth</hi> on his <hi>Way cast up,</hi> will have it to be the <hi>Neſ<g ref="char:EOLhyphen"/>hamah</hi> of the <hi>Heavenly Man extended into us.</hi> (And con<g ref="char:EOLhyphen"/>ſequently their pretended <hi>inward Motions</hi> immediate Inſpirati<g ref="char:EOLhyphen"/>ons, Illuminations, and Revelations are not Immediately from God, but mediately either thro' the <hi>Body</hi> or <hi>Soul</hi> of a <hi>feigned Man:</hi> and by this is alſo their inward <hi>Juſtification, Sanctifi<g ref="char:EOLhyphen"/>cation</hi> and <hi>Regeneration</hi>) This is their <hi>Divine Eſſ<gap reason="illegible" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>ntial Principle,</hi> which they ſo often ſpeak of, and ſometimes call the <hi>Seed, Grace</hi> and <hi>Word</hi> of God, and R. B. ſaith, that it is the <hi>Manifestation of the Spirit</hi> ſpoken of 1. <hi>Cor.</hi> 12.7. the <hi>ſeed of the Kingdom, Math.</hi> 13.18, 19. the <hi>Light that maketh all things manifest,</hi> Eph. 5.13. the <hi>word of God</hi> Ro. 10.18. the <hi>Talent</hi> Math. 25 15. the <hi>little Leaven,</hi> the <hi>Goſpel preached in every Creature,</hi> Col. 1 23.. and he is offended with them that call it a <hi>Natural Conſcience.</hi> He ſaith, that if this <hi>Seed</hi> be reci<gap reason="illegible" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ved into the Heart to bring forth i<gap reason="illegible" extent="3 letters">
+                  <desc>•••</desc>
+               </gap> Ef<g ref="char:EOLhyphen"/>fects, <hi>Chriſt</hi> cometh to be <hi>formed</hi> of it, which the Scripture calls the <hi>New Man, Chriſt within, the hope of Glory.</hi> In this Birth or Formation of Chriſt within us, and working his works in us, and powring his Blood into our Souls, he places our formal <hi>Justification,</hi> which he explains to be all one with <hi>Sanctification, viz.</hi> A making righteous inwardly: and tho' he grants that Remiſſion of ſins was only purchaſed <gap reason="illegible" extent="1 letter">
+                  <desc>•</desc>
+               </gap>y vertue of Chriſts <hi>Sacri fice</hi> without us, yet he ſaith, that they may come to partake or it, that are ignorant of the <hi>History</hi> of Chriſt, for he aſſerts that by the operation of this <hi>Light</hi>
+               <pb n="6" facs="tcp:48672:4"/>
+               <!-- PDF PAGE 14 -->and <hi>Seed,</hi> ſome have been and may yet be ſaved, to whom the Goſpel is not outwardly Preached, nor the Hiſtory of Chriſt outwardly known, becauſe they have with all other men, a <hi>day of Viſitation,</hi> in which God offers to work this Salvation, by the <hi>Meaſure</hi> of a ſaving, ſufficient ſupernatural <hi>Right,</hi> gi<g ref="char:EOLhyphen"/>ven to every man, which all are to believe in, as he would in<g ref="char:EOLhyphen"/>fer from <hi>Joh.</hi> 12 36. G. <hi>Keith</hi> writes in hi <hi>Way to the City of God,</hi> to the ſame purpoſe. And you may ſee by G. <hi>Keiths</hi> Books, how they have framed their Doctrine Concerning <hi>Christ,</hi> according to this their <hi>Hypotheſis,</hi> 
+               <gap reason="illegible" extent="1 letter">
+                  <desc>•</desc>
+               </gap>orrowing ſeveral of their Notions out of the Writings of ſome <hi>Rabbies</hi> among the <hi>Eastern Jews,</hi> Tranſlated into Latin, by a Learned Noble Man in <hi>Germany</hi> [whoſe Children I Tutored ſome years a<g ref="char:EOLhyphen"/>goe] But if the <hi>Rabbies- Aenſoph</hi> 
+               <gap reason="illegible" extent="1 letter">
+                  <desc>•</desc>
+               </gap>e according to the <hi>Semi-foxians,</hi> the Father, Word and Holy Ghoſt, (as they ſay) and the <hi>Aenſoph's</hi> having clothed himſelf with the M<gap reason="illegible" extent="1 letter">
+                  <desc>•</desc>
+               </gap>nhood, called <hi>Adam Cadmon,</hi> be, the Word's being made <hi>Fleſh,</hi> then according to them, not only the Word, but alſo the <hi>Father</hi> and <hi>Holy Ghost</hi> were made <hi>Fleſh.</hi> This and many other Ab<g ref="char:EOLhyphen"/>ſurdities follow from <hi>G. Keiths</hi> aſſertion, that the <hi>Word was made Fleſh</hi> in the beginning, and that this Fl<gap reason="illegible" extent="2 letters">
+                  <desc>••</desc>
+               </gap>h is the Rabbies <hi>Adam Cadmon.</hi> And theſe Cabbaliſti<gap reason="illegible" extent="1 letter">
+                  <desc>•</desc>
+               </gap>al <hi>Semi-foxians</hi> ſeem to expect that their heavenly <hi>Adam Cadmon</hi> in the Body, aſſumed of <hi>Mary,</hi> ſhall come from Heaven to Judgement, and that then there ſhall be a <hi>Reſurrection</hi> 
+               <gap reason="illegible" extent="1 letter">
+                  <desc>•</desc>
+               </gap>ut of the Graves; and <hi>G. K.</hi> doth alſo believe, that at his coming there will be the 1000 Years-Reign, which is more then I ever heard any one called a <hi>Quaker</hi> affirm. And becauſe <hi>G. Keith,</hi> as he told me laſt Summer, favours the Twelve Revolutions or Transmi<g ref="char:EOLhyphen"/>grations of our Souls, whereof <hi>R. Jiſchack,</hi> a whimſical Jew in the Eaſtern Countries, (who pretended to Revelations,) hath written moſt largely, (which notion he perhaps learned of ſome of the <hi>Turks</hi> in ſome of thoſe parts, who greatly fa<g ref="char:EOLhyphen"/>vour the Py<gap reason="illegible" extent="2 letters">
+                  <desc>••</desc>
+               </gap>agorean <hi>Metempſychoſis</hi>) therefore he is of late very fickle concerning the <hi>Reſurrection-body;</hi> for he told me laſt Summer, that this <hi>our Fleſh</hi> which goes into the grave ſhall not riſe again, but there is an Inviſible <hi>Bone</hi> diſperſed thro' the Body, called by the Cabbaliſts <hi>Luz,</hi> which is the <hi>Seed Sown,</hi> unto which God ſhall give a <hi>Spiritual Body:</hi> and he ſaid, that he asked ſome of the Jews in theſe parts, what
+<pb n="7" facs="tcp:48672:4"/>
+               <!-- PDF PAGE 14 -->
+               <hi>Luz</hi> ſignified, and they [becauſe they underſtood nothing of that <hi>Cabbala,</hi> and perhaps knowing that the word, <hi>Luz</hi> in the <hi>Portugal</hi> and <hi>Spaniſh</hi> Tongue ſignifieth <hi>Light</hi>] told him it mean <hi>Light</hi> and ſo G. <hi>Keith</hi> is hugely pleaſed with the fancy of it, and thinks it ſuteth bravely with their <hi>Light</hi> and <hi>Seed.</hi> And when I told him, that the Cabbaliſts ſaid, that this <hi>Inviſible Bone</hi> is only a Small Bone in the back, he anſwered, that <hi>Wiſe men would not tell all at once.</hi> I ſup<g ref="char:EOLhyphen"/>poſe alſo that he believes, that honeſt <hi>Pagans,</hi> at ſome of their Revolutions receive the knowledge of Jeſus of <hi>Nazareth,</hi> (&amp; according to his late abſurd Notion) are then perfectly Juſtified and Saved [as if <hi>Justification</hi> admitted of <hi>Magis</hi> and <hi>Minus,</hi>] I asked him laſt Summer, how any ſuch Gentile could be actually juſtified and ſaved from wrath, before he be pardoned, and how he could be pardoned of the leaſt imper<g ref="char:EOLhyphen"/>fection of the very beſt of his moral vertues, without Faith in Jeſus of <hi>Nazareth,</hi> and he gave me no direct Anſwer Certain<g ref="char:EOLhyphen"/>ly G. <hi>Keith</hi> hath no reaſon to quote not only <hi>Protestants</hi> but alſo the <hi>Fathers,</hi> becauſe he holds not the ſame <hi>Christ, Grace</hi> and <hi>Juſtifying Faith</hi> with them. You will likewiſe find, SIR, that G. <hi>Keith</hi> believeth not only the Preexiſtence of Two degrees of the Soul of Chriſt, but alſo the preexiſtence of our Souls, of which he makes of late more degrees then one, thus contradicting what he formerly writt concerning our <hi>Nepheſh</hi> in his <hi>Way cast up:</hi> And indeed the GALGAL or <hi>Revoluti<g ref="char:EOLhyphen"/>on</hi> of Soul; preſuppoſeth their <hi>Preexistence.</hi> Theſe Cabaliſ<g ref="char:EOLhyphen"/>tical <hi>Semi-Quakers</hi> labour as much as is poſſible, to uſe the Expreſſions of G. <hi>Fox</hi> and his followers, whence many of the common <hi>Foxians</hi> do not ſo much as ſuſpect that they differ from them; and in their Writing, they uſe deceitfully and impudently the Words <hi>We</hi> and <hi>Us,</hi> without any ſpecifical Diſtinction, as tho' they did write the Senſe and Judgment of the whole People called <hi>Quakers, when they do not;</hi> and when they anſwer the Books writ by <hi>Anti-Quakers,</hi> they will either put another Meaning, or ſome favourable Con<g ref="char:EOLhyphen"/>ſtruction on the groſs Tenents of <hi>Fox</hi> and his Followers, without ingenuouſly bearing witneſs againſt thoſe Errors, or if they be too groſs, they will either ſeek ſome Evaſion, or render their Oppoſites groſs Lyars and A<gap reason="illegible" extent="1 letter">
+                  <desc>•</desc>
+               </gap>uſers of the honeſt People called <hi>Quakers,</hi> becauſe <hi>themſelves</hi> do not
+<pb n="8" facs="tcp:48672:5"/>
+               <!-- PDF PAGE 15 -->maintain theſe things, tho' they know in their Conſciences, that their <hi>Pagan Brethren</hi> (as <hi>George Keith</hi> lately called them) hold thoſe groſs Tenents, upon whom they were alſo moſt truly and juſtly charg'd by their Opponents. And therefore as I ſuppoſe <hi>George Keith</hi> is writing an An<g ref="char:EOLhyphen"/>ſwer to <hi>your</hi> Book, ſo I believe, he will uſe many Evaſi<g ref="char:EOLhyphen"/>ons, and take advantage where he can: and he will either put ſome other Meaning upon <hi>George Foxes</hi> words which you have quoted (and which he dares not well deny) for his Brethrens ſake, who eſteem <hi>George Fox</hi> the greateſt Oracle and Prophet that ever was among them; or per<g ref="char:EOLhyphen"/>haps he will ſay, that you have quoted no page, and therefore he will wave them. I was glad to ſee the <hi>Antidote</hi> which you and your Honoured Colleagues in <hi>Boſton,</hi> have ſet forth againſt <hi>George Keith,</hi> and I can ſin<g ref="char:EOLhyphen"/>cerely ſay, that God made it very profitable and ſervice<g ref="char:EOLhyphen"/>able to me, in many reſpects: and it is to be admired, what Baſeneſs and Malice <hi>George Keith</hi> did not ſcruple to uſe againſt you, and how unreaſonably he perverted the <hi>Aſſembly</hi>'s Words and Meaning. Having exceeded my in<g ref="char:EOLhyphen"/>tended Brevity, I ſhall conclude, deſiring God to bleſs your Labour and Service in the Goſpel of his Dear Son: And Reſt with my Reſpects to you,</p>
+            <closer>
+               <salute>Sir,</salute> 
+               <signed>Your Servant in the Faith of Chriſt, <hi>Chriſtianus Lodowick.</hi>
+               </signed>
+            </closer>
+            <pb facs="tcp:48672:5"/>
+            <!-- PDF PAGE 15 -->
+         </div>
+      </body>
+   </text>
+</TEI>

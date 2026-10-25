@@ -1,0 +1,373 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>The saints imperfection, or, A sermon wherein is made apparent 1. That in Christian religion there may be a true pretence, with a reall intention, without sufficient intention ... 2. That neither covenant nor promise &amp;c. are sufficient in the way of salvation without a methodicall ... proceeding therein, 3. That knowing Christians are to be taught the first principles of religion, 4. That it is a beleevers duty to advantage his spirituall estate ... 5. That neither priviledge nor large capacity, seconded with saving grace, can exempt the elect from a losse in spirituall affairs except heed and paines be taken, 9 [i.e. 6]. That neither nobility, nor honour, knowledge nor vertue may detaine a minister from telling a people of their sad and dangerous condition : wherunto is added an use of direction or information unto all hearers / by Jo. Brookbank ...</title>
+            <author>Brookbank, Joseph, b. 1612.</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>1656</date>
+            </edition>
+         </editionStmt>
+         <extent>Approx. 43 KB of XML-encoded text transcribed from 13 1-bit group-IV TIFF page images.</extent>
+         <publicationStmt>
+            <publisher>Text Creation Partnership,</publisher>
+            <pubPlace>Ann Arbor, MI ; Oxford (UK) :</pubPlace>
+            <date when="2014-11">2014-11 (EEBO-TCP Phase 2).</date>
+            <idno type="DLPS">A29715</idno>
+            <idno type="STC">Wing B4978</idno>
+            <idno type="STC">ESTC R35799</idno>
+            <idno type="EEBO-CITATION">15563561</idno>
+            <idno type="OCLC">ocm 15563561</idno>
+            <idno type="VID">103763</idno>
+            <availability>
+               <p>To the extent possible under law, the Text Creation Partnership has waived all copyright and related or neighboring rights to this keyboarded and encoded edition of the work described above, according to the terms of the CC0 1.0 Public Domain Dedication (http://creativecommons.org/publicdomain/zero/1.0/). This waiver does not extend to any page images or other supplementary files associated with this work, which may be protected by copyright or other license restrictions. Please go to https://www.textcreationpartnership.org/ for more information about the project.</p>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Early English books online text creation partnership.</title>
+         </seriesStmt>
+         <notesStmt>
+            <note>(EEBO-TCP ; phase 2, no. A29715)</note>
+            <note>Transcribed from: (Early English Books Online ; image set 103763)</note>
+            <note>Images scanned from microfilm: (Early English books, 1641-1700 ; 1586:20)</note>
+         </notesStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>The saints imperfection, or, A sermon wherein is made apparent 1. That in Christian religion there may be a true pretence, with a reall intention, without sufficient intention ... 2. That neither covenant nor promise &amp;c. are sufficient in the way of salvation without a methodicall ... proceeding therein, 3. That knowing Christians are to be taught the first principles of religion, 4. That it is a beleevers duty to advantage his spirituall estate ... 5. That neither priviledge nor large capacity, seconded with saving grace, can exempt the elect from a losse in spirituall affairs except heed and paines be taken, 9 [i.e. 6]. That neither nobility, nor honour, knowledge nor vertue may detaine a minister from telling a people of their sad and dangerous condition : wherunto is added an use of direction or information unto all hearers / by Jo. Brookbank ...</title>
+                  <author>Brookbank, Joseph, b. 1612.</author>
+               </titleStmt>
+               <extent>[4], 20 p.   </extent>
+               <publicationStmt>
+                  <publisher>Printed by VV. L. ...,</publisher>
+                  <pubPlace>London :</pubPlace>
+                  <date>1656.</date>
+               </publicationStmt>
+               <notesStmt>
+                  <note>Reproduction of the original in the British Library.</note>
+                  <note>Includes bibliographical references.</note>
+               </notesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Created by converting TCP files to TEI P5 using tcp2tei.xsl,
+      TEI @ Oxford.
+      </p>
+         </projectDesc>
+         <editorialDecl>
+            <p>EEBO-TCP is a partnership between the Universities of Michigan and Oxford and the publisher ProQuest to create accurately transcribed and encoded texts based on the image sets published by ProQuest via their Early English Books Online (EEBO) database (http://eebo.chadwyck.com). The general aim of EEBO-TCP is to encode one copy (usually the first edition) of every monographic English-language title published between 1473 and 1700 available in EEBO.</p>
+            <p>EEBO-TCP aimed to produce large quantities of textual data within the usual project restraints of time and funding, and therefore chose to create diplomatic transcriptions (as opposed to critical editions) with light-touch, mainly structural encoding based on the Text Encoding Initiative (http://www.tei-c.org).</p>
+            <p>The EEBO-TCP project was divided into two phases. The 25,368 texts created during Phase 1 of the project (2000-2009), initially available only to institutions that contributed to their creation, were released into the public domain on 1 January 2015. The approximately 40,000 texts produced during Phase 2 (2009- ), of which 34,963 had been released as of 2020, originally similarly restricted, were similarly freed from all restrictions on 1 August 2020. As of that date anyone is free to take and use these texts for any purpose (modify them, annotate them, distribute them, etc.). But we do respectfully request that due credit and attribution be given to their original source.</p>
+            <p>Users should be aware of the process of creating the TCP texts, and therefore of any assumptions that can be made about the data.</p>
+            <p>Text selection was based on the New Cambridge Bibliography of English Literature (NCBEL). If an author (or for an anonymous work, the title) appears in NCBEL, then their works are eligible for inclusion. Selection was intended to range over a wide variety of subject areas, to reflect the true nature of the print record of the period. In general, first editions of a works in English were prioritized, although there are a number of works in other languages, notably Latin and Welsh, included and sometimes a second or later edition of a work was chosen if there was a compelling reason to do so.</p>
+            <p>Image sets were sent to external keying companies for transcription and basic encoding. Quality assurance was then carried out by editorial teams in Oxford and Michigan. 5% (or 5 pages, whichever is the greater) of each text was proofread for accuracy and those which did not meet QA standards were returned to the keyers to be redone. After proofreading, the encoding was enhanced and/or corrected and characters marked as illegible were corrected where possible up to a limit of 100 instances per text. Any remaining illegibles were encoded as &lt;gap&gt;s. Understanding these processes should make clear that, while the overall quality of TCP data is very good, some errors will remain and some readable characters will be marked as illegible. Users should bear in mind that in all likelihood such instances will never have been looked at by a TCP editor.</p>
+            <p>The texts were encoded and linked to page images in accordance with level 4 of the TEI in Libraries guidelines.</p>
+            <p>Copies of the texts have been issued variously as SGML (TCP schema; ASCII text with mnemonic sdata character entities); displayable XML (TCP schema; characters represented either as UTF-8 Unicode or text strings within braces); or lossless XML (TEI P5, characters represented either as UTF-8 Unicode or TEI g elements).</p>
+            <p>Keying and markup guidelines are available at the <ref target="http://www.textcreationpartnership.org/docs/.">Text Creation Partnership web site</ref>.</p>
+         </editorialDecl>
+         <listPrefixDef>
+            <prefixDef ident="tcp"
+                       matchPattern="([0-9\-]+):([0-9IVX]+)"
+                       replacementPattern="http://eebo.chadwyck.com/downloadtiff?vid=$1&amp;page=$2"/>
+            <prefixDef ident="char"
+                       matchPattern="(.+)"
+                       replacementPattern="https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1"/>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="eng">eng</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="http://authorities.loc.gov/">
+               <term>Bible. --  N.T. --  Hebrews V, 12 --  Sermons.</term>
+               <term>Sermons, English --  17th century.</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change>
+            <date>2013-01</date>
+            <label>TCP</label>Assigned for keying and markup</change>
+         <change>
+            <date>2013-02</date>
+            <label>SPi Global</label>Keyed and coded from ProQuest page images</change>
+         <change>
+            <date>2013-05</date>
+            <label>Colm MacCrossan</label>Sampled and proofread</change>
+         <change>
+            <date>2013-05</date>
+            <label>Colm MacCrossan</label>Text and markup reviewed and edited</change>
+         <change>
+            <date>2014-03</date>
+            <label>pfs</label>Batch review (QC) and XML conversion</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:lang="eng">
+      <front>
+         <div type="title_page">
+            <pb facs="tcp:103763:1"/>
+            <p>THE SAINTS Imperfection. OR A Sermon wherein is made apparent,
+<list>
+                  <item>1. <hi>That in Chriſtian Religion, there may be a true pretence, with a reall intention, without ſufficient intention, or attendance therein.</hi>
+                  </item>
+                  <item>2. <hi>That neither Covenant nor Promiſe, &amp;c. are ſufficient in the way of ſalvation, without a me<g ref="char:EOLhyphen"/>thodicall, continuall, and profitable proceeding therein.</hi>
+                  </item>
+                  <item>3. <hi>That knowing Chriſtians are to be taught the firſt principles of Religion.</hi>
+                  </item>
+                  <item>4. <hi>That it is a beleevers duty to advantage his ſpirituall eſtate, by a right and profitable Pro<g ref="char:EOLhyphen"/>greſſe therein.</hi>
+                  </item>
+                  <item>5. <hi>That neither priviledge, nor large capacity, ſe<g ref="char:EOLhyphen"/>conded with ſaving grace, can exempt the elect from a loſſe in ſpirituall affairs, except heed and paines be taken therein.</hi>
+                  </item>
+                  <item>9. <hi>That neither Nobility, nor honour, knowledge, nor vertue, may detaine a Miniſter from telling a people of their ſad and dangerous condition.</hi>
+                  </item>
+                  <item>
+                     <hi>Whereunto is added an Vſe of direction, or informa<g ref="char:EOLhyphen"/>tion unto all Hearers.</hi>
+                  </item>
+               </list> By <hi>Jo. Brookbank,</hi> Miniſter of Gods Word.</p>
+            <q>
+               <bibl>1 <hi>Cor.</hi> 3.2.</bibl> I have fed you with Milk, &amp; not with meat.</q>
+            <q>
+               <bibl>1 <hi>Pet.</hi> 2.2.</bibl> As new born babes deſire the ſincere milk of the word, that ye may grow thereby.</q>
+            <q>
+               <bibl>
+                  <hi>Heb</hi> 1.2.1.</bibl> Let us run with patience the race that is ſet before us.</q>
+            <p>
+               <hi>London,</hi> Printed for <hi>VV:L,</hi> at <hi>Pauls-Chain,</hi> 1656.</p>
+         </div>
+         <div type="to_the_reader">
+            <pb facs="tcp:103763:2"/>
+            <pb facs="tcp:103763:2"/>
+            <head>To the Chriſtian Reader.</head>
+            <p>
+               <seg rend="decorInit">C</seg>Hriſtian Reader, ſince the turmoyles of theſe preſent times, it was my hap in one of the tempeſts thereof, to meete with one of our <hi>Novelliſts,</hi> whoſe tongues are better furniſhed with the words of Scrip<g ref="char:EOLhyphen"/>ture, then their heads with the underſtanding there<g ref="char:EOLhyphen"/>of: him I found, (as it is the property of all Secta<g ref="char:EOLhyphen"/>ries) to carry a greater ſound then ſubſtance of true Religion, which doth certainely conclude, that their ſpirituall building is not onely upon a ſandy foundation, but without frame or fabrick: expe<g ref="char:EOLhyphen"/>rience whereof I found in him, with whom I then met, who was altogether ignorant, what is meant by theſe termes <hi>Principles of Religion;</hi> which weakenes I much lamented, not only in him alone, but generally in moſt part of Chriſtians: which out of my well-wiſhes, for the good of Gods peo<g ref="char:EOLhyphen"/>ple) conſtrained me (though the unworthieſt of Chriſts Miniſters) to contrive ſomewhat, advan<g ref="char:EOLhyphen"/>tagious to Gods Church, in directing and adviſing weake and ignorant Chriſtians, <hi>how to learne a ſure and ſafe method, profitable for the laying down of a firme and certain foundation of ſaving knowledge, and that thoſe who will be pleaſed to make uſe thereof, may know how to make the ſpi<g ref="char:EOLhyphen"/>rituall building of their ſoules, permanent and eter<g ref="char:EOLhyphen"/>nall:</hi> for this purpoſe I made choiſe of this Text,
+<pb facs="tcp:103763:3"/>(whence I have raiſed this Diſcourſe,) in the pondering whereof, this piece firſt praeſented it ſelfe unto my meditation, which now for thy bene<g ref="char:EOLhyphen"/>fit, I praeſent unto thee, as a praeparation to that my purpoſe which if thou wilt be pleaſed to entertaine curteouſly, I ſhall (God willing) in due time prae<g ref="char:EOLhyphen"/>ſent thee with my firſt intention, however according to my abilities, I am ever</p>
+            <closer>
+               <signed>
+                  <hi>Thine in Chriſt Jeſus,</hi> Jo: Brookesbanke.</signed>
+            </closer>
+         </div>
+      </front>
+      <body>
+         <div type="sermon">
+            <pb n="1" facs="tcp:103763:3"/>
+            <head>THE SAINTS Imperfection.</head>
+            <epigraph>
+               <q>
+                  <bibl>
+                     <hi>HEBR. 5.12.</hi>
+                  </bibl>
+                  <p>Ye have need that one teach you againe, which be the firſt principles of the Oracles of God.</p>
+               </q>
+            </epigraph>
+            <p>
+               <seg rend="decorInit">T</seg>His whole verſe is an Apoſto<g ref="char:EOLhyphen"/>licall reproofe,
+<note place="margin">Objurgatio Apoſtolica, Bez.</note> wherein the Hebrewes are checked, both for a non-proficiency, and a loſſe in Chriſtianity: and it doth conſiſt of three Generalls.</p>
+            <p n="1">1. Their Negligence. <hi>For when for the time yee ought to be teachers.</hi>
+            </p>
+            <p n="2">2. Their Ignorance. <hi>Ye have neede that one teach you againe.</hi>
+            </p>
+            <p n="3">3. Their Loſſe, and weakenes. <hi>And are be<g ref="char:EOLhyphen"/>come ſuch as ſtand in neede of milke, and not of ſtrong meat.</hi>
+            </p>
+            <p> 
+               <label type="milestone">
+                  <seg type="milestoneunit">Doct. </seg>1</label> Which conſidered in ſuch a people (as theſe
+<pb n="2" facs="tcp:103763:4"/>converted Jewes) diſcovers unto us this truth; that, <label type="milestone">
+                  <seg type="milestoneunit">Doct. </seg>1</label> 
+               <hi>A people may be truly religious, and yet ſo far deficient therein, that though the high Prieſt, and Biſhop of our Soules, (Chriſt Je<g ref="char:EOLhyphen"/>ſus) be therein truly praetended, and really in<g ref="char:EOLhyphen"/>tended, yet he may be therein too ſlightly at<g ref="char:EOLhyphen"/>tended:</hi> for they were dull of hearing, <hi>v.</hi> 11. having too remiſſely ſpent their time, and were both weake and ignorant, <label type="milestone">
+                  <seg type="milestoneunit">Reaſons. </seg>
+               </label> in their profeſſion. <hi>For when for the time ye ought to be teachers, ye have need that one teach you againe, which bee the firſt principles of the Oracles of God, and are become ſuch as ſtand in need of milke, and not of ſtrong meate.</hi>
+            </p>
+            <p>My text is the midle or ſecond part of the verſe, <hi>viz.</hi> their Ignorance; <hi>Ye have need that one teach you againe, which be the firſt prin<g ref="char:EOLhyphen"/>ciples of the oracles of God:</hi> which like unto a booke opens it ſelfe, into two full and profi<g ref="char:EOLhyphen"/>table pages or parts.</p>
+            <p n="1">1. Their Neceſſity; <hi>Ye have neede that one teach you againe.</hi>
+            </p>
+            <p n="2">2. What they were neceſſitated to know: <hi>Which hee the firſt principles of the Oracles of God.</hi> Method and brevity enforce me (for the preſent) to forbeare the latter, and to fall one<g ref="char:EOLhyphen"/>ly upon the former, which is their necesſity; <hi>Ye have neede that one teach you againe.</hi> Wherein we may obſerve foure ſections or co<g ref="char:EOLhyphen"/>lumns.</p>
+            <p n="1">1. The parties to be taught; <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>, <hi>ye, you,</hi> that is, the beleeving Hebrewes, unto whom (in particular) this Epiſtle was directed.</p>
+            <p n="2">2.
+<note place="margin">
+                  <gap reason="foreign" resp="#OXF">
+                     <desc>〈 in non-Latin alphabet 〉</desc>
+                  </gap>.</note> Their want, <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>need, <hi>ye have need.</hi>
+            </p>
+            <p n="3">3. That whereof they ſtood in neede, <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>,
+<pb n="3" facs="tcp:103763:4"/>to be taught, <hi>that one teach you.</hi>
+            </p>
+            <p n="4">4. Their decreaſe in knowledge, <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>, <hi>a<g ref="char:EOLhyphen"/>gaine, Ye have need that one teach you againe.</hi>
+            </p>
+            <p>Of each which in their order,
+<note n="1" place="margin">
+                  <hi>Of the parties the Hebrewes.</hi>
+               </note> and firſt of the parties <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>, <hi>ye, you;</hi> the Hebrewes, a people noble in their Pedegree, honorable in their titles, eminent in their Praerogative, ex<g ref="char:EOLhyphen"/>ceeding in their Priviledges.</p>
+            <p n="1">1. Noble in their Pedegree,
+<note n="1" place="margin">
+                  <hi>Noble in their Pede<g ref="char:EOLhyphen"/>gree.</hi>
+               </note> being a Nation too exceſsively curious in their Genealogies, and able to derive their Linage punctually from the firſt of men, their Originall taking its riſe almoſt with time it ſelfe, beginning in our great Grandparents <hi>Adam,</hi> and <hi>Eve,</hi> and continued by the warrant of Canonicall ſcripture, (in the nine firſt chapters of 1 <hi>Chron.</hi> and <hi>Luke</hi> the 3. from the 23 verſe, unto the end of the chap<g ref="char:EOLhyphen"/>ter) unto the birth of him, who is the joy of the whole earth, <hi>Jeſus Chriſt</hi> our Saviour, by whom they had the greateſt, higheſt, and moſt peculiar, outward nobility, that ever did or could befall them.</p>
+            <p n="2">2. Honourable in their titles,
+<note n="2" place="margin">
+                  <hi>Honorable in their Titles</hi>
+               </note> called <hi>Hebrews</hi> from <hi>Eber</hi> ſon of <hi>Salah Noahs</hi> great grand<g ref="char:EOLhyphen"/>child, <hi>Gen.</hi> 11 14. which by them who underſtand that language is tranſlated. <hi>Paſſage,</hi> or <hi>Paſsing. Paſſage</hi> in a paſsive ſignification, they being an intermedium in the conveyance of grace, betwixt God and other people, they receiving (if I may ſo ſpeak) all Gods ordi<g ref="char:EOLhyphen"/>nances at the firſt hand, which were by them delivered unto all other Nations at the ſecond hand. <hi>Paſsing</hi> in an Active ſignification, they being more near unto God, in their ſervices then other people, and therefore ſurpaſsing them,
+<pb n="4" facs="tcp:103763:5"/>in the truth and purity of a religious worſhip, of the true pure and eternall God. They be likewiſe called Iſraelites, from Iſrael, a name given unto <hi>Jacob, Gen.</hi> 32.28. (which ſignifieth <hi>Prince of God,</hi> or <hi>Conquerer of God)</hi> who was a chiefe Patriarch of theſe people, which did praevail with God, in all their ſervices. viz. <hi>Prayers, Sacrifices &amp;c.</hi> And therefore they be uſually called the <hi>children of Iſrael,</hi> as <hi>Deut.</hi> 33.1. and frequently the <hi>People of Iſrael,</hi> and St. <hi>Peter</hi> ſeemes to labour to inſinuate himſelfe into them, in this appellation, <hi>yee men of Iſrael, Act.</hi> 2.22. Theſe were a people, of whome it was moſt properly ſaid: <hi>ye are a choſen generation, a royall Prieſthood, an holy Nation, a peculiar,</hi> or (as our laſt tranſlation hath it in the mar<g ref="char:EOLhyphen"/>gent,) a purchaſed people. 1 <hi>Pet.</hi> 2.9. They be likewiſe called <hi>Jewes</hi> from <hi>Judah,</hi> Iacobs fourth ſon, <hi>Gen.</hi> 29 35. which ſignifieth <hi>Praiſe,</hi> they being the praiſe of God, and the glory of the whole earth; they have titles far greater then theſe, termes of a nearer rela<g ref="char:EOLhyphen"/>tion to the Deity, as his <hi>peculiar treaſure, Exod:</hi> 19.5. <hi>The people of the Lord, Dev:</hi> 2<gap reason="illegible" resp="#KEYERS" extent="1 letter">
+                  <desc>•</desc>
+               </gap> 
+               <gap reason="illegible" resp="#KEYERS" extent="2 letters">
+                  <desc>••</desc>
+               </gap>. <hi>The children of the Lord, Deut.</hi> 14.1. <hi>His firſt born, Exod:</hi> 4.22. <hi>His Inheritance,</hi> 1 <hi>Kings</hi> 8.51. <hi>The lot of his Inheritance, Jer.</hi> 10.16. <hi>which titles be neither bare nor barren, but fruitfull, profitable and pleaſant, for they were his Vineyard, Pſal.</hi> 80.15. <hi>Iſa.</hi> 5.1. <hi>Mat.</hi> 21.23.</p>
+            <p>Thirdly,
+<note n="3" place="margin">
+                  <hi>Eminent in their Pre<g ref="char:EOLhyphen"/>rogative. Deut.</hi> 10.15 <hi>&amp;</hi> 14.2.</note> 
+               <hi>eminent in their praerogative:</hi> God choſe them to be a ſpeciall people unto him<g ref="char:EOLhyphen"/>ſelfe, above all people that were upon the face of the earth, Deut. 7.6. <hi>To make them
+<pb n="5" facs="tcp:103763:5"/>high, above all nations which he hath made, in praiſe, and in name, and in honour. Deut.</hi> 26.19. <hi>Therefore was hee more nigh unto them then any Nation. Deut.</hi> 4.7. <hi>They received his word before any Nation. Pſal.</hi> 147.19, 20. <hi>In Judah</hi> (that is, the countrey of the Jewes) <hi>is God known: his name is great in Jſrael,</hi> (that was the name of the ten Tribes.) <hi>In Salem</hi> (that is, <hi>Jeruſalem,</hi> the chiefe city of the Jewes) <hi>alſo is his Tabernacle, and his dwel<g ref="char:EOLhyphen"/>ling place in Sion,</hi> (the name of the hill whereon the Temple ſtood) <hi>Pſal.</hi> 76.1, 2. <hi>And thou</hi> (that is, mount <hi>Sion</hi> or <hi>Jeruſalem</hi>) <hi>art more glorious and more excellent, then the mountaines of prey,</hi> that is,
+<note place="margin">Ainſworth upon that place.</note> then other Nations which lived by Tyrranny, Robberie, Rapine, and cruelty, from them is Salvation, <hi>Ioh.</hi> 4.22. and unto them onely did Chriſt preach in the fleſh, <hi>Mat.</hi> 15.24. denominating them children, the Gentiles dogges, v. 26. Therefore he would not permit his Twelve Diſciples, to preach the glad tidings of the Goſpell of peace to the Gentiles, nor to any City of the Samaritans, <hi>Mat.</hi> 10.5,
+<note n="*" place="margin">
+                  <hi>v.</hi> 6. <hi>By Iſrael is to be underſtood Iudah, the Iewes being Iſraelites,</hi> 
+                  <gap reason="foreign" resp="#OXF">
+                     <desc>〈 in non-Latin alphabet 〉</desc>
+                  </gap>
+                  <hi>by way of ex<g ref="char:EOLhyphen"/>cellency.</hi>
+               </note> 6. before they had at the leaſt heard of the ſame beginning at Jeruſa<g ref="char:EOLhyphen"/>lem, <hi>Lu.</hi> 24.47. which concludes that as the Elect are ſaid to be a kinde of the firſt fruites of the creatures, <hi>Iam.</hi> 1.18. ſo the Iewes may be ſaid to be a kinde of firſt fruits of the Elect, and therefore are they called <hi>primi Eccleſiae,</hi> the firſt men of the Church; and <hi>St. Auguſtine</hi> calls them <hi>Primores Eccleſiae,</hi> the chiefe men of the Church; which excellency, and praece<g ref="char:EOLhyphen"/>dency, belongs unto them by right of Cove<g ref="char:EOLhyphen"/>nant, which was firſt made with them and their ſeed, <hi>Act.</hi> 
+               <gap reason="illegible" resp="#KEYERS" extent="1 letter">
+                  <desc>•</desc>
+               </gap>.39.</p>
+            <pb n="6" facs="tcp:103763:6"/>
+            <p>Fourthly,
+<note n="4" place="margin">Excee<g ref="char:EOLhyphen"/>ding in their Priviledges.</note> 
+               <hi>Exceeding in their Priviledges,</hi> the Lord in an extraordinary manner acknow<g ref="char:EOLhyphen"/>ledgeth himſelfe to be the <hi>God of the He<g ref="char:EOLhyphen"/>brewes, Exod.</hi> 3.18. <hi>and</hi> promiſed upon their obedience <hi>to ſet them on high above all Na<g ref="char:EOLhyphen"/>tions of the earth, attending them with all bleſſings. Deut.</hi> 28.1.2. and <hi>Lev.</hi> 26.3.4. <hi>&amp;c. and to make them a kingdome of Prieſts, and a holy Nation, Exod.</hi> 19.5.6. unto them hee did <hi>commit his oracles, Rom.</hi> 3.2. but of all this was the greateſt priviledge, that they in<g ref="char:EOLhyphen"/>joyed the honour of our Saviours birth, and the firſt proffer of him: amongſt eight ſeverall Priviledges, S. <hi>Paul</hi> ends in this as the chiefeſt, thus extolling them; <hi>who are Iſaelites; to whom pertaineth the adoption, &amp; the glory, and the covenants</hi> (or as the margent of our laſt tranſlation, <hi>teſtaments) &amp; the giving of the law, and the ſervice of God, and the promiſes, whoſe are the Fathers, and of whom, as concerning the fleſh, Chriſt came, Rom.</hi> 9, 4, 5. And when the ſame Apoſtle goes about to make good the au<g ref="char:EOLhyphen"/>thority of his Apoſtleſhip, &amp; to defend it from reproach, he uſeth his Priviledges which be<g ref="char:EOLhyphen"/>longed to him as he was a Iew, as the ſtrongeſt arguments to defend the ſame. <hi>Are they He<g ref="char:EOLhyphen"/>brewes? ſo am I: are they Iſraelites? ſo am I: are they of the ſeed of Abraham? ſo am I.</hi> 2 <hi>Cor.</hi> 11.22. accounting them as the greateſt carnall bleſsings, which belong unto men. <hi>Phil.</hi> 3.5, 6. all which Priviledges belonged unto them as they were <hi>Iewes,</hi> and were by them enjoyed as they were under the covenant: Whereunto may be added, that theſe <hi>Hebrews</hi> had greater Priviledges then theſe, in being Chriſtians, for
+<pb n="7" facs="tcp:103763:6"/>they were <hi>holy brethren, partakers of the hea<g ref="char:EOLhyphen"/>venly calling, chap.</hi> 3.1. of whom the Author of this Epiſtle was perſwaded things that accompa<g ref="char:EOLhyphen"/>ny ſalvatio<g ref="char:cmbAbbrStroke">̄</g>, becauſe of their work &amp; labour of love, <hi>which they had ſhewed towards the name of Chriſt in miniſtring to the Saints, chap.</hi> 6.9.10. Nevertheleſſe here wee ſee, they ſtand in need to be taught againe, which be the firſt principles of the oracles of God. Whence we may learn; that, <hi>There is neither Covenant, nor Promiſe,</hi> 
+               <label type="milestone">
+                  <seg type="milestoneunit">Doct. </seg>2</label> 
+               <hi>(though God beare a part therein) Claim, nor Title, Pri<g ref="char:EOLhyphen"/>viledge, nor Praerogative, Love nor Devotion, ſufficient in the wayes of ſalvation, without a methodicall, continuall, and profitable proceeding in the knowledge of Chriſt and his word.</hi> 
+               <label type="milestone">
+                  <seg type="milestoneunit">Reaſons. </seg>
+               </label> For theſe <hi>Hebrewes,</hi> though they were every way thus compleatly qualified, yet neglecting time and method, they were <hi>dull of hearing,</hi> not able to receive, what was to be delivered concerning Chriſt: and babes fit onely for milk, and not for ſtrong meat; ſtanding in need to be taught again, <hi>which be the firſt Principles of the oracles of God:</hi> which brings mee from the firſt part of the text the <hi>Hebrewes,</hi> which were the <hi>parties,</hi> unto the ſecond which is their <hi>want; yee have need.</hi>
+            </p>
+            <p>
+               <hi>The Parties want</hi> is the 2<hi rend="sup">d.</hi> column or ſection,
+<note n="2" place="margin">
+                  <hi>The Parties wants.</hi>
+               </note> in their neceſſity: <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>need; yee have need, which word in this phraſe <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>hath ſeverall ac<g ref="char:EOLhyphen"/>ceptions, ſignifying ſometimes <hi>neceſſity, Mat.</hi> 14.16. <hi>they need not depart,</hi> that is,
+<note place="margin">
+                  <gap reason="foreign" resp="#OXF">
+                     <desc>〈 in non-Latin alphabet 〉</desc>
+                  </gap>.</note> there is no neceſſity of their departure; therefore <hi>Beza</hi> tranſlates my text, <hi>neceſſe habetis.</hi> yee have <hi>one thing</hi> neceſſary; yee have a neceſsity that one teach you again:
+<note place="margin">
+                  <gap reason="foreign" resp="#OXF">
+                     <desc>〈 in non-Latin alphabet 〉</desc>
+                  </gap>.</note> Second<g ref="char:EOLhyphen"/>ly, it is ſometimes taken for <hi>Indigence</hi> or <hi>want, Eph.</hi> 4.28. <hi>to give to him that needeth;</hi> that is, to him
+<pb n="8" facs="tcp:103763:7"/>that is in want, therefore the vulgar tranſlation reads it <hi>in ligetis;</hi>
+               <note place="margin">
+                  <gap reason="foreign" resp="#OXF">
+                     <desc>〈 in non-Latin alphabet 〉</desc>
+                  </gap> pro <gap reason="foreign" resp="#OXF">
+                     <desc>〈 in non-Latin alphabet 〉</desc>
+                  </gap>. <hi>per Hy<g ref="char:EOLhyphen"/>pallagen.</hi>
+               </note> 
+               <hi>yee want</hi> or <hi>are in want:</hi> Third<g ref="char:EOLhyphen"/>ly it is tranſlated <hi>
+                  <g ref="char:V">Ʋ</g>ſe. Eph.</hi> 4.29. which is good to the <hi>uſe of edifying,</hi> that is, which is uſefull to edifying; whereupon <hi>Eraſmus</hi> reads it <hi>opus habetis</hi> yee have uſe, or <hi>it is uſefull that one teach you again.</hi> In all our Engliſh tranſlations which I have met with, it is <hi>need,</hi> a word aequivalent unto all theſe ſeverall acceptions, and if wee take it in any or all theſe ſenſes, it makes for our good: and firſt, in the firſt, if it be taken for <hi>neceſſary</hi> or <hi>neceſ<g ref="char:EOLhyphen"/>ſity;</hi> the thing that theſe <hi>Hebrewes</hi> were, and wee are to be taught, being the ſcriptures here called the <hi>oracles</hi> of <hi>God;</hi> for the word of God <hi>is a lamp</hi> or <hi>candle</hi> unto the feet of every beleever, <hi>Pſal.</hi> 119.105. <hi>whereunto wee are to give heed, as unto a light that ſhineth in a darke place,</hi> 2 <hi>Pet.</hi>
+               <note place="margin">
+                  <hi>Willet Syn<g ref="char:EOLhyphen"/>op. p.</hi> 40.</note> 1.19. The ſcripture is both a light of in<g ref="char:EOLhyphen"/>ſtruction, to teach us our way: and of direction, to guide us therein. <hi>The law</hi> (or doctrine) of the <hi>Lord is perfect, converting,</hi> (or reſtoring) the ſoul; <hi>the teſtimony of the Lord is ſure, making wiſe the ſimple. Pſal.</hi> 19.7. <hi>Therefore is it neceſſary that we be taught again, which be the firſt principles of the oracles of God.</hi> In the ſecond ſenſe wee are in want of this Doctrin or teaching: <hi>for naturally we have our underſtanding darkened, being alienated from the life of God, through the ignorance that is in us, becauſe of the blinde<g ref="char:EOLhyphen"/>neſſe of our hearts. Eph.</hi> 4.18. <hi>And the God of this world hath blinded the minds of them which beleeve not, leſt the light of the glorious Goſpel of Chriſt, who is the image of God, ſhould ſhine unto them.</hi> 2 <hi>Cor.</hi> 4.4. Whoſoever is a beleever, if hee do not labour after Faith, Virtue, Knowledge,
+<pb n="9" facs="tcp:103763:7"/>Temperance, Patience, Godlineſs, Brotherly kindeneſs, and Charity, 2 <hi>Pet.</hi> 1.4, 5, 6, 7. <hi>he is blind &amp; cannot ſee afar off, and hath forgot<g ref="char:EOLhyphen"/>ten that hee was purged from his old ſins. v.</hi> 9. <hi>And therefore is in want that one teach</hi> him <hi>again which be the firſt, principles of the oracles of God.</hi> Thirdly, it may bee profitable unto us as it denotates <hi>uſe,</hi> when wee conſider the end whereunto every man ought to tend, whether it be externall, the glory of God, which is happineſſe infinite and eternall; or internall, the ſalvation of our ſouls, which is life everlaſting: if it be that former, all enterpriſes, our eating and drink<g ref="char:EOLhyphen"/>ing, and whatſoever wee do ought to aime there<g ref="char:EOLhyphen"/>at. 1 <hi>Cor.</hi> 10.31. And that our lives may con<g ref="char:EOLhyphen"/>duce unto the glory and praiſe of God, wee muſt be filled with the fruits of righteouſneſſe, where<g ref="char:EOLhyphen"/>unto love in an increaſe of knowledge, judgement, &amp; ſincerity is requiſite. <hi>Phil.</hi> 19, 10, 11. Which life will be a true praiſe of him, who is glorified there<g ref="char:EOLhyphen"/>by, <hi>Pſal.</hi> 50.23. Who expects praiſe with un<g ref="char:EOLhyphen"/>derſtanding, <hi>Pſal.</hi> 47.7. which underſtanding is attained by the holy ſcriptures through Faith. 2 <hi>Tim.</hi> 3.15. Or if it be this latter which is internall, our ſalvation, that is life eternall, wee muſt receive the ſame by <hi>Chriſt Jeſus,</hi> who is the giver thereof, <hi>Iohn.</hi> 10.28. and the way thereunto, <hi>Ioh.</hi> 14.6. whom to know is eternall life, <hi>Ioh.</hi> 17.3. and is taught in the ſcriptures, <hi>Ioh.</hi> 5.39. In this ſenſe therefore yee have uſe, or it is <hi>uſefull that one teach you again which be the firſt principles of the oracles of God.</hi> Beſides, Gods word is the joy of his Servants, <hi>Ier.</hi> 15.16. and their ſafety in affliction, <hi>Pſa.</hi> 119.92. it is unto them moſt pleaſant, and nouriſhing
+<pb n="10" facs="tcp:103763:8" rendition="simple:additions"/>food and inriching wealth, <hi>Pſal.</hi> 19.10. <hi>better then thouſands of gold and ſilver, Pſal.</hi> 
+               <gap reason="illegible" resp="#KEYERS" extent="1 letter">
+                  <desc>•</desc>
+               </gap>9.72. and 127. ſweeter then honey, <hi>v.</hi> 103. all the elect be right branches of the true Vine, whoſe meat and drink it is, to do the will of his Father that ſent him, <hi>Ioh.</hi> 4.34. they take a delight to do his will: <hi>his law is within their heart, Pſal.</hi> 40.8. Thus collecting what hath been ſaid in <hi>this part,</hi> 
+               <label type="milestone">
+                  <seg type="milestoneunit">Doct. </seg>3</label> wee may ſafely conclude; that, <hi>A right knowledge in the word of God is ſo requiſite in Chriſtians, that though they be commendable for religion, yet it is a neceſſary, releeving, uſefull and delightfull matter, to be taught which be the firſt principles of the cracles of God.</hi> 
+               <label type="milestone">
+                  <seg type="milestoneunit">Reaſons. </seg>
+               </label> For theſe <hi>Hebrewes</hi> were a people commended by the Apoſtle for their love, labour, devotion, and religion, yet ſo ſhallow in the knowledge of our Saviour <hi>Jeſus Chriſt,</hi> that they ſtand <hi>in need to bee taught againe</hi> the <hi>firſt principles</hi> of this religion, which directs me from their <hi>want,</hi> unto the matter thereof, <hi>teaching. Yee have need that one teach you againe which be the firſt principles of the oracles of God.</hi>
+            </p>
+            <p>The third <hi>column</hi> or <hi>ſection,</hi>
+               <note n="3" place="margin">
+                  <hi>Whereof they ſtood in neede.</hi>
+               </note> of the firſt part or page of my text, is that whereof theſe <hi>Hebrewes</hi> ſtood in need, and that is <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>to be taught, <hi>that one teach you:</hi> teach? what is there to bee taught? <hi>which be the firſt principles of the Ora<g ref="char:EOLhyphen"/>cles of God.</hi> The word in the Greeke here tranſla<g ref="char:EOLhyphen"/>ted oracles, properly ſignifieth, <hi>eloquent words,</hi> but uſually, divine anſwers, and here both in the former and the latter ſenſe, muſt needs ſignifie the written word of God, which is the Canonical ſcrip<g ref="char:EOLhyphen"/>ture, then which none is more eloquent, more Di<g ref="char:EOLhyphen"/>vine, nor more anſwering our doubts and demands, the ſum and end of which ſacred ſcripture, is <hi>Jeſus
+<pb n="11" facs="tcp:103763:8"/>Chriſt</hi> our Saviour, of whom the Apoſtle had ma<g ref="char:EOLhyphen"/>ny things to ſay, and hard to be uttered, not be<g ref="char:EOLhyphen"/>cauſe they are difficult or abſtruſe in themſelves, but becauſe they to whom they were directed, were dull of hearing, <hi>v.</hi> 11. and therefore in their lear<g ref="char:EOLhyphen"/>ning the doctrine of Chriſtianity, they muſt firſt be taught, <hi>which be the firſt principles of theſe ora<g ref="char:EOLhyphen"/>cles of God.</hi> Which may ſeeme moſt ſtrange unto them who underſtand the ſtate &amp; condition, where<g ref="char:EOLhyphen"/>in theſe <hi>Hebrewes</hi> were at that time, when this E<g ref="char:EOLhyphen"/>piſtle was writ unto them: who might to the leaſt ſcruple, concerning their knowledge of their Savi<g ref="char:EOLhyphen"/>our, have anſwered in the words of their forefa<g ref="char:EOLhyphen"/>thers, the men of <hi>Judah</hi> in another caſe, unto the men of <hi>Iſrael</hi> concerning his type <hi>David,</hi> our high Prieſt, <hi>the King is neere of kin to us,</hi> 2 <hi>Sam.</hi> 19.42. was not he borne in <hi>Bethlehem of Judah?</hi> hath not he been converſant with us? hath not he wal<g ref="char:EOLhyphen"/>ked in our ſtreets? preached in our Temple? taught in our Synagogues? hath nor hee wrought many miracles amongſt us? is it not hee that hath cauſed our lame to walke? our blinde to ſee? and our poore to receive the Goſpel? was not hee cru<g ref="char:EOLhyphen"/>cified before our eyes? is not his Sepulchre with us? did not he forty dayes after his reſurrection, de<g ref="char:EOLhyphen"/>prive us of his bodily praeſence, by his Aſcenſion up into Heaven, from the Mount of <hi>O livet,</hi> by his owne power, <hi>where he ſitteth,</hi>
+               <note place="margin">Propriâ vir<g ref="char:EOLhyphen"/>tute.</note> 
+               <hi>at the right hand of God the Father Almighty, and ſhall come from thence, to judge the quick and the dead?</hi> Did not his doctrine aſtoniſh his auditory, and cauſe us to confeſs his ſuppoſed father, his mother, and kin<g ref="char:EOLhyphen"/>dred to live amongſt us? <hi>Mar.</hi> 6.2, 3. How ſhould we be ignorant of him? that we ſhould be thus ig<g ref="char:EOLhyphen"/>norant, is both ſtrange and improbable: did not our
+<pb n="12" facs="tcp:103763:9" rendition="simple:additions"/>country man, and Apoſtle <hi>Peter,</hi> in one Sermon wherein this our Saviour was taught us,
+<note place="margin">
+                  <hi>Acts</hi> 2.41.</note> convert three thouſand of our ſoules in one day, bringing us all therewith, into ſuch amazement, and aſto<g ref="char:EOLhyphen"/>niſhment, that we being pricked at the heart, with a ſenſe of our ſinnes,
+<note place="margin">
+                  <hi>verſe</hi> 37.</note> cryed out unto him and his fellow Apoſtles, <hi>men and brethren, what ſhall wee doe?</hi> whereupon we received the Sacraments, which are ſignes and ſeales of our profeſſion of the Do<g ref="char:EOLhyphen"/>ctrine of Chriſtianity,
+<note place="margin">
+                  <hi>verſe</hi> 42.</note> we continuing <hi>in the Apo<g ref="char:EOLhyphen"/>ſtles doctrine, and fellowſhip, and in breaking of bread, and in prayers;</hi> Can there be any fuller or clearer demonſtration of our ſecurity and know<g ref="char:EOLhyphen"/>ledge through a true faith in Chriſt? and bee not theſe the firſt principles of this faith? How is it the<g ref="char:cmbAbbrStroke">̄</g> that we are thus upbraided that <hi>wee ſtand in need to be taught againe, which be the firſt principles of the oracles of God.</hi> This opinion of us muſt needs be too prejudicate and injurious. To which it is replied. The Apoſtle doth grant, they had ſome ſmattering in the knowledge of Chriſt, for they were babes, that is, they ſtood in neede to bee in<g ref="char:EOLhyphen"/>ſtructed in the firſt grounds and rudiments of Chri<g ref="char:EOLhyphen"/>ſtian religion, for their ſenſes were not ſo exerci<g ref="char:EOLhyphen"/>ſed therein, that they were able to diſcerne good and evill. <hi>v.</hi> 14. therefore they ſtood in neede of a ſtrengthening, confirming, and increaſing of their underſtanding, that they might conceive fully and aright, what that is which the Apoſtle was about to deliver concerning our Saviour: and though it may bee granted that the <hi>Hebrewes</hi> had ſo much knowledge, as <gap reason="illegible" resp="#KEYERS" extent="2 letters">
+                  <desc>••</desc>
+               </gap>re claime is laid unto, there is more requiſ<gap reason="illegible" resp="#KEYERS" extent="1 letter">
+                  <desc>•</desc>
+               </gap>te to t<gap reason="illegible" resp="#KEYERS" extent="2 letters">
+                  <desc>••</desc>
+               </gap> deſerve the name of knowing Chriſtians, as to be able to give account of the pro<g ref="char:EOLhyphen"/>pheſies of the old Teſtament fulfilled in the new,
+<pb n="13" facs="tcp:103763:9"/>by Chriſt who is the ſubject of both: and how hee is King over his Church: Prieſt to his Elect: and Pro<g ref="char:EOLhyphen"/>phet to his people: how by him the typicall Prieſthood is abrogated, and the ceremoniall Law taken away, in all which the Apoſtle is very exact in this Epiſtle, all which in this part conſidered together, make thus much, that, <label type="milestone">
+                  <seg type="milestoneunit">Doct. </seg>4</label> 
+               <hi>A good improvement of the beſt meanes of ſaving knowledge, without a right and profitable uſe, &amp; pro<g ref="char:EOLhyphen"/>ceeding therein, comes farre ſhort of a Chriſtian duty.</hi> For theſe <hi>Hebrews</hi> though they were auditors &amp; ſpecta<g ref="char:EOLhyphen"/>tors of the ſaving words and workes, <label type="milestone">
+                  <seg type="milestoneunit">Reaſons </seg>
+               </label> of our Saviour Chriſt Jeſus, and his bleſſed Apoſtles, which was abſo<g ref="char:EOLhyphen"/>lutely the beſt meanes that ever Chriſtians lived under, and they commended proficients therein, as hath beene ſufficiently ſhewed, yet they were far ſhort of their du<g ref="char:EOLhyphen"/>ty, <hi>For when for the time they ought to be teachers, they had need that one teach them again, which be the firſt principles of the oracles of God:</hi> being <hi>babes which are unskilfull in the words of righteouſneſſe, and have need of milke, and not of ſtrong meate.</hi> Wherein it is very remarkable, that <hi>they were to be taught againe;</hi> which leades me from that whereof they ſtood in need, which was to be taught, unto their decreaſe in knowledg expreſſed in this Adverb <hi>Again.</hi>
+            </p>
+            <p>The fourth and laſt particular of this their <hi>neceſſity</hi> is their decreaſe in knowledge,
+<note n="4" place="margin">
+                  <hi>Their de<g ref="char:EOLhyphen"/>creaſe in knowledge.</hi>
+               </note> in this word <gap reason="foreign" resp="#OXF">
+                  <desc>〈 in non-Latin alphabet 〉</desc>
+               </gap>
+               <hi>a<g ref="char:EOLhyphen"/>gain,</hi> which here is the laſt and greateſt aggravation of their ignorance, if we conſider Gods dealing with them, and their negligence in a right uſe of his inconceivable mercies and favours, which he had ſo freely and plen<g ref="char:EOLhyphen"/>tifully beſtowed upon them. If we conſider Gods dea<g ref="char:EOLhyphen"/>ling with them, he was very preciſe, in the obſervance of their Prerogative. For as at the promulgation of the Law in the old Teſtament, he made choiſe of them be<g ref="char:EOLhyphen"/>fore any other Nation, ſo in the new Teſtament at the
+<pb n="14" facs="tcp:103763:10"/>firſt preaching of the Goſpell, he preferred them before all other people, <hi>Luke</hi> 24.47. and more then this, God having raiſed up his Son, ſent him to <hi>bleſſe them firſt, in turning them from their iniquities,</hi> Acts 3.26. And herein is their prerogative much extended, that our Saviour made choiſe of <hi>Jewes</hi> and <hi>Hebrewes</hi> to bee his 12. Apoſtles, for the firſt &amp; principall adminiſtration of his Goſpell: and as God was preciſe in the obſervance of their Prerogative, ſo likewiſe he was ſtrict in giving a reſpect unto their Priviledges; our Saviour told the woman of Canaan, <hi>it is not meet to take the childrens bread and to caſt it unto dogges,</hi> Matth. 15.26. and thoſe which were ſcattered abroad, upon the perſecuti<g ref="char:EOLhyphen"/>on that aroſe about <hi>Stephen,</hi> preached the word to none but the <hi>Jewes</hi> only, untill they came to <hi>Antioch,</hi> Acts 11.19, 20. <hi>To the children of the ſtocke of</hi> A<g ref="char:EOLhyphen"/>braham <hi>was the word of ſalvation ſent,</hi> Acts 13.26. all which tranſcendent bleſſings (wherewith God had ennobled them) we ſee they ſlighted &amp; neglected; which mightily aggravates not only their non-proficiency, but their decreaſe in the knowledge of true Religion, by neglecting a right uſe of that extraordinary meanes of ſalvation, which God had beſtowed upon them: for whereas <hi>for the time they ought to be teachers,</hi> they had need <hi>yet to be taught,</hi> and that <hi>againe, which be the firſt principles of the oracles of God,</hi> and though the firſt preaching of the word of God, was necesſary for them not only in reſpect unto their Priviledges &amp; Pre<g ref="char:EOLhyphen"/>rogative, but alſo in a relation unto Gods promiſe made unto them, the performance whereof was necesſary for their ſalvation, <hi>Acts</hi> 13.46. they were not yet able to receive ſtrong meate, but were ſtill babes fit onely for milke. Moreover they were men of a large capacity in the knowledge of the law, which was the <hi>miniſtration of death,</hi> 2 Cor. 3.7. and the <hi>miniſtration of condem<g ref="char:EOLhyphen"/>nation,</hi>
+               <pb n="15" facs="tcp:103763:10"/>verſ. 9. herein (which was but the Covenant of the Law.) <hi>They knew the will of God, and approved the things that were more excellent</hi> (or, as our laſt mar<g ref="char:EOLhyphen"/>gent varies it, tried the things that differ) <hi>being inſtru<g ref="char:EOLhyphen"/>cted out of the law, and were confident that they them<g ref="char:EOLhyphen"/>ſelves were guides of the blind, a light of them which are in darkneſſe, inſtructers of the fooliſh, teachers of babes, which had the forme of knowledge and of trueth in the Law,</hi> Rom. 2.18, 19, 20. But in the underſtan<g ref="char:EOLhyphen"/>ding of the doctrine of Chriſtianity, which is the Co<g ref="char:EOLhyphen"/>venant of the Goſpell, they were babes and dull of hea<g ref="char:EOLhyphen"/>ring, which much aggravates their ignorance and neg<g ref="char:EOLhyphen"/>ligence; but this makes them more inexcuſable, (to be within the covenant of grace: (for the Author of this Epiſtle was perſwaded of their ſalvation, <hi>cha.</hi> 6.9, 10.) and to forget the words of reconciliation and eternall life, after they had received the ſame from the Lord of life in perſon, and his Apoſtles, who were eye-witneſses of the ſame, <hi>chap.</hi> 2.3.4. and had entertained a con<g ref="char:EOLhyphen"/>fidence therein, that they ſtand in need <hi>to be taught a<g ref="char:EOLhyphen"/>gaine, the firſt principles of the oracles of God:</hi> This condition of theirs may teach us thus much, that, <label type="milestone">
+                  <seg type="milestoneunit">Doct. </seg>5</label> 
+               <hi>Chri<g ref="char:EOLhyphen"/>ſtians endued with greateſt Priviledges, and largeſt ca<g ref="char:EOLhyphen"/>pacities, ſeconded with ſaving grace, without a heedful care, and paines taken in their attained knowledge of the oracles of God, cannot be exempted from a loſſe therein.</hi> For theſe <hi>Hebrews,</hi> 
+               <label type="milestone">
+                  <seg type="milestoneunit">Reaſons. </seg>
+               </label> though they had all pri<g ref="char:EOLhyphen"/>viledges, and were capable of the greateſt bleſſings, as they were of the promiſed ſeed, and under the Cove<g ref="char:EOLhyphen"/>nant of grace, of whom the Apoſtle was perſwaded, things which accompany ſalvation, yet not being (as was requiſite) carefull and painefull in the meanes of their attained ſaving knowledge, they were fallen into a loſs therein, ſtanding in need to be taught againe, what formerly they had learned: therfore the Apoſtle is im<g ref="char:EOLhyphen"/>partiall
+<pb n="16" facs="tcp:103763:11"/>with them, not ſoothing nor clawing them, in their condition, but laying open their wants. <hi>Yee have need that one teach you againe; when for the time yee ought to be teachers, ye have need that one teach you a<g ref="char:EOLhyphen"/>gain, which be the firſt principles of the oracles of God:</hi> all which noted in ſuch noble, <label type="milestone">
+                  <seg type="milestoneunit">Doct. </seg>6</label> honourable, knowing, and gracious Chriſtians as theſe <hi>Hebrews</hi> were, may teach us thus much: that, <hi>There is neither Nobility nor ho<g ref="char:EOLhyphen"/>nour, knowledge nor vertue, ſufficient to with-hold a Miniſter from telling his people of their ſad and dan<g ref="char:EOLhyphen"/>gerous condition.</hi> 
+               <label type="milestone">
+                  <seg type="milestoneunit">Reaſons. </seg>
+               </label> For theſe <hi>Hebrewes,</hi> as hath been ſuffi<g ref="char:EOLhyphen"/>ciently declared, were all there, yet the Author of this Epiſtle reproves them of their negligence, ignorance, and weakeneſſe, <hi>For when for the time, &amp;c.</hi>
+            </p>
+            <p>Thus I have in a briefe and curſory manner, colle<g ref="char:EOLhyphen"/>cted ſomething from each particular in the former part of my Text; the <hi>Hebrews Chriſtian neceſſity</hi> in their right knowledge of the word of God, from theſe words, <hi>ye have need that one teach you againe;</hi> wherein it may be expected, that having thus followed the uſuall po<g ref="char:EOLhyphen"/>pular way, I ſhould have made Uſe and Application, of each Doctrinall obſervation, in order as they have been collected, which I hope Candid Readers wil be pleaſed to excu<gap reason="illegible" resp="#KEYERS" extent="1 letter">
+                  <desc>•</desc>
+               </gap>e, becauſe brevity hath inforced a for<g ref="char:EOLhyphen"/>bearance thereof, I truſting (as I pray God they may,) that all heedfull and induſtrious Chriſtians which ſhall reade this diſcourſe, will of themſelves make more pro<g ref="char:EOLhyphen"/>fitable uſe and application of all divine practicall leſ<g ref="char:EOLhyphen"/>ſons, for their owne ſpirituall good and profit, then u<g ref="char:EOLhyphen"/>ſually may by man be adminiſtred: but that herein I may ſomewhat commodiouſly anſwer your expectati<g ref="char:EOLhyphen"/>on, note that in this diſcourſe of theſe beleeving <hi>He<g ref="char:EOLhyphen"/>brewes,</hi> wee may obſerve their ſlight attendance of Chriſt in his ordinance, and in their profeſſion of him; their neglect of their Priviledge, Prerogative, Love and Devotion, by an immethodicall, unſucceſſefull, and
+<pb n="17" facs="tcp:103763:11"/>unprofitable progreſſe in their knowledge of <hi>Chriſt</hi> &amp; his Word; their want of a neceſsary reliefe, uſe, and delight in the Word of God; their neglect of their duty in not profiting by a commendable improvement of the beſt meanes of ſalvation that ever people enjoyed, and all theſe aggravated with loſs and decay in Religion, and laid open, check't and reproved by an Apoſtolical chiding, are (more then ſignes) convincing arguments of their deficiency, and imperfection in true Religion and Chriſtianity, and in a ſaving knowledge of God and his Sonne Chriſt Jeſus, as they bee taught in the written word. And if it was thus with ſuch Noble, Priviledged, covenanted, able, and capable Chriſtians, as theſe Hebrews were, then is it ſo much more now with all other Beleevers; a conſideration and ſurvey whereof may prompt and ſuggeſt much ſoveraign and wholſome direction unto all that profeſs Chriſtian Re<g ref="char:EOLhyphen"/>ligion. Firſt, <hi>Hearers,</hi> ſecondly, <hi>Teachers.</hi>
+            </p>
+            <p> 
+               <label type="milestone">
+                  <seg type="milestoneunit">Ʋſe </seg>1</label> Firſt <hi>Direction unto Hearers.</hi> It being thus that theſe <hi>Hebrewes</hi> were Beleevers, and a people of the promi<g ref="char:EOLhyphen"/>ſed ſeed, under both Covenants, endued with greater Priviledges, Prerogatives, and relations unto God, and his Sonne Chriſt Jeſus, then any other Nation, they having not only received the Goſpell, but made ſome Proficiency therein, and were endued with ſuch graces as promiſe ſalvation: yet for all this that they were at a loſs in ſaving knowledge, which brought them unto ſuch dulneſs of hearing (that is, underſtan<g ref="char:EOLhyphen"/>ding) that they were unprofitable hearers, not able to underſtand what was requiſite to be known concerning Chriſt, but were babes and weakelings therein, ſtanding in want, neceſſity, and need of reliefe, light, uſe, joy and comfort, of the true and ſaving ſpirit taught &amp; directed in the ſacred word of God, by a methodicall, orderly, &amp; profitable receiving the words of reconcilia<g ref="char:EOLhyphen"/>tion,
+<pb n="18" facs="tcp:103763:12"/>which is moſt remarkable in them, becauſe they lived under a more able and ſufficient miniſtery of the Goſpell, and means of ſaving knowledge and underſtan<g ref="char:EOLhyphen"/>ding, then any age either before or ſince ever afforded, for it was firſt ſpoken unto them by the <hi>Lord himſelfe, and after was confirmed by them which heard him,</hi> chap. 2 verſe 3. whom the Evangeliſt Saint <hi>Luke</hi> cal<g ref="char:EOLhyphen"/>leth eye-witneſſes, <hi>Luke</hi> 1.2. An Epither proper on<g ref="char:EOLhyphen"/>ly in this ſenſe unto the Apoſtles, wherewith the A<g ref="char:EOLhyphen"/>poſtle <hi>Peter</hi> confirmes his Authority, in the delivery of this Doctrine, 2 <hi>Pet.</hi> 1.16. and Saint <hi>John</hi> the A<g ref="char:EOLhyphen"/>poſtle deſirous to put the firſt promulgation of the Do<g ref="char:EOLhyphen"/>ctrine of Chriſt (whereof theſe <hi>Hebrewes</hi> were parta<g ref="char:EOLhyphen"/>kers) beyond all exception, and oppoſition, guards the trueth with the Apoſtles, hearing, ſeeing, and handling thereof, 1 <hi>John</hi> 11. Therefore the Author of this Epiſtle gives theſe <hi>Hebrewes</hi> a particular &amp; ſpe<g ref="char:EOLhyphen"/>ciall charge, to be obedient unto theſe their Miniſters. <hi>Obey them that have rule over you, and ſubmit your ſelves: for they watch for your ſoules, as they that muſt give account, that they may do it with joy, and not with griefe: for that is unprofitable for you,</hi> Heb. 13.17. Nevertheleſſe, here it is apparent, neither the authority nor ability, nor the power nor care of theſe their extraordinary Miniſters, nor other rareſt helps could keepe them in a right <hi>Decorum,</hi> in their knowledge of Chriſt, and the Scriptures, <hi>For they were in need to bee taught againe, which be the firſt Principles of the oracles of God,</hi> being babes, whoſe ſenſes were unexperienced in diſcerning good and e<g ref="char:EOLhyphen"/>vill, and unskilfull in the words of righteouſneſſe, which made them dull of hearing, that is, underſtan<g ref="char:EOLhyphen"/>ding, many things concerning Chriſt, and capable on<g ref="char:EOLhyphen"/>ly of milke, that is, the firſt principles and rudiments of the Doctrine of Chriſt, <hi>viz.</hi> concerning <hi>Repentance,
+<pb facs="tcp:103763:12"/>Faith, Baptiſme, laying on of hands, Reſurrection of the dead, Judgement,</hi> Chap. 6.1, 2. The appre<g ref="char:EOLhyphen"/>henſion whereof in theſe honourable beleevers, may teach all Chriſtians by their neglect to take warning, and to be wary and circumſpect, leſt they fall into the like relapſe; for if it was thus with the <hi>Hebrewes</hi> who were the naturall Olive: how much more may it be ſo with us <hi>Gentiles, who be the wilde olive graffed in, cut out of the Olive-tree, which is wilde by nature: and graffed contrary to nature into a good Olive-tree,</hi> Rom. 11.24. The Jewes they were naturall branches, which for unbeleefe were cut off, that wee might be graffed in, verſe 19. therefore we ought not to be high minded, preſuming neither of our title unto happineſſe, for theirs was far nearer, they being under both Cove<g ref="char:EOLhyphen"/>nants, we but only under the Covenant of grace: nei<g ref="char:EOLhyphen"/>ther of our knowledge, theirs was farre greater, and more experimentall then ours can be: neither of our graces, for they were holy Brethren, partakers of the heavenly calling, <hi>chap.</hi> 3.1. neither of workes, for they had done a worke, a labour of love, which they ſhewed towards the name of Chriſt, by perſeverance in miniſtring to the Saints, <hi>chap.</hi> 6.10. Therefore if God would not ſpare, nor paſſe by their neglect of the right uſe of the meanes of ſaving knowledge, how ſhall hee ſpare it in us? for if he would not ſpare unbe<g ref="char:EOLhyphen"/>leeving Jewes, neither will he ſpare unbeleeving Gen<g ref="char:EOLhyphen"/>tiles, <hi>Rom.</hi> 11.21. And if negligence, ignorance, and weakeneſſe in knowledge of Chriſt and his word, was not winkt at, nor ſmothered in theſe believing <hi>Hebrews,</hi> neither will it be paſt by in beleeving <hi>Gentiles:</hi> which ought to teach us all circumſpection, humility, and feare in our walking here, <hi>Epheſ.</hi> 5.15, 16. <hi>Rom.</hi> 11.20. ever taking a continuall care rightly to examine our eſtates (in reſpect to God and man, repentance,
+<pb facs="tcp:103763:13"/>faith and obedience) by the preſcript rule of Gods word, which is ever the minde of the holy Ghoſt, ever having likewiſe a ſure and ſpeciall care, leſt we follow weake and blinde, ſecure and careleſſe guides; men who undertake to be Miniſters, and preachers of Gods Word, without either calling or abilities, for the exe<g ref="char:EOLhyphen"/>cution thereof: <hi>who deſiring to be teachers of the law, underſtand not what they ſay, nor whereof they af<g ref="char:EOLhyphen"/>firme,</hi> 1 Tim. 1.7. <hi>Whoſe words will eate as doth a canker,</hi> 2 Tim. 2.17. <hi>Of which ſort are they which creep into houſes, and lead captive ſilly women, ever learning, and never able to come to the knowledge of the trueth,</hi>
+               <note n="*" place="margin">
+                  <gap reason="illegible" resp="#KEYERS" extent="1 word">
+                     <desc>〈◊〉</desc>
+                  </gap> wiſh that all Chriſti<g ref="char:EOLhyphen"/>ans (eſpeci<g ref="char:EOLhyphen"/>ally in theſe diſtracted times) w<gap reason="illegible" resp="#KEYERS" extent="1 letter">
+                     <desc>•</desc>
+                  </gap>uld often very ſe<g ref="char:EOLhyphen"/>riouſly reade over the whole Chap<g ref="char:EOLhyphen"/>ter.</note> 2 Tim. 3.6, 7, 8, 9.</p>
+         </div>
+         <div type="postscript">
+            <head>Poſtſcript.</head>
+            <p>
+               <hi>REader, for the preſent I am inforced not to exceed this ſheet &amp; half, wherein I have propoſed a ſecond uſe of the Saints Imperfection, therein ſhewing the greatneſſe of the Miniſters great charge, weighty cal<g ref="char:EOLhyphen"/>ling, &amp; excellency of abilities requiſite for the functi<g ref="char:EOLhyphen"/>on; with an anſwer unto all thoſe arguments which I have met with, wherewith Intruders into the miniſte<g ref="char:EOLhyphen"/>ry, ſeeme to maintaine their intruſion; therefore I purpoſe (God willing) hereafter to ſalute thee with that, if thou accept kindly of this.</hi>
+            </p>
+            <trailer>FINIS.</trailer>
+            <pb facs="tcp:103763:13"/>
+         </div>
+      </body>
+   </text>
+</TEI>

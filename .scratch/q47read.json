@@ -1,0 +1,330 @@
+{
+ "res": {
+  "Q-02": {
+   "tcp": "A00075",
+   "bytes": 55752,
+   "quotes": [
+    "vult omnes homines salvos fieri",
+    "Qui vult omnes homines salvos fieri, et in agnitionem veritatis venire",
+    "…NECNON EJUSDEM PROSPERI LIBER SENTENTIARUM EX AUGUSTINO"
+   ],
+   "hits": [],
+   "строк": 24
+  },
+  "Q-100": {
+   "tcp": "A00527",
+   "bytes": 432292,
+   "quotes": [],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-12": {
+   "tcp": "A00402",
+   "bytes": 53971,
+   "quotes": [
+    "Vide tractatoriam Prudentii epistolam inter ejus Opera (Patrol. tom. CXVIII)"
+   ],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-120": {
+   "tcp": "A02043",
+   "bytes": 736631,
+   "quotes": [],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-136": {
+   "tcp": "A30141",
+   "bytes": 599546,
+   "quotes": [],
+   "hits": [],
+   "строк": 341
+  },
+  "Q-152": {
+   "tcp": "A04468",
+   "bytes": 4721044,
+   "quotes": [],
+   "hits": [],
+   "строк": 765
+  },
+  "Q-164": {
+   "tcp": "A97309",
+   "bytes": 579254,
+   "quotes": [
+    "Of the Love of God",
+    "he loves not all things with an equal love… the godly then the ungodly",
+    "God loves all things which he has made besides himself",
+    "gave his only begotten Son, that all which believe in him should not perish",
+    "pages 370-371, the fifth question",
+    "Wing Z7; Thomason E1897_1; ESTC R209936"
+   ],
+   "hits": [],
+   "строк": 408
+  },
+  "Q-167": {
+   "tcp": "A02641",
+   "bytes": 160995,
+   "quotes": [
+    "The Atonement. 2. Principal Theories of the Sacrifice of Christ",
+    "This opinion cannot be ascribed to Calvin, who expresses himself in a very general manner",
+    "The Atonement. London: T. Nelson and Sons, 1868",
+    "The Atonement, London: T. Nelson and Sons, 1868"
+   ],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-170": {
+   "tcp": "K102523.001",
+   "bytes": 939931,
+   "quotes": [],
+   "hits": [],
+   "строк": 331
+  },
+  "Q-176": {
+   "tcp": "A10502",
+   "bytes": 128098,
+   "quotes": [],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-18": {
+   "tcp": "A07662",
+   "bytes": 1970913,
+   "quotes": [],
+   "hits": [],
+   "строк": 381
+  },
+  "Q-198": {
+   "tcp": "A00665",
+   "bytes": 10296313,
+   "quotes": [],
+   "hits": [],
+   "строк": 1616
+  },
+  "Q-21": {
+   "tcp": "A01943",
+   "bytes": 215817,
+   "quotes": [],
+   "hits": [],
+   "строк": 51
+  },
+  "Q-22": {
+   "tcp": "A16626",
+   "bytes": 6256685,
+   "quotes": [
+    "nunc primum editi"
+   ],
+   "hits": [],
+   "строк": 879
+  },
+  "Q-24": {
+   "tcp": "A00327",
+   "bytes": 199489,
+   "quotes": [],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-26": {
+   "tcp": "A01638",
+   "bytes": 562843,
+   "quotes": [],
+   "hits": [],
+   "строк": 496
+  },
+  "Q-29": {
+   "tcp": "A03932",
+   "bytes": 204043,
+   "quotes": [],
+   "hits": [],
+   "строк": 61
+  },
+  "Q-37": {
+   "tcp": "A00381",
+   "bytes": 270181,
+   "quotes": [],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-38": {
+   "tcp": "A00916",
+   "bytes": 1451745,
+   "quotes": [],
+   "hits": [],
+   "строк": 476
+  },
+  "Q-39": {
+   "tcp": "A48945",
+   "bytes": 31839,
+   "quotes": [],
+   "hits": [],
+   "строк": 8
+  },
+  "Q-41": {
+   "tcp": "A01320",
+   "bytes": 865162,
+   "quotes": [],
+   "hits": [],
+   "строк": 158
+  },
+  "Q-45": {
+   "tcp": "A07259",
+   "bytes": 63321,
+   "quotes": [],
+   "hits": [],
+   "строк": 15
+  },
+  "Q-47": {
+   "tcp": "A00762",
+   "bytes": 135511,
+   "quotes": [],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-58": {
+   "tcp": "A02836",
+   "bytes": 407822,
+   "quotes": [
+    "English Hypothetical Universalism"
+   ],
+   "hits": [],
+   "строк": 116
+  },
+  "Q-59": {
+   "tcp": "A29715",
+   "bytes": 63329,
+   "quotes": [],
+   "hits": [],
+   "строк": 18
+  },
+  "Q-64": {
+   "tcp": "A85742",
+   "bytes": 26760,
+   "quotes": [
+    "Wing G21; Thomason E362_26",
+    "interest of the kingdome"
+   ],
+   "hits": [],
+   "строк": 6
+  },
+  "Q-65": {
+   "tcp": "A01005",
+   "bytes": 476692,
+   "quotes": [
+    "all men to be saved"
+   ],
+   "hits": [
+    {
+     "quote": "all men to be saved",
+     "page": 124,
+     "ctx": "e infallibility, must be ſetled in ſome knowne Society of Christians, by adhering to which guide men may be guided to belieue aright in all Fundamentals. 1. Tim. 2.4. No was the Apostle ſayth, God will haue all men to be ſaued, and to come to the knowledge of truth, and conſequently he will haue the meanes, which propoſeth all the truth of Saluation infallibly guiding men to heaue ̄ , to be ſiſible, & ſo diffuſed in the world as all me",
+     "tcp": "A01005",
+     "row": "FP-65"
+    }
+   ],
+   "строк": 193
+  },
+  "Q-66": {
+   "tcp": "A58206",
+   "bytes": 763995,
+   "quotes": [],
+   "hits": [],
+   "строк": 204
+  },
+  "Q-67": {
+   "tcp": "A02991",
+   "bytes": 17892,
+   "quotes": [
+    "the General Redemption controversy",
+    "for absolute certain Election, for Christ's not dying alike for all",
+    "the General Redemption controversy",
+    "by Daniel Williams",
+    "Chauncy, Isaac — Neonomianism unmasked"
+   ],
+   "hits": [],
+   "строк": 5
+  },
+  "Q-69": {
+   "tcp": "A26262",
+   "bytes": 636376,
+   "quotes": [],
+   "hits": [],
+   "строк": 400
+  },
+  "Q-70": {
+   "tcp": "A00454",
+   "bytes": 81703,
+   "quotes": [],
+   "hits": [],
+   "строк": 0
+  },
+  "Q-74": {
+   "tcp": "K008295.001",
+   "bytes": 422671,
+   "quotes": [
+    "efficacy of faith? / universal redemption?",
+    "the sincerity of God… offer to all"
+   ],
+   "hits": [],
+   "строк": 299
+  },
+  "Q-75": {
+   "tcp": "A10838",
+   "bytes": 103843,
+   "quotes": [],
+   "hits": [],
+   "строк": 22
+  },
+  "Q-78": {
+   "tcp": "N03638",
+   "bytes": 21981,
+   "quotes": [
+    "Letter to Mr. W.? "
+   ],
+   "hits": [],
+   "строк": 9
+  },
+  "Q-79": {
+   "tcp": "A03797",
+   "bytes": 92780,
+   "quotes": [],
+   "hits": [],
+   "строк": 39
+  },
+  "Q-81": {
+   "tcp": "A58146",
+   "bytes": 103047,
+   "quotes": [
+    "An Apology for…?"
+   ],
+   "hits": [],
+   "строк": 60
+  }
+ },
+ "nocite": [
+  "Q-100 : нет цитаты латиницей/английском из 15 букв",
+  "Q-120 : нет цитаты латиницей/английском из 15 букв",
+  "Q-136 : нет цитаты латиницей/английском из 15 букв",
+  "Q-152 : нет цитаты латиницей/английском из 15 букв",
+  "Q-170 : нет цитаты латиницей/английском из 15 букв",
+  "Q-176 : нет цитаты латиницей/английском из 15 букв",
+  "Q-18 : нет цитаты латиницей/английском из 15 букв",
+  "Q-198 : нет цитаты латиницей/английском из 15 букв",
+  "Q-21 : нет цитаты латиницей/английском из 15 букв",
+  "Q-24 : нет цитаты латиницей/английском из 15 букв",
+  "Q-26 : нет цитаты латиницей/английском из 15 букв",
+  "Q-29 : нет цитаты латиницей/английском из 15 букв",
+  "Q-37 : нет цитаты латиницей/английском из 15 букв",
+  "Q-38 : нет цитаты латиницей/английском из 15 букв",
+  "Q-39 : нет цитаты латиницей/английском из 15 букв",
+  "Q-41 : нет цитаты латиницей/английском из 15 букв",
+  "Q-45 : нет цитаты латиницей/английском из 15 букв",
+  "Q-47 : нет цитаты латиницей/английском из 15 букв",
+  "Q-59 : нет цитаты латиницей/английском из 15 букв",
+  "Q-66 : нет цитаты латиницей/английском из 15 букв",
+  "Q-69 : нет цитаты латиницей/английском из 15 букв",
+  "Q-70 : нет цитаты латиницей/английском из 15 букв",
+  "Q-75 : нет цитаты латиницей/английском из 15 букв",
+  "Q-79 : нет цитаты латиницей/английском из 15 букв"
+ ]
+}
