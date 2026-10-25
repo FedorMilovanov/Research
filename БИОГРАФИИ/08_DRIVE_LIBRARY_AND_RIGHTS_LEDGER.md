@@ -47,7 +47,8 @@
 | БИОГРАФИИ — 00 README AND NAVIGATION **(rev 2, 2026-10-25, коммит `1439b96`)** | `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` |
 | БИОГРАФИИ — 01 GILL RELOCATION AND SUPERSESSION RECORD | `16n8Min16U2l9eYNowlB1QqbAQ5SZEKYt` |
 | ~~БИОГРАФИИ — 08 DRIVE LIBRARY AND RIGHTS LEDGER~~ | ~~`1I0VPEYUnv1JXrxZvRQKk2XIO3zkQDPlx`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
-| БИОГРАФИИ — 08 Drive Library and Rights Ledger **(rev 2, 2026-10-25, коммит `7528ec5`)** | `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` |
+| ~~БИОГРАФИИ — 08 Drive Library and Rights Ledger (rev 2, 2026-10-25, коммит `7528ec5`)~~ | ~~`14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL`~~ → **`SUPERSEDED`**, см. rev 3 |
+| БИОГРАФИИ — 08 Drive Library and Rights Ledger **(rev 3, 2026-10-25, коммит `0cfe0dc`)** | `1KAcFgZ4URp0Jy6YlTHjiSHImFSOCTq9y` |
 
 В `02 — СТИВЕН ЧАРНОК (1628–1680)`:
 
