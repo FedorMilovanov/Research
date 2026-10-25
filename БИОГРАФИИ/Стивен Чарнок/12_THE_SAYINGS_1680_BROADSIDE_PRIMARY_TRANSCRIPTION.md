@@ -189,6 +189,46 @@ man») — выборка не механическая копия, а **пра�
 печатной пагинацией**, что даёт двойной локатор (1680 broadside + 1683 *supplement*) без посредства
 XIX века.
 
+### 3.0A. Колляция с изданием 1683 — начата (добавлено 2026-10-25)
+
+Дискурс «A DISCOURSE OF THE Sinfulness and Cure OF THOUGHTS» (Быт. 6:5) — **узел
+`A32724.0001.001/1:2`**, начинается с **печатной стр. 1**. Прочитаны чанки 0, 4, 10, 17
+(≈ стр. 1–13 тела дискурса и сноски 1.1–1.52). **Частичная колляция** (полная — очередь, см.
+§5):
+
+| Афоризм broadside (1680) | *Supplement* 1683, стр. | Характер совпадения |
+|---|---|---|
+| «ONE would scarce imagin such an inward nest of wickedness as is in a natural man; but God hath affirmed it: and if the sinner should deny it…» | стр. 1 | **правленый**: 1683 даёт «…such an inward nest of wickedness; but God hath affirmed it; and if **any man** should deny it» |
+| «Gods law is suitable to his Soveraignty, as mens Laws are to theirs; must they not then be as extensive as Gods dominion, and reach even to the privatest closets of the heart?» | стр. 6 | **вопрос превращён в утверждение**: 1683 — «**Must not** God's Laws be as suitable to his Soveraignty, as mens Laws are to theirs? **Must they not then** be as extensive as God's Dominion…» |
+| «'Tis not for the honour of Gods holiness, righteousness, goodness, to let the Spirit which bears more flourishing characters of his Image than the body, range wildly about without a legal curb.» | стр. 6 | **дословно** (единственное отличие — 'Tis / 'Tis) |
+| «Man was created both with a disposition and ability for holy contemplation of God; the first glances of his soul were pure, he came every way compleat out of the mint of his infinitely wise and good Creator» | стр. 6 | **дословно**, кроме «contemplation» ← «contemplations» |
+| «Sin is the key that opens the flood-gates of Divine vengeance, and broaches both the upper and neather Cisterns to overflow the world» | стр. 6–7 | **сильно правленый**: 1683 — «**The Text tells us**, that they were once **the keys**, which **opened** the floud-gates of divine vengeance and **broach'd** both the upper & neather Cisterns, to overflow the world». Изменено время (keys/opened → key/opens), снята оговорка «The Text tells us» |
+| «He that is winged with a divine Love to Christ, will have frequent glances and flights towards him» | стр. 12 | **дословное начало**, обрезано: 1683 продолжает «…and will start out from his worldly business, several times in a day, to give him a visit» |
+
+**Вывод, уже теперь устойчивый.** Broadside — **не механическая копия** sermon'а и не
+стенограмма. Издатель 1680 года **редактировал** текст: (а) вставлял уточнения («as is in a
+natural man» вместо «any man»); (б) **превращал риторические вопросы Чарнока в утверждения** —
+то есть снимал кафедральную интонацию; (в) **менял время глаголов** (keys/opened → key/opens),
+превращая повествование о Всемирном потопе в общую максиму; (г) **обрывал** фразы. Это
+редакторская работа в духе афористики, а не констаирование.
+
+**Для биографии:** человек, который при жизни скрыл имя за инициалами «S. C.», через несколько
+дней после смерти был **переписан** — его кафедральные вопросы превращены в афоризмы, его
+повествование — в максимы. Листовка 1680 года — это первый акт посмертной **редактуры** Чарнока,
+и он же образец той редактуры, которую потом применят Adams и Veal.
+
+**Аппарат дискурса о мыслях** (сноски 1.1–1.52, прочитаны): **Kimchi** (на 66 Псалом, через
+Grotius на Мф. 5:20), **Ovid** (*Amor.* l. 3. Eleg. 3. v. 5, «Ut jam servaris bene corpus,
+adultera mens est»), **Hieron.** (Jerome, *in Oseam* 7 — «Non solum opus, sed mali operis
+cogitatio poenas luet»), **Dr. Hammond** (на Мф. 15:9), **Plutarch** (*Moral.* p. 500).
+**Preston и Мор здесь не названы.** Для сравнения: в дискурсе о вездесущности фолианта 1682
+(том 04 §0A) — Drexel, Musculus, Gassend., Amyrald, Rivet, Pont., Maccor., Shelford, Bernard,
+Petar., Chrysostome, Cyril, Dyonisius + **Dr. More**.
+
+**ERRATA «In the SUPPLEMENT»** (узел `1:14.1`, дословно): «Page. 53. l. 46. for 1620. r. 1260.
+p. 66. l. 35. before [be] add hearts. p. 80. r. fell.» — три исправления; ни одно не затрагивает
+дискурс о мыслях (стр. 1–26).
+
 ### 3.1. Почему это важно для биографии
 
 Broadside вышел в 1680 году — то есть в дни или недели после смерти. Издатель выбрал для
@@ -252,6 +292,11 @@ broadside — но с обязательной оговоркой о broadside.
 - Нельзя утверждать, что broadside ошибается в дне недели: 28 июля 1680 было средой (юлианский).
 - Нельзя citing *The sayings…* по McCosh/Symington/DNB: полный текст получен из EEBO-TCP.
 - Нельзя приписывать broadside imprint или цену — в TCP их нет.
+- Нельзя цитировать афоризм broadside как **дословный** текст Чарнока без сверки с изданием 1683:
+  на прочитанной части (стр. 1–13) часть афоризмов **правлена** (вопросы → утверждения, смена
+  времени глаголов, вставки). Сверено 2026-10-25, см. §3.0A.
+- Нельзя утверждать, что колляция broadside ↔ 1683 завершена: прочитаны чанки 0, 4, 10, 17 узла
+  `1:2`; остальные чанки (1–3, 5–9, 11–16, 18–20) не читаны. `LOCATOR_HOLD`.
 
 ---
 
