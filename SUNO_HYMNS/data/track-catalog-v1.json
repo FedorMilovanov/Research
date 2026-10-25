@@ -503,7 +503,8 @@
         "CLM-DUTCH-005-RUTGERS-1806-43",
         "CLM-DUTCH-005-STRUCTURE-SPINE",
         "CLM-HB-1938-75-TEXT",
-        "CLM-DUTCH-005-TUNE-EXCLUDED"
+        "CLM-DUTCH-005-TUNE-EXCLUDED",
+        "CLM-DUTCH-005-EDITIONS"
       ],
       "qaStatus": "OPEN",
       "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.', on pp. 155-158 in BOTH the 1676 first edition and the 1727 ninth edition. The two printings agree except for spelling and four variants recorded in the collation. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X); it is not a refrain. The 1938 reworking is a separate, protected object and is not used. Package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md; lyric: SUNO/DUTCH-005_LYRICS.md; style: SUNO/DUTCH-005_STYLE.md.",

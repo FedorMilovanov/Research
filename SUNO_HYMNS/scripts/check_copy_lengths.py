@@ -16,6 +16,8 @@ value:
   "- [x] <N> знаков;" of DUTCH-005_YOUTUBE.md;
 - pinned comments: "Закреп 1 … <N> знаков" and "Закреп 2 … <N> знаков" in § 3 of
   the same file, against the two fenced blocks of DUTCH-005_PINNED.md;
+- every document that describes the present state of the copy must quote the current
+  description length; the review log is exempt because it records the past;
 - Telegram: "Длина: **<N>** видимых знаков" in DUTCH-005_TELEGRAM.md, against the
   post text with markup characters stripped.
 
@@ -68,6 +70,38 @@ def claimed(patterns: list[str], text: str, label: str, problems: list[str]) -> 
     return found
 
 
+DESCRIPTION_QUOTERS = [
+    "SUNO_HYMNS/README.md",
+    "SUNO_HYMNS/HANDOFF_FOR_NEXT_AGENT.md",
+    "SUNO_HYMNS/SUNO/DUTCH-005_YOUTUBE.md",
+    "SUNO_HYMNS/SUNO/STATUS_LEDGER.md",
+    "SUNO_HYMNS/SUNO/NEXT_STEPS.md",
+]
+
+
+def check_quoted_description_lengths(actual: int, problems: list[str]) -> None:
+    """Every document that quotes the description length must quote the current one.
+
+    The documents listed above describe the *present* state; the review log does not,
+    because it records what the numbers used to be. A number in those files next to
+    the word 'description' therefore has to equal what the block measures now.
+    """
+    pattern = re.compile(r"(\d{3,5})[- ]?(?:character|знач\w*)", re.IGNORECASE)
+    for name in DESCRIPTION_QUOTERS:
+        path = ROOT / name
+        if not path.exists():
+            problems.append(f"{name}: listed as a description-length quoter but missing")
+            continue
+        for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if "description" not in line.lower() and "описан" not in line.lower():
+                continue
+            for number in pattern.findall(line):
+                if int(number) != actual and int(number) > 1000:
+                    problems.append(
+                        f"{name}:{line_no}: quotes {number} characters for the description, it is {actual}"
+                    )
+
+
 def main() -> int:
     problems: list[str] = []
 
@@ -79,6 +113,7 @@ def main() -> int:
     tg_len = len(telegram_visible())
 
     print(f"description: {desc} characters")
+    check_quoted_description_lengths(desc, problems)
     for value in claimed(
         [r"(\d+)\s*знак\w*, до лимита 5000", r"- \[x\] (\d+) знак"],
         yt,

@@ -133,7 +133,7 @@ DUTCH-005 now has a complete publication package for two surfaces, and **nothing
 
 **New since the sixth pass:**
 
-1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, a 4483-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
+1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, an 4883-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
 2. `SUNO/DUTCH-005_TELEGRAM.md` — the @lordchrist post in Telegram markup, plus an HTML twin.
 3. `SUNO/DUTCH-005_PINNED.md` — **two** pinned comments: one on the hymn (date under the last stanza, the meaning of the title, `leven`/`lieven`/`loven`, the edition chain, the missing melody), one on how the Dutch actually sang (psalms only, the 1574 organ ban, the `voorzanger`, the house circles, and Lodenstein's own six singing rules from the preface).
 4. `RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` — 88 addresses behind the second pinned comment, with honest statuses: 5 opened and read, 74 found in results, 9 still only library leads. Nothing in either закреп rests on a snippet alone.

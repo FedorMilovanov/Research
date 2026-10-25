@@ -717,3 +717,15 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Limits / next action:** Locator: item 27, [p. 120], apparatus note to the tune line; the 1994 study of the collection's melodies reaches the same identification independently. This names the melody the poem does **not** use — it says nothing about the poem's own tune, which stays untraced. Copy may now say what the excluded *Un jour* is instead of only "not that one".
 
 **HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-005-EDITIONS — DUTCH-005: how often the collection was printed before 1800
+
+**Claim:** Buijnsters's bibliography lists **nineteen printing records** of *Uyt-spanningen* before 1800, the last being the **sixteenth edition, 1780**. The second edition (Clerck, 1679) appeared **without music examples**, because the publisher had asked the musician **J.C. Valbeek** to write new melodies for most of the songs.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-BUIJNSTERS-1971
+
+**Limits / next action:** Locator: bibliography in Buijnsters (ed.), *Bloemlezing uit de bundel Uyt-spanningen* (1971), pp. 24–25 (DBNL). The nineteen are printing records, not nineteen numbered editions: the numbered series reaches the sixteenth, because the 4th and 5th editions each survive in two printings and one 10th edition is undated. Copy must therefore say "nineteen printings, the sixteenth in 1780", never "nineteenth edition".
+
+**Next check:** if a run of this hymn ever needs edition-level precision, distinguish the two 1683 and the two 1693–95 printings.

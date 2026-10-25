@@ -639,3 +639,13 @@ Re-read every file touched in the last five commits, recomputed every number it 
 **An honest access failure.** The Dutch Song Database is offline: HTTP 403 with a KNAW information-security notice. Its records were readable only as the database's own rendering inside search results, so the 1681 and 1718 reprints are marked `REPORTED_NOT_INDEPENDENTLY_VERIFIED` and carry `EVIDENCE_HOLD`. Nothing in the copy rests on them alone — the 1718 tune shift and the 1806 hymn are separate, and the 1806 page was read in full.
 
 **A self-inflicted defect caught in the same pass.** The new file index in `RESEARCH/README.md` first listed a transcription file that does not exist. Removed before commit; the audit script that checks relative links and orphaned files now runs over the whole lane.
+
+# Thirtieth pass — 2026-10-26 (editions, Valbeek, and a gate that stops the numbers drifting)
+
+**Editions counted, not assumed.** The pinned comment said "nineteen before the end of the eighteenth century" and cited an introduction. The bibliography of Lodenstein in Buijnsters's 1971 selection, pp. 24–25, lists the printings: nineteen records before 1800, with the numbered series reaching the **sixteenth edition of 1780** — the count is higher only because two editions each survive in two printings and one tenth edition is undated. Copy now says "nineteen printings, the sixteenth in 1780", and the difference between "по счёту" and "по номеру" is written into the claim.
+
+**The detail worth publishing.** The 1679 impression came out **without music examples**, because the publisher had asked the musician **J.C. Valbeek** to set new melodies with bass lines for most of the songs and issued a cheaper edition while that work was in hand. Two consequences: a singer of 1679 had no notes either, and the tunes were being replaced within four years of the first edition — which makes the 1718 switch to psalm 42 a continuation, not an oddity.
+
+**A stale number found in two more files.** `SUNO_HYMNS/README.md` and `HANDOFF_FOR_NEXT_AGENT.md` still quoted 4483 characters for the description. Fixed, and the gate now checks every document that describes the *present* state against the measured block, with the review log exempt because it records the past. Tested by falsifying the number in `README.md`: the gate fails, and fails with the file and line.
+
+**Method note.** Two passes in a row found stale numbers in prose that no gate covered. The pattern is general: **a number that is quoted anywhere must be owned by a gate, or it will drift** — including numbers in the files an agent reads first.

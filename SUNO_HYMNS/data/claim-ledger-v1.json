@@ -878,6 +878,21 @@
       "holds": [
         "RIGHTS_HOLD"
       ]
+    },
+    {
+      "id": "CLM-DUTCH-005-EDITIONS",
+      "topic": "DUTCH-005: how many times the collection was printed before 1800",
+      "claim": "Buijnsters's bibliography of Lodenstein lists nineteen printing records of Uyt-spanningen before 1800, the last being the sixteenth edition of 1780; the second edition (Clerck, 1679) appeared without music examples because the publisher had asked the musician J.C. Valbeek to write new melodies for most of the songs.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-BUIJNSTERS-1971"
+      ],
+      "notes": [
+        "Locator: bibliography in Buijnsters (ed.), Bloemlezing uit de bundel Uyt-spanningen (1971), pp. 24-25, DBNL.",
+        "Counting caveat: nineteen is the number of printing records; the numbered editions reach the sixteenth (1780), because the 4th and 5th editions each survive in two printings and one 10th edition is undated. Copy therefore says 'nineteen printings, the sixteenth in 1780'.",
+        "The Valbeek commission is the publisher's own statement as summarised by Buijnsters; it explains why the 1679 impression has no notation."
+      ],
+      "holds": []
     }
   ]
 }

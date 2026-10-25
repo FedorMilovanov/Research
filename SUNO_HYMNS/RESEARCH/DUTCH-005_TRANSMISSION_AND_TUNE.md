@@ -53,6 +53,15 @@ So the editors themselves separate two objects: the **1665 tune**, which they co
 - **Dutch Song Database (Meertens)** — **offline**: `liederenbank.nl` returns *403 Forbidden* with the notice that the site has been taken offline on the advice of the KNAW information-security department. The record fields used above (record 9086, and the sigla `Stapel LusthofZ1681`, `Bundeltje1718`, `EvangGez1806`, `PsalmenGezNH1938`) were read from the database's **own record rendering as it appears in search results**, not from a page I could open. That is why every row above that cites the database is marked as a rendering and not as an inspected catalogue page. If the database returns, re-check record 9086 and record it as inspected.
 - **1938 hymnal** — the printed bundel is a protected object and has not been collated. The three stanzas of Gezang 75 are available in a public reproduction in modernised spelling, which is a secondary witness; the melody credit (Bourgeois) comes from the database rendering. **No claim is made about the printed 1938 page itself** beyond the database's own page reference.
 
+## 4a. The editions, and why 1679 matters for the melody
+
+Buijnsters's bibliography (1971), pp. 24–25, lists **nineteen printing records before 1800** — 1676, 1679, 1681, 1683 (twice), 1693–95, 1694, 1703, 1713, 1721, 1727, 1733, a tenth undated, 1739, 1743, 1752, 1760, 1769, 1780. The numbered series reaches the **sixteenth edition (1780)**; the count of nineteen is higher only because two editions each survive in two printings and one tenth edition carries no date.
+
+**The 1679 impression has no notation, and the reason is recorded.** The publisher had asked "den vernuftigen Musicijn J.C. Valbeek" to set **new melodies with bass lines** for most of the songs; while that work was in hand he issued a cheaper edition without music examples. Two consequences for this project:
+
+1. **A singer of 1679 had no notes to consult either.** The "unnamed tune" problem is not ours alone — it is in the book's own history.
+2. **The tunes were being replaced within four years of the first edition.** That makes the shift to psalm 42 by 1718 less surprising, and it makes any claim that a 1676 tune "survived" need evidence, not assumption.
+
 ## 5. Leads this pass produced and did not chase
 
 The 2005 commentary lists the literature on this text. It is a map of where the next passes should go, and it is recorded rather than paraphrased:
