@@ -432,6 +432,77 @@ with David, **Psa. 9.6. Oh thou enemy, destructions are come to a perpetual end.
 «The Comfort of Child-bearing Women», «The Sins of the Regenerate», «The Pardon of Sin» — ждут
 чтения. `LOCATOR_HOLD` по их содержанию.
 
+### 0F. «A DISCOURSE FOR The Comfort of Child-bearing Women» — холостяк проповедует о родах (добавлено 2026-10-25)
+
+**Объект.** Узел `A32724.0001.001/1:7` (*Supplement* 1683), 9 чанков, **стр. 76–~86**.
+
+> ### A DISCOURSE FOR The Comfort of Child-bearing Women.
+>
+> **1 Tim. 2.15.** Notwithstanding she shall be saved in Child-bearing, if they continue in faith,
+> and charity, and holiness with sobriety.
+
+**Биографический контраст, который нельзя обойти молчанием.** Завещание Чарнока не упоминает ни
+жены, ни детей (том 01 §2.10); все сетевые справки называют его холостяком. И именно этот
+человек написал самый подробный в своём корпусе текст о **боли деторождения** — с медицинской
+обстоятельностью, которая у пуританского богослова встречается редко:
+
+> «The word 〈 in non-Latin alphabet 〉〈 in non-Latin alphabet 〉 signifies the whole time of the Womans bearing in the Womb,
+> and so includes not only those pains in the very time of Labour, but also all those precursory
+> indispositions, as the **weakness of the stomach, heaviness of the head, irregular longings**, and
+> those other symptoms which accompany conceptions.»
+
+И тут же — замечание натуралиста: «since some other Creatures do bring forth with little or no
+pain [* 1.3] It would not have been so with the Woman in innocency, because all pain which is a
+punishment of sin, had not been incident to a sinless, and immortal body.»
+
+**Доктрина дискурса (дословно):**
+
+> «Doct. The continuance of the punishment inflicted upon the Woman for the first sin, doth not
+> prejudice her eternal salvation, nor her preservation in child-bearing, where there are the
+> conditions of Faith, and other graces.»
+
+**Две антипапские полемики в этом дискурсе — обе в защиту женщин.**
+
+1. **О чтении Писания женщинами.** «Some of the Papists bring this place as an Argument against
+   Womens reading the Scripture; but no reason can conclude it from this place. How can the Spirit
+   of God prohibit their reading the Scripture in private, and the instruction of their Families,
+   since Women are among those who are commended for reading the Scripture? Acts 17.11, 12. where
+   the honourable Women are mention'd. And Lois and Eunice are applauded for their instruction of
+   Timothy… **Becanus only is the man that Rivet mentions** [* 1.2]».
+2. **О браке как таинстве.** «The Papists, though without any good ground, frame an argument from
+   hence to prove marriage to be a Sacrament, asserting that those graces of Faith and Charity, &c.
+   are conferred upon the Woman by vertue of Marriage, and ex vi institutionis. **How severe a
+   Doctrine is it then to engage any in vows of a single life when they might have a readier way to
+   attain grace with the Satisfaction of nature?** Are not the virtues mentioned here, as necessary
+   to the single, as the married Christians?»
+
+То есть Чарнок — против целибата как «готового пути к благодати», и при этом сам безбрачен.
+Полемическая позиция и личное положение расходятся, и отдел фиксирует это расхождение, а не
+сглаживает его.
+
+**Филологическая работа.** Дискурс даёт Чарнока в работе с греческим: разбор предлога διὰ
+(«often taken for 〈 in non-Latin alphabet 〉… as Rom. 4.11»), hendiadys в Быт. 3:16, переход
+единственного числа во множественное («The name Woman is taken collectively for all Women»),
+и — характерное рассуждение о первородном грехе: «in all probability, Eve gave not her Husband the
+fruit to eat, without acquainting him with the reasons which mov'd her to eat it… They both
+believed the Serpent, both broke the command in eating the fruit, both were guilty of this aspiring
+Ambition.»
+
+Это **прямое подтверждение** Johnson'овой оценки, данной Calamy 1727 (стр. 81): skill Чарнока в
+оригиналах был «near unto … Thomas Gataker». Здесь он работает с греческим текстом, с
+грамматикой, с иудейским и христианским контекстом — не как цитатор, а как филолог.
+
+**Что это даёт биографии.** Готовая сцена для «мощной эпической биографии»: холостяк, чья
+библиотека содержала 65 латинских медицинских книг (том 03 §3G), проповедует о младенце и о
+матке, защищает право женщин читать Писание и выступает против целибата — и при этом сам
+целибат. Плотность мысли здесь выше плотности событий, и именно такой материал должен нести
+эпический вес.
+
+**Полнота.** Это **второй из восьми дискурсов** *Supplement* 1683, прочитанных отделом
+содержательно. Остались шесть: «The Churches Stability» (`1:3`), «Delight in Prayer» (`1:5`),
+«Mourning for other Mens Sins» (`1:6`), «The Sins of the Regenerate» (`1:8`), «The Pardon of Sin»
+(`1:9`, с подузлами `1:9.1`–`1:9.5`). `LOCATOR_HOLD`.
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах
