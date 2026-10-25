@@ -815,6 +815,124 @@ Barlow, *Pugio Fidei*, Cocceius, Camero, Josephus, Herodotus/Herodian, Pliny (в
 `LOCATOR_HOLD` остаётся только по непрочитанным подузлам `1:9.1`–`1:9.5` (внутреннее деление
 дискурса о прощении) и по полной сверке текстов со снимками страниц.
 
+### 0K. «A DISCOURSE UPON GODS Patience» — последняя проповедь, прочитана целиком (добавлено 2026-10-25)
+
+**Объект.** Узел `A32723.0001.001/1:17` (фолиант 1682), **стр. 787–827**, 24 чанка, 20 сносок.
+Текст — **Наум 1:3**. Это **последний дискурс фолианта и последняя проповедь Чарнока**, о которой
+отдел знает (том 03 §3D: «God's Infinite Patience», стр. 787). Ранее отдел владел только началом
+(стр. 787–789) и концом (стр. 827); **середина (стр. 789–823) прочитана теперь**.
+
+**Начало (стр. 787–788).** «The Subject of this prophesie is Gods sentence against Niniveh, the Head
+and Metropolis of the Assyrian Empire.» Три наблюдения Чарнока:
+
+> «I. In all the fears of Gods people, God will have a Comforter for them. II. **The destruction of
+> the Churches Enemies is the comfort of the Church.** III. The Victories of Persecutors, secure them
+> not from being the triumphs of others.»
+
+> «**God burns the Rod, when it hath done the work he appointed it for; and the wisp of straw
+> wherewith the vessels are scour'd is flung into the fire, or upon the Dunghil.**»
+
+**Филологическая помарка (стр. 788) — третье в корпусе свидетельство работы с еврейским:**
+«He reserves Wrath for his Enemies. He lays it up in his Treasury, to be brought out, and expended in
+a due season. **Wrath is supplied by our Transla∣tors, and is not in the Hebrew.** He reserves, what?
+that which is too sharp to be exprest, too great to be conceiv'd. A vengeance it is.»
+
+**Середина (стр. 812–813) — терпение как условие существования церкви:**
+
+> «He doth exercise Patience for the continuance of the Church. If he be not pa∣tient toward sinners,
+> what stock would there be for believers to spring up from? … Jeroboam the chief incendiary of the
+> Israelites to Ido∣latry, had an Abijah, in whom was found some good thing towards the Lord God of
+> Israel. … Had Ahaz been snapt in the first act of his wicked∣ness, the Israelites had wanted so
+> good a Prince, and so good a man as Hezekiah.»
+
+> «**Christ is beholding immediately to this attribute, for all the seed he hath in the world.**»
+
+> «And God, as the Master of a Vessel, lies Patiently at Anchor, till the last Passenger he expects,
+> be taken in.»
+
+**Антипапская линия — в последней проповеди тоже (стр. 813, Откр. 14:12):**
+
+> «The whole time of the forbearance of **Antichrist** in all his intrusions into the Temple of God,
+> invasions of the rights of God, usurpations of the Office of Christ, and besmearing himself with the
+> blood of the Saints, was to give them an opportunity of Patience.»
+
+То есть антипапская апокалиптика присутствует **и в первой, и в последней** проповеди фолианта
+(ср. §0C, стр. 329, и §0E, «The Fifth of November»). Отдел фиксирует: это не эпизод, а **сквозная
+линия главного труда**.
+
+**Заключительные увещания (стр. 824–827).**
+
+> «his patience for a minute transcends the patience of all creatures from the Creation to the
+> Dissolution of the World: because it is the patience of a God, infinitely more sensible of the
+> cursed quality of sin, and infinitely more detesting it.»
+
+> «that God, that would not wait upon the fallen Angels one instant after their sin, nor give them a
+> moments space of Repentance, hath prolonged the Life of many a sinner in the World to innumerable
+> moments, **to 420000 minutes in the space of a Year, to 8 Millions, and 400000 Minutes in the space
+> of 20 Years**.»
+
+**Редкость:** Чарнок считает вслух. Во всём корпусе это один из немногих случаев количественной
+арифметики в проповеди.
+
+> «**Do you know how few sands are yet to run in your glass?**» … «so many **editions of his
+> patience, be made wast Paper**» … «Jerusalem had but a day of peace, and the most carel••••••
+> sinner hath no more.»
+
+Слово «**editions**» в печатной метафоре — деталь, которую отдел фиксирует специально: Чарнок
+говорит о терпении языком **печатного тиража**, а через три месяца после его смерти его собственные
+рукописи пойдут в печать (том 03 §3G).
+
+> «Rest not then upon bare Patience, but consider the end of it; 'tis not, that any should sin more
+> freely, but repent more melt∣ingly; 'tis not to spirit rebellion, but give a merciful stop to it.»
+
+> «If every man were like Saul, breathing out threatnings, the World would not only be an Aceldama,
+> but a Desert.»
+
+> «**But to be Patient, is to be divine, and to shew our selves acquainted with the disposition of
+> God.**»
+
+**Заключение фолианта (стр. 827, дословно — уже было в корпусе, подтверждено в контексте):**
+
+> «To Conclude, **as Patience is Gods perfection, so it is the accomplishment of the Soul**. And as
+> his slowness to anger argues the greatness of his power over himself, so **an unwillingness to
+> revenge, is a sign of a power over our selves, which is more noble than to be a Monarch over
+> others**.»
+
+**Аппарат — 20 сносок, новые имена для реестра тома 16:**
+
+| Сноска | Ссылка | Автор / сочинение |
+|---|---|---|
+| 1.1 | «Ribera in loc.» | Ribera |
+| 1.3 | «Tirinus in loc.» | **Тирин** |
+| 1.4 | «Rhodigi. l. 6. c. 14.» | **Людвиг Риччери (Rhodiginus), *Lectiones antiquae*** |
+| 1.5 | «Theodoret in loc.» | **Феодорит** |
+| 1.6 | «Testard. de natur. & Grat. Thes. 119.» | **Тезар (Testard)** |
+| 1.7 | «Perer in loc.» | **Бенедикт Перера** |
+| 1.8 | «Vid. Gells〈…〉» | **Авл Геллий** |
+| 1.9 | «Sanctius. Prolegom. in Hosea Prolog. the 3d.» | **Санктиус** |
+| 1.10 | «Mercer in Gen. 1.5.» | **Иоганн Мерцер** (Mercier), гебраист |
+| 1.11 | «Cressol. Decad. 2. p. 163.» | **Луи Крессоль** |
+| 1.12 | «Pierce sinner implead. Pag. 227.» | английское сочинение; **не идентифицировано** |
+| 1.13 | «Kimchi.» | **Кимхи** |
+| 1.14 | «Lessius pag. 152.» | **Леонард Лессий** |
+| 1.15, 1.16 | «Amyrald. dissert»; «Amyraldus moral. Tom. 2.» | **Амиро** (дважды) |
+| 1.17 | «Smith on the Creed, p. 404.» | английское сочинение; **не идентифицировано** |
+| 1.18 | «Minuc Fe∣lix pag. 41.» | **Минуций Феликс, *Октавий*** |
+| 1.19 | «Pont. part. 1. 42.» | **Понтан** |
+| 1.20 | «Cod. Lib. 9. Titul. 47 6. 20.» | **Кодекс Юстиниана**, римское гражданское право |
+
+**Два наблюдения для Части II (Учёный) и Части IV (Богословие).**
+
+1. **Римское право в богословском аппарате.** Сноска 1.20 — Кодекс Юстиниана, и в теле Чарнок
+   разворачивает её как аргумент: «The Civil Law enacts, that if the Emperour commanded a man to be
+   condemned, the Execution was to be deferred 30 dayes: because in that time the Princes anger might
+   be appeased. But how great a favour is it to be reprieved 30 years for many offences?» Это
+   **юридическая аргументация в проповеди о терпении** — и она работает на сравнении
+   человеческого и божественного суда.
+2. **Прочитано теперь три дискурса фолианта из 14** (вездесущние `1:10`, знание `1:11`, терпение
+   `1:17`). Одиннадцать ждут: `1:4`, `1:5`, `1:6`, `1:7`, `1:8`, `1:9`, `1:12`, `1:13`, `1:14`,
+   `1:15`, `1:16`. `LOCATOR_HOLD`.
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах
