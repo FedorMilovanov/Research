@@ -85,7 +85,7 @@
       "id": "STAGE-GILL-CLOSED-BOOKS",
       "name": "Gill closed-book family ownership and acquisition contract",
       "state": "OWNERSHIP_AND_ACCEPTANCE_CLOSED_EXTERNAL_ACQUISITION_OPEN",
-      "semanticAuthority": "БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md",
+      "semanticAuthority": "Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md",
       "machineAuthority": "data/gill-closed-book-families-2026-08-02.json",
       "receipts": [],
       "result": {

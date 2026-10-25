@@ -84,7 +84,7 @@ jobs:
               'RUSSIAN_BAPTISTS_ARCHIVE/00_CURRENT_AUTHORITY_2026-08-02.md',
               'data/baptist-acquisition-proof-authority-2026-08-02.json',
               'data/baptist-derivative-transcription-authority-2026-08-02.json',
-              'БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md',
+              'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md',
               'data/gill-closed-book-families-2026-08-02.json',
               'БИБЛЕЙСКИЙ АТЛАС/00_CURRENT_AUTHORITY_2026-08-02.md',
               'data/atlas-pihahiroth-authority-2026-08-02.json',

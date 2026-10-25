@@ -11,13 +11,13 @@ on:
       - 'data/gill-rippon-1838-claim-cards-2026-08-04.json'
       - 'scripts/validate_gill_closed_book_families.py'
       - 'scripts/validate_gill_rippon_claim_cards.py'
-      - 'БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
-      - 'БИОГРАФИИ/Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md'
-      - 'БИОГРАФИИ/Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md'
-      - 'БИОГРАФИИ/Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
-      - 'БИОГРАФИИ/Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
-      - 'БИОГРАФИИ/Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md'
-      - 'БИОГРАФИИ/Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md'
+      - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+      - 'Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md'
+      - 'Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md'
+      - 'Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
+      - 'Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
+      - 'Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md'
+      - 'Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md'
   push:
     branches: [main]
     paths:
@@ -27,13 +27,13 @@ on:
       - 'data/gill-rippon-1838-claim-cards-2026-08-04.json'
       - 'scripts/validate_gill_closed_book_families.py'
       - 'scripts/validate_gill_rippon_claim_cards.py'
-      - 'БИОГРАФИИ/Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
-      - 'БИОГРАФИИ/Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md'
-      - 'БИОГРАФИИ/Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md'
-      - 'БИОГРАФИИ/Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
-      - 'БИОГРАФИИ/Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
-      - 'БИОГРАФИИ/Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md'
-      - 'БИОГРАФИИ/Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md'
+      - 'Джон Гилл/75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md'
+      - 'Джон Гилл/76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md'
+      - 'Джон Гилл/77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md'
+      - 'Джон Гилл/54_PARK_STROTHER_ASCOL_WALDEN_ACCESS_AND_CLAIM_AUDIT.md'
+      - 'Джон Гилл/47_CORPUS_ACCESS_MATRIX_120_PLUS.md'
+      - 'Джон Гилл/70_FINAL_50_PLUS_SOURCE_REVERIFICATION_AND_PUBLICATION_LEDGER.md'
+      - 'Джон Гилл/74_PR2_001_480_RECONCILIATION_MATRIX.md'
 
 permissions:
   contents: read

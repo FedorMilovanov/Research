@@ -39,7 +39,7 @@
 
 Мюррей (брошюра §V, Highway): universal terms часто не inclusive-distributive; «всеобщность речи» ≠ «каждый индивид». Это **метод**, не доказательство каждого стиха. Гилл в *Cause* LVII собирает *world*-места Иоанна в одну лексическую секцию — другой сильный метод, уже в корпусе Гилла.
 
-Не дублировать вербатим Гилла: [`БИОГРАФИИ/Джон Гилл/23_SECTION_LVII_WORLD_VERBATIM_AND_ETERNAL_JUSTIFICATION_VERIFIED.md`](../%D0%91%D0%98%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98/Джон%20%D0%93%D0%B8%D0%BB%D0%BB/23_SECTION_LVII_WORLD_VERBATIM_AND_ETERNAL_JUSTIFICATION_VERIFIED.md), [`БИОГРАФИИ/Джон Гилл/27_REPROBATION_UNIVERSAL_TEXTS…`](../%D0%91%D0%98%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98/Джон%20%D0%93%D0%B8%D0%BB%D0%BB/).
+Не дублировать вербатим Гилла: [`Джон Гилл/23_SECTION_LVII_WORLD_VERBATIM_AND_ETERNAL_JUSTIFICATION_VERIFIED.md`](../Джон%20Гилл/23_SECTION_LVII_WORLD_VERBATIM_AND_ETERNAL_JUSTIFICATION_VERIFIED.md), [`Джон Гилл/27_REPROBATION_UNIVERSAL_TEXTS…`](../Джон%20Гилл/).  
 2 Пет. 2 не решать системой искупления до экзегезы письма: [`apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md`](../apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md).
 
 ---
@@ -124,7 +124,7 @@
 - Комментария Мюррея на Пастырские нет.
 - **Кальвин Inst. III.24.16** (Beveridge, CCEL chunk 330): «не об индивидах, а о сословиях»; путь не закрыт царям. [`15`](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
 - **Кальвин, comm. 1 Тим. 2:4–6** (CTS 1856, PD-страницы): **с. 54** — «Who wishes that all men may be saved… in conformity with this decree of God»; **с. 55** — «classes of men, and not to individual persons»; **с. 56** — «the fruit of the sacrifice… extends to all»; **с. 61** — «that benefit which was universal and perpetual». Собственный комментарий Кальвина на locus classicus, а не только Institutes. [`15` §A.4](15_CALVIN_III24_AND_DORT_II_LOCATORS.md).
-- **Гилл Cause Section XLV** (Level A, не дублировать): спасение здесь — не возможность и не offer; «некоторые из всех родов» (Августин) или язычники; ἀντίλυτρον не может быть о каждом, иначе никто не осуждён справедливо. [`БИОГРАФИИ/Джон Гилл/21_…`](../%D0%91%D0%98%D0%9E%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%98/Джон%20Гилл/21_CAUSE_OF_GOD_PART_I_VERBATIM_AND_HERALDS_REATTRIBUTION.md).
+- **Гилл Cause Section XLV** (Level A, не дублировать): спасение здесь — не возможность и не offer; «некоторые из всех родов» (Августин) или язычники; ἀντίλυτρον не может быть о каждом, иначе никто не осуждён справедливо. [`Джон Гилл/21_…`](../Джон%20Гилл/21_CAUSE_OF_GOD_PART_I_VERBATIM_AND_HERALDS_REATTRIBUTION.md).
 - **Оуэн CCEL TXT chunks 80–81:** dedicated 2:4–6. Две воли; «все» = all sorts (цари); 2:6 = те же ransomed, Откр. 5:9. **Goold vol. X, с. 343** (Book IV.IV). [`14`](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md).
 - **Оуэн, 1 Тим. 2:6 — две новые PD-страницы (2026-10-08):** **с. 307** — Оуэн сам перечисляет четыре кандидата на «всех» («whether all believers, or all the elect, or some of all sorts, or all of every sort») и называет вопрос *in debate*; **с. 371** — «**and so we believe that he died for all**», с прямой оговоркой, что particularism не прибавляет к Писанию исключения: «one place of Scripture interprets another … this is not to lay an exception or restraint upon what was said of all before». [`14` §2.4](14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md).
 

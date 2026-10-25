@@ -26,8 +26,8 @@ PR менял ровно четыре файла:
 | Исходный путь в PR №2 | Git blob SHA | Что сделано теперь |
 |---|---|---|
 | `AGENT_RULES.md` | `3c9fc503839335e37a29e5e7bbf46d1738d44a00` | сохранён точный снимок в `incoming/.../pr2-lossless-snapshots/` |
-| `БИОГРАФИИ/Джон Гилл/00_README_AND_NAVIGATION.md` | `e59a297ee6bcea6c10c5fd34de5f76b8e7cc78b8` | сохранён точный снимок в `incoming/.../pr2-lossless-snapshots/` |
-| `БИОГРАФИИ/Джон Гилл/31_GILL_DEPT_MASTER_MAP.md` | `dc0fc2de8885e85c58122f142ae0a945a36e6b3b` | сохранён точный снимок в `incoming/.../pr2-lossless-snapshots/` |
+| `Джон Гилл/00_README_AND_NAVIGATION.md` | `e59a297ee6bcea6c10c5fd34de5f76b8e7cc78b8` | сохранён точный снимок в `incoming/.../pr2-lossless-snapshots/` |
+| `Джон Гилл/31_GILL_DEPT_MASTER_MAP.md` | `dc0fc2de8885e85c58122f142ae0a945a36e6b3b` | сохранён точный снимок в `incoming/.../pr2-lossless-snapshots/` |
 | `incoming/arena-auditor/2026-07-09/GILL_SERIES_EVIDENCE_ARCHIVE_V1_V11_001_480_2026-07-09.md` | `baa3fccb6f67cd05117b2c4f0342867662a3fce0` | восстановлен по исходному пути |
 
 Параметры полного evidence archive из PR №2:
