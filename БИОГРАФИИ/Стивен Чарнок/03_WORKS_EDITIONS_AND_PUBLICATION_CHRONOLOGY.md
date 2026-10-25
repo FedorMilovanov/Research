@@ -35,9 +35,45 @@
   first imagination, is evil»; «Grace is stronger in the heart-operations than in the outward streams;
   and sin more foul in the imagination of the thoughts of the heart, than in the act».
 - **`evidenceClass`:** `A1` (прижизненная публикация).
-- **`accessState`:** получен в репринтах (Nichol 1844 vol. 2; Digital Puritan PDF; Monergism PDF).
+- **`accessState`:** **полный текст свободно доступен** — см. §2A.
 - **`locatorState`:** `CONFLICT` по странице — см. том 02, `CONFLICT-8`.
-- **HOLD:** `LOCATOR_HOLD`.
+
+### 2A. Датировка и доступность (добавлено 2026-10-25)
+
+**Дата издания уточнена.** Редакторская преамбула репринта Nichols (1844/1981) перечисляет тома
+*Morning Exercises* по годам:
+
+> «1. The four volumes of sermons preached at Cripplegate, and published separately:—The first volume
+> in **1661** … The second in **1674**: it is called «A Supplement to the Morning Exercise at
+> Cripplegate: or several more Cases of Conscience practically resolved» … The third in **1682** …»
+
+То есть:
+
+- дата «1659», встречающаяся на сайтах, — **не дата публикации**, а начало цикла проповедей
+  (A.D. MDCLIX–MDCLXXXIX в заголовке репринта). Для публикации она неприменима;
+- *Supplement* вышел частями; сослагательная дата — **1674**, но полный диапазон — **1674–1676**
+  (так датирует, например, список сочинений William Jenkyn, у которого три sermons в этом же
+  *Supplement*: «1674–1676»);
+- sermon Чарнока — № 19 в **второй** части: репринт 1844 делит *Supplement* между vol. 1
+  («with Part of the Supplement») и vol. 2 («The Conclusion of the Supplement to the Morning
+  Exercise at Cripplegate»). Sermon 19 находится в vol. 2, то есть в **заключительной части**.
+- **Следствие:** конкретная часть с sermon Чарнока, вероятно, относится к позднему (1676) выпуску,
+  но это требует чтения part-title оригинала или заголовка 1844 vol. 2. До тех пор — `LOCATOR_HOLD`.
+
+**Свободный полный текст:**
+
+| Носитель | Локатор | Объём |
+|---|---|---|
+| Digital Puritan, репринт 1844 | `digitalpuritan.net/Digital%20Puritan%20Resources/Cripplegate/The%20Morning%20Exercises%20at%20Cripplegate%20(vol.2)%20-%20Ind%20Works/%5BCG%20v2s19s%5D%20The%20Sinfulness%20and%20Cure%20of%20Thoughts%20(Stephen%20Charnock).pdf` | 35 pp. |
+| Google Books, репринт 1844, vol. 2 | `books.google.com/books?id=MuMEAAAAQAAJ` | ~700 pp., sermon 19 внутри |
+| IA, репринт 1981 (6 vols) | `puritansermons160001unse` | sermon 19 в vol. 2 |
+| Monergism | `monergism.com/content/sinfulness-cure-thoughts`; `PURITAN SERMONS - VOL. 1 - Various Puritans.pdf` | web / pdf |
+
+**Значение для биографии.** Это **единственная** вещь, опубликованная Чарноком при жизни, и она
+свободно доступна. Для «мощной эпической биографии» это единственный текст, который можно читать как
+**его собственный голос**, а не как транскрипцию по записям редакторов. Дополнительный факт:
+Adams & Veal в эпистоле 1684 называют свою публикацию «imperfect Notes» — то есть всё остальное
+корпусное наследие идёт через чуждую транскрипцию, а этот sermon — нет.
 
 ---
 

@@ -108,37 +108,46 @@
 
 Приоритеты:
 
-1. **Закрыть первоисточники Чарнока в полнотекстовом виде.** ~~EEBO-TCP `A79420.0001.001`
+1. **Единственный голос Чарнока.** «The Sinfulness and Cure of Thoughts» (Быт. 6:5) — sermon 19 в
+   *Supplement to the Morning Exercise at Cripplegate*, под инициалами «S. C.». Это **единственная
+   прижизненная публикация** и единственный текст, который читается как его собственный голос, а не
+   как транскрипция по записям редакторов. **Свободный полный текст получен** (Digital Puritan PDF,
+   35 pp.; Google Books 1844 vol. 2 `MuMEAAAAQAAJ`; IA репринт 1981 `puritansermons160001unse`
+   vol. 2; Monergism). Остаётся `LOCATOR_HOLD` по странице. Дататировка: *Supplement* издан частями
+   в 1674–1676; sermon Чарнока — в заключительной части.
+2. **Закрыть первоисточники Чарнока в полнотекстовом виде.** ~~EEBO-TCP `A79420.0001.001`
    (*A discourse of divine providence*, 1684)~~ — **получен**. ~~funeral sermon John Johnson
    1680~~ — **получен** (EEBO-TCP `A46911.0001.001`). ~~Wood, *Athenæ Oxonienses* 1691,
    вход [429] + Fasti 1654~~ — **получен** (EEBO-TCP `A71277.0001.001`). Следующий: скан 1684 из IA и
    скан 1680 (`bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`)
    — сравнить эпистолы двух изданий (`CONFLICT-12`).
-2. **Bliss-редакция Wood 1813–20** (4 vols., колонковая пагинация). Все ссылки вида
-   «Athenae iii. 1234–6» в очереди приобретений относятся к ней; вход [429] в первом издании —
-   pp. 491–492, и Bliss перенумеровал иначе. Требуется пересчёт.
 3. **Элегия 1680** — *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen
    Charnock, July 27, 1680* (Anon.; 1680), WorldCat 606749756, в EEBO. **Приоритет высокий**: это
    второй contemporaneous печатный объект с датой смерти (27 июля) против заголовка
    *The sayings…* (28 июля). Получение текста — прямое действие к `CONFLICT-10`.
-4. **Мемуары John Gunter**, chamber-fellow в Оксфорде — упоминаются Calamy, но, по McCosh,
+4. **Bliss-редакция Wood 1813–20** (4 vols., колонковая пагинация). Все ссылки вида
+   «Athenae iii. 1234–6» в очереди приобретений относятся к ней; вход [429] в первом издании —
+   pp. 491–492, и Bliss перенумеровал иначе. Требуется пересчёт.
+5. **Мемуары John Gunter**, chamber-fellow в Оксфорде — упоминаются Calamy, но, по McCosh,
    «we have not been able to find any trace». Цель поиска.
-4. **Утраченная conversion paper** — погибла в пожаре 1666; Johnson забыл конкретные тексты Писания.
+6. **Утраченная conversion paper** — погибла в пожаре 1666; Johnson забыл конкретные тексты Писания.
    Не восстановима; только констатировать потерю.
-5. **Crosby Hall congregation history** — Wilson, *History and Antiquities of Dissenting Churches*,
+7. **Crosby Hall congregation history** — Wilson, *History and Antiquities of Dissenting Churches*,
    vol. i, pp. 331 sqq. — цепочка Watson → Slater → Grosvenor → Hodge/Jones → роспуск 1769.
    **Приоритет повышен** после тома 11: Wood назвал владельца здания (Sir John Langham) и
    предшественника Чарнока (Thomas Watson).
-6. **Dublin context** — Urwick, *Independency in Dublin in the Olden Time*; Armstrong,
+8. **Dublin context** — Urwick, *Independency in Dublin in the Olden Time*; Armstrong,
    *Summary History of the Presbyterian Churches in the City* (1829).
-7. **Постраничные локаторы** для всех quote-card кандидатов. Пока не приведены к странице — не quote-safe.
-8. **Сканы первых изданий** — IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`
-   (sermon on 2 Cor. V. XIX, Milbourn for J.K., 1680) и
-   `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`
-   (Providence, 1st ed., 1680). Оба доступны как **page images**; требуется чтение титульных листов
-   и сверка эпистола двух изданий Providence (`CONFLICT-12`).
-9. **Приходовые записи Whitechapel** — дом Richard Tymms, glazier, где умер Чарнок. Был ли он там
-   жильцом или гостем — по Wood не установить.
+9. **Постраничные локаторы** для всех quote-card кандидатов. Пока не приведены к странице — не quote-safe.
+10. **Сканы первых изданий** — IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`
+    (sermon on 2 Cor. V. XIX, Milbourn for J.K., 1680) и
+    `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`
+    (Providence, 1st ed., 1680). Оба доступны как **page images**; требуется чтение титульных листов
+    и сверка эпистола двух изданий Providence (`CONFLICT-12`).
+11. **Приходовые записи Whitechapel** — дом Richard Tymms, glazier, где умер Чарнок. Был ли он там
+    жильцом или гостем — по Wood не установить.
+12. **Регистр St Michael's, Cornhill** — запись погребения 30 июля 1680 «at the bottom of the Tower
+    under the Belfry»; единственный документ, способный закрыть `CONFLICT-10`.
 
 ---
 

@@ -40,6 +40,8 @@
 | **WorldCat** | OCLC 18480269 | `A3` | metadata only | — | — | — |
 | **Monergism** — *A Treatise on Divine Providence* | `monergism.com/thethreshold/sdg/charnock/…` (pdf, epub) | `A2` | **full text** | — | — | — |
 | **puritansermons** reprint (1844) | IA `puritansermons160001unse` (6 vols) | `A1` | **full text** | sermon 19 в vol. 2 | public domain | `CONFLICT-8` |
+| ***The Sinfulness and Cure of Thoughts*** (Gen. 6:5) — **единственная прижизненная публикация** | Digital Puritan PDF: `digitalpuritan.net/Digital%20Puritan%20Resources/Cripplegate/The%20Morning%20Exercises%20at%20Cripplegate%20(vol.2)%20-%20Ind%20Works/%5BCG%20v2s19s%5D%20The%20Sinfulness%20and%20Cure%20of%20Thoughts%20(Stephen%20Charnock).pdf` | `A1` (содержание) / `A1` (репринт 1844) | **full text**, 35 pp. | sermon 19 в *Supplement to the Morning Exercise at Cripplegate*, репринт 1844 vol. 2 | public domain (1844) | `LOCATOR_HOLD`; `ARCHIVE_HOLD` **снят** |
+| Репринт 1844, vol. 2 (Google Books) | `books.google.com/books?id=MuMEAAAAQAAJ` | `A1` | full text | «The Conclusion of the Supplement to the Morning Exercise at Cripplegate» | public domain | `LOCATOR_HOLD` |
 
 ### 2.2. Биографические свидетельства
 
