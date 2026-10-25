@@ -119,6 +119,19 @@ contemporaneous титульным листом 1680 года. Дублинск�
 происхождение B.D.) не установлены: записи в коллегиальных книгах отсутствуют, а архивы
 Commonwealth-периода дефектны.»
 
+### `CLAIM-06` — «Чарнок был пуританским пресвитерианином» — **СУЖЕНО (уточнение 2026-10-25)**
+
+Формулировка верна по практике, но неполна. Adams и Veal, знавшие его, пишут: **«He was a true Son
+of the Church of England, in that sound Doctrine laid down in the Articles of Religion, and Taught
+by our most famous ancient Divines and Reformers; and a real follower of their Piety, as well as a
+strenuous maintainer of the Truth they professed.»**
+
+**Суженная формулировка:** «Чарнок — нонконформист по церковному порядку и практике; эдикторы,
+знавшие его, описывают его доктринально как истинного сына Церкви Английской в смысле 39 статей и
+английских реформаторов. Он не отделился от доктрины Англиканской церкви; он был лишён публичного
+служения в её рамках.» Это ключевое напряжение для эпической биографии: не отступник и не радикал,
+а конформист по доктрине, изгнанный по порядку.
+
 ---
 
 ## 5. Открытые конфликты (перенесены из тома 02)
@@ -137,7 +150,7 @@ Commonwealth-периода дефектны.»
 | Утверждение | Где встречается | Класс | Почему исключено |
 |---|---|---|---|
 | «Entered Emmanuel as sizar July 8, 1642 at the age of fourteen» | Grokipedia и производные | `C` | само по себе согласуется с McCosh, но формулировка «at the age of fourteen» без первичной ссылки; год matriculation подтверждён McCosh |
-| «He practised medicine» без оговорок | Book Owners Online и производные | `C` | Adams & Veal и Johnson говорят о «considerable attainments» в медицине и о посещении пациентов, но не о медицинской практике как профессии; Symington говорит о «study of medicine» |
+| «He practised medicine» без оговорок | Book Owners Online и производные | ~~`C`~~ → **`A1` (уточнено)** | Эпистол Adams & Veal 1684: «neglecting the practice of Physick, in which he had arrived at a considerable measure of knowledge». Допустимая формулировка: «он оставил практику врачевания, в которой достиг значительного знания, ради проповеди». Недопустимая: «он был практикующим врачом до конца жизни» |
 | «Charnock was converted at Cambridge» как безусловный факт | Wikipedia и производные | `C` | Johnson и Symington подтверждают обращение в университетский период; «Puritan convictions» — отдельный слой |
 | «Only one work published in his lifetime» без уточнения | популярные сайты | `C` | верно, но требует уточнения про инициалы «S. C.» и про *Supplement to the Morning Exercise at Cripplegate* |
 | «The Existence and Attributes of God comprises fourteen discourses» | theopedia и производные | `C` | число 14 требует проверки по оглавлению Nichol; McCosh говорит о «the attributes», перечисляя 8 в vol. 1 и 6 в vol. 2 плюс Providence и Existence |
@@ -162,6 +175,11 @@ Commonwealth-периода дефектны.»
 | Funeral sermon John Johnson, Мф. 13:43 | `A1` |
 | Ордер на арест 19 июня 1663 | `A1` |
 | «The last subject he treated on and finished was the patience of God» | `A1` (Adams & Veal), но **не quote-safe**: транзит через McCosh, нет страницы |
+| «Being thence (the year after he had been Proctor) called over into Ireland» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP `A79420.0001.001` §1:2**, CC0 1.0 |
+| «He was a true Son of the Church of England…» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP §1:2**, CC0 1.0 |
+| «neglecting the practice of Physick, in which he had arrived at a considerable measure of knowledge» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP §1:2**, CC0 1.0 |
+| «His Library … was his Workhouse…» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP §1:2**, CC0 1.0 |
+| «If thou like this Cluster, Fear not but the Vintage will be answerable…» | `A1` (Adams & Veal), **quote-safe по EEBO-TCP §1:2**, CC0 1.0 |
 | Портрет немощей | `A1` (Johnson), транзит; **не quote-safe** |
 | «Why, it cost Christ his life to redeem and save me» | `A1` (Johnson), транзит; **не quote-safe** |
 

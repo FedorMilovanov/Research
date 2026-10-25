@@ -25,7 +25,7 @@
 |---|---|---|---|---|---|---|
 | **Nichol 1864–66, 5 vols** — каноническое издание | IA `completeworksofs0000char`; IA `completeworksofs00charuoft` | `A1` | **full text** | страницы проверяемы по OCR | public domain | — |
 | Тот же набор, отдельные тома | IA `completeworksof01char`, `completeworksofs02char`, `completeworksofs03char`, `completeworksofs04char`, `completeworksofs05char` | `A1` | **full text** | страницы проверяемы | public domain | — |
-| **EEBO-TCP** *A Discourse of Divine Providence* | `A79420.0001.001` | `A1` | **full text** | титульный лист проверен | лицензия TCP не проверена | `RIGHTS_HOLD` |
+| **EEBO-TCP** *A Discourse of Divine Providence* | `A79420.0001.001` | `A1` | **full text** | титульный лист и префаторий проверены (раздел `1:1` title page, `1:2` TO THE READER) | **TCP keyboarded text — CC0 1.0**; отказ не распространяется на page images | `LOCATOR_HOLD` только по печатной странице |
 | **CCEL** — *Necessity of Regeneration* | `ccel.org/c/charnock/nec_regen` (html), `ccel.org/ccel/charnock/nec_regen.ii.html`, `ccel.org/ccel/c/charnock/nec_regen/cache/nec_regen.pdf` | `A2` | **full text** | — | — | — |
 | **CCEL** — *Nature of Regeneration* | `ccel.org/ccel/charnock/nat_regen/nat_regen.i.html` | `A2` | **full text** | — | — | — |
 | **CCEL** — *Efficient of Regeneration* | `ccel.org/ccel/charnock/efficient_regeneration/efficient_regeneration.{ii,iii}.html` | `A2` | **full text** | — | — | — |
@@ -49,7 +49,7 @@
 | **Symington, Life and Character (1853)** | `B1` | **full text** (Gutenberg 53527) | — | — |
 | **DNB vol. 10 (1887)** | `B1` | **full text** (Wikisource) | — | — |
 | **Johnson funeral sermon 1680** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD`, `LOCATOR_HOLD` |
-| **Adams & Veal epistles (первое издание)** | `A1` | частично (Nichol vol. 1; Digital Puritan vol. 1) | unchecked | `LOCATOR_HOLD` |
+| **Adams & Veal epistles (первое издание)** | `A1` | **full text** — EEBO-TCP `A79420.0001.001` раздел `1:2` (изд. 1684, CC0 1.0) | `checked` на уровне раздела EEBO-TCP | `LOCATOR_HOLD` по печатной странице |
 | **Приходской регистр St Michael's** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
 | **Calendar of State Papers, Domestic** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD`, `LOCATOR_HOLD` |
 | **New College books / Fasti Oxonienses** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
@@ -107,7 +107,7 @@
 |---|---|---|
 | Nichol 1864–66 | public domain (требуется фиксация provenance скана) | допустим после LOCATOR verification |
 | Первые издания 1680–1702 | public domain | допустим после LOCATOR verification |
-| EEBO-TCP | лицензия не проверена | `PUBLICATION_HOLD` |
+| EEBO-TCP | лицензия проверена: **TCP keyboarded text = CC0 1.0**; page images и сопроводительные файлы — вне отказа | допустим после LOCATOR verification |
 | Gutenberg 53527 | текст PD; оформление Baker 1996 — право | `RIGHTS_HOLD` на оформление |
 | Banner of Truth / Sovereign Grace репринты | в авторском праве | `RIGHTS_HOLD` |
 | Портреты (Williams' Library; plate in folio) | права на репродукцию не проверены | `RIGHTS_HOLD` |

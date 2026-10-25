@@ -14,6 +14,11 @@
 из которых 6 разрешимы апелляцией к более сильному источнику и 3 требуют дополнительной проверки.
 Ни один конфликт не «устраняется»: он фиксируется с обеими сторонами.
 
+> **Обновление 2026-10-25:** получен и транскрибирован первичный эпистол Adams & Veal
+> («To the Reader», EEBO-TCP `A79420.0001.001`, издание 1684, CC0 1.0). Это позволило
+> **документально разрешить** `CONFLICT-2` (proctor 1654, не 1652) и `CONFLICT-3`
+> (Ирландия 1655). См. [`08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md`](08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md).
+
 ---
 
 ## 2. Хронология
@@ -101,7 +106,7 @@
 в 1649. Рабочая дата отдела: **переезд 1649, fellowship 1650**. Остаётся `LOCATOR_HOLD` до
 проверки New College books.
 
-### `CONFLICT-2` — дата назначения proctor
+### `CONFLICT-2` — дата назначения proctor — **РАЗРЕШЁН в пользу 1654**
 
 | Сторона | Утверждение |
 |---|---|
@@ -109,21 +114,32 @@
 | Symington | «in 1652, he was elevated to the dignity of Senior Proctor,—an office which he continued to hold till 1656» |
 | McCosh | «April 5. 1654 (not 1652, as Calamy says), he and Thomas Cracroft of Magdalene College are appointed Proctors of the university» |
 | DNB | «As proctor in 1654 he had great opportunities of influence» |
+| **Adams & Veal, эпистол 1684 (первоисточник)** | **«Being thence (the year after he had been Proctor) called over into Ireland»** |
 
-**Разрешение:** McCosh и DNB сходятся на 1654; McCosh явно исправляет Calamy. Рабочая дата:
-**5 апреля 1654**. Титул «Senior Proctor» у Symington не подтверждён отдельно; DNB говорит просто
-«proctor». Отдел использует **proctor**, не «senior proctor», до проверки университетских Fasti.
+**Разрешение (2026-10-25, на основе первичного эпистола):** Adams и Veal заявляют, что Ирландия
+наступила **через год после** proctor. Henry Cromwell документально прибыл в Ирландию в августе
+**1655**. Следовательно:
+- proctor 1654 → Ирландия 1655 ✓ сходится;
+- proctor 1652 (Calamy/Symington) → Ирландия 1653 ✗ **противоречит** 1655;
+- proctor 1652 → Ирландия 1655 (CCEL) ✗ это три года, а не «the year after».
 
-### `CONFLICT-3` — дата отъезда в Ирландию
+**Вывод:** 1652 опровергнут; **1654 подтверждён двумя независимыми путями** (McCosh по
+университетским записям; Adams & Veal по относительной хронологии). Титул «Senior Proctor» у
+Symington не подтверждён; DNB и Adams & Veal говорят просто «Proctor». Отдел использует
+**proctor**, не «senior proctor».
+
+### `CONFLICT-3` — дата отъезда в Ирландию — **РАЗРЕШЁН в пользу 1655**
 
 | Сторона | Утверждение |
 |---|---|
 | Symington | «When the period of his proctorship expired» (т.е. 1656 при его версии 1652–1656) |
 | CCEL | «1655 he was appointed chaplain to Henry Cromwell» |
 | McCosh | Henry Cromwell прибыл в Ирландию в августе 1655 с свитой, включавшей Чарнока |
+| **Adams & Veal** | **«Being thence (the year after he had been Proctor) called over into Ireland»** + «he exercised his Ministry for about four or five years» |
 
-**Разрешение:** 1655 по McCosh. Версия Symington зависит от его ошибочной даты proctor.
-Рабочая дата: **август 1655**.
+**Разрешение:** **август 1655**. Подтверждено тремя путями: документально (прибытие Henry Cromwell),
+относительной хронологией эдикторов и указанием «about four or five years» (1655–1660 = 5 лет).
+Версия Symington падает вместе с его ошибкой 1652.
 
 ### `CONFLICT-4` — возраст и дата смерти
 

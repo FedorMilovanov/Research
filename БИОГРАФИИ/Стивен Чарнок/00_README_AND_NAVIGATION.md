@@ -39,7 +39,8 @@
 | 04 | `04_CHARACTER_MINISTRY_AND_THEOLOGY.md` | Характер, проповедь, богословие | Johnson funeral sermon; Crosby Hall; Dublin lecture; «morality or metaphysics» |
 | 05 | `05_CONTROVERSIES_AND_CLAIM_AUDIT.md` | Спорные утверждения и их опровержения | Parker plot 1663; дата смерти 1680 vs 1683; B.D./fellow Тринити; пагинация Morning Exercise |
 | 06 | `06_CORPUS_ACCESS_MATRIX_AND_LOCATORS.md` | Матрица доступа к корпусу | EEBO/IA/CCEL/Digital Puritan/Hathi/ESTC с классами и HOLD |
-| 07 | `07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md` | Связка с уже имеющимся в репозитории материалом по Чарноку | 12 корпусов, 40+ файлов, CCEL-локаторы, Drive-зеркала |
+| 07 | `07_REPO_CROSSLINKS_AND_DRIVE_MIRROR.md` | Связка с уже имеющимся в репозитории материалом по Чарноку | 91 файл, 763 упоминания в 7 корпусах; CCEL-локаторы; Drive-зеркала |
+| 08 | `08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md` | **Первичный эпистол Adams & Veal 1684** — полная транскрипция и разбор | Разрешение `CONFLICT-2`/`CONFLICT-3`; «true Son of the Church of England»; редакторский манифест; CC0 1.0 |
 
 ---
 
@@ -69,18 +70,30 @@
 
 Полный вариант с конфликтами — том 02.
 
+> **Разрешение 2026-10-25.** Эпистол Adams & Veal 1684 года даёт: «Being thence (the year after he
+> had been Proctor) called over into Ireland». В сочетании с документальным прибытием Henry Cromwell
+> в Ирландию в августе 1655 это **опровергает** версию Calamy/Symington о proctor в 1652 и
+> **подтверждает** 5 апреля 1654 (McCosh). Детали — том 08.
+
 ---
 
 ## 4. Что нужно для «мощной эпической биографии» — очередь работы
 
-Отдел открыт. Приоритеты:
+Отдел открыт. **Уже сделано:** получен и транскрибирован первичный эпистол Adams & Veal
+(EEBO-TCP `A79420.0001.001`, 1684, CC0 1.0) — том 08. Это разрешило два давних конфликта дат
+(proctor 1654, Ирландия 1655) и дало единственное contemporaneous описание церковной
+идентичности Чарнока.
 
-1. **Закрыть первоисточники Чарнока в полнотекстовом виде.** EEBO-TCP `A79420.0001.001`
-   (*A discourse of divine providence*, 1680) — прямой текст с титульным листом
-   «sometime fellow of New-Colledg in Oxon». Это `A2`, и он должен быть прочитан целиком.
+Приоритеты:
+
+1. **Закрыть первоисточники Чарнока в полнотекстовом виде.** ~~EEBO-TCP `A79420.0001.001`
+   (*A discourse of divine providence*, 1684)~~ — **получен**. Следующий: скан 1684 из IA и
+   скан 1680 (`bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`)
+   — сравнить эпистолы двух изданий.
 2. ** funeral sermon John Johnson 1680** («ΕΚΛΑΜΨΙΣ ΤΩΝ ΔΙΚΑΙΩΝ», Мф. 13:43) — единственный
-   contemporaneous личный свидетель. McCosh использовал копию из Williams' Library; копия в
-   нашем распоряжении отсутствует → `ARCHIVE_HOLD`.
+   contemporaneous личный свидетель. Теперь у нас есть точное указание на него от самих
+   Adams & Veal («Mr. Johnson in his Sermon on oc∣casion of Mr. Charnocks death»), что упрощает
+   поиск. Копия в нашем распоряжении отсутствует → `ARCHIVE_HOLD`.
 3. **Мемуары John Gunter**, chamber-fellow в Оксфорде — упоминаются Calamy, но, по McCosh,
    «we have not been able to find any trace». Цель поиска.
 4. **Утраченная conversion paper** — погибла в пожаре 1666; Johnson забыл конкретные тексты Писания.

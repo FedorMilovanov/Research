@@ -59,6 +59,7 @@
 | Стивен Чарнок — 05 Controversies and Claim Audit | `1lliBwqiqe_ZG6W2H0JPpG8ey7-NfLyph` |
 | Стивен Чарнок — 06 Corpus Access Matrix and Locators | `1BAs64-hsi1KwWkoTq73S453Ax3eBmtLw` |
 | Стивен Чарнок — 07 Repo Crosslinks and Drive Mirror | `1FZtigfn0Ta8IA8BfRFgpufcwwQ37Hcpk` |
+| Стивен Чарнок — 08 Adams and Veal To The Reader PRIMARY EPISTLE | `1CaRgPmxNv7WgRFsdzvu0goiSxkdiVTRj` |
 
 Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
 и не являются цитируемым material.

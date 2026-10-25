@@ -41,6 +41,11 @@
 - **Важная оговорка самого Johnson:** тело sermons было подготовлено по поводу смерти другого друга;
   будучи внезапно вызван проповедовать на похоронах Чарнока, он использовал ту же sermon, адаптировав
   её. McCosh: «The discourse is somewhat rembling [=rambling].»
+- **Независимое подтверждение авторитета:** Adams и Veal в эпистоле 1684 года ссылаются на рассказ об
+  обращении Чарнока словами «hath already been spoken of by [* 1.1] one who was at that time his Fellow
+  Collegiate and Intimate», где сноска гласит **«Mr. Johnson in his Sermon on oc∣casion of Mr.
+  Charnocks death.»** То есть эдикторы сами называют funeral sermon Johnson биографическим
+  первоисточником. Это не просто наш выбор источника — это выбор эдикторов.
 - **`evidenceClass`:** `A1` как contemporaneous witness.
 - **`accessState`:** **не получен**. McCosh использовал копию из Williams' Library; нашей копии нет.
 - **`locatorState`:** `unchecked` — нет ни страницы, ни колонки.
@@ -57,25 +62,35 @@
 - **Ценность:** единственный источник о:
   - привычках работы («constantly jotting down … the thoughts that occurred to him»);
   - библиотеке как «workshop», «though not with a numerous, yet a curious, collection of books»;
-  - знании медицины и о том, что он был бы далеко продвинулся в ней, если бы не посвятил себя
-    высшему делу;
+  - знании медицины: «neglecting the practice of Physick, in which he had arrived at a considerable
+    measure of knowledge»;
+  - церковной идентичности: «He was a true Son of the Church of England, in that sound Doctrine laid
+    down in the Articles of Religion, and Taught by our most famous ancient Divines and Reformers»;
+  - редакторском манифесте: «whatever any else shall publish, can be but imperfect Notes (his own
+    Copies being under our revisal at the request of his Friends) taken from him in the Pulpit»;
   - периоде 1660–1675: «about the year 1660, being discharged from the public exercise of his
     ministry, he returned back into England, and in and about London spent the greatest part of
     fifteen years, without any call to his old work in a settled way»;
   - «Even when providence denied him opportunities, he was still laying in more stock, and preparing
     for work against he might be called to it»;
-  - характере: «somewhat reserved when he was not very well acquainted, otherwise very affable and
+  - характере: «somewhat reserved when he was not very acquainted, otherwise very free, affable and
     communicative»; «if he were sometimes deep, he was never abstruse … if he were above most, it was
-    only because most were below it»;
+    only because most were below him»;
   - последних проповедях: «The last subject he treated on and finished was the patience of God. He was
-    looking what to say next of the mercy, grace, and goodness of God».
+    looking what to say next of the mercy, grace, and goodness of God»;
+  - последовательности жизни: Кембридж (Emmanuel) → частная семья → Southwark → New College, Oxford
+    → Ирландия, с решающей датировкой: «Being thence (the year after he had been Proctor) called over
+    into Ireland».
 - **Конфликт интересов:** эдикторы — друзья и почитатели. Их свидетельство ценно по фактам
-  быта и работы, но не является нейтральным по оценке.
+  быта и работы, но не является нейтральным по оценке. Кроме того, они имели прямой интерес
+  утвердить свою монополию на публикацию рукописей.
 - **`evidenceClass`:** `A1` как contemporaneous editorial witness.
-- **`accessState`:** частично — эпистол воспроизводится в Nichol 1864 vol. 1 и в Digital Puritan
-  text-версии vol. 1.
-- **`locatorState`:** `unchecked` по странице первого издания 1680.
-- **HOLD:** `LOCATOR_HOLD`.
+- **`accessState`:** **полный текст получен** — EEBO-TCP `A79420.0001.001`, раздел `1:2`
+  (издание 1684, London: R. Roberts for Thomas Cockerill). Полная транскрипция с разбором —
+  [`08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md`](08_ADAMS_AND_VEAL_TO_THE_READER_PRIMARY_EPISTLE.md).
+- **`locatorState`:** `checked` на уровне раздела EEBO-TCP; печатная страница префатория
+  без нумерации — `LOCATOR_HOLD` сохраняется.
+- **Права:** TCP keyboarded text — **CC0 1.0**; отказ не распространяется на page images.
 
 ### 2.3. Приходской регистр St Michael's, Cornhill (первоисточник №3)
 
