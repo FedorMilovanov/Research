@@ -37,6 +37,24 @@ For every version, capture:
 
 If an exact prompt or source lyric is unavailable, use NOT CAPTURED. Never rewrite a prompt from memory and label it exact.
 
+## Delivery header — required on every handout
+
+Every time a work is delivered to the owner — in chat or as a file — the first two lines are, in this order and in this order only:
+
+1. **Title** — the historical title as printed, then the working Russian title if one exists.
+2. **Author** — name with dates, and any later reviser named separately.
+
+Nothing precedes them: not the status, not the analysis, not the prompt. The status and the rights caveats follow underneath, because a title and an author are the one thing the owner needs in order to decide whether to read further.
+
+Short form for chat:
+
+```
+Название: <as printed> (<Russian working title, if any>)
+Автор: <name> (<years>), <reviser if any>
+```
+
+Do not omit the author when the text is anonymous only because the attribution is uncertain — write `attribution uncertain` in the author field instead.
+
 ## Lyric and pronunciation workflow
 
 Keep these artifacts separate:
