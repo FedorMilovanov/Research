@@ -68,7 +68,7 @@
 - **Styles:** **five** directions in `SUNO/DUTCH-005_STYLE.md` — A epic organ + Georgian male monastic choir (118, D minor, primary slot); B Renaissance wind consort + four male voices (112, D dorian); C viol consort + chamber organ + solo tenor (100, G minor); D Byzantine ison under a baritone cantor (free); E metrical chorale, unison male voices + organ (126, A minor). None submitted, none chosen.
 - **Production state:** `LYRIC_DRAFT`. **No generation, no audio, no cover, no export, no publication.**
 - **Publication copies (2026-10-26) — text only, none used yet:**
-  - `DUTCH-005_YOUTUBE.md` — title options, description 4182 characters (12 bold, 5 italic), hidden tags, checklist, and the markup post-mortem in § 0.
+  - `DUTCH-005_YOUTUBE.md` — title options, description 4461 characters (12 bold, 5 italic), hidden tags, checklist, and the markup post-mortem in § 0.
   - `DUTCH-005_TELEGRAM.md` — post for @lordchrist in Telegram markup, with an HTML twin.
   - `DUTCH-005_PINNED.md` — two pinned YouTube comments, 4 bold + 1 italic line and 6 bold + 2 italic lines, both gated.
   - Every claim in the three files is mapped to a named source in `../RESEARCH/CLAIM_LEDGER.md`, `../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses) and `../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses).

@@ -33,7 +33,7 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **SUNO/README.md** — production workflow and state model.
 - **SUNO/STATUS_LEDGER.md** — known prepared works, incomplete checks and publication boundaries.
 - **SUNO/PUBLICATION_LANE.md** — the bridge to the channel standards: which repository is normative for markup and comment layout, the three copy files, the four gates, and the traps that already cost a release. Read this before editing any copy.
-- **SUNO/DUTCH-005_YOUTUBE.md** — title options, the ready description (4182 characters, 12 bold and 5 italic spans), hidden tags, a checklist, and § 0: the verbatim post-mortem of the markup that broke live in Studio.
+- **SUNO/DUTCH-005_YOUTUBE.md** — title options, the ready description (4461 characters, 12 bold and 5 italic spans), hidden tags, a checklist, and § 0: the verbatim post-mortem of the markup that broke live in Studio.
 - **SUNO/DUTCH-005_TELEGRAM.md** — the @lordchrist post for the same hymn, in Telegram markup (`**bold**`, `*italic*`), with an HTML twin.
 - **SUNO/DUTCH-005_PINNED.md** — two pinned comments for YouTube: one on the hymn, one on how the Dutch sang, both in YouTube markup and gated.
 - **SUNO/STYLE_AND_PRODUCTION_RULES.md** — accumulated user preferences and reproducibility rules.
@@ -72,6 +72,7 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **scripts/check_ru_lyric.py** — read-only Russian lyric audit: lists words that must carry ё in context, and fails a file that carries more than a handful of stress marks.
 - **scripts/check_youtube_markup.py** — read-only markup gate: a closing `*` or `_` must be followed by a space or end of line, `**` is rejected, markup is rejected in the first paragraph.
 - **scripts/check_revision_consistency.py** — read-only check that the prose names the current lyric revision and does not contradict the files.
+- **scripts/check_copy_lengths.py** — read-only guard that recomputes the description, both pinned comments and the visible Telegram length, and fails when a document quotes a stale number.
 
 ## Status language
 
@@ -114,7 +115,7 @@ From the repository root, run:
     python SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/*LYRICS*.md
     python SUNO_HYMNS/scripts/check_revision_consistency.py
 
-All four gates, including `check_youtube_markup.py`, also run in `.github/workflows/suno-hymns-registry.yml`.
+All five gates run as separate steps in `.github/workflows/suno-hymns-registry.yml`: registry validation, markup of the description and both pinned comments, quoted lengths against the files, revision consistency, and the Russian lyric check.
 
 The validator does not repair or modify files. It fails closed on invalid global state values, unknown IDs, missing source references and misleading status combinations.
 

@@ -112,6 +112,16 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 
 **The number that was actually wrong.** The pinned comment said the 1679 second edition appeared "eight years before the author's death"; it appeared **two years after** it. Read dates as sentences, not as arithmetic.
 
+## 2b. Delivery, gates and two channels — four more, each with a guard
+
+**1. Marked-up copy handed over as a block quote.** The two pinned comments went to the owner inside `>` quotes. The chat renders `*…*` into bold and the asterisks vanish from the screen, so what could be copied looked like plain prose and the one thing asked for was not visibly there. **Guard:** copy goes into a fenced `text` block, always; the rule is in `projects/COMMON_RULES.md` § 2 and in the channel standard.
+
+**2. A gate that checked the wrong block.** The CI step extracted the *first* fenced block of `DUTCH-005_YOUTUBE.md` and validated it as the description. The first block in that file is a **title candidate of 59 characters**. The gate was green and meaningless for days. **Guard:** the extractor now splits on the section heading `## 2.`, and asserts `len(body) > 1000`, so a wrong block fails loudly instead of passing quietly. General lesson: after wiring a gate, print what it actually read.
+
+**3. Two channels, one rule set.** The markup and copy rules were written around one project, and the other existed as a list of exceptions to them. That is how a poetry playlist ends up in a hymn description. **Guard:** `projects/COMMON_RULES.md` holds what is shared with **no domain, channel ID or playlist in it**; `projects/lord-god-strength/RULES.md` and `projects/legendary-poet/RULES.md` hold the differences. Reading order and precedence are stated in `projects/README.md`.
+
+**4. Secondary sources stated as verified.** The description and the pinned comment asserted the 1681 and 1718 reprints and the 1938 melody as plain facts, while `CLAIM_LEDGER` records them as `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`, resting on search-engine extracts of the song database and on a wiki. **Guard:** the copy now attributes them — «по каталогу Нидерландского песенного банка», «по песенным справочникам» — and the status table in `DUTCH-005_PINNED.md` says «вторичное, коллация не сделана» instead of «сверено». A claim does not become print-verified by being retyped into a nicer sentence.
+
 ## 3. Mechanical hazards
 
 - **Combining acute and NFC.** A word written with `й` + U+0301 reads as a different string from the same word without it. Any accent check that compares raw strings silently passes. Normalise to NFD before testing, as `check_ru_lyric.py` does.
@@ -132,6 +142,9 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 4. **Every rhyme-forced word has a verdict**, and the same trade is decided the same way in every stanza.
 5. **Every claim that came from a reviewer has a print line or is labelled a lead.**
 6. **Open decisions surfaced in the delivery header**, not buried in a file.
+7. **Gates prove what they read:** the extracted block is printed or length-asserted, never trusted because CI is green.
+8. **Every copy claim carries its claim status.** If the ledger says a source is secondary, the public text says «по каталогу» / «по справочнику», not bare fact.
+9. **Both channels checked against their own sheet**, not against the other channel's habits: no foreign site, VK, Telegram, Rutube or playlist.
 
 ---
 

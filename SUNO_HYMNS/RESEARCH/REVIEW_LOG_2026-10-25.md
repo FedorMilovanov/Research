@@ -596,3 +596,23 @@ That is the structure that makes agents mix the two. New in this repository, und
 **Where the split lands.** Editorial rules: here, split by project. Identities, OAuth aliases, preflight validators and everything that touches a provider: `video-channel-manager`. Recorded as part 3 of `WORKS_LEDGER.md` together with the two live defects — the leaderless rendering standard and the legacy poet site that needs a live check.
 
 **What I could not do:** remove or trim the duplicated profiles inside `video-channel-manager`. This session is bound to one branch of this repository, so the vcm side would need its own session. Until then the precedence rule stands: IDs from there, editorial requirements from here, and no silent reconciliation.
+
+# Twenty-seventh pass — 2026-10-26 (re-audit: one dead gate, four drifts, four overstatements)
+
+Re-read every file touched in the last five commits, recomputed every number it quotes, and checked each claim against the ledger. Findings, in order of severity.
+
+**1. The markup gate was green and useless.** The CI step extracted the *first* fenced block of `DUTCH-005_YOUTUBE.md` — which is a 59-character **title candidate** — and validated it as the description. It had never seen the 4 461-character body it was supposed to police. Fixed: the extractor now splits on the `## 2.` heading and asserts `len(body) > 1000`. Lesson in `LESSONS_AND_GUARDS.md` § 2b: a gate must prove what it read.
+
+**2. A gate existed but was never wired.** Both `SUNO/README.md` and `PUBLICATION_LANE.md` claimed the Russian lyric check ran in CI. It did not. The step now exists and runs on both lyric files.
+
+**3. Numbers that had drifted from the files.** The description was called 4182 characters and is 4461 after this pass's edits; the checklist still said 4190; закреп 1 was listed at 1503 and is 1467 after the edition sentence was rewritten; the Telegram post claimed 1479 visible characters and carries 1477. All four now computed from the blocks themselves, and the description states its remaining margin to YouTube's 5000.
+
+**4. Canonical link drift.** Both copy files linked `vk.com/the_lord_god_is_my_strength`. The project sheet says new output prefers `vk.ru/…`, with `vk.com` allowed only as a compatibility route. Switched in the YouTube description, the Telegram post and its HTML twin.
+
+**5. Four claims presented as print-verified while the ledger says otherwise.** The 1681 Stapel reprint, the 1718 *Bundeltje* title, the 1938 item and its Psalm 42 melody all rest on search-index extracts and a wiki — `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION` in `CLAIM_LEDGER`. The description now attributes them («по каталогу Нидерландского песенного банка», «по песенным справочникам») and says outright that no collation with the printed 1938 bundel was made; the status table in `DUTCH-005_PINNED.md` no longer prints «сверено» against them.
+
+**6. Small editorial errors.** «Heerlykeits lof» → «Heerlykheits lof» (the recorded spelling has the *h*); «из Голландского сборника 1938 года» → «из сборника Нидерландской реформатской церкви 1938 года (Hervormde Bundel)»; an ellipsis after the four quoted lines of stanza 1, because the prose that follows discusses lines 5–9 of a nine-line stanza and the quote stopped at four; the editors' names put in the order the repository records them; the first-person «я не сверял» in a public description replaced with an impersonal form.
+
+**Checked and found correct, so left alone:** stanza 1 really has nine lines, so «девятая строка» is right; three «прах» in lines 5, 6, 8 is right after the v0.9 removal; 12 bold spans really are 8 semantic leads plus 4 link labels; the two закрепы pass the wrapper rule with 4 / 1 and 6 / 2 emphasis spans; every relative link in `projects/` and `SUNO_HYMNS/` resolves.
+
+**What now stops the whole class.** A new read-only gate, `scripts/check_copy_lengths.py`, recomputes the description, both pinned comments and the visible Telegram length from the blocks themselves and fails when any document quotes a different number. It also fails above YouTube's 5000 and Telegram's 4096. Wired into CI together with the lyric check that had been missing. Five gates now run as five separate steps, and `PUBLICATION_LANE.md` § 4 lists them in the order they should be run by hand.
