@@ -72,14 +72,24 @@ The status below records the project state known from prior conversation, not pu
 - **Dossier:** `CANDIDATE_DUTCH-004_DEN_NEDRIGEN_CHRISTEN.md` ; package: `../SUNO/DUTCH-004_PRODUCTION_PACKAGE.md`.
 - **References:** https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0036.php ; https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0013.php ; https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0037.php ; https://www.dbnl.org/tekst/lode002uyt_03_01/lode002uyt_03_01_0037.php
 
-## Identified but **not** catalogued — *Heerlijckheyds Loff*
+## DUTCH-005 — *Heerlijckheyds Loff*
 
-- **Not a track.** Registered as backlog candidate `DUTCH-CAND-021`; it has no work ID, no lyric and no prompt.
-- **Identity resolved 2026-10-25:** a distinct ten-stanza poem by Lodenstein, 1676 print, **pp. 155–158**, incipit `HOog! om hoog! mijn siel, na boven!`, tune line `Voyse: Un jour &c.`, dated **27 August 1665**, critical-edition item 56.
-- **The earlier confusion:** the working notes paired `Heerlijckheyds Loff` with `Hoog, omhoog…` as if they were two titles or two works. The second is the poem's first line.
-- **A trap for attribution:** the 1938 Hervormde Bundel carries a **modernised reworking** of this text, *'t Oog omhoog, het hart naar boven!*, set to a melody attributed to **Loys Bourgeois**. That is a 20th-century hymnal object, not the 1665 poem and not the 1665 tune. The 1938 bundel therefore contains **two** distinct Lodenstein hymns (Gezang 205 from DUTCH-002's line, and this one); they must never be conflated.
-- **Melody:** the 2005 apparatus says the melody's origin is unknown and that it is **not** the *Un jour* of text 27, so the printed tune name cannot be resolved to a tune. No notation, no recording.
-- **Dossier:** `CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`.
+- **Working Russian title:** «Слава Господня — "Ввысь, душа моя!"» — **not final**; the owner has not approved a title.
+- **Author:** Jodocus van Lodenstein (1620–1677). Attribution certain: printed in his own collection.
+- **Text category:** `DEVOTIONAL_SONG_WITH_TUNE_DIRECTION` — a ten-stanza poem on the glory of the heavenly life.
+- **Printed place:** *Uyt-spanningen*, Utrecht, Willem Clerck, 1676, **pp. 155–158**; heading `Heerlijckheyds Loff.`; closing date `27. in Ougstmaand 1665` (27 August 1665).
+- **Structure:** ten stanzas of nine printed lines — four statement lines, a call line and its abbreviated repeat (`etc.` in the print, a repeat instruction and **not** a lacuna), the tripled word with its object, the call again, a closing line. Stanza I is printed in full and is the metrical model for III–X.
+- **The poem's spine — not a chorus:** the tripled word moves `leven` (III–VI) → `lieven` (VII–IX) → `loven` (X). It sits **inside** each stanza. Detaching it as a refrain, or replacing it with an added chorus, replaces the poem's architecture.
+- **Melody:** printed direction `Voyse: Un jour &c.`; **untraced**, no notation held, and the 2005 apparatus states the origin is unknown and that it is not the *Un jour* of text 27. No melody claim.
+- **Illustration:** the page carries `ill0155`; it has **not** been viewed, and no claim is made about it.
+- **Transmission:** Stapel's *Lusthof* (1681) p. 495 as *Heemels heerlijkheids lof*; *Bundeltje* (1718) p. 230 as *HEERLYKHEITS LOF*. The **1938** Hervormde Bundel carries a modernised reworking, *'t Oog omhoog, het hart naar boven!* — a different, later, protected object with its own melody attribution (Loys Bourgeois) and its **own** rights assessment. It is **not** the 1665 poem and is not used in this work.
+- **Russian text:** `DUTCH-005-RU-DRAFT v0.1` — a declared **adaptation**, not a translation, with eight declared deviations; **not approved**. The owner's poetic revision is a required gate.
+- **Production:** `LYRIC_DRAFT`. A style prompt (`PROMPT-DUTCH-005-V1`) is authored in this repository and has **never been submitted**; a second style direction is recorded as an option only. **Nothing has been generated, exported, covered or published.**
+- **Publication status:** unknown / not verified — nothing exists to publish.
+- **Package:** `../SUNO/DUTCH-005_PRODUCTION_PACKAGE.md` ; research record: `CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`.
+- **References:** https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0061.php ; https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0062.php
+
+**Identity note.** This is the text known in earlier sessions as `Heerlijckheyds Loff / Hoog, omhoog…`. The second element is its **first line**, not a second title. It is a distinct poem — not a variant of `Schepselen Niet` (DUTCH-001), despite sharing the `leven / lieven / loven` triad with it, and not part of `II. Hert-sterckte` (DUTCH-002).
 
 ## Status separation — mandatory per work
 

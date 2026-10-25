@@ -70,6 +70,18 @@ Four things were settled from primary or near-primary sources, and one earlier e
 3. **Access routes worth knowing.** Delpher serves page OCR at `/nl/boeken/view?coll=boeken&identifier=<OBJ>:<IMAGE>`; the image number is not the printed page and items must be bracketed (image 430 = Gezang 18, 640 = 153, 724–725 = 205; image 296 = Psalm 109). In-bundle search and `download/txt` return 404. The WNT at `gtb.ivdnt.org` renders only its JavaScript shell, and Ensie is paywalled — **no dictionary sense has been read in this project**.
 4. **`in 't dorre stickt`** narrowed to "stuck fast, choked, in the dry" on rhyme + etymology; still `PENDING_LEXICAL_CHECK`.
 
+## Where the sixth pass left things (2026-10-25, DUTCH-005 activated)
+
+The owner asked for the Dutch hymn with SUNO styles "that we haven't done yet". That is **`DUTCH-005` — *Heerlijckheyds Loff*** (1676, pp. 155–158), the poem previously known as `Heerlijckheyds Loff / Hoog, omhoog…`.
+
+- **What exists now:** `SUNO/DUTCH-005_PRODUCTION_PACKAGE.md` — a ten-stanza literal gloss, a Russian **adaptation** draft v0.1 (`DUTCH-005-RU-DRAFT`), an eight-row deviation table, a per-work musical brief, and **two** SUNO style directions: `PROMPT-DUTCH-005-V1` (epic organ, Georgian-flavoured male monastic choir, one low male lead, ♩≈116) and a documented alternative (organ, low strings, cantor, choir from stanza 4).
+- **What does not exist:** any generation, audio, cover, export or publication. The prompt is `AUTHORED_NOT_YET_SUBMITTED`.
+- **The text is not print-verified.** All ten stanzas were read in full from the DBNL diplomatic transcription, but the 1676 page images of pp. 155–158 have not been inspected, and the illustration `ill0155` has not been viewed.
+- **The tripled word is the spine**, not a chorus: `leven` (III–VI) → `lieven` (VII–IX) → `loven` (X). Do not detach it, and do not add a refrain.
+- **Do not reuse the 1938 reworking** (*'t Oog omhoog…*, Bourgeois melody): it is a different, protected object.
+
+**Gate before anything else on this work:** the owner's poetic revision of the Russian draft. It is a draft, not an approved text.
+
 ## Validation
 
 `python SUNO_HYMNS/scripts/validate_project_registry.py` is now enforced by `.github/workflows/suno-hymns-registry.yml`. It checks registry state, cross-references, orphan sources, claim-to-work traceability, `EVIDENCE_HOLD` gaps, backlog/catalog Markdown against the JSON, prompt byte-identity with the production package, and read-only behaviour. If you add a source, a claim or a candidate, expect the Markdown/JSON set comparison to fail until both sides agree.

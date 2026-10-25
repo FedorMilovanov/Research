@@ -157,3 +157,36 @@ Five sources and two claims added; four claims revised. `validate_project_regist
 - Printed p. 84 of the 1676 impression (the 1674 hold).
 - `'t Oog omhoog` in the 1938 bundel.
 - The Russian drafts and verbatim SUNO prompts — unchanged, still absent.
+
+# Sixth pass — 2026-10-25 (DUTCH-005: *Heerlijckheyds Loff* activated and packaged)
+
+The owner asked for the Dutch hymn with SUNO styles "that we haven't done yet" — the text identified in the fourth pass as *Heerlijckheyds Loff* and left as a candidate. It is now a work.
+
+## 1. Activation, with the catalog checked first
+
+`DUTCH-CAND-021` → **`DUTCH-005`**. No duplicate was created: the research record stays in `CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`, and the production record is new. The two claims about this text had been `projectLevel` because no work existed; they now hang off the work, and the flag was removed rather than left as a lie.
+
+## 2. The whole text read, and its shape recorded
+
+All ten stanzas of the 1676 print (pp. 155–158) were read. Structure: four statement lines, a call line and its abbreviated repeat (`etc.` — a repeat instruction, not a lacuna), the tripled word with its object, the call again, a closing line. Stanza I is printed in full and is the metrical model for III–X. The tripled word moves **`leven` (III–VI) → `lieven` (VII–IX) → `loven` (X)** — the poem's architecture, inside the stanzas, not a chorus.
+
+**Still not print-verified:** the page images have not been inspected, and the illustration `ill0155` has not been viewed.
+
+## 3. What was authored, and what was deliberately not
+
+Authored: a literal gloss, a Russian **adaptation** draft v0.1, an eight-row deviation table, a per-work musical brief, and two style directions.
+
+Not authored: any claim that the Russian is a translation; any claim about the melody; any claim about the illustration; any generated audio; any publication. `PROMPT-DUTCH-005-V1` is `AUTHORED_NOT_YET_SUBMITTED`.
+
+**Two uncertainties kept visible instead of smoothed:** I.7 has no expressed negation in the Dutch (elliptical reading adopted, the "costly" pun recorded as a secondary sense), and the tripled device is rendered with a noun in III–IX but an infinitive in X, where Dutch triples infinitives throughout.
+
+## 4. Registry and gate
+
+Three claims added; candidate activated; work added to the track catalog with `workType: DEVOTIONAL_SONG_WITH_TUNE_DIRECTION` and production state `LYRIC_DRAFT`. `validate_project_registry.py` passes: **49 sources, 3 authors, 5 tracks, 38 claims, 9 songbooks**.
+
+## Still open on DUTCH-005
+
+- Owner poetic revision of the Russian draft.
+- The 1676 page images of pp. 155–158, and the illustration.
+- Choice between the two style directions.
+- The Dutch Song Database for *Un jour &c.* — no melody claim until then.

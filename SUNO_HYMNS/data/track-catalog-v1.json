@@ -365,6 +365,99 @@
         "Re-check the Nederlandse Liederenbank for the tune 'Prendete la' once it is back online.",
         "Record the prompt revision hash before submission; record generation date, output filename, duration and format after it."
       ]
+    },
+    {
+      "id": "DUTCH-005",
+      "displayTitle": "Слава Господня — «Ввысь, душа моя!» (рабочее название, не утверждено)",
+      "displayTitleStatus": "WORKING_DRAFT",
+      "originalTitleVariants": [
+        "Heerlijckheyds Loff",
+        "Heerlijckheyds Loff. (1676 heading)",
+        "Heemels heerlijkheids lof (1681 reprint)",
+        "HEERLYKHEITS LOF (1718 reprint)"
+      ],
+      "historicalAuthor": {
+        "name": "Jodocus van Lodenstein",
+        "years": "1620–1677",
+        "role": "author"
+      },
+      "textCategory": "Ten-stanza devotional song on the glory of the heavenly life, printed with a tune direction and an internal tripled-word device",
+      "sourceChain": [
+        "Uyt-spanningen, Utrecht, Willem Clerck, 1676, printed pp. 155-158 (dated 27 August 1665)",
+        "Reprints: Stapel's Lusthof 1681 p. 495; Bundeltje 1718 p. 230",
+        "1938 Hervormde Bundel carries a modernised reworking ('t Oog omhoog, het hart naar boven!) which is a different object and is NOT used here",
+        "Modern Russian literary adaptation, draft v0.1, authored in this repository"
+      ],
+      "tuneDirection": "Voyse: Un jour &c. — a designation the modern editors could not resolve; melody untraced, no notation held",
+      "structure": {
+        "stanzas": 10,
+        "printedLinesPerStanza": 9,
+        "sungLinesPerStanza": 9,
+        "note": "Four statement lines, a call line and its abbreviated repeat (printed as 'etc.'), the tripled word with its object, the call again, and a closing line. Stanza I is printed in full; III-X abbreviate the repeat. The tripled word moves leven -> lieven -> loven.",
+        "source": "the 1676 print, read in full in the fifth pass"
+      },
+      "productionState": "LYRIC_DRAFT",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "CAPTURED_IN_REPOSITORY",
+      "versions": [
+        {
+          "versionId": "DUTCH-005-RU-DRAFT-v0.1",
+          "versionKind": "LYRIC_DRAFT_ONLY",
+          "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
+          "promptCapture": "CAPTURED_IN_REPOSITORY",
+          "promptState": "AUTHORED_NOT_YET_SUBMITTED",
+          "promptId": "PROMPT-DUTCH-005-V1",
+          "promptText": "epic sacred organ hymn, 4/4, 116 bpm, D minor, deep pipe organ with 16-foot pedal and full plenum, Georgian-flavoured male monastic choir singing sustained parallel fifths, one strong low male lead voice declaiming syllabically in front of the choir, wide stone-church reverb, unhurried but never dragging, restrained crescendo across ten stanzas, clear diction and natural stress, no percussion, no guitars, no synthesizers",
+          "promptFields": {
+            "exclude": "drums, percussion, electric bass, synth pads, EDM, cinematic string swells, belting, breathy or whispered lead, excessive vibrato, auto-tune artefacts, spoken word",
+            "sections": "[Intro — organ pedal, 2 bars] / [Stanza 1] … [Stanza 10] / [Outro — choir alone on the last line]",
+            "echo": "exactly one, inline, in stanza X: хвалить, хвалить, хвалить (хвалить)",
+            "tempoDiscipline": "If the output comes out slow and whispered, fix tempo, syllabic delivery and the intro length; do not cut stanzas."
+          },
+          "promptAlternative": {
+            "promptState": "DOCUMENTED_OPTION",
+            "text": "solemn organ and low strings hymn, 3/4, 104 bpm, F minor, great organ foundation stop and pedal drones, cello and contrabass doubling the bass line, a quartet of low male voices entering only from stanza 4, one solo bass cantor for the call lines, plain declamation, no percussion, no guitars",
+            "note": "A second style direction recorded for comparison only; not a version, not approved."
+          },
+          "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §6.2). Never submitted to SUNO. Newly written for this text, not a recovered prompt, and not a reuse of the DUTCH-002 brief.",
+          "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
+          "lyricRevisionNote": "Russian adaptation, not a translation; eight declared deviations in the production package §5; owner poetic revision is a required gate before READY_FOR_REVIEW.",
+          "assets": {},
+          "generatedOutput": "NONE",
+          "audioExport": "NONE",
+          "cover": "NONE",
+          "metadataReadback": "NOT_APPLICABLE",
+          "qaStatus": "OPEN"
+        }
+      ],
+      "authorId": "LOD-001",
+      "workType": "DEVOTIONAL_SONG_WITH_TUNE_DIRECTION",
+      "sourceIds": [
+        "SRC-L-1676-HEERLIJCKHEYD-155-158",
+        "SRC-L-CRIT-2005-HEERLIJCKHEYD",
+        "SRC-NL-LIEDERENBANK-INDEX",
+        "SRC-L-1676",
+        "SRC-L-1676-COLOPHON"
+      ],
+      "claimIds": [
+        "CLM-HEERLIJCKHEYD-IDENTITY",
+        "CLM-HEERLIJCKHEYD-RECEPTION",
+        "CLM-DUTCH-005-TEXT",
+        "CLM-DUTCH-005-TUNE",
+        "CLM-DUTCH-005-ADAPTATION",
+        "CLM-ASSET-STATE",
+        "CLM-SUNO-PROMPTS"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.'. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X). It is not a refrain and must not be detached as a chorus. The 1938 reworking of the same text is a separate, protected object and is not used. Dossier: RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md; package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md.",
+      "rightsNote": "1676 poem public domain in substance; the DBNL transcription and the 2005 critical edition are separate objects and are not reproduced. The 1938 reworking is PERMISSION_REQUIRED and is not used.",
+      "openChecks": [
+        "Owner poetic revision of the Russian draft v0.1; freeze as DUTCH-005-RU v1.0 before any generation.",
+        "Read the 1676 page images of printed pp. 155-158 to move the text from diplomatic transcription to print-verified, and view the illustration ill0155.",
+        "Decide between the two style directions (SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §6.2 and §6.3) and record the decision.",
+        "Retry the Dutch Song Database for 'Un jour &c.' and for lode002uyt_01_0047; no melody claim until then.",
+        "Record the prompt revision hash before submission and the file's own duration and metadata after any generation."
+      ]
     }
   ],
   "adjacentNonDutchWorks": [
@@ -470,8 +563,10 @@
     },
     {
       "id": "DUTCH-CAND-021",
-      "status": "OPEN",
-      "identityNote": "IDENTIFIED 2026-10-25 as Heerlijckheyds Loff, a distinct ten-stanza poem in Uyt-spanningen 1676, printed pp. 155-158, dated 27 August 1665. Not activated: no track, lyric or prompt exists. See RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md."
+      "status": "ACTIVATED",
+      "identityNote": "ACTIVATED 2026-10-25 as DUTCH-005. Identified as Heerlijckheyds Loff, a distinct ten-stanza poem in Uyt-spanningen 1676, printed pp. 155-158, dated 27 August 1665. Production state LYRIC_DRAFT: Russian draft v0.1 and an authored, never-submitted style prompt; no generation, no audio. Dossier: RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md; package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md.",
+      "activatedAsTrackId": "DUTCH-005",
+      "activatedOn": "2026-10-25"
     }
   ],
   "scopeNote": "works[] is the production catalog; candidates[] mirrors the backlog so that an ID cannot exist in one place only. An ACTIVATED candidate must name the track it became."

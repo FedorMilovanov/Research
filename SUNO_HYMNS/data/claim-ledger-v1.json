@@ -616,8 +616,7 @@
       ],
       "holds": [
         "RIGHTS_HOLD"
-      ],
-      "projectLevel": true
+      ]
     },
     {
       "id": "CLM-HEERLIJCKHEYD-RECEPTION",
@@ -638,8 +637,7 @@
         "RIGHTS_HOLD"
       ],
       "evidenceGap": "Neither the 1681 and 1718 reprints nor the printed 1938 bundel have been collated; the melody of the 1665 tune is untraced.",
-      "nextCheck": "Collate the 1681 and 1718 printings when reachable, and the printed 1938 bundel; retry the Dutch Song Database for 'Un jour' and record lode002uyt_01_0047.",
-      "projectLevel": true
+      "nextCheck": "Collate the 1681 and 1718 printings when reachable, and the printed 1938 bundel; retry the Dutch Song Database for 'Un jour' and record lode002uyt_01_0047."
     },
     {
       "id": "CLM-HB-1938-205-CREDITS",
@@ -675,6 +673,61 @@
         "The OCR is lossy: it dropped a whole stanza on p. 724 and reorders some columns."
       ],
       "projectLevel": true,
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-005-TEXT",
+      "topic": "DUTCH-005: text, structure and date of 'Heerlijckheyds Loff'",
+      "claim": "Heerlijckheyds Loff is a ten-stanza poem printed in Uyt-spanningen (1676) on pp. 155-158, dated 27 August 1665. Each stanza is printed as four statement lines, a call line and its abbreviated repeat, a tripled word with its object, the call again, and a closing line; the tripled word runs 'leven' (III-IV-V-VI) -> 'lieven' (VII-VIII-IX) -> 'loven' (X).",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-1676-HEERLIJCKHEYD-155-158",
+        "SRC-L-CRIT-2005-HEERLIJCKHEYD"
+      ],
+      "notes": [
+        "Read in full from the diplomatic transcription in the fifth pass; the whole text has now been seen, but not collated against a page image.",
+        "The print abbreviates repeated call lines as 'etc.'; these are repeat instructions, not lacunae.",
+        "Stanza I is printed in full and is the metrical model for the rest.",
+        "The page carries an illustration (ill0155) that has not been viewed; no claim is made about it.",
+        "Line I.7 ('Is uw costlijck leven, lieven, loven') has no expressed negation; the elliptical reading is adopted in the production package, with the 'costly' pun recorded as a secondary sense."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-005-TUNE",
+      "topic": "DUTCH-005: the printed tune direction is untraceable",
+      "claim": "The printed direction reads 'Voyse: Un jour &c.', but no notation is held, the Dutch Song Database was unreachable, and the 2005 apparatus states that the melody's origin is unknown and that it is not the 'Un jour &c.' of text 27. No melody claim can therefore be made for this poem.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-1676-HEERLIJCKHEYD-155-158",
+        "SRC-L-CRIT-2005-HEERLIJCKHEYD",
+        "SRC-NL-LIEDERENBANK-INDEX"
+      ],
+      "notes": [
+        "The tune name is a designation the modern editors could not resolve, so it must not be presented as an identified melody.",
+        "The 1938 hymnal's melody attribution for its reworking of this text (Loys Bourgeois) is a different, 20th-century object and is not evidence for the 1665 tune."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-005-ADAPTATION",
+      "topic": "DUTCH-005: the Russian text is a declared adaptation, not a translation",
+      "claim": "The Russian lyric for DUTCH-005 is an independent literary adaptation that follows the ten stanzas in order and preserves the tripled word, with eight declared deviations (supplied negation in I.7, noun instead of infinitive in the tripled device, 'costelijck' as 'precious', expanded 'etc.' repeats, no invented refrains, 'Cijter' as 'цитра', an inline repeat in VI.5, and no metre or rhyme claim). No part of it may be presented as a translation, and it is not approved.",
+      "claimStatus": "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "sourceIds": [
+        "SRC-L-1676-HEERLIJCKHEYD-155-158"
+      ],
+      "notes": [
+        "Draft v0.1 authored in this repository on 2026-10-25; the owner's poetic revision is a required gate before READY_FOR_REVIEW.",
+        "The deviation table is in SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §5.",
+        "Nothing has been submitted to SUNO: the style prompt is AUTHORED_NOT_YET_SUBMITTED and no generation exists."
+      ],
       "holds": [
         "RIGHTS_HOLD"
       ]

@@ -569,3 +569,45 @@ Review state: **SUPPORTED_WITH_SCOPE_LIMITS**. HOLDs: RIGHTS_HOLD.
 ### Revised: CLM-DUTCH-002-RUTGERS
 
 **Added note:** Fifth pass: the printed 1938 bundel itself credits Gezang 205 to 'Jodocus van Lodenstein (1620-1677) Bewerking van Abraham Rutgers (1751-1809)', so the Rutgers reworking is attested at the 1938 end of the chain as well as the 1806 end.
+
+## Sixth-pass additions — 2026-10-25 (DUTCH-005 activated)
+
+## CLM-DUTCH-005-TEXT — DUTCH-005: text, structure and date of 'Heerlijckheyds Loff'
+
+**Claim:** Heerlijckheyds Loff is a ten-stanza poem printed in Uyt-spanningen (1676) on pp. 155-158, dated 27 August 1665. Each stanza is printed as four statement lines, a call line and its abbreviated repeat, a tripled word with its object, the call again, and a closing line; the tripled word runs 'leven' (III-IV-V-VI) -> 'lieven' (VII-VIII-IX) -> 'loven' (X).
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-1676-HEERLIJCKHEYD-155-158, SRC-L-CRIT-2005-HEERLIJCKHEYD
+
+**Notes:** Read in full from the diplomatic transcription in the fifth pass; the whole text has now been seen, but not collated against a page image. The print abbreviates repeated call lines as 'etc.'; these are repeat instructions, not lacunae. Stanza I is printed in full and is the metrical model for the rest. The page carries an illustration (ill0155) that has not been viewed; no claim is made about it. Line I.7 ('Is uw costlijck leven, lieven, loven') has no expressed negation; the elliptical reading is adopted in the production package, with the 'costly' pun recorded as a secondary sense.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-005-TUNE — DUTCH-005: the printed tune direction is untraceable
+
+**Claim:** The printed direction reads 'Voyse: Un jour &c.', but no notation is held, the Dutch Song Database was unreachable, and the 2005 apparatus states that the melody's origin is unknown and that it is not the 'Un jour &c.' of text 27. No melody claim can therefore be made for this poem.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-1676-HEERLIJCKHEYD-155-158, SRC-L-CRIT-2005-HEERLIJCKHEYD, SRC-NL-LIEDERENBANK-INDEX
+
+**Notes:** The tune name is a designation the modern editors could not resolve, so it must not be presented as an identified melody. The 1938 hymnal's melody attribution for its reworking of this text (Loys Bourgeois) is a different, 20th-century object and is not evidence for the 1665 tune.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-005-ADAPTATION — DUTCH-005: the Russian text is a declared adaptation, not a translation
+
+**Claim:** The Russian lyric for DUTCH-005 is an independent literary adaptation that follows the ten stanzas in order and preserves the tripled word, with eight declared deviations (supplied negation in I.7, noun instead of infinitive in the tripled device, 'costelijck' as 'precious', expanded 'etc.' repeats, no invented refrains, 'Cijter' as 'цитра', an inline repeat in VI.5, and no metre or rhyme claim). No part of it may be presented as a translation, and it is not approved.
+
+**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED
+
+**Source IDs:** SRC-L-1676-HEERLIJCKHEYD-155-158
+
+**Notes:** Draft v0.1 authored in this repository on 2026-10-25; the owner's poetic revision is a required gate before READY_FOR_REVIEW. The deviation table is in SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §5. Nothing has been submitted to SUNO: the style prompt is AUTHORED_NOT_YET_SUBMITTED and no generation exists.
+
+**HOLDs:** RIGHTS_HOLD
+
+### Revised: CLM-HEERLIJCKHEYD-IDENTITY and CLM-HEERLIJCKHEYD-RECEPTION
+
+Both were `projectLevel` facts while the text had no work. DUTCH-005 now links them, so the `projectLevel` flag was removed and they are carried by a work record. Their claims and limits are unchanged.

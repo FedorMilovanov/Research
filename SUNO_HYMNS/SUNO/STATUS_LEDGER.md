@@ -57,6 +57,18 @@
 - **Publication status:** not applicable yet — nothing exists to publish.
 - **Gates before READY_FOR_REVIEW:** owner poetic revision; freeze lyric v1.0; freeze the prompt with a revision hash before submission; read metadata back from the actual output.
 
+## DUTCH-005 — «Слава Господня — "Ввысь, душа моя!"» (working title, not approved)
+
+- **Historical author:** Jodocus van Lodenstein (1620–1677).
+- **Source:** *Heerlijckheyds Loff*, *Uyt-spanningen* (1676), printed pp. 155–158, dated 27 August 1665; ten stanzas.
+- **Why this text:** it is the poem known from earlier sessions as `Heerlijckheyds Loff / Hoog, omhoog…` — one text, whose second element is its incipit. Identity was resolved on 2026-10-25 and the work was activated the same day from candidate `DUTCH-CAND-021`.
+- **The spine:** the tripled word moves `leven` → `lieven` → `loven`. It lives inside each stanza; it is not a chorus and must not be detached as one.
+- **Melody:** `Voyse: Un jour &c.` — untraced, no notation, and the 2005 apparatus says the origin is unknown and that it is not text 27's *Un jour*.
+- **Russian text:** `DUTCH-005-RU-DRAFT v0.1` — a declared **adaptation** with eight declared deviations, **not approved**. Owner poetic revision is the gate.
+- **Prompt:** `PROMPT-DUTCH-005-V1` — epic organ, Georgian-flavoured male monastic choir, one low male lead, ♩≈116 in 4/4, short organ intro, no stretched vowels, no guitars. Authored here, **never submitted**. A second direction (organ, low strings, cantor, choir from stanza 4) is a documented option.
+- **Production state:** `LYRIC_DRAFT`. **No generation, no audio, no cover, no export, no publication.**
+- **Do not confuse with:** DUTCH-002's brief (similar sound, different poem, different prompt) and the 1938 bundel's reworking of this text to a Bourgeois melody (a protected, later object).
+
 ## Adjacent works — keep out of the Dutch historical catalog
 
 ### 1 Peter 1 Scripture-song draft (Russian)

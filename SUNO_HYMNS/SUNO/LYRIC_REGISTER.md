@@ -44,6 +44,7 @@ For DUTCH-004 all six layers are deliberately kept apart in one package: the 167
 | DUTCH-002 V2 | Same source text chain; separate recording version | NOT IN REPOSITORY | NOT IN REPOSITORY | NOT CAPTURED |
 | DUTCH-003 V1 | Modern scholarly edition locator; original 1630 leaf not acquired | NOT IN REPOSITORY | NOT IN REPOSITORY | NOT CAPTURED |
 | DUTCH-004 (draft) | 1676 print pp. 74–75, read in full; 1727 collation recorded | DUTCH-004-RU-DRAFT v0.1 in `DUTCH-004_PRODUCTION_PACKAGE.md` §3 | Not yet frozen; gloss in §2 | PROMPT-DUTCH-004-V1 authored, never submitted |
+| DUTCH-005 (draft) | 1676 print pp. 155–158, read in full from the diplomatic transcription; **no page image yet** | DUTCH-005-RU-DRAFT v0.1 in `DUTCH-005_PRODUCTION_PACKAGE.md` §4 | Not yet frozen; literal gloss in §3; eight deviations in §5 | PROMPT-DUTCH-005-V1 authored, never submitted |
 
 ## Intake checklist
 
