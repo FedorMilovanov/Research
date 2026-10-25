@@ -45,16 +45,19 @@
 |---|---|
 | БИОГРАФИИ — 00 README AND NAVIGATION | `151Fbp92RxcP1hW0YbfdLgyuHuPV1FqQU` |
 | БИОГРАФИИ — 01 GILL RELOCATION AND SUPERSESSION RECORD | `16n8Min16U2l9eYNowlB1QqbAQ5SZEKYt` |
-| БИОГРАФИИ — 08 DRIVE LIBRARY AND RIGHTS LEDGER | `1I0VPEYUnv1JXrxZvRQKk2XIO3zkQDPlx` |
+| ~~БИОГРАФИИ — 08 DRIVE LIBRARY AND RIGHTS LEDGER~~ | ~~`1I0VPEYUnv1JXrxZvRQKk2XIO3zkQDPlx`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
+| БИОГРАФИИ — 08 Drive Library and Rights Ledger **(rev 2, 2026-10-25, коммит `7528ec5`)** | `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` |
 
 В `02 — СТИВЕН ЧАРНОК (1628–1680)`:
 
 | Объект | Drive ID |
 |---|---|
-| Стивен Чарнок — 00 README AND NAVIGATION | `1zJbYlHbRVJueNtp8fXoCn20jqVMFkt4G` |
+| ~~Стивен Чарнок — 00 README AND NAVIGATION~~ | ~~`1zJbYlHbRVJueNtp8fXoCn20jqVMFkt4G`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
+| Стивен Чарнок — 00 README AND NAVIGATION **(rev 2, 2026-10-25, коммит `7528ec5`)** | `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` |
 | Стивен Чарнок — 01 Witnesses and Evidence Hierarchy | `17gCbSlmrlqTTjYX6rmjGk7BcurszBFnT` |
 | Стивен Чарнок — 02 Chronology and Date Conflicts | `1-XAn2H3BmucaDFOxcIso1hCdzFFvTKBO` |
-| Стивен Чарнок — 03 Works Editions and Publication Chronology | `17-c0geD8iCl2-YV4kryp3z4P-gKCVguh` |
+| ~~Стивен Чарнок — 03 Works Editions and Publication Chronology~~ | ~~`17-c0geD8iCl2-YV4kryp3z4P-gKCVguh`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
+| Стивен Чарнок — 03 Works Editions and Publication Chronology **(rev 2, 2026-10-25, коммит `7528ec5`)** | `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` |
 | Стивен Чарнок — 04 Character Ministry and Theology | `1mNEAz6w1DZC_pEEq3TlcbnpdHCWQvPGb` |
 | Стивен Чарнок — 05 Controversies and Claim Audit | `1lliBwqiqe_ZG6W2H0JPpG8ey7-NfLyph` |
 | Стивен Чарнок — 06 Corpus Access Matrix and Locators | `1BAs64-hsi1KwWkoTq73S453Ax3eBmtLw` |
@@ -75,15 +78,21 @@
 | Группа зеркал | Drive-состояние | Относительно репозитория |
 |---|---|---|
 | Тома **08, 09, 10, 11, 12, 13, 14** | загружены | **актуальны** (08–10 не менялись после загрузки; 11–14 загружены в день получения) |
-| Тома **01, 02, 03, 05**, Чарнокский `00 README AND NAVIGATION`, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | загружены **до** получения Wood (`A71277.0001.001`) и до получения трёх объектов 1680 года (`B02133`, `A52960`, `A39134`) | **`SUPERSEDED`** относительно репозитория |
+| Чарнокский `00 README AND NAVIGATION`, том **03**, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU`, `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ`, `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` | **актуальны**; прежние копии (`1zJbYlHbRVJueNtp8fXoCn20jqVMFkt4G`, `17-c0geD8iCl2-YV4kryp3z4P-gKCVguh`, `1I0VPEYUnv1JXrxZvRQKk2XIO3zkQDPlx`) помечены `SUPERSEDED` и **не удалялись** |
+| Тома **01, 02, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION` | загружены **до** получения Wood (`A71277.0001.001`) и до получения объектов 1680 года (`B02133`, `A52960`, `A39134`) и первых изданий (`A32726`, `A32723`, `A32724`, `A32722`) | **`SUPERSEDED`** относительно репозитория |
 
-Отставание Drive-копий семи объектов (тома 01, 02, 03, 05, Чарнокский 00, `БИОГРАФИИ` 00, ledger)
-состоит в том, что они не содержат: вход [429] и Fasti 1654 Wood; `CONFLICT-12`; усиления
-`CLAIM-06`; broadside *The sayings…* (том 12); *New poems* (том 13); элегию (том 14);
-`CONFLICT-14`; подтверждение Наум 1:3; полной каталогизации Wing/ESTC для девяти объектов
-EEBO-TCP. Авторитетная копия — **репозиторий**, коммит `c81ec54` и позже. Расхождение
-зафиксировано здесь, а не замалчивается. **Повторная загрузка семи отстающих зеркал не выполнена;
-это открытая задача, а не закрытая.**
+Отстающие Drive-копии (тома 01, 02, 04, 05 и `БИОГРАФИИ` 00) не содержат: вход [429] и Fasti 1654
+Wood; `CONFLICT-12`; усиления `CLAIM-06`; broadside *The sayings…* (том 12); *New poems* (том 13);
+элегию (том 14); `CONFLICT-14`; подтверждение Наум 1:3; полной каталогизации Wing/ESTC для девяти
+объектов EEBO-TCP; лист «Advertisement» и титульный лист издания 1680; предисл 1682; имён Wichens и
+Ashton; печатного локатора стр. 47 для `CHARN_PRACT_ATHEISM_001`; `CONFLICT-15` и `CONFLICT-16`.
+Авторитетная копия — **репозиторий**, коммит `7528ec5` и позже. Расхождение зафиксировано здесь, а
+не замалчивается.
+
+**Правило работы с зеркалами (зафиксировано 2026-10-25).** Drive-зеркала — копии для чтения, не
+авторитет. Обновление зеркала выполняется загрузкой нового файла с маркером «rev 2» и датой в
+имени; прежняя копия **не удаляется**, а помечается `SUPERSEDED` в этой таблице. Удаления чужих
+копий не производятся.
 
 ### 2.2. Custody-статус
 
