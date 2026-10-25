@@ -83,17 +83,18 @@
 - **Copy brought into range 2026-10-25:** the description measured 4881 against the channel's 3500–4600 range and no gate saw it. It is now 4598; the cut is tabulated in `DUTCH-005_YOUTUBE.md` § 7, and `check_copy_lengths.py` enforces both bounds.
 - **Do not confuse with:** DUTCH-002's brief (similar sound, different poem, different prompt) and the 1938 bundel's reworking of this text to a Bourgeois melody (a protected, later object).
 
-## PHOS-001 — «Свет радостный» (Φῶς ἱλαρόν) — the ancient-hymn lane
+## PHOS-001 — «Свет Отрадный» (Φῶς ἱλαρόν) — the ancient-hymn lane
 
 - **What it is:** the six-line Greek hymn sung at the lighting of the lamps, the earliest complete Christian hymn outside Scripture that is still in use. The owner asked for the oldest hymn after the Gospels, a Russian translation and a SUNO package (2026-10-26).
 - **Historical author:** unknown. Basil of Caesarea, *De Spiritu Sancto* 29.73 (c. 375), says he cannot name the author and calls the hymn an ancient form. The ascriptions to Athenogenes and to Sophronius are recorded as attributions only.
 - **Source anchor:** the received six-line Greek text, read in an open choral library; **a printed Horologion has not been collated** (`LOCATOR_HOLD`).
 - **Not established and not to be used in copy:** that the hymn is first recorded in the *Apostolic Constitutions* (VIII.35) — `EVIDENCE_HOLD`, `CLM-PHOS-AC-HOLD`; and any second- or third-century date of composition.
-- **Russian text:** `PHOS-001-RU v0.2` in `PHOS-001_LYRICS.md` — a verse **translation**, six lines into six lines, no refrain, no repeated or added line; no rhyme because the Greek has none — its six line-endings do not rhyme and its syllable counts are 15·15·18·16·16·18. The text is word-for-word where Russian allows: one added auxiliary «быть», the articles dropped, one pair of words reordered in line 3. Russian prose translations exist and were used as a sense check only; the Church Slavonic «Свете тихий» is not Russian and is not the source of our wording.
+- **Russian text:** `PHOS-001-RU v0.3` in `PHOS-001_LYRICS.md` — a verse **translation**, six lines into six lines, no refrain, no repeated or added line; no rhyme because the Greek has none — its six line-endings do not rhyme and its syllable counts are 15·15·18·16·16·18. The text is word-for-word where Russian allows: one added auxiliary «быть», the articles dropped, one pair of words reordered in line 3. Russian prose translations exist and were used as a sense check only; the Church Slavonic «Свете тихий» is not Russian and is not the source of our wording.
 - **Style:** five directions in `PHOS-001_STYLE.md`, `STYLE-PHOS-001-A`…`E`; A sits in the primary slot only because the registry must carry one prompt. None submitted.
 - **Production state:** `LYRIC_DRAFT`. **No generation, no audio, no cover, no export, no metadata readback.**
 - **Publication status:** `UNKNOWN_NOT_VERIFIED` — there is nothing to publish yet, and channel copy is deliberately not written before a take exists.
-- **Open:** owner's decisions on the title, on the refusal of rhyme and on keeping the suspended reference of the three genitive adjectives; collation of the Greek text; the *Apostolic Constitutions* check; P. Lond. 2037B seen in a catalogue.
+- **Closed by the owner 2026-10-26:** the title **«Свет Отрадный»**; the vocative forms «Иисусе Христе», «Сыне Божий»; the suspended reference of the three genitive adjectives — «как в греческом». The reading of ἱλαρόν as «отрадный» is his choice; the dictionary-literal «радостный» is named in the translation dossier, not hidden.
+- **Open:** the length of the track (the hymn is sung once; repeating it whole is not authorised), the choice of style A–E and the first generation; collation of the Greek text; the *Apostolic Constitutions* check; P. Lond. 2037B seen in a catalogue.
 - **Package:** `PHOS-001_PRODUCTION_PACKAGE.md`; research: `../RESEARCH/DOSSIER_PHOS-001_PHOS_HILARON.md`; translation decisions: `../RESEARCH/DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md`.
 
 ## Adjacent works — keep out of the Dutch historical catalog
