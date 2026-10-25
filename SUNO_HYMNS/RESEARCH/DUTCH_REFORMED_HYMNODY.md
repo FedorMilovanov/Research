@@ -51,3 +51,14 @@ Musicological context: https://www.dbnl.org/tekst/grij001nede01_01/grij001nede01
 ## 7. Limits and next questions
 
 This is an initial map, not a definitive institutional history. Local practice varied; a prescriptive order does not document every congregation's practice. A songbook preface gives its editor's rationale, not universal reception. Future work should compare original synod acts, title pages and tune directions, local consistorial records where available, and scholarship with exact page references.
+
+
+## 8. Edition and access layers — critical correction
+
+The 1676 first-edition text hosted by DBNL is described as a diplomatic rendering, with omitted parts and an editorial correction log. This makes it useful as a primary-source witness, but not a substitute for checking a page image when the claim depends on exact typography, punctuation or a corrected date.
+
+The later 2005 Ros/Strengholt critical edition has its own numbering and editorial apparatus and is explicitly marked as copyright-protected by DBNL. Some critical-edition item numbers group multiple original texts; some repeated portions or stanza elements are supplied for the melody. Keep the 1676 item, 2005 edited item and any modern adaptation linked but distinct.
+
+The accessible DBNL page for the Utrecht Hymni songbook refers to the 1967 facsimile by Jan van Biezen and Marie Veldhuyzen of a work first printed in 1615. Cite it as the 1967 facsimile when describing the object consulted; do not call it an independent digital scan of the 1615 original.
+
+The date of II. Hert-sterckte in Jehova is specially constrained: the accessed editorial record shows 4 January 1674, but says the original print erroneously gave 1664 and that the modern digital text emends it. Keep this particular claim on EVIDENCE_HOLD until the original page image has been checked.

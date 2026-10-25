@@ -69,6 +69,10 @@ The owner's accumulated preferences include restrained, dark acoustic sacred mus
 
 These are preferences and examples, not a fixed prompt for every hymn. Choose style according to the text, voice, tempo, dynamic arc and intended listener. Exact final prompts used for existing Dutch tracks have not yet been collected into this repository.
 
+## Canonical per-version records
+
+Use LYRIC_REGISTER.md for historical/source text, normalized transcription, Russian adaptation and the exact SUNO-ready lyric. Use PROMPT_AND_VERSION_REGISTER.md to capture the submitted prompt verbatim and attach every generation/export to a stable version ID. Missing text/prompt remains NOT CAPTURED; do not infer it from the finished sound.
+
 ## Publication and rights boundary
 
 Historical source research, audio generation, export, metadata QA, artwork approval, public upload and publication verification are separate milestones. The production lane does not grant rights to a modern critical edition, translation, recording, portrait or generated image. Add a public URL only after checking the live target.

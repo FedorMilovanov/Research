@@ -27,6 +27,8 @@ The catalog distinguishes asset preparation from public release. Do not mark any
 
 ## First work package
 
+0. Read REVIEW_LOG_2026-10-25.md, CLAIM_LEDGER.md, SONGBOOK_REGISTER.md, and GENRE_AND_CLASSIFICATION.md before adding research. Run the read-only project validator: python SUNO_HYMNS/scripts/validate_project_registry.py. Respect the date EVIDENCE_HOLD for II. Hert-sterckte until the original page image is inspected.
+
 1. Locate the exact current lyric file and final prompt for each existing version if they are not available in the active workspace. The Windows paths in ASSET_MANIFEST.md are inventory notes, not GitHub uploads.
 2. Record each Suno prompt verbatim, not reconstructed from prose recollection. Store prompt, lyric revision ID, generation date, output filename, duration and cover ID together.
 3. For DUTCH-003, read back actual MP3 ID3 tags with ffprobe or a tag reader. A metadata-rewrite command was proposed, but success is unconfirmed. Confirm the final cover after the cool/muted cinematic color pass.

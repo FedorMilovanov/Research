@@ -39,6 +39,15 @@ The 1674 source poem is titled *Hert-sterckte in Jehova. Op 1 Sam. 30:6*. Its pu
 - Context: https://www.dbnl.org/tekst/lode002pjbu01_01/lode002pjbu01_01_0013.php
 - Critical commentary: https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0040.php
 
+## Two separate Rees poems under the same title
+
+The critical edition distinguishes:
+
+- **I. Hert-sterckte in Jehova**, item 34, dated 28 December 1673 in the critical edition, with melody directions “Onherroepelijke Jeugd” or “Gavotte. A la fronté”.
+- **II. Hert-sterckte in Jehova**, item 35, later linked to the seven-stanza hymn *Zelfverloochening* in *Evangelische Gezangen* (1806), no. LXVIII.
+
+The current Russian hymn follows the later Rutgers hymnbook form. Do not silently merge the two source poems. The displayed date of II carries a date emendation caveat: the original print is reported to misprint 1664, while the digital edition corrects it to 1674. The claim remains on EVIDENCE_HOLD pending visual inspection of the original page image.
+
 ## Rutgers adaptation chain
 
 Abraham Rutgers revised Lodenstein material for *Evangelische Gezangen* (1806), where hymn 68 is titled *Zelfverloochening*. This seven-stanza form is related to, but not textually identical with, the full 1674 source. The Russian song belongs to the later reworking lineage.

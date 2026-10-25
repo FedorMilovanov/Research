@@ -37,10 +37,16 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **RESEARCH/DUTCH_HYMN_CATALOG.md** — records for the three Dutch works developed in the conversation.
 - **RESEARCH/DUTCH_HYMN_BACKLOG.md** — candidates not recorded as produced in the current project context.
 - **RESEARCH/AUTHOR_*.md** — focused author dossiers.
-- **RESEARCH/SOURCE_REGISTER.md** — sources, supported claims, locators, access and rights boundaries.
+- **RESEARCH/SOURCE_REGISTER.md** — human-readable view of the source registry.
+- **RESEARCH/CLAIM_LEDGER.md** — claim-by-claim support, caveats and typed HOLDs.
+- **RESEARCH/SONGBOOK_REGISTER.md** — publication editions and the actual access layer.
+- **RESEARCH/GENRE_AND_CLASSIFICATION.md** — controlled distinctions between psalms, devotional songs, sonnets, later adaptations and modern settings.
+- **RESEARCH/REVIEW_LOG_2026-10-25.md** — corrections made by the second audit.
 - **HANDOFF_FOR_NEXT_AGENT.md** — continuation instructions for a new Arena/chat agent.
 - **data/track-catalog-v1.json** — project-local machine-readable track catalog.
 - **data/source-registry-v1.json** — project-local source registry.
+- **data/author-registry-v1.json**, **data/claim-ledger-v1.json**, **data/songbook-registry-v1.json** — machine-readable authors, reviewed claims and edition histories.
+- **scripts/validate_project_registry.py** — read-only state/cross-reference validation.
 
 ## Status language
 
@@ -72,6 +78,14 @@ No public release status is promoted to verified in this repository snapshot. Se
 - A catalog page or reachable URL is not the same as full-object access; an exact title is not an exact locator; a historical public-domain text does not automatically clear rights in a modern critical edition, scan, translation or visual asset.
 - Keep user-uploaded media and local Windows files outside Git unless explicitly transferred and their custody/rights are handled.
 - Preserve historical distinctions and unresolved questions. Use OPEN, HYPOTHESIS, CONFLICT, SUPERSEDED or an appropriate HOLD rather than silently forcing a resolution.
+
+## Read-only validation
+
+From the repository root, run:
+
+    python SUNO_HYMNS/scripts/validate_project_registry.py
+
+The validator does not repair or modify files. It fails closed on invalid global state values, unknown IDs, missing source references and misleading status combinations.
 
 ## Next useful milestone
 
