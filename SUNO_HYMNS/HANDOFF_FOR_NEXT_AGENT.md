@@ -16,7 +16,7 @@ Read the repository root files before touching this project:
 7. The specific SUNO or RESEARCH lane README relevant to the task.
 8. `SUNO_HYMNS/RESEARCH/LESSONS_AND_GUARDS.md` — the register of errors already made here, with the guard that now catches each. Read it before drafting a lyric, applying a review, or generating artwork, so the same mistakes are not repeated at the owner's expense.
 9. `projects/README.md`, then `projects/COMMON_RULES.md` and the rule sheet of the exact project (`projects/lord-god-strength/RULES.md` or `projects/legendary-poet/RULES.md`). **The two channels have two rule sets that are 80% identical and differ exactly where mixing them is expensive.** `projects/WORKS_LEDGER.md` records what has already been made and what has not.
-10. `SUNO_HYMNS/SUNO/PUBLICATION_LANE.md` — **before you touch any title, description, pinned comment, Telegram post or tag.** It states which repository is normative for markup and comment layout (`video-channel-manager`), where the three copy files are, which gates must pass, and the seven traps that already cost a release. Formatting rules are not restated in this repository on purpose: one normative text, one place.
+10. `SUNO_HYMNS/SUNO/PUBLICATION_LANE.md` — **before you touch any title, description, pinned comment, Telegram post or tag.** It says which file governs what, where the three copy files are, which five gates must pass, and the eight traps that already cost a release. Note the division of labour: the editorial rules live in `projects/`, split by channel; `video-channel-manager` keeps platform behaviour, exact IDs and anything that reaches a provider. Neither restates the other wholesale, and a contradiction between them stops publication instead of being resolved silently.
 
 Do not promote this scoped project to root authority. Do not change the global evidence vocabulary. Normal repository changes go through a bounded branch and PR.
 
@@ -132,7 +132,7 @@ DUTCH-005 now has a complete publication package for two surfaces, and **nothing
 
 **New since the sixth pass:**
 
-1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, a 4461-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
+1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, a 4483-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
 2. `SUNO/DUTCH-005_TELEGRAM.md` — the @lordchrist post in Telegram markup, plus an HTML twin.
 3. `SUNO/DUTCH-005_PINNED.md` — **two** pinned comments: one on the hymn (date under the last stanza, the meaning of the title, `leven`/`lieven`/`loven`, the edition chain, the missing melody), one on how the Dutch actually sang (psalms only, the 1574 organ ban, the `voorzanger`, the house circles, and Lodenstein's own six singing rules from the preface).
 4. `RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` — 88 addresses behind the second pinned comment, with honest statuses: 5 opened and read, 74 found in results, 9 still only library leads. Nothing in either закреп rests on a snippet alone.

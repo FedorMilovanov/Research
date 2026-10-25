@@ -32,8 +32,8 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 
 - **SUNO/README.md** — production workflow and state model.
 - **SUNO/STATUS_LEDGER.md** — known prepared works, incomplete checks and publication boundaries.
-- **SUNO/PUBLICATION_LANE.md** — the bridge to the channel standards: which repository is normative for markup and comment layout, the three copy files, the four gates, and the traps that already cost a release. Read this before editing any copy.
-- **SUNO/DUTCH-005_YOUTUBE.md** — title options, the ready description (4461 characters, 12 bold and 5 italic spans), hidden tags, a checklist, and § 0: the verbatim post-mortem of the markup that broke live in Studio.
+- **SUNO/PUBLICATION_LANE.md** — the bridge to the channel standards: which repository is normative for markup and comment layout, the three copy files, the five gates, and the eight traps that already cost a release. Read this before editing any copy.
+- **SUNO/DUTCH-005_YOUTUBE.md** — title options, the ready description (4483 characters, 12 bold and 5 italic spans), hidden tags, a checklist, and § 0: the verbatim post-mortem of the markup that broke live in Studio.
 - **SUNO/DUTCH-005_TELEGRAM.md** — the @lordchrist post for the same hymn, in Telegram markup (`**bold**`, `*italic*`), with an HTML twin.
 - **SUNO/DUTCH-005_PINNED.md** — two pinned comments for YouTube: one on the hymn, one on how the Dutch sang, both in YouTube markup and gated.
 - **SUNO/STYLE_AND_PRODUCTION_RULES.md** — accumulated user preferences and reproducibility rules.
