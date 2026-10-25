@@ -279,7 +279,8 @@ Trinity, Exposition — и всё). У Чарнока второй том (158 �
 | **Маковий** (польский реформатский богослов) | ***Collegia theologica***, дисп. 18 | **×2** | 04 §0U; **новое лицо** |
 | **Евсевий Рено** (S.J., 1594–1663) | ***Theologia naturalis*** | ×2 | 04 §0U; **новое лицо** |
 | **Николя Коссен** (S.J., 1583–1651) | ***Polyhistor symbolicus*** | ×2 | 04 §0U; **новое лицо** |
-| **Статон** | «The Righteous Mans Plea», проповедь 6, стр. 28 | ×1 | 04 §0U; **новое лицо**, `LOCATOR_HOLD` |
+| **ДЖОН СТАТОН** (d. 1639), D.D. | ***The Righteous Mans Plea to True Happinesse***, **десять проповедей на Пс. 4:6** (Лондон, 1640), проповедь 6, стр. 28 | ×1 | 04 §0U; **новое лицо, ИДЕНТИФИЦИРОВАНО** — «**Doctor in Divinity, sometimes fellow of IMMANUEL COLLEDGE in Cambridge, late preacher of Aldermanbury, London**». **ЧЕТВЁРТЫЙ ЭММАНУЭЛЕВСКИЙ СЛЕД В КОРПУСЕ** (после Чарнока, Инжело и — предположительно — Гудвина) |
+| **Линданус (ГИПОТЕЗА)** | «Lingend Tom. 2/3», «Lingend de Eucharist» | **×4** | 04 §0N, §0Q, §0R, §0T; `LOCATOR_HOLD` — гипотеза: **Вильгельм Линданус** (епископ Гентский, ум. 1588), автор ***Panoplia evangelica***; но «Tom. 2 p. 926» и «de Eucharistia» не подтверждаются |
 | **Клод** | «sur la parabole des Noces» | ×1 | 04 §0U; **новое лицо**, `LOCATOR_HOLD` |
 | **Светоний**, **Арриан** (об Эпиктете), **Златоуст** | — | по 1 | 04 §0U; **новые лица**, классика |
 | «Bolduc. in loc.», «Ca••••••••. Dissert p. 72, 73.», «〈◊〉〈◊〉. Theolog Nat. p. 757.» | дискурс о владычестве | по 1 | 04 §0U; `LOCATOR_HOLD` |
