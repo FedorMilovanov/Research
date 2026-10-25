@@ -76,7 +76,8 @@
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 8, 2026-10-25, коммит `015463b`)~~ | ~~`1DHwp_XqANmmbySMelnAZKFuX3rj9n3G6`~~ → **`SUPERSEDED`**, см. rev 9 |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 9, 2026-10-25, коммит `31bf9ce`)~~ | ~~`17dap98Fh1_qJrJb8GNvkZ5LSODhpevs7`~~ → **`SUPERSEDED`**, см. rev 10 |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 10, 2026-10-25, коммит `9074499`)~~ | ~~`1IUizDEw5mlZnc85i2wAtuaKgwq2i1bme`~~ → **`SUPERSEDED`**, см. rev 11 |
-| Стивен Чарнок — 00 README AND NAVIGATION **(rev 11, 2026-10-25, коммит `7cbd4e0`)** | `1F7LRWGVgPiMxXHjyPYRRY57tzCipk6zh` |
+| ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 11, 2026-10-25, коммит `7cbd4e0`)~~ | ~~`1F7LRWGVgPiMxXHjyPYRRY57tzCipk6zh`~~ → **`SUPERSEDED`**, см. rev 12 |
+| Стивен Чарнок — 00 README AND NAVIGATION **(rev 12, 2026-10-25, коммит `2fa67ef`)** | `1wre9OTl1hLUkCNwb_3ckpz4HYYuWmpb-` |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1giMeyUhqxHGFEc9At2H-kJwCbrxOVzpf`~~ → **`SUPERSEDED`**, см. rev 4 |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 4, 2026-10-25, коммит `e64d27d`)~~ | ~~`1kQCmXLcYMth7ijwLU-G5Xgthu2FlXIi9`~~ → **`SUPERSEDED`**, см. rev 5 |
 | Стивен Чарнок — 01 Witnesses and Evidence Hierarchy **(rev 5, 2026-10-25, коммит `54ba4c4`)** | `1ODU8A8uJQh8olYr0AfpnWjMxDxrwzX3x` |
@@ -90,7 +91,8 @@
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 7, 2026-10-25, коммит `015463b`)~~ | ~~`1NEO6GNpDet2nFVgCpuEND05AxU5iCk9t`~~ → **`SUPERSEDED`**, см. rev 8 |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 8, 2026-10-25, коммит `31bf9ce`)~~ | ~~`1lnj59jWXmoF48DqIlJ4yvCWiorubTw7l`~~ → **`SUPERSEDED`**, см. rev 9 |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 9, 2026-10-25, коммит `9074499`)~~ | ~~`14za2gKO-o1wrJK31NSAwNDXPYRkZbSIL`~~ → **`SUPERSEDED`**, см. rev 10 |
-| Стивен Чарнок — 04 Character Ministry and Theology **(rev 10, 2026-10-25, коммит `7cbd4e0`)** | `1Z5MkhUv1O9WlbwfVQ4zJlSSMv1YWvjBu` |
+| ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 10, 2026-10-25, коммит `7cbd4e0`)~~ | ~~`1Z5MkhUv1O9WlbwfVQ4zJlSSMv1YWvjBu`~~ → **`SUPERSEDED`**, см. rev 11 |
+| Стивен Чарнок — 04 Character Ministry and Theology **(rev 11, 2026-10-25, коммит `2fa67ef`)** | `1xHjEcuduoxXaMjkJA8X4cYVG5DkEOyUT` |
 | Стивен Чарнок — 05 Controversies and Claim Audit **(rev 2, 2026-10-25, коммит `1439b96`)** | `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` |
 | Стивен Чарнок — 06 Corpus Access Matrix and Locators **(rev 3, 2026-10-25, коммит `54ba4c4`)** | `1eTDM6P4SHBQDdG9cL7XXHLMYTFF69RCL` |
 | Стивен Чарнок — 07 Repo Crosslinks and Drive Mirror | `1FZtigfn0Ta8IA8BfRFgpufcwwQ37Hcpk` |
@@ -104,6 +106,7 @@
 | Стивен Чарнок — 14 An Elegy 1680 PRIMARY TRANSCRIPTION | `1NF0x8VTiU61u6gqDcc2_hYLC9JkcaYZ2` |
 | ~~Стивен Чарнок — 15 The Emmanuel Line Preston Poole Fowler (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1sR3cFyf9XLTnbjzGWeU6mj2a4QqShB7c`~~ → **`SUPERSEDED`**, см. rev 5 |
 | Стивен Чарнок — 15 The Emmanuel Line Preston Poole Fowler **(rev 5, 2026-10-25, коммит `bd5c847`)** | `10lzC4pI0YvJ9dZ5UK2ctqryIG-sr3ANo` |
+| Стивен Чарнок — 16 Series Architecture and Persons Chain **(rev 1, 2026-10-25, коммит `b8924a9`)** | `1lrBsK6HgsetyWQX04mkW_ZUZj1Cf-DOo` |
 
 Эти объекты — **зеркала исследовательских досье**, не первоисточники. Они не снимают `LOCATOR_HOLD`
 и не являются цитируемым material.
@@ -116,12 +119,13 @@
 | Чарнокский `00 README AND NAVIGATION`, тома **01, 02, 03, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` (Чарнок 00), `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` (03), `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` (ledger), `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` (01), `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` (02), `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` (04), `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` (05), `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` (БИОГРАФИИ 00) | **актуальны** (коммит `1439b96`); прежние копии помечены `SUPERSEDED` и **не удалялись** |
 | — | **Все зеркала томов отдела приведены к актуальному состоянию** (16 томов + rev 2 файлы). Отстающих копий не осталось | — |
 
-**Состояние на 2026-10-25, коммит `7cbd4e0`: отстающих зеркал не осталось.** **Одиннадцатая
-волна** загружена 2026-10-25: тома **00, 04** (причина — **все восемь дискурсов *Supplement* 1683
-прочитаны**: «Delight in Prayer» `1:5`, «Sins of the Regenerate» `1:8`, «Pardon of Sin» `1:9`;
-сводная таблица §0J). Прежние rev 10 / rev 9 копии помечены `SUPERSEDED` и **не удалялись**.
-Актуальные ревизии: 00 = rev 11, 01 = rev 5, 02 = rev 7, 03 = rev 7, 04 = rev 10, 06 = rev 3,
-12 = rev 4, 15 = rev 5, реестр = rev 10. Все 15 томов отдела
+**Состояние на 2026-10-25, коммит `2fa67ef`: отстающих зеркал не осталось.** **Двенадцатая
+волна** загружена 2026-10-25: тома **00, 04, 16** (причина — **том 16 «Архитектура серии и цепь
+личностей»**: план серии из 10 документов, реестр ~70 лиц с 16 типами связей, спецификация пяти
+SVG-карт; плюс §0K — последняя проповедь «Gods Patience» прочитана целиком). Прежние rev 11 /
+rev 10 копии помечены `SUPERSEDED` и **не удалялись**. Актуальные ревизии: 00 = rev 12, 01 = rev 5,
+02 = rev 7, 03 = rev 7, 04 = rev 11, 06 = rev 3, 12 = rev 4, 15 = rev 5, **16 = rev 1**,
+реестр = rev 11. Все 15 томов отдела
 и все три файла уровня `БИОГРАФИИ` имеют актуальные Drive-копии. **Третья волна rev 3** загружена
 2026-10-25 по итогам коммитов `e4dc14`, `4b898ef`, `ef6ab9e`, `7135746`, `5cd7d53`, `c1ed17a`,
 `7a28e89`, `976dbfa`:
