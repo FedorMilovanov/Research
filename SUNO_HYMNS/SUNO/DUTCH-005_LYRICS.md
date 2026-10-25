@@ -6,7 +6,7 @@
 **Revision:** `DUTCH-005-RU v0.5` — replaces v0.4.
 **Status:** working draft, **not approved**.
 
-This file holds the **clean lyric only**: no tags, no prompts, no accent marks. Performable version with structural tags and two stress marks: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md). Style: [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md). Gloss and deviations: [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3, §5.
+This file holds the **clean lyric only**: no tags, no prompts, no accent marks. Performable version with structural tags and six stress marks: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md). Style: [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md). Gloss and deviations: [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3, §5.
 
 An **adaptation**, not a translation. Ten stanzas in source order; the threefold call and the tripled word are the source's own; **no line, refrain or repetition has been added**.
 

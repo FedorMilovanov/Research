@@ -318,15 +318,24 @@ Twelve defects in v0.4, all in lines I had already passed:
 - **X.5** — `mond` is the mouth, not speech.
 - **X.8** — `кто` cannot refer to dust; `hier is stoff` needs `что`.
 
-## 2. Stress — two words, and a correction of my own
+## 2. Pronunciation — two rules, not one, and both written down (pass 12)
 
-The owner named two words sung wrongly: **драго́е** as *дра́гое*, **тре́пета** as *трепе́та*. Both are now marked in the SUNO-ready file, inline, and **nothing else is**.
+The owner's correction after the over-marking: don't mark everything, do write **ё** everywhere it belongs, and do put stress on the words grammar actually makes hard — while remembering that a sung stress may move for the sake of a rhyme.
 
-The first attempt at this fix marked every polysyllabic word — 218 accents. **The owner rejected it in the same pass, correctly:** an accent is not a neutral annotation, it is a change to the text the model reads, and marking the whole lyric bends the diction, costs the model's own phrasing and flattens the delivery. That draft was committed and pushed (`8814412`) before the objection, so the record has to say so: commit `8814412` carries the wrong rule and the over-marked text. This pass reverts both. The rule in `STYLE_AND_PRODUCTION_RULES.md` and the guidance in `SUNO/README.md` now say the opposite, with the reason recorded, and no lyric was ever generated from the over-marked text.
+The mistake in pass 11 was treating "stress" as one problem. It is two:
 
-Two marks remain, both on words heard wrong from a take. A short watch list of words that *could* go wrong is kept **unmarked** in the SUNO file (`сто́ит`, `соединена́`, `дару́ет`, `помы́сли`, `Иису́с`, `уста́`, `зрят`) — each is added only if a take gets it wrong.
+1. **ё is orthography.** `всё`, `ещё`, `её`, `моё`, `нём`, `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт` — always written, never optional, in both lyric files and in prose. `все` (plural), `свет`, `Его` keep `е` and must not be "improved". A ё-word never gets an accent as well: the letter already carries the stress.
+2. **A stress mark is a hint for the model**, and hints are rationed. It goes on a word when the same spelling can carry two stresses (`сто́ит`/`стои́т`), when the form's stress is not where a model defaults (imperatives, short participles on the ending, `-у́ет` verbs), when the word is long or compound, when it is a biblical name, or when it has been heard sung wrong. It does **not** go on monosyllables, ё-words or plain unambiguous polysyllables — and if the list passes about a dozen words it has stopped being selective.
 
-Verified by machine: the two lyric files are identical once the tags, the single echo and the two accents are stripped — 90 lines, **0 differences**.
+Both rules are now in `STYLE_AND_PRODUCTION_RULES.md` § Pronunciation marks and summarised in `SUNO/README.md`, with the over-marking recorded as a rejected practice and the reason: an accent changes the text the model reads and can cost its delivery.
+
+**Sung stress versus dictionary stress** is written down as its own rule, because it is real: rhyme and metre can move a stress legitimately, and the sung form then wins — recorded, not "corrected". What is not legitimate is a stress nothing in the stanza explains; that is a defect.
+
+Applied to this text: **six** marks — `драго́е`, `тре́пета` (heard wrong), `сто́ит`, `помы́сли`, `соединена́`, `дару́ет` (rule). A rhyme check found nothing here that needs a shifted stress; `суета`/`тщета` and `хвалы` already fall where they should.
+
+New mechanical check, `scripts/check_ru_lyric.py`: it lists every occurrence of a word that must carry ё in context (including `все`/`всё`, decided per line) and fails a file carrying more than a dozen accented words, so neither failure mode — lost ё, blanket marking — can come back unnoticed. Result on this text: 6 accented words; the only ё question is `все языки` (10.1), which is the correct plural.
+
+`ё` audit of the whole lyric: no missing ё found; `всё`, `моё`, `Нём`, `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт` all printed with the dots.
 
 ## 3. Metre, re-counted
 

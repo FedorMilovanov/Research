@@ -64,14 +64,58 @@ Each direction is recorded with: an ID, a one-line label, the prompt string, wha
 
 ## Pronunciation marks
 
-- Inspect the exact inflected form in its sentence, not just the dictionary lemma.
-- Add acute stress marks where SUNO has a plausible misreading or a **word already heard sung wrong**. Do not accent every ordinary word in the lyric.
-- **Owner's correction, 2026-10-25:** blanket marking was attempted and rejected. An accent is a change to the text as the model reads it; applied everywhere it starts to bend the diction, costs the model's own phrasing and flattens the delivery. Mark one word at a time, after it has been heard wrong, and keep the list short.
-- Two-layer discipline: the accents live in the SUNO-ready file and never in the clean literary lyric. If a marked word is later edited, the mark is re-checked — a stale accent across an edit is a new defect.
-- Preserve the actual grammatical form and meaning. A stress mark must not change a word into another word.
-- Keep a clean literary lyric separately from the SUNO-readable stressed version.
-- For biblical names and archaic/Church-Slavonic forms, conduct an explicit pronunciation check.
-- If a source word is ambiguous or the translation may be wrong, resolve the textual/linguistic issue before adding a stress mark.
+Two separate jobs. **ё is orthography** — it is always written, everywhere. **Stress marks are a hint for the model** — they go on a few words, chosen by rule, never on all of them.
+
+### 1. ё — always, everywhere it belongs
+
+- Write **ё** in every word where Russian requires it: `всё`, `ещё`, `её`, `моё`, `твоё`, `своё`, `нём`, `живёт`, `даёт`, `поёт`, `идёт`, `пойдёт`, `пропадёт`, `крадёт`, and every other `-ёт` / `-ёшь` form, plus `тёмный`, `мёртвый`, `лёгкий`, `твёрдый`, `чёрный`, `жёлтый`, `тёплый`.
+- This applies to **both** lyric files, to prose, and inside headings and quotations. A lyric that prints `все` for `всё` is simply a spelling error, not a stylistic choice.
+- Do not swap a genuine `е` for `ё` to look archaic: `все` (plural) stays `все`, `свет` stays `свет`, `Его` stays `Его`.
+- A **ё already carries the stress**, so a ё-word never gets an accent as well. Two marks on one word is a defect.
+- Mechanical check: `python scripts/check_ru_lyric.py <files>` lists every occurrence of a word that must carry ё in context (`все/всё` included, decided per line). It reports; a human decides.
+
+### 2. Stress marks — by grammar, on the words that need them
+
+An accent is **not** an annotation. It is a change to the text the model reads: applied broadly it bends the diction, costs the model its own phrasing and flattens the delivery. So the rule is selective, and it is decided by grammar, not by taste.
+
+**Mark a word when at least one of these is true:**
+
+1. **The same spelling carries two stresses in Russian** and grammar decides which: `сто́ит` ("is worth") vs `стои́т` ("costs"); `узна́ю` / `узнаю́`; `до́ро́г`-type cases only where the line is genuinely ambiguous.
+2. **The stress is fixed by the grammatical form but is not where a model defaults:** short feminine participles and adjectives on the ending (`соединена́`, `заключена́`, `рождена́`), imperatives (`помы́сли`, `воспря́нь`, `сомкни́`), `-у́ет` verbs often mis-stressed in speech (`дару́ет`, not `да́рует`).
+3. **Long or compound words** where the stress is not audible from the stem: `драгоце́нная`, `прекрасне́йшая`, `благослове́нный`, `недоуме́ние`.
+4. **Biblical names and Church-Slavonic forms**, checked explicitly: `Иису́с` (four syllables), `Госпо́день`, `Церко́вь`, `Богоро́дица`.
+5. **A word heard sung wrong in an actual take.** This always earns a mark, whatever the rules above say.
+
+**Never mark:**
+
+- monosyllables (`зрят`, `ввысь`, `прах`, `тлен`, `свет`) — an accent cannot help and can be read as a vocal instruction;
+- ё-words — the letter already sets the stress;
+- plain polysyllables with one possible stress (`душа`, `сердце`, `любовь`, `Небо`, `жизнь`, `радость`) — these are the majority of any text and marking them is the blanket practice that was rejected;
+- the same word twice in one stanza unless both occurrences are genuinely at risk.
+
+**Then count.** If more than roughly a dozen words in a lyric carry accents, the list has stopped being selective — cut it back to the words the rules above actually reach. `scripts/check_ru_lyric.py --max-marks N` fails a file that exceeds the limit.
+
+### 3. When singing overrides the dictionary
+
+A sung stress is not always the dictionary stress, and this is legitimate:
+
+- **Rhyme and assonance** can pull a stress onto the rhyming syllable, and a hymn that rhymes must be allowed to do it.
+- **Metre and the tune** can lengthen or shift a stress; a syllable that is stressed in speech may sit on a weak beat.
+- Where the sung form is deliberate, **write the sung stress, and record the case** in the deviation table with the reason. Do not "correct" a singer into an unrhymed line.
+- Where the sung form is an accident of the model, that is an error, not a licence — fix it.
+- The distinction is decided by the text, not by convenience: if the line rhymes and the shifted stress serves the rhyme, it is deliberate; if nothing in the stanza explains it, it is a mistake.
+
+### 4. Two-layer discipline
+
+- Accents live in the **SUNO-ready file only**; the clean literary lyric carries none, and no published text ever carries them.
+- If a marked word is later edited, re-check the mark: a stale accent across an edit is a new defect.
+- Keep the clean lyric, the marked lyric, the translation and the source text as separate files; never mix them.
+
+### 5. Before adding any mark
+
+- Inspect the exact inflected form in its sentence, not the dictionary lemma.
+- If the wording itself may be wrong, resolve the text first, then mark it. Do not paper over a bad line with an accent.
+- Check that the mark cannot be misread as a different word: `за́мок`/`замо́к`, `му́ка`/`мука́`, `сто́ит`/`стои́т`.
 
 ## Version discipline
 

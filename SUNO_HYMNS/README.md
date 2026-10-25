@@ -60,6 +60,7 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **data/source-registry-v1.json** — project-local source registry.
 - **data/author-registry-v1.json**, **data/claim-ledger-v1.json**, **data/songbook-registry-v1.json** — machine-readable authors, reviewed claims and edition histories.
 - **scripts/validate_project_registry.py** — read-only state/cross-reference validation.
+- **scripts/check_ru_lyric.py** — read-only Russian lyric audit: lists words that must carry ё in context, and fails a file that carries more than a handful of stress marks.
 
 ## Status language
 
@@ -99,6 +100,7 @@ No public release status is promoted to verified in this repository snapshot. Se
 From the repository root, run:
 
     python SUNO_HYMNS/scripts/validate_project_registry.py
+    python SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/*LYRICS*.md
 
 The validator does not repair or modify files. It fails closed on invalid global state values, unknown IDs, missing source references and misleading status combinations.
 
