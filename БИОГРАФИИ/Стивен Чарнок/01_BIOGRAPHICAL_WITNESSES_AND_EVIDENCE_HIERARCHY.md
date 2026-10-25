@@ -492,7 +492,33 @@ sermon'а, а не механическую копию); (в) оно **не пр
 Статус: **гипотеза высокого доверия**, не установленный факт. `LOCATOR_HOLD` — страница 81
 не сверена с изображением страницы.
 
-#### 2.9G. Что осталось непрочитанным в Calamy
+#### 2.9G. Calamy 1727, приписка к статье о Richard Adams — три предисловия Adams & Veal
+(прочитана 2026-10-25)
+
+**Источник:** тот же `continuationofac01cala`, приписка к статье о Richard Adams, помечена
+«**Pag. 44. St. Mildred's Breadstreet: Mr. Richard Adams**». Дословно (конец приписки):
+
+> «He and Mr. Veal wrote a Prefatory Epiftle before Mr. Charnock's of Providence; and another
+> before his Volume on the Attributes; **and a third before the other Volume of that Great Man's
+> Works**.»
+
+**Значение.** Это **независимое подтверждение** того, что отдел вёл как непроверенное:
+
+1. **Второй фолиант существует и имеет предисловие Adams & Veal.** «the other Volume of that
+   Great Man's Works» = второй том сочинений Чарнока в фолио (1683). Calamy 1713 уже говорил о
+   «2 Vol. in Folio» и об «an Octavo»; теперь подтверждено, что **редакторы написали предисловия
+   ко всем троим** посмертным томам.
+2. **Richard Adams был лицом прихода** — «St. Mildred's Breadstreet». Отдел не имел этой
+   привязки. Это важно для биографии соредактора: Adams — не абстрактный «друг», а
+   несогласный пастор конкретного лондонского прихода, изгнанный в 1662.
+3. **Calamy называет Чарнока «that Great Man»** — оценка редактора-современника.
+
+**Сопутствующее из того же фрагмента (Calamy 1727):** «**Matthew Barker** … also wrote the
+Annotations on the two Epistles to the Thessalonians, **in the Continuation of Mr. Poole**» —
+независимое подтверждение того, что *English Annotations* Poole'а были **дописаны другими** (см.
+том 15 §3): Barker был одним из тех, кто это делал.
+
+#### 2.9H. Что осталось непрочитанным в Calamy
 
 - ***Continuation of the Account*** (1727), том 1, стр. 81 и 83 — дополнения о Чарноке (сертификат
   31 декабря 1661 в пользу Edward Veal; уточнение о Johnson 1644). Архивная копия:

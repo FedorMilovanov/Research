@@ -205,11 +205,43 @@ XIX века.
 | «Sin is the key that opens the flood-gates of Divine vengeance, and broaches both the upper and neather Cisterns to overflow the world» | стр. 6–7 | **сильно правленый**: 1683 — «**The Text tells us**, that they were once **the keys**, which **opened** the floud-gates of divine vengeance and **broach'd** both the upper & neather Cisterns, to overflow the world». Изменено время (keys/opened → key/opens), снята оговорка «The Text tells us» |
 | «He that is winged with a divine Love to Christ, will have frequent glances and flights towards him» | стр. 12 | **дословное начало**, обрезано: 1683 продолжает «…and will start out from his worldly business, several times in a day, to give him a visit» |
 
-**Вывод, уже теперь устойчивый.** Broadside — **не механическая копия** sermon'а и не
-стенограмма. Издатель 1680 года **редактировал** текст: (а) вставлял уточнения («as is in a
-natural man» вместо «any man»); (б) **превращал риторические вопросы Чарнока в утверждения** —
-то есть снимал кафедральную интонацию; (в) **менял время глаголов** (keys/opened → key/opens),
-превращая повествование о Всемирном потопе в общую максиму; (г) **обрывал** фразы. Это
+**Расширено 2026-10-25 (прочитаны чанки 2, 6, 8, 10, 12, 14, 16, 17 — стр. 3–18 тела и сноски
+1.1–1.139).** Локализовано **13 афоризмов** broadside в издании 1683:
+
+| Афоризм broadside | *Supplement* 1683, стр. | Операция редактуры |
+|---|---|---|
+| «ONE would scarce imagin such an inward nest of wickedness as is in a natural man…» | 1 | вставка («as is in a natural man» ← «any man») |
+| «The Idolatry of the mind is when we dress up a god according to our own humors… and unworthy of his holiness, Psal. 50.21…» | 4 | **расширение**: добавлено «and unworthy of his holiness» и сноска |
+| «'Tis the frequent business of mens minds to flutter about things without the bounds of Gods revelation» | 4 | **дословно** |
+| «Gods law is suitable to his Soveraignty…» | 6 | **вопрос → утверждение** |
+| «'Tis not for the honour of Gods holiness, righteousness, goodness…» | 6 | **дословно** |
+| «Man was created both with a disposition and ability for holy contemplation of God…» | 6 | **дословно** (contemplation ← contemplations) |
+| «Sin is the key that opens the flood-gates of Divine vengeance…» | 6–7 | **смена времени** (keys/opened → key/opens) + снята оговорка |
+| «A Hypocrites religious services are materically good; but poisoned by the imagination seulking in the heart…» | 8 | **дословно** |
+| «Evil thoughts are the immediate spawn of Original corruption… sucking the brest of that poysonous dam that bred them» | 8–9 | **сжатие пропуском**: опущено intervening «Acts are more distant, being the children of our thoughts, but the Grandchildren of our natural pravity» |
+| «What a mass of vanity should we find in our minds if we could bring our thoughts in the space of one day, yea but one hour to an accompt, how many foolish thoughts with our wisdom…» | 10–11 | **СРАЩИВАНИЕ**: две отдельные фразы 1683 («What a mass of vanity should we find in our minds…?» и «How many foolish thoughts…») слиты в один афоризм |
+| «Were we really and altogether Christians, would not that which is the chiefest Purity of Christianity be our pleasure…» | 11 | **дословно** |
+| «He that lets his mind wallow in a cinque of phantastical follies, robs God of his due, and his Soul of its happiness» | 11 | **ПЕРЕПИСАНО**: 1683 — «Let not therefore our minds wallow **in a sink** of phantastical follies; **whereby to rob** God of his due, and our Souls of their happiness» (пассив → актив, «sink» → «cinque») |
+| «We can more easily resist Temptations without, if we conquer motions within: Thoughts are the Mutiniers of the soul…» | 11 | **дословно** |
+| «Christ dyed to restore God to his right, and man to his happiness…» | 11 | расширение: добавлено «Christ» |
+| «A sanctified reason would both discover and shame our natural follies» | 11 | **дословно** |
+
+**Таксономия редактурных операций издателя broadside (семь приёмов):**
+
+| № | Приём | Пример |
+|---|---|---|
+| 1 | Вставка уточнения | «as is in a natural man» ← «any man» |
+| 2 | Расширение | «and unworthy of his holiness» + сноска Пс. 50:21 |
+| 3 | Риторический вопрос → утверждение | «Must not God's Laws be…?» → «Gods law is…» |
+| 4 | Смена времени глагола | «the keys, which opened» → «the key that opens» |
+| 5 | Сжатие пропуском intervening фразы | опущено «Acts are more distant…» |
+| 6 | **Сращивание** двух фраз в один афоризм | «What a mass of vanity…» + «How many foolish thoughts…» |
+| 7 | **Переписывание** (пассив → актив, замена слова) | «Let not therefore our minds wallow in a sink… whereby to rob» → «He that lets his mind wallow in a cinque… robs» |
+
+**Дословных афоризмов — 6 из 15 прочитанных.** Остальные правлены в той или иной степени.
+
+**Вывод.** Broadside — **не механическая копия** sermon'а и не стенография. Издатель 1680 года
+**редактировал** текст семью различными приёмами, включая **сращивание** и **переписывание**. Это
 редакторская работа в духе афористики, а не констаирование.
 
 **Для биографии:** человек, который при жизни скрыл имя за инициалами «S. C.», через несколько
@@ -217,13 +249,23 @@ natural man» вместо «any man»); (б) **превращал ритори�
 повествование — в максимы. Листовка 1680 года — это первый акт посмертной **редактуры** Чарнока,
 и он же образец той редактуры, которую потом применят Adams и Veal.
 
-**Аппарат дискурса о мыслях** (сноски 1.1–1.52, прочитаны): **Kimchi** (на 66 Псалом, через
-Grotius на Мф. 5:20), **Ovid** (*Amor.* l. 3. Eleg. 3. v. 5, «Ut jam servaris bene corpus,
-adultera mens est»), **Hieron.** (Jerome, *in Oseam* 7 — «Non solum opus, sed mali operis
-cogitatio poenas luet»), **Dr. Hammond** (на Мф. 15:9), **Plutarch** (*Moral.* p. 500).
-**Preston и Мор здесь не названы.** Для сравнения: в дискурсе о вездесущности фолианта 1682
-(том 04 §0A) — Drexel, Musculus, Gassend., Amyrald, Rivet, Pont., Maccor., Shelford, Bernard,
-Petar., Chrysostome, Cyril, Dyonisius + **Dr. More**.
+**Аппарат дискурса о мыслях — ПРОЧИТАН ПОЛНОСТЬЮ (сноски 1.1–1.139).** Названы:
+**Kimchi** (66 Пс. через Grotius на Мф. 5:20), **Ovid** (*Amor.* l. 3. Eleg. 3. v. 5, «Ut jam
+servaris bene corpus, adultera mens est»), **Hieron.** (Jerome, *in Oseam* 7 — «Non solum opus,
+sed mali operis cogitatio poenas luet»), **Dr. Hammond** (Мф. 15:9), **Plutarch** (*Moral.*
+p. 500), **Rivet** (in Gen. exercit. 51), **Merc.** (in loc.), **Euseb.** (*Praepar. Evang.*),
+**Amam.** (*Censur.* in locum).
+
+**Два новых документанных философских влияния (2026-10-25):**
+
+| Сноска | Дословно | Значение |
+|---|---|---|
+| **1.5** | «**Maimon. More Nevoch. Par. 3. c. 22.** Amam. Censur. in locum» | **Маймонид**, *Путеводитель заблудших* III.22 — в дискурсе **о мыслях** |
+| **1.8** | «**Cartes. Princip. Philos. Part 1. Sect. 9.**» | **Декарт**, *Начала философии* I, §9 — о мысли (cogitatio) как о том, что принадлежит природе мыслящей субстанции |
+
+То есть Чарнок в «Дополнении» 1683 обращается и к **иудейской схоластике** (Маймонид), и к
+**новой философии** (Декарт) — в дополнение к **Генри Мору** в фолианте 1682 (том 04 §0A).
+**Prestон в этом дискурсе не назван.**
 
 **ERRATA «In the SUPPLEMENT»** (узел `1:14.1`, дословно): «Page. 53. l. 46. for 1620. r. 1260.
 p. 66. l. 35. before [be] add hearts. p. 80. r. fell.» — три исправления; ни одно не затрагивает
