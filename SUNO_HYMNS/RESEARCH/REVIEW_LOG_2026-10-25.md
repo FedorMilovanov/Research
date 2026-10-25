@@ -487,3 +487,21 @@ That is exactly the shape the print has: `op aard` three times (5, 6, 8) and a c
 - `LESSONS_AND_GUARDS.md`: the stanza-1 open defect is closed, with the note that what settled it was a decision rather than an argument.
 
 **Not decided, still open:** stanzas 2, 8 and 10 sit at half; 4, 6 and 9 fail; five stanzas still carry calque-shaped openings; no cover approved; nothing generated.
+
+# Twentieth pass — 2026-10-25 (YouTube description, 50+ source run, and two corrections to my own record)
+
+Work done: [`../SUNO/DUTCH-005_YOUTUBE.md`](../SUNO/DUTCH-005_YOUTUBE.md) — title options, description (4229 chars, channel markup `*bold*` / `_italic_`), pinned comment, tags; [`DUTCH-005_SOURCE_RUN_50PLUS.md`](DUTCH-005_SOURCE_RUN_50PLUS.md) — 75 addresses with per-link status.
+
+**The important part is not the description.** Reading the commentary of the 2005 edition (DBNL, pp. 263–267) settled three glosses, and two of them go against my own earlier entries:
+
+1. **`der deugden leven` = *het deugdzame leven*.** The reviewer whom I overruled in pass 15 was **right**; my rejection was wrong. The Russian line «Начните жизнь добродетельную» (fixed for other reasons) now has the gloss behind it; the tripled word «Жизнь добродетелей» does not, and is listed as open.
+2. **`yd'le` = *vergankelijke*.** «О бренная душа» is confirmed. It had stood in the package as a *lead*, from a reviewer I did not trust; it is now a *check*.
+3. **`Na dit leven crijgelijck` = the life *to be obtained after this life*.** So the Russian «После земных невзгод» (stanza 3, line 2) is **wrong in sense**, not merely flat: there are no "hardships" in the Dutch. This one is a defect in the shipped text and goes to v0.10.
+
+Also confirmed: `goedig` = goedertieren, `Hersenlosen` = verstandelozen/dwazen, `snooden` = verlelijke/verachtelijke.
+
+**Why this matters beyond DUTCH-005:** the pattern from pass 15 ("reviewers are strong on syntax, weak on what the source says") is now half-overturned. This reviewer's *lexical* claim about `der deugden leven` was right, and I rejected it on the strength of my own parsing. The lesson is in `LESSONS_AND_GUARDS.md` § 2, amended.
+
+**Melody, settled as far as it can be:** the 2005 apparatus says *"Melodie: Herkomst onbekend, anders dan Un jour &c, van tekst 27"* — origin unknown, and not the *Un jour* of text 27. That melody is identifiable: *Un jour m'en alloit seulette* by Grouzy (d. 1568), *Quinzième livre de chansons*, Paris 1571. The familiar Psalm 42 tune belongs to the Rutgers reworking (1806 no. 43 → 1938 no. 75), not to the 1676 hymn. The description now says exactly that and no more.
+
+**Not claimed:** that Studio renders the pasted markup as expected — the standard requires a round-trip test on one published description, and it has not been done. No cover is approved, nothing is published.

@@ -87,7 +87,13 @@ Every one of these was checked against the 1676 print or the 1727 collation befo
 | "Stanza 8 says the Beauty vanishes" | Retracted by the same review half-way through; the reading is the one the project already had | same |
 | A pasted full Russian version | Introduced «пустый обман», «кифара» for `Cijter` (a cither), «все языки человеков», «Сие» ×4, «прелести» for deceit, a fused 12-syllable line and a 15-syllable line | `REVIEW_LOG` earlier passes |
 
-**Pattern:** reviewers are strongest on *syntax and calque* and weakest on *reference and enumeration*. The v0.8 pass took every syntactic point and rejected every claim about what the source says.
+**Pattern, as it stood after v0.8:** reviewers are strongest on *syntax and calque* and weakest on *reference and enumeration*; the v0.8 pass took every syntactic point and rejected every claim about what the source says.
+
+**Amendment, same day — the pattern was half wrong.** When the 2005 commentary was finally read (DBNL pp. 263–267), one rejected *lexical* claim turned out to be correct: `der deugden leven` is glossed *het deugdzame leven*, the virtuous life. I had overruled it by parsing the genitive myself and calling it a correct "life of the virtues". A second claim I had admitted only as a *lead* (`yd'le` = vergankelijk) was confirmed. So the real rule is narrower and less flattering:
+
+> A reviewer is unreliable on **identifications and enumerations** — which poem, which number, which clause — and surprisingly often right on **what a word means**. Rejecting a lexical claim requires a gloss, not a parsing. If the gloss has not been read, the honest status is *lead*, not *rejected*.
+
+That is why `rejected` in the log now needs a source line, and why this pass produced a source run with per-link status: `RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md`.
 
 ---
 

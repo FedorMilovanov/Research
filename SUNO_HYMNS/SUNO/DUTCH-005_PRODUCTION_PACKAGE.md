@@ -10,6 +10,8 @@
 [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — clean lyric, `DUTCH-005-RU v0.9` ·
 [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md) — SUNO-ready text with labels and stress marks ·
 [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md) — style prompts only
+**YouTube:** [`DUTCH-005_YOUTUBE.md`](DUTCH-005_YOUTUBE.md) — название, описание (4229 символов, разметка канала), закреплённый комментарий, tags; **не опубликовано**.
+**Source run:** [`../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md`](../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md) — 75 адресов со статусами (✅ открыт / ◐ найден / ○ реквизит) и таблица проверки утверждений.
 **Production state:** `LYRIC_DRAFT` — a Russian draft v0.9 and five style directions exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
 
 > Forward-written package, like DUTCH-004. Every field states its own status. Nothing here is a recovered artifact, and no line of the Russian draft is presented as a translation.

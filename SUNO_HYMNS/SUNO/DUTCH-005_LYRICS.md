@@ -273,6 +273,12 @@ Two titles this one is **not**:
 
 The historical title stays in Dutch wherever the source is cited; only the Russian line changes.
 
+## Open defect — stanza 3, line 2 (found 2026-10-25, after v0.9)
+
+The 2005 commentary glosses `Na dit leven crijgelijck` as *het heerlijke, eeuwige leven, dat na dit leven te verkrijgen is* — the glorious eternal life **to be obtained after this life**. The Russian line reads «После земных невзгод», "after earthly hardships": that is not in the Dutch, and it makes the stanza say something the print does not.
+
+This is a **sense** defect, not a stylistic one, and it is the one thing in the text that the source run settled against it. It requires a rhyme-safe replacement and a v0.10 bump; it was deliberately **not** patched inside the YouTube pass, so that the wording change is reviewed as wording.
+
 ## What this file is not
 
 - Not a translation.
