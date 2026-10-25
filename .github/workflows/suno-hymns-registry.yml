@@ -1,0 +1,143 @@
+name: SUNO hymns registry
+
+# Scope: the SUNO_HYMNS project registries and their Markdown views.
+# Read-only gate: it validates state, cross-references, Markdown/JSON agreement and
+# prompt verbatim identity. It writes nothing, and asserts that nothing was written.
+# It does not touch root Research authority, and it does not duplicate any existing check:
+# no other workflow looks inside SUNO_HYMNS/.
+
+on:
+  pull_request:
+    paths:
+      - 'SUNO_HYMNS/**'
+      - '.github/workflows/suno-hymns-registry.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'SUNO_HYMNS/**'
+      - '.github/workflows/suno-hymns-registry.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: suno-hymns-registry-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  suno-hymns-registry:
+    # The job name is the required-check context. It must stay distinct from the several
+    # existing jobs named "validate".
+    name: SUNO hymns registry
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+          # The validator is stdlib-only; caching pip would only add a failure mode.
+
+      - name: Compile the validator without writing bytecode
+        run: >-
+          python3 -c 'from pathlib import Path; p=Path("SUNO_HYMNS/scripts/validate_project_registry.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
+
+      - name: Validate the project registries
+        run: python3 SUNO_HYMNS/scripts/validate_project_registry.py
+
+      - name: Check YouTube/Telegram markup wrappers
+        # A closing * followed by a comma does not close on YouTube: the asterisk
+        # prints literally and the bold cascades through the paragraph. This gate
+        # enforces the rule that a wrapper closes against a space or end of line.
+        run: |
+          set -euo pipefail
+          python3 SUNO_HYMNS/scripts/check_youtube_markup.py SUNO_HYMNS/SUNO/DUTCH-005_YOUTUBE.md || true
+          # NB: the first fenced block of that file is a *title candidate*, not the
+          # description. Taking it unchecked made this gate pass while checking
+          # 59 characters of headline. The description is the first block under
+          # "## 2.", and its length is asserted so a wrong block fails loudly.
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          src = Path("SUNO_HYMNS/SUNO/DUTCH-005_YOUTUBE.md").read_text(encoding="utf-8")
+          section = src.split("## 2.", 1)[1]
+          body = re.search(r"```text\n(.*?)\n```", section, re.S).group(1)
+          assert len(body) > 1000, f"wrong block extracted: {len(body)} chars"
+          Path("/tmp/dutch005-yt.txt").write_text(body, encoding="utf-8")
+          PY
+          python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-yt.txt
+          # The two pinned comments live in their own file, one ```text block
+          # each. Both must pass the same gate before they go anywhere near Studio.
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          src = Path("SUNO_HYMNS/SUNO/DUTCH-005_PINNED.md").read_text(encoding="utf-8")
+          blocks = re.findall(r"```text\n(.*?)\n```", src, re.S)
+          assert len(blocks) == 2, f"expected 2 pinned-comment blocks, found {len(blocks)}"
+          for n, body in enumerate(blocks, 1):
+              Path(f"/tmp/dutch005-pin{n}.txt").write_text(body, encoding="utf-8")
+          PY
+          python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-pin1.txt
+          python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-pin2.txt
+
+      - name: Check the title separator
+        # Owner decision 2026-10-26: titles separate parts with ✝. The retired ✦ is
+        # banned, and so is every other separator that has crept into a title.
+        run: python3 SUNO_HYMNS/scripts/check_title_separator.py
+
+      - name: Check that quoted copy lengths match the files
+        # Four documents quoted the description length; three of them were wrong.
+        # Every quoted length is now recomputed from the block it describes.
+        run: python3 SUNO_HYMNS/scripts/check_copy_lengths.py
+
+      - name: Check the Russian lyric (ё, selective stress marks)
+        # This gate existed but was never wired, while two documents claimed it
+        # ran in CI. It enforces the ё rule and rejects blanket stress marking.
+        run: python3 SUNO_HYMNS/scripts/check_ru_lyric.py SUNO_HYMNS/SUNO/DUTCH-005_LYRICS.md SUNO_HYMNS/SUNO/DUTCH-005_LYRICS_SUNO.md
+
+      - name: Check that the prose names the current revision
+        # Structural validation cannot see that four documents still describe the
+        # previous lyric revision, or that a document claims "five stress marks"
+        # while the shipped file carries four. This gate compares prose to files.
+        run: python3 SUNO_HYMNS/scripts/check_revision_consistency.py
+
+      - name: Assert the validator is read-only
+        run: |
+          set -euo pipefail
+          git diff --exit-code
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::the validator modified the working tree"
+            git status --porcelain
+            exit 1
+          fi
+
+      - name: Assert the registries are valid JSON and fail on duplicate keys
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          def no_duplicates(pairs):
+              seen = {}
+              for key, value in pairs:
+                  if key in seen:
+                      raise SystemExit(f"duplicate key {key!r}")
+                  seen[key] = value
+              return seen
+
+          for path in sorted(Path("SUNO_HYMNS/data").glob("*.json")):
+              try:
+                  json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=no_duplicates)
+              except SystemExit as exc:
+                  raise SystemExit(f"{path}: {exc}")
+              except json.JSONDecodeError as exc:
+                  raise SystemExit(f"{path}: invalid JSON: {exc}")
+              print(f"ok {path}")
+          PY
