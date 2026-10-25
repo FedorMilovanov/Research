@@ -66,7 +66,8 @@
 | Стивен Чарнок — 04 Character Ministry and Theology **(rev 2, 2026-10-25, коммит `1439b96`)** | `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` |
 | ~~Стивен Чарнок — 05 Controversies and Claim Audit~~ | ~~`1lliBwqiqe_ZG6W2H0JPpG8ey7-NfLyph`~~ → **`SUPERSEDED`**, см. rev 2 ниже |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1aMNqqRWcMMy7X2JWfNdAdY9tIja37GJR`~~ → **`SUPERSEDED`**, см. rev 4 |
-| Стивен Чарнок — 00 README AND NAVIGATION **(rev 4, 2026-10-25, коммит `e64d27d`)** | `16QY_NnMDW0OdbBhFssyYaVEFM_ap0YTP` |
+| ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 4, 2026-10-25, коммит `e64d27d`)~~ | ~~`16QY_NnMDW0OdbBhFssyYaVEFM_ap0YTP`~~ → **`SUPERSEDED`**, см. rev 5 |
+| Стивен Чарнок — 00 README AND NAVIGATION **(rev 5, 2026-10-25, коммит `bd5c847`)** | `12crqgSXN4rFyq_wVSjQGtfAI37UJaGEs` |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1giMeyUhqxHGFEc9At2H-kJwCbrxOVzpf`~~ → **`SUPERSEDED`**, см. rev 4 |
 | Стивен Чарнок — 01 Witnesses and Evidence Hierarchy **(rev 4, 2026-10-25, коммит `e64d27d`)** | `1kQCmXLcYMth7ijwLU-G5Xgthu2FlXIi9` |
 | Стивен Чарнок — 02 Chronology and Date Conflicts **(rev 3, 2026-10-25, коммит `976dbfa`)** | `1ei_TCSPO7___9ZbeXm9jEy-BUIGioG_f` |
@@ -96,9 +97,11 @@
 | Чарнокский `00 README AND NAVIGATION`, тома **01, 02, 03, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` (Чарнок 00), `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` (03), `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` (ledger), `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` (01), `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` (02), `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` (04), `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` (05), `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` (БИОГРАФИИ 00) | **актуальны** (коммит `1439b96`); прежние копии помечены `SUPERSEDED` и **не удалялись** |
 | — | **Все зеркала томов отдела приведены к актуальному состоянию** (16 томов + rev 2 файлы). Отстающих копий не осталось | — |
 
-**Состояние на 2026-10-25, коммит `e64d27d`: отстающих зеркал не осталось.** **Четвёртая волна
-rev 4** загружена 2026-10-25: тома **00, 01, 04, 12** (причина — Calamy 1727, Декарт/Маймонид,
-расширение колляции). Прежние rev 3 копии помечены `SUPERSEDED` и **не удалялись**. Все 15 томов отдела
+**Состояние на 2026-10-25, коммит `bd5c847`: отстающих зеркал не осталось.** **Пятая волна
+rev 5** загружена 2026-10-25: тома **00, 02, 03, 15** (причина — полный каталог TCP, разрешение
+`CONFLICT-12`, открытие `CONFLICT-17`, причастность Ball'а и Гудвина к *Life eternall*).
+Прежние rev 4 копии помечены `SUPERSEDED` и **не удалялись**. Актуальные ревизии: 00 = rev 5,
+01 = rev 4, 02 = rev 5, 03 = rev 5, 04 = rev 4, 12 = rev 4, 15 = rev 5, реестр = rev 4. Все 15 томов отдела
 и все три файла уровня `БИОГРАФИИ` имеют актуальные Drive-копии. **Третья волна rev 3** загружена
 2026-10-25 по итогам коммитов `e4dc14`, `4b898ef`, `ef6ab9e`, `7135746`, `5cd7d53`, `c1ed17a`,
 `7a28e89`, `976dbfa`:
