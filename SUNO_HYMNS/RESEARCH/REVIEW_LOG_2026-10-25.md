@@ -440,3 +440,16 @@ Evidence, unchanged from the thirteenth pass: `Loff` = praise, `Heerlijckheyds` 
 Capitalisation «Славе» is the owner's spelling, kept as given.
 
 Propagated: both lyric files, the style file, `SUNO/README.md` (delivery-header example), `STATUS_LEDGER.md`, `DUTCH_HYMN_CATALOG`, `track-catalog-v1.json` (`displayTitle` = «Хвала Славе», `displayTitleStatus` = `OWNER_APPROVED_TITLE`), transcription, package header. No wording changed; no rhyme, metre or stress count changed. Four marks, 90 lines, validator green.
+
+# Seventeenth pass — 2026-10-25 (owner's question on stanza 1)
+
+**Question:** «4 раза прах — так в оригинале или это ты придумал?» **Answer: the pattern is the print's, the word and the count are mine.**
+
+The 1676 stanza I closes lines 5, 6 and 8 with `op aard` — "on earth" — and ends line 9 with a **different** word, `niet waard` — "not worth". Three repetitions, then a turn; the rhyme is `aard` / `waard`.
+
+The Russian has «прах» in all four slots. So:
+
+1. `aard` is *earth*, not *dust*; «прах» is my substitution in the biblical register, defensible but not the word.
+2. The fourth «прах» was bought by the rhyme — the same transaction as stanza 2's «любовь», which v0.8 rolled back. It softens the stanza's last line from a turn into a repetition, and «прах» starts to behave like a refrain, which the source does not have.
+
+Recorded in `DUTCH-005_LYRICS.md` § Stanza 1 with both versions printed, and the v0.7 rhyme-cost table restored (the v0.8 rewrite had dropped it). **Text not changed:** the decision is the owner's, and the consistency argument (stanza 2 already rolled back for the same reason) cuts both ways until they choose.

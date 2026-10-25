@@ -178,6 +178,53 @@ Not a wording change: every line of v0.8 is untouched. The heading went from «�
 
 Four met, three half, three not met. The three that fail end their call on `помысли`, `вы`, `крадёшь` — no rhyme exists there without rewriting the call itself.
 
+## Stanza 1 — the four «прах»: the print's device, my word
+
+The 1676 stanza reads:
+
+> Al wat gy siet **op aard**,
+> Al wat gy hoort **op aard**,
+> Is uw costlijck leven, lieven, loven,
+> Al wat gy wenscht **op aard**,
+> Is uw costlijck hert **niet waard**.
+
+So the shape is the print's: a short cadence phrase closes lines 5, 6 and 8, and the last line returns to the same sound with a **different word**. But the count is **three plus one, not four**: `op aard` occurs three times and line 9 ends `niet waard` — "not worth". The rhyme is `aard` / `waard`; the turn of the stanza is that the closing line stops repeating and says something new.
+
+My v0.8 has «прах» four times, in all four slots. Two separate debts, and they should not be confused:
+
+1. **The word.** `aard` = earth, not dust. «прах» is a substitution in the biblical register (dust, ashes), a fair poetic reading of the stanza's argument but not what the Dutch word says. In v0.6 this slot read «здесь», with «Всё, что видишь ты здесь…», which is closer to the stanza's own `Hier beneden`.
+2. **The fourth repetition.** It was bought by the rhyme, in the same transaction as stanza 2's «любовь» — which v0.8 rolled back. The Dutch's last line turns on a new word; mine closes on the repeated one, so «прах» hardens into a refrain, and the stanza loses its turn.
+
+**Not changed in v0.8; recorded for the owner.** The faithful shape is v0.6's:
+
+```
+Всё, что видишь, — здесь,
+Всё, что слышишь, — здесь,
+Не в том твоя жизнь, любовь, хвала;
+Всё, чего ты хочешь, — здесь,
+Сердца твоего не стоит.
+```
+
+— which costs the rhyme: lines 6/8 and 8/9 no longer rhyme, and stanza 1 leaves the rhyme column exactly as stanza 2 did. The trade is the same one already made once in this revision; whichever way it goes, it should go the same way twice.
+
+## What the rhyme cost — every line where a word changed for it (v0.7, still current except where marked)
+
+| St. | v0.6 | now | The cost |
+|---|---|---|---|
+| 1 | *Лишь там, где Иисуса зрят* | *Лишь там, где Иисуса свет* | `siet` is "sees"; «свет» is the light of Jesus, a different image, bought for the rhyme with «нет» |
+| 1 | *Всё, что видишь ты здесь… Всё, чего хочешь здесь* | *Всё, что видишь, — прах… Всё, чего ты хочешь, — прах* | `op aard` is "on earth", not "dust" — see § Stanza 1 above |
+| 1 | *Сердца твоего не стоит* | *Сердца твоего не стоит прах* | a fourth «прах», where the print has `niet waard` |
+| 2 | *Сердцу цену даёт выше всех* | *Сердцу всех выше — кровь и любовь* → **reverted in v0.8** | «любовь» is not in this line in the Dutch; the rhyme was rolled back, and stanza 2 left the rhyme column |
+| 3 | *Сомкни плотские очи* | *Закрой плотское око* | singular instead of plural — and closer to the Dutch `uw vleeschlijck oog`, which is singular |
+| 3 | *Эта жизнь — в вышине* | *Эта жизнь — высоко* | a flatter ending, bought for «око»; `om hoog` is literally "on high" |
+| 4 | *Что Небо милостиво дарует* | *Что Небо благостно даёт* | «благостно» is closer to `goedig`; «даёт» loses the `schenckt` ("bestows") colour |
+| 5 | *Святая в святости Его* | *Святая в святости Господней* | `sijn Heylicheyd` = **his** holiness; the possessive is lost to the rhyme |
+| 5 | *Зри, что Небо тебе дарует* | *Зри, что Небо тебе даёт сполна* | «сполна» is added for the rhyme; `verleent` has no "fully" |
+| 7 | *Мой Иисус, в Ком лишь любовь* | *Мой Иисус, в Ком лишь отрада* | `min` = love; the word moves to line 3 so that «отрада» can rhyme with «услада» |
+| 7 | *Где я могу узреть спасенье* | *Где зрю спасенье навсегда* | «навсегда» is added for the rhyme with «туда» |
+| 8 | *Меньше радует иль пропадёт* | *Слабеет и не возвратится* | the Dutch states two alternatives — pleases less **or** vanishes; the Russian fuses them into one process, bought for the rhyme with «мнится» |
+| 8 | *Туда моё сердце пойдёт* | *К Тебе моё сердце стремится* | `daar ... henen gaan` = "go thither"; the direction becomes a person |
+
 ## Metre — measured
 
 | St. | lines 1 · 2 · 3 · 4 | call | tripled | close |
