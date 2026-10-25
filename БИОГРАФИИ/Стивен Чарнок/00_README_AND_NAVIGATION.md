@@ -276,13 +276,18 @@
     **Исх. 3:14**; текстуальных совпадений с Чарноком нет (том 15 §2.4).
 29. **Подтвердить идентификацию «Poole» = Matthew Poole** — по другим элегиям 1680 года и по
     посмертным брошюрам о Poole (`A55383`, `A55384`).
-- **Прочитать сноски дискурса «The Omnipresence of God»** (стр. 241, Иер. 23:24, узел
-  `A32723.0001.001/1:10`) и найти в них **цитату Генри Мора** — Cambridge Platonism Sourcebook
-  (Divinity Faculty, Cambridge) фиксирует: «Stephen Charnock, *Several Discourses…* (1682) [quotes
-  More on God's omnipresence; also cites More's *Exposition of the Seven Churches*]`. Это первое
-  **документированное философское влияние** на главный труд Чарнока: линия Эммануила переводится на
-  язык кембриджского платонизма (протяжённость духа — рамка для божественной безграничности).
-  Сейчас `B1`/`reported`, `LOCATOR_HOLD`; подробности — том 04 §0A.
+- ~~**Прочитать сноски дискурса «The Omnipresence of God»** (стр. 241, Иер. 23:24, узел
+  `A32723.0001.001/1:10`) и найти в них цитату Генри Мора~~ — **ВЫПОЛНЕНО 2026-10-25.** Сноска
+  1.98, стр. 261 = «**Dr. More.**»; тело: «Let us therefore conclude this with the Expression of a
+  Learned man of our own; To deny the Omnipresence of God, because of ill scented places, is to
+  measure God rather by the nicety of Sense, than by the sagacity of Reason.» Аппарат дискурса
+  (156 сносок) прочитан полностью: Drexel, Musculus, Gassend., Amyrald, Rivet, Pont., Maccor.,
+  Shelford, Bernard, Petar., Chrysostome, Cyril, Dyonisius — **Preston не назван** (третий
+  независимый отрицательный datum). `A1`/`checked`; подробности — том 04 §0A. **Это первое
+  документированное философское влияние на главный труд Чарнока.**
+- **Проверить второе утверждение кембриджского источника:** что Чарнок «also cites More's
+  *Exposition of the Seven Churches*». В аппарате дискурса о вездесущности такой ссылки нет —
+  значит она в ином дискурсе; 9 узлов фолианта остаются непрочитанными. `LOCATOR_HOLD`.
 - **Прочитать полный список проповедников *The Morning Exercise against Popery* (1675)** — нужен
   для проверки южноаркской гипотезы (том 15 §4.1). Гипотеза «Чарнок был среди проповедников этого
   тома» **опровергнута** 2026-10-25; южноаркский вход остаётся возможным, но иным путём.
