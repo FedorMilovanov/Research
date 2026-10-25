@@ -8499,7 +8499,7 @@
     "сПометкойУстарело": 48,
     "всегоОбъектов": 60
    },
-   "свойства": "двенадцать пар appProperties записаны и прочитаны обратно одним ответом: rows 209, classes A1=43,A2=35,B1=34,B2=6,C=91, queue 91, bytes 560503, md5 3852a428…, dobyt 17, share 21, mirror_of_git_commit b1405f0e4, read_state registry_linked, role registry-mirror, rights mirror_of_git",
+   "свойства": "двенадцать пар appProperties записаны и прочитаны обратно одним ответом: rows 209, classes A1=43,A2=35,B1=34,B2=6,C=91, queue 91, bytes 560503, md5 3852a428a33c3f13e930e972b284de29, dobyt 17, share 21, mirror_of_git_commit b1405f0e4, read_state registry_linked, role registry-mirror, rights mirror_of_git",
    "measuredAt": "2026-10-25T21:39:02Z",
    "checkedAt": "2026-10-25T21:39:02Z",
    "how": "upload_file → сверка байтов и md5 → update_file (rename прежнего) → update_file (12 пар свойств на новом); счётчики папки сняты двумя ответами list_files после всех записей",
