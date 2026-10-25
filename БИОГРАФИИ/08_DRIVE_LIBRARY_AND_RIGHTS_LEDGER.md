@@ -73,7 +73,8 @@
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 5, 2026-10-25, коммит `bd5c847`)~~ | ~~`12crqgSXN4rFyq_wVSjQGtfAI37UJaGEs`~~ → **`SUPERSEDED`**, см. rev 6 |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 6, 2026-10-25, коммит `23271bb`)~~ | ~~`1M3Lj242MY5FQAVRUBl5ksRHn-WLuyV_6`~~ → **`SUPERSEDED`**, см. rev 7 |
 | ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 7, 2026-10-25, коммит `54ba4c4`)~~ | ~~`1Qf8zSGgwSNEJFJC9RlXVdlzDvdsCO2kK`~~ → **`SUPERSEDED`**, см. rev 8 |
-| Стивен Чарнок — 00 README AND NAVIGATION **(rev 8, 2026-10-25, коммит `015463b`)** | `1DHwp_XqANmmbySMelnAZKFuX3rj9n3G6` |
+| ~~Стивен Чарнок — 00 README AND NAVIGATION (rev 8, 2026-10-25, коммит `015463b`)~~ | ~~`1DHwp_XqANmmbySMelnAZKFuX3rj9n3G6`~~ → **`SUPERSEDED`**, см. rev 9 |
+| Стивен Чарнок — 00 README AND NAVIGATION **(rev 9, 2026-10-25, коммит `31bf9ce`)** | `17dap98Fh1_qJrJb8GNvkZ5LSODhpevs7` |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1giMeyUhqxHGFEc9At2H-kJwCbrxOVzpf`~~ → **`SUPERSEDED`**, см. rev 4 |
 | ~~Стивен Чарнок — 01 Witnesses and Evidence Hierarchy (rev 4, 2026-10-25, коммит `e64d27d`)~~ | ~~`1kQCmXLcYMth7ijwLU-G5Xgthu2FlXIi9`~~ → **`SUPERSEDED`**, см. rev 5 |
 | Стивен Чарнок — 01 Witnesses and Evidence Hierarchy **(rev 5, 2026-10-25, коммит `54ba4c4`)** | `1ODU8A8uJQh8olYr0AfpnWjMxDxrwzX3x` |
@@ -84,7 +85,8 @@
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 3, 2026-10-25, коммит `976dbfa`)~~ | ~~`1KzTWJiCXSL1AftsfMGnbjsjFazpaZ820`~~ → **`SUPERSEDED`**, см. rev 4 |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 4, 2026-10-25, коммит `e64d27d`)~~ | ~~`186HlL_TE7vQ6_x2R6kr5nfA3U2kCjW6b`~~ → **`SUPERSEDED`**, см. rev 6 |
 | ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 6, 2026-10-25, коммит `23271bb`)~~ | ~~`11Z7n9_Ri4g1m6wWBWDmc49L8CIiGC8kE`~~ → **`SUPERSEDED`**, см. rev 7 |
-| Стивен Чарнок — 04 Character Ministry and Theology **(rev 7, 2026-10-25, коммит `015463b`)** | `1NEO6GNpDet2nFVgCpuEND05AxU5iCk9t` |
+| ~~Стивен Чарнок — 04 Character Ministry and Theology (rev 7, 2026-10-25, коммит `015463b`)~~ | ~~`1NEO6GNpDet2nFVgCpuEND05AxU5iCk9t`~~ → **`SUPERSEDED`**, см. rev 8 |
+| Стивен Чарнок — 04 Character Ministry and Theology **(rev 8, 2026-10-25, коммит `31bf9ce`)** | `1lnj59jWXmoF48DqIlJ4yvCWiorubTw7l` |
 | Стивен Чарнок — 05 Controversies and Claim Audit **(rev 2, 2026-10-25, коммит `1439b96`)** | `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` |
 | Стивен Чарнок — 06 Corpus Access Matrix and Locators **(rev 3, 2026-10-25, коммит `54ba4c4`)** | `1eTDM6P4SHBQDdG9cL7XXHLMYTFF69RCL` |
 | Стивен Чарнок — 07 Repo Crosslinks and Drive Mirror | `1FZtigfn0Ta8IA8BfRFgpufcwwQ37Hcpk` |
@@ -110,11 +112,11 @@
 | Чарнокский `00 README AND NAVIGATION`, тома **01, 02, 03, 04, 05**, `БИОГРАФИИ 00 README AND NAVIGATION`, настоящий ledger | **обновлены rev 2** 2026-10-25: `1VRg807OYxx1hstD5P4HWkkjG9ngY8OxU` (Чарнок 00), `1WGeow32U79_AQrdTkAM7yVAXviupqRXZ` (03), `14rvFYhyZF2KDVv68N6adNLY_1UgNQtCL` (ledger), `139o9lUfyCtj57pfBut_dPvkin0WiXWfZ` (01), `1YekYrIQ2F4vHcwt-9fr5rUpwJw_Gg3xm` (02), `17dB36Nd52nruOlA_KwvbiDBFy4a0RJRl` (04), `1UqNrT-V8LhAu-PBpJDxYJPToOWSLl5up` (05), `183uqWVApb3nRspXSO_E7iRBI3_paMbSJ` (БИОГРАФИИ 00) | **актуальны** (коммит `1439b96`); прежние копии помечены `SUPERSEDED` и **не удалялись** |
 | — | **Все зеркала томов отдела приведены к актуальному состоянию** (16 томов + rev 2 файлы). Отстающих копий не осталось | — |
 
-**Состояние на 2026-10-25, коммит `015463b`: отстающих зеркал не осталось.** **Восьмая волна**
-загружена 2026-10-25: тома **00, 04** (причина — «A DISCOURSE UPON THE Fifth of November»,
-проповедь годовщины Порохового заговора, узел `A32724.0001.001/1:4`, стр. 42–55). Прежние
-rev 7 / rev 6 копии помечены `SUPERSEDED` и **не удалялись**. Актуальные ревизии: 00 = rev 8,
-01 = rev 5, 02 = rev 7, 03 = rev 7, 04 = rev 7, 06 = rev 3, 12 = rev 4, 15 = rev 5, реестр = rev 7. Все 15 томов отдела
+**Состояние на 2026-10-25, коммит `31bf9ce`: отстающих зеркал не осталось.** **Девятая волна**
+загружена 2026-10-25: тома **00, 04** (причина — «A DISCOURSE FOR The Comfort of Child-bearing
+Women», узел `A32724.0001.001/1:7`, стр. 76–~86). Прежние rev 8 / rev 7 копии помечены
+`SUPERSEDED` и **не удалялись**. Актуальные ревизии: 00 = rev 9, 01 = rev 5, 02 = rev 7,
+03 = rev 7, 04 = rev 8, 06 = rev 3, 12 = rev 4, 15 = rev 5, реестр = rev 8. Все 15 томов отдела
 и все три файла уровня `БИОГРАФИИ` имеют актуальные Drive-копии. **Третья волна rev 3** загружена
 2026-10-25 по итогам коммитов `e4dc14`, `4b898ef`, `ef6ab9e`, `7135746`, `5cd7d53`, `c1ed17a`,
 `7a28e89`, `976dbfa`:
