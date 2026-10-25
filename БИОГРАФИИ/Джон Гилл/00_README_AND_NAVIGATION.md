@@ -27,6 +27,9 @@
 
 | № | Файл | Суть | Ключевая добыча |
 |---:|---|---|---|
+| 00 | `00_README_AND_NAVIGATION.md` | Этот файл — вход, authority и карта томов | Уровни источников, таблица томов, кластеры, редакционная архитектура |
+| 00 | `00_SOURCE_STATUS_CROSSWALK_V2.md` | Перекрёстный статус источников | Машинно проверяемые маркеры; используется `validate_repository_authority_integrity.py` |
+| 00A | `00A_PR2_LOSSLESS_RECOVERY_AND_SUPERSESSION.md` | Восстановление lossless после ранних редакций | Запись supersession; восстанавливает удалённое досье |
 | 01 | `01_SERIES_GAPS_AND_PRIMARY_SOURCES.md` | Лакуны серии и первый каталог первоисточников | Первичная карта трудов и пробелов |
 | 02 | `02_THEOLOGY_DEEP_DIVE.md` | Богословие, герменевтика и экклесиология | Пять пунктов, завет, вечное оправдание, раввинистика |
 | 03 | `03_STRUCTURE_PROPOSAL.md` | Ранняя архитектурная гипотеза | Исторический документ развития серии; текущая структура закреплена выше |
@@ -101,6 +104,13 @@
 | 72 | `72_PRIMARY_SOURCE_40_PLUS_DIRECT_LINK_LEDGER_AND_CLOSURE.md` | Первичный реестр 56 точек | Прямые оригиналы, границы вывода и закрытие долгов |
 | 73 | `73_PRIMARY_LINK_HEALTH_60_UNIQUE_URL_ACCEPTANCE.md` | Приёмка 60 уникальных URL | Двухпроходная проверка ссылок и прямые Angus facsimiles |
 | 74 | `74_PR2_001_480_RECONCILIATION_MATRIX.md` | Lossless reconciliation закрытого PR №2 | Все 480 ID → современный owner → production boundary; remediation ранних досье |
+| 75 | `75_CLOSED_BOOK_FAMILY_ACQUISITION_AUTHORITY_2026-08-02.md` | Authority закрытых книжных семей | 7 families, 1 durable file receipt, 1 edition-usable item, 0 quote-ready items; валидатор `validate_gill_closed_book_families.py` |
+| 76 | `76_RIPPON_1838_OPEN_ACCESS_VERIFICATION_2026-08-04.md` | Верификация открытого доступа Rippon 1838 | Access-статус и границы использования |
+| 77 | `77_RIPPON_1838_BIRTH_AND_PARENTS_CLAIM_CARD_2026-08-04.md` | Claim-card рождения и родителей по Rippon 1838 | 1 page-image-reviewed paraphrase-only claim, 0 direct quotes, 0 Product approvals; валидатор `validate_gill_rippon_claim_cards.py` |
+
+> **Нумерация томов 01–77 не является строго непрерывной** — часть номеров зарезервирована
+> исторически и не занята файлами. Номера 00, 00A и 75–77 добавлены в таблицу 2026-10-25 при
+> инвентаризации после перемещения отдела в `БИОГРАФИИ/`; ранее они отсутствовали в навигации.
 
 ---
 
