@@ -1396,8 +1396,8 @@ ch. 7 (сноска 1.19 дискурса о бытии Божьем). Тепе�
 Фичино **×1** (+1 в дискурсе о знании), Шаррон **×2** (два разных сочинения), Лоусон **×2**.
 
 **Полнота.** Прочитано **одиннадцать дискурсов фолианта из 14**: `1:4`–`1:9`, `1:10`, `1:11`,
-`1:12` (мудрость — §0Q), **`1:13` (сила — §0R)**, `1:17` — **1643 сноски**. Остались три:
-`1:14`, `1:15`, `1:16`. `LOCATOR_HOLD`.
+`1:12` (мудрость — §0Q), **`1:13` (сила — §0R)**, `1:14` (святость — §0S), `1:17` — **1808
+сноски**. Остались два: `1:15` (благость), `1:16` (владычество). `LOCATOR_HOLD`.
 
 ### 0Q. «A DISCOURSE UPON THE Wisdom of God» — десятый дискурс: Гомарус, Стеуко, Чарльтон,
 ### Лауд против иезуита, Бредвардин и Сеаман, чья смерть открыла Чарноку дверь
@@ -1652,6 +1652,112 @@ Greek in the Temple, p. 57.**» — то есть сокращение, кото
 
 **Полнота.** Прочитано **одиннадцать дискурсов фолианта из 14**: `1:4`–`1:13`, `1:17` — **1643
 сноски**. Остались три: `1:14`, `1:15`, `1:16`. `LOCATOR_HOLD`.
+
+### 0S. «A DISCOURSE UPON THE Holiness of God» — двенадцатый дискурс: песнь Моисея,
+### разрешение греха и Уильям Эймс (добавлено 2026-10-25)
+
+**Объект.** Узел `A32723.0001.001/1:14` фолианта 1682 — **«A DISCOURSE UPON THE Holiness of
+God»**, Исход 15:11 («**Who is like unto thee, O Lord, among the gods? Who is like thee, glorious
+in Holiness, fearful in praises, doing wonders?**»), страницы **493–565**, **165 сносок**
+(1.1–1.165), прочитан целиком (аппарат в чанках 43–47). Это **двенадцатый** прочитанный дискурс
+фолианта из 14.
+
+**Что в тексте.** Чарок берёт текст как «**one of the loftiest descriptions of the Majesty and
+Excellency of God in the whole Scripture**» — **песнь Моисея**, «the first Song upon Holy Record»,
+и, по его же разбору, сочинение «**compos'd and calculated for the celebrating some greater
+Action of Gods, which was to be wrought in the World**»: многие глаголы стоят в будущем времени, и
+потому раввины выводили из них «the Doctrine of the Resurrection». Песнь, в которой «in the womb
+of which all the Deliverances of the Church were couch'd», обращена вперёд — к «**his Plagues shall
+be poured out upon the Antichristian Powers, which should revive the same Song of Moses in the
+Church**» (сн. 1.2 = Откр. 15:2, 3). Схема текста по чанкам 0–2: (1) обращение к «amongst the
+gods» — спор комментаторов, идолы ли это, ангелы или «other Potentates of the World»; (2)
+«fearful in praises» — несколько толкований. Дальше — пять положений о **допущении греха**
+(разрешение проблемы зла): Бог не хочет греха прямо; не хочет его абсолютно; **хочет допущение
+греха**; это допущение сопровождается **достоверностью события**; и **оно не оскверняет святости
+Божьей** — потому что это не «моральное позволение» (не отмена закона), а «**not hindering a sinful
+Action, which he could have prevented**… a suspension of his Influence». Завершение — четыре
+поучения (медитация, любовь, Бог как цель, мерило чистоты) и три увещания (расти в святости;
+приходить к Богу свято; просить святость у Него как у «**fountain**» её: «**By his holiness he
+makes men holy, as the Sun by his light enlightens the Air**»).
+
+**ТЕМА ДИСКУРСА — ГРЕХ, А НЕ ТОЛЬКО СВЯТОСТЬ.** Это единственный дискурс фолианта, где проблема
+зла разбирается по пунктам, и при этом ключевое место отдано **допущению**: грех не «просто
+случился», но «there had been no decree of God concerning it, had he not intended to bring good
+and glory out of it». У Чарнока это **не «permissio nuda»**: «Though God hated sin, as being
+against his Holiness, yet he did not hate the permission of sin, as being subservient by the
+Immensity of his Wisdom to his own Glory». Для Части III и тома 17 (богословие) — ключевой
+дискурс: он показывает, как Чарнок строит теодицею **на атрибуте**, а не в отдельном трактате.
+
+**ПОРАЗИТЕЛЬНЫЙ ОБОРОТ ПРОТИВ НАСМЕШКИ НАД СВЯТОСТЬЮ.** Поучение о «scoffing at the holiness
+which is in a Creature» — и через образ к политике:
+
+> «Whoever looks upon the holiness of a Creature as an unlovely thing, can have no good Opinion of
+> the amiableness of Divine Purity… he that mocks this in a Person, derides God himself; and when he
+> cannot abuse the Purity in the Deity, he will do it in his Image. **As Rebels that cannot wrong
+> the King in his Person, will do it in his Picture, and his Subjects that are Loyal to him**… he
+> that hates the Beams, hates the Sun; the holiness of a Creature is but a Beam from that Infinite
+> Sun, a Stream from that Eternal Fountain.»
+
+То есть **святость как политический образ**: насмешка над пуританином есть насмешка над Богом, а
+насмешка над Богом есть измена государю. Оборот «Rebels… in his Picture» для Части I — редкий
+случай, когда Чарнок сам связывает **религиозную насмешку с политической изменой** в одной
+метафоре.
+
+**ПРОТИВРИМСКИЙ ЭЛЕМЕНТ — ЧЕТВЁРТЫЙ В ФОЛИАНТЕ.** «**Not to speak of many among the Romanists, who
+have the same notion, thinking to make satisfaction to God, by erecting an Hospital, or endowing a
+Church**, as if this injur'd Perfection could be contented with the Dregs of their Purses, and the
+offering of an unjust Mammon». Рядом — требование готовности к богослужению: «like Swine, we come
+into the presence of God with all our mire reeking and steaming upon us»; «Shooes must be put off
+from our feet… that is, Lusts from our Affections»; «**Not all the Incense of the Indies yield him
+so sweet a Savour, as one spiritual act of worship from a heart estranged from the vileness of the
+World**».
+
+**САМОПЕРЕКРЁСТНАЯ ССЫЛКА — ТРЕТЬЯ.** Сноска 1.69: «**But of the Wisdom of God in the permitting Sin
+in order to Redemption, I have handled in the Attribute of Wisdom**» — то есть Чарнок **сам
+отсылает** к дискурсу о мудрости (§0Q, `1:12`) ровно по тому месту, которое здесь опускает. Вместе
+с сн. 1.53 в `1:12` («Which I have upon another Occasion noted») и сн. 1.79 здесь («**This I have
+spoken of before, but it is necessary now**») это **третья** самоперекрёстная ссылка фолианта — и
+она показывает, что порядок дискурсов для самого Чарнока был не случайным набором, а
+взаимосвязанным целым.
+
+**Аппарат — новые имена и новые работы:**
+
+| Сноска | Ссылка (дословно) | Автор / сочинение | Примечание |
+|---|---|---|---|
+| 1.1 | «**Trap. in loc.**» | **Джон Трапп** (1601–1669), англиканский богослов-комментатор, комментарий на Исход | **новое лицо**; один из немногих **английских** экзегетов в аппарате |
+| 1.3 | «**Manass. ben Israel, de Resur. lib. 1. cap. 1. p. 7.**» | **Менассе бен Исраэль** (1604–1657), *De resurrectione mortuorum* (1636) | **новое лицо, еврейский автор**: Чарнок берёт у раввина **толкование песни Моисея о воскресении** — это вторая, после Маймонида, еврейская ссылка |
+| 1.4 | «**Pareus in Exod. 15.**» | **Давид Пареус** | впервые в фолианте |
+| 1.5 | «**River.**» | не идентифицирован | спор о «amongst the gods»; `LOCATOR_HOLD` |
+| 1.6 | «**Calvin.**» | Кальвин | |
+| 1.7 | «**Munster.**» | Мюнстер | впервые в этом дискурсе |
+| 1.9 | «**Ammon. in Plut. de … apud Delphos, p. 393.**» | **Аммоний** в диалоге Плутарха «**Об э** (De E apud Delphos)», стр. 393 | **новое лицо**, классическая филология: толкование «страха похвального» |
+| 1.10 | «**Gassend. Tom. 1. Phys. §. 1. lib. 4. cap. 2. p. 289.**» | **Гассенди**, *Physica* | новая страница |
+| 1.11 | «**Petav. Theol. Dogmat. Tom. 1. lib. 6. cap. 5. p. 415.**» | **Дионисий Петавий** (S.J.), *De theologicis dogmatibus* | новая ссылка на иезуитскую догматику |
+| 1.13 | «**Plutarch. Eugubin. de Perenni Phil. lib. 6. cap. 6.**» | **Августин Стеуко Эвгбинский**, *De perenni philosophia* | впервые точная книга/глава |
+| 1.14 | «**Martin. de Deo, p. 86.**» | «Martin» — то же сокращение, что в `1:11`, где «Fotherby» был исправлен на **MARTIN** (`A01093`) | **характеризованный `LOCATOR_HOLD`**: труд «de Deo» со страницами; личность не установлена |
+| 1.17 | «**Ochino, Predic. part 3. Bodic. 51. p. 347, 348.**» | **Бернардино Окино** (1487–1564), *Prediche*, часть 3 | **новое лицо и самая рискованная ссылка фолианта**: Окино — францисканец, затем апостат, бежавший из Италии в Женеву и умерший **антитринитарием**. Чарнок цитирует его **проповеди** — видимо, ранние, итальянские. «Bodic. 51» — по-видимому, **марка/шифр экземпляра**, а не страница |
+| 1.29–1.30, 1.43, 1.53, 1.58, 1.125, 1.148 | «Amyrald. disert. p. 103, 104.»; «Amyrald. de∣fens. de Cal∣vin. p. 151, 152.»; «Amirant. Moral. Tom. 5. p. 388.»; «Amyral. Mo∣ral. Tom. 1. p. 615, 616.»; «Amyral. de∣fence de Calv. p. 145.»; «Amyrald. Moral. Tom. 5. p. 462.»; «Amirald. in Heb. p. 101, 102.» | **Амиро** — семь ссылок в этом дискурсе, **все семь на труды о грехе, благодати и предопределении**: *Dissertationes*, *Défense de Calvin*, *Morale chrétienne* т. 1 и т. 5, комментарий на Евреям | итого **×45** — **семь разных трудов** |
+| 1.41 | «**Ames, de Consc. lib. 5 cap. 1. quest. …**» | **Уильям Эймс** (1576–1633), *De conscientia, ejus jure et casibus* (1630), книга 5, гл. 1 | **новое лицо**; автор *Medulla theologiae* — главного учебника реформатской схоластики; Чарнок обращается к нему по вопросу **о совести и грехе** |
+| 1.47 | «**Lingend. Tom. 3. p. 699, 700.**» | Lingend | третий локатор (том 3) |
+| 1.52, 1.63, 1.64, 1.70, 1.42 | «Suarez. Vol. 2. p. 58.»; «Suarez, Vol. 4. p. 414.»; «Suarez, de Legib. p. 43.»; «Suarez, Me∣taph. part. 1. p. 552.»; «Suarez.» | **Суарес** — пять ссылок, в том числе ***De legibus*** (новый труд) и *Disputationes metaphysicae* (новый труд) | итого **×12** — **четыре труда** |
+| 1.59 | «**Rispolis.**» | не идентифицирован | `LOCATOR_HOLD` |
+| 1.60, 1.66 | «**Bradward. lib. 1 cap. 34.** God wills it se∣cundum quid.»; «Ma∣ximus bonum, saith Brad∣ward.» | **Томас Брэдвардин**, *De causa Dei* | третья и четвёртая ссылки; «secundum quid» |
+| 1.61 | «**Aquin. cont. Gent. l. 1. c. 95.**» | **Фома Аквинский**, *Summa contra gentiles* | новая работа Аквинского в корпусе |
+| 1.62 | «**Lawson, pag. 64.**» | Лоусон | новая страница |
+| 1.71, 1.72, 1.77, 1.78, 1.80, 1.81 | «Amyrald. de libero arbit. p. 98, 99.»; «Amyrald. p. 321, 322.»; «Amyral. de libero arbit. p. 224.»; «Amyrald. Ironic. p. 337.»; «Testard. de natur. & grat. Thes. 150, 151. Amy. on divers Texts, p. 311.»; «Amyrald. de predest. p. 107.» | **Амиро**, *De libero arbitrio* и *De praedestinatione* (две новые работы), плюс «**Testard.**» | **Testardus** — французский реформатский богослов, «de natura et gratia» в тезах; **новое лицо**, `LOCATOR_HOLD` по работе |
+| 1.73 | «**Zanch. Tom. 2. lib. 3. cap. 4. qu. 4. p. 226.**» | **Джероламо Занки** | новая ссылка |
+| 1.105, 1.16, 1.21 | «Turretin. de Satisfac. p. 8.»; «Turretin. de Satisfact. p. 28.»; «Turretin. de satisfact. p. 35, 36.» | **Франсуа Турретин**, ***De satisfactione Christi*** | **новая работа Турретина**; три ссылки только в этом дискурсе — итого **×7** |
+| 1.107 | «**Placeus, de Deitat. Christi in locum.**» | **Иошуа Плясе** (Josua Placeus, 1565–1625), французский реформатский богослов; труд о **божестве Христа** | **новое лицо**; место 1 Пет. 2:22 — «who did no sin» — стык святости и христологии |
+| 1.132 | «**Sanct. in loc.**» | **Франциск Санктий Броценский** (1523–1600/1601), гуманист-гебраист, комментарий на Иезекииля | **новое лицо** |
+| 1.144 | «**Eugub. de perenni Philos. Lib. 6. cap. 6.**» | Стеуко | |
+| 1.146 | «**Vaughan p. 4, 5.**» | не идентифицирован | `LOCATOR_HOLD` |
+| 1.142 | «In 〈◊〉〈◊〉 saith 〈◊〉〈◊〉» | нечитаемо | `LOCATOR_HOLD` |
+| 1.159 | «Amor naturam induit & mores imbibit rei ama∣t••e.» | латинская максима без атрибуции | «люовь облекается в природу и впитывает нравы любимой вещи» |
+| 1.115 | «Psal. 12.8. **The vilest m••••. 〈 in non-Latin alphabet 〉〈 in non-Latin alphabet 〉**» | греческая цитата о том, что подлые возвышаются | |
+
+**Полнота.** Прочитано **двенадцать дискурсов фолианта из 14**: `1:4`–`1:14`, `1:17` — **1808
+сноски**. Остались два: `1:15` (благость), `1:16` (владычество, с подузлом `1:16.1` «The USE»).
+`LOCATOR_HOLD`.
 
 ## 1. Проверяемый вопрос
 
