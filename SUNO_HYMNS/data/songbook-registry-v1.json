@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "registryId": "SUNO-HYMNS-SONGBOOK-REGISTRY-V1",
+  "asOf": "2026-10-26",
+  "note": "Edition-level records prevent publication year, accessed-edition year, source genre, text witness and rights in a digital reproduction from being collapsed.",
+  "songbooks": [
+    {
+      "id": "SB-LODENSTEIN-UYT-1676",
+      "title": "Uyt-spanningen, behelsende eenige stigtelyke liederen en andere gedigten",
+      "publicationYear": 1676,
+      "editors": [],
+      "sourceIds": [
+        "SRC-L-1676",
+        "SRC-L-1676-COLOPHON"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "DBNL marks the underlying historical work Auteursrechtvrij.",
+        "The online text is a diplomatic rendering with omissions and a published list of editorial corrections; inspect a page image for date or typographic claims.",
+        "Colophon corrections relevant to this project: p. 7 '1565 -> 1665', p. 84 '1664 -> 1674' (II. Hert-sterckte), p. 87 '1664 -> 1674' ('t Verheven Herte).",
+        "Copy transcribed: Universiteitsbibliotheek Amsterdam 113: BALIE 250.D12. Images used by DBNL come from Koninklijke Bibliotheek Den Haag 4 B 1.",
+        "A downloadable scan bundle is advertised at https://www.dbnl.org/arch/lode002uyt_01_01/pag/lode002uyt_01_01.pdf but was not acquired in this pass."
+      ]
+    },
+    {
+      "id": "SB-LODENSTEIN-CRITICAL-2005",
+      "title": "Uyt-spanningen — critical edition",
+      "publicationYear": 2005,
+      "editors": [
+        "A. Ros",
+        "L. Strengholt"
+      ],
+      "sourceIds": [
+        "SRC-L-CRIT-2005",
+        "SRC-L-SCHEPSELEN-51",
+        "SRC-L-HERT-I-1673-34"
+      ],
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "DBNL marks the 2005 edition as copyright-protected.",
+        "Modern item numbers are not a count of all individual texts: several items group multiple works and some repetitions/sections are editorially supplied."
+      ]
+    },
+    {
+      "id": "SB-LODENSTEIN-BLOEMLEZING-1971",
+      "title": "Bloemlezing uit de bundel Uytspanningen — selection containing II. Hert-sterckte",
+      "publicationYear": 1971,
+      "editors": [
+        "P.J. Buijnsters"
+      ],
+      "sourceIds": [
+        "SRC-L-HERT-II-1674-1971",
+        "SRC-L-BUIJNSTERS-1971",
+        "SRC-L-REES-CONTEXT"
+      ],
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "Edited by P.J. Buijnsters; a later selection, not the 1674 manuscript or the whole 1676 volume.",
+        "Its headnote describes four consolation songs written during the 1673 hostage period and printed by the poet himself in 1674 as 'Meditatien over eenige van 's Heeren Gods Eygenschappen'.",
+        "Its footnote on II. Hert-sterckte states 'Er staat abusievelijk: 1664', i.e. that the print reads 1664; the date remains on EVIDENCE_HOLD until the 1676 leaf is inspected."
+      ]
+    },
+    {
+      "id": "SB-EVANGELISCHE-GEZANGEN-1806",
+      "title": "Evangelische Gezangen, nevens het Psalm-Boek",
+      "publicationYear": 1806,
+      "editors": [
+        "Abraham Rutgers (reviser of hymn 68)"
+      ],
+      "sourceIds": [
+        "SRC-RUTGERS-1806-68",
+        "SRC-EVANGELISCHE-GEZANGEN-1806",
+        "SRC-RUTGERS-BIO"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "Hymn LXVIII is titled Zelfverloochening and contains seven stanzas in the accessed item.",
+        "This text is a later reworking linked to Lodenstein, not the complete 1674 source poem verbatim."
+      ]
+    },
+    {
+      "id": "SB-UTRECHT-HYMNI-1615",
+      "title": "Hymni, ofte Loff-sangen op de Christelijcke feest-dagen ende andersins",
+      "publicationYear": 1615,
+      "accessedEditionYear": 1967,
+      "editors": [
+        "Jan van Biezen",
+        "Marie Veldhuyzen"
+      ],
+      "sourceIds": [
+        "SRC-UTRECHT-HYMNI-1615-WORK",
+        "SRC-UTRECHT-HYMNI-1615-1967"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "The accessible object is the copyrighted 1967 facsimile, explicitly reproduced from the 1615 original with permission from the Koninklijke Bibliotheek.",
+        "Do not cite it as an independently digitized 1615 original or redistribute the 1967 facsimile without permission."
+      ]
+    },
+    {
+      "id": "SB-REVIUS-OVER-YSSEL-1630",
+      "title": "Over-Ysselsche sangen en dichten",
+      "publicationYear": 1630,
+      "accessedEditionYear": "1930–1935 scholarly edition",
+      "editors": [
+        "W.A.P. Smit"
+      ],
+      "sourceIds": [
+        "SRC-R-OVER-YSSEL-1630-WORK",
+        "SRC-R-OVER-YSSEL-CONTENTS",
+        "SRC-R-HY-DROEG"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "The 1630 original leaf has not been independently acquired in this project.",
+        "The accessible sonnet page belongs to W.A.P. Smit's 1930–1935 edition; it is not a direct scan of the 1630 leaf."
+      ]
+    },
+    {
+      "id": "SB-AFR-LIED-TRADITION",
+      "title": "Later Afrikaans hymnbook adaptations related to Lodenstein / Rutgers",
+      "publicationYear": "1931–2001 chain (individual editions not all acquired)",
+      "editors": [
+        "G.B.A. Gerdener",
+        "E.C. Pienaar / AGB",
+        "Gerjo van der Merwe",
+        "Andries Breytenbach"
+      ],
+      "sourceIds": [
+        "SRC-AFR-L276",
+        "SRC-AFR-L271"
+      ],
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "A modern institutional page documents a source chain, but does not replace collation of each intermediary edition.",
+        "Modern Afrikaans wording, edition rights and recorded performances require separate review."
+      ]
+    },
+    {
+      "id": "SB-LODENSTEIN-UYT-1727",
+      "title": "Uytspanningen, behelsende eenige stichtelyke liederen, en andere gedichten",
+      "publicationYear": 1727,
+      "edition": "9th edition",
+      "editors": [],
+      "sourceIds": [
+        "SRC-L-UYT-1727"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "An independent later typesetting of the same collection, used for collation.",
+        "It prints II. Hert-sterckte with the date '4 in Loumaand 1674' on printed p. 84, and keeps the internal tune pointer 'siet boven pag. 29' with the same pagination.",
+        "As a later edition it may descend from a corrected copy: it corroborates but does not prove what the 1676 compositor set."
+      ]
+    },
+    {
+      "id": "SB-MEDITATIEN-1674",
+      "title": "Meditatien over eenige van 's Heeren Gods Eygenschappen",
+      "publicationYear": 1674,
+      "editors": [],
+      "sourceIds": [
+        "SRC-MEDITATIEN-1674",
+        "SRC-L-CRIT-2005-INTRO",
+        "SRC-L-BUIJNSTERS-1971"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "The poet's own separate printing of the four exiled Rees hymns, described by two modern sources.",
+        "Not acquired: no copy, catalogue record or page image is held.",
+        "Collating it against the 1676 printing is the strongest available test of the group's dating."
+      ]
+    }
+  ]
+}
