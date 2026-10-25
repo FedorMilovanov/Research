@@ -1097,7 +1097,10 @@
         "The owner approved the title «Свет Отрадный» and the Greek-shaped syntax (vocatives kept, the three genitives left suspended) on 2026-10-26; the rendering of ἱλαρόν as «отрадный» is his choice, recorded as such, with the dictionary-literal «радостный» named alongside it.",
         "On 2026-10-26 the owner authorised repeats and a refrain built from the hymn's own words; the arrangement (PHOS-001-ARR-R1) repeats line 4 and line 1 verbatim and introduces no new word, so the claim about the translation is unaffected."
       ],
-      "holds": []
+      "holds": [],
+      "limits": [
+        "The vocative forms are faithful to the Greek case and, unavoidably, identical to the Church Slavonic ones; the register is therefore one step higher than in the Greek. The nominative alternative is documented but not adopted."
+      ]
     }
   ]
 }

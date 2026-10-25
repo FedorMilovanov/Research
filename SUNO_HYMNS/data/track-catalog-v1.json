@@ -655,6 +655,7 @@
       "rightsNote": "The Greek text is public domain and is reproduced as text only; no modern critical edition is quoted. Church Slavonic and existing Russian translations are not reproduced. The Russian text v0.1 is authored here.",
       "openChecks": [
         "Owner decision on the length of the track: the text is sung once; repeating the whole hymn is the only permissible way to lengthen it and is not authorised.",
+        "Vocative forms reopened by the owner on 2026-10-26: keep «Иисусе Христе» / «Сыне Божий» (case exact, register raised) or switch to the nominative (register neutral, case lost). Variant Б is computed and documented in the translation dossier § 4.8; not adopted until the owner says so.",
         "Owner picks one of the five style directions and runs the first generation.",
         "Record the verbatim prompt and the take in PROMPT_AND_VERSION_REGISTER.md once a take exists.",
         "Collate the Greek text against a printed Horologion or Plank 2001 (LOCATOR_HOLD).",
@@ -663,7 +664,10 @@
         "Channel copy (title, description, pinned comments, Telegram) is deliberately not written yet: it must describe the take that exists."
       ],
       "displayTitleNote": "Approved by the owner on 2026-10-26 as «Свет Отрадный», with the capital О as the owner wrote it; the verse line keeps the ordinary lowercase «отрадный». «Свете тихий» is not available: it names the Church Slavonic text.",
-      "sunoHandoff": "SUNO/PHOS-001_SUNO_HANDOFF.md"
+      "sunoHandoff": "SUNO/PHOS-001_SUNO_HANDOFF.md",
+      "interpretationNotes": [
+        "The two vocatives are formally Church Slavonic in register even though they answer the Greek vocative: the case is exact, the register is one step higher than the Greek, which uses the vocative neutrally. Recorded as a trade-off, not as a free choice."
+      ]
     }
   ],
   "adjacentNonDutchWorks": [
