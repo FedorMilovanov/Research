@@ -14,6 +14,7 @@ Read the repository root files before touching this project:
 5. 00_RESEARCH_CONTROL_PLANE_AUTHORITY_2026-08-02.md
 6. SUNO_HYMNS/README.md
 7. The specific SUNO or RESEARCH lane README relevant to the task.
+8. `SUNO_HYMNS/RESEARCH/LESSONS_AND_GUARDS.md` — the register of errors already made here, with the guard that now catches each. Read it before drafting a lyric, applying a review, or generating artwork, so the same mistakes are not repeated at the owner's expense.
 
 Do not promote this scoped project to root authority. Do not change the global evidence vocabulary. Normal repository changes go through a bounded branch and PR.
 

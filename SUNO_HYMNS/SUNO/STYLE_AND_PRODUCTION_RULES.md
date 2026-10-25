@@ -140,6 +140,20 @@ Titles inside ID3 should be clean display titles without decorative quotation ma
 
 The owner prefers cinematic, restrained, muted grading rather than oversaturated red/orange. Cooler tones may appear in stone, shadow and ambient light while retaining natural warm focal light. Preserve approved composition and face unless a specific edit is requested. Record feedback so a later agent does not regenerate a rejected look. Do not claim the final DUTCH-003 cover is approved until the owner confirms the exact output.
 
+## Failure guards
+
+Added 2026-10-25 after the DUTCH-005 session. Each line here answers an error that actually happened; the evidence is in [`../RESEARCH/LESSONS_AND_GUARDS.md`](../RESEARCH/LESSONS_AND_GUARDS.md).
+
+1. **A rhyme may cost a word, never a meaning.** Any slot where rhyme changed a word gets a verdict in the work's lyric file — *kept because …* or *reverted*. A word that exists only for the rhyme is a rewrite.
+2. **One trade, one decision, all stanzas.** If rhyme is rolled back in one stanza for a reason, the same trade in another stanza is rolled back too, in the same revision. Do not ship a text that is literal in stanza 1 and free in stanza 2 for the same cause.
+3. **Count the source's repetitions before mirroring them.** Three `op aard` and a final `niet waard` is a device with a turn; four identical words is a refrain, and a refrain may not be invented.
+4. **Never overwrite a revision in place.** Keep the previous text retrievable by path or by `git show`. After a wholesale rewrite, diff the section headings against the previous commit.
+5. **Numbers come from the file, not from memory** — verses, lines, stress marks, rhyme slots. `scripts/check_ru_lyric.py` and `scripts/check_revision_consistency.py` are the two gates; the second is a CI step and fails on stale revisions, stale counts and duplicated sentences.
+6. **A known-wrong label goes in the delivery header the turn it is found** — a working title, a misattributed line, a guessed date. Recording it in a file is not raising it.
+7. **Say back a house term before spending budget.** "Баттл" = one generation that offers **two** candidates; three battles = six images. Misreading cost two rounds of artwork.
+8. **Editing, committing, pushing and reading CI are four separate short commands.** Never sleep to wait for CI; if the state is unknown, say it is unknown.
+9. **Keep the verbs apart:** "the reviewer said the commentary glosses it…" is a lead; "the print reads `nog`" is a check. A register that cannot tell them apart is worthless.
+
 ## Publication and rights boundary
 
 Historical source research, audio generation, export, metadata QA, artwork approval, public upload and publication verification are separate milestones. The production lane does not grant rights to a modern critical edition, translation, recording, portrait or generated image. Add a public URL only after checking the live target.

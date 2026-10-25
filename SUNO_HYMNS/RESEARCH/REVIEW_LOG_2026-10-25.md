@@ -453,3 +453,19 @@ The Russian has «прах» in all four slots. So:
 2. The fourth «прах» was bought by the rhyme — the same transaction as stanza 2's «любовь», which v0.8 rolled back. It softens the stanza's last line from a turn into a repetition, and «прах» starts to behave like a refrain, which the source does not have.
 
 Recorded in `DUTCH-005_LYRICS.md` § Stanza 1 with both versions printed, and the v0.7 rhyme-cost table restored (the v0.8 rewrite had dropped it). **Text not changed:** the decision is the owner's, and the consistency argument (stanza 2 already rolled back for the same reason) cuts both ways until they choose.
+
+# Eighteenth pass — 2026-10-25 (retrospective: errors and guards)
+
+At the owner's request, the session's failures were written up rather than left in the chat: `RESEARCH/LESSONS_AND_GUARDS.md`, with the editorial half also written into `SUNO/STYLE_AND_PRODUCTION_RULES.md` § Failure guards and a preflight pointer added to `HANDOFF_FOR_NEXT_AGENT.md`.
+
+**The single most useful outcome is a new CI gate.** `scripts/check_revision_consistency.py` compares prose to files, and on its first run it caught three defects that had survived every previous pass in this session:
+
+1. `DUTCH-005_PRODUCTION_PACKAGE.md` claimed **five stress marks** and listed `дару́ет`, a word that had left the text two revisions earlier. Now four, and the list matches the file.
+2. The same package's status table said **v0.3** while the text was v0.8.
+3. A sentence appeared twice in a row — an edit applied twice.
+
+Structural validation could not see any of them: it proves ids, states and prompt identity, not that the prose still describes the text. Wired into `.github/workflows/suno-hymns-registry.yml` after the registry step; read-only, and covered by the workflow's existing "the validator modified the working tree" assertion.
+
+Also recorded: the "battle" definition in `ASSET_MANIFEST.md` (one generation = two candidates), and the DUTCH-005 cover direction with its ten rejected rounds, so the look is not regenerated from scratch.
+
+**Not claimed:** these guards prevent nothing by themselves. Two of the session's worst errors — the rhyme bought with «любовь» and the fourth «прах» — were editorial, and the only thing that caught them was the owner reading the text.

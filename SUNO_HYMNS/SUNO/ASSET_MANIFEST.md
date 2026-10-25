@@ -51,3 +51,11 @@
 ## Asset-custody boundary
 
 No MP3, WAV, MP4, PNG or other media file has been copied into this repository by this branch. The paths above are inventory notes only. To make assets durable in Research, the owner must explicitly transfer the files and the next agent must follow the repository's artifact-custody and rights rules.
+
+## DUTCH-005 — cover candidates (2026-10-25) — NOT approved, NOT in this repository
+
+**House term, recorded:** a *battle* is **one generation offering two candidate images side by side**. Three battles = three generations = six images. This was misread once; do not misread it again.
+
+**Direction chosen by the owner** after ten rejected rounds: golden baroque-fantasy cathedral interior — colossal gilded columns and angel statues, an organ of gold pipes, a single shaft of light down the axis, and one small hooded figure with arms open standing in it. Rejected directions: baroque oil painting in a Dutch-church manner (too quiet, too museum-like), copperplate emblem engraving, cold photoreal organ close-up, storm/ruin sublime.
+
+**Status:** candidates exist only in the working environment at `/home/user/images/dutch-005/` (`b7-organ-wall.jpg`, `b8-kneeling-host.jpg`, `b11-nave-tiers.jpg`, `b13-altar-cascade.jpg`, and earlier trials). They are **not** in this repository, **not** referenced by the catalog, and **not** approved. Do not claim a DUTCH-005 cover exists until the owner names the file and it is filed under a path recorded here.

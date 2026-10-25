@@ -51,6 +51,12 @@ jobs:
       - name: Validate the project registries
         run: python3 SUNO_HYMNS/scripts/validate_project_registry.py
 
+      - name: Check that the prose names the current revision
+        # Structural validation cannot see that four documents still describe the
+        # previous lyric revision, or that a document claims "five stress marks"
+        # while the shipped file carries four. This gate compares prose to files.
+        run: python3 SUNO_HYMNS/scripts/check_revision_consistency.py
+
       - name: Assert the validator is read-only
         run: |
           set -euo pipefail
