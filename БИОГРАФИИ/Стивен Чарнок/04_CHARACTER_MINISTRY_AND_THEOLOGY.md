@@ -503,6 +503,192 @@ Ambition.»
 «Mourning for other Mens Sins» (`1:6`), «The Sins of the Regenerate» (`1:8`), «The Pardon of Sin»
 (`1:9`, с подузлами `1:9.1`–`1:9.5`). `LOCATOR_HOLD`.
 
+### 0G. «A DISCOURSE OF THE CHURCHES STABILITY» — учение о церкви под гонением (добавлено 2026-10-25)
+
+**Объект.** Узел `A32724.0001.001/1:3` (*Supplement* 1683), 19 чанков, **стр. 20–39**, 48 сносок.
+
+> ### A DISCOURSE OF THE CHURCHES STABILITY.
+>
+> **Psalm 87.5.** And of Sion it shall be said, This and that man was born in her; and the Highest
+> himself shall establish her.
+
+**Почему этот дискурс важен для биографии.** Чарнок — в конце жизни лишённый сана нонконформист,
+проповедующий в лицензированном зале, — проповедует о **непоколебимости церкви**. Это не
+абстрактное догматическое упражнение, а самоописание его собственного положения:
+
+> «The Church is not built upon the Sand, which may fall with a Storm, nor upon the Waters, that may
+> float with the waves; nor spread out as a Tent in the Desert, that may be taken up, and carried
+> away to another place; but upon a Mountain not to be removed… 'tis built upon a Rock, the Rock of
+> Ages; upon a Mountain which is not shatter'd by waves, or shaken by storms, upon Christ, who hath
+> the strength of many Mountains in himself.»
+
+> «the gates of Hell, the power and policy of all the Apostate Angels and their instruments should not
+> prevail against her… he would be present with her, not to the end of an age or two, but till the
+> period of time, the consummation of the world; priviledges that material Jerusalem could never
+> boast of.»
+
+**Редкое современное наблюдение — Иерусалим под османами (стр. 20, дословно):**
+
+> «that was ruin'd by the Babylonians, and tho re-edified, yet afterwards subverted by the Romans,
+> and **the remainders of it at this day become a Stable for Mahomet**, and the bringing in those
+> Nations mention'd, v. 4. overthrows any such interpretation…»
+
+Это одно из немногих мест во всём корпусе отдела, где Чарнок называет **современное ему
+политическое состояние** — и при этом называет его с той отстранённой уверенностью, с какой
+протестантский богослов 1680-х говорил об Османской империи: «a Stable for Mahomet». Иудейское
+истолкование псалма он тут же называет «ridiculously».
+
+**Апокалиптический элемент.** Дискурс насыщен Откровением: сноска 1.18 = «All the world wondred
+after the Beast, Rev. 13.3. and worshiped him, v. 8»; 1.46 = «Rev. 12.6. And the woman fled into the
+wilderness, where she hath a place prepared of God that they should feed her there **1260 days**»;
+1.45 = «Rev 3.1. These things saith he that hath the seven spirits of God, and the seven Stars».
+То есть «устойчивость церкви» доказывается у Чарнока в том числе через **историцистское чтение
+Апокалипсиса** — тот же метод, что в §0C (Фиатира) и §0E (пятое ноября).
+
+**Сноска 1.44 — Чарнок о природе Откровения (дословно):**
+
+> «**I do not question but that the whole is prophetical, it would not else be called Mystery, as it
+> is, Rev. 1.20. were it meant of those particular Churches.**»
+
+Для утверждения Cambridge Platonism Sourcebook о Моровой *Exposition of the Seven Churches*
+(том 04 §0A.2) это существенная поправка: Чарнок считал, что семь церквей — **пророчество, а не
+только семь исторических общин**. Значит Морова книга была для него не курьёзом, а
+свидетельством в споре о методе чтения Апокалипсиса.
+
+**Аппарат — новые именованные авторы (дословно, из 48 сносок):**
+
+| Сноска | Ссылка | Автор / сочинение |
+|---|---|---|
+| 1.6 | «**De Dieu in loc.**» | **Клод де Дьё** (Claude de Dieu), французский протестантский гебраист |
+| 1.11 | «**Coccei. in loc.**» | Иоганн Кокцей — **третье** именование в *Supplement* |
+| 1.15 | «**Ribera. in loc.**» | Ribera (не идентифицирован окончательно) |
+| 1.16 | «The Arca∣dians made Jovis signum quadrangulum. **Pausanias de Arcadicis.**» | **Павсаний** |
+| 1.17 | «**Lightfort Temple, cap. 38. p. 252.**» | **Джон Лайтфут, «Храм»** — второе именование в *Supplement* (см. §0E, сноска 1.7, cap. 3) |
+| 1.20 | «**Rivet. in Hos. 1.10. p. 518.**» | Ривет |
+| 1.21 | «**Decay of Christian Pie∣ty, p. 23.**» | английское современное сочинение, не идентифицирован |
+| 1.24 | «Cha••••••. 3 Veri••. lib. 3. cap. 1. p. 16.» | зашифровано кейбордингом; не идентифицирован |
+| 1.43 | «**Tarretin Sermons, p. 330.**» | **Турретин, «Проповеди»** — второе именование в корпусе (первое: фолиант 1682, сноска 1.117, стр. ~3••2) |
+
+**Два наблюдения.**
+- **Лайтфут цитируется дважды и в разных главах** («Temple», cap. 3 и cap. 38). Это уже не
+  случайная ссылка, а **систематическое пользование** сочинением — как и с Маймонидом
+  (§0A.2) и Кокцеем.
+- **Turretin's *Sermons*, стр. 330–332** цитируется в двух разных произведениях (фолиант 1682 и
+  *Supplement* 1683). Отдел фиксирует: у Чарнока на столе лежал один и тот же том, и он
+  возвращался к нему.
+- **«Decay of Christian Piety»** — английская книга, которую отдел не идентифицировал. Записано
+  как `LOCATOR_HOLD`: идентификация этого сочинения дала бы точную современную английскую
+  привязку дискурса.
+
+**Полнота.** Это **третий из восьми дискурсов** *Supplement* 1683, прочитанных отделом
+содержательно (ранее §0E, §0F). Остались четыре: «Delight in Prayer» (`1:5`), «Mourning for other
+Mens Sins» (`1:6`), «The Sins of the Regenerate» (`1:8`), «The Pardon of Sin» (`1:9` с подузлами
+`1:9.1`–`1:9.5`). `LOCATOR_HOLD`.
+
+### 0H. «A DISCOURSE OF Mourning for other Mens Sins» — плач о грехах времени (добавлено 2026-10-25)
+
+**Объект.** Узел `A32724.0001.001/1:6` (*Supplement* 1683), 10 чанков, **стр. 64–~75**, 11 сносок.
+
+> ### A DISCOURSE OF Mourning for other Mens Sins.
+>
+> **Ezekiel 9.4.** And the Lord said unto him, Go thorow the midst of the City, thorow the midst of
+> Jerusalem, and set a mark upon the foreheads of the men that sigh, and that cry for all the
+> Abominations that be done in the midst thereof.
+
+**Доктрина (дословно, крупным шрифтом в оригинале):**
+
+> «**Doct. Lamenting the sins of the times, and places wherein we live, is a duty incumbent on us,
+> acceptable to God, and a great means of preservation under publick Judgments.**»
+
+**Почему это биографический текст.** Чарнок — нонконформист вне государственной церкви —
+проповедует, что плакать о грехах своего времени и места есть долг, и что именно плачущие
+получают печать сохранения. Он при этом утверждает и обратное:
+
+> «The places where God hath manifested the glory of his Ordinances, are the subjects of his greatest
+> judgments upon their provocations. Go through the City, through Jerusalem: That Jerusalem wherein
+> I have manifested my glory, which I have intrusted with my oracles… Go thorow that City into the
+> midst of it, and let not your eye spare.»
+
+> «The glory of Gods Ordinances is obscured among a people, before judgments come upon them… The
+> Ordinances of God are understood by some interpreters to be the hedge, and wall of a People; when
+> God takes away the Hedge, the breach is made wide for every wild beast to enter.»
+
+То есть это **диссентерская теология национального суда**, изложенная через Иезекииля. И в том же
+дискурсе — постовой долг: «God made a standing Law for an annual Fast, wherein they should afflict
+their Souls, the tenth day of the seventh month, answering to our September, and backed it with a
+severe penalty.»
+
+**Чарнок как филолог — прямое доказательство (сноска 1.8, дословно):**
+
+> «The steps of a man **good man, our translation renders it. But the word is 〈 in non-Latin
+> alphabet 〉〈 in non-Latin alphabet 〉, a valiant man** are ordered by the Lord, and he delights in his way, Psal. 37.23.»
+
+Чарнок **поправляет английский перевод** Пс. 36:23 по еврейскому: не «a good man», а «a valiant
+man». Это самый прямой в корпусе отдел доказательственный предмет для оценки Johnson'а
+(Calamy 1727, стр. 81): skill Чарнока в оригиналах «near unto … Thomas Gataker». Не похвала
+биографа, а работа, которую можно проверить.
+
+**Второе филологическое свидетельство — опровержение Оригена (в теле, стр. 64):**
+
+> «Interpreters trouble themselves much what this mark should be, and tell us from Origen, that a
+> believing Jew told him the ancient Samaritan letter called Tau was written like a cross, **But that
+> is a fancy, the ancient Samaritan letter being the same with the Phaenician was not writ in that
+> form.**»
+
+Чарнок опровергает сообщение Оригена на основании палеографии — и тут же даёт Кальвиново чтение:
+«Markt they were, saith Calvin, with a Tau, because that being the last letter in the Alphabet,
+shews that the people of God are of the lowest account among men, and the off-scouring of the world».
+
+**Афоризмы, годные для биографии:**
+
+> «Not on their visible fore∣heads, but on their invisible consciences; **the conscience is the
+> forehead of the Soul; As emi∣nent in the heart as a forehead in the body.**»
+
+> «**Serenity of Conscience is a gift of God to his people in the time of severe judgments. As when
+> death is near, the Conscience of a good man is most serene, and sings sweetly in his breast the
+> notes of his own integrity.**»
+
+Эта вторая фраза — о том, что самому Чарноку понадобилось бы через два года (см. том 01 §2.10:
+завещание 25 июля 1680). Отдел фиксирует совпадение как **совпадение**, не как предсказание.
+
+**Заключение дискурса (дословно):**
+
+> «Let us therefore examine what are our own sins, what are the abominations of the times and places
+> wherein we live; make inquisition for the one, that we may drag them out before the Lord: And in
+> our places endeavour to stop and reform the other. As the true fire of Love to God will melt us
+> into tears, so it will heat us into zeal. **He is no friend, that will complain of a toads being in
+> another's bosom, but not strive to kill it.** That zeal is wild-fire that is not accompanied with an
+> holy sorrow, and that sorrow is crude which is not accompanied with a godly Zeal.»
+
+**Аппарат — все 11 сносок (дословно), новые имена для корпуса:**
+
+| Сноска | Ссылка | Автор / сочинение |
+|---|---|---|
+| 1.1 | «**Vossius de Arte Grammatic. l. 1. c.**» | **Герард Фоссий, *De arte grammatica*** |
+| 1.2 | «**Grotius.**» | Гуго Гроций |
+| 1.3 | «**Oecolampad.**» | **Иоганн Эколампадий** (базельский реформатор) |
+| 1.4 | «**Broughton Lives of the Fathers, p. 7. Crit. in loc.**» | Бротон (по-видимому, Hugh Broughton, английский гебраист); не идентифицирован окончательно |
+| 1.5 | «**Grotius Luc. 15.7. Ob peccatum Hebraei Angelos flentes inducunt.**» | Гроций о Лк. 15:7, по-латыни |
+| 1.6 | «**Aristot. Rhetor. l. 1. c. 4.**» | **Аристотель, «Риторика»** |
+| 1.8 | Пс. 36:23, «a valiant man» | **собственная филологическая поправка Чарнока** |
+| 1.9 | «**Lightfoot, Olian. on Exod. 6.13.**» | Лайтфут — третье именование в *Supplement* |
+| 1.10 | «**Non nunquam faelicitati in culpam saevimus in hominem. Prosper.**» | **Прозер Аквитанский**, по-латыни |
+| 1.11 | «**August. de Civit. Dei. lib. 1. Cap. 9.**» | **Августин, *О граде Божьем*** |
+
+**Три наблюдения.**
+- **Лайтфут цитируется трижды в *Supplement*** (здесь сноска 1.9; в §0E сноска 1.7, «Temple» cap. 3;
+  в §0G сноска 1.17, «Temple» cap. 38). Это **систематическое пользование**, и оно подтверждается
+  каталогом аукциона 1680 года (том 03 §3G).
+- **Латинские цитаты без перевода** (Grotius, Prosper) — Чарнок обращается к читателю, который
+  читает по-латыни. Библиотека с 372 латинскими богословскими книгами (том 03 §3G) — это та
+  аудитория.
+- **От Августина до Эколампадия и Гроция в одном аппарате** — реформатская эклектика,
+  которую McCosh называл эрудицией; теперь она видна по именам.
+
+**Полнота.** Это **четвёртый из восьми дискурсов** *Supplement* 1683, прочитанных отделом
+содержательно. Остались три: «Delight in Prayer» (`1:5`), «The Sins of the Regenerate» (`1:8`),
+«The Pardon of Sin» (`1:9` с подузлами `1:9.1`–`1:9.5`). `LOCATOR_HOLD`.
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах
