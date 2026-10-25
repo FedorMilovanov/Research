@@ -34,6 +34,44 @@
 - **ограничение текста**: «some little things, a Word, or a Phrase now and then he may have, which no
   doubt, had he lived to Transcribe his own Sermons, he would have altered».
 
+### 0A. Документированное влияние: Генри Мор о вездесущности Божьей (добавлено 2026-10-25)
+
+**Источник:** *The Reception of Henry More (1640–1720)*, Cambridge Platonism Sourcebook, Divinity
+Faculty, University of Cambridge
+(`cambridge-platonism.divinity.cam.ac.uk/about-the-cambridge-platonists/reception/more-henry`).
+Запись дословно:
+
+> **Stephen Charnock, *Several Discourses upon the Existence and Attributes of God* (1682)
+> [quotes More on God's omnipresence; also cites More's *Exposition of the Seven Churches*]**
+
+**Статус:** `B1` (учёная библиография приёма, не первоисточник). **Требует проверки** по тексту
+фолианта 1682: дискурс о вездесущности — стр. 241, узел `1:10` (`GODS OMNIPRESENCE`, Иер. 23:24);
+сноски дискурса не читались → `LOCATOR_HOLD`.
+
+**Почему это существенно.** Henry More (1614–1687) — кембриджский платоник, fellow of Christ's
+College. Его метафизика **протяжённости духа** — именно та рамка, в которой обсуждалась
+безграничность Божьего присутствия. Тот же источник при записи о John Howe'е (1695)
+характеризует её так: «More's view that **created spirits have real amplitude, made up of
+indiscerpible parts**, essentially united and not separable without annihilation of the whole».
+
+**Связка с линией Эммануила (том 15).** Три документа теперь образуют маршрут:
+
+| Звено | Что |
+|---|---|
+| Preston, sermon 16 (*Life eternall*, 1631) | «The **Infinitenesse of his presence, Or, His Jmmensity**» — из **Исх. 3:14** |
+| **Charnock, стр. 241** (фолиант 1682) | «The **Omnipresence of God**» — из **Иер. 23:24**, с **цитатой Генри Мора** (покембриджскому источнику) |
+| Charnock, стр. 787 | «God's **Infinite Patience**» — из **Наум 1:3** |
+
+То есть Чарнок продолжает **эммануиловскую линию дискурсов о божественной безграничности**, но
+**переводит её на новый метафизический язык** — язык кембриджского платонизма, а не одной лишь
+реформированной схоластики. Это важная поправка к привычному образу Чарнока как «чистого
+кальвинистского богослова»: в его главном труде есть документированный диалог с платонической
+философией.
+
+**Ограничение.** Отдел фиксирует **влияние как reported**, не как прочитанное: сноска Мора в
+дискурсе о вездесущности отделом **не прочитана**. До прочтения нельзя указывать страницу, нельзя
+цитировать сам фрагмент Мора и нельзя утверждать характер согласия или полемики.
+
 ---
 
 ## 1. Проверяемый вопрос
