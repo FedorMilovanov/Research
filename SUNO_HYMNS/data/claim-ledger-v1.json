@@ -1084,7 +1084,7 @@
     {
       "id": "CLM-PHOS-001-TRANSLATION",
       "topic": "Our Russian text",
-      "claim": "PHOS-001-RU v0.4 is a verse translation of the six Greek lines into six Russian lines, following the order of the original word for word where Russian allows, with one added auxiliary and the articles dropped, with no refrain of its own, no repeated line, no added line, no rhyme and no metre (the source has neither). The three genitive adjectives stay suspended as in the Greek; the vocative of the original is rendered by the Russian nominative, by the owner's decision, so the register stays level and the case is not transmitted.",
+      "claim": "PHOS-001-RU v0.5 is a verse translation of the six Greek lines into six Russian lines, keeping the Greek cases and one word per content word, with one added auxiliary and the articles dropped, no refrain of its own, no added line, no rhyme and no metre (the source has neither). The address opens line 1 because the Greek order with a nominative address is ungrammatical in Russian; the three genitive adjectives therefore read as attributes of the Father, and the Greek ambiguity is not reproduced in this version.",
       "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
       "sourceIds": [
         "SRC-PHOS-CPDL"
@@ -1099,7 +1099,7 @@
       ],
       "holds": [],
       "limits": [
-        "The Greek vocatives Ἰησοῦ Χριστέ and Υἱὲ Θεοῦ are not rendered as a case: the Russian nominative is an address by context only. Recorded as a loss."
+        "The Greek vocatives Ἰησοῦ Χριστέ and Υἱὲ Θεοῦ are not rendered as a case: the Russian nominative is an address by position and context. The suspended reference of the three genitives is lost with it. Both are recorded as losses; «Иисуса Христа» would have joined the genitive chain and made Christ a second name for the Father."
       ]
     }
   ]
