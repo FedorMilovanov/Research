@@ -3,6 +3,8 @@
 **As of:** 2026-10-26, publication pass (branch `arena/0bdf988d-research`, PR #237)  
 **Scope:** continue the SUNO and historical-research workstream without inventing missing assets or disturbing Research root authority.
 
+**First message for a fresh agent:** `SUNO_HYMNS/AGENT_PROMPT.md` — a ready-to-paste prompt with the reading order, the gates, the open items and the list of dead ends. Keep it current; it is what the next agent reads instead of the chat history.
+
 ## Mandatory preflight
 
 Read the repository root files before touching this project:
