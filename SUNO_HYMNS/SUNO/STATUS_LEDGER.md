@@ -71,13 +71,15 @@
 - **Production state:** `ASSETS_PREPARED` — по сообщению владельца (2026-10-26) гимн сгенерирован, обложка есть, аудио и видео загружены в YouTube, пост — в Telegram. **В репозитории нет ни аудио, ни обложки, ни одной ссылки**, поэтому `publicPublicationStatus` остаётся `UNKNOWN_NOT_VERIFIED`: в этом проекте «опубликовано» без ссылки не пишется никогда.
 - **What is still missing from the record, in order:** the two public URLs (YouTube + Telegram); the cover file (name and path); the exact prompt that was submitted; the duration and export settings; and **which stanza-3 line was sung** — v0.9 «После земных невзгод» or v0.10 «Та, что за смертью придёт». If the recording predates v0.10, the audio and this repository disagree on one line, and that must be said out loud rather than glossed.
 - **Publication copies (2026-10-26) — used for the upload the owner reports; no receipts held:**
-  - `DUTCH-005_YOUTUBE.md` — title options, description 4881 characters (12 bold, 5 italic), hidden tags, checklist, and the markup post-mortem in § 0.
+  - `DUTCH-005_YOUTUBE.md` — title options, description 4598 characters (12 bold, 5 italic), hidden tags, checklist, and the markup post-mortem in § 0.
   - `DUTCH-005_TELEGRAM.md` — post for @lordchrist in Telegram markup, with an HTML twin.
   - `DUTCH-005_PINNED.md` — two pinned YouTube comments (1772 and 1590 characters), 4 bold + 1 italic line and 6 bold + 2 italic lines, both gated.
   - Every claim in the three files is mapped to a named source in `../RESEARCH/CLAIM_LEDGER.md`, `../RESEARCH/DUTCH-005_SOURCE_LEDGER_FULL.md` (64 records with a status each), `../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses) and `../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses).
   - **None of this is publication.** No URL exists; if one appears later, record it here and only then move the state.
 - **Fixed in v0.10:** stanza 3.2 — «После земных невзгод» replaced by «Та, что за смертью придёт» on the documented Dutch reading. The owner published the hymn without objecting to the line; it is recorded as **used, not separately signed**.
 - **Open defects on this work:** the two public URLs are not recorded; the cover file is not identified; the markup of the description and both закрепы has not been seen rendering in a live Studio; the 1676 page images of pp. 155–158 have not been inspected (text layer only); the sung wording of stanza 3 is unconfirmed against the audio.
+- **Biography date closed 2026-10-25:** the Utrecht ministry is dated by the 2005 introduction (A. Ros, printed p. 645): call 1652, entry **April 1653**, service until 1677. The 1644/1650/1653 in secondary sources are the three pastorates. Claim `CLM-L-UTRECHT-1653`; the description and the Telegram post read «с апреля 1653 года».
+- **Copy brought into range 2026-10-25:** the description measured 4881 against the channel's 3500–4600 range and no gate saw it. It is now 4598; the cut is tabulated in `DUTCH-005_YOUTUBE.md` § 7, and `check_copy_lengths.py` enforces both bounds.
 - **Do not confuse with:** DUTCH-002's brief (similar sound, different poem, different prompt) and the 1938 bundel's reworking of this text to a Bourgeois melody (a protected, later object).
 
 ## Adjacent works — keep out of the Dutch historical catalog

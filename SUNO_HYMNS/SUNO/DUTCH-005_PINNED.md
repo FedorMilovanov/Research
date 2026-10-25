@@ -93,4 +93,4 @@ _Мелодия не кладёт на весы Бога ни тяжести, н
 
 ## Источники
 
-Два прогона. По самому гимну — [`../RESEARCH/DUTCH-005_SOURCE_LEDGER_FULL.md`](../RESEARCH/DUTCH-005_SOURCE_LEDGER_FULL.md): 64 записи, из них 15 открыто и прочитано, 24 найдено в поиске, 20 каталожных, 5 записаны как негодные. По манере пения — [`../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md`](../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md).
+Два прогона. По самому гимну — [`../RESEARCH/DUTCH-005_SOURCE_LEDGER_FULL.md`](../RESEARCH/DUTCH-005_SOURCE_LEDGER_FULL.md): 64 записи, из них 16 открыто и прочитано, 23 найдено в поиске, 20 каталожных, 5 записаны как негодные. По манере пения — [`../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md`](../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md).

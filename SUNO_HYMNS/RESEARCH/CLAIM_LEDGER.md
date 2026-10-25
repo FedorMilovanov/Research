@@ -729,3 +729,17 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Limits / next action:** Locator: bibliography in Buijnsters (ed.), *Bloemlezing uit de bundel Uyt-spanningen* (1971), pp. 24–25 (DBNL). The nineteen are printing records, not nineteen numbered editions: the numbered series reaches the sixteenth, because the 4th and 5th editions each survive in two printings and one 10th edition is undated. Copy must therefore say "nineteen printings, the sixteenth in 1780", never "nineteenth edition".
 
 **Next check:** if a run of this hymn ever needs edition-level precision, distinguish the two 1683 and the two 1693–95 printings.
+
+## CLM-L-UTRECHT-1653 — Lodenstein's Utrecht ministry: the year, and the 1644/1650/1653 discrepancy
+
+**Claim:** The call to Utrecht reached Lodenstein as early as **1652**; after a period of illness he entered the Utrecht ministry in **April 1653** and served there until his death in **1677**. The years 1644, 1650 and 1653 that secondary sources give are not rival datings of one event but his three pastorates: Zoetermeer 1644, Sluis 1650, Utrecht 1653.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-CRIT-2005-INTRO
+
+**Limits / next action:** Locator: A. Ros, «Ds. Jodocus van Lodenstein en zijn *Uyt-spanningen* 1676», in the 2005 critical edition, printed p. 645; the DBNL page was opened and read on 2026-10-25. It is a modern editor's biography (B1), not a contemporary witness, and it is copyrighted — paraphrase only, never quotation. It dates the ministry, not any individual poem. Hymnary's 1644/1650/1653 is not contradicted by this page, it is explained by it.
+
+**Consequence for copy:** «с апреля 1653 года» is now allowed in the description and in the Telegram post. Before this page was opened, every form of «since 1653» was banned from the copy, and the ban was right.
+
+**HOLDs:** RIGHTS_HOLD

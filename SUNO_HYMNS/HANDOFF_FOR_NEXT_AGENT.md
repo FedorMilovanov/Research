@@ -135,7 +135,7 @@ DUTCH-005 now has a complete publication package for two surfaces, and **nothing
 
 **New since the sixth pass:**
 
-1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, a 4881-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
+1. `SUNO/DUTCH-005_YOUTUBE.md` — title options, a 4598-character description (12 bold spans, 5 italic lines), hidden tags, a checklist, and § 0: a verbatim post-mortem of the markup that broke on a live page, so nobody re-runs the same experiment.
 2. `SUNO/DUTCH-005_TELEGRAM.md` — the @lordchrist post in Telegram markup, plus an HTML twin.
 3. `SUNO/DUTCH-005_PINNED.md` — **two** pinned comments: one on the hymn (date under the last stanza, the meaning of the title, `leven`/`lieven`/`loven`, the edition chain, the missing melody), one on how the Dutch actually sang (psalms only, the 1574 organ ban, the `voorzanger`, the house circles, and Lodenstein's own six singing rules from the preface).
 4. `RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` — 88 addresses behind the second pinned comment, with honest statuses: 5 opened and read, 74 found in results, 9 still only library leads. Nothing in either закреп rests on a snippet alone.
@@ -152,4 +152,8 @@ DUTCH-005 now has a complete publication package for two surfaces, and **nothing
 - call the pinned comments publication, or attach a URL that has not been checked;
 - describe the hymn as written for public worship. It was written for a house circle, and that is the fact the copy is built on.
 
-**Still open, in priority order:** the lyric defect at stanza 3.2 («После земных невзгод»); the cover (references live outside the repository); the title separator is settled (`✝`, owner decision 2026-10-26) and must not be reopened; a live Studio check of the description and both pinned comments; the 1676 page images of pp. 155–158 (only the text layer has been read).
+**Still open, in priority order:** the owner's signature on stanza 3.2 (the line now reads «Та, что за смертью придёт», applied in v0.10); the cover (references live outside the repository); a live Studio check of the description and both pinned comments; the 1676 page images of pp. 155–158 and p. 495 of 1681 (only text layers have been read — the addresses are in `RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md` § 5).
+
+**Closed since:** the Utrecht date. The 2005 introduction (A. Ros, p. 645) states that the call came in 1652 and that he entered the Utrecht ministry in April 1653, serving until 1677; the 1644/1650/1653 in secondary sources are his three pastorates. Claim `CLM-L-UTRECHT-1653`. The description and the Telegram post now say «с апреля 1653 года».
+
+**Also closed:** the description's length. It stood at 4881 against the channel's own 3500–4600 range while every gate stayed green, because the gate only knew the platform limit. It is now 4598, the cut is tabulated in `SUNO/DUTCH-005_YOUTUBE.md` § 7, and `check_copy_lengths.py` enforces both bounds.

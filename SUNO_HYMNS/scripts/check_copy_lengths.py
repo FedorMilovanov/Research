@@ -19,7 +19,11 @@ value:
 - every document that describes the present state of the copy must quote the current
   description length; the review log is exempt because it records the past;
 - Telegram: "Длина: **<N>** видимых знаков" in DUTCH-005_TELEGRAM.md, against the
-  post text with markup characters stripped.
+  post text with markup characters stripped;
+- the description's own range: the channel's rule sheet allows 3500-4600
+  characters, not merely the platform's 5000. That upper bound was broken for a
+  whole pass (4881) while this gate said nothing, because it only knew the
+  platform limit.
 
 Read-only. Usage:
     python3 SUNO_HYMNS/scripts/check_copy_lengths.py
@@ -36,6 +40,11 @@ SUNO = ROOT / "SUNO_HYMNS" / "SUNO"
 
 YT_LIMIT = 5000
 TG_LIMIT = 4096
+
+# projects/lord-god-strength/RULES.md § 4: «Объём 3500–4600 знаков (лимит площадки 5000)».
+# The platform limit is not the channel's limit; a description can be legal and wrong.
+DESC_MIN = 3500
+DESC_MAX = 4600
 
 
 def description() -> str:
@@ -154,6 +163,14 @@ def main() -> int:
 
     if desc > YT_LIMIT:
         problems.append(f"YouTube description is {desc} characters, over the {YT_LIMIT} limit")
+    if desc > DESC_MAX:
+        problems.append(
+            f"YouTube description is {desc} characters, over the channel range of {DESC_MIN}-{DESC_MAX}"
+        )
+    if desc < DESC_MIN:
+        problems.append(
+            f"YouTube description is {desc} characters, under the channel range of {DESC_MIN}-{DESC_MAX}"
+        )
     if tg_len > TG_LIMIT:
         problems.append(f"Telegram post is {tg_len} visible characters, over the {TG_LIMIT} limit")
 

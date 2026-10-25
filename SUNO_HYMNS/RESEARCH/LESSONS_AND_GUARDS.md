@@ -112,7 +112,7 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 
 **The number that was actually wrong.** The pinned comment said the 1679 second edition appeared "eight years before the author's death"; it appeared **two years after** it. Read dates as sentences, not as arithmetic.
 
-## 2b. Delivery, gates and two channels — four more, each with a guard
+## 2b. Delivery, gates and two channels — five more, each with a guard
 
 **1. Marked-up copy handed over as a block quote.** The two pinned comments went to the owner inside `>` quotes. The chat renders `*…*` into bold and the asterisks vanish from the screen, so what could be copied looked like plain prose and the one thing asked for was not visibly there. **Guard:** copy goes into a fenced `text` block, always; the rule is in `projects/lord-god-strength/RULES.md` § 3 and in the channel standard.
 
@@ -121,6 +121,18 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 **3. Two channels, one rule set.** The markup and copy rules were written around one project, and the other existed as a list of exceptions to them. That is how a poetry playlist ends up in a hymn description. **Guard:** this repository holds one channel's rule sheet, self-contained (`projects/lord-god-strength/RULES.md`), and nothing about the other channel. An earlier attempt to keep a shared file plus two project sheets reproduced the original fault one level up: two homes for one rule. Precedence is now stated in one place — `video-channel-manager` for identifiers and playlists, this sheet for editorial requirements.
 
 **4. Secondary sources stated as verified.** The description and the pinned comment asserted the 1681 and 1718 reprints and the 1938 melody as plain facts, while `CLAIM_LEDGER` records them as `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`, resting on search-engine extracts of the song database and on a wiki. **Guard:** the copy now attributes them — «по каталогу Нидерландского песенного банка», «по песенным справочникам» — and the status table in `DUTCH-005_PINNED.md` says «вторичное, коллация не сделана» instead of «сверено». A claim does not become print-verified by being retyped into a nicer sentence.
+
+## 2c. The fact was in the volume all along — in the introduction, not the apparatus
+
+**What happened.** For several passes the project carried an open item: the year of Lodenstein's Utrecht ministry was not confirmed, so the words «с 1653 года» were banned from the description in every form. The search had been run through the 2005 edition's **notes** and through its **table of contents** — the apparatus around the poem — and through secondary biographies. Nobody had opened the volume's **introduction**.
+
+**What settled it.** `lode002uyt_02_01_0147.php`, A. Ros, «Ds. Jodocus van Lodenstein en zijn *Uyt-spanningen* 1676», printed p. 645: the call came in 1652, illness delayed him, and he entered the Utrecht ministry in **April 1653**, serving until 1677. One page, five minutes, and it also explained the discrepancy that had looked like a contradiction: the 1644 / 1650 / 1653 in secondary sources are his three pastorates (Zoetermeer, Sluis, Utrecht), not three datings of one event.
+
+**Guard.** When a critical edition is open, its introduction is a source of the same standing as its apparatus, and it must be read before a biographical item is declared unresolvable. And a discrepancy between secondary sources is not automatically an open question: three numbers can be three true facts. Before recording a conflict, check whether the sources are answering the same question.
+
+**Cost avoided, not paid.** The ban was correct while the gap was real, and the copy never contained an unsourced date. The cost was time: the item sat in three plans as "blocked on access" when it was blocked on nobody having clicked the next page.
+
+**5. A rule that no gate read.** `projects/lord-god-strength/RULES.md` § 4 has said 3500–4600 characters since the rule sheet was written. The DUTCH-005 description was built to 4881 and stayed there across two passes, while `check_copy_lengths.py` reported green: it only knew the platform's 5000. A description can be legal on the platform and wrong for the channel, and the copy claims in its own checklist that it was written to the rule. **Guard:** the gate now enforces both bounds (`DESC_MIN`/`DESC_MAX`) and was tested by lowering the maximum until it failed. The description was cut to 4598 without losing a single claim, link, hashtag or bold span, and the cut is tabulated in `SUNO/DUTCH-005_YOUTUBE.md` § 7 so it can be reviewed or reverted line by line. General lesson: when a document states a number, grep the scripts for that number; if no script contains it, the number is decoration.
 
 ## 3. Mechanical hazards
 

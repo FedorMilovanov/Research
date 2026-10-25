@@ -897,6 +897,25 @@
         "The Valbeek commission is the publisher's own statement as summarised by Buijnsters; it explains why the 1679 impression has no notation."
       ],
       "holds": []
+    },
+    {
+      "id": "CLM-L-UTRECHT-1653",
+      "topic": "Lodenstein's Utrecht ministry: the year, and the 1644/1650/1653 discrepancy",
+      "claim": "The call to Utrecht reached Lodenstein as early as 1652; after a period of illness he entered the Utrecht ministry in April 1653 and served the congregation there until his death in 1677. The three years that secondary sources give for him (1644, 1650, 1653) are not rival datings of one event but his three pastorates: Zoetermeer 1644, Sluis 1650, Utrecht 1653.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-CRIT-2005-INTRO"
+      ],
+      "notes": [
+        "Locator: A. Ros, 'Ds. Jodocus van Lodenstein en zijn Uyt-spanningen 1676', in the 2005 critical edition, printed p. 645; DBNL page opened and read 2026-10-25.",
+        "Independent in date, dependent in substance: Hymnary's '1644/1650/1653' is not contradicted here, it is explained. Zoetermeer 1644 and Sluis 1650 are the same two dates the introduction gives for those pastorates.",
+        "Scope limit: the introduction is a modern editor's biography (B1), not a contemporary witness. It dates the ministry, not any single poem, and it is copyrighted: paraphrase only.",
+        "Consequence for copy: 'служил в Утрехте с апреля 1653 года' is now allowed; before this page was opened, all forms of 'since 1653' were banned from the description."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "projectLevel": true
     }
   ]
 }

@@ -187,13 +187,13 @@ A long review arrived aimed at v0.5 (it could not see the repository). Eight of 
 
 Not a wording change: every line of v0.8 is untouched. The heading went from «Слава Господня» to **«Хвала Славе»** on the owner's decision, because `Loff` is *praise* and the Dutch title contains no `Heere`. See § Title above.
 
-## Rhyme after v0.9 — standard B
+## Rhyme after v0.10 — standard B
 
 | St. | lines 2 & 4 | close ↔ call | Verdict |
 |---|---|---|---|
 | 1 | **нет / свет** | прах / не стоит — no rhyme | half |
 | 2 | **суета / тщета** | — (close restored to the Dutch sense) | half |
-| 3 | **невзгод / вперёд** | **око / высоко** | met |
+| 3 | **придёт / вперёд** | **око / высоко** | met — v0.10 replaced line 2 («невзгод» → «придёт»), and the rhyme with «вперёд» survived the replacement |
 | 4 | боли / истомы — assonance | — | not met |
 | 5 | **Господней / Господней** (root rhyme, as `Heerlijckheyd` / `Heylicheyd`) | **соединена / сполна** | met |
 | 6 | — | — | not met |
@@ -233,7 +233,7 @@ My v0.8 has «прах» four times, in all four slots. Two separate debts, and 
 
 — and v0.9 differs from it only in «здесь» → «прах» at lines 5, 6 and 8, which is kept: the print's repeated `op aard` is a repeated word, and three «прах» reproduce that. What was given up is the rhyme at the close, not the repetition.
 
-## What the rhyme cost — every line where a word changed for it (current as of v0.9)
+## What the rhyme cost — every line where a word changed for it (current as of v0.10; v0.10 changed one line for sense, not for rhyme)
 
 | St. | v0.6 | now | The cost |
 |---|---|---|---|
