@@ -916,6 +916,66 @@
         "RIGHTS_HOLD"
       ],
       "projectLevel": true
+    },
+    {
+      "id": "CLM-DUTCH-005-MELODY-REGISTER",
+      "topic": "DUTCH-005: the melody register files texts 27 and 56 together — and why that is not a contradiction",
+      "claim": "The 2005 melody register lists the direction 'Un jour m'en alloit &c.' for texts 27 and 56 (56 is DUTCH-005), while the apparatus note on item 56 states that the melody there is of unknown origin and is not the 'Un jour &c.' of text 27. Both statements hold: the register indexes printed direction strings, the note speaks about melodies.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-CRIT-2005-MELODIEREGISTER",
+        "SRC-L-CRIT-2005-HEERLIJCKHEYD"
+      ],
+      "notes": [
+        "Locator: Melodie-register, printed pp. 663-664; apparatus note verbatim on item 56, printed p. 263.",
+        "Consequence for copy: the register may be cited for 'two poems, one direction', never for 'two poems, one tune'. The shipped sentence stands unchanged: the tune is an indication only, its origin is unknown, and it is not text 27's.",
+        "This is the second time in this project that one melody appearing under two names nearly became two rival melodies; the first was 'Bourgeois or psalm 42'."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "projectLevel": true
+    },
+    {
+      "id": "CLM-DUTCH-004-PRENDETE-TWO-KEYS",
+      "topic": "DUTCH-004: two tune strings in the register are one tune",
+      "claim": "The 2005 melody register keys texts 9 and 32 twice: under 'Prendete la' and under 'Gy laat, dien gy vind rede staan', which is item 9's own incipit. The second string is a second key to the same tune, not a rival tune; the tune's origin remains untraced.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-CRIT-2005-MELODIEREGISTER",
+        "SRC-L-CRIT-2005"
+      ],
+      "notes": [
+        "Locator: Melodie-register, printed pp. 663-664; item 9 heading 'Te singen als: Prendete la' on printed p. 29; item 32 heading 'Singt als Prendete la: siet boven pag. 29'.",
+        "The same register keys the group 26/29/50/65/87/88 under four strings ('Doet yemant sorg', 'Nerea', 'Tien Geboden', 'Reveillez vous'), which is the pattern: incipits and tune names both index texts.",
+        "No change to the copy: DUTCH-004's tune is still untraced and no melody claim is allowed."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "projectLevel": true
+    },
+    {
+      "id": "CLM-CAND-006-CRUYCE",
+      "topic": "Candidate DUTCH-CAND-006: 't Cruyce van een christen, item 57",
+      "claim": "Item 57, 't Cruyce van een christen, has fifteen four-line stanzas and a closing date line of 16 January 1659, and stands in the 1676 print on pp. 158-160 directly under DUTCH-005's date line. Its tune direction, 't En is niet alle tijd, &c., with a reference to printed p. 100, is the tune of item 41 (Jesus lijdende liefde); the 2005 headnote identifies that incipit as the opening line of Camphuysen's Christelijcke Gelatenheydt.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-CRIT-2005",
+        "SRC-L-1676",
+        "SRC-L-CRIT-2005-MELODIEREGISTER"
+      ],
+      "notes": [
+        "Locators: 1676 text at lode002uyt_01_01_0062.php (printed pp. 158-160); 2005 item 57, printed pp. 268-271; register pp. 663-664.",
+        "The print abbreviates the closing couplet to 'Dat is om uwent wil, O! etc.' in stanzas VI-XI and varies it otherwise (dulden in XII-XIII, a broken frame in XIV, no repetition in XV), so an adaptation must neither add nor restore those lines.",
+        "Held: the text layer of the 1676 transcription stops before the final rhyme word of stanza XV ('mijn eer'), so the closing line needs the page image of printed p. 160 (EVIDENCE_HOLD).",
+        "Camphuysen's song is a named artefact outside this collection; it has not been acquired, and no melody claim follows from the direction."
+      ],
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "projectLevel": true
     }
   ]
 }

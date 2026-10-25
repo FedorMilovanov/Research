@@ -687,3 +687,17 @@ The nine entries below were added after reading the 1676 printing directly, the 
 - HOLDs: RIGHTS_HOLD
 - Supports: That the poem's title, page range, tune line ('Voyse: Un jour &c.'), stanza count and date (27 in Oogstmaand 1665) are stable across two printings; That the tripled device leven (III-VI) -> lieven (VII-IX) -> loven (X) is not a feature of one impression; That the 1676 reading 'Mijn siel na boven dat' (VII.8) is a slip: 1727 reads 'dan', matching line 5; That 1727's stanza I.3 reads 'leven, leven, loven' where 1676 reads 'leven, lieven, loven', i.e. the triad is corrupted in one of the two impressions; That 1727 omits the abbreviated repeat line in stanza VIII, giving that stanza eight printed lines instead of nine
 - Limits / caveats: A transcription, not a page image; typography and the illustration are still unverified. Disagreement between the two printings is itself evidence that the text needs a page-image collation before any wording is treated as definitive.
+
+## SRC-L-CRIT-2005-MELODIEREGISTER
+
+- Title: Melodie-register of the 2005 critical edition, printed pp. 663-664
+- URL: https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0151.php
+- Source role/type: Index of printed tune directions and the texts sung to them, in the copyrighted critical edition
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: That 'Un jour m'en alloit &c.' is the printed direction for texts 27 and 56; That 'Prendete la' and item 9's incipit 'Gy laat, dien gy vind rede staan' key the same texts 9 and 32; That 't En is niet alle tijd, &c.' is the direction for texts 41 and 57; That text 131 is directed to Psalm 6; That texts 34, 35 and 52 share three direction strings
+- Limits / caveats: An index of direction STRINGS, not of melodies: two poems under one heading need not have shared a tune, and the register files 27 with 56 while the apparatus says our melody is not text 27's. A second string is usually a second key to the same tune (item 9's incipit), which is the shape of the old 'Bourgeois or psalm 42' false dichotomy. Copyrighted: only the entries used may be transcribed, never the register wholesale.

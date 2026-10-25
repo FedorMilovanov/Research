@@ -4,6 +4,18 @@
 
 **Result in one line:** the text was reprinted at least four times before the twentieth century, and the tune direction changed from an untraceable `Un jour &c.` in 1676–1681 to **Psalm 42** by 1718 — which is the melody the 1938 hymnal prints, credited there to Louis Bourgeois. The old open question "Bourgeois or psalm 42" is therefore not a contradiction: it is one tune under two names.
 
+## 0. The melody register, read for the first time (2026-10-25)
+
+The 2005 edition ends with a **Melodie-register** (printed pp. 663–664) listing, for every tune direction, the numbers of the texts sung to it. It had never been opened in this project. Two things came out of it.
+
+**First, and it looked like a contradiction.** The register files `Un jour m'en alloit &c.` under **texts 27 and 56** — 56 is our poem. The apparatus note on item 56 reads *Melodie: Herkomst onbekend, anders dan Un jour &c, van tekst 27*: origin unknown, **different from** the *Un jour* of text 27. Both sentences come from the same volume.
+
+They are compatible, and the difference between them is the whole lesson: the register indexes **printed direction strings**, the note speaks about **melodies**. The print sent two poems to the same words; the editor established that the melody behind ours was not the Grouzy chanson used for text 27. So the register may be cited to say "two poems, one direction", never "two poems, one tune". The copy's sentence does not change and gets stronger: the tune is a reference, its origin is unknown, and it is not text 27's.
+
+**Second, a side result.** Text 131, the appendix poem *'s Heeren heerlijckheyts loff*, is directed to **Psalm 6** — a Genevan melody with a documented transmission and notation, which no other tune in this collection has.
+
+Full reading, with the entries this project uses and the traps they carry: [`TUNE_DIRECTIONS_FROM_THE_2005_MELODY_REGISTER.md`](TUNE_DIRECTIONS_FROM_THE_2005_MELODY_REGISTER.md).
+
 ## 1. The chain, with locators
 
 | Year | Witness | Title / incipit | Tune direction | Where checked |

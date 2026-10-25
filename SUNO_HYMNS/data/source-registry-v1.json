@@ -13,6 +13,32 @@
   ],
   "sources": [
     {
+      "id": "SRC-L-CRIT-2005-MELODIEREGISTER",
+      "title": "Melodie-register of the 2005 critical edition, printed pp. 663-664",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0151.php",
+      "type": "Index of printed tune directions and the texts sung to them, in the copyrighted critical edition",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "'Un jour m'en alloit &c.' is the printed direction for texts 27 and 56",
+        "'Prendete la' and item 9's incipit 'Gy laat, dien gy vind rede staan' both key the same pair of texts, 9 and 32",
+        "'t En is niet alle tijd, &c.' is the direction for texts 41 and 57",
+        "Text 131, 's Heeren heerlijckheyts loff, is directed to Psalm 6",
+        "Texts 34, 35 and 52 share Gavotte. A la fronté, On-herroepelijcke jeugd and Soet Geselschap dat met my"
+      ],
+      "limits": [
+        "It is an index of direction STRINGS, not a catalogue of melodies: two poems under one heading did not necessarily share a tune. The apparatus note on item 56 says the melody there is unknown and is not text 27's, while the register files 27 and 56 together. Cite the register for 'same direction', never for 'same melody'.",
+        "Several texts are keyed by the incipit of another poem (item 9's first line keys texts 9 and 32), so a second string is usually a second key, not a second tune. This is the shape of the old 'Bourgeois or psalm 42' false dichotomy.",
+        "Copyrighted: only the entries this project uses may be transcribed, as bibliographic facts; never the register wholesale."
+      ]
+    },
+    {
       "id": "SRC-L-1676",
       "title": "Uyt-spanningen — first-edition text (1676)",
       "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/",

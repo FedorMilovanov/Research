@@ -743,3 +743,39 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Consequence for copy:** «с апреля 1653 года» is now allowed in the description and in the Telegram post. Before this page was opened, every form of «since 1653» was banned from the copy, and the ban was right.
 
 **HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-005-MELODY-REGISTER — the register files 27 and 56 together, and why that is not a contradiction
+
+**Claim:** The 2005 melody register lists the direction `Un jour m'en alloit &c.` for texts **27 and 56** (56 is DUTCH-005), while the apparatus note on item 56 states that the melody there is of unknown origin and **is not** the `Un jour &c.` of text 27. Both hold: the register indexes printed direction strings, the note speaks about melodies.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-CRIT-2005-MELODIEREGISTER, SRC-L-CRIT-2005-HEERLIJCKHEYD
+
+**Limits / next action:** Locators: register, printed pp. 663–664; the apparatus note verbatim on item 56, printed p. 263. Copy consequence: the register may be cited for "two poems, one direction", never for "two poems, one tune". The shipped sentence stands unchanged. This is the second time in this project that one melody under two names nearly became two rival melodies; the first was "Bourgeois or psalm 42".
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-004-PRENDETE-TWO-KEYS — two tune strings in the register are one tune
+
+**Claim:** The register keys texts **9 and 32** twice: under `Prendete la` and under `Gy laat, dien gy vind rede staan`, which is item 9's own incipit. The second string is a second key to the same tune, not a rival tune; the tune's origin remains untraced.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-CRIT-2005-MELODIEREGISTER, SRC-L-CRIT-2005
+
+**Limits / next action:** Locators: register pp. 663–664; item 9 heading on printed p. 29; item 32 heading `Singt als Prendete la: siet boven pag. 29`. The same register keys 26/29/50/65/87/88 under four strings, which is the pattern: incipits and tune names both index texts. No change to the copy — DUTCH-004's tune is still untraced.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-CAND-006-CRUYCE — 't Cruyce van een christen, item 57
+
+**Claim:** Item 57 has **fifteen** four-line stanzas and a closing date line of **16 January 1659**, and stands in the 1676 print on **pp. 158–160**, directly under DUTCH-005's date line. Its tune direction, `'t En is niet alle tijd, &c.` with a reference to printed p. 100, is the tune of item 41 (*Jesus lijdende liefde*); the 2005 headnote identifies that incipit as the opening line of **Camphuysen's *Christelijcke Gelatenheydt***.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-CRIT-2005, SRC-L-1676, SRC-L-CRIT-2005-MELODIEREGISTER
+
+**Limits / next action:** Locators: 1676 text `lode002uyt_01_01_0062.php` (pp. 158–160); 2005 item 57, pp. 268–271; register pp. 663–664. The print abbreviates the closing couplet to `Dat is om uwent wil, O! etc.` in stanzas VI–XI and varies it otherwise, so an adaptation must neither add nor restore those lines. **Held:** the text layer stops before the final rhyme word of stanza XV (`mijn eer`), so the closing line needs the page image of p. 160. Camphuysen's song is named but not acquired, and no melody claim follows from the direction.
+
+**HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD

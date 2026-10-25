@@ -129,6 +129,18 @@ These are candidates, not approved or completed productions. Re-check the critic
 
 The conversation also included a Russian 1 Peter 1 Scripture-song draft with Cantor/organ/monastic-drone section labels, and a separate Passion-confession lyric/visual concept beginning «Не те иудеи, Господь Иисус…». They are recorded as adjacent works only. Their recording/export state and historical attribution are not established here; do not classify them as Dutch historical hymns.
 
+## Where the seventh pass left things (2026-10-25, research only)
+
+**Owner's report:** DUTCH-005 was made and uploaded to YouTube and Telegram. Recorded as a report, not as a verified state: no URL was supplied, and this sandbox cannot check YouTube. `STATUS_LEDGER.md` says what the two links will settle — which wording of stanza 3.2 went out, and which of the two descriptions was pasted. **No new hymn goes into production**, at the owner's direction; this project works only on research from here.
+
+**Closed by that pass:**
+
+1. **The 2005 melody register** (printed pp. 663–664) was read for the first time — `RESEARCH/TUNE_DIRECTIONS_FROM_THE_2005_MELODY_REGISTER.md`. It files `Un jour m'en alloit &c.` under texts **27 and 56**, while the note on item 56 says our melody is not text 27's. Not a contradiction: the register indexes direction **strings**, the note speaks about **melodies**. Rule: cite it for "same direction", never for "same melody".
+2. **The `Prendete la` puzzle is closed.** The register's second string for texts 9 and 32, `Gy laat, dien gy vind rede staan`, is item 9's own incipit — a second **key**, not a second tune. This is the "Bourgeois or psalm 42" error in a new place, caught before it cost a round.
+3. **Candidate `DUTCH-CAND-006`, *'t Cruyce van een christen*** (no. 57) researched to a dossier: 15 four-line stanzas, printed pp. 158–160, dated **16 January 1659**, tune `'t En is niet alle tijd, &c.` pointing to item 41, and the 2005 headnote names the incipit as **Camphuysen's *Christelijcke Gelatenheydt***. Also established: the print itself abbreviates the closing couplet to `O! etc.` in six stanzas and varies it four ways, so an adapter must neither add nor restore those lines. **No collision with DUTCH-003**: Revius is about Christ's suffering, this poem about the disciple's cross.
+
+**Next research step of highest value:** Camphuysen's *Christelijcke Gelatenheydt* — the only tune direction in this collection that leads to a named song outside Lodenstein.
+
 ## Where the publication pass left things (2026-10-26)
 
 DUTCH-005 now has a complete publication package for two surfaces, and **nothing is generated, chosen or published**. State is still `LYRIC_DRAFT`.
