@@ -61,6 +61,10 @@ Corpus-specific current authority остаётся владельцем свое
 
 Предыдущий большой README сохранён без потерь как [`history/README_CORPUS_INDEX_2026-08-17.md`](history/README_CORPUS_INDEX_2026-08-17.md). Это dated snapshot навигации и provenance; его внутренние слова «текущая authority» не переопределяют `CURRENT_AUTHORITY.md` или machine registry.
 
+## Дополнительные проектные контуры
+
+- **SUNO и историческое исследование нидерландских реформатских гимнов:** [SUNO_HYMNS/README.md](SUNO_HYMNS/README.md). Это отдельный ограниченный проектный контур с производственным реестром аудио, исследованием авторов и первичных текстов, каталогом подготовленных работ и очередью кандидатов. Он подчиняется действующим AGENT_RULES.md и evidence-policy и не является новой корневой authority.
+
 ## Проверка
 
 ```bash

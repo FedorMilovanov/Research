@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "registryId": "SUNO-HYMNS-SOURCE-REGISTRY-V1",
+  "asOf": "2026-10-25",
+  "note": "Project-local records are subordinate to root Research evidence policy. Source classes and state fields use global definitions unchanged.",
+  "fields": [
+    "evidenceClass",
+    "accessState",
+    "locatorState",
+    "rightsState",
+    "publicationState",
+    "holds"
+  ],
+  "sources": [
+    {
+      "id": "SRC-L-1676",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/",
+      "type": "Digital entrypoint to the 1676 edition of Uyt-spanningen",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Title-page imprint and collection structure"
+      ],
+      "limits": [
+        "Entrypoint alone does not establish details of every poem."
+      ]
+    },
+    {
+      "id": "SRC-L-CRIT-2005",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/index.php",
+      "type": "Critical edition contents and apparatus, Ros and Strengholt (2005)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Poem numbering, variants, glosses, tune apparatus and bibliography"
+      ],
+      "limits": [
+        "Not the 1676 physical edition; modern editorial rights remain separate."
+      ]
+    },
+    {
+      "id": "SRC-L-SCHEPSELEN-51",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0057.php",
+      "type": "Critical-edition page for Schepselen niet en Jesus al",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Item 51, title, melody direction and stanza structure"
+      ],
+      "limits": [
+        "Does not establish earliest separate publication or complete performance practice."
+      ]
+    },
+    {
+      "id": "SRC-L-CHRISTEN-SANGERS",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0002.php",
+      "type": "Critical-edition transcription of Christen sangers preface",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Lodenstein reflections on song and the heart"
+      ],
+      "limits": [
+        "Paraphrase is not verbatim quotation."
+      ]
+    },
+    {
+      "id": "SRC-L-HERT-1674",
+      "url": "https://www.dbnl.org/tekst/lode002pjbu01_01/lode002pjbu01_01_0014.php",
+      "type": "Published text witness for Hert-sterckte in Jehova",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Heading Op 1 Sam. 30:6, date line and 1674 text"
+      ],
+      "limits": [
+        "Not identical to Rutgers 1806 hymn."
+      ]
+    },
+    {
+      "id": "SRC-L-REES-CONTEXT",
+      "url": "https://www.dbnl.org/tekst/lode002pjbu01_01/lode002pjbu01_01_0013.php",
+      "type": "Context page for Rees songs",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Context and sequence of Rees songs"
+      ],
+      "limits": [
+        "Disputed biographical claims need further verification."
+      ]
+    },
+    {
+      "id": "SRC-RUTGERS-1806-68",
+      "url": "https://www.dbnl.org/tekst/_eva005evan01_01/_eva005evan01_01_0070.php",
+      "type": "Evangelische Gezangen 1806 hymn 68",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Zelfverloochening, no. 68, seven-stanza text"
+      ],
+      "limits": [
+        "Hosted digital presentation of the historic hymnbook text."
+      ]
+    },
+    {
+      "id": "SRC-RUTGERS-BIO",
+      "url": "https://www.dbnl.org/tekst/aa__001nieu03_01/aa__001nieu03_01_0176.php",
+      "type": "Historical biographical dictionary entry for Abraham Rutgers",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Rutgers roles and Lodenstein origin of hymns 68 and 62"
+      ],
+      "limits": [
+        "Secondary evidence; corroborate contested claims against editions."
+      ]
+    },
+    {
+      "id": "SRC-AFR-L276",
+      "url": "https://missio.org.za/songs/lied-276/",
+      "type": "Modern institutional song-chain page for Afrikaans Lied 276",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Modern adaptation-chain corroboration"
+      ],
+      "limits": [
+        "Verify intermediary editions for detailed claims."
+      ]
+    },
+    {
+      "id": "SRC-AFR-L271",
+      "url": "https://missio.org.za/songs/lied-271/",
+      "type": "Modern institutional song-chain page for Afrikaans Lied 271",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Another Lodenstein-derived Afrikaans song"
+      ],
+      "limits": [
+        "Exact original Dutch title remains open."
+      ]
+    },
+    {
+      "id": "SRC-R-REVIUS-AUTHOR",
+      "url": "https://www.dbnl.org/auteurs/auteur.php?id=revi001",
+      "type": "Jacobus Revius author bibliography",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Name variant, dates, work and publication listings"
+      ],
+      "limits": [
+        "Bibliographic record is not the full primary edition."
+      ]
+    },
+    {
+      "id": "SRC-R-OVER-YSSEL-CONTENTS",
+      "url": "https://www.dbnl.org/tekst/revi001over01_01/",
+      "type": "Contents and entrypoint to W.A.P. Smit scholarly edition",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Bibliographic structure and poem discovery"
+      ],
+      "limits": [
+        "Web transcription is not a direct 1630 scan."
+      ]
+    },
+    {
+      "id": "SRC-R-HY-DROEG",
+      "url": "https://www.dbnl.org/tekst/revi001over01_01/revi001over01_01_0327.php",
+      "type": "Sonnet page in W.A.P. Smit edition",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Fourteen-line text, sequence and editorial glosses"
+      ],
+      "limits": [
+        "Not a direct facsimile of the 1630 edition."
+      ]
+    },
+    {
+      "id": "SRC-R-GEERDS-1976",
+      "url": "https://www.dbnl.org/tekst/_taa008197601_01/_taa008197601_01_0008.php",
+      "type": "J.F. Geerds specialist study of Hy droech onse smerten (1976)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Interpretive analysis of sonnet turn and pronoun shift"
+      ],
+      "limits": [
+        "Use primary text for quotations."
+      ]
+    },
+    {
+      "id": "SRC-DORDRECHT-69",
+      "url": "https://kerkrecht.nl/node/2149/",
+      "type": "Online presentation of Dordrecht Article 69",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Public worship repertoire and restrictions on other songs"
+      ],
+      "limits": [
+        "Normative rule does not prove uniform local practice."
+      ]
+    },
+    {
+      "id": "SRC-DORDRECHT-1578",
+      "url": "https://kerkrecht.nl/node/2142/",
+      "type": "Online presentation of earlier Dutch Reformed synodical rule",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Prehistory of psalm-first church-song rules"
+      ],
+      "limits": [
+        "Quote the particular year's wording."
+      ]
+    },
+    {
+      "id": "SRC-UTRECHT-HYMNI-1615",
+      "url": "https://www.dbnl.org/tekst/_hym001hymn02_01/_hym001hymn02_01_0004.php",
+      "type": "1615 Utrecht Hymni ofte Loff-sangen preface",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Broader local hymnbook tradition and Ephesians 5:19 framing"
+      ],
+      "limits": [
+        "Preface does not prove universal use."
+      ]
+    },
+    {
+      "id": "SRC-MUSIC-ROSEMONT",
+      "url": "https://www.dbnl.org/tekst/grij001nede01_01/grij001nede01_01_0006.php",
+      "type": "Louis Peter Grijp musicological context for Dutch song and melody reuse",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Context for contrafactum and melody transmission"
+      ],
+      "limits": [
+        "Use primary tune direction for a song-specific claim."
+      ]
+    }
+  ]
+}
