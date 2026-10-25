@@ -1,8 +1,8 @@
 # Historical claim ledger — Dutch hymn project
 
-Snapshot: 25 October 2026. This is an initial claim register, not a claim that the entire field has been researched exhaustively. The canonical Research evidence policy controls source classes and operational states.
+Snapshot: 25 October 2026. This is an initial claim register, not a claim that the entire field has been researched exhaustively. The repository root evidence policy controls source classes and operational states.
 
-Claim status is a project-local review label, not a new source class and not the global publicationState. Source identifiers link to data/source-registry-v1.json.
+Claim status is a project-local review label, not a new source class and not the global publicationState. Source IDs refer to data/source-registry-v1.json.
 
 ## CLM-L-1676-IMPRINT — Uyt-spanningen first publication
 
@@ -20,25 +20,25 @@ Claim status is a project-local review label, not a new source class and not the
 
 **Claim:** The 2005 critical-edition item 51 gives the title Schepselen niet en Jesus al and the tune direction Singt als: Rosemont waer gy vliedt.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION
 
 **Source IDs:** SRC-L-SCHEPSELEN-51, SRC-L-1676
 
 **Limits / next action:** The exact item page currently accessed is the copyrighted critical edition; a direct first-edition item locator has not yet been pinned. Do not present the modern version as a historically faithful arrangement.
 
-**HOLDs:** RIGHTS_HOLD
+**HOLDs:** RIGHTS_HOLD, LOCATOR_HOLD
 
 ## CLM-DUTCH-001-DATE — Date attributed to Schepselen niet en Jesus al
 
 **Claim:** The critical edition gives November 1661 as the date associated with the text.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION
 
 **Source IDs:** SRC-L-SCHEPSELEN-51
 
 **Limits / next action:** Exact date currently supported by the critical edition. Inspect the original first-edition image before presenting a direct quotation or a facsimile-dependent claim.
 
-**HOLDs:** RIGHTS_HOLD
+**HOLDs:** RIGHTS_HOLD, LOCATOR_HOLD
 
 ## CLM-HERT-I-VS-II — Two poems titled Hert-sterckte in Jehova
 
@@ -50,7 +50,7 @@ Claim status is a project-local review label, not a new source class and not the
 
 **Limits / next action:** Keep the two poems separate. The first has its own tune directions and must not be silently treated as the direct source text for the current Russian hymn.
 
-**HOLDs:** RIGHTS_HOLD, EVIDENCE_HOLD
+**HOLDs:** RIGHTS_HOLD
 
 ## CLM-HERT-II-DATE-1674 — Date of II. Hert-sterckte in Jehova
 
@@ -72,9 +72,9 @@ Claim status is a project-local review label, not a new source class and not the
 
 **Source IDs:** SRC-RUTGERS-1806-68, SRC-RUTGERS-BIO, SRC-L-HERT-II-1674-1971
 
-**Limits / next action:** Credit Lodenstein as historical source author and Rutgers as later reviser; treat later translations/adaptations as separate textual witnesses.
+**Limits / next action:** Credit Lodenstein as historical source author and Rutgers as later reviser; treat later translations/adaptations as separate textual witnesses. The separate date uncertainty is isolated in CLM-HERT-II-DATE-1674; it does not automatically suspend the source-chain claim.
 
-**HOLDs:** RIGHTS_HOLD, EVIDENCE_HOLD
+**HOLDs:** RIGHTS_HOLD
 
 ## CLM-AFR-L276-CHAIN — Afrikaans transmission
 
@@ -92,7 +92,7 @@ Claim status is a project-local review label, not a new source class and not the
 
 **Claim:** Hy droech onse smerten is a fourteen-line Passion sonnet included in the 1630 collection; composition date and original melody are not established by the sources currently acquired.
 
-**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION
 
 **Source IDs:** SRC-R-REVIUS-AUTHOR, SRC-R-OVER-YSSEL-CONTENTS, SRC-R-HY-DROEG, SRC-R-OVER-YSSEL-1630-WORK
 

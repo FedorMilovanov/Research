@@ -1,6 +1,6 @@
 # Songbook and edition register
 
-This register records publication object, edition used, and access layer separately. The object date is not necessarily the date of the digitized edition.
+This register records publication object, edition used, and the actual access layer separately. The object date is not necessarily the date of the digitized edition.
 
 ## SB-LODENSTEIN-UYT-1676 — Uyt-spanningen, behelsende eenige stigtelyke liederen en andere gedigten
 
@@ -13,7 +13,7 @@ This register records publication object, edition used, and access layer separat
 - Locator state: COARSE_LOCATOR_ONLY
 - Rights state: RIGHTS_UNKNOWN
 - Publication state: REFERENCE
-- HOLDs: RIGHTS_HOLD, EVIDENCE_HOLD
+- HOLDs: RIGHTS_HOLD
 - Notes: DBNL marks the underlying historical work Auteursrechtvrij. The online text is described as a diplomatic rendering with omissions and listed corrections; inspect specific page images for date/punctuation claims.
 
 ## SB-LODENSTEIN-CRITICAL-2005 — Uyt-spanningen — critical edition
@@ -41,7 +41,7 @@ This register records publication object, edition used, and access layer separat
 - Locator state: EXACT_LOCATOR_VERIFIED
 - Rights state: RIGHTS_UNKNOWN
 - Publication state: REFERENCE
-- HOLDs: RIGHTS_HOLD, EVIDENCE_HOLD
+- HOLDs: RIGHTS_HOLD
 - Notes: This is a later selection, not the 1674 manuscript or the whole 1676 volume. The date 4 January 1674 is editorially emended from a printed 1664 error and remains on EVIDENCE_HOLD until original-page image verification.
 
 ## SB-EVANGELISCHE-GEZANGEN-1806 — Evangelische Gezangen, nevens het Psalm-Boek

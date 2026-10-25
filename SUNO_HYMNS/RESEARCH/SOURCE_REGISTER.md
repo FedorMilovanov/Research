@@ -1,13 +1,13 @@
 # Source register — Dutch hymn project
 
-This registry is the human-readable view of data/source-registry-v1.json. The root Research evidence policy remains authoritative. The underlying historical source and the modern digital object used to access it may have different evidence and rights states.
+This registry is the human-readable view of data/source-registry-v1.json. The repository root evidence policy remains authoritative. The underlying historical source and modern digital object used to access it may have different evidence and rights states.
 
 - A1/A2/A3/B1/C/D retain the exact global meanings from AGENT_RULES.md.
 - Access, locator, rights and publication state are separate fields.
 - RIGHTS_UNKNOWN means the rights question remains open, not that permission is granted.
-- A link to a source is not automatically a quote-safe approval or a license to republish its full text.
-- The 1676 digital text is marked by DBNL as based on the first edition, but its own colophon notes omissions and editorial corrections. The 2005 critical edition is explicitly copyrighted.
-- The 1615 Utrecht hymnbook is encountered through the 1967 facsimile; the 1930–1935 Revius text is a scholarly edition, not the verified 1630 leaf.
+- A link to a source is not automatically quote-safe approval or a license to republish its full text.
+- The 1676 digital text is described as a diplomatic rendering with omissions and editorial corrections. The 2005 critical edition is explicitly copyright-protected.
+- The 1615 Utrecht hymnbook is encountered through a 1967 facsimile. The 1930–1935 Revius text is a scholarly edition, not the verified 1630 leaf.
 
 ## SRC-L-1676 — Uyt-spanningen — first-edition text (1676)
 
@@ -31,7 +31,7 @@ This registry is the human-readable view of data/source-registry-v1.json. The ro
 - Locator state: EXACT_LOCATOR_VERIFIED
 - Rights state: RIGHTS_UNKNOWN
 - Publication state: REFERENCE
-- HOLDs: RIGHTS_HOLD, EVIDENCE_HOLD
+- HOLDs: RIGHTS_HOLD
 - Supports: Transcription method, the omitted material, editorial corrections, and the explicit 1664→1674 emendation of the Rees poem date
 - Limits / caveats: This is modern editorial documentation, not the original printing itself; it identifies a correction but does not replace visual inspection of the 1676 leaf.
 
@@ -174,9 +174,9 @@ This registry is the human-readable view of data/source-registry-v1.json. The ro
 - Locator state: EXACT_LOCATOR_VERIFIED
 - Rights state: RIGHTS_UNKNOWN
 - Publication state: REFERENCE
-- HOLDs: RIGHTS_HOLD, EVIDENCE_HOLD
+- HOLDs: RIGHTS_HOLD
 - Supports: The second poem's text and the date printed in the digital presentation as 4 January 1674
-- Limits / caveats: The accompanying note states that the original had an erroneous 1664; the DBNL colophon also records an editorial 1664→1674 correction. Keep the date claim on EVIDENCE_HOLD until the original page image is checked.
+- Limits / caveats: The accompanying note states that the original had an erroneous 1664; the DBNL colophon also records an editorial 1664→1674 correction. Keep the date claim on EVIDENCE_HOLD until the original page image is checked. The date claim is specifically held in CLM-HERT-II-DATE-1674 until an original page image is checked; other textual claims from this page must be assessed individually.
 
 ## SRC-L-REES-CONTEXT — Rees songs — historical context
 

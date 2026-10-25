@@ -19,8 +19,7 @@
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
-        "RIGHTS_HOLD",
-        "EVIDENCE_HOLD"
+        "RIGHTS_HOLD"
       ],
       "notes": [
         "DBNL marks the underlying historical work Auteursrechtvrij.",
@@ -68,8 +67,7 @@
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
-        "RIGHTS_HOLD",
-        "EVIDENCE_HOLD"
+        "RIGHTS_HOLD"
       ],
       "notes": [
         "This is a later selection, not the 1674 manuscript or the whole 1676 volume.",

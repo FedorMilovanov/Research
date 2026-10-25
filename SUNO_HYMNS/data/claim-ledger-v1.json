@@ -30,7 +30,7 @@
       "id": "CLM-DUTCH-001-TITLE-TUNE",
       "topic": "Schepselen niet en Jesus al title and tune",
       "claim": "The 2005 critical-edition item 51 gives the title Schepselen niet en Jesus al and the tune direction Singt als: Rosemont waer gy vliedt.",
-      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
       "sourceIds": [
         "SRC-L-SCHEPSELEN-51",
         "SRC-L-1676"
@@ -39,14 +39,15 @@
         "The exact item page currently accessed is the copyrighted critical edition; a direct first-edition item locator has not yet been pinned. Do not present the modern version as a historically faithful arrangement."
       ],
       "holds": [
-        "RIGHTS_HOLD"
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
       ]
     },
     {
       "id": "CLM-DUTCH-001-DATE",
       "topic": "Date attributed to Schepselen niet en Jesus al",
       "claim": "The critical edition gives November 1661 as the date associated with the text.",
-      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
       "sourceIds": [
         "SRC-L-SCHEPSELEN-51"
       ],
@@ -54,7 +55,8 @@
         "Exact date currently supported by the critical edition. Inspect the original first-edition image before presenting a direct quotation or a facsimile-dependent claim."
       ],
       "holds": [
-        "RIGHTS_HOLD"
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
       ]
     },
     {
@@ -72,8 +74,7 @@
         "Keep the two poems separate. The first has its own tune directions and must not be silently treated as the direct source text for the current Russian hymn."
       ],
       "holds": [
-        "RIGHTS_HOLD",
-        "EVIDENCE_HOLD"
+        "RIGHTS_HOLD"
       ]
     },
     {
@@ -104,11 +105,11 @@
         "SRC-L-HERT-II-1674-1971"
       ],
       "notes": [
-        "Credit Lodenstein as historical source author and Rutgers as later reviser; treat later translations/adaptations as separate textual witnesses."
+        "Credit Lodenstein as historical source author and Rutgers as later reviser; treat later translations/adaptations as separate textual witnesses.",
+        "The separate date uncertainty is isolated in CLM-HERT-II-DATE-1674; it does not automatically suspend the source-chain claim."
       ],
       "holds": [
-        "RIGHTS_HOLD",
-        "EVIDENCE_HOLD"
+        "RIGHTS_HOLD"
       ]
     },
     {
@@ -131,7 +132,7 @@
       "id": "CLM-REVIUS-1630",
       "topic": "Hy droech onse smerten: first publication and genre",
       "claim": "Hy droech onse smerten is a fourteen-line Passion sonnet included in the 1630 collection; composition date and original melody are not established by the sources currently acquired.",
-      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
       "sourceIds": [
         "SRC-R-REVIUS-AUTHOR",
         "SRC-R-OVER-YSSEL-CONTENTS",

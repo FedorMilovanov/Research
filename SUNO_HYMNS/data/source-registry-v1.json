@@ -43,8 +43,7 @@
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
-        "RIGHTS_HOLD",
-        "EVIDENCE_HOLD"
+        "RIGHTS_HOLD"
       ],
       "supports": [
         "Transcription method, the omitted material, editorial corrections, and the explicit 1664→1674 emendation of the Rees poem date"
@@ -264,14 +263,14 @@
       "rightsState": "RIGHTS_UNKNOWN",
       "publicationState": "REFERENCE",
       "holds": [
-        "RIGHTS_HOLD",
-        "EVIDENCE_HOLD"
+        "RIGHTS_HOLD"
       ],
       "supports": [
         "The second poem's text and the date printed in the digital presentation as 4 January 1674"
       ],
       "limits": [
-        "The accompanying note states that the original had an erroneous 1664; the DBNL colophon also records an editorial 1664→1674 correction. Keep the date claim on EVIDENCE_HOLD until the original page image is checked."
+        "The accompanying note states that the original had an erroneous 1664; the DBNL colophon also records an editorial 1664→1674 correction. Keep the date claim on EVIDENCE_HOLD until the original page image is checked.",
+        "The date claim is specifically held in CLM-HERT-II-DATE-1674 until an original page image is checked; other textual claims from this page must be assessed individually."
       ]
     },
     {

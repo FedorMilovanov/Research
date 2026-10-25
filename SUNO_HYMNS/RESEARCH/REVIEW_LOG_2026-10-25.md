@@ -23,3 +23,6 @@ Base snapshot originally inspected: f38b194a99fdc6cc66b86fcc4c1b217da7e945a0
 - Read actual media metadata and identify the final Revius cover.
 - Verify YouTube/Telegram publication URLs before any publication-status change.
 - Continue rights review before redistributing a modern critical edition, facsimile, translation or recording.
+
+
+The follow-up state pass removed source- and book-level EVIDENCE_HOLD where the uncertainty was narrower than the whole object. The 1664→1674 dispute remains on the specific claim CLM-HERT-II-DATE-1674. The DUTCH-001 tune/date and Revius 1630 first-edition claims are marked as needing primary-witness collation where the exact accessed text is a later scholarly edition.
