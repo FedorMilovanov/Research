@@ -505,3 +505,15 @@ Also confirmed: `goedig` = goedertieren, `Hersenlosen` = verstandelozen/dwazen, 
 **Melody, settled as far as it can be:** the 2005 apparatus says *"Melodie: Herkomst onbekend, anders dan Un jour &c, van tekst 27"* — origin unknown, and not the *Un jour* of text 27. That melody is identifiable: *Un jour m'en alloit seulette* by Grouzy (d. 1568), *Quinzième livre de chansons*, Paris 1571. The familiar Psalm 42 tune belongs to the Rutgers reworking (1806 no. 43 → 1938 no. 75), not to the 1676 hymn. The description now says exactly that and no more.
 
 **Not claimed:** that Studio renders the pasted markup as expected — the standard requires a round-trip test on one published description, and it has not been done. No cover is approved, nothing is published.
+
+# Twenty-first pass — 2026-10-25 (YouTube copy v2: the markup was wrong, and so was a number)
+
+The owner published the description and the render came back broken: asterisks visible, bold running across sentences. A second screenshot showed the hashtags pulled to the top by YouTube (normal behaviour, not a bug).
+
+**Cause.** The markup followed the channel's written standard, which puts punctuation inside the wrapper (`*27 августа 1665.*`). On the live editor that fails. Working patterns, from the two screenshots: a `*…*` pair survives when the closing asterisk is followed by a **space** (`*1. Где и когда он напечатан.* `, `*leven, lieven, loven* —`); it breaks when followed by a comma, period or semicolon, and punctuation inside the wrapper never renders. `_…_` at end of line renders fine.
+
+**Fix.** v2 of `SUNO/DUTCH-005_YOUTUBE.md` contains **zero** asterisks: 4269 characters of plain text with ёлочки for terms and quotations, italics only on the poem lines and the closing line, section openers on their own line. Recorded the failed strings verbatim in § 0 so the next agent does not repeat it.
+
+**And an arithmetic error.** The pinned comment said the 1679 second edition came out "eight years before the author's death". It came out **two years after** it. Fixed; lesson written into `LESSONS_AND_GUARDS.md` § 2a.
+
+**Status of claims:** unchanged from pass 20 — the source run stands, the one open text defect (stanza 3.2) stands.

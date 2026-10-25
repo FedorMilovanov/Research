@@ -97,6 +97,16 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 
 ---
 
+## 2a. The written standard lost to the live render
+
+**What happened.** The YouTube description for DUTCH-005 was marked up to the channel's own written standard (`video-channel-manager/docs/youtube-description-rendering-standard.md`): `*bold*`, `_italic_`, and — per § 3.1 of that document — punctuation **inside** the wrapper (`*27 августа 1665.*`, `*Uyt-spanningen*,`). On the live video the markup broke: closing asterisks followed by a comma did not close, the bold ran on into the next sentence, and asterisks appeared as literal characters in the visible description.
+
+**Why it was not caught.** I had a document and used it as evidence of rendering. A document can only report what someone once saw on one other video; it is a claim about the platform, not the platform.
+
+**Guard.** *A written standard is not a render.* Before shipping more than a few dozen characters of platform markup, put one test string in the actual editor and look at the preview. Then write down which patterns worked **on that platform version, that day** — as this project now does in `SUNO/DUTCH-005_YOUTUBE.md` § 0, with the failed strings quoted literally.
+
+**Second-order lesson, the embarrassing one.** The same pass contained an arithmetic error in a public-facing text: "the second edition came out eight years before the author's death" — 1679 is **two years after** 1677. It sat in a pinned comment, in a project whose whole premise is that its documents can be trusted, and it survived a source run because the sources were checked against the *claims I chose to verify*, not against the text as written. Guards: read numbers out loud as a sentence ("1679 — two years after 1677"), and re-read finished copy once against nothing but arithmetic.
+
 ## 3. Mechanical hazards
 
 - **Combining acute and NFC.** A word written with `й` + U+0301 reads as a different string from the same word without it. Any accent check that compares raw strings silently passes. Normalise to NFD before testing, as `check_ru_lyric.py` does.
