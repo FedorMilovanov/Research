@@ -226,13 +226,86 @@ good Metal, the vvhole sum vvill be no less currant.»
 | Пункт | Значение |
 |---|---|
 | Издание | London: printed by **R. Roberts** for **Thomas Cockerill**, at the Three Legs in the Poultrey, near the Stocks-Market, **1684** |
-| Заглавие | *A discourse of divine providence: I. In general… II. In particular…* |
+| Заглавие | *A discourse of divine providence: I. in general… II. in particular…* |
 | Титул автора | «By the late learned divine Stephen Charnock, B.D. sometime fellow of New-Colledg in Oxon.» |
 | Структура | title page → **TO THE READER** → A Discourse of Divine Providence (2 Chron. 16:9) → реклама «Books Printed and sold by Thomas Cocke∣rill» |
 | Пагинация | префаторные страницы **без нумерации**; дискурс имеет собственные descriptionPage |
 | Права на TCP-текст | **CC0 1.0**; отказ не распространяется на page images |
-| EEBO-TCP ID | `A79420.0001.001` |
+| EEBO-TCP ID | `A79420.0001.001` (Wing **C3708**; ESTC R232630; VID 136156; EEBO citation 99897108) |
 | Альтернативный IA ID | `bim_early-english-books-1641-1700_a-discourse-of-divine-pr_charnock-stephen_1684` |
+
+### 4A. Первое издание 1680 получено (добавлено 2026-10-25)
+
+**`A32726.0001.001`** — *A treatise of divine providence: I. In general. II. In particular, as
+relating to the church of God in the world / by … Mr. Steph. Charnocke …* London: Printed, for
+Tho. Cockeril, at the Three Legs in the Poultrey, near the Stocks-Market, **1680**. Wing **C3712**;
+ESTC R13224. **Титульный лист, лист «Advertisement» и эпистол «TO THE READER» получены полностью**
+(узлы `1:1`, `1:2`, `1:3`).
+
+**Титульный лист 1680 (дословно):**
+
+> A TREATISE OF DIVINE PROVIDENCE.
+> - I. In General.
+> - II. In Particular,
+>
+> AS Relating to the Church of God in the World.
+>
+> By that late Eminent Minister of Christ Mr. STEPP. CHARNOCKE, B. D. and sometimes Fellow of
+> New-Colledge in OXON.
+>
+> > **Psalm 103. 19. His Kingdom Ruleth over all.**
+>
+> LONDON, Printed, for Tho. Cockeril, at the Three Legs in the Poultrey, near the Stocks-Market,
+> 1680.
+
+**Лист «Advertisement» 1680 (узел `1:2`, дословно) — новый документ отдела:**
+
+> **Advertisement.**
+>
+> WHat ever comes out in Print, of this late Reverend Mr. Steph. Char∣nock's, will be **Attested by
+> Mr. Edward Veal, and Mr. Richard Adams**, which is more fully expressed in the Epistle.
+
+**Значение.** Лист «Advertisement» — **отдельный документ**, которого нет в транскрипции тома 08
+(она построена по изданию 1684, где листа нет). Он устанавливает, что **уже в 1680 году** эдикторы
+заявили права на аттестацию **всего**, что будет напечатано от имени Чарнока, — не только этого
+трактата. Это ранняя форма того заявления о правах на рукописи, которое в §3.7 тома разобрано по
+эпистолу. Лист даёт также **порядок имён**: «Mr. Edward Veal, and Mr. Richard Adams» — Veal назван
+первым, тогда как в эпистоле подпись идёт «Richard Adams … Edward Veal». Мелочь, но для
+редакционной истории существенная.
+
+**Главное: эпистол 1680 и эпистол 1684 — один и тот же текст.** Сопоставление узла `1:3` издания
+1680 с разделом `1:2` издания 1684 показывает, что эдикторы **не переписывали** биографический
+нарратив между изданиями. Расхождения — только капитализация и две опечатки TCP-транскрипции
+(«abve compare» в 1680 против «above compare» в 1684; «be would escape Visitants» в 1680 против
+«he would escape Visitants» в 1684). Следствие для отдела:
+
+- все биографические утверждения эпистола действуют **с 1680 года**, а не с 1684;
+- в частности, **Уильям Сэнкрофт назван в 1680 году** («brought up under the Tuition of the
+  present Arch-Bishop of Canterbury») — за одиннадцать лет до Wood 1691 и за шесть лет до Calamy
+  1727. Формула «a true Son of the Church of England…» также датируется **1680**, а не 1684;
+  Wood 1691 мог взять её из эпистола либо из общего источника.
+
+**Титульный лист 1682 (*Attributes*, `A32723.0001.001`, узел `1:1`) — дословно:**
+
+> SEVERAL DISCOURSES UPON THE EXISTENCE AND ATTRIBUTES OF GOD.
+>
+> By that late Eminent Minister of Christ, Mr. STEPHEN CHARNOCKE, B. D. And sometimes Fellow of
+> New-Colledge in Oxon.
+>
+> LONDON, Printed for D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, and Benj. Alsop.
+> M DC LXXXII.
+
+**Это разрешает `CONFLICT-6`**: титульный лист первого издания датирован **M DC LXXXII** = 1682.
+Диапазон «1681–82» у McCosh и DNB отражает две части с разной датой титула, а не неопределённость.
+Заметьте также написание **«CHARNOCKE»** (с финальным -e) на титулах 1680 и 1682 против
+«CHARNOCK» в заголовке broadside *The sayings…* 1680.
+
+**Несоответствие статусов.** Каталог EEBO-TCP (`TCP.json`, файл `textcreationpartnership/Texts`)
+помечает `A32726`, `A32722`, `A32723`, `A32724` статусом **Restricted**, тогда как страницы
+Michigan (`quod.lib.umich.edu/e/eebo2/…`) для этих же ID демонстрируют уведомление **CC0 1.0**.
+Отдел фиксирует расхождение и **не утверждает** CC0 для `A32726` как установленный факт: текст
+использован как прочитанный, право на перепечатку — под вопросом. `RIGHTS_HOLD` для этих объектов
+**сохраняется** до выяснения.
 
 ### Изменение заглавия между изданиями
 
@@ -251,8 +324,17 @@ good Metal, the vvhole sum vvill be no less currant.»
 
 ## 5. Границы допустимой формулировки
 
-- Нельзя attribуить эпистол McCosh или Symington: это прямой источник 1684 года.
-- Нельзя приводить цитаты из эпистола по McCosh: теперь есть EEBO-TCP.
+- Нельзя attribуить эпистол McCosh или Symington: это прямой источник 1680/1684 годов.
+- Нельзя приводить цитаты из эпистола по McCosh: теперь есть EEBO-TCP для обоих изданий.
+- Нельзя датировать эпистол 1684 годом, если речь идёт о биографических утверждениях: эпистол
+  существует с 1680 года (издание `A32726`), и 1684-е издание его перепечатывает без изменений.
+- Нельзя attribуить Сэнкрофта только Wood 1691: «the present Arch-Bishop of Canterbury» назван уже
+  в эпистоле 1680 года.
+- Нельзя attribуить формулу «a true Son of the Church of England» только изданию 1684 года.
+- Нельзя citing титульный лист 1680 как «без эпиграфа»: на нём есть эпиграф Пс. 103:19
+  («His Kingdom Ruleth over all»).
+- Нельзя утверждать, что `A32726` свободен по CC0: каталог даёт Restricted, страница Michigan —
+  CC0; расхождение не разрешено.
 - Нельзя утверждать, что proctor был в 1652: опровергнуто.
 - Нельзя называть Чарнока только «пуританским пресвитерианином» без оговорки о «true Son of the
   Church of England».

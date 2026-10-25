@@ -52,6 +52,8 @@
 | **DNB vol. 10 (1887)** | `B1` | **full text** (Wikisource) | — | — |
 | **Johnson funeral sermon 1680** | `A1` | **FULL TEXT получен** — EEBO-TCP `A46911.0001.001`, CC0 1.0, pp. 1–40 | **`checked`** — Charnock-материал pp. 33–40 | `LOCATOR_HOLD` только по печатному снимку |
 | **Adams & Veal epistles** | `A1` | **full text** — EEBO-TCP `A79420.0001.001` раздел `1:2` (изд. 1684, CC0 1.0) | `checked` на уровне раздела EEBO-TCP | `LOCATOR_HOLD` по печатной странице |
+| ***A treatise of divine providence* — 1-е изд. 1680** (`A32726.0001.001`, Wing **C3712**, ESTC R13224, 418 pp.) | `A1` | **ПОЛУЧЕН 2026-10-25** — титульный лист (узел `1:1`, с эпиграфом Пс. 103:19), лист «Advertisement» (`1:2`), эпистол «TO THE READER» (`1:3`) | **`checked`** на уровне узлов | **`RIGHTS_HOLD`**: каталог TCP даёт Restricted, страница Michigan — CC0; расхождение не разрешено. Эпистол идентичен эпистолу издания 1684 → `CONFLICT-12` по эпистолу закрыт |
+| ***Several discourses upon the existence and attributes of God* — 1-е изд. 1682** (`A32723.0001.001`, Wing **C3711**, ESTC R15604, 866 pp.) | `A1` | **титульный лист ПОЛУЧЕН 2026-10-25** (узел `1:1`); остальной том не читался | `checked` для титульного листа | **Разрешает `CONFLICT-6`** (1682). `RIGHTS_HOLD` как у `A32726`. Внутренние титульные листы фолианта не читались |
 | **Приходской регистр St Michael's** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |
 | **Calendar of State Papers, Domestic** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD`, `LOCATOR_HOLD` |
 | **New College books / Fasti Oxonienses** | `A1` | **НЕ получен** | unchecked | `ARCHIVE_HOLD` |

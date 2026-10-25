@@ -142,7 +142,7 @@ Wood, *Athenæ Oxonienses* vol. II, вход [429], p. 491 (EEBO-TCP `A71277.000
 
 | Год | Заглавие | Imprint | Значение |
 |---|---|---|---|
-| **1680** | *A treatise of divine providence* | — | Первое издание; IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680` — **page images доступны** (675 MB, микрофильм EEBO); сверка эпистола с изданием 1684 не выполнена → `CONFLICT-12` |
+| **1680** | *A treatise of divine providence* | London: Printed for Tho. Cockeril, at the Three Legs in the Poultrey, near the Stocks-Market | **ПОЛУЧЕН 2026-10-25** — EEBO-TCP `A32726.0001.001`, Wing **C3712**, ESTC R13224. Титульный лист с эпиграфом **Пс. 103:19**, лист «Advertisement», эпистол «TO THE READER». Эпистол **идентичен** эпистолу издания 1684 → `CONFLICT-12` по эпистолу **закрыт**: эдикторы не переписывали нарратив |
 | **1680** | *A sermon preached by the late eminent Mr. Steph. Charnock on 2 Cor. V. XIX.* | London: Printed by Thomas Milbourn, for J.K., and are to be sold by Langley Curtis | Отдельная sermon 2 Кор. 5:19. **Page images доступны**: IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`; титульный лист читается как «A SERMON Preached by the Late Eminent Mr. Steph. Charnock ON 2 COR. V. XIX.» |
 | **1680** | *The sayings of that reverend and great preacher Mr. S. Charnock, who departed this life on Wednesday the 28 of July, 1680, and was solemnly interred the 30th following* | London: [s.n.], Printed in the year 1680. **Broadside** | **Получен полностью 2026-10-25** — EEBO-TCP `B02133.0001.001`, CC0 1.0. ~38 афоризмов, **все извлечены из sermon «The Sinfulness and Cure of Thoughts»**. См. `CONFLICT-10` и том 12 |
 | **1680** | *New poems upon the death of that eminent servant of God and truly pious and learned minister of the Gospel, Mr. Stephen Charnock who departed this life July 27, 1680 / by a lover of all those who are lovers of the truth* | London, Printed by **Thomas Snowden**, Anno Dom. 1680 | **ПОЛУЧЕН полностью 2026-10-25** — EEBO-TCP `A52960.0001.001`, CC0 1.0. Элегия 130 строк + два акростиха на имя STEPHEN и CHARNOCK + эпитафия 12 строк. **Заглавие даёт 27 июля.** Содержит четыре эксклюзивных биографических сведения (см. §3C). `CONFLICT-10`, `CONFLICT-14` |
@@ -192,15 +192,31 @@ make known his daily practice were». Это самое раннее печат�
 
 **Разрешение `CONFLICT-6` — *Existence and Attributes of God*: 1681–82 или 1682
 
-Существует **отдельное** EEBO-TCP издание 1682 года с imprint «D. Newman, T. Cockerill, Benj. Griffin,
-T. Simmons, and Benj. Alsop». Это означает, что диапазон «1681–82» у McCosh и DNB отражает **две части
-с разной датой титула**, а не одну неопределённость. Рабочая формулировка отдела:
+**Разрешено 2026-10-25.** Титульный лист первого издания получен из EEBO-TCP `A32723.0001.001`
+(Wing **C3711**, ESTC R15604, 866 pp.), узел `1:1`, дословно:
 
-> *Discourses upon the Existence and Attributes of God* вышли посмертно в двух фолиантах с датами
-> титула **1681 и 1682**; в 1683 году вышел второй фолиант с discourses on regeneration, reconciliation,
-> the Lord's supper.
+> SEVERAL DISCOURSES UPON THE EXISTENCE AND ATTRIBUTES OF GOD.
+>
+> By that late Eminent Minister of Christ, Mr. STEPHEN CHARNOCKE, B. D. And sometimes Fellow of
+> New-Colledge in Oxon.
+>
+> LONDON, Printed for D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, and Benj. Alsop.
+> **M DC LXXXII.**
 
-Точное распределение частей по годам требует сверки обоих титульных листов.
+Титульный лист датирован **M DC LXXXII** = 1682. Диапазон «1681–82» у McCosh и DNB отражает **две
+части с разной датой титула**, а не одну неопределённость; **отдельная часть 1681 года не
+обнаружена**, а титул 1682 года существует как самостоятельный печатный объект. Заметьте также
+написание **«CHARNOCKE»** (с финальным -e) на титулах 1680 и 1682 против «CHARNOCK» в заголовке
+broadside *The sayings…* 1680.
+
+Рабочая формулировка отдела:
+
+> *Discourses upon the Existence and Attributes of God* вышли посмертно фолиантом с датой титула
+> **1682**; в 1683 году вышел второй фолиант с discourses on regeneration, reconciliation, the Lord's
+> supper, и отдельное *A supplement…* (Cockerill, 1683).
+
+Точное распределение внутренних частей фолианта 1682 по датам требует сверки всех титульных листов
+внутри тома; `LOCATOR_HOLD` сохраняется на уровне внутренних титулов.
 
 ### `CONFLICT-10` — дата смерти: 27 или 28 июля 1680
 
