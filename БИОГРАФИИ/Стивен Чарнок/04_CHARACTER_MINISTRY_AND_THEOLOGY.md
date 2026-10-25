@@ -999,6 +999,318 @@ live» — обвинение в **эрастианстве**, то есть в 
 `1:10` (вездесущние), `1:11` (знание), `1:17` (терпение). Остались десять: `1:4`, `1:6`, `1:7`,
 `1:8`, `1:9`, `1:12`, `1:13`, `1:14`, `1:15`, `1:16`. `LOCATOR_HOLD`.
 
+### 0M. «A DISCOURSE UPON THE Existence of God» — первый дискурс фолианта: естественное богословие, доказываемое иезуитами и атомистами (добавлено 2026-10-25)
+
+**Объект.** Узел `A32723.0001.001/1:4` фолианта 1682 — **«A DISCOURSE UPON THE Existence of
+God»**, Пс. 14:1, страницы **1–46**, **140 сносок**, прочитан целиком (33 чанка). Это
+**самый первый** дискурс собрания, и именно он стоит перед «Practical Atheism» (`1:5`,
+стр. 47–107): оба дискурса — на одном и том же стихе Пс. 14:1, и таблица Scripture (том 03
+§3F) поэтому даёт по нему две страницы — «стр. 1, 2».
+
+**Структура.** Три доктрины, объявленные на стр. 3:
+1. «'Tis a great Folly to deny or doubt of the Existence or Being of God. Or, An Atheist is a
+   great Fool.»
+2. «Practical Atheism is natural to man in his corrupt State. 'Tis against Nature as constituted
+   by God, but Natural, as Nature is depraved by Man.»
+3. «A secret Atheism, or a partial Atheism is the Spring of all the wicked Practices in the
+   world.»
+
+Метод объявлен прямо: доказательства даёт **разум**, а не Писание — «Men that will not listen
+to Scripture, as having no counterpart of it in their Souls, cannot easily deny natural Reason,
+which riseth up on all sides for the justification of this Truth: There is a natural as well as a
+revealed Knowledg, and **the Book of the Creatures is legible in declaring the Being of a God,
+as well as the Scriptures are in declaring the Nature of a God**». То есть фолиант открывается
+**апологетикой, обращённой к неверующему**, а не к церкви.
+
+**Тройное отрицание Бога** (сноска 1.5, дословно) — это первая системная схема, которую отдел
+получает от Чарнока, и она же ответ на вопрос, что такое «практический атеизм»:
+
+> «There is a threefold denyal of God, 1. Quoad exisientiam; this is absolute Atheism, 2. Quoad
+> Providentiam, or his inspection into, or care of the things of the World, bounding him in the
+> Heavens, 3. Quoad naturam, in regard of one or other of the perfections due to his nature.»
+
+Далее Чарнок говорит, что **второе и третье — его собственный предмет**, и что абсолютный
+атеизм редок: «He doth not form a Syllogism, as Calvin speaks, that there is no God: he dares
+not openly publish it, though he dares secretly think it.» Здесь же названы **Диагор** и
+**Протагор** («as Diagoras is reported to be… as Protagoras, who doubted whither there were a
+God»).
+
+**Еврейская грамматика как оружие** (сноска 1.4): текст говорит «there is no God», но Чарнок
+показывает, что стоящее здесь слово — **не Иегова** (имя сущности), а **Элохиа**, «which name
+signifies the Providence of God… God as a Rector and Judge»: «Not that he denyes the Existence
+of a Supream being… but his regarding the Creatures, his Government of the world». То есть
+атеизм, по Чарноку, — это в первую очередь **отрицание Провидения и Суда**, а не бытия.
+Халдейский перевод («non potestas Domini») привлечён как свидетельство.
+
+**Политическое ядро проповеди — Чарнок обвиняет своё время в атеизме, и называет его новым:**
+
+> «may it not justly be suspected, that **the swarms of Atheists are more numerous in our times,
+> than History Records to have been in any age**, when men will not only say it in their hearts,
+> but **publish it with their lips, and boast that they have shaken of those Shackles which bind
+> other mens Consciences**?»
+
+> «That age run from one God to many, and **our age is running from one God to none at all**.»
+
+Это прямой документальный ответ на Блок 5 промта тома 17: «практический атеизм» — не
+надуманная категотория, а **собственное диагностическое суждение Чарнока о своей эпохе**,
+высказанное в первой проповеди его главного труда. И он связывает его с **политическим
+эрастианством** там же (сноска 1.5, продолжение; ср. §0L «any God that shall be coined by the
+powers under whom they live»).
+
+**Социониане названы по имени** — и это первое в корпусе прямое полемическое имя:
+
+> «I have spoken the more of this place, because **the Socinians** use this to decry any natural
+> knowledge of God, and that the Existence of God is only to be known by Revelation, so that by
+> that reason any one that lived without the Scripture hath no ground to beleive the being of a
+> God.»
+
+Для реестра «ложных течений» (Блок 5 промта тома 17) это существенно: **социониане — первое
+именованное опровергаемое направление в фолианте**, и опровергаются они именно по вопросу о
+естественном знании Бога. Сноска 1.15 отсылает к **Voetius, *Theologia naturalis*, cap. 3 § 1,
+стр. 22** — то есть Чарнок опровергает социниан **голландским кальвинистским схоластом**, а не
+своим собственным доводом.
+
+**Методологическая максима Чарнока** (сноска 1.17, дословно) — важна для тома 05 (проверяемость)
+и для ответа на вопрос, можно ли ему приписывать конфликт науки и веры:
+
+> «'Tis but one truth in Philosophy and Divinity, That which is false in one, cannot be true in
+> another; **Truth in what appearance soever doth never contradict it self**.»
+
+И тут же — **прямое свидетельство о коперниканстве** (сноска 1.82, дословно). Чарнок
+демонстративно **не становится ни на одну сторону**:
+
+> «(Whether it be the Sun, or the Earth that moves, it is all one: Whence have either of them
+> this constant and uniform motion?)»
+
+Это ценно для Блока 4 промта тома 17 (защита от анахронизма): Чарнок использует спор как
+риторический ход и не извлекает из него богословского вывода. В аппарате при этом —
+**Гассенди ×5** (см. ниже), то есть атомист и Catholic priest, чья физика была одной из
+коперниканских.
+
+**Политическая вставка** (сноска 1.35, дословно) — едва ли не единственное прямое упоминание
+современной ему французской политики во всём прочитанном корпусе:
+
+> «And there is not a Richlieu but leaves his Axioms to a Mazarine.»
+
+**Аппарат — 140 сносок, полный список именованных авторитетов.** Ниже — только имена (сноски
+со ссылками на библейские стихи опущены). Это **самый «экуменичный» аппарат из прочитанных**:
+Римская Церковь, атомисты, Amyraldists, кембриджские платоники и еврейские авторы стоят в
+первом дискурсе главного труда английского диссентера.
+
+| Сноска | Ссылка (дословно) | Автор / сочинение | Примечание |
+|---|---|---|---|
+| 1.12 | «Coccei Sum. Theol. c. 8. § 1.» | **Кокцей** | 1-е из семи |
+| 1.13 | «Aquin.» | **Фома Аквинский** | |
+| 1.15, 1.16 | «Voet. Theol natural. cap. 3. § 1. p. 22.» ×2 | **Гисберт Воэций, *Theologia naturalis*** | опровергает социниан |
+| 1.19 | «Charron de la Sagesse Livr. 1. Cha. 7. p. 43. 44.» | **Пьер Шаррон, *De la sagesse*** | скептик |
+| 1.20, 1.22, 1.23, 1.24, 1.37 | «Gassend. Phys. sect. 1. lib. 4. cap. 2.» и др. ×5 | **Пьер Гассенди, *Physica*** | атомист и католический священник |
+| 1.21, 1.30 | «Amyrant des Religion p. 50.» / «des Religious pag. 6. 5. 8. 9.» | **Мозес Амиро, *Des religions*** | |
+| 1.25 | «Cicero.» | **Цицерон** | |
+| 1.28 | «Pink. Eph. 6. pag. 10. 11.» | не идентифицирован | `LOCATOR_HOLD` |
+| 1.29 | «King. en Jonah pag. 16.» | не идентифицирован | `LOCATOR_HOLD` |
+| 1.31 | «Cha••le••••••» | не читается | `LOCATOR_HOLD` |
+| 1.34 | «Fotherby a Theomastix, p. 64.» | **Энтони Фотерби, *Atheomastix*** | **второе** именование (первое: `1:11`, сноска 1.31) — **английский анти-атеистический трактат** |
+| 1.42 | «Banes in Aquin. Par. 2. Qu. 2. Artic. 2. pa. 78. Col. 2.» | **Банес (иезуит), комментарий к Фоме** | |
+| 1.46 | «Philo. ex Petav. Theolo. Dog. Tom 1. li. 1. cap. 1, pa. 4.» | **Филон Иудей** через Петaвия | |
+| 1.50, 1.51 | «Daille 20. Serm. Psa. 102.26.» ×2 | **Жан Дайе, 20-я проповедь на Пс. 102:26** | французский протестант |
+| 1.52, 1.54, 1.56, 1.65, 1.66, 1.67, 1.81 | «Petav. Theo. Dogmat.» ×7 | **Дени Петавий, *Theologia dogmatica*** (S.J.) | **иезуит ×7** |
+| 1.53 | «Wolscley of Atheism pa. 4••.» — «one of our own» | не идентифицирован | `LOCATOR_HOLD`; Чарнок называет его «один из наших», то есть протестантского автора |
+| 1.55 | «Damason» | **Иоанн Дамаскин** (через Петавия) | |
+| 1.64 | «Coccei sum. Theol. cap. 8. § 33.» | **Кокцей** | |
+| 1.66, 1.67 | «Philo. Judae.» / «Athanasius» | Филон, Афанасий | |
+| 1.68, 1.98 | «Gassend. Physic. sect. 1. lib. 4. cap. 2.» ×2 | **Гассенди** | |
+| 1.69, 1.96, 1.117, 1.119, 1.120 | «Lessius de providen.» ×5 | **Леонард Лессий, *De providentia*** (S.J.) | **иезуит ×5** |
+| 1.76, 1.79, 1.88 | «Amirald. de Trinitate pa. 13, 18, 21» ×3 | **Мозес Амиро, *De Trinitate*** | |
+| 1.78 | «Morn. de verit. cap. 1. pag. 7.» | **Филипп дю Плесси-Морне, *De veritate religionis christianae*** | гугенот |
+| 1.90 | «Lactant.» | **Лактанций** | |
+| 1.91, 1.93, 1.106, 1.107, 1.111 | «Coccei. sum. Theol. cap. 8» ×5 | **Кокцей** | итого **×7** |
+| 1.94 | «Peirson, on the Creed p. 35.» | **Джон Пирсон, *An Exposition of the Creed*** | англиканский епископ Честерский |
+| 1.102 | «Lib. 3. de usu. partium.» | **Гален, *De usu partium*** | |
+| 1.104 | «Theod. de providentiâ. Orat. 3.» | **Феодорит Киррский** | |
+| 1.108 | «More.» | **Генри Мор** | **третье** именование в фолианте |
+| 1.109 | «Culverwel.» | **Натаниэл Калвервел** | **новое лицо; см. ниже** |
+| 1.131 | «Maimon. funda. Legis cap. 1.» | **Маймонид, *Fundamenta Legis*** | **четвёртое** именование (III.20, III.21, III.22 — прежние) |
+
+**Главный результат чтения — четыре пункта, меняющие картину.**
+
+1. **Чарнок доказывает бытие Божье «иезуитами и атомистами».** В аппарате первого дискурса
+   фолианта доминируют **Петавий ×7**, **Лессий ×5** (оба — Society of Jesus), **Гассенди ×5**
+   (атомист и католический священник), **Кокцей ×7**, **Амиро ×5** (Amyraldist, официально
+   подозреваемый), **Воэций ×2** (голландский схоласт), **Морне** (гугенот), **Шаррон**
+   (скептик), **Аквинский** и **Банес** (католический схоласт). Это не список случайностей:
+   это **сознательная экуменичная апология**, где истина ищется независимо от конфессии.
+   Для Части VIII (Наследие) и для карты «цепь личностей» это ключевой факт: аппарат Чарнока —
+   **межконфессиональный**, и он шире, чем аппарат почти любого английского диссентера его
+   поколения.
+2. **Генри Мор — третье, а Калвервел — первое именование; оба — в дискурсе о естественном
+   знании Бога.** Мор (`1:11` сноска 1.98, `1:11` сноска 1.113 — «Dr. More's Exposition of the
+   seven Churches») и теперь сноска 1.108 здесь. Но новое — **Калвервел** (сноска 1.109):
+   *Discourse of the Light of Nature* (1652) — основной текст кембриджских платоников именно
+   о естественном знании. То есть в самом первом дискурсе фолианта Чарнок строит
+   **рациональное доказательство бытия Божьего**, опираясь на **двух кембриджских платоников**
+   и противопоставляя их **соционианам**. Это решающий факт для реестра «как тогда верили
+   богословски»: линия Чарнок → Мор → Калвервел теперь документальна, а не предположительна.
+3. **Социониане — первое именованное опровергаемое направление фолианта**, и опровергаются они
+   по вопросу естественного знания Бога (см. цитату выше). Это даёт ответ на Блок 5 промта
+   тома 17: «ложные течения» начинаются не с папства, а с социнианства.
+4. **Чарнок не принимает ни одной стороны в споре о движении земли** (сноска 1.82) и
+   декларирует единство истины в философии и богословии (сноска 1.17). Вместе с цитатой
+   «our age is running from one God to none at all» это даёт биографу **точный портрет
+   отношения Чарнока к науке**: не конфликта, но и не союза; наука — свидетель, а не судья.
+
+**Полнота.** Прочитано **пять дискурсов фолианта из 14**: `1:4` (бытие Божье), `1:5`
+(практический атеизм), `1:10` (вездесущние), `1:11` (знание), `1:17` (терпение). Остались
+девять: `1:6`, `1:7`, `1:8`, `1:9`, `1:12`, `1:13`, `1:14`, `1:15`, `1:16`.
+`LOCATOR_HOLD`.
+
+### 0N. Два дискурса на Ин. 4:24 — «Gods being a Spirit» и «Spiritual Worship»:
+### аппарат из 331 сноски, или Чарнок, читающий лютеран, иезуитов и амиралистов (добавлено 2026-10-25)
+
+**Объекты.** Узлы `A32723.0001.001/1:6` и `A32723.0001.001/1:7` фолианта 1682, оба — на
+Ин. 4:24 («God is a Spirit, and they that Worship him, must worship him in Spirit, and in
+truth»). Это **двучастный дискурс**: `1:6` — «A DISCOURSE UPON GODS BEING A SPIRIT»,
+стр. **109–128**, **106 сносок**; `1:7` — «A DISCOURSE OF Spiritual Worship», стр. **129**
+и далее, **225 сносок**. Прочитаны оба целиком. Таблица Scripture (том 03 §3F) даёт по
+Ин. 4:24 ровно эти две строки — «стр. 109–112, 129, 130».
+
+**Главный результат чтения: в аппарате этих двух дискурсов — и особенно в `1:6` — Чарнок
+опирается на тех, с кем полемически расходится.** Ниже — полный список именованных
+авторитетов с дословными ссылками; сноски, содержащие только библейские стихи, опущены.
+
+**Аппарат `1:6` («Gods being a Spirit», 106 сносок):**
+
+| Сноска | Ссылка (дословно) | Автор / сочинение |
+|---|---|---|
+| 1.14 | «Vulgar lat. Illyrc. Clav.» | **Флаций Иллирик, *Clavis Scripturae*** |
+| 1.15, 1.27 | «E••••••••••p. Institut. lib. 4. cap. 3.» / «Episcop. insti. tut. l. 4. c. 3.» | **Симон Епископий, *Institutiones theologicae*** ×2 |
+| 1.16 | «Melancton.» | **Филипп Меланхтон** |
+| 1.19 | «Terniti.» | не читается; `LOCATOR_HOLD` |
+| 1.20, 1.21, 1.28, 1.40 | «Amirald in loc.» ×4 | **Мозес Амиро** — комментарий на место |
+| 1.22, 1.24 | «Muscul.» ×2 | **Вольфганг Мускул** |
+| 1.23 | «Chemnit:» | **Мартин Хемниц** |
+| 1.29 | «Suarez. de Deo vol. 1. P. 9. Col. 2.» | **Франсиско Суарес, *De Deo*** (S.J.) |
+| 1.31, 1.76 | «Gerhard.» / «Gerhard loc. Comun. vol. 4. Exegesis de naturâ Dei cap. 8 § 1.» | **Иоганн Герхард, *Loci communes*** ×2 |
+| 1.32 | «Gamacheus Tom. 1. q. 3. Cap. 1. P. 42.» | **«Gamacheus»** — не идентифицирован; `LOCATOR_HOLD` (в EEBO-TCP только «Cyprien de Gamaches», католический автор 1663) |
+| 1.33 | «Coccei. sum. Theol. Cap. 8.» | **Кокцей** |
+| 1.34 | «Thes. Sedan. Part. 2. P. 1••••••» | **Седанские тезисы** (*Theses Sedanenses*) |
+| 1.35 | «Vossius Idolol. lib. 2. cap. 1. Forbes Instrument l. 1. c. 36.» | **Герард Иоанн Воссий, *De theologia gentili / Idololatria*** и **Джон Форбс, *Instructiones historico-theologicae*** |
+| 1.37 | «Plutarch. incorporalis ratio divinus spiritus. Seneca.» | **Плутарх и Сенека** |
+| 1.39 | «Calov. Socin. Proflig. P. 129. 130.» | **Абрахам Каловий, *Socinianismus profligatus*** |
+| 1.41, 1.77, 1.88, 1.92 | «Amiral. moral Tom. 1.» ×4 | **Мозес Амиро, *Morale chrétienne*, т. 1** |
+| 1.43 | «Daille. in Tim» | **Жан Дайе** на 1 Тимофею |
+| 1.46, 1.48 | «Goulart. de Dieu pa. 94.» / «p. 95. 96.» | **«Goulart. de Dieu»** — не идентифицирован; возможен **Simon Goulart** (1543–1628), французский протестантский пастор; `LOCATOR_HOLD` |
+| 1.52 | «Zancheus Theol. Tom. 1. Quos. 3. C. 1.» | **Джироламо Занхи** |
+| 1.56 | «Loquitur lex secund. ling. filiorum hominum, was the H. saying.» | замечание Чарнока о древнееврейском |
+| 1.57 | «Amyral. de Trin. p. 218. 219.» | **Мозес Амиро, *De Trinitate*** |
+| 1.60, 1.89 | «Episcop. institut. l. 4. § 3. c. 3» / «li. 4. § 2. c. 10.» | **Епископий ×2** |
+| 1.61 | «Zanchie•• observation Tom. 2. de natura Dei lib. 1. cap. 4. Thes. 9.» | **Занхи, *De natura Dei*** |
+| 1.62 | «Amiraut. Meral. T••m. 1. pa. 293. 294.» | **Амиро, *Morale chrétienne*** |
+| 1.68 | «Maimon. More Nevoc. par. 1. cap. 27.» | **Маймонид, *More Nevoch*, часть 1, гл. 27** |
+| 1.69 | «Mores conjectura cabalistica pa. 122.» | **Генри Мор, *Conjectura Cabalistica*** |
+| 1.71 | «Petav. Theol. Dog. Tom. 1. lib. 2. cap. 1. pa. 104.» | **Дени Петавий** |
+| 1.73 | «Jamblyc. protrept. cap. 21. Symb. 24.» | **Ямвлих, *Protrepticus*** |
+| 1.74 | «Austin de Civitat. Dei lib. 4. cap. 31. out of Varro.» | **Августин** через Варрона |
+| 1.75 | «Tacitus.» | **Тацит** |
+| 1.78 | «Cocceius sum. Theol. cap. 9. pa. 47. § 35.» | **Кокцей** |
+| 1.82 | «Daille super Cor. 1.10. Ser. 3.» | **Дайе** на 1 Коринфянам |
+| 1.85 | «Chin. Predict. Part. 2. P. 252.» | **«Chin. Predict.»** — не идентифицирован; `LOCATOR_HOLD` |
+| 1.86 | «Lawson. Body Divin. P. 161» | **Джордж Лоусон, *Theo-politica*** — см. ниже |
+| 1.91 | «Nazianzen.» | **Григорий Богослов** |
+| 1.93 | «Lessius.» | **Леонард Лессий** |
+| 1.94 | «Towerson on the Commandments. P. 112.» | **Габриэл Тауэрсон, *An Explication of the Decalogue*** — см. ниже |
+
+**Аппарат `1:7` («Spiritual Worship», 225 сносок), только имена:**
+
+| Сноска | Ссылка (дословно) | Автор / сочинение |
+|---|---|---|
+| 1.45 | «Pascal. Pen. 142.» | **«Pascal. Pen.»** — возможен Блез Паскаль, *Pensées* (изданы 1670); `LOCATOR_HOLD` |
+| 1.51 | «V. Hammond in loc.» | **Генри Гаммонд, *Paraphrase and Annotations*** |
+| 1.54 | «Sherman's Greek in the Temple pa. 61. 62.» | **«Sherman's Greek in the Temple»** — не идентифицирован; `LOCATOR_HOLD` |
+| 1.55 | «Stillingfleet's Irenicum cap. 1. § 1. pa. 23.» | **Эдуард Стиллингфлит, *Irenicum*** |
+| 1.75 | «Moulin. Sermons Decad. 4. Ser. 4. P. 80.» | **Питер дю Мулен (Molin), *Sermons*** |
+| 1.85 | «Jamblich l. 1. c. 518. p. 87.» | **Ямвлих** |
+| 1.88 | «Lady Falklands life pa. 130.» | **«Lady Falkland's Life»** — не идентифицирована; `LOCATOR_HOLD`; вероятно, жизнь **Элизабет Кэри, виконтессы Фолкленд** (1585–1639) |
+| 1.122 | «Daille Sur. 3. Jean. P. 150.» | **Дайе** на 3 Иоанна |
+| 1.126 | «Plutarch Moral. P. 344.» | **Плутарх, *Moralia*** |
+| 1.130 | «Caudam aculeatam vel linguam nigram Alexand. ab Alex. l. 3. c. 12.» | **Александр ab Александро, *Geniales dies*** |
+| 1.152 | «Amyraut. Mor. Tom. 2. P. 311.» | **Амиро, *Morale chrétienne*, т. 2** |
+| 1.172 | «Daille melange. des Sermon: Ser. 2.» | **Дайе, *Mélange des sermons*** |
+| 1.202 | «〈…〉 Abstinentia.» | греческое слово с глоссом |
+| 1.203 | «N••n valet pr••∣testatio c••ntra jactum is a rule in the civil law.» | **римское гражданское право**: «nunc valet protestatio contra jactum» — правило цивильного права |
+| 1.216 | «Fitzherbert Pol. in relig. part. 2. cap. 19. § 12.» | **Томас Фитцгерберт, *The Policy of the Prelates of Rome*** — католический полемист |
+| 1.223 | «Guliel. Paris. Rhetor. Divin. cap. 26. p. 350. Col. 1.» | **Гильом де Париж, *Rhetorica divina*** — средневековое руководство по проповеди |
+| 1.225 | «Reynold's» | **Рейнольдс — третье** именование; см. ниже |
+
+**Шесть находок, меняющих картину.**
+
+1. **Мозес Амиро — самый цитируемый автор корпуса.** Амиро именован не менее **двадцати раз**
+   по меньшей мере в пяти разных сочинениях: *Des religions* (`1:4`, сн. 1.21, 1.30),
+   *De Trinitate* (`1:4`, сн. 1.76, 1.79, 1.88; `1:6`, сн. 1.57), *Morale chrétienne* т. 1 и т. 2
+   (`1:6`, сн. 1.41, 1.62, 1.77, 1.88, 1.92; `1:7`, сн. 1.152), комментарии «in loc»
+   (`1:6`, сн. 1.20, 1.21, 1.28, 1.40), «Amirald Sup. Heb. 9 p. 146» (`1:6`, сн. 1.40).
+   **Амиро — Amyraldist, чья доктрина была официально подозрительной после Дортского
+   синода**, и Чарнок цитирует его в дискурсе о бытии Духа Божьего **без единого полемического
+   слова**. Для вопроса «как тогда верили богословски» это один из самых весомых фактов
+   всего добытого корпуса: английский диссентер 1682 года в главном труде опирается на
+   «подозреваемого» французского теолога чаще, чем на кого-либо ещё.
+2. **Лютеранский кластер, почти отсутствующий в английских пуританских библиотеках.**
+   Меланхтон, Мускул ×2, Хемниц, Герхард ×2, Занхи ×2, Каловий — шесть лютеранских
+   схоластов, причём **Каловий** взят своим *Socinianismus profligatus*, то есть
+   анти-соционианским трудом. Вместе с Кокцием (×13 по корпусу) и Воэцием это
+   **континентальная реформатская традиция**, а не английская.
+3. **Арминианский кластер.** Епископий ×3 (*Institutiones theologicae*, кн. 4) и Амиро ×20 —
+   Чарнок читал противников кальвинистской ортодоксии систематически и без полемики.
+   Это прямо относится к Блоку 3 промта тома 17: богословская среда Чарнока была шире
+   его исповедания.
+4. **Иезуитский кластер продолжается.** Петавий (+1 = ×8 по корпусу), Лессий (+1 = ×6),
+   **Суарес** (*De Deo*, новый), **Банес**, «Gamacheus», **Фитцгерберт**
+   (*The Policy of the Prelates of Rome* — католический полемист, цитируемый в дискурсе
+   о духовном поклонении). Чарнок спорит с папством как с политикой и как с
+   апокалиптической силой, но **читает католических богословов как равных**.
+5. **Англиканская эрудиция.** Стиллингфлит, *Irenicum* — трактат о церковном расколе
+   латитудинария; Гаммонд; Тауэрсон; Сэндерсон; Пирсон; Рейнольдс ×3. Плюс **Аллестри**
+   (лаудианец и роялист) в дискурсе о устойчивости церкви (том 04 §0G). Это
+   **систематическое** чтение государственной церкви, а не случайность.
+6. **Риторика как дисциплина.** Гильом де Париж, *Rhetorica divina*, — средневековое
+   руководство по проповеди, cit. в дискурсе о духовном поклонении. Вместе с
+   замечанием о римском гражданском праве (сн. 1.203) это показывает, что Чарнок
+   работал и как **ритор**, а не только как экзегет.
+
+**Идентификации, снявшие `LOCATOR_HOLD` (проверены по полному каталогу EEBO-TCP из
+61 315 записей, выгрузка 2026-10-25):**
+
+| Ссылка в аппарате Чарнока | Идентифицирована как | TCP / STC / ESTC |
+|---|---|---|
+| «Lawson body of Divinity pa. 153. 154.» (`1:5`, сн. 1.166) и «Lawson. Body Divin. P. 161» (`1:6`, сн. 1.86) | **Джордж Лоусон (ум. 1678), *Theo-politica, or, A body of divinity containing the rules of the special government of God*, Лондон 1659** | `A49801`, Wing **L712**, ESTC **R17886**. У Лоусона же — *An exposition of the Epistle to the Hebrewes… the Socinian comment examined*, 1662 (`A49796`, Wing L707, ESTC R37962) — то есть Чарнок цитирует **английского анти-соционианского автора** |
+| «Wolscley of Atheism pa. 4••.» (`1:4`, сн. 1.53, «one of our own») | **Сэр Чарльз Уолсли, *The unreasonableness of atheism made manifest in a discourse written by the command of a person of honour*, 1669** | `A66877`, Wing **W3315**, ESTC **R11965**. Уолсли — **английский диссентер**, что подтверждает самоописание Чарнока «один из наших» |
+| «Decay of Christian Piety p. 23» (*Supplement* `1:3`, сн. — «Churches Stability») | **Ричард Аллестри, *The causes of the decay of Christian piety, or, An impartial survey of the ruines of Christian religion*, 1667** | `A23697`, Wing **A1097**, ESTC **R225979**. Аллестри — **лаудианец и роялист**, автор *Whole Duty of Man* |
+| «Towerson on the Commandments. P. 112.» (`1:6`, сн. 1.94) | **Габриэл Тауэрсон, *An explication of the Decalogue or Ten Commandments, with reference to the catechism of the Church of England*, 1676** | `A63003`, Wing **T1970**, ESTC **R21684** |
+| «Fotherby a Theomastix, p. 64.» (`1:4`, сн. 1.34; `1:11`, сн. 1.31) | **Мартин Фотерби, епископ Солсберийский, *Atheomastix clearing foure truthes, against atheists and infidels*, 1622** | `A01093`, STC **11205**, ESTC **S121334**. **УТОЧНЕНИЕ: автор — Мартин, а не Энтони Фотерби** (исправление прежней записи тома 04) |
+| «Reynolds» ×3 (*Supplement* `1:5`, сн. 1.2; `1:5`, сн. 1.169; `1:7`, сн. 1.225 «Reynold's») | **вероятнее всего Эдуард Рейнольдс (1599–1676)**, епископ Нориджский, член Вестминстерской ассамблеи, fellow Мертон-колледжа; его ***A treatise of the passions and faculties of the soule of man*** (1640) прямо отвечает теме «Spiritual Worship» | `A10663`, STC **20938**, ESTC **S115887**; ср. *An explication of the hundreth and tenth Psalme*, 1632 (`A10650`). Цепь: **Джон Дьюри → Эдуард Рейнольдс** (совместная работа 1650, `A37074`, Wing D2868A) **→ Чарнок**; Дьюри — автор призыва к «compleat body of divinity» 1658 (`A37065`, Wing D2855) |
+| «Broughton Lives of the Fathers, p. 7. Crit. in loc.» (*Supplement* `1:6`, сн. 1.4) | **НЕ ИДЕНТИФИЦИРОВАН.** В EEBO-TCP нет ни одного сочинения с таким названием; единственный Броутон каталога — **Хью Броутон (1549–1612)**, и среди его ~80 наименований нет «Lives of the Fathers». Возможно, издание вне EEBO-TCP или цитата по посреднику | `LOCATOR_HOLD` **сохранён** |
+
+**Оставшиеся неопознанными (честный список, `LOCATOR_HOLD`):** «Gamacheus Tom. 1. q. 3.
+Cap. 1.»; «Goulart. de Dieu pa. 94»; «Pascal. Pen. 142.»; «Sherman's Greek in the Temple»;
+«Lady Falklands life»; «Terniti.»; «Chin. Predict. Part. 2.»; «Pink. Eph. 6. pag. 10. 11.»;
+«King. en Jonah pag. 16.»; «Cha••le••••••»; «De••••» (`1:4`, сн. 1.113).
+
+**Контекст для Блока 5 промта тома 17 (анти-атеистическая полемика).** Прямое
+библиографическое окружение первого дискурса фолианта (`1:4`) — это **английская и
+континентальная анти-атеистическая традиция**: Фотерби, *Atheomastix* 1622; Уолсли,
+*The Unreasonableness of Atheism* 1669; и рядом — **Ральф Кадворт, *The True Intellectual
+System of the Universe***, 1678 (`A35345`, Wing C7471, ESTC R27278), **Уолтер Чарльтон,
+*The Darkness of Atheism dispelled by the Light of Nature*, 1652** (`A69728`, Wing C3668,
+ESTC R1089) и **Генри Кэр, *The Darkness of Atheisme expelled by the Light of Nature*, 1683**
+(`A33772`, Wing C509, ESTC R7365). То есть «практический атеизм» Чарнока — часть
+**общенациональной полемики**, а не личная затея; и **Кадворт — кембриджский платоник,
+чей главный анти-атеистический труд вышел в том же 1678 году**, в котором Чарнок
+проповедовал о знании Божьем при открытии «Папистского заговора» (том 04 §0C).
+
+**Полнота.** Прочитано **семь дискурсов фолианта из 14**: `1:4` (бытие Божье), `1:5`
+(практический атеизм), `1:6` (Дух), `1:7` (духовное поклонение), `1:10` (вездесущние),
+`1:11` (знание), `1:17` (терпение). Остались семь: `1:8`, `1:9`, `1:12`, `1:13`, `1:14`,
+`1:15`, `1:16`. `LOCATOR_HOLD`.
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах
