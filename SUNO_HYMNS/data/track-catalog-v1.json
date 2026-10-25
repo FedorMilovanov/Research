@@ -625,7 +625,8 @@
               "inFile": "SUNO/PHOS-001_STYLE.md §E"
             }
           ],
-          "styleVariantNote": "Five distinct directions are required per work. A occupies the primary slot only because the registry must carry one promptText; the owner chooses. All five are syllabic, intelligible-lead, one pass of the text, no invented chorus. None has been submitted."
+          "styleVariantNote": "Five distinct directions are required per work. A occupies the primary slot only because the registry must carry one promptText; the owner chooses. All five are syllabic, intelligible-lead, one pass of the text, no invented chorus. None has been submitted.",
+          "sunoHandoff": "SUNO/PHOS-001_SUNO_HANDOFF.md"
         }
       ],
       "authorId": "ANON-PHOS-001",
@@ -659,7 +660,8 @@
         "See P. Lond. 2037B in a catalogue or image (ARCHIVE_HOLD).",
         "Channel copy (title, description, pinned comments, Telegram) is deliberately not written yet: it must describe the take that exists."
       ],
-      "displayTitleNote": "Approved by the owner on 2026-10-26 as «Свет Отрадный», with the capital О as the owner wrote it; the verse line keeps the ordinary lowercase «отрадный». «Свете тихий» is not available: it names the Church Slavonic text."
+      "displayTitleNote": "Approved by the owner on 2026-10-26 as «Свет Отрадный», with the capital О as the owner wrote it; the verse line keeps the ordinary lowercase «отрадный». «Свете тихий» is not available: it names the Church Slavonic text.",
+      "sunoHandoff": "SUNO/PHOS-001_SUNO_HANDOFF.md"
     }
   ],
   "adjacentNonDutchWorks": [

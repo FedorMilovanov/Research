@@ -90,6 +90,7 @@
 - **Source anchor:** the received six-line Greek text, read in an open choral library; **a printed Horologion has not been collated** (`LOCATOR_HOLD`).
 - **Not established and not to be used in copy:** that the hymn is first recorded in the *Apostolic Constitutions* (VIII.35) — `EVIDENCE_HOLD`, `CLM-PHOS-AC-HOLD`; and any second- or third-century date of composition.
 - **Russian text:** `PHOS-001-RU v0.3` in `PHOS-001_LYRICS.md` — a verse **translation**, six lines into six lines, no refrain, no repeated or added line; no rhyme because the Greek has none — its six line-endings do not rhyme and its syllable counts are 15·15·18·16·16·18. The text is word-for-word where Russian allows: one added auxiliary «быть», the articles dropped, one pair of words reordered in line 3. Russian prose translations exist and were used as a sense check only; the Church Slavonic «Свете тихий» is not Russian and is not the source of our wording.
+- **Handoff:** `PHOS-001_SUNO_HANDOFF.md` — five ready pairs of blocks (Style + Lyrics) to paste into SUNO, with no prose between them.
 - **Style:** five directions in `PHOS-001_STYLE.md`, `STYLE-PHOS-001-A`…`E`; A sits in the primary slot only because the registry must carry one prompt. None submitted.
 - **Production state:** `LYRIC_DRAFT`. **No generation, no audio, no cover, no export, no metadata readback.**
 - **Publication status:** `UNKNOWN_NOT_VERIFIED` — there is nothing to publish yet, and channel copy is deliberately not written before a take exists.
