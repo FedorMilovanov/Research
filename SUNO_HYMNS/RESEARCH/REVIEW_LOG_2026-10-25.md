@@ -297,3 +297,39 @@ A third thing is now recorded as an **interpretation, not a settled reading**: t
 
 Verse 8 in both lyric files, the changelog, the measured syllable table (line 4: 8 → 9) and `DUTCH-005-RU-v0.4` in the registry were updated together. Validator re-run.
 
+# Eleventh pass — 2026-10-25 (full re-read of all ten stanzas; stress)
+
+The owner asked for the whole text to be re-read line by line, not for reassurance, and reported two words the model had stressed wrongly: **драго́е** sung as *дра́гое*, **тре́пета** sung as *трепе́та*. Both were written correctly and unmarked — which is the defect: an unmarked word is a word the model guesses.
+
+## 1. What was wrong in the wording
+
+Twelve defects in v0.4, all in lines I had already passed:
+
+- **I.4** — `maar` dropped: "there where one sees Jesus" instead of "**only** there". The stanza's whole argument rides on that word.
+- **I.7** — the line could be read as a claim about ownership ("this is not your life") rather than about direction. Rewritten.
+- **II.3** — **an image that was not in the text.** v0.4 read «как туман», a fog. The Dutch is `Lusten met 't gebruyck verdwijnen`: pleasures vanish *with the use of them*. Fog is mine, not Lodenstein's.
+- **IV.5** — the vocative was lost (`O! yd'le siel`): «О, праздная» addressed nobody in particular.
+- **IV.9** — `goedig schenckt` is "kindly bestows", not "grants mercy".
+- **V.1** — «Жизнь добродетелей святых» said "the life **of the saints'** virtues": a possessive the Dutch does not have, plus saints who are not in the line.
+- **VI.1** — singular relative with plural verb; `не знаете` had no agreeing subject.
+- **VI.9** — "to begin virtue" is not Russian and loses `het deugdsaam leven`.
+- **VII.1** — a comma split a single predicate.
+- **VIII.2–4** — `wat hier schoon schijnt` = what **seems** beautiful here; the old line asserted beauty and left `Die` without a Russian antecedent.
+- **X.5** — `mond` is the mouth, not speech.
+- **X.8** — `кто` cannot refer to dust; `hier is stoff` needs `что`.
+
+## 2. Stress
+
+Every polysyllabic word in the SUNO-ready file now carries a combining acute after its stressed vowel; monosyllables and words whose `ё` already carries the stress are left bare. Two-layer rule kept: the accents are in `DUTCH-005_LYRICS_SUNO.md` only, and the clean lyric stays unmarked for reading and for any published text.
+
+Checked mechanically after the edit: **90 lyric lines in both files, identical once the marks, the tags and the one echo are stripped**; **226 polysyllabic word tokens, 218 marked**, the eight unmarked being forms whose `ё` already sets the stress (влечёт, даёт, крадёт, моё, пойдёт, пропадёт); **no word carries two accents**. `Эта` → `Э́та` was caught by that check and fixed.
+
+The project rule was the cause and has been rewritten: `STYLE_AND_PRODUCTION_RULES.md` now requires full marking, and says why — partial marking leaves every other word to the model.
+
+## 3. Metre, re-counted
+
+The syllable table was re-measured by machine rather than by eye and corrected in four places (V.1 11 → 10, V.2 6 → 5, VIII.1 8 → 9, X's close 8 → 11). Ranges as measured: statement 5–10, call 6–9, tripled 9–11, close 6–11. **No regular metre is claimed**; two short lines and one long line are declared with their reasons.
+
+## 4. Registry
+
+`DUTCH-005-RU-v0.5`; `lyricRevisionNote`, `researchViews.note`, `DUTCH_HYMN_CATALOG.md`, `PROMPT_AND_VERSION_REGISTER.md`, `STATUS_LEDGER.md`, `LYRIC_REGISTER.md` and `DUTCH-005_PRODUCTION_PACKAGE.md` (v0.5, deviations D-09…D-12) updated together. Two of those files still said v0.2 and v0.3 — stale, now fixed. Validator: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.

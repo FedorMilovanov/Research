@@ -5,10 +5,10 @@
 **Research record:** [`../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`](../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md)
 **Package opened:** 2026-10-25
 **Artifacts (kept separate, per `SUNO/README.md` and `SUNO/LYRIC_REGISTER.md`):**
-[`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — clean lyric, `DUTCH-005-RU v0.2` ·
+[`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — clean lyric, `DUTCH-005-RU v0.5` ·
 [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md) — SUNO-ready text with labels and stress marks ·
 [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md) — style prompts only
-**Production state:** `LYRIC_DRAFT` — a Russian draft v0.1 and a style prompt exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
+**Production state:** `LYRIC_DRAFT` — a Russian draft v0.5 and five style directions exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
 
 > Forward-written package, like DUTCH-004. Every field states its own status. Nothing here is a recovered artifact, and no line of the Russian draft is presented as a translation.
 
@@ -91,7 +91,9 @@ Flat on purpose; this is what the Russian must be checked against, not a verse.
 
 ## 4. Russian draft
 
-See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.2`, with changelog, rhyme/metre statement and approval state. The SUNO-ready variant with section labels and stress marks is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
+See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.5`, with changelog, rhyme/metre statement and approval state. The SUNO-ready variant with section labels and stress marks is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
+
+**Why the words are the same in both files:** the two lyric files carry identical wording. The only differences are the structural tags, the **stress marks** and one inline echo. The stress layer is not decoration: the model had been singing *дра́гое* and *трепе́та*, and every polysyllabic word now carries a combining acute so it cannot. The marks are removed before any published text.
 
 ## 5. Deviation table — every departure, with its reason
 
@@ -105,6 +107,10 @@ See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.2`, with c
 | **D-06** | X.5–6 | `Cijter` → «цитра» | Literal; no claim is made about which instrument Lodenstein played or had in mind |
 | **D-07** | VI.5 | The Dutch `Wilt gy ten leven gaan? Wilt gy etc.` is rendered with an inline interrogative repeat, not a duplicated line | Keeps the print's repeat without inflating the stanza |
 | **D-08** | all | No rhyme scheme or metre is claimed as the Dutch one | The 1665 melody is unknown; inventing a claim would be worse than declaring the absence |
+| **D-09** | II.3 | `Lusten met 't gebruyck verdwijnen` → «Гаснет радость, чуть вкусил» — an experiential clause instead of the Dutch's abstract one | Russian has no equally short way to say "pleasures vanish with the use of them"; the sense is kept (they fail as soon as they are used), the syntax is not. An earlier draft read «как туман» — a fog image the Dutch does not contain, and it went out |
+| **D-10** | V.1 | `Leven in volmaackte deugden` → «Жизнь в совершенных добродетелях» | The Russian must keep `in`; an earlier draft «Жизнь добродетелей святых» invented a possessive and imported saints who are not in the line |
+| **D-11** | VIII.2–4 | The `Die`-clause is carried by «Та» and the two alternatives are kept as alternatives | `wat hier schoon schijnt` = what **seems** beautiful here; dropping it turned a claim about appearance into a claim about beauty, and the antecedent of `Die` is recorded as an interpretation, not a settled reading |
+| **D-12** | X.5–8 | `Hert, mond, en hand` → «сердце, уста, рука» | `mond` is the mouth, not speech; the three members of the Dutch list are kept in order, and `hier is stoff` → «всё, что прах и тлен» with `что`, not `кто` |
 
 ## 6. Musical brief and SUNO styles
 

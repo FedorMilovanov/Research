@@ -65,7 +65,8 @@ Each direction is recorded with: an ID, a one-line label, the prompt string, wha
 ## Pronunciation marks
 
 - Inspect the exact inflected form in its sentence, not just the dictionary lemma.
-- Add acute stress marks where SUNO has a plausible misreading or known model error. Do not unnecessarily accent every ordinary word in the final lyric.
+- **Mark every polysyllabic word in the SUNO-ready lyric — owner's decision, 2026-10-25.** A wrong stress is a defect, not a stylistic nicety: the model sang *дра́гое* and *трепе́та* although both were plainly written. Partial marking leaves the rest of the text to the model's guess, so the mark is applied to the whole text, one accent per word, and only monosyllables and words whose only `ё` already carries the stress are left bare. This supersedes the earlier "only where ambiguous" rule.
+- Two-layer discipline: the accents live in the SUNO-ready file and never in the clean literary lyric. If a marked word is later edited, the mark is re-checked — a stale accent across an edit is a new defect.
 - Preserve the actual grammatical form and meaning. A stress mark must not change a word into another word.
 - Keep a clean literary lyric separately from the SUNO-readable stressed version.
 - For biblical names and archaic/Church-Slavonic forms, conduct an explicit pronunciation check.
