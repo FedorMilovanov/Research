@@ -350,6 +350,88 @@ ordinary course to fetch it, whereby it seems to be peculiarly of Gods ordering 
   аппарате «пуританского» фолианта. Отдел фиксирует факт без сглаживания: библиотека Чарнока (по
   Johnson'у — сожжённая в Пожаре 1666) включала и такого рода сочинения.
 
+### 0E. «A DISCOURSE UPON THE Fifth of November» — проповедь о Пороховом заговоре (добавлено 2026-10-25)
+
+**Объект.** Узел `A32724.0001.001/1:4` (*A supplement…*, 1683), 11 чанков, **стр. 42–55**.
+Заглавие и текст дословно:
+
+> ### A DISCOURSE UPON THE Fifth of November.
+>
+> **Exod. 15.9, 10.** The Enemy said, I will pursue, I will overtake, I will divide the spoil; my
+> lust shall be satisfied upon them; I will draw my sword; my hand shall destroy them; Thou didst
+> blow with thy wind; the Sea covered them; they sank as Lead in the mighty waters.
+
+**Вводное предложение — прямое указание на повод:**
+
+> «**AN Anniversary Commemoration of a memorable Deliverance falling upon this Day**, hath caused a
+> diversion of my thoughts, to look back, not only upon a mercy never to be forgotten, but to look
+> forward to that Deliverance which is to come parallel to this in the Text. Israel was a Type of
+> the Church, Pharaoh a type of the Churches Enemies in all Ages of the world, both of the spiritual
+> Enemy, Satan, and of the temporal, his Instruments.»
+
+То есть проповедь произнесена **5 ноября** — в годовщину «памятного избавления», каковым в
+английском протестантском календаре было **открытие Порохового заговора 5 ноября 1605 года**.
+Текст — не о заговоре, а **Песнь Моисея у Чермного моря** (Исх. 15:9–10); Чарнок читает заговор
+через типологию: Египет = «spiritual Aegypt» = Рим.
+
+**Антипапские формулировки (дословно, стр. 42–43):**
+
+> «Onions, Garlick, Cats, Oxen, Flies and Crocodiles; those dung-hill creatures were their adored
+> Deities. And how much better is the Adoration of the swadling-clouts of our Saviour, or the straw
+> which was in the Manger, or the Tail of the Ass he rode upon, and so many splinters of the Cross;
+> which if put together would make a Colossus? **For this among the rest may the Church professing
+> such Worship be called spiritual Aegypt.**»
+
+> «the one from the Reign of Sin, the other from **the Empire of Antichrist**.»
+
+> «**Nilus with its seven streams was the glory of Aegypt, and Rome with its seven hills is the
+> glory of the Papacy, Rev. 17.9.**»
+
+**Сноска 1.3 — развёрнутое изложение «человека греха», 2 Фес. 2:4 (дословно):**
+
+> «Who opposeth and exalteth himself above all that is called God, in **additions to the word**,
+> **clipping the Institutions of God**, and adding new, and **canonizing new Mediators of
+> Intercession**, who **sits in the Temple of God in a profession of Christianity**, shewing
+> himself that he is God, assuming the name of God, and the title of God, in being called most
+> holy.»
+
+**Заключение дискурса (стр. 55):** «Our prayers may at last be turned into praises: And we may say
+with David, **Psa. 9.6. Oh thou enemy, destructions are come to a perpetual end.**»
+
+**Аппарат дискурса — семь сносок, дословно:**
+
+| Сноска | Ссылка |
+|---|---|
+| 1.1 | «〈 in non-Latin alphabet 〉〈 in non-Latin alphabet 〉 My soul shall be satisfied.» |
+| 1.2 | «**Aegyptii Diis faecundi. H••e∣ron.**» |
+| 1.3 | **2 Фес. 2:4** — развёрнутое изложение «человека греха» (см. выше) |
+| 1.4 | «**Trap on Exod. p. 9.**» |
+| 1.5 | «Rev. 12.15, 16. The earth helped the woman.» |
+| 1.6 | «They came out as a whirlwind to scatter me, Hab. 3.14.» |
+| 1.7 | «**Lightfoot Temple, cap. 3. p. 9.**» |
+
+**Три следствия.**
+
+1. **Чарнок был проповедником годовщины Порохового заговора.** Это не «влияние» и не «эрудиция»,
+   а **литургическая позиция**: он занимал кафедру в день, когда английский протестантизм
+   commemorates своё спасение от папства. Вместе с §0C (ноябрь 1678, «Папистский заговор») это
+   даёт **два датированных антипапских произведения**: одно — в разгар кризиса 1678 года, другое —
+   в годовщину 1605-го.
+2. **Типологический метод как политическое оружие.** Чарнок не полемизирует напрямую: он строит
+   параллель Египет → Рим и предоставляет ей работать. «spiritual Aegypt», «the Empire of
+   Antichrist», «Rome with its seven hills» — три уровня одной фигуры.
+3. **Дата проповеди не установлена.** `LOCATOR_HOLD`. Дискурс не содержит помарки с датой (в
+   отличие от дискурса о знании Божьем, сноска 1.108). **Гипотеза, требующая проверки:** 5 ноября
+   1678 года — через несколько дней после разгаровки «Папистского заговора» Оутса — было бы самым
+   наэлектризованным «пятым ноября» в живой памяти; но это умозаключение, а не свидетельство.
+   Допустимый диапазон — любое 5 ноября до 1680 года.
+
+**Примечание о полноте.** Это **первый из восьми дискурсов** *Supplement* 1683, прочитанный
+отделом содержательно (ранее был прочитан только аппарат дискурса о мыслях, узел `1:2`).
+Остальные семь — «The Churches Stability», «Delight in Prayer», «Mourning for other Mens Sins»,
+«The Comfort of Child-bearing Women», «The Sins of the Regenerate», «The Pardon of Sin» — ждут
+чтения. `LOCATOR_HOLD` по их содержанию.
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах
