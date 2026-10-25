@@ -34,8 +34,8 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **SUNO/ASSET_MANIFEST.md** — reported local filenames, exports, metadata and unresolved verification.
 - **SUNO/DUTCH-004_PRODUCTION_PACKAGE.md** — the next work: form decision, gloss, Russian draft, deviations, musical brief, authored prompt and a per-element status table.
 - **SUNO/DUTCH-005_PRODUCTION_PACKAGE.md** — *Heerlijckheyds Loff* (1676, pp. 155–158): ten-stanza gloss, Russian adaptation v0.1, eight declared deviations, and two style directions for SUNO (one primary, one option).
-- **SUNO/DUTCH-005_LYRICS.md** — clean Russian lyric, revision v0.2, with changelog and rhyme/metre statement.
-- **SUNO/DUTCH-005_LYRICS_SUNO.md** — the same lyric with section labels and the minimum stress marks, for the SUNO editor.
+- **SUNO/DUTCH-005_LYRICS.md** — clean Russian lyric, revision v0.3, with changelog and a **measured** syllable table.
+- **SUNO/DUTCH-005_LYRICS_SUNO.md** — the same lyric with `[Intro]`/`[Verse n]`/`[Outro]` tags and three performance accents, for the SUNO editor.
 - **SUNO/DUTCH-005_STYLE.md** — style only: the primary prompt, the exclude list and one documented alternative.
 - **RESEARCH/README.md** — source-evidence method for historical hymn research.
 - **RESEARCH/DUTCH_REFORMED_HYMNODY.md** — initial historical map of Dutch Reformed church singing.

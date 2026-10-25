@@ -1,14 +1,13 @@
 # DUTCH-005 — lyrics
 
 **Work:** DUTCH-005 · *Heerlijckheyds Loff* · Jodocus van Lodenstein (1620–1677)
-**Source:** *Uyt-spanningen* (Utrecht: Willem Clerck, 1676), printed pp. 155–158; dated 27 August 1665.
-**Revision:** `DUTCH-005-RU v0.2` — replaces v0.1 (which lived inside the production package and inside the now-deleted mixed sheet).
-**Status:** working draft. **Not approved.** The owner's poetic revision is the gate before `READY_FOR_REVIEW`.
+**Source:** *Uyt-spanningen*, Utrecht: Willem Clerck, 1676, printed pp. 155–158 — **collated against the ninth edition, 1727, same pages** (`SRC-L-UYT-1727-HEERLIJCKHEYD`).
+**Revision:** `DUTCH-005-RU v0.3` — replaces v0.2.
+**Status:** working draft, **not approved**. The owner's line-by-line revision is still the gate.
 
-This file holds the **lyric only** — no style prompt, no analysis, no commentary between stanzas.
-Style: [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md). SUNO-ready text with labels: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md). Fidelity layer (literal gloss) and deviations: [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3 and §5.
+This file holds the **clean lyric only**: no tags, no prompts, no gloss. The performable version is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md); style is [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md); fidelity layer and deviations are in [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3 and §5.
 
-An **adaptation**, not a translation: it follows the ten stanzas in order, keeps the threefold call, keeps the tripled word — `жизнь` (3–6) → `любить` (7–9) → `хвалить` (10) — and adds no line, no refrain and no repetition of its own.
+An **adaptation**, not a translation. Ten stanzas in the source order; the threefold call and the tripled word are the source's own; **no line, no refrain, no repetition has been added**.
 
 ---
 
@@ -17,11 +16,11 @@ An **adaptation**, not a translation: it follows the ten stanzas in order, keeps
 Ввысь, душа моя, ввысь!
 Здесь, внизу, жизни нет:
 Жизнь, любовь и хвала —
-Только там, где Иисус, свет.
-Всё, что видишь здесь,
-Всё, что слышишь здесь, —
-Не твоя это жизнь, любовь и хвала;
-Всё, чего ты хочешь здесь,
+Там, где Иисуса зрят.
+Всё, что видишь ты здесь,
+Всё, что слышишь ты здесь, —
+Не твоя это жизнь, любовь, хвала;
+Всё, чего хочешь здесь,
 Сердца твоего не стоит.
 
 ## 2
@@ -29,133 +28,163 @@ An **adaptation**, not a translation: it follows the ten stanzas in order, keeps
 Блеск и красота — обман,
 Всё драгое — суета,
 Гаснет радость, как туман,
-Злато с серебром — тщета.
+Злато, серебро — тщета.
 Там драгоценная кровь,
 Там драгоценная кровь
-Стоит всей твоей жизни, любви и хвалы:
+Стоит всей жизни, любви и хвалы:
 Там драгоценная кровь
-Сердце ставит выше всего.
+Сердцу цену даёт выше всех.
 
 ## 3
 
 Жизнь без конца, во славе,
-После земных трудов, —
-Душа, она одна желанна
+После всех земных трудов, —
+Лишь она, душа, желанна
 И влечёт незримо.
 Сомкни плотские очи,
 Сомкни плотские очи,
-Славная жизнь — жизнь, жизнь, жизнь;
+Эта славная жизнь — жизнь, жизнь, жизнь;
 Сомкни плотские очи:
-Эта жизнь — в выси.
+Эта жизнь — в вышине.
 
 ## 4
 
-Не умирая, жить пред Богом,
+Жить пред Богом — не умирать,
 Без труда, без боли,
 Без болезни, без трепета,
-Без мучений и истомы.
-О праздная душа, помысли,
-О праздная душа, помысли,
-Без смерти — жизнь, жизнь, жизнь;
-О праздная душа, помысли,
-Что тебе Небо милостиво дарует.
+Без мученья, без истомы.
+О, праздная, помысли,
+О, праздная, помысли,
+Без смерти — вечная жизнь, жизнь, жизнь;
+О, праздная, помысли,
+Что Небо милость дарит тебе.
 
 ## 5
 
-Жизнь в совершенных добродетелях,
+Жизнь добродетелей святых —
 К славе Господней,
-Радостная в небесных радостях,
+В небесных радостях светла,
 Святая в святости Его.
-С таким сияньем соединённая,
-С таким сияньем соединённая,
+С сияньем соединена,
+С сияньем соединена,
 Без греха — жизнь, жизнь, жизнь;
-С таким сияньем соединённая:
+С сияньем соединена:
 Зри, что Небо тебе дарует.
 
 ## 6
 
-Безумные, кто скверные
-Грехи творит и в них живёт,
-Разве не знаете, что смерть и
-Ад ещё в вашем лоне?
-Хотите ли вы к жизни?
-Хотите ли вы к жизни?
+Безумцы, кто в грехе живёт,
+Творя его, — не знаете:
+Что смерть и ад в груди у вас
+Доселе не расстались?
+Хотите жизни вы?
+Хотите жизни вы?
 Жизнь добродетелей — жизнь, жизнь, жизнь;
-Хотите ли вы к жизни?
-Начните здесь жизнь добродетели.
+Хотите жизни вы?
+Начните здесь добродетель.
 
 ## 7
 
-Желанный и достойный любви —
-Мой Иисус, в Ком любовь,
+Желанный, и любви достойный —
+Мой Иисус, в Ком лишь любовь,
 Всегда готовая на иное,
-Находит усладу лишь в Нём.
+Одна находит в Нём усладу!
 Душа моя, ввысь, ввысь,
 Душа моя, ввысь, ввысь,
 Где Иисуса — любить, любить, любить;
-Душа моя, ввысь туда,
+Душа моя, ввысь, туда,
 Где я могу узреть спасенье.
 
 ## 8
 
 Прекраснейшая Красота!
-Причина всего, что здесь прекрасно,
-Что с годами и с обычаем
-Радует всё меньше иль уходит.
-Тебе, Красота, поклоняюсь я,
+Причина всей красы земной,
+Что с годами и привычкой
+Меньше радует — и уйдёт.
 Тебе, Красота, поклоняюсь,
-Если что любить — любить, любить, любить;
+Тебе, Красота, поклоняюсь,
+Коль что любить — любить, любить, любить;
 Тебе, Красота, поклоняюсь:
-Туда моё сердце прежде пойдёт.
+Туда моё сердце пойдёт.
 
 ## 9
 
 Всякая отрада, какую
-Здесь можно помыслить,
-Любовь людская, людские нравы —
-Лишь тень того.
-Это крадёт моё сердце и всё,
-Это крадёт моё сердце и всё,
-Если хочу любить — любить, любить, любить;
-Это крадёт моё сердце и всё:
-Это выше всего я буду любить.
+Здесь можно помыслить, —
+Любовь людей и их обычай —
+Всё это только тень.
+Всё это сердце мне крадёт,
+Всё это сердце мне крадёт,
+Коль что любить — любить, любить, любить;
+Всё это сердце мне крадёт:
+Всё это выше всех люблю.
 
 ## 10
 
-Ах! если бы все языки людские,
+О, если б все языки земли,
 Вся бодрость ангелов
 Соединились и воспели
 Иисусову хвалу и славу!
-Воспряньте: сердце, уста, рука,
+Воспряньте: сердце, речь, рука,
 Воспрянь, моя цитра; ибо
 Иисуса — хвалить, хвалить, хвалить;
-Воспряньте все, кто здесь прах;
+Воспряньте, все, кто прах и тлен;
 Пой без конца Иисусову хвалу.
 
 ---
 
-## Changelog — v0.1 → v0.2
+## Changelog — v0.2 → v0.3
 
-| Stanza | Change | Reason |
-|---|---|---|
-| 1 | lines 3–4 recast: *Жизнь, любовь и хвала — / Только там, где Иисус, свет* | v0.1 broke the sentence across a full stop and read as a list; the Dutch is one clause |
-| 2 | *Гаснет радость, как туман* (was *с её употребленьем*); *Злато с серебром — тщета* | rhyme and singability; the sense of "pleasures vanish with their use" is conserved by *гаснет* |
-| 2 | *Сердце ставит выше всего* (was *Ценит сердце выше всего*) | the Dutch subject is the blood, not the heart; the verb now has the right subject |
-| 3 | *Душа, она одна желанна / И влечёт незримо* (was *Только она, душа, желанна / И влечёт незримо*) | restores the vocative *mijn siel* and the print's *onsigtbaerlijck* = "invisibly" |
-| 6 | *кто скверные / Грехи творит и в них живёт* (was *творящие скверные / Грехи и живущие в них*) | the relative clause is now Russian, not a calque of the Dutch participle |
-| 6 | the call repeated twice (was an incomplete *Хотите ли?*) | the print repeats the whole line; a half-line was a silent edit |
-| 8 | *Причина всего, что здесь прекрасно* (was *…прекрасным мнится*); *Радует всё меньше иль уходит* | shorter line, and *уходит* is closer to *verdwijnt* than *исчезает* in song |
-| 9 | *Всякая отрада, какую / Здесь можно помыслить* (was *Все обаяния, какие…*) | "обаяния" is a false friend for *Bevallijckheden*; *отрада* is the right register |
-| 10 | *Воспряньте: сердце, уста, рука* / *Воспряньте все, кто здесь прах* | the Dutch *Waackt op* is plural in the last line and singular in the canticle address; v0.1 flattened both |
+Every change answers a specific defect. The owner's seven flagged lines are marked ★.
 
-## Rhyme and metre — declared, not faked
+| Stanza | v0.2 | v0.3 | Reason |
+|---|---|---|---|
+| 1 ★ | *Только там, где Иисус, свет* | *Там, где Иисуса зрят* | the added "свет" is not in the Dutch (`daermen Iesum siet` = where one sees Jesus), and the syntax was broken |
+| 1 | *Всё, что видишь здесь* | *Всё, что видишь ты здесь* | gives the line six syllables like its twin; the pronoun is spoken, not implied |
+| 2 ★ | *Сердце ставит выше всего* | *Сердцу цену даёт выше всех* | the Dutch subject is **the blood** (`'t costelijcke bloed … 't Hert boven alles gelden doet`); v0.2 left the predicate dangling |
+| 2 | *Злато с серебром — тщета* | *Злато, серебро — тщета* | one syllable shorter, and the Dutch is a bare list of two nouns |
+| 3 ★ | *Душа, она одна желанна* | *Лишь она, душа, желанна* | "душа" is now set off as a vocative, so "желанна" cannot be read as predicated of the soul |
+| 3 | *Славная жизнь — жизнь…* | *Эта славная жизнь — жизнь, жизнь, жизнь* | restores the length of the tripled line (9 syllables), which was the shortest line in the stanza |
+| 4 | *Не умирая, жить пред Богом* | *Жить пред Богом — не умирать* | 9 → 8 syllables, and the negation lands on the verb where the Dutch has it |
+| 5 | *Жизнь в совершенных добродетелях* | *Жизнь добродетелей святых* | 12 → 8 syllables; "совершенных" is not singable in that position |
+| 5 | *С таким сияньем соединённая* | *С сияньем соединена* | 13 → 9 syllables; the Dutch line is 10 |
+| 6 ★ | *Безумные, кто скверные / Грехи творит и в них живёт* | *Безумцы, кто в грехе живёт, / Творя его, — не знаете* | the sentence no longer breaks across lines; the relative clause now closes with a colon leading into what they do not know |
+| 6 | *Хотите ли вы к жизни?* | *Хотите жизни вы?* | 8 → 6 syllables, matching the Dutch call line (`Wilt gy ten leven gaan?`) |
+| 6 | *Ад ещё в вашем лоне* | *смерть и ад в груди у вас / Доселе не расстались?* | "в лоне" is anatomical and comic in Russian; `cleeft` means "still cleaves, has not parted" |
+| 7 ★ | *Всегда готовая на иное / Находит усладу лишь в Нём* | *Всегда готовая на иное, / Одна находит в Нём усладу!* | the subject is **love** (`de min … vindt alleen genoegen in`), not the soul; "одна" makes it unambiguous |
+| 8 ★ | *Если что любить — любить, любить, любить* | *Коль что любить — любить, любить, любить* | "если что любить" is not Russian; "коль" is the conditional the Dutch has (`Wil ick oyt yets lieven`) |
+| 8 | *Причина всего, что здесь прекрасно* | *Причина всей красы земной* | 10 → 8 syllables |
+| 8 | *Радует всё меньше иль уходит* | *Меньше радует — и уйдёт* | 10 → 8 syllables, and `verdwijnt` is future-perfective in sense: "will be gone" |
+| 9 ★ | *Если хочу любить — любить…* | *Коль что любить — любить…* | same fix as stanza 8, kept identical because the Dutch repeats the formula |
+| 9 | *Все обаяния…* / *Лишь тень того* | *Всякая отрада…* / *Всё это только тень* | "обаяния" was already gone in v0.2; the line is now short enough to sing |
+| 10 ★ | *Воспряньте все, кто здесь прах* | *Воспряньте, все, кто прах и тлен* | gains "все" and a second predicate, so the clause parses on one hearing; `hier is stoff` = "all here that is dust" |
 
-The Dutch rhymes its **thrice-repeated call line with the closing line** in every stanza that has the device (I *aard/waard*, III *oog/hoog*, IV *bedenckt/schenckt*, V *vereent/verleent*, VI *gaan/aan*, VII *dan/can*, VIII *aan/gaan*, IX *al/sal*). The Russian reproduces the **device** — same call three times, tripled word between the second and the third, closing line last — but the rhyme pair only where it could be had without changing sense: **stanzas 1, 2 (partly) and 10**. Elsewhere the closing line is left unrhymed rather than filled with a word the Dutch does not have.
+## Metre — measured, not asserted
 
-Body quatrains rhyme where it came naturally (2, and 1 in *нет/свет*). Metre is regular to 7–8 syllables with a longer tripled line; the syllable count is stable enough to sing, not a claim to reproduce the 1665 tune, which is unknown.
+v0.2 claimed "7–8 syllables". **That claim was false**: it had lines of 11, 12 and 13 syllables. The counts below are actual, taken line by line from the text above.
+
+| St. | lines 1–4 | call (5/6/8) | tripled (7) | close (9) |
+|---|---|---|---|---|
+| 1 | 6 · 6 · 6 · 7 | 6 | 10 | 8 |
+| 2 | 7 · 7 · 7 · 7 | 7 | 10 | 8 |
+| 3 | 7 · 7 · 8 · 6 | 7 | 9 | 7 |
+| 4 | 8 · 6 · 8 · 8 | 7 | 9 | 8 |
+| 5 | 8 · 6 · 8 · 9 | 9 | 7 | 9 |
+| 6 | 8 · 8 · 8 · 8 | 6 | 10 | 8 |
+| 7 | 9 · 8 · 9 · 9 | 6 | 11 | 9 |
+| 8 | 8 · 8 · 9 · 8 | 9 | 9 | 8 |
+| 9 | 9 · 6 · 9 · 7 | 8 | 9 | 8 |
+| 10 | 9 · 7 · 9 · 10 | 8 | 11 | 8 |
+
+**What that means, honestly.** The statement lines sit at 6–10 syllables (mostly 7–8); the call lines at 6–9; the tripled line at 9–11; the closing line at 7–9. This is **not** a rigid metrical scheme, and it is not presented as one. It is enough for **syllabic declamation over a steady beat**, which is the delivery the style prompt asks for, and it is not enough for a melody with a fixed note-per-syllable pattern. Two things follow:
+
+- If the owner wants a genuinely sung, metrically strict setting, a further revision has to fix one line length per position (e.g. 8 / 8 / 8 / 8 / 7 / 9 / 7) and accept the loss of some words. That is a separate, larger job and is **not** claimed here.
+- The Dutch itself ranges from 6 to 10 syllables per line, so perfect regularity was never the source's property either.
+
+**Rhyme.** The Dutch rhymes the thrice-repeated call line with the closing line in all eight stanzas that use the device (I `aard/waard`, III `oog/hoog`, IV `bedenckt/schenckt`, V `vereent/verleent`, VI `gaan/aan`, VII `dan/can`, VIII `aan/gaan`, IX `al/sal`). Russian reproduces the **device** everywhere and the **rhyme pair** only in stanza 2 (обман/туман, internal) and stanza 10 — not in the call/close pairs. Elsewhere the closing line is left unrhymed rather than filled with a word the Dutch does not have.
 
 ## What this file is not
 
-- Not a translation, and not to be presented as one.
-- Not approved. No stanza has been signed off by the owner.
-- Not a record of any recording: nothing has been generated from it.
+- Not a translation.
+- Not approved: no stanza is signed off.
+- Not a record of a recording: nothing has been generated.

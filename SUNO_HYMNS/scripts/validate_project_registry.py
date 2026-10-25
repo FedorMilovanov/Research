@@ -169,15 +169,33 @@ def check_prompt_verbatim(tracks: list[dict[str, Any]], errors: list[str]) -> No
                     f"version {version.get('versionId')}: promptText present but no productionPackage to check it against"
                 )
                 continue
-            path = PROJECT / package
-            try:
-                content = path.read_text(encoding="utf-8")
-            except OSError as exc:
-                errors.append(f"version {version.get('versionId')}: cannot read {package}: {exc}")
-                continue
-            if prompt_text not in content:
+            # The style prompt may live in a dedicated style document rather than in the
+            # production package: SUNO/README.md requires the lyric, the SUNO-ready text
+            # and the style to be kept apart. Any document listed in promptDocuments is
+            # accepted, and the prompt must appear verbatim in at least one of them.
+            documents = [package] + list(version.get("promptDocuments") or [])
+            found = False
+            read_any = False
+            for document in documents:
+                try:
+                    content = (PROJECT / document).read_text(encoding="utf-8")
+                except OSError as exc:
+                    if document == package:
+                        errors.append(
+                            f"version {version.get('versionId')}: cannot read {document}: {exc}"
+                        )
+                    else:
+                        errors.append(
+                            f"version {version.get('versionId')}: cannot read prompt document {document}: {exc}"
+                        )
+                    continue
+                read_any = True
+                if prompt_text in content:
+                    found = True
+                    break
+            if read_any and not found:
                 errors.append(
-                    f"version {version.get('versionId')}: promptText is not verbatim in {package}"
+                    f"version {version.get('versionId')}: promptText is not verbatim in any of {documents}"
                 )
 
 

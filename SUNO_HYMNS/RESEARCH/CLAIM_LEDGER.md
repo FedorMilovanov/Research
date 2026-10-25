@@ -611,3 +611,29 @@ Review state: **SUPPORTED_WITH_SCOPE_LIMITS**. HOLDs: RIGHTS_HOLD.
 ### Revised: CLM-HEERLIJCKHEYD-IDENTITY and CLM-HEERLIJCKHEYD-RECEPTION
 
 Both were `projectLevel` facts while the text had no work. DUTCH-005 now links them, so the `projectLevel` flag was removed and they are carried by a work record. Their claims and limits are unchanged.
+
+## Seventh-pass additions — 2026-10-25 (two-printing collation of DUTCH-005)
+
+## CLM-DUTCH-005-VARIANTS — DUTCH-005: variants between the 1676 and 1727 printings
+
+**Claim:** The two printings differ in four substantive places: 1676 I.3 reads 'leven, lieven, loven' where 1727 reads 'leven, leven, loven'; 1676 VII.8 reads 'Mijn siel na boven dat' where 1727 reads 'dan', matching line 5; 1727 adds 'al' in VIII.2 ('van al wat hier schoon schijnt'); and 1727 omits the abbreviated repeat line in stanza VIII, printing eight lines instead of nine. The rest is spelling only.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-1676-HEERLIJCKHEYD-155-158, SRC-L-UYT-1727-HEERLIJCKHEYD
+
+**Notes:** Read directly from both transcriptions; no page image was inspected for either. The dating form differs cosmetically: '27. in Ougstmaand 1665' (1676) and '27 in Oogstmaand 1665' (1727). The tripled device is unaffected: both print leven/leven/leven, lieven/lieven/lieven and loven/loven/loven in stanzas III-X. Because two impressions disagree, neither can be treated as the copy text without a page-image check.
+
+**Evidence gap:** No page image of either printing has been inspected.
+
+**Next check:** Inspect the 1676 page images of pp. 155-158 (and the 1727 printing where they differ) and record the readings of I.3, VII.8, VIII.2 and the stanza-VIII line count.
+
+**HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD
+
+### Revised: CLM-DUTCH-005-TEXT
+
+**Revised claim:** Heerlijckheyds Loff is a ten-stanza poem printed in Uyt-spanningen on pp. 155-158 in both the 1676 first edition and the 1727 ninth edition, dated 27 August 1665, with the tune line 'Voyse: Un jour &c.'; each stanza is four statement lines, a call line and its repeat, the tripled word with its object, the call again, and a closing line, and the tripled word runs leven (III-VI) -> lieven (VII-IX) -> loven (X).
+
+**Notes:** Collated across two printings in the seventh pass: title, page range, tune line, stanza count, date and the tripled device are stable. The page images are still unviewed, so typography is unverified. The print abbreviates repeated call lines as 'etc.'; these are repeat instructions, not lacunae. Stanza I is printed in full and is the metrical model for the rest. The page carries an illustration (ill0155) that has not been viewed; no claim is made about it. Line I.7 ('Is uw costlijck leven, lieven, loven') has no expressed negation; the elliptical reading is adopted in the production package, with the 'costly' pun recorded as a secondary sense. Neither printing is a page image: disagreements between them (see CLM-DUTCH-005-VARIANTS) are the reason a page-image check is still required before any wording is called definitive.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS

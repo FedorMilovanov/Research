@@ -671,3 +671,19 @@ The nine entries below were added after reading the 1676 printing directly, the 
 - HOLDs: RIGHTS_HOLD
 - Supports: That 'stikken' in the sense of smothering is historically one word with 'stikken' (to stitch), an intensivum of 'steken', glossed as 'blijven steken, niet verder kunnen'; That the sense required by Lodenstein's rhyme with 'verquickt' is the 'stuck fast, choked' sense rather than simple adhesion
 - Limits / caveats: An etymological dictionary answers a historical question, not a synchronic one: it cannot tell us what the 1676 reader understood by the line. De Vries and Van Veen/Van der Sijs are secondary authorities; the WNT remains the primary tool.
+
+## Seventh-pass addition — 2026-10-25
+
+## SRC-L-UYT-1727-HEERLIJCKHEYD — Heerlyckheyds Loff — ninth edition (1727), printed pp. 155-158
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_03_01/lode002uyt_03_01_0062.php
+- Printed pages: 155-158
+- Source role/type: Independent later printing of the same poem in the same collection, given as a collation witness
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: That the poem's title, page range, tune line ('Voyse: Un jour &c.'), stanza count and date (27 in Oogstmaand 1665) are stable across two printings; That the tripled device leven (III-VI) -> lieven (VII-IX) -> loven (X) is not a feature of one impression; That the 1676 reading 'Mijn siel na boven dat' (VII.8) is a slip: 1727 reads 'dan', matching line 5; That 1727's stanza I.3 reads 'leven, leven, loven' where 1676 reads 'leven, lieven, loven', i.e. the triad is corrupted in one of the two impressions; That 1727 omits the abbreviated repeat line in stanza VIII, giving that stanza eight printed lines instead of nine
+- Limits / caveats: A transcription, not a page image; typography and the illustration are still unverified. Disagreement between the two printings is itself evidence that the text needs a page-image collation before any wording is treated as definitive.

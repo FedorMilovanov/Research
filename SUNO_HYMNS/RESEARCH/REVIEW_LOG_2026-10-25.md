@@ -224,3 +224,37 @@ Nine changes, each with a reason in the lyric file's changelog: the stanza-1 cla
 
 `DUTCH-005-RU-v0.2` with three `lyricFiles` paths; the claims ledger states why the artifacts are separate and quotes the rule. Validator passes: **49 sources, 3 authors, 5 tracks, 38 claims, 9 songbooks**.
 
+# Eighth pass — 2026-10-25 (review response: tags, metre, diction, two-printing collation)
+
+The owner reviewed the delivery and found six defects. Five were real and are fixed; one is a process failure that this pass records rather than argues about.
+
+## 1. The delivered block was not Suno-ready
+
+The lyric was shown with stanza numbers `1`–`10` and no structural tags. Numbers are editorial, not performance structure, and a model may read them as text. `SUNO/DUTCH-005_LYRICS_SUNO.md` now carries `[Intro]`, `[Verse 1]`…`[Verse 10]`, `[Outro]`, with three deliberate accents: verse 7 (lead alone, organ thins — the poem's turn), verse 8 (choir rejoins, building), verse 10 (full choir, one inline echo). **No `[Chorus]`** — the source has no refrain, and its repetitions are already inside the stanzas.
+
+## 2. The metre claim was false
+
+v0.2 asserted "7–8 syllables" while containing lines of 11, 12 and 13. The claim is withdrawn. Actual counts are now tabulated per stanza: statement 6–10, call 6–9, tripled 9–11, close 7–9. The honest conclusion is stated: that is sufficient for **syllabic declamation**, not for a fixed melodic setting, and a strictly metrical version would be a separate, larger revision.
+
+## 3. Seven lines rewired
+
+Stanzas 1, 2, 3, 6, 7, 8, 9 and 10 changed, each with a reason in the lyric's changelog: the invented "свет" removed; the blood restored as the subject in stanza 2; the vocative unambiguously marked in stanza 3; the sentence no longer broken across lines in stanza 6 and `в лоне` (comic in Russian) replaced; the subject of «готовая / находит» made explicit in stanza 7; `если что любить` replaced by `коль что любить` in 8 and 9; `кто здесь прах` given a parsable predicate in 10.
+
+## 4. The style asked for the wrong voice
+
+`one strong low male lead` became `one clear tenor-baritone lead`, with `no melisma, no stretched vowels, strictly syllabic, one syllable per note`, `short two-bar organ introduction`, `all ten verses sung in order with no cuts`, and prohibitions on a husky or excessively low lead and on long instrumental interludes. Tempo 116 → 118.
+
+## 5. The source text is now collated across two printings
+
+`Heerlyckheyds Loff` was fetched from the **1727 ninth edition**, which prints it at **the same pages 155–158** with the same title, tune line, stanza count and date. Four variants were found and recorded (`CLM-DUTCH-005-VARIANTS`), including the resolution of the `dat`/`dan` question at VII.8 in favour of `dan`.
+
+## 6. The process failure
+
+The `DUTCH-005` ID was assigned in the same pass that resolved the identity, on the strength of a transcription. That is what the record now states in `identityStatus: CONFIRMED_BY_TWO_PRINTINGS_TYPOGRAPHY_UNVERIFIED`, with the note that the ID was assigned before any page image was checked. **A green validator proves none of this**; it proves only that the repository's cross-references are consistent.
+
+## 7. Validator
+
+Extended so that a prompt may live in a dedicated style document: `version.promptDocuments` is now accepted, and the prompt must appear verbatim in at least one listed document. This follows the artifact split the lane already required; it does not weaken the drift check.
+
+`validate_project_registry.py` passes: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
+

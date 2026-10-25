@@ -108,36 +108,15 @@ See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.2`, with c
 
 ## 6. Musical brief and SUNO prompts
 
-### 6.1 The decision, and its scope
+**Style lives in [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md)**, verbatim, together with the reasons for each change from the first version. Summary:
 
-**Per-work decision for DUTCH-005:** epic sacred organ, a Georgian-flavoured male monastic choir behind one strong low male lead, syllabic declamation, ♩≈**116** in 4/4, short organ introduction, no long instrumental interludes, no stretched vowels, no guitars.
+- **Primary — `PROMPT-DUTCH-005-V1`:** epic sacred organ, 4/4, **118 bpm**, D minor, Georgian-flavoured male monastic choir in parallel fifths, **one clear tenor-baritone lead**, strictly syllabic declamation, one syllable per note, no melisma, no stretched vowels, **short two-bar organ intro**, **all ten verses in order with no cuts**, wide reverb but a forward lead, no percussion, no guitars, no synthesizers.
+- **Excluded:** drums, synth pads, cinematic swells, belting, **breathy or whispered lead**, **husky or excessively low bass lead**, heavy vibrato, **melisma, vocal runs**, auto-tune, spoken word, **long instrumental interludes**.
+- **Documented alternative (`DOCUMENTED_OPTION`, not a version):** organ and low strings, 3/4, 112 bpm, F minor, baritone cantor for the call lines, low male quartet entering only at verse 4, syllabic, no percussion, no guitars.
 
-Three things about this brief must be stated plainly:
+**Corrections against the first version, stated plainly:** "low male lead" was wrong for a dense Russian text and became a tenor-baritone; "declaiming syllabically" was too weak and became one syllable per note with melisma and stretched vowels forbidden outright; "all ten verses sung in order with no cuts" was missing and is now explicit; the introduction was shortened to two bars.
 
-1. It is **this work's** decision. The project's standing rules leave style per work, and the no-guitar exclusion here is local — it is **not** a project rule.
-2. It is close to the direction described for DUTCH-002 in earlier sessions. That is deliberate: the two poems share the same author, the same "vanity of the world → glory of heaven" argument and the same public. But it is a **newly written brief for this text**, not a reused prompt, and it will be generated (if at all) as its own item.
-3. The tempo is set high enough to avoid the known failure of earlier generations — excessively slow and whispered delivery. With ten stanzas of nine lines, a slow reading would run well past seven minutes and would flatten the `leven → lieven → loven` progression.
-
-### 6.2 Style prompt — `PROMPT-DUTCH-005-V1`
-
-```
-epic sacred organ hymn, 4/4, 116 bpm, D minor, deep pipe organ with 16-foot pedal and full plenum, Georgian-flavoured male monastic choir singing sustained parallel fifths, one strong low male lead voice declaiming syllabically in front of the choir, wide stone-church reverb, unhurried but never dragging, restrained crescendo across ten stanzas, clear diction and natural stress, no percussion, no guitars, no synthesizers
-```
-
-**Fields:**
-
-- **Exclude:** drums, percussion, electric bass, synth pads, EDM, cinematic string swells, belting, breathy or whispered lead, excessive vibrato, auto-tune artefacts, spoken word.
-- **Sections (minimal tags, per the project's tag rule):** `[Intro — organ pedal, 2 bars]` / `[Stanza 1]` … `[Stanza 10]` / `[Outro — choir alone on the last line]`.
-- **Echo:** exactly one, inline, in stanza X: `хвалить, хвалить, хвалить (хвалить)`. No other echo anywhere.
-- **Tempo discipline:** if the generator produces a slow, whispered reading — the known failure mode — the fix is tempo, syllabic delivery and a shorter intro, **not** cutting stanzas.
-
-### 6.3 A documented alternative style, for comparison only — not a second version
-
-```
-solemn organ and low strings hymn, 3/4, 104 bpm, F minor, great organ foundation stop and pedal drones, cello and contrabass doubling the bass line, a quartet of low male voices entering only from stanza 4, one solo bass cantor for the call lines, plain declamation, no percussion, no guitars
-```
-
-Status of the alternative: `DOCUMENTED_OPTION`, not approved, not a version. Choosing between §6.2 and §6.3 is an owner decision; the primary prompt is the one registered in the machine-readable catalog.
+**If Suno truncates:** ask for all ten verses, raise the tempo, shorten the intro; if it still truncates, split the release at the poem's seam (verses 1–5 / 6–10) rather than deleting text.
 
 ## 7. Status table — every element, honestly labelled
 
@@ -147,10 +126,11 @@ Status of the alternative: `DOCUMENTED_OPTION`, not approved, not a version. Cho
 | Melody `Voyse: Un jour &c.` | `UNKNOWN_NOT_VERIFIED` — the 2005 apparatus says the origin is unknown and that it is not text 27's *Un jour*; no notation held |
 | Illustration on printed p. 155 (`ill0155`) | `NOT_CAPTURED` — not viewed; no claim about it |
 | Literal gloss (§3) | `WORKING_GLOSS` — authored here, two uncertainties declared |
-| Russian draft | `WORKING_DRAFT` v0.2 in `DUTCH-005_LYRICS.md` — **not approved**; owner poetic revision required |
+| Metre | **measured**: statement lines 6–10, call 6–9, tripled 9–11, close 7–9 syllables. Not a rigid scheme; sufficient for syllabic declamation, not for a fixed melody |
+| Russian draft | `WORKING_DRAFT` v0.3 in `DUTCH-005_LYRICS.md` — **not approved**; owner revision required |
 | Deviations (§5) | `DECLARED` — eight, each with a reason |
 | Musical brief (§6.1) | `AUTHORED_FOR_THIS_WORK` |
-| Style prompt | `AUTHORED_NOT_YET_SUBMITTED` — `PROMPT-DUTCH-005-V1` in `DUTCH-005_STYLE.md` §1 |
+| Style prompt | `AUTHORED_NOT_YET_SUBMITTED` — `PROMPT-DUTCH-005-V1` in `DUTCH-005_STYLE.md` §1 (118 bpm, tenor-baritone, strictly syllabic) |
 | Alternative style | `DOCUMENTED_OPTION` — `DUTCH-005_STYLE.md` §2 |
 | SUNO generation | `NONE` |
 | Audio, export, cover, video | `NONE` |

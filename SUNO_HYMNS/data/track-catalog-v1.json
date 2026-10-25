@@ -393,7 +393,7 @@
         "stanzas": 10,
         "printedLinesPerStanza": 9,
         "sungLinesPerStanza": 9,
-        "note": "Four statement lines, a call line and its abbreviated repeat (printed as 'etc.'), the tripled word with its object, the call again, and a closing line. Stanza I is printed in full; III-X abbreviate the repeat. The tripled word moves leven -> lieven -> loven.",
+        "note": "Four statement lines, a call line and its repeat, the tripled word with its object, the call again, a closing line. The tripled word moves leven (III–VI) -> lieven (VII–IX) -> loven (X). Russian line lengths: statement 6–10, call 6–9, tripled 9–11, close 7–9 syllables.",
         "source": "the 1676 print, read in full in the fifth pass"
       },
       "productionState": "LYRIC_DRAFT",
@@ -401,27 +401,28 @@
       "promptCapture": "CAPTURED_IN_REPOSITORY",
       "versions": [
         {
-          "versionId": "DUTCH-005-RU-v0.2",
+          "versionId": "DUTCH-005-RU-v0.3",
           "versionKind": "LYRIC_DRAFT_ONLY",
           "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
           "promptCapture": "CAPTURED_IN_REPOSITORY",
           "promptState": "AUTHORED_NOT_YET_SUBMITTED",
           "promptId": "PROMPT-DUTCH-005-V1",
-          "promptText": "epic sacred organ hymn, 4/4, 116 bpm, D minor, deep pipe organ with 16-foot pedal and full plenum, Georgian-flavoured male monastic choir singing sustained parallel fifths, one strong low male lead voice declaiming syllabically in front of the choir, wide stone-church reverb, unhurried but never dragging, restrained crescendo across ten stanzas, clear diction and natural stress, no percussion, no guitars, no synthesizers",
+          "promptText": "epic sacred organ hymn, 4/4, 118 bpm, D minor, deep pipe organ with 16-foot pedal and full plenum, Georgian-flavoured male monastic choir in sustained parallel fifths, one clear tenor-baritone lead voice singing in front of the choir, strictly syllabic declamation, one syllable per note, no melisma, no stretched vowels, short two-bar organ introduction, all ten verses sung in order with no cuts, wide stone-church reverb but a forward, intelligible lead, restrained crescendo across the ten verses, no percussion, no guitars, no synthesizers",
           "promptFields": {
-            "exclude": "drums, percussion, electric bass, synth pads, EDM, cinematic string swells, belting, breathy or whispered lead, excessive vibrato, auto-tune artefacts, spoken word",
-            "sections": "[Intro — organ pedal, 2 bars] / [Stanza 1] … [Stanza 10] / [Outro — choir alone on the last line]",
+            "exclude": "drums, percussion, electric bass, synth pads, EDM, cinematic string swells, belting, breathy or whispered lead, husky voice, excessively low bass lead, heavy vibrato, melisma, vocal runs, auto-tune artefacts, spoken word, long instrumental interludes",
+            "sections": "[Intro] / [Verse 1] … [Verse 10] / [Outro]; no chorus",
             "echo": "exactly one, inline, in stanza X: хвалить, хвалить, хвалить (хвалить)",
-            "tempoDiscipline": "If the output comes out slow and whispered, fix tempo, syllabic delivery and the intro length; do not cut stanzas."
+            "tempoDiscipline": "If the output comes out slow and whispered, fix tempo, syllabic delivery and the intro length; do not cut stanzas.",
+            "completeness": "all ten verses sung in order, no cuts; if a verse is dropped, regenerate with 'all ten verses, in order, no cuts' rather than cutting text"
           },
           "promptAlternative": {
             "promptState": "DOCUMENTED_OPTION",
-            "text": "solemn organ and low strings hymn, 3/4, 104 bpm, F minor, great organ foundation stop and pedal drones, cello and contrabass doubling the bass line, a quartet of low male voices entering only from stanza 4, one solo bass cantor for the call lines, plain declamation, no percussion, no guitars",
+            "text": "solemn organ and low strings hymn, 3/4, 112 bpm, F minor, great organ foundation stop and pedal drones, cello and contrabass doubling the bass line, a quartet of low male voices entering only from verse 4, one clear baritone cantor for the call lines, syllabic declamation, no melisma, plain diction, no percussion, no guitars",
             "note": "A second style direction recorded for comparison only; not a version, not approved."
           },
-          "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §6.2). Never submitted to SUNO. Newly written for this text, not a recovered prompt, and not a reuse of the DUTCH-002 brief.",
+          "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md §1). Never submitted to SUNO. Rewritten after the first version was found to ask for a low lead and a slow, melismatic delivery on a 90-line text.",
           "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
-          "lyricRevisionNote": "Revises v0.1. Russian adaptation, not a translation; eight declared deviations in the production package §5; changelog and rhyme/metre statement in the lyric file. The clean lyric, the SUNO-ready text and the style prompt are three separate files, as SUNO/README.md and SUNO/LYRIC_REGISTER.md require. Owner poetic revision is a required gate before READY_FOR_REVIEW.",
+          "lyricRevisionNote": "Revision v0.3: seven lines rewired after review (stanzas 1, 2, 3, 6, 7, 8, 9, 10), syllable counts measured rather than asserted, and the claim of a regular metre withdrawn. Russian adaptation, not a translation; the clean lyric, the SUNO-ready text and the style are three separate files. Owner revision is the gate before READY_FOR_REVIEW.",
           "assets": {},
           "generatedOutput": "NONE",
           "audioExport": "NONE",
@@ -432,7 +433,10 @@
             "clean": "SUNO/DUTCH-005_LYRICS.md",
             "sunoReady": "SUNO/DUTCH-005_LYRICS_SUNO.md",
             "style": "SUNO/DUTCH-005_STYLE.md"
-          }
+          },
+          "promptDocuments": [
+            "SUNO/DUTCH-005_STYLE.md"
+          ]
         }
       ],
       "authorId": "LOD-001",
@@ -442,7 +446,8 @@
         "SRC-L-CRIT-2005-HEERLIJCKHEYD",
         "SRC-NL-LIEDERENBANK-INDEX",
         "SRC-L-1676",
-        "SRC-L-1676-COLOPHON"
+        "SRC-L-1676-COLOPHON",
+        "SRC-L-UYT-1727-HEERLIJCKHEYD"
       ],
       "claimIds": [
         "CLM-HEERLIJCKHEYD-IDENTITY",
@@ -451,18 +456,22 @@
         "CLM-DUTCH-005-TUNE",
         "CLM-DUTCH-005-ADAPTATION",
         "CLM-ASSET-STATE",
-        "CLM-SUNO-PROMPTS"
+        "CLM-SUNO-PROMPTS",
+        "CLM-DUTCH-005-VARIANTS"
       ],
       "qaStatus": "OPEN",
-      "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.'. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X). It is not a refrain and must not be detached as a chorus. The 1938 reworking of the same text is a separate, protected object and is not used. Dossier: RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md; package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md.",
+      "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.', on pp. 155-158 in BOTH the 1676 first edition and the 1727 ninth edition. The two printings agree except for spelling and four variants recorded in the collation. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X); it is not a refrain. The 1938 reworking is a separate, protected object and is not used. Package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md; lyric: SUNO/DUTCH-005_LYRICS.md; style: SUNO/DUTCH-005_STYLE.md.",
       "rightsNote": "1676 poem public domain in substance; the DBNL transcription and the 2005 critical edition are separate objects and are not reproduced. The 1938 reworking is PERMISSION_REQUIRED and is not used.",
       "openChecks": [
-        "Owner poetic revision of the Russian lyric v0.2 (SUNO/DUTCH-005_LYRICS.md); freeze as v1.0 and regenerate the SUNO-ready file from it before any generation.",
-        "Read the 1676 page images of printed pp. 155-158 to move the text from diplomatic transcription to print-verified, and view the illustration ill0155.",
-        "Decide between the two style directions (SUNO/DUTCH-005_PRODUCTION_PACKAGE.md §6.2 and §6.3) and record the decision.",
+        "Owner line-by-line revision of the Russian lyric v0.3 (SUNO/DUTCH-005_LYRICS.md); freeze as v1.0 and regenerate the SUNO-ready file from it.",
+        "Inspect the 1676 page images of printed pp. 155-158 to move the text from transcription-plus-collation to print-verified; view the illustration ill0155.",
+        "Decide between the two style directions and record the decision.",
         "Retry the Dutch Song Database for 'Un jour &c.' and for lode002uyt_01_0047; no melody claim until then.",
-        "Record the prompt revision hash before submission and the file's own duration and metadata after any generation."
-      ]
+        "Record the prompt revision hash before submission and the file's own duration and metadata after any generation.",
+        "If a generation truncates, do NOT cut stanzas: regenerate with 'all ten verses, in order, no cuts', or split the release at verses 1-5 / 6-10."
+      ],
+      "identityStatus": "CONFIRMED_BY_TWO_PRINTINGS_TYPOGRAPHY_UNVERIFIED",
+      "identityNote": "Title, page range, tune line, date, stanza count and structure are identical in the 1676 first edition and the 1727 ninth edition, so the work's identity is established bibliographically. Neither printing has been checked as a page image, and the two disagree in four places (CLM-DUTCH-005-VARIANTS), so no wording is definitive yet. The ID was assigned on transcription evidence; that is the process defect this record makes explicit."
     }
   ],
   "adjacentNonDutchWorks": [
