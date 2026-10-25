@@ -39,16 +39,23 @@ Nichol 1864. Ниже — полная карта с оценкой.
 - **Указанный источник:** *Discourse on Practical Atheism*, Monergism HTML, **lines 82–84** в web
   extraction, opening Psalm 14:1 exposition.
 - **Печатный локатор первого издания:** *Several discourses upon the existence and attributes of
-  God* (Lond., 1682), **стр. 1 и 47** — «THE Existence of God, and Practical Atheism; from
-  Psal. 14.1». Установлено 2026-10-25 по оглавлению `A32723.0001.001`.
+  God* (Lond., 1682), **стр. 47** — афоризм стоит на стр. 47 в exposиции Пс. 14:1, внутри
+  «Doct. 2. PRACTICAL Atheism is natural to Man in his depraved state». Установлено 2026-10-25
+  прямым чтением `A32723.0001.001`, узел `1:5`.
 - **Функция:** показать разрыв между правильной идеей о Боге и практическим отношением сердца.
 - **Предохранитель корпуса:** «не использовать это как ярлык для всякой слабости… Устойчивый
   practical atheism — это не единичное согрешение с покаянием, а практическая схема жизни».
-- **`evidenceClass`:** `A2` (доступный текст без критического аппарата).
-- **`locatorState`:** **`unverified`** — «lines 82–84 in web extraction» не является печатным
-  локатором. Nichol vol. 1, *Practical Atheism* — страница неизвестна.
-- **HOLD:** `LOCATOR_HOLD`.
-- **Требуемое действие:** найти страницу в Nichol 1864 vol. 1 и сверить формулировку.
+  **Усилен 2026-10-25:** в первом издании афоризм непосредственно развивается: «Their reasons may
+  defend the Notion of a Deity, while their hearts are empty of affection to the Deity: Jobs
+  Children may curse God in their hearts, tho not with their lips.»
+- **`evidenceClass`:** `A1` (текст первого издания 1682, прочитан в EEBO-TCP; ранее `A2`).
+- **`locatorState`:** **`checked`** для первого издания 1682 (стр. 47). Для Nichol 1864 —
+  **`unverified`**: «lines 82–84 in web extraction» печатным локатором не является.
+- **HOLD:** `LOCATOR_HOLD` в отношении Nichol 1864. `RIGHTS_HOLD` для `A32723` (каталог TCP:
+  Restricted; страница Michigan: CC0 — расхождение не разрешено).
+- **Требуемое действие:** найти страницу в Nichol 1864 vol. 1 и сверить формулировку; при
+  цитировании по первому изданию восстановить капитализацию («Atheistical … Atheistical») либо
+  оговорить нормализацию.
 
 **Добавление 2026-10-25 (том 14, элегия 1680, сноска d).** Элегия *An Elegy on the death of the
 truly reverend, learned and pious, Mr. Stephen Charnock, July 27, 1680* (EEBO-TCP
@@ -65,11 +72,44 @@ Monergism. `evidenceClass` цитаты остаётся `A2` (текст взя
 **Добавление 2026-10-25 (том 03 §3D): печатный локатор получен — в первом издании.** Оглавление
 фолианта 1682 (`A32723.0001.001`, узел `1:3`) даёт: «Page 1. & 47. THE Existence of God, and
 Practical Atheism; **from Psal. 14.1**.» То есть дискурс, являющийся источником
-`CHARN_PRACT_ATHEISM_001`, напечатан в **первом издании** на страницах **1 и 47**. Это печатный
-локатор contemporaneous издания, независимый от репринта 1844 и от Monergism. `locatorState`
-поднимается с `unverified` до **`checked` в отношении первого издания 1682** (стр. 1 и 47);
-`LOCATOR_HOLD` в отношении Nichol 1864 **сохраняется**, потому что цифровая копия, из которой
-взята цитата, — репринт XIX века, а не первое издание.
+`CHARN_PRACT_ATHEISM_001`, напечатан в **первом издании** на страницах **1 и 47**.
+
+**Добавление 2026-10-25 (том 10 §3.1): точная страница цитаты установлена — стр. 47.** Дискурс
+«A DISCOURSE UPON PRACTICAL ATHEISM» (узел `1:5`) открывается на стр. 47 заголовком, текстом
+Пс. 14:1 и «Doct. 2.», и афоризм стоит **на самой стр. 47**, в exposиции текста (не в «use»):
+
+> **Page 47.** A DISCOURSE UPON PRACTICAL ATHEISM. > Psalm 14.1. Doct. 2. PRACTICAL Atheism is
+> natural to Man in his depraved state, and very frequent in the hearts and lives of Men. The Fool
+> hath said in his heart there is no God. He regards him as little as if he had no being… He could
+> not rase out the Notion of a Deity in his mind, but he neglected the fixing the sence of God in
+> his heart, and made it too much his business to de∣face and blot out those Characters of God in
+> his Soul, which had been left under the ruines of original nature.
+>
+> **Men may have Atheistical hearts without Atheistical heads.** Their reasons may defend the Notion
+> of a Deity, while their hearts are empty of affection to the Deity: Jobs Children may curse God in
+> their hearts, tho not with their lips.
+
+**Цитируемый локатор:** *Several discourses upon the existence and attributes of God*, London:
+Printed for D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, and Benj. Alsop, **1682**, **p. 47**
+(EEBO-TCP `A32723.0001.001`, узел `1:5`; Wing **C3711**).
+
+**Текстологическая оговорка.** В первом издании оба слова даны с заглавной: «**A**theistical hearts
+without **A**theistical heads». Формулировка, зафиксированная в Research
+(«atheistical hearts without atheistical heads»), — **нормализованная по капитализации**. При
+цитировании по первому изданию капитализации следует восстановить либо оговорить нормализацию.
+
+**Контекст, который должен сопровождать цитату.** Афоризм стоит внутри exposиции Пс. 14:1 и
+непосредственно развивается двумя предложениями: «Their reasons may defend the Notion of a Deity,
+while their hearts are empty of affection to the Deity: Jobs Children may curse God in their
+hearts, tho not with their lips.» Это **усиливает** предохранитель корпуса: Чарнок говорит не о
+случайной слабости, а о **естественном для падшего состояния практическом атеизме**, при котором
+разум защищает понятие о Божестве, а сердце пусто к Нему.
+
+**Статус после этой проверки.** `evidenceClass` цитаты — `A1` (текст первого издания 1682, прочитан
+в EEBO-TCP); `locatorState` — **`checked`** (стр. 47 первого издания). `LOCATOR_HOLD` в отношении
+Nichol 1864 **сохраняется**: цифровая копия, из которой цитата попала в Research, — репринт XIX
+века, и страница Nichol до сих пор неизвестна. `RIGHTS_HOLD` для `A32723` сохраняется (каталог TCP:
+Restricted; страница Michigan: CC0 — расхождение не разрешено).
 
 ### 3.2. Two-state diagnostic — prevalency of corrupt habit vs. predominancy of gracious habit
 
