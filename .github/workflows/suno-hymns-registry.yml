@@ -86,6 +86,11 @@ jobs:
           python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-pin1.txt
           python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-pin2.txt
 
+      - name: Check the title separator
+        # Owner decision 2026-10-26: titles separate parts with ✝. The retired ✦ is
+        # banned, and so is every other separator that has crept into a title.
+        run: python3 SUNO_HYMNS/scripts/check_title_separator.py
+
       - name: Check that quoted copy lengths match the files
         # Four documents quoted the description length; three of them were wrong.
         # Every quoted length is now recomputed from the block it describes.

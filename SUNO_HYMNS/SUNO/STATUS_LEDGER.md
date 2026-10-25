@@ -75,7 +75,7 @@
   - `DUTCH-005_PINNED.md` — two pinned YouTube comments (1578 and 1590 characters), 4 bold + 1 italic line and 6 bold + 2 italic lines, both gated.
   - Every claim in the three files is mapped to a named source in `../RESEARCH/CLAIM_LEDGER.md`, `../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md` (75 addresses) and `../RESEARCH/DUTCH-005_SINGING_PRACTICE_SOURCES.md` (88 addresses).
   - **None of this is publication.** No URL exists; if one appears later, record it here and only then move the state.
-- **Open defects on this work:** stanza 3.2 «После земных невзгод»; cover not chosen; title separator `✦` vs `✝` undecided; the markup of v3 and of both закрепы has not been seen rendering in a live Studio; the 1676 page images of pp. 155–158 have not been inspected (text layer only).
+- **Open defects on this work:** stanza 3.2 «После земных невзгод»; cover not chosen; title separator decided — `✝` (owner, 2026-10-26); the markup of v3 and of both закрепы has not been seen rendering in a live Studio; the 1676 page images of pp. 155–158 have not been inspected (text layer only).
 - **Do not confuse with:** DUTCH-002's brief (similar sound, different poem, different prompt) and the 1938 bundel's reworking of this text to a Bourgeois melody (a protected, later object).
 
 ## Adjacent works — keep out of the Dutch historical catalog

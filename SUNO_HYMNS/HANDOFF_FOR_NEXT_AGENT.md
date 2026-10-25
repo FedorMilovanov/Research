@@ -150,4 +150,4 @@ DUTCH-005 now has a complete publication package for two surfaces, and **nothing
 - call the pinned comments publication, or attach a URL that has not been checked;
 - describe the hymn as written for public worship. It was written for a house circle, and that is the fact the copy is built on.
 
-**Still open, in priority order:** the lyric defect at stanza 3.2 («После земных невзгод»); the cover (references live outside the repository); the title separator `✦` or `✝`; a live Studio check of the description and both pinned comments; the 1676 page images of pp. 155–158 (only the text layer has been read).
+**Still open, in priority order:** the lyric defect at stanza 3.2 («После земных невзгод»); the cover (references live outside the repository); the title separator is settled (`✝`, owner decision 2026-10-26) and must not be reopened; a live Studio check of the description and both pinned comments; the 1676 page images of pp. 155–158 (only the text layer has been read).
