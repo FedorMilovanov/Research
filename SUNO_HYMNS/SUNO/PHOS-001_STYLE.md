@@ -16,7 +16,7 @@
 ## A. Греческий певец и исон — `STYLE-PHOS-001-A` · первичный слот
 
 ```
-ancient Greek Orthodox lamp-lighting hymn, through-composed, a cappella, one male cantor singing a clear modal melody in a Byzantine-flavoured mode on E, a male choir holding a soft ison drone on the tonic beneath him, the drone entering only after the first two lines, strictly syllabic declamation, one syllable per note, no melisma, no vocal runs, no vibrato, natural diction, narrow range, a firm slow pulse rather than free drifting rubato, short two-bar breath of silence as the introduction, the whole six-line Russian text sung once from beginning to end with no repeats and no chorus, then a short held final chord and silence, large but clean stone-church acoustic with an intelligible forward cantor, no percussion, no organ, no strings, no synthesizers
+ancient Greek Orthodox lamp-lighting hymn, through-composed, a cappella, one male cantor singing a clear modal melody in a Byzantine-flavoured mode on E, a male choir holding a soft ison drone on the tonic beneath him, the drone entering only after the first two lines, strictly syllabic declamation, one syllable per note, no melisma, no vocal runs, no vibrato, natural diction, narrow range, a firm slow pulse rather than free drifting rubato, short two-bar breath of silence as the introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the opening line reprised at the end, no other repeats and no newly written words, then a short held final chord and silence, large but clean stone-church acoustic with an intelligible forward cantor, no percussion, no organ, no strings, no synthesizers
 ```
 
 **Исключить:** мелизмы, распевы, вибрато, шёпот, хрип, слишком низкий бас, ударные, орган, струнные, синтезаторы, длинные проигрыши, повтор строк.
@@ -28,7 +28,7 @@ ancient Greek Orthodox lamp-lighting hymn, through-composed, a cappella, one mal
 ## B. Унисонная мужская скола в староримском духе — `STYLE-PHOS-001-B`
 
 ```
-early Latin-rite chant, through-composed, a cappella, unison male schola of six voices, modal melody in the Dorian mode on D, no harmony except a bare octave doubling at the final cadence, very even syllabic declamation, one syllable per note, no melisma, no vibrato, crisp Latin-school consonants and clear Russian diction, a single low bell struck once before the singing and once at the end, short one-phrase introduction, the whole six-line text sung once with no repeats and no chorus, dryish stone acoustic, moderate and steady tempo, no percussion kit, no organ, no strings, no synthesizers
+early Latin-rite chant, through-composed, a cappella, unison male schola of six voices, modal melody in the Dorian mode on D, no harmony except a bare octave doubling at the final cadence, very even syllabic declamation, one syllable per note, no melisma, no vibrato, crisp Latin-school consonants and clear Russian diction, a single low bell struck once before the singing and once at the end, short one-phrase introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the opening line reprised at the end, no other repeats and no newly written words, dryish stone acoustic, moderate and steady tempo, no percussion kit, no organ, no strings, no synthesizers
 ```
 
 **Исключить:** многоголосие, мелизмы, вибрато, ударные, орган, струнные, синтезаторы, повтор строк, длинные проигрыши.
@@ -52,7 +52,7 @@ Russian Znamenny chant style, through-composed, a cappella male choir of eight l
 ## D. Камерный тенор-баритон, виолончель и орган — `STYLE-PHOS-001-D`
 
 ```
-restrained dark chamber sacred song, through-composed, 3/4, about 72 bpm, minor mode on A, one close-miked male tenor-baritone with natural diction and no vibrato, gut-string cello pedal tones, arco contrabass on the bass line, a small chamber organ with a stopped 8-foot flute, a second voice joining only on the last two lines, strictly syllabic, one syllable per note, no melisma, short four-bar instrumental introduction, the whole six-line text sung once with no repeats and no chorus, quiet dynamics, close natural room reverb, no percussion, no drums, no electric instruments, no synthesizers
+restrained dark chamber sacred song, through-composed, 3/4, about 72 bpm, minor mode on A, one close-miked male tenor-baritone with natural diction and no vibrato, gut-string cello pedal tones, arco contrabass on the bass line, a small chamber organ with a stopped 8-foot flute, a second voice joining only on the last two lines, strictly syllabic, one syllable per note, no melisma, short four-bar instrumental introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the opening line reprised at the end, no other repeats and no newly written words, quiet dynamics, close natural room reverb, no percussion, no drums, no electric instruments, no synthesizers
 ```
 
 **Исключить:** ударные, электробас, синтезаторы, кинематографические струнные нарастания, белтинг, шёпот, хрип, мелизмы, повтор строк, длинные проигрыши.
@@ -64,7 +64,7 @@ restrained dark chamber sacred song, through-composed, 3/4, about 72 bpm, minor 
 ## E. Полифония четырёх голосов — `STYLE-PHOS-001-E`
 
 ```
-Renaissance sacred polyphony, through-composed, a cappella four-part male choir, imitative entries one line at a time, modal harmony in the Mixolydian mode on G, strictly syllabic, one syllable per note, no melisma, no vocal runs, no vibrato, even and transparent texture, words always intelligible, short one-phrase choral introduction, the whole six-line text sung once with no repeats and no chorus, a bare open fifth on the final chord, dry-ish chapel acoustic, no percussion, no organ, no strings, no synthesizers
+Renaissance sacred polyphony, through-composed, a cappella four-part male choir, imitative entries one line at a time, modal harmony in the Mixolydian mode on G, strictly syllabic, one syllable per note, no melisma, no vocal runs, no vibrato, even and transparent texture, words always intelligible, short one-phrase choral introduction, all six lines sung in order, the Trinitarian line repeated verbatim as the refrain after the second and the third verse, the opening line reprised at the end, no other repeats and no newly written words, a bare open fifth on the final chord, dry-ish chapel acoustic, no percussion, no organ, no strings, no synthesizers
 ```
 
 **Исключить:** мелизмы, распевы, вибрато, ударные, орган, струнные, синтезаторы, повтор строк, длинные проигрыши, густую педальную гармонию.
