@@ -385,3 +385,136 @@ This registry is the human-readable view of data/source-registry-v1.json. The re
 - HOLDs: RIGHTS_HOLD
 - Supports: Historical context for tune reuse / contrafactum and the Rosemont melody
 - Limits / caveats: Use the poem's own tune direction for song-specific claims; secondary musicology cannot prove that a modern generated setting reproduces the original sound.
+
+## Third-pass additions — 2026-10-25
+
+The nine entries below were added after reading the 1676 printing directly, the 1727 ninth edition, the 2005 introduction and the 1971 anthology. They carry no promotion of previously held claims: the date `EVIDENCE_HOLD` was narrowed, not lifted. Note the locator rule recorded as `CLM-DBNL-SLUG-TRAP`: the numeric slug in a `lode002uyt_01_01_00NN.php` URL is a chunk index, not a printed page.
+
+## SRC-L-1676-HERT-I-78-81 — I. Hert-sterckte in Jehova — 1676 print, printed pp. 78-81
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0038.php
+- Printed pages: 78-81
+- Source role/type: Exact text pages of the first edition, as served by the DBNL diplomatic transcription
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Full 15-stanza text of poem I in the 1676 print; Tune direction: 'Te singen als Onherroepelijke Jeugd! Of: Gavotte. A la fronté.'; Closing date line: 'Op 't Fort Nieuw Rees 28. in wintermaand 1673.'; Section heading tying the poem to the author's exile in Cleves
+- Limits / caveats: A diplomatic transcription, not an inspected page image; no editorial intervention is listed for these pages, which is a positive but not sufficient accuracy signal.
+- Limits / caveats: The URL slug 0038 is a chunk number, not the printed page; cite printed pages.
+
+## SRC-L-1676-HERT-II-82-84 — II. Hert-sterckte in Jehova — 1676 print, printed pp. 82-84
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0039.php
+- Printed pages: 82-84
+- Source role/type: Exact text pages of the first edition, as served by the DBNL diplomatic transcription
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Full 14-stanza text of poem II in the 1676 print; Tune direction: a pointer to I on p. 78 ('Te singen als boven pag.78. Soet Geselschap dat met my, &c.'), not an independent melody; Closing date line as emended by the transcription: 'Op 't Fort Nieuw Rees 4. In Loumaand 1674.'; Explicit 1676 pairing of the two poems of the same title
+- Limits / caveats: The 1674 reading on this page is an editorial emendation; the DBNL colophon lists 'p. 84: 1664 -> 1674'. The printed original has not been visually inspected, so this page cannot by itself prove what the 1676 leaf reads.
+- Limits / caveats: The URL slug 0039 is a chunk number, not the printed page.
+
+## SRC-L-1676-VERHEVEN-85-87 — 't Verheven Herte van een Christen die Gode leeft — 1676 print, printed pp. 85-87
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0040.php
+- Printed pages: 85-87
+- Source role/type: Exact text pages of the first edition, as served by the DBNL diplomatic transcription
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Full text of item 36, the third poem of the exiled Rees group; Closing date line: '11. in Loumaand 1674.'; Establishes that the second 1664->1674 emendation listed in the DBNL colophon ('p. 87') belongs to this poem, not to II. Hert-sterckte
+- Limits / caveats: Used here chiefly to scope the emendation correctly; the poem itself has not been researched as a candidate.
+
+## SRC-L-1676-SIMEONS-29 — Simeons Lof-sang — 1676 print, printed p. 29 (the 'Prendete la' tune anchor)
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0013.php
+- Printed pages: 29-30
+- Source role/type: Exact text page of the first edition carrying the tune designation
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: The heading 'Te singen Als: Prendete la.' on printed p. 29; Resolves the internal cross-reference 'siet boven pag.29' used by item 32; Seven-line stanza with a divided second line, the metrical shape shared by item 32
+- Limits / caveats: The page names a tune; it does not supply the melody, its composer, or its origin.
+- Limits / caveats: An emblem page image exists for p. 29 but was not inspected in this pass.
+
+## SRC-L-UYT-1727 — Uytspanningen, behelsende eenige stichtelyke liederen, en andere gedichten — 9th edition (1727)
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_03_01/
+- Source role/type: A separate later edition of the same collection, independently typeset
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: An independent printed witness for the II. Hert-sterckte date reading '4 in Loumaand 1674' (printed p. 84); Collation of Den Nederigen Christen (printed pp. 74-75), including the 1676/1727 variants recorded in the DUTCH-004 dossier; Continuity of the internal tune pointer 'siet boven pag. 29' at the same pagination
+- Limits / caveats: A later edition is not independent of the 1676 text in stemmatic terms: it may descend from a corrected copy. It corroborates the date but cannot prove what the 1676 compositor set.
+- Limits / caveats: Its wording differs from 1676 in spelling and in the punctuation of Den Nederigen Christen stanza IV.
+
+## SRC-L-CRIT-2005-INTRO — Critical-edition introduction, 'Ds. Jodocus van Lodenstein en zijn Uyt-spanningen 1676', pp. 645-647
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0147.php
+- Source role/type: Modern scholarly introduction in the copyrighted 2005 edition
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: In December 1673 Lodenstein was held as a hostage of the French, far from Utrecht; He sent songs to the Utrecht circle, printed in 1674 as 'Meditatiën over eenige van Gods eygenschappen'; Many songs were written for singing in the Utrecht circle; melodies were drawn partly from popular 16th/17th-century tunes and partly from unidentified contemporary compositions
+- Limits / caveats: Copyrighted secondary literature: paraphrase only, never quotation.
+- Limits / caveats: Describes the corpus generally; it does not date any individual poem.
+
+## SRC-L-BUIJNSTERS-1971 — P.J. Buijnsters (ed.), Bloemlezing uit de bundel Uyt-spanningen (1971)
+
+- URL: https://www.dbnl.org/tekst/lode002pjbu01_01/lode002pjbu01_01_0013.php
+- Source role/type: Modern scholarly anthology with annotation
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Editorial headnote: four consolation songs written during the 1673 hostage period and published by the poet himself in 1674 as 'Meditatien over eenige van 's Heeren Gods Eygenschappen'; Footnote on the closing date of II: 'Er staat abusievelijk: 1664.' — an independent editorial statement that the print reads 1664; Printed reading '4. in Loumaand 1674' for II
+- Limits / caveats: A later anthology, not the 1674 pamphlet or the 1676 leaf; the statement about the misprint is editorial testimony.
+- Limits / caveats: Copyrighted selection and annotation: cite, do not reproduce.
+
+## SRC-MEDITATIEN-1674 — Meditatien over eenige van 's Heeren Gods Eygenschappen (1674)
+
+- URL: — none acquired —
+- Source role/type: The poet's own separate printing of the four exiled Rees hymns — target object
+- Evidence class: A1
+- Access state: NOT_ACQUIRED
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: EVIDENCE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Named by two independent modern descriptions (1971 headnote; 2005 introduction) as a 1674 printing of these songs
+- Limits / caveats: No copy, catalogue record or locator has been acquired; its existence and contents are known only through secondary description.
+- Limits / caveats: Its collation against the 1676 printing is the strongest available test of the group's dating and remains outstanding.
+
+## SRC-NL-LIEDERENBANK — Nederlandse Liederenbank (Meertens Instituut / KNAW) — Dutch Song Database
+
+- URL: http://www.liederenbank.nl/
+- Source role/type: Scholarly song and melody index; the normal authority for Dutch tune designations
+- Evidence class: B1
+- Access state: NOT_ACQUIRED
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
+- Supports: Would carry the melody identification for tune names such as 'Prendete la', 'Onherroepelijke Jeugd' and 'Rosemont waer gy vliedt'
+- Limits / caveats: Unavailable on 2026-10-25: the site returns HTTP 403 with a KNAW notice that it has been taken offline temporarily. DBNL's per-song links into it currently dead-end.
+- Limits / caveats: Not having consulted it is not evidence that a tune has no identification.

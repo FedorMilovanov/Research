@@ -24,7 +24,8 @@
       ],
       "holds": [
         "RIGHTS_HOLD"
-      ]
+      ],
+      "projectLevel": true
     },
     {
       "id": "CLM-DUTCH-001-TITLE-TUNE",
@@ -33,10 +34,12 @@
       "claimStatus": "SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION",
       "sourceIds": [
         "SRC-L-SCHEPSELEN-51",
-        "SRC-L-1676"
+        "SRC-L-1676",
+        "SRC-MUSIC-ROSEMONT"
       ],
       "notes": [
-        "The exact item page currently accessed is the copyrighted critical edition; a direct first-edition item locator has not yet been pinned. Do not present the modern version as a historically faithful arrangement."
+        "The exact item page currently accessed is the copyrighted critical edition; a direct first-edition item locator has not yet been pinned. Do not present the modern version as a historically faithful arrangement.",
+        "SRC-MUSIC-ROSEMONT supplies musicological context for the Dutch song repertoire the tune name belongs to; it does not identify the tune itself."
       ],
       "holds": [
         "RIGHTS_HOLD",
@@ -62,16 +65,20 @@
     {
       "id": "CLM-HERT-I-VS-II",
       "topic": "Two poems titled Hert-sterckte in Jehova",
-      "claim": "Lodenstein's collection contains I. Hert-sterckte in Jehova (critical item 34, dated 28 December 1673 in the critical edition) and II. Hert-sterckte in Jehova (item 35), which is the source associated with the later Rutgers hymn no. 68.",
+      "claim": "Lodenstein's collection contains two distinct poems called Hert-sterckte in Jehova: I on printed pp. 78-81 (15 stanzas, critical-edition item 34, dated 28 December 1673) and II on printed pp. 82-84 (14 stanzas, item 35, dated 4 January 1674 in the later witnesses), which is the poem in the chain to Rutgers's 1806 hymn 68.",
       "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
       "sourceIds": [
+        "SRC-L-1676-HERT-I-78-81",
+        "SRC-L-1676-HERT-II-82-84",
         "SRC-L-HERT-I-1673-34",
         "SRC-L-HERT-II-1674-1971",
         "SRC-RUTGERS-1806-68",
         "SRC-RUTGERS-BIO"
       ],
       "notes": [
-        "Keep the two poems separate. The first has its own tune directions and must not be silently treated as the direct source text for the current Russian hymn."
+        "Both poems are in the 1676 first edition, not only in the critical edition and the 1971 selection.",
+        "Keep the two poems separate. I has its own two tune names and must not be treated as the source text of the current Russian hymn; II has no tune of its own and points to I.",
+        "Corrected on 2026-10-25: an earlier catalogue line cited the item-34 page as the source of II."
       ],
       "holds": [
         "RIGHTS_HOLD"
@@ -80,19 +87,24 @@
     {
       "id": "CLM-HERT-II-DATE-1674",
       "topic": "Date of II. Hert-sterckte in Jehova",
-      "claim": "The later digital witness reads 4 January 1674, but the source/editorial note records an erroneous 1664 in the original print and a correction to 1674.",
+      "claim": "The date recorded for II. Hert-sterckte in Jehova is 4 January 1674. The 1676 transcription reads 1674 but is emended, the 1971 anthology prints 1674 while noting that the print reads 1664, and the 1727 edition independently prints 1674.",
       "claimStatus": "EVIDENCE_HOLD",
       "sourceIds": [
         "SRC-L-HERT-II-1674-1971",
         "SRC-L-1676-COLOPHON"
       ],
       "notes": [
-        "Do not present 4 January 1674 as a clean, unproblematic date from the original print until the page image is visually checked and the emendation documented. The date HOLD applies to this claim, not to all other content in the poem."
+        "Retained on EVIDENCE_HOLD but narrowed on 2026-10-25: what remains unresolved is only the literal reading of the 1676 impression, not the date's use.",
+        "Scoped away from the p. 87 correction, which belongs to item 36 (see CLM-HERT-EMENDATION-SCOPE).",
+        "The hold applies solely to the reading of the printed year. It does not suspend the poem's text, authorship, place, tune or its use as the DUTCH-002 source.",
+        "The date is usable with an explicit note; see CLM-HERT-II-DATE-1727-WITNESS and CLM-REES-MEDITATIEN-1674."
       ],
       "holds": [
         "EVIDENCE_HOLD",
         "RIGHTS_HOLD"
-      ]
+      ],
+      "evidenceGap": "No page image of the 1676 leaf at printed p. 84 has been inspected. DBNL serves page images only for emblem pages and printed p. 84 carries none; its 'Scans' bundle for the edition was not acquired, and direct download from dbnl.org is blocked in this environment.",
+      "nextCheck": "Inspect printed p. 84 in a physical or digitised copy of the 1676 impression: KB Den Haag 4 B 1 (the copy DBNL used for its images), UBA 113: BALIE 250.D12 (the copy transcribed), the DBNL scan bundle https://www.dbnl.org/arch/lode002uyt_01_01/pag/lode002uyt_01_01.pdf, or a Delpher/Google Books copy. Record the image and the reading before lifting the hold."
     },
     {
       "id": "CLM-DUTCH-002-RUTGERS",
@@ -106,7 +118,8 @@
       ],
       "notes": [
         "Credit Lodenstein as historical source author and Rutgers as later reviser; treat later translations/adaptations as separate textual witnesses.",
-        "The separate date uncertainty is isolated in CLM-HERT-II-DATE-1674; it does not automatically suspend the source-chain claim."
+        "The separate date uncertainty is isolated in CLM-HERT-II-DATE-1674; it does not automatically suspend the source-chain claim.",
+        "Not re-examined in the 2026-10-25 third pass: the Rutgers link keeps its previous status."
       ],
       "holds": [
         "RIGHTS_HOLD"
@@ -162,7 +175,8 @@
       ],
       "holds": [
         "RIGHTS_HOLD"
-      ]
+      ],
+      "projectLevel": true
     },
     {
       "id": "CLM-DORDRECHT-ARTICLE-69",
@@ -178,7 +192,8 @@
       ],
       "holds": [
         "RIGHTS_HOLD"
-      ]
+      ],
+      "projectLevel": true
     },
     {
       "id": "CLM-ASSET-STATE",
@@ -201,6 +216,265 @@
         "Do not reconstruct a prompt from stylistic preference and label it original. Recover verbatim text from the owner or the original prompt history."
       ],
       "holds": []
+    },
+    {
+      "id": "CLM-HERT-II-SEQUEL",
+      "topic": "Relation between I. and II. Hert-sterckte in Jehova",
+      "claim": "II. Hert-sterckte is a companion poem written one week after I: it carries no tune of its own but a printed pointer to I on p. 78, and its opening takes up the closing image of I.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-1676-HERT-I-78-81",
+        "SRC-L-1676-HERT-II-82-84",
+        "SRC-L-UYT-1727",
+        "SRC-L-CRIT-2005"
+      ],
+      "notes": [
+        "The tune pointer ('als boven pag.78') is confirmed in both the 1676 and the 1727 prints and is described the same way in the 2005 apparatus.",
+        "The verbal continuation is established by the 2005 apparatus cross-referencing I, r. 89 ('In dien Ocean') for the opening word of II; that cross-reference is B1, but the two stanzas themselves corroborate it.",
+        "Do not describe the two poems as recensions of one text, or one as a draft of the other."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-HERT-I-DATE-1673",
+      "topic": "Date of I. Hert-sterckte in Jehova",
+      "claim": "The 1676 print dates I. Hert-sterckte in Jehova at Fort Nieuw Rees, 28 December 1673.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-1676-HERT-I-78-81",
+        "SRC-L-HERT-I-1673-34"
+      ],
+      "notes": [
+        "The printed date line reads '28. in wintermaand 1673'; 'wintermaand' is December.",
+        "No emendation of this date is listed in the DBNL colophon."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-HERT-II-DATE-1727-WITNESS",
+      "topic": "Independent printed witness for the 4 January 1674 date",
+      "claim": "The 1727 ninth edition independently typesets II. Hert-sterckte with the closing line 'Op 't Fort Nieuw Rees 4 in Loumaand 1674'.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-UYT-1727"
+      ],
+      "notes": [
+        "A different setting of type, 51 years later; it is a printed A1 witness that reads 1674.",
+        "It may descend from a corrected copy of the first edition, so it corroborates rather than closes the question of what the 1676 leaf reads."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-HERT-EMENDATION-SCOPE",
+      "topic": "Scope of the recurring 1664->1674 emendations",
+      "claim": "The DBNL colophon's second 1664->1674 correction, at printed p. 87, belongs to item 36 ('t Verheven Herte, dated 11 January 1674) and not to II. Hert-sterckte; a third related correction is 'p. 7: 1565 -> 1665'.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-1676-COLOPHON",
+        "SRC-L-1676-VERHEVEN-85-87",
+        "SRC-L-1676-HERT-II-82-84"
+      ],
+      "notes": [
+        "Prevents the date hold from being applied to the wrong poem, and prevents the p. 87 correction from being used as a second witness for II.",
+        "The recurrence of the same digit error at several dates is consistent with a compositor-level fault rather than an isolated slip, but this is an inference about printing practice, not a proof of any single reading."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-REES-MEDITATIEN-1674",
+      "topic": "The four-poem Rees group and the 1674 pamphlet",
+      "claim": "Items 34-37 of the 1676 collection are the group of consolation songs written during Lodenstein's December 1673 hostage exile and printed in 1674 as 'Meditatien over eenige van 's Heeren Gods Eygenschappen'.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": true,
+      "sourceIds": [
+        "SRC-L-CRIT-2005-INTRO",
+        "SRC-L-BUIJNSTERS-1971",
+        "SRC-MEDITATIEN-1674",
+        "SRC-L-1676-HERT-I-78-81"
+      ],
+      "notes": [
+        "The 1676 section heading for items 34-37 matches the reported 1674 pamphlet title almost verbatim, which supports identifying the two.",
+        "The 1674 pamphlet itself is NOT_ACQUIRED; its exact contents and whether II was present in it are unverified.",
+        "This is chronological corroboration for a 1674 date and an argument against 1664; it is not a reading of the print."
+      ],
+      "holds": [
+        "EVIDENCE_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "evidenceGap": "No copy, catalogue record or page image of the 1674 'Meditatien' pamphlet has been acquired; its contents are known only through two modern descriptions.",
+      "nextCheck": "Acquire the 1674 pamphlet (STCN / KB / UBA / Delpher) and collate its four poems against the 1676 printing, recording whether II is present and how it is dated."
+    },
+    {
+      "id": "CLM-DUTCH-004-TEXT",
+      "topic": "DUTCH-004 source text and title",
+      "claim": "Den nedrigen christen, Op Psalm 131 is Lodenstein's seven-stanza expansion of Psalm 131, printed in Uyt-spanningen (Utrecht: Willem Clerck, 1676) on pp. 74-75, and reprinted with only orthographic variation in the 1727 ninth edition on the same pages.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-UYT-1727",
+        "SRC-L-CRIT-2005"
+      ],
+      "notes": [
+        "No editorial intervention for pp. 74-75 appears in the DBNL colophon, unlike the emended Rees dates.",
+        "The 1727 edition varies in spelling and, in stanza IV, prints a question mark where 1676 prints an exclamation mark.",
+        "Page images of pp. 74-75 were not inspected; the typography claim keeps LOCATOR_HOLD."
+      ],
+      "holds": [
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-004-DATE",
+      "topic": "DUTCH-004 dates",
+      "claim": "Den nedrigen christen was first published in 1676; its date of writing is unknown, and neither the 1676 nor the 1727 printing carries a date line.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-UYT-1727"
+      ],
+      "notes": [
+        "Do not infer a composition date from the publication year, and do not transfer the 1673-74 dating of the Rees group to this poem."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-004-PS131",
+      "topic": "DUTCH-004 biblical anchor and genre",
+      "claim": "The poem is a poetic expansion, not a versification, of Psalm 131: it turns the psalm's assertions about a lowly heart and unlifted eyes into a request that God test the heart (stanzas I-II), and develops the weaned child of 131:2 into stanzas IV-V.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-CRIT-2005"
+      ],
+      "notes": [
+        "The 131:1-2 correspondences are demonstrable from the 1676 text itself.",
+        "Mapping the closing stanza to Psalm 131:3 is this project's interpretation; it is consistent with, but not established by, the 2005 commentary, which is B1 and must not be the sole support.",
+        "Classify as BIBLICAL_CANTICLE_OR_SCRIPTURE_EXPANSION, and note that it is nevertheless printed with a tune direction, i.e. meant for singing."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-004-TUNE",
+      "topic": "DUTCH-004 melody",
+      "claim": "The 1676 print directs the poem to the tune 'Prendete la' and resolves that designation by reference to printed p. 29 (Simeons Lof-sang); the tune's origin is untraced and no notation or independent identification is held.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-1676-SIMEONS-29",
+        "SRC-L-UYT-1727",
+        "SRC-L-CRIT-2005",
+        "SRC-NL-LIEDERENBANK"
+      ],
+      "notes": [
+        "The internal cross-reference works identically in the 1727 edition, where Simeons Lof-sang also stands on p. 29.",
+        "The 2005 apparatus describes 'Prendete la' as an unknown tune designation pointing to the melody of text 9.",
+        "The Dutch Song Database, the normal melody authority, was offline on 2026-10-25.",
+        "A modern setting must never be presented as this tune."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "evidenceGap": "No melody source has been acquired: no notation, no identification of the tune's origin, and the Dutch Song Database is offline.",
+      "nextCheck": "Query the Nederlandse Liederenbank when it returns online for 'Prendete la' and the DBNL song IDs lode002uyt_01_0025 and lode002uyt_03_0029; otherwise search 17th-century Dutch songbook collections for the tune name."
+    },
+    {
+      "id": "CLM-DUTCH-004-RIGHTS",
+      "topic": "DUTCH-004 rights layers",
+      "claim": "The 1676 poem is a public-domain historical work, while the 2005 critical edition, the 1971 anthology and the DBNL transcription/images are distinct modern objects with their own rights; a new Russian adaptation may be made from the historical text but must not reproduce the modern editions.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": false,
+      "sourceIds": [
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-CRIT-2005",
+        "SRC-L-BUIJNSTERS-1971",
+        "SRC-L-1676-COLOPHON"
+      ],
+      "notes": [
+        "The 2005 edition prints 'Alle rechten voorbehouden' on its copyright page and is marked copyright-protected by DBNL.",
+        "Rights in the underlying work do not extend to the modern edition's text, notes, or its editorial expansion of the print's 'etc.' abbreviations.",
+        "The DBNL rights statement for the 1676 transcription has not been captured as an object, so the registry keeps RIGHTS_UNKNOWN with a RIGHTS_HOLD."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-NL-LIEDERENBANK-OFFLINE",
+      "topic": "Access state of the Dutch Song Database",
+      "claim": "On 2026-10-25 the Nederlandse Liederenbank returned HTTP 403 with a KNAW notice that the site has been taken offline temporarily, so DBNL's per-song links into it do not resolve.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": true,
+      "sourceIds": [
+        "SRC-NL-LIEDERENBANK"
+      ],
+      "notes": [
+        "Recorded so that a later agent does not treat a dead-end link as evidence that the tune has no record.",
+        "Re-test before concluding anything about a tune."
+      ],
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DBNL-SLUG-TRAP",
+      "topic": "DBNL locator convention",
+      "claim": "The numeric slug of a DBNL lode002uyt_01_01_00NN.php URL is a sequential chunk number, not a printed page number: slug 0036 shows printed pp. 74-75, slug 0039 shows pp. 82-84, and slug 0084 shows printed p. 230.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": true,
+      "sourceIds": [
+        "SRC-L-1676",
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-1676-HERT-II-82-84"
+      ],
+      "notes": [
+        "Reading the colophon's 'p. 84' as slug 0084 lands on an unrelated funeral poem. Cite the printed page bracket and the poem title."
+      ],
+      "holds": []
+    },
+    {
+      "id": "CLM-BACKLOG-SOURCE-INVENTORY",
+      "topic": "Backlog candidate texts located but not yet researched",
+      "claim": "Exact page locators exist in the project registry for six backlog candidates (Niet en al, De Algenoegsaamheyd, Jesus Lijdende Liefde, Nieuw-Jaars Gebedt, Toe-Sang der Gelovigen, and the Christen-sangers preface), and each was located in the 1676 digital transcription; none has been read in full, classified or assessed for rights in this project.",
+      "claimStatus": "RESEARCH_OPEN",
+      "projectLevel": true,
+      "sourceIds": [
+        "SRC-L-1676-NIET-EN-AL",
+        "SRC-L-1676-ALGENOEGSAAMHEYD",
+        "SRC-L-1676-JESUS-LIJDENDE",
+        "SRC-L-1676-NIEUWJAAR",
+        "SRC-L-1676-TOESANG",
+        "SRC-L-CHRISTEN-SANGERS"
+      ],
+      "notes": [
+        "A reachable URL with an exact page is a discovery lead, not a reviewed text: genre, stanza count, tune direction, date note and rights all remain unestablished.",
+        "The tune directions quoted in the backlog for these texts (for example 'Ten is niet alle tijd, &c.' and 'Chermets secrets') are page-level sightings and have not been verified against a second witness.",
+        "This claim exists so that these sources stay traceable; it must be split into individual claims as each candidate is actually researched."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
     }
   ]
 }

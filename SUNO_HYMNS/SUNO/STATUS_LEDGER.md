@@ -1,6 +1,6 @@
 # SUNO status ledger
 
-**Snapshot:** 2026-10-25. Status is based on current conversation and retained working notes, not a scan of the user's entire computer or channel.
+**Snapshot:** 2026-10-25 (third pass). Status is based on the project registries and retained working notes, not a scan of the user's entire computer or channel.
 
 ## DUTCH-001 — «Всё сотворённое — ничто, Иисус — всё»
 
@@ -16,7 +16,9 @@
 ## DUTCH-002 — «Блаженно, блаженно — быть ничем»
 
 - **Historical source author:** Jodocus van Lodenstein.
-- **Source chain:** Lodenstein's *Hert-sterckte in Jehova. Op 1 Sam. 30:6* is dated 4 January 1674 at Fort Nieuw Rees; Abraham Rutgers later reworked Lodenstein material for *Evangelische Gezangen* (1806), hymn no. 68, *Zelfverloochening*. The Russian lyric follows the later seven-stanza hymn tradition, not a word-for-word translation of the full 1674 poem.
+- **Source chain:** Lodenstein's *II. Hert-sterckte in Jehova. Op 1 Sam. 30:6*, printed in the 1676 first edition on pp. 82–84, is dated 4 January 1674 at Fort Nieuw Rees; Abraham Rutgers later reworked Lodenstein material for *Evangelische Gezangen* (1806), hymn no. 68, *Zelfverloochening*. The Russian lyric follows the later seven-stanza hymn tradition, not a word-for-word translation of the full poem.
+- **Do not confuse with I.** A different poem, *I. Hert-sterckte in Jehova*, stands on pp. 78–81 (28 December 1673) and has its own tune names. II has no tune of its own and is sung to I's. See `../RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md`.
+- **Date caveat:** the 1676 print is reported to misprint 1664; the 1727 edition and both modern editions read 1674; the 1676 leaf has not been inspected. `EVIDENCE_HOLD` is narrowed to that literal reading only.
 - **Related later transmission:** Afrikaans Lied 276 and another Lodenstein-derived text listed as Lied 271; exact spellings and intermediate editions remain to be checked.
 - **Production state:** ASSETS_PREPARED for versions 1 and 2 (reported).
 - **Version 1:** WAV 433.240 sec; YouTube MP4 1920×1080/30 fps; Telegram MP3 320 kbps/48 kHz with cover.
@@ -36,6 +38,18 @@
 - **Artwork:** multiple generations/edits occurred. The final selected file is not pinned here; the latest direction was a cooler, restrained cinematic grade with less red and a credible carried cross.
 - **Suno prompt / version count:** NOT CAPTURED.
 - **Publication status:** UNKNOWN_NOT_VERIFIED.
+
+## DUTCH-004 — «Смиренный христианин» (working title, not approved)
+
+- **Historical author:** Jodocus van Lodenstein (1620–1677).
+- **Original title:** *Den nedrigen christen, Op Psalm 131* (1727: *Den Nederigen Christen*).
+- **Source anchor:** *Uyt-spanningen*, Utrecht, Willem Clerck, 1676, printed pp. 74–75; 7 stanzas; first publication 1676; **date of writing unknown** (no date line in either the 1676 or the 1727 printing).
+- **Tune:** `Singt als Prendete la: siet boven pag.29.` — a pointer to *Simeons Lof-sang* on p. 29. The tune's origin is untraced and no notation is held, so any recording is a modern setting.
+- **Production state:** `LYRIC_DRAFT`. A Russian adaptation draft (`DUTCH-004-RU-DRAFT v0.1`) and a production package exist in `DUTCH-004_PRODUCTION_PACKAGE.md`.
+- **Known outputs:** **none.** No SUNO generation, no audio, no cover, no export, no metadata readback.
+- **Suno style prompt:** `PROMPT-DUTCH-004-V1` is authored in this repository and **has never been submitted**. It is prospective, not recovered.
+- **Publication status:** not applicable yet — nothing exists to publish.
+- **Gates before READY_FOR_REVIEW:** owner poetic revision; freeze lyric v1.0; freeze the prompt with a revision hash before submission; read metadata back from the actual output.
 
 ## Adjacent works — keep out of the Dutch historical catalog
 

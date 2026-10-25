@@ -45,4 +45,11 @@ See SOURCE_REGISTER.md for limits of each item.
 
 ## Current state
 
-The three tracks in DUTCH_HYMN_CATALOG.md have prior research and audio/asset work in conversation, but not all have repository-resident lyrics, verbatim Suno prompts, final images or verified publication receipts. Candidates in DUTCH_HYMN_BACKLOG.md are unrecorded as produced in the current context, not proven never-made elsewhere.
+Four works are in `DUTCH_HYMN_CATALOG.md`. DUTCH-001/002/003 have prior research and audio/asset work reported in conversation, but no repository-resident lyrics, no verbatim Suno prompts, no final images and no verified publication receipts. DUTCH-004 (*Den nedrigen christen*, Psalm 131) was researched to a complete source dossier in the third pass and carries only a lyric draft.
+
+Candidates in `DUTCH_HYMN_BACKLOG.md` are unrecorded as produced in the current context — which is not proof that the owner never made them elsewhere. The backlog now also carries activation status: `DUTCH-CAND-002` became DUTCH-004.
+
+## Two method notes learned the hard way
+
+1. **DBNL slug numbers are not page numbers.** In a `lode002uyt_01_01_00NN.php` URL, `00NN` is a sequential chunk index: slug `0036` shows printed pp. 74–75, `0039` shows pp. 82–84, `0084` shows p. 230. The colophon cites printed pages, so always cite the `[pagina N]` bracket and the poem title. See `CLM-DBNL-SLUG-TRAP`.
+2. **Read the 1676 print before the critical edition.** Both *Hert-sterckte* poems and *Den nedrigen christen* are in the 1676 first edition at exact locators. The 2005 edition is a check on sense and apparatus, not the necessary route to the text — and it is copyrighted, so it cannot be the source you quote.

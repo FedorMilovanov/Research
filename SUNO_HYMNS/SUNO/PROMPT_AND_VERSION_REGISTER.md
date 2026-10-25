@@ -25,6 +25,14 @@ The exact prompt must be stored verbatim from the submitted prompt text or recov
 | DUTCH-002-V1 | Yes, local WAV/MP4/MP3 paths reported | NOT CAPTURED | NOT IN REPOSITORY | Prior properties reported; re-read actual files before relying on them | NOT VERIFIED |
 | DUTCH-002-V2 | Yes, local WAV/MP4/MP3 paths reported | NOT CAPTURED | NOT IN REPOSITORY | Prior properties reported; re-read actual files before relying on them | NOT VERIFIED |
 | DUTCH-003-V1-REPORTED | MP3 filename reported; QA incomplete | NOT CAPTURED | NOT IN REPOSITORY | ID3 tag readback and cover state unconfirmed | NOT VERIFIED |
+| DUTCH-004-RU-DRAFT-v0.1 | **None — nothing generated** | `PROMPT-DUTCH-004-V1`, authored in this repository, never submitted | v0.1 draft in the production package | NOT APPLICABLE | NONE |
+
+## Authored versus recovered prompts
+
+Two different objects are recorded here and must not be confused:
+
+- **Recovered prompt** — the exact text that was actually submitted to SUNO in an earlier session. For DUTCH-001, DUTCH-002 and DUTCH-003 no such text is held: `NOT_CAPTURED`. It must be recovered from the owner, never reconstructed.
+- **Authored prompt** — a prompt written in this repository for a work that has not been generated. DUTCH-004's `PROMPT-DUTCH-004-V1` is of this kind and carries `promptState: AUTHORED_NOT_YET_SUBMITTED`. The validator requires its `promptText` to appear byte-identically in the production package, so the registry and the document cannot drift.
 
 ## Style selection
 

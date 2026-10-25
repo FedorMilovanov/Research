@@ -23,7 +23,10 @@
       ],
       "notes": [
         "DBNL marks the underlying historical work Auteursrechtvrij.",
-        "The online text is described as a diplomatic rendering with omissions and listed corrections; inspect specific page images for date/punctuation claims."
+        "The online text is a diplomatic rendering with omissions and a published list of editorial corrections; inspect a page image for date or typographic claims.",
+        "Colophon corrections relevant to this project: p. 7 '1565 -> 1665', p. 84 '1664 -> 1674' (II. Hert-sterckte), p. 87 '1664 -> 1674' ('t Verheven Herte).",
+        "Copy transcribed: Universiteitsbibliotheek Amsterdam 113: BALIE 250.D12. Images used by DBNL come from Koninklijke Bibliotheek Den Haag 4 B 1.",
+        "A downloadable scan bundle is advertised at https://www.dbnl.org/arch/lode002uyt_01_01/pag/lode002uyt_01_01.pdf but was not acquired in this pass."
       ]
     },
     {
@@ -56,9 +59,12 @@
       "id": "SB-LODENSTEIN-BLOEMLEZING-1971",
       "title": "Bloemlezing uit de bundel Uytspanningen — selection containing II. Hert-sterckte",
       "publicationYear": 1971,
-      "editors": [],
+      "editors": [
+        "P.J. Buijnsters"
+      ],
       "sourceIds": [
         "SRC-L-HERT-II-1674-1971",
+        "SRC-L-BUIJNSTERS-1971",
         "SRC-L-REES-CONTEXT"
       ],
       "evidenceClass": "B1",
@@ -70,8 +76,9 @@
         "RIGHTS_HOLD"
       ],
       "notes": [
-        "This is a later selection, not the 1674 manuscript or the whole 1676 volume.",
-        "The date 4 January 1674 is editorially emended from a printed 1664 error and remains on EVIDENCE_HOLD until original-page image verification."
+        "Edited by P.J. Buijnsters; a later selection, not the 1674 manuscript or the whole 1676 volume.",
+        "Its headnote describes four consolation songs written during the 1673 hostage period and printed by the poet himself in 1674 as 'Meditatien over eenige van 's Heeren Gods Eygenschappen'.",
+        "Its footnote on II. Hert-sterckte states 'Er staat abusievelijk: 1664', i.e. that the print reads 1664; the date remains on EVIDENCE_HOLD until the 1676 leaf is inspected."
       ]
     },
     {
@@ -178,6 +185,55 @@
       "notes": [
         "A modern institutional page documents a source chain, but does not replace collation of each intermediary edition.",
         "Modern Afrikaans wording, edition rights and recorded performances require separate review."
+      ]
+    },
+    {
+      "id": "SB-LODENSTEIN-UYT-1727",
+      "title": "Uytspanningen, behelsende eenige stichtelyke liederen, en andere gedichten",
+      "publicationYear": 1727,
+      "edition": "9th edition",
+      "editors": [],
+      "sourceIds": [
+        "SRC-L-UYT-1727"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "An independent later typesetting of the same collection, used for collation.",
+        "It prints II. Hert-sterckte with the date '4 in Loumaand 1674' on printed p. 84, and keeps the internal tune pointer 'siet boven pag. 29' with the same pagination.",
+        "As a later edition it may descend from a corrected copy: it corroborates but does not prove what the 1676 compositor set."
+      ]
+    },
+    {
+      "id": "SB-MEDITATIEN-1674",
+      "title": "Meditatien over eenige van 's Heeren Gods Eygenschappen",
+      "publicationYear": 1674,
+      "editors": [],
+      "sourceIds": [
+        "SRC-MEDITATIEN-1674",
+        "SRC-L-CRIT-2005-INTRO",
+        "SRC-L-BUIJNSTERS-1971"
+      ],
+      "evidenceClass": "A1",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "notes": [
+        "The poet's own separate printing of the four exiled Rees hymns, described by two modern sources.",
+        "Not acquired: no copy, catalogue record or page image is held.",
+        "Collating it against the 1676 printing is the strongest available test of the group's dating."
       ]
     }
   ]

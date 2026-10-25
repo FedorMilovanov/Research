@@ -99,3 +99,42 @@ This register records publication object, edition used, and the actual access la
 - Publication state: REFERENCE
 - HOLDs: RIGHTS_HOLD
 - Notes: A modern institutional page documents a source chain, but does not replace collation of each intermediary edition. Modern Afrikaans wording, edition rights and recorded performances require separate review.
+
+## Third-pass additions — 2026-10-25
+
+## SB-LODENSTEIN-UYT-1727 — Uytspanningen, behelsende eenige stichtelyke liederen, en andere gedichten
+
+- Publication date: 1727
+- Edition: 9th edition
+- Editors: Not recorded
+- Source IDs: SRC-L-UYT-1727
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Notes: An independent later typesetting of the same collection, used for collation.
+- Notes: It prints II. Hert-sterckte with the date '4 in Loumaand 1674' on printed p. 84, and keeps the internal tune pointer 'siet boven pag. 29' with the same pagination.
+- Notes: As a later edition it may descend from a corrected copy: it corroborates but does not prove what the 1676 compositor set.
+
+## SB-MEDITATIEN-1674 — Meditatien over eenige van 's Heeren Gods Eygenschappen
+
+- Publication date: 1674
+- Editors: Not recorded
+- Source IDs: SRC-MEDITATIEN-1674, SRC-L-CRIT-2005-INTRO, SRC-L-BUIJNSTERS-1971
+- Evidence class: A1
+- Access state: NOT_ACQUIRED
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: EVIDENCE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+- Notes: The poet's own separate printing of the four exiled Rees hymns, described by two modern sources.
+- Notes: Not acquired: no copy, catalogue record or page image is held.
+- Notes: Collating it against the 1676 printing is the strongest available test of the group's dating.
+
+### Corrected entries
+
+**SB-LODENSTEIN-UYT-1676** — its colophon intervention list is now cited specifically (p. 7 `1565→1665`, p. 84 `1664→1674`, p. 87 `1664→1674`), together with the transcribed copy (UBA 113: BALIE 250.D12) and the copy used for images (KB 4 B 1). A scan bundle is advertised by the catalogue record but was not acquired.
+
+**SB-LODENSTEIN-BLOEMLEZING-1971** — editor identified as P.J. Buijnsters; its headnote on the four 1673 consolation songs and its footnote `Er staat abusievelijk: 1664` are now recorded.

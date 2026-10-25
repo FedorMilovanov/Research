@@ -1,6 +1,6 @@
 # Handoff for the next Research / Arena agent
 
-**As of:** 2026-10-25  
+**As of:** 2026-10-25, third pass (branch `arena/0bdf988d-research`, continuing PR #236's lane)  
 **Scope:** continue the SUNO and historical-research workstream without inventing missing assets or disturbing Research root authority.
 
 ## Mandatory preflight
@@ -25,6 +25,33 @@ Do not promote this scoped project to root authority. Do not change the global e
 
 The catalog distinguishes asset preparation from public release. Do not mark anything PUBLISHED_VERIFIED unless an actual public URL or direct publication receipt is checked.
 
+## Where the third pass left things
+
+**Resolved or narrowed:**
+
+- Both *Hert-sterckte in Jehova* poems are in the 1676 first edition: **I on pp. 78–81** (28 December 1673) and **II on pp. 82–84** (4 January 1674). II is a **sequel** to I — one week later, sung to I's tune, opening on I's closing image — not a duplicate. Full case: `RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md`.
+- `DUTCH_HYMN_CATALOG.md` had cited the **item-34** page as the source of II. Fixed to item 35.
+- The second colophon correction `p. 87: 1664→1674` belongs to item **36**, not to II. The date hold therefore covers one poem, not a group.
+- DUTCH-004 (*Den nedrigen christen*, Psalm 131) researched from the 1676 print to a full dossier + production package. Tune pointer resolved to printed p. 29; the tune itself is untraced.
+
+**Still open, in priority order:**
+
+1. **Inspect printed p. 84 of the 1676 impression.** This is the only thing standing between the project and an unqualified 4 January 1674. Routes: KB Den Haag **4 B 1** (the copy DBNL photographed), UBA **113: BALIE 250.D12** (the copy transcribed), the DBNL scan bundle `https://www.dbnl.org/arch/lode002uyt_01_01/pag/lode002uyt_01_01.pdf`, or a Delpher/Google Books copy. Direct download from dbnl.org is blocked in the Arena sandbox — use the page-fetch tool for text and a network-permitted environment for binaries.
+2. **Acquire the 1674 *Meditatien over eenige van 's Heeren Gods Eygenschappen***. Two modern sources describe it; no copy is held. It is the strongest independent witness for the whole Rees group's dating.
+3. **Retry the Nederlandse Liederenbank.** It returns HTTP 403 (KNAW notice, taken offline) as of 2026-10-25. Until it returns, every tune name in this corpus — *Prendete la*, *Onherroepelijke Jeugd*, *Gavotte. A la fronté*, *Rosemont waer gy vliedt* — is untraceable through the normal authority. Do not record "no melody exists" on the strength of a dead link.
+4. **Recover the real SUNO prompts for DUTCH-001/002/003.** Still `NOT_CAPTURED`. Nothing was invented to fill the gap, and nothing should be.
+
+**Do not:**
+
+- merge I and II, or use I as the source of DUTCH-002;
+- present DUTCH-004's `PROMPT-DUTCH-004-V1` as a recovered prompt — it was authored here and never submitted;
+- present the Russian draft as a translation, or as reproducing the *Prendete la* metre, which is unknown;
+- copy the 2005 critical edition's text, notes or its editorial expansions of the print's `etc.` abbreviations.
+
+## Validation
+
+`python SUNO_HYMNS/scripts/validate_project_registry.py` is now enforced by `.github/workflows/suno-hymns-registry.yml`. It checks registry state, cross-references, orphan sources, claim-to-work traceability, `EVIDENCE_HOLD` gaps, backlog/catalog Markdown against the JSON, prompt byte-identity with the production package, and read-only behaviour. If you add a source, a claim or a candidate, expect the Markdown/JSON set comparison to fail until both sides agree.
+
 ## First work package
 
 0. Read REVIEW_LOG_2026-10-25.md, CLAIM_LEDGER.md, SONGBOOK_REGISTER.md, and GENRE_AND_CLASSIFICATION.md before adding research. Run the read-only project validator: python SUNO_HYMNS/scripts/validate_project_registry.py. Respect the date EVIDENCE_HOLD for II. Hert-sterckte until the original page image is inspected.
@@ -38,11 +65,12 @@ The catalog distinguishes asset preparation from public release. Do not mark any
 
 ## Recommended next candidates
 
-1. *Niet en al, Dat is: Des werelds ydelheyd en Gods Al-genoegsaamheyd* (Lodenstein, no. 54 in the critical-edition contents) — a thematic companion to the existing “creature nothing / Jesus all” track; avoid merely repeating the same Russian lyric.
-2. *Den nedrigen christen, Op Psalm 131* (Lodenstein, no. 32) — a clear biblical anchor and distinct theme.
-3. *De algenoegsaamheyd* (Lodenstein, item no. 2), associated in the contents with Psalm 73:25 and Luke 10:42; verify exact title and references in the critical text.
+1. *'t Cruyce van een christen* (no. 57) or *Genoegen in het cleyne* (no. 47) — short and self-contained; check first whether either collides with an existing release's theme.
+2. *Jesus Lijdende Liefde* (no. 41) — Passion theme with a printed tune direction, but it repeats DUTCH-003's subject.
+3. *I. Hert-sterckte in Jehova* (pp. 78–81, 28 December 1673) — now fully separated from II and located in the 1676 print; consider only if a paired release with DUTCH-002 is intended.
+4. *De algenoegsaamheyd* (item no. 2) — Psalm 73:25 and Luke 10:42 in the title, but theologically close to DUTCH-001.
+5. *Niet en al* (no. 54) — still blocked on section count and excerpt policy.
 4. *Heil'ge Jesus, wat my lewe* — trace the Dutch source and adaptation chain behind Afrikaans Lied 271 before drafting a Russian version.
-5. *Jesus lijdende liefde* (Lodenstein, no. 41) or a Revius Passion-cycle candidate after checking its primary source and textual status.
 6. Conduct a bounded discovery pass through *Hymni ofte Loff-sangen op de Christelijcke feest-dagen ende andersins* (Utrecht tradition, 1615); do not assume the songbook's contents were used uniformly in every congregation.
 
 These are candidates, not approved or completed productions. Re-check the critical-edition table of contents and primary witness before selection.

@@ -81,6 +81,13 @@
         "Recover the exact Russian lyric revision and verbatim SUNO style prompt; neither is yet stored in this repository.",
         "Read actual file metadata and confirm output assets if a new release depends on it.",
         "The current publication status remains unverified until a public URL/receipt is checked."
+      ],
+      "claimIds": [
+        "CLM-L-1676-IMPRINT",
+        "CLM-DUTCH-001-TITLE-TUNE",
+        "CLM-DUTCH-001-DATE",
+        "CLM-ASSET-STATE",
+        "CLM-SUNO-PROMPTS"
       ]
     },
     {
@@ -155,6 +162,11 @@
         "SRC-L-HERT-I-1673-34",
         "SRC-L-HERT-II-1674-1971",
         "SRC-L-1676-COLOPHON",
+        "SRC-L-1676-HERT-I-78-81",
+        "SRC-L-1676-HERT-II-82-84",
+        "SRC-L-UYT-1727",
+        "SRC-L-BUIJNSTERS-1971",
+        "SRC-L-CRIT-2005-INTRO",
         "SRC-RUTGERS-1806-68",
         "SRC-RUTGERS-BIO",
         "SRC-AFR-L276",
@@ -163,12 +175,27 @@
       "qaStatus": "OPEN",
       "textChainNote": "The Russian lyric follows Rutgers's seven-stanza Zelfverloochening, Evangelische Gezangen (1806), hymn 68. It is not a verbatim translation of the complete Lodenstein poem.",
       "dateClaimStatus": "EVIDENCE_HOLD",
-      "dateClaimNote": "The later digital witness reads 4 January 1674 but explicitly notes that the original print has an erroneous 1664. Do not remove EVIDENCE_HOLD until the original 1676 page image or a stronger independent witness is checked.",
+      "dateClaimNote": "4 January 1674 is supported by the 1727 edition and by both modern editions, and by the December 1673 hostage context of the Rees group. The 1676 impression is reported to misprint 1664. Only the literal reading of the 1676 leaf remains unresolved.",
       "openChecks": [
-        "Do not conflate I. Hert-sterckte in Jehova (critical item 34, dated 28 December 1673) with II. Hert-sterckte in Jehova (item 35, the text linked to the Rutgers 1806 reworking).",
+        "Do not conflate I. Hert-sterckte in Jehova (printed pp. 78-81, 28 December 1673) with II. Hert-sterckte (printed pp. 82-84, 4 January 1674), which is the poem in the Rutgers chain. See RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md.",
+        "The date EVIDENCE_HOLD is narrowed to the literal reading of the 1676 impression only; inspect printed p. 84 before lifting it.",
         "Recover the exact Russian lyric revision and both verbatim SUNO style prompts.",
         "Re-read actual output metadata before relying on earlier tag notes."
-      ]
+      ],
+      "claimIds": [
+        "CLM-L-1676-IMPRINT",
+        "CLM-HERT-I-VS-II",
+        "CLM-HERT-II-SEQUEL",
+        "CLM-HERT-I-DATE-1673",
+        "CLM-HERT-II-DATE-1674",
+        "CLM-HERT-II-DATE-1727-WITNESS",
+        "CLM-HERT-EMENDATION-SCOPE",
+        "CLM-DUTCH-002-RUTGERS",
+        "CLM-AFR-L276-CHAIN",
+        "CLM-ASSET-STATE",
+        "CLM-SUNO-PROMPTS"
+      ],
+      "tuneDirection": "No independent melody: the 1676 print points the singer to I. Hert-sterckte on p. 78 ('Te singen als boven pag.78'), whose own heading names 'Onherroepelijke Jeugd' or 'Gavotte. A la fronté'. Neither tune is acquired; the modern recorded setting is not these tunes."
     },
     {
       "id": "DUTCH-003",
@@ -224,6 +251,96 @@
         "Confirm the final approved cover file.",
         "Recover the exact SUNO style prompt and lyric revision.",
         "Keep composition date as unknown unless a source establishes it."
+      ],
+      "claimIds": [
+        "CLM-REVIUS-1630",
+        "CLM-ASSET-STATE",
+        "CLM-SUNO-PROMPTS"
+      ]
+    },
+    {
+      "id": "DUTCH-004",
+      "displayTitle": "Смиренный христианин (Psalm 131) — working title, not final",
+      "displayTitleStatus": "WORKING_DRAFT",
+      "originalTitleVariants": [
+        "Den nedrigen christen, Op Psalm 131",
+        "Den Nederigen Christen, Op Psalm 131"
+      ],
+      "historicalAuthor": {
+        "name": "Jodocus van Lodenstein",
+        "years": "1620–1677",
+        "role": "author"
+      },
+      "textCategory": "Seven-stanza poetic expansion of Psalm 131, printed with a tune direction",
+      "sourceChain": [
+        "Uyt-spanningen, Utrecht, Willem Clerck, 1676, printed pp. 74-75",
+        "Uytspanningen, 9th edition, 1727, printed pp. 74-75 (collation witness)",
+        "Modern Russian literary/song adaptation, draft v0.1, authored in this repository"
+      ],
+      "tuneDirection": "Singt als Prendete la: siet boven pag.29. — a pointer to Simeons Lof-sang on printed p. 29; the tune's origin is untraced and no notation is held",
+      "structure": {
+        "stanzas": 7,
+        "printedLinesPerStanza": 8,
+        "sungLinesPerStanza": 7,
+        "note": "Lines 2-3 are short half-lines filling one divided sung line; lines 5-6 are a deliberate doubling, abbreviated in the print as 'etc.' in stanzas V and VII",
+        "source": "collation of the 1676 print, the p. 29 tune anchor, and the 1727 edition"
+      },
+      "productionState": "LYRIC_DRAFT",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "CAPTURED_IN_REPOSITORY",
+      "versions": [
+        {
+          "versionId": "DUTCH-004-RU-DRAFT-v0.1",
+          "versionKind": "LYRIC_DRAFT_ONLY",
+          "productionPackage": "SUNO/DUTCH-004_PRODUCTION_PACKAGE.md",
+          "promptCapture": "CAPTURED_IN_REPOSITORY",
+          "promptState": "AUTHORED_NOT_YET_SUBMITTED",
+          "promptId": "PROMPT-DUTCH-004-V1",
+          "promptText": "slow sacred acoustic hymn, 3/4, 65 bpm, minor mode, warm close-miked male baritone lead with low vibrato and natural diction, restrained chamber ensemble: gut-string cello pedal tones, arco contrabass, theorbo on cadences, small pipe organ pad, one low wooden flute line in verse 5, two-voice choir entering at verse 4 and opening to four parts only in verse 7, unhurried and intimate, quiet dynamics, natural room reverb, no percussion",
+          "promptFields": {
+            "exclude": "drums, drum kit, electric bass, synth pad, EDM, cinematic string swell, belting, harsh bass voice, tremolo organ, auto-tune artefacts",
+            "sections": "[Intro — cello and organ pad, 4 bars] / [Verse 1] / [Verse 2] / [Instrumental — theorbo cadence, 2 bars] / [Verse 3] / [Verse 4] / [Verse 5] / [Verse 6] / [Verse 7] / [Outro — voices only on the final line, then silence]",
+            "repetition": "In verse 5, repeat 'Отторгнут от груди — он может' once; in verse 7, repeat 'Ждите ещё Его даров' once"
+          },
+          "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-004_PRODUCTION_PACKAGE.md §6). Never submitted to SUNO; not a recovered historical prompt. Distinct from DUTCH-001/002/003, whose submitted prompts are NOT_CAPTURED.",
+          "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
+          "lyricRevisionNote": "Russian adaptation, not a translation; owner poetic revision is a required gate before READY_FOR_REVIEW. Deviations disclosed in the production package §4.",
+          "assets": {},
+          "generatedOutput": "NONE",
+          "audioExport": "NONE",
+          "cover": "NONE",
+          "metadataReadback": "NOT_APPLICABLE",
+          "qaStatus": "OPEN"
+        }
+      ],
+      "authorId": "LOD-001",
+      "workType": "BIBLICAL_CANTICLE_OR_SCRIPTURE_EXPANSION",
+      "sourceIds": [
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-1676-SIMEONS-29",
+        "SRC-L-1676-COLOPHON",
+        "SRC-L-UYT-1727",
+        "SRC-L-CRIT-2005",
+        "SRC-L-BUIJNSTERS-1971",
+        "SRC-NL-LIEDERENBANK"
+      ],
+      "claimIds": [
+        "CLM-DUTCH-004-TEXT",
+        "CLM-DUTCH-004-DATE",
+        "CLM-DUTCH-004-PS131",
+        "CLM-DUTCH-004-TUNE",
+        "CLM-DUTCH-004-RIGHTS",
+        "CLM-NL-LIEDERENBANK-OFFLINE",
+        "CLM-DBNL-SLUG-TRAP"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "The poem is a poetic expansion of Psalm 131, first published in 1676; its date of writing is unknown and no date line is printed in either the 1676 or the 1727 edition. The historical melody is unattested, so any recording of this work is a modern setting.",
+      "rightsNote": "The 1676 poem is a public-domain historical work and may be adapted. The 2005 critical edition, the 1971 anthology and the DBNL transcription/images are separate modern objects and must not be reproduced.",
+      "openChecks": [
+        "Owner poetic revision of the Russian draft; freeze as DUTCH-004-RU-DRAFT v1.0 before any generation.",
+        "Inspect the 1676 page images of printed pp. 74-75 to close the typography LOCATOR_HOLD.",
+        "Re-check the Nederlandse Liederenbank for the tune 'Prendete la' once it is back online.",
+        "Record the prompt revision hash before submission; record generation date, output filename, duration and format after it."
       ]
     }
   ],
@@ -242,5 +359,92 @@
       "state": "LYRIC_AND_VISUAL_WORK_RECORDED; audio/export state unknown",
       "notes": "Keep outside Dutch historical catalog unless reliable attribution is established."
     }
-  ]
+  ],
+  "candidates": [
+    {
+      "id": "DUTCH-CAND-001",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-002",
+      "status": "ACTIVATED",
+      "activatedAsTrackId": "DUTCH-004",
+      "activatedOn": "2026-10-25"
+    },
+    {
+      "id": "DUTCH-CAND-003",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-004",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-005",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-006",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-007",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-008",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-009",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-010",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-011",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-012",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-013",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-014",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-015",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-016",
+      "status": "OPEN",
+      "dossier": "RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md",
+      "note": "The I/II distinction and the date question are resolved to the extent the acquired sources allow; see the dossier."
+    },
+    {
+      "id": "DUTCH-CAND-017",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-018",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-019",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-020",
+      "status": "OPEN"
+    }
+  ],
+  "scopeNote": "works[] is the production catalog; candidates[] mirrors the backlog so that an ID cannot exist in one place only. An ACTIVATED candidate must name the track it became."
 }

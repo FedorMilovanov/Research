@@ -15,6 +15,8 @@ For each work/version, maintain separate records for:
 
 Never merge these into a single file or present the adaptation as a verbatim historical translation.
 
+For DUTCH-004 all six layers are deliberately kept apart in one package: the 1676 Dutch text (§4 of the research dossier), a literal gloss, a Russian adaptation draft, a declared deviation table, a musical brief and a prospective prompt. The draft is an **adaptation**, and the gloss is the layer against which fidelity must be judged.
+
 ## Known capture state
 
 | Work | Historical source | Russian lyric file | SUNO-ready lyric | Exact submitted prompt |
@@ -23,6 +25,7 @@ Never merge these into a single file or present the adaptation as a verbatim his
 | DUTCH-002 V1 | Source chain recorded; date of source II has EVIDENCE_HOLD | NOT IN REPOSITORY | NOT IN REPOSITORY | NOT CAPTURED |
 | DUTCH-002 V2 | Same source text chain; separate recording version | NOT IN REPOSITORY | NOT IN REPOSITORY | NOT CAPTURED |
 | DUTCH-003 V1 | Modern scholarly edition locator; original 1630 leaf not acquired | NOT IN REPOSITORY | NOT IN REPOSITORY | NOT CAPTURED |
+| DUTCH-004 (draft) | 1676 print pp. 74–75, read in full; 1727 collation recorded | DUTCH-004-RU-DRAFT v0.1 in `DUTCH-004_PRODUCTION_PACKAGE.md` §3 | Not yet frozen; gloss in §2 | PROMPT-DUTCH-004-V1 authored, never submitted |
 
 ## Intake checklist
 

@@ -2,7 +2,7 @@
 
 **Project ID:** SUNO-HYMNS-NL  
 **Snapshot date:** 2026-10-25  
-**State:** initialized; existing-work inventory recorded; historical research and asset verification remain open.
+**State:** third pass (2026-10-25). Existing-work inventory recorded; two historical questions advanced with primary witnesses; one new candidate researched to a lyric draft. Asset verification and prompt recovery remain open.
 
 ## Purpose
 
@@ -32,6 +32,7 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **SUNO/STATUS_LEDGER.md** — known prepared works, incomplete checks and publication boundaries.
 - **SUNO/STYLE_AND_PRODUCTION_RULES.md** — accumulated user preferences and reproducibility rules.
 - **SUNO/ASSET_MANIFEST.md** — reported local filenames, exports, metadata and unresolved verification.
+- **SUNO/DUTCH-004_PRODUCTION_PACKAGE.md** — the next work: form decision, gloss, Russian draft, deviations, musical brief, authored prompt and a per-element status table.
 - **RESEARCH/README.md** — source-evidence method for historical hymn research.
 - **RESEARCH/DUTCH_REFORMED_HYMNODY.md** — initial historical map of Dutch Reformed church singing.
 - **RESEARCH/DUTCH_HYMN_CATALOG.md** — records for the three Dutch works developed in the conversation.
@@ -41,7 +42,9 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **RESEARCH/CLAIM_LEDGER.md** — claim-by-claim support, caveats and typed HOLDs.
 - **RESEARCH/SONGBOOK_REGISTER.md** — publication editions and the actual access layer.
 - **RESEARCH/GENRE_AND_CLASSIFICATION.md** — controlled distinctions between psalms, devotional songs, sonnets, later adaptations and modern settings.
-- **RESEARCH/REVIEW_LOG_2026-10-25.md** — corrections made by the second audit.
+- **RESEARCH/REVIEW_LOG_2026-10-25.md** — corrections made by the second audit and by the third pass.
+- **RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md** — the two poems of that title, their relation, and the 1664/1674 date question.
+- **RESEARCH/CANDIDATE_DUTCH-004_DEN_NEDRIGEN_CHRISTEN.md** — researched candidate for the next production.
 - **HANDOFF_FOR_NEXT_AGENT.md** — continuation instructions for a new Arena/chat agent.
 - **data/track-catalog-v1.json** — project-local machine-readable track catalog.
 - **data/source-registry-v1.json** — project-local source registry.
@@ -68,6 +71,8 @@ The retained working context records three Dutch historical works:
 2. **«Блаженно, блаженно — быть ничем»** — Jodocus van Lodenstein, through the later seven-stanza *Zelfverloochening* reworking by Abraham Rutgers (1806). Two audio versions, two YouTube MP4s and two Telegram MP3s were reported prepared.
 3. **«Он понёс наши скорби»** — Jacobus Revius; source sonnet *Hy droech onse smerten* (first published in 1630). An MP3 filename is known; embedded-tag readback and final artwork selection are not confirmed.
 
+4. **«Смиренный христианин» (Psalm 131)** — Jodocus van Lodenstein, *Den nedrigen christen, Op Psalm 131* (1676, pp. 74–75). **Nothing produced.** A lyric draft and a production package exist; there is no SUNO output, no audio, no cover and no publication. Do not describe this work as recorded.
+
 No public release status is promoted to verified in this repository snapshot. See the per-track ledger before making public claims.
 
 ## Non-negotiable research boundaries
@@ -89,4 +94,8 @@ The validator does not repair or modify files. It fails closed on invalid global
 
 ## Next useful milestone
 
-For each track, bring the exact lyric version, the verbatim Suno style prompt, the selected cover, final audio and metadata readback into a reproducible record. In parallel, advance one candidate from the Dutch hymn backlog using a primary-text locator and verified author/text/adaptation chain before creating another musical version.
+For each **existing** track, bring the exact lyric version, the verbatim Suno style prompt, the selected cover, final audio and metadata readback into a reproducible record. Those prompts are still `NOT_CAPTURED`; they must be recovered from the owner, not reconstructed.
+
+For **DUTCH-004**, the immediate milestones are: the owner's poetic revision of the Russian draft; freezing the lyric and the prompt with a revision hash; and only then a first generation.
+
+For the **historical research**, the two highest-value acquisitions are a page image of printed p. 84 of the 1676 impression (to close the narrowed date hold) and the 1674 *Meditatien* pamphlet.
