@@ -2555,7 +2555,16 @@
     "verification": "get_file вернул size 422440 и md5 1fc7b00018c0d484eea641796e213b58 — те же, что у файла в дереве; вытесненный 1s_VudOCqgtThiwJk49eaH6Edmz6HstoG помечен «круг 45» и сохранил свои числа (414389 B, 55ae9ece547a0db13900b379ef37c54c)",
     "countMove": "четвёртый круг подряд без сдвига классов, вторая подряд переливка: слепок следует за байтами файла, а не за выводом — в «тихом» круге он отстаёт незаметно, и только правило 25 это ловит",
     "measuredAt": "2026-10-25T14:47:00Z",
-    "how": "upload_file → get_file → update_file на вытесненном объекте → два поиска по имени и листинг папки"
+    "how": "upload_file → get_file → update_file на вытесненном объекте → два поиска по имени и листинг папки",
+    "propsApplied": {
+     "at": "2026-10-25T14:52:10.735Z",
+     "свойств": 10,
+     "что": "registry_bytes=422440, registry_rows=209, registry_md5=1fc7b00018c0d484eea641796e213b58, registry_classes=A1=32,A2=35,B1=34,B2=6,C=102, registry_queue=102, registry_role=registry-mirror, source, read_state=registry_linked, rights=mirror_of_git, mirror_of_git_commit=<короткое имя коммита круга 45, семь знаков; в корпус это имя не вносится, чтобы правило 20 не читало его как sha-ссылку на ещё не влитый объект>",
+     "зачем": "свойство mirror_of_git_commit ставится последним и ровно на живом объекте: вытесненные слепки хранят то дерево, которым они залиты",
+     "how": "update_file с JSON-строкой appProperties; состояние прочитано его же ответом (size и md5 не изменились)",
+     "prBodyChars20261025r45": 165160,
+     "prBodyNote": "число прочитано обратно из API после патча тела PR #235 и после чистки двух CJK-глифов; в реестре и в корпусе это число не дублируется, чтобы не плодить самоотсылку"
+    }
    },
    "mirrorChainNameAudit20261025r45": {
     "объектовСИменемРеестра": 40,
@@ -3740,7 +3749,7 @@
     "ИСКУПЛЕНИЕ/synthesis/data/synthesis-corpus-v1.json"
    ],
    "stampedFieldsPerRegistry": {
-    "корпус": 281,
+    "корпус": 282,
     "fathers": 0,
     "nt": 0,
     "ot": 0,
