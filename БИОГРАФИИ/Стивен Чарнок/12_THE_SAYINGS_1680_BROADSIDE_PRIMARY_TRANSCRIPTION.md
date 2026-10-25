@@ -159,6 +159,19 @@ the Morning Exercise at Cripplegate*:
 страницы. Отдел фиксирует: `evidenceClass = A1` как печатный объект 1680 года, но **содержание —
 производное от sermon**, а не независимый текст.
 
+**Добавление 2026-10-25 (том 15 §3.3): жанровый предшественник broadside найден.** *Mr. Matthew
+Pool, author of that elaborate work, Sinopsis critticorum **his late sayings** a little before his
+death…* [London]: Printed for P. Brooksby, **1679** — EEBO-TCP `A55383.0001.001`, Wing **P2838**,
+ESTC R39714, CC0 1.0. **Тот же жанр**: одностраничная посмертная выборка «sayings», с нумерованными
+афоризмами (в брошюре Poole'а — о папстве: «The Church of Rome stands upon four Pillars», «one Neck
+is their strongest hold»). Заголовок подтверждает и дату смерти Poole'а: «He Dyed the 12th. of this
+Instant Stilo Nova, at Amsterdam» — 12 октября 1679 н.ст.
+
+Отдел фиксирует, что в 1680 году Чарнок был обработан **всеми формами посмертной печати**, какие
+circulated в несогласной среде: посмертные «sayings» (broadside), элегия с акростихами и эпитафией
+(*New Poems*), элегия (*An Elegy*), funeral sermon (Johnson). Broadside — не изобретение его
+издателя, а **стандартная форма**.
+
 **Добавление 2026-10-25 (том 03 §3D): sermon теперь доступен в `A1`-издании 1683 года.** EEBO-TCP
 `A32724.0001.001` (*A supplement to the several discourses upon various divine subjects*, Wing
 C3711C, 158 pp.) **перепечатывает** «A DISCOURSE OF THE Sinfulness and Cure OF THOUGHTS» (Быт. 6:5)
