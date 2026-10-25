@@ -15,6 +15,24 @@ For each work/version, maintain separate records for:
 
 Never merge these into a single file or present the adaptation as a verbatim historical translation.
 
+## Draft is not approval (added 2026-10-25)
+
+The seven states of a text are **separate facts**, and each must be dated and attributed when it is claimed:
+
+| State | What it requires |
+|---|---|
+| `SOURCE_TEXT_CONFIRMED` | read in the original printing; printed page recorded |
+| `VERIFIED_TRANSLATION` | the text exists in this repository **and** has been collated against the source |
+| `WORKING_DRAFT` | exists, unreviewed |
+| `MUSICAL_PROMPT` | the verbatim text submitted to the generator |
+| `GENERATION_OUTPUT` | a file, with metadata read from the file rather than from memory |
+| `USER_APPROVED` | the owner said so explicitly, with a date |
+| `HISTORY_UNVERIFIED` | rests on working notes from earlier sessions |
+
+**A prompt is not evidence of translation accuracy**, and a well-sounding generation is not either. **A draft discussed earlier is not an approved text.** Where this register says `NOT IN REPOSITORY`, no accuracy claim is possible — the text cannot have been checked.
+
+**Current position (2026-10-25):** no Russian text for any of DUTCH-001, DUTCH-002 or DUTCH-003 is stored here, so `VERIFIED_TRANSLATION` is empty across the catalog. DUTCH-004 holds a `WORKING_DRAFT` whose status is unchanged by the fourth pass; the fourth pass **did not** review its Russian wording.
+
 For DUTCH-004 all six layers are deliberately kept apart in one package: the 1676 Dutch text (§4 of the research dossier), a literal gloss, a Russian adaptation draft, a declared deviation table, a musical brief and a prospective prompt. The draft is an **adaptation**, and the gloss is the layer against which fidelity must be judged.
 
 ## Known capture state

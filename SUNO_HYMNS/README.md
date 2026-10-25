@@ -42,9 +42,14 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **RESEARCH/CLAIM_LEDGER.md** — claim-by-claim support, caveats and typed HOLDs.
 - **RESEARCH/SONGBOOK_REGISTER.md** — publication editions and the actual access layer.
 - **RESEARCH/GENRE_AND_CLASSIFICATION.md** — controlled distinctions between psalms, devotional songs, sonnets, later adaptations and modern settings.
-- **RESEARCH/REVIEW_LOG_2026-10-25.md** — corrections made by the second audit and by the third pass.
+- **RESEARCH/REVIEW_LOG_2026-10-25.md** — corrections made by the second audit and by the third and fourth passes.
 - **RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md** — the two poems of that title, their relation, and the 1664/1674 date question.
 - **RESEARCH/CANDIDATE_DUTCH-004_DEN_NEDRIGEN_CHRISTEN.md** — researched candidate for the next production.
+- **RESEARCH/DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md** — the eight translation decisions for *Schepselen niet en Jesus al*, with a confidence level per item.
+- **RESEARCH/DOSSIER_DUTCH-002_TEXT_HISTORY.md** — the 14 → 7 → 5 stanza history across 1676, 1806 and 1938, with the exact collation.
+- **RESEARCH/DOSSIER_DUTCH-003_REVIUS_SONNET.md** — the sonnet's dramaturgy, its turn at line 9, and the status of the discussed Russian rendering.
+- **RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md** — identification of *Heerlijckheyds Loff* (1676, pp. 155–158) and the evidence gaps around it.
+- **RESEARCH/AUDIT_2026-10-25_PASS4.md** — the fourth-pass audit: what exists, what to add, what to correct, what is verified, what stays open.
 - **HANDOFF_FOR_NEXT_AGENT.md** — continuation instructions for a new Arena/chat agent.
 - **data/track-catalog-v1.json** — project-local machine-readable track catalog.
 - **data/source-registry-v1.json** — project-local source registry.

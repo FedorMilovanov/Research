@@ -48,6 +48,21 @@ The catalog distinguishes asset preparation from public release. Do not mark any
 - present the Russian draft as a translation, or as reproducing the *Prendete la* metre, which is unknown;
 - copy the 2005 critical edition's text, notes or its editorial expansions of the print's `etc.` abbreviations.
 
+## Where the fourth pass left things (2026-10-25, supplementary brief)
+
+Four things were settled from primary or near-primary sources, and one earlier error was corrected:
+
+1. **DUTCH-002 stanza counts: 14 → 7 → 5.** The 1806 *Evangelische Gezangen* hymn LXVIII has **seven** stanzas (printed pp. 143–144). The **five**-stanza form is the 1938 Hervormde Bundel, **Gezang 205**, which drops 1806 stanzas 4 and 5 but keeps the last couplet of stanza 5 as the close of its own fourth stanza, and replaces `zielverdervend eigen` with `trots, hoogmoedig eigen`. See `RESEARCH/DOSSIER_DUTCH-002_TEXT_HISTORY.md`.
+2. **DUTCH-001 read from the 1676 print** (pp. 131–134): eight stanzas, tune line `Rosemont waar gy vliedt`, and eight **different** Christological addresses — no refrain in the source. See `RESEARCH/DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md`.
+3. **DUTCH-003 verified as a sonnet** with the turn at line 9 and six instruments in print order. The Russian text discussed earlier is **not** in the repository and is **not** approved. See `RESEARCH/DOSSIER_DUTCH-003_REVIUS_SONNET.md`.
+4. **`Heerlijckheyds Loff` identified** as a distinct ten-stanza poem, 1676 pp. 155–158, 27 August 1665, `Voyse: Un jour &c.`; registered as `DUTCH-CAND-021` with **no** work ID. The notes' `Hoog, omhoog…` is its incipit, not a second title. See `RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`.
+
+**Correction to remember:** the 1806 hymn does **not** have five stanzas. Five is the 1938 count. Do not reintroduce the error.
+
+**The most important thing this pass did not do:** it did not review any Russian lyric, because none is stored here. Do not let a future summary describe the fourth pass as having validated translations.
+
+**Standing text rules** for SUNO work now live in `SUNO/STYLE_AND_PRODUCTION_RULES.md`, with a per-work table that keeps DUTCH-002's 112–120 BPM brief out of the project defaults. **Draft ≠ approved**, and a prompt is not proof of accuracy: see the seven-state table in `SUNO/LYRIC_REGISTER.md`.
+
 ## Validation
 
 `python SUNO_HYMNS/scripts/validate_project_registry.py` is now enforced by `.github/workflows/suno-hymns-registry.yml`. It checks registry state, cross-references, orphan sources, claim-to-work traceability, `EVIDENCE_HOLD` gaps, backlog/catalog Markdown against the JSON, prompt byte-identity with the production package, and read-only behaviour. If you add a source, a claim or a candidate, expect the Markdown/JSON set comparison to fail until both sides agree.

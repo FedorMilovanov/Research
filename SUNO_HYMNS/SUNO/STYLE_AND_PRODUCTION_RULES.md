@@ -18,6 +18,34 @@ This is a living project-local playbook. It records confirmed preferences and pr
 - For *Schepselen niet en Jesus al*, the 1676 text gives a tune direction to *Rosemont waer gy vliedt*. This is a historical tune indication, not evidence that a modern SUNO take recreates the original arrangement.
 - *Hy droech onse smerten* is cataloged as a sonnet; no original melody direction is verified in the current record. Treat any music as a modern setting unless a primary source is located.
 
+## Text preparation for SUNO — standing rules
+
+These are project-wide working principles, adopted 2026-10-25 from the owner's notes. Per-work style decisions remain per-work and are recorded separately (see §"Per-work decisions").
+
+1. **Keep the source text, the stanza order and the semantic structure**, unless the owner has explicitly permitted an adaptation. If an adaptation is permitted, it is labelled an adaptation and every departure is documented.
+2. **Do not invent lines, refrains or repetitions.** Repeat text only where a musical or dramatic reason exists and can be stated. A printed `etc.` in a historical source is a *repeat instruction*, not a licence to add words.
+3. **Use echo and whisper sparingly** — normally no more than one expressive echo per corresponding passage. If an effect fits inside a stanza, write it inline in parentheses rather than restructuring the stanza.
+4. **Do not overload the lyric with technical tags** (`[Build]`, `[Pause]`, `[Instrumental]` and similar). Tags should help the performance, not displace words or lengthen the piece.
+5. **For long texts that do not fit one generation, fix tempo first** — syllabic delivery, a short introduction, short transitions, no long instrumental gaps. Do **not** solve a length problem by arbitrarily deleting important stanzas or changing the meaning.
+6. **Choose the musical style per work.** A per-work exclusion (for example, no guitar in the epic Lodenstein setting) is not a project-wide rule.
+7. **Vocal default: clear diction, a strong and intelligible lead male voice, correct stress and natural pronunciation.** Avoid excessively breathy, whispered, hoarse or gratuitously low delivery unless a specific concept calls for it.
+8. **Keep the literary translation separate from the musical adaptation.** Document and justify every departure from the source.
+
+**Precedence.** Where a per-work decision and a standing rule conflict, the per-work decision wins — but it must be written down as a per-work decision, with its reason. The standing rules exist to prevent defaults from being invented silently.
+
+**What these rules do not do.** They do not establish that any existing recording followed them. The three existing works have `NOT_CAPTURED` prompts, so compliance cannot be demonstrated retrospectively.
+
+## Per-work decisions (not project defaults)
+
+| Work | Decision | Status |
+|---|---|---|
+| DUTCH-001 | No single refrain across the eight stanzas — the Christological addresses vary in the source and must stay varied | `WORKING_DECISION` — see `../RESEARCH/DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md` |
+| DUTCH-002 | Male monastic-style polyphony, powerful organ, epic and majestic; syllabic delivery; **112–120 BPM**; short intro and transitions; no long interludes; no stretched vowels — adopted because earlier generations came out too slow and whispered | `REPORTED_FROM_EARLIER_SESSIONS`, `NOT_CAPTURED` |
+| DUTCH-002 | Guitar excluded | part of the above per-work brief only |
+| DUTCH-003 | Either atmospheric guitar and cello, or a cappella with organ/cello/male ensemble entering after the sonnet's turn | `DISCUSSED_NOT_APPROVED` |
+| DUTCH-004 | Chamber setting — cello, contrabass, theorbo, small organ pad, one flute line; two-voice choir from verse 4, four parts only in verse 7; ♩=65, 3/4 | `AUTHORED` in the production package; never generated |
+| DUTCH-CAND-021 (*Heerlijckheyds Loff*) | Male monastic ensemble and epic organ — **and a duplication risk:** the same brief appears under DUTCH-002, and with no verbatim prompts held, it is not now determinable whether one prompt was reused for two poems | `DISCUSSED_NOT_APPROVED` |
+
 ## Pronunciation marks
 
 - Inspect the exact inflected form in its sentence, not just the dictionary lemma.

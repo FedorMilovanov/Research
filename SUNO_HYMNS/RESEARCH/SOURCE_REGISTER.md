@@ -191,7 +191,7 @@ This registry is the human-readable view of data/source-registry-v1.json. The re
 - Supports: Context for the sequence of consolatory songs composed during the Rees hostage period
 - Limits / caveats: Do not treat the contextual page as proof of every detail of the hostage narrative without further primary corroboration.
 
-## SRC-RUTGERS-1806-68 — Evangelische Gezangen (1806), hymn LXVIII: Zelfverloochening
+## SRC-RUTGERS-1806-68 — Evangelische Gezangen (1806), hymn LXVIII: Zelfverloochening — printed pp. 143-144
 
 - URL: https://www.dbnl.org/tekst/_eva005evan01_01/_eva005evan01_01_0070.php
 - Source role/type: Exact historical hymnbook item in the 1806 collection
@@ -201,8 +201,8 @@ This registry is the human-readable view of data/source-registry-v1.json. The re
 - Rights state: RIGHTS_UNKNOWN
 - Publication state: REFERENCE
 - HOLDs: RIGHTS_HOLD
-- Supports: Hymn number, title, seven-stanza form and the text used as the basis for the later Russian adaptation
-- Limits / caveats: This is the Rutgers-reworked hymnbook version, not a verbatim transcription of the full 1674 Lodenstein poem. DBNL identifies the underlying 1806 book as public-domain; check terms for the digital representation separately.
+- Supports: Hymn number, title and the seven-stanza form. The full text was read in the fourth pass; the seven-stanza count is verified and corrects an earlier project statement that this hymn has five stanzas. Supplies the exact wording of 'zielverdervend eigen', 'Alles hoort den Hemel toe' and "Voor 't geloof is alles goed".
+- Limits / caveats: This is the Rutgers-reworked hymnbook version, not a verbatim transcription of the full 1674 Lodenstein poem, and it is not a stanza-subset of it either. DBNL identifies the underlying 1806 book as public-domain; check terms for the digital representation separately.
 
 ## SRC-EVANGELISCHE-GEZANGEN-1806 — Evangelische Gezangen — collection-level record (1806)
 
@@ -518,3 +518,86 @@ The nine entries below were added after reading the 1676 printing directly, the 
 - Supports: Would carry the melody identification for tune names such as 'Prendete la', 'Onherroepelijke Jeugd' and 'Rosemont waer gy vliedt'
 - Limits / caveats: Unavailable on 2026-10-25: the site returns HTTP 403 with a KNAW notice that it has been taken offline temporarily. DBNL's per-song links into it currently dead-end.
 - Limits / caveats: Not having consulted it is not evidence that a tune has no identification.
+
+## Fourth-pass additions — 2026-10-25
+
+## SRC-L-1676-SCHEPSELEN-131-134 — Schepselen Niet en Iesus Al — 1676 print, printed pp. 131-134
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0056.php
+- Printed pages: 131-134
+- Source role/type: Exact text pages of the first edition, as served by the DBNL diplomatic transcription
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Complete eight-stanza text of DUTCH-001; Tune line as printed: 'Singt als: Rosemont waar gy vliedt'; Closing date: 'Slagt-m. 1661' (November 1661), now confirmed from the print rather than only from the critical edition; The eight different Christological addresses and their varying 'all that can...' clauses; The sanctify-or-kill couplet of stanza IV
+- Limits / caveats: A diplomatic transcription, not an inspected page image. The tune line reads 'waar', where the registry previously carried the critical edition's 'waer'.
+
+## SRC-L-1676-HEERLIJCKHEYD-155-158 — Heerlijckheyds Loff — 1676 print, printed pp. 155-158
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0061.php
+- Printed pages: 155-158
+- Source role/type: Exact text pages of the first edition, as served by the DBNL diplomatic transcription
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Title 'Heerlijckheyds Loff' and incipit 'HOog! om hoog! mijn siel, na boven!'; Ten stanzas, with the tripled figures 'leven, leven, leven' -> 'lieven, lieven, lieven' -> 'loven, loven, loven'; Tune line 'Voyse: Un jour &c.' and closing date '27. in Ougstmaand 1665'; Stanzas VIII-X, which address Beauty and close doxologically
+- Limits / caveats: Only the incipit, the tripled figures, the tune line, the date and stanzas VIII-X were read closely in this pass; the full text has not been collated. The print abbreviates repeated half-lines as 'etc.'; those are repeat instructions, not lacunae.
+
+## SRC-L-CRIT-2005-HEERLIJCKHEYD — Critical-edition item 56 — Heerlijckheyds loff, p. 263
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0062.php
+- Source role/type: Modern critical text with apparatus (copyrighted)
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Item number 56 and its place in the modern edition; Apparatus note that the melody's origin is unknown and is not the 'Un jour &c.' of text 27; Characterisation of the poem as commending the glory of the heavenly life, with Christ at its centre
+- Limits / caveats: Copyrighted: paraphrase only. Item 56's number is not a count of texts or a guide to original form.
+
+## SRC-HB-1938-205-WEB — Gezang 205 ('Zalig, zalig, niets te wezen') — third-party web transcriptions of the 1938 Hervormde Bundel
+
+- URL: https://www.holyhome.nl/oud_hb/205.html
+- Secondary URL: https://www.online-bijbel.nl/gezang/205/
+- Source role/type: Two independent online transcriptions of a 20th-century hymnal item, plus a partial third
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: That Gezang 205 has five stanzas; That its stanzas correspond to 1806 stanzas 1, 2, 3, 6 and 7, with the closing couplet of 1806 stanza 5 appended to the fourth; That the 1938 form replaces 'zielverdervend eigen' with 'trots, hoogmoedig eigen'
+- Limits / caveats: Web transcriptions, not the printed bundel: not quote-safe for a disputed claim. The printed 1938 bundel is reachable as a Delpher scan (identifier MMKB06:000000593) and has not been collated.
+
+## SRC-HB-1938-PRINT — Psalmen en Gezangen voor den Eeredienst (Hervormde Bundel, 1938) — printed object
+
+- URL: https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593
+- Source role/type: The printed hymnal itself; target object for collation
+- Evidence class: A1
+- Access state: NOT_ACQUIRED
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: EVIDENCE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: Would settle the exact 1938 wording, the five-stanza composition and any melody attribution
+- Limits / caveats: Not collated. A 20th-century publication: its own rights status must be assessed before any use of its wording.
+
+## SRC-NL-LIEDERENBANK-INDEX — Nederlandse Liederenbank — records surfaced through search indexing while the site is offline
+
+- URL: https://www.liederenbank.nl/
+- Source role/type: Search-engine extracts of a scholarly song index, used only as a discovery lead
+- Evidence class: C
+- Access state: LINK_ONLY
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
+- Supports: That records exist for 'Heerlijckheyds Loff' across several 17th- and 18th-century songbooks (1676, Stapel's Lusthof 1681, Bundeltje 1718); That a recorded stanza scheme exists for the 1718 printing
+- Limits / caveats: Class C: index extracts are a discovery lead, never quote-safe and never a substitute for the database itself, which returned HTTP 403 on 2026-10-25. Do not cite these extracts as independent witnesses to a text or a melody.

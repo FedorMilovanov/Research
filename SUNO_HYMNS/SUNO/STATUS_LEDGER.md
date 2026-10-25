@@ -1,6 +1,6 @@
 # SUNO status ledger
 
-**Snapshot:** 2026-10-25 (third pass). Status is based on the project registries and retained working notes, not a scan of the user's entire computer or channel.
+**Snapshot:** 2026-10-25 (fourth pass). Status is based on the project registries and retained working notes, not a scan of the user's entire computer or channel.
 
 ## DUTCH-001 — «Всё сотворённое — ничто, Иисус — всё»
 
@@ -9,7 +9,8 @@
 - **Primary source anchor:** *Uyt-spanningen* (Utrecht, Willem Clerck, 1676), item 51 in critical-edition contents; text carries a November 1661 date and melody direction *Singt als: Rosemont waer gy vliedt*.
 - **Production state:** ASSETS_PREPARED (reported).
 - **Known outputs:** source WAV (382.8 sec); YouTube MP4 (1920×1080, 30 fps, H.264/AAC); Telegram MP3 (320 kbps, 48 kHz stereo, cover embedded).
-- **Historical research:** original title, date, eight-stanza/eight-line structure, tune direction and interpretation were researched in conversation. A consolidated claim ledger and fresh locator audit remain useful next steps.
+- **Historical research (fourth pass):** the text was read in full from the 1676 print, printed pp. 131–134. Eight stanzas confirmed; the tune line reads `Rosemont waar gy vliedt`; the eight Christological addresses are verified as varying within the stanzas, i.e. no refrain. Translation decisions and their confidence levels: `../RESEARCH/DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md`.
+- **Lyric status:** no Russian text in the repository — no accuracy claim is possible; the eight archaic expressions still need a WNT check.
 - **Suno style prompt:** NOT CAPTURED in this repository.
 - **Publication status:** UNKNOWN_NOT_VERIFIED. Do not state it was published without a checked URL.
 
@@ -24,7 +25,9 @@
 - **Version 1:** WAV 433.240 sec; YouTube MP4 1920×1080/30 fps; Telegram MP3 320 kbps/48 kHz with cover.
 - **Version 2:** WAV 438.569521 sec; YouTube MP4 1920×1080/30 fps; Telegram MP3 320 kbps/48 kHz with cover.
 - **Previously reported tags:** versioned title; artist Йодокус ван Лоденштейн; album Господь Бог — Сила Моя; genre Христианский гимн; generation-source comments removed from output. Read back actual files before relying on this state in a new release.
-- **Suno style prompts:** NOT CAPTURED verbatim in this repository.
+- **Stanza counts (fourth pass, corrected):** 1676 = **14**; 1806 *Evangelische Gezangen* LXVIII = **seven** (verified from the printed text — an earlier statement of five was wrong); 1938 Hervormde Bundel **Gezang 205** = **five**, omitting 1806 stanzas 4 and 5 and replacing `zielverdervend eigen` with `trots, hoogmoedig eigen`. The 1938 form is known only from web transcriptions (`EVIDENCE_HOLD`).
+- **Production decision recorded as per-work only:** male monastic-style polyphony, powerful organ, epic; syllabic delivery; **112–120 BPM**; short intro and transitions; no long interludes; no stretched vowels — adopted because earlier generations came out too slow and whispered. This is **not** a project default and it has **not** been demonstrated to describe either existing version; duration alone proves nothing.
+- **Suno style prompts:** NOT CAPTURED verbatim in this repository, so compliance with the tempo decision cannot be shown.
 - **Publication status:** UNKNOWN_NOT_VERIFIED.
 
 ## DUTCH-003 — «Он понёс наши скорби»
@@ -32,6 +35,9 @@
 - **Historical author:** Jacobus Revius (1586–1658; name variant Jacob Reefsen).
 - **Original title:** *Hy droech onse smerten*.
 - **Source status:** fourteen-line Passion sonnet in *Over-Ysselsche sangen en dichten*, first published at Deventer in 1630. The cited web poem page belongs to the 1930–1935 scholarly edition, not a verified photograph of the 1630 leaf.
+- **Structure verified (fourth pass):** lines 1–4 negate the named actors, 5–8 the soldiers, **line 9 is the turn** (`Ick bent, ô Heer, ick bent die u dit heb gedaen`), lines 10–13 identify the speaker with tree/cross, rope, nail, spear, scourge and bloodied crown, and line 14 (`Want dit is al geschiet, eylaes! om mijne sonden`) states the cause. See `../RESEARCH/DOSSIER_DUTCH-003_REVIUS_SONNET.md`.
+- **Russian text:** the version discussed in earlier sessions is **NOT IN THIS REPOSITORY** and **NOT approved**; the line «Я — тот, о Господи!» is a working option, not a decision.
+- **Music direction:** two options discussed, **neither approved**; no style prompt exists.
 - **Production state:** ASSETS_PREPARED_WITH_OPEN_QA.
 - **Audio:** the user supplied the filename Он понёс наши скорби — Якобус Ревиус.mp3, so an MP3 asset is reported. Actual file properties are not recorded here.
 - **ID3 metadata:** a tag-cleanup command was proposed, but successful readback was not confirmed. Verify the actual file before reporting tags as fixed.

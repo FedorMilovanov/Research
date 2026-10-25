@@ -375,3 +375,125 @@ Review state: **SUPPORTED_WITH_SCOPE_LIMITS**. HOLDs: RIGHTS_HOLD.
 - Credit Lodenstein as historical source author and Rutgers as later reviser; treat later translations/adaptations as separate textual witnesses.
 - The separate date uncertainty is isolated in CLM-HERT-II-DATE-1674; it does not automatically suspend the source-chain claim.
 - Not re-examined in the 2026-10-25 third pass: the Rutgers link keeps its previous status.
+
+## Fourth-pass additions — 2026-10-25 (supplementary brief)
+
+## CLM-DUTCH-001-ADDRESSES — DUTCH-001: eight distinct Christological addresses
+
+**Claim:** Schepselen Niet en Iesus Al varies its Christological address in every stanza (soet, lief, schoon, minlijckst, cierlijckst, soetste, waardigst) and pairs it with a different verb of attraction, so the address is not a refrain but part of each stanza's argument.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-1676-SCHEPSELEN-131-134
+
+**Notes:** Confirmed from the 1676 print, not from the critical edition. A translation that holds one address constant across all eight stanzas is a documented deviation, not a neutral choice. The address pair sits inside the stanza; the stanza's argument continues after it.
+
+**Limits / next action:** See the dossier cited above.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-001-TRANSLATION-DECISIONS — DUTCH-001: reciprocal vow, favour/disfavour, sanctify-or-kill
+
+**Claim:** The clause 'Iesu! wilt gy my' is the first half of a reciprocal vow completed by 'ick wil u, wil u alleen'; stanza II contrasts human favour with human disfavour as two ways the heart is stolen, not public opinion; and stanza IV asks Christ's love, cross and crown to sanctify the speaker's love or kill it.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-1676-SCHEPSELEN-131-134
+
+**Notes:** All three readings rest on the printed text and are recorded as working translation decisions in DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md. The reciprocal-vow reading is internal-evidence only and still needs a WNT check of the formula. No Russian text is in this repository, so no translation has been checked against these readings.
+
+**Limits / next action:** See the dossier cited above.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-001-ARCHAIC-LEXIS — DUTCH-001: eight archaic expressions awaiting a lexical check
+
+**Claim:** The expressions 'costelijck kuys', 'Reyn', "in 't dorre stickt", 'Leckre tong', 'schemer-ligt', 'Geven op de hand', 'Tegenwoordicheyd' and "d'onsigtbaarheden" all occur in the 1676 print at identifiable lines, but none has been resolved against a historical dictionary in this project.
+
+**Review state:** RESEARCH_OPEN
+
+**Source IDs:** SRC-L-1676-SCHEPSELEN-131-134
+
+**Notes:** Literal working glosses are recorded in the dossier with a confidence rating per item; 'in 't dorre stickt' and 'Geven op de hand' are the least settled. Not consulted in this pass: WNT. The 2005 apparatus would help but is copyrighted and may be paraphrased only. A glossary claim becomes usable only with a named headword and sense.
+
+**Limits / next action:** Look up each expression in the WNT (headword and sense), record the result in the dossier, and only then promote each gloss from PENDING_LEXICAL_CHECK to a decision.
+
+**Evidence gap:** No historical dictionary was consulted for any of the eight expressions.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-002-STANZAS-14-7-5 — DUTCH-002: stanza counts across the three forms
+
+**Claim:** The 1676 poem has 14 stanzas, the 1806 hymn Zelfverloochening has seven, and the 1938 Gezang 205 has five; the 1938 form omits 1806 stanzas 4 and 5 but retains the last couplet of stanza 5 as the close of its own fourth stanza.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-1676-HERT-II-82-84, SRC-RUTGERS-1806-68, SRC-HB-1938-205-WEB, SRC-HB-1938-PRINT
+
+**Notes:** This corrects an earlier project statement that the 1806 hymn has five stanzas. The 1676 and 1806 counts are verified from the prints. The 1938 count and its composition rest on two agreeing web transcriptions and are NOT yet verified against the printed bundel. The 1806 form is a reworking that drops the autobiographical exile frame of 1676 stanzas I, III and XIII, not a stanza-subset.
+
+**Limits / next action:** Collate Gezang 205 against the printed 1938 bundel (Delpher identifier MMKB06:000000593) and record the page image number.
+
+**Evidence gap:** The printed 1938 Hervormde Bundel has not been collated; only third-party web transcriptions were read.
+
+**HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD
+
+## CLM-DUTCH-002-EXPRESSIONS — DUTCH-002: zielverdervend eigen, heylsaam Niet, Alles hoort den Hemel toe, Voor 't geloof is alles goed
+
+**Claim:** 'Zielverdervend eigen' names soul-destroying self-will rather than mere possession; 'heylsaam Niet' is a 1676 phrase that does not survive into 1806; 'Alles hoort den Hemel toe' moves from the opening of 1676 stanza V to the close of 1806 stanza 3; and 'Voor 't geloof is alles goed' predicates goodness of the execution of God's counsel, not of the believer's circumstances.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-RUTGERS-1806-68, SRC-L-1676-HERT-II-82-84
+
+**Notes:** The 1806 stanza supplies its own explanation in the following three lines ('Al wat d'uitvoer van uw' raad is ... Wat de Wijsheid zelv' beslist'), which is why the line cannot be reduced to a general consolation. The 1938 form replaces 'zielverdervend' with 'trots, hoogmoedig', weakening the diagnostic claim; a translation must record which form it follows. Detailed analysis and the full 1806 text of the stanza are in DOSSIER_DUTCH-002_TEXT_HISTORY.md.
+
+**Limits / next action:** See the dossier cited above.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-003-SONNET-DRAMATURGY — DUTCH-003: the sonnet's structure, turn and closing line
+
+**Claim:** Hy droech onse smerten is a fourteen-line sonnet: lines 1-4 negate the Jewish participants, 5-8 the soldiers, line 9 is the turn to the first person ('Ick bent, o Heer, ick bent die u dit heb gedaen'), lines 10-13 make the speaker the tree, rope, nail, spear, scourge and blood-dropped crown in that order, and line 14 assigns the Passion's occurrence to the speaker's sins.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-R-HY-DROEG
+
+**Notes:** Verified line by line against the 1930-1935 scholarly edition; the 1630 leaf is still not acquired. The apparatus records one first-edition reading indirectly: '8. A heeft een drukfout: tuyschen'. The closing line's force is causal ('om mijne sonden'); the discussed Russian turn 'я виновник мук Твоих' converts the original's agentive claim into a claim of causation and must be recorded as a deviation if adopted.
+
+**Limits / next action:** Inspect the 1630 leaf, using the recorded 'tuyschen' misprint at line 8 to confirm the impression, and collate lines 1, 8, 9, 13 and 14.
+
+**Evidence gap:** The 1630 first edition has not been inspected; only the 1930-1935 collation and its apparatus are held.
+
+**HOLDs:** EVIDENCE_HOLD, LOCATOR_HOLD, RIGHTS_HOLD
+
+## CLM-HEERLIJCKHEYD-IDENTITY — Identification of 'Heerlijckheyds Loff'
+
+**Claim:** 'Heerlijckheyds Loff' ('Hoog! om hoog! mijn siel, na boven!') is a distinct ten-stanza poem by Lodenstein, printed in Uyt-spanningen (1676) on pp. 155-158, dated 27 August 1665, with the tune line 'Voyse: Un jour &c.' and critical-edition item 56; it is not a variant of any catalogued work and not part of another composition.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS  (`projectLevel: true` — concerns a text that is not a production work)
+
+**Source IDs:** SRC-L-1676-HEERLIJCKHEYD-155-158, SRC-L-CRIT-2005-HEERLIJCKHEYD, SRC-NL-LIEDERENBANK-INDEX
+
+**Notes:** The earlier uncertainty is closed: every identifying feature in the working notes matches this text, and the Russian stanzas VII-X correspond to the Dutch stanzas VIII-X, which address Beauty and close doxologically. It shares vocabulary and the 'leven / lieven / loven' triad with DUTCH-001's poem but is a different work with a different title, date, tune line and stanza count. Registered as backlog candidate DUTCH-CAND-021, not as a production track.
+
+**Limits / next action:** See the dossier cited above.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-HEERLIJCKHEYD-RECEPTION — Transmission of 'Heerlijckheyds Loff' and the 1938 trap
+
+**Claim:** The poem was reprinted as 'Heemels heerlijkheids lof' in Stapel's Lusthof (1681) and as 'HEERLYKHEITS LOF' in the Bundeltje (1718), and the 1938 Hervormde Bundel contains a modernised reworking with a different incipit ('t Oog omhoog, het hart naar boven!) and a melody attributed to Loys Bourgeois.
+
+**Review state:** SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION  (`projectLevel: true` — concerns a text that is not a production work)
+
+**Source IDs:** SRC-NL-LIEDERENBANK-INDEX, SRC-HB-1938-PRINT
+
+**Notes:** The reprint data come from search-engine extracts of the Dutch Song Database while the site itself was offline: class C discovery leads, not quote-safe. The 1938 reworking is a separate modern object with its own rights questions and must never be quoted as the 1665 poem. The Bourgeois melody attribution is a 20th-century hymnal attribution, not evidence of the poem's original tune.
+
+**Limits / next action:** Collate the 1681 and 1718 printings when reachable, and the printed 1938 bundel; retry the Dutch Song Database for 'Un jour' and record lode002uyt_01_0047.
+
+**Evidence gap:** Neither the 1681 and 1718 reprints nor the printed 1938 bundel have been collated; the melody of the 1665 tune is untraced.
+
+**HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD

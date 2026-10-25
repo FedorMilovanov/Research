@@ -72,3 +72,43 @@ The numeric slug of a DBNL `lode002uyt_01_01_00NN.php` URL is a **chunk index, n
 - Retry the Nederlandse Liederenbank when it returns online (offline since at least 2026-10-25, HTTP 403).
 - Inspect the 1676 page images of pp. 74–75 to close the DUTCH-004 typography `LOCATOR_HOLD`.
 - Recover the exact submitted SUNO prompts for DUTCH-001/002/003 — still `NOT_CAPTURED`; nothing was invented here to fill the gap.
+
+# Fourth pass — 2026-10-25 (supplementary brief)
+
+Scope: check the four works against a set of working notes from earlier sessions, without treating those notes as facts. Nothing in this pass changed any Russian lyric, because **no Russian lyric is stored in the repository**.
+
+## 1. The 1806 hymn has seven stanzas, not five
+
+Read in full: *Evangelische Gezangen* (1806), **LXVIII Zelfverloochening**, printed pp. 143–144. Seven numbered stanzas. The "five" figure belongs to the **1938** Hervormde Bundel, Gezang 205. The error is corrected in the track catalog, the source register and the new DUTCH-002 dossier.
+
+## 2. The exact omissions in the 1938 form
+
+Gezang 205 keeps 1806 stanzas 1, 2, 3, 6 and 7; **omits stanzas 4 and 5** (`Niets met al, niets zijn wij waardig…`; `U te danken zijn wij schuldig…`), while keeping the **last couplet of stanza 5** as the close of its own fourth stanza — a deletion plus a graft. It also replaces `zielverdervend eigen` with `trots, hoogmoedig eigen`, weakening a spiritual diagnosis into a moral one. Known only from two agreeing web transcriptions: `EVIDENCE_HOLD` until the printed bundel is collated.
+
+## 3. DUTCH-001 read from the print, and the tune line corrected
+
+The 1676 print, pp. 131–134, gives eight stanzas and the tune line **`Rosemont waar gy vliedt`** (the registry had the critical edition's `waer`). The eight Christological addresses were checked one by one and do differ — which is why a single universal refrain would be an adaptation, not a translation.
+
+## 4. `Heerlijckheyds Loff` identified
+
+A distinct ten-stanza poem, 1676 pp. 155–158, incipit `HOog! om hoog! mijn siel, na boven!`, tune line `Voyse: Un jour &c.`, dated 27 August 1665, item 56. The notes' `Heerlijckheyds Loff / Hoog, omhoog…` was one text, not two: the second element is the incipit. Registered as candidate `DUTCH-CAND-021` — **no work ID, no lyric, no prompt, no track**. The 1938 bundel's *'t Oog omhoog, het hart naar boven!* is a modernised reworking to a Bourgeois melody and must not be quoted as the 1665 poem; note that the 1938 bundel therefore holds **two** different Lodenstein hymns.
+
+## 5. DUTCH-003 confirmed as a sonnet, and the discussed Russian line flagged
+
+The 14-line text was checked line by line: octave of negations, turn at **line 9** with a doubled self-identification, six instruments in the order tree/cross → rope → nail → spear → scourge → bloodied crown, causal close. The discussed Russian turn («…я — виновник мук Твоих») converts an **agentive** claim into a claim of causation; that is a deviation to record if adopted, not an equivalent. The earlier Russian text is **not approved**.
+
+## 6. Statuses separated, and no prompt invented
+
+`SUNO/LYRIC_REGISTER.md` now carries a seven-state table (source text / verified translation / working draft / prompt / generation output / user-approved / unverified history) and states plainly that no work in the catalog has a verified translation. `SUNO/STYLE_AND_PRODUCTION_RULES.md` now carries the eight standing text rules, with a precedence note and a per-work table separating DUTCH-002's 112–120 BPM brief from project defaults.
+
+## 7. Registry and gate
+
+Six sources and eight claims added; candidate `DUTCH-CAND-021` mirrored in the backlog Markdown. `validate_project_registry.py` passes: 44 sources, 3 authors, 4 tracks, 33 claims, 9 songbooks.
+
+## Still open after this pass
+
+- Collate the printed 1938 Hervormde Bundel (Delpher `MMKB06:000000593`) for Gezang 205 and for *'t Oog omhoog*.
+- WNT checks for the eight DUTCH-001 expressions; `in 't dorre stickt` and `Geven op de hand` remain low-confidence.
+- Locate `heylsaam Niet`: **not present** in the 1806 text checked, so it belongs to the 1676 poem — the 1676 stanza has not been re-read for it in this pass.
+- Acquire the 1630 Revius leaf.
+- Recover the Russian drafts and the verbatim SUNO prompts for DUTCH-001/002/003.
