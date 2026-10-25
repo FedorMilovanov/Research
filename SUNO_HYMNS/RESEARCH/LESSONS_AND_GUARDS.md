@@ -142,6 +142,7 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 - **One `grep` for a version string.** The same revision is written `DUTCH-005-RU v0.8` and `DUTCH-005-RU-v0.8`; a single pattern finds half the mentions and reports success.
 - **`str.replace` with multi-line or table anchors.** It silently matches nothing. Grep the exact line, or slice between unique anchors.
 - **No image tooling in the sandbox.** `PIL` and `file` are absent, so image dimensions cannot be verified locally; the generator's aspect ratio is taken on trust and the file is read visually instead.
+- **A path outside the repository is not an asset.** Draft images lived at `/home/user/images/dutch-005/` in one session; the next session's sandbox had no such directory, and nothing had been committed. A handover line then called them "nine references", which reads as source material the owner could point at — they were generated drafts that no longer exist. Write down what a file *is* (draft, output, reference, asset) and whether it is inside the repository, or the next reader will go looking for it.
 - **DBNL is a text layer.** No claim about typography, drop capitals or `etc.` spacing can come from it. The italic markers in the transcription (`*pragt*`, `*Lusten*`, `*Goud*`) are DBNL emphasis, **not** evidence of the print's italics.
 
 ---
