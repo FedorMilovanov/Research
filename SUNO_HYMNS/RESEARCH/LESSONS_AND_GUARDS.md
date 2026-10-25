@@ -97,15 +97,20 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 
 ---
 
-## 2a. The written standard lost to the live render
+## 2a. The standard was right; I misread it — twice
 
-**What happened.** The YouTube description for DUTCH-005 was marked up to the channel's own written standard (`video-channel-manager/docs/youtube-description-rendering-standard.md`): `*bold*`, `_italic_`, and — per § 3.1 of that document — punctuation **inside** the wrapper (`*27 августа 1665.*`, `*Uyt-spanningen*,`). On the live video the markup broke: closing asterisks followed by a comma did not close, the bold ran on into the next sentence, and asterisks appeared as literal characters in the visible description.
+**What happened.** The YouTube description for DUTCH-005 was marked up with punctuation **outside** the wrappers: `*Uyt-spanningen*, вышедший`, `*Nadere Reformatie*, «…»`, `*Voyse: Un jour &c.*; её`. The channel standard (§ 3.1) says the opposite: a punctuation mark that belongs to the wrapped phrase goes **inside** it. On the live video the wrappers did not close, asterisks printed literally, bold ran into the next sentence and the paragraph cascaded.
 
-**Why it was not caught.** I had a document and used it as evidence of rendering. A document can only report what someone once saw on one other video; it is a claim about the platform, not the platform.
+**First wrong lesson.** I concluded "the platform does not render this" and stripped all markup in v2. That was wrong twice: the platform was fine, and the owner had asked for bold and italic. Removing formatting is not a fix for a formatting bug.
 
-**Guard.** *A written standard is not a render.* Before shipping more than a few dozen characters of platform markup, put one test string in the actual editor and look at the preview. Then write down which patterns worked **on that platform version, that day** — as this project now does in `SUNO/DUTCH-005_YOUTUBE.md` § 0, with the failed strings quoted literally.
+**Second wrong lesson in the same pass.** v2 replaced the section lead-ins with invented numbers — `1. Где и когда он напечатан`, `2. Как устроен текст`. No instruction asked for that, and § 7.3 forbids turning a description into "a visible questionnaire of headings". The lead-ins belong as **bold phrases inside the paragraph**, the way the owner's own sample does it.
 
-**Second-order lesson, the embarrassing one.** The same pass contained an arithmetic error in a public-facing text: "the second edition came out eight years before the author's death" — 1679 is **two years after** 1677. It sat in a pinned comment, in a project whose whole premise is that its documents can be trusted, and it survived a source run because the sources were checked against the *claims I chose to verify*, not against the text as written. Guards: read numbers out loud as a sentence ("1679 — two years after 1677"), and re-read finished copy once against nothing but arithmetic.
+**Guards, now mechanical.**
+- `scripts/check_youtube_markup.py` fails when a closing `*` or `_` is followed by anything other than a space or end of line. That single rule was the whole bug.
+- Markup rules are copied from the source document into the delivery file itself, with a correct and a wrong example side by side, so the next agent does not re-derive them.
+- Before blaming a platform, re-read the platform's own instructions and check whether I followed them. "The tool is broken" is the last hypothesis, not the first.
+
+**The number that was actually wrong.** The pinned comment said the 1679 second edition appeared "eight years before the author's death"; it appeared **two years after** it. Read dates as sentences, not as arithmetic.
 
 ## 3. Mechanical hazards
 

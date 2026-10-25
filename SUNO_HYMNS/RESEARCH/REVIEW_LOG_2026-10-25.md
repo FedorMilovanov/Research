@@ -517,3 +517,15 @@ The owner published the description and the render came back broken: asterisks v
 **And an arithmetic error.** The pinned comment said the 1679 second edition came out "eight years before the author's death". It came out **two years after** it. Fixed; lesson written into `LESSONS_AND_GUARDS.md` § 2a.
 
 **Status of claims:** unchanged from pass 20 — the source run stands, the one open text defect (stanza 3.2) stands.
+
+# Twenty-second pass — 2026-10-25 (markup restored; my two bad calls corrected)
+
+Three complaints, three different causes, all mine.
+
+**1. YouTube bold and italic disappeared.** In v1 I put punctuation *outside* the wrappers (`*Uyt-spanningen*,`), which violates § 3.1 of the channel standard and breaks the pair in the live editor. In v2 I "fixed" it by deleting all markup — which removed what the owner asked for. **v3 restores 12 bold spans and 5 italic lines and follows the standard.** New gate: `scripts/check_youtube_markup.py` fails when a closing `*` or `_` is followed by anything but a space or end of line.
+
+**2. Invented numbers.** v2 introduced `1. Где и когда…`, `2. Как устроен текст…`. Nothing asked for that; § 7.3 forbids a description built as a questionnaire of headings. Removed; bold lead-in phrases inside paragraphs instead, as in the owner's sample.
+
+**3. Telegram came out italic and with merged link lines.** My Telegram text used a **single** asterisk for bold, and in the field the owner copies from a single asterisk is *italic*; link labels were wrapped in the same markup, and a line break inside a wrapper collapses on paste, so three links arrived as one line. Also `vk.com/the_lord_god_is_my_strength` carries underscores. v2 of `SUNO/DUTCH-005_TELEGRAM.md`: bold is `**` only, italic only on whole lines, and **no markup at all on link lines**.
+
+**Lesson recorded** in `LESSONS_AND_GUARDS.md` § 2a, replacing the earlier wrong entry that blamed the platform: the standard was right and I misread it; "the tool is broken" is the last hypothesis.

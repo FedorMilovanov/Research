@@ -51,6 +51,22 @@ jobs:
       - name: Validate the project registries
         run: python3 SUNO_HYMNS/scripts/validate_project_registry.py
 
+      - name: Check YouTube/Telegram markup wrappers
+        # A closing * followed by a comma does not close on YouTube: the asterisk
+        # prints literally and the bold cascades through the paragraph. This gate
+        # enforces the rule that a wrapper closes against a space or end of line.
+        run: |
+          set -euo pipefail
+          python3 SUNO_HYMNS/scripts/check_youtube_markup.py SUNO_HYMNS/SUNO/DUTCH-005_YOUTUBE.md || true
+          python3 - <<'PY'
+          import re, subprocess, sys
+          from pathlib import Path
+          src = Path("SUNO_HYMNS/SUNO/DUTCH-005_YOUTUBE.md").read_text(encoding="utf-8")
+          body = src.split("```text\n", 1)[1].split("\n```", 1)[0]
+          Path("/tmp/dutch005-yt.txt").write_text(body, encoding="utf-8")
+          PY
+          python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-yt.txt
+
       - name: Check that the prose names the current revision
         # Structural validation cannot see that four documents still describe the
         # previous lyric revision, or that a document claims "five stress marks"
