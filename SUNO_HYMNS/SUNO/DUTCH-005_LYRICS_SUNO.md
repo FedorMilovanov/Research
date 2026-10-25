@@ -1,14 +1,14 @@
 # DUTCH-005 — SUNO-ready lyric
 
 **«Слава Господня»** — Йодокус ван Лоденстейн
-**Revision:** `DUTCH-005-RU v0.5` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md), which is the clean public text.
+**Revision:** `DUTCH-005-RU v0.6` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md), which is the clean public text.
 **Status:** working draft, **not approved**; **never submitted to SUNO**.
 
 Differences from the clean lyric, and no others:
 
 1. **Structural tags** — `[Intro]`, `[Verse 1]`…`[Verse 10]`, `[Outro]`. Not sung; no bare stanza numbers in the body, because a bare `1` or `2` can be read as text.
 2. **One echo**, inline in verse 10: `(хвалить)`.
-3. **Six stress marks**, on six words — `драго́е`, `тре́пета`, `сто́ит`, `соединена́`, `дару́ет`, `помы́сли`. Chosen by rule, not sprinkled: see the note below the text.
+3. **Five stress marks**, on five words: `тре́пета`, `сто́ит`, `помы́сли`, `соединена́`, `дару́ет`. Each answers a rule; see below.
 
 Everything else is left unmarked on purpose.
 
@@ -24,13 +24,13 @@ There is **no chorus**: the source has no refrain, and its repetitions — the t
 Лишь там, где Иисуса зрят.
 Всё, что видишь ты здесь,
 Всё, что слышишь ты здесь, —
-Не о том твоя жизнь, любовь, хвала;
+Не в том твоя жизнь, любовь, хвала;
 Всё, чего хочешь здесь,
 Сердца твоего не стоит.
 
 [Verse 2 — Lead, choir enters on the last line]
 Блеск и красота — обман,
-Всё драго́е — суета,
+Всё, что драго, — суета,
 Гаснет радость, чуть вкусил,
 Злато, серебро — тщета.
 Там драгоценная кровь,
@@ -55,10 +55,10 @@ There is **no chorus**: the source has no refrain, and its repetitions — the t
 Без труда, без боли,
 Без болезни, без тре́пета,
 Без мученья, без истомы.
-Душа праздная, помы́сли,
-Душа праздная, помы́сли,
+Суетная душа, помы́сли,
+Суетная душа, помы́сли,
 Без смерти — вечная жизнь, жизнь, жизнь;
-Душа праздная, помы́сли,
+Суетная душа, помы́сли,
 Что Небо милостиво дару́ет.
 
 [Verse 5 — Lead, choir sustained]
@@ -74,9 +74,9 @@ There is **no chorus**: the source has no refrain, and its repetitions — the t
 
 [Verse 6 — Lead, choir answers the call line]
 Безумцы, что в грехе живут,
-Творя его! Не знаете,
+Творя его, — не знаете,
 Что смерть и ад в груди у вас
-Доселе не расстались?
+Доселе не отступили?
 Хотите жизни вы?
 Хотите жизни вы?
 Жизнь добродетелей — жизнь, жизнь, жизнь;
@@ -96,8 +96,8 @@ There is **no chorus**: the source has no refrain, and its repetitions — the t
 
 [Verse 8 — Choir rejoins, building]
 Прекраснейшая Красота!
-Причина всей красы, что мнится,
-Та с годами и с привычкой
+Причина красы, что мнится здесь,
+С годами и с привычкой
 Меньше радует иль пропадёт.
 Тебе, Красота, поклоняюсь,
 Тебе, Красота, поклоняюсь,
@@ -110,11 +110,11 @@ There is **no chorus**: the source has no refrain, and its repetitions — the t
 Здесь можно помыслить, —
 Любовь людей и их обычай —
 Всё это только тень.
-Всё это сердце мне крадёт,
-Всё это сердце мне крадёт,
+Ты моё сердце крадёшь,
+Ты моё сердце крадёшь,
 Коль что любить — любить, любить, любить;
-Всё это сердце мне крадёт:
-Всё это выше всех люблю.
+Ты моё сердце крадёшь:
+Тебя превыше всех люблю.
 
 [Verse 10 — Full male choir, all voices]
 О, если б все языки земли,
@@ -124,44 +124,43 @@ There is **no chorus**: the source has no refrain, and its repetitions — the t
 Воспряньте: сердце, уста, рука,
 Воспрянь, моя цитра; ибо
 Иисуса — хвалить, хвалить, хвалить (хвалить);
-Воспряньте, всё, что прах и тлен;
+Воспряньте все: есть предмет хвалы;
 Пой без конца Иисусову хвалу.
 
 [Outro — Organ alone, two bars, then silence]
 ```
 
-## Stress — six words, and six only
+## Stress — five words, and five only
 
-An accent in a lyric is not a label, it is a change to the text the model reads. Applied broadly it bends the diction and flattens the delivery, so every mark below has to earn its place by a rule, and the rules are in [`STYLE_AND_PRODUCTION_RULES.md`](STYLE_AND_PRODUCTION_RULES.md).
+An accent in a lyric is not a label, it is a change to the text the model reads. Applied broadly it bends the diction and flattens the delivery, so every mark has to answer a rule; the rules are in [`STYLE_AND_PRODUCTION_RULES.md`](STYLE_AND_PRODUCTION_RULES.md).
 
-| Word | Place | Stress | Rule it answers |
+| Word | Place | Stress | Rule |
 |---|---|---|---|
-| драго́е | 2.2 | дра-**го́**-е | **heard sung wrong** — the take sang *дра́гое* |
-| сто́ит | 2.7 | **сто́**-ит | **two stresses in one spelling**: `сто́ит` = is worth, `стои́т` = costs; only the accent says which |
-| тре́пета | 4.3 | **тре́**-пе-та | **heard sung wrong** — the take sang *трепе́та* |
-| помы́сли | 4.5, 4.6, 4.8 | по-**мы́**-сли | **imperative** — the form's stress is not where a model defaults |
-| соединена́ | 5.4, 5.5, 5.7, 5.8 | со-е-ди-не-**на́** | **short participle, stress on the ending** — the model defaults to the stem |
-| дару́ет | 4.9, 5.9 | да-**ру́**-ет | **`-у́ет` verb** — *да́рует* is the common error, and it is wrong here |
+| сто́ит | 2.7 | **сто́**-ит | one spelling, two stresses: `сто́ит` = is worth, `стои́т` = costs |
+| тре́пета | 4.3 | **тре́**-пе-та | heard sung wrong — the take sang *трепе́та* |
+| помы́сли | 4.5, 4.6, 4.8 | по-**мы́**-сли | imperative; the form's stress is not where a model defaults |
+| соединена́ | 5.4, 5.5, 5.7, 5.8 | со-е-ди-не-**на́** | short participle, stress on the ending |
+| дару́ет | 4.9, 5.9 | да-**ру́**-ет | `-у́ет` verb; *да́рует* is the common error |
 
-**Absent on purpose, and this is the point of the list:**
+**Absent on purpose:**
 
-- monosyllables — `зрят`, `ввысь`, `прах`, `тлен`, `тень`, `свет`: an accent can only be read as a vocal instruction;
+- monosyllables — `зрят`, `ввысь`, `прах`, `тень`, `свет`: an accent there can only be read as a vocal instruction;
 - every ё-word — `всё`, `моё`, `Нём`, `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт`: the letter already carries the stress, and a second mark would be double marking;
-- ordinary polysyllables with one possible stress — `душа`, `сердце`, `любовь`, `жизнь`, `радость`, `Небо`, `слава`, `ангелов`: this is the bulk of the text, and accenting it is exactly the blanket practice that was rejected;
-- names and forms not yet at risk here — `Иису́с`, `уста́` are **unmarked**; if a take gets them wrong they earn a mark, not before.
+- plain polysyllables with one possible stress — `душа`, `сердце`, `любовь`, `жизнь`, `радость`, `Небо`, `слава`, `ангелов`, `красота`: this is most of the text, and marking it is the blanket practice that was tried and rejected;
+- `драго́е` is gone with the word: v0.6 reads «Всё, что драго, — суета», where `драго` cannot be stressed wrong. **A word that needs a mark is often the wrong word**;
+- `Иису́с` and `уста́` stay unmarked: if a take gets them wrong they earn a mark, not before.
 
-**Sung stress versus dictionary stress.** Two places in this text could legitimately be sung against the dictionary, and both are left alone:
+## Where a sung stress may differ, and where it may not
 
-1. **Rhyme.** `суета` / `тщета` (2.2, 2.4) and `хвалы` (2.7) sit where the stress falls anyway; nothing here needs pushing. If a later musical setting puts the rhyme on a weak syllable and the singer moves the stress, that is a legitimate sung form — record it, do not "correct" it.
-2. **Metre.** `Сто́ит всей жизни, любви и хвалы` is ten syllables on one breath; a stress displaced by the tune there is a performance decision. The mark says which word the line is about (`сто́ит`, not `стои́т`); it does not forbid a musical inflection around it.
+**Rhyme.** `суета`/`тщета` (2.2, 2.4) and `хвалы` (2.7) fall where the stress belongs anyway; nothing in this text needs a stress pushed for a rhyme. If a later setting forces one, the sung form wins and is recorded — that is a performance decision, not an error.
 
-What is **not** allowed is a stress that nothing in the stanza explains — that is a defect, and it is what the two "heard wrong" marks exist to prevent.
+**Metre.** `Сто́ит всей жизни, любви и хвалы` is a ten-syllable line; the tune may lean on it, but the mark fixes which word is meant (`сто́ит`, not `стои́т`), and it does not forbid an inflection around it.
 
-Mechanical report for this file:
+**Not allowed:** a stress nothing in the stanza explains. That is a defect, and it is why the marks exist.
 
 ```
 python scripts/check_ru_lyric.py SUNO/DUTCH-005_LYRICS.md SUNO/DUTCH-005_LYRICS_SUNO.md
-→ accented words: 6 (Стоит, дарует, драгое, помысли, соединена, трепета)
+→ clean lyric: 0 accented words · SUNO file: 5 accented words
 → ё to check: «все языки» (10.1) — correct plural, no ё needed
 ```
 
@@ -192,7 +191,7 @@ Never solve a duration problem by removing a stanza.
 - tripled word checked against the Dutch: `жизнь` in 3–6, `любить` in 7–9, `хвалить` in 10;
 - threefold call in verses 1, 3, 4, 5, 6, 7, 8, 9; verse 2 varies it as the print does (`siet / hoort / wenscht`); verse 10 has none;
 - no line, refrain or repetition that is not in the 1676 print;
-- `ё` preserved where it changes the word;
-- stress marks: **six**, each traceable to a rule above; no other word altered;
-- ё printed wherever it belongs (`всё`, `моё`, `Нём`, `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт`), and `все` kept where the plural is meant (10.1);
-- wording checked word for word against [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — the two files differ only in the tags, the echo and the two accents.
+- every line re-read against the print for v0.6 — 1676 text fetched and quoted, see [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) § "Three claims rejected";
+- `ё` printed wherever it belongs; `все` kept where the plural is meant (10.1);
+- stress marks: **five**, each traceable to a rule; no other word altered;
+- wording checked word for word against the clean lyric — the two files differ only in the tags, the echo and the five accents.

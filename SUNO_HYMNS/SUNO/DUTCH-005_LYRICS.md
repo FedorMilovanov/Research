@@ -3,10 +3,10 @@
 **«Слава Господня»** — Йодокус ван Лоденстейн (1620–1677)
 *Heerlijckheyds Loff*, *Uyt-spanningen*, 1676, printed pp. 155–158 — collated against the ninth edition, 1727.
 
-**Revision:** `DUTCH-005-RU v0.5` — replaces v0.4.
+**Revision:** `DUTCH-005-RU v0.6` — replaces v0.5.
 **Status:** working draft, **not approved**.
 
-This file holds the **clean lyric only**: no tags, no prompts, no accent marks. Performable version with structural tags and six stress marks: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md). Style: [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md). Gloss and deviations: [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3, §5.
+This file holds the **clean lyric only**: no tags, no prompts, no stress marks. Performable version with structural tags and five stress marks: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md). Style: [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md). Gloss and deviations: [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3, §5.
 
 An **adaptation**, not a translation. Ten stanzas in source order; the threefold call and the tripled word are the source's own; **no line, refrain or repetition has been added**.
 
@@ -20,14 +20,14 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 Лишь там, где Иисуса зрят.
 Всё, что видишь ты здесь,
 Всё, что слышишь ты здесь, —
-Не о том твоя жизнь, любовь, хвала;
+Не в том твоя жизнь, любовь, хвала;
 Всё, чего хочешь здесь,
 Сердца твоего не стоит.
 
 ## 2
 
 Блеск и красота — обман,
-Всё драгое — суета,
+Всё, что драго, — суета,
 Гаснет радость, чуть вкусил,
 Злато, серебро — тщета.
 Там драгоценная кровь,
@@ -54,10 +54,10 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 Без труда, без боли,
 Без болезни, без трепета,
 Без мученья, без истомы.
-Душа праздная, помысли,
-Душа праздная, помысли,
+Суетная душа, помысли,
+Суетная душа, помысли,
 Без смерти — вечная жизнь, жизнь, жизнь;
-Душа праздная, помысли,
+Суетная душа, помысли,
 Что Небо милостиво дарует.
 
 ## 5
@@ -75,9 +75,9 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 ## 6
 
 Безумцы, что в грехе живут,
-Творя его! Не знаете,
+Творя его, — не знаете,
 Что смерть и ад в груди у вас
-Доселе не расстались?
+Доселе не отступили?
 Хотите жизни вы?
 Хотите жизни вы?
 Жизнь добродетелей — жизнь, жизнь, жизнь;
@@ -99,8 +99,8 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 ## 8
 
 Прекраснейшая Красота!
-Причина всей красы, что мнится,
-Та с годами и с привычкой
+Причина красы, что мнится здесь,
+С годами и с привычкой
 Меньше радует иль пропадёт.
 Тебе, Красота, поклоняюсь,
 Тебе, Красота, поклоняюсь,
@@ -114,11 +114,11 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 Здесь можно помыслить, —
 Любовь людей и их обычай —
 Всё это только тень.
-Всё это сердце мне крадёт,
-Всё это сердце мне крадёт,
+Ты моё сердце крадёшь,
+Ты моё сердце крадёшь,
 Коль что любить — любить, любить, любить;
-Всё это сердце мне крадёт:
-Всё это выше всех люблю.
+Ты моё сердце крадёшь:
+Тебя превыше всех люблю.
 
 ## 10
 
@@ -129,56 +129,64 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 Воспряньте: сердце, уста, рука,
 Воспрянь, моя цитра; ибо
 Иисуса — хвалить, хвалить, хвалить;
-Воспряньте, всё, что прах и тлен;
+Воспряньте все: есть предмет хвалы;
 Пой без конца Иисусову хвалу.
 
 ---
 
-## Changelog — v0.4 → v0.5
+## Changelog — v0.5 → v0.6
 
-Full re-read against the Dutch. Seven defects, all in wording I had previously signed off as correct.
+Six changes, all from a second reader's review checked against the 1676 print. Three of that review's claims are **rejected**, and the reasons are below the table — a rejected claim is as much a finding as an accepted one.
 
-| St. | v0.4 | v0.5 | Why it was wrong |
+| St. | v0.5 | v0.6 | Why |
 |---|---|---|---|
-| 1 | *Там, где Иисуса зрят* | *Лишь там, где Иисуса зрят* | the Dutch has `maar` — **only** there. Without it the line reads as a plain statement instead of the stanza's whole argument |
-| 1 | *Не твоя это жизнь, любовь, хвала* | *Не о том твоя жизнь, любовь, хвала* | the old line could be read as "this life is not yours" — i.e. a statement about ownership, not about what the living-and-praising is directed at |
-| 2 | *Гаснет радость, как туман* | *Гаснет радость, чуть вкусил* | **"как туман" was an image I invented** — the Dutch is `Lusten met 't gebruyck verdwijnen`: pleasures vanish *with the use of them*. A cloud is not in the text |
-| 4 | *О, праздная, помысли* | *Душа праздная, помысли* | the Dutch addresses the soul (`O! yd'le siel bedenckt`); the ellipsis dropped the vocative and made the line sound like an address to a woman |
-| 4 | *Что Небо милость дарит тебе* | *Что Небо милостиво дарует* | `goedig schenckt` = kindly bestows; "дарит милость" is a gift of mercy, a different thing |
-| 5 | *Жизнь добродетелей святых* | *Жизнь в совершенных добродетелях* | the old line said "the life **of the saints'** virtues" — a possessive the Dutch does not have. `Leven in volmaackte deugden` = life **in perfect virtues** |
-| 6 | *Безумцы, кто в грехе живёт… не знаете* | *Безумцы, что в грехе живут… не знаете* | agreement was broken: singular relative with plural verb. `что` = которые, plural, now agrees with `не знаете` |
-| 6 | *Начните здесь добродетель* | *Начните жизнь добродетели* | "начать добродетель" is not idiomatic and loses `het deugdsaam leven` = the virtuous life |
-| 7 | *Желанный, и любви достойный* | *Желанный и любви достойный* | stray comma split a single predicate |
-| 8 | *Причина всей красы земной* | *Причина всей красы, что мнится, / Та с годами…* | `wat hier schoon schijnt` = what **seems** beautiful here. The old line asserted beauty outright and dropped the `Die`-clause; `Та` now carries the antecedent cleanly |
-| 10 | *Воспряньте: сердце, речь, рука* | *Воспряньте: сердце, уста, рука* | `mond` is the **mouth**, not speech. All three members of the Dutch list are now present, in order |
-| 10 | *Воспряньте, все, кто здесь прах* | *Воспряньте, всё, что прах и тлен* | `кто` cannot refer to dust; and `hier is stoff` = "all here that is dust", which `что` renders correctly |
+| 1 | *Не о том твоя жизнь…* | *Не в том твоя жизнь…* | «не в том» is the Russian for "does not consist in that", which is exactly the elliptical `Is uw costlijck leven…`; «не о том» drifts towards "not about that" |
+| 2 | *Всё драгое — суета* | *Всё, что драго, — суета,* | same meaning, and the substantivised *драгое* — the word that needed an accent — disappears. A word that has to be propped up by a stress mark is usually the wrong word. `al 't costelijck` is kept in «драго», and the echo with «драгоценная кровь» survives |
+| 4 | *Душа праздная, помысли* | *Суетная душа, помысли* | `ydel` is the poem's own root: st. 2 renders `Ydelheyd` as «суета». Keeping the root keeps the echo; «праздная» was the other legitimate reading of `ydel` and is recorded in the package |
+| 6 | *Творя его! Не знаете,* | *Творя его, — не знаете,* | the Dutch runs on without a break into `Weet gy niet`; an exclamation mark cut the sentence in half |
+| 6 | *Доселе не расстались?* | *Доселе не отступили?* | **the meaning was wrong.** `расстаться` = part from each other, which is not what `u de dood, en / Hel nog in den boesem cleeft` says — death and hell still **cleave** to the bosom |
+| 8 | *Причина всей красы, что мнится, / Та с годами…* | *Причина красы, что мнится здесь, / С годами…* | `wat hier schoon schijnt` = what **seems** beautiful **here**; «здесь» was missing and «Та» stood without a clear anchor. The clause now runs straight on from «красы» |
+| 9 | *Всё это сердце мне крадёт… / Всё это выше всех люблю* | *Ты моё сердце крадёшь… / Тебя превыше всех люблю* | **the reference was broken.** In Russian «Всё это» chains to the earthly list two lines above, so the stanza ended up loving the shadows above all. The Dutch `Dit steelt mijn hert en al` does not point at that list |
+| 10 | *Воспряньте, всё, что прах и тлен* | *Воспряньте все: есть предмет хвалы* | `hier is stoff` is "here is matter" — material for praise, as in `stof tot klagen`; and the old line mixed a plural imperative with a singular subject |
+
+## Three claims rejected — with the print in hand
+
+1. **"Stanza 8 lost a negation: `noch` = neither… nor."** The 1676 print reads **`Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt`** — `nog`, not `noch`, and `Min vermaackt` is affirmative; there is no negative anywhere in the clause. Read as "neither through years nor through custom does it please less, and it never vanishes", the sentence has no negation to carry the "neither… nor", and it would make the poem say the contrary of what stanza 9 says. **No negation was lost; none was there.** The proposed Russian «не померкнет, не пройдёт» inserts one.
+2. **"`Die` refers to the heavenly Beauty."** It cannot. The stanza addresses that Beauty with `U, Schoonheyd, bid ick aan` — adoration — so a clause saying it fades would contradict the poem. `Die` reaches back to `wat hier schoon schijnt`, the earthly things that merely seem beautiful, which is what my Russian now says.
+3. **"`моего`… person clash in stanza 6 is a bug in the Russian."** The clash is in the Dutch: `Hersenlosen, die de snooden / Sonden doet, en daar in leeft` is a plural noun with a singular relative verb, then `Weet gy niet` turns to the second person. Russian «что в грехе живут… не знаете» mirrors that exactly. It is not smoothed over, because smoothing it would hide a feature of the print.
+
+**Two suggestions declined for the same reason — they are style, not text:** `Cijter` stays «цитра» (a cither, not a Greek κιθάρα), and `wakkerheyd` stays «бодрость» (the wakefulness of the angels, not "zeal"). «Чуть вкусил» also stays: `Lusten met 't gebruyck verdwijnen` is precisely "pleasures vanish with the using".
 
 ## Metre — measured
 
-Counts per stanza, from the text above.
+Counts per stanza, from the text above, taken by machine.
 
 | St. | lines 1 · 2 · 3 · 4 | call | tripled | close |
 |---|---|---|---|---|
-| 1 | 6 · 6 · 6 · 8 | 6 | 10 | 8 |
+| 1 | 6 · 6 · 6 · 8 | 6 | 9 | 8 |
 | 2 | 7 · 7 · 7 · 7 | 7 | 10 | 9 |
 | 3 | 7 · 7 · 8 · 6 | 7 | 9 | 6 |
-| 4 | 8 · 6 · 8 · 8 | 8 | 9 | 10 |
+| 4 | 8 · 6 · 8 · 8 | 9 | 9 | 10 |
 | 5 | 10 · 5 · 8 · 8 | 8 | 6 | 9 |
-| 6 | 8 · 8 · 8 · 7 | 6 | 9 | 9 |
+| 6 | 8 · 8 · 8 · 8 | 6 | 9 | 9 |
 | 7 | 9 · 8 · 10 · 9 | 6 | 11 | 9 |
-| 8 | 8 · 9 · 8 · 9 | 9 | 10 | 8 |
-| 9 | 9 · 6 · 9 · 6 | 8 | 10 | 8 |
+| 8 | 8 · 9 · 7 · 9 | 9 | 10 | 8 |
+| 9 | 9 · 6 · 9 · 6 | 7 | 10 | 8 |
 | 10 | 9 · 6 · 9 · 10 | 9 | 10 | 11 |
 
-Statement lines run 5–10 (mostly 7–9), call 6–9, tripled 9–11, close 6–11. **Not a rigid scheme, and not claimed as one.** These are counts of the text as printed above, done by machine, not estimates. They support syllabic declamation over a steady beat; they do not support a fixed note-per-syllable melody. Two short lines are deliberate: stanza 5 line 2 (`К славе Господней`, 5) is short because the Dutch is a bare dedication line, and stanza 3's close (`Эта жизнь — в вышине`, 6) is short because the Dutch closes on `Dat is boven`. Stanza 5 line 1 is long (10) because it is the one place where `in volmaackte deugden` survives intact.
+Statement lines 5–10, call 6–9, tripled 9–11, close 6–11. **Not a rigid scheme, and not claimed as one.** It supports syllabic declamation over a steady beat; it does not support a fixed note-per-syllable melody. Three lines are deliberately outside the middle of the range: stanza 5 line 2 (5) is the Dutch's bare dedication, stanza 3's close (6) is `Dat is boven`, and stanza 5 line 1 (10) is the one place where `in volmaackte deugden` survives whole.
 
-## Stanza 8 — a reading that must be declared
+## Stanzas 8 and 9 — what the pronouns point at
 
-`Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt` — "which, through years or custom, pleases less, **or ever** vanishes".
+`Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt` — "which, through years or custom, pleases less, or ever vanishes".
 
-1. **`verdwijnt` = vanishes**, not "goes away". There is no destination in the verb; Russian *пропадёт* keeps that.
-2. **`of oyt` = a second alternative**, not a consequence. "Pleases less" and "vanishes" are two ways the same thing fails.
-3. **The antecedent is the earthly beauty, not the addressed Beauty.** `Die` can grammatically agree with `Schoonheyd`; that reading would make the most lovely Beauty capable of vanishing, contradicting stanza 9 and the poem's argument. This is an interpretation and is flagged as one.
+1. **`Die` = the earthly things that only seem beautiful** (`wat hier schoon schijnt`), not the addressed Beauty. Reading it as the Beauty would make the poem say that the most lovely thing fades, which stanza 9 denies. This is an interpretation, and it is flagged as one.
+2. **`Dit steelt mijn hert en al` = the Beauty**, the thing those earthly pleasures are "but a shadow of" (`Sijnder maar een schaduw van`). In Russian that cannot be carried by «это»: the nearest feminine noun is «любовь людей», so the neutral demonstrative would silently re-attach to the earthly list and turn the stanza into love of shadows. Hence the direct address «Ты» — the same «Ты» that stanza 8 has just used for the Beauty (`Тебе, Красота, поклоняюсь`).
+3. **`stof`** in stanza 10 is matter, material — the sense it has in `stof tot klagen` — so the line means "here is matter for praise", not "we are dust". The dust sense is possible as a pun; it is not the sentence.
+
+## Title
+
+`Heerlijckheyds Loff` is literally **«Хвала славе»** — the praise *of* the Glory, with `Loff` = praise. The working title «Слава Господня» drops the word "praise" and adds "Господня", which the Dutch does not say. It is kept because it is the title the work has been delivered under and recorded in the catalog, and renaming it is the owner's decision, not a silent correction. Alternative if the owner wants the literal sense: **«Хвала небесной славе»**.
 
 ## What this file is not
 

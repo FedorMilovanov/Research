@@ -344,3 +344,31 @@ The syllable table was re-measured by machine rather than by eye and corrected i
 ## 4. Registry
 
 `DUTCH-005-RU-v0.5`; `lyricRevisionNote`, `researchViews.note`, `DUTCH_HYMN_CATALOG.md`, `PROMPT_AND_VERSION_REGISTER.md`, `STATUS_LEDGER.md`, `LYRIC_REGISTER.md` and `DUTCH-005_PRODUCTION_PACKAGE.md` (v0.5, deviations D-09…D-12) updated together. Two of those files still said v0.2 and v0.3 — stale, now fixed. Validator: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
+# Thirteenth pass — 2026-10-25 (a second review, checked against the print)
+
+A review arrived with five "bugs", three of them called critical. The Dutch text was re-fetched from DBNL (1676, pp. 155–158) before anything was accepted, and that decided it: **three claims are wrong, five changes are right.** Both halves are recorded, because a rejected claim that keeps coming back is a liability.
+
+## Accepted (v0.6)
+
+1. **IX.5–9 — the anaphora was my error, and a serious one.** The Dutch is `Dit steelt mijn hert en al`. Russian «Всё это» points back at the earthly pleasures listed two lines above, so the stanza ended with loving the shadows above all. `Dit` points at the Beauty those pleasures are "but a shadow of". Fixed by direct address: «Ты моё сердце крадёшь… Тебя превыше всех люблю» — the same «Ты» stanza 8 used.
+2. **VI.4 — «не расстались» was wrong.** `cleeft` = cleaves, sticks fast; `расстаться` = part from one another. Now «Доселе не отступили?».
+3. **X.8 — `hier is stoff` is "here is matter", not "here is dust".** `stof` = material, as in `stof tot klagen`; the couplet rhymes `stoff`/`loff`. Now «Воспряньте все: есть предмет хвалы» — which also removes a plural imperative over a singular subject.
+4. **IV.5–8 — `ydel` echoes the poem's own `Ydelheyd`** (stanza 2, «суета»). «Суетная душа, помысли» keeps the echo; «праздная» was the other legitimate reading and is recorded.
+5. **VIII.2–4 — the clause had lost «здесь» and its anchor.** `wat hier schoon schijnt` = what seems beautiful **here**; the clause now runs straight on from «красы».
+
+Two smaller ones: **I.7** «не в том» instead of «не о том» (the Russian for "does not consist in that"), and **II.2** «Всё, что драго» for «Всё драгое» — which removes the word that needed a stress mark. A word propped up by an accent is usually the wrong word, so the mark went with it. Marks are now five.
+
+## Rejected — with the printed text in hand
+
+1. **"Stanza 8 lost a negation; `noch` = neither… nor."** The print reads `Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt` — `nog`, not `noch`, with an affirmative verb and no negative anywhere in the clause. The proposed Russian «не померкнет, не пройдёт» inserts a negation the book does not have. **The claim would rewrite the poem to save an interpretation.**
+2. **"`Die` is the heavenly Beauty."** The stanza adores that Beauty (`U, Schoonheyd, bid ick aan`); a clause saying it fades would contradict stanza 9. `Die` reaches back to `wat hier schoon schijnt` — the earthly things that merely seem beautiful.
+3. **"The person shift in stanza 6 is a Russian bug."** It is in the Dutch: `Hersenlosen, die de snooden / Sonden doet, en daar in leeft` (plural noun, singular relative) then `Weet gy niet` (second person). The Russian mirrors it and the mirroring is recorded.
+4. **Style, not text:** `Cijter` stays «цитра» (a cither, not a Greek lyre); `wakkerheyd` stays «бодрость»; «чуть вкусил» stays, because `Lusten met 't gebruyck verdwijnen` is exactly "pleasures vanish with the using".
+
+## Title
+
+`Heerlijckheyds Loff` is «Хвала славе» — `Loff` is praise. The working title «Слава Господня» drops "praise" and adds "Господня". Recorded, not renamed: the title is the owner's, and it is already the heading of every delivery and every record.
+
+## Checks
+
+Both lyric files: 90 lines, identical once the tags, the echo and the five accents are stripped. `check_ru_lyric.py`: 5 accented words, one ё question (`все языки`, 10.1, correct plural). Metre re-counted by machine and corrected in three cells. Validator: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.

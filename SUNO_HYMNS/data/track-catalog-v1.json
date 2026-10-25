@@ -393,7 +393,7 @@
         "stanzas": 10,
         "printedLinesPerStanza": 9,
         "sungLinesPerStanza": 9,
-        "note": "Four statement lines, a call line and its repeat, the tripled word with its object, the call again, a closing line. The tripled word moves leven (III–VI) -> lieven (VII–IX) -> loven (X). Russian line lengths, counted by machine: statement 5–10, call 6–9, tripled 9–11, close 6–11 syllables.",
+        "note": "Four statement lines, a call line and its repeat, the tripled word with its object, the call again, a closing line. The tripled word moves leven (III–VI) -> lieven (VII–IX) -> loven (X). Russian line lengths, counted by machine: statement 5–10, call 6–9, tripled 9–11, close 6–11 syllables. No regular metre is claimed.",
         "source": "the 1676 print, read in full in the fifth pass"
       },
       "productionState": "LYRIC_DRAFT",
@@ -401,7 +401,7 @@
       "promptCapture": "CAPTURED_IN_REPOSITORY",
       "versions": [
         {
-          "versionId": "DUTCH-005-RU-v0.5",
+          "versionId": "DUTCH-005-RU-v0.6",
           "versionKind": "LYRIC_DRAFT_ONLY",
           "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
           "promptCapture": "CAPTURED_IN_REPOSITORY",
@@ -422,7 +422,7 @@
           },
           "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md). Five directions, never submitted to SUNO.",
           "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
-          "lyricRevisionNote": "Revision v0.5: full re-read of all ten stanzas against the Dutch. Twelve wording defects corrected (st.1 'there where' -> 'only there' for the Dutch 'maar'; st.1 the ownership line replaced by a direction line; st.2 'fades like fog' was an invented image - the Dutch is 'verdwijnen met het gebruyck', vanishing with the use of them; st.4 the vocative 'O idle soul' restored, 'bestows kindly' restored; st.5 the broken possessive 'the virtues of the saints' replaced by 'in perfect virtues'; st.6 agreement repaired; st.6 'begin virtue' -> 'begin the life of virtue'; st.8 the 'wat hier schoon schijnt' clause restored, its antecedent carried by 'Ta'; st.10 'speech' -> 'mouth' and 'who' -> 'what is dust'). Stress: six marks in the SUNO-ready file, each by rule - two words heard sung wrong ('драгое' on the first syllable, 'трепета' on the second), 'стоит' where the spelling allows two stresses, 'помысли' imperative, 'соединена' short participle on the ending, 'дарует' with the -ует stress. Blanket accenting was tried and rejected by the owner; a word earns a mark by rule or by being heard wrong. ё is written everywhere it belongs ('всё', 'моё', 'Нём', 'даёт', 'крадёт', 'пропадёт', 'пойдёт', 'живёт'); 'все' stays where the plural is meant. Where rhyme or metre can justify a shifted sung stress, the sung form wins and is recorded, not corrected",
+          "lyricRevisionNote": "Revision v0.6: a second reader's review checked line by line against the 1676 print, which was re-fetched. Eight changes accepted: st.1 'ne o tom' -> 'ne v tom' (the Russian for 'does not consist in that'); st.2 'vse dragoye' -> 'vse, chto drago' (drops the word that needed a stress mark, keeps the root); st.4 'dusza prazdnaya' -> 'suyetnaya dusha' (the poem's own root: st.2 renders Ydelheyd as suyeta); st.6 the exclamation mark that split the sentence removed; st.6 'ne rasstalis' -> 'ne otstupili' (cleven = to cleave, not to part from one another); st.8 the clause now runs on from 'krasy' and keeps 'zdes' for hier; st.9 'Vsyo eto' -> 'Ty' (the Russian neuter demonstrative chained to the earthly list and made the stanza love the shadows); st.10 'prah i tlen' -> 'yest predmet hvaly' (hier is stoff = here is matter for praise). Three claims in that review were rejected with the print in hand: no negation exists in stanza 8 (the print reads 'nog', and 'Min vermaackt' is affirmative), 'Die' cannot be the heavenly Beauty because the stanza adores it, and the person shift in stanza 6 is in the Dutch itself ('Hersenlosen ... doet ... leeft' then 'Weet gy'). Stress marks remain five, each by rule. Russian adaptation, not a translation; owner revision is the gate.",
           "assets": {},
           "generatedOutput": "NONE",
           "audioExport": "NONE",

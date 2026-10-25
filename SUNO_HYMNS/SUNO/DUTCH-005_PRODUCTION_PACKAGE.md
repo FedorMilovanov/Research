@@ -5,10 +5,10 @@
 **Research record:** [`../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`](../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md)
 **Package opened:** 2026-10-25
 **Artifacts (kept separate, per `SUNO/README.md` and `SUNO/LYRIC_REGISTER.md`):**
-[`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — clean lyric, `DUTCH-005-RU v0.5` ·
+[`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — clean lyric, `DUTCH-005-RU v0.6` ·
 [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md) — SUNO-ready text with labels and stress marks ·
 [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md) — style prompts only
-**Production state:** `LYRIC_DRAFT` — a Russian draft v0.5 and five style directions exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
+**Production state:** `LYRIC_DRAFT` — a Russian draft v0.6 and five style directions exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
 
 > Forward-written package, like DUTCH-004. Every field states its own status. Nothing here is a recovered artifact, and no line of the Russian draft is presented as a translation.
 
@@ -91,15 +91,15 @@ Flat on purpose; this is what the Russian must be checked against, not a verse.
 
 ## 4. Russian draft
 
-See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.5`, with changelog, rhyme/metre statement and approval state. The SUNO-ready variant with section labels and stress marks is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
+See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.6`, with changelog, rhyme/metre statement and approval state. The SUNO-ready variant with section labels and stress marks is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
 
-**Why the words are the same in both files:** the two lyric files carry identical wording. The only differences are the structural tags, one inline echo and **six stress marks**, each answering a rule in `STYLE_AND_PRODUCTION_RULES.md` (§ Pronunciation marks): two words heard sung wrong (*драго́е*, *тре́пета*), one spelling with two possible stresses (*сто́ит*), one imperative (*помы́сли*), one short participle on the ending (*соединена́*), one *-у́ет* verb (*дару́ет*). Nothing else is accented — blanket marking was tried and rejected on 2026-10-25, because an accent changes the text the model reads. ё is another matter and is always written: `всё`, `моё`, `Нём`, `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт`, with `все` kept where the plural is meant (10.1). Where rhyme or metre could justify a shifted stress, the sung form may win — that is recorded, not corrected. The marks are dropped before any published text.
+**Why the words are the same in both files:** the two lyric files carry identical wording. The only differences are the structural tags, one inline echo and **five stress marks**, each answering a rule in `STYLE_AND_PRODUCTION_RULES.md` (§ Pronunciation marks): one spelling with two stresses (*сто́ит*), one imperative (*помы́сли*), one short participle on the ending (*соединена́*), one *-у́ет* verb (*дару́ет*), and one word heard sung wrong (*тре́пета*). Nothing else is accented — blanket marking was tried and rejected on 2026-10-25, because an accent changes the text the model reads. One word left the text for that reason: *драгое* needed a mark, so v0.6 reads «что драго», where the stress cannot go wrong. ё is always written: `всё`, `моё`, `Нём`, `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт`, with `все` kept where the plural is meant (10.1). Where rhyme or metre could justify a shifted stress, the sung form may win — that is recorded, not corrected. The marks are dropped before any published text.The marks are dropped before any published text.
 
 ## 5. Deviation table — every departure, with its reason
 
 | # | Place | What was done | Why |
 |---|---|---|---|
-| **D-01** | I.5–7 | The Russian supplies the negative the Dutch leaves unexpressed: *Не о том твоя жизнь, любовь и хвала* | Lines 2 and 9 both negate; a declarative reading would make the stanza contradict itself. The alternative "costs you" pun is recorded in §3 and can be restored if the owner prefers it |
+| **D-01** | I.5–7 | The Russian supplies the negative the Dutch leaves unexpressed: *Не в том твоя жизнь, любовь и хвала* | Lines 2 and 9 both negate; a declarative reading would make the stanza contradict itself. The alternative "costs you" pun is recorded in §3 and can be restored if the owner prefers it |
 | **D-02** | III–X | The tripled word is the governed noun (жизнь / любовь / хвала) in III–IX and the infinitive in X (хвалить), where Dutch triples infinitives throughout | Russian cannot triple an infinitive inside a clause without sounding like a stutter; the *device* and its position are preserved, the part of speech is not |
 | **D-03** | II, I | `costelijck` → «драгоценный» | The "cost" pun is not reproducible in one Russian word; the primary sense (precious) is chosen and the loss declared |
 | **D-04** | throughout | The print's `etc.` repeats are written out in full | They are repeat instructions in the 1676 print, not missing text; repeating them is fidelity, not addition |
@@ -110,7 +110,11 @@ See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.5`, with c
 | **D-09** | II.3 | `Lusten met 't gebruyck verdwijnen` → «Гаснет радость, чуть вкусил» — an experiential clause instead of the Dutch's abstract one | Russian has no equally short way to say "pleasures vanish with the use of them"; the sense is kept (they fail as soon as they are used), the syntax is not. An earlier draft read «как туман» — a fog image the Dutch does not contain, and it went out |
 | **D-10** | V.1 | `Leven in volmaackte deugden` → «Жизнь в совершенных добродетелях» | The Russian must keep `in`; an earlier draft «Жизнь добродетелей святых» invented a possessive and imported saints who are not in the line |
 | **D-11** | VIII.2–4 | The `Die`-clause is carried by «Та» and the two alternatives are kept as alternatives | `wat hier schoon schijnt` = what **seems** beautiful here; dropping it turned a claim about appearance into a claim about beauty, and the antecedent of `Die` is recorded as an interpretation, not a settled reading |
-| **D-12** | X.5–8 | `Hert, mond, en hand` → «сердце, уста, рука» | `mond` is the mouth, not speech; the three members of the Dutch list are kept in order, and `hier is stoff` → «всё, что прах и тлен» with `что`, not `кто` |
+| **D-12** | X.5–6 | `Hert, mond, en hand` → «сердце, уста, рука» | `mond` is the mouth, not speech; the three members of the Dutch list are kept in order |
+| **D-13** | IX.5–9 | `Dit steelt mijn hert en al` → «Ты моё сердце крадёшь» | In Russian a neuter demonstrative chains to the nearest list — the earthly pleasures two lines above — and the stanza then loves the shadows above all. `Dit` points at the Beauty those pleasures are a shadow of, so the Russian addresses it directly, in the same «Ты» stanza 8 has just used |
+| **D-14** | X.8 | `hier is stoff` → «есть предмет хвалы» | `stof` is matter, material, as in `stof tot klagen`, and the couplet rhymes `stoff`/`loff`: the line means "here is matter for praise". The dust sense is a possible pun, not the sentence. It also removes the old plural-imperative / singular-subject clash |
+| **D-15** | VI.4 | `nog in den boesem cleeft` → «Доселе не отступили?» | The old «не расстались» said death and hell had not parted **from each other**. `cleven` = to cleave, stick fast: they have not let go of the man |
+| **D-16** | IV.5–8 | `O! yd'le siel bedenckt` → «Суетная душа, помысли» | `ydel` is the poem's own root — stanza 2 renders `Ydelheyd` as «суета» — so the echo is kept. The interjection `O!` is absorbed into the vocative: adding it costs a syllable the tune does not have |
 
 ## 6. Musical brief and SUNO styles
 
