@@ -545,3 +545,13 @@ The owner asked for **two** pinned comments — one about this hymn, one about h
 **Gate extended.** The CI markup step now also extracts both ```text blocks of `SUNO/DUTCH-005_PINNED.md` and fails if there are not exactly two or if either breaks the wrapper rule. Both pass: 1320 chars / 2 bold / 1 italic line, and 1563 chars / 4 bold / 1 italic line.
 
 **Still open:** the закрепы have not been pasted into YouTube Studio, so their rendering is unverified; the 1676 page images were never collated (text layer only); stanza 3.2 «После земных невзгод» remains the one open lyric defect.
+
+# Twenty-fourth pass — 2026-10-25 (markup language of the закрепы: YouTube, not Telegram)
+
+**The mistake.** I delivered the two pinned comments in chat inside block quotes. In the rendered chat the asterisks became bold and disappeared from the screen, so what the owner could copy looked like plain prose — and the one thing the owner asked for, markup, was not visibly there. Markup delivery is part of the deliverable: a закреп that only exists as rendered text is not delivered.
+
+**Consequence, written down.** The two закрепы are YouTube objects, so their markup is the YouTube one: a single `*…*` for bold, `_…_` on a whole line for italic. A double `**` is the Telegram convention from `DUTCH-005_TELEGRAM.md` and prints literally in Studio. This is now stated at the top of `SUNO/DUTCH-005_PINNED.md` as a warning, not a footnote.
+
+**Also done while reworking:** markup density raised so the закрепы look like the description rather than like plain prose — закреп 1 went from 2 bold + 1 italic line to **4 bold + 1 italic line** (1369 chars), закреп 2 from 4 bold + 1 italic to **6 bold + 2 italic lines** (1579 chars). New bold lead-ins carry the two facts that were previously buried mid-paragraph: `Книга расходилась быстро` and `Мелодия не найдена` in the first; `Мелодии он брал нарочно мирские` and `Орган вернулся` in the second.
+
+**Rule for delivery, added to how I hand copy to the owner:** markup goes into a fenced block, never a quote — a fence shows the asterisks, a quote eats them.
