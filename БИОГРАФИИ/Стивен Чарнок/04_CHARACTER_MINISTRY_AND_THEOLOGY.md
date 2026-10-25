@@ -6,6 +6,36 @@
 
 ---
 
+## 0. Предисл 1682: прямое высказывание Чарнока и характеристика метода (добавлено 2026-10-25)
+
+Предисл «TO THE READER» к фолианту *Several discourses upon the existence and attributes of God*
+(EEBO-TCP `A32723.0001.001`, узел `1:2`, подпись «EDW. VEEL. RI. ADAMS.») даёт отделу:
+
+- **единственное reported высказывание Чарнока в прямой речи**: «having tasted the old, he did not
+  desire the new, but **said, the old is better**» — отказ от «Modern Divinity» в пользу старого
+  богословия (обыгрывает Лк. 5:39);
+- **отношение к Schoolmen**: «Though he make great use of Schoolmen, yet they are certainly more
+  beholden to him, than he to them; he adopts their Notions, but he refines them too, and improves
+  them, and reforms them from the barbarousness in which they were expressed, and dresseth them up
+  in his own Language»;
+- **ряд почтения**: Dr. Jackson — «to whom our Authour gave all due respect»; Dr. Preston — «did
+  worthily upon the Attributes in his day»;
+- **против социниан**: «Some Errours, especially the Socinian, he sets himself industriously
+  against, and cuts the very Sinews of them, yet, sometimes, almost without naming them»;
+- **ортодоксия**: «we find no one material thing in which he may justly be called Heterodox ... but
+  generally delivers ... what is most consonant to the Faith of This, and other the best Reformed
+  Churches»;
+- **метод**: «He rarely makes Objections, and yet frequently answers them, by implying them in those
+  Propositions he lays down»; «nothing is more nervous than his Reasonings, and nothing more
+  affecting than his Applications»; «he was more for sense than sound ... chose rather to inform his
+  Hearers Minds, than to claw any itching Ears»;
+- **цель**: «to discipline a prophane World for its neglect of God, and contempt of him in his most
+  adorable and shining Perfections»;
+- **ограничение текста**: «some little things, a Word, or a Phrase now and then he may have, which no
+  doubt, had he lived to Transcribe his own Sermons, he would have altered».
+
+---
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах

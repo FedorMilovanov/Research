@@ -209,6 +209,19 @@ the Tuition of **the present Arch-Bishop of Canterbury**». В 1680 году а�
 знавшими Чарнока. Wood мог взять её из эпистола либо из общего круга; **эксклюзив Wood'а по Сэнкрофту
 снят**.
 
+**Добавление 2026-10-25 (том 08 §2A): транскрибаторы рукописей названы по именам.** Предисл
+«TO THE READER» к фолианту 1682 (`A32723.0001.001`, узел `1:2`) говорит, что том «being
+**Transcribed out of his own Manuscripts**, by the unwearied diligence of those worthy Persons that
+undertook it», и сноска `* 1.1` даёт имена: **«Mr. J. Wichens. Mr. Ashton.»** До этого отдел знал
+только Adams'а и Veal'а. Wichens и Ashton — **новые лица**, непосредственные переписчики рукописей
+Чарнока, и первые кандидаты в круг «тех, кто имел доступ к бумагам». Ни Calamy, ни McCosh, ни
+Symington, ни DNB этих имён не называют.
+
+Предисл 1682 даёт также: (а) «for about **three years** before he died» — длительность серии
+атрибутов; (б) параллель с **John Preston'ом**, «both being taken away when Preaching upon this
+Subject»; (в) единственное reported высказывание Чарнока в прямой речи: «**the old is better**»;
+(г) признание эдикторов, что «had he lived to Transcribe his own Sermons, he would have altered».
+
 **Добавление 2026-10-25 (том 08 §4A): лист «Advertisement» 1680.** Отдельный лист издания 1680,
 дословно: «WHat ever comes out in Print, of this late Reverend Mr. Steph. Charnock's, will be
 **Attested by Mr. Edward Veal, and Mr. Richard Adams**, which is more fully expressed in the

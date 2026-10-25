@@ -117,6 +117,127 @@ contemporaneous биографическом нарративе, написан�
 > **Richard Adams.**
 > **Edward Veal.**
 
+### 2A. «TO THE READER» фолианта 1682 — второй редакторский предисл (добавлен 2026-10-25)
+
+**Источник:** EEBO-TCP `A32723.0001.001` (*Several discourses upon the existence and attributes of
+God*, Lond., 1682; Wing **C3711**), узел `1:2`. Подпись: **«Thine in the Lord, EDW. VEEL. RI. ADAMS.»**
+
+Это **отдельный документ**, не перепечатка эпистола Providence. Он написан к главному труду и даёт
+восемь сведений, которых нет больше нигде в отделе.
+
+**1. Транскрибаторы названы по именам.**
+
+> THIS long since promised, and greatly expected Vo∣lume of the Reverend Authour upon the Divine
+> Attributes, being **Transcribed out of his own Manuscripts**, by the unwearied diligence of those
+> worthy Persons that undertook it, [\* 1.1] is now at last come to thy hands…
+
+Сноска `* 1.1` дословно: **«Mr. J. Wichens. Mr. Ashton.»**
+
+До этого отдел знал только Adams'а и Veal'а как эдикторов. Теперь известны **два человека,
+непосредственно переписывавшие рукописи**: **Mr. J. Wichens** и **Mr. Ashton**. Ни Calamy, ни
+McCosh, ни Symington, ни DNB этих имён не называют. Это **новые лица в биографии публикации
+Чарнока**, и они — первые кандидаты в круг «тех, кто знал его бумаги».
+
+**2. Рукописи — авторские, а не стенограммы.** «Transcribed out of **his own Manuscripts**» —
+прямое заявление эдикторов 1682 года. В сочетании с эпистолом 1680 («Several considerable
+Treatises … he hath left behind him, **in the same form he usually Writ them for the Pulpit**»,
+«constantly writing down his Thoughts») и с элегией 1680 («'Twas to pass thro' the Pulpit to the
+Press») это даёт **три независимых contemporaneous свидетельства** о характере рукописей.
+
+**3. Длительность серии атрибутов — около трёх лет.**
+
+> How much of that beauty … mayest thou behold in this Volume, which was our Author's main
+> business, **for about three years before he died**, to display before his hearers?
+
+Уточнение: эпистол 1680 говорит о **пяти** годах проповеди («for about these five years last past
+hath been more known by his constant Preaching»), а предисл 1682 — о **трёх** годах именно серии
+атрибутов. Это не конфликт, а уточнение: проповедовал пять лет, серию атрибутов вёл около трёх
+(~1677–1680). Рабочая формулировка отдела: **серия атрибутов — около 1677–1680**.
+
+**4. Джон Престон умер, проповедуя о том же предмете.**
+
+> Dr. Preston did worthily upon the Attributes in his day, but his Discourses likewise are more
+> succinct, when this Authours are more full and large. But whatever were the mind of God in it, it
+> was not his Will, that either of these two should live to finish what he had begun, **both being
+> taken away when Preaching upon this Subject**. Happy Souls! whose last breath was spent in so noble
+> a Work, [\* 1.5] praising God while they had any being.
+
+Сноска `* 1.5` = **Пс. 146:2** («While I live will I praise the LORD»).
+
+**John Preston (1587–1628)**, мастер Emmanuel College, величайший пуританский проповедник поколения
+до Чарнока, автор *A Liveles Life of Man* и трактатов об атрибутах. Эдикторы **сами проводят
+параллель**: оба умерли, не закончив серию об атрибутах. Для эпической биографии это мощнейший
+сюжет: Чарнок — не одинокий прерванный труд, а вторая половина пары с человеком, который умер при
+том же предмете за пятьдесят два года до него, и который, как и Чарнок, был связан с Emmanuel.
+
+**5. Прямая речь Чарнока: «the old is better».**
+
+> He was not indeed for that Modern Divinity which is so much in vogue with some, who would be
+> counted the only sound Divines; having tasted the old, he did not desire the new, but **said, the
+> old is better**.
+
+Это **единственное в отделе reported высказывание Чарнока в прямой речи**, и оно теологически
+нагружено: отказ от «Modern Divinity» (то есть от реформированной схоластики и новых богословских
+мод) в пользу старого богословия. Обыгрывает Лк. 5:39.
+
+**6. Отношение к Schoolmen и к Jackson.**
+
+> Though he make great use of Schoolmen, yet they are certainly more beholden to him, than he to
+> them; he adopts their Notions, but he refines them too, and improves them, and reforms them from
+> the barbarousness in which they were expressed, and dresseth them up in his own Language…
+>
+> What Dr. Jackson did (**to whom our Authour gave all due respect**) was more brief, and in another
+> way.
+
+**Thomas Jackson (1579–1640)** — третий именитый богослов в ряду сравнений (после Preston). Эдикторы
+подчёркивают, что Чарнок «дал ему должное уважение».
+
+**7. Ортодоксия — заявление эдикторов.**
+
+> though he treat of many of the most abstruse and mysterious Doctrines of Christianity, which are
+> the Subjects of great Debates and Controversies in the World, yet **we find no one material thing
+> in which he may justly be called Heterodox** (unless old Heresies be of late grown Orthodox, and
+> his differing from them must make him faulty) but generally delivers (as in his [\* 1.4] former
+> Pieces) what is most consonant to the Faith of This, and other the best Reformed Churches.
+
+Сноска `* 1.4` = **«Treatise of Providence and of Thoughts.»** — то есть эдикторы 1682 года относят
+к «former Pieces» именно Providence и «Thoughts»; это независимое подтверждение того, что
+*Supplement* 1683 включает «The Sinfulness and Cure of Thoughts» в ряд «прежних» произведений.
+
+Против социниан: «Some Errours, especially the **Socinian**, he sets himself industriously against,
+and cuts the very Sinews of them, yet, sometimes, almost without naming them.»
+
+**8. Метод и стиль — характеристика для биографии.**
+
+> 'Tis plain, he was **no empty Preacher**, but was more for sense than sound, filled up his words
+> with matter, and chose rather to inform his Hearers Minds, than to claw any itching Ears.
+>
+> His Method is much the same in most of these Discourses… **He rarely makes Objections, and yet
+> frequently answers them**, by implying them in those Propositions he lays down for the clearing up
+> the Truths he asserts.
+>
+> nothing is more **nervous** than his Reasonings, and nothing more **affecting** than his
+> Applications.
+>
+> in them his main business is, as to discipline a prophane World for its neglect of God, and
+> contempt of him in his most adorable and shining Perfections…
+>
+> Though he make great use of Schoolmen… nothing is more nervous than his Reasonings, and nothing
+> more affecting than his Applications.
+
+**Ограничение, которое эдикторы сами признают:**
+
+> some little things, a Word, or a Phrase now and then he may have, which no doubt, **had he lived to
+> Transcribe his own Sermons, he would have altered**.
+
+То есть эдикторы 1682 года **сознают**, что перед нами транскрипция, а не авторская правка. Это
+important для `locatorState` всех quote-card: текст фолианта 1682 — `A1` как печатный объект, но
+**не финальная авторская воля**.
+
+**Порядок подписей.** Эпистол 1680 подписан «Richard Adams … Edward Veal»; предисл 1682 — «EDW.
+VEEL. RI. ADAMS.». Порядок имён переменен. Мелочь, но для редакционной истории существенная:
+Veel в 1682 году назван первым.
+
 ### Сноска издания
 
 > **\* 1.1** Mr. Johnson in his Sermon on oc∣casion of Mr. Charnocks death.

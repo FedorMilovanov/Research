@@ -96,6 +96,7 @@
 | **1680, последняя проповедь** | **Тема: «To anger he was slow for our sins past. / Upon which subject Charnock preacht the last»** — медленность Божьего гнева, долготерпение в день благодати; и следствие: «Patiently for to bear, when we did discern / Offences given, and in our hearts to love / Our Enemies». **Текст sermon: Наум 1:3** | **ДВА независимых поэта 1680: `A52960.0001.001` (Thomas Snowden) и `A39134.0001.001` (Thomas Cockerill) — эксклюзив; больше нигде в отделе** | `B1` ×2 |
 | **1680** | Элегия 100 строк даёт **пять sermon'ов Чарнока по библейским текстам**: 2 Пар. 16:9 (Промысл), Ин. 16:9 (неверие), Ин. 17:3 (познание Бога и Христа), Пс. 14:1 (бытие Божье и атеист), Наум 1:3 (терпение) | **Анонимная элегия 1680 (`A39134.0001.001`) — эксклюзив** | `A1` (объект) / `B1` (аттрибуция) |
 | **~1675–1680** | «From God an Instance but for **five years** space» — независимое contemporaneous подтверждение длины лондонского периода публичного служения | **Элегия 1680 (`A39134.0001.001`)**; ср. Wood: «the five last years of his life» | `B1` |
+| **~1677–1680** | **Серия атрибутов — «about three years before he died»**: «which was our Author's main business, for about three years before he died, to display before his hearers». Уточнение: проповедовал пять лет, серию атрибутов вёл около трёх | **Предисл 1682 к фолианту (`A32723.0001.001`, узел `1:2`) — эксклюзив** | `A1` |
 | **1680** | «If but two such, as **Poole** and Charnock, be / In one year snatcht by fatal destiny, / **Three Nations** …» — Чарнок публично сопоставлен с Matthew Poole'ом (1624–1679); идентификация Poole'а — умозаключение отдела | **Элегия 1680 (`A39134.0001.001`) — эксклюзив** | `B1` |
 | **1680** | **Два акростиха на имя STEPHEN и CHARNOCK** в лондонском памфлете — первое печатное акростихирование имени Чарнока | **Анонимный поэт 1680 (`A52960.0001.001`)** | `A1` |
 | **1680, 27 июля** | **Смерть в доме Richard Tymms, glazier, приход Whitechapel; возраст 52 года** («in the fifty-third year of his age»). Wood: «He died in the house of one Rich. Tymms a Gla∣zier in the Parish of White Chappel near London» — **место смерти есть только у Wood**. Сноска Wood `* 2.260` на эту дату — всего лишь «1680.», без документа | **Wood; DNB; Symington; McCosh; регистр** | `A1`/`B1`, но дата — `A1`-container без `A1`-документа |
@@ -321,6 +322,21 @@ lent? / And in so small a space call'd both away?» (Fowler, янв. 1678 → Ч
 **Проверяемые шаги:** списки проповедников в обоих *Morning Exercise*; Wilson, *History and
 Antiquities of Dissenting Churches*, vol. i (Саутуарк); Calamy, *Account*, vol. 2, статьи на
 «Fowler»; реестры конвентикул Саутуарка 1670-х.
+
+---
+
+### `CONFLICT-16` — длина лондонского периода: пять лет или три
+
+| Сторона | Утверждение |
+|---|---|
+| Эпистол 1680 (`A32726.0001.001`) | «for about **these five years** last past hath been more known by his constant Preaching» |
+| Элегия 1680 (`A39134.0001.001`) | «From God an Instance but for **five years** space» |
+| Wood 1691, вход [429] | «in the **five last years** of his life he became more known by his constant preaching in private meetings» |
+| Предисл 1682 (`A32723.0001.001`, узел `1:2`) | серия атрибутов — «our Author's main business, for about **three years** before he died» |
+
+**Статус: РАЗРЕШЁН как уточнение, не как конфликт.** Пять лет — период публичного служения в
+Лондоне; три года — период серии об атрибутах внутри него. Рабочая формулировка: **публичное
+служение ~1675–1680; серия атрибутов ~1677–1680**.
 
 ---
 
