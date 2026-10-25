@@ -290,7 +290,41 @@ Calamy теперь зафиксированы по цитате (curiosmith, 20
    относительно Morning-Exercise sermon.
 5. Calamy подтверждает: посмертное — «two volumes in folio», что совпадает с Wood (1682 + 1683).
 
-### 2.10. Oxford DNB (Richard L. Greaves) — современная сводка с новыми деталями (2026-10-25)
+### 2.11. *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen Charnock,
+July 27, 1680* — элегия 100 строк (первоисточник №9, **добавлен 2026-10-25, том 14**)
+
+- **Заглавие:** *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen
+  Charnock, July 27, 1680.*
+- **Год:** 1680
+- **Imprint:** London: Printed by **J.A.** for **Thomas Cockeril** at the Three Legs over against
+  the Stocks-market.
+- **EEBO-TCP:** `A39134.0001.001` — **полный текст получен**, CC0 1.0. Wing **E409**; ESTC
+  **R36110**; EEBO citation 15604552; VID 104081.
+- **Форма:** 100 строк рифмованных пятистопных ямбических двустиший (проверено вычислительно).
+- **Пять сносок-аттрибуций**, называющих тексты sermon'ов Чарнока: **2 Пар. 16:9; Ин. 16:9;
+  Ин. 17:3; Пс. 14:1; Наум 1:3**.
+- **Автор:** аноним (в TCP поле Author пустое).
+
+**Эксклюзивное содержание:**
+
+| Сведение | Дословно | Значение |
+|---|---|---|
+| **Текст последней проповеди** | «Than next to open every Attribute; / Which having partly done, with much expence / Of Time and Pains, **he clos'd with Patience**» — сноска «**Upon Nabum 1.3**» | **единственное указание текста последней проповеди**, и оно **дважды подтверждено** (ср. поэта *New Poems*, том 13) |
+| **Сопоставление с Пюлом** | «If but two such, as **Poole** and Charnock, be / In one year snatcht by fatal destiny, / **Three Nations** … might well consent / To testifie their own astonishment» | единственное contemporaneous сопоставление Чарнока с другим живым именем; три народа — Англия, Шотландия, Ирландия |
+| **Незавершённость серии** | «Which having **partly done** … he clos'd with Patience»; «if those works **hereafter** should come forth» | contemporaneous подтверждение, что в 1680 году труды не вышли и серия атрибутов была пройдена частично |
+| **Длительность лондонского периода** | «From God an Instance but for **five years** space» | независимое подтверждение 1675–1680 (ср. Wood: «the five last years of his life») |
+| **«his Papers»** | «There is no Truth, of which his **Papers** treat»; «'Twas to pass thro' the Pulpit to the Press» | contemporaneous свидетельство существования рукописей и догадка о том, что Чарнок писал с прицелом на печать |
+
+**Статус.** `evidenceClass = A1` как печатный объект 1680 года; как источник биографических
+утверждений — **`B1`** (анонимный поэт, вероятно, в орбире издателя). `accessState = full text`.
+`locatorState = checked` (узлы `1:1`, `1:2`).
+
+**Критическое ограничение.** Элегия **не независима** от редакторского круга: напечатана у
+**Thomas Cockerill'а** — того же издателя, что выпустит *Attributes* 1682, *supplement* 1683 и
+Providence 1684. Печатник «J.A.» не идентифицирован. Метки страниц («Page 122» / «1680. 120.»)
+аномаальны и с каталоговым объёмом (1 страница) не согласуются.
+
+### 2.12. Oxford DNB (Richard L. Greaves) — современная сводка с новыми деталями (2026-10-25)
 
 Современная статья *Dictionary of National Biography* (Oxford), ст. «Charnock, Stephen (1628–1680),
 nonconformist minister», автор **Richard L. Greaves**. Класс `B1` (качественная современная вторичка с

@@ -45,6 +45,7 @@
 | 10 | `10_REPO_USAGE_LEDGER_AND_VERIFICATION_STATUS.md` | Сводный леджер уже используемого в Research Charnock-материала | `CHARN_PRACT_ATHEISM_001`; two-state diagnostic; три функциональные роли; что отдел добавил |
 | 11 | `11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md` | **Wood, *Athenæ Oxonienses* 1691 — первичная транскрипция входа [429] и Fasti 1654** | Место смерти (дом Richard Tymms, Whitechapel); Sir John Langham и Crosby House; St Michael Cornhill «under the Belfry»; «France or Holland»; формула «true son of the Church of England» у Wood; `CONFLICT-12`; CC0 1.0 |
 | 12 | `12_THE_SAYINGS_1680_BROADSIDE_PRIMARY_TRANSCRIPTION.md` | **Broadside *The sayings…* 1680 — полная транскрипция ~38 афоризмов** | EEBO-TCP `B02133.0001.001`, CC0 1.0. Единственный contemporaneous источник даты 28 июля; показано, что текст — выборка из sermon «The Sinfulness and Cure of Thoughts»; проверка дня недели (28 июля 1680 = среда); `CONFLICT-10` документирован с обеих сторон |
+| 14 | `14_AN_ELEGY_1680_PRIMARY_TRANSCRIPTION.md` | ***An Elegy* 1680 — полная транскрипция элегии из 100 строк с пятью сносками-аттрибуциями** | EEBO-TCP `A39134.0001.001`, Wing **E409**, CC0 1.0. Печатник — Thomas Cockerill, издатель будущих трудов Чарнока. Даёт 27 июля; **пять sermon'ов по текстам Писания**; **текст последней проповеди = Наум 1:3** (дважды подтверждён); «Poole and Charnock», «Three Nations», «five years space» |
 | 13 | `13_NEW_POEMS_1680_ELEGY_ACROSTICS_EPITAPH_PRIMARY_TRANSCRIPTION.md` | ***New Poems* 1680 — полная транскрипция элегии 130 ст., двух акростихов (STEPHEN, CHARNOCK) и эпитафии 12 ст.** | EEBO-TCP `A52960.0001.001`, CC0 1.0. Третий contemporaneous объект с датой смерти (**27 июля**) и первый — изнутри несогласной среды. Четыре эксклюзивных сведения: «Fowler's place»; «not for any crimes»; тема последней проповеди; «Birth scarcely known». Новый `CONFLICT-14` |
 
 ---
@@ -70,7 +71,10 @@
 | **1680, после смерти** | *New poems upon the death of … Mr. Stephen Charnock who departed this life **July 27**, 1680* — элегия 130 строк, два акростиха на имя **STEPHEN** и **CHARNOCK**, эпитафия 12 строк; автор «a lover of all those who are lovers of the truth», адресат «To you his hearers» | **EEBO-TCP `A52960.0001.001`, CC0 1.0 — ПОЛУЧЕН полностью** | `A1` |
 | **1675–1680 (или ранее)** | Поэт 1680: «**To Fowler's place God call'd him to succeed**» — единственное указание на предшественника; вместе со строкой «Hath God two such eminent servants lent?» | **Анонимный поэт 1680 (`A52960.0001.001`) — эксклюзив** | `B1` |
 | **~1660** | Причина ухода из Ирландии: «Did then reduce him **not for any crimes**, / But by an **alteration of the times**» — самое раннее печатное объяснение, прямо отрицает вину | **Анонимный поэт 1680 — эксклюзив** | `B1` |
-| **1680, последняя проповедь** | Тема: «To anger he was slow for our sins past. / Upon which subject **Charnock preacht the last**» — долготерпение Божье и прощение врагов | **Анонимный поэт 1680 — эксклюзив; больше нигде в отделе** | `B1` |
+| **1680, последняя проповедь** | Тема: «To anger he was slow for our sins past. / Upon which subject **Charnock preacht the last**» — долготерпение Божье и прощение врагов. **Текст sermon: Наум 1:3** | **ДВА независимых поэта 1680: `A52960.0001.001` (Snowden) и `A39134.0001.001` (Cockerill) — эксклюзив; больше нигде в отделе** | `B1` ×2 |
+| **1680** | Элегия 100 строк даёт **пять sermon'ов Чарнока по библейским текстам**: 2 Пар. 16:9 (Промысл); Ин. 16:9 (неверие); Ин. 17:3 (познание Бога и Христа); Пс. 14:1 (бытие Божье и атеист); Наум 1:3 (терпение) | **Элегия 1680 (`A39134.0001.001`) — эксклюзив** | `B1` |
+| **~1675–1680** | «From God an Instance but for **five years** space» — независимое подтверждение длины лондонского периода | **Элегия 1680 (`A39134.0001.001`)**; ср. Wood | `B1` |
+| **1680** | «If but two such, as **Poole** and Charnock, be / In one year snatcht by fatal destiny, / **Three Nations** …» — Чарнок сопоставлен с Matthew Poole'ом (1624–1679) | **Элегия 1680 (`A39134.0001.001`) — эксклюзив** | `B1` |
 | 1661, 31 декабря | Подписывает сертификат в пользу Edward Veal, датированный Дублином | McCosh (по Calamy Continuation, p. 83) |
 | 1663, 19–20 июня | Ордер на арест Stephen Charnock; показания Rob. Littlebury | Calendar of State Papers (через McCosh) |
 | ~1660–1675 | «Наибольшая часть пятнадцати лет» в Лондоне без постоянной должности; визиты во Францию и Голландию | Adams & Veal; Wood |
@@ -88,6 +92,21 @@
 > в Ирландию в августе 1655 это **опровергает** версию Calamy/Symington о proctor в 1652 и
 > **подтверждает** 5 апреля 1654 (McCosh). Детали — том 08.
 
+> **Разрешение 2026-10-25 (6).** Элегия ***An Elegy on the death of the truly reverend, learned and
+> pious, Mr. Stephen Charnock, July 27, 1680*** (London: Printed by J.A. for Thomas Cockeril, 1680)
+> получена полностью — EEBO-TCP `A39134.0001.001`, Wing **E409**, CC0 1.0, том 14. Это **четвёртый
+> contemporaneous печатный объект 1680 года** и третий полученный полностью. Он даёт 27 июля. Но
+> главное в нём — не дата. Главное: (1) **пять сносок называют тексты sermon'ов Чарнока**
+> (2 Пар. 16:9; Ин. 16:9; Ин. 17:3; Пс. 14:1; **Наум 1:3**); (2) **текст последней проповеди —
+> Наум 1:3**, «Which having partly done, with much expence / Of Time and Pains, he clos'd with
+> Patience» — и это **независимое подтверждение** показания поэта *New Poems* (том 13); (3) элегия
+> сопоставляет Чарнока с **Мэтью Пюлом**: «If but two such, as Poole and Charnock, be / In one year
+> snatcht by fatal destiny, / Three Nations …»; (4) «Which having **partly done**» и «if those works
+> **hereafter** should come forth» — contemporaneous подтверждение, что серия атрибутов была пройдена
+> частично и в 1680 году труды ещё не вышли; (5) печатник — **Thomas Cockerill**, издатель
+> *Attributes* 1682, *supplement* 1683 и Providence 1684, то есть элегия **не независима** от
+> редакторского круга. Детали — том 14.
+>
 > **Разрешение 2026-10-25 (5).** Памфлет ***New poems upon the death of … Mr. Stephen Charnock who
 > departed this life July 27, 1680*** (London: Thomas Snowden, 1680) получен полностью — EEBO-TCP
 > `A52960.0001.001`, CC0 1.0, том 13. Это **третий contemporaneous печатный объект с датой смерти** и
@@ -198,10 +217,20 @@
     и сверка эпистола двух изданий Providence (`CONFLICT-12`).
 17. **Приходовые записи Whitechapel** — дом Richard Tymms, glazier, где умер Чарнок. Был ли он там
     жильцом или гощем — по Wood не установить.
-18. **Элегия 1680** — ~~*An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen
-    Charnock, July 27, 1680*~~ (Anon.; 1680), WorldCat 606749756, в EEBO. **Приоритет высокий**:
-    третий contemporaneous печатный объект с датой смерти; два других получены полностью и оба дают
-    27 июля. Получение текста — прямое действие к `CONFLICT-10`.
+18. **Полный каталог EEBO-TCP загружен** — 61 315 записей из `textcreationpartnership/Texts`
+    (`TCP.json`). По «Charnock» даёт 13 записей, из них **9 — о Stephen Charnock**; для всех девяти
+    установлены **Wing, ESTC, EEBO citation и VID**. Собственные произведения Чарнока образуют
+    непрерывный блок Wing **C3708–C3712**. Зафиксировано: **Robert Charnock** (1561–?, полемист
+    против иезуитов) и **Robert Charnock** (1663?–1696, казнён за заговор) — разные люди; поиск по
+    имени даёт ложные срабатывания. Полная таблица — том 14 §9.
+19. **Сверить пять sermon'ов элегии (2 Пар. 16:9; Ин. 16:9; Ин. 17:3; Пс. 14:1; Наум 1:3) с
+    каноническим изданием Nichol** — даст постраничные локаторы для пяти contemporaneously
+    аттрибуцированных sermon'ов и поднимет `CHARN_PRACT_ATHEISM_001` до `A1`-обоснованной
+    (сноска d элегии = Пс. 14:1 = текст *Discourse on Practical Atheism*).
+20. **Выяснить аномалию пагинации элегии** («Page 122» / «1680. 120.» при каталоговом объёме
+    1 страница) и **идентифицировать печатника «J.A.»**.
+21. **Проверить идентификацию «Poole» = Matthew Poole** — по другим элегиям 1680 года, где Пюл и
+    Чарнок названы рядом.
 
 ---
 

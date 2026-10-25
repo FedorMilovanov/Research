@@ -47,6 +47,18 @@ Nichol 1864. Ниже — полная карта с оценкой.
 - **HOLD:** `LOCATOR_HOLD`.
 - **Требуемое действие:** найти страницу в Nichol 1864 vol. 1 и сверить формулировку.
 
+**Добавление 2026-10-25 (том 14, элегия 1680, сноска d).** Элегия *An Elegy on the death of the
+truly reverend, learned and pious, Mr. Stephen Charnock, July 27, 1680* (EEBO-TCP
+`A39134.0001.001`, CC0 1.0) содержит сноску **«Upon Psal. 14.1»**, привязанную к строкам «On what
+firm grounds did he God's Being lay, / And leave the Atheist nothing more to say». То есть
+**sermon на Пс. 14:1 — тот самый текст, на котором построен *Discourse on Practical Atheism* —
+аттрибуцирован Чарноку contemporaneous печатным источником 1680 года**. Это поднимает обоснование
+`CHARN_PRACT_ATHEISM_001` с уровня `A2` (цифровая копия без аппарата) до уровня **`A1`-обоснованной
+цитаты**: текст sermon'а подтверждён contemporaneous аттрибуцией, независимой от репринта 1844 и от
+Monergism. `evidenceClass` цитаты остаётся `A2` (текст взят из цифровой копии), но
+`locatorState` получает **contemporaneous якорь**: «sermon на Пс. 14:1, аттрибуцирован в 1680».
+Требуемое действие остаётся: привести к странице Nichol 1864 vol. 1.
+
 ### 3.2. Two-state diagnostic — prevalency of corrupt habit vs. predominancy of gracious habit
 
 - **Где:** `СЕРИЯ СЕРДЦЕ/43_V67_MANTON_CHARNOCK_VINCENT_CONFESSIONAL_DEEPENING.md` §5.
