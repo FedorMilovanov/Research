@@ -13,7 +13,7 @@
 **YouTube:** [`DUTCH-005_YOUTUBE.md`](DUTCH-005_YOUTUBE.md) — название, описание (4229 символов, разметка канала), закреплённый комментарий, tags; **не опубликовано**.
 **Telegram:** [`DUTCH-005_TELEGRAM.md`](DUTCH-005_TELEGRAM.md) — короткое описание для @lordchrist, лейн L1 (1421 знак): rich-вариант для ручного копирования и HTML-блок для бота; **не опубликовано**.
 **Source run:** [`../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md`](../RESEARCH/DUTCH-005_SOURCE_RUN_50PLUS.md) — 75 адресов со статусами (✅ открыт / ◐ найден / ○ реквизит) и таблица проверки утверждений.
-**Production state:** `LYRIC_DRAFT` — a Russian draft v0.10 and five style directions exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
+**Production state:** `ASSETS_PREPARED` — a Russian text v0.10 and five style directions exist in this repository, and по сообщению владельца (2026-10-26) гимн сгенерирован, обложка есть, аудио и видео загружены в YouTube, пост — в Telegram. **В репозитории нет ни аудио, ни обложки, ни одной ссылки**, поэтому `publicPublicationStatus` остаётся `UNKNOWN_NOT_VERIFIED`: в этом проекте «опубликовано» без ссылки не пишется никогда. See `STATUS_LEDGER.md` for the short list of what must be captured.
 
 > Forward-written package, like DUTCH-004. Every field states its own status. Nothing here is a recovered artifact, and no line of the Russian draft is presented as a translation.
 
@@ -146,7 +146,7 @@ See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.10`, with 
 | Illustration on printed p. 155 (`ill0155`) | `NOT_CAPTURED` — not viewed; no claim about it |
 | Literal gloss (§3) | `WORKING_GLOSS` — authored here, two uncertainties declared |
 | Metre | **measured**: statement lines 6–10, call 6–9, tripled 9–11, close 7–9 syllables. Not a rigid scheme; sufficient for syllabic declamation, not for a fixed melody |
-| Russian draft | `WORKING_DRAFT` v0.10 in `DUTCH-005_LYRICS.md` — **not approved**; owner revision required |
+| Russian text | `DUTCH-005-RU v0.10` in `DUTCH-005_LYRICS.md` — used for the upload the owner reports; no separate line-by-line signature is held |
 | Deviations (§5) | `DECLARED` — eight, each with a reason |
 | Musical brief (§6.1) | `AUTHORED_FOR_THIS_WORK` |
 | Style prompts | **five** directions, `A`–`E`, in `DUTCH-005_STYLE.md`; all `DOCUMENTED_NOT_YET_SUBMITTED`, none chosen |

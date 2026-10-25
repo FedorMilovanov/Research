@@ -5,7 +5,7 @@
 **Answer: a separate work, now identified.** Its bibliographic identity is resolved; it is **not** a variant of any existing catalogued text, and it is **not** part of another composition. It is registered as backlog candidate `DUTCH-CAND-021` — a *candidate*, not a production track.
 
 **Dossier opened:** 2026-10-25 (fourth pass).
-**ACTIVATED 2026-10-25 as `DUTCH-005`** at the owner's request, after the identity was resolved in the fourth pass and the full text was read in the fifth. The production record now lives in `../SUNO/DUTCH-005_PRODUCTION_PACKAGE.md`; this file remains the research record and must not duplicate the package. Production state is `LYRIC_DRAFT`: a Russian adaptation draft v0.1 and an authored, never-submitted style prompt. **No generation, no audio, no asset.**
+**ACTIVATED 2026-10-25 as `DUTCH-005`** at the owner's request, after the identity was resolved in the fourth pass and the full text was read in the fifth. The production record now lives in `../SUNO/DUTCH-005_PRODUCTION_PACKAGE.md`; this file remains the research record and must not duplicate the package. Production state is `ASSETS_PREPARED`: the owner reports the hymn generated and uploaded (2026-10-26), with a cover. **No audio, cover file or URL is held in this repository**, so nothing here is marked published.
 
 ## Проверяемый вопрос, answered
 

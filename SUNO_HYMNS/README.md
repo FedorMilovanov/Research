@@ -2,7 +2,7 @@
 
 **Project ID:** SUNO-HYMNS-NL  
 **Snapshot date:** 2026-10-26  
-**State:** publication pass (2026-10-26). DUTCH-005 carries a full publication package — YouTube title, description, tags, two pinned comments and a Telegram post — but **nothing is generated, chosen or published**. Earlier works keep their states; prompt recovery for DUTCH-001/002/003 is still open.
+**State:** publication pass (2026-10-26). DUTCH-005 carries a full publication package — YouTube titles, description, tags, two pinned comments and a Telegram post — and the owner reports it generated, covered and uploaded; no URL, file or take is held here, so nothing is marked published. Earlier works keep their states; prompt recovery for DUTCH-001/002/003 is still open.
 
 ## Purpose
 
@@ -123,7 +123,7 @@ The validator does not repair or modify files. It fails closed on invalid global
 
 For each **existing** track, bring the exact lyric version, the verbatim Suno style prompt, the selected cover, final audio and metadata readback into a reproducible record. Those prompts are still `NOT_CAPTURED`; they must be recovered from the owner, not reconstructed.
 
-For **DUTCH-005**, the copy exists and is gated; the immediate milestones are the owner's signature on the stanza 3.2 fix (v0.10) and the choice of a cover — the title separator is settled (✝) — then a first generation. The copies are **not** publication and carry no URL.
+For **DUTCH-005**, the copy exists and is gated, the title separator is settled (✝), and the owner reports the hymn generated and uploaded with a cover. What the repository still lacks is the evidence: two URLs, the cover file, the exact prompt, and the sung wording of stanza 3. The copies are **not** publication and carry no URL.
 
 For **DUTCH-004**, the immediate milestones are: the owner's poetic revision of the Russian draft; freezing the lyric and the prompt with a revision hash; and only then a first generation.
 

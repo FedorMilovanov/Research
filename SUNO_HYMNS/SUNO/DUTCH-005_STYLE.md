@@ -3,7 +3,7 @@
 **«Хвала Славе»** — Йодокус ван Лоденстейн (1620–1677)
 *Heerlijckheyds Loff*, *Uyt-spanningen*, 1676, printed pp. 155–158.
 
-**Status:** five directions, all `DOCUMENTED_NOT_YET_SUBMITTED` — written in this repository, **never submitted to SUNO**. None is chosen; the choice is the owner's. `STYLE-DUTCH-005-A` is marked **primary** only because the registry must carry one `promptText`, not because it is preferred.
+**Status:** five directions written in this repository. The owner reports a finished generation, but **which of these five texts was sent is not known**: do not present any of them as the prompt that was used until the owner supplies the exact text. `STYLE-DUTCH-005-A` is marked **primary** only because the registry must carry one `promptText`, not because it was chosen.
 
 Style only; no lyrics here. Lyrics: [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) · performable text: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
 

@@ -58,4 +58,6 @@ No MP3, WAV, MP4, PNG or other media file has been copied into this repository b
 
 **Direction chosen by the owner** after ten rejected rounds: golden baroque-fantasy cathedral interior — colossal gilded columns and angel statues, an organ of gold pipes, a single shaft of light down the axis, and one small hooded figure with arms open standing in it. Rejected directions: baroque oil painting in a Dutch-church manner (too quiet, too museum-like), copperplate emblem engraving, cold photoreal organ close-up, storm/ruin sublime.
 
-**Status:** candidates exist only in the working environment at `/home/user/images/dutch-005/` (`b7-organ-wall.jpg`, `b8-kneeling-host.jpg`, `b11-nave-tiers.jpg`, `b13-altar-cascade.jpg`, and earlier trials). They are **not** in this repository, **not** referenced by the catalog, and **not** approved. Do not claim a DUTCH-005 cover exists until the owner names the file and it is filed under a path recorded here.
+**Status:** the candidates listed below are earlier trials. The owner reports that a cover now exists (2026-10-26) but **has not named the file**, so no path is recorded here and none of the trials is claimed as the chosen one. Add the name and a checksum the moment it is supplied.
+
+Earlier trials, kept so they are not re-made: `/home/user/images/dutch-005/` — `b7-organ-wall.jpg`, `b8-kneeling-host.jpg`, `b11-nave-tiers.jpg`, `b13-altar-cascade.jpg`.

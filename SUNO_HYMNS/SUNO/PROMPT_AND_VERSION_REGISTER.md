@@ -26,7 +26,7 @@ The exact prompt must be stored verbatim from the submitted prompt text or recov
 | DUTCH-002-V2 | Yes, local WAV/MP4/MP3 paths reported | NOT CAPTURED | NOT IN REPOSITORY | Prior properties reported; re-read actual files before relying on them | NOT VERIFIED |
 | DUTCH-003-V1-REPORTED | MP3 filename reported; QA incomplete | NOT CAPTURED | NOT IN REPOSITORY | ID3 tag readback and cover state unconfirmed | NOT VERIFIED |
 | DUTCH-004-RU-DRAFT-v0.1 | **None — nothing generated** | `PROMPT-DUTCH-004-V1`, authored in this repository, never submitted | v0.1 draft in the production package | NOT APPLICABLE | NONE |
-| DUTCH-005-RU-v0.10 | **None — nothing generated** | five directions `STYLE-DUTCH-005-A`…`E` in `DUTCH-005_STYLE.md`, none submitted, none chosen | v0.10 in `DUTCH-005_LYRICS.md` (replaces v0.9: stanza 3.2); tagged copy in `DUTCH-005_LYRICS_SUNO.md` | NOT APPLICABLE | NONE |
+| DUTCH-005-RU-v0.10 | **Owner reports a finished upload; no file, duration or settings held here** | five directions `STYLE-DUTCH-005-A`…`E` in `DUTCH-005_STYLE.md`; **which one was sent is not recorded** — `NOT_CAPTURED` until the owner supplies the exact text | v0.10 in `DUTCH-005_LYRICS.md` (replaces v0.9: stanza 3.2); tagged copy in `DUTCH-005_LYRICS_SUNO.md`; **which stanza-3 line is in the audio is unconfirmed** | NOT APPLICABLE | NONE RECORDED |
 
 ## Authored versus recovered prompts
 

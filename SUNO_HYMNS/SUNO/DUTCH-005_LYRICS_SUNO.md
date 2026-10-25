@@ -2,7 +2,7 @@
 
 **«Хвала Славе»** — Йодокус ван Лоденстейн
 **Revision:** `DUTCH-005-RU v0.10` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md).
-**Status:** working draft, **not approved** (title approved: «Хвала Славе»); **never submitted to SUNO**.
+**Status:** the text the owner took to SUNO (title approved: «Хвала Славе»); the exact prompt actually sent is **not recorded** — `NOT_CAPTURED`, never reconstruct it.
 
 Differences from the clean lyric, and no others: structural tags, one echo `(хвалить)` in verse 10, and **four stress marks** (`сто́ит`, `тре́пета`, `помы́сли`, `соединена́`). The rhyme is part of the wording, not a layer, so it is in both files.
 

@@ -299,4 +299,4 @@ It was a **sense** defect, not a stylistic one, and it was deliberately not patc
 
 - Not a translation.
 - Not approved: no stanza is signed off.
-- Not a record of a recording: nothing has been generated.
+- Not a record of a recording: the owner reports a finished upload, but **no file, duration or take is held here**, and the sung wording of stanza 3 has not been checked against the audio.

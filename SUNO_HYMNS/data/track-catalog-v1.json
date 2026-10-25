@@ -396,13 +396,13 @@
         "note": "Four statement lines, a call line and its repeat, the tripled word with its object, the call again, a closing line. The tripled word moves leven (III–VI) -> lieven (VII–IX) -> loven (X). Russian line lengths, counted by machine: statement 5–10, call 6–9, tripled 9–11, close 6–11 syllables. No regular metre is claimed.",
         "source": "the 1676 print, read in full in the fifth pass"
       },
-      "productionState": "LYRIC_DRAFT",
+      "productionState": "ASSETS_PREPARED",
       "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
       "promptCapture": "CAPTURED_IN_REPOSITORY",
       "versions": [
         {
           "versionId": "DUTCH-005-RU-v0.10",
-          "versionKind": "LYRIC_DRAFT_ONLY",
+          "versionKind": "SUNG_ASSET_REPORTED_BY_OWNER",
           "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
           "promptCapture": "CAPTURED_IN_REPOSITORY",
           "promptState": "AUTHORED_NOT_YET_SUBMITTED",
@@ -469,7 +469,8 @@
               "inFile": "SUNO/DUTCH-005_STYLE.md §E"
             }
           ],
-          "styleVariantNote": "Five distinct directions are required per work (SUNO/STYLE_AND_PRODUCTION_RULES.md). A occupies the primary slot only because the registry must carry one promptText; the owner chooses. All five are syllabic, intelligible-lead, all-ten-verses, no invented chorus. None has been submitted."
+          "styleVariantNote": "Five distinct directions are required per work (SUNO/STYLE_AND_PRODUCTION_RULES.md). A occupies the primary slot only because the registry must carry one promptText; the owner chooses. All five are syllabic, intelligible-lead, all-ten-verses, no invented chorus. None has been submitted.",
+          "assetState": "Reported by the owner: audio and video uploaded, cover made. Held in the repository: nothing. Which of the five style directions was sent is NOT_CAPTURED."
         }
       ],
       "authorId": "LOD-001",
@@ -512,13 +513,13 @@
       "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.', on pp. 155-158 in BOTH the 1676 first edition and the 1727 ninth edition. The two printings agree except for spelling and four variants recorded in the collation. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X); it is not a refrain. The 1938 reworking is a separate, protected object and is not used. Package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md; lyric: SUNO/DUTCH-005_LYRICS.md; style: SUNO/DUTCH-005_STYLE.md.",
       "rightsNote": "1676 poem public domain in substance; the DBNL transcription and the 2005 critical edition are separate objects and are not reproduced. The 1938 reworking is PERMISSION_REQUIRED and is not used.",
       "openChecks": [
-        "Owner signs the stanza 3.2 fix carried by v0.10 («Та, что за смертью придёт»); the wording stays unapproved until then.",
-        "Owner line-by-line revision of the Russian lyric v0.3 (SUNO/DUTCH-005_LYRICS.md); freeze as v1.0 and regenerate the SUNO-ready file from it.",
-        "Inspect the 1676 page images of printed pp. 155-158 to move the text from transcription-plus-collation to print-verified; view the illustration ill0155.",
-        "Owner chooses one of the five style directions (SUNO/DUTCH-005_STYLE.md A-E) and records the decision.",
-        "Dutch Song Database is offline (HTTP 403, KNAW notice) as of 2026-10-26; re-check record 9086 when it returns and treat its fields as uninspected until then.",
-        "Record the prompt revision hash before submission and the file's own duration and metadata after any generation.",
-        "If a generation truncates, do NOT cut stanzas: regenerate with 'all ten verses, in order, no cuts', or split the release at verses 1-5 / 6-10."
+        "Record the two public URLs (YouTube video, Telegram post). Only then may publicPublicationStatus become PUBLISHED_VERIFIED.",
+        "Record the cover file name and path; the repository holds no cover.",
+        "Capture the exact SUNO prompt that was submitted; the five authored directions are not evidence of it.",
+        "Confirm which stanza-3 line is sung in the recording: v0.9 «После земных невзгод» or v0.10 «Та, что за смертью придёт».",
+        "Record duration and export settings (MP4 1920x1080 H.264, MP3 320 kbps 48 kHz) once read back from the files.",
+        "See the description and both pinned comments render in a live Studio: single * must bold, _ must italicise, no asterisks printed.",
+        "Inspect the 1676 page images of pp. 155-158 and the 1681 columns of p. 495; the text layer is the only witness so far."
       ],
       "identityStatus": "CONFIRMED_BY_TWO_PRINTINGS_TYPOGRAPHY_UNVERIFIED",
       "identityNote": "Title, page range, tune line, date, stanza count and structure are identical in the 1676 first edition and the 1727 ninth edition, so the work's identity is established bibliographically. Neither printing has been checked as a page image, and the two disagree in four places (CLM-DUTCH-005-VARIANTS), so no wording is definitive yet. The ID was assigned on transcription evidence; that is the process defect this record makes explicit.",
@@ -526,7 +527,8 @@
         "St. VIII.3-4 'Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt': 'Die' is grammatically ambiguous and could agree with 'Schoonheyd'. The earthly-beauties reading is adopted because otherwise the addressed Beauty could vanish, contradicting st. IX and the poem's argument. Flagged as interpretation.",
         "'of oyt' = 'or ever', a second alternative, not a causal link."
       ],
-      "lyricRevisionStatus": "DRAFT_IN_REPOSITORY"
+      "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
+      "publicationNote": "Owner reports (2026-10-26) that the hymn was generated, given a cover, and uploaded to YouTube and Telegram. No URL, file, duration or export setting is held in this repository, so publication stays UNKNOWN_NOT_VERIFIED; add publicationReceipts and only then flip the state."
     }
   ],
   "adjacentNonDutchWorks": [

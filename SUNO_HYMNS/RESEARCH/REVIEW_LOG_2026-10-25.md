@@ -657,3 +657,13 @@ Re-read every file touched in the last five commits, recomputed every number it 
 **A name was wrong in print.** The 1681 anthology is by **Claes** Stapel, not Hendrick Stapel. Found by opening the DBNL text of *Het lust-hof der zielen* (Alkmaar, 1681) instead of trusting the catalogue siglum: printed p. 495 carries the heading "Heemels heerlijkheids lof. Voiz: Un jour, &c." and the incipit. The 1681 half of the transmission claim is now verified directly and has left `EVIDENCE_HOLD`; the 1718 half stays there, because that volume has still not been opened.
 
 **A caution recorded with the find.** The DBNL transcription of that anthology interleaves its two printed columns, so the stanza text cannot be quoted from it without the page image. Heading, tune direction, incipit and page number are safe; the rest is not.
+
+# Thirty-second pass — 2026-10-26 (the hymn went out; the repository must say so without a URL)
+
+**What changed on the owner's word, and what did not.** The owner reports that DUTCH-005 was set to music, given a cover, and uploaded to YouTube and Telegram. Every file that said "nothing has been generated" now says `ASSETS_PREPARED` and attributes the report to the owner by date. **Not one of them says published.** `publicPublicationStatus` stays `UNKNOWN_NOT_VERIFIED`, because the registry only accepts `PUBLISHED_VERIFIED` with a receipt, and a receipt means a URL. A repository that starts believing uploads it cannot point at is exactly the repository that later "verifies" a deleted video.
+
+**The uncomfortable consequence, written down rather than smoothed over.** Stanza 3.2 was changed in the text yesterday; the recording may well predate that change. So the audio may sing «После земных невзгод» while the repository holds «Та, что за смертью придёт». That is now an explicit open check with the owner's name on it (`NEXT_STEPS.md` A11, `track-catalog` openChecks), not a footnote.
+
+**Prompt capture, again.** DUTCH-001/002/003 lost their prompts and the loss is permanent. DUTCH-005 has just joined them: five directions exist in `DUTCH-005_STYLE.md`, and which one was actually sent is unknown. The file now says `NOT_CAPTURED` in those words, so the next agent does not mistake an authored prompt for a submitted one.
+
+**Cover.** Nine trials sit outside the repository and the owner has a cover. The asset manifest no longer says "no cover exists" — it says a cover exists and has no name here, and asks for the name and a checksum. That is the difference between a false statement and an honest gap.
