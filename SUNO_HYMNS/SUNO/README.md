@@ -101,9 +101,9 @@ Copy for a finished track lives in one file per surface, all in this directory:
 
 **The two surfaces do not share markup.** YouTube: `*bold*`, `_italic_`, punctuation inside the wrapper. Telegram: `**bold**`, `*italic*`, italic on whole lines only, no markup on link lines. A single `*` is *italic* in Telegram and *bold* on YouTube; `**` prints literally on YouTube. Never copy one file's markup into the other without reformatting.
 
-**Where the rules are normative:** the channel standards in `video-channel-manager` — `docs/youtube-description-rendering-standard.md` (§ 2–3, 11–12), `docs/youtube-comment-editorial-standard.md`, `docs/youtube-copy-authoring-standard.md`. This repository does not restate them; `PUBLICATION_LANE.md` says which document governs what, and lists the gates.
+**Where the rules are normative:** editorial rules live here, split by project — `../projects/COMMON_RULES.md` for what both channels share and `../projects/lord-god-strength/RULES.md` for this channel. Exact channel IDs, community IDs, OAuth aliases and bot preflight belong to `video-channel-manager/docs/operations/*-description-profile.md`. The rendering standard there (`docs/youtube-description-rendering-standard.md`) remains the origin for platform behaviour, but it is written around the poetry project and has to be overridden for the theological one — a defect recorded in `../projects/WORKS_LEDGER.md`. `PUBLICATION_LANE.md` says which document governs what and lists the gates.
 
-**Handoff to the owner:** always a fenced `text` block, never a quote — a quote renders the asterisks away and the markup never reaches the clipboard. This rule is stated in the channel standard too; it was learned here the hard way in three rounds.
+**Handoff to the owner:** always a fenced `text` block, never a quote — a quote renders the asterisks away and the markup never reaches the clipboard. Stated in `../projects/COMMON_RULES.md` § 2, and in the channel standard; it was learned here the hard way in three rounds.
 
 **A copy is not a publication.** The files above carry no URL and change no state. `PUBLISHED_VERIFIED` requires a checked public URL or a direct publication receipt, recorded in `STATUS_LEDGER.md`.
 

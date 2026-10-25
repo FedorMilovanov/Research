@@ -575,3 +575,24 @@ The owner asked whether everything an agent needs is written down, and where it 
 **Compliance check I had not run.** `youtube-comment-editorial-standard.md` requires a comment to end with a precise question, and forbids bold over half a paragraph. Both закрепы lacked the question. Added one to each, specific to the content, not "подпишитесь". Links were left out deliberately, because the description already carries all four routes; that decision is recorded in `DUTCH-005_PINNED.md` rather than left implicit. Counts after the edit: 1503 characters / 4 bold / 1 italic line, and 1590 / 6 / 2.
 
 **Rule for the next agent, in one sentence:** facts and drafts live here, formatting rules live in `video-channel-manager`, and the only thing this repository may say about formatting is "run the gate".
+
+# Twenty-sixth pass — 2026-10-26 (two channels, two rule sets)
+
+The owner's verdict on my compliance note: a closing question in a pinned comment **is not obligatory**. Recorded as an owner decision in `projects/COMMON_RULES.md` § 6 and `projects/lord-god-strength/RULES.md` § 5; both закрепы keep theirs, and either line can be dropped without touching the argument. The rule I had derived from the channel comment standard applies to the automated channel-comment line, not to a historical pinned закреп.
+
+**The real request: split the rules by channel.** They were mixed. Concretely, in `video-channel-manager`:
+
+- `docs/youtube-description-rendering-standard.md` is the formatting authority but is written **around The Legendary Poet** — its examples, its footer, its playlist vocabulary;
+- `docs/operations/lord-god-strength-description-profile.md` opens by warning that the rendering standard "was written for The Legendary Poet and must not supply its channel name, site, VK community, Telegram, Rutube, playlist, or footer to this project" — i.e. the theological project exists as a set of exceptions to a document about the other channel.
+
+That is the structure that makes agents mix the two. New in this repository, under `projects/`:
+
+1. `COMMON_RULES.md` — what both channels share, deliberately stripped of **every** domain, channel ID and playlist: markup for three surfaces, punctuation and the closing-wrapper rule, handoff in a fenced block, description architecture, evidence discipline, forbidden phrases, comment and pinned-comment anatomy, statuses.
+2. `lord-god-strength/RULES.md` — the theological channel: IDs, links, footer, hymn description architecture, Telegram format, pinned-comment policy, and the six things this channel must never do (poetic-project links, invented playlists, calling an adaptation a translation, calling a house-circle hymn a church hymn, claiming a found melody, claiming publication without a URL).
+3. `legendary-poet/RULES.md` — the poetry channel: IDs, links, the seven canonical playlists with the relevance rule, poem description architecture, tone prohibitions (no "the poet predicted"), and the one verified release as an **example, not a rule**.
+4. `WORKS_LEDGER.md` — what has actually been made: five Dutch hymns with their states and the real production route, and the poetry side with exactly one verified release. The rest of the poetry catalogue is marked **not reconstructed** on purpose: the playlists prove more works exist, but no list with IDs and dates does, and inventing one is worse than the gap.
+5. `projects/README.md` — the reading order: common file first, then the project sheet; on contradiction the project sheet wins, because it knows the actual platform and links.
+
+**Where the split lands.** Editorial rules: here, split by project. Identities, OAuth aliases, preflight validators and everything that touches a provider: `video-channel-manager`. Recorded as part 3 of `WORKS_LEDGER.md` together with the two live defects — the leaderless rendering standard and the legacy poet site that needs a live check.
+
+**What I could not do:** remove or trim the duplicated profiles inside `video-channel-manager`. This session is bound to one branch of this repository, so the vcm side would need its own session. Until then the precedence rule stands: IDs from there, editorial requirements from here, and no silent reconciliation.
