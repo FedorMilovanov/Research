@@ -12,7 +12,7 @@ in the document, which passed while half the mentions were stale. It now reads
 the number out of each specific sentence and compares it with the recomputed
 value:
 
-- description: the sentence "<N> знаков, до лимита 5000" and the checklist line
+- description: the sentence "<N> знак/знака/знаков, до лимита 5000" and the checklist line
   "- [x] <N> знаков;" of DUTCH-005_YOUTUBE.md;
 - pinned comments: "Закреп 1 … <N> знаков" and "Закреп 2 … <N> знаков" in § 3 of
   the same file, against the two fenced blocks of DUTCH-005_PINNED.md;
@@ -80,7 +80,7 @@ def main() -> int:
 
     print(f"description: {desc} characters")
     for value in claimed(
-        [r"(\d+) знаков, до лимита 5000", r"- \[x\] (\d+) знак"],
+        [r"(\d+)\s*знак\w*, до лимита 5000", r"- \[x\] (\d+) знак"],
         yt,
         "DUTCH-005_YOUTUBE.md description",
         problems,

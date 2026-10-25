@@ -40,6 +40,12 @@ Translated: the melody's origin is unknown, and it is not the *Un jour &c.* that
 
 So the editors themselves separate two objects: the **1665 tune**, which they could not trace, and the **later psalm 42 melody**, on which the reworking circulated. Copy must keep them apart in the same sentence, or a reader will hear "psalm 42" as a solution to the 1665 question.
 
+**What the excluded «Un jour» actually is.** The apparatus says only "not the Un jour of text 27". Item 27 is *Den eersten psalm uytgebreydet*, [p. 120], under the direction `Te singen op de wijse: Un jour m'en alloit &c.`, and its own apparatus note names the melody:
+
+> De melodie *Un jour m'en alloys seulette* is van de Franse componist Grouzy (overl. 1568); deze komt voor in *Quinzième livre de chansons*, Parijs 1571.
+
+— a French chanson by **Grouzy** (d. 1568), printed in the *Quinzième livre de chansons* (Paris, 1571), with Charbon's catalogue and Stronks as the editors' own references. The 1994 study of the collection's melodies identifies the same chanson at the same place. **Three melodies are therefore in play, and only one of them is ours:** Grouzy's chanson (the one the editors exclude), the psalm 42 tune of the later hymnbooks, and the untraced 1665 tune that the print directs the singer to and nobody has identified.
+
 ## 4. Access states, honestly
 
 - **DBNL 2005 edition, pp. 263–267** — read in full (text, apparatus, commentary). A2 (critical edition), used as apparatus and as a check, never as the source quoted for the historical wording.

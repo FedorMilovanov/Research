@@ -60,6 +60,7 @@ Candidates in `DUTCH_HYMN_BACKLOG.md` are unrecorded as produced in the current 
 | File | Use it for |
 |---|---|
 | `TRANSCRIPTION_DUTCH-005_1676.md` | the working transcription against which every lyric edit is checked |
+| `COLLATION_DUTCH-005_THREE_WAY.md` | 1676 vs 1727 vs 2005: five substantive variants, and which reading to adopt |
 | `DUTCH-005_TRANSMISSION_AND_TUNE.md` | the chain 1676 → 1681 → 1718 → 1806 → 1938, and why "Bourgeois" and "psalm 42" are one melody |
 | `DUTCH-005_STANZA_3_2_OPTIONS.md` | the open defect in stanza 3 line 2, with three counted options |
 | `DUTCH-005_SOURCE_RUN_50PLUS.md` | hymn and transmission addresses with an honest status each |

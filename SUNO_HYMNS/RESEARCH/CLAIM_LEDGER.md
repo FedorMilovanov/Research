@@ -616,17 +616,17 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 ## CLM-DUTCH-005-VARIANTS — DUTCH-005: variants between the 1676 and 1727 printings
 
-**Claim:** The two printings differ in four substantive places: 1676 I.3 reads 'leven, lieven, loven' where 1727 reads 'leven, leven, loven'; 1676 VII.8 reads 'Mijn siel na boven dat' where 1727 reads 'dan', matching line 5; 1727 adds 'al' in VIII.2 ('van al wat hier schoon schijnt'); and 1727 omits the abbreviated repeat line in stanza VIII, printing eight lines instead of nine. The rest is spelling only.
+**Claim (revised 2026-10-26, full-text collation):** The two printings differ in five substantive places: 1676 I.3 reads 'leven, lieven, loven' where 1727 reads 'leven, leven, loven'; 1676 VII.8 reads 'Mijn siel na boven dat' where 1727 reads 'dan', matching line 5; 1727 adds 'al' in VIII.2 ('van al wat hier schoon schijnt'); and 1727 omits the abbreviated repeat line in stanza VIII, printing eight lines instead of nine. The rest is spelling only.
 
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS
 
 **Source IDs:** SRC-L-1676-HEERLIJCKHEYD-155-158, SRC-L-UYT-1727-HEERLIJCKHEYD
 
-**Notes:** Read directly from both transcriptions; no page image was inspected for either. The dating form differs cosmetically: '27. in Ougstmaand 1665' (1676) and '27 in Oogstmaand 1665' (1727). The tripled device is unaffected: both print leven/leven/leven, lieven/lieven/lieven and loven/loven/loven in stanzas III-X. Because two impressions disagree, neither can be treated as the copy text without a page-image check.
+**Notes:** Read directly from both transcriptions, in full; no page image was inspected for either. The fifth variant — 1676 VII.3 `Vindt` against 1727 `Vind` — was found in the 2026-10-26 collation, where the 2005 edition agrees with 1676. See `COLLATION_DUTCH-005_THREE_WAY.md`. The dating form differs cosmetically: '27. in Ougstmaand 1665' (1676) and '27 in Oogstmaand 1665' (1727). The tripled device is unaffected: both print leven/leven/leven, lieven/lieven/lieven and loven/loven/loven in stanzas III-X. Because two impressions disagree, neither can be treated as the copy text without a page-image check.
 
 **Evidence gap:** No page image of either printing has been inspected.
 
-**Next check:** Inspect the 1676 page images of pp. 155-158 (and the 1727 printing where they differ) and record the readings of I.3, VII.8, VIII.2 and the stanza-VIII line count.
+**Next check:** Inspect the 1676 page images of pp. 155-158 (and the 1727 printing where they differ) and record the readings of I.3, VII.3, VII.8, VIII.2 and the stanza-VIII line count. Until then no wording is called definitive.
 
 **HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD
 
@@ -646,7 +646,7 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 **Source IDs:** SRC-L-CRIT-2005-HEERLIJCKHEYD, SRC-L-1676-HEERLIJCKHEYD-155-158
 
-**Limits / next action:** Locator: item 56, stanza III, lines 18–21, [p. 263], apparatus note 19–20; the same lines in the 1676 print, pp. 155–158. The Russian line is a translation defect, and the fix is two lines because line 2 is the rhyme partner of line 4. Options with syllable counts: `DUTCH-005_STANZA_3_2_OPTIONS.md`.
+**Limits / next action:** Locator: item 56, stanza III, lines 18–21, [p. 263], apparatus note 19–20; the same lines in the 1676 print, pp. 155–158. Reading verified in all three witnesses on 2026-10-26 (`COLLATION_DUTCH-005_THREE_WAY.md`): `crijgelijck` (1676), `krijgelijck` (1727, spelling), `crijgelijck` (2005) — stable, so the Russian line is a defect, not a variant. The Russian line is a translation defect, and the fix is two lines because line 2 is the rhyme partner of line 4. Options with syllable counts: `DUTCH-005_STANZA_3_2_OPTIONS.md`.
 
 ## CLM-DUTCH-005-RUTGERS-1806-43 — DUTCH-005: the Rutgers reworking as hymn XLIII of 1806
 
@@ -705,3 +705,15 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Limits / next action:** Read from a public reproduction in modernised spelling; the printed bundel is protected and has not been collated. Used to describe the reworking, never as the text of this release.
 
 **HOLDs:** EVIDENCE_HOLD
+
+## CLM-DUTCH-005-TUNE-EXCLUDED — DUTCH-005: which «Un jour» the apparatus rules out
+
+**Claim:** The tune the 2005 apparatus excludes for this poem is the French chanson *Un jour m'en allais seulette* by **Grouzy** (d. 1568), printed in the *Quinzième livre de chansons* (Paris, 1571); it is the tune direction of item 27, *Den eersten psalm uytgebreydet*, [p. 120].
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-CRIT-2005-PSALM1-27, SRC-L-CRIT-2005-HEERLIJCKHEYD, SRC-MUSIC-ROSEMONT
+
+**Limits / next action:** Locator: item 27, [p. 120], apparatus note to the tune line; the 1994 study of the collection's melodies reaches the same identification independently. This names the melody the poem does **not** use — it says nothing about the poem's own tune, which stays untraced. Copy may now say what the excluded *Un jour* is instead of only "not that one".
+
+**HOLDs:** RIGHTS_HOLD

@@ -861,14 +861,12 @@
         "RIGHTS_HOLD"
       ],
       "supports": [
-        "Title 'Heerlijckheyds Loff' and incipit 'HOog! om hoog! mijn siel, na boven!'",
-        "Ten stanzas, with the tripled figures 'leven, leven, leven' -> 'lieven, lieven, lieven' -> 'loven, loven, loven'",
-        "Tune line 'Voyse: Un jour &c.' and closing date '27. in Ougstmaand 1665'",
-        "Stanzas VIII-X, which address Beauty and close doxologically"
+        "The complete ten-stanza text, the tune line, the dateline and the tripled-word device"
       ],
       "limits": [
-        "Only the incipit, the tripled figures, the tune line, the date and stanzas VIII-X were read closely in this pass; the full text has not been collated.",
-        "The print abbreviates repeated half-lines as 'etc.'; those are repeat instructions, not lacunae."
+        "The full text was read in both the 1676 and the 1727 printing on 2026-10-26, but only from the digital text layer; no page image has been inspected, so typography and the p. 155 illustration remain unverified.",
+        "The print abbreviates repeated half-lines as 'etc.'; those are repeat instructions, not lacunae.",
+        "The 1676 compositor is wrong at I.3 ('leven' twice); 1727 is right there and wrong at VII.8 ('dat' for 'dan'). See RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md."
       ]
     },
     {
@@ -1207,6 +1205,26 @@
       ],
       "limits": [
         "Seen in a search rendering while checking the Bourgeois attribution; the article itself has not been read in full, and no page is cited."
+      ]
+    },
+    {
+      "id": "SRC-L-CRIT-2005-PSALM1-27",
+      "title": "Critical-edition item 27 — Den eersten psalm uytgebreydet, p. 120 (the 'Un jour' the apparatus excludes)",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0032.php",
+      "type": "Critical edition, text of the item that carries the other 'Un jour' tune direction",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Item 27, Psalm 1 expanded, stands on p. 120 under the direction 'Te singen op de wijse: Un jour m'en alloit &c.'; the apparatus identifies that melody as the French chanson 'Un jour m'en allais seulette' by Grouzy (d. 1568), printed in the Quinzieme livre de chansons, Paris 1571"
+      ],
+      "limits": [
+        "Copyrighted apparatus: paraphrased, not quoted at length. Identifies the tune that our poem does NOT use — it says nothing about what our poem's own tune was."
       ]
     }
   ]

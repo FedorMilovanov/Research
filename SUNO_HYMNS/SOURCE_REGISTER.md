@@ -6,3 +6,7 @@
 - **SRC-PSALMENGEZ-1938-75** — Gezang 75 in the 1938 bundel, p. 501, nr. 239, melody credited to Bourgeois. CATALOG_ONLY; the printed bundel is not collated.
 - **SRC-HB-1938-75-WEB** — public reproduction of Gezang 75's three stanzas in modernised spelling. B1, secondary, no locator.
 - **SRC-GENEVE-PSAUTIER-42** — scholarly survey of the Genevan psalter for the Bourgeois attribution of the psalm 42 melody. LINK_ONLY: seen in a search rendering, not read in full.
+
+## Collation status 2026-10-26
+
+- **SRC-L-1676-HEERLIJCKHEYD-155-158** and **SRC-L-UYT-1727-HEERLIJCKHEYD** — both read **in full**, not in part. Five substantive variants between the printings, the rest spelling. Table: `RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md`. Page images still unviewed; the claim that no wording is definitive stands.

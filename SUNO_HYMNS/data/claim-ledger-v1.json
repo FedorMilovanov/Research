@@ -712,7 +712,8 @@
       "notes": [
         "The tune name is a designation the modern editors could not resolve, so it must not be presented as an identified melody.",
         "The 1938 hymnal's melody attribution for its reworking of this text (Loys Bourgeois) is a different, 20th-century object and is not evidence for the 1665 tune.",
-        "On 2026-10-26 the Dutch Song Database was found offline (HTTP 403, KNAW information-security notice); its record 9086 rendering adds that the melody is not that of 'Un jour m'en allais seulette'. See CLM-DUTCH-005-TUNE-SHIFT."
+        "On 2026-10-26 the Dutch Song Database was found offline (HTTP 403, KNAW information-security notice); its record 9086 rendering adds that the melody is not that of 'Un jour m'en allais seulette'. See CLM-DUTCH-005-TUNE-SHIFT.",
+        "The excluded tune is now identified: see CLM-DUTCH-005-TUNE-EXCLUDED (Grouzy, 'Un jour m'en allais seulette', Paris 1571)."
       ],
       "holds": [
         "RIGHTS_HOLD"
@@ -739,7 +740,7 @@
     {
       "id": "CLM-DUTCH-005-VARIANTS",
       "topic": "DUTCH-005: variants between the 1676 and 1727 printings",
-      "claim": "The two printings differ in four substantive places: 1676 I.3 reads 'leven, lieven, loven' where 1727 reads 'leven, leven, loven'; 1676 VII.8 reads 'Mijn siel na boven dat' where 1727 reads 'dan', matching line 5; 1727 adds 'al' in VIII.2 ('van al wat hier schoon schijnt'); and 1727 omits the abbreviated repeat line in stanza VIII, printing eight lines instead of nine. The rest is spelling only.",
+      "claim": "The two printings differ in five substantive places: 1676 I.3 reads 'leven, lieven, loven' where 1727 reads 'leven, leven, loven'; 1676 VII.3 reads 'Vindt' where 1727 reads 'Vind'; 1676 VII.8 reads 'Mijn siel na boven dat' where 1727 reads 'dan', matching line 5; 1727 adds 'al' in VIII.2; and 1727 omits the abbreviated repeat line in stanza VIII, printing eight lines instead of nine. The rest is spelling only.",
       "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
       "sourceIds": [
         "SRC-L-1676-HEERLIJCKHEYD-155-158",
@@ -749,7 +750,8 @@
         "Read directly from both transcriptions; no page image was inspected for either.",
         "The dating form differs cosmetically: '27. in Ougstmaand 1665' (1676) and '27 in Oogstmaand 1665' (1727).",
         "The tripled device is unaffected: both print leven/leven/leven, lieven/lieven/lieven and loven/loven/loven in stanzas III-X.",
-        "Because two impressions disagree, neither can be treated as the copy text without a page-image check."
+        "Because two impressions disagree, neither can be treated as the copy text without a page-image check.",
+        "Full-text collation of both printings completed 2026-10-26 (COLLATION_DUTCH-005_THREE_WAY.md). The fifth variant (VII.3 Vindt/Vind) was added by that pass; the 2005 edition agrees with 1676 there."
       ],
       "holds": [
         "EVIDENCE_HOLD",
@@ -769,7 +771,8 @@
       ],
       "notes": [
         "Locator: critical edition item 56, stanza III, lines 18-21, [p. 263], apparatus note 19-20. The Dutch line itself is also in the 1676 print, pp. 155-158.",
-        "Consequence recorded in the repository: the Russian line is a translation defect, not an editorial choice, and stanza 3 needs a two-line fix because line 2 is the rhyme partner of line 4. Options with syllable counts: RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md."
+        "Consequence recorded in the repository: the Russian line is a translation defect, not an editorial choice, and stanza 3 needs a two-line fix because line 2 is the rhyme partner of line 4. Options with syllable counts: RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md.",
+        "Reading verified across all three witnesses on 2026-10-26: 'Na dit leven crijgelijck' (1676), 'krijgelijck' (1727, spelling only), 'crijgelijck' (2005). The reading is stable, so the Russian line is a defect of the adaptation and not a variant of the source."
       ],
       "holds": []
     },
@@ -855,6 +858,25 @@
       ],
       "holds": [
         "EVIDENCE_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DUTCH-005-TUNE-EXCLUDED",
+      "topic": "DUTCH-005: which 'Un jour' the apparatus rules out",
+      "claim": "The tune the 2005 apparatus excludes for this poem is the French chanson 'Un jour m'en allais seulette' by Grouzy (d. 1568), printed in the Quinzieme livre de chansons (Paris, 1571); it stands as the tune direction of item 27, Den eersten psalm uytgebreydet, on p. 120.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-L-CRIT-2005-PSALM1-27",
+        "SRC-L-CRIT-2005-HEERLIJCKHEYD",
+        "SRC-MUSIC-ROSEMONT"
+      ],
+      "notes": [
+        "Locator: critical edition, item 27, [p. 120], apparatus note on the tune line. The 1994 study of the collection's melodies reaches the same identification independently.",
+        "This names the melody the poem does NOT use. It does not identify the poem's own tune, which stays untraced — the apparatus calls its origin unknown.",
+        "Copy consequence: the description may now say what the excluded 'Un jour' is, instead of saying only 'not that one'."
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
       ]
     }
   ]
