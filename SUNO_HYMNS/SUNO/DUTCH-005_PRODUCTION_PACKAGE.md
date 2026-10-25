@@ -106,17 +106,21 @@ See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.2`, with c
 | **D-07** | VI.5 | The Dutch `Wilt gy ten leven gaan? Wilt gy etc.` is rendered with an inline interrogative repeat, not a duplicated line | Keeps the print's repeat without inflating the stanza |
 | **D-08** | all | No rhyme scheme or metre is claimed as the Dutch one | The 1665 melody is unknown; inventing a claim would be worse than declaring the absence |
 
-## 6. Musical brief and SUNO prompts
+## 6. Musical brief and SUNO styles
 
-**Style lives in [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md)**, verbatim, together with the reasons for each change from the first version. Summary:
+**Style lives in [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md)** and now carries **five distinct directions**, as the project requires:
 
-- **Primary — `PROMPT-DUTCH-005-V1`:** epic sacred organ, 4/4, **118 bpm**, D minor, Georgian-flavoured male monastic choir in parallel fifths, **one clear tenor-baritone lead**, strictly syllabic declamation, one syllable per note, no melisma, no stretched vowels, **short two-bar organ intro**, **all ten verses in order with no cuts**, wide reverb but a forward lead, no percussion, no guitars, no synthesizers.
-- **Excluded:** drums, synth pads, cinematic swells, belting, **breathy or whispered lead**, **husky or excessively low bass lead**, heavy vibrato, **melisma, vocal runs**, auto-tune, spoken word, **long instrumental interludes**.
-- **Documented alternative (`DOCUMENTED_OPTION`, not a version):** organ and low strings, 3/4, 112 bpm, F minor, baritone cantor for the call lines, low male quartet entering only at verse 4, syllabic, no percussion, no guitars.
+| ID | Direction | Tempo / mode | Completeness risk |
+|---|---|---|---|
+| **A** (primary slot) | epic organ + Georgian-flavoured male monastic choir | 118 · D minor | medium |
+| **B** | Renaissance wind consort — cornetto, sackbuts, shawm — + four male voices | 112 · D dorian | low |
+| **C** | viol consort + chamber organ + solo tenor, ensemble grows verse by verse | 100 · G minor | medium-high |
+| **D** | Byzantine-style ison under a baritone cantor | free over slow pulse · E minor | high |
+| **E** | metrical chorale, unison male voices + organ | 126 · A minor | lowest |
 
-**Corrections against the first version, stated plainly:** "low male lead" was wrong for a dense Russian text and became a tenor-baritone; "declaiming syllabically" was too weak and became one syllable per note with melisma and stretched vowels forbidden outright; "all ten verses sung in order with no cuts" was missing and is now explicit; the introduction was shortened to two bars.
+**A** holds the primary slot only because the registry must carry one `promptText`; the owner chooses. All five share the same floor: strictly syllabic, one syllable per note, no melisma, no stretched vowels, clear and forward lead (never breathy, whispered, husky or gratutiously low), **all ten verses in order with no cuts**, short introduction, no invented chorus.
 
-**If Suno truncates:** ask for all ten verses, raise the tempo, shorten the intro; if it still truncates, split the release at the poem's seam (verses 1–5 / 6–10) rather than deleting text.
+**If Suno truncates:** ask for all ten verses, raise the tempo, shorten the intro; if it still truncates, split at verses 1–5 / 6–10. Never delete a stanza to fit.
 
 ## 7. Status table — every element, honestly labelled
 
@@ -130,8 +134,8 @@ See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.2`, with c
 | Russian draft | `WORKING_DRAFT` v0.3 in `DUTCH-005_LYRICS.md` — **not approved**; owner revision required |
 | Deviations (§5) | `DECLARED` — eight, each with a reason |
 | Musical brief (§6.1) | `AUTHORED_FOR_THIS_WORK` |
-| Style prompt | `AUTHORED_NOT_YET_SUBMITTED` — `PROMPT-DUTCH-005-V1` in `DUTCH-005_STYLE.md` §1 (118 bpm, tenor-baritone, strictly syllabic) |
-| Alternative style | `DOCUMENTED_OPTION` — `DUTCH-005_STYLE.md` §2 |
+| Style prompts | **five** directions, `A`–`E`, in `DUTCH-005_STYLE.md`; all `DOCUMENTED_NOT_YET_SUBMITTED`, none chosen |
+
 | SUNO generation | `NONE` |
 | Audio, export, cover, video | `NONE` |
 | Publication | `UNKNOWN_NOT_VERIFIED` — nothing exists to publish |

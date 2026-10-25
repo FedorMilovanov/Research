@@ -420,7 +420,7 @@
             "text": "solemn organ and low strings hymn, 3/4, 112 bpm, F minor, great organ foundation stop and pedal drones, cello and contrabass doubling the bass line, a quartet of low male voices entering only from verse 4, one clear baritone cantor for the call lines, syllabic declamation, no melisma, plain diction, no percussion, no guitars",
             "note": "A second style direction recorded for comparison only; not a version, not approved."
           },
-          "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md §1). Never submitted to SUNO. Rewritten after the first version was found to ask for a low lead and a slow, melismatic delivery on a 90-line text.",
+          "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md). Five directions, never submitted to SUNO.",
           "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
           "lyricRevisionNote": "Revision v0.3: seven lines rewired after review (stanzas 1, 2, 3, 6, 7, 8, 9, 10), syllable counts measured rather than asserted, and the claim of a regular metre withdrawn. Russian adaptation, not a translation; the clean lyric, the SUNO-ready text and the style are three separate files. Owner revision is the gate before READY_FOR_REVIEW.",
           "assets": {},
@@ -436,7 +436,40 @@
           },
           "promptDocuments": [
             "SUNO/DUTCH-005_STYLE.md"
-          ]
+          ],
+          "styleVariants": [
+            {
+              "id": "STYLE-DUTCH-005-A",
+              "label": "Epic organ + Georgian-flavoured male monastic choir",
+              "status": "PRIMARY_SLOT_NOT_PREFERRED",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §A"
+            },
+            {
+              "id": "STYLE-DUTCH-005-B",
+              "label": "Renaissance wind consort (cornetto, sackbuts, shawm) + four male voices",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §B"
+            },
+            {
+              "id": "STYLE-DUTCH-005-C",
+              "label": "Viol consort + chamber organ + solo tenor, ensemble grows verse by verse",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §C"
+            },
+            {
+              "id": "STYLE-DUTCH-005-D",
+              "label": "Byzantine-style ison under a baritone cantor",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §D"
+            },
+            {
+              "id": "STYLE-DUTCH-005-E",
+              "label": "Metrical chorale, unison male voices + organ, 126 bpm",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §E"
+            }
+          ],
+          "styleVariantNote": "Five distinct directions are required per work (SUNO/STYLE_AND_PRODUCTION_RULES.md). A occupies the primary slot only because the registry must carry one promptText; the owner chooses. All five are syllabic, intelligible-lead, all-ten-verses, no invented chorus. None has been submitted."
         }
       ],
       "authorId": "LOD-001",
@@ -465,7 +498,7 @@
       "openChecks": [
         "Owner line-by-line revision of the Russian lyric v0.3 (SUNO/DUTCH-005_LYRICS.md); freeze as v1.0 and regenerate the SUNO-ready file from it.",
         "Inspect the 1676 page images of printed pp. 155-158 to move the text from transcription-plus-collation to print-verified; view the illustration ill0155.",
-        "Decide between the two style directions and record the decision.",
+        "Owner chooses one of the five style directions (SUNO/DUTCH-005_STYLE.md A-E) and records the decision.",
         "Retry the Dutch Song Database for 'Un jour &c.' and for lode002uyt_01_0047; no melody claim until then.",
         "Record the prompt revision hash before submission and the file's own duration and metadata after any generation.",
         "If a generation truncates, do NOT cut stanzas: regenerate with 'all ten verses, in order, no cuts', or split the release at verses 1-5 / 6-10."

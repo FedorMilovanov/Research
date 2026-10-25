@@ -35,6 +35,22 @@ These are project-wide working principles, adopted 2026-10-25 from the owner's n
 
 **What these rules do not do.** They do not establish that any existing recording followed them. The three existing works have `NOT_CAPTURED` prompts, so compliance cannot be demonstrated retrospectively.
 
+## Style delivery — five distinct directions per work
+
+Adopted 2026-10-25 at the owner's direction. For every work, deliver **five style directions**, not one. One of them may be marked primary; the other four are documented options. Choosing between them is the owner's decision, and the five must be genuinely different from each other — different ensembles, different vocal weight, different historical or regional idiom — not five rewordings of the same prompt.
+
+What every direction must keep, however different it sounds:
+
+- **strictly syllabic delivery** — one syllable per note, no melisma, no stretched vowels;
+- **intelligible lead** — clear diction, natural stress; no breathy, whispered or husky delivery, and no gratuitously low bass lead unless a concept needs it;
+- **all stanzas in source order, no cuts**;
+- **no invented chorus, refrain or lines**;
+- short introduction and short transitions; long instrumental interludes counted against the text's duration budget.
+
+What may differ freely: instrumentarium, vocal constitution, language region and era of the idiom, tempo, metre, density of polyphony, and the point at which the ensemble enters.
+
+Each direction is recorded with: an ID, a one-line label, the prompt string, what is excluded, what it is for, and its risk. **Five prompts per work is the delivery minimum; none of them is "the" style until the owner picks one.**
+
 ## Per-work decisions (not project defaults)
 
 | Work | Decision | Status |

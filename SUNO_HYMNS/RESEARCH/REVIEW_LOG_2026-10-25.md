@@ -258,3 +258,29 @@ Extended so that a prompt may live in a dedicated style document: `version.promp
 
 `validate_project_registry.py` passes: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
 
+# Ninth pass — 2026-10-25 (delivery format and five styles)
+
+Two owner requirements, both now rules rather than habits of one work.
+
+## 1. The header line
+
+`SUNO/README.md` now specifies a **single line**, title first, author second, no labels:
+
+```
+«Слава Господня» — Йодокус ван Лоденстейн
+```
+
+The earlier wording of the rule (separate `Название:` and `Автор:` rows) was replaced, because the owner prefers the one-line form. The historical title, the source and the status follow underneath — never above.
+
+## 2. Five style directions per work
+
+`SUNO/STYLE_AND_PRODUCTION_RULES.md` now requires **five genuinely distinct directions**, not one, with a shared floor: syllabic declamation, one syllable per note, no melisma, no stretched vowels, intelligible lead, all stanzas in order, no invented chorus, short intro. Instrumentarium, region and era of the idiom, tempo, metre and the point of ensemble entry are free to differ.
+
+`DUTCH-005_STYLE.md` was rewritten accordingly: A epic organ + Georgian monastic choir (118, D minor); B Renaissance wind consort — cornetto, sackbuts, shawm — with four male voices (112, D dorian); C viol consort + chamber organ + solo tenor, ensemble growing verse by verse (100, G minor); D Byzantine-style ison under a baritone cantor (free); E metrical chorale, unison male voices and organ (126, A minor). Each carries an exclude list, a purpose and its risk; the comparison table states completeness risk per direction, D highest and E lowest.
+
+**A holds the primary slot only because the registry must carry one `promptText`.** No direction is preferred, and the choice is recorded as an open check.
+
+## 3. Registry
+
+`styleVariants` (five IDs) added to `DUTCH-005-RU-v0.3`, with a note that the primary slot is a registry necessity, not a preference. Validator passes: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
+

@@ -39,21 +39,21 @@ If an exact prompt or source lyric is unavailable, use NOT CAPTURED. Never rewri
 
 ## Delivery header — required on every handout
 
-Every time a work is delivered to the owner — in chat or as a file — the first two lines are, in this order and in this order only:
-
-1. **Title** — the historical title as printed, then the working Russian title if one exists.
-2. **Author** — name with dates, and any later reviser named separately.
-
-Nothing precedes them: not the status, not the analysis, not the prompt. The status and the rights caveats follow underneath, because a title and an author are the one thing the owner needs in order to decide whether to read further.
-
-Short form for chat:
+Every delivery to the owner — in chat or as a file — opens with **one line**: the Russian title in quotation marks, an em dash, the author's name. No labels, no separate "Название:" / "Автор:" rows.
 
 ```
-Название: <as printed> (<Russian working title, if any>)
-Автор: <name> (<years>), <reviser if any>
+«Слава Господня» — Йодокус ван Лоденстейн
 ```
 
-Do not omit the author when the text is anonymous only because the attribution is uncertain — write `attribution uncertain` in the author field instead.
+Rules for that line:
+
+- the title comes **first**, the author **second**, always in that order;
+- the title is the Russian working title in quotes; the historical title and its spelling go on the line below, not on the header line;
+- the author carries dates in parentheses in documents: `Йодокус ван Лоденстейн (1620–1677)`; a chat delivery may use the bare name;
+- a later reviser is named separately underneath, never merged into the author field;
+- if the attribution is uncertain, the author field says so rather than being dropped.
+
+Then, and only then, the historical title, the source and the status. Status, rights caveats and open questions never come before the title line.
 
 ## Lyric and pronunciation workflow
 
