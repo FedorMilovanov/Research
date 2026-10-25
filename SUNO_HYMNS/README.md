@@ -2,7 +2,7 @@
 
 **Project ID:** SUNO-HYMNS-NL  
 **Snapshot date:** 2026-10-26  
-**State:** publication pass (2026-10-26), plus a new lane opened the same day. DUTCH-005 carries a full publication package — YouTube titles, description, tags, two pinned comments and a Telegram post — and the owner reports it generated, covered and uploaded; no URL, file or take is held here, so nothing is marked published. **PHOS-001** (Φῶς ἱλαρόν, «Свет отрадный») is a new, non-Dutch work: a Russian verse **translation** of six Greek lines and five style directions exist; nothing is generated. Earlier works keep their states; prompt recovery for DUTCH-001/002/003 is still open.
+**State:** publication pass (2026-10-26), plus a new lane opened the same day. DUTCH-005 carries a full publication package — YouTube titles, description, tags, two pinned comments and a Telegram post — and the owner reports it generated, covered and uploaded; no URL, file or take is held here, so nothing is marked published. **PHOS-001** (Φῶς ἱλαρόν, «Свет радостный») is a new, non-Dutch work: a Russian verse **translation** of six Greek lines and five style directions exist; nothing is generated. Earlier works keep their states; prompt recovery for DUTCH-001/002/003 is still open.
 
 ## Purpose
 

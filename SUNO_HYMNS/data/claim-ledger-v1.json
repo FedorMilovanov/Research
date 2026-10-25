@@ -1084,14 +1084,15 @@
     {
       "id": "CLM-PHOS-001-TRANSLATION",
       "topic": "Our Russian text",
-      "claim": "PHOS-001-RU v0.1 is a verse translation of the six Greek lines into six Russian lines, in the order of the original, with no refrain, no repeated line, no added line and no rhyme, and with the suspended reference of the three genitive adjectives preserved.",
+      "claim": "PHOS-001-RU v0.2 is a verse translation of the six Greek lines into six Russian lines, following the order of the original word for word where Russian allows, with one added auxiliary and the articles dropped, with no refrain, no repeated line, no added line, no rhyme and no metre (the source has neither), and with the suspended reference of the three genitive adjectives preserved.",
       "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
       "sourceIds": [
         "SRC-PHOS-CPDL"
       ],
       "notes": [
-        "Every departure and every rejected alternative is recorded in RESEARCH/DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md.",
-        "Checked against two independent Russian prose translations for sense; no wording was taken from either.",
+        "Every choice and every rejected alternative is recorded in RESEARCH/DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md, including the word-for-word table and the additions register.",
+        "Checked against two independent Russian prose translations for sense; no wording was taken from either, and the Church Slavonic «Свете тихий» was not used as a source or as a model.",
+        "The rhyme question is settled by evidence, not by preference: the six line-endings do not rhyme and the syllable counts are 15·15·18·16·16·18.",
         "A working draft, not an owner-approved text."
       ],
       "holds": []

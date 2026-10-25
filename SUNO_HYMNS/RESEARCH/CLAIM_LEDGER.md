@@ -827,7 +827,7 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 ### CLM-PHOS-001-TRANSLATION — our Russian text
 
-**Claim:** `PHOS-001-RU v0.1` is a verse translation of six Greek lines into six Russian lines, in the original order, with no refrain, no repeated line, no added line and no rhyme, keeping the suspended reference of the three genitive adjectives.
+**Claim:** `PHOS-001-RU v0.2` is a verse translation of six Greek lines into six Russian lines, in the original order, with no refrain, no repeated line, no added line and no rhyme, keeping the suspended reference of the three genitive adjectives.
 
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-CPDL · **HOLDs:** none
 **Limits / next action:** every choice and every rejected alternative is in `DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md`; a working draft, not an owner-approved text.
