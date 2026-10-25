@@ -529,3 +529,19 @@ Three complaints, three different causes, all mine.
 **3. Telegram came out italic and with merged link lines.** My Telegram text used a **single** asterisk for bold, and in the field the owner copies from a single asterisk is *italic*; link labels were wrapped in the same markup, and a line break inside a wrapper collapses on paste, so three links arrived as one line. Also `vk.com/the_lord_god_is_my_strength` carries underscores. v2 of `SUNO/DUTCH-005_TELEGRAM.md`: bold is `**` only, italic only on whole lines, and **no markup at all on link lines**.
 
 **Lesson recorded** in `LESSONS_AND_GUARDS.md` § 2a, replacing the earlier wrong entry that blamed the platform: the standard was right and I misread it; "the tool is broken" is the last hypothesis.
+
+# Twenty-third pass — 2026-10-25 (two pinned comments, markup in both)
+
+The owner asked for **two** pinned comments — one about this hymn, one about how hymns were sung in the Netherlands generally — both carrying real bold and italic, and asked for 50+ links to be studied.
+
+**What I read, not skimmed.** The decisive find is Lodenstein's own preface to *Uyt-spanningen*, read in the 1727 edition (`lode002uyt_03_01_0002.php`, leaves \*3v–\*5r). It is not a dedication: it is a **manual for singing in a house circle**. Six rules — sing God in the Spirit; lift the heart with sighs and prayer; sing with attention, reflection and reverence; after each song **every member is free to say what the Spirit revealed to him while singing**; show no respect of persons, "the least" often receive the most; keep tone and measure, one leads the `voorsang`, the others take `bovensang` and `medesang`, an even tone per syllable, sing from the chest. And the line that carries the whole second закреп: `'t hardste schreeuwen en is het beste singen niet` — the loudest shouting is not the best singing. Words must be intelligible even to the unlettered and to someone overhearing. Virtues are allegorised through the voice parts: humility is `ondersang`, self-denial `buygsame maat- en nasang`, unity `stemme-menginge`.
+
+**Why this beats an encyclopaedia entry.** Every popular retelling says "Lodenstein wrote songs for the conventicle". The preface says *how* the conventicle sang, in the author's own words, including the anti-shouting rule nobody quotes. That is what the закреп 2 is built on.
+
+**Second find.** The 2005 introduction (pp. 643–645) fixes the biography and — important — that at Zoetermeer in 1644 the young pastor tried to **improve congregational singing** and the church-council acts record it. So the interest in singing is not a Utrecht eccentricity; it starts in his first parish.
+
+**Discipline.** The закрепы state nothing that only a search snippet supports. Where a number was uncertain (how many conservative congregations still sing Datheen) the number was dropped rather than hedged. The 1679 second edition is now correctly described as coming two years **after** the author's death, and the melody is described as **not found**, with the "Voyse: Un jour &c." shown to belong to text 27.
+
+**Gate extended.** The CI markup step now also extracts both ```text blocks of `SUNO/DUTCH-005_PINNED.md` and fails if there are not exactly two or if either breaks the wrapper rule. Both pass: 1320 chars / 2 bold / 1 italic line, and 1563 chars / 4 bold / 1 italic line.
+
+**Still open:** the закрепы have not been pasted into YouTube Studio, so their rendering is unverified; the 1676 page images were never collated (text layer only); stanza 3.2 «После земных невзгод» remains the one open lyric defect.

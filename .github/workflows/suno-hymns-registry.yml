@@ -66,6 +66,19 @@ jobs:
           Path("/tmp/dutch005-yt.txt").write_text(body, encoding="utf-8")
           PY
           python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-yt.txt
+          # The two pinned comments live in their own file, one ```text block
+          # each. Both must pass the same gate before they go anywhere near Studio.
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          src = Path("SUNO_HYMNS/SUNO/DUTCH-005_PINNED.md").read_text(encoding="utf-8")
+          blocks = re.findall(r"```text\n(.*?)\n```", src, re.S)
+          assert len(blocks) == 2, f"expected 2 pinned-comment blocks, found {len(blocks)}"
+          for n, body in enumerate(blocks, 1):
+              Path(f"/tmp/dutch005-pin{n}.txt").write_text(body, encoding="utf-8")
+          PY
+          python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-pin1.txt
+          python3 SUNO_HYMNS/scripts/check_youtube_markup.py /tmp/dutch005-pin2.txt
 
       - name: Check that the prose names the current revision
         # Structural validation cannot see that four documents still describe the
