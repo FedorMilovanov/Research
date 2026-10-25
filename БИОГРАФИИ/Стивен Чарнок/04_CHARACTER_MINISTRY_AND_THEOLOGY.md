@@ -933,6 +933,72 @@ that which is too sharp to be exprest, too great to be conceiv'd. A vengeance it
    `1:17`). Одиннадцать ждут: `1:4`, `1:5`, `1:6`, `1:7`, `1:8`, `1:9`, `1:12`, `1:13`, `1:14`,
    `1:15`, `1:16`. `LOCATOR_HOLD`.
 
+### 0L. «A DISCOURSE UPON PRACTICAL ATHEISM» — первый дискурс фолианта, аппарат из 173 сносок (добавлено 2026-10-25)
+
+**Объект.** Узел `A32723.0001.001/1:5` (фолиант 1682), **стр. 47–~107**, 45 чанков, **173 сноски —
+самый большой аппарат из прочитанных**. Текст — **Пс. 14:1**. Это дискурс, в котором уже
+использовался локатор `CHARN_PRACT_ATHEISM_001` (стр. 47) в корпусах Research (том 10).
+
+**Doct. 2 (дословно, крупным шрифтом в оригинале):**
+
+> «PRACTICAL Atheism is natural to Man in his depraved state, and very frequent in the hearts and
+> lives of Men.»
+
+**Лучшие места.**
+
+> «The Fool hath said in his heart there is no God. He regards him as little as if he had no being:
+> He said in his heart, not with his tongue, nor in his head: He never firmly thought it, nor openly
+> asserted it: **Shame put a Bar to the first, and natural reason to the second.**»
+
+> «**Men may have Atheistical hearts without Atheistical heads.** Their reasons may defend the Notion
+> of a Deity, while their hearts are empty of affection to the Deity: Jobs Children may curse God in
+> their hearts, tho not with their lips.»
+
+> «God is not denied naturâ, sed vitiis.» — **латинская максима** в первой строке доказательства.
+
+> «Though they own a God in general, yet are willing to acknowledge **any God that shall be coined by
+> the powers under whom they live**. The Gentiles were without God in the world; without the true
+> Notion of God, not without a God of their own framing.»
+
+**Эта последняя фраза — политическая.** «Any God that shall be coined by the powers under whom they
+live» — обвинение в **эрастианстве**, то есть в подчинении религии государству. Для Чарнока,
+внегосударственного нонконформиста, пережившего Реставрацию и Clarendon Code, это не абстракция.
+Отдел фиксирует: **первый дискурс фолианта начинается с обвинения государственной религии в
+фабрикации удобных богов** — и это ровно тот дискурс, который открывает главный труд.
+
+**Образ природы (дословно):**
+
+> «When we attempt any thing pleasing to God, tis like the climb∣ing up a Hill, against nature; when
+> any thing is displeasing to him, tis like a Current running down the Channel in its natural course.»
+
+**Аппарат — новые имена для реестра тома 16:**
+
+| Сноска | Ссылка | Автор / сочинение |
+|---|---|---|
+| 1.134 | «Gurnall. Part. 3. Pag. 337.» | **Уильям Гёрналл, *The Christian in Complete Armour*, ч. 3** |
+| 1.137 | «Sanaerson's S. Part. 2. P. 158.» | по-видимому **Sanderson's Sermons**, ч. 2 — то есть **Роберт Сандерсон**, англиканский епископ Линкольнский, цитируемый диссентером |
+| 1.138 | «Hos. ••8.13. Vid. **Cocc. in locum**.» | **Кокцей — четвёртое** именование в корпусе |
+| 1.144 | «Gurnal part 2. p. 245. 246.» | **Гёрналл, ч. 2** — второе именование |
+| 1.145 | «Tertul. cont. Maxim. lib. 1. cap. 2.» | **Тертуллиан** |
+| 1.166 | «**Lawson body of Divinity pa. 153. 154.**» | «Lawson's Body of Divinity» — не идентифицирован; `LOCATOR_HOLD` |
+| 1.169 | «**Reynolds.**» | **Reynolds — второе** именование (первое: *Supplement*, «Delight in Prayer», сноска 1.2). Два отдельных появления одного имени — реальный след для идентификации; вероятнее всего **Edward Reynolds** (1599–1676), епископ Нориджский, пресвитерианец, ставший англиканским епископом. `LOCATOR_HOLD` |
+
+**Три наблюдения.**
+
+1. **Англиканские епископы в аппарате диссентера.** Сандерсон и (вероятно) Рейнольдс — оба
+   англиканского епископата, оба цитируются без полемики. Это прямое подтверждение того, что
+   Adams & Veal называли «true son of the Church of England» (том 08): Чарнок не отделился от
+   английской богословской традиции, он спорил только с её государственным статусом.
+2. **Гёрналл — самый цитируемый английский автор в прочитанном корпусе.** Его *Christian in
+   Complete Armour* стоит в аппарате двух разных дискурсов. Для Части II (Учёный) это факт
+   библиотеки, а не мнение.
+3. **Кокцей — четвёртое именование.** Вместе с Лайтфутом (×3) и Амиро (×2) это составляет ядро
+   **реформатского кластера**, который должна показать SVG-карта 2 «Библиотека».
+
+**Полнота.** Прочитано **четыре дискурса фолианта из 14**: `1:5` (практический атеизм),
+`1:10` (вездесущние), `1:11` (знание), `1:17` (терпение). Остались десять: `1:4`, `1:6`, `1:7`,
+`1:8`, `1:9`, `1:12`, `1:13`, `1:14`, `1:15`, `1:16`. `LOCATOR_HOLD`.
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах
