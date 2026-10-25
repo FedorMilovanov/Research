@@ -76,6 +76,14 @@ This is the most consequential finding for the project, because it creates a **r
 
 The 1938 item is a **reworking by a twentieth-century hymnal editor**, with its own melody attribution — not the 1676 text and not the 1665 tune. It is the form most likely to be familiar to a modern listener, and therefore the one most likely to be mistaken for the historical poem. Any future work on this text must state which form it follows. The 1938 wording and melody carry their own rights questions.
 
+## A related 1938 attribution, and what it can and cannot prove
+
+In the fifth pass the printed 1938 Hervormde Bundel was collated for Gezang 205 (see `COLLATION_GEZANG205_THREE_WAY.md`). That page establishes the bundel's **layout convention**: the composer's name is printed above the item and the text author's below it — e.g. Gezang 204 carries `Louis Bourgeois († 1510—1572)` above and `Johannes Helder (1834—1933)` below; Gezang 202 carries `William Croft` above and `Johann Andreas Böhringer` below.
+
+That convention is the mechanism by which a 16th-century tune name becomes attached to a 20th-century hymnal item, and it is consistent with the earlier report that *'t Oog omhoog, het hart naar boven!* appears in the 1938 bundel with Bourgeois as its melody.
+
+**But it does not verify that item.** `'t Oog omhoog` was **not located** in the printed bundel in this pass. The claim stays at `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`, resting on the Kerkliedwiki listing and the bundel's demonstrated layout. Do not cite the Bourgeois attribution as print-verified until the page is read.
+
 ## Music brief recorded in earlier sessions
 
 Male monastic ensemble and epic organ. **Status: `DISCUSSED_NOT_APPROVED`, and a duplication risk.** An essentially identical brief (male monastic polyphony, powerful organ, epic character) also appears in the notes for **DUTCH-002**. Since no verbatim prompt for either work is in this repository, it cannot now be determined whether one prompt was reused for two different poems. When prompts are recovered, they must be matched to the poem they were written for — a prompt is not transferable evidence that the right text was sung.
@@ -94,5 +102,6 @@ Male monastic ensemble and epic organ. **Status: `DISCUSSED_NOT_APPROVED`, and a
 1. Read the full 1676 text at printed pp. 155–158 before any adaptation decision (only the incipit, the tripled figures and stanzas VIII–X have been verified here).
 2. Obtain the Russian stanzas VII–X actually written earlier and check them against the Dutch VIII–X; the poem's other seven stanzas have no Russian counterpart recorded.
 3. Retry the Dutch Song Database for *Un jour* and for `lode002uyt_01_0047`; the 2005 apparatus's claim that the tune differs from text 27's *Un jour* needs a second look.
+3a. Locate *'t Oog omhoog, het hart naar boven!* in the printed 1938 bundel (Delpher `MMKB06:000000593`) to settle its wording and its melody credit; the composer/author layout is now known, so the page can be found by gezang number.
 4. If the 1938 form is to be used at all, record that decision as a distinct textual choice with its own rights assessment.
 5. Only after 1–4 should this candidate be proposed for activation as a production track.

@@ -63,6 +63,13 @@ Four things were settled from primary or near-primary sources, and one earlier e
 
 **Standing text rules** for SUNO work now live in `SUNO/STYLE_AND_PRODUCTION_RULES.md`, with a per-work table that keeps DUTCH-002's 112–120 BPM brief out of the project defaults. **Draft ≠ approved**, and a prompt is not proof of accuracy: see the seven-state table in `SUNO/LYRIC_REGISTER.md`.
 
+## Where the fifth pass left things (2026-10-25, evidence-gap closure)
+
+1. **`heylsaam Niet` located** — 1676, stanza II line 5. It is *not* 1806 wording. The poem qualifies its Nothing three ways: `heylsaam` (II), `eyndeloos` (IV), `grondloos` (VIII).
+2. **Gezang 205 collated against the printed 1938 bundel** (Delpher `MMKB06:000000593`, image pp. 724–725) — `RESEARCH/COLLATION_GEZANG205_THREE_WAY.md`. Corrections: the stanza-2 substitution is a pair of changes, not one; the grafted couplet in stanza 4 is 1806 stanza 5 ll. 5–6, and it changes the argument from decree to providence. Melody credit: Johann Christoph Bach. Text credit: Lodenstein, *Bewerking van Abraham Rutgers*. The bundel is a **protected** object.
+3. **Access routes worth knowing.** Delpher serves page OCR at `/nl/boeken/view?coll=boeken&identifier=<OBJ>:<IMAGE>`; the image number is not the printed page and items must be bracketed (image 430 = Gezang 18, 640 = 153, 724–725 = 205; image 296 = Psalm 109). In-bundle search and `download/txt` return 404. The WNT at `gtb.ivdnt.org` renders only its JavaScript shell, and Ensie is paywalled — **no dictionary sense has been read in this project**.
+4. **`in 't dorre stickt`** narrowed to "stuck fast, choked, in the dry" on rhyme + etymology; still `PENDING_LEXICAL_CHECK`.
+
 ## Validation
 
 `python SUNO_HYMNS/scripts/validate_project_registry.py` is now enforced by `.github/workflows/suno-hymns-registry.yml`. It checks registry state, cross-references, orphan sources, claim-to-work traceability, `EVIDENCE_HOLD` gaps, backlog/catalog Markdown against the JSON, prompt byte-identity with the production package, and read-only behaviour. If you add a source, a claim or a candidate, expect the Markdown/JSON set comparison to fail until both sides agree.

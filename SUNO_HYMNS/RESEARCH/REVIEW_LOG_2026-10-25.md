@@ -112,3 +112,48 @@ Six sources and eight claims added; candidate `DUTCH-CAND-021` mirrored in the b
 - Locate `heylsaam Niet`: **not present** in the 1806 text checked, so it belongs to the 1676 poem — the 1676 stanza has not been re-read for it in this pass.
 - Acquire the 1630 Revius leaf.
 - Recover the Russian drafts and the verbatim SUNO prompts for DUTCH-001/002/003.
+
+# Fifth pass — 2026-10-25 (closing the evidence gaps that the fourth pass left)
+
+Scope: take the four items the fourth-pass audit listed as "still open" and see which were actually reachable. Two closed, one moved, two are now documented dead ends with the reason.
+
+## 1. `heylsaam Niet` — found
+
+The phrase is in the **1676** poem, stanza **II, line 5** (`Sig tot 't heylsaam Niet te neygen`), read in full this pass at printed pp. 82–84. It is **not** in the 1806 hymn, which replaces the clause with `Om zich tot dien wil te neigen`. The open question is closed, and the phrase must never be quoted as 1806 wording.
+
+The same reading turned up a related fact: the poem qualifies its "Nothing" three different ways — `heylsaam Niet` (II), `'t eyndeloos Niet` (IV), `'t grondloos Niet` (VIII). None is nihilism, and no translation should reduce them to one word.
+
+## 2. Gezang 205 (1938) — collated against the printed book
+
+The printed bundel was reached through Delpher page images (`MMKB06:000000593`, image pp. 724–725). Result: the five-stanza count and the composition are **print-verified**, and two fourth-pass details needed correcting.
+
+- The stanza-2 change is a **pair**: `zielverdervend` → `trots, hoogmoedig` in line 1 **and** `Werp die trotsheid dan` → `werp dien hoogmoed dan` in line 5. The word for pride moves out of the prayer into the diagnosis.
+- The couplet closing the 1938 fourth stanza is 1806 **stanza 5, lines 5–6**, grafted onto 1806 **stanza 6, lines 1–4**. It replaces 1806's own couplet, which asserted that what God decides *is* wisdom. The 1938 couplet asserts that God knows what would harm us. **The two hymnals therefore explain `Voor 't geloof is alles goed` differently** — decree in 1806, providence in 1938.
+- Printed credits: melody `Johann Christoph Bach (1642—1703)`, text `Jodocus van Lodenstein … Bewerking van Abraham Rutgers (1751—1809)`. The Rutgers chain is now attested at the 1938 end too, and the 1938 tune is not the 1674 tune.
+- **Rights:** Delpher marks the object *"Auteursrechtelijk beschermd"*. The 1938 bundel is protected, whatever the status of the 1676 poem.
+
+New file: `COLLATION_GEZANG205_THREE_WAY.md`. Remaining gap: **stanza 1** of Gezang 205 was dropped by the page OCR and still rests on web transcriptions.
+
+## 3. DUTCH-001 lexis — narrowed on internal evidence, still not dictionary-verified
+
+`in 't dorre stickt` rhymes with `verquickt`, and the etymological record makes the "smother" sense of *stikken* the same word as *stikken* "to stitch", an intensivum of *steken*, glossed *"blijven steken, niet verder kunnen"*. The narrowed gloss is **stuck fast, choked, in the dry**. Confidence rises from low to medium; the status stays `PENDING_LEXICAL_CHECK`.
+
+The WNT itself was **not** consultable: the Geïntegreerde Taalbank serves only a JavaScript shell, and Ensie's Van Dale 1898 is paywalled. Both are recorded as sources with their access limits, so no future pass can mistake an attempt for a lookup.
+
+## 4. Two dead ends, now documented
+
+- **Revius 1630.** DBNL's title record for the 1630 collection lists only the 1930–35 Smit edition as an *edition*; there is no transcription of the 1630 print. The leaf is still `NOT_ACQUIRED`.
+- **`'t Oog omhoog` in the 1938 bundel.** Not located. What was established is the mechanism: the bundel prints the composer above an item and the author below (Gezang 204: `Louis Bourgeois` above, `Johannes Helder` below), which is how a 16th-century tune name attaches to a 20th-century item. The Bourgeois claim therefore stays `SUPPORTED_BY_SECONDARY_SOURCE_NEEDS_COLLATION`.
+
+## 5. Registry and gate
+
+Five sources and two claims added; four claims revised. `validate_project_registry.py` passes: **49 sources, 3 authors, 4 tracks, 35 claims, 9 songbooks**.
+
+## Still open after this pass
+
+- 1938 stanza 1 (page image, not OCR).
+- The 1630 Revius leaf.
+- WNT for the eight DUTCH-001 expressions and `wilt gy my`.
+- Printed p. 84 of the 1676 impression (the 1674 hold).
+- `'t Oog omhoog` in the 1938 bundel.
+- The Russian drafts and verbatim SUNO prompts — unchanged, still absent.

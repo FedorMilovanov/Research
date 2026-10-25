@@ -962,6 +962,124 @@
         "Class C: index extracts are a discovery lead, never quote-safe and never a substitute for the database itself, which returned HTTP 403 on 2026-10-25.",
         "Do not cite these extracts as independent witnesses to a text or a melody."
       ]
+    },
+    {
+      "id": "SRC-HB-1938-PRINT-COLLATED",
+      "title": "Gezang 205 in the printed 1938 Hervormde Bundel — collated page images 724-725",
+      "url": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00724",
+      "secondaryUrl": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00725",
+      "type": "Page-level scan and OCR of the printed hymnal, Koninklijke Bibliotheek copy, PPN 416504787 (VII, 944, 48 p.)",
+      "printedPages": "image pp. 724-725 (gezang 205); item begins on 724",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The five stanzas of Gezang 205 and their exact wording (stanzas 2-5 read from the print)",
+        "That the 1938 text substitutes 'trots, hoogmoedig' for 'zielverdervend' in stanza 2 line 1 AND 'werp dien hoogmoed dan' for 'Werp die trotsheid dan' in line 5",
+        "That 1938 stanza 4 = 1806 stanza 6 lines 1-4 plus 1806 stanza 5 lines 5-6",
+        "That the item credits the melody to Johann Christoph Bach (1642-1703) and the text to 'Jodocus van Lodenstein (1620-1677) Bewerking van Abraham Rutgers (1751-1809)'",
+        "That Delpher marks the object 'Auteursrechtelijk beschermd'"
+      ],
+      "limits": [
+        "Page-level OCR, which Delpher itself warns is not 100% reliable; stanza 1 did not survive the OCR of p. 724.",
+        "A protected 20th-century object: PERMISSION_REQUIRED, quote sparingly and cite the page."
+      ]
+    },
+    {
+      "id": "SRC-HB-1938-PRINT-CALIBRATION",
+      "title": "Page map of the 1938 Hervormde Bundel — calibration points for locating an item",
+      "url": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00430",
+      "secondaryUrl": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00640",
+      "type": "Discovered page-to-gezang correspondence in the same printed object",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Image 430 carries Gezang 18; image 640 carries Gezang 153; image 719 = Gezang 200; 721 = 202; 723 = 204; 724-725 = 205",
+        "That psalm numbers and gezang numbers do not map to image numbers: image 296 is Psalm 109",
+        "That the bundel groups gezangen under numbered thematic headings, e.g. '10. VEROOTMOEDIGING' at Gezang 153"
+      ],
+      "limits": [
+        "A working map, not a table of contents; the gezang-to-page rate drifts across the volume.",
+        "Derived from OCR page reads, so individual points can be wrong."
+      ]
+    },
+    {
+      "id": "SRC-GTB-WNT-INTERFACE",
+      "title": "Geïntegreerde Taalbank — WNT/MNW/VMNW search interface",
+      "url": "https://gtb.ivdnt.org/search/?owner=wnt",
+      "type": "Historical dictionary search interface (JS application)",
+      "evidenceClass": "C",
+      "accessState": "LINK_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the WNT is the right authority for the archaic lexis of this corpus",
+        "That the interface could not be used in this environment: a query renders only the search shell, with no article text"
+      ],
+      "limits": [
+        "Class C in this access state: no article, sense or headword was read.",
+        "A lexical claim must not be attributed to the WNT on the strength of this source."
+      ]
+    },
+    {
+      "id": "SRC-ENSIE-VANDALE-1898",
+      "title": "Groot woordenboek der Nederlandsche taal (Van Dale, 1898) on Ensie",
+      "url": "https://www.ensie.nl/vandale1898/stikken",
+      "type": "Reprint of a historical Dutch dictionary on a subscription site",
+      "evidenceClass": "C",
+      "accessState": "LINK_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "supports": [
+        "That a second historical dictionary is available for cross-checking lexis the WNT route cannot reach"
+      ],
+      "limits": [
+        "Article bodies are behind a paywall; only the headword and enumeration were visible.",
+        "It is not the WNT and must never be cited as WNT evidence."
+      ]
+    },
+    {
+      "id": "SRC-ETYMOLOGIEBANK-STIKKEN",
+      "title": "Etymologiebank — stikken (Van Veen/Van der Sijs 1997; De Vries 1971)",
+      "url": "https://www.etymologiebank.nl/trefwoord/stikken1",
+      "type": "Etymological dictionary entry, freely readable",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That 'stikken' in the sense of smothering is historically one word with 'stikken' (to stitch), an intensivum of 'steken', glossed as 'blijven steken, niet verder kunnen'",
+        "That the sense required by Lodenstein's rhyme with 'verquickt' is the 'stuck fast, choked' sense rather than simple adhesion"
+      ],
+      "limits": [
+        "An etymological dictionary answers a historical question, not a synchronic one: it cannot tell us what the 1676 reader understood by the line.",
+        "De Vries and Van Veen/Van der Sijs are secondary authorities; the WNT remains the primary tool."
+      ]
     }
   ]
 }

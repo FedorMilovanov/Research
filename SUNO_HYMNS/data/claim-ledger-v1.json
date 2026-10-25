@@ -112,14 +112,16 @@
       "claim": "The Russian version follows the later seven-stanza Zelfverloochening in Evangelische Gezangen (1806), hymn LXVIII, associated with Jodocus van Lodenstein material revised by Abraham Rutgers; it is not a word-for-word translation of the whole 1674 poem.",
       "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
       "sourceIds": [
+        "SRC-HB-1938-PRINT-COLLATED",
+        "SRC-L-HERT-II-1674-1971",
         "SRC-RUTGERS-1806-68",
-        "SRC-RUTGERS-BIO",
-        "SRC-L-HERT-II-1674-1971"
+        "SRC-RUTGERS-BIO"
       ],
       "notes": [
         "Credit Lodenstein as historical source author and Rutgers as later reviser; treat later translations/adaptations as separate textual witnesses.",
         "The separate date uncertainty is isolated in CLM-HERT-II-DATE-1674; it does not automatically suspend the source-chain claim.",
-        "Not re-examined in the 2026-10-25 third pass: the Rutgers link keeps its previous status."
+        "Not re-examined in the 2026-10-25 third pass: the Rutgers link keeps its previous status.",
+        "Fifth pass: the printed 1938 bundel itself credits Gezang 205 to 'Jodocus van Lodenstein (1620-1677) Bewerking van Abraham Rutgers (1751-1809)', so the Rutgers reworking is attested at the 1938 end of the chain as well as the 1806 end."
       ],
       "holds": [
         "RIGHTS_HOLD"
@@ -513,58 +515,64 @@
     {
       "id": "CLM-DUTCH-001-ARCHAIC-LEXIS",
       "topic": "DUTCH-001: eight archaic expressions awaiting a lexical check",
-      "claim": "The expressions 'costelijck kuys', 'Reyn', \"in 't dorre stickt\", 'Leckre tong', 'schemer-ligt', 'Geven op de hand', 'Tegenwoordicheyd' and \"d'onsigtbaarheden\" all occur in the 1676 print at identifiable lines, but none has been resolved against a historical dictionary in this project.",
+      "claim": "The expressions 'costelijck kuys', 'Reyn', \"in 't dorre stickt\", 'Leckre tong', 'schemer-ligt', 'Geven op de hand', 'Tegenwoordicheyd' and \"d'onsigtbaarheden\" all occur in the 1676 print at identifiable lines. None has been resolved against the WNT, and the WNT could not be consulted in this environment; the one sense narrowed so far rests on rhyme and etymology, not on the dictionary.",
       "claimStatus": "RESEARCH_OPEN",
       "sourceIds": [
-        "SRC-L-1676-SCHEPSELEN-131-134"
+        "SRC-L-1676-SCHEPSELEN-131-134",
+        "SRC-GTB-WNT-INTERFACE",
+        "SRC-ENSIE-VANDALE-1898",
+        "SRC-ETYMOLOGIEBANK-STIKKEN"
       ],
       "notes": [
-        "Literal working glosses are recorded in the dossier with a confidence rating per item; 'in 't dorre stickt' and 'Geven op de hand' are the least settled.",
-        "Not consulted in this pass: WNT. The 2005 apparatus would help but is copyrighted and may be paraphrased only.",
-        "A glossary claim becomes usable only with a named headword and sense."
+        "Attempted and failed in the fifth pass: the Geïntegreerde Taalbank renders only its JavaScript shell, and Ensie's Van Dale 1898 is paywalled. No sense was read from either.",
+        "\"in 't dorre stickt\" rhymes with 'verquickt', and the etymological record makes 'stikken' (smother) one word with 'stikken' (stitch), an intensivum of 'steken' glossed 'blijven steken, niet verder kunnen'; the narrowed gloss is 'stuck fast, choked, in the dry'.",
+        "'Geven op de hand' remains unresolved; the contextual hypothesis is hand-to-hand immediacy, paired with 'Tegenwoordicheyd'.",
+        "Literal working glosses and confidence ratings per item are in DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md."
       ],
       "holds": [
         "RIGHTS_HOLD"
       ],
-      "evidenceGap": "No historical dictionary was consulted for any of the eight expressions.",
-      "nextCheck": "Look up each expression in the WNT (headword and sense), record the result in the dossier, and only then promote each gloss from PENDING_LEXICAL_CHECK to a decision."
+      "evidenceGap": "No historical dictionary was consulted for any of the eight expressions; the WNT route is unavailable in this environment.",
+      "nextCheck": "Read each expression in the WNT (headword and sense) through a working route or a library copy, and promote each gloss from PENDING_LEXICAL_CHECK only then."
     },
     {
       "id": "CLM-DUTCH-002-STANZAS-14-7-5",
       "topic": "DUTCH-002: stanza counts across the three forms",
-      "claim": "The 1676 poem has 14 stanzas, the 1806 hymn Zelfverloochening has seven, and the 1938 Gezang 205 has five; the 1938 form omits 1806 stanzas 4 and 5 but retains the last couplet of stanza 5 as the close of its own fourth stanza.",
+      "claim": "The 1676 poem has 14 stanzas, the 1806 hymn Zelfverloochening has seven, and the 1938 Gezang 205 has five; the 1938 form omits 1806 stanzas 4 and 5's first four lines but retains the last couplet of stanza 5 as the close of its own fourth stanza, and substitutes 'trots, hoogmoedig' for 'zielverdervend' and 'werp dien hoogmoed dan' for 'Werp die trotsheid dan'.",
       "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
       "sourceIds": [
         "SRC-L-1676-HERT-II-82-84",
         "SRC-RUTGERS-1806-68",
-        "SRC-HB-1938-205-WEB",
-        "SRC-HB-1938-PRINT"
+        "SRC-HB-1938-PRINT-COLLATED",
+        "SRC-HB-1938-205-WEB"
       ],
       "notes": [
-        "This corrects an earlier project statement that the 1806 hymn has five stanzas.",
-        "The 1676 and 1806 counts are verified from the prints. The 1938 count and its composition rest on two agreeing web transcriptions and are NOT yet verified against the printed bundel.",
-        "The 1806 form is a reworking that drops the autobiographical exile frame of 1676 stanzas I, III and XIII, not a stanza-subset."
+        "All three counts are now verified from printed or transcribed primary texts; an earlier project statement that the 1806 hymn has five stanzas was wrong.",
+        "The 1938 text was collated against the printed bundel page images 724-725 in the fifth pass, which corrected two earlier details: the stanza-2 substitution is a pair of changes, not one, and the closing couplet grafted into stanza 4 is 1806 stanza 5 lines 5-6.",
+        "Stanza 1 of the 1938 form did not survive the page OCR and still rests on two agreeing web transcriptions.",
+        "The collation also shows the 1676 occasional frame (stanzas I, III, VI, XIII, XIV) is absent from both later forms."
       ],
       "holds": [
         "EVIDENCE_HOLD",
         "RIGHTS_HOLD"
       ],
-      "evidenceGap": "The printed 1938 Hervormde Bundel has not been collated; only third-party web transcriptions were read.",
-      "nextCheck": "Collate Gezang 205 against the printed 1938 bundel (Delpher identifier MMKB06:000000593) and record the page image number."
+      "evidenceGap": "The 1938 stanza 1 wording is not print-verified; the page OCR drops it.",
+      "nextCheck": "Re-read image p. 724 of Delpher MMKB06:000000593 for stanza 1, or take it from a page image rather than the OCR."
     },
     {
       "id": "CLM-DUTCH-002-EXPRESSIONS",
       "topic": "DUTCH-002: zielverdervend eigen, heylsaam Niet, Alles hoort den Hemel toe, Voor 't geloof is alles goed",
-      "claim": "'Zielverdervend eigen' names soul-destroying self-will rather than mere possession; 'heylsaam Niet' is a 1676 phrase that does not survive into 1806; 'Alles hoort den Hemel toe' moves from the opening of 1676 stanza V to the close of 1806 stanza 3; and 'Voor 't geloof is alles goed' predicates goodness of the execution of God's counsel, not of the believer's circumstances.",
+      "claim": "'Zielverdervend eigen' names soul-destroying self-will rather than mere possession; 'heylsaam Niet' is a 1676 phrase (stanza II, line 5) that does not survive into 1806, where the clause becomes 'Om zich tot dien wil te neigen'; the poem qualifies its Nothing three ways ('heylsaam', 'eyndeloos', 'grondloos'); 'Alles hoort den Hemel toe' moves from the opening of 1676 stanza V to the close of 1806 stanza 3 (and so into 1938 stanza 3); and 'Voor 't geloof is alles goed' predicates goodness of the execution of God's counsel, not of the believer's circumstances.",
       "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
       "sourceIds": [
         "SRC-RUTGERS-1806-68",
-        "SRC-L-1676-HERT-II-82-84"
+        "SRC-L-1676-HERT-II-82-84",
+        "SRC-HB-1938-PRINT-COLLATED"
       ],
       "notes": [
-        "The 1806 stanza supplies its own explanation in the following three lines ('Al wat d'uitvoer van uw' raad is ... Wat de Wijsheid zelv' beslist'), which is why the line cannot be reduced to a general consolation.",
-        "The 1938 form replaces 'zielverdervend' with 'trots, hoogmoedig', weakening the diagnostic claim; a translation must record which form it follows.",
-        "Detailed analysis and the full 1806 text of the stanza are in DOSSIER_DUTCH-002_TEXT_HISTORY.md."
+        "'heylsaam Niet' is now located verbatim in the 1676 print at stanza II line 5; the earlier open question is closed and the phrase must not be sought in the 1806 hymn.",
+        "The 1806 stanza supplies its own explanation in the following three lines, which is why the line cannot be reduced to a general consolation.",
+        "The 1938 form strengthens the moral reading by substituting 'trots, hoogmoedig' for 'zielverdervend', and replaces 1806's decree couplet with a providence couplet ('weet best, wat ons schaden zou'), so the stanza argues differently in the two hymnals."
       ],
       "holds": [
         "RIGHTS_HOLD"
@@ -632,6 +640,44 @@
       "evidenceGap": "Neither the 1681 and 1718 reprints nor the printed 1938 bundel have been collated; the melody of the 1665 tune is untraced.",
       "nextCheck": "Collate the 1681 and 1718 printings when reachable, and the printed 1938 bundel; retry the Dutch Song Database for 'Un jour' and record lode002uyt_01_0047.",
       "projectLevel": true
+    },
+    {
+      "id": "CLM-HB-1938-205-CREDITS",
+      "topic": "Gezang 205 in the 1938 bundel: melody credit, text credit and rights",
+      "claim": "The printed 1938 Hervormde Bundel credits the melody of Gezang 205 to Johann Christoph Bach (1642-1703) and its text to Jodocus van Lodenstein with a reworking by Abraham Rutgers; the bundel prints the composer above the item and the author below it, a convention visible across neighbouring gezangen. The object is marked copyright-protected.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-HB-1938-PRINT-COLLATED",
+        "SRC-HB-1938-PRINT-CALIBRATION"
+      ],
+      "notes": [
+        "Read from the page images, not from a transcription.",
+        "The convention explains how a 16th- or 18th-century tune name comes to sit above a 20th-century hymnal item, and is the mechanism behind the reported Bourgeois attribution of the 1938 't Oog omhoog.",
+        "The Bach attribution is a 1938 hymnal credit: it is not the 1674 tune, which the 1676 print names as 'Onherroepelijke Jeugd' / 'Gavotte. A la fronté' of poem I.",
+        "Delpher states 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.'"
+      ],
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
+    },
+    {
+      "id": "CLM-DELPHER-PAGE-OCR",
+      "topic": "Access route for printed Dutch hymnbooks on Delpher",
+      "claim": "Delpher serves page-level OCR text for a digitised book at a URL of the form '/nl/boeken/view?coll=boeken&identifier=<OBJECT>:<IMAGE>', where the image number is not the printed page number; items must be located by calibration. In-bundle search endpoints return 404, so a page must be found by bracketing.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-HB-1938-PRINT-COLLATED",
+        "SRC-HB-1938-PRINT-CALIBRATION"
+      ],
+      "notes": [
+        "Calibration for the 1938 bundel: image 430 = Gezang 18, 640 = Gezang 153, 719 = 200, 721 = 202, 723 = 204, 724-725 = 205; image 296 = Psalm 109.",
+        "'/nl/boeken/objectsearch/results' and '/nl/boeken/download/txt' both returned 404 in this pass.",
+        "The OCR is lossy: it dropped a whole stanza on p. 724 and reorders some columns."
+      ],
+      "projectLevel": true,
+      "holds": [
+        "RIGHTS_HOLD"
+      ]
     }
   ]
 }

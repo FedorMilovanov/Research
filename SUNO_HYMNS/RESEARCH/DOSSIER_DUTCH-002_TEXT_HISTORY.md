@@ -5,6 +5,8 @@
 **Dossier opened:** 2026-10-25 (fourth pass)
 **Status of the Russian text:** **NOT IN THIS REPOSITORY.** No translation claim is made or implied here.
 
+**Companion file:** `COLLATION_GEZANG205_THREE_WAY.md` holds the stanza-by-stanza collation and the printed 1938 text. This dossier holds the argument and the status record.
+
 This dossier exists to fix one thing precisely: the stanza counts and the exact relation between the three forms. A previous statement held that the 1806 hymn has five stanzas. **It has seven.** The five-stanza form is the 1938 hymnal.
 
 ## 1. The three forms, verified
@@ -13,7 +15,7 @@ This dossier exists to fix one thing precisely: the stanza counts and the exact 
 |---|---|---|---|
 | **1676** — *II. Hert-sterckte in Jehova. Op 1 Sam. 30:6* | *Uyt-spanningen*, Utrecht: Willem Clerck, 1676, **printed pp. 82–84** | **14** (I–XIV) | text read in full in the third pass; `SRC-L-1676-HERT-II-82-84` |
 | **1806** — *Zelfverloochening*, **no. LXVIII** | *Evangelische Gezangen…* (1806), **printed pp. 143–144** | **7** (numbered 1–7) | read in full in this pass from the DBNL transcription; `SRC-RUTGERS-1806-68` |
-| **1938** — *Zalig, zalig, niets te wezen*, **Gezang 205** | *Psalmen en Gezangen voor den Eeredienst* (Hervormde Bundel 1938) | **5** (numbered 1–5) | **not verified against the printed bundel**; see §4 for the evidence actually held |
+| **1938** — *Zalig, zalig, niets te wezen*, **Gezang 205** | *Psalmen en gezangen voor den eeredienst der Nederlandsche Hervormde Kerk* (1938), **image pp. 724–725** | **5** (numbered 1–5) | **collated against the printed bundle** in the fifth pass — see `COLLATION_GEZANG205_THREE_WAY.md` |
 
 The 1806 object's own title, as printed by DBNL, is *Evangelische Gezangen, om nevens het Boek der Psalmen bij den openbaren godsdienst in de Nederlandsche Hervormde Gemeenten gebruikt te worden*. The project registry previously recorded a shortened title; corrected to the printed one.
 
@@ -68,16 +70,20 @@ The line is **not** a general assurance that everything turns out well for the b
 
 ## 4. The 1938 form — five stanzas, and exactly which stanzas went
 
-**Evidence held:** full-text transcriptions of Gezang 205 at <https://www.holyhome.nl/oud_hb/205.html> and <https://www.online-bijbel.nl/gezang/205/>, which agree line for line and are independent of each other; a partial third transcription at <https://zondagsarbeid.blogspot.com/2011/09/nederlandse-hervormde-bundel-1938.html>. These are **web transcriptions, not the printed bundel** — class B1 with limits, not quote-safe for a disputed claim.
+**Evidence held (updated, fifth pass):** the **printed book itself**, Koninklijke Bibliotheek copy, Delpher `MMKB06:000000593`, image pp. 723–725, PPN 416504787. Stanzas 2–5 are now quoted from the print; **stanza 1 was dropped by the OCR** and still rests on the two agreeing web transcriptions (`holyhome.nl`, `online-bijbel.nl`), i.e. `EVIDENCE_HOLD` narrowed to that single stanza. The full collation, with the printed wording, is in `COLLATION_GEZANG205_THREE_WAY.md`.
+
+**Printed credits on Gezang 205:** melody `Johann Christoph Bach (1642—1703)`; text `Jodocus van Lodenstein (1620—1677) Bewerking van Abraham Rutgers (1751—1809)`. The Rutgers reworking is thus confirmed by the 1938 hymnal itself, and the 1938 tune is an 18th-century attribution, not the 1674 tune.
+
+**Rights:** Delpher marks the object *"Auteursrechtelijk beschermd"* — the 1938 bundel is a **protected** object (`PERMISSION_REQUIRED`, `RIGHTS_HOLD`), independently of the public-domain poem behind it.
 
 **Composition of Gezang 205:**
 
 | 1938 stanza | Content | Relationship to 1806 |
 |---|---|---|
 | 1 | *Zalig, zalig, niets te wezen…* | = 1806 st. 1, unchanged apart from spelling |
-| 2 | *Is ons **trots, hoogmoedig** eigen…* | = 1806 st. 2 with **one word replaced**: `zielverdervend` → `trots, hoogmoedig` |
+| 2 | *Is ons **trots, hoogmoedig** eigen…* | = 1806 st. 2 with **two substitutions**: `zielverdervend` → `trots, hoogmoedig` (l. 1) **and** `Werp die trotsheid dan` → `werp dien hoogmoed dan` (l. 5) |
 | 3 | *Wat wij hebben of vermogen … alles hoort de hemel toe* | = 1806 st. 3 |
-| 4 | *Vragen wij, wat goed of kwaad is … Gij, o Heer, zo wijs als trouw, / weet best, wat ons schaden zou* | = 1806 st. **6**, lines 1–4, with the closing couplet of 1806 st. **5** appended |
+| 4 | *Vragen wij, wat goed of kwaad is … Gij, o Heer, zo wijs als trouw, / weet best, wat ons schaden zou* | = 1806 st. **6**, lines 1–4, with 1806 st. **5**, lines 5–6 appended in place of 1806's own couplet |
 | 5 | *Mag uw naam maar eer ontvangen…* | = 1806 st. 7 |
 
 **Direct answer to the open question: the stanzas omitted in 1938 are 1806 stanzas 4 and 5** —
@@ -86,11 +92,11 @@ The line is **not** a general assurance that everything turns out well for the b
 
 with the **last two lines of st. 5 retained** and used to close the newly built stanza 4. So the reduction is not a clean deletion of two stanzas; it is a deletion plus a graft, which is exactly the kind of detail that a translation claiming to follow "the 1938 version" must reproduce or explicitly refuse.
 
-**Confidence:** **medium-high** on the composition (two agreeing transcriptions); **not verified** against the printed book.
+**Confidence:** **high** on the composition and on stanzas 2–5 (printed book read); **medium** on stanza 1 only (OCR gap).
 
-**The 1938 wording change is materially important.** Replacing `zielverdervend eigen` ("soul-destroying own-ness") with `trots, hoogmoedig eigen` ("proud, haughty own-ness") **removes the strongest word in the stanza** and converts a spiritual-diagnostic claim into a moral one. Any Russian text that renders the line as "гордое своё" is following 1938; one that renders "губящее душу своё" is following 1806. This must be decided, not drifted into.
+**The 1938 wording change is materially important.** Replacing `zielverdervend eigen` ("soul-destroying own-ness") with `trots, hoogmoedig eigen` ("proud, haughty own-ness") **removes the strongest word in the stanza** and converts a spiritual-diagnostic claim into a moral one — and the change is systematic, since the 1938 line 5 also drops `trotsheid` in favour of `hoogmoed`, moving the word from the prayer into the diagnosis. Any Russian text that renders the line as "гордое своё" is following 1938; one that renders "губящее душу своё" is following 1806. This must be decided, not drifted into.
 
-**Next check to close this:** the printed 1938 bundel is available as a scan via Delpher (`Psalmen en gezangen voor den eeredienst der Nederlandsche Hervormde Kerk`, 1938, identifier `MMKB06:000000593`, page image 296 in the retrieved record). Collate Gezang 205 against it and record the page.
+**Next check:** re-read image p. 724 for stanza 1, or take it from a better OCR/scan, to close the last `EVIDENCE_HOLD` on this item. The notes' earlier pointer to "page image 296" was wrong — image 296 is Psalm 109; the gezang is at 724–725.
 
 ## 5. What the music notes are, and are not
 
@@ -122,7 +128,7 @@ The project's general vocal guidance (clear diction, strong and intelligible lea
 
 ## Следующее проверяемое действие
 
-1. **Collate Gezang 205 against the printed 1938 bundel** (Delpher scan) and record the page; only then can the five-stanza composition be quoted rather than described.
-2. Assess rights for the 1938 text and for the third-party transcriptions before using either.
+1. Recover **stanza 1** of Gezang 205 from a page image, closing the narrowed `EVIDENCE_HOLD`.
+2. Assess rights for the 1938 text before using it: the bundel is a protected object, and the third-party transcriptions are separate objects again.
 3. Obtain the actual Russian lyric for DUTCH-002 V1 and V2 and record which historical form it follows; the present dossier cannot determine that from the repository.
 4. Recover the two verbatim SUNO prompts; until then, the tempo question in §5 stays open.

@@ -179,10 +179,12 @@
         "SRC-AFR-L276",
         "SRC-AFR-L271",
         "SRC-HB-1938-205-WEB",
-        "SRC-HB-1938-PRINT"
+        "SRC-HB-1938-PRINT",
+        "SRC-HB-1938-PRINT-COLLATED",
+        "SRC-HB-1938-PRINT-CALIBRATION"
       ],
       "qaStatus": "OPEN",
-      "textChainNote": "Three forms, three stanza counts: 1676 'II. Hert-sterckte in Jehova' = 14 stanzas; 1806 Evangelische Gezangen LXVIII 'Zelfverloochening' = 7; 1938 Hervormde Bundel Gezang 205 = 5. The 1938 form omits 1806 stanzas 4 and 5 but keeps the last couplet of stanza 5 as the close of its own fourth stanza. See RESEARCH/DOSSIER_DUTCH-002_TEXT_HISTORY.md.",
+      "textChainNote": "Three forms, three stanza counts, all collated in the fifth pass: 1676 'II. Hert-sterckte in Jehova' = 14 stanzas; 1806 Evangelische Gezangen LXVIII 'Zelfverloochening' = 7; 1938 Hervormde Bundel Gezang 205 = 5, printed pages 724-725. 1938 omits 1806 stanzas 4 and 5 (keeping only the closing couplet of 5, grafted onto 6), and changes stanza 2 in two places. The 1676 occasional frame (I, III, VI, XIII, XIV) is absent from both later forms. See RESEARCH/COLLATION_GEZANG205_THREE_WAY.md.",
       "dateClaimStatus": "EVIDENCE_HOLD",
       "dateClaimNote": "4 January 1674 is supported by the 1727 edition and by both modern editions, and by the December 1673 hostage context of the Rees group. The 1676 impression is reported to misprint 1664. Only the literal reading of the 1676 leaf remains unresolved.",
       "openChecks": [
@@ -190,9 +192,10 @@
         "The date EVIDENCE_HOLD is narrowed to the literal reading of the 1676 impression only; inspect printed p. 84 before lifting it.",
         "Recover the exact Russian lyric revision and both verbatim SUNO style prompts.",
         "Re-read actual output metadata before relying on earlier tag notes.",
-        "Collate Gezang 205 against the printed 1938 Hervormde Bundel (Delpher identifier MMKB06:000000593); the five-stanza composition and the 'trots, hoogmoedig eigen' substitution currently rest on web transcriptions only.",
         "Record which historical form (1676 / 1806 / 1938) any Russian text follows; the earlier project statement that 1806 has five stanzas was wrong and five is the 1938 count.",
-        "Assess rights for the 1938 wording separately from the 1676 and 1806 texts."
+        "Assess rights for the 1938 wording separately from the 1676 and 1806 texts.",
+        "Recover stanza 1 of Gezang 205 from the page image: the Delpher OCR of p. 724 drops it, so the last EVIDENCE_HOLD on the 1938 form is that one stanza.",
+        "Do not reuse the 1938 wording without a rights decision: the bundel is a protected object, and its tune credit (Johann Christoph Bach) is not the 1674 tune."
       ],
       "claimIds": [
         "CLM-L-1676-IMPRINT",
@@ -207,7 +210,9 @@
         "CLM-ASSET-STATE",
         "CLM-SUNO-PROMPTS",
         "CLM-DUTCH-002-STANZAS-14-7-5",
-        "CLM-DUTCH-002-EXPRESSIONS"
+        "CLM-DUTCH-002-EXPRESSIONS",
+        "CLM-HB-1938-205-CREDITS",
+        "CLM-DELPHER-PAGE-OCR"
       ],
       "tuneDirection": "No independent melody: the 1676 print points the singer to I. Hert-sterckte on p. 78 ('Te singen als boven pag.78'), whose own heading names 'Onherroepelijke Jeugd' or 'Gavotte. A la fronté'. Neither tune is acquired; the modern recorded setting is not these tunes."
     },

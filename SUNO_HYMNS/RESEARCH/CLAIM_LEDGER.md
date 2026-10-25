@@ -497,3 +497,75 @@ Review state: **SUPPORTED_WITH_SCOPE_LIMITS**. HOLDs: RIGHTS_HOLD.
 **Evidence gap:** Neither the 1681 and 1718 reprints nor the printed 1938 bundel have been collated; the melody of the 1665 tune is untraced.
 
 **HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD
+
+## Fifth-pass additions and revisions — 2026-10-25
+
+## CLM-HB-1938-205-CREDITS — Gezang 205 in the 1938 bundel: melody credit, text credit and rights
+
+**Claim:** The printed 1938 Hervormde Bundel credits the melody of Gezang 205 to Johann Christoph Bach (1642-1703) and its text to Jodocus van Lodenstein with a reworking by Abraham Rutgers; the bundel prints the composer above the item and the author below it, a convention visible across neighbouring gezangen. The object is marked copyright-protected.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-HB-1938-PRINT-COLLATED, SRC-HB-1938-PRINT-CALIBRATION
+
+**Notes:** Read from the page images, not from a transcription. The convention explains how a 16th- or 18th-century tune name comes to sit above a 20th-century hymnal item, and is the mechanism behind the reported Bourgeois attribution of the 1938 't Oog omhoog. The Bach attribution is a 1938 hymnal credit: it is not the 1674 tune, which the 1676 print names as 'Onherroepelijke Jeugd' / 'Gavotte. A la fronté' of poem I. Delpher states 'Auteursrechtelijk beschermd. Op dit object rust auteursrecht.'
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DELPHER-PAGE-OCR — Access route for printed Dutch hymnbooks on Delpher
+
+**Claim:** Delpher serves page-level OCR text for a digitised book at a URL of the form '/nl/boeken/view?coll=boeken&identifier=<OBJECT>:<IMAGE>', where the image number is not the printed page number; items must be located by calibration. In-bundle search endpoints return 404, so a page must be found by bracketing.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS  (`projectLevel: true` — an access/method fact, not a text claim)
+
+**Source IDs:** SRC-HB-1938-PRINT-COLLATED, SRC-HB-1938-PRINT-CALIBRATION
+
+**Notes:** Calibration for the 1938 bundel: image 430 = Gezang 18, 640 = Gezang 153, 719 = 200, 721 = 202, 723 = 204, 724-725 = 205; image 296 = Psalm 109. '/nl/boeken/objectsearch/results' and '/nl/boeken/download/txt' both returned 404 in this pass. The OCR is lossy: it dropped a whole stanza on p. 724 and reorders some columns.
+
+**HOLDs:** RIGHTS_HOLD
+
+### Revised: CLM-DUTCH-002-STANZAS-14-7-5
+
+**Revised claim:** The 1676 poem has 14 stanzas, the 1806 hymn Zelfverloochening has seven, and the 1938 Gezang 205 has five; the 1938 form omits 1806 stanzas 4 and 5's first four lines but retains the last couplet of stanza 5 as the close of its own fourth stanza, and substitutes 'trots, hoogmoedig' for 'zielverdervend' and 'werp dien hoogmoed dan' for 'Werp die trotsheid dan'.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-1676-HERT-II-82-84, SRC-RUTGERS-1806-68, SRC-HB-1938-PRINT-COLLATED, SRC-HB-1938-205-WEB
+
+**Notes:** All three counts are now verified from printed or transcribed primary texts; an earlier project statement that the 1806 hymn has five stanzas was wrong. The 1938 text was collated against the printed bundel page images 724-725 in the fifth pass, which corrected two earlier details: the stanza-2 substitution is a pair of changes, not one, and the closing couplet grafted into stanza 4 is 1806 stanza 5 lines 5-6. Stanza 1 of the 1938 form did not survive the page OCR and still rests on two agreeing web transcriptions. The collation also shows the 1676 occasional frame (stanzas I, III, VI, XIII, XIV) is absent from both later forms.
+
+**Evidence gap:** The 1938 stanza 1 wording is not print-verified; the page OCR drops it.
+
+**Next check:** Re-read image p. 724 of Delpher MMKB06:000000593 for stanza 1, or take it from a page image rather than the OCR.
+
+**HOLDs:** EVIDENCE_HOLD, RIGHTS_HOLD
+
+### Revised: CLM-DUTCH-002-EXPRESSIONS
+
+**Revised claim:** 'Zielverdervend eigen' names soul-destroying self-will rather than mere possession; 'heylsaam Niet' is a 1676 phrase (stanza II, line 5) that does not survive into 1806, where the clause becomes 'Om zich tot dien wil te neigen'; the poem qualifies its Nothing three ways ('heylsaam', 'eyndeloos', 'grondloos'); 'Alles hoort den Hemel toe' moves from the opening of 1676 stanza V to the close of 1806 stanza 3 (and so into 1938 stanza 3); and 'Voor 't geloof is alles goed' predicates goodness of the execution of God's counsel, not of the believer's circumstances.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-RUTGERS-1806-68, SRC-L-1676-HERT-II-82-84, SRC-HB-1938-PRINT-COLLATED
+
+**Notes:** 'heylsaam Niet' is now located verbatim in the 1676 print at stanza II line 5; the earlier open question is closed and the phrase must not be sought in the 1806 hymn. The 1806 stanza supplies its own explanation in the following three lines, which is why the line cannot be reduced to a general consolation. The 1938 form strengthens the moral reading by substituting 'trots, hoogmoedig' for 'zielverdervend', and replaces 1806's decree couplet with a providence couplet ('weet best, wat ons schaden zou'), so the stanza argues differently in the two hymnals.
+
+**HOLDs:** RIGHTS_HOLD
+
+### Revised: CLM-DUTCH-001-ARCHAIC-LEXIS
+
+**Revised claim:** The expressions 'costelijck kuys', 'Reyn', "in 't dorre stickt", 'Leckre tong', 'schemer-ligt', 'Geven op de hand', 'Tegenwoordicheyd' and "d'onsigtbaarheden" all occur in the 1676 print at identifiable lines. None has been resolved against the WNT, and the WNT could not be consulted in this environment; the one sense narrowed so far rests on rhyme and etymology, not on the dictionary.
+
+**Review state:** RESEARCH_OPEN
+
+**Source IDs:** SRC-L-1676-SCHEPSELEN-131-134, SRC-GTB-WNT-INTERFACE, SRC-ENSIE-VANDALE-1898, SRC-ETYMOLOGIEBANK-STIKKEN
+
+**Notes:** Attempted and failed in the fifth pass: the Geïntegreerde Taalbank renders only its JavaScript shell, and Ensie's Van Dale 1898 is paywalled. No sense was read from either. "in 't dorre stickt" rhymes with 'verquickt', and the etymological record makes 'stikken' (smother) one word with 'stikken' (stitch), an intensivum of 'steken' glossed 'blijven steken, niet verder kunnen'; the narrowed gloss is 'stuck fast, choked, in the dry'. 'Geven op de hand' remains unresolved; the contextual hypothesis is hand-to-hand immediacy, paired with 'Tegenwoordicheyd'. Literal working glosses and confidence ratings per item are in DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md.
+
+**Evidence gap:** No historical dictionary was consulted for any of the eight expressions; the WNT route is unavailable in this environment.
+
+**HOLDs:** RIGHTS_HOLD
+
+### Revised: CLM-DUTCH-002-RUTGERS
+
+**Added note:** Fifth pass: the printed 1938 bundel itself credits Gezang 205 to 'Jodocus van Lodenstein (1620-1677) Bewerking van Abraham Rutgers (1751-1809)', so the Rutgers reworking is attested at the 1938 end of the chain as well as the 1806 end.

@@ -601,3 +601,73 @@ The nine entries below were added after reading the 1676 printing directly, the 
 - HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
 - Supports: That records exist for 'Heerlijckheyds Loff' across several 17th- and 18th-century songbooks (1676, Stapel's Lusthof 1681, Bundeltje 1718); That a recorded stanza scheme exists for the 1718 printing
 - Limits / caveats: Class C: index extracts are a discovery lead, never quote-safe and never a substitute for the database itself, which returned HTTP 403 on 2026-10-25. Do not cite these extracts as independent witnesses to a text or a melody.
+
+## Fifth-pass additions — 2026-10-25
+
+## SRC-HB-1938-PRINT-COLLATED — Gezang 205 in the printed 1938 Hervormde Bundel — collated page images 724-725
+
+- URL: https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00724
+- Secondary URL: https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00725
+- Printed pages: image pp. 724-725 (gezang 205); item begins on 724
+- Source role/type: Page-level scan and OCR of the printed hymnal, Koninklijke Bibliotheek copy, PPN 416504787 (VII, 944, 48 p.)
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: The five stanzas of Gezang 205 and their exact wording (stanzas 2-5 read from the print); That the 1938 text substitutes 'trots, hoogmoedig' for 'zielverdervend' in stanza 2 line 1 AND 'werp dien hoogmoed dan' for 'Werp die trotsheid dan' in line 5; That 1938 stanza 4 = 1806 stanza 6 lines 1-4 plus 1806 stanza 5 lines 5-6; That the item credits the melody to Johann Christoph Bach (1642-1703) and the text to 'Jodocus van Lodenstein (1620-1677) Bewerking van Abraham Rutgers (1751-1809)'; That Delpher marks the object 'Auteursrechtelijk beschermd'
+- Limits / caveats: Page-level OCR, which Delpher itself warns is not 100% reliable; stanza 1 did not survive the OCR of p. 724. A protected 20th-century object: PERMISSION_REQUIRED, quote sparingly and cite the page.
+
+## SRC-HB-1938-PRINT-CALIBRATION — Page map of the 1938 Hervormde Bundel — calibration points for locating an item
+
+- URL: https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00430
+- Secondary URL: https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00640
+- Source role/type: Discovered page-to-gezang correspondence in the same printed object
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Image 430 carries Gezang 18; image 640 carries Gezang 153; image 719 = Gezang 200; 721 = 202; 723 = 204; 724-725 = 205; That psalm numbers and gezang numbers do not map to image numbers: image 296 is Psalm 109; That the bundel groups gezangen under numbered thematic headings, e.g. '10. VEROOTMOEDIGING' at Gezang 153
+- Limits / caveats: A working map, not a table of contents; the gezang-to-page rate drifts across the volume. Derived from OCR page reads, so individual points can be wrong.
+
+## SRC-GTB-WNT-INTERFACE — Geïntegreerde Taalbank — WNT/MNW/VMNW search interface
+
+- URL: https://gtb.ivdnt.org/search/?owner=wnt
+- Source role/type: Historical dictionary search interface (JS application)
+- Evidence class: C
+- Access state: LINK_ONLY
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: ARCHIVE_HOLD, RIGHTS_HOLD
+- Supports: That the WNT is the right authority for the archaic lexis of this corpus; That the interface could not be used in this environment: a query renders only the search shell, with no article text
+- Limits / caveats: Class C in this access state: no article, sense or headword was read. A lexical claim must not be attributed to the WNT on the strength of this source.
+
+## SRC-ENSIE-VANDALE-1898 — Groot woordenboek der Nederlandsche taal (Van Dale, 1898) on Ensie
+
+- URL: https://www.ensie.nl/vandale1898/stikken
+- Source role/type: Reprint of a historical Dutch dictionary on a subscription site
+- Evidence class: C
+- Access state: LINK_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: PERMISSION_REQUIRED
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
+- Supports: That a second historical dictionary is available for cross-checking lexis the WNT route cannot reach
+- Limits / caveats: Article bodies are behind a paywall; only the headword and enumeration were visible. It is not the WNT and must never be cited as WNT evidence.
+
+## SRC-ETYMOLOGIEBANK-STIKKEN — Etymologiebank — stikken (Van Veen/Van der Sijs 1997; De Vries 1971)
+
+- URL: https://www.etymologiebank.nl/trefwoord/stikken1
+- Source role/type: Etymological dictionary entry, freely readable
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: That 'stikken' in the sense of smothering is historically one word with 'stikken' (to stitch), an intensivum of 'steken', glossed as 'blijven steken, niet verder kunnen'; That the sense required by Lodenstein's rhyme with 'verquickt' is the 'stuck fast, choked' sense rather than simple adhesion
+- Limits / caveats: An etymological dictionary answers a historical question, not a synchronic one: it cannot tell us what the 1676 reader understood by the line. De Vries and Van Veen/Van der Sijs are secondary authorities; the WNT remains the primary tool.

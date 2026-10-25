@@ -81,6 +81,22 @@ All eight expressions were located in the 1676 print. What is *not* yet done is 
 | `Tegenwoordicheyd` | VIII, same line | **presence, immediacy** — what is present to the senses | easily flattened to abstract "присутствие" and lose the contrast with the next line's `d'onsigtbaarheden` | none beyond the pairing |
 | `d'onsigtbaarheden` | VIII: `Doet my door 't gelove sien / Wat heyl d'onsigtbaarheden bien` | **the invisibilities** — the plural substantive for unseen things, offering salvation | "невидимое" (singular/neuter) is acceptable; "невидимые вещи" is clumsy | decide singular/plural deliberately; the print is plural |
 
+### 5a. What the fifth pass could and could not settle
+
+**Dictionaries were not reachable, and that is now recorded rather than assumed.** The *Woordenboek der Nederlandsche Taal* is served by the Geïntegreerde Taalbank at `gtb.ivdnt.org`, which returned only its JavaScript search shell — no article text is retrievable from this environment. `ensie.nl`, which hosts the 1898 *Groot woordenboek der Nederlandsche taal*, is behind a paywall. **No WNT sense has been consulted for any of the eight expressions.** They therefore stay `PENDING_LEXICAL_CHECK`.
+
+**One item moved anyway, on internal evidence.** `in 't dorre stickt` sits in a rhyme:
+
+> *Draagt de naam van Reyn, dat het oog verquickt, / Als, helas! het hert in 't dorre stickt*
+
+`stickt` rhymes with `verquickt` ("revives, refreshes"), and the line sets the two against each other. The etymological record supports reading them as a pair rather than as an accidental rhyme: *stikken* in the sense "smother, be choked" is, per the *Etymologisch woordenboek* (Van Veen/Van der Sijs, via `etymologiebank.nl`), the same word as *stikken* "to stitch" — an intensivum of *steken*, glossed there as "**blijven steken, niet verder kunnen**". The two senses the dossier had opposed are historically one word, and the rhyme selects the "stuck, unable to go further" sense.
+
+**Narrowed gloss:** *the heart is left stuck fast — choked — in the dry*, not "the heart adheres to dryness". Confidence moves from **low** to **medium**; the status stays `PENDING_LEXICAL_CHECK` until WNT is read.
+
+**`Geven op de hand` remains the weakest item in the file.** No dictionary was consulted and the idiom was not found in a corroborating text. What can be said from context alone: it stands in a pair with `Tegenwoordicheyd!` in an exclamatory list of what enchants (`Ah! betovrend schemer-ligt! / Geven op de hand! Tegenwoordicheyd!`), which points to **hand-to-hand immediacy, tangibility, present possession** rather than to a payment formula. That reading is a hypothesis, and it is labelled as one.
+
+**`wilt gy my`** also remains unchecked against WNT. The reciprocal-vow reading rests on the printed formula alone — `Iesu! wilt gy my, ick wil u, wil u alleen` — which is strong, but it is internal evidence.
+
 **Decision status for all eight:** `PENDING_LEXICAL_CHECK`. None is approved. Confidence in the literal glosses: **medium**, **low for `in 't dorre stickt` and `Geven op de hand`**.
 
 ## 6. Stanza structure to preserve
@@ -101,5 +117,5 @@ The print gives 8 stanzas of 8 lines. Each stanza is built as: four lines of sta
 ## Следующее проверяемое действие
 
 1. Obtain the actual Russian lyric used for DUTCH-001 and store it as a revision with a changelog; only then can these decisions be checked against a text.
-2. Resolve the eight lexical items against WNT, recording the headword and sense used.
+2. Resolve the eight lexical items against WNT, recording the headword and sense used. **Blocked in this environment:** the Geïntegreerde Taalbank serves only a JS interface and Ensie is paywalled; the check needs either a working WNT route or a library copy.
 3. Confirm the reciprocal-vow reading of `wilt gy my` against WNT and against Lodenstein's Song-of-Songs poems.

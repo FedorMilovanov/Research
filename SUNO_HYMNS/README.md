@@ -49,6 +49,7 @@ The root Research authority and evidence policy remain controlling. Nothing in t
 - **RESEARCH/DOSSIER_DUTCH-002_TEXT_HISTORY.md** — the 14 → 7 → 5 stanza history across 1676, 1806 and 1938, with the exact collation.
 - **RESEARCH/DOSSIER_DUTCH-003_REVIUS_SONNET.md** — the sonnet's dramaturgy, its turn at line 9, and the status of the discussed Russian rendering.
 - **RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md** — identification of *Heerlijckheyds Loff* (1676, pp. 155–158) and the evidence gaps around it.
+- **RESEARCH/COLLATION_GEZANG205_THREE_WAY.md** — 1676 → 1806 → 1938 stanza by stanza, with the 1938 text read from the printed bundel and the two corrections that followed.
 - **RESEARCH/AUDIT_2026-10-25_PASS4.md** — the fourth-pass audit: what exists, what to add, what to correct, what is verified, what stays open.
 - **HANDOFF_FOR_NEXT_AGENT.md** — continuation instructions for a new Arena/chat agent.
 - **data/track-catalog-v1.json** — project-local machine-readable track catalog.
