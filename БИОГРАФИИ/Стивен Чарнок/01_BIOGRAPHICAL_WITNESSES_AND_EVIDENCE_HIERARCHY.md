@@ -217,6 +217,66 @@ pp. 491–492 (EEBO-TCP page labels); *Fasti Oxonienses*, An. Dom. 1654, p. 783.
 
 ---
 
+### 2.8. Edmund Calamy — собственный текст (получен 2026-10-25, в пересказе)
+
+Calamy, *An Account of the Ministers … Ejected or Silenced after the Restoration in 1660* / *A
+Continuation of the Account …* (1702–1727). Полный том отделом **не получен**, но собственные слова
+Calamy теперь зафиксированы по цитате (curiosmith, 2026-10-25) и должны быть перепроверены по
+изданию:
+
+> «Mr. Stephen Charnock, B. D. first of Emanuel college in Cambridge, and afterwards fellow of New
+> college in Oxford. He was **senior proctor of the university in 1652**, and managed that office with
+> great honor and reputation, and was much applauded for his exercises at the act. **He died at
+> London, July the twenty-seventh 1680, aged fifty-two.**»
+>
+> «His funeral sermon was preached by Mr. John Johnson, who had been his **fellow-collegiate at
+> Cambridge, in 1644, when Mr. Charnock was only sixteen years of age**.»
+>
+> «**He published nothing while he lived**, but a sermon of 'The sinfulness and cure of thoughts, in
+> the supplement to the morning exercise at Cripplegate:' But various things of his were printed after
+> his death, in two volumes in folio.»
+
+Локатор: Calamy, *Account*, vol. 2, p. 57 (базовая запись) и *Continuation*, p. 81 (дополнение).
+Свидетель McCosh ссылается на p. 83 как на место сертификата 31 декабря 1661 — то есть Calamy даёт
+материал и на p. 81, и на p. 83.
+
+**Значение:**
+
+1. **Calamy даёт 27 июля и «aged fifty-two»** — независимо от Wood (1691). Это третий свидетель в
+   пользу 27 июля и второй по времени (1727). Важно: Calamy — не «сетевой пересказ», а ранний
+   диссентерский историк, работавший с теми же кругами.
+2. **Calamy — источник ошибки «senior proctor 1652».** Он прямо пишет «senior proctor … in 1652».
+   Wood (дважды), Adams & Veal и университетские записи дают 1654. То есть Calamy, а не Wood, —
+   первопричина `CONFLICT-2`.
+3. **Calamy даёт точный год знакомства с Johnson: 1644, Чарноку 16 лет.** Wood называет Johnson
+   «his contemporary in Emanuel and New Coll»; Calamy уточняет до года и возраста.
+4. **Calamy повторяет формулу Wood** «He published nothing while he lived» — с той же оговоркой
+   относительно Morning-Exercise sermon.
+5. Calamy подтверждает: посмертное — «two volumes in folio», что совпадает с Wood (1682 + 1683).
+
+### 2.9. Oxford DNB (Richard L. Greaves) — современная сводка с новыми деталями (2026-10-25)
+
+Современная статья *Dictionary of National Biography* (Oxford), ст. «Charnock, Stephen (1628–1680),
+nonconformist minister», автор **Richard L. Greaves**. Класс `B1` (качественная современная вторичка с
+указанием первоисточников). Полный текст за paywall; содержание зафиксировано по цитате
+(mylesstandish.info, 2026-10-25) и **требует проверки по подписке**.
+
+Новое по сравнению с McCosh/Symington/DNB 1887:
+
+| Деталь ODNB (Greaves) | Чем отличается от отдела |
+|---|---|
+| «Admitted as a sizar at Emmanuel College, Cambridge, on **30 May 1642**» | McCosh даёт **8 июля 1642** → `CONFLICT-13` |
+| «About **26 May 1649** he accepted a commission as chaplain to **Colonel Thomas Harrison's regiment of horse**, and he was probably present when it served in **Wales from July 1649 until the summer of 1650**» | **Заполняет пробел 1649–1650**, который отдел вёл как «частная семья, либо tutor, либо chaplain: не установлено» |
+| «he was incorporated MA at Oxford on **19 November 1652**, and appointed proctor in **1654**» | Совпадает с McCosh и Wood |
+| «Following his death in **Whitechapel parish on 27 July 1680** he was buried on 30 July at St Michael, Cornhill» | Независимо подтверждает место смерти из Wood |
+| «He was also honoured by the publication of ***New Poems upon the Death of Stephen Charnock* (1680)**» | **Ещё один contemporaneous печатный объект 1680 года** — кандидат в `CONFLICT-10` |
+
+**Ограничение.** Все шесть пунктов зафиксированы по цитате третьей стороны, не по самой статье.
+До проверки по подписке ODNB — `B1` с `A1`-основанием **не подтвержденным**; Harrison-chaplaincy
+фиксируется как **гипотеза высокого приоритета**, а не как факт отдела.
+
+---
+
 ## 4. Ранние вторичные источники (полезны, но не A)
 
 | Источник | Год | Класс | Ценность | Ограничение |

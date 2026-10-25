@@ -143,6 +143,11 @@ Custody ближе к `TRANSFER_PENDING_VERIFICATION` по строгой пол
 | Calendar of State Papers, Domestic, 19–20 июня 1663 | **высокий** | ордер на арест; снять `CONFLICT` в пользу документа |
 | Скан издания 1680 *A treatise of divine providence* (IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`) | **высокий** | сравнить эпистол Adams & Veal в 1680 и 1684; снять `CONFLICT-12` |
 | *An Elegy on the death of … Mr. Stephen Charnock, July 27, 1680* (Anon.; 1680; WorldCat 606749756; EEBO) | **высокий** | второй contemporaneous печатный объект с датой смерти 27 июля; прямое действие к `CONFLICT-10` |
+| *New Poems upon the Death of Stephen Charnock* (1680) | **высокий** | идентифицирован 2026-10-25 по ODNB (Greaves); ещё один contemporaneous печатный объект — кандидат в `CONFLICT-10` |
+| Приходской регистр St Michael's, Cornhill | **высокий** | запись погребения 30 июля 1680 «at the bottom of the Tower under the Belfry» |
+| Приходской регистр Whitechapel (умершие) | **высокий** | Чарнок умер в этом приходе (по Wood); единственный документ, способный дать точную дату смерти |
+| Oxford DNB (Greaves) по подписке | средний | проверить Harrison-chaplaincy 1649–1650 и дату матрикуляции 30 мая 1642 (`CONFLICT-13`) |
+| Page image broadside EEBO-TCP `B02133.0001.001` | средний | сверка заголовка со снимком; снятие остаточного `LOCATOR_HOLD` |
 | Скан 1680 sermon on 2 Cor. V. XIX (IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`; imprint: Thomas Milbourn for J.K., sold by Langley Curtis) | средний | чтение титульного листа и текста sermon; снять `LOCATOR_HOLD` по первому изданию |
 | Parker, *History of his own Time*, p. 71 | средний | зафиксировать точную формулировку обвинения |
 | Wilson, *Dissenting Churches*, vol. i, pp. 331 sqq. | средний | история Crosby Hall и цепочка пасторов; **приоритет повышен**: Wood назвал владельца здания (Sir John Langham) и предшественника (Thomas Watson) |

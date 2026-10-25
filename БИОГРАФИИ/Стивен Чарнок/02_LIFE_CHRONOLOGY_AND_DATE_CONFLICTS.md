@@ -30,13 +30,14 @@
 | 1628 | Рождение в приходе St Katharine Cree (Creechurch), Лондон | Symington; McCosh; DNB | `B1` ×3, сходятся |
 | — | Отец Richard Charnock, solicitor (DNB: «a relation of the Lancashire family of Charnock of Charnock»; Symington: «practised as a solicitor in the Court of Chancery … descended from a family of some antiquity in Lancashire») | Symington; DNB; McCosh | `B1` ×3, сходятся |
 | до 1642 | «A course of preparatory study» — домашнее/школьное обучение, деталей нет | Symington | `B1` |
-| **1642, 8 июля** | **Матрикуляция как sizar в Emmanuel College, Cambridge** | McCosh (по университетским записям) | `B1` с `A1`-основанием |
+| **1642** | **Матрикуляция как sizar в Emmanuel College, Cambridge** — **дата конфликтна**: McCosh даёт **8 июля 1642**, ODNB (Greaves) — **30 мая 1642** | McCosh; **ODNB (Greaves)** | **`CONFLICT-13`** |
 | 1642–1644 | Tutor — Mr W. Sancroft, впоследствии Archbishop of Canterbury; royalist. **Wood (первоисточник, вход [429], p. 491): «educated in Eman. Coll. in Cambridge, mostly under the tuition of Mr. Will. Sancroft»** | McCosh; **Wood 1691** | `B1` + `A1` |
 | 1643–1644 | Master of Emmanuel Dr Holdsworth посажен в тюрьму (1643) и изгнан (1644); преемник Dr Anthony Tuckney | McCosh | `B1` |
 | 1644 | Знакомство с John Johnson в Кембридже («thirty-six years since» на момент смерти Чарнока) | McCosh; Johnson | `A1`/`B1` |
 | 1644–1649 | Период духовной борьбы, затем обращение. Johnson: «Jonah-like, had turned to the Lord with all his heart» | Johnson через McCosh | `A1`-транзит |
 | 1645–1646 | Прохождение B.A. | McCosh | `B1` с `A1`-основанием |
 | 1649 | «Commencing M.A.» в Кембридже | McCosh | `B1` с `A1`-основанием |
+| **1649, ~26 мая — 1650, лето** | **По ODNB (Greaves): принял комиссию как chaplain в полк конного Colonel Thomas Harrison'а; вероятно, присутствовал при его службе в Уэльсе с июля 1649 до лета 1650** | **ODNB (Greaves)** — по цитате, не проверено по подписке | `B1`, гипотеза |
 
 ### Фаза II. Southwark и Оксфорд (~1649–1655)
 
@@ -267,6 +268,19 @@ Morning-Exercise sermon. Разрешение: это не противореч�
   инициальных публикаций.
 - Нельзя писать «Чарнок не публиковался при жизни» как безусловный факт.
 
+### `CONFLICT-13` — дата матрикуляции в Emmanuel College: 8 июля или 30 мая 1642
+
+| Сторона | Утверждение |
+|---|---|
+| McCosh 1864 (по университетским записям) | 8 июля 1642 |
+| **ODNB (Greaves), современная статья** | **30 мая 1642** |
+| Часть сайтов | «sizar July 8 1642 age fourteen» без ссылки на первичную запись |
+
+**Разрешение:** не разрешён. Обе даты — 1642 год, и обе относятся к записи о matriculation; возможно,
+речь о разных событиях (admission vs matriculation) или одна из них — опечатка. Требуется Emmanuel
+College admissions register. До неё рабочая формулировка: **«в 1642 году принят sizar в Emmanuel
+College, Cambridge»** без дня.
+
 ### `CONFLICT-12` — Wood: «His Works, vol. 2 … 1683. fol. with a Supple∣ment» — один том или два
 
 | Сторона | Утверждение |
@@ -297,6 +311,9 @@ Edw. Veel, who, **as I think**, published the said book». Wood не увере�
 - Не приписывать Wood утверждение «senior proctor 1652»: он дважды даёт 1654 (Fasti p. 783 и
   «two years after» 1652 во входе [429]).
 - Не утверждать, что Чарнок умер в Crosby House: по Wood — в доме Richard Tymms, glazier, Whitechapel.
+- Не датировать матрикуляцию днём: 8 июля (McCosh) и 30 мая (ODNB) расходятся — `CONFLICT-13`.
+- Не подавать Harrison-chaplaincy 1649–1650 как установленный факт: это гипотеза по ODNB,
+  зафиксированная по цитате, не по подписке.
 - Не утверждать, что Crosby House принадлежал congregration: по Wood — Sir John Langham.
 
 ---

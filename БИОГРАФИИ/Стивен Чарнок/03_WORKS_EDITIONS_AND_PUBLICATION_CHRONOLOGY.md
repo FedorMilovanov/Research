@@ -144,7 +144,8 @@ Wood, *Athenæ Oxonienses* vol. II, вход [429], p. 491 (EEBO-TCP `A71277.000
 |---|---|---|---|
 | **1680** | *A treatise of divine providence* | — | Первое издание; IA `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680` — **page images доступны** (675 MB, микрофильм EEBO); сверка эпистола с изданием 1684 не выполнена → `CONFLICT-12` |
 | **1680** | *A sermon preached by the late eminent Mr. Steph. Charnock on 2 Cor. V. XIX.* | London: Printed by Thomas Milbourn, for J.K., and are to be sold by Langley Curtis | Отдельная sermon 2 Кор. 5:19. **Page images доступны**: IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`; титульный лист читается как «A SERMON Preached by the Late Eminent Mr. Steph. Charnock ON 2 COR. V. XIX.» |
-| **1680** | *The sayings of that reverend and great preacher Mr. S. Charnock, who departed this life on Wednesday the 28 of July, 1680, and was solemnly interred the 30th following* | London: [s.n.], Printed in the year 1680 | **См. `CONFLICT-10`** |
+| **1680** | *The sayings of that reverend and great preacher Mr. S. Charnock, who departed this life on Wednesday the 28 of July, 1680, and was solemnly interred the 30th following* | London: [s.n.], Printed in the year 1680. **Broadside** | **Получен полностью 2026-10-25** — EEBO-TCP `B02133.0001.001`, CC0 1.0. ~38 афоризмов, **все извлечены из sermon «The Sinfulness and Cure of Thoughts»**. См. `CONFLICT-10` и том 12 |
+| **1680** | *New Poems upon the Death of Stephen Charnock* | [не получен; идентифицирован 2026-10-25 по ODNB Greaves] | ещё один contemporaneous печатный объект 1680 года — кандидат в `CONFLICT-10`; `ARCHIVE_HOLD` |
 | **1680** | *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen Charnock, July 27, 1680* | [не получен; идентифицирован 2026-10-25] | **Contemporaneous печатное attestation даты смерти 27 июля.** WorldCat 606749756; в EEBO (ProQuest). `ARCHIVE_HOLD`; приоритет очереди — высокий |
 | **1682** | *Discourses upon the existence and attributes of God* | London: Printed for D. Newman, T. Cockerill, Benj. Griffin, T. Simmons, and Benj. Alsop | **Разрешает `CONFLICT-6`** |
 | **1683** | *A supplement to the several discourses upon various divine subjects* | London: Printed for Thomas Cockerill | — |
@@ -171,7 +172,10 @@ T. Simmons, and Benj. Alsop». Это означает, что диапазон 
 | Заголовок 1680 *The sayings…* | «departed this life on **Wednesday the 28** of July, 1680, and was solemnly interred the 30th following» |
 | Wood / DNB / Symington / McCosh | 27 июля 1680 |
 | Регистр St Michael's | погребение 30 июля 1680 |
-| **Заголовок 1680-й элегии** (идентифицирована 2026-10-25, **НЕ получена**) | «…Mr. Stephen Charnock, **July 27, 1680**» |
+| **Заголовок 1680-й элегии** (идентифицирована 2026-10-25, **НЕ получена**) | «…Mr. Stephen Charnock, **July 27, 1680**** |
+| **Broadside *The sayings…* 1680** (EEBO-TCP `B02133.0001.001`, **получен полностью**) | «departed this Life on **Wednesday the 28** of July, 1680, and was solemnly Interred the 30th following» |
+| **Calamy 1727, собственный текст** | «He died at London, **July the twenty-seventh** 1680, **aged fifty-two**» |
+| **ODNB (Greaves), современная статья** | «death in **Whitechapel parish on 27 July 1680**» |
 | Wood, сноска `* 2.260` | только «1680.» — документ не назван |
 
 **Разрешение:** не разрешён, но **2026-10-25 баланс сдвинулся в пользу 27 июля**. Раньше 28 июля
@@ -189,9 +193,15 @@ T. Simmons, and Benj. Alsop». Это означает, что диапазон 
 Возможные объяснения: (а) *The sayings…* ошибается; (б) Чарнок умер ночью и разные источники
 датируют по-разному; (в) Old Style/New Style не при чём (разница 10 дней не даёт 27→28).
 
+**Итог подсчёта свидетелей (2026-10-25):** за **27 июля** — Wood 1691, Calamy 1727, DNB 1887,
+Symington 1853, McCosh 1864, ODNB (Greaves), элегия 1680 (не получена). За **28 июля** — один
+broadside 1680. То есть 28 июля остаётся **единственным** contemporaneous печатным свидетельством
+своей даты, но 27 июля имеет **семь** свидетелей, из которых один contemporaneous (элегия).
+
 Рабочая формулировка отдела: **27 июля 1680**, с фиксацией `CONFLICT-10`. Для снятия конфликта
 требуются: (1) текст элегии 1680 с чтением титульного листа; (2) приходовой регистр St Michael's,
-Cornhill; (3) свиток (broadside) 1680 с «Wednesday the 28 of July».
+Cornhill; (3) приходской регистр Whitechapel — Чарнок умер в этом приходе (по Wood), и регистр
+умерших мог бы дать точную дату; (4) page image broadside `B02133.0001.001` — сверка заголовка.
 
 ## 4. Каноническое издание XIX века
 

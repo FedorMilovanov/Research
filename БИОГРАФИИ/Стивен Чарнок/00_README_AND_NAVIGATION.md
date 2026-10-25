@@ -44,6 +44,7 @@
 | 09 | `09_JOHNSON_FUNERAL_SERMON_1680_PRIMARY_TRANSCRIPTION.md` | **Funeral sermon John Johnson 1680** — полная транскрипция с постраничными локаторами | `ARCHIVE_HOLD` снят; показано, что знаменитый «портрет» — patristic compilation, не свидетельство Johnson; pp. 33–40 |
 | 10 | `10_REPO_USAGE_LEDGER_AND_VERIFICATION_STATUS.md` | Сводный леджер уже используемого в Research Charnock-материала | `CHARN_PRACT_ATHEISM_001`; two-state diagnostic; три функциональные роли; что отдел добавил |
 | 11 | `11_WOOD_ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md` | **Wood, *Athenæ Oxonienses* 1691 — первичная транскрипция входа [429] и Fasti 1654** | Место смерти (дом Richard Tymms, Whitechapel); Sir John Langham и Crosby House; St Michael Cornhill «under the Belfry»; «France or Holland»; формула «true son of the Church of England» у Wood; `CONFLICT-12`; CC0 1.0 |
+| 12 | `12_THE_SAYINGS_1680_BROADSIDE_PRIMARY_TRANSCRIPTION.md` | **Broadside *The sayings…* 1680 — полная транскрипция ~38 афоризмов** | EEBO-TCP `B02133.0001.001`, CC0 1.0. Единственный contemporaneous источник даты 28 июля; показано, что текст — выборка из sermon «The Sinfulness and Cure of Thoughts»; проверка дня недели (28 июля 1680 = среда); `CONFLICT-10` документирован с обеих сторон |ATHENAE_OXONIENSES_1691_PRIMARY_TRANSCRIPTION.md` | **Wood, *Athenæ Oxonienses* 1691 — первичная транскрипция входа [429] и Fasti 1654** | Место смерти (дом Richard Tymms, Whitechapel); Sir John Langham и Crosby House; St Michael Cornhill «under the Belfry»; «France or Holland»; формула «true son of the Church of England» у Wood; `CONFLICT-12`; CC0 1.0 |
 
 ---
 
@@ -62,6 +63,9 @@
 | 1655, август | Прибытие в Ирландию в свите Henry Cromwell | McCosh (по Calamy/Palmer) |
 | 1655–1660 | Chaplain у Henry Cromwell; minister of St Werburgh's; lecturer at Christ Church, Дублин | DNB; McCosh; Symington |
 | 1660 | Реставрация — конец публичного служения в Ирландии | Adams & Veal; DNB |
+| **~1674–1676** | Единственная прижизненная публикация: sermon «The Sinfulness and Cure of Thoughts» (Быт. 6:5), sermon 19 в *Supplement to the Morning Exercise at Cripplegate*, под инициалами «S. C.» | Репринт 1844; свободный полный текст — Digital Puritan PDF | `A1` |
+| **1649, ~26 мая — 1650, лето** | **По ODNB (Greaves): chaplain в полке Colonel Thomas Harrison'а, служба в Уэльсе** — заполняет пробел, который отдел вёл как «частная семья: не установлено» | ODNB (Greaves), по цитате | `B1`, гипотеза |
+| **1680, после смерти** | Broadside *The sayings…* — ~38 афоризмов, **все из sermon 6:5**; заголовок даёт «Wednesday the 28 of July» | EEBO-TCP `B02133.0001.001` | `A1` |
 | 1661, 31 декабря | Подписывает сертификат в пользу Edward Veal, датированный Дублином | McCosh (по Calamy Continuation, p. 83) |
 | 1663, 19–20 июня | Ордер на арест Stephen Charnock; показания Rob. Littlebury | Calendar of State Papers (через McCosh) |
 | ~1660–1675 | «Наибольшая часть пятнадцати лет» в Лондоне без постоянной должности; визиты во Францию и Голландию | Adams & Veal; Wood |
@@ -79,6 +83,15 @@
 > в Ирландию в августе 1655 это **опровергает** версию Calamy/Symington о proctor в 1652 и
 > **подтверждает** 5 апреля 1654 (McCosh). Детали — том 08.
 
+> **Разрешение 2026-10-25 (4).** Broadside ***The sayings of that reverend and great preacher Mr. S.
+> Charnock*** 1680 получен полностью (EEBO-TCP `B02133.0001.001`, CC0 1.0) — том 12. Это
+> единственный contemporaneous печатный объект, дающий **28 июля**. Два следствия: (1) `CONFLICT-10`
+> теперь документирован **с обеих сторон первичными текстами**; (2) проверка дня недели подтверждает
+> внутреннюю согласованность broadside: 28 июля 1680 по юлианскому календарю было **средой**, 27 июля —
+> **вторником**. Кроме того, установлено, что текст broadside — **антология ~38 афоризмов, извлечённых
+> из sermon «The Sinfulness and Cure of Thoughts»**, то есть из единственной прижизненной публикации
+> Чарнока. Это даёт отделу массив `A1`-цитат 1680 года, не зависящий от репринта 1844. Детали — том 12.
+>
 > **Разрешение 2026-10-25 (3).** Полный вход **Wood, *Athenæ Oxonienses* 1691** (EEBO-TCP
 > `A71277.0001.001`, CC0 1.0) получен впервые в отделе — вход [429], pp. 491–492, плюс *Fasti*
 > An. Dom. 1654, p. 783. До сих пор Wood знали только через пересказ DNB/McCosh/Symington. Три
@@ -118,36 +131,46 @@
 2. **Закрыть первоисточники Чарнока в полнотекстовом виде.** ~~EEBO-TCP `A79420.0001.001`
    (*A discourse of divine providence*, 1684)~~ — **получен**. ~~funeral sermon John Johnson
    1680~~ — **получен** (EEBO-TCP `A46911.0001.001`). ~~Wood, *Athenæ Oxonienses* 1691,
-   вход [429] + Fasti 1654~~ — **получен** (EEBO-TCP `A71277.0001.001`). Следующий: скан 1684 из IA и
+   вход [429] + Fasti 1654~~ — **получен** (EEBO-TCP `A71277.0001.001`). ~~Broadside
+   *The sayings…* 1680~~ — **получен** (EEBO-TCP `B02133.0001.001`). Следующий: скан 1684 из IA и
    скан 1680 (`bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`)
    — сравнить эпистолы двух изданий (`CONFLICT-12`).
 3. **Элегия 1680** — *An Elegy on the death of the truly reverend, learned and pious, Mr. Stephen
    Charnock, July 27, 1680* (Anon.; 1680), WorldCat 606749756, в EEBO. **Приоритет высокий**: это
    второй contemporaneous печатный объект с датой смерти (27 июля) против заголовка
    *The sayings…* (28 июля). Получение текста — прямое действие к `CONFLICT-10`.
-4. **Bliss-редакция Wood 1813–20** (4 vols., колонковая пагинация). Все ссылки вида
+4. **Приходовые регистры** — St Michael's, Cornhill (погребение 30 июля 1680) и **Whitechapel**
+   (Чарнок умер в этом приходе по Wood; регистр умерших мог бы дать точную дату). Единственные
+   документы, способные закрыть `CONFLICT-10`.
+5. ***New Poems upon the Death of Stephen Charnock* (1680)** — идентифицирован по ODNB (Greaves);
+   ещё один contemporaneous печатный объект, кандидат в `CONFLICT-10`.
+6. **Oxford DNB (Greaves) по подписке** — проверить Harrison-chaplaincy 1649–1650 и дату
+   матрикуляции 30 мая 1642 (`CONFLICT-13`).
+7. **Page image broadside `B02133.0001.001`** — сверка заголовка со снимком, снятие остаточного
+   `LOCATOR_HOLD`.
+8. **Постраничное сопоставление ~38 афоризмов broadside с sermon 6:5** — таблица «афоризм →
+   страница sermon» даст цитируемые `A1`-цитаты с двойным локатором (1680 + 1844).
+9. **Bliss-редакция Wood 1813–20** (4 vols., колонковая пагинация). Все ссылки вида
    «Athenae iii. 1234–6» в очереди приобретений относятся к ней; вход [429] в первом издании —
    pp. 491–492, и Bliss перенумеровал иначе. Требуется пересчёт.
-5. **Мемуары John Gunter**, chamber-fellow в Оксфорде — упоминаются Calamy, но, по McCosh,
-   «we have not been able to find any trace». Цель поиска.
-6. **Утраченная conversion paper** — погибла в пожаре 1666; Johnson забыл конкретные тексты Писания.
-   Не восстановима; только констатировать потерю.
-7. **Crosby Hall congregation history** — Wilson, *History and Antiquities of Dissenting Churches*,
-   vol. i, pp. 331 sqq. — цепочка Watson → Slater → Grosvenor → Hodge/Jones → роспуск 1769.
-   **Приоритет повышен** после тома 11: Wood назвал владельца здания (Sir John Langham) и
-   предшественника Чарнока (Thomas Watson).
-8. **Dublin context** — Urwick, *Independency in Dublin in the Olden Time*; Armstrong,
-   *Summary History of the Presbyterian Churches in the City* (1829).
-9. **Постраничные локаторы** для всех quote-card кандидатов. Пока не приведены к странице — не quote-safe.
-10. **Сканы первых изданий** — IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`
+10. **Мемуары John Gunter**, chamber-fellow в Оксфорде — упоминаются Calamy, но, по McCosh,
+    «we have not been able to find any trace». Цель поиска.
+11. **Утраченная conversion paper** — погибла в пожаре 1666; Johnson забыл конкретные тексты Писания.
+    Не восстановима; только констатировать потерю.
+12. **Crosby Hall congregation history** — Wilson, *History and Antiquities of Dissenting Churches*,
+    vol. i, pp. 331 sqq. — цепочка Watson → Slater → Grosvenor → Hodge/Jones → роспуск 1769.
+    **Приоритет повышен** после тома 11: Wood назвал владельца здания (Sir John Langham) и
+    предшественника Чарнока (Thomas Watson).
+13. **Dublin context** — Urwick, *Independency in Dublin in the Olden Time*; Armstrong,
+    *Summary History of the Presbyterian Churches in the City* (1829).
+14. **Постраничные локаторы** для всех quote-card кандидатов. Пока не приведены к странице — не quote-safe.
+15. **Сканы первых изданий** — IA `bim_early-english-books-1641-1700_a-sermon-preached-_charnock-stephen_1680`
     (sermon on 2 Cor. V. XIX, Milbourn for J.K., 1680) и
     `bim_early-english-books-1641-1700_a-treatise-of-divine-pro_charnock-stephen_1680`
     (Providence, 1st ed., 1680). Оба доступны как **page images**; требуется чтение титульных листов
     и сверка эпистола двух изданий Providence (`CONFLICT-12`).
-11. **Приходовые записи Whitechapel** — дом Richard Tymms, glazier, где умер Чарнок. Был ли он там
+16. **Приходовые записи Whitechapel** — дом Richard Tymms, glazier, где умер Чарнок. Был ли он там
     жильцом или гостем — по Wood не установить.
-12. **Регистр St Michael's, Cornhill** — запись погребения 30 июля 1680 «at the bottom of the Tower
-    under the Belfry»; единственный документ, способный закрыть `CONFLICT-10`.
 
 ---
 
