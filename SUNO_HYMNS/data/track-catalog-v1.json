@@ -401,7 +401,7 @@
       "promptCapture": "CAPTURED_IN_REPOSITORY",
       "versions": [
         {
-          "versionId": "DUTCH-005-RU-v0.8",
+          "versionId": "DUTCH-005-RU-v0.9",
           "versionKind": "LYRIC_DRAFT_ONLY",
           "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
           "promptCapture": "CAPTURED_IN_REPOSITORY",
@@ -422,7 +422,7 @@
           },
           "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md). Five directions, never submitted to SUNO.",
           "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
-          "lyricRevisionNote": "Revision v0.8: a native-speaker review of syntax applied over the rhymed text, and one rhyme rolled back. Accepted: st.4 'suyetnaya' -> 'brennaya' (yd'le as transitory, on the reviewer's reading of the 2005 notes - recorded as a lead, not verified); st.6 plural 'v grekhakh ... Tvorya ikh' (de snooden sonden is plural); st.6 'nachnite zhizn dobrodetelnuyu' for het deugdsaam leven; st.7 'V Nyom odnom' for alleen, dash removed; st.9 'lyubov lyudskaya, lyudskiye nravy' (seden plural) and 'ten yeyo' restoring the 'van'; st.10 'Poyte vovek' (Singt is plural). Rejected: no negation is restored in st.8 (the print reads 'nog' with an affirmative verb); 'zhizn dobrodeteli' is a correct rendering of 'der deugden leven' genitive plural, only the closing line was wrong; the tripled word stays an infinitive because the Dutch is an infinitive. Rhyme rolled back in st.2: the close returns to 'Sertsu tsenu dayot vyshe vsekh' because the rhyme had been bought with a word not in the line. Tags shortened to three structural marks. Stress marks: four. Russian adaptation; owner revision is the gate.",
+          "lyricRevisionNote": "Revision v0.8: a native-speaker review of syntax applied over the rhymed text, and one rhyme rolled back. Accepted: st.4 'suyetnaya' -> 'brennaya' (yd'le as transitory, on the reviewer's reading of the 2005 notes - recorded as a lead, not verified); st.6 plural 'v grekhakh ... Tvorya ikh' (de snooden sonden is plural); st.6 'nachnite zhizn dobrodetelnuyu' for het deugdsaam leven; st.7 'V Nyom odnom' for alleen, dash removed; st.9 'lyubov lyudskaya, lyudskiye nravy' (seden plural) and 'ten yeyo' restoring the 'van'; st.10 'Poyte vovek' (Singt is plural). Rejected: no negation is restored in st.8 (the print reads 'nog' with an affirmative verb); 'zhizn dobrodeteli' is a correct rendering of 'der deugden leven' genitive plural, only the closing line was wrong; the tripled word stays an infinitive because the Dutch is an infinitive. Rhyme rolled back in st.2: the close returns to 'Sertsu tsenu dayot vyshe vsekh' because the rhyme had been bought with a word not in the line. Tags shortened to three structural marks. Stress marks: four. Russian adaptation; owner revision is the gate. Revision v0.9: stanza 1, owner's decision - the fourth 'prakh' removed. Line 9 now reads 'Sertsa tvoyego ne stoit', the print's shape (op aard three times, then a different word, niet waard). Stanza 1 leaves the full-rhyme column, as stanza 2 did in v0.8 and for the same reason; tally now three met, four half, three not met. Close 8 syllables, metre row 6-6-6-8 | 5 | 9 | 8. No other line, mark or tag changed; both lyric files 90 lines and identical apart from tags, echo and the four marks.",
           "assets": {},
           "generatedOutput": "NONE",
           "audioExport": "NONE",

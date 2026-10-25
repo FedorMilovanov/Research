@@ -469,3 +469,21 @@ Structural validation could not see any of them: it proves ids, states and promp
 Also recorded: the "battle" definition in `ASSET_MANIFEST.md` (one generation = two candidates), and the DUTCH-005 cover direction with its ten rejected rounds, so the look is not regenerated from scratch.
 
 **Not claimed:** these guards prevent nothing by themselves. Two of the session's worst errors — the rhyme bought with «любовь» and the fourth «прах» — were editorial, and the only thing that caught them was the owner reading the text.
+
+# Nineteenth pass — 2026-10-25 (owner's decision on stanza 1)
+
+**Decision:** «Сердца твоего не стоит прах» → «Сердца твоего не стоит». The fourth «прах» removed; the first three kept.
+
+That is exactly the shape the print has: `op aard` three times (5, 6, 8) and a close on a different word (`niet waard`, "not worth"). It also ends the inconsistency I had shipped in v0.8 — stanza 2 rolled back the same purchase, stanza 1 kept it.
+
+**Consequences, all applied:**
+
+- `DUTCH-005-RU v0.9`; changelog row added; stanza-1 section rewritten from "pending" to "decided".
+- Rhyme table: stanza 1 met → **half** (`нет` / `свет` survives; «прах» no longer answers the close). Tally **three met, four half, three not met**.
+- Metre: stanza 1 close 9 → **8** syllables; row is `6 · 6 · 6 · 8 | 5 | 9 | 8`.
+- Cost table: the 1.9 row marked **reverted in v0.9**, like the stanza 2 row.
+- SUNO twin updated; 90/90 lines still identical apart from tags, the echo and four marks; `check_ru_lyric.py` 0 accents in the clean file, 4 in the SUNO file.
+- Registers, package, catalog `versionId` and revision note bumped to v0.9.
+- `LESSONS_AND_GUARDS.md`: the stanza-1 open defect is closed, with the note that what settled it was a decision rather than an argument.
+
+**Not decided, still open:** stanzas 2, 8 and 10 sit at half; 4, 6 and 9 fail; five stanzas still carry calque-shaped openings; no cover approved; nothing generated.

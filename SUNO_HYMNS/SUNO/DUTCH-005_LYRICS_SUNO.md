@@ -1,7 +1,7 @@
 # DUTCH-005 — SUNO-ready lyric
 
 **«Хвала Славе»** — Йодокус ван Лоденстейн
-**Revision:** `DUTCH-005-RU v0.8` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md).
+**Revision:** `DUTCH-005-RU v0.9` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md).
 **Status:** working draft, **not approved** (title approved: «Хвала Славе»); **never submitted to SUNO**.
 
 Differences from the clean lyric, and no others: structural tags, one echo `(хвалить)` in verse 10, and **four stress marks** (`сто́ит`, `тре́пета`, `помы́сли`, `соединена́`). The rhyme is part of the wording, not a layer, so it is in both files.
@@ -20,7 +20,7 @@ Differences from the clean lyric, and no others: structural tags, one echo `(х�
 Всё, что слышишь, — прах,
 Не в том твоя жизнь, любовь, хвала;
 Всё, чего ты хочешь, — прах,
-Сердца твоего не стоит прах.
+Сердца твоего не стоит.
 
 [Verse 2]
 Блеск и красота — обман,
@@ -136,7 +136,7 @@ Differences from the clean lyric, and no others: structural tags, one echo `(х�
 
 ## Rhyme
 
-Four of ten stanzas meet the chosen standard in full, three partly, three not at all — tabulated in [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) § Rhyme. The three short lines this produced are 1.5, 1.6 and 3.4 (five syllables each); if SUNO cannot shape them, give up the rhyme at that cadence, not the words.
+Three of ten stanzas meet the chosen standard in full, four partly, three not at all — tabulated in [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) § Rhyme. The three short lines this produced are 1.5, 1.6 and 3.4 (five syllables each); if SUNO cannot shape them, give up the rhyme at that cadence, not the words. Stanza 1's close is now the shortest cadence in the text after those three (8 syllables) and no longer rhymes with line 8 — deliberate: the print's last word is not a repetition either.
 
 ## If SUNO truncates
 

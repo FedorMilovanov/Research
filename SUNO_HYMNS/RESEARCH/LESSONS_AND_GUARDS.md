@@ -116,7 +116,7 @@ Every one of these was checked against the 1676 print or the 1727 collation befo
 
 ## 5. Open defects as of this writing
 
-- **Stanza 1:** «прах» ×4 vs the print's three `op aard` + `niet waard`. Both versions printed in the lyric file; owner's decision pending. Whatever is chosen for stanza 1 must match the choice already made for stanza 2.
+- **Stanza 1: CLOSED in v0.9.** The fourth «прах» was removed on the owner's decision; the stanza now has three `прах` (5, 6, 8) and a close that does not rhyme — the print's shape. What settled it was not an argument but a decision: both stanzas that faced the same trade now resolve it the same way. This is the case to cite when the next review argues that a rhyme is worth a word.
 - **Stanza 2** is out of the rhyme column after the v0.8 rollback; 4 stanzas meet standard B, 3 half, 3 not at all. The three failures end their call on words with no rhyme available.
 - **Five stanzas** still carry calque-shaped openings (3, 5, 6, 8, 9) — the next editorial pass, and it needs the DBNL gloss for `crijgelijck`, `der deugden leven`, `enckel schijn`, `slijck`, `veerdig`/`genoegen`, `wakkerheyd`, `Menschen seden`.
 - **Nothing has been generated.** No audio, no approved cover, no stanza signed off. Production state `LYRIC_DRAFT`.

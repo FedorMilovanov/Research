@@ -7,10 +7,10 @@
 **Research record:** [`../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md`](../RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md)
 **Package opened:** 2026-10-25
 **Artifacts (kept separate, per `SUNO/README.md` and `SUNO/LYRIC_REGISTER.md`):**
-[`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — clean lyric, `DUTCH-005-RU v0.8` ·
+[`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — clean lyric, `DUTCH-005-RU v0.9` ·
 [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md) — SUNO-ready text with labels and stress marks ·
 [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md) — style prompts only
-**Production state:** `LYRIC_DRAFT` — a Russian draft v0.8 and five style directions exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
+**Production state:** `LYRIC_DRAFT` — a Russian draft v0.9 and five style directions exist in this repository; **no SUNO generation has been made**, and no audio, cover, export or publication exists.
 
 > Forward-written package, like DUTCH-004. Every field states its own status. Nothing here is a recovered artifact, and no line of the Russian draft is presented as a translation.
 
@@ -93,7 +93,7 @@ Flat on purpose; this is what the Russian must be checked against, not a verse.
 
 ## 4. Russian draft
 
-See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.8`, with changelog, rhyme/metre statement and approval state. The SUNO-ready variant with section labels and stress marks is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
+See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.9`, with changelog, rhyme/metre statement and approval state. The SUNO-ready variant with section labels and stress marks is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md).
 
 **Why the words are the same in both files:** the two lyric files carry identical wording. The only differences are the structural tags, one inline echo and **four stress marks**, each answering a rule in `STYLE_AND_PRODUCTION_RULES.md` (§ Pronunciation marks): one spelling with two stresses (*сто́ит*), one imperative (*помы́сли*), one short participle on the ending (*соединена́*), and one word heard sung wrong (*тре́пета*). Nothing else is accented — blanket marking was tried and rejected on 2026-10-25, because an accent changes the text the model reads. One word left the text for that reason: *драгое* needed a mark, so v0.6 reads «что драго», where the stress cannot go wrong. ё is always written: `всё`, `моё`, `Нём`, `даёт`, `крадёт`, `пропадёт`, `пойдёт`, `живёт`, with `все` kept where the plural is meant (10.1). Where rhyme or metre could justify a shifted stress, the sung form may win — that is recorded, not corrected. The marks are dropped before any published text.
 
@@ -143,7 +143,7 @@ See [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) — `DUTCH-005-RU v0.8`, with c
 | Illustration on printed p. 155 (`ill0155`) | `NOT_CAPTURED` — not viewed; no claim about it |
 | Literal gloss (§3) | `WORKING_GLOSS` — authored here, two uncertainties declared |
 | Metre | **measured**: statement lines 6–10, call 6–9, tripled 9–11, close 7–9 syllables. Not a rigid scheme; sufficient for syllabic declamation, not for a fixed melody |
-| Russian draft | `WORKING_DRAFT` v0.8 in `DUTCH-005_LYRICS.md` — **not approved**; owner revision required |
+| Russian draft | `WORKING_DRAFT` v0.9 in `DUTCH-005_LYRICS.md` — **not approved**; owner revision required |
 | Deviations (§5) | `DECLARED` — eight, each with a reason |
 | Musical brief (§6.1) | `AUTHORED_FOR_THIS_WORK` |
 | Style prompts | **five** directions, `A`–`E`, in `DUTCH-005_STYLE.md`; all `DOCUMENTED_NOT_YET_SUBMITTED`, none chosen |

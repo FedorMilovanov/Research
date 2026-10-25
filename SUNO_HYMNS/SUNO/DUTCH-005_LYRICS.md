@@ -3,7 +3,7 @@
 **«Хвала Славе»** — Йодокус ван Лоденстейн (1620–1677)
 *Heerlijckheyds Loff*, *Uyt-spanningen*, 1676, printed pp. 155–158 — collated against the ninth edition, 1727.
 
-**Revision:** `DUTCH-005-RU v0.8` — replaces v0.7. **Rhymed** (standard B), with a native-speaker pass on syntax applied over it.
+**Revision:** `DUTCH-005-RU v0.9` — replaces v0.8. **Rhymed** (standard B), with a native-speaker pass on syntax applied over it, and stanza 1's fourth «прах» removed on the owner's decision.
 **Status:** working draft, **not approved**. The **title** is approved («Хвала Славе», 2026-10-25); the wording is not.
 
 This file holds the **clean lyric only**: no tags, no prompts, no stress marks. Performable version: [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md). Rhyme analysis: [`../RESEARCH/RHYME_PLAN_DUTCH-005.md`](../RESEARCH/RHYME_PLAN_DUTCH-005.md). Gloss and deviations: [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3, §5.
@@ -22,7 +22,7 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 Всё, что слышишь, — прах,
 Не в том твоя жизнь, любовь, хвала;
 Всё, чего ты хочешь, — прах,
-Сердца твоего не стоит прах.
+Сердца твоего не стоит.
 
 ## 2
 
@@ -134,6 +134,18 @@ An **adaptation**, not a translation. Ten stanzas in source order; the threefold
 
 ---
 
+## Changelog — v0.8 → v0.9
+
+One line. The owner's decision, after the discrepancy was put in front of him: the fourth «прах» goes.
+
+| St. | v0.8 | v0.9 | Why |
+|---|---|---|---|
+| 1.9 | *Сердца твоего не стоит прах* | *Сердца твоего не стоит* | the print has `op aard` **three** times and closes with a **different** word — `niet waard`, "not worth". The fourth «прах» existed for the rhyme, and it turned the stanza's turn into a refrain. Removing it restores the print's shape: three calls, then a close that says something else |
+
+**What this costs:** stanza 1 leaves the full-rhyme column — «прах» (8) no longer rhymes with the close (9). The rhyme that matters, `нет` / `свет`, is untouched, and the three-fold «прах» — the print's own device — stays intact. Stanza 1 is now **half**, like stanzas 2, 8 and 10; the tally is three met, four half, three not met.
+
+**Consistency:** this is the same trade already made in stanza 2 (v0.8), decided the same way for the same reason. A text cannot be literal in one stanza and free in another over the same purchase.
+
 ## Changelog — v0.7 → v0.8
 
 A long review arrived aimed at v0.5 (it could not see the repository). Eight of its points survived checking against the print and against my own text; the rest were either already fixed or, in one case, a reading the print does not support.
@@ -161,11 +173,11 @@ A long review arrived aimed at v0.5 (it could not see the repository). Eight of 
 
 Not a wording change: every line of v0.8 is untouched. The heading went from «Слава Господня» to **«Хвала Славе»** on the owner's decision, because `Loff` is *praise* and the Dutch title contains no `Heere`. See § Title above.
 
-## Rhyme after v0.8 — standard B
+## Rhyme after v0.9 — standard B
 
 | St. | lines 2 & 4 | close ↔ call | Verdict |
 |---|---|---|---|
-| 1 | **нет / свет** | **прах / прах** | met |
+| 1 | **нет / свет** | прах / не стоит — no rhyme | half |
 | 2 | **суета / тщета** | — (close restored to the Dutch sense) | half |
 | 3 | **невзгод / вперёд** | **око / высоко** | met |
 | 4 | боли / истомы — assonance | — | not met |
@@ -176,7 +188,7 @@ Not a wording change: every line of v0.8 is untouched. The heading went from «�
 | 9 | — | — | not met |
 | 10 | — (root rhyme хвалы / хвалу, as `stoff` / `loff`) | — | half |
 
-Four met, three half, three not met. The three that fail end their call on `помысли`, `вы`, `крадёшь` — no rhyme exists there without rewriting the call itself.
+Three met, four half, three not met. The three that fail end their call on `помысли`, `вы`, `крадёшь` — no rhyme exists there without rewriting the call itself. Stanza 1 joined the half column in v0.9, when its fourth «прах» was removed: the three-fold «прах» still rhymes with itself, which is the print's device, but the close no longer answers it.
 
 ## Stanza 1 — the four «прах»: the print's device, my word
 
@@ -195,7 +207,7 @@ My v0.8 has «прах» four times, in all four slots. Two separate debts, and 
 1. **The word.** `aard` = earth, not dust. «прах» is a substitution in the biblical register (dust, ashes), a fair poetic reading of the stanza's argument but not what the Dutch word says. In v0.6 this slot read «здесь», with «Всё, что видишь ты здесь…», which is closer to the stanza's own `Hier beneden`.
 2. **The fourth repetition.** It was bought by the rhyme, in the same transaction as stanza 2's «любовь» — which v0.8 rolled back. The Dutch's last line turns on a new word; mine closes on the repeated one, so «прах» hardens into a refrain, and the stanza loses its turn.
 
-**Not changed in v0.8; recorded for the owner.** The faithful shape is v0.6's:
+**Decided in v0.9: the fourth «прах» is removed.** Line 9 now reads «Сердца твоего не стоит» — the print's shape, three repetitions and then a turn. Stanza 1 therefore leaves the full-rhyme column, exactly as stanza 2 did in v0.8, for the same reason. The v0.6 shape it returns to:
 
 ```
 Всё, что видишь, — здесь,
@@ -205,15 +217,15 @@ My v0.8 has «прах» four times, in all four slots. Two separate debts, and 
 Сердца твоего не стоит.
 ```
 
-— which costs the rhyme: lines 6/8 and 8/9 no longer rhyme, and stanza 1 leaves the rhyme column exactly as stanza 2 did. The trade is the same one already made once in this revision; whichever way it goes, it should go the same way twice.
+— and v0.9 differs from it only in «здесь» → «прах» at lines 5, 6 and 8, which is kept: the print's repeated `op aard` is a repeated word, and three «прах» reproduce that. What was given up is the rhyme at the close, not the repetition.
 
-## What the rhyme cost — every line where a word changed for it (v0.7, still current except where marked)
+## What the rhyme cost — every line where a word changed for it (current as of v0.9)
 
 | St. | v0.6 | now | The cost |
 |---|---|---|---|
 | 1 | *Лишь там, где Иисуса зрят* | *Лишь там, где Иисуса свет* | `siet` is "sees"; «свет» is the light of Jesus, a different image, bought for the rhyme with «нет» |
 | 1 | *Всё, что видишь ты здесь… Всё, чего хочешь здесь* | *Всё, что видишь, — прах… Всё, чего ты хочешь, — прах* | `op aard` is "on earth", not "dust" — see § Stanza 1 above |
-| 1 | *Сердца твоего не стоит* | *Сердца твоего не стоит прах* | a fourth «прах», where the print has `niet waard` |
+| 1 | *Сердца твоего не стоит* | *… не стоит прах* → **reverted in v0.9** | a fourth «прах», where the print has `niet waard`; the rhyme was rolled back and stanza 1 left the full-rhyme column |
 | 2 | *Сердцу цену даёт выше всех* | *Сердцу всех выше — кровь и любовь* → **reverted in v0.8** | «любовь» is not in this line in the Dutch; the rhyme was rolled back, and stanza 2 left the rhyme column |
 | 3 | *Сомкни плотские очи* | *Закрой плотское око* | singular instead of plural — and closer to the Dutch `uw vleeschlijck oog`, which is singular |
 | 3 | *Эта жизнь — в вышине* | *Эта жизнь — высоко* | a flatter ending, bought for «око»; `om hoog` is literally "on high" |
@@ -229,7 +241,7 @@ My v0.8 has «прах» four times, in all four slots. Two separate debts, and 
 
 | St. | lines 1 · 2 · 3 · 4 | call | tripled | close |
 |---|---|---|---|---|
-| 1 | 6 · 6 · 6 · 8 | 5 | 9 | 9 |
+| 1 | 6 · 6 · 6 · 8 | 5 | 9 | 8 |
 | 2 | 7 · 7 · 7 · 7 | 7 | 10 | 9 |
 | 3 | 7 · 6 · 8 · 5 | 7 | 9 | 6 |
 | 4 | 8 · 6 · 8 · 8 | 9 | 9 | 8 |
