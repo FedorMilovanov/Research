@@ -1,20 +1,17 @@
 # DUTCH-005 — SUNO-ready lyric
 
 **«Слава Господня»** — Йодокус ван Лоденстейн
-**Revision:** `DUTCH-005-RU v0.7` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md), which is the clean public text.
+**Revision:** `DUTCH-005-RU v0.8` — identical wording to [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md).
 **Status:** working draft, **not approved**; **never submitted to SUNO**.
 
-Differences from the clean lyric, and no others:
+Differences from the clean lyric, and no others: structural tags, one echo `(хвалить)` in verse 10, and **four stress marks** (`сто́ит`, `тре́пета`, `помы́сли`, `соединена́`). The rhyme is part of the wording, not a layer, so it is in both files.
 
-1. **Structural tags** — `[Intro]`, `[Verse 1]`…`[Verse 10]`, `[Outro]`. Not sung; no bare stanza numbers in the body, because a bare `1` or `2` can be read as text.
-2. **One echo**, inline in verse 10: `(хвалить)`.
-3. **Four stress marks**, on four words: `сто́ит`, `тре́пета`, `помы́сли`, `соединена́`. See below.
-4. **Rhyme is in the clean lyric too** — it is part of the wording, not a performance layer.
+**Tags kept short on purpose.** v0.7 described every verse (`Lead, organ pedal under`, `choir hums the triad with him`). Ten descriptions compete with the text for the model's attention, and the ones that matter are structural: where the ensemble thins, where it returns, where it is full. Three carry the shape; the rest say nothing at all.
 
 ```
 [Intro]
 
-[Verse 1 — Lead, organ pedal under]
+[Verse 1]
 Ввысь, душа моя, ввысь!
 Здесь, внизу, жизни нет:
 Жизнь, любовь и хвала —
@@ -25,7 +22,7 @@ Differences from the clean lyric, and no others:
 Всё, чего ты хочешь, — прах,
 Сердца твоего не стоит прах.
 
-[Verse 2 — Lead, choir enters on the last line]
+[Verse 2]
 Блеск и красота — обман,
 Всё, что драго, — суета,
 Гаснет радость, чуть вкусил,
@@ -34,9 +31,9 @@ Differences from the clean lyric, and no others:
 Там драгоценная кровь
 Сто́ит всей жизни, любви и хвалы:
 Там драгоценная кровь,
-Сердцу всех выше — кровь и любовь.
+Сердцу цену даёт выше всех.
 
-[Verse 3 — Lead, choir hums the triad with him]
+[Verse 3]
 Жизнь без конца, во славе,
 После земных невзгод,
 Лишь она, душа, желанна
@@ -47,18 +44,18 @@ Differences from the clean lyric, and no others:
 Закрой плотское око:
 Эта жизнь — высоко.
 
-[Verse 4 — Lead, choir sustained]
+[Verse 4]
 Жить пред Богом — не умирать,
 Без труда, без боли,
 Без болезни, без тре́пета,
 Без мученья, без истомы.
-О суетная душа, помы́сли,
-О суетная душа, помы́сли,
+О бренная душа, помы́сли,
+О бренная душа, помы́сли,
 Без смерти — вечная жизнь, жизнь, жизнь;
-О суетная душа, помы́сли,
+О бренная душа, помы́сли,
 Что Небо благостно даёт.
 
-[Verse 5 — Lead, choir sustained]
+[Verse 5]
 Жизнь в совершенных добродетелях,
 К славе Господней,
 В небесных радостях светла,
@@ -69,29 +66,29 @@ Differences from the clean lyric, and no others:
 С сияньем соединена́:
 Зри, что Небо тебе даёт сполна.
 
-[Verse 6 — Lead, choir answers the call line]
-Безумцы, что в грехе живут,
-Творя его, — не знаете,
+[Verse 6]
+Безумцы, что в грехах живут,
+Творя их, — не знаете,
 Что смерть и ад в груди у вас
 Доселе не отступили?
 Хотите жизни вы?
 Хотите жизни вы?
 Жизнь добродетелей — жизнь, жизнь, жизнь;
 Хотите жизни вы?
-Начните жизнь добродетели.
+Начните жизнь добродетельную.
 
-[Verse 7 — Lead alone, organ thins to a single stop]
+[Verse 7 — Lead alone]
 Желанный и любви достойный —
 Мой Иисус, в Ком лишь отрада,
 Любовь, готовая на иное,
-Одна находит в Нём усладу!
+В Нём одном находит усладу!
 Душа моя, ввысь, ввысь,
 Душа моя, ввысь, ввысь,
-Где Иисуса — любить, любить, любить;
+Где Иисуса любить, любить, любить;
 Душа моя, ввысь, туда,
 Где зрю спасенье навсегда.
 
-[Verse 8 — Choir rejoins, building]
+[Verse 8 — Choir returns]
 Прекраснейшая Красота!
 Причина красы, что здесь мнится,
 С годами и с привычкой
@@ -102,18 +99,18 @@ Differences from the clean lyric, and no others:
 Тебе, Красота, поклоняюсь:
 К Тебе моё сердце стремится.
 
-[Verse 9 — Lead, full choir]
+[Verse 9]
 Всякая отрада, какую
 Здесь можно помыслить, —
-Любовь людей и их обычай —
-Всё это только тень.
+Любовь людская, людские нравы —
+Всё это — только тень её.
 Ты моё сердце крадёшь,
 Ты моё сердце крадёшь,
 Коль что любить — любить, любить, любить;
 Ты моё сердце крадёшь:
 Тебя превыше всех люблю.
 
-[Verse 10 — Full male choir, all voices]
+[Verse 10 — Full choir]
 О, если б все языки земли,
 Вся бодрость ангелов
 Соединились и воспели
@@ -122,51 +119,36 @@ Differences from the clean lyric, and no others:
 Воспрянь, моя цитра; ибо
 Иисуса — хвалить, хвалить, хвалить (хвалить);
 Воспряньте все: есть предмет хвалы;
-Пой без конца Иисусову хвалу.
+Пойте вовек Иисусову хвалу.
 
-[Outro — Organ alone, two bars, then silence]```
+[Outro — Organ alone, two bars]```
 
-## Stress — four words, and four only
+## Stress — four words
 
-| Word | Place | Stress | Rule |
-|---|---|---|---|
-| сто́ит | 2.7 | **сто́**-ит | one spelling, two stresses: `сто́ит` = is worth, `стои́т` = costs |
-| тре́пета | 4.3 | **тре́**-пе-та | heard sung wrong — the take sang *трепе́та* |
-| помы́сли | 4.5, 4.6, 4.8 | по-**мы́**-сли | imperative; the form's stress is not where a model defaults |
-| соединена́ | 5.5, 5.6, 5.8 | со-е-ди-не-**на́** | short participle, stress on the ending |
-
-`дару́ет` needed a mark in v0.6 and no longer appears: both stanzas now end «даёт» / «даёт сполна», where `ё` carries the stress itself. That is the rule working in the right direction — the mark went because the word went, not because the rule relaxed.
-
-**Absent on purpose:** monosyllables (`зрят`, `ввысь`, `прах`, `тень`), every ё-word (`всё`, `крадёшь`, `даёт`, `пойдёт`, `моё`), and the plain polysyllables that make up most of the text (`душа`, `сердце`, `любовь`, `Небо`, `слава`, `красота`).
-
-## Rhyme — where it is, and where it is not
-
-Six of ten stanzas carry the cadence rhyme; four do not, and the four are named in [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) § Rhyme. The short lines this cost are 1.5–1.6 (5 syllables each) and 3.4 (5). If SUNO cannot shape a five-syllable line, give up the rhyme at that cadence, not the words.
-
-## Why these tags, and no others
-
-| Mark | What it does musically | Why it is there |
+| Word | Place | Rule |
 |---|---|---|
-| `[Verse 7 — Lead alone, organ thins…]` | accompaniment drops to a single stop under the lead | verse 7 turns from earthly vanity to Christ as the one love; the text changes, so the texture changes |
-| `[Verse 8 — Choir rejoins, building]` | the ensemble returns and the dynamic begins to climb | verses 8–10 address Beauty and end in praise; the returning voices mark the ascent |
-| `[Verse 10 — Full male choir, all voices]` | tutti, the only full ensemble in the piece | the doxology; saving the full choir for one verse is what makes it read as an arrival |
-| `(хвалить)` | one short echo, sung, inside the tripled line | the only ornament; the tripled device is the poem's spine |
+| сто́ит | 2.7 | one spelling, two stresses: `сто́ит` = is worth, `стои́т` = costs |
+| тре́пета | 4.3 | heard sung wrong |
+| помы́сли | 4.5, 4.6, 4.8 | imperative |
+| соединена́ | 5.5, 5.6, 5.8 | short participle, stress on the ending |
 
-Deliberately **absent**: no `[Whisper]` (the style forbids a whispered lead); no `[Chorus]` (invented); no `[Instrumental]` stretches; no stacked `[Build]`/`[Pause]` tags.
+`дару́ет` carried a mark until v0.7 and no longer appears: the closes now read «даёт» / «даёт сполна», where `ё` sets the stress itself.
+
+## Rhyme
+
+Four of ten stanzas meet the chosen standard in full, three partly, three not at all — tabulated in [`DUTCH-005_LYRICS.md`](DUTCH-005_LYRICS.md) § Rhyme. The three short lines this produced are 1.5, 1.6 and 3.4 (five syllables each); if SUNO cannot shape them, give up the rhyme at that cadence, not the words.
 
 ## If SUNO truncates
 
-1. Keep the tempo at 116–120 bpm and the intro at two bars.
-2. If a verse is dropped, add `all ten verses, in order, no cuts` to the style box and regenerate — never delete text to fit.
-3. If it still truncates, split at the poem's own seam — verses 1–5 and 6–10 — with the same style and lead.
+1. Tempo 116–120, intro two bars.
+2. Dropped verse → add `all ten verses, in order, no cuts` and regenerate; never delete text.
+3. Still truncating → split at verses 1–5 / 6–10, same style and lead.
 
-## Audit performed before any generation
+## Audit before any generation
 
-- verses 1 → 10, source order, nothing omitted or merged;
-- tripled word checked against the Dutch: `жизнь` in 3–6, `любить` in 7–9, `хвалить` in 10;
-- threefold call in verses 1, 3, 4, 5, 6, 7, 8, 9; verse 2 varies it as the print does; verse 10 has none;
-- no line, refrain or repetition that is not in the 1676 print;
-- `ё` printed wherever it belongs;
-- stress marks: **four**, each traceable to a rule;
-- rhyme: six stanzas meet standard B, four declared short;
-- wording checked word for word against the clean lyric — the files differ only in the tags, the echo and the four accents.
+- ten verses, source order, nothing omitted or merged;
+- tripled word: `жизнь` 3–6, `любить` 7–9, `хвалить` 10;
+- call present in 1, 3–9; verse 2 varies it as the print does; verse 10 has none;
+- no added line, refrain or chorus; one echo, declared;
+- `ё` printed wherever it belongs; four marks, each by rule;
+- wording identical to the clean lyric apart from tags, echo and accents.

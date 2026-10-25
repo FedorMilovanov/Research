@@ -401,3 +401,32 @@ Three lines fell to five syllables (1.5, 1.6, 3.4). Recorded with the warning: i
 - Metric defects in the version offered for adoption: VIII.2 twelve syllables, VIII.4 fifteen, IX.5 twelve, X.1 eleven, VI.7 twelve. Not adoptable under strict syllabic singing.
 
 Validator: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
+# Fifteenth pass — 2026-10-25 (the "gold" pass: syntax review over the rhymed text)
+
+A long review arrived aimed at v0.5 — it could not reach the repository, so it critiqued a text three revisions old. Eight points still applied to v0.7 and were taken. Four were rejected, one of them because the review contradicts itself.
+
+## Taken
+
+1. **IV — `yd'le` as transitory, not idle.** «Суетная» → «О бренная душа». The review reports the 2005 commentary glossing `ijdel` as *vergankelijk*. Recorded as a **lead**: that page has not been read here, and this reviewer's other Dutch claims have twice been wrong.
+2. **VI — plural sins.** `de snooden sonden` is plural; «в грехе… творя его» flattened it. Now «в грехах живут, / Творя их».
+3. **VI — the closing line.** «Начните жизнь добродетели» was a word-for-word calque of `het deugdsaam leven`. Now «Начните жизнь добродетельную».
+4. **VII — `alleen`.** «Одна находит» could be read as "she" or as "one love". Now «В Нём одном находит усладу».
+5. **IX — `menschen seden` plural.** «Любовь людская, людские нравы».
+6. **IX — the missing `van`.** «Всё это — только тень её»: the shadow is *of* something.
+7. **X — `Singt` is plural.** «Пой без конца» → «Пойте вовек».
+8. **Tag hygiene.** Ten descriptive tags compete with the text for the model's attention; three structural ones do the work.
+
+## Rolled back
+
+**Stanza 2's close.** v0.7 read «Сердцу всех выше — кровь и любовь», bought for the rhyme with «кровь». «любовь» is not in that line of the Dutch (`'t Hert boven alles gelden doet`), and the rhyme had cost the sense. Back to «Сердцу цену даёт выше всех», and stanza 2 leaves the rhyme column. **That is the right direction of trade: rhyme may cost a word, not a meaning.**
+
+## Rejected
+
+1. **"Stanza 8 must be rebuilt; the Beauty is said to fade."** The review retracts this in the same document and lands on the reading v0.7 already used: `Die` = `wat hier schoon schijnt`, the earthly seeming-beauties. The print has no negation (`nog`, affirmative `Min vermaackt`).
+2. **"`Жизнь добродетелей` mistranslates `der deugden leven`."** It is a correct rendering of the genitive plural. The error was in the *closing* line, and that is fixed.
+3. **"`Где Иисуса любить` needs a finite verb."** The Dutch triples an infinitive (`lieven`), and the tripled word is an infinitive in 7–10. A finite verb in one stanza would break the device. The dash went instead.
+4. **"Remove the echo `(хвалить)`."** Kept and flagged: one added repetition where the Dutch has three. If a take shows it is unnecessary, it goes.
+
+## State
+
+`DUTCH-005-RU v0.8`. Rhyme: four stanzas met, three half, three not met. Stress marks: four. Both lyric files 90 lines, identical apart from tags, the echo and the accents. Validator: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
