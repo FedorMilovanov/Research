@@ -284,3 +284,16 @@ The earlier wording of the rule (separate `Название:` and `Автор:` 
 
 `styleVariants` (five IDs) added to `DUTCH-005-RU-v0.3`, with a note that the primary slot is a registry necessity, not a preference. Validator passes: **50 sources, 3 authors, 5 tracks, 39 claims, 9 songbooks**.
 
+# Tenth pass — 2026-10-25 (stanza 8, lines 3–4: "куда уйдёт?")
+
+The owner asked where the beauty "goes". It goes nowhere: the Dutch verb is `verdwijnt`, **vanishes**, and there is no destination in it. The Russian `уйдёт` in v0.3 imported one.
+
+Two defects in one line, both fixed in v0.4:
+
+1. **Direction invented.** `уйдёт` → `пропадёт` (ceases to be, is gone), with no "where".
+2. **Consequence invented.** The Dutch pairs two alternatives — `Min vermaackt, **of oyt** verdwijnt`, "pleases less **or ever** vanishes". v0.3 made the second a result of the first ("меньше радует — и уйдёт"). v0.4 restores the disjunction: `Меньше радует иль пропадёт`.
+
+A third thing is now recorded as an **interpretation, not a settled reading**: the antecedent of `Die`. It may agree grammatically with `Schoonheyd` itself, which would make the addressed Beauty capable of vanishing — contradicting stanza IX and the poem's argument. The earthly-beauties reading is adopted for that reason and flagged as a choice.
+
+Verse 8 in both lyric files, the changelog, the measured syllable table (line 4: 8 → 9) and `DUTCH-005-RU-v0.4` in the registry were updated together. Validator re-run.
+

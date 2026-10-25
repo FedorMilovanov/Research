@@ -401,7 +401,7 @@
       "promptCapture": "CAPTURED_IN_REPOSITORY",
       "versions": [
         {
-          "versionId": "DUTCH-005-RU-v0.3",
+          "versionId": "DUTCH-005-RU-v0.4",
           "versionKind": "LYRIC_DRAFT_ONLY",
           "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
           "promptCapture": "CAPTURED_IN_REPOSITORY",
@@ -422,7 +422,7 @@
           },
           "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md). Five directions, never submitted to SUNO.",
           "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
-          "lyricRevisionNote": "Revision v0.3: seven lines rewired after review (stanzas 1, 2, 3, 6, 7, 8, 9, 10), syllable counts measured rather than asserted, and the claim of a regular metre withdrawn. Russian adaptation, not a translation; the clean lyric, the SUNO-ready text and the style are three separate files. Owner revision is the gate before READY_FOR_REVIEW.",
+          "lyricRevisionNote": "Revision v0.4: stanza 8 lines 3-4 corrected - 'и уйдёт' imported a destination the Dutch 'verdwijnt' does not have, and turned the Dutch's two alternatives ('min vermaackt, of oyt verdwijnt') into a consequence. Restored as 'иль пропадёт'. The antecedent of 'Die' (earthly beauties, not the addressed Beauty) is recorded as an interpretation, not as a settled reading. Russian adaptation, not a translation; clean lyric, SUNO-ready text and style are three separate files. Owner revision is the gate.",
           "assets": {},
           "generatedOutput": "NONE",
           "audioExport": "NONE",
@@ -504,7 +504,11 @@
         "If a generation truncates, do NOT cut stanzas: regenerate with 'all ten verses, in order, no cuts', or split the release at verses 1-5 / 6-10."
       ],
       "identityStatus": "CONFIRMED_BY_TWO_PRINTINGS_TYPOGRAPHY_UNVERIFIED",
-      "identityNote": "Title, page range, tune line, date, stanza count and structure are identical in the 1676 first edition and the 1727 ninth edition, so the work's identity is established bibliographically. Neither printing has been checked as a page image, and the two disagree in four places (CLM-DUTCH-005-VARIANTS), so no wording is definitive yet. The ID was assigned on transcription evidence; that is the process defect this record makes explicit."
+      "identityNote": "Title, page range, tune line, date, stanza count and structure are identical in the 1676 first edition and the 1727 ninth edition, so the work's identity is established bibliographically. Neither printing has been checked as a page image, and the two disagree in four places (CLM-DUTCH-005-VARIANTS), so no wording is definitive yet. The ID was assigned on transcription evidence; that is the process defect this record makes explicit.",
+      "interpretationNotes": [
+        "St. VIII.3-4 'Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt': 'Die' is grammatically ambiguous and could agree with 'Schoonheyd'. The earthly-beauties reading is adopted because otherwise the addressed Beauty could vanish, contradicting st. IX and the poem's argument. Flagged as interpretation.",
+        "'of oyt' = 'or ever', a second alternative, not a causal link."
+      ]
     }
   ],
   "adjacentNonDutchWorks": [

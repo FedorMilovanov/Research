@@ -2,7 +2,7 @@
 
 **Work:** DUTCH-005 · *Heerlijckheyds Loff* · Jodocus van Lodenstein (1620–1677)
 **Source:** *Uyt-spanningen*, Utrecht: Willem Clerck, 1676, printed pp. 155–158 — **collated against the ninth edition, 1727, same pages** (`SRC-L-UYT-1727-HEERLIJCKHEYD`).
-**Revision:** `DUTCH-005-RU v0.3` — replaces v0.2.
+**Revision:** `DUTCH-005-RU v0.4` — replaces v0.3.
 **Status:** working draft, **not approved**. The owner's line-by-line revision is still the gate.
 
 This file holds the **clean lyric only**: no tags, no prompts, no gloss. The performable version is [`DUTCH-005_LYRICS_SUNO.md`](DUTCH-005_LYRICS_SUNO.md); style is [`DUTCH-005_STYLE.md`](DUTCH-005_STYLE.md); fidelity layer and deviations are in [`DUTCH-005_PRODUCTION_PACKAGE.md`](DUTCH-005_PRODUCTION_PACKAGE.md) §3 and §5.
@@ -99,8 +99,8 @@ An **adaptation**, not a translation. Ten stanzas in the source order; the three
 
 Прекраснейшая Красота!
 Причина всей красы земной,
-Что с годами и привычкой
-Меньше радует — и уйдёт.
+Что с годами и с привычкой
+Меньше радует иль пропадёт.
 Тебе, Красота, поклоняюсь,
 Тебе, Красота, поклоняюсь,
 Коль что любить — любить, любить, любить;
@@ -133,9 +133,9 @@ An **adaptation**, not a translation. Ten stanzas in the source order; the three
 
 ---
 
-## Changelog — v0.2 → v0.3
+## Changelog — v0.2 → v0.3 → v0.4
 
-Every change answers a specific defect. The owner's seven flagged lines are marked ★.
+Every change answers a specific defect. The owner's seven flagged lines are marked ★. The stanza-8 row records the v0.4 fix, because v0.3's own fix there was still wrong.
 
 | Stanza | v0.2 | v0.3 | Reason |
 |---|---|---|---|
@@ -154,10 +154,18 @@ Every change answers a specific defect. The owner's seven flagged lines are mark
 | 7 ★ | *Всегда готовая на иное / Находит усладу лишь в Нём* | *Всегда готовая на иное, / Одна находит в Нём усладу!* | the subject is **love** (`de min … vindt alleen genoegen in`), not the soul; "одна" makes it unambiguous |
 | 8 ★ | *Если что любить — любить, любить, любить* | *Коль что любить — любить, любить, любить* | "если что любить" is not Russian; "коль" is the conditional the Dutch has (`Wil ick oyt yets lieven`) |
 | 8 | *Причина всего, что здесь прекрасно* | *Причина всей красы земной* | 10 → 8 syllables |
-| 8 | *Радует всё меньше иль уходит* | *Меньше радует — и уйдёт* | 10 → 8 syllables, and `verdwijnt` is future-perfective in sense: "will be gone" |
+| 8 | *Радует всё меньше иль уходит* | *Меньше радует иль пропадёт* | v0.3 wrongly wrote *и уйдёт*: `verdwijnt` means **vanishes**, with no destination, and the Dutch pairs two alternatives (`Min vermaackt, **of oyt** verdwijnt`) rather than a consequence. v0.4 restores the disjunction and drops the invented direction |
 | 9 ★ | *Если хочу любить — любить…* | *Коль что любить — любить…* | same fix as stanza 8, kept identical because the Dutch repeats the formula |
 | 9 | *Все обаяния…* / *Лишь тень того* | *Всякая отрада…* / *Всё это только тень* | "обаяния" was already gone in v0.2; the line is now short enough to sing |
 | 10 ★ | *Воспряньте все, кто здесь прах* | *Воспряньте, все, кто прах и тлен* | gains "все" and a second predicate, so the clause parses on one hearing; `hier is stoff` = "all here that is dust" |
+
+## Stanza 8, lines 3–4 — a reading that must be declared
+
+*Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt* — "which, through years or through custom, pleases less, **or ever** vanishes". Three things are decided here:
+
+1. **`verdwijnt` = vanishes, ceases to be.** Not "goes away". Russian *уйдёт* imports a destination the Dutch does not have; the lyric says *пропадёт*.
+2. **`of oyt` = "or ever", a second alternative, not a consequence.** "Pleases less" and "vanishes" are two ways the same thing can fail, not a chain. v0.3 wrongly turned them into cause and effect.
+3. **The subject is the earthly beauties, not the addressed Beauty.** In the Dutch, `Die` can grammatically agree with `Schoonheyd` itself. Reading it that way would make the most lovely Beauty capable of vanishing — which contradicts stanza IX (*Sijnder maar een schaduw van*) and the poem's whole argument. The earthly reading is adopted **as an interpretation, and it is flagged as one**; it is not something the print settles.
 
 ## Metre — measured, not asserted
 
@@ -172,7 +180,7 @@ v0.2 claimed "7–8 syllables". **That claim was false**: it had lines of 11, 12
 | 5 | 8 · 6 · 8 · 9 | 9 | 7 | 9 |
 | 6 | 8 · 8 · 8 · 8 | 6 | 10 | 8 |
 | 7 | 9 · 8 · 9 · 9 | 6 | 11 | 9 |
-| 8 | 8 · 8 · 9 · 8 | 9 | 9 | 8 |
+| 8 | 8 · 8 · 8 · 9 | 9 | 9 | 8 |
 | 9 | 9 · 6 · 9 · 7 | 8 | 9 | 8 |
 | 10 | 9 · 7 · 9 · 10 | 8 | 11 | 8 |
 
