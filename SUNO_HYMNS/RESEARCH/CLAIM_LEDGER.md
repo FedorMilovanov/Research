@@ -637,3 +637,71 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Notes:** Collated across two printings in the seventh pass: title, page range, tune line, stanza count, date and the tripled device are stable. The page images are still unviewed, so typography is unverified. The print abbreviates repeated call lines as 'etc.'; these are repeat instructions, not lacunae. Stanza I is printed in full and is the metrical model for the rest. The page carries an illustration (ill0155) that has not been viewed; no claim is made about it. Line I.7 ('Is uw costlijck leven, lieven, loven') has no expressed negation; the elliptical reading is adopted in the production package, with the 'costly' pun recorded as a secondary sense. Neither printing is a page image: disagreements between them (see CLM-DUTCH-005-VARIANTS) are the reason a page-image check is still required before any wording is called definitive.
 
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+## CLM-DUTCH-005-STANZA-3-2 — DUTCH-005: what line III.2 of the Dutch says
+
+**Claim:** In stanza III the second line reads `Na dit leven crijgelijck`, and the 2005 apparatus glosses it as *het heerlijke, eeuwige leven, dat na dit leven te verkrijgen is* — the glorious eternal life to be obtained after this life. The Russian v0.9 line «После земных невзгод» states something the print does not.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-CRIT-2005-HEERLIJCKHEYD, SRC-L-1676-HEERLIJCKHEYD-155-158
+
+**Limits / next action:** Locator: item 56, stanza III, lines 18–21, [p. 263], apparatus note 19–20; the same lines in the 1676 print, pp. 155–158. The Russian line is a translation defect, and the fix is two lines because line 2 is the rhyme partner of line 4. Options with syllable counts: `DUTCH-005_STANZA_3_2_OPTIONS.md`.
+
+## CLM-DUTCH-005-RUTGERS-1806-43 — DUTCH-005: the Rutgers reworking as hymn XLIII of 1806
+
+**Claim:** Rutgers's reworking entered the *Evangelische Gezangen* (1806) as hymn XLIII, *Zielverheffing tot Jezus*, printed on p. 82, opening «Hoog, omhoog, het hart naar boven!» and running to eight lines per stanza.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-EVANGGEZ-1806-43, SRC-L-CRIT-2005-HEERLIJCKHEYD
+
+**Limits / next action:** Read on the DBNL page of the 1806 collection, not on a page image. The eight-line shape is visible there, and it is why the "refrain" a modern ear expects is a Rutgers feature, not Lodenstein's.
+
+## CLM-DUTCH-005-STRUCTURE-SPINE — DUTCH-005: how the tripled word is distributed
+
+**Claim:** The 2005 commentary distributes the three forms: *leven* in stanzas III–VI, *lieven* in VII–IX, *loven* in X; stanza VI stands apart as an admonition to the unconverted; in the second half of every stanza three lines are repeated verbatim.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-L-CRIT-2005-HEERLIJCKHEYD
+
+**Limits / next action:** Commentary on item 56, [p. 267]. Supports two existing rules: the tripled word is the spine and never a chorus; the repeated call lines are the source's own device.
+
+**HOLDs:** RIGHTS_HOLD
+
+## CLM-DUTCH-005-TRANSMISSION-1681-1718 — DUTCH-005: reprints before the nineteenth century
+
+**Claim:** The text was reprinted as *Heemels heerlijkheids lof* in Stapel's *Lusthof der Zielen* (1681), p. 495, nr. 207, and as *Heerlykheits lof* in the *Bundeltje* of 1718, p. 230, nr. 56.
+
+**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED
+
+**Source IDs:** SRC-NL-LIEDERENBANK-9086, SRC-NL-LIEDERENBANK-INDEX
+
+**Limits / next action:** Both entries appear in the Dutch Song Database's own result rendering while the database itself returns HTTP 403. Neither volume has been opened. Status rises only after one volume is inspected or the records are opened directly.
+
+**HOLDs:** EVIDENCE_HOLD
+
+## CLM-DUTCH-005-TUNE-SHIFT — DUTCH-005: the tune direction changes between 1676 and 1718
+
+**Claim:** 1676 prints `Voyse: Un jour etc.`, 1681 `Un jour, &c.`; by 1718 the direction is Psalm 42, the 1806 hymn names its melody `Psalm 042 Datheen`, and the 1938 hymnal credits Louis Bourgeois — the composer to whom the Genevan psalm 42 melody is attributed. "Psalm 42" and "Bourgeois" therefore name one tune, not two rivals.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
+
+**Source IDs:** SRC-NL-LIEDERENBANK-9086, SRC-EVANGGEZ-1806-43, SRC-PSALMENGEZ-1938-75, SRC-GENEVE-PSAUTIER-42, SRC-L-CRIT-2005-HEERLIJCKHEYD
+
+**Limits / next action:** The 2005 apparatus, [p. 267], independently says the reworking was taken up *op de melodie van psalm 42*. This closes the former question «Bourgeois or psalm 42» as a false dichotomy and does **not** identify the 1665 tune, which stays untraced. The 1718 datum rests on the database rendering alone.
+
+**HOLDs:** EVIDENCE_HOLD
+
+## CLM-HB-1938-75-TEXT — 1938 hymnal: Gezang 75 is a three-stanza reworking
+
+**Claim:** Gezang 75 of the 1938 bundel runs to three stanzas, and its third descends from stanza X of the 1676 poem («Ah! dat aller menschen tongen» > «Och, dat aller mensen tongen»).
+
+**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED
+
+**Source IDs:** SRC-HB-1938-75-WEB, SRC-PSALMENGEZ-1938-75
+
+**Limits / next action:** Read from a public reproduction in modernised spelling; the printed bundel is protected and has not been collated. Used to describe the reworking, never as the text of this release.
+
+**HOLDs:** EVIDENCE_HOLD

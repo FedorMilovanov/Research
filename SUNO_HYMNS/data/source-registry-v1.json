@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "registryId": "SUNO-HYMNS-SOURCE-REGISTRY-V1",
-  "asOf": "2026-10-25",
+  "asOf": "2026-10-26",
   "note": "Project-local source inventory. The repository root evidence policy remains controlling; source class and operational states are separate. For a historical source served through a modern digital presentation, evidenceClass describes the underlying source when stated, while accessState and rightsState describe what is actually accessed and can be reused.",
   "fields": [
     "evidenceClass",
@@ -1105,6 +1105,108 @@
       "limits": [
         "A transcription, not a page image; typography and the illustration are still unverified.",
         "Disagreement between the two printings is itself evidence that the text needs a page-image collation before any wording is treated as definitive."
+      ]
+    },
+    {
+      "id": "SRC-EVANGGEZ-1806-43",
+      "title": "Evangelische Gezangen (1806), hymn XLIII: Zielverheffing tot Jezus — printed p. 82",
+      "url": "https://www.dbnl.org/tekst/_eva005evan01_01/_eva005evan01_01_0045.php",
+      "type": "Digital presentation of the 1806 edition of the hymnbook",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The Rutgers reworking of Heerlijckheyds Loff as hymn XLIII, its opening line, its eight-line stanza shape and its placement in the 1806 collection"
+      ],
+      "limits": [
+        "Read from the DBNL transcription of the 1806 printing, not from a page image; the stanza numbering and typography of the printed page have not been inspected."
+      ]
+    },
+    {
+      "id": "SRC-NL-LIEDERENBANK-9086",
+      "title": "Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26)",
+      "url": "https://www.liederenbank.nl/liedpresentatie.php?lan=nl&zoek=9086",
+      "type": "Catalogue record in the Dutch Song Database (Meertens Instituut / KNAW)",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "supports": [
+        "Record fields: ten stanzas, date '27. in Ougstmaand 1665', the note that the melody is not that of 'Un jour m'en allais seulette', and the witness sigla Stapel LusthofZ1681, Bundeltje1718, EvangGez1806, PsalmenGezNH1938"
+      ],
+      "limits": [
+        "The database returns HTTP 403 with a KNAW information-security notice and is offline as of 2026-10-26. The fields were read from the record's own rendering inside search results, not from an opened catalogue page. Re-check when the database returns; do not treat as inspected until then."
+      ]
+    },
+    {
+      "id": "SRC-PSALMENGEZ-1938-75",
+      "title": "Psalmen en Gezangen (Hervormde Bundel 1938), Gezang 75, p. 501, nr. 239",
+      "url": "https://www.liederenbank.nl/resultaatlijst.php?zoek=23155&actie=incipitnorm&lan=nl",
+      "type": "Reference to the printed hymnal as catalogued by the Dutch Song Database",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "supports": [
+        "Gezang 75 stands on printed p. 501 of the 1938 bundel, its incipit is «'t Oog omhoog, het hart naar boven», and the melody is credited to Louis Bourgeois"
+      ],
+      "limits": [
+        "The printed bundel has not been collated; the page number and the melody credit come from the database rendering, and the database is offline."
+      ]
+    },
+    {
+      "id": "SRC-HB-1938-75-WEB",
+      "title": "Gezang 75 — public reproduction of the 1938 text in modernised spelling",
+      "url": "https://www.online-bijbel.nl/gezang/75/",
+      "type": "Third-party web reproduction of a protected hymnal text",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the 1938 reworking runs to three stanzas and that its third stanza descends from 1676 stanza X ('Ah! dat aller menschen tongen')"
+      ],
+      "limits": [
+        "Modernised spelling and a private site: no collation, no critical apparatus, not a witness for the printed page."
+      ]
+    },
+    {
+      "id": "SRC-GENEVE-PSAUTIER-42",
+      "title": "The Genevan Psalter — the psalm 42 melody and its composers",
+      "url": "https://journals.openedition.org/chretienssocietes/2728?lang=fr",
+      "type": "Scholarly survey of the Genevan psalter (Revue Chretiens, Societes, Journal)",
+      "evidenceClass": "B1",
+      "accessState": "LINK_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the melodies for Beze's psalm paraphrases, including psalm 42 «Ainsi qu'on oit le cerf bruire», were written by Loys Bourgeois"
+      ],
+      "limits": [
+        "Seen in a search rendering while checking the Bourgeois attribution; the article itself has not been read in full, and no page is cited."
       ]
     }
   ]

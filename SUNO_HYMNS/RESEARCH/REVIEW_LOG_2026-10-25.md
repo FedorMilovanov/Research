@@ -625,3 +625,17 @@ Re-read every file touched in the last five commits, recomputed every number it 
 **What I then did wrong.** I wrote forty lines of notes about that other project into this repository — a rules sheet, a copy of an instruction that belongs to it, a cleanup prompt, and a cross-channel comparison table. All of it was about work that is not done here, and it created a second home for rules that already have one. Removed on 2026-10-26 at the owner's direction.
 
 **What stays.** One rule, in `projects/lord-god-strength/RULES.md` § 10: a negative claim needs a re-checkable recipe, not a memory. Nothing else about that project belongs in this repository.
+
+# Twenty-ninth pass — 2026-10-26 (transmission and the melody that moved)
+
+**What was open.** The text's route after 1676 was known in outline only, the melody question had been left as "Bourgeois or psalm 42", and stanza 3 line 2 was flagged as a defect without a documented reading. All three are now closed or documented.
+
+**The chain, with locators.** 1676 print pp. 155–158, nr. 51 (`Voyse: Un jour etc.`) → Stapel, *Lusthof der Zielen* 1681, p. 495, nr. 207, *Heemels heerlijkheids lof*, tune still `Un jour` → *Bundeltje* 1718, p. 230, nr. 56, *Heerlykheits lof*, tune **Psalm 42** → *Evangelische Gezangen* 1806, XLIII, p. 82, *Zielverheffing tot Jezus*, opening «Hoog, omhoog, het hart naar boven!», eight lines per stanza → 1938 bundel, Gezang 75, p. 501, nr. 239, melody credited to **Bourgeois**.
+
+**The question that dissolved.** The 2005 apparatus says the Rutgers reworking circulated *op de melodie van psalm 42*; the 1938 hymnal credits Louis Bourgeois; Bourgeois is the composer to whom the Genevan psalm 42 melody is attributed. So the two names are one tune. The former open defect "Bourgeois vs psalm 42" was not a contradiction but a missing link, and the copy now states the shift instead of denying the connection. The 1665 tune remains untraced — the clarification does not weaken that.
+
+**The defect that got a reading.** `Na dit leven crijgelijck` is glossed by the same edition as the glorious eternal life *to be obtained after this life*. The Russian «После земных невзгод» says "after earthly hardships", which the print does not say and which makes the stanza console instead of point forward. Three replacements are counted and written into `DUTCH-005_STANZA_3_2_OPTIONS.md`; the lyric is untouched until the owner chooses.
+
+**An honest access failure.** The Dutch Song Database is offline: HTTP 403 with a KNAW information-security notice. Its records were readable only as the database's own rendering inside search results, so the 1681 and 1718 reprints are marked `REPORTED_NOT_INDEPENDENTLY_VERIFIED` and carry `EVIDENCE_HOLD`. Nothing in the copy rests on them alone — the 1718 tune shift and the 1806 hymn are separate, and the 1806 page was read in full.
+
+**A self-inflicted defect caught in the same pass.** The new file index in `RESEARCH/README.md` first listed a transcription file that does not exist. Removed before commit; the audit script that checks relative links and orphaned files now runs over the whole lane.

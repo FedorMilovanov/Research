@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalogId": "SUNO-HYMNS-TRACK-CATALOG-V1",
-  "asOf": "2026-10-25",
+  "asOf": "2026-10-26",
   "scope": "Project-local inventory based on conversation records; not an exhaustive scan of the owner's computer, local storage or public channels.",
   "stateBoundary": "Production state and public publication status are separate. This catalog does not replace the root Research evidence policy.",
   "statusVocabulary": {
@@ -388,7 +388,7 @@
         "1938 Hervormde Bundel carries a modernised reworking ('t Oog omhoog, het hart naar boven!) which is a different object and is NOT used here",
         "Modern Russian literary/song adaptation with rhymed text, draft v0.8, authored in this repository"
       ],
-      "tuneDirection": "Voyse: Un jour &c. — a designation the modern editors could not resolve; melody untraced, no notation held",
+      "tuneDirection": "Voyse: Un jour &c. (1676, 1681) — a designation the modern editors could not resolve: melody untraced, no notation held. The direction changes to Psalm 42 by 1718, and the 1806 hymn names its melody 'Psalm 042 Datheen'; the 1938 hymnal credits Louis Bourgeois, whose Genevan psalm 42 melody that is. The 1665 tune is still unidentified (CLM-DUTCH-005-TUNE, CLM-DUTCH-005-TUNE-SHIFT).",
       "structure": {
         "stanzas": 10,
         "printedLinesPerStanza": 9,
@@ -480,7 +480,12 @@
         "SRC-NL-LIEDERENBANK-INDEX",
         "SRC-L-1676",
         "SRC-L-1676-COLOPHON",
-        "SRC-L-UYT-1727-HEERLIJCKHEYD"
+        "SRC-L-UYT-1727-HEERLIJCKHEYD",
+        "SRC-EVANGGEZ-1806-43",
+        "SRC-PSALMENGEZ-1938-75",
+        "SRC-NL-LIEDERENBANK-9086",
+        "SRC-GENEVE-PSAUTIER-42",
+        "SRC-HB-1938-75-WEB"
       ],
       "claimIds": [
         "CLM-HEERLIJCKHEYD-IDENTITY",
@@ -490,16 +495,23 @@
         "CLM-DUTCH-005-ADAPTATION",
         "CLM-ASSET-STATE",
         "CLM-SUNO-PROMPTS",
-        "CLM-DUTCH-005-VARIANTS"
+        "CLM-DUTCH-005-VARIANTS",
+        "CLM-DUTCH-005-STANZA-3-2",
+        "CLM-DUTCH-005-TRANSMISSION-1681-1718",
+        "CLM-DUTCH-005-TUNE-SHIFT",
+        "CLM-DUTCH-005-RUTGERS-1806-43",
+        "CLM-DUTCH-005-STRUCTURE-SPINE",
+        "CLM-HB-1938-75-TEXT"
       ],
       "qaStatus": "OPEN",
       "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.', on pp. 155-158 in BOTH the 1676 first edition and the 1727 ninth edition. The two printings agree except for spelling and four variants recorded in the collation. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X); it is not a refrain. The 1938 reworking is a separate, protected object and is not used. Package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md; lyric: SUNO/DUTCH-005_LYRICS.md; style: SUNO/DUTCH-005_STYLE.md.",
       "rightsNote": "1676 poem public domain in substance; the DBNL transcription and the 2005 critical edition are separate objects and are not reproduced. The 1938 reworking is PERMISSION_REQUIRED and is not used.",
       "openChecks": [
+        "Owner decides stanza 3, line 2: the Dutch reads 'Na dit leven crijgelijck' (the life to be obtained after this life), the Russian v0.9 says «После земных невзгод». Three options with syllable counts: RESEARCH/DUTCH-005_STANZA_3_2_OPTIONS.md.",
         "Owner line-by-line revision of the Russian lyric v0.3 (SUNO/DUTCH-005_LYRICS.md); freeze as v1.0 and regenerate the SUNO-ready file from it.",
         "Inspect the 1676 page images of printed pp. 155-158 to move the text from transcription-plus-collation to print-verified; view the illustration ill0155.",
         "Owner chooses one of the five style directions (SUNO/DUTCH-005_STYLE.md A-E) and records the decision.",
-        "Retry the Dutch Song Database for 'Un jour &c.' and for lode002uyt_01_0047; no melody claim until then.",
+        "Dutch Song Database is offline (HTTP 403, KNAW notice) as of 2026-10-26; re-check record 9086 when it returns and treat its fields as uninspected until then.",
         "Record the prompt revision hash before submission and the file's own duration and metadata after any generation.",
         "If a generation truncates, do NOT cut stanzas: regenerate with 'all ten verses, in order, no cuts', or split the release at verses 1-5 / 6-10."
       ],

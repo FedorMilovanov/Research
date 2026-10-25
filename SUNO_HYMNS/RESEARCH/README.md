@@ -55,6 +55,28 @@ Four works are in `DUTCH_HYMN_CATALOG.md`. DUTCH-001/002/003 have prior research
 
 Candidates in `DUTCH_HYMN_BACKLOG.md` are unrecorded as produced in the current context — which is not proof that the owner never made them elsewhere. The backlog now also carries activation status: `DUTCH-CAND-002` became DUTCH-004.
 
+## File index — what to open for what
+
+| File | Use it for |
+|---|---|
+| `TRANSCRIPTION_DUTCH-005_1676.md` | the working transcription against which every lyric edit is checked |
+| `DUTCH-005_TRANSMISSION_AND_TUNE.md` | the chain 1676 → 1681 → 1718 → 1806 → 1938, and why "Bourgeois" and "psalm 42" are one melody |
+| `DUTCH-005_STANZA_3_2_OPTIONS.md` | the open defect in stanza 3 line 2, with three counted options |
+| `DUTCH-005_SOURCE_RUN_50PLUS.md` | hymn and transmission addresses with an honest status each |
+| `DUTCH-005_SINGING_PRACTICE_SOURCES.md` | church singing, the organ ban, the `voorzanger`, the `gezelschappen` |
+| `RHYME_PLAN_DUTCH-005.md` | what the Dutch rhyme does and what a rhymed Russian costs |
+| `CLAIM_LEDGER.md` | every historical claim, its status, its sources, its limits |
+| `SOURCE_REGISTER.md` | what each source is and what it cannot support |
+| `DOSSIER_DUTCH-001…`, `DOSSIER_DUTCH-002…`, `DOSSIER_DUTCH-003…`, `DOSSIER_HERT_STERCKTE_I_II.md` | per-work dossiers |
+| `CANDIDATE_DUTCH-004_…`, `CANDIDATE_DUTCH-CAND-021_…` | activation dossiers for works that became DUTCH-004 and DUTCH-005 |
+| `AUTHOR_JODOCUS_VAN_LODENSTEIN.md`, `AUTHOR_ABRAHAM_RUTGERS.md`, `AUTHOR_JACOBUS_REVIUS.md` | author files: dates, roles, what is and is not known |
+| `DUTCH_HYMN_CATALOG.md`, `DUTCH_HYMN_BACKLOG.md` | what is active and what is only a candidate |
+| `DUTCH_REFORMED_HYMNODY.md`, `GENRE_AND_CLASSIFICATION.md` | the wider history and the genre vocabulary |
+| `COLLATION_GEZANG205_THREE_WAY.md` | the three-way collation behind DUTCH-002 |
+| `AUDIT_2026-10-25_PASS4.md` | what the fourth pass audited and what it could not close |
+| `REVIEW_LOG_2026-10-25.md` | what I got wrong, pass by pass |
+| `LESSONS_AND_GUARDS.md` | the rules that came out of those failures |
+
 ## Two method notes learned the hard way
 
 1. **DBNL slug numbers are not page numbers.** In a `lode002uyt_01_01_00NN.php` URL, `00NN` is a sequential chunk index: slug `0036` shows printed pp. 74–75, `0039` shows pp. 82–84, `0084` shows p. 230. The colophon cites printed pages, so always cite the `[pagina N]` bracket and the poem title. See `CLM-DBNL-SLUG-TRAP`.
