@@ -689,6 +689,132 @@ shews that the people of God are of the lowest account among men, and the off-sc
 содержательно. Остались три: «Delight in Prayer» (`1:5`), «The Sins of the Regenerate» (`1:8`),
 «The Pardon of Sin» (`1:9` с подузлами `1:9.1`–`1:9.5`). `LOCATOR_HOLD`.
 
+### 0I. Три последних дискурса *Supplement* 1683: «Delight in Prayer», «Sins of the Regenerate», «Pardon of Sin» (добавлено 2026-10-25)
+
+Этим заходом отдел **завершил чтение всех восьми дискурсов второго тома**. Ниже — три оставшихся.
+
+#### 0I.1. «A DISCOURSE OF Delight in Prayer» — Пс. 36:4, стр. 53–63, 6 чанков, 2 сноски
+
+> ### A DISCOURSE OF Delight in Prayer.
+>
+> **Psal. 37.4.** Delight thy self also in the Lord, and he shall give thee the desires of thy heart.
+
+**Биографическое ядро — вводный разбор псалма.** Чарнок берёт Пс. 36:1 («Fret not thy self because of
+evil doers») и даёт **четырёхкратный глосс**, который читается как обращение к его собственной
+пастве под действием Clarendon Code:
+
+> «1. Do not envy them. Be not troubled at their prosperity. 2. Do not imitate them. Be not provoked
+> by their Glow-worm happiness, to practice the same wickedness to arrive to the same prosperity.
+> 3. Be not sinfully impatient and quarrel, not with God, because he hath not by his providence
+> allowed thee the same measures of prosperity in the world… 4. **Condemn not the way of Piety and
+> Religion wherein thou art. Think not the worse of thy Profession, because it is attended with
+> Affliction.**»
+
+**Доктрина (дословно):** «Delight in God, in seeking him only, procures gracious answers; or, without
+chearful prayers, we cannot have gracious answers.»
+
+**Афоризмы, годные для эпической биографии:**
+
+> «**Joy is the tuning the Soul.** The command to re∣joyce precedes the command to pray, 1 Thes.
+> 5.16, 17. Rejoyce evermore, pray without ceasing. **Delight makes the melody, prayer else will be
+> but a harsh sound. God accepts the heart only, when it is a gift given, not forc'd. Delight is the
+> marrow of Religion.**»
+
+> «Faith is the bucket, but joy and love are the hands that move it. They are the Hur and Aaron that
+> hold up the hands of this Moses.»
+
+> «Though there be a kind of union by con∣templation, yet **the real union is by affection**.»
+
+> «**God casts off none that affectionately clasp about his Throne.**»
+
+Практический совет — редкий случай, когда Чарнок говорит о режиме: «Chuse the time when your hearts
+are most revived. Observe when God sends an invita∣tion, and hoist up the sails when the wind begins
+to blow.»
+
+**Аппарат:** сноска 1.1 = Суд. 13:20 (ангел восходит в пламени); сноска 1.2 = «**Reynolds.**» — новое
+имя (по-видимому, Edward Reynolds, епископ Нориджский, пуританин; окончательно не идентифицирован).
+`LOCATOR_HOLD`.
+
+#### 0I.2. «A DISCOURSE OF THE Sins of the Regenerate» — 1 Ин. 3:9, стр. 87–~99, 11 чанков
+
+> Whosoever is born of God doth not commit sin, for his Seed remaineth in him, and he cannot sin,
+> because he is born of God.
+
+Чарнок даёт **трёхчастное чтение «не может грешить»** — и это образец его диалектического метода:
+
+1. «He ought not to sin. Cannot indeed is sometimes taken for ought not; as Acts 4.20… **Non possumus
+   quod non jure possumus**; what we cannot honourably do, we are said not to be able to do, Mark
+   6.5. **He could there do no mighty work.** Christ had natural ability to do mighty works there, but
+   mo∣rally he could not, honourably he could not, because of their unbelief.»
+2. «He cannot sin so easily… there is inchoativè, an impossibility of sinning, which shall hereafter
+   be perfected; Not a simple impossibility, but **secundum quid**.»
+3. «He cannot sin, in sensu formali, as he is regenerate, or **ex vi vitalis nativitatis**. Grace
+   can∣not sin, because it can do nothing but what pertains to the nature of it; as **the heat cannot
+   cool, unrighteousness cannot do good**.»
+
+**Ключевая формула (дословно):** «**Regeneration gives a man no advantage to sin, no exter∣nal
+licence, no internal liberty or ability to sin.**» — прямая полемика с антиномианским выводом, и
+показательно, что Чарнок считает нужным её опровергать.
+
+#### 0I.3. «A DISCOURSE OF The Pardon of Sin» — Пс. 31:1, 2, стр. 101–~125, 12 чанков + 5 подузлов (`1:9.1`–`1:9.5`)
+
+> Blessed is he whose transgression is forgiven, whose sin is covered. Blessed is the man unto whom
+> the Lord imputes not iniquity.
+
+Чарнок разбирает **три еврейских слова о грехе и три о прощении** («Three words there are to discover
+the nature of sin; and three words to discover the nature of pardon»), и приписывает псалму
+искупительному дню: «This Psalm, **as Grotius thinks**, was made to be sung upon the Annual day of
+the Jewish Expiation, when a general confession of their sins was made.»
+
+**Лучшие места.**
+
+> «**God may after pardon read our sins in the book of his Omniscience, but not charge them upon us at
+> the bar of his Justice.**»
+
+> «A crossed book will not stand good in law, because the crossing of the book implies the Satisfaction
+> of the debt.»
+
+> «**Blots, not razeth. He engraves them not upon marble, he writes them not with a pen of Iron, or
+> point of a diamond; writing upon wax is easily made plain.**»
+
+> «one blow would obliterate a great deal of writing upon wax. **Sins, that have been contracting many
+> years, when God pardons he blots out in a moment.**»
+
+**Аппарат:** Гроций (о дате псалма); **Menochius** (Иаков Меноккио, итальянский гебраист) — о
+еврейском письме на воске; Мих. 7:19; Ис. 43:25; Исх. 34:7; Рим. 4:7.
+
+---
+
+### 0J. Итог по *Supplement* 1683: все восемь дискурсов прочитаны (добавлено 2026-10-25)
+
+| Узел | Дискурс | Текст | Страницы | Разделы тома 04 |
+|---|---|---|---|---|
+| `1:2` | The Sinfulness and Cure OF THOUGHTS | Быт. 6:5 | 1–19 | §0A.1 (аппарат: Маймонид, Декарт) |
+| `1:3` | The CHURCHES STABILITY | Пс. 87:5 | 20–39 | §0G |
+| `1:4` | The Fifth of November | Исх. 15:9–10 | 42–55 | §0E |
+| `1:5` | Delight in Prayer | Пс. 36:4 | 53–63 | §0I.1 |
+| `1:6` | Mourning for other Mens Sins | Иез. 9:4 | 64–~75 | §0H |
+| `1:7` | The Comfort of Child-bearing Women | 1 Тим. 2:15 | 76–~86 | §0F |
+| `1:8` | The Sins of the Regenerate | 1 Ин. 3:9 | 87–~99 | §0I.2 |
+| `1:9` | The Pardon of Sin | Пс. 31:1–2 | 101–~125 | §0I.3 |
+
+**Что это меняет в картине.** Второй том Чарнока — не «приложение» к фолианту об атрибутах, а
+**самостоятельный пастырский корпус**: молитва, плач о грехах времени, роды, грехи возрождённых,
+прощение. Ни один из этих предметов не входит в тему атрибутов. Отдел фиксирует: **1683 год даёт
+другого Чарнока, чем 1682-й** — не систематического богослова, а пастыря, который пишет о
+конкретных случаях человеческой жизни. Для «мощной эпической биографии» это означает, что
+материал для второй половины книги (после 1675 года) лежит не в фолианте, а здесь.
+
+**Новые именованные авторы, добавленные за чтение восьми дискурсов:** Клод де Дьё, Кокцей (×3),
+Лайтфут (×3), Турретин (×2), Гроций (×2), Эколампадий, Фоссий, Аристотель, Прозер Аквитанский,
+Августин, Павсаний, Rivet, Menochius, Reynolds, Trap, Broughton, «Decay of Christian Piety».
+Плюс уже известные: Маймонид (×3), Декарт, Мор (×2), Drexel, Fotherby, Fuller's *Pisgah*, Sabunde,
+Barlow, *Pugio Fidei*, Cocceius, Camero, Josephus, Herodotus/Herodian, Pliny (в цитате), Origen
+(в опровержении), Calvin (в согласии).
+
+`LOCATOR_HOLD` остаётся только по непрочитанным подузлам `1:9.1`–`1:9.5` (внутреннее деление
+дискурса о прощении) и по полной сверке текстов со снимками страниц.
+
 ## 1. Проверяемый вопрос
 
 Каким человеком был Чарнок как проповедник, друг, ученик и богослов — и на каких свидетельствах
