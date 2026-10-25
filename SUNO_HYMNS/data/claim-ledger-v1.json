@@ -779,15 +779,17 @@
     {
       "id": "CLM-DUTCH-005-TRANSMISSION-1681-1718",
       "topic": "DUTCH-005: reprints between the first edition and the nineteenth century",
-      "claim": "The text was reprinted as 'Heemels heerlijkheids lof' in Hendrick Stapel's Lusthof der Zielen (1681), p. 495, nr. 207, and as 'Heerlykheits lof' in the Bundeltje of 1718, p. 230, nr. 56.",
-      "claimStatus": "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "claim": "The text was reprinted as 'Heemels heerlijkheids lof' in Claes Stapel's Lust-hof der zielen (Alkmaar, 1681), printed p. 495, under the tune direction 'Voiz: Un jour, &c.', and — per the Dutch Song Database's record rendering — as 'Heerlykheits lof' in the Bundeltje of 1718, p. 230, nr. 56.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
       "sourceIds": [
+        "SRC-STAPEL-1681-LUSTHOF",
         "SRC-NL-LIEDERENBANK-9086",
         "SRC-NL-LIEDERENBANK-INDEX"
       ],
       "notes": [
-        "Both entries appear in the Dutch Song Database's own result rendering while the database itself returns HTTP 403. Neither the 1681 volume nor the 1718 Bundeltje has been opened.",
-        "Status may rise to SUPPORTED_WITH_SCOPE_LIMITS only after one of the two volumes is inspected, or after the database is back and the records are opened directly."
+        "The 1681 reprint was verified directly on DBNL: heading, tune direction, incipit and printed page 495. The DBNL transcription interleaves the two printed columns, so the stanza text is not usable from it without the page image.",
+        "The 1718 Bundeltje datum still rests on the database rendering only; the database returns HTTP 403 and is offline. That half of the claim keeps an EVIDENCE_HOLD.",
+        "The anthology's editor is Claes Stapel; earlier notes and the published copy wrongly called him Hendrick."
       ],
       "holds": [
         "EVIDENCE_HOLD"
@@ -803,12 +805,14 @@
         "SRC-EVANGGEZ-1806-43",
         "SRC-PSALMENGEZ-1938-75",
         "SRC-GENEVE-PSAUTIER-42",
-        "SRC-L-CRIT-2005-HEERLIJCKHEYD"
+        "SRC-L-CRIT-2005-HEERLIJCKHEYD",
+        "SRC-GEZANGBOEK-PS42"
       ],
       "notes": [
         "The 2005 apparatus, [p. 267], states independently that the Rutgers reworking was taken up 'op de melodie van psalm 42' in several hymnbooks.",
         "This closes the former open question 'Bourgeois or psalm 42' as a false dichotomy, and does NOT identify the 1665 tune: the 1676 direction remains untraced.",
-        "The 1718 datum rests on the database rendering only, hence the scope limit."
+        "The 1718 datum rests on the database rendering only, hence the scope limit.",
+        "Second, independent support for the melody identity: gezangboek.nl lists 'Hoog omhoog, het hart naar boven' among the hymns sung to the psalm 42 melody, next to Datheen's paraphrase."
       ],
       "holds": [
         "EVIDENCE_HOLD"

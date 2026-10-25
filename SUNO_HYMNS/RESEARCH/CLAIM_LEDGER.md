@@ -672,13 +672,13 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 
 ## CLM-DUTCH-005-TRANSMISSION-1681-1718 — DUTCH-005: reprints before the nineteenth century
 
-**Claim:** The text was reprinted as *Heemels heerlijkheids lof* in Stapel's *Lusthof der Zielen* (1681), p. 495, nr. 207, and as *Heerlykheits lof* in the *Bundeltje* of 1718, p. 230, nr. 56.
+**Claim (revised 2026-10-26):** The text was reprinted as *Heemels heerlijkheids lof* in **Claes Stapel**'s *Lust-hof der zielen* (Alkmaar, 1681), printed p. 495, under the tune direction `Voiz: Un jour, &c.`, and — per the Dutch Song Database record rendering — as *Heerlykheits lof* in the *Bundeltje* of 1718, p. 230, nr. 56.
 
-**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS
 
-**Source IDs:** SRC-NL-LIEDERENBANK-9086, SRC-NL-LIEDERENBANK-INDEX
+**Source IDs:** SRC-STAPEL-1681-LUSTHOF, SRC-NL-LIEDERENBANK-9086, SRC-NL-LIEDERENBANK-INDEX
 
-**Limits / next action:** Both entries appear in the Dutch Song Database's own result rendering while the database itself returns HTTP 403. Neither volume has been opened. Status rises only after one volume is inspected or the records are opened directly.
+**Limits / next action:** The **1681** half is verified directly on DBNL: heading, tune direction, incipit, printed page 495. The DBNL transcription of that two-column anthology interleaves the columns, so no stanza text may be quoted from it without the page image. The **1718** half still rests on the database rendering, and the database returns HTTP 403 — that half keeps `EVIDENCE_HOLD`. The anthology's editor is **Claes** Stapel; earlier notes and the copy called him Hendrick, which was wrong.
 
 **HOLDs:** EVIDENCE_HOLD
 

@@ -10,7 +10,7 @@
 |---|---|---|---|---|
 | 1676 | *Uyt-spanningen*, Utrecht, Willem Clerck, pp. 155–158, nr. 51 | *Heerlijckheyds Loff*; «Hoog! om hoog! mijn siel / na boven!» | `Voyse: Un jour etc.` | DBNL diplomatic text of the 1676 print; 2005 edition p. 263 |
 | 1679 | second Clerck edition, preface | — | — | 2nd edition; note the preface explains the first impression had sold out (separate claim, already in the register) |
-| 1681 | Hendrick Stapel, *Lusthof der Zielen*, p. 495, nr. 207 | *Heemels heerlijkheids lof* | `Un jour, &c.` | Dutch Song Database record rendering (see § 4 on access) |
+| 1681 | **Claes** Stapel, *Lust-hof der zielen*, Alkmaar, printed p. 495 | *Heemels heerlijkheids lof* | `Voiz: Un jour, &c.` | **DBNL, read directly 2026-10-26** (heading, incipit, page) |
 | 1718 | *Bundeltje*, p. 230, nr. 56 | *Heerlykheits lof* | **Psalm 42** | same |
 | 1806 | *Evangelische Gezangen*, XLIII, p. 82 | *Zielverheffing tot Jezus*; «Hoog, omhoog, het hart naar boven!» | melody named `Psalm 042 Datheen` | DBNL p. 82 read in full |
 | 1938 | *Psalmen en Gezangen*, Gezang 75, p. 501, nr. 239 | «'t Oog omhoog, het hart naar boven» | melody credited **Bourgeois, Louis** | database rendering; text also in a public reproduction |

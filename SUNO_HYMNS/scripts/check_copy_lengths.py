@@ -113,6 +113,14 @@ def main() -> int:
     tg_len = len(telegram_visible())
 
     print(f"description: {desc} characters")
+    margin = re.search(r"до лимита (\d+) остаётся (\d+)", yt)
+    if margin:
+        limit, stated = int(margin.group(1)), int(margin.group(2))
+        if limit - desc != stated:
+            problems.append(
+                f"DUTCH-005_YOUTUBE.md: margin to the {limit}-character limit is stated as {stated}, it is {limit - desc}"
+            )
+
     check_quoted_description_lengths(desc, problems)
     for value in claimed(
         [r"(\d+)\s*знак\w*, до лимита 5000", r"- \[x\] (\d+) знак"],

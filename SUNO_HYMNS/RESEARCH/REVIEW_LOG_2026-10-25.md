@@ -649,3 +649,11 @@ Re-read every file touched in the last five commits, recomputed every number it 
 **A stale number found in two more files.** `SUNO_HYMNS/README.md` and `HANDOFF_FOR_NEXT_AGENT.md` still quoted 4483 characters for the description. Fixed, and the gate now checks every document that describes the *present* state against the measured block, with the review log exempt because it records the past. Tested by falsifying the number in `README.md`: the gate fails, and fails with the file and line.
 
 **Method note.** Two passes in a row found stale numbers in prose that no gate covered. The pattern is general: **a number that is quoted anywhere must be owned by a gate, or it will drift** — including numbers in the files an agent reads first.
+
+# Thirty-first pass — 2026-10-26 (a writer for the numbers, and Stapel's first name)
+
+**The recurring defect, fixed at the root.** Three passes in a row found stale copy lengths in prose. Editing the copy and editing the sentence about the copy are two different actions, and a human or an agent will always do the first and forget the second. So the second is now a script: `sync_copy_counts.py` measures the blocks and rewrites every document that quotes them, adding the margin to the 5000-character limit and the right Russian plural form; `check_copy_lengths.py` fails on any document that still quotes an old number, and now also on a wrong margin. Both directions tested by falsifying a number.
+
+**A name was wrong in print.** The 1681 anthology is by **Claes** Stapel, not Hendrick Stapel. Found by opening the DBNL text of *Het lust-hof der zielen* (Alkmaar, 1681) instead of trusting the catalogue siglum: printed p. 495 carries the heading "Heemels heerlijkheids lof. Voiz: Un jour, &c." and the incipit. The 1681 half of the transmission claim is now verified directly and has left `EVIDENCE_HOLD`; the 1718 half stays there, because that volume has still not been opened.
+
+**A caution recorded with the find.** The DBNL transcription of that anthology interleaves its two printed columns, so the stanza text cannot be quoted from it without the page image. Heading, tune direction, incipit and page number are safe; the rest is not.

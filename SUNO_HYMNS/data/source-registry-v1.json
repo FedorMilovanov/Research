@@ -1226,6 +1226,47 @@
       "limits": [
         "Copyrighted apparatus: paraphrased, not quoted at length. Identifies the tune that our poem does NOT use — it says nothing about what our poem's own tune was."
       ]
+    },
+    {
+      "id": "SRC-STAPEL-1681-LUSTHOF",
+      "title": "Claes Stapel, Het lust-hof der zielen (Alkmaar: Jacob Pietersz. Moerbeek, 1681) — the reprint at printed p. 495",
+      "url": "https://www.dbnl.org/tekst/stap007lust01_01/",
+      "type": "Digital diplomatic presentation of the 1681 anthology",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the poem was reprinted in 1681 by Claes Stapel on printed p. 495 under the heading 'Heemels heerlijkheids lof. Voiz: Un jour, &c.', with the incipit 'Hoog! om hoog! mijn ziel naa booven'"
+      ],
+      "limits": [
+        "The DBNL transcription of this two-column anthology interleaves the columns, so only the heading, the tune direction, the incipit and the page number can be relied on until the page image is seen.",
+        "The editor of the anthology is Claes Stapel, not Hendrick Stapel: the earlier research and the copy carried the wrong first name."
+      ]
+    },
+    {
+      "id": "SRC-GEZANGBOEK-PS42",
+      "title": "gezangboek.nl — Psalm 42 page listing the hymns sung to that melody",
+      "url": "https://www.gezangboek.nl/Psalm42.html",
+      "type": "Private reference site mapping hymns to melodies",
+      "evidenceClass": "C",
+      "accessState": "LINK_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Independent support for the melody identity: 'Hoog omhoog, het hart naar boven' (Lodenstein) is listed among the hymns sung to the psalm 42 melody, together with Datheen's 'Als een hert gejaagd, o Heere'"
+      ],
+      "limits": [
+        "A hobby reference site, seen through a search rendering, not opened; secondary and not citable for anything but the association itself."
+      ]
     }
   ]
 }
