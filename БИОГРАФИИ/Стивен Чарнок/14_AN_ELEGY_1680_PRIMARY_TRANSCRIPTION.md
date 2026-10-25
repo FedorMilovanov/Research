@@ -229,6 +229,73 @@ His Kingdom Ruleth over all.»** — это тот же стих, что тек�
 текст. Это важно для понимания архитектуры: Чарнок строил серию **парами** — доктринальный дискурс и
 его практическое применение.
 
+### 4B. Последняя проповедь Чарнока — чтение заключения (добавлено 2026-10-25)
+
+Дискурс «A DISCOURSE UPON GODS Patience» (Наум 1:3) занимает стр. **787–827** фолианта 1682; узел
+`1:17` содержит 23 чанка. Прочитаны начало (стр. 787–788), практическая часть (стр. 824) и
+**заключение (стр. 827)**. Ниже — дословные passages, которые для «мощной эпической биографии»
+являются strongest material: это **последние слова Чарнока в печати**.
+
+**Заключительная фраза последней проповеди Чарнока (стр. 827, дословно):**
+
+> To Conclude, as **Patience is Gods perfection, so it is the accomplishment of the Soul**. And as
+> his slowness to anger argues the greatness of his power over himself, so **an unwillingness to
+> revenge, is a sign of a power over our selves, which is more noble than to be a Monarch over
+> others**.
+
+**Непосредственно перед заключением:**
+
+> But to be Patient, **is to be divine**, and to shew our selves acquainted with the disposition of
+> God. Be you therefore perfect, as your heavenly father is perfect. Matth. 5.48.
+
+> When God hath his Glory every day bespattered, yet he **keeps his Sword in his sheath**; what a wo
+> would it be to the World, if he drew it upon every affront?
+
+> If God were not slow to wrath, a sinful World had been long ago torn up from the foundation. And if
+> Revenge should be exercised by all men against their Enemies, what man should have been alive,
+> since there is not a man without an Enemy?
+
+**Из практической части (стр. 824) — о долготерпении как предмете небесной хвалы:**
+
+> though patience shall cease as to its exercise after the consummation of the World, it shall not
+> cease from receiving the acknowledgments, of what it did, when it traversed the stage of this
+> Earth.
+>
+> long-suffering is one of his Divine Titles, **a letter in his name**, as well as Merciful, and
+> Gracious, Abundant in Goodness and Truth.
+>
+> If mercy will be prais'd there, **that which began the Alphabet of it, cannot be forgot**.
+>
+> Admire Christ too, who sued out your repreive upon the account of his merit. As mercy acts not
+> upon any but in Christ, so neither had patience born with any but in Christ.
+
+**Четыре побуждения благодарить за терпение (стр. 824):**
+
+1. «The **multitude** of our provocations.» — «Are not all our offences as many, as their have been
+   minutes in our lives? All the moments of our continuance in the World, have been moments of his
+   Patience, and our ingratitude.» — «Oh admirable patience! that would bear with me under so many,
+   while he would not bear with the sinning Angels for one.»
+2. «Consider **how mean things we are**, who have provoked him.» — «What is man, that thou art
+   mindful of him? Psal: 8.» — «Man is Adam, Earth from his Earthly Original, and Enosh incurable
+   from his corruption.»
+3. «Consider **who it is**, that is thus patient.» — «He it is that with one breath, could turn
+   Heaven and Earth, and all the inhabitants of both into nothing.» — «his patience for a minute
+   transcends the patience of all creatures from the Creation to the Dissolution of the World».
+4. «Consider **how long** he hath forborn his anger.» — «A reprieve for a Week or a Month is
+   accounted a great favour in Civil States… But how great a favour is it to be reprieved 30 years
+   for many offences, every one of which deserves death more at the hands of God…»
+
+**Что это даёт биографии.** Последнее, что Чарнок сказал с кафедры и что попало в печать, — не
+доктринальный трактат и не полемика, а **увещание благодарить Бога за медленность гнева**, с
+заключением, что терпение есть «accomplishment of the Soul», а нежелание мстить — «power over our
+selves… more noble than to be a Monarch over others». Для биографии человека, которого элегия
+описывает как «taken away when Preaching upon this Subject», это **идеальная closing note**: он
+остановился на атрибуте, который сам же назвал завершением души.
+
+**Ограничение.** Прочитаны начало, практическая часть и заключение дискурса; середина (стр. 789–823)
+не читалась. `LOCATOR_HOLD` по неиспользованным страницам сохраняется. Эдикторы 1682 сами
+предупреждают: «had he lived to Transcribe his own Sermons, he would have altered» (том 08 §2A).
+
 ### Сноски (дословно, в порядке появления)
 
 | Ссылка | Текст сноски | К чему относится |

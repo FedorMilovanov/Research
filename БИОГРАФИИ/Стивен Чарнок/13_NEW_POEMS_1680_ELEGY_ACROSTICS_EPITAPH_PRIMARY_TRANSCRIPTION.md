@@ -35,6 +35,10 @@ STEPHEN и CHARNOCK** и эпитафию (12 строк). Он подтверж
    Charnock preacht the last» — **богословное терпение / медленность гнева Божьего**.
 4. **Отрицательный факт о рождении**: «His Birth and his Beginning **scarcely known**» — в 1680
    году сочувствующий поэт открыто пишет, что данных о рождении Чарнока у него нет.
+5. **Жанровая модель найдена**: памфлет о Christopher Fowler 1677 года (`A37311`, Wing D501A) имеет
+   **ту же структуру** — элегия + акростих на имя (CHRISTOPHER) + акростих на фамилию (FOWLER) +
+   эпитафия — и те же топы («Art thou gone too… Who will be left on Earth t' supply their room?»).
+   *New Poems* — произведение в традиции, а не уникальный порыв. См. §4.2.
 
 Плюс формальное наблюдение: в 1680 году имя Чарнока впервые было напечатано **акростихом**.
 
@@ -288,7 +292,98 @@ Christopher Fowler'ом. Проверяемые шаги — §7.
 (совместное пасторство с Watson'ом в Crosby Hall с 1675). Отдел **не склеивает** эти две версии
 молчаливо. Зафиксировано как отдельная коллизия — см. §6.
 
-### 4.2. Причина ухода из Ирландии
+### 4.2. Жанровая модель: памфлет о Christopher Fowler 1677 года (добавлено 2026-10-25)
+
+Пока идёт идентификация «Fowler'а» (§4.1), отдел получил **два contemporaneous печатных объекта о
+Christopher Fowler**, и один из них оказался **жанровой моделью** *New Poems*.
+
+**`A37311.0001.001`** — *Death and the grave, without either sting or victory, or, A few Lines not
+without Reason, shewing to the World something of the worth of that Able and Humble Minister of the
+Gospel Mr. Christopher Fowler, who departed this Life upon the 15. of January 1677/6.* By **«one
+who was brought to hear him through Lying Reports»**. London: [s.n.], 1677. Wing **D501A**.
+**Полный текст получен, CC0 1.0.**
+
+**`B03233.0001.001`** — *An elegy on the learned and zealous minister of the Gospel, Mr. Christopher
+Fowler, who departed this life on Monday the 15th of January, 1676/7.* London: [s.n.], printed in
+the year 1677. Wing **E420**. **Полный текст получен, CC0 1.0.**
+
+**Структурное совпадение (проверено вычислительно).**
+
+| Элемент | Памфлет о Fowler, 1677 (`A37311`) | *New Poems* о Чарноке, 1680 (`A52960`) |
+|---|---|---|
+| Главное стихотворение | «SUrpris'd again am I! by things thus vain…» | «SUrpriz'd was I as others, 'tis no doubt…» |
+| Акростих на **имя** | **CHRISTOPHER** — 11 строк, начальные буквы проверены | **STEPHEN** — 7 строк, начальные буквы проверены |
+| Акростих на **фамилию** | **FOWLER** — 6 строк, начальные буквы проверены | **CHARNOCK** — 8 строк, начальные буквы проверены |
+| Эпитафия | «HIS EPITAPH. Here lies a house pul'd down, whilst it stood Buils…» | «Epitaph. Here lieth blessed Charnock's dust…» |
+| Приписка | «A few Lines which was dropt Jan. the 4th 1676…» | — |
+
+**Оба памфлета устроены одинаково: главная элегия → акростих на имя → акростих на фамилию →
+эпитафия, начинающаяся с «Here li(e)s…».** Это не случайное сходство двух текстов, а
+**жанровая форма**: у лондонских несогласных 1670–1680-х существует устойчивый тип посмертного
+памфлета, и автор *New Poems* работает внутри него. Для биографии это важно: *New Poems* — не
+уникальный порыв скорби, а **произведение в традиции**, и его формулировки следует читать как
+жанровые, а не как единственные в своём роде.
+
+**Топическое совпадение.** Открытие Fowler-элегии 1677 (`B03233`):
+
+> Art thou gone **too**, great and couragious mind!
+> And must we fear even those are left behind?
+> Lord, stay thy hand and cause thy wrath to cease,
+> And **call not home so fast** our Sons of Peace.
+> If Heaven do call so fast for Saints to come,
+> **Who will be left on Earth t' supply their room?**
+
+*New Poems* 1680:
+
+> Hath God **two such eminent servants** lent?
+> And in so small a space call'd **both** away?
+> … who well can qualify
+> **A second Charnock, his place to supply.**
+
+Один и тот же ход: «ушёл слишком быстро», «кто останется», «кто займёт его место». **Fowler-элегия
+1677 — более ранняя версия того же топа, и она показывает, что *New Poems* не изобретает его.**
+
+**Новые факты о Christopher Fowler из обоих объектов.**
+
+| Факт | Дословно | Источник |
+|---|---|---|
+| **Дата смерти** | «departed this life on **Monday the 15th of January, 1676/7**» | `B03233`. Проверка дня недели выполнена вычислительно: 15 января 1676/7 по юлианскому календарю — **понедельник** (григ. 25 января 1677). Заголовок внутренне согласован |
+| **Две последние проповеди** | «Mr. Fowler Preacht his **two last Sermons** to his Congregation … the occasion of his Preaching from those words, **John 16. vers. 8**» | `A37311`, приписка |
+| **Другие тексты его проповедей** | «**Nahum the second** and the latter end»; «**Joshua the sixth**, where it speaks of Rams Horns» | `A37311` |
+| **Место в общине** | «He us'd to sit with them, hear at Christ's Table, In a **low seat, though he was Honourable**» | `A37311` |
+| **До конца в работе** | «Whom none could silence, but Death, and that dull Pit, Bare Sickness could not keep him from the Pulpit» | `A37311` |
+| **Игра на фамилии** | «This **Fowler** shoots at Satans seat, / Yea takes his **Fowl** out of his River»; «God hath him a **Fowler** made»; «For truth by him doth cast such light / As Baffles every Bat and Owl» | `A37311` |
+| **Одна проповедь на тридцать лет** | «He Preach'd one Sermon lasted thirty year, / By a good Life he did his doctrine c[ontinue]» | `A37311` |
+| **Оценка ранга** | «He was a man for Learning, Grace and Guifts, / To set up Christ, few like to Fowler lifts» | `A37311` |
+
+**Оба Fowler-объекта не упоминают Чарнока.** Это зафиксировано прямо: гипотеза «Fowler's place»
+**не получает прямого подтверждения** от этих текстов.
+
+**Но два текстовых совпадения — серьёзная зацепка, и отдел фиксирует их как зацепки, не как
+доказательство:**
+
+1. **Две последние проповеди Fowler'а были на Ин. 16:8** (приписка `A37311`), а элегия на Чарнока
+   аттрибуирует ему sermon «**Upon John 16.9**» (сноска b, том 14) — **следующий стих того же
+   отрывка** (Ин. 16:8–9 — о Духе Утешителе, обличающем мир о грехе, «потому что не веруют в Меня»).
+2. Fowler проповедовал также на «**Nahum the second and the latter end**» (`A37311`), а последняя
+   проповедь Чарнока — **Наум 1:3** (том 14 §4A).
+
+Оба совпадения — по соседним стихам и по одной и той же книге. Они **не доказывают** преемства, но
+делают гипотезу существенно менее произвольной: в лондонской несогласной среде 1677–1680 годов
+существует связка «Fowler → Наум / Иоанн 16», и Чарнок вписывается в неё.
+
+**Библиографическое наблюдение.** Wing-номер элегии на Fowler'а — **E420**, элегии на Чарнока —
+**E409**. Они **соседние** в алфавитном ряду Wing: оба — одностраничные элегии 1677/1680 годов на
+смерть несогласных священников. Wing каталогизировал их как объекты одного типа.
+
+**Разрыв во времени.** Fowler умер 15 января 1676/7, Чарнок — 27 июля 1680. Разрыв — **1289 дней,
+3,53 года** (вычислено). Это **сходится** с «about three years before he died» из предисла 1682
+(том 08 §2A): если Чарнок пришёл на место Fowler'а в начале 1677 года и вёл серию атрибутов около
+трёх лет до смерти, обе датировки совпадают. Совпадение не доказательство, но оно **не противоречит**
+гипотезе — а стандартная хронология Crosby Hall (1675) при преемстве Fowler'а в 1677 выглядела бы
+странно.
+
+### 4.3. Причина ухода из Ирландии
 
 > But God, who in his wisdom best doth know
 > What soil is best in which his Saints may grow,
