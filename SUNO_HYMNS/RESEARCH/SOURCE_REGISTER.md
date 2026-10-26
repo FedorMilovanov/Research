@@ -804,3 +804,17 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Supports: латинский гимн, почти наверняка IV в., автор неизвестен; авторство Амвросия маловероятно, атрибуция Никите Ремезианскому признана ошибочной (Келер, 1958); в бенедиктинском обиходе с VI в., в Франкском гимнáрии VIII в.
 - Limits: прочитана статья, не издание; Келер не читался.
 
+### SRC-PHOS-DOXOLOGIA — греческий текст Великого славословия
+
+- URL: https://el.wikipedia.org/wiki/Δοξολογία
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: полный греческий текст Великого славословия; **собственно гимн — первые восемь строк**, далее псалмические стихи, Трисвятое и малая доксология; Малое славословие короче.
+- Limits: текст из энциклопедической статьи, **не из печатной Минеи или Часослова** (`LOCATOR_HOLD`); орфография местами монотоническая.
+
+### SRC-PHOS-LATIN-RENDERINGS — латинские переложения Φῶς ἱλαρόν (форум, блог)
+
+- URL: https://forum.musicasacra.com/forum/discussion/5696/phos-hilaroniucunda-lux-tu-gloriae/p1
+- Evidence class: **D** · Access: PARTIAL_OBJECT · Locator: LOCATOR_MISSING · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: `Lumen hilare` — буквальный перевод, известный по Fortescue, *Latin Hymns* (нач. XX в.); `Iucunda lux tu gloriae` — метрическое переложение неустановленного происхождения, напев `Jesu dulcis memoria`, «григорианизированная» мелодия приписывается Дом Люсьену Давиду (XX в.); в обсуждении утверждается, что латинского богослужебного употребления не было.
+- Limits: источник уровня D. Использован **только** как основание не заявлять древность латинской версии; положительных утверждений на нём не строится.
+

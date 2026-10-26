@@ -1605,6 +1605,50 @@
         "In Benedictine use from the 6th century; preserved in the 8th-century Frankish Hymnal"
       ],
       "limits": "Read as an article, not as an edition; the critical literature (Kähler) was not consulted. The Latin text was not collated."
+    },
+    {
+      "id": "SRC-PHOS-DOXOLOGIA",
+      "title": "«Η Μεγάλη Δοξολογία» — греческий богослужебный текст Великого славословия",
+      "url": "https://el.wikipedia.org/wiki/%CE%94%CE%BF%CE%BE%CE%BF%CE%BB%CE%BF%CE%B3%CE%AF%CE%B1",
+      "type": "Энциклопедическая статья с полным богослужебным текстом",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "Полный греческий текст Великого славословия, восемь первых строк — собственно гимн",
+        "Дальше в последовании идут псалмические стихи («Καθ' ἑκάστην ἡμέραν…», «Κύριε, καταφυγὴ ἐγενήθης ἡμῖν…»), Трисвятое и «Δόξα Πατρὶ καὶ Υἱῷ»",
+        "Малого славословия текст короче и совпадает с первыми строками Великого",
+        "Великое славословие поётся в конце утрени перед Литургией по Октоиху"
+      ],
+      "limits": "Текст взят из энциклопедической статьи, не из печатной Минеи или Часослова; `LOCATOR_HOLD`. Греческая орфография в статье местами монотоническая."
+    },
+    {
+      "id": "SRC-PHOS-LATIN-RENDERINGS",
+      "title": "Латинские переложения Φῶς ἱλαρόν — `Lumen hilare` и `Iucunda lux tu gloriae` (форумные и блоговые свидетельства)",
+      "url": "https://forum.musicasacra.com/forum/discussion/5696/phos-hilaroniucunda-lux-tu-gloriae/p1",
+      "type": "Форумное обсуждение и блог, ссылающиеся на аннотацию компакт-диска; не научный источник",
+      "evidenceClass": "D",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "`Lumen hilare` — буквальный латинский перевод, известный по собранию Adrian Fortescue, Latin Hymns (нач. XX в.)",
+        "`Iucunda lux tu gloriae` — метрическое переложение в четырёх строфах, происхождение не установлено",
+        "Его поют на напев `Jesu dulcis memoria`; «григорианизированную» мелодию приписывают Дом Люсьену Давиду (первая половина XX в.)",
+        "Один из участников обсуждения утверждает, что латинского богослужебного употребления у этого гимна не было вовсе"
+      ],
+      "limits": "Источник уровня D: форум и блог. Ни Фортескью, ни Давид по печатным изданиям не сверены. Использован только для того, чтобы **не** заявлять древность латинской версии; ни одно положительное утверждение на нём не строится."
     }
   ]
 }

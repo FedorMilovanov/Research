@@ -880,3 +880,24 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED · **Sources:** SRC-PHOS-TEDEUM · **Level:** series (roadmap)
 **Limits:** survey article only; no single date may be asserted in copy.
 
+### CLM-PHOS-003-TEXT — объём и границы Великого славословия
+
+**Claim:** собственно гимн — первые восемь строк, от «Δόξα Σοι τῷ δείξαντι τὸ φῶς» до «εἰς δόξαν Θεοῦ Πατρός. Ἀμήν». Дальше идут псалмические стихи, Трисвятое и малая доксология — не часть гимна.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-DOXOLOGIA · **Level:** series
+**Limits:** текст из энциклопедической статьи, не из печатной Минеи (`LOCATOR_HOLD`).
+
+### CLM-PHOS-003-EUDOKIA — `εὐδοκία` / `εὐδοκίας`
+
+**Claim:** критический текст Лк 2:14 — `εὐδοκίας`, богослужебный и византийский — `εὐδοκία`; в славословии поётся вторая форма, её и переводим, назвав расхождение.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-DOXOLOGIA · **Level:** series
+**Limits:** чтение Александрийского кодекса (`ευδοκιας`) взято из поисковой выдачи, факсимиле не смотрено.
+
+### CLM-PHOS-LATIN-MODERN — древность латинских переложений
+
+**Claim:** `Lumen hilare` и `Iucunda lux tu gloriae` — переводы Нового времени (Fortescue, нач. XX в.; метрическое переложение с мелодией XX в.), а не древняя латинская традиция. Свидетельств древнего латинского употребления не найдено.
+
+**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED · **Sources:** SRC-PHOS-LATIN-RENDERINGS · **Level:** series
+**Limits:** источник уровня D; вывод отрицательный, поэтому допустим как основание не заявлять древность. Кандидат PHOS-006 снят из очереди.
+
