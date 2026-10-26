@@ -163,10 +163,168 @@ def tokens_in(text: str) -> list[str]:
     return out
 
 
+def card_index(lan: str) -> dict[str, list[dict]]:
+    """Машинные записи лана, привязанные к файлу прозы: {относительный путь: [записи]}.
+
+    Записью считается любой словарь реестра, у которого есть поле file|path|файл со
+    значением *.md. Так в сверку попадают и карточки отцов (cardId + file), и карточки
+    дел озаглавления (file + holds), и деливерали синтез-плана (path + status): ланы
+    описывают своё машиночитаемое по-разному, и требовать от соседа моей схемы было бы
+    тем же костылём, только с обратной стороны.
+    """
+    out: dict[str, list[dict]] = {}
+    path = registry_for(lan)
+    if not path.is_file():
+        return out
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return out
+    # корневой реестр лежит в ИСКУПЛЕНИЕ/data/, лановый — в ИСКУПЛЕНИЕ/<лан>/data/:
+    # короткие ссылки вида «05_x.md» разрешаются относительно второго каталога сверху
+    base_rel = str(path.relative_to(ROOT).parents[1])
+
+    def own_file(node: dict) -> str | None:
+        for key in ("file", "path", "файл", "markdownFile"):
+            val = node.get(key)
+            if isinstance(val, str) and val.endswith(".md"):
+                return val if val.startswith("ИСКУПЛЕНИЕ/") else f"{base_rel}/{val}"
+        return None
+
+    def harvest(node) -> list[dict]:
+        """Запись и всё, что внутри неё: поле состояния может стоять на ребёнке."""
+        found = [node] if isinstance(node, dict) else []
+        if isinstance(node, dict):
+            for val in node.values():
+                found += harvest(val)
+        elif isinstance(node, list):
+            for val in node:
+                found += harvest(val)
+        return found
+
+    def walk(node) -> None:
+        if isinstance(node, dict):
+            rel = own_file(node)
+            if rel:
+                out.setdefault(rel, []).extend(harvest(node))
+                return  # внутрь уже зашли; повторный спуск удвоил бы счёт
+            for val in node.values():
+                walk(val)
+        elif isinstance(node, list):
+            for val in node:
+                walk(val)
+
+    walk(data)
+    return out
+
+
+STATE_KEYS = ("status", "state", "holds", "publicationState", "rightsState", "accessState",
+              "locatorState", "evidenceClass", "class")
+
+
+def card_markers(card: dict) -> set[str]:
+    """Маркеры, которыми запись описывает своё состояние: только поля состояния, а не
+    весь текст записи. Иначе сверка меряла бы, как часто имя файла написано капителью."""
+    out: set[str] = set()
+
+    def walk(node) -> None:
+        if isinstance(node, dict):
+            for val in node.values():
+                walk(val)
+        elif isinstance(node, list):
+            for val in node:
+                walk(val)
+        elif isinstance(node, str):
+            for tok in re.findall(r"[A-Z][A-Z0-9 _./+-]{3,40}", node):
+                if is_marker_shape(tok.strip()):
+                    out.add(tok.strip())
+
+    for key in STATE_KEYS:
+        if key in card:
+            walk(card[key])
+    return out
+
+
+def file_markers(rel: str) -> set[str]:
+    """Маркеры всей прозы файла, а не только его разделов: статус шапки файла лежит над
+    первым ## и в строки реестра по определению не входит — сверять карточку с частью
+    файла было бы нечестно по отношению к файлу."""
+    path = ROOT / rel
+    if not path.is_file():
+        return set()
+    return {t.strip() for t in tokens_in(path.read_text(encoding="utf-8")) if is_marker_shape(t.strip()) or t in SINGLE_WORD_VERDICTS}
+
+
+def in_walk_scope(lan: str, rel: str) -> bool:
+    """Относится ли ссылка к обходу этого лана: корень видит только свои .md в ИСКУПЛЕНИЕ/,
+    лан — всё под своим каталогом. Ссылки чужих отделений в реестре корня — не висячие
+    пути, а указания на соседей и на объекты Drive: их существование полирует холодный
+    замер, а не эта сверка, и требовать от них совпадения со строками корня было бы
+    приписыванием дефекта там, где его нет."""
+    parts = rel.split("/")
+    if lan == "root":
+        return len(parts) == 2 and parts[0] == "ИСКУПЛЕНИЕ"
+    return rel.startswith(f"ИСКУПЛЕНИЕ/{lan}/")
+
+
+def cross_check(lan: str, rows: list[dict]) -> dict:
+    """Сверка двух учётов лана: проза (строки реестра со своими маркерами) и машинные
+    карточки, ссылающиеся на те же файлы. Ни одна из сторон не правит другую; расхождение
+    — это то, что надо заметить, а не то, что надо замазать."""
+    by_file = card_index(lan)
+    prose_by_file: dict[str, set[str]] = {}
+    for row in rows:
+        prose_by_file.setdefault(row["файл"], set()).update(row["токены"])
+    # сверяем только вердикты: карточка, написанная источниками («MT + LXX»), а не
+    # приговорами, не обязана совпадать с прозой, и считать это расхождением — портить число
+    out_of_scope = sorted(f for f in by_file if not in_walk_scope(lan, f))
+    all_files = {r["файл"] for r in rows} | {f for f in by_file if in_walk_scope(lan, f)}
+    markers_by_file = {rel: file_markers(rel) for rel in sorted(all_files)}
+    lane_prose = {t for fs in markers_by_file.values() for t in fs if classify_token(t) is not None}
+    res = {
+        "файловПрозы": len(prose_by_file),
+        "файловСКарточкой": len(set(prose_by_file) & set(by_file)),
+        "файловБезКарточки": len(set(prose_by_file) - set(by_file)),
+        "ссылокНаНесуществующийФайл": 0,
+        "ссылокВнеОбходаЛана": len(out_of_scope),
+        "записейВнеСтрокЛана": 0,
+        "файловБезКарточкиСостояния": 0,
+        "маркеровВПрозеНеОтражённыхВКарточке": 0,
+        "маркеровВКарточкеНеИзПрозыЛана": 0,
+        "детально": {},
+    }
+    for rel in sorted(all_files):
+        assert in_walk_scope(lan, rel) or rel in prose_by_file
+        state_cards = [c for c in by_file.get(rel, []) if card_markers(c)]
+        if by_file.get(rel) and not state_cards:
+            res["файловБезКарточкиСостояния"] += 1
+        if not (ROOT / rel).is_file():
+            res["ссылокНаНесуществующийФайл"] += 1
+        if rel not in prose_by_file and (ROOT / rel).is_file():
+            res["записейВнеСтрокЛана"] += 1  # в каталоге лана есть, в обход не попало
+        pm = markers_by_file[rel]
+        cm = set().union(*[card_markers(c) for c in state_cards]) if state_cards else set()
+        held_in_prose = {t for t in pm if classify_token(t) == "УДЕРЖИВАЕТСЯ"}
+        not_in_card = held_in_prose - cm
+        not_from_prose = {t for t in cm if classify_token(t) is not None and t not in lane_prose}
+        res["маркеровВПрозеНеОтражённыхВКарточке"] += len(not_in_card)
+        res["маркеровВКарточкеНеИзПрозыЛана"] += len(not_from_prose)
+        if not_in_card or not_from_prose or (rel not in by_file) or (rel not in prose_by_file):
+            res["детально"][Path(rel).name] = {
+                "проза": len(pm),
+                "карточка": len(cm),
+                "вПрозеНеВКарточке": sorted(not_in_card),
+                "вКарточкеНеИзПрозы": sorted(not_from_prose),
+                "естьКарточка": rel in by_file,
+            }
+    return res
+
+
 def scan_lan(lan: str) -> dict:
     """Строки и агрегаты одного лана. Детерминированно: обход по сортировке путей,
     внутри файла — по номеру строки. Никакой выборки: берётся весь ствол лана."""
     ids = machine_ids(lan)
+    byFile = card_index(lan)
     rows: list[dict] = []
     tokens_total: collections.Counter = collections.Counter()
     unmapped: collections.Counter = collections.Counter()
@@ -201,13 +359,16 @@ def scan_lan(lan: str) -> dict:
                     "срез": title,
                     "класс": row_class(uniq),
                     "маркеров": len(uniq),
+                    "токены": sorted(set(t for t in tokens_in(body))),
                     "машинно": code_m is not None and (code_m.group(1) in ids or base in ids),
+                    "машинноПоФайлу": rel in byFile,
                 }
             )
             per_file[rel] += 1
 
     bad = resolve_rows(rows)
     classes = collections.Counter(r["класс"] for r in rows)
+    cross = cross_check(lan, rows)
     return {
         "лан": lan,
         "rows": rows,
@@ -216,6 +377,9 @@ def scan_lan(lan: str) -> dict:
             "файлов": len(per_file),
             "поКлассам": dict(sorted(classes.items(), key=lambda kv: (-kv[1], kv[0]))),
             "покрытоМашинно": sum(1 for r in rows if r["машинно"]),
+            "покрытоПоФайлу": sum(1 for r in rows if r["машинноПоФайлу"]),
+            "файловПрозы": len(per_file),
+            "файловБезКарточки": len(set(per_file) - set(card_index(lan))),
             "разрешеноЛокаторов": len(rows) - len(bad),
             "неРазрешено": len(bad),
         },
@@ -227,6 +391,7 @@ def scan_lan(lan: str) -> dict:
             "служебные": sorted(t for t in tokens_total if classify_token(t) == "СЛУЖЕБНОЕ"),
             "неОтнесено": dict(sorted(unmapped.items(), key=lambda kv: (-kv[1], kv[0]))),
         },
+        "сверка": cross,
         "плохо": bad,
     }
 
@@ -251,7 +416,8 @@ def resolve_rows(rows: list[dict]) -> list[str]:
     return bad
 
 
-FIELDS_TO_MIRROR = ("строк", "файлов", "покрытоМашинно", "разрешеноЛокаторов", "неРазрешено")
+FIELDS_TO_MIRROR = ("строк", "файлов", "покрытоМашинно", "покрытоПоФайлу", "файловПрозы",
+                    "файловБезКарточки", "разрешеноЛокаторов", "неРазрешено")
 
 
 def check_block(lan: str, fresh: dict) -> list[str]:
@@ -300,6 +466,12 @@ def check_block(lan: str, fresh: dict) -> list[str]:
             problems.append(
                 f"{lan}: сводка «{field}» записана {block.get(field)!r}, обход даёт {fresh['агрегаты'][field]!r}"
             )
+    if block.get("сверкаСКарточками") != fresh["сверка"]:
+        problems.append(
+            f"{lan}: сверка с машинными карточками разошлась со съёмом: записано "
+            f"{ {k: v for k, v in (block.get('сверкаСКарточками') or {}).items() if k != 'детально'}!r}, "
+            f"обход даёт { {k: v for k, v in fresh['сверка'].items() if k != 'детально'}!r}"
+        )
     if block.get("поКлассам") != fresh["агрегаты"]["поКлассам"]:
         problems.append(
             f"{lan}: распределение по классам разошлось: записано {block.get('поКлассам')!r}, "
@@ -454,6 +626,10 @@ def build_block(lan: str, fresh: dict, previous: dict | None) -> dict:
             "неОтнесено": marks["неОтнесено"],
             "одиночныеСлова": sorted(SINGLE_WORD_VERDICTS),
         },
+        "сверкаСКарточками": fresh["сверка"],
+        "правилоСверки": "запись лана считается относящейся к файлу, если в ней есть file|path|файл на этот .md; "
+        " HOLD-маркеры секций файла обязаны встретиться в маркерах его записей, а маркеры записи обязаны "
+        "встречаться в прозе лана — так оба учёта проверяют друг друга, а не дополняются до совпадения",
         "строки": fresh["rows"],
         "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же "
         "реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
@@ -470,6 +646,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--print", dest="show", action="store_true")
     ap.add_argument("--vocab", action="store_true")
+    ap.add_argument("--cross", action="store_true")
     ap.add_argument("lans", nargs="*", default=["all"])
     args = ap.parse_args(argv)
     wanted = SUBLANES + ("root",) if (args.lans or ["all"]) == ["all"] else tuple(args.lans)
@@ -487,6 +664,17 @@ def main(argv: list[str] | None = None) -> int:
             for line in fresh["плохо"][:8]:
                 print("   ", line)
             rc = 1
+        if args.cross:
+            cr = fresh["сверка"]
+            print(f"[{lan}] сверка: файлов прозы {cr['файловПрозы']}, с карточкой {cr['файловСКарточкой']}, "
+                  f"без карточки {cr['файловБезКарточки']}, висящих ссылок {cr['ссылокНаНесуществующийФайл']}, "
+                  f"записей вне строк лана {cr['записейВнеСтрокЛана']}, "
+                  f"карточек без поля состояния {cr['файловБезКарточкиСостояния']}; "
+                  f"маркеров в прозе, не отражённых в карточке: {cr['маркеровВПрозеНеОтражённыхВКарточке']}; "
+                  f"маркеров в карточке, не известных прозе лана: {cr['маркеровВКарточкеНеИзПрозыЛана']}")
+            for name, det in list(cr["детально"].items())[:14]:
+                print(f"    {name[:46]:46s} проза {det['проза']:3d} карточка {det['карточка']:3d} "
+                      f"не в карточке {det['вПрозеНеВКарточке']} не из прозы {det['вКарточкеНеИзПрозы'][:3]}")
         if args.show:
             print(f"[{lan}] строк {fresh['агрегаты']['строк']} / файлов {fresh['агрегаты']['файлов']} / "
                   f"классы {fresh['агрегаты']['поКлассам']} / машинно {fresh['агрегаты']['покрытоМашинно']}")

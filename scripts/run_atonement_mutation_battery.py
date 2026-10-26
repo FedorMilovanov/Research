@@ -524,7 +524,7 @@ def cases():
         row = ('{"код": "CL-FAKE@00_NT_AUTHORITY_2026-10-07", "лан": "nt", '
                '"файл": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md", "строка": 1, '
                '"срез": "Заголовок, которого в файле нет", "класс": "ЗАКРЫТО", "маркеров": 0, '
-               '"машинно": false}')
+               '"токены": [], "машинно": false, "машинноПоФайлу": true}')
         i = raw.index('"строки": [', raw.index('"%s"' % CLAIMS_BLOCK)) + len('"строки": [')
         out = (raw[:i] + "\n            " + row + "," + raw[i:]
                .replace('"строк": %s' % m.group(1), '"строк": %d' % (int(m.group(1)) + 1), 1))
@@ -532,6 +532,59 @@ def cases():
 
     add("claimsRowInventedInBlock", "обход прозы её не находит", m_claim_row_invented,
         "в реестр доводов вписана несуществующая строка: обратный ход сверки обязан краснеть")
+
+    # 28. Карточка ot дописывает вердикт, которого проза лана не знает, а реестр доводов
+    # не переснят. Сверка двух учётов обязана краснеть на расхождение, а не «ну и ладно».
+    def m_card_state_without_reshoot():
+        raw = LANE_REG["ot"].read_text(encoding="utf-8")
+        start = raw.find('"cards": [')
+        if start == -1:
+            raise AssertionError("не проверен: в ot-корпусе нет списка cards")
+        i = raw.find('"holds": ["EVIDENCE_HOLD"', start)
+        if i == -1:
+            raise AssertionError("не проверен: у первой карточки нет однострочного holds")
+        if "ZZZ_UNSEEN_HOLD" in raw:
+            raise AssertionError("не проверен: маркер уже в файле")
+        j = i + len('"holds": [')
+        LANE_REG["ot"].write_text(raw[:j] + '"ZZZ_UNSEEN_HOLD", ' + raw[j:], encoding="utf-8")
+
+    add("cardStateWithoutRegisterReshoot", "сверка с машинными карточками разошлась", m_card_state_without_reshoot,
+        "у карточки появилось состояние, которого нет ни в прозе, ни в пересъёме реестра")
+
+    # 29. Ссылка карточки уехала в несуществующий файл: карточка осталась, а её носителя
+    # нет. Так выглядит «учёт, который ничего не описывает», и ловить это должно гейтом.
+    def m_card_dangling_file():
+        raw = LANE_REG["ot"].read_text(encoding="utf-8")
+        needle = '"file": "ИСКУПЛЕНИЕ/ot/01_LEX_KPR_KIPPER_FAMILY.md"'
+        if needle not in raw:
+            raise AssertionError("не проверен: карточка 01 не ссылается на ожидаемый файл")
+        LANE_REG["ot"].write_text(
+            raw.replace(needle, '"file": "ИСКУПЛЕНИЕ/ot/99_UNNAMED_CASE_NO_SUCH_FILE.md"', 1), encoding="utf-8")
+
+    add("cardPointsToMissingProseFile", "на несуществующий файл", m_card_dangling_file,
+        "машинная запись указывает в пустоту, а её файл прозы остался без записи")
+
+    # 30. Приукрашенное покрытие: в блоке реестра число файлов без карточки задрано с 0
+    # до 1 без изменения прозы и карточек. Число обязано читаться из обхода, а не из текста.
+    def m_faked_coverage():
+        sys.path.insert(0, str(ROOT / "scripts"))
+        blk = json.loads(LANE_REG["synthesis"].read_text(encoding="utf-8")).get(CLAIMS_BLOCK) or {}
+        if blk.get("файловБезКарточки") != 0:
+            raise AssertionError("не проверен: обход и так находит карточки без прозы")
+        # поле живёт в блоке дважды (сводка и сверка), поэтому режем по верхнеуровневому
+        # вхождению внутри блока, а не по первому встречному: иначе случай бил бы не в то поле
+        import atonement_claim_register as _acr
+        raw = LANE_REG["synthesis"].read_text(encoding="utf-8")
+        a, b = _acr.block_span(raw, CLAIMS_BLOCK)
+        needle = '"файловБезКарточки": 0,'
+        i = raw.index(needle, a)
+        if raw.index('"сверкаСКарточками"', a) < i:
+            raise AssertionError("не проверен: верхнеуровневое поле идёт не первым")
+        LANE_REG["synthesis"].write_text(raw[:i] + needle.replace(": 0,", ": 1,") + raw[i + len(needle):],
+                                         encoding="utf-8")
+
+    add("coverageClaimFakedUpward", "сводка «файловБезКарточки» записана", m_faked_coverage,
+        "покрытие приукрасили числом: сверка обязана читать его с дерева, а не с бумаги")
 
     return out
 
