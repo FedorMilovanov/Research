@@ -4309,10 +4309,10 @@
     "kind": "file",
     "mime": "text/markdown",
     "bytes": 625625,
-    "name": "2026-10-26 — слепок 35_four_point_authors_mass_registry (круг 54: 209 строк, 625625 B, md5 a0a128aae08e25771860a5b9676c8324).md",
+    "name": "УСТАРЕЛО (26.10.2026, круг 56): 35_four_point_authors_mass_registry — 625625 B, md5 a0a128aae08e25771860a5b9676c8324, снят кругом 56 в пользу 1vzGJs92l",
     "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
     "role": "registry-mirror",
-    "rights": "mirror_of_git",
+    "rights": "HOLD_superseded",
     "readState": "registry_linked",
     "aboutRows": ["FP-025", "FP-031", "FP-075", "FP-191", "FP-194"],
     "citedBy": [],
@@ -4376,7 +4376,88 @@
      "how": "прежний слепок прожил от заливки (22:26:15.098Z круга 53) до снятия этим кругом (23:07:11.554Z) 2456.456 с — окно между кругами 53 и 54 было короче, чем между кругами 52 и 53, потому что круг 54 начался с очереди, а не с накачки томов"
     },
     "note20261026r54": "круг 54 поднимает `FP-25` (Лютер, A06492), `FP-31` (Герхард, A01637), `FP-75` (Локк, A48888), `FP-191` (Цвингли, A15874) и `FP-194` (Роллок, A11012 + A11006 + A11015) по напечатанным листам десяти новых томов EEBO-TCP; тринадцати строкам вписан именованный отказ по каталогу; `FP-189` закрыта отрицательно по обоим томам-носителям (A20668 и A64661: ноль попаданий по восьми трафаретам)"
-   }
+   ,
+   "supersededNote20261026r56": "переведена в HOLD_superseded кругом 56 после переливки сорок четвёртого слепка 1vzGJs92lJ0x7yaFn0eleszrNl0WqUEcJ; запись остаётся достоверным свидетельством дерева c49c9848b, lagBehindGit сознательно оставлен истинным: расхождение с деревом есть, оно просто больше не живое зеркало"
+  },
+  {
+    "schema": "2026-10-26-drive-mirror-v1",
+    "folder": "05",
+    "driveId": "1vzGJs92lJ0x7yaFn0eleszrNl0WqUEcJ",
+    "kind": "file",
+    "mime": "text/markdown",
+    "bytes": 627188,
+    "name": "2026-10-26 — слепок 35_four_point_authors_mass_registry (круг 56: 209 строк, 627188 B, md5 f8a20c5b61cd83508611a9ce55469e4a).md",
+    "gitFile": "docs/research/atonement/35_four_point_authors_mass_registry.md",
+    "role": "registry-mirror",
+    "rights": "mirror_of_git",
+    "readState": "registry_linked",
+    "aboutRows": ["FP-025", "FP-031", "FP-075", "FP-191", "FP-194"],
+    "citedBy": [],
+    "queueRows": [],
+    "registryRowClasses": {
+     "FP-025": "A1",
+     "FP-031": "A1",
+     "FP-075": "A1",
+     "FP-191": "A1",
+     "FP-194": "A1"
+    },
+    "driveBytesClaimed": 627188,
+    "driveMd5Claimed": "f8a20c5b61cd83508611a9ce55469e4a",
+    "driveBytesVerified": 627188,
+    "driveMd5Verified": "f8a20c5b61cd83508611a9ce55469e4a",
+    "gitBytesAtUpload": 627188,
+    "gitFileLinesAtUpload": 1994,
+    "gitRowsAtUpload": 209,
+    "gitMd5AtUpload": "f8a20c5b61cd83508611a9ce55469e4a",
+    "gitSha256AtUpload": "174ac15e739dc8302071b09b697412c1210d09416ac37ccac98bb3e564a9af2b",
+    "md5VerifiedFromDrive": true,
+    "uploadedAt": "2026-10-26T08:44:38.581Z",
+    "measuredAt": "2026-10-26T08:48:20Z",
+    "checkedAt": "2026-10-26T08:48:20Z",
+    "lagBehindGit": false,
+     "lagСнят20261026r56": "зеркало равно дереву на коммите 0701ae211: 627188 байт, md5 f8a20c5b61cd83508611a9ce55469e4a; равно проверено прочтением get_file, а не ответом закачки",
+     "имяОбъектаСовпадаетСИменемЗаписи": true,
+    "locator": "FP-025: A06492 (tcp:9456), «A commentarie … vpon the Epistle of S. Paul to the Galathians», London 1575 — сс. 81 и 82 (образы tcp:9456:88 и :89) держат «hath loued me, and geuen him selfe for me» рядом с «inestimable price»; с. 59 (образ :66) — разбор монашеской «достаточности для меня и для других». FP-031: A01637 (tcp:29121), «The summe of Christian doctrine», 1640 — с. 128 (образ tcp:29121:82) «the promiſes of the Gospel belong unto all men» и «The Promiſe belongeth unto all men, but the Application of the promiſe is only made unto thoſe that do beleeve»; с. 66 (образ :51) «earneſtly deſired the ſalvation of all men». FP-075: A48888 (tcp:60354), «The Reasonableness of Christianity», 1695 — сс. 22, 24, 298 (образы :14, :15, :153), закон веры «to every one» и «Covenant of Free Grace»; Рим 8:32 в томе не разбирается. FP-191: A15874 (tcp:6975), «A briefe rehersal of the death, resurrection, and ascension of Christ», 1561 — с. 10 (образ :6) «if one man died for all men», с. 143 (:72), с. 196 (:99) «Christs death is healthfull to ye whole world». FP-194: A11012 (tcp:16641) сс. 4, 6, 79 (образы :9, :10, :46) — «for the ſinnes of the whole world»; A11006 (tcp:16631) сс. 214 и 243 (образы :112, :126) — «hee died but for some» и «wee are not capable of the vertue of his death»; A11015 (tcp:16633) сс. 179 и 234 (образы :101, :129) — 1 Тим 2 и «price of our redemption»",
+    "note": "живой слепок круга 54: upload_file в 2026-10-25T23:06:41.624Z (627188 Б), состояние прочитано get_file — те же байты и md5 f8a20c5b61cd83508611a9ce55469e4a, то есть заливка побайтово равна дереву на коммите c49c9848b; имя объекта повторяет число строк-носителей, размер и md5 файла, потому что правило 25 сверяет именно имя; appProperties из двенадцати пар записаны в 2026-10-25T23:07:06.352Z и прочитаны обратно тем же ответом — mirror_of_git_commit называет дерево c49c9848b, которым залит слепок; gitFileLinesAtUpload = 1994 — то же число строк, каким снимок назван в имени объекта (определение — обход по переводу строки, как у проверки); длина каждой пары измерена до отправки, лимит пары — 124 байта в UTF-8; прежний слепок 1z_9ec7MSc… вытеснен и переименован в тот же прогон, побайтовых изменений в реестре после заливки не было",
+    "chainNote": "цепочка сверена тремя вызовами list_files: в папке 05 — 62 объекта, по имени «35_four_point_authors_mass_registry» — 51, тот же фильтр вместе с «УСТАРЕЛО» — 50; разность 51 и 50 равна одному живому слепку, и это то же определение, что у круга 53, с той разницей, что пересечение взято фильтром по двум словам, а не вычитанием, а общее число объектов с пометкой «УСТАРЕЛО» по всем папкам в этом круге не переснималось",
+    "propsWritten20261026r54": {
+     "объект": "1vzGJs92lJ0x7yaFn0eleszrNl0WqUEcJ",
+     "ключей": 12,
+     "прочитаноОбратно": "2026-10-25T23:07:06.352Z",
+     "как": "одним вызовом update_file с fields=id,name,size,md5Checksum,appProperties,modifiedTime",
+     "лимитПарыБайт": 124,
+     "самаяДлиннаяПара": "source: git:docs/research/atonement/35_four_point_authors_mass_registry.md = 73 байта в UTF-8",
+     "measuredAt": "2026-10-26T08:48:20Z",
+     "recheckCommand": "get_file этого коннектора с fields=id,name,appProperties,md5Checksum"
+    },
+    "registryCountsAsOfRound54": {
+     "строк": 209,
+     "очередь": 86,
+     "A1": 53,
+     "A2": 30,
+     "B1": 34,
+     "B2": 6,
+     "C": 86,
+     "доляA1": 25,
+     "точноеДоля": 25.36,
+     "добытьСтрокФайла": 27,
+     "добытьСтрокРеестра": 14,
+     "measuredAt": "2026-10-26T08:48:20Z",
+     "recheckCommand": "python3 -B scripts/validate_atonement_corpus_integrity.py (правила 23 и 23.1)",
+     "чемОтличаетсяОтКруга53": "очередь укорочена на пять адресов (Q-025, Q-031, Q-075, Q-191, Q-194), а не оставлена как в круге 53, и оба определения доли совпали при 25"
+    },
+    "lagDeclaredBeforePour20261026r54": {
+     "строкаЗеркало": 1941,
+     "объявлен": "2026-10-25T22:37:50Z",
+     "снят": "2026-10-26T08:44:38.581Z",
+     "секунд": 2456.456,
+     "measuredAt": "2026-10-26T08:48:20Z",
+     "how": "прежний слепок прожил от заливки (22:26:15.098Z круга 53) до снятия этим кругом (23:07:11.554Z) 2456.456 с — окно между кругами 53 и 54 было короче, чем между кругами 52 и 53, потому что круг 54 начался с очереди, а не с накачки томов"
+    },
+    "note20261026r54": "круг 54 поднимает `FP-25` (Лютер, A06492), `FP-31` (Герхард, A01637), `FP-75` (Локк, A48888), `FP-191` (Цвингли, A15874) и `FP-194` (Роллок, A11012 + A11006 + A11015) по напечатанным листам десяти новых томов EEBO-TCP; тринадцати строкам вписан именованный отказ по каталогу; `FP-189` закрыта отрицательно по обоим томам-носителям (A20668 и A64661: ноль попаданий по восьми трафаретам)"
+   ,
+   "pourNote20261026r56": "сорок четвёртый слепок залит кругом 56 с дерева 0701ae211; имя объекта повторяет 209 строк-носителей, 627188 байт и md5 f8a20c5b61cd83508611a9ce55469e4a; побайтовая сверка — get_file вернул size 627188 и md5Checksum f8a20c5b61cd83508611a9ce55469e4a, то есть зеркало равно дереву, а не обещает совпасть; 12 свойств записаны и прочитаны обратно тем же ответом update_file в 2026-10-26T08:44:56.668Z, вытесненный снимок 18L0AuXEQCgAyQA_x6bh5A_cDWdu3E9ex переименован в 2026-10-26T08:45:01.394Z, окно 22.813 с; в корзину он не убран"
+  }
  ],
  "libraryIndex20261023": "счётчики пересъёма живут в одном месте: ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json → libraryIndex20261023 (правило 25 меряет обходом именно его); переснято кругом 54 тем же обходом, которым мерит правило 25: 122 записи (113 файлов и 9 папок), 26 носителей материала, сумма байт 150982980 — прирост круга 54 ровно один файл, слепок реестра массы"
 }
