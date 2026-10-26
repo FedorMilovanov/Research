@@ -169,5 +169,3279 @@
     "edit-other-agent-subcorpora (ot/, nt/, fathers/, БИОГРАФИИ/Джон Гилл/)",
     "change-research-root-authority",
     "silence-a-conflict-without-text-and-locator"
-  ]
+  ],
+  "claimRegister20261026": {
+      "чтоЭто": "реестр доводов лана «synthesis»: строка = раздел прозы уровня ## с локатором, классом из её собственных маркеров и отметкой съёма",
+      "чтоСчитаетсяДоводом": "заголовок «## » в любом .md лана, включая вложенные папки (synthesis/drafts, ot/tools); тело секции — до следующего «## » или до конца файла",
+      "приоритет": "УДЕРЖИВАЕТСЯ > ОТКРЫТО > ЗАКРЫТО; маркеров нет -> БЕЗ МАРКЕРА; маркер вне классификации -> ошибка съёма, а не «прочее»",
+      "метод": "scripts/atonement_claim_register.py обходит прозу лана целиком (без выборки), разбирает маркеры вида `ВЕРДИКТ`, сверяет локатор побайтово (файл + номер строки + текст)",
+      "строк": 218,
+      "файлов": 20,
+      "покрытоМашинно": 0,
+      "покрытоПоФайлу": 218,
+      "файловПрозы": 20,
+      "файловБезКарточки": 0,
+      "разрешеноЛокаторов": 218,
+      "неРазрешено": 0,
+      "поКлассам": {
+          "БЕЗ МАРКЕРА": 138,
+          "УДЕРЖИВАЕТСЯ": 63,
+          "ОТКРЫТО": 9,
+          "ЗАКРЫТО": 7,
+          "СЛУЖЕБНОЕ": 1
+      },
+      "маркеры": {
+          "всего": 416,
+          "различных": 28,
+          "словарь": {
+              "ACCESS_INTERRUPTED": "ОТКРЫТО",
+              "AGENT_RULES": "СЛУЖЕБНОЕ",
+              "ARCHIVE_HOLD": "УДЕРЖИВАЕТСЯ",
+              "ATTRIBUTION_HOLD": "УДЕРЖИВАЕТСЯ",
+              "ATTRIBUTION_NOTE": "СЛУЖЕБНОЕ",
+              "ATTRIBUTION_SECONDARY": "УДЕРЖИВАЕТСЯ",
+              "CONTEXT_HOLD": "УДЕРЖИВАЕТСЯ",
+              "DATE_HOLD": "УДЕРЖИВАЕТСЯ",
+              "DRAFT / PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
+              "EDITION_HOLD": "УДЕРЖИВАЕТСЯ",
+              "EDITION_UNAVAILABLE": "УДЕРЖИВАЕТСЯ",
+              "EVIDENCE_HOLD": "УДЕРЖИВАЕТСЯ",
+              "FORBIDDEN": "УДЕРЖИВАЕТСЯ",
+              "HOLD": "УДЕРЖИВАЕТСЯ",
+              "LEGACY_NO_CLASSES": "СЛУЖЕБНОЕ",
+              "LOCATOR_HOLD": "УДЕРЖИВАЕТСЯ",
+              "LOCATOR_PARTIAL": "УДЕРЖИВАЕТСЯ",
+              "LOCATOR_SINGLE_ATTESTATION": "УДЕРЖИВАЕТСЯ",
+              "OPEN": "ОТКРЫТО",
+              "OPEN-LAYER": "ОТКРЫТО",
+              "PRIVATE_STUDY_ONLY": "УДЕРЖИВАЕТСЯ",
+              "PUBLICATION_HOLD": "УДЕРЖИВАЕТСЯ",
+              "RESOLVED": "ЗАКРЫТО",
+              "RESOLVED-BY-TEXT": "ЗАКРЫТО",
+              "RIGHTS_HOLD": "УДЕРЖИВАЕТСЯ",
+              "SCOPED_IN_PART": "ОТКРЫТО",
+              "SCOPED_OUT": "ЗАКРЫТО",
+              "TEXT_CRIT_NOTE": "СЛУЖЕБНОЕ"
+          },
+          "частоты": {
+              "EVIDENCE_HOLD": 74,
+              "RIGHTS_HOLD": 60,
+              "PUBLICATION_HOLD": 59,
+              "ATTRIBUTION_HOLD": 41,
+              "EDITION_HOLD": 39,
+              "RESOLVED-BY-TEXT": 29,
+              "LOCATOR_HOLD": 24,
+              "OPEN": 22,
+              "LOCATOR_PARTIAL": 18,
+              "PRIVATE_STUDY_ONLY": 9,
+              "ARCHIVE_HOLD": 7,
+              "OPEN-LAYER": 5,
+              "CONTEXT_HOLD": 4,
+              "ATTRIBUTION_SECONDARY": 3,
+              "EDITION_UNAVAILABLE": 3,
+              "LEGACY_NO_CLASSES": 3,
+              "ATTRIBUTION_NOTE": 2,
+              "DRAFT / PUBLICATION_HOLD": 2,
+              "HOLD": 2,
+              "SCOPED_OUT": 2,
+              "ACCESS_INTERRUPTED": 1,
+              "AGENT_RULES": 1,
+              "DATE_HOLD": 1,
+              "FORBIDDEN": 1,
+              "LOCATOR_SINGLE_ATTESTATION": 1,
+              "RESOLVED": 1,
+              "SCOPED_IN_PART": 1,
+              "TEXT_CRIT_NOTE": 1
+          },
+          "служебные": [
+              "AGENT_RULES",
+              "ATTRIBUTION_NOTE",
+              "LEGACY_NO_CLASSES",
+              "TEXT_CRIT_NOTE"
+          ],
+          "неОтнесено": {},
+          "одиночныеСлова": [
+              "BLOCKED",
+              "ELIGIBLE",
+              "FORBIDDEN",
+              "HOLD",
+              "OPEN",
+              "PASS",
+              "PD",
+              "READABLE",
+              "RESOLVED",
+              "VERIFIED"
+          ]
+      },
+      "сверкаСКарточками": {
+          "файловПрозы": 20,
+          "файловСКарточкой": 20,
+          "файловБезКарточки": 0,
+          "ссылокНаНесуществующийФайл": 0,
+          "ссылокВнеОбходаЛана": 0,
+          "записейВнеСтрокЛана": 0,
+          "файловБезКарточкиСостояния": 8,
+          "маркеровВПрозеНеОтражённыхВКарточке": 89,
+          "маркеровВКарточкеНеИзПрозыЛана": 12,
+          "детально": {
+              "00_README_FALLBACK_2026-10-07.md": {
+                  "проза": 2,
+                  "карточка": 0,
+                  "вПрозеНеВКарточке": [
+                      "EVIDENCE_HOLD",
+                      "PUBLICATION_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "00_SYNTHESIS_AUTHORITY_2026-10-07.md": {
+                  "проза": 20,
+                  "карточка": 0,
+                  "вПрозеНеВКарточке": [
+                      "ARCHIVE_HOLD",
+                      "ATTRIBUTION_HOLD",
+                      "ATTRIBUTION_SECONDARY",
+                      "DRAFT / PUBLICATION_HOLD",
+                      "EDITION_HOLD",
+                      "EDITION_UNAVAILABLE",
+                      "EVIDENCE_HOLD",
+                      "HOLD",
+                      "LOCATOR_HOLD",
+                      "LOCATOR_PARTIAL",
+                      "PRIVATE_STUDY_ONLY",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "01_SERIES_PLAN_AND_ARTICLE_COUNT.md": {
+                  "проза": 4,
+                  "карточка": 0,
+                  "вПрозеНеВКарточке": [
+                      "ARCHIVE_HOLD",
+                      "LOCATOR_HOLD",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "02_CONFLICT_LEDGER.md": {
+                  "проза": 18,
+                  "карточка": 0,
+                  "вПрозеНеВКарточке": [
+                      "ATTRIBUTION_HOLD",
+                      "ATTRIBUTION_SECONDARY",
+                      "CONTEXT_HOLD",
+                      "DATE_HOLD",
+                      "EDITION_HOLD",
+                      "EVIDENCE_HOLD",
+                      "FORBIDDEN",
+                      "LOCATOR_HOLD",
+                      "LOCATOR_PARTIAL",
+                      "LOCATOR_SINGLE_ATTESTATION",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "03_PRACTICAL_AND_PASTORAL_NOTES.md": {
+                  "проза": 3,
+                  "карточка": 0,
+                  "вПрозеНеВКарточке": [
+                      "EDITION_HOLD",
+                      "EVIDENCE_HOLD",
+                      "LOCATOR_PARTIAL"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md": {
+                  "проза": 8,
+                  "карточка": 0,
+                  "вПрозеНеВКарточке": [
+                      "ATTRIBUTION_HOLD",
+                      "DRAFT / PUBLICATION_HOLD",
+                      "EDITION_HOLD",
+                      "LOCATOR_PARTIAL",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "05_RIGHTS_AND_PUBLICATION_GATES.md": {
+                  "проза": 7,
+                  "карточка": 0,
+                  "вПрозеНеВКарточке": [
+                      "ATTRIBUTION_HOLD",
+                      "EDITION_HOLD",
+                      "LOCATOR_HOLD",
+                      "LOCATOR_PARTIAL",
+                      "PRIVATE_STUDY_ONLY",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "06_MERGE_READINESS.md": {
+                  "проза": 6,
+                  "карточка": 0,
+                  "вПрозеНеВКарточке": [
+                      "ATTRIBUTION_HOLD",
+                      "EDITION_UNAVAILABLE",
+                      "LOCATOR_PARTIAL",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [],
+                  "естьКарточка": true
+              },
+              "01_what-is-atonement.md": {
+                  "проза": 5,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "ARCHIVE_HOLD",
+                      "EVIDENCE_HOLD",
+                      "LOCATOR_HOLD",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "02_why-the-cross-necessity.md": {
+                  "проза": 5,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "ARCHIVE_HOLD",
+                      "EVIDENCE_HOLD",
+                      "LOCATOR_HOLD",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "03_nature-of-atonement.md": {
+                  "проза": 6,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "ARCHIVE_HOLD",
+                      "EVIDENCE_HOLD",
+                      "LOCATOR_HOLD",
+                      "PRIVATE_STUDY_ONLY",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "04_perfection-of-atonement.md": {
+                  "проза": 6,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "ARCHIVE_HOLD",
+                      "EVIDENCE_HOLD",
+                      "LOCATOR_HOLD",
+                      "PRIVATE_STUDY_ONLY",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "05_for-whom-did-christ-die-question.md": {
+                  "проза": 5,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "ARCHIVE_HOLD",
+                      "EVIDENCE_HOLD",
+                      "LOCATOR_HOLD",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "07_dort-sufficiency-efficiency.md": {
+                  "проза": 3,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "LOCATOR_HOLD",
+                      "PUBLICATION_HOLD",
+                      "RIGHTS_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "08_calvin-owen-amyraldianism.md": {
+                  "проза": 2,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "LOCATOR_HOLD",
+                      "PRIVATE_STUDY_ONLY"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "09_free-offer-of-the-gospel.md": {
+                  "проза": 1,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "LOCATOR_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "10_tulip-without-caricature.md": {
+                  "проза": 1,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "LOCATOR_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "11_order-of-salvation.md": {
+                  "проза": 1,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "PRIVATE_STUDY_ONLY"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "12_union-with-christ.md": {
+                  "проза": 1,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "PRIVATE_STUDY_ONLY"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              },
+              "13_justification-adoption-sanctification-perseverance.md": {
+                  "проза": 2,
+                  "карточка": 1,
+                  "вПрозеНеВКарточке": [
+                      "PRIVATE_STUDY_ONLY",
+                      "PUBLICATION_HOLD"
+                  ],
+                  "вКарточкеНеИзПрозы": [
+                      "DRAFT / NOT PUBLISHED / PUBLICATION_HOLD"
+                  ],
+                  "естьКарточка": true
+              }
+          }
+      },
+      "правилоСверки": "запись лана считается относящейся к файлу, если в ней есть file|path|файл на этот .md;  HOLD-маркеры секций файла обязаны встретиться в маркерах его записей, а маркеры записи обязаны встречаться в прозе лана — так оба учёта проверяют друг друга, а не дополняются до совпадения",
+      "строки": [
+          {
+              "код": "СР@00_README_FALLBACK_2026-10-07",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md",
+              "строка": 9,
+              "срез": "Почему файлы здесь, а не в Git",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@00_README_FALLBACK_2026-10-07~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md",
+              "строка": 15,
+              "срез": "Что здесь лежит (канонные пути в Git)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@00_README_FALLBACK_2026-10-07~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md",
+              "строка": 29,
+              "срез": "Что НЕ сделано (и почему)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@00_README_FALLBACK_2026-10-07~4",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md",
+              "строка": 36,
+              "срез": "Что делать владельцу",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD",
+                  "PUBLICATION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@00_README_FALLBACK_2026-10-07~5",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_README_FALLBACK_2026-10-07.md",
+              "строка": 44,
+              "срез": "Что сделано (содержательно)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "0@00_SYNTHESIS_AUTHORITY_2026-10-07",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+              "строка": 11,
+              "срез": "0. Что унаследовано и не меняется",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@00_SYNTHESIS_AUTHORITY_2026-10-07",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+              "строка": 23,
+              "срез": "1. Слои, которые сводит синтез (состояние на 2026-10-07)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD",
+                  "PRIVATE_STUDY_ONLY"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@00_SYNTHESIS_AUTHORITY_2026-10-07",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+              "строка": 35,
+              "срез": "2. Общая карта тезисов (тезис → оси → слои → статус)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@00_SYNTHESIS_AUTHORITY_2026-10-07",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+              "строка": 50,
+              "срез": "3. Что доказано / не доказано / в конфликте",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 3,
+              "токены": [
+                  "ATTRIBUTION_SECONDARY",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "LOCATOR_PARTIAL",
+                  "OPEN-LAYER",
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@00_SYNTHESIS_AUTHORITY_2026-10-07",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+              "строка": 70,
+              "срез": "4. Что можно сказать сейчас (граница допустимой формулировки)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@00_SYNTHESIS_AUTHORITY_2026-10-07",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+              "строка": 87,
+              "срез": "5. Позиция площадки (контекст, не вердикт)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@00_SYNTHESIS_AUTHORITY_2026-10-07",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/00_SYNTHESIS_AUTHORITY_2026-10-07.md",
+              "строка": 91,
+              "срез": "6. Следующий допустимый ход",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 4,
+              "токены": [
+                  "ATTRIBUTION_HOLD",
+                  "ATTRIBUTION_NOTE",
+                  "DRAFT / PUBLICATION_HOLD",
+                  "EDITION_HOLD",
+                  "EDITION_UNAVAILABLE",
+                  "EVIDENCE_HOLD",
+                  "HOLD",
+                  "LEGACY_NO_CLASSES",
+                  "LOCATOR_PARTIAL",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD",
+                  "SCOPED_IN_PART",
+                  "SCOPED_OUT",
+                  "TEXT_CRIT_NOTE"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@01_SERIES_PLAN_AND_ARTICLE_COUNT",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+              "строка": 8,
+              "срез": "1. Принципы сборки",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@01_SERIES_PLAN_AND_ARTICLE_COUNT",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+              "строка": 17,
+              "срез": "2. Оценка объёма — диапазоном",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@01_SERIES_PLAN_AND_ARTICLE_COUNT",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+              "строка": 34,
+              "срез": "3. Состав и порядок (полное покрытие, 13 статей)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@01_SERIES_PLAN_AND_ARTICLE_COUNT",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+              "строка": 54,
+              "срез": "4. Резерв слоя D (может появиться или нет; не обещать)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "LOCATOR_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@01_SERIES_PLAN_AND_ARTICLE_COUNT",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+              "строка": 67,
+              "срез": "5. История спора как ось (для B3/B4/D)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@01_SERIES_PLAN_AND_ARTICLE_COUNT",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+              "строка": 71,
+              "срез": "6. Оценка трудоёмкости (ориентир)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "7@01_SERIES_PLAN_AND_ARTICLE_COUNT",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/01_SERIES_PLAN_AND_ARTICLE_COUNT.md",
+              "строка": 75,
+              "срез": "7. Чего в этом плане нет",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PUBLICATION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-01@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 10,
+              "срез": "C-01. «За многих» vs «за весь мир» vs «за всех» (ядро спора extent)",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-02@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 18,
+              "срез": "C-02. Дорт II.3 vs II.8 внутри одного исповедания",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-03@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 26,
+              "срез": "C-03. Три particular-чтения 1 Тим. 2:4: Кальвин vs Гилл vs Оуэн",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-04@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 33,
+              "срез": "C-04. 2 Пет. 2:1: Мюррей (лексика) vs Оуэн (экзегеза)",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-05@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 40,
+              "срез": "C-05. 2 Пет. 3:9: OPC 1948 majority vs Оуэн vs Кальвин — particularists расходятся между собой",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-06@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 47,
+              "срез": "C-06. 1 Ин. 2:2: три particular-чтения с разными механизмами",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-07@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 54,
+              "срез": "C-07. Язык всеобщности у отцов vs реформатская формула",
+              "класс": "ОТКРЫТО",
+              "маркеров": 2,
+              "токены": [
+                  "AGENT_RULES",
+                  "OPEN-LAYER"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-08@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 61,
+              "срез": "C-08. Рим. 5:18: Мюррей NICNT vs Meyer vs Оуэн",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-09@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 68,
+              "срез": "C-09. Intent-тексты vs «мир»-тексты (ось, не конфликт — но типичная путаница)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-10@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 75,
+              "срез": "C-10. Запрещённые полюса (обе формулы отсечены)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "FORBIDDEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-11@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 81,
+              "срез": "C-11. Hypothetical universalism / Amyraldianism vs particularism — внутри реформатства",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-12@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 88,
+              "срез": "C-12. Offer / duty-faith: Гилл vs Fuller vs Particular Baptists (стык с чужим корпусом)",
+              "класс": "ОТКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "OPEN-LAYER"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-13@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 96,
+              "срез": "C-13. Дыра Мюррея I.4 (1 Тим. 2:4; 2 Пет. 2:1) — закрыта первичными, не «ещё Мюрреем»",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-14@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 102,
+              "срез": "C-14. WCF 8.5 vs 1689 ch. 8 (стык исповеданий; 1689 не закрыт)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 2,
+              "токены": [
+                  "LOCATOR_HOLD",
+                  "OPEN-LAYER"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-15@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 108,
+              "срез": "C-15. Архитектурный конфликт: с чего начинать серию",
+              "класс": "ЗАКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-16@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 114,
+              "срез": "C-16. «Atonement unlimited, redemption limited» (Шедд 1888 → Прокопенко 2019) vs «redemption = покупка» (Ч. Ходж 1871, WCF 8.5/8.8, Каннингем 1862)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 3,
+              "токены": [
+                  "ACCESS_INTERRUPTED",
+                  "ATTRIBUTION_HOLD",
+                  "ATTRIBUTION_SECONDARY",
+                  "CONTEXT_HOLD",
+                  "DATE_HOLD",
+                  "EDITION_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "LOCATOR_PARTIAL",
+                  "LOCATOR_SINGLE_ATTESTATION",
+                  "OPEN",
+                  "PUBLICATION_HOLD",
+                  "RESOLVED-BY-TEXT",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-17@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 597,
+              "срез": "C-17. «Кальвин учил всеобщему искуплению» (Рим. 5:18) vs «предложено всем, сообщено не всем» (раунд 59)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-18@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 616,
+              "срез": "C-18. Три позиции: Дорт / Амиро / статья (раунд 59)",
+              "класс": "ЗАКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-19@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 635,
+              "срез": "C-19. Три позиции: декрет для всех или нет (раунд 59)",
+              "класс": "ЗАКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-20@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 650,
+              "срез": "C-20. Описание против объёма (раунд 59)",
+              "класс": "ЗАКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-21@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 664,
+              "срез": "C-21. «Несправедливость» оставления: довод статьи против Амиро (раунд 60)",
+              "класс": "ЗАКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-22@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 679,
+              "срез": "C-22. «Два декрета — учебная схема» vs «два декрета названы самим Амиро» (раунд 61)",
+              "класс": "ЗАКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-23@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 707,
+              "срез": "C-23. «Вменение зависит от веры, а не от Божьего решения» — ересь или сдвиг описания (раунд 61)",
+              "класс": "ЗАКРЫТО",
+              "маркеров": 1,
+              "токены": [
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-24@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 731,
+              "срез": "C-24. Где положено различие: безусловное избрание + условное отвержение (раунд 61)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 3,
+              "токены": [
+                  "LOCATOR_PARTIAL",
+                  "OPEN",
+                  "RESOLVED",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 793,
+              "срез": "Итоговая сводка",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 3,
+              "токены": [
+                  "LOCATOR_HOLD",
+                  "OPEN-LAYER",
+                  "RESOLVED-BY-TEXT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "C-25@02_CONFLICT_LEDGER",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/02_CONFLICT_LEDGER.md",
+              "строка": 806,
+              "срез": "C-25. «Чада Божии, рассеянные» (Ин 11:52): статус до веры — онтологический или пролептический",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 8,
+              "срез": "1. Ключевой принцип: две половины, каждая на своём месте",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 16,
+              "срез": "2. Как не сломать совесть: правило для обеих сторон",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 37,
+              "срез": "3. Уверенность (assurance)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 43,
+              "срез": "4. Проповедь покаяния и веры",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 49,
+              "срез": "5. Молитва за всех",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 54,
+              "срез": "6. Evangelism и вопрос о «не слышавших»",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "7@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 60,
+              "срез": "7. Дети",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "8@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 65,
+              "срез": "8. Стойкость святых (постоянство)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "9@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 70,
+              "срез": "9. Таблица «сказать / не сказать» (для черновиков и Product-gate)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "10@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 85,
+              "срез": "10. Что дальше",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "11@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 90,
+              "срез": "11. Дополнение 2026-10-19 (раунды 34–38): дортские формулы утешения и границы «условного»",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "12@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 134,
+              "срез": "12. Дополнение (2026-10-19; раунд 43; кросс-досье `34_` §4.80, S142): «отец не только покупает наследие — он",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "13@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 155,
+              "срез": "13. Дополнение (2026-10-19; раунд 44; кросс-досье `34_` §§4.82–4.84, S144–S146): утешение, которое «во многом умаляется», и церковь, возлюбленная прежде, чем она могла любить",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "14@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 186,
+              "срез": "14. Дополнение (2026-10-19; раунд 45; кросс-досье `34_` §§4.85–4.88, S147–S150): «могу ли я знать, что Христос умер за меня?» — и три разных ответа в одном томе",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "15@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 223,
+              "срез": "15. Дополнение (2026-10-19; раунд 46; кросс-досье `34_` §§4.89–4.90, S150–S151): где положено утешение и почему «сделал возможным» не утешает",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "16@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 257,
+              "срез": "16. Дополнение (2026-10-19; раунд 47; кросс-досье `34_` §§4.91–4.92, S149–S152): дар, показанный издали",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "17@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 288,
+              "срез": "17. Дополнение (2026-10-19; раунд 48; кросс-досье `34_` §4.94): пять способов сказать одно — и почему проповеднику это важно",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "18@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 309,
+              "срез": "18. Дополнение (2026-10-19; раунд 49; кросс-досье `34_` §§4.95–4.98, S153): пастырское ядро раунда",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "19@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 354,
+              "срез": "19. Дополнение (2026-10-19; раунд 49; кросс-досье `34_` §4.99, S154): избранные до обращения — документальный",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "20@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 417,
+              "срез": "20. Дополнение (2026-10-19; раунд 50; кросс-досье `34_` §§4.100–4.101, S154): пастырское ядро — кто автор",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "21@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 458,
+              "срез": "21. Дополнение (2026-10-19; раунд 51; кросс-досье `34_` §4.104, S156): не слышавшие Евангелия, и «нельзя",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "22@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 506,
+              "срез": "22. Дополнение (2026-10-19; раунд 51; кросс-досье `34_` §4.105, S156): «пустые надежды» — и как проповедовать",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "23@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 540,
+              "срез": "23. Дополнение (2026-10-19; раунд 51; кросс-досье `34_` §4.106 п. 9, S156): поправка к §21.3 — вторая",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "24@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 569,
+              "срез": "24. Дополнение (2026-10-19; раунд 52; кросс-досье `34_` §4.107, S156): «не наощупь и не по жребию» — как",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD",
+                  "LOCATOR_PARTIAL"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "25@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 599,
+              "срез": "25. Дополнение (2026-10-19; раунд 53; кросс-досье `34_` §4.108, S156): «все равно откажутся» — и что тогда",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD",
+                  "LOCATOR_PARTIAL"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "26@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 629,
+              "срез": "26. Дополнение (2026-10-19; раунд 53; кросс-досье `34_` §4.109, S156): как отвечать на «значит, Бог и виноват,",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "27@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 659,
+              "срез": "27. Дополнение (2026-10-19; раунд 54; кросс-досье `34_` §4.110, S156): «как мне знать, что я избран?» — ответ,",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "28@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 691,
+              "срез": "28. Дополнение (2026-10-19; раунд 54; кросс-досье `34_` §4.111, S156): «а вдруг я не устою» — и что отвечает",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "29@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 723,
+              "срез": "29. Дополнение (2026-10-19; раунд 55; кросс-досье `34_` §4.112, S156): «а свободен ли я ещё?» — и почему этот",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "30@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 755,
+              "срез": "30. Дополнение (2026-10-19; раунд 55; кросс-досье `34_` §4.113 п. 7, S156): «если я избран, то можно жить как",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "31@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 790,
+              "срез": "31. Дополнение (2026-10-19; раунд 56; кросс-досье `34_` §4.114 пп. 3–4, S156): почему имена сокрыты — и что",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "32@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 825,
+              "срез": "32. Дополнение (2026-10-19; раунд 56; кросс-досье `34_` §4.115, S156): «А Кальвин разве не так учил?» — что",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "33@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 850,
+              "срез": "33. Дополнение (2026-10-19; раунд 56; кросс-досье `34_` §4.116, S156): разговор, в котором «за всех» — не",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "34@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 879,
+              "срез": "34. Дополнение (2026-10-19; раунд 56; кросс-досье `34_` §4.117, S156): как говорить о «всеобщности» так, чтобы",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "35@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 907,
+              "срез": "35. Дополнение (2026-10-19; раунд 57; кросс-досье `34_` §4.118, S156): как говорить с человеком, который принёс",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "36@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 935,
+              "срез": "36. Дополнение (2026-10-19; раунд 57; кросс-досье `34_` §4.119, **S156**): «декрет не препятствовать» — и что",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "37@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 957,
+              "срез": "37. Дополнение (2026-10-19; раунд 59; кросс-досье `34_` §4.127, S156): «а если я не могу поверить?» — ответ,",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "44@03_PRACTICAL_AND_PASTORAL_NOTES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/03_PRACTICAL_AND_PASTORAL_NOTES.md",
+              "строка": 1067,
+              "срез": "44. Дополнение (2026-10-19; раунд 61; кросс-досье `34_` §4.141): «а разве не я уверовал?»",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "0@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 10,
+              "срез": "0. Как читать этот документ",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 28,
+              "срез": "1. Ответ в одном абзаце",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 36,
+              "срез": "2. Что утверждает статья",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 42,
+              "срез": "3. Что показал первоисточник — четырнадцать находок с локаторами",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 63,
+              "срез": "4. Оценка исторической корректности — четыре измерения",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 75,
+              "срез": "4-бис. Решающий текст: три позиции, а не две",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 101,
+              "срез": "5. Что статья говорит ВЕРНО — признать без оговорок",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 113,
+              "срез": "5-бис. Последний слой: спор о **описании**, а не о **объёме**",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 130,
+              "срез": "6. Точная формула сдвига — два симметричных шага на позицию влево",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "7@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 141,
+              "срез": "7. Самое сильное возражение статьёй — и оно не экзегетическое",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "8@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 158,
+              "срез": "8. Как это применять в серии — три правила",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "9@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 166,
+              "срез": "9. Чего НЕ установлено — обязательно к публикации",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 3,
+              "токены": [
+                  "ATTRIBUTION_HOLD",
+                  "ATTRIBUTION_NOTE",
+                  "EDITION_HOLD",
+                  "LOCATOR_PARTIAL",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD",
+                  "SCOPED_OUT"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "10@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 199,
+              "срез": "10. Ответ на исходный вопрос — в одной фразе",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "11@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 220,
+              "срез": "11. Ссылки на рабочие документы",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "12@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 234,
+              "срез": "12. Сомюр: место, школа и при чём она здесь",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "13@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 313,
+              "срез": "13. Аналитический свод: что даёт весь корпус",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD",
+                  "LOCATOR_PARTIAL"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "14@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 433,
+              "срез": "14. Что дальше — путь публикации (не исследования)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "15@04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/04_FINAL_VERDICT_ON_PROKOPENKO_DISTINCTION.md",
+              "строка": 450,
+              "срез": "15. Одна страница для читателя (черновик; без цитат статьи)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "DRAFT / PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@05_RIGHTS_AND_PUBLICATION_GATES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/05_RIGHTS_AND_PUBLICATION_GATES.md",
+              "строка": 13,
+              "срез": "1. Три состояния, и только три",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PRIVATE_STUDY_ONLY",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@05_RIGHTS_AND_PUBLICATION_GATES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/05_RIGHTS_AND_PUBLICATION_GATES.md",
+              "строка": 28,
+              "срез": "2. Реестр по источникам, реально использованным в решающих местах",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD",
+                  "LOCATOR_HOLD",
+                  "PRIVATE_STUDY_ONLY",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@05_RIGHTS_AND_PUBLICATION_GATES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/05_RIGHTS_AND_PUBLICATION_GATES.md",
+              "строка": 53,
+              "срез": "3. Шесть ворот: что нужно, чтобы утверждение стало публикуемым",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EDITION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@05_RIGHTS_AND_PUBLICATION_GATES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/05_RIGHTS_AND_PUBLICATION_GATES.md",
+              "строка": 77,
+              "срез": "4. Что из решающих выводов раундов 51–59 **готово** к публикации, а что нет",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ATTRIBUTION_HOLD",
+                  "EDITION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@05_RIGHTS_AND_PUBLICATION_GATES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/05_RIGHTS_AND_PUBLICATION_GATES.md",
+              "строка": 95,
+              "срез": "5. Отдельно: цитаты **самой статьи**",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_PARTIAL",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@05_RIGHTS_AND_PUBLICATION_GATES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/05_RIGHTS_AND_PUBLICATION_GATES.md",
+              "строка": 134,
+              "срез": "6. Что закрывает «копирайт» как пункт остатка",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "7@05_RIGHTS_AND_PUBLICATION_GATES",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/05_RIGHTS_AND_PUBLICATION_GATES.md",
+              "строка": 146,
+              "срез": "7. Запреты, вытекающие из этого документа",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 9,
+              "срез": "1. Что фактически лежит в ветке",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 38,
+              "срез": "2. Состав объёма: сколько в нём доказательств",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 53,
+              "срез": "3. Карта качества: где доказательства, где навигация",
+              "класс": "СЛУЖЕБНОЕ",
+              "маркеров": 1,
+              "токены": [
+                  "LEGACY_NO_CLASSES"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 109,
+              "срез": "4. Что проверено механически",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 123,
+              "срез": "5. Оценка «не многовато ли» — прямо",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 138,
+              "срез": "6. Чеклист мерджа",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_PARTIAL",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "7@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 170,
+              "срез": "7. Что этот документ НЕ делает",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "8@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 177,
+              "срез": "8. Финальные ворота — что проверено механически перед мерджем",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "9@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 199,
+              "срез": "9. Аудит на мусор (раунд 62)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "10@06_MERGE_READINESS",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/06_MERGE_READINESS.md",
+              "строка": 265,
+              "срез": "10. Три пункта, которые оставались открытыми перед мерджем: итог раунда 63",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ATTRIBUTION_HOLD",
+                  "EDITION_UNAVAILABLE",
+                  "LOCATOR_PARTIAL",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@01_what-is-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@01_what-is-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 27,
+              "срез": "1. Почему «искупление» — не одно слово",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@01_what-is-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 37,
+              "срез": "2. Не одна теория — несколько мотивов одного дела",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@01_what-is-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 50,
+              "срез": "3. Совершение и применение — два круга одного дела",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@01_what-is-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 60,
+              "срез": "4. «За кого?» — настоящий вопрос, но второй",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@01_what-is-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 71,
+              "срез": "5. Призыв, который не отменяется",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@01_what-is-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 75,
+              "срез": "6. Что дальше в серии",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@01_what-is-atonement~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 81,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@01_what-is-atonement~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/01_what-is-atonement.md",
+              "строка": 91,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@02_why-the-cross-necessity",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@02_why-the-cross-necessity",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+              "строка": 28,
+              "срез": "1. Почему «просто простить» — не так просто",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@02_why-the-cross-necessity",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+              "строка": 34,
+              "срез": "2. Два ответа на один вопрос — и оба внутри христианской традиции",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@02_why-the-cross-necessity",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+              "строка": 43,
+              "срез": "3. Любовь первична — кровь не «покупает» любовь",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@02_why-the-cross-necessity",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+              "строка": 47,
+              "срез": "4. Если спасать — то по-настоящему",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@02_why-the-cross-necessity",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+              "строка": 51,
+              "срез": "5. Что дальше",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@02_why-the-cross-necessity~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+              "строка": 57,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@02_why-the-cross-necessity~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/02_why-the-cross-necessity.md",
+              "строка": 67,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@03_nature-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@03_nature-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 28,
+              "срез": "1. Послушание — несущая категория",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@03_nature-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 32,
+              "срез": "2. Четыре категории Писания — четыре стороны одного дела",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@03_nature-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 39,
+              "срез": "3. Заместительное наказание — несущий мотив реформатской традиции",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@03_nature-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 45,
+              "срез": "4. Победа — внутри искупления, не вместо него",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@03_nature-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 49,
+              "срез": "5. Совершенство: раз и навсегда",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@03_nature-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 53,
+              "срез": "6. Оговорка о терминах",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "7@03_nature-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 57,
+              "срез": "7. Что дальше",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@03_nature-of-atonement~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 63,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@03_nature-of-atonement~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/03_nature-of-atonement.md",
+              "строка": 74,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "PRIVATE_STUDY_ONLY",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@04_perfection-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@04_perfection-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+              "строка": 27,
+              "срез": "1. Закон не мог довести до конца",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@04_perfection-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+              "строка": 33,
+              "срез": "2. Что это значит на практике",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@04_perfection-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+              "строка": 41,
+              "срез": "3. Не полемика ради полемики",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@04_perfection-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+              "строка": 47,
+              "срез": "4. Узел, который надо держать честно",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@04_perfection-of-atonement",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+              "строка": 51,
+              "срез": "5. Что дальше",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@04_perfection-of-atonement~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+              "строка": 57,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@04_perfection-of-atonement~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/04_perfection-of-atonement.md",
+              "строка": 68,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "PRIVATE_STUDY_ONLY",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@05_for-whom-did-christ-die-question",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@05_for-whom-did-christ-die-question",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 29,
+              "срез": "1. Почему «за всех или за избранных?» — плохой вопрос",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@05_for-whom-did-christ-die-question",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 44,
+              "срез": "2. Оси, которые нельзя смешивать",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@05_for-whom-did-christ-die-question",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 50,
+              "срез": "3. Живые позиции — с сильнейшими случаями, без карикатур",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@05_for-whom-did-christ-die-question",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 62,
+              "срез": "4. История спора — «эволюция понимания»",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@05_for-whom-did-christ-die-question",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 66,
+              "срез": "5. Призыв, который не отменяется — при любой позиции",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@05_for-whom-did-christ-die-question",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 70,
+              "срез": "6. Что будет дальше — и чего здесь нет",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@05_for-whom-did-christ-die-question~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 76,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "EVIDENCE_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@05_for-whom-did-christ-die-question~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/05_for-whom-did-christ-die-question.md",
+              "строка": 89,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "ARCHIVE_HOLD",
+                  "EVIDENCE_HOLD",
+                  "LOCATOR_HOLD",
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@07_dort-sufficiency-efficiency",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@07_dort-sufficiency-efficiency",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+              "строка": 27,
+              "срез": "1. Что синод сделал (порядок важен)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@07_dort-sufficiency-efficiency",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+              "строка": 38,
+              "срез": "2. Что синод отверг (Отвержение ошибок I–VII)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@07_dort-sufficiency-efficiency",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+              "строка": 42,
+              "срез": "3. Что Дорт **не** сказал",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@07_dort-sufficiency-efficiency",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+              "строка": 50,
+              "срез": "4. Риск, который надо держать",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@07_dort-sufficiency-efficiency",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+              "строка": 54,
+              "срез": "5. Что дальше",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@07_dort-sufficiency-efficiency~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+              "строка": 60,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PUBLICATION_HOLD",
+                  "RIGHTS_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@07_dort-sufficiency-efficiency~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/07_dort-sufficiency-efficiency.md",
+              "строка": 69,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@08_calvin-owen-amyraldianism",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@08_calvin-owen-amyraldianism",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+              "строка": 29,
+              "срез": "1. Три particular-чтения 1 Ин. 2:2 — не одно",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@08_calvin-owen-amyraldianism",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+              "строка": 40,
+              "срез": "2. 1 Тим. 2:4 — три particular-чтения (реестр C-03)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@08_calvin-owen-amyraldianism",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+              "строка": 48,
+              "срез": "3. 2 Пет. 2:1 — Мюррей молчит, Оуэн разбирает (реестр C-04)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@08_calvin-owen-amyraldianism",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+              "строка": 52,
+              "срез": "4. Гипотетический универсализм и Амиральд — внутри семьи",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@08_calvin-owen-amyraldianism",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+              "строка": 58,
+              "срез": "5. Почему это важно читателю",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@08_calvin-owen-amyraldianism~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+              "строка": 64,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@08_calvin-owen-amyraldianism~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/08_calvin-owen-amyraldianism.md",
+              "строка": 74,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PRIVATE_STUDY_ONLY"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@09_free-offer-of-the-gospel",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@09_free-offer-of-the-gospel",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 29,
+              "срез": "1. Ось предложения — не ось объёма",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@09_free-offer-of-the-gospel",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 33,
+              "срез": "2. Что исповедует Дорт",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@09_free-offer-of-the-gospel",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 37,
+              "срез": "3. Что сказал Кальвин",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@09_free-offer-of-the-gospel",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 41,
+              "срез": "4. Церковный отчёт 1948 года — с обеими сторонами",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@09_free-offer-of-the-gospel",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 45,
+              "срез": "5. Hyper-Calvinism — отдельная ошибка, не «последовательность»",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "6@09_free-offer-of-the-gospel",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 49,
+              "срез": "6. Пастырское следствие",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@09_free-offer-of-the-gospel~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 55,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@09_free-offer-of-the-gospel~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/09_free-offer-of-the-gospel.md",
+              "строка": 64,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@10_tulip-without-caricature",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "LOCATOR_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@10_tulip-without-caricature",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+              "строка": 26,
+              "срез": "1. Что такое TULIP на самом деле",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@10_tulip-without-caricature",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+              "строка": 30,
+              "срез": "2. Пять пунктов — и у каждого свой спор",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@10_tulip-without-caricature",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+              "строка": 38,
+              "срез": "3. Почему серия не начинается с TULIP",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@10_tulip-without-caricature",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+              "строка": 42,
+              "срез": "4. Без карикатур — в обе стороны",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@10_tulip-without-caricature",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+              "строка": 48,
+              "срез": "5. Тон площадки",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@10_tulip-without-caricature~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+              "строка": 54,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@10_tulip-without-caricature~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/10_tulip-without-caricature.md",
+              "строка": 62,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@11_order-of-salvation",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@11_order-of-salvation",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+              "строка": 26,
+              "срез": "1. Рабочий порядок",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@11_order-of-salvation",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+              "строка": 30,
+              "срез": "2. Каждое звено — одно предложение",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@11_order-of-salvation",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+              "строка": 41,
+              "срез": "3. Логика порядка",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@11_order-of-salvation",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+              "строка": 45,
+              "срез": "4. Что дальше",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@11_order-of-salvation~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+              "строка": 51,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@11_order-of-salvation~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/11_order-of-salvation.md",
+              "строка": 59,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PRIVATE_STUDY_ONLY"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@12_union-with-christ",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@12_union-with-christ",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+              "строка": 26,
+              "срез": "1. Не девятая ступень",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@12_union-with-christ",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+              "строка": 30,
+              "срез": "2. «Во Христе» — шире применения",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@12_union-with-christ",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+              "строка": 39,
+              "срез": "3. Данные Отцом — и пришедшие",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@12_union-with-christ",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+              "строка": 43,
+              "срез": "4. Практика: уверенность стоит на союзе",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@12_union-with-christ",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+              "строка": 47,
+              "срез": "5. Что дальше",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@12_union-with-christ~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+              "строка": 53,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@12_union-with-christ~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/12_union-with-christ.md",
+              "строка": 60,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PRIVATE_STUDY_ONLY"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@13_justification-adoption-sanctification-perseverance",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+              "строка": 8,
+              "срез": "Опорные карточки (все с проверенными локаторами и правами)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "1@13_justification-adoption-sanctification-perseverance",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+              "строка": 27,
+              "срез": "1. Оправдание — объявление, а не изменение",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "2@13_justification-adoption-sanctification-perseverance",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+              "строка": 31,
+              "срез": "2. Усыновление — из рабства в семью",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "3@13_justification-adoption-sanctification-perseverance",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+              "строка": 35,
+              "срез": "3. Освящение — дело Духа в нас",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "4@13_justification-adoption-sanctification-perseverance",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+              "строка": 39,
+              "срез": "4. Постоянство — дар, а не гарантия «по умолчанию»",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "5@13_justification-adoption-sanctification-perseverance",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+              "строка": 43,
+              "срез": "5. Куда дальше",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PUBLICATION_HOLD"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@13_justification-adoption-sanctification-perseverance~2",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+              "строка": 49,
+              "срез": "Что здесь утверждать нельзя (граница черновика)",
+              "класс": "БЕЗ МАРКЕРА",
+              "маркеров": 0,
+              "токены": [],
+              "машинно": false,
+              "машинноПоФайлу": true
+          },
+          {
+              "код": "СР@13_justification-adoption-sanctification-perseverance~3",
+              "лан": "synthesis",
+              "файл": "ИСКУПЛЕНИЕ/synthesis/drafts/13_justification-adoption-sanctification-perseverance.md",
+              "строка": 58,
+              "срез": "Примечания по источникам (для редактора, не для публикации)",
+              "класс": "УДЕРЖИВАЕТСЯ",
+              "маркеров": 1,
+              "токены": [
+                  "PRIVATE_STUDY_ONLY"
+              ],
+              "машинно": false,
+              "машинноПоФайлу": true
+          }
+      ],
+      "какЧитать": "покрытоМашинно — сколько кодов строк найдено в машинных списках того же реестра (карточки, молчания, заявки): сверка двух учётов лана, а не похвала сама себе",
+      "recheckCommand": "python3 -B scripts/atonement_claim_register.py --check synthesis",
+      "measuredAt": "2026-10-26T19:38:33Z",
+      "checkedAt": "2026-10-26T19:38:33Z",
+      "предыдущийСъём": "2026-10-26T19:38:32Z"
+  }
 }

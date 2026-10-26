@@ -56,6 +56,7 @@ SPINE = (
     "14_OWEN_DEATH_OF_DEATH_BOOK_IV_LOCATORS.md",
     "15_CALVIN_III24_AND_DORT_II_LOCATORS.md",
     "16_DORT_HEAD_II_ENGLISH_1840_PRIMARY_TEXT.md",
+    "18_SERIES_AUDIT_AND_ARCS_2026-10-26.md",
 )
 SUBLANES = ("ot", "nt", "fathers", "synthesis")
 AUTHORITY_ID = "ATONEMENT-CORPUS-AUTHORITY-2026-10-07"
@@ -300,7 +301,7 @@ if registry:
         name = value.strip()
         if not re.fullmatch(r"(?:[\w./-]+/)?\d{2}_[\w.-]+\.(?:md|json)", name):
             continue
-        if name.startswith(absent_prefixes):   # то же объявление отсутствия, что и уPrefixed-скана
+        if name.startswith(absent_prefixes):   # то же объявление отсутствия, что и у скана с префиксом
             continue
         if any((b / name).exists() or (b / name.split("/")[-1]).exists() for b in bases):
             continue
@@ -1481,6 +1482,17 @@ else:
         if _cset != _mq:
             errors.append(f"ПРАВИЛО 23: строки `C` и очередь разошлись: только в C {sorted(_cset - _mq)[:5]}, только в очереди {sorted(_mq - _cset)[:5]} — "
                           "каждая «надо добыть» обязана иметь адресата, иначе «масса» собирается вычёркиванием неудобных строк")
+        # 23.2 (введено кругом 23): очередь — это множество адресов, а не список строк. Пока номер
+        # встречается дважды, снятие строки с очереди оставляет её в тексте, и бидиекция с классом `C`
+        # этого не различает: дубль и был найден руками 23.10.2026 на Q-164 (две строки об одном авторе).
+        _cnt23_2 = __import__("collections").Counter(
+            int(x) for x in re.findall(r"^-\s*Q-(\d+)\b", read(MASS_FILE), re.M))
+        _qdup = sorted(n for n, c in _cnt23_2.items() if c > 1)
+        if _qdup:
+            errors.append(
+                "ПРАВИЛО 23.2: адреса очереди продублированы (%s) — у одного номера обязана быть ровно одна "
+                "строка очереди, иначе «снять адрес» и «снять строку» расходятся, а очередь перестаёт быть "
+                "множеством адресов" % ", ".join("Q-%d ×%d" % (n, _cnt23_2[n]) for n in _qdup[:4]))
         _noloc = [n for n, (k, l) in _mrows.items() if k == "A1" and not MASS_LOC.search(l)]
         if _noloc:
             errors.append(f"ПРАВИЛО 23: {len(_noloc)} строк класса `A1` без локатора (первая — FP-{_noloc[0]:02d}) — «сверено по изданию» без страницы/колонки/парграфа "
@@ -1511,6 +1523,792 @@ else:
                          or not r.startswith(("ИСКУПЛЕНИЕ/", "docs/")) and not list(DOCS.glob(r + "*")) and not list(CORPUS.glob(r + "*")))
         if _badref:
             errors.append(f"ПРАВИЛО 23: {len(_badref)} ссылок реестра ведут на несуществующий файл лана ({_badref[:5]}) — ссылка «см. 22_» обязана находиться")
+
+# нуль — законный ответ обхода, а не отсутствие поля: заявленное «0» раньше читалось как -1
+# (`0 or -1`) и правило валилось ложным FAIL. Функция одна для правил 24 и 23.1, чтобы не заводить
+# два способа спотыкаться об одно и то же.
+def _numfield(d, key):
+    try:
+        _v = (d or {}).get(key)
+        return -1 if _v is None else int(_v)
+    except Exception:
+        return -1
+
+
+# ---- правило 24 (23.10.2026): «N вхождений» обязано быть переснятым в обеих азбуках и по названному файлу
+# Повод конкретный: круг 16 записал в README лана, что разбора Буньяна в 15_patristic_and_reformation_misattributions.md
+# нет («grep -i bunyan»: 0 вхождений). Обход был сделан по файлу другого лана (ИСКУПЛЕНИЕ/15_ — там и правда 0),
+# а назван в правке был docs/research/atonement/15_, где «Буньян» встречается 17 раз. Латинский шаблон по
+# кириллическому тексту не находит ничего, и «проверено обходом» становится самым опасным видом утверждения:
+# измерено — но не по тому предмету. Отсюда три требования к строке, которая считает вхождения: оба алфавита
+# названы, путь к файлу взят в обратные кавычки и стоит ближе всего к числу, и каждое число переснимается здесь же.
+_MINE24 = [CORPUS / "00_README_AND_NAVIGATION.md", CORPUS / "05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md",
+           CORPUS / "17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md",
+           DOCS / "README.md", DOCS / "35_four_point_authors_mass_registry.md"]
+_PC24 = re.compile("[«\"]([A-Za-z\u0410-\u042F\u0430-\u044F\u0401\u0451][A-Za-z\u0410-\u042F\u0430-\u044F\u0401\u0451-]{2,})[»\"][^0-9\n]{0,24}?(\\d+)\\s+вхождений")
+_CYR24 = re.compile("[\u0410-\u042F\u0430-\u044F\u0401\u0451]")
+_PATH24 = re.compile("`([^`]+\\.md)`")
+_CNT24 = re.compile(r"\d+\s+вхождений")  # претензия обязана быть числом: «много вхождений» — не измерение
+_MTH24 = re.compile(r"grep|греп|wc -l|обход|проверено|сверено", re.I)  # …и способом, названным в той же строке
+
+
+def _occ24(text, pattern):
+    return len(re.findall(re.escape(pattern), text, re.IGNORECASE))
+
+
+def _file24(ref):
+    for cand in ((ROOT / ref), (DOCS / Path(ref).name), (CORPUS / Path(ref).name)):
+        if cand.exists():
+            return cand
+    return None
+
+
+def _units24(text):
+    """Единица сверки — смысловой блок, а не физическая строка: абзац переносится по ширине, и
+    иначе «0 вхождений» осталось бы без названного файла только потому, что путь уехал на следующую
+    строку. Табличные строки, пункты списков и заголовки остаются единицами сами по себе."""
+    out, cur, cur_no = [], [], 1
+    for n, ln in enumerate(text.split("\n"), start=1):
+        if not ln.strip():
+            if cur:
+                out.append((cur_no, " ".join(cur)))
+                cur = []
+            continue
+        if cur and re.match(r"^(\||-\s|\d+\.\s|#{1,6}\s)", ln):
+            out.append((cur_no, " ".join(cur)))
+            cur = []
+        if not cur:
+            cur_no = n
+        cur.append(ln)
+    if cur:
+        out.append((cur_no, " ".join(cur)))
+    return out
+
+
+_claims24, _bad24, _recheck24 = 0, [], 0
+for _f24 in _MINE24:
+    if not _f24.exists():
+        continue
+    _t24 = _f24.read_text(encoding="utf-8", errors="replace")
+    _units24r = _units24(_t24)
+    for _no24, _l in _units24r:
+        if (EXEMPT in _l or not _CNT24.search(_l) or not _MTH24.search(_l)
+                or not _PATH24.search(_l)):
+            continue
+        _claims24 += 1
+        _hits24 = list(_PC24.finditer(_l))
+        _cyr24 = [m for m in _hits24 if _CYR24.search(m.group(1))]
+        _lat24 = [m for m in _hits24 if not _CYR24.search(m.group(1))]
+        _zero24 = [m for m in _hits24 if int(m.group(2)) == 0]
+        if _zero24 and not (_cyr24 and _lat24):
+            _bad24.append("%s:%d — «0 вхождений» назван одним шаблоном (кириллических %d, латинских %d из %d чисел); "
+                          "имя в русском файле пишется кириллицей, и греп по латинице даёт «0» как артефакт азбуки, "
+                          "а не как отсутствие" % (_f24.name, _no24, len(_cyr24), len(_lat24), len(_hits24)))
+            continue
+        if not _hits24:
+            _bad24.append("%s:%d — блок утверждает число вхождений в названном файле, но ни одно из них не "
+                          "оформлено как «шаблон» → N вхождений: переснять нечем" % (_f24.name, _no24))
+            continue
+        _paths24 = [(m.start(), m.group(1)) for m in _PATH24.finditer(_l)]
+        _cache24, _miss24 = {}, []
+        for m in _hits24:
+            _near = None
+            for _pos, _pp in _paths24:
+                # путь обязан стоять в той же строке и быть ближайшим: форма претензии —
+                # «X» → N вхождений по `файл.md`; если в строке два файла, к числу примыкает тот,
+                # что ближе, и спорить с этим нельзя, иначе число припишется чужому файлу
+                _d = abs(_pos - m.start())
+                if _near is None or _d < _near[0]:
+                    _near = (_d, _pp)
+            if _near is None:
+                _miss24.append("число «%s» заявлено без пути к файлу в обратных кавычках" % m.group(1))
+                continue
+            if _near[1] not in _cache24:
+                _fp = _file24(_near[1])
+                _cache24[_near[1]] = (_fp, _fp.read_text(encoding="utf-8", errors="replace") if _fp else None)
+            _fp, _txt24 = _cache24[_near[1]]
+            if _txt24 is None:
+                _miss24.append("файл %s не найден" % _near[1])
+                continue
+            _recheck24 += 1
+            _got24 = _occ24(_txt24, m.group(1))
+            if _got24 != int(m.group(2)):
+                _bad24.append("%s:%d — по %s шаблон «%s»: заявлено %s, обход видит %d"
+                              % (_f24.name, _no24, _fp.name, m.group(1), m.group(2), _got24))
+        if _miss24:
+            _bad24.append("%s:%d — %s, значит «N вхождений» ничем не подтверждено"
+                          % (_f24.name, _no24, "; ".join(_miss24[:2])))
+if _bad24:
+    errors.append("ПРАВИЛО 24: %d строки-претензии не выдерживают пересъёма (%s) — «мы проверили» обязано быть "
+                  "проверяемым в обеих азбуках и по названному файлу" % (len(_bad24), "; ".join(_bad24[:4])))
+_other24 = 0
+_own24 = set(_MINE24)
+for _f24 in sorted(set(list(CORPUS.rglob("*.md")) + list(DOCS.rglob("*.md"))) - _own24):
+    try:
+        _t24 = _f24.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        continue
+    _other24 += sum(1 for _l in _t24.split("\n") if _CNT24.search(_l) and _MTH24.search(_l))
+_decl24 = reg.get("grepBilingualAudit20261023") or {}
+if _decl24:
+    for _k in ("scope", "claimsChecked", "bilingualOk", "recheckedOccurrences", "otherLaneClaims",
+               "recheckCommand", "checkedAt"):
+        if _k not in _decl24:
+            errors.append("ПРАВИЛО 24: в grepBilingualAudit20261023 нет поля «%s»" % _k)
+    if _numfield(_decl24, "claimsChecked") != _claims24:
+        errors.append("ПРАВИЛО 24: заявлено %s строки-претензии, обход видит %d"
+                      % (_decl24.get("claimsChecked"), _claims24))
+    if _numfield(_decl24, "bilingualOk") != _claims24 - len(_bad24):
+        errors.append("ПРАВИЛО 24: двуалфавитных строк заявлено %s, обход видит %d"
+                      % (_decl24.get("bilingualOk"), _claims24 - len(_bad24)))
+    if _numfield(_decl24, "recheckedOccurrences") != _recheck24:
+        errors.append("ПРАВИЛО 24: переснятых чисел заявлено %s, обход видит %d — правило, которое ничего "
+                      "не переснимает, это не проверка, а формат"
+                      % (_decl24.get("recheckedOccurrences"), _recheck24))
+    if _numfield(_decl24, "otherLaneClaims") != _other24:
+        notes.append("ПРАВИЛО 24: в чужих ланах %d строк того же вида (заявлено %s) — чужой прогон моим числом "
+                     "не блокируется" % (_other24, _decl24.get("otherLaneClaims")))
+else:
+    notes.append("ПРАВИЛО 24: строк-претензий в моих файлах %d, переснято чисел %d, в чужих ланах ещё %d "
+                 "(не блокируется)" % (_claims24, _recheck24, _other24))
+# ---- правило 23.1 (двадцатый круг): сводка реестра в README лана обязана равняться обходу по реестру
+# Дефект, из-за которого правило появилось: README лана держал «180 строк», `A2` 24, `B1` 20, `C` 105 и
+# «адресатов — 105», тогда как реестр после круга 18 дал 203 / 26 / 27 / 119 / 119. Круг 18 поправил в этой
+# же строке долю (12 %) и предложение про 1:1, но не счётчики — потому что правило 24 сторожит претензии
+# вида «N вхождений», а за сводкой не сторожил никто. Числа, которые переснимаются, не имеют права жить
+# в одном файле с числами, которые нет: расхождение видно ровно одному читателю — тому, кто сверит.
+_LANE_README23 = DOCS / "README.md"
+if MASS_FILE.is_file() and _LANE_README23.is_file():
+    _lt23 = read(_LANE_README23)
+    _mt23 = read(MASS_FILE)
+    _rows23 = re.findall(r"^\|\s*FP-(\d+)\s*\|(.*?)$", _mt23, re.M)
+    _cls23 = {}
+    for _n23, _body23 in _rows23:
+        _m23 = re.search(r"`(A1|A2|B1|B2|C)`", _body23)
+        _cls23[_m23.group(1) if _m23 else "нет"] = _cls23.get(_m23.group(1) if _m23 else "нет", 0) + 1
+    _q23 = len(set(re.findall(r"^- Q-(\d+) —", _mt23, re.M)))
+    _share23 = _cls23.get("A1", 0) * 100 // max(len(_rows23), 1)
+    _live23 = {"rows": len(_rows23), "A1": _cls23.get("A1", 0), "A2": _cls23.get("A2", 0),
+               "B1": _cls23.get("B1", 0), "B2": _cls23.get("B2", 0), "C": _cls23.get("C", 0),
+               "queue": _q23, "share": _share23}
+    _pats23 = [
+        ("строк-носителей", r"(\d+) строк[а-яё]*[- ]носител", "rows"),
+        ("класс A1", r"`A1` прочитано по изданию \((\d+)\)", "A1"),
+        ("класс A2", r"`A2` сверены выходные данные \((\d+)\)", "A2"),
+        ("класс B1", r"`B1` по вторичному с локатором \((\d+)\)", "B1"),
+        ("класс B2", r"`B2` приписано, не сверено \((\d+)\)", "B2"),
+        ("класс C", r"`C` требуется добыча \((\d+)\)", "C"),
+        ("адресатов очереди", r"адресатов — (\d+)", "queue"),
+        ("доля прочитанного по первичному", r"доля прочитанного по первичному — (\d+)\s*%", "share"),
+    ]
+    _mism23, _seen23 = [], 0
+    for _label, _pat, _key in _pats23:
+        _mm = re.search(_pat, _lt23)
+        if not _mm:
+            _mism23.append(f"{_label}: в README лана нет числа по шаблону «{_pat}» — сверять нечем")
+            continue
+        _seen23 += 1
+        if int(_mm.group(1)) != _live23[_key]:
+            _mism23.append(f"{_label}: README говорит {_mm.group(1)}, обход реестра даёт {_live23[_key]}")
+    if _mism23:
+        errors.append("ПРАВИЛО 23.1: сводка реестра в README лана расходится с реестром в %d числах (%s) — "
+                      "числа в одном файле обязаны пересниматься одним обходом"
+                      % (len(_mism23), "; ".join(_mism23[:4])))
+    _lr = (reg.get("fourPointMassRegistry20261023") or {}).get("laneReadmeConsistency20261023") or {}
+    if not _lr:
+        errors.append("ПРАВИЛО 23.1: сводка сверяется (чисел: %d), а записи о сверке в реестре нет — "
+                      "проверка без следа в реестре неотличима от намерения проверить" % _seen23)
+    else:
+        for _k in ("claimsChecked", "mismatches", "liveNumbers", "measuredAt", "method", "recheckCommand", "checkedAt"):
+            if _k not in _lr:
+                errors.append(f"ПРАВИЛО 23.1: в laneReadmeConsistency20261023 нет поля «{_k}»")
+        if _numfield(_lr, "claimsChecked") != _seen23:
+            errors.append("ПРАВИЛО 23.1: заявлено %s сверенных чисел, обход видит %d"
+                          % (_lr.get("claimsChecked"), _seen23))
+        if _numfield(_lr, "mismatches") != len(_mism23):
+            errors.append("ПРАВИЛО 23.1: расхождений заявлено %s, обход нашёл %d"
+                          % (_lr.get("mismatches"), len(_mism23)))
+        if _lr.get("liveNumbers") != _live23:
+            errors.append("ПРАВИЛО 23.1: liveNumbers = %s, обход даёт %s — числа сводки переснимаются здесь, "
+                          "а не переносятся из прошлого круга" % (_lr.get("liveNumbers"), _live23))
+
+
+# ---- правило 25 (23.10.2026): индекс библиотеки Drive обязан сходиться с реестром, а не с ощущением
+# Повод: 23.10 носители переехали в одну папку `10`, и вместе с переезмом встал вопрос, чем держит порядок
+# список файлов. Ответ гейта: индексом, в котором у каждого объекта записаны права, статус чтения и строки
+# реестра, на которые он влияет. Дальше — три инварианта, каждый из которых уже ломался руками:
+# (а) объект периметра без записи в индексе = носитель, который цитируют «по памяти»;
+# (б) статус «прочитано» без печатного локатора = то самое «лежать на Drive» вместо «цитировать»;
+# (в) зеркало реестра, чьё имя обещает md5 и число строк, обязано этому md5 соответствовать: именно так
+#     круг 18 обнаружил, что слепок в Drive отстаёт от дерева, но заметил это человек, а не проверка.
+LIB = CORPUS / "data" / "atonement-library-index.json"
+_LIB25_REQ = ("driveId", "folder", "kind", "mime", "name", "role", "rights", "readState",
+              "aboutRows", "citedBy", "queueRows", "locator", "note", "bytes")
+_LIB25_ID = re.compile(r"^[0-9A-Za-z_-]{20,60}$")
+_LIB25_NAME_MD5 = re.compile(r"md5 ([0-9a-f]{32})")
+_LIB25_NAME_BYTES = re.compile(r"(\d[\d ]{0,10})\s*B[,)]")
+_LIB25_NAME_ROWS = re.compile(r"(\d+)\s+строк")
+
+
+def _lib25_rows(pattern, text):
+    return set(re.findall(pattern, text, re.M))
+
+
+def _cnt25(seq):
+    out = {}
+    for x in seq:
+        out[x] = out.get(x, 0) + 1
+    return dict(sorted(out.items()))
+
+
+if LIB.is_file():
+    try:
+        _lib = json.loads(read(LIB))
+    except Exception as _exc:  # noqa: BLE001
+        errors.append(f"ПРАВИЛО 25: индекс библиотеки {LIB.name} не читается: {_exc}")
+        _lib = {}
+    _recs = _lib.get("records") or []
+    _rights = set(_lib.get("rights") or [])
+    _states = set(_lib.get("readStates") or [])
+    _ladder = list(_lib.get("readStateLadder") or [])
+    _apply_to = set((_lib.get("appliesOnlyTo") or {}).get("readStateLadder") or [])
+    _folders = set((_lib.get("scope") or {}).get("indexedFolders") or [])
+    _fids = (_lib.get("scope") or {}).get("folderIds") or {}
+    _mass_txt = read(MASS_FILE) if MASS_FILE.is_file() else ""
+    _fp_rows = _lib25_rows(r"^\|\s*FP-(\d+)\s*\|", _mass_txt)
+    _q_rows = _lib25_rows(r"^- Q-(\d+) —", _mass_txt)
+    _o_rows = _lib25_rows(r"\bO(\d{2})\b", read(CORPUS / "05_SOURCE_REGISTRY_AND_ACQUISITION_QUEUE.md"))
+    _seen_ids, _bad25 = {}, []
+    for _r in _recs:
+        _tag = str(_r.get("name") or _r.get("driveId") or "?")[:56]
+        _miss = [k for k in _LIB25_REQ if k not in _r]
+        if _miss:
+            _bad25.append(f"{_tag}: нет полей {_miss}")
+            continue
+        _did = str(_r["driveId"])
+        if not _LIB25_ID.match(_did):
+            _bad25.append(f"{_tag}: driveId {_did!r} не похож на id Drive")
+        _seen_ids[_did] = _seen_ids.get(_did, 0) + 1
+        if _r["folder"] not in _folders:
+            _bad25.append(f"{_tag}: папка {_r['folder']!r} вне периметра индекса")
+        if _rights and _r["rights"] not in _rights:
+            _bad25.append(f"{_tag}: права {_r['rights']!r} вне объявленного перечня {sorted(_rights)}")
+        if _states and _r["readState"] not in _states:
+            _bad25.append(f"{_tag}: статус чтения {_r['readState']!r} вне перечня")
+        if _r["kind"] == "file" and not (isinstance(_r["bytes"], int) and _r["bytes"] > 0):
+            _bad25.append(f"{_tag}: файл без размера — индекс, по которому нельзя отличить зерно от ярлыка")
+        if _r["kind"] == "folder" and _r["bytes"] is not None:
+            _bad25.append(f"{_tag}: у папки стоит размер — съём перепутал тип объекта")
+        _up = str(_r["name"]).startswith("УСТАРЕЛО")
+        if _up != (_r["rights"] == "HOLD_superseded"):
+            _bad25.append(f"{_tag}: имя говорит «УСТАРЕЛО»={_up}, а права — {_r['rights']!r}: пометка и класс "
+                          "обязаны быть одним фактом, иначе «устаревшее» читается как живое")
+        for _ref in list(_r.get("aboutRows") or []) + list(_r.get("citedBy") or []):
+            _n = str(_ref).replace("FP-", "")
+            if not str(_ref).startswith("FP-") or _n.lstrip("0") not in _fp_rows:
+                _bad25.append(f"{_tag}: строка реестра {_ref!r} не найдена в {MASS_FILE.name}")
+        for _ref in list(_r.get("queueRows") or []):
+            _s = str(_ref)
+            if _s.startswith("Q-") and _s[2:].lstrip("0") not in _q_rows:
+                _bad25.append(f"{_tag}: адреса очереди {_s!r} в {MASS_FILE.name} нет")
+            if re.fullmatch(r"O\d{2}", _s) and _s[1:] not in _o_rows:
+                _bad25.append(f"{_tag}: позиции добычи {_s!r} в 05_ нет")
+        _gf = _r.get("gitFile")
+        if _gf and not (ROOT / _gf).is_file():
+            _bad25.append(f"{_tag}: gitFile {_gf!r} не существует — зеркало ссылается на несуществующий первоисточник")
+        if _apply_to and _r["role"] in _apply_to and _ladder:
+            _st = _r["readState"]
+            if _st not in _ladder:
+                _bad25.append(f"{_tag}: носитель материала со статусом {_st!r} вне лестницы чтения")
+            else:
+                if _ladder.index(_st) >= _ladder.index("locator_extracted") and not str(_r["locator"]).strip():
+                    _bad25.append(f"{_tag}: статус {_st!r} без печатного локатора — «лежать в папке» не есть «прочитано»")
+                if _st == "registry_linked" and not (_r.get("citedBy") or []):
+                    _bad25.append(f"{_tag}: заявлено registry_linked, но ни одна строка реестра не опирается на этот носитель")
+                if _st == "unopened" and (_r.get("citedBy") or []):
+                    _bad25.append(f"{_tag}: unopened не может иметь citedBy ({_r.get('citedBy')[:2]})")
+    _dup = sorted(k for k, n in _seen_ids.items() if n > 1)
+    if _dup:
+        _bad25.append(f"{len(_dup)} id Drive встречаются в индексе больше одного раза ({_dup[:3]})")
+    _dm25 = (globals().get("reg") or {}).get("driveMirrors") or {}
+    _declared_mirror = str((_dm25.get("massRegistry20261023") or {}).get("driveFileId") or "")
+    if _declared_mirror and _declared_mirror not in _seen_ids:
+        _bad25.append("зеркало 35_ в 05: id " + _declared_mirror[:10] + "… объявлен driveMirrors."
+                      "massRegistry20261023.driveFileId, но записи о нём в индекса нет — каталог обязан "
+                      "называться полным, а не случайным срезом")
+    _dm25_blob = json.dumps(_dm25, ensure_ascii=False)
+    for _r in _recs:
+        if _r.get("role") == "registry-mirror" and str(_r["driveId"]) not in _dm25_blob:
+            _bad25.append(f"{str(_r['name'])[:40]}: индекс называет этот объект зеркалом реестра, а в "
+                          "driveMirrors такого id нет — индекс не имеет права выдумывать зеркала")
+    _out_of_scope = set((((globals().get("reg") or {}).get("libraryIndex20261023") or {})
+                         .get("mirrorsOutsideScope") or {}).keys())
+    _dm_all = (globals().get("reg") or {}).get("driveMirrors") or {}
+    for _fk, _fv in _dm_all.items():
+        if not re.fullmatch(r"file\d+", str(_fk)) or not isinstance(_fv, str):
+            continue
+        if _fv in _seen_ids or _fk in _out_of_scope:
+            continue
+        _bad25.append(f"driveMirrors.{_fk}: индекс не знает про зеркало {_fv[:12]}… и оно не объявлено в "
+                      "mirrorsOutsideScope — либо запись в индекса нужна, либо исключение надо назвать")
+    _sub = [k for k in _fids if re.match(r"^10\.\d$", k)]
+    for k in _sub:
+        if not any(r["driveId"] == _fids[k] and r["kind"] == "folder" for r in _recs):
+            _bad25.append(f"{k}: папка из scope.folderIds не описана записью kind=folder в индексе")
+    # ---- правило 23.3 (круг 24, 23.10.2026): класс строки реестра и класс в записи индекса — одно число
+    # Повод собственный: круг 24 поднял `FP-160` и `FP-165` и ввёл `FP-207`. Записи индекса о снятых
+    # носителях хранят поле registryRowClass, и до этого круга его не сверял никто — индекс имел право
+    # продолжать утверждать `C` о строке, которая уже прочитана по изданию. Класс, записанный в двух
+    # местах, обязан расходиться сам. Первое, что правило поймало, — запись круга 22 о Кэрролле: она
+    # ссылалась на две строки разного класса (FP-205 `C` и FP-206 `B1`), а поле было одно; для таких
+    # записей введено registryRowClasses — явное перечисление класса по каждой строке.
+    _rows23_3, _, _, _ = measure_mass_registry()
+    _clsdecl23_3, _bad23_3 = 0, []
+
+    def _refs23_3(_r):
+        out = []
+        for _ref in list(_r.get("aboutRows") or []) + list(_r.get("citedBy") or []):
+            _n = re.match(r"FP-(\d+)$", str(_ref).strip())
+            if _n:
+                out.append(("FP-%03d" % int(_n.group(1)), int(_n.group(1))))
+        return out
+
+    for _r in _recs:
+        _decl23_3 = _r.get("registryRowClass")
+        _map23_3 = _r.get("registryRowClasses")
+        _tag23_3 = str(_r.get("name") or _r.get("driveId"))[:44]
+        _live23_3 = [("FP-%03d" % n, _rows23_3.get(n, (None, ""))[0]) for _k, n in _refs23_3(_r)]
+        _live23_3 = [(k, c) for k, c in _live23_3 if c is not None or k in _rows23_3]
+        if not _decl23_3 and not _map23_3:
+            # молчание легально, пока запись касается строк одного класса; две строки разных классов
+            # без перечисления — это не «проверке не за что зацепиться», а запись, которая врёт молча
+            _kinds23_3 = {c for _, c in _live23_3 if c}
+            if len(_live23_3) > 1 and len(_kinds23_3) > 1:
+                _bad23_3.append(f"{_tag23_3}: запись касается %d строк классов %s и не объявляет ни "
+                                "registryRowClass, ни registryRowClasses — молчание тут неотличимо от "
+                                "утверждения" % (len(_live23_3), sorted(_kinds23_3)))
+            continue
+        _clsdecl23_3 += 1
+        for _k23_3, _c23_3 in _live23_3:
+            if _c23_3 is None:
+                _bad23_3.append(f"{_tag23_3}: строка {_k23_3} в реестре не найдена")
+                continue
+            if isinstance(_map23_3, dict):
+                if _k23_3 not in _map23_3:
+                    _bad23_3.append(f"{_tag23_3}: строка {_k23_3} не перечислена в registryRowClasses, "
+                                    "а раз запись объявила перечисление, она обязана покрыть им каждую "
+                                    "свою строку")
+                    continue
+                _want23_3 = _map23_3[_k23_3]
+            else:
+                _want23_3 = _decl23_3
+            if _want23_3 != _c23_3:
+                _bad23_3.append(f"{_tag23_3}: индекс говорит «{_want23_3}» о {_k23_3}, реестр — «{_c23_3}»")
+        if isinstance(_map23_3, dict) and _refs23_3(_r) and _decl23_3:
+            _first23_3 = _rows23_3.get(_refs23_3(_r)[0][1], (None, ""))[0]
+            if _first23_3 and _decl23_3 != _first23_3:
+                _bad23_3.append(f"{_tag23_3}: registryRowClass при объявленном перечислении обязан описывать "
+                                f"первую строку записи ({_refs23_3(_r)[0][0]}), а он описывает «{_decl23_3}»")
+        if isinstance(_map23_3, dict):
+            _keys23_3 = {k for k, _ in _live23_3} | {("FP-%03d" % int(m.group(1)))
+                                                    for m in (re.match(r"FP-(\d+)$", str(x).strip())
+                                                              for x in list(_r.get("aboutRows") or [])
+                                                              + list(_r.get("citedBy") or [])) if m}
+            _extra23_3 = sorted(k for k in _map23_3 if k not in _keys23_3)
+            if _extra23_3:
+                _bad23_3.append(f"{_tag23_3}: registryRowClasses перечисляет {_extra23_3[:2]}, которых запись "
+                                "не касается")
+    if _bad23_3:
+        errors.append("ПРАВИЛО 23.3: %d расхождений класса между индексом и реестром (%s) — поднимая или "
+                      "понижая строку, править надо и запись о снятом носителе, иначе индекс описывает реестр "
+                      "прошлого круга" % (len(_bad23_3), "; ".join(_bad23_3[:3])))
+    else:
+        notes.append("ПРАВИЛО 23.3: %d записей индекса с объявленным классом строки сверены с реестром — "
+                     "класс носителя и класс строки совпадают" % _clsdecl23_3)
+    if _bad25:
+        errors.append(f"ПРАВИЛО 25: индекс библиотеки не сходится в {len(_bad25)} местах ({_bad25[:4]}) — индекс "
+                      "нужен ровно тогда, когда носителей больше, чем помнится")
+    # зеркала реестра: имя объекта Drive обязано врать не больше, чем сам файл. Круг 61 добавляет к
+    # классу registry-mirror роль ssot-corpus-snapshot: слепок корпуса лежал в 05. кругами 20..60 без
+    # единой проверки, и расхождение обнаружил человек, перечитавший список папки, — ровно тот дефект,
+    # против которого правило 25 было написано. Не подпадёт под него новый класс зеркал — сгниёт молча.
+    _lag = []
+    for _r in _recs:
+        if _r.get("role") not in ("registry-mirror", "ssot-corpus-snapshot") or not _r.get("gitFile"):
+            continue
+        _gf = ROOT / _r["gitFile"]
+        if not _gf.is_file():
+            continue
+        _m = _LIB25_NAME_MD5.search(str(_r["name"]))
+        if not _m:
+            _lag.append(f"{_r['gitFile']}: в имени зеркала нет md5 — сверку «закачано == в дереве» снять нечем")
+            continue
+        _live = __import__("hashlib").md5(_gf.read_bytes()).hexdigest()
+        if _m.group(1) != _live and not _r.get("lagBehindGit"):
+            _lag.append(f"{_r['gitFile']}: зеркало в Drive названо md5 {_m.group(1)}, а в дереве лежит {_live}; "
+                        "либо переливать слепок, либо честно писать lagBehindGit")
+        _mb = _LIB25_NAME_BYTES.search(str(_r["name"]))
+        if _mb and not _r.get("lagBehindGit"):
+            _want = int(_mb.group(1).replace(" ", ""))
+            if _want != _gf.stat().st_size:
+                _lag.append(f"{_r['gitFile']}: имя зеркала обещает {_want} B, файл весит {_gf.stat().st_size} B")
+        _mr = _LIB25_NAME_ROWS.search(str(_r["name"]))
+        if _mr and MASS_FILE.name in _gf.name:
+            _rows_live = len(re.findall(r"^\|\s*FP-\d+\s*\|", read(_gf), re.M))
+            if int(_mr.group(1)) != _rows_live:
+                _lag.append(f"зеркало реестра называет {_mr.group(1)} строк, а в дереве {_rows_live}: имя снимка устарело")
+    if _lag:
+        errors.append("ПРАВИЛО 25: %d зеркал(а) реестра расходятся с деревом (%s) — слепок на Drive обязан "
+                      "либо совпадать побайтово, либо быть помечённым как отстающий" % (len(_lag), "; ".join(_lag[:2])))
+    # бухгалтерия реестра: объявленные числа обязаны равняться обходу
+    _dec = (globals().get("reg") or {}).get("libraryIndex20261023") or {}
+    if not _dec:
+        errors.append("ПРАВИЛО 25: индекс есть, а блока libraryIndex20261023 в реестре нет — проверка не может "
+                      "отличить «я это посчитала» от «мне показалось»")
+    else:
+        for _k in ("records", "files", "folders", "materials", "materialsWithLocators", "byRights",
+                   "byReadState", "driveBytesSum", "largestBytes", "scopeFolders", "measuredAt", "method",
+                   "recheckCommand", "checkedAt"):
+            if _k not in _dec:
+                errors.append(f"ПРАВИЛО 25: в libraryIndex20261023 нет поля «{_k}»")
+        _files = [r for r in _recs if r.get("kind") == "file"]
+        _mats = [r for r in _recs if r.get("role") == "material"]
+        _got = {
+            "records": len(_recs), "files": len(_files),
+            "folders": len([r for r in _recs if r.get("kind") == "folder"]),
+            "materials": len(_mats),
+            "materialsWithLocators": len([r for r in _mats if str(r.get("locator") or "").strip()]),
+            "byRights": _cnt25(str(r.get("rights")) for r in _recs),
+            "byReadState": _cnt25(str(r.get("readState")) for r in _recs),
+            "driveBytesSum": sum(int(r.get("bytes") or 0) for r in _files),
+            "largestBytes": max([int(r.get("bytes") or 0) for r in _files] or [0]),
+            "scopeFolders": len(_folders),
+        }
+        for _k, _v in _got.items():
+            if _k in _dec and _dec[_k] != _v:
+                errors.append(f"ПРАВИЛО 25: libraryIndex20261023.{_k} = {_dec[_k]!r}, обход видит {_v!r} — "
+                              "число обязано пересниматься этим же определением")
+        notes.append("ПРАВИЛО 25: индекс библиотеки — %d записей (%d файлов, %d носителей материала), периметр — "
+                     "%d папок; содержимое 99 — HOLD вне периметра, пересъём командой из scope.excluded"
+                     % (len(_recs), len(_files), len(_mats), len(_folders)))
+else:
+    if (globals().get("reg") or {}).get("libraryIndex20261023"):
+        errors.append("ПРАВИЛО 25: реестр объявляет блок libraryIndex20261023, а файла индекса нет — ссылка "
+                      "на несуществующие данные (тот же дефект, что и коммит ae2821a в 17_)")
+    else:
+        notes.append("ПРАВИЛО 25: индекса библиотеки нет — проверка не срабатывает, и это не «всё описано»")
+
+
+# ---- правило 26 (круг 58): объявление утраты обязано быть повторимым, а не памятью --------------
+# Круг 52 записал, что внешнего каталога не добраться: повторная заявка дала 404. Круг 58 посмотрел, чем
+# именно кончился тот запрос, и увидел, что 404 — следствие регистра имени файла в URL, а источник жив.
+# Дело не в каталоге, а в классе дефекта: объявление об утрате пережило автора и читается как факт, хотя
+# было протоколом одной попытки. Правило переспрашивает очно: у объявления обязан быть назван канал
+# повторения; «этого нет в снимке» проверяется самим снимком; и — только по флагу, чтобы прогон не зависел
+# от чужого сервера, — объявленный 404 переспрашивается сетью.
+import os as _os26
+import subprocess as _sp26
+import urllib.error as _ue26
+import urllib.request as _ur26
+
+# основы, а не формы: «утрачена», «утрачено», «утрачены» — это одно объявление, и ловить его
+# надо по корню; формы глагола лана пишет как попала, и сверять правило по полному слову значит
+# оставить ему дыру в женском роде (её же и нашла батарея круга 58)
+_LOSS26 = ("не пересъёмн", "не исполним", "утрат", "не попали", "не ложились", "безвозвратн",
+           "невозвратн", "не входят", "недоступн", "не добрать", "не вернуть", "умер", "404")
+_IMPER26 = ("recheckCommand", "command", "артефакт", "how")
+_NET26 = "--net-loss-claims" in sys.argv[1:] or _os26.environ.get("ATONEMENT_NET") == "1"
+_PATHTOK26 = re.compile(r"[.]scratch/[A-Za-z0-9_./-]+[?*]?[A-Za-z0-9_./-]*")
+_SNAPTOK26 = re.compile(r"\b[0-9a-f]{7,12}\b")
+_URL26 = re.compile(r"https?://\S+")
+_claims26, _absent_ok26, _netnote26, _nettries26, _sib26 = [], 0, [], 0, 0
+_HAS26 = ("git ", "gh api", "curl", "http", "python3")
+_SIBLING26 = ("recheckCommand", "command", "какСверен", "how", "артефакт", "method")
+for _p26, _v26, _h26 in walk_paths(reg):
+    _key26 = _p26.rsplit(".", 1)[-1].split("[")[0]
+    if _key26 not in _IMPER26 or not any(_m in _v26 for _m in _LOSS26):
+        continue
+    _refs_pre26 = sorted({x.rstrip(".,;:)") for x in _PATHTOK26.findall(_v26)})
+    if not (_refs_pre26 or "404" in _v26 or "http" in _v26):
+        # «не входят в счётчики классов» — учётное исключение, а не объявление об утрате носителя:
+        # правило смотрит только те слова, которые называют то, чего нельзя достать
+        continue
+    _claims26.append((_p26, _v26))
+    if not any(_k in _v26 for _k in _HAS26):
+        # конвенция ланы: способ пересъёма стоит рядом, в command|recheckCommand того же блока
+        _sib_ok = isinstance(_h26, dict) and any(
+            isinstance(_h26.get(_sk), str) and any(_k in _h26[_sk] for _k in _HAS26)
+            for _sk in _SIBLING26 if _sk != _key26)
+        if _sib_ok:
+            _sib26 += 1
+        else:
+            errors.append(
+                f"ПРАВИЛО 26: {_p26} объявляет утрату, но канала повторения не называет ни в себе, ни в "
+                "соседних полях блока (recheckCommand, command, какСверен, method): «утрачено» без команды, "
+                "которой это можно переспросить, неотличимо от «мне так показалось»"
+            )
+        continue
+    _refs26 = _refs_pre26
+    # «.scratch/q46*.json» снимком не проверяется: кат-файл не знает глобов, а ненулевой
+    # код ответа при этом выглядит как подтверждение утраты — маска подтверждением быть не может
+    _globs26 = [x for x in _refs26 if any(_ch26 in x for _ch26 in "*?[")]
+    _refs26 = [x for x in _refs26 if x not in _globs26]
+    _snaps26 = [t for t in dict.fromkeys(_SNAPTOK26.findall(_v26))
+                if _sp26.run(["git", "cat-file", "-t", t], capture_output=True).returncode == 0]
+    for _ref26 in _refs26:
+        for _snap26 in _snaps26:
+            _rc = _sp26.run(["git", "cat-file", "-e", f"{_snap26}:{_ref26}"], capture_output=True)
+            if _rc.returncode == 0:
+                errors.append(
+                    f"ПРАВИЛО 26: {_p26} объявляет, что {_ref26} нет в снимке {_snap26}, а снимок его отдаёт — "
+                    "объявление противоречит тому самому каналу, на который ссылается"
+                )
+            else:
+                _absent_ok26 += 1
+    if _globs26:
+        _netnote26.append("пути заданы маской (%s) — снимком не сверяются, и отсутствием это не считается"
+                          % ", ".join(sorted(x for x in _globs26)[:2]))
+    if _refs26 and not _snaps26:
+        _netnote26.append("снимок из объявления не разрешился в этом клоне, поэтому отсутствие путей ни "
+                          "подтверждено, ни опровергнуто")
+    if _NET26 and "404" in _v26:
+        for _u26 in {x.rstrip(");,'") for x in _URL26.findall(_v26) if "contents/" in x or "repos/" in x}:
+            _nettries26 += 1
+            try:
+                _rq = _ur26.Request(_u26, method="HEAD", headers={"User-Agent": "atonement-lane"})
+                with _ur26.urlopen(_rq, timeout=60) as _resp:
+                    errors.append(
+                        f"ПРАВИЛО 26: {_p26} объявляет 404, а {_u26} отвечает {_resp.status}: объявление "
+                        "утраты протухло, источник жив — числа надо переснимать, а не цитировать"
+                    )
+            except _ue26.HTTPError as _e26:
+                if _e26.code != 404:
+                    # чужой сервер вправе ответить 403 или 502: это не «источник ожил», а другой отказ,
+                    # ошибкой корпуса он не является, но и подтверждением утраты быть не может
+                    _netnote26.append("%s: объявлено 404, ответ %d — отказ другой природы" % (_u26, _e26.code))
+            except Exception as _e26:  # noqa: BLE001 - сети может не быть, и это не провал корпуса
+                _netnote26.append("адрес %s переспрошен не был: %s" % (_u26, str(_e26)[:60]))
+if _claims26:
+    _tail = ("сетью переспрошено адресов: %d" % _nettries26) if _NET26 else (
+        "сеть не спрашивалась (флаг --net-loss-claims или ATONEMENT_NET=1 переспросит объявленные 404; без "
+        "него правило проверяет канал и снимок)")
+    notes.append(
+        "ПРАВИЛО 26: объявлений об утрате в приказных полях %d, снимковых подтверждений %d, каналов "
+        "переспроса в самом поле %d (в остальных %d канал назван соседним полем блока — так устроена "
+        "конвенция ланы, и правило её признаёт); %s%s"
+        % (len(_claims26), _absent_ok26, len(_claims26) - _sib26, _sib26, _tail,
+           ("; оговорки: " + "; ".join(sorted(set(_netnote26))[:2])) if _netnote26 else "")
+    )
+
+
+# ---- правило 27 (26.10.2026): учёт доводов под-ланов — тот же съём, что и учёт цитат
+# Аудит круга 58 измерил разрыв: stampedFieldsPerRegistry = {корпус: 493, ot: 0, nt: 0,
+# fathers: 0, synthesis: 0}. Ноль значил не «доводов нет», а «доводы не считаются»: спросить,
+# сколько аргументов закрыто, было не к чему. С этого круга считается, и считается так, чтобы
+# врать было нечем: реестр лежит в реестре того же лана, локатор каждой строки сверяется
+# побайтово, а класс строки вычитывается из маркеров её же прозы. Единый источник
+# классификации — скрипт съёма: гейт не переписывает определения, а вызывает их, иначе две
+# копии одного правила разъехались бы через круг, и это был бы ровно тот костыль, против
+# которого стоят все предыдущие двадцать шесть.
+sys.path.insert(0, str(ROOT / "scripts"))
+try:
+    import atonement_claim_register as _acr27
+except Exception as _exc27:  # noqa: BLE001 - отсутствие съёмщика обязано быть ошибкой, а не молчанием
+    _acr27 = None
+    errors.append(
+        f"ПРАВИЛО 27: scripts/atonement_claim_register.py не импортируется ({_exc27}) — реестр доводов "
+        "обязан сниматься тем же кодом, которым его проверяют"
+    )
+if _acr27 is not None:
+    _rollup27: dict = {}
+    _agg27 = {"сВердиктом": 0, "удерживается": 0, "открыто": 0, "закрыто": 0, "служебное": 0,
+              "покрытоМашинно": 0, "маркеров": 0, "неОтнесено": 0, "неРазрешено": 0}
+    # правило 28 (26.10.2026): второй учёт того же лана — машинные карточки — обязан
+    # сверяться с прозой; ниже он накапливается в тех же съёмах, а не в отдельном обходе
+    _agg28 = {"покрытоПоФайлу": 0, "файловПрозы": 0, "файловБезКарточки": 0,
+              "ссылокНаНесуществующийФайл": 0, "ссылокВнеОбходаЛана": 0, "записейВнеСтрокЛана": 0,
+              "файловБезКарточкиСостояния": 0, "маркеровВПрозеНеОтражённыхВКарточке": 0,
+              "маркеровВКарточкеНеИзПрозыЛана": 0}
+    _cross28: dict = {}
+    for _l27 in _acr27.SUBLANES + ("root",):
+        try:
+            _fresh27 = _acr27.scan_lan(_l27)
+        except Exception as _exc27b:  # noqa: BLE001
+            errors.append(f"ПРАВИЛО 27: съём лана {_l27} упал: {_exc27b}")
+            continue
+        _prob27 = _acr27.check_block(_l27, _fresh27)
+        for _line27 in _prob27[:6]:
+            errors.append(f"ПРАВИЛО 27: {_line27}")
+        if len(_prob27) > 6:
+            errors.append(
+                f"ПРАВИЛО 27: {_l27}: ещё {len(_prob27) - 6} расхождений; полный список печатает "
+                "python3 -B scripts/atonement_claim_register.py --check " + _l27
+            )
+        _a27 = _fresh27["агрегаты"]
+        if sum(_a27["поКлассам"].values()) != _a27["строк"]:
+            errors.append(
+                f"ПРАВИЛО 27: {_l27}: классы складываются в {sum(_a27['поКлассам'].values())}, строк "
+                f"{_a27['строк']} — распределение обязано объяснять каждую строку, а не большинство"
+            )
+        _rollup27["корпус" if _l27 == "root" else _l27] = _a27["строк"]
+        _cls27 = _a27["поКлассам"]
+        _agg27["сВердиктом"] += _a27["строк"] - _cls27.get("БЕЗ МАРКЕРА", 0)
+        _agg27["удерживается"] += _cls27.get("УДЕРЖИВАЕТСЯ", 0)
+        _agg27["открыто"] += _cls27.get("ОТКРЫТО", 0)
+        _agg27["закрыто"] += _cls27.get("ЗАКРЫТО", 0)
+        _agg27["служебное"] += _cls27.get("СЛУЖЕБНОЕ", 0)
+        _agg27["покрытоМашинно"] += _a27["покрытоМашинно"]
+        _cr28 = _fresh27["сверка"]
+        _agg28["покрытоПоФайлу"] += _a27["покрытоПоФайлу"]
+        _agg28["файловПрозы"] += _a27["файловПрозы"]
+        _agg28["файловБезКарточки"] += _a27["файловБезКарточки"]
+        for _k28 in ("ссылокНаНесуществующийФайл", "ссылокВнеОбходаЛана", "записейВнеСтрокЛана",
+                     "файловБезКарточкиСостояния", "маркеровВПрозеНеОтражённыхВКарточке",
+                     "маркеровВКарточкеНеИзПрозыЛана"):
+            _agg28[_k28] += _cr28[_k28]
+        _cross28["корпус" if _l27 == "root" else _l27] = {
+            "строк": _a27["строк"], "покрытоПоФайлу": _a27["покрытоПоФайлу"],
+            "файлов": _a27["файловПрозы"], "файловБезКарточки": _a27["файловБезКарточки"],
+            "висящихСсылок": _cr28["ссылокНаНесуществующийФайл"],
+            "ссылокВнеОбходаЛана": _cr28["ссылокВнеОбходаЛана"],
+            "карточекБезСостояния": _cr28["файловБезКарточкиСостояния"],
+            "неОтраженоВКарточке": _cr28["маркеровВПрозеНеОтражённыхВКарточке"],
+            "терминовКарточкиВнеПрозы": _cr28["маркеровВКарточкеНеИзПрозыЛана"],
+        }
+        _agg27["маркеров"] += _fresh27["маркеры"]["всего"]
+        _agg27["неОтнесено"] += sum(_fresh27["маркеры"]["неОтнесено"].values())
+        _agg27["неРазрешено"] += _a27["неРазрешено"]
+        _path27 = _acr27.registry_for(_l27)
+        _block27 = json.loads(read(_path27)).get(_acr27.BLOCK_KEY)
+        if not isinstance(_block27, dict):
+            errors.append(
+                f"ПРАВИЛО 27: в {_path27.name} нет блока {_acr27.BLOCK_KEY} — сводка в моём реестре не заменяет "
+                "реестр лана: строки должны лежать там, где лежат их носители"
+            )
+            continue
+        for _f27 in ("строк", "поКлассам", "маркеры", "строки", "метод", "приоритет", "чтоСчитаетсяДоводом",
+                     "recheckCommand", "measuredAt", "checkedAt"):
+            if _f27 not in _block27:
+                errors.append(f"ПРАВИЛО 27: в блоке {_l27} нет поля {_f27!r}")
+        if len(_block27.get("строки") or []) != _rollup27["корпус" if _l27 == "root" else _l27]:
+            errors.append(
+                f"ПРАВИЛО 27: {_l27}: в блоке {len(_block27.get('строки') or [])} строк, а обход лана даёт "
+                f"{_rollup27['корпус' if _l27 == 'root' else _l27]} — блок и съём разошлись"
+            )
+        if not str(_block27.get("recheckCommand", "")).strip().startswith("python3 -B scripts/atonement_claim_register.py"):
+            errors.append(
+                f"ПРАВИЛО 27: {_l27}: recheckCommand блока обязан называть команду съёма реестра доводов, "
+                "иначе у числа нет способа быть переснятым"
+            )
+    _dec27 = ((reg.get("integrityGate") or {}).get("scopeOfMeasurementRules") or {}).get("claimsPerRegistry") or {}
+    if not _dec27:
+        errors.append(
+            "ПРАВИЛО 27: в integrityGate.scopeOfMeasurementRules нет поля claimsPerRegistry — число доводов "
+            "по ланам обязано стоять рядом с числом датированных полей, иначе разрыв 493 : 0 остаётся "
+            "рассказом, а не измерением"
+        )
+    else:
+        for _k27, _v27 in sorted(_rollup27.items()):
+            if int(_dec27.get(_k27, -1)) != _v27:
+                errors.append(
+                    f"ПРАВИЛО 27: claimsPerRegistry[{_k27!r}] = {_dec27.get(_k27)!r}, а обход лана нашёл {_v27} — "
+                    "живой счётчик не имеет права быть цитатой"
+                )
+        if int(_dec27.get("всего", -1)) != sum(_rollup27.values()):
+            errors.append(
+                f"ПРАВИЛО 27: claimsPerRegistry.всего = {_dec27.get('всего')!r}, а ланы дают "
+                f"{sum(_rollup27.values())}"
+            )
+        for _f27 in ("measuredAt", "recheckCommand", "метод"):
+            if not _dec27.get(_f27):
+                errors.append(f"ПРАВИЛО 27: у claimsPerRegistry нет поля {_f27!r} — сводка обязана быть пересъёмной")
+        for _k27, _v27 in sorted(_agg27.items()):
+            if int((_dec27.get("детально") or {}).get(_k27, -1)) != _v27:
+                errors.append(
+                    f"ПРАВИЛО 27: claimsPerRegistry.детально[{_k27!r}] = {(_dec27.get('детально') or {}).get(_k27)!r}, "
+                    f"а обход даёт {_v27}"
+                )
+        if _agg27["неРазрешено"] or _agg27["неОтнесено"]:
+            errors.append(
+                f"ПРАВИЛО 27: разрешено не всё: локаторов не разрешилось {_agg27['неРазрешено']}, маркеров без "
+                f"класса {_agg27['неОтнесено']} — реестр, который молча пропускает строку, опаснее отсутствия реестра"
+            )
+        notes.append(
+            "ПРАВИЛО 27: доводов в реестре %s; с вердиктом в тексте %d из %d (удерживается %d, открыто %d, "
+            "закрыто %d, служебное %d), без маркера вердикта %d; машинно покрыто %d, маркеров разобрано %d. "
+            "Съём: python3 -B scripts/atonement_claim_register.py --check"
+            % (", ".join("%s: %d" % (k, v) for k, v in sorted(_rollup27.items())), _agg27["сВердиктом"],
+               sum(_rollup27.values()), _agg27["удерживается"], _agg27["открыто"], _agg27["закрыто"],
+               _agg27["служебное"], sum(_rollup27.values()) - _agg27["сВердиктом"], _agg27["покрытоМашинно"],
+               _agg27["маркеров"])
+        )
+
+
+# ---- правило 28 (26.10.2026): два учёта лана обязаны проверять друг друга
+# Круг 59 опубликовал «машинно покрыто 35 из 857» и в следующей же реплике назвал это
+# число артефактом собственного фильтра: машинный идентификатор искался по форме
+# «AB-12», а карточки лана ot помечены числами «01»…«15» и «05b», так что покрытие ot
+# выглядело нулём там, где оно есть. Честная мера — не форма идентификатора, а связь
+# «машинная запись называет этот файл прозы»; при ней покрыт весь корпус (857 : 857),
+# и настоящий остаток оказывается другим: у nt машинные «карточки» — счётчики
+# («cards»: 17), состояния в них нет ни у одной записи, поэтому 39 вердиктов прозы nt
+# не отражены ни в какой машинной записи. Правило не переписывает лан под мою схему и
+# не разрешает расхождение молчанием: оно требует, чтобы оба учёта называли одни и те
+# же файлы, чтобы ссылки записей разрешались, и чтобы вся сверка лежала в реестре
+# числом, пересъёмным то же командой.
+if _acr27 is not None:
+    if _agg28["ссылокНаНесуществующийФайл"]:
+        errors.append(
+            f"ПРАВИЛО 28: ссылок машинных записей на несуществующий файл: {_agg28['ссылокНаНесуществующийФайл']} "
+            "— карточка, указывающая в пустоту, это не учёт, а видимость учёта; ссылка обязана разрешаться "
+            "в файл лана (внеобходовые ссылки на соседей и объекты Drive полирует холодный замер, им здесь "
+            "не место)"
+        )
+    if _agg28["файловБезКарточки"]:
+        errors.append(
+            f"ПРАВИЛО 28: файлов прозы без машинной записи: {_agg28['файловБезКарточки']} — у каждого "
+            "делового файла лана должна найтись запись, называющая его file|path|файл; отсутствие такой "
+            "записи и есть не закрытая Дуга I, а не выдуманный «0 покрытия»"
+        )
+    _cr28 = ((reg.get("integrityGate") or {}).get("scopeOfMeasurementRules") or {}).get("claimsPerRegistry") or {}
+    _stored28 = _cr28.get("сверкаСКарточками") or {}
+    if not _stored28:
+        errors.append(
+            "ПРАВИЛО 28: в claimsPerRegistry нет поля «сверкаСКарточками» — расхождение прозы и карточек "
+            "обязано быть названо числом, иначе шаг 2 дуги остаётся обещанием"
+        )
+    else:
+        for _l28 in ("корпус",) + _acr27.SUBLANES:
+            for _k28, _v28 in sorted(_cross28[_l28].items()):
+                if int((_stored28.get(_l28) or {}).get(_k28, -1)) != _v28:
+                    errors.append(
+                        f"ПРАВИЛО 28: claimsPerRegistry.сверкаСКарточками[{_l28!r}][{_k28!r}] = "
+                        f"{(_stored28.get(_l28) or {}).get(_k28)!r}, обход даёт {_v28} — живой счётчик "
+                        "не имеет права быть цитатой"
+                    )
+        for _f28 in ("recheckCommand", "метод", "съёмкаНаследуетсяОт"):
+            if not _stored28.get(_f28):
+                errors.append(f"ПРАВИЛО 28: у «сверкаСКарточками» нет поля {_f28!r} — сводка обязана быть пересъёмной")
+    _det27 = _cr28.get("детально") or {}
+    for _k28b, _v28b in sorted(_agg28.items()):
+        if int(_det27.get(_k28b, -1)) != _v28b:
+            errors.append(
+                f"ПРАВИЛО 28: claimsPerRegistry.детально[{_k28b!r}] = {_det27.get(_k28b)!r}, а обход даёт "
+                f"{_v28b} — мера «запись называет файл» обязана стоять рядом с мерой «у строки есть "
+                "машинный идентификатор», а не заменять её молча; и пересниматься, а не цитироваться"
+            )
+    notes.append(
+        "ПРАВИЛО 28: сверка прозы с машинными карточками: файлов прозы %d, из них с карточкой %d, без "
+        "карточки %d; висящих ссылок %d, ссылок вне обхода лана %d; записей без поля состояния %d; вердиктов "
+        "прозы, не отражённых в карточке %d; вердиктов карточки, не известных прозе лана %d. Покрытие по "
+        "идентификатору (круг 59) %d, покрытие по файлу (круг 60) %d из %d строк. Съём: "
+        "python3 -B scripts/atonement_claim_register.py --cross"
+        % (_agg28["файловПрозы"], _agg28["файловПрозы"] - _agg28["файловБезКарточки"], _agg28["файловБезКарточки"],
+           _agg28["ссылокНаНесуществующийФайл"], _agg28["ссылокВнеОбходаЛана"], _agg28["файловБезКарточкиСостояния"],
+           _agg28["маркеровВПрозеНеОтражённыхВКарточке"], _agg28["маркеровВКарточкеНеИзПрозыЛана"],
+           _agg27["покрытоМашинно"], _agg28["покрытоПоФайлу"], sum(_rollup27.values()))
+    )
+
 
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")

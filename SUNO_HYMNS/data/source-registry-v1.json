@@ -1,0 +1,1272 @@
+{
+  "schemaVersion": 1,
+  "registryId": "SUNO-HYMNS-SOURCE-REGISTRY-V1",
+  "asOf": "2026-10-26",
+  "note": "Project-local source inventory. The repository root evidence policy remains controlling; source class and operational states are separate. For a historical source served through a modern digital presentation, evidenceClass describes the underlying source when stated, while accessState and rightsState describe what is actually accessed and can be reused.",
+  "fields": [
+    "evidenceClass",
+    "accessState",
+    "locatorState",
+    "rightsState",
+    "publicationState",
+    "holds"
+  ],
+  "sources": [
+    {
+      "id": "SRC-L-1676",
+      "title": "Uyt-spanningen — first-edition text (1676)",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/",
+      "type": "Digital, explicitly diplomatic presentation of the 1676 source edition",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Title-page imprint, original collection and primary text witness"
+      ],
+      "limits": [
+        "DBNL marks the underlying 1676 work Auteursrechtvrij, but the online transcription is diplomatic rather than a complete unmediated scan; its colophon records omissions and editorial corrections. Use the exact page or scan for poem-level claims."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-COLOPHON",
+      "title": "DBNL colophon for the 1676 Uyt-spanningen transcription",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/colofon.php",
+      "type": "Editorial record about the digital transcription and its corrections",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Transcription method and the list of omitted material",
+        "The full editorial-intervention list, including 'p. 7: 1565 -> 1665', 'p. 84: 1664 -> 1674' and 'p. 87: 1664 -> 1674'",
+        "Copy transcribed: Universiteitsbibliotheek Amsterdam, 113: BALIE 250.D12",
+        "Images taken from a different copy of the same impression: Koninklijke Bibliotheek Den Haag, 4 B 1"
+      ],
+      "limits": [
+        "Modern editorial documentation; it does not replace inspection of the 1676 leaf.",
+        "The intervention list cites PRINTED page numbers; the DBNL URL slug numbers are chunk indices, not page numbers."
+      ]
+    },
+    {
+      "id": "SRC-L-CRIT-2005",
+      "title": "Uyt-spanningen — critical edition and apparatus (2005)",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/index.php",
+      "type": "Critical edition edited by A. Ros and L. Strengholt",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Modern item numbering, critical text, variants, notes, tune directions, bibliography and literary-historical framing"
+      ],
+      "limits": [
+        "DBNL explicitly marks this edition as copyrighted. Item numbers may group multiple original texts; some repetitions/stanzas are editorially supplied for melody. Do not reproduce its full text or apparatus without permission."
+      ]
+    },
+    {
+      "id": "SRC-L-SCHEPSELEN-51",
+      "title": "Schepselen niet en Jesus al — critical-edition item 51",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0057.php",
+      "type": "Exact critical-edition page for title, tune direction and date",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Title spelling, tune direction Singt als: Rosemont waer gy vliedt, stanza organization, and November 1661 date shown by the critical edition"
+      ],
+      "limits": [
+        "This is the 2005 copyrighted critical text, not the original 1676 leaf; exact transcription/quotation must be checked against the original edition for quote-sensitive claims."
+      ]
+    },
+    {
+      "id": "SRC-L-CHRISTEN-SANGERS",
+      "title": "Christen sangers — preface in the critical edition",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0002.php",
+      "type": "Critical-edition transcription of Lodenstein's preface on song",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Lodenstein's reflections on poetry, music and the heart"
+      ],
+      "limits": [
+        "A modern paraphrase must not be presented as a verbatim quotation; the accessed edition is copyrighted."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-NIET-EN-AL",
+      "title": "Niet en al, Dat is: Des werelds ydelheyd en Gods Al-genoegsaamheyd",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0059.php",
+      "type": "Exact text page in the 1676 first-edition digital transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Original-print title, long refrain-based text, and source text for a future candidate"
+      ],
+      "limits": [
+        "The text is lengthy and internally sectioned. Count stanzas/sections and evaluate whether to adapt all or a defined portion before choosing a SUNO duration."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-ALGENOEGSAAMHEYD",
+      "title": "De Algenoegsaamheyd Of Aandagt op Ps. 73:25 en Luc. 10:42",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0006.php",
+      "type": "Exact text page in the 1676 first-edition digital transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Original-print title and its explicit biblical references to Psalm 73:25 and Luke 10:42"
+      ],
+      "limits": [
+        "Classify the text's genre and melodic status from the full page before treating it as a singable hymn."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-JESUS-LIJDENDE",
+      "title": "Jesus Lijdende Liefde",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0046.php",
+      "type": "Exact text page in the 1676 first-edition digital transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Original title and printed tune direction Ten is niet alle tijd, &c."
+      ],
+      "limits": [
+        "Historical tune direction does not prove that a future modern SUNO setting reproduces the historical performance."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-NIEUWJAAR",
+      "title": "Nieuw-Jaars Gebedt, Om Lust tot en in Gods Woord",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0089.php",
+      "type": "Exact text page in the 1676 first-edition digital transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Original title and printed tune direction Chermets secrets; a recurring refrain is visible in the text"
+      ],
+      "limits": [
+        "Verify all stanzas and refrain placement in the complete source before preparing a lyric adaptation."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-DEN-NEDRIGEN",
+      "title": "Den nedrigen christen, Op Psalm 131 — 1676 print, printed pp. 74-75",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0036.php",
+      "type": "Exact text page in the 1676 first-edition digital transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Complete seven-stanza text on printed pp. 74-75",
+        "Tune direction 'Singt als Prendete la: siet boven pag.29.'",
+        "The compositor's repeat abbreviations 'En treckt men etc.' and 'Wagt etc.' in stanzas V and VII",
+        "Absence of any date line, unlike the neighbouring Rees poems"
+      ],
+      "limits": [
+        "Page images of printed pp. 74-75 were not inspected in this pass; the typography claim keeps LOCATOR_HOLD.",
+        "The URL slug 0036 is a chunk number, not the printed page."
+      ],
+      "printedPages": "74-75"
+    },
+    {
+      "id": "SRC-L-1676-TOESANG",
+      "title": "Toe-Sang Der Gelovigen in het Vaderland — voyage-related song",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0099.php",
+      "type": "Exact text page in the 1676 first-edition digital transcription",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Original title and tune direction Stemme: Ps. CIII; related to the voyage-song material about travel to the East Indies"
+      ],
+      "limits": [
+        "Verify the companion song and exact narrative context from the preceding source pages before treating this as an independent standalone song."
+      ]
+    },
+    {
+      "id": "SRC-L-HERT-I-1673-34",
+      "title": "I. Hert-sterckte in Jehova, Op 1 Sam. 30:6 — critical-edition item 34",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0039.php",
+      "type": "Critical-edition page for the first Rees song",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The distinction between I and II, the date 28 December 1673 shown by the critical edition, and its own melody directions Onherroepelijke Jeugd or Gavotte. A la fronté"
+      ],
+      "limits": [
+        "The critical edition is copyrighted. This is not the source poem used for the later Rutgers hymn no. 68; do not conflate it with the second Hert-sterckte."
+      ]
+    },
+    {
+      "id": "SRC-L-HERT-II-1674-1971",
+      "title": "II. Hert-sterckte in Jehova — selected text in a 1971 anthology",
+      "url": "https://www.dbnl.org/tekst/lode002pjbu01_01/lode002pjbu01_01_0014.php",
+      "type": "Later anthology / bloemlezing presenting the second Rees song",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The second poem's text and the date printed in the digital presentation as 4 January 1674"
+      ],
+      "limits": [
+        "The accompanying note states that the original had an erroneous 1664; the DBNL colophon also records an editorial 1664->1674 correction for printed p. 84. Keep the date claim on EVIDENCE_HOLD until the original page image is checked.",
+        "The 1727 ninth edition prints 1674, which corroborates the date but does not prove what the 1676 compositor set.",
+        "The date claim is specifically held in CLM-HERT-II-DATE-1674; other textual claims from this page must be assessed individually."
+      ]
+    },
+    {
+      "id": "SRC-L-REES-CONTEXT",
+      "title": "Rees songs — historical context",
+      "url": "https://www.dbnl.org/tekst/lode002pjbu01_01/lode002pjbu01_01_0013.php",
+      "type": "Contextual page associated with the selected Rees songs",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Context for the sequence of consolatory songs composed during the Rees hostage period"
+      ],
+      "limits": [
+        "Do not treat the contextual page as proof of every detail of the hostage narrative without further primary corroboration."
+      ]
+    },
+    {
+      "id": "SRC-RUTGERS-1806-68",
+      "title": "Evangelische Gezangen (1806), hymn LXVIII: Zelfverloochening — printed pp. 143-144",
+      "url": "https://www.dbnl.org/tekst/_eva005evan01_01/_eva005evan01_01_0070.php",
+      "type": "Exact historical hymnbook item in the 1806 collection",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The full seven-stanza text of the 1806 hymn, read in full in the fourth pass",
+        "Title 'Zelfverloochening' and hymn number LXVIII",
+        "The exact wording of the expressions examined in DOSSIER_DUTCH-002_TEXT_HISTORY.md: 'zielverdervend eigen', 'Alles hoort den Hemel toe', 'Voor 't geloof is alles goed'"
+      ],
+      "limits": [
+        "The 1806 hymn is a seven-stanza reworking, not a stanza-subset of the 1676 poem; an earlier project statement that it had five stanzas was wrong.",
+        "An 1806 imprint is public domain in substance, but the DBNL transcription is a separate modern object."
+      ],
+      "printedPages": "143-144"
+    },
+    {
+      "id": "SRC-EVANGELISCHE-GEZANGEN-1806",
+      "title": "Evangelische Gezangen — collection-level record (1806)",
+      "url": "https://www.dbnl.org/tekst/_eva005evan01_01/",
+      "type": "Collection-level digital presentation of the original 1806 hymnbook",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Collection context and the place of hymn LXVIII in the book"
+      ],
+      "limits": [
+        "Use the individual hymn page for the exact text; do not infer that every later melody association was part of the 1806 source."
+      ]
+    },
+    {
+      "id": "SRC-RUTGERS-BIO",
+      "title": "Abraham Rutgers — historical biographical dictionary entry",
+      "url": "https://www.dbnl.org/tekst/aa__001nieu03_01/aa__001nieu03_01_0176.php",
+      "type": "Historical biographical dictionary article",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Rutgers's editorial roles and the attribution of hymnbook items 68 and 62 to Lodenstein material revised by Rutgers"
+      ],
+      "limits": [
+        "Secondary source. Collate the editions if exact stanza-by-stanza editorial changes are to be claimed."
+      ]
+    },
+    {
+      "id": "SRC-AFR-L276",
+      "title": "Afrikaans Lied 276 — modern source-chain page",
+      "url": "https://missio.org.za/songs/lied-276/",
+      "type": "Modern institutional song page with an adaptation chain",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The listed chain from Lodenstein and Rutgers through Gerdener (1931), Pienaar / AGB (1944), Van der Merwe (1978), and Breytenbach (2001); current melody association"
+      ],
+      "limits": [
+        "This is secondary chain evidence, not the physical witness for each intermediary edition. Modern Afrikaans lyrics and recordings have separate rights. The melody associated with the modern song must not be attributed as Lodenstein's original tune without a primary witness."
+      ]
+    },
+    {
+      "id": "SRC-AFR-L271",
+      "title": "Afrikaans Lied 271 — modern source-chain page",
+      "url": "https://missio.org.za/songs/lied-271/",
+      "type": "Modern institutional song page",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Discovery of another Lodenstein-derived Afrikaans text and its reported edition chain"
+      ],
+      "limits": [
+        "Exact original Dutch title and each intermediate text version remain to be checked."
+      ]
+    },
+    {
+      "id": "SRC-R-REVIUS-AUTHOR",
+      "title": "Jacobus Revius — author bibliography",
+      "url": "https://www.dbnl.org/auteurs/auteur.php?id=revi001",
+      "type": "Bibliographic / biographical author record",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Name variant Jacob Reefsen, life dates, and records for the 1630 collection, 1621 Song of Songs work and 1640 revised metrical Psalter"
+      ],
+      "limits": [
+        "Bibliographic record is not a full primary witness and does not by itself identify a composition date for every poem."
+      ]
+    },
+    {
+      "id": "SRC-R-OVER-YSSEL-CONTENTS",
+      "title": "Over-Ysselsche sangen en dichten — scholarly edition contents",
+      "url": "https://www.dbnl.org/tekst/revi001over01_01/",
+      "type": "Contents / entrypoint for W.A.P. Smit's 1930–1935 scholarly edition",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Collection structure, edition identification and discovery of the sonnet"
+      ],
+      "limits": [
+        "This is not a direct scan of the 1630 leaf. The modern scholarly edition has a separate rights layer."
+      ]
+    },
+    {
+      "id": "SRC-R-HY-DROEG",
+      "title": "Hy droech onse smerten — poem page in the W.A.P. Smit edition",
+      "url": "https://www.dbnl.org/tekst/revi001over01_01/revi001over01_01_0327.php",
+      "type": "Exact page for the sonnet in the 1930–1935 scholarly edition",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Fourteen-line sonnet, textual sequence and editorial glosses"
+      ],
+      "limits": [
+        "Do not describe this page as a facsimile of the 1630 edition; no original tune direction has been verified."
+      ]
+    },
+    {
+      "id": "SRC-R-GEERDS-1976",
+      "title": "J.F. Geerds, critical discussion of Hy droech onse smerten (1976)",
+      "url": "https://www.dbnl.org/tekst/_taa008197601_01/_taa008197601_01_0008.php",
+      "type": "Specialist secondary study",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Close-reading interpretation of the poem's turn and movement from 'our' to 'my' sins"
+      ],
+      "limits": [
+        "Use the text witness for quotations; this study supports interpretation, not first-publication or musical attribution by itself."
+      ]
+    },
+    {
+      "id": "SRC-R-OVER-YSSEL-1630-WORK",
+      "title": "Over-Ysselsche sangen en dichten — 1630 edition as underlying work",
+      "url": "https://www.dbnl.org/auteurs/auteur.php?id=revi001",
+      "type": "Bibliographic lead to the original 1630 edition; original leaf not independently acquired in this project",
+      "evidenceClass": "A1",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Existence of the historical edition as a primary bibliographic target"
+      ],
+      "limits": [
+        "The author bibliography is a discovery lead, not the original 1630 object. Treat composition date, original punctuation and physical edition facts as unverified until the first-edition witness is acquired."
+      ]
+    },
+    {
+      "id": "SRC-DORDRECHT-69",
+      "title": "Church Order associated with Dordrecht, Article 69",
+      "url": "https://kerkrecht.nl/node/2149/",
+      "type": "Online presentation of a historical church-order provision",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Prescribed public-worship repertoire and the restriction of other songs in the relevant church-order text"
+      ],
+      "limits": [
+        "The webpage is a mediated transcription; confirm edition provenance before quoting exact legal wording. A normative rule does not prove uniform actual use in every congregation."
+      ]
+    },
+    {
+      "id": "SRC-DORDRECHT-1578",
+      "title": "Earlier Dutch Reformed synodical church-order text (1578)",
+      "url": "https://kerkrecht.nl/node/2142/",
+      "type": "Online presentation of an earlier historical church-order provision",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Prehistory of psalm-first church-song regulations and the Datheen psalm tradition"
+      ],
+      "limits": [
+        "This page is a mediated transcription; quote the particular year's text rather than blend several synods into a single rule."
+      ]
+    },
+    {
+      "id": "SRC-UTRECHT-HYMNI-1615-1967",
+      "title": "Hymni ofte Loff-sangen — 1967 facsimile of a work first printed in 1615",
+      "url": "https://www.dbnl.org/tekst/_hym001hymn02_01/_hym001hymn02_01_0004.php",
+      "type": "Digital presentation of the 1967 facsimile edition edited by Jan van Biezen and Marie Veldhuyzen",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The accessed item's edition date, editors, reproduction notes, the original work's 1615 date, and the preface's Ephesians 5:19 rationale"
+      ],
+      "limits": [
+        "This is a copyrighted 1967 facsimile, not an independently digitized 1615 original. DBNL notes omissions and editorial changes in the digital rendering."
+      ]
+    },
+    {
+      "id": "SRC-UTRECHT-HYMNI-1615-WORK",
+      "title": "Hymni ofte Loff-sangen — underlying 1615 original work",
+      "url": "https://www.dbnl.org/tekst/_hym001hymn02_01/_hym001hymn02_01_0004.php",
+      "type": "Original 1615 work represented through the 1967 facsimile; original not independently acquired here",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Original title and the portions of 1615 front matter reproduced in the facsimile"
+      ],
+      "limits": [
+        "The accessible evidence is mediated by the 1967 edition; the right to reproduce the facsimile or its modern editorial matter is separate from the public-domain age of the underlying work."
+      ]
+    },
+    {
+      "id": "SRC-MUSIC-ROSEMONT",
+      "title": "Louis Peter Grijp — musicological context for Dutch song and melody reuse",
+      "url": "https://www.dbnl.org/tekst/grij001nede01_01/grij001nede01_01_0006.php",
+      "type": "Musicological secondary study",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Historical context for tune reuse / contrafactum and the Rosemont melody"
+      ],
+      "limits": [
+        "Use the poem's own tune direction for song-specific claims; secondary musicology cannot prove that a modern generated setting reproduces the original sound."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-HERT-I-78-81",
+      "title": "I. Hert-sterckte in Jehova — 1676 print, printed pp. 78-81",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0038.php",
+      "type": "Exact text pages of the first edition, as served by the DBNL diplomatic transcription",
+      "printedPages": "78-81",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Full 15-stanza text of poem I in the 1676 print",
+        "Tune direction: 'Te singen als Onherroepelijke Jeugd! Of: Gavotte. A la fronté.'",
+        "Closing date line: 'Op 't Fort Nieuw Rees 28. in wintermaand 1673.'",
+        "Section heading tying the poem to the author's exile in Cleves"
+      ],
+      "limits": [
+        "A diplomatic transcription, not an inspected page image; no editorial intervention is listed for these pages, which is a positive but not sufficient accuracy signal.",
+        "The URL slug 0038 is a chunk number, not the printed page; cite printed pages."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-HERT-II-82-84",
+      "title": "II. Hert-sterckte in Jehova — 1676 print, printed pp. 82-84",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0039.php",
+      "type": "Exact text pages of the first edition, as served by the DBNL diplomatic transcription",
+      "printedPages": "82-84",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Full 14-stanza text of poem II in the 1676 print",
+        "Tune direction: a pointer to I on p. 78 ('Te singen als boven pag.78. Soet Geselschap dat met my, &c.'), not an independent melody",
+        "Closing date line as emended by the transcription: 'Op 't Fort Nieuw Rees 4. In Loumaand 1674.'",
+        "Explicit 1676 pairing of the two poems of the same title"
+      ],
+      "limits": [
+        "The 1674 reading on this page is an editorial emendation; the DBNL colophon lists 'p. 84: 1664 -> 1674'. The printed original has not been visually inspected, so this page cannot by itself prove what the 1676 leaf reads.",
+        "The URL slug 0039 is a chunk number, not the printed page."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-VERHEVEN-85-87",
+      "title": "'t Verheven Herte van een Christen die Gode leeft — 1676 print, printed pp. 85-87",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0040.php",
+      "type": "Exact text pages of the first edition, as served by the DBNL diplomatic transcription",
+      "printedPages": "85-87",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Full text of item 36, the third poem of the exiled Rees group",
+        "Closing date line: '11. in Loumaand 1674.'",
+        "Establishes that the second 1664->1674 emendation listed in the DBNL colophon ('p. 87') belongs to this poem, not to II. Hert-sterckte"
+      ],
+      "limits": [
+        "Used here chiefly to scope the emendation correctly; the poem itself has not been researched as a candidate."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-SIMEONS-29",
+      "title": "Simeons Lof-sang — 1676 print, printed p. 29 (the 'Prendete la' tune anchor)",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0013.php",
+      "type": "Exact text page of the first edition carrying the tune designation",
+      "printedPages": "29-30",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The heading 'Te singen Als: Prendete la.' on printed p. 29",
+        "Resolves the internal cross-reference 'siet boven pag.29' used by item 32",
+        "Seven-line stanza with a divided second line, the metrical shape shared by item 32"
+      ],
+      "limits": [
+        "The page names a tune; it does not supply the melody, its composer, or its origin.",
+        "An emblem page image exists for p. 29 but was not inspected in this pass."
+      ]
+    },
+    {
+      "id": "SRC-L-UYT-1727",
+      "title": "Uytspanningen, behelsende eenige stichtelyke liederen, en andere gedichten — 9th edition (1727)",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_03_01/",
+      "type": "A separate later edition of the same collection, independently typeset",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "An independent printed witness for the II. Hert-sterckte date reading '4 in Loumaand 1674' (printed p. 84)",
+        "Collation of Den Nederigen Christen (printed pp. 74-75), including the 1676/1727 variants recorded in the DUTCH-004 dossier",
+        "Continuity of the internal tune pointer 'siet boven pag. 29' at the same pagination"
+      ],
+      "limits": [
+        "A later edition is not independent of the 1676 text in stemmatic terms: it may descend from a corrected copy. It corroborates the date but cannot prove what the 1676 compositor set.",
+        "Its wording differs from 1676 in spelling and in the punctuation of Den Nederigen Christen stanza IV."
+      ]
+    },
+    {
+      "id": "SRC-L-CRIT-2005-INTRO",
+      "title": "Critical-edition introduction, 'Ds. Jodocus van Lodenstein en zijn Uyt-spanningen 1676', pp. 645-647",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0147.php",
+      "type": "Modern scholarly introduction in the copyrighted 2005 edition",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "In December 1673 Lodenstein was held as a hostage of the French, far from Utrecht",
+        "He sent songs to the Utrecht circle, printed in 1674 as 'Meditatiën over eenige van Gods eygenschappen'",
+        "Many songs were written for singing in the Utrecht circle; melodies were drawn partly from popular 16th/17th-century tunes and partly from unidentified contemporary compositions"
+      ],
+      "limits": [
+        "Copyrighted secondary literature: paraphrase only, never quotation.",
+        "Describes the corpus generally; it does not date any individual poem."
+      ]
+    },
+    {
+      "id": "SRC-L-BUIJNSTERS-1971",
+      "title": "P.J. Buijnsters (ed.), Bloemlezing uit de bundel Uyt-spanningen (1971)",
+      "url": "https://www.dbnl.org/tekst/lode002pjbu01_01/lode002pjbu01_01_0013.php",
+      "type": "Modern scholarly anthology with annotation",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Editorial headnote: four consolation songs written during the 1673 hostage period and published by the poet himself in 1674 as 'Meditatien over eenige van 's Heeren Gods Eygenschappen'",
+        "Footnote on the closing date of II: 'Er staat abusievelijk: 1664.' — an independent editorial statement that the print reads 1664",
+        "Printed reading '4. in Loumaand 1674' for II"
+      ],
+      "limits": [
+        "A later anthology, not the 1674 pamphlet or the 1676 leaf; the statement about the misprint is editorial testimony.",
+        "Copyrighted selection and annotation: cite, do not reproduce."
+      ]
+    },
+    {
+      "id": "SRC-MEDITATIEN-1674",
+      "title": "Meditatien over eenige van 's Heeren Gods Eygenschappen (1674)",
+      "url": "",
+      "type": "The poet's own separate printing of the four exiled Rees hymns — target object",
+      "evidenceClass": "A1",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Named by two independent modern descriptions (1971 headnote; 2005 introduction) as a 1674 printing of these songs"
+      ],
+      "limits": [
+        "No copy, catalogue record or locator has been acquired; its existence and contents are known only through secondary description.",
+        "Its collation against the 1676 printing is the strongest available test of the group's dating and remains outstanding."
+      ]
+    },
+    {
+      "id": "SRC-NL-LIEDERENBANK",
+      "title": "Nederlandse Liederenbank (Meertens Instituut / KNAW) — Dutch Song Database",
+      "url": "http://www.liederenbank.nl/",
+      "type": "Scholarly song and melody index; the normal authority for Dutch tune designations",
+      "evidenceClass": "B1",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Would carry the melody identification for tune names such as 'Prendete la', 'Onherroepelijke Jeugd' and 'Rosemont waer gy vliedt'"
+      ],
+      "limits": [
+        "Unavailable on 2026-10-25: the site returns HTTP 403 with a KNAW notice that it has been taken offline temporarily. DBNL's per-song links into it currently dead-end.",
+        "Not having consulted it is not evidence that a tune has no identification."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-SCHEPSELEN-131-134",
+      "title": "Schepselen Niet en Iesus Al — 1676 print, printed pp. 131-134",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0056.php",
+      "type": "Exact text pages of the first edition, as served by the DBNL diplomatic transcription",
+      "printedPages": "131-134",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Complete eight-stanza text of DUTCH-001",
+        "Tune line as printed: 'Singt als: Rosemont waar gy vliedt'",
+        "Closing date: 'Slagt-m. 1661' (November 1661), now confirmed from the print rather than only from the critical edition",
+        "The eight different Christological addresses and their varying 'all that can...' clauses",
+        "The sanctify-or-kill couplet of stanza IV"
+      ],
+      "limits": [
+        "A diplomatic transcription, not an inspected page image.",
+        "The tune line reads 'waar', where the registry previously carried the critical edition's 'waer'."
+      ]
+    },
+    {
+      "id": "SRC-L-1676-HEERLIJCKHEYD-155-158",
+      "title": "Heerlijckheyds Loff — 1676 print, printed pp. 155-158",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_01_01/lode002uyt_01_01_0061.php",
+      "type": "Exact text pages of the first edition, as served by the DBNL diplomatic transcription",
+      "printedPages": "155-158",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The complete ten-stanza text, the tune line, the dateline and the tripled-word device"
+      ],
+      "limits": [
+        "The full text was read in both the 1676 and the 1727 printing on 2026-10-26, but only from the digital text layer; no page image has been inspected, so typography and the p. 155 illustration remain unverified.",
+        "The print abbreviates repeated half-lines as 'etc.'; those are repeat instructions, not lacunae.",
+        "The 1676 compositor is wrong at I.3 ('leven' twice); 1727 is right there and wrong at VII.8 ('dat' for 'dan'). See RESEARCH/COLLATION_DUTCH-005_THREE_WAY.md."
+      ]
+    },
+    {
+      "id": "SRC-L-CRIT-2005-HEERLIJCKHEYD",
+      "title": "Critical-edition item 56 — Heerlijckheyds loff, p. 263",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0062.php",
+      "type": "Modern critical text with apparatus (copyrighted)",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Item number 56 and its place in the modern edition",
+        "Apparatus note that the melody's origin is unknown and is not the 'Un jour &c.' of text 27",
+        "Characterisation of the poem as commending the glory of the heavenly life, with Christ at its centre"
+      ],
+      "limits": [
+        "Copyrighted: paraphrase only.",
+        "Item 56's number is not a count of texts or a guide to original form."
+      ]
+    },
+    {
+      "id": "SRC-HB-1938-205-WEB",
+      "title": "Gezang 205 ('Zalig, zalig, niets te wezen') — third-party web transcriptions of the 1938 Hervormde Bundel",
+      "url": "https://www.holyhome.nl/oud_hb/205.html",
+      "secondaryUrl": "https://www.online-bijbel.nl/gezang/205/",
+      "type": "Two independent online transcriptions of a 20th-century hymnal item, plus a partial third",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That Gezang 205 has five stanzas",
+        "That its stanzas correspond to 1806 stanzas 1, 2, 3, 6 and 7, with the closing couplet of 1806 stanza 5 appended to the fourth",
+        "That the 1938 form replaces 'zielverdervend eigen' with 'trots, hoogmoedig eigen'"
+      ],
+      "limits": [
+        "Web transcriptions, not the printed bundel: not quote-safe for a disputed claim.",
+        "The printed 1938 bundel is reachable as a Delpher scan (identifier MMKB06:000000593) and has not been collated."
+      ]
+    },
+    {
+      "id": "SRC-HB-1938-PRINT",
+      "title": "Psalmen en Gezangen voor den Eeredienst (Hervormde Bundel, 1938) — printed object",
+      "url": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593",
+      "type": "The printed hymnal itself; target object for collation",
+      "evidenceClass": "A1",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "EVIDENCE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Would settle the exact 1938 wording, the five-stanza composition and any melody attribution"
+      ],
+      "limits": [
+        "Not collated. A 20th-century publication: its own rights status must be assessed before any use of its wording."
+      ]
+    },
+    {
+      "id": "SRC-NL-LIEDERENBANK-INDEX",
+      "title": "Nederlandse Liederenbank — records surfaced through search indexing while the site is offline",
+      "url": "https://www.liederenbank.nl/",
+      "type": "Search-engine extracts of a scholarly song index, used only as a discovery lead",
+      "evidenceClass": "C",
+      "accessState": "LINK_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That records exist for 'Heerlijckheyds Loff' across several 17th- and 18th-century songbooks (1676, Stapel's Lusthof 1681, Bundeltje 1718)",
+        "That a recorded stanza scheme exists for the 1718 printing"
+      ],
+      "limits": [
+        "Class C: index extracts are a discovery lead, never quote-safe and never a substitute for the database itself, which returned HTTP 403 on 2026-10-25.",
+        "Do not cite these extracts as independent witnesses to a text or a melody."
+      ]
+    },
+    {
+      "id": "SRC-HB-1938-PRINT-COLLATED",
+      "title": "Gezang 205 in the printed 1938 Hervormde Bundel — collated page images 724-725",
+      "url": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00724",
+      "secondaryUrl": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00725",
+      "type": "Page-level scan and OCR of the printed hymnal, Koninklijke Bibliotheek copy, PPN 416504787 (VII, 944, 48 p.)",
+      "printedPages": "image pp. 724-725 (gezang 205); item begins on 724",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The five stanzas of Gezang 205 and their exact wording (stanzas 2-5 read from the print)",
+        "That the 1938 text substitutes 'trots, hoogmoedig' for 'zielverdervend' in stanza 2 line 1 AND 'werp dien hoogmoed dan' for 'Werp die trotsheid dan' in line 5",
+        "That 1938 stanza 4 = 1806 stanza 6 lines 1-4 plus 1806 stanza 5 lines 5-6",
+        "That the item credits the melody to Johann Christoph Bach (1642-1703) and the text to 'Jodocus van Lodenstein (1620-1677) Bewerking van Abraham Rutgers (1751-1809)'",
+        "That Delpher marks the object 'Auteursrechtelijk beschermd'"
+      ],
+      "limits": [
+        "Page-level OCR, which Delpher itself warns is not 100% reliable; stanza 1 did not survive the OCR of p. 724.",
+        "A protected 20th-century object: PERMISSION_REQUIRED, quote sparingly and cite the page."
+      ]
+    },
+    {
+      "id": "SRC-HB-1938-PRINT-CALIBRATION",
+      "title": "Page map of the 1938 Hervormde Bundel — calibration points for locating an item",
+      "url": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00430",
+      "secondaryUrl": "https://www.delpher.nl/nl/boeken/view?coll=boeken&identifier=MMKB06:000000593:00640",
+      "type": "Discovered page-to-gezang correspondence in the same printed object",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Image 430 carries Gezang 18; image 640 carries Gezang 153; image 719 = Gezang 200; 721 = 202; 723 = 204; 724-725 = 205",
+        "That psalm numbers and gezang numbers do not map to image numbers: image 296 is Psalm 109",
+        "That the bundel groups gezangen under numbered thematic headings, e.g. '10. VEROOTMOEDIGING' at Gezang 153"
+      ],
+      "limits": [
+        "A working map, not a table of contents; the gezang-to-page rate drifts across the volume.",
+        "Derived from OCR page reads, so individual points can be wrong."
+      ]
+    },
+    {
+      "id": "SRC-GTB-WNT-INTERFACE",
+      "title": "Geïntegreerde Taalbank — WNT/MNW/VMNW search interface",
+      "url": "https://gtb.ivdnt.org/search/?owner=wnt",
+      "type": "Historical dictionary search interface (JS application)",
+      "evidenceClass": "C",
+      "accessState": "LINK_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the WNT is the right authority for the archaic lexis of this corpus",
+        "That the interface could not be used in this environment: a query renders only the search shell, with no article text"
+      ],
+      "limits": [
+        "Class C in this access state: no article, sense or headword was read.",
+        "A lexical claim must not be attributed to the WNT on the strength of this source."
+      ]
+    },
+    {
+      "id": "SRC-ENSIE-VANDALE-1898",
+      "title": "Groot woordenboek der Nederlandsche taal (Van Dale, 1898) on Ensie",
+      "url": "https://www.ensie.nl/vandale1898/stikken",
+      "type": "Reprint of a historical Dutch dictionary on a subscription site",
+      "evidenceClass": "C",
+      "accessState": "LINK_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PERMISSION_REQUIRED",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "supports": [
+        "That a second historical dictionary is available for cross-checking lexis the WNT route cannot reach"
+      ],
+      "limits": [
+        "Article bodies are behind a paywall; only the headword and enumeration were visible.",
+        "It is not the WNT and must never be cited as WNT evidence."
+      ]
+    },
+    {
+      "id": "SRC-ETYMOLOGIEBANK-STIKKEN",
+      "title": "Etymologiebank — stikken (Van Veen/Van der Sijs 1997; De Vries 1971)",
+      "url": "https://www.etymologiebank.nl/trefwoord/stikken1",
+      "type": "Etymological dictionary entry, freely readable",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That 'stikken' in the sense of smothering is historically one word with 'stikken' (to stitch), an intensivum of 'steken', glossed as 'blijven steken, niet verder kunnen'",
+        "That the sense required by Lodenstein's rhyme with 'verquickt' is the 'stuck fast, choked' sense rather than simple adhesion"
+      ],
+      "limits": [
+        "An etymological dictionary answers a historical question, not a synchronic one: it cannot tell us what the 1676 reader understood by the line.",
+        "De Vries and Van Veen/Van der Sijs are secondary authorities; the WNT remains the primary tool."
+      ]
+    },
+    {
+      "id": "SRC-L-UYT-1727-HEERLIJCKHEYD",
+      "title": "Heerlyckheyds Loff — ninth edition (1727), printed pp. 155-158",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_03_01/lode002uyt_03_01_0062.php",
+      "type": "Independent later printing of the same poem in the same collection, given as a collation witness",
+      "printedPages": "155-158",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the poem's title, page range, tune line ('Voyse: Un jour &c.'), stanza count and date (27 in Oogstmaand 1665) are stable across two printings",
+        "That the tripled device leven (III-VI) -> lieven (VII-IX) -> loven (X) is not a feature of one impression",
+        "That the 1676 reading 'Mijn siel na boven dat' (VII.8) is a slip: 1727 reads 'dan', matching line 5",
+        "That 1727's stanza I.3 reads 'leven, leven, loven' where 1676 reads 'leven, lieven, loven', i.e. the triad is corrupted in one of the two impressions",
+        "That 1727 omits the abbreviated repeat line in stanza VIII, giving that stanza eight printed lines instead of nine"
+      ],
+      "limits": [
+        "A transcription, not a page image; typography and the illustration are still unverified.",
+        "Disagreement between the two printings is itself evidence that the text needs a page-image collation before any wording is treated as definitive."
+      ]
+    },
+    {
+      "id": "SRC-EVANGGEZ-1806-43",
+      "title": "Evangelische Gezangen (1806), hymn XLIII: Zielverheffing tot Jezus — printed p. 82",
+      "url": "https://www.dbnl.org/tekst/_eva005evan01_01/_eva005evan01_01_0045.php",
+      "type": "Digital presentation of the 1806 edition of the hymnbook",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "The Rutgers reworking of Heerlijckheyds Loff as hymn XLIII, its opening line, its eight-line stanza shape and its placement in the 1806 collection"
+      ],
+      "limits": [
+        "Read from the DBNL transcription of the 1806 printing, not from a page image; the stanza numbering and typography of the printed page have not been inspected."
+      ]
+    },
+    {
+      "id": "SRC-NL-LIEDERENBANK-9086",
+      "title": "Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26)",
+      "url": "https://www.liederenbank.nl/liedpresentatie.php?lan=nl&zoek=9086",
+      "type": "Catalogue record in the Dutch Song Database (Meertens Instituut / KNAW)",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "supports": [
+        "Record fields: ten stanzas, date '27. in Ougstmaand 1665', the note that the melody is not that of 'Un jour m'en allais seulette', and the witness sigla Stapel LusthofZ1681, Bundeltje1718, EvangGez1806, PsalmenGezNH1938"
+      ],
+      "limits": [
+        "The database returns HTTP 403 with a KNAW information-security notice and is offline as of 2026-10-26. The fields were read from the record's own rendering inside search results, not from an opened catalogue page. Re-check when the database returns; do not treat as inspected until then."
+      ]
+    },
+    {
+      "id": "SRC-PSALMENGEZ-1938-75",
+      "title": "Psalmen en Gezangen (Hervormde Bundel 1938), Gezang 75, p. 501, nr. 239",
+      "url": "https://www.liederenbank.nl/resultaatlijst.php?zoek=23155&actie=incipitnorm&lan=nl",
+      "type": "Reference to the printed hymnal as catalogued by the Dutch Song Database",
+      "evidenceClass": "B1",
+      "accessState": "CATALOG_ONLY",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "supports": [
+        "Gezang 75 stands on printed p. 501 of the 1938 bundel, its incipit is «'t Oog omhoog, het hart naar boven», and the melody is credited to Louis Bourgeois"
+      ],
+      "limits": [
+        "The printed bundel has not been collated; the page number and the melody credit come from the database rendering, and the database is offline."
+      ]
+    },
+    {
+      "id": "SRC-HB-1938-75-WEB",
+      "title": "Gezang 75 — public reproduction of the 1938 text in modernised spelling",
+      "url": "https://www.online-bijbel.nl/gezang/75/",
+      "type": "Third-party web reproduction of a protected hymnal text",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the 1938 reworking runs to three stanzas and that its third stanza descends from 1676 stanza X ('Ah! dat aller menschen tongen')"
+      ],
+      "limits": [
+        "Modernised spelling and a private site: no collation, no critical apparatus, not a witness for the printed page."
+      ]
+    },
+    {
+      "id": "SRC-GENEVE-PSAUTIER-42",
+      "title": "The Genevan Psalter — the psalm 42 melody and its composers",
+      "url": "https://journals.openedition.org/chretienssocietes/2728?lang=fr",
+      "type": "Scholarly survey of the Genevan psalter (Revue Chretiens, Societes, Journal)",
+      "evidenceClass": "B1",
+      "accessState": "LINK_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the melodies for Beze's psalm paraphrases, including psalm 42 «Ainsi qu'on oit le cerf bruire», were written by Loys Bourgeois"
+      ],
+      "limits": [
+        "Seen in a search rendering while checking the Bourgeois attribution; the article itself has not been read in full, and no page is cited."
+      ]
+    },
+    {
+      "id": "SRC-L-CRIT-2005-PSALM1-27",
+      "title": "Critical-edition item 27 — Den eersten psalm uytgebreydet, p. 120 (the 'Un jour' the apparatus excludes)",
+      "url": "https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0032.php",
+      "type": "Critical edition, text of the item that carries the other 'Un jour' tune direction",
+      "evidenceClass": "B1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Item 27, Psalm 1 expanded, stands on p. 120 under the direction 'Te singen op de wijse: Un jour m'en alloit &c.'; the apparatus identifies that melody as the French chanson 'Un jour m'en allais seulette' by Grouzy (d. 1568), printed in the Quinzieme livre de chansons, Paris 1571"
+      ],
+      "limits": [
+        "Copyrighted apparatus: paraphrased, not quoted at length. Identifies the tune that our poem does NOT use — it says nothing about what our poem's own tune was."
+      ]
+    },
+    {
+      "id": "SRC-STAPEL-1681-LUSTHOF",
+      "title": "Claes Stapel, Het lust-hof der zielen (Alkmaar: Jacob Pietersz. Moerbeek, 1681) — the reprint at printed p. 495",
+      "url": "https://www.dbnl.org/tekst/stap007lust01_01/",
+      "type": "Digital diplomatic presentation of the 1681 anthology",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "That the poem was reprinted in 1681 by Claes Stapel on printed p. 495 under the heading 'Heemels heerlijkheids lof. Voiz: Un jour, &c.', with the incipit 'Hoog! om hoog! mijn ziel naa booven'"
+      ],
+      "limits": [
+        "The DBNL transcription of this two-column anthology interleaves the columns, so only the heading, the tune direction, the incipit and the page number can be relied on until the page image is seen.",
+        "The editor of the anthology is Claes Stapel, not Hendrick Stapel: the earlier research and the copy carried the wrong first name."
+      ]
+    },
+    {
+      "id": "SRC-GEZANGBOEK-PS42",
+      "title": "gezangboek.nl — Psalm 42 page listing the hymns sung to that melody",
+      "url": "https://www.gezangboek.nl/Psalm42.html",
+      "type": "Private reference site mapping hymns to melodies",
+      "evidenceClass": "C",
+      "accessState": "LINK_ONLY",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Independent support for the melody identity: 'Hoog omhoog, het hart naar boven' (Lodenstein) is listed among the hymns sung to the psalm 42 melody, together with Datheen's 'Als een hert gejaagd, o Heere'"
+      ],
+      "limits": [
+        "A hobby reference site, seen through a search rendering, not opened; secondary and not citable for anything but the association itself."
+      ]
+    }
+  ]
+}

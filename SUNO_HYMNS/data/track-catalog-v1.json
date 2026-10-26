@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "catalogId": "SUNO-HYMNS-TRACK-CATALOG-V1",
+  "asOf": "2026-10-26",
+  "scope": "Project-local inventory based on conversation records; not an exhaustive scan of the owner's computer, local storage or public channels.",
+  "stateBoundary": "Production state and public publication status are separate. This catalog does not replace the root Research evidence policy.",
+  "statusVocabulary": {
+    "productionState": [
+      "NOT_STARTED",
+      "RESEARCH_IN_PROGRESS",
+      "LYRIC_DRAFT",
+      "SUNO_OUTPUT_GENERATED",
+      "ASSETS_PREPARED",
+      "READY_FOR_REVIEW",
+      "PUBLISHED_VERIFIED",
+      "BLOCKED"
+    ],
+    "publicPublicationStatus": [
+      "UNKNOWN_NOT_VERIFIED",
+      "PUBLISHED_VERIFIED"
+    ]
+  },
+  "works": [
+    {
+      "id": "DUTCH-001",
+      "displayTitle": "Всё сотворённое — ничто, Иисус — всё",
+      "originalTitleVariants": [
+        "Schepselen niet en Jesus al",
+        "Schepselen Niet en Iesus Al"
+      ],
+      "historicalAuthor": {
+        "name": "Jodocus van Lodenstein",
+        "years": "1620–1677",
+        "role": "author"
+      },
+      "textCategory": "Stanzaic Dutch Reformed devotional song with printed melody direction",
+      "sourceChain": [
+        "Uyt-spanningen, Utrecht, Willem Clerck, 1676",
+        "Critical-edition item 51; text dated November 1661",
+        "Modern Russian literary/song adaptation"
+      ],
+      "tuneDirection": "Singt als: Rosemont waar gy vliedt (1676 print reads 'waar'; the critical edition reads 'waer')",
+      "structure": {
+        "stanzas": 8,
+        "linesPerStanza": 8,
+        "source": "1676 print, printed pp. 131-134, verified line by line in the fourth pass"
+      },
+      "productionState": "ASSETS_PREPARED",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "NOT_CAPTURED",
+      "versions": [
+        {
+          "versionId": "DUTCH-001-V1",
+          "durationSeconds": 382.8,
+          "assets": {
+            "sourceWav": "C:\\Users\\Fedor\\Downloads\\«Всё сотворённое — ничто, Иисус — всё» - Йодокус ван Лоденштейн.wav",
+            "coverPng": "C:\\Users\\Fedor\\Downloads\\bd68e92c-5708-4c43-a3b0-403299302f36.png",
+            "youtubeMp4": "C:\\Users\\Fedor\\Downloads\\«Всё сотворённое — ничто, Иисус — всё» - Йодокус ван Лоденштейн [YouTube].mp4",
+            "telegramMp3": "C:\\Users\\Fedor\\Downloads\\«Всё сотворённое — ничто, Иисус — всё» - Йодокус ван Лоденштейн [Telegram].mp3"
+          },
+          "reportedExport": {
+            "youtube": "MP4; 1920x1080; 30 fps; H.264 High; stereo AAC 48 kHz",
+            "telegram": "MP3; 320 kbps; stereo 48 kHz; cover embedded"
+          },
+          "localAssetReadbackInRepo": false,
+          "qaStatus": "OPEN",
+          "promptCapture": "NOT_CAPTURED",
+          "lyricRevisionStatus": "NOT_IN_REPOSITORY"
+        }
+      ],
+      "authorId": "LOD-001",
+      "workType": "DEVOTIONAL_SONG_WITH_TUNE_DIRECTION",
+      "sourceIds": [
+        "SRC-L-1676",
+        "SRC-L-CRIT-2005",
+        "SRC-L-SCHEPSELEN-51",
+        "SRC-L-1676-SCHEPSELEN-131-134"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "Uyt-spanningen, 1676, printed pp. 131-134: eight stanzas, each closing on a Christological address (soet, lief, schoon, minlijckst, cierlijckst, soetste, soetste, waardigst) and a couplet. The addresses vary in the source; they are not a refrain. Modern Russian literary/song adaptation follows.",
+      "openChecks": [
+        "Recover the exact Russian lyric revision and verbatim SUNO style prompt; neither is yet stored in this repository.",
+        "Read actual file metadata and confirm output assets if a new release depends on it.",
+        "The current publication status remains unverified until a public URL/receipt is checked.",
+        "WNT check pending for the eight archaic expressions recorded in DOSSIER_DUTCH-001_TRANSLATION_DECISIONS.md; two of them ('in 't dorre stickt', 'Geven op de hand') remain low-confidence.",
+        "No Russian lyric is stored in this repository, so none of the recorded translation decisions has been checked against an actual text.",
+        "Inspect the 1676 page images of printed pp. 131-134 to close the typography LOCATOR_HOLD."
+      ],
+      "claimIds": [
+        "CLM-L-1676-IMPRINT",
+        "CLM-DUTCH-001-TITLE-TUNE",
+        "CLM-DUTCH-001-DATE",
+        "CLM-ASSET-STATE",
+        "CLM-SUNO-PROMPTS",
+        "CLM-DUTCH-001-ADDRESSES",
+        "CLM-DUTCH-001-TRANSLATION-DECISIONS",
+        "CLM-DUTCH-001-ARCHAIC-LEXIS"
+      ]
+    },
+    {
+      "id": "DUTCH-002",
+      "displayTitle": "Блаженно, блаженно — быть ничем",
+      "originalTitleVariants": [
+        "II. Hert-sterckte in Jehova. Op 1 Sam. 30:6",
+        "Zelfverloochening"
+      ],
+      "historicalAuthor": {
+        "name": "Jodocus van Lodenstein",
+        "years": "1620–1677",
+        "role": "source author"
+      },
+      "reworker": {
+        "name": "Abraham Rutgers",
+        "years": "1751–1809",
+        "role": "reviser of hymn 68 in Evangelische Gezangen (1806)"
+      },
+      "textCategory": "Modern Russian adaptation following the later seven-stanza hymn tradition; not a verbatim transcription of the full 1674 poem",
+      "sourceChain": [
+        "Lodenstein: II. Hert-sterckte in Jehova, critical-edition item 35; the displayed 4 January 1674 date has an EVIDENCE_HOLD due to an original-print 1664 misprint",
+        "Abraham Rutgers revision in Evangelische Gezangen (1806), hymn 68, Zelfverloochening",
+        "Later Afrikaans Lied 276 transmission; intermediary editions need separate collation",
+        "Modern Russian literary/song adaptation"
+      ],
+      "productionState": "ASSETS_PREPARED",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "NOT_CAPTURED",
+      "versions": [
+        {
+          "versionId": "DUTCH-002-V1",
+          "durationSeconds": 433.24,
+          "assets": {
+            "coverPng": "C:\\Users\\Fedor\\Downloads\\1e2452b6-6443-4f7c-9675-92ab31d15262.png",
+            "sourceWav": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 1 ВЕРСИЯ.wav",
+            "youtubeMp4": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 1 ВЕРСИЯ [YouTube].mp4",
+            "telegramMp3": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 1 ВЕРСИЯ [Telegram].mp3"
+          },
+          "qaStatus": "OPEN",
+          "promptCapture": "NOT_CAPTURED",
+          "lyricRevisionStatus": "NOT_IN_REPOSITORY"
+        },
+        {
+          "versionId": "DUTCH-002-V2",
+          "durationSeconds": 438.569521,
+          "assets": {
+            "coverPng": "C:\\Users\\Fedor\\Downloads\\3e7f56e1-ef4b-40d6-b94d-44bb1de24d02.png",
+            "sourceWavOriginalFilenameTypo": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 2 ВЕСРИЯ.wav",
+            "youtubeMp4": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 2 ВЕРСИЯ [YouTube].mp4",
+            "telegramMp3": "C:\\Users\\Fedor\\Downloads\\«Блаженно Быть Ничем Пред Богом» - Йодокус ван Лоденштейн - 2 ВЕРСИЯ [Telegram].mp3"
+          },
+          "qaStatus": "OPEN",
+          "promptCapture": "NOT_CAPTURED",
+          "lyricRevisionStatus": "NOT_IN_REPOSITORY"
+        }
+      ],
+      "reportedEmbeddedMetadata": {
+        "titlePattern": "Блаженно, блаженно — быть ничем — Версия N",
+        "artist": "Йодокус ван Лоденштейн",
+        "album": "Господь Бог — Сила Моя",
+        "genre": "Христианский гимн",
+        "sourceGenerationCommentsRemoved": true,
+        "reReadRequiredBeforeNewRelease": true
+      },
+      "authorId": "LOD-001",
+      "reviserIds": [
+        "RUT-001"
+      ],
+      "workType": "LATER_HYMNBOOK_REWORKING",
+      "sourceIds": [
+        "SRC-L-HERT-I-1673-34",
+        "SRC-L-HERT-II-1674-1971",
+        "SRC-L-1676-COLOPHON",
+        "SRC-L-1676-HERT-I-78-81",
+        "SRC-L-1676-HERT-II-82-84",
+        "SRC-L-UYT-1727",
+        "SRC-L-BUIJNSTERS-1971",
+        "SRC-L-CRIT-2005-INTRO",
+        "SRC-RUTGERS-1806-68",
+        "SRC-RUTGERS-BIO",
+        "SRC-AFR-L276",
+        "SRC-AFR-L271",
+        "SRC-HB-1938-205-WEB",
+        "SRC-HB-1938-PRINT",
+        "SRC-HB-1938-PRINT-COLLATED",
+        "SRC-HB-1938-PRINT-CALIBRATION"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "Three forms, three stanza counts, all collated in the fifth pass: 1676 'II. Hert-sterckte in Jehova' = 14 stanzas; 1806 Evangelische Gezangen LXVIII 'Zelfverloochening' = 7; 1938 Hervormde Bundel Gezang 205 = 5, printed pages 724-725. 1938 omits 1806 stanzas 4 and 5 (keeping only the closing couplet of 5, grafted onto 6), and changes stanza 2 in two places. The 1676 occasional frame (I, III, VI, XIII, XIV) is absent from both later forms. See RESEARCH/COLLATION_GEZANG205_THREE_WAY.md.",
+      "dateClaimStatus": "EVIDENCE_HOLD",
+      "dateClaimNote": "4 January 1674 is supported by the 1727 edition and by both modern editions, and by the December 1673 hostage context of the Rees group. The 1676 impression is reported to misprint 1664. Only the literal reading of the 1676 leaf remains unresolved.",
+      "openChecks": [
+        "Do not conflate I. Hert-sterckte in Jehova (printed pp. 78-81, 28 December 1673) with II. Hert-sterckte (printed pp. 82-84, 4 January 1674), which is the poem in the Rutgers chain. See RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md.",
+        "The date EVIDENCE_HOLD is narrowed to the literal reading of the 1676 impression only; inspect printed p. 84 before lifting it.",
+        "Recover the exact Russian lyric revision and both verbatim SUNO style prompts.",
+        "Re-read actual output metadata before relying on earlier tag notes.",
+        "Record which historical form (1676 / 1806 / 1938) any Russian text follows; the earlier project statement that 1806 has five stanzas was wrong and five is the 1938 count.",
+        "Assess rights for the 1938 wording separately from the 1676 and 1806 texts.",
+        "Recover stanza 1 of Gezang 205 from the page image: the Delpher OCR of p. 724 drops it, so the last EVIDENCE_HOLD on the 1938 form is that one stanza.",
+        "Do not reuse the 1938 wording without a rights decision: the bundel is a protected object, and its tune credit (Johann Christoph Bach) is not the 1674 tune."
+      ],
+      "claimIds": [
+        "CLM-L-1676-IMPRINT",
+        "CLM-HERT-I-VS-II",
+        "CLM-HERT-II-SEQUEL",
+        "CLM-HERT-I-DATE-1673",
+        "CLM-HERT-II-DATE-1674",
+        "CLM-HERT-II-DATE-1727-WITNESS",
+        "CLM-HERT-EMENDATION-SCOPE",
+        "CLM-DUTCH-002-RUTGERS",
+        "CLM-AFR-L276-CHAIN",
+        "CLM-ASSET-STATE",
+        "CLM-SUNO-PROMPTS",
+        "CLM-DUTCH-002-STANZAS-14-7-5",
+        "CLM-DUTCH-002-EXPRESSIONS",
+        "CLM-HB-1938-205-CREDITS",
+        "CLM-DELPHER-PAGE-OCR"
+      ],
+      "tuneDirection": "No independent melody: the 1676 print points the singer to I. Hert-sterckte on p. 78 ('Te singen als boven pag.78'), whose own heading names 'Onherroepelijke Jeugd' or 'Gavotte. A la fronté'. Neither tune is acquired; the modern recorded setting is not these tunes."
+    },
+    {
+      "id": "DUTCH-003",
+      "displayTitle": "Он понёс наши скорби",
+      "originalTitleVariants": [
+        "Hy droech onse smerten"
+      ],
+      "historicalAuthor": {
+        "name": "Jacobus Revius",
+        "years": "1586–1658",
+        "nameVariant": "Jacob Reefsen",
+        "role": "author"
+      },
+      "textCategory": "Fourteen-line Passion sonnet; original tune direction not verified",
+      "sourceChain": [
+        "Over-Ysselsche sangen en dichten, Deventer, first published 1630",
+        "W.A.P. Smit scholarly edition, 1930–1935",
+        "Modern Russian adaptation and new musical setting"
+      ],
+      "productionState": "ASSETS_PREPARED",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "NOT_CAPTURED",
+      "versions": [
+        {
+          "versionId": "DUTCH-003-V1-REPORTED",
+          "assets": {
+            "mp3": "C:\\Users\\Fedor\\Downloads\\Он понёс наши скорби — Якобус Ревиус.mp3",
+            "finalCover": "NOT_PINNED"
+          },
+          "openChecks": [
+            "Read back actual ID3 title, artist, album and genre; the prior tag-rewrite command's success is unconfirmed.",
+            "Confirm final approved cover and cooler/muted color grade.",
+            "Record duration, format, cover attachment and hashes from the actual file."
+          ],
+          "qaStatus": "OPEN",
+          "promptCapture": "NOT_CAPTURED",
+          "lyricRevisionStatus": "NOT_IN_REPOSITORY"
+        }
+      ],
+      "qaStatus": "OPEN",
+      "authorId": "REV-001",
+      "workType": "SONNET_MODERN_MUSICAL_SETTING",
+      "sourceIds": [
+        "SRC-R-REVIUS-AUTHOR",
+        "SRC-R-OVER-YSSEL-CONTENTS",
+        "SRC-R-HY-DROEG",
+        "SRC-R-GEERDS-1976",
+        "SRC-R-OVER-YSSEL-1630-WORK"
+      ],
+      "textChainNote": "A fourteen-line religious sonnet from Over-Ysselsche sangen en dichten (Deventer 1630), not a hymn: the octave negates the named actors, line 9 turns to the first person, lines 10-13 make the speaker the instruments, and line 14 assigns the event to the speaker's sins. See RESEARCH/DOSSIER_DUTCH-003_REVIUS_SONNET.md.",
+      "openChecks": [
+        "Read back actual ID3 title/artist/album/genre and embedded-cover status; prior tag rewrite success is unconfirmed.",
+        "Confirm the final approved cover file.",
+        "Recover the exact SUNO style prompt and lyric revision.",
+        "Keep composition date as unknown unless a source establishes it.",
+        "Obtain the Russian draft discussed in earlier sessions; it is not in this repository and is NOT approved.",
+        "Collate the 1630 leaf, using the recorded 'tuyschen' misprint at line 8 to confirm the impression.",
+        "Decide the music direction explicitly (atmospheric guitar and cello; or a cappella growing into organ, cello and male ensemble after the turn) and record it as a per-work decision."
+      ],
+      "claimIds": [
+        "CLM-REVIUS-1630",
+        "CLM-ASSET-STATE",
+        "CLM-SUNO-PROMPTS",
+        "CLM-DUTCH-003-SONNET-DRAMATURGY"
+      ]
+    },
+    {
+      "id": "DUTCH-004",
+      "displayTitle": "Смиренный христианин (Psalm 131) — working title, not final",
+      "displayTitleStatus": "WORKING_DRAFT",
+      "originalTitleVariants": [
+        "Den nedrigen christen, Op Psalm 131",
+        "Den Nederigen Christen, Op Psalm 131"
+      ],
+      "historicalAuthor": {
+        "name": "Jodocus van Lodenstein",
+        "years": "1620–1677",
+        "role": "author"
+      },
+      "textCategory": "Seven-stanza poetic expansion of Psalm 131, printed with a tune direction",
+      "sourceChain": [
+        "Uyt-spanningen, Utrecht, Willem Clerck, 1676, printed pp. 74-75",
+        "Uytspanningen, 9th edition, 1727, printed pp. 74-75 (collation witness)",
+        "Modern Russian literary/song adaptation, draft v0.1, authored in this repository"
+      ],
+      "tuneDirection": "Singt als Prendete la: siet boven pag.29. — a pointer to Simeons Lof-sang on printed p. 29; the tune's origin is untraced and no notation is held",
+      "structure": {
+        "stanzas": 7,
+        "printedLinesPerStanza": 8,
+        "sungLinesPerStanza": 7,
+        "note": "Lines 2-3 are short half-lines filling one divided sung line; lines 5-6 are a deliberate doubling, abbreviated in the print as 'etc.' in stanzas V and VII",
+        "source": "collation of the 1676 print, the p. 29 tune anchor, and the 1727 edition"
+      },
+      "productionState": "LYRIC_DRAFT",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "CAPTURED_IN_REPOSITORY",
+      "versions": [
+        {
+          "versionId": "DUTCH-004-RU-DRAFT-v0.1",
+          "versionKind": "LYRIC_DRAFT_ONLY",
+          "productionPackage": "SUNO/DUTCH-004_PRODUCTION_PACKAGE.md",
+          "promptCapture": "CAPTURED_IN_REPOSITORY",
+          "promptState": "AUTHORED_NOT_YET_SUBMITTED",
+          "promptId": "PROMPT-DUTCH-004-V1",
+          "promptText": "slow sacred acoustic hymn, 3/4, 65 bpm, minor mode, warm close-miked male baritone lead with low vibrato and natural diction, restrained chamber ensemble: gut-string cello pedal tones, arco contrabass, theorbo on cadences, small pipe organ pad, one low wooden flute line in verse 5, two-voice choir entering at verse 4 and opening to four parts only in verse 7, unhurried and intimate, quiet dynamics, natural room reverb, no percussion",
+          "promptFields": {
+            "exclude": "drums, drum kit, electric bass, synth pad, EDM, cinematic string swell, belting, harsh bass voice, tremolo organ, auto-tune artefacts",
+            "sections": "[Intro — cello and organ pad, 4 bars] / [Verse 1] / [Verse 2] / [Instrumental — theorbo cadence, 2 bars] / [Verse 3] / [Verse 4] / [Verse 5] / [Verse 6] / [Verse 7] / [Outro — voices only on the final line, then silence]",
+            "repetition": "In verse 5, repeat 'Отторгнут от груди — он может' once; in verse 7, repeat 'Ждите ещё Его даров' once"
+          },
+          "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-004_PRODUCTION_PACKAGE.md §6). Never submitted to SUNO; not a recovered historical prompt. Distinct from DUTCH-001/002/003, whose submitted prompts are NOT_CAPTURED.",
+          "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
+          "lyricRevisionNote": "Russian adaptation, not a translation; owner poetic revision is a required gate before READY_FOR_REVIEW. Deviations disclosed in the production package §4.",
+          "assets": {},
+          "generatedOutput": "NONE",
+          "audioExport": "NONE",
+          "cover": "NONE",
+          "metadataReadback": "NOT_APPLICABLE",
+          "qaStatus": "OPEN"
+        }
+      ],
+      "authorId": "LOD-001",
+      "workType": "BIBLICAL_CANTICLE_OR_SCRIPTURE_EXPANSION",
+      "sourceIds": [
+        "SRC-L-1676-DEN-NEDRIGEN",
+        "SRC-L-1676-SIMEONS-29",
+        "SRC-L-1676-COLOPHON",
+        "SRC-L-UYT-1727",
+        "SRC-L-CRIT-2005",
+        "SRC-L-BUIJNSTERS-1971",
+        "SRC-NL-LIEDERENBANK"
+      ],
+      "claimIds": [
+        "CLM-DUTCH-004-TEXT",
+        "CLM-DUTCH-004-DATE",
+        "CLM-DUTCH-004-PS131",
+        "CLM-DUTCH-004-TUNE",
+        "CLM-DUTCH-004-RIGHTS",
+        "CLM-NL-LIEDERENBANK-OFFLINE",
+        "CLM-DBNL-SLUG-TRAP"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "The poem is a poetic expansion of Psalm 131, first published in 1676; its date of writing is unknown and no date line is printed in either the 1676 or the 1727 edition. The historical melody is unattested, so any recording of this work is a modern setting.",
+      "rightsNote": "The 1676 poem is a public-domain historical work and may be adapted. The 2005 critical edition, the 1971 anthology and the DBNL transcription/images are separate modern objects and must not be reproduced.",
+      "openChecks": [
+        "Owner poetic revision of the Russian draft; freeze as DUTCH-004-RU-DRAFT v1.0 before any generation.",
+        "Inspect the 1676 page images of printed pp. 74-75 to close the typography LOCATOR_HOLD.",
+        "Re-check the Nederlandse Liederenbank for the tune 'Prendete la' once it is back online.",
+        "Record the prompt revision hash before submission; record generation date, output filename, duration and format after it."
+      ]
+    },
+    {
+      "id": "DUTCH-005",
+      "displayTitle": "Хвала Славе",
+      "displayTitleStatus": "OWNER_APPROVED_TITLE",
+      "originalTitleVariants": [
+        "Heerlijckheyds Loff",
+        "Heerlijckheyds Loff. (1676 heading)",
+        "Heemels heerlijkheids lof (1681 reprint)",
+        "HEERLYKHEITS LOF (1718 reprint)"
+      ],
+      "historicalAuthor": {
+        "name": "Jodocus van Lodenstein",
+        "years": "1620–1677",
+        "role": "author"
+      },
+      "textCategory": "Ten-stanza devotional song on the glory of the heavenly life, printed with a tune direction and an internal tripled-word device",
+      "sourceChain": [
+        "Uyt-spanningen, Utrecht, Willem Clerck, 1676, printed pp. 155-158 (dated 27 August 1665)",
+        "Reprints: Stapel's Lusthof 1681 p. 495; Bundeltje 1718 p. 230",
+        "1938 Hervormde Bundel carries a modernised reworking ('t Oog omhoog, het hart naar boven!) which is a different object and is NOT used here",
+        "Modern Russian literary/song adaptation with rhymed text, draft v0.8, authored in this repository"
+      ],
+      "tuneDirection": "Voyse: Un jour &c. (1676, 1681) — a designation the modern editors could not resolve: melody untraced, no notation held. The direction changes to Psalm 42 by 1718, and the 1806 hymn names its melody 'Psalm 042 Datheen'; the 1938 hymnal credits Louis Bourgeois, whose Genevan psalm 42 melody that is. The 1665 tune is still unidentified (CLM-DUTCH-005-TUNE, CLM-DUTCH-005-TUNE-SHIFT).",
+      "structure": {
+        "stanzas": 10,
+        "printedLinesPerStanza": 9,
+        "sungLinesPerStanza": 9,
+        "note": "Four statement lines, a call line and its repeat, the tripled word with its object, the call again, a closing line. The tripled word moves leven (III–VI) -> lieven (VII–IX) -> loven (X). Russian line lengths, counted by machine: statement 5–10, call 6–9, tripled 9–11, close 6–11 syllables. No regular metre is claimed.",
+        "source": "the 1676 print, read in full in the fifth pass"
+      },
+      "productionState": "ASSETS_PREPARED",
+      "publicPublicationStatus": "UNKNOWN_NOT_VERIFIED",
+      "promptCapture": "CAPTURED_IN_REPOSITORY",
+      "versions": [
+        {
+          "versionId": "DUTCH-005-RU-v0.10",
+          "versionKind": "SUNG_ASSET_REPORTED_BY_OWNER",
+          "productionPackage": "SUNO/DUTCH-005_PRODUCTION_PACKAGE.md",
+          "promptCapture": "CAPTURED_IN_REPOSITORY",
+          "promptState": "AUTHORED_NOT_YET_SUBMITTED",
+          "promptId": "PROMPT-DUTCH-005-V1",
+          "promptText": "epic sacred organ hymn, 4/4, 118 bpm, D minor, deep pipe organ with 16-foot pedal and full plenum, Georgian-flavoured male monastic choir in sustained parallel fifths, one clear tenor-baritone lead voice singing in front of the choir, strictly syllabic declamation, one syllable per note, no melisma, no stretched vowels, short two-bar organ introduction, all ten verses sung in order with no cuts, wide stone-church reverb but a forward, intelligible lead, restrained crescendo across the ten verses, no percussion, no guitars, no synthesizers",
+          "promptFields": {
+            "exclude": "drums, percussion, electric bass, synth pads, EDM, cinematic string swells, belting, breathy or whispered lead, husky voice, excessively low bass lead, heavy vibrato, melisma, vocal runs, auto-tune artefacts, spoken word, long instrumental interludes",
+            "sections": "[Intro] / [Verse 1] … [Verse 10] / [Outro]; no chorus",
+            "echo": "exactly one, inline, in stanza X: хвалить, хвалить, хвалить (хвалить)",
+            "tempoDiscipline": "If the output comes out slow and whispered, fix tempo, syllabic delivery and the intro length; do not cut stanzas.",
+            "completeness": "all ten verses sung in order, no cuts; if a verse is dropped, regenerate with 'all ten verses, in order, no cuts' rather than cutting text"
+          },
+          "promptAlternative": {
+            "promptState": "DOCUMENTED_OPTION",
+            "text": "solemn organ and low strings hymn, 3/4, 112 bpm, F minor, great organ foundation stop and pedal drones, cello and contrabass doubling the bass line, a quartet of low male voices entering only from verse 4, one clear baritone cantor for the call lines, syllabic declamation, no melisma, plain diction, no percussion, no guitars",
+            "note": "A second style direction recorded for comparison only; not a version, not approved."
+          },
+          "promptSource": "Authored in this repository on 2026-10-25 (SUNO/DUTCH-005_STYLE.md). Five directions, never submitted to SUNO.",
+          "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
+          "lyricRevisionNote": "Revision v0.8: a native-speaker review of syntax applied over the rhymed text, and one rhyme rolled back. Accepted: st.4 'suyetnaya' -> 'brennaya' (yd'le as transitory, on the reviewer's reading of the 2005 notes - recorded as a lead, not verified); st.6 plural 'v grekhakh ... Tvorya ikh' (de snooden sonden is plural); st.6 'nachnite zhizn dobrodetelnuyu' for het deugdsaam leven; st.7 'V Nyom odnom' for alleen, dash removed; st.9 'lyubov lyudskaya, lyudskiye nravy' (seden plural) and 'ten yeyo' restoring the 'van'; st.10 'Poyte vovek' (Singt is plural). Rejected: no negation is restored in st.8 (the print reads 'nog' with an affirmative verb); 'zhizn dobrodeteli' is a correct rendering of 'der deugden leven' genitive plural, only the closing line was wrong; the tripled word stays an infinitive because the Dutch is an infinitive. Rhyme rolled back in st.2: the close returns to 'Sertsu tsenu dayot vyshe vsekh' because the rhyme had been bought with a word not in the line. Tags shortened to three structural marks. Stress marks: four. Russian adaptation; owner revision is the gate. Revision v0.9: stanza 1, owner's decision - the fourth 'prakh' removed. Line 9 now reads 'Sertsa tvoyego ne stoit', the print's shape (op aard three times, then a different word, niet waard). Stanza 1 leaves the full-rhyme column, as stanza 2 did in v0.8 and for the same reason; tally now three met, four half, three not met. Close 8 syllables, metre row 6-6-6-8 | 5 | 9 | 8. No other line, mark or tag changed; both lyric files 90 lines and identical apart from tags, echo and the four marks. Revision v0.10: stanza 3, line 2 — «После земных невзгод» replaced by «Та, что за смертью придёт», because the Dutch line is 'Na dit leven crijgelijck' and the 2005 apparatus glosses it as the life to be obtained after this life; the reading was verified in the 1676 print, the 1727 edition and the 2005 edition (COLLATION_DUTCH-005_THREE_WAY.md). Chosen from three counted options (DUTCH-005_STANZA_3_2_OPTIONS.md); seven syllables, rhyme with line 4 preserved. No other line changed.",
+          "assets": {},
+          "generatedOutput": "NONE",
+          "audioExport": "NONE",
+          "cover": "NONE",
+          "metadataReadback": "NOT_APPLICABLE",
+          "qaStatus": "OPEN",
+          "lyricFiles": {
+            "clean": "SUNO/DUTCH-005_LYRICS.md",
+            "sunoReady": "SUNO/DUTCH-005_LYRICS_SUNO.md",
+            "style": "SUNO/DUTCH-005_STYLE.md"
+          },
+          "promptDocuments": [
+            "SUNO/DUTCH-005_STYLE.md"
+          ],
+          "styleVariants": [
+            {
+              "id": "STYLE-DUTCH-005-A",
+              "label": "Epic organ + Georgian-flavoured male monastic choir",
+              "status": "PRIMARY_SLOT_NOT_PREFERRED",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §A"
+            },
+            {
+              "id": "STYLE-DUTCH-005-B",
+              "label": "Renaissance wind consort (cornetto, sackbuts, shawm) + four male voices",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §B"
+            },
+            {
+              "id": "STYLE-DUTCH-005-C",
+              "label": "Viol consort + chamber organ + solo tenor, ensemble grows verse by verse",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §C"
+            },
+            {
+              "id": "STYLE-DUTCH-005-D",
+              "label": "Byzantine-style ison under a baritone cantor",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §D"
+            },
+            {
+              "id": "STYLE-DUTCH-005-E",
+              "label": "Metrical chorale, unison male voices + organ, 126 bpm",
+              "status": "DOCUMENTED_OPTION",
+              "inFile": "SUNO/DUTCH-005_STYLE.md §E"
+            }
+          ],
+          "styleVariantNote": "Five distinct directions are required per work (SUNO/STYLE_AND_PRODUCTION_RULES.md). A occupies the primary slot only because the registry must carry one promptText; the owner chooses. All five are syllabic, intelligible-lead, all-ten-verses, no invented chorus. None has been submitted.",
+          "assetState": "Reported by the owner: audio and video uploaded, cover made. Held in the repository: nothing. Which of the five style directions was sent is NOT_CAPTURED."
+        }
+      ],
+      "authorId": "LOD-001",
+      "workType": "DEVOTIONAL_SONG_WITH_TUNE_DIRECTION",
+      "sourceIds": [
+        "SRC-L-1676-HEERLIJCKHEYD-155-158",
+        "SRC-L-CRIT-2005-HEERLIJCKHEYD",
+        "SRC-NL-LIEDERENBANK-INDEX",
+        "SRC-L-1676",
+        "SRC-L-1676-COLOPHON",
+        "SRC-L-UYT-1727-HEERLIJCKHEYD",
+        "SRC-EVANGGEZ-1806-43",
+        "SRC-PSALMENGEZ-1938-75",
+        "SRC-NL-LIEDERENBANK-9086",
+        "SRC-GENEVE-PSAUTIER-42",
+        "SRC-HB-1938-75-WEB",
+        "SRC-L-CRIT-2005-PSALM1-27",
+        "SRC-STAPEL-1681-LUSTHOF",
+        "SRC-GEZANGBOEK-PS42"
+      ],
+      "claimIds": [
+        "CLM-HEERLIJCKHEYD-IDENTITY",
+        "CLM-HEERLIJCKHEYD-RECEPTION",
+        "CLM-DUTCH-005-TEXT",
+        "CLM-DUTCH-005-TUNE",
+        "CLM-DUTCH-005-ADAPTATION",
+        "CLM-ASSET-STATE",
+        "CLM-SUNO-PROMPTS",
+        "CLM-DUTCH-005-VARIANTS",
+        "CLM-DUTCH-005-STANZA-3-2",
+        "CLM-DUTCH-005-TRANSMISSION-1681-1718",
+        "CLM-DUTCH-005-TUNE-SHIFT",
+        "CLM-DUTCH-005-RUTGERS-1806-43",
+        "CLM-DUTCH-005-STRUCTURE-SPINE",
+        "CLM-HB-1938-75-TEXT",
+        "CLM-DUTCH-005-TUNE-EXCLUDED",
+        "CLM-DUTCH-005-EDITIONS"
+      ],
+      "qaStatus": "OPEN",
+      "textChainNote": "Ten stanzas, dated 27 August 1665, printed with 'Voyse: Un jour &c.', on pp. 155-158 in BOTH the 1676 first edition and the 1727 ninth edition. The two printings agree except for spelling and four variants recorded in the collation. The poem's architecture is the tripled word: leven (III-VI) -> lieven (VII-IX) -> loven (X); it is not a refrain. The 1938 reworking is a separate, protected object and is not used. Package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md; lyric: SUNO/DUTCH-005_LYRICS.md; style: SUNO/DUTCH-005_STYLE.md.",
+      "rightsNote": "1676 poem public domain in substance; the DBNL transcription and the 2005 critical edition are separate objects and are not reproduced. The 1938 reworking is PERMISSION_REQUIRED and is not used.",
+      "openChecks": [
+        "Record the two public URLs (YouTube video, Telegram post). Only then may publicPublicationStatus become PUBLISHED_VERIFIED.",
+        "Record the cover file name and path; the repository holds no cover.",
+        "Capture the exact SUNO prompt that was submitted; the five authored directions are not evidence of it.",
+        "Confirm which stanza-3 line is sung in the recording: v0.9 «После земных невзгод» or v0.10 «Та, что за смертью придёт».",
+        "Record duration and export settings (MP4 1920x1080 H.264, MP3 320 kbps 48 kHz) once read back from the files.",
+        "See the description and both pinned comments render in a live Studio: single * must bold, _ must italicise, no asterisks printed.",
+        "Inspect the 1676 page images of pp. 155-158 and the 1681 columns of p. 495; the text layer is the only witness so far."
+      ],
+      "identityStatus": "CONFIRMED_BY_TWO_PRINTINGS_TYPOGRAPHY_UNVERIFIED",
+      "identityNote": "Title, page range, tune line, date, stanza count and structure are identical in the 1676 first edition and the 1727 ninth edition, so the work's identity is established bibliographically. Neither printing has been checked as a page image, and the two disagree in four places (CLM-DUTCH-005-VARIANTS), so no wording is definitive yet. The ID was assigned on transcription evidence; that is the process defect this record makes explicit.",
+      "interpretationNotes": [
+        "St. VIII.3-4 'Die door jaren, nog gewoonheyd / Min vermaackt, of oyt verdwijnt': 'Die' is grammatically ambiguous and could agree with 'Schoonheyd'. The earthly-beauties reading is adopted because otherwise the addressed Beauty could vanish, contradicting st. IX and the poem's argument. Flagged as interpretation.",
+        "'of oyt' = 'or ever', a second alternative, not a causal link."
+      ],
+      "lyricRevisionStatus": "DRAFT_IN_REPOSITORY",
+      "publicationNote": "Owner reports (2026-10-26) that the hymn was generated, given a cover, and uploaded to YouTube and Telegram. No URL, file, duration or export setting is held in this repository, so publication stays UNKNOWN_NOT_VERIFIED; add publicationReceipts and only then flip the state."
+    }
+  ],
+  "adjacentNonDutchWorks": [
+    {
+      "id": "ADJ-1PETER-001",
+      "title": "Russian 1 Peter 1 Scripture-song draft",
+      "category": "Scripture-song adaptation; not a Dutch historical hymn",
+      "state": "LYRIC_DRAFT_RECORDED; audio/export state unknown",
+      "notes": "Ten labeled sections, cantor-led delivery, organ entry, drone and gradual build; stress-mark pass discussed."
+    },
+    {
+      "id": "ADJ-PASSION-001",
+      "title": "Не те иудеи, Господь Иисус…",
+      "category": "Russian Passion-confession lyric / visual concept; historical attribution unresolved",
+      "state": "LYRIC_AND_VISUAL_WORK_RECORDED; audio/export state unknown",
+      "notes": "Keep outside Dutch historical catalog unless reliable attribution is established."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "DUTCH-CAND-001",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-002",
+      "status": "ACTIVATED",
+      "activatedAsTrackId": "DUTCH-004",
+      "activatedOn": "2026-10-25"
+    },
+    {
+      "id": "DUTCH-CAND-003",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-004",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-005",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-006",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-007",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-008",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-009",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-010",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-011",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-012",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-013",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-014",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-015",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-016",
+      "status": "OPEN",
+      "dossier": "RESEARCH/DOSSIER_HERT_STERCKTE_I_II.md",
+      "note": "The I/II distinction and the date question are resolved to the extent the acquired sources allow; see the dossier."
+    },
+    {
+      "id": "DUTCH-CAND-017",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-018",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-019",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-020",
+      "status": "OPEN"
+    },
+    {
+      "id": "DUTCH-CAND-021",
+      "status": "ACTIVATED",
+      "identityNote": "ACTIVATED 2026-10-25 as DUTCH-005. Identified as Heerlijckheyds Loff, a distinct ten-stanza poem in Uyt-spanningen 1676, printed pp. 155-158, dated 27 August 1665. Production state LYRIC_DRAFT: Russian draft v0.8, rhymed, with authored never-submitted style prompts; no generation, no audio. Dossier: RESEARCH/CANDIDATE_DUTCH-CAND-021_HEERLIJCKHEYDS_LOFF.md; package: SUNO/DUTCH-005_PRODUCTION_PACKAGE.md.",
+      "activatedAsTrackId": "DUTCH-005",
+      "activatedOn": "2026-10-25"
+    }
+  ],
+  "scopeNote": "works[] is the production catalog; candidates[] mirrors the backlog so that an ID cannot exist in one place only. An ACTIVATED candidate must name the track it became."
+}

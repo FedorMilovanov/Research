@@ -1,0 +1,515 @@
+#!/usr/bin/env python3
+"""Пробник EEBO-TCP для реестра массы (круг 54).
+
+Каналец, которым лан читает напечатанные листы: у textcreationpartnership каждый текст —
+отдельный репозиторий, файл `<id>.xml` (TEI-P5). Этот скрипт его качает, кэширует и умеет шесть
+подкоманд (у `census` — два режима), которыми лан измерял строки реестра в кругах 52–58:
+
+  fetch  <TCP-ID>… [--ids-file F]  — скачать и посчитать дайджесты кэша (байты, md5, sha256);
+                                     без кэша команда сама себя и наполняет, так что recheck-строка
+                                     вида «fetch …, затем census» исполнима из чистого клона
+  census <TCP-ID,….> --patterns F  — пройтись трафаретами по тому и напечатать попадания вместе
+                                     с листом (n и facs), на котором они лежат
+  census --dir D [--patterns F]    — то же по всему каталогу: id берутся из имён файлов, а без
+                                     --patterns снимается только опись (число томов, байты, дайджесты) —
+                                     ровно та опись, которой сверяется блок дайджестов круга 54
+  digests --dir D                  — опись каталога отдельной командой (томов, байт, md5, sha256)
+  catalog [--csv F] [--author A] [--tcp ID] [--expect К=Ч] — перепись внешнего каталога
+    TCP.csv: строки, поля, статусы, авторы; --expect сверяет с заявленным и уходит в 1
+  verify --block B… [--ids …]     — сверить кэш с заявкой канона: блок B читается из корпуса JSON,
+                                     недостающие тома докачиваются, дайджесты и байты сравниваются,
+                                     код возврата 0 только если совпало всё; если блок держит
+                                     только сумму байт, сверяется сумма (так снят круг 53)
+  pages  <TCP-ID>                  — карта листов и первые строки каждого листа (бегущие строки,
+                                     напечатанные числа) — тем способом снят сдвиг нумерации
+  imprint <TCP-ID>                 — титульные листы из <front> (срез по <body> глушит титул —
+                                     дефект записан в §52 реестра, этот режим его обходит)
+
+Три вещи, которые скрипт делает специально так, а не иначе:
+  * поиск идёт по всему документу, а не по <body> — титул и препослание живут в <front>;
+  * кроме обычного прохода есть буквальный (letters-only): набор разбит переносами и
+    разрядкой, и в обычном проходе фраза молчит, будучи напечатанной;
+  * молчание трафарета не превращается в отсутствие: режим печатает число трафаретов, которые
+    не найдены, отдельной строкой, и ни один вызов не возвращает «отсутствует» как факт.
+"""
+from __future__ import annotations
+
+import argparse, csv, hashlib, io, json, os, re, sys, urllib.request
+
+API = "https://api.github.com/repos/textcreationpartnership/%s/contents/%s.xml"
+CATALOG = ("https://api.github.com/repos/textcreationpartnership/Texts/contents/TCP.csv?ref=master")
+CATALOG_MIN = 1024 * 1024
+CACHE = os.environ.get("ATONEMENT_TCP_CACHE", ".scratch/tcp")
+UA = "atonement-lane-probe/1 (recheck of the mass registry)"
+
+TAG = re.compile(r"<[^>]+>")
+PAGEBREAK = re.compile(r"<(pb|milestone)\b([^>]*)>", re.I)
+NATTR = re.compile(r'\b(?:n|unit)\s*=\s*"([^"]*)"')
+FACS = re.compile(r'\bfacs\s*=\s*"([^"]*)"')
+LONGS = "æœſҝſ"
+
+
+def set_cache(dir_: str | None) -> None:
+    """Каталог кэша задаётся и средой, и флагом; флаг побуждает --dir в recheck-строках реестра."""
+    global CACHE
+    if dir_:
+        CACHE = dir_
+
+
+def dir_ids(dir_: str) -> list[str]:
+    """Имена томов из каталога: `<id>.xml`, отсортированно — чтобы опись была детерминированной."""
+    return sorted(os.path.splitext(f)[0] for f in os.listdir(dir_) if f.endswith(".xml"))
+
+
+def cache_path(tcp_id: str) -> str:
+    return os.path.join(CACHE, tcp_id + ".xml")
+
+
+def fetch_one(tcp_id: str) -> tuple[str, bool]:
+    path = cache_path(tcp_id)
+    if os.path.isfile(path) and os.path.getsize(path) > 4096:
+        return path, False
+    os.makedirs(CACHE, exist_ok=True)
+    url = API % (tcp_id, tcp_id)
+    req = urllib.request.Request(url, headers={"Accept": "application/vnd.github.raw",
+                                              "User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=120) as fh:
+        blob = fh.read()
+    with open(path, "wb") as out:
+        out.write(blob)
+    return path, True
+
+
+def digests(path: str) -> tuple[int, str, str]:
+    b = io.open(path, "rb").read()
+    return len(b), hashlib.md5(b).hexdigest(), hashlib.sha256(b).hexdigest()
+
+
+def plain(text: str) -> tuple[str, list[int]]:
+    """Текст без разметки, пробелы свёрнуты; map[i] — позиция i-го символа в raw-тексте."""
+    out, map_ = [], []
+    prev_space = False
+    for m in re.finditer(r"<[^>]*>|[^<]+", text):
+        s = m.group(0)
+        if s[0] == "<":
+            continue
+        base = m.start()
+        for j, ch in enumerate(s):
+            if ch in " \t\r\n\f\v":
+                if prev_space or not out:
+                    continue
+                out.append(" "); map_.append(base + j); prev_space = True
+            else:
+                out.append(ch); map_.append(base + j); prev_space = False
+    return "".join(out), map_
+
+
+def letters(text: str) -> tuple[str, list[int]]:
+    """Буквы строчными, всё остальное выброшено; карта обратно в `text`."""
+    keep, map_ = [], []
+    for i, ch in enumerate(text):
+        low = ch.lower()
+        if low.isalpha() or low in LONGS:
+            keep.append("s" if low == "ſ" else low)
+            map_.append(i)
+    return "".join(keep), map_
+
+
+def page_map(text: str) -> list[tuple[int, str, str]]:
+    """[(позиция в raw-тексте, номер листа, образ)] по <pb>/<milestone type=tcppage>."""
+    out = []
+    for m in PAGEBREAK.finditer(text):
+        attrs = m.group(2)
+        n = NATTR.findall(attrs)
+        facs = FACS.search(attrs)
+        label = n[0] if n else ""
+        if "page" not in attrs.lower() and m.group(1).lower() == "milestone":
+            continue
+        out.append((m.start(), label, facs.group(1) if facs else ""))
+    return out
+
+
+def locate(pmap: list[tuple[int, str, str]], pos: int) -> tuple[str, str]:
+    cur = ("", "")
+    for p, n, f in pmap:
+        if p <= pos:
+            cur = (n, f)
+        else:
+            break
+    return cur
+
+
+def load_patterns(path: str) -> list[tuple[str, str]]:
+    out = []
+    for ln in io.open(path, encoding="utf-8"):
+        ln = ln.rstrip("\n")
+        if not ln.strip() or ln.startswith("#"):
+            continue
+        label, _, phrase = ln.partition("\t")
+        if not phrase:
+            label, phrase = ln, ln
+        out.append((label, phrase))
+    return out
+
+
+def snippet(text: str, lo: int, hi: int, pad: int = 120) -> str:
+    a, b = max(0, lo - pad), min(len(text), hi + pad)
+    return text[a:b].replace("\n", " ")
+
+
+CORPUS_DEFAULT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                              "ИСКУПЛЕНИЕ", "data", "atonement-corpus-v1.json")
+
+
+def find_key(node, name, path=()):
+    """Все пути, где в корпусе встречается ключ `name` — чтобы ложная ссылка в прозе
+    разрешалась в настоящее место, а не молча падала."""
+    hits = []
+    if isinstance(node, dict):
+        for k, v in node.items():
+            if k == name:
+                hits.append((path + (k,), v))
+            hits += find_key(v, name, path + (k,))
+    elif isinstance(node, list):
+        for i, v in enumerate(node):
+            hits += find_key(v, name, path + (str(i),))
+    return hits
+
+
+def resolve_block(corpus: dict, spec: str) -> tuple[dict, str, str]:
+    """Блок канона по точечному пути; если путь в прозе устарел, ищем по последнему имени
+    и возвращаем настоящий путь вместе с пометкой о расхождении."""
+    parts = spec.split(".")
+    node = corpus
+    for part in parts:
+        if not isinstance(node, dict) or part not in node:
+            break
+        node = node[part]
+    else:
+        return node, spec, ""
+    hits = find_key(corpus, parts[-1])
+    if len(hits) == 1:
+        true_path, value = hits[0]
+        note = ("указанный путь не разрешается; блок найден по имени один раз: "
+                + ".".join(true_path))
+        return value, ".".join(true_path), note
+    if not hits:
+        raise SystemExit(f"verify: ни пути {spec}, ни ключа {parts[-1]} в корпусе нет — "
+                         f"ссылка битая в обе стороны, угадывать не будем")
+    raise SystemExit(f"verify: имя {parts[-1]} неоднозначно ({len(hits)} шт): "
+                     + "; ".join(".".join(p) for p, _ in hits[:6]))
+
+
+def catalog_path(csv_arg: str | None) -> tuple[str, bool]:
+    """Путь к копии каталога; если локальной нет — качаем в кэш одним запросом."""
+    if csv_arg:
+        if not os.path.isfile(csv_arg):
+            raise SystemExit("catalog: копии каталога нет по пути %s — качайте без --csv или укажите файл"
+                             % csv_arg)
+        return csv_arg, False
+    path = os.path.join(CACHE, "TCP.csv")
+    if os.path.isfile(path) and os.path.getsize(path) >= CATALOG_MIN:
+        return path, False
+    os.makedirs(CACHE, exist_ok=True)
+    req = urllib.request.Request(CATALOG, headers={"Accept": "application/vnd.github.raw", "User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=600) as fh:
+        blob = fh.read()
+    if len(blob) < CATALOG_MIN:
+        raise SystemExit("catalog: сервер отдал %d байт — это не каталог (ответ проверьте вручную: %s)"
+                         % (len(blob), CATALOG))
+    with open(path, "wb") as out:
+        out.write(blob)
+    return path, True
+
+
+def catalog_meta() -> tuple[int | None, str | None, str]:
+    """Метата data сервера о каталоге: размер и blob, чтобы локальную копию сверять не с собой самой."""
+    req = urllib.request.Request(CATALOG, headers={"Accept": "application/json", "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=120) as fh:
+            meta = json.loads(fh.read().decode("utf-8"))
+        return int(meta.get("size", 0)) or None, meta.get("sha"), "ok"
+    except Exception as exc:  # noqa: BLE001 - сервер может быть недоступен, это не провал сверки чисел
+        return None, None, "недоступен: %s" % (str(exc)[:70],)
+
+
+def cmd_catalog(path: str, authors: list[str], tcps: list[str], exp: dict[str, int]) -> int:
+    rows = list(csv.DictReader(io.open(path, encoding="utf-8", newline="")))
+    if not rows:
+        print("catalog: файл прочитан, строк нет — это не тот формат")
+        return 1
+    size, md5, sha = digests(path)
+    fields = list(rows[0].keys())
+    print("каталог: %s" % path)
+    print("  байт %d | md5 %s | строк данных %d | полей %d" % (size, md5, len(rows), len(fields)))
+    print("  поля: %s" % ", ".join(fields))
+    uniq = len({r.get("TCP", "") for r in rows})
+    st: dict[str, int] = {}
+    for r in rows:
+        st[r.get("Status", "")] = st.get(r.get("Status", ""), 0) + 1
+    print("  уникальных TCP: %d | статусы: %s" % (uniq, dict(sorted(st.items(), key=lambda kv: -kv[1]))))
+    ssz, ssha, smsg = catalog_meta()
+    print("  метаданные сервера: размер %s, blob %s, %s" % (ssz, (ssha or "")[:12], smsg))
+    if ssz is not None:
+        print("  копия равна тому, что объявил сервер: %s" % ("да" if ssz == size else "НЕТ"))
+    got: dict[str, int] = {"строк": len(rows)}
+    bad: list[str] = []
+    for a in authors:
+        n = sum(1 for r in rows if (r.get("Author") or "").strip().startswith(a))
+        exact = sum(1 for r in rows if (r.get("Author") or "").strip() == a)
+        second = sum(1 for r in rows if a in (r.get("Author") or "") and not (r.get("Author") or "").strip().startswith(a))
+        print("  автор «%s»: строк %d | точных совпадений %d | не первым лицом %d" % (a, n, exact, second))
+        got["автор:" + a] = n
+    for t in tcps:
+        n = sum(1 for r in rows if r.get("TCP") == t)
+        print("  том %s: записей %d" % (t, n))
+        got["том:" + t] = n
+    for key, want in exp.items():
+        have = got.get(key)
+        if have is None:
+            bad.append("%s: сверять нечем (нет замера — передайте --author/--tcp)" % key)
+        elif have != want:
+            bad.append("%s: заявлено %d, каталог даёт %d" % (key, want, have))
+    if bad:
+        print("РАСХОЖДЕНИЕ с заявленным:")
+        for b in bad:
+            print("   -", b)
+        return 1
+    if exp:
+        print("расхождений нет: заявленное воспроизведено каталогом (%d чисел)" % len(exp))
+    return 0
+
+
+def cmd_verify(block: dict, block_path: str, ids: list[str] | None = None) -> int:
+    """Сверка кэша с заявкой канона. Возвращает код: 0 — совпало всё, 1 — есть расхождение."""
+    dig = block.get("дайджесты") if isinstance(block, dict) else None
+    declared_total = None
+    for key in ("байтTEI", "байтВсего", "байт"):
+        v = block.get(key) if isinstance(block, dict) else None
+        if isinstance(v, int):
+            declared_total = v
+            break
+    if dig:
+        wanted = ids or sorted(dig)
+        mode = "пофайловая сверка дайджестов"
+    else:
+        if not ids:
+            raise SystemExit(f"verify: в блоке {block_path} нет поля `дайджесты`, а тома не "
+                             f"названы — дайте --ids (сверяем тогда только сумму байт)")
+        wanted = ids
+        mode = "сверка суммы байт (пофайловых дайджестов блок не держит)"
+    print(f"блок канона: {block_path}  ({mode})")
+    print(f"каталог сверки: {CACHE}")
+    measured_total = 0
+    bad = []
+    for tcp_id in wanted:
+        path = cache_path(tcp_id)
+        if not os.path.isfile(path):
+            try:
+                path, fresh = fetch_one(tcp_id)
+            except Exception as exc:
+                bad.append((tcp_id, "не скачан", f"{type(exc).__name__}: {exc}"))
+                print(f"  {tcp_id:<8} НЕТ ФАЙЛА и скачка не вышло: {exc}")
+                continue
+        n, md5, sha = digests(path)
+        measured_total += n
+        if dig:
+            dn = dig[tcp_id].get("байт")
+            dm = (dig[tcp_id].get("md5") or "").lower()
+            ok_b, ok_m = (dn is None or dn == n), (not dm or dm == md5)
+            verdict = "совпало" if (ok_b and ok_m) else "РАСХОЖДЕНИЕ"
+            if not (ok_b and ok_m):
+                why = []
+                if not ok_b:
+                    why.append(f"байт {n} против {dn}")
+                if not ok_m:
+                    why.append(f"md5 {md5[:12]} против {dm[:12]}")
+                bad.append((tcp_id, "дайджест", "; ".join(why)))
+            print(f"  {tcp_id:<8} {verdict:<12} {n:>9} Б  md5 {md5[:12]}  "
+                  f"{'заявлено ' + str(dn) + ' Б' if dn is not None else ''}")
+        else:
+            print(f"  {tcp_id:<8} {'':<12} {n:>9} Б  md5 {md5[:12]}")
+    if declared_total is not None:
+        delta = measured_total - declared_total
+        print(f"итого: томов {len(wanted)}, байт {measured_total}, заявлено {declared_total}, "
+              f"дельта {delta}")
+        if delta != 0:
+            bad.append(("сумма", "байт", f"дельта {delta}"))
+    else:
+        print(f"итого: томов {len(wanted)}, байт {measured_total} (заявленной суммы в блоке нет)")
+    if bad:
+        print(f"расхождений: {len(bad)}")
+        for what, kind, why in bad:
+            print(f"  - {what}: {kind}: {why}")
+        return 1
+    print("расхождений: 0 — заявленное каноном воспроизведено из сети")
+    return 0
+
+
+def cmd_fetch(ids):
+    for i in ids:
+        path, fresh = fetch_one(i)
+        n, md5, sha = digests(path)
+        print("%-8s %s %10d Б  md5 %s  sha256 %s" % (i, "скачан" if fresh else "кэш   ", n, md5, sha[:16]))
+
+
+def cmd_digests(ids, note=""):
+    tot = 0
+    for i in ids:
+        path = cache_path(i)
+        n, md5, sha = digests(path)
+        tot += n
+        print("%-8s %10d Б  md5 %s  sha256 %s" % (i, n, md5, sha[:16]))
+    print("итого: томов %d, байт %d%s" % (len(ids), tot, ("  " + note) if note else ""))
+
+
+def cmd_pages(tcp_id, limit=400):
+    text = io.open(cache_path(tcp_id), encoding="utf-8", errors="replace").read()
+    pmap = page_map(text)
+    print("листов: %d" % len(pmap))
+    for k, (p, n, f) in enumerate(pmap[:limit]):
+        nxt = pmap[k + 1][0] if k + 1 < len(pmap) else len(text)
+        head = re.sub(r"\s+", " ", TAG.sub(" ", text[p:nxt]))[:78].strip()
+        print("  %-8s %-22s %s" % (n, f.split(":")[-1], head))
+
+
+def cmd_imprint(tcp_id):
+    text = io.open(cache_path(tcp_id), encoding="utf-8", errors="replace").read()
+    front = re.search(r"<front\b.*?</front>", text, re.S)
+    seg = front.group(0) if front else text[:20000]
+    body = re.sub(r"\s+", " ", TAG.sub(" ", seg))
+    print(body[:2600])
+
+
+def cmd_census(ids, patfile, ctx=110):
+    if not patfile:
+        # опись без трафаретов: ровно то, чем сверяется блок «дайджесты» круга 54
+        print("томов в каталоге: %d  (кэш %s)" % (len(ids), CACHE))
+        return cmd_digests(ids, "трафареты не заданы — снимается опись, а не поиска́")
+    pats = load_patterns(patfile)
+    print("трафаретов: %d" % len(pats))
+    for tcp_id in ids:
+        raw = io.open(cache_path(tcp_id), encoding="utf-8", errors="replace").read()
+        p, pmap_idx = plain(raw)
+        lt, lmap = letters(p)
+        pmap = page_map(raw)
+        print("\n===== %s =====" % tcp_id)
+        silent = 0
+        for label, phrase in pats:
+            pl = re.compile(re.escape(phrase), re.I)
+            hits = []
+            for m in pl.finditer(p):
+                rp = pmap_idx[m.start()]
+                hits.append((locate(pmap, rp), snippet(p, m.start(), m.end(), ctx), "plain"))
+            lp = re.compile(re.escape(letters(phrase)[0]), re.I)
+            n_letter = 0
+            if lp.pattern:
+                for m in lp.finditer(lt):
+                    n_letter += 1
+                    if len(hits) < 40:
+                        rp = pmap_idx[lmap[m.start()]]
+                        hits.append((locate(pmap, rp),
+                                     snippet(p, lmap[m.start()], lmap[m.end()], ctx), "letters"))
+            if not hits:
+                silent += 1
+            np_ = len([h for h in hits if h[2] == "plain"])
+            print("  [%s] plain=%d letters=%d  %s" % (label, np_, n_letter, "" if hits else "МОЛЧИТ"))
+            seen = set()
+            for (n, f), snip, kind in hits[:14]:
+                key = (n, snip[:40])
+                if key in seen:
+                    continue
+                seen.add(key)
+                print("      %-7s %-18s %s | %s" % (n, f.split(":")[-1], kind,
+                                                     "…" + snip.strip()[:230] + "…"))
+        print("  молчит трафаретов: %d из %d" % (silent, len(pats)))
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--dir", dest="cache_dir", default=None,
+                    help="каталог кэша TEI (по умолчанию ATONEMENT_TCP_CACHE или .scratch/tcp)")
+    sp = ap.add_subparsers(dest="cmd", required=True)
+    a = sp.add_parser("fetch")
+    a.add_argument("ids", nargs="*", help="TCP-id через пробел")
+    a.add_argument("--ids-file", help="файл со списком id, по строке на том (качает недостающие)")
+    b = sp.add_parser("census")
+    b.add_argument("ids", nargs="?", default="", help="через запятую; пусто = весь каталог --dir")
+    b.add_argument("--dir", dest="scan_dir", default=None, help="снять опись по каталогу")
+    b.add_argument("--patterns", default=None)
+    b.add_argument("--ctx", type=int, default=110)
+    e = sp.add_parser("digests")
+    e.add_argument("--dir", dest="scan_dir", default=None)
+    c = sp.add_parser("pages")
+    c.add_argument("id")
+    c.add_argument("--limit", type=int, default=400)
+    d = sp.add_parser("imprint")
+    d.add_argument("id")
+    k = sp.add_parser("catalog")
+    k.add_argument("--csv", default=None, help="локальная копия каталога; пусто — скачать в кэш")
+    k.add_argument("--author", action="append", default=[],
+                   help="префикс колонки Author, посчитать строки (повторяемо)")
+    k.add_argument("--tcp", action="append", default=[], help="TCP-id, проверить присутствие (повторяемо)")
+    k.add_argument("--expect", action="append", default=[],
+                   help="заявленное число в форме «строк=61315», «автор:Hall, Joseph=86», «том:A66344=1»; "
+                        "несовпадение — exit 1, а не печать для глаз")
+    v = sp.add_parser("verify")
+    v.add_argument("--block", required=True,
+                   help="точечный путь блока канона в корпусе; если проза реестра назвала "
+                        "устаревшее имя, ищем по последнему ключу и говорим, где он лег на самом деле")
+    v.add_argument("--corpus", default=CORPUS_DEFAULT)
+    v.add_argument("--ids", default="", help="через запятую; пусто = возьмём из поля `дайджесты`")
+    ns = ap.parse_args(argv)
+    set_cache(ns.cache_dir)
+    if ns.cmd in ("census", "digests") and getattr(ns, "scan_dir", None):
+        set_cache(ns.scan_dir)   # каталог описи и есть кэш: иначе id из D читались бы из CACHE
+    if ns.cmd == "catalog":
+        p, _fresh = catalog_path(ns.csv)
+        exp: dict[str, int] = {}
+        for item in ns.expect:
+            key, _, val = item.rpartition("=")
+            if not val.isdigit():
+                raise SystemExit('catalog: --expect ждёт «ключ=число», получил «%s»' % item)
+            exp[key.strip()] = int(val)
+        sys.exit(cmd_catalog(p, ns.author, ns.tcp, exp))
+    if ns.cmd == "fetch":
+        ids = [x.strip().upper() for x in (ns.ids or []) if x.strip()]
+        if ns.ids_file:
+            ids += [ln.strip().upper() for ln in io.open(ns.ids_file, encoding="utf-8") if ln.strip()]
+        if not ids:
+            ap.error("fetch: дайте id списком или --ids-file")
+        cmd_fetch(ids)
+    elif ns.cmd == "census":
+        ids = [x.strip().upper() for x in (ns.ids or "").split(",") if x.strip()]
+        scan = ns.scan_dir or ns.cache_dir or CACHE
+        if not ids:
+            ids = dir_ids(scan)
+            if not ids:
+                ap.error("census: каталог %s пуст — сначала fetch <id>… --dir %s" % (scan, scan))
+        cmd_census(ids, ns.patterns, ns.ctx)
+    elif ns.cmd == "digests":
+        scan = ns.scan_dir or ns.cache_dir or CACHE
+        cmd_digests(dir_ids(scan), note="каталог %s" % scan)
+    elif ns.cmd == "pages":
+        cmd_pages(ns.id.upper(), ns.limit)
+    elif ns.cmd == "verify":
+        with io.open(ns.corpus, encoding="utf-8") as fh:
+            corpus = json.load(fh)
+        block, true_path, note = resolve_block(corpus, ns.block)
+        if not isinstance(block, dict):
+            raise SystemExit(f"verify: блок {true_path} — не объект, а {type(block).__name__}; "
+                             f"сверяем дайджесты, а не прозу")
+        if note:
+            print("УКАЗАТЕЛЬ РАСХОДИТСЯ:", note)
+        if not ns.cache_dir:
+            # каталог сверки создаётся самой командой: песочница с круга 55 не в дереве,
+            # и любая per-томная сверка, требующая «сначала разложите кэш», неисполнима из чистого клона
+            set_cache(os.path.join(".scratch", "verify", true_path.split(".")[-1]))
+        ids = [x.strip().upper() for x in (ns.ids or "").split(",") if x.strip()]
+        sys.exit(cmd_verify(block, true_path, ids or None))
+    else:
+        cmd_imprint(ns.id.upper())
+
+
+if __name__ == "__main__":
+    main()
