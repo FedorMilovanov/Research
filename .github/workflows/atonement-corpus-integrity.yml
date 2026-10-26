@@ -47,10 +47,29 @@ jobs:
           python-version: '3.12'
 
       - name: Validate Python syntax without writing bytecode
-        run: python3 -B -m py_compile scripts/validate_atonement_corpus_integrity.py
+        run: >-
+          python3 -B -m py_compile scripts/validate_atonement_corpus_integrity.py
+          scripts/atonement_claim_register.py scripts/atonement_reshoot_state.py
+          scripts/atonement_drive_mirror_round63.py scripts/atonement_library_index_round63.py
 
       - name: Atonement corpus integrity (read-only)
         run: python3 -B scripts/validate_atonement_corpus_integrity.py
+
+      # Числа, которые живут и в реестре, и в прозе аудита, переснимает скрипт; этот шаг не даёт
+      # им протухать: без него «счётчик есть в реестре» означает «кто-то когда-то посчитал» (круг 63
+      # нашёл в §1 123 записи при 124 в дереве — и ни одна проверка об этом не сообщила).
+      - name: Read-only re-shoot check
+        run: python3 -B scripts/atonement_reshoot_state.py --check
+      - name: Claim register is resolved and cross-checked
+        run: |
+          python3 -B scripts/atonement_claim_register.py --check
+          python3 -B scripts/atonement_claim_register.py --cross
+      - name: Ensure the re-shoot tools are read-only and not hollowed out
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)" || { echo "::error::шаг --check что-то записал — он обязан сверять"; exit 1; }
+          grep -q 'ATONEMENT RE-SHOOT: PASS' scripts/atonement_reshoot_state.py
+          grep -q 'pipelineScripts' scripts/atonement_reshoot_state.py
       # Мерж обязан быть зелёным не только на ветке: проверка накладывается на дерево main в worktree.
       # Иначе «аддитивный» слой мог бы внести в каноническое дерево падения по чужим файлам, и первый
       # же плановый прогон на main обвинил бы в этом владельцев тех ланов.
