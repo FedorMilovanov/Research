@@ -39,7 +39,13 @@ REG_MD = ROOT / "docs/research/atonement/35_four_point_authors_mass_registry.md"
 IDX = ROOT / "ИСКУПЛЕНИЕ/data/atonement-library-index.json"
 COR = ROOT / "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"
 DOC17 = ROOT / "ИСКУПЛЕНИЕ/17_RECONCILIATION_WITH_CANONICAL_SPINE_2026-10-15.md"
-FILES = [REG_MD, IDX, COR, DOC17]
+# С круга 59 батарея трогает не только главный реестр: реестр доводов лежит в реестре
+# своего лана, а ловится он правкой прозы, поэтому в откат входят четыре под-реестра и
+# один файл прозы. Молча не откатанный файл — это не проверка, а порча рабочего дерева.
+LANE_REG = {lan: ROOT / ("ИСКУПЛЕНИЕ/%s/data/%s-corpus-v1.json" % (lan, lan)) for lan in ("ot", "nt", "fathers", "synthesis")}
+FATHERS_DOC = ROOT / "ИСКУПЛЕНИЕ/fathers/09_SILENCES_AND_FALSE_FRIENDS.md"
+FILES = [REG_MD, IDX, COR, DOC17, FATHERS_DOC] + [LANE_REG[k] for k in sorted(LANE_REG)]
+CLAIMS_BLOCK = "claimRegister20261026"
 GATE = [sys.executable, "-B", "scripts/validate_atonement_corpus_integrity.py"]
 
 
@@ -109,6 +115,57 @@ def md_row_with_class(text, cls):
         if any(c.strip().strip("`").strip("*") == cls for c in cells):
             return m.group(0), cells
     raise AssertionError("не проверен: строки с классом %s в реестре нет" % cls)
+
+
+def jsurgical(path, block_key, field, new_scalar_text):
+    """Правка одного поля блока на месте, без пересборки всего файла. Whole-file
+    json.dumps переставил бы форму всему реестру, и ловить пришлось бы не то, что
+    проверяется, а формат: мутация обязана быть точечной ровно так же, как точечен
+    реестр, который она проверяет."""
+    import re as _re
+    raw = path.read_text(encoding="utf-8")
+    if '"%s"' % block_key not in raw:
+        raise AssertionError("не проверен: блока %s в %s нет, сеять некуда" % (block_key, path.name))
+    i = raw.index('"%s"' % block_key)
+    j = raw.index("{", i)
+    depth, in_str, esc, end = 0, False, False, None
+    for k in range(j, len(raw)):
+        ch = raw[k]
+        if in_str:
+            if esc: esc = False
+            elif ch == "\\": esc = True
+            elif ch == '"': in_str = False
+            continue
+        if ch == '"': in_str = True
+        elif ch == "{": depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                end = k + 1
+                break
+    span = raw[j:end]
+    m = _re.search(r'"%s": (?:[^,\n]|\\.)+' % field, span)
+    if not m:
+        raise AssertionError("не проверен: поля %s в блоке %s нет" % (field, block_key))
+    if span.count(m.group(0)) != 1:
+        raise AssertionError("не проверен: поле встречается в блоке %d раз" % span.count(m.group(0)))
+    old_text = m.group(0)
+    path.write_text(raw[:j] + span.replace(old_text, '"%s": %s' % (field, new_scalar_text)) + raw[end:],
+                    encoding="utf-8")
+
+
+def jsurgical_first(path, block_key, field, new_scalar_text):
+    """То же, но берётся первое вхождение поля — для строк реестра, где поле
+    «строка» встречается по разу на запись и править надо ровно одну запись."""
+    raw = path.read_text(encoding="utf-8")
+    if '"%s"' % block_key not in raw:
+        raise AssertionError("не проверен: блока %s в %s нет, сеять некуда" % (block_key, path.name))
+    i = raw.index('"%s"' % block_key)
+    m = re.search(r'"%s": (?:[^,\n]|\\.)+' % field, raw[i:])
+    if not m:
+        raise AssertionError("не проверен: поля %s в блоке нет" % field)
+    path.write_text(raw[: i + m.start()] + '"%s": %s' % (field, new_scalar_text) + raw[i + m.end():],
+                    encoding="utf-8")
 
 
 # --- случаи ------------------------------------------------------------------------------
@@ -389,6 +446,92 @@ def cases():
         "протухшее 404 без флага сети: не ловится, и это записанная граница офлайна (переспрос — "
         "--net-loss-claims)")
 
+
+
+    # 22. Реестр доводов, сводка против обхода: в ot-блоке число строк занижено на 1,
+    # сами строки не тронуты. Ловится правилом 27, а не md5 файла.
+    def m_claim_summary():
+        blk = json.loads(LANE_REG["ot"].read_text(encoding="utf-8")).get(CLAIMS_BLOCK) or {}
+        if not isinstance(blk.get("строк"), int):
+            raise AssertionError("не проверен: в ot-реестре доводов нет сводки «строк»")
+        jsurgical(LANE_REG["ot"], CLAIMS_BLOCK, "строк", str(blk["строк"] - 1))
+
+    add("claimsSummaryUnderstated", "сводка «строк» записана", m_claim_summary,
+        "реестр доводов говорит о себе на одну строку меньше, чем их в прозе")
+
+    # 23. Локатор строки сдвинут на 1: файл тот, заголовок тот, номер не тот. Ровно та
+    # болезнь, от которой в круге 45 страдали чужие реестры, а проверять её было нечем.
+    def m_claim_locator():
+        blk = json.loads(LANE_REG["nt"].read_text(encoding="utf-8")).get(CLAIMS_BLOCK) or {}
+        rows = blk.get("строки") or []
+        if not rows or not isinstance(rows[0].get("строка"), int):
+            raise AssertionError("не проверен: в nt-реестре нет строк с номером")
+        jsurgical_first(LANE_REG["nt"], CLAIMS_BLOCK, "строка", str(rows[0]["строка"] + 1))
+
+    add("claimsLocatorShiftedByOne", "поле «строка» записано", m_claim_locator,
+        "номер строки локатора сдвинут: побайтовая сверка обязана это увидеть")
+
+    # 24. Проза выросла, а реестр нет: в файл под-лана дописан раздел уровня ##. Это
+    # обратная сторона покрытия — без неё реестр был бы списком того, что удобно считать.
+    def m_prose_heading():
+        t = FATHERS_DOC.read_text(encoding="utf-8")
+        if "\n## TST-99." in t:
+            raise AssertionError("не проверен: раздел уже в файле")
+        FATHERS_DOC.write_text(t.rstrip("\n") + "\n\n## TST-99. Раздел, заведённый без строки реестра\n\n"
+                               "Временная запись: гейт обязан требовать строку реестра на каждый заголовок.\n",
+                               encoding="utf-8")
+
+    add("proseHeadingWithoutRegisterRow", "обход лана даёт", m_prose_heading,
+        "новый довод в прозе не записан в реестр — покрытие проверяется в обе стороны")
+
+    # 25. Новый вердиктный маркер, которого нет в классификации. Классификация обязана
+    # объяснять каждый маркер, иначе «прочее» съедает ровно то, что надо замечать.
+    def m_unknown_marker():
+        t = FATHERS_DOC.read_text(encoding="utf-8")
+        if not re.search(r"(?m)^## ", t):
+            raise AssertionError("не проверен: в файле нет ни одного раздела уровня ##")
+        # дописываем в конец: строки выше не сдвигаются, и ловиться должно ровно отсутствие
+        # класса у маркера, а не массовый разъезд локаторов — иначе случай проверяет не то
+        t = t.rstrip("\n") + "\n\nСостояние новой формы: `QUARANTINE_UNTIL_RESHOT`.\n"
+        FATHERS_DOC.write_text(t, encoding="utf-8")
+
+    add("undeclaredVerdictMarker", "не отнесено ни к одному классу", m_unknown_marker,
+        "в прозе появился вердикт, которого нет в словаре реестра")
+
+    # 26. Блок реестра доводов удалён из под-реестра совсем: проверка обязана краснеть
+    # на отсутствии счёта, а не молчать «нарушений нет».
+    def m_block_missing():
+        import sys as _sys
+        _sys.path.insert(0, str(ROOT / "scripts"))
+        import atonement_claim_register as _acr
+        raw = LANE_REG["synthesis"].read_text(encoding="utf-8")
+        if '"%s"' % CLAIMS_BLOCK not in raw:
+            raise AssertionError("не проверен: блока и так нет")
+        a, b = _acr.block_span(raw, CLAIMS_BLOCK)
+        LANE_REG["synthesis"].write_text(raw[:a].rstrip() + "\n" + raw[b:].lstrip("\n"), encoding="utf-8")
+
+    add("claimsBlockMissingEntirely", "нет блока " + CLAIMS_BLOCK, m_block_missing,
+        "реестра доводов нет вовсе: ноль обязан быть ошибкой, а не зелёным прогоном")
+
+
+    # 27. Выдуманная строка реестра: в nt-блок дописан довод, которого в прозе нет, а
+    # сводка увеличена так, чтобы счётчик не разошёлся. Обратный ход сверки ловит именно это.
+    def m_claim_row_invented():
+        raw = LANE_REG["nt"].read_text(encoding="utf-8")
+        m = re.search(r'"строк": (\d+)', raw[raw.index('"%s"' % CLAIMS_BLOCK):])
+        if not m:
+            raise AssertionError("не проверен: сводка «строк» не читается")
+        row = ('{"код": "CL-FAKE@00_NT_AUTHORITY_2026-10-07", "лан": "nt", '
+               '"файл": "ИСКУПЛЕНИЕ/nt/00_NT_AUTHORITY_2026-10-07.md", "строка": 1, '
+               '"срез": "Заголовок, которого в файле нет", "класс": "ЗАКРЫТО", "маркеров": 0, '
+               '"машинно": false}')
+        i = raw.index('"строки": [', raw.index('"%s"' % CLAIMS_BLOCK)) + len('"строки": [')
+        out = (raw[:i] + "\n            " + row + "," + raw[i:]
+               .replace('"строк": %s' % m.group(1), '"строк": %d' % (int(m.group(1)) + 1), 1))
+        LANE_REG["nt"].write_text(out, encoding="utf-8")
+
+    add("claimsRowInventedInBlock", "обход прозы её не находит", m_claim_row_invented,
+        "в реестр доводов вписана несуществующая строка: обратный ход сверки обязан краснеть")
 
     return out
 
