@@ -53,6 +53,13 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   Сверх того, гимн стоит **после** подписи сочинения «Κλήμεντος παιδαγωγοῦ α β γ», которая
   имеется в P, F и M. `ARCHIVE_HOLD`; см. `CLM-PHOS-CLEM-MS-ABSENT` и
   `CLM-PHOS-CLEM-HYMN-AFTER-SUBSCRIPTION`.
+- **Why P lacks it — прочитано 2026-10-26 (часть 5):** причина материальная. Штелин, с. XVIII–XIX:
+  «mindestens zwei Blätter ausgefallen zu sein, auf der die beiden Hymnen standen, die jetzt nur in
+  den Abschriften des Paris. erhalten sind» — выпало по меньшей мере два листа, на которых стояли
+  оба гимна; всего кодекс утратил 83 листа из 476. M и F списаны с P **до** утраты пяти тетрадей
+  (с. XXIV–XXV), поэтому для текстологии значат только они. В списке M гимны занимают отдельный
+  блок **f. 171v–173r («Die Hymnen»)** сразу после «Педагога» (f. 48r–171r). См.
+  `CLM-PHOS-CLEM-LEAVES-LOST` и `CLM-PHOS-CLEM-HYMNS-BLOCK-M`.
 - **Title in the manuscripts:** аппарат того же издания — «Überschrift in FM Ὕμνος τοῦ σωτῆρος
   Χριστοῦ τοῦ ἁγίου Κλήμεντος». См. `CLM-PHOS-CLEM-TITLE`.
 - **Use in worship: свидетельства нет.** Пять голосов — Филлипс 1937, Шафф, Мессенджер 1942,
@@ -82,16 +89,19 @@ The evidence rule is the same as everywhere in this project: a work enters this 
 - **Five obstacles (четыре остаются, одно снято):** 1) свидетельства богослужебного
   употребления нет; 2) мелодии нет, размер количественный (но метрически текст исправен);
   3) датировка широкая; ~~4) греческий текст расходится~~ — **снято 2026-10-26 по критическому
-  изданию**; 5) гимн отсутствует в основной рукописи P и засвидетельствован только двумя
-  списками с неё; сомнение в том, что это вставка, издателем отвергнуто.
+  изданию**; 5) гимн не сохранился в основной рукописи P: листы с обоими гимнами выпали, текст
+  дошёл в двух списках X–XII вв., снятых с P до утраты; сомнение в том, что это вставка, снимается
+  состоянием кодекса, а не аргументом вкуса (`CLM-PHOS-CLEM-LEAVES-LOST`).
 - **Russian translation:** нет. До решения владельца ничего из этого кандидата в копию не брать.
 - **Production:** `NOT_STARTED`. **Publication status:** `UNKNOWN_NOT_VERIFIED` — публиковать
   нечего.
 - **Research record:** `DOSSIER_PHOS-007_CLEMENT_HYMN.md` (часть 1: текст, рукописи, датировка) ·
   `DOSSIER_PHOS-007_PART2_USE_AND_WITNESS.md` (часть 2: употребление и свидетели) ·
-  `DOSSIER_PHOS-007_PART3_VOICES_AND_TEXT.md` (часть 3: голоса и текстология).
-- **Next reading (nothing opened yet):** **Stählin, GCS 12, с. XVII–XVIII** — состояние кодекса
-  P, основание вывода, что отсутствие гимна не аргумент против Климента; **там же, с. 339f** —
+  `DOSSIER_PHOS-007_PART3_VOICES_AND_TEXT.md` (часть 3: голоса и текстология) ·
+  `DOSSIER_PHOS-007_PART4_CRITICAL_TEXT.md` (часть 4: критическое издание, греческий текст и аппарат) ·
+  `DOSSIER_PHOS-007_PART5_WHY_P_LACKS_IT.md` (часть 5: состояние кодекса P и его списков).
+- **Next reading (nothing opened yet):** **Stählin, GCS 12, с. XVII** — начало фразы о выпавших
+  листах с их номерами (сама фраза прочитана с середины); **там же, с. 339f** —
   второе стихотворение-подражание; 3-е изд. GCS 12 (Treu, 1972) и Marcovich 2002 — сверка
   чтений; Harnack, *Chronologie* II, 22 и сл. — аргументы против Климентова авторства;
   Gerhard May, «Der Christushymnus des Clemens von Alexandrien», *Liturgie und Dichtung* 1
