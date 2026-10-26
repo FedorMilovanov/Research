@@ -1034,16 +1034,22 @@
     },
     {
       "id": "CLM-PHOS-AC-CHECKED",
-      "topic": "Whether the hymn is recorded in the Apostolic Constitutions",
-      "claim": "The widespread statement that the hymn is first recorded in the Apostolic Constitutions (VIII.35) is false. Book VIII.35–37 (ANF translation) contains the evening assembly, the psalm at the lighting of the lamps, the deacon's bidding prayer and the bishop's thanksgiving, but not one line of the hymn. The Constitutions give the rite, not the text.",
+      "topic": "Записан ли гимн в Апостольских постановлениях (проверено в обеих книгах)",
+      "claim": "Распространённое утверждение, будто гимн впервые записан в Апостольских постановлениях, ложно — и проверено теперь в обеих книгах, где его могли бы поместить. Книга VIII §§34-37 даёт вечерний чин: собрание, псалом при возжении светильников, просительную молитву диакона, благодарение епископа — но не текст гимна. Книга VII §§47-49 даёт суточные молитвы: утреннюю (Δόξα ἐν ὑψίστοις), вечернюю (Αἰνεῖτε παῖδες, то есть Пс 112:1 LXX, с Σοὶ πρέπει αἶνος и песнью Симеона Νῦν ἀπολύεις) и перед трапезой (Εὐλογητὸς εἶ) — снова ни одной строки Φῶς ἱλαρόν. Независимый научный перечень гимнов VII книги (Мессенджер, 1942) не включает Φῶς ἱλαρόν вовсе и упоминает его отдельно, как гимн, который Василий в IV веке называет очень древним.",
       "claimStatus": "VERIFIED_NEGATIVE",
       "sourceIds": [
         "SRC-PHOS-AC-ANF",
+        "SRC-PHOS-AC-BOOK7",
+        "SRC-PHOS-MESSENGER-ACHYMNS",
         "SRC-PHOS-PRAVENC"
       ],
       "notes": [
         "Book VIII.34–37 read in the ANF translation on 2026-10-26; the chapters are the evening rite, not the hymn.",
-        "The scholarly encyclopaedia article does not ascribe the hymn to the Apostolic Constitutions at all."
+        "The scholarly encyclopaedia article does not ascribe the hymn to the Apostolic Constitutions at all.",
+        "Перепроверено 2026-10-26: добавлена книга VII §§47-49, ранее проверялась только книга VIII.",
+        "Происхождение ошибки понятно: VIII.35 предписывает «псалом при возжении светильников», то есть чин; отсюда и пошло «гимн записан в Постановлениях». Чин есть, текста нет.",
+        "Утверждение повторяют английская Википедия и десятки сайтов; оно неверно.",
+        "Greek text of the Constitutions was not collated; both books checked in English translation only (ANF/NPNF)."
       ],
       "holds": [],
       "nextCheck": "If a critical Greek text is ever collated, check whether any Greek line of the hymn appears anywhere in Books VII–VIII; on the English evidence it does not.",
@@ -1422,6 +1428,25 @@
       ],
       "limits": [
         "Оба утверждения вторичны."
+      ]
+    },
+    {
+      "id": "CLM-PHOS-BASIL-DATE",
+      "topic": "Дата трактата Василия, в котором назван гимн",
+      "claim": "Трактат Василия Великого «О Святом Духе» (De Spiritu Sancto), в главе 29 которого названо благодарение при возжении светильников, датируется 375 годом и адресован Амфилохию Иконийскому. Главы 10–28 передают диалог с Евстафием Севастийским, происходивший в июне 372 г. Даты Василия: ок. 329 — 1 января 379.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "projectLevel": true,
+      "sourceIds": [
+        "SRC-PHOS-BASIL-DATE",
+        "SRC-PHOS-BASIL-DSS"
+      ],
+      "notes": [
+        "Перепроверено 2026-10-26: дата «ок. 375 г.» стоит в утверждённом тексте обложки и в подписи к треку, поэтому проверена по источнику, а не принята на веру.",
+        "Более тонкая датировка (по Дёррису: главы 1–9 и 28–30 написаны в сентябре 375 г.) видена только в поисковой выдаче платной статьи и в претензии не утверждается."
+      ],
+      "limits": [
+        "Энциклопедическая датировка, не анализ рукописей.",
+        "Глава 29 прочитана в английском переводе (NPNF)."
       ]
     }
   ]

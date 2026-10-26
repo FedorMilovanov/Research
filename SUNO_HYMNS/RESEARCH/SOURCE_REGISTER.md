@@ -853,3 +853,132 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Supports: **статистика рукописных атрибуций** — 49 без имени автора, 48 Амвросию и Августину, ок. 12 «епископу Никету», 7 Сисебуту, 2 Иларию, 2 Абундию; «ныне всеми критиками признано» — **начало V в.**; латинское сочинение, а не перевод с греческого (греческий текст — перевод с латинского IX в.); **третья часть от `Salvum fac` — ряд псалмических стихов (Пс 27:9, Пс 30:2), прилагавшийся и к Великому славословию**; **«семь столетий отделяют сочинение от первого нотированного свидетельства»**.
 - Limits: датировка «начало V в.» прямо противоречит английской Википедии («почти наверняка IV в.»); противоречие не снято.
 
+## SRC-EVANGGEZ-1806-43 — Evangelische Gezangen (1806), hymn XLIII: Zielverheffing tot Jezus — printed p. 82
+
+- URL: https://www.dbnl.org/tekst/_eva005evan01_01/_eva005evan01_01_0045.php
+- Source role/type: Digital presentation of the 1806 edition of the hymnbook
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: The Rutgers reworking of Heerlijckheyds Loff as hymn XLIII, its opening line, its eight-line stanza shape and its placement in the 1806 collection
+- Limits / caveats: Read from the DBNL transcription of the 1806 printing, not from a page image; the stanza numbering and typography of the printed page have not been inspected.
+
+## SRC-NL-LIEDERENBANK-9086 — Nederlandse Liederenbank record 9086 — Heerlijckheyds Loff (offline 2026-10-26)
+
+- URL: https://www.liederenbank.nl/liedpresentatie.php?lan=nl&zoek=9086
+- Source role/type: Catalogue record in the Dutch Song Database (Meertens Instituut / KNAW)
+- Evidence class: B1
+- Access state: CATALOG_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
+- Supports: Record fields: ten stanzas, date '27. in Ougstmaand 1665', the note that the melody is not that of 'Un jour m'en allais seulette', and the witness sigla Stapel LusthofZ1681, Bundeltje1718, EvangGez1806, PsalmenGezNH1938
+- Limits / caveats: The database returns HTTP 403 with a KNAW information-security notice and is offline as of 2026-10-26. The fields were read from the record's own rendering inside search results, not from an opened catalogue page. Re-check when the database returns; do not treat as inspected until then.
+
+## SRC-PSALMENGEZ-1938-75 — Psalmen en Gezangen (Hervormde Bundel 1938), Gezang 75, p. 501, nr. 239
+
+- URL: https://www.liederenbank.nl/resultaatlijst.php?zoek=23155&actie=incipitnorm&lan=nl
+- Source role/type: Reference to the printed hymnal as catalogued by the Dutch Song Database
+- Evidence class: B1
+- Access state: CATALOG_ONLY
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD, ARCHIVE_HOLD
+- Supports: Gezang 75 stands on printed p. 501 of the 1938 bundel, its incipit is «'t Oog omhoog, het hart naar boven», and the melody is credited to Louis Bourgeois
+- Limits / caveats: The printed bundel has not been collated; the page number and the melody credit come from the database rendering, and the database is offline.
+
+## SRC-HB-1938-75-WEB — Gezang 75 — public reproduction of the 1938 text in modernised spelling
+
+- URL: https://www.online-bijbel.nl/gezang/75/
+- Source role/type: Third-party web reproduction of a protected hymnal text
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: That the 1938 reworking runs to three stanzas and that its third stanza descends from 1676 stanza X ('Ah! dat aller menschen tongen')
+- Limits / caveats: Modernised spelling and a private site: no collation, no critical apparatus, not a witness for the printed page.
+
+## SRC-GENEVE-PSAUTIER-42 — The Genevan Psalter — the psalm 42 melody and its composers
+
+- URL: https://journals.openedition.org/chretienssocietes/2728?lang=fr
+- Source role/type: Scholarly survey of the Genevan psalter (Revue Chretiens, Societes, Journal)
+- Evidence class: B1
+- Access state: LINK_ONLY
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: That the melodies for Beze's psalm paraphrases, including psalm 42 «Ainsi qu'on oit le cerf bruire», were written by Loys Bourgeois
+- Limits / caveats: Seen in a search rendering while checking the Bourgeois attribution; the article itself has not been read in full, and no page is cited.
+
+## SRC-L-CRIT-2005-PSALM1-27 — Critical-edition item 27 — Den eersten psalm uytgebreydet, p. 120 (the 'Un jour' the apparatus excludes)
+
+- URL: https://www.dbnl.org/tekst/lode002uyt_02_01/lode002uyt_02_01_0032.php
+- Source role/type: Critical edition, text of the item that carries the other 'Un jour' tune direction
+- Evidence class: B1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Item 27, Psalm 1 expanded, stands on p. 120 under the direction 'Te singen op de wijse: Un jour m'en alloit &c.'; the apparatus identifies that melody as the French chanson 'Un jour m'en allais seulette' by Grouzy (d. 1568), printed in the Quinzieme livre de chansons, Paris 1571
+- Limits / caveats: Copyrighted apparatus: paraphrased, not quoted at length. Identifies the tune that our poem does NOT use — it says nothing about what our poem's own tune was.
+
+## SRC-STAPEL-1681-LUSTHOF — Claes Stapel, Het lust-hof der zielen (Alkmaar: Jacob Pietersz. Moerbeek, 1681) — the reprint at printed p. 495
+
+- URL: https://www.dbnl.org/tekst/stap007lust01_01/
+- Source role/type: Digital diplomatic presentation of the 1681 anthology
+- Evidence class: A1
+- Access state: PARTIAL_OBJECT
+- Locator state: EXACT_LOCATOR_VERIFIED
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: That the poem was reprinted in 1681 by Claes Stapel on printed p. 495 under the heading 'Heemels heerlijkheids lof. Voiz: Un jour, &c.', with the incipit 'Hoog! om hoog! mijn ziel naa booven'
+- Limits / caveats: The DBNL transcription of this two-column anthology interleaves the columns, so only the heading, the tune direction, the incipit and the page number can be relied on until the page image is seen.; The editor of the anthology is Claes Stapel, not Hendrick Stapel: the earlier research and the copy carried the wrong first name.
+
+## SRC-GEZANGBOEK-PS42 — gezangboek.nl — Psalm 42 page listing the hymns sung to that melody
+
+- URL: https://www.gezangboek.nl/Psalm42.html
+- Source role/type: Private reference site mapping hymns to melodies
+- Evidence class: C
+- Access state: LINK_ONLY
+- Locator state: LOCATOR_MISSING
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Independent support for the melody identity: 'Hoog omhoog, het hart naar boven' (Lodenstein) is listed among the hymns sung to the psalm 42 melody, together with Datheen's 'Als een hert gejaagd, o Heere'
+- Limits / caveats: A hobby reference site, seen through a search rendering, not opened; secondary and not citable for anything but the association itself.
+
+## SRC-PHOS-MESSENGER-ACHYMNS — Ruth Ellis Messenger, «Christian Hymns of the First Three Centuries», гл. IV «Liturgical Hymns» — перечень гимнов в VII книге Апостольских постановлений
+
+- URL: https://biblehub.com/library/messenger/christian_hymns_of_the_first_three_centuries/iv_liturgical_hymns.htm
+- Source role/type: Научный обзор раннехристианской гимнографии (1942)
+- Evidence class: C
+- Access state: LINK_ONLY
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD
+- Supports: Прямой перечень гимнов, реально находящихся в VII книге Постановлений: утренний — Δόξα ἐν ὑψίστοις θεῷ (Gloria in excelsis); вечерний — Αἰνεῖτε παῖδες («Дети, хвалите Господа»), включающий Σοὶ πρέπει αἶνος и Νῦν ἀπολύεις (Nunc dimittis); молитва перед трапезой — Εὐλογητὸς εἶ; Φῶς ἱλαρόν в этот перечень не входит: Мессенджер упоминает его отдельно — «вечерний гимн Φῶς ἱλαρόν упоминается Василием в IV веке как очень древний», со ссылкой на De Spiritu Sancto xxix, 73 (PG XXXII, 205); VIII книга Постановлений и литургия Иакова дают Трисвятое (Ἅγιος, ἅγιος, ἅγιος); в другой части той же литургии — Τρισάγιος ὕμνος; Постановления датируются IV или V веком, вероятнее IV; по Брайтману, составлены в Антиохии или её окрестностях
+- Limits / caveats: Страница открывалась, но целиком не прочитана: перечень гимнов получен из развёрнутой поисковой выдачи, а не с самой страницы. Записано как LINK_ONLY намеренно. Фундамент отрицательного вывода — не этот источник, а собственное чтение ANF (книги VII и VIII); Мессенджер служит независимым подтверждением. Уровень C, 1942 г.; греческий текст Постановлений не сличался.
+
+## SRC-PHOS-BASIL-DATE — Новая католическая энциклопедия, статья «Basil, St.» — датировка трактата De Spiritu Sancto
+
+- URL: https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/basil-st
+- Source role/type: Энциклопедическая статья
+- Evidence class: C
+- Access state: PARTIAL_OBJECT
+- Locator state: COARSE_LOCATOR_ONLY
+- Rights state: RIGHTS_UNKNOWN
+- Publication state: REFERENCE
+- HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: Трактат De Spiritu Sancto датируется 375 г.; адресован Амфилохию Иконийскому; Главы 10-28 передают напряжённый диалог Василия с Евстафием Севастийским, происходивший в Севастии в июне 372 г.; Даты Василия: род. ок. 329 в Понте, ум. 1 января 379 в Кесарии
+- Limits / caveats: Энциклопедическая статья; более тонкая датировка глав (по Дёррису: гл. 1-9 и 28-30 написаны в сентябре 375 г.) видела только в поисковой выдаче платной статьи и не утверждается.

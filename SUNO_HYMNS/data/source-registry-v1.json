@@ -1545,7 +1545,7 @@
     },
     {
       "id": "SRC-PHOS-AC-BOOK7",
-      "title": "Apostolic Constitutions, Book VII §47 — morning prayer («Glory be to God in the highest…»), ANF translation",
+      "title": "Apostolic Constitutions, Book VII §§47-49 — the daily prayers (morning, evening, dinner)",
       "url": "https://www.newadvent.org/fathers/07157.htm",
       "type": "Primary liturgical text in a public-domain English translation",
       "evidenceClass": "A1",
@@ -1558,7 +1558,10 @@
         "VII.47 is headed 'A Morning Prayer' and opens 'Glory be to God in the highest, and upon earth peace, good-will among men' (Luke 2:14)",
         "It continues 'We praise You, we sing hymns to You, we bless You; we glorify You, we worship You by Your great High Priest…'",
         "VII.48 is the evening prayer; VII.49 the prayer at dinner",
-        "So the Greek Gloria does appear in the Apostolic Constitutions — unlike Φῶς ἱλαρόν, which does not"
+        "So the Greek Gloria does appear in the Apostolic Constitutions — unlike Φῶς ἱλαρόν, which does not",
+        "§48 «Вечерняя молитва» (An Evening Prayer): «Αἰνεῖτε παῖδες» — «Дети, хвалите Господа, хвалите имя Господне» (Пс 112:1 LXX), затем «Σοὶ πρέπει αἶνος» — «Тебе подобает хвала… через Сына во Святом Духе» и «Νῦν ἀπολύεις» — «Ныне отпущаеши раба Твоего», то есть песнь Симеона (Лк 2:29-32)",
+        "§49 «Молитва перед трапезой» (A Prayer at Dinner): «Εὐλογητὸς εἶ» — «Благословен Ты, Господи, питающий меня от юности моей»",
+        "Ни одна строка Φῶς ἱλαρόν в §§47-49 нет: вечерняя молитва составлена из псалма и евангельской песни"
       ],
       "limits": "Read in the NPNF English translation only; the Greek was not collated. Only VII.47–49 were read, not the whole book."
     },
@@ -1765,6 +1768,48 @@
         "Псалмодическая формула двух тонов связана с tonus peregrinus и, вероятно, пришла из галликанского (неримского) репертуара"
       ],
       "limits": "Датировка «начало V в.» прямо противоречит утверждению английской Википедии о «почти наверняка IV в.»; противоречие не снято. Статья 2018 г. (views updated), авторство раздела — М. Угло."
+    },
+    {
+      "id": "SRC-PHOS-MESSENGER-ACHYMNS",
+      "title": "Ruth Ellis Messenger, «Christian Hymns of the First Three Centuries», гл. IV «Liturgical Hymns» — перечень гимнов в VII книге Апостольских постановлений",
+      "url": "https://biblehub.com/library/messenger/christian_hymns_of_the_first_three_centuries/iv_liturgical_hymns.htm",
+      "type": "Научный обзор раннехристианской гимнографии (1942)",
+      "evidenceClass": "C",
+      "accessState": "LINK_ONLY",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Прямой перечень гимнов, реально находящихся в VII книге Постановлений: утренний — Δόξα ἐν ὑψίστοις θεῷ (Gloria in excelsis); вечерний — Αἰνεῖτε παῖδες («Дети, хвалите Господа»), включающий Σοὶ πρέπει αἶνος и Νῦν ἀπολύεις (Nunc dimittis); молитва перед трапезой — Εὐλογητὸς εἶ",
+        "Φῶς ἱλαρόν в этот перечень не входит: Мессенджер упоминает его отдельно — «вечерний гимн Φῶς ἱλαρόν упоминается Василием в IV веке как очень древний», со ссылкой на De Spiritu Sancto xxix, 73 (PG XXXII, 205)",
+        "VIII книга Постановлений и литургия Иакова дают Трисвятое (Ἅγιος, ἅγιος, ἅγιος); в другой части той же литургии — Τρισάγιος ὕμνος",
+        "Постановления датируются IV или V веком, вероятнее IV; по Брайтману, составлены в Антиохии или её окрестностях"
+      ],
+      "limits": "Страница открывалась, но целиком не прочитана: перечень гимнов получен из развёрнутой поисковой выдачи, а не с самой страницы. Записано как LINK_ONLY намеренно. Фундамент отрицательного вывода — не этот источник, а собственное чтение ANF (книги VII и VIII); Мессенджер служит независимым подтверждением. Уровень C, 1942 г.; греческий текст Постановлений не сличался."
+    },
+    {
+      "id": "SRC-PHOS-BASIL-DATE",
+      "title": "Новая католическая энциклопедия, статья «Basil, St.» — датировка трактата De Spiritu Sancto",
+      "url": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/basil-st",
+      "type": "Энциклопедическая статья",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "Трактат De Spiritu Sancto датируется 375 г.; адресован Амфилохию Иконийскому",
+        "Главы 10-28 передают напряжённый диалог Василия с Евстафием Севастийским, происходивший в Севастии в июне 372 г.",
+        "Даты Василия: род. ок. 329 в Понте, ум. 1 января 379 в Кесарии"
+      ],
+      "limits": "Энциклопедическая статья; более тонкая датировка глав (по Дёррису: гл. 1-9 и 28-30 написаны в сентябре 375 г.) видела только в поисковой выдаче платной статьи и не утверждается."
     }
   ]
 }
