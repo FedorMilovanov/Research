@@ -901,3 +901,38 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED · **Sources:** SRC-PHOS-LATIN-RENDERINGS · **Level:** series
 **Limits:** источник уровня D; вывод отрицательный, поэтому допустим как основание не заявлять древность. Кандидат PHOS-006 снят из очереди.
 
+### CLM-PHOS-002-LACUNAE — состояние текста Оксиринхского гимна
+
+**Claim:** строка 1 утрачена почти целиком, строка 5 читается обрывками, в строке 3 восстановлены `ῥιπαὶ πνοιῶν, πηγαὶ`; больше половины связного текста — реставрация Cosgrove, а не древние слова. Связный подлинный отрезок — около полутора строк, от `ποταμῶν ῥοθίων πᾶσαι` до `ἀμήν ἀμήν`.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-OXY-TEXT · **Level:** series
+**Limits:** Cosgrove целиком не открывался (`LOCATOR_HOLD`); папирус не видел (`ARCHIVE_HOLD`).
+
+### CLM-PHOS-002-SETS-CRITERION — критерий серии, подтверждённый извне
+
+**Claim:** Smith 2011 (с. 211): Φῶς ἱλαρόν и Оксиринхский гимн — древнейшие христианские греческие гимнографические тексты, о которых с основанием можно сказать, что они пелись в богослужении и не взяты из Библии. Подтверждает первые два номера очереди и задаёт критерий допуска.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-OXY-TEXT · **Level:** series
+**Limits:** Smith 2011 не открывался целиком (`LOCATOR_HOLD`).
+
+### CLM-PHOS-004-TEXT-COMPLETE — целостность текста *Sub tuum praesidium*
+
+**Claim:** греческий текст дошёл целиком, шесть строк, без лакун. Препятствие кандидата не в сохранности, а в богородичном и исповедальном характере текста.
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-SUBTUUM-TEXT · **Level:** series
+**Limits:** текст по энциклопедической статье (`LOCATOR_HOLD`).
+
+### CLM-PHOS-004-FIFTH-CENTURY — V век, независимый от спора о папирусе
+
+**Claim:** датировка Райландского папируса 470 спорна (Lobel III / Roberts IV / Förster VIII / Towarek VI–VII; Förster утверждает отсутствие консенсуса), но отождествление гимна в грузинском Иадгари Иерусалима показывает богослужебное употребление в V в. — и эта дата не зависит от спора о папирусе.
+
+**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED · **Sources:** SRC-PHOS-SUBTUUM-TEXT · **Level:** series
+**Limits:** Иадгари не открывался; V век засвидетельствован, но не мной — статус ослаблен намеренно.
+
+### CLM-PHOS-002-RIVAL-2025 — существующая обработка Оксиринхского гимна
+
+**Claim:** в 2025 г. проект *The First Hymn* (John Dickson) выпустил worship-обработку гимна на подлинный текст и мелодию (Chris Tomlin, Ben Fielding; альбом *The King Is Still the King*, 2025). «Древнейший христианский гимн с музыкой» — о нотации, не о сочинении.
+
+**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED · **Sources:** SRC-PHOS-FIRST-HYMN-2025 · **Level:** series
+**Limits:** источник уровня D; факт нужен для решения о нише, не для датировки.
+

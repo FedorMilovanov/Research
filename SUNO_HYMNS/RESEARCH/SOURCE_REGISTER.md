@@ -818,3 +818,24 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Supports: `Lumen hilare` — буквальный перевод, известный по Fortescue, *Latin Hymns* (нач. XX в.); `Iucunda lux tu gloriae` — метрическое переложение неустановленного происхождения, напев `Jesu dulcis memoria`, «григорианизированная» мелодия приписывается Дом Люсьену Давиду (XX в.); в обсуждении утверждается, что латинского богослужебного употребления не было.
 - Limits: источник уровня D. Использован **только** как основание не заявлять древность латинской версии; положительных утверждений на нём не строится.
 
+### SRC-PHOS-OXY-TEXT — текст Оксиринхского гимна (Cosgrove 2011) с лакунами
+
+- URL: https://en.wikipedia.org/wiki/Oxyrhynchus_hymn
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: LOCATOR_HOLD, ARCHIVE_HOLD, RIGHTS_HOLD
+- Supports: пять строк греческого текста с разметкой лакун (Cosgrove 2011, с. 37); **строка 1 утрачена почти целиком, строка 5 читается обрывками**; музыка — греческая вокальная нотация, гиполидийская, диатоника, амбитус октава F–F, финалис G, метр анапестический; папирус 29,6 × 4,8–5,0 см; Smith 2011, с. 211 — критерий серии.
+- Limits: Cosgrove целиком не открывался (`LOCATOR_HOLD`); папирус не видел (`ARCHIVE_HOLD`); нотацию нота за нотой не читал.
+
+### SRC-PHOS-SUBTUUM-TEXT — греческий текст *Sub tuum praesidium* и спор о дате
+
+- URL: https://en.wikipedia.org/wiki/Sub_tuum_praesidium
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: LOCATOR_HOLD, RIGHTS_HOLD
+- Supports: **полный греческий текст, шесть строк, без лакун**; Райландский папирус 470; датировки Lobel III / Roberts IV / Förster VIII / Towarek VI–VII; **грузинский Иадгари Иерусалима — богослужебное употребление в V в.**; в византийском чине — последний отпустительный тропарь вечерни.
+- Limits: текст по энциклопедической статье, не по печатному богослужебному источнику; Иадгари — по пересказу.
+
+### SRC-PHOS-FIRST-HYMN-2025 — проект *The First Hymn*
+
+- URL: https://www.abc.net.au/news/2025-12-25/oldest-christian-hymn-with-music-transformed-modern-song/105748690
+- Evidence class: **D** · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD
+- Supports: в 2025 г. вышла современная worship-обработка Оксиринхского гимна на подлинный текст и мелодию (John Dickson; Chris Tomlin, Ben Fielding; альбом *The King Is Still the King*, 2025). Формулировка «древнейший христианский гимн с музыкой» — о нотации, не о сочинении.
+- Limits: новостное сообщение; используется только как факт существования конкурирующей обработки.
+
