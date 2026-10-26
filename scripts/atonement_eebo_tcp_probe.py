@@ -2,8 +2,8 @@
 """Пробник EEBO-TCP для реестра массы (круг 54).
 
 Каналец, которым лан читает напечатанные листы: у textcreationpartnership каждый текст —
-отдельный репозиторий, файл `<id>.xml` (TEI-P5). Этот скрипт его качает, кэширует и умеет пять
-подкоманд (у `census` — два режима), которыми лан измерял строки реестра в кругах 52–55:
+отдельный репозиторий, файл `<id>.xml` (TEI-P5). Этот скрипт его качает, кэширует и умеет шесть
+подкоманд (у `census` — два режима), которыми лан измерял строки реестра в кругах 52–56:
 
   fetch  <TCP-ID>… [--ids-file F]  — скачать и посчитать дайджесты кэша (байты, md5, sha256);
                                      без кэша команда сама себя и наполняет, так что recheck-строка
@@ -14,6 +14,10 @@
                                      --patterns снимается только опись (число томов, байты, дайджесты) —
                                      ровно та опись, которой сверяется блок дайджестов круга 54
   digests --dir D                  — опись каталога отдельной командой (томов, байт, md5, sha256)
+  verify --block B… [--ids …]     — сверить кэш с заявкой канона: блок B читается из корпуса JSON,
+                                     недостающие тома докачиваются, дайджесты и байты сравниваются,
+                                     код возврата 0 только если совпало всё; если блок держит
+                                     только сумму байт, сверяется сумма (так снят круг 53)
   pages  <TCP-ID>                  — карта листов и первые строки каждого листа (бегущие строки,
                                      напечатанные числа) — тем способом снят сдвиг нумерации
   imprint <TCP-ID>                 — титульные листы из <front> (срез по <body> глушит титул —
@@ -149,6 +153,115 @@ def snippet(text: str, lo: int, hi: int, pad: int = 120) -> str:
     return text[a:b].replace("\n", " ")
 
 
+CORPUS_DEFAULT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                              "ИСКУПЛЕНИЕ", "data", "atonement-corpus-v1.json")
+
+
+def find_key(node, name, path=()):
+    """Все пути, где в корпусе встречается ключ `name` — чтобы ложная ссылка в прозе
+    разрешалась в настоящее место, а не молча падала."""
+    hits = []
+    if isinstance(node, dict):
+        for k, v in node.items():
+            if k == name:
+                hits.append((path + (k,), v))
+            hits += find_key(v, name, path + (k,))
+    elif isinstance(node, list):
+        for i, v in enumerate(node):
+            hits += find_key(v, name, path + (str(i),))
+    return hits
+
+
+def resolve_block(corpus: dict, spec: str) -> tuple[dict, str, str]:
+    """Блок канона по точечному пути; если путь в прозе устарел, ищем по последнему имени
+    и возвращаем настоящий путь вместе с пометкой о расхождении."""
+    parts = spec.split(".")
+    node = corpus
+    for part in parts:
+        if not isinstance(node, dict) or part not in node:
+            break
+        node = node[part]
+    else:
+        return node, spec, ""
+    hits = find_key(corpus, parts[-1])
+    if len(hits) == 1:
+        true_path, value = hits[0]
+        note = ("указанный путь не разрешается; блок найден по имени один раз: "
+                + ".".join(true_path))
+        return value, ".".join(true_path), note
+    if not hits:
+        raise SystemExit(f"verify: ни пути {spec}, ни ключа {parts[-1]} в корпусе нет — "
+                         f"ссылка битая в обе стороны, угадывать не будем")
+    raise SystemExit(f"verify: имя {parts[-1]} неоднозначно ({len(hits)} шт): "
+                     + "; ".join(".".join(p) for p, _ in hits[:6]))
+
+
+def cmd_verify(block: dict, block_path: str, ids: list[str] | None = None) -> int:
+    """Сверка кэша с заявкой канона. Возвращает код: 0 — совпало всё, 1 — есть расхождение."""
+    dig = block.get("дайджесты") if isinstance(block, dict) else None
+    declared_total = None
+    for key in ("байтTEI", "байтВсего", "байт"):
+        v = block.get(key) if isinstance(block, dict) else None
+        if isinstance(v, int):
+            declared_total = v
+            break
+    if dig:
+        wanted = ids or sorted(dig)
+        mode = "пофайловая сверка дайджестов"
+    else:
+        if not ids:
+            raise SystemExit(f"verify: в блоке {block_path} нет поля `дайджесты`, а тома не "
+                             f"названы — дайте --ids (сверяем тогда только сумму байт)")
+        wanted = ids
+        mode = "сверка суммы байт (пофайловых дайджестов блок не держит)"
+    print(f"блок канона: {block_path}  ({mode})")
+    print(f"каталог сверки: {CACHE}")
+    measured_total = 0
+    bad = []
+    for tcp_id in wanted:
+        path = cache_path(tcp_id)
+        if not os.path.isfile(path):
+            try:
+                path, fresh = fetch_one(tcp_id)
+            except Exception as exc:
+                bad.append((tcp_id, "не скачан", f"{type(exc).__name__}: {exc}"))
+                print(f"  {tcp_id:<8} НЕТ ФАЙЛА и скачка не вышло: {exc}")
+                continue
+        n, md5, sha = digests(path)
+        measured_total += n
+        if dig:
+            dn = dig[tcp_id].get("байт")
+            dm = (dig[tcp_id].get("md5") or "").lower()
+            ok_b, ok_m = (dn is None or dn == n), (not dm or dm == md5)
+            verdict = "совпало" if (ok_b and ok_m) else "РАСХОЖДЕНИЕ"
+            if not (ok_b and ok_m):
+                why = []
+                if not ok_b:
+                    why.append(f"байт {n} против {dn}")
+                if not ok_m:
+                    why.append(f"md5 {md5[:12]} против {dm[:12]}")
+                bad.append((tcp_id, "дайджест", "; ".join(why)))
+            print(f"  {tcp_id:<8} {verdict:<12} {n:>9} Б  md5 {md5[:12]}  "
+                  f"{'заявлено ' + str(dn) + ' Б' if dn is not None else ''}")
+        else:
+            print(f"  {tcp_id:<8} {'':<12} {n:>9} Б  md5 {md5[:12]}")
+    if declared_total is not None:
+        delta = measured_total - declared_total
+        print(f"итого: томов {len(wanted)}, байт {measured_total}, заявлено {declared_total}, "
+              f"дельта {delta}")
+        if delta != 0:
+            bad.append(("сумма", "байт", f"дельта {delta}"))
+    else:
+        print(f"итого: томов {len(wanted)}, байт {measured_total} (заявленной суммы в блоке нет)")
+    if bad:
+        print(f"расхождений: {len(bad)}")
+        for what, kind, why in bad:
+            print(f"  - {what}: {kind}: {why}")
+        return 1
+    print("расхождений: 0 — заявленное каноном воспроизведено из сети")
+    return 0
+
+
 def cmd_fetch(ids):
     for i in ids:
         path, fresh = fetch_one(i)
@@ -248,6 +361,12 @@ def main(argv=None):
     c.add_argument("--limit", type=int, default=400)
     d = sp.add_parser("imprint")
     d.add_argument("id")
+    v = sp.add_parser("verify")
+    v.add_argument("--block", required=True,
+                   help="точечный путь блока канона в корпусе; если проза реестра назвала "
+                        "устаревшее имя, ищем по последнему ключу и говорим, где он лег на самом деле")
+    v.add_argument("--corpus", default=CORPUS_DEFAULT)
+    v.add_argument("--ids", default="", help="через запятую; пусто = возьмём из поля `дайджесты`")
     ns = ap.parse_args(argv)
     set_cache(ns.cache_dir)
     if ns.cmd in ("census", "digests") and getattr(ns, "scan_dir", None):
@@ -272,6 +391,21 @@ def main(argv=None):
         cmd_digests(dir_ids(scan), note="каталог %s" % scan)
     elif ns.cmd == "pages":
         cmd_pages(ns.id.upper(), ns.limit)
+    elif ns.cmd == "verify":
+        with io.open(ns.corpus, encoding="utf-8") as fh:
+            corpus = json.load(fh)
+        block, true_path, note = resolve_block(corpus, ns.block)
+        if not isinstance(block, dict):
+            raise SystemExit(f"verify: блок {true_path} — не объект, а {type(block).__name__}; "
+                             f"сверяем дайджесты, а не прозу")
+        if note:
+            print("УКАЗАТЕЛЬ РАСХОДИТСЯ:", note)
+        if not ns.cache_dir:
+            # каталог сверки создаётся самой командой: песочница с круга 55 не в дереве,
+            # и любая per-томная сверка, требующая «сначала разложите кэш», неисполнима из чистого клона
+            set_cache(os.path.join(".scratch", "verify", true_path.split(".")[-1]))
+        ids = [x.strip().upper() for x in (ns.ids or "").split(",") if x.strip()]
+        sys.exit(cmd_verify(block, true_path, ids or None))
     else:
         cmd_imprint(ns.id.upper())
 
