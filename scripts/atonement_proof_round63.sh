@@ -273,6 +273,9 @@ else
 fi
 
 echo "--- проб истории: сверяемые числа относятся к дереву, а не к клону (круг 65) ---"
+timeout 120 python3 -B scripts/atonement_history_perturbation_probe.py --verdicts > /dev/null 2>&1 \
+  && say "проб истории: способ отчёта различает 0/1/2" "да" \
+  || say "проб истории: --verdicts" "отчёт проба не различает исход — см. вывод режима" fail
 pout=$(timeout 900 python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest 2>&1)
 case "$pout" in
   *"ПРОБ ИСТОРИИ: PASS"*) say "проб истории: $(printf '%s\n' "$pout" | head -1 | cut -c1-56)" "да" ;;
