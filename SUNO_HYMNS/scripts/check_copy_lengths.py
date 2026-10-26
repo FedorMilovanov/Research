@@ -68,6 +68,29 @@ def telegram_visible() -> str:
     return re.sub(r"\*", "", src[start:end])
 
 
+def extra_telegram_posts() -> list[tuple[str, int, int | None]]:
+    """Every other Telegram post file: (label, visible length, stated length).
+
+    DUTCH-005_TELEGRAM.md is excluded because it has its own extraction rule
+    above. Any new Telegram file drops in here with no change to this script,
+    which is the point: a hand-typed length is a length waiting to go stale.
+    """
+    out: list[tuple[str, int, int | None]] = []
+    for path in sorted(SUNO.glob("*TELEGRAM*.md")):
+        if path.name == "DUTCH-005_TELEGRAM.md":
+            continue
+        src = path.read_text(encoding="utf-8")
+        for index, block in enumerate(re.findall(r"```text\n(.*?)\n```", src, re.S), 1):
+            label = f"{path.name} — сообщение {index}"
+            # the number is bolded, so the closing ** has to be allowed between
+            # the digits and the word that follows
+            stated = re.search(rf"Сообщение {index}[^\n]*?(\d+)\*{{0,2}} знаков", src)
+            out.append(
+                (label, len(re.sub(r"\*", "", block)), int(stated.group(1)) if stated else None)
+            )
+    return out
+
+
 def claimed(patterns: list[str], text: str, label: str, problems: list[str]) -> list[int]:
     found: list[int] = []
     for pattern in patterns:
@@ -160,6 +183,15 @@ def main() -> int:
     for value in claimed([r"Длина: \*\*(\d+)\*\* видимых знаков"], tg, "DUTCH-005_TELEGRAM.md", problems):
         if value != tg_len:
             problems.append(f"DUTCH-005_TELEGRAM.md says the post is {value}, it is {tg_len}")
+
+    for label, actual, stated in extra_telegram_posts():
+        print(f"{label}: {actual} visible characters")
+        if stated is None:
+            problems.append(f"{label}: the document does not state its length")
+        elif stated != actual:
+            problems.append(f"{label}: states {stated} characters, it is {actual}")
+        if actual > TG_LIMIT:
+            problems.append(f"{label}: {actual} characters, over the {TG_LIMIT} limit")
 
     if desc > YT_LIMIT:
         problems.append(f"YouTube description is {desc} characters, over the {YT_LIMIT} limit")
