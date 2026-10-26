@@ -90,7 +90,7 @@ def make_clone(src, dest, *, depth=None, want_main=True):
         # источник может знать main только как remote-tracking (клон по HEAD, как в песочнице этого
         # круга, или чистый клон, где local `main` не создаётся); тогда указатель переносится явно —
         # объект в клоне с полной историей уже есть, а отказать здесь означало бы назвать неполной
-        # среду, в которой проб merely не угадал способ хранения ссылки
+        # среду, в которой проб просто не угадал способ хранения ссылки
         src_main = (git(src, "rev-parse", "--verify", "-q", "refs/remotes/origin/main", check=False) or "").strip()
         # "-e" ничего не печатает и потому неразличима через git(..., check=False): проверяем тип
         if src_main and git(dest, "cat-file", "-t", src_main, check=False) != "commit":
@@ -121,8 +121,8 @@ class Env:
 
 
 def build(src, work):
-    """E1 → E2 → E3. Все три — независимые клоны одного источника: среды обязаны различаться ровно тем,
-что объявлено (полнота истории и наличие `origin/main`), а не тем, откуда их клонировали."""
+    """E1 → E2 → E3. Все три — независимые клоны одного источника: среды обязаны различаться ровно
+    тем, что объявлено (полнота истории и наличие `origin/main`), а не тем, откуда их клонировали."""
     e1 = Path(work) / "e1"
     make_clone(src, e1)
     head = git(src, "rev-parse", "HEAD")
@@ -210,6 +210,50 @@ def trap(e1, e2):
     return None
 
 
+def plural(n: int, one: str, few: str, many: str) -> str:
+    """Русская форма после числа — не косметика: отчёт, который пишет «в 1 случаях», читается как
+    вывод, снятый с чужого шаблона, а шаблон здесь и есть то, чему доверяют."""
+    n %= 100
+    if 11 <= n <= 14:
+        return many
+    return one if n == 1 else (few if 2 <= n <= 4 else many)
+
+
+def decide(broken: bool, bad: int, nchecks: int) -> tuple:
+    """Итог проба — чистая функция, и `--verdicts` проверяет именно её.
+
+    Три выхода обязаны различаться словами. Первая версия кодировала «среда не годна» тем же
+    счётчиком, что и найденные расхождения (bad = 2), из-за чего два законных находки печатались как
+    «среду использовать нельзя» — найденный дефект прятался за шумом и просил ещё один прогон вместо
+    правки. Режим `--verdicts` дёшев именно потому, что обязан запускаться всегда: способ отчёта
+    отучается быстрее, чем успеваешь заметить."""
+    if broken:
+        return 2, "ПРОБ ИСТОРИИ: СРЕДА НЕГОДНА — это не проверка"
+    if bad:
+        return 1, (f"ПРОБ ИСТОРИИ: {plural(bad, 'расхождение', 'расхождения', 'расхождений')} {bad} "
+                   f"из {nchecks} {plural(nchecks, 'проверки', 'проверок', 'проверок')} — "
+                   "среда собрана, вывод читается выше дословно")
+    return 0, ("ПРОБ ИСТОРИИ: PASS — ни одно сверяемое число не отреагировало на рост истории; "
+               "в неполном клоне отказ назван словами")
+
+
+def verdicts() -> int:
+    cases = (
+        ((True, 2, 6), (2, "СРЕДА НЕГОДНА"), "отказ среды не притворяется находкой"),
+        ((False, 2, 6), (1, "расхождения 2 из 6"), "две находки не притворяются отказом среды"),
+        ((False, 1, 5), (1, "расхождение 1 из 5 проверок"), "одна находка названа одним"),
+        ((False, 0, 5), (0, "ПРОБ ИСТОРИИ: PASS"), "тишина — это успех, а не молчание"),
+    )
+    bad = 0
+    for args, (want_code, want_phrase), name in cases:
+        code, text = decide(*args)
+        ok = code == want_code and want_phrase in text and (("СРЕДА НЕГОДНА" in text) == (code == 2))
+        bad += check(name, ok, "" if ok else f"код {code} (ждался {want_code}): {text[:70]}")
+    print("ПРОБ ИСТОРИИ: ВЕРДИКТЫ — " + ("способ отчёта различает находку, успех и непригодную среду"
+                                        if bad == 0 else f"отчёт сломан в {bad} случаях"))
+    return 0 if bad == 0 else 1
+
+
 def check(name, ok, detail=""):
     print(f"  {'OK ' if ok else '!! '}{name}{'' if not detail else ' — ' + detail}")
     return 0 if ok else 1
@@ -222,10 +266,15 @@ def main() -> int:
     ap.add_argument("ref", nargs="?", default="HEAD",
                     help="что проверять: sha или имя (по умолчанию HEAD — тот репозиторий, "
                          "в котором лежит проб)")
+    ap.add_argument("--verdicts", action="store_true",
+                    help="проверить только способ отчёта (коды 0/1/2 и их формулировки), клонов не "
+                         "строить; дёшево, поэтому вызывается вместе с остальными шагами")
     ap.add_argument("--selftest", action="store_true",
                     help="установить в клоны намеренный дефект и потребовать, чтобы ловушка сработала")
     ap.add_argument("--keep", action="store_true", help="не удалять рабочие клоны (для разбора вывода)")
     args = ap.parse_args()
+    if args.verdicts:
+        return verdicts()
     try:
         src = Path(REPO).resolve()
         head = git(src, "rev-parse", args.ref)
@@ -234,6 +283,8 @@ def main() -> int:
         return 2
     work = Path(tempfile.mkdtemp(prefix="atonement-probe65."))
     bad = 0
+    # «не годна среда» и «найдено два расхождения» — разные слова и разные коды; см. decide()
+    broken = False
     try:
         e1, e2, e3 = build(src, work)
         nchecks = 6 if args.selftest else 5
@@ -274,21 +325,15 @@ def main() -> int:
                      "" if v1num == v2num else f"{v1num[:6]}… против {v2num[:6]}…")
     except Exception as exc:  # noqa: BLE001
         print(f"СРЕДА НЕГОДНА: {type(exc).__name__}: {exc}")
-        bad = 2
+        broken = True
     finally:
         if args.keep:
             print(f"клоны оставлены: {work}")
         else:
             shutil.rmtree(work, ignore_errors=True)
-    if bad == 2:
-        print("ПРОБ ИСТОРИИ: СРЕДА НЕГОДНА — это не проверка")
-        return 2
-    if bad:
-        print(f"ПРОБ ИСТОРИИ: РАСХОЖДЕНИЕ в {bad} случаях из {nchecks}")
-        return 1
-    print("ПРОБ ИСТОРИИ: PASS — ни одно сверяемое число не отреагировало на рост истории; "
-          "в неполном клоне отказ назван словами")
-    return 0
+    code, text = decide(broken, bad, nchecks)
+    print(text)
+    return code
 
 
 if __name__ == "__main__":

@@ -82,6 +82,7 @@ jobs:
           git -c gc.auto=0 fetch -q origin "+refs/heads/main:refs/remotes/origin/main" || true
           git show-ref --verify --quiet refs/remotes/origin/main || {
             echo "::error::нет refs/remotes/origin/main — проб истории нечем мерить"; exit 1; }
+          python3 -B scripts/atonement_history_perturbation_probe.py --verdicts
           python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest
       - name: Read-only re-shoot check
         run: python3 -B scripts/atonement_reshoot_state.py --check
@@ -107,6 +108,7 @@ jobs:
           grep -q 'claimsPerRegistry' scripts/atonement_claim_register.py
           grep -q 'СРЕДА НЕГОДНА' scripts/atonement_history_perturbation_probe.py
           grep -q 'ЛОВУШКА НЕ ПОДТВЕРЖДЕНА' scripts/atonement_history_perturbation_probe.py
+          grep -q 'def verdicts' scripts/atonement_history_perturbation_probe.py
       # Мерж обязан быть зелёным не только на ветке: проверка накладывается на дерево main в worktree.
       # Иначе «аддитивный» слой мог бы внести в каноническое дерево падения по чужим файлам, и первый
       # же плановый прогон на main обвинил бы в этом владельцев тех ланов.
