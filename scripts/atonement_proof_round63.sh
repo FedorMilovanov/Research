@@ -238,19 +238,31 @@ else
   say "ловля числа среды" "код $cc; после отката: $(printf '%s' "$out2" | tail -1 | cut -c1-60)" fail
 fi
 cjk=$(python3 - <<'PYCJK'
+import re
 from pathlib import Path
 lo, hi = chr(0x4E00), chr(0x9FFF)
 files = ["ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md", "scripts/atonement_reshoot_state.py",
          "scripts/atonement_round_close.py", "scripts/atonement_proof_round63.sh",
          "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"]
-print(sum(1 for f in files for ch in Path(f).read_text(encoding="utf-8", errors="replace")
-          if lo <= ch <= hi))
+# цитаты исключаются тем же определением, что и в rules 19 и 2b: «ёлочки», `обратные кавычки`
+# и "" — это чужое слово в чужом разборе, а не прилипшее при наборе. Первый вариант этого шага
+# считал иероглифы по всему тексту и поймал цитату дефекта, которую круг 57 оставил нарочно.
+QUOT = re.compile("\u00ab[^\u00bb]*\u00bb|`[^`]*`|\"[^\"\n]*\"")
+bare = 0
+quoted = 0
+for f in files:
+    t = Path(f).read_text(encoding="utf-8", errors="replace")
+    stripped = QUOT.sub(" ", t)
+    bare += sum(1 for ch in stripped if lo <= ch <= hi)
+    quoted += sum(1 for ch in t if lo <= ch <= hi) - sum(1 for ch in stripped if lo <= ch <= hi)
+print(bare, quoted)
 PYCJK
 )
-if [ "$cjk" = "0" ]; then
-  say "восточного начертания в прозе и инструментах круга нет" "да"
+read -r cjk_bare cjk_quoted <<< "$cjk"
+if [ "$cjk_bare" = "0" ]; then
+  say "восточного начертания в прозе и инструментах нет (в цитатах: $cjk_quoted)" "да"
 else
-  say "CJK-скан круга" "символов: $cjk — правило гейта смотрит только сообщение коммита" fail
+  say "CJK-скан круга" "вне цитат: $cjk_bare (в цитатах $cjk_quoted) — правило гейта смотрит только сообщение коммита" fail
 fi
 
 echo "--- батарея мутаций (ловит ли гейт то, что обещает) ---"
