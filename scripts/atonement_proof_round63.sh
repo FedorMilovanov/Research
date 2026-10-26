@@ -107,8 +107,20 @@ else
 fi
 cross=$(python3 -B scripts/atonement_claim_register.py --cross 2>&1 | grep '^\[root\] сверка' \
         | grep -o 'ссылок вне обхода лана [0-9]*' | grep -o '[0-9]*$')
-declared=$(python3 -c "import json;print(json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json'))['fourPointMassRegistry20261023']['cardProseCrossCheck20261026r60']['числа']['ссылокВнеОбходаЛана'])")
-if [ -n "$cross" ] && [ "$cross" = "$declared" ]; then
+declared=$(python3 -c "
+import json
+d = json.load(open('ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json', encoding='utf-8'))
+for top in ('integrityGate', 'fourPointMassRegistry20261023'):
+    blk = (d.get(top) or {}).get('cardProseCrossCheck20261026r60')
+    if blk:
+        print(blk['числа']['ссылокВнеОбходаЛана'])
+        break
+else:
+    print('')
+")
+if [ -z "$declared" ]; then
+  say "--cross root" "в реестре нет cardProseCrossCheck20261026r60 — сверять не с чем" fail
+elif [ -n "$cross" ] && [ "$cross" = "$declared" ]; then
   say "--cross root: ссылок вне обхода $cross — равно реестру" "да"
 else
   say "--cross root" "съём ${cross:-нет вывода} ≠ реестр ${declared:-?}" fail
