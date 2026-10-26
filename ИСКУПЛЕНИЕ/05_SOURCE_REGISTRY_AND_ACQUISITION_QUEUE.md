@@ -112,7 +112,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | R05 | P-REFORMED | Goodwin, *Works* | Drive `1o9T7mIQxIH3ZB2EVc2hQsKdjEQM3SW-M` | Christ / redemption applied | ACQUIRED_COPY / locator unchecked | NO | copy |
 | R06 | P-REFORMED | Turretin, *Institutio* (Latin PD; English P&R copyright) | Latin open; EN = RIGHTS_HOLD | elenctic loci on atonement | LEAD | Latin maybe; EN no | LINK_ONLY |
 | R07 | P-REFORMED | Witsius, *Economy of the Covenants* | PD English 19c | covenant / suretyship | LEAD | NO | LINK_ONLY |
-| R08 | P-REFORMED | John Gill, Body of Divinity VI.4 + *Cause* Part I | отдел `Джон Гилл/` | universal texts | EXISTS in Gill corpus | YES where Gill dossiers already verbatim | do not duplicate |
+| R08 | P-REFORMED | John Gill, Body of Divinity VI.4 + *Cause* Part I | отдел `БИОГРАФИИ/Джон Гилл/` | universal texts | EXISTS in Gill corpus | YES where Gill dossiers already verbatim | do not duplicate |
 | R09 | P-REFORMED | Charles Hodge, *Systematic Theology* III | CCEL | necessity/nature/extent | LEAD / PD | NO | LINK_ONLY |
 | R10 | P-REFORMED | A.A. Hodge, *Outlines* / *Atonement* | PD | school of Princeton | LEAD | NO | LINK_ONLY |
 | R11 | P-REFORMED | Dabney, *Syllabus* / *Theology* | PD | Southern Presbyterian | LEAD | NO | LINK_ONLY |
@@ -166,7 +166,7 @@ Custody по `artifact-custody-policy-v2.json`: `LINK_ONLY` / `PRIVATE_STUDY_ONL
 | O01 | SCHOLARLY-OPEN | CCEL Owen Death of Death | https://www.ccel.org/ccel/owen/deathofdeath | PD | after ingest |
 | O02 | SCHOLARLY-OPEN | Archive.org Owen 1792 | https://archive.org/details/deathofdeathinde00owen | PD scan | after page |
 | O03 | SECONDARY | Banner of Truth Murray product | https://banneroftruth.org/us/store/theology-books/redemption-accomplished-and-applied/ | TOC verified 2026-10-07 via public page | NO |
-| O04 | SECONDARY | Gill corpus in this repo | `Джон Гилл/27_…`, `12_CAUSE…`, `23_SECTION_LVII…`, `48_SOTERIOLOGY…` | не дублировать | follow Gill quote state |
+| O04 | SECONDARY | Gill corpus in this repo | `БИОГРАФИИ/Джон Гилл/27_…`, `12_CAUSE…`, `23_SECTION_LVII…`, `48_SOTERIOLOGY…` | не дублировать | follow Gill quote state |
 | O05 | SECONDARY | Apostasy corpus | `apostasy/08_SOURCE_REGISTRY…`; `apostasy/12_2_PETER_2_CANONICAL_SUPPLEMENT_2026-09-30.md` | Heb 6/10 не решать заново; 2 Пет. 2:1 не решать системой искупления до экзегезы письма | follow apostasy |
 | O06 | SECONDARY | Highway Murray *The Atonement* | https://www.the-highway.com/atonement_murray.html | copyright; paraphrase in `11` | NO |
 | O07 | SCHOLARLY-OPEN | OPC Free Offer 1948 | https://opc.org/GA/free_offer.html | majority+minority; B5 | paraphrase of public church paper |

@@ -4,3 +4,7 @@ prokopenko_article_text.txt
 # python bytecode: репозиторные валидаторы запускаются локально и в CI
 __pycache__/
 *.pyc
+
+# Reproducible source downloads, audit logs and read-only external checkouts.
+# Durable evidence extracts and immutable pins live in data/, not in this cache.
+.cache/

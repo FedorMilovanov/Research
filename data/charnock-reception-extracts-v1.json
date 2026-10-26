@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "captureDate": "2026-10-26",
+  "kind": "MANUAL_SELECTED_FETCH_EXTRACTS_NOT_RAW_OBJECTS",
+  "boundary": "Exact selected strings transcribed from fetch_page results, not raw HTML/PDF or a complete archived article; hashes identify these extract bytes only.",
+  "items": [
+    {
+      "id": "REC-05",
+      "url": "https://indieskriflig.org.za/index.php/skriflig/article/view/1706/2867#22",
+      "text": "The orthodox reformed discourses on God, as exemplified by Charnock, therefore need to be completed and corrected by an approach from the opposite direction",
+      "sourceAttribution": "Jan Hoek,2014,In die Skriflig48(1),Art.1706,Evaluative remarks;doi:10.4102/ids.v48i1.1706;CC BY2.0 in article-specific notice."
+    },
+    {
+      "id": "REC-06",
+      "url": "https://indieskriflig.org.za/index.php/skriflig/article/view/1706/2867#22",
+      "text": "Nevertheless, the theological contribution of Charnock must be welcomed as relevant and valuable to the ongoing debate concerning ‘God-talk’.",
+      "sourceAttribution": "Jan Hoek,2014,same article and section;CC BY2.0 article notice."
+    },
+    {
+      "id": "REC-07",
+      "url": "https://indieskriflig.org.za/index.php/skriflig/article/view/1706/2867#20",
+      "text": "These words can be misused to foster a conservatism that impedes any societal criticism and renewal.",
+      "sourceAttribution": "Jan Hoek,2014,same article,Inconceivable providence;CC BY2.0 article notice."
+    },
+    {
+      "id": "REC-08",
+      "url": "https://www.apuritansmind.com/puritan-favorites/stephen-charnock-1628-1680/",
+      "text": "Charnock may not have all the brilliancy of Bunyan, nor all the metaphysical acumen and subtle analysis of Howe, nor all the awful earnestness of Baxter",
+      "sourceAttribution": "Web transcription headed Life and Character of Charnock,by William Symington; paragraphs following There were giants in literature; printed edition/page not checked."
+    }
+  ]
+}
