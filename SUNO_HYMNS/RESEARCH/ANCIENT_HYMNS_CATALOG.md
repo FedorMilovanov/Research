@@ -39,10 +39,16 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   Спасителя» (Мак-Клинток и Стронг; независимо — Гордли: «in the manuscripts it is called a
   hymn in its title»). См. `CLM-PHOS-CLEM-TITLE`.
 - **Author:** Климент Александрийский (ок. 150 — ок. 215). Атрибуция общепринята, но не
-  безоговорочна: Гордли оговаривается «Clement (or some other early Christian)» —
-  `CLM-PHOS-CLEM-ATTRIBUTION-HEDGE`.
-- **Dating:** ок. 190 (Гордли) — 202/203. Датировка шире, чем у кандидатов, прошедших правило
-  серии; точной даты нет.
+  безоговорочна: Гордли оговаривается «Clement (or some other early Christian)»;
+  **Гарнак 1904, с. 22–23, прочитан в подлиннике**: «Ob das dem Pädagog angehängte „Fischerlied“
+  … dem Clemens gebührt, ist zweifelhaft … Das handschriftliche Zeugnis für den clementinischen
+  Ursprung geht nicht hoch hinauf» — но «der hohe Schwung des Liedes für Cl. nicht unpassend».
+  См. `CLM-PHOS-CLEM-ATTRIBUTION-HEDGE` и `CLM-PHOS-CLEM-HARNACK-DOUBT`.
+- **Dating:** **источники расходятся на два десятилетия.** Ок. 190 (Гордли) — 202/203 против
+  **ок. 203–211 по Гарнаку** (1904, с. 10–12): «Педагог» падает между «Строматами» I–IV и V–VII,
+  «Строматы» I–II едва ли ранее 202 г., Климент покинул Александрию в 202/3, «der Pädagog ist
+  jedenfalls nicht in Alexandrien verfaßt», смерть — вероятно между 211 и 216. Точной даты нет
+  ни у кого; сторону не беру. См. `CLM-PHOS-CLEM-DATING-HARNACK`.
 - **Witness:** рукописи «Педагога» — Paris, BnF, MS Grec 451 (913 или 914 г., писец Ваан для
   Арефы Кесарийского), кодекс неполон; лакуны закрывают списками — Modena, Biblioteca Estense,
   Miscellanea Greca 126 (XI в.) и Florence, Biblioteca Medicea Laurenziana, Plut. 5.24.
@@ -97,7 +103,8 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   `CLM-PHOS-CLEM-SERIES-RULE`.
 - **Five obstacles (четыре остаются, одно снято):** 1) свидетельства богослужебного
   употребления нет; 2) мелодии нет, размер количественный (но метрически текст исправен);
-  3) датировка широкая; ~~4) греческий текст расходится~~ — **снято 2026-10-26 по критическому
+  3) датировка спорная — ок. 190 против ок. 203–211, разрыв в двадцать лет между прочитанными
+  источниками; ~~4) греческий текст расходится~~ — **снято 2026-10-26 по критическому
   изданию**; 5) гимн не сохранился в основной рукописи P: листы с обоими гимнами выпали, текст
   дошёл в двух списках X–XII вв., снятых с P до утраты; сомнение в том, что это вставка, снимается
   состоянием кодекса, а не аргументом вкуса (`CLM-PHOS-CLEM-LEAVES-LOST`).
@@ -109,7 +116,8 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   `DOSSIER_PHOS-007_PART3_VOICES_AND_TEXT.md` (часть 3: голоса и текстология) ·
   `DOSSIER_PHOS-007_PART4_CRITICAL_TEXT.md` (часть 4: критическое издание, греческий текст и аппарат) ·
   `DOSSIER_PHOS-007_PART5_WHY_P_LACKS_IT.md` (часть 5: состояние кодекса P и его списков) ·
-  `DOSSIER_PHOS-007_PART6_COPIES_AND_SCHOLIA.md` (часть 6: оба списка до конца, схолии и их отсутствие).
+  `DOSSIER_PHOS-007_PART6_COPIES_AND_SCHOLIA.md` (часть 6: оба списка до конца, схолии и их отсутствие) ·
+  `DOSSIER_PHOS-007_PART7_HARNACK_READ.md` (часть 7: Гарнак прочитан — аргумент против авторства и другая дата).
 - **Next reading (nothing opened yet):** **Stählin, GCS 12, с. XVII** — начало фразы о выпавших
   листах с их номерами (сама фраза прочитана с середины); **там же, с. 339f** —
   второе стихотворение-подражание; 3-е изд. GCS 12 (Treu, 1972) и Marcovich 2002 — сверка

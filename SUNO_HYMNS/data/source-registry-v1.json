@@ -2140,6 +2140,32 @@
     "Конец тома: схолии на «Педагог» (раздел идёт до с. 339) обрываются на лемме «274, 1» (глосса к κλαδαρόν), а гимн напечатан на с. 291–292 — то есть схолий и парафраза к гимну нет; на с. 339, со строки 27, начинается второе стихотворение (по регистру: στόμιον 339, 27; θέσπισμα 340 V. 8)"
    ],
    "limits": "Прочитаны с. 291–292, с. LXXV–LXXXII, список сигл, описание кодекса P и его списков (с. XVIII–XXX) и конец тома (схолии, с. 325–339). Не прочитаны: **начало описания P, с. XIII–XVII** — там должны быть номера листов, между которыми выпали листы с обоими гимнами (фраза на с. XVIII–XIX захвачена с середины); в этой OCR-выдаче эти страницы, похоже, отсутствуют; с. 339–340 — текст второго стихотворения. Читается OCR-текст скана, а не наборное издание: в гимне распознавание потеряло часть коротких строк (аппарат ссылается на стихи 30, 39, 42, 45, 59, 64, распознано 54 строки); в описании рукописей OCR путает греческие буквы и цифры. Издание 1905 г. — не текущее: нынешнее 3-е (Treu, 1972); сличения с ним и с Марковичем 2002 не было. Самой рукописи (Paris. gr. 451) и списков M и F я не осматривал: это чтение Штелина, а не моё."
+  },
+  {
+   "id": "SRC-PHOS-CLEM-HARNACK-1904",
+   "title": "Adolf Harnack, Die Chronologie der Litteratur von Irenäus bis Eusebius (Geschichte der altchristlichen Litteratur bis Eusebius, Theil 2, Bd. 2; Leipzig: J. C. Hinrichs, 1904) — раздел о Клименте Александрийском, с. 3–23: сомнение в Климентовом авторстве гимна (с. 22–23) и пересмотр порядка и дат сочинений Климента (с. 8–12)",
+   "url": "https://archive.org/download/p2geschichtedera02harnuoft/p2geschichtedera02harnuoft_djvu.txt",
+   "type": "Монография по хронологии раннехристианской литературы (1904), OCR-текст скана Internet Archive",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "RIGHTS_UNKNOWN",
+   "publicationState": "REFERENCE",
+   "holds": [
+    "RIGHTS_HOLD"
+   ],
+   "supports": [
+    "С. 22–23: «Ob das dem Pädagog angehängte „Fischerlied“ (Titel: ὕμνος τοῦ σωτῆρος Χριστοῦ) dem Clemens gebührt, ist zweifelhaft. An diese Stelle gehört es sicher nicht, wie die Überschrift und der mangelnde Zusammenhang mit den Ausführungen im Pädagog beweisen. Das handschriftliche Zeugnis für den clementinischen Ursprung geht nicht hoch hinauf. Material in bezug auf die Vergleichung mit den echten Schriften des Clemens bietet das Gedicht, soviel ich sehe, nicht. Doch ist der hohe Schwung des Liedes für Cl. nicht unpassend.» — пять тезисов: сомнительно; не на своём месте; рукописное свидетельство не восходит высоко; материала для сличения нет; но «высокий полёт песни» Клименту не чужд",
+    "С. 22–23: гимн назван по-немецки «Fischerlied»; заглавие приведено по-гречески — ὕμνος τοῦ σωτῆρος Χριστοῦ",
+    "С. 23: «Ein halbes Jahrhundert nach Clemens hat sich der ägyptische Bischof Nepos als Dichter geistlicher Lieder bekannt gemacht (s. Dionysius bei Euseb. h. e. VII, 24)» — египетский епископ Непос, полвека спустя после Климента, сочинял духовные песни",
+    "С. 23: «Der angehängte Hymnus εἰς τὸν παιδαγωγόν ist wohl von Arethas (s. Stählin, Unters. üb. d. Scholien z. Cl. Al., 1897, S. 48)» — второе стихотворение, вероятно, принадлежит Арефе; Гарнак решительнее, чем сам Штелин в 1905 г.",
+    "С. 10–11: «Protrepticus und Pädagog [werden] nur in den späteren Büchern der Stromateis zitiert (Strom. VI, 1, 1; VII, 4, 22) … Als Clemens die Stromateis I—IV schrieb, hatte er also jene beiden Bücher weder schon geschrieben noch geplant. Mithin fällt jedenfalls der Pädagog zwischen Strom. I—IV und Strom. V—VII»",
+    "С. 11: вероятный порядок сочинений — «Protrepticus, Strom. I—IV, Pädagog, Strom. V—VII»; «Протрептик» относится к предпоследнему десятилетию II в.",
+    "С. 11: «Strom. I—II können … kaum früher als i. J. 202 geschrieben sein um der schweren Verfolgung willen, die sie voraussetzen. … i. J. 202/3 hat Clemens Alexandrien verlassen. Der Pädagog ist jedenfalls nicht in Alexaudrien verfaßt … Man kann mit ihnen bis über das erste Jahrzehnt des 3. Jahrh. heruntergehen. Indessen ist es doch nicht ratsam, sich aus diesem Jahrzehnt zu entfernen.»",
+    "С. 12: смерть Климента — вероятно между 211 и 216; год рождения Гарнак отодвигает к 140–150",
+    "Оглавление: раздел «1. Clemens Alexandrinus» занимает с. 3–23, внутри — Chronologie des Lebens с. 5; Stromateis, Pädagog und Protrepticus с. 8; der angebliche „Lehrer“ с. 13; Strom. lib. VIII, Excerpta ex Theodoto u. Eclogae proph. с. 17; Quis dives salv. с. 19; Hypotyposen с. 19; Andere Schriften с. 20; Nachtrag с. 541f."
+   ],
+   "limits": "Прочитаны с. 8–12 и 22–23 по OCR-тексту скана: распознавание раздвигает буквы лишними пробелами и ломает греческий, цитаты сверены по смыслу. С. 3–7 (хронология жизни), 13–21 и 541f. не прочитаны. Книга 1904 г. — суждение вынесено до издания Штелина (1905) и до нынешнего критического издания (Treu 1972; Маркович 2002); современной литературы (Май 1983, ван ден Хук 1997, Косгроув 2006) Гарнак знать не мог, а я её не смотрел. Непос известен мне только по ссылке Гарнака: Евсевия, Ц. И. VII, 24 я не читал. Порядок сочинений у Гарнака — вывод одного исследователя (он опирается на Хойсси и де Фэ), а не общепринятый"
   }
  ]
 }
