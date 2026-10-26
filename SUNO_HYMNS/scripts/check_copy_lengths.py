@@ -20,6 +20,9 @@ value:
   description length; the review log is exempt because it records the past;
 - Telegram: "Длина: **<N>** видимых знаков" in DUTCH-005_TELEGRAM.md, against the
   post text with markup characters stripped;
+- Telegram pages: the copy-ready HTML page built by ``render_telegram_html.py``
+  carries its own copy of the words; its embedded text is measured against the
+  same sentences in the .md, so a rebuilt page cannot drift from the file;
 - the description's own range: the channel's rule sheet allows 3500-4600
   characters, not merely the platform's 5000. That upper bound was broken for a
   whole pass (4881) while this gate said nothing, because it only knew the
@@ -31,6 +34,7 @@ Read-only. Usage:
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -87,6 +91,36 @@ def extra_telegram_posts() -> list[tuple[str, int, int | None]]:
             stated = re.search(rf"Сообщение {index}[^\n]*?(\d+)\*{{0,2}} знаков", src)
             out.append(
                 (label, len(re.sub(r"\*", "", block)), int(stated.group(1)) if stated else None)
+            )
+    return out
+
+
+def telegram_html_pages() -> list[tuple[str, int, int | None]]:
+    """The copy-ready pages: (label, visible length, stated length).
+
+    `render_telegram_html.py` writes a page that carries the post three more
+    times over — as HTML, as clean text and as Telegram markup. The page is what
+    the owner copies from, so if it drifted from the .md he would paste a post
+    that no longer matches the file. This reads the words back out of the page
+    and holds them to the same number.
+    """
+    out: list[tuple[str, int, int | None]] = []
+    for page in sorted(SUNO.glob("*TELEGRAM*.html")):
+        src = page.read_text(encoding="utf-8")
+        block = re.search(
+            r'<script type="application/json" id="post-data">(.*?)</script>', src, re.S
+        )
+        if block is None:
+            out.append((f"{page.name}: no post-data block", 0, None))
+            continue
+        data = json.loads(block.group(1))
+        md = SUNO / (page.stem + ".md")
+        md_src = md.read_text(encoding="utf-8") if md.exists() else ""
+        for index, message in enumerate(data.get("messages", []), 1):
+            label = f"{page.name} — сообщение {index}"
+            stated = re.search(rf"Сообщение {index}[^\n]*?(\d+)\*{{0,2}} знаков", md_src)
+            out.append(
+                (label, len(message["plain"]), int(stated.group(1)) if stated else None)
             )
     return out
 
@@ -184,7 +218,7 @@ def main() -> int:
         if value != tg_len:
             problems.append(f"DUTCH-005_TELEGRAM.md says the post is {value}, it is {tg_len}")
 
-    for label, actual, stated in extra_telegram_posts():
+    for label, actual, stated in extra_telegram_posts() + telegram_html_pages():
         print(f"{label}: {actual} visible characters")
         if stated is None:
             problems.append(f"{label}: the document does not state its length")
