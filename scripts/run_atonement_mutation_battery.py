@@ -79,8 +79,10 @@ def anchors():
     idx = json.loads(IDX.read_text(encoding="utf-8"))
     mdtxt = REG_MD.read_text(encoding="utf-8")
     recs = idx.get("records") or []
+    # то же уточнение, что и в случае 11: снятое зеркало круга 53 помечено ролью, а не именем,
+    # и без этого якорь брал первую попавшуюся запись — размер устаревшего слепка
     mir = [r for r in recs if isinstance(r, dict) and "35_four_point_authors_mass_registry" in str(r.get("name", ""))
-           and "УСТАРЕЛО" not in str(r.get("name", ""))]
+           and "УСТАРЕЛО" not in str(r.get("name", "")) and "superseded" not in str(r.get("role", ""))]
     sw = reg["libraryIndex20261023"]
     return {
         "reg": reg, "idx": idx, "mdtxt": mdtxt, "recs": recs,
@@ -226,8 +228,12 @@ def cases():
     # 11. Имя живого зеркала: байты в имени не равны git-файлу.
     def m_mirrorname():
         raw = json.loads(IDX.read_text(encoding="utf-8"))
+        # живым зеркалом считается единственная запись без пометки в имени и без роли superseded:
+        # с круга 53 в индексе появился второй способ помечать снятое (role …-superseded при
+        # ненарушенном имени), и старый предикат по одному имени находил два живых
         rec = [r for r in raw["records"] if "35_four_point_authors_mass_registry" in str(r.get("name", ""))
-               and "УСТАРЕЛО" not in str(r.get("name", ""))]
+               and "УСТАРЕЛО" not in str(r.get("name", ""))
+               and "superseded" not in str(r.get("role", ""))]
         if len(rec) != 1:
             raise AssertionError("не проверен: живых записей о зеркале реестра %d, ожидалась одна" % len(rec))
         rec = rec[0]
@@ -328,6 +334,61 @@ def cases():
 
     add("mirrorLieInvisibleWithoutRole", None, m_mirror_role_stripped,
         "та же ложь в имени без роли registry-mirror: не ловится, и это записанное открытое место круга 30")
+
+    # 19. Правило 26, ложь против собственного канала: в команду переписи Тэйлор дописано, что
+    # .scratch/q49stamp.py в снимок ceabb56ea не попал, — а снимок его отдаёт. Поймано кругом 58.
+    def m_lossclaim_vs_snapshot():
+        raw = json.loads(COR.read_text(encoding="utf-8"))
+        node = raw["fourPointMassRegistry20261023"]["taylorVolumeCensusRound51Finding20261025"]
+        if ".scratch/q49stamp.py" in node["command"]:
+            raise AssertionError("не проверен: поле уже говорит о q49stamp.py, сеять ложь некуда")
+        jsub(raw, ["fourPointMassRegistry20261023", "taylorVolumeCensusRound51Finding20261025"],
+             "command",
+             node["command"] + "; и .scratch/q49stamp.py в снимок ceabb56ea не попал (тот же канал)")
+        COR.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+    add("lossClaimContradictsSnapshot", "а снимок его отдаёт", m_lossclaim_vs_snapshot,
+        "объявлено отсутствие файла, который снимок отдаёт: правило 26 обязано краснеть")
+
+    # 20. Правило 26, утрата без канала: у блока сверки корзинок круга 47 способ пересъёма
+    # вычищен из обоих полей. Поймано кругом 58.
+    def m_lossclaim_no_channel():
+        raw = json.loads(COR.read_text(encoding="utf-8"))
+        node = raw["fourPointMassRegistry20261023"]["carrierPartitionReconciliation20261025r47"]
+        if "command" not in node or "how" not in node:
+            raise AssertionError("не проверен: у блока нет пары how+command, сеять некуда")
+        node["command"] = ""
+        node["how"] = ("сводка корзинок круга 46 по выгрузке .scratch/q46dump.json утрачена "
+                       "безвозвратно: файла нет ни в дереве, ни в снимке, ни где-либо ещё")
+        for _k, _v in node.items():
+            if any(_t in str(_v) for _t in ("git ", "gh api", "curl", "http", "python3")):
+                raise AssertionError("не проверен: канал остался в поле %s" % _k)
+        COR.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+    add("lossClaimWithoutChannel", "канала повторения не называет", m_lossclaim_no_channel,
+        "«утрачено» без команды, которой это можно переспросить: правило 26 краснеет")
+
+    # 21. ДЫРА офлайна, записанная кругом 58: тот же класс лжи, что и в случае 19, но про
+    # живом адресе, объявленном мёртвым. Без флага --net-loss-claims гейт обязан остаться
+    # зелёным: ловит только прогон с сетью, а CI сети не имеет. Случай обязан дать PASS.
+    def m_stale_claim_offline():
+        raw = json.loads(COR.read_text(encoding="utf-8"))
+        live = raw["fourPointMassRegistry20261023"]["catalogReshootRound5820261026"]["источник"]["адрес"]
+        node26 = raw["fourPointMassRegistry20261023"]["externalIndexRound46Finding20261025"]
+        if "contents/TCP.csv" not in live:
+            raise AssertionError("не проверен: живой адрес каталога не читается из корпуса")
+        if "404" in node26["recheckCommand"]:
+            raise AssertionError("не проверен: поле уже объявляет 404, подклад не отличается от правды")
+        jsub(raw, ["fourPointMassRegistry20261023", "externalIndexRound46Finding20261025"],
+                 "recheckCommand",
+                 "источник недоступен навсегда: %s даёт 404, поэтому числа остаются записью о съёме"
+                 % live)
+        COR.write_text(json.dumps(raw, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+    add("staleLossClaimInvisibleOffline", None, m_stale_claim_offline,
+        "протухшее 404 без флага сети: не ловится, и это записанная граница офлайна (переспрос — "
+        "--net-loss-claims)")
+
 
     return out
 
