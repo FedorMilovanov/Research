@@ -4,6 +4,10 @@ The Dutch lane has its own catalog (`DUTCH_HYMN_CATALOG.md`) and its own backlog
 
 The evidence rule is the same as everywhere in this project: a work enters this catalog with a source that was opened and read, and every state below names itself rather than implying more.
 
+## Очередь серии
+
+Кандидаты, которые ещё не взяты в производство, но проверены настолько, чтобы стоять в очереди, описаны отдельно: [`SERIES_ANCIENT_HYMNS_ROADMAP.md`](SERIES_ANCIENT_HYMNS_ROADMAP.md). Предлагаемый порядок — `PHOS-003` «Слава в вышних» (два свидетеля, полный текст), затем `PHOS-006` *Lumen Hilare* как парный трек, затем `PHOS-002` Оксиринхский гимн — и только после решения владельца о лакунах. Оды Соломона в серию не входят: древнее, но богослужебного употребления не засвидетельствовано.
+
 ## PHOS-001 — Φῶς ἱλαρόν (*Phos Hilaron*, «Свет Отрадный»)
 
 - **Russian release title (approved by the owner 2026-10-26):** **«Свет Отрадный»** — capital О as the owner wrote it; the verse line keeps the lowercase «отрадный». The title «Свете тихий» is **not** available: it is the name of the Church Slavonic liturgical text, and using it would present a new Russian translation as that text.

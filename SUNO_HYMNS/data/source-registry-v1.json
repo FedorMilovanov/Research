@@ -1542,6 +1542,69 @@
         "Preserved chiefly in Syriac manuscripts of the 10th–15th centuries, with a Greek fragment (P. Bodmer XI, 3rd–4th c.)"
       ],
       "limits": "Read as a search excerpt; Charlesworth/Lattke editions were not consulted. Used only to establish that an older Christian hymn corpus exists, never in copy."
+    },
+    {
+      "id": "SRC-PHOS-AC-BOOK7",
+      "title": "Apostolic Constitutions, Book VII §47 — morning prayer («Glory be to God in the highest…»), ANF translation",
+      "url": "https://www.newadvent.org/fathers/07157.htm",
+      "type": "Primary liturgical text in a public-domain English translation",
+      "evidenceClass": "A1",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "PUBLICATION_ELIGIBLE",
+      "publicationState": "REFERENCE",
+      "holds": [],
+      "supports": [
+        "VII.47 is headed 'A Morning Prayer' and opens 'Glory be to God in the highest, and upon earth peace, good-will among men' (Luke 2:14)",
+        "It continues 'We praise You, we sing hymns to You, we bless You; we glorify You, we worship You by Your great High Priest…'",
+        "VII.48 is the evening prayer; VII.49 the prayer at dinner",
+        "So the Greek Gloria does appear in the Apostolic Constitutions — unlike Φῶς ἱλαρόν, which does not"
+      ],
+      "limits": "Read in the NPNF English translation only; the Greek was not collated. Only VII.47–49 were read, not the whole book."
+    },
+    {
+      "id": "SRC-PHOS-SUBTUUM",
+      "title": "'Sub tuum praesidium' — survey of the Greek text, the Rylands papyrus 470 and the dating dispute",
+      "url": "https://en.wikipedia.org/wiki/Sub_tuum_praesidium",
+      "type": "Encyclopaedia article, read in full",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "The earliest text is Greek, Ὑπὸ τὴν σὴν εὐσπλαγχνίαν, found in a Coptic Christmas liturgy",
+        "Rylands Papyrus 470 was dated to the 3rd century by Lobel and to the 4th by Roberts",
+        "Förster dates the papyrus to the 8th century and states there is no consensus for Lobel's date; Towarek concludes the earliest textual witness is 6th–7th century",
+        "The hymn is identified in the Georgian Iadgari of Jerusalem, i.e. in liturgical use in the 5th century",
+        "Ancient versions exist in Coptic, Syriac, Armenian and Latin"
+      ],
+      "limits": "The article was read, the underlying studies (Förster, Towarek) were not. The dating is therefore reported as a dispute, with both sides named, not resolved here."
+    },
+    {
+      "id": "SRC-PHOS-TEDEUM",
+      "title": "'Te Deum' — authorship, date and liturgical history",
+      "url": "https://en.wikipedia.org/wiki/Te_Deum",
+      "type": "Encyclopaedia article, read as the first section",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "LOCATOR_HOLD"
+      ],
+      "supports": [
+        "A Latin hymn traditionally dated before AD 500, almost certainly of the 4th century, of uncertain authorship",
+        "Attribution to Ambrose is unlikely; the 19th-century attribution to Nicetas of Remesiana was shown to be spurious by Kähler (1958)",
+        "In Benedictine use from the 6th century; preserved in the 8th-century Frankish Hymnal"
+      ],
+      "limits": "Read as an article, not as an edition; the critical literature (Kähler) was not consulted. The Latin text was not collated."
     }
   ]
 }

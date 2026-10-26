@@ -1042,14 +1042,11 @@
         "SRC-PHOS-PRAVENC"
       ],
       "notes": [
-        "The scholarly encyclopaedia article read here does not ascribe the hymn to the Apostolic Constitutions at all; it attests it through Basil, the Palestinian Horologia, P. Lond. 2037B and the Armenian rite.",
-        "The text of Apostolic Constitutions VII–VIII could not be opened in this pass."
+        "Book VIII.34–37 read in the ANF translation on 2026-10-26; the chapters are the evening rite, not the hymn.",
+        "The scholarly encyclopaedia article does not ascribe the hymn to the Apostolic Constitutions at all."
       ],
-      "holds": [
-        "EVIDENCE_HOLD"
-      ],
-      "evidenceGap": "No primary text of the Apostolic Constitutions was read; the claim rests on popular web pages only.",
-      "nextCheck": "Read Apostolic Constitutions VII.47–VIII.35 in a critical text and determine whether the Greek text of Φῶς ἱλαρόν is present; until then the claim is not to be used in copy.",
+      "holds": [],
+      "nextCheck": "If a critical Greek text is ever collated, check whether any Greek line of the hymn appears anywhere in Books VII–VIII; on the English evidence it does not.",
       "limits": [
         "Checked in translation only (ANF, newadvent.org); the Greek text of the Constitutions was not collated."
       ],
@@ -1150,6 +1147,77 @@
       "holds": [],
       "limits": [
         "The Greek vocatives Ἰησοῦ Χριστέ and Υἱὲ Θεοῦ are not rendered as a case: the Russian nominative is an address by position and context. The suspended reference of the three genitives is lost with it. Both are recorded as losses; «Иисуса Христа» would have joined the genitive chain and made Christ a second name for the Father."
+      ]
+    },
+    {
+      "id": "CLM-PHOS-GLORIA-AC",
+      "topic": "Whether the Greek Gloria is in the Apostolic Constitutions",
+      "claim": "Yes. Book VII.47 (ANF) is headed 'A Morning Prayer' and opens 'Glory be to God in the highest, and upon earth peace, good-will among men', continuing 'We praise You, we sing hymns to You, we bless You…'. This is the opposite result from the check run on Φῶς ἱλαρόν in the same book: the Constitutions do carry the Gloria, and do not carry the lamp-lighting hymn.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-PHOS-AC-BOOK7"
+      ],
+      "notes": [
+        "Read 2026-10-26 in the NPNF English translation; the Greek was not collated.",
+        "A positive check, recorded because the earlier negative one (CLM-PHOS-AC-CHECKED) shows the method is not rigged to say no.",
+        "Series-level: recorded in RESEARCH/SERIES_ANCIENT_HYMNS_ROADMAP.md, not attached to a work because no work exists yet."
+      ],
+      "limits": [
+        "English translation only."
+      ],
+      "projectLevel": true
+    },
+    {
+      "id": "CLM-PHOS-POXY-TEXT",
+      "topic": "The state of the Oxyrhynchus hymn's text",
+      "claim": "P.Oxy. XV 1786 (c. 250–300) preserves both lyrics and Greek vocal notation, but the text is fragmentary: five lines survive with lacunae at the start and inside them, and the surviving sense is a call for cosmic silence while Father, Son and Holy Spirit are hymned, ending 'Amen, amen'.",
+      "claimStatus": "SUPPORTED_WITH_SCOPE_LIMITS",
+      "sourceIds": [
+        "SRC-PHOS-POXY"
+      ],
+      "notes": [
+        "The Greek text and English translation were read in the survey article, after Cosgrove 2011 and Grenfell–Hunt 1922.",
+        "No continuous text exists: any singable version must either restore the lacunae or sing only the preserved words.",
+        "Series-level: recorded in RESEARCH/SERIES_ANCIENT_HYMNS_ROADMAP.md, not attached to a work because no work exists yet."
+      ],
+      "limits": [
+        "The editions (Grenfell–Hunt 1922, Cosgrove 2011) were not opened; the reconstruction is a modern scholar's text and cannot be treated as a public-domain source."
+      ],
+      "projectLevel": true
+    },
+    {
+      "id": "CLM-PHOS-SUBTUUM-DATING",
+      "topic": "The date of Sub tuum praesidium",
+      "claim": "The dating is contested and must be stated as a range with both sides named: the Rylands papyrus 470 was dated to the 3rd century (Lobel) or 4th (Roberts), Förster argues for the 8th and denies a consensus, Towarek places the earliest textual witness in the 6th–7th century, while the Georgian Iadgari shows liturgical use in 5th-century Jerusalem.",
+      "claimStatus": "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "sourceIds": [
+        "SRC-PHOS-SUBTUUM"
+      ],
+      "notes": [
+        "Read from a survey article; the studies themselves were not consulted.",
+        "Copy may say 'dated between the 3rd and 7th centuries depending on the scholar', never a single date.",
+        "Series-level: recorded in RESEARCH/SERIES_ANCIENT_HYMNS_ROADMAP.md, not attached to a work because no work exists yet."
+      ],
+      "limits": [
+        "Secondary source only."
+      ],
+      "projectLevel": true
+    },
+    {
+      "id": "CLM-PHOS-TEDEUM",
+      "topic": "The date and authorship of the Te Deum",
+      "claim": "The Te Deum is a Latin hymn almost certainly of the 4th century whose author is unknown: the ascription to Ambrose is unlikely and the 19th-century ascription to Nicetas of Remesiana was shown to be spurious (Kähler 1958). It was in Benedictine use from the 6th century and survives in the 8th-century Frankish Hymnal.",
+      "claimStatus": "REPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "projectLevel": true,
+      "sourceIds": [
+        "SRC-PHOS-TEDEUM"
+      ],
+      "notes": [
+        "Read from a survey article; Kähler and the critical editions were not consulted.",
+        "Series-level: recorded in RESEARCH/SERIES_ANCIENT_HYMNS_ROADMAP.md."
+      ],
+      "limits": [
+        "Secondary source only; no single date may be asserted in copy."
       ]
     }
   ]

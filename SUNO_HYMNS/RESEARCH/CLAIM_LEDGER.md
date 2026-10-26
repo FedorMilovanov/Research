@@ -852,3 +852,31 @@ Both were `projectLevel` facts while the text had no work. DUTCH-005 now links t
 **Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-CPDL · **HOLDs:** none
 **Limits / next action:** every choice and every rejected alternative is in `DOSSIER_PHOS-001_TRANSLATION_DECISIONS.md`; a working draft, not an owner-approved text.
 
+### CLM-PHOS-GLORIA-AC — the Greek Gloria in the Apostolic Constitutions
+
+**Claim:** yes. Book VII.47 (ANF) is headed «A Morning Prayer» and opens «Glory be to God in the highest, and upon earth peace, good-will among men», continuing «We praise You, we sing hymns to You, we bless You…».
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-AC-BOOK7 · **Level:** series (roadmap)
+**Limits:** English translation only; the Greek was not collated. Recorded because the check on Φῶς ἱλαρόν in the same book came out negative — the method is not rigged to say no.
+
+### CLM-PHOS-POXY-TEXT — the state of the Oxyrhynchus hymn
+
+**Claim:** P.Oxy. XV 1786 (c. 250–300) preserves lyrics and Greek vocal notation, but the text is fragmentary: five lines with lacunae; the sense is a call for cosmic silence while Father, Son and Holy Spirit are hymned, ending «Amen, amen».
+
+**Review state:** SUPPORTED_WITH_SCOPE_LIMITS · **Sources:** SRC-PHOS-POXY · **Level:** series (roadmap)
+**Limits:** the editions (Grenfell–Hunt 1922, Cosgrove 2011) were not opened; a modern reconstruction is the editor's text and is not public domain.
+
+### CLM-PHOS-SUBTUUM-DATING — the date of *Sub tuum praesidium*
+
+**Claim:** contested, and must be stated with both sides: Rylands 470 dated 3rd c. (Lobel) or 4th (Roberts); Förster argues 8th and denies a consensus; Towarek puts the earliest textual witness in the 6th–7th c.; the Georgian Iadgari shows liturgical use in 5th-century Jerusalem.
+
+**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED · **Sources:** SRC-PHOS-SUBTUUM · **Level:** series (roadmap)
+**Limits:** secondary source only. Copy may say «between the 3rd and 7th centuries depending on the scholar», never a single date.
+
+### CLM-PHOS-TEDEUM — date and authorship of the *Te Deum*
+
+**Claim:** a Latin hymn almost certainly of the 4th century, author unknown; Ambrose unlikely; the Nicetas ascription shown spurious (Kähler 1958); Benedictine use from the 6th c.; Frankish Hymnal, 8th c.
+
+**Review state:** REPORTED_NOT_INDEPENDENTLY_VERIFIED · **Sources:** SRC-PHOS-TEDEUM · **Level:** series (roadmap)
+**Limits:** survey article only; no single date may be asserted in copy.
+

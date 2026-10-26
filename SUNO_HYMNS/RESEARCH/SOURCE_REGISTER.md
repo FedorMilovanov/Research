@@ -782,3 +782,25 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
 - Supports: 42 odes, composition dated by most scholars c. 70–125; preserved chiefly in Syriac manuscripts of the 10th–15th centuries, with a Greek fragment (P. Bodmer XI).
 - Limits: read as a search excerpt; the editions were not consulted. Used only to establish that an older corpus exists, never in copy.
+
+### SRC-PHOS-AC-BOOK7 — Apostolic Constitutions, Book VII §47, «Утренняя молитва» (ANF)
+
+- URL: https://www.newadvent.org/fathers/07157.htm
+- Evidence class: A1 · Access: PARTIAL_OBJECT · Locator: EXACT_LOCATOR_VERIFIED · Rights: PUBLICATION_ELIGIBLE · Publication: REFERENCE · HOLDs: none
+- Supports: VII.47 озаглавлена «A Morning Prayer» и открывается «Glory be to God in the highest, and upon earth peace, good-will among men» (Лк 2:14), далее «We praise You, we sing hymns to You, we bless You…». Значит, греческая «Слава в вышних» в «Постановлениях» **есть** — в отличие от Φῶς ἱλαρόν.
+- Limits: чтение по английскому переводу NPNF; греческий не сверялся; прочитаны только VII.47–49.
+
+### SRC-PHOS-SUBTUUM — «Sub tuum praesidium», обзор текста и датировки
+
+- URL: https://en.wikipedia.org/wiki/Sub_tuum_praesidium
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: греческий оригинал Ὑπὸ τὴν σὴν εὐσπλαγχνίαν; папирус Райлендса 470 датирован III в. (Лобель) или IV в. (Робертс); Фёрстер — VIII в. и отрицает консенсус; Товарек — древнейшее свидетельство VI–VII вв.; гимн найден в грузинском Иадгари, то есть в богослужении V в.
+- Limits: статья прочитана, сами исследования (Фёрстер, Товарек) — нет. Датировка передаётся как спор, а не как решение.
+
+### SRC-PHOS-TEDEUM — «Te Deum», авторство и дата
+
+- URL: https://en.wikipedia.org/wiki/Te_Deum
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: латинский гимн, почти наверняка IV в., автор неизвестен; авторство Амвросия маловероятно, атрибуция Никите Ремезианскому признана ошибочной (Келер, 1958); в бенедиктинском обиходе с VI в., в Франкском гимнáрии VIII в.
+- Limits: прочитана статья, не издание; Келер не читался.
+
