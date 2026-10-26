@@ -2,12 +2,18 @@
 """Пробник EEBO-TCP для реестра массы (круг 54).
 
 Каналец, которым лан читает напечатанные листы: у textcreationpartnership каждый текст —
-отдельный репозиторий, файл `<id>.xml` (TEI-P5). Этот скрипт его качает, кэширует и умеет три
-вещи, которыми лан измерял строки реестра в кругах 52–53:
+отдельный репозиторий, файл `<id>.xml` (TEI-P5). Этот скрипт его качает, кэширует и умеет пять
+подкоманд (у `census` — два режима), которыми лан измерял строки реестра в кругах 52–55:
 
-  fetch  <TCP-ID>…                 — скачать и посчитать дайджесты кэша (байты, md5, sha256)
+  fetch  <TCP-ID>… [--ids-file F]  — скачать и посчитать дайджесты кэша (байты, md5, sha256);
+                                     без кэша команда сама себя и наполняет, так что recheck-строка
+                                     вида «fetch …, затем census» исполнима из чистого клона
   census <TCP-ID,….> --patterns F  — пройтись трафаретами по тому и напечатать попадания вместе
                                      с листом (n и facs), на котором они лежат
+  census --dir D [--patterns F]    — то же по всему каталогу: id берутся из имён файлов, а без
+                                     --patterns снимается только опись (число томов, байты, дайджесты) —
+                                     ровно та опись, которой сверяется блок дайджестов круга 54
+  digests --dir D                  — опись каталога отдельной командой (томов, байт, md5, sha256)
   pages  <TCP-ID>                  — карта листов и первые строки каждого листа (бегущие строки,
                                      напечатанные числа) — тем способом снят сдвиг нумерации
   imprint <TCP-ID>                 — титульные листы из <front> (срез по <body> глушит титул —
@@ -33,6 +39,18 @@ PAGEBREAK = re.compile(r"<(pb|milestone)\b([^>]*)>", re.I)
 NATTR = re.compile(r'\b(?:n|unit)\s*=\s*"([^"]*)"')
 FACS = re.compile(r'\bfacs\s*=\s*"([^"]*)"')
 LONGS = "æœſҝſ"
+
+
+def set_cache(dir_: str | None) -> None:
+    """Каталог кэша задаётся и средой, и флагом; флаг побуждает --dir в recheck-строках реестра."""
+    global CACHE
+    if dir_:
+        CACHE = dir_
+
+
+def dir_ids(dir_: str) -> list[str]:
+    """Имена томов из каталога: `<id>.xml`, отсортированно — чтобы опись была детерминированной."""
+    return sorted(os.path.splitext(f)[0] for f in os.listdir(dir_) if f.endswith(".xml"))
 
 
 def cache_path(tcp_id: str) -> str:
@@ -138,6 +156,16 @@ def cmd_fetch(ids):
         print("%-8s %s %10d Б  md5 %s  sha256 %s" % (i, "скачан" if fresh else "кэш   ", n, md5, sha[:16]))
 
 
+def cmd_digests(ids, note=""):
+    tot = 0
+    for i in ids:
+        path = cache_path(i)
+        n, md5, sha = digests(path)
+        tot += n
+        print("%-8s %10d Б  md5 %s  sha256 %s" % (i, n, md5, sha[:16]))
+    print("итого: томов %d, байт %d%s" % (len(ids), tot, ("  " + note) if note else ""))
+
+
 def cmd_pages(tcp_id, limit=400):
     text = io.open(cache_path(tcp_id), encoding="utf-8", errors="replace").read()
     pmap = page_map(text)
@@ -157,6 +185,10 @@ def cmd_imprint(tcp_id):
 
 
 def cmd_census(ids, patfile, ctx=110):
+    if not patfile:
+        # опись без трафаретов: ровно то, чем сверяется блок «дайджесты» круга 54
+        print("томов в каталоге: %d  (кэш %s)" % (len(ids), CACHE))
+        return cmd_digests(ids, "трафареты не заданы — снимается опись, а не поиска́")
     pats = load_patterns(patfile)
     print("трафаретов: %d" % len(pats))
     for tcp_id in ids:
@@ -198,23 +230,46 @@ def cmd_census(ids, patfile, ctx=110):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--dir", dest="cache_dir", default=None,
+                    help="каталог кэша TEI (по умолчанию ATONEMENT_TCP_CACHE или .scratch/tcp)")
     sp = ap.add_subparsers(dest="cmd", required=True)
     a = sp.add_parser("fetch")
-    a.add_argument("ids", nargs="+")
+    a.add_argument("ids", nargs="*", help="TCP-id через пробел")
+    a.add_argument("--ids-file", help="файл со списком id, по строке на том (качает недостающие)")
     b = sp.add_parser("census")
-    b.add_argument("ids", help="через запятую")
-    b.add_argument("--patterns", required=True)
+    b.add_argument("ids", nargs="?", default="", help="через запятую; пусто = весь каталог --dir")
+    b.add_argument("--dir", dest="scan_dir", default=None, help="снять опись по каталогу")
+    b.add_argument("--patterns", default=None)
     b.add_argument("--ctx", type=int, default=110)
+    e = sp.add_parser("digests")
+    e.add_argument("--dir", dest="scan_dir", default=None)
     c = sp.add_parser("pages")
     c.add_argument("id")
     c.add_argument("--limit", type=int, default=400)
     d = sp.add_parser("imprint")
     d.add_argument("id")
     ns = ap.parse_args(argv)
+    set_cache(ns.cache_dir)
+    if ns.cmd in ("census", "digests") and getattr(ns, "scan_dir", None):
+        set_cache(ns.scan_dir)   # каталог описи и есть кэш: иначе id из D читались бы из CACHE
     if ns.cmd == "fetch":
-        cmd_fetch([x.strip().upper() for x in ns.ids if x.strip()])
+        ids = [x.strip().upper() for x in (ns.ids or []) if x.strip()]
+        if ns.ids_file:
+            ids += [ln.strip().upper() for ln in io.open(ns.ids_file, encoding="utf-8") if ln.strip()]
+        if not ids:
+            ap.error("fetch: дайте id списком или --ids-file")
+        cmd_fetch(ids)
     elif ns.cmd == "census":
-        cmd_census([x.strip().upper() for x in ns.ids.split(",") if x.strip()], ns.patterns, ns.ctx)
+        ids = [x.strip().upper() for x in (ns.ids or "").split(",") if x.strip()]
+        scan = ns.scan_dir or ns.cache_dir or CACHE
+        if not ids:
+            ids = dir_ids(scan)
+            if not ids:
+                ap.error("census: каталог %s пуст — сначала fetch <id>… --dir %s" % (scan, scan))
+        cmd_census(ids, ns.patterns, ns.ctx)
+    elif ns.cmd == "digests":
+        scan = ns.scan_dir or ns.cache_dir or CACHE
+        cmd_digests(dir_ids(scan), note="каталог %s" % scan)
     elif ns.cmd == "pages":
         cmd_pages(ns.id.upper(), ns.limit)
     else:
