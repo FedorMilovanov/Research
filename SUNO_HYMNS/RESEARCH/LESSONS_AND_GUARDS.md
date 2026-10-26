@@ -134,6 +134,30 @@ That is why `rejected` in the log now needs a source line, and why this pass pro
 
 **5. A rule that no gate read.** `projects/lord-god-strength/RULES.md` § 4 has said 3500–4600 characters since the rule sheet was written. The DUTCH-005 description was built to 4881 and stayed there across two passes, while `check_copy_lengths.py` reported green: it only knew the platform's 5000. A description can be legal on the platform and wrong for the channel, and the copy claims in its own checklist that it was written to the rule. **Guard:** the gate now enforces both bounds (`DESC_MIN`/`DESC_MAX`) and was tested by lowering the maximum until it failed. The description was cut to 4598 without losing a single claim, link, hashtag or bold span, and the cut is tabulated in `SUNO/DUTCH-005_YOUTUBE.md` § 7 so it can be reviewed or reverted line by line. General lesson: when a document states a number, grep the scripts for that number; if no script contains it, the number is decoration.
 
+## 2d. The author's last word was in the Nachtrag — at the back of the same volume
+
+**What happened.** Harnack's *Chronologie* II states on p. 11 that the *Paedagogus* was written
+after 202/3 and outside Alexandria. The project recorded the date **c. 203–211** against Gordley's
+**c. 190–202/3** and carried it as a twenty-year conflict between sources through three dossier
+parts. The volume's own table of contents announced «Nachtrag S. 541f.» for the Clement section all
+along. Reading it (pp. 541–542, «1. Zu Clemens Alexandrinus»): Harnack **retracts the conclusion
+himself** — a passage he noticed only afterwards (`Paed. II, 10, 93`, «our» sea-city = Alexandria)
+forces him to place the *Paedagogus* back in Alexandria, so he moves the error to the dating of
+*Strom.* I–IV («Diese Annahme hat sich nun als irrig erwiesen») and ends at **190–202** — Gordley's
+range. The conflict was never a conflict; it was half of a book.
+
+**Guard.** Before recording an author's conclusion as his position, check whether the same volume's
+table of contents announces a *Nachtrag*, *Zusatz*, *Berichtigung* or *Addenda* for that section, and
+read it with the main text. This is the third instance of one failure pattern in this project, and the
+mechanism differed each time: a truncated OCR chunk (part 6: «no scholia to the hymn»), the same
+truncation noticed later (part 10: «scholia break off at lemma 274, 1»), and now a supplement at the
+back of the volume. **A conclusion, a negative finding and an author's last word all need the same
+check: the page *and* its continuation must both have been read.**
+
+**Cost avoided, not paid.** The date was never printed in any copy — no listener-facing text carried
+it — and the obstacle was recorded as a dispute rather than as a number. The cost was a false
+obstacle in three catalogues and one roadmap, now corrected in place.
+
 ## 3. Mechanical hazards
 
 - **Combining acute and NFC.** A word written with `й` + U+0301 reads as a different string from the same word without it. Any accent check that compares raw strings silently passes. Normalise to NFD before testing, as `check_ru_lyric.py` does.

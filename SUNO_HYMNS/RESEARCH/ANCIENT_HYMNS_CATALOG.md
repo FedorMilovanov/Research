@@ -46,14 +46,23 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   … dem Clemens gebührt, ist zweifelhaft … Das handschriftliche Zeugnis für den clementinischen
   Ursprung geht nicht hoch hinauf» — но «der hohe Schwung des Liedes für Cl. nicht unpassend».
   См. `CLM-PHOS-CLEM-ATTRIBUTION-HEDGE` и `CLM-PHOS-CLEM-HARNACK-DOUBT`.
-- **Dating:** **источники расходятся на два десятилетия.** Ок. 190 (Гордли) — 202/203 против
-  **ок. 203–211 по Гарнаку** (1904, с. 10–12): «Педагог» падает между «Строматами» I–IV и V–VII,
-  «Строматы» I–II едва ли ранее 202 г., Климент покинул Александрию в 202/3, «der Pädagog ist
-  jedenfalls nicht in Alexandrien verfaßt», смерть — вероятно между 211 и 216. Точной даты нет
+- **Dating:** **ок. 190–202; спор, который я записывал, снят самим Гарнаком.** Гордли — ок. 190–202/3.
+  Гарнак, Chronologie II (1904), с. 10–12: «Педагог» — между «Строматами» I–IV и V–VII, «Строматы»
+  I–II едва ли ранее 202 г., Климент покинул Александрию в 202/3, «der Pädagog ist jedenfalls nicht
+  in Alexandrien verfaßt»; отсюда у меня была записана дата **ок. 203–211**. **Исправлено частью 11:**
+  в «Nachträge und Berichtigungen» того же тома (с. 541–542, «1. Zu Clemens Alexandrinus») Гарнак сам
+  снимает этот вывод — место `Paed. II, 10, 93` («наш город», приморский = Александрия) заставляет
+  признать, что «Педагог» вероятнее написан в Александрии, а ошибку он переносит на датировку
+  «Стромат» I–IV («Diese Annahme hat sich nun als irrig erwiesen») и даёт итог: «Somit halte ich
+  nunmehr für die wahrscheinlichste Annahme: Protrept. zwischen 180 und 190; Strom. I—IV und Paedag.
+  zwischen 190 und 202». Оба прочитанных источника сходятся на **ок. 190–202**. Точной даты нет
   ни у кого; сторону не беру. См. `CLM-PHOS-CLEM-DATING-HARNACK`.
 - **Witness:** рукописи «Педагога» — Paris, BnF, MS Grec 451 (913 или 914 г., писец Ваан для
   Арефы Кесарийского), кодекс неполон; лакуны закрывают списками — Modena, Biblioteca Estense,
-  Miscellanea Greca 126 (XI в.) и Florence, Biblioteca Medicea Laurenziana, Plut. 5.24.
+  Miscellanea Greca 126 (XI в.; пергамен, 295 лл., 31 строка; **гимны — лл. 171v–173r**, рука «Anfang des
+  XI. Jahrhunderts») и Florence, Biblioteca Medicea Laurenziana, Plut. 5.24 (XII в.). Оба гимна стоят в
+  рукописи рядом, сразу за «Педагогом» — поэтому одна утрата двух листов в P унесла оба. См.
+  `CLM-PHOS-CLEM-WITNESS-M-FOLIOS`.
   **Папирусного свидетеля гимна не найдено.** **Гимн отсутствует в основной рукописи**: аппарат
   критического издания (Stählin, GCS 12, 1905, с. 291) — «Der Hymnus fehlt in P»; сохранён он
   только в двух списках с P — F и M. Вывод «следовательно, это вставка» издатель отвергает:
@@ -133,9 +142,10 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   `CLM-PHOS-CLEM-SERIES-RULE`.
 - **Five obstacles (четыре остаются, одно снято):** 1) свидетельства богослужебного
   употребления нет; 2) мелодии нет, размер количественный (но метрически текст исправен);
-  3) датировка спорная — ок. 190 против ок. 203–211, разрыв в двадцать лет между прочитанными
-  источниками; ~~4) греческий текст расходится~~ — **снято 2026-10-26 по критическому
-  изданию**; 5) гимн не сохранился в основной рукописи P: листы с обоими гимнами выпали, текст
+  3) ~~датировка спорная — ок. 190 против ок. 203–211~~ — **снято 2026-10-27, часть 11**:
+  Гарнак в Nachtrag того же тома (с. 541–542) сам переходит на «Paedag. zwischen 190 und 202»,
+  то есть на диапазон Гордли; остаётся только его оговорка «наиболее вероятное предположение»;
+  ~~4) греческий текст расходится~~ — **снято 2026-10-26 по критическому изданию**; 5) гимн не сохранился в основной рукописи P: листы с обоими гимнами выпали, текст
   дошёл в двух списках X–XII вв., снятых с P до утраты; сомнение в том, что это вставка, снимается
   состоянием кодекса, а не аргументом вкуса (`CLM-PHOS-CLEM-LEAVES-LOST`).
 - **Russian translation:** нет. До решения владельца ничего из этого кандидата в копию не брать.
