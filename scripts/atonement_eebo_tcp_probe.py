@@ -3,7 +3,7 @@
 
 Каналец, которым лан читает напечатанные листы: у textcreationpartnership каждый текст —
 отдельный репозиторий, файл `<id>.xml` (TEI-P5). Этот скрипт его качает, кэширует и умеет шесть
-подкоманд (у `census` — два режима), которыми лан измерял строки реестра в кругах 52–56:
+подкоманд (у `census` — два режима), которыми лан измерял строки реестра в кругах 52–58:
 
   fetch  <TCP-ID>… [--ids-file F]  — скачать и посчитать дайджесты кэша (байты, md5, sha256);
                                      без кэша команда сама себя и наполняет, так что recheck-строка
@@ -14,6 +14,8 @@
                                      --patterns снимается только опись (число томов, байты, дайджесты) —
                                      ровно та опись, которой сверяется блок дайджестов круга 54
   digests --dir D                  — опись каталога отдельной командой (томов, байт, md5, sha256)
+  catalog [--csv F] [--author A] [--tcp ID] [--expect К=Ч] — перепись внешнего каталога
+    TCP.csv: строки, поля, статусы, авторы; --expect сверяет с заявленным и уходит в 1
   verify --block B… [--ids …]     — сверить кэш с заявкой канона: блок B читается из корпуса JSON,
                                      недостающие тома докачиваются, дайджесты и байты сравниваются,
                                      код возврата 0 только если совпало всё; если блок держит
@@ -32,9 +34,11 @@
 """
 from __future__ import annotations
 
-import argparse, hashlib, io, json, os, re, sys, urllib.request
+import argparse, csv, hashlib, io, json, os, re, sys, urllib.request
 
 API = "https://api.github.com/repos/textcreationpartnership/%s/contents/%s.xml"
+CATALOG = ("https://api.github.com/repos/textcreationpartnership/Texts/contents/TCP.csv?ref=master")
+CATALOG_MIN = 1024 * 1024
 CACHE = os.environ.get("ATONEMENT_TCP_CACHE", ".scratch/tcp")
 UA = "atonement-lane-probe/1 (recheck of the mass registry)"
 
@@ -194,6 +198,86 @@ def resolve_block(corpus: dict, spec: str) -> tuple[dict, str, str]:
                          f"ссылка битая в обе стороны, угадывать не будем")
     raise SystemExit(f"verify: имя {parts[-1]} неоднозначно ({len(hits)} шт): "
                      + "; ".join(".".join(p) for p, _ in hits[:6]))
+
+
+def catalog_path(csv_arg: str | None) -> tuple[str, bool]:
+    """Путь к копии каталога; если локальной нет — качаем в кэш одним запросом."""
+    if csv_arg:
+        if not os.path.isfile(csv_arg):
+            raise SystemExit("catalog: копии каталога нет по пути %s — качайте без --csv или укажите файл"
+                             % csv_arg)
+        return csv_arg, False
+    path = os.path.join(CACHE, "TCP.csv")
+    if os.path.isfile(path) and os.path.getsize(path) >= CATALOG_MIN:
+        return path, False
+    os.makedirs(CACHE, exist_ok=True)
+    req = urllib.request.Request(CATALOG, headers={"Accept": "application/vnd.github.raw", "User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=600) as fh:
+        blob = fh.read()
+    if len(blob) < CATALOG_MIN:
+        raise SystemExit("catalog: сервер отдал %d байт — это не каталог (ответ проверьте вручную: %s)"
+                         % (len(blob), CATALOG))
+    with open(path, "wb") as out:
+        out.write(blob)
+    return path, True
+
+
+def catalog_meta() -> tuple[int | None, str | None, str]:
+    """Метата data сервера о каталоге: размер и blob, чтобы локальную копию сверять не с собой самой."""
+    req = urllib.request.Request(CATALOG, headers={"Accept": "application/json", "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=120) as fh:
+            meta = json.loads(fh.read().decode("utf-8"))
+        return int(meta.get("size", 0)) or None, meta.get("sha"), "ok"
+    except Exception as exc:  # noqa: BLE001 - сервер может быть недоступен, это не провал сверки чисел
+        return None, None, "недоступен: %s" % (str(exc)[:70],)
+
+
+def cmd_catalog(path: str, authors: list[str], tcps: list[str], exp: dict[str, int]) -> int:
+    rows = list(csv.DictReader(io.open(path, encoding="utf-8", newline="")))
+    if not rows:
+        print("catalog: файл прочитан, строк нет — это не тот формат")
+        return 1
+    size, md5, sha = digests(path)
+    fields = list(rows[0].keys())
+    print("каталог: %s" % path)
+    print("  байт %d | md5 %s | строк данных %d | полей %d" % (size, md5, len(rows), len(fields)))
+    print("  поля: %s" % ", ".join(fields))
+    uniq = len({r.get("TCP", "") for r in rows})
+    st: dict[str, int] = {}
+    for r in rows:
+        st[r.get("Status", "")] = st.get(r.get("Status", ""), 0) + 1
+    print("  уникальных TCP: %d | статусы: %s" % (uniq, dict(sorted(st.items(), key=lambda kv: -kv[1]))))
+    ssz, ssha, smsg = catalog_meta()
+    print("  метаданные сервера: размер %s, blob %s, %s" % (ssz, (ssha or "")[:12], smsg))
+    if ssz is not None:
+        print("  копия равна тому, что объявил сервер: %s" % ("да" if ssz == size else "НЕТ"))
+    got: dict[str, int] = {"строк": len(rows)}
+    bad: list[str] = []
+    for a in authors:
+        n = sum(1 for r in rows if (r.get("Author") or "").strip().startswith(a))
+        exact = sum(1 for r in rows if (r.get("Author") or "").strip() == a)
+        second = sum(1 for r in rows if a in (r.get("Author") or "") and not (r.get("Author") or "").strip().startswith(a))
+        print("  автор «%s»: строк %d | точных совпадений %d | не первым лицом %d" % (a, n, exact, second))
+        got["автор:" + a] = n
+    for t in tcps:
+        n = sum(1 for r in rows if r.get("TCP") == t)
+        print("  том %s: записей %d" % (t, n))
+        got["том:" + t] = n
+    for key, want in exp.items():
+        have = got.get(key)
+        if have is None:
+            bad.append("%s: сверять нечем (нет замера — передайте --author/--tcp)" % key)
+        elif have != want:
+            bad.append("%s: заявлено %d, каталог даёт %d" % (key, want, have))
+    if bad:
+        print("РАСХОЖДЕНИЕ с заявленным:")
+        for b in bad:
+            print("   -", b)
+        return 1
+    if exp:
+        print("расхождений нет: заявленное воспроизведено каталогом (%d чисел)" % len(exp))
+    return 0
 
 
 def cmd_verify(block: dict, block_path: str, ids: list[str] | None = None) -> int:
@@ -361,6 +445,14 @@ def main(argv=None):
     c.add_argument("--limit", type=int, default=400)
     d = sp.add_parser("imprint")
     d.add_argument("id")
+    k = sp.add_parser("catalog")
+    k.add_argument("--csv", default=None, help="локальная копия каталога; пусто — скачать в кэш")
+    k.add_argument("--author", action="append", default=[],
+                   help="префикс колонки Author, посчитать строки (повторяемо)")
+    k.add_argument("--tcp", action="append", default=[], help="TCP-id, проверить присутствие (повторяемо)")
+    k.add_argument("--expect", action="append", default=[],
+                   help="заявленное число в форме «строк=61315», «автор:Hall, Joseph=86», «том:A66344=1»; "
+                        "несовпадение — exit 1, а не печать для глаз")
     v = sp.add_parser("verify")
     v.add_argument("--block", required=True,
                    help="точечный путь блока канона в корпусе; если проза реестра назвала "
@@ -371,6 +463,15 @@ def main(argv=None):
     set_cache(ns.cache_dir)
     if ns.cmd in ("census", "digests") and getattr(ns, "scan_dir", None):
         set_cache(ns.scan_dir)   # каталог описи и есть кэш: иначе id из D читались бы из CACHE
+    if ns.cmd == "catalog":
+        p, _fresh = catalog_path(ns.csv)
+        exp: dict[str, int] = {}
+        for item in ns.expect:
+            key, _, val = item.rpartition("=")
+            if not val.isdigit():
+                raise SystemExit('catalog: --expect ждёт «ключ=число», получил «%s»' % item)
+            exp[key.strip()] = int(val)
+        sys.exit(cmd_catalog(p, ns.author, ns.tcp, exp))
     if ns.cmd == "fetch":
         ids = [x.strip().upper() for x in (ns.ids or []) if x.strip()]
         if ns.ids_file:
