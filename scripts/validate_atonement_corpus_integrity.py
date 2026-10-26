@@ -301,7 +301,7 @@ if registry:
         name = value.strip()
         if not re.fullmatch(r"(?:[\w./-]+/)?\d{2}_[\w.-]+\.(?:md|json)", name):
             continue
-        if name.startswith(absent_prefixes):   # то же объявление отсутствия, что и уPrefixed-скана
+        if name.startswith(absent_prefixes):   # то же объявление отсутствия, что и у скана с префиксом
             continue
         if any((b / name).exists() or (b / name.split("/")[-1]).exists() for b in bases):
             continue
@@ -2096,6 +2096,125 @@ if _claims26:
         % (len(_claims26), _absent_ok26, len(_claims26) - _sib26, _sib26, _tail,
            ("; оговорки: " + "; ".join(sorted(set(_netnote26))[:2])) if _netnote26 else "")
     )
+
+
+# ---- правило 27 (26.10.2026): учёт доводов под-ланов — тот же съём, что и учёт цитат
+# Аудит круга 58 измерил разрыв: stampedFieldsPerRegistry = {корпус: 493, ot: 0, nt: 0,
+# fathers: 0, synthesis: 0}. Ноль значил не «доводов нет», а «доводы не считаются»: спросить,
+# сколько аргументов закрыто, было не к чему. С этого круга считается, и считается так, чтобы
+# врать было нечем: реестр лежит в реестре того же лана, локатор каждой строки сверяется
+# побайтово, а класс строки вычитывается из маркеров её же прозы. Единый источник
+# классификации — скрипт съёма: гейт не переписывает определения, а вызывает их, иначе две
+# копии одного правила разъехались бы через круг, и это был бы ровно тот костыль, против
+# которого стоят все предыдущие двадцать шесть.
+sys.path.insert(0, str(ROOT / "scripts"))
+try:
+    import atonement_claim_register as _acr27
+except Exception as _exc27:  # noqa: BLE001 - отсутствие съёмщика обязано быть ошибкой, а не молчанием
+    _acr27 = None
+    errors.append(
+        f"ПРАВИЛО 27: scripts/atonement_claim_register.py не импортируется ({_exc27}) — реестр доводов "
+        "обязан сниматься тем же кодом, которым его проверяют"
+    )
+if _acr27 is not None:
+    _rollup27: dict = {}
+    _agg27 = {"сВердиктом": 0, "удерживается": 0, "открыто": 0, "закрыто": 0, "служебное": 0,
+              "покрытоМашинно": 0, "маркеров": 0, "неОтнесено": 0, "неРазрешено": 0}
+    for _l27 in _acr27.SUBLANES + ("root",):
+        try:
+            _fresh27 = _acr27.scan_lan(_l27)
+        except Exception as _exc27b:  # noqa: BLE001
+            errors.append(f"ПРАВИЛО 27: съём лана {_l27} упал: {_exc27b}")
+            continue
+        _prob27 = _acr27.check_block(_l27, _fresh27)
+        for _line27 in _prob27[:6]:
+            errors.append(f"ПРАВИЛО 27: {_line27}")
+        if len(_prob27) > 6:
+            errors.append(
+                f"ПРАВИЛО 27: {_l27}: ещё {len(_prob27) - 6} расхождений; полный список печатает "
+                "python3 -B scripts/atonement_claim_register.py --check " + _l27
+            )
+        _a27 = _fresh27["агрегаты"]
+        if sum(_a27["поКлассам"].values()) != _a27["строк"]:
+            errors.append(
+                f"ПРАВИЛО 27: {_l27}: классы складываются в {sum(_a27['поКлассам'].values())}, строк "
+                f"{_a27['строк']} — распределение обязано объяснять каждую строку, а не большинство"
+            )
+        _rollup27["корпус" if _l27 == "root" else _l27] = _a27["строк"]
+        _cls27 = _a27["поКлассам"]
+        _agg27["сВердиктом"] += _a27["строк"] - _cls27.get("БЕЗ МАРКЕРА", 0)
+        _agg27["удерживается"] += _cls27.get("УДЕРЖИВАЕТСЯ", 0)
+        _agg27["открыто"] += _cls27.get("ОТКРЫТО", 0)
+        _agg27["закрыто"] += _cls27.get("ЗАКРЫТО", 0)
+        _agg27["служебное"] += _cls27.get("СЛУЖЕБНОЕ", 0)
+        _agg27["покрытоМашинно"] += _a27["покрытоМашинно"]
+        _agg27["маркеров"] += _fresh27["маркеры"]["всего"]
+        _agg27["неОтнесено"] += sum(_fresh27["маркеры"]["неОтнесено"].values())
+        _agg27["неРазрешено"] += _a27["неРазрешено"]
+        _path27 = _acr27.registry_for(_l27)
+        _block27 = json.loads(read(_path27)).get(_acr27.BLOCK_KEY)
+        if not isinstance(_block27, dict):
+            errors.append(
+                f"ПРАВИЛО 27: в {_path27.name} нет блока {_acr27.BLOCK_KEY} — сводка в моём реестре не заменяет "
+                "реестр лана: строки должны лежать там, где лежат их носители"
+            )
+            continue
+        for _f27 in ("строк", "поКлассам", "маркеры", "строки", "метод", "приоритет", "чтоСчитаетсяДоводом",
+                     "recheckCommand", "measuredAt", "checkedAt"):
+            if _f27 not in _block27:
+                errors.append(f"ПРАВИЛО 27: в блоке {_l27} нет поля {_f27!r}")
+        if len(_block27.get("строки") or []) != _rollup27["корпус" if _l27 == "root" else _l27]:
+            errors.append(
+                f"ПРАВИЛО 27: {_l27}: в блоке {len(_block27.get('строки') or [])} строк, а обход лана даёт "
+                f"{_rollup27['корпус' if _l27 == 'root' else _l27]} — блок и съём разошлись"
+            )
+        if not str(_block27.get("recheckCommand", "")).strip().startswith("python3 -B scripts/atonement_claim_register.py"):
+            errors.append(
+                f"ПРАВИЛО 27: {_l27}: recheckCommand блока обязан называть команду съёма реестра доводов, "
+                "иначе у числа нет способа быть переснятым"
+            )
+    _dec27 = ((reg.get("integrityGate") or {}).get("scopeOfMeasurementRules") or {}).get("claimsPerRegistry") or {}
+    if not _dec27:
+        errors.append(
+            "ПРАВИЛО 27: в integrityGate.scopeOfMeasurementRules нет поля claimsPerRegistry — число доводов "
+            "по ланам обязано стоять рядом с числом датированных полей, иначе разрыв 493 : 0 остаётся "
+            "рассказом, а не измерением"
+        )
+    else:
+        for _k27, _v27 in sorted(_rollup27.items()):
+            if int(_dec27.get(_k27, -1)) != _v27:
+                errors.append(
+                    f"ПРАВИЛО 27: claimsPerRegistry[{_k27!r}] = {_dec27.get(_k27)!r}, а обход лана нашёл {_v27} — "
+                    "живой счётчик не имеет права быть цитатой"
+                )
+        if int(_dec27.get("всего", -1)) != sum(_rollup27.values()):
+            errors.append(
+                f"ПРАВИЛО 27: claimsPerRegistry.всего = {_dec27.get('всего')!r}, а ланы дают "
+                f"{sum(_rollup27.values())}"
+            )
+        for _f27 in ("measuredAt", "recheckCommand", "метод"):
+            if not _dec27.get(_f27):
+                errors.append(f"ПРАВИЛО 27: у claimsPerRegistry нет поля {_f27!r} — сводка обязана быть пересъёмной")
+        for _k27, _v27 in sorted(_agg27.items()):
+            if int((_dec27.get("детально") or {}).get(_k27, -1)) != _v27:
+                errors.append(
+                    f"ПРАВИЛО 27: claimsPerRegistry.детально[{_k27!r}] = {(_dec27.get('детально') or {}).get(_k27)!r}, "
+                    f"а обход даёт {_v27}"
+                )
+        if _agg27["неРазрешено"] or _agg27["неОтнесено"]:
+            errors.append(
+                f"ПРАВИЛО 27: разрешено не всё: локаторов не разрешилось {_agg27['неРазрешено']}, маркеров без "
+                f"класса {_agg27['неОтнесено']} — реестр, который молча пропускает строку, опаснее отсутствия реестра"
+            )
+        notes.append(
+            "ПРАВИЛО 27: доводов в реестре %s; с вердиктом в тексте %d из %d (удерживается %d, открыто %d, "
+            "закрыто %d, служебное %d), без маркера вердикта %d; машинно покрыто %d, маркеров разобрано %d. "
+            "Съём: python3 -B scripts/atonement_claim_register.py --check"
+            % (", ".join("%s: %d" % (k, v) for k, v in sorted(_rollup27.items())), _agg27["сВердиктом"],
+               sum(_rollup27.values()), _agg27["удерживается"], _agg27["открыто"], _agg27["закрыто"],
+               _agg27["служебное"], sum(_rollup27.values()) - _agg27["сВердиктом"], _agg27["покрытоМашинно"],
+               _agg27["маркеров"])
+        )
 
 
 for note in notes:
