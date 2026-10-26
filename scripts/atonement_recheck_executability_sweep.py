@@ -36,6 +36,22 @@ PROSE_DEFAULT = (
     "docs/research/atonement/README.md",
 )
 RX = re.compile(r"[.]scratch/[A-Za-z0-9_./-]+")
+# кэш тот же, что у scripts/atonement_eebo_tcp_probe.py: скачанный каталог ложится в
+# .scratch/tcp, и путь, который никто не качал, и тот же путь в клоне, где его качнули,
+# дают разные числа съёма. Флаг --ignore-cache убирает эту зависимость.
+CACHE_ENV = "ATONEMENT_TCP_CACHE"
+CACHE_DEFAULT = ".scratch/tcp"
+IGNORE_CACHE = False
+
+
+def cache_dir() -> str:
+    return os.environ.get(CACHE_ENV, CACHE_DEFAULT).rstrip("/")
+
+
+def under_cache(ref: str) -> bool:
+    q = ref.rstrip(".,;:)")
+    d = cache_dir()
+    return q == d or q.startswith(d + "/")
 IMPER = ("recheckCommand", "command", "артефакт", "how")
 DECL = ("не исполнимы", "не исполнимо", "не ложились", "не попали", "утрачены",
         "не пересъёмно", "не входят", "только из снимка")
@@ -74,6 +90,10 @@ def ref_in_snapshot(snap: str, ref: str) -> bool:
 
 
 def ref_in_tree(ref: str) -> bool:
+    if IGNORE_CACHE and under_cache(ref):
+        # canonical (cold) reading: a path that exists only because the catalog was cached
+        # here is not evidence that the carrier is back in the lane
+        return False
     return os.path.exists(ref.rstrip(".,;:)"))
 
 
@@ -117,7 +137,13 @@ def main() -> int:
                          "api.github.com (contents по тому же ref); расхождением считается только "
                          "несовпадение каналов, а не мелкий клон сам по себе")
     ap.add_argument("--json", action="store_true", help="машинный вывод одной строкой")
+    ap.add_argument("--ignore-cache", action="store_true",
+                    help="не считать читаемыми пути, которые лежат только в кэше съёмки ("
+                         + CACHE_DEFAULT + "): canonical числа съёма снимаются этим флагом, иначе "
+                         "тёплый клон враньё про нечитаемые пути не показывает")
     args = ap.parse_args()
+    global IGNORE_CACHE
+    IGNORE_CACHE = bool(getattr(args, "ignore_cache", False))
 
     if not os.path.isfile(args.corpus):
         print(f"съём не исполним: корпуса нет по пути {args.corpus}", file=sys.stderr)
@@ -200,7 +226,18 @@ def main() -> int:
         cross = {"путей": len(rows), "вобоихКаналах": both, "ниводном": gone, "расхождений": len(mism),
                  "строки": mism[:6]}
 
+    d_ = cache_dir()
+    warm = os.path.isdir(d_)
+    cachep = [p_ for p_ in paths if under_cache(p_)]
+    onlycache = [p_ for p_ in cachep
+                 if os.path.exists(p_.rstrip(".,;:)"))
+                 and git("cat-file", "-e", "HEAD:" + p_.rstrip(".,;:)")).returncode != 0
+                 and not (alive and ref_in_snapshot(args.snapshot, p_))]
     res = {
+        "кэш": {"каталог": d_, "создан": warm, "путейПодКэшем": len(cachep),
+                "читаемоТолькоИзКэша": len(onlycache), "пути": onlycache[:6],
+                "игнорируется": bool(IGNORE_CACHE),
+                "нечитаемыхБезКэша": len(unreadable) + (0 if IGNORE_CACHE else len(onlycache))},
         "клон": {"shallow": shallow, "глубина": depth},
         "снимок": {"id": args.snapshot, "доступен": alive},
         "корпус": {"упоминаний": len(strip(corp_m)), "различныхпутей": len(set(strip(corp_m))),
@@ -226,6 +263,13 @@ def main() -> int:
               f"нечитаемых {a['нечитаемых']} | возвратимых из снимка {a['возвратимыхИзСнимка']}")
         print(f"приказные вхождения: {res['приказныеВхождения']} {bykind or {}} | "
               f"ДЕФЕКТНЫХ ПОЛЕЙ: {res['дефектныхПолей']}")
+        cs = res["кэш"]
+        print(f"кэш: {cs['каталог']} {'лежит' if cs['создан'] else 'не создан'}; путей под ним "
+              f"{cs['путейПодКэшем']}, читается только из кэша {cs['читаемоТолькоИзКэша']}"
+              + (f" ({', '.join(cs['пути'])})" if cs['пути'] else "")
+              + (" — съём идёт с --ignore-cache, числа сняты как холодные" if cs['игнорируется']
+                 else (f"; с --ignore-cache нечитаемых было бы {cs['нечитаемыхБезКэша']}" if cs['создан']
+                       else " — холодный прогон, числа не зависят от каталога в кэше")))
         if cross:
             print(f"сверка двух каналов: путей {cross['путей']} | в обоих (размер совпал) "
                   f"{cross['вобоихКаналах']} | ни в одном (утрачено подтверждённо) {cross['ниводном']} | "
