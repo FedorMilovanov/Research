@@ -2166,6 +2166,61 @@
     "Оглавление: раздел «1. Clemens Alexandrinus» занимает с. 3–23, внутри — Chronologie des Lebens с. 5; Stromateis, Pädagog und Protrepticus с. 8; der angebliche „Lehrer“ с. 13; Strom. lib. VIII, Excerpta ex Theodoto u. Eclogae proph. с. 17; Quis dives salv. с. 19; Hypotyposen с. 19; Andere Schriften с. 20; Nachtrag с. 541f."
    ],
    "limits": "Прочитаны с. 8–12 и 22–23 по OCR-тексту скана: распознавание раздвигает буквы лишними пробелами и ломает греческий, цитаты сверены по смыслу. С. 3–7 (хронология жизни), 13–21 и 541f. не прочитаны. Книга 1904 г. — суждение вынесено до издания Штелина (1905) и до нынешнего критического издания (Treu 1972; Маркович 2002); современной литературы (Май 1983, ван ден Хук 1997, Косгроув 2006) Гарнак знать не мог, а я её не смотрел. Непос известен мне только по ссылке Гарнака: Евсевия, Ц. И. VII, 24 я не читал. Порядок сочинений у Гарнака — вывод одного исследователя (он опирается на Хойсси и де Фэ), а не общепринятый"
+  },
+  {
+   "id": "SRC-EUSEBIUS-HE-VII-NPNF",
+   "title": "Eusebius, Church History, Book VII (в переводе NPNF II/1, Шафф и Уэйс; Wikisource) — гл. 24, § 4: Дионисий Александрийский о Непосе и его «extensive psalmody»; гл. 30, § 10: соборное послание против Павла Самосатского о псалмах Христу",
+   "url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_I/Church_History_of_Eusebius/Book_VII/Chapter_24",
+   "type": "Перевод первоисточника (Евсевий Кесарийский, ок. 320-е) в серии NPNF, текст на Wikisource",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [],
+   "supports": [
+    "VII.24.4, слова Дионисия: «in many other respects I approve and love Nepos, for his faith and industry and diligence in the Scriptures, and for his extensive psalmody, with which many of the brethren are still delighted; and I hold him in the more reverence because he has gone to rest before us»",
+    "VII.24, примечание 5 издателей к словам «his extensive psalmody» отсылает к кн. V, гл. 28, прим. 14 — то есть сами издатели NPNF считают это место свидетельством о раннем христианском песнетворчестве",
+    "VII.24.1: Непос — епископ в Египте, учил о тысячелетнем царстве телесной роскоши, написал «Опровержение аллегористов»; Дионисий возражал в двух книгах «О обетованиях»",
+    "VII.30.10, из соборного послания епископов против Павла Самосатского (Антиохия, ок. 268): «and stops the psalms to our Lord Jesus Christ, as being the modern productions of modern men, and trains women to sing psalms to himself in the midst of the church on the great day of the passover, which any one might shudder to hear» — псалмы Христу пелись в церкви, их новизну вменяли в вину, на Пасху пел женский хор"
+   ],
+   "limits": "Читается английский перевод NPNF (1890), а не греческий подлинник: греческая фраза τῆς πολλῆς ψαλμῳδίας приведена только в примечаниях других изданий. Прочитаны гл. 24 и гл. 30; остальные главы VII книги — нет. Дата соборного послания (ок. 268) взята из контекста повествования Евсевия, точной даты в прочитанном месте нет."
+  },
+  {
+   "id": "SRC-EUSEBIUS-HE-V-NPNF",
+   "title": "Eusebius, Church History, Book V, гл. 28 (в переводе NPNF II/1, Шафф и Уэйс; Wikisource) — фрагмент труда против ереси Артемона: псалмы и гимны, «написанные верными братьями с самого начала»; Климент назван в списке писателей старше Виктора",
+   "url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_I/Church_History_of_Eusebius/Book_V/Chapter_28",
+   "type": "Перевод первоисточника (Евсевий Кесарийский, ок. 320-е) в серии NPNF, текст на Wikisource",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [],
+   "supports": [
+    "V.28.5: «And how many psalms and hymns, written by the faithful brethren from the beginning, celebrate Christ the Word of God, speaking of him as Divine» — псалмы и гимны, написанные верными братьями с самого начала, прославляют Христа, Слово Божие, называя Его Богом",
+    "V.28.4: «There are writings of certain brethren older than the times of Victor … I refer to Justin and Miltiades and Tatian and Clement and many others, in all of whose works Christ is spoken of as God» — Климент назван среди писателей старше времён Виктора (до 189/190)",
+    "V.28.1–2: автор труда против Артемона Евсевием не назван («a laborious work by one of these writers»); ересь Артемона учит, что Спаситель был простым человеком"
+   ],
+   "limits": "Читается английский перевод NPNF (1890), не греческий подлинник. Автор цитируемого труда у Евсевия не назван; приписывается Гаю Римскому по Британнике 1911 (статья «Hymns»), а не по самому Евсевию. Текст свидетельствует о **сочинении** гимнов, а не об их богослужебном употреблении — Британника цитирует его как свидетельство употребления, то есть сильнее первоисточника."
+  },
+  {
+   "id": "SRC-FELTOE-DIONYSIUS",
+   "title": "C. L. Feltoe, St. Dionysius of Alexandria: Letters and Treatises (Cambridge, 1904; переиздание на CCEL), раздел «On the Promises» (Eus., H. E. VII, 24–25) — другой перевод места о Непосе и примечание о двусмысленности греческого",
+   "url": "https://ccel.org/ccel/feltoe/dionysius.dionysius.t.t1.html",
+   "type": "Перевод и комментарий специалиста по Дионисию Александрийскому (1904), текст на CCEL",
+   "evidenceClass": "B1",
+   "accessState": "PARTIAL_OBJECT",
+   "locatorState": "EXACT_LOCATOR_VERIFIED",
+   "rightsState": "PUBLICATION_ELIGIBLE",
+   "publicationState": "REFERENCE",
+   "holds": [],
+   "supports": [
+    "Перевод места о Непосе: «though I accept and love Nepos for many other things, his faith, his laboriousness, his study of the Scriptures, and the many psalms he has written, by which already many of the brethren are encouraged»",
+    "Примечание 178 к этим словам: «Or Dionysius may mean that he had encouraged the singing of the Psalms in service» — либо псалмы, им написанные, либо поощрение пения псалмов за службой",
+    "Примечание 177: Непос, видимо, был епископом Арсинои в Египте и написал «Ἔλεγχος Ἀλληγοριστῶν» («Опровержение аллегористов»)"
+   ],
+   "limits": "Перевод Фелтоу (1904), не греческий подлинник; греческая фраза τῆς πολλῆς ψαλμῳδίας в самом тексте не приведена (известна по примечанию Шаффа в ANF со ссылкой на Кристофорсона). Прочитан только раздел «On the Promises»; остальное не смотрено."
   }
  ]
 }

@@ -85,6 +85,13 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   Элладской церкви: «πιθανῶς ἐψάλλετο ἀπό τή σχολή στούς μαθητές του»). Догадка Джорджа Булла
   (XVII в.), что это одно из сочинений, о которых говорит Тертуллиан, — не свидетель
   (`CLM-PHOS-CLEM-BULL-CONJECTURE`).
+- **Какое свидетельство считалось бы достаточным — проверено 2026-10-26 (часть 8).** У Евсевия
+  три разных типа известий о ранних христианских песнях, и гимн Климента не покрывается ни одним:
+  **сочинение** (Ц. И. V, 28, 5 — «psalms and hymns, **written** by the faithful brethren from the
+  beginning»), **пение в церкви** (Ц. И. VII, 30, 10 — послание собора против Павла Самосатского,
+  ок. 268: «stops the psalms to our Lord Jesus Christ, as being the modern productions of modern
+  men») и спор о новизне (там же). Критерий серии требует второго типа; первым его подменяют.
+  См. `CLM-PHOS-EUSEBIUS-HYMNODY-KINDS`.
 - **Melody:** нет. Размер классический количественный — ситуация `DUTCH-005`, а не `PHOS-002`.
 - **Greek text:** прочитано критическое издание — **Stählin, GCS 12 (1905), с. 291–292**.
   Оно печатает `ποιμὴν ἀρνῶν βασιλικῶν` и инфинитивы `αἰνεῖν ἁγίως`, `ὑμνεῖν ἀδόλως`; чтения
@@ -117,7 +124,8 @@ The evidence rule is the same as everywhere in this project: a work enters this 
   `DOSSIER_PHOS-007_PART4_CRITICAL_TEXT.md` (часть 4: критическое издание, греческий текст и аппарат) ·
   `DOSSIER_PHOS-007_PART5_WHY_P_LACKS_IT.md` (часть 5: состояние кодекса P и его списков) ·
   `DOSSIER_PHOS-007_PART6_COPIES_AND_SCHOLIA.md` (часть 6: оба списка до конца, схолии и их отсутствие) ·
-  `DOSSIER_PHOS-007_PART7_HARNACK_READ.md` (часть 7: Гарнак прочитан — аргумент против авторства и другая дата).
+  `DOSSIER_PHOS-007_PART7_HARNACK_READ.md` (часть 7: Гарнак прочитан — аргумент против авторства и другая дата) ·
+  `DOSSIER_PHOS-007_PART8_EUSEBIUS_HYMNODY.md` (часть 8: Непос проверен; три рода свидетельств о ранних христианских песнях у Евсевия).
 - **Next reading (nothing opened yet):** **Stählin, GCS 12, с. XVII** — начало фразы о выпавших
   листах с их номерами (сама фраза прочитана с середины); **там же, с. 339f** —
   второе стихотворение-подражание; 3-е изд. GCS 12 (Treu, 1972) и Marcovich 2002 — сверка
