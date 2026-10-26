@@ -1994,6 +1994,109 @@ else:
     else:
         notes.append("ПРАВИЛО 25: индекса библиотеки нет — проверка не срабатывает, и это не «всё описано»")
 
+
+# ---- правило 26 (круг 58): объявление утраты обязано быть повторимым, а не памятью --------------
+# Круг 52 записал, что внешнего каталога не добраться: повторная заявка дала 404. Круг 58 посмотрел, чем
+# именно кончился тот запрос, и увидел, что 404 — следствие регистра имени файла в URL, а источник жив.
+# Дело не в каталоге, а в классе дефекта: объявление об утрате пережило автора и читается как факт, хотя
+# было протоколом одной попытки. Правило переспрашивает очно: у объявления обязан быть назван канал
+# повторения; «этого нет в снимке» проверяется самим снимком; и — только по флагу, чтобы прогон не зависел
+# от чужого сервера, — объявленный 404 переспрашивается сетью.
+import os as _os26
+import subprocess as _sp26
+import urllib.error as _ue26
+import urllib.request as _ur26
+
+# основы, а не формы: «утрачена», «утрачено», «утрачены» — это одно объявление, и ловить его
+# надо по корню; формы глагола лана пишет как попала, и сверять правило по полному слову значит
+# оставить ему дыру в женском роде (её же и нашла батарея круга 58)
+_LOSS26 = ("не пересъёмн", "не исполним", "утрат", "не попали", "не ложились", "безвозвратн",
+           "невозвратн", "не входят", "недоступн", "не добрать", "не вернуть", "умер", "404")
+_IMPER26 = ("recheckCommand", "command", "артефакт", "how")
+_NET26 = "--net-loss-claims" in sys.argv[1:] or _os26.environ.get("ATONEMENT_NET") == "1"
+_PATHTOK26 = re.compile(r"[.]scratch/[A-Za-z0-9_./-]+[?*]?[A-Za-z0-9_./-]*")
+_SNAPTOK26 = re.compile(r"\b[0-9a-f]{7,12}\b")
+_URL26 = re.compile(r"https?://\S+")
+_claims26, _absent_ok26, _netnote26, _nettries26, _sib26 = [], 0, [], 0, 0
+_HAS26 = ("git ", "gh api", "curl", "http", "python3")
+_SIBLING26 = ("recheckCommand", "command", "какСверен", "how", "артефакт", "method")
+for _p26, _v26, _h26 in walk_paths(reg):
+    _key26 = _p26.rsplit(".", 1)[-1].split("[")[0]
+    if _key26 not in _IMPER26 or not any(_m in _v26 for _m in _LOSS26):
+        continue
+    _refs_pre26 = sorted({x.rstrip(".,;:)") for x in _PATHTOK26.findall(_v26)})
+    if not (_refs_pre26 or "404" in _v26 or "http" in _v26):
+        # «не входят в счётчики классов» — учётное исключение, а не объявление об утрате носителя:
+        # правило смотрит только те слова, которые называют то, чего нельзя достать
+        continue
+    _claims26.append((_p26, _v26))
+    if not any(_k in _v26 for _k in _HAS26):
+        # конвенция ланы: способ пересъёма стоит рядом, в command|recheckCommand того же блока
+        _sib_ok = isinstance(_h26, dict) and any(
+            isinstance(_h26.get(_sk), str) and any(_k in _h26[_sk] for _k in _HAS26)
+            for _sk in _SIBLING26 if _sk != _key26)
+        if _sib_ok:
+            _sib26 += 1
+        else:
+            errors.append(
+                f"ПРАВИЛО 26: {_p26} объявляет утрату, но канала повторения не называет ни в себе, ни в "
+                "соседних полях блока (recheckCommand, command, какСверен, method): «утрачено» без команды, "
+                "которой это можно переспросить, неотличимо от «мне так показалось»"
+            )
+        continue
+    _refs26 = _refs_pre26
+    # «.scratch/q46*.json» снимком не проверяется: кат-файл не знает глобов, а ненулевой
+    # код ответа при этом выглядит как подтверждение утраты — маска подтверждением быть не может
+    _globs26 = [x for x in _refs26 if any(_ch26 in x for _ch26 in "*?[")]
+    _refs26 = [x for x in _refs26 if x not in _globs26]
+    _snaps26 = [t for t in dict.fromkeys(_SNAPTOK26.findall(_v26))
+                if _sp26.run(["git", "cat-file", "-t", t], capture_output=True).returncode == 0]
+    for _ref26 in _refs26:
+        for _snap26 in _snaps26:
+            _rc = _sp26.run(["git", "cat-file", "-e", f"{_snap26}:{_ref26}"], capture_output=True)
+            if _rc.returncode == 0:
+                errors.append(
+                    f"ПРАВИЛО 26: {_p26} объявляет, что {_ref26} нет в снимке {_snap26}, а снимок его отдаёт — "
+                    "объявление противоречит тому самому каналу, на который ссылается"
+                )
+            else:
+                _absent_ok26 += 1
+    if _globs26:
+        _netnote26.append("пути заданы маской (%s) — снимком не сверяются, и отсутствием это не считается"
+                          % ", ".join(sorted(x for x in _globs26)[:2]))
+    if _refs26 and not _snaps26:
+        _netnote26.append("снимок из объявления не разрешился в этом клоне, поэтому отсутствие путей ни "
+                          "подтверждено, ни опровергнуто")
+    if _NET26 and "404" in _v26:
+        for _u26 in {x.rstrip(");,'") for x in _URL26.findall(_v26) if "contents/" in x or "repos/" in x}:
+            _nettries26 += 1
+            try:
+                _rq = _ur26.Request(_u26, method="HEAD", headers={"User-Agent": "atonement-lane"})
+                with _ur26.urlopen(_rq, timeout=60) as _resp:
+                    errors.append(
+                        f"ПРАВИЛО 26: {_p26} объявляет 404, а {_u26} отвечает {_resp.status}: объявление "
+                        "утраты протухло, источник жив — числа надо переснимать, а не цитировать"
+                    )
+            except _ue26.HTTPError as _e26:
+                if _e26.code != 404:
+                    # чужой сервер вправе ответить 403 или 502: это не «источник ожил», а другой отказ,
+                    # ошибкой корпуса он не является, но и подтверждением утраты быть не может
+                    _netnote26.append("%s: объявлено 404, ответ %d — отказ другой природы" % (_u26, _e26.code))
+            except Exception as _e26:  # noqa: BLE001 - сети может не быть, и это не провал корпуса
+                _netnote26.append("адрес %s переспрошен не был: %s" % (_u26, str(_e26)[:60]))
+if _claims26:
+    _tail = ("сетью переспрошено адресов: %d" % _nettries26) if _NET26 else (
+        "сеть не спрашивалась (флаг --net-loss-claims или ATONEMENT_NET=1 переспросит объявленные 404; без "
+        "него правило проверяет канал и снимок)")
+    notes.append(
+        "ПРАВИЛО 26: объявлений об утрате в приказных полях %d, снимковых подтверждений %d, каналов "
+        "переспроса в самом поле %d (в остальных %d канал назван соседним полем блока — так устроена "
+        "конвенция ланы, и правило её признаёт); %s%s"
+        % (len(_claims26), _absent_ok26, len(_claims26) - _sib26, _sib26, _tail,
+           ("; оговорки: " + "; ".join(sorted(set(_netnote26))[:2])) if _netnote26 else "")
+    )
+
+
 for note in notes:
     print(f"ATONEMENT CORPUS INTEGRITY: note — {note}")
 if errors:
