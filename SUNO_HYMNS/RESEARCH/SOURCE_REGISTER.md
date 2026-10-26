@@ -839,3 +839,17 @@ The Greek lane is registered in the same file as the Dutch one because it is the
 - Supports: в 2025 г. вышла современная worship-обработка Оксиринхского гимна на подлинный текст и мелодию (John Dickson; Chris Tomlin, Ben Fielding; альбом *The King Is Still the King*, 2025). Формулировка «древнейший христианский гимн с музыкой» — о нотации, не о сочинении.
 - Limits: новостное сообщение; используется только как факт существования конкурирующей обработки.
 
+### SRC-PHOS-TEDEUM-TEXT — латинский текст *Te Deum* и Бангорский антифонарий
+
+- URL: https://www.hymnologyarchive.com/te-deum-laudamus
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD, ARCHIVE_HOLD
+- Supports: полный латинский текст, **29 стихов** по римской редакции (*Liber Usualis*), с параллельным переводом; **древнейший список — Бангорский антифонарий (Амброзиана, MS C 5 inf., лл. 10r–10v), ок. 680–691**, надписан «Hymnus in die Dominica»; легенда об Амвросии и Августине восходит к Гинкмару Реймсскому (859); Кёлер 1958 связывал исходный вид гимна с заутренней мессой Великой субботы.
+- Limits: **в источнике есть логически несостоятельное утверждение** — будто гимн «уверенно датируется IV–V вв., потому что включён в уставы Цезария и Бенедикта». Эти уставы VI в. и доказывают лишь существование гимна к VI в. Текст по вторичной передаче `Liber Usualis` (`LOCATOR_HOLD`); рукописи не видел (`ARCHIVE_HOLD`).
+
+### SRC-PHOS-TEDEUM-NCE — Новая католическая энциклопедия, статья *Te Deum* (М. Угло)
+
+- URL: https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/te-deum
+- Evidence class: C · Access: PARTIAL_OBJECT · Locator: COARSE_LOCATOR_ONLY · Rights: RIGHTS_UNKNOWN · Publication: REFERENCE · HOLDs: RIGHTS_HOLD, LOCATOR_HOLD
+- Supports: **статистика рукописных атрибуций** — 49 без имени автора, 48 Амвросию и Августину, ок. 12 «епископу Никету», 7 Сисебуту, 2 Иларию, 2 Абундию; «ныне всеми критиками признано» — **начало V в.**; латинское сочинение, а не перевод с греческого (греческий текст — перевод с латинского IX в.); **третья часть от `Salvum fac` — ряд псалмических стихов (Пс 27:9, Пс 30:2), прилагавшийся и к Великому славословию**; **«семь столетий отделяют сочинение от первого нотированного свидетельства»**.
+- Limits: датировка «начало V в.» прямо противоречит английской Википедии («почти наверняка IV в.»); противоречие не снято.
+
