@@ -505,7 +505,25 @@ def apply_corpus(corp: dict, n: dict) -> dict:
         for k in ("uniqueShaTokens", "reachableTokens", "unreachableTokens", "fieldsWithDeadLinks"):
             sc[k] = n["sha"][k]
         sc["byBlock"] = n["sha"]["byBlock"]
-        sc["gitObjectsConsidered"] = n["sha"]["gitObjectsConsidered"]
+        # gitObjectsConsidered в реестр не пишется: это свойство клона, а не дерева. Объявленное
+        # кругом 63, оно покраснело на прогоне того же круга против уже смёрженного main (14661
+        # против 14690: мерж добавил в историю 29 объектов) — то есть врало бы в каждом круге,
+        # ничего не утверждая о корпусе. Объём обхода печатается в отчёте прогона и живёт в штампе
+        # круга как запись о съёме; если поле ещё встречлось в каноне — снимаем его и объявляем.
+        removed = sc.pop("gitObjectsConsidered", None)
+        note = sc.get("удалённыеФигуры")
+        # пишется и когда поле только что снято, и когда записка оказалась неполной (первый вариант
+        # этого блока вышел без how/command и гейт его обоснованно не принял); полностью записанный
+        if removed is not None or not isinstance(note, dict) or not {"how", "command"} <= set(note):
+            sc["удалённыеФигуры"] = {
+                "gitObjectsConsidered": "введён и снят кругом 63: число объектов git в среде съёма, "
+                                        "свойство клона а не дерева; в отчёте прогона печатается, в "
+                                        "реестре не сверяется",
+                "measuredAt": now, "checkedAt": now,
+                "how": "решение круга 63: поле о размере обхода клона не переснимается против "
+                        "другого клона, поэтому оно снято с сверки; причина живёт в §9.3 аудита",
+                "command": "python3 -B scripts/atonement_reshoot_state.py --report",
+            }
         sc["measuredAt"] = sc["checkedAt"] = now
         sc["переснятКругом" + CIRCLE] = {
             "чем": "scripts/atonement_reshoot_state.py", "обходом": "правило 20 гейта, определение 7/8/40 hex",
@@ -766,8 +784,7 @@ def diff_state(corp: dict, idx_file: dict, n: dict):
                      "в такой среде блок остаётся недоказанным, и это надо пропечатать, а не промолчать")
     else:
         sc = corp["integrityGate"]["shaCitationAudit20261023"]
-        for k in ("uniqueShaTokens", "reachableTokens", "unreachableTokens", "fieldsWithDeadLinks",
-                  "gitObjectsConsidered"):
+        for k in ("uniqueShaTokens", "reachableTokens", "unreachableTokens", "fieldsWithDeadLinks"):
             if sc.get(k) != n["sha"][k]:
                 drift.append(f"shaCitationAudit20261023.{k}: {sc.get(k)!r}, обход {n['sha'][k]!r}")
         if sc.get("byBlock") != n["sha"]["byBlock"]:
@@ -808,7 +825,7 @@ def diff_state(corp: dict, idx_file: dict, n: dict):
         ("штампованные поля по меткам реестра", len(n["stamp"])),
         ("countsLive — закрытый список правила", 8),
         ("jsonLeafScan и outOfScope", 3 + 2),
-        ("числа sha-аудита", 5),
+        ("числа sha-аудита", 4),
         ("зеркала driveMirrors, прочитанные из blob'а", mir["проверено"] + len(mir["gap"] or {})),
         ("строки документа, которые порождает этот скрипт", len(doc_numbers(corp, n))),
         ("ячейки таблицы §9.1 (сверка, не генерация)", 7 * (len(SUBLANES) + 1) + 2),
