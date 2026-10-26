@@ -1810,6 +1810,117 @@
         "Даты Василия: род. ок. 329 в Понте, ум. 1 января 379 в Кесарии"
       ],
       "limits": "Энциклопедическая статья; более тонкая датировка глав (по Дёррису: гл. 1-9 и 28-30 написаны в сентябре 375 г.) видела только в поисковой выдаче платной статьи и не утверждается."
+    },
+    {
+      "id": "SRC-PHOS-CLEM-HYMNARC",
+      "title": "Hymnology Archive (Chris Fenner), страница о гимне «Στόμιον πώλων ἀδαῶν» — рукописи, издания, переводы, оценки",
+      "url": "https://www.hymnologyarchive.com/bridle-of-untamed-colts",
+      "type": "Специализированный гимнологический ресурс: страница об одном гимне",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "COARSE_LOCATOR_ONLY",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD",
+        "ARCHIVE_HOLD"
+      ],
+      "supports": [
+        "Три рукописи «Педагога»: Париж, BnF MS Grec 451, 913 или 914 г., писец Баанес для Арефы Кесарийского — основа всех изданий, но листы с гимном в нём утрачены; Модена, Biblioteca Estense Universitaria, Miscellanea Greca 126 (alfa.s.05.09), XI в., гимн на лл. 171v–172v; Флоренция, Biblioteca Medicea Laurenziana, MS Plutei V 24, XII в., гимн на лл. 240r–241r",
+        "Маркович о парижском кодексе: «Baanes copied the text from an exemplar full of textual corruptions, lacunae, interpolations, and dislocations»",
+        "«Педагог» датируется ок. 190 г.; гимн считается древнейшим христианским гимном, твёрдо приписываемым известному автору",
+        "Уэллес: короткие анапестические стихи следуют друг за другом почти без перерыва; это размер эллинистических поэтов, проникнутых восточной мыслью; нагромождение эпитетов звучит скорее как литания — род евхологической молитвы, идущей от иудейского богослужения, — чем как греческое стихотворение",
+        "Гордли: собрание двустиший и анапестических строк, свободного и полународного склада; в гимне нет ни воплощения, ни креста, ни воскресения — ни одного образа из числа тех, на которых стоят новозаветные христологические гимны",
+        "Шафф: «It was not intended for public worship, nor is it adapted for it, nor does it suit the modern taste»",
+        "Филлипс 1937 в цитате: «neither now nor (so far as we know) at any time have they been used for liturgical purposes»; «the earliest Christian hymn that can be definitely dated»; размер — анапестический диметр; гимн «lies off the main track on which Eastern hymnody was to proceed»",
+        "История английских переложений: Декстер 1847 («Shepherd of tender youth»), Александр 1867, Такер 1940/1943, Феннер 2024; оценки Бенсона 1903 и Бейли",
+        "Первая строка восходит к Пс 32:9 («узда и удила»); английские переложения этот образ, как правило, теряют"
+      ],
+      "limits": "Прочитаны 3 фрагмента страницы из 5: разбор напевов не читался. Уэллес, Гордли, Шафф и Филлипс цитируются внутри страницы — сами труды не открывались. Снимки листов даны превью; сами рукописи не читались."
+    },
+    {
+      "id": "SRC-PHOS-CLEM-TEXT",
+      "title": "Catholic Library — греческий текст гимна Климента Александрийского с параллельным английским переводом",
+      "url": "https://catholiclibrary.org/library/view?docId=Fathers-Synchronized-EN/Clement_of_Alexandria__Hymnus_Christi_servatoris.en.html&chunk.id=00000003",
+      "type": "Двуязычная публикация святоотеческого текста (греческий и английский)",
+      "evidenceClass": "C",
+      "accessState": "FULL_OBJECT_VERIFIED",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Весь греческий текст гимна прочитан целиком: от Στόμιον πώλων ἀδαῶν до ψάλλωμεν ὁμοῦ θεὸν εἰρήνης",
+        "Заголовок рукописной традиции: ΥΜΝΟΣ ΤΟΥ ΣΩΤΗΡΟΣ ΧΡΙΣΤΟΥ ΤΟΥ ΑΓΙΟΥ ΚΛΗΜΕΝΤΟΣ",
+        "Текст дошёл целиком, без лакун"
+      ],
+      "limits": "Не указано, по какому критическому изданию набран греческий текст; с Марковичем и ван Винденом 2002 не сличён. Параллельный английский перевод расходится с греческим: «wing of wandering birds» при греческом ἀπλανῶν («неблуждающих»); брать его за образец нельзя."
+    },
+    {
+      "id": "SRC-PHOS-CLEM-MESSENGER-VI",
+      "title": "Рут Эллис Мессенджер, «Christian Hymns of the First Three Centuries» (1942), гл. VI «Early Christian Hymns»",
+      "url": "https://gutenberg.org/cache/epub/33160/pg33160-images.html",
+      "type": "Научная монография (1942) в электронном издании",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Глава VI построена как обзор гимнов вне богослужебных источников: «this time omitting those which appear in liturgical sources» — и гимн Климента помещён именно в неё",
+        "«Authentic Greek hymnody begins with Clement of Alexandria, 170-220»; гимн Ὕμνος τοῦ σωτῆρος Χριστοῦ приложен к «Педагогу» и есть хвала и благодарение новопринятых в Церковь",
+        "Стиль: «by the use of short lines and the anapest» — короткие строки и анапест усиливают впечатление исступленного благочестия",
+        "Переложение Декстера «Shepherd of Tender Youth» (1846) «in no way reproduces the original»"
+      ],
+      "limits": "Глава прочитана во фрагменте электронного издания; книга 1942 г., то есть уровень вторичного обзора. Греческий текст «Педагога» не сличался."
+    },
+    {
+      "id": "SRC-PHOS-CLEM-WEBSTER",
+      "title": "Daniel Aaron Webster, «The Father, Son and Spirit Taught in Ante-Nicene Hymns», JGRChJ 20 (2024): 98–118",
+      "url": "http://jgrchj.net/volume20/JGRCh20Webster98-118.pdf",
+      "type": "Статья в рецензируемом журнале (2024)",
+      "evidenceClass": "C",
+      "accessState": "PARTIAL_OBJECT",
+      "locatorState": "EXACT_LOCATOR_VERIFIED",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "Различение Лёра: гимнография как литературное сочинение против гимнодии как religious practice; «there may not be evidence that an ancient passage that scholars have labeled as a hymn … was ever used in the synaxis or even sung»",
+        "Гимн Климента назван «one of the earliest extant Christian songs»; это песнь о Христе Педагоге, завершающая «Педагог»",
+        "Триадной формулы в гимне нет: Отец, Сын и Дух появляются в славословии перед ним (Paed. 12.101, по переводу Вуда, с. 275)",
+        "Счёт строк расходится: перевод Вуда — 64 строки, перевод ван ден Хука — 66 стихотворных строк; новейший критический текст — M. Marcovich и J.C.M. van Winden, Clementis Alexandrini: Paedagogus (Brill, 2002)"
+      ],
+      "limits": "Прочитаны введение и раздел о Клименте; остальное — по оглавлению и поисковой выдаче. Само критическое издание не открыто."
+    },
+    {
+      "id": "SRC-PHOS-CLEM-PHILLIPS",
+      "title": "C. S. Phillips, «Hymnody Past and Present» (1937) — формулировка о древнейшем датируемом христианском гимне (известна в цитате)",
+      "url": "https://www.hymnologyarchive.com/bridle-of-untamed-colts",
+      "type": "Книга (1937), известная только в цитате",
+      "evidenceClass": "C",
+      "accessState": "NOT_ACQUIRED",
+      "locatorState": "LOCATOR_MISSING",
+      "rightsState": "RIGHTS_UNKNOWN",
+      "publicationState": "REFERENCE",
+      "holds": [
+        "ARCHIVE_HOLD",
+        "LOCATOR_HOLD",
+        "RIGHTS_HOLD"
+      ],
+      "supports": [
+        "«neither now nor (so far as we know) at any time have they been used for liturgical purposes» — о гимне Климента и двух других греческих гимнах того же периода",
+        "«It is thus the earliest Christian hymn that can be definitely dated»",
+        "Размер — анапестический диметр; тем самым гимн «lies off the main track on which Eastern hymnody was to proceed»"
+      ],
+      "limits": "Сама книга не открывалась: цитата приведена внутри страницы SRC-PHOS-CLEM-HYMNARC, номер страницы не указан. URL — страница, на которой прочитана цитата, а не книга. Записано как NOT_ACQUIRED намеренно: это держит формулировку «древнейший датируемый» честной."
     }
   ]
 }
