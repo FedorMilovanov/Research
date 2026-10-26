@@ -158,6 +158,30 @@ check: the page *and* its continuation must both have been read.**
 it — and the obstacle was recorded as a dispute rather than as a number. The cost was a false
 obstacle in three catalogues and one roadmap, now corrected in place.
 
+## 2e. A scholar's correction can rest on a passage that does not bear it
+
+**What happened.** Harnack retracted his own dating of the *Paedagogus* (c. 203–211) in a
+*Nachtrag*, on the strength of one sentence: `Paed. II, 10, 93`, «our» city that is also a
+«Seestadt» must be Alexandria. The project adopted the retraction (part 11) and wrote the
+obstacle off. Checking the citation in a critical edition (part 12): the reference is exact
+(p. 213, book II, ch. X, § 93), but his own quotation differs from the printed text in two words,
+and the decisive one is *absent* from his quotation — he prints `ἄπεισιν` where the edition reads
+`εἰσπλεῖ` («sails in»), the very word his inference rests on. The edition's own apparatus refers
+the line to **Crates fr. 4**, and Crates' city — Πήρα — is `περίρρυτος`, an island: the sea
+belongs to the parodied poem, not to Alexandria. «Our city» is contrasted with Crates' fictional
+city and means the Christian community. The retraction's first link is broken; Harnack's original
+argument (the order of the works) he never withdrew («Ich kann das nicht glauben»).
+
+**Guard.** When a conclusion rests on a quotation, verify the quotation *and its source* in a
+critical edition before recording either the conclusion or its retraction. Three questions, in
+order: is the reference exact; does the quoted text match the printed text; and is the passage
+quoting or parodying someone else — in which case the borrowed words prove nothing about the
+author's own situation. Also: when two sources agree, ask whether they agree **independently**.
+Here they did not: Harnack reached Gordley's range by an inference the sources do not support.
+
+**Cost avoided, not paid.** No date was printed in any listener-facing copy. The obstacle in the
+catalogues was rewritten within the same session, and part 11 carries a pointer to the correction.
+
 ## 3. Mechanical hazards
 
 - **Combining acute and NFC.** A word written with `й` + U+0301 reads as a different string from the same word without it. Any accent check that compares raw strings silently passes. Normalise to NFD before testing, as `check_ru_lyric.py` does.
