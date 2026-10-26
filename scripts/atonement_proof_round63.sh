@@ -190,7 +190,10 @@ doc = Path("ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md").read_t
 audit = corp["fourPointMassRegistry20261023"]["seriesAuditRound5820261026"]["файлАудита"]
 res.append(("аудит: реестр знает %d B / %d строк, файл такой же" % (audit["байт"], audit["строк"]),
             audit["байт"] == len(doc.encode()) and audit["строк"] == doc.count("\n")))
-res.append(("в аудите есть §9.3 и §9.4 (круг 63 и круг 64)", "### 9.3" in doc and "### 9.4" in doc))
+res.append(("в аудите есть §9.3, §9.4 и §9.5; §9.5 называет проб и сводку по имени",
+            "### 9.3" in doc and "### 9.4" in doc and "### 9.5" in doc
+            and "atonement_history_perturbation_probe.py" in doc
+            and "claimsPerRegistry" in doc))
 bad = 0
 for msg, good in res:
     print("%3s) %s" % ("OK" if good else "!!", msg))
@@ -278,7 +281,7 @@ timeout 120 python3 -B scripts/atonement_history_perturbation_probe.py --verdict
   || say "проб истории: --verdicts" "отчёт проба не различает исход — см. вывод режима" fail
 pout=$(timeout 900 python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest 2>&1)
 case "$pout" in
-  *"ПРОБ ИСТОРИИ: PASS"*) say "проб истории: $(printf '%s\n' "$pout" | head -1 | cut -c1-56)" "да" ;;
+  *"ПРОБ ИСТОРИИ: PASS"*) say "проб истории: три среды над $(git rev-parse --short HEAD), дрейфа нет" "да" ;;
   *"СРЕДА НЕГОДНА"*)      say "проб истории" "среда не годна: $(printf '%s\n' "$pout" | tail -1 | cut -c1-64) — это не проверка" fail ;;
   *)                      say "проб истории" "$(printf '%s\n' "$pout" | tail -2 | tr '\n' ' ' | cut -c1-88)" fail ;;
 esac
