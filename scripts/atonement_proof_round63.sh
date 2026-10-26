@@ -13,6 +13,11 @@
 # он лежал в песочнице, а не в main. Этот написан заново и лежит в репозитории; текст прежнего не
 # восстановлен, и притворяться, что восстановлен, круг не будет.
 #
+# С круга 65 добавлена ещё одна: проб возмущением истории (три среды над одним деревом; числа обязаны
+# не реагировать на рост `origin/main`, а в неполном клоне — отказывать словами). Он вызывается здесь же,
+# потому что инструмент, который CI и доказательство не зовут, перестаёт ловить незаметно: ровно так
+# пропал счётчик круга 62.
+#
 # С круга 64 к нему добавлены три проверки, которых в круге 63 не было: что порядок закрытия круга
 # печатается без записи, что писатели записей не запускаются без подтверждённого номера, и что число
 # среды, вписанное в сверяемое поле, ловится (в клонах вводится на минуту и откатывается `git
@@ -78,7 +83,8 @@ fi
 for f in scripts/validate_atonement_corpus_integrity.py scripts/atonement_claim_register.py \
          scripts/atonement_reshoot_state.py scripts/atonement_drive_mirror_round63.py \
          scripts/atonement_library_index_round63.py scripts/run_atonement_mutation_battery.py \
-         scripts/atonement_round_close.py scripts/atonement_proof_round63.sh; do
+         scripts/atonement_round_close.py scripts/atonement_history_perturbation_probe.py \
+         scripts/atonement_proof_round63.sh; do
   if [ -f "$f" ]; then
     say "инструмент в каноне: $(basename "$f") ($(wc -c < "$f") B)" "да"
   else
@@ -243,6 +249,7 @@ from pathlib import Path
 lo, hi = chr(0x4E00), chr(0x9FFF)
 files = ["ИСКУПЛЕНИЕ/18_SERIES_AUDIT_AND_ARCS_2026-10-26.md", "scripts/atonement_reshoot_state.py",
          "scripts/atonement_round_close.py", "scripts/atonement_proof_round63.sh",
+         "scripts/atonement_history_perturbation_probe.py",
          "ИСКУПЛЕНИЕ/data/atonement-corpus-v1.json"]
 # цитаты исключаются тем же определением, что и в rules 19 и 2b: «ёлочки», `обратные кавычки`
 # и "" — это чужое слово в чужом разборе, а не прилипшее при наборе. Первый вариант этого шага
@@ -264,6 +271,14 @@ if [ "$cjk_bare" = "0" ]; then
 else
   say "CJK-скан круга" "вне цитат: $cjk_bare (в цитатах $cjk_quoted) — правило гейта смотрит только сообщение коммита" fail
 fi
+
+echo "--- проб истории: сверяемые числа относятся к дереву, а не к клону (круг 65) ---"
+pout=$(timeout 900 python3 -B scripts/atonement_history_perturbation_probe.py HEAD --selftest 2>&1)
+case "$pout" in
+  *"ПРОБ ИСТОРИИ: PASS"*) say "проб истории: $(printf '%s\n' "$pout" | head -1 | cut -c1-56)" "да" ;;
+  *"СРЕДА НЕГОДНА"*)      say "проб истории" "среда не годна: $(printf '%s\n' "$pout" | tail -1 | cut -c1-64) — это не проверка" fail ;;
+  *)                      say "проб истории" "$(printf '%s\n' "$pout" | tail -2 | tr '\n' ' ' | cut -c1-88)" fail ;;
+esac
 
 echo "--- батарея мутаций (ловит ли гейт то, что обещает) ---"
 out=$(timeout 1500 python3 -B scripts/run_atonement_mutation_battery.py 2>&1 | grep "поймано случаев")

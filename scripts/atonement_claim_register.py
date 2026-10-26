@@ -81,6 +81,9 @@ SERVICE_TOKENS = {
     "ATTRIBUTION_NOTE", "AUDIT / RECONCILIATION", "SECOND HEAD OF DOCTRINE", "PASS", "LICENSE",
     "MIRROR", "SSOT", "TODO", "LINK_ONLY", "STORAGE_ONLY", "LEGACY_NO_CLASSES", "PRECEDENT_OF_READING",
     "TEXT_CRIT_NOTE", "SUPERSEDED-BY-MIRROR", "OT-AUTH", "NT_CORPUS_HOME",
+    # имена констант пересъёмщика, которыми проза описывает способ съёма (круг 65): по форме —
+    # маркеры, по смыслу — не вердикты; тот же разряд, что у FETCH_HEAD над ними
+    "KEY_DATE", "PIPELINE_FILES",
 }
 # Разошлось с первою версией списка намеренно: `CONTEXT_HOLD` — это удержание, а не
 # служба, и оно попадает в HOLD_RE раньше, чем успевает быть названным здесь. Порядок
@@ -558,6 +561,128 @@ def canonical_indent(raw: str) -> int | None:
     return None
 
 
+AGG_FIELDS_A = ("сВердиктом", "удерживается", "открыто", "закрыто", "служебное", "покрытоМашинно",
+                "маркеров", "неОтнесено", "неРазрешено")
+AGG_FIELDS_B = ("покрытоПоФайлу", "файловПрозы", "файловБезКарточки", "ссылокНаНесуществующийФайл",
+                "ссылокВнеОбходаЛана", "записейВнеСтрокЛана", "файловБезКарточкиСостояния",
+                "маркеровВПрозеНеОтражённыхВКарточке", "маркеровВКарточкеНеИзПрозыЛана")
+CROSS_KEYS = ("строк", "покрытоПоФайлу", "файлов", "файловБезКарточки", "висящихСсылок",
+              "ссылокВнеОбходаЛана", "карточекБезСостояния", "неОтраженоВКарточке",
+              "терминовКарточкиВнеПрозы")
+
+
+def rollup() -> dict:
+    """Сводка `integrityGate.scopeOfMeasurementRules.claimsPerRegistry`, снятая теми же съёмами,
+    которыми её сверяет правило 27 и 28 гейта.
+
+    До круга 65 у этой сводки не было производителя: гейт её сравнивал с обходом, пересъёмщик
+    чисел её явно не трогал (в его отчёте стояло «ими заведует atonement_claim_register.py», где
+    «заведует» означало «когда-нибудь»), а правили её рукой. Первый же прогон круга
+    это и поймал: проза назвала два новых служебных маркера, живой счётчик двинулся, а записанный
+    остался — и единственный доступный способ починить красное правило 27 был «вписать число с
+    экрана», то есть ровно тот жест, против которого круг 63 и затевал пересъёмщик. Копия
+    агрегации гейта здесь осознанна: два счёта одного определения обязаны разойтись громко, а не
+    договориться; поле `метод` сводки называет эту команду именно потому, что пересъёмность —
+    способ, а не обещание."""
+    roll: dict = {}
+    agg_a = {k: 0 for k in AGG_FIELDS_A}
+    agg_b = {k: 0 for k in AGG_FIELDS_B}
+    cross: dict = {}
+    for lan in SUBLANES + ("root",):
+        fresh = scan_lan(lan)
+        if fresh["плохо"]:
+            raise SystemExit(f"сводка не снимается: лан {lan} имеет {len(fresh['плохо'])} неразрешённых "
+                             f"локаторов — сначала чини локаторы, потом переснимай сводку")
+        name = "корпус" if lan == "root" else lan
+        a, cr = fresh["агрегаты"], fresh["сверка"]
+        cls = a["поКлассам"]
+        roll[name] = a["строк"]
+        agg_a["сВердиктом"] += a["строк"] - cls.get("БЕЗ МАРКЕРА", 0)
+        agg_a["удерживается"] += cls.get("УДЕРЖИВАЕТСЯ", 0)
+        agg_a["открыто"] += cls.get("ОТКРЫТО", 0)
+        agg_a["закрыто"] += cls.get("ЗАКРЫТО", 0)
+        agg_a["служебное"] += cls.get("СЛУЖЕБНОЕ", 0)
+        agg_a["покрытоМашинно"] += a["покрытоМашинно"]
+        agg_a["маркеров"] += fresh["маркеры"]["всего"]
+        agg_a["неОтнесено"] += sum(fresh["маркеры"]["неОтнесено"].values())
+        agg_a["неРазрешено"] += a["неРазрешено"]
+        # покрытоПоФайлу/файловПрозы/файловБезКарточки лежат в агрегатах лана, остальное — в
+        # сверке; разделение взято ровно из правил 27/28, потому что сводка обязана сходиться с ними
+        agg_b["покрытоПоФайлу"] += a["покрытоПоФайлу"]
+        agg_b["файловПрозы"] += a["файловПрозы"]
+        agg_b["файловБезКарточки"] += a["файловБезКарточки"]
+        for k in AGG_FIELDS_B[3:]:
+            agg_b[k] += cr[k]
+        cross[name] = {"строк": a["строк"], "покрытоПоФайлу": a["покрытоПоФайлу"],
+                       "файлов": a["файловПрозы"], "файловБезКарточки": a["файловБезКарточки"],
+                       "висящихСсылок": cr["ссылокНаНесуществующийФайл"],
+                       "ссылокВнеОбходаЛана": cr["ссылокВнеОбходаЛана"],
+                       "карточекБезСостояния": cr["файловБезКарточкиСостояния"],
+                       "неОтраженоВКарточке": cr["маркеровВПрозеНеОтражённыхВКарточке"],
+                       "терминовКарточкиВнеПрозы": cr["маркеровВКарточкеНеИзПрозыЛана"]}
+        assert all(k in cross[name] for k in CROSS_KEYS)
+    return {"всего": sum(roll.values()), "поЛанам": roll, "детально": {**agg_a, **agg_b},
+            "сверкаСКарточками": cross}
+
+
+def rollup_diff(fresh: dict) -> list:
+    """Что сводка скажет после записи: сравнение с тем, что записано, — по сверяемым полям."""
+    data = json.loads(MAIN_REGISTRY.read_text(encoding="utf-8"))
+    stored = ((data.get("integrityGate") or {}).get("scopeOfMeasurementRules") or {}).get(
+        "claimsPerRegistry") or {}
+    bad = []
+    for k, v in sorted(fresh["поЛанам"].items()):
+        if int(stored.get(k, -1)) != v:
+            bad.append(f"{k}: записано {stored.get(k)!r}, обход даёт {v}")
+    if int(stored.get("всего", -1)) != fresh["всего"]:
+        bad.append(f"всего: записано {stored.get('всего')!r}, обход даёт {fresh['всего']}")
+    for k, v in sorted(fresh["детально"].items()):
+        if int((stored.get("детально") or {}).get(k, -1)) != v:
+            bad.append(f"детально.{k}: записано {(stored.get('детально') or {}).get(k)!r}, обход даёт {v}")
+    for lan, cells in sorted(fresh["сверкаСКарточками"].items()):
+        for k, v in sorted(cells.items()):
+            if int(((stored.get("сверкаСКарточками") or {}).get(lan) or {}).get(k, -1)) != v:
+                bad.append(f"сверкаСКарточками.{lan}.{k}: записано "
+                           f"{((stored.get('сверкаСКарточками') or {}).get(lan) or {}).get(k)!r}, "
+                           f"обход даёт {v}")
+    return bad
+
+
+def write_rollup(fresh: dict) -> list:
+    """Запись снятой сводки: только числа и `measuredAt`; проза блока (`метод`, `чтоЗначит`,
+    `зачем`, поправки прежних кругов) остаётся нетронутой — сводка переснимается, а не переписывается."""
+    path = MAIN_REGISTRY
+    raw = path.read_text(encoding="utf-8")
+    form = canonical_indent(raw)
+    data = json.loads(raw)
+    scope = data["integrityGate"]["scopeOfMeasurementRules"]
+    cpr = scope["claimsPerRegistry"]
+    cpr.update(fresh["поЛанам"])
+    cpr["всего"] = fresh["всего"]
+    cpr["детально"].update(fresh["детально"])
+    for lan, cells in fresh["сверкаСКарточками"].items():
+        (cpr["сверкаСКарточками"].setdefault(lan, {})).update(cells)
+    now = _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    cpr["measuredAt"] = now
+    out = json.dumps(data, ensure_ascii=False, indent=form if form is not None else 1) + "\n"
+    back = json.loads(out)
+    bp, ap_ = json.loads(raw), back
+    for key in bp:
+        if key != "integrityGate" and json.dumps(bp[key], ensure_ascii=False, sort_keys=True) != json.dumps(
+                ap_[key], ensure_ascii=False, sort_keys=True):
+            raise SystemExit(f"запись сводки задела чужой ключ верхнего уровня {key!r} — так нельзя")
+    # стража «не задень чужое» обязана сравнивать одно с другим: до и после, а не до и саму себя;
+    # первая версия индексировала после-словарь ключом из integrityGate и падала KeyError'ом
+    gate_b, gate_a = bp["integrityGate"], ap_["integrityGate"]
+    for key in gate_b:
+        if key != "scopeOfMeasurementRules" and json.dumps(gate_b[key], ensure_ascii=False,
+                                                           sort_keys=True) != json.dumps(
+                gate_a[key], ensure_ascii=False, sort_keys=True):
+            raise SystemExit(f"запись сводки задела чужой ключ integrityGate.{key!r} — так нельзя")
+    path.write_text(out, encoding="utf-8")
+    return [l for l in rollup_diff(fresh)]
+
+
 def insert_block(path: Path, block: dict) -> None:
     """Вставка без переформатирования реестра: остальной файл обязан остаться байт в
     байт — иначе сама правка сдвинет счётчики упоминаний, которые лана измеряет."""
@@ -647,6 +772,9 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--print", dest="show", action="store_true")
     ap.add_argument("--vocab", action="store_true")
     ap.add_argument("--cross", action="store_true")
+    ap.add_argument("--rollup", dest="rollup_only", action="store_true",
+                    help="сверить сводку claimsPerRegistry со съёмом всех ланов, ничего не записывая; "
+                         "сводка глобальна, поэтому лан в командной строке на неё не влияет")
     ap.add_argument("lans", nargs="*", default=["all"])
     args = ap.parse_args(argv)
     wanted = SUBLANES + ("root",) if (args.lans or ["all"]) == ["all"] else tuple(args.lans)
@@ -695,6 +823,29 @@ f"ссылок вне обхода лана {cr['ссылокВнеОбхода�
                 previous = json.loads(path.read_text(encoding="utf-8")).get(BLOCK_KEY) or {}
                 insert_block(path, build_block(lan, fresh, previous))
                 print(f"[{lan}] блок {BLOCK_KEY} записан в {path.name}")
+    # сводка глобальна: её снимают по всем пяти ланам, даже если в команду занесён один, — иначе
+    # «переснял root» оставило бы в реестре сумму, сочинённую по четырём чужим ланам на глаз
+    if args.rollup_only or args.check:
+        fresh_roll = rollup()
+        bad = rollup_diff(fresh_roll)
+        if bad:
+            rc = 1
+            print(f"сводка claimsPerRegistry отстала от обхода: {len(bad)}")
+            for line in bad[:12]:
+                print("   ", line)
+        else:
+            # число берётся из того же съёма, которым сверяли; пересчитывать его вторым вызовом —
+            # значит иметь два ответа на один вопрос и удивляться, если они разойдутся
+            print(f"сводка claimsPerRegistry совпадает с обходом: всего {fresh_roll['всего']} доводов, "
+                  f"полей {len(fresh_roll['детально'])}, ланов сверки "
+                  f"{len(fresh_roll['сверкаСКарточками'])}")
+    if args.write:
+        left = write_rollup(rollup())
+        if left:
+            rc = 1
+            print(f"сводка записана, но сверка не молчит: {left[:3]}")
+        else:
+            print("сводка claimsPerRegistry переснята этим же съёмом, что её сверяет (правила 27/28)")
     return rc
 
 

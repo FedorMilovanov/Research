@@ -443,7 +443,8 @@ def env_declared(corp):
 PIPELINE_FILES = ("scripts/validate_atonement_corpus_integrity.py", "scripts/atonement_claim_register.py",
                   "scripts/run_atonement_mutation_battery.py", "scripts/atonement_reshoot_state.py",
                   "scripts/atonement_drive_mirror_round63.py", "scripts/atonement_library_index_round63.py",
-                  "scripts/atonement_round_close.py")
+                  "scripts/atonement_round_close.py",
+                  "scripts/atonement_history_perturbation_probe.py")
 
 
 ENV_DECL_BLOCK = ENV_DECL_PREFIX + KEY_DATE + "r" + CIRCLE
@@ -930,7 +931,9 @@ def report_not_generated(corp: dict) -> str:
              "проверяет (но не пишет) таблицу §9.1, а остальное — проза, порождённая утраченным "
              "финалайзером круга 61, и живёт до ближайшей ручной правки:", "  реестровые блоки-источник: "
              + ", ".join("`%s`" % k for k in keys), "  поля, которые он намеренно не трогает: "
-             "`claimsPerRegistry.всего`, `сверкаСКарточками` (ими заведует atonement_claim_register.py), "
+             "`claimsPerRegistry` целиком — с круга 65 у сводки есть свой производитель: "
+             "atonement_claim_register.py (`--write` переснимает, `--check` и `--rollup` сверяют; "
+             "до того правила 27 и 28 сравнивали число, которое не переснимал никто), "
              "`driveMirrors.*`, `libraryIndex20261023.countsNote*`, `shaCitationAudit20261023.note` "
              "в части формулировки"]
     return "\n".join(lines)
