@@ -7274,3 +7274,9 @@ Gill families/Rippon и Source Library. Для lossless-аудита Гилла 
 остаются открыты. Статус серии — исследовательская основа, не готовая
 публикация; ED-02/06/08OPEN, receipt NOT_REVERIFIED. Merge Research
 не снимает эти ограничения и не является merge Product.
+
+После фиксации пакета в`c6a6ea6`lossless-аудит Гилла с настоящим
+Product-checkout завершился **PASS**:Research blobs,480ID,оба Product
+commit witnesses и crosswalk. Рабочее дерево было чистым. Прежний
+технический FAIL§21.109снят этим повторным запуском, а не отключением
+проверки. Публикационные/переводческие ограничения Чарнока не изменились.

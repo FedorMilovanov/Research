@@ -19,6 +19,11 @@ HEAD f38b194:все78файлов существуют на новом мест�
 commit witnesses;окончательный результат проверяется после коммита.
 Предыдущая таблица результатов ниже — историческая, не свежий CI.
 
+Повторный запуск после коммита`c6a6ea6`с настоящим Product-checkout:
+`gill-pr2-lossless-reconciliation-audit.mjs` **PASS**;проверены pinned
+Research blobs,480ID,оба Product commit witnesses и crosswalk.
+Это локальное свидетельство,не результат будущего PR/CI.
+
 ---
 
 ## 1. Проверяемый вопрос
