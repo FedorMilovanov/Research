@@ -371,13 +371,43 @@ def block_span(raw: str, key: str) -> tuple[int, int]:
 
 
 
+def canonical_indent(raw: str) -> int | None:
+    """Форма файла, в которой он записан: 1, 2 или 4 пробела, либо ничего. Съёмщик обязан
+    возвращать реестр в той же форме, в какой взял: точечная вставка блока с собственным
+    отступом оставляла бы в каноническом файле островок чужой вёрстки, и следующий дифф
+    читался бы как порча данных, а не как добавление счёта."""
+    try:
+        data = json.loads(raw)
+    except Exception:  # noqa: BLE001
+        return None
+    for ind in (1, 2, 4):
+        if raw == json.dumps(data, ensure_ascii=False, indent=ind) + "\n":
+            return ind
+    return None
+
+
 def insert_block(path: Path, block: dict) -> None:
     """Вставка без переформатирования реестра: остальной файл обязан остаться байт в
     байт — иначе сама правка сдвинет счётчики упоминаний, которые лана измеряет."""
     raw = path.read_text(encoding="utf-8")
+    form = canonical_indent(raw)
     if f'"{BLOCK_KEY}"' in raw:
         a, b = block_span(raw, BLOCK_KEY)
         raw = raw[:a].rstrip() + "\n" + raw[b:].lstrip("\n")
+    if form is not None:
+        data_now = json.loads(raw)
+        data_now[BLOCK_KEY] = block
+        canon = json.dumps(data_now, ensure_ascii=False, indent=form) + "\n"
+        probe = json.loads(canon)
+        if probe[BLOCK_KEY] != json.loads(json.dumps(block, ensure_ascii=False)):
+            raise SystemExit(f"{path.name}: каноническая форма исказила блок — правь съёмщик")
+        for key in data_now:
+            if key != BLOCK_KEY and json.dumps(probe[key], ensure_ascii=False, sort_keys=True) != json.dumps(
+                data_now[key], ensure_ascii=False, sort_keys=True
+            ):
+                raise SystemExit(f"{path.name}: привидение к форме задело ключ {key!r}")
+        path.write_text(canon, encoding="utf-8")
+        return
     i = raw.rstrip().rfind("\n}")
     if i < 0:
         raise SystemExit(f"не нашёл закрывающую скобку верхнего уровня в {path.name}")
